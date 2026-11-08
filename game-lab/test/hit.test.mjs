@@ -1,7 +1,7 @@
 // game-lab/test/hit.test.mjs — 店內命中與走位加固（SPEC-v4 §2.4、§5.1 A3）。A3。
 //   node game-lab/test/hit.test.mjs        # 有失敗 exit 1
 // 測：DipShop.buildHotList(dip.json) 的形狀＋深度（主熱點、子熱點、跟著人走、遮擋物）；hitPick：每箱可見區的每一格都命中自己、
-//     R-x0 probe3 的誤觸（新進／華語的下緣不會被前排爵士／台灣吃掉）、後牆矮櫃封面＝rack:<id>、櫃身＝bin:folk、容錯只在沒命中時、
+//     R-x0 probe3 的誤觸（中島最後一排 世界／民謠 的下緣不會被前排爵士／台灣吃掉）、後牆矮櫃封面＝rack:<id>、櫃身＝bin:blues、門口牆 FEATURE／PICKS 整面＝bin:feature／bin:picks、容錯只在沒命中時、
 //     點在植物上＝null、停用的前排不會讓點擊穿到後面、老闆熱點的深度跟著他的 y；navRoute 走不到回 null、api.route 回 []；
 //     DipShop.strict 時 walk 到走不到的點會 reject、非嚴格時不瞬移（每格位移 ≤ 速度＋1）；hotPoints 每一點都點得到自己；按下就描框。
 // 掛載用的是一個很小的假 DOM（canvas 只記不畫），跑的是 shop.js 本體，不是複製的邏輯。
@@ -35,14 +35,15 @@ await section('buildHotList：主熱點、子熱點、跟著人走、遮擋物�
   for (const { o, id } of BINS) {
     const h = byId(hots, id);
     ok(h, id + ' 存在'); if (!h) continue;
-    eq([h.action, h.label, h.depth], ['crate:' + o.bin.key, o.bin.label, o.y], id + ' 動作、名牌＝曲風全名、深度＝o.y');
+    eq([h.action, h.label, h.depth], ['crate:' + o.bin.key, o.bin.label, o.layer === 'wall' ? -1 : o.y], id + ' 動作、名牌＝中文全名、深度＝o.y（牆架＝牆層 −1）');
     eq(h.shape, [PROPS[o.type].box(o)], id + ' 形狀＝道具 box');
     ok(!o.hot, id + ' 道具本身沒有 hot（箱子的主熱點由 bin 產生）');
   }
   const subs = hots.filter(h => h.sub && h.prop);
-  ok(subs.length >= 14 + 8 + 2 + 2, '子熱點：牆 14＋矮櫃 8＋高櫃 2＋櫃檯 now／cat', subs.length);
+  ok(subs.length >= 8 + 2 + 2, '子熱點：矮櫃 8＋高櫃 2＋櫃檯 now／cat（門口牆整面＝一區，沒有單張子熱點）', subs.length);
+  eq(subs.filter(h => h.prop.type === 'ledge').length, 0, '門口牆（有 bin）沒有單張子熱點');
   for (const s of subs) ok(Math.abs(s.depth - ((s.prop.layer === 'wall' ? -1 : s.prop.y) + 0.01)) < 1e-9, s.id + ' 深度＝父道具＋0.01', s.depth);
-  eq(hots.filter(h => /^rack:/.test(h.id) && h.parent === 'bin:folk').length, 8, '後牆矮櫃 8 張封面的父熱點＝bin:folk');
+  eq(hots.filter(h => /^rack:/.test(h.id) && h.parent === 'bin:blues').length, 8, '後牆矮櫃 8 張封面的父熱點＝bin:blues');
   eq([byId(hots, 'now').parent, byId(hots, 'cat').parent], ['counter', 'counter'], '櫃檯 now／cat 的父熱點＝counter');
   const occ = hots.filter(h => h.occluder).map(h => h.prop.type).sort();
   eq(occ, ['duelDeck', 'lowShelf', 'plant', 'plant', 'shelving', 'stool'], '遮擋物＝沒有主熱點的站立道具（植物、凳子、矮櫃、高櫃、唱盤台）');
@@ -69,19 +70,19 @@ await section('每箱可見區的每一格都命中自己（含後排島箱：R-
       if (idOf(got) !== want) { bad++; if (!first) first = [x, y, idOf(got)]; }
     }
     eq(bad, 0, id + ' 可見區 ' + R.n + ' 格全部命中自己' + (first ? ' 第一個錯 ' + JSON.stringify(first) : ''));
-    ok(R.n >= 26 * 40 || id === 'bin:folk' || id === 'bin:sale', id + ' 可見區夠大（≥26×40 格）', R.n);
+    ok(R.n >= 26 * 40 || id === 'bin:blues' || id === 'bin:sale', id + ' 可見區夠大（≥26×40 格）', R.n);
   }
   // 中島後排：露出來的那一條（26–27 格高）整條都點得到
-  for (const id of ['bin:rnb', 'bin:ost', 'bin:rock', 'bin:jp', 'bin:hiphop', 'bin:elec', 'bin:new', 'bin:cpop']) {
+  for (const id of ['bin:rock', 'bin:elec', 'bin:soul', 'bin:hiphop', 'bin:pop', 'bin:classical', 'bin:world', 'bin:folk']) {
     const R = DS.hotRegion(hots, byId(hots, id), FULL);
     let y0 = 1e9, y1 = -1; for (let j = 0; j < R.box[3]; j++) for (let i = 0; i < R.box[2]; i++) if (R.m[j * R.box[2] + i]) { y0 = Math.min(y0, j); y1 = Math.max(y1, j); }
     eq([y1 - y0 + 1, R.n], [27, 27 * 44], id + ' 露出的那一條 44×27 格');
   }
 });
 
-await section('R-x0 probe3：新進／華語的下緣不會被前排爵士／台灣吃掉', () => {
+await section('R-x0 probe3：中島最後一排（世界／民謠）的下緣不會被前排爵士／台灣吃掉', () => {
   const hots = H();
-  const pair = { 118: ['bin:new', 'bin:jazz'], 162: ['bin:cpop', 'bin:tw'] };
+  const pair = { 118: ['bin:world', 'bin:jazz'], 162: ['bin:folk', 'bin:tw'] };
   let checked = 0;
   for (const x of [118, 162]) for (let y = 200; y <= 212; y++) {
     const [back, front] = pair[x], top = DS.hitPick(hots, x, y, { raw: true }), got = idOf(pick(hots, x, y));
@@ -91,9 +92,9 @@ await section('R-x0 probe3：新進／華語的下緣不會被前排爵士／台
   eq(checked, 22, 'y 200–210 共 22 格在後排可見區');
 });
 
-await section('後牆矮櫃：封面＝rack:<id>（唱片資訊＋試聽），其他看得到的地方＝bin:folk（開抽屜）', () => {
+await section('後牆矮櫃：封面＝rack:<id>（唱片資訊＋試聽），其他看得到的地方＝bin:blues（開抽屜）', () => {
   const hots = H(), o = dip.props.find(p => p.id === 'backbin');
-  const covers = hots.filter(h => h.parent === 'bin:folk');
+  const covers = hots.filter(h => h.parent === 'bin:blues');
   eq(covers.map(h => h.id), o.front.map(id => 'rack:' + id), '8 張封面熱點照 front 順序');
   for (const c of covers) {
     const r = c.shape[0];
@@ -102,7 +103,22 @@ await section('後牆矮櫃：封面＝rack:<id>（唱片資訊＋試聽），�
   }
   const box = PROPS[o.type].box(o);
   for (const [x, y] of [[box[0] + 4, box[1] + 3], [97, 52], [97, 80], [60, 85], [140, 75], [box[0] + box[2] - 2, box[1] + box[3] - 2]])
-    eq(idOf(pick(hots, x, y)), 'bin:folk', `櫃身 (${x},${y}) → bin:folk`);
+    eq(idOf(pick(hots, x, y)), 'bin:blues', `櫃身 (${x},${y}) → bin:blues`);
+});
+
+await section('門口牆（FIXLIST 4／5）：FEATURE（靠門 2×2＋名牌）、PICKS（其餘 5×2＋名牌）整面都是那一區', () => {
+  const hots = H();
+  for (const [pid, key] of [['wall-feature', 'feature'], ['wall-picks', 'picks']]) {
+    const o = dip.props.find(p => p.id === pid), box = PROPS.ledge.box(o), id = 'bin:' + key;
+    const cells = []; for (let r = 0; r < o.rows; r++) for (let i = 0; i < o.n; i++) cells.push([o.x + 3 + i * 14 + 6, o.y + r * 16 - 12 + 6]);
+    for (const [x, y] of cells) eq(idOf(pick(hots, x, y)), id, pid + ' 封面 (' + x + ',' + y + ') → ' + id);
+    eq(idOf(pick(hots, box[0] + Math.floor(box[2] / 2), box[1] + 4)), id, pid + ' 名牌 → ' + id);
+    eq(idOf(pick(hots, o.x + 4, o.y + 1)), id, pid + ' 層板 → ' + id);
+    const R = DS.hotRegion(hots, byId(hots, id), FULL);
+    ok(R && R.n >= o.n * o.rows * 144, pid + ' 看得到的一塊夠大（每格 12×12 都在）', R && R.n);
+  }
+  eq(idOf(pick(hots, 60, 46)), 'bin:feature', 'FEATURE 下排層板（後牆矮櫃上緣 y47 之上）→ bin:feature');
+  eq(idOf(pick(hots, 60, 52)), 'bin:blues', '再往下（後牆矮櫃在牆前面）→ bin:blues');
 });
 
 await section('容錯只在沒命中時；點在植物上＝null；停用的前排不會穿到後面', () => {
@@ -128,11 +144,11 @@ await section('容錯只在沒命中時；點在植物上＝null；停用的前�
   // 停用前排（爵士）：(118,215) 在爵士與新進的形狀裡，爵士在前 → null，不會變成新進
   const noJazz = h => h.id !== 'bin:jazz';
   eq(idOf(pick(hots, 118, 215, { enabled: noJazz })), null, '爵士停用：點爵士（壓在新進上那塊）→ null，不往後穿到新進');
-  eq(idOf(pick(hots, 118, 205, { enabled: noJazz })), 'bin:new', '爵士停用：新進自己的可見區照常');
+  eq(idOf(pick(hots, 118, 205, { enabled: noJazz })), 'bin:world', '爵士停用：世界（中島最後一排）自己的可見區照常');
   eq(idOf(pick(hots, 118, 240, { enabled: noJazz })), null, '爵士停用：爵士本體 → null（也不容錯到別人）');
   // 主熱點停用、子熱點啟用（序章／對決只開 rack:*）：封面點得到，櫃身 → null
   const onlyRack = h => /^rack:/.test(h.id) || h.id === 'now';
-  eq(idOf(pick(hots, 51, 62, { enabled: onlyRack })), 'rack:leonard-cohen-songs-from-a-room', '只開 rack:*：矮櫃封面點得到');
+  eq(idOf(pick(hots, 51, 62, { enabled: onlyRack })), 'rack:' + dip.props.find(p => p.id === 'backbin').front[0], '只開 rack:*：矮櫃封面點得到');
   eq(idOf(pick(hots, 97, 80, { enabled: onlyRack })), null, '只開 rack:*：矮櫃櫃身 → null');
   eq(idOf(pick(hots, 221, 163, { enabled: onlyRack })), 'now', '只開 rack:*／now：櫃檯正在放點得到');
   eq(idOf(pick(hots, 247, 195, { enabled: onlyRack })), null, '只開 rack:*／now：櫃檯正面 → null');
@@ -299,7 +315,7 @@ try {
     eq(got, ['bin:hiphop'], '放開＝tapHot → onAction(crate:hiphop)');
     ok(shop.state.flash && shop.state.flash.h.id === 'bin:hiphop', '放開後短暫描框（tap）');
     const lbl = shop.overlay.children.find(c => c.className.includes('ds-label') && c.className.includes('tap'));
-    eq(lbl && lbl.textContent, '嘻哈／放克', '放開掛名牌＝曲風全名');
+    eq(lbl && lbl.textContent, '嘻哈 R&B', '放開掛名牌＝中文全名（名牌上畫的是 HIP-HOP）');
     shop.canvas.dispatch('pointerdown', { clientX: 1, clientY: (316 - v.y) * v.scale - 2, pointerType: 'touch' });
     shop.canvas.dispatch('pointercancel', {});
     ok(!shop.state.press, 'pointercancel 也清掉');

@@ -78,7 +78,7 @@
   {"type": "meterBox", "layer": "wall", "x": 16, "y": 9},
   {"type": "door", "id": "door", "layer": "wall", "x": 10, "y": 22, "w": 28, "h": 58, "hot": {"label": "門口", "action": "door", "rect": [10, 22, 28, 58]}},
   {"type": "ledge", "id": "wall-feature", "layer": "wall", "x": 44, "y": 29, "n": 2, "rows": 2, "plate": "FEATURE", "frame": "gold", "cards": ["talk-talk-laughing-stock", "can-ege-bamyasi", "alice-coltrane-journey-in-satchidananda", "伍佰-china-blue-樹枝孤鳥"], "bin": {"key": "feature", "label": "店長推薦精選", "stand": [60, 100]}},
-  {"type": "ledge", "id": "wall-picks", "layer": "wall", "x": 76, "y": 29, "n": 5, "rows": 2, "plate": "PICKS", "cards": ["the-band-music-from-big-pink", "kate-bush-the-dreaming", "bjork-debut", "cocteau-twins-head-over-heels", "stan-getz-jazz-samba", "shuggie-otis-inspiration-information", "miki-matsubara-pocket-park", "gal-costa-gal-costa", "neil-young-zuma", "雷光夏-summer-lei-黑暗之光"], "bin": {"key": "picks", "label": "店長推薦", "stand": [132, 100]}},
+  {"type": "ledge", "id": "wall-picks", "layer": "wall", "x": 76, "y": 29, "n": 5, "rows": 2, "plate": "PICKS", "cards": ["the-band-music-from-big-pink", "kate-bush-the-dreaming", "bjork-debut", "cocteau-twins-head-over-heels", "stan-getz-jazz-samba", "shuggie-otis-inspiration-information", "marcos-valle-previsao-do-tempo", "gal-costa-gal-costa", "neil-young-zuma", "雷光夏-summer-lei-黑暗之光"], "bin": {"key": "picks", "label": "店長推薦", "stand": [132, 100]}},
   {"type": "speaker", "layer": "wall", "x": 149, "y": 8},
   {"type": "window", "layer": "wall", "x": 160, "y": 14, "w": 102, "h": 46},
   {"type": "speaker", "layer": "wall", "x": 266, "y": 8},
