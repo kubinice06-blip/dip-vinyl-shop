@@ -220,3 +220,4 @@
   .dl .hp i{transition-duration:.15s}
   .dl .tile .cvw{transition:none}
 }
+.dl.over .lastline{visibility:hidden}   /* 打完：大章在中間，「上一手」那行不要從大章兩側露出半截（R2 截圖） */

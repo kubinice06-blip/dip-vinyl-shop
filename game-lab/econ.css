@@ -144,3 +144,4 @@
 @media (prefers-reduced-motion:reduce){.ec-drawer.ec-in,.ec-one.ec-fl,.ec-one.ec-fr,.ec-nudge{animation:none;}}
 .ec-drawer.ec-lock [data-a=buy],.ec-drawer.ec-lock [data-a=bbuy],.ec-drawer.ec-lock [data-a=rbuy]{opacity:.5;transition:opacity .15s;}   /* 剛買完 450 ms：連點的第二下不算（RT-2），鈕看起來也還沒好 */
 .ec-open>#panel>:not(.lb-sheet){visibility:hidden;}   /* 抽屜開著：後面的今晚來客／對白框不要半截露在抽屜上面（V12／RT-5／R-08b） */
+.ec-open>#panel{background:#0d0a08;}   /* 店景與抽屜之間如果空一條：跟舞台的黑邊同色，不是一條白（V12；430 的店景已經整面寬，長不高） */
