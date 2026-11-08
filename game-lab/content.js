@@ -356,12 +356,12 @@
     // 02:00 打烊前，傳說藏家推門（B2＝原版 BOSS_LINES[0]；出場蓋章＝BOSS_LINES[4]）
     bossEnter: [
       { id: 'B1', who: '', text: '這時，門開了。', tag: '原句', set: { sprite: { f: 'boss' }, put: { f: 'door' }, hide: { f: false }, sil: { f: false }, door: 'open' } },
-      { id: 'B2', who: '藏家', text: '「讓我看看你的品味有幾兩重。」', tag: '原句', set: { stamp: '三十年的耳朵，不會騙人。' },
+      { id: 'B2', who: '傳說藏家', text: '「讓我看看你的品味有幾兩重。」', tag: '原句', set: { stamp: '三十年的耳朵，不會騙人。' },
         act: [walk('f', 'atdoor'), door('close')], ui: 'duel', prompt: '▶ 品味對決' }
     ],
     // 通關：他用過的那張王牌（你當初沒選的）翻開、播放、收進唱片櫃
     clear: [
-      { id: 'C1', who: '藏家', text: '「……這張，送你。三十年前，我也是這樣拿到的。」', tag: '新:A', ui: 'stake', music: 'stake' },
+      { id: 'C1', who: '傳說藏家', text: '「……這張，送你。三十年前，我也是這樣拿到的。」', tag: '新:A', ui: 'stake', music: 'stake' },
       { id: 'C2', who: '', text: '對街新開了一間黑膠潮流館。', tag: '新', if: 'firstClear', set: { stamp: '第二夜（尚未開放）' } }
     ],
     // 散場（倒下）
@@ -382,15 +382,15 @@
   // ===================================================================
   var RAW_LINES = {
     owner: {
-      retry: L('……再一場。', '新'),
+      retry: L('……再一場。', '新'),                 // 序章男子輸了（免費、不用選）
+      retryAsk: L('……要不要再一場？', '新'),         // 客人輸了：接著是「再一場／今晚到這」兩顆（COPY-07：不要連說三次「再一場」）
       bagFull: L('包包滿了。先拿一張出來。', '新'),
       relicFull: L('配件最多帶三件。先放一件回去。', '新')
     },
+    // 序章男子：只有原版的句子（D §2：試做版自己加的口頭禪、贏你那句拿掉；COPY-01）。lose＝E2／E3 原句（收尾對白講，盤面不再冒泡泡）
     man: {
-      line: L('這張排行榜第一名欸。', '新:C'),
       intro: L('……這品味，也敢出來丟臉？', '原句'),
-      lose: [L('……哼。', '原句'), L('搵休督欸丟！', '原句')],
-      win: L('回家多聽兩年再來啦。', '新:A')
+      lose: [L('……哼。', '原句'), L('搵休督欸丟！', '原句')]
     },
     copycat: {
       line: L('你出這個？那張我也有。', '新'),
@@ -519,7 +519,7 @@
     hitE: '他 −{n}', hitP: '你 −{n}',
     bluff: '他唬你！『{key}』是{hint}，他出的是{e}。', honest: '『{key}』是{hint}，他照實出。',
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
-    koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零', koLoseRetry: '老闆：……再一場。',
+    koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏'
   };
   C.duelTextTag = '新';

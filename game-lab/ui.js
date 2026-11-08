@@ -576,7 +576,7 @@
   function voiceOf(who) {
     if (who === '老闆') return C.voices && C.voices.owner;
     if (who === '男子') return C.enemies.man.voice;
-    if (who === '藏家') return C.enemies.boss.voice;
+    if (who === '藏家' || who === C.enemies.boss.name) return C.enemies.boss.voice;
     return null;
   }
   function tlog(beat, ev, extra) {
@@ -615,7 +615,7 @@
       nm.textContent = who === 'player' ? '你' : (who || '');      // NP-16：你說話的名牌一律寫「你」
       dq.classList.toggle('narr', !who);
       dq.classList.toggle('foe', who === '男子');
-      dq.classList.toggle('boss', who === '藏家');
+      dq.classList.toggle('boss', who === '藏家' || who === (C.enemies.boss || {}).name);
     }
     function typeText(text, voice) {
       return new Promise(function (res) {
@@ -671,7 +671,9 @@
       if (s.door) stg('door', s.door === 'shut' ? 'close' : s.door);
       if (s.stamp && !st.ff) {
         var parts = String(s.stamp).split('：');
-        stg('stamp', parts[0], parts[1] || '', st.beatWho === '藏家' ? 'ink' : 'gold', 2400);
+        // 長的一句在逗號換行（R-09：「三十年的耳朵，不／會騙人。」斷在字中間）
+        var main = parts[0].length > 8 ? parts[0].replace('，', '，\n') : parts[0];
+        stg('stamp', main, parts[1] || '', st.beatWho === ((C.enemies.boss || {}).name || '傳說藏家') ? 'ink' : 'gold', 2400);
         sfx('readHit');
       }
     }
@@ -1587,11 +1589,13 @@
       var dlg = Dialogue(sc, {});
       var winLine = C.lines[eid] && C.lines[eid].win;
       var beats = [];
-      if (winLine && !out.resumed) beats.push({ who: eid === 'man' ? '男子' : (eid === 'boss' ? '藏家' : C.enemies[eid].name), text: '「' + [].concat(winLine)[0] + '」' });
-      beats.push({ who: '老闆', text: '「' + ((C.lines.owner && C.lines.owner.retry) || '……再一場。') + '」' });
+      // 他贏你那句：盤面打完已經冒過泡泡（COPY-02），這裡只在重新整理回來（沒看到泡泡）時說；序章男子沒有這句（COPY-01）
+      if (winLine && out.resumed) beats.push({ who: C.enemies[eid].name, text: '「' + [].concat(winLine)[0] + '」' });
+      var OL = C.lines.owner || {};
+      beats.push({ who: '老闆', text: '「' + ((free ? OL.retry : (OL.retryAsk || OL.retry)) || '……再一場。') + '」' });
       dlg.run(beats).then(function () {
         if (free) { doChoose({ type: 'retry' }); return beginFight({ quick: true }); }
-        return dlg.menu(['▶ 再一場（老闆說情，今晚只有一次）', '今晚到這'], { autoIndex: 0 }).then(function (i) {
+        return dlg.menu(['▶ 再一場（今晚只有一次）', '今晚到這'], { autoIndex: 0 }).then(function (i) {
           if (i === 0) { doChoose({ type: 'retry' }); beginFight({ quick: true }); return; }
           doChoose({ type: 'end' }); recordNight(save.run); deadFlow({ enemyId: eid });
         });
@@ -1718,7 +1722,8 @@
     if (!stg('has', 'f')) place('f', 'duelE', enemySpr(en));
     stg('sprite', 'f', enemySpr(en)); stg('hide', 'f', false); stg('sil', 'f', false);
     var lose = (C.lines[p.enemyId] && C.lines[p.enemyId].lose) || [];
-    later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
+    var fromDuel = UI.trail.length >= 2 && UI.trail[UI.trail.length - 2] === 'duel';   // 盤面打完那一下已經說過了（COPY-02）；重新整理回來才在這裡說
+    if (!fromDuel && lose.length) later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
     later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, 1700);
     var cards = p.cards.map(card).filter(Boolean), relics = p.relics.filter(relicOf);
     var busy = false;

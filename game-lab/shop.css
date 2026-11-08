@@ -66,7 +66,7 @@
 .ds-opt.below::after{top:auto;bottom:100%;-webkit-transform:translate(-50%,4px) rotate(225deg);transform:translate(-50%,4px) rotate(225deg)}
 
 /* 舊 Stage 的章（相容用；對決的章由 duel.js 畫在牌桌） */
-.ds-stamp{position:absolute;left:50%;top:50%;z-index:8;-webkit-transform:translate(-50%,-50%) rotate(-6deg);transform:translate(-50%,-50%) rotate(-6deg);
+.ds-stamp{white-space:pre-line;position:absolute;left:50%;top:50%;z-index:8;-webkit-transform:translate(-50%,-50%) rotate(-6deg);transform:translate(-50%,-50%) rotate(-6deg);
   background:#fff;border:2px solid #c11628;color:#c11628;font:700 18px/1.2 'Noto Sans TC','PingFang TC',sans-serif;padding:4px 12px;text-align:center;letter-spacing:.1em;pointer-events:none}
 .ds-stamp small{display:block;font-size:11px;letter-spacing:.04em}
 .ds-stamp.gold{border-color:#b8860b;color:#b8860b}

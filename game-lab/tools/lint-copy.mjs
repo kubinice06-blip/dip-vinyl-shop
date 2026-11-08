@@ -188,7 +188,7 @@ const add = it => items.push(it);
 const SCENE = { prologue: '序章（O1–O21）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
   bossEnter: '傳說藏家進門', clear: '打烊（通關）', dead: '散場', again: '再來一夜' };
 const UI_OK = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
-const WHO_OK = ['', '老闆', '男子', '藏家', '？？？', 'player'];
+const WHO_OK = ['', '老闆', '男子', '藏家', '傳說藏家', '？？？', 'player'];
 const TIER_KEYS = ['hall', 'pearl', 'heresy'];
 const seenBeat = new Set();
 const seenExtra = new Set();
@@ -254,7 +254,9 @@ for (const [who, lines] of Object.entries(C.lines || {})) {
 for (const id of Object.keys(C.enemies || {})) {
   const l = (C.lines || {})[id], e = C.enemies[id];
   if (!l) { err('lines.' + id, '缺少台詞'); continue; }
-  for (const k of ['line', 'intro', 'lose', 'win']) if (!l[k] || (Array.isArray(l[k]) && !l[k].length)) err('lines.' + id, '缺少 ' + k);
+  const keys = e && e.prologue ? ['intro', 'lose'] : ['line', 'intro', 'lose', 'win'];      // 序章男子只有原句（D §2、COPY-01）
+  for (const k of keys) if (!l[k] || (Array.isArray(l[k]) && !l[k].length)) err('lines.' + id, '缺少 ' + k);
+  if (e && e.prologue) for (const k of ['line', 'win']) if (k in l) err('lines.' + id, '序章男子不該有 ' + k + '（試做版加的句子，D §2）');
   if ('switch' in l) err('lines.' + id, 'v4 拿掉急了／翻面：不該有 switch');
 }
 for (const k of ['retry', 'bagFull', 'relicFull']) if (!((C.lines || {}).owner || {})[k]) err('lines.owner', '缺少 ' + k);

@@ -276,7 +276,8 @@ export function contentProblems(C, E) {
     if (e.avatar) avatarOk(e.avatar, 'enemies.' + id + '.avatar');
     ok(e.voice && e.voice.freq > 0, 'enemies.' + id + ': voice');
     const l = (C.lines || {})[id];
-    ok(l && l.line && l.intro && l.lose && l.win, 'lines.' + id + '：line／intro／lose／win');
+    if (e.prologue) ok(l && l.intro && l.lose && !('line' in l) && !('win' in l), 'lines.' + id + '（序章男子）：只有 intro／lose，沒有試做版加的 line／win（D §2、COPY-01）');
+    else ok(l && l.line && l.intro && l.lose && l.win, 'lines.' + id + '：line／intro／lose／win');
     ok(!l || !('switch' in l), 'lines.' + id + '：v4 拿掉 switch（急了／翻面）');
   }
   ok(C.lines && C.lines.boss && C.lines.boss.intro === '讓我看看你的品味有幾兩重。', 'lines.boss.intro＝BOSS_LINES[0]（去掉引號）');
@@ -296,7 +297,7 @@ export function contentProblems(C, E) {
   // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'）
   const DT = ['pickHint', 'picked', 'again', 'throwBtn', 'waiting', 'hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceUsed', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
-    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'koLoseRetry', 'roundsOut', 'roundsScore', 'roundsEven'];
+    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven'];
   ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');
   // D §5 的三個例句要組得出來

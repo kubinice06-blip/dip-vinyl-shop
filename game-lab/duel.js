@@ -84,7 +84,7 @@
     hitE: '他 −{n}', hitP: '你 −{n}',
     bluff: '他唬你！『{key}』是{hint}，他出的是{e}。', honest: '『{key}』是{hint}，他照實出。',
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
-    koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零', koLoseRetry: '老闆：……再一場。',
+    koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
   };
   function dtOf(content) {
@@ -889,7 +889,8 @@
       renderAct(); renderHint(v1); renderRec(v1);
       if (result.by === 'hp') stg('pose', win ? 'f' : 'p', 'ko', 700);
       sfx('ko');
-      say('f', pickLine(win ? ['lose'] : ['win']), 1800, true);
+      // 打完他說一句（只說一次，COPY-02）：序章男子的 E2／E3、藏家輸了的 C1 由接下來的對白講，盤面不冒泡泡；其他人在這裡說，挑唱片／說情畫面不再重複
+      if (!enemy.prologue && !(win && enemy.boss)) say('f', pickLine(win ? ['lose'] : ['win']), 1800, true);
       later(() => sfx(win ? 'win' : 'lose'), 300);
       winnerSong(win, cl);
       let tx = null;
@@ -898,7 +899,7 @@
         const nm = enemy.name || '';
         if (result.by === 'rounds' || result.by === 'pile') { const rv = roundsVars(over, v1, win); tx = { title: T('roundsOut'), sub: T(rv.even ? 'roundsEven' : 'roundsScore', rv), cls: win ? 'ink' : 'red' }; }
         else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
-        else tx = { title: T('koLose'), sub: run && (run.retryLeft | 0) > 0 ? T('koLoseRetry') : '', cls: 'red' };
+        else tx = { title: T('koLose'), sub: '', cls: 'red' };      // 老闆說情由接下來的對白講（COPY-07：大章不再寫「老闆：……再一場。」）
       }
       bigStamp(tx.title, tx.cls || (win ? 'ink' : 'red'), tx.sub);
       onEvent(over);
@@ -934,7 +935,7 @@
       tags(true);
       const fresh = (S.v.n | 0) <= 1 && !S.v.last;
       const open1 = lines.line || lines.intro;   // 口頭禪，沒有就用推門那句
-      if (fresh && open1 && !tut) say('f', Array.isArray(open1) ? open1[0] : open1, 1800);
+      if (fresh && open1 && !tut && !enemy.prologue) say('f', Array.isArray(open1) ? open1[0] : open1, 1800);   // 序章男子沒有口頭禪（D §2、COPY-01）
       renderAct();
       handStart(S.v);
       setPhase('choose');
