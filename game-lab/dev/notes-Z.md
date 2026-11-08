@@ -30,3 +30,13 @@
 - c6268c2d7 ?v=42；README 改寫（規則第 6 行、王牌、六手比聲望條、經濟台幣表、店裡的箱子、等店主決定的）。
 - 教學：C.tutorial 的步驟沒有提「不會被剋」；heresy 第 6 手「經典剋硬蕊，但 7 星剋不動：比星數。」＝gap（照舊）。
 - FIXLIST 10（平衡 KO≥35%）是之後才加的、不在 Z 的範圍（任務只給 2／3／4／5／6／8）；README「等店主決定的」第 1 點提到。
+
+## 測試結果（node：HEAD e5fdde5e5 之後；sim 用 Y 的真 bins.js）
+| 指令 | 結果 |
+|---|---|
+| `node game-lab/test/engine.test.mjs` | 1466108 passed, 0 failed |
+| `node game-lab/test/tutorial.test.mjs` | 142776 passed, 0 failed |
+| `node game-lab/test/shop.test.mjs`／`hit.test.mjs`／`chars.test.mjs` | 1276／343／30061 passed, 0 failed |
+| `node game-lab/tools/lint-copy.mjs` | 通過；句子 390（原句 45、店主 52、新 293）；劇本原句 26／26；LINES-REVIEW 重產（b69326f1e） |
+| `node game-lab/tools/check-content.mjs`／`check-shops.mjs`／`check-covers.mjs` | 通過（14 區、binsProblems 有跑）／OK（3 份 layout）／OK（60 張、14 區） |
+| `node game-lab/sim.mjs --n 3000` | 20/20（S1 80.1%、S2 最高 40.6%、S3 0%、S4 5.84 手／≤3 手 0.6%、S5 100%、S6 +8.7 點（none 71.4%）、S7 一般 71.4–89.0、菁英 65.3／77.7、藏家 52.6、S8 99.7%） |
