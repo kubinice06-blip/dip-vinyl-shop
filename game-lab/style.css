@@ -409,6 +409,27 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-rgrid.bin{grid-template-columns:repeat(3,minmax(0,1fr));}
 .lb-sheet.reward .lb-h3{margin-top:14px;}
 .lb-sheet.reward .lb-relic{min-height:56px;}
+.lb-sheet.reward .foot.rel{align-items:stretch;}
+.lb-sheet.reward .foot.rel .orr{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px;}
+.lb-sheet.reward .foot.rel .cap{font-size:10px;line-height:1.2;color:var(--gray2);letter-spacing:.04em;}
+.lb-sheet.reward .foot.rel .lb-relic{flex:1;min-height:48px;padding:4px 8px;gap:8px;width:100%;}
+.lb-sheet.reward .foot.rel .lb-relic .pix{width:28px;height:28px;}
+.lb-sheet.reward .foot.rel .lb-relic .nm{font-size:13px;}
+.lb-sheet.reward .foot.rel .lb-relic .ds{font-size:10px;line-height:1.35;}
+.lb-sheet.reward .foot.rel>[data-a=skip]{flex:0 0 30%;align-self:flex-end;min-height:48px;}
+@media (max-height:700px){
+  /* 兩排唱片（菁英／藏家丟了 5–6 張）：矮螢幕拿掉藝人那行、鈕矮一點，兩排＋底下那條不用捲（RT-3） */
+  .lb-rgrid.rows2{gap:6px 8px;margin-top:6px;}
+  .lb-rgrid.rows2 .lb-ct .ar{display:none;}
+  .lb-rgrid.rows2 .lb-ct .al{margin-top:3px;}
+  .lb-rgrid.rows2 .lb-ct .lb-pickb{min-height:36px;}
+  .lb-sheet.reward .lb-rgrid.rows2+.note{display:none;}
+}
+@media (max-height:600px){
+  .lb-rgrid.rows2{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px 6px;}
+  .lb-rgrid.rows2 .lb-ct .stars{font-size:10px;letter-spacing:-.02em;}
+  .lb-rgrid.rows2 .lb-ct .stars b{margin-right:1px;}
+}
 /* 試聽機：選中的那張 */
 .lb-pick.booth{grid-template-columns:repeat(4,minmax(0,1fr));}
 .lb-pick.booth .lb-pickb{min-height:40px;}

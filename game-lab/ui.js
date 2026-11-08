@@ -1126,6 +1126,7 @@
         '<div class="lb-opts">' + relicButtonsHTML(choices, 'data-r') + '</div>' +
         (opts.cancel ? '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">' + esc(opts.cancel) + '</button></div>' : '');
       var s = sheet(html, 'relics');
+      roomForSheet(s);                       // 三件配件＋「算了」：舞台讓出放得下的高（V02）
       var done = false;
       s.addEventListener('click', function (e) {
         if (done) return;
@@ -1145,6 +1146,7 @@
         '<div class="lb-pick">' + r.bag.map(function (id) { return tileHTML(card(id), { text: false, pick: '拿出來' }); }).join('') + '</div>' +
         '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">算了，不放了</button></div>';
       var s = sheet(html, 'drop');
+      roomForSheet(s);                       // 兩排八張＋「算了」：舞台讓出放得下的高，不用在面板裡捲（V02）
       var done = false;
       s.addEventListener('click', function (e) {
         if (done) return;
@@ -1719,40 +1721,50 @@
     later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
     later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, 1700);
     var cards = p.cards.map(card).filter(Boolean), relics = p.relics.filter(relicOf);
-    var bagLine = '包包 ' + r.bag.length + '／' + E.CFG.bagMax;
-    var html = '<div class="hd"><h3>' + (cards.length ? '他丟過的唱片：挑一張收進包包' : '他沒有能收的唱片') + '</h3><span class="sub">' + esc(bagLine) + '</span></div>' +
-      (cards.length ? '<div class="lb-rgrid">' + cards.map(function (c) { return tileHTML(c, { pick: '收這張', isNew: isNewOnShelf(c.id) }); }).join('') + '</div>' +
-        '<p class="note">點封面看唱片資訊、試聽。沒收的也都進了唱片櫃。</p>' : '') +
-      (relics.length ? '<div class="lb-h3">' + (cards.length ? '或改拿一件發燒配件' : '挑一件發燒配件') + '</div><div class="lb-opts">' + relicButtonsHTML(relics, 'data-r') + '</div>' : '') +
-      '<div class="foot"><button type="button" class="lb-btn wide" data-a="skip">' + (cards.length || relics.length ? '都不要' : '繼續') + '</button></div>';
-    var s = sheet(html, 'reward');
-    // 面板量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）：收這張的鈕不被底下那條蓋住
-    var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
-    var needR = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
-    if (vh - 32 - needR < 210) cam('strip', 'reward', 600);       // 放不下整間店：收成對決那條（你和他都還在畫面裡），不要把店縮成一小塊
-    else cam('reward', 'reward', 600, needR);
     var busy = false;
+    // 面板（包包滿／配件滿按「算了」回來時重畫這一張：sheet() 開新面板會把它拿掉；RT-1）
+    function showSheet() {
+      var rr = save.run;
+      var bagLine = '包包 ' + rr.bag.length + '/' + E.CFG.bagMax;
+      // 有唱片又有配件：配件放進底下那條、跟「都不要」並排，矮螢幕也不用捲才看得到（RT-3）
+      var footRelic = cards.length && relics.length;
+      var html = '<div class="hd"><h3>' + (cards.length ? '他丟過的唱片：挑一張收進包包' : '他沒有能收的唱片') + '</h3><span class="sub">' + esc(bagLine) + '</span></div>' +
+        (cards.length ? '<div class="lb-rgrid' + (cards.length > 4 ? ' rows2' : '') + '">' + cards.map(function (c) { return tileHTML(c, { pick: '收這張', isNew: isNewOnShelf(c.id) }); }).join('') + '</div>' +
+          '<p class="note">點封面看唱片資訊、試聽。沒收的也都進了唱片櫃。</p>' : '') +
+        (relics.length && !footRelic ? '<div class="lb-h3">挑一件發燒配件</div><div class="lb-opts">' + relicButtonsHTML(relics, 'data-r') + '</div>' : '') +
+        (footRelic ? '<div class="foot two rel"><div class="orr"><span class="cap">或改拿一件發燒配件</span>' + relicButtonsHTML(relics, 'data-r') + '</div>' +
+          '<button type="button" class="lb-btn" data-a="skip">都不要</button></div>'
+          : '<div class="foot"><button type="button" class="lb-btn wide" data-a="skip">' + (cards.length || relics.length ? '都不要' : '繼續') + '</button></div>');
+      var s = sheet(html, 'reward');
+      // 面板量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）：收這張的鈕不被底下那條蓋住
+      var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+      var needR = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
+      if (vh - 32 - needR < 210) cam('strip', 'reward', 600);       // 放不下整間店：收成對決那條（你和他都還在畫面裡），不要把店縮成一小塊
+      else cam('reward', 'reward', 600, needR);
+      s.addEventListener('click', function (e) {
+        if (busy) return;
+        var pk = e.target.closest && e.target.closest('[data-pick]');
+        var rl = e.target.closest && e.target.closest('[data-r]');
+        if (pk) { busy = true; sfx('select'); takeCard(pk.getAttribute('data-pick')).then(finish); return; }
+        if (rl) { busy = true; sfx('select'); takeRelic(rl.getAttribute('data-r')).then(finish); return; }
+        if (e.target.closest && e.target.closest('[data-a=skip]')) { busy = true; finish(doChoose({ type: 'skip' })); }
+      });
+      autoAct(function () {
+        var ch = E.runPolicy(save.run, C) || { type: 'skip' };
+        if (ch.type === 'take') { busy = true; takeCard(ch.cardId, ch.dropId).then(finish); }
+        else if (ch.type === 'relic') { busy = true; takeRelic(ch.relicId, ch.dropRelicId).then(finish); }
+        else { busy = true; finish(doChoose({ type: 'skip' })); }
+      }, 300);
+      return s;
+    }
     var finish = function (res) {
       if (res && res.effects) toast(effectsText(res.effects));
       var rr = save.run;
-      if (rr.pending && rr.pending.type === 'reward') { busy = false; return; }          // 還沒選完（例：包包滿了按「算了」）
+      if (rr.pending && rr.pending.type === 'reward') { busy = false; if (UI.screen === 'reward') showSheet(); return; }   // 還沒選完（包包滿了按「算了」）：挑唱片的面板放回來
       if (rr.over) { recordNight(rr); return later(function () { rr.over === 'clear' ? clearFlow() : go('end'); }, 300); }
       later(function () { go('night'); }, 300);
     };
-    s.addEventListener('click', function (e) {
-      if (busy) return;
-      var pk = e.target.closest && e.target.closest('[data-pick]');
-      var rl = e.target.closest && e.target.closest('[data-r]');
-      if (pk) { busy = true; sfx('select'); takeCard(pk.getAttribute('data-pick')).then(finish); return; }
-      if (rl) { busy = true; sfx('select'); takeRelic(rl.getAttribute('data-r')).then(finish); return; }
-      if (e.target.closest && e.target.closest('[data-a=skip]')) { busy = true; finish(doChoose({ type: 'skip' })); }
-    });
-    autoAct(function () {
-      var ch = E.runPolicy(save.run, C) || { type: 'skip' };
-      if (ch.type === 'take') { busy = true; takeCard(ch.cardId, ch.dropId).then(finish); }
-      else if (ch.type === 'relic') { busy = true; takeRelic(ch.relicId, ch.dropRelicId).then(finish); }
-      else { busy = true; finish(doChoose({ type: 'skip' })); }
-    }, 300);
+    showSheet();
   };
 
   // ======================================================================= 今晚來客（SPEC-v3 §9：店內底部一條，五顆頭像，打完的變黑，下一位金框；v4：錢、熟客出現、第一位客人已在店裡）
