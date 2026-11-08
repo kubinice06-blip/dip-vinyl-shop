@@ -1814,6 +1814,13 @@
   }
   // 你要走去的站位旁邊站著人（今晚來客畫面、門邊等的第一位客人 f）：他走到另一個空的等候位（atdoor／wait），兩個人不疊在一起（RT-12）
   var ROOM_DX = 38, ROOM_DY = 44;
+  // 第一位客人在店裡等：平常站門邊（atdoor）；你站在門邊附近（剛翻完特價箱、FEATURE）就站試聽桌前（wait），關抽屜回來也不疊在一起（RT-12）
+  function waitSpot() {
+    var p = stg('pos', 'p'), a = stg('spot', 'atdoor'), w = stg('spot', 'wait');
+    if (!p || p.hidden || !a || !w) return 'atdoor';
+    var near = function (q) { return q && Math.abs(q[0] - a[0]) < ROOM_DX && Math.abs(q[1] - a[1]) < ROOM_DY; };
+    return (near([p.x, p.y]) || near(stg('spot', UI.lastSpot || 'browse'))) ? 'wait' : 'atdoor';   // 你現在站的、或正要走回去的位置
+  }
   function makeRoom(to) {
     if (UI.screen !== 'night' || !to || !stg('has', 'f')) return;
     var f = stg('pos', 'f'); if (!f || f.hidden || f.outside) return;
@@ -1837,7 +1844,7 @@
     // 序章收尾 E10 推門進來的那位＝今晚第一位：已經在店裡（門邊、不剪影），門外排的是再下一位
     var inside = !!(r.shop && r.shop.firstGuestInside) && r.idx === 0;
     var nx = r.order[r.idx], q = inside ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
-    if (inside && nx) { settle('f', 'atdoor', enemySpr(C.enemies[nx])); stg('sil', 'f', false); } else { hideActor('f'); stg('door', 'close'); }
+    if (inside && nx) { settle('f', waitSpot(), enemySpr(C.enemies[nx])); stg('sil', 'f', false); } else { hideActor('f'); stg('door', 'close'); }
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
     var row = r.order.map(function (id, i) {
