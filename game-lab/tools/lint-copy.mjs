@@ -335,7 +335,7 @@ for (const [id, r] of Object.entries(C.relics || {})) {
 if (C.relics && C.relics.boost_o && C.relics.boost_o.desc !== '冷門出招時 +1 星' + '。') err('relics.boost_o.desc', '要是 D §6 例句「冷門出招時 +1 星」加句號');
 if (!OWNER_SET.has('冷門出招時 +1 星')) err('tools/owner-lines-v4.json', '少了 D §6 的「冷門出招時 +1 星」');
 
-// 序章引導教學（SPEC-v3 §8：10 步，老闆的泡泡 ≤25 字）
+// 序章引導教學（SPEC-v4 §2.5.5：六手 18 步，老闆的泡泡 ≤25 字；依王牌分句的 text 三張各算一句）
 const TUT = C.tutorial;
 if (!TUT) err('tutorial', '沒有 C.tutorial');
 else {

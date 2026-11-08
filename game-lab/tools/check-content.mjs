@@ -11,7 +11,9 @@
 //   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（§2.2.5 的旋鈕範圍、配件價 > 唱片最高價）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字。
 //   C.bins 的鍵＝bins.js（A3 烘）。
-//   v3 教學步驟（t1–t10）的檢查已刪；v4 教學步驟的檢查由第二波 B2 第 2 階段補。
+//   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那顆（allow.pick＋'tile:pick'／point 'pick'）」或「丟（allow.throw＋point throw）」、
+//     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
+//     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
 //   v4 劇本（§2.5.3、§2.5.4，B2；匯出 scriptProblems(C, layout)）：序章 O1–O21、收尾 E1–E11 的 id 與順序；D §2 店主改的句子逐字；
 //     步驟（do／人物／站位都在 shops/dip.json）；翻箱（pose dig）之前同一串步驟裡一定先走路；序章與收尾藏熟客；O11 停音樂、O14 才入袋；
 //     兩顆接受對決；E4 他走到門口才晃門、地上留一張盤、撿起面板；選完才走到唱盤（C.blocking.toDuel 三人終點）；v3 墊片都刪了。
@@ -303,6 +305,7 @@ export function contentProblems(C, E) {
   ok(C.summary && C.summary.reached && C.summary.wins && C.summary.taken && C.summary.again, 'summary 結算三件事＋再來一夜');
   let L = null; try { L = JSON.parse(fs.readFileSync(path.join(LAB, 'shops', 'dip.json'), 'utf8')); } catch (_) { L = null; }
   for (const m of scriptProblems(C, L)) bad.push(m);
+  for (const m of tutorialProblems(C)) bad.push(m);
   const enemyNames = Object.values(C.enemies).map(e => e.name);
   ok(C.names.length >= 20 && C.names.every(n => !enemyNames.includes(n) && [...n].length <= 8), 'names：不能用客人的名字、≤8 字');
   ok(C.avatarsFallback.length === 6, 'avatarsFallback 要 6 組'); C.avatarsFallback.forEach((a, k) => avatarOk(a, 'avatarsFallback[' + k + ']'));
@@ -410,6 +413,62 @@ export function scriptProblems(C, L) {
   ok((C.blocking || {}).speed > 0, 'C.blocking.speed');
   ok((S.bossEnter || []).some(b => b.text === '「讓我看看你的品味有幾兩重。」'), 'bossEnter：藏家進門用原版 BOSS_LINES[0]');
   ok(!(S.clear || []).some(b => /有空再來這邊走走/.test(b.text)), 'clear：「年輕人，有空再來…」回到序章收尾 E8，通關不再說');
+  return bad;
+}
+
+// ================================================================================================
+// v4 教學步驟（SPEC-v4 §2.5.5；C.tutorial.steps／learned／ui，B2）
+// ================================================================================================
+export function tutorialProblems(C) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const T = C.tutorial || {};
+  const steps = T.steps || [];
+  if (!ok(steps.length > 0, 'tutorial.steps：沒有步驟')) return bad;
+  ok(new Set(steps.map(s => s.id)).size === steps.length, 'tutorial.steps：id 重複');
+  const LEARN = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星、不會被剋' };
+  ok(JSON.stringify(T.learned) === JSON.stringify(LEARN), 'tutorial.learned 要＝§2.5.5 的 L1–L6');
+  ok(T.ui && ['who', 'learnedPrefix', 'wrong', 'skipTut', 'replay', 'learnedTitle'].every(k => typeof T.ui[k] === 'string' && T.ui[k]), 'tutorial.ui 的鍵');
+  let hand = 1, thrown = false;
+  const handOf = [], learnOrder = [];
+  steps.forEach((s, k) => {
+    const w = 'tutorial.steps.' + s.id;
+    ok(['say', 'do'].includes(s.kind), w + '：kind 只有 say／do');
+    const res = s.kind === 'say' && (s.target || []).includes('result');
+    ok(!res || thrown, w + '：結算時講的步驟（target result）要在「丟」之後');
+    if (!res) thrown = false;
+    handOf.push(res ? hand - 1 : hand);
+    const texts = s.text && typeof s.text === 'object' ? s.text : null;
+    if (texts) ok(TIERS.every(t => typeof texts[t] === 'string' && texts[t]), w + '：依王牌分句要三張都有');
+    else ok(typeof s.text === 'string' && s.text, w + '：沒有台詞');
+    if (s.tri) ok(Array.isArray(s.tri) && s.tri.every(x => ['oc', 'ch', 'ho'].includes(x)), w + '：tri 只能是 oc／ch／ho');
+    if (s.learn) { ok(LEARN[s.learn], w + '：learn ' + s.learn + ' 不在 learned'); learnOrder.push(s.learn); }
+    if (s.kind === 'do') {
+      const al = s.allow || {};
+      if (al.throw) {
+        ok(!al.pick && s.point === 'throw' && (s.target || []).includes('throw') && (s.target || []).includes('pick'), w + '：丟的那步 allow {throw}、point throw、target 含 pick 與 throw');
+        thrown = true; hand++;
+      } else ok(al.pick === true && s.point === 'pick' && JSON.stringify(s.target) === JSON.stringify(['tile:pick']), w + '：點的那步 allow {pick}、point pick、target [tile:pick]');
+    }
+  });
+  ok(hand - 1 === 6, 'tutorial.steps：六手各一個「丟」（現在 ' + (hand - 1) + '）');
+  ok(JSON.stringify(learnOrder) === JSON.stringify(['L1', 'L2', 'L3', 'L4', 'L5', 'L6']), 'tutorial.steps：小卡 L1–L6 各學一次、照課表順序（' + learnOrder.join(',') + '）');
+  // 每手：先點、再丟（點的那步在同一手的丟之前）
+  for (let h = 1; h <= 6; h++) {
+    const ks = steps.map((s, k) => k).filter(k => handOf[k] === h && steps[k].kind === 'do');
+    ok(ks.length === 2 && !steps[ks[0]].allow.throw && steps[ks[1]].allow.throw, 'tutorial 第 ' + h + ' 手：先點那顆、再丟');
+  }
+  const first = steps[0];
+  ok(first.kind === 'say' && (first.target || []).includes('e-hint'), 'tutorial：第 1 手前一句說明提示（target e-hint）');
+  const hint1 = ((C.hints || {})[(T.hints || [])[0] && T.hints[0][0]] || []).find(h => h.id === (T.hints || [])[0]);
+  const after1 = steps.filter((s, k) => handOf[k] === 1 && s.kind === 'say' && (s.target || []).includes('result'));
+  const callouts = steps.filter(s => hint1 && typeof s.text === 'string' && s.text.includes('『' + hint1.key + '』就是'));
+  ok(hint1 && callouts.length === 1 && after1.includes(callouts[0]), 'tutorial：第 1 手結算後老闆點破關鍵字『' + (hint1 && hint1.key) + '』一次');
+  for (const t of TIERS) {
+    const pick = (((T.script || {})[t]) || {}).pick || [];
+    ok(pick.length === 6, 'tutorial.script.' + t + '.pick：6 手');
+    pick.forEach((p, k) => ok(p === 'ace' || p === 'blocked:o' || (p && (C.gifts[t] || []).includes(p.id) && ATTRS.includes(p.attr)), 'tutorial.script.' + t + '.pick[' + k + ']：' + JSON.stringify(p)));
+  }
   return bad;
 }
 

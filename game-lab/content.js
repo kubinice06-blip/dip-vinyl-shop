@@ -578,24 +578,34 @@
       heresy: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
         { kind: 'counter', toE: 5, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'ace' }]
     },
-    // ---- 以下 steps／learned／ui 是 v3 的教學步驟，第二波 B2 改寫成 v4 六手 ----
+    // ---- 以下 steps／learned／ui 由 B2 寫（§2.5.5）：六手各教一件事 ----
+    //   target／point 的 'pick'＝這一手 script[tier].pick 指的那顆（tutorial.js stepsFor 代入：{id,attr}→chip:id:<id>:<attr>、'blocked:o'→chip:blocked:o、'ace'→王牌）；
+    //   'tile:pick'＝那顆所在的整格（封面＋星鈕；點封面也算，只要選到的屬性對）。allow.pick＝只放行那一顆。
+    //   每手：（說明）→ 點那顆 → 丟！ →（結算浮框出現時講，target 含 result）。learn＝這步做完就學到哪張小卡。
+    //   第 1 手前一句說明提示；第 1 手結算後老闆點破關鍵字一次（提示 c5「他把那張名盤擦得發亮。」→「名盤」＝經典；規劃書，不是 D，列 §5.7）。
     steps: [
-      { id: 't1', kind: 'say', target: ['e-habit'], text: '這是他的脾氣。他多半照著丟。', bubble: 'below', tag: '新' },
-      { id: 't2', kind: 'say', target: ['e-stars'], text: '只認排行榜：他會丟最大的星，經典。', colorChars: true, bubble: 'below', tag: '新' },
-      { id: 't3', kind: 'say', target: ['tri'], tri: ['oc'], text: '冷門剋經典。', tag: '新' },
-      { id: 't4', kind: 'do', target: ['chip:best:o'], allow: { chip: { i: 'best', attr: 'o' } }, tri: ['oc'], text: '點這顆冷門。', bubble: 'above', tag: '新' },
-      { id: 't5', kind: 'do', target: ['chip:best:o', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '再點一下，丟！', bubble: 'above', tag: '新' },
-      { id: 't6', kind: 'say', target: ['result'], text: '剋中：用你那顆星扣他。', learn: 'L1', tag: '新' },
-      { id: 't7', kind: 'do', target: ['chip:best:c'], allow: { chip: { i: 'best', attr: 'c' } }, tri: ['ch'], text: '他最大的是硬蕊。經典剋硬蕊。', bubble: 'above', tag: '新' },
-      { id: 't8', kind: 'do', target: ['chip:best:c', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ch'], text: '丟！', learn: 'L2', bubble: 'above', tag: '新' },
-      { id: 't9', kind: 'do', target: ['hand'], point: false, allow: { chip: { i: 'any', attr: 'h' }, throw: true }, tri: ['ho'], text: '冷門最大。剋冷門的是哪個？', learn: 'L3', bubble: 'above', tag: '新' },
-      { id: 't10', kind: 'soft', target: ['hand-ace'], text: '王牌 7 星，每場一次。接下來自己來。', learn: 'L4', tag: '新' }
+      { id: 'm1', kind: 'say', target: ['e-hint'], text: '上面這句是提示，暗示他這手要出什麼。', bubble: 'below', tag: '新' },
+      { id: 'm2', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '先出這張的經典，跟他比星數。', bubble: 'above', tag: '新' },
+      { id: 'm3', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'm4', kind: 'say', target: ['result'], text: '同色就比星數，多的扣差額。', learn: 'L1', tag: '新' },
+      { id: 'm5', kind: 'say', target: ['result'], text: '『名盤』就是經典。提示裡會藏這種字。', tag: '新' },
+      { id: 'k1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '冷門剋經典：點這顆冷門。', bubble: 'above', tag: '新' },
+      { id: 'k2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'k3', kind: 'say', target: ['result'], text: '剋中：用你那顆星扣他。', learn: 'L2', tag: '新' },
+      { id: 'c1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['ch'], text: '經典剋硬蕊：點這顆經典。', bubble: 'above', tag: '新' },
+      { id: 'c2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ch'], text: '丟！', learn: 'L3', bubble: 'above', tag: '新' },
+      { id: 'h1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['ho'], text: '硬蕊剋冷門：點這顆硬蕊。', bubble: 'above', tag: '新' },
+      { id: 'h2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ho'], text: '丟！', learn: 'L4', bubble: 'above', tag: '新' },
+      { id: 'b1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '又是『名盤』。出這張冷門試試。', bubble: 'above', tag: '新' },
+      { id: 'b2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'b3', kind: 'say', target: ['result'], text: '他高你 2 星以上，剋不動，改比星數。', learn: 'L5', tag: '新' },
+      { id: 'a1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場一次。', bubble: 'above', tag: '新' },
+      { id: 'a2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'a3', kind: 'say', target: ['result'], learn: 'L6', tag: '新',
+        text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但 7 星剋不動：比星數。' } }
     ],
-    learned: { L1: '冷門剋經典', L2: '經典剋硬蕊', L3: '硬蕊剋冷門', L4: '王牌 7 星，每場一次' },
-    ui: {
-      who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。',
-      skipTut: '跳過教學', replay: '重看教學', start: '▶ 品味對決', skip: '▶ 直接開打（我會玩）', learnedTitle: '學會的規則'
-    },
+    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星、不會被剋' },
+    ui: { who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。', skipTut: '跳過教學', replay: '重看教學', learnedTitle: '學會的規則' },
     uiTag: '新'
   };
   ['hall', 'pearl', 'heresy'].forEach(function (t) {
