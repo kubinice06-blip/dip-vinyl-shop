@@ -1,15 +1,19 @@
-// check-covers.mjs：店裡看得到的封面＝那一區的曲風、整家店不重複（SPEC-v4 §5.1 A3、§2.2.1、§2.3.5、§4.5；D §6）。A3。
+// check-covers.mjs：店裡看得到的封面＝那一區的貨、整家店不重複（SPEC-v4 §5.1、§2.2.1、§2.3.5；D §6；FIXLIST 4／5／8 與 X／Y 契約）。A3 → Y。
 //
 //   node game-lab/tools/check-covers.mjs          # 有問題 exit 1；--quiet 只印結論；--json 印明細
 //
+// 分區（FIXLIST 4／5，X／Y 契約）：十大類（genre-tree.json 頂層：rock jazz electronic→elec soul hiphop classical folk pop world blues）＋台灣 tw（地區優先）
+//   ＋新進 new（不限分類）＋門口牆 feature（店長推薦精選：史詩＋傳奇）／picks（店長推薦：不限分類）＋特價箱 sale（C.bargain）。
 // 查：
-//   1. 每個看得到的封面（箱子 front——含島上原本 lean 的那一格 front[1]——、牆 cards、高櫃 cards、試聽桌 stack）都在 cards.js、整家店不重複；
-//   2. 每個看得到的封面都符合它所屬那一區的 rule（12 箱看 bin.key；特價箱＝C.bargain 的卡（deck-lists.json bargain）；
-//      rack-a／listenDesk＝wallA、rack-b／shelving＝wallB，看道具的 section）；counter.now 除外；
-//   3. 每箱 front ⊂ 該箱 pool（bins.js）；每箱 pool 每張符合該箱 rule（first 看 genres[0]、ost 看專輯名或 _ost）；
-//   4. 12 箱 pool 兩兩不交集，也不跟牌組／禮物／特價箱／王牌／掉牌／牆交集（deck-lists.json；content.js 是 v4 時也比 C.enemies／gifts／bargain／aces／m2Swaps）；
-//   5. dip.json 不准有 lean 鍵；宇多田ヒカル《First Love》在日本／CITY 的 front、不在其他地方。
-// rule 的判斷跟 tools/bake-cards.mjs 的 ruleMisses 一模一樣（改一邊要改另一邊）。
+//   1. 每個看得到的封面（箱子 front、有 bin 的牆架 cards、section 道具：高櫃 cards、試聽桌 stack）都在 cards.js、整家店不重複；
+//   2. 每個看得到的封面符合它那一區的 rule、在那一區的 pool；counter.now 除外；
+//   3. bins.js 每一區：key／label／zh＝deck-lists _bins、pool 每張符合 rule、front＝店裡那一區看得到的封面（照道具順序）、front ⊂ pool、
+//      pool 夠大（每晚 4–6 張＋看得到的；feature 2–3 張＋看得到的）；店裡每個 bin.key 都有 bins.js 那一區、bins.js 每一區店裡都有；
+//   4. 各區 pool 兩兩不交集，也不跟牌組／禮物／特價箱／王牌／掉牌交集（deck-lists.json；content.js 是 v4 時也比 C.enemies／gifts／bargain／aces）；
+//   5. 名牌：道具上畫的英文（中島 tabs[0]、木箱／矮櫃 label、牆架 plate）＝bins.js label；bin.label（點了掛的字）＝zh；dip.json 不准有 lean 鍵；
+//   6. 宇多田ヒカル《First Love》在流行（POP）的正面、不在其他地方（D §6 點名：不准出現在搖滾）。
+// rule（bake-cards.mjs 直接 import 這裡的 ruleMisses，同一份）：cat（契約的分類：地區 tw → tw，否則第一個曲風標籤對到十大類）、rarity（稀有度清單）、
+//   first（genres[0] 要在裡面）、regions、minYear、minTop:{attr,star}、notGenres、ost:true。
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -20,10 +24,20 @@ const LAB = path.resolve(HERE, '..');
 const require = createRequire(import.meta.url);
 
 export const OST_RE = /(original (motion picture )?(soundtrack|score))|soundtrack from|music from the (motion picture|film|original|soundtrack)|サウンドトラック|原聲帶|原聲專輯/i;
-// 同 bake-cards.mjs：first（genres[0] 要在裡面）、regions、minYear、minTop:{attr,star}（該軸 ≥star 且是峰值，可並列）、notGenres、ost:true
+// 十大類（genre-tree.json 頂層 id → 箱子 key；electronic 的箱子叫 elec）
+export const GENRE_CAT = { rock: 'rock', jazz: 'jazz', electronic: 'elec', soul: 'soul', hiphop: 'hiphop', classical: 'classical', folk: 'folk', pop: 'pop', world: 'world', blues: 'blues' };
+// 卡的分類（契約）：地區台灣 → tw（地區優先）；否則第一個曲風標籤對到十大類；對不到回 null
+export function catOf(c) { if (c.region === 'tw') return 'tw'; return GENRE_CAT[(c.genres || [])[0]] || null; }
+// 稀有度（CARD_GAME_DESIGN §5）：score＝經典＋硬蕊＋(冷門＝5 ? 1 : 0)；≤5 普通、6 稀有、7 獨特、8 史詩、≥9 傳奇；有 tier（殿堂／流亡／異端）＝頂點
+export const RARITIES = ['common', 'rare', 'uncommon', 'epic', 'legendary', 'apex'];
+export const RARITY_ZH = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };
+export function rarityScore(c) { return (c.c | 0) + (c.h | 0) + (c.o === 5 ? 1 : 0); }
+export function rarityOf(c) { if (c.tier) return 'apex'; const s = rarityScore(c); return s <= 5 ? 'common' : s === 6 ? 'rare' : s === 7 ? 'uncommon' : s === 8 ? 'epic' : 'legendary'; }
 export function ruleMisses(rule, c, ostIds) {
   const why = [];
   if (!rule) return ['no-rule'];
+  if (rule.cat && catOf(c) !== rule.cat) why.push('cat=' + catOf(c));
+  if (rule.rarity && !rule.rarity.includes(rarityOf(c))) why.push('rarity=' + rarityOf(c));
   if (rule.first && !rule.first.includes((c.genres || [])[0])) why.push('first=' + (c.genres || [])[0]);
   if (rule.regions && !rule.regions.includes(c.region)) why.push('region=' + c.region);
   if (rule.minYear != null && !(c.year >= rule.minYear)) why.push('year=' + c.year);
@@ -34,22 +48,30 @@ export function ruleMisses(rule, c, ostIds) {
 }
 // 特價箱（§4.3）：峰值 ≤3、冷門 ≤3
 export function bargainMisses(c) { const why = []; if (Math.max(c.c, c.o, c.h) > 3) why.push('peak>3'); if (c.o > 3) why.push('o>3'); return why; }
-
-const BIN_GROUP = g => g.startsWith('bin_') ? g.slice(4) : g === 'wall_a' ? 'wallA' : g === 'wall_b' ? 'wallB' : null;
+// 每晚上貨（契約）：各區 4–6 張、feature 2–3 張 → pool 至少要「看得到的＋每晚最多」
+export const STOCK_MAX = { feature: 3 }, STOCK_MAX_DEFAULT = 6;
 const NOT_EXCLUSIVE = new Set(['gold', 'listen', 'stake']);   // v3 唱片櫃／試聽機用的組，可以跟箱子重疊（bake-cards 同一張表）
-const SECTION_OF_TYPE = { ledge: null, shelving: null, listenDesk: null };   // 牆上的區看道具的 section
+// 道具上畫的名牌英文：中島 tabs[0]、木箱／矮櫃 label、牆架 plate（沒有就 null）
+export function plateOf(o) { if (o.type === 'ledge') return o.plate || null; if (o.tabs && o.tabs[0]) return o.tabs[0]; return o.label || null; }
 
-// 看得到的封面：[{ id, prop, slot, section }]；section＝'bin:<key>'｜'wallA'｜'wallB'｜'now'｜null（沒標區）
+// 看得到的封面：[{ id, prop, slot, section }]；section＝那一區的 key（'jazz'…'picks'、'sale'）｜'now'｜null（沒標區）
+//   有 bin 的箱子＝front；有 bin 的牆架＝cards；沒有 bin、有 section 的道具（高櫃 cards、試聽桌 stack）＝section；櫃檯 now＝'now'
 export function visibleCovers(L) {
   const out = [];
   for (const o of L.props || []) {
     if (o.hidden) continue;
-    if (o.bin && Array.isArray(o.front)) o.front.forEach((id, i) => out.push({ id, prop: o.id, slot: 'front[' + i + ']', section: 'bin:' + o.bin.key }));
-    else if (Array.isArray(o.front)) o.front.forEach((id, i) => out.push({ id, prop: o.id, slot: 'front[' + i + ']', section: null }));
-    if ((o.type === 'ledge' || o.type === 'shelving') && Array.isArray(o.cards)) o.cards.forEach((id, i) => { if (id) out.push({ id, prop: o.id, slot: 'cards[' + i + ']', section: o.section || null }); });
-    if (o.type === 'listenDesk' && o.stack) out.push({ id: o.stack, prop: o.id, slot: 'stack', section: o.section || null });
+    const sec = o.bin && o.bin.key ? o.bin.key : (o.section || null);
+    if (Array.isArray(o.front)) o.front.forEach((id, i) => out.push({ id, prop: o.id, slot: 'front[' + i + ']', section: sec }));
+    if ((o.type === 'ledge' || o.type === 'shelving') && Array.isArray(o.cards)) o.cards.forEach((id, i) => { if (id) out.push({ id, prop: o.id, slot: 'cards[' + i + ']', section: sec }); });
+    if (o.type === 'listenDesk' && o.stack) out.push({ id: o.stack, prop: o.id, slot: 'stack', section: sec });
     if (o.type === 'counter' && o.now) out.push({ id: o.now, prop: o.id, slot: 'now', section: 'now' });
   }
+  return out;
+}
+// 每一區看得到的封面（照道具順序；bake-cards 用它寫 bins.js 的 front）：{ key: [ids] }（不含 now、sale 照收）
+export function sectionFronts(L) {
+  const out = {};
+  for (const v of visibleCovers(L)) if (v.section && v.section !== 'now' && v.id) (out[v.section] = out[v.section] || []).push(v.id);
   return out;
 }
 
@@ -62,6 +84,7 @@ export function runCovers(opts = {}) {
   const lists = opts.lists || JSON.parse(fs.readFileSync(path.join(LAB, 'tools/deck-lists.json'), 'utf8'));
   let content = opts.content; if (content === undefined) { try { content = require(path.join(LAB, 'content.js')); } catch (_) { content = null; } }
   const bins = (binsAll.shops && binsAll.shops[L.id || 'dip']) || {};
+  const META = lists._bins || {};
   const ostIds = lists._ost || [];
   // deck-lists 的 "藝人|專輯" → 卡 id（用 cards.js 反查，跟 bake 同一份資料）
   const norm = v => String(v || '').normalize('NFKD').toLowerCase().replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
@@ -73,9 +96,9 @@ export function runCovers(opts = {}) {
     if (g.startsWith('_') || !Array.isArray(arr)) continue;
     groups[g] = arr.map(s => { const id = idOf(s); if (!id) bad('deck-lists ' + g + '：「' + s + '」不在 cards.js（要重烘）'); return id; }).filter(Boolean);
   }
-  const info = { covers: 0, bins: 0, sections: {} };
+  const info = { covers: 0, bins: 0, sections: {}, pools: {} };
 
-  // ---- 5. 沒有 lean
+  // ---- 5a. 沒有 lean
   for (const o of L.props || []) if ('lean' in o) bad('dip.json ' + (o.id || o.type) + '：還有 lean 鍵（v4 那一格＝front[1]，SPEC-v4 §2.3.5）');
 
   // ---- 1. 看得到的封面：在 cards.js、整家店不重複
@@ -90,70 +113,93 @@ export function runCovers(opts = {}) {
     else seen[v.id] = { where, section: v.section };
   }
 
-  // ---- 2. 每個封面符合它那一區的 rule
+  // ---- 2. 每個封面符合它那一區的 rule、在那一區的 pool
   for (const v of vis) {
     const c = cards[v.id]; if (!c || v.section === 'now') continue;
     const where = v.prop + '.' + v.slot + ' ' + v.id;
-    if (!v.section) { bad(where + '：沒有所屬的區（箱子要有 bin、牆／高櫃／試聽桌要有 section）'); continue; }
+    if (!v.section) { bad(where + '：沒有所屬的區（箱子／牆架要有 bin、高櫃／試聽桌要有 section）'); continue; }
     (info.sections[v.section] = info.sections[v.section] || []).push(v.id);
-    if (v.section === 'bin:sale') {
+    if (v.section === 'sale') {
       if (!(groups.bargain || []).includes(v.id)) bad(where + '：特價箱的封面不在 C.bargain（deck-lists bargain）');
       const m = bargainMisses(c); if (m.length) bad(where + '：不符特價箱限制 ' + m.join(','));
       continue;
     }
-    const key = v.section.startsWith('bin:') ? v.section.slice(4) : v.section;
-    const B = bins[key];
-    if (!B) { bad(where + '：bins.js 沒有「' + key + '」這一區'); continue; }
-    const m = ruleMisses(B.rule, c, ostIds); if (m.length) bad(where + '：不符「' + key + '」的 rule（' + m.join(',') + '）');
-    if (!(B.pool || []).includes(v.id)) bad(where + '：不在「' + key + '」的 pool（' + (v.section.startsWith('bin:') ? 'front ⊂ pool' : '牆上的封面要在 bins.js 那一區') + '）');
+    const B = bins[v.section];
+    if (!B) { bad(where + '：bins.js 沒有「' + v.section + '」這一區'); continue; }
+    const m = ruleMisses(B.rule, c, ostIds); if (m.length) bad(where + '：不符「' + v.section + '」的 rule（' + m.join(',') + '）');
+    if (!(B.pool || []).includes(v.id)) bad(where + '：不在「' + v.section + '」的 pool');
   }
 
-  // ---- 3. 每箱 pool 每張符合 rule；dip.json 的每個 bin.key 都有 pool
-  const binKeys = (L.props || []).filter(o => o.bin && o.bin.key).map(o => o.bin.key);
+  // ---- 3. bins.js 每一區
+  const binProps = (L.props || []).filter(o => o.bin && o.bin.key);
+  const binKeys = binProps.map(o => o.bin.key);
+  const fronts = sectionFronts(L);
   for (const k of binKeys) if (k !== 'sale' && !bins[k]) bad('bin.key「' + k + '」在 bins.js 沒有這一區');
+  for (const k of Object.keys(META)) if (!bins[k]) bad('deck-lists _bins 有「' + k + '」，bins.js 沒有（要重烘）');
   for (const [k, B] of Object.entries(bins)) {
     if (!Array.isArray(B.pool) || !B.pool.length) { bad('bins.js ' + k + '：pool 是空的'); continue; }
-    if (!B.display) info.bins++;
+    info.bins++;
+    info.pools[k] = B.pool.length;
+    if (B.display) bad('bins.js ' + k + '：v4 FIXLIST 4／5 起每一區都賣（不再有 display 只展示的牆）');
+    if (B.key !== k) bad('bins.js ' + k + '：key 欄要＝' + k);
+    const M = META[k];
+    if (!M) bad('bins.js ' + k + '：deck-lists _bins 沒有這一區');
+    else {
+      if (B.label !== M.label) bad('bins.js ' + k + '：label ' + B.label + ' ≠ deck-lists ' + M.label);
+      if (B.zh !== M.zh) bad('bins.js ' + k + '：zh ' + B.zh + ' ≠ deck-lists ' + M.zh);
+      if (JSON.stringify(B.rule) !== JSON.stringify(M.rule)) bad('bins.js ' + k + '：rule 跟 deck-lists 不一樣（要重烘）');
+    }
     if (new Set(B.pool).size !== B.pool.length) bad('bins.js ' + k + '：pool 自己有重複');
     for (const id of B.pool) {
       const c = cards[id]; if (!c) { bad('bins.js ' + k + '：' + id + ' 不在 cards.js'); continue; }
       const m = ruleMisses(B.rule, c, ostIds); if (m.length) bad('bins.js ' + k + '：' + id + ' 不符 rule（' + m.join(',') + '）');
     }
-    if (!B.display && !binKeys.includes(k)) warn('bins.js ' + k + '：店裡沒有這一箱（dip.json 沒有 bin.key＝' + k + '）');
+    const fr = fronts[k] || [];
+    if (JSON.stringify(B.front || []) !== JSON.stringify(fr)) bad('bins.js ' + k + '：front ≠ 店裡那一區看得到的封面（要重烘）：' + JSON.stringify(B.front) + ' vs ' + JSON.stringify(fr));
+    for (const id of B.front || []) if (!B.pool.includes(id)) bad('bins.js ' + k + '：front ' + id + ' 不在 pool');
+    const need = fr.length + (STOCK_MAX[k] || STOCK_MAX_DEFAULT);
+    if (B.pool.length < need) bad('bins.js ' + k + '：pool ' + B.pool.length + ' 張，要 ≥ 看得到的 ' + fr.length + '＋每晚最多 ' + (STOCK_MAX[k] || STOCK_MAX_DEFAULT));
+    if (!binKeys.includes(k)) bad('bins.js ' + k + '：店裡沒有這一區（dip.json 沒有 bin.key＝' + k + '）');
+  }
+  // 契約：feature＝史詩＋傳奇（沒有頂點）；其他區＝一般稀有度（普通／稀有／獨特）
+  for (const [k, B] of Object.entries(bins)) for (const id of B.pool || []) {
+    const c = cards[id]; if (!c) continue;
+    const r = rarityOf(c), want = k === 'feature' ? ['epic', 'legendary'] : ['common', 'rare', 'uncommon'];
+    if (!want.includes(r)) bad('bins.js ' + k + '：' + id + ' 稀有度 ' + RARITY_ZH[r] + '（' + k + ' 只放 ' + want.map(x => RARITY_ZH[x]).join('／') + '）');
   }
 
-  // ---- 4. 12 箱 pool 兩兩不交集，也不跟牌組／禮物／特價箱／王牌／掉牌／牆交集
+  // ---- 4. 各區 pool 兩兩不交集，也不跟牌組／禮物／特價箱／王牌／掉牌交集
   const owner = {};
-  for (const [k, B] of Object.entries(bins)) {
-    if (B.display) continue;
-    for (const id of B.pool || []) { if (owner[id]) bad('兩箱重複：' + id + ' 在 ' + owner[id] + ' 與 ' + k); else owner[id] = k; }
-  }
+  for (const [k, B] of Object.entries(bins)) for (const id of B.pool || []) { if (owner[id]) bad('兩區重複：' + id + ' 在 ' + owner[id] + ' 與 ' + k); else owner[id] = k; }
   const others = [];   // [{ id, from }]
   for (const [g, ids] of Object.entries(groups)) {
-    const key = BIN_GROUP(g);
-    if (NOT_EXCLUSIVE.has(g) || (key && key !== 'wallA' && key !== 'wallB')) continue;
+    if (NOT_EXCLUSIVE.has(g) || g.startsWith('bin_')) continue;
     ids.forEach(id => others.push({ id, from: 'deck-lists ' + g }));
   }
-  for (const [k, B] of Object.entries(bins)) if (B.display) (B.pool || []).forEach(id => others.push({ id, from: 'bins.js ' + k }));
-  if (content && content.version === 'lab-4') {   // A1 的 v4 content.js：實際上場的牌組（含 A3-M2 換牌表的新卡）
+  if (content && /^lab-4/.test(String(content.version || ''))) {   // v4 content.js：實際上場的牌組
     for (const [eid, e] of Object.entries(content.enemies || {})) { (e.deck || []).forEach(id => others.push({ id, from: 'content.enemies.' + eid })); if (e.drop) others.push({ id: e.drop, from: 'content.enemies.' + eid + '.drop' }); }
     for (const [t, arr] of Object.entries(content.gifts || {})) (arr || []).forEach(id => others.push({ id, from: 'content.gifts.' + t }));
     ((content.bargain && content.bargain.pool) || []).forEach(id => others.push({ id, from: 'content.bargain' }));
     Object.values(content.aces || {}).forEach(id => others.push({ id, from: 'content.aces' }));
-    // m2Swaps：{ 客人: [[舊 id, 新 id], …] }（A1）；也收 { 舊: {new} } 的寫法
-    const swapNew = sw => Array.isArray(sw) ? (sw.length === 2 && typeof sw[1] === 'string' && typeof sw[0] === 'string' ? [sw[1]] : [].concat(...sw.map(swapNew))) : (sw && typeof sw === 'object') ? [].concat(...Object.values(sw).map(v => typeof v === 'string' ? [v] : v && v.new ? [v.new] : swapNew(v))) : [];
-    for (const [eid, sw] of Object.entries(content.m2Swaps || {})) swapNew(sw).forEach(id => others.push({ id, from: 'content.m2Swaps.' + eid }));
   }
   const told = new Set();
   for (const o of others) if (owner[o.id] && !told.has(o.id + o.from)) { told.add(o.id + o.from); bad('箱子的卡也在別處：' + o.id + '（' + owner[o.id] + '）也在 ' + o.from); }
 
-  // ---- 5. 宇多田在日本／CITY 的正面、不在其他地方
+  // ---- 5b. 名牌：道具上的英文＝bins.js label；bin.label＝zh
+  for (const o of binProps) {
+    const k = o.bin.key, B = bins[k]; if (!B) continue;
+    const pl = plateOf(o);
+    if (pl !== B.label) bad((o.id || o.type) + '：名牌「' + pl + '」≠ bins.js ' + k + ' 的 label「' + B.label + '」' + (o.type === 'ledge' ? '（牆架寫 plate）' : o.tabs ? '（中島寫 tabs[0]）' : '（木箱／矮櫃寫 label）'));
+    if (o.bin.label !== B.zh) bad((o.id || o.type) + '：bin.label（點了掛的字）「' + o.bin.label + '」≠ bins.js ' + k + ' 的 zh「' + B.zh + '」');
+  }
+
+  // ---- 6. 宇多田在流行（POP）的正面、不在其他地方
   const UTADA = '宇多田ヒカル-first-love';
+  const pop = binProps.find(o => o.bin.key === 'pop');
+  if (!pop || !(pop.front || []).includes(UTADA)) bad('宇多田ヒカル《First Love》要在流行（POP）的 front（D §6 點名；FIXLIST 4 沒有日本／CITY 了）');
   const ut = vis.filter(v => v.id === UTADA);
-  const jp = (L.props || []).find(o => o.bin && o.bin.key === 'jp');
-  if (!jp || !(jp.front || []).includes(UTADA)) bad('宇多田ヒカル《First Love》要在日本／CITY 的 front（D §6 點名）');
-  if (ut.some(v => v.section !== 'bin:jp')) bad('宇多田ヒカル《First Love》出現在日本／CITY 以外：' + ut.filter(v => v.section !== 'bin:jp').map(v => v.prop).join(', '));
-  for (const [k, B] of Object.entries(bins)) if (k !== 'jp' && (B.pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》在 bins.js ' + k + ' 的 pool');
+  if (ut.some(v => v.section !== 'pop')) bad('宇多田ヒカル《First Love》出現在流行以外：' + ut.filter(v => v.section !== 'pop').map(v => v.prop).join(', '));
+  for (const [k, B] of Object.entries(bins)) if (k !== 'pop' && (B.pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》在 bins.js ' + k + ' 的 pool');
 
   return { problems: P, warnings: W, info };
 }
@@ -164,10 +210,10 @@ if (isMain) {
   const quiet = process.argv.includes('--quiet');
   if (process.argv.includes('--json')) console.log(JSON.stringify(r, null, 1));
   else if (!quiet) {
-    for (const [s, ids] of Object.entries(r.info.sections)) console.log('  ' + s.padEnd(11) + ids.length + ' 張');
+    for (const [s, ids] of Object.entries(r.info.sections)) console.log('  ' + s.padEnd(11) + '看得到 ' + String(ids.length).padStart(2) + ' 張' + (r.info.pools[s] ? '、卡池 ' + r.info.pools[s] + ' 張' : ''));
     r.warnings.forEach(w => console.log('WARN ' + w));
     r.problems.forEach(p => console.log('PROBLEM ' + p));
   }
-  console.log('check-covers：' + (r.problems.length ? r.problems.length + ' problems' : 'OK') + '（看得到的封面 ' + r.info.covers + ' 張、' + r.info.bins + ' 箱' + (r.warnings.length ? '、' + r.warnings.length + ' warnings' : '') + '）');
+  console.log('check-covers：' + (r.problems.length ? r.problems.length + ' problems' : 'OK') + '（看得到的封面 ' + r.info.covers + ' 張、' + r.info.bins + ' 區' + (r.warnings.length ? '、' + r.warnings.length + ' warnings' : '') + '）');
   process.exit(r.problems.length ? 1 : 0);
 }

@@ -775,24 +775,57 @@
     }
   });
 
-  // ================================================================ 牆上面朝外的唱片架（每張都是熱點：點了看唱片資訊）
-  function ledgeCells(o) { var n = o.n || 7, cw = 12, pitch = 14, out = []; for (var i = 0; i < n; i++) out.push({ i: i, id: (o.cards || [])[i] || null, x: o.x + 3 + i * pitch, y: o.y - cw, w: cw, h: cw }); return out; }
+  // ================================================================ 牆上面朝外的唱片架
+  // n＝每排幾格、rows＝幾排（排距 16，預設 1；cards 一排一排填）；plate＝掛在最上排上面的名牌（英文，像素字；例 FEATURE）；frame:'gold'＝金色格框＋金名牌。
+  // 有 bin（FIXLIST 4／5：門口牆＝FEATURE＋PICKS 兩區）＝整面是一區：主熱點 bin:<key> 由 shop.js 從 bin 產生、形狀＝box（含名牌），點牆上任何地方都是翻那一區；
+  //   這種架子不出每張封面的子熱點（唱片資訊在抽屜裡看）。沒有 bin 的架子照舊每張封面一個子熱點 rack:<id>（唱片資訊＋試聽）。
+  function pxW(s) { s = String(s).toUpperCase(); var w = -1; for (var i = 0; i < s.length; i++) w += O.glyph(s[i])[0].length + 1; return w; }
+  function ledgeW(o) { return (o.n || 7) * 14 + 4; }
+  function ledgeCells(o) {
+    var n = o.n || 7, rows = Math.max(1, o.rows || 1), cw = 12, pitch = 14, out = [];
+    for (var r = 0; r < rows; r++) for (var i = 0; i < n; i++) out.push({ i: r * n + i, id: (o.cards || [])[r * n + i] || null, x: o.x + 3 + i * pitch, y: o.y + r * 16 - cw, w: cw, h: cw });
+    return out;
+  }
+  // 名牌：外框 9 列高、貼在最上排格框上面 1 格（o.y−23 起，正好掛在軌道燈的軌道下）；寬＝字寬＋左右各 2 格＋框，置中在架子上
+  function ledgePlate(o) {
+    if (!o.plate) return null;
+    var tw = pxW(o.plate), w = tw + 6, lw = ledgeW(o);
+    return { x: o.x + Math.floor((lw - w) / 2), y: o.y - 23, w: w, h: 9, tw: tw };
+  }
   defO('ledge', {
     layer: 'wall',
-    box: function (o) { var n = o.n || 7; return [o.x, o.y - 13, n * 14 + 4, 18]; },
+    box: function (o) {
+      var lw = ledgeW(o), rows = Math.max(1, o.rows || 1), pl = ledgePlate(o);
+      var x0 = o.x, x1 = o.x + lw, y0 = o.y - 13, y1 = o.y + (rows - 1) * 16 + 5;
+      if (pl) { x0 = Math.min(x0, pl.x); x1 = Math.max(x1, pl.x + pl.w); y0 = Math.min(y0, pl.y); }
+      return [x0, y0, x1 - x0, y1 - y0];
+    },
     draw: function (P, o) {
+      var gold = o.frame === 'gold', lw = ledgeW(o), rows = Math.max(1, o.rows || 1);
       ledgeCells(o).forEach(function (c) {
         shadowRect(P, c.x + 1, c.y + 1, c.w, c.h, 0.18);
-        P.r(c.x - 1, c.y - 1, c.w + 2, c.h + 1, '#2a201a');
+        if (gold) { P.r(c.x - 1, c.y - 1, c.w + 2, c.h + 1, '#8a6a1c'); P.r(c.x - 1, c.y - 1, c.w + 2, 1, '#f2c540'); P.r(c.x - 1, c.y - 1, 1, c.h + 1, '#e0b43a'); }
+        else P.r(c.x - 1, c.y - 1, c.w + 2, c.h + 1, '#2a201a');
         if (c.id) P.cover(c.id, c.x, c.y, c.w, c.h);   // v4：牆上每格都由資料指定（check-shops 擋空格）；沒有就留一個空的展示架，不再隨機抽卡
         else { P.r(c.x, c.y, c.w, c.h, '#3a2c22'); P.r(c.x + 2, c.y + c.h - 2, c.w - 4, 1, '#4a3a2e'); }
       });
-      var lw = (o.n || 7) * 14 + 4;
-      P.r(o.x, o.y, lw, 2, C.pine); P.r(o.x, o.y, lw, 1, C.pineL); P.r(o.x, o.y + 2, lw, 1, C.pineDD);
-      shadowRect(P, o.x + 1, o.y + 3, lw, 1, 0.2);
-      P.r(o.x + 2, o.y + 3, 1, 2, '#3a3430'); P.r(o.x + lw - 3, o.y + 3, 1, 2, '#3a3430');
+      for (var r = 0; r < rows; r++) {
+        var sy = o.y + r * 16;
+        P.r(o.x, sy, lw, 2, C.pine); P.r(o.x, sy, lw, 1, C.pineL); P.r(o.x, sy + 2, lw, 1, C.pineDD);
+        shadowRect(P, o.x + 1, sy + 3, lw, 1, 0.2);
+        P.r(o.x + 2, sy + 3, 1, 2, '#3a3430'); P.r(o.x + lw - 3, sy + 3, 1, 2, '#3a3430');
+      }
+      var pl = ledgePlate(o);
+      if (pl) {
+        shadowRect(P, pl.x + 1, pl.y + 1, pl.w, pl.h, 0.25);
+        P.r(pl.x, pl.y, pl.w, pl.h, '#5a3b1e');
+        P.r(pl.x + 1, pl.y + 1, pl.w - 2, pl.h - 2, gold ? '#f2c540' : '#f3ecd9');
+        P.r(pl.x + 1, pl.y + pl.h - 2, pl.w - 2, 1, gold ? '#c9971f' : '#d6ccb4');
+        P.ptext(o.plate, pl.x + 3, pl.y + 2, '#2a1a10');
+      }
     },
     hots: function (o, S) {
+      if (o.bin) return [];
       return ledgeCells(o).filter(function (c) { return c.id; }).map(function (c) { return { id: 'rack:' + c.id, rect: [c.x, c.y, c.w, c.h], label: cardLabel(S, c.id), action: 'wall-record:' + c.id, sub: true }; });
     }
   });
@@ -942,9 +975,12 @@
         }
       }
       if (o.tabs && o.tabs[0] && !/[^\x00-\x7f]/.test(o.tabs[0])) {
-        var t = o.tabs[0], tw = P.pwidth(t) + 4, tx = x + 3;
+        // 名牌＝分類英文（FIXLIST 4）：左邊貼齊 x+3；放不下（CLASSICAL）就把左右留白縮成 1 格，右緣不超出箱子的木框
+        var t = o.tabs[0], pad = 2, tw = P.pwidth(t) + 2 * pad, tx = x + 3;
+        if (tx + tw + 1 > x + w - 1) { pad = 1; tw = P.pwidth(t) + 2; }
+        if (tx + tw + 1 > x + w - 1) tx = Math.max(x + 1, x + w - 2 - tw);
         var by0 = fy - d + Math.round(secD) - 1 - fill - h - rec;
-        P.r(tx - 1, by0 - 4, tw + 2, 9, '#5a4a38'); P.r(tx, by0 - 3, tw, 7, '#fbf8f0'); P.ptext(t, tx + 2, by0 - 2, '#3a2a1c');
+        P.r(tx - 1, by0 - 4, tw + 2, 9, '#5a4a38'); P.r(tx, by0 - 3, tw, 7, '#fbf8f0'); P.ptext(t, tx + pad, by0 - 2, '#3a2a1c');
       }
       P.r(x, lip, w, h, C.pine);
       P.r(x, lip, w, 2, C.pineL); P.r(x, lip + 2, w, 1, C.pineD);

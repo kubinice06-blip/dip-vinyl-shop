@@ -16,3 +16,13 @@
 - [ ] 3 檢查（check-covers、check-shops、shop.test、hit.test、e2e-taps 四尺寸）＋bins-v4.md＋截圖
 
 ## 進度紀錄
+1. （開工）店景截圖 `dev/shots/Y/before-390.png`。選卡腳本在 scratchpad `Y/`（cands.cjs 候選、picks.txt 挑的卡、resolve.cjs 對 seed、covers.mjs 先查 Firestore 封面：82 張新卡都有 coverUrl）。
+   - 各區卡池：十大類＋tw 各 12（blues 14：後牆矮櫃正面 8 張）、new 12（保留「2020 以後」的新進味道，不限分類）、feature 23（現有史詩／傳奇全收，Bowie Low＝禮物、Sun Ra＝critic、Fishmans＝掉牌除外）、picks 21。
+   - 一般區＝普通／稀有／獨特（score ≤7）；feature＝史詩＋傳奇。各區互不重疊、不碰牌組／禮物／特價箱／王牌／掉牌（Bill Evans Waltz for Debby＝needle 牌組，不進爵士）。
+   - `deck-lists.json`：刪 wall_a／wall_b／舊 12 箱／_ost；`_bins`＝{label, zh, rule}；bin_<key> 14 區；_region 加 Ryoji Ikeda／Susumu Yokota／Miki Matsubara＝jp。
+   - `check-covers.mjs`：catOf／rarityOf／ruleMisses（rule 加 cat、rarity）、sectionFronts、名牌檢查、pool 大小檢查；bake-cards import 同一份。
+   - `bake-cards.mjs`：bins.js＝{key,label,zh,rule,pool,front}（front 讀 shops/dip.json），version 5。
+   - `shop-props.js`：ledge 加 rows／plate／frame:'gold'；有 bin 的牆架不出每張封面的子熱點（整面＝翻那一區）；中島名牌放不下時縮留白（CLASSICAL）。
+   - `shops/dip.json`：門口牆＝wall-feature（x44、2×2、FEATURE 金名牌、stand [60,100]）＋wall-picks（x76、5×2、stand [132,100]）；高櫃／試聽桌 section＝picks；
+     中島 isl-0a..3b＝rock elec soul hiphop pop classical world folk（tabs＝英文）；crate-jazz JAZZ、crate-tw TW、crate-noise→crate-new NEW、backbin BLUES；軌道燈 74→96、118→140（讓出 FEATURE 名牌）。
+   - 烘焙中（log：scratchpad Y/bake1.log）。
