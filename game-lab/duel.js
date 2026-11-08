@@ -855,7 +855,8 @@
       S.busy = false;
       renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null }); renderAct();
       scheduleFit();
-      if (!rm()) { A(els.htx, [{ opacity: .45, transform: 'translateY(-3px)' }, { opacity: 1, transform: 'none' }], { duration: 240, easing: 'ease-out' });   // 從半透明開始：中間字帶不會只剩「提示」兩個字（R-05b） A(els.rounds, [{ opacity: .2 }, { opacity: 1 }], { duration: 320 }); }
+      // 提示從半透明開始：中間字帶不會只剩「提示」兩個字（R-05b）
+      if (!rm()) { A(els.htx, [{ opacity: .45, transform: 'translateY(-3px)' }, { opacity: 1, transform: 'none' }], { duration: 240, easing: 'ease-out' }); A(els.rounds, [{ opacity: .2 }, { opacity: 1 }], { duration: 320 }); }
       if (hs) onEvent(hs);
       handStart(v1);
       setPhase('choose');

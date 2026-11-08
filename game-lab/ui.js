@@ -1876,7 +1876,8 @@
     }
     if (!save.seen.night && !UI.auto) later(function () {
       if (UI.screen !== 'night') return;
-      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']);   // 整個名單（含「今晚來客」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11） } catch (e) { console.error(e); }
+      // 整個名單（含「今晚來客」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
+      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
     }, 700);
     autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
