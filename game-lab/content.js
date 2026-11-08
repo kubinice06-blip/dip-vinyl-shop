@@ -696,6 +696,8 @@
     relicEmpty: '櫃檯今晚的配件賣完了。',
     relicMoneyShort: '錢不夠：先賣一件，半價 ${n}',
     relicSellFirst: '先賣一件',
+    bargainHint: '挑一到三張',                                     // 特價箱（之後買）還沒挑時的鈕
+    bargainFree: '這次免費',                                       // 序章／開局挑三張：每張的特價劃掉
     prev: '上一張',
     next: '下一張',
     infoAria: '唱片資訊、試聽'

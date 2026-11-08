@@ -1528,7 +1528,7 @@
     r.tut = false;
     (out.met || []).forEach(shelfAdd);
     persist();
-    if (out.earn > 0) toast(fill((C.shopUi && C.shopUi.earned) || '+${n}', { n: out.earn }), 'gold');   // 贏了拿錢（§2.5.2）
+    if (out.earn > 0) toast(fill((C.shopUi && C.shopUi.earned) || '+${n}', { n: E.moneyText(out.earn) }), 'gold');   // 贏了拿錢（§2.5.2；千分位 FIXLIST 8）
     stg('untag');
     if (UI.auto && UI.auto.until === 'duelEnd') UI.auto = null;
     var off = out.offer;
@@ -1740,7 +1740,7 @@
 
   // ======================================================================= 今晚來客（SPEC-v3 §9：店內底部一條，五顆頭像，打完的變黑，下一位金框；v4：錢、熟客出現、第一位客人已在店裡）
   function enemyHp(id) { var e = C.enemies[id] || {}; return e.hp | 0; }
-  function moneyHTML(n) { var X = econ(); if (X && typeof X.moneyHTML === 'function') try { return X.moneyHTML(n); } catch (e) { console.error(e); } return fill((C.shopUi && C.shopUi.money) || '${n}', { n: n | 0 }); }
+  function moneyHTML(n) { var X = econ(); if (X && typeof X.moneyHTML === 'function') try { return X.moneyHTML(n); } catch (e) { console.error(e); } return fill((C.shopUi && C.shopUi.money) || '${n}', { n: E.moneyText(n | 0) }); }
   // 人已經在店裡、看得到：走過去（不瞬移）；不在店裡（藏著、在門外）才直接擺上去
   function settle(id, spot, spr) {
     var at = stg('pos', id), sp = stg('spot', spot);
@@ -1784,7 +1784,9 @@
       '<button type="button" class="rl" data-a="relics"><span class="k">發燒配件</span>' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span>' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span>（還沒有）</span>') + '</button></div>';
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     guardClicks(box);
-    cam('full', 'map', 600, Math.max(170, Math.ceil(naturalH(box) + 6)));
+    // 鏡頭 night（layout 有才用；沒有 stage 退回 full）：放不下整間店時從上往下裁（門口牆 FEATURE／PICKS 的名牌在最上面、唱盤區今晚用不到），
+    //   最少留到前排 JAZZ／TW 箱子（minH 290）；375×548 也看得到、點得到門口牆（整合版面 d）
+    cam('night', 'map', 600, Math.max(170, Math.ceil(naturalH(box) + 6)));
     box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a],[data-i]'); if (!b || UI.going) return;
       if (b.hasAttribute('data-i')) { sfx('tick'); guestSheet(+b.getAttribute('data-i')); return; }

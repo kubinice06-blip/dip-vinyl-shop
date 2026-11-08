@@ -4,10 +4,11 @@
  *   configure({ content, engine, stage, run:()=>save.run, choose:(ch)=>res, info:(card)=>Promise, sfx, toast, app:()=>#app,
  *               coverBase?, relicIcon?(id,size) })   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
  *   openBin(key)      → Promise<void>     // 走過去翻 → 抽屜（一張大封面翻著看）→ 關掉才 resolve；key==='sale' 轉 openBargain
- *   openBargain()     → Promise<void>     // 之後買特價箱（$100、最多三張）；還沒挑過開局三張（canBargainPick）→ 轉 bargainPick
+ *                                         //   標題＝名牌英文＋中文（C.bins[key].label／zh；FEATURE 金色名牌）；每張標稀有度（C.rarityZh）與價（engine.priceOf）
+ *   openBargain()     → Promise<void>     // 之後買特價箱（每張 $100／200／300、最多三張，付挑的那幾張的總和）；還沒挑過開局三張（canBargainPick）→ 轉 bargainPick
  *   bargainPick(o)    → Promise<ids|null> // 開局挑三張（免費）；o = { prompt }；被外部 close() 收掉時回 null
  *   openRelicShop()   → Promise<void>     // 櫃檯的配件（2–3 件），滿 3 件先半價賣一件
- *   moneyHTML(n)      → string            // 「$300」
+ *   moneyHTML(n)      → string            // 「$1,200」（千分位＝engine.moneyText；FIXLIST 8）
  *   isOpen() → bool ; close()
  * }
  *
@@ -17,7 +18,9 @@
  *   - 點抽屜外面（或 ✕、Esc）關掉：stage.highlight([])、stage.unfocus()、pose null。開局挑三張不能關（一定要挑）。
  *   - 序章／對決中（run.duel、prologue 'pending'、等你收獎勵）點箱子：老闆說 C.shopLines.binBusy（「打完再翻。」），不開抽屜。
  *   - 沒有 run（標題畫面、已打烊）：抽屜列那一區卡池的前 6 張，只能翻、看唱片資訊；有 run 但 !canShop：列今晚的貨，一樣不能買。
- *   - 價格、賣回、能不能買全部問引擎（priceOf／relicPrice／sellValue／canShop／canBargainPick），交易一律走 configure 給的 choose。
+ *   - 價格、賣回、能不能買全部問引擎（priceOf／bargainPriceOf／relicPrice／sellValue／rarity／canShop／canBargainPick），交易一律走 configure 給的 choose。
+ *   - 台幣行情（FIXLIST 8）：箱子／新進／店長推薦照稀有度 $800／1,000／1,200；FEATURE 史詩 $3,000／傳奇 $4,000；特價箱每張 $100–300（序章挑三張免費：價錢劃掉）；
+ *     配件一件 $3,000；賣回半價。畫面上的錢一律千分位（mt＝engine.moneyText）。
  * 前綴 ec-；樣式在 econ.css。只掛 window.DipLabEcon；不碰 localStorage。
  */
 (function () {
@@ -34,8 +37,10 @@
     prev: '上一張', next: '下一張', infoAria: '唱片資訊、試聽',
     // 包包沒滿、錢不夠，但賣一張就夠（SPEC §2.5.6 第 3 點：賣一張也不夠才停用）
     moneyShort: '錢不夠：先賣一張，半價 ${n}', sellFirst: '先賣一張',
-    relicMoneyShort: '錢不夠：先賣一件，半價 ${n}', relicSellFirst: '先賣一件'
+    relicMoneyShort: '錢不夠：先賣一件，半價 ${n}', relicSellFirst: '先賣一件',
+    bargainHint: '挑一到三張', bargainFree: '這次免費'
   };
+  var RAR_ZH = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };
 
   var CFG = null;
   var S = { open: false, kind: null, token: 0, walking: false, el: null, veil: null, res: null, sel: [], sub: null, idx: 0 };
@@ -52,7 +57,20 @@
   function card(id) { var K = C().cards || {}; return K[id] || null; }
   function relicOf(id) { return (C().relics || {})[id] || null; }
   function sfx(n, o) { if (CFG && typeof CFG.sfx === 'function') try { CFG.sfx(n, o); } catch (e) { console.error(e); } }
-  function money(n) { return fill(ui('money') || '${n}', { n: n }); }
+  // 千分位（engine.moneyText；FIXLIST 8：畫面一律寫 $1,200）
+  function mt(n) { var e = CFG && CFG.engine; if (e && typeof e.moneyText === 'function') return e.moneyText(n); return String(Math.round(+n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  function money(n) { return fill(ui('money') || '${n}', { n: mt(n) }); }
+  // 稀有度（engine.rarity；名字 C.rarityZh）：箱子抽屜每張都標，FEATURE 放大
+  function rarityOf(c) { try { return E().rarity ? E().rarity(c) : null; } catch (_) { return null; } }
+  function rarityZh(k) { var z = C().rarityZh || {}; return z[k] || RAR_ZH[k] || ''; }
+  function rarHTML(c, cls) { var k = rarityOf(c); return k ? '<span class="ec-rar r-' + k + (cls ? ' ' + cls : '') + '">' + esc(rarityZh(k)) + '</span>' : ''; }
+  // 區名：名牌英文＋中文（C.bins[key]：X／Y 契約）；沒有就用舞台給的中文
+  function binTitleHTML(key, fallback) {
+    var b = (C().bins || {})[key];
+    if (!b || !b.label) return esc(fallback || '');
+    return '<span class="ec-plate' + (key === 'feature' ? ' gold' : '') + '">' + esc(b.label) + '</span>' + esc(b.zh || fallback || '');
+  }
+  function bargainPrice(id) { try { return E().bargainPriceOf ? E().bargainPriceOf(C(), id) : 100; } catch (_) { return null; } }
   function moneyHTML(n) { return '<span class="ec-money">' + esc(money(n == null ? 0 : n)) + '</span>'; }
   function bagMax() { return (E().CFG && E().CFG.bagMax) || 8; }
   function relicMax() { return (E().CFG && E().CFG.relicMax) || 3; }
@@ -94,7 +112,7 @@
   // 錢不夠：鈕停用，字寫「錢不夠」，底下小字標價（看得到差多少）
   function poorHTML(price) { return '<span class="ec-poor">' + esc(ui('noMoney')) + '<small>' + esc(money(price)) + '</small></span>'; }
   // 錢不夠但賣一張就夠：鈕照樣寫價格，底下小字「先賣一張」
-  function sellFirstHTML(price, k) { return '<span class="ec-poor ec-sf">' + esc(fill(ui('buy'), { n: price })) + '<small>' + esc(ui(k)) + '</small></span>'; }
+  function sellFirstHTML(price, k) { return '<span class="ec-poor ec-sf">' + esc(fill(ui('buy'), { n: mt(price) })) + '<small>' + esc(ui(k)) + '</small></span>'; }
   function maxOf(vals) { return Math.max.apply(null, vals.concat([0])); }
   function relicIconHTML(id, size) {
     try {
@@ -106,7 +124,7 @@
   function range(vals) {
     if (!vals.length) return '0';
     var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
-    return lo === hi ? String(lo) : lo + '–' + hi;
+    return lo === hi ? mt(lo) : mt(lo) + '–' + mt(hi);
   }
 
   // ------------------------------------------------------------------ run 的狀態
@@ -234,7 +252,7 @@
   function begin(kind, o) {
     close();
     var tok = ++S.token;
-    S.kind = kind; S.key = o.key; S.hotId = o.hotId; S.label = o.label; S.mode = o.mode; S.items = o.items || null;
+    S.kind = kind; S.key = o.key; S.hotId = o.hotId; S.label = o.label; S.titleHTML = o.title || null; S.mode = o.mode; S.items = o.items || null;
     S.idx = 0; S.sel = []; S.sub = null; S.prompt = o.prompt || ''; S.focusId = null; S.result = kind === 'pick' ? null : undefined;
     var pr = new Promise(function (res) { S.res = res; });
     approach(tok, o.hotId, o.stand, { dig: o.dig, face: o.face }).then(function (arrived) {
@@ -257,7 +275,7 @@
     var items = null;
     if (!r) items = ((C().bins || {})[key] || {}).pool ? C().bins[key].pool.filter(card).slice(0, 6) : [];
     else if (!shop) items = ((r.shop && r.shop.bins && r.shop.bins[key]) || []).slice();
-    return begin('bin', { key: key, hotId: b.hotId, label: b.label, stand: b.stand, mode: shop ? 'buy' : 'view', items: items });
+    return begin('bin', { key: key, hotId: b.hotId, label: b.label, title: binTitleHTML(key, b.label), stand: b.stand, mode: shop ? 'buy' : 'view', items: items });
   }
   function openBargain() {
     if (!ok('openBargain')) return Promise.resolve();
@@ -309,7 +327,8 @@
           : '<span class="ec-bag">' + esc(fill(ui('bag'), { n: r.bag.length, max: bagMax() })) + '</span>') + '</span>';
     }
     var x = S.kind === 'pick' ? '' : '<button type="button" class="ec-x" data-a="close" aria-label="' + esc(ui('close')) + '">✕</button>';
-    return '<div class="ec-hd"><b class="ec-ttl">' + esc(title) + '</b>' + (extra || '') + w + x + '</div>';
+    var t = S.titleHTML && title === S.label ? S.titleHTML : esc(title);
+    return '<div class="ec-hd' + (S.key === 'feature' ? ' ec-feat' : '') + '"><b class="ec-ttl">' + t + '</b>' + (extra || '') + w + x + '</div>';
   }
   // 一張大封面翻著看（箱子）
   function binHTML() {
@@ -325,48 +344,57 @@
       var owned = r.bag.indexOf(c.id) >= 0;
       var can = price != null && !owned && r.money + maxSell >= price;
       btn = '<button type="button" class="ec-buy lb-btn pri" data-a="buy" data-cid="' + esc(c.id) + '"' + (can ? '' : ' disabled') + '>' +
-        (owned ? esc(ui('owned')) : !can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'sellFirst') : esc(fill(ui('buy'), { n: price }))) + '</button>';
+        (owned ? esc(ui('owned')) : !can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'sellFirst') : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>';
+    } else {   // 只看（標題畫面、今晚還不能買）：照樣標價
+      var pv = E().priceOf(C(), c);
+      if (pv != null) btn = '<span class="ec-pv">' + esc(money(pv)) + '</span>';
     }
+    var feat = S.key === 'feature', rk = rarityOf(c);
     var n = ids.length;
     return headHTML(S.label) +
       '<div class="ec-flip">' +
         '<div class="ec-one">' +
-          '<button type="button" class="ec-cv" data-a="info" data-cid="' + esc(c.id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》：' + ui('infoAria')) + '">' + coverImg(c) +
-            '<span class="ec-play" aria-hidden="true"></span><span class="ec-pos">' + (S.idx + 1) + '／' + n + '</span></button>' +
-          '<div class="ec-meta"><div class="ec-ar">' + esc(c.artist) + '</div><div class="ec-al">' + esc(c.album) + '</div><div class="ec-yr">' + esc(c.year || '') + '</div>' +
+          '<button type="button" class="ec-cv' + (rk ? ' r-' + rk : '') + '" data-a="info" data-cid="' + esc(c.id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》：' + ui('infoAria')) + '">' + coverImg(c) +
+            '<span class="ec-play" aria-hidden="true"></span><span class="ec-pos">' + (S.idx + 1) + '／' + n + '</span>' + (feat ? rarHTML(c, 'ec-rbig') : '') + '</button>' +
+          '<div class="ec-meta"><div class="ec-ar">' + esc(c.artist) + '</div><div class="ec-al">' + esc(c.album) + '</div><div class="ec-yr">' + esc(c.year || '') + (feat ? '' : rarHTML(c)) + '</div>' +
             starsHTML(c, { peak: S.mode === 'buy' }) + btn + '</div>' +
         '</div>' +
         '<div class="ec-strip">' +
           '<button type="button" class="ec-nav" data-a="prev" aria-label="' + esc(ui('prev')) + '"' + (n < 2 ? ' disabled' : '') + '>‹</button>' +
           '<div class="ec-ths">' + ids.map(function (id, i) {
             var k = card(id);
-            return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》') + '"><span class="ec-thc">' + coverImg(k) + '</span></button>';
+            var kr = rarityOf(k);
+            return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + (kr ? ' r-' + kr : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》' + (kr ? '・' + rarityZh(kr) : '')) + '"><span class="ec-thc">' + coverImg(k) + '</span></button>';
           }).join('') + '</div>' +
           '<button type="button" class="ec-nav" data-a="next" aria-label="' + esc(ui('next')) + '"' + (n < 2 ? ' disabled' : '') + '>›</button>' +
         '</div>' +
       '</div>';
   }
-  // 特價箱（挑三張／$100 最多三張／只看）：六格
+  // 特價箱（挑三張免費／之後每張 $100–300、最多三張／只看）：六格；每格封面下標那張的特價（序章挑三張那次劃掉＝免費）
   function gridHTML() {
     var ids = binIds(), r = liveRun(), pick = S.kind === 'pick', view = S.mode === 'view';
     S.sel = S.sel.filter(function (id) { return ids.indexOf(id) >= 0; });
     var extra = pick ? '<span class="ec-cnt">' + S.sel.length + '／' + pickN() + '</span>' : '';
     var title = pick ? S.label + '　' + S.prompt : S.label;
+    if (pick && S.prompt) extra = '<span class="ec-free">' + esc(ui('bargainFree')) + '</span>' + extra;
     var fc = S.focusId && card(S.focusId);
     var tiles = ids.map(function (id) {
-      var c = card(id), on = S.sel.indexOf(id) >= 0;
-      return '<button type="button" class="ec-tile' + (on ? ' sel' : '') + '" data-a="' + (view ? 'info' : 'tog') + '" data-cid="' + esc(id) + '"' + (view ? '' : ' aria-pressed="' + on + '"') +
-        ' aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + '</span>' + starsHTML(c, { col: true }) + '</button>';
+      var c = card(id), on = S.sel.indexOf(id) >= 0, bp = bargainPrice(id);
+      var pt = bp == null ? '' : '<span class="ec-pt' + (pick ? ' free' : '') + '">' + (pick ? '<s>' + esc(money(bp)) + '</s>' : esc(fill(ui('bargainEach'), { n: mt(bp) }))) + '</span>';
+      return '<button type="button" class="ec-tile' + (on ? ' sel' : '') + '" data-a="' + (view ? 'info' : 'tog') + '" data-cid="' + esc(id) + '"' + (bp == null ? '' : ' data-price="' + bp + '"') + (view ? '' : ' aria-pressed="' + on + '"') +
+        ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (bp == null ? '' : (pick ? '（免費）' : ' ' + money(bp)))) + '"><span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + pt + '</span>' + starsHTML(c, { col: true }) + '</button>';
     }).join('');
     var foot = '';
     if (pick) foot = '<button type="button" class="lb-btn pri big wide" data-a="take"' + (S.sel.length === pickN() ? '' : ' disabled') + '>' + esc(ui('bargainTake')) + '</button>';
     else if (!view && r) {
-      var price = (C().economy || {}).bargainPrice || 100;
-      var k = S.sel.length, need = Math.max(0, r.bag.length + k - bagMax());
-      var sells = r.bag.map(function (id) { return card(id) ? E().sellValue(C(), card(id)) : 0; }).sort(function (a, b) { return b - a; }).slice(0, need);
-      var can = k >= 1 && k <= pickN() && need <= r.bag.length && r.money + sells.reduce(function (s, v) { return s + v; }, 0) >= price;
-      var poor = r.money + r.bag.map(function (id) { return card(id) ? E().sellValue(C(), card(id)) : 0; }).sort(function (a, b) { return b - a; }).slice(0, Math.max(0, r.bag.length + 1 - bagMax())).reduce(function (s, v) { return s + v; }, 0) < price;
-      foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + '>' + esc(poor ? ui('noMoney') : fill(ui('bargainBuy'), { n: price })) + '</button>';
+      var k = S.sel.length, price = bargainTotal(S.sel), need = Math.max(0, r.bag.length + k - bagMax());
+      var sellsAll = r.bag.map(function (id) { return card(id) ? E().sellValue(C(), card(id)) : 0; }).sort(function (a, b) { return b - a; });
+      var sum = function (a) { return a.reduce(function (s, v) { return s + v; }, 0); };
+      var can = k >= 1 && k <= pickN() && need <= r.bag.length && r.money + sum(sellsAll.slice(0, need)) >= price;
+      var cheapest = Math.min.apply(null, ids.map(bargainPrice).filter(function (v) { return v != null; }).concat([Infinity]));
+      var poorAll = r.money + sum(sellsAll.slice(0, Math.max(0, r.bag.length + 1 - bagMax()))) < cheapest;   // 連最便宜的一張都買不起
+      var label = k < 1 ? (poorAll ? esc(ui('noMoney')) : esc(ui('bargainHint'))) : can ? esc(fill(ui('bargainBuy'), { n: mt(price) })) : poorHTML(price);
+      foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + ' data-total="' + price + '">' + label + '</button>';
     }
     return headHTML(title, extra) +
       '<div class="ec-grid">' + tiles + '</div>' +
@@ -386,7 +414,7 @@
       var can = S.mode === 'buy' && price != null && r.money + (full || short ? maxSell : 0) >= price;   // 滿 3 件、或錢不夠：要先賣一件
       return '<div class="ec-row"><span class="ec-pix">' + relicIconHTML(id, 30) + '</span><span class="ec-tx"><b>' + esc(x.name) + '</b><small>' + esc(x.desc) + '</small></span>' +
         (S.mode === 'buy' ? '<button type="button" class="lb-btn pri ec-rbuy" data-a="rbuy" data-r="' + esc(id) + '"' + (can ? '' : ' disabled') + '>' +
-          (!can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'relicSellFirst') : esc(fill(ui('buy'), { n: price }))) + '</button>' : '') + '</div>';
+          (!can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'relicSellFirst') : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>' : '') + '</div>';
     }).join('') + '</div>';
   }
   // 先賣（唱片：包包滿了；配件：滿 3 件）
@@ -418,7 +446,7 @@
       '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
   }
   // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
-  function tgtHTML(sub) { return sub.tgt ? '<span class="sub">' + esc(sub.tgt + fill(ui('buy'), { n: sub.price })) + '</span>' : ''; }
+  function tgtHTML(sub) { return sub.tgt ? '<span class="sub">' + esc(sub.tgt + fill(ui('buy'), { n: mt(sub.price) })) + '</span>' : ''; }
   function sellReady() {
     var r = liveRun(), sub = S.sub; if (!r || !sub || sub.picks.length !== sub.need) return false;
     var earn = sub.picks.reduce(function (s, id) { return s + (sub.kind === 'relic' ? E().sellValue(C(), id) : E().sellValue(C(), card(id))); }, 0);
@@ -539,12 +567,12 @@
   function effectsToast(res) {
     var parts = [], gains = [], spend = 0;
     (res.effects || []).forEach(function (f) {
-      if (f.loseCard) parts.push(fill(ui('sold'), { album: (card(f.loseCard) || {}).album || '', n: f.earn || 0 }));
-      if (f.loseRelic) parts.push(fill(ui('relicSold'), { name: (relicOf(f.loseRelic) || {}).name || '', n: f.earn || 0 }));
+      if (f.loseCard) parts.push(fill(ui('sold'), { album: (card(f.loseCard) || {}).album || '', n: mt(f.earn || 0) }));
+      if (f.loseRelic) parts.push(fill(ui('relicSold'), { name: (relicOf(f.loseRelic) || {}).name || '', n: mt(f.earn || 0) }));
       if (f.gainCard) { gains.push((card(f.gainCard) || {}).album || ''); spend += f.spend || 0; }
-      if (f.gainRelic) parts.push(fill(ui('relicBought'), { name: (relicOf(f.gainRelic) || {}).name || '', n: f.spend || 0 }));
+      if (f.gainRelic) parts.push(fill(ui('relicBought'), { name: (relicOf(f.gainRelic) || {}).name || '', n: mt(f.spend || 0) }));
     });
-    if (gains.length) parts.push(fill(ui('bought'), { album: gains.join('》《'), n: spend }));
+    if (gains.length) parts.push(fill(ui('bought'), { album: gains.join('》《'), n: mt(spend) }));
     toast(parts.join('・'));
   }
   function takeThree() {
@@ -563,10 +591,11 @@
     }
     done(choose({ type: 'buy', key: S.key, cardId: id }));
   }
+  function bargainTotal(ids) { return ids.reduce(function (s, id) { var p = bargainPrice(id); return s + (p == null ? 0 : p); }, 0); }
   function buyBargain() {
     var r = liveRun(); if (!r || !S.sel.length) return;
     var ids = S.sel.slice(), need = Math.max(0, r.bag.length + ids.length - bagMax());
-    var price = (C().economy || {}).bargainPrice || 100;
+    var price = bargainTotal(ids);
     if (need > 0) {
       S.sub = { kind: 'card', need: need, picks: [], price: price, tgt: ids.map(function (x) { return '《' + ((card(x) || {}).album || '') + '》'; }).join(''), done: function (picks) { done(choose({ type: 'buyBargain', ids: ids, sellIds: picks })); } };
       sfx('tick'); render(); return;
@@ -609,7 +638,7 @@
   W.DipLabEcon = {
     configure: function (o) { CFG = Object.assign({}, o || {}); return W.DipLabEcon; },
     openBin: openBin, openBargain: openBargain, bargainPick: bargainPick, openRelicShop: openRelicShop,
-    moneyHTML: function (n) { return CFG && CFG.content ? moneyHTML(n) : '<span class="ec-money">$' + esc(n == null ? 0 : n) + '</span>'; },
+    moneyHTML: function (n) { return CFG && CFG.content ? moneyHTML(n) : '<span class="ec-money">$' + esc(mt(n == null ? 0 : n)) + '</span>'; },
     isOpen: function () { return !!(S.open || S.walking); },
     close: close,
     debug: debug
