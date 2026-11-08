@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 52、新 278（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 52、新 293（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（O1–O21）
 
@@ -213,6 +213,7 @@
 | （畫面字）・koLoseRetry | 老闆：……再一場。 | 本規格新寫 | `duelText.koLoseRetry` |
 | （畫面字）・roundsOut | 六手打完，比聲望條 | 本規格新寫 | `duelText.roundsOut` |
 | （畫面字）・roundsScore | 你剩 {p}%，他剩 {e}%：{who}贏 | 本規格新寫 | `duelText.roundsScore` |
+| （畫面字）・roundsEven | 你剩 {p}%，他剩 {e}%：一樣，算你贏 | 本規格新寫 | `duelText.roundsEven` |
 
 ## 發燒配件（點圖示看的說明／生效那手結果行補的一句）
 
@@ -337,6 +338,25 @@
 | （畫面字）・taipeiLink | 出門看看（台北地圖・預告） | 本規格新寫 | `shopLines.taipeiLink` |
 | （畫面字）・backToShop | 回店裡 | 本規格新寫 | `shopLines.backToShop` |
 
+## 店裡熱點・箱子的名牌
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | JAZZ | 本規格新寫 | `bins.jazz.label` |
+| （畫面字） | TW | 本規格新寫 | `bins.tw.label` |
+| （畫面字） | ROCK | 本規格新寫 | `bins.rock.label` |
+| （畫面字） | ELEC | 本規格新寫 | `bins.elec.label` |
+| （畫面字） | SOUL | 本規格新寫 | `bins.soul.label` |
+| （畫面字） | HIP-HOP | 本規格新寫 | `bins.hiphop.label` |
+| （畫面字） | POP | 本規格新寫 | `bins.pop.label` |
+| （畫面字） | CLASSICAL | 本規格新寫 | `bins.classical.label` |
+| （畫面字） | WORLD | 本規格新寫 | `bins.world.label` |
+| （畫面字） | FOLK | 本規格新寫 | `bins.folk.label` |
+| （畫面字） | BLUES | 本規格新寫 | `bins.blues.label` |
+| （畫面字） | NEW | 本規格新寫 | `bins.new.label` |
+| （畫面字） | FEATURE | 本規格新寫 | `bins.feature.label` |
+| （畫面字） | PICKS | 本規格新寫 | `bins.picks.label` |
+
 ## 經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -371,6 +391,8 @@
 | （畫面字）・relicEmpty | 櫃檯今晚的配件賣完了。 | 本規格新寫 | `shopUi.relicEmpty` |
 | （畫面字）・relicMoneyShort | 錢不夠：先賣一件，半價 ${n} | 本規格新寫 | `shopUi.relicMoneyShort` |
 | （畫面字）・relicSellFirst | 先賣一件 | 本規格新寫 | `shopUi.relicSellFirst` |
+| （畫面字）・bargainHint | 挑一到三張 | 本規格新寫 | `shopUi.bargainHint` |
+| （畫面字）・bargainFree | 這次免費 | 本規格新寫 | `shopUi.bargainFree` |
 | （畫面字）・prev | 上一張 | 本規格新寫 | `shopUi.prev` |
 | （畫面字）・next | 下一張 | 本規格新寫 | `shopUi.next` |
 | （畫面字）・infoAria | 唱片資訊、試聽 | 本規格新寫 | `shopUi.infoAria` |
@@ -413,23 +435,21 @@
 | （畫面字） | 腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；behind＝{道具: [xa, xb]} 老闆站在它後面的口袋（地面那塊後面、x 在 xa–xb 的那一條；櫃檯整個寬＝spots.counter，唱盤台＝轉盤那一段 134–158＝ref），口袋兩側照畫出來的擋（別人不會從唱盤台上走過去）。避障＝這一份加 navMargin（margin 可以逐塊指定：中島兩側走道多留 3 格，人的手臂比腳寬，走在走道上不會被箱子邊切掉一塊）；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡） | 本規格新寫 | `shops/dip.json.footprints.note` |
 | （畫面字） | 唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片 | 本規格新寫 | `shops/dip.json.duel.note` |
 | （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[3].hot.label` |
-| （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[4].revealLabel` |
-| （畫面字） | 搖滾／流行牆 | 本規格新寫 | `shops/dip.json.props[4].label` |
-| （畫面字） | 爵士／靈魂牆 | 本規格新寫 | `shops/dip.json.props[5].label` |
-| （畫面字） | 民謠／藍調 | 本規格新寫 | `shops/dip.json.props[12].bin.label` |
-| （畫面字） | R&B／靈魂 | 本規格新寫 | `shops/dip.json.props[16].bin.label` |
-| （畫面字） | 原聲／圖庫 | 本規格新寫 | `shops/dip.json.props[17].bin.label` |
-| （畫面字） | 搖滾／龐克 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
-| （畫面字） | 日本／CITY | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
-| （畫面字） | 嘻哈／放克 | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
-| （畫面字） | 電子／氛圍 | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
-| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
-| （畫面字） | 華語／台語 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
-| （畫面字） | 爵士區 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
-| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[25].label` |
-| （畫面字） | 台灣區 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
+| （畫面字） | 店長推薦精選 | 本規格新寫 | `shops/dip.json.props[4].bin.label` |
+| （畫面字） | 店長推薦 | 本規格新寫 | `shops/dip.json.props[5].bin.label` |
+| （畫面字） | 藍調 | 本規格新寫 | `shops/dip.json.props[12].bin.label` |
+| （畫面字） | 搖滾 | 本規格新寫 | `shops/dip.json.props[16].bin.label` |
+| （畫面字） | 電子 | 本規格新寫 | `shops/dip.json.props[17].bin.label` |
+| （畫面字） | 靈魂放克 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
+| （畫面字） | 嘻哈 R&B | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
+| （畫面字） | 流行 | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
+| （畫面字） | 古典 | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
+| （畫面字） | 世界 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
+| （畫面字） | 民謠 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
+| （畫面字） | 爵士 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
+| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
 | （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[26].hot.label` |
-| （畫面字） | 噪音區 | 本規格新寫 | `shops/dip.json.props[28].bin.label` |
+| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[28].bin.label` |
 | （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[29].bin.label` |
 | （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[30].hot.label` |
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
