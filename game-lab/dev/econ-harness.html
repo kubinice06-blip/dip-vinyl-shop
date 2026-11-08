@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>econ harness：箱子、特價箱、櫃檯（SPEC-v4 §2.5.6）</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../shop.css">
+<link rel="stylesheet" href="../econ.css">
+<style>
+  .hx{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;padding:8px 10px 10px;gap:6px;font-family:var(--zh);overflow:hidden}
+  .hx .row{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+  .hx .row b{font-size:11px;color:var(--gray2);margin-right:2px}
+  .hx button.h{font:700 11px var(--zh);border:1px solid var(--ink);background:#fff;min-height:30px;padding:2px 7px}
+  .hx button.h.on{background:var(--ink);color:#fff}
+  .hx .st{font:11px/1.4 'Space Mono',monospace;color:var(--gray2);white-space:pre-wrap;margin:0}
+  .nh{display:flex;align-items:baseline;gap:8px;padding:10px 12px 4px;font-family:var(--zh)}
+  .nh b{font-size:14px;letter-spacing:.06em}
+  body.shot .hx{display:none}
+  body:not(.shot) .nh,body:not(.shot) .lb-bagline{display:none}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="lb-top"><div class="tt">今晚來客<small>econ harness</small></div></div>
+  <div class="lb-stage" id="stage"></div>
+  <div class="lb-panel night" id="panel">
+    <div class="nh"><b>今晚來客</b><span class="sub" id="nsub"></span></div>
+    <div class="hx">
+      <div class="row"><b>開</b>
+        <button class="h" data-k="bin:hiphop">箱子（嘻哈）</button><button class="h" data-k="bin:jazz">箱子（爵士）</button>
+        <button class="h" data-k="pick">特價箱挑三張</button><button class="h" data-k="bargain">特價箱 $100</button><button class="h" data-k="relic">櫃檯配件</button>
+      </div>
+      <div class="row"><b>模式</b>
+        <button class="h" data-m="night">今晚</button><button class="h" data-m="pick">再來一夜（還沒挑）</button><button class="h" data-m="prologue">序章</button>
+        <button class="h" data-m="duel">對決中</button><button class="h" data-m="title">標題（沒有 run）</button>
+      </div>
+      <div class="row"><b>錢</b><button class="h" data-money="800">$800</button><button class="h" data-money="150">$150</button><button class="h" data-money="0">$0</button>
+        <b>包包</b><button class="h" data-bag="8">8</button><button class="h" data-bag="5">5</button>
+        <b>配件</b><button class="h" data-rel="2">2</button><button class="h" data-rel="3">3</button></div>
+      <pre class="st" id="st"></pre>
+    </div>
+    <div class="lb-bagline" id="bagline"></div>
+  </div>
+</div>
+<script src="../../dip-character.js?v=2"></script>
+<script src="../chars.js"></script>
+<script src="../cards.js"></script>
+<script src="../bins.js"></script>
+<script src="../content.js"></script>
+<script src="../engine.js"></script>
+<script src="../fx.js"></script>
+<script src="../shop.js"></script>
+<script src="../shop-props.js"></script>
+<script src="../stage.js"></script>
+<script src="../cardinfo.js"></script>
+<script src="../econ.js"></script>
+<script>
+/* dev/econ-harness.html（B3，SPEC-v4 §3.2 B3）：只掛舞台＋一個假的 run（預設：今晚、$800、包包 8 張、配件 2 件、今晚的貨），四種面板各自打得開。
+ *   ?mode=night|pick|prologue|duel|title   night＝今晚來客（能買）；pick＝再來一夜還沒挑特價箱；prologue＝序章途中；duel＝對決中；title＝沒有 run
+ *   ?money=800&bag=8&relics=2&seed=econ-harness&ace=hall ；?open=bin:hiphop|pick|bargain|relic 一開就打開；?shot=1 截圖模式（藏起 harness 鈕）
+ *   點舞台上的箱子／櫃檯＝ui.js 的接法（§2.5.2 onStageAction）：crate:<key> → openBin／openBargain／bargainPick；counter → openRelicShop。
+ *   window.H：{ stage, run, reset(o), open(k), poses, walks, chooses, toasts, errors, ready }
+ * 嚴格模式（DipShop.strict）打開：走不到的路線會丟錯（SPEC-v4 §2.4.5）。 */
+(function () {
+  'use strict';
+  var QS = {}; try { new URLSearchParams(location.search).forEach(function (v, k) { QS[k] = v; }); } catch (_) {}
+  if (window.DipShop) window.DipShop.strict = QS.strict !== '0';
+  var $ = function (s) { return document.querySelector(s); }, $$ = function (s) { return [].slice.call(document.querySelectorAll(s)); };
+  var C = window.DipLabContent, E = window.DipLabEngine, EC = window.DipLabEcon;
+  var H = window.H = { stage: null, run: null, ready: false, errors: [], poses: [], walks: [], chooses: [], toasts: [], says: [], o: null };
+  if (QS.shot === '1') document.body.classList.add('shot');
+  window.addEventListener('error', function (e) { H.errors.push(String(e.message || e)); });
+
+  // 發燒配件圖示（ui.js LAB_ICONS＋roguelike.html PIX_ICONS_LV 第 0 級；ui.js 不在 harness 裡）
+  var ICONS = {
+    stylus: ['............', '.........kk.', '........kk..', '.......kk...', '......kk....', '.....kk.....', '....kk......', '...kk.......', '..kk........', '.kkk........', '.kkd........', '............'],
+    dustcover: ['............', '..dddddddd..', '.d........d.', '.d.kkkkkk.d.', '.d.k....k.d.', '.d.kkkkkk.d.', '.d........d.', '.dddddddddd.', '.kkkkkkkkkk.', '............', '............', '............'],
+    cleaner: ['....kkk.....', '...kkkkk....', '...kk.......', '...kkkk.....', '...kwwk.....', '..kwwwwk....', '..kwwwwk....', '..kwwwwk....', '..kwbbwk....', '..kwbbwk....', '..kkkkkk....', '............'],
+    heavy180: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kkkkddkkkk.', '.kkkd..dkkk.', '.kkkd..dkkk.', '.kkkkddkkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............'],
+    numbered: ['............', '.kkkkkkkkk..', '.kwwwwwwwk..', '.kwkwwkwwk..', '.kwwwwwwwk..', '.kwwkwkwwk..', '.kwwwwwwwk..', '.kkkkkkkkk..', '....kk......', '....kk......', '............', '............'],
+    matrix: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kw.....wkk.', '.kkkddddkkk.', '.kkkd..dkkk.', '.kkkddddkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............']
+  };
+  function relicIcon(id, size) {
+    var r = C.relics[id], rows = r && ICONS[r.icon];
+    return rows && window.pixArtHTML ? window.pixArtHTML(rows, size || 24) : '<span class="ec-ri">' + ((r && r.name) || '?').slice(0, 1) + '</span>';
+  }
+  function sfx(n, o) { var f = window.DipLabFx; if (f && f.sfx) try { f.sfx(n, o); } catch (_) {} }
+  function toast(text) {
+    H.toasts.push(text);
+    var t = document.createElement('div'); t.className = 'lb-toast'; t.textContent = text; $('#app').appendChild(t);
+    setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 1900);
+  }
+
+  // 假的 run：今晚的貨照 engine.newRun（同一個種子同一批貨）；特價箱先挑三張（今晚＝已經挑過），再補到包包張數、配件件數
+  function makeRun(o) {
+    if (o.mode === 'title') return null;
+    var r = E.newRun(C, { seedKey: o.seed, nightNo: 2, ace: o.ace, prologue: o.mode === 'prologue' });
+    if (o.mode === 'night' || o.mode === 'duel') {
+      var res = E.choose(r, C, { type: 'bargainPick', ids: r.shop.bargain.slice(0, 3) });
+      if (!res.ok) H.errors.push('bargainPick ' + res.error);
+    }
+    var used = {}; [C.aces[r.ace]].concat(r.bag, r.shop.bargain).forEach(function (id) { used[id] = 1; });
+    Object.keys(r.shop.bins).forEach(function (k) { r.shop.bins[k].forEach(function (id) { used[id] = 1; }); });
+    var spare = Object.keys(C.cards).filter(function (id) { var c = C.cards[id]; return !used[id] && !c.tier && E.priceOf(C, c) != null; }).sort();
+    while (r.bag.length < o.bag && spare.length) r.bag.push(spare.shift());
+    while (r.bag.length > o.bag) r.bag.pop();
+    r.relics = ['dustcover', 'stylus', 'cleaner'].slice(0, o.relics);
+    r.money = o.money;
+    if (o.mode === 'duel') r.duel = { v: 'lab-4', fake: true };
+    return r;
+  }
+  function opts() {
+    return { mode: QS.mode || 'night', seed: QS.seed || 'econ-harness', ace: QS.ace || 'hall',
+      money: QS.money != null ? +QS.money : 800, bag: QS.bag != null ? +QS.bag : 8, relics: QS.relics != null ? +QS.relics : 2 };
+  }
+  H.reset = function (o) {
+    EC.close();
+    H.o = Object.assign(opts(), H.o || {}, o || {});
+    H.run = makeRun(H.o);
+    H.poses.length = 0; H.walks.length = 0; H.chooses.length = 0; H.toasts.length = 0; H.says.length = 0;
+    var st = H.stage;
+    if (st) { st.put('o', 'counter'); st.put('p', 'browse', 'player'); st.pose('p', null); st.highlight([]); }
+    upd();
+    return H.run;
+  };
+  function upd() {
+    var r = H.run;
+    $('#nsub').textContent = r ? (r.prologue === 'pending' ? '序章' : r.duel ? '對決中' : E.canBargainPick(r) ? '特價箱還沒挑' : '') : '（沒有 run）';
+    $('#bagline').innerHTML = r ? '<button type="button" class="bag">' + EC.moneyHTML(r.money) + '</button><button type="button" class="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
+      '<button type="button" class="rl"><span class="k">發燒配件</span>' + r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + '</button>' : '';
+    $('#st').textContent = r ? ('mode ' + H.o.mode + '　$' + r.money + '　包包 ' + r.bag.length + '　配件 ' + r.relics.join(',') + '　canShop ' + E.canShop(r) + '　canBargainPick ' + E.canBargainPick(r) +
+      '\n櫃檯 ' + r.shop.relics.join(',') + '　特價 ' + r.shop.bargain.length + ' 張\n' + JSON.stringify(EC.debug())) : 'mode title（沒有 run）\n' + JSON.stringify(EC.debug());
+    $$('[data-m]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-m') === H.o.mode); });
+  }
+  // 點舞台：照 ui.js 的接法（§2.5.2）。序章／對決中由 econ 自己回「打完再翻。」
+  function onAction(action, hot) {
+    var m = /^crate:(.+)$/.exec(action || '');
+    if (m) {
+      var k = m[1], r = H.run;
+      if (k === 'sale') { (r && E.canBargainPick(r) && !r.duel && r.prologue !== 'pending' ? EC.bargainPick() : EC.openBargain()).then(upd); }
+      else EC.openBin(k).then(upd);
+      return;
+    }
+    if (action === 'counter' || (hot && hot.id === 'counter')) { EC.openRelicShop().then(upd); return; }
+  }
+  H.open = function (k) {
+    if (k === 'pick') return EC.bargainPick().then(function (ids) { upd(); return ids; });
+    if (k === 'bargain') return EC.openBargain().then(upd);
+    if (k === 'relic') return EC.openRelicShop().then(upd);
+    if (/^bin:/.test(k)) return EC.openBin(k.slice(4)).then(upd);
+    return Promise.resolve();
+  };
+
+  DipLabStage.mount($('#stage'), {
+    shop: 'dip', layoutBase: '../shops/', cards: window.DipLabCards, coverBase: '../', sprites: {}, player: { head: 'neat', hair: 'k', shirt: 'b', pants: 'k', skin: 's' },
+    camera: 'full', screen: 'map', sfx: sfx
+  }).then(function (st) {
+    H.stage = st;
+    // 記錄姿勢與走路（e2e：到了 stand 才 dig）
+    var op = st.pose, ow = st.walk, os = st.say;
+    st.pose = function (id, name, ms) { var a = st.pos(id); H.poses.push({ t: performance.now(), id: id, name: name, x: a && a.x, y: a && a.y }); return op.apply(st, arguments); };
+    st.walk = function (id, keys, spd) { H.walks.push({ t: performance.now(), id: id, to: JSON.parse(JSON.stringify(keys)), spd: spd }); return ow.apply(st, arguments); };
+    st.say = function (id, text, o) { H.says.push({ t: performance.now(), id: id, text: text }); return os.apply(st, arguments); };
+    st.onAction = onAction;
+    st.interact('map');
+    EC.configure({
+      content: C, engine: E, stage: st, run: function () { return H.run; },
+      choose: function (ch) { var res = E.choose(H.run, C, ch); H.chooses.push({ ch: ch, res: res }); upd(); return res; },
+      info: function (c) { return window.DipLabCardInfo.open(c, { from: 'econ' }); },
+      sfx: sfx, toast: toast, app: function () { return $('#app'); }, coverBase: '../', relicIcon: relicIcon
+    });
+    H.reset();
+    return st.camera('full', { ms: 0, panelMin: 200, screen: 'map' });
+  }).then(function () {
+    H.ready = true;
+    setInterval(upd, 500);
+    if (QS.open) H.open(QS.open);
+  }).catch(function (e) { console.error(e); H.errors.push(String(e)); });
+
+  $$('[data-k]').forEach(function (b) { b.onclick = function () { H.open(b.getAttribute('data-k')); }; });
+  $$('[data-m]').forEach(function (b) { b.onclick = function () { H.reset({ mode: b.getAttribute('data-m') }); }; });
+  $$('[data-money]').forEach(function (b) { b.onclick = function () { if (H.run) H.run.money = +b.getAttribute('data-money'); H.o.money = +b.getAttribute('data-money'); upd(); }; });
+  $$('[data-bag]').forEach(function (b) { b.onclick = function () { H.reset({ bag: +b.getAttribute('data-bag') }); }; });
+  $$('[data-rel]').forEach(function (b) { b.onclick = function () { H.reset({ relics: +b.getAttribute('data-rel') }); }; });
+})();
+</script>
+</body>
+</html>
