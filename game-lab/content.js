@@ -674,6 +674,7 @@
     noMoney: '錢不夠',
     bagFull: '包包滿了：先賣一張，半價 ${n}',
     sellPick: '賣這張',
+    sellPickN: '賣這 {k} 張',        // 要賣兩張以上（特價箱一次買三張、包包放不下；RT-10）
     bought: '《{album}》進包包，−${n}',
     sold: '《{album}》賣掉，+${n}',
     relicTitle: '櫃檯的配件',

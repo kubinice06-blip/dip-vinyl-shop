@@ -448,7 +448,7 @@
       }).join('') + '</div>' +
       '<p class="ec-line">' + (fc ? esc(fc.artist + '《' + fc.album + '》') : '&nbsp;') + '</p>' +
       '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="back">' + esc(ui('close')) + '</button>' +
-      '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
+      '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(sub.need > 1 ? fill(ui('sellPickN') || '賣這 {k} 張', { k: sub.need }) : ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
   }
   // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
   function tgtHTML(sub) { return sub.tgt ? '<span class="sub">' + esc(sub.tgt + fill(ui('buy'), { n: mt(sub.price) })) + '</span>' : ''; }

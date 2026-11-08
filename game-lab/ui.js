@@ -1171,7 +1171,10 @@
     if (!text) return;
     var ci = CI();
     if (ci && ci.isOpen()) { toastQ.push([text, cls]); return; }
-    var t = el('div', 'lb-toast' + (cls ? ' ' + cls : ''), esc(text));
+    // 錢（−$3,000）與短詞（進包包）不拆到兩行（V11：「…，−」／「$3,000」看起來像賺錢）
+    var html = esc(text).replace(/[−+-]\$[\d,]+/g, function (m) { return '<span class="nw">' + m + '</span>'; })
+      .replace(/(進包包|賣掉|拿出來了|放回去了)/g, '<span class="nw">$1</span>');
+    var t = el('div', 'lb-toast' + (cls ? ' ' + cls : ''), html);
     app().appendChild(t);
     setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 1900 / speed());
   }
@@ -1217,7 +1220,7 @@
   function shelfCount() { return { n: Object.keys(save.shelf).filter(card).length, total: Object.keys(C.cards).length }; }
   function runWhere(r) {
     if (!r) return '';
-    if (r.prologue === 'pending') return (C.night.prologueTime || '21:30') + '・序章';
+    if (r.prologue === 'pending' || (r.pending && r.pending.prologue)) return (C.night.prologueTime || '21:30') + '・序章';   // 序章收尾（撿唱片、挑配件）也還是序章（RT-7）
     var id = E.current(r, C), en = C.enemies[id];
     return (r.times[r.idx] || '') + (en ? '・' + en.name : '');
   }
@@ -1461,6 +1464,8 @@
     var panel = UI.panel; panel.classList.add('duel');
     var wrap = el('div', 'lb-duelwrap'); panel.appendChild(wrap);
     var foeSpr = enemySpr(en);
+    // 上一場的勝利曲（或今晚來客時放的試聽）淡掉：不要壓在這場每一手的落針與 NOW 小窗底下（RT-9）
+    var fxm = FX(); if (fxm && fxm.music && fxm.music.playing && fxm.music.playing()) try { fxm.music.stop({ fadeMs: 900 }); } catch (e) { console.error(e); }
     resetPoses(); hideActor('q1'); hideActor('q2'); stg('sil', 'f', false); stg('sil', 'p', false);
     stg('sprite', 'f', foeSpr);
     var enter = !!p.enter && !UI.auto, quick = !!p.quick && !UI.auto;
@@ -1631,7 +1636,7 @@
           var c = card(pend.cards[0]);
           // D §2：撿起面板沒有任何敘述標題，只有封面、藝人《專輯》、兩顆鈕
           return cardPanel(c, { title: null, isNew: true, buttons: [
-            { label: '收進包包', sub: '包包 ' + save.run.bag.length + '／' + E.CFG.bagMax, value: 'take', pri: true },
+            { label: '收進包包', sub: '包包 ' + save.run.bag.length + '/' + E.CFG.bagMax, value: 'take', pri: true },
             { label: '不用了', sub: '還是會留在唱片櫃', value: 'skip' }] }).then(function (v) {
             shelfAdd(c.id);
             stg('floorRecord', null);
@@ -1823,7 +1828,7 @@
       var en = C.enemies[id] || {}, done = i < r.idx, cur = i === r.idx;
       return '<button type="button" class="nc' + (done ? ' done' : '') + (cur ? ' cur' : '') + (en.elite ? ' elite' : '') + (en.boss ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc((r.times[i] || '') + ' ' + en.name) + '">' +
         '<span class="tm">' + esc(r.times[i] || '') + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + '</span>' +
-        '<span class="nm">' + esc(en.boss ? '打烊前' : en.elite ? '菁英' : en.name) + '</span></button>';
+        '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
     var nen = C.enemies[nx] || {};
     var h = '<div class="lb-night"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">' + [r.idx > 0 ? '贏了 ' + r.idx + ' 位' : '', r.retryLeft > 0 ? '老闆說情 剩 ' + r.retryLeft + ' 次' : ''].filter(Boolean).join('・') + '</span></div>' +
@@ -1890,7 +1895,7 @@
     later(function () { if (UI.screen === 'night') beginFight({ enter: true }); }, UI.auto ? 300 : 1100);
   }
   function bagSheet(r) {
-    var html = '<div class="hd"><h3>包包 ' + r.bag.length + '／' + E.CFG.bagMax + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+    var html = '<div class="hd"><h3>包包 ' + r.bag.length + '/' + E.CFG.bagMax + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p><div class="lb-pick">' + tileHTML(card(C.aces[r.ace]), { text: false }) + r.bag.map(function (id) { return tileHTML(card(id), { text: false }); }).join('') + '</div>';
     floatSheet(html, 'bag tall');
   }
@@ -1899,7 +1904,7 @@
       '<p class="sub">' + esc((C.rules && C.rules.relics) || '') + '</p><div class="lb-opts">' + (r.relics.length ? r.relics.map(function (id) {
         var x = relicOf(id);
         return '<div class="lb-relic static"><span class="pix">' + relicIcon(id, 30) + '</span><span class="tx"><span class="nm">' + esc(x.name) + '</span><span class="ds">' + esc(x.desc) + '</span></span></div>';
-      }).join('') : '<p class="sub">還沒有。序章收尾、打贏菁英或藏家都拿得到。</p>') + '</div>';
+      }).join('') : '<p class="sub">還沒有。序章收尾、打贏菁英或藏家，或兩位客人之間到櫃檯買。</p>') + '</div>';
     floatSheet(html, 'relics');
   }
 

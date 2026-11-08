@@ -548,3 +548,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
   .lb-recs .rc .pt{order:4;flex-basis:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
 }
 .lb-panel.sheeted>.lb-dq,.lb-panel.sheeted>.lb-strip{visibility:hidden;}   /* 面板滑進來那 0.2 秒，底下的對白不要透出來疊字（R-08c） */
+.lb-toast .nw{white-space:nowrap;}
+/* 剛換上的畫面／面板 GUARD_MS 內點了不算（防連點）：主鈕先淡一點、好了才亮，看得出來還沒好（RT-8） */
+.lb-screen .lb-btn.pri,.lb-sheet .lb-btn.pri{transition:opacity .18s ease-out;}
+.lb-screen.arming .lb-btn.pri,.lb-sheet.arming .lb-btn.pri{opacity:.55;}
