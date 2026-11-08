@@ -6,7 +6,7 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 ## 階段
 
 - **第 1 階段（完成）**：engine.js v4（§2.1 全部）、content.js 不依賴新烘卡的資料（§2.2.2–§2.2.10）、test/engine.test.mjs v4（用現有 cards.js＋測試內建的星數墊片）、lint-copy／check-content 改版、owner-lines-v4.json。**沒有校準模擬**。
-- **第 2 階段（下一步）**：合併 A3-M1（新 cards.js／bins.js）後：
+- **第 2 階段（進行中）**：已合併 A3-M1（`4433435c0`；A3 無替換，46 張新卡全烘到、`check-content` 全綠、engine.test 0 STUB）。合併 A3-M1（新 cards.js／bins.js）後：
   1. `node game-lab/tools/check-content.mjs` 應該全綠（現在只差 46 張卡＋bins.js）；`engine.test` #14 會比對 STUB 星數＝真卡。
   2. `sim.mjs` v4 全部重寫（§5.2 S1–S8、`--n`／`--set`／`--json`、新增 `--econ none|smart`；用 `EN.bargainPolicy`／`shopPolicy`／`runPolicy`），照 §5.2 的順序校準（聲望 → 獎金／價格／配件價），mercy 開關兩組數字。
   3. `dev/decks-v4.md`（§4 牌單表＋deckMain＋嚴格峰值張數＋≥4 星副屬性；禮物；特價箱）、`dev/sim-v4.json`（`--json`）。
