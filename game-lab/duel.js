@@ -218,7 +218,15 @@
     // ---------------- stage（常駐 DipLabStage；duel.js 只呼叫 API） ----------------
     function stg(m, ...a) { const s = hooks.stage; if (!s || typeof s[m] !== 'function') return null; try { return s[m](...a); } catch (e) { console.error(e); return null; } }
     const hasStage = m => !!(hooks.stage && typeof hooks.stage[m] === 'function');
-    function say(id, text, ms) { if (text) stg('say', id, text, { ms: ms || 1500, lift: 7 }); }
+    // 他說話時先收起他頭上的名牌（矮螢幕的橫條鏡頭裡泡泡會被壓到名牌上），說完再掛回去；keepOff＝說完也不掛（打完那一句）
+    function say(id, text, ms, keepOff) {
+      if (!text) return;
+      ms = ms || 1500;
+      const tagOff = id === 'f' && S.tagged;
+      if (tagOff) stg('untag', 'f');
+      stg('say', id, text, { ms, lift: 7 });
+      if (tagOff && !keepOff) later(() => { if (S.tagged) stg('tag', 'f', enemy.name || '他', 'e', 'L'); }, ms + 80);
+    }
     function pickLine(keys) {
       for (const key of keys) {
         let arr = lines[key]; if (arr == null) continue;
@@ -845,7 +853,7 @@
       renderAct(); renderHint(v1); renderRec(v1);
       if (result.by === 'hp') stg('pose', win ? 'f' : 'p', 'ko', 700);
       sfx('ko');
-      say('f', pickLine(win ? ['lose'] : ['win']), 1800);
+      say('f', pickLine(win ? ['lose'] : ['win']), 1800, true);
       later(() => sfx(win ? 'win' : 'lose'), 300);
       winnerSong(win, cl);
       let tx = null;
