@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（第 2 階段）之前，教學步驟仍是 v3 的。
 
-統計：原句 45、拍板 0、店主 40、新 265（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 40、新 279（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（O1–O21）
 
@@ -357,10 +357,24 @@
 | （畫面字）・bargainTitle | 特價區 | 本規格新寫 | `shopUi.bargainTitle` |
 | （畫面字）・bargainPrompt | （挑三張。） | 本規格新寫 | `shopUi.bargainPrompt` |
 | （畫面字）・bargainTake | 收下這三張 | 本規格新寫 | `shopUi.bargainTake` |
-| （畫面字）・bargainBuy | $100：最多挑三張 | 本規格新寫 | `shopUi.bargainBuy` |
+| （畫面字）・bargainBuy | ${n}：最多挑三張 | 本規格新寫 | `shopUi.bargainBuy` |
 | （畫面字）・bargainEmpty | 特價區今晚賣完了。 | 本規格新寫 | `shopUi.bargainEmpty` |
 | （畫面字）・close | 關閉 | 本規格新寫 | `shopUi.close` |
 | （畫面字）・earned | +${n} | 本規格新寫 | `shopUi.earned` |
+| （畫面字）・bag | 包包 {n}/{max} | 本規格新寫 | `shopUi.bag` |
+| （畫面字）・binEmpty | 這一箱今晚賣完了。 | 本規格新寫 | `shopUi.binEmpty` |
+| （畫面字）・owned | 包包裡有了 | 本規格新寫 | `shopUi.owned` |
+| （畫面字）・bagFullN | 包包放不下：先賣 {k} 張，半價 ${n} | 本規格新寫 | `shopUi.bagFullN` |
+| （畫面字）・moneyShort | 錢不夠：先賣一張，半價 ${n} | 本規格新寫 | `shopUi.moneyShort` |
+| （畫面字）・sellFirst | 先賣一張 | 本規格新寫 | `shopUi.sellFirst` |
+| （畫面字）・relicSell | 賣這件 | 本規格新寫 | `shopUi.relicSell` |
+| （畫面字）・relicSold | 「{name}」賣掉，+${n} | 本規格新寫 | `shopUi.relicSold` |
+| （畫面字）・relicEmpty | 櫃檯今晚的配件賣完了。 | 本規格新寫 | `shopUi.relicEmpty` |
+| （畫面字）・relicMoneyShort | 錢不夠：先賣一件，半價 ${n} | 本規格新寫 | `shopUi.relicMoneyShort` |
+| （畫面字）・relicSellFirst | 先賣一件 | 本規格新寫 | `shopUi.relicSellFirst` |
+| （畫面字）・prev | 上一張 | 本規格新寫 | `shopUi.prev` |
+| （畫面字）・next | 下一張 | 本規格新寫 | `shopUi.next` |
+| （畫面字）・infoAria | 唱片資訊、試聽 | 本規格新寫 | `shopUi.infoAria` |
 | （畫面字） | 特價 | 本規格新寫 | `bargain.label` |
 
 ## 今晚來客・結算

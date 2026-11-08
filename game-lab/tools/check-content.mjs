@@ -299,7 +299,8 @@ export function contentProblems(C, E) {
   ok(SL.ownerHint && ['title', 'scene', 'night', 'duel', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 五個畫面');
   ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 2, 'shopLines.nightIntro 兩句');
   const SU = ['money', 'binTitle', 'buy', 'noMoney', 'bagFull', 'sellPick', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
-    'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned'];
+    'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',
+    'bag', 'binEmpty', 'owned', 'bagFullN', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria'];
   ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8）');
   ok(C.night && C.night.times.length === 5 && C.night.normals === 3 && C.night.retry === 1 && C.night.label, 'night：5 個時間、一般 3 位、說情 1 次');
   ok(C.summary && C.summary.reached && C.summary.wins && C.summary.taken && C.summary.again, 'summary 結算三件事＋再來一夜');

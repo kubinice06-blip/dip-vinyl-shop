@@ -663,10 +663,25 @@
     bargainTitle: '特價區',
     bargainPrompt: '（挑三張。）',
     bargainTake: '收下這三張',
-    bargainBuy: '$100：最多挑三張',
+    bargainBuy: '${n}：最多挑三張',                               // {n}＝economy.bargainPrice（econ.js 代入）
     bargainEmpty: '特價區今晚賣完了。',
     close: '關閉',
-    earned: '+${n}'
+    earned: '+${n}',
+    // B3 econ.js 用到的字（notes-B3 請求 7；econ.js 有同字後備）
+    bag: '包包 {n}/{max}',
+    binEmpty: '這一箱今晚賣完了。',
+    owned: '包包裡有了',
+    bagFullN: '包包放不下：先賣 {k} 張，半價 ${n}',
+    moneyShort: '錢不夠：先賣一張，半價 ${n}',
+    sellFirst: '先賣一張',
+    relicSell: '賣這件',
+    relicSold: '「{name}」賣掉，+${n}',
+    relicEmpty: '櫃檯今晚的配件賣完了。',
+    relicMoneyShort: '錢不夠：先賣一件，半價 ${n}',
+    relicSellFirst: '先賣一件',
+    prev: '上一張',
+    next: '下一張',
+    infoAria: '唱片資訊、試聽'
   };
   C.shopUiTag = '新';
 

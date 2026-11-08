@@ -366,7 +366,7 @@
       var sells = r.bag.map(function (id) { return card(id) ? E().sellValue(C(), card(id)) : 0; }).sort(function (a, b) { return b - a; }).slice(0, need);
       var can = k >= 1 && k <= pickN() && need <= r.bag.length && r.money + sells.reduce(function (s, v) { return s + v; }, 0) >= price;
       var poor = r.money + r.bag.map(function (id) { return card(id) ? E().sellValue(C(), card(id)) : 0; }).sort(function (a, b) { return b - a; }).slice(0, Math.max(0, r.bag.length + 1 - bagMax())).reduce(function (s, v) { return s + v; }, 0) < price;
-      foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + '>' + esc(poor ? ui('noMoney') : ui('bargainBuy')) + '</button>';
+      foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + '>' + esc(poor ? ui('noMoney') : fill(ui('bargainBuy'), { n: price })) + '</button>';
     }
     return headHTML(title, extra) +
       '<div class="ec-grid">' + tiles + '</div>' +
