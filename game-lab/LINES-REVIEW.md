@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 66、新 273（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 66、新 268（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -167,16 +167,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字）・pickHint | 點一張專輯 | 本規格新寫 | `duelText.pickHint` |
-| （畫面字）・picked | 選好了： | 本規格新寫 | `duelText.picked` |
-| （畫面字）・again | 點別的星換屬性，選好就丟！ | 本規格新寫 | `duelText.again` |
-| （畫面字）・throwBtn | 丟！ | 本規格新寫 | `duelText.throwBtn` |
-| （畫面字）・waiting | 演完就換下一手（點畫面跳過） | 本規格新寫 | `duelText.waiting` |
 | （畫面字）・hintLabel | 提示 | 本規格新寫 | `duelText.hintLabel` |
 | （畫面字）・sleeve | 蓋著 | 本規格新寫 | `duelText.sleeve` |
 | （畫面字）・rounds | 第 {n}／{max} 手 | 本規格新寫 | `duelText.rounds` |
 | （畫面字）・hp | 聲望 | 本規格新寫 | `duelText.hp` |
 | （畫面字）・aceSlot | 王牌 | 本規格新寫 | `duelText.aceSlot` |
-| （畫面字）・aceUsed | 用過 | 本規格新寫 | `duelText.aceUsed` |
 | （畫面字）・aceWord | 王牌 | 本規格新寫 | `duelText.aceWord` |
 | （畫面字）・he | 他・ | 本規格新寫 | `duelText.he` |
 | （畫面字）・you | 你・ | 本規格新寫 | `duelText.you` |

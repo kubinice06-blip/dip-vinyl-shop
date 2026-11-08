@@ -18,10 +18,16 @@
 
 ## 進度
 
-- [ ] 1 duel.js／duel.css：扇形、攤開、浮起＋屬性鈕、拿掉星鈕列與丟！列、牌桌重排、尺寸（四尺寸不捲、沒有 >24 px 空帶）
+- [x] 1 duel.js／duel.css：扇形、攤開、浮起＋屬性鈕、拿掉星鈕列與丟！列、牌桌重排、尺寸（四尺寸不捲、沒有 >24 px 空帶）
 - [ ] 2 教學：tutorial.js（runner：spread／lift／attr；DOM：扇形時先指扇形）、content.js C.tutorial.steps 文字、tutorial.test、check-content／lint-copy、規則卡頁尾第 1 行
 - [ ] 3 e2e：e2e-duel、e2e.spec、e2e-lib walkTutorial、e2e-prologue；四尺寸
 - [ ] 4 V03：430×932 序章／尾聲店景下面的白帶
 - [ ] 5 截圖（390×664@2＋375×548＋430×932）：扇形、攤開、浮起＋三顆鈕、剛丟出（揭曉）、教學第 2 手手指
 
 ## 記錄
+- 步驟 1：duel.js 手牌改 .hand（.tiles 每張絕對定位，layoutHand 算扇形／一排的 transform；.pop 屬性鈕 .ab；.hprompt「點一張專輯」）。
+  sizeBoard：手牌區至少＝一排（6 張照寬度）＋浮起 10＋6＋屬性鈕高；其餘給牌桌，封面 --scv 上限 176（roomy 188），兩張中間只留 10 px；
+  相剋圖例＋第 n／6 手搬到中間字帶左邊（.tcol），提示句／結果框／上一手在它右邊。扇形 F ≤ 封面 0.64、≤118。
+  量到的（封面／手牌區）：390×664 176／141、375×548 145／120、430×932 188／177、360×640 163／144（原本 140／120／140／128）。
+  丟出去手牌收回扇形；結算中整疊一起變淡。duelText 拿掉 picked／again／throwBtn／waiting／aceUsed（check-content 的鍵表同步；lint-copy 重產 LINES-REVIEW）。
+  e2e 還沒改（下一步）。
