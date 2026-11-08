@@ -352,16 +352,25 @@ async function run() {
           }
           if (want(22)) { const sc = await noScroll(page); record(22, size, scrollOk(sc), `duel scroll ${JSON.stringify(sc)}`); }
           if (want(18)) {
-            const opened = { guess: guessInfo };
-            await longPress(page, ctx, '.dl [data-tut=card-0]'); opened.hand = await infoOpen(page); if (opened.hand === true) await closeInfo(page);
-            await longPress(page, ctx, '.dl [data-tut=card-ace]'); opened.ace = await infoOpen(page); if (opened.ace === true) await closeInfo(page);
+            const opened = { guess: guessInfo }, closedAtOnce = [];
+            // 長按：盤面送出 'info' 就算開了（放開手指補送的 click 落在唱片資訊的遮罩外面會把它關掉——cardinfo.js／duel.js 的事，見 notes-B2 請求；這裡另外記下來）
+            await page.evaluate(() => { window.__infoEv = []; window.DipLabDuel.on('info', w => window.__infoEv.push(w)); });
+            for (const [k, sel, where] of [['hand', '.dl [data-tut=card-0]', 'hand'], ['ace', '.dl [data-tut=card-ace]', 'hand-ace']]) {
+              await page.evaluate(() => { window.__infoEv.length = 0; });
+              await longPress(page, ctx, sel);
+              const mask = await infoOpen(page, 1500);
+              const ev = await page.evaluate(() => window.__infoEv.slice());
+              opened[k] = mask || ev.includes(where);
+              if (!mask && ev.includes(where)) closedAtOnce.push(k);
+              if (mask) await closeInfo(page);
+            }
             await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
             await page.waitForFunction(() => window.DipLabDuel.debug().n >= 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 }).catch(() => {});
             await sleep(300);
             for (const [k, s] of [['slotE', '.dl [data-tut=slot-e] .cv'], ['slotP', '.dl [data-tut=slot-p] .cv']]) {
               const ok1 = await jsClick(page, s); opened[k] = ok1 ? await infoOpen(page) : 'missing'; if (opened[k] === true) await closeInfo(page);
             }
-            record(18, size, Object.values(opened).every(v => v === true), `duel covers ${JSON.stringify(opened)}`);
+            record(18, size, Object.values(opened).every(v => v === true), `duel covers ${JSON.stringify(opened)}${closedAtOnce.length ? '（放開手指就被關掉：' + closedAtOnce.join('、') + '）' : ''}`);
           }
         } else {
           for (const n of [4, 6, 17, 14, 18, 22]) if (want(n)) record(n, size, false, 'duel not ready');
