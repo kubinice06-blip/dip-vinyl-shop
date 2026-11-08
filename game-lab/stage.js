@@ -591,7 +591,7 @@
       // 除錯／截圖：把正在演的時間軸停在 t（ms）。t==null＝放開
       seek: function (t) { if (t == null) { TT.paused = false; return stage; } TT.paused = true; TT.items.forEach(function (x) { x.t = t; }); ttTick(shop.now()); shop.render(); return stage; },
       clashState: function () {
-        var bd = {}; ['e', 'p'].forEach(function (s) { var v = TT.badges[s]; bd[s] = v ? { attr: v.attr, star: v.star, ace: v.ace } : null; });
+        var bd = {}; ['e', 'p'].forEach(function (s) { var v = TT.badges[s]; bd[s] = v ? { attr: v.attr, star: v.star, ace: v.ace, fx: v.fx || '' } : null; });
         return { items: TT.items.length, deck: TT.deck ? JSON.parse(JSON.stringify(TT.deck)) : null, held: JSON.parse(JSON.stringify(TT.held)), badges: bd, paused: TT.paused, speed: TT.speedK, fast: TT.fast };
       }
     };
