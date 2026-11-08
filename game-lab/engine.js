@@ -14,6 +14,7 @@
 //              kind ∈ counter|countered|mirrorWin|mirrorLose|tie（mirror＝比星分出勝負，含「剋不動改比星」）
 //              王牌沒有「不會被剋」（FIXLIST 2）：王牌＝那軸 7 星，照三相剋＋差 2 星門檻（≤5 星剋不動它；王牌對王牌照三相剋）。p.ace／e.ace 只是標記
 //            playerAhead(pHp, pMax, eHp, eMax) 比聲望條剩幾成（hp÷max，一樣算你贏；FIXLIST 3）· hpPct(hp, max) 畫面用的 %（四捨五入、≥0）
+//            pctPair(pHp, pMax, eHp, eMax) -> {p, e} 結果句的兩個 %（字串；整數一樣但勝負分得出來時改一位小數，數字永遠跟勝負一致）
 //              （v3 墊片：clash(pStar, pAttr, eStar, eAttr) 也收，第二波 B2 改掉 ui.js 的舊呼叫後可刪）
 // Duel       enemyDef(content, id, {tutorial, depth, planner?}) -> eDef · playerDef(content, {bag, ace, relics}) -> pDef
 //            startDuel(pDef, eDef, {seed, enemyAce?, script?, hintTable?}) -> {duel, events}
@@ -24,7 +25,7 @@
 //            bestChip(duel, attr, {ace}) · blockedChoice(duel, attr) -> {i, attr} | null（用 attr 出會被 'gap' 擋下的那張；教學第 5 手）
 //            Events {t:'hand', n, hint:{attr, line}, eHandN, pile}
 //                   {t:'clash', n, pCard, pAttr, pStar, pBase, ace, eCard, eAttr, eStar, eAce, kind, toE, toP, blocked, by, hint, bluff, notes, pHp, eHp}
-//                   {t:'draw', i, card, reshuffled}     {t:'over', win, by:'hp'|'rounds'|'pile', pHp, eHp, pMax, eMax, pPct, ePct}
+//                   {t:'draw', i, card, reshuffled}     {t:'over', win, by:'hp'|'rounds'|'pile', pHp, eHp, pMax, eMax, pPct, ePct, pct:{p,e}}
 //            勝負：誰的聲望先 ≤0 誰輸；兩邊同一手都 ≤0、六手打完（rounds）、他牌出完（pile）→ playerAhead（比聲望條剩幾成，一樣算你贏）
 //            order per resolve: clash → draw (not after the ace) → over | hand
 // Night      newRun(content, {seedKey, nightNo, ace, prologue?, relics?, bossAce?}) -> run    nextStep(run) · current(run, content)
@@ -421,15 +422,23 @@
     const pm = pMax > 0 ? pMax : 1, em = eMax > 0 ? eMax : 1;
     return pHp * em >= eHp * pm;
   }
-  // 畫面用：聲望條剩幾 %（四捨五入、不顯示負數）。你滿血 10、客人 ≤20 時，四捨五入後一樣大 ⇔ 真的一樣大，不會誤導
+  // 畫面用：聲望條剩幾 %（四捨五入、不顯示負數）
   function hpPct(hp, max) { return Math.max(0, Math.round(100 * hp / (max > 0 ? max : 1))); }
+  // 結果句用的一對 %（字串）：整數；整數一樣大但其實分得出高低時（例：你 9/10＝90%、他 28/31≈90.3%）兩邊都改一位小數，畫面上的數字永遠跟勝負一致
+  function pctPair(pHp, pMax, eHp, eMax) {
+    const p = hpPct(pHp, pMax), e = hpPct(eHp, eMax);
+    const exactTie = playerAhead(pHp, pMax, eHp, eMax) && playerAhead(eHp, eMax, pHp, pMax);
+    if (p !== e || exactTie || (pHp <= 0 && eHp <= 0)) return { p: String(p), e: String(e) };
+    const one = (hp, max) => (Math.max(0, Math.round(1000 * hp / (max > 0 ? max : 1))) / 10).toFixed(1);
+    return { p: one(pHp, pMax), e: one(eHp, eMax) };
+  }
   // 聲望 ≤0 就輸；兩邊同一手都 ≤0、六手打完、他牌出完 → playerAhead
   function finish(st, by, events) {
     const P = st.p, E = st.e;
     const cmp = playerAhead(P.hp, P.max, E.hp, E.max);
     const win = by === 'hp' ? ((P.hp <= 0 && E.hp <= 0) ? cmp : E.hp <= 0) : cmp;
     st.over = { win, by }; st.plan = null;
-    events.push({ t: 'over', win, by, pHp: P.hp, eHp: E.hp, pMax: P.max, eMax: E.max, pPct: hpPct(P.hp, P.max), ePct: hpPct(E.hp, E.max) });
+    events.push({ t: 'over', win, by, pHp: P.hp, eHp: E.hp, pMax: P.max, eMax: E.max, pPct: hpPct(P.hp, P.max), ePct: hpPct(E.hp, E.max), pct: pctPair(P.hp, P.max, E.hp, E.max) });
     return events;
   }
 
@@ -947,6 +956,6 @@
     rng, makeRng, shuffle, fnv1a32, clone, star, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    rarity, rarityScore, categoryOf, GENRE_BIN, priceOf, bargainPriceOf, relicPrice, sellValue, moneyText,
+    rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, moneyText,
     runPolicy, shopPolicy, bargainPolicy, policies };
 });

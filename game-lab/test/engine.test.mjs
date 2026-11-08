@@ -372,6 +372,14 @@ section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一
   ok(EN.playerAhead(10, 10, 18, 18) && EN.playerAhead(5, 10, 9, 18) && EN.playerAhead(6, 10, 9, 18) && !EN.playerAhead(4, 10, 9, 18), 'playerAhead: 比例、一樣算你贏');
   ok(!EN.playerAhead(9, 10, 19, 20) && EN.playerAhead(19, 20, 9, 10) && EN.playerAhead(-1, 3, -2, 3) && !EN.playerAhead(-2, 3, -1, 3), 'playerAhead: 0.9<0.95、負數也照比例');
   eq([EN.hpPct(6, 10), EN.hpPct(9, 18), EN.hpPct(-3, 10), EN.hpPct(7, 15)], [60, 50, 0, 47], 'hpPct');
+  eq([EN.pctPair(6, 10, 9, 18), EN.pctPair(9, 10, 28, 31), EN.pctPair(5, 10, 15, 30), EN.pctPair(-1, 10, 3, 30)],
+    [{ p: '60', e: '50' }, { p: '90.0', e: '90.3' }, { p: '50', e: '50' }, { p: '0', e: '10' }], 'pctPair: integers unless they would hide the winner');
+  // 你 10、客人 12–40：pctPair 顯示的大小永遠跟 playerAhead 一致（一樣大 ⇔ 真的一樣大）
+  for (let E = 12; E <= 40; E++) for (let e = 0; e <= E; e++) for (let p = 0; p <= 10; p++) {
+    const t = EN.pctPair(p, 10, e, E), a = EN.playerAhead(p, 10, e, E), b = EN.playerAhead(e, E, p, 10);
+    const shown = +t.p > +t.e ? 'p' : +t.p < +t.e ? 'e' : 'tie', real = a && b ? 'tie' : a ? 'p' : 'e';
+    if (shown !== real) ok(false, 'pctPair consistent', { p, e, E, t }); else pass++;
+  }
   const T = { debugOutcome: { kind: 'tie', toE: 0, toP: 0 } }, E10 = { eOver: { hp: 10 } };
   for (let s = 1; s <= 30; s++) {
     const { duel } = startFor('copycat', TIERS[s % 3], s, E10);
@@ -392,7 +400,7 @@ section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一
     const ge = []; for (let k = 0; k < 6; k++) ge.push(...EN.resolveTurn(g, EN.legalActions(g)[0], T));
     ok(g.over && g.over.by === 'rounds' && g.over.win === true, 'rounds compare the bar (10/10 = 18/18 → you win)', g.over);
     const ov = ge.find(e => e.t === 'over');
-    ok(ov && ov.pPct === 100 && ov.ePct === 100 && ov.pMax === 10 && ov.eMax === C.enemies.copycat.hp, 'over event has pMax／eMax／pPct／ePct', ov);
+    ok(ov && ov.pPct === 100 && ov.ePct === 100 && ov.pMax === 10 && ov.eMax === C.enemies.copycat.hp && ov.pct.p === '100' && ov.pct.e === '100', 'over event has pMax／eMax／pPct／ePct／pct', ov);
     // 你 6/10（60%）、他 9/18（50%）→ 你贏（舊規則 6 < 9 是你輸）；你 4/10、他 9/18 → 你輸
     const h = startFor('copycat', TIERS[s % 3], s, { eOver: { hp: 18 } }).duel;
     EN.resolveTurn(h, EN.legalActions(h)[0], { debugOutcome: { kind: 'counter', toE: 9, toP: 4 } });
