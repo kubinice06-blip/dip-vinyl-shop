@@ -34,7 +34,7 @@
 - **驗證**：Playwright（iPhone 13）全部 22,302 → 爵士 05712 → ＋殿堂 00060 → 0 張 00000（紅）→ 全部 22302，每顆數字都對準中線（偏移 0.0px）；取樣確認換數字時滾筒有轉、約 0.7 秒停住；無頁面錯誤。
 - **主要檔案**：`dip-tune.js`、`index.html`（v71）、`scripts/tune-panel-v2/panel.py`、`tune/panel-all.png`、`tune/drum-shade-122.png`。
 
-### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 933 張（每日批次進行中）
+### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 1,194 張（每日批次進行中）
 
 - **店主 11-06**：「好多 Spotify 連結是灰的，趕快全部掃描修復」（例：Grimes《Geidi Primes》）。
 - **主因（前台）**：`index.html` 的 `fetchSpotifyCover` localStorage 快取（300 張、永不過期）連「有封面沒連結」也存，10 月配額爆掉時的空結果被手機記住，KV 補好也不再問。PR #417：快取升 v5 刪 v4、只存有 `spotifyUrl` 的結果。Geidi Primes KV 本來就有連結，屬此類。
@@ -43,6 +43,7 @@
 - **MusicBrainz 重查**（免配額，3,299 張）：有登錄 94，收 80（名稱對上 59＋主線判讀 21，如久石譲《風立ちぬ》→《The Wind Rises Soundtrack》、Ayler《Ghosts》→《Vibrations》）；不收 Black Radio→III、J Dilla→Instrumentals、Janet Jackson《janet.》→同名首張等 14。
 - **11-07 防錯改版**（店主：「搜尋關鍵字寫錯或語言用錯，以前犯過的錯不要再犯」）：`match.mjs` 把 10-29 稽核 92 筆指錯與 Bandana、本批撤回 3 筆逐條寫成規則——藝人完全相同（不收包含）、同名高風險卡加年份檢查、live／EP／Taylor's Version／remix／redux 等另一種作品不收、single 不收、早於原盤不收；語言：兩邊繁轉簡（opencc-js 1.4.2，拚／拼異體收斂）、依卡名語系送 Accept-Language、中英並列拆語段、羅馬字別名；關鍵字：清《》引號、精準查無再換去副標一般查詢。錯案對照表見 `rulings.md`；昨日已寫入 744 條離線複查無新錯。
 - **11-07 每日第 2 批**（395 次）：找到 190、收 189（不收 Philip Glass《Koyaanisqatsi》1998 重錄→2009 電影原錄音）。事故：Spotify 搜尋 limit 現行上限 10，首跑用 20 全被拒、空打 201 次寫了 100 列空結果——已刪、改 limit 10、出錯也等待、連續 3 錯即停、出錯不寫結果；`apply.mjs` 改以腳本資料夾為準。累計 933，剩 3,118（未搜 3,024），預估再 11 天。
+- **11-08 每日第 3 批**（395 次）：找到 261 全收（edition 25 都是同張版本）。新增 `rejected.json`：主線退回的對應（Koyaanisqatsi）隔天不再被 make-plan 列入。累計 1,194，剩 2,857（未搜 2,706）。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
 ### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）
