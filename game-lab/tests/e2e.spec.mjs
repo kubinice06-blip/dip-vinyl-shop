@@ -192,17 +192,26 @@ async function run() {
           if (want(22)) { const sc = await noScroll(page); record(22, size, scrollOk(sc), `duel scroll ${JSON.stringify(sc)}`); }
           if (want(18)) {
             const opened = { guess: guessInfo }, closedAtOnce = [];
-            // 長按：盤面送出 'info' 就算開了（放開手指補送的 click 落在唱片資訊的遮罩外面會把它關掉——cardinfo.js／duel.js 的事，見 notes-B2 請求；這裡另外記下來）
-            await page.evaluate(() => { window.__infoEv = []; window.DipLabDuel.on('info', w => window.__infoEv.push(w)); });
-            for (const [k, sel, where] of [['hand', '.dl [data-tut=card-0]', 'hand'], ['ace', '.dl [data-tut=card-ace]', 'hand-ace']]) {
+            // 長按：放開手指之後 400 ms 唱片資訊還要開著（H3／RV11-1：放開補送的 click 不能落到「關閉」或串流鈕上）。
+            //   疊著的第 1 張與王牌、攤開的一張（那一排在畫面最底下＝「關閉」那條的位置）、浮起的一張都要驗
+            await page.evaluate(() => { window.__infoEv = []; window.DipLabDuel.on('info', w => window.__infoEv.push(w)); window.__navs = 0; document.addEventListener('click', e => { if (e.target.closest && e.target.closest('a[href]')) { window.__navs++; e.preventDefault(); } }, true); });
+            const lpCases = [['hand', '.dl [data-tut=card-0]', 'hand', null], ['ace', '.dl [data-tut=card-ace]', 'hand-ace', null],
+              ['spread', '.dl [data-tut=card-1]', 'hand', 'spread'], ['lifted', '.dl [data-tut=card-2]', 'hand', 'lift']];
+            for (const [k, sel, where, prep] of lpCases) {
+              await page.evaluate(p => { const D = window.DipLabDuel; D.spread(false); if (p === 'spread') D.spread(true); if (p === 'lift') D.select(2); }, prep);
+              await sleep(prep ? 350 : 250);
               await page.evaluate(() => { window.__infoEv.length = 0; });
               await longPress(page, ctx, sel);
-              const mask = await infoOpen(page, 1500);
+              await sleep(400);
+              const mask = !!(await page.$('#cardInfoMask'));
               const ev = await page.evaluate(() => window.__infoEv.slice());
-              opened[k] = mask || ev.includes(where);
+              opened[k] = mask;
               if (!mask && ev.includes(where)) closedAtOnce.push(k);
               if (mask) await closeInfo(page);
             }
+            await page.evaluate(() => window.DipLabDuel.spread(false));
+            const navs = await page.evaluate(() => window.__navs);
+            if (navs) { opened.links = false; closedAtOnce.push('串流連結 ' + navs); }
             // 牌桌兩張：揭曉後（他那格翻面、t≈280 ms）到換手前（t≈2060 ms）在牌桌上；出牌前的牌桌是蓋著的封套＋你選的預覽（店主 FIXLIST 9）。
             // 開唱片資訊時盤面會停住，所以兩張依序點得到
             await page.evaluate(() => { window.DipLabDuel.play({ i: 0, attr: 'c' }); });   // 不等整手演完（play 的 Promise 演完才 resolve）

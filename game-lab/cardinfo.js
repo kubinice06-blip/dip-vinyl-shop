@@ -177,6 +177,15 @@
     if (img) img.addEventListener('error', function () { var d = D.createElement('div'); d.className = 'cov noimg'; d.innerHTML = '<span>' + esc(o.album) + '</span>'; if (img.parentNode) img.parentNode.replaceChild(d, img); });
     // 點遮罩（面板外）關掉：只認「在遮罩上按下」的那一下。長按封面開資訊時手指還按著，放開補送的 click 會落在遮罩上——那一下不算（notes-B2 請求）
     var downOnMask = false;
+    // 整個面板也一樣（H3／RV11-1）：手牌攤開時那一排在畫面最底下，正好是「關閉」那條（sticky）；疊著時介紹文還沒到，手指底下是串流鈕。
+    //   打開之後還沒在面板裡按下過（armed＝false）的 click 一律吞掉——放開長按補送的那一下不會關掉面板、不會開串流連結、不會按到唱機。
+    //   鍵盤（Enter／空白鍵，detail＝0）與程式 el.click()（detail＝0）照常。
+    var armed = false;
+    m.addEventListener('pointerdown', function () { armed = true; }, true);
+    m.addEventListener('click', function (e) {
+      if (armed || e.detail === 0) return;
+      e.preventDefault(); e.stopPropagation();
+    }, true);
     m.addEventListener('pointerdown', function (e) { downOnMask = e.target === m; });
     m.addEventListener('click', function (e) {
       if (e.target === m) { if (!downOnMask) return; downOnMask = false; close(); return; }

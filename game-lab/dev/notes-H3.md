@@ -5,7 +5,7 @@
 
 ## 進度
 - [ ] 0 讀程式、逐項重現
-- [ ] RV11-1 長按開唱片資訊，放開那下 click 打到 #ciClose／串流鈕（major）
+- [x] RV11-1 長按開唱片資訊，放開那下 click 打到 #ciClose／串流鈕（major）——重現（390 攤開／浮起全部關掉、疊著落在串流鈕）；cardinfo.js 整個面板 armed，e2e #18 加攤開／浮起、400 ms 後還開著
 - [ ] RH-1 .tighter 換手忽有忽無（major）
 - [ ] RH-3 四行結果框超出牌桌（major）
 - [ ] RH-2 換手疊著那排一次跳位
@@ -24,3 +24,4 @@
 - [ ] 截圖 dev/shots/hand5/
 
 ## 記錄
+- RV11-1：cardinfo.js open() 加 armed（面板裡 pointerdown 過才收 click；detail 0＝鍵盤／el.click() 照常）。lpmap 390／360 全部 stillOpen=true，lppop 不再開 Spotify 分頁；e2e.spec #18（390）PASS（hand／ace／spread／lifted）。
