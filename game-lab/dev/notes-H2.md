@@ -22,7 +22,9 @@
 - [x] A duel.js／duel.css：拿掉 FAN_ROT／FAN_ARC（STACK_DX 0.3），class fan→stack，用語「扇形」→「疊著／疊成一排」（README、註解、e2e 記錄）；
   教學：疊著時 sh.pointAt＝那一課的封面，手指指那張露出的一條（stripRect；debug().point 照舊 'hand'）。commit fca9be134。
   量：390×664 疊著封面 113、露出 34 px（30%），攤開 56，空帶 ≤16。單元測試全綠、check-content／lint-copy 綠。
-- [~] B e2e-duel #1a 加「同一條線、不轉角、露出 25–35%」檢查（390 43/43）；四尺寸全套在背景跑：scratchpad/v4/H2/runall.sh → r2-*.log、r2-summary.log
+- [~] B e2e-duel #1a 加「同一條線、不轉角、露出 25–35%」檢查。第一次全跑：430×932 疊著上面空 32 px（直線沒有弧度撐高）→
+  疊著上限 128（≤牌桌封面 0.68）、roomy 牌桌封面上限 196（bb6aa1b96）→ 430 最大空帶 23、390 15。
+  教學：洞只框那一疊（stackRect，502daf694）。四尺寸全套重跑中：scratchpad/v4/H2/runall.sh → r2-*.log、r2-summary.log
 - [ ] C 截圖重拍（390×664@2、375×548、430×932）：疊著、攤開、浮起＋三顆鈕、剛丟出、教學第 2 手手指；看過修
 
 ## 進度（第一輪，扇形版）
