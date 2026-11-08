@@ -16,7 +16,14 @@
   'card:blocked:<a>'＝engine.blockedChoice 那張的封面（新）。'throw'、'act' 拿掉。
 - 教學：每手「說明（照舊）→ 點那張（手牌疊著時先指扇形；第一次泡泡寫「點一下手牌攤開。」）→ 點那個屬性（＝丟）→ 結算時講」。
 
-## 進度
+## 店主 17:1x 改：不要扇形，水平直線（像舊版新接龍）
+
+- 平時：5 張＋王牌在**同一條水平線**上往右錯開約 3 成寬（不轉角、不成弧形），露出每張封面左邊一條；不顯示星數。其他（攤開、浮起、屬性鈕、教學）不變。
+- [ ] A duel.js／duel.css：拿掉 FAN_ROT／FAN_ARC，class fan→stack，用語「扇形」→「疊成一排」（README、註解、e2e 記錄）
+- [ ] B e2e-duel #1a 加「同一條線、不轉角」檢查；四尺寸 e2e-duel、e2e.spec、e2e-prologue；單元測試
+- [ ] C 截圖重拍（390×664@2、375×548、430×932）：疊著、攤開、浮起＋三顆鈕、剛丟出、教學第 2 手手指；看過修
+
+## 進度（第一輪，扇形版）
 
 - [x] 1 duel.js／duel.css：扇形、攤開、浮起＋屬性鈕、拿掉星鈕列與丟！列、牌桌重排、尺寸（四尺寸不捲、沒有 >24 px 空帶）
 - [x] 2 教學：tutorial.js（runner：spread／lift／attr；DOM：扇形時先指扇形）、content.js C.tutorial.steps 文字、tutorial.test、check-content／lint-copy、規則卡頁尾第 1 行
