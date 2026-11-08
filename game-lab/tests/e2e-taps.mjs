@@ -56,8 +56,6 @@ async function runScreen(browser, w, h, screenName) {
     }
     await page.waitForFunction(() => window.__lab && window.__lab.stage && window.__lab.stage.shop && window.__lab.stage.shop.hotPoints, null, { timeout: 10000 });
     await install(page);
-    // 跟著人走的熱點（老闆）要停在固定位置才測得準：等他不在走
-    await page.waitForFunction(() => { const p = window.__lab.stage.shop.pos('o'); return !p || !window.__lab.stage.shop.state || true; }, null, { timeout: 2000 }).catch(() => {});
     const S = await stageInfo(page);
     const [hx, hy] = S.host;
 
