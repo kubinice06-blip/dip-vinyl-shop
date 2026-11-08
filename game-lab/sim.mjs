@@ -8,6 +8,9 @@
 //   --data    use another cards.js／bins.js（e.g. Y's worktree game-lab/）for the shop stock — calibrate against the bins before they are merged
 // Model (§5.2): first night = prologue man (no tutorial; bargain pick "one per colour, highest peak") → Fishmans + one of three prologue
 // relics (runPolicy) → 3 normals → 1 elite → boss, the owner pleads once (retry); shopPolicy(mode) before every guest.
+// FIXLIST 10（平衡 R1）加兩條：S9＝會讀的＋smart 一晚裡的客人場（一般／菁英／藏家）由 KO 結束（任一方聲望歸零）≥35%；
+//   HP＝聲望單調：一般客人的最大值 ≤ 菁英的最小值、菁英的最大值 ≤ 藏家（同一級可以不一樣，跨級不准倒掛；規則卡頁尾照級寫範圍）。
+//   報表另列 KO 分「你 KO 他／他 KO 你」與「第 6 手比聲望條」結束的比例，一晚裡分一般／菁英／藏家，單場表每位客人也列。
 // Any failed threshold sets process.exitCode = 1.
 import { createRequire } from 'module';
 import fs from 'fs';
@@ -53,6 +56,9 @@ const LABEL = { thoughtful: '會讀的', high: '只出最大星', counterHint: '
 const NORMALS = C.normals, ELITES = C.elites, BOSS = C.boss, MAN = C.prologueEnemy;
 const GUESTS = [...NORMALS, ...ELITES, BOSS];
 const nameOf = id => C.enemies[id].name;
+const CLASSES = ['normal', 'elite', 'boss'], CLASS_ZH = { normal: '一般', elite: '菁英', boss: '藏家' };
+const classOf = id => ELITES.includes(id) ? 'elite' : id === BOSS ? 'boss' : 'normal';
+const PLAN = C.plannerByDepth || EN.PLANNER_BY_DEPTH;   // S7 單場跟一晚用同一張表：一般客人 depth 0／1／2 各 1/3、菁英 3、藏家 4
 const pct = x => (100 * x).toFixed(1) + '%';
 const pt = x => (100 * x).toFixed(1);
 const t0 = Date.now();
@@ -103,7 +109,7 @@ function night(pol, mode, i) {
 }
 function nightCell(pol, mode, n) {
   const c = { clear: 0, died: {}, fights: 0, retriesUsed: 0, money: { earned: 0, spent: 0, end: 0 }, bought: 0, relicsBought: 0, boughtNights: 0,
-    g: { n: 0, hands: 0, le3: 0, max: 0, hist: [0, 0, 0, 0, 0, 0, 0], win: 0, byRounds: 0 }, man: { n: 0, win: 0, hands: 0 }, per: {} };
+    g: { n: 0, hands: 0, le3: 0, max: 0, hist: [0, 0, 0, 0, 0, 0, 0], win: 0, byRounds: 0, koP: 0, koE: 0, pile: 0 }, cls: {}, man: { n: 0, win: 0, hands: 0 }, per: {} };
   for (let i = 0; i < n; i++) {
     const r = night(pol, mode, i);
     if (r.cleared) c.clear++; else c.died[r.lostAt] = (c.died[r.lostAt] || 0) + 1;
@@ -114,12 +120,18 @@ function nightCell(pol, mode, n) {
     for (const f of r.fights) {
       if (f.id === MAN) { c.man.n++; c.man.hands += f.hands; if (f.win) c.man.win++; continue; }
       const G = c.g; G.n++; G.hands += f.hands; if (f.hands <= 3) G.le3++; G.max = Math.max(G.max, f.hands); G.hist[f.hands]++; if (f.win) G.win++; if (f.by === 'rounds') G.byRounds++;
+      if (f.by === 'hp') { if (f.win) G.koP++; else G.koE++; } if (f.by === 'pile') G.pile++;   // KO＝聲望歸零（同一手雙倒照聲望條算勝負，記在贏的那邊）
+      const K = c.cls[classOf(f.id)] || (c.cls[classOf(f.id)] = { n: 0, win: 0, hands: 0, koP: 0, koE: 0, rounds: 0 });
+      K.n++; K.hands += f.hands; if (f.win) K.win++; if (f.by === 'hp') { if (f.win) K.koP++; else K.koE++; } if (f.by === 'rounds') K.rounds++;
       const P = c.per[f.id] || (c.per[f.id] = { n: 0, win: 0, hands: 0, le3: 0 }); P.n++; P.hands += f.hands; if (f.win) P.win++; if (f.hands <= 3) P.le3++;
     }
   }
   const out = { n, clear: c.clear / n, died: c.died, fights: c.fights / n, retries: c.retriesUsed / n,
     earned: c.money.earned / n, spent: c.money.spent / n, moneyEnd: c.money.end / n, bought: c.bought / n, relicsBought: c.relicsBought / n, boughtNights: c.boughtNights / n,
-    guests: { fights: c.g.n, hands: c.g.hands / c.g.n, le3: c.g.le3 / c.g.n, max: c.g.max, hist: c.g.hist.slice(1).map(x => x / c.g.n), win: c.g.win / c.g.n, byRounds: c.g.byRounds / c.g.n },
+    guests: { fights: c.g.n, hands: c.g.hands / c.g.n, le3: c.g.le3 / c.g.n, max: c.g.max, hist: c.g.hist.slice(1).map(x => x / c.g.n), win: c.g.win / c.g.n, byRounds: c.g.byRounds / c.g.n,
+      ko: (c.g.koP + c.g.koE) / c.g.n, koP: c.g.koP / c.g.n, koE: c.g.koE / c.g.n, pile: c.g.pile / c.g.n },
+    cls: Object.fromEntries(CLASSES.filter(k => c.cls[k]).map(k => { const K = c.cls[k];
+      return [k, { n: K.n, win: K.win / K.n, hands: K.hands / K.n, ko: (K.koP + K.koE) / K.n, koP: K.koP / K.n, koE: K.koE / K.n, byRounds: K.rounds / K.n }]; })),
     man: { fights: c.man.n, win: c.man.win / c.man.n, hands: c.man.hands / c.man.n }, per: {} };
   for (const id in c.per) out.per[id] = { n: c.per[id].n, win: c.per[id].win / c.per[id].n, hands: c.per[id].hands / c.per[id].n, le3: c.per[id].le3 / c.per[id].n };
   return out;
@@ -133,7 +145,7 @@ function manFight(pol, i) {
   const f = EN.startFight(run, C, {});
   return play(f.duel, pol, EN.makeRng(EN.fnv1a32('man|' + pol + '|' + i)), {});
 }
-// S7：包包＝禮物 4＋特價箱 3（三色各一）＋Fishmans；序章配件 1 件（輪流）；一般客人 planner easy／easy／normal 各 1/3、菁英 normal、藏家 hard
+// S7：包包＝禮物 4＋特價箱 3（三色各一）＋Fishmans；序章配件 1 件（輪流）；出招照 C.plannerByDepth：一般客人 depth 0／1／2 各 1/3、菁英 depth 3、藏家 depth 4
 const PRO = C.rewards.prologueRelics.slice();
 function guestFight(pol, eKey, i) {
   const tier = TIERS[i % 3];
@@ -150,9 +162,12 @@ function guestFight(pol, eKey, i) {
   return play(duel, pol, EN.makeRng(EN.fnv1a32('g|' + pol + '|' + eKey + '|' + i)), {});
 }
 function fightCell(fn, n) {
-  let w = 0, h = 0, le3 = 0, le3w = 0, rounds = 0;
-  for (let i = 0; i < n; i++) { const d = fn(i); if (d.over.win) w++; h += d.stats.hands; if (d.stats.hands <= 3) { le3++; if (d.over.win) le3w++; } if (d.over.by === 'rounds') rounds++; }
-  return { n, win: w / n, hands: h / n, le3: le3 / n, le3win: le3w / n, rounds: rounds / n };
+  let w = 0, h = 0, le3 = 0, le3w = 0, rounds = 0, koP = 0, koE = 0;
+  for (let i = 0; i < n; i++) {
+    const d = fn(i); if (d.over.win) w++; h += d.stats.hands; if (d.stats.hands <= 3) { le3++; if (d.over.win) le3w++; } if (d.over.by === 'rounds') rounds++;
+    if (d.over.by === 'hp') { if (d.over.win) koP++; else koE++; }
+  }
+  return { n, win: w / n, hands: h / n, le3: le3 / n, le3win: le3w / n, rounds: rounds / n, ko: (koP + koE) / n, koP: koP / n, koE: koE / n };
 }
 
 // ---------------- run ----------------
@@ -185,6 +200,11 @@ if (MODE === 'all' || MODE === 'nights') {
   if (TS) {
     console.log(`\n會讀的＋smart：客人場手數分布 1–6 手 ${TS.guests.hist.map(pct).join('／')}，第 6 手比聲望結束 ${pct(TS.guests.byRounds)}；每位客人（夜裡遇到時）勝率：` +
       GUESTS.map(e => `${nameOf(e)} ${TS.per[e] ? pct(TS.per[e].win) + '（≤3 手 ' + pct(TS.per[e].le3) + '）' : '—'}`).join('、'));
+    const G = TS.guests;
+    console.log(`\n會讀的＋smart 客人場怎麼結束：KO ${pct(G.ko)}（你 KO 他 ${pct(G.koP)}／他 KO 你 ${pct(G.koE)}）、第 6 手比聲望條 ${pct(G.byRounds)}` +
+      (G.pile ? `、他牌出完 ${pct(G.pile)}` : '') + '；' +
+      CLASSES.filter(k => TS.cls[k]).map(k => { const K = TS.cls[k];
+        return `${CLASS_ZH[k]} 勝 ${pct(K.win)}、KO ${pct(K.ko)}（你 ${pct(K.koP)}／他 ${pct(K.koE)}）、比聲望條 ${pct(K.byRounds)}、${K.hands.toFixed(2)} 手`; }).join('；'));
     check('S1', '會讀的＋smart 一晚通關 70–85%', TS.clear >= 0.70 && TS.clear <= 0.85, pct(TS.clear));
     for (const p of ['high', 'counterHint', 'formula', 'mirrorHint']) if (nt.smart[p]) check('S2', `${LABEL[p]}＋smart 一晚通關 ≤ S1 − 15 點（≤${pct(TS.clear - 0.15)}）`, nt.smart[p].clear <= TS.clear - 0.15 + 1e-9, pct(nt.smart[p].clear));
     if (nt.smart.random) check('S3', '亂出 一晚通關 ≤5%', nt.smart.random.clear <= 0.05, pct(nt.smart.random.clear));
@@ -193,6 +213,8 @@ if (MODE === 'all' || MODE === 'nights') {
     check('S4', '最多 6 手', Math.max(...Object.values(nt).flatMap(m => Object.values(m).map(x => x.guests.max))) <= CFG.maxRounds,
       Math.max(...Object.values(nt).flatMap(m => Object.values(m).map(x => x.guests.max))));
     if (nt.smart.oracle) check('S8', '先知 一晚通關 ≥97%', nt.smart.oracle.clear >= 0.97, pct(nt.smart.oracle.clear));
+    check('S9', '會讀的＋smart 客人場由 KO 結束（任一方聲望歸零）≥35%', G.ko >= 0.35 - 1e-9,
+      `${pct(G.ko)}（你 KO 他 ${pct(G.koP)}／他 KO 你 ${pct(G.koE)}；比聲望條 ${pct(G.byRounds)}）`);
   }
   if (TS && TN) {
     check('S6', '會讀的 smart − none ≥ 5 點', TS.clear - TN.clear >= 0.05 - 1e-9, `${pt(TS.clear)} − ${pt(TN.clear)} = ${pt(TS.clear - TN.clear)} 點`);
@@ -218,7 +240,7 @@ if (MODE === 'all' || MODE === 'fights') {
   const gt = {};
   for (const pol of gPols) { gt[pol] = {}; for (const e of GUESTS) gt[pol][e] = fightCell(i => guestFight(pol, e, i), N); }
   report.fights = gt;
-  console.log(`\n### 單場（包包 8＝禮物 4＋特價箱 3＋Fishmans；序章配件 1 件；一般客人 planner easy／easy／normal 各 1/3、菁英 normal、藏家 hard；N=${N}／格）\n`);
+  console.log(`\n### 單場（包包 8＝禮物 4＋特價箱 3＋Fishmans；序章配件 1 件；一般客人 planner ${PLAN.slice(0, 3).join('／')} 各 1/3、菁英 ${PLAN[3]}、藏家 ${PLAN[4]}；N=${N}／格）\n`);
   const head = ['策略', ...GUESTS.map(e => `${nameOf(e)}（${C.enemies[e].hp}）`)];
   console.log('| ' + head.join(' | ') + ' |'); console.log('|' + head.map(() => '---').join('|') + '|');
   for (const pol of gPols) console.log('| ' + [LABEL[pol] || pol, ...GUESTS.map(e => pct(gt[pol][e].win))].join(' | ') + ' |');
@@ -226,6 +248,7 @@ if (MODE === 'all' || MODE === 'fights') {
     console.log('| 會讀的：平均手數 | ' + GUESTS.map(e => gt.thoughtful[e].hands.toFixed(2)).join(' | ') + ' |');
     console.log('| 會讀的：≤3 手（其中你贏） | ' + GUESTS.map(e => `${pct(gt.thoughtful[e].le3)}（${pct(gt.thoughtful[e].le3win)}）`).join(' | ') + ' |');
     console.log('| 會讀的：第 6 手比聲望 | ' + GUESTS.map(e => pct(gt.thoughtful[e].rounds)).join(' | ') + ' |');
+    console.log('| 會讀的：KO（你 KO 他／他 KO 你） | ' + GUESTS.map(e => `${pct(gt.thoughtful[e].ko)}（${pct(gt.thoughtful[e].koP)}／${pct(gt.thoughtful[e].koE)}）`).join(' | ') + ' |');
     const ws = NORMALS.map(e => gt.thoughtful[e].win), spread = Math.max(...ws) - Math.min(...ws);
     check('S7', '單場 會讀的：6 位一般客人最高減最低 ≤20 點', spread <= 0.20 + 1e-9, `${pt(Math.min(...ws))}–${pt(Math.max(...ws))}（${pt(spread)} 點）`);
     for (const e of ELITES) check('S7', `單場 會讀的：菁英 ${nameOf(e)} 60–95%`, gt.thoughtful[e].win >= 0.60 && gt.thoughtful[e].win <= 0.95, pct(gt.thoughtful[e].win));
@@ -233,7 +256,16 @@ if (MODE === 'all' || MODE === 'fights') {
   }
 }
 
-console.log('\n### 門檻（SPEC-v4 §5.2）');
+// HP：聲望單調（FIXLIST 10）——一般的最大 ≤ 菁英的最小、菁英的最大 ≤ 藏家；不靠模擬，每種 --mode 都檢查
+{
+  const hs = ids => ids.map(id => C.enemies[id].hp), hn = hs(NORMALS), he = hs(ELITES), hb = C.enemies[BOSS].hp;
+  const span = a => Math.min(...a) === Math.max(...a) ? String(a[0]) : Math.min(...a) + '–' + Math.max(...a);
+  report.hpOrder = { normal: [Math.min(...hn), Math.max(...hn)], elite: [Math.min(...he), Math.max(...he)], boss: hb };
+  check('HP', '聲望單調：一般最大 ≤ 菁英最小、菁英最大 ≤ 藏家', Math.max(...hn) <= Math.min(...he) && Math.max(...he) <= hb,
+    `一般 ${span(hn)}／菁英 ${span(he)}／藏家 ${hb}（你 ${CFG.playerHp}）`);
+}
+
+console.log('\n### 門檻（SPEC-v4 §5.2＋FIXLIST 10 的 S9／HP）');
 for (const c of checks) console.log((c.ok ? '  ok   ' : '  FAIL ') + c.id + ' ' + c.name + (c.info !== undefined ? '：' + c.info : ''));
 const failed = checks.filter(c => !c.ok);
 console.log(`\n${checks.length - failed.length}/${checks.length} 通過（${((Date.now() - t0) / 1000).toFixed(1)} 秒）`);
