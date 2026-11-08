@@ -184,6 +184,7 @@ let OWNER = { rules: [], lines: [] };
 try { OWNER = JSON.parse(read(path.join(HERE, 'owner-lines-v4.json'))); } catch (e) { err('tools/owner-lines-v4.json', '讀不了：' + e.message); }
 const OWNER_SET = new Set(OWNER.lines || []);
 const items = []; // { scene, where, who, key?, text, tag, raw? }
+const draftEdits = []; // 改過店主草稿的提示句 { id, from, to, key }（R-03／COPY-05）
 const add = it => items.push(it);
 const SCENE = { prologue: '序章（O1–O21）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
   bossEnter: '傳說藏家進門', clear: '打烊（通關）', dead: '散場', again: '再來一夜' };
@@ -194,7 +195,7 @@ const seenBeat = new Set();
 const seenExtra = new Set();
 const ORIG = read(path.join(ROOT, 'roguelike.html'));
 let OWNER_SET0 = new Set(); try { OWNER_SET0 = new Set(JSON.parse(read(path.join(HERE, 'owner-lines-v4.json'))).lines || []); } catch (_) {}
-const extraTag = t => ORIG && ORIG.includes(t) ? '原句' : OWNER_SET0.has(t) ? '店主' : '新';
+const extraTag = t => ORIG && ORIG.includes(t) ? '原句' : (OWNER_SET0.has(t) || [...OWNER_SET0].some(o => typeof o === 'string' && o.includes(t))) ? '店主' : '新';   // O7 的面板標題＝店主句的一段（COPY-18d）
 // Beat.text：字串，或 { hall, pearl, heresy }（依今晚那張；C.tonightLines）→ 展開成 [[tier|null, 字串]]
 const beatTexts = b => (b && b.text && typeof b.text === 'object') ? TIER_KEYS.map(t => [t, b.text[t]]) : [[null, b && b.text]];
 const flatTexts = b => beatTexts(b).map(x => x[1]).filter(x => typeof x === 'string');
@@ -289,6 +290,7 @@ for (const a of ['c', 'o', 'h']) {
     if (typeof h.key !== 'string' || !h.key || !h.text.includes(h.key)) err(where, 'key 要是句子的子字串：' + h.key);
     if (len(h.text) > 24) err(where, '提示句超過 24 字：' + h.text);
     add({ scene: '提示句（他這手的打算；揭曉後教「key 是哪一色」）', where, who: '（提示）', key: ATTR_ZH[a] + '・' + h.id + '・key「' + h.key + '」', text: h.text, tag: h.tag });
+    if (h.draft) { if (!OWNER_SET0.has(h.draft)) err(where, 'draft 要是 owner-lines-v4.json 裡的店主草稿原文：' + h.draft); draftEdits.push({ id: h.id, from: h.draft, to: h.text, key: h.key }); }
   });
 }
 for (const [a, ws] of Object.entries(C.hintKeywords || {})) (ws || []).forEach((w, k) => {
@@ -415,14 +417,25 @@ for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');
   add({ scene: '今晚來客・結算', where: 'summary.' + k, who: '（畫面字）', key: k, text: v, tag: C.summaryTag });
 }
-for (const x of shopLabels) add({ scene: '店內名牌（' + x.file + '）', where: x.file + x.where, who: '（畫面字）', text: x.s, tag: '新' });
+for (const x of shopLabels) if (!/\.note$/.test(x.where)) add({ scene: '店內名牌（' + x.file + '）', where: x.file + x.where, who: '（畫面字）', text: x.s, tag: '新' });   // *.note 是給開發看的註解、不上畫面（COPY-18b；禁用字照掃）
 if (C.secondNight) add({ scene: '第二夜預告', where: 'secondNight', who: '（畫面字）', text: C.secondNight.name + '（' + C.secondNight.title + '）／' + C.secondNight.label, tag: C.secondNight.tag });
+// 推薦語分組照這張卡真的出現在哪裡（COPY-18c：pitches.json 的 scene 是 v3 的分組，FEATURE 的卡被列在「老闆四張」）
+function pitchScene(id, p) {
+  const TZ = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
+  for (const t of Object.keys(C.aces || {})) if (C.aces[t] === id) return '王牌（' + (TZ[t] || t) + '）';
+  for (const t of Object.keys(C.gifts || {})) if ((C.gifts[t] || []).includes(id)) return '老闆四張・' + (TZ[t] || t);
+  if (((C.bargain || {}).pool || []).includes(id)) return '特價箱';
+  const en = Object.entries(C.enemies || {}).filter(([, e]) => (e.deck || []).includes(id)).map(([, e]) => e.name);
+  if (en.length) return '客人的唱片（' + en.join('、') + '）';
+  for (const [k, b] of Object.entries(C.bins || {})) if (((b && (b.pool || b.cards)) || []).includes(id)) return '店裡的箱子（' + (b.label || k) + '）';
+  return p.scene || '其他';
+}
 for (const [id, p] of Object.entries(pitches)) {
   if (id.startsWith('_')) continue;
   if (!TAG_OK(p.tag)) err('pitches.json#' + id, '沒有 tag');
   const card = CARDS[id];
   if (card && card.pitch !== p.text) err('pitches.json#' + id, 'cards.js 的 pitch 跟 pitches.json 不一致（重跑 bake-cards.mjs）');
-  add({ scene: '推薦語・' + (p.scene || '其他'), where: 'pitch#' + id, who: card ? card.artist + '《' + card.album + '》' : id, text: p.text, tag: p.tag });
+  add({ scene: '推薦語・' + pitchScene(id, p), where: 'pitch#' + id, who: card ? card.artist + '《' + card.album + '》' : id, text: p.text, tag: p.tag });
 }
 
 // 收集來的句子再掃一次 v3 舊系統字（資料欄位不一定在 content.js 原始碼的同一行，例如 pitches.json）
@@ -493,7 +506,8 @@ let ownerChecked = 0;
 for (const it of items) if (it.tag === '店主') {
   ownerChecked++;
   const t = it.raw || it.text;
-  if (!OWNER_SET.has(t)) err(it.where, '標成「店主」但 tools/owner-lines-v4.json 裡找不到一字不差的原文：' + t);
+  const part = it.ui && [...OWNER_SET].some(o => typeof o === 'string' && o.includes(t));   // 面板標題＝店主句的一段（O7「你覺得，現在播的是哪張？」）
+  if (!OWNER_SET.has(t) && !part) err(it.where, '標成「店主」但 tools/owner-lines-v4.json 裡找不到一字不差的原文：' + t);
 }
 
 // ---------------------------------------------------------------------------
@@ -517,6 +531,11 @@ let md = `# 台詞審稿：品味對決 v4（LINES-REVIEW）
 統計：原句 ${counts['原句']}、拍板 ${counts['拍板']}、店主 ${counts['店主']}、新 ${counts['新']}（同一句在有聲／安靜兩版序章只算一次）。
 
 `;
+if (draftEdits.length) {
+  md += `## 改過店主草稿的句子（等店主決定）\n\nD §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字（揭曉後結果句教「『關鍵字』是經典」），店主可以改回原文。\n\n| 提示 | 店主草稿（D §5） | 現在畫面上 | 關鍵字 |\n|---|---|---|---|\n`;
+  for (const d of draftEdits) md += `| ${d.id} | ${esc(d.from)} | ${esc(d.to)} | ${esc(d.key)} |\n`;
+  md += '\n';
+}
 for (const [scene, list] of byScene) {
   md += `## ${scene}\n\n| 說話者 | 句子 | 出處 | 位置 |\n|---|---|---|---|\n`;
   for (const it of list) md += `| ${esc(it.who)}${it.key ? '・' + esc(it.key) : ''} | ${esc(it.text)} | ${SRC[it.tag] || it.tag} | \`${it.where}\` |\n`;

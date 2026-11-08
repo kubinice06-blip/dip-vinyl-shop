@@ -1,17 +1,25 @@
 # 台詞審稿：品味對決 v4（LINES-REVIEW）
 
 > 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、名牌、提示、規則卡、教學）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
-> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（45 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（52 句）。全部一致才會產生這份。
+> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（45 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（66 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 52、新 292（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 66、新 272（同一句在有聲／安靜兩版序章只算一次）。
+
+## 改過店主草稿的句子（等店主決定）
+
+D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字（揭曉後結果句教「『關鍵字』是經典」），店主可以改回原文。
+
+| 提示 | 店主草稿（D §5） | 現在畫面上 | 關鍵字 |
+|---|---|---|---|
+| c1 | 「這張，你總聽過吧？」 | 「這張，大家都聽過吧？」 | 大家都聽過 |
+| c3 | 他哼起全場都會唱的那段副歌。 | 他哼起那段大家都會唱的副歌。 | 大家都會唱 |
 
 ## 序章（O1–O21）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字） | 你覺得，現在播的是哪張？ | 本規格新寫 | `script.prologue[7].prompt` |
 | （畫面字） | （挑三張。） | 本規格新寫 | `script.prologue[14].prompt` |
 
 ## 傳說藏家進門
@@ -133,20 +141,7 @@
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （提示）・經典・c1・key「大家都聽過」 | 「這張，大家都聽過吧？」 | 本規格新寫 | `hints.c[0]` |
-| （提示）・經典・c2・key「紀念版」 | 他抽出一張週年紀念版。 | 本規格新寫 | `hints.c[1]` |
 | （提示）・經典・c3・key「大家都會唱」 | 他哼起那段大家都會唱的副歌。 | 本規格新寫 | `hints.c[2]` |
-| （提示）・經典・c4・key「名盤」 | 他翻到「百大名盤」那一頁。 | 本規格新寫 | `hints.c[3]` |
-| （提示）・經典・c5・key「名盤」 | 他把那張名盤擦得發亮。 | 本規格新寫 | `hints.c[4]` |
-| （提示）・冷門・o1・key「沒聽過」 | 他嘴角藏著「你沒聽過吧」的笑。 | 本規格新寫 | `hints.o[0]` |
-| （提示）・冷門・o2・key「白版」 | 他從箱底挖出一張白版。 | 本規格新寫 | `hints.o[1]` |
-| （提示）・冷門・o3・key「只壓了三百張」 | 「這張只壓了三百張。」 | 本規格新寫 | `hints.o[2]` |
-| （提示）・冷門・o4・key「絕版」 | 他翻著一本手寫的絕版清單。 | 本規格新寫 | `hints.o[3]` |
-| （提示）・冷門・o5・key「查不到」 | 「這張，網路上查不到。」 | 本規格新寫 | `hints.o[4]` |
-| （提示）・硬蕊・h1・key「難懂」 | 他露出「越難懂越屌」的眼神。 | 本規格新寫 | `hints.h[0]` |
-| （提示）・硬蕊・h2・key「噪音」 | 他耳機漏出一陣刺耳的噪音。 | 本規格新寫 | `hints.h[1]` |
-| （提示）・硬蕊・h3・key「聽不懂」 | 「聽不懂？那就對了。」 | 本規格新寫 | `hints.h[2]` |
-| （提示）・硬蕊・h4・key「雜訊」 | 封套上只有一片雜訊。 | 本規格新寫 | `hints.h[3]` |
-| （提示）・硬蕊・h5・key「實驗」 | 他說，要聽就聽實驗的。 | 本規格新寫 | `hints.h[4]` |
 
 ## 一次性老闆小提示（第一次發生時，5 秒）
 
@@ -424,10 +419,6 @@
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字） | （本店） | 本規格新寫 | `shops/dip.json.district` |
-| （畫面字） | 斜俯視 3/4（店主 2026-11-07 選的路線 P2）：x＝寬、y＝地板前緣（越下越近）、高度直接往上減；不縮放。人＝16×16 小人 ×3（48 格＝1.70 m，28.2 格/m）；1 格≈1.336 CSS px（390 寬）。 | 本規格新寫 | `shops/dip.json.note` |
-| （畫面字） | pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給 | 本規格新寫 | `shops/dip.json.light.note` |
-| （畫面字） | 腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；behind＝{道具: [xa, xb]} 老闆站在它後面的口袋（地面那塊後面、x 在 xa–xb 的那一條；櫃檯整個寬＝spots.counter，唱盤台＝轉盤那一段 134–158＝ref），口袋兩側照畫出來的擋（別人不會從唱盤台上走過去）。避障＝這一份加 navMargin（margin 可以逐塊指定：中島兩側走道多留 3 格，人的手臂比腳寬，走在走道上不會被箱子邊切掉一塊）；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡） | 本規格新寫 | `shops/dip.json.footprints.note` |
-| （畫面字） | 唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片 | 本規格新寫 | `shops/dip.json.duel.note` |
 | （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[3].hot.label` |
 | （畫面字） | 店長推薦精選 | 本規格新寫 | `shops/dip.json.props[4].bin.label` |
 | （畫面字） | 店長推薦 | 本規格新寫 | `shops/dip.json.props[5].bin.label` |
@@ -448,7 +439,6 @@
 | （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[30].hot.label` |
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
 | （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
-| （畫面字） | 熟客：背對鏡頭翻後牆右邊的矮櫃（R-02／V06：原本站在門口牆 FEATURE 的站位前、會把你整個蓋掉，也會跟門邊等的客人疊在一起）；舞台 API 不動她 | 本規格新寫 | `shops/dip.json.actors[1].note` |
 
 ## 店內名牌（shops/taipei.json）
 
@@ -461,7 +451,6 @@
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[4].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[5].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[6].hot.label` |
-| （畫面字） | 示意地圖：只有本店開著；其他圖釘鎖住（v2 預告） | 本規格新寫 | `shops/taipei.json.meta.note` |
 
 ## 第二夜預告
 
@@ -469,18 +458,31 @@
 |---|---|---|---|
 | （畫面字） | 增值哥（對街潮流館）／第二夜（尚未開放） | 本規格新寫 | `secondNight` |
 
-## 推薦語・王牌
+## 推薦語・王牌（殿堂）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | Radiohead《OK Computer》 | 「九七年的焦慮，到現在還沒退流行。」 | 本規格新寫 | `pitch#radiohead-ok-computer` |
+
+## 推薦語・王牌（流亡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
 | Barney Wilen《Zodiac》 | 「六六年在巴黎錄的。全台灣大概沒幾張。」 | 本規格新寫 | `pitch#barney-wilen-zodiac` |
+
+## 推薦語・店裡的箱子（FEATURE）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Can《Ege Bamyasi》 | 「鼓手一個人就是一台機器。聽完你會想去學打鼓。」 | 本規格新寫 | `pitch#can-ege-bamyasi` |
+| Einstürzende Neubauten《Halber Mensch》 | 「他們的樂器有一半是工地撿來的。」 | 本規格新寫 | `pitch#einsturzende-neubauten-halber-mensch` |
+| Hermeto Pascoal《Zabumbê-bum-á》 | 「巴西的老頭，連水壺都拿來吹。這張我不太借人。」 | 本規格新寫 | `pitch#hermeto-pascoal-zabumbe-bum-a` |
+| 富樫雅彦《We Now Create - Music for Strings, Winds and Percussions》 | 「那個年代的日本，有人在錄這種東西。我手上就這一張。」 | 本規格新寫 | `pitch#富樫雅彦-we-now-create-music-for-strings-winds-and-percussions` |
 
 ## 推薦語・老闆四張・殿堂
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Can《Ege Bamyasi》 | 「鼓手一個人就是一台機器。聽完你會想去學打鼓。」 | 本規格新寫 | `pitch#can-ege-bamyasi` |
 | Beverly Glenn-Copeland《...Keyboard Fantasies...》 | 「八六年他自己出的卡帶。快三十年後，京都一家唱片行寫信來問還有沒有貨。」 | 本規格新寫 | `pitch#beverly-glenn-copeland-keyboard-fantasies` |
 
 ## 推薦語・老闆四張・流亡
@@ -497,7 +499,6 @@
 |---|---|---|---|
 | Melt-Banana《Speak Squeak Creak》 | 「東京的地下室，三分鐘裡塞了十首歌。」 | 本規格新寫 | `pitch#melt-banana-speak-squeak-creak` |
 | Pharoah Sanders《Tauhid》 | 「前面很安靜。後面不要被嚇到。」 | 本規格新寫 | `pitch#pharoah-sanders-tauhid` |
-| Einstürzende Neubauten《Halber Mensch》 | 「他們的樂器有一半是工地撿來的。」 | 本規格新寫 | `pitch#einsturzende-neubauten-halber-mensch` |
 | Magma《Mëkanïk Dëstruktïw Kömmandöh》 | 「法國的鼓手自創了一種語言，整張都用它來唱。」 | 本規格新寫 | `pitch#magma-mekanik-destruktiw-kommandoh` |
 
 ## 推薦語・特價箱
@@ -514,15 +515,18 @@
 | Weezer《Van Weezer》 | 「學八〇年代的長髮金屬，學得很認真。」 | 本規格新寫 | `pitch#weezer-van-weezer` |
 | Ramones《Halfway to Sanity》 | 「第十張了，還是那三個和弦。」 | 本規格新寫 | `pitch#ramones-halfway-to-sanity` |
 
-## 推薦語・店主私藏（金邊）
+## 推薦語・客人的唱片（二手店老闆）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | Barney Wilen《Moshi》 | 「七〇年他跟著拍片的人去了非洲，回來就做了這張。」 | 本規格新寫 | `pitch#barney-wilen-moshi` |
-| John Zorn《Cobra》 | 「照一套遊戲規則即興出來的。跟你們今晚在做的事，差不多。」 | 本規格新寫 | `pitch#john-zorn-cobra` |
-| Hermeto Pascoal《Zabumbê-bum-á》 | 「巴西的老頭，連水壺都拿來吹。這張我不太借人。」 | 本規格新寫 | `pitch#hermeto-pascoal-zabumbe-bum-a` |
 | Tony Scott & The Indonesian All Stars《Djanger Bali》 | 「印尼的樂手配一支美國單簧管。這張我找了好幾年。」 | 本規格新寫 | `pitch#tony-scott-the-indonesian-all-stars-djanger-bali` |
-| 富樫雅彦《We Now Create - Music for Strings, Winds and Percussions》 | 「那個年代的日本，有人在錄這種東西。我手上就這一張。」 | 本規格新寫 | `pitch#富樫雅彦-we-now-create-music-for-strings-winds-and-percussions` |
+
+## 推薦語・客人的唱片（音響發燒友）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| John Zorn《Cobra》 | 「照一套遊戲規則即興出來的。跟你們今晚在做的事，差不多。」 | 本規格新寫 | `pitch#john-zorn-cobra` |
 
 ## 原句、拍板、店主（已逐字比對，列出供對照）
 
@@ -539,6 +543,7 @@
 | 店主 | 鼓和貝斯不照拍子走，像在跟它鬥嘴。 | `script.prologue[5].pearl` |
 | 店主 | 低音一直磨同一個音，一個男聲在吼，聽不出在唱什麼。 | `script.prologue[5].heresy` |
 | 原句 | 你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。 | `script.prologue[6]` |
+| 店主 | 你覺得，現在播的是哪張？ | `script.prologue[7].prompt` |
 | 店主 | 「這三張，是我這裡最貴的三張。」他沒抬頭。「你覺得，現在播的是哪張？」 | `script.prologue[7]` |
 | 原句 | 「……你眼光真不錯。」老闆終於抬起頭來，看著你。 | `script.prologue[8]` |
 | 店主 | 「可惜啊。」老闆終於抬起頭來，看著你。 | `script.prologue[9]` |
@@ -602,6 +607,19 @@
 | 店主 | 史詩 | `rarityZh.epic` |
 | 店主 | 傳奇 | `rarityZh.legendary` |
 | 店主 | 頂點 | `rarityZh.apex` |
+| 店主 | 他抽出一張週年紀念版。 | `hints.c[1]` |
+| 店主 | 他翻到「百大名盤」那一頁。 | `hints.c[3]` |
+| 店主 | 他把那張名盤擦得發亮。 | `hints.c[4]` |
+| 店主 | 他嘴角藏著「你沒聽過吧」的笑。 | `hints.o[0]` |
+| 店主 | 他從箱底挖出一張白版。 | `hints.o[1]` |
+| 店主 | 「這張只壓了三百張。」 | `hints.o[2]` |
+| 店主 | 他翻著一本手寫的絕版清單。 | `hints.o[3]` |
+| 店主 | 「這張，網路上查不到。」 | `hints.o[4]` |
+| 店主 | 他露出「越難懂越屌」的眼神。 | `hints.h[0]` |
+| 店主 | 他耳機漏出一陣刺耳的噪音。 | `hints.h[1]` |
+| 店主 | 「聽不懂？那就對了。」 | `hints.h[2]` |
+| 店主 | 封套上只有一片雜訊。 | `hints.h[3]` |
+| 店主 | 他說，要聽就聽實驗的。 | `hints.h[4]` |
 | 店主 | 名盤 | `hintKeywords.c[0]` |
 | 店主 | 紀念版 | `hintKeywords.c[1]` |
 | 店主 | 大家都聽過 | `hintKeywords.c[2]` |
