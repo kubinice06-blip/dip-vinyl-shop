@@ -64,6 +64,7 @@
 .ec-buy{min-height:44px;min-width:112px;margin-top:auto;}
 .ec-poor{display:flex;flex-direction:column;align-items:center;line-height:1.2;}
 .ec-poor small{font:700 11px var(--mono,'Space Mono',monospace);opacity:.9;margin-top:1px;}
+.ec-sf small{font:400 11px var(--zh,sans-serif);letter-spacing:.04em;}
 .ec-strip{display:flex;align-items:center;gap:4px;}
 .ec-nav{flex:none;width:44px;height:44px;font:700 22px/44px var(--mono,'Space Mono',monospace);text-align:center;border:1px solid var(--line,#ddd) !important;}
 .ec-nav:active{background:#f2f2f2;}
