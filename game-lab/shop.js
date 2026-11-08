@@ -1932,12 +1932,40 @@
       if (view.height !== bh) view.height = bh;
       var cssW = bw / dpr, cssH = bh / dpr;
       view.style.width = cssW + 'px'; view.style.height = cssH + 'px';
-      if (opts.sizeHost !== false) host.style.height = cssH + 'px';
       overlay.style.width = cssW + 'px'; overlay.style.height = cssH + 'px';
       overlay.style.left = Math.round((hostW - cssW) / 2) + 'px'; overlay.style.top = '0px';
       host.style.setProperty('--ds-scale', scale);
       render();
+      var ex = fitExt(cssW, cssH);
+      if (opts.sizeHost !== false) host.style.height = (cssH + ex) + 'px';
       layoutOverlay();
+    }
+    // 地板往下延伸（V03：高螢幕上店景已經整面寬、不能再大，鏡頭看到店的最下面時，剩下的高接著畫木地板，不在店景下面留白）。
+    //   extCss＝要延伸幾 CSS px（外殼量完面板的空位再給，0＝不延伸）；同一套 bg 道具（地板、後牆左右收邊）照同一個種子往下畫，打光照店景最下面那一列
+    var ext = null, extCss = 0;
+    function fitExt(cssW, cssH) {
+      var px = (vy + vh >= H && extCss > 0) ? Math.round(extCss) : 0;
+      if (!px) { if (ext) ext.style.display = 'none'; return 0; }
+      if (!ext) { ext = document.createElement('canvas'); ext.className = 'ds-floorx'; ext.setAttribute('aria-hidden', 'true'); host.insertBefore(ext, overlay); }
+      var dpr = dprNow(), eh = Math.max(1, Math.round(px * dpr)), rows = Math.ceil(eh / k) + 1;
+      if (ext.width !== bw) ext.width = bw;
+      if (ext.height !== eh) ext.height = eh;
+      ext.style.cssText = 'display:block;position:absolute;left:' + overlay.style.left + ';top:' + cssH + 'px;width:' + cssW + 'px;height:' + px + 'px;pointer-events:none';
+      var c = ext.getContext('2d');
+      c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.globalCompositeOperation = 'source-over'; c.imageSmoothingEnabled = false;
+      c.fillStyle = '#1a120c'; c.fillRect(0, 0, bw, eh);
+      var L2 = Object.create(L); L2.size = [W, H + rows]; L2.extFrom = H;
+      var S2 = Object.create(S); S2.L = L2; S2.layout = L2; S2.H = H + rows;
+      withTarget(c, 0, H, function () {
+        T.used = null;
+        (L.props || []).forEach(function (o) { var sp = OP[o.type]; if (!o.hidden && sp && sp.draw && layerOf(o) === 'bg') { try { sp.draw(P, o, S2); } catch (e) { console.error(e); } } });
+      });
+      if (cache && cache.mul && !(L.light || {}).off) {
+        var my = cache.mul.height - 1;
+        c.save(); c.globalCompositeOperation = 'multiply'; c.drawImage(cache.mul, 0, my, cache.mul.width, 1, 0, 0, bw, eh);
+        c.globalCompositeOperation = 'screen'; c.drawImage(cache.scr, 0, my, cache.scr.width, 1, 0, 0, bw, eh); c.restore();
+      }
+      return px;
     }
     function setView(v) { if (v.y != null) cam.y = v.y; if (v.h != null) cam.h = v.h; if (v.dev !== undefined) cam.dev = v.dev; fit(); }
     var tween = null;
@@ -2287,7 +2315,9 @@
       },
       setView: function (v) { if (tween) { tween.cancel = true; var r = tween.res; tween = null; if (r) r(); } setView(v); return api; },
       tweenView: tweenView,
-      view: function () { return { y: vy, h: vh, x: 0, w: W, scale: scale, dev: k, baseDev: baseDev(), dpr: dprNow() }; },
+      view: function () { return { y: vy, h: vh, x: 0, w: W, scale: scale, dev: k, baseDev: baseDev(), dpr: dprNow(), ext: (vy + vh >= H && extCss > 0) ? Math.round(extCss) : 0 }; },
+      // 地板往下延伸幾 CSS px（V03；鏡頭看到店的最下面時才畫）；回現在畫出來的
+      floorExt: function (px) { px = Math.max(0, Math.round(+px || 0)); if (px !== extCss) { extCss = px; fit(); } return (vy + vh >= H && extCss > 0) ? extCss : 0; },
       camera: function (name) { var c = (L.cameras || {})[name]; if (c) api.setView({ y: c.y, h: c.h, dev: null }); return api; },
       // 看得到的排前面（矮螢幕鏡頭從牆頂裁掉一截時，先給畫面裡點得到的）；同一級照 layout 的順序
       hotspots: function () {

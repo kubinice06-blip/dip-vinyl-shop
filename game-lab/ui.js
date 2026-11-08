@@ -483,6 +483,7 @@
     var p = UI.panel; p.className = 'lb-panel'; p.removeAttribute('style'); p.innerHTML = '';
     var f = FX(); if (f && f.rainStop && id !== 'title' && id !== 'scene') try { f.rainStop(); } catch (_) {}
     try { SCREENS[id](UI.params); } catch (e) { console.error(e); }
+    floorSoon();
     UI.camQuick = false;
     if (UI.auto && UI.auto.until === id) UI.auto = null;
   }
@@ -2241,6 +2242,29 @@
     UI.panel = el('div', 'lb-panel'); UI.panel.id = 'panel';
     a.appendChild(UI.top); a.appendChild(UI.stageHost); a.appendChild(UI.panel);
     bindInfoTaps(UI.panel);
+    // V03：面板（與裡面的對白框、包包條）高度一變就重算店景下面要不要接木地板
+    try { UI.floorRO = new ResizeObserver(function () { floorSoon(); }); UI.floorRO.observe(UI.panel); } catch (_) {}
+    W.addEventListener('resize', floorSoon);
+  }
+  // V03：高螢幕的序章／尾聲（scene）——店景在寬度上已經是整間店，不能再大；面板照內容高之後下面剩的空白，
+  //   改成店裡的木地板往下延伸（舞台變高、對白框與包包條緊接在地板下面），不留一大片白。其他畫面一律不延伸。
+  function floorSoon() { if (UI.floorRaf) return; UI.floorRaf = requestAnimationFrame(function () { UI.floorRaf = 0; fitFloor(); }); }
+  function fitFloor() {
+    var st = UI.stage; if (!st || typeof st.floorExt !== 'function') return;
+    var cur = UI.floorX || 0;
+    if (UI.screen !== 'scene' || !UI.panel) { if (cur) { UI.floorX = 0; st.floorExt(0); } return; }
+    var p = UI.panel, pr = p.getBoundingClientRect(); if (!pr.height) return;
+    var cs = getComputedStyle(p), need = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0) + 10;   // 包包條下面留 10 px
+    for (var i = 0; i < p.children.length; i++) {
+      var c = p.children[i], cc = getComputedStyle(c);
+      if (cc.position === 'absolute' || cc.position === 'fixed' || cc.display === 'none') continue;
+      if (UI.floorRO && !c.__floorObs) { try { UI.floorRO.observe(c); c.__floorObs = true; } catch (_) {} }
+      need += c.getBoundingClientRect().height + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);
+    }
+    var want = Math.max(0, Math.floor(cur + pr.height - need));
+    if (want < 24) want = 0;                         // 一點點的空不值得接地板
+    if (Math.abs(want - cur) < 2) return;
+    UI.floorX = st.floorExt(want);
   }
   function mountStage() {
     if (!W.DipLabStage || !W.DipLabStage.mount) return Promise.resolve(null);

@@ -21,7 +21,7 @@
 - [x] 1 duel.js／duel.css：扇形、攤開、浮起＋屬性鈕、拿掉星鈕列與丟！列、牌桌重排、尺寸（四尺寸不捲、沒有 >24 px 空帶）
 - [x] 2 教學：tutorial.js（runner：spread／lift／attr；DOM：扇形時先指扇形）、content.js C.tutorial.steps 文字、tutorial.test、check-content／lint-copy、規則卡頁尾第 1 行
 - [ ] 3 e2e：e2e-duel、e2e.spec、e2e-lib walkTutorial、e2e-prologue；四尺寸
-- [ ] 4 V03：430×932 序章／尾聲店景下面的白帶
+- [x] 4 V03：430×932 序章／尾聲店景下面的白帶
 - [ ] 5 截圖（390×664@2＋375×548＋430×932）：扇形、攤開、浮起＋三顆鈕、剛丟出（揭曉）、教學第 2 手手指
 
 ## 記錄
@@ -41,3 +41,8 @@
   duel.js：「點一張專輯」改成屬性鈕位置的虛線框（攤開時不留空帶）；preview(attr) API。
   e2e-lib：HIT_PT／hitPoint（扇形時點真的點得到的那一點）給 tapAt／longPress；walkTutorial 走「點扇形 → 點那張 → 點屬性」，#20 第 1 手攤開後點別張、第 2 手點別色屬性鈕。
   e2e-duel：#1a 扇形／#1b 攤開／#1c 浮起（版面、空帶 ≤26）、#2–#4 改新流程、liftIt／quickPlay。四尺寸 43＋97＝140/140 PASS。e2e.spec #19／#20（390）4/4 PASS。
+- 步驟 4（V03）：shop.js（O34）fitExt：鏡頭看到店的最下面（vy＋vh＝H）且外殼給了 extCss 時，在畫布下面多一張 .ds-floorx，
+  用同一套 bg 道具（地板、後牆左右收邊）照同一個種子往下畫（L2.size＝H＋rows、L2.extFrom＝H），打光照店景最下面那一列（乘＋濾色）；
+  shop-props floor 的「磨亮」那幾塊碰到原本底邊的跟著往下接。API：shop.floorExt(px)／DipLabStage.floorExt(px)、view().ext。
+  ui.js fitFloor：只有 scene 畫面；面板高 − 內容高（對白框＋包包條＋10 px）≥24 就接地板（舞台變高、面板照內容高）；ResizeObserver 看面板與子元素、resize、go() 都重算；換畫面歸零。
+  430×932 序章：店景 474 → 舞台 646（接 172 px 地板），對白框 [696,872]、包包條緊接在下；390×664 等矮螢幕面板沒有空（對白框撐滿）→ 不接。README 補一句。

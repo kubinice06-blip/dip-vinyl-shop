@@ -7,6 +7,7 @@
  *
  *   Stage.load(shopId) → Promise              換一家店（台北地圖預告）；同一個 host
  *   Stage.camera(name, { ms, screen, panelMin }) → Promise ; Stage.camCssH(name, o) → 這個鏡頭現在的舞台 CSS 高（strip 的 grow：高螢幕往上長）
+ *   Stage.floorExt(px) → 店景下面接著畫幾 CSS px 木地板（V03；鏡頭看到店的最下面時才畫；回畫出來的）
  *       整數場景像素插值；同步設定 host 高度；ms 0＝直接切；strip 在可視高 <600 自動換 stripS；
  *       full／reward 有矮螢幕規則（從牆頂往下裁到 minH，再不夠才降倍率）；prefers-reduced-motion＝150 ms 淡入淡出
  *   Stage.put(id, spot | [x,y,outside], sprite?) ; walk(id, spots[], speed?) → Promise ; hide(id,on) ; sil(id,on) ; sprite(id,spr)
@@ -735,6 +736,8 @@
       spot: function (name) { var s = (L.spots || {})[name]; return s ? s.slice() : null; },
       view: function () { return shop.view(); },
       camCssH: function (name, o) { return camCssH(name, o); },
+      // 地板往下延伸幾 CSS px（V03：高螢幕序章，店景下面不留白；鏡頭看到店的最下面時才畫）→ 回畫出來的
+      floorExt: function (px) { return shop && typeof shop.floorExt === 'function' ? shop.floorExt(px) : 0; },
       cssOf: function (x, y) { return shop.hostCss(x, y); },
       bump: function () { shop.bump(); return stage; },
       // ---- 進／出對決的舞台部分（SPEC-v2 §3.7，選用；「！」與黑條由 fx.encounterFx 負責，這裡只管走位與鏡頭，兩者同時跑）
