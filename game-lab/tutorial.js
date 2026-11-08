@@ -414,6 +414,13 @@
     }
     return r;
   }
+  // 疊著的手牌整疊的外框（洞只框那一疊，不框整個手牌區的空白；點那一疊＝攤開）
+  function stackRect() {
+    var D = Duel(), h = D && D.el ? D.el('hand') : null; if (!h) return null;
+    var u = null;
+    [].forEach.call(h.querySelectorAll('.tile:not(.gone)'), function (t) { var r = rectOf(t); if (r) u = u ? union(u, r) : r; });
+    return u;
+  }
   // 疊著的手牌裡某一張露出來的那一條：從這張左緣到下一張（蓋在上面）左緣
   function stripRect(t) {
     var tile = t && t.closest ? t.closest('.tile') : null; if (!tile) return null;
@@ -521,7 +528,7 @@
   function holesFor(sh) {
     var rs = [], look = sh.look || [];
     (sh.targets || []).concat(look.filter(function (n) { return (sh.targets || []).indexOf(n) < 0; })).forEach(function (n) {
-      var r = visRect(resolveTarget(n)); if (!r) return;
+      var r = (n === 'hand' && sh.stacked && stackRect()) || visRect(resolveTarget(n)); if (!r) return;
       r = pad(r, sh.pad == null ? PAD : sh.pad);
       r.look = look.indexOf(n) >= 0 && (sh.targets || []).indexOf(n) < 0;
       rs.push(r);
