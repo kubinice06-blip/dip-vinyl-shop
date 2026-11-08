@@ -8,10 +8,11 @@ LINES-REVIEW.md、dev/decks-v4.md、dev/sim-v4.json、dev/notes-X.md。
 
 ## 進度（容器會重啟：每步做完就更新這裡＋commit）
 
-- [ ] 1. FIXLIST 2：拿掉王牌不會被剋（clash、duelText、規則卡第 6 行、owner-lines、lint、教學資料）
-- [ ] 2. FIXLIST 3：六手比聲望條剩幾成（一個函式）
-- [ ] 3. FIXLIST 6：客人名字、拿掉 title／誠實度標籤
-- [ ] 4. FIXLIST 8＋契約：稀有度、價格、特價箱每張、配件 3000、每晚上貨（含 new／picks／feature）
+- [x] 1. FIXLIST 2：拿掉王牌不會被剋（clash、duelText、規則卡第 6 行、owner-lines、lint、教學資料）
+- [x] 2. FIXLIST 3：六手比聲望條剩幾成（一個函式 engine.playerAhead）
+- [x] 3. FIXLIST 6：客人名字、拿掉 title／誠實度標籤
+- [x] 4. FIXLIST 8＋契約：稀有度、價格、特價箱每張、配件 3000、每晚上貨（含 new／picks／feature）
+      （engine.test --quick 全過、check-content、lint-copy 過；commit「步驟 1–4」）
 - [ ] 5. sim 重調（聲望、獎金、開局錢）→ content.js、decks-v4.md、sim-v4.json
 - [ ] 6. 全綠、commit
 

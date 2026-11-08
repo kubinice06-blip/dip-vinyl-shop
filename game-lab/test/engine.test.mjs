@@ -2,11 +2,13 @@
 //   node game-lab/test/engine.test.mjs [--quick]
 // Exits 1 on any failure.  Uses the real content.js (cards.js, bins.js).
 //   第一波：A3 還沒烘 v4 的新卡（cards.js 沒有的卡）時，用下面 STUB 表的星數補一張只有星數的假卡（只在測試裡）；
-//   bins.js 還沒有時用 cards.js 裡沒被用到的卡湊幾個假箱子。烘好之後 STUB 用不到，#14 會順便比對 STUB 跟真卡的星數一致。
+//   烘好之後 STUB 用不到，#14 會順便比對 STUB 跟真卡的星數一致。
+//   箱子（FIXLIST 4／5／8＋X／Y 契約）：bins.js 還不是契約形狀（沒有 feature 那一區；Y 還沒交）時，用 contractBins() 做一份契約形狀的假箱子
+//   （十一個分類＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
 import { createRequire } from 'module';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { shapeProblems } from '../tools/check-content.mjs';
+import { shapeProblems, binsProblems } from '../tools/check-content.mjs';
 const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const EN = require(path.join(HERE, '../engine.js'));
@@ -45,14 +47,38 @@ for (const [id, s] of Object.entries(STUB)) if (!CARDS[id]) { stubbed++; CARDS[i
 // 引用到的卡（箱子以外）
 const USED = new Set([...Object.values(C0.aces), ...Object.values(C0.gifts).flat(), ...C0.bargain.pool,
   ...Object.values(C0.enemies).flatMap(e => e.deck.concat(e.drop ? [e.drop] : []))]);
-let BINS = C0.bins, fakeBins = false;
-if (!Object.keys(BINS).length) {
-  fakeBins = true;
-  const free = Object.keys(CARDS).filter(id => !USED.has(id) && !CARDS[id].tier && !CARDS[id].stub).sort();
-  BINS = {};
-  ['jazz', 'noise', 'tw', 'rock'].forEach((k, n) => { const pool = free.slice(n * 6, n * 6 + 6); if (pool.length >= 4) BINS[k] = { rule: {}, pool }; });
-  BINS.wallA = { rule: {}, display: true, pool: free.slice(-4) };
+// X／Y 契約的箱子：鍵、英文名牌、中文名
+const CATS = ['jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues'];
+const LABEL = { jazz: ['JAZZ', '爵士'], tw: ['TW', '台灣'], rock: ['ROCK', '搖滾'], elec: ['ELEC', '電子'], soul: ['SOUL', '靈魂放克'], hiphop: ['HIP-HOP', '嘻哈 R&B'],
+  pop: ['POP', '流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'], blues: ['BLUES', '藍調'], new: ['NEW', '新進'],
+  feature: ['FEATURE', '店長推薦精選'], picks: ['PICKS', '店長推薦'] };
+const BIN_KEYS = [...CATS, 'new', 'feature', 'picks'];
+function contractBins() {
+  const B = {}; for (const k of BIN_KEYS) B[k] = { key: k, label: LABEL[k][0], zh: LABEL[k][1], pool: [], front: [] };
+  const GENRE = { elec: 'electronic' };
+  const shelf = [], top = [];
+  for (const id of Object.keys(CARDS).sort()) {
+    const c = CARDS[id];
+    if (c.tier || c.stub || C0.bargain.pool.includes(id)) continue;
+    const r = EN.rarity(c), k = EN.categoryOf(c);
+    if (r === 'epic' || r === 'legendary') { top.push(id); continue; }
+    if (k && B[k]) B[k].pool.push(id);
+    shelf.push(id);
+  }
+  // 每個分類補到 ≥7 張（fx-* 假卡；三軸輪流當主軸、普通／稀有／獨特都有）
+  const STARS = [[1, 5, 1], [5, 1, 1], [1, 1, 5], [2, 4, 3], [4, 2, 1], [1, 3, 5], [3, 5, 3]];
+  let n = 0;
+  const mk = (genre, region, st) => { const id = 'fx-' + (n++); CARDS[id] = { id, artist: id, album: id, c: st[0], o: st[1], h: st[2], tier: null, genres: [genre], region, fixture: true }; return id; };
+  for (const k of CATS) for (let i = 0; B[k].pool.length < 7; i++) B[k].pool.push(mk(k === 'tw' ? 'rock' : (GENRE[k] || k), k === 'tw' ? 'tw' : 'xx', STARS[i % STARS.length]));
+  // 新進、店長推薦：不限曲風（跟分類箱的 pool 有重疊，上貨時全店不重複）；FEATURE：史詩＋傳奇
+  B.new.pool = shelf.filter((id, k) => k % 3 === 0).concat([mk('pop', 'xx', [5, 2, 1]), mk('rock', 'xx', [1, 4, 4])]);
+  B.picks.pool = shelf.filter((id, k) => k % 3 === 1).concat([mk('jazz', 'xx', [2, 5, 2]), mk('folk', 'xx', [1, 2, 5])]);
+  B.feature.pool = top.slice();
+  for (const k of BIN_KEYS) B[k].front = B[k].pool.slice(0, 4);
+  return B;
 }
+let BINS = C0.bins, fakeBins = false;
+if (!BINS.feature) { fakeBins = true; BINS = contractBins(); }
 const C = Object.assign({}, C0, { cards: CARDS, bins: BINS });
 
 // ---------------- helpers ----------------
@@ -278,9 +304,19 @@ section('5 規則抽查', () => {
   eq(X('o', 3, 'c', 4), { kind: 'counter', toE: 3, toP: 0, blocked: null, by: 'p' }, '冷 3 剋經 4 → counter 3');
   eq(X('c', 5, 'c', 3), { kind: 'mirrorWin', toE: 2, toP: 0, blocked: null, by: null }, '同色 5 比 3 → 他 −2');
   eq(X('h', 3, 'h', 3), { kind: 'tie', toE: 0, toP: 0, blocked: null, by: null }, '同色同星 → tie');
-  eq(X('o', 5, 'c', 7, false, true), { kind: 'mirrorLose', toE: 0, toP: 2, blocked: 'ace', by: 'p' }, '他王牌經 7 被你冷 5 剋 → 王牌不會被剋、你 −2');
-  eq(X('h', 7, 'c', 2, true, false), { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'ace', by: 'e' }, '你王牌硬 7 被他經 2 剋 → 王牌不會被剋、他 −5');
-  eq(X('c', 7, 'o', 7, true, true).kind, 'tie', '王牌對王牌不同色 → tie');
+  // FIXLIST 2：王牌沒有「不會被剋」，只是 7 星：照三相剋＋差 2 星門檻
+  eq(X('o', 5, 'c', 7, false, true), { kind: 'mirrorLose', toE: 0, toP: 2, blocked: 'gap', by: 'p' }, '他王牌經 7 被你冷 5 剋 → 差 2 星剋不動、你 −2');
+  eq(X('o', 6, 'c', 7, false, true), { kind: 'counter', toE: 6, toP: 0, blocked: null, by: 'p' }, '他王牌經 7 被你冷 6（加成）剋 → 差 1 星剋得動、他 −6');
+  eq(X('h', 7, 'c', 2, true, false), { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'gap', by: 'e' }, '你王牌硬 7 被他經 2 剋 → 他剋不動、他 −5');
+  eq(X('h', 7, 'c', 6, true, false), { kind: 'countered', toE: 0, toP: 6, blocked: null, by: 'e' }, '你王牌硬 7 被他經 6 剋 → 被剋 6');
+  eq(X('c', 7, 'o', 7, true, true), { kind: 'countered', toE: 0, toP: 7, blocked: null, by: 'e' }, '王牌對王牌：他冷 7 剋你經 7 → 被剋 7');
+  eq(X('o', 7, 'c', 7, true, true), { kind: 'counter', toE: 7, toP: 0, blocked: null, by: 'p' }, '王牌對王牌：你冷 7 剋他經 7 → 他 −7');
+  eq(X('h', 7, 'h', 7, true, true).kind, 'tie', '王牌對王牌同色 → tie');
+  for (let a = 1; a <= 7; a++) for (let b = 1; b <= 7; b++) for (const pa of ATTRS) for (const ea of ATTRS) for (const fl of [[false, false], [true, false], [false, true], [true, true]]) {
+    const r1 = X(pa, a, ea, b, fl[0], fl[1]), r0 = X(pa, a, ea, b);
+    if (JSON.stringify(r1) !== JSON.stringify(r0)) ok(false, 'ace flag never changes the clash', { pa, a, ea, b, fl }); else pass++;
+    if (r1.blocked === 'ace') ok(false, 'no blocked:ace');
+  }
   eq(X('c', 5, 'o', 3), { kind: 'mirrorWin', toE: 2, toP: 0, blocked: 'gap', by: 'e' }, '他冷 3 剋你經 5 → 他剋不動、比星他 −2');
   eq(X('c', 4, 'o', 3), { kind: 'countered', toE: 0, toP: 3, blocked: null, by: 'e' }, '他冷 3 剋你經 4 → 被剋 3');
   eq(X('o', 2, 'c', 4).blocked, 'gap', '差剛好 2 → 剋不動');
@@ -330,8 +366,12 @@ function rig(relics, pCards, eCards, o = {}) {
   return EN.startDuel(pDef, eDef, { seed: 7, script: { plays: eCards.map((c, k) => ({ id: c.id, attr: eAttrs[k] })), hints: eAttrs.map(a => a + '1'), hand: pCards.slice(0, 3).map(c => c.id), draw: pCards.slice(3).map(c => c.id) } }).duel;
 }
 
-// 六手比的是剩下的聲望（§2.1.5：win = P.hp >= E.hp，絕對值）；這裡讓他也從 10 開始，tie 六手才是「平手算你贏」
-section('6 六手上限：tie 六手 → rounds、你贏；落後一手再 tie → 你輸；牌出完 → pile', () => {
+// 六手比的是聲望條剩幾成（FIXLIST 3：hp÷max，一樣算你贏；engine.playerAhead 一個函式）
+section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一手再 tie → 你輸；牌出完 → pile；兩邊都 ≤0 也照比例', () => {
+  // playerAhead：交叉相乘、一樣算你贏
+  ok(EN.playerAhead(10, 10, 18, 18) && EN.playerAhead(5, 10, 9, 18) && EN.playerAhead(6, 10, 9, 18) && !EN.playerAhead(4, 10, 9, 18), 'playerAhead: 比例、一樣算你贏');
+  ok(!EN.playerAhead(9, 10, 19, 20) && EN.playerAhead(19, 20, 9, 10) && EN.playerAhead(-1, 3, -2, 3) && !EN.playerAhead(-2, 3, -1, 3), 'playerAhead: 0.9<0.95、負數也照比例');
+  eq([EN.hpPct(6, 10), EN.hpPct(9, 18), EN.hpPct(-3, 10), EN.hpPct(7, 15)], [60, 50, 0, 47], 'hpPct');
   const T = { debugOutcome: { kind: 'tie', toE: 0, toP: 0 } }, E10 = { eOver: { hp: 10 } };
   for (let s = 1; s <= 30; s++) {
     const { duel } = startFor('copycat', TIERS[s % 3], s, E10);
@@ -348,9 +388,20 @@ section('6 六手上限：tie 六手 → rounds、你贏；落後一手再 tie �
     EN.resolveTurn(c, EN.legalActions(c)[0], { debugOutcome: { kind: 'mirrorLose', toE: 0, toP: 1 } });
     for (let k = 0; k < 4; k++) EN.resolveTurn(c, EN.legalActions(c)[0], T);
     ok(c.over && c.over.win === true, 'level after 6 → you win', c.over);
-    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人聲望 > 你 10：六手都 tie → 比剩下的，他贏
-    for (let k = 0; k < 6; k++) EN.resolveTurn(g, EN.legalActions(g)[0], T);
-    ok(g.over && g.over.by === 'rounds' && g.over.win === false, 'rounds compare what is left (10 < his → you lose)', g.over);
+    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人聲望 18 > 你 10：六手都 tie → 兩邊都滿條（100%＝100%）→ 你贏（舊規則比絕對值是他贏）
+    const ge = []; for (let k = 0; k < 6; k++) ge.push(...EN.resolveTurn(g, EN.legalActions(g)[0], T));
+    ok(g.over && g.over.by === 'rounds' && g.over.win === true, 'rounds compare the bar (10/10 = 18/18 → you win)', g.over);
+    const ov = ge.find(e => e.t === 'over');
+    ok(ov && ov.pPct === 100 && ov.ePct === 100 && ov.pMax === 10 && ov.eMax === C.enemies.copycat.hp, 'over event has pMax／eMax／pPct／ePct', ov);
+    // 你 6/10（60%）、他 9/18（50%）→ 你贏（舊規則 6 < 9 是你輸）；你 4/10、他 9/18 → 你輸
+    const h = startFor('copycat', TIERS[s % 3], s, { eOver: { hp: 18 } }).duel;
+    EN.resolveTurn(h, EN.legalActions(h)[0], { debugOutcome: { kind: 'counter', toE: 9, toP: 4 } });
+    for (let k = 0; k < 5; k++) EN.resolveTurn(h, EN.legalActions(h)[0], T);
+    ok(h.over && h.over.by === 'rounds' && h.over.win === true && h.p.hp === 6 && h.e.hp === 9, '60% vs 50% → you win', h.over);
+    const i2 = startFor('copycat', TIERS[s % 3], s, { eOver: { hp: 18 } }).duel;
+    EN.resolveTurn(i2, EN.legalActions(i2)[0], { debugOutcome: { kind: 'counter', toE: 9, toP: 6 } });
+    for (let k = 0; k < 5; k++) EN.resolveTurn(i2, EN.legalActions(i2)[0], T);
+    ok(i2.over && i2.over.win === false && i2.p.hp === 4, '40% vs 50% → you lose', i2.over);
   }
   const save = CFG.maxRounds;
   try {
@@ -359,15 +410,19 @@ section('6 六手上限：tie 六手 → rounds、你贏；落後一手再 tie �
     let g = 0; while (!duel.over && g++ < 20) EN.resolveTurn(duel, EN.legalActions(duel)[0], T);
     ok(duel.over && duel.over.by === 'pile' && duel.n === 7 && duel.over.win, 'his 7 records run out → pile', { over: duel.over, n: duel.n });
   } finally { CFG.maxRounds = save; }
-  // 兩邊同一手都 ≤0 → 比剩下的
+  // 兩邊同一手都 ≤0 → 同一個 playerAhead（負數也照比例）
   const both = startFor('copycat', 'hall', 4, { hp: 3 }).duel;
-  both.e.hp = 3;
+  both.e.hp = 3; both.e.max = 3;
   EN.resolveTurn(both, EN.legalActions(both)[0], { debugOutcome: { kind: 'counter', toE: 5, toP: 4 } });
-  ok(both.over && both.over.by === 'hp' && both.over.win === true, 'both ≤0 → compare what is left (you −1 ≥ him −2 → you win)', both.over);
+  ok(both.over && both.over.by === 'hp' && both.over.win === true, 'both ≤0 → you −1/3 ≥ him −2/3 → you win', both.over);
   const both2 = startFor('copycat', 'hall', 4, { hp: 3 }).duel;
-  both2.e.hp = 3;
+  both2.e.hp = 3; both2.e.max = 3;
   EN.resolveTurn(both2, EN.legalActions(both2)[0], { debugOutcome: { kind: 'counter', toE: 4, toP: 5 } });
-  ok(both2.over && both2.over.win === false, 'both ≤0 → you −2 < him −1 → you lose', both2.over);
+  ok(both2.over && both2.over.win === false, 'both ≤0 → you −2/3 < him −1/3 → you lose', both2.over);
+  const both3 = startFor('copycat', 'hall', 4, { hp: 10 }).duel;     // 你 −2/10、他 −3/18：比例他高 → 你輸（絕對值會是你贏）
+  both3.e.hp = 15; both3.e.max = 18; both3.p.hp = 2;
+  EN.resolveTurn(both3, EN.legalActions(both3)[0], { debugOutcome: { kind: 'counter', toE: 18, toP: 4 } });
+  ok(both3.over && both3.over.win === false && both3.p.hp === -2 && both3.e.hp === -3, 'both ≤0 → −2/10 < −3/18 → you lose', { over: both3.over, p: both3.p.hp, e: both3.e.hp });
 });
 
 section('7 每一件發燒配件（9 件）', () => {
@@ -418,10 +473,11 @@ section('7 每一件發燒配件（9 件）', () => {
   eq(many.p.relics.length, 3, 'relicMax 3 in a duel');
 });
 
-section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨、特價箱、包包、時機）', () => {
+section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨〔契約：每區 4–6、FEATURE 2–3 史詩／傳奇、全店不重複〕、特價箱、包包、時機）', () => {
   const seeds = QUICK ? 100 : 500;
   const seenBargain = { c: new Set(), o: new Set(), h: new Set() };
   const shopKeys = Object.keys(C.bins).filter(k => !C.bins[k].display);
+  const seenStock = {}; for (const k of shopKeys) seenStock[k] = new Set();
   for (let s = 1; s <= seeds; s++) for (const ace of TIERS) {
     const night = 1 + (s % 3);
     const run = EN.newRun(C, { seedKey: 'nr-' + s, nightNo: night, ace });
@@ -431,11 +487,18 @@ section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨、特�
     eq(run.bag, C.gifts[ace], 'bag starts as the 4 gifts');
     ok(run.money === C.economy.start && run.shop.bargainPicked === false && !EN.canShop(run) && EN.canBargainPick(run), 'start: money, not picked, cannot shop, can pick');
     eq(Object.keys(run.shop.bins).sort(), shopKeys.slice().sort(), 'shop bins = non-display bins');
+    const all = [];
     for (const k of shopKeys) {
-      const st = run.shop.bins[k], pool = C.bins[k].pool;
-      ok(st.length >= Math.min(4, pool.length) && st.length <= 6 && st.every(id => pool.includes(id)) && new Set(st).size === st.length, 'bin ' + k + ' 4–6 ⊂ pool', st.length);
-      ok(!st.some(id => run.bag.includes(id) || id === C.aces[ace]), 'bin ' + k + ' excludes owned');
+      const st = run.shop.bins[k], pool = C.bins[k].pool, feat = k === 'feature';
+      const lo = feat ? 2 : 4, hi = feat ? 3 : 6;
+      if (!(st.length >= lo && st.length <= hi && st.every(id => pool.includes(id)) && new Set(st).size === st.length)) ok(false, 'bin ' + k + ' ' + lo + '–' + hi + ' ⊂ pool', st.length); else pass++;
+      if (st.some(id => run.bag.includes(id) || id === C.aces[ace] || C.bargain.pool.includes(id))) ok(false, 'bin ' + k + ' excludes owned／bargain'); else pass++;
+      const rs = st.map(id => EN.rarity(card(id)));
+      if (!rs.every(r => feat ? (r === 'epic' || r === 'legendary') : ['common', 'rare', 'uncommon'].includes(r))) ok(false, 'bin ' + k + ' rarity', rs); else pass++;
+      if (CATS.includes(k) && !st.every(id => EN.categoryOf(card(id)) === k)) ok(false, 'bin ' + k + ' only its category', st); else pass++;
+      all.push(...st); st.forEach(id => seenStock[k].add(id));
     }
+    if (new Set(all).size !== all.length) ok(false, 'nothing repeats across the shop', all.filter((x, k2) => all.indexOf(x) !== k2)); else pass++;
     ok(run.shop.relics.length >= 2 && run.shop.relics.length <= 3 && run.shop.relics.every(id => /^boost_/.test(id)) && new Set(run.shop.relics).size === run.shop.relics.length, 'counter 2–3 boost relics', run.shop.relics);
     const n = { c: 0, o: 0, h: 0 }; run.shop.bargain.forEach(id => { n[EN.topAttr(card(id))]++; seenBargain[EN.topAttr(card(id))].add(id); });
     ok(run.shop.bargain.length === 6 && n.c === 2 && n.o === 2 && n.h === 2, 'bargain 6 = 2 per color', n);
@@ -446,12 +509,19 @@ section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨、特�
     if (night === 1) { run.prologue = 'done'; ok(EN.canShop(run), 'prologue done → can shop'); }
   }
   for (const a of ATTRS) ok(seenBargain[a].size === 3, 'bargain color ' + a + ' shows all 3 cards across seeds', [...seenBargain[a]]);
+  if (fakeBins) {
+    eq(shopKeys.slice().sort(), BIN_KEYS.slice().sort(), 'contract bins: 11 categories + new + feature + picks, all for sale');
+    for (const k of shopKeys) ok(seenStock[k].size >= 4, 'bin ' + k + ' rotates across nights', seenStock[k].size);
+  }
+  // 同一晚（同一個 seedKey＋nightNo）的貨一樣；換一晚會換
+  { const a = EN.newRun(C, { seedKey: 'same', nightNo: 2, ace: 'hall' }), b = EN.newRun(C, { seedKey: 'same', nightNo: 2, ace: 'hall' }), c2 = EN.newRun(C, { seedKey: 'same', nightNo: 3, ace: 'hall' });
+    eq(a.shop, b.shop, 'same night → same stock'); ok(JSON.stringify(a.shop.bins) !== JSON.stringify(c2.shop.bins), 'next night → new stock'); }
   for (let s = 1; s <= 50; s++) {
     const run = EN.newRun(C, { seedKey: 'rl-' + s, nightNo: 2, ace: 'hall', relics: ['boost_c', 'boost_o'] });
     eq(run.shop.relics, ['boost_h'], 'two boosts owned → counter has 1');
     eq(run.relics, ['boost_c', 'boost_o'], 'relics carried over');
   }
-  ok(fakeBins || Object.keys(C.bins).some(k => C.bins[k].display), 'display areas exist');
+  ok(fakeBins || !!C.bins.feature || Object.keys(C.bins).some(k => C.bins[k].display), 'feature (contract) or old display areas exist');
 });
 
 section('9 整晚（thoughtful／high／random × shopPolicy none／smart）：一定結束、沒有非法選擇、錢永遠 ≥0', () => {
@@ -493,15 +563,15 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   ok(ok1.ok && JSON.stringify(run.bag.slice(4)) === JSON.stringify([B[1], B[0], B[2]]) && ok1.effects.length === 3, 'bargainPick in tap order', ok1);
   err(run, { type: 'bargainPick', ids: B.slice(3, 6) }, 'notNow', 'bargainPick twice');
   // buy
-  const key = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid = run.shop.bins[key][0], price = EN.priceOf(C, card(cid));
-  ok(price === C.economy.price[EN.peak(card(cid))], 'priceOf = price[peak]');
-  ok(EN.priceOf(C, card(C.aces.hall)) === null, 'ace is not for sale');
+  const key = Object.keys(run.shop.bins).find(k => k !== 'feature' && run.shop.bins[k].length), cid = run.shop.bins[key][0], price = EN.priceOf(C, card(cid));
+  ok(price === C.economy.price[EN.rarity(card(cid))] && price >= 800 && price <= 1200, 'priceOf = price[rarity] (shelf 800–1200)', price);
+  ok(EN.priceOf(C, card(C.aces.hall)) === 8000 && !Object.values(run.shop.bins).flat().includes(C.aces.hall), 'apex priced 8000 but never stocked');
   eq(EN.sellValue(C, card(cid)), Math.floor(price * 0.5), 'sellValue card = half');
-  const RP = C.relics.boost_c.price;
+  const RP = C.economy.relicPrice;
   eq(EN.sellValue(C, 'boost_c'), Math.floor(RP * C.economy.sellRate), 'sellValue relic = half');
   eq(EN.relicPrice(C, 'boost_c'), RP, 'relicPrice');
   { const r2 = JSON.parse(JSON.stringify(run)); r2.money = 0; err(r2, { type: 'buy', key, cardId: cid }, 'noMoney', 'buy with $0'); }
-  run.money = 5000;
+  run.money = 20000;
   err(run, { type: 'buy', key: 'nope', cardId: cid }, 'notInStock', 'buy wrong bin');
   err(run, { type: 'buy', key, cardId: 'nope' }, 'notInStock', 'buy wrong card');
   { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.push(cid); err(r2, { type: 'buy', key, cardId: cid }, 'owned', 'buy owned'); }
@@ -527,8 +597,14 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   err(run, { type: 'buyBargain', ids: [BL[0]], sellIds: [run.bag[0], run.bag[1]] }, 'badSell', 'buyBargain too many sells');
   err(run, { type: 'buyBargain', ids: [BL[0]], sellIds: ['nope'] }, 'badSell', 'buyBargain sell not in bag');
   { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.push(BL[0]); r2.bag.shift(); err(r2, { type: 'buyBargain', ids: [BL[0]], sellIds: [] }, 'owned', 'buyBargain owned'); }
-  { const r2 = JSON.parse(JSON.stringify(run)); r2.money = C.economy.bargainPrice - 1; r2.bag.shift(); err(r2, { type: 'buyBargain', ids: [BL[0]] }, 'noMoney', 'buyBargain no money'); }
-  { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.splice(0, 3); const m = r2.money; const r = EN.choose(r2, C, { type: 'buyBargain', ids: BL.slice(0, 3) }); ok(r.ok && r2.money === m - C.economy.bargainPrice && r2.bag.length === 8 && r2.shop.bargain.length === 0, 'buyBargain 3 for one price', r); }
+  { const r2 = JSON.parse(JSON.stringify(run)); r2.money = EN.bargainPriceOf(C, BL[0]) - 1; r2.bag.shift(); err(r2, { type: 'buyBargain', ids: [BL[0]] }, 'noMoney', 'buyBargain no money'); }
+  { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.splice(0, 2); r2.money = EN.bargainPriceOf(C, BL[0]) + EN.bargainPriceOf(C, BL[1]) - 1; err(r2, { type: 'buyBargain', ids: [BL[0], BL[1]] }, 'noMoney', 'buyBargain 2 short by 1'); }
+  { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.splice(0, 3); const m = r2.money, each = BL.slice(0, 3).map(id => EN.bargainPriceOf(C, id));
+    const r = EN.choose(r2, C, { type: 'buyBargain', ids: BL.slice(0, 3) });
+    ok(r.ok && r2.money === m - each.reduce((a, b) => a + b, 0) && r2.bag.length === 8 && r2.shop.bargain.length === 0, 'buyBargain 3 = sum of per-card prices', { r, each });
+    eq(r.effects.map(e => e.spend), each, 'buyBargain effects: each card its own spend');
+    ok(each.every((p, k) => p === C.economy.bargain[EN.peak(card(BL[k]))]), 'bargain price by highest star', each);
+    ok(EN.sellValue(C, card(BL[0])) === Math.floor(each[0] / 2), 'bargain card sells back at half its bargain price (no buy-sell profit)'); }
   // buyRelic
   const RL = run.shop.relics.slice();
   err(run, { type: 'buyRelic', relicId: 'obi' }, 'notInStock', 'buyRelic not on the counter');
@@ -680,10 +756,47 @@ section('14 content 形狀（§4 牌組限制、§4.2 禮物、§4.3 特價箱�
   ok(C.version === 'lab-4' && EN.VERSION === 'lab-4', 'version lab-4');
   for (const k of ['habits', 'habitLabels']) ok(!(k in C), 'v3 shim ' + k + ' removed');
   ok(!('phase2Lines' in C) && !('example' in C.rules) && !('sub' in C.rules), 'v3 rule-card example / phase2 removed');
+  for (const id of ENEMY_IDS) ok(!('title' in C.enemies[id]) && !('zh' in C.honesty[C.enemies[id].honesty]), 'FIXLIST 6: no subtitle, no honesty label ' + id);
+  eq(ENEMY_IDS.map(id => C.enemies[id].name), ['男子', '文青同好', '社團學長', '音響發燒友', '二手店老闆', '地下樂團吉他手', '前衛樂迷', '地下廠牌主理人', '資深樂評', '傳說藏家'], 'FIXLIST 6 names');
+  ok(C.rules.lines[5] === '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。', 'rule card line 6 (FIXLIST 2／3)');
   const FORBID = /氣勢|輾壓|賭注|相生|割捨|七星回擊|霸權|點播/;
   const scan = (o, p) => { if (typeof o === 'string') ok(!FORBID.test(o), 'no removed mechanic words in ' + p, o); else if (o && typeof o === 'object') for (const k in o) if (k !== 'cards') scan(o[k], p + '.' + k); };
   scan({ relics: C.relics, coachTips: C.coachTips, rules: C.rules, hints: C.hints, duelText: C.duelText, lines: C.lines, shopLines: C.shopLines, shopUi: C.shopUi }, 'C');
   console.log('     stubbed cards: ' + stubbed + ' (baked & checked: ' + real + ')' + (fakeBins ? '; fake bins (no bins.js yet)' : ''));
+});
+
+section('15 台幣行情（FIXLIST 8）：稀有度、價格、特價箱每張、配件 3000、賣回半價、千分位；分類（契約）；view 不帶誠實度字', () => {
+  const R = (c, o, h, tier) => EN.rarity(mkCard('r', c, o, h, tier));
+  // score＝c＋h＋(o===5?1:0)：≤5 普通、6 稀有、7 獨特、8 史詩、≥9 傳奇；頂點卡＝頂點
+  eq([R(1, 5, 1), R(3, 4, 2), R(4, 1, 2), R(5, 5, 1), R(5, 4, 2), R(4, 5, 3), R(5, 1, 3), R(5, 5, 3), R(5, 1, 4), R(5, 5, 5), R(7, 3, 3, 'hall'), R(1, 7, 1, 'pearl')],
+    ['common', 'common', 'rare', 'uncommon', 'uncommon', 'epic', 'epic', 'legendary', 'legendary', 'legendary', 'apex', 'apex'], 'rarity table');
+  eq(EN.rarityScore(mkCard('s', 4, 5, 3)), 8, 'rarityScore o=5 → +1');
+  eq(EN.RARITY, ['common', 'rare', 'uncommon', 'epic', 'legendary', 'apex'], 'RARITY order');
+  const P = r => EN.priceOf(C, Object.assign(mkCard('p-' + r, 1, 1, 1), r === 'apex' ? { tier: 'hall', c: 7 } : {
+    common: { c: 1, o: 4, h: 1 }, rare: { c: 5, o: 1, h: 1 }, uncommon: { c: 5, o: 1, h: 2 }, epic: { c: 5, o: 1, h: 3 }, legendary: { c: 5, o: 1, h: 4 } }[r]));
+  eq(EN.RARITY.map(P), [800, 1000, 1200, 3000, 4000, 8000], 'priceOf by rarity');
+  for (const id of C.bargain.pool) eq(EN.priceOf(C, id), [0, 100, 200, 300][EN.peak(card(id))], 'bargain ' + id + ' by highest star');
+  eq([EN.bargainPriceOf(C, mkCard('b1', 1, 1, 1)), EN.bargainPriceOf(C, mkCard('b2', 2, 1, 1)), EN.bargainPriceOf(C, mkCard('b3', 1, 3, 2)), EN.bargainPriceOf(C, mkCard('b4', 4, 1, 1))], [100, 200, 300, 300], 'bargainPriceOf 1/2/3/(4→3)');
+  for (const id of Object.keys(C.relics)) { eq(EN.relicPrice(C, id), 3000, 'relic ' + id + ' $3,000'); eq(EN.sellValue(C, id), 1500, 'relic ' + id + ' sells for half'); }
+  eq(EN.sellValue(C, mkCard('sv', 5, 1, 3)), 1500, 'epic sells for half');
+  eq([EN.moneyText(0), EN.moneyText(800), EN.moneyText(1200), EN.moneyText(12000), EN.moneyText(1234567)], ['0', '800', '1,200', '12,000', '1,234,567'], 'moneyText');
+  // 分類：第一個曲風（electronic → elec）、台灣地區優先
+  const K = (genres, region) => EN.categoryOf({ genres, region });
+  eq([K(['rock', 'jazz'], 'xx'), K(['electronic'], 'jp'), K(['jazz'], 'tw'), K(['hiphop'], 'xx'), K(['blues', 'folk'], 'xx'), K(['nope'], 'xx'), K([], 'tw')],
+    ['rock', 'elec', 'tw', 'hiphop', 'blues', null, 'tw'], 'categoryOf');
+  // 契約形狀的箱子（bins.js 交了用真的；沒交用 fixture）
+  for (const k of BIN_KEYS) {
+    const b = C.bins[k];
+    if (!ok(!!b, 'bin ' + k + ' exists')) continue;
+    ok(b.key === k && b.zh === LABEL[k][1] && (k === 'picks' ? !!b.label : b.label === LABEL[k][0]) && Array.isArray(b.pool) && Array.isArray(b.front), 'bin ' + k + ' {key,label,zh,pool,front}', { key: b.key, label: b.label, zh: b.zh });
+    if (CATS.includes(k)) ok(b.pool.every(id => EN.categoryOf(card(id)) === k), 'bin ' + k + ' pool = its category');
+    if (k === 'feature') ok(b.pool.every(id => ['epic', 'legendary'].includes(EN.rarity(card(id)))), 'feature pool = epic + legendary');
+  }
+  { const bp = binsProblems(C, EN); ok(bp.length === 0, 'binsProblems (check-content) empty on ' + (fakeBins ? 'the fixture' : 'bins.js'), bp.slice(0, 8)); }
+  // view：沒有誠實度的字（只有 key 與 q，給策略）；客人沒有副標
+  const v = EN.view(startFor('label', 'hall', 3).duel);
+  eq(Object.keys(v.honesty).sort(), ['key', 'q'], 'view.honesty = {key, q}');
+  ok(v.eTitle === null && v.eName === '地下廠牌主理人', 'view: name only, no title', { n: v.eName, t: v.eTitle });
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

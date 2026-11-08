@@ -10,8 +10,10 @@
 //            CFG {playerHp 10, handSize 3, enemyHand 3, bagMax 8, retries 1, relicMax 3, threshold 2, maxRounds 6, aceStar 7,
 //                 colorRelicBonus 1, dustcoverCut 1, cleanerTie 1, boostStar 1, bargainPick 3, mercy true}  (sim --set k=v 改這裡)
 // Cards      topAttr(card) 峰值軸，並列 c→o→h · peak(card) max(c,o,h) · deckMain(cards, taste) 牌單主屬性（並列峰值各算一票，票數並列照 taste）
-// Clash      clash(p, e, {threshold}) p/e = {attr, star, ace} -> {kind, toE, toP, blocked: null|'gap'|'ace', by: 'p'|'e'|null}
+// Clash      clash(p, e, {threshold}) p/e = {attr, star, ace} -> {kind, toE, toP, blocked: null|'gap', by: 'p'|'e'|null}
 //              kind ∈ counter|countered|mirrorWin|mirrorLose|tie（mirror＝比星分出勝負，含「剋不動改比星」）
+//              王牌沒有「不會被剋」（FIXLIST 2）：王牌＝那軸 7 星，照三相剋＋差 2 星門檻（≤5 星剋不動它；王牌對王牌照三相剋）。p.ace／e.ace 只是標記
+//            playerAhead(pHp, pMax, eHp, eMax) 比聲望條剩幾成（hp÷max，一樣算你贏；FIXLIST 3）· hpPct(hp, max) 畫面用的 %（四捨五入、≥0）
 //              （v3 墊片：clash(pStar, pAttr, eStar, eAttr) 也收，第二波 B2 改掉 ui.js 的舊呼叫後可刪）
 // Duel       enemyDef(content, id, {tutorial, depth, planner?}) -> eDef · playerDef(content, {bag, ace, relics}) -> pDef
 //            startDuel(pDef, eDef, {seed, enemyAce?, script?, hintTable?}) -> {duel, events}
@@ -22,15 +24,33 @@
 //            bestChip(duel, attr, {ace}) · blockedChoice(duel, attr) -> {i, attr} | null（用 attr 出會被 'gap' 擋下的那張；教學第 5 手）
 //            Events {t:'hand', n, hint:{attr, line}, eHandN, pile}
 //                   {t:'clash', n, pCard, pAttr, pStar, pBase, ace, eCard, eAttr, eStar, eAce, kind, toE, toP, blocked, by, hint, bluff, notes, pHp, eHp}
-//                   {t:'draw', i, card, reshuffled}     {t:'over', win, by:'hp'|'rounds'|'pile', pHp, eHp}
+//                   {t:'draw', i, card, reshuffled}     {t:'over', win, by:'hp'|'rounds'|'pile', pHp, eHp, pMax, eMax, pPct, ePct}
+//            勝負：誰的聲望先 ≤0 誰輸；兩邊同一手都 ≤0、六手打完（rounds）、他牌出完（pile）→ playerAhead（比聲望條剩幾成，一樣算你贏）
 //            order per resolve: clash → draw (not after the ace) → over | hand
 // Night      newRun(content, {seedKey, nightNo, ace, prologue?, relics?, bossAce?}) -> run    nextStep(run) · current(run, content)
 //            startFight(run, content, {tutorial?}) -> {duel, events, enemyId}   (run.duel already there → {…, events:[], resumed:true})
 //            finishFight(run, content, duel?) -> {win, by, enemyId, met:[ids], offer, over, earn}
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）
-//            canShop(run) · canBargainPick(run) · priceOf(content, card) · relicPrice(content, id) · sellValue(content, card|relicId)
+//              buyBargain {ids:[1–3], sellIds?}：每張照特價（bargainPriceOf）分開算、一次付總和；effects 每張 {gainCard, spend: 那張的價}
+//            canShop(run) · canBargainPick(run)
 //            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart') -> [ch] · bargainPolicy(run, content) -> ch
+// Economy    台幣行情（FIXLIST 8＋X／Y 契約；數字在 content.economy，這裡的 ECON 是沒給時的預設）
+//            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
+//            rarityScore(card) ＝ c＋h＋(o===5 ? 1 : 0) · rarity(card) → 'common'≤5｜'rare'6｜'uncommon'7｜'epic'8｜'legendary'≥9｜'apex'（tier hall／pearl／heresy）
+//              RARITY（由低到高）· FEATURE_RARITY ['epic','legendary'] · SHELF_RARITY ['common','rare','uncommon'] · SHOP_ORDER（上貨順序）
+//            priceOf(content, card|id)：特價箱的卡＝bargainPriceOf；其他＝economy.price[rarity]（800／1000／1200／3000／4000；頂點 8000 先備好、不上架）
+//            bargainPriceOf(content, card|id)：economy.bargain[最高星 1–3] ＝ 100／200／300 · relicPrice(content, id)：relics[id].price ?? economy.relicPrice（3000）
+//            sellValue(content, card|relicId) ＝ floor(價 × sellRate 0.5) · moneyText(n) ＝ 千分位字串（1200 → '1,200'；C.shopUi 的字串自己帶 '$'）
+//            run.shop（newRun 一次決定，種子＝這一晚；RNG 在客人順序與藏家王牌之後）：
+//              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
+//                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop pop classical world folk blues
+//                                            //   new picks 各 4–6 張（economy.stock；只抽普通／稀有／獨特）；照 SHOP_ORDER 上貨、全店同一晚不重複；
+//                                            //   不上你的王牌、包包裡的、特價箱的、頂點卡；display:true 的區（舊牆面）不賣
+//                relics: [ids],              // 櫃檯 2–3 件（economy.relicStock；relicShop.pool 扣掉身上的）
+//                bargain: [ids],             // 特價箱 6 張＝經／冷／硬各 2（bargain.pool 9 張洗牌）
+//                bargainPicked: boolean,     // 開局挑三張（免費）做過沒
+//                firstGuestInside: boolean } // UI 用
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content
 // ============================================================================================================================
@@ -54,7 +74,7 @@
   const CFG = {
     playerHp: 10, handSize: 3, enemyHand: 3, bagMax: 8, retries: 1, relicMax: 3,
     threshold: 2,        // D §5 規則 4：被剋方星數 − 剋方星數 ≥ 2 → 剋不動，改比星
-    maxRounds: 6,        // D §5 規則 6：第 6 手結算完還沒人倒 → 比聲望，平手算你贏
+    maxRounds: 6,        // D §5 規則 6：第 6 手結算完還沒人倒 → 比聲望條剩幾成（playerAhead），一樣算你贏
     aceStar: 7,
     colorRelicBonus: 1,  // 原版側標／神秘見本盤／黑膠唱針：那色剋中多扣 1
     dustcoverCut: 1,     // 防塵套：每場第一次被剋少扣 1
@@ -64,12 +84,21 @@
     mercy: true,         // 原版 aiPlan 的 mercyLevel（你落後時他出招變鈍，roguelike.html:3618-3624）；sim 可 --set mercy=false 對照
   };
   // content 沒給時的預設（＝content.js 的 C.honesty／C.planners／C.plannerByDepth／C.economy；直接呼叫 startDuel 的地方不傳 content 也不會壞）
-  const HONESTY = { honest: { zh: '老實', q: 1 }, sometimes: { zh: '偶爾唬人', q: 0.8 }, often: { zh: '愛唬人', q: 0.7 }, veteran: { zh: '老江湖', q: 0.6 } };
+  // 誠實度只在引擎裡（照實出的機率 q）；畫面上不寫任何誠實度字（FIXLIST 6，店主 2026-11-08 06:05）
+  const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.7 }, veteran: { q: 0.6 } };
   const PLANNERS = { easy: { w: 0.45, nz: 2.4, mercy: false }, normal: { w: 0.6, nz: 1.4, mercy: true }, hard: { w: 0.7, nz: 0.8, mercy: true } };
   const PLANNER_BY_DEPTH = ['easy', 'easy', 'normal', 'normal', 'hard'];
   const DEFAULT_HINTS = { c: ['c1', 'c2', 'c3', 'c4', 'c5'], o: ['o1', 'o2', 'o3', 'o4', 'o5'], h: ['h1', 'h2', 'h3', 'h4', 'h5'] };
-  const ECON = { start: 0, win: { prologue: 0, normal: 300, elite: 500, boss: 0 }, price: { 1: 100, 2: 100, 3: 200, 4: 400, 5: 800 },
-    sellRate: 0.5, bargainPrice: 100, stock: [4, 6], relicStock: [2, 3] };
+  // 台幣行情（FIXLIST 8＋X／Y 契約）：唱片照稀有度定價、特價箱每張照最高星、櫃檯配件一件 3000、賣回半價
+  const ECON = { start: 1000, win: { prologue: 0, normal: 1500, elite: 2500, boss: 0 },
+    price: { common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 },
+    bargain: { 1: 100, 2: 200, 3: 300 }, relicPrice: 3000, sellRate: 0.5, stock: [4, 6], featureStock: [2, 3], relicStock: [2, 3] };
+  // 稀有度（CARD_GAME_DESIGN §5）：score＝經典＋硬蕊＋(冷門 5 ? 1 : 0)；≤5 普通、6 稀有、7 獨特、8 史詩、≥9 傳奇；頂點卡（殿堂／流亡／異端）＝頂點
+  const RARITY = ['common', 'rare', 'uncommon', 'epic', 'legendary', 'apex'];
+  const FEATURE_RARITY = ['epic', 'legendary'];            // 門口牆最靠門那格（FEATURE 店長推薦精選）只放這兩種
+  const SHELF_RARITY = ['common', 'rare', 'uncommon'];     // 其他箱子、新進、店長推薦：一般稀有度
+  // 上貨順序（全店同一晚不重複：先上的先拿）：FEATURE → 十一個分類箱 → 新進 → 店長推薦；不認得的鍵照字母排在最後
+  const SHOP_ORDER = ['feature', 'jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues', 'new', 'picks'];
 
   // ---------- RNG (mulberry32; state lives in the object so clones are deterministic) ----------
   function rng(st) {
@@ -114,14 +143,13 @@
       if (d < 0) return { kind: 'mirrorLose', toE: 0, toP: -d, blocked, by };
       return { kind: 'tie', toE: 0, toP: 0, blocked, by };
     };
+    // 王牌沒有「不會被剋」（FIXLIST 2，店主 2026-11-08）：王牌只是 7 星，照三相剋＋差 2 星門檻；王牌對王牌一樣照三相剋
     if (p.attr === e.attr) return cmp(null, null);
     if (BEATS[p.attr] === e.attr) {                       // 你剋他
-      if (e.ace) return cmp('ace', 'p');
       if (es - ps >= N) return cmp('gap', 'p');
       return { kind: 'counter', toE: ps, toP: 0, blocked: null, by: 'p' };
     }
-    if (p.ace) return cmp('ace', 'e');                    // 他剋你
-    if (ps - es >= N) return cmp('gap', 'e');
+    if (ps - es >= N) return cmp('gap', 'e');             // 他剋你
     return { kind: 'countered', toE: 0, toP: es, blocked: null, by: 'e' };
   }
 
@@ -187,7 +215,7 @@
     return {
       id, name: E.name, title: E.title || null, hp: tut ? T.hp : E.hp, taste: tasteStr(E.taste),
       deck: (E.deck || []).map(x => cardFrom(content, x)),
-      honesty: hk, honestyZh: H.zh, q: H.q, planner, coef: { w: co.w, nz: co.nz, mercy: !!co.mercy },
+      honesty: hk, q: H.q, planner, coef: { w: co.w, nz: co.nz, mercy: !!co.mercy },
       elite: !!E.elite, boss: !!E.boss,
     };
   }
@@ -212,7 +240,7 @@
       p: { hp, max: pDef.maxHp || hp, draw: [], hand: [], disc: [], ace: pDef.ace || null, aceUsed: false,
         relics: (pDef.relics || []).map(r => relicObj(r)).filter(Boolean).slice(0, CFG.relicMax), dustUsed: false, last: null },
       e: { id: eDef.id, name: eDef.name, title: eDef.title || null, elite: !!eDef.elite, boss: !!eDef.boss,
-        honesty: hk, honestyZh: eDef.honestyZh || HONESTY[hk].zh, q: eDef.q != null ? +eDef.q : HONESTY[hk].q,
+        honesty: hk, q: eDef.q != null ? +eDef.q : HONESTY[hk].q,
         planner: eDef.planner || 'normal', coef: { w: co.w, nz: co.nz, mercy: !!co.mercy }, taste: tasteStr(eDef.taste),
         hp: eDef.hp, max: eDef.hp, deckIds: [], pile: [], hand: [], thrown: [], last: null, deckSize: 0 },
       hintTable: opts.hintTable && ATTRS.every(a => Array.isArray(opts.hintTable[a]) && opts.hintTable[a].length) ? clone(opts.hintTable) : clone(DEFAULT_HINTS),
@@ -386,12 +414,22 @@
     beginHand(st, events);
     return events;
   }
-  // 聲望 ≤0 就輸；兩邊同一手都 ≤0 比剩下的（負數也比）；六手打完／他牌出完比剩下的；一樣都算你贏
+  // 比聲望（FIXLIST 3，店主 2026-11-08 選 1）：比「聲望條剩幾成」＝剩餘聲望÷滿血，高的贏；一樣算你贏。
+  //   全引擎只有這一個比法：六手打完、他牌出完、兩邊同一手都 ≤0（負數也照比例比）、策略的終局估值都呼叫它。
+  //   交叉相乘，不用浮點：pHp/pMax ≥ eHp/eMax ⇔ pHp·eMax ≥ eHp·pMax（max 一律 > 0）
+  function playerAhead(pHp, pMax, eHp, eMax) {
+    const pm = pMax > 0 ? pMax : 1, em = eMax > 0 ? eMax : 1;
+    return pHp * em >= eHp * pm;
+  }
+  // 畫面用：聲望條剩幾 %（四捨五入、不顯示負數）。你滿血 10、客人 ≤20 時，四捨五入後一樣大 ⇔ 真的一樣大，不會誤導
+  function hpPct(hp, max) { return Math.max(0, Math.round(100 * hp / (max > 0 ? max : 1))); }
+  // 聲望 ≤0 就輸；兩邊同一手都 ≤0、六手打完、他牌出完 → playerAhead
   function finish(st, by, events) {
     const P = st.p, E = st.e;
-    const win = by === 'hp' ? ((P.hp <= 0 && E.hp <= 0) ? P.hp >= E.hp : E.hp <= 0) : P.hp >= E.hp;
+    const cmp = playerAhead(P.hp, P.max, E.hp, E.max);
+    const win = by === 'hp' ? ((P.hp <= 0 && E.hp <= 0) ? cmp : E.hp <= 0) : cmp;
     st.over = { win, by }; st.plan = null;
-    events.push({ t: 'over', win, by, pHp: P.hp, eHp: E.hp });
+    events.push({ t: 'over', win, by, pHp: P.hp, eHp: E.hp, pMax: P.max, eMax: E.max, pPct: hpPct(P.hp, P.max), ePct: hpPct(E.hp, E.max) });
     return events;
   }
 
@@ -404,7 +442,7 @@
       n: st.n, maxRounds: CFG.maxRounds, over: st.over ? { win: st.over.win, by: st.over.by } : null,
       pHp: P.hp, pMax: P.max, eHp: E.hp, eMax: E.max,
       eId: E.id, eName: E.name, eTitle: E.title, elite: E.elite, boss: E.boss,
-      honesty: { key: E.honesty, zh: E.honestyZh, q: E.q },
+      honesty: { key: E.honesty, q: E.q },
       hint: pl ? { attr: pl.hint.attr, line: pl.hint.line } : null,
       eHandN: E.hand.length, pile: E.pile.length, pileMax: E.deckSize,
       eDeckIds: E.deckIds.slice(), eThrownIds: E.thrown.map(c => c.id),
@@ -439,11 +477,13 @@
   function econ(content) {
     const e = (content && content.economy) || {};
     return { start: e.start != null ? e.start : ECON.start, win: Object.assign({}, ECON.win, e.win || {}), price: Object.assign({}, ECON.price, e.price || {}),
-      sellRate: e.sellRate != null ? e.sellRate : ECON.sellRate, bargainPrice: e.bargainPrice != null ? e.bargainPrice : ECON.bargainPrice,
-      stock: e.stock || ECON.stock, relicStock: e.relicStock || ECON.relicStock };
+      bargain: Object.assign({}, ECON.bargain, e.bargain || {}), relicPrice: e.relicPrice != null ? e.relicPrice : ECON.relicPrice,
+      sellRate: e.sellRate != null ? e.sellRate : ECON.sellRate,
+      stock: e.stock || ECON.stock, featureStock: e.featureStock || ECON.featureStock, relicStock: e.relicStock || ECON.relicStock };
   }
   const relicOk = (content, id) => !!(content.relics && content.relics[id]) && content.relics[id].v4 !== false;
   const cardOf = (content, id) => (content.cards && content.cards[id]) || null;
+  const uniq = a => a.filter((x, k) => a.indexOf(x) === k);
 
   function newRun(content, o) {
     o = o || {};
@@ -470,16 +510,22 @@
     stockShop(run, content, EC);
     return run;
   }
-  // 今晚的貨（newRun 一次決定；RNG 在客人順序與藏家王牌之後才取）
+  // 今晚的貨（newRun 一次決定；RNG 在客人順序與藏家王牌之後才取，種子＝這一晚）
+  //   每一區從 bins.js 的 pool 抽：FEATURE 2–3 張（只抽史詩／傳奇）、其他每區 4–6 張（只抽普通／稀有／獨特；新進與店長推薦本來就不限曲風）；
+  //   全店同一晚不重複（照 SHOP_ORDER 先上的先拿）；不上：你的王牌、包包裡的、特價箱的、頂點卡。display:true 的舊牆面區只展示、不賣
   function stockShop(run, content, EC) {
-    const owned = new Set([content.aces && content.aces[run.ace], ...run.bag].filter(Boolean));
+    const taken = new Set([content.aces && content.aces[run.ace], ...run.bag, ...(((content.bargain || {}).pool) || [])].filter(Boolean));
     const span = (lohi, fallback) => { const lo = (lohi && lohi[0]) | 0 || fallback[0], hi = (lohi && lohi[1]) | 0 || fallback[1]; return lo + Math.floor(rng(run) * (Math.max(hi, lo) - lo + 1)); };
     const B = content.bins || {};
-    for (const key of Object.keys(B)) {
-      const b = B[key]; if (!b || b.display) continue;                        // 牆上兩區只展示、不賣
-      const pool = (b.pool || []).filter(id => !owned.has(id) && cardOf(content, id) && !cardOf(content, id).tier);
+    const keys = SHOP_ORDER.filter(k => B[k]).concat(Object.keys(B).filter(k => !SHOP_ORDER.includes(k)).sort());
+    for (const key of keys) {
+      const b = B[key]; if (!b || b.display) continue;
+      const feat = key === 'feature', ok = feat ? FEATURE_RARITY : SHELF_RARITY;
+      const pool = uniq(b.pool || []).filter(id => !taken.has(id) && cardOf(content, id) && ok.includes(rarity(cardOf(content, id))));
       shuffle(pool, run);
-      run.shop.bins[key] = pool.slice(0, Math.min(span(EC.stock, ECON.stock), pool.length));
+      const got = pool.slice(0, Math.min(feat ? span(EC.featureStock, ECON.featureStock) : span(EC.stock, ECON.stock), pool.length));
+      run.shop.bins[key] = got;
+      for (const id of got) taken.add(id);
     }
     const rp = (((content.relicShop || {}).pool) || []).filter(id => relicOk(content, id) && !run.relics.includes(id));
     shuffle(rp, run);
@@ -519,7 +565,6 @@
     run.duel = r.duel; run.duelEnemy = enemyId;
     return { duel: r.duel, events: r.events, enemyId };
   }
-  const uniq = a => a.filter((x, k) => a.indexOf(x) === k);
   function finishFight(run, content, duel) {
     duel = duel || run.duel;
     if (!duel || !duel.over) return { error: 'notOver' };
@@ -571,17 +616,51 @@
   }
   function settle(run) { const p = run.pending; if (p && p.type === 'reward' && p.cardDone && p.relicDone) advance(run, p); }
 
-  // ---------- 價格與時機 ----------
-  function priceOf(content, card) {
-    const c = typeof card === 'string' ? cardOf(content, card) : card;
-    if (!c || c.tier) return null;                                   // 王牌不賣
-    const p = econ(content).price[peak(c)];
+  // ---------- 稀有度、價格與時機 ----------
+  function rarityScore(card) { return star(card, 'c') + star(card, 'h') + (star(card, 'o') === 5 ? 1 : 0); }
+  function rarity(card) {
+    if (!card) return null;
+    if (TIERS.includes(card.tier)) return 'apex';
+    const s = rarityScore(card);
+    return s <= 5 ? 'common' : s === 6 ? 'rare' : s === 7 ? 'uncommon' : s === 8 ? 'epic' : 'legendary';
+  }
+  // 分類箱（X／Y 契約）：第一個曲風標籤＝genre-tree.json 頂層十類（electronic → elec）；地區台灣一律 tw（地區優先）。new／picks／feature 不看分類
+  const GENRE_BIN = { rock: 'rock', jazz: 'jazz', electronic: 'elec', soul: 'soul', hiphop: 'hiphop', classical: 'classical', folk: 'folk', pop: 'pop', world: 'world', blues: 'blues' };
+  function categoryOf(card) {
+    if (!card) return null;
+    if (card.region === 'tw') return 'tw';
+    return GENRE_BIN[((card.genres || [])[0]) || ''] || null;
+  }
+  const cardArg = (content, card) => typeof card === 'string' ? cardOf(content, card) : card;
+  const inBargain = (content, id) => ((((content && content.bargain) || {}).pool) || []).includes(id);
+  // 特價箱每張的價：照最高星 1／2／3 → 100／200／300（序章那次挑三張免費）；峰值 >3 照 3 算
+  function bargainPriceOf(content, card) {
+    const c = cardArg(content, card);
+    if (!c || TIERS.includes(c.tier)) return null;
+    const p = econ(content).bargain[Math.max(1, Math.min(3, peak(c)))];
     return p != null ? p : null;
   }
-  function relicPrice(content, id) { const r = content && content.relics && content.relics[id]; return r && r.price != null ? r.price : null; }
+  // 這張在這間店的價：特價箱的照特價（賣回也照它算半價，不會一買一賣賺錢）；其他照稀有度（頂點 8000：表先備好，v4 不上架）
+  function priceOf(content, card) {
+    const c = cardArg(content, card);
+    if (!c) return null;
+    if (inBargain(content, c.id)) return bargainPriceOf(content, c);
+    const p = econ(content).price[rarity(c)];
+    return p != null ? p : null;
+  }
+  function relicPrice(content, id) {
+    const r = content && content.relics && content.relics[id];
+    if (!r) return null;
+    return r.price != null ? r.price : econ(content).relicPrice;
+  }
   function sellValue(content, x) {
     const p = typeof x === 'string' ? relicPrice(content, x) : priceOf(content, x);
     return p == null ? 0 : Math.floor(p * econ(content).sellRate);
+  }
+  // 畫面上的錢：千分位（1200 → '1,200'）。C.shopUi 的字串自己帶 '$'，UI 代入 {n} 時用這個
+  function moneyText(n) {
+    const v = Math.round(+n || 0), s = String(Math.abs(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return (v < 0 ? '-' : '') + s;
   }
   const shopOf = run => run.shop || { bins: {}, relics: [], bargain: [], bargainPicked: false };
   function canShop(run) { return !!run && !run.over && !run.pending && !run.duel && run.prologue !== 'pending' && !!shopOf(run).bargainPicked; }
@@ -680,11 +759,13 @@
         const need = Math.max(0, run.bag.length + ids.length - CFG.bagMax);
         if (sells.length < need) return fail('bagFull');
         if (sells.length > need || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
-        const earn = sells.reduce((s, id) => s + sellValue(content, cardOf(content, id)), 0), price = EC.bargainPrice;
+        const each = ids.map(id => bargainPriceOf(content, id));
+        if (each.some(p => p == null)) return fail('notInStock');
+        const earn = sells.reduce((s, id) => s + sellValue(content, cardOf(content, id)), 0), price = each.reduce((s, p) => s + p, 0);
         if (run.money + earn < price) return fail('noMoney');
         for (const id of sells) { const v = sellValue(content, cardOf(content, id)); run.bag.splice(run.bag.indexOf(id), 1); run.money += v; S.earned += v; S.sold.push(id); effects.push({ loseCard: id, earn: v }); }
         run.money -= price; S.spent += price;
-        ids.forEach((id, k) => { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); S.bought.push(id); effects.push(k === 0 ? { gainCard: id, spend: price } : { gainCard: id, spend: 0 }); });
+        ids.forEach((id, k) => { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); S.bought.push(id); effects.push({ gainCard: id, spend: each[k] }); });
         return { ok: true, effects };
       }
       case 'buyRelic': {
@@ -804,10 +885,10 @@
     return est;
   }
   function valueOf(v, r, terminal) {
-    const p2 = v.pHp - r.toP, e2 = v.eHp - r.toE;
+    const p2 = v.pHp - r.toP, e2 = v.eHp - r.toE, ahead = playerAhead(p2, v.pMax, e2, v.eMax);
     let val = r.toE - r.toP;
-    if (p2 <= 0 || e2 <= 0) val += ((p2 <= 0 && e2 <= 0) ? p2 >= e2 : e2 <= 0) ? 20 : -20;
-    else if (terminal) val += p2 >= e2 ? 20 : -20;
+    if (p2 <= 0 || e2 <= 0) val += ((p2 <= 0 && e2 <= 0) ? ahead : e2 <= 0) ? 20 : -20;
+    else if (terminal) val += ahead ? 20 : -20;
     return val;
   }
   // 期望值一步最佳；同分取總星小的（省大牌）
@@ -862,8 +943,10 @@
   const policies = policyFns;
 
   return { VERSION, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, PLANNER_BY_DEPTH,
-    rng, makeRng, shuffle, fnv1a32, clone, star, aceAxis, topAttr, peak, deckMain, clash, relicObj,
+    RARITY, FEATURE_RARITY, SHELF_RARITY, SHOP_ORDER,
+    rng, makeRng, shuffle, fnv1a32, clone, star, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
-    newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick, priceOf, relicPrice, sellValue,
+    newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
+    rarity, rarityScore, categoryOf, GENRE_BIN, priceOf, bargainPriceOf, relicPrice, sellValue, moneyText,
     runPolicy, shopPolicy, bargainPolicy, policies };
 });

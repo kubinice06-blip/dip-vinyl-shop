@@ -15,7 +15,9 @@
 //      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 26 句（原版 RPG_BEATS 19 句扣掉被換掉的 4 句＋TUT_EPILOGUE_BEATS 11 句），
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
-//      honestyTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、pitches.json）；
+//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、pitches.json）；
+//      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
+//      FIXLIST 2：王牌沒有「不會被剋」（content 的字不准出現「不會被剋」）
 //      Beat 的畫面字（prompt／prompts／button／set.stamp）：在 roguelike.html 找得到＝原句、在 owner-lines-v4.json＝店主、其他＝新
 //   5. 標成 原句／拍板 的句子，必須一字不差地出現在現行 roguelike.html；標成 店主 的字串，必須一字不差地在 tools/owner-lines-v4.json
 //      （＝DECISIONS-v4 裡店主寫／核可的字，SPEC-v4 §2.2.9）
@@ -257,12 +259,16 @@ for (const id of Object.keys(C.enemies || {})) {
 }
 for (const k of ['retry', 'bagFull', 'relicFull']) if (!((C.lines || {}).owner || {})[k]) err('lines.owner', '缺少 ' + k);
 
-// 名牌上的誠實度（D §5：老實／偶爾唬人／愛唬人／老江湖，tag 店主）。v3 的脾氣（habits／habitLabels）只剩墊片，不上 v4 畫面、不列。
-for (const [k, h] of Object.entries(C.honesty || {})) {
-  const where = 'honesty.' + k + '.zh';
-  if (!h || typeof h.zh !== 'string' || !h.zh) { err(where, '沒有名牌上的詞'); continue; }
-  if (!TAG_OK(C.honestyTag)) err(where, '沒有 tag（honestyTag）');
-  add({ scene: '名牌上的誠實度（對決盤面 e-honesty）', where, who: '（畫面字）', key: 'q ' + h.q, text: h.zh, tag: C.honestyTag });
+// 誠實度不上畫面（FIXLIST 6，店主 2026-11-08 06:05）：C.honesty 只留機率 q；客人只有名字（身分），沒有副標
+for (const [k, h] of Object.entries(C.honesty || {})) if (h && 'zh' in h) err('honesty.' + k + '.zh', '誠實度不上畫面（FIXLIST 6）：拿掉 zh');
+if ('honestyTag' in C) err('honestyTag', '誠實度不上畫面（FIXLIST 6）：拿掉 honestyTag');
+for (const [k, e] of Object.entries(C.enemies || {})) if (e && 'title' in e) err('enemies.' + k + '.title', '客人的副標併進名字了（FIXLIST 6）：拿掉 title');
+// 客人名字（名牌、今晚來客清單；FIXLIST 6 店主定的身分）
+for (const [k, e] of Object.entries(C.enemies || {})) if (e && e.name) add({ scene: '客人名字（名牌、今晚來客；FIXLIST 6）', where: 'enemies.' + k + '.name', who: '（畫面字）', key: k, text: e.name, tag: '店主' });
+// 稀有度名（FIXLIST 8＝CARD_GAME_DESIGN §5）
+for (const [k, v] of Object.entries(C.rarityZh || {})) {
+  if (!TAG_OK(C.rarityTag)) err('rarityZh.' + k, '沒有 tag（rarityTag）');
+  add({ scene: '稀有度（唱片資訊、價錢）', where: 'rarityZh.' + k, who: '（畫面字）', key: k, text: v, tag: C.rarityTag });
 }
 
 // 提示句（SPEC-v4 §2.2.4）：每色 5 句；不寫屬性名；key 必為句子的子字串（結果句用它教「『key』是 X」）
@@ -418,6 +424,7 @@ for (const [id, p] of Object.entries(pitches)) {
 for (const it of items) {
   if (it.where.startsWith('pitch#') || it.where.startsWith('shops/')) continue;
   for (const w of OLD_MECH) if (String(it.text).includes(w)) err(it.where, 'v3 拿掉的系統「' + w + '」→ ' + it.text);
+  if (String(it.text).includes('不會被剋')) err(it.where, '王牌沒有「不會被剋」了（FIXLIST 2）→ ' + it.text);
   if (/^(tutorial|coachTips|duelText|hints|honesty|rules\.lines|lines\.)/.test(it.where)) {
     if (String(it.text).includes('晃')) err(it.where, '對決／教學的字不准有「晃」→ ' + it.text);
     if (String(it.text).includes('配件') && !/relic/i.test(it.where)) err(it.where, '「配件」只准出現在發燒配件的介面 → ' + it.text);
