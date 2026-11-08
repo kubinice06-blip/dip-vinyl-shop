@@ -150,7 +150,7 @@
 .dl .pop{position:absolute;left:0;top:0;z-index:60;display:flex;align-items:flex-end;white-space:nowrap;cursor:default}
 .dl .ab{position:relative;flex:none;min-width:54px;height:var(--ab-h);padding:0 9px;display:flex;align-items:center;justify-content:center;
   background:#fff;border:1.5px solid #bdbdbd;box-shadow:0 3px 8px rgba(0,0,0,.16);font:700 15px var(--dl-mono);-webkit-touch-callout:none}
-.dl .ab+.ab{margin-left:6px}
+.dl .ab+.ab{margin-left:10px}   /* 10：教學金框（洞外擴 4＋框線）框住一顆時不壓到隔壁那顆 */
 .dl .ab i{font:700 14px var(--dl-zh);font-style:normal;margin-right:4px}
 .dl .ab b{font-weight:700}
 .dl .ab.top{min-width:62px;height:var(--ab-top);border:2.5px solid var(--ink,#111);font-size:19px;box-shadow:0 4px 10px rgba(0,0,0,.24)}
