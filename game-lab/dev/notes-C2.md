@@ -28,5 +28,20 @@
 - 已由 B2 做掉、不用再動：B3 1／2／3／5／6／9（econ 標籤、configure、關掉後重畫、onStageAction 轉 econ、bargainPick resolve、lint-copy 掃 econ.js）；B1 給 B2 的盤面名字。
 
 ## 測試結果
+（node 部分：合併＋請求處理之後、FIXLIST 9 之前跑；FIXLIST 9 只動 duel.js／duel.css／e2e，lint-copy、check-content 之後重跑過）
+| 指令 | 結果 |
+|---|---|
+| `node game-lab/test/engine.test.mjs` | 1404471 passed, 0 failed |
+| `node game-lab/test/tutorial.test.mjs` | 142776 passed, 0 failed |
+| `node game-lab/test/shop.test.mjs`／`hit.test.mjs`／`chars.test.mjs` | 1058／330／30061 passed, 0 failed |
+| `node game-lab/sim.mjs --n 3000` | 20/20 通過（S1 81.2%、S2 最高 40.4%、S3 0%、S4 5.29 手／≤3 手 4.3%、S5 100%、S6 +6.1 點、S7 18.1 點、S8 99.7%） |
+| `node game-lab/tools/lint-copy.mjs` | 通過；句子 364（原句 45、店主 40、新 279）；劇本原句 26／26 |
+| `node game-lab/tools/check-content.mjs`／`check-shops.mjs`／`check-covers.mjs` | 通過／OK（含 bin:* 交叉比對）／OK（60 張、12 箱） |
+| `node game-lab/tests/e2e-prologue.mjs`（真的 econ.js） | 52 passed, 0 failed |
+| `LAB_SIZES=四尺寸 node game-lab/tests/e2e-duel.mjs`（index.html，FIXLIST 9 之後） | 116/116 PASS |
 
 ## 截圖
+段 6（390×664 @2，`game-lab/dev/shots/C2/`；腳本 scratchpad `c2/shots-c2.mjs`，PART=prologue,duel,shop、SIZE=）：
+- 序章：`390x664-P1-O3`、`-P2-O7-guess`、`-P3-O9-acepick`、`-P4-O11-dig`、`-P5-O13-bargain`（真的 econ 抽屜 3／3）、`-P6-O14-fly`、`-P7-O17-backcorridor`、`-P8-O21-choice`、`-P9-toDuel-settled`
+- 對決（FIXLIST 9 之後）：`390x664-D1-before-throw`、`-D2-counter`、`-D3-blocked-2stars`、`-D4-bluff`、`-D5-tie`；另有 375x548／430x932／360x640 同一組
+- 店：`390x664-S0-night-money`、`-S1-bin-drawer`、`-S2-bagfull-sellback`、`-S3-counter-relics`
