@@ -16,6 +16,7 @@ import { fileURLToPath, pathToFileURL } from 'url';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const LAB = path.resolve(HERE, '..');
 const CS = await import(pathToFileURL(path.join(LAB, 'tools/check-shops.mjs')).href);
+const CC = await import(pathToFileURL(path.join(LAB, 'tools/check-covers.mjs')).href);
 
 let pass = 0, fail = 0; const fails = [];
 function ok(cond, name, info) { if (cond) pass++; else { fail++; fails.push(name + (info !== undefined ? ' :: ' + (typeof info === 'string' ? info : JSON.stringify(info)) : '')); } }
@@ -29,6 +30,7 @@ const read = (f) => JSON.parse(fs.readFileSync(path.join(LAB, 'shops', f), 'utf8
 const dip = read('dip.json'), taipei = read('taipei.json'), basement = read('basement.json'), index = read('index.json');
 const DS = lib.DipShop, KS = dip.spriteScale, PERSON = 16 * KS;
 const propById = id => dip.props.find(p => p.id === id);
+const BINS = CS.loadBins();
 
 section('check-shops 全綠（schema、熱點、spots、別名、卡池、圖釘、比例、走位）', () => {
   const r = CS.runChecks();
@@ -51,19 +53,44 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
   eq(dip.cameras.full.anchor, 'bottom', 'full 從牆頂裁（唱盤區留著）');
   ok(dip.meta && dip.meta.crates === null, 'meta.crates＝null（箱子由 bin 推出，SPEC-v4 §2.3.1）');
   const bins = dip.props.filter(p => p.bin);
-  eq(bins.map(p => p.id + ':' + p.bin.key), ['backbin:folk', 'isl-0a:rnb', 'isl-0b:ost', 'isl-1a:rock', 'isl-1b:jp', 'isl-2a:hiphop', 'isl-2b:elec', 'isl-3a:new', 'isl-3b:cpop',
-    'crate-jazz:jazz', 'crate-tw:tw', 'crate-noise:noise', 'crate-sale:sale'], '12 箱＋特價箱，key 照 §2.3.5');
-  eq(bins.map(p => p.bin.label), ['民謠／藍調', 'R&B／靈魂', '原聲／圖庫', '搖滾／龐克', '日本／CITY', '嘻哈／放克', '電子／氛圍', '新進', '華語／台語', '爵士區', '台灣區', '噪音區', '特價區'], '箱子的曲風名');
+  // FIXLIST 4／5（X／Y 契約）：前排兩箱 jazz、tw；中島 8＝rock elec soul hiphop pop classical world folk；後牆矮櫃 blues；左木箱 new；門口牆 feature（靠門）＋picks
+  eq(bins.map(p => p.id + ':' + p.bin.key), ['wall-feature:feature', 'wall-picks:picks', 'backbin:blues', 'isl-0a:rock', 'isl-0b:elec', 'isl-1a:soul', 'isl-1b:hiphop', 'isl-2a:pop', 'isl-2b:classical',
+    'isl-3a:world', 'isl-3b:folk', 'crate-jazz:jazz', 'crate-tw:tw', 'crate-new:new', 'crate-sale:sale'], '十大類＋TW＋NEW＋門口牆兩區＋特價箱，位置照契約');
+  eq(bins.map(p => p.bin.label), ['店長推薦精選', '店長推薦', '藍調', '搖滾', '電子', '靈魂放克', '嘻哈 R&B', '流行', '古典', '世界', '民謠', '爵士', '台灣', '新進', '特價區'], '點了掛的中文全名');
+  eq(bins.map(p => CC.plateOf(p)), ['FEATURE', 'PICKS', 'BLUES', 'ROCK', 'ELEC', 'SOUL', 'HIP-HOP', 'POP', 'CLASSICAL', 'WORLD', 'FOLK', 'JAZZ', 'TW', 'NEW', 'SALE'], '名牌英文');
   ok(dip.props.filter(p => p.type === 'binTable' || p.type === 'binCabinet').every(p => p.bin || p.decor === true), '每個箱子有 bin 或 decor');
   ok(dip.props.every(p => !('lean' in p)), '沒有 lean（島上那一格＝front[1]）');
-  ok(bins.every(p => Array.isArray(p.front) && p.front.length === (p.cols || 3) && !p.hot), '每箱 front 張數＝欄數、不帶 hot');
-  eq(['isl-0a', 'isl-1b', 'isl-2a', 'isl-3b'].map(id => propById(id).front[1]), ['roberta-flack-born-to-love', '大貫妙子-grey-skies', 'dalek-negro-necro-nekros', '蔡琴-蔡琴老歌'], '島上原本 lean 那一格（front[1]）改從該箱卡池挑');
-  eq(propById('isl-1b').front[0], '宇多田ヒカル-first-love', '宇多田在日本／CITY 正面');
-  eq([propById('rack-a').section, propById('rack-b').section, propById('shelving').section, propById('booth').section], ['wallA', 'wallB', 'wallB', 'wallA'], '牆上兩區＋高櫃＋試聽桌');
+  const boxes = bins.filter(p => p.type !== 'ledge'), walls = bins.filter(p => p.type === 'ledge');
+  ok(boxes.every(p => Array.isArray(p.front) && p.front.length === (p.cols || 3) && !p.hot), '每箱 front 張數＝欄數、不帶 hot');
+  ok(walls.every(p => Array.isArray(p.cards) && p.cards.length === p.n * (p.rows || 1) && !p.hot && !p.section), '門口牆每格都有唱片（n×rows）、不帶 hot／section');
+  eq(walls.map(p => [p.x, p.n, p.rows, p.plate]), [[44, 2, 2, 'FEATURE'], [76, 5, 2, 'PICKS']], '門口牆：靠門 2×2＝FEATURE、其餘 5×2＝PICKS');
+  ok(propById('wall-feature').x < propById('wall-picks').x && propById('wall-feature').x - (propById('door').x + propById('door').w) < 10, 'FEATURE 在最靠門那一格');
+  eq(propById('isl-2a').front[0], '宇多田ヒカル-first-love', '宇多田在流行（POP）正面（FIXLIST 4 沒有日本／CITY 了）');
+  eq([propById('shelving').section, propById('booth').section], ['picks', 'picks'], '高櫃＋試聽桌的封面＝店長推薦');
   const seen = new Set(), dup = [];
   for (const p of dip.props) for (const id of [].concat(p.front || [], p.type === 'ledge' || p.type === 'shelving' ? p.cards : [], p.type === 'listenDesk' ? [p.stack] : [])) { if (seen.has(id)) dup.push(id); seen.add(id); }
   eq(dup, [], '看得到的封面整家店不重複');
-  eq(seen.size, 60, '看得到的封面 60 張（12 箱 41＋特價 2＋牆 14＋高櫃 2＋試聽 1）');
+  eq(seen.size, 60, '看得到的封面 60 張（12 箱 41＋特價 2＋門口牆 14＋高櫃 2＋試聽 1）');
+  // bins.js（契約形狀）：每一區 { key, label, zh, pool, front }；front＝店裡畫出來的；feature＝史詩／傳奇、其他＝一般稀有度
+  const BJ = BINS.shops.dip, KEYS = ['jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues', 'new', 'feature', 'picks'];
+  eq(Object.keys(BJ), KEYS, 'bins.js 的區（契約順序）');
+  const ZH = { jazz: '爵士', tw: '台灣', rock: '搖滾', elec: '電子', soul: '靈魂放克', hiphop: '嘻哈 R&B', pop: '流行', classical: '古典', world: '世界', folk: '民謠', blues: '藍調', new: '新進', feature: '店長推薦精選', picks: '店長推薦' };
+  const EN = { jazz: 'JAZZ', tw: 'TW', rock: 'ROCK', elec: 'ELEC', soul: 'SOUL', hiphop: 'HIP-HOP', pop: 'POP', classical: 'CLASSICAL', world: 'WORLD', folk: 'FOLK', blues: 'BLUES', new: 'NEW', feature: 'FEATURE', picks: 'PICKS' };
+  for (const k of KEYS) {
+    const b = BJ[k];
+    ok(b.key === k && b.label === EN[k] && b.zh === ZH[k] && Array.isArray(b.pool) && Array.isArray(b.front), 'bins.js ' + k + ' 形狀＝{key,label,zh,pool,front}', [b.key, b.label, b.zh]);
+    ok(!b.display, 'bins.js ' + k + ' 沒有 display（每一區都賣）');
+    ok(b.front.every(id => b.pool.includes(id)), 'bins.js ' + k + ' front ⊂ pool');
+    ok(b.pool.length >= b.front.length + (k === 'feature' ? 3 : 6), 'bins.js ' + k + ' pool 夠每晚上貨（' + b.pool.length + ' ≥ 看得到 ' + b.front.length + '＋' + (k === 'feature' ? 3 : 6) + '）');
+    const rar = b.pool.map(id => CC.rarityOf(cards[id]));
+    ok(rar.every(r => k === 'feature' ? (r === 'epic' || r === 'legendary') : ['common', 'rare', 'uncommon'].includes(r)), 'bins.js ' + k + ' 稀有度', rar);
+    if (!['new', 'feature', 'picks'].includes(k)) ok(b.pool.every(id => CC.catOf(cards[id]) === k), 'bins.js ' + k + ' 每張的分類（第一個曲風／台灣地區）＝' + k, b.pool.filter(id => CC.catOf(cards[id]) !== k));
+  }
+  const allPool = KEYS.flatMap(k => BJ[k].pool);
+  eq(allPool.length, new Set(allPool).size, '各區卡池互不重疊（全店當天不會重複）');
+  eq(JSON.stringify(BJ.feature.front), JSON.stringify(propById('wall-feature').cards), 'feature front＝牆上那 4 格');
+  eq(BJ.picks.front, propById('wall-picks').cards.concat(propById('shelving').cards, [propById('booth').stack]), 'picks front＝牆上 10＋高櫃 2＋試聽桌 1（照道具順序）');
+  ok(CC.runCovers().problems.length === 0, 'check-covers 0 problems', CC.runCovers().problems.slice(0, 5));
   ok(!dip.props.some(p => /rug/i.test(p.type)), '沒有地毯（店主）');
   ok(!dip.bg, '沒有背景圖：全部是程式畫的');
   // 地下室（格子版）照舊
@@ -79,15 +106,20 @@ section('熱點：id 唯一、本店該有的都有、牆上的唱片可以點',
   }
   const r = CS.checkLayout(dip, 'shops/dip.json', lib, cards, content);
   for (const id of CS.o34HotIds(dip)) ok(r.hotIds.includes(id), 'dip 有熱點 ' + id);
-  eq(CS.o34HotIds(dip).filter(h => h.startsWith('bin:')).length, 13, '箱子主熱點 bin:<key> ×13（從 o.bin.key 推出）');
+  eq(CS.o34HotIds(dip).filter(h => h.startsWith('bin:')).length, 15, '主熱點 bin:<key> ×15（12 箱＋特價箱＋門口牆兩區，從 o.bin.key 推出）');
+  ok(r.hotIds.includes('bin:feature') && r.hotIds.includes('bin:picks'), '門口牆 FEATURE／PICKS 都是可以點的熱點');
   ok(!r.hotIds.some(h => /^crate-/.test(h)), '沒有 v3 的 crate-* 熱點');
   const racks = r.hotIds.filter(h => h.startsWith('rack:'));
-  eq(racks.length, 24, '牆上 14＋高櫃 2＋靠牆矮櫃 8 張唱片都是熱點');
+  eq(racks.length, 10, '高櫃 2＋靠牆矮櫃 8 張唱片是單張熱點（門口牆整面＝翻那一區）');
   ok(racks.every(h => cards[h.slice(5)]), '每張都在卡池（點了開唱片資訊）');
-  // 熱點產生器跟 layout 一樣：牆上第一排的位置
-  const ledge = propById('rack-a'), hs = DS.O34.PROPS.ledge.hots(ledge, { card: id => cards[id] });
-  eq(hs[0].rect, [47, 17, 12, 12], '牆上第一張的熱點');
-  eq(hs[0].action, 'wall-record:' + ledge.cards[0], '牆上唱片＝唱片資訊');
+  // 門口牆：有 bin 的牆架不出單張熱點；box 含名牌；沒有 bin 的牆架照舊每格一個（位置不變）
+  const fw = propById('wall-feature'), pk = propById('wall-picks');
+  eq(DS.O34.PROPS.ledge.hots(fw, { card: id => cards[id] }), [], '有 bin 的牆架不出單張熱點');
+  eq(DS.O34.PROPS.ledge.box(fw), [43, 6, 33, 44], 'FEATURE 牆架 box＝2×2 格＋名牌');
+  eq(DS.O34.PROPS.ledge.box(pk), [76, 6, 74, 44], 'PICKS 牆架 box＝5×2 格＋名牌');
+  const plain = Object.assign({}, fw, { bin: null, plate: null, rows: 1, n: 7, cards: pk.cards.slice(0, 7) }), hs = DS.O34.PROPS.ledge.hots(plain, { card: id => cards[id] });
+  eq(hs[0].rect, [47, 17, 12, 12], '沒有 bin 的牆架：第一張的熱點位置照舊');
+  eq(hs[0].action, 'wall-record:' + plain.cards[0], '沒有 bin 的牆架：唱片＝唱片資訊');
   // 櫃檯上的子熱點：正在放、店貓
   const ct = DS.O34.PROPS.counter.hots(propById('counter'), { card: id => cards[id] });
   eq(ct.map(h => h.id), ['now', 'cat'], '櫃檯上：正在放、店貓');
@@ -103,22 +135,26 @@ section('熱點：id 唯一、本店該有的都有、牆上的唱片可以點',
   ok(rb.problems.some(p => /browse.*家具裡/.test(p)), '抓得到站在箱子桌裡的 spot', rb.problems);
   // 故意做壞箱子：bin.key 重複、lean、front 張數、stand 在家具裡、沒有 bin 也沒有 decor、兩台唱盤、牆上空格、壞招牌
   const b2 = JSON.parse(JSON.stringify(dip)), P2 = id => b2.props.find(p => p.id === id);
-  P2('isl-0b').bin.key = 'rnb';
+  P2('isl-0b').bin.key = 'rock';
   P2('isl-1a').lean = 'the-band-music-from-big-pink';
   P2('isl-2a').front = P2('isl-2a').front.slice(0, 2);
   P2('isl-2b').bin.stand = [160, 190];
   delete P2('isl-3a').bin;
   b2.props.push(Object.assign({}, P2('deck'), { id: 'deck2', x: 20 }));
-  P2('rack-b').cards = P2('rack-b').cards.slice(0, 6);
+  P2('wall-picks').cards = P2('wall-picks').cards.slice(0, 9);
+  P2('wall-feature').bin.stand = [60, 200];
+  P2('shelving').section = 'wallb';
   P2('counter').sign = { emblem: 'nope' };
   const r2 = CS.checkLayout(b2, 'shops/dip.json', lib, cards, content), has = re => r2.problems.some(p => re.test(p));
-  ok(has(/bin\.key 重複 rnb/), '抓得到 bin.key 重複', r2.problems);
+  ok(has(/bin\.key 重複 rock/), '抓得到 bin.key 重複', r2.problems);
   ok(has(/isl-1a.*lean/), '抓得到 lean', r2.problems);
   ok(has(/isl-2a.*front 要剛好 3 張/), '抓得到 front 張數不對', r2.problems);
   ok(has(/isl-2b.*bin\.stand.*家具裡/), '抓得到 stand 在家具裡', r2.problems);
   ok(has(/isl-3a.*要有 bin.*decor/), '抓得到沒有 bin 也沒有 decor', r2.problems);
   ok(has(/剛好一台 duelDeck/), '抓得到兩台唱盤', r2.problems);
-  ok(has(/rack-b.*7 格都要有唱片/), '抓得到牆上空格', r2.problems);
+  ok(has(/wall-picks.*10 格都要有唱片/), '抓得到牆上空格（n×rows）', r2.problems);
+  ok(has(/wall-feature.*bin\.stand y＝200/), '抓得到門口牆的 stand 不在牆前走道', r2.problems);
+  ok(has(/shelving.*section「wallb」在 bins\.js 沒有/), '抓得到不存在的 section', r2.problems);
   ok(has(/emblem「nope」/), '抓得到壞招牌', r2.problems);
 });
 
@@ -214,7 +250,7 @@ section('路線表（SPEC-v4 §2.3.2）：不穿家具、1 倍速不超過上限
   // 所有 bin.stand 兩兩之間、到 browse：≤4.5 s
   const ks = Object.keys(S).filter(k => k.startsWith('bin:')).concat(['browse']);
   let n = 0; for (const a of ks) for (const b of ks) if (a !== b) { one(a, b, 4.5, false); n++; }
-  eq(n, 14 * 13, '箱子 13 個 stand＋browse 兩兩');
+  eq(n, 16 * 15, '箱子 13 個＋門口牆 2 個 stand＋browse 兩兩');
   // 特價箱：在門下方左牆邊、stand 貼著箱子、不擋 door→atdoor→nav[30,100]→nav[72,110]
   const sale = propById('crate-sale'), sb = DS.O34.PROPS.binTable.box(sale), st = sale.bin.stand;
   ok(sale.x <= 60 && sale.y >= 100 && sale.y <= 160, '特價箱在門下方的左牆邊（x ≤ 60、y 100–160）', [sale.x, sale.y]);
@@ -312,7 +348,7 @@ section('看得到的封面只來自資料（不用 P.poolPick 從全卡池隨�
   for (const o of dip.props) { const spec = DS.O34.PROPS[o.type]; if (spec && o.type !== 'duelfx') spec.draw(P, o, S); }
   eq(picks, 0, '整家店畫一次，poolPick 一次都沒被叫');
   // 空格不會偷偷補一張：拿掉牆上一格、箱子沒有 front、試聽桌沒有 stack
-  const ledge = Object.assign({}, propById('rack-a'), { cards: propById('rack-a').cards.slice(0, 5) }), bin = Object.assign({}, propById('isl-0a'), { front: null }), desk = Object.assign({}, propById('booth'), { stack: null });
+  const ledge = Object.assign({}, propById('wall-picks'), { cards: propById('wall-picks').cards.slice(0, 5) }), bin = Object.assign({}, propById('isl-0a'), { front: null }), desk = Object.assign({}, propById('booth'), { stack: null });
   for (const o of [ledge, bin, desk]) DS.O34.PROPS[o.type].draw(P, o, S);
   eq(picks, 0, '空格畫素色封套／空架，不抽卡');
   const seen = [...covers].filter(id => id !== 'caetano-veloso-transa');
@@ -387,7 +423,7 @@ section('D §3：沒有任何人的路線穿過家具的腳下範圍（任兩個
   const standing = dip.props.filter(o => { const sp = OP[o.type], ly = o.layer || (sp && sp.layer); return sp && !o.hidden && !['wall', 'bg', 'fx'].includes(ly); });
   const covered = standing.map(o => o.id || o.type + '#' + dip.props.indexOf(o)).filter(id => feet.filter(f => f[2].includes(id)).length === 1);
   eq(covered.length, standing.length, '每個站立道具都剛好在一塊腳下範圍裡（' + standing.length + ' 件）');
-  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'crate-noise', 'shelving', 'island', 'backbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
+  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'crate-new', 'shelving', 'island', 'backbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
   ok(['isl-0a', 'isl-0b', 'crate-jazz', 'crate-tw'].every(id => feet.find(f => f[0] === 'island')[2].includes(id)), '中島（含最上排 isl-0a／isl-0b）一塊');
   const obs = DS.navObstacles(dip), pts = Object.entries(dip.spots).filter(([, s]) => !s[2]).map(([k, s]) => [k, s.slice(0, 2)])
     .concat(dip.props.filter(p => p.bin).map(p => ['bin:' + p.bin.key, p.bin.stand]));
@@ -432,7 +468,7 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   const isl = F('island');
   ok(isl && isl.props.length === 10 && isl.gap <= 2, '中島 10 箱合成一塊（縫 ≤2 格）', isl && [isl.props.length, isl.gap]);
   // 每件道具畫出來的（寬 ≥3 格的）每一格都在它的腳下範圍裡（格子中心嚴格在多邊形內）
-  const own = { counter: 'counter', deck: 'deck', backbin: 'backbin', booth: 'booth', 'crate-sale': 'crate-sale', 'crate-noise': 'crate-noise', shelving: 'shelving' };
+  const own = { counter: 'counter', deck: 'deck', backbin: 'backbin', booth: 'booth', 'crate-sale': 'crate-sale', 'crate-new': 'crate-new', shelving: 'shelving' };
   for (const o of dip.props) if (/^isl-|^crate-(jazz|tw)$/.test(o.id || '')) own[o.id] = 'island';
   for (const [id, fid] of Object.entries(own)) {
     const o = P(id), f = F(fid), px = maskOfProp(o), bx = (dip.footprints.behind || {})[id], fy = o.y - o.d;
@@ -541,7 +577,7 @@ asection('舞台 v4：version、INTERACT、bins()、hold(\'o\')、finish、faceT
   eq([I.scene, I.duel, I.reward].map(x => JSON.stringify(x)), [JSON.stringify(['rack:*', 'now', 'bin:*']), JSON.stringify(['rack:*', 'now', 'owner', 'bin:*']), JSON.stringify(['bin:*'])], 'INTERACT scene／duel／reward（§2.3.8）');
   ok(I.title === null && I.map === null, 'title／map 照舊全開');
   const bins = st.bins();
-  eq(bins.length, 13, 'bins() 13 箱（含特價箱）');
+  eq(bins.length, 15, 'bins() 15 區（12 箱＋特價箱＋門口牆 FEATURE／PICKS）');
   eq(bins.map(b => b.hotId), dip.props.filter(p => p.bin).map(p => 'bin:' + p.bin.key), 'hotId＝bin:<key>');
   ok(bins.every(b => { const p = propById(b.propId); return p && p.bin.label === b.label && JSON.stringify(p.bin.stand) === JSON.stringify(b.stand); }), 'label／stand／propId 照 layout');
   // hold('o')：老闆手上有那張、arm show；不呼叫 setFlips、不記進 TT.held（§2.3.2、§5.1 A2）

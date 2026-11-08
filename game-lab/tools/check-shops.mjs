@@ -11,7 +11,8 @@
 //       v4（SPEC-v4 §2.3、§5.1）：唱盤區剛好一台 duelDeck（duel.deck＝轉盤中心、在兩個對決者中間）＋特效層；櫃檯招牌 o.sign 合法（EMBLEM 點陣）；
 //       每個箱子有 bin（key 唯一、label、stand 貼著箱子、不在家具裡）或 decor、front 張數＝欄數、沒有 lean，主熱點 bin:<key> 由資料推出；
 //       交叉比對（v4 整合 C）：由資料推出的 bin:* 集合＝DipShop.buildHotList(L) 真的產生的 bin:* 集合；
-//       牆上每格都有唱片、section 合法；看得到的封面 ⊂ bins.js 那一區（只警告；嚴格檢查在 check-covers）；
+//       門口牆（FIXLIST 4／5）：有 bin 的牆架（feature／picks）同樣要 key 唯一、label、stand（站在牆前的走道上）、每格都有唱片（n×rows）；
+//       section 是 bins.js 的區；看得到的封面 ⊂ bins.js 那一區（只警告；嚴格檢查在 check-covers）；
 //       走位：每個 spot 與 bin.stand 不站在家具裡，任兩個之間的 navRoute 每一段都不穿過家具（navRoute 回 null＝走不到）；
 //       另外逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
 //       腳下範圍（FIXLIST 1，店主「不要跨過中島唱片區」）＝DipShop.footprints：道具實際畫出來的那一塊（量的）∪ foot；
@@ -36,7 +37,8 @@ export const O34_HOTS = ['door', 'now', 'poster-event', 'booth', 'counter', 'cat
 export function o34HotIds(L) { return O34_HOTS.concat((L.props || []).filter(o => o.bin && o.bin.key).map(o => 'bin:' + o.bin.key)); }
 // v4 新增的站位（序章後走道對峙、特價箱前）
 export const O34_SPOTS = SHOP_SPOTS.concat(['leaving', 'mid', 'sale']);
-export const WALL_SECTIONS = ['wallA', 'wallB'];
+// 沒有 bin、但畫著封面的道具（高櫃、試聽桌）標 section＝它的封面屬於哪一區（bins.js 的 key；FIXLIST 4／5 起＝picks 店長推薦）
+export const SECTION_RE = /^[a-z0-9]+$/;
 // 斜俯視的路線：navRoute 走不到回 null（A3 加固後）或舊版的 [b]；回 { pts, len, clear }，走不到回 null
 // （clear＝每一段都過得了 navClear：避障框是 DipShop.navObstacles 的多邊形，端點在框裡的那個框跳過）
 export function routeOf(DS, L, a, b, obs) {
@@ -205,6 +207,7 @@ export function checkOblique(L, file, lib, cards, content) {
     drawOutside() {}, outsideCount() { return 1; }
   };
   const ids = new Map(), recRefs = [], kinds = {}, binKeys = new Map(), stands = [], decks = [];
+  const BINS0 = loadBins(), binsShop0 = BINS0 && BINS0.shops && BINS0.shops[L.id];
   const addHot = (id, rect, action, label, src) => {
     if (typeof id !== 'string' || !id) { bad(src + '：熱點沒有 id'); return; }
     if (ids.has(id)) bad('熱點 id 重複：' + id + '（' + ids.get(id) + '、' + src + '）'); else ids.set(id, src);
@@ -257,10 +260,31 @@ export function checkOblique(L, file, lib, cards, content) {
         else bad(src + '：bin.label（點了放開掛的曲風名、抽屜標題）要有字');
       }
     }
-    if (o.section != null && !WALL_SECTIONS.includes(o.section)) bad(src + '：section 要是 ' + WALL_SECTIONS.join('／'));
+    if (o.section != null) {
+      if (typeof o.section !== 'string' || !SECTION_RE.test(o.section)) bad(src + '：section 要是小寫英數的區名（bins.js 的 key）：' + o.section);
+      else if (binsShop0 && !binsShop0[o.section]) bad(src + '：section「' + o.section + '」在 bins.js 沒有這一區');
+      if (o.bin) bad(src + '：有 bin 的道具不用再寫 section（封面就屬於 bin.key 那一區）');
+    }
     if (o.type === 'ledge') {
-      const n = o.n || 7;
-      if (!Array.isArray(o.cards) || o.cards.length !== n || o.cards.some(r => !r)) bad(src + '：牆上 ' + n + ' 格都要有唱片（cards.length＝n、不准空格；不能用 poolPick 退路）');
+      const n = (o.n || 7) * Math.max(1, o.rows || 1);
+      if (!Array.isArray(o.cards) || o.cards.length !== n || o.cards.some(r => !r)) bad(src + '：牆上 ' + n + ' 格都要有唱片（cards.length＝n×rows、不准空格；不能用 poolPick 退路）');
+      if (o.plate != null && (typeof o.plate !== 'string' || !/^[A-Z0-9&\- .!?]+$/.test(o.plate))) bad(src + '：plate 要是像素字畫得出來的大寫英文：' + o.plate);
+      // 門口牆一區（FIXLIST 4／5）：主熱點 bin:<key>＝整面架子（box，含名牌）；stand＝站在牆前的走道上（x 在架子範圍 ±8 格、離架子下緣 ≤60 格）
+      if (o.bin) {
+        if (o.hot) bad(src + '：有 bin 的牆架不要再寫 hot（主熱點由 bin 產生）');
+        const k = o.bin.key;
+        if (typeof k !== 'string' || !/^[a-z0-9]+$/.test(k)) bad(src + '：bin.key 要是小寫英數：' + k);
+        else if (binKeys.has(k)) bad(src + '：bin.key 重複 ' + k + '（' + binKeys.get(k) + '）'); else binKeys.set(k, src);
+        const st = o.bin.stand, bx = spec.box(o);
+        if (!Array.isArray(st) || st.length !== 2 || !inside(st[0], st[1])) bad(src + '：bin.stand 要是畫布內的 [x, y]：' + JSON.stringify(st));
+        else {
+          stands.push(['bin:' + k, st, src]);
+          if (st[0] < bx[0] - 8 || st[0] > bx[0] + bx[2] + 8) bad(src + '：bin.stand x＝' + st[0] + ' 不在牆架前（' + (bx[0] - 8) + '–' + (bx[0] + bx[2] + 8) + '）');
+          if (!(st[1] > bx[1] + bx[3] && st[1] - (bx[1] + bx[3]) <= 60)) bad(src + '：bin.stand y＝' + st[1] + ' 要在牆架下緣（' + (bx[1] + bx[3]) + '）之下 60 格內（站在牆前的走道上）');
+        }
+        if (typeof o.bin.label === 'string' && o.bin.label) addHot('bin:' + k, bx.map(v => Math.round(v)), 'crate:' + k, o.bin.label, src + ' 牆架');
+        else bad(src + '：bin.label（點了放開掛的區名、抽屜標題）要有字');
+      }
     }
     if (o.type === 'duelDeck') { decks.push(o); if (tall >= CH) bad(src + '：唱盤台比人高'); }
     if (o.type === 'counter') { if (tall >= CH) bad(src + '：櫃檯比人高'); if (o.now) recRefs.push([o.now, src]); checkSign(o.sign, src + '.sign', lib, bad); }
@@ -301,7 +325,8 @@ export function checkOblique(L, file, lib, cards, content) {
       for (const id of fromHot) if (!fromData.has(id)) bad('交叉比對：buildHotList 有 ' + id + '，但沒有哪個道具的 o.bin.key 對得上');
     }
   } else bad('shop.js 沒有 DipShop.buildHotList：交叉比對做不了');
-  if ([...ids.keys()].filter(h => h.startsWith('rack:')).length < 12) bad('牆上（與櫃子裡）可點的唱片少於 12 張');
+  // 每張單點看唱片資訊的封面（沒有 bin 的牆架、後牆矮櫃 hotCovers、高櫃）都要有 rack:<id>；門口牆有 bin＝整面翻那一區，不出單張熱點
+  if ([...ids.keys()].filter(h => h.startsWith('rack:')).length < 8) bad('可以單點看唱片資訊的封面少於 8 張（後牆矮櫃 8 張要有 rack:<id>）');
   for (const [r, src] of recRefs) if (!cards[r]) bad(src + '：唱片 ' + r + ' 不在 cards.js');
   (L.actors || []).forEach((a, i) => {
     if (!a.id || typeof a.id !== 'string') bad('actors[' + i + '] 缺 id');

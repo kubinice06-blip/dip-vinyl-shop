@@ -6,7 +6,7 @@
 // 每個尺寸、每個畫面（全開）：
 //   1. __lab.stage.shop.hotPoints() 的每一點用 page.touchscreen.tap 真點；__lab.stage.onAction 先換成只記 hot.id 的函式（不開面板），觸發的 id＝自己；
 //   2. 每箱沿可見帶再點左、中、右 3 點，都觸發自己；
-//   3. x=118、162 從 y=200 到 212（美術格）每 2 格點一次：落在 bin:new／bin:cpop 可見區的點不得觸發 bin:jazz／bin:tw；
+//   3. x=118、162 從 y=200 到 212（美術格）每 2 格點一次：落在中島最後一排（isl-3a／isl-3b 的 bin，FIXLIST 4 起＝世界／民謠）可見區的點不得觸發前排 bin:jazz／bin:tw；
 //   4. 每個有外框的站立家具（植物、凳子、矮櫃、高櫃、唱盤台、箱子、櫃檯、試聽桌）可見區中心：觸發它自己的熱點或什麼都沒有，不能觸發別人；
 //   5. 按下 50 ms 時畫面上已經有金色描框（截圖數金色像素）；放開後 300 ms 內出現名牌，箱子的名牌字＝bin.label；
 //   另外：網址帶 ?strict=1（走不到就丟錯）；主控台 0 錯誤；橫條鏡頭裡男子／你說話時泡泡不碰老闆頭部（老闆 x±16 格，SPEC-v4 §2.3.7）。
@@ -112,16 +112,18 @@ async function runScreen(browser, w, h, screenName) {
 
     // ---- 3. R-x0 probe3：x=118／162、y=200–212 每 2 格
     let n3 = 0, bad3 = [], front3 = [];
+    // 中島最後一排的箱子（從 layout 讀，不寫死 key：FIXLIST 4 改分類後是 world／folk）
+    const back3 = await page.evaluate(() => (window.__lab.stage.layout.props || []).filter(o => (o.id === 'isl-3a' || o.id === 'isl-3b') && o.bin).map(o => 'bin:' + o.bin.key));
     for (const x of [118, 162]) for (let y = 200; y <= 212; y += 2) {
       const top = await page.evaluate(([x, y]) => { const t = window.__lab.stage.shop.pick(x, y, { raw: true }); return t ? t.id : null; }, [x, y]);
       const [X, Y] = await artToPage(page, x, y);
       const got = await tapGet(page, X, Y);
-      if (top === 'bin:new' || top === 'bin:cpop') {
+      if (back3.includes(top)) {
         n3++;
         if (got.includes('bin:jazz') || got.includes('bin:tw') || got[0] !== top) bad3.push(`(${x},${y}) 在 ${top} → ${JSON.stringify(got)}`);
       } else front3.push(`(${x},${y})${top}→${got.join('')}`);
     }
-    record(3, size, !bad3.length && n3 >= 10, `新進／華語可見區 ${n3} 點不會開成爵士／台灣` + (bad3.length ? ' 錯：' + bad3.join('、') : '') + `（前排木箱範圍內 ${front3.length} 點：${front3.join(' ')}）`);
+    record(3, size, !bad3.length && n3 >= 10 && back3.length === 2, `中島最後一排（${back3.join('／')}）可見區 ${n3} 點不會開成爵士／台灣` + (bad3.length ? ' 錯：' + bad3.join('、') : '') + `（前排木箱範圍內 ${front3.length} 點：${front3.join(' ')}）`);
 
     // ---- 4. 每個站立家具的可見區中心：自己的熱點或什麼都沒有
     const furn = await page.evaluate(() => {

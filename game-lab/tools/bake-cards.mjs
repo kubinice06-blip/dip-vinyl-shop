@@ -4,8 +4,10 @@
 //   - deck-lists.json 裡 `_` 開頭的鍵是設定，不是卡組：_region（{cardId: tw|jp|zh|xx} 覆寫）、_bins（每一區的 rule）、_ost（原聲帶旗標）。
 //   - region 值域 tw｜jp｜zh｜xx：先看 _region，再看 TW／JP／ZH 正規式；王菲＝zh。
 //   - 推薦語強制：ace_*、gift_*、bargain、gold。
-//   - 另外寫 bins.js（UMD：window.DipLabBins／module.exports）：bin_<key> ×12＋wall_a／wall_b → shops.dip.<key>／wallA／wallB，
-//     每一區 { rule, pool, display? }；每張卡都要符合該區 rule、箱子彼此不重複、也不跟牌組／禮物／特價箱／王牌／掉牌／牆重複，否則整份不寫。
+//   - 另外寫 bins.js（UMD：window.DipLabBins／module.exports）：bin_<key> → shops.dip.<key>＝{ key, label, zh, rule, pool, front }
+//     （FIXLIST 4／5，X／Y 契約：十大類＋tw＋new＋門口牆 feature／picks；label／zh／rule 在 deck-lists.json 的 _bins；
+//     front＝shops/dip.json 那一區看得到的封面，照道具順序，由 check-covers.mjs 的 sectionFronts 讀）；
+//     每張卡都要符合該區 rule（check-covers.mjs 的 ruleMisses，同一份）、front ⊂ pool、各區不重複、也不跟牌組／禮物／特價箱／王牌／掉牌重複，否則整份不寫。
 //
 //   node game-lab/tools/bake-cards.mjs              # 解析 seed＋Apple 試聽索引＋Firestore 封面，驗證後寫 cards.js
 //   node game-lab/tools/bake-cards.mjs --no-verify  # 不逐一驗證封面／試聽網址（只在離線時用）
@@ -29,6 +31,7 @@
 // 從 $S/design/ref/build-cards.mjs 擴寫。
 import fs from 'fs';
 import path from 'path';
+import { ruleMisses as ruleMissesCC, sectionFronts } from './check-covers.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -74,8 +77,8 @@ const groupsOf = {};       // id -> [group]
 const appleIdOf = {};
 
 const seedRow = s => { const [a, b] = s.split('|'); return seed.find(r => r[0] === a && r[1] === b) || seed.find(r => norm(r[0]) === norm(a) && norm(r[1]) === norm(b)); };
-// v4：牆（wall_a／wall_b）是展示用，可以擺王牌（例：OK Computer 在搖滾／流行牆）；星數照王牌組（7/1/1 系列）
-const DISPLAY_GROUPS = new Set(['wall_a', 'wall_b']);
+// v4：牆（wall_a／wall_b）原本是展示用、可以擺王牌；FIXLIST 4／5 起門口牆也是賣的（feature／picks＝bin_*），沒有展示組了
+const DISPLAY_GROUPS = new Set([]);
 const ACE_OF = {};
 for (const [group, arr] of Object.entries(lists)) if (group.startsWith('ace_')) for (const s of arr) { const r = seedRow(s); if (r) ACE_OF[cardId(r[0], r[1])] = group.slice(4); }
 for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) for (const s of arr) {
@@ -118,54 +121,47 @@ for (const id of Object.keys(REGION_OVERRIDE)) {
 }
 for (const id of OST_IDS) if (!cards[id]) problems.push('OST-FLAG-FOR-UNKNOWN-CARD ' + id);
 
-// ---- 箱子與牆（v4，SPEC-v4 §2.2.1、§4.5）→ bins.js ----
-// rule：first（genres[0] 要在裡面）、regions、minYear、minTop:{attr,star}（該軸 ≥star 且是峰值，可並列）、notGenres、ost:true（專輯名符合 OST_RE 或 id 在 _ost）
-function ruleMisses(rule, c) {
-  const why = [];
-  if (rule.first && !rule.first.includes((c.genres || [])[0])) why.push('first=' + (c.genres || [])[0]);
-  if (rule.regions && !rule.regions.includes(c.region)) why.push('region=' + c.region);
-  if (rule.minYear != null && !(c.year >= rule.minYear)) why.push('year=' + c.year);
-  if (rule.minTop) { const v = c[rule.minTop.attr]; if (!(v >= rule.minTop.star && v === Math.max(c.c, c.o, c.h))) why.push('minTop ' + rule.minTop.attr + '=' + v); }
-  if (rule.notGenres && (c.genres || []).some(g => rule.notGenres.includes(g))) why.push('notGenres');
-  if (rule.ost && !(OST_RE.test(c.album) || OST_IDS.includes(c.id))) why.push('not-ost');
-  return why;
-}
-const BIN_GROUP = g => g.startsWith('bin_') ? g.slice(4) : g === 'wall_a' ? 'wallA' : g === 'wall_b' ? 'wallB' : null;
+// ---- 箱子與門口牆（v4 FIXLIST 4／5，X／Y 契約）→ bins.js ----
+// rule 的判斷＝check-covers.mjs 的 ruleMisses（cat、rarity、first、regions、minYear、minTop、notGenres、ost）
+const ruleMisses = (rule, c) => ruleMissesCC(rule, c, OST_IDS);
+const BIN_GROUP = g => g.startsWith('bin_') ? g.slice(4) : null;
 const NOT_EXCLUSIVE = new Set(['gold', 'listen', 'stake']);   // v3 唱片櫃／試聽機用的組，可以跟箱子重疊
+const SHOP = JSON.parse(fs.readFileSync(path.join(LAB, 'shops/dip.json'), 'utf8'));
 function buildBins() {
   const probs = [], dip = {};
   const idOf = s => { const r = seedRow(s); return r ? cardId(r[0], r[1]) : null; };
-  const uses = {};         // id -> [{g, cat}]（只看「排他」組：牌組、禮物、特價箱、王牌、掉牌、牆、箱子）
+  const uses = {};         // id -> [{g, cat}]（只看「排他」組：牌組、禮物、特價箱、王牌、掉牌、箱子）
   for (const [g, arr] of Object.entries(lists)) {
     if (g.startsWith('_') || NOT_EXCLUSIVE.has(g)) continue;
-    const key = BIN_GROUP(g);
-    const cat = !key ? 'deck' : (key === 'wallA' || key === 'wallB') ? 'wall' : 'bin';
+    const cat = BIN_GROUP(g) ? 'bin' : 'deck';
     for (const s of arr) { const id = idOf(s); if (id) (uses[id] = uses[id] || []).push({ g, cat }); }
   }
-  // 箱子的卡不准出現在別處；兩面牆之間不准重複；牆跟牌組可以重複（展示用）；牌組之間的重複歸 check-content 管
-  for (const [id, u] of Object.entries(uses)) if (u.length > 1) {
-    if (u.some(x => x.cat === 'bin') || u.filter(x => x.cat === 'wall').length > 1) probs.push('BIN-OVERLAP ' + id + ' [' + u.map(x => x.g).join(', ') + ']');
-  }
+  // 箱子的卡不准出現在別處（各區之間、牌組、禮物、特價箱、王牌、掉牌）；牌組之間的重複歸 check-content 管
+  for (const [id, u] of Object.entries(uses)) if (u.length > 1 && u.some(x => x.cat === 'bin')) probs.push('BIN-OVERLAP ' + id + ' [' + u.map(x => x.g).join(', ') + ']');
+  const fronts = sectionFronts(SHOP);
   for (const [g, arr] of Object.entries(lists)) {
     if (g.startsWith('_')) continue;
     const key = BIN_GROUP(g);
     if (!key) continue;
-    const rule = BIN_RULES[key];
-    if (!rule) { probs.push('NO-BIN-RULE ' + key + ' (deck-lists.json _bins)'); continue; }
+    const M = BIN_RULES[key];
+    if (!M || !M.rule || !M.label || !M.zh) { probs.push('NO-BIN-META ' + key + '（deck-lists.json _bins 要有 label、zh、rule）'); continue; }
     const pool = [];
     for (const s of arr) {
       const id = idOf(s); if (!id || !cards[id]) continue;
-      const miss = ruleMisses(rule, cards[id]);
+      const miss = ruleMisses(M.rule, cards[id]);
       if (miss.length) probs.push('BIN-RULE ' + key + ' ' + id + ' ' + miss.join(','));
       pool.push(id);
     }
-    dip[key] = Object.assign({ rule }, key === 'wallA' || key === 'wallB' ? { display: true } : {}, { pool });
+    const front = (fronts[key] || []).slice();
+    for (const id of front) if (!pool.includes(id)) probs.push('BIN-FRONT-NOT-IN-POOL ' + key + ' ' + id + '（shops/dip.json 看得到的封面要在 bin_' + key + '）');
+    dip[key] = { key, label: M.label, zh: M.zh, rule: M.rule, pool, front };
   }
-  for (const k of Object.keys(BIN_RULES)) if (!dip[k]) probs.push('BIN-RULE-WITHOUT-GROUP ' + k);
-  // 輸出順序：12 箱（deck-lists 的順序）在前、牆（display）在後（SPEC-v4 §2.2.1 的形狀）
+  for (const k of Object.keys(BIN_RULES)) if (!dip[k]) probs.push('BIN-META-WITHOUT-GROUP ' + k + '（_bins 有、bin_' + k + ' 沒有）');
+  for (const k of Object.keys(fronts)) if (k !== 'sale' && !dip[k]) probs.push('SHOP-SECTION-WITHOUT-GROUP ' + k + '（shops/dip.json 有這一區、deck-lists 沒有 bin_' + k + '）');
+  // 輸出順序＝_bins 的順序（契約：jazz tw rock elec soul hiphop pop classical world folk blues new feature picks）
   const ordered = {};
-  for (const k of Object.keys(dip)) if (!dip[k].display) ordered[k] = dip[k];
-  for (const k of Object.keys(dip)) if (dip[k].display) ordered[k] = dip[k];
+  for (const k of Object.keys(BIN_RULES)) if (dip[k]) ordered[k] = dip[k];
+  for (const k of Object.keys(dip)) if (!ordered[k]) ordered[k] = dip[k];
   return { dip: ordered, probs };
 }
 if (!REUSE) {
@@ -367,10 +363,11 @@ ${lines.join(',\n')}
 `;
 const BINS = buildBins();
 problems.push(...BINS.probs);
-const binsJs = `/* bins.js：由 tools/bake-cards.mjs 產生，請勿手改（改 tools/deck-lists.json 的 bin_<key>／wall_a／wall_b／_bins 後重跑）。
- *   node game-lab/tools/bake-cards.mjs
- * SPEC-v4 §2.2.1：shops.<shop>.<key> = { rule, pool, display? }。rule 看卡片的第一個曲風標籤（first）等；display:true＝牆上展示、不賣。
- * 區名不在這裡（在 shops/<shop>.json）。${Object.entries(BINS.dip).map(([k, v]) => k + ' ' + v.pool.length).join('、')}
+const binsJs = `/* bins.js：由 tools/bake-cards.mjs 產生，請勿手改（改 tools/deck-lists.json 的 bin_<key>／_bins 或 shops/dip.json 的封面後重跑）。
+ *   node game-lab/tools/bake-cards.mjs          （只改了店裡的封面：--covers-only 也會重寫 bins.js）
+ * FIXLIST 4／5（X／Y 契約）：shops.<shop>.<key> = { key, label（名牌英文）, zh（點了掛的中文全名）, rule, pool（卡池）, front（店裡畫出來的封面，照道具順序） }。
+ * 分類＝第一個曲風標籤對到十大類、台灣地區一律 tw；new／picks 不限分類；feature＝史詩＋傳奇。每一區都賣（沒有 display）。
+ * ${Object.entries(BINS.dip).map(([k, v]) => k + ' ' + v.pool.length + '（看得到 ' + v.front.length + '）').join('、')}
  */
 (function (root, factory) {
   var bins = factory();
@@ -379,7 +376,7 @@ const binsJs = `/* bins.js：由 tools/bake-cards.mjs 產生，請勿手改（�
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
   return {
-    version: 4,
+    version: 5,
     shops: {
       dip: {
 ${Object.entries(BINS.dip).map(([k, v]) => '        ' + JSON.stringify(k) + ': ' + JSON.stringify(v)).join(',\n')}
