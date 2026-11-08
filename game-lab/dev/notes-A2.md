@@ -20,13 +20,14 @@
 - [x] 交件 5 補完（0d67742c0）：check-shops `footprints()`／`routeHitsFeet()`——D §3「沒有任何人的路線穿過家具」：1406 條全配對路線逐段對每個站立家具的腳下範圍（foot，不加邊、端點不豁免）再查一次，站立道具沒有 foot＝bad；shop.test 新三段（腳下範圍檢查＋做壞抓得到、舞台假 shop 測 version／INTERACT／bins()／hold('o')（老闆手上有、arm show、TT.held 不變、不動 p／f）／finish／finishAll／faceTo／floorRecord、一手時間軸（剋中 100/300/520/600/1000/1500、v3 呼叫星數退回卡片、剋不動白環、平手搖頭 6 次＋chime null、王牌 ace、減少動態 560 resolve、×4 365 ms）、duelIn 接 route []／null）。`clashState().badges` 多帶 `fx`（判定 class，給 harness／測試）。
 - [x] 交件 6（da7006fea、429b86cc7）：`dev/stage-harness.html`——只掛舞台；七種一手（剋中／被剋（唬人）／剋不動 gap／剋不動 ace／同色比星／平手／王牌）、停格 100/300/560/1000/1460、×1／×4、減少動態、開聲音、走進唱盤區（duelIn）、老闆拿唱片（hold('o')）、地上唱片（floorRecord）、路線圖；`?kind=&t=` 一開就停格、`?shot=1` 截圖模式；`window.H.{run,seek,measure,routes,routeMode}`；`DipShop.strict=true`。
 - [x] 修正（瀏覽器實測後，429b86cc7）：375×548（stripS）頭頂方塊放不下 → `.ds-badge.tight` 小一號，貼齊上緣 2 px 時下緣仍 ≤ 頭頂＋1 格；火花起點／終點改成兩個方塊朝唱盤那一側；扣血 −N 改飄到外側（原本名牌收起時會飄到老闆臉上，`floatOut` 暫時把 fwd 反過來再還原）。
+- [x] 平手搖頭看得見（瀏覽器比對：老闆小人左右對稱，光 `flip('o')` 畫面一格不差）→ 照契約每 120 ms 翻面 6 次，另外翻面時整個人往那邊偏 2 格（`nudge`），結束回原位；這個畫法列 §5.7 #18 給店主看（`*-tt-tie-660.png`）。
 - [x] 段 3 截圖（見下）
 
 ## 下一步
 - 第一波 A2 交件全部完成；等 C 整合。剩下只有店主看截圖後的修改請求。
 
 ## 測試結果
-- 第二階段（429b86cc7）：`node game-lab/test/shop.test.mjs` **1004 passed, 0 failed**；`node game-lab/tools/check-shops.mjs` **OK（3 份 layout）**。
+- 第二階段（最後一次）：`node game-lab/test/shop.test.mjs` **1005 passed, 0 failed**；`node game-lab/tools/check-shops.mjs` **OK（3 份 layout）**。
 - `dev/stage-harness.html`（scratchpad `a2/harness-probe.cjs`，LAB_URL）：390×664、375×548、430×932、360×640 **主控台 0 錯誤**；八個停格的頭頂方塊全部「下緣 ≤ 頭頂＋1 格、在畫面內、不碰名牌」（方塊在時名牌 0 個＝已收起）。
 - v3 外殼（ui.js＋duel.js v3）配 v4 stage.js：標題畫面 390×664、375×548 主控台 0 錯誤（scratchpad `a2/v3-compat.cjs`；autoplay 從標題不會自己開局，對決路徑由 shop.test 的 v3 呼叫測試蓋）。
 - M1（A3-M1 之前）：`node game-lab/test/shop.test.mjs` 916 passed、3 failed——3 條全是「新卡不在 cards.js」（34 張 §4.5 新卡，等合併 A3-M1 的 cards.js）。用 v3 cards ∪ v4 卡表替身跑 check-shops（scratchpad `a2/chk-v4cards.mjs`）：0 problems、0 warnings、13 個 bin:* 熱點、1406 條全配對路線都不穿家具。標題畫面 390×664、375×548 主控台 0 錯誤（v3 ui.js 照常開）。

@@ -506,8 +506,9 @@
         } else {
           // ---- 平手：空盤、不落針、不舉旗；600–1320 老闆搖頭（每 120 ms 翻面一次、共 6 次，回到原本朝向）；960 中性短音（空轉的唱針聲）
           setNudge('f', 0); setNudge('p', 0); TT.deck = null;
-          if (t >= RT.shake && t < RT.shakeEnd) { shop.flip('o', Math.floor((t - RT.shake) / 120) % 2 === 0); it.shook = true; }
-          else if (it.shook) { it.shook = false; shop.flip('o', false); }
+          // 老闆的小人左右對稱，光翻面看不出來：翻面時整個人跟著往那邊偏 2 格（左右晃＝搖頭；不聳肩、不冒點點）
+          if (t >= RT.shake && t < RT.shakeEnd) { var lf = Math.floor((t - RT.shake) / 120) % 2 === 0; shop.flip('o', lf); setNudge('o', lf ? -2 : 2); it.shook = true; }
+          else if (it.shook) { it.shook = false; shop.flip('o', false); setNudge('o', 0); }
           if (t >= RT.spin) once('chime0', function () { sfx('chime', { attr: null }); });
         }
         if (t >= RT.done) resolve();
@@ -516,7 +517,7 @@
       it.end = function () {
         setNudge('f', 0); setNudge('p', 0);
         if (it.hurt) { shop.pose(it.hurt, null); it.hurt = null; }
-        if (it.flagged || it.shook) { shop.arm('o', null); shop.flip('o', false); it.flagged = it.shook = false; }
+        if (it.flagged || it.shook) { shop.arm('o', null); shop.flip('o', false); setNudge('o', 0); it.flagged = it.shook = false; }
         hideBadges(); resolve();
       };
       return it;

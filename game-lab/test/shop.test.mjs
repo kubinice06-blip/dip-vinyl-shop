@@ -557,10 +557,11 @@ asection('舞台 v4：一手的時間軸 roundItem（剋中、v3 呼叫、平手
   }
   // ---- 平手：空盤、老闆左右翻面 6 次回到原本朝向、不舉旗、960 中性短音
   {
-    const { st, F, sfx, run } = await setup(); let deck1000 = 'x', arm1000 = null;
+    const { st, F, sfx, run } = await setup(); let deck1000 = 'x', arm1000 = null; const sway = [];
     const n0 = F.log.length;
     st.clash({ kind: 'tie', toE: 0, toP: 0, p: { attr: 'c', star: 4, card: pc }, e: { attr: 'c', star: 4, card: ec } });
-    await run(1900, { 1000: () => { deck1000 = F.api.state.deck; arm1000 = F.actors.o.arm; } });
+    await run(1900, { 1000: () => { deck1000 = F.api.state.deck; arm1000 = F.actors.o.arm; }, 660: () => sway.push(F.actors.o.ox), 780: () => sway.push(F.actors.o.ox), 1500: () => sway.push(F.actors.o.ox) });
+    eq(sway, [-2, 2, 0], '平手：老闆跟著翻面左右晃 2 格（對稱的小人光翻面看不出來），結束回原位');
     eq(deck1000, null, '平手：台上空著');
     ok(arm1000 !== 'flag', '平手：不舉旗');
     const oflips = F.log.slice(n0).filter(x => x[0] === 'flip' && x[1] === 'o').map(x => x[2]);
