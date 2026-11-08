@@ -189,16 +189,24 @@ async function closeInfo(page) { await jsClick(page, '#ciClose'); await page.wai
 // 舞台上說的話（老闆泡泡）：包一層 stage.say 記下來
 const watchSay = page => page.evaluate(() => {
   window.__said = [];
+  window.__acts = [];
   const st = window.__lab.stage; if (!st || st.__sayW) return !!st;
-  const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t) }); return o.apply(this, arguments); }; st.__sayW = true; return true;
+  const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t) }); return o.apply(this, arguments); };
+  const oa = st.onAction; st.onAction = function (a) { window.__acts.push(a); return oa.apply(this, arguments); };
+  st.__sayW = true; return true;
 });
 const econCalls = page => page.evaluate(() => (window.__econCalls || []).map(c => c.m));
-// 真點一個舞台熱點（看得到的那一塊的中心）
+// 真點一個舞台熱點：用 shop.hotPoints()（那個熱點看得到的那一塊裡一定點得到的點；A3）；點下去最上層要是舞台的畫布
 async function tapHot(page, pred) {
   const p = await page.evaluate(src => {
-    const st = window.__lab.stage, f = new Function('h', 'return (' + src + ')(h)');
-    const hs = (st.hotspots() || []).filter(h => f(h));
-    for (const h of hs) { const r = st.hotRect(h.id); if (r && r.width > 4 && r.height > 4 && r.top >= 0 && r.bottom <= innerHeight) return { x: r.left + r.width / 2, y: r.top + r.height / 2, id: h.id, action: h.action }; }
+    const st = window.__lab.stage, sh = st.shop, hb = st.host.getBoundingClientRect(), f = new Function('h', 'return (' + src + ')(h)');
+    const byId = {}; (st.hotspots() || []).forEach(h => { byId[h.id] = h; });
+    for (const q of sh.hotPoints()) {
+      const h = byId[q.id]; if (!h || !f(h)) continue;
+      const x = hb.left + q.x, y = hb.top + q.y;
+      if (y < 0 || y > innerHeight || x < 0 || x > innerWidth || document.elementFromPoint(x, y) !== sh.canvas) continue;
+      return { x, y, id: h.id, action: h.action };
+    }
     return null;
   }, String(pred));
   if (!p) return null;
@@ -832,6 +840,8 @@ async function run() {
         const d1 = !!(await page.$('.ec-drawer'));
         await prologueToDuel4(page, 'direct');
         await duelReady(page);
+        await page.waitForFunction(() => !window.__lab.going(), null, { timeout: 8000 }).catch(() => {});
+        await sleep(300);
         await watchSay(page);
         const hot2 = await tapHot(page, h => /^(crate|bin):/.test(h.action));
         await sleep(500);
