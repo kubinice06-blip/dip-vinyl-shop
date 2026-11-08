@@ -757,6 +757,12 @@
   var kickers = [];
   function kick() { var k = kickers; kickers = []; k.forEach(function (f) { try { f(); } catch (_) {} }); }
 
+  // hold 會把盤面上所有動畫停在原地：浮框剛開始放大（scale .3、透明）就被停住，老闆講解時看不到結果。浮框的進場動畫直接跳到終點
+  function finishCallout() {
+    var el = resolveTarget('result');
+    if (!el || typeof el.getAnimations !== 'function') return;
+    try { el.getAnimations({ subtree: true }).forEach(function (a) { try { a.finish(); } catch (_) {} }); } catch (_) {}
+  }
   function holdDuel(L, on) {
     var D = Duel(); if (!D || typeof D.hold !== 'function') return;
     if (on) { L.held++; try { D.hold(true); } catch (_) {} }
@@ -946,7 +952,7 @@
         var L = S.lesson, R = S.runner;
         if (!L || L.dead || !R) return;
         // 結算時講的步驟：浮框剛出現（560 ms）就停住，講完再走（第 6 手 KO 也一樣：講完才蓋大章）
-        if (R.state === 'run' && R.awaiting && atResolve(R.cur())) holdDuel(L, true);
+        if (R.state === 'run' && R.awaiting && atResolve(R.cur())) { holdDuel(L, true); finishCallout(); }
         L.evs = evs || [];
         kick();
       },

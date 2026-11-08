@@ -223,11 +223,15 @@ async function walkTutorial4(page, w, h, variant = 'plain') {
   const tier = await page.evaluate(() => window.__lab.run.ace);
   const steps = await page.evaluate(t => window.DipLabTut._core.stepsFor(window.DipLabContent, t).map(s => ({ id: s.id, kind: s.kind, point: s.point, hand: s.hand, thr: !!(s.allow && s.allow.throw), atRes: s.kind === 'say' && (s.target || []).includes('result') })), tier);
   const dbg = () => page.evaluate(() => { const x = window.DipLabDuel.debug(); return { t: window.DipLabTut.debug(), d: x ? { n: x.n, sel: x.sel, held: x.held } : null }; });
-  const log = [];
+  const log = [], callouts = [];
   let hands = null;
   for (const s of steps) {
     await waitStep(page, s.id, s.hand >= 5 ? 20000 : 15000);
     if (s.id === 'a3') hands = await page.evaluate(() => window.DipLabDuel.debug().hands.map(x => { const c = x.evs.find(e => e.t === 'clash'); return { n: c.n, kind: c.kind, toE: c.toE, toP: c.toP, blocked: c.blocked, pStar: c.pStar, ace: !!c.ace, pCard: c.pCard.id }; }));
+    if (s.atRes) {      // 結算時講的步驟：浮框要看得到（盤面 hold 住時不能停在進場動畫的開頭）
+      const cv = await page.evaluate(() => { const c = document.querySelector('.dl [data-tut="result"]'); if (!c) return null; const b = c.getBoundingClientRect(), cs = getComputedStyle(c); return { w: Math.round(b.width), h: Math.round(b.height), op: +cs.opacity, l2: (c.querySelector('.l2') || {}).textContent || '' }; });
+      callouts.push(Object.assign({ step: s.id }, cv));
+    }
     if (s.kind === 'say') { await page.touchscreen.tap(w / 2, h - 30); continue; }
     if (!s.thr) {
       if (variant === 'wrong' && (s.hand === 1 || s.hand === 2)) {
@@ -253,7 +257,7 @@ async function walkTutorial4(page, w, h, variant = 'plain') {
     await tapAt(page, '.dl [data-tut="throw"]');
   }
   const learned = await page.waitForFunction(() => Object.keys(window.__lab.save.learned || {}).length >= 6, null, { timeout: 15000 }).then(() => page.evaluate(() => Object.keys(window.__lab.save.learned).sort()), () => page.evaluate(() => Object.keys(window.__lab.save.learned || {}).sort()));
-  return { tier, hands, log, learned };
+  return { tier, hands, log, learned, callouts };
 }
 
 // =============================================================================== 情境
@@ -580,7 +584,8 @@ async function run() {
           const done = await page.waitForFunction(() => window.__lab.save.tutorialDone === true, null, { timeout: 20000 }).then(() => true, () => false);
           const handsOk = res.hands && res.hands.length === 6 && res.hands.every((c, k) => c.kind === C.exp[k].kind && (C.exp[k].toE == null || c.toE === C.exp[k].toE) && (k === 4 ? c.toP === 5 - c.pStar && c.blocked === 'gap' : c.toP === C.exp[k].toP)) && res.hands[5].ace;
           const ko = await page.waitForFunction(() => window.__lab.screen() === 'scene' || (window.__lab.run && window.__lab.run.pending), null, { timeout: 20000 }).then(() => true, () => false);
-          if (want(19)) record(19, size, handsOk && done && ko && res.learned.join() === 'L1,L2,L3,L4,L5,L6', `${tier}: hands ${JSON.stringify((res.hands || []).map(c => c.kind + ':' + c.toE + '/' + c.toP))}; learned ${res.learned}; tutorialDone ${done}; KO→收尾 ${ko}`);
+          const callOk = res.callouts.length === 5 && res.callouts.every(c => c && c.op > 0.95 && c.w >= 150 && c.l2);
+          if (want(19)) record(19, size, handsOk && done && ko && callOk && res.learned.join() === 'L1,L2,L3,L4,L5,L6', `${tier}: callouts ${callOk ? 'ok' : JSON.stringify(res.callouts)}; hands ${JSON.stringify((res.hands || []).map(c => c.kind + ':' + c.toE + '/' + c.toP))}; learned ${res.learned}; tutorialDone ${done}; KO→收尾 ${ko}`);
           if (variant === 'wrong') {
             const ok = res.log.length === 2 && res.log.every(l => l.text === '先點我指的這裡。' && l.warn && l.n === l.n0 && !l.sel);
             record(20, size, ok, JSON.stringify(res.log));
