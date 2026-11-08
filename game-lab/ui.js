@@ -459,6 +459,7 @@
   }
   function cleanup() {
     if (UI.dlg) { UI.dlg.cancel(); UI.dlg = null; }
+    if (UI.ghostRelease && UI.screen === 'duel') UI.ghostRelease();   // 對決畫面換走（還沒滑進來就離開）：對白框一起收
     UI.timers.forEach(clearTimeout); UI.timers = [];
     UI.offs.forEach(function (f) { try { f(); } catch (_) {} }); UI.offs = [];
     UI.decor.forEach(function (d) { if (d && d.remove) d.remove(); }); UI.decor = [];
@@ -485,14 +486,26 @@
     if (UI.auto && UI.auto.until === id) UI.auto = null;
   }
   // 面板換內容：舊的往下淡出 150 ms（對白框 → 盤面）
-  function ghostPanel() {
-    var p = UI.panel; if (!p || !p.firstChild || rm()) return;
+  //   o.hold（序章「接受對決」→ 遇敵）：對白框（老闆最後那句）留著，等盤面滑進來（UI.ghostRelease()，SCREENS.duel 的 push）才淡出；最多留 5 秒（整合版面 b）
+  function ghostPanel(o) {
+    o = o || {};
+    var p = UI.panel; if (!p || !p.firstChild) return;
+    if (rm() && !o.hold) return;
     var r = p.getBoundingClientRect(), ar = app().getBoundingClientRect();
     var g = el('div', 'lb-ghost'); g.style.cssText = 'top:' + Math.round(r.top - ar.top) + 'px;height:' + Math.round(r.height) + 'px';
     while (p.firstChild) g.appendChild(p.firstChild);
     app().appendChild(g);
-    var a = g.animate ? g.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(18px)' }], { duration: 150, easing: 'ease-in', fill: 'forwards' }) : null;
-    setTimeout(function () { g.remove(); }, a ? 180 : 0);
+    var gone = false, safety = 0;
+    var fade = function () {
+      if (gone) return; gone = true; clearTimeout(safety);
+      if (UI.ghostRelease === fade) UI.ghostRelease = null;
+      var a = (!rm() && g.animate) ? g.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(18px)' }], { duration: 150, easing: 'ease-in', fill: 'forwards' }) : null;
+      setTimeout(function () { g.remove(); }, a ? 180 : 0);
+    };
+    if (!o.hold) return fade();
+    if (UI.ghostRelease) UI.ghostRelease();
+    UI.ghostRelease = fade;
+    safety = setTimeout(fade, 5000);
   }
 
   // ======================================================================= 場景（scene）：舞台 full＋對白窗＋包包條
@@ -820,6 +833,7 @@
         if (st.onTap) st.onTap();
       },
       clear: function () { setWho(''); tx.textContent = ''; showNext(false); },
+      hold: function () { showNext(false); },
       // 不在句子裡的走位（O21 選完走到唱盤）：一樣可以點一下快轉正在走的人、⏩ 一路快轉
       steps: function (list, label) {
         st.beat = label || null; tlog(st.beat, 'start');
@@ -1312,7 +1326,8 @@
         var r = save.run; if (!r) return go('title');
         var tut = items.length > 1 && i === 0;
         r.tut = tut; persist();
-        dlg.clear();
+        // 整合版面 b：對話框不清空——老闆那句（O21）留著，三人走到唱盤、遇敵，一直到盤面滑進來（ghostPanel hold）；只收掉 ▼
+        dlg.hold();
         // 選完才走：老闆帶路到唱盤後面、兩人到兩側，三人站定才遇敵（D §3）
         return dlg.steps((C.blocking && C.blocking.toDuel) || [], 'toDuel').then(function () {
           beginFight({ tutorial: tut, overlay: tut && canTutorial(), enter: true, prewalked: true });
@@ -1385,7 +1400,7 @@
     UI.ending = null;
     var tutOn = r.tut === true && !save.tutorialDone && canTutorial() && o.overlay !== false;
     var enter = !!o.enter && !res.resumed;
-    if (enter) ghostPanel();
+    if (enter) ghostPanel({ hold: !!o.prewalked });
     go('duel', { res: res, enemyId: res.enemyId, enter: enter, quick: !!o.quick && !res.resumed, tutorial: tutOn, prewalked: !!o.prewalked && !res.resumed });
   }
   function duelHooks(p) {
@@ -1484,6 +1499,7 @@
       if (pushed || UI.screen !== 'duel' || !wrap.isConnected) return;
       pushed = true;
       mountBoard();
+      if (UI.ghostRelease) UI.ghostRelease();                  // 序章：老闆那句對白留到盤面滑進來才淡出（整合版面 b）
       walkIn = new Promise(function (res) {
         var go2 = function () {
           if (UI.stage && typeof UI.stage.duelIn === 'function') stgP('duelIn', { foe: foeSpr, ms: Math.round(760 / speed()) }).then(res, res);
