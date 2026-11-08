@@ -36,7 +36,7 @@
 //  38 傳說藏家登場卡擋點擊、點一下提早收掉
 //  39 規則卡六行＝D 規則卡逐字、頁尾聲望代入、不捲動；公告＝規則卡；重看教學帶得起來
 //  40 375×548 等矮螢幕：有存檔時「再按一次就放棄今晚」那行在畫面內
-//  41（新）贏一位 →「+$300」吐司、今晚來客顯示錢
+//  41（新）贏一位 →「+$1,500」吐司（千分位，FIXLIST 8）、今晚來客顯示錢
 //  42（新）序章與對決中真點箱子 → 老闆泡泡「打完再翻。」、不開抽屜
 //  43（新）櫃檯：今晚來客＝配件面板（openRelicShop）、序章＝老闆一句
 //  44（新）序章途中重新整理：特價箱還沒挑 → 從頭開始；挑過了 → 直接到對決
@@ -53,14 +53,14 @@ const FULL = process.env.LAB_FULL === '1';
 const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42]);
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
-// D §5 規則卡六行（店主拍板，逐字）
+// D §5 規則卡六行（店主拍板，逐字；第 6 行照 FIXLIST 2／3 改：王牌沒有「不會被剋」、六手比聲望條剩幾成）
 const RULE_LINES = [
   '每張專輯有經典／冷門／硬蕊三個星數。',
   '每一手，你和他各暗中挑一張專輯、一個屬性，同時亮出。',
   '冷剋經、經剋硬、硬剋冷：剋中，就用你那個屬性的星數扣他聲望。',
   '被剋的一方高 2 星以上，剋不動，改成比星數。',
   '沒有相剋就比星數，高的扣差額；一樣大不扣。',
-  '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星、不會被剋，一場用一次。六手內沒分出勝負，比剩下的聲望。'
+  '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。'
 ];
 let FIRST = true;
 const want = n => (!ONLY || ONLY.has(n)) && (FULL || FIRST || LAYOUT.has(n));
@@ -246,8 +246,8 @@ async function run() {
         if (want(22)) record(22, size, scrollOk(scN) && scrollOk(scR), `night ${JSON.stringify(scN)} reward ${JSON.stringify(scR)}`);
         if (want(41)) {
           const r = await page.evaluate(() => ({ money: window.__lab.run.money, shown: (document.querySelector('[data-tut=money]') || {}).textContent || '', toasts: window.__toasts.slice(), win: window.DipLabContent.economy.win.normal }));
-          const tst = '+$' + r.win;
-          record(41, size, r.money === money0 + r.win && r.toasts.some(t => t.indexOf(tst) >= 0) && r.shown.replace(/\s/g, '').indexOf('$' + r.money) >= 0, `money ${money0} → ${r.money} (+${r.win}); toast ${JSON.stringify(r.toasts)}; night shows「${r.shown}」`);
+          const tst = '+$' + r.win.toLocaleString('en-US');
+          record(41, size, r.money === money0 + r.win && r.toasts.some(t => t.indexOf(tst) >= 0) && r.shown.replace(/\s/g, '').indexOf('$' + r.money.toLocaleString('en-US')) >= 0, `money ${money0} → ${r.money} (+${r.win}); toast ${JSON.stringify(r.toasts)}; night shows「${r.shown}」`);
         }
       } catch (e) { record(27, size, false, 'error ' + e.message); }
       await ctx.close();
