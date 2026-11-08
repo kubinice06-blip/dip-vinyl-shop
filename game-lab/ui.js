@@ -1399,7 +1399,14 @@
       onEvent: function () {},
       player: { name: '你', avatar: playerAv() },
       relicIcon: function (id, size) { return relicIcon(id, size); },
-      resolveOpts: function () { return UI.force ? { debugOutcome: UI.force } : {}; },
+      resolveOpts: function () {
+        var o = UI.force ? { debugOutcome: UI.force } : {};
+        // ?debug=1 的 __lab.duelLab.setNext({i,attr})：他下一手照這個出（e2e-duel 的 index.html 版；＝duel-harness 的 __h.setNext）
+        var nx = UI.nextPlay; UI.nextPlay = null;
+        var d = save.run && save.run.duel;
+        if (nx && d && d.e && d.e.hand[nx.i] && /^[coh]$/.test(nx.attr)) o.forcedPlay = { i: nx.i, attr: nx.attr };
+        return o;
+      },
       tut: tut,
       beforeEnd: tut && T.settled ? function () { try { return T.settled(); } catch (_) { return null; } } : null
     };
@@ -1507,6 +1514,8 @@
   // 打完：duel.js 的大章＋盤面淡出已經做完 → 結算、下一個畫面
   function onDuelEnd(result) {
     var duel = (result && result.duel) || (save.run && save.run.duel);
+    // __lab.duelLab 開的測試對決：記下結果、盤面停在大章（＝duel-harness 的 noend），不結算、不換畫面
+    if (UI.duelLab && duel && duel === UI.duelLab.duel) { var ov = duel.over || {}, rs = result || {}; UI.duelLab.ended = { over: rs.over || (ov.win ? 'win' : 'lose'), win: rs.win != null ? !!rs.win : !!ov.win, by: rs.by || ov.by, pHp: rs.pHp != null ? rs.pHp : duel.p.hp, eHp: rs.eHp != null ? rs.eHp : duel.e.hp }; return; }
     if (UI.tutReplay) return endReplay();
     var r = save.run;
     if (!r || !duel || !duel.over || UI.ending === duel) return;
@@ -2105,8 +2114,42 @@
       timeline: function () { return UI.timeline.slice(); },
       tap: function () { if (UI.dlg) UI.dlg.tap(); },
       get beat() { return UI.dlg ? UI.dlg.beat : null; },
-      get econ() { return econ(); }
+      get econ() { return econ(); },
+      // 測試對決（e2e-duel 的 index.html 版，C 整合；＝dev/duel-harness.html 的 build()／start()）：
+      //   duelLab.start({enemy, seed, ace, hp, ehp})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張、出招難度 depth 0），打完停在大章不結算；
+      //   duelLab.setNext({i,attr})：他下一手照這個出；duelLab.ended：打完的結果 {over, win, by, pHp, eHp}
+      duelLab: {
+        start: function (o) { return duelLabStart(o || {}); },
+        setNext: function (spec) { UI.nextPlay = spec && typeof spec === 'object' ? spec : null; return UI.nextPlay; },
+        get ended() { return UI.duelLab ? UI.duelLab.ended : null; },
+        set ended(v) { if (UI.duelLab) UI.duelLab.ended = v; },
+        get duel() { return UI.duelLab ? UI.duelLab.duel : null; }
+      }
     };
+  }
+  function duelLabStart(o) {
+    var ace = C.aces[o.ace] ? o.ace : 'hall', eid = C.enemies[o.enemy] ? o.enemy : 'copycat';
+    var r = save.run;
+    if (!r || r.over || r.prologue === 'pending') {
+      r = E.newRun(C, { seedKey: 'duel-lab', nightNo: 1, ace: ace, prologue: false, relics: [] });
+      var ch = E.bargainPolicy ? E.bargainPolicy(r, C) : null; if (ch) E.choose(r, C, ch);
+      save.run = r; save.prologueDone = true; save.tutorialDone = true;
+    }
+    leaveDuel(); UI.ending = null; UI.force = null; UI.nextPlay = null; UI.auto = null;
+    var en = C.enemies[eid], eDef = E.enemyDef(C, eid, { depth: en.prologue ? undefined : 0 });
+    if (o.ehp != null) eDef.hp = +o.ehp;
+    var pick3 = ['c', 'o', 'h'].map(function (a) { return ((C.bargain && C.bargain.pool) || []).filter(function (id) { return C.cards[id] && E.topAttr(C.cards[id]) === a; })[0]; }).filter(Boolean);
+    var pDef = E.playerDef(C, { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: [] });
+    if (o.hp != null) pDef.hp = pDef.maxHp = +o.hp;
+    var seed = (+o.seed >>> 0) || 1, opts = { seed: seed, hintTable: E.hintTableOf ? E.hintTableOf(C) : undefined };
+    if (!opts.hintTable) { var ht = {}; ['c', 'o', 'h'].forEach(function (a) { ht[a] = ((C.hints || {})[a] || []).map(function (h) { return h.id; }); }); opts.hintTable = ht; }
+    if (eDef.boss) { var others = E.TIERS.filter(function (t) { return t !== ace; }); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
+    var res = E.startDuel(pDef, eDef, opts);
+    r.duel = res.duel; r.duelEnemy = eid; r.pending = null;
+    UI.duelLab = { duel: res.duel, ended: null };
+    UI.going = false;
+    go('duel', { res: { duel: res.duel, events: res.events, enemyId: eid }, enemyId: eid });
+    return true;
   }
 
   // ======================================================================= boot

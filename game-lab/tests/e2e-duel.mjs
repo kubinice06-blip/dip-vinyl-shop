@@ -1,7 +1,9 @@
 // game-lab/tests/e2e-duel.mjs：對決盤面 v4 的端對端（SPEC-v4 §5.5「e2e-duel」；B1）。
-//   跑在 B1 的 dev/duel-harness.html（harness 自己提供 __lab.force／__lab.stage，跟 ui.js 的 __lab 同介面）；index.html 版由 C 整合後接。
-//   需要靜態伺服器：cd <repo 根> && python3 -m http.server 8781
-//   node game-lab/tests/e2e-duel.mjs
+//   預設跑 index.html 的真對決畫面（C 整合：ui.js ?debug=1 的 __lab.duelLab 開場、打完停在大章；這裡的 indexShim 做出跟 harness 同介面的 window.__h）；
+//   LAB_DUEL_PAGE=harness 跑 B1 的 dev/duel-harness.html（harness 自己提供 __lab.force／__lab.stage／__h）。
+//   需要靜態伺服器：cd <repo 根> && python3 -m http.server 8765
+//   node game-lab/tests/e2e-duel.mjs                        # index.html（LAB_BASE 預設 http://localhost:8765）
+//   LAB_DUEL_PAGE=harness node game-lab/tests/e2e-duel.mjs  # harness（LAB_BASE 預設 http://localhost:8781）
 // 環境變數：LAB_DUEL_URL（harness 的整個網址）；或 LAB_URL（網址裡有 duel-harness 才用）；或 LAB_BASE（伺服器根，預設 http://localhost:8781）；
 //          LAB_SIZES（預設四個驗收尺寸 390x664,375x548,430x932,360x640）；
 //          LAB_SHOTS＝目錄 → 另存段 3「對戰畫面」截圖（deviceScaleFactor 2）：出牌前、命中／剋不動／唬人（揭曉浮框出現後停格）、最後一手 KO、（另加）王牌擋下。
@@ -23,9 +25,16 @@
 import fs from 'fs';
 import { launch, newPage, SIZES, record, results, sleep } from './e2e-lib.mjs';
 
-const HARNESS = process.env.LAB_DUEL_URL
+// 跑哪一頁（C 整合後）：LAB_DUEL_PAGE＝index（預設；index.html 的真對決畫面，?debug=1 的 __lab.duelLab 開場）｜harness（dev/duel-harness.html）
+const PAGE = process.env.LAB_DUEL_PAGE || (process.env.LAB_DUEL_URL && /duel-harness/.test(process.env.LAB_DUEL_URL) ? 'harness' : 'index');
+const INDEX = PAGE === 'index';
+const BASE = (process.env.LAB_BASE || (INDEX ? 'http://localhost:8765' : 'http://localhost:8781')).replace(/\/+$/, '');
+const HARNESS = INDEX ? (process.env.LAB_DUEL_URL || BASE + '/game-lab/index.html')
+  : (process.env.LAB_DUEL_URL
   || (process.env.LAB_URL && /duel-harness/.test(process.env.LAB_URL) ? process.env.LAB_URL.split('?')[0] : null)
-  || (process.env.LAB_BASE || 'http://localhost:8781').replace(/\/+$/, '') + '/game-lab/dev/duel-harness.html';
+  || BASE + '/game-lab/dev/duel-harness.html');
+// 唱片資訊：harness 是自己的 .hx-ov；index.html 是 cardinfo.js 的 #cardInfoMask
+const INFO_SEL = INDEX ? '#cardInfoMask' : '.hx-ov', INFO_CLOSE = INDEX ? '#ciClose' : '.hx-ov button';
 const SHOTS = process.env.LAB_SHOTS ? process.env.LAB_SHOTS.replace(/\/+$/, '') + '/' : null;
 if (SHOTS) fs.mkdirSync(SHOTS, { recursive: true });
 const ENEMY = process.env.LAB_DUEL_ENEMY || 'copycat';
@@ -102,9 +111,37 @@ function pageTools() {
   };
 }
 
+// index.html 版：用 ui.js 的 __lab.duelLab 開場，做一份跟 harness 同介面的 window.__h（setNext／remount／ended／music／sfx／log）
+function indexShim(o) {
+  const L = window.__lab, F = window.DipLabFx;
+  const H = window.__h = window.__h || { log: [], sfx: [], music: [], next: null, ready: false };
+  if (!H.wrapped) {
+    H.wrapped = true;
+    const s0 = F.sfx; F.sfx = function (n, x) { H.sfx.push([n, x == null ? null : JSON.parse(JSON.stringify(x))]); if (H.sfx.length > 400) H.sfx.splice(0, 200); return s0.apply(this, arguments); };
+    const m0 = F.music.play; F.music.play = function (card) { H.music.push(card && card.id); return m0.apply(this, arguments); };
+    const CI = window.DipLabCardInfo;
+    if (CI && CI.open) { const o0 = CI.open; CI.open = function (c) { H.log.push('info ' + (typeof c === 'string' ? c : c && c.id)); return o0.apply(this, arguments); }; }
+    const T = window.DipLabTut;
+    if (T && T.hintHook) { const h0 = T.hintHook; T.hintHook = function (id, targets) { H.log.push('hint ' + id + ' ' + (targets || []).join('|')); return h0.apply(this, arguments); }; }
+    H.setNext = spec => { H.next = spec; return L.duelLab.setNext(spec); };
+    H.remount = s => { H.next = null; L.duelLab.setNext(null); return L.duelLab.start(Object.assign({}, H.opts, { seed: s })); };
+    Object.defineProperty(H, 'ended', { get: () => L.duelLab.ended, set: v => { L.duelLab.ended = v; }, configurable: true });
+  }
+  H.opts = o;
+  L.duelLab.start(o);
+  H.ready = true;
+  return true;
+}
 // ---------------------------------------------------------------- 共用步驟
 async function boot(page, extra = '', seed = 7) {
-  await page.goto(`${HARNESS}?enemy=${ENEMY}&seed=${seed}&noend=1&debug=1${SHOTS ? '&shot=1' : ''}${extra}`, { waitUntil: 'domcontentloaded' });
+  if (INDEX) {
+    const num = k => { const m = new RegExp('[&?]' + k + '=(\\d+)').exec(extra); return m ? +m[1] : null; };
+    const rest = extra.replace(/&(hp|ehp)=\d+/g, '');
+    await page.goto(`${HARNESS}?debug=1&seed=${seed}${rest}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('[data-a=push],[data-a=cont]', { state: 'visible', timeout: 10000 });
+    await page.waitForFunction(() => !document.body.classList.contains('stage-wait') && window.__lab && window.__lab.stage && window.__lab.duelLab, null, { timeout: 10000 });
+    await page.evaluate(indexShim, { enemy: ENEMY, seed, hp: num('hp'), ehp: num('ehp') });
+  } else await page.goto(`${HARNESS}?enemy=${ENEMY}&seed=${seed}&noend=1&debug=1${SHOTS ? '&shot=1' : ''}${extra}`, { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => window.__e2e && window.__e2e.ready(), null, { timeout: 25000 });
   await sleep(250);
 }
@@ -337,10 +374,10 @@ async function runSize(browser, w, h) {
       await sleep(650);
       await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
       await sleep(300);
-      const st = await page.evaluate(n0 => ({ log: window.__h.log.slice(n0), modal: !!document.querySelector('.hx-ov'), sel: window.DipLabDuel.debug().sel }), n0);
+      const st = await page.evaluate(([n0, q]) => ({ log: window.__h.log.slice(n0), modal: !!document.querySelector(q), sel: window.DipLabDuel.debug().sel }), [n0, INFO_SEL]);
       const ok = st.log.includes('info ' + r.id) && st.modal && !st.sel;
       record(11, size, ok, `長按 card-2 → ${st.log.join(',') || '沒有'}；唱片資訊${st.modal ? '開著' : '沒開'}；選牌 ${short(st.sel)}`);
-      await page.evaluate(() => { const b = document.querySelector('.hx-ov button'); if (b) b.click(); });
+      await page.evaluate(q => { const b = document.querySelector(q); if (b) b.click(); }, INFO_CLOSE);
       await sleep(250);
     }
     // ---- 12 六手比聲望（最後一手他贏、你靠聲望贏整場）＋勝利曲＋提示句每手換
@@ -401,7 +438,7 @@ async function runSize(browser, w, h) {
     // ---- 14 autoplay（走正常點擊流程）打完一場
     {
       await boot(page, '&fast=1', 31);
-      await page.evaluate(() => { window.__lab.autoplay('thoughtful'); });
+      await page.evaluate(() => { window.__lab.autoplay('thoughtful', { animated: true }); });   // index.html：animated＝走盤面的點擊流程（harness 不看第二個參數）
       const okO = await waitOver(page, 60000);
       const R = await page.evaluate(() => ({ ended: window.__h.ended && { by: window.__h.ended.by, win: window.__h.ended.win }, hands: window.DipLabDuel.debug().hands.length, calls: window.DipLabDuel.debug().hands.every(x => x.ui && x.ui.call && x.ui.call.on && x.ui.call.l1) }));
       record(14, size, okO && R.hands >= 1 && R.calls, `autoplay thoughtful：${short(R.ended)}、${R.hands} 手、每手浮框 ${R.calls ? '有' : '缺'}`);
