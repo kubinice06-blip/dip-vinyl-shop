@@ -95,3 +95,9 @@ LINES-REVIEW.md、dev/decks-v4.md、dev/sim-v4.json、dev/notes-X.md。
 - **e2e（整合）**：e2e-duel 的 aceYou／aceHim 斷言、`王牌不會被剋` 的正規式要拿掉；e2e.spec #39 規則卡逐字會跟著 content 走；e2e-econ 的「$100 三張」與價錢斷言要換。
 - **Y（bins.js）**：分類箱、new、picks 的 pool 只放普通／稀有／獨特（引擎上貨會濾掉史詩／傳奇，太多會上不滿 4 張）；FEATURE 只放史詩／傳奇；
   bins.js 交了之後跑 `node game-lab/tools/check-content.mjs`（binsProblems 會自動跑）與 `node game-lab/sim.mjs --n 3000`（貨變了，S1／S6 要再看一次）。
+
+## 給店主的截圖（390×664、deviceScaleFactor 2；不 commit，dev/.gitignore 擋 shots/）
+
+- `game-lab/dev/shots/X/01-night-guests.png`：今晚來客（新名字：前衛樂迷、社團學長、文青同好；名牌下沒有誠實度、沒有副標）。左下錢還是 `$1000`（千分位要 econ.js 改，見請求）。
+- `game-lab/dev/shots/X/02-rules-card.png`：規則卡第 6 行新字、頁尾「客人 24–34、菁英 21–30、傳說藏家 20」、學會的小卡「王牌 7 星，一場一次」。
+- 腳本：scratchpad `X/shots.mjs`（起本機伺服器、用 tests/e2e-lib 的 seededContinue）；跑法 `node shots.mjs`。
