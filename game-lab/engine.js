@@ -86,9 +86,9 @@
   };
   // content 沒給時的預設（＝content.js 的 C.honesty／C.planners／C.plannerByDepth／C.economy；直接呼叫 startDuel 的地方不傳 content 也不會壞）
   // 誠實度只在引擎裡（照實出的機率 q）；畫面上不寫任何誠實度字（FIXLIST 6，店主 2026-11-08 06:05）
-  const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.7 }, veteran: { q: 0.6 } };
+  const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.75 }, veteran: { q: 0.75 } };   // FIXLIST 10 平衡 R1
   const PLANNERS = { easy: { w: 0.45, nz: 2.4, mercy: false }, normal: { w: 0.6, nz: 1.4, mercy: true }, hard: { w: 0.7, nz: 0.8, mercy: true } };
-  const PLANNER_BY_DEPTH = ['easy', 'easy', 'normal', 'normal', 'hard'];
+  const PLANNER_BY_DEPTH = ['normal', 'easy', 'easy', 'normal', 'normal'];                                   // FIXLIST 10 平衡 R1
   const DEFAULT_HINTS = { c: ['c1', 'c2', 'c3', 'c4', 'c5'], o: ['o1', 'o2', 'o3', 'o4', 'o5'], h: ['h1', 'h2', 'h3', 'h4', 'h5'] };
   // 台幣行情（FIXLIST 8＋X／Y 契約）：唱片照稀有度定價、特價箱每張照最高星、櫃檯配件一件 3000、賣回半價
   const ECON = { start: 1000, win: { prologue: 0, normal: 1500, elite: 2500, boss: 0 },
