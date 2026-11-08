@@ -46,3 +46,5 @@
   shop-props floor 的「磨亮」那幾塊碰到原本底邊的跟著往下接。API：shop.floorExt(px)／DipLabStage.floorExt(px)、view().ext。
   ui.js fitFloor：只有 scene 畫面；面板高 − 內容高（對白框＋包包條＋10 px）≥24 就接地板（舞台變高、面板照內容高）；ResizeObserver 看面板與子元素、resize、go() 都重算；換畫面歸零。
   430×932 序章：店景 474 → 舞台 646（接 172 px 地板），對白框 [696,872]、包包條緊接在下；390×664 等矮螢幕面板沒有空（對白框撐滿）→ 不接。README 補一句。
+- 驗（進行中）：e2e-duel 四尺寸 140/140；e2e.spec 390×664 全部 37/37；tutorial.test 182142／0、engine.test 2040482／0（少 5＝duelText 拿掉 5 個鍵）、shop／hit／chars、check-shops、check-content、lint-copy 綠。
+  e2e.spec 另外三尺寸＋e2e-prologue 四尺寸在跑（log：scratchpad/v4/H2/spec3.log、prol4.log）。截圖腳本 scratchpad/v4/H2/shots.mjs → dev/shots/h2/（.gitignore）。
