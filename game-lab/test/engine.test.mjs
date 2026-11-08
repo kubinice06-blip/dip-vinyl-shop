@@ -261,7 +261,7 @@ function nightStep(run, pol, mode, R, log, mem) {
   const step = EN.nextStep(run);
   if (step === 'reward' || step === 'retry') { const ch = EN.runPolicy(run, C); const r = EN.choose(run, C, ch); ok(r.ok, 'runPolicy choice ok', { ch, err: r.error }); log.push([step, ch, r.ok]); return true; }
   if (!step) return false;
-  if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, mode)) { const r = EN.choose(run, C, ch); ok(r.ok, 'shopPolicy choice ok', { ch, err: r.error }); log.push(['shop', ch]); }
+  if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, mode)) { ok(ch.sellId == null || !EN.isGift(run, C, ch.sellId), 'shopPolicy never sells a gift', ch); const r = EN.choose(run, C, ch); ok(r.ok, 'shopPolicy choice ok', { ch, err: r.error }); log.push(['shop', ch]); }
   ok(run.money >= 0, 'money ≥ 0', run.money);
   const f = EN.startFight(run, C, {});
   const evs = play(f.duel, pol, R, mem);
@@ -592,7 +592,13 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   ok(rb.ok && run.money === m0 - price && run.bag.includes(cid) && !run.shop.bins[key].includes(cid) && run.stats.bought.includes(cid), 'buy ok', rb);
   eq(rb.effects, [{ gainCard: cid, spend: price }], 'buy effects');
   ok(run.bag.length === 8, 'bag full now');
-  const key2 = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid2 = run.shop.bins[key2][0], sell = run.bag[0];
+  const key2 = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid2 = run.shop.bins[key2][0], sell = run.bag.find(id => !EN.isGift(run, C, id));
+  // 老闆送的（王牌那組四張＋王牌）不能賣回（FIXLIST 11 追加）；客人丟的、買的、特價箱的照舊半價
+  ok(C.gifts.hall.every(id => EN.isGift(run, C, id)) && EN.isGift(run, C, C.aces.hall) && EN.isGift(run, C, card(C.gifts.hall[0])), 'isGift: the four gifts + the ace (id or card)');
+  ok(!EN.isGift(run, C, sell) && !EN.isGift(run, C, cid) && !EN.isGift(run, C, C.gifts.pearl[0]) && !EN.isGift(run, C, C.aces.pearl) && !EN.isGift(null, C, C.gifts.hall[0]), 'isGift: bargain／bought／another tier\'s gifts are not');
+  eq(run.bag.slice(0, 4), C.gifts.hall, 'gifts are the first four in the bag');
+  for (const g of C.gifts.hall) err(run, { type: 'buy', key: key2, cardId: cid2, sellId: g }, 'giftNoSell', 'buy selling a gift ' + g);
+  err(run, { type: 'buy', key: key2, cardId: cid2, sellId: C.aces.hall }, 'badSell', 'buy selling the ace (not in the bag)');
   { const r2 = JSON.parse(JSON.stringify(run)); r2.money = EN.priceOf(C, card(cid2)) - EN.sellValue(C, card(sell)) - 1; err(r2, { type: 'buy', key: key2, cardId: cid2, sellId: sell }, 'noMoney', 'buy+sell short by 1'); }
   const rs = EN.choose(run, C, { type: 'buy', key: key2, cardId: cid2, sellId: sell });
   ok(rs.ok && !run.bag.includes(sell) && run.bag.includes(cid2) && run.bag.length === 8, 'sell then buy', rs);
@@ -606,6 +612,13 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   err(run, { type: 'buyBargain', ids: [BL[0], BL[1]], sellIds: [run.bag[0]] }, 'bagFull', 'buyBargain 2 into a full bag with 1 sell');
   err(run, { type: 'buyBargain', ids: [BL[0]], sellIds: [run.bag[0], run.bag[1]] }, 'badSell', 'buyBargain too many sells');
   err(run, { type: 'buyBargain', ids: [BL[0]], sellIds: ['nope'] }, 'badSell', 'buyBargain sell not in bag');
+  err(run, { type: 'buyBargain', ids: [BL[0]], sellIds: [C.gifts.hall[1]] }, 'giftNoSell', 'buyBargain selling a gift');
+  { const r2 = JSON.parse(JSON.stringify(run)), g = C.gifts.hall[2], ng = r2.bag.filter(id => !EN.isGift(r2, C, id));
+    eq(r2.bag.length, 8, 'bag full (8) before buying two from the bargain crate');
+    err(r2, { type: 'buyBargain', ids: [BL[0], BL[1]], sellIds: [ng[0], g] }, 'giftNoSell', 'buyBargain 2 sells, one a gift');
+    const m = r2.money, r = EN.choose(r2, C, { type: 'buyBargain', ids: [BL[0], BL[1]], sellIds: [ng[0], ng[ng.length - 1]] });
+    const sv = EN.sellValue(C, card(ng[0])) + EN.sellValue(C, card(ng[ng.length - 1]));
+    ok(r.ok && !r2.bag.includes(ng[0]) && C.gifts.hall.every(id => r2.bag.includes(id)) && r2.money === m + sv - EN.bargainPriceOf(C, BL[0]) - EN.bargainPriceOf(C, BL[1]), 'buyBargain selling bargain／bought records: still half', r); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.push(BL[0]); r2.bag.shift(); err(r2, { type: 'buyBargain', ids: [BL[0]], sellIds: [] }, 'owned', 'buyBargain owned'); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.money = EN.bargainPriceOf(C, BL[0]) - 1; r2.bag.shift(); err(r2, { type: 'buyBargain', ids: [BL[0]] }, 'noMoney', 'buyBargain no money'); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.splice(0, 2); r2.money = EN.bargainPriceOf(C, BL[0]) + EN.bargainPriceOf(C, BL[1]) - 1; err(r2, { type: 'buyBargain', ids: [BL[0], BL[1]] }, 'noMoney', 'buyBargain 2 short by 1'); }

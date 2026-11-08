@@ -35,6 +35,7 @@
 //            finishFight(run, content, duel?) -> {win, by, enemyId, met:[ids], offer, over, earn}
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）
+//              賣回：buy {sellId}／buyBargain {sellIds} 只收包包裡、不是老闆送的（isGift）卡；送的 → error 'giftNoSell'
 //              buyBargain {ids:[1–3], sellIds?}：每張照特價（bargainPriceOf）分開算、一次付總和；effects 每張 {gainCard, spend: 那張的價}
 //            canShop(run) · canBargainPick(run)
 //            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart') -> [ch] · bargainPolicy(run, content) -> ch
@@ -45,6 +46,8 @@
 //            priceOf(content, card|id)：特價箱的卡＝bargainPriceOf；其他＝economy.price[rarity]（800／1000／1200／3000／4000；頂點 8000 先備好、不上架）
 //            bargainPriceOf(content, card|id)：economy.bargain[最高星 1–3] ＝ 100／200／300 · relicPrice(content, id)：relics[id].price ?? economy.relicPrice（3000）
 //            sellValue(content, card|relicId) ＝ floor(價 × sellRate 0.5) · moneyText(n) ＝ 千分位字串（1200 → '1,200'；C.shopUi 的字串自己帶 '$'）
+//            isGift(run, content, id)：老闆送的（這晚王牌那組的四張＋王牌本身）→ 不能賣回（FIXLIST 11 追加）；buy 的 sellId、buyBargain 的 sellIds 有它 → 'giftNoSell'。
+//              客人丟的、買的、特價箱的照舊半價。拿獎勵時包包滿要「拿掉一張」（take 的 dropId）不是賣、不收錢，照舊可以選
 //            run.shop（newRun 一次決定，種子＝這一晚；RNG 在客人順序與藏家王牌之後）：
 //              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
 //                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop pop classical world folk blues
@@ -671,6 +674,12 @@
     const p = typeof x === 'string' ? relicPrice(content, x) : priceOf(content, x);
     return p == null ? 0 : Math.floor(p * econ(content).sellRate);
   }
+  // 老闆送的不能賣回（FIXLIST 11 追加）：這晚王牌那組的四張禮物（content.gifts[run.ace]）＋王牌本身。別組的禮物卡如果是客人丟的或買的，照舊能賣
+  function isGift(run, content, x) {
+    const id = x && typeof x === 'object' ? x.id : x;
+    if (!run || !id || !content) return false;
+    return id === ((content.aces || {})[run.ace]) || (((content.gifts || {})[run.ace]) || []).includes(id);
+  }
   // 畫面上的錢：千分位（1200 → '1,200'）。C.shopUi 的字串自己帶 '$'，UI 代入 {n} 時用這個
   function moneyText(n) {
     const v = Math.round(+n || 0), s = String(Math.abs(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -752,7 +761,7 @@
         const price = priceOf(content, ch.cardId);
         if (price == null) return fail('notInStock');
         let sell = null;
-        if (ch.sellId != null) { if (!run.bag.includes(ch.sellId) || !cardOf(content, ch.sellId)) return fail('badSell'); sell = ch.sellId; }
+        if (ch.sellId != null) { if (!run.bag.includes(ch.sellId) || !cardOf(content, ch.sellId)) return fail('badSell'); if (isGift(run, content, ch.sellId)) return fail('giftNoSell'); sell = ch.sellId; }
         else if (run.bag.length >= CFG.bagMax) return fail('bagFull');
         const earn = sell ? sellValue(content, cardOf(content, sell)) : 0;
         if (run.money + earn < price) return fail('noMoney');
@@ -773,6 +782,7 @@
         const need = Math.max(0, run.bag.length + ids.length - CFG.bagMax);
         if (sells.length < need) return fail('bagFull');
         if (sells.length > need || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
+        if (sells.some(id => isGift(run, content, id))) return fail('giftNoSell');
         const each = ids.map(id => bargainPriceOf(content, id));
         if (each.some(p => p == null)) return fail('notInStock');
         const earn = sells.reduce((s, id) => s + sellValue(content, cardOf(content, id)), 0), price = each.reduce((s, p) => s + p, 0);
@@ -839,7 +849,7 @@
     return ids.length === CFG.bargainPick ? { type: 'bargainPick', ids } : null;
   }
   // 兩位客人之間怎麼買（§2.1.6）：'none' 不買；'smart' 看下一位客人的牌單主屬性 M，買 COUNTER_OF[M] 軸 ≥4 星、而且比包包裡該軸最強那張更強的唱片
-  //   （包包滿就賣總星最少的那張），錢夠且還有空位就買加成 COUNTER_OF[M] 的配件
+  //   （包包滿就賣總星最少的那張；老闆送的不能賣，跳過），錢夠且還有空位就買加成 COUNTER_OF[M] 的配件
   function shopPolicy(run, content, mode) {
     if (mode !== 'smart' || !canShop(run)) return [];
     const r = clone(run), out = [];
@@ -860,7 +870,8 @@
       for (const x of cands) {
         const ch = { type: 'buy', key: x.key, cardId: x.cid };
         if (r.bag.length >= CFG.bagMax) {
-          ch.sellId = r.bag.slice().sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || peak(cardOf(content, a)) - peak(cardOf(content, b)))[0];
+          ch.sellId = r.bag.filter(x => !isGift(r, content, x)).sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || peak(cardOf(content, a)) - peak(cardOf(content, b)))[0];   // 老闆送的不能賣
+          if (ch.sellId == null) continue;
         }
         if (choose(r, content, ch).ok) { out.push(ch); bought = true; break; }
       }
@@ -961,6 +972,6 @@
     rng, makeRng, shuffle, fnv1a32, clone, star, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, moneyText,
+    rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, isGift, moneyText,
     runPolicy, shopPolicy, bargainPolicy, policies };
 });
