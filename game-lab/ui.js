@@ -897,7 +897,9 @@
   var GUARD_MS = FAST ? 160 : 380;
   function guardClicks(node) {
     node.classList.add('arming');
-    setTimeout(function () { node.classList.remove('arming'); }, GUARD_MS);
+    // node._armUntil（選填）：鏡頭還在動、鈕還會移位時延長（RT-13：挑唱片面板進場 400 ms 內「收這張」往下滑 150 px）
+    var disarm = function () { var left = (node._armUntil || 0) - now(); if (left > 0) setTimeout(disarm, left); else node.classList.remove('arming'); };
+    setTimeout(disarm, GUARD_MS);
     if (node._guarded) return;
     node._guarded = true;
     node.addEventListener('click', function (e) { if (e.isTrusted && node.classList.contains('arming')) { e.stopImmediatePropagation(); e.preventDefault(); } }, true);
@@ -1769,6 +1771,7 @@
       var needR = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
       if (vh - 32 - needR < 210) cam('strip', 'reward', 600);       // 放不下整間店：收成對決那條（你和他都還在畫面裡），不要把店縮成一小塊
       else cam('reward', 'reward', 600, needR);
+      s._armUntil = now() + 620 / speed();                            // 鏡頭收完、鈕停在最後的位置才收點擊（RT-13）
       s.addEventListener('click', function (e) {
         if (busy) return;
         var pk = e.target.closest && e.target.closest('[data-pick]');
@@ -1844,7 +1847,7 @@
         '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
     var nen = C.enemies[nx] || {};
-    var h = '<div class="lb-night"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">' + [r.idx > 0 ? '贏了 ' + r.idx + ' 位' : '', r.retryLeft > 0 ? '老闆說情 剩 ' + r.retryLeft + ' 次' : ''].filter(Boolean).join('・') + '</span></div>' +
+    var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">' + [r.idx > 0 ? '贏了 ' + r.idx + ' 位' : '', r.retryLeft > 0 ? '老闆說情 剩 ' + r.retryLeft + ' 次' : ''].filter(Boolean).join('・') + '</span></div>' +
       '<div class="nrow" data-tut="night">' + row + '</div>' +
       '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">下一位：' + esc(r.times[r.idx] || '') + '　' + esc(nen.name || '') + ' ▸</button></div>' +
       '<div class="lb-bagline"><span class="money" data-tut="money">' + moneyHTML(r.money) + '</span><button type="button" class="bag" data-a="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
@@ -1873,7 +1876,7 @@
     }
     if (!save.seen.night && !UI.auto) later(function () {
       if (UI.screen !== 'night') return;
-      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night', 'night-next']); } catch (e) { console.error(e); }
+      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']);   // 整個名單（含「今晚來客」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11） } catch (e) { console.error(e); }
     }, 700);
     autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
@@ -1956,6 +1959,7 @@
   function econCall(m, arg) {
     var X = econ();
     if (!X || typeof X[m] !== 'function') { console.warn('[ui] DipLabEcon.' + m + ' 不在'); return Promise.resolve(); }
+    var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}     // 抽屜開了：今晚來客的老闆小提示收掉，不蓋抽屜的標題、錢、✕（RT-11）
     // 抽屜／櫃檯關掉才 resolve：重畫今晚來客的錢與包包；你的人物留在箱子／櫃檯前（notes-B3 請求 4：不要走回 browse）
     return Promise.resolve().then(function () { return X[m](arg); }).then(function () { if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } }, function (e) { console.error(e); });
   }

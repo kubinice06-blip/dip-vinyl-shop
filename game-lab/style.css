@@ -552,3 +552,12 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 /* 剛換上的畫面／面板 GUARD_MS 內點了不算（防連點）：主鈕先淡一點、好了才亮，看得出來還沒好（RT-8） */
 .lb-screen .lb-btn.pri,.lb-sheet .lb-btn.pri{transition:opacity .18s ease-out;}
 .lb-screen.arming .lb-btn.pri,.lb-sheet.arming .lb-btn.pri{opacity:.55;}
+/* 唱片資訊（長按封面）在矮螢幕（V09）：封面縮到可視高的 30%，簡介與平台鈕不會整個掉到「關閉」下面；
+   底下那條「關閉」上緣加一層淡出陰影，看得出來上面還可以捲 */
+@media (max-height:700px){
+  .drawcard .cov{width:min(200px,30svh);}
+  .drawcard .lab{margin-bottom:6px;}
+  .drawcard .yr{margin-bottom:6px;}
+  .drawcard .stats{margin-bottom:8px;}
+}
+.drawcard .ci-foot::before{content:'';position:absolute;left:0;right:0;top:-18px;height:18px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none;}

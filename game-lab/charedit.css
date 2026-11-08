@@ -76,3 +76,9 @@
   .ce .ce-btn{height:40px;}
   .ce .ce-foot{padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom,0px));}
 }
+/* 矮螢幕（V14）：選項格子小一點（髮型一排多一格），清單底下淡出，看得出來下面還有（髮色） */
+@media (max-height:700px){
+  .ce .ce-grid{grid-template-columns:repeat(auto-fill,minmax(46px,1fr));}
+  .ce .ce-opt{min-height:44px;}
+}
+.ce .ce-body::after{content:'';position:-webkit-sticky;position:sticky;bottom:-10px;display:block;height:16px;margin:0 -10px -10px;background:linear-gradient(rgba(255,255,255,0),var(--ce-bg));pointer-events:none;}
