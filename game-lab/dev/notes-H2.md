@@ -19,8 +19,10 @@
 ## 店主 17:1x 改：不要扇形，水平直線（像舊版新接龍）
 
 - 平時：5 張＋王牌在**同一條水平線**上往右錯開約 3 成寬（不轉角、不成弧形），露出每張封面左邊一條；不顯示星數。其他（攤開、浮起、屬性鈕、教學）不變。
-- [ ] A duel.js／duel.css：拿掉 FAN_ROT／FAN_ARC，class fan→stack，用語「扇形」→「疊成一排」（README、註解、e2e 記錄）
-- [ ] B e2e-duel #1a 加「同一條線、不轉角」檢查；四尺寸 e2e-duel、e2e.spec、e2e-prologue；單元測試
+- [x] A duel.js／duel.css：拿掉 FAN_ROT／FAN_ARC（STACK_DX 0.3），class fan→stack，用語「扇形」→「疊著／疊成一排」（README、註解、e2e 記錄）；
+  教學：疊著時 sh.pointAt＝那一課的封面，手指指那張露出的一條（stripRect；debug().point 照舊 'hand'）。commit fca9be134。
+  量：390×664 疊著封面 113、露出 34 px（30%），攤開 56，空帶 ≤16。單元測試全綠、check-content／lint-copy 綠。
+- [~] B e2e-duel #1a 加「同一條線、不轉角、露出 25–35%」檢查（390 43/43）；四尺寸全套在背景跑：scratchpad/v4/H2/runall.sh → r2-*.log、r2-summary.log
 - [ ] C 截圖重拍（390×664@2、375×548、430×932）：疊著、攤開、浮起＋三顆鈕、剛丟出、教學第 2 手手指；看過修
 
 ## 進度（第一輪，扇形版）
