@@ -11,7 +11,8 @@
 //       v4（SPEC-v4 §2.3、§5.1）：唱盤區剛好一台 duelDeck（duel.deck＝轉盤中心、在兩個對決者中間）＋特效層；櫃檯招牌 o.sign 合法（EMBLEM 點陣）；
 //       每個箱子有 bin（key 唯一、label、stand 貼著箱子、不在家具裡）或 decor、front 張數＝欄數、沒有 lean，主熱點 bin:<key> 由資料推出；
 //       牆上每格都有唱片、section 合法；看得到的封面 ⊂ bins.js 那一區（只警告；嚴格檢查在 check-covers）；
-//       走位：每個 spot 與 bin.stand 不站在家具裡，任兩個之間的 navRoute 每一段都不穿過家具（navRoute 回 null＝走不到）。
+//       走位：每個 spot 與 bin.stand 不站在家具裡，任兩個之間的 navRoute 每一段都不穿過家具（navRoute 回 null＝走不到）；
+//       另外逐段對每個站立家具的腳下範圍（foot，不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
 import fs from 'fs';
 import path from 'path';
 import vm from 'vm';
@@ -43,6 +44,24 @@ export function routeOf(DS, L, a, b, obs) {
   const pts = [a].concat(r); let len = 0, ok = true, bad = null;
   for (let i = 1; i < pts.length; i++) { len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); if (ok && !clear(pts[i - 1], pts[i])) { ok = false; bad = [pts[i - 1], pts[i]]; } }
   return { pts, len, clear: ok, bad };
+}
+// 站立家具的腳下範圍（斜俯視道具的 foot，不加 navMargin）：[[id, [x,y,w,h]], …]。wall／bg／fx 層與 hidden 不算；
+// 站立道具沒有 foot＝bad（navObstacles 看不到它，人會穿過去）；block:false（刻意可以走過的）不算
+export function footprints(L, OP, bad) {
+  const out = [];
+  (L.props || []).forEach((o, i) => {
+    const sp = OP[o.type], layer = o.layer || (sp && sp.layer);
+    if (!sp || o.hidden || layer === 'wall' || layer === 'bg' || layer === 'fx') return;
+    if (!sp.foot) { if (bad) bad('props[' + i + '] ' + o.type + (o.id ? '#' + o.id : '') + '：站立道具沒有 foot（腳下範圍），走位看不到它'); return; }
+    if (o.block === false) return;
+    out.push([o.id || o.type + '#' + i, sp.foot(o).map(v => Math.round(v))]);
+  });
+  return out;
+}
+// 路線（點列）的任一段碰到任一個腳下範圍 → { seg, id, foot }；都沒碰到 → null
+export function routeHitsFeet(DS, pts, feet) {
+  for (let i = 1; i < pts.length; i++) for (const [id, f] of feet) if (DS.segHitsRect(pts[i - 1], pts[i], f)) return { seg: [pts[i - 1], pts[i]], id, foot: f };
+  return null;
 }
 const ACTION_RE = /^(door|listen|counter|cat|talk:owner|poster:event|now|locked|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
 // 小人看得到的列數 × 每格場景像素（斜俯視：人整格 16×spriteScale＝48 格；腳底在第 14 列）
@@ -310,11 +329,17 @@ export function checkOblique(L, file, lib, cards, content) {
   // 任兩個 spot（含每個 bin.stand）之間的路線每一段都不穿過家具（SPEC §5.1；v3 只查 door／counter 出發）
   info.routes = 0;
   const pts = Object.entries(spots).filter(([, s]) => !s[2]).map(([k, s]) => [k, s.slice(0, 2)]).concat(stands.map(([k, st]) => [k, st]));
+  // D §3「路線絕不穿過箱子、櫃檯或任何家具」：另外拿每個站立家具的腳下範圍（foot，不加邊、端點不豁免）逐段再查一次，
+  // 不只信 navRoute 自己的 clear（它會跳過「端點在框裡」的那個框）；站立道具一定要有 foot（不然 navObstacles 看不到它）
+  const feet = footprints(L, OP, (m) => bad(m));
+  info.feet = feet.length;
   for (const [ka, a] of pts) for (const [kb, b] of pts) {
     if (ka === kb) continue;
     const r = routeOf(DS, L, a, b, obs); info.routes++;
     if (!r) { bad('走不到 spots.' + kb + '（從 ' + ka + '）'); continue; }
     if (!r.clear) bad('走不到 spots.' + kb + '（從 ' + ka + '，' + JSON.stringify(r.bad[0]) + '→' + JSON.stringify(r.bad[1]) + ' 穿過家具）');
+    const hit = routeHitsFeet(DS, r.pts, feet);
+    if (hit) bad(ka + '→' + kb + ' 的路線 ' + JSON.stringify(hit.seg[0]) + '→' + JSON.stringify(hit.seg[1]) + ' 穿過 ' + hit.id + ' 的腳下範圍 ' + JSON.stringify(hit.foot));
   }
   info.charH = CH; info.kinds = kinds;
   return { problems: P, warnings: Wn, hotIds: [...ids.keys()], info };

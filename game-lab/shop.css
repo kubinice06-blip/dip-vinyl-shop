@@ -89,3 +89,32 @@
 
 /* route B：名牌在頭上（唱盤區對決） */
 .ds-tag.T{-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}
+
+/* v4 頭頂屬性方塊（SPEC-v4 §2.3.3）：屬性色底、白字「冷 3」；王牌金框。掛在舞台 host 裡（stage.js 每格定位：下緣＝頭頂上方 2 格） */
+.ds-badge{position:absolute;left:0;top:0;z-index:7;pointer-events:none;white-space:nowrap;display:flex;align-items:baseline;gap:3px;
+  font:700 12px/1 'Space Mono','Noto Sans TC','PingFang TC','Heiti TC',monospace;color:#fff;background:#1f5fae;border:2px solid #111;padding:2px 5px 2px;
+  box-shadow:0 2px 0 rgba(0,0,0,.35);-webkit-animation:dsBadgeIn .16s steps(2,end);animation:dsBadgeIn .16s steps(2,end)}
+.ds-badge i{font-style:normal;font-family:'Noto Sans TC','PingFang TC','Heiti TC',sans-serif;font-size:11px;letter-spacing:.02em}
+.ds-badge b{font-size:13px}
+.ds-badge.c{background:#1f5fae}
+.ds-badge.o{background:#6a3fa0}
+.ds-badge.h{background:#c11628}
+/* 矮螢幕橫條（stripS）頭頂上方放不下一般大小：小一號，貼齊舞台上緣時下緣仍在頭頂＋1 格內 */
+.ds-badge.tight{font-size:10px;padding:0 4px 1px;gap:2px}
+.ds-badge.tight i{font-size:10px}
+.ds-badge.tight b{font-size:11px}
+.ds-badge.ace{border-color:#e9c35a;box-shadow:0 0 0 1px #8a6020,0 2px 0 rgba(0,0,0,.35)}
+.ds-badge.ace b{color:#ffe28a}
+/* 判定：剋中的贏家發亮（zap）、打中（hit 抖一下）、剋不動／平手的白環（ring）、比星閃（flash）、贏家（win） */
+.ds-badge.zap{box-shadow:0 0 0 2px #fff6c8,0 0 8px 2px rgba(255,241,194,.9)}
+.ds-badge.ring{outline:2px solid #fff;outline-offset:2px}
+.ds-badge.flash{-webkit-animation:dsBadgeFlash .08s steps(2,end) infinite;animation:dsBadgeFlash .08s steps(2,end) infinite}
+.ds-badge.win{box-shadow:0 0 0 2px #fff6c8,0 2px 0 rgba(0,0,0,.35)}
+.ds-badge.hit{-webkit-animation:dsBadgeHit .2s steps(4,end);animation:dsBadgeHit .2s steps(4,end);filter:saturate(.55) brightness(.85)}
+@-webkit-keyframes dsBadgeIn{from{opacity:0;margin-top:3px}to{opacity:1;margin-top:0}}
+@keyframes dsBadgeIn{from{opacity:0;margin-top:3px}to{opacity:1;margin-top:0}}
+@-webkit-keyframes dsBadgeFlash{0%{filter:brightness(1.6)}100%{filter:brightness(1)}}
+@keyframes dsBadgeFlash{0%{filter:brightness(1.6)}100%{filter:brightness(1)}}
+@-webkit-keyframes dsBadgeHit{0%,100%{margin-left:0}25%{margin-left:-2px}75%{margin-left:2px}}
+@keyframes dsBadgeHit{0%,100%{margin-left:0}25%{margin-left:-2px}75%{margin-left:2px}}
+@media (prefers-reduced-motion:reduce){ .ds-badge,.ds-badge.flash,.ds-badge.hit{-webkit-animation:none;animation:none} }

@@ -5,9 +5,12 @@
 //     一台唱盤（SPEC-v4 §2.3.1／§5.1：置中、兩人在兩側、老闆在台後）、走位（繞過家具、每個 spot 從門口與櫃檯都走得到、
 //     §2.3.2 路線表：每段不穿家具、1 倍速不超過上限、counter→dig 經過右側走道；navRoute 回 null＝「走不到」）、
 //     舊 POS 別名、矮螢幕鏡頭規則（fitCamera 細格子版）、對決鏡頭自動換 stripS、像素字寬度（箱子標籤放得下）、
-//     比例（人明顯比箱子桌、櫃檯、唱盤台高；耳機在桌面高度）、唱盤區幾何、櫃檯 logo、index.json 與台北地圖。
+//     比例（人明顯比箱子桌、櫃檯、唱盤台高；耳機在桌面高度）、唱盤區幾何、櫃檯 logo、index.json 與台北地圖；
+//     D §3 沒有任何路線穿過家具腳下範圍（foot，不加邊）；舞台 v4（假 shop、手動推時間）：version、INTERACT、bins()、hold('o')、finish／finishAll、
+//     faceTo、floorRecord、一手的時間軸（剋中／v3 呼叫／剋不動／平手搖頭／王牌／減少動態／四倍速）、duelIn 接 route []／null。
 import path from 'path';
 import fs from 'fs';
+import vm from 'vm';
 import { fileURLToPath, pathToFileURL } from 'url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -374,6 +377,243 @@ section('櫃檯 logo（B15，SPEC-v4 §2.3.6）：畫在正面板中央、不蓋
   ok(probs.some(p => /^x：.*EMBLEM/.test(p)) && probs.some(p => /^y：.*不等長/.test(p)) && probs.some(p => /^z：.*pal 沒有的字元/.test(p)) && !probs.some(p => /^ok/.test(p)), 'check-shops 的招牌檢查', probs);
 });
 
+// D §3「Add an automated check that no actor route intersects furniture footprints」：任兩個 spot／stand 的路線，逐段對每個站立家具的腳下範圍（foot，不加邊、端點不豁免）
+section('D §3：沒有任何人的路線穿過家具的腳下範圍（任兩個 spot／bin.stand）', () => {
+  const OP = DS.O34.PROPS, feet = CS.footprints(dip, OP);
+  const standing = dip.props.filter(o => { const sp = OP[o.type], ly = o.layer || (sp && sp.layer); return sp && !o.hidden && !['wall', 'bg', 'fx'].includes(ly); });
+  eq(feet.length, standing.length, '每個站立道具都有腳下範圍（' + standing.length + ' 件）');
+  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'isl-0a', 'crate-jazz', 'backbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
+  const obs = DS.navObstacles(dip), pts = Object.entries(dip.spots).filter(([, s]) => !s[2]).map(([k, s]) => [k, s.slice(0, 2)])
+    .concat(dip.props.filter(p => p.bin).map(p => ['bin:' + p.bin.key, p.bin.stand]));
+  let n = 0; const bad = [];
+  for (const [ka, a] of pts) for (const [kb, b] of pts) {
+    if (ka === kb) continue; n++;
+    const r = CS.routeOf(DS, dip, a, b, obs); if (!r) { bad.push('走不到 ' + ka + '→' + kb); continue; }
+    const h = CS.routeHitsFeet(DS, r.pts, feet); if (h) bad.push(ka + '→' + kb + ' 穿過 ' + h.id);
+  }
+  ok(n >= 1400, '路線數 ' + n);
+  eq(bad, [], '沒有路線穿過家具腳下範圍');
+  // 抓得到：手畫一條穿過櫃檯的路；把 navMargin 縮成負的（navRoute 以為直線走得過去）
+  ok(CS.routeHitsFeet(DS, [[200, 200], [290, 200]], feet) && CS.routeHitsFeet(DS, [[200, 200], [290, 200]], feet).id === 'counter', '穿過櫃檯抓得到');
+  const b3 = JSON.parse(JSON.stringify(dip)); b3.navMargin = [-40, -40];
+  const r3 = CS.checkLayout(b3, 'shops/dip.json', lib, cards, content);
+  ok(r3.problems.some(p => /穿過 .* 的腳下範圍/.test(p)), 'navRoute 自己放水時，腳下範圍檢查照樣抓得到', r3.problems.slice(0, 3));
+  // 站立道具沒有 foot＝抓得到
+  const probs = []; CS.footprints({ props: [{ type: 'noFoot', id: 'x' }] }, { noFoot: { draw() {} } }, m => probs.push(m));
+  ok(probs.some(p => /沒有 foot/.test(p)), '站立道具沒有 foot 抓得到', probs);
+});
+
+// ---------- 舞台（stage.js v4）的純邏輯：假 shop 記下每個呼叫，手動推時間（SPEC-v4 §2.3.2、§2.3.3、§2.3.8、§5.1 A2）
+function fakeShop(L) {
+  const actors = {}, log = []; let ticks = [], rt = 0;
+  const A = id => actors[id] || (actors[id] = { x: 0, y: 0, hidden: true, look: false, hold: null, arm: null, flip: false, ox: 0, pose: null, res: null });
+  const spot = k => Array.isArray(k) ? { x: k[0], y: k[1] } : L.spots[k] ? { x: L.spots[k][0], y: L.spots[k][1], outside: !!L.spots[k][2] } : null;
+  const api = {
+    state: {}, layout: L, routeImpl: () => [],
+    face() { return api; }, sprite(id) { A(id).look = true; return api; }, allow() { return api; }, sparkle() { return api; },
+    view() { return { y: 0, h: L.size[1], x: 0, w: L.size[0], scale: 390 / 292, dev: 4, baseDev: 4, dpr: 3 }; },
+    tweenView() { return Promise.resolve(); }, setView() { return api; },
+    put(id, k) { const a = A(id), p = spot(k); if (p) { a.x = p.x; a.y = p.y; a.outside = p.outside; a.hidden = false; if (a.res) { const r = a.res; a.res = null; r(); } } log.push(['put', id, k]); return api; },
+    walk(id, keys, sp) { const a = A(id); a.hidden = false; log.push(['walk', id, keys, sp]); return new Promise(res => { a.res = res; }); },
+    route(from, to) { log.push(['route', from, to]); return api.routeImpl(from, to); },
+    pos(id) { const a = actors[id]; return a ? { x: a.x, y: a.y, outside: a.outside, hidden: a.hidden } : null; },
+    has(id) { const a = actors[id]; return !!(a && !a.hidden && a.look); },
+    hold(id, w) { A(id).hold = w || null; log.push(['hold', id, w || null]); return api; },
+    arm(id, k) { A(id).arm = k || null; return api; },
+    flip(id, on) { A(id).flip = !!on; log.push(['flip', id, !!on]); return api; },
+    nudge(id, dx) { A(id).ox = dx || 0; return api; },
+    pose(id, n) { A(id).pose = n || null; log.push(['pose', id, n || null]); return api; },
+    float(id, t) { log.push(['float', id, t]); return null; },
+    handAt(id) { const a = A(id); return [a.x + (a.flip ? -6 : 6), a.y - 20]; },
+    headY(id) { return A(id).y - 45; },
+    hostCss(x, y) { return { x: x * 390 / 292, y: y * 390 / 292 }; },
+    onTick(fn) { ticks.push(fn); return () => { ticks = ticks.filter(f => f !== fn); }; },
+    now() { return rt; },
+    fast() { return api; }, untag(id) { log.push(['untag', id]); return api; }, tag(id, t) { log.push(['tag', id, t]); return {}; },
+    say() { return null; }, emote() { return api; }, render() {}, hotspots() { return []; }, highlight() { return api; }, destroy() {}, dim() { return api; }, play() { return api; },
+    step(ms) { rt += ms / 1000; ticks.slice().forEach(f => f(rt)); }
+  };
+  return { api, actors, log };
+}
+async function loadStage(F) {
+  const flush = () => new Promise(r => setImmediate(r));
+  const sw = { location: { search: '', href: 'http://localhost/game-lab/' }, innerHeight: 664, addEventListener() {}, removeEventListener() {}, matchMedia: () => ({ matches: false }),
+    DipShop: { mount: () => F.api, O34: DS.O34 }, DipLabCards: cards };
+  const sb = { window: sw, document: {}, location: sw.location, URLSearchParams, console, Promise, JSON, Object, Array, String, RegExp, Math, setTimeout, clearTimeout };
+  vm.createContext(sb);
+  vm.runInContext(fs.readFileSync(path.join(LAB, 'stage.js'), 'utf8'), sb, { filename: 'stage.js' });
+  const sfx = [];
+  const st = await sw.DipLabStage.mount({}, { layout: JSON.parse(JSON.stringify(dip)), cards, sfx: (n, o) => sfx.push([n, o ? JSON.parse(JSON.stringify(o)) : null, F.api.now()]) });
+  // 推時間：每 20 ms 一格，每格之後把 Promise 的回呼跑完；at[t]＝那一格之後要做的事
+  const run = async (ms, at = {}) => { let t = 0; const ks = Object.keys(at).map(Number).sort((a, b) => a - b); while (t < ms) { F.api.step(20); t += 20; await flush(); while (ks.length && ks[0] <= t) at[ks.shift()](t); } };
+  return { st, sw, sfx, run, flush };
+}
+const asections = [];
+function asection(name, fn) { asections.push([name, fn]); }
+
+asection('舞台 v4：version、INTERACT、bins()、hold(\'o\')、finish、faceTo、floorRecord', async () => {
+  const F = fakeShop(dip), { st, sw, run, flush } = await loadStage(F);
+  eq([sw.DipLabStage.version, st.version], ['4.0', '4.0'], 'DipLabStage.version＝stage.version＝4.0');
+  const I = sw.DipLabStage.INTERACT;
+  eq([I.scene, I.duel, I.reward].map(x => JSON.stringify(x)), [JSON.stringify(['rack:*', 'now', 'bin:*']), JSON.stringify(['rack:*', 'now', 'owner', 'bin:*']), JSON.stringify(['bin:*'])], 'INTERACT scene／duel／reward（§2.3.8）');
+  ok(I.title === null && I.map === null, 'title／map 照舊全開');
+  const bins = st.bins();
+  eq(bins.length, 13, 'bins() 13 箱（含特價箱）');
+  eq(bins.map(b => b.hotId), dip.props.filter(p => p.bin).map(p => 'bin:' + p.bin.key), 'hotId＝bin:<key>');
+  ok(bins.every(b => { const p = propById(b.propId); return p && p.bin.label === b.label && JSON.stringify(p.bin.stand) === JSON.stringify(b.stand); }), 'label／stand／propId 照 layout');
+  // hold('o')：老闆手上有那張、arm show；不呼叫 setFlips、不記進 TT.held（§2.3.2、§5.1 A2）
+  st.put('f', 'duelE', 'e0'); st.put('p', 'duelP'); st.put('o', 'ref');
+  st.hold('e', { back: true });
+  const held0 = st.clashState().held, n0 = F.log.length;
+  st.hold('o', { sleeve: 'swans-filth' });
+  eq(F.actors.o.hold, { sleeve: 'swans-filth' }, 'hold(\'o\')：shop 的老闆手上有那張');
+  eq(F.actors.o.arm, 'show', 'hold(\'o\')：arm show');
+  eq(st.clashState().held, held0, 'hold(\'o\')：TT.held 不變');
+  ok(!F.log.slice(n0).some(x => x[0] === 'flip' || (x[0] === 'hold' && x[1] !== 'o')), 'hold(\'o\')：不動 p／f 的翻面與手', F.log.slice(n0));
+  eq(F.actors.p.hold, null, 'hold(\'o\') 不會給到玩家（v3 sid() 把 o 當 p 的 bug）');
+  st.hold('o', null); ok(F.actors.o.hold === null && F.actors.o.arm === null, 'hold(\'o\', null) 收起');
+  st.hold('p', { sleeve: 'radiohead-ok-computer' });
+  eq(st.clashState().held, { f: { back: true }, p: { sleeve: 'radiohead-ok-computer' } }, 'hold(\'e\'／\'p\') 記進 TT.held');
+  // finish／finishAll：正在走的那段直接放到終點、resolve 那個 walk、姿勢回 null
+  let done = 0; st.walk('o', ['dig1'], 54).then(() => done++);
+  st.walk('p', ['browse']).then(() => done++); st.walk('f', ['visit']).then(() => done++);
+  await flush(); eq(done, 0, '還在走');
+  st.finish('o'); await flush();
+  eq([F.actors.o.x, F.actors.o.y, done, F.actors.o.pose], [dip.spots.dig1[0], dip.spots.dig1[1], 1, null], 'finish(o)：放到 dig1、walk resolve、姿勢 null');
+  st.finishAll(); await flush();
+  eq([done, F.actors.p.x, F.actors.f.x], [3, dip.spots.browse[0], dip.spots.visit[0]], 'finishAll：p、f 也到終點');
+  const nPut = F.log.filter(x => x[0] === 'put').length; st.finish('o'); st.finishAll();
+  eq(F.log.filter(x => x[0] === 'put').length, nPut, '走完了再 finish 不會再 put');
+  // faceTo：依兩人 x 翻面
+  st.put('f', 'duelE'); st.put('p', 'duelP');
+  st.faceTo('p', 'f'); eq(F.actors.p.flip, true, 'faceTo(p, f)：你在右、面向左');
+  st.faceTo('f', 'p'); eq(F.actors.f.flip, false, 'faceTo(f, p)：他在左、面向右');
+  st.faceTo('o', [10, 100]); eq(F.actors.o.flip, true, 'faceTo(o, [x,y])');
+  // floorRecord：地上平躺的唱片，直到 floorRecord(null)
+  st.floorRecord('duelE', { attr: 'o', card: 'swans-filth' }); await run(40);
+  ok((F.api.state.fx.discs || []).some(d => d.flat && d.x === dip.spots.duelE[0] && d.y === dip.spots.duelE[1] && d.attr === 'o'), 'floorRecord(duelE)：地上一張冷門唱片', F.api.state.fx);
+  await run(3000);
+  ok(F.api.state.fx.discs.some(d => d.flat), 'floorRecord 一直留著（不像 flatDisc 會消失）');
+  st.floorRecord(null); await run(40);
+  ok(!F.api.state.fx.discs.some(d => d.flat), 'floorRecord(null) 收掉');
+});
+
+asection('舞台 v4：一手的時間軸 roundItem（剋中、v3 呼叫、平手搖頭、減少動態、四倍速）', async () => {
+  const pc = 'radiohead-ok-computer', ec = 'swans-filth';
+  const setup = async () => { const F = fakeShop(dip), S = await loadStage(F); S.st.put('f', 'duelE', 'e0'); S.st.put('p', 'duelP'); S.st.put('o', 'ref'); S.st.tag('f', '男子', 'e', 'T'); S.st.tag('p', '你', 'p', 'T'); return Object.assign(S, { F }); };
+  // ---- 剋中（你冷 4 剋他經 5 → counter 4）
+  {
+    const { st, F, sfx, run } = await setup(), snap = {}; let resolved = null, hit = [], land = [];
+    st.clash({ kind: 'counter', blocked: null, by: 'p', toE: 4, toP: 0, p: { attr: 'o', star: 4, card: pc, ace: false }, e: { attr: 'c', star: 5, card: ec, ace: false }, onHit: s => hit.push([s, F.api.now()]), onLand: (s, c) => land.push([s, c]) })
+      .then(() => { resolved = Math.round(F.api.now() * 1000); });
+    const take = t => () => { snap[t] = { cs: st.clashState(), f: JSON.parse(JSON.stringify(F.actors.f)), p: JSON.parse(JSON.stringify(F.actors.p)), o: JSON.parse(JSON.stringify(F.actors.o)), deck: F.api.state.deck ? JSON.parse(JSON.stringify(F.api.state.deck)) : null, fx: JSON.parse(JSON.stringify(F.api.state.fx)) }; };
+    await run(1900, { 100: take(100), 300: take(300), 520: take(520), 600: take(600), 1000: take(1000), 1500: take(1500), 1880: take(1880) });
+    eq(snap[100].f.hold && snap[100].f.hold.back, true, 't=100：他舉起封套、背面朝外');
+    eq(snap[100].p.hold && snap[100].p.hold.sleeve, pc, 't=100：你舉起自己那張');
+    eq([snap[100].p.arm, snap[100].f.arm], ['wind', 'wind'], 't=100：兩人 arm wind');
+    eq(snap[100].cs.badges, { e: null, p: null }, 't=100：還沒有方塊');
+    ok(!snap[300].f.hold.back && snap[300].f.hold.sleeve === ec, 't=300：他翻面了');
+    eq([snap[300].cs.badges.p.attr, snap[300].cs.badges.p.star, snap[300].cs.badges.e.attr, snap[300].cs.badges.e.star], ['o', 4, 'c', 5], 't=300：頭頂方塊 冷 4／經 5');
+    ok(F.log.some(x => x[0] === 'untag' && x[1] === 'f') && F.log.some(x => x[0] === 'untag' && x[1] === 'p'), '方塊出現時名牌暫時收起');
+    ok(sfx.some(x => x[0] === 'flip'), '翻面有聲音');
+    ok(/zap/.test(snap[520].cs.badges.p.fx) && snap[520].fx.sparks.length > 0, 't=520：火花從贏家方塊射出（贏家方塊發亮）');
+    eq(hit.map(x => x[0]), ['e'], 'onHit(e) 一次');
+    ok(hit[0][1] * 1000 >= 559 && hit[0][1] * 1000 <= 581, 'onHit 在 560', hit);
+    ok(F.log.some(x => x[0] === 'float' && x[1] === 'f' && x[2] === '−4'), '他頭上 −4');
+    ok(F.log.some(x => x[0] === 'pose' && x[1] === 'f' && x[2] === 'hurt'), '輸家 hurt');
+    ok(snap[600].p.ox < 0 && snap[600].p.ox >= -10, 't=600：贏家（你）往唱盤上前（向左）', snap[600].p.ox);
+    eq(snap[1000].deck && [snap[1000].deck.state, snap[1000].deck.by, snap[1000].deck.rec.attr, snap[1000].deck.rec.card], ['spin', 'p', 'o', pc], 't=1000：唱片在轉、贏家的封面（NOW 小窗讀這張）');
+    eq(snap[1000].f.hold, null, 't=1000：輸家已放下封套');
+    eq(snap[1000].p.ox, -10, 't=1000：贏家站在唱盤前 10 格');
+    ok(snap[1000].fx.flag && snap[1000].fx.flag.side === 'p' && snap[1000].o.arm === 'flag', 't=1000：老闆朝你舉旗');
+    const needle = sfx.find(x => x[0] === 'needle'), chime = sfx.find(x => x[0] === 'chime');
+    ok(needle && Math.abs(needle[2] * 1000 - 960) <= 20, '960 落針', needle);
+    ok(chime && Math.abs(chime[2] * 1000 - 980) <= 20 && chime[1] && chime[1].attr === 'o', '980 屬性短音 chime {attr:o}（opts 有傳下去）', chime);
+    eq(land, [['p', pc]], 'onLand(p, 卡) 一次');
+    ok(resolved >= 1460 && resolved <= 1480, '1460 resolve', resolved);
+    eq(snap[1500].cs.badges, { e: null, p: null }, '1460 之後方塊收起');
+    ok(F.log.filter(x => x[0] === 'tag' && x[1] === 'f').length >= 2, '方塊收起時名牌還原');
+    eq(snap[1500].p.ox, 0, '1400 贏家退回原位');
+    eq(snap[1880].cs.items, 0, '1800 演完');
+    ok(snap[1880].deck && snap[1880].deck.state === 'spin', '唱片一直轉到下一手 clearClash');
+    st.clearClash(); await run(200);
+    eq([st.clashState().deck, F.api.state.deck], [null, null], 'clearClash：抬針閃兩下後台上空了');
+  }
+  // ---- v3 呼叫（沒有 star／blocked／by）：方塊星數退回卡片那軸、by 從屬性推
+  {
+    const { st, F, run } = await setup(); let snap = null;
+    st.clash({ kind: 'countered', toE: 0, toP: 3, p: { attr: 'c', card: pc }, e: { attr: 'o', card: ec } });
+    await run(400, { 300: () => { snap = st.clashState(); } });
+    eq([snap.badges.p.star, snap.badges.e.star], [cards[pc].c, cards[ec].o], 'v3 呼叫：星數＝卡片那軸（' + cards[pc].c + '／' + cards[ec].o + '）');
+    await run(700);
+    eq(F.api.state.deck && F.api.state.deck.by, 'e', 'countered：他的唱片上台');
+  }
+  // ---- 剋不動（blocked）：防守方方塊一圈白環；比星由大的贏
+  {
+    const { st, run } = await setup(); let snap = null;
+    st.clash({ kind: 'mirrorLose', blocked: 'gap', by: 'p', toE: 0, toP: 2, p: { attr: 'o', star: 3, card: pc }, e: { attr: 'c', star: 5, card: ec } });
+    await run(560, { 500: () => { snap = st.clashState(); } });
+    ok(/ring/.test(snap.badges.e.fx) && !/ring/.test(snap.badges.p.fx), 'blocked：防守方（他）方塊一圈白環', snap.badges);
+  }
+  // ---- 平手：空盤、老闆左右翻面 6 次回到原本朝向、不舉旗、960 中性短音
+  {
+    const { st, F, sfx, run } = await setup(); let deck1000 = 'x', arm1000 = null; const sway = [];
+    const n0 = F.log.length;
+    st.clash({ kind: 'tie', toE: 0, toP: 0, p: { attr: 'c', star: 4, card: pc }, e: { attr: 'c', star: 4, card: ec } });
+    await run(1900, { 1000: () => { deck1000 = F.api.state.deck; arm1000 = F.actors.o.arm; }, 660: () => sway.push(F.actors.o.ox), 780: () => sway.push(F.actors.o.ox), 1500: () => sway.push(F.actors.o.ox) });
+    eq(sway, [-2, 2, 0], '平手：老闆跟著翻面左右晃 2 格（對稱的小人光翻面看不出來），結束回原位');
+    eq(deck1000, null, '平手：台上空著');
+    ok(arm1000 !== 'flag', '平手：不舉旗');
+    const oflips = F.log.slice(n0).filter(x => x[0] === 'flip' && x[1] === 'o').map(x => x[2]);
+    let changes = 0; for (let i = 0, prev = false; i < oflips.length; prev = oflips[i], i++) if (oflips[i] !== prev) changes++;
+    eq(changes, 6, '平手：老闆從原本朝向左右翻面 6 次（三個來回）', oflips.join(','));
+    eq(F.actors.o.flip, false, '平手：最後回到原本朝向');
+    ok(!sfx.some(x => x[0] === 'needle'), '平手：不落針');
+    const c0 = sfx.filter(x => x[0] === 'chime');
+    ok(c0.length === 1 && c0[0][1] && c0[0][1].attr === null && Math.abs(c0[0][2] * 1000 - 960) <= 20, '平手：960 中性短音 chime {attr:null}', c0);
+  }
+  // ---- 王牌：台上唱片金色標籤（rec.kind ace）、方塊 ace
+  {
+    const { st, F, run } = await setup(); let snap = null;
+    st.clash({ kind: 'counter', by: null, blocked: null, toE: 7, toP: 0, p: { attr: 'h', star: 7, card: pc, ace: true }, e: { attr: 'h', star: 2, card: ec } });
+    await run(1000, { 300: () => { snap = st.clashState(); } });
+    ok(snap.badges.p.ace && snap.badges.p.star === 7, '王牌方塊：ace、7');
+    eq(F.api.state.deck && F.api.state.deck.rec.kind, 'ace', '王牌：台上唱片 kind ace');
+  }
+  // ---- 減少動態：不舉、不翻；560 resolve；方塊、唱片直接在轉、舉旗
+  {
+    const { st, F, run } = await setup(); let resolved = null, snap = null;
+    st.clash({ kind: 'counter', by: 'p', toE: 4, toP: 0, reduced: true, p: { attr: 'o', star: 4, card: pc }, e: { attr: 'c', star: 5, card: ec } }).then(() => { resolved = Math.round(F.api.now() * 1000); });
+    await run(700, { 300: () => { snap = { f: F.actors.f.hold, b: st.clashState().badges }; }, 600: () => { snap.d = F.api.state.deck; snap.fl = F.api.state.fx.flag; } });
+    eq([snap.f, snap.b.p], [null, null], '減少動態：300 沒舉封套、沒方塊');
+    ok(resolved >= 560 && resolved <= 580, '減少動態：560 resolve', resolved);
+    ok(snap.d && snap.d.state === 'spin' && snap.fl, '減少動態：唱片直接在轉、舉旗');
+  }
+  // ---- 四倍速：1460 ÷ 4
+  {
+    const { st, F, run } = await setup(); let resolved = null;
+    st.clash({ kind: 'counter', by: 'p', toE: 4, toP: 0, speed: 4, p: { attr: 'o', star: 4, card: pc }, e: { attr: 'c', star: 5, card: ec } }).then(() => { resolved = Math.round(F.api.now() * 1000); });
+    await run(500);
+    ok(resolved >= 365 && resolved <= 385, '四倍速：365 ms resolve', resolved);
+  }
+});
+
+asection('舞台 v4：duelIn 在 shop.route 回 []／null 時不丟錯、照常走（SPEC-v4 §2.4.5）', async () => {
+  for (const rv of [[], null]) {
+    const F = fakeShop(dip), { st, flush } = await loadStage(F);
+    F.api.routeImpl = () => rv;
+    st.put('f', 'mid', 'e0'); st.put('p', 'leaving'); st.put('o', 'counter', 'owner');
+    let err = null; const pr = st.duelIn({ ms: 600 }).catch(e => { err = e; });
+    await flush();
+    const walks = F.log.filter(x => x[0] === 'walk');
+    eq(walks.map(x => x[1] + '→' + x[2].join(',')).sort(), ['f→duelE', 'o→ref', 'p→duelP'], 'route 回 ' + JSON.stringify(rv) + '：三個人照常 walk');
+    ok(walks.every(x => x[3] > 0 && isFinite(x[3])), '速度用直線距離估（有限、> 0）', walks.map(x => x[3]));
+    st.finishAll(); ['f', 'p', 'o'].forEach(id => { const a = F.actors[id]; if (a.res) { const r = a.res; a.res = null; r(); } });
+    await pr; await flush();
+    eq(err, null, 'duelIn 不丟錯');
+  }
+});
+
 section('index.json 與台北地圖預告', () => {
   eq(index.map, 'shops/taipei.json', 'map');
   eq(index.shops.map(s => s.id + ':' + s.status), ['dip:open', 'basement:debug'], '本店開、地下室只在 debug');
@@ -382,6 +622,8 @@ section('index.json 與台北地圖預告', () => {
   ok(pins.filter(p => p.locked).every(p => p.hot.label === '？？？（還沒開）' && p.hot.action === 'locked'), '其他圖釘：？？？（還沒開）');
   ok(taipei.fictional === true, '地圖是示意');
 });
+
+for (const [name, fn] of asections) { const f0 = fail; try { await fn(); } catch (e) { fail++; fails.push(name + ' threw: ' + (e.stack || e)); } console.log((fail === f0 ? 'ok  ' : 'FAIL') + ' ' + name); }
 
 if (process.argv.includes('--routes')) for (const [a, b, len, sec, lim] of routeTimes.filter(r => !(String(r[0]).startsWith('bin:') && String(r[1]).startsWith('bin:')))) console.log('  ' + (a + '→' + b).padEnd(24) + String(len).padStart(4) + ' 格 ' + sec.toFixed(2) + ' s（≤' + lim + '）');
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
