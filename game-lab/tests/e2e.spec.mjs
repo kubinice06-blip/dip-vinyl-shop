@@ -194,7 +194,7 @@ async function run() {
             const opened = { guess: guessInfo }, closedAtOnce = [];
             // 長按：放開手指之後 400 ms 唱片資訊還要開著（H3／RV11-1：放開補送的 click 不能落到「關閉」或串流鈕上）。
             //   疊著的第 1 張與王牌、攤開的一張（那一排在畫面最底下＝「關閉」那條的位置）、浮起的一張都要驗
-            await page.evaluate(() => { window.__infoEv = []; window.DipLabDuel.on('info', w => window.__infoEv.push(w)); window.__navs = 0; document.addEventListener('click', e => { if (e.target.closest && e.target.closest('a[href]')) { window.__navs++; e.preventDefault(); } }, true); });
+            await page.evaluate(() => { window.__infoEv = []; window.DipLabDuel.on('info', w => window.__infoEv.push(w)); window.__navs = 0; window.addEventListener('click', e => { if (!e.defaultPrevented && e.target.closest && e.target.closest('a[href]')) { window.__navs++; e.preventDefault(); } }); });   // 冒泡到 window 還沒被擋＝真的會開連結（唱片資訊擋下的那一下到不了這裡）
             const lpCases = [['hand', '.dl [data-tut=card-0]', 'hand', null], ['ace', '.dl [data-tut=card-ace]', 'hand-ace', null],
               ['spread', '.dl [data-tut=card-1]', 'hand', 'spread'], ['lifted', '.dl [data-tut=card-2]', 'hand', 'lift']];
             for (const [k, sel, where, prep] of lpCases) {
