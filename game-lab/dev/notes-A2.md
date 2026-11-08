@@ -15,7 +15,11 @@
   - basement：`shelfB.faces` silver-apples → `throbbing-gristle-20-jazz-funk-greats`；basement／taipei 全部引用跟 v4 卡表（final.json＋gold／listen／stake）比過，只有這一張要換。
 - [x] 交件 2 的一部分（M1 需要）：`shop-props.js` `duelDeck`（木紋＋dip 黑座、置中加大轉盤、NOW 小窗、綠燈、唱臂、音符）、刪 `deckStand`／`deckGeo`、匯出 `duelDeckGeo`；ledge／binTable／listenDesk 拿掉 `P.poolPick` 退路（空格畫素色封套）。
 - [x] 交件 5 的大部分：check-shops（`o34HotIds`、`O34_SPOTS`、`routeOf`、`loadBins`、bin／decor／front／lean／stand／section／ledge 空格／一台 duelDeck／duel.deck／全配對路線）；shop.test（v4 schema、一台唱盤幾何、§2.3.2 路線表、特價箱限制、壞資料抓得到、navRoute null、poolPick 不被叫）。**還沒做**：`stage.hold('o')` 的測試（等 stage.js）。
-- [ ] 交件 2–6（stage 一手演出等）＝第二階段
+- [x] 第二階段開工：合併 `v4/A3-M1`（06d9c9ee6）。
+- [x] 交件 2–4 程式（e25258e8a）：`stage.js` roundItem（舉封套／他背面→翻面／頭頂方塊／判定火花・白環・比星閃／輸家受擊／贏家上前放唱片／落針＋chime／NOW／舉旗／平手搖頭＋空轉聲／減少動態）、finish／finishAll／faceTo／floorRecord／badge／badgeRect／bins／focus／unfocus、hold('o')、INTERACT 加 bin:*、version '4.0'、duelIn 接 route []；`shop-props.js` holdDraw 封套背面＋翻面壓扁（`DipPropsO.sleeveBack`）；`fx.js` SFX.chime（含 attr null 空轉唱針聲）、`sfxNames()`；`shop.css` `.ds-badge`。
+- [ ] 交件 5 補完：shop.test 的 stage 假 shop 測試（hold('o')、時間軸、v3 呼叫、duelIn route []）＋「沒有任何路線穿過家具腳下範圍」檢查（check-shops＋shop.test）
+- [ ] 交件 6：`dev/stage-harness.html`；390×664、375×548 主控台 0 錯誤
+- [ ] 段 3 截圖：唱盤停格 t=100/300/560/1000、平手 1000（兩尺寸）＋`390x664-routes.png
 
 ## 測試結果
 - M1（A3-M1 之前）：`node game-lab/test/shop.test.mjs` 916 passed、3 failed——3 條全是「新卡不在 cards.js」（34 張 §4.5 新卡，等合併 A3-M1 的 cards.js）。用 v3 cards ∪ v4 卡表替身跑 check-shops（scratchpad `a2/chk-v4cards.mjs`）：0 problems、0 warnings、13 個 bin:* 熱點、1406 條全配對路線都不穿家具。標題畫面 390×664、375×548 主控台 0 錯誤（v3 ui.js 照常開）。
