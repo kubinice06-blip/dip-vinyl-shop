@@ -204,6 +204,15 @@
     if (panelMin != null) o.panelMin = panelMin;
     return stgP('camera', name, o);
   }
+  // 矮螢幕的鏡頭從牆頂往下裁（anchor bottom）：店裡看得到的人頭頂被裁掉時，鏡頭往上移到頭頂留 4 格（高度、倍率不變）
+  function keepHeads(ms) {
+    var sh = UI.stage && UI.stage.shop; if (!sh || typeof sh.view !== 'function' || typeof sh.headY !== 'function') return;
+    var v = sh.view(), top = Infinity;
+    ['p', 'o', 'f'].forEach(function (id) { var a = stg('pos', id); if (a && !a.hidden && !a.outside && stg('has', id)) top = Math.min(top, sh.headY(id)); });
+    if (!isFinite(top) || top - 4 >= v.y) return;
+    var to = { y: Math.max(0, Math.floor(top - 4)), h: v.h };
+    try { if (ms > 0 && typeof sh.tweenView === 'function') sh.tweenView(to, Math.round(ms / speed())); else sh.setView(to); } catch (e) { console.error(e); }
+  }
   function anchorOf(id) { return stg('anchor', id); }
   function stageSay(id, text, tone, ms) { if (text) stg('say', id, text, { tone: tone || (id === 'o' ? 'owner' : null), ms: ms == null ? 2600 : ms }); }
   function place(id, spot, spr) {
@@ -746,12 +755,12 @@
       });
       L.onFinish = function () { flies.forEach(function (fl) { fl.cancel(); }); sc.stripState = null; renderStrip(sc); };
     }
-    // 選項要的空間：只把舞台往上收到放得下（ART-12：不換 reward 鏡頭、不留一大塊黑）
+    // 選項要的空間：只把舞台往上收到放得下（ART-12：不換 reward 鏡頭、不留一大塊黑）；收完人頭不能被裁掉（375×548 的 O21：後走道三個人）
     function roomFor() {
       if (!UI.stage) return;
       var need = Math.ceil(naturalH(dq) + 30);
       if (UI.panel.clientHeight >= need) return;
-      cam('full', 'scene', 260, need);
+      cam('full', 'scene', 260, need).then(function () { keepHeads(200); });
     }
     function textOf(b) {
       var t = b.text;
@@ -893,11 +902,17 @@
     focusFirst(s);
     return s;
   }
+  // 面板內容比 reward 鏡頭留的高：量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）；放不下整間店就收成對決那條（人都還在畫面裡）
+  function roomForSheet(s) {
+    var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+    var need = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
+    if (vh - 32 - need < 210) cam('strip', 'reward', 380); else cam('reward', 'reward', 380, need);
+  }
   function camBackSoon() {
-    if (UI.screen !== 'scene' || UI.camName !== 'reward') return;
+    if (UI.screen !== 'scene' || (UI.camName !== 'reward' && UI.camName !== 'strip')) return;
     var scr0 = UI.screen;
     clearTimeout(UI.camBack);
-    UI.camBack = setTimeout(function () { UI.camBack = 0; if (UI.screen === scr0 && !qs(':scope > .lb-sheet', UI.panel) && UI.camName === 'reward') cam('full', 'scene', 380); }, 160);
+    UI.camBack = setTimeout(function () { UI.camBack = 0; if (UI.screen === scr0 && !qs(':scope > .lb-sheet', UI.panel) && (UI.camName === 'reward' || UI.camName === 'strip')) cam('full', 'scene', 380); }, 160);
   }
   function closeSheet(s) {
     if (!s) return;
@@ -996,10 +1011,11 @@
       var html = '<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3></div><div class="lb-recs">' +
         ids.map(function (id) {
           var c = card(id); if (!c) return '';
-          return '<div class="rc" data-cid="' + esc(c.id) + '">' + coverHTML(c, { size: 56 }) + '<div class="t"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' +
+          return '<div class="rc" data-cid="' + esc(c.id) + '">' + coverHTML(c, { size: 48 }) + '<div class="t"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' +
             starsHTML(c) + (c.pitch ? '<p class="pt">' + esc(c.pitch) + '</p>' : '') + '</div></div>';
         }).join('') + '</div><div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok">' + esc((beat && beat.button) || '收下這四張') + '</button></div>';
-      var s = sheet(html, 'recs');
+      var s = sheet(html, 'recs', { cam: false });
+      roomForSheet(s);
       var done = false;
       s.addEventListener('click', function (e) {
         if (done || !(e.target.closest && e.target.closest('[data-a=ok]'))) return;
