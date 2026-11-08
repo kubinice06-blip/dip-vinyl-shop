@@ -10,6 +10,7 @@
 //       人＝16×16 小人 ×spriteScale（48 格）；箱子桌、櫃檯、唱盤台、試聽桌都比人矮；耳機掛勾在桌面高度；
 //       v4（SPEC-v4 §2.3、§5.1）：唱盤區剛好一台 duelDeck（duel.deck＝轉盤中心、在兩個對決者中間）＋特效層；櫃檯招牌 o.sign 合法（EMBLEM 點陣）；
 //       每個箱子有 bin（key 唯一、label、stand 貼著箱子、不在家具裡）或 decor、front 張數＝欄數、沒有 lean，主熱點 bin:<key> 由資料推出；
+//       交叉比對（v4 整合 C）：由資料推出的 bin:* 集合＝DipShop.buildHotList(L) 真的產生的 bin:* 集合；
 //       牆上每格都有唱片、section 合法；看得到的封面 ⊂ bins.js 那一區（只警告；嚴格檢查在 check-covers）；
 //       走位：每個 spot 與 bin.stand 不站在家具裡，任兩個之間的 navRoute 每一段都不穿過家具（navRoute 回 null＝走不到）；
 //       另外逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
@@ -288,6 +289,18 @@ export function checkOblique(L, file, lib, cards, content) {
     }
   });
   for (const id of o34HotIds(L)) if (!ids.has(id)) bad('缺熱點 ' + id);
+  // 交叉比對（SPEC-v4 §3.3，C 整合後加）：從 o.bin.key 推出的 bin:<key> 集合＝shop.js DipShop.buildHotList(L) 真的產生的 bin:* 集合
+  if (lib.DipShop && typeof lib.DipShop.buildHotList === 'function') {
+    let built = null;
+    try { built = lib.DipShop.buildHotList(JSON.parse(JSON.stringify(L)), lib.DipShop.O34 && lib.DipShop.O34.PROPS, { card: id => cards[id] || null }); }
+    catch (e) { bad('DipShop.buildHotList 丟錯：' + (e && e.message)); }
+    if (built) {
+      const fromData = new Set(o34HotIds(L).filter(h => h.startsWith('bin:')));
+      const fromHot = new Set(built.filter(h => !h.occluder && typeof h.id === 'string' && h.id.startsWith('bin:')).map(h => h.id));
+      for (const id of fromData) if (!fromHot.has(id)) bad('交叉比對：' + id + ' 由 o.bin 推得出來，但 buildHotList 沒有這個熱點');
+      for (const id of fromHot) if (!fromData.has(id)) bad('交叉比對：buildHotList 有 ' + id + '，但沒有哪個道具的 o.bin.key 對得上');
+    }
+  } else bad('shop.js 沒有 DipShop.buildHotList：交叉比對做不了');
   if ([...ids.keys()].filter(h => h.startsWith('rack:')).length < 12) bad('牆上（與櫃子裡）可點的唱片少於 12 張');
   for (const [r, src] of recRefs) if (!cards[r]) bad(src + '：唱片 ' + r + ' 不在 cards.js');
   (L.actors || []).forEach((a, i) => {
