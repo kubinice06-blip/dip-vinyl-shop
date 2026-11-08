@@ -678,7 +678,7 @@ section('14 content 形狀（§4 牌組限制、§4.2 禮物、§4.3 特價箱�
   const main = {}; for (const id of ['man', ...C.normals, ...C.elites]) main[id] = EN.deckMain(C.enemies[id].deck.map(card), C.enemies[id].taste);
   eq(main, { man: 'c', copycat: 'c', already: 'o', needle: 'c', skip: 'o', broke: 'h', buyer: 'h', label: 'o', critic: 'c' }, 'deckMain per guest (§4.1)');
   ok(C.version === 'lab-4' && EN.VERSION === 'lab-4', 'version lab-4');
-  for (const k of ['habits', 'habitLabels']) ok(Object.keys(C[k]).length <= 2, 'v3 shim ' + k + ' only');
+  for (const k of ['habits', 'habitLabels']) ok(!(k in C), 'v3 shim ' + k + ' removed');
   ok(!('phase2Lines' in C) && !('example' in C.rules) && !('sub' in C.rules), 'v3 rule-card example / phase2 removed');
   const FORBID = /氣勢|輾壓|賭注|相生|割捨|七星回擊|霸權|點播/;
   const scan = (o, p) => { if (typeof o === 'string') ok(!FORBID.test(o), 'no removed mechanic words in ' + p, o); else if (o && typeof o === 'object') for (const k in o) if (k !== 'cards') scan(o[k], p + '.' + k); };
