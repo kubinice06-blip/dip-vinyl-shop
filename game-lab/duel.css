@@ -36,28 +36,28 @@
 /* ===================== 他的一塊（上；底線淺灰）：名字＋聲望；提示句與「蓋著的封套＋他還有幾張」同一列 ===================== */
 .dl .dl-e{flex:none;padding:5px 12px 6px;border-bottom:1px solid var(--line,#ddd);display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px}
 .dl .dl-e>.nmrow,.dl .dl-e>.hp{grid-column:1 / -1}
-.dl .hint{grid-column:1;display:flex;align-items:center;margin-top:6px;min-height:28px;border:1px solid var(--ink,#111);background:#fff;min-width:0}
-.dl .hint .lb{align-self:stretch;flex:none;display:grid;place-items:center;background:var(--ink,#111);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 7px;margin-right:7px;white-space:nowrap}
-.dl .hint .tx{font-size:13px;font-weight:700;letter-spacing:.02em;line-height:16px;padding:3px 6px 3px 0;min-width:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+/* 提示句（店主 FIXLIST 9）：不再是上面獨立的一條，而是牌桌中間的「字帶」——兩張封面下方、跟結果框同一個位置；
+   出牌前是提示句（主角之一），揭曉時換成結果框，下一手換回下一句提示。字帶在封面下面剩下的高（--band-h，duel.js sizeTable）裡置中 */
+.dl .hint{position:absolute;left:var(--tx);right:var(--tx);top:calc(var(--tp) + var(--scv) + var(--lab) + 6px + var(--band-h,74px) / 2);transform:translateY(-50%);z-index:3;
+  display:flex;align-items:stretch;min-height:40px;border:1.5px solid var(--ink,#111);background:#fff;min-width:0;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.dl .hint .lb{flex:none;display:grid;place-items:center;background:var(--ink,#111);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;padding:0 9px;margin-right:9px;white-space:nowrap}
+.dl .hint .tx{align-self:center;font-size:15px;font-weight:700;letter-spacing:.02em;line-height:20px;padding:6px 8px 6px 0;min-width:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .dl .hint.empty .tx{color:#bbb}
 .dl .hint.done{border-color:#ccc}.dl .hint.done .lb{background:#bbb}.dl .hint.done .tx{color:#aaa}
-.dl .rec{grid-column:2;display:flex;margin-top:6px;align-items:center;min-width:0}
-.dl .rec .sp{display:none}
-.dl .sleeve{display:flex;align-items:center;flex:none;min-width:0;transition:opacity .2s}
-.dl .sleeve .sleeve-bk{width:28px;height:28px}
-/* 「蓋著」兩個字留給讀螢幕（畫面上是那張背面朝上的封套；揭曉時牌桌他那格也寫「蓋著」） */
-.dl .sleeve .sl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.dl .sleeve.off{opacity:.25}
+.dl.revealed .hint{visibility:hidden}
+.dl:not(.revealed) .lastline{visibility:hidden}
+/* 他還有 N 張：在名字那一行（名字後面；聲望那邊留給扣血的飄字） */
+.dl .rec{display:flex;align-items:center;flex:none;min-width:0;margin-left:10px;align-self:center}
 /* 封套背面：深色紙＋白色內圈標（跟舞台 holdDraw 的背面同一個樣子） */
 .dl .sleeve-bk{position:relative;display:block;background:#26201a;border:1px solid var(--ink,#111);box-shadow:inset 0 0 0 2px #3a3128}
 .dl .sleeve-bk i{position:absolute;left:50%;top:50%;width:38%;height:38%;transform:translate(-50%,-50%);border-radius:50%;background:#f4efe2;box-shadow:0 0 0 2px #26201a,0 0 0 3px #6b5f50}
 .dl .sleeve-bk i::after{content:'';position:absolute;left:50%;top:50%;width:18%;height:18%;transform:translate(-50%,-50%);border-radius:50%;background:#26201a}
-.dl .pile{margin-left:7px;flex:none;text-align:right}
+.dl .pile{flex:none;display:flex;align-items:center}
 .dl .pile .bars{display:flex;justify-content:flex-end}
-.dl .pile .bars i{display:block;width:4px;height:12px;background:#444}
+.dl .pile .bars i{display:block;width:3px;height:10px;background:#444}
 .dl .pile .bars i+i{margin-left:2px}
 .dl .pile .bars i.x{background:#e4e4e4}
-.dl .pile small{display:block;font-size:10px;line-height:12px;color:var(--gray,#888);margin-top:2px;white-space:nowrap}
+.dl .pile small{display:block;font-size:10px;line-height:12px;color:var(--gray,#888);margin-left:5px;white-space:nowrap}
 
 /* ===================== 牌桌（中間）：兩張丟出去的專輯是主角（店主 2026-11-08：「相剋圖比例太大 主角是專輯」）=====================
    兩格並排放大（--scv＝封面邊長，duel.js fit() 照牌桌的高與寬算：390×664 約 128）；中間一欄＝「第 n／6 手」＋小小的相剋圖例；
@@ -74,6 +74,13 @@
 .dl .slot.empty{height:var(--scv);border:1px dashed #cfcfcf;display:grid;place-items:center}
 .dl .slot.empty .ph{font-size:12px;color:#bbb}
 .dl .slot .sleeve-bk.cv{width:var(--scv);height:var(--scv)}
+/* 出牌前：他那格＝蓋著的封套＋「？」；你那格＝選的那張半透明預覽 */
+.dl .slot .esl .sleeve-bk i::after{display:none}
+.dl .slot .esl .q{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:900 calc(var(--scv) * .2)/1 var(--dl-mono);color:#26201a;pointer-events:none}
+.dl .slot .esl .sl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dl .slot.p.pre .cvw{opacity:.55}
+.dl .slot.p.pre .cv{outline:2px dashed #999;outline-offset:2px}
+.dl .slot.p.pre.ace .cv{outline-color:var(--gold,#b8860b)}
 .dl .slot .who{position:absolute;top:calc(100% + 3px);white-space:nowrap;font-size:13px;font-weight:700;line-height:16px}
 .dl .slot.e .who{left:0}
 .dl .slot.p .who{right:0;text-align:right}
@@ -171,17 +178,14 @@
 /* 高螢幕（430×932、390×844 之類）：多的高度給牌桌（封面最大 150） */
 .dl.roomy{--ecv:64px;--hcv:74px;--pill:34px;--thr-h:50px;--tri-w:72px;--tri-h:64px}
 .dl.roomy .dl-e{padding:9px 12px 10px}
-.dl.roomy .hint{margin-top:9px;min-height:32px}.dl.roomy .hint .tx{font-size:14px;line-height:18px}
-.dl.roomy .rec{margin-top:9px}
-.dl.roomy .sleeve .sleeve-bk{width:32px;height:32px}
+.dl.roomy .hint{min-height:46px}.dl.roomy .hint .tx{font-size:16px;line-height:22px}
 .dl.roomy .dl-t{--tp:12px;--lab:20px}
 .dl.roomy .callout .l1{font-size:14px;line-height:19px}.dl.roomy .callout .l2{font-size:24px}.dl.roomy .callout .l3{font-size:13px;line-height:17px}
 .dl.roomy .dl-p{padding-top:10px}.dl.roomy .hand{margin-top:12px}.dl.roomy .act{margin-top:10px;margin-bottom:6px}
 /* 360×640 之類 */
 .dl.compact{--ecv:50px;--hcv:60px;--pill:30px;--thr-h:44px;--tri-w:60px;--tri-h:54px}
 .dl.compact .dl-e{padding:4px 12px 5px}
-.dl.compact .hint{margin-top:5px;min-height:27px}
-.dl.compact .rec{margin-top:5px}
+.dl.compact .hint{min-height:36px}.dl.compact .hint .tx{font-size:14px;line-height:18px;padding:4px 8px 4px 0}
 .dl.compact .callout .l1{font-size:12px;line-height:17px}
 .dl.compact .tile+.tile{margin-left:6px}
 .dl.compact .dl-p{padding-top:5px}.dl.compact .hand{margin-top:6px}.dl.compact .act{margin-top:3px}
@@ -189,10 +193,9 @@
 .dl.short{--ecv:44px;--hcv:54px;--pill:30px;--thr-h:44px;--tri-w:52px;--tri-h:46px}
 .dl.short .dl-e{padding:3px 12px 4px}
 .dl.short .nmrow{height:18px}
-.dl.short .hint{margin-top:4px;min-height:25px}
-.dl.short .hint .tx{font-size:12px;line-height:15px;padding:2px 6px 2px 0}
-.dl.short .rec{margin-top:4px}
-.dl.short .sleeve .sleeve-bk{width:24px;height:24px}
+.dl.short .hint{min-height:32px}
+.dl.short .hint .lb{font-size:11px;padding:0 7px;margin-right:7px}
+.dl.short .hint .tx{font-size:13px;line-height:17px;padding:3px 6px 3px 0}
 .dl.short .pile .bars i{height:9px}
 .dl.short .dl-t{--tp:4px;--lab:17px;min-height:140px}
 .dl.short .slot .who{top:calc(100% + 2px);font-size:12px;line-height:15px}
@@ -206,8 +209,6 @@
 .dl.short .act .say small{line-height:14px}
 /* 還是放不下：再收一點留白 */
 .dl.tighter .dl-e{padding-top:3px;padding-bottom:4px}
-.dl.tighter .hint{margin-top:4px}
-.dl.tighter .rec{margin-top:4px}
 .dl.tighter .hand{margin-top:4px}
 .dl.tighter .act{margin-top:0}
 

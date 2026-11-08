@@ -296,21 +296,17 @@
     root.setAttribute('aria-label', '品味對決');
     root.innerHTML = `
       <section class="dl-e" data-tut="e-hud">
-        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="sub"></span><span class="hon" data-tut="e-honesty" hidden></span><span class="sp"></span>
+        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="sub"></span><span class="hon" data-tut="e-honesty" hidden></span>
+          <div class="rec" data-tut="e-rec"><div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div></div><span class="sp"></span>
           <span class="hpn" data-tut="e-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
-        <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
-        <div class="rec" data-tut="e-rec">
-          <div class="sleeve" data-tut="e-sleeve">${sleeveHTML()}<span class="sl">${esc(T('sleeve'))}</span></div>
-          <span class="sp"></span>
-          <div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div>
-        </div>
       </section>
       <section class="dl-t" data-tut="table">
         <div class="slot e" data-tut="slot-e"></div>
         <div class="slot p" data-tut="slot-p"></div>
         <div class="tri" data-tut="tri"></div>
         <div class="rounds num" data-tut="rounds"></div>
+        <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
         <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div></div>
         <div class="lastline" data-tut="lastline"></div>
       </section>
@@ -329,7 +325,7 @@
     const $ = s => root.querySelector(s);
     const els = {
       e: $('.dl-e'), enm: $('.dl-e .nm'), esub: $('.dl-e .sub'), hon: $('.dl-e .hon'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
-      hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), sleeve: $('.rec .sleeve'), bars: $('.pile .bars'), pileTx: $('.pile small'),
+      hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
       table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
       hand: $('.hand'), act: $('.act'), say: $('.act .say'), thr: $('.throw'), pop: $('.dl-pop'), kost: $('.kost'), fx: $('.dl-fx'),
@@ -410,16 +406,32 @@
       const n = Math.max(0, (v.pile | 0) + (v.eHandN | 0) - (thrown | 0)), max = Math.max(n + (thrown | 0), v.pileMax | 0);
       els.bars.innerHTML = Array.from({ length: max }, (_, k) => `<i${k < n ? '' : ' class="x"'}></i>`).join('');
       els.pileTx.textContent = T('pileLeft', { n });
-      els.sleeve.classList.toggle('off', !!v.over || S.busy);
     }
 
     // ---------------- render: 牌桌 ----------------
+    // 出牌前（店主 FIXLIST 9：中間不留空帶）：他那格＝蓋著的封套＋「？」，你那格＝目前選的那張（半透明預覽＋屬性與星數），沒選才是空格。
+    // 上一手的兩張不再留在牌桌（「上一手」那行只在揭曉後、換手前出現）；打完（over）照舊留著最後一手
+    function preSlot(side) { return !S.busy && !(S.v && S.v.over) && (!S.table || S.table.dim); }
     function renderSlot(side) {
-      const el = side === 'e' ? els.se : els.sp, Tb = S.table, d = Tb && Tb[side];
-      el.className = 'slot ' + side + (Tb && Tb.dim ? ' dim' : '') + (d ? '' : ' empty') + (d && d.hidden ? ' back' : '');
+      const el = side === 'e' ? els.se : els.sp, Tb = S.table;
       el.removeAttribute('data-card'); el.removeAttribute('role'); el.removeAttribute('tabindex'); el.removeAttribute('aria-label');
-      if (!d) { el.innerHTML = `<span class="ph">${esc(T(side === 'e' ? 'slotE' : 'slotP'))}</span>`; return; }
       const who = esc(T(side === 'e' ? 'he' : 'you'));
+      if (preSlot(side)) {
+        if (side === 'e') {
+          el.className = 'slot e pre';
+          el.innerHTML = `<span class="cvw esl" data-tut="e-sleeve">${sleeveHTML('cv')}<b class="q" aria-hidden="true">?</b><span class="sl">${esc(T('sleeve'))}</span></span><div class="who">${who}<span class="z">${esc(T('sleeve'))}</span></div>`;
+          return;
+        }
+        const v = S.v, c = S.sel && v ? cardOf(v, S.sel.i) : null;
+        if (!c) { el.className = 'slot p empty'; el.innerHTML = `<span class="ph">${esc(T('slotP'))}</span>`; return; }
+        const a = S.sel.attr, ace = S.sel.i === 'ace';
+        el.className = 'slot p pre' + (ace ? ' ace' : '');
+        el.innerHTML = `<span class="cvw">${img(c)}${ace ? `<span class="acetag">${esc(T('aceWord'))}</span>` : ''}</span><div class="who">${who}<span class="${a}">${ZH[a]} <span class="num">${starOf(c, a)}</span></span></div>`;
+        return;
+      }
+      const d = Tb && Tb[side];
+      el.className = 'slot ' + side + (Tb && Tb.dim ? ' dim' : '') + (d ? '' : ' empty') + (d && d.hidden ? ' back' : '');
+      if (!d) { el.innerHTML = `<span class="ph">${esc(T(side === 'e' ? 'slotE' : 'slotP'))}</span>`; return; }
       if (d.hidden) { el.innerHTML = `<span class="cvw">${sleeveHTML('cv')}</span><div class="who">${who}<span class="z">${esc(T('sleeve'))}</span></div>`; return; }
       // 王牌：封面左上角掛「王牌」小標（跟手牌一樣），字只寫「你・經典 7」——字短才不會伸進中間的浮框
       el.innerHTML = `<span class="cvw">${img(d.card)}${d.ace ? `<span class="acetag">${esc(T('aceWord'))}</span>` : ''}</span><div class="who">${who}<span class="${d.attr}">${ZH[d.attr]} <span class="num">${d.star}</span></span></div>`;
@@ -551,11 +563,17 @@
     function sizeTable() {
       const k = ['short', 'compact', 'roomy'].find(c => root.classList.contains(c)) || 'base';
       const [tp, lab, res, mn, mx] = TABLE_FIT[k];
+      els.table.style.maxHeight = '';                 // 先量「最多可以給牌桌多高」
       const tH = els.table.clientHeight, tW = els.table.clientWidth;
       if (!tH || !tW) return;
       const triW = parseFloat(getComputedStyle(root).getPropertyValue('--tri-w')) || 64;
       const byH = tH - tp - lab - 6 - res, byW = Math.floor((tW - 2 * 12 - triW - 2 * 10) / 2);
-      root.style.setProperty('--scv', Math.round(Math.max(mn, Math.min(mx, byH, byW))) + 'px');
+      const scv = Math.round(Math.max(mn, Math.min(mx, byH, byW)));
+      root.style.setProperty('--scv', scv + 'px');
+      // 店主 FIXLIST 9：版面依內容收合——牌桌只要「封面＋下面那行字＋中間字帶（結果框的高）」，手牌列緊接在後；多的高度留在最下面
+      const need = tp + scv + lab + 6 + res + 6;
+      if (need < tH) els.table.style.maxHeight = need + 'px';
+      root.style.setProperty('--band-h', Math.max(0, Math.min(tH, need) - (tp + scv + lab + 6)) + 'px');   // 封面下那行字以下：中間字帶（提示句置中）
     }
     function scheduleFit() { if (!S.fitRaf) { fit(); S.fitRaf = requestAnimationFrame(() => { S.fitRaf = 0; fit(); }); } }
     try { S.ro = new ResizeObserver(() => scheduleFit()); S.ro.observe(root); } catch (_) {}
@@ -569,14 +587,14 @@
       const changedCard = !S.sel || S.sel.i !== sel.i;
       S.sel = sel;
       sfx('select');
-      markSel(); renderTri(); renderAct();
+      markSel(); renderTri(); renderAct(); renderSlot('p');
       if (changedCard) holdSleeve('p', c, sel.i === 'ace');
       emit('selected', { i: sel.i, attr: sel.attr });
       return true;
     }
     function clearSel() {
       if (!S.sel) return true;
-      S.sel = null; markSel(); renderTri(); renderAct(); holdSleeve('p', null); emit('selected', null); return true;
+      S.sel = null; markSel(); renderTri(); renderAct(); renderSlot('p'); holdSleeve('p', null); emit('selected', null); return true;
     }
     // 點封面：選這張、屬性＝topAttr（王牌＝它那軸）；已選同一張就不變
     function pickCard(i) {
@@ -762,7 +780,7 @@
       const v0 = S.v;
       const tileEl = els.hand.querySelector(`.tile[data-i="${sel.i}"]`);
       const srcP = rectOf(tileEl && tileEl.querySelector('.cv'));
-      const srcE = rectOf(els.sleeve.querySelector('.sleeve-bk'));
+      const srcE = rectOf(els.se.querySelector('.sleeve-bk'));
       let evs;
       const ro = {};
       try { if (typeof hooks.resolveOpts === 'function') Object.assign(ro, hooks.resolveOpts(act) || {}); } catch (e) { console.error(e); }
@@ -788,7 +806,6 @@
       if (tileEl) tileEl.classList.add('gone');
       els.hand.querySelectorAll('.chip').forEach(b => { b.disabled = true; });
       renderRec(v0, 1);
-      els.sleeve.classList.add('off');
       fly(els.sp.querySelector('.cv'), srcP, 260); fadeIn(els.sp.querySelector('.who'), 260);
       fly(els.se.querySelector('.cv'), srcE, 260);
       renderAct();
@@ -806,6 +823,7 @@
       if (S.destroyed) return true;
       // ---- t=560：浮框三行、聲望條、音效、一次性小提示
       S.flash = flashOf(cl); renderTri();
+      root.classList.add('revealed');          // 中間字帶：提示句收起、換成結果句（之後是「上一手」那行），下一手才換回提示（FIXLIST 9）
       showCallout(ct);
       sfx(hitSfx(cl));
       if (!hasStage('clash')) stageFallbackHit(cl);
@@ -835,7 +853,7 @@
       S.v = v1;
       if (S.table) S.table.dim = true;
       S.speed = baseSpeed(); setSpeed(S.speed); S.rush = false;
-      root.classList.remove('busy');
+      root.classList.remove('busy', 'revealed');
       S.busy = false;
       renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null }); renderAct();
       scheduleFit();

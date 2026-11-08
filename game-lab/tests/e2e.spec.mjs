@@ -193,9 +193,11 @@ async function run() {
               if (!mask && ev.includes(where)) closedAtOnce.push(k);
               if (mask) await closeInfo(page);
             }
-            await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
-            await page.waitForFunction(() => window.DipLabDuel.debug().n >= 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 }).catch(() => {});
-            await sleep(300);
+            // 牌桌兩張：揭曉後（他那格翻面、t≈280 ms）到換手前（t≈2060 ms）在牌桌上；出牌前的牌桌是蓋著的封套＋你選的預覽（店主 FIXLIST 9）。
+            // 開唱片資訊時盤面會停住，所以兩張依序點得到
+            await page.evaluate(() => { window.DipLabDuel.play({ i: 0, attr: 'c' }); });   // 不等整手演完（play 的 Promise 演完才 resolve）
+            await page.waitForFunction(() => !!document.querySelector('.dl .slot.e[data-card]') && !!document.querySelector('.dl .slot.p[data-card]'), null, { timeout: 8000 }).catch(() => {});
+            await sleep(120);
             for (const [k, s] of [['slotE', '.dl [data-tut=slot-e] .cv'], ['slotP', '.dl [data-tut=slot-p] .cv']]) {
               const ok1 = await jsClick(page, s); opened[k] = ok1 ? await infoOpen(page) : 'missing'; if (opened[k] === true) await closeInfo(page);
             }
