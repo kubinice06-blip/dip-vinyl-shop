@@ -1,4 +1,4 @@
-// lint-copy.mjs：品味對決 v3 文案檢查（SPEC-v3 §3、§6、§8、§10.6；v2 的店主用語規則照舊）。
+// lint-copy.mjs：品味對決 v4 文案檢查（SPEC-v4 §0.4、§2.2.9；v3 的檢查與 v2 的店主用語規則照舊）。
 //
 //   node game-lab/tools/lint-copy.mjs          # 檢查＋產生 game-lab/LINES-REVIEW.md；有違規 exit 1
 //
@@ -12,11 +12,14 @@
 //      對決與教學的字不准有「晃」（脾氣的內部名 C.habits.*.zh「虛晃」除外，它不上畫面）；
 //      「配件」只准出現在發燒配件的介面（content.js／duel.js／tutorial.js 裡，同一行原始碼要提到 relic；ui.js 本身就是配件介面所在，不擋）。
 //   3. 必須原樣出現的六句（序章拍板句與原句）；不得出現尾聲的耳朵宣告（09-03 店主拿掉）
-//   4. 每一句都有來源標記（Beat.tag、lineTags、hintTags、rulesTag、duelTextTag、habits[].tag、relics[].tag、tutorial steps[].tag／uiTag、
-//      shopLineTags、summaryTag、nightTag、phase2LinesTag、habitLabelsTag、retorts[].tag、pitches.json）
-//   5. 標成 原句／拍板 的句子，必須一字不差地出現在現行 roguelike.html
-//   6. 長度：教學老闆的泡泡 ≤25 字（SPEC-v3 §8）、按鈕 ≤18；一次性小提示 ≤20；規則卡六行、每行 ≤32；名牌那句 ≤22；
-//      發燒配件說明 ≤16、生效那句 ≤12；說話的 Beat 要用「」；台詞鍵齊全（line／intro／lose／win，菁英與藏家 switch）
+//      （第一波的 C.script 還是 v3 墊片；v4 序章＋收尾「原句恰好 26 句、順序一致」由第二波 B2 加）
+//   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
+//      honestyTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、retorts[].tag、pitches.json）
+//   5. 標成 原句／拍板 的句子，必須一字不差地出現在現行 roguelike.html；標成 店主 的字串，必須一字不差地在 tools/owner-lines-v4.json
+//      （＝DECISIONS-v4 裡店主寫／核可的字，SPEC-v4 §2.2.9）
+//   6. 長度：教學老闆的泡泡 ≤25 字、按鈕 ≤18；一次性小提示 ≤20；規則卡六行、每行 ≤56（D 第 6 行 54 字）、第 3 行是三相剋（冷剋經／經剋硬／硬剋冷）、
+//      六行逐字＝owner-lines 的規則卡；提示句不寫屬性名、key 是句子的子字串；
+//      發燒配件說明 ≤16、生效那句 ≤12；說話的 Beat 要用「」；台詞鍵齊全（line／intro／lose／win；v4 沒有 switch）
 // 產出：game-lab/LINES-REVIEW.md（所有「新」句依場景列出，給店主過目）
 //   LINT_SKIP=ui.js node game-lab/tools/lint-copy.mjs   # 暫時不掃某幾個程式檔（逗號分隔；平行改檔時用），其他照查
 import fs from 'fs';
@@ -172,7 +175,10 @@ for (const [id, p] of Object.entries(pitches)) if (!id.startsWith('_')) scanStri
 // ---------------------------------------------------------------------------
 // 收集所有句子（含場景與來源標記）
 // ---------------------------------------------------------------------------
-const TAG_OK = t => ['原句', '拍板', '新'].includes(t) || /^新:[A-D]$/.test(t);
+const TAG_OK = t => ['原句', '拍板', '店主', '新'].includes(t) || /^新:[A-D]$/.test(t);
+let OWNER = { rules: [], lines: [] };
+try { OWNER = JSON.parse(read(path.join(HERE, 'owner-lines-v4.json'))); } catch (e) { err('tools/owner-lines-v4.json', '讀不了：' + e.message); }
+const OWNER_SET = new Set(OWNER.lines || []);
 const items = []; // { scene, where, who, key?, text, tag, raw? }
 const add = it => items.push(it);
 const SCENE = { prologue: '序章（有聲音）', quietPrologue: '序章（安靜）', epilogueWin: '序章收尾（贏了男子 → 挑一張盤 → 發燒配件三選一）',
@@ -233,39 +239,45 @@ for (const id of Object.keys(C.enemies || {})) {
   const l = (C.lines || {})[id], e = C.enemies[id];
   if (!l) { err('lines.' + id, '缺少台詞'); continue; }
   for (const k of ['line', 'intro', 'lose', 'win']) if (!l[k] || (Array.isArray(l[k]) && !l[k].length)) err('lines.' + id, '缺少 ' + k);
-  if ((e.elite || e.boss) && !l.switch) err('lines.' + id, '菁英／藏家缺少 switch（急了／翻面的泡泡）');
-  if (e.phase2 && !l.switch) err('lines.' + id, '有第二句脾氣但缺少 switch');
+  if ('switch' in l) err('lines.' + id, 'v4 拿掉急了／翻面：不該有 switch');
 }
 for (const k of ['retry', 'bagFull', 'relicFull']) if (!((C.lines || {}).owner || {})[k]) err('lines.owner', '缺少 ' + k);
-if (C.lines && C.lines.man && !C.lines.man.jabBubble) err('lines.man', '缺少 jabBubble（回嘴選《Mylo Xyloto》後第一手的泡泡）');
 
-// 名牌那句（脾氣）＋第二句＋標籤
-const HABIT_TAG = (C.habits && Object.values(C.habits)[0] && 'tag') || 'tag';
-for (const [k, h] of Object.entries(C.habits || {})) {
-  const where = 'habits.' + k + '.line';
-  if (!h || typeof h.line !== 'string' || !h.line) { err(where, '沒有名牌那句'); continue; }
-  if (!TAG_OK(h[HABIT_TAG])) err(where, '沒有 tag');
-  if (len(h.line) > 22) err(where, '名牌那句超過 22 字（' + len(h.line) + '）：' + h.line);
-  add({ scene: '名牌上的脾氣（對決盤面 e-habit）', where, who: '（畫面字）', key: h.zh, text: h.line, tag: h[HABIT_TAG] });
+// 名牌上的誠實度（D §5：老實／偶爾唬人／愛唬人／老江湖，tag 店主）。v3 的脾氣（habits／habitLabels）只剩墊片，不上 v4 畫面、不列。
+for (const [k, h] of Object.entries(C.honesty || {})) {
+  const where = 'honesty.' + k + '.zh';
+  if (!h || typeof h.zh !== 'string' || !h.zh) { err(where, '沒有名牌上的詞'); continue; }
+  if (!TAG_OK(C.honestyTag)) err(where, '沒有 tag（honestyTag）');
+  add({ scene: '名牌上的誠實度（對決盤面 e-honesty）', where, who: '（畫面字）', key: 'q ' + h.q, text: h.zh, tag: C.honestyTag });
 }
-for (const [k, v] of Object.entries(C.phase2Lines || {})) {
-  const where = 'phase2Lines.' + k;
-  if (!TAG_OK(C.phase2LinesTag)) err(where, '沒有 tag（phase2LinesTag）');
-  if (len(v) > 24) err(where, '超過 24 字：' + v);
-  add({ scene: '名牌上的脾氣・急了／翻面之後', where, who: (C.enemies[k] && C.enemies[k].name) || k, text: v, tag: C.phase2LinesTag });
+
+// 提示句（SPEC-v4 §2.2.4）：每色 5 句；不寫屬性名；key 必為句子的子字串（結果句用它教「『key』是 X」）
+const ATTR_ZH = { c: '經典', o: '冷門', h: '硬蕊' };
+for (const a of ['c', 'o', 'h']) {
+  const hs = (C.hints || {})[a];
+  if (!Array.isArray(hs) || hs.length !== 5) { err('hints.' + a, '每色要 5 句'); continue; }
+  hs.forEach((h, k) => {
+    const where = 'hints.' + a + '[' + k + ']';
+    if (!h || typeof h.text !== 'string' || !h.text) { err(where, '沒有 text'); return; }
+    if (!TAG_OK(h.tag)) err(where, '沒有合法 tag：' + h.text);
+    if (/經典|冷門|硬蕊/.test(h.text)) err(where, '提示句不准寫出屬性名：' + h.text);
+    if (typeof h.key !== 'string' || !h.key || !h.text.includes(h.key)) err(where, 'key 要是句子的子字串：' + h.key);
+    if (len(h.text) > 24) err(where, '提示句超過 24 字：' + h.text);
+    add({ scene: '提示句（他這手的打算；揭曉後教「key 是哪一色」）', where, who: '（提示）', key: ATTR_ZH[a] + '・' + h.id + '・key「' + h.key + '」', text: h.text, tag: h.tag });
+  });
 }
-for (const [k, v] of Object.entries(C.habitLabels || {})) {
-  if (!TAG_OK(C.habitLabelsTag)) err('habitLabels.' + k, '沒有 tag');
-  add({ scene: '名牌上的脾氣・左邊的黑底標籤', where: 'habitLabels.' + k, who: '（畫面字）', text: v, tag: C.habitLabelsTag });
-}
+for (const [a, ws] of Object.entries(C.hintKeywords || {})) (ws || []).forEach((w, k) => {
+  if (!TAG_OK(C.hintKeywordsTag)) err('hintKeywords.' + a, '沒有 tag（hintKeywordsTag）');
+  add({ scene: '提示的關鍵字族（D §5；參考清單）', where: 'hintKeywords.' + a + '[' + k + ']', who: '（關鍵字）', key: ATTR_ZH[a], text: w, tag: C.hintKeywordsTag });
+});
 
 // 一次性老闆小提示（SPEC-v3 §6）：duel.js hooks.hint 的五個 id
-const TIP_IDS = ['tip_mirror', 'tip_offhabit', 'tip_read', 'tip_switch', 'tip_eye'];
-const TIPS = C.coachTips || C.hints || {};
+const TIP_IDS = ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds'];
+const TIPS = C.coachTips || {};
 for (const id of TIP_IDS) if (!TIPS[id]) err('coachTips.' + id, '缺少（duel.js 會送這個 id）');
 for (const [k, v] of Object.entries(TIPS)) {
-  const tag = (C.hintTags || {})[k];
-  if (!TAG_OK(tag)) err('coachTips.' + k, '沒有 tag（hintTags）');
+  const tag = (C.coachTipTags || {})[k];
+  if (!TAG_OK(tag)) err('coachTips.' + k, '沒有 tag（coachTipTags）');
   if (len(v) > 20) err('coachTips.' + k, '超過 20 字（' + len(v) + '）：' + v);
   add({ scene: '一次性老闆小提示（第一次發生時，5 秒）', where: 'coachTips.' + k, who: '老闆', key: (C.coachTipWhen || {})[k], text: v, tag });
 }
@@ -275,12 +287,14 @@ const R = C.rules;
 if (!R || !Array.isArray(R.lines)) err('rules', '沒有規則卡');
 else {
   if (!TAG_OK(C.rulesTag)) err('rules', '沒有 tag（rulesTag）');
+  if (!TAG_OK(C.rulesLinesTag)) err('rules.lines', '沒有 tag（rulesLinesTag）');
   if (R.lines.length !== 6) err('rules.lines', '規則卡要六行，現在 ' + R.lines.length);
-  R.lines.forEach((t, k) => { if (len(t) > 32) err('rules.lines[' + k + ']', '超過 32 字：' + t); });
-  if (!/冷門剋經典/.test(R.lines[0] || '') || !/經典剋硬蕊/.test(R.lines[0] || '') || !/硬蕊剋冷門/.test(R.lines[0] || '')) err('rules.lines[0]', '第一行要是三相剋');
-  const push = (where, text) => { if (typeof text === 'string' && text) add({ scene: '規則卡（「?」小抄）', where, who: '（畫面字）', text, tag: C.rulesTag }); };
-  push('rules.title', R.title); push('rules.sub', R.sub);
-  R.lines.forEach((t, k) => push('rules.lines[' + k + ']', (k + 1) + ' ' + t));
+  R.lines.forEach((t, k) => { if (len(t) > 56) err('rules.lines[' + k + ']', '超過 56 字：' + t); });
+  if (!['冷剋經', '經剋硬', '硬剋冷'].every(w => (R.lines[2] || '').includes(w))) err('rules.lines[2]', '第 3 行要含 冷剋經、經剋硬、硬剋冷');
+  if (JSON.stringify(R.lines) !== JSON.stringify(OWNER.rules || [])) err('rules.lines', '六行要逐字＝tools/owner-lines-v4.json 的規則卡（D §5，不含編號與「←」註記）');
+  const push = (where, text, tag, raw) => { if (typeof text === 'string' && text) add({ scene: '規則卡（「?」小抄）', where, who: '（畫面字）', text, tag: tag || C.rulesTag, raw }); };
+  push('rules.title', R.title);
+  R.lines.forEach((t, k) => push('rules.lines[' + k + ']', (k + 1) + ' ' + t, C.rulesLinesTag, t));
   if (R.example) {
     push('rules.example.title', R.example.title);
     (R.example.read || []).forEach((t, k) => push('rules.example.read[' + k + ']', t));
@@ -302,15 +316,17 @@ for (const [id, r] of Object.entries(C.relics || {})) {
   if (!TAG_OK(r.tag)) err('relics.' + id, '沒有 tag');
   if (!r.desc) err('relics.' + id, '沒有 desc'); else if (len(r.desc) > 16) err('relics.' + id + '.desc', '超過 16 字：' + r.desc);
   if (!r.note) err('relics.' + id, '沒有 note'); else if (len(r.note) > 12) err('relics.' + id + '.note', '超過 12 字：' + r.note);
-  add({ scene: '發燒配件（點圖示看的說明／生效那手結果行補的一句）', where: 'relics.' + id, who: r.name, text: r.desc + '｜' + r.note, tag: r.tag });
+  add({ scene: '發燒配件（點圖示看的說明／生效那手結果行補的一句）', where: 'relics.' + id, who: r.name + (r.price ? '・$' + r.price : ''), text: r.desc + '｜' + r.note, tag: r.tag });
 }
+if (C.relics && C.relics.boost_o && C.relics.boost_o.desc !== '冷門出招時 +1 星' + '。') err('relics.boost_o.desc', '要是 D §6 例句「冷門出招時 +1 星」加句號');
+if (!OWNER_SET.has('冷門出招時 +1 星')) err('tools/owner-lines-v4.json', '少了 D §6 的「冷門出招時 +1 星」');
 
 // 序章引導教學（SPEC-v3 §8：10 步，老闆的泡泡 ≤25 字）
 const TUT = C.tutorial;
 if (!TUT) err('tutorial', '沒有 C.tutorial');
 else {
   const steps = TUT.steps || [];
-  if (steps.length !== 10) err('tutorial.steps', '要 10 步，現在 ' + steps.length);
+  if (!steps.length) err('tutorial.steps', '沒有教學步驟');
   let hand = 1;
   const handOf = [];
   steps.forEach(st => {
@@ -344,7 +360,7 @@ else {
 
 // 店裡熱點、今晚來客、台北預告（C.shopLines ↔ C.shopLineTags 同形狀）
 if (C.shopLines) {
-  const SHORT = ['poster', 'cat', 'locked', 'ownerHint', 'nightIntro', 'taipeiHere', 'backToShop', 'bin', 'booth', 'boothEmpty'];
+  const SHORT = ['poster', 'cat', 'locked', 'binBusy', 'ownerHint', 'nightIntro', 'taipeiHere', 'backToShop', 'bin', 'booth', 'boothEmpty'];
   const sceneOf = key => key === 'nightIntro' ? '今晚來客・第一次（soft 提示）' : /^taipei|backToShop/.test(key) ? '台北地圖預告' : '店裡熱點（點了說一句）';
   const walkS = (val, tag, key, where) => {
     if (Array.isArray(val)) return val.forEach((v, k) => walkS(v, Array.isArray(tag) ? tag[k] : tag, key, where + '[' + k + ']'));
@@ -357,6 +373,14 @@ if (C.shopLines) {
   for (const [k, v] of Object.entries(C.shopLines)) walkS(v, (C.shopLineTags || {})[k], k, 'shopLines.' + k);
 }
 for (const [k, b] of Object.entries(C.bins || {})) if (b && b.label) add({ scene: '店裡熱點・箱子的名牌', where: 'bins.' + k + '.label', who: '（畫面字）', text: b.label, tag: '新' });
+// 經濟介面的字（B3 用；SPEC-v4 §2.2.8）
+for (const [k, v] of Object.entries(C.shopUi || {})) {
+  if (typeof v !== 'string' || !v) { err('shopUi.' + k, '不是字串'); continue; }
+  if (!TAG_OK(C.shopUiTag)) err('shopUi.' + k, '沒有 tag（shopUiTag）');
+  if (len(v) > 24) err('shopUi.' + k, '超過 24 字：' + v);
+  add({ scene: '經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）', where: 'shopUi.' + k, who: '（畫面字）', key: k, text: v, tag: C.shopUiTag });
+}
+if (C.bargain && C.bargain.label) { if (!TAG_OK(C.bargainTag)) err('bargain.label', '沒有 tag（bargainTag）'); add({ scene: '經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）', where: 'bargain.label', who: '（畫面字）', text: C.bargain.label, tag: C.bargainTag }); }
 // 今晚來客、結算三件事
 if (C.night) for (const k of ['label', 'closing']) if (C.night[k]) {
   if (!TAG_OK(C.nightTag)) err('night.' + k, '沒有 tag（nightTag）');
@@ -381,7 +405,7 @@ for (const [id, p] of Object.entries(pitches)) {
 for (const it of items) {
   if (it.where.startsWith('pitch#') || it.where.startsWith('shops/')) continue;
   for (const w of OLD_MECH) if (String(it.text).includes(w)) err(it.where, 'v3 拿掉的系統「' + w + '」→ ' + it.text);
-  if (/^(tutorial|coachTips|duelText|habits|phase2Lines|habitLabels|rules\.lines|lines\.)/.test(it.where)) {
+  if (/^(tutorial|coachTips|duelText|hints|honesty|rules\.lines|lines\.)/.test(it.where)) {
     if (String(it.text).includes('晃')) err(it.where, '對決／教學的字不准有「晃」→ ' + it.text);
     if (String(it.text).includes('配件') && !/relic/i.test(it.where)) err(it.where, '「配件」只准出現在發燒配件的介面 → ' + it.text);
   }
@@ -419,6 +443,14 @@ else for (const it of items) if (it.tag === '原句' || it.tag === '拍板') {
   if (!ORIG.includes(t) && !(inner && it.where.startsWith('pitch#') && ORIG.includes(inner[1]))) err(it.where, '標成「' + it.tag + '」但現行 roguelike.html 裡找不到一字不差的原文：' + t);
 }
 
+// 店主：必須一字不差地在 tools/owner-lines-v4.json（SPEC-v4 §2.2.9）
+let ownerChecked = 0;
+for (const it of items) if (it.tag === '店主') {
+  ownerChecked++;
+  const t = it.raw || it.text;
+  if (!OWNER_SET.has(t)) err(it.where, '標成「店主」但 tools/owner-lines-v4.json 裡找不到一字不差的原文：' + t);
+}
+
 // ---------------------------------------------------------------------------
 // 產生 LINES-REVIEW.md
 // ---------------------------------------------------------------------------
@@ -428,15 +460,16 @@ const esc = s => String(s).replace(/\|/g, '｜').replace(/\n/g, ' ');
 const fresh = items.filter(it => isNew(it.tag));
 const byScene = new Map();
 for (const it of fresh) { if (!byScene.has(it.scene)) byScene.set(it.scene, []); byScene.get(it.scene).push(it); }
-const counts = { '原句': 0, '拍板': 0, '新': 0 };
+const counts = { '原句': 0, '拍板': 0, '店主': 0, '新': 0 };
 for (const it of items) counts[isNew(it.tag) ? '新' : it.tag]++;
-let md = `# 台詞審稿：品味對決 v3（LINES-REVIEW）
+let md = `# 台詞審稿：品味對決 v4（LINES-REVIEW）
 
 > 由 \`node game-lab/tools/lint-copy.mjs\` 產生，請勿手改。要改句子，直接改 \`game-lab/content.js\`（劇本、台詞、名牌、提示、規則卡、教學）或 \`game-lab/tools/pitches.json\`（推薦語，改完重跑 \`node game-lab/tools/bake-cards.mjs\`），再重跑本檢查。
-> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 \`roguelike.html\` 逐字比對（${origChecked} 句，全部一致才會產生這份）。
-> v3（三相剋當核心）：氣勢、輾壓、賭注、相生、割捨、七星回擊、霸權、點播、脾氣唱盤（晃）、事件、挖箱、試聽機的句子全部刪除；v2 教學的 37 句換成 10 步；發燒配件留 6 件，每件一句話。
+> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 \`roguelike.html\` 逐字比對（${origChecked} 句）；標成「店主」的字已與 \`tools/owner-lines-v4.json\`（DECISIONS-v4 店主寫／核可的字）逐字比對（${ownerChecked} 句）。全部一致才會產生這份。
+> v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
+> 第一波（A1）：劇本、回嘴、教學步驟仍是 v3 墊片，第二波由 B2 換成 v4 劇本與六手教學。
 
-統計：原句 ${counts['原句']}、拍板 ${counts['拍板']}、新 ${counts['新']}（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 ${counts['原句']}、拍板 ${counts['拍板']}、店主 ${counts['店主']}、新 ${counts['新']}（同一句在有聲／安靜兩版序章只算一次）。
 
 `;
 for (const [scene, list] of byScene) {
@@ -444,7 +477,7 @@ for (const [scene, list] of byScene) {
   for (const it of list) md += `| ${esc(it.who)}${it.key ? '・' + esc(it.key) : ''} | ${esc(it.text)} | ${SRC[it.tag] || it.tag} | \`${it.where}\` |\n`;
   md += '\n';
 }
-md += `## 原句與拍板（已逐字比對，列出供對照）\n\n| 標記 | 句子 | 位置 |\n|---|---|---|\n`;
+md += `## 原句、拍板、店主（已逐字比對，列出供對照）\n\n| 標記 | 句子 | 位置 |\n|---|---|---|\n`;
 for (const it of items) if (!isNew(it.tag)) md += `| ${it.tag} | ${esc(it.text)} | \`${it.where}\` |\n`;
 
 function report() {
@@ -455,6 +488,6 @@ report();
 if (!errors.length) {
   fs.writeFileSync(path.join(LAB, 'LINES-REVIEW.md'), md);
   console.log('文案檢查通過。掃過：' + scanned.join('、'));
-  console.log('句子 ' + items.length + '（原句 ' + counts['原句'] + '、拍板 ' + counts['拍板'] + '、新 ' + counts['新'] + '）；原句／拍板逐字比對 ' + origChecked + ' 句一致。');
+  console.log('句子 ' + items.length + '（原句 ' + counts['原句'] + '、拍板 ' + counts['拍板'] + '、店主 ' + counts['店主'] + '、新 ' + counts['新'] + '）；原句／拍板逐字比對 ' + origChecked + ' 句、店主逐字比對 ' + ownerChecked + ' 句一致。');
   console.log('已寫 game-lab/LINES-REVIEW.md（新句 ' + fresh.length + '，' + byScene.size + ' 個場景）。');
 }
