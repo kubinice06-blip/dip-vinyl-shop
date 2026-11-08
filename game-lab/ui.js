@@ -492,14 +492,16 @@
     var p = UI.panel; if (!p || !p.firstChild) return;
     if (rm() && !o.hold) return;
     var r = p.getBoundingClientRect(), ar = app().getBoundingClientRect();
-    var g = el('div', 'lb-ghost'); g.style.cssText = 'top:' + Math.round(r.top - ar.top) + 'px;height:' + Math.round(r.height) + 'px';
+    // 不超出 #app 的下緣（RT-14：留著的對白框比 #app 低 18px，#app 量到可以捲）
+    var gTop = Math.round(r.top - ar.top), gH = Math.max(0, Math.min(Math.round(r.height), Math.floor(ar.height) - gTop));
+    var g = el('div', 'lb-ghost'); g.style.cssText = 'top:' + gTop + 'px;height:' + gH + 'px';
     while (p.firstChild) g.appendChild(p.firstChild);
     app().appendChild(g);
     var gone = false, safety = 0;
     var fade = function () {
       if (gone) return; gone = true; clearTimeout(safety);
       if (UI.ghostRelease === fade) UI.ghostRelease = null;
-      var a = (!rm() && g.animate) ? g.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(18px)' }], { duration: 150, easing: 'ease-in', fill: 'forwards' }) : null;
+      var a = (!rm() && g.animate) ? g.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 150, easing: 'ease-in', fill: 'forwards' }) : null;   // 只淡出、不往下移（往下移會超出 #app，RT-14）
       setTimeout(function () { g.remove(); }, a ? 180 : 0);
     };
     if (!o.hold) return fade();
