@@ -14,10 +14,10 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 
 - [x] engine.js v4（第一版提交；測試在 engine.test 重寫後跑）
 - [x] content.js v4（第一波範圍；v3 劇本／回嘴／教學步驟留作墊片）
-- [ ] tools/owner-lines-v4.json
-- [ ] test/engine.test.mjs v4
+- [x] tools/owner-lines-v4.json（50 句，程式從 DECISIONS-v4.md 逐字擷取；rules＝規則卡六行）
+- [x] test/engine.test.mjs v4（#1–#14 全部；第一波用 STUB 星數補 46 張還沒烘的卡＋假箱子）
 - [ ] tools/lint-copy.mjs v4
-- [ ] tools/check-content.mjs v4
+- [x] tools/check-content.mjs v4（匯出 shapeProblems 給 engine.test #14 共用；第一波只會報 46 張缺卡＋沒有 bins.js，等 A3-M1）
 
 ## 測試結果
 
