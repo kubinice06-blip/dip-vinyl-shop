@@ -8,11 +8,11 @@
 ## 進度
 - [x] 1. merge --no-ff v4/Y、v4/X（解衝突兩邊意圖都留）
 - [x] 2. duel.js／duel.css（名牌只有新名字、刪 blocked ace、六手結果句用 pct、對決裡沒有價錢、tip_ace 第一次丟王牌）
-- [ ] 3. ui.js（今晚來客新名字無誠實度、規則卡第 6 行、錢千分位）
+- [x] 3. ui.js（今晚來客新名字無誠實度、規則卡第 6 行、錢千分位）
 - [x] 4. econ.js／econ.css（12 箱新名牌、FEATURE／PICKS 牆、NEW、稀有度價、特價每張、配件 3000、賣回半價、千分位）
-- [ ] 5. 教學（不提王牌不會被剋；L6 照常）＋tutorial.test L6
-- [ ] 6. 版面 a–d（店主提示不蓋頭上徽章、接受對決後下方面板不空白、430x932 不留大空帶、375x548 今晚看得到門口牆）
-- [ ] 7. index.html ?v=42、README
+- [x] 5. 教學（不提王牌不會被剋；L6 照常）＋tutorial.test L6
+- [x] 6. 版面 a–d（店主提示不蓋頭上徽章、接受對決後下方面板不空白、430x932 不留大空帶、375x548 今晚看得到門口牆）
+- [x] 7. index.html ?v=42、README
 - [ ] 8. 全部檢查（見「測試結果」）
 - [ ] 9. 店主截圖 shots/Z/
 
@@ -23,3 +23,10 @@
 - 2ffa3f4a8 經濟介面：標題 ROCK 搖滾（.ec-plate；FEATURE 金色）、FEATURE 封面右上大稀有度標＋框色、其他區年份旁小稀有度；只看模式也標價；縮圖框色＝史詩／傳奇；
   特價箱每格左下價（序章挑三張：劃掉＋標題「這次免費」）；之後買：鈕＝挑的加總「買下 $500」、沒挑「挑一到三張」、連最便宜都買不起「錢不夠」；toast／賣回／先賣都千分位。
   shopUi 加 bargainHint／bargainFree。今晚來客改用鏡頭 night（dip.json：y0 h322 minH290 anchor top）→ 375×548、390×664 都看得到 FEATURE／PICKS 名牌（375 兩側黑邊變寬，約 45 px）。
+- be2473c51 e2e-econ、e2e.spec 跟上台幣（#41 千分位、規則卡第 6 行）。
+- 7e243a0a1 版面 c：strip 鏡頭 grow {panel:584}（高螢幕橫條往上長）、roomy ≥580、stage.camCssH；430×932 盤面下空帶 ~200→~25 px。
+- f91a7e591 版面 a：小提示放到頭上方塊上面或下面（tutorial.js badgeZone）。
+- 611f0d73d 版面 b：O21 選完對話框不清空、ghostPanel hold 到 push。
+- c6268c2d7 ?v=42；README 改寫（規則第 6 行、王牌、六手比聲望條、經濟台幣表、店裡的箱子、等店主決定的）。
+- 教學：C.tutorial 的步驟沒有提「不會被剋」；heresy 第 6 手「經典剋硬蕊，但 7 星剋不動：比星數。」＝gap（照舊）。
+- FIXLIST 10（平衡 KO≥35%）是之後才加的、不在 Z 的範圍（任務只給 2／3／4／5／6／8）；README「等店主決定的」第 1 點提到。
