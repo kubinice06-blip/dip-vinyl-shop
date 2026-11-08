@@ -11,7 +11,7 @@
 // 情境（v4，§5.5）：
 //   1 開頁：標題 2.5 s 內、兩顆推門鈕在畫面內、沒有捲動
 //   3 推門到第一手（猜歌、挑王牌、收下四張、特價三張、收下、接受對決（手伸進袋子））≤16 下（特價區用替身時照真的面板算 4 下）
-//   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌（扇形 5 張＋王牌）的下緣都 ≤ innerHeight；攤開、浮起之後三顆屬性鈕也在畫面裡；誠實度名牌看不到（D §5）
+//   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌（疊成一排的 5 張＋王牌）的下緣都 ≤ innerHeight；攤開、浮起之後三顆屬性鈕也在畫面裡；誠實度名牌看不到（D §5）
 //   6 點擊區：屬性鈕 ≥44×44、攤開的封面 ≥44×44、頂欄鈕 ≥40×44；數字 ≥12px（FIXLIST 11：沒有星鈕列、沒有丟！）
 //   7 序章打贏 → 地上的唱片撿起面板（沒有標題字，只有封面、藝人《專輯》、兩顆鈕）→ 配件三選一 → 今晚來客且第一位客人已在店裡
 //   8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
@@ -19,7 +19,7 @@
 //  10 續玩：打到第 2 手重新整理 → 繼續今晚 → 同一場、同一手
 //  11 存檔只寫 dipGameLab_v1、版本 4；v3 存檔被安全丟掉
 //  12 網路：沒有 Firebase
-//  14 長按手牌封面＝唱片資訊（扇形也行）；點一下＝攤開／浮起（不開）
+//  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝攤開／浮起（不開）
 //  16 標題有存檔時點兩下店門＝繼續今晚
 //  17 他在上、你在下；舞台他左你右、老闆在中間；一台唱盤在兩人中間
 //  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
@@ -187,7 +187,7 @@ async function run() {
             const tapOpen = !!(await page.$('#cardInfoMask'));
             const sel2 = await page.evaluate(() => window.DipLabDuel.debug().sel);
             await page.evaluate(() => window.DipLabDuel.spread(false));
-            record(14, size, open && !sel1 && !sel0 && sp && !tapOpen && sel2 && sel2.i === 0, `扇形長按 → 唱片資訊 ${open}（沒選到 ${!sel1}）；tap → 攤開 ${sp}；tap → 浮起 ${JSON.stringify(sel2)}, info ${tapOpen}`);
+            record(14, size, open && !sel1 && !sel0 && sp && !tapOpen && sel2 && sel2.i === 0, `疊著長按 → 唱片資訊 ${open}（沒選到 ${!sel1}）；tap → 攤開 ${sp}；tap → 浮起 ${JSON.stringify(sel2)}, info ${tapOpen}`);
           }
           if (want(22)) { const sc = await noScroll(page); record(22, size, scrollOk(sc), `duel scroll ${JSON.stringify(sc)}`); }
           if (want(18)) {

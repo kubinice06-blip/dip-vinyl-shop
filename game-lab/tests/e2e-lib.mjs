@@ -69,7 +69,7 @@ export async function waitScreen(page, s, ms = 20000) {
 }
 // el.click()（不用 page.tap：Playwright 會自動捲動，掩蓋版面問題；也不吃換畫面 380 ms 的防連點）
 export const jsClick = (page, sel) => page.evaluate(s => { const e = document.querySelector(s); if (!e) return false; e.click(); return true; }, sel);
-// 元素上「真的點得到」的一點（FIXLIST 11：手牌疊成扇形時每張只露出一條，中心可能被上面那張蓋住）：
+// 元素上「真的點得到」的一點（FIXLIST 11：手牌疊著時每張只露出左邊一條，中心可能被上面那張蓋住）：
 //   先試中心；不行就在元素裡掃一圈，找 elementFromPoint 落在它（或它裡面）的那一點；都不行退回中心（例如教學的遮罩蓋著：點到遮罩＝點錯）
 export const HIT_PT = `(function (el) {
   if (!el) return null; const b = el.getBoundingClientRect(); if (!b.width || !b.height) return null;
@@ -266,10 +266,10 @@ export async function walkTutorial(page, w, h, variant = 'plain') {
     if (s.kind === 'say') { await page.touchscreen.tap(w / 2, h - 30); continue; }
     // FIXLIST 11：每手「點疊著的手牌（攤開）→ 點那張 → 點那個屬性（＝丟）」；手指照教學 debug().point 走
     if (!s.thr) {
-      const fan = await page.evaluate(() => window.DipLabDuel.debug().spread === false);
-      if (fan) {
+      const stacked = await page.evaluate(() => window.DipLabDuel.debug().spread === false);
+      if (stacked) {
         const pt = await page.evaluate(() => window.DipLabTut.debug().point);
-        if (pt !== 'hand') log.push({ step: s.id, bad: 'fanned but finger on ' + pt });
+        if (pt !== 'hand') log.push({ step: s.id, bad: 'stacked but finger on ' + pt });
         await tapAt(page, 'dt:hand');
         await page.waitForFunction(p => window.DipLabDuel.debug().spread === true && window.DipLabTut.debug().point === p, s.point, { timeout: 4000 }).catch(() => {});
         await sleep(250);

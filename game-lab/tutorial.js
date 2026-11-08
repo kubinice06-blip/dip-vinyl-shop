@@ -4,7 +4,7 @@
 // 他每手出什麼、提示哪句、你抽哪幾張，都由引擎的 script 決定（C.tutorial.script[tier]，engine.startFight(run, C, {tutorial:true}) 帶進 startDuel；
 // 有 script 時你的牌堆不洗：老闆四張先（照出牌順序）、特價箱三張照挑的順序接在後面；手牌 5 張（FIXLIST 11）＝四張＋特價箱第 1 張，
 // 第 5 手最左那張一定是特價箱的，見 content.js C.tutorial 的註解）。教學只管「手指指哪、放行哪個動作」。
-// 每手（FIXLIST 11：手牌疊成扇形、點牌才跳屬性）：點那張（allow.pick）→ 點那個屬性（allow.pick＋throw＝出手）。
+// 每手（FIXLIST 11：手牌平時疊成一排錯開、點牌才跳屬性）：點那張（allow.pick）→ 點那個屬性（allow.pick＋throw＝出手）。
 //   點那張那一步：手牌還疊著時，洞與手指先指整疊手牌（'hand'；第一次泡泡換成 step.spread「點一下手牌攤開。」），攤開了才指那張。
 // 手指目標＝C.tutorial.script[tier].pick（{id,attr} → 封面 card:id:<id>、屬性鈕 chip:id:<id>:<attr>；'blocked:o' → card:／chip:blocked:o＝engine.blockedChoice；
 //   'ace' → card-ace／chip-ace），由 stepsFor 代入步驟裡的 'card:pick'（封面）／'pick'（屬性鈕）／'tile:pick'（那一格）／allow.pick。
@@ -414,6 +414,17 @@
     }
     return r;
   }
+  // 疊著的手牌裡某一張露出來的那一條：從這張左緣到下一張（蓋在上面）左緣
+  function stripRect(t) {
+    var tile = t && t.closest ? t.closest('.tile') : null; if (!tile) return null;
+    var r = rectOf(tile); if (!r) return null;
+    for (var nx = tile.nextElementSibling; nx; nx = nx.nextElementSibling) {
+      if (!nx.classList || !nx.classList.contains('tile') || nx.classList.contains('gone')) continue;
+      var q = rectOf(nx); if (q && q.left > r.left + 4 && q.left < r.right) r = { left: r.left, top: r.top, right: q.left, bottom: r.bottom, width: q.left - r.left, height: r.height };
+      break;
+    }
+    return r;
+  }
   function pad(r, p) { return { left: r.left - p, top: r.top - p, right: r.right + p, bottom: r.bottom + p, width: r.width + 2 * p, height: r.height + 2 * p }; }
   function inter(a, b) { return a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom; }
   function union(a, b) { var l = Math.min(a.left, b.left), t = Math.min(a.top, b.top), r = Math.max(a.right, b.right), bt = Math.max(a.bottom, b.bottom); return { left: l, top: t, right: r, bottom: bt, width: r - l, height: bt - t }; }
@@ -522,8 +533,9 @@
     var R = S.root._, vw = W.innerWidth, vh = W.innerHeight;
     var holes = holesFor(sh);
     var keep = (sh.keep || []).map(function (n) { return rectOf(resolveTarget(n)); }).filter(Boolean);
-    var ptEl = sh.point ? resolveTarget(sh.point) : null;
-    var pt = visRect(ptEl);
+    // 手牌疊著時（sh.pointAt＝那一課的封面）：手指指那張露出來的那一條（點那一條＝點整疊＝攤開）
+    var pt = sh.point && sh.pointAt ? stripRect(resolveTarget(sh.pointAt)) : null;
+    if (!pt && sh.point) pt = visRect(resolveTarget(sh.point));
     var tb = topBottom();
     var sig = vw + 'x' + vh + '|' + tb + '|' + holes.map(function (h) { return [h.left, h.top, h.width, h.height].map(Math.round).join(',') + (h.look ? 'L' : ''); }).join(';') + '|' + (pt ? [pt.left, pt.top].map(Math.round).join(',') : '') +
       '|' + keep.map(function (k) { return Math.round(k.top) + ',' + Math.round(k.bottom); }).join(';') + '|' + R.tx.textContent;
@@ -913,28 +925,28 @@
     }
     return look.filter(function (n) { return (s.target || []).indexOf(n) < 0; });
   }
-  // 手牌還疊著（扇形）：點那張的步驟先指整疊手牌（FIXLIST 11：點牌堆 → 點牌 → 點屬性）
-  function fanned() {
+  // 手牌還疊著（沒攤開）：點那張的步驟先指整疊手牌（FIXLIST 11：點牌堆 → 點牌 → 點屬性）
+  function stacked() {
     var D = Duel(); if (!D || !D.debug) return false;
     var d = null; try { d = D.debug(); } catch (_) { d = null; }
     return !!d && d.spread === false;
   }
   function targetsFor(s) {
-    if (isLift(s) && fanned()) return ['hand'];
+    if (isLift(s) && stacked()) return ['hand'];
     return (s.target || []).slice();
   }
   // 這一步此刻的手指與泡泡（點那張的步驟：疊著時指整疊，第一次寫 step.spread）
   function liveDo(s) {
-    var fan = isLift(s) && fanned(), soft = s.kind === 'soft';
-    var point = fan ? 'hand' : (s.point === false ? null : (s.point || (soft ? null : (s.target || [])[0]) || null));
-    var text = fan && s.spread ? s.spread : s.text;          // step.spread 只有第一手那步有（「點一下手牌攤開。」）
-    return { targets: targetsFor(s), point: point, text: text, fan: fan };
+    var stk = isLift(s) && stacked(), soft = s.kind === 'soft';
+    var point = stk ? 'hand' : (s.point === false ? null : (s.point || (soft ? null : (s.target || [])[0]) || null));
+    var text = stk && s.spread ? s.spread : s.text;          // step.spread 只有第一手那步有（「點一下手牌攤開。」）
+    return { targets: targetsFor(s), point: point, text: text, stacked: stk, pointAt: stk ? (s.point || (s.target || [])[0] || null) : null };
   }
   // 攤開了（gate 放行 spread、或盤面送 'spread'）：同一步，洞與手指換到那張
   function refreshDo(s) {
     var sh = S.show; if (!sh || sh.step !== s || sh.mode !== 'do') return;
     var x = liveDo(s);
-    sh.targets = x.targets; sh.point = x.point; sh.fan = x.fan;
+    sh.targets = x.targets; sh.point = x.point; sh.stacked = x.stacked; sh.pointAt = x.pointAt;
     if (sh.text !== x.text) { sh.text = x.text; setText(x.text, sh.colorChars); }
     S.root._.hand.hidden = !sh.point;
     S.sig = ''; layout(true);
@@ -960,7 +972,7 @@
       if (isCommit(s) && s.pick && s.pick !== 'ace') { var D0 = Duel(), pa = s.pick === 'blocked:o' ? 'o' : s.pick.attr; if (D0 && D0.preview) try { D0.preview(pa); } catch (_) {} }
       // 建議步（第 10 步）不給手指：異端的王牌是硬蕊，指著它等於叫你被剋
       var x = liveDo(s);
-      setShow({ mode: soft ? 'soft' : 'do', step: s, targets: x.targets, look: soft ? [] : lookFor(s), point: x.point, text: x.text, fan: x.fan, bubble: s.bubble || 'above', keep: s.keep, colorChars: s.colorChars });
+      setShow({ mode: soft ? 'soft' : 'do', step: s, targets: x.targets, look: soft ? [] : lookFor(s), point: x.point, text: x.text, stacked: x.stacked, pointAt: x.pointAt, bubble: s.bubble || 'above', keep: s.keep, colorChars: s.colorChars });
       L.step = {
         s: s, finish: finish,
         refresh: function () { if (!finished) refreshDo(s); },
@@ -1214,7 +1226,7 @@
       var R = S.runner;
       return { active: api.active(), step: R && R.cur() ? R.cur().id : null, shown: S.show && S.show.step ? S.show.step.id || null : null, idx: R ? R.idx : -1,
         state: R ? R.state : null, awaiting: R ? R.awaiting : null, picked: R ? R.picked : null, mode: S.show ? S.show.mode : null,
-        point: S.show && S.show.point && typeof S.show.point === 'string' ? S.show.point : null, fan: !!(S.show && S.show.fan),
+        point: S.show && S.show.point && typeof S.show.point === 'string' ? S.show.point : null, stacked: !!(S.show && S.show.stacked),
         text: S.root && S.root._ && !S.root._.bub.hidden ? S.root._.tx.textContent : null, warn: !!(S.root && S.root._ && S.root._.bub.classList.contains('warn')),
         holes: S.show && S.show.holes ? S.show.holes.length : 0, soft: S.soft ? S.soft.id : null, tip: S.tip ? S.tip.id : null, tipQ: S.tipQ.map(function (x) { return x.id; }),
         held: S.lesson ? S.lesson.held : 0, learned: S.learnedAll.slice(), learnedIds: R ? R.learnedIds.slice() : [], log: R ? R.log.slice(-30) : [] };

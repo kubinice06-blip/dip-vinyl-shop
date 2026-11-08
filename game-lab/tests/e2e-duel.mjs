@@ -8,10 +8,10 @@
 //          LAB_SIZES（預設四個驗收尺寸 390x664,375x548,430x932,360x640）；
 //          LAB_SHOTS＝目錄 → 另存段 3「對戰畫面」截圖（deviceScaleFactor 2）：出牌前、命中／剋不動／唬人（揭曉浮框出現後停格）、最後一手 KO、（另加）王牌擋下。
 //
-// 每個尺寸（FIXLIST 11：手牌平時疊成扇形、點一下攤開；攤開後點一張＝浮起、正上方三顆屬性鈕；點屬性鈕＝丟）：
-//   1 版面：扇形（手牌 5 張＋王牌，每張都露出一條、都在畫面裡）、攤開（一排不重疊、都在畫面裡、封面 ≥44）、浮起（三顆屬性鈕 ≥44×44、最高那顆 .top、在那張上面）；
-//     盤面與文件都不捲動；扇形／浮起時盤面裡沒有超過 26 px 的空帶（FIXLIST 9）；名牌只有新名字（沒有副標、沒有誠實度，FIXLIST 6）
-//   2 點扇形＝攤開（沒選）；點封面＝浮起這張、預覽屬性＝engine.topAttr、「你丟的」半透明預覽；3 點別張＝換；4 再點浮起那張不出手、點手牌外面＝收回扇形
+// 每個尺寸（FIXLIST 11：手牌平時疊成水平一排（錯開，像新接龍；店主 17:1x 不要扇形）、點一下攤開；攤開後點一張＝浮起、正上方三顆屬性鈕；點屬性鈕＝丟）：
+//   1 版面：疊著（手牌 5 張＋王牌，同一條水平線、不轉角，每張露出左邊約 3 成、都在畫面裡）、攤開（一排不重疊、都在畫面裡、封面 ≥44）、浮起（三顆屬性鈕 ≥44×44、最高那顆 .top、在那張上面）；
+//     盤面與文件都不捲動；疊著／攤開／浮起時盤面裡沒有超過 26 px 的空帶（FIXLIST 9）；名牌只有新名字（沒有副標、沒有誠實度，FIXLIST 6）
+//   2 點疊著的手牌＝攤開（沒選）；點封面＝浮起這張、預覽屬性＝engine.topAttr、「你丟的」半透明預覽；3 點別張＝換；4 再點浮起那張不出手、點手牌外面＝收回疊起來
 //   5 丟（剋中）：280 ms 前 slot-e 是「蓋著」、之後才翻成他的牌；他還有 N 張丟出就少一；浮框三行＝_fmt.clashText(事件)；第 n／6 手加一；提示句換字
 //   6 剋不動（gap）／7 唬人（被剋，「他唬你！」）／8 平手（舞台 sfx('chime',{attr:null})、唱盤空）／9 王牌被 ≤5 星剋＝剋不動（gap；FIXLIST 2 沒有「不會被剋」）＋tip_ace：浮框＝clashText
 //  10 __lab.force：counter 之後 1.6 s clashState().deck.by==='p'；tie 時 deck===null
@@ -170,12 +170,12 @@ const waitChoose = (page, ms = 15000) => page.waitForFunction(() => window.__e2e
 const waitOver = (page, ms = 20000) => page.waitForFunction(() => window.__h.ended != null, null, { timeout: ms }).then(() => true, () => false);
 const dbg = page => page.evaluate(() => { const x = window.DipLabDuel.debug(); return { phase: x.phase, n: x.n, sel: x.sel, busy: x.busy }; });
 async function tapName(page, name) {
-  const r = await hitPoint(page, 'dt:' + name);   // 扇形時每張只露出一條：點真的點得到的那一點
+  const r = await hitPoint(page, 'dt:' + name);   // 疊著時每張只露出左邊一條：點真的點得到的那一點
   if (!r) throw new Error('no element ' + name);
   await page.touchscreen.tap(r.x, r.y);
   return r;
 }
-// 攤開（疊著時點一下扇形）→ 點那張（浮起）
+// 攤開（疊著時點一下手牌）→ 點那張（浮起）
 async function liftIt(page, i) {
   if (!(await page.evaluate(() => window.DipLabDuel.debug().spread))) { await tapName(page, 'hand'); await sleep(260); }
   await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(160);
@@ -277,11 +277,12 @@ async function runSize(browser, w, h) {
   const errors = [];
   try {
     await boot(page);
-    // ---- 1 版面（扇形 → 攤開 → 浮起）
+    // ---- 1 版面（疊著 → 攤開 → 浮起）
     const snapHand = () => page.evaluate(() => {
       const D = window.DipLabDuel, rect = el => { if (!el) return null; const b = el.getBoundingClientRect(); return { l: b.left, t: b.top, r: b.right, b: b.bottom, w: b.width, h: b.height }; };
       const root = document.querySelector('.dl');
-      const tiles = [...document.querySelectorAll('.dl [data-tut=hand] .tile:not(.gone)')].map(t => ({ tut: t.dataset.tut, r: rect(t), cv: rect(t.querySelector('.cvw')), up: t.classList.contains('up') }));
+      const rot = t => { const m = getComputedStyle(t).transform; if (!m || m === 'none') return 0; const d = new DOMMatrix(m); return Math.round(Math.atan2(d.b, d.a) * 1800 / Math.PI) / 10; };
+      const tiles = [...document.querySelectorAll('.dl [data-tut=hand] .tile:not(.gone)')].map(t => ({ tut: t.dataset.tut, r: rect(t), cv: rect(t.querySelector('.cvw')), up: t.classList.contains('up'), rot: rot(t) }));
       // 每張露出來的寬：從這張左緣到下一張（蓋在上面那張）左緣
       const strips = tiles.map((t, k) => k < tiles.length - 1 ? tiles[k + 1].r.l - t.r.l : t.r.w);
       const abs = [...document.querySelectorAll('.dl .pop .ab')].map(b => ({ tut: b.dataset.tut, top: b.classList.contains('top'), r: rect(b) }));
@@ -298,9 +299,12 @@ async function runSize(browser, w, h) {
     const noScroll = L => L.scroll[0] <= L.scroll[1] + 1 && L.doc[0] <= L.vh + 1 && L.doc[1] <= L.vw + 1;
     {
       const F = await snapHand();
-      const okF = !F.spread && !F.sel && F.tiles.length === 6 && F.tiles[5].tut === 'hand-ace' && inView(F, F.tiles) && noScroll(F) && Math.min(...F.strips) >= 14 && !F.thr && !F.chipRow && F.bands.max <= 26;
-      record('1a', size, okF, `扇形：${F.tiles.map(t => t.tut).join(',')}；每張露出 ${F.strips.map(Math.round).join('/')} px；都在畫面裡 ${inView(F, F.tiles)}；最大空帶 ${F.bands.max} px（y=${F.bands.at}）；丟！${F.thr ? '還在' : '沒有'}、星鈕列 ${F.chipRow}（${F.cls}）`);
-      await shot(page, `${size}-0-fan.png`);
+      // 店主 17:1x：水平直線（像舊版新接龍）——每張同一個上緣、不轉角；露出左邊約 3 成寬（25–35%）
+      const tops0 = F.tiles.map(t => Math.round(t.r.t)), flat = Math.max(...tops0) - Math.min(...tops0) <= 1 && F.tiles.every(t => !t.rot);
+      const ratio = F.strips.slice(0, -1).map((d, k) => d / F.tiles[k].r.w), okR = ratio.every(x => x >= 0.25 && x <= 0.35);
+      const okF = !F.spread && !F.sel && F.tiles.length === 6 && F.tiles[5].tut === 'hand-ace' && inView(F, F.tiles) && noScroll(F) && flat && okR && Math.min(...F.strips) >= 14 && !F.thr && !F.chipRow && F.bands.max <= 26;
+      record('1a', size, okF, `疊著：${F.tiles.map(t => t.tut).join(',')}；上緣 ${[...new Set(tops0)].join('/')}、轉角 ${[...new Set(F.tiles.map(t => t.rot))].join('/')}°；封面 ${Math.round(F.tiles[0].r.w)} px，每張露出 ${F.strips.map(Math.round).join('/')} px（${ratio.map(x => Math.round(x * 100)).join('/')}%）；都在畫面裡 ${inView(F, F.tiles)}；最大空帶 ${F.bands.max} px（y=${F.bands.at}）；丟！${F.thr ? '還在' : '沒有'}、星鈕列 ${F.chipRow}（${F.cls}）`);
+      await shot(page, `${size}-0-stack.png`);
       await tapName(page, 'hand'); await sleep(300);
       const S = await snapHand();
       const overlap = S.tiles.some((t, k) => k && t.r.l < S.tiles[k - 1].r.r - 0.5);
@@ -317,7 +321,7 @@ async function runSize(browser, w, h) {
       record('1d', size, !U.hon && !U.sub && U.nm === U.want && U.want, `名牌「${U.nm}」（要＝content 的新名字「${U.want}」）；副標 ${U.sub ? '「' + U.sub + '」' : '沒有'}；誠實度 ${U.hon ? '還在 DOM' : '沒有'}（FIXLIST 6）`);
       record('1e', size, /蓋著/.test(U.sleeve), `他的封套：「${U.sleeve.trim()}」；牌桌他那格：「${U.slotE.trim()}」`);
     }
-    // ---- 2 點扇形＝攤開；點封面＝浮起這張＋topAttr；3 點別張＝換；4 再點浮起那張不出手、點外面＝收回
+    // ---- 2 點疊著的手牌＝攤開；點封面＝浮起這張＋topAttr；3 點別張＝換；4 再點浮起那張不出手、點外面＝收回
     {
       await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);
       const n0 = (await dbg(page)).n;
@@ -329,7 +333,7 @@ async function runSize(browser, w, h) {
         return { sel: x.sel, top: E.topAttr(v.hand[1]), ab: [...document.querySelectorAll('.dl .pop .ab')].map(b => b.dataset.tut + (b.classList.contains('top') ? '*' : '')), n: x.n, slotP: (D.el('slot-p') || {}).className };
       });
       const ok2 = s2a.spread && !s2a.sel && r.sel && r.sel.i === 1 && r.sel.attr === r.top && r.ab.join() === ['c', 'o', 'h'].map(a => `chip-1-${a}${a === r.top ? '*' : ''}`).join() && / pre/.test(r.slotP);
-      record(2, size, ok2, `點扇形 → 攤開 ${s2a.spread}、沒選 ${!s2a.sel}；點 card-1 → 浮起 ${short(r.sel)}（topAttr ${r.top}）；屬性鈕 ${r.ab.join(',')}；你丟的「${r.slotP}」`);
+      record(2, size, ok2, `點疊著的手牌 → 攤開 ${s2a.spread}、沒選 ${!s2a.sel}；點 card-1 → 浮起 ${short(r.sel)}（topAttr ${r.top}）；屬性鈕 ${r.ab.join(',')}；你丟的「${r.slotP}」`);
       await tapName(page, 'card-2'); await sleep(220);
       const s3 = await page.evaluate(() => ({ sel: window.DipLabDuel.debug().sel, ab: [...document.querySelectorAll('.dl .pop .ab')].map(b => b.dataset.tut) }));
       record(3, size, s3.sel && s3.sel.i === 2 && s3.ab.length === 3 && s3.ab.every(t => /^chip-2-/.test(t)), `點 card-2 → 換成 ${short(s3.sel)}；屬性鈕 ${s3.ab.join(',')}`);
@@ -407,7 +411,7 @@ async function runSize(browser, w, h) {
     // ---- 11 長按手牌封面＝唱片資訊（不選牌）
     {
       await page.evaluate(() => window.DipLabDuel.select(null));
-      await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);   // 扇形：card-2 只露出一條，長按那一條
+      await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);   // 疊著：card-2 只露出左邊一條，長按那一條
       const r = Object.assign(await hitPoint(page, 'dt:card-2'), await page.evaluate(() => ({ id: window.DipLabDuel.el('card-2').closest('.tile').dataset.card })));
       const n0 = await page.evaluate(() => window.__h.log.length);
       await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: r.x, y: r.y }] });
@@ -416,7 +420,7 @@ async function runSize(browser, w, h) {
       await sleep(300);
       const st = await page.evaluate(([n0, q]) => ({ log: window.__h.log.slice(n0), modal: !!document.querySelector(q), sel: window.DipLabDuel.debug().sel, spread: window.DipLabDuel.debug().spread }), [n0, INFO_SEL]);
       const ok = st.log.includes('info ' + r.id) && st.modal && !st.sel && !st.spread;
-      record(11, size, ok, `扇形長按 card-2 → ${st.log.join(',') || '沒有'}；唱片資訊${st.modal ? '開著' : '沒開'}；選牌 ${short(st.sel)}、攤開 ${st.spread}`);
+      record(11, size, ok, `疊著長按 card-2 → ${st.log.join(',') || '沒有'}；唱片資訊${st.modal ? '開著' : '沒開'}；選牌 ${short(st.sel)}、攤開 ${st.spread}`);
       await page.evaluate(q => { const b = document.querySelector(q); if (b) b.click(); }, INFO_CLOSE);
       await sleep(250);
     }

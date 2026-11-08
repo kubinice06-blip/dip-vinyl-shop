@@ -3,7 +3,7 @@
    WebKit：不用 backface-visibility、不用 100vh、長按目標 -webkit-touch-callout:none；flex gap 用 margin 代替（iOS 14.0–14.4）。
    尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥580、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。
    牌桌兩張封面的邊長 --scv、牌桌與手牌區的高由 duel.js sizeBoard() 算（店主 2026-11-08：專輯是主角；FIXLIST 11：拿掉星鈕列與丟！，空出來的高度給牌桌）。
-   手牌（FIXLIST 11）：.hand.fan 疊成扇形／.hand.spread 攤開一排；每張 .tile 絕對定位（duel.js layoutHand 給 transform），浮起那張上面 .pop 三顆屬性鈕 .ab。 */
+   手牌（FIXLIST 11）：.hand.stack 疊成水平一排（每張往右錯開、露出左邊一條，不轉角）／.hand.spread 攤開不重疊的一排；每張 .tile 絕對定位（duel.js layoutHand 給 transform），浮起那張上面 .pop 三顆屬性鈕 .ab。 */
 .dl{--dl-zh:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);--dl-mono:'Space Mono',var(--dl-zh);
   --ecv:56px;--scv:120px;--tri-w:60px;--tri-h:54px;--ab-h:44px;--ab-top:50px;
   position:relative;flex:1 1 auto;min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;
@@ -121,7 +121,7 @@
 .dl .lastline b .g,.dl .lastline b .r{opacity:.85}
 .dl .lastline .nt{margin-left:6px;color:#9c8240;font-size:10px}
 
-/* ===================== 你的一塊（下）：黑線分界；名字＋聲望＋手牌區（扇形／攤開） ===================== */
+/* ===================== 你的一塊（下）：黑線分界；名字＋聲望＋手牌區（疊著／攤開） ===================== */
 .dl .dl-p{flex:1 1 auto;min-height:0;border-top:1px solid var(--ink,#111);padding:6px 12px 0;position:relative;padding-bottom:env(safe-area-inset-bottom,0px)}
 .dl.spread .dl-p{z-index:3}   /* 攤開時屬性鈕可能往上蓋到牌桌的字帶下緣：手牌那一塊疊在上面 */
 .dl .relics{display:flex;align-self:center;height:20px;align-items:center}
@@ -129,7 +129,7 @@
 .dl .relics .rl::before{content:'';position:absolute;left:-12px;right:-12px;top:-12px;bottom:-12px}
 .dl .relics .rl svg,.dl .relics .rl canvas,.dl .relics .rl img,.dl .relics .rl>span:not(.rl-t){max-width:16px;max-height:16px;display:block}
 .dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
-/* 手牌區：高由 duel.js 給（--hand 至少放得下攤開的一排＋浮起＋屬性鈕）；每張絕對定位，transform＝位移＋轉角 */
+/* 手牌區：高由 duel.js 給（--hand 至少放得下攤開的一排＋浮起＋屬性鈕）；每張絕對定位，transform＝位移 */
 .dl .hand{position:relative;height:120px;margin-top:2px;cursor:pointer;-webkit-touch-callout:none}
 .dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0}
 .dl .tile{position:absolute;left:0;top:0;width:60px;height:60px;transform-origin:50% 60%;

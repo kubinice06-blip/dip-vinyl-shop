@@ -9,7 +9,7 @@
 //            BEATS {o:'c',c:'h',h:'o'} (x beats BEATS[x]) · COUNTER_OF {c:'o',o:'h',h:'c'} (the attr that beats x) · beats(x,y)
 //            CFG {playerHp 9, handSize 5, enemyHand 3, bagMax 8, retries 1, relicMax 3, threshold 2, maxRounds 6, aceStar 7,
 //                 colorRelicBonus 1, dustcoverCut 1, cleanerTie 1, boostStar 1, bargainPick 3, mercy true}  (sim --set k=v 改這裡)
-//            手牌 5 張＋王牌（FIXLIST 11：點牌才跳出三個屬性、疊成扇形；原版起手也是 5）；他的暗手維持 3 張。平衡 H5-1：你 9（手牌 5 張剋得到的手變多，
+//            手牌 5 張＋王牌（FIXLIST 11：點牌才跳出三個屬性、平時疊成一排錯開；原版起手也是 5）；他的暗手維持 3 張。平衡 H5-1：你 9（手牌 5 張剋得到的手變多，
 //            你 −1 聲望壓通關率、客人聲望往上加把多出來的 KO 收回；出招難度與唬人率照 R1，scratchpad/v4/balance/H5A/results.md）
 // Cards      topAttr(card) 峰值軸，並列 c→o→h · peak(card) max(c,o,h) · deckMain(cards, taste) 牌單主屬性（並列峰值各算一票，票數並列照 taste）
 // Clash      clash(p, e, {threshold}) p/e = {attr, star, ace} -> {kind, toE, toP, blocked: null|'gap', by: 'p'|'e'|null}

@@ -4,7 +4,7 @@
 // data-tut  他的一塊：e-hud e-name e-hp e-hint e-rec e-sleeve e-pile（名牌只有名字：副標與誠實度都拿掉，FIXLIST 6）
 //           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho rounds result（浮框 .l1 .l2 .l3） lastline
 //           你的一塊：p-hud p-hp relics relic-<id> hand hand-<i> hand-ace card-<i> card-ace pop chip-<i>-<attr> chip-ace
-//             （FIXLIST 11：手牌平時疊成扇形（hand.fan），點一下攤開（hand.spread）；攤開後點一張＝浮起，正上方跳屬性鈕（pop；
+//             （FIXLIST 11：手牌平時疊成水平一排（hand.stack：每張往右錯開、露出左邊一條，像新接龍；不轉角），點一下攤開（hand.spread）；攤開後點一張＝浮起，正上方跳屬性鈕（pop；
 //              chip-<i>-<attr>／王牌 chip-ace 只有浮起的那張有）；點屬性鈕＝照那個屬性丟出。沒有星鈕列、沒有「丟！」）
 // el(name)：上面的名字；
 //           'card:best:<attr>'／'chip:best:<attr>'（＋':ace'＝王牌也算）＝那一色星最多的那張封面／屬性鈕（engine.bestChip）；
@@ -20,13 +20,13 @@
 //           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
 //           _fmt.clashText(clashEvent, T, hints) → { l1, l2, l3, cls, rule, notes }（e2e 比對浮框）
 // gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'spread'}（點疊著的手牌＝攤開） {kind:'card',i,attr,id}（攤開後點封面＝浮起這張，attr＝topAttr）
-//   {kind:'throw',i,attr,id}（點屬性鈕＝出手，唯一的出手方式） {kind:'collapse'}（點手牌外面＝收回扇形）
+//   {kind:'throw',i,attr,id}（點屬性鈕＝出手，唯一的出手方式） {kind:'collapse'}（點手牌外面＝收回疊起來）
 //   {kind:'chip',i,attr,id}（只有 API select(i, attr) 送：換預覽的屬性，不出手） {kind:'info',where} {kind:'close'}；i＝0..handSize−1 或 'ace'
 // 事件：'phase'(choose|resolve|over) 'selected'({i,attr}|null) 'spread'(bool) 'resolved'(evs：560 ms 浮框剛出現時，同步) 'settled'(evs：1460 浮框收成一行)
 //       'handStart'(view) 'over'(result) 'info'(where) 'infoClosed'(where) 'relic'(id)
 //
 // 規則：畫面上每個數字都來自引擎的 view()／resolveTurn() 事件；UI 不算傷害、不讀 duel.plan。提示只寫句子，不寫屬性名（D §5）。
-// 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、手牌收回扇形、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
+// 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、手牌收回疊起來、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
 //   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手。結算中點畫面任一處（牌桌兩張除外）＝這手 4 倍速；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
 (function () {
   'use strict';
@@ -40,7 +40,7 @@
   const EDGES = [['o', 'c'], ['c', 'h'], ['h', 'o']];   // 三角的箭頭（畫圖用；輸贏一律看引擎事件）：冷→經、經→硬、硬→冷
   const TIER_AXIS = { hall: 'c', pearl: 'o', heresy: 'h' };
   const LONG_MS = 450;     // 長按手牌封面＝唱片資訊
-  const FAN_DX = 0.3, FAN_ROT = 3.5, FAN_ROT_MAX = 9, FAN_ARC = 1.2;   // 扇形：每張往右錯開 3 成寬、每張轉 3.5°（最多 ±9°）、兩端往下彎一點
+  const STACK_DX = 0.3;   // 疊著（店主 17:1x：不要扇形，水平直線像舊版新接龍）：同一條線上每張往右錯開 3 成寬，不轉角、不成弧形
   const LIFT = 10, POP_GAP = 6;  // 浮起 10 px；屬性鈕在浮起那張上面 6 px
   const RUSH_MS = 350;     // 丟出後 350 ms 內的點擊不算「加速這一手」
   const T_FLIP = 280, T_HIT = 560, T_LINE = 1460, T_NEXT = 2060;
@@ -491,8 +491,8 @@
       if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, false);
       els.relics.innerHTML = (v.relics || []).slice(0, 3).map(r => `<button type="button" class="rl" data-tut="relic-${esc(r.id)}" data-relic="${esc(r.id)}" aria-label="發燒配件：${esc(r.name || '')}">${relicIconHTML(r)}</button>`).join('');
     }
-    // ---------------- render: 手牌（FIXLIST 11：平時疊成扇形、點一下攤開成一排；攤開後點一張＝浮起，正上方跳屬性鈕） ----------------
-    // 順序：手牌 0..n−1，王牌（還沒用）放最右＝扇形最上面那張（金框）；用過的王牌不在手牌裡
+    // ---------------- render: 手牌（FIXLIST 11：平時疊成水平一排（錯開）、點一下攤開成不重疊的一排；攤開後點一張＝浮起，正上方跳屬性鈕） ----------------
+    // 順序：手牌 0..n−1，王牌（還沒用）放最右＝疊著時最上面那張（金框）；用過的王牌不在手牌裡
     function handIds(v) {
       const ids = [];
       (v.hand || []).forEach((c, i) => { if (c) ids.push(i); });
@@ -536,27 +536,23 @@
       els.hprompt.textContent = S.spread && !S.sel && !S.busy && !isOver() ? T('pickHint') : '';
       els.hand.setAttribute('aria-label', S.spread ? '手牌（點一張專輯）' : '手牌（點一下攤開）');
     }
-    // 扇形／一排的位置（每張絕對定位；transform＝位移＋轉角，換模式時 CSS 轉場 180 ms；減少動態＝直接換）
+    // 疊著／攤開的位置（每張絕對定位；transform＝位移，換模式時 CSS 轉場 180 ms；減少動態＝直接換）
     function layoutHand(animate) {
       const W = els.hand.clientWidth, H = els.hand.clientHeight;
       if (!W || !H) return;
       const tiles = [...els.tiles.querySelectorAll('.tile')].filter(t => !t.classList.contains('gone'));
       const n = tiles.length, L = S.lay || {};
-      els.hand.classList.toggle('fan', !S.spread); els.hand.classList.toggle('spread', !!S.spread);
+      els.hand.classList.toggle('stack', !S.spread); els.hand.classList.toggle('spread', !!S.spread);
       root.classList.toggle('spread', !!S.spread);
       const still = !animate || rm();
       if (still) els.hand.classList.add('noanim');
       const pos = [];
       let rowY = H;
       if (!S.spread) {
-        const mid = (n - 1) / 2, arcMax = FAN_ARC * mid * mid;
-        const F = Math.max(30, Math.min(L.F || 80, Math.floor((W - 8) / (1 + FAN_DX * Math.max(0, n - 1)))));
-        const dx = Math.round(F * FAN_DX), tw = F + dx * Math.max(0, n - 1);
-        const x0 = Math.round((W - tw) / 2), y0 = Math.round((H - F - arcMax) / 2);
-        tiles.forEach((t, k) => {
-          const d = k - mid;
-          pos.push({ x: x0 + k * dx, y: y0 + Math.round(FAN_ARC * d * d), s: F, r: Math.max(-FAN_ROT_MAX, Math.min(FAN_ROT_MAX, d * FAN_ROT)), z: k + 1 });
-        });
+        const F = Math.max(30, Math.min(L.F || 80, Math.floor((W - 8) / (1 + STACK_DX * Math.max(0, n - 1)))));
+        const dx = Math.round(F * STACK_DX), tw = F + dx * Math.max(0, n - 1);
+        const x0 = Math.round((W - tw) / 2), y0 = Math.round((H - F) / 2);
+        tiles.forEach((t, k) => pos.push({ x: x0 + k * dx, y: y0, s: F, z: k + 1 }));
       } else {
         const gap = L.gap || 6, s = Math.max(36, Math.floor(Math.min(L.smax || 72, (W - (n - 1) * gap) / Math.max(1, n))));
         const tw = n * s + (n - 1) * gap, x0 = Math.round((W - tw) / 2);
@@ -565,13 +561,13 @@
         rowY = H - s - bot;
         tiles.forEach((t, k) => {
           const i = t.dataset.i === 'ace' ? 'ace' : +t.dataset.i, up = !!(S.sel && S.sel.i === i);
-          pos.push({ x: x0 + k * (s + gap), y: rowY - (up ? LIFT : 0), s, r: 0, z: up ? 40 : k + 1, up });
+          pos.push({ x: x0 + k * (s + gap), y: rowY - (up ? LIFT : 0), s, z: up ? 40 : k + 1, up });
         });
       }
       tiles.forEach((t, k) => {
         const p = pos[k];
         t.style.width = p.s + 'px'; t.style.height = p.s + 'px';
-        t.style.transform = `translate(${p.x}px,${p.y}px)` + (p.r ? ` rotate(${p.r.toFixed(2)}deg)` : '');
+        t.style.transform = `translate(${p.x}px,${p.y}px)`;
         t.style.zIndex = String(p.z);
         t.classList.toggle('up', !!p.up);
       });
@@ -605,7 +601,7 @@
     }
     // 牌桌（兩張封面＋下面那行字＋中間字帶）與手牌區（FIXLIST 11）：
     //   手牌區至少放得下「攤開的一排（照寬度算，6 張）＋浮起＋屬性鈕」；其餘給牌桌，兩張封面照剩下的高與寬放大（空出來的高度給牌桌）；
-    //   封面到上限還有多的，給手牌區（扇形大一點、上下置中）——中間不留空帶（FIXLIST 9）。
+    //   封面到上限還有多的，給手牌區（疊著的那一排大一點、上下置中）——中間不留空帶（FIXLIST 9）。
     //   兩張封面中間只留 --gap（相剋圖例與「第 n／6 手」搬到中間字帶的左邊）。
     //   [上緣 --tp, 字高 --lab, 中間字帶高, 封面最小, 封面最大, 屬性鈕高]（上緣、字高跟 duel.css 的 .dl-t 一致）
     const BOARD = { short: [4, 17, 66, 84, 176, 46], compact: [6, 19, 72, 96, 176, 48], base: [6, 19, 74, 100, 176, 50], roomy: [12, 20, 80, 110, 188, 52] };
@@ -629,9 +625,8 @@
       els.hand.style.height = handH + 'px';
       root.style.setProperty('--scv', scv + 'px');
       root.style.setProperty('--band-h', band + 'px');
-      // 扇形：手牌區放得下的最大（轉角讓上下多出一點），不超過牌桌封面的 6 成多、118 px（牌桌那兩張才是主角）
-      const mid = (n - 1) / 2, arcMax = FAN_ARC * mid * mid;
-      const F = Math.max(s, Math.min(Math.round(scv * 0.64), 118, Math.floor((handH - 8 - arcMax) / 1.15), Math.floor((hw - 8) / (1 + FAN_DX * (n - 1)))));
+      // 疊著的那一排：手牌區放得下的最大，不超過牌桌封面的 6 成多、118 px（牌桌那兩張才是主角）
+      const F = Math.max(s, Math.min(Math.round(scv * 0.64), 118, Math.floor((handH - 8) / 1.15), Math.floor((hw - 8) / (1 + STACK_DX * (n - 1)))));
       S.lay = { F, smax: SPREAD_MAX, gap, bot: 3, handH, handMin, scv, popH };
       layoutHand(false);
     }
@@ -743,7 +738,7 @@
       els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
     }
-    // 唱片資訊：手牌封面長按（扇形、攤開都可以）；牌桌上兩張（揭曉後）點一下；他蓋著的封套不給看
+    // 唱片資訊：手牌封面長按（疊著、攤開都可以）；牌桌上兩張（揭曉後）點一下；他蓋著的封套不給看
     function infoOfSlot(x) {
       const side = x.classList.contains('e') ? 'e' : 'p', d = S.table && S.table[side];
       if (d && d.card && !d.hidden) { openInfo(d.card, 'slot-' + side, d.attr); return true; }
@@ -770,7 +765,7 @@
       }
       if ((x = t.closest('.ab'))) { abTap(x); return; }
       if (t.closest('.hand')) { handTap(t); return; }
-      if (S.spread) collapseHand(true);              // 點手牌外面：收回扇形
+      if (S.spread) collapseHand(true);              // 點手牌外面：收回疊起來
     }
     // 盤面外面（舞台、頂欄）也算「手牌外面」；唱片資訊、教學遮罩、面板上的點擊不算
     function onDocClick(ev) {
@@ -912,12 +907,12 @@
       S.debug.hands.push(rec); if (S.debug.hands.length > 300) S.debug.hands.shift();
       S.sel = null;
       const wasSpread = S.spread;
-      S.spread = false;                                  // 丟出去：手牌收回扇形（下一手從扇形開始）
+      S.spread = false;                                  // 丟出去：手牌收回疊起來（下一手從疊著開始）
       setPhase('resolve');
       root.classList.add('busy');
       emit('selected', null);
       if (wasSpread) emit('spread', false);
-      // ---- t=0：你的牌飛上牌桌、手牌收回扇形；他那格「蓋著」；舞台一台唱盤開演
+      // ---- t=0：你的牌飛上牌桌、手牌收回疊起來；他那格「蓋著」；舞台一台唱盤開演
       S.lastCt = null; S.flash = null;
       S.table = { e: { card: cl.eCard, attr: cl.eAttr, star: cl.eStar, ace: !!cl.eAce, hidden: true }, p: { card: cl.pCard, attr: cl.pAttr, star: cl.pStar, ace: !!cl.ace }, dim: false };
       renderTable(v0);
@@ -1161,7 +1156,7 @@
         S.sel = { i: S.sel.i, attr }; renderPop(); renderTri(); renderSlot('p'); emit('selected', { i: S.sel.i, attr });
         return true;
       },
-      // spread(true)＝攤開（不經 gate）；spread(false)＝收回扇形
+      // spread(true)＝攤開（不經 gate）；spread(false)＝收回疊起來
       spread: on => { if (on === false) return collapseHand(false); if (!canAct()) return false; setSpread(true); return true; },
       // play(act)＝直接照這個屬性丟出（gate 只看 'throw'）
       play: act => {
