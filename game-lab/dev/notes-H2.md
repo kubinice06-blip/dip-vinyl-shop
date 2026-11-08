@@ -22,10 +22,13 @@
 - [x] A duel.js／duel.css：拿掉 FAN_ROT／FAN_ARC（STACK_DX 0.3），class fan→stack，用語「扇形」→「疊著／疊成一排」（README、註解、e2e 記錄）；
   教學：疊著時 sh.pointAt＝那一課的封面，手指指那張露出的一條（stripRect；debug().point 照舊 'hand'）。commit fca9be134。
   量：390×664 疊著封面 113、露出 34 px（30%），攤開 56，空帶 ≤16。單元測試全綠、check-content／lint-copy 綠。
-- [~] B e2e-duel #1a 加「同一條線、不轉角、露出 25–35%」檢查。第一次全跑：430×932 疊著上面空 32 px（直線沒有弧度撐高）→
-  疊著上限 128（≤牌桌封面 0.68）、roomy 牌桌封面上限 196（bb6aa1b96）→ 430 最大空帶 23、390 15。
-  教學：洞只框那一疊（stackRect，502daf694）。四尺寸全套重跑中：scratchpad/v4/H2/runall.sh → r2-*.log、r2-summary.log
-- [ ] C 截圖重拍（390×664@2、375×548、430×932）：疊著、攤開、浮起＋三顆鈕、剛丟出、教學第 2 手手指；看過修
+- [x] B e2e-duel #1a 加「同一條線、不轉角、露出 25–35%」檢查。第一次全跑：430×932 疊著上面空 32 px（直線沒有弧度撐高）→
+  疊著上限 128（≤牌桌封面 0.68）、roomy 牌桌封面上限 196（bb6aa1b96）→ 疊著封面 390 115／375 97／430 128／360 111，最大空帶 15／14／23／19。
+  教學：洞只框那一疊（stackRect，502daf694）；屬性鈕間距 6→10（金框不壓隔壁，b03ccfc5c）。
+  四尺寸：e2e-duel 124/124、e2e.spec 103/103、e2e-prologue 52/52×4；改間距後 e2e-duel 360／375 70/70、spec #19／#20 375 4/4；
+  單元：tutorial 182142／0、engine 2040482／0、chars／hit／shop 綠；check-content、lint-copy 綠。
+- [x] C 截圖重拍（@2；390×664、375×548、430×932、360×640）→ dev/shots/h2/<size>-1-stack／2-spread／3-lift／4-reveal／5-tut-m2-stack／6-tut-k1-stack／7-tut-k1-card／8-tut-k2-attr（＋430×932-9-v03-prologue）。
+  看過修：430 疊著上下空帶、教學洞框整個手牌區的空白、金框壓到隔壁鈕。腳本 scratchpad/v4/H2/shots.mjs、tutshot.mjs。
 
 ## 進度（第一輪，扇形版）
 
