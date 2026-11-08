@@ -14,7 +14,7 @@
 //       走位：每個 spot 與 bin.stand 不站在家具裡，任兩個之間的 navRoute 每一段都不穿過家具（navRoute 回 null＝走不到）；
 //       另外逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
 //       腳下範圍（FIXLIST 1，店主「不要跨過中島唱片區」）＝DipShop.footprints：道具實際畫出來的那一塊（量的）∪ foot；
-//       layout.footprints.groups（中島）合成一塊多邊形、walkBehind（櫃檯、唱盤台：老闆站後面）只算地面那塊。避障、這裡、shop.test 同一份。
+//       layout.footprints.groups（中島）合成一塊多邊形；behind（櫃檯、唱盤台：老闆站後面）留一個口袋，只有站在口袋裡的人的路線可以進去。避障、這裡、shop.test 同一份。
 import fs from 'fs';
 import path from 'path';
 import vm from 'vm';
@@ -51,7 +51,7 @@ const inRect = (p, q) => p[0] > q[0] && p[0] < q[0] + q[2] && p[1] > q[1] && p[1
 let LIB = null;
 const libDS = () => (LIB || (LIB = loadLib())).DipShop;
 // 站立家具的腳下範圍（不加 navMargin）：[[id, poly, props], …]，poly＝[[x,y],…]（DipShop.footprints：畫出來的那一塊 ∪ foot；群組一塊）。
-// wall／bg／fx 層與 hidden 不算；站立道具沒有 foot＝bad（walkBehind 要用它、量不到時也退回它）；block:false（刻意可以走過的）不算
+// wall／bg／fx 層與 hidden 不算；站立道具沒有 foot＝bad（口袋的下緣要用它、量不到時也退回它）；block:false（刻意可以走過的）不算
 export function footprints(L, OP, bad, DS) {
   (L.props || []).forEach((o, i) => {
     const sp = OP[o.type], layer = o.layer || (sp && sp.layer);
@@ -321,7 +321,7 @@ export function checkOblique(L, file, lib, cards, content) {
   for (const k of ['deckE', 'deckP', 'clash', 'rug']) if (D[k]) bad('duel.' + k + ' 是 v3 兩台唱盤的資料，v4 刪掉');
   if (spots.ref && !inside(spots.ref[0], spots.ref[1])) bad('spots.ref 在畫布外');
   if (props.some(o => /rug/i.test(o.type))) bad('店主：不要地毯');
-  // 腳下範圍的設定（layout.footprints，FIXLIST 1）：groups＝{名字: [道具 id…]}（合成一塊，欄間的縫 ≤2 格）；walkBehind＝老闆站在它後面的道具（櫃檯、唱盤台）
+  // 腳下範圍的設定（layout.footprints，FIXLIST 1）：groups＝{名字: [道具 id…]}（合成一塊，欄間的縫 ≤2 格）；behind＝老闆站在它後面的口袋（櫃檯、唱盤台）
   const FP = L.footprints || {}, byId = new Map(props.filter(o => o.id).map(o => [o.id, o])), inGroup = new Map();
   const standingProp = (o) => { const sp = OP[o.type], ly = o.layer || (sp && sp.layer); return sp && !o.hidden && !['wall', 'bg', 'fx'].includes(ly); };
   if (FP.groups != null && (typeof FP.groups !== 'object' || Array.isArray(FP.groups))) bad('footprints.groups 要是 {名字: [道具 id…]}');
@@ -333,13 +333,20 @@ export function checkOblique(L, file, lib, cards, content) {
       if (inGroup.has(id)) bad('footprints：' + id + ' 同時在 ' + inGroup.get(id) + ' 與 ' + g); inGroup.set(id, g);
     }
   }
-  for (const id of FP.walkBehind || []) {
+  // behind＝{道具 id: [xa, xb]}：老闆站在它後面的口袋（地面那塊後面、x 在 xa–xb 的那一條）；口袋裡一定要有 spot（不然不需要口袋）
+  if (FP.behind != null && (typeof FP.behind !== 'object' || Array.isArray(FP.behind))) bad('footprints.behind 要是 {道具 id: [xa, xb]}');
+  const pockets = [];
+  for (const [id, xr] of Object.entries(FP.behind || {})) {
     const o = byId.get(id);
-    if (!o) { bad('footprints.walkBehind：沒有道具 ' + id); continue; }
-    if (!['counter', 'duelDeck'].includes(o.type)) bad('footprints.walkBehind：' + id + '（' + o.type + '）不是櫃檯或唱盤台（只有老闆站後面的道具可以只算地面那塊）');
-    if (inGroup.has(id)) bad('footprints.walkBehind：' + id + ' 不能同時在群組裡');
-    const d = DS.drawnExtent && DS.drawnExtent(o, OP, { L, layout: L, state: {}, card: () => null }), f = OP[o.type].foot && OP[o.type].foot(o);
-    if (d && f && !Object.entries(spots).some(([, s]) => !s[2] && s[0] > d.x0 && s[0] < d.x1 && s[1] > d.top && s[1] < f[1])) bad('footprints.walkBehind：' + id + ' 後面沒有任何 spot（walkBehind 是給老闆站後面用的）');
+    if (!o) { bad('footprints.behind：沒有道具 ' + id); continue; }
+    if (!standingProp(o)) { bad('footprints.behind：' + id + ' 不是站立道具'); continue; }
+    if (inGroup.has(id)) bad('footprints.behind：' + id + ' 不能同時在群組裡');
+    if (!Array.isArray(xr) || xr.length !== 2 || !xr.every(v => typeof v === 'number') || !(xr[0] < xr[1])) { bad('footprints.behind.' + id + ' 要是 [xa, xb]（xa < xb）'); continue; }
+    const pr = DS.pocketRect && DS.pocketRect(o, OP, { L, layout: L, state: {}, card: () => null }, xr);
+    if (!pr) { bad('footprints.behind.' + id + '：口袋是空的（不在道具畫出來的左右範圍裡，或道具後面沒有被它擋住的那一條）'); continue; }
+    const who = Object.entries(spots).filter(([, s]) => !s[2] && inRect(s, pr)).map(([k]) => k);
+    if (!who.length) bad('footprints.behind.' + id + '：口袋 ' + JSON.stringify(pr) + ' 裡沒有任何 spot（口袋是給老闆站後面用的）');
+    pockets.push({ id, rect: pr, who });
   }
   const feetAll = DS.footprints ? DS.footprints(L, OP) : [];
   for (const f of feetAll) if (f.gap > 2) bad('footprints.groups.' + f.id + '：成員之間有 ' + f.gap + ' 格寬的縫（>2），不是一塊');
@@ -374,6 +381,12 @@ export function checkOblique(L, file, lib, cards, content) {
     if (!r.clear) bad('走不到 spots.' + kb + '（從 ' + ka + '，' + JSON.stringify(r.bad[0]) + '→' + JSON.stringify(r.bad[1]) + ' 穿過家具）');
     const hit = routeHitsFeet(DS, r.pts, feet);
     if (hit) bad(ka + '→' + kb + ' 的路線 ' + JSON.stringify(hit.seg[0]) + '→' + JSON.stringify(hit.seg[1]) + ' 穿過 ' + hit.id + ' 的腳下範圍');
+    // 口袋只給站在口袋裡的人進出：兩端都不在口袋裡的路線不准經過口袋（不然就是從櫃檯後面、唱盤台上面穿過去）
+    for (const pk of pockets) {
+      if (inRect(a, pk.rect) || inRect(b, pk.rect)) continue;
+      const k = r.pts.findIndex((q, i) => i > 0 && (DS.segHitsRect(r.pts[i - 1], q, pk.rect) || inRect(q, pk.rect)));
+      if (k > 0) bad(ka + '→' + kb + ' 的路線 ' + JSON.stringify(r.pts[k - 1]) + '→' + JSON.stringify(r.pts[k]) + ' 從 ' + pk.id + ' 後面的口袋穿過（那是老闆站的地方）');
+    }
   }
   info.charH = CH; info.kinds = kinds;
   return { problems: P, warnings: Wn, hotIds: [...ids.keys()], info };

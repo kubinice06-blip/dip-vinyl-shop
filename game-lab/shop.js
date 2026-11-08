@@ -1206,7 +1206,9 @@
   // 所以站立道具的腳下範圍＝它實際畫出來的那一塊（用畫筆量，不是猜的）：
   //   左右＝畫出來的最左到最右；上緣＝最上面一列「連續 ≥3 格不透明」的那列（1–2 格寬的細柱：箱子的鉻管、燈桿、耳機線不算）；
   //   下緣＝地板前緣 o.y 與畫出來的最下緣取大的（地上半透明的影子不算）；再跟道具自己的 foot（地面那塊）取聯集。
-  //   L.footprints.walkBehind（櫃檯、唱盤台）：老闆站在它後面（spots.counter、ref；被它擋住腳是故意的），只算地面那塊，左右照畫出來的。
+  //   L.footprints.behind＝{道具 id: [xa, xb]}（櫃檯、唱盤台）：老闆站在它後面（spots.counter、ref；被它擋住腳是故意的）——
+  //     x 在 xa–xb 之間、地面那塊後面那一條（畫出來的上緣到 o.y−d）留給老闆站（口袋）；其餘照畫出來的整塊。
+  //     櫃檯的口袋＝整個寬（老闆在櫃檯後面走動）；唱盤台的口袋＝轉盤那一段（裁判站在轉盤正後面），兩側照擋，別人不會從唱盤台上走過去。
   //   L.footprints.groups（中島）：成員合成一塊多邊形（rectsPoly，欄間的縫補起來）。避障（navObstacles，加 navMargin）、
   //   check-shops 的「路線不穿家具」、shop.test、dev/stage-harness 的路線圖都用這一份。
   var FOOT_PAD = 24;
@@ -1251,29 +1253,40 @@
   }
   function sceneFor(L) { return { L: L, layout: L, W: L.size && L.size[0], H: L.size && L.size[1], state: {}, t: 0, rt: 0, frame: 0, card: function () { return null; } }; }
   function standing(o, PR) { var sp = PR[o.type], ly = propLayerO(o, PR); return !!sp && !o.hidden && ly !== 'wall' && ly !== 'bg' && ly !== 'fx'; }
-  // 一件站立道具的腳下範圍 [x, y, w, h]（見上）；量不到就退回 foot；兩個都沒有回 null
-  function propFoot(o, PR, S, walkBehind) {
+  // 一件站立道具的腳下範圍：矩形陣列 [[x, y, w, h]…]（見上；沒有口袋＝一個矩形）；量不到就退回 foot；兩個都沒有回 null。
+  // behind＝[xa, xb]：口袋（見上）——回地面那塊＋口袋左右兩段畫出來的部分
+  function propFoot(o, PR, S, behind) {
     PR = PR || O34.PROPS; var sp = PR[o.type]; if (!sp) return null;
     var f = sp.foot ? sp.foot(o) : null, d = drawnExtent(o, PR, S || {});
-    if (!d) return f ? f.slice() : null;
-    var fy = o.y != null ? o.y : d.bottom, x0 = d.x0, x1 = d.x1, y0 = walkBehind && f ? f[1] : d.top, y1 = Math.max(fy, d.bottom);
-    if (walkBehind && !f) y0 = fy - (o.d || 0);
+    if (!d) return f ? [f.slice()] : null;
+    var fy = o.y != null ? o.y : d.bottom, x0 = d.x0, x1 = d.x1, y0 = d.top, y1 = Math.max(fy, d.bottom);
     if (f) { x0 = Math.min(x0, f[0]); x1 = Math.max(x1, f[0] + f[2]); y0 = Math.min(y0, f[1]); y1 = Math.max(y1, f[1] + f[3]); }
-    return [x0, y0, x1 - x0, y1 - y0];
+    if (!behind) return [[x0, y0, x1 - x0, y1 - y0]];
+    var fb = f ? f[1] : fy - (o.d || 0), xa = Math.max(x0, behind[0]), xb = Math.min(x1, behind[1]), out = [[x0, fb, x1 - x0, y1 - fb]];
+    if (xa > x0) out.push([x0, y0, xa - x0, fb - y0]);
+    if (xb < x1) out.push([xb, y0, x1 - xb, fb - y0]);
+    return out;
   }
-  // 整間店的腳下範圍：[{ id, props:[道具 id…], rects:[[x,y,w,h]…], poly:[[x,y]…], box, walkBehind? }]（站立、沒 hidden、block 不是 false 的道具；
+  // 口袋那一條（不加邊）：[x, y, w, h]｜null（給 check-shops：只有站在口袋裡的人的路線可以進去）
+  function pocketRect(o, PR, S, behind) {
+    PR = PR || O34.PROPS; var sp = PR[o.type], d = sp && drawnExtent(o, PR, S || {}), f = sp && sp.foot ? sp.foot(o) : null; if (!d || !behind) return null;
+    var fb = f ? f[1] : o.y - (o.d || 0), xa = Math.max(d.x0, behind[0]), xb = Math.min(d.x1, behind[1]);
+    return xb > xa && fb > d.top ? [xa, d.top, xb - xa, fb - d.top] : null;
+  }
+  // 整間店的腳下範圍：[{ id, props:[道具 id…], rects:[[x,y,w,h]…], poly:[[x,y]…], box, behind?:[xa,xb], pocket?:[x,y,w,h] }]（站立、沒 hidden、block 不是 false 的道具；
   // 群組＝一塊多邊形）。PR 預設 O34.PROPS；margin＝[mx,my]（或 function(那一塊的 id) → [mx,my]）時每個成員矩形先往外加邊再合（navObstacles 用）
   function footprints(L, PR, margin) {
-    PR = PR || O34.PROPS; var S = sceneFor(L), F = L.footprints || {}, groups = F.groups || {}, wb = {}, gOf = {}, out = [], byG = {};
-    (F.walkBehind || []).forEach(function (id) { wb[id] = true; });
+    PR = PR || O34.PROPS; var S = sceneFor(L), F = L.footprints || {}, groups = F.groups || {}, bh = F.behind || {}, gOf = {}, out = [], byG = {};
     Object.keys(groups).forEach(function (g) { (groups[g] || []).forEach(function (id) { gOf[id] = g; }); });
     (L.props || []).forEach(function (o, i) {
       if (!standing(o, PR) || o.block === false) return;
-      var id = o.id || (o.type + '#' + i), r = propFoot(o, PR, S, !!wb[id]); if (!r) return;
+      var id = o.id || (o.type + '#' + i), b = Array.isArray(bh[id]) ? bh[id] : null, rs = propFoot(o, PR, S, b); if (!rs) return;
       var g = gOf[id], m = typeof margin === 'function' ? margin(g || id) : margin, mx = m ? m[0] : 0, my = m ? m[1] : 0;
-      if (mx || my) r = [r[0] - mx, r[1] - my, r[2] + 2 * mx, r[3] + 2 * my];
-      if (g) { if (!byG[g]) { byG[g] = { id: g, props: [], rects: [] }; out.push(byG[g]); } byG[g].props.push(id); byG[g].rects.push(r); return; }
-      out.push({ id: id, props: [id], rects: [r], walkBehind: !!wb[id] });
+      if (mx || my) rs = rs.map(function (r) { return [r[0] - mx, r[1] - my, r[2] + 2 * mx, r[3] + 2 * my]; });
+      if (g) { if (!byG[g]) { byG[g] = { id: g, props: [], rects: [] }; out.push(byG[g]); } byG[g].props.push(id); rs.forEach(function (r) { byG[g].rects.push(r); }); return; }
+      var e = { id: id, props: [id], rects: rs };
+      if (b) { e.behind = b.slice(); e.pocket = pocketRect(o, PR, S, b); }
+      out.push(e);
     });
     out.forEach(function (f) { f.poly = f.rects.length === 1 ? rectPoly(f.rects[0]) : rectsPoly(f.rects); f.gap = f.poly.gapFix || 0; f.box = polyBox(f.poly); });
     return out;
@@ -2329,7 +2342,7 @@
   // strict：走不到就丟錯（Node 測試設 DipShop.strict＝true；瀏覽器用 ?strict=1 開，SPEC-v4 §2.4.5）
   var EXPORTS = { mount: mount, defProp: defProp, hook: hook, HOOKS: HOOKS, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, HANDAT: HANDAT, armRows: armRows, bayer: bayer, seeded: seeded,
     defO: defO, hookO: hookO, O34: O34, OPainter: OPainter, navRoute: navRoute, navObstacles: navObstacles, navClear: navClear, navFallback: navFallback, segHitsRect: segHitsRect,
-    segHitsPoly: segHitsPoly, inPoly: inPoly, rectPoly: rectPoly, rectsPoly: rectsPoly, inObs: inObs, segHitsObs: segHitsObs, drawnExtent: drawnExtent, propFoot: propFoot, footprints: footprints,
+    segHitsPoly: segHitsPoly, inPoly: inPoly, rectPoly: rectPoly, rectsPoly: rectsPoly, inObs: inObs, segHitsObs: segHitsObs, drawnExtent: drawnExtent, propFoot: propFoot, pocketRect: pocketRect, footprints: footprints,
     buildHotList: buildHotList, hitPick: hitPick, hitTop: hitTop, hotRegion: hotRegion, regionCenter: regionCenter, regionOutline: regionOutline, followHot: followHot, propVisBox: propVisBox,
     strict: false, version: '4.0' };
   try { if (typeof location !== 'undefined' && /[?&]strict=1(&|$)/.test(location.search || '')) EXPORTS.strict = true; } catch (_) {}

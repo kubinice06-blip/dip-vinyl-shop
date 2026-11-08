@@ -435,11 +435,19 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   const own = { counter: 'counter', deck: 'deck', backbin: 'backbin', booth: 'booth', 'crate-sale': 'crate-sale', 'crate-noise': 'crate-noise', shelving: 'shelving' };
   for (const o of dip.props) if (/^isl-|^crate-(jazz|tw)$/.test(o.id || '')) own[o.id] = 'island';
   for (const [id, fid] of Object.entries(own)) {
-    const o = P(id), f = F(fid), px = maskOfProp(o), wb = (dip.footprints.walkBehind || []).includes(id), fy = o.y - o.d;
-    const miss = px.filter(([x, y]) => (!wb || y >= fy) && !DS.inPoly([x + 0.5, y + 0.5], f.poly));
-    ok(px.length > 50 && miss.length === 0, id + '：畫出來的每一格都在腳下範圍（' + fid + '）裡' + (wb ? '（walkBehind：地面那塊以前）' : ''), miss.slice(0, 4));
-    if (wb) { const xs = px.map(p => p[0]); ok(f.box[0] <= Math.min(...xs) && f.box[0] + f.box[2] >= Math.max(...xs) + 1 && f.box[1] <= fy, id + '：左右照畫出來的、上緣不晚於地面那塊', [f.box, Math.min(...xs), Math.max(...xs)]); }
+    const o = P(id), f = F(fid), px = maskOfProp(o), bx = (dip.footprints.behind || {})[id], fy = o.y - o.d;
+    const inPocket = ([x, y]) => bx && y < fy && x + 0.5 > bx[0] && x + 0.5 < bx[1];   // 口袋（老闆站的那一條）不算
+    const miss = px.filter(p => !inPocket(p) && !DS.inPoly([p[0] + 0.5, p[1] + 0.5], f.poly));
+    ok(px.length > 50 && miss.length === 0, id + '：畫出來的每一格都在腳下範圍（' + fid + '）裡' + (bx ? '（口袋 x ' + bx.join('–') + ' 以外）' : ''), miss.slice(0, 4));
   }
+  // 口袋：櫃檯整個寬（老闆在櫃檯後面走動：spots.counter）、唱盤台只有轉盤那一段（ref／between／map），兩側照擋
+  eq(dip.footprints.behind, { counter: [212, 284], deck: [134, 158] }, '口袋：櫃檯 212–284、唱盤台 134–158（轉盤正後面）');
+  const dk = F('deck'), dkTop = DS.drawnExtent(P('deck'), DS.O34.PROPS, { L: dip, state: {}, card: () => null }).top;
+  ok(DS.inPoly([125, dkTop + 3], dk.poly) && DS.inPoly([166, dkTop + 3], dk.poly) && !DS.inPoly([146, dkTop + 3], dk.poly), '唱盤台兩側後面擋、轉盤後面是口袋', dk.poly);
+  for (const k of ['ref', 'between', 'map']) ok(dk.pocket && DS.inPoly(dip.spots[k], DS.rectPoly(dk.pocket)), k + ' 在唱盤台的口袋裡', [dip.spots[k], dk.pocket]);
+  ok(DS.inPoly(dip.spots.counter, DS.rectPoly(F('counter').pocket)), 'spots.counter 在櫃檯的口袋裡');
+  // visit、near 原本在唱盤台畫出來的範圍裡（v4 把唱盤台移到 y316 之後）→ 移到旁邊；E5／E8 老闆走到 visit 看著你（duelP）
+  eq([dip.spots.visit, dip.spots.near], [[180, 292], [112, 292]], 'visit、near 移到唱盤台旁邊（FIXLIST 1）');
   // 中島最上排（R&B／OST）畫出來的上緣：箱身與唱片 y≈104–106；腳下範圍從那裡起算（原本的 foot 只從 y128 起＝店主看到的「走在箱子上」）
   ok(isl.box[1] <= 106 && isl.box[0] <= 97 && isl.box[0] + isl.box[2] >= 185 && isl.box[1] + isl.box[3] >= 262, '中島腳下範圍 x 97–185、y ≤106–262', isl.box);
   // 後走道：後牆矮櫃（民謠）與窗下矮櫃前緣以後、中島上緣以前；mid、leaving 站在這裡（不被中島擋住腳）
@@ -459,17 +467,19 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
     if (need === 'R') ok(r.pts.some(rightAisle) && r.pts.some(corridor), a + '→' + b + ' 經過右側走道與後走道', r.pts);
     if (need === 'L') ok(r.pts.some(leftAisle), a + '→' + b + ' 經過左側走道', r.pts);
   }
-  // 抓得到：舊站位（站在最上排箱子畫出來的範圍裡）、舊路點 [146,110]、舊路線 sale→pay 那一段 [90,124]→[192,124]、拿掉 walkBehind（老闆站進櫃檯裡）、walkBehind 放在箱子上、群組有不存在的 id
+  // 抓得到：舊站位（站在最上排箱子畫出來的範圍裡）、舊路點 [146,110]、舊路線 sale→pay 那一段 [90,124]→[192,124]、拿掉櫃檯的口袋（老闆站進櫃檯裡）、
+  // 唱盤台整個寬都是口袋（別人的路線從唱盤台上走過去）、口袋放在箱子上、群組有不存在的 id
   const bad1 = JSON.parse(JSON.stringify(dip)); bad1.spots.leaving = [150, 110]; bad1.spots.mid = [96, 112]; bad1.nav.push([146, 110]);
   const r1 = CS.checkLayout(bad1, 'shops/dip.json', lib, cards, content).problems;
   ok(r1.some(p => /spots\.leaving 站在家具裡 island/.test(p)) && r1.some(p => /spots\.mid 站在家具裡 island/.test(p)) && r1.some(p => /nav\[\d+\] 在家具裡 \[146,110\]/.test(p)), '抓得到 A2 的舊站位與舊路點（站在中島最上排）', r1.slice(0, 4));
   const h1 = CS.routeHitsFeet(DS, [[90, 124], [192, 124]], CS.footprints(dip, DS.O34.PROPS));
   ok(h1 && h1.id === 'island', '抓得到 A2 路線圖 13（sale→pay）那一段 [90,124]→[192,124] 穿過中島', h1);
   ok(!CS.routeHitsFeet(DS, [[90, 124], [192, 124]], dip.props.filter(o => /^isl-/.test(o.id)).map(o => [o.id, DS.O34.PROPS.binTable.foot(o)])), '（對照：舊的 foot 只框地面那塊，這一段抓不到）');
-  const bad2 = JSON.parse(JSON.stringify(dip)); bad2.footprints.walkBehind = ['deck', 'isl-0a']; bad2.footprints.margin = { island: [8, 2], nope: [1, 1], booth: [3] }; bad2.footprints.groups.island = bad2.footprints.groups.island.filter(i => i !== 'isl-0a').concat(['nope']);
+  const bad2 = JSON.parse(JSON.stringify(dip)); bad2.footprints.behind = { deck: [100, 200], 'isl-0b': [150, 160], booth: [0, 1] }; bad2.footprints.margin = { island: [8, 2], nope: [1, 1], booth: [3] }; bad2.footprints.groups.island = bad2.footprints.groups.island.filter(i => i !== 'isl-0a').concat(['nope']);
   const r2 = CS.checkLayout(bad2, 'shops/dip.json', lib, cards, content).problems;
-  ok(r2.some(p => /spots\.counter 站在家具裡 counter/.test(p)), '拿掉櫃檯的 walkBehind：老闆的站位在櫃檯畫出來的範圍裡 → 抓得到', r2.slice(0, 3));
-  ok(r2.some(p => /walkBehind：isl-0a.*不是櫃檯或唱盤台/.test(p)) && r2.some(p => /groups\.island：沒有道具 nope/.test(p)), '抓得到 walkBehind 放在箱子上、群組有不存在的 id', r2.slice(0, 5));
+  ok(r2.some(p => /spots\.counter 站在家具裡 counter/.test(p)), '拿掉櫃檯的口袋：老闆的站位在櫃檯畫出來的範圍裡 → 抓得到', r2.slice(0, 3));
+  ok(r2.some(p => /從 deck 後面的口袋穿過/.test(p)), '唱盤台整個寬都是口袋：別人的路線從唱盤台後面（台上）穿過 → 抓得到', r2.filter(p => /口袋/.test(p)).slice(0, 2));
+  ok(r2.some(p => /behind：isl-0b 不能同時在群組裡/.test(p)) && r2.some(p => /behind\.booth：口袋是空的/.test(p)) && r2.some(p => /groups\.island：沒有道具 nope/.test(p)), '抓得到口袋放在箱子上、口袋是空的、群組有不存在的 id', r2.slice(0, 6));
   ok(r2.some(p => /footprints\.margin：沒有這一塊 nope/.test(p)) && r2.some(p => /footprints\.margin\.booth 要是/.test(p)), '抓得到壞的 footprints.margin', r2.slice(0, 8));
   // 中島兩側走道多留 3 格（footprints.margin.island）：避障框比腳下範圍左右各多 8 格
   const oIsl = DS.navObstacles(dip).find(o => o.id === 'island');
