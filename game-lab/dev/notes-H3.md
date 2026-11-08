@@ -20,8 +20,8 @@
 - [x] RV11-5 雙擊疊著那排——同一點 320 ms／24 px 內的第二下不算（90–260 ms 都只攤開）；別的位置照收（G8 照舊浮起）；教學剛攤開 350 ms 內點遮罩不罵（四尺寸 warn false）
 - [x] RV11-6 長按屬性鈕＝出牌——LP_SEL 加 .ab：按住 450 ms 跳「經典 2 星」小字、放開那下吞掉；之後一般點照常出牌
 - [x] ?v= 加一（43→44；dip-character／dip-player 跟主站不動）、README
-- [ ] 全部檢查
-- [ ] 截圖 dev/shots/hand5/
+- [~] 全部檢查——單元 engine 2040482／tutorial 182142／shop 1280／hit 343／chars 30061 全 0 失敗；sim --n 3000 22/22；lint-copy 過（LINES-REVIEW 重產沒變）；check-content／shops／covers OK。e2e 四尺寸在跑：scratchpad/v4/H3/runall.sh → run1/（spec LAB_FULL=1 → duel → prologue×4 → econ → taps title,night）
+- [ ] 截圖 dev/shots/hand5/（腳本 scratchpad/v4/H3/shots.mjs，e2e 跑完再拍）
 
 ## 記錄
 - RV11-1：cardinfo.js open() 加 armed（面板裡 pointerdown 過才收 click；detail 0＝鍵盤／el.click() 照常）。lpmap 390／360 全部 stillOpen=true，lppop 不再開 Spotify 分頁；e2e.spec #18（390）PASS（hand／ace／spread／lifted）。
