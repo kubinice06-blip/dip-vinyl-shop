@@ -8,14 +8,15 @@
 只准修 bug：`stage.js`、`shop.js`、`shop-props.js`、`shop.css`、`shops/dip.json`、`fx.js`。
 
 ## 進度
-- [ ] econ.js（configure／openBin／openBargain／bargainPick／openRelicShop／moneyHTML／isOpen／close）
-- [ ] econ.css
-- [ ] dev/econ-harness.html（掛舞台＋假 run：$800、包包 8、今晚的貨；四種面板各自打得開）
-- [ ] tests/e2e-econ.mjs（四尺寸 390x664,375x548,430x932,360x640）
+- [x] econ.js（configure／openBin／openBargain／bargainPick／openRelicShop／moneyHTML／isOpen／close＋debug）— 3845e795e、04e2fbc8e
+- [x] econ.css
+- [x] dev/econ-harness.html（掛舞台＋假 run：$800、包包 8、配件 2、今晚的貨；四種面板各自打得開；?mode=night|pick|prologue|duel|title）
+- [x] tests/e2e-econ.mjs（14 項 × 四尺寸 390x664,375x548,430x932,360x640）— 56/56
 - [ ] 段 5 後半截圖（390x664、430x932）
+- [ ] 收尾：通讀、lint-copy 試掃 econ.js、notes 請求段
 
 ## 下一步
-- 開工：寫 econ.js。
+- 截圖腳本（scratchpad b3/shots.cjs）→ game-lab/dev/shots/B3/。
 
 ## 測試結果
 
