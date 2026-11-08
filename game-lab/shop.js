@@ -1292,14 +1292,15 @@
     return best;
   }
   // 可見區（不在任何更前面的形狀裡）：在 clip=[x,y,w,h] 內，最上面就是 h 的格子。回 { box:[x0,y0,w,h], m:Uint8Array, n }
-  function hotRegion(hots, h, clip) {
+  // withSubs：子熱點蓋住的那幾格也算（描框用：後牆矮櫃的框圍住整個櫃子，不在每張封面周圍挖洞）
+  function hotRegion(hots, h, clip, withSubs) {
     if (!h || h.gone || !h.shape) return null;
     var b = shapeBox(h.shape), x0 = Math.max(b[0], clip ? clip[0] : -1e9), y0 = Math.max(b[1], clip ? clip[1] : -1e9);
     var x1 = Math.min(b[0] + b[2], clip ? clip[0] + clip[2] : 1e9), y1 = Math.min(b[1] + b[3], clip ? clip[1] + clip[3] : 1e9);
     if (x1 <= x0 || y1 <= y0) return null;
     var w = x1 - x0, hh = y1 - y0, m = new Uint8Array(w * hh), n = 0;
     var cand = hots.filter(function (q) { return q === h || (!q.gone && q.shape && hotBefore(q, h) && q.shape.some(function (r) { return r[0] < x1 && r[0] + r[2] > x0 && r[1] < y1 && r[1] + r[3] > y0; })); });
-    for (var y = y0; y < y1; y++) for (var x = x0; x < x1; x++) { if (hitTop(cand, x, y) === h) { m[(y - y0) * w + (x - x0)] = 1; n++; } }
+    for (var y = y0; y < y1; y++) for (var x = x0; x < x1; x++) { var t = hitTop(cand, x, y); if (t === h || (withSubs && t && t.sub && t.parent === h.id && inShape(h, x, y))) { m[(y - y0) * w + (x - x0)] = 1; n++; } }
     return n ? { box: [x0, y0, w, hh], m: m, n: n } : null;
   }
   // 可見區裡「最裡面」的一格（離邊界最遠；並列取離重心最近）：真點一定點得到、四捨五入也不會滑出去
@@ -1705,7 +1706,7 @@
     // 熱點看得到的那一塊的外框（快取在 h._ol：鏡頭、跟著人走的位置變了才重算）
     function outlineVis(h, c1, c2, ph) {
       var key = vy + ',' + vh + ',' + h.rect.join(',');
-      if (!h._ol || h._olKey !== key) { h._ol = regionOutline(visRegion(h)); h._olKey = key; if (!h._ol.length) h._ol = null; }
+      if (!h._ol || h._olKey !== key) { syncFollow(); h._ol = regionOutline(hotRegion(hitList, h, [0, vy, W, vh], true)); h._olKey = key; if (!h._ol.length) h._ol = null; }
       if (!h._ol) { h.shape.forEach(function (r) { frame(r, c1, c2, ph); }); return; }
       h._ol.forEach(function (p) { P.p(p[0], p[1], ((p[0] + p[1] + ph) & 2) ? c2 : c1); });
     }
@@ -1884,6 +1885,9 @@
     view.addEventListener('pointermove', onMove);
     view.addEventListener('pointerleave', onLeave);
     view.addEventListener('pointercancel', function () { down = null; unpress(); });
+    // 手機 Chrome 的「觸控調整」（touch adjustment）只把有 click／mouse 監聽的元素當成點得到的目標：畫布只有 pointer 監聽時，
+    // 點在舞台上緣附近會被吸到頂列的「捏角色」連結（e2e-taps 375×548 抓到）。掛一個空的 click 讓畫布自己就是點擊目標。
+    view.addEventListener('click', function () {});
 
     // ---------------- 迴圈（10 fps；唱盤區演出時每個 rAF 都畫）；分頁藏起來時停
     var last = 0, raf = 0, t0 = now(), fixedT = opts.fixedTime, tPaused = 0, fastN = 0, ticks = [];
