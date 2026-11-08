@@ -20,8 +20,15 @@
 //   15 包包沒滿、錢不夠但賣一張就夠（SPEC §2.5.6 第 3 點）：鈕可按（「買 $400／先賣一張」）→ 子面板「錢不夠：先賣一張」、賣了也不夠的那張不給選 → 賣一張買到、包包張數不變；
 //      櫃檯配件同理（「先賣一件」，配件沒滿 3 件）
 //   14 所有面板（箱子、賣回、特價兩種、櫃檯、配件賣回、錢不夠先賣）不捲出畫面、鈕 ≥44 高；主控台 0 錯誤（最後跑）
+//
+// index.html（整合後：ui.js 已經 configure 經濟介面、載入 econ.css／econ.js；沒接上就印 SKIP、不算失敗；ECON_INDEX=0 不跑）：
+//   21 今晚來客：錢那一格＝econ 的 moneyHTML、跟 run.money 一樣；DipLabEcon 已 configure；econ.css 有載入
+//   22 真點舞台上的箱子 → 你走到那一箱的 stand 才開抽屜；抽屜 ≤50%、不溢出、鈕 ≥44；那一箱沒被抽屜蓋到
+//   23 買一張 → run.money 減價格；點抽屜外面關掉 → 今晚來客重畫：錢那一格、包包 n/8 跟著變；存檔（localStorage）也是新的錢
+//   24 真點櫃檯 → 走到櫃檯前、配件面板（2–3 件）；✕ 關掉
+//   25 真點特價箱（已挑過）→ $100 模式；✕ 關掉；整段主控台 0 錯誤、本機檔案沒有 4xx
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
-import { launch, newPage, SIZES, record, results, sleep } from './e2e-lib.mjs';
+import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen } from './e2e-lib.mjs';
 
 const HURL = (() => {
   const u = process.env.LAB_URL;
@@ -47,7 +54,7 @@ async function tapSel(page, sel) {
 // 舞台上真點某個熱點（shop.hotPoints 給的「一定點得到」那一點）
 async function tapHot(page, id) {
   const p = await page.evaluate(id => {
-    const st = window.H.stage, hb = st.host.getBoundingClientRect(), q = st.shop.hotPoints().find(x => x.id === id);
+    const st = window.H ? window.H.stage : window.__lab.stage, hb = st.host.getBoundingClientRect(), q = st.shop.hotPoints().find(x => x.id === id);
     return q ? [hb.left + q.x, hb.top + q.y] : null;
   }, id);
   if (!p) throw new Error('沒有熱點 ' + id);
@@ -79,7 +86,7 @@ async function measure(page) {
 async function shown(page, hotId) {
   await sleep(450);
   return page.evaluate(id => {
-    const st = window.H.stage, v = st.view(), hot = st.hotspots().find(x => x.id === id), el = document.querySelector('.ec-drawer');
+    const st = window.H ? window.H.stage : window.__lab.stage, v = st.view(), hot = st.hotspots().find(x => x.id === id), el = document.querySelector('.ec-drawer');
     if (!hot || !el) return { ok: false, why: !hot ? '沒有熱點' : '沒有抽屜' };
     const dr = el.getBoundingClientRect(), full = st.shop.rectOf(hot.rect), host = st.host.getBoundingClientRect();
     const inView = hot.rect[1] >= v.y && hot.rect[1] + hot.rect[3] <= v.y + v.h;
@@ -421,9 +428,136 @@ async function runSize(browser, w, h) {
   }
 }
 
+// ======================================================================= index.html（整合後）
+const IURL = /econ-harness/.test(URL0) ? new URL('../index.html', URL0).href : URL0.replace(/\?.*$/, '');
+const IQ = IURL + '?debug=1&seed=20261106';
+// 一份 v4 存檔（同 e2e.spec 的 seedRun4）：今晚、特價箱已挑、錢 money
+async function seedNight(page, money) {
+  await page.evaluate(money => {
+    const E = window.DipLabEngine, C = window.DipLabContent;
+    const r = E.newRun(C, { seedKey: '20261106', nightNo: 1, ace: 'pearl', prologue: false, relics: [] });
+    r.tut = false;
+    const ch = E.bargainPolicy(r, C); if (ch) E.choose(r, C, ch);
+    r.money = money;
+    const s = { v: 4, seen: { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, nights: [],
+      best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false }, tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
+    [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
+    localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
+  }, money);
+}
+async function openTitleI(page) {
+  await page.goto(IQ, { waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('[data-a=push],[data-a=cont]', { state: 'visible', timeout: 10000 });
+  await page.waitForFunction(() => !document.body.classList.contains('stage-wait'), null, { timeout: 6000 }).catch(() => {});
+  await sleep(500);
+}
+// 舞台上真點第一個「看得到、最上層是畫布」的熱點（同 e2e.spec 的 tapHot）
+async function tapHotWhere(page, pred) {
+  const p = await page.evaluate(src => {
+    const st = window.__lab.stage, sh = st.shop, hb = st.host.getBoundingClientRect(), f = new Function('h', 'return (' + src + ')(h)');
+    const byId = {}; (st.hotspots() || []).forEach(h => { byId[h.id] = h; });
+    for (const q of sh.hotPoints()) {
+      const h = byId[q.id]; if (!h || !f(h)) continue;
+      const x = hb.left + q.x, y = hb.top + q.y;
+      if (y < 0 || y > innerHeight || x < 0 || x > innerWidth || document.elementFromPoint(x, y) !== sh.canvas) continue;
+      return { x, y, id: h.id, action: h.action };
+    }
+    return null;
+  }, String(pred));
+  if (!p) return null;
+  await page.touchscreen.tap(p.x, p.y);
+  return p;
+}
+const nightLine = page => page.evaluate(() => ({ money: ((document.querySelector('[data-tut=money]') || {}).textContent || '').trim(), ec: !!document.querySelector('[data-tut=money] .ec-money'),
+  bag: ((document.querySelector('.lb-bagline [data-a=bag]') || {}).textContent || '').replace(/\s+/g, ''), run: window.__lab.run && { money: window.__lab.run.money, bag: window.__lab.run.bag.length },
+  saved: (() => { try { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return s && s.run ? s.run.money : null; } catch (_) { return null; } })() }));
+async function runIndex(browser, w, h) {
+  const size = `${w}x${h}`;
+  const { ctx, page } = await newPage(browser, w, h);
+  const T = async (n, fn) => { try { await fn(); } catch (e) { record(n, size, false, 'exception: ' + e.message.split('\n')[0]); } };
+  try {
+    await openTitleI(page);
+    const wired = await page.evaluate(() => !!(window.__lab && window.DipLabEcon && document.querySelector('script[src*="econ.js"]')));
+    if (!wired) return false;
+    await seedNight(page, 800);
+    await openTitleI(page);
+    await jsClick(page, '[data-a=cont]');
+    if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了今晚來客（' + (await page.evaluate(() => window.__lab.screen())) + '）');
+    await sleep(1500);
+    await T(21, async () => {
+      const r = await nightLine(page), d = await page.evaluate(() => window.DipLabEcon.debug());
+      const css = await page.evaluate(() => [...document.styleSheets].some(s => /econ\.css/.test(s.href || '')));
+      record(21, size, r.ec && r.money === '$' + r.run.money && d.cfg && css, `錢那一格「${r.money}」（run $${r.run.money}；econ 的 moneyHTML ${r.ec}）；DipLabEcon configure ${d.cfg}；econ.css ${css}`);
+    });
+    let hot = null;
+    await T(22, async () => {
+      hot = await tapHotWhere(page, h => /^crate:/.test(h.action || '') && h.action !== 'crate:sale');
+      if (!hot) throw new Error('今晚來客的舞台上沒有點得到的箱子');
+      const key = hot.action.slice(6);
+      await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer'), null, { timeout: 12000 });
+      await sleep(400);
+      const r = await page.evaluate(key => { const st = window.__lab.stage, b = st.bins().find(x => x.key === key), a = st.pos('p'); return { stand: b && b.stand, p: [Math.round(a.x), Math.round(a.y)], d: window.DipLabEcon.debug() }; }, key);
+      const m = await measure(page), [pok, ps] = panelOk(m, '箱子抽屜'), vis = await shown(page, hot.id);
+      const at = r.stand && Math.abs(r.p[0] - r.stand[0]) <= 1 && Math.abs(r.p[1] - r.stand[1]) <= 1;
+      record(22, size, r.d.kind === 'bin' && r.d.key === key && r.d.mode === 'buy' && at && pok && vis.ok, `真點 ${hot.id}（${hot.action}）→ 抽屜 ${r.d.kind}/${r.d.key}/${r.d.mode}；你在 [${r.p}]（stand ${r.stand}）；${ps}；${vis.why}`);
+    });
+    await T(23, async () => {
+      if (!hot) throw new Error('#22 沒開成');
+      const l0 = await nightLine(page), d0 = await page.evaluate(() => window.DipLabEcon.debug()), id = d0.ids[d0.idx];
+      const price = await page.evaluate(id => window.DipLabEngine.priceOf(window.DipLabContent, id), id);
+      await tapSel(page, '.ec-drawer [data-a=buy]'); await sleep(400);
+      const mid = await page.evaluate(() => ({ money: window.__lab.run.money, bag: window.__lab.run.bag.length, ids: window.DipLabEcon.debug().ids }));
+      const top = await page.evaluate(() => document.querySelector('.ec-drawer').getBoundingClientRect().top);
+      await tapXY(page, w / 2, Math.max(60, top - 60));
+      await page.waitForFunction(() => !window.DipLabEcon.isOpen() && !document.querySelector('.ec-drawer'), null, { timeout: 4000 });
+      await sleep(900);
+      const l1 = await nightLine(page), scr = await page.evaluate(() => window.__lab.screen());
+      const ok = mid.money === l0.run.money - price && mid.bag === l0.run.bag + 1 && !mid.ids.includes(id) && scr === 'night' &&
+        l1.money === '$' + mid.money && l1.bag === '包包' + mid.bag + '/8' && l1.saved === mid.money;
+      record(23, size, ok, `買 ${id}（$${price}）：$${l0.run.money} → $${mid.money}、包包 ${l0.run.bag} → ${mid.bag}；點外面關 → ${scr}：錢那一格「${l0.money}」→「${l1.money}」、「${l0.bag}」→「${l1.bag}」、存檔 $${l1.saved}`);
+    });
+    await T(24, async () => {
+      await sleep(600);
+      const ht = await tapHotWhere(page, h => h.id === 'counter' || h.action === 'counter');
+      if (!ht) throw new Error('點不到櫃檯');
+      await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer'), null, { timeout: 12000 });
+      await sleep(400);
+      const r = await page.evaluate(() => { const st = window.__lab.stage, a = st.pos('p'), s = st.spot('pay'); return { p: [Math.round(a.x), Math.round(a.y)], pay: s, d: window.DipLabEcon.debug(), n: document.querySelectorAll('.ec-drawer [data-a=rbuy]').length }; });
+      const m = await measure(page), [pok, ps] = panelOk(m, '櫃檯'), vis = await shown(page, ht.id);
+      const at = Math.abs(r.p[0] - r.pay[0]) <= 1 && Math.abs(r.p[1] - r.pay[1]) <= 1;
+      await tapSel(page, '.ec-drawer [data-a=close]');
+      const closed = await page.waitForFunction(() => !window.DipLabEcon.isOpen() && !document.querySelector('.ec-drawer'), null, { timeout: 4000 }).then(() => true, () => false);
+      record(24, size, r.d.kind === 'relic' && r.d.mode === 'buy' && r.n >= 2 && r.n <= 3 && at && pok && vis.ok && closed, `真點 ${ht.id} → ${r.d.kind}（${r.n} 件）；你在 [${r.p}]（pay ${r.pay}）；${ps}；${vis.why}；✕ 關掉 ${closed}`);
+    });
+    await T(25, async () => {
+      await sleep(900);
+      const hs = await tapHotWhere(page, h => h.action === 'crate:sale');
+      if (!hs) throw new Error('點不到特價箱');
+      await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer'), null, { timeout: 12000 });
+      await sleep(400);
+      const d = await page.evaluate(() => window.DipLabEcon.debug()), lab = ((await page.locator('.ec-drawer [data-a=bbuy]').innerText().catch(() => '')) || '').replace(/\s+/g, '');
+      const m = await measure(page), [pok, ps] = panelOk(m, '特價箱');
+      await tapSel(page, '.ec-drawer [data-a=close]');
+      const closed = await page.waitForFunction(() => !window.DipLabEcon.isOpen() && !document.querySelector('.ec-drawer'), null, { timeout: 4000 }).then(() => true, () => false);
+      await sleep(600);
+      const errs = page._errors.slice(), bad = page._badLocal.slice();
+      record(25, size, d.kind === 'bargain' && d.mode === 'buy' && /^\$100/.test(lab) && pok && closed && !errs.length && !bad.length,
+        `真點特價箱 → ${d.kind}/${d.mode}「${lab}」；${ps}；✕ 關掉 ${closed}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}；本機 4xx ${bad.length}${bad.length ? '：' + bad.slice(0, 3).join(' / ') : ''}`);
+    });
+    return true;
+  } finally {
+    await ctx.close();
+  }
+}
+
 const browser = await launch();
 try {
   for (const [w, h] of SIZES) await runSize(browser, w, h);
+  if (process.env.ECON_INDEX !== '0') {
+    for (const [w, h] of SIZES) {
+      if (!(await runIndex(browser, w, h))) { console.log(`SKIP  index.html（${IURL}）還沒接上經濟介面（沒有 econ.js 或 __lab）：#21–#25 等整合後再跑`); break; }
+    }
+  }
 } finally {
   await browser.close();
 }

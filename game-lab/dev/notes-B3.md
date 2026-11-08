@@ -17,7 +17,8 @@
 - 全部交件完成；剩店主看截圖後的修改。
 - **收尾補做（B3 FINISH，2026-11-08 第二趟）**：
   - [x] 包包沒滿、錢不夠但賣一張就夠 → 鈕可按、先賣一張（SPEC §2.5.6 第 3 點「錢不夠且賣一張也不夠 → 停用」；引擎 `buy` 本來就收沒滿時的 `sellId`）；配件同理（`buyRelic` 收沒滿時的 `sellRelicId`）；e2e 加 #15、#8 改成包包空（賣一張也湊不到）：**60/60 PASS**（四尺寸）
-  - [ ] index.html 版實測：scratchpad 臨時整合（B2 已提交的樹＋B3 的 econ），e2e-econ 加 index 模式（今晚來客真點箱子／櫃檯）
+  - [x] index.html 版實測：e2e-econ 加 #21–#25（index.html 今晚來客：錢那一格、真點箱子／櫃檯／特價箱、買了關掉後錢與包包重畫、存檔）；index.html 還沒接 econ.js 就印 SKIP（本樹＝SKIP、60/60）。
+    scratchpad 臨時整合（`git archive v4/B2 game-lab`＋B3 的 econ.js／econ.css／harness／e2e-econ＋根目錄 dip-character.js／dip-player.js／art 連結，port 8793；**沒提交、沒動 B2**）：**80/80 PASS**（四尺寸）
   - [ ] 「今晚來客有錢的樣子」截圖（用臨時整合的 index.html）
 
 ## 做法（給 B2／C）
