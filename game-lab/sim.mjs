@@ -1,10 +1,11 @@
 // game-lab/sim.mjs — v4 balance simulation + thresholds (SPEC-v4 §5.2; Agent A1).  Runs on the REAL engine.js / content.js / cards.js / bins.js.
-// Usage: node game-lab/sim.mjs [--n 3000] [--mode all|nights|fights] [--econ both|none|smart] [--json out.json]
+// Usage: node game-lab/sim.mjs [--n 3000] [--mode all|nights|fights] [--econ both|none|smart] [--json out.json] [--project-m2]
 //                              [--set mercy=false,threshold=2] [--hp '{"copycat":15}'] [--patch '{"economy":{"win":{"normal":250}}}']
 //                              [--policies thoughtful,high,...]
 //   --n       nights per cell (night tables) and fights per cell (single-fight tables)
 //   --econ    which shopPolicy mode(s) the night tables use; 'both' (default) is needed for S6
 //   --set     engine CFG overrides (numbers or true/false); --hp per-guest starting 聲望; --patch deep-merges into content (calibration trials)
+//   --project-m2  C.m2Swaps 的新卡還沒烘進 cards.js 時，用 ../seed_cards.json 的星數先換上（看 A3-M2 之後的數字）
 // Model (§5.2): first night = prologue man (no tutorial; bargain pick "one per colour, highest peak") → Fishmans + one of three prologue
 // relics (runPolicy) → 3 normals → 1 elite → boss, the owner pleads once (retry); shopPolicy(mode) before every guest.
 // Any failed threshold sets process.exitCode = 1.
@@ -34,6 +35,24 @@ if (arg('set', null)) for (const kv of arg('set').split(',')) {
 if (arg('hp', null)) { const o = JSON.parse(arg('hp')); for (const k in o) { if (!C.enemies[k]) throw new Error('unknown guest ' + k); C.enemies[k].hp = o[k]; } }
 const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) && t[k] && typeof t[k] === 'object') deepMerge(t[k], s[k]); else t[k] = s[k]; } return t; };
 if (arg('patch', null)) deepMerge(C, JSON.parse(arg('patch')));
+// --project-m2：C.m2Swaps 裡還沒烘進 cards.js 的新卡，用 ../seed_cards.json 的星數先放進來、換上牌單（只讀 seed；id 算法同 tools/bake-cards.mjs）
+const PROJECT_M2 = argv.includes('--project-m2');
+const projected = [];
+if (PROJECT_M2) {
+  const seed = JSON.parse(fs.readFileSync(path.join(HERE, '..', 'seed_cards.json'), 'utf8'));
+  const cardId = (a, b) => (a + '-' + b).normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC').toLowerCase()
+    .replace(/[^a-z0-9㐀-鿿぀-ヿ]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+  for (const g of Object.keys(C.m2Swaps || {})) for (const [oldId, newId] of C.m2Swaps[g]) {
+    if (!C.cards[newId]) {
+      const r = seed.find(x => cardId(x[0], x[1]) === newId);
+      if (!r) throw new Error('--project-m2: seed 裡找不到 ' + newId);
+      C.cards[newId] = { id: newId, artist: r[0], album: r[1], c: r[2], o: r[3], h: r[4], genres: r[5] || [], year: r[6], region: 'xx', projected: true };
+      projected.push(newId);
+    }
+    const d = C.enemies[g].deck, k = d.indexOf(oldId);
+    if (k >= 0) d[k] = newId;
+  }
+}
 
 const ALL_POLS = ['thoughtful', 'high', 'counterHint', 'formula', 'mirrorHint', 'random', 'oracle'];
 const POLS = arg('policies', ALL_POLS.join(',')).split(',').filter(Boolean);
@@ -149,7 +168,13 @@ function fightCell(fn, n) {
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
 const report = { N, ECON, CFG: Object.assign({}, CFG), hp: Object.fromEntries([MAN, ...GUESTS].map(k => [k, C.enemies[k].hp])), economy: C.economy,
-  relicPrices: Object.fromEntries(Object.keys(C.relics).map(k => [k, C.relics[k].price])) };
+  relicPrices: Object.fromEntries(Object.keys(C.relics).map(k => [k, C.relics[k].price])),
+  decks: Object.fromEntries([MAN, ...GUESTS].map(k => [k, C.enemies[k].deck.slice()])) };
+// A3-M2 換牌的狀態：還沒烘進 cards.js、也沒用 --project-m2 先模擬的 → 這次跑的是舊牌單
+const pendingM2 = Object.keys(C.m2Swaps || {}).flatMap(g => C.m2Swaps[g].filter(([o, n]) => C.enemies[g].deck.includes(o)).map(([o, n]) => `${g}: ${o} → ${n}`));
+report.m2 = { projected, pending: pendingM2 };
+if (projected.length) console.log(`（--project-m2：A3-M2 的 ${projected.length} 張新卡還沒烘，先用 seed 星數模擬：${projected.join('、')}）`);
+if (pendingM2.length) console.log(`（注意：A3-M2 換牌還沒生效，這次跑的是舊牌單——${pendingM2.length} 張：${pendingM2.join('；')}。看換牌後的數字用 --project-m2）`);
 const MODES = ECON === 'both' ? ['smart', 'none'] : [ECON];
 
 if (MODE === 'all' || MODE === 'nights') {

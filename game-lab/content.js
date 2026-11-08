@@ -88,6 +88,7 @@
   // ===================================================================
   // 發燒配件（9 件；全部被動、自動生效、最多帶 3 件；照 v3 帶到下一晚）
   //   desc＝說明（點圖示時看）；note＝生效那手結果行補的一句（engine 的 clash.notes[].text）；price＝櫃檯價（序章／獎勵拿到的只用來算賣回）
+  //   三件加成 1200 → 1000（sim 校準，S6；仍 > 5 星唱片 $800）
   //   boost＝出那色時 +1 星（engine outcome；王牌不加）；v4:false＝v4 哪裡都拿不到（engine newRun 濾掉）
   //   icon＝ui.js LAB_ICONS（roguelike.html PIX_ICONS_LV）的鍵；heavy180／numbered／matrix 由 B2 加進 LAB_ICONS
   //   序章收尾三選一：防塵套／黑膠唱針／洗碟水；菁英、藏家打贏：他丟過的唱片挑一張，或改拿 rewards.relicPool 裡的一件；櫃檯只賣三件加成
@@ -100,9 +101,9 @@
     testpress: { id: 'testpress', name: '神秘見本盤', icon: 'testpress', desc: '冷門剋中多扣 1。',       note: '神秘見本盤：多扣 1',  price: 1000, tag: '新' },
     // 〔補〕⚠規則：v3 效果靠名牌脾氣，v4 已無脾氣；新效果（第一手他不唬人）等店主決定，預設哪裡都拿不到（SPEC-v4 §2.2.6、§5.7 #7）
     headphone: { id: 'headphone', name: '監聽耳機',   icon: 'headphone', desc: '每場第一手他不唬人。',   note: '監聽耳機：他照實出',  price: 1000, v4: false, tag: '新' },
-    boost_c:   { id: 'boost_c',   name: '180g 重量盤', icon: 'heavy180', desc: '經典出招時 +1 星。',     note: '重量盤：+1 星',       price: 1200, boost: 'c', tag: '新' },
-    boost_o:   { id: 'boost_o',   name: '絕版編號標', icon: 'numbered',  desc: '冷門出招時 +1 星。',     note: '絕版編號標：+1 星',   price: 1200, boost: 'o', tag: '新' },
-    boost_h:   { id: 'boost_h',   name: '內圈刻字',   icon: 'matrix',    desc: '硬蕊出招時 +1 星。',     note: '內圈刻字：+1 星',     price: 1200, boost: 'h', tag: '新' }
+    boost_c:   { id: 'boost_c',   name: '180g 重量盤', icon: 'heavy180', desc: '經典出招時 +1 星。',     note: '重量盤：+1 星',       price: 1000, boost: 'c', tag: '新' },
+    boost_o:   { id: 'boost_o',   name: '絕版編號標', icon: 'numbered',  desc: '冷門出招時 +1 星。',     note: '絕版編號標：+1 星',   price: 1000, boost: 'o', tag: '新' },
+    boost_h:   { id: 'boost_h',   name: '內圈刻字',   icon: 'matrix',    desc: '硬蕊出招時 +1 星。',     note: '內圈刻字：+1 星',     price: 1000, boost: 'h', tag: '新' }
   };
   C.relicMax = 3;
   C.rewards = {
@@ -112,10 +113,10 @@
   C.relicShop = { pool: ['boost_c', 'boost_o', 'boost_h'] };     // 櫃檯只賣三件屬性加成（D §6）
 
   // ===================================================================
-  // 經濟（§2.2.5；一晚內有效，打烊歸零）。數字是起始值，由 sim.mjs 校準（只准動 SPEC-v4 §2.2.5 的旋鈕表）
+  // 經濟（§2.2.5；一晚內有效，打烊歸零）。sim.mjs --n 3000 校準後的值（只動 SPEC-v4 §2.2.5 的旋鈕表；D §6 的獎金與唱片價維持起始值）
   // ===================================================================
   C.economy = {
-    start: 0,                                                   // 〔補〕開局的錢
+    start: 300,                                                 // 〔補〕開局的錢（校準：0 → 300，讓「會買的」在第 3 位客人前買得起加成配件，S6）
     win:   { prologue: 0, normal: 300, elite: 500, boss: 0 },   // normal／elite＝D §6 起始值；prologue／boss＝〔補〕
     price: { 1: 100, 2: 100, 3: 200, 4: 400, 5: 800 },          // 價格看最高星；3–5★＝D §6 起始值；1、2★＝〔補〕
     sellRate: 0.5,                                              // 半價賣回
@@ -141,7 +142,7 @@
   C.nightTag = '新';
 
   // ===================================================================
-  // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望是起始值，由 sim.mjs 校準：一般 12–20、男子固定 10、教學 18）
+  // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望＝sim.mjs --n 3000 校準後的值（範圍 12–20；男子固定 10、教學 18），過程見 dev/notes-A1.md）
   //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖）；出招難度跟著場次走（C.plannerByDepth），客人沒有自己的 planner
   //   taste：三軸並列時的順序（只當並列順序）；deck：7 張真唱片（藏家 6 張＋你沒選的那張王牌，由 engine 加；男子 6 張）
   //   line：口頭禪（開場泡泡，= lines[id].line）；drop：序章男子打輸掉出來的那張
@@ -156,14 +157,14 @@
     },
     copycat: {
       id: 'copycat', name: '那張我有', title: '文青同好', spr: 'e1', avatar: null,
-      honesty: 'sometimes', hp: 14, taste: 'och',
+      honesty: 'sometimes', hp: 18, taste: 'och',
       deck: ['beach-house-teen-dream', 'weyes-blood-titanic-rising', 'mitski-be-the-cowboy', 'billie-eilish-when-we-all-fall-asleep-where-do-we-go',
         'low-double-negative', 'sophie-oil-of-every-pearl-s-un-insides', '大象體操-elephant-gym-角度'],
       voice: { freq: 523, wave: 'square' }
     },
     already: {
       id: 'already', name: '我早就聽過', title: '社團學長', spr: 'e2', avatar: null,
-      honesty: 'sometimes', hp: 14, taste: 'hco',
+      honesty: 'sometimes', hp: 17, taste: 'hco',
       deck: ['pauline-anna-strom-trans-millenia-consort', 'gigi-masin-wind', 'demetrio-stratos-metrodora',
         'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des', 'nocturnal-emissions-fruiting-body', 'eivind-aarset-electronique-noire',
         'yezda-urfa-boris'],
@@ -171,14 +172,14 @@
     },
     needle: {
       id: 'needle', name: '針壓強迫症', title: '品味行家', spr: 'e6', avatar: null,
-      honesty: 'sometimes', hp: 14, taste: 'coh',
+      honesty: 'sometimes', hp: 19, taste: 'coh',
       deck: ['steely-dan-gaucho', 'art-pepper-art-pepper-meets-the-rhythm-section', 'bill-evans-waltz-for-debby', 'kenny-burrell-midnight-blue',
         'roscoe-mitchell-sextet-sound', 'john-zorn-cobra', 'andrew-cyrille-what-about'],
       voice: { freq: 587, wave: 'triangle' }
     },
     skip: {
       id: 'skip', name: '跳針王', title: '二手店老闆', spr: 'e4', avatar: null,
-      honesty: 'sometimes', hp: 14, taste: 'coh',
+      honesty: 'sometimes', hp: 17, taste: 'coh',
       deck: ['mina-studio-uno-66', 'amalia-rodrigues-gostava-de-ser-quem-era', 'dorival-caymmi-caymmi-visita-tom',
         'washington-phillips-the-key-to-the-kingdom', 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri',
         'tony-scott-the-indonesian-all-stars-djanger-bali', 'barney-wilen-moshi'],
@@ -187,7 +188,7 @@
     broke: {
       id: 'broke', name: '月底吃土', title: null, spr: null,
       avatar: { head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' },
-      honesty: 'sometimes', hp: 14, taste: 'och',
+      honesty: 'sometimes', hp: 20, taste: 'och',
       deck: ['血肉果汁機-flesh-juicer-golden太子bro', '血肉果汁機-flesh-juicer-深海童話', '閃靈-失竊千年',
         '血肉果汁機-flesh-juicer-血肉宮建宮蓋廟演唱會', '閃靈-永劫輪迴', '閃靈-醒靈寺大決戰', '林強-驚蟄'],
       voice: { freq: 494, wave: 'square' }
@@ -195,28 +196,28 @@
     buyer: {
       id: 'buyer', name: '剁手黨', title: null, spr: null,
       avatar: { head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' },
-      honesty: 'sometimes', hp: 14, taste: 'coh',
+      honesty: 'sometimes', hp: 20, taste: 'coh',
       deck: ['swans-soundtracks-for-the-blind', 'venetian-snares-making-orange-things', 'nurse-with-wound-homotopy-to-marie',
         'ryoji-ikeda-mort-aux-vaches', 'sunn-o-white1', 'sigur-ros-von', 'william-basinski-the-disintegration-loops'],
       voice: { freq: 554, wave: 'square' }
     },
     label: {
       id: 'label', name: '冷門仙人', title: '地下廠牌主理人', spr: 'e5', avatar: null,
-      honesty: 'often', hp: 16, taste: 'ohc',
+      honesty: 'often', hp: 17, taste: 'ohc',
       deck: ['廢五金-廢五金', '明田川荘之-yamazaki-blues', '菊地雅章-end-for-the-beginning', 'keiji-haino-watashi-dake',
         'harry-roesli-gang-philosophy-gang', 'c-o-b-moyshe-mcstiff-and-the-tartan-lancers-of-the-sacred-he', 'pholas-dactylus-concerto-delle-menti'],
       elite: true, voice: { freq: 294, wave: 'sine' }
     },
     critic: {
       id: 'critic', name: '名盤守門員', title: '資深樂評', spr: 'e3', avatar: null,
-      honesty: 'often', hp: 16, taste: 'ohc',
+      honesty: 'often', hp: 20, taste: 'ohc',
       deck: ['tim-buckley-starsailor', 'throbbing-gristle-20-jazz-funk-greats', 'black-midi-schlagenheim', 'faust-faust-iv',
         'neu-neu', 'sun-ra-space-is-the-place', 'the-plastic-people-of-the-universe-egon-bondy-s-happy-hearts'],
       elite: true, voice: { freq: 392, wave: 'square' }
     },
     boss: {
       id: 'boss', name: '傳說藏家', title: null, spr: 'boss', avatar: null,
-      honesty: 'veteran', hp: 18, taste: 'coh',
+      honesty: 'veteran', hp: 16, taste: 'coh',
       deck: ['交工樂隊-我等就來唱山歌', 'ganelin-trio-ancora-da-capo', 'luis-russell-the-luis-russell-story-1929-1934',
         'raw-material-time-is', 'alexander-von-schlippenbach-globe-unity', '裸のラリーズ-the-oz-tapes'],
       boss: true, voice: { freq: 147, wave: 'sine' }
@@ -226,6 +227,21 @@
   C.elites = ['label', 'critic'];
   C.prologueEnemy = 'man';
   C.boss = 'boss';
+
+  // ===================================================================
+  // A3-M2 換牌（SPEC-v4 §3.1 A1 交件 5(b)、§6.7；理由與模擬見 dev/notes-A1.md「請求」）：兩位冷門客人各把 2 張冷 5 換成嚴格冷 4，
+  //   S7（一般客人單場最高減最低 ≤20 點）與 S4（≤3 手 ≤5%）才能一起過。新卡由 A3 烘進 cards.js（A3-M2）之後這裡自動換上，
+  //   還沒烘之前照舊用原本那張（遊戲不會壞）。整合時（C）把上面的牌單直接改寫成新卡、刪掉這張表。
+  //   sim.mjs --project-m2 用 seed 星數先模擬換牌後的樣子。[舊 id, 新 id]，位置不變
+  // ===================================================================
+  C.m2Swaps = {
+    already: [['pauline-anna-strom-trans-millenia-consort', 'don-slepian-sea-of-bliss'], ['gigi-masin-wind', 'harold-budd-abandoned-cities']],
+    skip:    [['mina-studio-uno-66', 'roberto-goyeneche-cantor-de-mi-barrio'], ['dorival-caymmi-caymmi-visita-tom', 'king-sunny-ade-aura']]
+  };
+  Object.keys(C.m2Swaps).forEach(function (g) {
+    var d = C.enemies[g].deck;
+    C.m2Swaps[g].forEach(function (sw) { var k = d.indexOf(sw[0]); if (k >= 0 && CARDS[sw[1]]) d[k] = sw[1]; });
+  });
   C.voices = { owner: { freq: 196, wave: 'square' }, narrator: null };   // 打字機嗶聲
 
   // ===================================================================

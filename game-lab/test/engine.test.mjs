@@ -348,9 +348,9 @@ section('6 六手上限：tie 六手 → rounds、你贏；落後一手再 tie �
     EN.resolveTurn(c, EN.legalActions(c)[0], { debugOutcome: { kind: 'mirrorLose', toE: 0, toP: 1 } });
     for (let k = 0; k < 4; k++) EN.resolveTurn(c, EN.legalActions(c)[0], T);
     ok(c.over && c.over.win === true, 'level after 6 → you win', c.over);
-    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人 14、你 10：六手都 tie → 比剩下的，他贏
+    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人聲望 > 你 10：六手都 tie → 比剩下的，他贏
     for (let k = 0; k < 6; k++) EN.resolveTurn(g, EN.legalActions(g)[0], T);
-    ok(g.over && g.over.by === 'rounds' && g.over.win === false, 'rounds compare what is left (10 < 14 → you lose)', g.over);
+    ok(g.over && g.over.by === 'rounds' && g.over.win === false, 'rounds compare what is left (10 < his → you lose)', g.over);
   }
   const save = CFG.maxRounds;
   try {
@@ -497,9 +497,10 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   ok(price === C.economy.price[EN.peak(card(cid))], 'priceOf = price[peak]');
   ok(EN.priceOf(C, card(C.aces.hall)) === null, 'ace is not for sale');
   eq(EN.sellValue(C, card(cid)), Math.floor(price * 0.5), 'sellValue card = half');
-  eq(EN.sellValue(C, 'boost_c'), 600, 'sellValue relic = half');
-  eq(EN.relicPrice(C, 'boost_c'), 1200, 'relicPrice');
-  err(run, { type: 'buy', key, cardId: cid }, 'noMoney', 'buy with $0');
+  const RP = C.relics.boost_c.price;
+  eq(EN.sellValue(C, 'boost_c'), Math.floor(RP * C.economy.sellRate), 'sellValue relic = half');
+  eq(EN.relicPrice(C, 'boost_c'), RP, 'relicPrice');
+  { const r2 = JSON.parse(JSON.stringify(run)); r2.money = 0; err(r2, { type: 'buy', key, cardId: cid }, 'noMoney', 'buy with $0'); }
   run.money = 5000;
   err(run, { type: 'buy', key: 'nope', cardId: cid }, 'notInStock', 'buy wrong bin');
   err(run, { type: 'buy', key, cardId: 'nope' }, 'notInStock', 'buy wrong card');
@@ -534,8 +535,8 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   { const r2 = JSON.parse(JSON.stringify(run)); r2.relics.push(RL[0]); err(r2, { type: 'buyRelic', relicId: RL[0] }, 'owned', 'buyRelic owned'); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.relics = ['dustcover', 'stylus', 'cleaner']; err(r2, { type: 'buyRelic', relicId: RL[0] }, 'relicsFull', 'buyRelic 3 relics, no sell'); err(r2, { type: 'buyRelic', relicId: RL[0], sellRelicId: 'obi' }, 'badSell', 'buyRelic sell not owned');
     const m = r2.money, r = EN.choose(r2, C, { type: 'buyRelic', relicId: RL[0], sellRelicId: 'stylus' });
-    ok(r.ok && r2.relics.includes(RL[0]) && !r2.relics.includes('stylus') && r2.money === m + 500 - 1200, 'buyRelic with sell', { r, money: r2.money }); }
-  { const r2 = JSON.parse(JSON.stringify(run)); r2.money = 1199; err(r2, { type: 'buyRelic', relicId: RL[0] }, 'noMoney', 'buyRelic short'); }
+    ok(r.ok && r2.relics.includes(RL[0]) && !r2.relics.includes('stylus') && r2.money === m + EN.sellValue(C, 'stylus') - EN.relicPrice(C, RL[0]), 'buyRelic with sell', { r, money: r2.money }); }
+  { const r2 = JSON.parse(JSON.stringify(run)); r2.money = EN.relicPrice(C, RL[0]) - 1; err(r2, { type: 'buyRelic', relicId: RL[0] }, 'noMoney', 'buyRelic short'); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.over = 'dead'; err(r2, { type: 'buyRelic', relicId: RL[0] }, 'notNow', 'buyRelic after closing'); }
   const rr = EN.choose(run, C, { type: 'buyRelic', relicId: RL[0] });
   ok(rr.ok && run.relics.includes(RL[0]) && !run.shop.relics.includes(RL[0]), 'buyRelic ok', rr);
