@@ -15,6 +15,10 @@
 - [x] 段 5 後半截圖（390x664、430x932）
 - [x] lint-copy 試掃 econ.js（scratchpad 複本把 econ.js 加進 FILES）：通過
 - 全部交件完成；剩店主看截圖後的修改。
+- **收尾補做（B3 FINISH，2026-11-08 第二趟）**：
+  - [ ] 包包沒滿、錢不夠但賣一張就夠 → 鈕可按、先賣一張（SPEC §2.5.6 第 3 點「錢不夠且賣一張也不夠 → 停用」；引擎 `buy` 本來就收沒滿時的 `sellId`）；配件同理（`buyRelic` 收沒滿時的 `sellRelicId`）；e2e 加一項
+  - [ ] index.html 版實測：scratchpad 臨時整合（B2 已提交的樹＋B3 的 econ），e2e-econ 加 index 模式（今晚來客真點箱子／櫃檯）
+  - [ ] 「今晚來客有錢的樣子」截圖（用臨時整合的 index.html）
 
 ## 做法（給 B2／C）
 - **箱子**：`openBin(key)` → 描框那一箱 → 你的人物照路線走到 `bin.stand`（`stage.walk` 1.5 倍速＝54；走路途中點畫面＝`stage.finish('p')` 直接走到）
