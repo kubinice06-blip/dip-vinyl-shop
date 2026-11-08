@@ -18,9 +18,11 @@
   #info{font:11px/1.35 'Space Mono',monospace;color:#c9b98e;white-space:pre-wrap;margin:0;max-height:9.5em;overflow:auto}
   #now{font-weight:700;color:#fff}
   /* 路線圖（§2.3.2 的表）：家具腳下範圍紅框、每條路線一色、中點標號；下方圖例寫秒數 */
-  #legend{margin:0;padding:0 0 0 2px;list-style:none;display:none;columns:2;column-gap:10px;font:11px/1.45 'Space Mono','Noto Sans TC',monospace}
+  #legend{margin:0;padding:0 0 0 2px;list-style:none;display:none;font:11px/1.5 'Space Mono','Noto Sans TC',monospace}
   #legend.on{display:block}
-  #legend li{break-inside:avoid;white-space:nowrap}
+  #legend li{white-space:nowrap}
+  #legend li.note{white-space:normal;color:#c9b98e;margin-top:3px}
+  body.shot .row,body.shot #info{display:none}
   #legend i{display:inline-block;width:15px;height:15px;line-height:15px;text-align:center;font-style:normal;font-weight:700;color:#111;margin-right:4px;border:1px solid #111}
   #legend li.bad{color:#ff8a8a}
   svg.rt{position:absolute;left:0;top:0;pointer-events:none;z-index:8}
@@ -80,6 +82,7 @@
                  p: { attr: 'h', star: 7, card: 'swans-filth', ace: true }, e: { attr: 'c', star: 2, card: 'coldplay-mylo-xyloto' } }
   };
   var H = window.H = { stage: null, log: [], ready: false, errors: [] };
+  if (QS.shot === '1') document.body.classList.add('shot');   // 截圖模式：只留舞台、這一手的說明、路線圖例
   var spd = +QS.speed > 0 ? +QS.speed : 1, red = QS.reduced === '1', cam = QS.cam || 'strip', cur = null, curT = null;
   function sfx(n, o) {
     H.log.push(n + (o && 'attr' in o ? '(' + o.attr + ')' : ''));
@@ -196,10 +199,28 @@
       li.innerHTML = '<i style="background:' + col + '">' + (i + 1) + '</i>' + r[0] + '→' + r[1] + ' ' + sec.toFixed(2) + 's（≤' + r[2] + '）' + (aisle ? ' 右側走道' : '') + (hit ? ' 穿過 ' + hit : '');
       lg.appendChild(li);
     });
+    // 起訖點的名字（白字黑邊）
+    var names = {};
+    ROUTES.forEach(function (r) { names[r[0]] = 1; names[r[1]] = 1; });
+    Object.keys(names).forEach(function (k) {
+      var q = sp[k], c = C(q[0], q[1]);
+      var t = mk('text', { x: c.x + 3, y: c.y - 3, 'font-size': 9, 'font-weight': 700, 'font-family': 'Space Mono, monospace', fill: '#fff', stroke: '#111', 'stroke-width': 2.5, 'paint-order': 'stroke' }); t.textContent = k;
+    });
+    var note = document.createElement('li'); note.className = 'note';
+    note.textContent = '紅虛線＝家具腳下範圍（foot）；白點線＝中島右側走道（x 188–210、y 150–270）；秒數＝1 倍速（每秒 72 格），序章實際用 1.5 倍速。全部 ' + out.filter(function (x) { return x.ok; }).length + '／' + out.length + ' 條沒穿過家具、沒超過上限。';
+    lg.appendChild(note);
     host.appendChild(svg);
     return out;
   };
-  $('#routes').onclick = function () { var on = !this.classList.contains('on'); this.classList.toggle('on', on); var st = H.stage; if (!st) return; st.seek(null); st.clearClash(0); (on ? st.camera('full', { ms: 0, panelMin: 0 }) : Promise.resolve()).then(function () { H.routes(on); }); };
+  // 路線圖模式：人都收起來（只留店景），鏡頭整間店
+  H.routeMode = function (on) {
+    var st = H.stage; if (!st) return Promise.resolve(null);
+    st.seek(null); st.clearClash(0);
+    if (on) { st.untag(); ['f', 'p', 'o', 'r1'].forEach(function (id) { st.hide(id, true); }); }
+    else { st.hide('o', false); st.hide('r1', false); place(); }
+    return (on ? st.camera('full', { ms: 0, panelMin: 0 }) : st.camera(cam, { ms: 0, panelMin: 0 })).then(function () { return H.routes(on); });
+  };
+  $('#routes').onclick = function () { var on = !this.classList.contains('on'); this.classList.toggle('on', on); H.routeMode(on); };
   $('#cam').onclick = function () { var st = H.stage; if (!st) return; cam = cam === 'strip' ? 'full' : 'strip'; this.textContent = '鏡頭：' + cam; st.camera(cam, { ms: 300, panelMin: 0 }); };
 })();
 </script>

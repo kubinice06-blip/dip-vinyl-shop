@@ -99,6 +99,10 @@
 .ds-badge.c{background:#1f5fae}
 .ds-badge.o{background:#6a3fa0}
 .ds-badge.h{background:#c11628}
+/* 矮螢幕橫條（stripS）頭頂上方放不下一般大小：小一號，貼齊舞台上緣時下緣仍在頭頂＋1 格內 */
+.ds-badge.tight{font-size:10px;padding:0 4px 1px;gap:2px}
+.ds-badge.tight i{font-size:10px}
+.ds-badge.tight b{font-size:11px}
 .ds-badge.ace{border-color:#e9c35a;box-shadow:0 0 0 1px #8a6020,0 2px 0 rgba(0,0,0,.35)}
 .ds-badge.ace b{color:#ffe28a}
 /* 判定：剋中的贏家發亮（zap）、打中（hit 抖一下）、剋不動／平手的白環（ring）、比星閃（flash）、贏家（win） */

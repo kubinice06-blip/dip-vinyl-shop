@@ -363,7 +363,7 @@
       if (!was) tagHide(id);
       var b = badgeEl(side); if (!b) return;
       var cls = 'ds-badge ' + side + ' ' + at + (ace ? ' ace' : '') + (fxc ? ' ' + fxc : ''), key = cls + '|' + st;
-      if (b._k !== key) { b.className = cls; b.innerHTML = '<i>' + ZH1[at] + '</i><b>' + st + '</b>'; b._k = key; }
+      if (b._k !== key) { var tg = b.classList.contains('tight'); b.className = cls + (tg ? ' tight' : ''); b.innerHTML = '<i>' + ZH1[at] + '</i><b>' + st + '</b>'; b._k = key; }
       b.style.display = '';
       placeBadge(side);
       ttStart();
@@ -374,7 +374,13 @@
       if (!v || !a || a.hidden || !shop.has(id)) { b.style.display = 'none'; return; }
       b.style.display = '';
       var hy = typeof shop.headY === 'function' ? shop.headY(id) : a.y - 15 * ttK();
-      var p = shop.hostCss(Math.round(a.x) + (TT.nudge[id] || 0), hy - 2), w = b.offsetWidth || 30, h = b.offsetHeight || 16, hw = host.clientWidth || 0;
+      var p = shop.hostCss(Math.round(a.x) + (TT.nudge[id] || 0), hy - 2);
+      // 頭頂上方放不下一般大小（矮螢幕 stripS）：換小一號（.tight），貼齊舞台上緣 2 px 時下緣仍 ≤ 頭頂＋1 格（§2.3.3）
+      var tight = b.classList.contains('tight');
+      if (!tight && b.offsetHeight) b._hN = b.offsetHeight;
+      var want = p.y - (b._hN || 21) < 2;
+      if (want !== tight) b.classList.toggle('tight', want);
+      var w = b.offsetWidth || 30, h = b.offsetHeight || 16, hw = host.clientWidth || 0;
       var cx = hw ? Math.max(2 + w / 2, Math.min(hw - 2 - w / 2, p.x)) : p.x;
       b.style.left = Math.round(cx - w / 2) + 'px'; b.style.top = Math.round(Math.max(2, p.y - h)) + 'px';
     }
@@ -388,6 +394,11 @@
       return [Math.round(((parseFloat(b.style.left) || 0) + w / 2 - o0.x) / v.scale), Math.round(((parseFloat(b.style.top) || 0) + h / 2) / v.scale + v.y), w / 2 / v.scale, h / 2 / v.scale];
     }
     function hideBadges() { setBadge('e', null); setBadge('p', null); }
+    // 扣血的 −N：名牌收起時 shop.float 會飄到「面向」那一側（他朝右＝飄到老闆臉上）；改飄到外側（離唱盤那一邊），不蓋老闆
+    function floatOut(id, text, cls) {
+      var fw = id === 'f' ? 1 : -1;
+      shop.face(id, -fw); try { shop.float(id, text, cls); } finally { shop.face(id, fw); }
+    }
 
     // ---------------- 一手的整段演出（取代 v3 的 clashItem）
     function roundItem(o) {
@@ -433,7 +444,7 @@
             once('r', function () {
               ['e', 'p'].forEach(function (s) { hand(s, null, null); });
               if (Wn) TT.deck = { rec: rec(Wn), state: 'spin', by: Wn };
-              if (Lo && dmg[Lo] > 0) shop.float(lid, '−' + dmg[Lo], Lo === 'p' ? 'r' : null);
+              if (Lo && dmg[Lo] > 0) floatOut(lid, '−' + dmg[Lo], Lo === 'p' ? 'r' : null);
               if (Lo && typeof o.onHit === 'function') o.onHit(Lo);
               if (Wn) { sfx('needle'); sfx('chime', { attr: lab[Wn] }); if (typeof o.onLand === 'function') o.onLand(Wn, pl[Wn].card || null); }
               else sfx('chime', { attr: null });
@@ -458,9 +469,9 @@
         ['e', 'p'].forEach(function (s) { if (t >= RT.badge && t < RT.done) setBadge(s, bv[s], badgeFx(s, t)); else setBadge(s, null); });
         // ---- 判定：剋中＝火花從贏家方塊射到輸家方塊（480–560），560 打中
         if (mode === 'beat' && Wn && t >= RT.judge && t < RT.hit + 60) {
-          var bw = badgeAt(Wn), bl = badgeAt(Lo), ex = [bl[0] - dir[Lo] * Math.round(bl[2]), bl[1]];
+          var bw = badgeAt(Wn), bl = badgeAt(Lo), ex = [bl[0] + dir[Lo] * Math.round(bl[2]), bl[1]];   // 輸家方塊朝唱盤那一邊（dir＝往唱盤的方向）
           if (t < RT.hit) {
-            var fs = function (tt) { return arcP([bw[0] + dir[Lo] * Math.round(bw[2]), bw[1]], ex, 6, seg(tt, RT.judge, RT.hit)); }, q = fs(t);
+            var fs = function (tt) { return arcP([bw[0] + dir[Wn] * Math.round(bw[2]), bw[1]], ex, 6, seg(tt, RT.judge, RT.hit)); }, q = fs(t);
             fx.sparks.push({ x: q[0], y: q[1], size: 'small', c: ATTRC[lab[Wn]] });
             [20, 40].forEach(function (d) { if (t - d >= RT.judge) { var r = fs(t - d); fx.trails.push([r[0], r[1], 'rgba(255,241,194,' + (d === 20 ? 0.8 : 0.45) + ')']); } });
           } else fx.sparks.push({ x: ex[0], y: ex[1], size: 'big', c: '#ec4a5a' });
@@ -468,7 +479,7 @@
         // ---- 560：輸家受擊（hurt 200、頭上 −N）
         if (t >= RT.hit && Lo) once('hit', function () {
           shop.pose(lid, 'hurt'); it.hurt = lid;
-          if (dmg[Lo] > 0) shop.float(lid, '−' + dmg[Lo], Lo === 'p' ? 'r' : null);
+          if (dmg[Lo] > 0) floatOut(lid, '−' + dmg[Lo], Lo === 'p' ? 'r' : null);
           if (typeof o.onHit === 'function') o.onHit(Lo);
         });
         if (t >= 760 && it.hurt) once('hurtEnd', function () { shop.pose(it.hurt, null); it.hurt = null; });
