@@ -86,6 +86,31 @@ function fakeCtx2() {
     fillText() {}, measureText(t) { return { width: String(t).length * 7 }; }, setTransform() {}, translate() {}, scale() {} });
   return c;
 }
+// 點陣招牌（EMBLEM 表裡的一項，或 o.sign 直接給的 {pal, rows}）：rows 非空、每列等長、字元 ∈ pal∪'.'、pal 是色碼
+export function checkEmblem(em, src, bad) {
+  if (!em || typeof em !== 'object') { bad(src + '：不是點陣物件'); return; }
+  const pal = em.pal, rows = em.rows;
+  if (!pal || typeof pal !== 'object' || Array.isArray(pal) || !Object.keys(pal).length) bad(src + '：pal 要是 {字元: 色碼}');
+  else for (const [ch, c] of Object.entries(pal)) {
+    if (ch.length !== 1 || ch === '.' || ch === ' ') bad(src + '：pal 的鍵要是單一字元（不能是 . 或空白）：' + JSON.stringify(ch));
+    if (typeof c !== 'string' || !/^#[0-9a-f]{3,8}$/i.test(c)) bad(src + '：pal.' + ch + ' 不是色碼');
+  }
+  if (!Array.isArray(rows) || !rows.length || !rows.every(r => typeof r === 'string' && r.length)) { bad(src + '：rows 要是非空字串陣列'); return; }
+  const m = rows[0].length;
+  rows.forEach((r, j) => {
+    if (r.length !== m) bad(src + '：rows[' + j + '] 長 ' + r.length + '，跟第一列 ' + m + ' 不等長');
+    for (const ch of r) if (ch !== '.' && !(pal && Object.prototype.hasOwnProperty.call(pal, ch))) { bad(src + '：rows[' + j + '] 有 pal 沒有的字元 ' + JSON.stringify(ch)); break; }
+  });
+}
+// counter 的 o.sign：null／false／沒寫＝不畫；{emblem:key}／字串 key＝EMBLEM 表；{pal,rows}＝直接給；其他字串＝舊式字牌
+export function checkSign(sg, src, lib, bad) {
+  if (sg == null || sg === false) return;
+  const EM = (lib.PropsO && lib.PropsO.EMBLEM) || {};
+  if (typeof sg === 'string') { if (!sg.trim()) bad(src + '：空字串'); return; }
+  if (typeof sg !== 'object' || Array.isArray(sg)) { bad(src + '：要是 {emblem:…}、{pal,rows}、字串或 null'); return; }
+  if (sg.rows) { checkEmblem(sg, src, bad); return; }
+  if (typeof sg.emblem !== 'string' || !Object.prototype.hasOwnProperty.call(EM, sg.emblem)) bad(src + '：emblem「' + sg.emblem + '」不在 shop-props.js 的 EMBLEM 表');
+}
 export function checkOblique(L, file, lib, cards, content) {
   const P = [], Wn = [];
   const bad = (m) => P.push(file + ': ' + m), warn = (m) => Wn.push(file + ': ' + m);
@@ -166,7 +191,7 @@ export function checkOblique(L, file, lib, cards, content) {
       if (hh >= CH * 0.8) bad(src + '：箱子桌連唱片高 ' + hh + '，人（' + CH + '）沒有明顯比較高');
       [].concat(o.front || [], o.cards || [], o.lean ? [o.lean] : []).forEach(r => recRefs.push([r, src]));
     }
-    if (o.type === 'counter') { if (tall >= CH) bad(src + '：櫃檯比人高'); if (o.now) recRefs.push([o.now, src]); }
+    if (o.type === 'counter') { if (tall >= CH) bad(src + '：櫃檯比人高'); if (o.now) recRefs.push([o.now, src]); checkSign(o.sign, src + '.sign', lib, bad); }
     if (o.type === 'deckStand') { if (tall >= CH) bad(src + '：唱盤台比人高'); if (!['e', 'p'].includes(o.side)) bad(src + '：side 要是 e 或 p'); }
     if (o.type === 'listenDesk') {
       if (tall >= CH) bad(src + '：試聽桌比人高');
@@ -378,6 +403,8 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
 export function runChecks() {
   const lib = loadLib(), cards = loadCards(), content = loadContent();
   const problems = [], warnings = [], stats = {};
+  if (!lib.PropsO || !lib.PropsO.EMBLEM) problems.push('shop-props.js 沒有匯出 DipPropsO.EMBLEM（櫃檯招牌表）');
+  for (const [k, em] of Object.entries((lib.PropsO && lib.PropsO.EMBLEM) || {})) checkEmblem(em, 'shop-props.js EMBLEM.' + k, m => problems.push(m));
   const dir = path.join(LAB, 'shops');
   const files = fs.readdirSync(dir).filter(f => f.endsWith('.json') && f !== 'index.json');
   const layouts = {};

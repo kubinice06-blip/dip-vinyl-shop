@@ -1093,6 +1093,51 @@
     }
   });
 
+  // ================================================================ 櫃檯招牌（店家資料 o.sign，SPEC-v4 §2.3.6）
+  // {emblem:'dip'}（或字串 'dip'）＝EMBLEM 表裡的點陣 logo；{pal, rows}＝直接給點陣；其他字串＝舊式金框字牌（給以後別家店）；null／false／沒寫＝不畫。
+  // 點陣畫在正面板中央：中心 (x+⌊w/2⌋, lip+⌊(h−2)/2⌋)，本店＝(248,191)；正面板是正立面，圓就畫成正圓。
+  var EMBLEM = {
+    // 店主的 logo，候選 B15（15×15：黑盤、米白圈、無點 dıp、每側 2 格中間色溝紋；逐字取自 v4/understand/item1-logo/cand/logo-B15.txt）
+    dip: {
+      pal: { k: '#1d1712', c: '#eee5c6', m: '#756e5e' },
+      rows: [
+        '.....ccccc.....',
+        '...cckkkkkcc...',
+        '..ckkkkkkkkkc..',
+        '.ckkmkkkkkkkkc.',
+        '.ckmkckkkkkkkc.',
+        'ckkkkckkkkkkkkc',
+        'ckkkcckckcckkkc',
+        'ckkckckckckckkc',
+        'ckkkcckckcckkkc',
+        'ckkkkkkkkckkkkc',
+        '.ckkkkkkkckmkc.',
+        '.ckkkkkkkkmkkc.',
+        '..ckkkkkkkkkc..',
+        '...cckkkkkcc...',
+        '.....ccccc.....'
+      ]
+    }
+  };
+  function signEmblem(sg) {
+    if (!sg) return null;
+    if (sg.rows) return sg;
+    var k = typeof sg === 'string' ? sg : sg.emblem;
+    return (typeof k === 'string' && Object.prototype.hasOwnProperty.call(EMBLEM, k)) ? EMBLEM[k] : null;
+  }
+  function counterSign(P, o, x, lip, w, h) {
+    var sg = o.sign, em = signEmblem(sg);
+    if (em) {
+      var m = em.rows[0].length, n = em.rows.length, cx = x + Math.floor(w / 2), cy = lip + Math.floor((h - 2) / 2);
+      P.rows(em.rows, cx - Math.floor((m - 1) / 2), cy - Math.floor((n - 1) / 2), em.pal, 1);
+      return;
+    }
+    if (typeof sg === 'string' && sg) {   // 舊式金框字牌（v3 的「DIP」牌子同一個樣式，字換成 sg）
+      var tw = P.pwidth(sg), pw = tw + 6, lx = x + Math.floor((w - pw) / 2), ly = lip + 8;
+      P.r(lx - 1, ly - 1, pw + 2, 11, '#c9a24a'); P.r(lx, ly, pw, 9, '#1f1612'); P.ptext(sg, lx + 3, ly + 2, '#e9c35a');
+    }
+  }
+
   // ================================================================ 櫃檯（老闆站後面）＋正在放的封面＋店裡的唱盤＋收銀機＋睡覺的貓
   function counterGeo(o) {
     var top = o.y - o.h - o.d, nx = o.x + 4, nb = top + 8;
@@ -1115,8 +1160,7 @@
       for (var px = x + 4; px < x + w; px += 5) P.r(px, lip + 3, 1, h - 6, C.walnutD);
       for (var gI = 0; gI < 40; gI++) P.r(x + 1 + Math.floor(hash(gI, 5, 81) * (w - 2)), lip + 4 + Math.floor(hash(gI, 6, 81) * (h - 9)), 1, 3, C.walnutL);
       P.r(x, lip + 2, w, 1, C.walnutD); P.r(x, fy - 3, w, 3, C.walnutDD); P.r(x, lip, 1, h, C.walnutL);
-      var lx = x + Math.floor(w / 2) - 13, ly = lip + 8;
-      P.r(lx - 1, ly - 1, 28, 11, '#c9a24a'); P.r(lx, ly, 26, 9, '#1f1612'); P.ptext('DIP', lx + 3, ly + 2, '#e9c35a'); P.r(lx + 16, ly + 2, 7, 5, '#1f1612'); P.ell(lx + 19.5, ly + 4.5, 3, 3, '#e9c35a'); P.ell(lx + 19.5, ly + 4.5, 1.6, 1.6, '#1f1612'); P.p(lx + 19, ly + 4, '#e9c35a');
+      counterSign(P, o, x, lip, w, h);
       P.r(x, top, w, d, '#8a5a36'); P.r(x, top, w, 1, C.walnut); P.r(x, lip - 2, w, 2, '#9c6a42'); P.r(x, lip - 1, w, 1, '#b07a4c');
       // 正在放（小畫架）
       var nx = x + 4, nb = top + 8;
@@ -1290,5 +1334,6 @@
     if (h.disc) disc7(P, hx, hy, h.disc, Math.floor((S.t || 0) * 16) % 8, { kind: h.kind });
   });
 
-  window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, deckGeo: deckGeo, counterGeo: counterGeo };
+  window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, deckGeo: deckGeo, counterGeo: counterGeo,
+    EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign };
 })();

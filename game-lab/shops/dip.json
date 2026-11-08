@@ -83,7 +83,7 @@
   {"type": "listenDesk", "id": "booth", "x": 6, "y": 176, "w": 38, "d": 13, "h": 21, "stack": "cornelius-fantasma", "hot": {"label": "試聽機", "action": "listen", "rect": [4, 131, 50, 46]}},
   {"type": "stool", "x": 20, "y": 190},
   {"type": "binTable", "id": "crate-noise", "x": 6, "y": 252, "cols": 3, "d": 26, "h": 22, "rec": 8, "label": "NOISE", "front": ["melt-banana-scratch-or-stitch", "merzbow-noisembryo", "sunn-o-life-metal"], "tabs": ["二手", "噪音"], "sections": 1, "hot": {"label": "噪音區", "action": "crate:noise", "rect": [6, 200, 42, 52]}},
-  {"type": "counter", "id": "counter", "x": 212, "y": 206, "w": 72, "d": 13, "h": 28, "now": "caetano-veloso-transa", "hot": {"label": "櫃檯", "action": "counter", "rect": [212, 178, 72, 28], "labelAt": [236, 178]}},
+  {"type": "counter", "id": "counter", "x": 212, "y": 206, "w": 72, "d": 13, "h": 28, "now": "caetano-veloso-transa", "sign": {"emblem": "dip"}, "hot": {"label": "櫃檯", "action": "counter", "rect": [212, 178, 72, 28], "labelAt": [236, 178]}},
   {"type": "plant", "x": 276, "y": 258, "size": "small"},
   {"type": "deckStand", "id": "deck-e", "side": "e", "x": 66, "y": 312, "w": 24, "d": 11, "h": 24},
   {"type": "deckStand", "id": "deck-p", "side": "p", "x": 202, "y": 312, "w": 24, "d": 11, "h": 24},

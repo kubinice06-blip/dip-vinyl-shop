@@ -190,6 +190,67 @@ section('唱盤區幾何', () => {
   ok(dip.props.some(p => p.type === 'duelfx' && p.layer === 'fx'), '特效層');
 });
 
+section('櫃檯 logo（B15，SPEC-v4 §2.3.6）：畫在正面板中央、不蓋到任何可點的東西', () => {
+  const PO = lib.PropsO, ct = propById('counter'), OP = DS.O34.PROPS;
+  eq(ct.sign, { emblem: 'dip' }, 'dip.json counter.sign＝{emblem:"dip"}（招牌是店家資料）');
+  ok(PO && PO.EMBLEM && PO.EMBLEM.dip, '匯出 DipPropsO.EMBLEM.dip');
+  const em = PO.EMBLEM.dip;
+  eq([em.rows.length, em.rows[0].length], [15, 15], 'B15＝15×15');
+  eq(em.pal, { k: '#1d1712', c: '#eee5c6', m: '#756e5e' }, 'B15 三色');
+  const S = { card: id => cards[id] || null, state: { playing: true, poke: {} }, t: 1.3, rt: 1.3 };
+  // 量外框模式畫一次整個櫃檯；攔下 P.rows（只有招牌用它）記下 logo 實際上色的格子
+  const measure = (o) => {
+    const T = { ctx: null, k: 1, cx: 0, cy: 0, meas: [1e9, 1e9, -1e9, -1e9], cover: () => null, pool: [] };
+    const P0 = DS.OPainter(T), P = Object.create(P0), box = [1e9, 1e9, -1e9, -1e9]; let calls = 0;
+    P.rows = (rows, x, y, pal, q) => {
+      calls++; q = q || 1;
+      rows.forEach((r, j) => { for (let i = 0; i < r.length; i++) if (r[i] !== '.' && r[i] !== ' ') { const X = x + i * q, Y = y + j * q; box[0] = Math.min(box[0], X); box[1] = Math.min(box[1], Y); box[2] = Math.max(box[2], X + q); box[3] = Math.max(box[3], Y + q); } });
+      return P0.rows(rows, x, y, pal, q);
+    };
+    OP.counter.draw(P, o, S);
+    return { calls, rect: calls ? [box[0], box[1], box[2] - box[0], box[3] - box[1]] : null, all: T.meas };
+  };
+  const m = measure(ct), lip = ct.y - ct.h;
+  eq(m.calls, 1, '櫃檯畫一次招牌');
+  eq(m.rect, [241, 184, 15, 15], 'logo 中心 (248,191)：x＋⌊w/2⌋、lip＋⌊(h−2)/2⌋');
+  const panel = [ct.x, lip + 2, ct.w, ct.h - 5];
+  const within = (a, b) => a[0] >= b[0] && a[1] >= b[1] && a[0] + a[2] <= b[0] + b[2] && a[1] + a[3] <= b[1] + b[3];
+  ok(m.rect && within(m.rect, panel), 'logo 落在正面板 [x, lip+2, w, h−5] 裡', [m.rect, panel]);
+  // 不跟任何熱點形狀相交（櫃檯自己的主熱點 counter 除外）：道具子熱點（now、cat、rack:*）、道具主熱點、箱子（bin:<key> ＝ 道具 box）、layout.hotspots（跟著人走的照起始位置）
+  const shapes = [];
+  for (const o of dip.props) {
+    const spec = OP[o.type]; if (!spec) continue;
+    if (spec.hots) (spec.hots(o, S) || []).forEach(h => shapes.push([h.id, h.rect]));
+    if (o.hot && o.id !== 'counter') shapes.push([o.id, o.hot.rect || spec.box(o)]);
+    if (o.bin && spec.box) shapes.push(['bin:' + o.bin.key, spec.box(o)]);
+  }
+  for (const h of dip.hotspots || []) {
+    shapes.push([h.id, h.rect]);
+    if (h.follow) { const a = dip.actors.find(x => x.id === h.follow), s = a && dip.spots[a.at]; if (s) shapes.push([h.id + '@' + a.at, [s[0] + h.rel[0], s[1] + h.rel[1], h.rel[2], h.rel[3]]]); }
+  }
+  const hit = (a, b) => a[0] < b[0] + b[2] && b[0] < a[0] + a[2] && a[1] < b[1] + b[3] && b[1] < a[1] + a[3];
+  ok(shapes.length >= 20, '熱點形狀都算進來', shapes.length);
+  const over = shapes.filter(([, r]) => m.rect && hit(m.rect, r)).map(([id]) => id);
+  eq(over, [], 'logo 外框不蓋到任何可點的東西');
+  // 招牌規則：字串＝舊式金框字牌（畫在正面板裡、不用 rows）；null／false／不認得的 emblem＝不畫
+  const plain = measure(Object.assign({}, ct, { sign: null }));
+  for (const sg of [null, false, undefined, { emblem: 'nope' }]) eq(measure(Object.assign({}, ct, { sign: sg })).calls, 0, '不畫 logo：' + JSON.stringify(sg));
+  eq(measure(Object.assign({}, ct, { sign: 'dip' })).rect, [241, 184, 15, 15], '字串 "dip"＝同一個 logo');
+  eq(measure(Object.assign({}, ct, { sign: em })).rect, [241, 184, 15, 15], '{pal,rows} 直接給點陣');
+  const T2 = { ctx: null, k: 1, cx: 0, cy: 0, meas: [1e9, 1e9, -1e9, -1e9], cover: () => null, pool: [] }, P2 = DS.OPainter(T2);
+  PO.counterSign(P2, Object.assign({}, ct, { sign: 'B1' }), ct.x, lip, ct.w, ct.h);
+  const pr = [T2.meas[0], T2.meas[1], T2.meas[2] - T2.meas[0], T2.meas[3] - T2.meas[1]];
+  ok(within(pr, panel), '字串招牌（別家店）是畫在正面板裡的金框字牌', pr);
+  ok(plain.all[2] > plain.all[0], '沒有招牌時櫃檯照樣畫得出來');
+  // check-shops 抓得到壞招牌
+  const probs = []; const badF = (msg) => probs.push(msg);
+  CS.checkSign({ emblem: 'nope' }, 'x', lib, badF);
+  CS.checkSign({ pal: { k: '#000' }, rows: ['kk', 'k'] }, 'y', lib, badF);
+  CS.checkSign({ pal: { k: '#000' }, rows: ['kz'] }, 'z', lib, badF);
+  CS.checkSign({ emblem: 'dip' }, 'ok', lib, badF); CS.checkSign(null, 'ok', lib, badF); CS.checkSign('B1', 'ok', lib, badF);
+  ok(probs.some(p => /^x：.*EMBLEM/.test(p)) && probs.some(p => /^y：.*不等長/.test(p)) && probs.some(p => /^z：.*pal 沒有的字元/.test(p)) && !probs.some(p => /^ok/.test(p)), 'check-shops 的招牌檢查', probs);
+});
+
 section('index.json 與台北地圖預告', () => {
   eq(index.map, 'shops/taipei.json', 'map');
   eq(index.shops.map(s => s.id + ':' + s.status), ['dip:open', 'basement:debug'], '本店開、地下室只在 debug');
