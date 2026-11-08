@@ -49,7 +49,8 @@
  *   ?tutorial=1（男子＋C.tutorial.script[ace]）  ?e=bluff,honest,c,o,h,ace,-（他每一手怎麼出；'-' 或空＝照引擎）  ?force=counter|countered|tie
  *   ?sound=1（先問要不要聲音） ?noend=1（打完不跳對話框） ?shot=1（截圖：收起測試鈕） ?fast=1 ?debug=1（duel.js：window.__dl）
  *   window.__lab＝{ force(o), stage, duel(), rawDuel(), autoplay(policy), el(name) }（跟 ui.js 的 __lab 同介面，e2e-duel 用）
- *   window.__h＝{ setNext(spec), plan(list), remount(seed), log, seen, duel, ready, errors }
+ *   window.__h＝{ setNext(spec|{i,attr}), plan(list), remount(seed), log, seen, duel, ready, errors, sfx:[[name,opts]…], music:[cardId…] }
+ *     spec＝'honest'|'bluff'|'c'|'o'|'h'|'ace'|'-'；{i,attr}＝他手牌第 i 張用 attr 出（forcedPlay，照抄給引擎）
  */
 (function(){
 'use strict';
@@ -79,7 +80,12 @@ function labSpr(){
 const app = $('#app');
 app.innerHTML = '<div class="lb-top"><span class="tt">對決測試台<small>v4</small></span><button type="button" class="ti" id="devbtn" aria-label="測試鈕">⚙</button></div>'
   + '<div class="lb-stage" id="stage"></div><div class="lb-panel duel" id="panel"><div class="lb-duelwrap" id="wrap"></div></div>';
-const H = window.__h = { log: [], seen: {}, errors: [], ready: false, queue: [], next: null, duel: null, stage: null, ended: null, music: [] };
+const H = window.__h = { log: [], seen: {}, errors: [], ready: false, queue: [], next: null, duel: null, stage: null, ended: null, music: [], sfx: [] };
+// 記下音效與試聽（e2e 對帳用；照樣呼叫原本的）
+(function(){
+  const s0 = F.sfx; F.sfx = function(n, o){ H.sfx.push([n, o == null ? null : JSON.parse(JSON.stringify(o))]); if (H.sfx.length > 400) H.sfx.splice(0, 200); return s0.apply(this, arguments); };
+  const m0 = F.music.play; F.music.play = function(card, o){ H.music.push(card && card.id); return m0.apply(this, arguments); };
+})();
 window.addEventListener('error', e => H.errors.push(String(e.message || e)));
 let seedN = +(Q.get('seed') || 7), FORCE = Q.get('force') ? { kind: Q.get('force'), toE: Q.get('force') === 'counter' ? 3 : 0, toP: Q.get('force') === 'countered' ? 3 : 0 } : null;
 H.queue = (Q.get('e') || '').split(',').map(s => s.trim()).filter((s, k, a) => a.length > 1 || s);
@@ -96,6 +102,7 @@ function hintTable(){ const t = {}; for (const a of ATTRS) t[a] = ((C.hints || {
 function bestIdx(hand, a){ let bi = -1, bs = -1; hand.forEach((c, i) => { if (!c || c.tier) return; const s = c[a] | 0; if (s > bs) { bs = s; bi = i; } }); return bi; }
 function forcedPlayOf(d, spec){
   if (!spec || spec === '-' || !d.plan) return null;
+  if (typeof spec === 'object') return Number.isInteger(spec.i) && d.e.hand[spec.i] && ATTRS.includes(spec.attr) ? { i: spec.i, attr: spec.attr } : null;
   const hand = d.e.hand, hintA = d.plan.hint.attr;
   if (spec === 'ace') { const i = hand.findIndex(c => c && c.tier); return i >= 0 ? { i, attr: E.aceAxis(hand[i]) } : null; }
   const attr = spec === 'honest' ? hintA : spec === 'bluff' ? E.BEATS[hintA] : (ATTRS.includes(spec) ? spec : null);

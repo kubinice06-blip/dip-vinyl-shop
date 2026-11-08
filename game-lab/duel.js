@@ -393,8 +393,9 @@
       els.htx.textContent = tx;
       els.hint.classList.toggle('empty', !tx);
     }
-    function renderRec(v) {
-      const n = Math.max(0, (v.pile | 0) + (v.eHandN | 0)), max = Math.max(n, v.pileMax | 0);
+    // 他還有 N 張＝他手牌＋牌堆；丟出的那一刻（t=0）他已經把一張放上牌桌 → thrown＝1 先少一張（不等下一手的 view）
+    function renderRec(v, thrown) {
+      const n = Math.max(0, (v.pile | 0) + (v.eHandN | 0) - (thrown | 0)), max = Math.max(n + (thrown | 0), v.pileMax | 0);
       els.bars.innerHTML = Array.from({ length: max }, (_, k) => `<i${k < n ? '' : ' class="x"'}></i>`).join('');
       els.pileTx.textContent = T('pileLeft', { n });
       els.sleeve.classList.toggle('off', !!v.over || S.busy);
@@ -671,19 +672,21 @@
       if (a) a.finished.then(() => { el.style.transformOrigin = '50% 50%'; }, () => {});
       return a;
     }
+    // 浮框的句子只在標點後面換行（「冷門」「白版」不會被拆成兩行）：每段（到，。！？為止）包成不拆的一塊（不用 lookbehind：iOS 16.3 以前不認）
+    const segHTML = t => String(t || '').replace(/([，。！？；：])/g, '$1\n').split('\n').filter(Boolean).map(x => `<span class="sg">${esc(x)}</span>`).join('');
     function fadeIn(el, ms) { if (el) A(el, [{ opacity: 0 }, { opacity: 1 }], { duration: ms || 200, easing: 'ease-out' }); }
     function showCallout(ct) {
       const c = els.call;
       c.querySelector('.l1').className = 'l1' + (ct.bluff ? ' bl' : '');
-      c.querySelector('.l1').textContent = ct.l1;
+      c.querySelector('.l1').innerHTML = segHTML(ct.l1);
       c.querySelector('.l2').className = 'l2 ' + ct.cls;
       c.querySelector('.l2').innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : ''}`;
-      c.querySelector('.l3').textContent = ct.l3;
+      c.querySelector('.l3').innerHTML = segHTML(ct.l3);
       c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
-      else A(c, [{ transform: 'translate(-50%,-50%) scale(.3)', opacity: 0 }, { transform: 'translate(-50%,-50%) scale(1.06)', opacity: 1, offset: .6 }, { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
+      else A(c, [{ transform: 'translateX(-50%) scale(.3)', opacity: 0 }, { transform: 'translateX(-50%) scale(1.06)', opacity: 1, offset: .6 }, { transform: 'translateX(-50%) scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
     }
     function hideCallout() {
       const c = els.call; if (!c.classList.contains('on')) return;
@@ -757,6 +760,7 @@
       renderTable(v0);
       if (tileEl) tileEl.classList.add('gone');
       els.hand.querySelectorAll('.chip').forEach(b => { b.disabled = true; });
+      renderRec(v0, 1);
       els.sleeve.classList.add('off');
       fly(els.sp.querySelector('.cv'), srcP, 260); fadeIn(els.sp.querySelector('.who'), 260);
       fly(els.se.querySelector('.cv'), srcE, 260);
@@ -820,6 +824,8 @@
       if ((v.n | 0) >= (v.maxRounds || 6)) hint('tip_rounds', ['rounds']);
       emit('handStart', v);
     }
+    // 六手打完／他牌出完的副標（店主還沒定比法：現在比剩下的聲望絕對值＝engine finish()；要改比扣多少或比幾成，改這裡＋C.duelText.roundsScore）
+    function roundsVars(v, win) { return { p: Math.max(0, v.pHp), e: Math.max(0, v.eHp), who: win ? '你' : '他' }; }
     // 勝利曲（D §4）：一律播整場贏家最後丟出的那張（＝最後一手贏家那邊的唱片；§2.5.1）
     function winnerSong(win, cl) {
       const card = cl ? (win ? cl.pCard : cl.eCard) : null;
@@ -842,7 +848,7 @@
       if (typeof hooks.endText === 'function') try { tx = hooks.endText(result); } catch (e) { console.error(e); }
       if (!tx) {
         const nm = enemy.name || '';
-        if (result.by === 'rounds' || result.by === 'pile') tx = { title: T('roundsOut'), sub: T('roundsScore', { p: Math.max(0, v1.pHp), e: Math.max(0, v1.eHp), who: win ? '你' : '他' }), cls: win ? 'ink' : 'red' };
+        if (result.by === 'rounds' || result.by === 'pile') tx = { title: T('roundsOut'), sub: T('roundsScore', roundsVars(v1, win)), cls: win ? 'ink' : 'red' };
         else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
         else tx = { title: T('koLose'), sub: run && (run.retryLeft | 0) > 0 ? T('koLoseRetry') : '', cls: 'red' };
       }
