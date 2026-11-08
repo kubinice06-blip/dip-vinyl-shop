@@ -88,7 +88,10 @@
 .ec-sv{font:700 11px var(--mono,'Space Mono',monospace);color:var(--win,#2e7d52);white-space:nowrap;}
 .ec-foot{flex:none;padding-top:8px;}
 .ec-foot.two{display:flex;gap:8px;}
-.ec-foot.two .lb-btn{flex:1;}
+.ec-foot.two .lb-btn{flex:1;min-width:0;}
+.ec-sellb{gap:0;}
+.ec-foot.two .lb-btn{min-height:46px;padding-top:3px;padding-bottom:3px;line-height:1.25;}
+.ec-sellb .sub{display:block;max-width:100%;font-size:11px;font-weight:400;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.85;}
 .ec-nudge{animation:ecNudge .32s ease-in-out;}
 @keyframes ecNudge{0%,100%{transform:none;}25%{transform:translateX(-6px);}75%{transform:translateX(6px);}}
 
@@ -104,8 +107,8 @@
 .ec-tx small{font-size:12px;color:var(--gray2,#666);line-height:1.4;}
 .ec-rbuy{flex:none;min-width:96px;min-height:44px;padding:6px 10px;}
 .ec-row .ec-sv{flex:none;font-size:13px;padding-right:6px;}
-.ec-tight .ec-rows{gap:2px;padding-top:4px;}
-.ec-tight .ec-row{min-height:46px;padding:1px 0;}
+.ec-tight .ec-rows{gap:0;padding-top:4px;}
+.ec-tight .ec-row{min-height:44px;padding:0;}
 .ec-tight .ec-row .ec-tx small{display:none;}
 .ec-tight .ec-pix{width:34px;height:34px;}
 .ec-tight .ec-msg{margin-top:6px;}

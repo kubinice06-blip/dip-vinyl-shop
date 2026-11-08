@@ -393,7 +393,7 @@
             '<span class="ec-tx"><b>' + esc(x.name) + '</b><small>' + esc(x.desc) + '</small></span><span class="ec-sv">+' + esc(money(E().sellValue(C(), id))) + '</span></button>';
         }).join('') + '</div>' +
         '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="back">' + esc(ui('close')) + '</button>' +
-        '<button type="button" class="lb-btn pri" data-a="sell"' + (sellReady() ? '' : ' disabled') + '>' + esc(ui('relicSell')) + '</button></div>';
+        '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(ui('relicSell')) + '</span>' + tgtHTML(sub) + '</button></div>';
     }
     var bvals = r.bag.map(function (id) { return card(id) ? E().sellValue(C(), card(id)) : 0; });
     var msg = sub.need > 1 ? fill(ui('bagFullN'), { k: sub.need, n: range(bvals) }) : fill(ui('bagFull'), { n: range(bvals) });
@@ -407,8 +407,10 @@
       }).join('') + '</div>' +
       '<p class="ec-line">' + (fc ? esc(fc.artist + '《' + fc.album + '》') : '&nbsp;') + '</p>' +
       '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="back">' + esc(ui('close')) + '</button>' +
-      '<button type="button" class="lb-btn pri" data-a="sell"' + (sellReady() ? '' : ' disabled') + '>' + esc(ui('sellPick')) + '</button></div>';
+      '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
   }
+  // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
+  function tgtHTML(sub) { return sub.tgt ? '<span class="sub">' + esc(sub.tgt + fill(ui('buy'), { n: sub.price })) + '</span>' : ''; }
   function sellReady() {
     var r = liveRun(), sub = S.sub; if (!r || !sub || sub.picks.length !== sub.need) return false;
     var earn = sub.picks.reduce(function (s, id) { return s + (sub.kind === 'relic' ? E().sellValue(C(), id) : E().sellValue(C(), card(id))); }, 0);
@@ -537,7 +539,7 @@
     var r = liveRun(); if (!r) return;
     var c = card(id), price = E().priceOf(C(), c);
     if (r.bag.length >= bagMax()) {
-      S.sub = { kind: 'card', need: 1, picks: [], price: price, done: function (picks) { done(choose({ type: 'buy', key: S.key, cardId: id, sellId: picks[0] })); } };
+      S.sub = { kind: 'card', need: 1, picks: [], price: price, tgt: '《' + c.album + '》', done: function (picks) { done(choose({ type: 'buy', key: S.key, cardId: id, sellId: picks[0] })); } };
       sfx('tick'); render(); return;
     }
     done(choose({ type: 'buy', key: S.key, cardId: id }));
@@ -547,7 +549,7 @@
     var ids = S.sel.slice(), need = Math.max(0, r.bag.length + ids.length - bagMax());
     var price = (C().economy || {}).bargainPrice || 100;
     if (need > 0) {
-      S.sub = { kind: 'card', need: need, picks: [], price: price, done: function (picks) { done(choose({ type: 'buyBargain', ids: ids, sellIds: picks })); } };
+      S.sub = { kind: 'card', need: need, picks: [], price: price, tgt: ids.map(function (x) { return '《' + ((card(x) || {}).album || '') + '》'; }).join(''), done: function (picks) { done(choose({ type: 'buyBargain', ids: ids, sellIds: picks })); } };
       sfx('tick'); render(); return;
     }
     done(choose({ type: 'buyBargain', ids: ids }));
@@ -555,7 +557,7 @@
   function buyRelic(id) {
     var r = liveRun(); if (!r) return;
     if (r.relics.length >= relicMax()) {
-      S.sub = { kind: 'relic', need: 1, picks: [], price: E().relicPrice(C(), id), done: function (picks) { done(choose({ type: 'buyRelic', relicId: id, sellRelicId: picks[0] })); } };
+      S.sub = { kind: 'relic', need: 1, picks: [], price: E().relicPrice(C(), id), tgt: '「' + ((relicOf(id) || {}).name || '') + '」', done: function (picks) { done(choose({ type: 'buyRelic', relicId: id, sellRelicId: picks[0] })); } };
       sfx('tick'); render(); return;
     }
     done(choose({ type: 'buyRelic', relicId: id }));
