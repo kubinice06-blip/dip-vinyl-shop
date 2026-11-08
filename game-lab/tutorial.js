@@ -285,6 +285,7 @@
   var HAND = ['...kk....', '..kwwk...', '..kwwk...', '..kwwkkk.', '.kkwwwwwk', 'kwkwwwwwk', 'kwwwwwwwk', '.kwwwwwk.', '..kkkkk..'];
   var OWNER_HEAD = ['................', '.....dddddd.....', '....dddddddd....', '....dssssssd....', '....ekkeekke....', '....sdssssds....', '.....dddddd.....'];
   var PAD = 4;
+  var SAY_ARM_RESOLVE_MS = 1000;   // 結算時講的說明：出現 1 秒內的點擊不算「看完了」（RV11-4）
   var SWALLOW_MS = 350;      // 換步之後這麼短的時間內點錯＝上一步的連點，不罵、不震，只是不放行（B-duel-doubletap）
   var TIP_MS = 5000;         // 一次性小提示停多久（SPEC-v3 §6）
   var READ_MS = 1200;        // 至少要在畫面上這麼久才算看過（NP-05）
@@ -643,7 +644,8 @@
   function onCatchTap(e) {
     e.preventDefault(); e.stopPropagation();
     var sh = S.show; if (!sh) return;
-    if (sh.mode === 'say' && sh.onTap && now() - sh.shownAt > 280) { var f = sh.onTap; sh.onTap = null; f(); }
+    // 結算時講的那句（k3「剋中：…」之類）：玩家常在揭曉時連點盤面加速，那串連點不能把這句點掉——1 秒後才收點擊（RV11-4）
+    if (sh.mode === 'say' && sh.onTap && now() - sh.shownAt > (atResolve(sh.step) ? SAY_ARM_RESOLVE_MS : 280)) { var f = sh.onTap; sh.onTap = null; f(); }
   }
   function onMaskDown(e) {
     e.preventDefault(); e.stopPropagation();
@@ -658,6 +660,7 @@
   function wrong() {
     var sh = S.show; if (!sh || !S.root || sh.mode !== 'do' || sh.text == null) return;
     if (sh.shownAt && now() - sh.shownAt < SWALLOW_MS) return;
+    if (sh.quietAt && now() - sh.quietAt < SWALLOW_MS) return;
     var R = S.root._;
     R.rings.querySelectorAll('.tut-ring').forEach(bump); bump(R.hand);
     setText(UI().wrong || '先點我指的這裡。', false); layout(true);
@@ -929,6 +932,7 @@
     if (s.kind === 'do') {
       if (look.indexOf('e-hint') < 0) look.push('e-hint');
       if (s.tri && s.tri.length && look.indexOf('tri') < 0) look.push('tri');
+      if (s.tri && s.tri.length && look.indexOf('rounds') < 0) look.push('rounds');   // 洞連「第 n／6 手」一起框（不從那行字中間切過去；RH-8）
     }
     return look.filter(function (n) { return (s.target || []).indexOf(n) < 0; });
   }
@@ -953,6 +957,7 @@
   function refreshDo(s) {
     var sh = S.show; if (!sh || sh.step !== s || sh.mode !== 'do') return;
     var x = liveDo(s);
+    if (sh.stacked && !x.stacked) sh.quietAt = now();   // 剛攤開：雙擊的第二下落在遮罩上（洞已經移到那張）不罵（RV11-5）
     sh.targets = x.targets; sh.point = x.point; sh.stacked = x.stacked; sh.pointAt = x.pointAt;
     if (sh.text !== x.text) { sh.text = x.text; setText(x.text, sh.colorChars); }
     S.root._.hand.hidden = !sh.point;

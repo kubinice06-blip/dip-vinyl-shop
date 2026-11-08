@@ -1927,7 +1927,9 @@
       if (cam.dev) dev = Math.min(dev, cam.dev);
       k = dev; scale = k / dpr; T.k = k;
       vy = clamp(Math.round(cam.y), 0, H - 1); vh = clamp(Math.round(cam.h), 1, H - vy);
-      bw = Math.round(W * k); bh = Math.round(vh * k);
+      // 高＝鏡頭上下緣各自取整後相減（跟背景快取 round(H·k) 對齊）：倍率不是整數時，round(vh·k) 可能比快取剩下的多一列，
+      //   最後一列沒畫到＝店景與延伸地板之間一條 1 裝置像素的暗線（RH-4：430×932 @2 開面板時 831 列）
+      bw = Math.round(W * k); bh = Math.max(1, Math.round((vy + vh) * k) - Math.round(vy * k));
       if (view.width !== bw) view.width = bw;
       if (view.height !== bh) view.height = bh;
       var cssW = bw / dpr, cssH = bh / dpr;

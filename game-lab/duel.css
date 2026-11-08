@@ -131,7 +131,7 @@
 .dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
 /* 手牌區：高由 duel.js 給（--hand 至少放得下攤開的一排＋浮起＋屬性鈕）；每張絕對定位，transform＝位移 */
 .dl .hand{position:relative;height:120px;margin-top:2px;cursor:pointer;-webkit-touch-callout:none}
-.dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0}
+.dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;overflow:clip}   /* 新抽的那張從手牌區底下滑上來：滑進來那 260 ms 不撐高盤面（不然 fit() 量到 scrollHeight 會開 .tighter，整個盤面跳一下；RH-1） */
 .dl .tile{position:absolute;left:0;top:0;width:60px;height:60px;transform-origin:50% 60%;
   transition:transform .18s cubic-bezier(.2,.7,.3,1),width .18s cubic-bezier(.2,.7,.3,1),height .18s cubic-bezier(.2,.7,.3,1)}
 .dl .hand.noanim .tile{transition:none}
@@ -151,6 +151,7 @@
 .dl .ab{position:relative;flex:none;min-width:54px;height:var(--ab-h);padding:0 9px;display:flex;align-items:center;justify-content:center;
   background:#fff;border:1.5px solid #bdbdbd;box-shadow:0 3px 8px rgba(0,0,0,.16);font:700 15px var(--dl-mono);-webkit-touch-callout:none}
 .dl .ab+.ab{margin-left:10px}   /* 10：教學金框（洞外擴 4＋框線）框住一顆時不壓到隔壁那顆 */
+.dl .abgap{flex:none;align-self:stretch;width:10px}   /* 鈕與鈕之間的縫（10 px，同上）：自己是一塊點擊區、什麼都不做（RV11-2） */
 .dl .ab i{font:700 14px var(--dl-zh);font-style:normal;margin-right:4px}
 .dl .ab b{font-weight:700}
 .dl .ab.top{min-width:62px;height:var(--ab-top);border:2.5px solid var(--ink,#111);font-size:19px;box-shadow:0 4px 10px rgba(0,0,0,.24)}

@@ -43,6 +43,7 @@
   const STACK_DX = 0.3;   // 疊著（店主 17:1x：不要扇形，水平直線像舊版新接龍）：同一條線上每張往右錯開 3 成寬，不轉角、不成弧形
   const LIFT = 10, POP_GAP = 6;  // 浮起 10 px；屬性鈕在浮起那張上面 6 px
   const RUSH_MS = 350;     // 丟出後 350 ms 內的點擊不算「加速這一手」
+  const DBL_MS = 320, DBL_PX = 24;   // 點疊著的手牌攤開後，同一個位置 320 ms 內的第二下＝雙擊的第二下，不算點到滑過來的那張（RV11-5）
   const T_FLIP = 280, T_HIT = 560, T_LINE = 1460, T_NEXT = 2060;
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const Eng = () => window.DipLabEngine;
@@ -506,9 +507,24 @@
     }
     function renderHand(v, opt) {
       opt = opt || {};
+      // 換手時重畫：留下來的牌從原本的位置滑到新位置（FLIP，跟攤開／收回同一個 180 ms 轉場），不在一格裡跳過去（RH-2）
+      const prev = {};
+      if (!rm()) els.tiles.querySelectorAll('.tile:not(.gone)').forEach(t => { if (t._tf && !prev[t.dataset.card]) prev[t.dataset.card] = { tf: t._tf, w: t._w }; });
       els.tiles.innerHTML = handIds(v).map(i => tileHTML(v, i)).join('');
       renderPop();
       layoutHand(false);
+      const moves = [];
+      els.tiles.querySelectorAll('.tile').forEach(t => {
+        const p = prev[t.dataset.card];
+        if (p && (p.tf !== t._tf || p.w !== t._w)) moves.push([t, p]);
+      });
+      if (moves.length) {
+        els.hand.classList.add('noanim');
+        moves.forEach(([t, p]) => { t.style.transform = p.tf; t.style.width = t.style.height = p.w + 'px'; });
+        void els.hand.offsetWidth;
+        els.hand.classList.remove('noanim');
+        moves.forEach(([t]) => { t.style.transform = t._tf; t.style.width = t.style.height = t._w + 'px'; });
+      }
       if (opt.slideNew != null) {
         const t = els.tiles.querySelector(`.tile[data-i="${opt.slideNew}"] .cvw`);
         if (t && !rm()) A(t, [{ transform: 'translateY(40px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 260, easing: 'cubic-bezier(.2,.7,.3,1)' });
@@ -523,14 +539,24 @@
         const a = aceAx(v);
         return `<button type="button" class="ab ace top ${a}" data-tut="chip-ace" data-i="ace" data-a="${a}" aria-label="${esc('王牌 ' + ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><span class="aw">${esc(T('aceWord'))}</span><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`;
       }
-      const top = topAttrOf(c);
-      return ATTRS.map(a => `<button type="button" class="ab ${a}${a === top ? ' top' : ''}" data-tut="chip-${sel.i}-${a}" data-i="${sel.i}" data-a="${a}" aria-label="${esc(ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`).join('');
+      const top = topOf(c);
+      // 鈕與鈕之間的縫是一塊什麼都不做的點擊區（.abgap）：手指落在縫上不會被觸控校正吸到隔壁那顆、也不會當成點手牌外面（RV11-2）
+      return ATTRS.map(a => `<button type="button" class="ab ${a}${a === top ? ' top' : ''}" data-tut="chip-${sel.i}-${a}" data-i="${sel.i}" data-a="${a}" aria-label="${esc(ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`).join('<span class="abgap" aria-hidden="true"></span>');
     }
-    function renderPop() {
+    // 大一點、黑框的那顆（.top）：最高星那色；並列最高時給正在預覽的那色（教學指冷 4 時不讓經 4 看起來才是該按的；RH-6）
+    function topOf(c) {
+      const t = topAttrOf(c), a = S.sel && S.sel.attr;
+      return a && ATTRS.includes(a) && starOf(c, a) === starOf(c, t) ? a : t;
+    }
+    function renderPop(opt) {
       const h = popHTML(), c = S.sel ? cardOf(S.v, S.sel.i) : null, key = h && c ? S.sel.i + ':' + c.id : '';
       if (els.abpop.dataset.k !== key) {          // 換了一張才重畫（滑鼠換預覽的屬性不重畫，按鈕不閃）
         els.abpop.innerHTML = h; els.abpop.dataset.k = key; els.abpop.hidden = !h;
+        els.abpop.querySelectorAll('.abgap').forEach(g => g.addEventListener('click', noop));   // 自己有 click 監聽＝觸控校正的候選（點在縫裡就是它，不是隔壁那顆）
         if (h && !rm()) A(els.abpop, [{ opacity: 0, transform: 'translateY(6px) scale(.9)' }, { opacity: 1, transform: 'none' }], { duration: 140, easing: 'ease-out' });
+      } else if (h && c && S.sel.i !== 'ace' && !(opt && opt.hover)) {   // 預覽換了色（教學 preview）：並列最高時 .top 跟著換（滑鼠移過去不換：按鈕大小一變會在游標底下跳）
+        const t = topOf(c);
+        els.abpop.querySelectorAll('.ab').forEach(b => b.classList.toggle('top', b.dataset.a === t));
       }
       els.abpop.querySelectorAll('.ab').forEach(b => b.classList.toggle('pv', !!(S.sel && b.dataset.a === S.sel.attr)));
       els.hprompt.textContent = S.spread && !S.sel && !S.busy && !isOver() ? T('pickHint') : '';
@@ -545,7 +571,6 @@
       els.hand.classList.toggle('stack', !S.spread); els.hand.classList.toggle('spread', !!S.spread);
       root.classList.toggle('spread', !!S.spread);
       const still = !animate || rm();
-      if (still) els.hand.classList.add('noanim');
       const pos = [];
       let rowY = H;
       if (!S.spread) {
@@ -564,10 +589,14 @@
           pos.push({ x: x0 + k * (s + gap), y: rowY - (up ? LIFT : 0), s, z: up ? 40 : k + 1, up });
         });
       }
+      // 位置沒變的那張不碰（fit() 每次都會重排一次：不能把正在滑的那張打斷成直接跳到終點）
+      //   （比的是上次寫進去的值 t._tf／t._w：style.transform 讀回來的字串瀏覽器會重排空白，不能直接比）
+      const changed = tiles.some((t, k) => t._tf !== `translate(${pos[k].x}px,${pos[k].y}px)` || t._w !== pos[k].s);
+      if (still && changed) els.hand.classList.add('noanim');
       tiles.forEach((t, k) => {
-        const p = pos[k];
-        t.style.width = p.s + 'px'; t.style.height = p.s + 'px';
-        t.style.transform = `translate(${p.x}px,${p.y}px)`;
+        const p = pos[k], tf = `translate(${p.x}px,${p.y}px)`;
+        if (t._w !== p.s) { t._w = p.s; t.style.width = p.s + 'px'; t.style.height = p.s + 'px'; }
+        if (t._tf !== tf) { t._tf = tf; t.style.transform = tf; }
         t.style.zIndex = String(p.z);
         t.classList.toggle('up', !!p.up);
       });
@@ -582,7 +611,8 @@
       const ph = L.popH || 50;
       els.hprompt.style.height = ph + 'px';
       els.hprompt.style.top = Math.max(0, Math.round(rowY - LIFT - POP_GAP - ph)) + 'px';
-      if (still) { void els.hand.offsetWidth; if (!rm()) els.hand.classList.remove('noanim'); }
+      if (still && els.hand.classList.contains('noanim')) { void els.hand.offsetWidth; if (!rm()) els.hand.classList.remove('noanim'); }
+      else if (rm()) els.hand.classList.add('noanim');
     }
 
     // ---------------- 尺寸：沒有捲動；依盤面可用高度換一級 ----------------
@@ -637,6 +667,7 @@
 
     // ---------------- input（FIXLIST 11＝原版：點疊著的手牌＝攤開；點一張＝浮起＋跳屬性鈕；點屬性鈕＝照那個屬性丟出；點外面＝收回） ----------------
     function bumpEl(el) { if (el && !rm()) A(el, [{ transform: 'translateX(0)' }, { transform: 'translateX(-3px)' }, { transform: 'translateX(3px)' }, { transform: 'translateX(0)' }], { duration: 300 }); }
+    const noop = () => {};
     const isOver = () => !!(S.v && S.v.over) || S.ending;
     const canAct = () => !S.busy && S.enterDone && !isOver() && !S.held;
     function setSpread(on, animate) {
@@ -647,11 +678,12 @@
       renderPop(); layoutHand(animate !== false);
       emit('spread', on);
     }
-    function spreadHand() {
+    function spreadHand(ev) {
       if (!canAct()) return false;
       if (S.spread) return true;
       if (!gate({ kind: 'spread' })) return false;
       sfx('tick');
+      S.spreadTap = ev && ev.detail ? { x: ev.clientX, y: ev.clientY, t: performance.now() } : null;
       setSpread(true);
       return true;
     }
@@ -718,16 +750,43 @@
       if (!canAct() || !S.sel || S.sel.i !== i) return;
       throwAttr(i, btn.dataset.a, btn);
     }
-    function handTap(t) {
+    function handTap(t, ev) {
       if (!canAct()) return;
-      if (!S.spread) { if (!spreadHand()) bumpEl(els.tiles); return; }
-      const cv = t.closest('.cvw[data-act="pick"]');
+      if (!S.spread) { if (!spreadHand(ev)) bumpEl(els.tiles); return; }
+      const st = S.spreadTap;
+      if (st && ev && performance.now() - st.t < DBL_MS && Math.hypot(ev.clientX - st.x, ev.clientY - st.y) < DBL_PX) return;   // 雙擊的第二下（RV11-5）
+      let cv = t.closest('.cvw[data-act="pick"]');
+      if (!cv && ev && ev.detail) cv = nearCover(ev.clientX, ev.clientY);
       if (cv) {
         const tl = cv.closest('.tile'), i = tl.dataset.i === 'ace' ? 'ace' : +tl.dataset.i;
         if (!liftCard(i)) bumpEl(cv);
         return;
       }
-      collapseHand(true);                            // 攤開時點到牌與牌之間：收回
+      // 攤開時點到手牌區的空白（那一排上面、虛線框「點一張專輯」）：什麼都不做——收回只在點手牌外面（RV11-3）
+    }
+    // 攤開時點在兩張中間的縫、或那一排上下緣外一點點：算點到最近的那張（滑鼠沒有觸控校正）
+    function nearCover(x, y) {
+      let best = null, bd = 1e9;
+      els.tiles.querySelectorAll('.tile:not(.gone) .cvw[data-act="pick"]').forEach(c => {
+        const r = c.getBoundingClientRect();
+        if (y < r.top - 10 || y > r.bottom + 6) return;
+        const d = x < r.left ? r.left - x : x > r.right ? x - r.right : 0;
+        if (d <= 5 && d < bd) { bd = d; best = c; }
+      });
+      return best;
+    }
+    // 按住屬性鈕：上面一行小字「經典 5 星」（像按住封面看唱片資訊一樣，按住不會出牌；RV11-6）
+    function chipTip(btn) {
+      if (!canAct() || !btn.isConnected) return false;
+      const i = btn.dataset.i === 'ace' ? 'ace' : +btn.dataset.i, c = cardOf(S.v, i), a = btn.dataset.a;
+      if (!c || !ATTRS.includes(a)) return false;
+      els.pop.innerHTML = `<b>${esc((i === 'ace' ? T('aceWord') + ' ' : '') + ZH[a] + ' ' + starOf(c, a) + ' 星')}</b>`;
+      els.pop.hidden = false;
+      const br = btn.getBoundingClientRect(), rr = root.getBoundingClientRect();
+      els.pop.style.left = Math.max(8, Math.min(rr.width - els.pop.offsetWidth - 8, br.left - rr.left + br.width / 2 - els.pop.offsetWidth / 2)) + 'px';
+      els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
+      clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 1600);
+      return true;
     }
     function relicTap(btn) {
       const id = btn.dataset.relic, r = (S.v.relics || []).find(x => x.id === id); if (!r) return;
@@ -765,8 +824,11 @@
         return;
       }
       if ((x = t.closest('.ab'))) { abTap(x); return; }
-      if (t.closest('.hand')) { handTap(t); return; }
-      if (S.spread) collapseHand(true);              // 點手牌外面：收回疊起來
+      if (t.closest('.pop')) return;                 // 屬性鈕之間的縫：什麼都不做（RV11-2）
+      if (t.closest('.hand')) { handTap(t, ev); return; }
+      // 「你丟的」預覽（浮起那張的半透明）、你的名字與聲望那列：還是手牌這一塊，不收回（RV11-3）
+      if (t.closest('.slot.p.pre, .dl-p')) return;
+      if (S.spread) collapseHand(true);              // 點手牌外面（牌桌、他那一塊）：收回疊起來
     }
     // 盤面外面（舞台、頂欄）也算「手牌外面」；唱片資訊、教學遮罩、面板上的點擊不算
     function onDocClick(ev) {
@@ -775,7 +837,7 @@
       if (!t || !t.closest || root.contains(t) || t.closest('#cardInfoMask, #tut, #tutTip, .lb-modal')) return;
       collapseHand(true);
     }
-    const LP_SEL = '.cvw[data-act="pick"], .slot[data-card]';
+    const LP_SEL = '.cvw[data-act="pick"], .slot[data-card], .ab';
     function onDown(ev) {
       const t = ev.target.closest(LP_SEL);
       if (!t || S.held || (ev.button != null && ev.button > 0)) { S.lp = null; return; }
@@ -783,8 +845,8 @@
       lp.h = later(() => {
         if (S.lp !== lp) return;
         S.lp = null;
-        const ok = t.matches('.slot') ? infoOfSlot(t) : infoOfTile(t);
-        if (ok) S.swallow = { el: t, until: performance.now() + 900 };   // 放開手指的那一下 click 不再攤開／浮起／再開一次
+        const ok = t.matches('.ab') ? chipTip(t) : t.matches('.slot') ? infoOfSlot(t) : infoOfTile(t);
+        if (ok) S.swallow = { el: t, until: performance.now() + 900 };   // 放開手指的那一下 click 不再攤開／浮起／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）
       }, LONG_MS);
     }
     function onMove(ev) { const lp = S.lp; if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { clearTimeout(lp.h); S.lp = null; } }
@@ -795,7 +857,7 @@
       const b = ev.target.closest && ev.target.closest('.ab'); if (!b) return;
       const a = b.dataset.a; if (!ATTRS.includes(a) || S.sel.attr === a) return;
       S.sel = { i: S.sel.i, attr: a };
-      renderPop(); renderTri(); renderSlot('p');
+      renderPop({ hover: true }); renderTri(); renderSlot('p');
       emit('selected', { i: S.sel.i, attr: a });
     }
     root.addEventListener('click', onClick);
@@ -841,8 +903,20 @@
       c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
+      placeCallout();
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
       else A(c, [{ transform: 'scale(.3)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: .6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
+    }
+    // 結果框長在字帶裡（上緣＝字帶上緣）；四行（唬你＋剋不動）在矮螢幕放不下時整個往上挪，不蓋到牌桌下的黑線與「你／聲望」那列（RH-3）；
+    //   最多挪到封面下緣（蓋到封面下那行字，不蓋封面）
+    function placeCallout() {
+      const c = els.call;
+      c.style.marginTop = '';
+      const avail = els.table.clientHeight - 2 - c.offsetTop, h = c.offsetHeight;
+      if (h > avail) {
+        const lab = parseFloat(getComputedStyle(els.table).getPropertyValue('--lab')) || 19;
+        c.style.marginTop = -Math.min(h - avail, lab + 4) + 'px';
+      }
     }
     function hideCallout() {
       const c = els.call; if (!c.classList.contains('on')) return;

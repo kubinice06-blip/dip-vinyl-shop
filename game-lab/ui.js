@@ -921,10 +921,11 @@
     s.addEventListener('click', stopEv);
     guardClicks(s);
     bindInfoTaps(s);
+    UI.sheetNeed = 0;
     UI.panel.appendChild(s);
     UI.panel.classList.add('sheeted');
     clearTimeout(UI.camBack); UI.camBack = 0;
-    if (UI.screen === 'scene' && o.cam !== false && UI.camName !== 'reward') cam('reward', 'reward', 380);
+    if (UI.screen === 'scene' && o.cam !== false && UI.camName !== 'reward' && !floorRoom(260)) cam('reward', 'reward', 380);
     focusFirst(s);
     return s;
   }
@@ -932,7 +933,18 @@
   function roomForSheet(s) {
     var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
     var need = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
+    if (UI.camName === 'full' && floorRoom(need)) return;
+    UI.sheetNeed = 0;
     if (vh - 32 - need < 210) cam('strip', 'reward', 380); else cam('reward', 'reward', 380, need);
+  }
+  // 高螢幕接著木地板（V03）時開面板：面板要的高從延伸的地板讓出來，鏡頭照舊看整間店（RH-5：原本換 reward 鏡頭把店景上緣裁掉 58 px，
+  //   讓出來的高又被地板補回去，舞台一樣高、只是少看到牆上的架子）。地板不夠讓才換鏡頭
+  function floorRoom(need) {
+    if (!(UI.floorX > 0) || UI.screen !== 'scene' || !UI.panel) return false;
+    if (UI.panel.clientHeight + UI.floorX < need) return false;
+    UI.sheetNeed = need;
+    fitFloor();
+    return true;
   }
   function camBackSoon() {
     if (UI.screen !== 'scene' || (UI.camName !== 'reward' && UI.camName !== 'strip')) return;
@@ -943,7 +955,7 @@
   function closeSheet(s) {
     if (!s) return;
     if (s.parentNode) s.remove();
-    if (!qs(':scope > .lb-sheet', UI.panel)) { UI.panel.classList.remove('sheeted'); camBackSoon(); }
+    if (!qs(':scope > .lb-sheet', UI.panel)) { UI.panel.classList.remove('sheeted'); if (UI.sheetNeed) { UI.sheetNeed = 0; floorSoon(); } camBackSoon(); }
   }
   // 浮在舞台下緣的小面板（今晚來客的頭像、箱子、試聽機、包包、配件）
   function floatSheet(html, cls) {
@@ -2261,6 +2273,7 @@
       if (UI.floorRO && !c.__floorObs) { try { UI.floorRO.observe(c); c.__floorObs = true; } catch (_) {} }
       need += c.getBoundingClientRect().height + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);
     }
+    if (UI.sheetNeed && qs(':scope > .lb-sheet', p)) need = Math.max(need, UI.sheetNeed);   // 面板開著：至少讓出面板要的高（RH-5）
     var want = Math.max(0, Math.floor(cur + pr.height - need));
     if (want < 24) want = 0;                         // 一點點的空不值得接地板
     if (Math.abs(want - cur) < 2) return;
