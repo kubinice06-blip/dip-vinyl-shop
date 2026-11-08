@@ -11,11 +11,33 @@
 
 ## 進度（第 2 階段）
 - [x] 合併 `v4/B1-M1`（92a352007）
-- [ ] 教學六手：content `C.tutorial.steps／learned／ui`、tutorial.js（allow 擴充、pick 佔位、replayDuel 帶特價箱）、`test/tutorial.test.mjs`
-- [ ] ui.js：重看教學 fakeRun（禮物＋特價箱 c／o／h 或 `save.lastBargain`）、規則卡四尺寸不捲動
-- [ ] check-content 教學步驟檢查、lint-copy 教學字
-- [ ] `tests/e2e.spec.mjs` v4（import e2e-lib；#4 #9 #17 #19 #20 一起）四尺寸綠
-- [ ] e2e-prologue 重跑、段 4 截圖重拍
+- [x] 教學六手：content `C.tutorial.steps／learned／ui`、tutorial.js（allow 擴充、pick 佔位、replayDuel 帶特價箱）、`test/tutorial.test.mjs`（d95b05599）
+- [x] ui.js：重看教學 fakeRun（禮物＋特價箱 c／o／h 或 `save.lastBargain`）、規則卡四尺寸不捲動（03f9830d5）
+- [x] check-content 教學步驟檢查（`tutorialProblems`）、lint-copy 教學字（d95b05599）
+- [x] `tests/e2e.spec.mjs` v4（import e2e-lib；#4 #9 #17 #19 #20 一起）——390×664 逐段跑過（9207b37b1、486c8e443）
+- [ ] e2e.spec 四尺寸整輪（跑中）、e2e-prologue 重跑、段 4 截圖重拍
+
+## 第 2 階段做了什麼
+- **教學六手**（§2.5.5、DECISIONS §5 順序）：18 步（`m1–m5` 比星數＋說明提示＋點破「名盤」、`k1–k3` 冷剋經、`c1–c2` 經剋硬、`h1–h2` 硬剋冷、`b1–b3` 差 2 星剋不動、`a1–a3` 王牌）。
+  - 步驟資料不寫死卡片：`target:['tile:pick']`、`point:'pick'`、`allow:{pick:true}`，`stepsFor(C, tier)` 依手數代入 `C.tutorial.script[tier].pick`
+    （`{id,attr}`→洞＝那一格、手指＝`chip:id:<id>:<attr>`、allow `{chip:{id,attr}}`；`'blocked:o'`→`chip:blocked:o`、allow `{chip:{blocked:'o'}}`；`'ace'`→洞 `hand-ace`、手指 `card-ace`、allow `{ace:true}`）。
+  - 點封面（gate `{kind:'card'}`，屬性＝topAttr）也算，只要選到的那一色＝要的那一色（例：Keyboard Fantasies 的封面會選經典 → 第 2 手擋、要點冷門那顆）。
+  - 第 1 手前一句說明提示（`m1`，指 `e-hint`）；第 1 手結算後點破關鍵字一次（`m5`「『名盤』就是經典。提示裡會藏這種字。」——第 1 手提示 c5 的 key）；第 5 手「又是『名盤』。」接回來。
+  - 結算時講的步驟（target 含 `result`）浮框一出現就 hold 盤面；第 6 手 KO 那手也 hold（講完 `a3` 才蓋大章），所以 L6 小卡在 KO 前學到。
+  - `a3` 依王牌分句（殿堂同色 7 比 2、流亡冷門剋經典 −7、異端「經典剋硬蕊，但 7 星剋不動：比星數」——這句在 FIXLIST 2〔拿掉王牌不會被剋〕之後也成立，差 5 星照樣剋不動）。
+  - 拿掉 v3 的 `forcedAttr`（他出什麼全由引擎 script 決定）、`pulseBigStar`、`e-stars`；`lookFor` 改成提示句。
+- **重看教學**：`DipLabTut.replayBag(C, tier, last)`＝禮物四張＋特價箱三張（`save.lastBargain`＝序章挑的那三張，合法才用；沒有就依 topAttr c、o、h 各第一張）；
+  `replayDuel(C, tier, seed, {bargain})`；ui.js `replayTutorial` 的 fakeRun 帶 `bag`。`save.lastBargain` 在 `doChoose({type:'bargainPick'})` 而且是序章那晚時記下（載入時不合法就清掉）。
+- **規則卡**：可視高 ≤760 收緊（三角縮到 112 px 浮右、六行 13 px、學會的規則一列、「重看教學」跟「關閉」同一列）；430×932 照原樣。學會六張＋重看教學最長的樣子：375×548 窗高 506／548。
+- **check-content** 加 `tutorialProblems(C)`（六手各一個丟、點／丟的步驟形狀、結算步驟在丟之後、L1–L6 各一次照課表、第 1 手前說明提示、點破關鍵字一次、依王牌分句三張都有）。
+- **e2e.spec v4**：見檔頭情境表。v4 版的共用步驟（`seedRun4`、`prologueToDuel4`、`answerBargain`、`walkTutorial4`、`tapHot`、`resolveHands`）先放在 e2e.spec 裡（e2e-lib 沒人擁有、裡面還是 v3）。
+  經濟介面 `LAB_ECON`：預設 game-lab/econ.js 在就用真的、不在就用 `tests/econ-stub.js`（`answerBargain` 兩種都會挑；用替身時 #3 點擊數照真的面板算 4 下）。
+
+## 第 2 階段跟規格不一樣／我自己定的（可逆）
+13. 教學 18 步、每手「點那顆 → 丟！」兩步（v3 是點星鈕兩下＝丟；v4 的 duel.js 只有「丟！」能出手）；第 3、4 手沒有結算後的說明步（小卡掛在「丟」那步，下一手開始前飛），省點擊。
+14. L6 小卡照 §2.5.5 寫「王牌 7 星、不會被剋」；FIXLIST 2 若定案拿掉「不會被剋」，要改 `C.tutorial.learned.L6` 一行（check-content 跟 tutorial.test 的期望字也一行），教學台詞本身不用改。
+15. `C.tutorial.ui` 刪掉沒人用的 `start`／`skip`（v3 的兩顆按鈕字；v4 兩顆接受對決在劇本裡）。
+16. 規則卡的 `.lb-rules .ex／.habit／.step` 等 v3 例子樣式還留在 style.css（沒有元素用到，不影響；C 整理時可刪）。
 
 ## 進度（第 1 階段）
 - [x] notes 開工（4d5cd0efc）
