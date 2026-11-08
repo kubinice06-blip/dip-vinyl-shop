@@ -4,6 +4,7 @@
 // 照教學的每一步餵 gate（跟 duel.js 送的一樣：點封面 {kind:'card'}、點星鈕 {kind:'chip'}、丟 {kind:'throw'}），丟出去時 resolveTurn。
 // 路線：三張王牌 × 特價箱 84 種挑法 × {照做、點錯、看唱片資訊}，每條：
 //   18 步照順序走完、每手 kind／toE／toP＝C.tutorial.expect、第 5 手剋不動（你 −(5−冷)）、第 6 手王牌 KO、前 5 手不 KO、學到 L1–L6、你沒倒。
+//   手牌 5 張（FIXLIST 11；CFG.handSize）：每一手開手時你手上都是 5 張、要教的那張在手上；第 5 手手指指的（blockedChoice 最左）＝特價箱挑的第 2 張。男子的暗手照舊 3 張。
 // 另外測：步驟資料（六手、字數、禁用字、目標名＝duel.js 的名字、allow、三角邊、小卡）、老闆說的話是真的、擋錯招（e2e #20 的純邏輯版）、
 // 重掛（依 duel.n 接到那一手）、跳過、放手、重看教學的包包（禮物＋特價箱 c／o／h 或上次序章挑的三張）。
 import path from 'path';
@@ -62,7 +63,8 @@ function target(duel, pick) {
 // 一條路線（DOM 的順序：丟 → resolveTurn → 結算時講的步驟（盤面 hold）→ 分出勝負才 R.resolved → 下一手 handReady）
 //   variant：'plain' 照手指點（點封面能選對就點封面，不然點星鈕）｜'chip' 一律點星鈕｜'wrong' 每個操作步先點錯幾種｜'info' 每一步先開唱片資訊再關
 function route(tier, bargain, variant = 'plain', o = {}) {
-  const { duel } = tutDuel(tier, bargain, o.seedKey);
+  const { run, duel } = tutDuel(tier, bargain, o.seedKey);
+  const bargainOf = run.bag.slice(4);   // 特價箱挑的三張（照挑的順序）
   const R = TUT.createRunner(C, tier, duel, { engine: E });
   const out = { clashes: [], steps: [], blocked: 0, infoOk: 0, hpAfter: [], over: null, learnedAt: {}, hints: [] };
   const tag = tier + '/' + variant + '/' + (bargain || []).map(id => id.slice(0, 8)).join('+');
@@ -97,10 +99,15 @@ function route(tier, bargain, variant = 'plain', o = {}) {
     const al = s.allow || {};
     const want = target(duel, s.pick);
     ok(!!want, tag + ' ' + s.id + ' 手指指得到（' + JSON.stringify(s.pick) + '）');
+    if (!al.throw) {
+      eq(duel.p.hand.filter(Boolean).length, E.CFG.handSize, tag + ' ' + s.id + ' 第 ' + duel.n + ' 手：手上 ' + E.CFG.handSize + ' 張');
+      eq(duel.e.hand.length, Math.min(3, T.plays.length - duel.n + 1), tag + ' ' + s.id + ' 男子的暗手 3 張（牌單剩不到 3 張時＝剩下的）');
+      if (s.pick === 'blocked:o' && bargainOf) ok(want && want.i === 0 && duel.p.hand[0].id === bargainOf[1], tag + ' 第 5 手手指＝最左＝特價箱挑的第 2 張', { want, hand: duel.p.hand.map(c => c.id) });
+    }
     if (!want) break;
     if (!al.throw) {                    // 點那一顆
       if (variant === 'wrong') {
-        const others = [0, 1, 2].filter(i => i !== want.i && duel.p.hand[i]);
+        const others = duel.p.hand.map((c, i) => i).filter(i => i !== want.i && duel.p.hand[i]);
         if (want.i !== 'ace') {
           tryWrong(chipAct(duel, want.i, ATTRS.find(a => a !== want.attr)), '同一張別色');
           if (E.topAttr(cardAt(duel, want.i)) !== want.attr) tryWrong(cardAct(duel, want.i), '點封面（topAttr 不是要的那色）');
@@ -120,7 +127,7 @@ function route(tier, bargain, variant = 'plain', o = {}) {
     const p = R.pick;
     ok(p && p.i === want.i && p.attr === want.attr, tag + ' ' + s.id + ' 上一步點的就是手指那顆', { p, want });
     if (variant === 'wrong') {
-      const others = [0, 1, 2].filter(i => i !== p.i && duel.p.hand[i]);
+      const others = duel.p.hand.map((c, i) => i).filter(i => i !== p.i && duel.p.hand[i]);
       if (others.length) { tryWrong(chipAct(duel, others[0], p.attr), '丟之前換點別張'); tryWrong({ kind: 'throw', i: others[0], attr: p.attr, id: duel.p.hand[others[0]].id }, '丟別張'); }
       if (p.i !== 'ace') tryWrong({ kind: 'throw', i: p.i, attr: ATTRS.find(a => a !== p.attr), id: cardAt(duel, p.i).id }, '丟同張別色');
     }
@@ -162,10 +169,14 @@ section('C.tutorial：聲望 18、六手課表、劇本（他出的牌與色、�
     const s = T.script[t];
     eq([...s.hand, ...s.draw].sort(), [...C.gifts[t]].sort(), t + ' 起手＋抽牌＝老闆四張');
     eq(s.pick.length, 6, t + ' pick 6 手');
-    const { duel, events } = tutDuel(t);
-    eq([duel.e.hp, duel.p.hp], [18, 10], t + ' startFight(tutorial)：他 18、你 10');
+    eq(s.hand.length + s.draw.length, 4, t + ' 劇本起手＋抽牌＝四張（第 5 張是特價箱挑的第 1 張）');
+    eq(s.pick.slice(0, 4).map(p => p.id), [...s.hand, ...s.draw], t + ' 劇本的四張照出牌順序排（第 k 手出第 k 格）');
+    const { run, duel, events } = tutDuel(t);
+    eq([duel.e.hp, duel.p.hp], [18, E.CFG.playerHp], t + ' startFight(tutorial)：他 18、你 ' + E.CFG.playerHp);
     eq(duel.e.hand.length && duel.plan && duel.plan.attr, 'c', t + ' 第一手他打算出經典');
-    eq(duel.p.hand.map(c => c.id), s.hand, t + ' 起手照劇本');
+    eq(E.CFG.handSize, 5, '手牌 5 張（FIXLIST 11）');
+    eq([E.CFG.enemyHand, duel.e.hand.length], [3, 3], t + ' 男子的暗手 3 張（CFG.enemyHand）');
+    eq(duel.p.hand.map(c => c.id), s.hand.concat(run.bag.slice(4)).slice(0, E.CFG.handSize), t + ' 起手照劇本：四張＋特價箱挑的第 1 張');
     eq(duel.p.ace.id, C.aces[t], t + ' 王牌');
     ok(events.length && events[0].t === 'hand' && events[0].n === 1 && events[0].hint.line === 'c5', t + ' 開場事件 hand 1、提示 c5');
   }
@@ -302,7 +313,7 @@ section('擋錯招（e2e #20 的純邏輯版）：第 2 步點別色／別張、
     eq(R.cur().id, 'm2', t + ' 到 m2');
     R.begin();
     const w = target(duel, T.script[t].pick[0]);
-    for (const a of [chipAct(duel, w.i, 'o'), chipAct(duel, w.i, 'h'), chipAct(duel, (w.i + 1) % 3, 'c'), cardAct(duel, 'ace'), { kind: 'throw', i: w.i, attr: 'c', id: 'x' }])
+    for (const a of [chipAct(duel, w.i, 'o'), chipAct(duel, w.i, 'h'), chipAct(duel, (w.i + 1) % duel.p.hand.length, 'c'), cardAct(duel, 'ace'), { kind: 'throw', i: w.i, attr: 'c', id: 'x' }])
       eq(R.gate(a), false, t + ' m2 擋 ' + JSON.stringify(a));
     eq([R.cur().id, duel.n, R.state], ['m2', 1, 'run'], t + ' 被擋後還在 m2、引擎第 1 手');
     eq(R.last.wrong, 'target', t + ' 標 wrong');
@@ -412,8 +423,8 @@ section('重看教學：包包＝老闆四張＋特價箱 c／o／h 各第一張
       eq(TUT.replayBag(C, t, bad, E), def, t + ' 上次挑的不合法 → 預設 ' + JSON.stringify(bad).slice(0, 40));
     for (const lb of [null, last]) {
       const rp = TUT.replayDuel(C, t, 7, E, { bargain: lb });
-      eq([rp.duel.e.hp, rp.duel.p.hp], [18, 10], t + ' 重看教學那場：他 18、你 10');
-      eq(rp.duel.p.hand.map(c => c.id), T.script[t].hand, t + ' 重看教學起手一樣');
+      eq([rp.duel.e.hp, rp.duel.p.hp], [18, E.CFG.playerHp], t + ' 重看教學那場：他 18、你 ' + E.CFG.playerHp);
+      eq(rp.duel.p.hand.map(c => c.id), T.script[t].hand.concat(TUT.replayBag(C, t, lb, E).slice(4)).slice(0, E.CFG.handSize), t + ' 重看教學起手一樣（四張＋特價箱第 1 張）');
       eq(rp.duel.p.relics, [], t + ' 重看教學沒有發燒配件');
       // 照教學走一遍（用 runner、跟真的一樣）
       const R = TUT.createRunner(C, t, rp.duel, { engine: E });

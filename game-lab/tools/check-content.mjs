@@ -224,7 +224,10 @@ export function shapeProblems(C, E) {
     const s = (T.script || {})[t], w = 'tutorial.script.' + t;
     if (!ok(!!s, w)) continue;
     ok(JSON.stringify(s.plays) === JSON.stringify(T.plays) && JSON.stringify(s.hints) === JSON.stringify(T.hints), w + '：plays／hints＝C.tutorial');
-    ok(Array.isArray(s.hand) && s.hand.length === 3 && Array.isArray(s.draw) && sameSet([...s.hand, ...s.draw], (C.gifts || {})[t] || []), w + '：起手 3＋抽牌＝老闆四張');
+    ok(Array.isArray(s.hand) && Array.isArray(s.draw) && sameSet([...s.hand, ...s.draw], (C.gifts || {})[t] || []), w + '：起手＋抽牌＝老闆四張');
+    // 手牌 5 張（FIXLIST 11）：老闆四張照出牌順序排在前（第 k 手出第 k 格），第 5 張＝特價箱挑的第 1 張；這樣第 5 手最左那張一定是特價箱的（剋不動那課）
+    ok(s.hand.length + s.draw.length === E.CFG.handSize - 1, w + '：劇本四張＝手牌 ' + E.CFG.handSize + ' 張少一張（第 5 張留給特價箱挑的第 1 張）');
+    if (Array.isArray(s.pick)) ok(JSON.stringify(s.pick.slice(0, 4).map(p => p && p.id)) === JSON.stringify([...s.hand, ...s.draw]), w + '：四張照出牌順序排（pick[0..3] 的 id）');
     ok(Array.isArray(s.pick) && s.pick.length === 6 && s.pick[4] === 'blocked:o' && s.pick[5] === 'ace', w + '：pick 6 手，第 5 手 blocked:o、第 6 手 ace');
     if (Array.isArray(s.pick)) s.pick.slice(0, 4).forEach((p, k) => ok(p && ((C.gifts || {})[t] || []).includes(p.id) && ATTRS.includes(p.attr), w + '.pick[' + k + ']：老闆四張之一＋屬性'));
     const ex = (T.expect || {})[t];

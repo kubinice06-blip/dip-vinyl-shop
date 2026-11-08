@@ -8,7 +8,7 @@
 
 - [x] 1 引擎 CFG handSize 5、playerHp 9；客人聲望 H5-1；規則卡頁尾「你 9」；engine 註解與後備表
 - [x] 2 老闆送的（四張禮物＋王牌）不能賣回：engine choose 擋（錯誤碼）、econ 賣回介面標「老闆送的」不能選；S6 ≥5
-- [ ] 3 教學腳本五張版（C.tutorial.script：hand/draw/pick/expect），六課順序不變；男子手牌 3
+- [x] 3 教學腳本五張版（C.tutorial.script：hand/draw/pick/expect），六課順序不變；男子手牌 3
 - [ ] 4 sim --n 3000 22/22；engine.test、tutorial.test、check-content、lint-copy 綠；README 平衡、dev/decks-v4.md、dev/sim-v4.json
 
 ## 記錄
@@ -22,3 +22,9 @@
   engine.test 加 isGift、buy／buyBargain 賣送的 → giftNoSell、賣客人丟的／買的照舊半價、shopPolicy 從不賣送的（2040485／0）。
   e2e-econ #7／#11／#15 改賣能賣的（最值錢那張）、#7 加查送的四張標字＋停用＋硬點選不到：四尺寸 80/80。
   sim --n 3000：22/22，S1 78.3、S6 +11.0（none 67.3）——跟 H5-A 一樣（smart 本來就沒賣過送的）。
+- 步驟 3：C.tutorial.script（TUT_HANDS）：hand＝老闆四張照出牌順序（第 k 手出第 k 格）、draw []；起手第 5 張＝特價箱挑的第 1 張（有 script 不洗）。
+  補牌：第 1 手後補特價箱第 2 張到第 1 格、第 2 手後補第 3 張到第 2 格、之後牌堆空了洗回丟過的禮物補第 3、4 格 →
+  第 5 手手牌＝[特價箱第 2 張, 第 3 張, 洗回的, 洗回的, 特價箱第 1 張]：blockedChoice（最左）一定是特價箱的那張、冷門 ≤3 剋不動。
+  第 1–4 手教的那張都在第 1–4 格、到那一手才出。pick／expect、六課順序、男子暗手 3 張、教學 18 都沒變（只有 pearl 的四張換了順序：Rhythm X 第 3 格）。
+  tutorial.test：起手＝四張＋特價箱第 1 張、你 CFG.playerHp、每個「點」步驟手上 5 張、男子暗手 min(3, 剩下)、第 5 手手指＝最左＝特價箱第 2 張、點錯的別張改用整手的索引。
+  check-content：四張＝handSize−1、照 pick[0..3] 的順序。tutorial.js 頂端註解。tutorial.test 155808／0、engine.test 2040487／0、check-content、lint-copy 通過。

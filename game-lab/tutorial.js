@@ -2,7 +2,8 @@
 //
 // 六手各教一件事（C.tutorial.lessons）：比星數 → 冷剋經 → 經剋硬 → 硬剋冷 → 差 2 星剋不動 → 王牌。對手是序章男子（老實，教學場聲望 18）。
 // 他每手出什麼、提示哪句、你抽哪幾張，都由引擎的 script 決定（C.tutorial.script[tier]，engine.startFight(run, C, {tutorial:true}) 帶進 startDuel；
-// 有 script 時你的牌堆不洗：老闆四張先、特價箱三張照挑的順序接在後面，第 5 手一定是特價箱那幾張）。教學只管「手指指哪、放行哪個動作」。
+// 有 script 時你的牌堆不洗：老闆四張先（照出牌順序）、特價箱三張照挑的順序接在後面；手牌 5 張（FIXLIST 11）＝四張＋特價箱第 1 張，
+// 第 5 手最左那張一定是特價箱的，見 content.js C.tutorial 的註解）。教學只管「手指指哪、放行哪個動作」。
 // 手指目標＝C.tutorial.script[tier].pick（{id,attr} → chip:id:<id>:<attr>；'blocked:o' → chip:blocked:o＝engine.blockedChoice；'ace' → 王牌那格），
 // 由 stepsFor 代入步驟裡的 'pick'／'tile:pick'／allow.pick。
 // 畫面：壓暗＋挖洞（一張 SVG evenodd）、金框脈動、像素手指、貼著目標的老闆一句話（≤25 字）、說明步點一下繼續、

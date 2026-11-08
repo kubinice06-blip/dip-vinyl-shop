@@ -564,7 +564,12 @@
   // ===================================================================
   // 序章男子那場的教學（§2.2.10）。A1 寫規則資料：hp／plays／hints／lessons／script／expect；B2（第二波）寫 steps／learned／ui。
   //   他六手照 plays 出（全部都在男子的牌單裡）、提示照 hints（只用帶 D 族詞的句子），課表：比星數 → 冷剋經 → 經剋硬 → 硬剋冷 → 差 2 星剋不動 → 王牌。
-  //   你：前四手只用老闆送的四張（script.hand＋draw）；第 5 手抽到的一定是特價箱挑的那三張之一（冷門 ≤3，對他的經典 5 剋不動）；第 6 手王牌 KO。
+  //   你（FIXLIST 11：手牌 5 張；男子的暗手照舊 3 張）：script.hand＝老闆四張、照出牌順序排（第 1–4 手各出一張，第 k 手出第 k 格），draw 空；
+  //     起手第 5 張＝特價箱挑的第 1 張（有 script 不洗牌：包包照挑的順序接在四張後面）。每手出掉的那格補牌：第 1 手後補特價箱第 2 張（第 1 格）、
+  //     第 2 手後補第 3 張（第 2 格）、之後牌堆空了把丟過的禮物洗回來補第 3、4 格。所以：
+  //     - 第 1–4 手要教的那張都還在手上（第 k 格到第 k 手才出、才被換掉）；
+  //     - 第 5 手手牌＝[特價箱第 2 張, 第 3 張, 洗回的禮物, 洗回的禮物, 特價箱第 1 張]：engine.blockedChoice 找最左那張＝特價箱的（冷門 ≤3，對他的經典 5 剋不動）；
+  //     - 第 6 手王牌 KO。挑哪三張、洗回哪兩張都一樣（tutorial.test：三王牌 × 84 種 × 四種點法）。
   //   pick：每手手指指哪張、用哪個屬性（{id, attr}｜'blocked:o'＝engine.blockedChoice(duel,'o')｜'ace'）
   //   expect：每手結果（第 5 手 toP＝5−那張的冷門星，只寫 kind 與 blocked）。前四手他扣 16／14／16 < 18 ≤ 加上第 6 手
   // ===================================================================
@@ -575,17 +580,17 @@
   var TUT_HINTS = ['c5', 'c2', 'h2', 'o2', 'c4', 'c2'];
   var TUT_HANDS = {
     hall: {
-      hand: ['david-bowie-low', 'beverly-glenn-copeland-keyboard-fantasies', 'vashti-bunyan-just-another-diamond-day'], draw: ['scott-walker-tilt'],
+      hand: ['david-bowie-low', 'beverly-glenn-copeland-keyboard-fantasies', 'vashti-bunyan-just-another-diamond-day', 'scott-walker-tilt'], draw: [],
       pick: [{ id: 'david-bowie-low', attr: 'c' }, { id: 'beverly-glenn-copeland-keyboard-fantasies', attr: 'o' }, { id: 'vashti-bunyan-just-another-diamond-day', attr: 'c' },
         { id: 'scott-walker-tilt', attr: 'h' }, 'blocked:o', 'ace']
     },
     pearl: {
-      hand: ['bark-psychosis-hex', '黃小楨-賞味期限', '傷心欲絕-我愛您'], draw: ['charles-brackeen-rhythm-x'],
+      hand: ['bark-psychosis-hex', '黃小楨-賞味期限', 'charles-brackeen-rhythm-x', '傷心欲絕-我愛您'], draw: [],
       pick: [{ id: 'bark-psychosis-hex', attr: 'c' }, { id: '黃小楨-賞味期限', attr: 'o' }, { id: 'charles-brackeen-rhythm-x', attr: 'c' },
         { id: '傷心欲絕-我愛您', attr: 'h' }, 'blocked:o', 'ace']
     },
     heresy: {
-      hand: ['the-velvet-underground-white-light-white-heat', 'magma-mekanik-destruktiw-kommandoh', 'pharoah-sanders-tauhid'], draw: ['melt-banana-speak-squeak-creak'],
+      hand: ['the-velvet-underground-white-light-white-heat', 'magma-mekanik-destruktiw-kommandoh', 'pharoah-sanders-tauhid', 'melt-banana-speak-squeak-creak'], draw: [],
       pick: [{ id: 'the-velvet-underground-white-light-white-heat', attr: 'c' }, { id: 'magma-mekanik-destruktiw-kommandoh', attr: 'o' }, { id: 'pharoah-sanders-tauhid', attr: 'c' },
         { id: 'melt-banana-speak-squeak-creak', attr: 'h' }, 'blocked:o', 'ace']
     }
