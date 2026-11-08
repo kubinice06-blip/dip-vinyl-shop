@@ -1,7 +1,7 @@
 // game-lab/tests/e2e-taps.mjs：店內真點測試（SPEC-v4 §5.5 第一項；R-x0 第六項「唱片櫃點不到」的驗收）。A3。
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   node game-lab/tests/e2e-taps.mjs
-//   環境變數（見 e2e-lib.mjs）：LAB_URL 或 LAB_BASE、LAB_SIZES（預設四個驗收尺寸）；LAB_SCREENS＝title（預設）或 title,night（第二波後由 C 加跑今晚來客）
+//   環境變數（見 e2e-lib.mjs）：LAB_URL 或 LAB_BASE、LAB_SIZES（預設四個驗收尺寸）；LAB_SCREENS＝title（預設）或 title,night（今晚來客：seedRun 一份 v4 存檔、標題「繼續今晚」進去；C 整合後加跑）
 //
 // 每個尺寸、每個畫面（全開）：
 //   1. __lab.stage.shop.hotPoints() 的每一點用 page.touchscreen.tap 真點；__lab.stage.onAction 先換成只記 hot.id 的函式（不開面板），觸發的 id＝自己；
@@ -11,7 +11,7 @@
 //   5. 按下 50 ms 時畫面上已經有金色描框（截圖數金色像素）；放開後 300 ms 內出現名牌，箱子的名牌字＝bin.label；
 //   另外：網址帶 ?strict=1（走不到就丟錯）；主控台 0 錯誤；橫條鏡頭裡男子／你說話時泡泡不碰老闆頭部（老闆 x±16 格，SPEC-v4 §2.3.7）。
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
-import { launch, newPage, openTitle, Q, SIZES, record, results, sleep } from './e2e-lib.mjs';
+import { launch, newPage, openTitle, Q, SIZES, record, results, sleep, seedRun, jsClick } from './e2e-lib.mjs';
 
 const SCREENS = (process.env.LAB_SCREENS || 'title').split(',').filter(Boolean);
 const GOLD = [255, 207, 58];   // shop.js 按下描框的顏色 #ffcf3a
@@ -50,9 +50,14 @@ async function runScreen(browser, w, h, screenName) {
   try {
     await openTitle(page, Q('&fast=1&strict=1'));
     if (screenName === 'night') {
-      await page.evaluate(() => window.__lab.go && window.__lab.go('night'));
+      // 今晚來客要有 run：存一份 v4 存檔（特價箱已挑、第 1 位客人前），重開標題「繼續今晚」（C 整合後加跑，§3.3）
+      await seedRun(page, { idx: 1, money: 600 });
+      await openTitle(page, Q('&fast=1&strict=1'));
+      await jsClick(page, '[data-a=cont]');
       await page.waitForFunction(() => window.__lab.screen() === 'night', null, { timeout: 15000 }).catch(() => {});
-      await sleep(800);
+      await sleep(1200);
+      const scr = await page.evaluate(() => window.__lab.screen());
+      if (scr !== 'night') throw new Error('沒進到今晚來客（畫面＝' + scr + '）');
     }
     await page.waitForFunction(() => window.__lab && window.__lab.stage && window.__lab.stage.shop && window.__lab.stage.shop.hotPoints, null, { timeout: 10000 });
     await install(page);
