@@ -75,7 +75,7 @@
   // ------------------------------------------------------------------ 字
   // 盤面上的字：content.duelText 有就用（lint 掃 content.js），沒有就用這份（同一套字，SPEC-v4 §2.2.7）
   const DT0 = {
-    pickHint: '點一張專輯', picked: '選好了：', again: '點別的星換屬性，或按丟', throwBtn: '丟！', waiting: '演完就換下一手（點畫面跳過）',
+    pickHint: '點一張專輯', picked: '選好了：', again: '點別的星換屬性，選好就丟！', throwBtn: '丟！', waiting: '演完就換下一手（點畫面跳過）',
     hintLabel: '提示', sleeve: '蓋著', rounds: '第 {n}／{max} 手', hp: '聲望', aceSlot: '王牌', aceUsed: '用過', aceWord: '王牌',
     he: '他・', you: '你・', slotE: '他丟的', slotP: '你丟的', lastPrefix: '上一手', pileLeft: '他還有 {n} 張',
     counter: '{a}剋{b}，命中！', countered: '{b}剋{a}，被剋了。',
@@ -530,7 +530,8 @@
       if (!S.sel) { els.say.innerHTML = `<span class="w">${esc(T('pickHint'))}</span>`; els.thr.disabled = true; return; }
       const c = cardOf(v, S.sel.i), a = S.sel.attr;
       els.act.classList.add('ready');
-      els.say.innerHTML = `<small>${esc(T('picked'))}${esc(title(c))}</small><b class="${a}">${S.sel.i === 'ace' ? esc(T('aceWord')) + ' ' : ''}${ZH[a]} <span class="num">${starOf(c, a)}</span></b><span class="hn">${esc(T('again'))}</span>`;
+      // 只寫專輯（V13：藝人＋專輯在 360–390 寬被截掉）
+      els.say.innerHTML = `<small>${esc(T('picked'))}《${esc((c && c.album) || '')}》</small><b class="${a}">${S.sel.i === 'ace' ? esc(T('aceWord')) + ' ' : ''}${ZH[a]} <span class="num">${starOf(c, a)}</span></b><span class="hn">${esc(T('again'))}</span>`;
       els.thr.disabled = false;
     }
     function renderAll(opt) {
@@ -555,7 +556,7 @@
     }
     // 牌桌兩張封面的邊長 --scv（店主 2026-11-08：專輯是主角）：牌桌的高扣掉封面上緣、封面下那行字、結果框的位子；
     // 寬扣掉中間那欄（第 n／6 手＋相剋圖例）。[上緣 --tp, 字高 --lab, 結果框高, 最小, 最大]（上緣、字高跟 duel.css 的 .dl-t 一致）
-    const TABLE_FIT = { short: [4, 17, 62, 72, 120], compact: [6, 19, 72, 84, 140], base: [6, 19, 74, 84, 140], roomy: [12, 20, 80, 96, 150] };
+    const TABLE_FIT = { short: [4, 17, 62, 72, 120], compact: [6, 19, 72, 84, 140], base: [6, 19, 74, 84, 140], roomy: [12, 20, 80, 96, 140] };   // 最大 140（FIXLIST 7：牌桌兩張 120–140 CSS px；R-06）
     function sizeTable() {
       const k = ['short', 'compact', 'roomy'].find(c => root.classList.contains(c)) || 'base';
       const [tp, lab, res, mn, mx] = TABLE_FIT[k];
@@ -838,6 +839,7 @@
       hideCallout();
       S.lastCt = ct; S.flash = null;
       renderLast(); renderTri();
+      if (!rm()) A(els.last, [{ opacity: 0 }, { opacity: 0, offset: .5 }, { opacity: 1 }], { duration: 420 });   // 結果框淡完才出「上一手」，不疊字（R-05a）
       rec.ui.lastline = els.last.textContent.replace(/\s+/g, ' ').trim();
       emit('settled', evs);
       if (over) { await finish(over, v1, cl); return true; }
@@ -853,7 +855,7 @@
       S.busy = false;
       renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null }); renderAct();
       scheduleFit();
-      if (!rm()) { A(els.htx, [{ opacity: 0, transform: 'translateY(-4px)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'ease-out' }); A(els.rounds, [{ opacity: .2 }, { opacity: 1 }], { duration: 320 }); }
+      if (!rm()) { A(els.htx, [{ opacity: .45, transform: 'translateY(-3px)' }, { opacity: 1, transform: 'none' }], { duration: 240, easing: 'ease-out' });   // 從半透明開始：中間字帶不會只剩「提示」兩個字（R-05b） A(els.rounds, [{ opacity: .2 }, { opacity: 1 }], { duration: 320 }); }
       if (hs) onEvent(hs);
       handStart(v1);
       setPhase('choose');
@@ -901,11 +903,13 @@
         else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
         else tx = { title: T('koLose'), sub: '', cls: 'red' };      // 老闆說情由接下來的對白講（COPY-07：大章不再寫「老闆：……再一場。」）
       }
+      if (els.call.classList.contains('on')) await wait(220);      // 結果框淡完再蓋大章（R-05c：大章被結果框蓋住半秒）
+      if (S.destroyed) return;
       bigStamp(tx.title, tx.cls || (win ? 'ink' : 'red'), tx.sub);
       onEvent(over);
       S.v = v1;
       emit('over', result);
-      await wait(1500);
+      await wait(result.by === 'rounds' || result.by === 'pile' ? 3000 : 1500);   // 比聲望條的大章有兩行要看：至少 3 秒（R-05c）
       if (S.destroyed) return;
       if (typeof hooks.beforeEnd === 'function') { try { await hooks.beforeEnd(result); } catch (e) { console.error(e); } }
       if (S.destroyed) return;

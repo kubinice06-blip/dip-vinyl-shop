@@ -152,7 +152,7 @@
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・第一次同色比星（含同色同星） | 同一色比星，多的扣差額。 | 本規格新寫 | `coachTips.tip_mirror` |
+| 老闆・第一次同色比星（含同色同星） | 同色比星數，多的扣差額。 | 本規格新寫 | `coachTips.tip_mirror` |
 | 老闆・第一次被唬 | 提示不一定是真的。 | 本規格新寫 | `coachTips.tip_bluff` |
 | 老闆・第一次剋不動（你或他） | 差 2 星以上，剋不動。 | 本規格新寫 | `coachTips.tip_block` |
 | 老闆・第一次丟王牌 | 王牌 7 星，一場用一次。 | 本規格新寫 | `coachTips.tip_ace` |
@@ -173,7 +173,7 @@
 |---|---|---|---|
 | （畫面字）・pickHint | 點一張專輯 | 本規格新寫 | `duelText.pickHint` |
 | （畫面字）・picked | 選好了： | 本規格新寫 | `duelText.picked` |
-| （畫面字）・again | 點別的星換屬性，或按丟 | 本規格新寫 | `duelText.again` |
+| （畫面字）・again | 點別的星換屬性，選好就丟！ | 本規格新寫 | `duelText.again` |
 | （畫面字）・throwBtn | 丟！ | 本規格新寫 | `duelText.throwBtn` |
 | （畫面字）・waiting | 演完就換下一手（點畫面跳過） | 本規格新寫 | `duelText.waiting` |
 | （畫面字）・hintLabel | 提示 | 本規格新寫 | `duelText.hintLabel` |
@@ -229,7 +229,7 @@
 | 老闆・m1・說 | 上面這句是提示，暗示他這手要出什麼。 | 本規格新寫 | `tutorial.steps.m1` |
 | 老闆・m2・做 | 先出這張的經典，跟他比星數。 | 本規格新寫 | `tutorial.steps.m2` |
 | 老闆・m3・做 | 丟！ | 本規格新寫 | `tutorial.steps.m3` |
-| 老闆・m4・說 | 同色就比星數，多的扣差額。 | 本規格新寫 | `tutorial.steps.m4` |
+| 老闆・m4・說 | 同色比星數，多的扣差額。 | 本規格新寫 | `tutorial.steps.m4` |
 | 老闆・m5・說 | 『名盤』就是經典。提示裡會藏這種字。 | 本規格新寫 | `tutorial.steps.m5` |
 
 ## 序章引導教學・第 2 手（老闆的泡泡）
@@ -266,11 +266,11 @@
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・a1・做 | 最後一手。丟王牌：7 星，一場一次。 | 本規格新寫 | `tutorial.steps.a1` |
+| 老闆・a1・做 | 最後一手。丟王牌：7 星，一場用一次。 | 本規格新寫 | `tutorial.steps.a1` |
 | 老闆・a2・做 | 丟！ | 本規格新寫 | `tutorial.steps.a2` |
 | 老闆・a3・說・殿堂 | 同色比星數，7 比 2，他 −5。 | 本規格新寫 | `tutorial.steps.a3.hall` |
 | 老闆・a3・說・流亡 | 冷門剋經典，王牌 7 星，他 −7。 | 本規格新寫 | `tutorial.steps.a3.pearl` |
-| 老闆・a3・說・異端 | 經典剋硬蕊，但 7 星剋不動：比星數。 | 本規格新寫 | `tutorial.steps.a3.heresy` |
+| 老闆・a3・說・異端 | 經典剋硬蕊，但你高 2 星以上，剋不動：他 −5。 | 本規格新寫 | `tutorial.steps.a3.heresy` |
 
 ## 序章引導教學・按鈕與標題
 
@@ -296,7 +296,7 @@
 | （畫面字） | 學會了：經典剋硬蕊 | 本規格新寫 | `tutorial.learned.L3` |
 | （畫面字） | 學會了：硬蕊剋冷門 | 本規格新寫 | `tutorial.learned.L4` |
 | （畫面字） | 學會了：差 2 星剋不動 | 本規格新寫 | `tutorial.learned.L5` |
-| （畫面字） | 學會了：王牌 7 星，一場一次 | 本規格新寫 | `tutorial.learned.L6` |
+| （畫面字） | 學會了：王牌 7 星，一場用一次 | 本規格新寫 | `tutorial.learned.L6` |
 
 ## 店裡熱點（點了說一句）
 

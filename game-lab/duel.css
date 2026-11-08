@@ -150,7 +150,7 @@
 .dl .act .say .w{color:var(--gray,#888)}
 .dl .throw{flex:none;width:96px;height:var(--thr-h);background:var(--ink,#111);color:#fff;font:900 18px var(--dl-zh);letter-spacing:.2em;text-align:center;padding-left:.2em}
 .dl .throw:disabled{background:#e8e8e8;color:#bbb}
-.dl .act.wait .throw{visibility:hidden}
+.dl .act.wait .throw{opacity:.28}   /* 演出中／打完：「丟！」留在原位（停用、淡），底下不空一條（V05） */
 
 /* 發燒配件說明（點圖示） */
 .dl .dl-pop{position:absolute;z-index:30;max-width:230px;background:#fff;border:1px solid var(--gold,#b8860b);box-shadow:0 4px 14px rgba(0,0,0,.18);padding:5px 8px;font-size:12px;line-height:1.5;white-space:normal}
@@ -170,7 +170,7 @@
 
 /* 結算中：手牌淡一點；點畫面加速（封面仍可開唱片資訊） */
 .dl.busy .tile:not(.gone){opacity:.6}
-.dl.over .hand{opacity:.4;pointer-events:none}
+.dl.over .hand{opacity:.6;pointer-events:none}
 .dl.held .hand,.dl.held .act{pointer-events:none}
 
 /* ===================== 尺寸分級 ===================== */
@@ -189,7 +189,7 @@
 .dl.compact .tile+.tile{margin-left:6px}
 .dl.compact .dl-p{padding-top:5px}.dl.compact .hand{margin-top:6px}.dl.compact .act{margin-top:3px}
 /* 矮螢幕（≤600 高，375×548）：SPEC-v3 §4 */
-.dl.short{--ecv:44px;--hcv:54px;--pill:30px;--thr-h:44px;--tri-w:52px;--tri-h:46px}
+.dl.short{--ecv:44px;--hcv:54px;--pill:30px;--thr-h:44px;--tri-w:56px;--tri-h:50px}   /* 相剋圖例最小 56（FIXLIST 7：56–72 px；R-06） */
 .dl.short .dl-e{padding:3px 12px 4px}
 .dl.short .nmrow{height:18px}
 .dl.short .hint{min-height:32px}

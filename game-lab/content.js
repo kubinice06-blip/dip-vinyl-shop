@@ -488,7 +488,7 @@
   // 一次性老闆小提示（每種一輩子只出一次，不擋點擊，5 秒；≤20 字）。鍵＝duel.js hooks.hint(id) 的 id。
   // ===================================================================
   C.coachTips = {
-    tip_mirror: '同一色比星，多的扣差額。',
+    tip_mirror: '同色比星數，多的扣差額。',
     tip_bluff: '提示不一定是真的。',
     tip_block: '差 2 星以上，剋不動。',
     tip_ace: '王牌 7 星，一場用一次。',
@@ -510,7 +510,7 @@
   //   六手打完（FIXLIST 3）：roundsScore 的 {p}／{e}＝聲望條剩幾 %（over 事件的 pct＝engine.pctPair），{who}＝你／他；兩邊比例一樣（算你贏）用 roundsEven
   // ===================================================================
   C.duelText = {
-    pickHint: '點一張專輯', picked: '選好了：', again: '點別的星換屬性，或按丟', throwBtn: '丟！', waiting: '演完就換下一手（點畫面跳過）',
+    pickHint: '點一張專輯', picked: '選好了：', again: '點別的星換屬性，選好就丟！', throwBtn: '丟！', waiting: '演完就換下一手（點畫面跳過）',
     hintLabel: '提示', sleeve: '蓋著', rounds: '第 {n}／{max} 手', hp: '聲望', aceSlot: '王牌', aceUsed: '用過', aceWord: '王牌',
     he: '他・', you: '你・', slotE: '他丟的', slotP: '你丟的', lastPrefix: '上一手', pileLeft: '他還有 {n} 張',
     counter: '{a}剋{b}，命中！', countered: '{b}剋{a}，被剋了。',
@@ -606,7 +606,7 @@
       { id: 'm1', kind: 'say', target: ['e-hint'], text: '上面這句是提示，暗示他這手要出什麼。', bubble: 'below', tag: '新' },
       { id: 'm2', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '先出這張的經典，跟他比星數。', bubble: 'above', tag: '新' },
       { id: 'm3', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
-      { id: 'm4', kind: 'say', target: ['result'], text: '同色就比星數，多的扣差額。', learn: 'L1', tag: '新' },
+      { id: 'm4', kind: 'say', target: ['result'], text: '同色比星數，多的扣差額。', learn: 'L1', tag: '新' },
       { id: 'm5', kind: 'say', target: ['result'], text: '『名盤』就是經典。提示裡會藏這種字。', tag: '新' },
       { id: 'k1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '冷門剋經典：點這顆冷門。', bubble: 'above', tag: '新' },
       { id: 'k2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
@@ -618,12 +618,12 @@
       { id: 'b1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '又是『名盤』。出這張冷門試試。', bubble: 'above', tag: '新' },
       { id: 'b2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
       { id: 'b3', kind: 'say', target: ['result'], text: '他高你 2 星以上，剋不動，改比星數。', learn: 'L5', tag: '新' },
-      { id: 'a1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場一次。', bubble: 'above', tag: '新' },
+      { id: 'a1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場用一次。', bubble: 'above', tag: '新' },
       { id: 'a2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
       { id: 'a3', kind: 'say', target: ['result'], learn: 'L6', tag: '新',
-        text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但 7 星剋不動：比星數。' } }
+        text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但你高 2 星以上，剋不動：他 −5。' } }   // a3.heresy：COPY-04 照結果句的講法、寫出扣多少（tutorial.test 對 toE）
     ],
-    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場一次' },
+    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場用一次' },
     ui: { who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。', skipTut: '跳過教學', replay: '重看教學', learnedTitle: '學會的規則' },
     uiTag: '新'
   };

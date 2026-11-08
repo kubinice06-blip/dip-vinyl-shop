@@ -487,7 +487,7 @@ export function tutorialProblems(C) {
   const steps = T.steps || [];
   if (!ok(steps.length > 0, 'tutorial.steps：沒有步驟')) return bad;
   ok(new Set(steps.map(s => s.id)).size === steps.length, 'tutorial.steps：id 重複');
-  const LEARN = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場一次' };   // L6：FIXLIST 2
+  const LEARN = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場用一次' };   // L6：FIXLIST 2
   ok(JSON.stringify(T.learned) === JSON.stringify(LEARN), 'tutorial.learned 要＝§2.5.5 的 L1–L6');
   ok(T.ui && ['who', 'learnedPrefix', 'wrong', 'skipTut', 'replay', 'learnedTitle'].every(k => typeof T.ui[k] === 'string' && T.ui[k]), 'tutorial.ui 的鍵');
   let hand = 1, thrown = false;

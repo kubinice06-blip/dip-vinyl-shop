@@ -33,7 +33,7 @@ const COMBOS = [];
 for (let a = 0; a < POOL.length; a++) for (let b = a + 1; b < POOL.length; b++) for (let c = b + 1; c < POOL.length; c++) COMBOS.push([POOL[a], POOL[b], POOL[c]]);
 const IDS = ['m1', 'm2', 'm3', 'm4', 'm5', 'k1', 'k2', 'k3', 'c1', 'c2', 'h1', 'h2', 'b1', 'b2', 'b3', 'a1', 'a2', 'a3'];
 const LEARN_AT = { m4: 'L1', k3: 'L2', c2: 'L3', h2: 'L4', b3: 'L5', a3: 'L6' };
-const LEARNED = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場一次' };   // §2.5.5
+const LEARNED = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場用一次' };   // §2.5.5
 const TRI = { k1: ['oc'], k2: ['oc'], c1: ['ch'], c2: ['ch'], h1: ['ho'], h2: ['ho'], b1: ['oc'], b2: ['oc'] };
 
 // 教學那場：跟 ui.js 一樣用 startFight(run, C, {tutorial:true})；包包＝老闆四張＋特價箱挑的三張（照挑的順序）
@@ -255,7 +255,7 @@ section('老闆說的話是真的：提示、點破的關鍵字、三相剋、�
   const hall = route('hall', null).clashes[5], pearl = route('pearl', null).clashes[5], heresy = route('heresy', null).clashes[5];
   ok(hall.kind === 'mirrorWin' && hall.pAttr === hall.eAttr && a3.hall.includes(hall.pStar + ' 比 ' + hall.eStar) && a3.hall.includes('−' + hall.toE), '殿堂 a3：' + a3.hall, hall);
   ok(pearl.kind === 'counter' && a3.pearl.includes('−' + pearl.toE) && a3.pearl.startsWith(ZH[pearl.pAttr] + '剋' + ZH[pearl.eAttr]), '流亡 a3：' + a3.pearl, pearl);
-  ok(heresy.kind === 'mirrorWin' && heresy.by === 'e' && heresy.blocked && a3.heresy.startsWith(ZH[heresy.eAttr] + '剋' + ZH[heresy.pAttr]), '異端 a3：' + a3.heresy, heresy);
+  ok(heresy.kind === 'mirrorWin' && heresy.by === 'e' && heresy.blocked && a3.heresy.startsWith(ZH[heresy.eAttr] + '剋' + ZH[heresy.pAttr]) && a3.heresy.includes('−' + heresy.toE), '異端 a3（COPY-04：跟另外兩種一樣寫出扣多少）：' + a3.heresy, heresy);
 });
 
 // ---------------------------------------------------------------------------
