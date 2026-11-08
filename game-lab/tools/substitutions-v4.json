@@ -1,3 +1,23 @@
 {
- "_doc": "v4 烘不出來時的替換（SPEC-v4 §4.6）：{ \"<舊 id>\": {\"new\":\"<新 id>\",\"group\":\"<deck-lists 組>\",\"reason\":\"…\"} }。A3-M1（2026-11-08）全部 207 張封面／試聽都驗過，沒有替換。A3-M2 有換牌時記在這裡，A1（content.js）、A2（shops/dip.json）照換。"
+ "_doc": "v4 換牌（SPEC-v4 §4.6、§3.1 A1 交件 5(b)）：{ \"<舊 id>\": {\"new\":\"<新 id>\",\"group\":\"<deck-lists 組>\",\"reason\":\"…\"} }。A3-M1（2026-11-08）全部 207 張封面／試聽都驗過，沒有烘不出來的替換。A3-M2（2026-11-08）照 A1 的模擬校準請求換 4 張（下列）；A1（content.js 的 already／skip 牌單）照換，A2（shops/dip.json）不受影響（4 張舊卡都不在店裡的封面）。",
+ "pauline-anna-strom-trans-millenia-consort": {
+  "new": "don-slepian-sea-of-bliss",
+  "group": "already",
+  "reason": "A3-M2：A1 模擬校準（§5.2 S4 三手內結束 ≤5% 與 S7 一般客人單場勝率差 ≤20 點只調聲望與經濟過不了；cards.js 沒有沒用到的嚴格冷 4 卡），冷 5 換嚴格冷 4。3/5/3 → 3/4/2；同一路 80 年代新世紀／氛圍。"
+ },
+ "gigi-masin-wind": {
+  "new": "harold-budd-abandoned-cities",
+  "group": "already",
+  "reason": "A3-M2：A1 模擬校準（§5.2 S4 三手內結束 ≤5% 與 S7 一般客人單場勝率差 ≤20 點只調聲望與經濟過不了；cards.js 沒有沒用到的嚴格冷 4 卡），冷 5 換嚴格冷 4。3/5/3 → 3/4/3；同一路 80 年代氛圍。"
+ },
+ "mina-studio-uno-66": {
+  "new": "roberto-goyeneche-cantor-de-mi-barrio",
+  "group": "skip",
+  "reason": "A3-M2：A1 模擬校準（§5.2 S4 三手內結束 ≤5% 與 S7 一般客人單場勝率差 ≤20 點只調聲望與經濟過不了；cards.js 沒有沒用到的嚴格冷 4 卡），冷 5 換嚴格冷 4。4/5/2 → 3/4/2；二手店老闆的世界歌謠（探戈）換義大利流行。"
+ },
+ "dorival-caymmi-caymmi-visita-tom": {
+  "new": "king-sunny-ade-aura",
+  "group": "skip",
+  "reason": "A3-M2：A1 模擬校準（§5.2 S4 三手內結束 ≤5% 與 S7 一般客人單場勝率差 ≤20 點只調聲望與經濟過不了；cards.js 沒有沒用到的嚴格冷 4 卡），冷 5 換嚴格冷 4。4/5/1 → 3/4/2；奈及利亞 juju 換巴西。"
+ }
 }
