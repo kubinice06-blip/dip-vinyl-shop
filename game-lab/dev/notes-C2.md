@@ -8,7 +8,7 @@
 - [x] 1. 合併 v4/B1 → v4/B3 → v4/B2（--no-ff；三個都沒衝突）
 - [x] 2. 請求：B1／B2／B3 notes＋第一波遺留（check-shops 交叉比對、e2e-taps 今晚來客）
 - [x] 3. B2 的 DipLabEcon 替身換成真的 econ.js（index.html 早已載真的；e2e-prologue 改用真的、e2e.spec 預設真的）
-- [ ] 4. index.html ?v=41；README v4
+- [x] 4. index.html ?v=41（267524a11）；README v4（b3f6a54c1）
 - [ ] 5. 全部檢查（§5）
 - [ ] 6. 段 6 截圖（shots/C2/）＋自己看過、修畫面問題
 
@@ -23,6 +23,7 @@
 - [x] B2：v4 共用步驟搬進 e2e-lib（seedRun v4 存檔、先挑特價箱…），e2e.spec 改 import（見 git log）
 - [x] e2e-prologue 改用真的 econ.js（d4afd1892）
 - [x] B1：e2e-duel 跑 index.html：ui.js `__lab.duelLab`＋e2e-duel `indexShim`（659a5e734）
+- [x] 看截圖修：對決出牌前中間空帶（店主 FIXLIST 9）→ 提示句移到牌桌中間字帶、他那格蓋著的封套＋？、你那格選的預覽、牌桌依內容收合（13433a018）
 - 沒做（等店主）：FIXLIST 2（王牌不會被剋）、FIXLIST 3（六手比法）、FIXLIST 6 客人名字；stage 收高保住人頭的 API（建議、不擋）
 - 已由 B2 做掉、不用再動：B3 1／2／3／5／6／9（econ 標籤、configure、關掉後重畫、onStageAction 轉 econ、bargainPick resolve、lint-copy 掃 econ.js）；B1 給 B2 的盤面名字。
 
