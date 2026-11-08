@@ -242,7 +242,7 @@ async function runSize(browser, w, h) {
       const vis9 = await shown(page, 'counter');
       const r0 = await run(page), rid = r0.shop.relics[0];
       const price = await page.evaluate(id => window.DipLabEngine.relicPrice(window.DipLabContent, id), rid);
-      await tapSel(page, `.ec-drawer [data-a=rbuy][data-r="${rid}"]`); await sleep(300);
+      await tapSel(page, `.ec-drawer [data-a=rbuy][data-r="${rid}"]`); await sleep(600);   // 買完 450 ms 內再點不算（RT-2 防連點）：等過了才點下一件
       const r1 = await run(page);
       const ok1 = price === 3000 && r1.money === r0.money - price && r1.relics.length === 3 && r1.relics.includes(rid) && !r1.shop.relics.includes(rid);
       // 滿 3 件：再買一件 → 先賣一件
