@@ -165,7 +165,7 @@
     already: {
       id: 'already', name: '我早就聽過', title: '社團學長', spr: 'e2', avatar: null,
       honesty: 'sometimes', hp: 17, taste: 'hco',
-      deck: ['pauline-anna-strom-trans-millenia-consort', 'gigi-masin-wind', 'demetrio-stratos-metrodora',
+      deck: ['don-slepian-sea-of-bliss', 'harold-budd-abandoned-cities', 'demetrio-stratos-metrodora',
         'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des', 'nocturnal-emissions-fruiting-body', 'eivind-aarset-electronique-noire',
         'yezda-urfa-boris'],
       voice: { freq: 440, wave: 'square' }
@@ -180,7 +180,7 @@
     skip: {
       id: 'skip', name: '跳針王', title: '二手店老闆', spr: 'e4', avatar: null,
       honesty: 'sometimes', hp: 17, taste: 'coh',
-      deck: ['mina-studio-uno-66', 'amalia-rodrigues-gostava-de-ser-quem-era', 'dorival-caymmi-caymmi-visita-tom',
+      deck: ['roberto-goyeneche-cantor-de-mi-barrio', 'amalia-rodrigues-gostava-de-ser-quem-era', 'king-sunny-ade-aura',
         'washington-phillips-the-key-to-the-kingdom', 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri',
         'tony-scott-the-indonesian-all-stars-djanger-bali', 'barney-wilen-moshi'],
       voice: { freq: 330, wave: 'square', jitter: 20 }
@@ -228,20 +228,10 @@
   C.prologueEnemy = 'man';
   C.boss = 'boss';
 
-  // ===================================================================
-  // A3-M2 換牌（SPEC-v4 §3.1 A1 交件 5(b)、§6.7；理由與模擬見 dev/notes-A1.md「請求」）：兩位冷門客人各把 2 張冷 5 換成嚴格冷 4，
-  //   S7（一般客人單場最高減最低 ≤20 點）與 S4（≤3 手 ≤5%）才能一起過。新卡由 A3 烘進 cards.js（A3-M2）之後這裡自動換上，
-  //   還沒烘之前照舊用原本那張（遊戲不會壞）。整合時（C）把上面的牌單直接改寫成新卡、刪掉這張表。
-  //   sim.mjs --project-m2 用 seed 星數先模擬換牌後的樣子。[舊 id, 新 id]，位置不變
-  // ===================================================================
-  C.m2Swaps = {
-    already: [['pauline-anna-strom-trans-millenia-consort', 'don-slepian-sea-of-bliss'], ['gigi-masin-wind', 'harold-budd-abandoned-cities']],
-    skip:    [['mina-studio-uno-66', 'roberto-goyeneche-cantor-de-mi-barrio'], ['dorival-caymmi-caymmi-visita-tom', 'king-sunny-ade-aura']]
-  };
-  Object.keys(C.m2Swaps).forEach(function (g) {
-    var d = C.enemies[g].deck;
-    C.m2Swaps[g].forEach(function (sw) { var k = d.indexOf(sw[0]); if (k >= 0 && CARDS[sw[1]]) d[k] = sw[1]; });
-  });
+  // A3-M2 換牌（SPEC-v4 §3.1 A1 交件 5(b)、§6.7；理由與模擬見 dev/notes-A1.md）：already 的 Pauline Anna Strom／Gigi Masin 換成
+  //   Don Slepian／Harold Budd，skip 的 Mina／Dorival Caymmi 換成 Roberto Goyeneche／King Sunny Adé（冷 5 → 嚴格冷 4，位置不變），
+  //   S7（一般客人單場最高減最低 ≤20 點）與 S4（≤3 手 ≤5%）才能一起過。A3-M2 已烘進 cards.js，上面的牌單直接寫新卡。
+
   C.voices = { owner: { freq: 196, wave: 'square' }, narrator: null };   // 打字機嗶聲
 
   // ===================================================================

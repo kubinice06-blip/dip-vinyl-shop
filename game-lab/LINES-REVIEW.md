@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第一波（A1）：劇本、回嘴、教學步驟仍是 v3 墊片，第二波由 B2 換成 v4 劇本與六手教學。
 
-統計：原句 34、拍板 2、店主 20、新 255（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 34、拍板 2、店主 20、新 267（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（有聲音）
 
@@ -410,15 +410,27 @@
 | （畫面字） | （本店） | 本規格新寫 | `shops/dip.json.district` |
 | （畫面字） | 斜俯視 3/4（店主 2026-11-07 選的路線 P2）：x＝寬、y＝地板前緣（越下越近）、高度直接往上減；不縮放。人＝16×16 小人 ×3（48 格＝1.70 m，28.2 格/m）；1 格≈1.336 CSS px（390 寬）。 | 本規格新寫 | `shops/dip.json.note` |
 | （畫面字） | pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給 | 本規格新寫 | `shops/dip.json.light.note` |
-| （畫面字） | 唱盤區（他左白台、你右黑台、老闆在兩台中間後面當裁判）：轉盤中心、半空相撞點、地板落點（碎片、平躺的唱片）、弧高 | 本規格新寫 | `shops/dip.json.duel.note` |
+| （畫面字） | 唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片 | 本規格新寫 | `shops/dip.json.duel.note` |
 | （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[3].hot.label` |
 | （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[4].revealLabel` |
-| （畫面字） | 爵士區 | 本規格新寫 | `shops/dip.json.props[24].hot.label` |
+| （畫面字） | 搖滾／流行牆 | 本規格新寫 | `shops/dip.json.props[4].label` |
+| （畫面字） | 爵士／靈魂牆 | 本規格新寫 | `shops/dip.json.props[5].label` |
+| （畫面字） | 民謠／藍調 | 本規格新寫 | `shops/dip.json.props[12].bin.label` |
+| （畫面字） | R&B／靈魂 | 本規格新寫 | `shops/dip.json.props[16].bin.label` |
+| （畫面字） | 原聲／圖庫 | 本規格新寫 | `shops/dip.json.props[17].bin.label` |
+| （畫面字） | 搖滾／龐克 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
+| （畫面字） | 日本／CITY | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
+| （畫面字） | 嘻哈／放克 | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
+| （畫面字） | 電子／氛圍 | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
+| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
+| （畫面字） | 華語／台語 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
+| （畫面字） | 爵士區 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
 | （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[25].label` |
-| （畫面字） | 台灣區 | 本規格新寫 | `shops/dip.json.props[25].hot.label` |
+| （畫面字） | 台灣區 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
 | （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[26].hot.label` |
-| （畫面字） | 噪音區 | 本規格新寫 | `shops/dip.json.props[28].hot.label` |
-| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[29].hot.label` |
+| （畫面字） | 噪音區 | 本規格新寫 | `shops/dip.json.props[28].bin.label` |
+| （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[29].bin.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[30].hot.label` |
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
 | （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
 | （畫面字） | 熟客：背對鏡頭翻後牆的箱子（P2 原型的位置）；舞台 API 不動她 | 本規格新寫 | `shops/dip.json.actors[1].note` |

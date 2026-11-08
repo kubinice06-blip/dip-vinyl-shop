@@ -6,9 +6,9 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 ## 階段
 
 - **第 1 階段（完成）**：engine.js v4（§2.1 全部）、content.js 不依賴新烘卡的資料（§2.2.2–§2.2.10）、test/engine.test.mjs v4（用現有 cards.js＋測試內建的星數墊片）、lint-copy／check-content 改版、owner-lines-v4.json。**沒有校準模擬**。
-- **第 2 階段（完成，等 A3-M2）**：已合併 A3-M1（`4433435c0`）。sim.mjs v4 重寫、校準聲望與經濟寫回 content.js、`dev/decks-v4.md`、`dev/sim-v4.json`。
-  **兩位冷門客人各要換 2 張新卡（A3-M2，見「請求」）**：content.js 已有 `C.m2Swaps` 換牌表，新卡烘進 cards.js 後自動換上；在那之前 `node game-lab/sim.mjs --n 3000` 是 19/20（只差 S7），`--project-m2`（用 seed 星數先換上）是 20/20。
-  合併 A3-M2 之後要做的：`node game-lab/tools/check-content.mjs`（會檢查換牌已生效）→ `node game-lab/sim.mjs --n 3000` 應該 20/20、數字＝下面那張表（決定性，跟 `--project-m2` 一模一樣）→ 用 decks-md 產生器重產 `dev/decks-v4.md`（或手改「待烘」四格）。
+- **第 2 階段（完成）**：已合併 A3-M1（`4433435c0`）。sim.mjs v4 重寫、校準聲望與經濟寫回 content.js、`dev/decks-v4.md`、`dev/sim-v4.json`。
+  **兩位冷門客人各要換 2 張新卡（A3-M2，見「請求」）**：（第 2 階段當時）content.js 先放 `C.m2Swaps` 換牌表，新卡烘進 cards.js 後自動換上；在那之前 `node game-lab/sim.mjs --n 3000` 是 19/20（只差 S7），`--project-m2`（用 seed 星數先換上）是 20/20。
+- **第 3 階段（完成）**：已合併 A3-M2（四張新卡烘進 cards.js）。content.js 的 already／skip 牌單直接寫新卡，刪掉 `C.m2Swaps`、`sim --project-m2`、check-content 的換牌段；engine.test 的 STUB 表把四張舊卡換成新卡（stubbed 0、baked & checked 46）。`sim.mjs --n 3000` 20/20，數字跟第 2 階段 `--project-m2` 逐字相同（mercy 關也相同）。重產 `dev/decks-v4.md`（換上的四張標「A3-M2：換掉 …」）、`dev/sim-v4.json`（少了 `m2` 欄，其餘不變）。
 
 ## 進度
 
@@ -22,21 +22,31 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 - [x] 校準（`9477c2552`）：聲望、開局的錢、三件加成價寫回 content.js；`C.m2Swaps`＋`sim --project-m2`；check-content 檢查換牌表
 - [x] dev/decks-v4.md（§4 牌單表＋A3-M2 之後的兩副牌＋禮物＋特價箱＋經濟表）、dev/sim-v4.json（`sim.mjs --n 3000 --project-m2 --json`）
 - [x] 合併 A3-M2（merge commit，`v4/A3-M2 @ 8435b2345`；連帶進來 A2-M1／A3 第二段的 shop.js、hit.test、e2e-taps、check-covers 等，都不是 A1 的檔）
-- [ ] 第 3 階段：牌單直接改寫成新卡、刪 `C.m2Swaps`／`--project-m2`／check-content 換牌段 → 重跑必過四項 → 重產 dev/decks-v4.md、dev/sim-v4.json
+- [x] 第 3 階段：牌單直接改寫成新卡、刪 `C.m2Swaps`／`--project-m2`／check-content 換牌段、engine.test STUB 換新卡 → 必過四項全過 → 重產 dev/decks-v4.md、dev/sim-v4.json
+
+## 第 3 階段測試結果（合併 A3-M2 後，2026-11-08）
+
+| 指令 | 結果 |
+|---|---|
+| `node game-lab/test/engine.test.mjs` | 1404457 passed, 0 failed；stubbed cards 0（baked & checked 46） |
+| `node game-lab/sim.mjs --n 3000 --json game-lab/dev/sim-v4.json` | 20/20（21.0 秒）；跟第 2 階段 `--project-m2` 的輸出逐字相同（只差耗時那行） |
+| `node game-lab/sim.mjs --n 3000 --set mercy=false` | 20/20；跟第 2 階段 `--set mercy=false --project-m2` 逐字相同 |
+| `node game-lab/tools/check-content.mjs` | 通過（卡 207 張、客人 10 位、配件 9 件、箱子 14 區） |
+| `node game-lab/tools/lint-copy.mjs` | 通過（句子 323；原句／拍板 36、店主 20 逐字一致）；LINES-REVIEW.md 無變動 |
+| `node game-lab/tools/check-covers.mjs`（A3 的，順跑） | OK（看得到的封面 60 張、12 箱；刪 `C.m2Swaps` 後照樣過） |
 
 ## 第 2 階段校準筆記
 
-- 校準工具在 scratchpad（不提交，`A1cal/`）：`try.sh`、`tier.mjs`（S7 依王牌／場次拆）、`pool.cjs`＋`grid.cjs`（經濟格點 432 組）、`m2.json`、`decks-md.cjs`（產 dev/decks-v4.md）。容器重啟後不見也沒關係：`sim.mjs --hp／--patch／--project-m2` 就能重做。
+- 校準工具在 scratchpad（不提交，`A1cal/`）：`try.sh`、`tier.mjs`（S7 依王牌／場次拆）、`pool.cjs`＋`grid.cjs`（經濟格點 432 組）、`m2.json`、`decks-md.cjs`（產 dev/decks-v4.md）。容器重啟後不見也沒關係：`sim.mjs --hp／--patch` 就能重做（`--project-m2` 第 3 階段已刪）。
 - **結論 1：只調聲望，S4 與 S7 過不了一起。** ≤3 手的比例幾乎只看聲望：王牌 7＋兩張 5＝17，聲望 ≥18 才 ≤3%、16 是 12–18%。但聲望 17–18 時 S7 一般客人 65%（我早就聽過、跳針王）到 95%（月底吃土），差 28 點；月底吃土聲望 20 仍 93%（§4.1：他只准調聲望、不換卡）。所以只能讓兩位冷門客人變好打。
 - **結論 2：要換的是冷 5 → 嚴格冷 4。** 把唬人色 4 星換 3 星（跟冷門仙人互換）沒用（64.5→62.8）；每把一張冷 5 換成嚴格冷 4 約 +4 點（玩家硬 3 的牌對冷 4 剋得動，對冷 5 被「高 2 星剋不動」擋）。cards.js 裡沒有沒用過的嚴格冷 4 卡（老王樂隊在教學、傷心欲絕在禮物、其他在箱子／牆），走 §3.1 交件 5(b)。只換 2 張的版本（換唬人色那兩張）比換現在選的兩張差 2–4 點。
 - **結論 3：S6 靠「加成配件在菁英前買得起」。** 起始值（$0 開局、加成 $1200）時會買的只在藏家前買得起配件，smart − none 只有 1–3 點。格點掃開局／序章獎金／一般／菁英獎金／唱片價／加成價：只要「菁英前的錢 ≥ 加成價」就到 +6；再多（第 3 位前就買得起）會讓 S1 >85%、≤3 手 >5%。選最少改動 D 數字的一組：**開局 $300（〔補〕）、三件加成 $1000**，一般 $300／菁英 $500／唱片價全照 D。只動開局（加成維持 $1200）也過，但 S6 只有 5.6 點；加成 $900 不動開局是 5.9 點。
 - **聲望**（範圍 12–20）：那張我有 18、我早就聽過 17、針壓強迫症 19、跳針王 17、月底吃土 20（上限）、剁手黨 20（上限）、冷門仙人 17、名盤守門員 20（上限）、傳說藏家 16。冷門仙人 18 會讓 S7 掉到 59%（<60），藏家 17 會讓 S7 掉到 42%（<45）。
 - **餘裕**（N=3000，決定性）：S1 81.2（上限 85）、S4 ≤3 手 4.3%（上限 5）、S6 6.1 點（下限 5）、S7 一般客人差 18.1 點（上限 20）、藏家 46.5%（下限 45）、菁英 64.2／65.3%（下限 60）。最緊的是藏家與 S6。
 
-### 最後的模擬表（`node game-lab/sim.mjs --n 3000 --project-m2`，20/20；合併 A3-M2 後不加旗標應該一模一樣）
+### 最後的模擬表（`node game-lab/sim.mjs --n 3000`，20/20；第 3 階段合併 A3-M2 後實跑，跟第 2 階段 `--project-m2` 逐字相同）
 
 ```
-（--project-m2：A3-M2 的 4 張新卡還沒烘，先用 seed 星數模擬：don-slepian-sea-of-bliss、harold-budd-abandoned-cities、roberto-goyeneche-cantor-de-mi-barrio、king-sunny-ade-aura）
 
 ### 一整晚（第一晚：序章男子 → Fishmans＋配件三選一 → 3 位一般 → 1 位菁英 → 藏家；老闆說情一次；N=3000 晚／格；mercy 開）
 
@@ -103,7 +113,7 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 20/20 通過（18.4 秒）
 ```
 
-### mercy 關掉（`--set mercy=false --project-m2`；給店主看原版「你落後時他出招變鈍」這條的影響）：20/20
+### mercy 關掉（`--set mercy=false`；給店主看原版「你落後時他出招變鈍」這條的影響）：20/20
 
 | | mercy 開 | mercy 關 |
 |---|---|---|
@@ -117,7 +127,7 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 
 mercy 只影響 normal／hard 的客人（easy 本來就關），而且只在你落後時；整體影響 ≤1 點。
 
-### 舊牌單（現在 repo 的狀態，還沒 A3-M2）：`node game-lab/sim.mjs --n 3000` → 19/20
+### 舊牌單（第 2 階段、A3-M2 之前，留作對照）：`node game-lab/sim.mjs --n 3000` → 19/20
 
 只有 S7 沒過：一般客人 67.5–93.0%（差 25.5 點；我早就聽過、跳針王各低 7–10 點）。其他 19 條都過。
 
@@ -145,7 +155,7 @@ mercy 只影響 normal／hard 的客人（easy 本來就關），而且只在你
 
 14. sim S7 的「每位客人的 planner 在 easy／easy／normal 各跑 1/3」：用 `enemyDef(C, id, {depth: 0/1/2})`（第 i 場 `floor(i/3) % 3`）；菁英 depth 3（normal）、藏家 depth 4（hard）。包包＝`newRun` 的禮物＋`bargainPolicy` 三張＋男子的 drop（Fishmans）；序章配件三件輪流（每 9 場換一件）。
 15. sim 一整晚：男子打輸無限重來（序章免費），30 次還輸算「死在男子」（實際沒發生過）；藏家的王牌＝`run.bossAce`。
-16. `C.m2Swaps`（A3-M2 換牌表）：content.js 載入時，新卡在 cards.js 裡就換上、不在就留舊卡；check-content 斷言這條；整合時把牌單直接改寫、刪表。`sim --project-m2` 只讀 `../seed_cards.json`（id 算法照 bake-cards），不寫任何檔。
+16. `C.m2Swaps`（A3-M2 換牌表）與 `sim --project-m2` 是第 2 階段等 A3-M2 時的過渡；第 3 階段合併 A3-M2 後已刪，牌單直接寫新卡。
 
 ## 規格裡對不上、照哪邊做（給主線／C 看）
 
@@ -155,7 +165,7 @@ mercy 只影響 normal／hard 的客人（easy 本來就關），而且只在你
 
 ## 請求
 
-- **A3（A3-M2，§3.1 A1 交件 5(b)、§6.7）**：兩位冷門客人各換 2 張（理由：§5.2 S4＋S7 只調聲望與經濟過不了，見「第 2 階段校準筆記」結論 1–2；cards.js 沒有可用的嚴格冷 4 卡）。四張都查過：seed 有、Apple 試聽有（`apple-audio-runtime-v1`）、不是頂點卡、藝人沒在 cards.js 出現過、不在任何組。封面要 bake 時確認。換下來的四張（Pauline Anna Strom、Gigi Masin、Mina、Dorival Caymmi）在 content／bins／shops 都沒別處用、也沒有推薦語，可以從 deck-lists 刪掉不再烘；**唯一例外**：A2 的 `dev/stage-harness.html:76`（v4/A2）拿 `pauline-anna-strom-trans-millenia-consort` 當示範卡——不再烘的話請 A2 換一張（例如 `demetrio-stratos-metrodora`，同樣冷 5）。content.js 兩種情況都不會壞（`C.m2Swaps` 只看新卡在不在）。
+- **A3（A3-M2，§3.1 A1 交件 5(b)、§6.7）——已完成（`8435b2345`，四張照表換上、沒用備案；A1 第 3 階段已合併）**：兩位冷門客人各換 2 張（理由：§5.2 S4＋S7 只調聲望與經濟過不了，見「第 2 階段校準筆記」結論 1–2；cards.js 沒有可用的嚴格冷 4 卡）。四張都查過：seed 有、Apple 試聽有（`apple-audio-runtime-v1`）、不是頂點卡、藝人沒在 cards.js 出現過、不在任何組。封面要 bake 時確認。換下來的四張（Pauline Anna Strom、Gigi Masin、Mina、Dorival Caymmi）在 content／bins／shops 都沒別處用、也沒有推薦語，可以從 deck-lists 刪掉不再烘；**唯一例外**：A2 的 `dev/stage-harness.html:76`（v4/A2）拿 `pauline-anna-strom-trans-millenia-consort` 當示範卡——不再烘的話請 A2 換一張（例如 `demetrio-stratos-metrodora`，同樣冷 5）。content.js 兩種情況都不會壞（`C.m2Swaps` 只看新卡在不在）。
 
   | 組 | 舊 id | 新 seed 字串（`artist\|album`） | 新 id | 經/冷/硬 |
   |---|---|---|---|---|
@@ -165,11 +175,12 @@ mercy 只影響 normal／hard 的客人（easy 本來就關），而且只在你
   | `skip` | `dorival-caymmi-caymmi-visita-tom`（4/5/1） | `King Sunny Adé\|Aura` | `king-sunny-ade-aura` | 3/4/2 |
 
   換完：我早就聽過＝冷 7 票、嚴格冷峰值 7、經 ≥4 四張、硬 ≥4 三張；跳針王＝冷 7 票、嚴格冷峰值 5、經 ≥4 五張、硬 ≥4 兩張（§4 限制全過）。人設不變：學長的兩張 80 年代新世紀／氛圍（Don Slepian 1980、Harold Budd 1984）換掉同一路的 Pauline Anna Strom、Gigi Masin；二手店老闆的探戈（Goyeneche）與奈及利亞 juju（King Sunny Adé）換掉義大利、巴西兩張。若 A3 烘不出（封面），同形狀的備案：`矢吹紫帆|Forest Land`（3/4/1）、`Craig Kupka|Crystals: New Music for Relaxation 2`（2/4/2）、`Mostar Sevdah Reunion|Mostar Sevdah Reunion`（3/4/2）、`Djivan Gasparyan|Apricots from Eden`（3/4/2）、`Bhundu Boys|True Jit`（3/4/2）——換了就請告訴 A1 改 `C.m2Swaps`。
-- **C（整合）**：A3-M2 進來後把 `content.js` 的 already／skip 牌單直接改寫成新卡、刪 `C.m2Swaps` 與 check-content／sim 的對應段（或留給 A1 第 3 階段）。
+- ~~**C（整合）**：A3-M2 進來後改寫牌單、刪 `C.m2Swaps`~~ → A1 第 3 階段已做完，C 不用再動。
+- **A2（仍未處理）**：`v4/A2` 的 `dev/stage-harness.html:76` 還拿 `pauline-anna-strom-trans-millenia-consort` 當示範卡，這張 A3-M2 已不再烘（v4/A1 合併 A3-M2 後的 cards.js 沒有它）。請換成 cards.js 有的冷 5 卡，例如 `demetrio-stratos-metrodora`（3/5/4）。
 - **B2（第二波）**：刪 A1 的 v3 墊片（`C.junk`、`C.junkLabel`、`C.habits`、`C.habitLabels`、`C.retorts`、v3 `C.script`、`C.bins[*].ids`）；`ui.js` `validRun` 改 `r.v === 4`（現在 v3 外殼會把 v4 run 當壞檔丟掉）；規則卡頁尾用 `C.rules.hpText` 代入 `{normal}／{elite}／{boss}`；`LAB_ICONS` 加 heavy180／numbered／matrix；`C.shopLines.binBusy` 用在序章／對決中點箱子。
 - **B1（第二波）**：提示句字串＝`C.hints[attr]` 裡 `id === view.hint.line` 那句；結果句 `{key}` 用該句的 `key`；`preview` 一定要給 `eSide`。
 - **A2（知會）**：`check-shops` 的 `meta.crates` 檢查讀 `C.bins.jazz／tw／noise`——v4 的 `C.bins` 是 bins.js 的 12 區（含 jazz／tw／noise），A3-M1 進來後就會過。
 
 ## 截圖
 
-段 2「規則＋模擬」要交店主的是兩份文字表，不是截圖：上面「最後的模擬表」＋ `game-lab/dev/decks-v4.md`（已提交）。第 1 階段冒煙截圖在 scratchpad，不提交。
+段 2「規則＋模擬」要交店主的是兩份文字表，不是截圖：上面「最後的模擬表」＋ `game-lab/dev/decks-v4.md`（已提交；第 3 階段重產）。第 3 階段沒有畫面改動，不拍截圖。第 1 階段冒煙截圖在 scratchpad，不提交。

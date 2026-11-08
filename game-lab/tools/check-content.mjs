@@ -302,15 +302,6 @@ export function contentProblems(C, E) {
   const enemyNames = Object.values(C.enemies).map(e => e.name);
   ok(C.names.length >= 20 && C.names.every(n => !enemyNames.includes(n) && [...n].length <= 8), 'names：不能用客人的名字、≤8 字');
   ok(C.avatarsFallback.length === 6, 'avatarsFallback 要 6 組'); C.avatarsFallback.forEach((a, k) => avatarOk(a, 'avatarsFallback[' + k + ']'));
-  // A3-M2 換牌表（暫時；整合後刪）：新卡烘進 cards.js 就一定已換上，還沒烘就一定還是舊卡
-  for (const g of Object.keys(C.m2Swaps || {})) {
-    const E = C.enemies[g];
-    if (!E) { ok(false, 'm2Swaps：沒有客人 ' + g); continue; }
-    for (const sw of C.m2Swaps[g]) {
-      ok(Array.isArray(sw) && sw.length === 2 && typeof sw[0] === 'string' && typeof sw[1] === 'string', 'm2Swaps.' + g + '：每筆是 [舊 id, 新 id]');
-      ok(C.cards[sw[1]] ? (E.deck.includes(sw[1]) && !E.deck.includes(sw[0])) : E.deck.includes(sw[0]), 'm2Swaps.' + g + '：' + sw.join(' → ') + ' 沒照「新卡在就換上」');
-    }
-  }
   return bad;
 }
 
@@ -324,7 +315,5 @@ if (isMain) {
   else {
     const decks = Object.values(C.enemies).map(e => e.id + ' ' + e.deck.length + '／' + e.hp + '／' + E.deckMain(e.deck.map(id => C.cards[id]), e.taste)).join('、');
     console.log('content 自檢通過：卡 ' + Object.keys(C.cards).length + ' 張；客人 10 位（唱片／聲望／主屬性 ' + decks + '）；發燒配件 ' + Object.keys(C.relics).length + ' 件；箱子 ' + Object.keys(C.bins).length + ' 區。');
-    const pend = Object.keys(C.m2Swaps || {}).flatMap(g => C.m2Swaps[g].filter(sw => !C.cards[sw[1]]).map(sw => g + ' ' + sw[0] + ' → ' + sw[1]));
-    if (pend.length) console.log('（待 A3-M2：' + pend.length + ' 張換牌還沒烘進 cards.js，牌單暫用舊卡——' + pend.join('；') + '）');
   }
 }

@@ -2,8 +2,6 @@
 
 由 `content.js`＋`cards.js` 產生（星數＝seed 原值）。判定：`deckMain`＝每張卡的峰值軸各算一票、並列每軸都算、票數並列照 taste；嚴格峰值＝那一軸比另外兩軸都大；唬人色＝`BEATS[主屬性]`；剋他用色＝`COUNTER_OF[主屬性]`。聲望是 `sim.mjs` 校準後的值（§5.2）。
 
-**待 A3-M2**：我早就聽過、跳針王各換 2 張（見各表「A3-M2 之後」；新卡烘進 cards.js 之前 content.js 仍用舊卡，烘進之後自動換上）。
-
 ## 客人的牌單（§4.1）
 
 | 客人 | 誠實度 | 聲望 | 張數 | 主屬性 | 嚴格峰值在主屬性 | 唬人色 ≥4 | 剋他用色 ≥4 | 峰值票數（含並列） |
@@ -12,7 +10,7 @@
 | 那張我有（`copycat`） | 偶爾唬人 | 18 | 7 | 經典 | 6 | 硬蕊 2 | 冷門 1 | 經 7／冷 1／硬 0 |
 | 我早就聽過（`already`） | 偶爾唬人 | 17 | 7 | 冷門 | 7 | 經典 4 | 硬蕊 3 | 經 0／冷 7／硬 0 |
 | 針壓強迫症（`needle`） | 偶爾唬人 | 19 | 7 | 經典 | 4 | 硬蕊 3 | 冷門 2 | 經 6／冷 0／硬 3 |
-| 跳針王（`skip`） | 偶爾唬人 | 17 | 7 | 冷門 | 5 | 經典 7 | 硬蕊 2 | 經 2／冷 7／硬 1 |
+| 跳針王（`skip`） | 偶爾唬人 | 17 | 7 | 冷門 | 5 | 經典 5 | 硬蕊 2 | 經 2／冷 7／硬 1 |
 | 月底吃土（`broke`） | 偶爾唬人 | 20 | 7 | 硬蕊 | 4 | 冷門 2 | 經典 2 | 經 2／冷 2／硬 6 |
 | 剁手黨（`buyer`） | 偶爾唬人 | 20 | 7 | 硬蕊 | 5 | 冷門 3 | 經典 4 | 經 2／冷 0／硬 6 |
 | 冷門仙人（`label`） | 愛唬人 | 17 | 7 | 冷門 | 5 | 經典 4 | 硬蕊 2 | 經 1／冷 6／硬 1 |
@@ -52,22 +50,12 @@
 
 主屬性 **冷門**；嚴格峰值在主屬性 7 張；唬人色（經典）≥4 星 4 張；剋他用色（硬蕊）≥4 星 3 張。
 
-| # | 專輯 | id | 經/冷/硬 | 峰值 | cards.js |
-|---|---|---|---|---|---|
-| 1 | Pauline Anna Strom《Trans-Millenia Consort》 | `pauline-anna-strom-trans-millenia-consort` | 3/5/3 | 冷 | ✓ |
-| 2 | Gigi Masin《Wind》 | `gigi-masin-wind` | 3/5/3 | 冷 | ✓ |
-| 3 | Demetrio Stratos《Metrodora》 | `demetrio-stratos-metrodora` | 3/5/4 | 冷 | ✓ |
-| 4 | Étron Fou Leloublan《Les Trois Fou's Perdégagnent (Au Pays Des...)》 | `etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des` | 4/5/4 | 冷 | ✓ |
-| 5 | Nocturnal Emissions《Fruiting Body》 | `nocturnal-emissions-fruiting-body` | 4/5/4 | 冷 | ✓ |
-| 6 | Eivind Aarset《Électronique noire》 | `eivind-aarset-electronique-noire` | 4/5/3 | 冷 | ✓ |
-| 7 | Yezda Urfa《Boris》 | `yezda-urfa-boris` | 4/5/3 | 冷 | ✓ |
-
-**A3-M2 之後**（換 2 張；主屬性 冷門、嚴格峰值在主屬性 7、唬人色 ≥4 4、剋他用色 ≥4 3）：
+A3-M2 換了 2 張（冷 5 → 嚴格冷 4，位置不變；理由見 dev/notes-A1.md「第 2 階段校準筆記」結論 1–2）。
 
 | # | 專輯 | id | 經/冷/硬 | 峰值 | cards.js |
 |---|---|---|---|---|---|
-| 1 | Don Slepian《Sea of Bliss》 | `don-slepian-sea-of-bliss` | 3/4/2 | 冷 | 待烘（A3-M2：換掉 Pauline Anna Strom《Trans-Millenia Consort》） |
-| 2 | Harold Budd《Abandoned Cities》 | `harold-budd-abandoned-cities` | 3/4/3 | 冷 | 待烘（A3-M2：換掉 Gigi Masin《Wind》） |
+| 1 | Don Slepian《Sea of Bliss》 | `don-slepian-sea-of-bliss` | 3/4/2 | 冷 | ✓（A3-M2：換掉 Pauline Anna Strom《Trans-Millenia Consort》 3/5/3） |
+| 2 | Harold Budd《Abandoned Cities》 | `harold-budd-abandoned-cities` | 3/4/3 | 冷 | ✓（A3-M2：換掉 Gigi Masin《Wind》 3/5/3） |
 | 3 | Demetrio Stratos《Metrodora》 | `demetrio-stratos-metrodora` | 3/5/4 | 冷 | ✓ |
 | 4 | Étron Fou Leloublan《Les Trois Fou's Perdégagnent (Au Pays Des...)》 | `etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des` | 4/5/4 | 冷 | ✓ |
 | 5 | Nocturnal Emissions《Fruiting Body》 | `nocturnal-emissions-fruiting-body` | 4/5/4 | 冷 | ✓ |
@@ -90,25 +78,15 @@
 
 ### 跳針王（`skip`）　偶爾唬人・聲望 17・二手店老闆
 
-主屬性 **冷門**；嚴格峰值在主屬性 5 張；唬人色（經典）≥4 星 7 張；剋他用色（硬蕊）≥4 星 2 張。
+主屬性 **冷門**；嚴格峰值在主屬性 5 張；唬人色（經典）≥4 星 5 張；剋他用色（硬蕊）≥4 星 2 張。
+
+A3-M2 換了 2 張（冷 5 → 嚴格冷 4，位置不變；理由見 dev/notes-A1.md「第 2 階段校準筆記」結論 1–2）。
 
 | # | 專輯 | id | 經/冷/硬 | 峰值 | cards.js |
 |---|---|---|---|---|---|
-| 1 | Mina《Studio Uno 66》 | `mina-studio-uno-66` | 4/5/2 | 冷 | ✓ |
+| 1 | Roberto Goyeneche《Cantor de mi barrio》 | `roberto-goyeneche-cantor-de-mi-barrio` | 3/4/2 | 冷 | ✓（A3-M2：換掉 Mina《Studio Uno 66》 4/5/2） |
 | 2 | Amália Rodrigues《Gostava de ser quem era》 | `amalia-rodrigues-gostava-de-ser-quem-era` | 4/5/2 | 冷 | ✓ |
-| 3 | Dorival Caymmi《Caymmi Visita Tom》 | `dorival-caymmi-caymmi-visita-tom` | 4/5/1 | 冷 | ✓ |
-| 4 | Washington Phillips《The Key to the Kingdom》 | `washington-phillips-the-key-to-the-kingdom` | 4/5/4 | 冷 | ✓ |
-| 5 | Otha Turner & The Rising Star Fife & Drum Band《Everybody Hollerin' Goat》 | `otha-turner-the-rising-star-fife-drum-band-everybody-holleri` | 4/5/3 | 冷 | ✓ |
-| 6 | Tony Scott & The Indonesian All Stars《Djanger Bali》 | `tony-scott-the-indonesian-all-stars-djanger-bali` | 5/5/3 | 經冷 | ✓ |
-| 7 | Barney Wilen《Moshi》 | `barney-wilen-moshi` | 4/4/4 | 經冷硬 | ✓ |
-
-**A3-M2 之後**（換 2 張；主屬性 冷門、嚴格峰值在主屬性 5、唬人色 ≥4 5、剋他用色 ≥4 2）：
-
-| # | 專輯 | id | 經/冷/硬 | 峰值 | cards.js |
-|---|---|---|---|---|---|
-| 1 | Roberto Goyeneche《Cantor de mi barrio》 | `roberto-goyeneche-cantor-de-mi-barrio` | 3/4/2 | 冷 | 待烘（A3-M2：換掉 Mina《Studio Uno 66》） |
-| 2 | Amália Rodrigues《Gostava de ser quem era》 | `amalia-rodrigues-gostava-de-ser-quem-era` | 4/5/2 | 冷 | ✓ |
-| 3 | King Sunny Adé《Aura》 | `king-sunny-ade-aura` | 3/4/2 | 冷 | 待烘（A3-M2：換掉 Dorival Caymmi《Caymmi Visita Tom》） |
+| 3 | King Sunny Adé《Aura》 | `king-sunny-ade-aura` | 3/4/2 | 冷 | ✓（A3-M2：換掉 Dorival Caymmi《Caymmi Visita Tom》 4/5/1） |
 | 4 | Washington Phillips《The Key to the Kingdom》 | `washington-phillips-the-key-to-the-kingdom` | 4/5/4 | 冷 | ✓ |
 | 5 | Otha Turner & The Rising Star Fife & Drum Band《Everybody Hollerin' Goat》 | `otha-turner-the-rising-star-fife-drum-band-everybody-holleri` | 4/5/3 | 冷 | ✓ |
 | 6 | Tony Scott & The Indonesian All Stars《Djanger Bali》 | `tony-scott-the-indonesian-all-stars-djanger-bali` | 5/5/3 | 經冷 | ✓ |
