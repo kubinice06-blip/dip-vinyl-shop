@@ -65,7 +65,7 @@
   function defSave() {
     return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, nights: [],
       best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false },
-      tutorialDone: false, prologueDone: false, lastAce: null };
+      tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null };
   }
   function validRun(r) {
     try {
@@ -101,6 +101,8 @@
       return d;
     }
     for (var k in d) if (s[k] == null || typeof s[k] !== typeof d[k]) s[k] = d[k];
+    // 上次序章挑的特價箱三張（重看教學用；不合法就當沒有）
+    if (s.lastBargain != null && !(Array.isArray(s.lastBargain) && s.lastBargain.length === 3 && s.lastBargain.every(function (id) { return typeof id === 'string' && card(id); }))) s.lastBargain = null;
     s.settings = Object.assign({}, d.settings, s.settings || {});
     s.best = Object.assign({}, d.best, s.best || {});
     if (!s.best.bySeedKey || typeof s.best.bySeedKey !== 'object') s.best.bySeedKey = {};
@@ -356,8 +358,10 @@
   function tutLabel(k, d) { var u = C && C.tutorial && C.tutorial.ui; return (u && typeof u[k] === 'string' && u[k]) || d; }
   function openRules() {
     var canReplay = canTutorial() && UI.screen !== 'duel' && !UI.tutReplay;
-    var m = modal('lb-help', rulesHTML() + learnedHTML() +
-      (canReplay ? '<button type="button" class="lb-btn wide" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : ''));
+    // 「重看教學」跟「關閉」同一列（規則卡四個尺寸都不捲動，§3.2 B2）
+    var m = modal('lb-help', rulesHTML() + learnedHTML() + '<div class="mfoot' + (canReplay ? ' two' : '') + '">' +
+      (canReplay ? '<button type="button" class="lb-btn" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : '') +
+      '<button type="button" class="lb-btn pri' + (canReplay ? '' : ' wide') + '" data-x="1">關閉</button></div>', null, { foot: false });
     var rb = qs('[data-a=replay]', m);
     if (rb) rb.addEventListener('click', function (e) { stopEv(e); closeModal(); replayTutorial(); });
     return m;
@@ -1161,8 +1165,10 @@
   }
   function doChoose(ch) {
     var r = save.run;
+    var prologue = r && r.prologue === 'pending';
     var res = E.choose(r, C, ch);
     if (!res.ok) console.warn('choose error', res.error, ch);
+    if (res.ok && ch && ch.type === 'bargainPick' && prologue) save.lastBargain = ch.ids.slice();   // 重看教學用（§2.5.5）
     (res.effects || []).forEach(function (f) { if (f.gainCard) shelfAdd(f.gainCard); });
     save.relics = r.relics.slice(0, 3);          // 身上的配件帶到下一晚（engine 建議；最多三件）
     persist();
@@ -1655,9 +1661,12 @@
     var T = TUT();
     if (!canTutorial() || UI.screen === 'duel' || !T.replayDuel) return;
     var tier = save.lastAce || (save.run && save.run.ace) || 'hall';
-    var res; try { res = T.replayDuel(C, tier, 7); } catch (e) { console.error(e); return; }
+    // 包包＝老闆四張＋特價箱三張（上次序章挑的那三張；沒有就 c、o、h 各第一張）——第 5 手才抽得到「冷 ≤3」那張（§2.5.5）
+    var last = save.lastBargain || null;
+    var res; try { res = T.replayDuel(C, tier, 7, { bargain: last }); } catch (e) { console.error(e); return; }
+    var bag = T.replayBag ? T.replayBag(C, tier, last) : (C.gifts[tier] || []).slice();
     var back = UI.screen === 'night' ? 'night' : (save.run && !save.run.over ? 'resume' : 'title');
-    go('duel', { res: res, enemyId: C.prologueEnemy || 'man', enter: true, tutorial: true, replay: true, fakeRun: { ace: tier, retryLeft: 1, relics: [], idx: 0, times: [] } });
+    go('duel', { res: res, enemyId: C.prologueEnemy || 'man', enter: true, tutorial: true, replay: true, fakeRun: { ace: tier, bag: bag, retryLeft: 1, relics: [], idx: 0, times: [] } });
     UI.tutReplay = { back: back };
   }
   function endReplay() {
