@@ -62,7 +62,7 @@ function pageTools() {
             : want === 'blocked' ? plain && !bluff && r.blocked === 'gap' && r.by === 'p'
             : want === 'bluff' ? plain && a === E.BEATS[hintA] && pa === E.COUNTER_OF[hintA] && r.kind === 'countered'
             : want === 'tie' ? plain && !bluff && r.kind === 'tie'
-            : want === 'ace' ? act.ace && !isAce && a === E.BEATS[pa] && r.blocked === 'gap' && r.by === 'e'
+            : want === 'ace' ? act.ace && !isAce && E.BEATS[a] === pa && r.blocked === 'gap' && r.by === 'e'
             : want === 'kill' ? plain && !bluff && r.kind === 'counter' && r.toE >= v.eHp
             : want === 'any' ? plain
             : false;
