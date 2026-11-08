@@ -83,6 +83,7 @@
 .ec-tile{position:relative;display:flex;align-items:flex-start;justify-content:center;gap:4px;min-width:0;min-height:44px;text-align:left;-webkit-touch-callout:none;}
 .ec-g4 .ec-tile{flex-direction:column;align-items:center;gap:2px;}
 .ec-tcv{width:var(--ec-tile,72px);height:var(--ec-tile,72px);}
+.ec-tile.ec-lp .ec-tcv{transform:scale(.94);box-shadow:0 0 0 3px rgba(17,17,17,.35);}
 .ec-tile.sel .ec-tcv{outline:3px solid var(--gold,#b8860b);outline-offset:1px;}
 .ec-chk{position:absolute;right:0;top:0;z-index:2;width:18px;height:18px;font:700 13px/18px var(--mono,'Space Mono',monospace);text-align:center;color:#fff;background:var(--gold,#b8860b);}
 .ec-sv{font:700 11px var(--mono,'Space Mono',monospace);color:var(--win,#2e7d52);white-space:nowrap;}

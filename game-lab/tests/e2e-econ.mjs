@@ -13,7 +13,7 @@
 //   7  包包滿 → 先賣一張：賣回子面板（半價）→ 選一張 →「賣這張」→ 錢＝原本＋半價－價格、包包仍 8、賣掉那張不在、買的那張在
 //   8  錢不夠的鈕停用（「錢不夠」）
 //   9  櫃檯配件：走到櫃檯前、買一件（錢減、配件 +1）；滿 3 件 → 先賣一件（半價）再買
-//   10 特價箱開局模式（舞台上真點特價箱）：6 張、恰好挑 3 張「收下這三張」才能按（第 4 張換掉最早挑的那張）；點外面不會關；收下 → 包包 +3、bargainPicked
+//   10 特價箱開局模式（舞台上真點特價箱）：6 張、恰好挑 3 張「收下這三張」才能按（第 4 張換掉最早挑的那張）；長按封面＝唱片資訊；點外面不會關；收下 → 包包 +3、bargainPicked
 //   11 特價箱之後模式：挑 1 張 → $100 → 錢 −100、包包 +1；包包滿時先賣（需要幾張就賣幾張）
 //   12 序章、對決中點箱子 → 老闆說「打完再翻。」、不開抽屜
 //   13 沒有 run（標題）：抽屜只能翻、沒有買的鈕
@@ -272,16 +272,35 @@ async function runSize(browser, w, h) {
       await tapSel(page, `.ec-drawer .ec-tile[data-cid="${ids[4]}"]`); await sleep(150);
       await tapSel(page, `.ec-drawer .ec-tile[data-cid="${ids[5]}"]`); await sleep(150);   // 已經三張：第 4 張換掉最早挑的那張
       const sel4 = (await dbg(page)).sel;
+      const want = [ids[2], ids[4], ids[5]];
+      // 長按封面＝唱片資訊（不會選它）：放開後補送 click 的瀏覽器、跟不送 click 的瀏覽器都要開得出來、而且不被那個 click 關掉
+      const lp = async (id, withClick) => {
+        await page.evaluate(id => {
+          const el = document.querySelector(`.ec-drawer .ec-tile[data-cid="${id}"]`), r = el.getBoundingClientRect();
+          el.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, clientX: r.left + 10, clientY: r.top + 10, pointerId: 9, pointerType: 'touch', isPrimary: true }));
+        }, id);
+        await sleep(600);
+        await page.evaluate(([id, withClick]) => {
+          const el = document.querySelector(`.ec-drawer .ec-tile[data-cid="${id}"]`), r = el.getBoundingClientRect();
+          el.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, clientX: r.left + 10, clientY: r.top + 10, pointerId: 9, pointerType: 'touch', isPrimary: true }));
+          if (withClick) el.click();
+        }, [id, withClick]);
+        await sleep(700);
+        const r = await page.evaluate(() => ({ open: window.DipLabCardInfo.isOpen(), id: window.DipLabCardInfo.current() && window.DipLabCardInfo.current().id, sel: window.DipLabEcon.debug().sel }));
+        if (r.open) { await tapSel(page, '#ciClose'); await sleep(350); }
+        return r;
+      };
+      const lp1 = await lp(ids[1], true), lp2 = await lp(ids[3], false);
+      const lpOk = lp1.open && lp1.id === ids[1] && lp2.open && lp2.id === ids[3] && JSON.stringify(lp2.sel) === JSON.stringify(want);
       // 點外面不會關
       const top = await page.evaluate(() => document.querySelector('.ec-drawer').getBoundingClientRect().top);
       await tapXY(page, w / 2, Math.max(60, top - 60)); await sleep(300);
       const still = (await dbg(page)).open;
-      const want = [ids[2], ids[4], ids[5]];
       await tapSel(page, '.ec-drawer [data-a=take]'); await sleep(400);
       const r1 = await run(page), closed = !(await dbg(page)).open;
-      const ok = vis10.ok && ids.length === 6 && !priceShown && dis.join() === 'true,true,true,false' && disOff && JSON.stringify(sel4) === JSON.stringify(want) && still && closed && r1.bag.length === r0.bag.length + 3 &&
+      const ok = vis10.ok && ids.length === 6 && !priceShown && dis.join() === 'true,true,true,false' && disOff && JSON.stringify(sel4) === JSON.stringify(want) && lpOk && still && closed && r1.bag.length === r0.bag.length + 3 &&
         want.every(id => r1.bag.includes(id)) && r1.shop.bargainPicked && r1.shop.bargain.length === 3;
-      record(10, size, ok, `特價箱沒被蓋到 ${vis10.ok}${vis10.ok ? '' : '（' + vis10.why + '）'}；${ids.length} 張、沒有價格 ${!priceShown}；挑 0/1/2/3 張時鈕停用 ${dis.join('/')}；取消一張又停用 ${disOff}；第 4 張換掉最早那張 ${JSON.stringify(sel4) === JSON.stringify(want)}；點外面不關 ${still}；收下 → 包包 ${r0.bag.length} → ${r1.bag.length}、特價剩 ${r1.shop.bargain.length}`);
+      record(10, size, ok, `特價箱沒被蓋到 ${vis10.ok}${vis10.ok ? '' : '（' + vis10.why + '）'}；${ids.length} 張、沒有價格 ${!priceShown}；挑 0/1/2/3 張時鈕停用 ${dis.join('/')}；取消一張又停用 ${disOff}；第 4 張換掉最早那張 ${JSON.stringify(sel4) === JSON.stringify(want)}；長按＝唱片資訊（有補送 click ${lp1.open}、沒有 ${lp2.open}，不會選到 ${JSON.stringify(lp2.sel) === JSON.stringify(want)}）；點外面不關 ${still}；收下 → 包包 ${r0.bag.length} → ${r1.bag.length}、特價剩 ${r1.shop.bargain.length}`);
     });
     // ---------------- 11：特價箱之後模式 ----------------
     await T(11, async () => {

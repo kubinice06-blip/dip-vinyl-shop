@@ -210,7 +210,7 @@
     veil(false);
     D.removeEventListener('keydown', onKey, true);
     W.removeEventListener('resize', onResize);
-    clearTimeout(S.lpT);
+    clearTimeout(S.lpT); clearTimeout(S.lpOpenT); S.lpFired = false; S.lpTile = null;
     var focused = S.focusH != null, wasWalking = S.walking;
     S.open = false; S.walking = false; S.kind = null; S.sub = null; S.focusH = null; S.hotId = null;
     if (was && st) {
@@ -458,7 +458,11 @@
     if (cv && !reduced()) { cv.classList.add(d < 0 ? 'ec-fl' : 'ec-fr'); }
   }
   function onClick(e) {
-    if (S.lpFired) { S.lpFired = false; e.preventDefault(); e.stopPropagation(); return; }
+    if (S.lpFired) {   // 長按放開後的那個 click：在這裡開唱片資訊（先開的話，這個 click 會落在資訊遮罩上把它關掉）
+      S.lpFired = false; clearTimeout(S.lpOpenT); e.preventDefault(); e.stopPropagation();
+      var lt = S.lpTile; S.lpTile = null; if (lt) { lt.classList.remove('ec-lp'); info(card(lt.getAttribute('data-cid'))); }
+      return;
+    }
     if (S.swiped) { S.swiped = false; e.preventDefault(); e.stopPropagation(); return; }
     e.stopPropagation();
     var b = e.target.closest && e.target.closest('[data-a]'); if (!b || b.disabled || !S.el || !S.el.contains(b)) return;
@@ -479,26 +483,33 @@
   }
   // 大封面左右滑＝翻；格子長按＝唱片資訊
   function onDown(e) {
-    S.swiped = false; S.lpFired = false;
+    S.swiped = false; S.lpFired = false; clearTimeout(S.lpOpenT);
+    if (S.lpTile) { S.lpTile.classList.remove('ec-lp'); S.lpTile = null; }
     var t = e.target.closest && e.target.closest('.ec-cv, .ec-tile');
     if (!t) { S.drag = null; return; }
-    S.drag = { x: e.clientX, y: e.clientY, el: t, id: e.pointerId };
+    S.drag = { x: e.clientX, y: e.clientY, el: t, id: e.pointerId, long: false };
     clearTimeout(S.lpT);
-    if (t.classList.contains('ec-tile') && t.getAttribute('data-a') !== 'info') {
-      S.lpT = setTimeout(function () { if (!S.drag || S.drag.el !== t) return; S.lpFired = true; S.drag = null; info(card(t.getAttribute('data-cid'))); }, LONG_MS);
+    if (t.classList.contains('ec-tile') && t.getAttribute('data-a') === 'tog') {
+      // 長按 450 ms：先標起來（看得到按住了），放開才開唱片資訊
+      S.lpT = setTimeout(function () { if (!S.drag || S.drag.el !== t) return; S.drag.long = true; t.classList.add('ec-lp'); }, LONG_MS);
     }
   }
   function onMove(e) {
     var d = S.drag; if (!d || e.pointerId !== d.id) return;
-    if (Math.abs(e.clientX - d.x) > 10 || Math.abs(e.clientY - d.y) > 10) clearTimeout(S.lpT);
+    if (Math.abs(e.clientX - d.x) > 10 || Math.abs(e.clientY - d.y) > 10) { clearTimeout(S.lpT); if (d.long) { d.long = false; d.el.classList.remove('ec-lp'); } }
   }
   function onUp(e) {
     var d = S.drag; S.drag = null; clearTimeout(S.lpT);
     if (!d || e.pointerId !== d.id) return;
+    if (d.long) {   // 放開：等補送的 click（在 onClick 開）；瀏覽器沒送 click 就 350 ms 後自己開
+      S.lpFired = true; S.lpTile = d.el;
+      S.lpOpenT = setTimeout(function () { if (!S.lpFired) return; S.lpFired = false; var lt = S.lpTile; S.lpTile = null; if (lt) { lt.classList.remove('ec-lp'); info(card(lt.getAttribute('data-cid'))); } }, 350);
+      return;
+    }
     var dx = e.clientX - d.x, dy = e.clientY - d.y;
     if (d.el.classList.contains('ec-cv') && Math.abs(dx) > 28 && Math.abs(dx) > Math.abs(dy) * 1.3) { S.swiped = true; flip(dx < 0 ? 1 : -1); }
   }
-  function onCancel() { S.drag = null; clearTimeout(S.lpT); }
+  function onCancel() { if (S.drag && S.drag.long) S.drag.el.classList.remove('ec-lp'); S.drag = null; clearTimeout(S.lpT); }
 
   function toggle(id) {
     var i = S.sel.indexOf(id);
