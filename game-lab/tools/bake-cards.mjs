@@ -1,4 +1,11 @@
-// bake-cards.mjs：把 tools/deck-lists.json 的專輯清單烘成 game-lab/cards.js（SPEC §4.3、§7.2）。
+// bake-cards.mjs：把 tools/deck-lists.json 的專輯清單烘成 game-lab/cards.js＋bins.js（SPEC §4.3、§7.2；v4：SPEC-v4 §2.2.1）。
+//
+// v4（SPEC-v4 §2.2.1）：
+//   - deck-lists.json 裡 `_` 開頭的鍵是設定，不是卡組：_region（{cardId: tw|jp|zh|xx} 覆寫）、_bins（每一區的 rule）、_ost（原聲帶旗標）。
+//   - region 值域 tw｜jp｜zh｜xx：先看 _region，再看 TW／JP／ZH 正規式；王菲＝zh。
+//   - 推薦語強制：ace_*、gift_*、bargain、gold。
+//   - 另外寫 bins.js（UMD：window.DipLabBins／module.exports）：bin_<key> ×12＋wall_a／wall_b → shops.dip.<key>／wallA／wallB，
+//     每一區 { rule, pool, display? }；每張卡都要符合該區 rule、箱子彼此不重複、也不跟牌組／禮物／特價箱／王牌／掉牌／牆重複，否則整份不寫。
 //
 //   node game-lab/tools/bake-cards.mjs              # 解析 seed＋Apple 試聽索引＋Firestore 封面，驗證後寫 cards.js
 //   node game-lab/tools/bake-cards.mjs --no-verify  # 不逐一驗證封面／試聽網址（只在離線時用）
@@ -46,8 +53,14 @@ const pitches = fs.existsSync(path.join(HERE, 'pitches.json')) ? JSON.parse(fs.r
 // Apple 索引的鍵：與 dip-player 同一套正規化
 const norm = v => String(v || '').normalize('NFKD').toLowerCase().replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
 const ACE_STATS = { hall: [7, 1, 1], pearl: [1, 7, 1], heresy: [1, 1, 7] };
-const TW = /台灣|^(交工|生祥|林生祥|草東|美秀|deca joins|宇宙人|傷心欲絕|老王|濁水溪|陳珊妮|雷光夏|黃小楨|廢五金|林強|陳綺貞|張懸|閃靈|落日飛車|周杰倫|王菲|擊沉女孩|甜約翰|拍謝少年|血肉果汁機|Sorry Youth|DSPS|Elephant Gym|大象體操)/i;
-const JP = /[぀-ヿ]|^(Fishmans|Cornelius|Melt-Banana|Keiji Haino|Ruins|Merzbow|Masonna|BOREDOMS|Boris|坂本龍一|細野晴臣|山下達郎|竹内まりや|大貫妙子|椎名林檎|宇多田|Anri|明田川|菊地|富樫|Masahiko|Ryuichi|Haruomi|Yellow Magic|Les Rallizes|灰野|Hiroshi Yoshimura|Midori Takada)/i;
+// v4：補齊 §4.5 用到的台灣／日本藝人；王菲改 zh（SPEC-v4 §2.2.1）。正規式抓不到的寫進 deck-lists.json 的 _region。
+const TW = /台灣|^(交工|生祥|林生祥|草東|美秀|deca joins|宇宙人|傷心欲絕|老王|濁水溪|陳珊妮|雷光夏|黃小楨|廢五金|林強|陳綺貞|張懸|閃靈|落日飛車|周杰倫|擊沉女孩|甜約翰|拍謝少年|血肉果汁機|Sorry Youth|DSPS|Elephant Gym|大象體操|五月天|伍佰|蔡琴|江蕙|陳建年|陳明章)/i;
+const JP = /[぀-ヿ]|^(Fishmans|Cornelius|Melt-Banana|Keiji Haino|Ruins|Merzbow|Masonna|BOREDOMS|Boris|坂本龍一|細野晴臣|山下達郎|竹内まりや|大貫妙子|椎名林檎|宇多田|Anri|明田川|菊地|富樫|Masahiko|Ryuichi|Haruomi|Yellow Magic|Les Rallizes|灰野|Hiroshi Yoshimura|Midori Takada|吉田美奈子|松田聖子|久石譲|大野雄二)/i;
+const ZH = /^(王菲)/;
+const REGION_OVERRIDE = lists._region || {};
+const BIN_RULES = lists._bins || {};
+const OST_IDS = lists._ost || [];
+const OST_RE = /(original (motion picture )?(soundtrack|score))|soundtrack from|music from the (motion picture|film|original|soundtrack)|サウンドトラック|原聲帶|原聲專輯/i;
 // 卡片 id：拉丁字去重音、保留中日文
 const cardId = (a, b) => (a + '-' + b).normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC').toLowerCase()
   .replace(/[^a-z0-9㐀-鿿぀-ヿ]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
@@ -60,15 +73,19 @@ const cards = {};          // id -> card（依 deck-lists.json 第一次出現�
 const groupsOf = {};       // id -> [group]
 const appleIdOf = {};
 
-for (const [group, arr] of Object.entries(lists)) for (const s of arr) {
-  const [a, b] = s.split('|');
-  const r = seed.find(r => r[0] === a && r[1] === b) || seed.find(r => norm(r[0]) === norm(a) && norm(r[1]) === norm(b));
+const seedRow = s => { const [a, b] = s.split('|'); return seed.find(r => r[0] === a && r[1] === b) || seed.find(r => norm(r[0]) === norm(a) && norm(r[1]) === norm(b)); };
+// v4：牆（wall_a／wall_b）是展示用，可以擺王牌（例：OK Computer 在搖滾／流行牆）；星數照王牌組（7/1/1 系列）
+const DISPLAY_GROUPS = new Set(['wall_a', 'wall_b']);
+const ACE_OF = {};
+for (const [group, arr] of Object.entries(lists)) if (group.startsWith('ace_')) for (const s of arr) { const r = seedRow(s); if (r) ACE_OF[cardId(r[0], r[1])] = group.slice(4); }
+for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) for (const s of arr) {
+  const r = seedRow(s);
   if (!r) { problems.push('MISSING-IN-SEED ' + s + ' [' + group + ']'); continue; }
   const [artist, album, c, o, h, genres, year, , tier] = r;
-  const aceTier = group.startsWith('ace_') ? group.slice(4) : null;
+  const id = cardId(artist, album);
+  const aceTier = group.startsWith('ace_') ? group.slice(4) : (DISPLAY_GROUPS.has(group) && tier && ACE_OF[id] === tier) ? tier : null;
   if (tier && !aceTier) problems.push('APEX-AS-NORMAL ' + s + ' (' + tier + ') [' + group + ']');
   if (aceTier && tier !== aceTier) problems.push('ACE-TIER-MISMATCH ' + s + ' seed=' + tier + ' group=' + aceTier);
-  const id = cardId(artist, album);
   (groupsOf[id] = groupsOf[id] || []).includes(group) || groupsOf[id].push(group);
   if (cards[id]) continue;
   const st = aceTier ? ACE_STATS[aceTier] : [c, o, h];
@@ -76,7 +93,7 @@ for (const [group, arr] of Object.entries(lists)) for (const s of arr) {
   const previewUrl = ap[2] || '';
   if (ap[1]) appleIdOf[id] = { id: ap[1], cc: ap[0] };
   if (!previewUrl) problems.push('NO-PREVIEW ' + s + ' [' + group + ']');
-  const region = TW.test(artist) ? 'tw' : JP.test(artist) ? 'jp' : 'xx';
+  const region = REGION_OVERRIDE[id] || (TW.test(artist) ? 'tw' : JP.test(artist) ? 'jp' : ZH.test(artist) ? 'zh' : 'xx');
   const tags = (genres || []).map(g => 'g:' + g)
     .concat(year < 1980 ? ['y:<1980'] : year >= 2000 ? ['y:>=2000'] : [])
     .concat(region !== 'xx' ? ['r:' + region] : []);
@@ -92,8 +109,69 @@ for (const [id, p] of Object.entries(pitches)) {
   if (!cards[id]) { problems.push('PITCH-FOR-UNKNOWN-CARD ' + id); continue; }
   cards[id].pitch = p.text;
 }
-const needPitch = ['ace_hall', 'ace_pearl', 'ace_heresy', 'gift_hall', 'gift_pearl', 'gift_heresy', 'junk', 'gold'];
-for (const id of Object.keys(cards)) if (groupsOf[id].some(g => needPitch.includes(g)) && !cards[id].pitch) problems.push('NO-PITCH ' + id);
+// v4：junk 改名 bargain（SPEC-v4 §2.2.1）
+const needPitch = g => /^(ace_|gift_)/.test(g) || g === 'bargain' || g === 'gold';
+for (const id of Object.keys(cards)) if (groupsOf[id].some(needPitch) && !cards[id].pitch) problems.push('NO-PITCH ' + id);
+for (const id of Object.keys(REGION_OVERRIDE)) {
+  if (!['tw', 'jp', 'zh', 'xx'].includes(REGION_OVERRIDE[id])) problems.push('BAD-REGION-OVERRIDE ' + id + '=' + REGION_OVERRIDE[id]);
+  if (!cards[id]) problems.push('REGION-OVERRIDE-FOR-UNKNOWN-CARD ' + id);
+}
+for (const id of OST_IDS) if (!cards[id]) problems.push('OST-FLAG-FOR-UNKNOWN-CARD ' + id);
+
+// ---- 箱子與牆（v4，SPEC-v4 §2.2.1、§4.5）→ bins.js ----
+// rule：first（genres[0] 要在裡面）、regions、minYear、minTop:{attr,star}（該軸 ≥star 且是峰值，可並列）、notGenres、ost:true（專輯名符合 OST_RE 或 id 在 _ost）
+function ruleMisses(rule, c) {
+  const why = [];
+  if (rule.first && !rule.first.includes((c.genres || [])[0])) why.push('first=' + (c.genres || [])[0]);
+  if (rule.regions && !rule.regions.includes(c.region)) why.push('region=' + c.region);
+  if (rule.minYear != null && !(c.year >= rule.minYear)) why.push('year=' + c.year);
+  if (rule.minTop) { const v = c[rule.minTop.attr]; if (!(v >= rule.minTop.star && v === Math.max(c.c, c.o, c.h))) why.push('minTop ' + rule.minTop.attr + '=' + v); }
+  if (rule.notGenres && (c.genres || []).some(g => rule.notGenres.includes(g))) why.push('notGenres');
+  if (rule.ost && !(OST_RE.test(c.album) || OST_IDS.includes(c.id))) why.push('not-ost');
+  return why;
+}
+const BIN_GROUP = g => g.startsWith('bin_') ? g.slice(4) : g === 'wall_a' ? 'wallA' : g === 'wall_b' ? 'wallB' : null;
+const NOT_EXCLUSIVE = new Set(['gold', 'listen', 'stake']);   // v3 唱片櫃／試聽機用的組，可以跟箱子重疊
+function buildBins() {
+  const probs = [], dip = {};
+  const idOf = s => { const r = seedRow(s); return r ? cardId(r[0], r[1]) : null; };
+  const uses = {};         // id -> [{g, cat}]（只看「排他」組：牌組、禮物、特價箱、王牌、掉牌、牆、箱子）
+  for (const [g, arr] of Object.entries(lists)) {
+    if (g.startsWith('_') || NOT_EXCLUSIVE.has(g)) continue;
+    const key = BIN_GROUP(g);
+    const cat = !key ? 'deck' : (key === 'wallA' || key === 'wallB') ? 'wall' : 'bin';
+    for (const s of arr) { const id = idOf(s); if (id) (uses[id] = uses[id] || []).push({ g, cat }); }
+  }
+  // 箱子的卡不准出現在別處；兩面牆之間不准重複；牆跟牌組可以重複（展示用）；牌組之間的重複歸 check-content 管
+  for (const [id, u] of Object.entries(uses)) if (u.length > 1) {
+    if (u.some(x => x.cat === 'bin') || u.filter(x => x.cat === 'wall').length > 1) probs.push('BIN-OVERLAP ' + id + ' [' + u.map(x => x.g).join(', ') + ']');
+  }
+  for (const [g, arr] of Object.entries(lists)) {
+    if (g.startsWith('_')) continue;
+    const key = BIN_GROUP(g);
+    if (!key) continue;
+    const rule = BIN_RULES[key];
+    if (!rule) { probs.push('NO-BIN-RULE ' + key + ' (deck-lists.json _bins)'); continue; }
+    const pool = [];
+    for (const s of arr) {
+      const id = idOf(s); if (!id || !cards[id]) continue;
+      const miss = ruleMisses(rule, cards[id]);
+      if (miss.length) probs.push('BIN-RULE ' + key + ' ' + id + ' ' + miss.join(','));
+      pool.push(id);
+    }
+    dip[key] = Object.assign({ rule }, key === 'wallA' || key === 'wallB' ? { display: true } : {}, { pool });
+  }
+  for (const k of Object.keys(BIN_RULES)) if (!dip[k]) probs.push('BIN-RULE-WITHOUT-GROUP ' + k);
+  return { dip, probs };
+}
+if (!REUSE) {
+  problems.push(...buildBins().probs);
+  // 卡單或箱子本身就有問題：不必先打網路（封面／試聽要幾分鐘）
+  if (problems.length) {
+    console.log('PROBLEMS (' + problems.length + '):'); problems.forEach(p => console.log('  ' + p));
+    console.log('cards.js / bins.js NOT written (pre-network check).'); process.exit(1);
+  }
+}
 
 // ---- 封面 ----
 const rewrite = u => {
@@ -266,7 +344,7 @@ const lines = ids.map(id => {
   for (const k of FIELDS) if (!OPTIONAL.has(k) || c[k]) o[k] = c[k];
   return '    ' + JSON.stringify(id) + ': ' + JSON.stringify(o);
 });
-const groupsSummary = Object.entries(lists).map(([g, arr]) => g + ' ' + arr.length).join('、');
+const groupsSummary = Object.entries(lists).filter(([g]) => !g.startsWith('_')).map(([g, arr]) => g + ' ' + arr.length).join('、');
 const js = `/* cards.js：由 tools/bake-cards.mjs 產生，請勿手改（改 tools/deck-lists.json 或 tools/pitches.json 後重跑）。
  *   node game-lab/tools/bake-cards.mjs
  * ${ids.length} 張；三軸＝seed 原值（王牌改 7/1/1 系列）；封面＝Firestore card_catalog 預烘（CAA front-250／scdn 300px／mzstatic 300x300bb），
@@ -283,12 +361,37 @@ ${lines.join(',\n')}
   };
 });
 `;
+const BINS = buildBins();
+problems.push(...BINS.probs);
+const binsJs = `/* bins.js：由 tools/bake-cards.mjs 產生，請勿手改（改 tools/deck-lists.json 的 bin_<key>／wall_a／wall_b／_bins 後重跑）。
+ *   node game-lab/tools/bake-cards.mjs
+ * SPEC-v4 §2.2.1：shops.<shop>.<key> = { rule, pool, display? }。rule 看卡片的第一個曲風標籤（first）等；display:true＝牆上展示、不賣。
+ * 區名不在這裡（在 shops/<shop>.json）。${Object.entries(BINS.dip).map(([k, v]) => k + ' ' + v.pool.length).join('、')}
+ */
+(function (root, factory) {
+  var bins = factory();
+  if (typeof module === 'object' && module.exports) module.exports = bins;
+  else root.DipLabBins = bins;
+})(typeof self !== 'undefined' ? self : this, function () {
+  'use strict';
+  return {
+    version: 4,
+    shops: {
+      dip: {
+${Object.entries(BINS.dip).map(([k, v]) => '        ' + JSON.stringify(k) + ': ' + JSON.stringify(v)).join(',\n')}
+      }
+    }
+  };
+});
+`;
 if (problems.length) {
   console.log('PROBLEMS (' + problems.length + '):'); problems.forEach(p => console.log('  ' + p));
-  console.log('cards.js NOT written.'); process.exitCode = 1;
+  console.log('cards.js / bins.js NOT written.'); process.exitCode = 1;
 } else {
   fs.writeFileSync(path.join(LAB, 'cards.js'), js);
+  fs.writeFileSync(path.join(LAB, 'bins.js'), binsJs);
   console.log('wrote cards.js:', ids.length, 'cards');
+  console.log('wrote bins.js:', Object.keys(BINS.dip).length, 'sections,', Object.values(BINS.dip).reduce((n, v) => n + v.pool.length, 0), 'slots');
 }
 console.log('covers verified:', VERIFY ? report.coversOk + '/' + ids.length : 'skipped', ' previews verified:', VERIFY ? report.previewOk : 'skipped');
 console.log('local covers:', ids.filter(id => cards[id].localCover).length, ' gold:', ids.filter(id => cards[id].gold).length);
