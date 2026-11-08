@@ -15,7 +15,7 @@
 .ec-drawer button:disabled{cursor:default;}
 
 /* 標題列：區名＋錢＋包包（或身上的配件）＋✕ */
-.ec-hd{flex:none;display:flex;align-items:center;gap:8px;min-height:40px;border-bottom:1px solid var(--line,#ddd);margin:0 -12px;padding:0 0 0 12px;}
+.ec-hd{flex:none;display:flex;align-items:center;gap:8px;min-height:44px;border-bottom:1px solid var(--line,#ddd);margin:0 -12px;padding:0 0 0 12px;}
 .ec-ttl{flex:1;min-width:0;font-size:14px;font-weight:700;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .ec-cnt{flex:none;font:700 13px var(--mono,'Space Mono',monospace);color:var(--gold,#b8860b);padding-right:12px;}
 .ec-wallet{flex:none;display:flex;align-items:baseline;gap:8px;white-space:nowrap;}
@@ -24,16 +24,17 @@
 .ec-rl{display:inline-flex;align-items:center;gap:2px;font-size:11px;color:var(--gray2,#666);}
 .ec-rl i{display:inline-grid;place-items:center;width:18px;height:18px;border:1px solid var(--line,#ddd);background:#faf8f2;font-style:normal;}
 .ec-rl small{margin-left:3px;font-family:var(--mono,'Space Mono',monospace);}
-.ec-x{flex:none;width:44px;height:40px;font-size:16px;line-height:40px;text-align:center;}
+.ec-x{flex:none;width:44px;height:44px;font-size:16px;line-height:44px;text-align:center;}
 .ec-x:active{background:#f2f2f2;}
 .ec-empty{margin:18px 0 14px;font-size:13px;color:var(--gray2,#666);text-align:center;}
 .ec-msg{flex:none;margin:8px 0 0;font-size:12px;font-weight:700;color:var(--red,#c11628);line-height:1.45;}
 .ec-line{flex:none;margin:6px 0 0;font-size:12px;color:#333;line-height:18px;height:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 
 /* 封面（共用）：斜紋底＋專輯名當後備 */
-.ec-cv,.ec-tcv,.ec-th{position:relative;display:block;overflow:hidden;flex:none;border:1px solid var(--ink,#111);
+.ec-th{position:relative;display:block;}
+.ec-cv,.ec-tcv{position:relative;display:block;overflow:hidden;flex:none;border:1px solid var(--ink,#111);
   background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f1f1f1 5px,#f1f1f1 10px);}
-.ec-cv>img,.ec-tcv>img,.ec-th>img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;}
+.ec-cv>img,.ec-tcv>img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;}
 .ec-alt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:4px;text-align:center;font-size:11px;font-weight:700;color:#444;line-height:1.25;overflow:hidden;}
 
 /* 三軸星數 */
@@ -68,9 +69,12 @@
 .ec-nav:active{background:#f2f2f2;}
 .ec-nav:disabled{opacity:.3;}
 .ec-ths{flex:1;min-width:0;display:flex;justify-content:center;gap:5px;}
-.ec-th{flex:0 1 36px;width:36px;min-width:22px;height:auto;aspect-ratio:1/1;opacity:.55;border-color:#bbb;}
-@supports not (aspect-ratio:1/1){.ec-th{height:36px;}}
-.ec-th.on{opacity:1;outline:2px solid var(--gold,#b8860b);outline-offset:1px;border-color:var(--ink,#111);}
+.ec-th{flex:0 1 40px;width:40px;min-width:26px;height:44px;border:0;background:none;opacity:.55;}
+.ec-th .ec-thc{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:auto;aspect-ratio:1/1;max-height:40px;overflow:hidden;border:1px solid #bbb;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f1f1f1 5px,#f1f1f1 10px);}
+.ec-th .ec-thc>img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;}
+@supports not (aspect-ratio:1/1){.ec-th .ec-thc{top:2px;bottom:2px;transform:none;}}
+.ec-th.on{opacity:1;}
+.ec-th.on .ec-thc{outline:2px solid var(--gold,#b8860b);outline-offset:1px;border-color:var(--ink,#111);}
 .ec-th .ec-alt{font-size:7px;}
 
 /* ---------- 特價箱、賣回：格子 ---------- */
@@ -100,6 +104,11 @@
 .ec-tx small{font-size:12px;color:var(--gray2,#666);line-height:1.4;}
 .ec-rbuy{flex:none;min-width:96px;min-height:44px;padding:6px 10px;}
 .ec-row .ec-sv{flex:none;font-size:13px;padding-right:6px;}
+.ec-tight .ec-rows{gap:2px;padding-top:4px;}
+.ec-tight .ec-row{min-height:46px;padding:1px 0;}
+.ec-tight .ec-row .ec-tx small{display:none;}
+.ec-tight .ec-pix{width:34px;height:34px;}
+.ec-tight .ec-msg{margin-top:6px;}
 
 /* 後備（沒載 style.css 時，例：別人的 harness） */
 .ec-drawer .lb-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:8px 14px;background:#fff;border:1px solid var(--ink,#111);

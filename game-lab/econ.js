@@ -331,7 +331,7 @@
           '<button type="button" class="ec-nav" data-a="prev" aria-label="' + esc(ui('prev')) + '"' + (n < 2 ? ' disabled' : '') + '>‹</button>' +
           '<div class="ec-ths">' + ids.map(function (id, i) {
             var k = card(id);
-            return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》') + '">' + coverImg(k) + '</button>';
+            return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》') + '"><span class="ec-thc">' + coverImg(k) + '</span></button>';
           }).join('') + '</div>' +
           '<button type="button" class="ec-nav" data-a="next" aria-label="' + esc(ui('next')) + '"' + (n < 2 ? ' disabled' : '') + '>›</button>' +
         '</div>' +
@@ -432,6 +432,8 @@
       el.style.setProperty('--ec-cv', cv + 'px');
       while (over() && cv > 72) { cv -= 6; el.style.setProperty('--ec-cv', cv + 'px'); }
     }
+    el.classList.remove('ec-tight');
+    if (over() && el.querySelector('.ec-rows')) el.classList.add('ec-tight');   // 矮螢幕：配件列收成一行（說明藏起來）
     if (grid) {
       var cols = grid.classList.contains('ec-g4') ? 4 : 3, gap = 6;
       var side = cols === 3 ? 30 : 0;   // 三欄：封面右邊放三軸星數
