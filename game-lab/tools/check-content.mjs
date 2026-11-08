@@ -208,7 +208,7 @@ export function shapeProblems(C, E) {
     const span = ids => { const hs = ids.map(id => C.enemies[id] && C.enemies[id].hp); const lo = Math.min(...hs), hi = Math.max(...hs); return lo === hi ? String(lo) : lo + '–' + hi; };
     const want = { normal: span(C.normals), elite: span(C.elites), boss: span([C.boss]) };
     ok(JSON.stringify(C.rules.hpText) === JSON.stringify(want), 'rules.hpText 要＝實際聲望 ' + JSON.stringify(want));
-    ok((C.rules.foot || []).join('').includes('你 ' + E.CFG.playerHp + ' 聲望') && /\{normal\}.*\{elite\}.*\{boss\}/.test((C.rules.foot || []).join('')), 'rules.foot：你 10 聲望＋{normal}／{elite}／{boss}');
+    ok((C.rules.foot || []).join('').includes('你 ' + E.CFG.playerHp + ' 聲望') && /\{normal\}.*\{elite\}.*\{boss\}/.test((C.rules.foot || []).join('')), 'rules.foot：你 ' + E.CFG.playerHp + ' 聲望（＝CFG.playerHp）＋{normal}／{elite}／{boss}');
   }
 
   // ---- 教學的規則資料（§2.2.10） ----

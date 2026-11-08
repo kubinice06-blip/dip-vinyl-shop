@@ -7,8 +7,10 @@
 // ----------------------------------------------------------------------------------------------------------------------------
 // Constants  ATTRS ['c','o','h'] · ZH {c:'經典',o:'冷門',h:'硬蕊'} · ZH1 {c:'經',o:'冷',h:'硬'} · TIERS · TIER_AXIS · COLOR_RELIC
 //            BEATS {o:'c',c:'h',h:'o'} (x beats BEATS[x]) · COUNTER_OF {c:'o',o:'h',h:'c'} (the attr that beats x) · beats(x,y)
-//            CFG {playerHp 10, handSize 3, enemyHand 3, bagMax 8, retries 1, relicMax 3, threshold 2, maxRounds 6, aceStar 7,
+//            CFG {playerHp 9, handSize 5, enemyHand 3, bagMax 8, retries 1, relicMax 3, threshold 2, maxRounds 6, aceStar 7,
 //                 colorRelicBonus 1, dustcoverCut 1, cleanerTie 1, boostStar 1, bargainPick 3, mercy true}  (sim --set k=v 改這裡)
+//            手牌 5 張＋王牌（FIXLIST 11：點牌才跳出三個屬性、疊成扇形；原版起手也是 5）；他的暗手維持 3 張。平衡 H5-1：你 9（手牌 5 張剋得到的手變多，
+//            你 −1 聲望壓通關率、客人聲望往上加把多出來的 KO 收回；出招難度與唬人率照 R1，scratchpad/v4/balance/H5A/results.md）
 // Cards      topAttr(card) 峰值軸，並列 c→o→h · peak(card) max(c,o,h) · deckMain(cards, taste) 牌單主屬性（並列峰值各算一票，票數並列照 taste）
 // Clash      clash(p, e, {threshold}) p/e = {attr, star, ace} -> {kind, toE, toP, blocked: null|'gap', by: 'p'|'e'|null}
 //              kind ∈ counter|countered|mirrorWin|mirrorLose|tie（mirror＝比星分出勝負，含「剋不動改比星」）
@@ -18,7 +20,7 @@
 //              （v3 墊片：clash(pStar, pAttr, eStar, eAttr) 也收，第二波 B2 改掉 ui.js 的舊呼叫後可刪）
 // Duel       enemyDef(content, id, {tutorial, depth, planner?}) -> eDef · playerDef(content, {bag, ace, relics}) -> pDef
 //            startDuel(pDef, eDef, {seed, enemyAce?, script?, hintTable?}) -> {duel, events}
-//            legalActions(duel) · isLegal(duel, act)          act = {i:0..2, attr} | {ace:true}
+//            legalActions(duel) · isLegal(duel, act)          act = {i:0..handSize−1（0..4）, attr} | {ace:true}
 //            preview(duel, act, eSide) -> {kind,toE,toP,blocked,by,notes}   eSide = {i, attr}（他手牌第 i 張）| {attr, star, ace}（假設值）
 //            resolveTurn(duel, act, {forcedPlay?:{i,attr}, debugOutcome?:{kind,toE,toP}}) -> Event[]   (illegal act → [] and nothing changes)
 //            view(duel) -> 公開資訊（§2.1.5；不含他這手出哪張、哪色、有沒有唬人）
@@ -73,7 +75,10 @@
   const COLOR_RELIC = { c: 'obi', o: 'testpress', h: 'stylus' };          // X剋中多扣 1
 
   const CFG = {
-    playerHp: 10, handSize: 3, enemyHand: 3, bagMax: 8, retries: 1, relicMax: 3,
+    playerHp: 9,         // FIXLIST 11 平衡 H5-1（手牌 5 張；R1 手牌 3 張時是 10）：規則卡頁尾「你 9 聲望」照這個寫（check-content 對）
+    handSize: 5,         // FIXLIST 11：你的手牌 5 張（＋王牌格）；包包 8 張、打出一張補一張、牌堆抽完把丟過的洗回
+    enemyHand: 3,        // 他的暗手維持 3 張（H5-A：他 3／4／5 張對通關率影響 ≤2 點，5 張反而讓 S2／S6 餘裕少 1–2 點）
+    bagMax: 8, retries: 1, relicMax: 3,
     threshold: 2,        // D §5 規則 4：被剋方星數 − 剋方星數 ≥ 2 → 剋不動，改比星
     maxRounds: 6,        // D §5 規則 6：第 6 手結算完還沒人倒 → 比聲望條剩幾成（playerAhead），一樣算你贏
     aceStar: 7,
@@ -86,9 +91,9 @@
   };
   // content 沒給時的預設（＝content.js 的 C.honesty／C.planners／C.plannerByDepth／C.economy；直接呼叫 startDuel 的地方不傳 content 也不會壞）
   // 誠實度只在引擎裡（照實出的機率 q）；畫面上不寫任何誠實度字（FIXLIST 6，店主 2026-11-08 06:05）
-  const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.75 }, veteran: { q: 0.75 } };   // FIXLIST 10 平衡 R1
+  const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.75 }, veteran: { q: 0.75 } };   // FIXLIST 10 平衡 R1（FIXLIST 11 H5-1 照用）
   const PLANNERS = { easy: { w: 0.45, nz: 2.4, mercy: false }, normal: { w: 0.6, nz: 1.4, mercy: true }, hard: { w: 0.7, nz: 0.8, mercy: true } };
-  const PLANNER_BY_DEPTH = ['normal', 'easy', 'easy', 'normal', 'normal'];                                   // FIXLIST 10 平衡 R1
+  const PLANNER_BY_DEPTH = ['normal', 'easy', 'easy', 'normal', 'normal'];                                   // FIXLIST 10 平衡 R1（FIXLIST 11 H5-1 照用）
   const DEFAULT_HINTS = { c: ['c1', 'c2', 'c3', 'c4', 'c5'], o: ['o1', 'o2', 'o3', 'o4', 'o5'], h: ['h1', 'h2', 'h3', 'h4', 'h5'] };
   // 台幣行情（FIXLIST 8＋X／Y 契約）：唱片照稀有度定價、特價箱每張照最高星、櫃檯配件一件 3000、賣回半價
   const ECON = { start: 1000, win: { prologue: 0, normal: 1500, elite: 2500, boss: 0 },

@@ -338,7 +338,8 @@ section('5 規則抽查', () => {
   for (const tier of TIERS) {
     const { duel } = startFor('copycat', tier, 5);
     const acts = EN.legalActions(duel), aces = acts.filter(a => a.ace);
-    ok(aces.length === 1 && aces[0].attr === C.aceAxis[tier] && acts.length === 10, 'one ace action on the 7 axis', aces);
+    ok(aces.length === 1 && aces[0].attr === C.aceAxis[tier] && acts.length === 3 * CFG.handSize + 1, 'one ace action on the 7 axis (hand ' + CFG.handSize + ' × 3 colours + ace)', { aces, n: acts.length });
+    eq(duel.p.hand.length, CFG.handSize, 'your hand ' + CFG.handSize + ' (FIXLIST 11)');
     ok(!EN.isLegal(duel, { ace: true, attr: ATTRS.find(a => a !== C.aceAxis[tier]) }), 'ace on another axis is illegal');
     const hand0 = duel.p.hand.map(c => c.id);
     const cl = clashOf(EN.resolveTurn(duel, { ace: true }));
@@ -374,13 +375,14 @@ section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一
   eq([EN.hpPct(6, 10), EN.hpPct(9, 18), EN.hpPct(-3, 10), EN.hpPct(7, 15)], [60, 50, 0, 47], 'hpPct');
   eq([EN.pctPair(6, 10, 9, 18), EN.pctPair(9, 10, 28, 31), EN.pctPair(5, 10, 15, 30), EN.pctPair(-1, 10, 3, 30)],
     [{ p: '60', e: '50' }, { p: '90.0', e: '90.3' }, { p: '50', e: '50' }, { p: '0', e: '10' }], 'pctPair: integers unless they would hide the winner');
-  // 你 10、客人 12–40：pctPair 顯示的大小永遠跟 playerAhead 一致（一樣大 ⇔ 真的一樣大）
-  for (let E = 12; E <= 40; E++) for (let e = 0; e <= E; e++) for (let p = 0; p <= 10; p++) {
-    const t = EN.pctPair(p, 10, e, E), a = EN.playerAhead(p, 10, e, E), b = EN.playerAhead(e, E, p, 10);
+  // 你 9／10、客人 12–40：pctPair 顯示的大小永遠跟 playerAhead 一致（一樣大 ⇔ 真的一樣大）
+  for (const P of [9, 10]) for (let E = 12; E <= 40; E++) for (let e = 0; e <= E; e++) for (let p = 0; p <= P; p++) {
+    const t = EN.pctPair(p, P, e, E), a = EN.playerAhead(p, P, e, E), b = EN.playerAhead(e, E, p, P);
     const shown = +t.p > +t.e ? 'p' : +t.p < +t.e ? 'e' : 'tie', real = a && b ? 'tie' : a ? 'p' : 'e';
     if (shown !== real) ok(false, 'pctPair consistent', { p, e, E, t }); else pass++;
   }
-  const T = { debugOutcome: { kind: 'tie', toE: 0, toP: 0 } }, E10 = { eOver: { hp: 10 } };
+  // 這一段的比例照「你 10」寫（6/10 vs 9/18…）：明確給你 10，跟 CFG.playerHp（現在 9）無關；最後一個 g 才用 CFG.playerHp
+  const T = { debugOutcome: { kind: 'tie', toE: 0, toP: 0 } }, E10 = { hp: 10, eOver: { hp: 10 } }, Y10 = { hp: 10 };
   for (let s = 1; s <= 30; s++) {
     const { duel } = startFor('copycat', TIERS[s % 3], s, E10);
     const evs = [];
@@ -396,17 +398,17 @@ section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一
     EN.resolveTurn(c, EN.legalActions(c)[0], { debugOutcome: { kind: 'mirrorLose', toE: 0, toP: 1 } });
     for (let k = 0; k < 4; k++) EN.resolveTurn(c, EN.legalActions(c)[0], T);
     ok(c.over && c.over.win === true, 'level after 6 → you win', c.over);
-    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人聲望 18 > 你 10：六手都 tie → 兩邊都滿條（100%＝100%）→ 你贏（舊規則比絕對值是他贏）
+    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人聲望 25 > 你 9：六手都 tie → 兩邊都滿條（100%＝100%）→ 你贏（舊規則比絕對值是他贏）
     const ge = []; for (let k = 0; k < 6; k++) ge.push(...EN.resolveTurn(g, EN.legalActions(g)[0], T));
-    ok(g.over && g.over.by === 'rounds' && g.over.win === true, 'rounds compare the bar (10/10 = 18/18 → you win)', g.over);
+    ok(g.over && g.over.by === 'rounds' && g.over.win === true, 'rounds compare the bar (9/9 = 25/25 → you win)', g.over);
     const ov = ge.find(e => e.t === 'over');
-    ok(ov && ov.pPct === 100 && ov.ePct === 100 && ov.pMax === 10 && ov.eMax === C.enemies.copycat.hp && ov.pct.p === '100' && ov.pct.e === '100', 'over event has pMax／eMax／pPct／ePct／pct', ov);
+    ok(ov && ov.pPct === 100 && ov.ePct === 100 && ov.pMax === CFG.playerHp && ov.eMax === C.enemies.copycat.hp && ov.pct.p === '100' && ov.pct.e === '100', 'over event has pMax／eMax／pPct／ePct／pct', ov);
     // 你 6/10（60%）、他 9/18（50%）→ 你贏（舊規則 6 < 9 是你輸）；你 4/10、他 9/18 → 你輸
-    const h = startFor('copycat', TIERS[s % 3], s, { eOver: { hp: 18 } }).duel;
+    const h = startFor('copycat', TIERS[s % 3], s, { ...Y10, eOver: { hp: 18 } }).duel;
     EN.resolveTurn(h, EN.legalActions(h)[0], { debugOutcome: { kind: 'counter', toE: 9, toP: 4 } });
     for (let k = 0; k < 5; k++) EN.resolveTurn(h, EN.legalActions(h)[0], T);
     ok(h.over && h.over.by === 'rounds' && h.over.win === true && h.p.hp === 6 && h.e.hp === 9, '60% vs 50% → you win', h.over);
-    const i2 = startFor('copycat', TIERS[s % 3], s, { eOver: { hp: 18 } }).duel;
+    const i2 = startFor('copycat', TIERS[s % 3], s, { ...Y10, eOver: { hp: 18 } }).duel;
     EN.resolveTurn(i2, EN.legalActions(i2)[0], { debugOutcome: { kind: 'counter', toE: 9, toP: 6 } });
     for (let k = 0; k < 5; k++) EN.resolveTurn(i2, EN.legalActions(i2)[0], T);
     ok(i2.over && i2.over.win === false && i2.p.hp === 4, '40% vs 50% → you lose', i2.over);

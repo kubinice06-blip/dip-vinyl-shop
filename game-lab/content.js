@@ -78,6 +78,7 @@
   // index＝run.idx（今晚第幾位客人，0 起：第 1／2／3 位一般、菁英、藏家）；序章男子固定 easy
   //   原版 enemyForDepth 是 d<3 easy、d<5 normal、其餘 hard（roguelike.html:3480）。FIXLIST 10 平衡 R1 改成 normal／easy／easy／normal／normal：
   //   第 1 位（包包最弱、還沒買東西）用 normal 比第 3 位用 normal 多壓 2–3 點通關率；藏家改 normal，難度改由聲望最高＋多一張王牌扛
+  //   FIXLIST 11 手牌 5 張（H5-1）：誠實度與這張表照 R1 不動，只動聲望（你 9、客人 20–28；見下「客人」）
   C.plannerByDepth = ['normal', 'easy', 'easy', 'normal', 'normal'];
 
   // ===================================================================
@@ -146,10 +147,12 @@
   C.nightTag = '新';
 
   // ===================================================================
-  // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望＝sim.mjs --n 3000 校準後的值（男子固定 10、教學 18），過程見 dev/notes-X.md、dev/notes-R1.md）
-  //   FIXLIST 10 平衡 R1（主線 2026-11-08 選案）：一般 22（社團學長 21）、菁英 主理人 22／樂評 24、藏家 24——聲望 一般 ≤ 菁英 ≤ 藏家（sim HP 檢查）。
-  //   KO 幾乎只看客人聲望（一致 20 → 客人場 KO 56%、22 → 約 49%、24 → 34%）；S9 要 KO ≥35%，所以客人聲望壓在 21–24，
-  //   通關率改由出招難度（C.plannerByDepth）與唬人率（C.honesty）壓回 S1 70–85%。你維持 10（11 → 通關 87%、9 → 菁英／藏家單場過不了 S7）
+  // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望＝sim.mjs --n 3000 校準後的值（男子固定 10、教學 18），過程見 dev/notes-X.md、dev/notes-R1.md、dev/notes-H1.md）
+  //   FIXLIST 11 平衡 H5-1（手牌 5 張；主線 2026-11-08 選案，scratchpad/v4/balance/H5A/results.md）：
+  //   一般 25（社團學長、二手店老闆 20）、菁英 主理人 25／樂評 26、藏家 28——聲望 一般 ≤ 菁英 ≤ 藏家（sim HP 檢查）；你 9（engine CFG.playerHp）。
+  //   手牌 3 → 5 張讓「剋不到」的手從約 19% 降到 12%，R1 的數字通關率變 87%（超過 85）、KO 60%：你 −1 聲望壓通關率（約 −7 點），
+  //   客人聲望往上加把多出來的 KO 收回（59.8% → 47.8%）。社團學長、二手店老闆是最難的兩位（單場約 79%），放低到 20 讓一般客人差距 ≤20 點。
+  //   出招難度（C.plannerByDepth）與唬人率（C.honesty）照 R1 不動。R1（手牌 3 張）是 你 10、一般 22（社團學長 21）、菁英 22／24、藏家 24。
   //   name：一看就知道是誰、偏好什麼的身分（FIXLIST 6，店主 2026-11-08 06:03）；原本的綽號＋副標（title）併掉，沒有 title 欄
   //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖；只在引擎裡，不上畫面）；出招難度跟著場次走（C.plannerByDepth）
   //   taste：三軸並列時的順序（只當並列順序）；deck：7 張真唱片（藏家 6 張＋你沒選的那張王牌，由 engine 加；男子 6 張）
@@ -165,14 +168,14 @@
     },
     copycat: {
       id: 'copycat', name: '文青同好', spr: 'e1', avatar: null,
-      honesty: 'sometimes', hp: 22, taste: 'och',
+      honesty: 'sometimes', hp: 25, taste: 'och',
       deck: ['beach-house-teen-dream', 'weyes-blood-titanic-rising', 'mitski-be-the-cowboy', 'billie-eilish-when-we-all-fall-asleep-where-do-we-go',
         'low-double-negative', 'sophie-oil-of-every-pearl-s-un-insides', '大象體操-elephant-gym-角度'],
       voice: { freq: 523, wave: 'square' }
     },
     already: {
       id: 'already', name: '社團學長', spr: 'e2', avatar: null,
-      honesty: 'sometimes', hp: 21, taste: 'hco',
+      honesty: 'sometimes', hp: 20, taste: 'hco',
       deck: ['don-slepian-sea-of-bliss', 'harold-budd-abandoned-cities', 'demetrio-stratos-metrodora',
         'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des', 'nocturnal-emissions-fruiting-body', 'eivind-aarset-electronique-noire',
         'yezda-urfa-boris'],
@@ -180,14 +183,14 @@
     },
     needle: {
       id: 'needle', name: '音響發燒友', spr: 'e6', avatar: null,
-      honesty: 'sometimes', hp: 22, taste: 'coh',
+      honesty: 'sometimes', hp: 25, taste: 'coh',
       deck: ['steely-dan-gaucho', 'art-pepper-art-pepper-meets-the-rhythm-section', 'bill-evans-waltz-for-debby', 'kenny-burrell-midnight-blue',
         'roscoe-mitchell-sextet-sound', 'john-zorn-cobra', 'andrew-cyrille-what-about'],
       voice: { freq: 587, wave: 'triangle' }
     },
     skip: {
       id: 'skip', name: '二手店老闆', spr: 'e4', avatar: null,
-      honesty: 'sometimes', hp: 22, taste: 'coh',
+      honesty: 'sometimes', hp: 20, taste: 'coh',
       deck: ['roberto-goyeneche-cantor-de-mi-barrio', 'amalia-rodrigues-gostava-de-ser-quem-era', 'king-sunny-ade-aura',
         'washington-phillips-the-key-to-the-kingdom', 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri',
         'tony-scott-the-indonesian-all-stars-djanger-bali', 'barney-wilen-moshi'],
@@ -196,7 +199,7 @@
     broke: {
       id: 'broke', name: '地下樂團吉他手', spr: null,
       avatar: { head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' },
-      honesty: 'sometimes', hp: 22, taste: 'och',
+      honesty: 'sometimes', hp: 25, taste: 'och',
       deck: ['血肉果汁機-flesh-juicer-golden太子bro', '血肉果汁機-flesh-juicer-深海童話', '閃靈-失竊千年',
         '血肉果汁機-flesh-juicer-血肉宮建宮蓋廟演唱會', '閃靈-永劫輪迴', '閃靈-醒靈寺大決戰', '林強-驚蟄'],
       voice: { freq: 494, wave: 'square' }
@@ -204,28 +207,28 @@
     buyer: {
       id: 'buyer', name: '前衛樂迷', spr: null,
       avatar: { head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' },
-      honesty: 'sometimes', hp: 22, taste: 'coh',
+      honesty: 'sometimes', hp: 25, taste: 'coh',
       deck: ['swans-soundtracks-for-the-blind', 'venetian-snares-making-orange-things', 'nurse-with-wound-homotopy-to-marie',
         'ryoji-ikeda-mort-aux-vaches', 'sunn-o-white1', 'sigur-ros-von', 'william-basinski-the-disintegration-loops'],
       voice: { freq: 554, wave: 'square' }
     },
     label: {
       id: 'label', name: '地下廠牌主理人', spr: 'e5', avatar: null,
-      honesty: 'often', hp: 22, taste: 'ohc',
+      honesty: 'often', hp: 25, taste: 'ohc',
       deck: ['廢五金-廢五金', '明田川荘之-yamazaki-blues', '菊地雅章-end-for-the-beginning', 'keiji-haino-watashi-dake',
         'harry-roesli-gang-philosophy-gang', 'c-o-b-moyshe-mcstiff-and-the-tartan-lancers-of-the-sacred-he', 'pholas-dactylus-concerto-delle-menti'],
       elite: true, voice: { freq: 294, wave: 'sine' }
     },
     critic: {
       id: 'critic', name: '資深樂評', spr: 'e3', avatar: null,
-      honesty: 'often', hp: 24, taste: 'ohc',
+      honesty: 'often', hp: 26, taste: 'ohc',
       deck: ['tim-buckley-starsailor', 'throbbing-gristle-20-jazz-funk-greats', 'black-midi-schlagenheim', 'faust-faust-iv',
         'neu-neu', 'sun-ra-space-is-the-place', 'the-plastic-people-of-the-universe-egon-bondy-s-happy-hearts'],
       elite: true, voice: { freq: 392, wave: 'square' }
     },
     boss: {
       id: 'boss', name: '傳說藏家', spr: 'boss', avatar: null,
-      honesty: 'veteran', hp: 24, taste: 'coh',
+      honesty: 'veteran', hp: 28, taste: 'coh',
       deck: ['交工樂隊-我等就來唱山歌', 'ganelin-trio-ancora-da-capo', 'luis-russell-the-luis-russell-story-1929-1934',
         'raw-material-time-is', 'alexander-von-schlippenbach-globe-unity', '裸のラリーズ-the-oz-tapes'],
       boss: true, voice: { freq: 147, wave: 'sine' }
@@ -544,7 +547,7 @@
       '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。'
     ],
     relics: '發燒配件：自動生效，最多帶三件。',
-    foot: ['點專輯選牌；按住封面看唱片資訊。', '你 10 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
+    foot: ['點專輯選牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
   };
   C.rulesTag = '新';          // title／relics／foot
   C.rulesLinesTag = '店主';   // lines（六行）
