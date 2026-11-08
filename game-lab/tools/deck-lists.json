@@ -1,4 +1,143 @@
 {
+ "_doc": "v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區的上架規則（bins.js 的 rule）；_ost＝專輯名抓不到、但確定是電影原聲的卡 id。",
+ "_region": {
+  "吉田美奈子-monochrome": "jp",
+  "松田聖子-風立ちぬ": "jp",
+  "久石譲-となりのトトロ-サウンドトラック集": "jp",
+  "大野雄二-original-soundtrack-from-lupin-iii": "jp",
+  "伍佰-china-blue-樹枝孤鳥": "tw",
+  "五月天-mayday-人生海海": "tw",
+  "蔡琴-蔡琴老歌": "tw",
+  "江蕙-紅線": "tw",
+  "陳建年-大地": "tw",
+  "張懸-deserts-chang-神的遊戲": "tw",
+  "陳明章-戀戀風塵-電影原聲帶": "tw",
+  "王菲-浮躁": "zh"
+ },
+ "_bins": {
+  "rnb": {
+   "first": [
+    "soul"
+   ],
+   "regions": [
+    "xx"
+   ]
+  },
+  "ost": {
+   "ost": true
+  },
+  "rock": {
+   "first": [
+    "rock"
+   ],
+   "regions": [
+    "xx"
+   ]
+  },
+  "jp": {
+   "first": [
+    "pop",
+    "rock",
+    "soul",
+    "folk",
+    "world"
+   ],
+   "regions": [
+    "jp"
+   ]
+  },
+  "hiphop": {
+   "first": [
+    "hiphop"
+   ],
+   "regions": [
+    "xx"
+   ]
+  },
+  "elec": {
+   "first": [
+    "electronic"
+   ],
+   "regions": [
+    "xx"
+   ]
+  },
+  "new": {
+   "minYear": 2020,
+   "regions": [
+    "xx"
+   ]
+  },
+  "cpop": {
+   "first": [
+    "pop",
+    "folk",
+    "rock"
+   ],
+   "regions": [
+    "tw",
+    "zh"
+   ]
+  },
+  "jazz": {
+   "first": [
+    "jazz"
+   ],
+   "regions": [
+    "jp",
+    "zh",
+    "xx"
+   ]
+  },
+  "tw": {
+   "first": [
+    "rock",
+    "folk"
+   ],
+   "regions": [
+    "tw"
+   ]
+  },
+  "noise": {
+   "first": [
+    "rock",
+    "electronic",
+    "jazz"
+   ],
+   "minTop": {
+    "attr": "h",
+    "star": 4
+   }
+  },
+  "folk": {
+   "first": [
+    "folk",
+    "blues"
+   ],
+   "notGenres": [
+    "electronic"
+   ],
+   "regions": [
+    "xx"
+   ]
+  },
+  "wallA": {
+   "first": [
+    "rock",
+    "pop"
+   ]
+  },
+  "wallB": {
+   "first": [
+    "jazz",
+    "soul"
+   ]
+  }
+ },
+ "_ost": [
+  "goblin-profondo-rosso",
+  "john-carpenter-christine"
+ ],
  "ace_hall": [
   "Radiohead|OK Computer"
  ],
@@ -12,10 +151,10 @@
   "David Bowie|Low",
   "Vashti Bunyan|Just Another Diamond Day",
   "Scott Walker|Tilt",
-  "Can|Ege Bamyasi"
+  "Beverly Glenn-Copeland|...Keyboard Fantasies..."
  ],
  "gift_pearl": [
-  "Karen Dalton|In My Own Time",
+  "Charles Brackeen|Rhythm X",
   "Bark Psychosis|Hex",
   "黃小楨|賞味期限",
   "傷心欲絕|我愛您"
@@ -24,142 +163,250 @@
   "The Velvet Underground|White Light/White Heat",
   "Melt-Banana|Speak Squeak Creak",
   "Pharoah Sanders|Tauhid",
-  "Einstürzende Neubauten|Halber Mensch"
+  "Magma|Mëkanïk Dëstruktïw Kömmandöh"
  ],
- "junk": [
+ "bargain": [
+  "Blur|The Great Escape",
+  "Oasis|Dig Out Your Soul",
   "David Bowie|Never Let Me Down",
-  "Miles Davis|You're Under Arrest",
-  "Devo|Oh, No! It's Devo"
+  "The Velvet Underground|Squeeze",
+  "Stevie Wonder|Eivets Rednow",
+  "The Kinks|Preservation Act 1",
+  "Metallica|Reload",
+  "Weezer|Van Weezer",
+  "Ramones|Halfway to Sanity"
  ],
  "man": [
   "Coldplay|Mylo Xyloto",
-  "Westlife|Coast to Coast",
   "Imagine Dragons|Night Visions",
-  "Katy Perry|PRISM",
-  "Oasis|Be Here Now",
-  "Linkin Park|One More Light"
+  "Limp Bizkit|Results May Vary",
+  "老王樂隊|暮夜徐行",
+  "Eminem|The Eminem Show",
+  "Katy Perry|PRISM"
  ],
  "man_drop": [
   "Fishmans|Long Season"
  ],
  "copycat": [
-  "Billie Eilish|WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-  "Lorde|Melodrama",
   "Beach House|Teen Dream",
-  "Mitski|Be the Cowboy",
   "Weyes Blood|Titanic Rising",
-  "Japanese Breakfast|Jubilee",
-  "Clairo|Immunity"
+  "Mitski|Be the Cowboy",
+  "Billie Eilish|WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+  "Low|Double Negative",
+  "Sophie|Oil of Every Pearl's Un-Insides",
+  "大象體操 Elephant Gym|角度"
  ],
  "already": [
-  "Talk Talk|Laughing Stock",
-  "Robert Wyatt|Rock Bottom",
-  "Duster|Stratosphere",
-  "Broadcast|Tender Buttons",
-  "Squarepusher|Ultravisitor",
-  "Autechre|Tri Repetae",
-  "Xiu Xiu|Fabulous Muscles"
+  "Pauline Anna Strom|Trans-Millenia Consort",
+  "Gigi Masin|Wind",
+  "Demetrio Stratos|Metrodora",
+  "Étron Fou Leloublan|Les Trois Fou's Perdégagnent (Au Pays Des...)",
+  "Nocturnal Emissions|Fruiting Body",
+  "Eivind Aarset|Électronique noire",
+  "Yezda Urfa|Boris"
  ],
  "needle": [
-  "Dire Straits|Brothers in Arms",
   "Steely Dan|Gaucho",
-  "Toto|Toto IV",
-  "Boz Scaggs|Silk Degrees",
-  "Bill Evans|Waltz for Debby",
   "Art Pepper|Art Pepper Meets the Rhythm Section",
-  "Kenny Burrell|Midnight Blue"
- ],
- "buyer": [
-  "Mogwai|Young Team",
-  "Explosions in the Sky|The Earth Is Not a Cold Dead Place",
-  "Sigur Rós|Takk...",
-  "Sigur Rós|Von",
-  "William Basinski|The Disintegration Loops",
-  "Brian Eno|Ambient 1: Music for Airports",
-  "Swans|Soundtracks for the Blind"
- ],
- "broke": [
-  "美秀集團 Amazing Show|電火王",
-  "deca joins|鳥鳥鳥",
-  "宇宙人|地球漫步",
-  "老王樂隊|吾日三省吾身",
-  "陳珊妮|完美的呻吟",
-  "雷光夏 Summer Lei|黑暗之光",
-  "生祥樂隊|圍庄"
+  "Bill Evans|Waltz for Debby",
+  "Kenny Burrell|Midnight Blue",
+  "Roscoe Mitchell Sextet|Sound",
+  "John Zorn|Cobra",
+  "Andrew Cyrille|What About?"
  ],
  "skip": [
-  "The Band|Music from Big Pink",
-  "Fela Kuti|Zombie",
-  "Caetano Veloso|Transa",
-  "Stevie Wonder|Innervisions",
-  "Herbie Hancock|Maiden Voyage",
-  "John Coltrane|Blue Train",
-  "Daft Punk|Random Access Memories"
+  "Mina|Studio Uno 66",
+  "Amália Rodrigues|Gostava de ser quem era",
+  "Dorival Caymmi|Caymmi Visita Tom",
+  "Washington Phillips|The Key to the Kingdom",
+  "Otha Turner & The Rising Star Fife & Drum Band|Everybody Hollerin' Goat",
+  "Tony Scott & The Indonesian All Stars|Djanger Bali",
+  "Barney Wilen|Moshi"
+ ],
+ "broke": [
+  "血肉果汁機 Flesh Juicer|GOLDEN太子BRO",
+  "血肉果汁機 Flesh Juicer|深海童話",
+  "閃靈|失竊千年",
+  "血肉果汁機 Flesh Juicer|血肉宮建宮蓋廟演唱會",
+  "閃靈|永劫輪迴",
+  "閃靈|醒靈寺大決戰",
+  "林強|驚蟄"
+ ],
+ "buyer": [
+  "Swans|Soundtracks for the Blind",
+  "Venetian Snares|Making Orange Things",
+  "Nurse With Wound|Homotopy to Marie",
+  "Ryoji Ikeda|Mort aux vaches",
+  "Sunn O)))|White1",
+  "Sigur Rós|Von",
+  "William Basinski|The Disintegration Loops"
  ],
  "label": [
-  "Merzbow|1930",
-  "This Heat|Repeat",
-  "Keiji Haino|Watashi Dake?",
-  "Ruins|Pallaschtom",
-  "Dälek|Negro Necro Nekros",
   "廢五金|廢五金",
-  "Sunn O)))|White1",
-  "Lightning Bolt|Wonderful Rainbow"
+  "明田川荘之|Yamazaki Blues",
+  "菊地雅章|End for the Beginning",
+  "Keiji Haino|Watashi Dake?",
+  "Harry Roesli Gang|Philosophy Gang",
+  "C.O.B.|Moyshe McStiff and the Tartan Lancers of the Sacred Heart",
+  "Pholas Dactylus|Concerto delle menti"
  ],
  "critic": [
   "Tim Buckley|Starsailor",
   "Throbbing Gristle|20 Jazz Funk Greats",
   "black midi|Schlagenheim",
   "Faust|Faust IV",
-  "Silver Apples|Silver Apples",
-  "Popol Vuh|In den Gärten Pharaos",
   "Neu!|Neu!",
-  "Sun Ra|Space Is the Place"
+  "Sun Ra|Space Is the Place",
+  "The Plastic People of the Universe|Egon Bondy's Happy Hearts Club Banned"
  ],
  "boss": [
   "交工樂隊|我等就來唱山歌",
-  "Alice Coltrane|Journey in Satchidananda",
-  "Shuggie Otis|Inspiration Information",
-  "Popol Vuh|Hosianna Mantra",
+  "Ganelin Trio|Ancora da Capo",
+  "Luis Russell|The Luis Russell Story 1929-1934",
+  "Raw Material|Time Is...",
+  "Alexander von Schlippenbach|Globe Unity",
+  "裸のラリーズ|The Oz Tapes"
+ ],
+ "wall_a": [
+  "Radiohead|OK Computer",
   "Cornelius|Fantasma",
-  "坂本龍一|async",
-  "Merzbow|Venereology",
-  "Kenny Wheeler|Gnu High"
+  "David Bowie|Low",
+  "Fishmans|Long Season",
+  "The Band|Music from Big Pink",
+  "Can|Ege Bamyasi",
+  "雷光夏 Summer Lei|黑暗之光",
+  "Kate Bush|The Dreaming"
  ],
- "stake": [
-  "宇多田ヒカル|First Love",
-  "Talk Talk|Laughing Stock",
-  "Nick Drake|Bryter Layter",
-  "林生祥|種樹",
+ "wall_b": [
+  "Bill Evans|Waltz for Debby",
+  "John Coltrane|Blue Train",
+  "Fela Kuti|Zombie",
+  "Stevie Wonder|Innervisions",
   "Shuggie Otis|Inspiration Information",
-  "Roscoe Mitchell Sextet|Sound",
-  "Glenn Branca|The Ascension",
-  "Kate Bush|The Dreaming",
-  "Mogwai|Come On Die Young"
+  "Alice Coltrane|Journey in Satchidananda",
+  "Hermeto Pascoal|Zabumbê-bum-á",
+  "Herbie Hancock|Maiden Voyage",
+  "Sun Ra|Space Is the Place"
  ],
- "crate_jazz": [
-  "Joe Harriott|Free Form",
-  "Andrew Cyrille|What About?",
-  "Kenny Wheeler|Gnu High",
-  "明田川荘之|Yamazaki Blues",
-  "菊地雅章|End for the Beginning",
-  "Kenny Burrell|Midnight Blue"
+ "bin_rnb": [
+  "Sly & the Family Stone|Fresh",
+  "Roberta Flack|Born to Love",
+  "Bobby Womack|The Poet",
+  "Curtis Mayfield|There's No Place Like America Today",
+  "David Bowie|Young Americans",
+  "The Doobie Brothers|Minute by Minute",
+  "Millie Jackson|Hard Times",
+  "Ohio Players|Tenderness"
  ],
- "crate_tw": [
-  "交工樂隊|我等就來唱山歌",
-  "傷心欲絕|還是偶爾想要偉大",
-  "林生祥|種樹",
-  "老王樂隊|暮夜徐行",
-  "美秀集團 Amazing Show|多色寶山大王",
-  "大象體操 Elephant Gym|角度"
+ "bin_ost": [
+  "Goblin|Profondo rosso",
+  "久石譲|となりのトトロ サウンドトラック集",
+  "Cliff Martinez|Drive: Original Motion Picture Soundtrack",
+  "Isaac Hayes|Shaft: Music From the Soundtrack",
+  "陳明章|戀戀風塵 電影原聲帶",
+  "Jóhann Jóhannsson|Sicario: Original Motion Picture Soundtrack",
+  "大野雄二|Original Soundtrack from Lupin III",
+  "John Carpenter|Christine"
  ],
- "crate_noise": [
-  "Merzbow|Noisembryo",
-  "Masonna|Mademoiselle Anne sanglante ou notre nymphomanie auréolé",
-  "Melt-Banana|Scratch or Stitch",
-  "Peter Brötzmann|Nipples",
+ "bin_rock": [
+  "Robert Wyatt|Rock Bottom",
+  "Talk Talk|Laughing Stock",
+  "Mogwai|Come On Die Young",
+  "Sigur Rós|Takk...",
+  "Opeth|Morningrise",
+  "Einstürzende Neubauten|Halber Mensch",
+  "Brian Eno|Taking Tiger Mountain (By Strategy)",
+  "Radiohead|The King of Limbs"
+ ],
+ "bin_jp": [
+  "宇多田ヒカル|First Love",
+  "大貫妙子|Grey Skies",
+  "竹内まりや|Beginning",
+  "細野晴臣|Tropical Dandy",
+  "吉田美奈子|Monochrome",
+  "松田聖子|風立ちぬ",
+  "はっぴいえんど|はっぴいえんど",
+  "りんけんバンド|なんくる"
+ ],
+ "bin_hiphop": [
+  "Janet Jackson|Control",
+  "Dälek|Negro Necro Nekros",
+  "Public Enemy|The Evil Empire of Everything",
+  "Usher|Confessions",
+  "billy woods|Church",
+  "Nas|God's Son",
+  "Brandy|Full Moon",
+  "Missy Elliott|Miss E... So Addictive"
+ ],
+ "bin_elec": [
+  "Autechre|Tri Repetae",
+  "Massive Attack|Mezzanine",
+  "Bonobo|Dial ‘M' for Monkey",
   "Venetian Snares|Detrimentalist",
-  "Sunn O)))|Life Metal"
+  "Squarepusher|Ultravisitor",
+  "Boards of Canada|Geogaddi",
+  "The Chemical Brothers|Push the Button",
+  "Orbital|Blue Album"
+ ],
+ "bin_new": [
+  "Little Simz|Sometimes I Might Be Introvert",
+  "Devendra Banhart|Flying Wig",
+  "Nine Inch Nails|Ghosts V: Together",
+  "Beyoncé|Renaissance",
+  "Kendrick Lamar|Mr. Morale & the Big Steppers",
+  "Armand Hammer|Haram",
+  "The Weeknd|After Hours",
+  "Weyes Blood|And in the Darkness, Hearts Aglow"
+ ],
+ "bin_cpop": [
+  "伍佰 & China Blue|樹枝孤鳥",
+  "蔡琴|蔡琴老歌",
+  "王菲|浮躁",
+  "張懸 Deserts Chang|神的遊戲",
+  "五月天 Mayday|人生海海",
+  "江蕙|紅線",
+  "陳建年|大地",
+  "宇宙人|地球漫步"
+ ],
+ "bin_jazz": [
+  "Thelonious Monk|Straight, No Chaser",
+  "Kenny Drew|Everything I Love",
+  "Ornette Coleman|This Is Our Music",
+  "富樫雅彦|We Now Create - Music for Strings, Winds and Percussions",
+  "Freddie Hubbard|Red Clay",
+  "Chet Baker|She Was Too Good to Me",
+  "McCoy Tyner|Extensions",
+  "Grant Green|Feelin' the Spirit"
+ ],
+ "bin_tw": [
+  "林生祥|種樹",
+  "傷心欲絕|還是偶爾想要偉大",
+  "血肉果汁機 Flesh Juicer|GIGO",
+  "陳珊妮|完美的呻吟",
+  "林生祥|野蓮出庄",
+  "大象體操 Elephant Gym|夢境",
+  "落日飛車 Sunset Rollercoaster|Cassa Nova",
+  "宇宙人|一萬小時"
+ ],
+ "bin_noise": [
+  "Merzbow|Noisembryo",
+  "Cecil Taylor|Conquistador!",
+  "Captain Beefheart & His Magic Band|Lick My Decals Off, Baby",
+  "Faust|So Far",
+  "Tangerine Dream|Zeit",
+  "The Fall|Grotesque (After the Gramme)",
+  "Swans|Children of God",
+  "Coil|Love's Secret Domain"
+ ],
+ "bin_folk": [
+  "Leonard Cohen|Songs from a Room",
+  "Nico|Chelsea Girl",
+  "Brigitte Fontaine & Areski Belkacem|Vous et nous",
+  "Mississippi John Hurt|Last Sessions",
+  "John Prine|John Prine",
+  "Steeleye Span|Please to See the King",
+  "Howlin' Wolf|Howlin' Wolf",
+  "John Lee Hooker|It Serve You Right to Suffer"
  ],
  "gold": [
   "Barney Wilen|Moshi",
@@ -178,5 +425,16 @@
   "Melt-Banana|Speak Squeak Creak",
   "Caetano Veloso|Transa",
   "宇多田ヒカル|First Love"
+ ],
+ "stake": [
+  "宇多田ヒカル|First Love",
+  "Talk Talk|Laughing Stock",
+  "Nick Drake|Bryter Layter",
+  "林生祥|種樹",
+  "Shuggie Otis|Inspiration Information",
+  "Roscoe Mitchell Sextet|Sound",
+  "Glenn Branca|The Ascension",
+  "Kate Bush|The Dreaming",
+  "Mogwai|Come On Die Young"
  ]
 }
