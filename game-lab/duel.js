@@ -1,25 +1,30 @@
-// game-lab/duel.js — 品味對決 v3：店內舞台下方的極簡雙方盤面，三相剋為核心（Agent D；SPEC-v3 §4–§7）
+// game-lab/duel.js — 品味對決 v4：店內舞台下方的對決盤面（Agent B1；SPEC-v4 §2.5.1、§2.2.7、§2.3.3）
 //
-// ── v3 contract（tutorial.js／ui.js 照這些名字找）──────────────────────────────────────────────────────────
-// data-tut  他的一塊：e-hud e-name e-hp e-habit e-rec e-cover e-stars e-star-c e-star-o e-star-h e-pile
-//           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho result（浮框） lastline
-//           你的一塊：p-hud p-hp relics relic-<id> hand hand-ace hand-0 hand-1 hand-2 chip-ace chip-<i>-<attr> throw act
-// el(name)：上面的名字；'chip:best:<attr>'＝那一色星最多的星鈕（王牌能丟且同色也算；並列取最左，王牌格算最左）；
-//           'card:<id>'＝那張手牌；'@f'|'@p'|'@o'＝舞台錨點。
+// ── v4 contract（tutorial.js／ui.js／e2e 照這些名字找）────────────────────────────────────────────────────
+// data-tut  他的一塊：e-hud e-name e-honesty（D §5：店主 06:05 拿掉，DOM 留著但 hidden） e-hp e-hint e-rec e-sleeve e-pile
+//           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho rounds result（浮框 .l1 .l2 .l3） lastline
+//           你的一塊：p-hud p-hp relics relic-<id> hand hand-<i> hand-ace card-<i> card-ace chip-<i>-<attr> chip-ace act throw
+// el(name)：上面的名字；
+//           'card:best:<attr>'／'chip:best:<attr>'（＋':ace'＝王牌也算）＝那一色星最多的那張封面／星鈕（engine.bestChip）；
+//           'card:id:<cardId>'＝那張的封面；'chip:id:<cardId>:<attr>'＝那張那色的星鈕；'chip:blocked:<attr>'＝engine.blockedChoice；
+//           'card:<cardId>'＝那張的整格（v3）；'@f'|'@p'|'@o'＝舞台錨點。
 //
 // DipLabDuel.mount(panelEl, { duel, events, run, content, enter, onEnd(result), onSave(duel),
-//   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim}, onEvent(ev,duel), tut,
+//   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim}, onEvent(ev,duel), tut, resolveOpts(act),
 //            beforeEnd(result)->Promise, endText(result)->{title,sub}|null, relicIcon(id,size)->html } })
-//   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'pile', pHp, eHp, duel }
+//   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'rounds'|'pile', pHp, eHp, duel }
 // DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) play(act)->Promise
 //           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
-// gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'chip',i,attr,id} {kind:'throw',i,attr,id} {kind:'info',where} {kind:'close'}
+//           _fmt.clashText(clashEvent, T, hints) → { l1, l2, l3, cls, rule, notes }（e2e 比對浮框）
+// gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'card',i,attr,id}（點封面＝選這張、自動選 topAttr）
+//   {kind:'chip',i,attr,id}（點星鈕＝換屬性；再點已選的那顆不做事） {kind:'throw',i,attr,id}（「丟！」＝唯一的出手方式）
+//   {kind:'info',where} {kind:'close'}；i＝0..2 或 'ace'
 // 事件：'phase'(choose|resolve|over) 'selected'({i,attr}|null) 'resolved'(evs：560 ms 浮框剛出現時，同步) 'settled'(evs：1460 浮框收成一行)
 //       'handStart'(view) 'over'(result) 'info'(where) 'infoClosed'(where) 'relic'(id)
 //
-// 規則：畫面上每個數字都來自引擎的 view()／preview()／legalActions()／resolveTurn() 事件；UI 不算傷害、不讀 intent。
-// 一手：點一顆星（選）→ 再點同一顆或按「丟！」（丟）。結算約 2 s：0 兩張飛上牌桌＋舞台互丟 → 560 浮框、角標、聲望 → 1460 收成「上一手」→ 2060 下一手。
-// 結算中點畫面任一處（封面除外）＝這手 4 倍速；?fast=1 → 全程 4 倍速；?debug=1 → window.__dl。
+// 規則：畫面上每個數字都來自引擎的 view()／resolveTurn() 事件；UI 不算傷害、不讀 duel.plan。提示只寫句子，不寫屬性名（D §5）。
+// 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
+//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手。結算中點畫面任一處（牌桌兩張除外）＝這手 4 倍速；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
 (function () {
   'use strict';
   if (typeof window === 'undefined') return;
@@ -29,14 +34,11 @@
     try { return new URL('.', location.href).href; } catch (_) { return ''; }
   })();
   const ZH = { c: '經典', o: '冷門', h: '硬蕊' }, ZH1 = { c: '經', o: '冷', h: '硬' }, ATTRS = ['c', 'o', 'h'];
-  const ARROW = { o: 'c', c: 'h', h: 'o' };            // 三角的箭頭（畫圖用；輸贏一律看引擎事件）：冷→經、經→硬、硬→冷
-  const EDGES = [['o', 'c'], ['c', 'h'], ['h', 'o']];
+  const EDGES = [['o', 'c'], ['c', 'h'], ['h', 'o']];   // 三角的箭頭（畫圖用；輸贏一律看引擎事件）：冷→經、經→硬、硬→冷
   const TIER_AXIS = { hall: 'c', pearl: 'o', heresy: 'h' };
-  const FIRST_HABITS = ['copy', 'grudge', 'repeat', 'rot'];   // 第一手還沒有「上一手」時退回丟最大的星（SPEC-v3 §2.2）
-  const LONG_MS = 450;
-  const DBL_MS = 230;      // 同一顆星連點兩下：230 ms 內的第二下吞掉（一次觸控不會被算成兩下）；之後的第二下＝丟
+  const LONG_MS = 450;     // 長按手牌封面＝唱片資訊
   const RUSH_MS = 350;     // 丟出後 350 ms 內的點擊不算「加速這一手」
-  const T_HIT = 560, T_LINE = 1460, T_NEXT = 2060;
+  const T_FLIP = 280, T_HIT = 560, T_LINE = 1460, T_NEXT = 2060;
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const Eng = () => window.DipLabEngine;
   const Fx = () => window.DipLabFx || null;
@@ -44,6 +46,7 @@
   const qs = new URLSearchParams(location.search || '');
   const FAST = qs.get('fast') === '1';
   const rmq = () => { try { return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (_) { return false; } };
+  const cssEsc = s => (window.CSS && CSS.escape ? CSS.escape(String(s)) : String(s).replace(/["\\]/g, '\\$&'));
 
   // ------------------------------------------------------------------ covers
   function coverSrc(card) {
@@ -58,38 +61,32 @@
     const fb = card.localCover && card.coverUrl ? ` data-fb="${esc(card.coverUrl)}"` : '';
     return `<img class="cv" src="${esc(src)}"${fb} alt="${esc((card.artist || '') + '《' + (card.album || '') + '》')}" draggable="false" decoding="async">`;
   }
+  // 封套背面（他蓋著的那張；跟舞台 holdDraw 的背面同一個樣子：深色紙＋白色內圈標）
+  const sleeveHTML = cls => `<span class="sleeve-bk${cls ? ' ' + cls : ''}" aria-hidden="true"><i></i></span>`;
   const title = c => c ? `${c.artist || ''}《${c.album || ''}》` : '';
-  const aceAxisOf = c => c ? (TIER_AXIS[c.tier] || ATTRS.reduce((b, a) => ((c[a] | 0) > (c[b] | 0) ? a : b), 'c')) : 'c';
+  const starOf = (c, a) => (c && c[a] | 0) || 0;
+  // 峰值那軸，並列 c→o→h（＝engine.topAttr；引擎沒載入時的退路）
+  function topAttrOf(c) {
+    const E = Eng(); if (E && typeof E.topAttr === 'function') try { return E.topAttr(c); } catch (_) {}
+    let b = 'c'; for (const a of ['o', 'h']) if (starOf(c, a) > starOf(c, b)) b = a; return b;
+  }
+  const aceAxisOf = c => c ? (TIER_AXIS[c.tier] || topAttrOf(c)) : 'c';
 
-  // ------------------------------------------------------------------ 引擎輸出 → 盤面要的形狀（只改名字，不算規則）
-  function normView(v, duel) {
-    v = Object.assign({}, v || {});
-    const e = (duel && duel.e) || {};
-    if (v.hand == null) v.hand = [];
-    if (!v.ace && v.aceUsed && v.aceCard) v.ace = v.aceCard;          // 用過的王牌仍留在王牌格（變淡、寫「用過」）
-    if (v.aceAxis == null && v.ace) v.aceAxis = aceAxisOf(v.ace);
-    if (v.pileMax == null) v.pileMax = Math.max(v.pile | 0, (e.deck && e.deck.length) || 7);
-    if (!v.habitLabel) v.habitLabel = v.switched ? '急了' : '脾氣';
-    if (v.first == null) v.first = !v.last && FIRST_HABITS.includes(v.habit);
-    if (!Array.isArray(v.relics)) v.relics = [];
-    return v;
-  }
-  // 名牌那句：「急了：…」「B 面：…」的前綴收進左邊的黑底標籤
-  function habitParts(v) {
-    let lb = v.habitLabel || DT0.habitLabel, tx = String(v.habitLine || '');
-    const m = /^(急了|B ?面|A ?面)[：:]\s*/.exec(tx);
-    if (m) { lb = m[1].replace(/^([AB])面$/, '$1 面'); tx = tx.slice(m[0].length); }
-    return { lb, tx };
-  }
-  // 盤面上的字：content.duelText 有就用（lint 掃 content.js），沒有就用這份（同一套字，SPEC-v3 §4、§6）
+  // ------------------------------------------------------------------ 字
+  // 盤面上的字：content.duelText 有就用（lint 掃 content.js），沒有就用這份（同一套字，SPEC-v4 §2.2.7）
   const DT0 = {
-    firstHand: '第一手：他多半丟最大的星。', pickHint: '點一顆星選牌', picked: '選好了：', again: '再點一次，或按丟', throwBtn: '丟！',
-    waiting: '演完就換下一手（點畫面跳過）', next: '下一張，演完就亮出', pileLeft: '還有 {n} 張', lastPrefix: '上一手', shows: '他亮出',
-    he: '他・', you: '你・', seeThrough: '看穿！', counter: '{who}{ace}{a}剋{b}', aceWord: '王牌', mirror: '同一色比星　{x} 比 {y}',
-    tie: '同一色、一樣多', nothing: '沒事', hitE: '他 −{n}', hitP: '你 −{n}', badgeWin: '勝', badgeLose: '負', badgeTie: '平', eyeMark: '盯',
+    pickHint: '點一張專輯', picked: '選好了：', again: '點別的星換屬性，或按丟', throwBtn: '丟！', waiting: '演完就換下一手（點畫面跳過）',
+    hintLabel: '提示', sleeve: '蓋著', rounds: '第 {n}／{max} 手', hp: '聲望', aceSlot: '王牌', aceUsed: '用過', aceWord: '王牌',
+    he: '他・', you: '你・', slotE: '他丟的', slotP: '你丟的', lastPrefix: '上一手', pileLeft: '他還有 {n} 張',
+    counter: '{a}剋{b}，命中！', countered: '{b}剋{a}，被剋了。',
+    blockedYou: '{a}剋{b}，但他高你 2 星以上，剋不動。比星數，', blockedHim: '{b}剋{a}，但你高他 2 星以上，他剋不動。比星數，',
+    aceYou: '{b}剋{a}，但王牌不會被剋。比星數，', aceHim: '{a}剋{b}，但他的王牌不會被剋。比星數，',
+    mirror: '同樣是{a}，比星數，', tie: '一樣大，不扣。',
+    hitE: '他 −{n}', hitP: '你 −{n}',
+    bluff: '他唬你！『{key}』是{hint}，他出的是{e}。', honest: '『{key}』是{hint}，他照實出。',
+    bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零', koLoseRetry: '老闆：……再一場。',
-    pileOut: '他的唱片丟完了', pileScore: '你 {p} 比 他 {e}：{who}贏', switchBubble: '……急了。', switchBubbleB: '……換面。', hp: '聲望', aceSlot: '王牌', aceUsed: '用過',
-    slotE: '他丟的', slotP: '你丟的', habitLabel: '脾氣',
+    roundsOut: '六手打完，比聲望', roundsScore: '你 {p} 比 他 {e}：{who}贏',
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};
@@ -100,31 +97,46 @@
     };
   }
   const T0 = dtOf(null);
-  // 一手的結果字（SPEC-v3 §6）。c＝clash 事件（或 view().last）。主詞一定先寫。
-  function clashText(c, T) {
+  // 提示句：view().hint.line（id）→ C.hints 那句 { id, text, key }（A1 notes 請求：字串＝C.hints[attr] 裡 id === line 那句）
+  function hintOf(hints, h) {
+    if (!h || !h.line) return null;
+    const H = hints || (window.DipLabContent && window.DipLabContent.hints) || null;
+    if (!H) return null;
+    const find = arr => Array.isArray(arr) ? arr.find(x => x && (x.id === h.line)) : null;
+    let x = find(H[h.attr]);
+    if (!x) for (const a of ATTRS) { x = find(H[a]); if (x) break; }
+    return x || null;
+  }
+  // 一手的結果字（SPEC-v4 §2.5.1）。c＝clash 事件（或 view().last）；hints＝C.hints。
+  //   l1＝唬人時 bluff；否則規則句（counter｜countered｜blockedYou｜blockedHim｜aceYou｜aceHim｜mirror）
+  //   l2＝hitE｜hitP｜tie；l3＝照實時 honest（關鍵字那句）；唬人且剋不動時放規則句（句尾「，」改「。」）；其他空
+  //   D 的三個例句：l1＋l2 逐字＝「冷門剋經典，命中！他 −4」「冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3」「他唬你！『紀念版』是經典，他出的是硬蕊。你 −4」
+  function ruleText(c, T) {
+    const ace = c.ace ? T('aceWord') : '';
+    const a = ace + ZH[c.pAttr], a0 = ZH[c.pAttr], b = ZH[c.eAttr];
+    if (c.blocked === 'gap') return T(c.by === 'e' ? 'blockedHim' : 'blockedYou', { a, b });
+    if (c.blocked === 'ace') return c.by === 'e' ? T('aceYou', { a: a0, b }) : T('aceHim', { a, b });   // aceYou 句子裡已經有「王牌」，{a} 不再加
+    if (c.kind === 'counter') return T('counter', { a, b });
+    if (c.kind === 'countered') return T('countered', { a, b });
+    return T('mirror', { a: a0, b });                                                                  // 「同樣是經典」：同色不加「王牌」
+  }
+  function clashText(c, T, hints) {
     T = T || T0;
-    const p = ZH[c.pAttr], e = ZH[c.eAttr], ace = c.ace ? T('aceWord') : '';
-    const W = T('badgeWin'), Lz = T('badgeLose'), D = T('badgeTie');
-    let st = null, l1 = '', l2 = '', cls = 'z', badges;
-    switch (c.kind) {
-      case 'counter': st = c.read ? T('seeThrough') : null; l1 = T('counter', { who: T('you'), ace, a: p, b: e }); badges = { e: Lz, p: W }; break;
-      case 'countered': l1 = T('counter', { who: T('he'), ace: '', a: e, b: p }); badges = { e: W, p: Lz }; break;
-      case 'mirrorWin': l1 = T('mirror', { x: (ace ? ace + ' ' : '') + c.pStar, y: c.eStar }); badges = { e: Lz, p: W }; break;
-      case 'mirrorLose': l1 = T('mirror', { x: c.pStar, y: c.eStar }); badges = { e: W, p: Lz }; break;
-      default: l1 = T('tie'); badges = (c.toE | 0) > 0 ? { e: Lz, p: W } : { e: D, p: D };
-    }
+    const rule = ruleText(c, T);
+    let l1 = rule, l2, l3 = '', cls = 'z';
     if ((c.toE | 0) > 0) { l2 = T('hitE', { n: c.toE }); cls = 'g'; }
     else if ((c.toP | 0) > 0) { l2 = T('hitP', { n: c.toP }); cls = 'r'; }
-    else l2 = T('nothing');
+    else l2 = T('tie');
+    const h = c.hint && ATTRS.includes(c.hint.attr) ? c.hint : null;
+    if (h) {
+      const x = hintOf(hints, h), key = x && x.key ? x.key : null, hz = ZH[h.attr], e = ZH[c.eAttr];
+      if (c.bluff) {
+        l1 = key ? T('bluff', { key, hint: hz, e }) : T('bluffNoKey', { hint: hz, e });
+        if (c.blocked) l3 = rule.replace(/[，,]\s*$/, '。');
+      } else l3 = key ? T('honest', { key, hint: hz }) : T('honestNoKey', { hint: hz });
+    }
     const notes = (c.notes || []).map(n => (typeof n === 'string' ? n : n && n.text) || '').filter(Boolean);
-    return { st, l1, l2, cls, badges, notes };
-  }
-  function answerOf(o, T) {
-    T = T || T0;
-    if (!o) return { cls: '', text: '' };
-    if ((o.toE | 0) > 0) return { cls: 'g', text: T('hitE', { n: o.toE }) };
-    if ((o.toP | 0) > 0) return { cls: 'r', text: T('hitP', { n: o.toP }) };
-    return { cls: 'z', text: T('nothing') };
+    return { l1, l2, l3, cls, rule, notes, bluff: !!c.bluff };
   }
 
   // ------------------------------------------------------------------ module state
@@ -145,14 +157,15 @@
     const eid = duel && duel.e ? duel.e.id : null;
     const enemy = Object.assign({ id: eid, name: duel && duel.e && duel.e.name, title: duel && duel.e && duel.e.title }, (content.enemies && content.enemies[eid]) || {});
     const lines = (content.lines && content.lines[eid]) || {};
+    const hints = content.hints || null;
     const T = dtOf(content);
     const settings = () => { try { return (hooks.settings && hooks.settings()) || {}; } catch (_) { return {}; } };
-    const view = () => normView(E.view(duel), duel);
+    const view = () => E.view(duel);
     const S = {
-      v: view(), phase: 'choose', sel: null, selAt: 0, busy: false, destroyed: false, speed: 1,
+      v: view(), phase: 'choose', sel: null, busy: false, destroyed: false, speed: 1,
       anims: new Set(), timers: new Set(), infoOpen: 0, held: 0, table: null, flash: null, triForce: null,
-      recNext: false, lp: null, swallow: null, enterDone: !opts.enter, ending: false, auto: false, tagged: false,
-      rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, seenOff: false, debug: { log: [], hands: [] },
+      lp: null, swallow: null, enterDone: !opts.enter, ending: false, auto: false, tagged: false,
+      rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, lastCt: null, debug: { log: [], hands: [] },
     };
     const paused = () => !!(S.infoOpen || S.held);
     const baseSpeed = () => FAST ? 4 : (settings().fastAnim ? 2 : 1);
@@ -202,7 +215,7 @@
       return S.held;
     }
 
-    // ---------------- stage（常駐 DipLabStage；duel.js 只呼叫 API，新唱盤 API 有就用、沒有就退回 pose／float） ----------------
+    // ---------------- stage（常駐 DipLabStage；duel.js 只呼叫 API） ----------------
     function stg(m, ...a) { const s = hooks.stage; if (!s || typeof s[m] !== 'function') return null; try { return s[m](...a); } catch (e) { console.error(e); return null; } }
     const hasStage = m => !!(hooks.stage && typeof hooks.stage[m] === 'function');
     function say(id, text, ms) { if (text) stg('say', id, text, { ms: ms || 1500, lift: 7 }); }
@@ -222,10 +235,12 @@
       if (onOff && !S.tagged) { stg('tag', 'f', enemy.name || '他', 'e', 'L'); stg('tag', 'p', '你', 'p', 'R'); S.tagged = true; }
       else if (!onOff && S.tagged) { stg('untag', 'f'); stg('untag', 'p'); S.tagged = false; }
     }
+    // 舞台上手裡拿的：你＝選了哪張就拿哪張（王牌＝'ace'）；他＝選牌階段一直拿著背面朝外的封套（§2.3.3）
     function holdSleeve(side, card, ace) {
       if (!hasStage('hold')) return;
       stg('hold', side, card ? (ace ? 'ace' : { sleeve: card.id }) : null);
     }
+    function holdBack() { if (hasStage('hold')) stg('hold', 'e', { back: true }); }
 
     // ---------------- hooks: tutorial / hints / info ----------------
     function gate(action) {
@@ -263,7 +278,7 @@
       emit('infoClosed', where);
     }
 
-    // ---------------- DOM skeleton ----------------
+    // ---------------- DOM skeleton（§2.5.1 的樹） ----------------
     const root = document.createElement('div');
     root.className = 'dl';
     root.dataset.phase = 'choose';
@@ -271,17 +286,22 @@
     root.setAttribute('aria-label', '品味對決');
     root.innerHTML = `
       <section class="dl-e" data-tut="e-hud">
-        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="sub"></span><span class="sp"></span>
+        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="sub"></span><span class="hon" data-tut="e-honesty" hidden></span><span class="sp"></span>
           <span class="hpn" data-tut="e-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
-        <div class="habit" data-tut="e-habit"><span class="lb"></span><span class="tx"></span></div>
-        <div class="rec" data-tut="e-rec"></div>
+        <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
+        <div class="rec" data-tut="e-rec">
+          <div class="sleeve" data-tut="e-sleeve">${sleeveHTML()}<span class="sl">${esc(T('sleeve'))}</span></div>
+          <span class="sp"></span>
+          <div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div>
+        </div>
       </section>
       <section class="dl-t" data-tut="table">
         <div class="slot e" data-tut="slot-e"></div>
         <div class="slot p" data-tut="slot-p"></div>
         <div class="tri" data-tut="tri"></div>
-        <div class="callout" data-tut="result" aria-live="polite"></div>
+        <div class="rounds num" data-tut="rounds"></div>
+        <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div></div>
         <div class="lastline" data-tut="lastline"></div>
       </section>
       <section class="dl-p" data-tut="p-hud">
@@ -298,9 +318,9 @@
     panel.appendChild(root);
     const $ = s => root.querySelector(s);
     const els = {
-      e: $('.dl-e'), enm: $('.dl-e .nm'), esub: $('.dl-e .sub'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
-      habit: $('.habit'), hlb: $('.habit .lb'), htx: $('.habit .tx'), rec: $('.rec'),
-      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), call: $('.callout'), last: $('.lastline'),
+      e: $('.dl-e'), enm: $('.dl-e .nm'), esub: $('.dl-e .sub'), hon: $('.dl-e .hon'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
+      hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), sleeve: $('.rec .sleeve'), bars: $('.pile .bars'), pileTx: $('.pile small'),
+      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
       hand: $('.hand'), act: $('.act'), say: $('.act .say'), thr: $('.throw'), pop: $('.dl-pop'), kost: $('.kost'), fx: $('.dl-fx'),
     };
@@ -314,11 +334,9 @@
 
     // ---------------- helpers ----------------
     const pct = (x, m) => Math.max(0, Math.min(100, (x / (m || 1)) * 100));
-    function setHp(bar, numEl, hp, max, notch, animate) {
+    function setHp(bar, numEl, hp, max, animate) {
       const fill = bar.querySelector('.fill'), lost = bar.querySelector('.lost');
       const w = pct(Math.max(0, hp), max);
-      bar.querySelectorAll('.notch').forEach(n => n.remove());
-      [].concat(notch == null ? [] : notch).forEach(n => { if (!(n > 0)) return; const t = document.createElement('span'); t.className = 'notch'; t.style.left = pct(n, max) + '%'; bar.appendChild(t); });
       numEl.textContent = `${Math.max(0, hp)}/${max}`;
       if (!animate) { fill.style.transition = 'none'; lost.style.transition = 'none'; fill.style.width = w + '%'; lost.style.width = w + '%'; void fill.offsetWidth; fill.style.transition = ''; lost.style.transition = ''; return; }
       const dur = Math.round(500 / S.speed);
@@ -327,7 +345,7 @@
       if (w < old) { lost.style.transition = 'none'; lost.style.width = old + '%'; void lost.offsetWidth; lost.style.transition = ''; fill.style.width = w + '%'; later(() => { lost.style.transitionDuration = dur + 'ms'; lost.style.width = w + '%'; }, dur + 250); }
       else { fill.style.width = w + '%'; lost.style.width = w + '%'; }
     }
-    // 數字旁的小飄字（不吃點擊）：'left'＝聲望數字左邊往左飄
+    // 數字旁的小飄字（不吃點擊）：聲望數字左邊往左飄
     function floatAt(el, text, cls) {
       if (!el || !text || S.destroyed) return;
       const a0 = (el.closest && el.closest('.hpn')) || el, r = a0.getBoundingClientRect(), rr = root.getBoundingClientRect();
@@ -342,69 +360,55 @@
       const a = A(d, kf, { duration: 1300, easing: 'ease-out', fill: 'forwards' });
       const rmv = () => d.remove(); if (a) a.finished.then(rmv, rmv); else later(rmv, 1300);
     }
-    const cardOf = (v, i) => i === 'ace' ? v.ace : v.hand[i];
+    // 手牌的一格：i＝0..2 或 'ace'。王牌用過了仍留在王牌格（變淡、寫「用過」）
+    const cardOf = (v, i) => i === 'ace' ? (v.aceCard || v.ace || null) : (v.hand || [])[i] || null;
+    const aceLive = v => !!(v.ace && !v.aceUsed);
+    const aceAx = v => v.aceAxis || aceAxisOf(v.aceCard || v.ace);
     const selKey = s => s ? s.i + ':' + s.attr : '';
-    function actOf(sel) { return sel.i === 'ace' ? { type: 'ace', ace: true } : { type: 'card', i: sel.i, attr: sel.attr }; }
-    function safePreview(sel) {
-      if (!sel || typeof E.preview !== 'function') return null;
-      try { return E.preview(duel, actOf(sel)) || null; } catch (e) { console.error(e); return null; }
-    }
+    function actOf(sel) { return sel.i === 'ace' ? { ace: true, attr: aceAx(S.v) } : { i: sel.i, attr: sel.attr }; }
     function legal(sel) {
       if (!sel) return false;
-      try {
-        if (typeof E.isLegal === 'function') return !!E.isLegal(duel, actOf(sel));
-        const L = E.legalActions(duel) || [];
-        return L.some(a => sel.i === 'ace' ? (a.ace || a.type === 'ace') : (!a.ace && a.type !== 'ace' && a.i === sel.i && a.attr === sel.attr));
-      } catch (_) { return false; }
+      try { return !!E.isLegal(duel, actOf(sel)); } catch (_) { return false; }
+    }
+    function idxOfCard(v, id) {
+      const k = (v.hand || []).findIndex(c => c && c.id === id);
+      if (k >= 0) return k;
+      const ac = v.aceCard || v.ace;
+      return ac && ac.id === id ? 'ace' : null;
     }
 
     // ---------------- render: 他的一塊 ----------------
+    function hintText(v) { const x = hintOf(hints, v.hint); return x ? x.text : ''; }
     function renderE(v, opt) {
       opt = opt || {};
       els.enm.textContent = enemy.name || v.eName || '';
       els.esub.textContent = enemy.title || v.eTitle || '';
-      if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, v.notch, false);
-      renderHabit(v);
+      els.hon.textContent = (v.honesty && v.honesty.zh) || '';   // D §5：不顯示（hidden），留給教學／測試讀
+      if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, false);
+      renderHint(v);
       renderRec(v);
     }
-    function renderHabit(v) {
-      const h = habitParts(v);
-      els.hlb.textContent = h.lb; els.htx.textContent = h.tx;
+    function renderHint(v) {
+      const tx = v.over ? '' : hintText(v);
+      els.htx.textContent = tx;
+      els.hint.classList.toggle('empty', !tx);
     }
     function renderRec(v) {
-      const n = v.pile | 0, max = Math.max(n, v.pileMax | 0);
-      const bars = Array.from({ length: max }, (_, k) => `<i${k < n ? '' : ' class="x"'}></i>`).join('');
-      const pile = `<div class="pile" data-tut="e-pile"><span class="bars">${bars}</span><small>${esc(T('pileLeft', { n }))}</small></div>`;
-      if (S.recNext || !v.eCard) {
-        els.rec.innerHTML = `<span class="cv nextph" aria-hidden="true">…</span><div class="tx"><div class="l1"><small>${S.recNext && !v.over ? esc(T('next')) : ''}</small></div>
-          <div class="estars" data-tut="e-stars">${ATTRS.map(a => `<div class="es q" data-tut="e-star-${a}"><span class="k"><i>${ZH1[a]}</i>?</span><span class="ans"></span></div>`).join('')}</div></div>${pile}`;
-        return;
-      }
-      const c = v.eCard;
-      els.rec.innerHTML = `<button type="button" class="cvb" data-tut="e-cover" data-card="${esc(c.id)}" aria-label="唱片資訊：${esc(title(c))}">${img(c)}</button>
-        <div class="tx"><div class="l1" data-card="${esc(c.id)}"><small>${esc(T('shows'))}</small>${esc(title(c))}</div>
-        <div class="estars" data-tut="e-stars">${ATTRS.map(a => `<div class="es" data-tut="e-star-${a}"><span class="k ${a}"><i>${ZH1[a]}</i><b class="key">${c[a] | 0}</b></span><span class="ans"></span></div>`).join('')}</div></div>${pile}`;
-      renderAnswers();
-    }
-    // 結果預告：你點了一顆星，他三顆星底下各浮一個結果（他丟那色會怎樣）；數字全部是 preview()
-    function renderAnswers() {
-      const p = !S.busy && S.sel ? safePreview(S.sel) : null;
-      ATTRS.forEach(a => {
-        const el = els.rec.querySelector(`.es[data-tut="e-star-${a}"] .ans`); if (!el) return;
-        const t = p ? answerOf(p[a], T) : { cls: '', text: '' };
-        el.className = 'ans key ' + t.cls; el.textContent = t.text;
-      });
+      const n = Math.max(0, (v.pile | 0) + (v.eHandN | 0)), max = Math.max(n, v.pileMax | 0);
+      els.bars.innerHTML = Array.from({ length: max }, (_, k) => `<i${k < n ? '' : ' class="x"'}></i>`).join('');
+      els.pileTx.textContent = T('pileLeft', { n });
+      els.sleeve.classList.toggle('off', !!v.over || S.busy);
     }
 
     // ---------------- render: 牌桌 ----------------
     function renderSlot(side) {
       const el = side === 'e' ? els.se : els.sp, Tb = S.table, d = Tb && Tb[side];
-      el.className = 'slot ' + side + (Tb && Tb.dim ? ' dim' : '') + (d ? '' : ' empty');
+      el.className = 'slot ' + side + (Tb && Tb.dim ? ' dim' : '') + (d ? '' : ' empty') + (d && d.hidden ? ' back' : '');
       el.removeAttribute('data-card'); el.removeAttribute('role'); el.removeAttribute('tabindex'); el.removeAttribute('aria-label');
       if (!d) { el.innerHTML = `<span class="ph">${esc(T(side === 'e' ? 'slotE' : 'slotP'))}</span>`; return; }
-      const b = Tb.badges && Tb.badges[side];
-      const badge = b ? `<span class="badge ${b === T('badgeLose') ? 'l' : b === T('badgeTie') ? 'd' : 'w'}">${esc(b)}</span>` : '';
-      el.innerHTML = `<span class="cvw">${img(d.card)}${badge}</span><div class="who">${esc(T(side === 'e' ? 'he' : 'you'))}<span class="${d.attr}">${d.ace ? esc(T('aceWord')) : ''}${ZH[d.attr]} <span class="num">${d.star}</span></span></div>`;
+      const who = esc(T(side === 'e' ? 'he' : 'you'));
+      if (d.hidden) { el.innerHTML = `<span class="cvw">${sleeveHTML('cv')}</span><div class="who">${who}<span class="z">${esc(T('sleeve'))}</span></div>`; return; }
+      el.innerHTML = `<span class="cvw">${img(d.card)}</span><div class="who">${who}<span class="${d.attr}">${d.ace ? esc(T('aceWord')) : ''}${ZH[d.attr]} <span class="num">${d.star}</span></span></div>`;
       if (d.card) { el.dataset.card = d.card.id; el.setAttribute('role', 'button'); el.tabIndex = 0; el.setAttribute('aria-label', (side === 'e' ? '他丟的：' : '你丟的：') + title(d.card)); }
     }
     function triSVG() {
@@ -423,7 +427,7 @@
         const x = S.sel.attr; ring = x;
         EDGES.forEach(([a, b]) => { tone[a + b] = a === x ? 'g' : b === x ? 'r' : 'f'; });
       }
-      let s = `<svg viewBox="0 0 132 118" aria-label="冷門剋經典，經典剋硬蕊，硬蕊剋冷門" role="img"><defs>`;
+      let s = `<svg viewBox="0 0 132 118" aria-label="冷剋經、經剋硬、硬剋冷" role="img"><defs>`;
       Object.keys(STROKE).forEach(k => { s += `<marker id="dlm${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${STROKE[k]}"/></marker>`; });
       s += '</defs>';
       EDGES.forEach(([a, b]) => {
@@ -442,17 +446,13 @@
       return s + '</svg>';
     }
     function renderTri() { els.tri.innerHTML = triSVG(); }
+    function renderRounds(v) { els.rounds.textContent = T('rounds', { n: Math.max(1, v.n | 0), max: v.maxRounds || (E.CFG && E.CFG.maxRounds) || 6 }); }
     function lastLineHTML(ct) {
-      return `<span class="lb">${esc(T('lastPrefix'))}</span><b>${esc(ct.l1)}　<span class="${ct.cls}">${esc(ct.l2)}</span></b>${ct.st ? `<span class="stp">${esc(ct.st.replace(/[！!]$/, ''))}</span>` : ''}`
+      return `<span class="lb">${esc(T('lastPrefix'))}</span><b>${esc(ct.l1)}<span class="${ct.cls}">${esc(ct.l2)}</span></b>`
         + (ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : '');
     }
-    function renderLast(v) {
-      els.last.classList.remove('first');
-      if (S.lastCt) { els.last.innerHTML = lastLineHTML(S.lastCt); return; }
-      if (v.first && !v.over) { els.last.classList.add('first'); els.last.textContent = T('firstHand'); return; }
-      els.last.textContent = '';
-    }
-    function renderTable(v) { renderSlot('e'); renderSlot('p'); renderTri(); renderLast(v); }
+    function renderLast() { els.last.innerHTML = S.lastCt ? lastLineHTML(S.lastCt) : ''; }
+    function renderTable(v) { renderSlot('e'); renderSlot('p'); renderTri(); renderRounds(v); renderLast(); }
 
     // ---------------- render: 你的一塊、手牌、星鈕 ----------------
     function relicIconHTML(r) {
@@ -463,29 +463,28 @@
     }
     function renderP(v, opt) {
       opt = opt || {};
-      if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, null, false);
+      if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, false);
       els.relics.innerHTML = (v.relics || []).slice(0, 3).map(r => `<button type="button" class="rl" data-tut="relic-${esc(r.id)}" data-relic="${esc(r.id)}" aria-label="發燒配件：${esc(r.name || '')}">${relicIconHTML(r)}</button>`).join('');
     }
     function tileHTML(v, i) {
       const isAce = i === 'ace', c = cardOf(v, i); if (!c) return '';
-      const used = isAce && v.aceUsed, sel = S.sel && S.sel.i === i;
-      const eye = v.eyeTarget && v.eyeTarget.i === i ? v.eyeTarget.attr : null;
+      const used = isAce && !aceLive(v), sel = S.sel && S.sel.i === i;
       const lock = S.busy || used;
       const chip = (a, wide) => {
         const on = sel && S.sel.attr === a;
-        return `<button type="button" class="chip ${a}${wide ? ' wide' : ''}${on ? ' sel' : ''}" data-tut="${isAce ? 'chip-ace' : `chip-${i}-${a}`}" data-i="${i}" data-a="${a}"${lock ? ' disabled' : ''} aria-pressed="${on}" aria-label="${esc((isAce ? '王牌 ' : '') + ZH[a] + ' ' + (c[a] | 0) + ' 星')}">`
-          + `<i>${ZH1[a]}</i><b class="key">${c[a] | 0}</b>${eye === a ? `<span class="eye">${esc(T('eyeMark'))}</span>` : ''}</button>`;
+        return `<button type="button" class="chip ${a}${wide ? ' wide' : ''}${on ? ' sel' : ''}" data-tut="${isAce ? 'chip-ace' : `chip-${i}-${a}`}" data-i="${i}" data-a="${a}"${lock ? ' disabled' : ''} aria-pressed="${on}" aria-label="${esc((isAce ? '王牌 ' : '') + ZH[a] + ' ' + starOf(c, a) + ' 星')}">`
+          + `<i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`;
       };
-      const chips = isAce ? chip(v.aceAxis || aceAxisOf(c), true) : ATTRS.map(a => chip(a)).join('');
+      const chips = isAce ? chip(aceAx(v), true) : ATTRS.map(a => chip(a)).join('');
       return `<div class="tile${isAce ? ' ace' : ''}${sel ? ' sel' : ''}${used ? ' used' : ''}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
-        + `<button type="button" class="cvw" data-act="info" aria-label="唱片資訊：${esc(title(c))}">${img(c)}${isAce ? `<span class="acetag">${esc(T(used ? 'aceUsed' : 'aceSlot'))}</span>` : ''}</button>`
+        + `<button type="button" class="cvw" data-tut="${isAce ? 'card-ace' : 'card-' + i}" data-act="pick"${used ? ' aria-disabled="true"' : ''} aria-label="${esc((isAce ? '王牌：' : '選這張：') + title(c))}（按住看唱片資訊）">${img(c)}${isAce ? `<span class="acetag">${esc(T(used ? 'aceUsed' : 'aceSlot'))}</span>` : ''}</button>`
         + `<div class="chips">${chips}</div></div>`;
     }
     function renderHand(v, opt) {
       opt = opt || {};
       const ids = [];
-      if (v.ace) ids.push('ace');
-      v.hand.forEach((c, i) => { if (c) ids.push(i); });
+      if (v.aceCard || v.ace) ids.push('ace');
+      (v.hand || []).forEach((c, i) => { if (c) ids.push(i); });
       els.hand.innerHTML = ids.map(i => tileHTML(v, i)).join('');
       if (opt.slideNew != null) {
         const t = els.hand.querySelector(`.tile[data-i="${opt.slideNew}"]`);
@@ -508,7 +507,7 @@
       if (!S.sel) { els.say.innerHTML = `<span class="w">${esc(T('pickHint'))}</span>`; els.thr.disabled = true; return; }
       const c = cardOf(v, S.sel.i), a = S.sel.attr;
       els.act.classList.add('ready');
-      els.say.innerHTML = `<small>${esc(T('picked'))}${esc(title(c))}</small><b class="${a}">${S.sel.i === 'ace' ? esc(T('aceWord')) + ' ' : ''}${ZH[a]} <span class="num">${c ? c[a] | 0 : ''}</span></b><span class="hn">${esc(T('again'))}</span>`;
+      els.say.innerHTML = `<small>${esc(T('picked'))}${esc(title(c))}</small><b class="${a}">${S.sel.i === 'ace' ? esc(T('aceWord')) + ' ' : ''}${ZH[a]} <span class="num">${starOf(c, a)}</span></b><span class="hn">${esc(T('again'))}</span>`;
       els.thr.disabled = false;
     }
     function renderAll(opt) {
@@ -517,7 +516,7 @@
       scheduleFit();
     }
 
-    // ---------------- 尺寸：沒有捲動；依盤面可用高度換一級（SPEC-v3 §4 矮螢幕） ----------------
+    // ---------------- 尺寸：沒有捲動；依盤面可用高度換一級 ----------------
     function fit() {
       S.fitRaf = 0;
       if (S.destroyed) return;
@@ -534,30 +533,46 @@
     try { S.ro = new ResizeObserver(() => scheduleFit()); S.ro.observe(root); } catch (_) {}
     try { if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => scheduleFit()); } catch (_) {}
 
-    // ---------------- input ----------------
+    // ---------------- input（D §5：點專輯＝選這張、自動選最高屬性；點別的星＝換屬性；「丟！」＝出手） ----------------
     function bumpEl(el) { if (el && !rm()) A(el, [{ transform: 'translateX(0)' }, { transform: 'translateX(-3px)' }, { transform: 'translateX(3px)' }, { transform: 'translateX(0)' }], { duration: 300 }); }
     const isOver = () => !!(S.v && S.v.over) || S.ending;
     const canAct = () => !S.busy && S.enterDone && !isOver() && !S.held;
+    function applySel(sel, c) {
+      const changedCard = !S.sel || S.sel.i !== sel.i;
+      S.sel = sel;
+      sfx('select');
+      markSel(); renderTri(); renderAct();
+      if (changedCard) holdSleeve('p', c, sel.i === 'ace');
+      emit('selected', { i: sel.i, attr: sel.attr });
+      return true;
+    }
+    function clearSel() {
+      if (!S.sel) return true;
+      S.sel = null; markSel(); renderTri(); renderAct(); holdSleeve('p', null); emit('selected', null); return true;
+    }
+    // 點封面：選這張、屬性＝topAttr（王牌＝它那軸）；已選同一張就不變
+    function pickCard(i) {
+      if (!canAct()) return false;
+      const v = S.v, c = cardOf(v, i); if (!c) return false;
+      if (i === 'ace' && !aceLive(v)) return false;
+      if (S.sel && S.sel.i === i) return true;
+      const attr = i === 'ace' ? aceAx(v) : topAttrOf(c), sel = { i, attr };
+      if (!legal(sel)) return false;
+      if (!gate({ kind: 'card', i, attr, id: c.id })) return false;
+      return applySel(sel, c);
+    }
+    // 點星鈕：選這張的這個屬性；再點已選的那顆不做事（v3 的「再點一次＝丟」拿掉，§2.5.1）
     function selectChip(i, attr) {
       if (!canAct()) return false;
-      const v = S.v;
-      if (i === null) {
-        if (!S.sel) return true;
-        S.sel = null; markSel(); renderAnswers(); renderTri(); renderAct(); holdSleeve('p', null); emit('selected', null); return true;
-      }
-      const c = cardOf(v, i); if (!c) return false;
-      if (i === 'ace') { if (v.aceUsed) return false; attr = v.aceAxis || aceAxisOf(c); }
+      if (i === null) return clearSel();
+      const v = S.v, c = cardOf(v, i); if (!c) return false;
+      if (i === 'ace') { if (!aceLive(v)) return false; attr = aceAx(v); }
       if (!ATTRS.includes(attr)) return false;
+      if (S.sel && S.sel.i === i && S.sel.attr === attr) return true;
       const sel = { i, attr };
       if (!legal(sel)) return false;
       if (!gate({ kind: 'chip', i, attr, id: c.id })) return false;
-      const changedCard = !S.sel || S.sel.i !== i;
-      S.sel = sel; S.selAt = performance.now();
-      sfx('select');
-      markSel(); renderAnswers(); renderTri(); renderAct();
-      if (changedCard) holdSleeve('p', c, i === 'ace');
-      emit('selected', { i, attr });
-      return true;
+      return applySel(sel, c);
     }
     function throwSel(btn) {
       if (!canAct()) return false;
@@ -572,12 +587,14 @@
     function chipTap(btn) {
       const i = btn.dataset.i === 'ace' ? 'ace' : +btn.dataset.i, a = btn.dataset.a;
       if (!canAct()) return;
-      if (S.sel && S.sel.i === i && S.sel.attr === a) {
-        if (performance.now() - S.selAt < DBL_MS) return;     // 一次觸控的第二下：吞掉
-        throwSel(btn);
-        return;
-      }
+      if (S.sel && S.sel.i === i && S.sel.attr === a) return;          // 已選的那顆：不做事
       if (!selectChip(i, a)) bumpEl(btn);
+    }
+    function cardTap(btn) {
+      const tl = btn.closest('.tile'); if (!tl) return;
+      const i = tl.dataset.i === 'ace' ? 'ace' : +tl.dataset.i;
+      if (!canAct()) return;
+      if (!pickCard(i)) bumpEl(btn);
     }
     function relicTap(btn) {
       const id = btn.dataset.relic, r = (S.v.relics || []).find(x => x.id === id); if (!r) return;
@@ -589,14 +606,17 @@
       els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
     }
-    // 點封面（或長按）＝唱片資訊：他亮出的、牌桌上兩張、手牌、王牌。星鈕不開。
-    const INFO_SEL = '[data-act="info"], .cvb, .rec .l1[data-card], .slot[data-card]';
-    function infoFor(t) {
-      const x = t && t.closest && t.closest(INFO_SEL); if (!x) return false;
-      if (x.matches('[data-act="info"]')) { const tl = x.closest('.tile'); const i = tl.dataset.i === 'ace' ? 'ace' : +tl.dataset.i; const c = cardOf(S.v, i); if (c) openInfo(c, i === 'ace' ? 'hand-ace' : 'hand'); return true; }
-      if (x.matches('.slot')) { const side = x.classList.contains('e') ? 'e' : 'p', d = S.table && S.table[side]; if (d && d.card) openInfo(d.card, 'slot-' + side, d.attr); return true; }
-      if (S.v.eCard && !S.recNext) openInfo(S.v.eCard, 'e-rec');
-      return true;
+    // 唱片資訊：手牌封面長按；牌桌上兩張（揭曉後）點一下；他蓋著的封套不給看
+    function infoOfSlot(x) {
+      const side = x.classList.contains('e') ? 'e' : 'p', d = S.table && S.table[side];
+      if (d && d.card && !d.hidden) { openInfo(d.card, 'slot-' + side, d.attr); return true; }
+      return false;
+    }
+    function infoOfTile(x) {
+      const tl = x.closest('.tile'); if (!tl) return false;
+      const i = tl.dataset.i === 'ace' ? 'ace' : +tl.dataset.i, c = cardOf(S.v, i);
+      if (c) openInfo(c, i === 'ace' ? 'hand-ace' : 'hand');
+      return !!c;
     }
     function onClick(ev) {
       const t = ev.target;
@@ -605,24 +625,26 @@
       if (S.held) { ev.preventDefault(); return; }
       if (!els.pop.hidden && !t.closest('.rl')) els.pop.hidden = true;
       let x;
-      if (infoFor(t)) return;
+      if ((x = t.closest('.slot[data-card]'))) { infoOfSlot(x); return; }
       if ((x = t.closest('.rl'))) { relicTap(x); return; }
       if (S.busy) {   // 結算中點畫面＝這手 4 倍速
         if (!S.rush && performance.now() - S.playAt > RUSH_MS) { S.rush = true; setSpeed(Math.max(S.speed, 4)); }
         return;
       }
+      if ((x = t.closest('.cvw[data-act="pick"]'))) { cardTap(x); return; }
       if ((x = t.closest('.chip'))) { chipTap(x); return; }
       if ((x = t.closest('.throw'))) { throwSel(x); return; }
     }
+    const LP_SEL = '.cvw[data-act="pick"], .slot[data-card]';
     function onDown(ev) {
-      const t = ev.target.closest(INFO_SEL);
+      const t = ev.target.closest(LP_SEL);
       if (!t || S.held || (ev.button != null && ev.button > 0)) { S.lp = null; return; }
       const lp = S.lp = { el: t, x: ev.clientX, y: ev.clientY, h: 0 };
       lp.h = later(() => {
         if (S.lp !== lp) return;
         S.lp = null;
-        infoFor(t);
-        S.swallow = { el: t, until: performance.now() + 900 };   // 放開手指的那一下 click 不再開一次
+        const ok = t.matches('.slot') ? infoOfSlot(t) : infoOfTile(t);
+        if (ok) S.swallow = { el: t, until: performance.now() + 900 };   // 放開手指的那一下 click 不再選牌／再開一次
       }, LONG_MS);
     }
     function onMove(ev) { const lp = S.lp; if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { clearTimeout(lp.h); S.lp = null; } }
@@ -632,12 +654,12 @@
     root.addEventListener('pointermove', onMove);
     root.addEventListener('pointerup', onUp);
     root.addEventListener('pointercancel', onUp);
-    root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.cvb,.chip')) ev.preventDefault(); });
+    root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.chip,.sleeve')) ev.preventDefault(); });
     root.addEventListener('keydown', ev => {
       if ((ev.key === 'Enter' || ev.key === ' ') && ev.target.classList && ev.target.classList.contains('slot')) { ev.preventDefault(); ev.target.click(); }
     });
 
-    // ---------------- 一手（約 2 s；SPEC-v3 §5、§7） ----------------
+    // ---------------- 一手（約 2 s；SPEC-v4 §2.5.1） ----------------
     function rectOf(el) { if (!el) return null; const r = el.getBoundingClientRect(); return r.width ? r : null; }
     function fly(el, from, ms) {
       if (!el) return null;
@@ -652,17 +674,21 @@
     function fadeIn(el, ms) { if (el) A(el, [{ opacity: 0 }, { opacity: 1 }], { duration: ms || 200, easing: 'ease-out' }); }
     function showCallout(ct) {
       const c = els.call;
-      c.innerHTML = `<div class="l1">${ct.st ? `<span class="st">${esc(ct.st)}</span>` : ''}${esc(ct.l1)}</div>`
-        + `<div class="l2 ${ct.cls}"><span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="l3">${esc(ct.notes.join('・'))}</span>` : ''}</div>`;   // 發燒配件生效：數字旁一句
+      c.querySelector('.l1').className = 'l1' + (ct.bluff ? ' bl' : '');
+      c.querySelector('.l1').textContent = ct.l1;
+      c.querySelector('.l2').className = 'l2 ' + ct.cls;
+      c.querySelector('.l2').innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : ''}`;
+      c.querySelector('.l3').textContent = ct.l3;
+      c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
-      else A(c, [{ transform: 'translate(-50%,0) scale(.3)', opacity: 0 }, { transform: 'translate(-50%,0) scale(1.08)', opacity: 1, offset: .6 }, { transform: 'translate(-50%,0) scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
+      else A(c, [{ transform: 'translate(-50%,-50%) scale(.3)', opacity: 0 }, { transform: 'translate(-50%,-50%) scale(1.06)', opacity: 1, offset: .6 }, { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
     }
     function hideCallout() {
       const c = els.call; if (!c.classList.contains('on')) return;
       const a = A(c, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'forwards' });
-      const done = () => { c.classList.remove('on'); c.innerHTML = ''; els.table.classList.remove('res'); S.anims.forEach(x => { try { if (x.effect && x.effect.target === c) x.cancel(); } catch (_) {} }); };
+      const done = () => { c.classList.remove('on'); els.table.classList.remove('res'); S.anims.forEach(x => { try { if (x.effect && x.effect.target === c) x.cancel(); } catch (_) {} }); };
       if (a) a.finished.then(done, done); else done();
     }
     function bigStamp(text, cls, sub) {
@@ -672,26 +698,33 @@
       if (rm()) A(k, [{ opacity: 0 }, { opacity: 1 }], { duration: 200, fill: 'forwards' });
       else A(k, [{ transform: 'translate(-50%,-50%) rotate(-4deg) scale(1.8)', opacity: 0 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(.96)', opacity: 1, offset: .5 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(1)', opacity: 1 }], { duration: 420, easing: 'ease-out', fill: 'forwards' });
     }
-    const HIT_SFX = { counter: c => (c.read ? 'seeThrough' : 'readHit'), countered: () => 'hurt', mirrorWin: () => 'mirror', mirrorLose: () => 'hurt', tie: () => 'mirror' };
+    // 音效：counter→readHit、countered／mirrorLose→hurt、其他→mirror（§2.5.1）
+    const hitSfx = c => c.kind === 'counter' ? 'readHit' : (c.kind === 'countered' || c.kind === 'mirrorLose') ? 'hurt' : 'mirror';
     function flashOf(c) {
       if (c.kind === 'counter') return { edge: c.pAttr + c.eAttr, tone: 'g' };
       if (c.kind === 'countered') return { edge: c.eAttr + c.pAttr, tone: 'r' };
+      if (c.blocked && c.by) return c.by === 'p' ? { edge: c.pAttr + c.eAttr, tone: 'f' } : { edge: c.eAttr + c.pAttr, tone: 'f' };
       return { ring: c.pAttr };
     }
-    function stageFallbackHit(cl) {   // 沒有新唱盤 API 時：受擊＋頭上飄字
+    function stageClash(cl) {
+      if (!hasStage('clash')) return null;
+      if (hasStage('clearClash')) stg('clearClash');
+      return stg('clash', {
+        kind: cl.kind, blocked: cl.blocked || null, by: cl.by === undefined ? null : cl.by, toE: cl.toE | 0, toP: cl.toP | 0,
+        p: { attr: cl.pAttr, star: cl.pStar, card: cl.pCard && cl.pCard.id, ace: !!cl.ace },
+        e: { attr: cl.eAttr, star: cl.eStar, card: cl.eCard && cl.eCard.id, ace: !!cl.eAce },
+        nameE: enemy.name || '', speed: S.speed, reduced: rm(),
+      });
+    }
+    function stageFallbackHit(cl) {   // 沒有舞台時：受擊＋頭上飄字
       if (cl.toE > 0) { stg('pose', 'f', 'hurt', 200); stg('float', 'f', '−' + cl.toE); }
       if (cl.toP > 0) { stg('pose', 'p', 'hurt', 200); stg('float', 'p', '−' + cl.toP, 'r'); }
     }
-
-    // 他丟的那色跟名牌算出來的那色，在玩家眼裡一樣（最大的星並列，例：經 3／冷 3）：不跳「他這手沒照脾氣」，免得教錯
-    function tiedWithTag(v0, cl) {
-      const c = cl && cl.eCard; if (!c || !v0) return false;
-      const st = a => +(c[a] || 0), mx = Math.max(st('c'), st('o'), st('h'));
-      const tops = ATTRS.filter(a => st(a) === mx); if (tops.length < 2) return false;
-      const BE = (E && E.BEATS) || { o: 'c', c: 'h', h: 'o' };
-      if (v0.habit === 'bluff') return tops.some(a => BE[a] === cl.eAttr);
-      if (v0.habit === 'honest' || v0.first) return tops.indexOf(cl.eAttr) >= 0;
-      return false;
+    function oneTimeTips(cl) {
+      if (cl.bluff) hint('tip_bluff', ['result']);
+      if (cl.blocked === 'gap') hint('tip_block', ['result']);
+      if (cl.blocked === 'ace') hint('tip_ace', ['result']);
+      if (cl.pAttr === cl.eAttr) hint('tip_mirror', ['result']);
     }
     async function play(act, sel) {
       if (!canAct() || !legal(sel)) return false;
@@ -699,7 +732,7 @@
       const v0 = S.v;
       const tileEl = els.hand.querySelector(`.tile[data-i="${sel.i}"]`);
       const srcP = rectOf(tileEl && tileEl.querySelector('.cv'));
-      const srcE = rectOf(els.rec.querySelector('.cvb .cv'));
+      const srcE = rectOf(els.sleeve.querySelector('.sleeve-bk'));
       let evs;
       const ro = {};
       try { if (typeof hooks.resolveOpts === 'function') Object.assign(ro, hooks.resolveOpts(act) || {}); } catch (e) { console.error(e); }
@@ -708,56 +741,49 @@
       if (opts.onSave) try { opts.onSave(duel); } catch (e) { console.error(e); }
       const v1 = view();
       const cl = evs.find(e => e.t === 'clash');
-      const sw = evs.find(e => e.t === 'switch'), over = evs.find(e => e.t === 'over'), hs = evs.find(e => e.t === 'hand'), dr = evs.find(e => e.t === 'draw');
+      const over = evs.find(e => e.t === 'over'), hs = evs.find(e => e.t === 'hand'), dr = evs.find(e => e.t === 'draw');
       if (!cl) { console.error('DipLabDuel: no clash event', evs); S.busy = false; S.v = v1; renderAll(); return false; }
       const t0 = performance.now();
-      const ct = clashText(cl, T);
+      const ct = clashText(cl, T, hints);
       const rec = { n: v0.n, act, sel, evs, ct };
       S.debug.hands.push(rec); if (S.debug.hands.length > 300) S.debug.hands.shift();
       S.sel = null;
       setPhase('resolve');
       root.classList.add('busy');
       emit('selected', null);
-      // ---- t=0：兩張唱片飛上牌桌、舞台開始互丟
-      sfx('needle');
+      // ---- t=0：你的牌飛上牌桌；他那格「蓋著」；舞台一台唱盤開演
       S.lastCt = null; S.flash = null;
-      S.table = { e: { card: cl.eCard, attr: cl.eAttr, star: cl.eStar }, p: { card: cl.pCard, attr: cl.pAttr, star: cl.pStar, ace: !!cl.ace }, dim: false, badges: null };
+      S.table = { e: { card: cl.eCard, attr: cl.eAttr, star: cl.eStar, ace: !!cl.eAce, hidden: true }, p: { card: cl.pCard, attr: cl.pAttr, star: cl.pStar, ace: !!cl.ace }, dim: false };
       renderTable(v0);
-      els.last.textContent = '';
       if (tileEl) tileEl.classList.add('gone');
       els.hand.querySelectorAll('.chip').forEach(b => { b.disabled = true; });
-      S.recNext = true; renderRec(v1);
+      els.sleeve.classList.add('off');
       fly(els.sp.querySelector('.cv'), srcP, 260); fadeIn(els.sp.querySelector('.who'), 260);
-      fly(els.se.querySelector('.cv'), srcE, 260); fadeIn(els.se.querySelector('.who'), 260);
+      fly(els.se.querySelector('.cv'), srcE, 260);
       renderAct();
-      let stagePr = null;
-      if (hasStage('clash')) {
-        if (hasStage('clearClash')) stg('clearClash');
-        stagePr = stg('clash', { kind: cl.kind, p: { attr: cl.pAttr, card: cl.pCard && cl.pCard.id, ace: !!cl.ace }, e: { attr: cl.eAttr, card: cl.eCard && cl.eCard.id },
-          seeThrough: !!cl.read, toE: cl.toE | 0, toP: cl.toP | 0, nameE: enemy.name || '', speed: S.speed, reduced: rm() });
-      } else {
-        stg('pose', 'p', 'atk', 200);
-        later(() => stg('pose', 'f', 'atk', 200), 260 / S.speed);
-      }
+      let stagePr = stageClash(cl);
+      if (!stagePr && !hasStage('clash')) { stg('pose', 'p', 'atk', 200); later(() => stg('pose', 'f', 'atk', 200), 260 / S.speed); }
       onEvent(cl);
-      await wait(T_HIT);
+      await wait(T_FLIP);
       if (S.destroyed) return true;
-      // ---- t=560：浮框、勝負角標、聲望條、音效
-      S.table.badges = ct.badges; renderSlot('e'); renderSlot('p');
+      // ---- t=280：他那格翻面（屬性＋星）
+      S.table.e.hidden = false; renderSlot('e');
+      const ecv = els.se.querySelector('.cvw');
+      if (ecv && !rm()) A(ecv, [{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: 120, easing: 'ease-out' });
+      fadeIn(els.se.querySelector('.who'), 160);
+      await wait(T_HIT - T_FLIP);
+      if (S.destroyed) return true;
+      // ---- t=560：浮框三行、聲望條、音效、一次性小提示
       S.flash = flashOf(cl); renderTri();
       showCallout(ct);
-      sfx((HIT_SFX[cl.kind] || (() => 'mirror'))(cl));
-      if (cl.read && !rm()) { const f = Fx(); if (f && f.hitStop) try { f.hitStop(80); } catch (_) {} }
+      sfx(hitSfx(cl));
       if (!hasStage('clash')) stageFallbackHit(cl);
-      setHp(els.ehp, els.ehpn, v1.eHp, v1.eMax, v1.notch, true);
-      setHp(els.php, els.phpn, v1.pHp, v1.pMax, null, true);
+      setHp(els.ehp, els.ehpn, v1.eHp, v1.eMax, true);
+      setHp(els.php, els.phpn, v1.pHp, v1.pMax, true);
       if (cl.toE > 0) floatAt(els.ehpn, '−' + cl.toE, 'g');
       if (cl.toP > 0) floatAt(els.phpn, '−' + cl.toP, 'r');
-      if (ct.notes.length) (cl.notes || []).forEach(n => { const b = n && n.relic && els.relics.querySelector(`[data-relic="${CSS.escape(n.relic)}"]`); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
-      // 一次性小提示（外殼／教學決定是不是這輩子第一次）
-      if (cl.kind === 'mirrorWin' || cl.kind === 'mirrorLose' || cl.kind === 'tie') hint('tip_mirror', ['result']);
-      if (cl.followed === false && !tiedWithTag(v0, cl)) hint('tip_offhabit', ['e-habit']);
-      if (cl.read) hint('tip_read', ['result']);
+      if (ct.notes.length) (cl.notes || []).forEach(n => { const b = n && n.relic && els.relics.querySelector(`[data-relic="${cssEsc(n.relic)}"]`); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
+      oneTimeTips(cl);
       rec.ui = snapUI();
       if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }
       emit('resolved', evs);
@@ -766,68 +792,57 @@
       // ---- t=1460：浮框收成「上一手」
       hideCallout();
       S.lastCt = ct; S.flash = null;
-      renderLast(v1); renderTri();
+      renderLast(); renderTri();
       rec.ui.lastline = els.last.textContent.replace(/\s+/g, ' ').trim();
-      if (sw) habitSwap(sw, v1);
       emit('settled', evs);
-      if (over) { await finish(over, v1); return true; }
+      if (over) { await finish(over, v1, cl); return true; }
       await wait(T_NEXT - T_LINE);
       if (S.destroyed) return true;
       if (stagePr && typeof stagePr.then === 'function' && !S.rush) { /* 舞台演完才換手（最多再等 400 ms） */ await Promise.race([stagePr.catch(() => {}), wait(400)]); }
-      // ---- t=2060：下一手
+      // ---- t=2060：下一手（提示句換字、手數加一）
       S.debug.lastMs = performance.now() - t0;
-      S.v = v1; S.recNext = false;
+      S.v = v1;
       if (S.table) S.table.dim = true;
       S.speed = baseSpeed(); setSpeed(S.speed); S.rush = false;
       root.classList.remove('busy');
       S.busy = false;
       renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null }); renderAct();
       scheduleFit();
-      const cv = els.rec.querySelector('.cvb'), stars = els.rec.querySelector('.estars');
-      if (!rm()) { A(cv, [{ transform: 'translateY(-10px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 260, easing: 'ease-out' }); A(stars, [{ opacity: 0 }, { opacity: 1 }], { duration: 260 }); }
+      if (!rm()) { A(els.htx, [{ opacity: 0, transform: 'translateY(-4px)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'ease-out' }); A(els.rounds, [{ opacity: .2 }, { opacity: 1 }], { duration: 320 }); }
       if (hs) onEvent(hs);
       handStart(v1);
       setPhase('choose');
       return true;
     }
-    function habitSwap(sw, v1) {
-      onEvent(sw);
-      sfx('faceChange');
-      const boss = /B ?面/.test(String(sw.label || v1.habitLabel || ''));
-      say('f', pickLine(['switch', 'phase2', '急了']) || T(boss ? 'switchBubbleB' : 'switchBubble'), 1800);
-      if (rm()) { renderHabit(v1); }
-      else {
-        const a = A(els.habit, [{ opacity: 1 }, { opacity: 0 }], { duration: 150, fill: 'forwards' });
-        const fin = () => { renderHabit(v1); A(els.habit, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'forwards' }); };
-        if (a) a.finished.then(fin, fin); else fin();
-      }
-      hint('tip_switch', ['e-habit']);
-    }
     function handStart(v) {
-      if (v.eCard) holdSleeve('e', v.eCard, false);
+      holdBack();
       holdSleeve('p', null);
-      if (v.habit === 'eye' && v.eyeTarget) {
-        const t = v.eyeTarget.i === 'ace' ? 'chip-ace' : `chip-${v.eyeTarget.i}-${v.eyeTarget.attr}`;
-        hint('tip_eye', ['e-habit', t]);
-      }
+      if ((v.n | 0) >= (v.maxRounds || 6)) hint('tip_rounds', ['rounds']);
       emit('handStart', v);
     }
-    async function finish(over, v1) {
+    // 勝利曲（D §4）：一律播整場贏家最後丟出的那張（＝最後一手贏家那邊的唱片；§2.5.1）
+    function winnerSong(win, cl) {
+      const card = cl ? (win ? cl.pCard : cl.eCard) : null;
+      const f = Fx(); if (!card || !f || !f.music || typeof f.music.play !== 'function') return;
+      try { const p = f.music.play(card, { fadeMs: 600 }); if (p && p.catch) p.catch(() => {}); } catch (e) { console.error(e); }
+    }
+    async function finish(over, v1, cl) {
       S.ending = true;
       const win = !!over.win;
       const result = { over: win ? 'win' : 'lose', win, by: over.by || 'hp', pHp: v1.pHp, eHp: v1.eHp, duel };
       setPhase('over');
       root.classList.add('over');
-      renderAct();
-      stg('pose', win ? 'f' : 'p', 'ko', 700);
+      renderAct(); renderHint(v1); renderRec(v1);
+      if (result.by === 'hp') stg('pose', win ? 'f' : 'p', 'ko', 700);
       sfx('ko');
       say('f', pickLine(win ? ['lose'] : ['win']), 1800);
       later(() => sfx(win ? 'win' : 'lose'), 300);
+      winnerSong(win, cl);
       let tx = null;
       if (typeof hooks.endText === 'function') try { tx = hooks.endText(result); } catch (e) { console.error(e); }
       if (!tx) {
         const nm = enemy.name || '';
-        if (result.by === 'pile') tx = { title: T('pileOut'), sub: T('pileScore', { p: Math.max(0, v1.pHp), e: Math.max(0, v1.eHp), who: win ? '你' : '他' }), cls: win ? 'ink' : 'red' };
+        if (result.by === 'rounds' || result.by === 'pile') tx = { title: T('roundsOut'), sub: T('roundsScore', { p: Math.max(0, v1.pHp), e: Math.max(0, v1.eHp), who: win ? '你' : '他' }), cls: win ? 'ink' : 'red' };
         else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
         else tx = { title: T('koLose'), sub: run && (run.retryLeft | 0) > 0 ? T('koLoseRetry') : '', cls: 'red' };
       }
@@ -841,7 +856,7 @@
       if (S.destroyed) return;
       if (!rm()) { const a = A(root, [{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(24px)' }], { duration: 300, easing: 'ease-in', fill: 'forwards' }); if (a) await a.finished.catch(() => {}); }
       tags(false);
-      holdSleeve('e', null); holdSleeve('p', null);
+      stg('hold', 'e', null); holdSleeve('p', null);
       S.busy = false;
       if (opts.onEnd) try { opts.onEnd(result); } catch (e) { console.error(e); }
     }
@@ -850,8 +865,8 @@
     function initialTable() {   // 續玩：從 view().last 還原「上一手」兩張（變淡）
       const l = S.v.last;
       if (!l || S.v.over) return;
-      S.lastCt = clashText(l, T);
-      S.table = { e: { card: l.eCard, attr: l.eAttr, star: l.eStar }, p: { card: l.pCard, attr: l.pAttr, star: l.pStar, ace: !!l.ace }, dim: true, badges: S.lastCt.badges };
+      S.lastCt = clashText(l, T, hints);
+      S.table = { e: { card: l.eCard, attr: l.eAttr, star: l.eStar, ace: !!l.eAce }, p: { card: l.pCard, attr: l.pAttr, star: l.pStar, ace: !!l.ace }, dim: true };
     }
     initialTable();
     renderAll();
@@ -864,14 +879,14 @@
       if (S.destroyed) return;
       tags(true);
       const fresh = (S.v.n | 0) <= 1 && !S.v.last;
-      const open1 = lines.line || lines.intro;   // 口頭禪（SPEC-v3 §3），沒有就用推門那句
+      const open1 = lines.line || lines.intro;   // 口頭禪，沒有就用推門那句
       if (fresh && open1 && !tut) say('f', Array.isArray(open1) ? open1[0] : open1, 1800);
       renderAct();
       handStart(S.v);
       setPhase('choose');
     }
 
-    // ---------------- autoplay（e2e 用；走正常的點擊流程與 gate） ----------------
+    // ---------------- autoplay（e2e 用；走正常的點擊流程與 gate：先點封面，屬性不同再點星鈕，再按丟） ----------------
     async function autoplay(policy) {
       const P = E.policies || {};
       const pol = P[policy] || P.novice || P.random;
@@ -880,12 +895,13 @@
       const r = E.makeRng ? E.makeRng(1234) : Math.random, mem = {};
       while (S.auto && !S.destroyed && !isOver()) {
         if (!canAct() || paused()) { await wait(40); continue; }
-        let act; try { act = pol(duel, r, mem); } catch (e) { console.error(e); break; }
+        let act; try { act = pol(duel, r, mem, content); } catch (e) { console.error(e); break; }
         if (!act) break;
-        const isAce = act.ace || act.type === 'ace';
-        const sel = isAce ? { i: 'ace', attr: S.v.aceAxis } : { i: act.i, attr: act.attr };
-        if (!selectChip(sel.i, sel.attr) && selKey(S.sel) !== selKey(sel)) { await wait(80); continue; }
-        await wait(120);
+        const sel = act.ace ? { i: 'ace', attr: aceAx(S.v) } : { i: act.i, attr: act.attr };
+        if (!pickCard(sel.i) && !(S.sel && S.sel.i === sel.i)) { await wait(80); continue; }
+        await wait(80);
+        if (selKey(S.sel) !== selKey(sel) && !selectChip(sel.i, sel.attr)) { await wait(80); continue; }
+        await wait(80);
         throwSel(null);
         await wait(60);
       }
@@ -901,32 +917,43 @@
       if (S.ro) try { S.ro.disconnect(); } catch (_) {}
       root.remove();
     }
+    // ---------------- 名字 → 元素（教學手指、e2e） ----------------
+    const byTut = n => root.querySelector(`[data-tut="${cssEsc(n)}"]`);
+    const chipEl = (b, a) => b ? byTut(b.ace || b.i === 'ace' ? 'chip-ace' : `chip-${b.i}-${a}`) : null;
+    const coverEl = b => b ? byTut(b.ace || b.i === 'ace' ? 'card-ace' : `card-${b.i}`) : null;
+    function bestOf(spec) {
+      const [a, withAce] = spec.split(':');
+      if (!ATTRS.includes(a)) return null;
+      try { return E.bestChip(duel, a, { ace: withAce === 'ace' }); } catch (_) { return null; }
+    }
     function elByName(name) {
       if (!name) return null;
       if (name[0] === '@') { const s = hooks.stage; return s && typeof s.anchor === 'function' ? (() => { try { return s.anchor(name.slice(1)); } catch (_) { return null; } })() : null; }
-      if (name.startsWith('card:')) return els.hand.querySelector(`.tile[data-card="${CSS && CSS.escape ? CSS.escape(name.slice(5)) : name.slice(5)}"]`);
-      if (name.startsWith('chip:best:')) {   // 'chip:best:o'＝手牌裡冷門星最多的那顆（不含王牌）；'chip:best:o:ace'＝含王牌
-        const [a, withAce] = name.slice(10).split(':'), v = S.v; let b = null;
-        if (typeof E.bestChip === 'function') { try { b = E.bestChip(duel, a, { ace: withAce === 'ace' }); } catch (_) { b = null; } }
-        else {
-          let bs = -1;
-          if (withAce === 'ace' && v.ace && !v.aceUsed && v.aceAxis === a) { b = { ace: true }; bs = v.ace[a] | 0; }
-          v.hand.forEach((c, i) => { if (c && (c[a] | 0) > bs) { bs = c[a] | 0; b = { i, attr: a }; } });
-        }
-        if (!b) return null;
-        return root.querySelector(`[data-tut="${b.ace ? 'chip-ace' : `chip-${b.i}-${a}`}"]`);
+      if (name.startsWith('chip:best:')) { const s = name.slice(10), b = bestOf(s); return chipEl(b, s.split(':')[0]); }
+      if (name.startsWith('card:best:')) return coverEl(bestOf(name.slice(10)));
+      if (name.startsWith('chip:blocked:')) {
+        const a = name.slice(13); let b = null;
+        try { b = E.blockedChoice(duel, a); } catch (_) { b = null; }
+        return chipEl(b, a);
       }
-      return root.querySelector(`[data-tut="${name}"]`);
+      if (name.startsWith('chip:id:')) {
+        const s = name.slice(8), k = s.lastIndexOf(':'); if (k < 0) return null;
+        const id = s.slice(0, k), a = s.slice(k + 1), i = idxOfCard(S.v, id);
+        if (i == null) return null;
+        if (i === 'ace') return a === aceAx(S.v) ? byTut('chip-ace') : null;
+        return byTut(`chip-${i}-${a}`);
+      }
+      if (name.startsWith('card:id:')) { const i = idxOfCard(S.v, name.slice(8)); return i == null ? null : coverEl({ i }); }
+      if (name.startsWith('card:')) return els.hand.querySelector(`.tile[data-card="${cssEsc(name.slice(5))}"]`);
+      return byTut(name);
     }
     const txt = el => el ? el.textContent.replace(/\s+/g, ' ').trim() : '';
     function snapUI() {
-      const ans = {}, stars = {};
-      ATTRS.forEach(a => { const es = els.rec.querySelector(`.es[data-tut="e-star-${a}"]`); ans[a] = txt(es && es.querySelector('.ans')); stars[a] = txt(es && es.querySelector('.k')); });
-      const slot = el => ({ who: txt(el.querySelector('.who')), badge: txt(el.querySelector('.badge')), card: el.dataset.card || null, dim: el.classList.contains('dim') });
+      const slot = el => ({ who: txt(el.querySelector('.who')), card: el.dataset.card || null, dim: el.classList.contains('dim'), back: el.classList.contains('back') });
       return {
-        call: { st: txt(els.call.querySelector('.st')), l1: txt(els.call.querySelector('.l1')).replace(/^看穿！\s*/, ''), l2: txt(els.call.querySelector('.l2 .v')), l3: txt(els.call.querySelector('.l3')), on: els.call.classList.contains('on') },
-        slotE: slot(els.se), slotP: slot(els.sp), lastline: txt(els.last), habit: { lb: txt(els.hlb), tx: txt(els.htx) },
-        eHp: txt(els.ehpn), pHp: txt(els.phpn), answers: ans, stars, pile: txt(els.rec.querySelector('.pile small')), act: txt(els.say),
+        call: { l1: txt(els.call.querySelector('.l1')), l2: txt(els.call.querySelector('.l2 .v')), l3: txt(els.call.querySelector('.l3')), notes: txt(els.call.querySelector('.l2 .nt')), on: els.call.classList.contains('on') },
+        slotE: slot(els.se), slotP: slot(els.sp), lastline: txt(els.last), hint: txt(els.htx), rounds: txt(els.rounds),
+        eHp: txt(els.ehpn), pHp: txt(els.phpn), pile: txt(els.pileTx), act: txt(els.say),
       };
     }
     const api = {
@@ -936,15 +963,15 @@
       duel: () => duel,
       busy: () => S.busy,
       phase: () => S.phase,
+      // select(i)＝點封面（屬性＝topAttr）；select(i, attr)＝點那顆星；select(null)＝取消
       select: (i, attr) => {
         if (i == null) return selectChip(null);
-        if (attr == null) { const c = cardOf(S.v, i); if (!c) return false; attr = i === 'ace' ? (S.v.aceAxis || aceAxisOf(c)) : ATTRS.reduce((b, a) => ((c[a] | 0) > (c[b] | 0) ? a : b), 'c'); }
+        if (attr == null) return pickCard(i);
         return selectChip(i, attr);
       },
       play: act => {
         if (!act) return Promise.resolve(false);
-        const isAce = act.ace || act.type === 'ace';
-        const sel = isAce ? { i: 'ace', attr: S.v.aceAxis } : { i: act.i, attr: act.attr };
+        const sel = act.ace ? { i: 'ace', attr: aceAx(S.v) } : { i: act.i, attr: act.attr };
         if (selKey(S.sel) !== selKey(sel) && !selectChip(sel.i, sel.attr)) return Promise.resolve(false);
         const c = cardOf(S.v, sel.i);
         if (!canAct() || !gate({ kind: 'throw', i: sel.i, attr: sel.attr, id: c && c.id })) return Promise.resolve(false);
@@ -958,7 +985,7 @@
       rerender: () => { if (S.destroyed || S.busy) return; S.v = view(); S.speed = baseSpeed(); setSpeed(S.speed); renderAll(); },
       debug: () => ({
         phase: S.phase, n: S.v.n, view: S.v, sel: S.sel, busy: S.busy, held: S.held, speed: S.speed, enterDone: S.enterDone, rush: S.rush,
-        ui: snapUI(), hands: S.debug.hands.map(h => ({ n: h.n, sel: h.sel, evs: h.evs, ui: h.ui })), last: S.debug.hands[S.debug.hands.length - 1] || null,
+        ui: snapUI(), hands: S.debug.hands.map(h => ({ n: h.n, sel: h.sel, evs: h.evs, ct: h.ct, ui: h.ui })), last: S.debug.hands[S.debug.hands.length - 1] || null,
         log: S.debug.log.slice(), ms: S.debug.lastMs || null, cls: root.className,
       }),
     };
@@ -978,7 +1005,7 @@
     autoplay: policy => (CUR ? CUR.api.autoplay(policy) : false),
     stopAuto: () => { if (CUR) CUR.api.stopAuto(); },
     rerender: () => { if (CUR) CUR.api.rerender(); },
-    _fmt: { clashText, answerOf, habitParts, text: dtOf },
+    _fmt: { clashText, ruleText, hintOf, text: dtOf },
   };
   window.DipLabDuel = DipLabDuel;
 })();
