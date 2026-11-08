@@ -33,7 +33,7 @@ const COMBOS = [];
 for (let a = 0; a < POOL.length; a++) for (let b = a + 1; b < POOL.length; b++) for (let c = b + 1; c < POOL.length; c++) COMBOS.push([POOL[a], POOL[b], POOL[c]]);
 const IDS = ['m1', 'm2', 'm3', 'm4', 'm5', 'k1', 'k2', 'k3', 'c1', 'c2', 'h1', 'h2', 'b1', 'b2', 'b3', 'a1', 'a2', 'a3'];
 const LEARN_AT = { m4: 'L1', k3: 'L2', c2: 'L3', h2: 'L4', b3: 'L5', a3: 'L6' };
-const LEARNED = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星、不會被剋' };   // §2.5.5
+const LEARNED = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場一次' };   // §2.5.5
 const TRI = { k1: ['oc'], k2: ['oc'], c1: ['ch'], c2: ['ch'], h1: ['ho'], h2: ['ho'], b1: ['oc'], b2: ['oc'] };
 
 // 教學那場：跟 ui.js 一樣用 startFight(run, C, {tutorial:true})；包包＝老闆四張＋特價箱挑的三張（照挑的順序）
