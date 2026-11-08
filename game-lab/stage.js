@@ -335,7 +335,11 @@
         return r !== false;
       });
       // 地上平躺的唱片（收尾：他走了，唱片留在他站的位置）
-      if (TT.floor) fx.discs.push({ x: TT.floor.x, y: TT.floor.y, attr: TT.floor.attr, kind: TT.floor.kind, flat: true });
+      //   V16：畫成看得出來的一張（白封套＋露出半張黑膠、亮邊），每隔一下閃一顆星，撿起面板才有原因
+      if (TT.floor) {
+        fx.discs.push({ x: TT.floor.x, y: TT.floor.y, attr: TT.floor.attr, kind: TT.floor.kind, flat: true, big: true });
+        if ((Math.floor(rt * 2) % 3) === 0 && fx.sparks) fx.sparks.push({ x: TT.floor.x + 6, y: TT.floor.y - 5, size: 'small' });
+      }
       // 台上的唱片：常駐狀態（spin 一直轉到下一手 clearClash）；這一格有暫時狀態（clearClash 抬針、閃兩下）就用暫時的
       shop.state.deck = fx.hasOwnProperty('deck') ? fx.deck : TT.deck;
       shop.state.fx = fx;

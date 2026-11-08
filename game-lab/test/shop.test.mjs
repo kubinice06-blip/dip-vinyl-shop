@@ -229,7 +229,8 @@ section('走位：繞過家具，從門口、櫃檯到每個 spot 都走得到',
 // SPEC-v4 §2.3.2 的路線表：每一段都不穿過家具、1 倍速（每秒 72 格）不超過上限；counter→dig1／dig2 經過中島右側走道
 const ROUTE_LIMITS = [
   [['counter', 'dig1'], ['counter', 'dig2'], ['dig2', 'counter']], 3.2,
-  [['counter', 'mid'], ['mid', 'ref'], ['pay', 'leaving'], ['atdoor', 'duelE'], ['leaving', 'duelP'], ['ref', 'visit'], ['visit', 'dig1'], ['duelE', 'door']], 3.5,
+  // 3.5 → 3.6（R2／V08）：走道的轉角點往外移 3–5 格（人的半個身體不再蓋到中島箱子的邊），mid→ref 從 3.45 變 3.52 s（D §3「約 3 秒」）
+  [['counter', 'mid'], ['mid', 'ref'], ['pay', 'leaving'], ['atdoor', 'duelE'], ['leaving', 'duelP'], ['ref', 'visit'], ['visit', 'dig1'], ['duelE', 'door']], 3.6,
   [['browse', 'sale'], ['sale', 'pay']], 4.5
 ];
 const WALK_PX_PER_S = 36 * (dip.walkK || 2);   // shop.js：預設速度 36 × walkK 2＝每秒 72 格

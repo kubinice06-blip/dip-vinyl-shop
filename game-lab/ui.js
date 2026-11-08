@@ -207,12 +207,13 @@
     return stgP('camera', name, o);
   }
   // 矮螢幕的鏡頭從牆頂往下裁（anchor bottom）：店裡看得到的人頭頂被裁掉時，鏡頭往上移到頭頂留 4 格（高度、倍率不變）
-  function keepHeads(ms) {
+  function keepHeads(ms, pad) {
+    pad = pad == null ? 4 : pad;      // 頭上有表情圖示（O19 憤怒）時多留一個圖示高（V07：375×548 圖示上半截被裁）
     var sh = UI.stage && UI.stage.shop; if (!sh || typeof sh.view !== 'function' || typeof sh.headY !== 'function') return;
     var v = sh.view(), top = Infinity;
     ['p', 'o', 'f'].forEach(function (id) { var a = stg('pos', id); if (a && !a.hidden && !a.outside && stg('has', id)) top = Math.min(top, sh.headY(id)); });
-    if (!isFinite(top) || top - 4 >= v.y) return;
-    var to = { y: Math.max(0, Math.floor(top - 4)), h: v.h };
+    if (!isFinite(top) || top - pad >= v.y) return;
+    var to = { y: Math.max(0, Math.floor(top - pad)), h: v.h };
     try { if (ms > 0 && typeof sh.tweenView === 'function') sh.tweenView(to, Math.round(ms / speed())); else sh.setView(to); } catch (e) { console.error(e); }
   }
   function anchorOf(id) { return stg('anchor', id); }
@@ -668,7 +669,7 @@
       if (s.hide) for (k in s.hide) stg('hide', k, !!s.hide[k]);
       if (s.sil) for (k in s.sil) stg('sil', k, !!s.sil[k]);
       if (s.pose) for (k in s.pose) stg('pose', k, s.pose[k] || null);
-      if (s.emote) for (k in s.emote) stg('emote', k, s.emote[k] || null);
+      if (s.emote) { var anyEm = false; for (k in s.emote) { stg('emote', k, s.emote[k] || null); if (s.emote[k]) anyEm = true; } if (anyEm) keepHeads(200, 22); }
       if ('notes' in s) stg('play', !!s.notes);
       if (s.door) stg('door', s.door === 'shut' ? 'close' : s.door);
       if (s.stamp && !st.ff) {

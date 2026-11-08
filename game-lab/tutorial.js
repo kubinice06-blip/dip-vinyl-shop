@@ -659,6 +659,8 @@
     S.root._.fx.appendChild(c);
     var cw = c.offsetWidth, chh = c.offsetHeight;
     var cx = tbl ? tbl.left + tbl.width / 2 : ar.left + ar.width / 2, cy = tbl ? tbl.top + tbl.height / 2 : W.innerHeight / 2;
+    // 打完了（第 6 手 KO）：盤面正中間是「品味勝出」大章——小卡放到牌桌上緣，不疊在大章上（V10）
+    if (tbl && duelPhase() === 'over') cy = tbl.top + chh / 2 + 4;
     c.style.left = Math.round(cx - cw / 2) + 'px'; c.style.top = Math.round(cy - chh / 2) + 'px';
     sfx('slam');
     var p = (rm() ? Promise.resolve() : (function () { var a = A(c, [{ transform: 'scale(.6)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: 0.6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 260, easing: 'ease-out' }); return a ? a.finished.catch(function () {}) : Promise.resolve(); })())

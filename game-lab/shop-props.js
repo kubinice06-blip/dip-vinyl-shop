@@ -1320,6 +1320,13 @@
   }
   function flatDisc(P, x, y, attr, o) {   // 平躺在地上（輸家落地、平手）
     o = o || {};
+    if (o.big) {   // 收尾留在地上的那張（V16）：奶油色封套平躺、黑膠露出半張、亮邊
+      P.a(0.45, function () { P.ell(x + 1, y + 2, 11, 3, '#1b0e05'); });
+      P.r(x - 10, y - 3, 12, 6, '#3a2a18'); P.r(x - 9, y - 2, 10, 4, '#f3ead6'); P.r(x - 9, y - 2, 10, 1, '#ffffff'); P.r(x - 7, y - 1, 4, 2, ATTR[attr] || '#c11628');
+      P.ell(x + 3, y, 7.5, 3, '#d9d4c4'); P.ell(x + 3, y, 6.6, 2.5, '#151515'); P.ell(x + 3, y, 4.2, 1.5, '#2b2b2b');
+      P.r(x + 2, y - 1, 3, 2, o.kind === 'ace' ? '#e9c35a' : (ATTR[attr] || '#c11628')); P.p(x - 1, y - 2, '#8e8e98');
+      return;
+    }
     P.a(0.4, function () { P.ell(x, y + 1, 6, 2, '#1b0e05'); });
     P.ell(x, y, 5.5, 2.2, '#8e8e98'); P.ell(x, y, 4.8, 1.8, o.void ? '#55555f' : '#151515');
     P.r(x - 1, y - 1, 3, 1, o.void ? '#9a9aa4' : o.kind === 'ace' ? '#e9c35a' : (ATTR[attr] || '#c11628')); P.p(x - 3, y - 1, '#5a5a66');
