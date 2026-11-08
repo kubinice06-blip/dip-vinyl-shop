@@ -1041,7 +1041,23 @@
     if (why === 'lesson' || why === 'gone') S.tipQ = why === 'gone' ? [] : S.tipQ;
     setTimeout(pumpTips, why === 'time' ? 400 : 0);
   }
-  // 提示泡泡放在舞台橫條上（老闆就在櫃檯後面）：不蓋他的名牌、唱片、牌桌與你的手牌；舞台不在就貼著目標
+  // 揭曉時頭上屬性方塊的範圍（CSS；stage.badgeRect，方塊還沒出來就用兩個對決者頭頂往上一個方塊高估）；舞台不在回 null
+  function badgeZone() {
+    var sa = stageApi(); if (!sa) return null;
+    var t = Infinity, b = -Infinity;
+    ['e', 'p'].forEach(function (side) {
+      var r = null;
+      try { r = typeof sa.badgeRect === 'function' ? sa.badgeRect(side) : null; } catch (_) { r = null; }
+      if (!r || !r.height) {
+        var a = null; try { a = typeof sa.anchor === 'function' ? sa.anchor(side === 'e' ? 'f' : 'p') : null; } catch (_) { a = null; }
+        var ar = a && a.getBoundingClientRect ? a.getBoundingClientRect() : null;
+        if (ar && ar.height) r = { top: ar.top - 24, bottom: ar.top };
+      }
+      if (r) { t = Math.min(t, r.top); b = Math.max(b, r.bottom); }
+    });
+    return isFinite(t) && isFinite(b) ? { top: t, bottom: b } : null;
+  }
+  // 提示泡泡放在舞台橫條上（老闆就在櫃檯後面）：不蓋他的名牌、唱片、牌桌與你的手牌、頭上的屬性方塊；舞台不在就貼著目標
   function layoutTip(force) {
     var cur = S.tip, r = S.tipRoot; if (!cur || !r) return;
     var ar = appRect(), tb = topBottom(), vh = W.innerHeight;
@@ -1055,7 +1071,15 @@
     var bh = b.offsetHeight || 52;
     var st = rectOf(document.getElementById('stage'));
     var top;
-    if (st && st.height >= bh + 8) top = Math.round(Math.max(tb + 4, st.top + 6));
+    if (st && st.height >= bh + 8) {
+      top = Math.round(Math.max(tb + 4, st.top + 6));
+      // 整合版面 a：不蓋揭曉時頭上的屬性方塊——舞台上緣會蓋到方塊時，放到方塊上面（高螢幕橫條夠高）或方塊下面（人身上）
+      var bz = badgeZone();
+      if (bz && top < bz.bottom + 2 && top + bh > bz.top - 2) {
+        if (bz.top - 4 - bh >= Math.max(tb + 2, st.top + 2)) top = Math.round(bz.top - 4 - bh);
+        else top = Math.round(Math.min(vh - bh - 4, bz.bottom + 4));
+      }
+    }
     else if (tg) top = tg.top - 10 - bh >= tb + 4 ? Math.round(tg.top - 10 - bh) : Math.round(Math.min(vh - bh - 4, tg.bottom + 10));
     else top = tb + 6;
     b.style.top = top + 'px';
