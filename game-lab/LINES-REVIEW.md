@@ -1,71 +1,44 @@
 # 台詞審稿：品味對決 v4（LINES-REVIEW）
 
 > 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、名牌、提示、規則卡、教學）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
-> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（36 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（20 句）。全部一致才會產生這份。
+> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（45 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（40 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
-> 第一波（A1）：劇本、回嘴、教學步驟仍是 v3 墊片，第二波由 B2 換成 v4 劇本與六手教學。
+> 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（第 2 階段）之前，教學步驟仍是 v3 的。
 
-統計：原句 34、拍板 2、店主 20、新 267（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 40、新 255（同一句在有聲／安靜兩版序章只算一次）。
 
-## 序章（有聲音）
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| （畫面字） | 剛才那段，是哪一張？ | 本規格新寫 | `script.prologue[4].prompt` |
-| （畫面字） | 好耳朵 | 本規格新寫 | `script.prologue[5].stamp` |
-| 老闆 | 「不是這張。不過，你挑的這張也不壞。」 | 本規格新寫 | `script.prologue[6]` |
-| 旁白 | （點封套下面的字換著聽，挑一張帶走。） | 本規格新寫 | `script.prologue[7]` |
-| 老闆 | 「門口那箱一百塊三張，順手帶著。」 | 本規格新寫 | `script.prologue[10]` |
-| （畫面字） | ▶ 品味對決 | 本規格新寫 | `script.prologue[16].prompt` |
-| （畫面字） | ▶ 直接開打（我會玩） | 本規格新寫 | `script.prologue[16].prompts[1]` |
-
-## 序章（安靜）
+## 序章（O1–O21）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字） | （挑一張帶走。） | 本規格新寫 | `script.quietPrologue[4].prompt` |
+| （畫面字） | 你覺得，現在播的是哪張？ | 本規格新寫 | `script.prologue[7].prompt` |
+| （畫面字） | （挑三張。） | 本規格新寫 | `script.prologue[14].prompt` |
 
-## 序章收尾（贏了男子 → 挑一張盤 → 發燒配件三選一）
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| 旁白 | 他的袋子裡掉出一張盤。 | 本規格新寫 | `script.epilogueWin[2]` |
-| 老闆 | 「……他每個禮拜都來聽這張。」 | 本規格新寫 | `script.epilogueWin[3]` |
-
-## 配件挑完 → 今晚來客
+## 傳說藏家進門
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆 | 「今晚是交流夜。人會越來越多。」 | 本規格新寫 | `script.afterPrologue[1]` |
+| （畫面字） | ▶ 品味對決 | 本規格新寫 | `script.bossEnter[1].prompt` |
 
 ## 打烊（通關）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 藏家 | 「……這張，送你。三十年前，我也是這樣拿到的。」 | 概念稿 A | `script.clear[0]` |
-| （畫面字） | 第二夜（尚未開放） | 本規格新寫 | `script.clear[2].stamp` |
-| 旁白 | 對街新開了一間黑膠潮流館。 | 本規格新寫 | `script.clear[2]` |
+| 藏家・C1 | 「……這張，送你。三十年前，我也是這樣拿到的。」 | 概念稿 A | `script.clear[0]` |
+| （畫面字） | 第二夜（尚未開放） | 本規格新寫 | `script.clear[1].set.stamp` |
+| 旁白・C2 | 對街新開了一間黑膠潮流館。 | 本規格新寫 | `script.clear[1]` |
 
 ## 散場
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆 | 「……今晚就到這。」 | 本規格新寫 | `script.dead[0]` |
+| 老闆・D1 | 「……今晚就到這。」 | 本規格新寫 | `script.dead[0]` |
 
 ## 再來一夜
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆 | 「……又是你。」 | 本規格新寫 | `script.again[0]` |
-
-## 回嘴（玩家第一次有台詞）
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| 你 | 你耳機裡那張，是《Mylo Xyloto》吧。 | 本規格新寫 | `retorts[0].label` |
-| 男子 | 「……那張也是 Coldplay 好嗎！」 | 本規格新寫 | `retorts[0].reply` |
-| 你 | ……（把唱片抱緊） | 本規格新寫 | `retorts[1].label` |
-| 男子 | 「哼，抱那麼緊，怕被笑喔？」 | 本規格新寫 | `retorts[1].reply` |
+| 老闆・A1 | 「……又是你。」 | 本規格新寫 | `script.again[0]` |
 
 ## 老闆（對決外）
 
@@ -382,12 +355,6 @@
 | （畫面字）・none | 這晚沒收唱片 | 本規格新寫 | `summary.none` |
 | （畫面字）・again | 再來一夜 | 本規格新寫 | `summary.again` |
 
-## 包包與唱片櫃
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| （畫面字） | 門口一百塊三張 | 本規格新寫 | `junkLabel` |
-
 ## 店內名牌（shops/basement.json）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -410,6 +377,7 @@
 | （畫面字） | （本店） | 本規格新寫 | `shops/dip.json.district` |
 | （畫面字） | 斜俯視 3/4（店主 2026-11-07 選的路線 P2）：x＝寬、y＝地板前緣（越下越近）、高度直接往上減；不縮放。人＝16×16 小人 ×3（48 格＝1.70 m，28.2 格/m）；1 格≈1.336 CSS px（390 寬）。 | 本規格新寫 | `shops/dip.json.note` |
 | （畫面字） | pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給 | 本規格新寫 | `shops/dip.json.light.note` |
+| （畫面字） | 腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；behind＝{道具: [xa, xb]} 老闆站在它後面的口袋（地面那塊後面、x 在 xa–xb 的那一條；櫃檯整個寬＝spots.counter，唱盤台＝轉盤那一段 134–158＝ref），口袋兩側照畫出來的擋（別人不會從唱盤台上走過去）。避障＝這一份加 navMargin（margin 可以逐塊指定：中島兩側走道多留 3 格，人的手臂比腳寬，走在走道上不會被箱子邊切掉一塊）；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡） | 本規格新寫 | `shops/dip.json.footprints.note` |
 | （畫面字） | 唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片 | 本規格新寫 | `shops/dip.json.duel.note` |
 | （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[3].hot.label` |
 | （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[4].revealLabel` |
@@ -514,28 +482,57 @@
 | 標記 | 句子 | 位置 |
 |---|---|---|
 | 原句 | 下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。 | `script.prologue[0]` |
-| 原句 | 這時候，店裡的音響傳出一段旋律。 | `script.prologue[1]` |
-| 原句 | ……很迷人。你停下腳步，不自覺跟著點起頭來。 | `script.prologue[2]` |
-| 拍板 | 你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。 | `script.prologue[3]` |
-| 原句 | 「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」 | `script.prologue[4]` |
-| 原句 | 「……你眼光真不錯。」老闆終於抬起頭來，看著你。 | `script.prologue[5]` |
-| 原句 | 「這張是我的私人收藏。今天讓給你。」 | `script.prologue[8]` |
-| 原句 | 「這四張也很適合你。跟你有緣，收下吧。」 | `script.prologue[9]` |
-| 原句 | 這時，門開了。 | `script.prologue[11]` |
-| 原句 | 一名男子走進來。他的視線，落在你手上的那幾張專輯上。 | `script.prologue[12]` |
-| 原句 | 「……這品味，也敢出來丟臉？」 | `script.prologue[13]` |
-| 原句 | 你的憤怒表露無遺。 | `script.prologue[14]` |
-| 拍板 | 老闆不發一語，緩步走出櫃檯，站在兩人之間。 | `script.prologue[15]` |
-| 原句 | 「既然雙方都不服氣，不如來一場品味對決如何？」 | `script.prologue[16]` |
-| 原句 | 「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。 | `script.epilogueWin[0]` |
-| 原句 | 「搵休督欸丟！」 | `script.epilogueWin[1]` |
-| 原句 | 「我看你對音樂脈絡，很有天份。」 | `script.epilogueWin[4]` |
-| 原句 | （老闆從長桌底下拖出一個木箱。） | `script.epilogueWin[5].prompt` |
-| 原句 | 「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」 | `script.epilogueWin[5]` |
-| 原句 | 你正要道謝，門又開了。 | `script.afterPrologue[0]` |
-| 原句 | 三十年的耳朵，不會騙人。 | `script.bossEnter[1].stamp` |
-| 原句 | 「聽說這裡有個新來的，品味不錯？」 | `script.bossEnter[1]` |
-| 原句 | 「年輕人，有空再來這邊走走，與大家交流音樂。」 | `script.clear[1]` |
+| 原句 | 櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。 | `script.prologue[1]` |
+| 原句 | 你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。 | `script.prologue[2]` |
+| 原句 | 這時候，店裡的音響傳出一段旋律。 | `script.prologue[3]` |
+| 店主 | 清脆的吉他分解和弦，底下墊著一層像機器運轉的電子聲。 | `script.prologue[4].hall` |
+| 店主 | 一支薩克斯風自顧自地吹，旋律說斷就斷。 | `script.prologue[4].pearl` |
+| 店主 | 鼓一下一下砸下來，像有人在敲鐵門。 | `script.prologue[4].heresy` |
+| 店主 | 一個又高又細的男聲飄在上面，聽起來疲憊又不安。 | `script.prologue[5].hall` |
+| 店主 | 鼓和貝斯不照拍子走，像在跟它鬥嘴。 | `script.prologue[5].pearl` |
+| 店主 | 低音一直磨同一個音，一個男聲在吼，聽不出在唱什麼。 | `script.prologue[5].heresy` |
+| 原句 | 你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。 | `script.prologue[6]` |
+| 店主 | 「這三張，是我這裡最貴的三張。」他沒抬頭。「你覺得，現在播的是哪張？」 | `script.prologue[7]` |
+| 原句 | 「……你眼光真不錯。」老闆終於抬起頭來，看著你。 | `script.prologue[8]` |
+| 店主 | 「可惜啊。」老闆終於抬起頭來，看著你。 | `script.prologue[9]` |
+| 原句 | （挑一張。） | `script.prologue[10].prompt` |
+| 店主 | 「跟你很有緣，挑一張送你。」 | `script.prologue[10]` |
+| 原句 | 「這張是我的私人收藏。今天讓給你。」 | `script.prologue[11]` |
+| 原句 | 老闆不發一語，走出櫃檯，在那張長桌上的木箱裡翻翻找找。 | `script.prologue[12]` |
+| 原句 | （老闆把四張盤遞給你。） | `script.prologue[13].prompt` |
+| 原句 | 收下這四張 | `script.prologue[13].button` |
+| 店主 | 「這四張也很適合你。收下吧。」 | `script.prologue[13]` |
+| 店主 | 「特價區那邊，隨便挑三張。」 | `script.prologue[14]` |
+| 店主 | 你把八張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。 | `script.prologue[15]` |
+| 原句 | 你抱著紙袋，心滿意足，往門口走去。 | `script.prologue[16]` |
+| 原句 | 這時，門開了。 | `script.prologue[17]` |
+| 原句 | 一名男子走進來。他的視線，落在你手上的那幾張專輯上。 | `script.prologue[18]` |
+| 原句 | 「……這品味，也敢出來丟臉？」 | `script.prologue[19]` |
+| 原句 | 你的憤怒表露無遺。 | `script.prologue[20]` |
+| 原句 | 老闆不發一語，緩步走出櫃檯，站在兩人之間。 | `script.prologue[21]` |
+| 店主 | ▶ 接受對決（看向老闆） | `script.prologue[22].prompts[0]` |
+| 店主 | ▶ 接受對決（手伸進袋子，準備出招） | `script.prologue[22].prompts[1]` |
+| 原句 | 「既然雙方都不服氣，不如來一場品味對決如何？」 | `script.prologue[22]` |
+| 原句 | 對決結束。店裡安靜了幾秒。 | `script.epilogueWin[0]` |
+| 原句 | 「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。 | `script.epilogueWin[1]` |
+| 原句 | 「搵休督欸丟！」 | `script.epilogueWin[2]` |
+| 原句 | 門上的鈴鐺又響了一聲。他走了。 | `script.epilogueWin[3]` |
+| 原句 | 「年輕人。」老闆看著你，慢慢點了點頭。 | `script.epilogueWin[4]` |
+| 原句 | 「我看你對音樂脈絡，很有天份。」 | `script.epilogueWin[5]` |
+| 原句 | （老闆從長桌底下拖出一個木箱。） | `script.epilogueWin[6].prompt` |
+| 原句 | 「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」 | `script.epilogueWin[6]` |
+| 原句 | 「年輕人，有空再來這邊走走，與大家交流音樂。」 | `script.epilogueWin[7]` |
+| 原句 | 你正要道謝，門又開了。 | `script.epilogueWin[8]` |
+| 原句 | 「聽說這裡有個新來的，品味不錯？」 | `script.epilogueWin[9]` |
+| 原句 | 無止盡的品味試煉，開始了。 | `script.epilogueWin[10]` |
+| 原句 | 三十年的耳朵，不會騙人。 | `script.bossEnter[1].set.stamp` |
+| 原句 | 「讓我看看你的品味有幾兩重。」 | `script.bossEnter[1]` |
+| 店主 | 清脆的吉他分解和弦，底下墊著一層像機器運轉的電子聲。 | `tonightLines.hall[0]` |
+| 店主 | 一個又高又細的男聲飄在上面，聽起來疲憊又不安。 | `tonightLines.hall[1]` |
+| 店主 | 一支薩克斯風自顧自地吹，旋律說斷就斷。 | `tonightLines.pearl[0]` |
+| 店主 | 鼓和貝斯不照拍子走，像在跟它鬥嘴。 | `tonightLines.pearl[1]` |
+| 店主 | 鼓一下一下砸下來，像有人在敲鐵門。 | `tonightLines.heresy[0]` |
+| 店主 | 低音一直磨同一個音，一個男聲在吼，聽不出在唱什麼。 | `tonightLines.heresy[1]` |
 | 原句 | ……這品味，也敢出來丟臉？ | `lines.man.intro` |
 | 原句 | ……哼。 | `lines.man.lose[0]` |
 | 原句 | 搵休督欸丟！ | `lines.man.lose[1]` |
