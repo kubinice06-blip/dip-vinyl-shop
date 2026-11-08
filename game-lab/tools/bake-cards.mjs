@@ -162,7 +162,11 @@ function buildBins() {
     dip[key] = Object.assign({ rule }, key === 'wallA' || key === 'wallB' ? { display: true } : {}, { pool });
   }
   for (const k of Object.keys(BIN_RULES)) if (!dip[k]) probs.push('BIN-RULE-WITHOUT-GROUP ' + k);
-  return { dip, probs };
+  // 輸出順序：12 箱（deck-lists 的順序）在前、牆（display）在後（SPEC-v4 §2.2.1 的形狀）
+  const ordered = {};
+  for (const k of Object.keys(dip)) if (!dip[k].display) ordered[k] = dip[k];
+  for (const k of Object.keys(dip)) if (dip[k].display) ordered[k] = dip[k];
+  return { dip: ordered, probs };
 }
 if (!REUSE) {
   problems.push(...buildBins().probs);
