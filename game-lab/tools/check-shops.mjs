@@ -27,6 +27,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const LAB = path.resolve(HERE, '..');
 const require = createRequire(import.meta.url);
 
+export const STATIC_DX = 38, STATIC_DY = 44;   // 兩個小人疊在一起的距離（身體寬、高；R-02）
 export const CHAR_H = 14;   // 小人看得到的列數（16×16 格，腳底在第 14 列）
 export const SHOP_SPOTS = ['out', 'q1', 'q2', 'door', 'atdoor', 'in', 'counter', 'pay', 'aisle', 'browse', 'crateP', 'dig1', 'dig2', 'dig3',
   'listen', 'between', 'duelE', 'duelP', 'near', 'visit', 'leave', 'map', 'frontleft'];
@@ -36,7 +37,7 @@ export const O34_CAMERAS = ['full', 'scene', 'map', 'reward', 'strip', 'stripS']
 export const O34_HOTS = ['door', 'now', 'poster-event', 'booth', 'counter', 'cat', 'owner'];
 export function o34HotIds(L) { return O34_HOTS.concat((L.props || []).filter(o => o.bin && o.bin.key).map(o => 'bin:' + o.bin.key)); }
 // v4 新增的站位（序章後走道對峙、特價箱前）
-export const O34_SPOTS = SHOP_SPOTS.concat(['leaving', 'mid', 'sale']);
+export const O34_SPOTS = SHOP_SPOTS.concat(['leaving', 'mid', 'sale', 'wait']);
 // 沒有 bin、但畫著封面的道具（高櫃、試聽桌）標 section＝它的封面屬於哪一區（bins.js 的 key；FIXLIST 4／5 起＝picks 店長推薦）
 export const SECTION_RE = /^[a-z0-9]+$/;
 // 斜俯視的路線：navRoute 走不到回 null（A3 加固後）或舊版的 [b]；回 { pts, len, clear }，走不到回 null
@@ -405,6 +406,13 @@ export function checkOblique(L, file, lib, cards, content) {
     if (r) bad('spots.' + k + ' 站在家具裡 ' + obsName(r));
   }
   for (const [k, st, src] of stands) { const r = obsAt(st); if (r) bad(src + '：bin.stand ' + JSON.stringify(st) + ' 站在家具裡 ' + obsName(r)); }
+  // 站著不動的人（老闆以外的 actors，例：熟客 r1）旁邊不能是 bin.stand：你走過去翻箱子會被他整個蓋掉（R-02：FEATURE 的站位在熟客正後面）。
+  //   一個小人的身體寬約 38 格、高 44 格以內就會疊到（ui.js makeRoom 用同一組數字請門邊等的客人讓開）
+  for (const a of (L.actors || [])) {
+    if (a.id === 'o' || !spots[a.at]) continue;
+    const s0 = spots[a.at];
+    for (const [k, st, src] of stands) if (Math.abs(st[0] - s0[0]) < STATIC_DX && Math.abs(st[1] - s0[1]) < STATIC_DY) bad(src + '：bin.stand ' + JSON.stringify(st) + ' 跟站著不動的 ' + a.id + '（' + a.at + ' ' + JSON.stringify(s0) + '）疊在一起（|dx|<' + STATIC_DX + '、|dy|<' + STATIC_DY + '）');
+  }
   // 任兩個 spot（含每個 bin.stand）之間的路線每一段都不穿過家具（SPEC §5.1；v3 只查 door／counter 出發）
   info.routes = 0;
   const pts = Object.entries(spots).filter(([, s]) => !s[2]).map(([k, s]) => [k, s.slice(0, 2)]).concat(stands.map(([k, st]) => [k, st]));

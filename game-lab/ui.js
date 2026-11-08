@@ -1781,6 +1781,16 @@
     }
     place(id, spot, spr);
   }
+  // 你要走去的站位旁邊站著人（今晚來客畫面、門邊等的第一位客人 f）：他走到另一個空的等候位（atdoor／wait），兩個人不疊在一起（RT-12）
+  var ROOM_DX = 38, ROOM_DY = 44;
+  function makeRoom(to) {
+    if (UI.screen !== 'night' || !to || !stg('has', 'f')) return;
+    var f = stg('pos', 'f'); if (!f || f.hidden || f.outside) return;
+    var near = function (a) { return a && Math.abs(a[0] - to[0]) < ROOM_DX && Math.abs(a[1] - to[1]) < ROOM_DY; };
+    if (!near([f.x, f.y])) return;
+    var alt = ['wait', 'atdoor'].map(function (k) { return [k, stg('spot', k)]; }).filter(function (x) { return x[1] && !near(x[1]); })[0];
+    if (alt) stgP('walk', 'f', [alt[0]], (C.blocking && C.blocking.speed) || 54);
+  }
   SCREENS.night = function () {
     var r = save.run;
     if (!r) return go('title');
@@ -2206,7 +2216,7 @@
     try {
       X.configure({ content: C, engine: E, stage: UI.stage, run: function () { return save.run; }, choose: doChoose,
         info: function (c) { var ci = CI(); return ci ? ci.open(c, { from: 'econ' }) : Promise.resolve(); },
-        sfx: function (n, o) { sfx(n, o); }, toast: toast, app: app });
+        sfx: function (n, o) { sfx(n, o); }, toast: toast, app: app, makeRoom: makeRoom });
     } catch (e) { console.error(e); }
   }
   // iOS < 15.4 沒有 svh：100vh 會比可視區高。改用可視高。
