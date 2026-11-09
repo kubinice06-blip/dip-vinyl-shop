@@ -586,6 +586,15 @@
       for (let k = 0; k < n; k++) pos.push({ x: k <= openIdx ? x0 + k * w : x0 + openIdx * w + F + OPEN_GAP + (k - openIdx - 1) * w, y: y0, s: F, z: k + 1 });
       return { F, dx, w, y0, pos };
     }
+    // 「你」那一列裡屬性鈕可以放的左右範圍（手牌區座標）：「你」與發燒配件的右邊 ～ 聲望數字的左邊；屬性鈕沒蓋到那一列＝null
+    function nameRowRoom(top) {
+      const nm = els.p.querySelector('.nmrow'), lb = nm && nm.querySelector('b'), hp = nm && nm.querySelector('.hpn'); if (!nm || !lb || !hp) return null;
+      const hr = els.hand.getBoundingClientRect(), nr = nm.getBoundingClientRect();
+      if (hr.top + top >= nr.bottom) return null;
+      let l = lb.getBoundingClientRect().right;
+      if (els.relics.children.length) l = Math.max(l, els.relics.getBoundingClientRect().right);
+      return [Math.ceil(l - hr.left + 6), Math.floor(hp.getBoundingClientRect().left - hr.left - 6)];
+    }
     function layoutHand(animate) {
       const W = els.hand.clientWidth, H = els.hand.clientHeight;
       if (!W || !H) return;
@@ -597,7 +606,7 @@
       els.hand.classList.toggle('open', open); root.classList.toggle('hopen', open);
       const still = !animate || rm();
       const g = handGeom(n, W, H, open ? openIdx : null), pos = g.pos;
-      if (open) { const p = pos[openIdx]; p.y -= LIFT; p.up = true; p.z = 40; }
+      if (open) { const p = pos[openIdx]; p.y -= LIFT; p.up = true; }   // 疊放順序照舊（右邊那疊在上面）：打開＝右邊那疊滑開把它露出來，像新接龍
       S.handGeom = { F: g.F, dx: g.dx, w: g.w, y0: g.y0, n, open: open ? openIdx : null };
       // 位置沒變的那張不碰（fit() 每次都會重排一次：不能把正在滑的那張打斷成直接跳到終點）
       //   （比的是上次寫進去的值 t._tf／t._w：style.transform 讀回來的字串瀏覽器會重排空白，不能直接比）
@@ -610,11 +619,15 @@
         t.style.zIndex = String(p.z);
         t.classList.toggle('up', !!p.up);
       });
-      // 屬性鈕：打開那張正上方（左右夾在手牌區裡；手牌區不夠高時往上蓋到「你」那一列——.dl.hopen 讓你那一塊疊在牌桌上面）
+      // 屬性鈕：打開那張正上方（左右夾在手牌區裡；往上蓋到「你」那一列——.dl.hopen 讓你那一塊疊在牌桌上面）。
+      //   蓋到那一列時左右讓開「你」＋發燒配件與右邊的聲望數字（放得下才讓：聲望條可以蓋，數字不蓋）
       if (open && !els.abpop.hidden) {
-        const p = pos[openIdx], pw = els.abpop.offsetWidth, ph = els.abpop.offsetHeight;
-        els.abpop.style.left = Math.max(0, Math.min(W - pw, Math.round(p.x + p.s / 2 - pw / 2))) + 'px';
-        els.abpop.style.top = Math.round(p.y - POP_GAP - ph) + 'px';
+        const p = pos[openIdx], pw = els.abpop.offsetWidth, ph = els.abpop.offsetHeight, top = Math.round(p.y - POP_GAP - ph);
+        let lo = 0, hi = W - pw;
+        const nb = nameRowRoom(top);
+        if (nb && nb[1] - nb[0] >= pw) { lo = Math.max(lo, nb[0]); hi = Math.min(hi, nb[1] - pw); }
+        els.abpop.style.left = Math.max(lo, Math.min(hi, Math.round(p.x + p.s / 2 - pw / 2))) + 'px';
+        els.abpop.style.top = top + 'px';
       }
       if (still && els.hand.classList.contains('noanim')) { void els.hand.offsetWidth; if (!rm()) els.hand.classList.remove('noanim'); }
       else if (rm()) els.hand.classList.add('noanim');
