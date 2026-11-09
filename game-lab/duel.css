@@ -126,6 +126,7 @@
 /* ===================== 你的一塊（下）：黑線分界；名字＋聲望＋手牌區（疊著／打開一張） ===================== */
 .dl .dl-p{flex:1 1 auto;min-height:0;border-top:1px solid var(--ink,#111);padding:6px 12px 0;position:relative;padding-bottom:env(safe-area-inset-bottom,0px)}
 .dl.hopen .dl-p{z-index:3}   /* 打開一張時屬性鈕往上蓋到「你」那一列、牌桌的下緣：手牌那一塊疊在上面 */
+.dl .nmrow .under{visibility:hidden}   /* 屬性鈕蓋到的「你」／發燒配件／聲望數字：打開時先藏起來，不露出半截（duel.js placeChips；收回就出來） */
 .dl .relics{display:flex;align-self:center;height:20px;align-items:center}
 .dl .relics .rl{position:relative;width:20px;height:20px;display:grid;place-items:center;border:1px solid var(--gold,#b8860b);background:var(--cream,#fffbe9);margin-right:4px;-webkit-touch-callout:none}
 .dl .relics .rl::before{content:'';position:absolute;left:-12px;right:-12px;top:-12px;bottom:-12px}
@@ -143,6 +144,7 @@
 .dl .tile.ace .cv{outline:2px solid var(--gold,#b8860b);outline-offset:-1px}
 .dl .tile .acetag,.dl .slot .acetag{position:absolute;left:0;top:0;background:var(--gold,#b8860b);color:#fff;font-size:10px;font-weight:700;padding:0 4px;line-height:15px;letter-spacing:.06em}
 .dl .tile.up .cv{outline:2px solid var(--ink,#111);outline-offset:0;box-shadow:0 6px 12px rgba(0,0,0,.25)}
+.dl .tile.up .cvw::after{content:'';position:absolute;left:0;right:0;top:100%;height:6px}   /* 浮起 6 px（duel.js LIFT）後底下露出的那條還算打開那張：手指點在封面下緣下面一點，不會打開底下左邊那張（審查 F3） */
 .dl .tile.ace.up .cv{outline-color:var(--gold,#b8860b);outline-width:3px}
 .dl .tile.gone{visibility:hidden}
 /* 屬性鈕（打開那張正上方）：每顆 ≥44 高；最高那顆大一點、黑框（.top）；王牌一顆「王牌 經 7」 */

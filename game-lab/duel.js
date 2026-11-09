@@ -563,9 +563,12 @@
       els.abpop.querySelectorAll('.ab').forEach(b => b.classList.toggle('pv', !!(S.sel && b.dataset.a === S.sel.attr)));
     }
     // 手牌一排的位置（每張絕對定位；transform＝位移，打開／換一張／收回時 CSS 轉場 180 ms；減少動態＝直接換）。
-    //   每張封面一樣大（F），疊著與打開都一樣；疊著＝每張往右錯開 dx（3 成寬），整排置中。
-    //   打開第 k 張（不是最右那張）：k 右邊的牌整疊往右滑開，k 整張露出來（跟右邊那疊隔 OPEN_GAP）並浮起 LIFT；其他照樣疊著。
-    //     寬度不夠時其他牌露出來的那一條先收窄（最窄 OPEN_MIN），整排照樣置中——所以 k 左邊那幾張會一起往左挪一點、k 右邊的往右。
+    //   每張封面一樣大（F），疊著與打開都一樣；疊著＝每張往右錯開 dx（3 成寬）。
+    //   打開第 k 張（不是最右那張）：只有 k 右邊的牌整疊往右滑開，k 整張露出來（跟右邊那疊隔 OPEN_GAP）並浮起 LIFT；
+    //     k 和它左邊那幾張不動（店主：「往旁邊攤開…其他維持疊著的狀態」；審查 F4）。
+    //     所以疊著那排不置中：起點 x0 盡量置中，但不超過「打開倒數第二張時左邊那幾張都不用動」的位置（390／430／360 等於靠左，375 放得下就偏左一點）。
+    //     右邊那疊露出來的那一條先收窄（最窄 OPEN_MIN）；還放不下（360 打開後面幾張、390／430 打開倒數第二張）才把 k 左邊那幾條收窄、k 往左挪一點（最多 22 px，360）。
+    //     要改回整排置中：x0 改成 xc（那時候打開一張，k 和左邊會一起往左挪 30–50 px）。
     //   打開最右那張（王牌／最後一張）：本來就整張露出來，只浮起，其他不動。
     function handGeom(n, W, H, openIdx) {
       const L = S.lay || {};
@@ -573,27 +576,63 @@
       F = Math.min(F, Math.floor((W - 8) / (1 + STACK_DX * Math.max(0, n - 1))));
       if (n >= 2) F = Math.min(F, Math.floor((W - OPEN_GAP) / (2 + OPEN_MIN * Math.max(0, n - 2))));
       F = Math.max(30, F);
-      const dx = Math.round(F * STACK_DX);
+      const dx = Math.round(F * STACK_DX), wmin = Math.max(1, Math.min(dx, Math.floor(F * OPEN_MIN)));
       const y0 = Math.max(Math.min(LIFT + 3, H - F), Math.round((H - F) / 2 + 1));   // 上下置中（往下 1 px：屬性鈕離相剋圖例遠一點）；浮起那張的框不能被手牌區上緣切到
+      const xc = Math.round((W - F - dx * Math.max(0, n - 1)) / 2);
+      const x0 = n >= 2 ? Math.max(0, Math.min(xc, W - 2 * F - OPEN_GAP - (n - 2) * dx)) : Math.max(0, xc);
       const pos = [];
       if (openIdx == null || openIdx < 0 || openIdx >= n - 1) {
-        const tw = F + dx * Math.max(0, n - 1), x0 = Math.round((W - tw) / 2);
         for (let k = 0; k < n; k++) pos.push({ x: x0 + k * dx, y: y0, s: F, z: k + 1 });
-        return { F, dx, w: dx, y0, pos };
+        return { F, dx, w: dx, wl: dx, x0, y0, pos };
       }
-      const w = n > 2 ? Math.max(1, Math.min(dx, Math.floor((W - 2 * F - OPEN_GAP) / (n - 2)))) : dx;
-      const tw = 2 * F + OPEN_GAP + w * Math.max(0, n - 2), x0 = Math.round((W - tw) / 2);
-      for (let k = 0; k < n; k++) pos.push({ x: k <= openIdx ? x0 + k * w : x0 + openIdx * w + F + OPEN_GAP + (k - openIdx - 1) * w, y: y0, s: F, z: k + 1 });
-      return { F, dx, w, y0, pos };
+      const K = openIdx, m = n - K - 2;                    // m＝k 右邊、最後一張以外的那幾條
+      let xk = x0 + K * dx, wl = dx, w = dx;
+      const room = W - xk - 2 * F - OPEN_GAP;              // 右邊那幾條可以用的寬
+      if (m > 0) w = Math.min(dx, Math.floor(room / m));
+      if (m > 0 ? w < wmin : room < 0) {                   // 右邊收到最窄還放不下：k 和左邊那幾條往左收（第 0 張盡量不動）
+        w = m > 0 ? wmin : dx;
+        const want = W - 2 * F - OPEN_GAP - m * (m > 0 ? wmin : 0);
+        if (K > 0) { wl = Math.max(wmin, (want - x0) / K); xk = Math.round(Math.min(xk, x0 + wl * K, want)); }
+        else xk = Math.min(xk, want);
+      }
+      const xl = K > 0 ? Math.min(x0, xk - wmin * K) : xk;   // 第 0 張（只有收到最窄還不夠時才動）
+      for (let k = 0; k < n; k++) {
+        const x = k < K ? Math.round(xl + (xk - xl) * k / K) : k === K ? xk : xk + F + OPEN_GAP + (k - K - 1) * w;
+        pos.push({ x, y: y0, s: F, z: k + 1 });
+      }
+      return { F, dx, w, wl: K > 0 ? (xk - xl) / K : dx, x0, y0, pos };
     }
-    // 「你」那一列裡屬性鈕可以放的左右範圍（手牌區座標）：「你」與發燒配件的右邊 ～ 聲望數字的左邊；屬性鈕沒蓋到那一列＝null
-    function nameRowRoom(top) {
-      const nm = els.p.querySelector('.nmrow'), lb = nm && nm.querySelector('b'), hp = nm && nm.querySelector('.hpn'); if (!nm || !lb || !hp) return null;
-      const hr = els.hand.getBoundingClientRect(), nr = nm.getBoundingClientRect();
-      if (hr.top + top >= nr.bottom) return null;
-      let l = lb.getBoundingClientRect().right;
-      if (els.relics.children.length) l = Math.max(l, els.relics.getBoundingClientRect().right);
-      return [Math.ceil(l - hr.left + 6), Math.floor(hp.getBoundingClientRect().left - hr.left - 6)];
+    // 「你」那一列裡會被屬性鈕蓋到的東西（手牌區座標）：「你」、每個發燒配件、聲望數字；w＝藏起來的代價（聲望數字最不想藏）
+    function nameRowItems() {
+      const nm = els.p.querySelector('.nmrow'); if (!nm) return [];
+      const hr = els.hand.getBoundingClientRect();
+      const list = [[nm.querySelector(':scope > b'), 1], ...[...els.relics.children].map(e => [e, 1]), [nm.querySelector('.hpn'), 3]];
+      return list.filter(x => x[0]).map(([el, w]) => { const r = el.getBoundingClientRect(); return { el, w, l: r.left - hr.left, r: r.right - hr.left, t: r.top - hr.top, b: r.bottom - hr.top }; }).filter(x => x.r > x.l);
+    }
+    function unhideNameRow() { els.p.querySelectorAll('.nmrow .under').forEach(e => e.classList.remove('under')); }
+    // 屬性鈕放哪：跟著打開那張（正上方置中，夾在手牌區裡）。往上蓋到「你」那一列時，先試讓開「你」＋發燒配件／聲望數字，
+    //   但只在讓開之後整組的中心還在那張上面（離左右緣 CHIP_IN 以上）時才讓——不然屬性鈕跑到右邊那疊上面、看起來像別張的（審查 F1）。
+    //   讓不開就蓋過去：被蓋到的那幾個先藏起來（.under），不露出半截、也不會點到被蓋住的配件（F2）；收回時再出來。
+    const CHIP_IN = 6;
+    function placeChips(p, W) {
+      const pw = els.abpop.offsetWidth, ph = els.abpop.offsetHeight, top = Math.round(p.y - POP_GAP - ph);
+      const clampL = l => Math.max(0, Math.min(W - pw, Math.round(l)));
+      const nat = clampL(p.x + p.s / 2 - pw / 2);
+      const all = nameRowItems(), items = all.filter(it => it.t < top + ph && it.b > top);   // 跟屬性鈕同一個高度的那幾個
+      const hits = l => items.filter(it => it.l < l + pw + 2 && it.r > l - 2);
+      let best = nat;
+      if (items.length) {
+        const lo = Math.max(...items.filter(it => it.w === 1).map(it => it.r + 6), 0), hpn = items.find(it => it.w > 1), hi = hpn ? hpn.l - 6 - pw : W - pw;
+        const inCard = l => l + pw / 2 >= p.x + CHIP_IN && l + pw / 2 <= p.x + p.s - CHIP_IN;
+        const cost = l => hits(l).reduce((s, it) => s + it.w, 0);
+        const cands = [nat, Math.max(nat, lo), Math.min(nat, hi), hi >= lo ? Math.max(lo, Math.min(hi, nat)) : nat].map(clampL).filter((l, j) => j === 0 || inCard(l));
+        cands.sort((a, b) => cost(a) - cost(b) || Math.abs(a - nat) - Math.abs(b - nat));
+        best = cands[0];
+      }
+      els.abpop.style.left = best + 'px';
+      els.abpop.style.top = top + 'px';
+      const under = new Set(hits(best).map(it => it.el));
+      all.forEach(it => it.el.classList.toggle('under', under.has(it.el)));
     }
     function layoutHand(animate) {
       const W = els.hand.clientWidth, H = els.hand.clientHeight;
@@ -607,7 +646,7 @@
       const still = !animate || rm();
       const g = handGeom(n, W, H, open ? openIdx : null), pos = g.pos;
       if (open) { const p = pos[openIdx]; p.y -= LIFT; p.up = true; }   // 疊放順序照舊（右邊那疊在上面）：打開＝右邊那疊滑開把它露出來，像新接龍
-      S.handGeom = { F: g.F, dx: g.dx, w: g.w, y0: g.y0, n, open: open ? openIdx : null };
+      S.handGeom = { F: g.F, dx: g.dx, w: g.w, wl: g.wl, x0: g.x0, y0: g.y0, n, open: open ? openIdx : null };
       // 位置沒變的那張不碰（fit() 每次都會重排一次：不能把正在滑的那張打斷成直接跳到終點）
       //   （比的是上次寫進去的值 t._tf／t._w：style.transform 讀回來的字串瀏覽器會重排空白，不能直接比）
       const changed = tiles.some((t, k) => t._tf !== `translate(${pos[k].x}px,${pos[k].y}px)` || t._w !== pos[k].s);
@@ -619,16 +658,9 @@
         t.style.zIndex = String(p.z);
         t.classList.toggle('up', !!p.up);
       });
-      // 屬性鈕：打開那張正上方（左右夾在手牌區裡；往上蓋到「你」那一列——.dl.hopen 讓你那一塊疊在牌桌上面）。
-      //   蓋到那一列時左右讓開「你」＋發燒配件與右邊的聲望數字（放得下才讓：聲望條可以蓋，數字不蓋）
-      if (open && !els.abpop.hidden) {
-        const p = pos[openIdx], pw = els.abpop.offsetWidth, ph = els.abpop.offsetHeight, top = Math.round(p.y - POP_GAP - ph);
-        let lo = 0, hi = W - pw;
-        const nb = nameRowRoom(top);
-        if (nb && nb[1] - nb[0] >= pw) { lo = Math.max(lo, nb[0]); hi = Math.min(hi, nb[1] - pw); }
-        els.abpop.style.left = Math.max(lo, Math.min(hi, Math.round(p.x + p.s / 2 - pw / 2))) + 'px';
-        els.abpop.style.top = top + 'px';
-      }
+      // 屬性鈕：打開那張正上方（往上蓋到「你」那一列——.dl.hopen 讓你那一塊疊在牌桌上面；讓開或藏起那一列的東西見 placeChips）
+      if (open && !els.abpop.hidden) placeChips(pos[openIdx], W);
+      else unhideNameRow();
       if (still && els.hand.classList.contains('noanim')) { void els.hand.offsetWidth; if (!rm()) els.hand.classList.remove('noanim'); }
       else if (rm()) els.hand.classList.add('noanim');
     }
@@ -703,7 +735,7 @@
       if (!S.sel) return true;
       S.sel = null; S.openTap = null; renderPop(); layoutHand(true); renderTri(); renderSlot('p'); holdSleeve('p', null); emit('selected', null); return true;
     }
-    // 收回疊好：user＝玩家點的（再點打開那張、點手牌外面、Esc）→ 經 gate 'collapse'（教學中一律不收、也不罵）
+    // 收回疊好：user＝玩家點的（再點打開那張、點手牌外面、Esc）→ 經 gate 'collapse'（教學中一律不收；gate 不罵，但教學的遮罩蓋著時手指那兩下根本到不了這裡，是遮罩在罵）
     function closeHand(user) {
       if (!S.sel) return true;
       if (user && (!canAct() || !gate({ kind: 'collapse' }))) return false;
