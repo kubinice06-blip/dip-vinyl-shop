@@ -1035,7 +1035,6 @@
             extra: '<button type="button" class="acex"><span class="' + ax + '">' + esc(C.aceTitle[t]) + '・' + ZH[ax] + ' 7</span><span class="al one">' + esc(c.album) + '</span></button>' });
         }).join('') + '</div><p class="note detail"></p><div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok">就這張</button></div>';
       var s = sheet(html, 'acepick');
-      roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）
       // 焦點放在「就這張」：不要讓第一行名號（殿堂）的焦點框跟選中的那張同時亮（V01 兩個框）
       var okb = qs('[data-a=ok]', s); if (okb) try { okb.focus({ preventScroll: true }); } catch (_) {}
       watchPlaying(qs('.np', s));
@@ -1046,6 +1045,7 @@
         det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>，一場用一次。';
       }
       mark();
+      roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）。說明那行先填好再量（矮螢幕它沒有最小高，空著量＝0；V5-play-7）
       var done = false;
       s.addEventListener('click', function (e) {
         if (done) return;

@@ -180,7 +180,7 @@ small{font-size:inherit;}
 .lb-sheet .hd .sub{flex:none;}
 .lb-sheet .hd .x{min-width:44px;height:32px;font-size:16px;margin-right:-8px;}
 .lb-sheet .note,.lb-sheet .msg{margin:6px 0 0;font-size:12px;color:var(--gray2);line-height:1.6;}
-.lb-sheet .note.detail{min-height:38px;color:#333;}
+.lb-sheet .note.detail{min-height:38px;color:#333;flex-shrink:0;}   /* 面板的直排擠不扁它（V5-play-7：375 挑王牌那行被擠成 4 px） */
 .lb-sheet .note b{color:var(--ink);}
 .lb-sheet .foot{position:-webkit-sticky;position:sticky;bottom:0;margin:auto -12px 0;padding:8px 12px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--line);z-index:2;}
 .lb-sheet .foot.two,.lb-sheet .two{display:flex;gap:8px;}
@@ -401,7 +401,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .stars b.mk{outline:2px solid var(--ink);outline-offset:1px;padding:0 2px;}
 /* 贏了：他丟過的唱片（最多 7 張）＋（菁英／藏家）一件配件 */
 .lb-rgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px;margin-top:8px;flex:none;}
-.lb-rgrid .lb-ct .al{-webkit-line-clamp:1;font-size:11px;}
+.lb-rgrid .lb-ct .al{display:block;-webkit-line-clamp:none;white-space:nowrap;text-overflow:ellipsis;font-size:11px;}   /* 一行、照字切（「The Disinteg…」，不是整個字放不下就只剩「The…」；V5-play-9） */
 .lb-rgrid .lb-ct .ar{font-size:9px;}
 .lb-rgrid .lb-ct .stars{font-size:11px;margin-top:2px;}
 .lb-rgrid .lb-ct .stars b{margin-right:3px;}
