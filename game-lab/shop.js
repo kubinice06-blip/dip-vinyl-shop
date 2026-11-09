@@ -1124,34 +1124,392 @@
     return t0 < t1;
   }
   function inRect(p, r) { return p[0] > r[0] && p[0] < r[0] + r[2] && p[1] > r[1] && p[1] < r[1] + r[3]; }
-  function navObstacles(L) {
-    var out = [], m = L.navMargin || [5, 2];
-    (L.props || []).forEach(function (o) {
-      var sp = O34.PROPS[o.type]; if (!sp || !sp.foot || o.hidden || o.block === false) return;
-      var r = sp.foot(o); out.push([r[0] - m[0], r[1] - m[1], r[2] + 2 * m[0], r[3] + 2 * m[1]]);
+
+  // ---- 多邊形（腳下範圍、避障框）：[[x,y],…]，邊界上的點不算「在裡面」（跟 inRect／segHitsRect 一樣只算內部）
+  function onSeg(p, a, b) {
+    var cr = (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]);
+    if (Math.abs(cr) > 1e-9 * (1 + Math.abs(b[0] - a[0]) + Math.abs(b[1] - a[1]))) return false;
+    return p[0] >= Math.min(a[0], b[0]) - 1e-9 && p[0] <= Math.max(a[0], b[0]) + 1e-9 && p[1] >= Math.min(a[1], b[1]) - 1e-9 && p[1] <= Math.max(a[1], b[1]) + 1e-9;
+  }
+  function inPoly(p, poly) {   // 嚴格在裡面（邊界上＝false）
+    var n = poly.length, inside = false;
+    for (var i = 0, j = n - 1; i < n; j = i++) {
+      var a = poly[j], b = poly[i];
+      if (onSeg(p, a, b)) return false;
+      if ((b[1] > p[1]) !== (a[1] > p[1]) && p[0] < (a[0] - b[0]) * (p[1] - b[1]) / (a[1] - b[1]) + b[0]) inside = !inside;
+    }
+    return inside;
+  }
+  // 線段 a→b 有沒有穿過多邊形內部：找出線段碰到每條邊的參數 t，相鄰兩個 t 的中點只要有一個嚴格在裡面就算穿過
+  // （沿著邊走、只擦過角＝不算，跟 segHitsRect 一樣）
+  function segHitsPoly(a, b, poly) {
+    var dx = b[0] - a[0], dy = b[1] - a[1], ts = [0, 1], n = poly.length;
+    for (var i = 0, j = n - 1; i < n; j = i++) {
+      var p = poly[j], q = poly[i], ex = q[0] - p[0], ey = q[1] - p[1], den = dx * ey - dy * ex;
+      var wx = p[0] - a[0], wy = p[1] - a[1];
+      if (Math.abs(den) < 1e-12) {   // 平行：共線就把這條邊的兩端投影到線段上
+        if (Math.abs(wx * dy - wy * dx) > 1e-9) continue;
+        var dd = dx * dx + dy * dy; if (!dd) continue;
+        [p, q].forEach(function (v) { var t = ((v[0] - a[0]) * dx + (v[1] - a[1]) * dy) / dd; if (t > 0 && t < 1) ts.push(t); });
+        continue;
+      }
+      var t = (wx * ey - wy * ex) / den, u = (wx * dy - wy * dx) / den;
+      if (t > 0 && t < 1 && u >= -1e-12 && u <= 1 + 1e-12) ts.push(t);
+    }
+    ts.sort(function (x, y) { return x - y; });
+    for (var k = 1; k < ts.length; k++) {
+      if (ts[k] - ts[k - 1] < 1e-9) continue;
+      var tm = (ts[k] + ts[k - 1]) / 2;
+      if (inPoly([a[0] + dx * tm, a[1] + dy * tm], poly)) return true;
+    }
+    return false;
+  }
+  function rectPoly(r) { return [[r[0], r[1]], [r[0] + r[2], r[1]], [r[0] + r[2], r[1] + r[3]], [r[0], r[1] + r[3]]]; }
+  // 一組矩形的聯集 → 階梯形多邊形（順時針：上緣左→右、下緣右→左）。按 x 的分界切成直條，每條取蓋到它的矩形的最上與最下；
+  // 沒蓋到的直條（縫）照兩邊補起來（gapFix 記最寬的縫，check-shops 擋 >2 格）。同一直條裡有兩段（中間空著）也當一段（保守）
+  function rectsPoly(rects) {
+    var xs = [];
+    rects.forEach(function (r) { xs.push(r[0], r[0] + r[2]); });
+    xs = xs.sort(function (a, b) { return a - b; }).filter(function (v, i, A) { return i === 0 || v !== A[i - 1]; });
+    var S = [];
+    for (var i = 0; i + 1 < xs.length; i++) {
+      var x0 = xs[i], x1 = xs[i + 1], t = Infinity, b = -Infinity;
+      rects.forEach(function (r) { if (r[0] <= x0 && r[0] + r[2] >= x1) { t = Math.min(t, r[1]); b = Math.max(b, r[1] + r[3]); } });
+      S.push({ x0: x0, x1: x1, t: t, b: b });
+    }
+    var gap = 0;
+    S.forEach(function (s, i) {
+      if (s.t < Infinity) return;
+      var L0 = null, R0 = null, k;
+      for (k = i - 1; k >= 0; k--) if (S[k].t < Infinity) { L0 = S[k]; break; }
+      for (k = i + 1; k < S.length; k++) if (S[k].t < Infinity) { R0 = S[k]; break; }
+      var w = (R0 ? R0.x0 : s.x1) - (L0 ? L0.x1 : s.x0); gap = Math.max(gap, w);
+      s.t = Math.min(L0 ? L0.t : Infinity, R0 ? R0.t : Infinity); s.b = Math.max(L0 ? L0.b : -Infinity, R0 ? R0.b : -Infinity);
     });
-    (L.obstacles || []).forEach(function (r) { out.push(r.slice()); });
+    var pts = [], n = S.length;
+    pts.push([S[0].x0, S[0].t]);
+    for (i = 1; i < n; i++) if (S[i].t !== S[i - 1].t) { pts.push([S[i].x0, S[i - 1].t]); pts.push([S[i].x0, S[i].t]); }
+    pts.push([S[n - 1].x1, S[n - 1].t]); pts.push([S[n - 1].x1, S[n - 1].b]);
+    for (i = n - 1; i > 0; i--) if (S[i].b !== S[i - 1].b) { pts.push([S[i].x0, S[i].b]); pts.push([S[i].x0, S[i - 1].b]); }
+    pts.push([S[0].x0, S[0].b]);
+    pts.gapFix = gap;
+    return pts;
+  }
+  function polyBox(poly) {
+    var x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    poly.forEach(function (p) { x0 = Math.min(x0, p[0]); y0 = Math.min(y0, p[1]); x1 = Math.max(x1, p[0]); y1 = Math.max(y1, p[1]); });
+    return [x0, y0, x1 - x0, y1 - y0];
+  }
+
+  // ---- 腳下範圍（FIXLIST 1，店主：「不要跨過中島唱片區」）
+  // 斜俯視裡人腳站的那一格＝畫面上那一格：腳落在道具「畫出來的範圍」裡，不是站在道具上，就是被道具蓋住腳（看起來走在箱子裡）。
+  // 所以站立道具的腳下範圍＝它實際畫出來的那一塊（用畫筆量，不是猜的）：
+  //   左右＝畫出來的最左到最右；上緣＝最上面一列「連續 ≥3 格不透明」的那列（1–2 格寬的細柱：箱子的鉻管、燈桿、耳機線不算）；
+  //   下緣＝地板前緣 o.y 與畫出來的最下緣取大的（地上半透明的影子不算）；再跟道具自己的 foot（地面那塊）取聯集。
+  //   L.footprints.behind＝{道具 id: [xa, xb]}（櫃檯、唱盤台）：老闆站在它後面（spots.counter、ref；被它擋住腳是故意的）——
+  //     x 在 xa–xb 之間、地面那塊後面那一條（畫出來的上緣到 o.y−d）留給老闆站（口袋）；其餘照畫出來的整塊。
+  //     櫃檯的口袋＝整個寬（老闆在櫃檯後面走動）；唱盤台的口袋＝轉盤那一段（裁判站在轉盤正後面），兩側照擋，別人不會從唱盤台上走過去。
+  //   L.footprints.groups（中島）：成員合成一塊多邊形（rectsPoly，欄間的縫補起來）。避障（navObstacles，加 navMargin）、
+  //   check-shops 的「路線不穿家具」、shop.test、dev/stage-harness 的路線圖都用這一份。
+  var FOOT_PAD = 24;
+  function maskPainter(W, H) {
+    var MW = W + 2 * FOOT_PAD, MH = H + 2 * FOOT_PAD, M = new Uint8Array(MW * MH), clip = null;
+    var ctx = {
+      globalAlpha: 1, fillStyle: '#000', strokeStyle: '#000', lineWidth: 1, font: '7px sans-serif', textAlign: 'center', textBaseline: 'middle', imageSmoothingEnabled: false, imageSmoothingQuality: 'low',
+      fillRect: function (x, y, w, h) {
+        if (!(w > 0 && h > 0) || ctx.globalAlpha < 0.99 || /^rgba\(/.test(String(ctx.fillStyle))) return;   // 半透明＝影子、光、反光，不算道具本體
+        var x0 = x, y0 = y, x1 = x + w, y1 = y + h;
+        if (clip) { x0 = Math.max(x0, clip[0]); y0 = Math.max(y0, clip[1]); x1 = Math.min(x1, clip[0] + clip[2]); y1 = Math.min(y1, clip[1] + clip[3]); }
+        x0 = Math.max(0, Math.floor(x0)); y0 = Math.max(0, Math.floor(y0)); x1 = Math.min(MW, Math.ceil(x1)); y1 = Math.min(MH, Math.ceil(y1));
+        for (var yy = y0; yy < y1; yy++) for (var xx = x0; xx < x1; xx++) M[yy * MW + xx] = 1;
+      },
+      fillText: function (s, x, y) {   // 字：每字一個字級寬的方塊（量外框用；中文標籤都在自己的底框裡）
+        var m = /([\d.]+)px/.exec(ctx.font || ''), sz = m ? +m[1] : 7, w = String(s).length * sz;
+        var x0 = ctx.textAlign === 'left' ? x : ctx.textAlign === 'right' ? x - w : x - w / 2;
+        ctx.fillRect(x0, y - sz / 2, w, sz);
+      },
+      measureText: function (t) { var m = /([\d.]+)px/.exec(ctx.font || ''); return { width: String(t).length * (m ? +m[1] : 7) }; },
+      drawImage: function () {}, save: function () {}, restore: function () { clip = null; }, beginPath: function () {}, rect: function (x, y, w, h) { clip = [x, y, w, h]; }, clip: function () {},
+      fill: function () {}, stroke: function () {}, moveTo: function () {}, lineTo: function () {}, arc: function () {}, closePath: function () {}, setTransform: function () {}, translate: function () {}, scale: function () {}
+    };
+    return { ctx: ctx, M: M, MW: MW, MH: MH, T: { ctx: ctx, k: 1, cx: -FOOT_PAD, cy: -FOOT_PAD, meas: null, cover: function () { return null; }, used: {}, pool: [] } };
+  }
+  // 道具畫出來的範圍（不透明、不含影子）：{ x0, x1, top（最上面一列連續 ≥3 格）, topAny（最上面一格）, bottom }｜null
+  function drawnExtent(o, PR, S) {
+    var sp = PR[o.type]; if (!sp || !sp.draw) return null;
+    var W = (S.L && S.L.size && S.L.size[0]) || 320, H = (S.L && S.L.size && S.L.size[1]) || 320, mp = maskPainter(W, H);
+    try { sp.draw(OPainter(mp.T), o, S); } catch (e) { return null; }
+    var M = mp.M, MW = mp.MW, MH = mp.MH, x0 = Infinity, x1 = -Infinity, top = Infinity, topAny = Infinity, bottom = -Infinity;
+    for (var y = 0; y < MH; y++) {
+      var run = 0, wide = false, any = false;
+      for (var x = 0; x < MW; x++) {
+        if (M[y * MW + x]) { any = true; run++; if (run >= 3) wide = true; if (x < x0) x0 = x; if (x + 1 > x1) x1 = x + 1; } else run = 0;
+      }
+      if (any) { if (y < topAny) topAny = y; bottom = y + 1; }
+      if (wide && y < top) top = y;
+    }
+    if (!(x1 > x0) || top === Infinity) return null;
+    return { x0: x0 - FOOT_PAD, x1: x1 - FOOT_PAD, top: top - FOOT_PAD, topAny: topAny - FOOT_PAD, bottom: bottom - FOOT_PAD };
+  }
+  function sceneFor(L) { return { L: L, layout: L, W: L.size && L.size[0], H: L.size && L.size[1], state: {}, t: 0, rt: 0, frame: 0, card: function () { return null; } }; }
+  function standing(o, PR) { var sp = PR[o.type], ly = propLayerO(o, PR); return !!sp && !o.hidden && ly !== 'wall' && ly !== 'bg' && ly !== 'fx'; }
+  // 一件站立道具的腳下範圍：矩形陣列 [[x, y, w, h]…]（見上；沒有口袋＝一個矩形）；量不到就退回 foot；兩個都沒有回 null。
+  // behind＝[xa, xb]：口袋（見上）——回地面那塊＋口袋左右兩段畫出來的部分
+  function propFoot(o, PR, S, behind) {
+    PR = PR || O34.PROPS; var sp = PR[o.type]; if (!sp) return null;
+    var f = sp.foot ? sp.foot(o) : null, d = drawnExtent(o, PR, S || {});
+    if (!d) return f ? [f.slice()] : null;
+    var fy = o.y != null ? o.y : d.bottom, x0 = d.x0, x1 = d.x1, y0 = d.top, y1 = Math.max(fy, d.bottom);
+    if (f) { x0 = Math.min(x0, f[0]); x1 = Math.max(x1, f[0] + f[2]); y0 = Math.min(y0, f[1]); y1 = Math.max(y1, f[1] + f[3]); }
+    if (!behind) return [[x0, y0, x1 - x0, y1 - y0]];
+    var fb = f ? f[1] : fy - (o.d || 0), xa = Math.max(x0, behind[0]), xb = Math.min(x1, behind[1]), out = [[x0, fb, x1 - x0, y1 - fb]];
+    if (xa > x0) out.push([x0, y0, xa - x0, fb - y0]);
+    if (xb < x1) out.push([xb, y0, x1 - xb, fb - y0]);
     return out;
   }
+  // 口袋那一條（不加邊）：[x, y, w, h]｜null（給 check-shops：只有站在口袋裡的人的路線可以進去）
+  function pocketRect(o, PR, S, behind) {
+    PR = PR || O34.PROPS; var sp = PR[o.type], d = sp && drawnExtent(o, PR, S || {}), f = sp && sp.foot ? sp.foot(o) : null; if (!d || !behind) return null;
+    var fb = f ? f[1] : o.y - (o.d || 0), xa = Math.max(d.x0, behind[0]), xb = Math.min(d.x1, behind[1]);
+    return xb > xa && fb > d.top ? [xa, d.top, xb - xa, fb - d.top] : null;
+  }
+  // 整間店的腳下範圍：[{ id, props:[道具 id…], rects:[[x,y,w,h]…], poly:[[x,y]…], box, behind?:[xa,xb], pocket?:[x,y,w,h] }]（站立、沒 hidden、block 不是 false 的道具；
+  // 群組＝一塊多邊形）。PR 預設 O34.PROPS；margin＝[mx,my]（或 function(那一塊的 id) → [mx,my]）時每個成員矩形先往外加邊再合（navObstacles 用）
+  function footprints(L, PR, margin) {
+    PR = PR || O34.PROPS; var S = sceneFor(L), F = L.footprints || {}, groups = F.groups || {}, bh = F.behind || {}, gOf = {}, out = [], byG = {};
+    Object.keys(groups).forEach(function (g) { (groups[g] || []).forEach(function (id) { gOf[id] = g; }); });
+    (L.props || []).forEach(function (o, i) {
+      if (!standing(o, PR) || o.block === false) return;
+      var id = o.id || (o.type + '#' + i), b = Array.isArray(bh[id]) ? bh[id] : null, rs = propFoot(o, PR, S, b); if (!rs) return;
+      var g = gOf[id], m = typeof margin === 'function' ? margin(g || id) : margin, mx = m ? m[0] : 0, my = m ? m[1] : 0;
+      if (mx || my) rs = rs.map(function (r) { return [r[0] - mx, r[1] - my, r[2] + 2 * mx, r[3] + 2 * my]; });
+      if (g) { if (!byG[g]) { byG[g] = { id: g, props: [], rects: [] }; out.push(byG[g]); } byG[g].props.push(id); rs.forEach(function (r) { byG[g].rects.push(r); }); return; }
+      var e = { id: id, props: [id], rects: rs };
+      if (b) { e.behind = b.slice(); e.pocket = pocketRect(o, PR, S, b); }
+      out.push(e);
+    });
+    out.forEach(function (f) { f.poly = f.rects.length === 1 ? rectPoly(f.rects[0]) : rectsPoly(f.rects); f.gap = f.poly.gapFix || 0; f.box = polyBox(f.poly); });
+    return out;
+  }
+  // 避障框：腳下範圍加 navMargin（每件道具的矩形各自加邊再合；L.footprints.margin 可以逐塊指定）＋ layout.obstacles（直接給的矩形）
+  function navObstacles(L) {
+    var m = L.navMargin || [5, 2], mm = (L.footprints && L.footprints.margin) || {};
+    var out = footprints(L, O34.PROPS, function (id) { return mm[id] || m; }).map(function (f) { return { id: f.id, poly: f.poly, box: f.box }; });
+    (L.obstacles || []).forEach(function (r, i) { out.push({ id: 'obstacles[' + i + ']', poly: rectPoly(r), box: r.slice() }); });
+    return out;
+  }
+  // 障礙可以是 {poly, box} 或舊式矩形 [x,y,w,h]
+  function inObs(p, o) {
+    if (Array.isArray(o) && typeof o[0] === 'number') return inRect(p, o);
+    var b = o.box; if (b && !(p[0] > b[0] && p[0] < b[0] + b[2] && p[1] > b[1] && p[1] < b[1] + b[3])) return false;
+    return inPoly(p, o.poly || o);
+  }
+  function segHitsObs(p, q, o) {
+    if (Array.isArray(o) && typeof o[0] === 'number') return segHitsRect(p, q, o);
+    var b = o.box; if (b && !segHitsRect(p, q, [b[0] - 1e-6, b[1] - 1e-6, b[2] + 2e-6, b[3] + 2e-6]) && !inRect(p, b) && !inRect(q, b)) return false;
+    return segHitsPoly(p, q, o.poly || o);
+  }
+  // 線段 p→q 不穿過任何障礙（端點本身在框裡的那個框跳過：spot 站在框裡由 check-shops 擋）
+  function navClear(obs, p, q) { for (var i = 0; i < obs.length; i++) { var r = obs[i]; if (inObs(p, r) || inObs(q, r)) continue; if (segHitsObs(p, q, r)) return false; } return true; }
+  // SPEC-v4 §2.4.5：走不到回 null（不再回 [b]＝直線穿家具）；自己絕不丟例外。呼叫端一定要處理 null（routed()、api.route、stage.duelIn、check-shops、shop.test）
   function navRoute(L, a, b, obs) {
-    obs = obs || navObstacles(L);
-    function clear(p, q) { for (var i = 0; i < obs.length; i++) { var r = obs[i]; if (inRect(p, r) || inRect(q, r)) continue; if (segHitsRect(p, q, r)) return false; } return true; }
-    if (clear(a, b)) return [b];
-    var N = [a].concat((L.nav || []).map(function (p) { return [p[0], p[1]]; }), [b]), n = N.length, dist = [], prev = [], done = [];
-    for (var i = 0; i < n; i++) { dist.push(Infinity); prev.push(-1); done.push(false); }
-    dist[0] = 0;
-    for (;;) {
-      var u = -1; for (var j = 0; j < n; j++) if (!done[j] && dist[j] < Infinity && (u < 0 || dist[j] < dist[u])) u = j;
-      if (u < 0 || u === n - 1) break; done[u] = true;
-      for (var v = 0; v < n; v++) {
-        if (done[v] || v === u) continue;
-        var d = Math.hypot(N[v][0] - N[u][0], N[v][1] - N[u][1]);
-        if (dist[u] + d < dist[v] && clear(N[u], N[v])) { dist[v] = dist[u] + d; prev[v] = u; }
+    try {
+      obs = obs || navObstacles(L);
+      if (navClear(obs, a, b)) return [b];
+      var N = [a].concat((L.nav || []).map(function (p) { return [p[0], p[1]]; }), [b]), n = N.length, dist = [], prev = [], done = [];
+      for (var i = 0; i < n; i++) { dist.push(Infinity); prev.push(-1); done.push(false); }
+      dist[0] = 0;
+      for (;;) {
+        var u = -1; for (var j = 0; j < n; j++) if (!done[j] && dist[j] < Infinity && (u < 0 || dist[j] < dist[u])) u = j;
+        if (u < 0 || u === n - 1) break; done[u] = true;
+        for (var v = 0; v < n; v++) {
+          if (done[v] || v === u) continue;
+          var d = Math.hypot(N[v][0] - N[u][0], N[v][1] - N[u][1]);
+          if (dist[u] + d < dist[v] && navClear(obs, N[u], N[v])) { dist[v] = dist[u] + d; prev[v] = u; }
+        }
       }
+      if (prev[n - 1] < 0) return null;
+      var path = [], c = n - 1; while (c > 0) { path.unshift(N[c]); c = prev[c]; }
+      return path;
+    } catch (e) { return null; }
+  }
+  // 執行期退路（非嚴格模式，§2.4.5）：先走到「從起點直線走得到、離終點最近」的 nav 點，再 navRoute(那個點, 終點)；
+  // 還是走不到就直線走過去（人仍在走、看得到）。回 { pts, how:'detour'|'straight' }，絕不回 null、絕不瞬移
+  function navFallback(L, a, b, obs) {
+    obs = obs || navObstacles(L);
+    var best = null, bd = Infinity;
+    (L.nav || []).forEach(function (p) {
+      if ((p[0] === a[0] && p[1] === a[1]) || !navClear(obs, a, p)) return;
+      var d = Math.hypot(p[0] - b[0], p[1] - b[1]); if (d < bd) { bd = d; best = [p[0], p[1]]; }
+    });
+    if (best) { var r = navRoute(L, best, b, obs); if (r) return { pts: [best].concat(r), how: 'detour' }; }
+    return { pts: [b], how: 'straight' };
+  }
+
+  // ===================================================================== 命中（SPEC-v4 §2.4：看得到的形狀＋深度＋沒命中才容錯）
+  // hot = { id, action, label, rect, shape:[[x,y,w,h],…], depth, sub?, parent?, pri?, enabled, occluder? }
+  //   主熱點（道具的 hot、箱子的 bin）、子熱點（道具 hots(o,S)：牆上封面、矮櫃封面、櫃檯 now／cat；深度＝父道具＋0.01）、
+  //   跟著人走（layout.hotspots 的 follow：深度＝那個人的 y＋0.5；沒 follow 的＝牆層 −1）、遮擋物（沒有主熱點的站立道具：植物、凳子、矮櫃、高櫃、唱盤台）。
+  //   深度跟畫圖排序同一把尺（render：站立層按 o.y、人按 y）；wall＝−1、bg＝−2。
+  function propLayerO(o, PR) { return o.layer || (PR[o.type] && PR[o.type].layer) || 'stand'; }
+  function depthOf(o, PR) { var ly = propLayerO(o, PR); return ly === 'bg' ? -2 : ly === 'wall' ? -1 : (o.y != null ? o.y : 0); }
+  // 道具看得到的外框：有 box 用 box；沒有就量它畫出來的範圍（OPainter 量外框模式，純計算）；量不到才退回 [x, y−h, w, h]
+  function propVisBox(o, PR, S) {
+    var sp = PR[o.type];
+    if (sp && sp.box) return sp.box(o).map(Math.round);
+    if (sp && sp.draw) {
+      try {
+        var T = { ctx: null, k: 1, cx: 0, cy: 0, meas: [1e9, 1e9, -1e9, -1e9], cover: null, used: null, pool: [] };
+        sp.draw(OPainter(T), o, S); var m = T.meas;
+        if (m[2] > m[0] && m[3] > m[1]) { var x0 = Math.floor(m[0]), y0 = Math.floor(m[1]); return [x0, y0, Math.ceil(m[2]) - x0, Math.ceil(m[3]) - y0]; }
+      } catch (_) {}
     }
-    if (prev[n - 1] < 0) return [b];
-    var path = [], c = n - 1; while (c > 0) { path.unshift(N[c]); c = prev[c]; }
-    return path;
+    return [o.x || 0, (o.y || 0) - (o.h || 8), o.w || 8, o.h || 8];
+  }
+  function shapeBox(shape) {
+    var x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+    shape.forEach(function (r) { x0 = Math.min(x0, r[0]); y0 = Math.min(y0, r[1]); x1 = Math.max(x1, r[0] + r[2]); y1 = Math.max(y1, r[1] + r[3]); });
+    return [x0, y0, x1 - x0, y1 - y0];
+  }
+  function inShape(h, x, y) { var s = h.shape; for (var i = 0; i < s.length; i++) { var r = s[i]; if (x >= r[0] && y >= r[1] && x < r[0] + r[2] && y < r[1] + r[3]) return true; } return false; }
+  function shapeArea(h) { var a = 0; h.shape.forEach(function (r) { a += r[2] * r[3]; }); return a; }
+  // 跟著人走的熱點：rect／shape／depth 跟著那個人（a＝{x,y,hidden,outside,look}；沒有人＝gone）
+  function followHot(h, a, KS) {
+    var rel = h.rel || [-5 * (KS || 3), -15 * (KS || 3), 10 * (KS || 3), 10 * (KS || 3)];
+    h.gone = !a || !!a.hidden || !!a.outside || a.look === false;
+    if (h.gone) return h;
+    h.rect = [Math.round(a.x) + rel[0], Math.round(a.y) + rel[1], rel[2], rel[3]]; h.shape = [h.rect.slice()];
+    h.depth = a.y + 0.5; h.cx = h.rect[0] + rel[2] / 2; h.cy = h.rect[1] + rel[3] / 2;
+    return h;
+  }
+  // 純函式（給 shop.js 自己、Node 測試、檢查工具）：L＝layout、PROPS＝O34.PROPS（或任何 defO 表）、S＝道具用的場景物件（card(id)、state、actor(id)）
+  function buildHotList(L, PROPS, S) {
+    PROPS = PROPS || O34.PROPS;
+    S = S || {};
+    if (!S.L) S = Object.assign({ L: L, layout: L, W: L.size && L.size[0], H: L.size && L.size[1], state: {}, t: 0, rt: 0, frame: 0, card: function () { return null; } }, S);
+    var KS = L.spriteScale || 3, out = [];
+    (L.props || []).forEach(function (o, idx) {
+      var sp = PROPS[o.type]; if (!sp || o.hidden) return;
+      var ly = propLayerO(o, PROPS); if (ly === 'fx') return;
+      var depth = depthOf(o, PROPS), mains = [];
+      if (o.hot) {
+        var hr = (o.hot.rect || propVisBox(o, PROPS, S)).map(Math.round);
+        mains.push({ id: o.id || (o.type + idx), rect: hr, shape: [hr.slice()], depth: depth, label: o.hot.label, action: o.hot.action, prop: o, order: idx, pri: o.hot.pri || 0, noSparkle: !!o.hot.noSparkle, labelAt: o.hot.labelAt });
+      }
+      if (o.bin && o.bin.key) {
+        var bb = propVisBox(o, PROPS, S);
+        mains.push({ id: 'bin:' + o.bin.key, rect: bb, shape: [bb.slice()], depth: depth, label: o.bin.label || o.bin.key, action: 'crate:' + o.bin.key, prop: o, order: idx, pri: 0, bin: o.bin, stand: o.bin.stand || null });
+      }
+      mains.forEach(function (h) { out.push(h); });
+      var parent = mains.length ? mains[mains.length - 1].id : null;
+      if (sp.hots) (sp.hots(o, S) || []).forEach(function (h) {
+        h.prop = o; h.order = idx; h.rect = h.rect.map(Math.round); h.shape = [h.rect.slice()];
+        h.sub = !h.main; h.depth = depth + (h.sub ? 0.01 : 0); if (h.sub && parent) h.parent = parent;
+        out.push(h);
+      });
+      if (!mains.length && ly !== 'wall' && ly !== 'bg') {
+        var ob = propVisBox(o, PROPS, S);
+        out.push({ id: '~' + (o.id || (o.type + idx)), occluder: true, rect: ob, shape: [ob.slice()], depth: depth, prop: o, order: idx, enabled: false });
+      }
+    });
+    (L.hotspots || []).forEach(function (h0, i) {
+      var c = Object.assign({ order: 1000 + i }, h0); c.rect = (h0.rect || [0, 0, 1, 1]).slice(); c.shape = [c.rect.slice()]; c.depth = -1;
+      if (c.follow) {
+        var a = typeof S.actor === 'function' ? S.actor(c.follow) : null;
+        if (!a) {   // 純函式用：layout.actors 一開始站的位置
+          var la = (L.actors || []).filter(function (x) { return x.id === c.follow; })[0], sp0 = la && L.spots && L.spots[la.at];
+          a = sp0 ? { x: sp0[0], y: sp0[1], outside: !!sp0[2] } : null;
+        }
+        followHot(c, a, KS);
+      }
+      out.push(c);
+    });
+    out.forEach(function (h, i) { h.idx = i; if (h.enabled == null) h.enabled = !h.occluder; h.cx = h.rect[0] + h.rect[2] / 2; h.cy = h.rect[1] + h.rect[3] / 2; });
+    return out;
+  }
+  function hotRank(h) { return h.occluder ? 0 : h.sub ? 2 : 1; }
+  // a 比 b 更前面（被點到）？深度大 → 子熱點 > 主熱點 > 遮擋物 → pri 大 → 面積小 → 順序後
+  function hotBefore(a, b) {
+    if (a.depth !== b.depth) return a.depth > b.depth;
+    var ra = hotRank(a), rb = hotRank(b); if (ra !== rb) return ra > rb;
+    if ((a.pri || 0) !== (b.pri || 0)) return (a.pri || 0) > (b.pri || 0);
+    var aa = shapeArea(a), ab = shapeArea(b); if (aa !== ab) return aa < ab;
+    if ((a.order || 0) !== (b.order || 0)) return (a.order || 0) > (b.order || 0);
+    return (a.idx || 0) > (b.idx || 0);
+  }
+  // 這一格最上面的是誰（含遮擋物、含停用的；gone 的不算）
+  function hitTop(hots, x, y) {
+    var best = null;
+    for (var i = 0; i < hots.length; i++) { var h = hots[i]; if (h.gone || !h.shape || !inShape(h, x, y)) continue; if (!best || hotBefore(h, best)) best = h; }
+    return best;
+  }
+  function rectDist2(r, x, y) { var dx = Math.max(r[0] - x, 0, x - (r[0] + r[2] - 1)), dy = Math.max(r[1] - y, 0, y - (r[1] + r[3] - 1)); return dx * dx + dy * dy; }
+  // SPEC-v4 §2.4.2：o.r＝容錯半徑（美術格）；o.enabled(h)（預設看 h.enabled）；o.raw＝回最上面那個（遮擋物、停用的也回，給工具算可見區）
+  function hitPick(hots, x, y, o) {
+    o = o || {};
+    var en = typeof o.enabled === 'function' ? o.enabled : function (h) { return h.enabled !== false && !h.occluder; };
+    var top = hitTop(hots, x, y);
+    if (top) {
+      if (o.raw) return top;
+      if (top.occluder || !en(top)) return null;   // 被擋住／停用：不往後穿
+      if (!top.sub) {   // 主熱點、而它的子熱點也包含這點 → 子熱點
+        for (var i = 0; i < hots.length; i++) { var s = hots[i]; if (s.sub && s.parent === top.id && !s.gone && en(s) && inShape(s, x, y)) return s; }
+      }
+      return top;
+    }
+    if (o.raw) return null;
+    var r = o.r != null ? o.r : 6; if (!(r > 0)) return null;
+    var best = null, bd = r * r;
+    hots.forEach(function (h) {
+      if (h.gone || h.occluder || !h.shape || !en(h)) return;
+      var d = Infinity; h.shape.forEach(function (q) { d = Math.min(d, rectDist2(q, x, y)); });
+      if (d <= bd && (!best || d < bd || hotBefore(h, best))) { bd = d; best = h; }
+    });
+    return best;
+  }
+  // 可見區（不在任何更前面的形狀裡）：在 clip=[x,y,w,h] 內，最上面就是 h 的格子。回 { box:[x0,y0,w,h], m:Uint8Array, n }
+  // withSubs：子熱點蓋住的那幾格也算（描框用：後牆矮櫃的框圍住整個櫃子，不在每張封面周圍挖洞）
+  function hotRegion(hots, h, clip, withSubs) {
+    if (!h || h.gone || !h.shape) return null;
+    var b = shapeBox(h.shape), x0 = Math.max(b[0], clip ? clip[0] : -1e9), y0 = Math.max(b[1], clip ? clip[1] : -1e9);
+    var x1 = Math.min(b[0] + b[2], clip ? clip[0] + clip[2] : 1e9), y1 = Math.min(b[1] + b[3], clip ? clip[1] + clip[3] : 1e9);
+    if (x1 <= x0 || y1 <= y0) return null;
+    var w = x1 - x0, hh = y1 - y0, m = new Uint8Array(w * hh), n = 0;
+    var cand = hots.filter(function (q) { return q === h || (!q.gone && q.shape && hotBefore(q, h) && q.shape.some(function (r) { return r[0] < x1 && r[0] + r[2] > x0 && r[1] < y1 && r[1] + r[3] > y0; })); });
+    for (var y = y0; y < y1; y++) for (var x = x0; x < x1; x++) { var t = hitTop(cand, x, y); if (t === h || (withSubs && t && t.sub && t.parent === h.id && inShape(h, x, y))) { m[(y - y0) * w + (x - x0)] = 1; n++; } }
+    return n ? { box: [x0, y0, w, hh], m: m, n: n } : null;
+  }
+  // 可見區裡「最裡面」的一格（離邊界最遠；並列取離重心最近）：真點一定點得到、四捨五入也不會滑出去
+  function regionCenter(R) {
+    if (!R) return null;
+    var w = R.box[2], hh = R.box[3], m = R.m, D = new Int32Array(w * hh), BIG = 1e6, i, x, y;
+    for (y = 0; y < hh; y++) for (x = 0; x < w; x++) {
+      i = y * w + x; if (!m[i]) { D[i] = 0; continue; }
+      var v = BIG; v = Math.min(v, x > 0 ? D[i - 1] + 1 : 1, y > 0 ? D[i - w] + 1 : 1, (x > 0 && y > 0) ? D[i - w - 1] + 1 : 1, (x < w - 1 && y > 0) ? D[i - w + 1] + 1 : 1);
+      D[i] = v;
+    }
+    for (y = hh - 1; y >= 0; y--) for (x = w - 1; x >= 0; x--) {
+      i = y * w + x; if (!m[i]) continue;
+      D[i] = Math.min(D[i], x < w - 1 ? D[i + 1] + 1 : 1, y < hh - 1 ? D[i + w] + 1 : 1, (x < w - 1 && y < hh - 1) ? D[i + w + 1] + 1 : 1, (x > 0 && y < hh - 1) ? D[i + w - 1] + 1 : 1);
+    }
+    var sx = 0, sy = 0; for (i = 0; i < m.length; i++) if (m[i]) { sx += i % w; sy += (i / w) | 0; }
+    var gx = sx / R.n, gy = sy / R.n, best = -1, bv = -1, bg = Infinity;
+    for (i = 0; i < m.length; i++) {
+      if (!m[i]) continue; var d = D[i], g = Math.hypot(i % w - gx, ((i / w) | 0) - gy);
+      if (d > bv || (d === bv && g < bg)) { bv = d; bg = g; best = i; }
+    }
+    return { x: R.box[0] + best % w, y: R.box[1] + ((best / w) | 0), depth: bv };
+  }
+  // 可見區外圍一圈（描框用：畫在可見區外面那一格，被前面的箱子擋住的部分不描）
+  function regionOutline(R) {
+    if (!R) return [];
+    var w = R.box[2], hh = R.box[3], m = R.m, out = [];
+    function on(x, y) { return x >= 0 && y >= 0 && x < w && y < hh && m[y * w + x] === 1; }
+    for (var y = -1; y <= hh; y++) for (var x = -1; x <= w; x++) {
+      if (on(x, y)) continue;
+      if (on(x - 1, y) || on(x + 1, y) || on(x, y - 1) || on(x, y + 1) || on(x - 1, y - 1) || on(x + 1, y - 1) || on(x - 1, y + 1) || on(x + 1, y + 1)) out.push([R.box[0] + x, R.box[1] + y]);
+    }
+    return out;
   }
 
   function mountOblique(host, layout, opts) {
@@ -1165,7 +1523,7 @@
     host.classList.add('ds-host'); host.innerHTML = ''; host.appendChild(view); host.appendChild(overlay);
     var state = { door: (L.ambience && L.ambience.door) || 'closed', playing: !(L.ambience && L.ambience.playing === false), t: 0, rt: 0, frame: 0, spot: null, flash: null, reveal: 0, hover: null, hi: [], poke: {}, decks: {}, fx: null, dim: 1 };
     var actors = {}, hots = [], destroyed = false, allowFn = null, sparkleOn = opts.sparkle !== false;
-    var k = 4, scale = 4 / 3, vy = 0, vh = H, hostW = 0;
+    var k = 4, scale = 4 / 3, vy = 0, vh = H, hostW = 0, stripOn = false;   // stripOn：舞台說現在是唱盤區橫條（strip 高螢幕會往上長，不能只看 vh）
     var cam = { y: 0, h: H, dev: null };
     var c0 = (L.cameras || {}).full; if (c0) { cam.y = c0.y; cam.h = c0.h; }
     var cardOf = function (id) { return (opts.cards && opts.cards[id]) || (opts.extraCards && opts.extraCards[id]) || null; };
@@ -1195,7 +1553,7 @@
       if (!cache) return;
       var any = false;
       cache.entries.forEach(function (en) { for (var id in e.ids) if (en.used[id]) { en.dirty = true; any = true; } });
-      if (any && !coverQ) coverQ = setTimeout(function () { coverQ = 0; if (!destroyed) { refreshDirty(); render(); } }, 60);
+      if (any && !coverQ) coverQ = setTimeout(function () { coverQ = 0; if (!destroyed) { refreshDirty(); render(); } }, 100);   // 封面陸續到：合併成每 100 ms 重烘一次（SPEC-v4 §6.4）
     }
 
     // ---------------- 畫筆目標與場景物件 S（給道具用）
@@ -1394,36 +1752,23 @@
       } else if (a.emote) a.emote = null;
     }
 
-    // ---------------- 熱點（矩形；道具的 hots(o,S)、道具上的 hot、layout.hotspots）
+    // ---------------- 熱點（SPEC-v4 §2.4：buildHotList＝看得到的形狀＋深度；hots＝可以點的，hitList＝再加遮擋物，給 hitPick）
+    var hitList = [];
     function propBoxO(o) { var sp = OP[o.type]; return (sp && sp.box) ? sp.box(o) : [o.x || 0, (o.y || 0) - (o.h || 8), o.w || 8, o.h || 8]; }
+    function actorView(id) { var a = actors[id]; return a ? { x: a.x, y: a.y, hidden: a.hidden, outside: a.outside, look: hasLook(a) } : null; }
     function buildHots() {
-      hots = [];
-      (L.props || []).forEach(function (o, idx) {
-        var sp = OP[o.type]; if (!sp || o.hidden) return;
-        if (sp.hots) (sp.hots(o, S) || []).forEach(function (h) { h.prop = o; h.order = idx; h.rect = h.rect.map(Math.round); hots.push(h); });
-        if (o.hot) hots.push({ id: o.id || (o.type + idx), rect: (o.hot.rect || propBoxO(o)).map(Math.round), label: o.hot.label, action: o.hot.action, prop: o, order: idx, pri: o.hot.pri || 0, noSparkle: !!o.hot.noSparkle, labelAt: o.hot.labelAt });
-      });
-      (L.hotspots || []).forEach(function (h, i) { var c = Object.assign({ order: 1000 + i }, h); c.rect = (h.rect || [0, 0, 1, 1]).slice(); hots.push(c); });
-      hots.forEach(function (h) { h.cx = h.rect[0] + h.rect[2] / 2; h.cy = h.rect[1] + h.rect[3] / 2; });
+      hitList = buildHotList(L, OP, Object.assign(Object.create(S), { actor: actorView }));
+      hots = hitList.filter(function (h) { return !h.occluder; });
     }
     function syncFollow() {
-      hots.forEach(function (h) {
-        if (!h.follow) return;
-        var a = actors[h.follow], rel = h.rel || [-5 * KS, -15 * KS, 10 * KS, 10 * KS];
-        h.gone = !a || a.hidden || a.outside || !hasLook(a);
-        if (h.gone) return;
-        h.rect = [Math.round(a.x) + rel[0], Math.round(a.y) + rel[1], rel[2], rel[3]]; h.cx = h.rect[0] + rel[2] / 2; h.cy = h.rect[1] + rel[3] / 2;
-      });
+      hots.forEach(function (h) { if (h.follow) followHot(h, actorView(h.follow), KS); });
     }
-    function enabled(h) { return !h.disabled && !h.gone && (!allowFn || allowFn(h)); }
-    function hitTest(x, y) {
-      syncFollow();
-      var cand = hots.filter(enabled), inside = cand.filter(function (h) { var r = h.rect; return x >= r[0] && y >= r[1] && x < r[0] + r[2] && y < r[1] + r[3]; });
-      if (inside.length) { inside.sort(function (a, b) { return (b.pri || 0) - (a.pri || 0) || (a.rect[2] * a.rect[3]) - (b.rect[2] * b.rect[3]) || b.order - a.order; }); return inside[0]; }
-      var best = null, bd = (L.fat || 6) * (L.fat || 6);
-      cand.forEach(function (h) { var r = h.rect, dx = Math.max(r[0] - x, 0, x - (r[0] + r[2] - 1)), dy = Math.max(r[1] - y, 0, y - (r[1] + r[3] - 1)), d = dx * dx + dy * dy; if (d < bd) { bd = d; best = h; } });
-      return best;
-    }
+    function enabled(h) { return !h.occluder && !h.disabled && !h.gone && (!allowFn || allowFn(h)); }
+    function syncHots() { syncFollow(); hitList.forEach(function (h) { h.enabled = enabled(h); }); }
+    function slopR() { return Math.max(L.fat || 6, Math.ceil(22 / (scale || 1))); }
+    function hitTest(x, y) { syncHots(); return hitPick(hitList, x, y, { r: slopR() }); }
+    // 這個熱點在目前鏡頭裡看得到的那一塊（不在任何更前面的形狀裡）
+    function visRegion(h) { syncFollow(); return hotRegion(hitList, h, [0, vy, W, vh]); }
     function hotById(id) { for (var i = 0; i < hots.length; i++) if (hots[i].id === id) return hots[i]; return null; }
 
     // ---------------- 快取：地板＋後牆（bg）、每個靜態道具一張點陣圖（自己的外框）、打光兩張
@@ -1534,6 +1879,13 @@
       for (var i = -1; i <= r[2]; i++) { var c = ((i + ph) & 2) ? c2 : c1; P.p(r[0] + i, r[1] - 1, c); P.p(r[0] + i, r[1] + r[3], c); }
       for (var j = 0; j < r[3]; j++) { var d = ((j + ph) & 2) ? c2 : c1; P.p(r[0] - 1, r[1] + j, d); P.p(r[0] + r[2], r[1] + j, d); }
     }
+    // 熱點看得到的那一塊的外框（快取在 h._ol：鏡頭、跟著人走的位置變了才重算）
+    function outlineVis(h, c1, c2, ph) {
+      var key = vy + ',' + vh + ',' + h.rect.join(',');
+      if (!h._ol || h._olKey !== key) { syncFollow(); h._ol = regionOutline(hotRegion(hitList, h, [0, vy, W, vh], true)); h._olKey = key; if (!h._ol.length) h._ol = null; }
+      if (!h._ol) { h.shape.forEach(function (r) { frame(r, c1, c2, ph); }); return; }
+      h._ol.forEach(function (p) { P.p(p[0], p[1], ((p[0] + p[1] + ph) & 2) ? c2 : c1); });
+    }
     function drawFocus() {
       var t = state.t;
       syncFollow();
@@ -1547,13 +1899,15 @@
       }
       if (state.hi.length) {
         var on = Math.floor(t * 2.5) % 2, ph = Math.floor(t * 4) * 2;
-        state.hi.forEach(function (g) { g.hots.forEach(function (h) { frame(h.rect, on ? '#ffd75e' : '#fff1c2', 'rgba(0,0,0,0)', ph); }); });
+        state.hi.forEach(function (g) { g.hots.forEach(function (h) { outlineVis(h, on ? '#ffd75e' : '#fff1c2', 'rgba(0,0,0,0)', ph); }); });   // 箱子：只描看得到的那一塊
       }
       var show = [];
-      if (state.flash && state.rt < state.flash.until) show.push(state.flash.h);
+      if (state.flash && state.rt < state.flash.until && state.flash.h !== (state.press && state.press.h)) show.push(state.flash.h);
       if (state.hover) show.push(state.hover);
       if (state.reveal > state.rt) hots.forEach(function (h) { if (enabled(h) && (!h.sub || h._rv)) show.push(h); });
-      show.forEach(function (h) { if (h) frame(h.rect, '#ffffff', '#f0c75e', Math.floor(t * 6) * 2); });
+      show.forEach(function (h) { if (h) outlineVis(h, '#ffffff', '#f0c75e', Math.floor(t * 6) * 2); });
+      // 按下去（pointerdown）就描金框，直到放開或 900 ms（SPEC-v4 §2.4.3）；描「看得到的那一塊」的外圍，被前面的箱子擋住的部分不描
+      if (state.press && state.rt < state.press.until) outlineVis(state.press.h, '#ffcf3a', '#ffcf3a', 0);
       if (!state.spot && sparkleOn && hots.length) {
         var cyc = Math.floor(t / 3.2), p2 = t - cyc * 3.2;
         if (p2 < 0.55) {
@@ -1573,17 +1927,47 @@
       if (cam.dev) dev = Math.min(dev, cam.dev);
       k = dev; scale = k / dpr; T.k = k;
       vy = clamp(Math.round(cam.y), 0, H - 1); vh = clamp(Math.round(cam.h), 1, H - vy);
-      bw = Math.round(W * k); bh = Math.round(vh * k);
+      // 高＝鏡頭上下緣各自取整後相減（跟背景快取 round(H·k) 對齊）：倍率不是整數時，round(vh·k) 可能比快取剩下的多一列，
+      //   最後一列沒畫到＝店景與延伸地板之間一條 1 裝置像素的暗線（RH-4：430×932 @2 開面板時 831 列）
+      bw = Math.round(W * k); bh = Math.max(1, Math.round((vy + vh) * k) - Math.round(vy * k));
       if (view.width !== bw) view.width = bw;
       if (view.height !== bh) view.height = bh;
       var cssW = bw / dpr, cssH = bh / dpr;
       view.style.width = cssW + 'px'; view.style.height = cssH + 'px';
-      if (opts.sizeHost !== false) host.style.height = cssH + 'px';
       overlay.style.width = cssW + 'px'; overlay.style.height = cssH + 'px';
       overlay.style.left = Math.round((hostW - cssW) / 2) + 'px'; overlay.style.top = '0px';
       host.style.setProperty('--ds-scale', scale);
       render();
+      var ex = fitExt(cssW, cssH);
+      if (opts.sizeHost !== false) host.style.height = (cssH + ex) + 'px';
       layoutOverlay();
+    }
+    // 地板往下延伸（V03：高螢幕上店景已經整面寬、不能再大，鏡頭看到店的最下面時，剩下的高接著畫木地板，不在店景下面留白）。
+    //   extCss＝要延伸幾 CSS px（外殼量完面板的空位再給，0＝不延伸）；同一套 bg 道具（地板、後牆左右收邊）照同一個種子往下畫，打光照店景最下面那一列
+    var ext = null, extCss = 0;
+    function fitExt(cssW, cssH) {
+      var px = (vy + vh >= H && extCss > 0) ? Math.round(extCss) : 0;
+      if (!px) { if (ext) ext.style.display = 'none'; return 0; }
+      if (!ext) { ext = document.createElement('canvas'); ext.className = 'ds-floorx'; ext.setAttribute('aria-hidden', 'true'); host.insertBefore(ext, overlay); }
+      var dpr = dprNow(), eh = Math.max(1, Math.round(px * dpr)), rows = Math.ceil(eh / k) + 1;
+      if (ext.width !== bw) ext.width = bw;
+      if (ext.height !== eh) ext.height = eh;
+      ext.style.cssText = 'display:block;position:absolute;left:' + overlay.style.left + ';top:' + cssH + 'px;width:' + cssW + 'px;height:' + px + 'px;pointer-events:none';
+      var c = ext.getContext('2d');
+      c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.globalCompositeOperation = 'source-over'; c.imageSmoothingEnabled = false;
+      c.fillStyle = '#1a120c'; c.fillRect(0, 0, bw, eh);
+      var L2 = Object.create(L); L2.size = [W, H + rows]; L2.extFrom = H;
+      var S2 = Object.create(S); S2.L = L2; S2.layout = L2; S2.H = H + rows;
+      withTarget(c, 0, H, function () {
+        T.used = null;
+        (L.props || []).forEach(function (o) { var sp = OP[o.type]; if (!o.hidden && sp && sp.draw && layerOf(o) === 'bg') { try { sp.draw(P, o, S2); } catch (e) { console.error(e); } } });
+      });
+      if (cache && cache.mul && !(L.light || {}).off) {
+        var my = cache.mul.height - 1;
+        c.save(); c.globalCompositeOperation = 'multiply'; c.drawImage(cache.mul, 0, my, cache.mul.width, 1, 0, 0, bw, eh);
+        c.globalCompositeOperation = 'screen'; c.drawImage(cache.scr, 0, my, cache.scr.width, 1, 0, 0, bw, eh); c.restore();
+      }
+      return px;
     }
     function setView(v) { if (v.y != null) cam.y = v.y; if (v.h != null) cam.h = v.h; if (v.dev !== undefined) cam.dev = v.dev; fit(); }
     var tween = null;
@@ -1638,16 +2022,17 @@
         var a = actors[id]; if (!a) return;
         var head = a.y - a.head - (o.lift || 0) - (tagOn(id) ? 20 / scale : 0), p = toCss(a.x, head), bh2 = el.offsetHeight || 24;
         if (a.hidden) { el.style.display = 'none'; return; } el.style.display = '';
-        if (p.y - bh2 - 8 < 0 && vh <= 120) {
-          // 唱盤區橫條（strip／stripS）：泡泡不蓋中線（半空相撞點、老闆裁判）。貼在說話的人那半邊的頂上、尾巴朝下指他；
-          // 老闆站中間就置中。會蓋到自己的名牌，沒關係（尾巴已經說是誰）
-          var ow0 = overlay.clientWidth || W * scale, mid = ow0 / 2, ax0 = a.x * scale, ctr = Math.abs(ax0 - mid) < ow0 * 0.12;
+        if (vh <= 120 || stripOn) {
+          // 唱盤區橫條（strip／stripS，SPEC-v4 §2.3.7）：泡泡避開中間（唱盤與站在台後的老闆，老闆 x±16 格）。
+          // 說話的人在哪半邊，泡泡中心就夾在那半邊：左 [4+w/2, mid−ownerHalf−6−w/2]、右 [mid+ownerHalf+6+w/2, ow−4−w/2]；寬 ≤ mid−ownerHalf−10。
+          // 頭頂放得下就放頭頂，放不下就貼在橫條頂上、尾巴朝下指他。老闆（站中間）照舊置中。會蓋到自己的名牌，沒關係（尾巴已經說是誰）
+          var ow0 = overlay.clientWidth || W * scale, mid = ow0 / 2, ax0 = a.x * scale, ctr = Math.abs(ax0 - mid) < ow0 * 0.12, oh = 16 * scale;
           el.classList.remove('side', 'sl', 'sr');
-          el.style.maxWidth = Math.floor(ctr ? ow0 * 0.62 : mid - 10) + 'px';
+          el.style.maxWidth = Math.floor(ctr ? ow0 * 0.62 : mid - oh - 10) + 'px';
           var w0 = el.offsetWidth, h0 = el.offsetHeight || 24;
-          var lo = ctr ? 4 + w0 / 2 : (ax0 < mid ? 4 + w0 / 2 : mid + 6 + w0 / 2), hi = ctr ? ow0 - 4 - w0 / 2 : (ax0 < mid ? mid - 6 - w0 / 2 : ow0 - 4 - w0 / 2);
+          var lo = ctr ? 4 + w0 / 2 : (ax0 < mid ? 4 + w0 / 2 : mid + oh + 6 + w0 / 2), hi = ctr ? ow0 - 4 - w0 / 2 : (ax0 < mid ? mid - oh - 6 - w0 / 2 : ow0 - 4 - w0 / 2);
           var sh0 = clamp(p.x, lo, Math.max(lo, hi)) - p.x;
-          el.style.left = p.x + 'px'; el.style.top = (h0 + 4 + 7) + 'px';
+          el.style.left = p.x + 'px'; el.style.top = (p.y - h0 - 8 < 0 ? h0 + 4 + 7 : p.y) + 'px';
           el.style.setProperty('--shift', sh0 + 'px'); el.style.setProperty('--tail', (-sh0) + 'px');
           return;
         }
@@ -1670,9 +2055,17 @@
 
     // ---------------- 輸入
     var down = null;
-    function onDown(ev) { var p = fromEvent(ev); down = { x: p.x, y: p.y, h: hitTest(p.x, p.y), t: now() }; }
+    // 按下：命中就立刻描框（不等 click、不等下一格；SPEC-v4 §2.4.3）
+    function onDown(ev) {
+      var p = fromEvent(ev), h = hitTest(p.x, p.y);
+      down = { x: p.x, y: p.y, h: h, t: now() };
+      state.press = h ? { h: h, until: state.rt + 0.9 } : null;
+      if (h) { try { render(); } catch (e) { console.error(e); } }
+    }
+    function unpress() { if (state.press) { state.press = null; try { render(); } catch (_) {} } }
     function onUp(ev) {
       if (!down) return; var p = fromEvent(ev), h = hitTest(p.x, p.y), d0 = down; down = null;
+      unpress();
       var tol = L.tapTol || 10;
       if (!h || h !== d0.h || Math.abs(p.x - d0.x) > tol || Math.abs(p.y - d0.y) > tol) return;
       if (state.spot && state.spot.h !== h) { bump(); return; }
@@ -1697,7 +2090,10 @@
     view.addEventListener('pointerup', onUp);
     view.addEventListener('pointermove', onMove);
     view.addEventListener('pointerleave', onLeave);
-    view.addEventListener('pointercancel', function () { down = null; });
+    view.addEventListener('pointercancel', function () { down = null; unpress(); });
+    // 手機 Chrome 的「觸控調整」（touch adjustment）只把有 click／mouse 監聽的元素當成點得到的目標：畫布只有 pointer 監聽時，
+    // 點在舞台上緣附近會被吸到頂列的「捏角色」連結（e2e-taps 375×548 抓到）。掛一個空的 click 讓畫布自己就是點擊目標。
+    view.addEventListener('click', function () {});
 
     // ---------------- 迴圈（10 fps；唱盤區演出時每個 rAF 都畫）；分頁藏起來時停
     var last = 0, raf = 0, t0 = now(), fixedT = opts.fixedTime, tPaused = 0, fastN = 0, ticks = [];
@@ -1729,13 +2125,26 @@
       if (!sp) return null;
       return { x: sp[0], y: sp[1], outside: !!sp[2] };
     }
-    function routed(a, targets) {   // 每一段之間有家具就沿路點繞過去（門外那段直走）
-      var out = [], cur = [a.x, a.y], curOut = a.outside;
+    function spotName(k) { return typeof k === 'string' ? k : Array.isArray(k) ? '[' + k.slice(0, 2).join(',') + ']' : (k && k.x != null) ? '[' + k.x + ',' + k.y + ']' : String(k); }
+    // 每一段之間有家具就沿路點繞過去（門外那段直走）。走不到（navRoute 回 null，SPEC-v4 §2.4.5）：
+    //   嚴格模式（DipShop.strict；Node 測試、harness、e2e 的 ?strict=1）丟錯；執行期繞最近的 nav 點、再不行直線走（console.warn），絕不瞬移
+    function routed(a, targets, id) {
+      var out = [], cur = [a.x, a.y], curOut = a.outside, curName = a.at != null ? a.at : spotName(cur);
       targets.forEach(function (tg) {
         if (!tg) return;
-        if (!tg.outside && !curOut && L.nav) { if (!OBS) OBS = navObstacles(L); navRoute(L, cur, [tg.x, tg.y], OBS).forEach(function (q, i, arr) { out.push(i === arr.length - 1 ? tg : { x: q[0], y: q[1], outside: false, via: true }); }); }
+        if (!tg.outside && !curOut && L.nav) {
+          if (!OBS) OBS = navObstacles(L);
+          var r = navRoute(L, cur, [tg.x, tg.y], OBS);
+          if (!r) {
+            var msg = '[shop] no route ' + id + ' ' + curName + '→' + tg.name;
+            if (EXPORTS.strict) throw new Error(msg);
+            var fb = navFallback(L, cur, [tg.x, tg.y], OBS); r = fb.pts;
+            console.warn(msg + (fb.how === 'detour' ? '（繞最近的路點走）' : '（直線走過去）'));
+          }
+          r.forEach(function (q, i, arr) { out.push(i === arr.length - 1 ? tg : { x: q[0], y: q[1], outside: false, via: true }); });
+        }
         else out.push(tg);
-        cur = [tg.x, tg.y]; curOut = tg.outside;
+        cur = [tg.x, tg.y]; curOut = tg.outside; curName = tg.name;
       });
       return out;
     }
@@ -1766,7 +2175,7 @@
       layout: L, world: null, canvas: view, overlay: overlay, host: host, state: state, oblique: true,
       put: function (id, key, spr) {
         var a = actor(id), p = spotXY(key); if (spr != null) setLook(a, spr);
-        if (p) { a.x = p.x; a.y = p.y; a.outside = p.outside; if (a.res) { var r = a.res; a.res = null; r(); } a.path = null; a.moving = false; a.hidden = false; }
+        if (p) { a.x = p.x; a.y = p.y; a.outside = p.outside; a.at = spotName(key); if (a.res) { var r = a.res; a.res = null; r(); } a.path = null; a.moving = false; a.hidden = false; }
         layoutOverlay(); return api;
       },
       sprite: function (id, spr) { setLook(actor(id), spr); return api; },
@@ -1777,11 +2186,15 @@
       walk: function (id, keys, speed) {
         var a = actor(id); a.hidden = false;
         if (a.res) { var r0 = a.res; a.res = null; r0(); }
-        a.path = routed(a, [].concat(keys).map(spotXY).filter(Boolean));
+        var tgs = [].concat(keys).map(function (k) { var p = spotXY(k); if (p) p.name = spotName(k); return p; }).filter(Boolean);
+        try { a.path = routed(a, tgs, id); }
+        catch (e) { a.path = null; a.moving = false; console.error(e.message); return Promise.reject(e); }   // 嚴格模式：walk 的 Promise reject，人不動
+        if (tgs.length) a.at = tgs[tgs.length - 1].name;
         if (speed) a.speed = speed;
         return new Promise(function (res) { if (!a.path.length) { a.moving = false; res(); return; } a.res = res; });
       },
-      route: function (from, to) { var A = spotXY(from), B = spotXY(to); if (!A || !B) return []; if (!OBS) OBS = navObstacles(L); return navRoute(L, [A.x, A.y], [B.x, B.y], OBS); },
+      // 舊呼叫端 [at].concat(shop.route(...)) 不會壞：走不到回 []（不回 null，SPEC-v4 §2.4.5）
+      route: function (from, to) { var A = spotXY(from), B = spotXY(to); if (!A || !B) return []; if (!OBS) OBS = navObstacles(L); return navRoute(L, [A.x, A.y], [B.x, B.y], OBS) || []; },
       face: function (id, fwd) { actor(id).fwd = fwd; return api; },
       arm: function (id, kind) { actor(id).arm = kind || null; return api; },
       hold: function (id, what) { actor(id).hold = what || null; return api; },
@@ -1904,19 +2317,37 @@
       },
       setView: function (v) { if (tween) { tween.cancel = true; var r = tween.res; tween = null; if (r) r(); } setView(v); return api; },
       tweenView: tweenView,
-      view: function () { return { y: vy, h: vh, x: 0, w: W, scale: scale, dev: k, baseDev: baseDev(), dpr: dprNow() }; },
+      view: function () { return { y: vy, h: vh, x: 0, w: W, scale: scale, dev: k, baseDev: baseDev(), dpr: dprNow(), ext: (vy + vh >= H && extCss > 0) ? Math.round(extCss) : 0 }; },
+      // 地板往下延伸幾 CSS px（V03；鏡頭看到店的最下面時才畫）；回現在畫出來的
+      floorExt: function (px) { px = Math.max(0, Math.round(+px || 0)); if (px !== extCss) { extCss = px; fit(); } return (vy + vh >= H && extCss > 0) ? extCss : 0; },
       camera: function (name) { var c = (L.cameras || {})[name]; if (c) api.setView({ y: c.y, h: c.h, dev: null }); return api; },
       // 看得到的排前面（矮螢幕鏡頭從牆頂裁掉一截時，先給畫面裡點得到的）；同一級照 layout 的順序
       hotspots: function () {
         syncFollow();
         var vis = function (h) { var r = h.rect, a = Math.max(0, Math.min(r[1] + r[3], vy + vh) - Math.max(r[1], vy)); return a >= r[3] ? 0 : a > 0 ? 1 : 2; };
         return hots.map(function (h, i) { return { h: h, i: i, v: vis(h) }; }).sort(function (a, b) { return a.v - b.v || a.i - b.i; })
-          .map(function (x) { var h = x.h; return { id: h.id, label: h.label, action: h.action, rect: h.rect.slice(), sub: !!h.sub, visible: x.v < 2 }; });
+          .map(function (x) { var h = x.h; return { id: h.id, label: h.label, action: h.action, rect: h.rect.slice(), shape: h.shape.map(function (r) { return r.slice(); }), depth: h.depth, sub: !!h.sub, parent: h.parent || null, visible: x.v < 2 }; });
       },
+      // SPEC-v4 §2.4.3：每個啟用的熱點一個一定點得到的點（CSS px，相對 #stage host）：形狀內、不在任何更前面的形狀裡、取那塊可見區域最裡面的一格。e2e 用它真點
+      hotPoints: function () {
+        syncHots();
+        var out = [];
+        hots.forEach(function (h) {
+          if (!h.enabled) return;
+          var c = regionCenter(visRegion(h)); if (!c) return;
+          var q = hostCss(c.x + 0.5, c.y + 0.5); out.push({ id: h.id, x: q.x, y: q.y, art: [c.x, c.y] });
+        });
+        return out;
+      },
+      // 測試／工具用：命中清單（含遮擋物；live 物件，別改）、某一格的命中（美術格）、某熱點看得到的那一塊
+      hotList: function () { syncHots(); return hitList; },
+      pick: function (x, y, o) { syncHots(); return hitPick(hitList, x, y, Object.assign({ r: slopR() }, o || {})); },
+      hotRegion: function (hid) { syncHots(); var h = hotById(hid); return h ? visRegion(h) : null; },
       hotRect: function (hid) { syncFollow(); var h = hotById(hid); return h ? rectToScreen(h.rect) : null; },
       rectOf: function (r) { return rectToScreen(r, false); },
       tap: function (hid, o) { syncFollow(); var h = hotById(hid); if (!h || (!(o && o.force) && !enabled(h))) return false; tapHot(h); return true; },
       allow: function (fn) { allowFn = fn || null; return api; },
+      strip: function (on) { if (stripOn !== !!on) { stripOn = !!on; layoutOverlay(); } return api; },
       sparkle: function (on) { sparkleOn = !!on; return api; },
       bump: bump,
       toCss: toCss, hostCss: hostCss, render: render, fit: fit,
@@ -1941,6 +2372,12 @@
     return api;
   }
 
-  return { mount: mount, defProp: defProp, hook: hook, HOOKS: HOOKS, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, HANDAT: HANDAT, armRows: armRows, bayer: bayer, seeded: seeded,
-    defO: defO, hookO: hookO, O34: O34, OPainter: OPainter, navRoute: navRoute, navObstacles: navObstacles, segHitsRect: segHitsRect, version: '3.1' };
+  // strict：走不到就丟錯（Node 測試設 DipShop.strict＝true；瀏覽器用 ?strict=1 開，SPEC-v4 §2.4.5）
+  var EXPORTS = { mount: mount, defProp: defProp, hook: hook, HOOKS: HOOKS, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, HANDAT: HANDAT, armRows: armRows, bayer: bayer, seeded: seeded,
+    defO: defO, hookO: hookO, O34: O34, OPainter: OPainter, navRoute: navRoute, navObstacles: navObstacles, navClear: navClear, navFallback: navFallback, segHitsRect: segHitsRect,
+    segHitsPoly: segHitsPoly, inPoly: inPoly, rectPoly: rectPoly, rectsPoly: rectsPoly, inObs: inObs, segHitsObs: segHitsObs, drawnExtent: drawnExtent, propFoot: propFoot, pocketRect: pocketRect, footprints: footprints,
+    buildHotList: buildHotList, hitPick: hitPick, hitTop: hitTop, hotRegion: hotRegion, regionCenter: regionCenter, regionOutline: regionOutline, followHot: followHot, propVisBox: propVisBox,
+    strict: false, version: '4.0' };
+  try { if (typeof location !== 'undefined' && /[?&]strict=1(&|$)/.test(location.search || '')) EXPORTS.strict = true; } catch (_) {}
+  return EXPORTS;
 });

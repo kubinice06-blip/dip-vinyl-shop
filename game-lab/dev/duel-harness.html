@@ -1,159 +1,236 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>對決測試台（game-lab dev）</title>
+<title>對決測試台 v4（game-lab dev）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../shop.css">
 <link rel="stylesheet" href="../duel.css">
 <style>
-  html,body{margin:0;height:100%;background:#fff;overflow-x:hidden;}
-  #app{max-width:430px;margin:0 auto;height:100vh;height:100svh;position:relative;overflow:hidden;}
+  /* 跟 index.html 的對決畫面同一個版面：32px 頂欄＋常駐舞台（strip 鏡頭）＋盤面 */
   .hx-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;z-index:2147483000;font-family:'Space Mono','Noto Sans TC',monospace;}
   .hx-box{background:#fff;border:2px solid #111;padding:14px;max-width:340px;width:calc(100% - 32px);font-size:13px;line-height:1.5;}
   .hx-box button{font-family:inherit;font-size:13px;font-weight:700;border:1px solid #111;background:#111;color:#fff;min-height:44px;padding:0 14px;margin:8px 8px 0 0;cursor:pointer;}
   .hx-box button.s{background:#fff;color:#111;}
   .hx-box img{width:160px;height:160px;object-fit:cover;display:block;margin:0 auto 8px;border:1px solid #111;}
+  .hx-dev{position:fixed;right:6px;top:36px;z-index:2147482000;background:#fff;border:2px solid #111;padding:8px;width:260px;font:12px/1.5 'Space Mono','Noto Sans TC',monospace;display:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+  .hx-dev.on{display:block}
+  .hx-dev b{display:block;margin:4px 0 2px}
+  .hx-dev button{font:inherit;font-size:11px;border:1px solid #111;background:#fff;padding:3px 6px;margin:0 3px 3px 0;cursor:pointer}
+  .hx-dev button.on{background:#e9c35a}
+  .hx-dev pre{margin:4px 0 0;white-space:pre-wrap;font-size:10px;max-height:9em;overflow:auto;color:#555}
+  body.shot .hx-dev,body.shot .lb-top .ti{display:none!important}
 </style>
-</head><body><div id="app"></div>
+</head><body class="in-battle"><div id="app"></div>
+<div class="hx-dev" id="dev">
+  <b>他下一手</b>
+  <div><button data-e="">照引擎</button><button data-e="honest">照實</button><button data-e="bluff">唬人</button><button data-e="c">出經</button><button data-e="o">出冷</button><button data-e="h">出硬</button><button data-e="ace">王牌</button></div>
+  <b>結果（__lab.force）</b>
+  <div><button data-f="">不強制</button><button data-f="counter">剋中</button><button data-f="countered">被剋</button><button data-f="tie">平手</button></div>
+  <b>示範（兩邊都排好，按「丟！」）</b>
+  <div><button data-demo="counter">剋中</button><button data-demo="blocked">剋不動</button><button data-demo="bluff">唬人</button><button data-demo="ace">王牌擋下</button><button data-demo="tie">平手</button></div>
+  <b>一場</b>
+  <div><button id="re">再一場</button><button id="auto">自動（thoughtful）</button><button id="snd">開聲音</button></div>
+  <pre id="info"></pre>
+</div>
 <script src="../../dip-character.js?v=2"></script>
-<script src="../../dip-player.js?v=57"></script>
+<script src="../chars.js"></script>
 <script src="../cards.js"></script>
+<script src="../bins.js"></script>
 <script src="../content.js"></script>
 <script src="../engine.js"></script>
 <script src="../fx.js"></script>
+<script src="../shop.js"></script>
+<script src="../shop-props.js"></script>
+<script src="../stage.js"></script>
 <script src="../duel.js"></script>
 <script>
+/* dev/duel-harness.html（B1，SPEC-v4 §3.2 B1）：v4 對決盤面＋一台唱盤的舞台，一場打得完。
+ *   ?enemy=copycat|man|…（預設 copycat）  ?ace=hall|pearl|heresy  ?seed=7  ?depth=0..4（出招難度）  ?hp= ?ehp=  ?relics=a,b  ?bag=id,id,…
+ *   ?tutorial=1（男子＋C.tutorial.script[ace]）  ?e=bluff,honest,c,o,h,ace,-（他每一手怎麼出；'-' 或空＝照引擎）  ?force=counter|countered|tie
+ *   ?sound=1（先問要不要聲音） ?noend=1（打完不跳對話框） ?shot=1（截圖：收起測試鈕） ?fast=1 ?debug=1（duel.js：window.__dl）
+ *   window.__lab＝{ force(o), stage, duel(), rawDuel(), autoplay(policy), el(name) }（跟 ui.js 的 __lab 同介面，e2e-duel 用）
+ *   window.__h＝{ setNext(spec|{i,attr}), plan(list), remount(seed), log, seen, duel, ready, errors, sfx:[[name,opts]…], music:[cardId…] }
+ *     spec＝'honest'|'bluff'|'c'|'o'|'h'|'ace'|'-'；{i,attr}＝他手牌第 i 張用 attr 出（forcedPlay，照抄給引擎）
+ *   __h.find(want)＝這一手「你怎麼出＋他怎麼出」會得到 want（counter|blocked|bluff|ace|tie）的組合；__h.demo(want)＝找到（找不到就換種子）、替你選好、排好他 → 按「丟！」
+ */
 (function(){
 'use strict';
-// 測試台專用：roguelike.html L1378–1426 的 SPR（改名 H_SPR，包在 IIFE 裡，不撞 dip-character.js 的全域）
-const H_SPR = {
-  // 對手（依場次深度 0~7 階：小白→之神）
-  e0: sprRows([   // 音樂小白：耳機
-    '.....gggggg.....','.....kkkkkk.....','....kkkkkkkk....','...gksssssskg...','...gssksskssg...','....ssssssss....','.....ssssss.....',
-  ],'w','b'),
-  e1: sprRows([   // 文青同好：毛帽＋圍巾
-    '................','.....nnnnnn.....','....nnnnnnnn....','....nssssssn....','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'e','k',{7:'....rrrrrrrr....'}),
-  e2: sprRows([   // 社團學長：棒球帽
-    '................','.....bbbbbb.....','....bbbbbbbbbb..','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'w','k'),
-  e3: sprRows([   // 資深樂評：貝雷帽＋眼鏡
-    '................','......pppp......','....pppppppp....','....kssssssk....','....ekkeekke....','....ssssssss....','.....ssssss.....',
-  ],'e','k'),
-  e4: sprRows([   // 二手店老闆：光頭鬍子＋圍裙
-    '................','................','.....ssssss.....','....ssssssss....','....ssksskss....','....sdssssds....','.....dddddd.....',
-  ],'w','d',{8:'...wggggggggw...',9:'...sggggggggs...',10:'...sggggggggs...',11:'....gggggggg....'}),
-  e5: sprRows([   // 地下廠牌主理人：長髮全黑
-    '................','.....kkkkkk.....','....kkkkkkkk....','...kksssssskk...','...kksksskskk...','...kssssssssk...','.....ssssss.....',
-  ],'k','k'),
-  e6: sprRows([   // 品味行家：紳士帽
-    '................','.....oooooo.....','.....oooooo.....','...oooooooooo...','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'p','k'),
-  e7: sprRows([   // 品味之神：皇冠＋長袍
-    '....y.y..y.y....','....yyyyyyyy....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'p','p'),
-  boss: sprRows([ // 傳說藏家：高禮帽＋單片眼鏡＋西裝領帶
-    '.....kkkkkk.....','.....kkkkkk.....','.....kkkkkk.....','...kkkkkkkkkk...','....ssssssss....','....sskssyys....','.....ssssss.....',
-  ],'k','k',{7:'....kkwrrwkk....',8:'...kkkwrrwkkk...'}),
-  // 我方三流派（key 對齊 CLASSES）
-  guard: sprRows([   // 守舊派：整齊西裝頭＋藍毛衣
-    '................','.....kkkkkk.....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'b','k'),
-  digger: sprRows([  // 挖掘派：反戴帽＋綠帽 T
-    '................','.....nnnnnn.....','..nnnnnnnnnn....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'n','d'),
-  heretic: sprRows([ // 異端派：刺蝟頭＋紅外套
-    '....k.k..k.k....','....kkkkkkkk....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
-  ],'r','k'),
-};
-// 碎裂唱片（死亡結算用：黑膠裂一道白縫）
-H_SPR.brokenrec = [
-  '............','...kk.kkk...','..kkk.kkkk..','.kkkk.kkkkk.','.kkkkg.kkkk.','.kkkg..gkkk.','.kkkg..gkkk.','.kkkk.gkkkk.','.kkkk.kkkkk.','..kkk.kkkk..','...kkkkkk...','............',
-];
-// 唱片行老闆（開場序章／捏角色／推薦三張盤的那位；與 depth 8～9 的「二手店老闆」對手不是同一人）：
-// 灰髮＋眼鏡＋鬍子、白上衣、綠圍裙
-H_SPR.owner = sprRows([
-  '................','.....dddddd.....','....dddddddd....','....dssssssd....','....ekkeekke....','....sdssssds....','.....dddddd.....',
-],'w','d',{8:'...wnnnnnnnnw...',9:'...snnnnnnnns...',10:'...snnnnnnnns...',11:'....nnnnnnnn....'});
-
 const Q = new URLSearchParams(location.search);
-const E = window.DipLabEngine, C = window.DipLabContent, F = window.DipLabFx;
-const seen = {};
-const log = [];
-window.__h = { log, seen, remount: () => start(++seedN) };
-let seedN = +(Q.get('seed') || 7);
-function sprite(key, px){
-  try {
-    if (key && typeof key === 'object') return pixArtHTML(avatarRows(key), px);
-    const rows = H_SPR[key] || H_SPR.guard;
-    return pixArtHTML(rows, px);
-  } catch(e){ return ''; }
-}
-function modal(html, btns){
-  const ov = document.createElement('div'); ov.className='hx-ov';
-  ov.innerHTML = '<div class="hx-box">'+html+'<div class="bt"></div></div>';
-  (btns||[{t:'關閉'}]).forEach(b => { const x=document.createElement('button'); x.textContent=b.t; if(b.s) x.className='s'; x.onclick=()=>{ ov.remove(); b.f && b.f(); }; ov.querySelector('.bt').appendChild(x); });
-  document.body.appendChild(ov); return ov;
-}
+const E = window.DipLabEngine, C = window.DipLabContent, F = window.DipLabFx, ATTRS = ['c','o','h'];
+const $ = s => document.querySelector(s);
 const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const hooks = {
-  sprite,
-  hint(id){ if (Q.get('hints')==='0') return false; if (seen[id]) return false; seen[id]=true; log.push('hint '+id); return true; },
-  info(card){ log.push('info '+card.id); modal(`<img src="${esc(card.localCover ? new URL(card.localCover, new URL('../', location.href)).href : card.coverUrl)}" alt=""><b>${esc(card.artist)}</b><br>《${esc(card.album)}》 ${card.year||''}<br>經${card.c} 冷${card.o} 硬${card.h}<br>${esc(card.pitch||'')}`,
-    [{t:'▶ 試聽', f:()=>F.music.play(card)}, {t:'關閉', s:1}]); },
-  pause(){ log.push('pause'); modal('⏸ 暫停（測試台）', [{t:'繼續'}, {t:'重開一場', s:1, f:()=>start(++seedN)}]); },
-  help(){ log.push('help'); modal(esc(C.help)); },
-  settings(){ return { selfRead: Q.get('selfread')==='1', fastAnim: Q.get('fastanim')==='1' }; },
-  onEvent(ev){ log.push('ev '+ev.t); },
-  player: { name:'測試員', avatar: (C.avatarsFallback||[])[0] },
-  artBase: new URL('../../art/', location.href).href,
-};
+if (Q.get('shot') === '1') document.body.classList.add('shot');
+// ---- 像素小人（＝ui.js labSpr；依賴 dip-character.js 的 sprRows）
+function labSpr(){
+  const sr = window.sprRows; if (typeof sr !== 'function') return {};
+  const S = {
+    e0: sr(['.....gggggg.....','.....kkkkkk.....','....kkkkkkkk....','...gksssssskg...','...gssksskssg...','....ssssssss....','.....ssssss.....'],'w','b'),
+    e1: sr(['................','.....nnnnnn.....','....nnnnnnnn....','....nssssssn....','....ssksskss....','....ssssssss....','.....ssssss.....'],'e','k',{7:'....rrrrrrrr....'}),
+    e2: sr(['................','.....bbbbbb.....','....bbbbbbbbbb..','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....'],'w','k'),
+    e3: sr(['................','......pppp......','....pppppppp....','....kssssssk....','....ekkeekke....','....ssssssss....','.....ssssss.....'],'e','k'),
+    e4: sr(['................','................','.....ssssss.....','....ssssssss....','....ssksskss....','....sdssssds....','.....dddddd.....'],'w','d',{8:'...wggggggggw...',9:'...sggggggggs...',10:'...sggggggggs...',11:'....gggggggg....'}),
+    e5: sr(['................','.....kkkkkk.....','....kkkkkkkk....','...kksssssskk...','...kksksskskk...','...kssssssssk...','.....ssssss.....'],'k','k'),
+    e6: sr(['................','.....oooooo.....','.....oooooo.....','...oooooooooo...','....ssksskss....','....ssssssss....','.....ssssss.....'],'p','k'),
+    e7: sr(['....y.y..y.y....','....yyyyyyyy....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....'],'p','p'),
+    boss: sr(['.....kkkkkk.....','.....kkkkkk.....','.....kkkkkk.....','...kkkkkkkkkk...','....ssssssss....','....sskssyys....','.....ssssss.....'],'k','k',{7:'....kkwrrwkk....',8:'...kkkwrrwkkk...'})
+  };
+  S.owner = sr(['................','.....dddddd.....','....dddddddd....','....dssssssd....','....ekkeekke....','....sdssssds....','.....dddddd.....'],'w','d',{8:'...wnnnnnnnnw...',9:'...snnnnnnnns...',10:'...snnnnnnnns...',11:'....nnnnnnnn....'});
+  return S;
+}
+// ---- 版面（＝ui.js：#app ＝ 頂欄＋#stage＋#panel）
+const app = $('#app');
+app.innerHTML = '<div class="lb-top"><span class="tt">對決測試台<small>v4</small></span><button type="button" class="ti" id="devbtn" aria-label="測試鈕">⚙</button></div>'
+  + '<div class="lb-stage" id="stage"></div><div class="lb-panel duel" id="panel"><div class="lb-duelwrap" id="wrap"></div></div>';
+const H = window.__h = { log: [], seen: {}, errors: [], ready: false, queue: [], next: null, duel: null, stage: null, ended: null, music: [], sfx: [] };
+// 記下音效與試聽（e2e 對帳用；照樣呼叫原本的）
+(function(){
+  const s0 = F.sfx; F.sfx = function(n, o){ H.sfx.push([n, o == null ? null : JSON.parse(JSON.stringify(o))]); if (H.sfx.length > 400) H.sfx.splice(0, 200); return s0.apply(this, arguments); };
+  const m0 = F.music.play; F.music.play = function(card, o){ H.music.push(card && card.id); return m0.apply(this, arguments); };
+})();
+window.addEventListener('error', e => H.errors.push(String(e.message || e)));
+let seedN = +(Q.get('seed') || 7), FORCE = Q.get('force') ? { kind: Q.get('force'), toE: Q.get('force') === 'counter' ? 3 : 0, toP: Q.get('force') === 'countered' ? 3 : 0 } : null;
+H.queue = (Q.get('e') || '').split(',').map(s => s.trim()).filter((s, k, a) => a.length > 1 || s);
+function modal(html, btns){
+  return new Promise(res => {
+    const ov = document.createElement('div'); ov.className='hx-ov';
+    ov.innerHTML = '<div class="hx-box">'+html+'<div class="bt"></div></div>';
+    (btns||[{t:'關閉'}]).forEach(b => { const x=document.createElement('button'); x.textContent=b.t; if(b.s) x.className='s'; x.onclick=()=>{ ov.remove(); res(); b.f && b.f(); }; ov.querySelector('.bt').appendChild(x); });
+    document.body.appendChild(ov);
+  });
+}
+function hintTable(){ const t = {}; for (const a of ATTRS) t[a] = ((C.hints || {})[a] || []).map(h => h.id); return ATTRS.every(a => t[a].length) ? t : undefined; }
+// 他這手怎麼出（測試台專用：讀 duel.plan 與他手牌，轉成 resolveTurn 的 forcedPlay）
+function bestIdx(hand, a){ let bi = -1, bs = -1; hand.forEach((c, i) => { if (!c || c.tier) return; const s = c[a] | 0; if (s > bs) { bs = s; bi = i; } }); return bi; }
+function forcedPlayOf(d, spec){
+  if (!spec || spec === '-' || !d.plan) return null;
+  if (typeof spec === 'object') return Number.isInteger(spec.i) && d.e.hand[spec.i] && ATTRS.includes(spec.attr) ? { i: spec.i, attr: spec.attr } : null;
+  const hand = d.e.hand, hintA = d.plan.hint.attr;
+  if (spec === 'ace') { const i = hand.findIndex(c => c && c.tier); return i >= 0 ? { i, attr: E.aceAxis(hand[i]) } : null; }
+  const attr = spec === 'honest' ? hintA : spec === 'bluff' ? E.BEATS[hintA] : (ATTRS.includes(spec) ? spec : null);
+  if (!attr) return null;
+  const i = bestIdx(hand, attr);
+  return i >= 0 ? { i, attr } : null;
+}
 function build(seed){
-  const enemyId = Q.get('enemy') || 'copycat';
-  const aceTier = Q.get('ace') || 'hall';
-  const eDef0 = C.enemies[enemyId];
-  const relics = (Q.get('relics')||'').split(',').filter(Boolean);
-  const prologue = enemyId === 'man' || Q.get('prologue')==='1';
-  const deckIds = (Q.get('deck') ? Q.get('deck').split(',') : [...C.gifts[aceTier], ...C.junk]);
-  const pDef = { hp: prologue ? E.CFG.prologueHp : +(Q.get('hp')||E.CFG.playerHp), maxHp: prologue ? E.CFG.prologueHp : E.CFG.playerHp, deck: deckIds.map(id=>C.cards[id]).filter(Boolean),
-    ace: C.cards[C.aces[aceTier]], ear: aceTier, relics, startQi: +(Q.get('qi')||0), reviveOnce: relics.includes('testpress') };
-  const eDef = Object.assign({}, eDef0, { deck: eDef0.deck.map(id=>C.cards[id]).filter(Boolean) });
-  const others = ['hall','pearl','heresy'].filter(t=>t!==aceTier);
-  const enemyAce = eDef0.boss ? C.cards[C.aces[others[seed % 2]]] : null;
-  const ultAttr = E.resolveUltAttr(eDef0.ultAttr, aceTier);
-  const req = Q.has('req') ? (Q.get('req')||null) : (!prologue && eDef0.requests && eDef0.requests.length ? eDef0.requests[seed % eDef0.requests.length] : null);
-  const res = E.startDuel(pDef, eDef, { seed: seed >>> 0 || 1, ultAttr, request: req, prologue, habitKnown: Q.get('known')==='1', enemyAce });
-  const d = res.duel;
-  // 測試用狀態覆寫（只在測試台）
-  if (Q.has('eqi') || Q.has('ehp') || Q.has('phase')) {
-    if (Q.has('ehp')) d.e.hp = +Q.get('ehp');
-    if (Q.has('eqi')) d.e.qi = +Q.get('eqi');
-    d.hand = 0; d.e.deck.push(d.e.record); d.e.record = null;
-    const evs = []; E.beginHand(d, evs); res.events = evs;
-  }
-  if (Q.has('pqi')) d.p.qi = +Q.get('pqi');
-  if (Q.has('php')) d.p.hp = +Q.get('php');
-  return res;
+  const tutorial = Q.get('tutorial') === '1';
+  const enemyId = tutorial ? (C.prologueEnemy || 'man') : (Q.get('enemy') || 'copycat');
+  const ace = C.aces[Q.get('ace')] ? Q.get('ace') : 'hall';
+  const eDef = E.enemyDef(C, enemyId, { tutorial, depth: Q.has('depth') ? +Q.get('depth') : (C.enemies[enemyId].prologue ? undefined : 0) });
+  if (Q.has('ehp')) eDef.hp = +Q.get('ehp');
+  const bargain = (C.bargain && C.bargain.pool || []);
+  const pick3 = ATTRS.map(a => bargain.find(id => C.cards[id] && E.topAttr(C.cards[id]) === a)).filter(Boolean);
+  const bag = Q.get('bag') ? Q.get('bag').split(',').filter(id => C.cards[id]) : [...C.gifts[ace], ...pick3];
+  const relics = (Q.get('relics') || '').split(',').filter(Boolean);
+  const pDef = E.playerDef(C, { bag, ace, relics });
+  if (Q.has('hp')) pDef.hp = pDef.maxHp = +Q.get('hp');
+  const opts = { seed: (seed >>> 0) || 1, hintTable: hintTable() };
+  if (eDef.boss) { const others = E.TIERS.filter(t => t !== ace); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
+  if (tutorial && C.tutorial && C.tutorial.script) opts.script = C.tutorial.script[ace] || null;
+  return { res: E.startDuel(pDef, eDef, opts), enemyId };
 }
+function sprOf(id){ const en = C.enemies[id] || {}; return en.avatar || en.spr || 'e0'; }
+const hooks = {
+  get stage(){ return H.stage; },
+  cardInfo(card, o){ H.log.push('info '+card.id); return modal(`<img src="${esc(card.localCover ? new URL(card.localCover, new URL('../', location.href)).href : card.coverUrl)}" alt=""><b>${esc(card.artist)}</b><br>《${esc(card.album)}》 ${card.year||''}<br>經${card.c} 冷${card.o} 硬${card.h}<br>${esc(card.pitch||'')}`,
+    [{t:'▶ 試聽', f:()=>F.music.play(card, { exclusive: true })}, {t:'關閉', s:1}]); },
+  hint(id, targets){ if (Q.get('hints')==='0') return false; if (H.seen[id]) return false; H.seen[id]=true; H.log.push('hint '+id+' '+(targets||[]).join('|')); return true; },
+  settings(){ return { fastAnim: Q.get('fastanim')==='1' }; },
+  onEvent(ev){ H.log.push('ev '+ev.t); if (H.log.length > 300) H.log.splice(0, 100); },
+  resolveOpts(){
+    const o = {};
+    if (FORCE) o.debugOutcome = FORCE;
+    const spec = H.next != null ? H.next : H.queue.shift();
+    H.next = null;
+    const fp = forcedPlayOf(H.duel, spec);
+    if (fp) o.forcedPlay = fp;
+    return o;
+  },
+};
 function start(seed){
-  let res = build(seed);
-  // 測試台：?want=feint|true|copy|... 重抽種子直到第一手抽中那種格（截圖用）
-  const want = Q.get('want');
-  for (let k = 0; want && k < 400; k++) {
-    const d = res.duel; if (d.intent && !d.intent.ult && (want === 'hidden' ? d.e.disc[d.intent.cellIdx] === 'hidden' : E.realGlyph(d, d.intent.cellIdx) === want)) break;
-    res = build(seed = ++seedN);
+  const b = build(seed);
+  H.duel = b.res.duel; H.enemyId = b.enemyId; H.ended = null;
+  const st = H.stage;
+  if (st) {
+    st.clearClash(0); st.untag();
+    st.put('f', 'duelE', sprOf(b.enemyId)); st.put('p', 'duelP', { head: 'neat' }); st.put('o', st.spot('ref') ? 'ref' : 'counter', 'owner');
+    ['f','p','o'].forEach(id => { st.hide(id, false); st.sil(id, false); });
+    st.interact('duel');
   }
-  window.__h.duel = res.duel;
-  DipLabDuel.mount(document.getElementById('app'), { duel: res.duel, events: res.events, run: null, content: C, hooks,
-    onSave(d){ window.__h.saved = (window.__h.saved||0)+1; },
-    onEnd(r){ log.push('end '+r.over); window.__h.ended = r.over;
+  DipLabDuel.mount($('#wrap'), { duel: H.duel, events: b.res.events, run: null, content: C, hooks,
+    onSave(){ H.saved = (H.saved||0)+1; },
+    onEnd(r){ H.log.push('end '+r.over+' '+r.by); H.ended = r;
       if (Q.get('noend')==='1') return;
-      setTimeout(()=>modal(r.over==='win'?'你贏了（測試台）':'你輸了（測試台）', [{t:'再一場', f:()=>start(++seedN)}]), 600); } });
+      setTimeout(()=>modal(r.over==='win'?'你贏了（測試台）':'你輸了（測試台）', [{t:'再一場', f:()=>start(++seedN)}]), 300); } });
 }
+// ---- __lab（＝ui.js 的 __lab 同介面：force／stage／duel／rawDuel／autoplay）
+window.__lab = {
+  force(o){ FORCE = o || null; return FORCE; },
+  get stage(){ return H.stage; },
+  duel(){ return H.duel ? E.view(H.duel) : null; },
+  rawDuel(){ return H.duel; },
+  autoplay(policy){ return DipLabDuel.autoplay(policy || 'novice'); },
+  el(name){ return DipLabDuel.el(name); },
+};
+// ---- 示範：找一組「你出這個、他出那個」會得到 want 的（他那邊用 forcedPlay；唬人＝他出提示色剋過來的那色、你出剋提示的那色）
+H.find = want => {
+  const d = H.duel; if (!d || !d.plan || d.over) return null;
+  const v = E.view(d), hintA = d.plan.hint.attr;
+  for (const act of E.legalActions(d)) {
+    const pa = act.ace ? v.aceAxis : act.attr;
+    for (let i = 0; i < d.e.hand.length; i++) for (const a of ATTRS) {
+      const c = d.e.hand[i]; if (!c || (c.tier && a !== E.aceAxis(c))) continue;
+      const bluff = a !== hintA, plain = !act.ace && !c.tier;
+      const r = E.preview(d, act, { i, attr: a }); if (!r) continue;
+      const ok = want === 'counter' ? plain && !bluff && r.kind === 'counter'
+        : want === 'blocked' ? plain && !bluff && r.blocked === 'gap' && r.by === 'p'
+        : want === 'bluff' ? plain && a === E.BEATS[hintA] && pa === E.COUNTER_OF[hintA] && r.kind === 'countered'
+        : want === 'ace' ? act.ace && !c.tier && r.blocked === 'ace'
+        : want === 'tie' ? plain && !bluff && r.kind === 'tie' : false;
+      if (ok) return { act, pa, e: { i, attr: a } };
+    }
+  }
+  return null;
+};
+H.demo = want => {
+  let f = H.find(want);
+  for (let k = 0; !f && k < 40; k++) { start(++seedN); f = H.find(want); }
+  if (!f) return null;
+  FORCE = null; H.next = f.e;
+  const go = () => { if (f.act.ace) DipLabDuel.select('ace'); else { DipLabDuel.select(f.act.i); DipLabDuel.select(f.act.i, f.pa); } };
+  // 剛重開的盤面要等進場（enterDone）才收點擊
+  const t0 = Date.now(), tick = () => { const x = DipLabDuel.debug(); if (x && x.enterDone && x.phase === 'choose') go(); else if (Date.now() - t0 < 4000) setTimeout(tick, 60); };
+  tick();
+  return f;
+};
+H.next = null;
+H.setNext = spec => { H.next = spec == null ? null : spec; return H.next; };
+H.plan = list => { H.queue = [].concat(list || []); return H.queue; };
+H.remount = s => start(s == null ? ++seedN : (seedN = s));
+// ---- 測試鈕
+$('#devbtn').onclick = () => $('#dev').classList.toggle('on');
+document.querySelectorAll('[data-e]').forEach(b => b.onclick = () => { H.next = b.dataset.e || null; document.querySelectorAll('[data-e]').forEach(x => x.classList.toggle('on', x === b)); });
+document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { const k = b.dataset.f; FORCE = k ? { kind: k, toE: k === 'counter' ? 3 : 0, toP: k === 'countered' ? 3 : 0 } : null; document.querySelectorAll('[data-f]').forEach(x => x.classList.toggle('on', x === b)); });
+$('#re').onclick = () => start(++seedN);
+document.querySelectorAll('[data-demo]').forEach(b => b.onclick = () => { const f = H.demo(b.dataset.demo); H.log.push('demo ' + b.dataset.demo + (f ? '' : '：找不到')); });
+$('#auto').onclick = () => DipLabDuel.autoplay('thoughtful');
+$('#snd').onclick = () => { try { F.unlockFromGesture(true); } catch (e) { console.warn(e); } };
+setInterval(() => { const v = H.duel && E.view(H.duel); $('#info').textContent = v ? `seed ${seedN} 第 ${v.n} 手 你 ${v.pHp} 他 ${v.eHp}\nnext ${H.next || '-'} queue ${H.queue.join(',') || '-'}\nforce ${FORCE ? FORCE.kind : '-'}\n${H.log.slice(-6).join('\n')}` : ''; }, 400);
+// ---- 開始：舞台 mount（strip 鏡頭）→ 盤面
 F.init();
-if (Q.get('sound')==='1') {
-  modal('對決測試台：要開聲音嗎？', [{t:'推門（有聲音）', f:()=>{ F.unlockFromGesture(true); start(seedN); }}, {t:'🔇 安靜', s:1, f:()=>{ F.unlockFromGesture(false); start(seedN); }}]);
-} else start(seedN);
+const boot = () => DipLabStage.mount($('#stage'), {
+  shop: 'dip', layoutBase: '../shops/', cards: C.cards, coverBase: '../', sprites: labSpr(), player: { head: 'neat' },
+  camera: 'strip', screen: 'duel', speed: () => 1
+}).then(st => {
+  H.stage = st;
+  return st.camera('strip', { ms: 0, screen: 'duel' });
+}).catch(e => { console.error(e); H.errors.push('stage: ' + e); }).then(() => {
+  start(seedN);
+  H.ready = true;
+});
+if (Q.get('sound')==='1') modal('對決測試台：要開聲音嗎？', [{t:'有聲音', f:()=>{ F.unlockFromGesture(true); boot(); }}, {t:'🔇 安靜', s:1, f:()=>{ F.unlockFromGesture(false); boot(); }}]);
+else boot();
 })();
 </script>
 </body></html>

@@ -697,8 +697,9 @@
         }
         P.r(bx, y0, 1, y1 - y0, '#4f301b');
       }
-      // 走道與唱盤區磨得比較亮（很淡）
-      P.a(0.07, function () { (o.worn || [[48, 96, 48, 226], [186, 210, 26, 112], [40, 270, 212, 52]]).forEach(function (r) { P.r(r[0], r[1], r[2], r[3], '#f4dcb8'); }); });
+      // 走道與唱盤區磨得比較亮（很淡）；地板往下延伸時（shop.js fitExt：L.extFrom＝原本的底），碰到原本底邊的那幾塊跟著往下接
+      var wb = L.extFrom || y1;
+      P.a(0.07, function () { (o.worn || [[48, 96, 48, 226], [186, 210, 26, 112], [40, 270, 212, 52]]).forEach(function (r) { P.r(r[0], r[1], r[2], r[1] + r[3] >= wb ? y1 - r[1] : r[3], '#f4dcb8'); }); });
       shadowRect(P, 0, y0, Wd, 2, 0.4);
     }
   });
@@ -775,24 +776,57 @@
     }
   });
 
-  // ================================================================ 牆上面朝外的唱片架（每張都是熱點：點了看唱片資訊）
-  function ledgeCells(o) { var n = o.n || 7, cw = 12, pitch = 14, out = []; for (var i = 0; i < n; i++) out.push({ i: i, id: (o.cards || [])[i] || null, x: o.x + 3 + i * pitch, y: o.y - cw, w: cw, h: cw }); return out; }
+  // ================================================================ 牆上面朝外的唱片架
+  // n＝每排幾格、rows＝幾排（排距 16，預設 1；cards 一排一排填）；plate＝掛在最上排上面的名牌（英文，像素字；例 FEATURE）；frame:'gold'＝金色格框＋金名牌。
+  // 有 bin（FIXLIST 4／5：門口牆＝FEATURE＋PICKS 兩區）＝整面是一區：主熱點 bin:<key> 由 shop.js 從 bin 產生、形狀＝box（含名牌），點牆上任何地方都是翻那一區；
+  //   這種架子不出每張封面的子熱點（唱片資訊在抽屜裡看）。沒有 bin 的架子照舊每張封面一個子熱點 rack:<id>（唱片資訊＋試聽）。
+  function pxW(s) { s = String(s).toUpperCase(); var w = -1; for (var i = 0; i < s.length; i++) w += O.glyph(s[i])[0].length + 1; return w; }
+  function ledgeW(o) { return (o.n || 7) * 14 + 4; }
+  function ledgeCells(o) {
+    var n = o.n || 7, rows = Math.max(1, o.rows || 1), cw = 12, pitch = 14, out = [];
+    for (var r = 0; r < rows; r++) for (var i = 0; i < n; i++) out.push({ i: r * n + i, id: (o.cards || [])[r * n + i] || null, x: o.x + 3 + i * pitch, y: o.y + r * 16 - cw, w: cw, h: cw });
+    return out;
+  }
+  // 名牌：外框 9 列高、貼在最上排格框上面 1 格（o.y−23 起，正好掛在軌道燈的軌道下）；寬＝字寬＋左右各 2 格＋框，置中在架子上
+  function ledgePlate(o) {
+    if (!o.plate) return null;
+    var tw = pxW(o.plate), w = tw + 6, lw = ledgeW(o);
+    return { x: o.x + Math.floor((lw - w) / 2), y: o.y - 23, w: w, h: 9, tw: tw };
+  }
   defO('ledge', {
     layer: 'wall',
-    box: function (o) { var n = o.n || 7; return [o.x, o.y - 13, n * 14 + 4, 18]; },
+    box: function (o) {
+      var lw = ledgeW(o), rows = Math.max(1, o.rows || 1), pl = ledgePlate(o);
+      var x0 = o.x, x1 = o.x + lw, y0 = o.y - 13, y1 = o.y + (rows - 1) * 16 + 5;
+      if (pl) { x0 = Math.min(x0, pl.x); x1 = Math.max(x1, pl.x + pl.w); y0 = Math.min(y0, pl.y); }
+      return [x0, y0, x1 - x0, y1 - y0];
+    },
     draw: function (P, o) {
+      var gold = o.frame === 'gold', lw = ledgeW(o), rows = Math.max(1, o.rows || 1);
       ledgeCells(o).forEach(function (c) {
-        var id = c.id || P.poolPick(sh(o.y) + c.i);
         shadowRect(P, c.x + 1, c.y + 1, c.w, c.h, 0.18);
-        P.r(c.x - 1, c.y - 1, c.w + 2, c.h + 1, '#2a201a');
-        P.cover(id, c.x, c.y, c.w, c.h);
+        if (gold) { P.r(c.x - 1, c.y - 1, c.w + 2, c.h + 1, '#8a6a1c'); P.r(c.x - 1, c.y - 1, c.w + 2, 1, '#f2c540'); P.r(c.x - 1, c.y - 1, 1, c.h + 1, '#e0b43a'); }
+        else P.r(c.x - 1, c.y - 1, c.w + 2, c.h + 1, '#2a201a');
+        if (c.id) P.cover(c.id, c.x, c.y, c.w, c.h);   // v4：牆上每格都由資料指定（check-shops 擋空格）；沒有就留一個空的展示架，不再隨機抽卡
+        else { P.r(c.x, c.y, c.w, c.h, '#3a2c22'); P.r(c.x + 2, c.y + c.h - 2, c.w - 4, 1, '#4a3a2e'); }
       });
-      var lw = (o.n || 7) * 14 + 4;
-      P.r(o.x, o.y, lw, 2, C.pine); P.r(o.x, o.y, lw, 1, C.pineL); P.r(o.x, o.y + 2, lw, 1, C.pineDD);
-      shadowRect(P, o.x + 1, o.y + 3, lw, 1, 0.2);
-      P.r(o.x + 2, o.y + 3, 1, 2, '#3a3430'); P.r(o.x + lw - 3, o.y + 3, 1, 2, '#3a3430');
+      for (var r = 0; r < rows; r++) {
+        var sy = o.y + r * 16;
+        P.r(o.x, sy, lw, 2, C.pine); P.r(o.x, sy, lw, 1, C.pineL); P.r(o.x, sy + 2, lw, 1, C.pineDD);
+        shadowRect(P, o.x + 1, sy + 3, lw, 1, 0.2);
+        P.r(o.x + 2, sy + 3, 1, 2, '#3a3430'); P.r(o.x + lw - 3, sy + 3, 1, 2, '#3a3430');
+      }
+      var pl = ledgePlate(o);
+      if (pl) {
+        shadowRect(P, pl.x + 1, pl.y + 1, pl.w, pl.h, 0.25);
+        P.r(pl.x, pl.y, pl.w, pl.h, '#5a3b1e');
+        P.r(pl.x + 1, pl.y + 1, pl.w - 2, pl.h - 2, gold ? '#f2c540' : '#f3ecd9');
+        P.r(pl.x + 1, pl.y + pl.h - 2, pl.w - 2, 1, gold ? '#c9971f' : '#d6ccb4');
+        P.ptext(o.plate, pl.x + 3, pl.y + 2, '#2a1a10');
+      }
     },
     hots: function (o, S) {
+      if (o.bin) return [];
       return ledgeCells(o).filter(function (c) { return c.id; }).map(function (c) { return { id: 'rack:' + c.id, rect: [c.x, c.y, c.w, c.h], label: cardLabel(S, c.id), action: 'wall-record:' + c.id, sub: true }; });
     }
   });
@@ -932,7 +966,9 @@
           if (hash(seed, k0, 23) < 0.6) { P.r(cx, bt - 1, 12, 1, '#f8f5ee'); P.r(cx, bt, 12, 1, '#d9d3c5'); }
           if (s === 0 && (c + (seed & 1)) % 2 === 0) { var tabC = ['#f8f5ee', '#f2c540', '#ef9a74', '#9ec3e6'][(c + (seed & 3)) % 4]; P.r(cx + c * 3, bt - 4, 6, 3, tabC); }
           var fb = bandBot + drop, plain = !front && hash(seed, k0, 24) < (fy < 200 ? 0.55 : fy < 240 ? 0.38 : 0.25);
-          var fid = (front && o.front && o.front[c]) || (o.cards && front && o.cards[c]) || (o.lean && s === 0 && c === 1 ? o.lean : P.poolPick(seed + s * 11 + c * 7));
+          // v4：看得到的封面只來自資料（front／cards，SPEC-v4 §2.3.5）；沒指定的格子畫素色封套，不再從全卡池隨機抽（會抽到不對區的封面）
+          var fid = (front && o.front && o.front[c]) || (o.cards && front && o.cards[c]) || null;
+          if (!fid) plain = true;
           P.r(cx - 1, fb - 2, 14, 13, '#1d1712');
           if (plain) { var pc = ['#efe8d6', '#f1e4ad', '#e9ddbd'][c % 3]; P.r(cx, fb - 1, 12, 11, pc); P.r(cx, fb - 1, 12, 1, shade(pc, 0.3)); P.r(cx + 1, fb + 1, 4, 6, shade(pc, -0.12)); }
           else P.cover(fid, cx, fb - 1, 12, 11, { clipY: front ? lip : null, shade: front ? 0 : 0.06 });
@@ -940,9 +976,12 @@
         }
       }
       if (o.tabs && o.tabs[0] && !/[^\x00-\x7f]/.test(o.tabs[0])) {
-        var t = o.tabs[0], tw = P.pwidth(t) + 4, tx = x + 3;
+        // 名牌＝分類英文（FIXLIST 4）：左邊貼齊 x+3；放不下（CLASSICAL）就把左右留白縮成 1 格，右緣不超出箱子的木框
+        var t = o.tabs[0], pad = 2, tw = P.pwidth(t) + 2 * pad, tx = x + 3;
+        if (tx + tw + 1 > x + w - 1) { pad = 1; tw = P.pwidth(t) + 2; }
+        if (tx + tw + 1 > x + w - 1) tx = Math.max(x + 1, x + w - 2 - tw);
         var by0 = fy - d + Math.round(secD) - 1 - fill - h - rec;
-        P.r(tx - 1, by0 - 4, tw + 2, 9, '#5a4a38'); P.r(tx, by0 - 3, tw, 7, '#fbf8f0'); P.ptext(t, tx + 2, by0 - 2, '#3a2a1c');
+        P.r(tx - 1, by0 - 4, tw + 2, 9, '#5a4a38'); P.r(tx, by0 - 3, tw, 7, '#fbf8f0'); P.ptext(t, tx + pad, by0 - 2, '#3a2a1c');
       }
       P.r(x, lip, w, h, C.pine);
       P.r(x, lip, w, 2, C.pineL); P.r(x, lip + 2, w, 1, C.pineD);
@@ -1068,7 +1107,7 @@
       P.r(ax - 1, ay - 1, 10, 9, '#111'); P.r(ax, ay, 8, 5, '#2a2a2f'); P.r(ax, ay + 5, 8, 2, '#1b1b1f');
       P.r(ax + 1, ay + 1, 3, 2, '#e1a23a'); P.p(ax + 2, ay + 1, '#7a3a10'); P.p(ax + 5, ay + 2, '#cfcfd4'); P.p(ax + 7, ay + 2, '#cfcfd4'); P.p(ax + 6, ay + 6, '#64d36a');
       P.r(x + 30, top + 9, 8, 2, '#efe8d6'); P.r(x + 30, top + 10, 8, 1, '#c9c2ae');
-      P.r(x + 29, top + 3, 10, 7, '#1d1712'); P.cover(o.stack || P.poolPick(4242), x + 30, top + 4, 8, 5, { glare: false });
+      P.r(x + 29, top + 3, 10, 7, '#1d1712'); if (o.stack) P.cover(o.stack, x + 30, top + 4, 8, 5, { glare: false }); else P.r(x + 30, top + 4, 8, 5, '#e9ddbd');
       P.r(x + 10, top - 7, 14, 7, '#7a2a24'); P.r(x + 11, top - 6, 12, 5, '#f3ecd9');
       P.text(o.sign || '試聽', x + 17, top - 3.5, { size: 4.8, color: '#7a2a24', bold: true });
       // 掛勾在桌子右端、桌面高度（≈0.72 m）；耳機掛在桌邊（耳罩 ≈0.45–0.6 m）
@@ -1093,6 +1132,51 @@
     }
   });
 
+  // ================================================================ 櫃檯招牌（店家資料 o.sign，SPEC-v4 §2.3.6）
+  // {emblem:'dip'}（或字串 'dip'）＝EMBLEM 表裡的點陣 logo；{pal, rows}＝直接給點陣；其他字串＝舊式金框字牌（給以後別家店）；null／false／沒寫＝不畫。
+  // 點陣畫在正面板中央：中心 (x+⌊w/2⌋, lip+⌊(h−2)/2⌋)，本店＝(248,191)；正面板是正立面，圓就畫成正圓。
+  var EMBLEM = {
+    // 店主的 logo，候選 B15（15×15：黑盤、米白圈、無點 dıp、每側 2 格中間色溝紋；逐字取自 v4/understand/item1-logo/cand/logo-B15.txt）
+    dip: {
+      pal: { k: '#1d1712', c: '#eee5c6', m: '#756e5e' },
+      rows: [
+        '.....ccccc.....',
+        '...cckkkkkcc...',
+        '..ckkkkkkkkkc..',
+        '.ckkmkkkkkkkkc.',
+        '.ckmkckkkkkkkc.',
+        'ckkkkckkkkkkkkc',
+        'ckkkcckckcckkkc',
+        'ckkckckckckckkc',
+        'ckkkcckckcckkkc',
+        'ckkkkkkkkckkkkc',
+        '.ckkkkkkkckmkc.',
+        '.ckkkkkkkkmkkc.',
+        '..ckkkkkkkkkc..',
+        '...cckkkkkcc...',
+        '.....ccccc.....'
+      ]
+    }
+  };
+  function signEmblem(sg) {
+    if (!sg) return null;
+    if (sg.rows) return sg;
+    var k = typeof sg === 'string' ? sg : sg.emblem;
+    return (typeof k === 'string' && Object.prototype.hasOwnProperty.call(EMBLEM, k)) ? EMBLEM[k] : null;
+  }
+  function counterSign(P, o, x, lip, w, h) {
+    var sg = o.sign, em = signEmblem(sg);
+    if (em) {
+      var m = em.rows[0].length, n = em.rows.length, cx = x + Math.floor(w / 2), cy = lip + Math.floor((h - 2) / 2);
+      P.rows(em.rows, cx - Math.floor((m - 1) / 2), cy - Math.floor((n - 1) / 2), em.pal, 1);
+      return;
+    }
+    if (typeof sg === 'string' && sg) {   // 舊式金框字牌（v3 的「DIP」牌子同一個樣式，字換成 sg）
+      var tw = P.pwidth(sg), pw = tw + 6, lx = x + Math.floor((w - pw) / 2), ly = lip + 8;
+      P.r(lx - 1, ly - 1, pw + 2, 11, '#c9a24a'); P.r(lx, ly, pw, 9, '#1f1612'); P.ptext(sg, lx + 3, ly + 2, '#e9c35a');
+    }
+  }
+
   // ================================================================ 櫃檯（老闆站後面）＋正在放的封面＋店裡的唱盤＋收銀機＋睡覺的貓
   function counterGeo(o) {
     var top = o.y - o.h - o.d, nx = o.x + 4, nb = top + 8;
@@ -1115,8 +1199,7 @@
       for (var px = x + 4; px < x + w; px += 5) P.r(px, lip + 3, 1, h - 6, C.walnutD);
       for (var gI = 0; gI < 40; gI++) P.r(x + 1 + Math.floor(hash(gI, 5, 81) * (w - 2)), lip + 4 + Math.floor(hash(gI, 6, 81) * (h - 9)), 1, 3, C.walnutL);
       P.r(x, lip + 2, w, 1, C.walnutD); P.r(x, fy - 3, w, 3, C.walnutDD); P.r(x, lip, 1, h, C.walnutL);
-      var lx = x + Math.floor(w / 2) - 13, ly = lip + 8;
-      P.r(lx - 1, ly - 1, 28, 11, '#c9a24a'); P.r(lx, ly, 26, 9, '#1f1612'); P.ptext('DIP', lx + 3, ly + 2, '#e9c35a'); P.r(lx + 16, ly + 2, 7, 5, '#1f1612'); P.ell(lx + 19.5, ly + 4.5, 3, 3, '#e9c35a'); P.ell(lx + 19.5, ly + 4.5, 1.6, 1.6, '#1f1612'); P.p(lx + 19, ly + 4, '#e9c35a');
+      counterSign(P, o, x, lip, w, h);
       P.r(x, top, w, d, '#8a5a36'); P.r(x, top, w, 1, C.walnut); P.r(x, lip - 2, w, 2, '#9c6a42'); P.r(x, lip - 1, w, 1, '#b07a4c');
       // 正在放（小畫架）
       var nx = x + 4, nb = top + 8;
@@ -1154,50 +1237,56 @@
     }
   });
 
-  // ================================================================ 唱盤台（唱盤區：他左白台、你右黑台；轉的就是贏的那張）
-  function deckGeo(o) { var top = o.y - o.h - o.d, tx = o.x + 2, ty = top + 1; return { top: top, lip: o.y - o.h, tx: tx, ty: ty, tw: o.w - 4, pc: [tx + 8.5, ty + 4] }; }
-  defO('deckStand', {
+  // ================================================================ 對決唱盤（唱盤區只有一台，SPEC-v4 §2.3.4）：老闆站台後當裁判、兩人在兩側；贏的那手的唱片在轉
+  // S.state.deck＝{ rec:{attr, card, kind:'ace'|null}, state:'land'|'armMid'|'spin', by:'e'|'p' } | null（stage.js 每格填）
+  // 本體木紋（同櫃檯 C.walnut），唱盤座 dip 黑；正面板中央一格 NOW 小窗（贏的那張封面）；綠燈＝在轉
+  function duelDeckGeo(o) {
+    var top = o.y - o.h - o.d, lip = o.y - o.h, cx = o.x + Math.floor(o.w / 2);
+    return { top: top, lip: lip, pc: [cx, top + Math.floor(o.d / 2)], now: [cx - 7, lip + 1, 14, 14], pivot: [o.x + o.w - 7, top + 1], lamp: [o.x + o.w - 5, lip + 4] };
+  }
+  defO('duelDeck', {
     dyn: true,
-    box: function (o) { var g = deckGeo(o); return [o.x - 1, g.top - 1, o.w + 2, o.y - g.top + 1]; },
+    box: function (o) { var g = duelDeckGeo(o); return [o.x - 1, g.top - 2, o.w + 2, o.y - g.top + 2]; },
     foot: function (o) { return [o.x, o.y - o.d, o.w, o.d]; },
-    center: function (o) { return deckGeo(o).pc; },
+    center: function (o) { return duelDeckGeo(o).pc; },
     draw: function (P, o, S) {
-      var x = o.x, fy = o.y, w = o.w, h = o.h, g = deckGeo(o), lip = g.lip, top = g.top;
-      var e = o.side === 'e';
-      var body = e ? '#efe5cf' : '#34343c', bodyL = e ? '#fbf6ea' : '#4a4a55', bodyD = e ? '#d2c5a6' : '#24242a', bodyDD = e ? '#b3a585' : '#17171b';
-      var ds = (S.state && S.state.decks && S.state.decks[o.side]) || null, fr = Math.floor(((S.rt || 0) * 10)) & 3;
-      shadowRect(P, x - 1, fy - 1, w + 3, 3, 0.45);
-      P.r(x + 1, lip + 8, 2, h - 8, bodyD); P.r(x + 1, lip + 8, 1, h - 8, bodyL); P.r(x + w - 3, lip + 8, 2, h - 8, bodyDD);
-      P.r(x + 3, fy - 7, w - 6, 2, bodyD); P.r(x + 3, fy - 7, w - 6, 1, bodyL);
-      for (var sv = 0; sv < 4; sv++) { var sc = ['#efe8d6', '#2c2725', '#e6cd7c', '#b9443a'][(sv + (e ? 0 : 2)) % 4]; P.r(x + 5 + sv * 2, fy - 16 + (sv % 2), 2, 9 - (sv % 2), sc); P.p(x + 5 + sv * 2, fy - 16 + (sv % 2), shade(sc, 0.3)); }
-      P.r(x, top, w, o.d, body); P.r(x, top, w, 1, bodyD);
-      P.r(x, lip, w, 8, bodyD); P.r(x, lip, w, 1, bodyL); P.r(x, lip, 1, 8, bodyL); P.r(x + w - 1, lip, 1, 8, bodyDD); P.r(x, lip + 7, w, 1, bodyDD);
-      var lgx = x + w / 2, lgy = lip + 4;
-      P.ell(lgx, lgy, 2.6, 2.4, e ? '#1d1712' : '#efe5cf'); P.p(Math.floor(lgx), Math.floor(lgy), e ? '#c11628' : '#c9a24a');
-      var tx = g.tx, ty = g.ty, tw = g.tw;
-      P.r(tx - 1, ty - 1, tw + 2, 10, e ? '#9d917a' : '#0d0d10');
-      P.r(tx, ty, tw, 8, e ? '#f7f1e3' : '#2a2a31'); P.r(tx, ty, tw, 1, e ? '#ffffff' : '#41414a');
-      P.r(tx, ty + 8, tw, 1, e ? '#c9bd9f' : '#18181c');
-      var pcx = g.pc[0], pcy = g.pc[1];
-      P.ell(pcx, pcy, 6.6, 3.9, e ? '#bdbcb8' : '#8e8e95'); P.ell(pcx, pcy, 6, 3.4, '#2a2a2c'); P.ell(pcx, pcy, 3.4, 1.8, '#333336');
-      var spin = ds && ds.state === 'spin';
-      if (ds && ds.rec) {
-        var lift = ds.state === 'land' ? 1 : 0, ace = ds.rec.kind === 'ace';
-        P.ell(pcx, pcy - lift, 6, 3.4, ace ? '#c9c9d2' : '#151515'); P.ell(pcx, pcy - lift, ace ? 5 : 4.2, ace ? 2.8 : 2.3, ace ? '#151515' : '#262424');
-        P.r(pcx - 1.5, pcy - 1 - lift, 3, 2, ace ? '#e9c35a' : (ATTR[ds.rec.attr] || '#c11628')); P.p(pcx - 0.5, pcy - 0.5 - lift, '#eee');
-        if (spin) { var gl = [[-4, -2], [3, -2], [4, 1], [-3, 2]][fr]; P.p(pcx + gl[0], pcy + gl[1], '#6a6a70'); }
-      }
-      var px0 = tx + tw - 3, py0 = ty + 1;
-      P.r(px0, py0, 2, 2, e ? '#8f8a80' : '#9a9aa2');
-      var armEnd = spin ? [pcx + 3, pcy] : (ds && ds.state === 'armMid' ? [pcx + 5, pcy - 2] : [px0 + 1, ty + 7]);
-      P.line(px0 + 1, py0 + 1, armEnd[0], armEnd[1], e ? '#6d685e' : '#d4d4da'); P.p(armEnd[0], armEnd[1], e ? '#3a3630' : '#f2f2f5');
-      P.r(tx + 1, ty + 6, 2, 1, e ? '#8f8a80' : '#9a9aa2'); P.p(tx + tw - 2, ty + 6, spin ? '#64d36a' : '#a33');
-      if (ds && ds.glow) P.a(0.6, function () { P.r(x - 1, top - 1, w + 2, 1, '#f2c540'); P.r(x - 1, lip + 6, w + 2, 1, '#f2c540'); });
+      var x = o.x, fy = o.y, w = o.w, h = o.h, d = o.d, g = duelDeckGeo(o), lip = g.lip, top = g.top, pcx = g.pc[0], pcy = g.pc[1];
+      var ds = (S.state && S.state.deck) || null, rec = ds && ds.rec, spin = !!(ds && ds.state === 'spin'), fr = Math.floor(((S.rt || 0) * 10)) & 3;
+      shadowRect(P, x - 2, fy - 1, w + 4, 3, 0.45);
+      // 正面板（木紋，跟櫃檯同一套）
+      P.r(x, lip, w, h, C.walnut);
+      for (var px = x + 3; px < x + w - 1; px += 5) P.r(px, lip + 3, 1, h - 6, C.walnutD);
+      for (var gI = 0; gI < 14; gI++) P.r(x + 1 + Math.floor(hash(gI, 7, 91) * (w - 2)), lip + 3 + Math.floor(hash(gI, 8, 91) * (h - 7)), 1, 2, C.walnutL);
+      P.r(x, lip, w, 1, C.walnutL); P.r(x, lip + 1, w, 1, C.walnutD); P.r(x, fy - 3, w, 3, C.walnutDD); P.r(x, lip, 1, h, C.walnutL); P.r(x + w - 1, lip, 1, h, C.walnutD);
+      // NOW 小窗：贏的那張封面；沒唱片＝深色空框
+      var nw = g.now;
+      P.r(nw[0], nw[1], nw[2], nw[3], '#1d1712');
+      if (rec && rec.card) P.cover(rec.card, nw[0] + 1, nw[1] + 1, nw[2] - 2, nw[3] - 2, { glare: false });
+      else { P.r(nw[0] + 1, nw[1] + 1, nw[2] - 2, nw[3] - 2, '#2b221b'); P.r(nw[0] + 4, nw[1] + 6, 6, 1, '#3a3029'); }
+      if (rec && rec.kind === 'ace') { P.r(nw[0] - 1, nw[1] - 1, nw[2] + 2, 1, '#e9c35a'); P.r(nw[0] - 1, nw[1] + nw[3], nw[2] + 2, 1, '#e9c35a'); P.r(nw[0] - 1, nw[1], 1, nw[3], '#e9c35a'); P.r(nw[0] + nw[2], nw[1], 1, nw[3], '#e9c35a'); }
+      P.p(g.lamp[0], g.lamp[1], spin ? '#64d36a' : '#a33'); P.p(g.lamp[0] + 1, g.lamp[1], '#1d1712');
+      // 台面（深色木）＋唱盤座（dip 黑）
+      P.r(x, top, w, d, '#8a5a36'); P.r(x, top, w, 1, C.walnut); P.r(x, lip - 1, w, 1, '#b07a4c');
+      P.r(x + 2, top, w - 4, d - 1, '#1d1712'); P.r(x + 2, top, w - 4, 1, '#3a302a'); P.r(x + 2, lip - 2, w - 4, 1, '#120d0a');
+      // 轉盤（置中、加大：盤面 rx 11／ry 3.8）
+      P.ell(pcx, pcy, 11, 3.8, '#6c6c74'); P.ell(pcx, pcy, 10.4, 3.3, '#2a2a2c'); P.ell(pcx, pcy, 6, 1.8, '#333336');
+      if (rec) {   // 唱片（rx 10／ry 3.4）：落下那一下浮 1 格；王牌＝銀邊金標
+        var lift = ds.state === 'land' ? 1 : 0, ace = rec.kind === 'ace';
+        P.ell(pcx, pcy - lift, 10, 3.4, ace ? '#c9c9d2' : '#151515'); P.ell(pcx, pcy - lift, ace ? 9 : 7.4, ace ? 2.9 : 2.4, ace ? '#151515' : '#262424');
+        P.r(pcx - 2, pcy - 1 - lift, 4, 2, ace ? '#e9c35a' : (ATTR[rec.attr] || '#c11628')); P.p(pcx, pcy - lift, '#eee');
+        if (spin) { var gl = [[-6, -2], [5, -2], [7, 1], [-5, 2]][fr]; P.p(pcx + gl[0], pcy + gl[1], '#6a6a70'); }
+      } else P.p(pcx, pcy, '#9a9aa2');
+      // 唱臂：軸在台面右後；在轉＝落在唱片外圈、抬到一半、靠在架上
+      var pv = g.pivot;
+      P.r(pv[0], pv[1], 3, 2, '#9a9aa2'); P.p(pv[0] + 1, pv[1], '#d4d4da');
+      var armEnd = spin ? [pcx + 7, pcy - 1] : (ds && ds.state === 'armMid' ? [pcx + 10, pcy - 3] : [pv[0] + 1, pv[1] + 6]);
+      P.line(pv[0] + 1, pv[1] + 1, armEnd[0], armEnd[1], '#d4d4da'); P.p(armEnd[0], armEnd[1], '#f2f2f5');
+      P.r(pv[0] - 1, pv[1] + 6, 3, 1, '#55555c');
     },
-    glow: function (P, o, S) {   // 落盤之後：每 450 ms 冒一顆音符（屬性色），0.9 秒往上飄 9 格
-      var ds = S.state && S.state.decks && S.state.decks[o.side]; if (!ds || ds.state !== 'spin' || !ds.rec) return;
-      var g = deckGeo(o), t = (S.rt || 0) * 1000;
-      for (var q = 0; q < 2; q++) { var ph = ((t + q * 450) % 900) / 900; noteGlyph(P, g.pc[0] + 3 + (q ? -6 : 0), g.top - 4 - Math.round(ph * 9), ds.rec.kind === 'ace' ? '#e9c35a' : (ATTR[ds.rec.attr] || '#c9a24a'), 1 - ph * 0.7); }
+    glow: function (P, o, S) {   // 在轉：每 450 ms 冒一顆屬性色音符，0.9 秒往上飄 9 格
+      var ds = S.state && S.state.deck; if (!ds || ds.state !== 'spin' || !ds.rec) return;
+      var g = duelDeckGeo(o), t = (S.rt || 0) * 1000, col = ds.rec.kind === 'ace' ? '#e9c35a' : (ATTR[ds.rec.attr] || '#c9a24a');
+      for (var q = 0; q < 2; q++) { var ph = ((t + q * 450) % 900) / 900; noteGlyph(P, g.pc[0] + 4 + (q ? -9 : 0), g.top - 4 - Math.round(ph * 9), col, 1 - ph * 0.7); }
     }
   });
 
@@ -1232,6 +1321,13 @@
   }
   function flatDisc(P, x, y, attr, o) {   // 平躺在地上（輸家落地、平手）
     o = o || {};
+    if (o.big) {   // 收尾留在地上的那張（V16）：奶油色封套平躺、黑膠露出半張、亮邊
+      P.a(0.45, function () { P.ell(x + 1, y + 2, 11, 3, '#1b0e05'); });
+      P.r(x - 10, y - 3, 12, 6, '#3a2a18'); P.r(x - 9, y - 2, 10, 4, '#f3ead6'); P.r(x - 9, y - 2, 10, 1, '#ffffff'); P.r(x - 7, y - 1, 4, 2, ATTR[attr] || '#c11628');
+      P.ell(x + 3, y, 7.5, 3, '#d9d4c4'); P.ell(x + 3, y, 6.6, 2.5, '#151515'); P.ell(x + 3, y, 4.2, 1.5, '#2b2b2b');
+      P.r(x + 2, y - 1, 3, 2, o.kind === 'ace' ? '#e9c35a' : (ATTR[attr] || '#c11628')); P.p(x - 1, y - 2, '#8e8e98');
+      return;
+    }
     P.a(0.4, function () { P.ell(x, y + 1, 6, 2, '#1b0e05'); });
     P.ell(x, y, 5.5, 2.2, '#8e8e98'); P.ell(x, y, 4.8, 1.8, o.void ? '#55555f' : '#151515');
     P.r(x - 1, y - 1, 3, 1, o.void ? '#9a9aa4' : o.kind === 'ace' ? '#e9c35a' : (ATTR[attr] || '#c11628')); P.p(x - 3, y - 1, '#5a5a66');
@@ -1276,19 +1372,38 @@
     }
   });
 
-  // ================================================================ 手上拿的東西（shop.js 的 hold）：{ sleeve: 卡 id }＝封套；'ace'＝王牌；{ disc: 屬性 }＝要丟的唱片
+  // ================================================================ 手上拿的東西（shop.js 的 hold）
+  //   { sleeve: 卡 id }＝封套；{ sleeve, back:true }＝封套背面（他亮牌前：深色紙＋白色內圈標；不帶 id＝不知道是哪張）；
+  //   'ace' 或 { ace:true, sleeve|card }＝王牌（金框）；{ disc: 屬性 }＝唱片；sx（0–1）＝翻面時橫向壓扁（stage.js roundItem 200–280 ms）
+  function sleeveBack(P, hx, hy, hw, sx) {
+    P.r(hx - hw, hy - 7, hw * 2, 14, '#1d1712');
+    if (hw < 2) return;
+    P.r(hx - hw + 1, hy - 6, hw * 2 - 2, 12, '#3a2f2b');
+    P.r(hx - hw + 1, hy - 6, hw * 2 - 2, 1, '#4d413b'); P.r(hx - hw + 1, hy + 5, hw * 2 - 2, 1, '#2a211e');
+    P.ell(hx, hy, 3.6 * sx, 3.6, '#efe8d6'); P.ell(hx, hy, 1.6 * sx, 1.6, '#3a2f2b'); P.p(hx, hy, '#1d1712');
+  }
   DS.hookO('holdDraw', function (P, a, hx, hy, S) {
     var h = a.hold; if (!h) return;
+    var sx = (h && h.sx != null) ? Math.max(0, Math.min(1, +h.sx || 0)) : 1;
+    if (h.back) { sleeveBack(P, hx, hy, Math.max(1, Math.round(7 * sx)), sx); return; }
     if (h === 'ace' || h.ace) {
-      P.r(hx - 8, hy - 8, 16, 16, '#8a6020'); P.r(hx - 7, hy - 7, 14, 14, '#e9c35a'); P.r(hx - 6, hy - 6, 12, 12, '#1d1712');
-      if (h.card) P.cover(h.card, hx - 5, hy - 5, 10, 10, { glare: false });
-      else disc7(P, hx, hy, 'c', 0, { kind: 'ace', outline: false });
-      if (Math.floor((S.t || 0) * 4) % 2 === 0) { P.p(hx + 8, hy - 9, '#fff1c2'); P.p(hx - 9, hy + 7, '#fff1c2'); }
+      var aw = Math.max(1, Math.round(8 * sx)), cid = h.card || h.sleeve;
+      P.r(hx - aw, hy - 8, aw * 2, 16, '#8a6020');
+      if (aw >= 2) P.r(hx - aw + 1, hy - 7, aw * 2 - 2, 14, '#e9c35a');
+      if (aw >= 3) P.r(hx - aw + 2, hy - 6, aw * 2 - 4, 12, '#1d1712');
+      if (aw >= 4) { if (cid) P.cover(cid, hx - aw + 3, hy - 5, aw * 2 - 6, 10, { glare: false }); else if (sx >= 1) disc7(P, hx, hy, 'c', 0, { kind: 'ace', outline: false }); }
+      if (sx >= 1 && Math.floor((S.t || 0) * 4) % 2 === 0) { P.p(hx + 8, hy - 9, '#fff1c2'); P.p(hx - 9, hy + 7, '#fff1c2'); }
       return;
     }
-    if (h.sleeve) { P.r(hx - 7, hy - 7, 14, 14, '#1d1712'); P.cover(h.sleeve, hx - 6, hy - 6, 12, 12, { glare: false }); P.a(0.22, function () { P.r(hx - 6, hy - 6, 12, 1, '#ffffff'); }); return; }
+    if (h.sleeve) {
+      var w7 = Math.max(1, Math.round(7 * sx));
+      P.r(hx - w7, hy - 7, w7 * 2, 14, '#1d1712');
+      if (w7 >= 2) { P.cover(h.sleeve, hx - w7 + 1, hy - 6, w7 * 2 - 2, 12, { glare: false }); P.a(0.22, function () { P.r(hx - w7 + 1, hy - 6, w7 * 2 - 2, 1, '#ffffff'); }); }
+      return;
+    }
     if (h.disc) disc7(P, hx, hy, h.disc, Math.floor((S.t || 0) * 16) % 8, { kind: h.kind });
   });
 
-  window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, deckGeo: deckGeo, counterGeo: counterGeo };
+  window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, duelDeckGeo: duelDeckGeo, counterGeo: counterGeo,
+    EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign, sleeveBack: sleeveBack };
 })();

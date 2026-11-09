@@ -143,6 +143,10 @@
     emit('close', c);
     if (r) r();
   }
+  // 連點偵測：跟上一下按下隔不到 SERIES_MS 的算同一串，seriesAt＝這一串第一下的時間（document 捕獲階段先記，面板自己的監聽再看）
+  var SERIES_MS = 350, lastDown = -1e9, seriesAt = -1e9;
+  function tnow() { return (W.performance && performance.now) ? performance.now() : Date.now(); }
+  D.addEventListener('pointerdown', function () { var t = tnow(); if (t - lastDown >= SERIES_MS) seriesAt = t; lastDown = t; }, true);
   function open(card, opts) {
     opts = opts || {};
     if (typeof card === 'string') card = lookup(card);
@@ -175,8 +179,22 @@
     // 封面讀不到：換成斜紋底＋專輯名（原版 .cov.noimg）
     var img = m.querySelector('img.cov');
     if (img) img.addEventListener('error', function () { var d = D.createElement('div'); d.className = 'cov noimg'; d.innerHTML = '<span>' + esc(o.album) + '</span>'; if (img.parentNode) img.parentNode.replaceChild(d, img); });
+    // 點遮罩（面板外）關掉：只認「在遮罩上按下」的那一下。長按封面開資訊時手指還按著，放開補送的 click 會落在遮罩上——那一下不算（notes-B2 請求）
+    var downOnMask = false;
+    // 整個面板也一樣（H3／RV11-1）：手牌攤開時那一排在畫面最底下，正好是「關閉」那條（sticky）；疊著時介紹文還沒到，手指底下是串流鈕。
+    //   打開之後還沒在面板裡按下過（armed＝false）的 click 一律吞掉——放開長按補送的那一下不會關掉面板、不會開串流連結、不會按到唱機。
+    //   鍵盤（Enter／空白鍵，detail＝0）與程式 el.click()（detail＝0）照常。
+    //   連點（V5-play-1）：揭曉時連點盤面加速，點到牌桌那兩張就開了這個面板，下一下 150 ms 後正好落在串流鈕上。
+    //   打開之前就在連點的那一串（每下隔不到 SERIES_MS）都不算按下過；停一下（≥ SERIES_MS）再點才 armed。
+    var armed = false, openAt = tnow();
+    m.addEventListener('pointerdown', function () { if (seriesAt >= openAt) armed = true; }, true);
     m.addEventListener('click', function (e) {
-      if (e.target === m) { close(); return; }
+      if (armed || e.detail === 0) return;
+      e.preventDefault(); e.stopPropagation();
+    }, true);
+    m.addEventListener('pointerdown', function (e) { downOnMask = e.target === m; });
+    m.addEventListener('click', function (e) {
+      if (e.target === m) { if (!downOnMask) return; downOnMask = false; close(); return; }
       var t = e.target.closest && e.target.closest('#ciClose');
       if (t) { e.preventDefault(); close(); return; }
       if (e.target.closest && e.target.closest('.streaming-btn[aria-disabled=true]')) { e.preventDefault(); }

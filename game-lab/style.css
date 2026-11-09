@@ -159,7 +159,7 @@ small{font-size:inherit;}
 .lb-cv .badge{position:absolute;top:0;left:0;z-index:4;font:700 10px var(--zh);padding:0 4px;color:#fff;line-height:15px;letter-spacing:.06em;}
 .lb-cv .badge.hall{background:var(--ace-hall);} .lb-cv .badge.pearl{background:var(--ace-pearl);} .lb-cv .badge.heresy{background:var(--ace-heresy);}
 .lb-cv .badge.gold{background:var(--gold);}
-.lb-cv .badge.new{left:auto;right:0;background:var(--red);font-family:'Space Mono',monospace;}
+.lb-cv .badge.new{left:auto;right:0;background:var(--red);font-family:var(--zh);letter-spacing:0;}
 .lb-cv .badge.mod{top:auto;bottom:0;background:rgba(17,17,17,.82);}
 .stars{font:700 12px 'Space Mono',var(--zh);letter-spacing:.02em;white-space:nowrap;}
 .stars b{font-weight:700;margin-right:5px;}
@@ -180,7 +180,7 @@ small{font-size:inherit;}
 .lb-sheet .hd .sub{flex:none;}
 .lb-sheet .hd .x{min-width:44px;height:32px;font-size:16px;margin-right:-8px;}
 .lb-sheet .note,.lb-sheet .msg{margin:6px 0 0;font-size:12px;color:var(--gray2);line-height:1.6;}
-.lb-sheet .note.detail{min-height:38px;color:#333;}
+.lb-sheet .note.detail{min-height:38px;color:#333;flex-shrink:0;}   /* 面板的直排擠不扁它（V5-play-7：375 挑王牌那行被擠成 4 px） */
 .lb-sheet .note b{color:var(--ink);}
 .lb-sheet .foot{position:-webkit-sticky;position:sticky;bottom:0;margin:auto -12px 0;padding:8px 12px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--line);z-index:2;}
 .lb-sheet .foot.two,.lb-sheet .two{display:flex;gap:8px;}
@@ -276,7 +276,6 @@ small{font-size:inherit;}
 .lb-h3{margin:12px 0 6px;font-size:12px;font-weight:700;color:var(--gray2);letter-spacing:.1em;}
 .lb-learned{display:flex;flex-wrap:wrap;gap:6px;}
 .lb-learned span{border:1px solid var(--gold);background:var(--cream);color:var(--cream-ink);font-size:12px;font-weight:700;padding:2px 8px;}
-.lb-help .lb-btn[data-a=replay]{margin-top:14px;}
 
 /* ---------- 吐司（z 40，不吃點擊） ---------- */
 .lb-toast{position:absolute;left:50%;top:40px;z-index:40;-webkit-transform:translateX(-50%);transform:translateX(-50%);max-width:92%;background:#fff;border:1px solid var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18);
@@ -402,7 +401,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .stars b.mk{outline:2px solid var(--ink);outline-offset:1px;padding:0 2px;}
 /* 贏了：他丟過的唱片（最多 7 張）＋（菁英／藏家）一件配件 */
 .lb-rgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px;margin-top:8px;flex:none;}
-.lb-rgrid .lb-ct .al{-webkit-line-clamp:1;font-size:11px;}
+.lb-rgrid .lb-ct .al{display:block;-webkit-line-clamp:none;white-space:nowrap;text-overflow:ellipsis;font-size:11px;}   /* 一行、照字切（「The Disinteg…」，不是整個字放不下就只剩「The…」；V5-play-9） */
 .lb-rgrid .lb-ct .ar{font-size:9px;}
 .lb-rgrid .lb-ct .stars{font-size:11px;margin-top:2px;}
 .lb-rgrid .lb-ct .stars b{margin-right:3px;}
@@ -410,6 +409,27 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-rgrid.bin{grid-template-columns:repeat(3,minmax(0,1fr));}
 .lb-sheet.reward .lb-h3{margin-top:14px;}
 .lb-sheet.reward .lb-relic{min-height:56px;}
+.lb-sheet.reward .foot.rel{align-items:stretch;}
+.lb-sheet.reward .foot.rel .orr{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px;}
+.lb-sheet.reward .foot.rel .cap{font-size:10px;line-height:1.2;color:var(--gray2);letter-spacing:.04em;}
+.lb-sheet.reward .foot.rel .lb-relic{flex:1;min-height:48px;padding:4px 8px;gap:8px;width:100%;}
+.lb-sheet.reward .foot.rel .lb-relic .pix{width:28px;height:28px;}
+.lb-sheet.reward .foot.rel .lb-relic .nm{font-size:13px;}
+.lb-sheet.reward .foot.rel .lb-relic .ds{font-size:10px;line-height:1.35;}
+.lb-sheet.reward .foot.rel>[data-a=skip]{flex:0 0 30%;align-self:flex-end;min-height:48px;}
+@media (max-height:700px){
+  /* 兩排唱片（菁英／藏家丟了 5–6 張）：矮螢幕拿掉藝人那行、鈕矮一點，兩排＋底下那條不用捲（RT-3） */
+  .lb-rgrid.rows2{gap:6px 8px;margin-top:6px;}
+  .lb-rgrid.rows2 .lb-ct .ar{display:none;}
+  .lb-rgrid.rows2 .lb-ct .al{margin-top:3px;}
+  .lb-rgrid.rows2 .lb-ct .lb-pickb{min-height:36px;}
+  .lb-sheet.reward .lb-rgrid.rows2+.note{display:none;}
+}
+@media (max-height:600px){
+  .lb-rgrid.rows2{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px 6px;}
+  .lb-rgrid.rows2 .lb-ct .stars{font-size:10px;letter-spacing:-.02em;}
+  .lb-rgrid.rows2 .lb-ct .stars b{margin-right:1px;}
+}
 /* 試聽機：選中的那張 */
 .lb-pick.booth{grid-template-columns:repeat(4,minmax(0,1fr));}
 .lb-pick.booth .lb-pickb{min-height:40px;}
@@ -423,7 +443,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-night .nc{display:flex;flex-direction:column;align-items:center;gap:2px;min-height:44px;padding:2px 0;font-family:var(--zh);}
 .lb-night .nc .tm{font:700 10px 'Space Mono',monospace;color:var(--gray);}
 .lb-night .nc .hd{position:relative;width:42px;height:42px;border:1px solid var(--ink);display:grid;place-items:center;background:#fff;overflow:hidden;}
-.lb-night .nc .nm{font-size:11px;font-weight:700;line-height:1.2;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-night .nc .nm{font-size:11px;font-weight:700;line-height:1.2;max-width:100%;overflow:hidden;text-align:center;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-break:strict;text-wrap:balance;}   /* 長的身分名（地下樂團吉他手）折兩行、不切掉（FIXLIST 6） */
 .lb-night .nc.done .hd{background:var(--ink);}
 .lb-night .nc.done .hd svg{opacity:.35;}
 .lb-night .nc.done .ok{position:absolute;right:2px;bottom:0;color:#fff;font-size:12px;font-weight:700;}
@@ -470,7 +490,25 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-rules .gold{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:900;padding:0 4px;line-height:15px;letter-spacing:.08em;margin-left:4px;vertical-align:1px;}
 .lb-rules .rrel{margin:12px 0 0;font-size:12px;color:#333;text-align:center;}
 .lb-rules .rfoot{margin-top:10px;font-size:11px;color:var(--gray);line-height:1.6;text-align:center;}
-.lb-help .lb-btn[data-a=replay]{margin-top:14px;}
+/* 規則卡的頁尾：「重看教學」＋「關閉」同一列 */
+.lb-modal .mfoot.two{display:flex;gap:8px;}
+.lb-modal .mfoot.two .lb-btn{flex:1;}
+/* 規則卡四個尺寸不捲動（§3.2 B2）：可視高 ≤760 時收緊——三角縮小浮在右邊、六行字小一號、學會的規則一列排 */
+@media (max-height:760px){
+  .lb-modal:has(.lb-help){padding-top:8px;}
+  .lb-help .lb-rules h1{font-size:17px;letter-spacing:.14em;text-align:left;}
+  .lb-help .lb-rules .tri{float:right;width:112px;max-width:112px;margin:2px 0 4px 8px;}
+  .lb-help .lb-rules .rl{margin-top:6px;}
+  .lb-help .lb-rules .rl li{gap:8px;padding:4px 0 3px;font-size:13px;line-height:1.45;}
+  .lb-help .lb-rules .rl li .n{width:19px;height:19px;font-size:12px;line-height:19px;margin-top:0;}
+  .lb-help .lb-rules .rrel{margin-top:6px;font-size:11px;}
+  .lb-help .lb-rules .rfoot{margin-top:4px;line-height:1.45;}
+  .lb-help .lb-h3{margin:8px 0 4px;font-size:11px;}
+  .lb-help .lb-learned{gap:4px;}
+  .lb-help .lb-learned span{font-size:11px;padding:1px 6px;}
+  .lb-help .mfoot{margin-top:8px;padding-top:6px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px));}
+  .lb-help .mfoot .lb-btn{min-height:44px;}
+}
 /* 結算三件事 */
 .lb-sum{list-style:none;margin:12px 0 10px;padding:0;border-top:1px solid var(--ink);}
 .lb-sum li{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;}
@@ -481,3 +519,45 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 @media (orientation:landscape) and (max-height:500px){
   #app::after{content:'請把手機轉回直的';position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483000;background:#fff;display:flex;align-items:center;justify-content:center;font:700 16px var(--zh);letter-spacing:.12em;color:var(--ink);}
 }
+/* v4（B2）：老闆的四張（O12：封面＋推薦語，收下才只是確認，入袋在 O14）、今晚來客的錢、地上那張盤的撿起面板（沒有標題列） */
+.lb-recs{display:flex;flex-direction:column;gap:8px;margin-top:8px;flex:none;}
+.lb-recs .rc{display:flex;gap:10px;align-items:flex-start;}
+.lb-recs .rc .lb-cv{flex:none;}
+.lb-recs .rc .t{min-width:0;font-size:12px;line-height:1.45;}
+.lb-recs .rc .ar{color:var(--gray2);font-size:11px;}
+.lb-recs .rc .al{font-weight:700;font-size:13px;line-height:1.3;}
+.lb-recs .rc .stars{margin-top:2px;}
+.lb-recs .rc .pt{margin:2px 0 0;font-size:12px;color:#333;line-height:1.45;}
+.lb-bagline .money{flex:none;font:700 13px 'Space Mono',monospace;padding:0 6px 0 4px;color:var(--ink);}
+.lb-sheet.one.notitle .lb-one{margin-top:4px;}
+/* 高螢幕（430×932 這類，V03）：店景已經整面寬、不能再大，對白框不再撐滿剩下的高（一兩行字配 360px 黑框）——
+   框照內容長（至少約 4 行）、字大一號，包包那條緊接在下面；今晚來客的錢／包包那條也緊接在名單下面 */
+@media (min-height:800px){
+  .lb-dq{flex:0 0 auto;min-height:176px;font-size:16px;line-height:2;margin-top:18px;}
+  .lb-dq .tx{min-height:64px;}
+  .lb-panel.night .lb-bagline{margin-top:6px;}
+}
+/* 矮螢幕：老闆的四張（R-08a，375×548 第四張的推薦語被「收下這四張」蓋住）——專輯、藝人、星數排同一行（放不下才換行）、推薦語最多兩行 */
+@media (max-height:600px){
+  .lb-recs{gap:6px;margin-top:6px;}
+  .lb-recs .rc .lb-cv{width:42px !important;height:42px !important;}
+  .lb-recs .rc .t{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:6px;}
+  .lb-recs .rc .al{order:1;}
+  .lb-recs .rc .ar{order:2;}
+  .lb-recs .rc .stars{order:3;margin-top:0;}
+  .lb-recs .rc .pt{order:4;flex-basis:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+}
+.lb-panel.sheeted>.lb-dq,.lb-panel.sheeted>.lb-strip{visibility:hidden;}   /* 面板滑進來那 0.2 秒，底下的對白不要透出來疊字（R-08c） */
+.lb-toast .nw{white-space:nowrap;}
+/* 剛換上的畫面／面板 GUARD_MS 內點了不算（防連點）：主鈕先淡一點、好了才亮，看得出來還沒好（RT-8） */
+.lb-screen .lb-btn.pri,.lb-sheet .lb-btn.pri{transition:opacity .18s ease-out;}
+.lb-screen.arming .lb-btn.pri,.lb-sheet.arming .lb-btn.pri{opacity:.55;}
+/* 唱片資訊（長按封面）在矮螢幕（V09）：封面縮到可視高的 30%，簡介與平台鈕不會整個掉到「關閉」下面；
+   底下那條「關閉」上緣加一層淡出陰影，看得出來上面還可以捲 */
+@media (max-height:700px){
+  .drawcard .cov{width:min(200px,30svh);}
+  .drawcard .lab{margin-bottom:6px;}
+  .drawcard .yr{margin-bottom:6px;}
+  .drawcard .stats{margin-bottom:8px;}
+}
+.drawcard .ci-foot::before{content:'';position:absolute;left:0;right:0;top:-18px;height:18px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none;}

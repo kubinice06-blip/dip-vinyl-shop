@@ -237,7 +237,7 @@
       var H = root.clientHeight || 600, sh = Math.round(Math.max(150, Math.min(268, H * 0.37)));
       stage.style.height = sh + 'px';
       var cw = stage.clientWidth || 390;
-      U = Math.max(3, Math.floor(sh * dpr / 90));
+      U = Math.max(dpr >= 2 ? 3 : 2, Math.floor(sh * dpr / 90));   // 1 倍螢幕的矮舞台：一格 2 px，人不會大到頭被裁、名牌壓在頭髮上（V14）
       artW = Math.ceil(cw * dpr / U); artH = Math.ceil(sh * dpr / U);
       cv.width = Math.round(cw * dpr); cv.height = Math.round(sh * dpr); cv.style.width = cw + 'px'; cv.style.height = sh + 'px';
       scene = null;

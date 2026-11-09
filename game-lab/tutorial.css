@@ -32,6 +32,7 @@
 #tut .tut-bub,#tutTip .tut-bub{position:absolute;box-sizing:border-box;background:#fff;border:2px solid var(--ink,#111);padding:7px 26px 8px 52px;min-height:52px;pointer-events:none;
   box-shadow:3px 3px 0 rgba(0,0,0,.35)}
 #tut .tut-bub[hidden],#tutTip .tut-bub[hidden]{display:none}
+#tut.m-soft .tut-bub{pointer-events:auto;cursor:pointer}   /* 今晚來客的老闆小提示：點泡泡＝換句／收掉，不穿過去點到底下的箱子（V5-play-2） */
 #tut .tut-bub .av,#tutTip .tut-bub .av{position:absolute;left:8px;top:8px;width:34px;height:34px;box-sizing:border-box;background:#f3efe6;border:1px solid var(--ink,#111);
   display:flex;align-items:center;justify-content:center;overflow:hidden}
 #tut .tut-bub .av svg,#tutTip .tut-bub .av svg{display:block;image-rendering:pixelated;image-rendering:-webkit-optimize-contrast}

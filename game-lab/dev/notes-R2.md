@@ -1,0 +1,66 @@
+# notes-R2：多角度審查的修正（R/RT/V/COPY）
+
+分支 `claude/card-game-fun-lab`，直接在 `/home/user/dip-vinyl-shop` 做（不 push）。
+依據：審查清單（R-01…R-09、RT-1…RT-14、V01…V16、COPY-01…COPY-18）＋ DECISIONS-v4＋FIXLIST（FIXLIST 優先）。
+不改店主定案的規則與句子；跟店主定案衝突的列在最後「留給店主」。
+
+## 進度（容器會重啟：每步做完就更新這裡＋commit）
+
+- [x] blocker RT-1 面板取消後卡死（1ae3683a7）
+- [x] major R-01/V04（tutorial.js）、R-02/V06/RT-12（dip.json＋makeRoom）、RT-2、RT-3、V01、V02、COPY-01、COPY-02；V03 一部分（高螢幕對白框）
+- [x] RT-14 e2e #22（ghost 不超出 #app）
+- [x] minor：R-03/05/06/07/08/09、RT-5..RT-13、V05、V07..V11、V13、V14、V16、COPY-03/04/06..12/15..18（部分）
+- [x] ?v=43（index.html 的 game-lab 資源本來就是 43，沒有要改的）
+- [x] 全部檢查重跑（node 全綠；e2e 全綠，見下）
+- [x] 店主截圖 dev/shots/final/（16 張；shots/ 在 .gitignore）
+
+## 記錄
+
+- 1ae3683a7 RT-1：reward 面板拆成 showSheet()，包包滿／配件滿按「算了」回來重畫；RT-3：有唱片又有配件 → 配件進底下那條跟「都不要」並排；兩排唱片 ≤700 高拿掉藝人行、≤600 高五欄；V02：dropPanel／relicPanel 呼叫 roomForSheet。
+  量（scratch rew.mjs，6 張＋配件）：四尺寸 sh＝ch（不用捲）；包包滿面板四尺寸 sh＝ch；按「算了」→ screen reward、面板回來。
+- R-01/V04：tutorial.js pumpTips 在對決 phase≠choose 時等、over 時丟；丟出下一手（phase→resolve）就收（看過 ≥800 ms 算看過）。量（tips.mjs）：揭曉中 0 次出現，演完（choose）才出。
+- R-02/V06/RT-12：r1 regular [70,104]→[200,104]（後牆右邊矮櫃前）；新站位 wait [28,200]（試聽桌前）；econ approach 走之前呼叫 ui.js makeRoom：門邊等的客人 f 在你要去的站位 |dx|<38、|dy|<44 內就走到 wait／atdoor。
+  check-shops 加「actors（老闆以外）旁邊不能有 bin.stand」（舊配置會抓到 FEATURE、SALE 兩個）。量：FEATURE p[60,100] f→[28,200]；SALE p[44,128] f[28,200]。
+- COPY-01/02/07、R-09：見 commit f005627b7。LINES-REVIEW 388 句（新 291）。
+- RT-2：econ done() 後 450 ms 內 buy/bbuy/rbuy/sell/spick/tog/take 不算（鈕半透明）。量：四尺寸雙擊 → 只買一張。
+- RT-5/V12/R-08b：refocus 高度變矮也重對焦；抽屜開著 #app.ec-open → #panel 底下（今晚來客、對白框）visibility hidden。430×932 的店景已經整面寬，抽屜上面是白的（不再露出半截名單）。
+- V03（一部分）：min-height 800 的對白框照內容長（≥176px）、字 16px。店景在 430 寬已經是整間店（292×322 的比例），剩下的高沒辦法給店景（要裁兩側）。
+- V01/V13/R-07/R-08a/R-08c/COPY-09：commit 8bc92dd06。
+- RT-14：ghostPanel 高度夾在 #app 內、淡出不再 translateY（LAB_ONLY=22 430／360 PASS）。
+- R-06：TABLE_FIT.roomy 最大 140；.dl.short 相剋圖例 56×50。R-05：上一手那行延後淡入、提示從 .45 淡入、大章等結果框收掉（220 ms）、比聲望條大章停 3000 ms。V05：「丟！」演出中留在原位（.28）、over 手牌 .6。
+- COPY-04：a3.heresy＝「經典剋硬蕊，但你高 2 星以上，剋不動：他 −5。」（≤25 字；tutorial.test 加查 −toE）。COPY-09：tip_mirror／m4＝「同色比星數，多的扣差額。」、a1／L6／挑王牌說明＝「一場用一次」。
+- RT-9 對決進場 music.stop(900)；RT-7 runWhere 看 pending.prologue；RT-10 sellPickN；RT-8 .arming 主鈕淡；V11 吐司 .nw；COPY-10 n/8；COPY-08；COPY-15 今晚來客寫 en.name。
+- RT-6：resumeRun 在 prologue、特價挑完、r.tut==null、沒有 duel → resumePrologueAfterBargain()（從 O14 演到兩顆鈕）。e2e #44 改成驗這條（390 PASS）。
+- COPY-03/06/17、R-04：改 copycat.line、already.line、label.intro、critic.line、already.win、skip.win、critic.win；lint-copy 加「line／intro 不准有提示關鍵字」。
+- COPY-12：content.js 把客人牌組裡（不在禮物）的 gold 拿掉；barney-wilen-moshi 推薦語去掉「我一直捨不得標價。」（cards.js 與 pitches.json 同一字串，沒重跑 bake）。COPY-16：角標「新認識」。
+- R-03/COPY-05：c1／c3 保留改過的字（有 draft＝店主原文）、LINES-REVIEW 最上面列「改過店主草稿的句子」、其他 13 句 tag 店主逐字比對；README 等店主決定的 7。RT-4 → README 等店主決定的 8（照店主「賣回一律半價」，不改）。
+- COPY-18：b（shops 的 note 不列）、c（推薦語照實際位置分組）、d（O7 面板標題＝店主句的一段）做了；a（ui.js 寫死的字搬進 content）、e（shopLines.cat、ownerHint.scene 用不到）沒做。
+- V07 keepHeads(pad 22) 在 set.emote；V08 左走道轉角點 x 87/88/86→84、右 194/193/196→199/199/200（中島邊距 9→13–14），shop.test 路線上限 3.5→3.6（mid→ref 3.52 s）；V10 over 時小卡放牌桌上緣；V16 地上那張畫封套＋半張黑膠＋閃。
+- V09 唱片資訊 ≤700 高封面 30svh、關閉上緣淡出；V14 charedit 1 倍螢幕 U 最小 2、格子 46、清單淡出；RT-11 今晚來客提示目標＝整個名單、開抽屜 dismissSoft；RT-13 reward 面板 _armUntil＝鏡頭 620 ms。
+
+## 檢查（R2 修完）
+- node：engine.test 1459115／0、tutorial.test 142776／0、shop.test 1280／0、hit.test 343／0、chars.test 30061／0；lint-copy 通過（383 句：原句 45、店主 66、新 272）、check-content、check-shops、check-covers OK。
+- `sim.mjs --n 3000 --json dev/sim-v4.json`：22/22（S1 80.5、S9 48.9）；sim-v4.json 沒變（規則與數字沒動）。
+- 中途抓到：兩處我加的行尾註解吃掉程式（ui.js 今晚來客提示的 catch、duel.js 手數淡入）→ 標題出不來；c0398cd40 修好、node --check 全部 JS 過。
+
+## 店主截圖（dev/shots/final/，390×664@2；另 375×548、430×932 出牌前）
+01 標題、02 猜歌、03 後走道兩顆鈕、04 三人在唱盤（遇敵前）、05 出牌前（選了一張）、06 剋中揭曉（照實）、07 KO、08 比聲望條（你贏）、
+09 今晚來客（錢、配件）、10 JAZZ 抽屜、11 FEATURE、12 特價箱之後（標價）、13 櫃檯配件、14 規則卡。
+看截圖修的：打完時「上一手」從大章兩側露出（.dl.over .lastline 藏）；抽屜上面的空隙改舞台黑（不是白條）。
+430×932 序章：對白框照內容長以後，下面空一塊白（店景 292×322 在 430 寬已經整間店，剩下的高要給店景得裁兩側或做跟拍鏡頭——留給店主／下一輪）。
+
+## e2e（S=390x664,375x548,430x932,360x640）
+- `LAB_FULL=1 e2e.spec`：148/148 PASS（c0398cd40 之後跑）；之後改了 waitSpot（ae04becae）、CSS → 重跑 #7、#22、#27、#41–#44：32/32 PASS。
+- `e2e-prologue`（390、速度 1）：52 passed, 0 failed（P1–P13）。
+- `e2e-duel`（index.html）：116/116 PASS。
+- `e2e-econ`：第一輪 72/80（#9：買完第一件配件 300 ms 就點第二件，被 RT-2 的 450 ms 防連點擋掉；#14 因 #9 少量一個面板）→ 測試改等 600 ms → 80/80 PASS。
+- `e2e-taps`（title,night）：56/56 PASS。
+
+## 沒修／留給店主
+- RT-4（禮物賣回價）：照店主「賣回一律半價」不改，README 等店主決定的 8。
+- R-03／COPY-05：c1／c3 保留、列給店主（README 7、LINES-REVIEW 最上面）。
+- V03：430×932 的店景在寬度上已經整間店（292×322），剩的高只能留白或做裁兩側的跟拍鏡頭；這輪只把對白框照內容長。
+- COPY-13（做作的推薦語）：要查證事實才能改成「一個具體的事實」，沒查不亂寫。
+- COPY-18 a（ui.js 寫死的字搬進 content／lint 掃 ui.js）沒做；e 經查兩個都用得到（dip 有店貓熱點；序章點櫃檯老闆會說 ownerHint.scene，e2e #43 聽到），不用刪。
+- V15：抽屜／面板的小空帶只處理了會露出對白框、今晚來客那幾種；結算畫面、特價抽屜 32 px 那條沒動。
+- FIXLIST 11（手牌疊起來、點牌跳屬性、手牌 5 張＋重跑平衡）不在這輪的審查清單，沒做。
