@@ -518,7 +518,7 @@
   //   六手打完（FIXLIST 3）：roundsScore 的 {p}／{e}＝聲望條剩幾 %（over 事件的 pct＝engine.pctPair），{who}＝你／他；兩邊比例一樣（算你贏）用 roundsEven
   // ===================================================================
   C.duelText = {
-    pickHint: '點一張專輯', hintLabel: '提示', sleeve: '蓋著', rounds: '第 {n}／{max} 手', hp: '聲望', aceSlot: '王牌', aceWord: '王牌',
+    hintLabel: '提示', sleeve: '蓋著', rounds: '第 {n}／{max} 手', hp: '聲望', aceSlot: '王牌', aceWord: '王牌',
     he: '他・', you: '你・', slotE: '他丟的', slotP: '你丟的', lastPrefix: '上一手', pileLeft: '他還有 {n} 張',
     counter: '{a}剋{b}，命中！', countered: '{b}剋{a}，被剋了。',
     blockedYou: '{a}剋{b}，但他高你 2 星以上，剋不動。比星數，', blockedHim: '{b}剋{a}，但你高他 2 星以上，他剋不動。比星數，',
@@ -546,7 +546,7 @@
       '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。'
     ],
     relics: '發燒配件：自動生效，最多帶三件。',
-    foot: ['點手牌攤開，點專輯再點屬性出牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
+    foot: ['點專輯再點屬性出牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
   };
   C.rulesTag = '新';          // title／relics／foot
   C.rulesLinesTag = '店主';   // lines（六行）
@@ -612,12 +612,12 @@
     // ---- 以下 steps／learned／ui 由 B2 寫（§2.5.5）：六手各教一件事；FIXLIST 11（H2）改成「點那張 → 點那個屬性（＝丟）」 ----
     //   'card:pick'＝這一手 script[tier].pick 那張的封面、'pick'＝那張那個屬性的屬性鈕（tutorial.js stepsFor 代入：{id,attr}→card:id:<id>／chip:id:<id>:<attr>、
     //   'blocked:o'→card:／chip:blocked:o、'ace'→card-ace／chip-ace）。allow.pick：點那張那步＝只放行那張；點屬性那步（allow.throw）＝只放行那一顆。
-    //   點那張那步：手牌還疊著（沒攤開）時，洞與手指先指整疊手牌；spread＝那時候泡泡換成這句（只有第一手寫）。
+    //   點那張那步（v5 手風琴）：手牌疊著，洞與手指指那張露出來的那一條；點了就在那張打開，下一步指屬性鈕。
     //   每手：（說明）→ 點那張 → 點那個屬性（丟出去）→（結算浮框出現時講，target 含 result）。learn＝這步做完就學到哪張小卡。
     //   第 1 手前一句說明提示；第 1 手結算後老闆點破關鍵字一次（提示 c5「他把那張名盤擦得發亮。」→「名盤」＝經典；規劃書，不是 D，列 §5.7）。
     steps: [
       { id: 'm1', kind: 'say', target: ['e-hint'], text: '上面這句是提示，暗示他這手要出什麼。', bubble: 'below', tag: '新' },
-      { id: 'm2', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, spread: '點一下手牌攤開。', text: '先出這張。', bubble: 'above', tag: '新' },
+      { id: 'm2', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, text: '先出這張：點一下。', bubble: 'above', tag: '新' },
       { id: 'm3', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, text: '出經典，跟他比星數。', bubble: 'above', tag: '新' },
       { id: 'm4', kind: 'say', target: ['result'], text: '同色比星數，多的扣差額。', learn: 'L1', tag: '新' },
       { id: 'm5', kind: 'say', target: ['result'], text: '『名盤』就是經典。提示裡會藏這種字。', tag: '新' },

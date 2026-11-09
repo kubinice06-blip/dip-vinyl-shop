@@ -298,8 +298,8 @@ export function contentProblems(C, E) {
   ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds');
   for (const k of Object.keys(C.coachTips || {})) ok(C.coachTipTags && C.coachTipTags[k], 'coachTipTags.' + k);
   // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'），
-  //   再扣掉 picked／again／throwBtn／waiting／aceUsed（FIXLIST 11：沒有「丟！」列；用過的王牌不留在手牌裡）
-  const DT = ['pickHint', 'hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceWord', 'he', 'you', 'slotE', 'slotP',
+  //   再扣掉 picked／again／throwBtn／waiting／aceUsed（FIXLIST 11：沒有「丟！」列；用過的王牌不留在手牌裡）、pickHint（v5 手風琴：沒有整排攤開的「點一張專輯」框）
+  const DT = ['hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
     'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven'];
   ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
@@ -515,7 +515,7 @@ export function tutorialProblems(C) {
         ok(al.pick === true && s.point === 'pick' && JSON.stringify(s.target) === JSON.stringify(['pick']) && (s.look || []).includes('card:pick'), w + '：點屬性（丟）那步 allow {pick,throw}、point pick、target [pick]、look 含 card:pick');
         thrown = true; hand++;
       } else ok(al.pick === true && s.point === 'card:pick' && JSON.stringify(s.target) === JSON.stringify(['card:pick']), w + '：點那張的那步 allow {pick}、point card:pick、target [card:pick]');
-      if (s.spread != null) ok(typeof s.spread === 'string' && s.spread && !al.throw, w + '：spread（疊著時的泡泡）只給點那張的那步');
+      ok(s.spread == null, w + '：沒有 spread（v5 手風琴：沒有「點牌堆攤開」那一步）');
     }
   });
   ok(hand - 1 === 6, 'tutorial.steps：六手各一個「丟」（現在 ' + (hand - 1) + '）');
@@ -527,8 +527,7 @@ export function tutorialProblems(C) {
   }
   const first = steps[0];
   ok(first.kind === 'say' && (first.target || []).includes('e-hint'), 'tutorial：第 1 手前一句說明提示（target e-hint）');
-  const sp = steps.filter(s => s.spread);
-  ok(sp.length === 1 && handOf[steps.indexOf(sp[0])] === 1, 'tutorial：「點一下手牌攤開」只在第 1 手（step.spread 只有一步）');
+  ok(!steps.some(s => /攤開/.test(typeof s.text === 'string' ? s.text : JSON.stringify(s.text || ''))), 'tutorial：泡泡不再說「攤開」（v5 手風琴：點一張就打開那張）');
   const hint1 = ((C.hints || {})[(T.hints || [])[0] && T.hints[0][0]] || []).find(h => h.id === (T.hints || [])[0]);
   const after1 = steps.filter((s, k) => handOf[k] === 1 && s.kind === 'say' && (s.target || []).includes('result'));
   const callouts = steps.filter(s => hint1 && typeof s.text === 'string' && s.text.includes('『' + hint1.key + '』就是'));
