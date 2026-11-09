@@ -292,6 +292,7 @@ async function runSize(browser, w, h) {
       const x = D.debug(), v = window.DipLabEngine.view(window.__lab.rawDuel());
       return { vh: innerHeight, vw: innerWidth, scroll: [root.scrollHeight, root.clientHeight], doc: [document.documentElement.scrollHeight, document.documentElement.scrollWidth],
         tiles, strips, abs, open: x.open, sel: x.sel, n: x.n, hand: rect(D.el('hand')), hint: rect(D.el('e-hint')), cls: root.className, bands: window.__e2e.bands(),
+        you: rect(document.querySelector('.dl .dl-p .nmrow > b')), php: rect(D.el('p-hp')),
         topAttr: x.sel && x.sel.i !== 'ace' ? window.DipLabEngine.topAttr(v.hand[x.sel.i]) : null, slotP: (document.querySelector('.dl .slot.p') || {}).className || '',
         hon: !!D.el('e-honesty'), nm: ((document.querySelector('.dl .dl-e .nm') || {}).textContent || '').trim(),
         sub: (document.querySelector('.dl .dl-e .nmrow .sub') || {}).textContent || '',
@@ -316,7 +317,10 @@ async function runSize(browser, w, h) {
       if (!inView(O, O.abs)) why.push('屬性鈕在畫面外');
       if (up && O.abs.length && Math.max(...O.abs.map(b => b.r.b)) > up.r.t + 0.5) why.push('屬性鈕不在那張上面');
       if (up && O.abs.length && !(Math.min(...O.abs.map(b => b.r.l)) < up.r.r && Math.max(...O.abs.map(b => b.r.r)) > up.r.l)) why.push('屬性鈕沒對著那張');
-      if (O.hint && O.abs.some(b => b.r.t < O.hint.b - 0.5 && b.r.b > O.hint.t && b.r.l < O.hint.r && b.r.r > O.hint.l)) why.push('屬性鈕蓋到提示句');
+      const hits = q => q && O.abs.some(b => b.r.t < q.b - 0.5 && b.r.b > q.t + 0.5 && b.r.l < q.r - 0.5 && b.r.r > q.l + 0.5);
+      if (hits(O.hint)) why.push('屬性鈕蓋到提示句');
+      if (hits(O.you)) why.push('屬性鈕蓋到「你」');
+      if (hits(O.php)) why.push('屬性鈕蓋到聲望數字');
       if (!noScroll(O)) why.push('捲動');
       if (O.bands.max > 24) why.push('空帶 ' + O.bands.max + ' px（y=' + O.bands.at + '）');
       if (O.oldUi) why.push('還有攤開／虛線框');
