@@ -24,7 +24,7 @@
 //   dismissSoft(), step(def), replayDuel(C, tier, seed?, {bargain?}), learned(), learnedIds(), settled(), debug()
 // };
 // gate action（duel.js 送進來）：{kind:'card',i,attr,id}（點一張封面＝在那張打開）
-//   {kind:'throw',i,attr,id}（點屬性鈕＝出手） {kind:'collapse'}（再點打開那張、或點手牌外面＝收回：教學中一律不放行、也不罵）
+//   {kind:'throw',i,attr,id}（點屬性鈕＝出手） {kind:'collapse'}（再點打開那張、或點手牌外面＝收回：教學中一律不放行；gate 本身不罵——但實際上那兩下多半落在遮罩上（打開那張是 look 洞：看得到、點不穿），遮罩照樣罵「先點我指的這裡。」，跟 v4 一樣；走到 gate 的只有 Esc 之類）
 //   {kind:'chip',i,attr,id}（只有 API select(i,attr) 送） {kind:'info',where} {kind:'close'}；i＝0..handSize−1 或 'ace'。
 // allow：{pick:true}（stepsFor 代入：點那張的步驟 → {card:{id}}｜{card:{blocked:attr}}｜{ace:true}；
 //   點屬性的步驟（allow.throw）→ {throw:true, chip:{id,attr}}｜{throw:true, chip:{blocked:attr}}｜{throw:true, ace:true}） {info} {close}
@@ -192,7 +192,7 @@
         if (s0 && !R.awaiting && s0.kind !== 'say' && matches(s0, a, R.ctx || R.context())) { R.last = { ok: true, final: true }; R.done(); return true; }
         R.last = { ok: true, note: true }; return true;
       }
-      if (a.kind === 'collapse') { R.last = { ok: false, quiet: true }; return false; }   // 教學中手牌不收回（手指指著的東西不會不見）；不算點錯
+      if (a.kind === 'collapse') { R.last = { ok: false, quiet: true }; return false; }   // 教學中手牌不收回（手指指著的東西不會不見）；走到這裡（Esc）不算點錯。手指點打開那張／手牌外面會先被遮罩接走、照樣罵（審查 F5）
       var s = R.cur();
       if (!s || R.awaiting || s.kind === 'say') { R.last = { ok: false, wrong: 'target' }; R.log.push('block ' + (s ? s.id : '-') + ' ' + JSON.stringify(a)); return false; }
       if (s.kind === 'soft') {      // 第 10 步：建議，不擋；任何一個動作就算看過了
