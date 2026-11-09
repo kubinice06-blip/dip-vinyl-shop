@@ -3,7 +3,8 @@
    WebKit：不用 backface-visibility、不用 100vh、長按目標 -webkit-touch-callout:none；flex gap 用 margin 代替（iOS 14.0–14.4）。
    尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥580、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。
    牌桌兩張封面的邊長 --scv、牌桌與手牌區的高由 duel.js sizeBoard() 算（店主 2026-11-08：專輯是主角；FIXLIST 11：拿掉星鈕列與丟！，空出來的高度給牌桌）。
-   手牌（FIXLIST 11）：.hand.stack 疊成水平一排（每張往右錯開、露出左邊一條，不轉角）／.hand.spread 攤開不重疊的一排；每張 .tile 絕對定位（duel.js layoutHand 給 transform），浮起那張上面 .pop 三顆屬性鈕 .ab。 */
+   手牌（v5 手風琴）：疊成水平一排（每張往右錯開、露出左邊一條，不轉角），封面一樣大；點一張＝.hand.open：右邊的往右滑開、那張整張露出來並浮起（.tile.up），
+   上面 .pop 三顆屬性鈕 .ab。每張 .tile 絕對定位（duel.js layoutHand 給 transform）。 */
 .dl{--dl-zh:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);--dl-mono:'Space Mono',var(--dl-zh);
   --ecv:56px;--scv:120px;--tri-w:60px;--tri-h:54px;--ab-h:44px;--ab-top:50px;
   position:relative;flex:1 1 auto;min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;
@@ -122,33 +123,29 @@
 .dl .lastline b .g,.dl .lastline b .r{opacity:.85}
 .dl .lastline .nt{margin-left:6px;color:#9c8240;font-size:10px}
 
-/* ===================== 你的一塊（下）：黑線分界；名字＋聲望＋手牌區（疊著／攤開） ===================== */
+/* ===================== 你的一塊（下）：黑線分界；名字＋聲望＋手牌區（疊著／打開一張） ===================== */
 .dl .dl-p{flex:1 1 auto;min-height:0;border-top:1px solid var(--ink,#111);padding:6px 12px 0;position:relative;padding-bottom:env(safe-area-inset-bottom,0px)}
-.dl.spread .dl-p{z-index:3}   /* 攤開時屬性鈕可能往上蓋到牌桌的字帶下緣：手牌那一塊疊在上面 */
+.dl.hopen .dl-p{z-index:3}   /* 打開一張時屬性鈕往上蓋到「你」那一列、牌桌的下緣：手牌那一塊疊在上面 */
 .dl .relics{display:flex;align-self:center;height:20px;align-items:center}
 .dl .relics .rl{position:relative;width:20px;height:20px;display:grid;place-items:center;border:1px solid var(--gold,#b8860b);background:var(--cream,#fffbe9);margin-right:4px;-webkit-touch-callout:none}
 .dl .relics .rl::before{content:'';position:absolute;left:-12px;right:-12px;top:-12px;bottom:-12px}
 .dl .relics .rl svg,.dl .relics .rl canvas,.dl .relics .rl img,.dl .relics .rl>span:not(.rl-t){max-width:16px;max-height:16px;display:block}
 .dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
-/* 手牌區：高由 duel.js 給（--hand 至少放得下攤開的一排＋浮起＋屬性鈕）；每張絕對定位，transform＝位移 */
+/* 手牌區：高由 duel.js 給（放得下疊著那一排；屬性鈕往上蓋）；每張絕對定位，transform＝位移 */
 .dl .hand{position:relative;height:120px;margin-top:2px;cursor:pointer;-webkit-touch-callout:none}
 .dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden}   /* 新抽的那張從手牌區底下滑上來：滑進來那 260 ms 不撐高盤面（不然 fit() 量到 scrollHeight 會開 .tighter，整個盤面跳一下；RH-1） */
-@supports (overflow:clip){ .dl .hand .tiles{overflow:visible;overflow-y:clip} }   /* 只裁上下（滑進來是直的）：左右不裁，攤開那排貼邊時浮起那張的金框／黑框與側影照畫（V5 F1） */
+@supports (overflow:clip){ .dl .hand .tiles{overflow:visible;overflow-y:clip} }   /* 只裁上下（滑進來是直的）：左右不裁，貼邊那張浮起時的金框／黑框與側影照畫（V5 F1） */
 .dl .tile{position:absolute;left:0;top:0;width:60px;height:60px;transform-origin:50% 60%;
   transition:transform .18s cubic-bezier(.2,.7,.3,1),width .18s cubic-bezier(.2,.7,.3,1),height .18s cubic-bezier(.2,.7,.3,1)}
 .dl .hand.noanim .tile{transition:none}
 .dl .tile .cvw{position:relative;display:block;width:100%;height:100%;-webkit-touch-callout:none}
 .dl .tile .cv{width:100%;height:100%;box-shadow:-2px 2px 5px rgba(0,0,0,.18)}
-.dl .hand.spread .tile .cv{box-shadow:0 2px 4px rgba(0,0,0,.14)}
 .dl .tile.ace .cv{outline:2px solid var(--gold,#b8860b);outline-offset:-1px}
 .dl .tile .acetag,.dl .slot .acetag{position:absolute;left:0;top:0;background:var(--gold,#b8860b);color:#fff;font-size:10px;font-weight:700;padding:0 4px;line-height:15px;letter-spacing:.06em}
 .dl .tile.up .cv{outline:2px solid var(--ink,#111);outline-offset:0;box-shadow:0 6px 12px rgba(0,0,0,.25)}
 .dl .tile.ace.up .cv{outline-color:var(--gold,#b8860b);outline-width:3px}
 .dl .tile.gone{visibility:hidden}
-/* 攤開、還沒浮起：屬性鈕會跳出來的位置一個虛線框「點一張專輯」（跟牌桌「你丟的」空格同一個樣子） */
-.dl .hprompt{position:absolute;left:50%;width:min(196px,100%);transform:translateX(-50%);height:50px;border:1px dashed #cfcfcf;display:grid;place-items:center;font-size:13px;color:#aaa;pointer-events:none}
-.dl .hprompt:empty{display:none}
-/* 屬性鈕（浮起那張正上方）：每顆 ≥44 高；最高那顆大一點、黑框（.top）；王牌一顆「王牌 經 7」 */
+/* 屬性鈕（打開那張正上方）：每顆 ≥44 高；最高那顆大一點、黑框（.top）；王牌一顆「王牌 經 7」 */
 .dl .pop{position:absolute;left:0;top:0;z-index:60;display:flex;align-items:flex-end;white-space:nowrap;cursor:default}
 .dl .ab{position:relative;flex:none;min-width:54px;height:var(--ab-h);padding:0 9px;display:flex;align-items:center;justify-content:center;
   background:#fff;border:1.5px solid #bdbdbd;box-shadow:0 3px 8px rgba(0,0,0,.16);font:700 15px var(--dl-mono);-webkit-touch-callout:none}
@@ -216,7 +213,7 @@
 
 @media (hover:hover) and (pointer:fine){
   .dl .ab:hover{background:#f4f4f4}
-  .dl .hand.spread .tile:not(.up) .cvw:hover .cv{outline:1px solid #999}
+  .dl .hand .tile:not(.up) .cvw:hover .cv{outline:1px solid #999}
 }
 @media (prefers-reduced-motion:reduce){
   .dl .hp i{transition-duration:.15s}
