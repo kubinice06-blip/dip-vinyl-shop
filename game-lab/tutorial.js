@@ -293,7 +293,7 @@
   var CFG = { stage: null, save: null, persist: null, content: null, onEnd: null };
   var S = {
     root: null, tipRoot: null, lesson: null, runner: null, armed: 0, show: null, raf: 0, sig: '',
-    softQ: [], soft: null, tipQ: [], tip: null, replayDuel: null, memSeen: {}, learnBusy: Promise.resolve(), learnedAll: [], lastStepAt: 0
+    softQ: [], soft: null, softCut: {}, tipQ: [], tip: null, replayDuel: null, memSeen: {}, learnBusy: Promise.resolve(), learnedAll: [], lastStepAt: 0
   };
   var Cn = function () { return CFG.content || W.DipLabContent || {}; };
   var Duel = function () { return W.DipLabDuel || null; };
@@ -1212,6 +1212,8 @@
     if (cur.off) cur.off();
     S.soft = null;
     if (how === 'tap' && cur.lineAt && now() - cur.lineAt >= READ_MS) markSeen(cur.id);
+    // 看了一會兒（≥ READ_MS）才被別的動作收掉（開抽屜、下一位）：下次回來再出一次；第二次又被收掉就算看過了，不再每關一次抽屜就從第一句重來（V5-play-2）
+    else if (how === 'ui' && cur.shownAt && now() - cur.shownAt >= READ_MS) { if (S.softCut[cur.id]) markSeen(cur.id); else S.softCut[cur.id] = true; }
     if (!S.lesson) setShow(null);
     setTimeout(pumpSoft, 200);
   }
