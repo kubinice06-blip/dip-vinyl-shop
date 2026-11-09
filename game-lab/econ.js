@@ -463,7 +463,8 @@
       '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(sub.need > 1 ? fill(ui('sellPickN') || '賣這 {k} 張', { k: sub.need }) : ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
   }
   // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
-  function tgtHTML(sub) { return sub.tgt ? '<span class="sub">' + esc(sub.tgt + fill(ui('buy'), { n: mt(sub.price) })) + '</span>' : ''; }
+  //   專輯名太長只切專輯名，價錢一定看得到（V5-play-6：「《Come On Die Young》買…」把價錢切掉了）
+  function tgtHTML(sub) { return sub.tgt ? '<span class="sub"><span class="t">' + esc(sub.tgt) + '</span><span class="p">' + esc(fill(ui('buy'), { n: mt(sub.price) })) + '</span></span>' : ''; }
   function sellReady() {
     var r = liveRun(), sub = S.sub; if (!r || !sub || sub.picks.length !== sub.need) return false;
     var earn = sub.picks.reduce(function (s, id) { return s + (sub.kind === 'relic' ? E().sellValue(C(), id) : E().sellValue(C(), card(id))); }, 0);

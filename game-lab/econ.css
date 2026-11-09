@@ -115,7 +115,9 @@
 .ec-foot.two .lb-btn{flex:1;min-width:0;}
 .ec-sellb{gap:0;}
 .ec-foot.two .lb-btn{min-height:46px;padding-top:3px;padding-bottom:3px;line-height:1.25;}
-.ec-sellb .sub{display:block;max-width:100%;font-size:11px;font-weight:400;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.85;}
+.ec-sellb .sub{display:flex;justify-content:center;max-width:100%;font-size:11px;font-weight:400;letter-spacing:.02em;white-space:nowrap;overflow:hidden;opacity:.85;}
+.ec-sellb .sub .t{min-width:0;overflow:hidden;text-overflow:ellipsis;}   /* 太長只切專輯名 */
+.ec-sellb .sub .p{flex:none;}                                            /* 「買 $1,200」一定整個看得到（V5-play-6） */
 .ec-nudge{animation:ecNudge .32s ease-in-out;}
 @keyframes ecNudge{0%,100%{transform:none;}25%{transform:translateX(-6px);}75%{transform:translateX(6px);}}
 
