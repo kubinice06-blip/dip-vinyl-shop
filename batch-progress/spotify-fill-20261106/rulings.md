@@ -29,3 +29,6 @@
 ## 每日批次 2026-11-08（第 3 批，395 次）
 - 找到 261（exact 236、edition 25），全收；edition 都是同張的重製／擴充／豪華版（Mew 兩張 Extended Version、Stratovarius Original Version 亦同張）。
 - 修：《Koyaanisqatsi》前一批已退回，但 v2 列有 url、make-plan 隔天又列入；新增 `rejected.json`，make-plan 一律排除。
+
+## 每日批次 2026-11-09（第 4 批，395 次）
+- 找到 149（exact 143、edition 6），全收；edition 都是同張的附加曲／重製／豪華版（Rubén Blades《Maestra vida》2025 重製亦同張）。
