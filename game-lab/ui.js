@@ -897,14 +897,21 @@
   // ======================================================================= 面板（sheet）
   // 防連點：剛換上的面板 GUARD_MS 內真人的點擊不算（自動遊玩的 el.click() 不受影響）
   var GUARD_MS = FAST ? 160 : 380;
+  // 連點（V5-play-5）：在對白框上連點跳字，下一個選項（猜歌、挑王牌、老闆的四張、接受對決）就在手指底下冒出來，380 ms 一過連點的下一下就替玩家選了。
+  //   連點中的一下（跟上一下按下隔不到 SERIES_MS）、而且這一串在面板出現之前就開始了＝不算；停一下再點照常（教學 RV11-4 同一個想法）
+  var SERIES_MS = FAST ? 140 : 350, downLast = -1e9, downSeries = -1e9;
+  D.addEventListener('pointerdown', function () { var t = now(); if (t - downLast >= SERIES_MS) downSeries = t; downLast = t; }, true);
   function guardClicks(node) {
     node.classList.add('arming');
+    node._shownAt = now();
     // node._armUntil（選填）：鏡頭還在動、鈕還會移位時延長（RT-13：挑唱片面板進場 400 ms 內「收這張」往下滑 150 px）
     var disarm = function () { var left = (node._armUntil || 0) - now(); if (left > 0) setTimeout(disarm, left); else node.classList.remove('arming'); };
     setTimeout(disarm, GUARD_MS);
     if (node._guarded) return;
     node._guarded = true;
-    node.addEventListener('click', function (e) { if (e.isTrusted && node.classList.contains('arming')) { e.stopImmediatePropagation(); e.preventDefault(); } }, true);
+    node.addEventListener('click', function (e) {
+      if (e.isTrusted && (node.classList.contains('arming') || (e.detail && downSeries < node._shownAt))) { e.stopImmediatePropagation(); e.preventDefault(); }
+    }, true);
   }
   function focusFirst(root, sel) {
     requestAnimationFrame(function () {
