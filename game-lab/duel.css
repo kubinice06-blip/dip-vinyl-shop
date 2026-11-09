@@ -132,7 +132,8 @@
 .dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
 /* 手牌區：高由 duel.js 給（--hand 至少放得下攤開的一排＋浮起＋屬性鈕）；每張絕對定位，transform＝位移 */
 .dl .hand{position:relative;height:120px;margin-top:2px;cursor:pointer;-webkit-touch-callout:none}
-.dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;overflow:clip}   /* 新抽的那張從手牌區底下滑上來：滑進來那 260 ms 不撐高盤面（不然 fit() 量到 scrollHeight 會開 .tighter，整個盤面跳一下；RH-1） */
+.dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden}   /* 新抽的那張從手牌區底下滑上來：滑進來那 260 ms 不撐高盤面（不然 fit() 量到 scrollHeight 會開 .tighter，整個盤面跳一下；RH-1） */
+@supports (overflow:clip){ .dl .hand .tiles{overflow:visible;overflow-y:clip} }   /* 只裁上下（滑進來是直的）：左右不裁，攤開那排貼邊時浮起那張的金框／黑框與側影照畫（V5 F1） */
 .dl .tile{position:absolute;left:0;top:0;width:60px;height:60px;transform-origin:50% 60%;
   transition:transform .18s cubic-bezier(.2,.7,.3,1),width .18s cubic-bezier(.2,.7,.3,1),height .18s cubic-bezier(.2,.7,.3,1)}
 .dl .hand.noanim .tile{transition:none}

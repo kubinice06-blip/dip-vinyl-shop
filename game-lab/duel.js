@@ -540,7 +540,7 @@
         return `<button type="button" class="ab ace top ${a}" data-tut="chip-ace" data-i="ace" data-a="${a}" aria-label="${esc('王牌 ' + ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><span class="aw">${esc(T('aceWord'))}</span><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`;
       }
       const top = topOf(c);
-      // 鈕與鈕之間的縫是一塊什麼都不做的點擊區（.abgap）：手指落在縫上不會被觸控校正吸到隔壁那顆、也不會當成點手牌外面（RV11-2）
+      // 鈕與鈕之間的縫（.abgap）什麼都不做：手指落在縫上被觸控校正吸到隔壁那顆時，用按下那一刻的原始座標認出來（inChipGap；RV11-2、V5 F5）
       return ATTRS.map(a => `<button type="button" class="ab ${a}${a === top ? ' top' : ''}" data-tut="chip-${sel.i}-${a}" data-i="${sel.i}" data-a="${a}" aria-label="${esc(ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`).join('<span class="abgap" aria-hidden="true"></span>');
     }
     // 大一點、黑框的那顆（.top）：最高星那色；並列最高時給正在預覽的那色（教學指冷 4 時不讓經 4 看起來才是該按的；RH-6）
@@ -552,7 +552,6 @@
       const h = popHTML(), c = S.sel ? cardOf(S.v, S.sel.i) : null, key = h && c ? S.sel.i + ':' + c.id : '';
       if (els.abpop.dataset.k !== key) {          // 換了一張才重畫（滑鼠換預覽的屬性不重畫，按鈕不閃）
         els.abpop.innerHTML = h; els.abpop.dataset.k = key; els.abpop.hidden = !h;
-        els.abpop.querySelectorAll('.abgap').forEach(g => g.addEventListener('click', noop));   // 自己有 click 監聽＝觸控校正的候選（點在縫裡就是它，不是隔壁那顆）
         if (h && !rm()) A(els.abpop, [{ opacity: 0, transform: 'translateY(6px) scale(.9)' }, { opacity: 1, transform: 'none' }], { duration: 140, easing: 'ease-out' });
       } else if (h && c && S.sel.i !== 'ace' && !(opt && opt.hover)) {   // 預覽換了色（教學 preview）：並列最高時 .top 跟著換（滑鼠移過去不換：按鈕大小一變會在游標底下跳）
         const t = topOf(c);
@@ -668,7 +667,6 @@
 
     // ---------------- input（FIXLIST 11＝原版：點疊著的手牌＝攤開；點一張＝浮起＋跳屬性鈕；點屬性鈕＝照那個屬性丟出；點外面＝收回） ----------------
     function bumpEl(el) { if (el && !rm()) A(el, [{ transform: 'translateX(0)' }, { transform: 'translateX(-3px)' }, { transform: 'translateX(3px)' }, { transform: 'translateX(0)' }], { duration: 300 }); }
-    const noop = () => {};
     const isOver = () => !!(S.v && S.v.over) || S.ending;
     const canAct = () => !S.busy && S.enterDone && !isOver() && !S.held;
     function setSpread(on, animate) {
@@ -708,14 +706,14 @@
       S.sel = null; renderPop(); layoutHand(true); renderTri(); renderSlot('p'); holdSleeve('p', null); emit('selected', null); return true;
     }
     // 攤開後點封面：浮起這張，預覽的屬性＝topAttr（王牌＝它那軸）；已浮起的再點不變。api＝select(i)：沒攤開就直接攤開
-    function liftCard(i, api) {
+    function liftCard(i, api, near) {
       if (!canAct()) return false;
       const v = S.v, c = cardOf(v, i); if (!c) return false;
       if (i === 'ace' && !aceLive(v)) return false;
       if (S.sel && S.sel.i === i) { if (!S.spread) setSpread(true, false); return true; }
       const attr = i === 'ace' ? aceAx(v) : topAttrOf(c), sel = { i, attr };
       if (!legal(sel)) return false;
-      if (!gate({ kind: 'card', i, attr, id: c.id })) return false;
+      if (!gate(near ? { kind: 'card', i, attr, id: c.id, near: true } : { kind: 'card', i, attr, id: c.id })) return false;
       if (!S.spread) { S.spread = true; emit('spread', true); }
       return applySel(sel, c);
     }
@@ -752,18 +750,33 @@
       throwAttr(i, btn.dataset.a, btn);
     }
     function handTap(t, ev) {
+      if (!S.enterDone && !S.spread && !S.busy && !S.held && !isOver()) {   // 盤面還在滑進來（約 0.6 s）就點了疊著的手牌：記著，進場一完就攤開；教學照它自己的手指走，只抖一下（V5-play-10）
+        if (tut) bumpEl(els.tiles); else S.pendSpread = ev && ev.detail ? { x: ev.clientX, y: ev.clientY } : {};
+        return;
+      }
       if (!canAct()) return;
       if (!S.spread) { if (!spreadHand(ev)) bumpEl(els.tiles); return; }
       const st = S.spreadTap;
       if (st && ev && performance.now() - st.t < DBL_MS && Math.hypot(ev.clientX - st.x, ev.clientY - st.y) < DBL_PX) return;   // 雙擊的第二下（RV11-5）
-      let cv = t.closest('.cvw[data-act="pick"]');
-      if (!cv && ev && ev.detail) cv = nearCover(ev.clientX, ev.clientY);
+      let cv = t.closest('.cvw[data-act="pick"]'), near = false;
+      if (!cv && ev && ev.detail) { cv = nearCover(ev.clientX, ev.clientY); near = !!cv; }
       if (cv) {
         const tl = cv.closest('.tile'), i = tl.dataset.i === 'ace' ? 'ace' : +tl.dataset.i;
-        if (!liftCard(i)) bumpEl(cv);
+        if (!liftCard(i, false, near) && !near) bumpEl(cv);   // 縫裡算給隔壁那張、又被擋（教學）：當沒點到，不抖（V5 F2）
         return;
       }
       // 攤開時點到手牌區的空白（那一排上面、虛線框「點一張專輯」）：什麼都不做——收回只在點手牌外面（RV11-3）
+    }
+    // 屬性鈕之間的縫：觸控校正會把 click 吸到最近那顆（座標也跟著改），pointerdown 的座標是手指真正的位置。
+    //   那一下按在兩顆中間的縫裡＝不做事（RV11-2）。縫本身不掛 click 監聽：掛了它就變成校正的候選，鈕的內緣 2–6 px 反而被它吸走（V5 F5）
+    function inChipGap(ev) {
+      const d = S.down; if (!ev.detail || !d || performance.now() - d.t > 1500) return false;
+      const bs = [...els.abpop.querySelectorAll('.ab')].map(b => b.getBoundingClientRect()).sort((a, b) => a.left - b.left);
+      for (let k = 0; k + 1 < bs.length; k++) {
+        const a = bs[k], b = bs[k + 1];
+        if (d.x > a.right && d.x < b.left && d.y > Math.min(a.top, b.top) - 16 && d.y < Math.max(a.bottom, b.bottom) + 16) return true;
+      }
+      return false;
     }
     // 攤開時點在兩張中間的縫、或那一排上下緣外一點點：算點到最近的那張（滑鼠沒有觸控校正）
     function nearCover(x, y) {
@@ -814,7 +827,7 @@
     function onClick(ev) {
       const t = ev.target;
       const sw = S.swallow; S.swallow = null;
-      if (sw && performance.now() < sw.until && sw.el.contains(t)) { ev.preventDefault(); return; }   // 長按之後的那一下 click
+      if (sw && ev.detail && sw.el.contains(t)) { ev.preventDefault(); return; }   // 長按之後放開的那一下 click（不限時：按多久都一樣；下一次按下就作廢，V5 F6）
       if (S.held) { ev.preventDefault(); return; }
       if (!els.pop.hidden && !t.closest('.rl')) els.pop.hidden = true;
       let x;
@@ -824,7 +837,7 @@
         if (!S.rush && performance.now() - S.playAt > RUSH_MS) { S.rush = true; setSpeed(Math.max(S.speed, 4)); }
         return;
       }
-      if ((x = t.closest('.ab'))) { abTap(x); return; }
+      if ((x = t.closest('.ab'))) { if (!inChipGap(ev)) abTap(x); return; }
       if (t.closest('.pop')) return;                 // 屬性鈕之間的縫：什麼都不做（RV11-2）
       if (t.closest('.hand')) { handTap(t, ev); return; }
       // 「你丟的」預覽（浮起那張的半透明）、你的名字與聲望那列：還是手牌這一塊，不收回（RV11-3）
@@ -840,6 +853,8 @@
     }
     const LP_SEL = '.cvw[data-act="pick"], .slot[data-card], .ab';
     function onDown(ev) {
+      S.down = { x: ev.clientX, y: ev.clientY, t: performance.now() };   // 手指真正按下的位置（觸控校正只改 click 的座標；inChipGap 用）
+      S.swallow = null;   // 新的一次按下：上一次長按放開的 click 沒來（觸控取消、Android 長按不補 click）就不再等它，這一下照常（V5 F6）
       const t = ev.target.closest(LP_SEL);
       if (!t || S.held || (ev.button != null && ev.button > 0)) { S.lp = null; return; }
       const lp = S.lp = { el: t, x: ev.clientX, y: ev.clientY, h: 0 };
@@ -847,7 +862,7 @@
         if (S.lp !== lp) return;
         S.lp = null;
         const ok = t.matches('.ab') ? chipTip(t) : t.matches('.slot') ? infoOfSlot(t) : infoOfTile(t);
-        if (ok) S.swallow = { el: t, until: performance.now() + 900 };   // 放開手指的那一下 click 不再攤開／浮起／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）
+        if (ok) S.swallow = { el: t };   // 放開手指的那一下 click 不再攤開／浮起／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）
       }, LONG_MS);
     }
     function onMove(ev) { const lp = S.lp; if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { clearTimeout(lp.h); S.lp = null; } }
@@ -866,7 +881,7 @@
     root.addEventListener('pointerdown', onDown);
     root.addEventListener('pointermove', onMove);
     root.addEventListener('pointerup', onUp);
-    root.addEventListener('pointercancel', onUp);
+    root.addEventListener('pointercancel', () => { onUp(); S.swallow = null; });   // 取消＝不會有 click 來（V5 F6）
     root.addEventListener('pointerover', onOver);
     root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.ab,.sleeve')) ev.preventDefault(); });
     root.addEventListener('keydown', ev => {
@@ -1135,6 +1150,8 @@
       renderPop();
       handStart(S.v);
       setPhase('choose');
+      const pend = S.pendSpread; S.pendSpread = null;
+      if (pend && !S.spread && spreadHand() && pend.x != null) S.spreadTap = { x: pend.x, y: pend.y, t: performance.now() };   // 雙擊的第二下照 RV11-5 不算點到那張
     }
 
     // ---------------- autoplay（e2e 用；走正常的點擊流程與 gate：攤開 → 點那張 → 點那個屬性） ----------------

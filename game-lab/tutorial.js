@@ -207,7 +207,8 @@
       }
       var ctx = R.ctx || R.context();
       if (!matches(s, a, ctx)) {
-        R.last = { ok: false, wrong: 'target' };
+        // a.near：點在兩張中間的縫、duel.js 算成最近那張（RV11-3）——洞比封面大 4 px，縫靠隔壁那半也在洞裡：不罵，當沒點到（V5 F2）
+        R.last = a.near ? { ok: false, wrong: 'target', quiet: true } : { ok: false, wrong: 'target' };
         R.log.push('block ' + s.id + ' ' + JSON.stringify(a));
         return false;
       }
