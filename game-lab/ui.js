@@ -199,12 +199,13 @@
     st.bottom = keep[0]; st.flex = keep[1]; st.height = keep[2]; st.maxHeight = keep[3];
     return h;
   }
-  function cam(name, screen, ms, panelMin) {
-    UI.camName = name;
+  function cam(name, screen, ms, panelMin, growPanel) {
+    UI.camName = name; UI.camSheet = false;
     if (ms == null) ms = UI.camQuick ? 0 : 450;
     var o = { ms: Math.round(ms / speed()), screen: screen };
     if (panelMin != null) o.panelMin = panelMin;
-    return stgP('camera', name, o);
+    if (growPanel != null) o.growPanel = growPanel;
+    return stgP('camera', name, o).then(function (r) { floorSoon(); return r; });   // 鏡頭停下來才看得到店的最下面：地板照停下來的樣子再量一次（V5 F4）
   }
   // 矮螢幕的鏡頭從牆頂往下裁（anchor bottom）：店裡看得到的人頭頂被裁掉時，鏡頭往上移到頭頂留 4 格（高度、倍率不變）
   function keepHeads(ms, pad) {
@@ -932,25 +933,34 @@
   // 面板內容比 reward 鏡頭留的高：量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）；放不下整間店就收成對決那條（人都還在畫面裡）
   function roomForSheet(s) {
     var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
-    var need = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
+    var nat = Math.ceil(naturalH(s) + 4), need = Math.min(Math.round(vh * 0.72), Math.max(260, nat));
     if (UI.camName === 'full' && floorRoom(need)) return;
     UI.sheetNeed = need; floorSoon();               // 地板讓到 0 還不夠：鏡頭收；地板不能再把讓出來的高補回去（不然面板還是一樣矮）
-    if (vh - 32 - need < 210) cam('strip', 'reward', 380); else cam('reward', 'reward', 380, need);
+    // 收成橫條：橫條往上長到面板剛好放得下內容（不然面板照橫條的高、內容下面空一大塊白；V5-play-8：375 老闆的四張空 65–120 px）
+    if (vh - 32 - need < 210) { cam('strip', 'reward', 380, null, Math.max(need, nat)); return; }
+    // reward 鏡頭固定從第 40 列起：高螢幕上面板要的高讓完還有剩，剩的會變成店景下面一條空地板、店頂照樣被裁（V5 F3）。
+    //   這時改用 full 鏡頭帶 panelMin：只裁真的放不下的那幾列（full 量出來比 reward 高＝沒有縮小倍率、看到的列比 reward 多）
+    var st = UI.stage, fh = 0, rh = 0;
+    if (st && typeof st.camCssH === 'function') { try { fh = st.camCssH('full', { panelMin: need }); rh = st.camCssH('reward', { panelMin: need }); } catch (_) {} }
+    if (fh > rh + 2) { cam('full', 'reward', 380, need); UI.camSheet = true; }
+    else cam('reward', 'reward', 380, need);
   }
   // 高螢幕接著木地板（V03）時開面板：面板要的高從延伸的地板讓出來，鏡頭照舊看整間店（RH-5：原本換 reward 鏡頭把店景上緣裁掉 58 px，
   //   讓出來的高又被地板補回去，舞台一樣高、只是少看到牆上的架子）。地板不夠讓才換鏡頭
   function floorRoom(need) {
-    if (!(UI.floorX > 0) || UI.screen !== 'scene' || !UI.panel) return false;
-    if (UI.panel.clientHeight + UI.floorX < need) return false;
+    var fx = UI.floorX = floorNow();
+    if (!(fx > 0) || UI.screen !== 'scene' || !UI.panel) return false;
+    if (UI.panel.clientHeight + fx < need) return false;
     UI.sheetNeed = need;
     fitFloor();
     return true;
   }
   function camBackSoon() {
-    if (UI.screen !== 'scene' || (UI.camName !== 'reward' && UI.camName !== 'strip')) return;
+    var shrunk = function () { return UI.camName === 'reward' || UI.camName === 'strip' || UI.camSheet; };   // camSheet＝為了面板裁過的 full（F3）
+    if (UI.screen !== 'scene' || !shrunk()) return;
     var scr0 = UI.screen;
     clearTimeout(UI.camBack);
-    UI.camBack = setTimeout(function () { UI.camBack = 0; if (UI.screen === scr0 && !qs(':scope > .lb-sheet', UI.panel) && (UI.camName === 'reward' || UI.camName === 'strip')) cam('full', 'scene', 380); }, 160);
+    UI.camBack = setTimeout(function () { UI.camBack = 0; if (UI.screen === scr0 && !qs(':scope > .lb-sheet', UI.panel) && shrunk()) cam('full', 'scene', 380); }, 160);
   }
   function closeSheet(s) {
     if (!s) return;
@@ -1072,8 +1082,9 @@
     if (!r || !E.canBargainPick(r)) return Promise.resolve(null);
     var X = econ();
     if (X && typeof X.bargainPick === 'function') {
+      UI.econBusy = true; fitFloor();                  // 今晚來客的木地板先收（抽屜上面照 R2 是舞台黑；V5-play-4）
       return Promise.resolve().then(function () { return X.bargainPick({ prompt: prompt }); }).then(null, function (e) { console.error(e); return null; })
-        .then(function (ids) { if (save.run && E.canBargainPick(save.run)) return bargainFallback(prompt); return ids; });
+        .then(function (ids) { UI.econBusy = false; floorSoon(); if (save.run && E.canBargainPick(save.run)) return bargainFallback(prompt); return ids; });
     }
     console.error('[ui] DipLabEcon.bargainPick 不在：用備用的挑三張面板');
     return bargainFallback(prompt);
@@ -1535,7 +1546,7 @@
     var f = FX(), foeAnc = anchorOf('f');
     UI.going = true;
     stg('interact', 'duel');
-    UI.camName = 'strip';
+    UI.camName = 'strip'; UI.camSheet = false;
     var walkIn = null, pushed = false;
     var push = function () {
       if (pushed || UI.screen !== 'duel' || !wrap.isConnected) return;
@@ -1981,8 +1992,10 @@
     var X = econ();
     if (!X || typeof X[m] !== 'function') { console.warn('[ui] DipLabEcon.' + m + ' 不在'); return Promise.resolve(); }
     var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}     // 抽屜開了：今晚來客的老闆小提示收掉，不蓋抽屜的標題、錢、✕（RT-11）
+    UI.econBusy = true; fitFloor();                    // 今晚來客接的木地板先收掉：抽屜的對焦照原本的舞台高（V5-play-4）
+    var done = function () { UI.econBusy = false; };
     // 抽屜／櫃檯關掉才 resolve：重畫今晚來客的錢與包包；你的人物留在箱子／櫃檯前（notes-B3 請求 4：不要走回 browse）
-    return Promise.resolve().then(function () { return X[m](arg); }).then(function () { if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } }, function (e) { console.error(e); });
+    return Promise.resolve().then(function () { return X[m](arg); }).then(function () { done(); if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } else floorSoon(); }, function (e) { done(); floorSoon(); console.error(e); });
   }
   function onStageAction(action, hot) {
     if (!action) return;
@@ -2261,17 +2274,27 @@
   // V03：高螢幕的序章／尾聲（scene）——店景在寬度上已經是整間店，不能再大；面板照內容高之後下面剩的空白，
   //   改成店裡的木地板往下延伸（舞台變高、對白框與包包條緊接在地板下面），不留一大片白。其他畫面一律不延伸。
   function floorSoon() { if (UI.floorRaf) return; UI.floorRaf = requestAnimationFrame(function () { UI.floorRaf = 0; fitFloor(); }); }
+  // 現在真的畫出來的木地板（鏡頭在動、還沒看到店的最下面時是 0；停下來之後 shop 照最後要的那個高畫）：
+  //   UI.floorX 跟著它，不跟著「上一次 floorExt 回了什麼」——鏡頭移動中回 0、停下來卻畫了 181 px，floorX 一直是 0，
+  //   之後開面板 floorRoom 以為沒地板可讓、換 reward 鏡頭把店頂裁掉，地板又長回來（V5 F4：尾聲撿 Fishmans 那張）
+  function floorNow() {
+    var sh = UI.stage && UI.stage.shop;
+    if (sh && typeof sh.view === 'function') { try { return sh.view().ext || 0; } catch (_) {} }
+    return UI.floorX || 0;
+  }
   function fitFloor() {
     var st = UI.stage; if (!st || typeof st.floorExt !== 'function') return;
-    var cur = UI.floorX || 0;
-    if (UI.screen !== 'scene' || !UI.panel) { if (cur) { UI.floorX = 0; st.floorExt(0); } return; }
+    var cur = UI.floorX = floorNow();
+    // 今晚來客也接（V5-play-4：430×932 錢／包包那行下面空 193 px 白）；抽屜（econ）開著、面板蓋了 sheet 時不接——抽屜上面的空隙照 R2 是舞台黑
+    var night = UI.screen === 'night' && !UI.econBusy && !qs(':scope > .lb-sheet', UI.panel || D.body);
+    if ((UI.screen !== 'scene' && !night) || !UI.panel) { UI.floorX = 0; st.floorExt(0); return; }   // 要過、還沒畫出來的也收掉（floorExt(0) 已經是 0 就不重畫）
     var p = UI.panel, pr = p.getBoundingClientRect(); if (!pr.height) return;
     var cs = getComputedStyle(p), need = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0) + 10;   // 包包條下面留 10 px
     for (var i = 0; i < p.children.length; i++) {
       var c = p.children[i], cc = getComputedStyle(c);
       if (cc.position === 'absolute' || cc.position === 'fixed' || cc.display === 'none') continue;
       if (UI.floorRO && !c.__floorObs) { try { UI.floorRO.observe(c); c.__floorObs = true; } catch (_) {} }
-      need += c.getBoundingClientRect().height + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);
+      need += (night ? naturalH(c) : c.getBoundingClientRect().height) + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);   // 今晚來客那塊被面板撐滿：量內容本身
     }
     if (UI.sheetNeed && qs(':scope > .lb-sheet', p)) need = Math.max(need, UI.sheetNeed);   // 面板開著：至少讓出面板要的高（RH-5）
     var want = Math.max(0, Math.floor(cur + pr.height - need));

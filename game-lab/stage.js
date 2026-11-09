@@ -6,7 +6,7 @@
  *     → Promise<Stage>        // 整個 session 只 mount 一次；換畫面只換鏡頭（camera）與下方面板
  *
  *   Stage.load(shopId) → Promise              換一家店（台北地圖預告）；同一個 host
- *   Stage.camera(name, { ms, screen, panelMin }) → Promise ; Stage.camCssH(name, o) → 這個鏡頭現在的舞台 CSS 高（strip 的 grow：高螢幕往上長）
+ *   Stage.camera(name, { ms, screen, panelMin, growPanel }) → Promise ; Stage.camCssH(name, o) → 這個鏡頭現在的舞台 CSS 高（strip 的 grow：高螢幕往上長）
  *   Stage.floorExt(px) → 店景下面接著畫幾 CSS px 木地板（V03；鏡頭看到店的最下面時才畫；回畫出來的）
  *       整數場景像素插值；同步設定 host 高度；ms 0＝直接切；strip 在可視高 <600 自動換 stripS；
  *       full／reward 有矮螢幕規則（從牆頂往下裁到 minH，再不夠才降倍率）；prefers-reduced-motion＝150 ms 淡入淡出
@@ -196,10 +196,13 @@
     }
 
     // ---------------- 鏡頭
+    //   o.growPanel（CSS px）：面板要這麼高、剩下的高讓這個鏡頭往上長（沒有 grow 的 stripS 也行；ui.js 開面板收成橫條時，橫條長到剛好放得下面板，V5-play-8）
     function fitCam(name, c, o) {
       var v = shop.view();
       var pm = o.panelMin != null ? o.panelMin : (PANEL_MIN[o.screen] != null ? PANEL_MIN[o.screen] : (CAM_PANEL[name] != null ? CAM_PANEL[name] : 150));
-      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!(L.fine || L.projection), growAvail: c.grow ? visH() - 32 - (c.grow.panel | 0) : 0 });
+      var gp = o.growPanel != null ? o.growPanel : (c.grow ? c.grow.panel | 0 : null);
+      if (gp != null && o.growPanel != null) c = Object.assign({}, c, { grow: Object.assign({}, c.grow || {}, { panel: gp }) });
+      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!(L.fine || L.projection), growAvail: gp != null ? visH() - 32 - gp : 0 });
     }
     // 這個鏡頭在現在的可視高下，舞台會是幾 CSS px 高（ui.js 對決進場時先把盤面定在最後的高度）
     function camCssH(name, o) {
@@ -222,7 +225,7 @@
     function camera(name, o) {
       o = o || {};
       focusPrev = null;   // 換鏡頭＝抽屜那一箱的對焦結束
-      lastCam = { name: name, o: { screen: o.screen, panelMin: o.panelMin, noAuto: o.noAuto } };
+      lastCam = { name: name, o: { screen: o.screen, panelMin: o.panelMin, noAuto: o.noAuto, growPanel: o.growPanel } };
       var cams = L.cameras || {};
       if (!o.noAuto) name = pickCamera(name, cams, visH());
       var c = cams[name] || cams.full || { y: 0, h: L.size[1] };
