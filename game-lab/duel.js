@@ -769,7 +769,7 @@
         return;
       }
       const at = ev && ev.detail ? { x: ev.clientX, y: ev.clientY } : null;
-      if (!liftCard(i, at)) { bumpEl(cv); return; }
+      if (!liftCard(i, at)) { if (!(tut && typeof tut.quiet === 'function' && tut.quiet())) bumpEl(cv); return; }   // 教學說「當沒點到」的那一下不抖（V5 F2）
       S.openTap = at ? { i, x: at.x, y: at.y, t: performance.now() } : null;
     }
     // 屬性鈕之間的縫：觸控校正會把 click 吸到最近那顆（座標也跟著改），pointerdown 的座標是手指真正的位置。

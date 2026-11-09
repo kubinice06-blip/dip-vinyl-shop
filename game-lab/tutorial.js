@@ -16,7 +16,7 @@
 // ── 介面 ───────────────────────────────────────────────────────────────────────────────────────────
 // window.DipLabTut = {
 //   configure({ stage, content, save:()=>saveObj, persist:()=>void, onEnd?(how) }),
-//   duelHooks() → { gate(a)→bool, onPhase(ph), onResolved(evs), resolveOpts(act)→{} }   // 只給教學那場的 DipLabDuel hooks.tut
+//   duelHooks() → { gate(a)→bool, quiet()→bool（剛擋的那下不罵）, onPhase(ph), onResolved(evs), resolveOpts(act)→{} }   // 只給教學那場的 DipLabDuel hooks.tut
 //   startDuelLesson({ tier, replay? }) → Promise<'done'|'skipped'|'released'|'aborted'>  // mount 之後叫；依 duel.n 自己接到那一手的步驟
 //   skip(), abort(), active(), fastForward()
 //   hintHook(id, targets)   // ＝DipLabDuel hooks.hint：一次性老闆小提示；教學進行中不出、不記
@@ -995,6 +995,7 @@
         kick();
         return ok;
       },
+      quiet: function () { var R = S.runner; return !!(R && R.last && R.last.quiet); },   // 剛剛那一下擋了但不罵（洞的邊緣、收回）：duel.js 就不抖那張
       onPhase: function () { kick(); },
       onResolved: function (evs) {
         var L = S.lesson, R = S.runner;
