@@ -134,7 +134,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=46` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=47` |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、一晚、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
 | `cards.js`、`bins.js` | 卡池與 14 區（十大類＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改） |
