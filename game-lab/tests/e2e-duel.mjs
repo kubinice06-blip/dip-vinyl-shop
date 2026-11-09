@@ -8,10 +8,13 @@
 //          LAB_SIZES（預設四個驗收尺寸 390x664,375x548,430x932,360x640）；
 //          LAB_SHOTS＝目錄 → 另存段 3「對戰畫面」截圖（deviceScaleFactor 2）：出牌前、命中／剋不動／唬人（揭曉浮框出現後停格）、最後一手 KO、（另加）王牌擋下。
 //
-// 每個尺寸（FIXLIST 11：手牌平時疊成水平一排（錯開，像新接龍；店主 17:1x 不要扇形）、點一下攤開；攤開後點一張＝浮起、正上方三顆屬性鈕；點屬性鈕＝丟）：
-//   1 版面：疊著（手牌 5 張＋王牌，同一條水平線、不轉角，每張露出左邊約 3 成、都在畫面裡）、攤開（一排不重疊、都在畫面裡、封面 ≥44）、浮起（三顆屬性鈕 ≥44×44、最高那顆 .top、在那張上面）；
-//     盤面與文件都不捲動；疊著／攤開／浮起時盤面裡沒有超過 26 px 的空帶（FIXLIST 9）；名牌只有新名字（沒有副標、沒有誠實度，FIXLIST 6）
-//   2 點疊著的手牌＝攤開（沒選）；點封面＝浮起這張、預覽屬性＝engine.topAttr、「你丟的」半透明預覽；3 點別張＝換；4 再點浮起那張不出手、點手牌外面＝收回疊起來
+// 每個尺寸（v5 手風琴：手牌疊成水平一排（錯開，像新接龍；店主 17:1x 不要扇形）、封面同一個大小；點一張＝在那張打開（右邊的往右滑開、它整張露出來並浮起）、正上方三顆屬性鈕；點屬性鈕＝丟）：
+//   1 版面：疊著（手牌 5 張＋王牌，同一條水平線、不轉角，每張露出左邊約 3 成、都在畫面裡、封面一樣大）；
+//     打開中間那張（1b）、最左那張（1c）、王牌（1f）：封面跟疊著一樣大、打開那張整張露出來而且在畫面裡、其他照樣疊著（露出 22–35%）、
+//     屬性鈕（三顆 ≥44×44、最高那顆 .top；王牌一顆）在那張上面、不蓋提示句；盤面與文件都不捲動；沒有超過 24 px 的空帶（FIXLIST 9）；
+//     名牌只有新名字（沒有副標、沒有誠實度，FIXLIST 6）
+//   2 點一張（疊著）＝在那張打開、預覽屬性＝engine.topAttr、「你丟的」半透明預覽；3 點別張＝換那張打開；4 再點打開那張＝收回（不出手）、點手牌外面＝收回；
+//     4b 雙擊的第二下（同一點 120 ms 後）不算「再點＝收回」
 //   5 丟（剋中）：280 ms 前 slot-e 是「蓋著」、之後才翻成他的牌；他還有 N 張丟出就少一；浮框三行＝_fmt.clashText(事件)；第 n／6 手加一；提示句換字
 //   6 剋不動（gap）／7 唬人（被剋，「他唬你！」）／8 平手（舞台 sfx('chime',{attr:null})、唱盤空）／9 王牌被 ≤5 星剋＝剋不動（gap；FIXLIST 2 沒有「不會被剋」）＋tip_ace：浮框＝clashText
 //  10 __lab.force：counter 之後 1.6 s clashState().deck.by==='p'；tie 時 deck===null
@@ -108,8 +111,8 @@ function pageTools() {
       const dl = document.querySelector('.dl'), R = dl.getBoundingClientRect(), bot = Math.min(R.bottom, innerHeight);
       const iv = [];
       const vis = el => { const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden' || el.hidden || el.closest('[hidden]')) return false; const b = el.getBoundingClientRect(); return b.width > 0 && b.height > 0; };
-      for (const q of ['.dl-e .nmrow', '.dl-e .hp', '.slot.e', '.slot.p', '.slot .who', '.rounds', '.tri', '.hint', '.callout.on', '.lastline', '.dl-p .nmrow', '.dl-p .hp', '.tile:not(.gone)', '.pop .ab', '.hprompt'])
-        dl.querySelectorAll(q).forEach(el => { if (!vis(el) || (el.classList.contains('hprompt') && !el.textContent)) return; const b = el.getBoundingClientRect(); iv.push([b.top, b.bottom]); });
+      for (const q of ['.dl-e .nmrow', '.dl-e .hp', '.slot.e', '.slot.p', '.slot .who', '.rounds', '.tri', '.hint', '.callout.on', '.lastline', '.dl-p .nmrow', '.dl-p .hp', '.tile:not(.gone)', '.pop .ab'])
+        dl.querySelectorAll(q).forEach(el => { if (!vis(el)) return; const b = el.getBoundingClientRect(); iv.push([b.top, b.bottom]); });
       const e = dl.querySelector('.dl-e').getBoundingClientRect(), p = dl.querySelector('.dl-p').getBoundingClientRect();
       iv.push([e.bottom - 1, e.bottom], [p.top, p.top + 1]);
       iv.sort((a, b) => a[0] - b[0]);
@@ -175,10 +178,10 @@ async function tapName(page, name) {
   await page.touchscreen.tap(r.x, r.y);
   return r;
 }
-// 攤開（疊著時點一下手牌）→ 點那張（浮起）
+// 點那張（＝在那張打開；已經打開就不再點：再點＝收回）
 async function liftIt(page, i) {
-  if (!(await page.evaluate(() => window.DipLabDuel.debug().spread))) { await tapName(page, 'hand'); await sleep(260); }
-  await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(160);
+  if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
+  await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(260);
 }
 // 找得到 want 的這一手（找不到就換種子重開），回 find() 的結果
 async function setup(page, want, seed0 = 7) {
@@ -189,7 +192,7 @@ async function setup(page, want, seed0 = 7) {
   }
   return null;
 }
-// 照 find() 的結果真點：攤開 → 點那張（浮起）→ 他那邊排好；throwIt＝點那個屬性鈕（＝丟）
+// 照 find() 的結果真點：點那張（打開）→ 他那邊排好；throwIt＝點那個屬性鈕（＝丟）
 async function selectPlay(page, f) {
   const i = f.act.ace ? 'ace' : f.act.i;
   await liftIt(page, i);
@@ -198,7 +201,7 @@ async function selectPlay(page, f) {
   return (await dbg(page)).sel;
 }
 async function throwIt(page, name) { await tapName(page, name || page._next); page._next = null; }
-// 攤開 → 點第 i 張 → 點最高那顆（.top）丟出；回丟的那張 id
+// 點第 i 張（打開）→ 點最高那顆（.top）丟出；回丟的那張 id
 async function quickPlay(page, i) {
   await liftIt(page, i);
   const r = await page.evaluate(() => { const b = document.querySelector('.dl .pop .ab.top'); const x = window.DipLabDuel.debug(); return { tut: b && b.dataset.tut, id: window.DipLabEngine.view(window.__lab.rawDuel()).hand[x.sel.i].id }; });
@@ -277,7 +280,7 @@ async function runSize(browser, w, h) {
   const errors = [];
   try {
     await boot(page);
-    // ---- 1 版面（疊著 → 攤開 → 浮起）
+    // ---- 1 版面（v5 手風琴：疊著 → 打開中間那張 → 最左那張 → 王牌；封面同一個大小）
     const snapHand = () => page.evaluate(() => {
       const D = window.DipLabDuel, rect = el => { if (!el) return null; const b = el.getBoundingClientRect(); return { l: b.left, t: b.top, r: b.right, b: b.bottom, w: b.width, h: b.height }; };
       const root = document.querySelector('.dl');
@@ -288,61 +291,95 @@ async function runSize(browser, w, h) {
       const abs = [...document.querySelectorAll('.dl .pop .ab')].map(b => ({ tut: b.dataset.tut, top: b.classList.contains('top'), r: rect(b) }));
       const x = D.debug(), v = window.DipLabEngine.view(window.__lab.rawDuel());
       return { vh: innerHeight, vw: innerWidth, scroll: [root.scrollHeight, root.clientHeight], doc: [document.documentElement.scrollHeight, document.documentElement.scrollWidth],
-        tiles, strips, abs, spread: x.spread, sel: x.sel, n: x.n, hand: rect(D.el('hand')), cls: root.className, bands: window.__e2e.bands(),
+        tiles, strips, abs, open: x.open, sel: x.sel, n: x.n, hand: rect(D.el('hand')), hint: rect(D.el('e-hint')), cls: root.className, bands: window.__e2e.bands(),
         topAttr: x.sel && x.sel.i !== 'ace' ? window.DipLabEngine.topAttr(v.hand[x.sel.i]) : null, slotP: (document.querySelector('.dl .slot.p') || {}).className || '',
         hon: !!D.el('e-honesty'), nm: ((document.querySelector('.dl .dl-e .nm') || {}).textContent || '').trim(),
         sub: (document.querySelector('.dl .dl-e .nmrow .sub') || {}).textContent || '',
         want: ((window.DipLabContent.enemies || {})[(window.__lab.rawDuel() || { e: {} }).e.id] || {}).name || '',
-        sleeve: (D.el('e-sleeve') || {}).textContent || '', slotE: (D.el('slot-e') || {}).textContent || '', thr: !!document.querySelector('.dl [data-tut=throw]'), chipRow: document.querySelectorAll('.dl .tile .chip').length };
+        sleeve: (D.el('e-sleeve') || {}).textContent || '', slotE: (D.el('slot-e') || {}).textContent || '', thr: !!document.querySelector('.dl [data-tut=throw]'), chipRow: document.querySelectorAll('.dl .tile .chip').length,
+        oldUi: document.querySelectorAll('.dl .hprompt, .dl .hand.spread').length };
     });
     const inView = (L, list) => list.every(x => x.r.l >= -0.5 && x.r.r <= L.vw + 0.5 && x.r.t >= -0.5 && x.r.b <= L.vh + 0.5);
     const noScroll = L => L.scroll[0] <= L.scroll[1] + 1 && L.doc[0] <= L.vh + 1 && L.doc[1] <= L.vw + 1;
+    // 打開第 k 張（tiles 的索引）：封面跟疊著（F0）一樣大；那張整張露出來（右邊那張的左緣不在它裡面）、浮起、在畫面裡；
+    //   其他照樣疊著（露出 22–35%）；屬性鈕在那張上面、橫向跟那張重疊、不蓋提示句；不捲動；空帶 ≤24
+    const openCheck = (O, k, F0, nChips) => {
+      const up = O.tiles[k], n = O.tiles.length, why = [];
+      if (!up || !up.up || O.tiles.filter(t => t.up).length !== 1) why.push('浮起的不是第 ' + k + ' 張');
+      if (!O.tiles.every(t => Math.abs(t.r.w - F0) < 0.6 && Math.abs(t.r.h - F0) < 0.6)) why.push('封面大小 ' + O.tiles.map(t => Math.round(t.r.w)).join('/') + ' ≠ ' + Math.round(F0));
+      if (k < n - 1 && O.tiles[k + 1].r.l < up.r.r - 0.5) why.push('右邊那張蓋到打開那張 ' + Math.round(up.r.r - O.tiles[k + 1].r.l) + ' px');
+      if (up && !(up.r.t < Math.min(...O.tiles.filter((t, j) => j !== k).map(t => t.r.t)) - 3)) why.push('沒浮起');
+      if (!inView(O, O.tiles)) why.push('有封面在畫面外');
+      O.strips.forEach((d, j) => { if (j === k || j === n - 1) return; if (d < 0.22 * F0 - 0.6 || d > 0.35 * F0 + 0.6) why.push('第 ' + j + ' 張露出 ' + Math.round(d) + ' px（' + Math.round(d / F0 * 100) + '%）'); });
+      if (O.abs.length !== nChips) why.push('屬性鈕 ' + O.abs.length + ' 顆');
+      if (!O.abs.every(b => b.r.w >= 44 && b.r.h >= 44)) why.push('屬性鈕小於 44');
+      if (!inView(O, O.abs)) why.push('屬性鈕在畫面外');
+      if (up && O.abs.length && Math.max(...O.abs.map(b => b.r.b)) > up.r.t + 0.5) why.push('屬性鈕不在那張上面');
+      if (up && O.abs.length && !(Math.min(...O.abs.map(b => b.r.l)) < up.r.r && Math.max(...O.abs.map(b => b.r.r)) > up.r.l)) why.push('屬性鈕沒對著那張');
+      if (O.hint && O.abs.some(b => b.r.t < O.hint.b - 0.5 && b.r.b > O.hint.t && b.r.l < O.hint.r && b.r.r > O.hint.l)) why.push('屬性鈕蓋到提示句');
+      if (!noScroll(O)) why.push('捲動');
+      if (O.bands.max > 24) why.push('空帶 ' + O.bands.max + ' px（y=' + O.bands.at + '）');
+      if (O.oldUi) why.push('還有攤開／虛線框');
+      return why;
+    };
+    const desc = O => `封面 ${O.tiles.map(t => Math.round(t.r.w)).join('/')} px、露出 ${O.strips.map(Math.round).join('/')} px、上緣 ${O.tiles.map(t => Math.round(t.r.t)).join('/')}；屬性鈕 ${O.abs.map(b => b.tut + (b.top ? '*' : '') + ' ' + Math.round(b.r.w) + '×' + Math.round(b.r.h) + '@' + Math.round(b.r.l) + ',' + Math.round(b.r.t)).join('、')}；最大空帶 ${O.bands.max} px`;
     {
       const F = await snapHand();
-      // 店主 17:1x：水平直線（像舊版新接龍）——每張同一個上緣、不轉角；露出左邊約 3 成寬（25–35%）
+      // 店主 17:1x：水平直線（像舊版新接龍）——每張同一個上緣、不轉角；露出左邊約 3 成寬（25–35%）；封面一樣大
       const tops0 = F.tiles.map(t => Math.round(t.r.t)), flat = Math.max(...tops0) - Math.min(...tops0) <= 1 && F.tiles.every(t => !t.rot);
       const ratio = F.strips.slice(0, -1).map((d, k) => d / F.tiles[k].r.w), okR = ratio.every(x => x >= 0.25 && x <= 0.35);
-      const okF = !F.spread && !F.sel && F.tiles.length === 6 && F.tiles[5].tut === 'hand-ace' && inView(F, F.tiles) && noScroll(F) && flat && okR && Math.min(...F.strips) >= 14 && !F.thr && !F.chipRow && F.bands.max <= 26;
-      record('1a', size, okF, `疊著：${F.tiles.map(t => t.tut).join(',')}；上緣 ${[...new Set(tops0)].join('/')}、轉角 ${[...new Set(F.tiles.map(t => t.rot))].join('/')}°；封面 ${Math.round(F.tiles[0].r.w)} px，每張露出 ${F.strips.map(Math.round).join('/')} px（${ratio.map(x => Math.round(x * 100)).join('/')}%）；都在畫面裡 ${inView(F, F.tiles)}；最大空帶 ${F.bands.max} px（y=${F.bands.at}）；丟！${F.thr ? '還在' : '沒有'}、星鈕列 ${F.chipRow}（${F.cls}）`);
+      const F0 = F.tiles[0].r.w, same = F.tiles.every(t => Math.abs(t.r.w - F0) < 0.6 && Math.abs(t.r.h - F0) < 0.6);
+      const okF = F.open == null && !F.sel && F.tiles.length === 6 && F.tiles[5].tut === 'hand-ace' && same && inView(F, F.tiles) && noScroll(F) && flat && okR && Math.min(...F.strips) >= 14 && !F.thr && !F.chipRow && !F.oldUi && F.bands.max <= 24;
+      record('1a', size, okF, `疊著：${F.tiles.map(t => t.tut).join(',')}；上緣 ${[...new Set(tops0)].join('/')}、轉角 ${[...new Set(F.tiles.map(t => t.rot))].join('/')}°；封面 ${F.tiles.map(t => Math.round(t.r.w)).join('/')} px，每張露出 ${F.strips.map(Math.round).join('/')} px（${ratio.map(x => Math.round(x * 100)).join('/')}%）；都在畫面裡 ${inView(F, F.tiles)}；最大空帶 ${F.bands.max} px（y=${F.bands.at}）；丟！${F.thr ? '還在' : '沒有'}、星鈕列 ${F.chipRow}（${F.cls}）`);
       await shot(page, `${size}-0-stack.png`);
-      await tapName(page, 'hand'); await sleep(300);
-      const S = await snapHand();
-      const overlap = S.tiles.some((t, k) => k && t.r.l < S.tiles[k - 1].r.r - 0.5);
-      const okS = S.spread && !S.sel && S.tiles.length === 6 && !overlap && inView(S, S.tiles) && S.tiles.every(t => t.r.w >= 44 && t.r.h >= 44) && noScroll(S) && S.bands.max <= 26;
-      record('1b', size, okS, `攤開：${S.tiles.length} 張一排、${overlap ? '有重疊' : '不重疊'}、封面 ${Math.round(S.tiles[0].r.w)} px、都在畫面裡 ${inView(S, S.tiles)}；最大空帶 ${S.bands.max} px（y=${S.bands.at}）`);
-      await shot(page, `${size}-0-spread.png`);
-      await tapName(page, 'card-0'); await sleep(300);
-      const U = await snapHand();
-      const up = U.tiles.find(t => t.up), tops = U.abs.filter(b => b.top);
-      const okU = U.sel && U.sel.i === 0 && U.sel.attr === U.topAttr && up && up.tut === 'hand-0' && U.abs.length === 3 && U.abs.every(b => b.r.w >= 44 && b.r.h >= 44) && inView(U, U.abs)
-        && tops.length === 1 && tops[0].tut === `chip-0-${U.topAttr}` && Math.max(...U.abs.map(b => b.r.b)) <= up.r.t + 0.5 && / pre/.test(U.slotP) && noScroll(U) && U.bands.max <= 26;
-      record('1c', size, okU, `浮起 card-0：sel ${short(U.sel)}（topAttr ${U.topAttr}）；屬性鈕 ${U.abs.map(b => b.tut + (b.top ? '*' : '') + ' ' + Math.round(b.r.w) + '×' + Math.round(b.r.h)).join('、')}；在那張上面 ${U.abs.length && Math.max(...U.abs.map(b => b.r.b)) <= (up ? up.r.t : 0) + 0.5}；你丟的「${U.slotP}」；最大空帶 ${U.bands.max} px`);
-      await shot(page, `${size}-0-lift.png`);
+      await tapName(page, 'card-2'); await sleep(320);
+      const O = await snapHand(), w2 = openCheck(O, 2, F0, 3);
+      const okO = !w2.length && O.open === 2 && O.sel && O.sel.attr === O.topAttr && O.abs.filter(b => b.top).map(b => b.tut).join() === `chip-2-${O.topAttr}` && / pre/.test(O.slotP);
+      record('1b', size, okO, `打開 card-2：${w2.join('；') || 'ok'}；${desc(O)}；sel ${short(O.sel)}（topAttr ${O.topAttr}）；你丟的「${O.slotP}」`);
+      await shot(page, `${size}-0-open2.png`);
+      await tapName(page, 'card-0'); await sleep(320);
+      const U = await snapHand(), w0 = openCheck(U, 0, F0, 3);
+      const okU = !w0.length && U.open === 0 && U.sel && U.sel.attr === U.topAttr && U.abs.filter(b => b.top).map(b => b.tut).join() === `chip-0-${U.topAttr}` && / pre/.test(U.slotP);
+      record('1c', size, okU, `打開 card-0（最左）：${w0.join('；') || 'ok'}；${desc(U)}；sel ${short(U.sel)}`);
+      await shot(page, `${size}-0-open0.png`);
       record('1d', size, !U.hon && !U.sub && U.nm === U.want && U.want, `名牌「${U.nm}」（要＝content 的新名字「${U.want}」）；副標 ${U.sub ? '「' + U.sub + '」' : '沒有'}；誠實度 ${U.hon ? '還在 DOM' : '沒有'}（FIXLIST 6）`);
       record('1e', size, /蓋著/.test(U.sleeve), `他的封套：「${U.sleeve.trim()}」；牌桌他那格：「${U.slotE.trim()}」`);
+      await tapName(page, 'card-ace'); await sleep(320);
+      const A = await snapHand(), wa = openCheck(A, 5, F0, 1);
+      const stay = A.tiles.every((t, j) => j === 5 || (Math.abs(t.r.l - F.tiles[j].r.l) < 0.6 && Math.abs(t.r.t - F.tiles[j].r.t) < 0.6));
+      const okA = !wa.length && A.open === 'ace' && A.abs.length === 1 && A.abs[0].tut === 'chip-ace' && stay;
+      record('1f', size, okA, `打開王牌（最右）：${wa.join('；') || 'ok'}；其他 5 張跟疊著時同一個位置 ${stay}；${desc(A)}`);
+      await shot(page, `${size}-0-openace.png`);
     }
-    // ---- 2 點疊著的手牌＝攤開；點封面＝浮起這張＋topAttr；3 點別張＝換；4 再點浮起那張不出手、點外面＝收回
+    // ---- 2 點一張＝在那張打開；3 點別張＝換；4 再點打開那張＝收回、點外面＝收回；4b 雙擊的第二下不收回
     {
-      await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);
+      await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);
       const n0 = (await dbg(page)).n;
-      await tapName(page, 'hand'); await sleep(260);
-      const s2a = await page.evaluate(() => ({ spread: window.DipLabDuel.debug().spread, sel: window.DipLabDuel.debug().sel }));
-      await tapName(page, 'card-1'); await sleep(220);
+      await tapName(page, 'card-1'); await sleep(260);
       const r = await page.evaluate(() => {
         const D = window.DipLabDuel, E = window.DipLabEngine, v = E.view(window.__lab.rawDuel()), x = D.debug();
-        return { sel: x.sel, top: E.topAttr(v.hand[1]), ab: [...document.querySelectorAll('.dl .pop .ab')].map(b => b.dataset.tut + (b.classList.contains('top') ? '*' : '')), n: x.n, slotP: (D.el('slot-p') || {}).className };
+        return { sel: x.sel, open: x.open, top: E.topAttr(v.hand[1]), ab: [...document.querySelectorAll('.dl .pop .ab')].map(b => b.dataset.tut + (b.classList.contains('top') ? '*' : '')), n: x.n, slotP: (D.el('slot-p') || {}).className };
       });
-      const ok2 = s2a.spread && !s2a.sel && r.sel && r.sel.i === 1 && r.sel.attr === r.top && r.ab.join() === ['c', 'o', 'h'].map(a => `chip-1-${a}${a === r.top ? '*' : ''}`).join() && / pre/.test(r.slotP);
-      record(2, size, ok2, `點疊著的手牌 → 攤開 ${s2a.spread}、沒選 ${!s2a.sel}；點 card-1 → 浮起 ${short(r.sel)}（topAttr ${r.top}）；屬性鈕 ${r.ab.join(',')}；你丟的「${r.slotP}」`);
-      await tapName(page, 'card-2'); await sleep(220);
-      const s3 = await page.evaluate(() => ({ sel: window.DipLabDuel.debug().sel, ab: [...document.querySelectorAll('.dl .pop .ab')].map(b => b.dataset.tut) }));
-      record(3, size, s3.sel && s3.sel.i === 2 && s3.ab.length === 3 && s3.ab.every(t => /^chip-2-/.test(t)), `點 card-2 → 換成 ${short(s3.sel)}；屬性鈕 ${s3.ab.join(',')}`);
+      const ok2 = r.open === 1 && r.sel && r.sel.i === 1 && r.sel.attr === r.top && r.ab.join() === ['c', 'o', 'h'].map(a => `chip-1-${a}${a === r.top ? '*' : ''}`).join() && / pre/.test(r.slotP);
+      record(2, size, ok2, `疊著點 card-1 → 打開 ${r.open}、${short(r.sel)}（topAttr ${r.top}）；屬性鈕 ${r.ab.join(',')}；你丟的「${r.slotP}」`);
+      await tapName(page, 'card-2'); await sleep(320);
+      const s3 = await snapHand();
+      const ov3 = s3.strips[1] < s3.tiles[1].r.w - 0.5 && s3.tiles[3].r.l >= s3.tiles[2].r.r - 0.5;
+      record(3, size, s3.open === 2 && s3.sel && s3.sel.i === 2 && s3.abs.length === 3 && s3.abs.every(b => /^chip-2-/.test(b.tut)) && ov3, `點 card-2 → 換成 ${short(s3.sel)}；屬性鈕 ${s3.abs.map(b => b.tut).join(',')}；card-1 又被蓋回去、card-2 整張露出來 ${ov3}`);
       await tapName(page, 'card-2'); await sleep(400);
-      const s4 = await dbg(page);
+      const s4 = await page.evaluate(() => { const x = window.DipLabDuel.debug(); return { phase: x.phase, n: x.n, busy: x.busy, open: x.open, sel: x.sel, ab: document.querySelectorAll('.dl .pop .ab').length }; });
+      await tapName(page, 'card-2'); await sleep(400);
+      const s4a = await dbg(page);
       await tapName(page, 'slot-e'); await sleep(350);
-      const s4b = await page.evaluate(() => ({ spread: window.DipLabDuel.debug().spread, sel: window.DipLabDuel.debug().sel, n: window.DipLabDuel.debug().n, ab: document.querySelectorAll('.dl .pop .ab').length }));
-      const ok4 = s4.phase === 'choose' && s4.n === n0 && !s4.busy && s4.sel && s4.sel.i === 2 && !s4b.spread && !s4b.sel && s4b.n === n0 && !s4b.ab;
-      record(4, size, ok4, `再點浮起那張：第 ${s4.n} 手、${s4.phase}、選 ${short(s4.sel)}；點牌桌（手牌外面）→ 攤開 ${s4b.spread}、選 ${short(s4b.sel)}、屬性鈕 ${s4b.ab}`);
+      const s4b = await page.evaluate(() => ({ open: window.DipLabDuel.debug().open, sel: window.DipLabDuel.debug().sel, n: window.DipLabDuel.debug().n, ab: document.querySelectorAll('.dl .pop .ab').length }));
+      const ok4 = s4.phase === 'choose' && s4.n === n0 && !s4.busy && s4.open == null && !s4.sel && !s4.ab && s4a.sel && s4a.sel.i === 2 && s4b.open == null && !s4b.sel && s4b.n === n0 && !s4b.ab;
+      record(4, size, ok4, `再點打開那張 → 收回：第 ${s4.n} 手、${s4.phase}、打開 ${s4.open}、屬性鈕 ${s4.ab}；再點 → 打開 ${short(s4a.sel)}；點牌桌（手牌外面）→ 打開 ${s4b.open}、屬性鈕 ${s4b.ab}`);
+      const p3 = await hitPoint(page, 'dt:card-3');
+      await page.touchscreen.tap(p3.x, p3.y); await sleep(120); await page.touchscreen.tap(p3.x, p3.y); await sleep(400);
+      const s4c = await page.evaluate(() => window.DipLabDuel.debug().open);
+      await page.touchscreen.tap(p3.x, p3.y); await sleep(400);
+      const s4d = await page.evaluate(() => window.DipLabDuel.debug().open);
+      record('4b', size, s4c === 3 && s4d == null, `雙擊 card-3（120 ms）→ 還開著 ${s4c}；停一下再點同一點 → 收回 ${s4d == null}`);
     }
     // ---- 5 剋中：揭曉時序、浮框、下一手
     {
@@ -411,16 +448,16 @@ async function runSize(browser, w, h) {
     // ---- 11 長按手牌封面＝唱片資訊（不選牌）
     {
       await page.evaluate(() => window.DipLabDuel.select(null));
-      await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);   // 疊著：card-2 只露出左邊一條，長按那一條
+      await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);   // 疊著：card-2 只露出左邊一條，長按那一條
       const r = Object.assign(await hitPoint(page, 'dt:card-2'), await page.evaluate(() => ({ id: window.DipLabDuel.el('card-2').closest('.tile').dataset.card })));
       const n0 = await page.evaluate(() => window.__h.log.length);
       await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: r.x, y: r.y }] });
       await sleep(650);
       await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
       await sleep(300);
-      const st = await page.evaluate(([n0, q]) => ({ log: window.__h.log.slice(n0), modal: !!document.querySelector(q), sel: window.DipLabDuel.debug().sel, spread: window.DipLabDuel.debug().spread }), [n0, INFO_SEL]);
-      const ok = st.log.includes('info ' + r.id) && st.modal && !st.sel && !st.spread;
-      record(11, size, ok, `疊著長按 card-2 → ${st.log.join(',') || '沒有'}；唱片資訊${st.modal ? '開著' : '沒開'}；選牌 ${short(st.sel)}、攤開 ${st.spread}`);
+      const st = await page.evaluate(([n0, q]) => ({ log: window.__h.log.slice(n0), modal: !!document.querySelector(q), sel: window.DipLabDuel.debug().sel, open: window.DipLabDuel.debug().open }), [n0, INFO_SEL]);
+      const ok = st.log.includes('info ' + r.id) && st.modal && !st.sel && st.open == null;
+      record(11, size, ok, `疊著長按 card-2 → ${st.log.join(',') || '沒有'}；唱片資訊${st.modal ? '開著' : '沒開'}；選牌 ${short(st.sel)}、打開 ${st.open}`);
       await page.evaluate(q => { const b = document.querySelector(q); if (b) b.click(); }, INFO_CLOSE);
       await sleep(250);
     }

@@ -11,20 +11,20 @@
 // 情境（v4，§5.5）：
 //   1 開頁：標題 2.5 s 內、兩顆推門鈕在畫面內、沒有捲動
 //   3 推門到第一手（猜歌、挑王牌、收下四張、特價三張、收下、接受對決（手伸進袋子））≤16 下（特價區用替身時照真的面板算 4 下）
-//   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌（疊成一排的 5 張＋王牌）的下緣都 ≤ innerHeight；攤開、浮起之後三顆屬性鈕也在畫面裡；誠實度名牌看不到（D §5）
-//   6 點擊區：屬性鈕 ≥44×44、攤開的封面 ≥44×44、頂欄鈕 ≥40×44；數字 ≥12px（FIXLIST 11：沒有星鈕列、沒有丟！）
+//   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌（疊成一排的 5 張＋王牌）的下緣都 ≤ innerHeight；點一張打開之後三顆屬性鈕也在畫面裡；誠實度名牌看不到（D §5）
+//   6 點擊區：屬性鈕 ≥44×44、手牌封面 ≥44×44、頂欄鈕 ≥40×44；數字 ≥12px（FIXLIST 11：沒有星鈕列、沒有丟！）
 //   7 序章打贏 → 地上的唱片撿起面板（沒有標題字，只有封面、藝人《專輯》、兩顆鈕）→ 配件三選一 → 今晚來客且第一位客人已在店裡
 //   8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
 //   9 一整晚 autoplay('thoughtful',{until:'end'}) → 結算三件事 → 13 再來一夜（挑王牌 → 走到特價箱挑三張 → 今晚來客、包包 7；上一晚的配件還在）
 //  10 續玩：打到第 2 手重新整理 → 繼續今晚 → 同一場、同一手
 //  11 存檔只寫 dipGameLab_v1、版本 4；v3 存檔被安全丟掉
 //  12 網路：沒有 Firebase
-//  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝攤開／浮起（不開）
+//  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝在那張打開、再點一下＝收回（都不開唱片資訊；v5 手風琴）
 //  16 標題有存檔時點兩下店門＝繼續今晚
 //  17 他在上、你在下；舞台他左你右、老闆在中間；一台唱盤在兩人中間
 //  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
 //  19 教學三王牌六手照課表：每手 kind／toE／toP＝C.tutorial.expect、第 6 手 KO、學到 L1–L6、tutorialDone
-//  20 教學擋錯招：第 1 手攤開後點別張、第 2 手點浮起那張的別色屬性鈕（都在遮罩上）→「先點我指的這裡。」、手數不前進（第 1 手沒浮起、第 2 手沒丟出去）
+//  20 教學擋錯招：第 1 手點疊著那排的別張、第 2 手點打開那張的別色屬性鈕（都在遮罩上）→「先點我指的這裡。」、手數不前進（第 1 手沒打開、第 2 手沒丟出去）
 //  21 直接開打：沒有遮罩、男子 10 聲望；21b 教學程式不在（canTutorial 假）：兩顆鈕都在，第 0 顆照課表出牌（他 18、第一手 Mylo Xyloto）、沒有遮罩
 //  22 不捲動：標題、對決、今晚來客、挑唱片、規則卡、撿起面板
 //  27 無縫接軌：今晚來客 → 對決 → 挑唱片 → 今晚來客，#stage canvas 是同一個節點；黑條只在 #stage 裡、≤1.6 s
@@ -136,15 +136,15 @@ async function run() {
               const hint = (document.querySelector('.dl [data-tut="e-hint"] .tx') || {}).textContent || '';
               return { out, vh: innerHeight, honVis, hint, attrWord: /經典|冷門|硬蕊/.test(hint), old: document.querySelectorAll('.dl .chip, .dl [data-tut=throw]').length };
             });
-            // 攤開、浮起第 0 張：三顆屬性鈕都在畫面裡
-            await tapAt(page, 'dt:hand'); await sleep(300); await tapAt(page, 'dt:card-0'); await sleep(300);
+            // 點第 0 張（打開）：三顆屬性鈕都在畫面裡
+            await tapAt(page, 'dt:card-0'); await sleep(300);
             const ab = await page.evaluate(() => [...document.querySelectorAll('.dl .pop .ab')].map(b => { const r = b.getBoundingClientRect(); return [Math.round(r.top), Math.round(r.bottom)]; }));
-            await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);
+            await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);
             const bad = Object.entries(r.out).filter(([k, v]) => v < 0 || v > r.vh);
             record(4, size, !bad.length && ab.length === 3 && ab.every(([t, b]) => t >= 0 && b <= r.vh) && !r.old && !r.honVis && r.hint && !r.attrWord, `bottoms ${JSON.stringify(r.out)} ≤ ${r.vh}; 屬性鈕 ${JSON.stringify(ab)}; 舊星鈕／丟！${r.old}; honesty visible ${r.honVis}; hint「${r.hint}」${bad.length ? ' BAD ' + JSON.stringify(bad) : ''}`);
           }
           if (want(6)) {
-            await tapAt(page, 'dt:hand'); await sleep(300); await tapAt(page, 'dt:card-1'); await sleep(300);
+            await tapAt(page, 'dt:card-1'); await sleep(300);
             const r = await page.evaluate(() => {
               const small = [];
               const hit = el => { const b = el.getBoundingClientRect(); let w0 = b.width, h0 = b.height;
@@ -160,7 +160,7 @@ async function run() {
               const fonts = []; document.querySelectorAll('.dl .pop .ab, .dl [data-tut=e-hp], .dl [data-tut=p-hp]').forEach(e => { const fs = parseFloat(getComputedStyle(e).fontSize); if (fs < 12) fonts.push(e.dataset.tut + ' ' + fs); });
               return { small, fonts };
             });
-            await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);
+            await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);
             record(6, size, !r.small.length && !r.fonts.length, `small ${JSON.stringify(r.small).slice(0, 200)} fonts ${JSON.stringify(r.fonts)}`);
           }
           if (want(17)) {
@@ -180,25 +180,26 @@ async function run() {
             const open = await infoOpen(page, 3000);
             const sel1 = await page.evaluate(() => window.DipLabDuel.debug().sel);
             if (open) await closeInfo(page);
-            // 點一下＝攤開；再點一張＝浮起（都不開唱片資訊）
+            // 點一下＝在那張打開；再點一下打開的那張＝收回（都不開唱片資訊）
             await tapAt(page, '.dl [data-tut=card-0]'); await sleep(400);
-            const sp = await page.evaluate(() => window.DipLabDuel.debug().spread);
-            await tapAt(page, '.dl [data-tut=card-0]'); await sleep(400);
-            const tapOpen = !!(await page.$('#cardInfoMask'));
             const sel2 = await page.evaluate(() => window.DipLabDuel.debug().sel);
-            await page.evaluate(() => window.DipLabDuel.spread(false));
-            record(14, size, open && !sel1 && !sel0 && sp && !tapOpen && sel2 && sel2.i === 0, `疊著長按 → 唱片資訊 ${open}（沒選到 ${!sel1}）；tap → 攤開 ${sp}；tap → 浮起 ${JSON.stringify(sel2)}, info ${tapOpen}`);
+            const tapOpen1 = !!(await page.$('#cardInfoMask'));
+            await tapAt(page, '.dl [data-tut=card-0]'); await sleep(400);
+            const tapOpen = tapOpen1 || !!(await page.$('#cardInfoMask'));
+            const sel3 = await page.evaluate(() => window.DipLabDuel.debug().sel);
+            await page.evaluate(() => window.DipLabDuel.select(null));
+            record(14, size, open && !sel1 && !sel0 && !tapOpen && sel2 && sel2.i === 0 && !sel3, `疊著長按 → 唱片資訊 ${open}（沒選到 ${!sel1}）；tap → 打開 ${JSON.stringify(sel2)}；再 tap → 收回 ${!sel3}；info ${tapOpen}`);
           }
           if (want(22)) { const sc = await noScroll(page); record(22, size, scrollOk(sc), `duel scroll ${JSON.stringify(sc)}`); }
           if (want(18)) {
             const opened = { guess: guessInfo }, closedAtOnce = [];
             // 長按：放開手指之後 400 ms 唱片資訊還要開著（H3／RV11-1：放開補送的 click 不能落到「關閉」或串流鈕上）。
-            //   疊著的第 1 張與王牌、攤開的一張（那一排在畫面最底下＝「關閉」那條的位置）、浮起的一張都要驗
+            //   疊著的第 0 張與王牌、打開的那張（整張露出來，在畫面最底下＝「關閉」那條的位置）、打開時旁邊疊著的一張都要驗
             await page.evaluate(() => { window.__infoEv = []; window.DipLabDuel.on('info', w => window.__infoEv.push(w)); window.__navs = 0; window.addEventListener('click', e => { if (!e.defaultPrevented && e.target.closest && e.target.closest('a[href]')) { window.__navs++; e.preventDefault(); } }); });   // 冒泡到 window 還沒被擋＝真的會開連結（唱片資訊擋下的那一下到不了這裡）
             const lpCases = [['hand', '.dl [data-tut=card-0]', 'hand', null], ['ace', '.dl [data-tut=card-ace]', 'hand-ace', null],
-              ['spread', '.dl [data-tut=card-1]', 'hand', 'spread'], ['lifted', '.dl [data-tut=card-2]', 'hand', 'lift']];
+              ['open', '.dl [data-tut=card-1]', 'hand', 1], ['beside', '.dl [data-tut=card-3]', 'hand', 2]];
             for (const [k, sel, where, prep] of lpCases) {
-              await page.evaluate(p => { const D = window.DipLabDuel; D.spread(false); if (p === 'spread') D.spread(true); if (p === 'lift') D.select(2); }, prep);
+              await page.evaluate(p => { const D = window.DipLabDuel; D.select(null); if (p != null) D.select(p); }, prep);
               await sleep(prep ? 350 : 250);
               await page.evaluate(() => { window.__infoEv.length = 0; });
               await longPress(page, ctx, sel);
@@ -209,7 +210,7 @@ async function run() {
               if (!mask && ev.includes(where)) closedAtOnce.push(k);
               if (mask) await closeInfo(page);
             }
-            await page.evaluate(() => window.DipLabDuel.spread(false));
+            await page.evaluate(() => window.DipLabDuel.select(null));
             const navs = await page.evaluate(() => window.__navs);
             if (navs) { opened.links = false; closedAtOnce.push('串流連結 ' + navs); }
             // 牌桌兩張：揭曉後（他那格翻面、t≈280 ms）到換手前（t≈2060 ms）在牌桌上；出牌前的牌桌是蓋著的封套＋你選的預覽（店主 FIXLIST 9）。
@@ -433,7 +434,7 @@ async function run() {
           const callOk = res.callouts.length === 5 && res.callouts.every(c => c && c.op > 0.95 && c.w >= 150 && c.l2);
           if (want(19)) record(19, size, handsOk && done && ko && callOk && res.learned.join() === 'L1,L2,L3,L4,L5,L6', `${tier}: callouts ${callOk ? 'ok' : JSON.stringify(res.callouts)}; hands ${JSON.stringify((res.hands || []).map(c => c.kind + ':' + c.toE + '/' + c.toP))}; learned ${res.learned}; tutorialDone ${done}; KO→收尾 ${ko}`);
           if (variant === 'wrong') {
-            // 第 1 手點別張：沒浮起；第 2 手點別色屬性鈕：沒丟出去、還是那張浮著（FIXLIST 11）
+            // 第 1 手點疊著那排的別張：沒打開；第 2 手點別色屬性鈕：沒丟出去、還是那張開著（v5 手風琴）
             const ok = res.log.length === 2 && res.log.every(l => l.text === '先點我指的這裡。' && l.warn && l.n === l.n0 && (l.hand === 1 ? !l.sel : !!l.sel));
             record(20, size, ok, JSON.stringify(res.log));
           }
@@ -544,7 +545,7 @@ async function run() {
         await duelReady(page);
         await sleep(500);
         const r = await page.evaluate(() => ({ active: window.DipLabTut.active(), holes: window.DipLabTut.debug().holes, tut: window.__lab.run.tut }));
-        await tapAt(page, 'dt:hand'); await sleep(300); await tapAt(page, 'dt:card-1'); await sleep(300);
+        await tapAt(page, 'dt:card-1'); await sleep(300);
         const sel = await page.evaluate(() => window.DipLabDuel.debug().sel);
         record(36, size, !a1 && !r.active && !r.holes && !!sel, `after ⏸ title active=${a1}; direct duel ${JSON.stringify(r)} sel ${JSON.stringify(sel)}`);
       } catch (e) { record(36, size, false, 'error ' + e.message); }
@@ -594,7 +595,7 @@ async function run() {
         const chip = await page.evaluate(() => { const c = document.querySelector('.dl [data-tut="hand"]'); if (!c) return null; const b = c.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
         if (chip) await page.touchscreen.tap(chip.x, chip.y);
         await sleep(100);
-        const sel = await page.evaluate(() => window.DipLabDuel.debug().sel || (window.DipLabDuel.debug().spread ? 'spread' : null));
+        const sel = await page.evaluate(() => window.DipLabDuel.debug().sel || (window.DipLabDuel.debug().open != null ? 'open' : null));
         const gone = await page.waitForSelector('#dlfxBossMask', { state: 'detached', timeout: 1500 }).then(() => true, () => false);
         const ready = await duelReady(page, 8000);
         record(38, size, mask && r1.held >= 1 && r1.pe === 'auto' && !sel && gone && ready, `mask ${mask} ${JSON.stringify(r1)}; tap selected ${JSON.stringify(sel)}; closed early ${gone}; board ready ${ready}`);
