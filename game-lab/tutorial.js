@@ -917,7 +917,7 @@
     if (!L.dead) endLesson('done');
   }
   function targetsReady(s) {
-    var list = targetsFor(s);
+    var list = (s.target || []).slice();
     if (!list.length) return true;
     for (var i = 0; i < list.length; i++) { if (rectOf(resolveTarget(list[i]))) return true; }
     return false;
