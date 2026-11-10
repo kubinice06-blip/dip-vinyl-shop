@@ -32,3 +32,6 @@
 
 ## 每日批次 2026-11-09（第 4 批，395 次）
 - 找到 149（exact 143、edition 6），全收；edition 都是同張的附加曲／重製／豪華版（Rubén Blades《Maestra vida》2025 重製亦同張）。
+
+## 每日批次 2026-11-10（第 5 批，395 次）
+- 找到 185（exact 176、edition 9），全收；edition 都是同張的重製／擴充／完整版（Goblin《Patrick》Complete OST 亦同張）。
