@@ -35,3 +35,6 @@
 
 ## 每日批次 2026-11-10（第 5 批，395 次）
 - 找到 185（exact 176、edition 9），全收；edition 都是同張的重製／擴充／完整版（Goblin《Patrick》Complete OST 亦同張）。
+
+## 每日批次 2026-11-11（第 6 批，395 次）
+- 找到 223（exact 210、edition 13），全收；edition 都是同張的豪華／重製／擴充版（Curtis Mayfield《Short Eyes》原聲帶全名亦同張）。
