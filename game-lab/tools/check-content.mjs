@@ -301,7 +301,7 @@ export function contentProblems(C, E) {
   //   再扣掉 picked／again／throwBtn／waiting／aceUsed（FIXLIST 11：沒有「丟！」列；用過的王牌不留在手牌裡）、pickHint（v5 手風琴：沒有整排攤開的「點一張專輯」框）
   const DT = ['hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
-    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven'];
+    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn'];   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
   ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');
   // D §5 的三個例句要組得出來

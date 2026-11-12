@@ -76,6 +76,9 @@
   const RUSH_MS = 350;     // 丟出後 350 ms 內的點擊不算「加速這一手」
   const DBL_MS = 320, DBL_PX = 24;   // 點一張打開後，同一個位置 320 ms 內的第二下＝雙擊的第二下：不算「再點打開那張＝收回」（不會一開就關）
   const T_FLIP = 280, T_HIT = 560, T_LINE = 1460, T_NEXT = 2060;
+  // 看字的時間（跟對白同一條：約每秒 6–7 字，最多 6.5 秒；店主 11-12「他唬我 我還沒看清楚被唬了什麼就過去了」）
+  const readMs = t => Math.min(6500, 1400 + 140 * String(t || '').length);
+  const HOLD_GUARD = 500;  // 唬你／剋不動的結果框停住後 500 ms 內的點擊不算（連點不會一閃就過）
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const Eng = () => window.DipLabEngine;
   const Fx = () => window.DipLabFx || null;
@@ -122,6 +125,7 @@
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
+    tapOn: '點一下繼續',
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};
@@ -257,7 +261,8 @@
     // 他說話時先收起他頭上的名牌（矮螢幕的橫條鏡頭裡泡泡會被壓到名牌上），說完再掛回去；keepOff＝說完也不掛（打完那一句）
     function say(id, text, ms, keepOff) {
       if (!text) return;
-      ms = ms || 1500;
+      // 泡泡照字數給時間（真實時間：舞台會再除以動畫速度，這裡先乘回去）
+      ms = Math.max(ms || 1500, readMs(text)) * baseSpeed();
       const tagOff = id === 'f' && S.tagged;
       if (tagOff) stg('untag', 'f');
       stg('say', id, text, { ms, lift: 7 });
@@ -340,7 +345,7 @@
         <div class="slot p" data-tut="slot-p"></div>
         <div class="tcol"><div class="rounds num" data-tut="rounds"></div><div class="tri" data-tut="tri" role="button" aria-expanded="false"></div></div>
         <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
-        <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div></div>
+        <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="l4" aria-hidden="true"></div></div>
         <div class="lastline" data-tut="lastline"></div>
         <div class="cheat" data-tut="cheat" hidden></div>
       </section>
@@ -887,7 +892,8 @@
       let x;
       if ((x = t.closest('.slot[data-card]'))) { infoOfSlot(x); return; }
       if ((x = t.closest('.rl'))) { relicTap(x); return; }
-      if (S.busy) {   // 結算中點畫面＝這手 4 倍速
+      if (S.busy) {   // 結算中點畫面＝這手 4 倍速；唬你／剋不動的結果框停著時＝看完了、繼續
+        if (S.hold) { if (performance.now() - S.hold.at > HOLD_GUARD) S.hold.done(); return; }
         if (!S.rush && performance.now() - S.playAt > RUSH_MS) { S.rush = true; setSpeed(Math.max(S.speed, 4)); }
         return;
       }
@@ -995,6 +1001,20 @@
       const done = () => { c.classList.remove('on'); els.table.classList.remove('res'); S.anims.forEach(x => { try { if (x.effect && x.effect.target === c) x.cancel(); } catch (_) {} }); };
       if (a) a.finished.then(done, done); else done();
     }
+    // 唬你／剋不動的結果框：停到點一下為止（看夠久＝readMs 自己走；真實時間，不吃加速；唱片資訊開著、按住時不算時間）
+    function readHold(ct) {
+      return new Promise(res => {
+        if (S.destroyed) return res();
+        const c = els.call, l4 = c.querySelector('.l4');
+        if (l4) l4.textContent = T('tapOn') + ' ▼';
+        c.classList.add('wait'); placeCallout();
+        let left = readMs((ct.l1 || '') + (ct.l3 || '')), last = performance.now(), h = 0;
+        const done = () => { if (!S.hold) return; clearTimeout(h); S.timers.delete(h); S.hold = null; c.classList.remove('wait'); res(); };
+        S.hold = { at: performance.now(), done };
+        const tick = () => { S.timers.delete(h); if (S.destroyed) { S.hold = null; return res(); } const now = performance.now(); if (!paused()) left -= now - last; last = now; if (left <= 0) done(); else { h = setTimeout(tick, 50); S.timers.add(h); } };
+        h = setTimeout(tick, 50); S.timers.add(h);
+      });
+    }
     function bigStamp(text, cls, sub) {
       const k = els.kost;
       k.className = 'kost on ' + (cls || '');
@@ -1091,7 +1111,8 @@
       rec.ui = snapUI();
       if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }
       emit('resolved', evs);
-      await wait(T_LINE - T_HIT);
+      if (!tut && !S.auto && !FAST && (ct.bluff || cl.blocked)) await readHold(ct);   // 唬你／剋不動：停到點一下（或看夠久自己走）
+      else await wait(T_LINE - T_HIT);
       if (S.destroyed) return true;
       // ---- t=1460：浮框收成「上一手」
       hideCallout();
@@ -1151,7 +1172,8 @@
       if (result.by === 'hp') stg('pose', win ? 'f' : 'p', 'ko', 700);
       sfx('ko');
       // 打完他說一句（只說一次，COPY-02）：序章男子的 E2／E3、藏家輸了的 C1 由接下來的對白講，盤面不冒泡泡；其他人在這裡說，挑唱片／說情畫面不再重複
-      if (!enemy.prologue && !(win && enemy.boss)) say('f', pickLine(win ? ['lose'] : ['win']), 1800, true);
+      const endLine = (!enemy.prologue && !(win && enemy.boss)) ? pickLine(win ? ['lose'] : ['win']) : null;
+      if (endLine) say('f', endLine, 1800, true);
       later(() => sfx(win ? 'win' : 'lose'), 300);
       winnerSong(win, cl);
       let tx = null;
@@ -1168,7 +1190,9 @@
       onEvent(over);
       S.v = v1;
       emit('over', result);
-      await wait(result.by === 'rounds' || result.by === 'pile' ? 3000 : 1500);   // 比聲望條的大章有兩行要看：至少 3 秒（R-05c）
+      // 比聲望條的大章有兩行要看：至少 3 秒（R-05c）；他打完說的那句也要看得完（真實時間）
+      const endMs = result.by === 'rounds' || result.by === 'pile' ? 3000 : 1500;
+      await wait(Math.max(endMs, (endLine && !FAST && !S.auto) ? (readMs(endLine) - 300) * S.speed : 0));
       if (S.destroyed) return;
       if (typeof hooks.beforeEnd === 'function') { try { await hooks.beforeEnd(result); } catch (e) { console.error(e); } }
       if (S.destroyed) return;

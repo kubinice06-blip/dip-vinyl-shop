@@ -58,6 +58,12 @@
   function fill(s, o) { return String(s || '').replace(/\{(\w+)\}/g, function (m, k) { return o && o[k] != null ? o[k] : m; }); }
   function dt(k, o) { var T = (C && C.duelText) || {}; return fill(T[k] || '', o); }
   // 經典／冷門／硬蕊 三個字上屬性色（esc 之後再換）
+  // 相剋寫全名（店主 11-12）：屬性第一個字照屬性色、第二個字黑；「剋」灰（牌桌小抄同一套，duel.js cheatHTML）
+  function tintBeats(s) {
+    var one = function (w) { return '<b class="' + ({ 經典: 'c', 冷門: 'o', 硬蕊: 'h' })[w] + '">' + w.charAt(0) + '</b>' + w.charAt(1); };
+    // 只染「A剋B」那三組（整組不斷行）；「剋中」的剋照常黑
+    return esc(s).replace(/(經典|冷門|硬蕊)剋(經典|冷門|硬蕊)/g, function (m, a, b) { return '<span class="pr">' + one(a) + '<span class="kx">剋</span>' + one(b) + '</span>'; });
+  }
   function colorZh(s) { return esc(s).replace(/經典|冷門|硬蕊/g, function (w) { var a = w === '經典' ? 'c' : w === '冷門' ? 'o' : 'h'; return '<b class="' + a + '">' + w + '</b>'; }); }
 
   // ======================================================================= 存檔
@@ -351,7 +357,7 @@
   // 規則卡（「?」小抄）：D §5 的六行一字不改（編號由這裡加；第 6 行 54 字，自動換行）；頁尾的 {normal}／{elite}／{boss} 代入 C.rules.hpText
   function rulesHTML() {
     var R = C.rules || {};
-    var lines = (R.lines || []).map(function (s, i) { return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : esc(s)) + '</div></li>'; }).join('');
+    var lines = (R.lines || []).map(function (s, i) { return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : i === 2 ? tintBeats(s) : esc(s)) + '</div></li>'; }).join('');
     return '<div class="lb-rules"><h1>' + esc(R.title || '品味對決・規則') + '</h1>' + triSVG() +
       '<ol class="rl">' + lines + '</ol>' +
       (R.why ? '<p class="rwhy">' + whyHTML(R.why) + '</p>' : '') +      // 六行下面另起一段「為什麼這樣剋」（店主 11-12；六行一字不動）
