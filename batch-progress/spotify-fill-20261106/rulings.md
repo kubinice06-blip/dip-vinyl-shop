@@ -32,3 +32,12 @@
 
 ## 每日批次 2026-11-09（第 4 批，395 次）
 - 找到 149（exact 143、edition 6），全收；edition 都是同張的附加曲／重製／豪華版（Rubén Blades《Maestra vida》2025 重製亦同張）。
+
+## 每日批次 2026-11-10（第 5 批，395 次）
+- 找到 185（exact 176、edition 9），全收；edition 都是同張的重製／擴充／完整版（Goblin《Patrick》Complete OST 亦同張）。
+
+## 每日批次 2026-11-11（第 6 批，395 次）
+- 找到 223（exact 210、edition 13），全收；edition 都是同張的豪華／重製／擴充版（Curtis Mayfield《Short Eyes》原聲帶全名亦同張）。
+
+## 每日批次 2026-11-12（第 7 批，395 次）
+- 找到 153（exact 136、edition 17），全收；edition 都是同張的重製／原聲帶全名／擴充版。
