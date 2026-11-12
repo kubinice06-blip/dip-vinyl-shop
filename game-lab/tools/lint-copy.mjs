@@ -326,7 +326,7 @@ else {
   if (!TAG_OK(C.rulesLinesTag)) err('rules.lines', '沒有 tag（rulesLinesTag）');
   if (R.lines.length !== 6) err('rules.lines', '規則卡要六行，現在 ' + R.lines.length);
   R.lines.forEach((t, k) => { if (len(t) > 56) err('rules.lines[' + k + ']', '超過 56 字：' + t); });
-  if (!['冷剋經', '經剋硬', '硬剋冷'].every(w => (R.lines[2] || '').includes(w))) err('rules.lines[2]', '第 3 行要含 冷剋經、經剋硬、硬剋冷');
+  if (!['冷門剋經典', '經典剋硬蕊', '硬蕊剋冷門'].every(w => (R.lines[2] || '').includes(w))) err('rules.lines[2]', '第 3 行要含 冷門剋經典、經典剋硬蕊、硬蕊剋冷門（店主 11-12 改全名）');
   if (JSON.stringify(R.lines) !== JSON.stringify(OWNER.rules || [])) err('rules.lines', '六行要逐字＝tools/owner-lines-v4.json 的規則卡（D §5，不含編號與「←」註記）');
   const push = (where, text, tag, raw) => { if (typeof text === 'string' && text) add({ scene: '規則卡（「?」小抄）', where, who: '（畫面字）', text, tag: tag || C.rulesTag, raw }); };
   push('rules.title', R.title);
