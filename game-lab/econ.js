@@ -17,7 +17,7 @@
  *   - 抽屜＝#app 底部的面板，最高 #app 的 50%（內容照可用高度縮放，不捲動）；開的同時 stage.focus(那一箱, {panelMin: 抽屜高})，箱子整個留在畫面上。
  *   - 點抽屜外面（或 ✕、Esc）關掉：stage.highlight([])、stage.unfocus()、pose null。開局挑三張不能關（一定要挑）。
  *   - 序章／對決中（run.duel、prologue 'pending'、等你收獎勵）點箱子：老闆說 C.shopLines.binBusy（「打完再翻。」），不開抽屜。
- *   - 沒有 run（標題畫面、已打烊）：抽屜列那一區卡池的前 6 張，只能翻、看唱片資訊；有 run 但 !canShop：列今晚的貨，一樣不能買。
+ *   - 沒有 run（標題畫面、這一趟結束了）：抽屜列那一區卡池的前 6 張，只能翻、看唱片資訊；有 run 但 !canShop：列這一輪的貨，一樣不能買。
  *   - 價格、賣回、能不能買全部問引擎（priceOf／bargainPriceOf／relicPrice／sellValue／rarity／canShop／canBargainPick），交易一律走 configure 給的 choose。
  *   - 台幣行情（FIXLIST 8）：箱子／新進／店長推薦照稀有度 $800／1,000／1,200；FEATURE 史詩 $3,000／傳奇 $4,000；特價箱每張 $100–300（序章挑三張免費：價錢劃掉）；
  *     配件一件 $3,000；賣回半價。畫面上的錢一律千分位（mt＝engine.moneyText）。
@@ -33,9 +33,9 @@
   var ZH1 = { c: '經', o: '冷', h: '硬' }, ATTRS = ['c', 'o', 'h'];
   // C.shopUi 沒有的字（新；已請 B2 補進 C.shopUi，見 dev/notes-B3.md「請求」）
   var FALLBACK = {
-    bag: '包包 {n}/{max}', binEmpty: '這一箱今晚賣完了。', owned: '包包裡有了',
+    bag: '包包 {n}/{max}', binEmpty: '這一箱賣完了，下一輪再補。', owned: '包包裡有了',
     bagFullN: '包包放不下：先賣 {k} 張，半價 ${n}',
-    relicSell: '賣這件', relicSold: '「{name}」賣掉，+${n}', relicEmpty: '櫃檯今晚的配件賣完了。',   // relic
+    relicSell: '賣這件', relicSold: '「{name}」賣掉，+${n}', relicEmpty: '櫃檯的配件賣完了，下一輪再補。',   // relic
     prev: '上一張', next: '下一張', infoAria: '唱片資訊、試聽',
     // 包包沒滿、錢不夠，但賣一張就夠（SPEC §2.5.6 第 3 點：賣一張也不夠才停用）
     moneyShort: '錢不夠：先賣一張，半價 ${n}', sellFirst: '先賣一張',
@@ -217,7 +217,7 @@
     el.addEventListener('contextmenu', function (e) { e.preventDefault(); });
     veil(true);
     app().appendChild(el);
-    app().classList.add('ec-open');          // 抽屜開著：後面的今晚來客藏起來，不會半截露在抽屜上面（V12）
+    app().classList.add('ec-open');          // 抽屜開著：後面的來客藏起來，不會半截露在抽屜上面（V12）
     S.el = el; S.open = true;
     D.addEventListener('keydown', onKey, true);
     W.addEventListener('resize', onResize);
@@ -232,7 +232,7 @@
     else if (e.key === 'ArrowRight' && S.kind === 'bin' && !S.sub) { e.preventDefault(); flip(1); }
   }
   // 抽屜高（開的時候量一次，給 stage.focus 的 panelMin）；高度變了（變高或變矮）就重新對焦——
-  //   變矮沒對焦會在店景與抽屜之間露出一條今晚來客（RT-5／V12：櫃檯「先賣一件」）
+  //   變矮沒對焦會在店景與抽屜之間露出一條來客（RT-5／V12：櫃檯「先賣一件」）
   function refocus(ms) {
     var st = ST(); if (!st || !st.focus || !S.el || !S.hotId) return Promise.resolve();
     var h = S.el.offsetHeight;
@@ -361,7 +361,7 @@
       var can = price != null && !owned && (!full || sv.length > 0) && r.money + maxSell >= price;
       btn = '<button type="button" class="ec-buy lb-btn pri" data-a="buy" data-cid="' + esc(c.id) + '"' + (can ? '' : ' disabled') + '>' +
         (owned ? esc(ui('owned')) : !can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'sellFirst') : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>';
-    } else {   // 只看（標題畫面、今晚還不能買）：照樣標價
+    } else {   // 只看（標題畫面、現在還不能買）：照樣標價
       var pv = E().priceOf(C(), c);
       if (pv != null) btn = '<span class="ec-pv">' + esc(money(pv)) + '</span>';
     }
@@ -478,7 +478,7 @@
     el.innerHTML = html;
     el.classList.toggle('ec-sub', !!S.sub);
     fit();
-    if (S.focusH != null) refocus();   // 高度變了（賣回子面板變高、先賣一件變矮）就重新對焦：箱子不被蓋到、也不露出後面的今晚來客
+    if (S.focusH != null) refocus();   // 高度變了（賣回子面板變高、先賣一件變矮）就重新對焦：箱子不被蓋到、也不露出後面的來客
   }
   function fit() {
     var el = S.el; if (!el) return;

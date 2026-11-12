@@ -1,7 +1,7 @@
 // game-lab/tests/e2e-taps.mjs：店內真點測試（SPEC-v4 §5.5 第一項；R-x0 第六項「唱片櫃點不到」的驗收）。A3。
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   node game-lab/tests/e2e-taps.mjs
-//   環境變數（見 e2e-lib.mjs）：LAB_URL 或 LAB_BASE、LAB_SIZES（預設四個驗收尺寸）；LAB_SCREENS＝title（預設）或 title,night（今晚來客：seedRun 一份 v4 存檔、標題「繼續今晚」進去；C 整合後加跑）
+//   環境變數（見 e2e-lib.mjs）：LAB_URL 或 LAB_BASE、LAB_SIZES（預設四個驗收尺寸）；LAB_SCREENS＝title（預設）或 title,night（來客：seedRun 一份 v5 存檔、標題「繼續試煉」進去；C 整合後加跑）
 //
 // 每個尺寸、每個畫面（全開）：
 //   1. __lab.stage.shop.hotPoints() 的每一點用 page.touchscreen.tap 真點；__lab.stage.onAction 先換成只記 hot.id 的函式（不開面板），觸發的 id＝自己；
@@ -50,14 +50,14 @@ async function runScreen(browser, w, h, screenName) {
   try {
     await openTitle(page, Q('&fast=1&strict=1'));
     if (screenName === 'night') {
-      // 今晚來客要有 run：存一份 v4 存檔（特價箱已挑、第 1 位客人前），重開標題「繼續今晚」（C 整合後加跑，§3.3）
+      // 來客要有 run：存一份 v5 存檔（特價箱已挑、第 2 位客人前），重開標題「繼續試煉」（C 整合後加跑，§3.3）
       await seedRun(page, { idx: 1, money: 600 });
       await openTitle(page, Q('&fast=1&strict=1'));
       await jsClick(page, '[data-a=cont]');
       await page.waitForFunction(() => window.__lab.screen() === 'night', null, { timeout: 15000 }).catch(() => {});
       await sleep(1200);
       const scr = await page.evaluate(() => window.__lab.screen());
-      if (scr !== 'night') throw new Error('沒進到今晚來客（畫面＝' + scr + '）');
+      if (scr !== 'night') throw new Error('沒進到來客（畫面＝' + scr + '）');
     }
     await page.waitForFunction(() => window.__lab && window.__lab.stage && window.__lab.stage.shop && window.__lab.stage.shop.hotPoints, null, { timeout: 10000 });
     await install(page);
@@ -79,7 +79,7 @@ async function runScreen(browser, w, h, screenName) {
     // 鏡頭外（矮螢幕從牆頂裁掉）的熱點沒有點：只列出來，不算錯；但畫面裡露出一部分的一定要有點
     const outOfView = await page.evaluate(ids => { const sh = window.__lab.stage.shop; return ids.filter(id => !sh.hotRegion(id)); }, noPt);
     const lost = noPt.filter(id => !outOfView.includes(id));
-    // 至少 30 個熱點：真點過的＋整個在鏡頭外的（矮螢幕的今晚來客，面板讓鏡頭從牆頂裁掉兩排牆上唱片與海報；箱子與家具一定在畫面裡，見 #2／#4）
+    // 至少 30 個熱點：真點過的＋整個在鏡頭外的（矮螢幕的來客，面板讓鏡頭從牆頂裁掉兩排牆上唱片與海報；箱子與家具一定在畫面裡，見 #2／#4）
     record(1, size, !bad1.length && !covered.length && !lost.length && S.pts.length + outOfView.length >= 30,
       `hotPoints ${S.pts.length} 點真點、觸發自己 ${S.pts.length - bad1.length - covered.length}/${S.pts.length}` + (bad1.length ? ' 錯：' + bad1.join('、') : '') +
       (covered.length ? ' 被 DOM 蓋住：' + covered.join('、') : '') + (lost.length ? ' 看得到卻沒點：' + lost.join('、') : '') + (outOfView.length ? '（鏡頭外：' + outOfView.join('、') + '）' : ''));

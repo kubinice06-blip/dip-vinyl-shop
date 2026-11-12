@@ -15,6 +15,8 @@
 //     屬性鈕整組的中心在打開那張上面、不蓋看得到的「你」／發燒配件／聲望數字（蓋到的先藏起來；審查 F1／F2）；
 //     打開時只有右邊那疊往右滑開：第 0 張不動、k 和左邊那幾張最多往左 24 px（F4）；
 //     1h 每一張都打開一次（同上）；1g 帶 3 件發燒配件再每一張打開一次（只有 index 版），收回後全部出來；
+//     1i（v5 無限試煉）3 件配件＋品味／底氣小籤（「你」那一列最擠；他第 12 位帶品味／底氣）：兩列的小籤＝view 的 pAtk／pDef、eAtk／eDef（content.trial.ui.atkShort／defShort）、
+//        不疊到聲望數字；每一張打開時屬性鈕不蓋看得到的小籤（蓋到的先藏，跟配件同一套讓位）、收回後全部出來；
 //     名牌只有新名字（沒有副標、沒有誠實度，FIXLIST 6）
 //   2 點一張（疊著）＝在那張打開、預覽屬性＝engine.topAttr、「你丟的」半透明預覽；3 點別張＝換那張打開；4 再點打開那張＝收回（不出手）、點手牌外面＝收回；
 //     4b 雙擊的第二下（同一點 120 ms 後）不算「再點＝收回」；4c 點在打開那張（浮起 6 px）封面下緣下面 3 px＝點打開那張（收回），不是打開左邊那張（F3）
@@ -297,6 +299,7 @@ async function runSize(browser, w, h) {
       return { vh: innerHeight, vw: innerWidth, scroll: [root.scrollHeight, root.clientHeight], doc: [document.documentElement.scrollHeight, document.documentElement.scrollWidth],
         tiles, strips, abs, open: x.open, sel: x.sel, n: x.n, hand: rect(D.el('hand')), hint: rect(D.el('e-hint')), cls: root.className, bands: window.__e2e.bands(),
         you: rectV(document.querySelector('.dl .dl-p .nmrow > b')), php: rectV(D.el('p-hp')), rel: [...document.querySelectorAll('.dl .relics .rl')].map(rectV),
+        st: [...document.querySelectorAll('.dl .dl-p .st > span')].map(rectV), est: [...document.querySelectorAll('.dl .dl-e .st > span')].map(rectV), ehp: rectV(D.el('e-hp')),
         under: document.querySelectorAll('.dl .nmrow .under').length,
         topAttr: x.sel && x.sel.i !== 'ace' ? window.DipLabEngine.topAttr(v.hand[x.sel.i]) : null, slotP: (document.querySelector('.dl .slot.p') || {}).className || '',
         hon: !!D.el('e-honesty'), nm: ((document.querySelector('.dl .dl-e .nm') || {}).textContent || '').trim(),
@@ -331,9 +334,10 @@ async function runSize(browser, w, h) {
       if (hits(O.hint)) why.push('屬性鈕蓋到提示句');
       if (hits(O.you)) why.push('屬性鈕蓋到「你」');
       (O.rel || []).forEach((q, j) => { if (hits(q)) why.push('屬性鈕蓋到發燒配件 ' + j); });
+      (O.st || []).forEach((q, j) => { if (hits(q)) why.push('屬性鈕蓋到品味／底氣 ' + j); });
       if (hits(O.php)) why.push('屬性鈕蓋到聲望數字');
       if (O.php && O.php.vis === false) why.push('聲望數字被藏起來');
-      [O.you, ...(O.rel || [])].forEach(q => { if (q && q.vis === false && !nearGrp(q)) why.push('藏了屬性鈕沒蓋到的「你」／配件'); });
+      [O.you, ...(O.rel || []), ...(O.st || [])].forEach(q => { if (q && q.vis === false && !nearGrp(q)) why.push('藏了屬性鈕沒蓋到的「你」／配件／品味底氣'); });
       if (!noScroll(O)) why.push('捲動');
       if (O.bands.max > 24) why.push('空帶 ' + O.bands.max + ' px（y=' + O.bands.at + '）');
       if (O.oldUi) why.push('還有攤開／虛線框');
@@ -400,7 +404,28 @@ async function runSize(browser, w, h) {
         await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);
         const Z = await snapHand();
         record('1g', size, R0.rel.length === 3 && !out.bad && !Z.under && Z.rel.every(r => r.vis) && Z.you.vis, `3 件發燒配件：${out.join('｜')}；收回後藏著的 ${Z.under}`);
-        await page.evaluate(() => { const o = Object.assign({}, window.__h.opts); delete o.relics; window.__h.opts = o; });
+        // 1i 再加品味 2／底氣 1（你）、他照第 12 位的曲線（品味／底氣都 >0）
+        await page.evaluate(() => { window.__h.opts = Object.assign({}, window.__h.opts, { pos: 12, atk: 2, def: 1 }); });
+        await remount(page, 7);
+        const S0 = await snapHand();
+        const tg = await page.evaluate(() => { const v = window.DipLabEngine.view(window.__lab.rawDuel()), U = window.DipLabContent.trial.ui, f = (t, n) => n > 0 ? t.replace('{n}', n) : '';
+          return { e: document.querySelector('.dl [data-tut=e-stats]').textContent, eWant: f(U.atkShort, v.eAtk) + f(U.defShort, v.eDef), p: document.querySelector('.dl [data-tut=p-stats]').textContent, pWant: f(U.atkShort, v.pAtk) + f(U.defShort, v.pDef), v: [v.eAtk, v.eDef, v.pAtk, v.pDef] }; });
+        const clear = (a, b) => !a.length || !b || Math.max(...a.map(q => q.r)) <= b.l + 0.5;
+        const out2 = [];
+        for (let k = 0; k < S0.tiles.length; k++) {
+          await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);
+          await tapName(page, k === S0.tiles.length - 1 ? 'card-ace' : 'card-' + k); await sleep(320);
+          const G = await snapHand(), why = openCheck(G, k, F0, k === S0.tiles.length - 1 ? 1 : 3);
+          if (k === 1) await shot(page, `${size}-0-stats-open1.png`);
+          out2.push(`card-${k === S0.tiles.length - 1 ? 'ace' : k}：藏 ${[G.you && !G.you.vis ? '你' : '', ...G.rel.map((r, j) => r.vis ? '' : '配件' + j), ...G.st.map((r, j) => r.vis ? '' : '小籤' + j)].filter(Boolean).join('、') || '—'}${why.length ? '（' + why.join('；') + '）' : ''}`);
+          if (why.length) out2.bad = true;
+        }
+        await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(250);
+        const Z2 = await snapHand();
+        const ok1i = tg.v.every(x => x > 0) && tg.e === tg.eWant && tg.p === tg.pWant && S0.st.length === 2 && S0.est.length === 2 && clear(S0.st, S0.php) && clear(S0.est, S0.ehp) && noScroll(S0) &&
+          !out2.bad && !Z2.under && Z2.st.every(r => r.vis) && Z2.rel.every(r => r.vis) && Z2.you.vis;
+        record('1i', size, ok1i, `他「${tg.e}」（${tg.eWant}）、你「${tg.p}」（${tg.pWant}）；不疊聲望 ${clear(S0.st, S0.php)}／${clear(S0.est, S0.ehp)}；${out2.join('｜')}；收回後藏著的 ${Z2.under}`);
+        await page.evaluate(() => { const o = Object.assign({}, window.__h.opts); delete o.relics; delete o.pos; delete o.atk; delete o.def; window.__h.opts = o; });
         await remount(page, 7);
       }
     }

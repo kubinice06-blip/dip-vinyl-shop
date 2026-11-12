@@ -1,17 +1,18 @@
 /* game-lab/ui.js：品味對決 v4：外殼與所有非對決畫面。SPEC-v3 §9、§10.5；v4＝SPEC-v4 §2.5.2–§2.5.7（B2）：
  *   逐句執行器（beat runner：步驟依序、點一下只快轉正在做的那一步、▼ 在動作做完才亮、⏩ 快轉到下一個選擇）、
  *   v4 劇本（content.js C.script：原版 25 句（第一句 11-10 改成開頭旁白 C.intro）＋店主改的句子；猜歌、挑王牌、老闆翻箱、特價區三張、八張入袋、後走道嗆聲、兩顆接受對決）、
- *   每個人都用走的（劇情裡不瞬移；翻箱在箱子前）、序章藏起熟客、存檔 v4（錢、今晚的貨）、經濟介面接點（DipLabEcon，econ.js）。
+ *   每個人都用走的（劇情裡不瞬移；翻箱在箱子前）、序章藏起熟客、存檔 v5（錢、這一輪的貨、聲望與等級）、經濟介面接點（DipLabEcon，econ.js）。
  *
  * 版面：#app ＝ #top（32px 頂欄）＋ #stage（常駐像素店舞台，整個 session 只 mount 一次）＋ #panel（每個畫面的面板）。
  *   go(screen) 只做三件事：換 #top、stage.camera(鏡頭)＋擺小人、換 #panel。舞台不重建，所以門、雨、正在放的唱片、店裡的人都連續。
- * 一晚（SPEC-v3 §9）：標題（像素店）→ 序章劇本（店主定稿句）→ 猜歌／挑王牌 → 教學對決 → 收尾（掉出來的盤、發燒配件三選一）
- *   → 今晚來客（一條，五顆頭像，不分岔）→ 對決（無縫推近；黑條只蓋在舞台上）→ 贏了挑他一張唱片（菁英／藏家：唱片或配件）
- *   → 下一位 → 傳說藏家 → 打烊（走到幾點、贏了幾位、收了哪幾張）→ 再來一夜。每晚一次老闆說情（輸了重打同一位）。
+ * 無限試煉（v5，店主 11-12；SPEC 無限試煉 §0）：標題（像素店）→ 序章劇本（店主定稿句）→ 猜歌／挑王牌 → 教學對決 → 收尾（掉出來的盤、發燒配件三選一）
+ *   → 來客（這一輪五顆頭像：第 n 位、一般 3、菁英、傳說藏家）→ 對決（無縫推近；黑條只蓋在舞台上）→ 贏了挑他一張唱片（菁英／藏家：唱片或配件）
+ *   → 升級三選一（有升級才有）→ 下一位 → 傳說藏家（打倒＝他的王牌收進唱片櫃）→ 下一輪新面孔 → …打到輸為止 → 結算（走到第幾位、最多連贏、收了幾張）→ 再挑戰一趟。
+ *   沒有時間、沒有打烊；頂欄只寫「第 n 位」。聲望帶到下一場、打贏回 3；老闆說情每輪一次（輸了重打同一位）；商店每輪補貨。
  * 對決交給 duel.js（DipLabDuel.mount 在 #panel 裡）；規則全在 engine.js（newRun／startFight／finishFight／choose）。
  * 唱片資訊：cardinfo.js（DipLabCardInfo.open）。畫面上每一張封面點一下就開。
  * 規則：
- *  - 只寫 localStorage 'dipGameLab_v1'（存檔版本 4；舊版存檔安全丟掉）；不用 Firebase；不 DipPlayer.mount。
+ *  - 只寫 localStorage 'dipGameLab_v1'（存檔版本 5；v4 存檔照 §1 裁定 12 遷移：留唱片櫃、偏好、小人、配件，丟掉一晚的 run；更舊的安全丟掉）；不用 Firebase；不 DipPlayer.mount。
  *  - 整支包在 IIFE 裡，只掛 window.DipLabUI（＋?debug=1 的 window.__lab）。
  *  - UI 不算傷害、不讀 intent：所有數字都來自 DipLabEngine。
  *  - 浮層（泡泡、章、飛卡、吐司、標題牌）pointer-events:none；只有面板、彈窗、教學遮罩、藏家登場卡吃點擊。
@@ -21,7 +22,7 @@
   var W = window, D = document;
   var E = null, C = null;
   var KEY = 'dipGameLab_v1';
-  var SAVE_V = 4;                                   // v2 是 1、v3 是 3；v4 規則與 run 形狀（錢、今晚的貨）都換了，舊存檔一律丟掉（只留聲音偏好與小人）
+  var SAVE_V = 5;                                   // v2 是 1、v3 是 3、v4 是 4（一晚版）；v5＝無限試煉：v4 遷移（丟 run、nights → runs、best → 最遠），更舊的整份丟掉（只留聲音偏好與小人）
   var QS = {};
   try { new URLSearchParams(location.search).forEach(function (v, k) { QS[k] = v; }); } catch (_) {}
   var DEBUG = QS.debug === '1';
@@ -53,9 +54,17 @@
   function line(k, sub) { var L = C && C.shopLines; var v = L && L[k]; if (sub != null && v && typeof v === 'object' && !Array.isArray(v)) v = v[sub]; return typeof v === 'string' ? v : ''; }
   function todayKey() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   function seedKey() { return UI.seedOverride || (QS.seed ? String(QS.seed) : todayKey()); }
-  function dateLabel(k) { var m = /^(\d{4})-?(\d{2})-?(\d{2})$/.exec(String(k || '')); return m ? m[2] + '/' + m[3] : String(k || ''); }
-  function nightLabel(run) { return run ? esc(dateLabel(run.seedKey)) + ' 的雨夜<small>#' + run.nightNo + '</small>' : esc(dateLabel(seedKey())) + ' 的雨夜'; }
   function fill(s, o) { return String(s || '').replace(/\{(\w+)\}/g, function (m, k) { return o && o[k] != null ? o[k] : m; }); }
+  // 無限試煉的畫面字（content.js C.trial.ui；{x} 由這裡代入）
+  function TU(k, o) { var U = (C && C.trial && C.trial.ui) || {}; return fill(U[k] || '', o); }
+  // 頂欄（店主 11-12：只寫第幾位，不寫時間）：還沒有 run＝「品味對決」；序章（含收尾）＝「序章」；之後「第 n 位<small>第 R 輪</small>」，對決時小字加「・菁英／傳說藏家」
+  function inPrologue(r) { return !r || !Number.isInteger(r.pos) || r.prologue === 'pending' || !!(r.pending && r.pending.prologue); }
+  function posLabel(r, cls) {
+    if (!r) return esc(TU('game'));                 // 還沒有這一趟（標題、序章開頭、再挑戰一趟挑王牌前）：「品味對決」（沒有日期、沒有雨夜；審查 #14）
+    if (inPrologue(r)) return esc(TU('prologue'));
+    var sub = TU('round', { r: r.round }) + (cls === 'elite' ? '・' + TU('elite') : cls === 'boss' ? '・' + TU('boss') : '');
+    return esc(TU('pos', { n: r.pos })) + '<small>' + esc(sub) + '</small>';
+  }
   function dt(k, o) { var T = (C && C.duelText) || {}; return fill(T[k] || '', o); }
   // 經典／冷門／硬蕊 三個字上屬性色（esc 之後再換）
   // 相剋寫全名（店主 11-12）：屬性第一個字照屬性色、第二個字黑；「剋」灰（牌桌小抄同一套，duel.js cheatHTML）
@@ -69,36 +78,63 @@
   // ======================================================================= 存檔
   var save = null;
   function defSave() {
-    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, nights: [],
-      best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false },
+    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, runs: [], runSeq: {},
+      best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [],
       tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null };
   }
+  var posInt = function (x) { return typeof x === 'number' && Math.floor(x) === x && x >= 1; };
   function validRun(r) {
     try {
-      if (!r || typeof r !== 'object' || r.v !== 4) return false;
+      if (!r || typeof r !== 'object' || r.v !== E.RUN_V) return false;
       if (!Array.isArray(r.bag) || !Array.isArray(r.order) || !r.order.length || !Array.isArray(r.relics) || !r.stats || TIERS.indexOf(r.ace) < 0) return false;
-      // v4：錢（有限、非負整數）與今晚的貨（§2.1.6）
+      // v4：錢（有限、非負整數）與這一輪的貨（§2.1.6）
       if (typeof r.money !== 'number' || !isFinite(r.money) || r.money < 0 || Math.floor(r.money) !== r.money) return false;
       var sh = r.shop;
       if (!sh || typeof sh !== 'object' || !sh.bins || typeof sh.bins !== 'object' || !Array.isArray(sh.relics) || !Array.isArray(sh.bargain) || typeof sh.bargainPicked !== 'boolean') return false;
       if (Object.keys(sh.bins).some(function (k) { return !Array.isArray(sh.bins[k]); })) return false;
       if (r.order.some(function (id) { return !C.enemies[id]; })) return false;
       if (r.bag.some(function (id) { return !card(id); })) return false;
+      // v5 無限試煉：第幾位／第幾輪／輪內第幾位對得上，聲望 1..上限，等級、品味、底氣是整數
+      if (!posInt(r.pos) || !posInt(r.round) || r.round !== E.roundOf(r.pos) || r.idx !== (r.pos - 1) % E.TRIAL.classes.length || r.idx >= r.order.length) return false;
+      if (!posInt(r.maxHp) || !posInt(r.hp) || r.hp > r.maxHp || !posInt(r.level) || !(r.atk >= 0) || !(r.def >= 0) || !Array.isArray(r.checkpoints)) return false;
       var p = r.pending;
-      if (p && !/^(reward|retry)$/.test(p.type)) return false;
+      if (p && !/^(reward|retry|level)$/.test(p.type)) return false;
       if (p && p.type === 'reward' && (!Array.isArray(p.cards) || !Array.isArray(p.relics))) return false;
+      if (p && p.type === 'level' && (!Array.isArray(p.offer) || !p.offer.length)) return false;
       if (r.duel && (!r.duel.e || !r.duel.p)) return false;
       if (!r.over && !E.nextStep(r)) return false;
       return true;
     } catch (_) { return false; }
+  }
+  // v4（一晚版）→ v5（SPEC 無限試煉 §1 裁定 12）：留唱片櫃、看過的、學會的、偏好、小人、教學／序章做過沒、上次的王牌與特價三張、配件；
+  //   一晚的 run 丟掉；nights → runs（舊的一晚記成 legacy，只拿來數「同一天第幾趟」）；best → { far, checkpoints, bestStreak }（一晚版沒有位數，從 0 起）
+  function migrate4(s) {
+    var d = defSave(), o = { v: SAVE_V };
+    ['seen', 'learned', 'settings', 'shelf'].forEach(function (k) { o[k] = s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) ? s[k] : d[k]; });
+    o.player = s.player && typeof s.player === 'object' ? s.player : null;
+    ['tutorialDone', 'prologueDone'].forEach(function (k) { o[k] = s[k] === true; });
+    o.lastAce = TIERS.indexOf(s.lastAce) >= 0 ? s.lastAce : null;
+    o.lastBargain = s.lastBargain || null;
+    o.relics = Array.isArray(s.relics) ? s.relics : [];
+    o.run = null;
+    o.runs = (Array.isArray(s.nights) ? s.nights : []).filter(function (n) { return n && typeof n === 'object'; }).map(function (n) {
+      return { seedKey: String(n.seedKey || ''), runNo: n.nightNo | 0, ace: n.ace || null, result: n.result || null, reached: 0, bestStreak: 0, taken: Array.isArray(n.taken) ? n.taken.length : 0, wins: n.wins | 0, legacy: true };
+    });
+    // 同一天開過幾趟（只增不減的計數器；舊的一晚也算，新的一趟從下一號開始）
+    o.runSeq = {};
+    o.runs.forEach(function (n) { if (n.seedKey) o.runSeq[n.seedKey] = Math.max(o.runSeq[n.seedKey] | 0, n.runNo | 0, runsIn(o.runs, n.seedKey)); });
+    o.best = d.best;
+    UI.migrated = true;
+    return o;
   }
   function loadSave() {
     var s = null;
     try { var raw = W.localStorage.getItem(KEY); if (raw) s = JSON.parse(raw); } catch (_) { s = null; }
     var d = defSave();
     if (s && typeof s === 'object' && typeof s.v === 'number' && s.v > SAVE_V) { UI.saveReadOnly = true; return d; }   // 比這版新：不覆寫
+    if (s && typeof s === 'object' && s.v === 4) s = migrate4(s);
     if (!s || typeof s !== 'object' || s.v !== SAVE_V) {
-      // 舊版（v1／v2 的 v:1）：規則與資料形狀都不一樣，整份丟掉；只帶走聲音偏好與小人（不是遊戲狀態）
+      // 舊版（v1／v2 的 v:1、v3）：規則與資料形狀都不一樣，整份丟掉；只帶走聲音偏好與小人（不是遊戲狀態）
       if (s && typeof s === 'object') {
         try { if (s.settings && typeof s.settings.sound === 'boolean') d.settings.sound = s.settings.sound; } catch (_) {}
         try { if (s.player && s.player.avatar && typeof s.player.avatar === 'object') d.player = { name: '你', avatar: s.player.avatar }; } catch (_) {}
@@ -106,14 +142,24 @@
       }
       return d;
     }
-    for (var k in d) if (s[k] == null || typeof s[k] !== typeof d[k]) s[k] = d[k];
+    // 型別不對就換回預設；預設是 null 的欄位（player、run、lastAce、lastBargain）可以存 null 以外的值（審查 #1：lastAce 'hall' 不再被洗成 null），下面各自驗
+    for (var k in d) {
+      if (s[k] === undefined) { s[k] = d[k]; continue; }
+      if (d[k] === null) continue;
+      if (s[k] === null || typeof s[k] !== typeof d[k] || Array.isArray(s[k]) !== Array.isArray(d[k])) s[k] = d[k];
+    }
+    if (TIERS.indexOf(s.lastAce) < 0) s.lastAce = null;
+    if (s.player != null && (typeof s.player !== 'object' || Array.isArray(s.player))) s.player = null;
+    if (s.run != null && typeof s.run !== 'object') s.run = null;
+    // 同一天第幾趟的計數器（審查 #5）：只留正整數
+    var rq = {}; Object.keys(s.runSeq).forEach(function (k2) { if (posInt(s.runSeq[k2])) rq[k2] = s.runSeq[k2]; }); s.runSeq = rq;
     // 上次序章挑的特價箱三張（重看教學用；不合法就當沒有）
     if (s.lastBargain != null && !(Array.isArray(s.lastBargain) && s.lastBargain.length === 3 && s.lastBargain.every(function (id) { return typeof id === 'string' && card(id); }))) s.lastBargain = null;
     s.settings = Object.assign({}, d.settings, s.settings || {});
-    s.best = Object.assign({}, d.best, s.best || {});
-    if (!s.best.bySeedKey || typeof s.best.bySeedKey !== 'object') s.best.bySeedKey = {};
-    s.unlocks = Object.assign({}, d.unlocks, s.unlocks || {});
-    if (!Array.isArray(s.nights)) s.nights = [];
+    var b = s.best && typeof s.best === 'object' ? s.best : {};
+    s.best = { far: Math.max(0, b.far | 0), bestStreak: Math.max(0, b.bestStreak | 0),
+      checkpoints: (Array.isArray(b.checkpoints) ? b.checkpoints : []).filter(posInt).filter(function (x, i, a) { return a.indexOf(x) === i; }).sort(function (x, y) { return x - y; }) };
+    if (!Array.isArray(s.runs)) s.runs = [];
     if (!Array.isArray(s.relics)) s.relics = [];
     s.relics = s.relics.filter(function (id) { return C.relics && C.relics[id]; }).slice(0, 3);
     if (s.run && !validRun(s.run)) s.run = null;
@@ -123,14 +169,14 @@
     if (UI.saveReadOnly || UI.noSave) return;
     try { W.localStorage.setItem(KEY, JSON.stringify(save)); } catch (_) { /* 寫不進去不影響遊戲 */ }
   }
-  // 唱片櫃：at＝哪一晚第一次認識；seen＝打開唱片櫃看過了沒（NEW 只標「今晚新認識、還沒看過」的，ART-17）
-  function nightTag(r) { r = r || save.run; return r ? r.seedKey + '#' + r.nightNo : seedKey(); }
+  // 唱片櫃：at＝哪一趟第一次認識（seedKey#runNo）；seen＝打開唱片櫃看過了沒（NEW 只標「這一趟新認識、還沒看過」的，ART-17）
+  function runTag(r) { r = r || save.run; return r ? r.seedKey + '#' + (r.runNo || 1) : seedKey(); }
   function shelfAdd(id) {
     if (!id || !card(id) || save.shelf[id]) return false;
-    save.shelf[id] = { at: nightTag(), seen: false };
+    save.shelf[id] = { at: runTag(), seen: false };
     return true;
   }
-  function isNewOnShelf(id) { var s = save.shelf[id]; return !!(s && !s.seen && s.at === nightTag()); }
+  function isNewOnShelf(id) { var s = save.shelf[id]; return !!(s && !s.seen && s.at === runTag()); }
 
   // ======================================================================= 像素小人、配件圖示
   // LAB_SPR＝roguelike.html 的 SPR 整段（依賴 dip-character.js 的 sprRows；不宣告它的同名全域）
@@ -249,7 +295,7 @@
     var badge = '';
     if (c.tier && o.badge !== false) badge = '<span class="badge ' + c.tier + '">' + esc((C.aceTitle || {})[c.tier] || '') + '</span>';
     else if (c.gold && o.badge !== false) badge = '<span class="badge gold">私藏</span>';
-    if (o.isNew) badge += '<span class="badge new">新認識</span>';     // COPY-16：跟唱片櫃「今晚新認識」同一個詞；NEW 留給新進那一箱
+    if (o.isNew) badge += '<span class="badge new">新認識</span>';     // COPY-16：跟唱片櫃「這一趟新認識」同一個詞；NEW 留給新進那一箱
     var src = coverSrc(c);
     return '<span class="lb-cv ' + (o.frame === false ? '' : rarityCls(c)) + (o.sel ? ' sel' : '') + '"' + st + (o.info === false ? '' : ' data-info="1" data-cid="' + esc(c.id) + '"') +
       ' role="img" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="alt" aria-hidden="true">' + esc(c.album) + '</span>' +
@@ -473,7 +519,7 @@
     UI.timers.forEach(clearTimeout); UI.timers = [];
     UI.offs.forEach(function (f) { try { f(); } catch (_) {} }); UI.offs = [];
     UI.decor.forEach(function (d) { if (d && d.remove) d.remove(); }); UI.decor = [];
-    qsa('.lb-sheet.float, .lb-toast', app()).forEach(function (s) { s.remove(); });
+    qsa('.lb-sheet.float, .lb-toast:not(.keep)', app()).forEach(function (s) { s.remove(); });   // .keep：換畫面前剛出的吐司（打贏的錢、升級、中繼點）留到自己的時間到（審查 #0）
     UI.going = false; UI.lastAct = null;
     closeModal();
     var ci = CI(); if (ci && ci.isOpen()) ci.close();
@@ -492,6 +538,7 @@
     var p = UI.panel; p.className = 'lb-panel'; p.removeAttribute('style'); p.innerHTML = '';
     var f = FX(); if (f && f.rainStop && id !== 'title' && id !== 'scene') try { f.rainStop(); } catch (_) {}
     try { SCREENS[id](UI.params); } catch (e) { console.error(e); }
+    flushAfter();                                    // 排給「下一個畫面」的吐司：畫面掛好才出（審查 #0）
     floorSoon();
     UI.camQuick = false;
     if (UI.auto && UI.auto.until === id) UI.auto = null;
@@ -524,7 +571,7 @@
   // ======================================================================= 場景（scene）：舞台 full＋對白窗＋包包條
   function buildScene(p) {
     p = p || {};
-    setTop(nightLabel(save.run), { skip: function () { if (UI.dlg) UI.dlg.skip(); }, help: !!p.help, pause: !!p.pause });
+    setTop(posLabel(save.run), { skip: function () { if (UI.dlg) UI.dlg.skip(); }, help: !!p.help, pause: !!p.pause });
     var panel = UI.panel; panel.classList.add('scene');
     var dq = el('div', 'lb-dq narr', '<div class="nm"></div><div class="tx" aria-live="polite"></div><div class="nx" aria-hidden="true">▼</div><div class="menu"></div>');
     panel.appendChild(dq);
@@ -984,7 +1031,7 @@
     if (s.parentNode) s.remove();
     if (!qs(':scope > .lb-sheet', UI.panel)) { UI.panel.classList.remove('sheeted'); if (UI.sheetNeed) { UI.sheetNeed = 0; floorSoon(); } camBackSoon(); }
   }
-  // 浮在舞台下緣的小面板（今晚來客的頭像、箱子、試聽機、包包、配件）
+  // 浮在舞台下緣的小面板（來客的頭像、箱子、試聽機、包包、配件）
   function floatSheet(html, cls) {
     qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); });
     var s = el('div', 'lb-sheet float' + (cls ? ' ' + cls : ''), html);
@@ -1079,7 +1126,7 @@
       roomForSheet(s);
     });
   }
-  // 挑王牌（O9；再來一夜）：三張王牌（殿堂・經典 7…）；點封面下面那行＝選、封面＝唱片資訊、「就這張」確認。不切歌（D §2：音樂播到私人收藏那句說完）
+  // 挑王牌（O9；再挑戰一趟）：三張王牌（殿堂・經典 7…）；點封面下面那行＝選、封面＝唱片資訊、「就這張」確認。不切歌（D §2：音樂播到私人收藏那句說完）
   //   預設選中＝猜歌時選的那張（猜對＝今晚那張）
   function acePickPanel(sc, ctx, beat) {
     return new Promise(function (res) {
@@ -1139,16 +1186,26 @@
       autoAct(function () { var b = qs('[data-a=ok]', s); if (b) b.click(); }, 200);
     });
   }
-  // 特價區挑三張（O13；再來一夜開局）：經濟介面 DipLabEcon.bargainPick（B3）。econ.js 沒載到時用最簡單的備用面板（照樣讓玩家自己挑，不替玩家選）
+  // 特價區挑三張（O13；再挑戰一趟開局）：經濟介面 DipLabEcon.bargainPick（B3）。econ.js 沒載到時用最簡單的備用面板（照樣讓玩家自己挑，不替玩家選）
   function econ() { var X = W.DipLabEcon; return X && typeof X === 'object' ? X : null; }
   function bargainPickFlow(prompt) {
     var r = save.run;
     if (!r || !E.canBargainPick(r)) return Promise.resolve(null);
     var X = econ();
     if (X && typeof X.bargainPick === 'function') {
-      UI.econBusy = true; fitFloor();                  // 今晚來客的木地板先收（抽屜上面照 R2 是舞台黑；V5-play-4）
-      return Promise.resolve().then(function () { return X.bargainPick({ prompt: prompt }); }).then(null, function (e) { console.error(e); return null; })
-        .then(function (ids) { UI.econBusy = false; floorSoon(); if (save.run && E.canBargainPick(save.run)) return bargainFallback(prompt); return ids; });
+      UI.econBusy = true; fitFloor();                  // 來客的木地板先收（抽屜上面照 R2 是舞台黑；V5-play-4）
+      var autoIds = null;
+      var pr = Promise.resolve().then(function () { return X.bargainPick({ prompt: prompt }); }).then(null, function (e) { console.error(e); return null; })
+        .then(function (ids) { UI.econBusy = false; floorSoon(); if (save.run && E.canBargainPick(save.run)) return bargainFallback(prompt); return ids || autoIds; });
+      // 自動遊玩（__lab.autoplay）：照 engine.bargainPolicy 挑完、收掉抽屜（審查 #4：econ.js 在的時候 autoplay 不會卡在開局挑三張）
+      autoAct(function () {
+        var rr = save.run; if (!rr || !E.canBargainPick(rr)) return;
+        var ch = E.bargainPolicy ? E.bargainPolicy(rr, C) : null;
+        if (!ch || !Array.isArray(ch.ids)) ch = { type: 'bargainPick', ids: rr.shop.bargain.slice(0, E.CFG.bargainPick || 3) };
+        var res = doChoose({ type: 'bargainPick', ids: ch.ids.slice() });
+        if (res && res.ok) { autoIds = ch.ids.slice(); try { X.close(); } catch (e) { console.error(e); } }
+      }, 600);
+      return pr;
     }
     console.error('[ui] DipLabEcon.bargainPick 不在：用備用的挑三張面板');
     return bargainFallback(prompt);
@@ -1183,7 +1240,7 @@
       }, 200);
     });
   }
-  // 一張唱片攤開（序章地上那張、打烊時藏家送的那張）：封面 140＋三軸＋按鈕。title 為 null 時不畫標題列（D §2：Fishmans 那張不加敘述）
+  // 一張唱片攤開（序章地上那張、打倒藏家時他送的那張）：封面 140＋三軸＋按鈕。title 為 null 時不畫標題列（D §2：Fishmans 那張不加敘述）
   function cardPanel(c, opts) {
     opts = opts || {};
     return new Promise(function (res) {
@@ -1266,10 +1323,17 @@
     var html = esc(text).replace(/[−+-]\$[\d,]+/g, function (m) { return '<span class="nw">' + m + '</span>'; })
       .replace(/(進包包|賣掉|拿出來了|放回去了)/g, '<span class="nw">$1</span>');
     var t = el('div', 'lb-toast' + (cls ? ' ' + cls : ''), html);
+    // 同時好幾個（贏錢＋聲望 +3、中繼點）：往下疊，不蓋在同一個位置
+    var prev = qsa('.lb-toast:not(.out)', app());
     app().appendChild(t);
+    if (prev.length) { var ar = app().getBoundingClientRect(), y = 0; prev.forEach(function (x) { y = Math.max(y, x.getBoundingClientRect().bottom - ar.top); }); t.style.top = Math.round(y + 6) + 'px'; }
     setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 1900 / speed());
   }
   function flushToasts() { var q = toastQ; toastQ = []; q.forEach(function (x, i) { setTimeout(function () { toast(x[0], x[1]); }, i * 300); }); }
+  // 排到下一個畫面掛好之後才出的吐司（打贏的錢＋聲望、走到中繼點）：go() 跑完 SCREENS[id] 才 flush；帶 .keep，接著再換畫面也不被 cleanup 拿掉（審查 #0）
+  var afterQ = [];
+  function toastAfter(text, cls) { if (text) afterQ.push([text, 'keep' + (cls ? ' ' + cls : '')]); }
+  function flushAfter() { var q = afterQ; afterQ = []; q.forEach(function (x) { toast(x[0], x[1]); }); }
   function effectsText(effects) {
     var out = [];
     (effects || []).forEach(function (f) {
@@ -1286,11 +1350,18 @@
     var res = E.choose(r, C, ch);
     if (!res.ok) console.warn('choose error', res.error, ch);
     if (res.ok && ch && ch.type === 'bargainPick' && prologue) save.lastBargain = ch.ids.slice();   // 重看教學用（§2.5.5）
-    (res.effects || []).forEach(function (f) { if (f.gainCard) shelfAdd(f.gainCard); });
-    save.relics = r.relics.slice(0, 3);          // 身上的配件帶到下一晚（engine 建議；最多三件）
+    (res.effects || []).forEach(function (f) { if (f.gainCard) { shelfAdd(f.gainCard); gotCard(r, f.gainCard); } });
+    save.relics = r.relics.slice(0, 3);          // 身上的配件帶到下一趟（engine 建議；最多三件）
     persist();
     return res;
   }
+  // 這一趟收進包包的唱片（結算那面牆；張數照 engine run.taken）：老闆送的、特價、獎勵、買的、藏家的王牌
+  //   舊的 run（存檔、__lab 做的）沒有 r.got：用老闆送的＋包包＋獎勵＋買的湊
+  function runGot(r) {
+    if (!Array.isArray(r.got)) r.got = [].concat(C.gifts[r.ace] || [], r.bag || [], (r.stats && r.stats.taken) || [], (r.stats && r.stats.bought) || []).filter(function (id, i, a) { return a.indexOf(id) === i; });
+    return r.got;
+  }
+  function gotCard(r, id) { if (!r || !id) return; var g = runGot(r); if (g.indexOf(id) < 0) g.push(id); }
   // 收一張進包包：滿 8 張先挑一張拿出來（拿出來的留在唱片櫃）
   function takeCard(cardId, autoDrop) {
     var r = save.run;
@@ -1307,30 +1378,33 @@
   }
 
   // ======================================================================= title
-  function firstEver() { return !save.prologueDone && !(save.nights && save.nights.length); }
+  function firstEver() { return !save.prologueDone && !(save.runs && save.runs.length); }
   function shelfCount() { return { n: Object.keys(save.shelf).filter(card).length, total: Object.keys(C.cards).length }; }
+  // 「繼續試煉」的副字：第 7 位・二手店老闆（序章收尾（撿唱片、挑配件）也還是序章，RT-7）
   function runWhere(r) {
     if (!r) return '';
-    if (r.prologue === 'pending' || (r.pending && r.pending.prologue)) return (C.night.prologueTime || '21:30') + '・序章';   // 序章收尾（撿唱片、挑配件）也還是序章（RT-7）
+    if (inPrologue(r)) return TU('prologue');
     var id = E.current(r, C), en = C.enemies[id];
-    return (r.times[r.idx] || '') + (en ? '・' + en.name : '');
+    return TU('pos', { n: r.pos }) + (en ? '・' + en.name : '');
   }
   SCREENS.title = function () {
     var r = save.run, hasRun = !!(r && !r.over), overRun = !!(r && r.over);
-    setTop(esc(dateLabel(seedKey())) + ' 的雨夜', { links: (canCharEdit() ? [['捏角色', openCharEdit, 'char']] : []).concat([['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']]), help: true });
+    setTop(esc(TU('game')), { links: (canCharEdit() ? [['捏角色', openCharEdit, 'char']] : []).concat([['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']]), help: true });
     var panel = UI.panel; panel.classList.add('title');
     var sh = shelfCount();
-    var infoLine = (save.best.clears ? '打烊 ' + save.best.clears + ' 次' : '') + (sh.n ? (save.best.clears ? '・' : '') + '唱片櫃 ' + sh.n + '／' + sh.total : '');
+    // 紀錄（店主 11-12）：「最遠：第 23 位」＋唱片櫃
+    var far = save.best.far | 0;
+    var infoLine = [far ? fill((C.summary && C.summary.best) || '', { n: far }) : '', sh.n ? '唱片櫃 ' + sh.n + '／' + sh.total : ''].filter(Boolean).join('・');
     var hint = line('titleHint'), where = runWhere(r);
     var h = '<div class="lb-tbtns">';
     if (hasRun) {
-      h += '<button type="button" class="lb-btn pri big wide col key" data-a="cont">繼續今晚 ▸<span class="sub">' + esc(where) + '</span></button>' +
+      h += '<button type="button" class="lb-btn pri big wide col key" data-a="cont">' + esc(TU('cont')) + '<span class="sub">' + esc(where) + '</span></button>' +
         '<div class="row"><button type="button" class="lb-btn key" data-a="push">重新推門</button><button type="button" class="lb-btn key" data-a="quiet">安靜地重新推門</button></div>' +
-        '<p class="lb-warn" aria-live="polite">再按一次就放棄今晚（' + esc(where) + '），從頭推門。</p>';
+        '<p class="lb-warn" aria-live="polite">' + esc(TU('abandonWarn', { where: where })) + '</p>';
     } else {
       h += '<button type="button" class="lb-btn pri big wide key" data-a="push">推門（有聲音）▸</button>' +
         '<button type="button" class="lb-btn big wide key" data-a="quiet">安靜地推門</button>' +
-        (overRun ? '<button type="button" class="lb-btn wide" data-a="end">看今晚結算</button>' : '');
+        (overRun ? '<button type="button" class="lb-btn wide" data-a="end">' + esc(TU('lastSummary')) + '</button>' : '');
     }
     h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
@@ -1467,12 +1541,23 @@
     after(next, 40);                                        // 空的 live region 先掛上去，第一句下一刻再填（讀屏才念得到）
   }
   var INTRO_FADE = 750;
-  // ======================================================================= 開新的一晚
-  function nightsFor(k) { return save.nights.filter(function (n) { return n.seedKey === k; }).length; }
+  // ======================================================================= 開新的一趟（無限試煉：同一天第幾趟＝runNo；配件照 v4 帶到下一趟，最多 3 件，裁定 7）
+  function runsIn(runs, k) { return runs.filter(function (n) { return n && n.seedKey === k; }).length; }
+  function runsFor(k) { return runsIn(save.runs, k); }
+  // 同一天第幾趟（runNo）：save.runSeq[seedKey] 只增不減（審查 #5：runs 只留 50 筆，數陣列會卡在 51 → 之後每一趟都一模一樣）
+  function nextRunNo(k) {
+    var Q = save.runSeq || (save.runSeq = {});
+    var n = Math.max(Q[k] | 0, runsFor(k)) + 1;
+    delete Q[k]; Q[k] = n;                                   // 最近用的排最後；只留最近 40 天
+    var ks = Object.keys(Q); while (ks.length > 40) delete Q[ks.shift()];
+    return n;
+  }
   function createRun(o) {
     var k = seedKey();
-    var r = E.newRun(C, { seedKey: k, nightNo: nightsFor(k) + 1, ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3) });
+    var r = E.newRun(C, { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3) });
     r.tut = null;                                     // tut：null＝還沒選、true＝老闆帶的那場（教學）、false＝直接打／教學結束
+    r.farBefore = save.best.far | 0;                  // 結算的「新紀錄」：跟開這一趟之前的最遠比
+    r.got = (C.gifts[o.ace] || []).slice();           // 這一趟收進包包的（老闆送的四張也算，裁定 9）
     save.run = r; save.lastAce = o.ace;
     shelfAdd(C.aces[o.ace]); (C.gifts[o.ace] || []).forEach(shelfAdd);
     persist();
@@ -1487,7 +1572,7 @@
     o = o || {};
     var tonight = tonightId();
     var ctx = { flags: {}, quiet: !soundOn(), tonightId: tonight, tonightTier: tierOfCard(tonight), defaultTier: tierOfCard(tonight), quietDoor: !!o.fromIntro };
-    save.run = null; persist();
+    abandonRun(save.run); save.run = null; persist();
     go('scene', { p: 'door', f: 'hide', o: 'counter', hideR1: true, stripState: { ace: null, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
       var run = function () { dlg.run(C.script.prologue, function (ui, b) { return prologueUi(ui, b, sc, dlg, ctx); }); };
@@ -1536,10 +1621,10 @@
     }
     return Promise.resolve();
   }
-  // ---- 再來一夜（≤10 秒）：門晃 → 挑王牌 → 走到特價箱挑三張（D §2「第一個自己決定牌組的選擇」）→ 今晚來客
+  // ---- 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 → 走到特價箱挑三張（D §2「第一個自己決定牌組的選擇」）→ 來客（第 1 位）
   function startAgain() {
     var ctx = { flags: {}, quiet: !soundOn(), defaultTier: save.lastAce || 'hall' };
-    save.run = null; persist();
+    abandonRun(save.run); save.run = null; persist();
     go('scene', { p: 'door', f: 'hide', o: 'counter', stripState: { ace: null, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
       dlg.run(C.script.again, function (ui, b) {
@@ -1559,6 +1644,7 @@
     if (!r) return go('title');
     var step = E.nextStep(r);
     if (step === 'reward') return r.pending.prologue ? epilogueFlow(true) : go('reward');
+    if (step === 'level') return go('reward');                        // 升級三選一還沒選完（重新整理）：回到領獎那個鏡頭開升級面板
     if (step === 'retry') return retryFlow({ enemyId: r.pending.enemyId, resumed: true });
     if (r.over) return go('end');
     if (step === 'duel') return beginFight({});
@@ -1617,6 +1703,7 @@
       relicIcon: function (id, size) { return relicIcon(id, size); },
       resolveOpts: function () {
         var o = UI.force ? { debugOutcome: UI.force } : {};
+        var lo = loseOutcome(save.run && save.run.duel); if (lo) o.debugOutcome = lo;
         // ?debug=1 的 __lab.duelLab.setNext({i,attr})：他下一手照這個出（e2e-duel 的 index.html 版；＝duel-harness 的 __h.setNext）
         var nx = UI.nextPlay; UI.nextPlay = null;
         var d = save.run && save.run.duel;
@@ -1627,12 +1714,11 @@
       beforeEnd: tut && T.settled ? function () { try { return T.settled(); } catch (_) { return null; } } : null
     };
   }
+  // 對決的頂欄：「第 n 位<small>第 R 輪・菁英／傳說藏家</small>」；序章男子（含重看教學的 fakeRun）＝「序章」
   function duelTitle(eid, r) {
     var en = C.enemies[eid] || {};
-    if (en.prologue || eid === (C.prologueEnemy || 'man')) return esc(C.night.prologueTime || '21:30') + '<small>序章</small>';
-    var t = (r && r.times && r.times[r.idx]) || '';
-    if (en.boss) return esc(t) + '<small>打烊前</small>';
-    return esc(t) + '<small>今晚第 ' + ((r && r.idx | 0) + 1) + ' 位' + (en.elite ? '・菁英' : '') + '</small>';
+    if (en.prologue || eid === (C.prologueEnemy || 'man') || inPrologue(r)) return esc(TU('prologue'));
+    return posLabel(r, E.classAt(r.pos));
   }
   // 盤面最終高度：螢幕高 − 頂欄 − 橫條（舞台 strip 鏡頭的 CSS 高）
   function stripCssH() {
@@ -1653,7 +1739,7 @@
     var panel = UI.panel; panel.classList.add('duel');
     var wrap = el('div', 'lb-duelwrap'); panel.appendChild(wrap);
     var foeSpr = enemySpr(en);
-    // 上一場的勝利曲（或今晚來客時放的試聽）淡掉：不要壓在這場每一手的落針與 NOW 小窗底下（RT-9）
+    // 上一場的勝利曲（或來客時放的試聽）淡掉：不要壓在這場每一手的落針與 NOW 小窗底下（RT-9）
     var fxm = FX(); if (fxm && fxm.music && fxm.music.playing && fxm.music.playing()) try { fxm.music.stop({ fadeMs: 900 }); } catch (e) { console.error(e); }
     resetPoses(); hideActor('q1'); hideActor('q2'); stg('sil', 'f', false); stg('sil', 'p', false);
     stg('sprite', 'f', foeSpr);
@@ -1740,38 +1826,57 @@
     var r = save.run;
     if (!r || !duel || !duel.over || UI.ending === duel) return;
     UI.ending = duel;
-    var wasTut = r.tut === true;
+    if (UI.loseDuel === duel) { UI.loseDuel = null; UI.loseNext = Math.max(0, (UI.loseNext | 0) - 1); }
+    var wasTut = r.tut === true, firstBoss = !r.aceWon;   // engine 打倒藏家才設 run.aceWon（這一趟第一次）
     var out = null;
     try { out = E.finishFight(r, C, duel); } catch (e) { console.error(e); }
     if (!out || out.error) { console.error('finishFight', out && out.error); persist(); return go(r.over ? 'end' : 'night'); }
     if (wasTut && out.win) save.tutorialDone = true;     // 教學那場打贏（含教學步驟中 KO）：B-tut-done-not-persisted
     r.tut = false;
     (out.met || []).forEach(shelfAdd);
+    var aceNew = false;
+    if (out.aceWon) { aceNew = shelfAdd(out.aceWon); gotCard(r, out.aceWon); }   // 打倒藏家：他的王牌收進唱片櫃（裁定 5；每輪都送，「收了」只算一次）
     persist();
-    if (out.earn > 0) toast(fill((C.shopUi && C.shopUi.earned) || '+${n}', { n: E.moneyText(out.earn) }), 'gold');   // 贏了拿錢（§2.5.2；千分位 FIXLIST 8）
+    // 吐司：贏錢＋聲望 +3 一顆（§2.5.2；千分位 FIXLIST 8）。排到下一個畫面（領獎／藏家那段）掛好才出，不在換畫面那一下被收掉（審查 #0）
+    var tw = [];
+    if (out.earn > 0) tw.push(fill((C.shopUi && C.shopUi.earned) || '+${n}', { n: E.moneyText(out.earn) }));
+    if (out.heal > 0) tw.push(TU('heal', { n: out.heal }));
+    if (tw.length) toastAfter(tw.join('・'), 'gold');
     stg('untag');
     if (UI.auto && UI.auto.until === 'duelEnd') UI.auto = null;
     var off = out.offer;
     if (off && off.type === 'retry') return retryFlow(out);
-    if (off && off.type === 'reward') return off.prologue ? epilogueFlow(false) : go('reward');
-    if (r.over) { recordNight(r); return r.over === 'clear' ? clearFlow() : deadFlow(out); }
+    if (off && off.prologue) return epilogueFlow(false);
+    // 藏家：這一趟第一次打倒他才演送牌那段（他的王牌收進唱片櫃）；之後每輪同一張、已經在櫃子裡了：直接領獎／升級（審查 #18）
+    if (out.aceWon && firstBoss) return bossDownFlow(out, aceNew);
+    if (off && (off.type === 'reward' || off.type === 'level')) return go('reward');
+    if (r.over) { recordRun(r); return deadFlow(out); }
     go('night');
   }
-  function recordNight(r) {
-    if (!r || !r.over || r.recorded) return;
-    var firstClear = r.over === 'clear' && !save.best.clears;
+  // 中繼點（第 10、20、30、50、75、100 位，之後每 50）：走到就記（SPEC §0；engine advance 記進 run.checkpoints，來客畫面出吐司、記進 save.best；票之後再做）
+  function noteCheckpoint(pos) {
+    var B = save.best;
+    if (!posInt(pos) || B.checkpoints.indexOf(pos) >= 0) return;
+    B.checkpoints.push(pos); B.checkpoints.sort(function (a, b) { return a - b; });
+  }
+  // 這一趟結束（倒下、到這裡就好；放棄＝why 'abandon'）：記進 runs，更新最遠／最多連贏／中繼點（標題「最遠：第 23 位」）
+  //   序章裡放棄不記（還沒走到第 1 位）
+  function recordRun(r, why) {
+    if (!r || r.recorded || (!r.over && why !== 'abandon')) return;
+    if (!r.over && inPrologue(r)) return;
     r.recorded = true;
-    var la = r.stats.lostAt;
-    var reached = r.over === 'clear' ? (r.times[r.times.length - 1] || '02:00') : ((la && la.time) || (r.prologue === 'pending' ? C.night.prologueTime : ''));
-    save.nights.push({ seedKey: r.seedKey, nightNo: r.nightNo, ace: r.ace, result: r.over, reached: reached, wins: r.stats.wins, taken: r.stats.taken.slice() });
-    if (save.nights.length > 30) save.nights = save.nights.slice(-30);
-    if (r.over === 'clear') { save.best.clears++; save.best.bySeedKey[r.seedKey] = (save.best.bySeedKey[r.seedKey] | 0) + 1; }
-    if (firstClear) save.unlocks.secondNightTeaser = true;
-    r.firstClear = firstClear;
+    var sum = E.runSummary(r), B = save.best;
+    r.newRecord = (r.farBefore | 0) > 0 && sum.reached > (r.farBefore | 0);
+    B.far = Math.max(B.far | 0, sum.reached);
+    B.bestStreak = Math.max(B.bestStreak | 0, sum.bestStreak);
+    sum.checkpoints.forEach(noteCheckpoint);
+    save.runs.push({ seedKey: r.seedKey, runNo: r.runNo, ace: r.ace, result: r.over || why, reached: sum.reached, bestStreak: sum.bestStreak, taken: sum.taken, wins: sum.wins, level: sum.level, checkpoints: sum.checkpoints });
+    if (save.runs.length > 50) save.runs = save.runs.slice(-50);
     save.prologueDone = true;
     save.relics = r.relics.slice(0, 3);
     persist();
   }
+  function abandonRun(r) { if (r && !r.over) recordRun(r, 'abandon'); }
   // 場景：對決結束後的那個位置（他在左、你在右、老闆在唱盤後面 ref），鏡頭拉回全景；序章那晚熟客一直藏著
   function afterDuelScene(eid, o, start) {
     var en = C.enemies[eid] || {};
@@ -1781,7 +1886,7 @@
       start(sc);
     } }, o || {}));
   }
-  // ---- 輸了：序章男子免費再一場；客人每晚一次老闆說情（同一位重打、聲望回滿）
+  // ---- 輸了：序章男子免費再一場；客人每輪一次老闆說情（同一位、同一副牌，聲望回到開打前，裁定 8）
   function retryFlow(out) {
     var r = save.run, eid = out.enemyId, p = r.pending, free = !!(p && p.free);
     afterDuelScene(eid, {}, function (sc) {
@@ -1794,17 +1899,17 @@
       beats.push({ who: '老闆', text: '「' + ((free ? OL.retry : (OL.retryAsk || OL.retry)) || '……再一場。') + '」' });
       dlg.run(beats).then(function () {
         if (free) { doChoose({ type: 'retry' }); return beginFight({ quick: true }); }
-        return dlg.menu(['▶ 再一場（今晚只有一次）', '今晚到這'], { autoIndex: 0 }).then(function (i) {
+        return dlg.menu(((C.trial && C.trial.ui && C.trial.ui.retryMenu) || []).slice(0, 2), { autoIndex: 0 }).then(function (i) {
           if (i === 0) { doChoose({ type: 'retry' }); beginFight({ quick: true }); return; }
-          doChoose({ type: 'end' }); recordNight(save.run); deadFlow({ enemyId: eid });
+          doChoose({ type: 'end' }); recordRun(save.run); deadFlow({ enemyId: eid });
         });
       });
     });
   }
-  // ---- 序章收尾（D §2 E1–E11）：他走出門、地上留一張盤（撿起面板，沒有旁白）→ 老闆走到你面前 → 長桌的木箱、發燒配件三選一 → 第一位客人推門 → 今晚來客
+  // ---- 序章收尾（D §2 E1–E11）：他走出門、地上留一張盤（撿起面板，沒有旁白）→ 老闆走到你面前 → 長桌的木箱、發燒配件三選一 → 第一位客人推門 → 來客
   function epilogueFlow(resumed) {
     var r = save.run;
-    save.prologueDone = true; persist();             // 序章打贏了：之後放棄今晚也不會再從序章開始
+    save.prologueDone = true; persist();             // 序章打贏了：之後放棄這一趟也不會再從序章開始
     afterDuelScene('man', { fSpr: enemySpr(C.enemies[C.prologueEnemy || 'man']), hideR1: true }, function (sc) {
       var pend0 = r.pending;
       var dropId = pend0 && pend0.cards && pend0.cards[0];
@@ -1843,7 +1948,7 @@
           });
         }
         if (ui === 'map') {
-          // E10 推門進來的那位就是今晚第一位客人：今晚來客畫面裡他已經在店裡（不剪影、不再推門）
+          // E10 推門進來的那位就是第 1 位客人：來客畫面裡他已經在店裡（不剪影、不再推門）
           var rr = save.run;
           if (rr && rr.shop) rr.shop.firstGuestInside = true;
           save.prologueDone = true; persist();
@@ -1853,19 +1958,15 @@
       });
     });
   }
-  // ---- 打烊（通關）：藏家用過的那張（你當初沒選的王牌）收進唱片櫃
-  function clearFlow() {
-    var r = save.run;
-    afterDuelScene('boss', { o: 'counter' }, function (sc) {
-      var aceId = C.aces[r.bossAce];
-      var dlg = Dialogue(sc, { flags: { firstClear: !!r.firstClear }, stakeId: aceId });
-      dlg.run(C.script.clear, function (ui) {
-        if (ui === 'stake' && card(aceId)) {
-          var isNew = shelfAdd(aceId); persist();
-          return cardPanel(card(aceId), { title: '他用過的那張', isNew: isNew, buttons: [{ label: '收進唱片櫃', value: 'ok', pri: true }] });
-        }
+  // ---- 打倒傳說藏家（每一輪；裁定 5：原本打烊那段的送牌搬到這裡）：他用過的那張王牌（你當初沒選的）翻開、收進唱片櫃 → 領獎 → 升級 → 下一輪
+  function bossDownFlow(out, isNew) {
+    var aceId = out.aceWon;
+    afterDuelScene(out.enemyId, { o: 'counter' }, function (sc) {
+      var dlg = Dialogue(sc, { flags: {}, stakeId: aceId });
+      dlg.run(C.script.bossDown || [], function (ui) {
+        if (ui === 'stake' && card(aceId)) return cardPanel(card(aceId), { title: '他用過的那張', isNew: !!isNew, buttons: [{ label: '收進唱片櫃', value: 'ok', pri: true }] });
         return Promise.resolve();
-      }).then(function () { go('end'); });
+      }).then(function () { go('reward', { said: true }); });     // 他那句剛說完：領獎畫面不再補說（審查 #2）
     });
   }
   // ---- 散場：你坐在地上，老闆一句
@@ -1877,7 +1978,7 @@
       dlg.run(C.script.dead).then(function () { go('end'); });
     } });
   }
-  // ---- 傳說藏家進門（02:00）
+  // ---- 傳說藏家進門（每輪第 5 位）
   function bossEnterFlow() {
     go('scene', { p: 'duelP', f: 'out', fSpr: 'boss', o: 'counter', start: function (sc) {
       var dlg = Dialogue(sc, {});
@@ -1897,7 +1998,7 @@
     var res; try { res = T.replayDuel(C, tier, 7, { bargain: last }); } catch (e) { console.error(e); return; }
     var bag = T.replayBag ? T.replayBag(C, tier, last) : (C.gifts[tier] || []).slice();
     var back = UI.screen === 'night' ? 'night' : (save.run && !save.run.over ? 'resume' : 'title');
-    go('duel', { res: res, enemyId: C.prologueEnemy || 'man', enter: true, tutorial: true, replay: true, fakeRun: { ace: tier, bag: bag, retryLeft: 1, relics: [], idx: 0, times: [] } });
+    go('duel', { res: res, enemyId: C.prologueEnemy || 'man', enter: true, tutorial: true, replay: true, fakeRun: { ace: tier, bag: bag, retryLeft: 1, relics: [], idx: 0 } });
     UI.tutReplay = { back: back };
   }
   function endReplay() {
@@ -1907,13 +2008,13 @@
     if (back === 'resume') resumeRun(); else if (back === 'night' && save.run && !save.run.over) go('night'); else go('title');
   }
 
-  // ======================================================================= reward：贏了挑他一張唱片（菁英／藏家：唱片或一件配件）
+  // ======================================================================= reward：贏了挑他一張唱片（菁英／藏家：唱片或一件配件）→ 升級三選一（有升級才有，連升就連選）→ 下一位
   SCREENS.reward = function () {
     var r = save.run, p = r && r.pending;
-    if (!p || p.type !== 'reward') return resumeRun();
+    if (!p || (p.type !== 'reward' && p.type !== 'level')) return resumeRun();
     if (p.prologue) return epilogueFlow(true);
     var en = C.enemies[p.enemyId] || {};
-    setTop(esc(r.times[r.idx] || '') + '<small>' + esc(en.name || '') + '</small>', { help: true, pause: true });
+    setTop(esc(TU('pos', { n: r.pos })) + '<small>' + esc(en.name || '') + '</small>', { help: true, pause: true });
     UI.panel.classList.add('reward');
     stg('interact', 'reward');
     stg('pose', 'f', null); stg('pose', 'p', null);
@@ -1922,9 +2023,11 @@
     stg('sprite', 'f', enemySpr(en)); stg('hide', 'f', false); stg('sil', 'f', false);
     var lose = (C.lines[p.enemyId] && C.lines[p.enemyId].lose) || [];
     var fromDuel = UI.trail.length >= 2 && UI.trail[UI.trail.length - 2] === 'duel';   // 盤面打完那一下已經說過了（COPY-02）；重新整理回來才在這裡說
-    if (!fromDuel && lose.length) later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
+    // 藏家：他那句（送你那張）只在第一次打倒他的送牌那段說；領獎畫面一律不補（審查 #2、#18）
+    var said = fromDuel || !!(UI.params && UI.params.said) || p.cls === 'boss';
+    if (!said && lose.length) later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
     later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, 1700);
-    var cards = p.cards.map(card).filter(Boolean), relics = p.relics.filter(relicOf);
+    var cards = (p.cards || []).map(card).filter(Boolean), relics = (p.relics || []).filter(relicOf);
     var busy = false;
     // 面板（包包滿／配件滿按「算了」回來時重畫這一張：sheet() 開新面板會把它拿掉；RT-1）
     function showSheet() {
@@ -1963,17 +2066,50 @@
       return s;
     }
     var finish = function (res) {
-      if (res && res.effects) toast(effectsText(res.effects));
+      if (res && res.effects) toast(effectsText(res.effects), 'keep');      // 接著 300 ms 換畫面：留到時間到（審查 #0）
       var rr = save.run;
       if (rr.pending && rr.pending.type === 'reward') { busy = false; if (UI.screen === 'reward') showSheet(); return; }   // 還沒選完（包包滿了按「算了」）：挑唱片的面板放回來
-      if (rr.over) { recordNight(rr); return later(function () { rr.over === 'clear' ? clearFlow() : go('end'); }, 300); }
+      if (rr.pending && rr.pending.type === 'level') return later(levelNext, 300);
+      if (rr.over) { recordRun(rr); return later(function () { go('end'); }, 300); }
       later(function () { go('night'); }, 300);
     };
+    // 升級三選一：選完還有（連升）就再開一次；選完到下一位（來客；打完藏家＝下一輪新面孔）
+    var levelNext = function () {
+      if (UI.screen !== 'reward') return;
+      var rr = save.run;
+      if (!rr || !rr.pending || rr.pending.type !== 'level') return later(function () { go('night'); }, 300);
+      levelPanel(rr).then(function (pick) {
+        var res = doChoose({ type: 'level', pick: pick });
+        if (res && res.ok) toast(((C.trial && C.trial.levelUp) || {})[pick] || '', 'gold keep');   // 選完 300 ms 就到來客：吐司留滿自己的時間（審查 #0）
+        levelNext();
+      });
+    };
+    if (p.type === 'level') { later(levelNext, 300); return; }
     showSheet();
   };
+  // 升級面板（SPEC 無限試煉 §0）：「升級：Lv 4」＋「聲望上限 +1（自動）」；三顆大鈕（engine.levelOffer：第一格固定是品味或底氣），沒有「算了」
+  function levelPanel(r) {
+    var p = r.pending, L = (C.trial && C.trial.levelUp) || {};
+    var now = { atk: r.atk | 0, def: r.def | 0, hp: r.maxHp | 0 };
+    return new Promise(function (res) {
+      var html = '<div class="hd"><h3>' + esc(fill(L.title, { n: p.level })) + '</h3><span class="sub">' + esc([L.sub, TU('hp', { n: r.hp, max: r.maxHp })].filter(Boolean).join('・')) + '</span></div>' +
+        '<div class="lb-opts">' + (p.offer || []).map(function (o) {
+          return '<button type="button" class="lb-btn big lb-lvl" data-lv="' + esc(o.pick) + '"><span class="tx"><span class="nm key">' + esc(L[o.pick] || o.pick) + '</span><span class="ds">' + esc(fill(L[o.pick + 'Sub'] || '', { n: o.n | 0 })) + '</span></span>' +
+            '<span class="nv">' + now[o.pick] + ' → ' + (now[o.pick] + (o.n | 0)) + '</span></button>';
+        }).join('') + '</div>';
+      var s = sheet(html, 'level');
+      roomForSheet(s);
+      var done = false;
+      s.addEventListener('click', function (e) {
+        var b = e.target.closest && e.target.closest('[data-lv]'); if (!b || done) return;
+        done = true; sfx('select'); closeSheet(s); res(b.getAttribute('data-lv'));
+      });
+      autoAct(function () { var ch = E.runPolicy(save.run, C) || {}; var b = qs('[data-lv="' + (ch.pick || '') + '"]', s) || qs('[data-lv]', s); if (b) b.click(); }, 260);
+    });
+  }
 
-  // ======================================================================= 今晚來客（SPEC-v3 §9：店內底部一條，五顆頭像，打完的變黑，下一位金框；v4：錢、熟客出現、第一位客人已在店裡）
-  function enemyHp(id) { var e = C.enemies[id] || {}; return e.hp | 0; }
+  // ======================================================================= 來客（SPEC-v3 §9：店內底部一條，五顆頭像，打完的變黑，下一位金框；v4：錢、熟客出現、第一位客人已在店裡；
+  //   v5 無限試煉：這一輪 5 位（頭像下寫第 n 位，第 5 位紅框傳說藏家；打完藏家整排換成下一輪的新面孔＝滾動）、離下個中繼點還有幾位、說情剩幾次、聲望那顆）
   function moneyHTML(n) { var X = econ(); if (X && typeof X.moneyHTML === 'function') try { return X.moneyHTML(n); } catch (e) { console.error(e); } return fill((C.shopUi && C.shopUi.money) || '${n}', { n: E.moneyText(n | 0) }); }
   // 人已經在店裡、看得到：走過去（不瞬移）；不在店裡（藏著、在門外）才直接擺上去
   function settle(id, spot, spr) {
@@ -1986,7 +2122,7 @@
     }
     place(id, spot, spr);
   }
-  // 你要走去的站位旁邊站著人（今晚來客畫面、門邊等的第一位客人 f）：他走到另一個空的等候位（atdoor／wait），兩個人不疊在一起（RT-12）
+  // 你要走去的站位旁邊站著人（來客畫面、門邊等的第一位客人 f）：他走到另一個空的等候位（atdoor／wait），兩個人不疊在一起（RT-12）
   var ROOM_DX = 38, ROOM_DY = 44;
   // 第一位客人在店裡等：平常站門邊（atdoor）；你站在門邊附近（剛翻完特價箱、FEATURE）就站試聽桌前（wait），關抽屜回來也不疊在一起（RT-12）
   function waitSpot() {
@@ -2008,34 +2144,39 @@
     if (!r) return go('title');
     if (r.over && !r.pending) return go('end');
     if (E.nextStep(r) !== 'fight') return resumeRun();
-    setTop(nightLabel(r), { help: true, pause: true });
+    setTop(posLabel(r), { help: true, pause: true });
+    // 走到中繼點（SPEC §0「走到就記」）：到了這一位的來客畫面出一次吐司、記進 save.best（重新整理回來沒看過也補一次）
+    if (r.checkpoints.indexOf(r.pos) >= 0 && r.cpShown !== r.pos) { r.cpShown = r.pos; noteCheckpoint(r.pos); persist(); toastAfter(TU('checkpoint', { n: r.pos }), 'gold'); }
     var panel = UI.panel; panel.classList.add('night');
     stg('interact', 'map');
     resetPoses(); stg('sil', 'p', false);
-    stg('hide', 'r1', false);                                  // 熟客：序章與收尾藏著，今晚來客才出現（D §2）
+    stg('hide', 'r1', false);                                  // 熟客：序章與收尾藏著，來客才出現（D §2）
     settle('o', 'counter', 'owner');
     if (UI.keepP && stg('has', 'p')) UI.keepP = false; else { UI.keepP = false; settle('p', UI.lastSpot || 'browse', 'player'); }
-    // 序章收尾 E10 推門進來的那位＝今晚第一位：已經在店裡（門邊、不剪影），門外排的是再下一位
+    // 序章收尾 E10 推門進來的那位＝第 1 位：已經在店裡（門邊、不剪影），門外排的是再下一位
     var inside = !!(r.shop && r.shop.firstGuestInside) && r.idx === 0;
     var nx = r.order[r.idx], q = inside ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
     if (inside && nx) { settle('f', waitSpot(), enemySpr(C.enemies[nx])); stg('sil', 'f', false); } else { hideActor('f'); stg('door', 'close'); }
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
-    var row = r.order.map(function (id, i) {
-      var en = C.enemies[id] || {}, done = i < r.idx, cur = i === r.idx;
-      return '<button type="button" class="nc' + (done ? ' done' : '') + (cur ? ' cur' : '') + (en.elite ? ' elite' : '') + (en.boss ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc((r.times[i] || '') + ' ' + en.name) + '">' +
-        '<span class="tm">' + esc(r.times[i] || '') + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + '</span>' +
+    var row = E.roundGuests(r, C).map(function (g, i) {
+      var en = C.enemies[g.id] || {}, pl = TU('pos', { n: g.pos });
+      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name) + '">' +
+        '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + '</span>' +
         '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
-    var nen = C.enemies[nx] || {};
-    var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">' + [r.idx > 0 ? '贏了 ' + r.idx + ' 位' : '', r.retryLeft > 0 ? '老闆說情 剩 ' + r.retryLeft + ' 次' : ''].filter(Boolean).join('・') + '</span></div>' +
+    var nen = C.enemies[nx] || {}, toCp = E.toCheckpoint(r, C);
+    var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b><span class="sub">' +
+        esc([toCp != null ? TU('toCheckpoint', { n: toCp }) : '', r.retryLeft > 0 ? TU('retryLeft', { n: r.retryLeft }) : ''].filter(Boolean).join('・')) + '</span></div>' +
       '<div class="nrow" data-tut="night">' + row + '</div>' +
-      '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">下一位：' + esc(r.times[r.idx] || '') + '　' + esc(nen.name || '') + ' ▸</button></div>' +
-      '<div class="lb-bagline"><span class="money" data-tut="money">' + moneyHTML(r.money) + '</span><button type="button" class="bag" data-a="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
-      '<button type="button" class="rl" data-a="relics"><span class="k">發燒配件</span>' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span>' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span>（還沒有）</span>') + '</button></div>';
+      '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">' + esc(TU('next', { n: r.pos, name: nen.name || '' })) + '</button></div>' +
+      '<div class="lb-bagline"><button type="button" class="me" data-a="me" data-tut="hp">' + hpChipHTML(r) + '</button>' +
+      '<span class="money" data-tut="money">' + moneyHTML(r.money) + '</span><button type="button" class="bag" data-a="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
+      // 發燒配件：有配件只放圖示（一件才加名字，放不下就省略號）；沒有才寫「發燒配件（還沒有）」（審查 #10：聲望那顆加進來以後，窄螢幕放不下）
+      '<button type="button" class="rl" data-a="relics" aria-label="發燒配件">' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span class="rn">' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span class="k">發燒配件</span><span class="rn">（還沒有）</span>') + '</button></div>';
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     guardClicks(box);
-    // 鏡頭 night（layout 有才用；沒有 stage 退回 full）：放不下整間店時從上往下裁（門口牆 FEATURE／PICKS 的名牌在最上面、唱盤區今晚用不到），
+    // 鏡頭 night（layout 有才用；沒有 stage 退回 full）：放不下整間店時從上往下裁（門口牆 FEATURE／PICKS 的名牌在最上面、唱盤區這裡用不到），
     //   最少留到前排 JAZZ／TW 箱子（minH 290）；375×548 也看得到、點得到門口牆（整合版面 d）
     cam('night', 'map', 600, Math.max(170, Math.ceil(naturalH(box) + 6)));
     box.addEventListener('click', function (e) {
@@ -2043,10 +2184,11 @@
       if (b.hasAttribute('data-i')) { sfx('tick'); guestSheet(+b.getAttribute('data-i')); return; }
       var a = b.getAttribute('data-a');
       if (a === 'go') nextGuest();
+      else if (a === 'me') meSheet(r);
       else if (a === 'bag') bagSheet(r);
       else if (a === 'relics') relicSheet(r);
     });
-    // 再來一夜挑到一半（重新整理、關掉）：特價區還沒挑 → 先挑完才叫得了下一位客人（§2.5.2）
+    // 再挑戰一趟挑到一半（重新整理、關掉）：特價區還沒挑 → 先挑完才叫得了第 1 位客人（§2.5.2；只在第 1 位之前，裁定 4）
     if (E.canBargainPick(r)) {
       UI.going = true;
       later(function () {
@@ -2057,18 +2199,36 @@
     }
     if (!save.seen.night && !UI.auto) later(function () {
       if (UI.screen !== 'night') return;
-      // 整個名單（含「今晚來客」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
+      // 整個名單（含「第 n 輪」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
       var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
     }, 700);
     autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
-  // 點頭像：他的名字、聲望、口頭禪
+  // 聲望那顆（來客的錢那條最左）：「聲望 10/14」，數字粗體、「聲望」兩字小一號
+  function hpChipHTML(r) { return esc(TU('hp', { n: r.hp, max: r.maxHp })).replace(/^([^\d]*?)\s*(\d+\/\d+)/, function (m, k, n) { return (k ? '<span class="k">' + k + '</span>' : '') + '<b>' + n + '</b>'; }); }
+  // 點聲望那顆：等級、經驗、聲望、品味、底氣、聲望上限（品味／底氣：店主暫定的名字；旁邊一句說它在做什麼，審查 #11）
+  function meSheet(r) {
+    var need = r.level + ((C.trial && C.trial.levelNeed) || 3);
+    var row = function (t, sub) { return '<li><b>' + esc(t) + '</b>' + (sub ? '<span class="sub">' + esc(sub) + '</span>' : '') + '</li>'; };
+    var html = '<div class="hd"><h3>' + esc(TU('level', { n: r.level })) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<ul class="lb-me">' + row(TU('hp', { n: r.hp, max: r.maxHp })) + row(TU('xp', { n: r.xp, need: need })) +
+      row(TU('atk', { n: r.atk }), TU('atkHelp', { n: r.atk | 0 })) + row(TU('def', { n: r.def }), TU('defHelp', { n: r.def | 0 })) + row(TU('maxHp', { n: r.maxHp })) + '</ul>';
+    floatSheet(html, 'me');
+  }
+  // 點頭像：他是第幾位、名字、聲望（品味／底氣大於 0 才寫）、帶不帶王牌、口頭禪
   function guestSheet(i) {
-    var r = save.run, id = r.order[i], en = C.enemies[id]; if (!en) return;
-    var cur = i === r.idx, done = i < r.idx, ln = (C.lines[id] && C.lines[id].line) || en.line || '';
-    var html = '<div class="hd"><h3>' + esc(r.times[i] || '') + '・' + (done ? '打過了' : cur ? '下一位' : '還沒輪到') + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+    var r = save.run, g = E.roundGuests(r, C)[i], id = g && g.id, en = C.enemies[id]; if (!en) return;
+    var cur = g.cur, done = g.done, ln = (C.lines[id] && C.lines[id].line) || en.line || '';
+    // 菁英／傳說藏家的籤：名字本身就是這個詞（傳說藏家）就不再加（審查 #15）
+    var tag = function (t) { return t && t !== en.name ? '<span class="gtag">' + esc(t) + '</span>' : ''; };
+    var tags = tag(g.cls === 'elite' ? TU('elite') : g.cls === 'boss' ? TU('boss') : '') + (g.hasAce ? tag(TU('hasAce')) : '');
+    // 聲望一行；品味／底氣各一行、後面一句說它在做什麼（客人的品味：扣到你就多扣；底氣跟你的一樣；審查 #11）
+    var bl = '<div class="bl">' + esc('聲望 ' + g.hp) + '</div>' +
+      (g.atk ? '<div class="bl st"><b>' + esc(TU('atk', { n: g.atk })) + '</b>' + esc(TU('eAtkHelp', { n: g.atk })) + '</div>' : '') +
+      (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '');
+    var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
-      (en.elite ? '<span class="gtag">菁英</span>' : '') + (en.boss ? '<span class="gtag">打烊前</span>' : '') + '<div class="bl">聲望 ' + enemyHp(id) + '</div></div></div>' +
+      tags + bl + '</div></div>' +
       (ln ? '<div class="lb-habit"><span class="tx">' + esc([].concat(ln)[0]) + '</span></div>' : '') +
       '<div class="two">' + (cur ? '<button type="button" class="lb-btn pri big key" data-a="go">就他了</button>' : '') + '<button type="button" class="lb-btn big key" data-a="close">' + (cur ? '再看看' : '關閉') + '</button></div>';
     var s = floatSheet(html, 'guest');
@@ -2141,10 +2301,10 @@
   function econCall(m, arg) {
     var X = econ();
     if (!X || typeof X[m] !== 'function') { console.warn('[ui] DipLabEcon.' + m + ' 不在'); return Promise.resolve(); }
-    var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}     // 抽屜開了：今晚來客的老闆小提示收掉，不蓋抽屜的標題、錢、✕（RT-11）
-    UI.econBusy = true; fitFloor();                    // 今晚來客接的木地板先收掉：抽屜的對焦照原本的舞台高（V5-play-4）
+    var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}     // 抽屜開了：來客的老闆小提示收掉，不蓋抽屜的標題、錢、✕（RT-11）
+    UI.econBusy = true; fitFloor();                    // 來客接的木地板先收掉：抽屜的對焦照原本的舞台高（V5-play-4）
     var done = function () { UI.econBusy = false; };
-    // 抽屜／櫃檯關掉才 resolve：重畫今晚來客的錢與包包；你的人物留在箱子／櫃檯前（notes-B3 請求 4：不要走回 browse）
+    // 抽屜／櫃檯關掉才 resolve：重畫來客的錢與包包；你的人物留在箱子／櫃檯前（notes-B3 請求 4：不要走回 browse）
     return Promise.resolve().then(function () { return X[m](arg); }).then(function () { done(); if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } else floorSoon(); }, function (e) { done(); floorSoon(); console.error(e); });
   }
   function onStageAction(action, hot) {
@@ -2155,13 +2315,13 @@
     if ((m = /^wall-record:(.+)$/.exec(action))) { info(m[1], { from: 'stage' }); return; }
     if ((m = /^wall-painted:(.+)$/.exec(action))) { info(paintedCard(m[1], hot && hot.label), { from: 'stage' }); return; }
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
-    // 櫃檯：今晚來客、兩位客人之間＝配件櫃（B3 的經濟介面）；其他畫面照舊老闆一句
+    // 櫃檯：來客、兩位客人之間＝配件櫃（B3 的經濟介面）；其他畫面照舊老闆一句
     if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop'); return; }
     if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
     if (action === 'cat') { var ct = line('cat'); if (ct) stageSay('o', ct, 'owner', 1600); return; }
     if ((m = /^shop:(.+)$/.exec(action))) { if (scr === 'taipei' && m[1] === 'dip') backFromTaipei(); return; }
     if (action === 'locked') { var lk = line('locked'); if (lk) toast(lk); return; }
-    // 箱子（crate:<key>，§2.5.2）：序章／對決／領獎中＝老闆一句「打完再翻。」；今晚來客與標題＝翻箱（特價區另一個面板）
+    // 箱子（crate:<key>，§2.5.2）：序章／對決／領獎中＝老闆一句「打完再翻。」；來客與標題＝翻箱（特價區另一個面板）
     if ((m = /^(?:crate|bin):(.+)$/.exec(action))) {
       if (scr === 'duel' || scr === 'scene' || scr === 'reward') { stageSay('o', line('binBusy') || '打完再翻。', 'owner', 1600); return; }
       if (scr !== 'night' && scr !== 'title') return;
@@ -2176,42 +2336,50 @@
     if (action === 'listen' || action === 'booth') { sfx('tick'); openBooth(); return; }
     if (/^poster/.test(action)) { sfx('tick'); openRules(); return; }
     if (action === 'door') {
-      if (scr === 'title') { var cb = qs('[data-a=cont]', UI.panel) || qs('[data-a=push]', UI.panel); if (cb) cb.click(); return; }   // B-title-door-abandons-run：有存檔＝繼續今晚
+      if (scr === 'title') { var cb = qs('[data-a=cont]', UI.panel) || qs('[data-a=push]', UI.panel); if (cb) cb.click(); return; }   // B-title-door-abandons-run：有存檔＝繼續試煉
       if (scr === 'night' && save.run) { sfx('tick'); guestSheet(save.run.idx); }
     }
   }
 
-  // ======================================================================= end（打烊／散場：走到幾點、贏了幾位、收了哪幾張）
-  // 一行：模板「贏了 {n} 位」→ 左「贏了」、右「3 位」
-  function sumRow(tpl, o) { var k = String(tpl).split('{')[0].trim(), full = fill(tpl, o); return '<li><span class="k">' + esc(k) + '</span><b>' + esc(full.slice(full.indexOf(k) + k.length).trim()) + '</b></li>'; }
+  // ======================================================================= end（這一趟結束：走到第幾位、最多連贏幾位、收了幾張；店主 11-12「走到第 23 位・最多連贏 12 位・收了 9 張」）
+  // 一行：模板「收了 {n} 張」→ 左「收了」、右「9 張」；「走到第 {n} 位」→ 左「走到」、右「第 23 位」（「第」跟數字放一起）
+  function sumRow(tpl, o, tag) {
+    var k = String(tpl).split('{')[0].trim(), full = fill(tpl, o), k2 = k.replace(/第$/, '');
+    return '<li><span class="k">' + esc(k2) + '</span><b>' + (tag ? '<span class="nr">' + esc(tag) + '</span>' : '') + esc(full.slice(full.indexOf(k2) + k2.length).trim()) + '</b></li>';
+  }
+  // 結算那面牆只排一排（審查 #12）：4 張以內全放；多的放最近收的 3 張＋「+N」（點了開唱片櫃）
+  function wallHTML(got) {
+    var show = got.length <= 4 ? got : got.slice(-3).reverse();
+    var more = got.length - show.length;
+    return '<div class="lb-wall">' + show.map(function (id) { return coverHTML(card(id), {}); }).join('') +
+      (more > 0 ? '<button type="button" class="lb-more" data-a="shelf" aria-label="' + esc(fill((C.summary || {}).more || '', { n: more })) + '"><b>+' + more + '</b></button>' : '') + '</div>';
+  }
   SCREENS.end = function () {
     var r = save.run;
     if (!r || !r.over) return go('title');
-    recordNight(r);
-    var S = C.summary || {};
-    var clear = r.over === 'clear', la = r.stats.lostAt;
-    setTop(nightLabel(r), { help: true, pause: true });
+    recordRun(r);
+    var S = C.summary || {}, sum = E.runSummary(r), la = r.stats.lostAt;
+    setTop(posLabel(r), { help: true, pause: true });
     var panel = UI.panel; panel.classList.add('end');
     cam('strip', 'end', 600);                               // ART-07：結算用小鏡頭，三件事不用捲
     stg('interact', 'none');
     resetPoses(); hideActor('f'); hideActor('q1'); hideActor('q2');
     place('o', 'counter', 'owner');
-    if (clear) { place('p', 'duelP', 'player'); stg('dim', 0.6); stg('pose', 'o', 'busy'); }
-    else { place('p', 'duelP', 'player'); stg('pose', 'p', 'sit'); }
-    var reached = clear ? (r.times[r.times.length - 1] || '02:00') + ' ' + (C.night.closing || '打烊') : ((la && la.time) || (r.prologue === 'pending' ? C.night.prologueTime : '') || '');
+    place('p', 'duelP', 'player'); stg('pose', 'p', 'sit');
     var lostEn = la && C.enemies[la.enemyId];
-    var taken = r.stats.taken.filter(card);
-    var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="lb-h1">' + (clear ? '打烊了' : '今晚就到這') + '</div>' +
+    var got = runGot(r).filter(card);                    // 這一趟收進包包的那幾張
+    var cps = sum.checkpoints.slice().sort(function (x, y) { return x - y; });
+    var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="lb-h1">' + esc(S.title || '') + '</div>' +
       (lostEn ? '<p class="sub">輸給「' + esc(lostEn.name) + '」</p>' : '') + '</div>' +
       '<ul class="lb-sum">' +
-      sumRow(S.reached || '走到 {time}', { time: reached }) + sumRow(S.wins || '贏了 {n} 位', { n: r.stats.wins }) +
-      sumRow((S.taken || '收了') + ' {n} 張', { n: taken.length }) + '</ul>' +
-      (taken.length ? '<div class="lb-wall">' + taken.map(function (id) { return coverHTML(card(id), {}); }).join('') + '</div>' : '<p class="sub">' + esc(S.none || '這晚沒收唱片') + '</p>');
-    if (save.unlocks.secondNightTeaser) h += '<div class="lb-teaser"><div class="sil">' + pix(labSpr().e7, 40) + '</div><div><b>' + esc(C.secondNight.line) + '</b><div class="sub">' + esc(C.secondNight.label) + '</div></div></div>';
-    h += '<div class="lb-endmore"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>';
-    h += '</div></div><div class="foot lb-endbtns"><button type="button" class="lb-btn pri big wide key" data-a="again">' + esc(S.again || '再來一夜') + '</button></div>';
+      sumRow(S.reached, { n: sum.reached }, r.newRecord ? S.newRecord : '') + sumRow(S.streak, { n: sum.bestStreak }) + sumRow(S.taken, { n: sum.taken }) + '</ul>' +
+      (cps.length ? '<p class="sub lb-cps">' + esc(fill(S.checkpoints, { list: cps.join('、') })) + '</p>' : '') +
+      (got.length ? wallHTML(got) : '<p class="sub">' + esc(S.none || '') + '</p>');
+    // 唱片櫃／出門看看：併進底下固定那一列（「再挑戰一趟」上面），矮螢幕也不用捲（審查 #12）
+    h += '</div></div><div class="foot lb-endbtns"><div class="row"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>' +
+      '<button type="button" class="lb-btn pri big wide key" data-a="again">' + esc(S.again || '') + '</button></div>';
     var box = el('div', 'lb-screen end', h); panel.appendChild(box);
-    sfx(clear ? 'win' : 'lose');
+    sfx('lose');
     box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a]'); if (!b || UI.going) return;
       var act = b.getAttribute('data-a');
@@ -2279,7 +2447,7 @@
     pg.appendChild(bar);
     qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
     var body = el('div', 'lb-scroll');
-    body.innerHTML = '<div class="lb-pad"><div class="lb-filters">' + [['all', '全部'], ['new', '今晚新認識'], ['ace', '王牌']].map(function (f) { return '<button type="button" class="lb-btn' + (filter === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div>' +
+    body.innerHTML = '<div class="lb-pad"><div class="lb-filters">' + [['all', '全部'], ['new', TU('shelfNew')], ['ace', '王牌']].map(function (f) { return '<button type="button" class="lb-btn' + (filter === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div>' +
       (shown.length ? '<div class="lb-wall">' + shown.map(function (id) { return coverHTML(card(id), { isNew: isNewOnShelf(id) }); }).join('') + '</div>' : '<p class="sub">' + (ids.length ? '這一格是空的。' : '還沒認識任何一張。推門進去吧。') + '</p>') +
       '<p class="sub" style="margin-top:14px">點封面＝唱片資訊。客人丟過的唱片、你收的、老闆送的，都會收進這裡。</p></div>';
     pg.appendChild(body);
@@ -2319,13 +2487,19 @@
     if (UI.auto.animated && Dl && typeof Dl.autoplay === 'function') { try { Dl.autoplay(UI.auto.policy || 'novice'); return; } catch (e) { console.error(e); } }
     var pol = E.policies[UI.auto.policy] || E.policies.novice, R = E.makeRng(7), mem = {};
     var g = 0;
-    while (!d.over && g++ < 80) { var evs = E.resolveTurn(d, pol(d, R, mem), UI.force ? { debugOutcome: UI.force } : undefined); if (!evs || !evs.length) break; }
+    while (!d.over && g++ < 80) { var lo = loseOutcome(d), dbg = lo || UI.force; var evs = E.resolveTurn(d, pol(d, R, mem, C), dbg ? { debugOutcome: dbg } : undefined); if (!evs || !evs.length) break; }
     persist();
     unmountDuel();
     onDuelEnd({ duel: d });
   }
 
   // ======================================================================= 除錯鉤子（?debug=1）
+  // __lab.loseNext：這一場（無限試煉的真對決；序章、重看教學、對決實驗室不算）第一手就被扣到 0
+  function loseOutcome(d) {
+    if (!(UI.loseNext > 0) || !d || UI.tutReplay || (UI.duelLab && d === UI.duelLab.duel) || inPrologue(save.run)) return null;
+    UI.loseDuel = d;
+    return { kind: 'countered', toE: 0, toP: 99 };
+  }
   function kick() {
     if (!UI.auto) return;
     if (UI.screen === 'duel') return autoDuel();
@@ -2347,11 +2521,25 @@
       seed: function (n) { UI.seedOverride = String(n); return seedKey(); },
       // 讓之後每一手都照這個結果（e2e #32：7 手同色 → 唱片丟完）；null 取消
       force: function (o) { UI.force = o || null; return UI.force; },
-      // 跳到今晚第 idx 位（序章算完成）：清掉進行中的對決與待選
-      skipTo: function (idx) {
+      // 直接跳到第 pos 位（SPEC 無限試煉 §1 裁定 11；engine.jumpTo：序章算完成、特價箱算挑過、清掉進行中的對決與待選；聲望、等級不動）
+      //   o：{hp, maxHp, atk, def, level, xp, retryLeft, money} 直接改（e2e 測結算、品味／底氣標籤）
+      jump: function (pos, o) {
         var r = save.run; if (!r) return false;
-        leaveDuel(); r.duel = null; r.duelEnemy = null; r.pending = null; r.prologue = 'done'; r.idx = Math.max(0, Math.min(r.order.length - 1, idx | 0)); r.over = null;
+        o = o || {};
+        leaveDuel(); UI.ending = null;
+        E.jumpTo(r, C, pos);
+        ['maxHp', 'hp', 'atk', 'def', 'level', 'xp', 'retryLeft', 'money'].forEach(function (k) { if (o[k] != null) r[k] = Math.max(0, o[k] | 0); });
+        if (r.maxHp < 1) r.maxHp = 1;
+        r.hp = Math.max(1, Math.min(r.hp, r.maxHp));
         save.prologueDone = true; persist(); go('night'); return true;
+      },
+      // 舊名：跳到這一輪第 idx 位（0 起）
+      skipTo: function (idx) { var r = save.run; if (!r) return false; return W.__lab.jump((r.round - 1) * 5 + Math.max(0, Math.min(4, idx | 0)) + 1); },
+      // 下一場強制輸（n 場，預設 1；o.noRetry＝這一輪的說情也用掉，輸了直接結算）：無限試煉不會自己結束，e2e 用它測結算
+      loseNext: function (n, o) {
+        UI.loseNext = Math.max(0, n == null ? 1 : n | 0); UI.loseDuel = null;
+        if (o && o.noRetry && save.run) { save.run.retryLeft = 0; persist(); }
+        return UI.loseNext;
       },
       forceLose: function () {
         var r = save.run, d = r && r.duel; if (!d) return false;
@@ -2365,7 +2553,7 @@
       },
       info: function (id) { return info(id, { from: 'debug' }); },
       rules: openRules, openPage: openPage, go: go, replayTutorial: replayTutorial, stageAction: onStageAction,
-      // v4（§2.5.2）：設錢、今晚的貨、逐句執行器的時間軸（§5.4）、經濟介面
+      // v4（§2.5.2）：設錢、這一輪的貨、逐句執行器的時間軸（§5.4）、經濟介面
       money: function (n) { var r = save.run; if (!r) return null; r.money = Math.max(0, Math.floor(+n || 0)); persist(); return r.money; },
       shop: function () { return save.run ? save.run.shop : null; },
       timeline: function () { return UI.timeline.slice(); },
@@ -2373,7 +2561,8 @@
       get beat() { return UI.dlg ? UI.dlg.beat : null; },
       get econ() { return econ(); },
       // 測試對決（e2e-duel 的 index.html 版，C 整合；＝dev/duel-harness.html 的 build()／start()）：
-      //   duelLab.start({enemy, seed, ace, hp, ehp, relics})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張、出招難度 depth 0），打完停在大章不結算；
+      //   duelLab.start({enemy, seed, ace, hp, ehp, relics, pos, atk, def, eAtk, eDef})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張；
+      //     沒給 pos＝角色本來的聲望與牌單、出招 normal；pos＝照無限試煉第 pos 位的曲線；atk／def＝你的品味／底氣、eAtk／eDef＝蓋掉他的），打完停在大章不結算；
       //   duelLab.setNext({i,attr})：他下一手照這個出；duelLab.ended：打完的結果 {over, win, by, pHp, eHp}
       duelLab: {
         start: function (o) { return duelLabStart(o || {}); },
@@ -2388,19 +2577,23 @@
     var ace = C.aces[o.ace] ? o.ace : 'hall', eid = C.enemies[o.enemy] ? o.enemy : 'copycat';
     var r = save.run;
     if (!r || r.over || r.prologue === 'pending') {
-      r = E.newRun(C, { seedKey: 'duel-lab', nightNo: 1, ace: ace, prologue: false, relics: [] });
+      r = E.newRun(C, { seedKey: 'duel-lab', runNo: 1, ace: ace, prologue: false, relics: [] });
       var ch = E.bargainPolicy ? E.bargainPolicy(r, C) : null; if (ch) E.choose(r, C, ch);
       save.run = r; save.prologueDone = true; save.tutorialDone = true;
     }
     leaveDuel(); UI.ending = null; UI.force = null; UI.nextPlay = null; UI.auto = null;
-    var en = C.enemies[eid], eDef = E.enemyDef(C, eid, { depth: en.prologue ? undefined : 0 });
+    var en = C.enemies[eid], pos = !en.prologue && +o.pos >= 1 ? Math.floor(+o.pos) : null;
+    var eDef = E.enemyDef(C, eid, pos ? { pos: pos, seedKey: 'duel-lab', runNo: 1, playerAce: ace } : {});
     if (o.ehp != null) eDef.hp = +o.ehp;
+    if (o.eAtk != null) eDef.atk = Math.max(0, o.eAtk | 0);
+    if (o.eDef != null) eDef.def = Math.max(0, o.eDef | 0);
     var pick3 = ['c', 'o', 'h'].map(function (a) { return ((C.bargain && C.bargain.pool) || []).filter(function (id) { return C.cards[id] && E.topAttr(C.cards[id]) === a; })[0]; }).filter(Boolean);
-    var pDef = E.playerDef(C, { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: Array.isArray(o.relics) ? o.relics.slice(0, 3) : [] });   // relics：e2e-duel #1g（屬性鈕與「你」那一列的發燒配件）
+    var pDef = E.playerDef(C, { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: Array.isArray(o.relics) ? o.relics.slice(0, 3) : [], atk: o.atk | 0, def: o.def | 0 });   // relics：e2e-duel #1g（屬性鈕與「你」那一列的發燒配件）
     if (o.hp != null) pDef.hp = pDef.maxHp = +o.hp;
     var seed = (+o.seed >>> 0) || 1, opts = { seed: seed, hintTable: E.hintTableOf ? E.hintTableOf(C) : undefined };
     if (!opts.hintTable) { var ht = {}; ['c', 'o', 'h'].forEach(function (a) { ht[a] = ((C.hints || {})[a] || []).map(function (h) { return h.id; }); }); opts.hintTable = ht; }
-    if (eDef.boss) { var others = E.TIERS.filter(function (t) { return t !== ace; }); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
+    if (eDef.ace) opts.enemyAce = eDef.ace;
+    else if (eDef.boss) { var others = E.TIERS.filter(function (t) { return t !== ace; }); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
     var res = E.startDuel(pDef, eDef, opts);
     r.duel = res.duel; r.duelEnemy = eid; r.pending = null;
     UI.duelLab = { duel: res.duel, ended: null };
@@ -2435,7 +2628,7 @@
   function fitFloor() {
     var st = UI.stage; if (!st || typeof st.floorExt !== 'function') return;
     var cur = UI.floorX = floorNow();
-    // 今晚來客也接（V5-play-4：430×932 錢／包包那行下面空 193 px 白）；抽屜（econ）開著、面板蓋了 sheet 時不接——抽屜上面的空隙照 R2 是舞台黑
+    // 來客也接（V5-play-4：430×932 錢／包包那行下面空 193 px 白）；抽屜（econ）開著、面板蓋了 sheet 時不接——抽屜上面的空隙照 R2 是舞台黑
     var night = UI.screen === 'night' && !UI.econBusy && !qs(':scope > .lb-sheet', UI.panel || D.body);
     if ((UI.screen !== 'scene' && !night) || !UI.panel) { UI.floorX = 0; st.floorExt(0); return; }   // 要過、還沒畫出來的也收掉（floorExt(0) 已經是 0 就不重畫）
     var p = UI.panel, pr = p.getBoundingClientRect(); if (!pr.height) return;
@@ -2444,7 +2637,7 @@
       var c = p.children[i], cc = getComputedStyle(c);
       if (cc.position === 'absolute' || cc.position === 'fixed' || cc.display === 'none') continue;
       if (UI.floorRO && !c.__floorObs) { try { UI.floorRO.observe(c); c.__floorObs = true; } catch (_) {} }
-      need += (night ? naturalH(c) : c.getBoundingClientRect().height) + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);   // 今晚來客那塊被面板撐滿：量內容本身
+      need += (night ? naturalH(c) : c.getBoundingClientRect().height) + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);   // 來客那塊被面板撐滿：量內容本身
     }
     if (UI.sheetNeed && qs(':scope > .lb-sheet', p)) need = Math.max(need, UI.sheetNeed);   // 面板開著：至少讓出面板要的高（RH-5）
     var want = Math.max(0, Math.floor(cur + pr.height - need));

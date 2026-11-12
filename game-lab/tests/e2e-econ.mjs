@@ -22,9 +22,9 @@
 //   14 所有面板（箱子、賣回、特價兩種、櫃檯、配件賣回、錢不夠先賣）不捲出畫面、鈕 ≥44 高；主控台 0 錯誤（最後跑）
 //
 // index.html（整合後：ui.js 已經 configure 經濟介面、載入 econ.css／econ.js；沒接上就印 SKIP、不算失敗；ECON_INDEX=0 不跑）：
-//   21 今晚來客：錢那一格＝econ 的 moneyHTML、跟 run.money 一樣（千分位 $5,000）；DipLabEcon 已 configure；econ.css 有載入
+//   21 來客：錢那一格＝econ 的 moneyHTML、跟 run.money 一樣（千分位 $5,000）；DipLabEcon 已 configure；econ.css 有載入
 //   22 真點舞台上的箱子 → 你走到那一箱的 stand 才開抽屜；抽屜 ≤50%、不溢出、鈕 ≥44；那一箱沒被抽屜蓋到
-//   23 買一張 → run.money 減價格；點抽屜外面關掉 → 今晚來客重畫：錢那一格、包包 n/8 跟著變；存檔（localStorage）也是新的錢
+//   23 買一張 → run.money 減價格；點抽屜外面關掉 → 來客重畫：錢那一格、包包 n/8 跟著變；存檔（localStorage）也是新的錢
 //   24 真點櫃檯 → 走到櫃檯前、配件面板（2–3 件）；✕ 關掉
 //   25 真點特價箱（已挑過）→ 買的模式（每格 $100–300、鈕「挑一到三張」）；✕ 關掉；整段主控台 0 錯誤、本機檔案沒有 4xx
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
@@ -447,16 +447,16 @@ async function runSize(browser, w, h) {
 // ======================================================================= index.html（整合後）
 const IURL = /econ-harness/.test(URL0) ? new URL('../index.html', URL0).href : URL0.replace(/\?.*$/, '');
 const IQ = IURL + '?debug=1&seed=20261106';
-// 一份 v4 存檔（同 e2e.spec 的 seedRun4）：今晚、特價箱已挑、錢 money
+// 一份 v5 存檔（同 e2e-lib 的 seedRun）：第 1 位之前、特價箱已挑、錢 money
 async function seedNight(page, money) {
   await page.evaluate(money => {
     const E = window.DipLabEngine, C = window.DipLabContent;
-    const r = E.newRun(C, { seedKey: '20261106', nightNo: 1, ace: 'pearl', prologue: false, relics: [] });
+    const r = E.newRun(C, { seedKey: '20261106', runNo: 1, ace: 'pearl', prologue: false, relics: [] });
     r.tut = false;
     const ch = E.bargainPolicy(r, C); if (ch) E.choose(r, C, ch);
     r.money = money;
-    const s = { v: 4, seen: { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, nights: [],
-      best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false }, tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
+    const s = { v: 5, seen: { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
+      best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
   }, money);
@@ -498,7 +498,7 @@ async function runIndex(browser, w, h) {
     await seedNight(page, 5000);   // FEATURE 那格最貴 $4,000（FIXLIST 8）
     await openTitleI(page);
     await jsClick(page, '[data-a=cont]');
-    if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了今晚來客（' + (await page.evaluate(() => window.__lab.screen())) + '）');
+    if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客（' + (await page.evaluate(() => window.__lab.screen())) + '）');
     await sleep(1500);
     await T(21, async () => {
       const r = await nightLine(page), d = await page.evaluate(() => window.DipLabEcon.debug());
@@ -508,7 +508,7 @@ async function runIndex(browser, w, h) {
     let hot = null;
     await T(22, async () => {
       hot = await tapHotWhere(page, h => /^crate:/.test(h.action || '') && h.action !== 'crate:sale');
-      if (!hot) throw new Error('今晚來客的舞台上沒有點得到的箱子');
+      if (!hot) throw new Error('來客的舞台上沒有點得到的箱子');
       const key = hot.action.slice(6);
       await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer'), null, { timeout: 12000 });
       await sleep(400);

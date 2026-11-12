@@ -15,7 +15,8 @@
 //      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 25 句（原版 RPG_BEATS 19 句扣掉被換掉的 5 句（第一句 11-10 改成開頭旁白）＋TUT_EPILOGUE_BEATS 11 句），
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
-//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、pitches.json）；
+//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、pitches.json）；
+//      無限試煉沒有打烊、第二夜：C.night、C.secondNight 不准回來；畫面字不准再寫「今晚來客／打烊／再來一夜／今晚賣完」
 //      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
 //      FIXLIST 2：王牌沒有「不會被剋」（content 的字不准出現「不會被剋」）
 //      Beat 的畫面字（prompt／prompts／button／set.stamp）：在 roguelike.html 找得到＝原句、在 owner-lines-v4.json＝店主、其他＝新
@@ -189,7 +190,7 @@ const items = []; // { scene, where, who, key?, text, tag, raw? }
 const draftEdits = []; // 改過店主草稿的提示句 { id, from, to, key }（R-03／COPY-05）
 const add = it => items.push(it);
 const SCENE = { prologue: '序章（O2–O21；O1 11-10 併進開頭旁白）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
-  bossEnter: '傳說藏家進門', clear: '打烊（通關）', dead: '散場', again: '再來一夜' };
+  bossEnter: '傳說藏家進門（每輪第 5 位）', bossDown: '打倒傳說藏家（每一輪：翻開他的王牌）', dead: '散場（這一趟結束）', again: '再挑戰一趟' };
 const UI_OK = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
 const WHO_OK = ['', '老闆', '男子', '藏家', '傳說藏家', '？？？', 'player'];
 const TIER_KEYS = ['hall', 'pearl', 'heresy'];
@@ -438,17 +439,27 @@ for (const [k, v] of Object.entries(C.shopUi || {})) {
   add({ scene: '經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）', where: 'shopUi.' + k, who: '（畫面字）', key: k, text: v, tag: C.shopUiTag });
 }
 if (C.bargain && C.bargain.label) { if (!TAG_OK(C.bargainTag)) err('bargain.label', '沒有 tag（bargainTag）'); add({ scene: '經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）', where: 'bargain.label', who: '（畫面字）', text: C.bargain.label, tag: C.bargainTag }); }
-// 今晚來客、結算三件事
-if (C.night) for (const k of ['label', 'closing']) if (C.night[k]) {
-  if (!TAG_OK(C.nightTag)) err('night.' + k, '沒有 tag（nightTag）');
-  add({ scene: '今晚來客・結算', where: 'night.' + k, who: '（畫面字）', text: C.night[k], tag: C.nightTag });
+// 無限試煉（C.trial 的畫面字：頂欄、來客、說情、升級三選一、結果行補的一句）與結算
+if ('night' in C || 'secondNight' in C) err('content', '無限試煉沒有一晚與第二夜：C.night／C.secondNight 不准回來');
+const TRIAL_SCENE = { ui: '無限試煉・頂欄、來客、說情、標題（{x} 由畫面代入）', levelUp: '無限試煉・升級三選一（店主暫定的名字：品味／底氣）', notes: '無限試煉・結果行補的一句（品味／底氣多扣、少扣）' };
+for (const [grp, scene] of Object.entries(TRIAL_SCENE)) {
+  const walkT = (val, where) => {
+    if (Array.isArray(val)) return val.forEach((v, k) => walkT(v, where + '[' + k + ']'));
+    if (typeof val !== 'string' || !val) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.trialTag)) err(where, '沒有 tag（trialTag）');
+    if (len(val.replace(/\{\w+\}/g, '')) > 24) err(where, '超過 24 字（不算 {x}）：' + val);
+    add({ scene, where, who: '（畫面字）', key: where.replace(/^trial\.[a-zA-Z]+\./, ''), text: val, tag: C.trialTag });
+  };
+  for (const [k, v] of Object.entries((C.trial || {})[grp] || {})) walkT(v, 'trial.' + grp + '.' + k);
 }
 for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');
-  add({ scene: '今晚來客・結算', where: 'summary.' + k, who: '（畫面字）', key: k, text: v, tag: C.summaryTag });
+  add({ scene: '無限試煉・結算與標題的紀錄', where: 'summary.' + k, who: '（畫面字）', key: k, text: v, tag: C.summaryTag });
 }
+// 一晚版的字不准回到畫面字（店主 11-12：沒有時間、沒有打烊）；序章「今晚那張」（猜歌那張盤）照用
+const NIGHT_WORDS = [/今晚來客/, /打烊/, /再來一夜/, /今晚賣完/, /今晚就到這/, /今晚到這/, /第二夜/];
+for (const it of items) if (!/^(pitch#|shops\/)/.test(it.where)) for (const re of NIGHT_WORDS) if (re.test(String(it.text))) err(it.where, '無限試煉沒有一晚：不准再寫「' + re.source + '」→ ' + it.text);
 for (const x of shopLabels) if (!/\.note$/.test(x.where)) add({ scene: '店內名牌（' + x.file + '）', where: x.file + x.where, who: '（畫面字）', text: x.s, tag: '新' });   // *.note 是給開發看的註解、不上畫面（COPY-18b；禁用字照掃）
-if (C.secondNight) add({ scene: '第二夜預告', where: 'secondNight', who: '（畫面字）', text: C.secondNight.name + '（' + C.secondNight.title + '）／' + C.secondNight.label, tag: C.secondNight.tag });
 // 推薦語分組照這張卡真的出現在哪裡（COPY-18c：pitches.json 的 scene 是 v3 的分組，FEATURE 的卡被列在「老闆四張」）
 function pitchScene(id, p) {
   const TZ = { hall: '殿堂', pearl: '流亡', heresy: '異端' };

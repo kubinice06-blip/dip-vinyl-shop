@@ -8,7 +8,7 @@
 //          LAB_SIZES（預設四個驗收尺寸 390x664,375x548,430x932,360x640，SPEC-v4 §0.1）。
 // 跟 e2e.spec.mjs 的差別（只有加、沒有改行為）：newPage 收 opts.dpr（給店主的截圖用 2）；openTitle／Q 的網址從 LAB_URL／LAB_BASE 來；
 //   Q(extra) 第二個參數可以換種子；匯出 results／record／sleep／SEED／URL0／SIZES。
-// v4（C 整合）：seedRun／seededContinue／prologueToDuel／walkTutorial／resolveHands／waitStep 換成 B2 在 e2e.spec 寫的 v4 版（存檔 v4、非序章的 run 先挑好特價箱、
+// v4（C 整合）：seedRun／seededContinue／prologueToDuel／walkTutorial／resolveHands／waitStep 換成 B2 在 e2e.spec 寫的 v4 版（存檔 v5（無限試煉）、非序章的 run 先挑好特價箱、
 //   特價區照真的經濟介面作答、教學六手 18 步）；另外匯出 answerBargain、advanceUntil、longPress、infoOpen、closeInfo、watchSay、econCalls、tapHot。
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
@@ -172,17 +172,20 @@ export async function prologueToDuel(page, mode = 'direct', tier = null, o = {})
   }
   return false;
 }
-// 頁面裡直接做一份 v4 存檔（engine.newRun；非序章的 run 先挑好特價箱，不然今晚來客一進去就先開特價區），重新整理後從標題「繼續今晚」
+// 頁面裡直接做一份 v5 存檔（engine.newRun；非序章的 run 先挑好特價箱，不然來客一進去就先開特價區），重新整理後從標題「繼續試煉」
+//   o.idx：第 1 輪的第幾位（0 起；pos＝idx＋1）；o.pos：直接跳到第 pos 位（engine.jumpTo：那一輪的面孔、商店補貨）；o.hp／maxHp／atk／def／level：帶著走的數字
 export async function seedRun(page, o = {}) {
   await page.evaluate(o => {
     const E = window.DipLabEngine, C = window.DipLabContent;
-    const r = E.newRun(C, { seedKey: o.seedKey || '20261106', nightNo: 1, ace: o.ace || 'pearl', prologue: !!o.prologue, relics: o.relics || [] });
+    const r = E.newRun(C, { seedKey: o.seedKey || '20261106', runNo: 1, ace: o.ace || 'pearl', prologue: !!o.prologue, relics: o.relics || [] });
     r.tut = o.tut == null ? false : o.tut;
     if (o.bargain !== false) { const ch = E.bargainPolicy(r, C); if (ch) E.choose(r, C, ch); }
-    if (o.idx != null) r.idx = o.idx;
+    if (o.pos != null) E.jumpTo(r, C, o.pos);
+    else if (o.idx != null) { r.idx = o.idx; r.pos = (r.round - 1) * 5 + o.idx + 1; }
+    for (const k of ['maxHp', 'hp', 'atk', 'def', 'level']) if (o[k] != null) r[k] = o[k];
     if (o.money != null) r.money = o.money;
-    const s = { v: 4, seen: Object.assign({ night: true }, o.seen || {}), learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, nights: [],
-      best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false }, tutorialDone: o.tutorialDone !== false, prologueDone: !o.prologue,
+    const s = { v: 5, seen: Object.assign({ night: true }, o.seen || {}), learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
+      best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: o.tutorialDone !== false, prologueDone: !o.prologue,
       lastAce: o.ace || 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));

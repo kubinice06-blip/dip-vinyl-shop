@@ -1,9 +1,11 @@
 // game-lab/duel.js — 品味對決 v4：店內舞台下方的對決盤面（Agent B1；SPEC-v4 §2.5.1、§2.2.7、§2.3.3；手牌 FIXLIST 11：H2）
 //
 // ── v4 contract（tutorial.js／ui.js／e2e 照這些名字找）────────────────────────────────────────────────────
-// data-tut  他的一塊：e-hud e-name e-hp e-hint e-rec e-sleeve e-pile（名牌只有名字：副標與誠實度都拿掉，FIXLIST 6）
+// data-tut  他的一塊：e-hud e-name e-hp e-stats e-hint e-rec e-sleeve e-pile（名牌只有名字：副標與誠實度都拿掉，FIXLIST 6）
 //           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho rounds result（浮框 .l1 .l2 .l3） lastline
-//           你的一塊：p-hud p-hp relics relic-<id> hand hand-<i> hand-ace card-<i> card-ace pop chip-<i>-<attr> chip-ace
+//           你的一塊：p-hud p-hp p-stats relics relic-<id> hand hand-<i> hand-ace card-<i> card-ace pop chip-<i>-<attr> chip-ace
+//             （e-stats／p-stats：無限試煉的品味／底氣小籤「品 n」「底 n」（content.trial.ui.atkShort／defShort；view 的 eAtk eDef／pAtk pDef，大於 0 才有）。
+//              你那一列的在發燒配件右邊，算進屬性鈕的讓位清單（nameRowItems）；結果句的品味／底氣那句（clash.notes 的 stat）出現時那顆閃一下）
 //             （v5 手風琴（店主 11-09「專輯尺寸相同、往旁邊攤開、只有點擊的專輯秀出來、其他維持疊著」）：手牌疊成水平一排（每張往右錯開、露出左邊一條，像新接龍；不轉角），
 //              每張封面一樣大、不管疊著還是打開；點一張（露出來那一條）＝在那張打開：它右邊的牌往右滑開、那張整張露出來並浮起，其他照樣疊著；
 //              正上方跳屬性鈕（pop；chip-<i>-<attr>／王牌 chip-ace 只有打開的那張有）；點屬性鈕＝照那個屬性丟出。沒有星鈕列、沒有「丟！」、沒有整排攤開）
@@ -336,7 +338,7 @@
     root.innerHTML = `
       <section class="dl-e" data-tut="e-hud">
         <div class="nmrow"><b class="nm" data-tut="e-name"></b>
-          <div class="rec" data-tut="e-rec"><div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div></div><span class="sp"></span>
+          <div class="rec" data-tut="e-rec"><div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div></div><span class="st" data-tut="e-stats"></span><span class="sp"></span>
           <span class="hpn" data-tut="e-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
       </section>
@@ -350,7 +352,7 @@
         <div class="cheat" data-tut="cheat" hidden></div>
       </section>
       <section class="dl-p" data-tut="p-hud">
-        <div class="nmrow"><b>你</b><span class="relics" data-tut="relics"></span><span class="sp"></span>
+        <div class="nmrow"><b>你</b><span class="relics" data-tut="relics"></span><span class="st" data-tut="p-stats"></span><span class="sp"></span>
           <span class="hpn" data-tut="p-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
         <div class="hand" data-tut="hand" role="group" aria-label="手牌（點一張專輯）"><div class="tiles"></div><div class="pop" data-tut="pop" role="group" aria-label="選屬性出牌" hidden></div></div>
@@ -362,7 +364,7 @@
     panel.appendChild(root);
     const $ = s => root.querySelector(s);
     const els = {
-      e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
+      e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'), est: $('.dl-e .st'), pst: $('.dl-p .st'),
       hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
       table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), cheat: $('.cheat'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
@@ -390,17 +392,16 @@
       if (w < old) { lost.style.transition = 'none'; lost.style.width = old + '%'; void lost.offsetWidth; lost.style.transition = ''; fill.style.width = w + '%'; later(() => { lost.style.transitionDuration = dur + 'ms'; lost.style.width = w + '%'; }, dur + 250); }
       else { fill.style.width = w + '%'; lost.style.width = w + '%'; }
     }
-    // 數字旁的小飄字（不吃點擊）：聲望數字左邊往左飄
+    // 數字旁的小飄字（不吃點擊）：聲望數字正下方（蓋在聲望條上、右緣對齊數字）往下飄——不再放在數字左邊，那裡是品／底小籤（審查 #17）
     function floatAt(el, text, cls) {
       if (!el || !text || S.destroyed) return;
       const a0 = (el.closest && el.closest('.hpn')) || el, r = a0.getBoundingClientRect(), rr = root.getBoundingClientRect();
       if (!r.width) return;
       const d = document.createElement('span'); d.className = 'fl ' + (cls || ''); d.textContent = text;
       els.fx.appendChild(d);
-      const fh = d.offsetHeight || 16;
-      d.style.left = Math.round(r.left - rr.left - 4) + 'px'; d.style.top = Math.round(r.top - rr.top + (r.height - fh) / 2) + 'px';
+      d.style.left = Math.round(r.right - rr.left) + 'px'; d.style.top = Math.round(r.bottom - rr.top - 2) + 'px';
       const kf = rm() ? [{ opacity: 0, transform: 'translate(-100%,0)' }, { opacity: 1, transform: 'translate(-100%,0)', offset: .2 }, { opacity: 1, transform: 'translate(-100%,0)', offset: .8 }, { opacity: 0, transform: 'translate(-100%,0)' }]
-        : [{ transform: 'translate(-100%,0)', opacity: 0 }, { transform: 'translate(calc(-100% - 6px),0)', opacity: 1, offset: .2 }, { transform: 'translate(calc(-100% - 10px),0)', opacity: 1, offset: .75 }, { transform: 'translate(calc(-100% - 14px),0)', opacity: 0 }];
+        : [{ transform: 'translate(-100%,-4px)', opacity: 0 }, { transform: 'translate(-100%,2px)', opacity: 1, offset: .2 }, { transform: 'translate(-100%,5px)', opacity: 1, offset: .75 }, { transform: 'translate(-100%,8px)', opacity: 0 }];
       d.style.transform = 'translate(-100%,0)';
       const a = A(d, kf, { duration: 1300, easing: 'ease-out', fill: 'forwards' });
       const rmv = () => d.remove(); if (a) a.finished.then(rmv, rmv); else later(rmv, 1300);
@@ -423,12 +424,27 @@
 
     // ---------------- render: 他的一塊 ----------------
     function hintText(v) { const x = hintOf(hints, v.hint); return x ? x.text : ''; }
+    // 品味／底氣小籤（無限試煉；大於 0 才有）：「品 2」「底 1」
+    const TU = (content.trial && content.trial.ui) || {};
+    //   讀屏念全名（品味 2／底氣 1；審查 #11）
+    function statsHTML(a, d) {
+      const tag = (k, n, t, full) => n > 0 ? `<span class="s${k}" data-st="${k}" role="img" aria-label="${esc(String(full || t || '').replace('{n}', n))}">${esc(String(t || '').replace('{n}', n))}</span>` : '';
+      return tag('a', a | 0, TU.atkShort, TU.atk) + tag('d', d | 0, TU.defShort, TU.def);
+    }
+    // 名字列放不下（360 寬、七個字的名字＋品／底兩籤；審查 #8）：先收「他還有 N 張」的字（條留著）→ 再收「聲望」兩字、名字可以省略號；聲望數字永遠在畫面裡
+    function fitRow(sec) {
+      const nm = sec && sec.querySelector('.nmrow'); if (!nm || !nm.clientWidth) return;
+      nm.classList.remove('tight', 'tight2');
+      if (nm.scrollWidth > nm.clientWidth + 1) { nm.classList.add('tight'); if (nm.scrollWidth > nm.clientWidth + 1) nm.classList.add('tight2'); }
+    }
     function renderE(v, opt) {
       opt = opt || {};
       els.enm.textContent = enemy.name || v.eName || '';
+      els.est.innerHTML = statsHTML(v.eAtk, v.eDef);
       if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, false);
       renderHint(v);
       renderRec(v);
+      fitRow(els.e);
     }
     // 打完了（v.over）：引擎不再給提示 → 留著最後一手那句、變淡（不留一個空框）
     function renderHint(v) {
@@ -510,7 +526,9 @@
     function renderP(v, opt) {
       opt = opt || {};
       if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, false);
+      els.pst.innerHTML = statsHTML(v.pAtk, v.pDef);
       els.relics.innerHTML = (v.relics || []).slice(0, 3).map(r => `<button type="button" class="rl" data-tut="relic-${esc(r.id)}" data-relic="${esc(r.id)}" aria-label="發燒配件：${esc(r.name || '')}">${relicIconHTML(r)}</button>`).join('');
+      fitRow(els.p);
     }
     // ---------------- render: 手牌（v5 手風琴：疊成水平一排（錯開）；點一張＝在那張打開（右邊的往右滑開、它整張露出來並浮起），正上方跳屬性鈕） ----------------
     // 順序：手牌 0..n−1，王牌（還沒用）放最右＝疊著時最上面那張（金框）；用過的王牌不在手牌裡
@@ -619,11 +637,11 @@
       }
       return { F, dx, w, wl: K > 0 ? (xk - xl) / K : dx, x0, y0, pos };
     }
-    // 「你」那一列裡會被屬性鈕蓋到的東西（手牌區座標）：「你」、每個發燒配件、聲望數字；w＝藏起來的代價（聲望數字最不想藏）
+    // 「你」那一列裡會被屬性鈕蓋到的東西（手牌區座標）：「你」、每個發燒配件、品味／底氣小籤、聲望數字；w＝藏起來的代價（聲望數字最不想藏）
     function nameRowItems() {
       const nm = els.p.querySelector('.nmrow'); if (!nm) return [];
       const hr = els.hand.getBoundingClientRect();
-      const list = [[nm.querySelector(':scope > b'), 1], ...[...els.relics.children].map(e => [e, 1]), [nm.querySelector('.hpn'), 3]];
+      const list = [[nm.querySelector(':scope > b'), 1], ...[...els.relics.children].map(e => [e, 1]), ...[...els.pst.children].map(e => [e, 1]), [nm.querySelector('.hpn'), 3]];
       return list.filter(x => x[0]).map(([el, w]) => { const r = el.getBoundingClientRect(); return { el, w, l: r.left - hr.left, r: r.right - hr.left, t: r.top - hr.top, b: r.bottom - hr.top }; }).filter(x => x.r > x.l);
     }
     function unhideNameRow() { els.p.querySelectorAll('.nmrow .under').forEach(e => e.classList.remove('under')); }
@@ -695,6 +713,7 @@
       }
       sizeBoard();
       if (root.scrollHeight > root.clientHeight + 1) { root.classList.add('tighter'); sizeBoard(); }
+      fitRow(els.e); fitRow(els.p);
     }
     // 牌桌（兩張封面＋下面那行字＋中間字帶）與手牌區：
     //   手牌區至少 handMin（疊著那一排放得下；v4 的數字照留，牌桌的大小不變）；其餘給牌桌，兩張封面照剩下的高與寬放大（空出來的高度給牌桌）；
@@ -974,12 +993,15 @@
       const c = els.call;
       c.querySelector('.l1').className = 'l1' + (ct.bluff ? ' bl' : '');
       c.querySelector('.l1').innerHTML = segHTML(ct.l1);
-      c.querySelector('.l2').className = 'l2 ' + ct.cls;
-      c.querySelector('.l2').innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : ''}`;
+      const l2 = c.querySelector('.l2');
+      l2.className = 'l2 ' + ct.cls;
+      l2.innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${ct.notes.map((x, k) => `<span class="ns">${esc(x)}${k < ct.notes.length - 1 ? '・' : ''}</span>`).join('')}</span>` : ''}`;
       c.querySelector('.l3').innerHTML = segHTML(ct.l3);
       c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
+      // 補充句（配件、品味、底氣）跟數字同一行放不下：自己另起一行、可以折行（一句不拆開；審查 #9）
+      if (l2.scrollWidth > l2.clientWidth + 1) l2.classList.add('wrap');
       placeCallout();
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
       else A(c, [{ transform: 'scale(.3)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: .6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
@@ -1106,7 +1128,10 @@
       setHp(els.php, els.phpn, v1.pHp, v1.pMax, true);
       if (cl.toE > 0) floatAt(els.ehpn, '−' + cl.toE, 'g');
       if (cl.toP > 0) floatAt(els.phpn, '−' + cl.toP, 'r');
-      if (ct.notes.length) (cl.notes || []).forEach(n => { const b = n && n.relic && els.relics.querySelector(`[data-relic="${cssEsc(n.relic)}"]`); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
+      // 結果句裡有配件或品味／底氣那句：那顆閃一下（品味／底氣：你的在你那一列、他的（eAtk／eDef）在他那一列）
+      const noteEl = n => !n ? null : n.relic ? els.relics.querySelector(`[data-relic="${cssEsc(n.relic)}"]`)
+        : n.stat ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`) : null;
+      if (ct.notes.length) (cl.notes || []).forEach(n => { const b = noteEl(n); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
       oneTimeTips(cl);
       rec.ui = snapUI();
       if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }

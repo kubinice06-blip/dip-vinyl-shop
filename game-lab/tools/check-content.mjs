@@ -9,14 +9,17 @@
 //     牌組限制（deckMain、嚴格峰值 ≥4、唬人色 ≥4 星 ≥2 張、剋他用色 ≥4 星 ≥1 張；男子只要一張副屬性 ≥4；經典客人 ≤4 位不含藏家；
 //     藏家三色各 ≥2 張峰值、每色都有 ≥4 星）；牌組／禮物／特價箱彼此不重複且不含王牌。
 //   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（FIXLIST 8 台幣行情：稀有度價、特價箱每張、配件 3000；start／win 的範圍）、
-//   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字。
+//   無限試煉 C.trial（SPEC 無限試煉 §0：一輪 5 位的類別＝engine、你 12＝CFG.playerHp、回 3、客人 12／藏家 14、經驗與升級、三選一的字跟數字一致、中繼點、曲線旋鈕齊全）、
+//   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字（你 12、回 3、客人＝C.trial.guestHp）、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字、
+//   無限試煉的畫面字（C.trial.ui／levelUp／notes、C.summary 結算）。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十四區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
 //     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
 //   v4 劇本（§2.5.3、§2.5.4，B2；匯出 scriptProblems(C, layout)）：序章 O1–O21、收尾 E1–E11 的 id 與順序；D §2 店主改的句子逐字；
 //     步驟（do／人物／站位都在 shops/dip.json）；翻箱（pose dig）之前同一串步驟裡一定先走路；序章與收尾藏熟客；O11 停音樂、O14 才入袋；
-//     兩顆接受對決；E4 他走到門口才晃門、地上留一張盤、撿起面板；選完才走到唱盤（C.blocking.toDuel 三人終點）；v3 墊片都刪了。
+//     兩顆接受對決；E4 他走到門口才晃門、地上留一張盤、撿起面板；選完才走到唱盤（C.blocking.toDuel 三人終點）；v3 墊片都刪了；
+//     無限試煉沒有打烊：script 的鍵是 prologue／epilogueWin／bossEnter／bossDown（每輪打倒藏家）／dead／again，沒有 clear 與第二夜預告。
 //
 // 匯出 shapeProblems(C, E)：只看星數的形狀檢查（engine.test #14 也跑這一份；不檢查封面／試聽等烘焙欄位）。
 import fs from 'fs';
@@ -77,7 +80,8 @@ export function shapeProblems(C, E) {
   if (C.honesty && C.honesty.honest) ok(C.honesty.honest.q === 1, 'honesty.honest.q 要 1');
   ok(C.planners && sameSet(Object.keys(C.planners), ['easy', 'normal', 'hard']), 'planners 要剛好是 easy normal hard');
   for (const [k, p] of Object.entries(C.planners || {})) ok(p && p.w > 0 && p.nz >= 0 && typeof p.mercy === 'boolean', 'planners.' + k + ': w／nz／mercy');
-  ok(Array.isArray(C.plannerByDepth) && C.plannerByDepth.length === 5 && C.plannerByDepth.every(x => C.planners && C.planners[x]), 'plannerByDepth 要 5 個、都在 planners 裡');
+  ok(!('plannerByDepth' in C), 'plannerByDepth 拿掉了（無限試煉的出招難度照位數，C.trial.curve.planner）');
+  shapeTrial(C, E, ok);
 
   // ---- 客人與牌組限制（§4 開頭） ----
   const EIDS = ['man', 'copycat', 'already', 'needle', 'skip', 'broke', 'buyer', 'label', 'critic', 'boss'];
@@ -161,11 +165,11 @@ export function shapeProblems(C, E) {
   const EC = C.economy || {};
   ok(Number.isInteger(EC.start) && EC.start >= 0 && EC.start <= 3000 && EC.start % 100 === 0, 'economy.start 0–3000、整百（校準旋鈕）');
   const W = EC.win || {};
-  ok(['prologue', 'normal', 'elite', 'boss'].every(k => Number.isInteger(W[k]) && W[k] % 100 === 0), 'economy.win 四級、整百');
+  ok(['prologue', 'normal', 'elite', 'boss'].every(k => Number.isInteger(W[k]) && W[k] % 50 === 0), 'economy.win 四級、整 50（藏家＝菁英 ×1.5＝3750，主線裁定 3）');
   ok(W.prologue >= 0 && W.prologue <= 3000, 'economy.win.prologue 0–3000');
   ok(W.normal >= 500 && W.normal <= 4000, 'economy.win.normal 500–4000（校準旋鈕；店主例：一般 $1,500 左右）');
   ok(W.elite >= W.normal && W.elite <= 6000, 'economy.win.elite ≥ normal、≤6000（店主例：菁英 $2,500 左右）');
-  ok(W.boss === 0, 'economy.win.boss 要 0（打贏藏家＝通關）');
+  ok(W.boss >= W.elite && W.boss <= 10000, 'economy.win.boss ≥ 菁英、≤10000（無限試煉：打贏藏家不再打烊，接下一輪）');
   const PR = EC.price || {};
   ok(JSON.stringify(PR) === JSON.stringify({ common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 }),
     'economy.price 要＝店主的稀有度價（普通 800、稀有 1000、獨特 1200、史詩 3000、傳奇 4000、頂點 8000）');
@@ -205,10 +209,13 @@ export function shapeProblems(C, E) {
   ok(C.rules && Array.isArray(C.rules.lines) && C.rules.lines.length === 6, 'rules：恰好 6 行');
   if (OL && C.rules) ok(JSON.stringify(C.rules.lines) === JSON.stringify(OL.rules), 'rules.lines 要逐字＝D §5 規則卡六行（不含編號與「←」註記）');
   if (C.rules) {
-    const span = ids => { const hs = ids.map(id => C.enemies[id] && C.enemies[id].hp); const lo = Math.min(...hs), hi = Math.max(...hs); return lo === hi ? String(lo) : lo + '–' + hi; };
-    const want = { normal: span(C.normals), elite: span(C.elites), boss: span([C.boss]) };
-    ok(JSON.stringify(C.rules.hpText) === JSON.stringify(want), 'rules.hpText 要＝實際聲望 ' + JSON.stringify(want));
-    ok((C.rules.foot || []).join('').includes('你 ' + E.CFG.playerHp + ' 聲望') && /\{normal\}.*\{elite\}.*\{boss\}/.test((C.rules.foot || []).join('')), 'rules.foot：你 ' + E.CFG.playerHp + ' 聲望（＝CFG.playerHp）＋{normal}／{elite}／{boss}');
+    const GH = (C.trial && C.trial.guestHp) || {};
+    const want = { normal: String(GH.normal), elite: String(GH.elite), boss: String(GH.boss) };
+    ok(JSON.stringify(C.rules.hpText) === JSON.stringify(want), 'rules.hpText 要＝無限試煉的客人聲望 C.trial.guestHp ' + JSON.stringify(want));
+    const foot = (C.rules.foot || []).join('');
+    ok(foot.includes('你開局 ' + E.CFG.playerHp + ' 聲望（升級會加）') && foot.includes('回 ' + ((C.trial || {}).heal)) && /\{normal\}.*\{boss\}/.test(foot),
+      'rules.foot：你開局 ' + E.CFG.playerHp + ' 聲望（升級會加；＝CFG.playerHp）、打贏回 ' + ((C.trial || {}).heal) + '（＝C.trial.heal）＋{normal}／{boss}');
+    ok(/品味/.test(foot) && /底氣/.test(foot) && /最多擋一半/.test(foot), 'rules.foot：要說明品味／底氣（對決名字列的「品」「底」小籤；審查 #11）');
   }
 
   // ---- 教學的規則資料（§2.2.10） ----
@@ -237,6 +244,44 @@ export function shapeProblems(C, E) {
     ok(four < T.hp && four + (ex[5].toE | 0) >= T.hp, 'tutorial.expect.' + t + '：前四手 ' + four + ' < ' + T.hp + ' ≤ 加上第六手');
   }
   return bad;
+}
+
+// ================================================================================================
+// 無限試煉 C.trial 的形狀（SPEC 無限試煉 §0；數字是旋鈕，這裡只查型別、範圍、跟 engine 的契約；曲線的值由 engine.test #16 對）
+// ================================================================================================
+const TRIAL_CURVE = {
+  planner: ['easyTo', 'normalTo'], q: ['easy', 'normal', 'feintBase', 'feintStep', 'feintFrom', 'feintMax'],
+  atk: ['lateFrom', 'rate', 'cap', 'slopeFrom', 'slopeEvery', 'boss', 'add'], def: ['lateFrom', 'rate', 'cap', 'boss', 'add'],
+  deck: ['floorBase', 'floorRate', 'floorMax', 'minPool', 'buffFrom', 'buffEvery', 'buffCap', 'aceFrom', 'aceRate', 'aceMax']
+};
+function shapeTrial(C, E, ok) {
+  const T = C.trial;
+  if (!ok(T && typeof T === 'object', 'C.trial（無限試煉）沒有')) return;
+  const int = (x, lo) => Number.isInteger(x) && x >= (lo == null ? 0 : lo);
+  ok(!('night' in C) && !('secondNight' in C), 'C.night／C.secondNight（一晚版、第二夜預告）拿掉了');
+  ok(JSON.stringify(T.classes) === JSON.stringify(['normal', 'normal', 'normal', 'elite', 'boss']) && (!E.TRIAL || JSON.stringify(T.classes) === JSON.stringify(E.TRIAL.classes)),
+    'trial.classes：一輪 5 位＝一般 3、菁英、藏家（店主定；＝engine TRIAL.classes）');
+  ok(int(T.retry, 0), 'trial.retry：每輪說情次數（整數 ≥0）');
+  ok(T.youHp === E.CFG.playerHp, 'trial.youHp 要＝engine CFG.playerHp（' + E.CFG.playerHp + '）');
+  ok(int(T.heal, 0) && T.heal <= T.youHp, 'trial.heal：打贏回幾點（整數）');
+  const GH = T.guestHp || {};
+  ok(['normal', 'elite', 'boss'].every(k => int(GH[k], 1)) && GH.boss >= GH.normal && GH.elite >= GH.normal, 'trial.guestHp：一般／菁英／藏家（整數、藏家 ≥ 一般）');
+  ok(['normal', 'elite', 'boss'].every(k => int((T.xp || {})[k], 0)), 'trial.xp：贏一般／菁英／藏家的經驗');
+  ok(int(T.levelNeed, 1) && int(T.levelHp, 0), 'trial.levelNeed（升下一級＝目前等級＋它）、levelHp（每級上限 +幾）');
+  const PK = T.picks || {};
+  ok(['atk', 'def', 'hp'].every(k => int(PK[k], 1)), 'trial.picks：品味／底氣／聲望上限 各加幾');
+  const LU = T.levelUp || {};
+  ok(['title', 'sub', 'atk', 'def', 'hp', 'atkSub', 'defSub', 'hpSub'].every(k => typeof LU[k] === 'string' && LU[k]), 'trial.levelUp 的字（標題、小字、三個選項＋說明）');
+  ok(LU.atk === '品味 +' + PK.atk && LU.def === '底氣 +' + PK.def && LU.hp === '聲望上限 +' + PK.hp, 'trial.levelUp 三個選項的數字要＝trial.picks（' + [LU.atk, LU.def, LU.hp].join('／') + '）');
+  ok(String(LU.sub || '').includes('+' + T.levelHp), 'trial.levelUp.sub 的數字要＝trial.levelHp');
+  ok(Array.isArray(T.checkpoints) && T.checkpoints.length && T.checkpoints.every((x, k) => int(x, 1) && (!k || x > T.checkpoints[k - 1])) && int(T.checkpointEvery, 1), 'trial.checkpoints 遞增、checkpointEvery ≥1');
+  const CV = T.curve || {};
+  for (const [g, ks] of Object.entries(TRIAL_CURVE)) ok(CV[g] && ks.every(k => typeof CV[g][k] === 'number' && isFinite(CV[g][k])), 'trial.curve.' + g + ' 要有 ' + ks.join(' '));
+  ok(typeof CV.mercyFeint === 'number' && CV.mercyFeint >= 0 && CV.mercyFeint <= 1, 'trial.curve.mercyFeint 0–1');
+  if (CV.planner) ok(CV.planner.easyTo <= CV.planner.normalTo, 'trial.curve.planner：easyTo ≤ normalTo');
+  if (CV.q) ok(CV.q.easy > 0 && CV.q.easy <= 1 && CV.q.normal > 0 && CV.q.normal <= 1 && CV.q.feintMax >= 0 && CV.q.feintMax < 1, 'trial.curve.q：機率在 0–1');
+  if (CV.deck) ok(CV.deck.buffCap <= 5 && CV.deck.aceMax <= 1 && CV.deck.floorMax <= 15, 'trial.curve.deck：加星上限 ≤5（一般卡最高 5 星）、王牌機率 ≤1');
+  ok(Array.isArray(T.tiers), 'trial.tiers（之後的難度階梯）要是陣列');
 }
 
 // ================================================================================================
@@ -323,8 +368,24 @@ export function contentProblems(C, E) {
     'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',
     'bag', 'binEmpty', 'owned', 'bagFullN', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria'];
   ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8）');
-  ok(C.night && C.night.times.length === 5 && C.night.normals === 3 && C.night.retry === 1 && C.night.label, 'night：5 個時間、一般 3 位、說情 1 次');
-  ok(C.summary && C.summary.reached && C.summary.wins && C.summary.taken && C.summary.again, 'summary 結算三件事＋再來一夜');
+  // 無限試煉的畫面字（第二棒 ui.js 用）：{x} 的佔位要在
+  const TU = (C.trial || {}).ui || {};
+  const NEED_UI = { prologue: [], pos: ['{n}'], round: ['{r}'], elite: [], boss: [], toCheckpoint: ['{n}'], checkpoint: ['{n}'], retryLeft: ['{n}'], next: ['{n}', '{name}'],
+    guestDone: [], guestCur: [], guestLater: [], hasAce: [], hp: ['{n}', '{max}'], heal: ['{n}'], level: ['{n}'], xp: ['{n}', '{need}'], atk: ['{n}'], def: ['{n}'], maxHp: ['{n}'],
+    atkShort: ['{n}'], defShort: ['{n}'], cont: [], abandon: [], abandonWarn: ['{where}'], lastSummary: [], shelfNew: [],
+    game: [], atkHelp: ['{n}'], defHelp: ['{n}', '最多擋一半'], eAtkHelp: ['{n}'] };
+  for (const [k, ph] of Object.entries(NEED_UI)) ok(typeof TU[k] === 'string' && TU[k] && ph.every(x => TU[k].includes(x)), 'trial.ui.' + k + ' 要是字串' + (ph.length ? '、含 ' + ph.join(' ') : ''));
+  ok(Array.isArray(TU.retryMenu) && TU.retryMenu.length === 2 && TU.retryMenu.every(x => typeof x === 'string' && x), 'trial.ui.retryMenu：說情兩顆（再一場／到這裡就好）');
+  ok(TU.pos === '第 {n} 位', 'trial.ui.pos＝「第 {n} 位」（店主：頂欄只寫第 n 位）');
+  const NT = (C.trial || {}).notes || {};
+  ok(['atk', 'def', 'eAtk', 'eDef'].every(k => typeof NT[k] === 'string' && NT[k].includes('{n}')), 'trial.notes：atk／def／eAtk／eDef 結果行那句（含 {n}）');
+  const SM = C.summary || {};
+  const NEED_SM = { title: [], reached: ['{n}'], streak: ['{n}'], taken: ['{n}'], wins: ['{n}'], none: [], best: ['{n}'], newRecord: [], checkpoints: ['{list}'], again: [], more: ['{n}'] };
+  const LU = (C.trial || {}).levelUp || {};
+  ok(['atkSub', 'defSub', 'hpSub'].every(k => typeof LU[k] === 'string' && LU[k].includes('{n}')) && /剋中/.test(LU.atkSub) && /最多擋一半/.test(LU.defSub),
+    'trial.levelUp：atkSub／defSub／hpSub 含 {n}，說清楚加的是什麼（剋中時多扣他、被扣時少扣、最多擋一半；審查 #11）');
+  for (const [k, ph] of Object.entries(NEED_SM)) ok(typeof SM[k] === 'string' && SM[k] && ph.every(x => SM[k].includes(x)), 'summary.' + k + ' 要是字串' + (ph.length ? '、含 ' + ph.join(' ') : ''));
+  ok(SM.reached === '走到第 {n} 位' && SM.streak === '最多連贏 {n} 位' && SM.taken === '收了 {n} 張' && SM.best === '最遠：第 {n} 位', 'summary：店主的「走到第 23 位・最多連贏 12 位・收了 9 張」「最遠：第 23 位」');
   let L = null; try { L = JSON.parse(fs.readFileSync(path.join(LAB, 'shops', 'dip.json'), 'utf8')); } catch (_) { L = null; }
   for (const m of scriptProblems(C, L)) bad.push(m);
   for (const m of tutorialProblems(C)) bad.push(m);
@@ -420,7 +481,7 @@ export function scriptProblems(C, L) {
   const flat = list => { const out = []; const go = l => (l || []).forEach(x => { if (!x) return; if (x.do === 'par' || x.do === 'seq') go(x.steps); else out.push(x); }); go(list); return out; };
   ok(!('retorts' in C) && !('junk' in C) && !('junkLabel' in C) && !('habits' in C) && !('habitLabels' in C), 'v3 外殼墊片（retorts／junk／junkLabel／habits／habitLabels）要刪掉');
   ok(Object.values(C.bins || {}).every(b => !('ids' in b)), 'C.bins[*].ids（v3 墊片）要刪掉');
-  ok(sameSet(Object.keys(S), ['prologue', 'epilogueWin', 'bossEnter', 'clear', 'dead', 'again']), 'C.script 要剛好是 prologue／epilogueWin／bossEnter／clear／dead／again（quietPrologue、afterPrologue 刪掉）');
+  ok(sameSet(Object.keys(S), ['prologue', 'epilogueWin', 'bossEnter', 'bossDown', 'dead', 'again']), 'C.script 要剛好是 prologue／epilogueWin／bossEnter／bossDown／dead／again（無限試煉沒有打烊：clear 換成每輪打倒藏家的 bossDown；quietPrologue、afterPrologue 刪掉）');
   for (const [key, beats] of Object.entries(S)) {
     if (!ok(Array.isArray(beats) && beats.length, 'script.' + key + '：不是陣列')) continue;
     beats.forEach((b, k) => {
@@ -482,7 +543,9 @@ export function scriptProblems(C, L) {
   steps((C.blocking || {}).toDuel, 'blocking.toDuel'); steps((C.blocking || {}).toSale, 'blocking.toSale');
   ok((C.blocking || {}).speed > 0, 'C.blocking.speed');
   ok((S.bossEnter || []).some(b => b.text === '「讓我看看你的品味有幾兩重。」'), 'bossEnter：藏家進門用原版 BOSS_LINES[0]');
-  ok(!(S.clear || []).some(b => /有空再來這邊走走/.test(b.text)), 'clear：「年輕人，有空再來…」回到序章收尾 E8，通關不再說');
+  ok(!(S.bossDown || []).some(b => /有空再來這邊走走/.test(b.text)), 'bossDown：「年輕人，有空再來…」回到序章收尾 E8，打倒藏家不再說');
+  ok((S.bossDown || []).length && (S.bossDown || []).every(b => !b.if) && (S.bossDown || []).some(b => b.ui === 'stake'), 'bossDown：每輪都播（沒有 if）、有翻開王牌的面板（ui stake）');
+  ok(!Object.values(S).flat().some(b => b && (b.if === 'firstClear' || /第二夜|打烊|今晚就到這/.test(typeof b.text === 'string' ? b.text : JSON.stringify(b.text || '')) || /第二夜/.test(JSON.stringify(b.set || {})))), 'script：沒有打烊、第二夜預告、「今晚就到這」（無限試煉）');
   return bad;
 }
 
