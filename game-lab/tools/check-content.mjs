@@ -213,8 +213,9 @@ export function shapeProblems(C, E) {
     const want = { normal: String(GH.normal), elite: String(GH.elite), boss: String(GH.boss) };
     ok(JSON.stringify(C.rules.hpText) === JSON.stringify(want), 'rules.hpText 要＝無限試煉的客人聲望 C.trial.guestHp ' + JSON.stringify(want));
     const foot = (C.rules.foot || []).join('');
-    ok(foot.includes('你 ' + E.CFG.playerHp + ' 聲望') && foot.includes('回 ' + ((C.trial || {}).heal)) && /\{normal\}.*\{boss\}/.test(foot),
-      'rules.foot：你 ' + E.CFG.playerHp + ' 聲望（＝CFG.playerHp）、打贏回 ' + ((C.trial || {}).heal) + '（＝C.trial.heal）＋{normal}／{boss}');
+    ok(foot.includes('你開局 ' + E.CFG.playerHp + ' 聲望（升級會加）') && foot.includes('回 ' + ((C.trial || {}).heal)) && /\{normal\}.*\{boss\}/.test(foot),
+      'rules.foot：你開局 ' + E.CFG.playerHp + ' 聲望（升級會加；＝CFG.playerHp）、打贏回 ' + ((C.trial || {}).heal) + '（＝C.trial.heal）＋{normal}／{boss}');
+    ok(/品味/.test(foot) && /底氣/.test(foot) && /最多擋一半/.test(foot), 'rules.foot：要說明品味／底氣（對決名字列的「品」「底」小籤；審查 #11）');
   }
 
   // ---- 教學的規則資料（§2.2.10） ----
@@ -371,14 +372,18 @@ export function contentProblems(C, E) {
   const TU = (C.trial || {}).ui || {};
   const NEED_UI = { prologue: [], pos: ['{n}'], round: ['{r}'], elite: [], boss: [], toCheckpoint: ['{n}'], checkpoint: ['{n}'], retryLeft: ['{n}'], next: ['{n}', '{name}'],
     guestDone: [], guestCur: [], guestLater: [], hasAce: [], hp: ['{n}', '{max}'], heal: ['{n}'], level: ['{n}'], xp: ['{n}', '{need}'], atk: ['{n}'], def: ['{n}'], maxHp: ['{n}'],
-    atkShort: ['{n}'], defShort: ['{n}'], cont: [], abandon: [], abandonWarn: ['{where}'], lastSummary: [], shelfNew: [] };
+    atkShort: ['{n}'], defShort: ['{n}'], cont: [], abandon: [], abandonWarn: ['{where}'], lastSummary: [], shelfNew: [],
+    game: [], atkHelp: ['{n}'], defHelp: ['{n}', '最多擋一半'], eAtkHelp: ['{n}'] };
   for (const [k, ph] of Object.entries(NEED_UI)) ok(typeof TU[k] === 'string' && TU[k] && ph.every(x => TU[k].includes(x)), 'trial.ui.' + k + ' 要是字串' + (ph.length ? '、含 ' + ph.join(' ') : ''));
   ok(Array.isArray(TU.retryMenu) && TU.retryMenu.length === 2 && TU.retryMenu.every(x => typeof x === 'string' && x), 'trial.ui.retryMenu：說情兩顆（再一場／到這裡就好）');
   ok(TU.pos === '第 {n} 位', 'trial.ui.pos＝「第 {n} 位」（店主：頂欄只寫第 n 位）');
   const NT = (C.trial || {}).notes || {};
   ok(['atk', 'def', 'eAtk', 'eDef'].every(k => typeof NT[k] === 'string' && NT[k].includes('{n}')), 'trial.notes：atk／def／eAtk／eDef 結果行那句（含 {n}）');
   const SM = C.summary || {};
-  const NEED_SM = { title: [], reached: ['{n}'], streak: ['{n}'], taken: ['{n}'], wins: ['{n}'], none: [], best: ['{n}'], newRecord: [], checkpoints: ['{list}'], again: [] };
+  const NEED_SM = { title: [], reached: ['{n}'], streak: ['{n}'], taken: ['{n}'], wins: ['{n}'], none: [], best: ['{n}'], newRecord: [], checkpoints: ['{list}'], again: [], more: ['{n}'] };
+  const LU = (C.trial || {}).levelUp || {};
+  ok(['atkSub', 'defSub', 'hpSub'].every(k => typeof LU[k] === 'string' && LU[k].includes('{n}')) && /剋中/.test(LU.atkSub) && /最多擋一半/.test(LU.defSub),
+    'trial.levelUp：atkSub／defSub／hpSub 含 {n}，說清楚加的是什麼（剋中時多扣他、被扣時少扣、最多擋一半；審查 #11）');
   for (const [k, ph] of Object.entries(NEED_SM)) ok(typeof SM[k] === 'string' && SM[k] && ph.every(x => SM[k].includes(x)), 'summary.' + k + ' 要是字串' + (ph.length ? '、含 ' + ph.join(' ') : ''));
   ok(SM.reached === '走到第 {n} 位' && SM.streak === '最多連贏 {n} 位' && SM.taken === '收了 {n} 張' && SM.best === '最遠：第 {n} 位', 'summary：店主的「走到第 23 位・最多連贏 12 位・收了 9 張」「最遠：第 23 位」');
   let L = null; try { L = JSON.parse(fs.readFileSync(path.join(LAB, 'shops', 'dip.json'), 'utf8')); } catch (_) { L = null; }

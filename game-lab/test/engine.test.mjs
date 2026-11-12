@@ -270,6 +270,12 @@ section('3 決定性：同種子同動作 → 同事件；每手 RNG 固定 8 �
   const r1 = EN.newRun(C, { seedKey: '2026-11-07', runNo: 1, ace: 'hall' }), r2 = EN.newRun(C, { seedKey: '2026-11-07', runNo: 1, ace: 'pearl' });
   eq(r1.order, r2.order, 'same date → same guests whatever the ace');
   for (let rd = 2; rd <= 12; rd++) eq(EN.jumpTo(r1, C, 5 * rd - 4).order, EN.jumpTo(r2, C, 5 * rd - 4).order, 'round ' + rd + ': same guests whatever the ace');
+  // jumpTo（roundOrder 沒給 prev）＝一輪一輪 advance 算出來的；跳到很深也不爆堆疊（審查 #6）
+  { const w = EN.newRun(C, { seedKey: 'deep', runNo: 4, ace: 'hall' }), j = EN.newRun(C, { seedKey: 'deep', runNo: 4, ace: 'hall' }); let same = 0;
+    for (let rd = 2; rd <= 60; rd++) { const prev = w.order; EN.jumpTo(w, C, 5 * rd - 4); w.order = EN.jumpTo(EN.newRun(C, { seedKey: 'deep', runNo: 4, ace: 'hall' }), C, 5 * rd - 4).order; if (JSON.stringify(EN.jumpTo(j, C, 5 * rd - 4).order) === JSON.stringify(w.order) && !w.order.slice(0, 3).some(x => prev.slice(0, 3).includes(x))) same++; }
+    eq(same, 59, 'jumpTo order = walked order, new faces every round (rounds 2–60)');
+    let deep = null; try { deep = EN.jumpTo(EN.newRun(C, { seedKey: 'deep', runNo: 4, ace: 'hall' }), C, 100000); } catch (e) { deep = e; }
+    ok(deep && !(deep instanceof Error) && deep.pos === 100000 && deep.order.length === 5, 'jumpTo(100000) does not blow the stack', deep instanceof Error ? deep.message : null); }
   // 客人（牌、加星、王牌）＝seedKey#runNo#pos 的雜湊：同樣三個 → 一模一樣；跟對決種子、run.rng 走到哪無關
   let diffPos = 0, diffRun = 0;
   for (let s = 1; s <= 200; s++) {
@@ -664,6 +670,13 @@ section('9 整趟（thoughtful／high／random × shopPolicy none／smart，打�
         if (!prologue && lastWinPos && retryAt !== run.pos) ok(run.pos === lastWinPos + 1, 'won → next position', { pos: run.pos, lastWinPos });
         ok(run.hp >= 1 && run.hp <= run.maxHp, '1 ≤ 聲望 ≤ 上限 before a fight', { hp: run.hp, max: run.maxHp });
         const b = { pos: run.pos, hp: run.hp, maxHp: run.maxHp, streak: run.streak, retryLeft: run.retryLeft, cls: EN.classAt(run.pos), level: run.level };
+        // 中繼點：走到就記（SPEC §0；第 1 位不算）；離下個中繼點＝只數在前面的
+        if (!prologue) {
+          const cpHere = b.pos > 1 && EN.nextCheckpoint(b.pos, C) === b.pos;
+          ok(run.checkpoints.includes(b.pos) === cpHere && run.checkpoints.every(x => x <= b.pos && EN.nextCheckpoint(x, C) === x), 'checkpoint recorded on arriving (走到就記)', { pos: b.pos, cps: run.checkpoints });
+          const tc = EN.toCheckpoint(run, C);
+          ok(tc >= 1 && tc === EN.nextCheckpoint(b.pos + 1, C) - b.pos && (!cpHere || tc > 1), 'toCheckpoint counts to the next one strictly ahead', { pos: b.pos, tc });
+        }
         const f = EN.startFight(run, C, {});
         ok(run.hpIn === b.hp && f.duel.p.hp === b.hp && f.duel.p.max === b.maxHp && f.duel.p.atk === run.atk && f.duel.p.def === run.def, 'duel starts with the run 聲望／上限／品味／底氣');
         if (!prologue) {
@@ -683,8 +696,7 @@ section('9 整趟（thoughtful／high／random × shopPolicy none／smart，打�
           ok(res.levelUps === ups && run.maxHp === b.maxHp + ups * T.levelHp && run.hp === healed + ups * T.levelHp, '回 3（不超過上限）＋每升一級 上限／聲望 +1', { hp: run.hp, healed, ups });
           ok(res.heal === healed - Math.max(1, pEnd), 'finishFight.heal');
           ok(run.streak === b.streak + 1 && run.bestStreak >= run.streak, 'streak +1');
-          const cp = EN.nextCheckpoint(b.pos, C) === b.pos;
-          ok(cp ? (res.checkpoint === b.pos && run.checkpoints.includes(b.pos)) : res.checkpoint == null, 'checkpoint recorded on beating it', { pos: b.pos, cp: res.checkpoint });
+          ok(!('checkpoint' in res) && !run.checkpoints.includes(b.pos + 1), 'checkpoint not recorded on beating (only on arriving)', { pos: b.pos, cps: run.checkpoints });
           if (b.cls === 'boss') { bossWins++; ok(res.aceWon === C.aces[run.bossAce] && !run.over, 'boss beaten → his ace (shelf), the run goes on'); }
           else ok(res.aceWon == null, 'aceWon only for the boss');
         } else {
@@ -1110,12 +1122,17 @@ section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、�
     }
     ok(C.economy.win.boss === C.economy.win.elite * 1.5, 'economy.win.boss = elite × 1.5 (裁定 3)');
     eq(run.picks.slice(0, 6), ['atk', 'def', 'atk', 'hp', 'def', 'atk'], 'runPolicy picks follow MIX');
-    eq(run.checkpoints, [10, 20, 30], 'checkpoints 10／20／30 after beating them');
+    eq(run.checkpoints, [10, 20, 30], 'checkpoints 10／20／30 recorded on arriving there (走到就記)');
     eq([run.streak, run.bestStreak, EN.runSummary(run).wins, EN.runSummary(run).reached], [40, 40, 40, 41], 'streak 40, reached 41');
-    eq(EN.toCheckpoint(run, C), 10, 'pos 41 → 第 50 位還要贏 10 位'); }
+    eq(EN.toCheckpoint(run, C), 9, 'pos 41 → 離第 50 位還有 9 位'); }
   // (f) 中繼點
   eq([1, 9, 10, 11, 30, 31, 50, 51, 75, 76, 100, 101, 150, 151, 199, 200, 201].map(d => EN.nextCheckpoint(d, C)), [10, 10, 10, 20, 30, 50, 50, 75, 75, 100, 100, 150, 150, 200, 200, 200, 250], 'nextCheckpoint: 10 20 30 50 75 100, then every 50');
-  eq([1, 7, 10, 11].map(pos => EN.toCheckpoint({ pos }, C)), [10, 4, 1, 10], 'toCheckpoint counts the current guest');
+  eq([1, 7, 9, 10, 11, 49, 50, 100, 101].map(pos => EN.toCheckpoint({ pos }, C)), [9, 3, 1, 10, 9, 1, 25, 50, 49], 'toCheckpoint: from here to the next checkpoint strictly ahead (at 10 → 20)');
+  { const r = EN.newRun(C, { seedKey: 'cpj', runNo: 2, ace: 'hall' }); EN.choose(r, C, EN.bargainPolicy(r, C)); EN.jumpTo(r, C, 10);
+    eq(r.checkpoints, [], 'jumpTo does not record a checkpoint (not walked)');
+    EN.jumpTo(r, C, 9); const fr = forceWin(r);
+    ok(fr.win && r.checkpoints.length === 0 && r.pos === 9, 'beating 9: not yet'); settleAll(r);
+    eq([r.pos, r.checkpoints], [10, [10]], 'arriving at 10 records it'); }
   // (g) 來客那排（這一輪 5 位）
   { const run = EN.newRun(C, { seedKey: 'rg', runNo: 2, ace: 'pearl' }); EN.choose(run, C, EN.bargainPolicy(run, C)); EN.jumpTo(run, C, 12);
     const rg = EN.roundGuests(run, C);

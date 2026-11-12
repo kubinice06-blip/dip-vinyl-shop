@@ -249,6 +249,8 @@ small{font-size:inherit;}
 .pv-who b{font-size:15px;}
 .pv-who small{font-size:12px;color:var(--gray);margin-left:6px;}
 .pv-who .bl{font-size:12px;color:#444;margin-top:2px;line-height:1.5;}
+.pv-who .bl.st{margin-top:0;line-height:1.45;}
+.pv-who .bl.st b{font-size:12px;color:var(--ink);margin-right:6px;}   /* 客人頭像：「品味 4　扣到你就多扣 4」（審查 #11） */
 .kv{margin-top:8px;font-size:12px;line-height:1.9;}
 .kv .k{color:var(--gray);display:inline-block;min-width:34px;margin-right:4px;}
 .kv .num{font:700 13px 'Space Mono',monospace;}
@@ -265,6 +267,9 @@ small{font-size:inherit;}
 .lb-wall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;}
 .lb-wall .lb-cv{width:100%;height:auto;aspect-ratio:1/1;}
 @supports not (aspect-ratio:1/1){.lb-wall .lb-cv{height:0;padding-top:100%;}}
+/* 牆只排一排（審查 #12）：多的收成「+N」那格，點了開唱片櫃 */
+.lb-wall .lb-more{width:100%;aspect-ratio:1/1;display:grid;place-items:center;border:1px dashed var(--ink);background:#f6f3ec;font:700 18px 'Space Mono',var(--zh);color:var(--ink);padding:0;cursor:pointer;}
+@supports not (aspect-ratio:1/1){.lb-wall .lb-more{height:0;padding-top:100%;position:relative;}.lb-wall .lb-more b{position:absolute;inset:0;display:grid;place-items:center;}}
 /* 中繼點那行（結算；有走到才有） */
 .lb-cps{margin:-4px 0 10px;}
 .lb-endbtns{flex:none;display:flex;flex-direction:column;gap:8px;padding:8px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:#fff;}
@@ -394,8 +399,6 @@ small{font-size:inherit;}
 .lb-sheet .hd .lb-btn.hdb{flex:none;position:relative;min-height:34px;height:34px;padding:0 14px;font-size:13px;margin:-5px 0;}
 .lb-sheet .hd .lb-btn.hdb::after{content:'';position:absolute;left:-2px;right:-2px;top:-5px;bottom:-5px;}   /* 點擊區撐到 44 */
 .lb-sheet.acepick .lb-trio .lb-ct{max-width:104px;}
-.lb-endmore{display:flex;gap:8px;margin-top:14px;}
-.lb-endmore .lb-btn{flex:1;font-size:12px;padding:6px 8px;}
 .lb-modal .pane.lb-pause{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));}
 /* 每個畫面自己的一層（#panel 常駐，監聽器掛在這層才不會累積） */
 .lb-screen{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;}
@@ -475,15 +478,21 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-night .nc.cur .ps{color:var(--ink);}
 .lb-night .nc.boss .hd{border-color:var(--red);}
 .lb-night .nc.boss.cur .hd{border-color:var(--gold);}
+/* 菁英（第 4 位）：雙框（藏家紅框、一般客人單框；審查 #16） */
+.lb-night .nc.elite .hd{border:3px double var(--ink);}
+.lb-night .nc.elite.cur .hd{border:3px double var(--gold);}
 @keyframes lbNodePulse{0%,100%{box-shadow:0 0 0 2px var(--cream);}50%{box-shadow:0 0 0 4px rgba(184,134,11,.35);}}
 .lb-bagline{flex:none;margin-top:auto;border-top:1px solid var(--line);height:44px;display:flex;align-items:center;gap:6px;padding:0 6px 0 2px;font-size:12px;white-space:nowrap;overflow:hidden;}
 .lb-bagline button{min-height:44px;padding:0 8px;display:inline-flex;align-items:center;gap:5px;font:400 12px var(--zh);}
 .lb-bagline .bag b{font:700 13px 'Space Mono',monospace;}
-.lb-bagline .rl{color:var(--gray2);font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;}
-.lb-bagline .rl .k{color:var(--gray);margin-right:2px;}
-.lb-bagline .rl .ri{display:inline-grid;place-items:center;}
+/* 發燒配件（審查 #10）：有配件只放圖示（一件才加名字，放不下名字就省略號）；圖示永遠不縮；沒有配件寫「發燒配件（還沒有）」 */
+.lb-bagline .rl{color:var(--gray2);font-size:11px;flex:0 1 auto;min-width:0;overflow:hidden;gap:4px;padding:0 6px;}
+.lb-bagline .rl .k{color:var(--gray);flex:none;}
+.lb-bagline .rl .ri{display:inline-grid;place-items:center;flex:none;}
+.lb-bagline .rl .rn{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 /* 聲望那顆（最左；帶到下一場的聲望，點開看等級、經驗、品味、底氣、上限） */
-.lb-bagline .me{flex:none;padding:0 6px 0 6px;}
+.lb-bagline .me{flex:none;padding:0 4px 0 6px;gap:3px;}
+.lb-bagline .me .k{font-size:11px;color:var(--gray2);}
 .lb-bagline .me b{font:700 13px 'Space Mono',monospace;}
 .lb-me{list-style:none;margin:6px 0 0;padding:0;border-top:1px solid var(--ink);}
 .lb-me li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;}
@@ -506,7 +515,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-rules .rsub{text-align:center;font-size:12px;color:var(--gray);letter-spacing:.2em;margin-top:2px;}
 .lb-rules .tri{display:block;width:100%;max-width:260px;height:auto;margin:8px auto 0;}
 .lb-rules .rl{list-style:none;margin:10px 0 0;padding:0;border-top:1px solid var(--ink);}
-.lb-rules .rl li{display:flex;gap:10px;padding:7px 0 6px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;font-weight:700;letter-spacing:.02em;}
+.lb-rules .rl li{display:flex;gap:10px;padding:6px 0 5px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;font-weight:700;letter-spacing:.02em;}
 .lb-rules .rl li .n{flex:none;width:22px;height:22px;background:var(--ink);color:#fff;font:700 13px/22px 'Space Mono',monospace;text-align:center;margin-top:1px;}
 .lb-rules .rl b{font-weight:700;}
 .lb-rules .rl .kx{color:var(--gray);}   /* 第 3 行屬性之間的「剋」（店主 11-12） */
@@ -527,10 +536,10 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-rules .out .p{flex:none;font-size:11px;color:var(--gray);width:70px;}
 .lb-rules .g{color:var(--win);} .lb-rules .r{color:var(--red);}
 .lb-rules .gold{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:900;padding:0 4px;line-height:15px;letter-spacing:.08em;margin-left:4px;vertical-align:1px;}
-.lb-rules .rrel{margin:12px 0 0;font-size:12px;color:#333;text-align:center;}
+.lb-rules .rrel{margin:8px 0 0;font-size:12px;color:#333;text-align:center;}
 .lb-rules .rwhy{margin:8px 0 0;font-size:12px;line-height:1.6;color:#333;}   /* 六行下面另起一段「為什麼這樣剋」（店主 11-12） */
 .lb-rules .rwhy b{font-weight:700;color:var(--ink);}
-.lb-rules .rfoot{margin-top:10px;font-size:11px;color:var(--gray);line-height:1.6;text-align:center;}
+.lb-rules .rfoot{margin-top:6px;font-size:11px;color:var(--gray);line-height:1.6;text-align:center;}   /* 頁尾三行（第三行＝品味／底氣，審查 #11）：上面的留白收一點，四個尺寸不捲動 */
 /* 規則卡的頁尾：「重看教學」＋「關閉」同一列 */
 .lb-modal .mfoot.two{display:flex;gap:8px;}
 .lb-modal .mfoot.two .lb-btn{flex:1;}
@@ -555,7 +564,8 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 @media (max-height:600px){
   .lb-help .lb-rules .rl li{padding:2px 0 1px;line-height:1.38;}
   .lb-help .lb-rules .rwhy{margin-top:3px;line-height:1.38;}
-  .lb-help .lb-rules .rfoot{line-height:1.38;}
+  .lb-help .lb-rules .rfoot{line-height:1.38;margin-top:3px;}
+  .lb-help .lb-rules .rrel{margin-top:4px;}
   .lb-help .lb-h3{margin:5px 0 3px;}
 }
 /* 結算三件事 */
@@ -626,3 +636,10 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-intro .lb-intro-ed .ce:focus{outline:none;}
 .lb-intro.out{opacity:0;pointer-events:none;}
 @media (prefers-reduced-motion:reduce){.lb-intro{transition:none;}.lb-intro .tx.in,.lb-intro .lb-intro-ed{animation:none;opacity:1;}}
+/* 窄螢幕（360／375）：縫和鈕的左右留白收一點，錢到六位數、沒有配件時「發燒配件（還沒有）」也放得下（審查 #10） */
+@media (max-width:380px){
+  .lb-bagline{gap:3px;}
+  .lb-bagline button{padding:0 5px;}
+  .lb-bagline .me{padding:0 3px 0 5px;}
+  .lb-bagline .money{padding:0 3px;}
+}

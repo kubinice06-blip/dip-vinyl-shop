@@ -38,15 +38,16 @@
 // Trial      無限試煉（run.v === 5；SPEC 無限試煉 §0–§2、map-engine §F）：序章打完＝第 1 位；一輪 5 位（一般 3、菁英、傳說藏家），打到輸為止；數字全在 content.trial
 //            newRun(content, {seedKey, runNo（舊名 nightNo 照收）, ace, prologue?, relics?, bossAce?}) -> run    nextStep(run) → 'prologue'|'fight'|'duel'|'reward'|'level'|'retry'|null
 //            current(run, content) · startFight(run, content, {tutorial?}) -> {duel, events, enemyId}   (run.duel already there → {…, events:[], resumed:true})
-//            finishFight(run, content, duel?) -> {win, by, enemyId, met:[ids], offer, over, earn, pos, cls, heal, levelUps, checkpoint, aceWon}
+//            finishFight(run, content, duel?) -> {win, by, enemyId, met:[ids], offer, over, earn, pos, cls, heal, levelUps, aceWon}
 //              贏：聲望 = min(上限, max(1, 剩下) + 3)；經驗 一般 2／菁英 3／藏家 4，滿「目前等級＋3」升一級（上限 +1、聲望 +1，再三選一）；連勝 +1；
-//                打贏中繼點那一位（第 10、20、30、50、75、100 位，之後每 50）記進 run.checkpoints；打贏藏家 aceWon＝他的王牌（收進唱片櫃，畫面做）
+//                走到中繼點那一位（第 10、20、30、50、75、100 位，之後每 50；SPEC §0「走到就記」：打贏前一位、advance 到那一位時記進 run.checkpoints，第 1 位不算；
+//                jumpTo 不記）；打贏藏家 aceWon＝他的王牌（收進唱片櫃，畫面做）
 //              輸：連勝歸 0；這一輪還能說情 → pending retry（同一位、同一副牌、聲望回到開打前 run.hpIn）；不能 → over 'dead'（沒有 'clear'）
 //            順序：贏 → reward（挑唱片／配件）→ level（有升級才有，連升就連選）→ 下一位（第 5 位打完換新一輪：新面孔、說情重設、商店補貨）
 //            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
-//            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（含目前這位還要贏幾位）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints}
+//            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
@@ -641,7 +642,7 @@
     }
     return { deck: out, ace, floor: fl, buff: b, replaced: base.length - deck.filter(c => base.includes(c)).length };
   }
-  // 中繼點：打贏第 10、20、30、50、75、100 位，之後每 50 位
+  // 中繼點：第 10、20、30、50、75、100 位，之後每 50 位（走到就記：advance 到那一位時）
   function checkpointsOf(content) { const T = trialCfg(content); return { list: (T.checkpoints || []).slice().sort((a, b) => a - b), every: T.checkpointEvery | 0 }; }
   function nextCheckpoint(pos, content) {
     const { list, every } = checkpointsOf(content), d = Math.max(1, pos | 0);
@@ -651,8 +652,8 @@
     return last + Math.max(1, Math.ceil((d - last) / every)) * every;
   }
   const isCheckpoint = (pos, content) => nextCheckpoint(pos, content) === pos;
-  // 離下個中繼點還有幾位（含目前這位：第 7 位時、中繼點第 10 位 → 4）
-  function toCheckpoint(run, content) { const c = nextCheckpoint(run.pos, content); return c == null ? null : c - run.pos + 1; }
+  // 離下個中繼點還有幾位（從目前這位往前數、只算在前面的：第 7 位 → 第 10 位還有 3；走到第 10 位 → 下一個第 20 位還有 10）
+  function toCheckpoint(run, content) { const p = Math.max(1, run.pos | 0), c = nextCheckpoint(p + 1, content); return c == null ? null : c - p; }
 
   function econ(content) {
     const e = (content && content.economy) || {};
@@ -667,9 +668,13 @@
 
   // 第 r 輪的 5 位：一般客人從 C.normals 挑 3 位不重複（先挑上一輪沒來的）、菁英從 C.elites（上一輪沒來的優先）、藏家最後。
   //   種子＝seedKey#runNo#r<輪>（不碰 run.rng：同一天同一趟的客人不管挑哪張王牌都一樣）
+  //   沒給 prev（jumpTo）：從第 1 輪往上逐輪算（迴圈，不遞迴；跳到第 50000 位也不會爆堆疊），結果跟一輪一輪 advance 一樣
   function roundOrder(content, seedKey, runNo, r, prev) {
+    if (r > 1 && !prev) { let o = null; for (let k = 1; k < r; k++) o = roundOne(content, seedKey, runNo, k, o); prev = o; }
+    return roundOne(content, seedKey, runNo, r, prev);
+  }
+  function roundOne(content, seedKey, runNo, r, prev) {
     const N = content.normals || [], EL = content.elites || [], B = content.boss || 'boss';
-    if (r > 1 && !prev) prev = roundOrder(content, seedKey, runNo, r - 1, null);
     prev = prev || [];
     const st = { rng: fnv1a32(String(seedKey) + '#' + runNo + '#r' + r) || 1 };
     const sh = shuffle(N.slice(), st), fresh = sh.filter(x => !prev.includes(x)), seen = sh.filter(x => prev.includes(x));
@@ -789,7 +794,7 @@
     const met = uniq(duel.e.thrown.map(c => c.id));
     for (const id of met) if (!S.met.includes(id)) S.met.push(id);
     run.duel = null; run.duelEnemy = null;
-    let earn = 0, heal = 0, ups = 0, checkpoint = null, aceWon = null;
+    let earn = 0, heal = 0, ups = 0, aceWon = null;
     if (win) {
       S.wins++;
       earn = Math.max(0, econ(content).win[cls] | 0);
@@ -806,7 +811,6 @@
         heal = run.hp - Math.max(1, duel.p.hp);
         ups = gainXp(run, T, T.xp[cls] | 0);
         run.streak++; if (run.streak > run.bestStreak) run.bestStreak = run.streak;
-        if (isCheckpoint(pos, content) && !run.checkpoints.includes(pos)) { run.checkpoints.push(pos); checkpoint = pos; }
         if (cls === 'boss' && content.aces && content.aces[run.bossAce]) {
           aceWon = content.aces[run.bossAce];                 // 藏家的王牌收進唱片櫃（畫面做；同一張每輪都送，只算一次「收了」）
           if (!run.aceWon) { run.aceWon = true; run.taken++; }
@@ -830,7 +834,7 @@
         S.lostAt = { enemyId, pos, round: run.round, idx: run.idx, cls, n: duel.n, last: duel.last };
       }
     }
-    return { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, checkpoint, aceWon };
+    return { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon };
   }
   // 獎勵收完：有升級就先選（連升就連選），選完才到下一位
   function settle(run, content) {
@@ -846,11 +850,12 @@
     const first = hash01(run.seedKey + '#' + run.runNo + '#lv' + (k + 1)) < 0.5 ? 'atk' : 'def';
     return [first].concat(['atk', 'def', 'hp'].filter(x => x !== first)).map(pick => ({ pick, n: T.picks[pick] | 0 }));
   }
-  // 下一位（第 5 位打完：新一輪的 5 位、說情重設、商店補貨）
+  // 下一位（第 5 位打完：新一輪的 5 位、說情重設、商店補貨）；走到中繼點那一位就記（SPEC §0「走到就記」）
   function advance(run, p, content) {
     run.pending = null;
     if (p && p.prologue) return;
     run.pos++;
+    if (isCheckpoint(run.pos, content) && !run.checkpoints.includes(run.pos)) run.checkpoints.push(run.pos);
     run.idx = (run.pos - 1) % PER_ROUND;
     if (run.idx === 0) {
       const prev = run.order;
@@ -860,7 +865,7 @@
       restock(run, content);
     }
   }
-  // ?debug=1 的 __lab：直接跳到第 n 位（序章算完成、特價箱算挑過；聲望、等級不動）
+  // ?debug=1 的 __lab：直接跳到第 n 位（序章算完成、特價箱算挑過；聲望、等級不動；不記中繼點＝不是走到的）
   function jumpTo(run, content, pos) {
     pos = Math.max(1, pos | 0);
     run.duel = null; run.duelEnemy = null; run.pending = null; run.over = null;

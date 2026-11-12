@@ -28,6 +28,11 @@
 .dl .nmrow .sp{flex:1}
 .dl .nmrow .hpn{font:700 13px var(--dl-mono);white-space:nowrap;flex:none}
 .dl .nmrow .hpn span{font:400 10px var(--dl-zh);color:var(--gray,#888);margin-right:4px}
+/* 名字列放不下（duel.js fitRow；審查 #8）：tight 先收「他還有 N 張」的字（條留著）；tight2 再收「聲望」兩字、名字可以省略號——聲望數字永遠在畫面裡 */
+.dl .nmrow.tight .pile small{display:none}
+.dl .nmrow.tight .rec{margin-left:6px}
+.dl .nmrow.tight2 .hpn>span{display:none}
+.dl .nmrow.tight2>b{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .dl .hp{position:relative;height:8px;background:var(--hp-bg,#eee);margin-top:3px}
 .dl .hp i{position:absolute;left:0;top:0;bottom:0;width:100%;transition:width .5s cubic-bezier(.4,0,.2,1)}
 .dl .hp i.fill{background:var(--ink,#111)}
@@ -121,6 +126,14 @@
 .dl .callout .l2{font:700 22px var(--dl-mono);line-height:1.15;white-space:nowrap}
 .dl .callout .l2.g{color:var(--win,#2e7d52)}.dl .callout .l2.r{color:var(--red,#c11628)}.dl .callout .l2.z{color:var(--gray,#888)}
 .dl .callout .l2 .nt{display:inline-block;font:700 10px/1.2 var(--dl-zh);color:var(--gold,#b8860b);margin-left:8px;vertical-align:4px;letter-spacing:0;white-space:nowrap}
+.dl .callout .l2 .nt .ns{display:inline-block;white-space:nowrap}
+/* 放不下（三句以上、窄螢幕；duel.js showCallout）：補充句自己另起一行、置中、在句與句之間折行（審查 #9） */
+.dl .callout .l2.wrap{white-space:normal}
+.dl .callout .l2.wrap .nt{display:block;white-space:normal;margin:1px 0 2px;vertical-align:0;line-height:13px;text-wrap:balance}
+/* 矮螢幕還放不下（.tight）：數字那行、補充句、「點一下繼續」再收緊 */
+.dl .dl-t .callout.tight .l2{line-height:1.05}
+.dl .dl-t .callout.tight .l2.wrap .nt{margin:0;line-height:12px}
+.dl .dl-t .callout.tight .l4{line-height:12px;margin-top:0}
 .dl .callout .l3{font-size:12px;font-weight:700;line-height:16px;color:#333;margin-top:1px;text-wrap:balance}
 .dl .dl-t .callout.tight{padding-top:2px;padding-bottom:3px}.dl .dl-t .callout.tight .l1{line-height:16px}.dl .dl-t .callout.tight .l3{line-height:14px;margin-top:0}   /* 四、五行放不下時（duel.js placeCallout） */
 .dl .callout .sg{display:inline-block}   /* 一段（到標點為止）不拆開；段跟段之間才換行 */

@@ -35,7 +35,7 @@
 //  36 ⏸ 回標題會結束教學；之後的直接開打不被教學劫持
 //  37 連點安全：推門 ×2、下一位 ×2、台北 ×2
 //  38 傳說藏家登場卡擋點擊、點一下提早收掉
-//  39 規則卡六行＝D 規則卡逐字、頁尾聲望代入、不捲動；公告＝規則卡；重看教學帶得起來
+//  39 規則卡六行＝D 規則卡逐字、頁尾聲望代入（你開局 12 聲望（升級會加）、品味／底氣那句）、不捲動；公告＝規則卡；重看教學帶得起來
 //  40 375×548 等矮螢幕：有存檔時「再按一次就放棄這一趟」那行在畫面內
 //  41（新）贏一位 →「+$1,500」吐司（千分位，FIXLIST 8）、來客顯示錢
 //  42（新）序章與對決中真點箱子 → 老闆泡泡「打完再翻。」、不開抽屜
@@ -44,8 +44,10 @@
 //  45（v5）來客：頂欄只寫「第 n 位」（沒有時間、打烊、今晚）；「第 R 輪」＋離下個中繼點還有 N 位＋說情剩幾次；五顆頭像寫第 n 位（照 engine.roundGuests）；
 //      下一位鈕「下一位：第 n 位　名字 ▸」；聲望那顆＝run.hp/maxHp，點開看等級、經驗、品味、底氣、上限；不捲動
 //  46（v5）升級三選一：打贏 → 收唱片 → 升級面板（三顆大鈕、第一顆是品味或底氣、沒有「算了」、不捲動）；連升兩級＝面板開兩次；選完到下一位；重新整理回到升級面板
-//  47（v5）打倒傳說藏家（第 5 位）：他的王牌收進唱片櫃 → 領獎 → 下一輪（第 6 位、五張新面孔、說情重設）；沒有結算畫面
-//  48（v5）結算：__lab.jump(第 10 位) 打贏 → 中繼點吐司、save.best.checkpoints；跳到第 23 位、loseNext → 結算三件事（走到第 23 位、最多連贏、收了幾張）、中繼點那行、不捲動；
+//  47（v5）打倒傳說藏家（第 5 位）：他的王牌收進唱片櫃 → 領獎 → 下一輪（第 6 位、五張新面孔、說情重設）；沒有結算畫面；
+//      第二輪再打倒他（第 10 位）：不再演送牌那段、領獎畫面也不補說那句（審查 #18、#2）
+//  48（v5）中繼點＋吐司＋結算：__lab.jump(第 9 位) 打贏 →「+$…・聲望 +n」吐司在領獎畫面看得到 ≥1 秒 → 走到第 10 位＝來客畫面的中繼點吐司（看得到 ≥1 秒）、save.best.checkpoints、
+//      離下個中繼點還有 10 位；跳到第 23 位、loseNext → 結算三件事（走到第 23 位、最多連贏、收了幾張）、中繼點那行、牆一排、底下兩顆鈕不用捲；
 //      再挑戰一趟前標題「最遠：第 23 位」、「看上一趟結算」
 import fs from 'fs';
 import path from 'path';
@@ -350,12 +352,11 @@ async function run() {
         await page.click('[data-a=quiet]');
         await sleep(300);
         await page.evaluate(() => window.__lab.autoplay('thoughtful', { until: 'end', guess: 'right' }));
-        // 經濟介面是真的時，特價區要人挑（替身自己挑）。無限試煉不會自己結束：走到第 4 位以後下一場強制輸（說情也用掉；兩場＝說情重設了也一樣輸）
+        // 特價區開局挑三張也由 autoplay 自己挑（審查 #4：不再靠測試替它按）。無限試煉不會自己結束：走到第 4 位以後下一場強制輸（說情也用掉；兩場＝說情重設了也一樣輸）
         let end = false, lose = 0;
         const t0 = Date.now();
         while (!end && Date.now() - t0 < 240000) {
           end = (await screen(page)) === 'end';
-          if (!end && ECON === 'real') await answerBargain(page);
           if (!end && !lose && await page.evaluate(() => !!(window.__lab.run && window.__lab.run.pos >= 4))) lose = await page.evaluate(() => (window.__lab.loseNext(2, { noRetry: true }), window.__lab.run.pos));
           if (!end) await sleep(400);
         }
@@ -398,8 +399,11 @@ async function run() {
               tutorialDone: true, prologueDone: true, lastAce: 'hall', lastBargain: null }));
           });
           await openTitle(page, Q());
-          const mig = await page.evaluate(() => { const S = window.__lab.save; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]') }; });
-          const migOk = mig.v === 5 && !mig.run && mig.shelf === 1 && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push;
+          const mig = await page.evaluate(() => { const S = window.__lab.save; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
+          await openTitle(page, Q());
+          mig.lastAce2 = await page.evaluate(() => window.__lab.save.lastAce);
+          const migOk = mig.v === 5 && !mig.run && mig.shelf === 1 && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
+            mig.lastAce === 'hall' && mig.runSeq === 1 && mig.lastAce2 === 'hall';   // 審查 #1：lastAce 遷移後、重新整理後都留著；#5：同一天第幾趟的計數器從舊的一晚接著數
           record(11, size, !bad.length && ks.v === 5 && old.v === 5 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
         }
         if (want(12)) {
@@ -649,7 +653,8 @@ async function run() {
             replay: !!m.querySelector('[data-a=replay]'), learned: m.querySelectorAll('.lb-learned span').length, contentLines: window.DipLabContent.rules.lines };
         });
         const linesOk = JSON.stringify(rc.lines) === JSON.stringify(RULE_LINES) && JSON.stringify(rc.contentLines) === JSON.stringify(RULE_LINES);
-        const footOk = !/[{}]/.test(rc.foot) && rc.foot.includes('你 ' + YOU_HP + ' 聲望');
+        // 頁尾：開局聲望（升級會加）＋品味／底氣在做什麼（審查 #11、#13）
+        const footOk = !/[{}]/.test(rc.foot) && rc.foot.includes('你開局 ' + YOU_HP + ' 聲望（升級會加）') && /品味/.test(rc.foot) && /最多擋一半/.test(rc.foot);
         await jsClick(page, '.lb-modal [data-x]'); await sleep(300);
         await page.evaluate(() => window.__lab.stageAction('poster:event')); await sleep(300);
         const posterRules = !!(await page.$('.lb-modal .lb-rules')); await jsClick(page, '.lb-modal [data-x]'); await sleep(300);
@@ -880,30 +885,65 @@ async function run() {
         await sleep(600);
         const r1 = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, round: R.round, idx: R.idx, order: R.order.slice(), retry: R.retryLeft, over: R.over, ps: [...document.querySelectorAll('[data-tut=night] .nc .ps')].map(x => x.textContent.trim()), trail: window.__lab.trail() }; });
         const fresh = r1.order.slice(0, 3).filter(id => !r0.order.includes(id)).length;
-        const ok = stake && one && one.cid === r0.bossAce && shelf1 && rew && night && r1.pos === 6 && r1.round === 2 && r1.idx === 0 && r1.retry === 1 && !r1.over && r1.ps[0] === '第 6 位' && r1.ps[4] === '第 10 位' && fresh >= 1 && !r1.trail.includes('end');
-        record(47, size, ok, `ace panel ${one && one.cid} (want ${r0.bossAce}, on shelf ${shelf1}) said「${one && one.said}」; reward ${rew}; night ${night}; ${JSON.stringify({ pos: r1.pos, round: r1.round, retry: r1.retry, ps: r1.ps })}; 新面孔 ${fresh}/3 (${r0.order.slice(0, 3)} → ${r1.order.slice(0, 3)})`);
-      } catch (e) { record(47, size, false, 'error ' + e.message); }
-      await ctx.close();
-    }
-
-    // #48 中繼點＋結算＋標題紀錄（v5）：第 10 位打贏 → 中繼點吐司、best.checkpoints；跳到第 23 位、loseNext → 結算；標題「最遠：第 23 位」
-    if (want(48)) {
-      const { ctx, page } = await newPage(browser, w, h); track(page);
-      try {
-        await seededContinue4(page, { ace: 'pearl', pos: 10 });
+        const trail1 = r1.trail.slice(r1.trail.lastIndexOf('duel'));
+        // 第二輪再打倒他（審查 #18、#2）：同一張王牌已經在唱片櫃 → 不再演送牌那段，直接領獎；領獎畫面他也不再補說「這張，送你」
+        await watchSay(page);
+        await page.evaluate(() => { window.__lab.jump(10); window.__lab.run.retryLeft = 0; });
         await waitScreen(page, 'night'); await sleep(500);
-        const toCp0 = await page.evaluate(() => window.DipLabEngine.toCheckpoint(window.__lab.run, window.DipLabContent));
-        await page.evaluate(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); }))).observe(document.getElementById('app'), { childList: true }); });
         await jsClick(page, '[data-a=go]');
-        await waitScreen(page, 'scene');      // 第 10 位＝藏家：先進門
+        await waitScreen(page, 'scene');
         for (let g = 0; g < 150 && !(await page.$('.lb-dq.hasmenu .lb-dqopt')); g++) { if (await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq'); await sleep(200); }
         await sleep(450); await jsClick(page, '.lb-dq .lb-dqopt');
         await waitScreen(page, 'duel');
         await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
         await sleep(600);
         await page.evaluate(() => window.__lab.forceWin());
-        await sleep(600);
-        const cp = await page.evaluate(() => ({ toasts: window.__toasts.slice(), best: window.__lab.save.best.checkpoints.slice(), run: window.__lab.run.checkpoints.slice(), want: window.DipLabContent.trial.ui.checkpoint.replace('{n}', 10) }));
+        const rew2 = await waitScreen(page, 'reward', 15000);
+        await sleep(2600);
+        const r2 = await page.evaluate(() => { const t = window.__lab.trail(); return { tail: t.slice(t.lastIndexOf('duel')), one: !!document.querySelector('#panel > .lb-sheet.one'), said: (window.__said || []).filter(x => x.id === 'f').map(x => x.t), lose: [].concat((window.DipLabContent.lines[window.DipLabContent.boss] || {}).lose || [])[0] || '' }; });
+        const noGift = rew2 && r2.tail.join() === 'duel,reward' && !r2.one && !!r2.lose && !r2.said.some(t => t.indexOf(r2.lose) >= 0);
+        const ok = stake && one && one.cid === r0.bossAce && shelf1 && rew && night && r1.pos === 6 && r1.round === 2 && r1.idx === 0 && r1.retry === 1 && !r1.over && r1.ps[0] === '第 6 位' && r1.ps[4] === '第 10 位' && fresh >= 1 && !r1.trail.includes('end') &&
+          trail1.slice(0, 3).join() === 'duel,scene,reward' && noGift;
+        record(47, size, ok, `ace panel ${one && one.cid} (want ${r0.bossAce}, on shelf ${shelf1}) said「${one && one.said}」; reward ${rew}; night ${night}; ${JSON.stringify({ pos: r1.pos, round: r1.round, retry: r1.retry, ps: r1.ps })}; 新面孔 ${fresh}/3 (${r0.order.slice(0, 3)} → ${r1.order.slice(0, 3)}); 1st ${trail1.join('>')}; 2nd boss ${r2.tail.join('>')} panel ${r2.one} said ${JSON.stringify(r2.said)}`);
+      } catch (e) { record(47, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #48 中繼點＋吐司＋結算＋標題紀錄（v5）：第 9 位打贏 → 錢的吐司（領獎畫面）、走到第 10 位 → 中繼點吐司（來客畫面）都真的看得到 ≥1 秒（審查 #0、#3）；
+    //   跳到第 23 位、loseNext → 結算（牆一排、唱片櫃／出門看看在底下那列、不用捲；審查 #12）；標題「最遠：第 23 位」
+    if (want(48)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        // 不加 fast=1：吐司照真人玩的時間（fast 是 4 倍速，吐司只留 0.5 秒）
+        await seededContinue4(page, { ace: 'pearl', pos: 9 }, Q(''));
+        await waitScreen(page, 'night'); await sleep(500);
+        const toCp0 = await page.evaluate(() => window.DipLabEngine.toCheckpoint(window.__lab.run, window.DipLabContent));
+        // 吐司看不看得到：每一顆記下出現、開始淡出（.out）或被拿掉的時間，和在畫面裡時的位置與不透明度
+        await page.evaluate(() => {
+          window.__toasts = [];
+          const seen = new Map();
+          const look = () => { document.querySelectorAll('#app .lb-toast').forEach(n => {
+            let t = seen.get(n); if (!t) { t = { text: n.textContent, add: performance.now(), end: null, vis: 0, screen: window.__lab.screen() }; seen.set(n, t); window.__toasts.push(t); }
+            const r = n.getBoundingClientRect(), cs = getComputedStyle(n);
+            if (!n.classList.contains('out') && r.width > 0 && r.top >= 0 && r.bottom <= innerHeight && cs.visibility !== 'hidden' && +cs.opacity > 0.5) t.vis = performance.now() - t.add;
+            if (n.classList.contains('out') && t.end == null) t.end = performance.now() - t.add;
+          }); seen.forEach((t, n) => { if (!n.isConnected && t.end == null) t.end = performance.now() - t.add; }); };
+          new MutationObserver(look).observe(document.getElementById('app'), { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
+          setInterval(look, 50);
+        });
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+        await sleep(400);
+        await page.evaluate(() => window.__lab.forceWin());
+        await waitScreen(page, 'reward', 15000); await sleep(1800);
+        await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]'); if (b) b.click(); });
+        for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
+        await sleep(2400);
+        const cp = await page.evaluate(() => { const U = window.DipLabContent.trial.ui, R = window.__lab.run;
+          return { toasts: window.__toasts.map(t => ({ text: t.text, vis: Math.round(t.vis), end: t.end == null ? null : Math.round(t.end), screen: t.screen })), best: window.__lab.save.best.checkpoints.slice(), run: R.checkpoints.slice(), pos: R.pos,
+            want: U.checkpoint.replace('{n}', 10), money: window.DipLabContent.shopUi.earned.replace('{n}', ''), nh: document.querySelector('.lb-night .nh').textContent, toCp: U.toCheckpoint.replace('{n}', window.DipLabEngine.toCheckpoint(R, window.DipLabContent)), toCpN: window.DipLabEngine.toCheckpoint(R, window.DipLabContent) }; });
+        const tCp = cp.toasts.find(t => t.text.indexOf(cp.want) >= 0), tMoney = cp.toasts.find(t => t.text.indexOf(cp.money) === 0);
         // 跳到第 23 位、下一場強制輸（說情也用掉）→ 結算
         await page.evaluate(() => { window.__lab.jump(23); window.__lab.loseNext(1, { noRetry: true }); });
         await waitScreen(page, 'night'); await sleep(500);
@@ -913,15 +953,23 @@ async function run() {
         const end = await advanceUntil(page, () => window.__lab.screen() === 'end', null, 40000);
         await sleep(1200);
         const r = await page.evaluate(() => { const S = window.DipLabContent.summary, R = window.__lab.run, sum = window.DipLabEngine.runSummary(R);
+          const vis = sel => { const e = document.querySelector(sel); if (!e) return false; const b = e.getBoundingClientRect(), x = b.left + b.width / 2, y = b.top + b.height / 2; const top = document.elementFromPoint(x, y); return b.bottom <= innerHeight && b.top >= 0 && !!top && (top === e || e.contains(top)); };
+          const wall = [...document.querySelectorAll('.lb-wall > *')].map(e => Math.round(e.getBoundingClientRect().top));
           return { h1: document.querySelector('.lb-endhero .lb-h1').textContent, title: S.title, rows: [...document.querySelectorAll('.lb-sum li')].map(li => li.textContent.replace(/\s+/g, ' ').trim()), sum,
             cps: (document.querySelector('.lb-cps') || {}).textContent || '', cpsWant: S.checkpoints.replace('{list}', '10'), again: (document.querySelector('[data-a=again]') || {}).textContent || '', againWant: S.again,
-            far: window.__lab.save.best.far, runs: window.__lab.save.runs.length, top: document.querySelector('#top').textContent }; });
+            far: window.__lab.save.best.far, runs: window.__lab.save.runs.length, top: document.querySelector('#top').textContent,
+            btns: { shelf: vis('.lb-endbtns [data-a=shelf]'), taipei: vis('.lb-endbtns [data-a=taipei]'), again: vis('[data-a=again]') }, wallRows: new Set(wall).size, wallN: wall.length,
+            scr: (() => { const s = document.querySelector('.lb-screen.end .lb-scroll'); return s ? s.scrollHeight - s.clientHeight : -1; })() }; });
         const sc = await noScroll(page);
         await openTitle(page);
-        const t = await page.evaluate(() => ({ foot: [...document.querySelectorAll('.lb-foot')].map(x => x.textContent).join('|'), want: window.DipLabContent.summary.best.replace('{n}', 23), last: (document.querySelector('[data-a=end]') || {}).textContent || '', lastWant: window.DipLabContent.trial.ui.lastSummary }));
-        const ok = toCp0 === 1 && cp.toasts.some(x => x.indexOf(cp.want) >= 0) && cp.best.includes(10) && cp.run.includes(10) && end && r.h1 === r.title && r.rows.length === 3 && r.rows[0].indexOf('第 23 位') >= 0 &&
-          r.cps === r.cpsWant && r.again === r.againWant && r.far === 23 && r.runs === 1 && /^第 23 位/.test(r.top.trim()) && scrollOk(sc) && t.foot.indexOf(t.want) >= 0 && t.last === t.lastWant;
-        record(48, size, ok, `toCheckpoint at 10 = ${toCp0}; toasts ${JSON.stringify(cp.toasts)}; best.checkpoints ${cp.best}; end ${end}「${r.h1}」 rows ${JSON.stringify(r.rows)}「${r.cps}」 again「${r.again}」; far ${r.far}; scroll ${JSON.stringify(sc)}; title「${t.foot}」「${t.last}」`);
+        const t = await page.evaluate(() => ({ foot: [...document.querySelectorAll('.lb-foot')].map(x => x.textContent).join('|'), want: window.DipLabContent.summary.best.replace('{n}', 23), last: (document.querySelector('[data-a=end]') || {}).textContent || '', lastWant: window.DipLabContent.trial.ui.lastSummary,
+          top: document.querySelector('#top .tt').textContent.trim(), game: window.DipLabContent.trial.ui.game }));
+        const ok = toCp0 === 1 && tMoney && tMoney.vis >= 1000 && tMoney.screen === 'reward' && tCp && tCp.vis >= 1000 && tCp.screen === 'night' && cp.pos === 10 && cp.best.includes(10) && cp.run.includes(10) &&
+          cp.toCpN === 10 && cp.nh.indexOf(cp.toCp) >= 0 &&
+          end && r.h1 === r.title && r.rows.length === 3 && r.rows[0].indexOf('第 23 位') >= 0 &&
+          r.cps === r.cpsWant && r.again === r.againWant && r.far === 23 && r.runs === 1 && /^第 23 位/.test(r.top.trim()) && scrollOk(sc) && r.btns.shelf && r.btns.taipei && r.btns.again && r.wallRows === 1 && r.scr <= 1 &&
+          t.foot.indexOf(t.want) >= 0 && t.last === t.lastWant && t.top === t.game;
+        record(48, size, ok, `toCheckpoint at 9 = ${toCp0}, at 10 = ${cp.toCpN}「${cp.nh}」; toasts ${JSON.stringify(cp.toasts)}; best.checkpoints ${cp.best}; end ${end}「${r.h1}」 rows ${JSON.stringify(r.rows)}「${r.cps}」 again「${r.again}」 btns ${JSON.stringify(r.btns)} wall ${r.wallN}/${r.wallRows} row(s) scroll ${r.scr}; far ${r.far}; scroll ${JSON.stringify(sc)}; title「${t.top}」「${t.foot}」「${t.last}」`);
       } catch (e) { record(48, size, false, 'error ' + e.message); }
       await ctx.close();
     }

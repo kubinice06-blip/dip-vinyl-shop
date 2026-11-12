@@ -392,17 +392,16 @@
       if (w < old) { lost.style.transition = 'none'; lost.style.width = old + '%'; void lost.offsetWidth; lost.style.transition = ''; fill.style.width = w + '%'; later(() => { lost.style.transitionDuration = dur + 'ms'; lost.style.width = w + '%'; }, dur + 250); }
       else { fill.style.width = w + '%'; lost.style.width = w + '%'; }
     }
-    // 數字旁的小飄字（不吃點擊）：聲望數字左邊往左飄
+    // 數字旁的小飄字（不吃點擊）：聲望數字正下方（蓋在聲望條上、右緣對齊數字）往下飄——不再放在數字左邊，那裡是品／底小籤（審查 #17）
     function floatAt(el, text, cls) {
       if (!el || !text || S.destroyed) return;
       const a0 = (el.closest && el.closest('.hpn')) || el, r = a0.getBoundingClientRect(), rr = root.getBoundingClientRect();
       if (!r.width) return;
       const d = document.createElement('span'); d.className = 'fl ' + (cls || ''); d.textContent = text;
       els.fx.appendChild(d);
-      const fh = d.offsetHeight || 16;
-      d.style.left = Math.round(r.left - rr.left - 4) + 'px'; d.style.top = Math.round(r.top - rr.top + (r.height - fh) / 2) + 'px';
+      d.style.left = Math.round(r.right - rr.left) + 'px'; d.style.top = Math.round(r.bottom - rr.top - 2) + 'px';
       const kf = rm() ? [{ opacity: 0, transform: 'translate(-100%,0)' }, { opacity: 1, transform: 'translate(-100%,0)', offset: .2 }, { opacity: 1, transform: 'translate(-100%,0)', offset: .8 }, { opacity: 0, transform: 'translate(-100%,0)' }]
-        : [{ transform: 'translate(-100%,0)', opacity: 0 }, { transform: 'translate(calc(-100% - 6px),0)', opacity: 1, offset: .2 }, { transform: 'translate(calc(-100% - 10px),0)', opacity: 1, offset: .75 }, { transform: 'translate(calc(-100% - 14px),0)', opacity: 0 }];
+        : [{ transform: 'translate(-100%,-4px)', opacity: 0 }, { transform: 'translate(-100%,2px)', opacity: 1, offset: .2 }, { transform: 'translate(-100%,5px)', opacity: 1, offset: .75 }, { transform: 'translate(-100%,8px)', opacity: 0 }];
       d.style.transform = 'translate(-100%,0)';
       const a = A(d, kf, { duration: 1300, easing: 'ease-out', fill: 'forwards' });
       const rmv = () => d.remove(); if (a) a.finished.then(rmv, rmv); else later(rmv, 1300);
@@ -427,9 +426,16 @@
     function hintText(v) { const x = hintOf(hints, v.hint); return x ? x.text : ''; }
     // 品味／底氣小籤（無限試煉；大於 0 才有）：「品 2」「底 1」
     const TU = (content.trial && content.trial.ui) || {};
+    //   讀屏念全名（品味 2／底氣 1；審查 #11）
     function statsHTML(a, d) {
-      const tag = (k, n, t) => n > 0 ? `<span class="s${k}" data-st="${k}">${esc(String(t || '').replace('{n}', n))}</span>` : '';
-      return tag('a', a | 0, TU.atkShort) + tag('d', d | 0, TU.defShort);
+      const tag = (k, n, t, full) => n > 0 ? `<span class="s${k}" data-st="${k}" role="img" aria-label="${esc(String(full || t || '').replace('{n}', n))}">${esc(String(t || '').replace('{n}', n))}</span>` : '';
+      return tag('a', a | 0, TU.atkShort, TU.atk) + tag('d', d | 0, TU.defShort, TU.def);
+    }
+    // 名字列放不下（360 寬、七個字的名字＋品／底兩籤；審查 #8）：先收「他還有 N 張」的字（條留著）→ 再收「聲望」兩字、名字可以省略號；聲望數字永遠在畫面裡
+    function fitRow(sec) {
+      const nm = sec && sec.querySelector('.nmrow'); if (!nm || !nm.clientWidth) return;
+      nm.classList.remove('tight', 'tight2');
+      if (nm.scrollWidth > nm.clientWidth + 1) { nm.classList.add('tight'); if (nm.scrollWidth > nm.clientWidth + 1) nm.classList.add('tight2'); }
     }
     function renderE(v, opt) {
       opt = opt || {};
@@ -438,6 +444,7 @@
       if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, false);
       renderHint(v);
       renderRec(v);
+      fitRow(els.e);
     }
     // 打完了（v.over）：引擎不再給提示 → 留著最後一手那句、變淡（不留一個空框）
     function renderHint(v) {
@@ -521,6 +528,7 @@
       if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, false);
       els.pst.innerHTML = statsHTML(v.pAtk, v.pDef);
       els.relics.innerHTML = (v.relics || []).slice(0, 3).map(r => `<button type="button" class="rl" data-tut="relic-${esc(r.id)}" data-relic="${esc(r.id)}" aria-label="發燒配件：${esc(r.name || '')}">${relicIconHTML(r)}</button>`).join('');
+      fitRow(els.p);
     }
     // ---------------- render: 手牌（v5 手風琴：疊成水平一排（錯開）；點一張＝在那張打開（右邊的往右滑開、它整張露出來並浮起），正上方跳屬性鈕） ----------------
     // 順序：手牌 0..n−1，王牌（還沒用）放最右＝疊著時最上面那張（金框）；用過的王牌不在手牌裡
@@ -705,6 +713,7 @@
       }
       sizeBoard();
       if (root.scrollHeight > root.clientHeight + 1) { root.classList.add('tighter'); sizeBoard(); }
+      fitRow(els.e); fitRow(els.p);
     }
     // 牌桌（兩張封面＋下面那行字＋中間字帶）與手牌區：
     //   手牌區至少 handMin（疊著那一排放得下；v4 的數字照留，牌桌的大小不變）；其餘給牌桌，兩張封面照剩下的高與寬放大（空出來的高度給牌桌）；
@@ -984,12 +993,15 @@
       const c = els.call;
       c.querySelector('.l1').className = 'l1' + (ct.bluff ? ' bl' : '');
       c.querySelector('.l1').innerHTML = segHTML(ct.l1);
-      c.querySelector('.l2').className = 'l2 ' + ct.cls;
-      c.querySelector('.l2').innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : ''}`;
+      const l2 = c.querySelector('.l2');
+      l2.className = 'l2 ' + ct.cls;
+      l2.innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${ct.notes.map((x, k) => `<span class="ns">${esc(x)}${k < ct.notes.length - 1 ? '・' : ''}</span>`).join('')}</span>` : ''}`;
       c.querySelector('.l3').innerHTML = segHTML(ct.l3);
       c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
+      // 補充句（配件、品味、底氣）跟數字同一行放不下：自己另起一行、可以折行（一句不拆開；審查 #9）
+      if (l2.scrollWidth > l2.clientWidth + 1) l2.classList.add('wrap');
       placeCallout();
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
       else A(c, [{ transform: 'scale(.3)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: .6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
