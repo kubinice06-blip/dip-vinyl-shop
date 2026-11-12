@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-12｜dip-vinyl-shop｜game-lab v5 教學：老闆講清楚三軸相剋的道理（規劃書第二項 A 案）
+
+- **店主 11/09–10 定稿的字**：唱盤前老闆拿三張王牌講六句——「這三張，各據一座山頭。」「其實每張唱片三種都有，只是有高有低。」「大家都聽過的，碰上沒人聽過的，就不稀奇了。」「再難入耳，也比不過時間淬煉的名盤。」「再冷門，碰上真正硬的也得甘拜下風。」「他炫哪一種，你就拿剋它的那種回他。」（只在「看向老闆」那條路）。
+- **其他**：六手教學換成規劃書標「新」的句子（18 步→26 步，點牌→點屬性的關卡不變）；第 4 手提示「白版」→「他從箱底挖出一張自主發行盤。」（關鍵字「自主發行」，正式客人提示一起換）；點牌桌相剋小圖開小抄；規則卡六行下加「為什麼這樣剋」；跳過教學那顆鈕下加一行「跳過教學」。`?v=48`。lint-copy 原本整個禁「入耳」，改成只擋舊軸名寫法。
+- **主要檔案**：`game-lab/{content.js,tutorial.js,duel.js,duel.css,ui.js,style.css,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tests/{e2e-lib,e2e-duel,e2e.spec}.mjs`、`game-lab/test/tutorial.test.mjs`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/tools/owner-lines-v4.json`。
+- **驗證**（省額度，只跑相關）：tutorial.test 193,864、engine.test 2,040,483 全過；lint-copy、check-content 通過；e2e-prologue 390×664 52/52；e2e-duel 390×664＋360×640 80/80；e2e.spec 教學相關 8 項 × 2 尺寸 18/18；#39 在 375×548 也過。**沒跑**：完整 e2e.spec、e2e-econ、e2e-taps、sim、430×932、真 iPhone。
+- **沒做**：選屬性時相剋圖下多一行「冷門：剋經典｜怕硬蕊」。
+
 ### 2026-11-12｜dip-vinyl-shop｜game-lab v5 手牌：疊著的手牌點哪張只攤開那張（同尺寸）
 
 - **店主 11/09**：「疊起來攤開是專輯尺寸相同、往旁邊攤開，只有點擊的專輯秀出來，其他維持疊著」。拿掉 v4「點牌堆全部攤開、封面縮一半」那一步。
