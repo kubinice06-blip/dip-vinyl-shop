@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-12｜dip-vinyl-shop｜game-lab v5 第五項前半：開頭旁白＋玻璃倒影捏人
+
+- **店主 11-10 定稿**：第一次推門 → 黑幕旁白 I1「雨下個不停。巷子深處，有人輕輕推開那扇半掩的門，門上的鈴鐺清脆一響，隨即被雨聲吞沒。」→ I2「玻璃門晃了晃，映出推門的人。」→ 捏人（舞台＝玻璃門上的倒影：門外下雨、門裡暖光、雨痕往下滑，標題「玻璃上的你」，「先隨便 ›」／Esc 略過＝用畫面上那個；網站上的 dip-character 小人是預設）→ 序章從 O2 接下去。原本的 O1「下著雨。你推開……」拿掉、站位搬到 O2（原句 26→25 句）。捏過人、序章中途放棄又推門（或序章中途按繼續今晚）：只念 I1。
+- **審查（工作流程 3 角度＋驗證）修掉**：I2 連點兩下穿到「完成」（捏人前 600 ms 不收點擊，實際時間）、門鈴響兩次（O2 門晃改不響，stage.door 加 quiet）、收尾閃白（捏人跟黑幕一起淡）、O2 老闆抬頭被黑幕蓋住（劇本等淡完）、舞台晚到時 go('title') 清掉旁白計時器卡死（計時器自己管＋不重畫）、序章中途繼續今晚沒旁白、旁白不吃鍵盤／焦點留在標題（Enter／Space、inert、aria-modal）、自動遊玩卡在捏人、I1 斷在詞中間（keep-all）。人物轉身（背面、側面）**沒做**，下一階段。
+- **主要檔案**：`game-lab/{ui.js,charedit.js,charedit.css,content.js,stage.js,style.css,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/tools/owner-lines-v4.json`、新 `game-lab/tests/e2e-intro.mjs`。`?v=51`。?debug=1 預設不演旁白（既有 e2e 從 O2 開始），&intro=1 才演。
+- **驗證**：e2e-intro 四尺寸 47/47；e2e-prologue 390×664 52/52；chars.test 30,061、shop.test 1,280 全過；check-content、lint-copy 通過。**沒跑**：完整 e2e.spec、e2e-duel、e2e-econ、e2e-taps、真 iPhone。
+
 ### 2026-11-12｜dip-vinyl-shop｜game-lab v5 教學：牌桌小抄屬性寫全名
 
 - **店主 11-12 指示**：小抄左欄「冷剋經」等縮寫改全名「冷門剋經典／經典剋硬蕊／硬蕊剋冷門」；屬性第一個字照屬性色、第二個字黑，「剋」改灰。`?v=49`。
