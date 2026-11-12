@@ -84,5 +84,7 @@
 .ce .ce-body::after{content:'';position:-webkit-sticky;position:sticky;bottom:-10px;display:block;height:16px;margin:0 -10px -10px;background:linear-gradient(rgba(255,255,255,0),var(--ce-bg));pointer-events:none;}
 /* 開頭旁白那次（scene:'glass'，店主 11-10）：✕ 換成寫字的「先隨便」；標題「玻璃上的你」 */
 .ce .ce-x.ce-skip{width:auto;padding:0 4px;}
-.ce .ce-x.ce-skip i{width:auto;height:30px;padding:0 11px;font:700 12px/1 var(--ce-zh);letter-spacing:.14em;font-style:normal;}
+.ce .ce-x.ce-skip i{display:flex;align-items:center;white-space:nowrap;width:auto;height:30px;padding:0 9px 0 11px;font:700 12px/1 var(--ce-zh);letter-spacing:.14em;font-style:normal;background:var(--ce-cream);border-width:1px 1px 3px;}
+.ce .ce-x.ce-skip i::after{content:'›';margin-left:5px;font:700 14px/1 var(--ce-mono);letter-spacing:0;}   /* 看得出是鈕、不是標題框 */
+.ce .ce-x.ce-skip:active i{border-bottom-width:1px;transform:translateY(2px);}
 .ce.ce-glass .ce-stage{background:#1c130d;}

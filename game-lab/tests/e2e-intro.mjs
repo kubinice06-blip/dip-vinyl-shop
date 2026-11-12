@@ -24,20 +24,27 @@ async function oneSize(browser, w, h) {
   const { ctx, page } = await newPage(browser, w, h, { dpr: OUT ? 2 : 1 });
   await openTitle(page, Q('&fast=1&intro=1'));
   await watchO1(page);
+  // 門鈴只響一次（旁白 I1 響；O2 的門晃不再響，審查 F2）
+  await page.evaluate(() => { const f = window.DipLabFx; window.__bells = 0; if (f && f.sfx) { const o = f.sfx; f.sfx = function (n) { if (n === 'bell') window.__bells++; return o.apply(this, arguments); }; } });
   // 1. 推門 → 黑幕 I1
   await page.click('[data-a=push]');
   const ok1 = await waitLine(page, 'I1', 3000);
   const l1 = await lineOf(page);
   record('I1 黑幕旁白', tag, ok1 && l1.text === I1, l1 ? l1.text.slice(0, 16) + '…' : '沒有黑幕');
   await sleep(900); await shot(page, 'intro-1', w, h);
-  // 2. 點一下 → I2
-  await page.click('.lb-intro');
+  // 2. 鍵盤 Enter → I2（審查 F2：旁白要能用鍵盤翻）
+  const focusIn = await page.evaluate(() => !!document.activeElement && !!document.activeElement.closest('.lb-intro'));
+  await page.keyboard.press('Enter');
   const ok2 = await waitLine(page, 'I2', 3000);
   const l2 = await lineOf(page);
-  record('I2 玻璃門晃了晃', tag, ok2 && l2.text === I2, l2 ? l2.text : '沒有 I2');
-  await sleep(500);
-  // 3. 點一下 → 玻璃倒影捏人
-  await page.click('.lb-intro');
+  record('I2 玻璃門晃了晃（Enter 翻頁、焦點在黑幕）', tag, ok2 && l2.text === I2 && focusIn, (l2 ? l2.text : '沒有 I2') + ' 焦點 ' + focusIn);
+  await sleep(800);
+  // 3. 在 ▼ 上連點兩下 → 捏人畫面要還在（第二下不准穿過去按到「完成」，審查 F0）
+  const nxp = await page.evaluate(() => { const r = document.querySelector('.lb-intro .nx').getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+  await page.touchscreen.tap(nxp.x, nxp.y); await sleep(150); await page.touchscreen.tap(nxp.x, nxp.y);
+  await sleep(700);
+  const dbl = await page.evaluate(() => ({ ce: !!document.querySelector('.lb-intro .ce'), glass: !!window.__lab.save.seen.glass, hair: window.__lab.save.player && window.__lab.save.player.avatar }));
+  record('連點兩下不會跳過捏人', tag, dbl.ce && !dbl.glass, JSON.stringify({ ce: dbl.ce, glass: dbl.glass }));
   const edOk = await page.waitForSelector('.lb-intro .ce.ce-glass', { state: 'visible', timeout: 3000 }).then(() => true, () => false);
   const ed = await page.evaluate(() => ({ ttl: (document.querySelector('.ce-ttl') || {}).textContent, skip: (document.querySelector('.ce-skip') || {}).textContent, tabs: document.querySelectorAll('.ce-tab').length }));
   record('捏人＝玻璃上的你', tag, edOk && ed.ttl === '玻璃上的你' && ed.skip === '先隨便' && ed.tabs === 7, JSON.stringify(ed));
@@ -53,9 +60,16 @@ async function oneSize(browser, w, h) {
   await page.evaluate(() => { const b = [...document.querySelectorAll('.ce-opt')].find(x => !x.classList.contains('on')); if (b) b.click(); });
   const want = await page.evaluate(() => JSON.stringify(window.__lab.save.player && window.__lab.save.player.avatar));
   await page.click('.ce-done');
+  // 捏人畫面跟黑幕一起淡掉（不閃白，審查 F1）；劇本等淡完才開始（O2 老闆抬頭看得到，審查 F3）
+  await sleep(120);
+  const mid = await page.evaluate(() => ({ ce: !!document.querySelector('.lb-intro .ce'), out: !!document.querySelector('.lb-intro.out'), beat: window.__lab.beat || null }));
+  record('完成後捏人跟黑幕一起淡、劇本還沒開始', tag, mid.ce && mid.out && mid.beat !== 'O2', JSON.stringify(mid));
   const o2 = await waitBeat(page, 'O2', 8000);
   await sleep(900);
   const after = await page.evaluate(() => ({ veil: !!document.querySelector('.lb-intro'), glass: !!window.__lab.save.seen.glass, av: JSON.stringify(window.__lab.save.player.avatar), o1: window.__sawO1 }));
+  await sleep(1200);
+  const bells = await page.evaluate(() => window.__bells);
+  record('門鈴只響一次', tag, bells === 1, '響了 ' + bells + ' 次');
   record('完成 → 序章 O2（沒有 O1）', tag, o2 && !after.veil && after.glass && !after.o1 && after.av !== want, JSON.stringify({ o2, ...after, av: undefined, changed: after.av !== want }));
   await shot(page, 'intro-o2', w, h);
   // 5. 重新整理再推門（序章還沒打完）：只念 I1，不再捏人

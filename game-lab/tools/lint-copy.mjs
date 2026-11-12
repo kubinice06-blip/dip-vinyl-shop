@@ -188,7 +188,7 @@ const OWNER_SET = new Set(OWNER.lines || []);
 const items = []; // { scene, where, who, key?, text, tag, raw? }
 const draftEdits = []; // 改過店主草稿的提示句 { id, from, to, key }（R-03／COPY-05）
 const add = it => items.push(it);
-const SCENE = { prologue: '序章（O1–O21）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
+const SCENE = { prologue: '序章（O2–O21；O1 11-10 併進開頭旁白）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
   bossEnter: '傳說藏家進門', clear: '打烊（通關）', dead: '散場', again: '再來一夜' };
 const UI_OK = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
 const WHO_OK = ['', '老闆', '男子', '藏家', '傳說藏家', '？？？', 'player'];
@@ -514,8 +514,8 @@ else for (const it of items) if (it.tag === '原句' || it.tag === '拍板') {
   if (!ORIG.includes(t) && !(inner && it.where.startsWith('pitch#') && ORIG.includes(inner[1]))) err(it.where, '標成「' + it.tag + '」但現行 roguelike.html 裡找不到一字不差的原文：' + t);
 }
 
-// v4 劇本的原句（SPEC-v4 §2.5.4、§2.2.9 B2）：序章＋收尾標「原句」的恰好 26 句，順序＝原版 RPG_BEATS（扣掉 D §2 換掉的 4 句）＋TUT_EPILOGUE_BEATS
-//   換掉的 4 句：很迷人那句（→ 今晚那張的兩句描述）、「剛才那段，你覺得是哪一張？」、「跟你有緣，收下吧。」、「你把五張唱片…」
+// v4 劇本的原句（SPEC-v4 §2.5.4、§2.2.9 B2）：序章＋收尾標「原句」的恰好 25 句，順序＝原版 RPG_BEATS（扣掉 D §2 換掉的 4 句＋11-10 改成開頭旁白的第一句）＋TUT_EPILOGUE_BEATS
+//   換掉的 4＋1 句：很迷人那句（→ 今晚那張的兩句描述）、「剛才那段，你覺得是哪一張？」、「跟你有緣，收下吧。」、「你把五張唱片…」
 const REPLACED_BY_D = ['……很迷人。你停下腳步，不自覺跟著點起頭來。', '「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」',
   '「這四張也很適合你。跟你有緣，收下吧。」', '你把五張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。',
   // 店主 11-10：第一句改成開頭旁白（C.intro）
@@ -558,7 +558,7 @@ let md = `# 台詞審稿：品味對決 v4（LINES-REVIEW）
 > 由 \`node game-lab/tools/lint-copy.mjs\` 產生，請勿手改。要改句子，直接改 \`game-lab/content.js\`（劇本、台詞、名牌、提示、規則卡、教學）或 \`game-lab/tools/pitches.json\`（推薦語，改完重跑 \`node game-lab/tools/bake-cards.mjs\`），再重跑本檢查。
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 \`roguelike.html\` 逐字比對（${origChecked} 句）；標成「店主」的字已與 \`tools/owner-lines-v4.json\`（DECISIONS-v4 店主寫／核可的字）逐字比對（${ownerChecked} 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
-> 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
+> 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
 統計：原句 ${counts['原句']}、拍板 ${counts['拍板']}、店主 ${counts['店主']}、新 ${counts['新']}（同一句在有聲／安靜兩版序章只算一次）。
 

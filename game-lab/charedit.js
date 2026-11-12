@@ -8,7 +8,7 @@
  *     tab: 'hair', title: '捏一個你' // 選填
  *     scene: 'glass', skip: '先隨便' // 選填（開頭旁白那次，店主 11-10）：舞台換成玻璃門上的倒影（門外下雨、門裡暖光）；✕ 換成寫字的略過鈕（按了也是 onCancel）
  *   });
- *   按「完成」→ onSave(r) 後自己關掉（onSave 回傳 false 就不關）；✕ 或 Esc → onCancel() 後關掉。
+ *   按「完成」→ onSave(r) 後自己關掉（onSave 回傳 false 就不關）；✕ 或 Esc → onCancel() 後關掉（onCancel 回傳 false 也不關）。
  *   ed.get() → { name, spec } ／ ed.set({ name?, spec? }) ／ ed.tab('top') ／ ed.close() ／ ed.el
  *   spec 也可以給舊的 dip-character 捏角色 {head,hair,shirt,pants,skin}（會換成一模一樣的 v2 spec）。
  *
@@ -274,7 +274,7 @@
     tag.appendChild(inp); tag.appendChild(EL('i', 'ce-pen', '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 9l1-3 5-5 2 2-5 5z" fill="currentColor"/></svg>'));
     var act = EL('div', 'ce-act');
     stage.appendChild(cv); stage.appendChild(ttl); stage.appendChild(tag); stage.appendChild(act);
-    if (cb.onCancel) { var bx = EL('button', 'ce-x' + (cb.skip ? ' ce-skip' : ''), '<i>' + (cb.skip ? esc(cb.skip) : ICON_X) + '</i>'); bx.type = 'button'; bx.setAttribute('aria-label', cb.skip || '不改了'); bx.onclick = function () { cancel(); }; stage.appendChild(bx); }
+    if (cb.onCancel) { var bx = EL('button', 'ce-x' + (cb.skip ? ' ce-skip' : ''), '<i>' + (cb.skip ? esc(cb.skip) : ICON_X) + '</i>'); bx.type = 'button'; bx.setAttribute('aria-label', cb.skip ? cb.skip + '：略過，就用現在的樣子' : '不改了'); bx.onclick = function () { cancel(); }; stage.appendChild(bx); }
     // --- 分頁
     var tabs = EL('div', 'ce-tabs'); tabs.setAttribute('role', 'tablist');
     TABS.forEach(function (T) {
@@ -417,7 +417,7 @@
     tag.setAttribute('data-v', state.name || NAME_DEFAULT);
     bRand.onclick = randomize;
     bDone.onclick = function () { var r = result(state.name, state.spec); var keepOpen = cb.onSave ? cb.onSave(r) === false : false; if (!keepOpen) close(); };
-    function cancel() { if (cb.onCancel) try { cb.onCancel(); } catch (e) { console.error(e); } close(); }
+    function cancel() { var keep = false; if (cb.onCancel) try { keep = cb.onCancel() === false; } catch (e) { console.error(e); } if (!keep) close(); }   // onCancel 回傳 false 就不關（呼叫端自己 close，例：開頭旁白跟黑幕一起淡掉）
     function onKey(e) { if (e.key === 'Escape' && cb.onCancel && document.activeElement !== inp) { e.preventDefault(); cancel(); } }
     document.addEventListener('keydown', onKey);
     var ro = W.ResizeObserver ? new W.ResizeObserver(function () { layoutStage(); }) : null;
