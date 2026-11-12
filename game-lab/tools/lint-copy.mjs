@@ -102,12 +102,13 @@ function htmlStrings(src) {
 // ---------------------------------------------------------------------------
 // 1. 禁用字串（店主用語）；2. v3 拿掉的系統
 // ---------------------------------------------------------------------------
-const FORBID = ['——', '櫃台', '入耳', '遺物', '卡片資訊', '派對', '全場大合唱', '心聲', '反咬',
+const FORBID = ['——', '櫃台', '遺物', '卡片資訊', '派對', '全場大合唱', '心聲', '反咬',
   '視頻', '質量', '信息', '網絡', '軟件', '默認', '用戶', '屏幕', '登錄', '鼠標', '硬盤', '打印', '緩存', '加載'];
 // SPEC-v3 §10.6：v3 拿掉的系統（對決、教學、外殼的畫面字都不准有）
 const OLD_MECH = ['氣勢', '輾壓', '賭注', '相生', '割捨', '七星回擊', '霸權', '點播'];
 const HAS_CJK = /[㐀-鿿　-〿＀-￯]/;
-const AXIS_IN = [/(^|[^一-鿿])入\s?[0-9０-９]/, /[經冷](典|門)?\s?[0-9０-９]*\s?[／/、・|｜ ]\s?入(?![一-鿿])/, /^入[:：]?$/];
+// 「入耳」：舊的軸名不准（入耳 5、入耳：）；店主 11-12 的教學句用它當白話「難入耳」（再難入耳、難入耳），照用
+const AXIS_IN = [/入耳\s?[0-9０-９：:]/, /(^|[^一-鿿])入\s?[0-9０-９]/, /[經冷](典|門)?\s?[0-9０-９]*\s?[／/、・|｜ ]\s?入(?![一-鿿])/, /^入[:：]?$/];
 let HABIT_ZH = new Set();     // 脾氣的內部名（虛晃…）：不上畫面，「晃」不擋
 function scanStrings(file, strings, opts = {}) {
   for (const { s, line, src } of strings) {
@@ -214,6 +215,7 @@ for (const [key, beats] of Object.entries(C.script || {})) {
     for (const extra of ['prompt', 'stamp', 'quietText', 'button']) if (b[extra]) extras.push([extra, b[extra]]);
     if (b.set && b.set.stamp) extras.push(['set.stamp', b.set.stamp]);
     (b.prompts || []).forEach((t, j) => extras.push(['prompts[' + j + ']', t]));
+    (b.promptSubs || []).forEach((t, j) => { if (t) extras.push(['promptSubs[' + j + ']', t]); });
     for (const [extra, t] of extras) if (!seenExtra.has(t)) {
       seenExtra.add(t);
       add({ scene: SCENE[key] || key, where: where + '.' + extra, who: '（畫面字）', text: t, tag: extraTag(t), ui: true });
@@ -327,8 +329,21 @@ else {
     (R.example.read || []).forEach((t, k) => push('rules.example.read[' + k + ']', t));
     for (const k of ['eLabel', 'pLabel', 'rowLabel']) push('rules.example.' + k, R.example[k]);
   }
+  push('rules.why', R.why);
   push('rules.relics', R.relics);
   (R.foot || []).forEach((t, k) => push('rules.foot[' + k + ']', t));
+}
+// 牌桌小抄（點相剋圖打開；店主 11-12）
+(C.cheatSheet || []).forEach((r, k) => {
+  if (!TAG_OK(C.cheatSheetTag)) err('cheatSheet', '沒有 tag（cheatSheetTag）');
+  if (!Array.isArray(r) || r.length !== 2 || !r.every(x => typeof x === 'string' && x)) { err('cheatSheet[' + k + ']', '要是 [左欄, 右欄] 兩個字串'); return; }
+  if (len(r[0] + r[1]) > 20) err('cheatSheet[' + k + ']', '超過 20 字：' + r.join(' '));
+  add({ scene: '對決盤面・牌桌小抄（點相剋圖打開）', where: 'cheatSheet[' + k + ']', who: '（畫面字）', text: r[0] + '　' + r[1], tag: C.cheatSheetTag });
+});
+// 三軸 7 星的白話（挑王牌那行括號、唱盤前三張的小字）
+for (const [t, v] of Object.entries(C.aceGloss || {})) {
+  if (!TAG_OK(C.aceGlossTag)) err('aceGloss.' + t, '沒有 tag（aceGlossTag）');
+  add({ scene: '挑王牌那行括號／唱盤前三張的小字', where: 'aceGloss.' + t, who: '（畫面字）', key: (C.aceTitle || {})[t], text: v, tag: C.aceGlossTag });
 }
 
 // 對決盤面上的字（SPEC-v3 §4、§6）
@@ -379,6 +394,14 @@ else {
     add({ scene: k === 'wrong' ? '序章引導教學・點錯時' : '序章引導教學・按鈕與標題', where: 'tutorial.ui.' + k, who: k === 'wrong' ? '老闆' : '（畫面字）', text: v,
       tag: ORIG && ORIG.includes(v) && v.length > 3 ? '原句' : TUT.uiTag });
   }
+  // 唱盤前（教學那條路）：老闆攤開三張，一句亮一條箭頭（C.tutorial.intro；店主 11-12）
+  ((TUT.intro && TUT.intro.lines) || []).forEach((L, k) => {
+    const where = 'tutorial.intro.' + (L && L.id || k);
+    if (!L || typeof L.text !== 'string' || !L.text) { err(where, '沒有台詞'); return; }
+    if (!TAG_OK(TUT.introTag)) err(where, '沒有 tag（introTag）');
+    if (!/^「[^」]*」$/.test(L.text)) err(where, '說話的句子要用「」：' + L.text);
+    add({ scene: '序章引導教學・唱盤前（老闆攤開三張，看向老闆那條路）', where, who: ((TUT.intro && TUT.intro.who) || '老闆') + '・' + (L.id || k), text: L.text, tag: TUT.introTag });
+  });
   for (const [k, v] of Object.entries(TUT.learned || {})) {
     if (len(v) > 16) err('tutorial.learned.' + k, '超過 16 字：' + v);
     add({ scene: '序章引導教學・學會的小卡（飛進「?」）', where: 'tutorial.learned.' + k, who: '（畫面字）', text: (TUT.ui && TUT.ui.learnedPrefix || '') + v, tag: TUT.uiTag });

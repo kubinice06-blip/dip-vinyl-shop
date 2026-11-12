@@ -94,6 +94,14 @@
 .dl .rounds{font-size:11px;font-weight:700;line-height:14px;color:#555;letter-spacing:.02em;white-space:nowrap;font-family:var(--dl-zh);margin-bottom:2px}
 .dl .tri{position:relative;flex:none;width:var(--tri-w);height:var(--tri-h)}
 .dl .tri svg{display:block;width:100%;height:100%;overflow:visible;font-family:var(--dl-zh)}
+/* 牌桌小抄（店主 11-12）：點相剋圖打開（.tcol 不接點擊，圖本身接）；蓋在牌桌兩張的下半、不蓋相剋圖與結果浮框 */
+.dl .tri{pointer-events:auto;cursor:pointer}
+.dl .cheat{position:absolute;left:8px;right:8px;top:calc(var(--bt) + 1px);transform:translateY(-100%);z-index:6;display:grid;grid-template-columns:auto 1fr;column-gap:12px;row-gap:3px;align-items:baseline;
+  background:var(--bg,#fff);border:1px solid var(--ink,#111);box-shadow:0 6px 22px rgba(0,0,0,.2);padding:8px 12px;font-size:13px;line-height:19px;cursor:pointer}
+.dl .cheat b{font-weight:900;white-space:nowrap;letter-spacing:.04em}
+.dl .cheat span{min-width:0}
+.dl .cheat b span{min-width:0}
+.dl.short .cheat{font-size:12px;line-height:17px;padding:6px 10px}
 /* 提示句（店主 FIXLIST 9）：中間字帶（兩張封面下方）；出牌前是提示句，揭曉時換成結果框，下一手換回下一句提示 */
 .dl .hint{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) / 2);transform:translateY(-50%);z-index:3;
   display:flex;align-items:stretch;min-height:40px;border:1.5px solid var(--ink,#111);background:#fff;min-width:0;box-shadow:0 3px 0 rgba(0,0,0,.08)}

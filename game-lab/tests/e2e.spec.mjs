@@ -427,11 +427,11 @@ async function run() {
           }
           await waitScreen(page, 'duel');
           const res = await walkTutorial4(page, w, h, variant);
-          const C = await page.evaluate(t => ({ exp: window.DipLabContent.tutorial.expect[t], hp: window.DipLabContent.tutorial.hp }), tier);
+          const C = await page.evaluate(t => ({ exp: window.DipLabContent.tutorial.expect[t], hp: window.DipLabContent.tutorial.hp, atRes: window.DipLabContent.tutorial.steps.filter(s => s.kind === 'say' && (s.target || []).includes('result')).length }), tier);
           const done = await page.waitForFunction(() => window.__lab.save.tutorialDone === true, null, { timeout: 20000 }).then(() => true, () => false);
           const handsOk = res.hands && res.hands.length === 6 && res.hands.every((c, k) => c.kind === C.exp[k].kind && (C.exp[k].toE == null || c.toE === C.exp[k].toE) && (k === 4 ? c.toP === 5 - c.pStar && c.blocked === 'gap' : c.toP === C.exp[k].toP)) && res.hands[5].ace;
           const ko = await page.waitForFunction(() => window.__lab.screen() === 'scene' || (window.__lab.run && window.__lab.run.pending), null, { timeout: 20000 }).then(() => true, () => false);
-          const callOk = res.callouts.length === 5 && res.callouts.every(c => c && c.op > 0.95 && c.w >= 150 && c.l2);
+          const callOk = res.callouts.length === C.atRes && res.callouts.every(c => c && c.op > 0.95 && c.w >= 150 && c.l2);
           if (want(19)) record(19, size, handsOk && done && ko && callOk && res.learned.join() === 'L1,L2,L3,L4,L5,L6', `${tier}: callouts ${callOk ? 'ok' : JSON.stringify(res.callouts)}; hands ${JSON.stringify((res.hands || []).map(c => c.kind + ':' + c.toE + '/' + c.toP))}; learned ${res.learned}; tutorialDone ${done}; KO→收尾 ${ko}`);
           if (variant === 'wrong') {
             // 第 1 手點疊著那排的別張：沒打開；第 2 手點別色屬性鈕：沒丟出去、還是那張開著（v5 手風琴）

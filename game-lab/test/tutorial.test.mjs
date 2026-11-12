@@ -4,7 +4,7 @@
 // 照教學的每一步餵 gate（跟 duel.js 送的一樣；v5 手風琴：點一張封面（疊著那排露出來的那一條）＝在那張打開 {kind:'card'} → 點屬性鈕＝丟 {kind:'throw'}；
 //   再點打開那張、點手牌外面 {kind:'collapse'} 教學中一律不放行、也不罵；沒有 {kind:'spread'} 了），丟出去時 resolveTurn。
 // 路線：三張王牌 × 特價箱 84 種挑法 × {照做、真的點（card 帶 at 座標）、點錯、看唱片資訊}，每條：
-//   18 步照順序走完、每手 kind／toE／toP＝C.tutorial.expect、第 5 手剋不動（你 −(5−冷)）、第 6 手王牌 KO、前 5 手不 KO、學到 L1–L6、你沒倒。
+//   26 步照順序走完、每手 kind／toE／toP＝C.tutorial.expect、第 5 手剋不動（你 −(5−冷)）、第 6 手王牌 KO、前 5 手不 KO、學到 L1–L6、你沒倒。
 //   手牌 5 張（FIXLIST 11；CFG.handSize）：每一手開手時你手上都是 5 張、要教的那張在手上；第 5 手手指指的（blockedChoice 最左）＝特價箱挑的第 2 張。男子的暗手照舊 3 張。
 // 另外測：步驟資料（六手、字數、禁用字、目標名＝duel.js 的名字、allow、三角邊、小卡）、老闆說的話是真的、擋錯招（e2e #20 的純邏輯版）、
 // 重掛（依 duel.n 接到那一手）、跳過、放手、重看教學的包包（禮物＋特價箱 c／o／h 或上次序章挑的三張）。
@@ -33,10 +33,10 @@ const len = s => [...String(s)].length;
 const POOL = C.bargain.pool.slice();
 const COMBOS = [];
 for (let a = 0; a < POOL.length; a++) for (let b = a + 1; b < POOL.length; b++) for (let c = b + 1; c < POOL.length; c++) COMBOS.push([POOL[a], POOL[b], POOL[c]]);
-const IDS = ['m1', 'm2', 'm3', 'm4', 'm5', 'k1', 'k2', 'k3', 'c1', 'c2', 'h1', 'h2', 'b1', 'b2', 'b3', 'a1', 'a2', 'a3'];
-const LEARN_AT = { m4: 'L1', k3: 'L2', c2: 'L3', h2: 'L4', b3: 'L5', a3: 'L6' };
-const LEARNED = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場用一次' };   // §2.5.5
-const TRI = { k1: ['oc'], k2: ['oc'], c1: ['ch'], c2: ['ch'], h1: ['ho'], h2: ['ho'], b1: ['oc'], b2: ['oc'] };
+const IDS = ['m1', 'm2', 'm3', 'm4', 'm5', 'k0', 'k1', 'k2', 'k3', 'c0', 'c1', 'c2', 'c3', 'h0', 'h1', 'h2', 'h3', 'h4', 'b0', 'b1', 'b2', 'b3', 'b4', 'a1', 'a2', 'a3'];   // v5 教學（店主 11-12）：第 2–5 手前面加說明（讀提示）、第 3–5 手結算再講一次、第 4 手指相剋圖
+const LEARN_AT = { m4: 'L1', k3: 'L2', c3: 'L3', h3: 'L4', b3: 'L5', a3: 'L6' };
+const LEARNED = { L1: '同色比星數', L2: '冷門剋經典：大家都聽過的不稀奇', L3: '經典剋硬蕊：比不過名盤', L4: '硬蕊剋冷門：稀有不等於有料', L5: '差 2 星以上：剋不動', L6: '王牌 7 星，一場用一次' };   // §2.5.5；L2–L5 店主 11-12 改
+const TRI = { k1: ['oc'], k2: ['oc'], c1: ['ch'], c2: ['ch'], h1: ['ho'], h2: ['ho'], h4: ['oc', 'ch', 'ho'], b1: ['oc'], b2: ['oc'] };
 
 // 教學那場：跟 ui.js 一樣用 startFight(run, C, {tutorial:true})；包包＝老闆四張＋特價箱挑的三張（照挑的順序）
 function tutDuel(tier, bargain, seedKey) {
@@ -197,9 +197,9 @@ function nameKnown(n) {
   for (const pre of ['chip:id:', 'chip:blocked:', 'card:id:', 'card:blocked:', 'chip:best:', 'card:best:']) if (n.startsWith(pre)) return duelSrc.includes("'" + pre + "'") || duelSrc.includes("startsWith('" + pre);
   return duelSrc.includes('data-tut="' + n + '"') || duelSrc.includes("'" + n + "'") || duelSrc.includes('"' + n + '"') || new RegExp('data-tut="\\$\\{isAce \\? \'' + n + '\'').test(duelSrc);
 }
-section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝duel.js、allow、三角邊、小卡 L1–L6', () => {
+section('步驟資料：26 步、六手、≤25 字、禁用字、目標名＝duel.js、allow、三角邊、小卡 L1–L6', () => {
   const steps = T.steps;
-  eq(steps.map(s => s.id), IDS, '18 步照順序');
+  eq(steps.map(s => s.id), IDS, '26 步照順序');
   const FORBID = /——|—|派對|櫃台|卡片資訊|氣勢|輾壓|賭注|相生|割捨|七星回擊|霸權|點播|配件|脾氣|急了|看穿/;
   for (const s of steps) {
     const texts = typeof s.text === 'object' ? Object.values(s.text) : [s.text];
@@ -218,7 +218,7 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
   }
   eq(steps.find(s => s.id === 'm2').text, '先出這張：點一下。', '第 1 手點那張那步：「先出這張：點一下。」（v5：點疊著那排露出來的那一條就打開）');
   ok(!steps.some(s => /攤開/.test(typeof s.text === 'object' ? Object.values(s.text).join('') : s.text)), '教學沒有一句說「攤開」');
-  eq(Object.fromEntries(steps.filter(s => s.learn).map(s => [s.id, s.learn])), LEARN_AT, '學會的小卡在 m4／k3／c2／h2／b3／a3');
+  eq(Object.fromEntries(steps.filter(s => s.learn).map(s => [s.id, s.learn])), LEARN_AT, '學會的小卡在 m4／k3／c3／h3／b3／a3');
   eq(T.learned, LEARNED, '小卡 L1–L6＝§2.5.5');
   for (const v of Object.values(T.learned)) ok(len(v) <= 16 && !/霸權|配件/.test(v), '小卡 ≤16 字、沒有禁用字：' + v);
   eq(Object.keys(T.ui).sort(), ['learnedPrefix', 'learnedTitle', 'replay', 'skipTut', 'who', 'wrong'], 'ui 只剩用得到的鍵');
@@ -226,7 +226,7 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
   eq(T.ui.wrong, '先點我指的這裡。', '點錯的那句（e2e #20）');
   for (const t of TIERS) {
     const S = TUT.stepsFor(C, t), pick = T.script[t].pick;
-    eq(S.map(s => s.hand), [1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6], t + ' 每步屬於第幾手');
+    eq(S.map(s => s.hand), [1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6], t + ' 每步屬於第幾手');
     for (let h = 1; h <= 6; h++) eq(S.filter(s => s.hand === h && s.allow && s.allow.throw).length, 1, t + ' 第 ' + h + ' 手剛好一個「丟」');
     for (const s of S) {
       for (const n of [...(s.target || []), ...(s.point ? [s.point] : []), ...(s.look || []), ...(s.keep || [])]) {
@@ -257,19 +257,22 @@ section('老闆說的話是真的：提示、點破的關鍵字、三相剋、�
   ok(T.steps.find(s => s.id === 'm1').target.includes('e-hint'), 'm1 指著提示句');
   const key1 = hint(T.hints[0]).key;
   ok(T.steps.find(s => s.id === 'm5').text.includes('『' + key1 + '』就是' + ZH[T.plays[0].attr]), 'm5 點破的關鍵字＝第 1 手提示句的 key（' + key1 + '）＋他出的色');
-  ok(T.steps.find(s => s.id === 'b1').text.includes('『' + hint(T.hints[4]).key + '』'), 'b1「又是『名盤』」＝第 5 手提示句的 key');
+  ok(T.steps.find(s => s.id === 'b0').text.includes(hint(T.hints[4]).key), 'b0「這次是真正的大名盤」＝第 5 手提示句的 key');
+  for (const [id, h] of [['k0', 1], ['c0', 2], ['h0', 3]]) ok(T.steps.find(s => s.id === id).text.startsWith('『' + hint(T.hints[h]).key + '』'), id + ' 說明點破第 ' + (h + 1) + ' 手提示句的 key（' + hint(T.hints[h]).key + '）');
+  for (const id of ['k0', 'c0', 'h0', 'b0']) ok(T.steps.find(s => s.id === id).target.includes('e-hint'), id + ' 指著提示句');
+  ok(T.steps.find(s => s.id === 'h4').target.includes('tri') && TUT.atResolve(T.steps.find(s => s.id === 'h4')), 'h4 指相剋圖、結算時講');
   eq(hint(T.hints[4]).key, key1, '第 5 手的關鍵字跟第 1 手點破的一樣（又是）');
   eq([BEATS.o, BEATS.c, BEATS.h], ['c', 'h', 'o'], '冷剋經、經剋硬、硬剋冷');
-  ok(T.steps.find(s => s.id === 'k1').text.startsWith('冷門剋經典') && T.plays[1].attr === 'c', 'k1 冷門剋經典，他第 2 手出經典');
-  ok(T.steps.find(s => s.id === 'c1').text.startsWith('經典剋硬蕊') && T.plays[2].attr === 'h', 'c1 經典剋硬蕊，他第 3 手出硬蕊');
-  ok(T.steps.find(s => s.id === 'h1').text.startsWith('硬蕊剋冷門') && T.plays[3].attr === 'o', 'h1 硬蕊剋冷門，他第 4 手出冷門');
+  ok(T.steps.find(s => s.id === 'k3').text.includes('冷門剋經典') && T.plays[1].attr === 'c', 'k3 冷門剋經典，他第 2 手出經典');
+  ok(T.steps.find(s => s.id === 'c3').text.startsWith('經典剋硬蕊') && T.plays[2].attr === 'h', 'c3 經典剋硬蕊，他第 3 手出硬蕊');
+  ok(T.steps.find(s => s.id === 'h3').text.startsWith('硬蕊剋冷門') && T.plays[3].attr === 'o', 'h3 硬蕊剋冷門，他第 4 手出冷門');
   for (const t of TIERS) {
     const r = route(t, null);
     const [c1, c2, , , c5, c6] = r.clashes;
     ok(c1.pAttr === c1.eAttr && c1.kind === 'mirrorWin', t + ' m4「同色就比星數，多的扣差額」：第 1 手同色、比星', c1);
     eq(c1.toE, c1.pStar - c1.eStar, t + ' m4 多的扣差額');
     ok(c2.kind === 'counter' && c2.toE === c2.pStar, t + ' k3「剋中：用你那顆星扣他」', c2);
-    ok(c5.kind === 'mirrorLose' && c5.blocked === 'gap' && c5.eStar - c5.pStar >= 2 && c5.toP === c5.eStar - c5.pStar, t + ' b3「他高你 2 星以上，剋不動，改比星數」', c5);
+    ok(c5.kind === 'mirrorLose' && c5.blocked === 'gap' && c5.eStar - c5.pStar >= 2 && c5.toP === c5.eStar - c5.pStar, t + ' b3／b4「他高你 2 星以上，戳不動」「剋不動，就改比星數」', c5);
     eq(c6.pStar, 7, t + ' a1「王牌：7 星」');
     eq(E.CFG.aceStar, 7, '王牌 7 星');
   }
@@ -281,7 +284,7 @@ section('老闆說的話是真的：提示、點破的關鍵字、三相剋、�
 });
 
 // ---------------------------------------------------------------------------
-section('三王牌 × 特價箱 84 種挑法 × {照做、真的點、點錯、看唱片資訊}：18 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
+section('三王牌 × 特價箱 84 種挑法 × {照做、真的點、點錯、看唱片資訊}：26 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
   eq(COMBOS.length, 84, '特價箱 9 張挑 3＝84 種');
   let n = 0;
   for (const t of TIERS) for (let k = 0; k < COMBOS.length; k++) {
@@ -291,7 +294,7 @@ section('三王牌 × 特價箱 84 種挑法 × {照做、真的點、點錯、�
       const r = route(t, combo, variant, { seedKey: 'tut-' + t + '-' + k });
       const exp = T.expect[t];
       n++;
-      eq(r.steps, IDS, r.tag + ' 18 步照順序');
+      eq(r.steps, IDS, r.tag + ' 26 步照順序');
       eq(r.clashes.length, 6, r.tag + ' 打 6 手');
       r.clashes.forEach((cl, h) => {
         const x = exp[h];
@@ -348,7 +351,9 @@ section('擋錯招（e2e #20 的純邏輯版）：第 1 手點別張／王牌、
   for (let h = 0; h < 4; h++) { const p = target(duel, T.script.pearl.pick[h]); E.resolveTurn(duel, actOf(p), {}); }
   eq(duel.n, 5, '第 5 手');
   const R5 = TUT.createRunner(C, 'pearl', duel, { engine: E });
-  eq(R5.cur().id, 'b1', '重掛在 b1');
+  eq(R5.cur().id, 'b0', '重掛在 b0（第 5 手的說明）');
+  R5.begin(); R5.done();
+  eq(R5.cur().id, 'b1', '說明講完到 b1');
   R5.begin();
   const b = E.blockedChoice(duel, 'o');
   ok(b && b.i === 0, 'blockedChoice＝最左那張', b);
@@ -362,8 +367,8 @@ section('擋錯招（e2e #20 的純邏輯版）：第 1 手點別張／王牌、
 });
 
 // ---------------------------------------------------------------------------
-section('重掛：依 duel.n 接到那一手（1 m1、2 k1、3 c1、4 h1、5 b1、6 a1），前面的小卡算學過、不飛', () => {
-  const firstOf = { 1: 'm1', 2: 'k1', 3: 'c1', 4: 'h1', 5: 'b1', 6: 'a1' };
+section('重掛：依 duel.n 接到那一手（1 m1、2 k0、3 c0、4 h0、5 b0、6 a1），前面的小卡算學過、不飛', () => {
+  const firstOf = { 1: 'm1', 2: 'k0', 3: 'c0', 4: 'h0', 5: 'b0', 6: 'a1' };
   const before = { 1: [], 2: ['L1'], 3: ['L1', 'L2'], 4: ['L1', 'L2', 'L3'], 5: ['L1', 'L2', 'L3', 'L4'], 6: ['L1', 'L2', 'L3', 'L4', 'L5'] };
   for (const t of TIERS) {
     const { duel } = tutDuel(t);
@@ -378,7 +383,7 @@ section('重掛：依 duel.n 接到那一手（1 m1、2 k1、3 c1、4 h1、5 b1�
     const steps = TUT.stepsFor(C, t);
     for (let h = 1; h <= 6; h++) eq(steps[TUT.stepForHand(steps, h)].id, firstOf[h], t + ' stepForHand(' + h + ')');
     eq(TUT.stepForHand(steps, 7), steps.length, t + ' stepForHand(7)＝結束');
-    eq(TUT.createRunner(C, t, duel, { engine: E, from: 2 }).cur().id, 'k1', t + ' from 可以指定那一手');
+    eq(TUT.createRunner(C, t, duel, { engine: E, from: 2 }).cur().id, 'k0', t + ' from 可以指定那一手');
   }
 });
 

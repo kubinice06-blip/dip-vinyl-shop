@@ -354,9 +354,11 @@
     var lines = (R.lines || []).map(function (s, i) { return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : esc(s)) + '</div></li>'; }).join('');
     return '<div class="lb-rules"><h1>' + esc(R.title || '品味對決・規則') + '</h1>' + triSVG() +
       '<ol class="rl">' + lines + '</ol>' +
+      (R.why ? '<p class="rwhy">' + whyHTML(R.why) + '</p>' : '') +      // 六行下面另起一段「為什麼這樣剋」（店主 11-12；六行一字不動）
       (R.relics ? '<p class="rrel">' + esc(R.relics) + '</p>' : '') +
       '<div class="rfoot">' + (R.foot || []).map(function (t) { return esc(fill(t, R.hpText || {})); }).join('<br>') + '</div></div>';
   }
+  function whyHTML(t) { var i = String(t).indexOf('：'); return i > 0 ? '<b>' + esc(t.slice(0, i)) + '</b>' + esc(t.slice(i)) : esc(t); }
   function tutLabel(k, d) { var u = C && C.tutorial && C.tutorial.ui; return (u && typeof u[k] === 'string' && u[k]) || d; }
   function openRules() {
     var canReplay = canTutorial() && UI.screen !== 'duel' && !UI.tutReplay;
@@ -852,7 +854,9 @@
           menu.innerHTML = '';
           guardClicks(menu);
           items.forEach(function (it, i) {
-            var b = el('button', 'lb-dqopt key', '<span class="cur" aria-hidden="true">▸</span>' + esc(String(it).replace(/^▶\s*/, '')));
+            var sub = o.subs && o.subs[i];      // 按鈕下方一行小字（O21 跳過教學；店主 11-12）
+            var b = el('button', 'lb-dqopt key' + (sub ? ' has-sub' : ''), '<span class="cur" aria-hidden="true">▸</span>' +
+              (sub ? '<span class="mt">' + esc(String(it).replace(/^▶\s*/, '')) + '<small class="sub">' + esc(sub) + '</small></span>' : esc(String(it).replace(/^▶\s*/, ''))));
             b.type = 'button'; b.setAttribute('data-i', i);
             b.addEventListener('click', function (e) {
               stopEv(e); if (menu._done) return; menu._done = true;
@@ -1023,6 +1027,52 @@
       autoAct(function () { var b = UI.auto && UI.auto.guess ? qs('.lb-ct[data-cid="' + (UI.auto.guess === 'right' ? ctx.tonightId : ids.filter(function (x) { return x !== ctx.tonightId; })[0]) + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); });
     });
   }
+  // 唱盤前（教學那條路；C.tutorial.intro）：老闆攤開猜歌那三張（三軸各 7 星），一句一句講，一句亮一條箭頭（相剋圖＝盤面那張，DipLabDuel.triSVG）。
+  //   點面板任何地方＝下一句（每句出現 280 ms 內的點不算，防連點跳句）；不點也會照對白框的閱讀時間往下走。講完把最後一句留在對白框，接著遇敵
+  function tutIntroPanel(sc) {
+    var I = C.tutorial && C.tutorial.intro, lines = (I && I.lines) || [];
+    if (!lines.length) return Promise.resolve();
+    var DU = W.DipLabDuel, gloss = C.aceGloss || {};
+    return new Promise(function (res) {
+      var html = '<div class="lb-trio">' + TIERS.map(function (t) {
+        var c = card(C.aces[t]), ax = C.aceAxis[t];
+        if (!c) return '';
+        return '<div class="lb-ct ax-' + ax + '" data-tier="' + t + '">' + coverHTML(c, { info: false, badge: false }) +
+          '<div class="ar">' + esc(c.artist) + '</div><div class="al one">' + esc(c.album) + '</div>' +
+          '<div class="axl"><b class="' + ax + '">' + ZH[ax] + ' 7</b></div>' + (gloss[t] ? '<div class="gl">' + esc(gloss[t]) + '</div>' : '') + '</div>';
+      }).join('') + '</div>' +
+        '<div class="row"><div class="tri3" aria-hidden="true"></div>' +
+        '<button type="button" class="say"><span class="nm">' + esc((I && I.who) || '老闆') + '</span><span class="tx"></span><span class="nx" aria-hidden="true">▼</span></button></div>';
+      var s = sheet(html, 'tutintro');
+      var tri = qs('.tri3', s), tx = qs('.say .tx', s), k = -1, at = 0, timer = 0, done = false;
+      function show() {
+        var L = lines[k], on = [].concat(L.tri || []);
+        tx.innerHTML = (String(L.text || '').match(/[^，。！？]+[，。！？」]*/g) || []).map(function (g) { return '<span class="sg">' + esc(g) + '</span>'; }).join('');   // 只在標點後面換行
+        if (tri) tri.innerHTML = DU && DU.triSVG ? DU.triSVG(on, 'lbti') : '';
+        // 亮哪幾張：lit 'all'＝三張各亮自己那一色；一條箭頭＝那兩張亮、第三張淡
+        var lit = L.lit === 'all' || on.length !== 1 ? ATTRS.slice() : [on[0][0], on[0][1]];
+        qsa('.lb-ct', s).forEach(function (x) { var ax = C.aceAxis[x.getAttribute('data-tier')]; x.classList.toggle('lit', lit.indexOf(ax) >= 0); x.classList.toggle('dim', lit.indexOf(ax) < 0); });
+        at = now();
+        clearTimeout(timer);
+        timer = setTimeout(next, Math.min(6500, 1400 + 140 * (L.text || '').length) / speed());
+        autoAct(next, 160);
+      }
+      function next() {
+        if (done) return;
+        if (++k >= lines.length) {
+          done = true; clearTimeout(timer);
+          // 最後一句留在對白框（面板收掉後不要閃回 O21 那句），直到盤面滑進來
+          var dq = sc && sc.dq; if (dq) { var nm = qs('.nm', dq), t2 = qs('.tx', dq); if (nm) nm.textContent = (I && I.who) || '老闆'; if (t2) t2.textContent = lines[lines.length - 1].text || ''; dq.classList.remove('narr', 'foe', 'boss'); }
+          closeSheet(s); res(); return;
+        }
+        if (k > 0) sfx('tick');
+        show();
+      }
+      s.addEventListener('click', function () { if (done || now() - at < 280) return; next(); });
+      next();
+      roomForSheet(s);
+    });
+  }
   // 挑王牌（O9；再來一夜）：三張王牌（殿堂・經典 7…）；點封面下面那行＝選、封面＝唱片資訊、「就這張」確認。不切歌（D §2：音樂播到私人收藏那句說完）
   //   預設選中＝猜歌時選的那張（猜對＝今晚那張）
   function acePickPanel(sc, ctx, beat) {
@@ -1042,7 +1092,8 @@
       function mark() {
         qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-tier') === sel); });
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
-        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>，一場用一次。';
+        var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
+        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。';
       }
       mark();
       roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）。說明那行先填好再量（矮螢幕它沒有最小高，空著量＝0；V5-play-7）
@@ -1378,7 +1429,7 @@
       // 兩顆一律出現（D §2）：第 0 顆「看向老闆」＝老闆帶的那場（教學；教學程式不在時照課表打、只是沒有遮罩）、第 1 顆「手伸進袋子」＝直接打
       var items = (Array.isArray(b.prompts) && b.prompts.length) ? b.prompts.slice(0, 2) : [b.prompt || '▶ 品味對決'];
       var autoI = items.length > 1 ? (UI.auto && UI.auto.tut ? 0 : 1) : 0;
-      return dlg.menu(items, { autoIndex: autoI }).then(function (i) {
+      return dlg.menu(items, { autoIndex: autoI, subs: Array.isArray(b.promptSubs) ? b.promptSubs.slice(0, 2) : null }).then(function (i) {
         var r = save.run; if (!r) return go('title');
         var tut = items.length > 1 && i === 0;
         r.tut = tut; persist();
@@ -1386,6 +1437,9 @@
         dlg.hold();
         // 選完才走：老闆帶路到唱盤後面、兩人到兩側，三人站定才遇敵（D §3）
         return dlg.steps((C.blocking && C.blocking.toDuel) || [], 'toDuel').then(function () {
+          // 教學那條路：三人站定後，老闆攤開猜歌那三張講相剋的道理（店主 11-12）；跳過教學那條路不受影響
+          return tut ? tutIntroPanel(sc) : null;
+        }).then(function () {
           beginFight({ tutorial: tut, overlay: tut && canTutorial(), enter: true, prewalked: true });
           return new Promise(function () {});
         });

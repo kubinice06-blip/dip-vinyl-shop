@@ -130,7 +130,7 @@ export async function answerBargain(page) {
   });
 }
 // 序章：選擇的 ▼ 亮才點；面板照最少點擊作答；mode 'direct'＝手伸進袋子（直接打）、'tut'＝看向老闆（教學）
-//   o.until：'duel'（預設）｜'bargainDone'（特價區挑完就停）｜'acePicked'（挑完王牌、run 建好就停）
+//   o.until：'duel'（預設）｜'bargainDone'（特價區挑完就停）｜'acePicked'（挑完王牌、run 建好就停）｜'tutintro'（教學那條路：唱盤前老闆攤開三張那個面板一出現就停）
 export async function prologueToDuel(page, mode = 'direct', tier = null, o = {}) {
   let bargainCounted = false;
   for (let guard = 0; guard < 1500; guard++) {
@@ -147,6 +147,9 @@ export async function prologueToDuel(page, mode = 'direct', tier = null, o = {})
     if (o.until === 'bargainDone' && st.picked) return true;
     if (st.arming) { await sleep(100); continue; }
     if (st.ec || /bargain/.test(st.sheet)) { await sleep(300); if (await answerBargain(page)) { page._clicks += 4; bargainCounted = true; } await sleep(300); continue; }
+    // 唱盤前（教學那條路）：老闆攤開三張講相剋，點一下一句（每句 280 ms 內的點不算）
+    if (o.until === 'tutintro' && /tutintro/.test(st.sheet)) return true;
+    if (/tutintro/.test(st.sheet)) { await sleep(320); await jsClick(page, '.lb-sheet.tutintro .say'); await sleep(120); continue; }
     if (/guess/.test(st.sheet)) {
       await sleep(300);
       if (o.onGuess) { const f = o.onGuess; o.onGuess = null; await f(); }
