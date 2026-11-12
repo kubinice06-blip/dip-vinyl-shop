@@ -232,3 +232,7 @@
   .dl .ab:active{transform:none}
 }
 .dl.over .lastline{visibility:hidden}   /* 打完：大章在中間，「上一手」那行不要從大章兩側露出半截（R2 截圖） */
+/* 唬你／剋不動的結果框停住（店主 11-12）：最下面一行灰字「點一下繼續 ▼」 */
+.dl .callout .l4{display:none;font-size:10px;font-weight:700;line-height:14px;color:var(--gray,#888);text-align:right;letter-spacing:.08em;margin-top:1px}
+.dl .callout.wait .l4{display:block;animation:dlBlink 1s steps(1,end) infinite}
+@keyframes dlBlink{50%{opacity:.35}}

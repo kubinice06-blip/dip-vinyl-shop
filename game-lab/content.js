@@ -540,7 +540,8 @@
     bluff: '他唬你！『{key}』是{hint}，他出的是{e}。', honest: '『{key}』是{hint}，他照實出。',
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
-    roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏'
+    roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
+    tapOn: '點一下繼續'   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
   };
   C.duelTextTag = '新';
   // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄寫全名；duel.js 只把屬性第一個字上色、第二個字黑、剋灰（店主 11-12）
