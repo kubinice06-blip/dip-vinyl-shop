@@ -44,6 +44,8 @@
   // ===================================================================
   C.aces = { hall: 'radiohead-ok-computer', pearl: 'barney-wilen-zodiac', heresy: 'swans-filth' };
   C.aceTitle = { hall: '殿堂', pearl: '流亡', heresy: '異端' };          // 王牌名（附錄 D）
+  C.aceGloss = { hall: '大家都聽過的名盤', pearl: '沒幾個人聽過', heresy: '難入耳，越前衛越高' };   // 三軸 7 星的白話（挑王牌那行括號、唱盤前三張的小字；店主 11-12）
+  C.aceGlossTag = '新';
   C.aceAxis = { hall: 'c', pearl: 'o', heresy: 'h' };                    // 7 星那軸（王牌只能丟這一軸）
   C.gifts = {
     hall:   ['david-bowie-low', 'vashti-bunyan-just-another-diamond-day', 'scott-walker-tilt', 'beverly-glenn-copeland-keyboard-fantasies'],
@@ -342,7 +344,7 @@
       { id: 'O20', who: '', text: '老闆不發一語，緩步走出櫃檯，站在兩人之間。', tag: '原句', set: { emote: { p: null } }, act: [walk('o', 'mid', 36)] },
       // 兩顆都是接受：第 0 顆＝老闆帶的教學那場、第 1 顆＝直接打；沒有「轉身離開」。選完照 C.blocking.toDuel 走到唱盤
       { id: 'O21', who: '老闆', text: '「既然雙方都不服氣，不如來一場品味對決如何？」', tag: '原句', ui: 'duel',
-        prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'] }
+        prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'], promptSubs: ['', '跳過教學'] }   // promptSubs：按鈕下方的小字（店主 11-12：不接在括號後面）
     ],
     // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
     //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 撿起面板（沒有旁白、沒有敘述標題）
@@ -466,7 +468,7 @@
   //   key 必填、必為 text 的子字串；揭曉後的結果句用它教「『key』是 X」（duelText.bluff／honest）
   //   startFight 把 hints 的 id 組成 hintTable 傳進 startDuel；duel 裡只存 id
   // ===================================================================
-  C.hintKeywords = { c: ['名盤', '紀念版', '大家都聽過'], o: ['絕版', '白版', '沒人聽過'], h: ['噪音', '聽不懂', '實驗'] };
+  C.hintKeywords = { c: ['名盤', '紀念版', '大家都聽過'], o: ['絕版', '自主發行', '沒人聽過'], h: ['噪音', '聽不懂', '實驗'] };
   C.hintKeywordsTag = '店主';
   C.hints = {
     c: [
@@ -478,7 +480,7 @@
     ],
     o: [
       { id: 'o1', text: '他嘴角藏著「你沒聽過吧」的笑。', key: '沒聽過', tag: '店主' },
-      { id: 'o2', text: '他從箱底挖出一張白版。', key: '白版', tag: '店主' },
+      { id: 'o2', text: '他從箱底挖出一張自主發行盤。', key: '自主發行', tag: '店主' },   // 店主 11-12（v5 教學）：白版 → 自主發行
       { id: 'o3', text: '「這張只壓了三百張。」', key: '只壓了三百張', tag: '店主' },
       { id: 'o4', text: '他翻著一本手寫的絕版清單。', key: '絕版', tag: '店主' },
       { id: 'o5', text: '「這張，網路上查不到。」', key: '查不到', tag: '店主' }
@@ -497,7 +499,7 @@
   // ===================================================================
   C.coachTips = {
     tip_mirror: '同色比星數，多的扣差額。',
-    tip_bluff: '提示不一定是真的。',
+    tip_bluff: '嘴上說名盤，手上不一定是。',
     tip_block: '差 2 星以上，剋不動。',
     tip_ace: '王牌 7 星，一場用一次。',
     tip_rounds: '六手沒分勝負，比聲望條剩幾成。'
@@ -530,6 +532,9 @@
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏'
   };
   C.duelTextTag = '新';
+  // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄的 經／冷／硬 由 duel.js 上色
+  C.cheatSheet = [['冷剋經', '大家都聽過的不稀奇'], ['經剋硬', '再難入耳也比不過名盤'], ['硬剋冷', '再冷門，碰上真硬的也得低頭'], ['差 2 星以上', '剋不動，比星數']];
+  C.cheatSheetTag = '新';
 
   // ===================================================================
   // 規則卡（§2.2.8；「?」小抄與標題畫面共用）。lines＝D §5 規則卡六行，第 6 行照 FIXLIST 2／3 改（tag 店主；畫面上的編號由 UI 加）
@@ -545,6 +550,7 @@
       '沒有相剋就比星數，高的扣差額；一樣大不扣。',
       '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。'
     ],
+    why: '為什麼這樣剋：冷門笑經典太大眾，經典壓得住難懂的硬蕊，硬蕊拆穿只是沒人聽過的冷門。',   // 六行下面另起一段（店主 11-12；六行一字不動）
     relics: '發燒配件：自動生效，最多帶三件。',
     foot: ['點專輯再點屬性出牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
   };
@@ -618,25 +624,49 @@
     steps: [
       { id: 'm1', kind: 'say', target: ['e-hint'], text: '上面這句是提示，暗示他這手要出什麼。', bubble: 'below', tag: '新' },
       { id: 'm2', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, text: '先出這張：點一下。', bubble: 'above', tag: '新' },
-      { id: 'm3', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, text: '出經典，跟他比星數。', bubble: 'above', tag: '新' },
+      { id: 'm3', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, text: '他炫名盤，你也拿名盤：比星數。', bubble: 'above', tag: '新' },
       { id: 'm4', kind: 'say', target: ['result'], text: '同色比星數，多的扣差額。', learn: 'L1', tag: '新' },
       { id: 'm5', kind: 'say', target: ['result'], text: '『名盤』就是經典。提示裡會藏這種字。', tag: '新' },
-      { id: 'k1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['oc'], text: '冷門剋經典：出這張。', bubble: 'above', tag: '新' },
+      // v5（店主 11-12）：第 2–5 手「讀提示（說明）→ 講道理（點牌）→ 出牌（點屬性）→ 結算再講一次」
+      { id: 'k0', kind: 'say', target: ['e-hint'], text: '『紀念版』：他要拿大家都聽過的壓你。', bubble: 'below', tag: '新' },
+      { id: 'k1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['oc'], text: '大家都聽過的，不稀奇。出這張。', bubble: 'above', tag: '新' },
       { id: 'k2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['oc'], text: '出冷門。', bubble: 'above', tag: '新' },
-      { id: 'k3', kind: 'say', target: ['result'], text: '剋中：用你那顆星扣他。', learn: 'L2', tag: '新' },
-      { id: 'c1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['ch'], text: '經典剋硬蕊：出這張。', bubble: 'above', tag: '新' },
-      { id: 'c2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['ch'], text: '出經典。', learn: 'L3', bubble: 'above', tag: '新' },
-      { id: 'h1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['ho'], text: '硬蕊剋冷門：出這張。', bubble: 'above', tag: '新' },
-      { id: 'h2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['ho'], text: '出硬蕊。', learn: 'L4', bubble: 'above', tag: '新' },
-      { id: 'b1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['oc'], text: '又是『名盤』。出這張試試。', bubble: 'above', tag: '新' },
+      { id: 'k3', kind: 'say', target: ['result'], text: '剋中！冷門剋經典，用你那顆星扣他。', learn: 'L2', tag: '新' },
+      { id: 'c0', kind: 'say', target: ['e-hint'], text: '『噪音』：他要拿難懂的嚇你。', bubble: 'below', tag: '新' },
+      { id: 'c1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['ch'], text: '再難入耳，也比不過名盤。出這張。', bubble: 'above', tag: '新' },
+      { id: 'c2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['ch'], text: '出經典。', bubble: 'above', tag: '新' },
+      { id: 'c3', kind: 'say', target: ['result'], text: '經典剋硬蕊：名盤是時間淬煉過的。', learn: 'L3', tag: '新' },
+      { id: 'h0', kind: 'say', target: ['e-hint'], text: '『自主發行』：他要拿沒人聽過的唬你。', bubble: 'below', tag: '新' },
+      { id: 'h1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['ho'], text: '沒人聽過，不代表厲害。出這張。', bubble: 'above', tag: '新' },
+      { id: 'h2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['ho'], text: '出硬蕊。', bubble: 'above', tag: '新' },
+      { id: 'h3', kind: 'say', target: ['result'], text: '硬蕊剋冷門：稀有，不等於有料。', learn: 'L4', tag: '新' },
+      // 指相剋圖（結算時講：target 含 result，洞連相剋圖一起框、三條箭頭都亮）
+      { id: 'h4', kind: 'say', target: ['result', 'tri'], tri: ['oc', 'ch', 'ho'], text: '他炫哪一種，你就拿剋它的那種回。', tag: '新' },
+      { id: 'b0', kind: 'say', target: ['e-hint'], text: '這次是真正的大名盤。', bubble: 'below', tag: '新' },
+      { id: 'b1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['oc'], text: '拿特價箱這張冷門，戳戳看。', bubble: 'above', tag: '新' },
       { id: 'b2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['oc'], text: '出冷門。', bubble: 'above', tag: '新' },
-      { id: 'b3', kind: 'say', target: ['result'], text: '他高你 2 星以上，剋不動，改比星數。', learn: 'L5', tag: '新' },
+      { id: 'b3', kind: 'say', target: ['result'], text: '差太多了：他高你 2 星以上，戳不動。', learn: 'L5', tag: '新' },
+      { id: 'b4', kind: 'say', target: ['result'], text: '剋不動，就改比星數。', tag: '新' },
       { id: 'a1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場用一次。', bubble: 'above', tag: '新' },
       { id: 'a2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, text: '丟！', bubble: 'above', tag: '新' },
       { id: 'a3', kind: 'say', target: ['result'], learn: 'L6', tag: '新',
         text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但你高 2 星以上，剋不動：他 −5。' } }   // a3.heresy：COPY-04 照結果句的講法、寫出扣多少（tutorial.test 對 toE）
     ],
-    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場用一次' },
+    learned: { L1: '同色比星數', L2: '冷門剋經典：大家都聽過的不稀奇', L3: '經典剋硬蕊：比不過名盤', L4: '硬蕊剋冷門：稀有不等於有料', L5: '差 2 星以上：剋不動', L6: '王牌 7 星，一場用一次' },
+    // 唱盤前（只在「看向老闆」那條路；三人站定後、遇敵前）：老闆攤開猜歌那三張（三軸各 7 星），一句亮一條箭頭（店主 11-12，v5 教學 A 案）
+    //   lit：'all'＝三張各亮自己那一色；tri：亮哪幾條箭頭（'oc' 冷→經、'ch' 經→硬、'ho' 硬→冷）；三張的小字＝C.aceGloss
+    intro: {
+      who: '老闆',
+      lines: [
+        { id: 'T1', text: '「這三張，各據一座山頭。」', lit: 'all' },
+        { id: 'T2', text: '「其實每張唱片三種都有，只是有高有低。」', lit: 'all' },
+        { id: 'T3', text: '「大家都聽過的，碰上沒人聽過的，就不稀奇了。」', tri: ['oc'] },
+        { id: 'T4', text: '「再難入耳，也比不過時間淬煉的名盤。」', tri: ['ch'] },
+        { id: 'T5', text: '「再冷門，碰上真正硬的也得甘拜下風。」', tri: ['ho'] },
+        { id: 'T6', text: '「他炫哪一種，你就拿剋它的那種回他。」', tri: ['oc', 'ch', 'ho'], lit: 'all' }
+      ]
+    },
+    introTag: '新',
     ui: { who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。', skipTut: '跳過教學', replay: '重看教學', learnedTitle: '學會的規則' },
     uiTag: '新'
   };
@@ -664,7 +694,7 @@
       duel: L('先看提示那句。', '新'),
       reward: L('收好，別折到封套。', '新')
     },
-    nightIntro: [L('今晚的客人，一個一個來。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
+    nightIntro: [L('今晚的客人，一個一個來。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
     boothEmpty: L('唱片櫃還空著。贏一場再來聽。', '新'),
