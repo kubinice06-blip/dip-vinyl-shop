@@ -101,6 +101,7 @@
 .dl .cheat b{font-weight:900;white-space:nowrap;letter-spacing:.04em}
 .dl .cheat span{min-width:0}
 .dl .cheat b span{min-width:0}
+.dl .cheat b .kx{color:var(--gray,#888)}
 .dl.short .cheat{font-size:12px;line-height:17px;padding:6px 10px}
 /* 提示句（店主 FIXLIST 9）：中間字帶（兩張封面下方）；出牌前是提示句，揭曉時換成結果框，下一手換回下一句提示 */
 .dl .hint{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) / 2);transform:translateY(-50%);z-index:3;
