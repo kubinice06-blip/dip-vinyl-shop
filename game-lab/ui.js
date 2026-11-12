@@ -1,6 +1,6 @@
 /* game-lab/ui.js：品味對決 v4：外殼與所有非對決畫面。SPEC-v3 §9、§10.5；v4＝SPEC-v4 §2.5.2–§2.5.7（B2）：
  *   逐句執行器（beat runner：步驟依序、點一下只快轉正在做的那一步、▼ 在動作做完才亮、⏩ 快轉到下一個選擇）、
- *   v4 劇本（content.js C.script：原版 26 句＋店主改的句子；猜歌、挑王牌、老闆翻箱、特價區三張、八張入袋、後走道嗆聲、兩顆接受對決）、
+ *   v4 劇本（content.js C.script：原版 25 句（第一句 11-10 改成開頭旁白 C.intro）＋店主改的句子；猜歌、挑王牌、老闆翻箱、特價區三張、八張入袋、後走道嗆聲、兩顆接受對決）、
  *   每個人都用走的（劇情裡不瞬移；翻箱在箱子前）、序章藏起熟客、存檔 v4（錢、今晚的貨）、經濟介面接點（DipLabEcon，econ.js）。
  *
  * 版面：#app ＝ #top（32px 頂欄）＋ #stage（常駐像素店舞台，整個 session 只 mount 一次）＋ #panel（每個畫面的面板）。
@@ -675,7 +675,7 @@
       if (s.pose) for (k in s.pose) stg('pose', k, s.pose[k] || null);
       if (s.emote) { var anyEm = false; for (k in s.emote) { stg('emote', k, s.emote[k] || null); if (s.emote[k]) anyEm = true; } if (anyEm) keepHeads(200, 22); }
       if ('notes' in s) stg('play', !!s.notes);
-      if (s.door) stg('door', s.door === 'shut' ? 'close' : s.door);
+      if (s.door) { var dq0 = ctx.quietDoor && s.door === 'swing'; if (dq0) ctx.quietDoor = false; stg('door', s.door === 'shut' ? 'close' : s.door, dq0 ? { quiet: true } : undefined); }
       if (s.stamp && !st.ff) {
         var parts = String(s.stamp).split('：');
         // 長的一句在逗號換行（R-09：「三十年的耳朵，不／會騙人。」斷在字中間）
@@ -1377,10 +1377,90 @@
     if (firstEver() && withSound && f && f.music && f.music.preload) {
       try { f.music.preload([card(tonightId())].filter(Boolean)); } catch (e) { console.error(e); }
     }
-    if (firstEver()) startPrologue();
+    if (firstEver()) { if (introWanted()) playIntro(); else startPrologue(); }
     else startAgain();
   }
-
+  // ---- 開頭旁白＋玻璃倒影捏人（店主 11-10 定稿；只在第一次推門）：黑幕兩句 → 捏人（玻璃門上的倒影，「先隨便」可略過）→ 序章從 O2 接下去
+  //   捏過人（save.seen.glass）、序章中途放棄又推門：只念第一句就接 O2。網站上捏過的小人（dip-character）＝預設（ensurePlayer）
+  //   ?debug=1 預設不演（既有 e2e 從 O2 開始）；&intro=1 才演（tests/e2e-intro.mjs）
+  function introWanted() { return !!(C.intro && C.intro.lines && C.intro.lines.length) && !(DEBUG && QS.intro !== '1'); }
+  function playIntro() {
+    var IN = C.intro, lines = IN.lines.slice(0, (save.seen.glass || !canCharEdit()) ? 1 : 2);
+    var veil = el('div', 'lb-intro', '<p class="tx" aria-live="polite"></p><span class="nx" aria-hidden="true">▼</span>');
+    veil.setAttribute('role', 'dialog'); veil.setAttribute('aria-modal', 'true'); veil.setAttribute('aria-label', '開頭旁白'); veil.tabIndex = -1;
+    app().appendChild(veil); UI.intro = veil;
+    // 底下的標題畫面（頂欄、舞台、按鈕）Tab 不到、讀屏讀不到；收尾時還原
+    var inerted = [].slice.call(app().children).filter(function (c) { return c !== veil && !c.hasAttribute('inert'); });
+    inerted.forEach(function (c) { c.setAttribute('inert', ''); });
+    try { veil.focus({ preventScroll: true }); } catch (_) {}
+    var tx = qs('.tx', veil), nx = qs('.nx', veil), i = -1, armed = false, ended = false, tm = 0;
+    // 計時器自己管（不放 UI.timers）：舞台晚到時開機會再 go('title') 一次，cleanup() 不能把旁白的計時器清掉（審查 F7）
+    var timers = [];
+    var after = function (fn, ms) { var t = setTimeout(fn, Math.max(0, ms) / speed()); timers.push(t); return t; };
+    var f = FX(); if (soundOn() && f && f.rainStart) try { f.rainStart(); } catch (_) {}
+    tlog('intro', 'start', { lines: lines.length });
+    function next() {
+      if (ended) return;
+      clearTimeout(tm); armed = false; nx.classList.remove('on');
+      i++;
+      if (i >= lines.length) return lines.length > 1 ? glassEdit() : finish();
+      tx.classList.remove('in'); void tx.offsetWidth;
+      tx.textContent = lines[i].text; tx.classList.add('in'); veil.setAttribute('data-line', lines[i].id);
+      tlog('intro', 'line', { id: lines[i].id });
+      if (i === 0) after(function () { sfx('bell'); }, 900);          // 「門上的鈴鐺清脆一響」（O2 的門晃不再響第二次，ctx.quietDoor）
+      after(function () { armed = true; nx.classList.add('on'); }, UI.auto ? 0 : 700);
+      tm = after(next, UI.auto ? 120 : Math.min(6500, 1400 + 140 * lines[i].text.length));   // 跟對白一樣：給足閱讀時間自己走，點一下就走
+    }
+    veil.addEventListener('click', function () { if (armed && !veil.classList.contains('edit')) next(); });
+    veil.addEventListener('keydown', function (e) {
+      if (veil.classList.contains('edit') || (e.key !== 'Enter' && e.key !== ' ')) return;
+      e.preventDefault(); if (armed) next();
+    });
+    var ed = null;
+    function glassEdit() {
+      veil.classList.add('edit'); tx.textContent = '';
+      ensurePlayer();
+      var host = el('div', 'lb-intro-ed'); veil.appendChild(host);
+      // 剛冒出來的捏人畫面先不收點擊：I2 上連點兩下，第二下會按到底下的「完成」（審查 F0）
+      host.style.pointerEvents = 'none';
+      timers.push(setTimeout(function () { host.style.pointerEvents = ''; }, 600));   // 真人的連點是實際時間，不跟動畫加速縮短
+      var gone = false;
+      var proceed = function (r, skip) {
+        if (gone || ended) return false; gone = true;
+        if (r && r.spec) { save.player.name = r.name; save.player.avatar = r.spec; }
+        save.seen.glass = true; persist();
+        tlog('intro', 'glass', { skip: !!skip });
+        finish();
+        return false;                                       // 捏人畫面留著，跟黑幕一起淡進店裡（不閃白，審查 F1）
+      };
+      try {
+        ed = W.DipLabCharEdit.open(host, { name: save.player.name, spec: save.player.avatar }, {
+          title: IN.title, scene: 'glass', skip: IN.skip,
+          onSave: function (r) { return proceed(r, false); },
+          // 「先隨便」／Esc：畫面上現在這個就是你（沒動過＝網站上的小人或隨機給的那個），不丟掉已經改的
+          onCancel: function () { return proceed(ed ? ed.get() : null, true); }
+        });
+      } catch (e) { console.error(e); }
+      UI.charEd = ed;
+      if (!ed) return proceed(null, true);
+      try { ed.el.tabIndex = -1; ed.el.focus({ preventScroll: true }); } catch (_) {}
+      autoAct(function () { if (ed) proceed(ed.get(), true); });   // 自動遊玩：先隨便
+    }
+    function finish() {
+      if (ended) return; ended = true;
+      timers.forEach(clearTimeout); timers = [];
+      inerted.forEach(function (c) { c.removeAttribute('inert'); });
+      startPrologue({ fromIntro: true });                   // 黑幕底下先換好店裡；劇本等黑幕淡完才開始（O2 老闆抬頭看得到）
+      veil.classList.add('out');
+      setTimeout(function () {
+        if (ed) { try { ed.close(); } catch (_) {} }
+        if (UI.charEd === ed) UI.charEd = null;
+        veil.remove(); if (UI.intro === veil) UI.intro = null;
+      }, rm() ? 0 : INTRO_FADE);
+    }
+    after(next, 40);                                        // 空的 live region 先掛上去，第一句下一刻再填（讀屏才念得到）
+  }
+  var INTRO_FADE = 750;
   // ======================================================================= 開新的一晚
   function nightsFor(k) { return save.nights.filter(function (n) { return n.seedKey === k; }).length; }
   function createRun(o) {
@@ -1396,13 +1476,16 @@
   function tonightId() { return C.aces[TIERS[E.fnv1a32(seedKey() + '#tonight') % 3]]; }
   // ---- 序章（D §2）：推門 → 今晚那張響起＋兩句描述 → 猜歌 → 挑王牌 → 老闆翻箱、四張 → 特價區三張 → 櫃檯八張入袋 → 後走道嗆聲 → 兩顆接受對決
   //   沒開聲音（安靜地推門）照同一份劇本：描述照念、猜歌照猜，只是不出聲（v3 的 quietPrologue 分支已刪）
-  function startPrologue() {
+  //   o.fromIntro（開頭旁白接過來）：門鈴旁白已經響過，O2 的門晃不再響；劇本等黑幕淡完（INTRO_FADE）才開始
+  function startPrologue(o) {
+    o = o || {};
     var tonight = tonightId();
-    var ctx = { flags: {}, quiet: !soundOn(), tonightId: tonight, tonightTier: tierOfCard(tonight), defaultTier: tierOfCard(tonight) };
+    var ctx = { flags: {}, quiet: !soundOn(), tonightId: tonight, tonightTier: tierOfCard(tonight), defaultTier: tierOfCard(tonight), quietDoor: !!o.fromIntro };
     save.run = null; persist();
     go('scene', { p: 'door', f: 'hide', o: 'counter', hideR1: true, stripState: { ace: null, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
-      dlg.run(C.script.prologue, function (ui, b) { return prologueUi(ui, b, sc, dlg, ctx); });
+      var run = function () { dlg.run(C.script.prologue, function (ui, b) { return prologueUi(ui, b, sc, dlg, ctx); }); };
+      if (o.fromIntro && !rm() && !UI.auto) later(run, INTRO_FADE * speed()); else run();
     } });
   }
   // 挑王牌之後只建 run（包包 4 張），不畫包包條：封面要等 O14 櫃檯看過才飛進來
@@ -1474,7 +1557,7 @@
     if (r.over) return go('end');
     if (step === 'duel') return beginFight({});
     if (step === 'prologue') {
-      if (E.canBargainPick(r)) return startPrologue();
+      if (E.canBargainPick(r)) return (firstEver() && introWanted()) ? playIntro() : startPrologue();   // 序章整段重來＝跟再推一次門一樣（捏過人就只念 I1）
       // 特價區挑完、還沒按兩顆「接受對決」（r.tut 還沒定）：從 O14（八張放上櫃檯）接著演到兩顆鈕，不直接開打（RT-6）
       if (r.tut == null && !r.duel) return resumePrologueAfterBargain();
       return beginFight({ tutorial: r.tut === true || (r.tut == null && !save.tutorialDone), overlay: canTutorial() });
@@ -2430,7 +2513,7 @@
     mountStage().then(function (st) {
       stageReady = true;
       if (!started) start();
-      else if (st && UI.screen === 'title') { UI.camQuick = true; go('title'); }
+      else if (st && UI.screen === 'title' && !UI.intro) { UI.camQuick = true; go('title'); }   // 開頭旁白中不重畫標題（審查 F7）
       D.body.classList.remove('stage-wait');
     });
     setTimeout(function () { if (!stageReady) D.body.classList.add('stage-wait'); start(); setTimeout(function () { D.body.classList.remove('stage-wait'); }, 2500); }, 1200);

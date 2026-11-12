@@ -702,7 +702,7 @@
         return stage;
       },
       emote: function (id, kind, ms) { shop.emote(id, kind, ms); return stage; },
-      door: function (mode) { if (mode === 'open' || mode === 'swing') sfx('bell'); shop.door(mode); return stage; },
+      door: function (mode, o) { if ((mode === 'open' || mode === 'swing') && !(o && o.quiet)) sfx('bell'); shop.door(mode); return stage; },   // o.quiet：門照晃、不響鈴（開頭旁白已經響過）
       play: function (on) { shop.play(on); return stage; },
       dim: function (k) { shop.dim(k); return stage; },
       flash: function (color, ms) { shop.flash(color, ms); return stage; },

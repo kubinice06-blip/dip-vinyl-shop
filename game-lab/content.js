@@ -305,12 +305,23 @@
     toSale: [walk('p', 'sale')]
   };
 
+  // 開頭旁白＋玻璃倒影捏人（店主 11-10 定稿；只在第一次推門）：黑幕兩句 → 捏人（玻璃門上的倒影）→ 序章從 O2 接下去
+  //   第一次推門但捏過人（序章中途放棄、又推一次門）：只念第一句，直接接 O2
+  C.intro = {
+    lines: [
+      { id: 'I1', text: '雨下個不停。巷子深處，有人輕輕推開那扇半掩的門，門上的鈴鐺清脆一響，隨即被雨聲吞沒。', tag: '店主' },
+      { id: 'I2', text: '玻璃門晃了晃，映出推門的人。', tag: '店主' }
+    ],
+    title: '玻璃上的你',
+    skip: '先隨便'
+  };
+
   C.script = {
     // 序章（O1–O21）：原版 RPG_BEATS 為底（D §2）。猜歌七步、四張、特價區三張、八張、兩顆接受對決
     prologue: [
-      { id: 'O1', who: '', text: '下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', tag: '原句',
-        set: { put: { p: 'door', o: 'counter' }, hide: { f: true, r1: true }, door: 'swing', pose: { o: 'busy' } } },
+      // 原本的 O1「下著雨。你推開……鈴鐺，響了一聲。」拿掉：內容已經在開頭旁白（C.intro，店主 11-10）；它的站位搬到 O2
       { id: 'O2', who: '', text: '櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', tag: '原句',
+        set: { put: { p: 'door', o: 'counter' }, hide: { f: true, r1: true }, door: 'swing', pose: { o: 'busy' } },
         act: [pose('o', null), wait(600), pose('o', 'busy')] },
       { id: 'O3', who: '', text: '你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', tag: '原句', act: [walk('p', 'browse')] },
       { id: 'O4', who: '', text: '這時候，店裡的音響傳出一段旋律。', tag: '原句', set: { notes: true }, music: 'tonight' },

@@ -6,8 +6,9 @@
  *     onCancel: function () {},     // 沒給就不顯示 ✕
  *     onChange: function (r) {},    // 選填：每改一次
  *     tab: 'hair', title: '捏一個你' // 選填
+ *     scene: 'glass', skip: '先隨便' // 選填（開頭旁白那次，店主 11-10）：舞台換成玻璃門上的倒影（門外下雨、門裡暖光）；✕ 換成寫字的略過鈕（按了也是 onCancel）
  *   });
- *   按「完成」→ onSave(r) 後自己關掉（onSave 回傳 false 就不關）；✕ 或 Esc → onCancel() 後關掉。
+ *   按「完成」→ onSave(r) 後自己關掉（onSave 回傳 false 就不關）；✕ 或 Esc → onCancel() 後關掉（onCancel 回傳 false 也不關）。
  *   ed.get() → { name, spec } ／ ed.set({ name?, spec? }) ／ ed.tab('top') ／ ed.close() ／ ed.el
  *   spec 也可以給舊的 dip-character 捏角色 {head,hair,shirt,pants,skin}（會換成一模一樣的 v2 spec）。
  *
@@ -185,6 +186,66 @@
     g.fillStyle = '#5a5a5a'; g.fillRect(cx - u, cy - 2 * u, u, u);
   }
 
+  // ===================================================================== 玻璃門上的倒影（開頭旁白那次；店主 11-10「玻璃門晃了晃，映出推門的人。」）
+  // 底：隔著玻璃看進店裡（暗、暖，牆上唱片架和燈都糊糊的）＋你背後巷子的霓虹倒影；front：門框、銅把手、門鈴、玻璃反光（畫在倒影上面）
+  function paintGlass(wArt, hArt) {
+    var cv = document.createElement('canvas'); cv.width = wArt; cv.height = hArt;
+    var g = cv.getContext('2d');
+    function r(x, y, w, h, c, a) { g.globalAlpha = a == null ? 1 : a; g.fillStyle = c; g.fillRect(x, y, w, h); g.globalAlpha = 1; }
+    var wall = Math.round(hArt * 0.58);
+    r(0, 0, wArt, hArt, '#1c130d');
+    r(0, 0, wArt, wall, '#2f2016');
+    // 店裡牆上的唱片架（糊成色塊）
+    for (var row = 0; row < 2; row++) {
+      var y0 = Math.round(hArt * 0.12) + row * 17;
+      for (var i = 0; i * 13 + 8 < wArt; i++) { var cc = PC.covers[(i + row * 3) % PC.covers.length]; r(6 + i * 13, y0, 11, 11, cc[0], 0.26); r(8 + i * 13, y0 + 4, 7, 3, cc[1], 0.18); }
+      r(0, y0 + 12, wArt, 2, '#4a3020', 0.8);
+    }
+    // 長桌和木箱的剪影
+    r(Math.round(wArt * 0.1), wall + 4, Math.round(wArt * 0.34), 12, '#3a2618'); r(Math.round(wArt * 0.62), wall + 8, Math.round(wArt * 0.3), 10, '#3a2618');
+    r(0, wall, wArt, 1, '#120c08', 0.8);
+    // 暖燈（量化的圓光）
+    var id = g.getImageData(0, 0, wArt, hArt), D = id.data, lx = wArt * 0.72, ly = hArt * 0.2, R = Math.max(wArt, hArt) * 0.55;
+    for (var y = 0; y < hArt; y++) for (var x = 0; x < wArt; x++) {
+      var d = Math.min(1, Math.hypot((x - lx) / R, (y - ly) / (R * 0.8))), f = Math.round((1 - d) * (1 - d) * 5) / 5, k = (y * wArt + x) * 4;
+      D[k] = Math.min(255, D[k] + 120 * f); D[k + 1] = Math.min(255, D[k + 1] + 70 * f); D[k + 2] = Math.min(255, D[k + 2] + 22 * f);
+    }
+    g.putImageData(id, 0, 0);
+    // 你背後的巷子（倒影）：兩塊霓虹、遠處的路燈
+    r(Math.round(wArt * 0.08), Math.round(hArt * 0.08), 14, 5, '#e0405a', 0.22); r(Math.round(wArt * 0.08) + 2, Math.round(hArt * 0.08) + 6, 10, 2, '#e0405a', 0.14);
+    r(Math.round(wArt * 0.82), Math.round(hArt * 0.5), 4, 12, '#3fc6c0', 0.18);
+    // 玻璃：整片偏冷、上面一點霧
+    r(0, 0, wArt, hArt, '#5f86ad', 0.2);
+    for (var y2 = 0; y2 < hArt; y2 += 2) for (var x2 = (y2 >> 1) % 2; x2 < wArt; x2 += 2) if (hash(x2, y2, 41) < 0.06) r(x2, y2, 1, 1, '#c8d8ea', 0.18);
+    // 玻璃上的水珠（不動的）
+    for (var j = 0; j < Math.round(wArt * hArt / 280); j++) { var bx = Math.floor(hash(j, 3, 51) * wArt), by = Math.floor(hash(j, 7, 52) * hArt); r(bx, by, 1, 1, '#dbe7f5', 0.32 + hash(j, 9, 53) * 0.3); if (hash(j, 1, 54) < 0.3) r(bx, by + 1, 1, 1, '#0e1520', 0.3); }
+    // front：門框（深色木）＋銅把手＋門鈴＋兩道斜斜的反光
+    var fr = document.createElement('canvas'); fr.width = wArt; fr.height = hArt;
+    var q = fr.getContext('2d');
+    function f2(x, y, w, h, c, a) { q.globalAlpha = a == null ? 1 : a; q.fillStyle = c; q.fillRect(x, y, w, h); q.globalAlpha = 1; }
+    q.save(); q.beginPath(); q.moveTo(wArt * 0.18, 0); q.lineTo(wArt * 0.3, 0); q.lineTo(wArt * 0.1, hArt); q.lineTo(-wArt * 0.02, hArt); q.closePath(); q.globalAlpha = 0.07; q.fillStyle = '#ffffff'; q.fill();
+    q.beginPath(); q.moveTo(wArt * 0.36, 0); q.lineTo(wArt * 0.4, 0); q.lineTo(wArt * 0.2, hArt); q.lineTo(wArt * 0.16, hArt); q.closePath(); q.globalAlpha = 0.05; q.fill(); q.restore();
+    var st = Math.max(4, Math.round(wArt * 0.035));
+    f2(0, 0, st, hArt, PC.walnut); f2(st - 1, 0, 1, hArt, PC.walnutD); f2(1, 0, 1, hArt, PC.walnutL);
+    f2(wArt - st, 0, st, hArt, PC.walnut); f2(wArt - st, 0, 1, hArt, PC.walnutD); f2(wArt - 2, 0, 1, hArt, PC.walnutL);
+    f2(0, 0, wArt, st, PC.walnut); f2(0, st - 1, wArt, 1, PC.walnutD); f2(0, 1, wArt, 1, PC.walnutL);
+    var hx0 = wArt - st - 5, hy0 = Math.round(hArt * 0.42);
+    f2(hx0 - 1, hy0 - 1, 4, 20, PC.O); f2(hx0, hy0, 2, 18, '#c9a24a'); f2(hx0, hy0, 1, 18, '#efd27a'); f2(hx0 + 2, hy0 + 2, 3, 2, '#8a6a2a'); f2(hx0 + 2, hy0 + 14, 3, 2, '#8a6a2a');
+    var bx0 = Math.round(wArt * 0.62); f2(bx0 + 2, st, 1, 4, '#8a6a2a'); f2(bx0, st + 4, 5, 1, PC.O); f2(bx0 - 1, st + 5, 7, 4, PC.O); f2(bx0, st + 5, 5, 3, '#d9b04e'); f2(bx0, st + 5, 2, 2, '#f3dc8a'); f2(bx0 + 2, st + 9, 1, 1, '#8a6a2a');
+    return { cv: cv, front: fr, glass: true, standX: Math.round(wArt * 0.5), standY: hArt - 8 };
+  }
+  // 雨：順著玻璃往下滑的水痕（美術格；t＝毫秒；reduce motion 就停在一格）
+  function rainOnGlass(g, wArt, hArt, U, t) {
+    var n = Math.max(8, Math.round(wArt / 7));
+    for (var i = 0; i < n; i++) {
+      var x = 3 + Math.floor(hash(i, 1, 71) * (wArt - 6)), sp = 7 + hash(i, 2, 72) * 16, len = 2 + Math.floor(hash(i, 3, 73) * 5), ph = hash(i, 4, 74);
+      var y = ((t / 1000 * sp + ph * (hArt + len)) % (hArt + len)) - len;
+      g.globalAlpha = 0.34; g.fillStyle = '#cfdced'; g.fillRect(x * U, Math.round(y) * U, U, len * U);
+      g.globalAlpha = 0.7; g.fillStyle = '#eef4fb'; g.fillRect(x * U, Math.round(y + len) * U, U, U);
+    }
+    g.globalAlpha = 1;
+  }
+
   // ===================================================================== 畫面
   var EL = function (tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   var ICON_X = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
@@ -213,7 +274,7 @@
     tag.appendChild(inp); tag.appendChild(EL('i', 'ce-pen', '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 9l1-3 5-5 2 2-5 5z" fill="currentColor"/></svg>'));
     var act = EL('div', 'ce-act');
     stage.appendChild(cv); stage.appendChild(ttl); stage.appendChild(tag); stage.appendChild(act);
-    if (cb.onCancel) { var bx = EL('button', 'ce-x', '<i>' + ICON_X + '</i>'); bx.type = 'button'; bx.setAttribute('aria-label', '不改了'); bx.onclick = function () { cancel(); }; stage.appendChild(bx); }
+    if (cb.onCancel) { var bx = EL('button', 'ce-x' + (cb.skip ? ' ce-skip' : ''), '<i>' + (cb.skip ? esc(cb.skip) : ICON_X) + '</i>'); bx.type = 'button'; bx.setAttribute('aria-label', cb.skip ? cb.skip + '：略過，就用現在的樣子' : '不改了'); bx.onclick = function () { cancel(); }; stage.appendChild(bx); }
     // --- 分頁
     var tabs = EL('div', 'ce-tabs'); tabs.setAttribute('role', 'tablist');
     TABS.forEach(function (T) {
@@ -232,7 +293,9 @@
     host.appendChild(root);
 
     // --- 舞台大小：依容器高度決定（1 美術格＝U 裝置 px，整數）
-    var scene = null, U = 6, artW = 0, artH = 0, raf = 0, closed = false;
+    var scene = null, U = 6, artW = 0, artH = 0, raf = 0, closed = false, glass = cb.scene === 'glass', refl = null;
+    var still = !!(W.matchMedia && W.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    if (glass) root.classList.add('ce-glass');
     function layoutStage() {
       var H = root.clientHeight || 600, sh = Math.round(Math.max(150, Math.min(268, H * 0.37)));
       stage.style.height = sh + 'px';
@@ -240,8 +303,9 @@
       U = Math.max(dpr >= 2 ? 3 : 2, Math.floor(sh * dpr / 90));   // 1 倍螢幕的矮舞台：一格 2 px，人不會大到頭被裁、名牌壓在頭髮上（V14）
       artW = Math.ceil(cw * dpr / U); artH = Math.ceil(sh * dpr / U);
       cv.width = Math.round(cw * dpr); cv.height = Math.round(sh * dpr); cv.style.width = cw + 'px'; cv.style.height = sh + 'px';
-      scene = null;
-      var painter = (W.DipLabStage && W.DipLabStage.paintSlice) || (W.DipShop && W.DipShop.paintSlice);
+      scene = null; refl = null;
+      var painter = glass ? null : ((W.DipLabStage && W.DipLabStage.paintSlice) || (W.DipShop && W.DipShop.paintSlice));
+      if (glass) { scene = paintGlass(artW, artH); refl = document.createElement('canvas'); refl.width = cv.width; refl.height = cv.height; }
       if (painter) {
         try { var sc = document.createElement('canvas'); sc.width = artW; sc.height = artH; if (painter(sc.getContext('2d'), { x: 0, y: 0, w: artW, h: artH, unit: 1, purpose: 'charedit' }) !== false) scene = { cv: sc, standX: Math.round(artW * 0.42), standY: artH - 8 }; } catch (e) { scene = null; }
       }
@@ -265,9 +329,18 @@
       g.drawImage(scene.cv, 0, 0, artW * U, artH * U);
       var P = curPose(t), fx = scene.standX * U, fy = scene.standY * U;
       var o = { scale: 3 * U, back: !!P.back }; if (P.tint) o.tint = P.tint;
-      var r = CH.render(g, state.spec, P.pose, P.frame, fx, fy, o);
-      if (P.disc) { var a = P.disc === 'held' ? r.anchors.held || r.anchors.hand : r.anchors.hand; if (a) disc(g, Math.round(a.x), Math.round(a.y - 2 * U), U, '#6a3fa0'); }
-      if (P.fly != null && r.anchors.hand) disc(g, Math.round(r.anchors.hand.x + P.fly * 60 * U), Math.round(r.anchors.hand.y - Math.sin(P.fly * Math.PI) * 10 * U), U, '#6a3fa0');
+      // 玻璃門：人先畫在另一張畫布，染一層冷色、半透明疊上去（倒影），再畫雨痕和門框
+      var pg = g;
+      if (scene.glass && refl) { pg = refl.getContext('2d'); pg.imageSmoothingEnabled = false; pg.clearRect(0, 0, refl.width, refl.height); }
+      var r = CH.render(pg, state.spec, P.pose, P.frame, fx, fy, o);
+      if (P.disc) { var a = P.disc === 'held' ? r.anchors.held || r.anchors.hand : r.anchors.hand; if (a) disc(pg, Math.round(a.x), Math.round(a.y - 2 * U), U, '#6a3fa0'); }
+      if (P.fly != null && r.anchors.hand) disc(pg, Math.round(r.anchors.hand.x + P.fly * 60 * U), Math.round(r.anchors.hand.y - Math.sin(P.fly * Math.PI) * 10 * U), U, '#6a3fa0');
+      if (pg !== g) {
+        pg.globalCompositeOperation = 'source-atop'; pg.fillStyle = 'rgba(126,164,212,0.2)'; pg.fillRect(0, 0, refl.width, refl.height); pg.globalCompositeOperation = 'source-over';
+        g.globalAlpha = 0.88; g.drawImage(refl, 0, 0); g.globalAlpha = 1;
+        rainOnGlass(g, artW, artH, U, still ? 0 : t);
+        g.drawImage(scene.front, 0, 0, artW * U, artH * U);
+      }
       // 名牌貼頭頂（站著時的頭頂，動作時不跟著跳）
       var head = CH.anchor(state.spec, 'idle', 0, 'head', { scale: 3 * U });
       var tx = fx / dpr, ty = (fy + head[1]) / dpr - 10;
@@ -344,7 +417,7 @@
     tag.setAttribute('data-v', state.name || NAME_DEFAULT);
     bRand.onclick = randomize;
     bDone.onclick = function () { var r = result(state.name, state.spec); var keepOpen = cb.onSave ? cb.onSave(r) === false : false; if (!keepOpen) close(); };
-    function cancel() { if (cb.onCancel) try { cb.onCancel(); } catch (e) { console.error(e); } close(); }
+    function cancel() { var keep = false; if (cb.onCancel) try { keep = cb.onCancel() === false; } catch (e) { console.error(e); } if (!keep) close(); }   // onCancel 回傳 false 就不關（呼叫端自己 close，例：開頭旁白跟黑幕一起淡掉）
     function onKey(e) { if (e.key === 'Escape' && cb.onCancel && document.activeElement !== inp) { e.preventDefault(); cancel(); } }
     document.addEventListener('keydown', onKey);
     var ro = W.ResizeObserver ? new W.ResizeObserver(function () { layoutStage(); }) : null;

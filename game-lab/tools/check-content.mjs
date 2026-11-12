@@ -437,7 +437,12 @@ export function scriptProblems(C, L) {
   }
   const P = S.prologue || [], Ep = S.epilogueWin || [];
   const ids = P.map(b => b.id).join(' ');
-  ok(ids === 'O1 O2 O3 O4 O5a O5b O6 O7 O8r O8w O9 O10 O11 O12 O13 O14 O15 O16 O17 O18 O19 O20 O21', 'script.prologue 的 id 與順序：' + ids);
+  ok(ids === 'O2 O3 O4 O5a O5b O6 O7 O8r O8w O9 O10 O11 O12 O13 O14 O15 O16 O17 O18 O19 O20 O21', 'script.prologue 的 id 與順序（O1 拿掉、內容在開頭旁白 C.intro；店主 11-10）：' + ids);
+  // 開頭旁白＋玻璃倒影捏人（店主 11-10 定稿，逐字）
+  const IN = C.intro || {}, INL = IN.lines || [];
+  ok(INL.map(x => x.id).join(' ') === 'I1 I2' && INL[0].text === '雨下個不停。巷子深處，有人輕輕推開那扇半掩的門，門上的鈴鐺清脆一響，隨即被雨聲吞沒。' && INL[1].text === '玻璃門晃了晃，映出推門的人。' && INL.every(x => x.tag === '店主'), 'C.intro.lines：I1、I2 逐字（店主）');
+  ok(IN.title === '玻璃上的你' && IN.skip === '先隨便', 'C.intro：捏人標題「玻璃上的你」、略過鈕「先隨便」');
+  ok(!P.some(b => /下著雨。你推開/.test(typeof b.text === 'string' ? b.text : '')), '原本的 O1「下著雨。你推開……」不准回來（已在開頭旁白）');
   ok(Ep.map(b => b.id).join(' ') === 'E1 E2 E3 E4 E5 E6 E7 E8 E9 E10 E11', 'script.epilogueWin 的 id 與順序：' + Ep.map(b => b.id).join(' '));
   const by = id => P.concat(Ep).find(b => b.id === id) || {};
   // D §2 店主改的句子（逐字）
@@ -457,7 +462,7 @@ export function scriptProblems(C, L) {
   // 音樂：O4 開始播今晚那張、O10 說完才停（O11 淡出 1.5 秒）
   ok(by('O4').music === 'tonight' && !by('O10').music && by('O11').music && by('O11').music.stop === 1500 && by('O11').set && by('O11').set.notes === false, '音樂：O4 開始、O11 才淡出 1500 ms（私人收藏那句說完之後）');
   // 熟客：序章與收尾藏起來
-  ok(by('O1').set && by('O1').set.hide && by('O1').set.hide.r1 === true && by('E1').set && by('E1').set.hide && by('E1').set.hide.r1 === true, '熟客 r1：O1、E1 藏起來');
+  ok(by('O2').set && by('O2').set.hide && by('O2').set.hide.r1 === true && by('O2').set.door === 'swing' && by('O2').set.put && by('O2').set.put.p === 'door' && by('E1').set && by('E1').set.hide && by('E1').set.hide.r1 === true, '熟客 r1：O2、E1 藏起來；O2 接手原本 O1 的站位（你在門口、門晃）');
   // 走位（D §3）
   const fl = id => flat((by(id).pre || []).concat(by(id).act || []));
   const o11 = fl('O11').map(x => x.do + ':' + (x.id || '') + ':' + (x.name || (x.to || []).join('>')));

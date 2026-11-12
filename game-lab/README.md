@@ -12,7 +12,7 @@
 | D | 內容 |
 |---|---|
 | §1 logo | 櫃檯正面換成店主的 logo（15×15 點陣「dıp」黑膠）。招牌是店的資料（`shops/dip.json` 的 `sign`），別家店可以有自己的 |
-| §2 序章 | 回到原版劇本（26 句原句逐字）＋店主改的句子；試做版自己加的回嘴、好耳朵、一百塊三張等全部拿掉。猜歌、挑王牌、老闆送四張、**特價區挑三張**、八張放上櫃檯、兩顆「接受對決」 |
+| §2 序章 | 回到原版劇本（25 句原句逐字；第一句 11-10 改成開頭旁白）＋店主改的句子；第一次推門先黑幕兩句旁白 → 玻璃倒影捏人（「先隨便」可略過，網站小人為預設）→ 序章 O2；試做版自己加的回嘴、好耳朵、一百塊三張等全部拿掉。猜歌、挑王牌、老闆送四張、**特價區挑三張**、八張放上櫃檯、兩顆「接受對決」 |
 | §3 走位 | 逐句執行器：每句的動作照順序做完才亮 ▼；點一下只把正在做的那一步做完；⏩ 快轉到下一個要選的句子。每個人都用走的、翻箱在箱子前、路線不穿過中島與任何家具（`DipShop.footprints` 自動檢查） |
 | §4 一台唱盤 | 唱盤區只剩一台，老闆站在後面當裁判。每手約 1.5 秒：舉牌（他背面）→ 翻面＋頭頂方塊 → 火花扣血 → 贏家上前放唱片、唱臂落下、NOW 小窗、老闆舉旗；平手空盤、老闆搖頭。點盤面＝4 倍速 |
 | §5 規則 | 見下「規則」。拿掉脾氣、急了、翻面、B 面 |
@@ -140,7 +140,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=48` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=51` |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、一晚、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
 | `cards.js`、`bins.js` | 卡池與 14 區（十大類＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改） |
@@ -175,7 +175,7 @@ node game-lab/test/shop.test.mjs            # 店家 JSON、唱盤、路線不�
 node game-lab/test/hit.test.mjs             # 命中：形狀＋深度、容錯、遮擋
 node game-lab/test/chars.test.mjs           # 小人
 node game-lab/sim.mjs --n 3000              # 平衡門檻 S1–S9＋HP 聲望單調（任何一條沒過 exit 1）
-node game-lab/tools/lint-copy.mjs           # 文案：禁用字、原句／店主句逐字、劇本 26 句順序；重產 LINES-REVIEW.md
+node game-lab/tools/lint-copy.mjs           # 文案：禁用字、原句／店主句逐字、劇本 25 句順序（第一句 11-10 改成開頭旁白）；重產 LINES-REVIEW.md
 node game-lab/tools/check-content.mjs       # 資料形狀、牌組限制、教學步驟、劇本
 node game-lab/tools/check-shops.mjs         # 店家配置、熱點（含 bin:* 與 buildHotList 交叉比對）、任兩站位的路線不穿家具
 node game-lab/tools/check-covers.mjs        # 每個看得到的封面在 cards.js、全店不重複、符合那一區的曲風
@@ -186,6 +186,7 @@ LAB_SIZES=$S node game-lab/tests/e2e-duel.mjs                # 對決盤面（in
 LAB_SIZES=$S node game-lab/tests/e2e-econ.mjs                # 經濟介面（econ-harness＋index.html #21–#25）
 LAB_SIZES=$S LAB_SCREENS=title,night node game-lab/tests/e2e-taps.mjs   # 真點每個熱點與家具（標題、今晚來客）
 node game-lab/tests/e2e-prologue.mjs                         # 序章時間軸 P1–P13（390×664、速度 1）
+LAB_SIZES=$S node game-lab/tests/e2e-intro.mjs              # 開頭旁白＋玻璃倒影捏人（?debug=1 預設不演，這支加 &intro=1）
 ```
 
 e2e 讀 `LAB_BASE`（伺服器根，預設 `http://localhost:8765`）或 `LAB_URL`。Playwright 只有 Chromium。**真 iPhone（Safari 與 Chrome）請各開一次**：店景清楚、聲音、教學遮罩洞裡點得到、抽屜關得掉、唱盤演出不卡。
