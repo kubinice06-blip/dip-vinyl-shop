@@ -2230,7 +2230,7 @@
       get beat() { return UI.dlg ? UI.dlg.beat : null; },
       get econ() { return econ(); },
       // 測試對決（e2e-duel 的 index.html 版，C 整合；＝dev/duel-harness.html 的 build()／start()）：
-      //   duelLab.start({enemy, seed, ace, hp, ehp})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張、出招難度 depth 0），打完停在大章不結算；
+      //   duelLab.start({enemy, seed, ace, hp, ehp, relics})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張、出招難度 depth 0），打完停在大章不結算；
       //   duelLab.setNext({i,attr})：他下一手照這個出；duelLab.ended：打完的結果 {over, win, by, pHp, eHp}
       duelLab: {
         start: function (o) { return duelLabStart(o || {}); },
@@ -2253,7 +2253,7 @@
     var en = C.enemies[eid], eDef = E.enemyDef(C, eid, { depth: en.prologue ? undefined : 0 });
     if (o.ehp != null) eDef.hp = +o.ehp;
     var pick3 = ['c', 'o', 'h'].map(function (a) { return ((C.bargain && C.bargain.pool) || []).filter(function (id) { return C.cards[id] && E.topAttr(C.cards[id]) === a; })[0]; }).filter(Boolean);
-    var pDef = E.playerDef(C, { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: [] });
+    var pDef = E.playerDef(C, { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: Array.isArray(o.relics) ? o.relics.slice(0, 3) : [] });   // relics：e2e-duel #1g（屬性鈕與「你」那一列的發燒配件）
     if (o.hp != null) pDef.hp = pDef.maxHp = +o.hp;
     var seed = (+o.seed >>> 0) || 1, opts = { seed: seed, hintTable: E.hintTableOf ? E.hintTableOf(C) : undefined };
     if (!opts.hintTable) { var ht = {}; ['c', 'o', 'h'].forEach(function (a) { ht[a] = ((C.hints || {})[a] || []).map(function (h) { return h.id; }); }); opts.hintTable = ht; }

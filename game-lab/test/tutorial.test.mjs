@@ -1,9 +1,9 @@
 // game-lab/test/tutorial.test.mjs — 序章男子那場的引導教學 v4（SPEC-v4 §2.5.5、§2.2.10、§5.1 B2）
 //   node game-lab/test/tutorial.test.mjs        # 有失敗 exit 1
 // 用 content.js 的 C.tutorial、tutorial.js 的純邏輯（stepsFor／createRunner／matches…）與真引擎（startFight(run, C, {tutorial:true})）：
-// 照教學的每一步餵 gate（跟 duel.js 送的一樣；FIXLIST 11：點疊著的手牌 {kind:'spread'} → 點封面＝浮起 {kind:'card'} → 點屬性鈕＝丟 {kind:'throw'}；
-//   點手牌外面 {kind:'collapse'} 教學中一律不放行、也不罵），丟出去時 resolveTurn。
-// 路線：三張王牌 × 特價箱 84 種挑法 × {照做（先攤開）、直接點（已攤開）、點錯、看唱片資訊}，每條：
+// 照教學的每一步餵 gate（跟 duel.js 送的一樣；v5 手風琴：點一張封面（疊著那排露出來的那一條）＝在那張打開 {kind:'card'} → 點屬性鈕＝丟 {kind:'throw'}；
+//   再點打開那張、點手牌外面 {kind:'collapse'} 教學中一律不放行、也不罵；沒有 {kind:'spread'} 了），丟出去時 resolveTurn。
+// 路線：三張王牌 × 特價箱 84 種挑法 × {照做、真的點（card 帶 at 座標）、點錯、看唱片資訊}，每條：
 //   18 步照順序走完、每手 kind／toE／toP＝C.tutorial.expect、第 5 手剋不動（你 −(5−冷)）、第 6 手王牌 KO、前 5 手不 KO、學到 L1–L6、你沒倒。
 //   手牌 5 張（FIXLIST 11；CFG.handSize）：每一手開手時你手上都是 5 張、要教的那張在手上；第 5 手手指指的（blockedChoice 最左）＝特價箱挑的第 2 張。男子的暗手照舊 3 張。
 // 另外測：步驟資料（六手、字數、禁用字、目標名＝duel.js 的名字、allow、三角邊、小卡）、老闆說的話是真的、擋錯招（e2e #20 的純邏輯版）、
@@ -63,7 +63,7 @@ function target(duel, pick) {
 
 // ---------------------------------------------------------------------------
 // 一條路線（DOM 的順序：丟 → resolveTurn → 結算時講的步驟（盤面 hold）→ 分出勝負才 R.resolved → 下一手 handReady）
-//   variant：'plain' 照手指點（先點疊著的手牌攤開，再點封面、點屬性鈕）｜'direct' 手牌已攤開（直接點封面）｜'wrong' 每個操作步先點錯幾種｜'info' 每一步先開唱片資訊再關
+//   variant：'plain' 照手指點（點封面＝打開那張、點屬性鈕）｜'tap' 跟 duel.js 真的點一樣（card 帶 at 座標）｜'wrong' 每個操作步先點錯幾種｜'info' 每一步先開唱片資訊再關
 function route(tier, bargain, variant = 'plain', o = {}) {
   const { run, duel } = tutDuel(tier, bargain, o.seedKey);
   const bargainOf = run.bag.slice(4);   // 特價箱挑的三張（照挑的順序）
@@ -91,7 +91,7 @@ function route(tier, bargain, variant = 'plain', o = {}) {
     if (variant === 'info') peek();
     if (s.kind === 'say') {
       ok(!TUT.atResolve(s) || (out.clashes.length && s.hand === out.clashes.length), tag + ' ' + s.id + ' 結算時講的步驟只在剛結算完出現');
-      if (variant === 'wrong') { tryWrong({ kind: 'card', i: 0, attr: 'o', id: duel.p.hand[0] && duel.p.hand[0].id }, '說明步點封面'); tryWrong({ kind: 'spread' }, '說明步點手牌'); }
+      if (variant === 'wrong') { tryWrong({ kind: 'card', i: 0, attr: 'o', id: duel.p.hand[0] && duel.p.hand[0].id }, '說明步點封面'); tryWrong({ kind: 'spread' }, '說明步送舊的 spread（v5 沒有了）'); }
       out.steps.push(s.id);
       if (s.learn) out.learnedAt[s.learn] = s.id;
       R.done();
@@ -109,7 +109,7 @@ function route(tier, bargain, variant = 'plain', o = {}) {
     if (!want) break;
     // 點手牌外面（收回）：教學中不放行、不算點錯、不前進
     { const idx = R.idx; ok(R.gate({ kind: 'collapse' }) === false && R.last.quiet === true && !R.last.wrong && R.idx === idx, tag + ' ' + s.id + ' 收回手牌：不放行、不罵'); }
-    if (!al.throw) {                    // 點那一張（疊著時先攤開）
+    if (!al.throw) {                    // 點那一張（＝在那張打開）
       ok(TUT.isLift(s), tag + ' ' + s.id + ' 是點那張的步驟');
       if (variant === 'wrong') {
         const others = duel.p.hand.map((c, i) => i).filter(i => i !== want.i && duel.p.hand[i]);
@@ -117,11 +117,8 @@ function route(tier, bargain, variant = 'plain', o = {}) {
         if (others.length) { tryWrong(cardAct(duel, others[0]), '點別張的封面'); tryWrong(chipAct(duel, others[0], want.attr), '別張同色（API）'); }
         tryWrong(shotAct(duel, want.i, want.attr), '還沒浮起就丟');
       }
-      if (variant !== 'direct') {
-        const idx = R.idx;
-        ok(R.gate({ kind: 'spread' }) === true && R.last.ok && R.last.spread && !R.last.final && R.idx === idx && R.state === 'run', tag + ' ' + s.id + ' 點疊著的手牌：放行（攤開），這步還沒完成');
-      }
       const a = cardAct(duel, want.i);
+      if (variant === 'tap') a.at = { x: 120, y: 560 };
       ok(R.gate(a) === true, tag + ' ' + s.id + ' 點手指那張（' + a.kind + '）', a);
       ok(R.last.final === true && R.state === 'run', tag + ' ' + s.id + ' 這步完成');
       out.steps.push(s.id);
@@ -134,7 +131,7 @@ function route(tier, bargain, variant = 'plain', o = {}) {
       const others = duel.p.hand.map((c, i) => i).filter(i => i !== want.i && duel.p.hand[i]);
       if (others.length) { tryWrong(cardAct(duel, others[0]), '丟之前換浮起別張'); tryWrong(shotAct(duel, others[0], want.attr), '丟別張'); }
       if (want.i !== 'ace') for (const a of ATTRS.filter(a => a !== want.attr)) tryWrong(shotAct(duel, want.i, a), '丟同張別色 ' + a);
-      tryWrong({ kind: 'spread' }, '點屬性那步點手牌');
+      tryWrong({ kind: 'spread' }, '點屬性那步送舊的 spread');
     }
     out.hints.push(E.view(duel).hint.line);
     const plan = duel.plan;
@@ -205,7 +202,8 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
   eq(steps.map(s => s.id), IDS, '18 步照順序');
   const FORBID = /——|—|派對|櫃台|卡片資訊|氣勢|輾壓|賭注|相生|割捨|七星回擊|霸權|點播|配件|脾氣|急了|看穿/;
   for (const s of steps) {
-    const texts = (typeof s.text === 'object' ? Object.values(s.text) : [s.text]).concat(s.spread != null ? [s.spread] : []);
+    const texts = typeof s.text === 'object' ? Object.values(s.text) : [s.text];
+    ok(s.spread == null, s.id + ' 沒有 spread（v5 手風琴：沒有「點牌堆攤開」）');
     for (const t of texts) {
       ok(typeof t === 'string' && t.length > 0, s.id + ' 有台詞');
       ok(len(t) <= 25, s.id + ' ≤25 字（' + len(t) + '）：' + t);
@@ -218,7 +216,8 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
     else ok(!TRI[s.id], s.id + ' 要亮三角');
     if (s.kind === 'do') ok(s.allow && s.allow.pick === true && Object.keys(s.allow).every(k => k === 'pick' || k === 'throw'), s.id + ' 做的步驟：點那張（allow.pick）或點那個屬性＝丟（allow.pick＋throw）');
   }
-  eq(steps.filter(s => s.spread).map(s => [s.id, s.spread]), [['m2', '點一下手牌攤開。']], '「點一下手牌攤開。」只在第 1 手點那張那步（手牌疊著時）');
+  eq(steps.find(s => s.id === 'm2').text, '先出這張：點一下。', '第 1 手點那張那步：「先出這張：點一下。」（v5：點疊著那排露出來的那一條就打開）');
+  ok(!steps.some(s => /攤開/.test(typeof s.text === 'object' ? Object.values(s.text).join('') : s.text)), '教學沒有一句說「攤開」');
   eq(Object.fromEntries(steps.filter(s => s.learn).map(s => [s.id, s.learn])), LEARN_AT, '學會的小卡在 m4／k3／c2／h2／b3／a3');
   eq(T.learned, LEARNED, '小卡 L1–L6＝§2.5.5');
   for (const v of Object.values(T.learned)) ok(len(v) <= 16 && !/霸權|配件/.test(v), '小卡 ≤16 字、沒有禁用字：' + v);
@@ -282,11 +281,11 @@ section('老闆說的話是真的：提示、點破的關鍵字、三相剋、�
 });
 
 // ---------------------------------------------------------------------------
-section('三王牌 × 特價箱 84 種挑法 × {照做（先攤開）、直接點、點錯、看唱片資訊}：18 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
+section('三王牌 × 特價箱 84 種挑法 × {照做、真的點、點錯、看唱片資訊}：18 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
   eq(COMBOS.length, 84, '特價箱 9 張挑 3＝84 種');
   let n = 0;
   for (const t of TIERS) for (let k = 0; k < COMBOS.length; k++) {
-    for (const variant of ['plain', 'direct', 'wrong', 'info']) {
+    for (const variant of ['plain', 'tap', 'wrong', 'info']) {
       // 挑的順序也換一換（照挑的順序抽）
       const combo = k % 2 ? COMBOS[k].slice().reverse() : COMBOS[k];
       const r = route(t, combo, variant, { seedKey: 'tut-' + t + '-' + k });
@@ -330,7 +329,7 @@ section('擋錯招（e2e #20 的純邏輯版）：第 1 手點別張／王牌、
     eq([R.cur().id, duel.n, R.state], ['m2', 1, 'run'], t + ' 被擋後還在 m2、引擎第 1 手');
     eq(R.last.wrong, 'target', t + ' 標 wrong');
     eq([R.gate({ kind: 'collapse' }), R.last.quiet, R.cur().id], [false, true, 'm2'], t + ' 收回手牌：不放行、不罵');
-    ok(R.gate({ kind: 'spread' }) && R.last.spread && R.cur().id === 'm2', t + ' m2 攤開：放行、還在 m2');
+    eq([R.gate({ kind: 'spread' }), R.cur().id], [false, 'm2'], t + ' m2 舊的 spread：擋、還在 m2');
     ok(R.gate(cardAct(duel, w.i)) && R.cur().id === 'm3', t + ' m2 點那張 → m3');
     R.begin();
     for (const a of ATTRS.filter(a => a !== w.attr).map(a => shotAct(duel, w.i, a)).concat([cardAct(duel, (w.i + 1) % duel.p.hand.length), { kind: 'spread' }]))
@@ -341,7 +340,7 @@ section('擋錯招（e2e #20 的純邏輯版）：第 1 手點別張／王牌、
     ok(R.awaiting, t + ' 丟出去之後在等結算');
     eq(R.gate(chipAct(duel, 0, 'c')), false, t + ' 等結算時點屬性：擋');
     eq(R.gate(cardAct(duel, 0)), false, t + ' 等結算時點封面：擋');
-    eq(R.gate({ kind: 'spread' }), false, t + ' 等結算時點手牌：擋');
+    eq(R.gate({ kind: 'collapse' }), false, t + ' 等結算時收回手牌：擋');
     eq(R.gate({ kind: 'info', where: 'slot-e' }), true, t + ' 等結算時看唱片資訊：放行');
   }
   // 第 5 手：手牌三張特價箱都冷 ≤3（都會剋不動），手指只指 blockedChoice 那張（最左）
@@ -434,7 +433,7 @@ section('matches／chipOk：點那張認 id／blocked／ace；點屬性（丟）
   ok(!TUT.matches({ allow: { card: { blocked: 'o' } } }, cardAct(duel, 2), Object.assign({}, ctx, { blocked: { c: null, o: null, h: null } })), 'blocked 沒有那張：擋');
   ok(!TUT.matches({ allow: { throw: true, chip: { blocked: 'o' } } }, shotAct(duel, 0, 'o'), Object.assign({}, ctx, { blocked: { c: null, o: null, h: null } })), 'blocked 沒有那張：丟也擋');
   ok(!TUT.matches(m2, { kind: 'info', where: 'e-rec' }, ctx), '沒有 allow.info 的步驟：看唱片資訊不算完成這步');
-  ok(!TUT.matches(m2, { kind: 'spread' }, ctx) && TUT.isLift(m2) && !TUT.isLift(m3), 'spread 不是 matches 管的（runner：點那張的步驟放行、不完成）');
+  ok(!TUT.matches(m2, { kind: 'spread' }, ctx) && TUT.isLift(m2) && !TUT.isLift(m3), 'spread 不放行（v5 沒有了）；m2 是點那張的步驟');
   ok(!TUT.matches(null, chipAct(duel, 0, 'o'), ctx) && !TUT.matches(m2, null, ctx), 'null 安全');
   // v3 的 {i:'best'|'any'} 照收
   ok(TUT.chipOk({ i: 'any', attr: 'h' }, { kind: 'chip', i: 1, attr: 'h' }, ctx) && !TUT.chipOk({ i: 'any', attr: 'h' }, { kind: 'chip', i: 1, attr: 'o' }, ctx), 'v3 {i:any} 照收');
@@ -462,7 +461,7 @@ section('重看教學：包包＝老闆四張＋特價箱 c／o／h 各第一張
         const s = R.begin(); if (!s) break;
         if (s.kind === 'say') { R.done(); continue; }
         const w = target(rp.duel, s.pick);
-        if (!s.allow.throw) { R.gate({ kind: 'spread' }); R.gate(cardAct(rp.duel, w.i)); continue; }
+        if (!s.allow.throw) { R.gate(cardAct(rp.duel, w.i)); continue; }
         R.gate(shotAct(rp.duel, w.i, w.attr));
         const evs = E.resolveTurn(rp.duel, actOf(w), {});
         clashes.push(evs.find(e => e.t === 'clash'));

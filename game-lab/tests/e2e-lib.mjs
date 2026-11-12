@@ -264,27 +264,24 @@ export async function walkTutorial(page, w, h, variant = 'plain') {
       callouts.push(Object.assign({ step: s.id }, cv));
     }
     if (s.kind === 'say') { await page.touchscreen.tap(w / 2, h - 30); continue; }
-    // FIXLIST 11：每手「點疊著的手牌（攤開）→ 點那張 → 點那個屬性（＝丟）」；手指照教學 debug().point 走
+    // v5 手風琴：每手「點那張（疊著那排露出來的那一條＝在那張打開）→ 點那個屬性（＝丟）」；手指照教學 debug().point 走
     if (!s.thr) {
-      const stacked = await page.evaluate(() => window.DipLabDuel.debug().spread === false);
-      if (stacked) {
-        const pt = await page.evaluate(() => window.DipLabTut.debug().point);
-        if (pt !== 'hand') log.push({ step: s.id, bad: 'stacked but finger on ' + pt });
-        await tapAt(page, 'dt:hand');
-        await page.waitForFunction(p => window.DipLabDuel.debug().spread === true && window.DipLabTut.debug().point === p, s.point, { timeout: 4000 }).catch(() => {});
-        await sleep(250);
-      }
+      const pt = await page.evaluate(() => window.DipLabTut.debug().point);
+      if (pt !== s.point) log.push({ step: s.id, bad: 'finger on ' + pt + ', want ' + s.point });
       if (variant === 'wrong' && s.hand === 1) {
-        // 第 1 手：攤開後點別張（在遮罩上）→「先點我指的這裡。」、沒浮起
+        // 第 1 手：點疊著那排的別張（露出來那一條的正中間，在遮罩上）→「先點我指的這裡。」、沒打開
         const n0 = (await dbg()).d.n;
-        const wrongSel = await page.evaluate(pt => {
+        const xy = await page.evaluate(pt => {
           const tgt = window.DipLabDuel.el(pt); if (!tgt) return null;
           const tile = tgt.closest('.tile');
-          const c = [...document.querySelectorAll('.dl .tile .cvw')].find(x => x.closest('.tile') !== tile);
-          return c ? '.dl [data-tut="' + c.dataset.tut + '"]' : null;
+          const tiles = [...document.querySelectorAll('.dl .tile:not(.gone)')], k = tiles.indexOf(tile);
+          const far = tiles.findIndex((t, i) => Math.abs(i - k) >= 2), j = far >= 0 ? far : tiles.findIndex((t, i) => i !== k);   // 不挑隔壁那張：洞的邊緣多挖 4 px
+          if (j < 0) return null;
+          const r = tiles[j].getBoundingClientRect(), nx = tiles[j + 1] ? tiles[j + 1].getBoundingClientRect().left : r.right;
+          return { x: (r.left + Math.min(nx, r.right)) / 2, y: r.top + r.height / 2 };
         }, s.point);
-        if (wrongSel) {
-          await tapAt(page, wrongSel); await sleep(250);
+        if (xy) {
+          await page.touchscreen.tap(xy.x, xy.y); await sleep(250);
           const st = await dbg();
           log.push({ step: s.id, hand: 1, text: st.t.text, warn: st.t.warn, n: st.d.n, n0, sel: st.d.sel, shown: st.t.shown });
           await sleep(1700);
@@ -294,7 +291,7 @@ export async function walkTutorial(page, w, h, variant = 'plain') {
       continue;
     }
     if (variant === 'wrong' && s.hand === 2) {
-      // 第 2 手：浮起那張的別色屬性鈕（在遮罩上）→「先點我指的這裡。」、沒丟出去、還是那張浮著
+      // 第 2 手：打開那張的別色屬性鈕（在遮罩上）→「先點我指的這裡。」、沒丟出去、還是那張開著
       const n0 = (await dbg()).d.n;
       const wrongSel = await page.evaluate(pt => {
         const tgt = window.DipLabDuel.el(pt); if (!tgt) return null;
