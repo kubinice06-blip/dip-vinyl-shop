@@ -240,7 +240,7 @@ small{font-size:inherit;}
 .lb-relic .ds{font-size:11px;font-weight:400;color:var(--gray2);letter-spacing:.02em;line-height:1.5;}
 .lb-ri{display:inline-grid;place-items:center;width:16px;height:16px;border:1px solid var(--ink);font-size:10px;}
 .lb-result{margin:10px 0 0;font-size:14px;font-weight:700;line-height:1.6;}
-/* ---------- 浮在舞台下緣的小面板（今晚來客頭像、箱子、試聽機、包包、配件） ---------- */
+/* ---------- 浮在舞台下緣的小面板（來客頭像、箱子、試聽機、包包、配件） ---------- */
 .lb-sheet.float{position:absolute;top:auto;left:0;right:0;bottom:0;max-height:72%;z-index:20;border-top:1px solid var(--ink);box-shadow:0 -8px 18px rgba(0,0,0,.14);padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));}
 .lb-sheet.float.tall{max-height:86%;}
 .pv-who{display:flex;gap:10px;align-items:center;margin-top:8px;}
@@ -265,9 +265,8 @@ small{font-size:inherit;}
 .lb-wall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;}
 .lb-wall .lb-cv{width:100%;height:auto;aspect-ratio:1/1;}
 @supports not (aspect-ratio:1/1){.lb-wall .lb-cv{height:0;padding-top:100%;}}
-.lb-teaser{display:flex;gap:10px;align-items:center;margin-top:12px;border:1px dashed var(--gray);padding:8px;}
-.lb-teaser .sil svg{filter:brightness(0);opacity:.75;}
-.lb-teaser b{font-size:13px;}
+/* 中繼點那行（結算；有走到才有） */
+.lb-cps{margin:-4px 0 10px;}
 .lb-endbtns{flex:none;display:flex;flex-direction:column;gap:8px;padding:8px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:#fff;}
 .lb-endbtns .row{display:flex;gap:8px;}
 .lb-endbtns .row .lb-btn{flex:1;font-size:12px;padding:6px 8px;}
@@ -405,7 +404,7 @@ body.lb-float-open #tut{visibility:hidden;}
 
 
 /* ===================== v3 外殼（SPEC-v3 §9＋主線補充） ===================== */
-/* 標題：「再按一次就放棄今晚」那行一直佔著位置（不推動第二下要點的鈕），按第一下才看得到（B-title-375-clipped） */
+/* 標題：「再按一次就放棄這一趟」那行一直佔著位置（不推動第二下要點的鈕），按第一下才看得到（B-title-375-clipped） */
 .lb-tbtns .lb-warn{visibility:hidden;min-height:18px;}
 .lb-screen.warned .lb-warn{visibility:visible;}
 @media (max-height:600px){.lb-panel.title .lb-foot.hint{display:none;}}
@@ -457,22 +456,23 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-pick.booth{grid-template-columns:repeat(4,minmax(0,1fr));}
 .lb-pick.booth .lb-pickb{min-height:40px;}
 .lb-pick.booth .lb-ct.sel .lb-cv{outline:2px solid var(--gold);outline-offset:2px;}
-/* 今晚來客：一條五顆頭像（打完的變黑、下一位金框）＋下一位＋包包／配件 */
+/* 來客（無限試煉：這一輪五顆頭像，頭像上面寫第 n 位；打完的變黑、下一位金框、第 5 位紅框傳說藏家）＋下一位＋聲望／錢／包包／配件 */
 .lb-panel.night{justify-content:flex-start;}
 .lb-night{flex:none;padding:8px 10px 0;}
 .lb-night .nh{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;}
-.lb-night .nh b{font-size:13px;letter-spacing:.12em;}
+.lb-night .nh b{font-size:13px;letter-spacing:.12em;flex:none;}
+.lb-night .nh .sub{font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .lb-night .nrow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-bottom:8px;}
 .lb-night .nc{display:flex;flex-direction:column;align-items:center;gap:2px;min-height:44px;padding:2px 0;font-family:var(--zh);}
-.lb-night .nc .tm{font:700 10px 'Space Mono',monospace;color:var(--gray);}
+.lb-night .nc .ps{font:700 10px var(--zh);color:var(--gray);white-space:nowrap;letter-spacing:.02em;}   /* 第 12 位（一晚版是 10px 等寬的 22:00） */
 .lb-night .nc .hd{position:relative;width:42px;height:42px;border:1px solid var(--ink);display:grid;place-items:center;background:#fff;overflow:hidden;}
 .lb-night .nc .nm{font-size:11px;font-weight:700;line-height:1.2;max-width:100%;overflow:hidden;text-align:center;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-break:strict;text-wrap:balance;}   /* 長的身分名（地下樂團吉他手）折兩行、不切掉（FIXLIST 6） */
 .lb-night .nc.done .hd{background:var(--ink);}
 .lb-night .nc.done .hd svg{opacity:.35;}
 .lb-night .nc.done .ok{position:absolute;right:2px;bottom:0;color:#fff;font-size:12px;font-weight:700;}
-.lb-night .nc.done .nm,.lb-night .nc.done .tm{color:var(--gray);}
+.lb-night .nc.done .nm,.lb-night .nc.done .ps{color:var(--gray);}
 .lb-night .nc.cur .hd{border:2px solid var(--gold);box-shadow:0 0 0 2px var(--cream);animation:lbNodePulse 1.6s ease-in-out infinite;}
-.lb-night .nc.cur .tm{color:var(--ink);}
+.lb-night .nc.cur .ps{color:var(--ink);}
 .lb-night .nc.boss .hd{border-color:var(--red);}
 .lb-night .nc.boss.cur .hd{border-color:var(--gold);}
 @keyframes lbNodePulse{0%,100%{box-shadow:0 0 0 2px var(--cream);}50%{box-shadow:0 0 0 4px rgba(184,134,11,.35);}}
@@ -482,6 +482,20 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-bagline .rl{color:var(--gray2);font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;}
 .lb-bagline .rl .k{color:var(--gray);margin-right:2px;}
 .lb-bagline .rl .ri{display:inline-grid;place-items:center;}
+/* 聲望那顆（最左；帶到下一場的聲望，點開看等級、經驗、品味、底氣、上限） */
+.lb-bagline .me{flex:none;padding:0 6px 0 6px;}
+.lb-bagline .me b{font:700 13px 'Space Mono',monospace;}
+.lb-me{list-style:none;margin:6px 0 0;padding:0;border-top:1px solid var(--ink);}
+.lb-me li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;}
+.lb-me li b{font-weight:700;}
+.lb-me li .sub{margin:0;font-size:11px;}
+/* 升級三選一（獎勵收完之後；沒有「算了」）：三顆大鈕，左邊名字＋一行說明，右邊現在 → 之後 */
+.lb-sheet.level .hd .sub{margin-left:8px;}
+.lb-lvl{justify-content:space-between;text-align:left;gap:12px;min-height:56px;}
+.lb-lvl .tx{display:flex;flex-direction:column;min-width:0;}
+.lb-lvl .nm{font-size:15px;font-weight:700;}
+.lb-lvl .ds{font-size:11px;font-weight:400;color:var(--gray2);letter-spacing:.02em;line-height:1.5;}
+.lb-lvl .nv{flex:none;font:700 13px 'Space Mono',monospace;color:var(--gray2);}
 /* 點頭像：名牌那句（跟盤面上的一樣：黑底標籤＋粗體一句） */
 .lb-habit{display:flex;align-items:stretch;margin-top:10px;border:1px solid var(--ink);min-height:30px;}
 .lb-habit .lb{flex:none;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 8px;}
@@ -549,12 +563,13 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-sum li{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;}
 .lb-sum li .k{color:var(--gray2);}
 .lb-sum li b{font:700 15px 'Space Mono',var(--zh);}
+.lb-sum li .nr{display:inline-block;font:700 10px var(--zh);color:#fff;background:var(--red);padding:0 5px;line-height:16px;margin-right:8px;vertical-align:2px;letter-spacing:.06em;}   /* 新紀錄 */
 .lb-endhero .sub{margin:2px 0 0;}
 /* 手機橫拿：盤面放不下，請轉回直的（B-landscape） */
 @media (orientation:landscape) and (max-height:500px){
   #app::after{content:'請把手機轉回直的';position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483000;background:#fff;display:flex;align-items:center;justify-content:center;font:700 16px var(--zh);letter-spacing:.12em;color:var(--ink);}
 }
-/* v4（B2）：老闆的四張（O12：封面＋推薦語，收下才只是確認，入袋在 O14）、今晚來客的錢、地上那張盤的撿起面板（沒有標題列） */
+/* v4（B2）：老闆的四張（O12：封面＋推薦語，收下才只是確認，入袋在 O14）、來客的錢、地上那張盤的撿起面板（沒有標題列） */
 .lb-recs{display:flex;flex-direction:column;gap:8px;margin-top:8px;flex:none;}
 .lb-recs .rc{display:flex;gap:10px;align-items:flex-start;}
 .lb-recs .rc .lb-cv{flex:none;}
@@ -566,7 +581,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-bagline .money{flex:none;font:700 13px 'Space Mono',monospace;padding:0 6px 0 4px;color:var(--ink);}
 .lb-sheet.one.notitle .lb-one{margin-top:4px;}
 /* 高螢幕（430×932 這類，V03）：店景已經整面寬、不能再大，對白框不再撐滿剩下的高（一兩行字配 360px 黑框）——
-   框照內容長（至少約 4 行）、字大一號，包包那條緊接在下面；今晚來客的錢／包包那條也緊接在名單下面 */
+   框照內容長（至少約 4 行）、字大一號，包包那條緊接在下面；來客的錢／包包那條也緊接在名單下面 */
 @media (min-height:800px){
   .lb-dq{flex:0 0 auto;min-height:176px;font-size:16px;line-height:2;margin-top:18px;}
   .lb-dq .tx{min-height:64px;}

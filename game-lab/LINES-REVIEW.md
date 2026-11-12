@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 70、新 291（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 70、新 332（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -22,27 +22,25 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | （畫面字） | （挑三張。） | 本規格新寫 | `script.prologue[13].prompt` |
 
-## 傳說藏家進門
+## 傳說藏家進門（每輪第 5 位）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字） | ▶ 品味對決 | 本規格新寫 | `script.bossEnter[1].prompt` |
 
-## 打烊（通關）
+## 打倒傳說藏家（每一輪：翻開他的王牌）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 傳說藏家・C1 | 「……這張，送你。三十年前，我也是這樣拿到的。」 | 概念稿 A | `script.clear[0]` |
-| （畫面字） | 第二夜（尚未開放） | 本規格新寫 | `script.clear[1].set.stamp` |
-| 旁白・C2 | 對街新開了一間黑膠潮流館。 | 本規格新寫 | `script.clear[1]` |
+| 傳說藏家・C1 | 「……這張，送你。三十年前，我也是這樣拿到的。」 | 概念稿 A | `script.bossDown[0]` |
 
-## 散場
+## 散場（這一趟結束）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・D1 | 「……今晚就到這。」 | 本規格新寫 | `script.dead[0]` |
+| 老闆・D1 | 「……就到這裡吧。」 | 本規格新寫 | `script.dead[0]` |
 
-## 再來一夜
+## 再挑戰一趟
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
@@ -161,7 +159,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | 為什麼這樣剋：冷門笑經典太大眾，經典壓得住難懂的硬蕊，硬蕊拆穿只是沒人聽過的冷門。 | 本規格新寫 | `rules.why` |
 | （畫面字） | 發燒配件：自動生效，最多帶三件。 | 本規格新寫 | `rules.relics` |
 | （畫面字） | 點專輯再點屬性出牌；按住封面看唱片資訊。 | 本規格新寫 | `rules.foot[0]` |
-| （畫面字） | 你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。 | 本規格新寫 | `rules.foot[1]` |
+| （畫面字） | 你 12 聲望，打贏回 3；客人 {normal}、傳說藏家 {boss}。 | 本規格新寫 | `rules.foot[1]` |
 
 ## 對決盤面・牌桌小抄（點相剋圖打開）
 
@@ -334,7 +332,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・locked | 這間還沒開。 | 本規格新寫 | `shopLines.locked` |
 | 老闆・ownerHint.title | 外面雨大，進來坐。 | 本規格新寫 | `shopLines.ownerHint.title` |
 | 老闆・ownerHint.scene | 慢慢看，不趕你。 | 本規格新寫 | `shopLines.ownerHint.scene` |
-| 老闆・ownerHint.night | 今晚的客人，一個一個來。 | 本規格新寫 | `shopLines.ownerHint.night` |
+| 老闆・ownerHint.night | 客人一個一個來。 | 本規格新寫 | `shopLines.ownerHint.night` |
 | 老闆・ownerHint.duel | 先看提示那句。 | 本規格新寫 | `shopLines.ownerHint.duel` |
 | 老闆・ownerHint.reward | 收好，別折到封套。 | 本規格新寫 | `shopLines.ownerHint.reward` |
 | 老闆・bin | 點封面看唱片資訊、試聽。 | 本規格新寫 | `shopLines.bin` |
@@ -346,7 +344,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・nightIntro[0] | 今晚的客人，一個一個來。 | 本規格新寫 | `shopLines.nightIntro[0]` |
+| 老闆・nightIntro[0] | 客人一個一個來，打到輸為止。 | 本規格新寫 | `shopLines.nightIntro[0]` |
 | 老闆・nightIntro[1] | 客人跟剛才那位不一樣，有時會唬你。 | 本規格新寫 | `shopLines.nightIntro[1]` |
 | 老闆・nightIntro[2] | 贏了有錢，兩位客人之間可以去箱子買唱片。 | 本規格新寫 | `shopLines.nightIntro[2]` |
 
@@ -400,18 +398,18 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・bargainTake | 收下這三張 | 本規格新寫 | `shopUi.bargainTake` |
 | （畫面字）・bargainBuy | 買下 ${n} | 本規格新寫 | `shopUi.bargainBuy` |
 | （畫面字）・bargainEach | ${n} | 本規格新寫 | `shopUi.bargainEach` |
-| （畫面字）・bargainEmpty | 特價區今晚賣完了。 | 本規格新寫 | `shopUi.bargainEmpty` |
+| （畫面字）・bargainEmpty | 特價區賣完了，下一輪再補。 | 本規格新寫 | `shopUi.bargainEmpty` |
 | （畫面字）・close | 關閉 | 本規格新寫 | `shopUi.close` |
 | （畫面字）・earned | +${n} | 本規格新寫 | `shopUi.earned` |
 | （畫面字）・bag | 包包 {n}/{max} | 本規格新寫 | `shopUi.bag` |
-| （畫面字）・binEmpty | 這一箱今晚賣完了。 | 本規格新寫 | `shopUi.binEmpty` |
+| （畫面字）・binEmpty | 這一箱賣完了，下一輪再補。 | 本規格新寫 | `shopUi.binEmpty` |
 | （畫面字）・owned | 包包裡有了 | 本規格新寫 | `shopUi.owned` |
 | （畫面字）・bagFullN | 包包放不下：先賣 {k} 張，半價 ${n} | 本規格新寫 | `shopUi.bagFullN` |
 | （畫面字）・moneyShort | 錢不夠：先賣一張，半價 ${n} | 本規格新寫 | `shopUi.moneyShort` |
 | （畫面字）・sellFirst | 先賣一張 | 本規格新寫 | `shopUi.sellFirst` |
 | （畫面字）・relicSell | 賣這件 | 本規格新寫 | `shopUi.relicSell` |
 | （畫面字）・relicSold | 「{name}」賣掉，+${n} | 本規格新寫 | `shopUi.relicSold` |
-| （畫面字）・relicEmpty | 櫃檯今晚的配件賣完了。 | 本規格新寫 | `shopUi.relicEmpty` |
+| （畫面字）・relicEmpty | 櫃檯的配件賣完了，下一輪再補。 | 本規格新寫 | `shopUi.relicEmpty` |
 | （畫面字）・relicMoneyShort | 錢不夠：先賣一件，半價 ${n} | 本規格新寫 | `shopUi.relicMoneyShort` |
 | （畫面字）・relicSellFirst | 先賣一件 | 本規格新寫 | `shopUi.relicSellFirst` |
 | （畫面字）・bargainHint | 挑一到三張 | 本規格新寫 | `shopUi.bargainHint` |
@@ -421,17 +419,76 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・infoAria | 唱片資訊、試聽 | 本規格新寫 | `shopUi.infoAria` |
 | （畫面字） | 特價 | 本規格新寫 | `bargain.label` |
 
-## 今晚來客・結算
+## 無限試煉・頂欄、來客、說情、標題（{x} 由畫面代入）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字） | 今晚來客 | 本規格新寫 | `night.label` |
-| （畫面字） | 打烊 | 本規格新寫 | `night.closing` |
-| （畫面字）・reached | 走到 {time} | 本規格新寫 | `summary.reached` |
+| （畫面字）・prologue | 序章 | 本規格新寫 | `trial.ui.prologue` |
+| （畫面字）・pos | 第 {n} 位 | 本規格新寫 | `trial.ui.pos` |
+| （畫面字）・round | 第 {r} 輪 | 本規格新寫 | `trial.ui.round` |
+| （畫面字）・elite | 菁英 | 本規格新寫 | `trial.ui.elite` |
+| （畫面字）・boss | 傳說藏家 | 本規格新寫 | `trial.ui.boss` |
+| （畫面字）・toCheckpoint | 離下個中繼點還有 {n} 位 | 本規格新寫 | `trial.ui.toCheckpoint` |
+| （畫面字）・checkpoint | 中繼點：第 {n} 位 | 本規格新寫 | `trial.ui.checkpoint` |
+| （畫面字）・retryLeft | 老闆說情 剩 {n} 次 | 本規格新寫 | `trial.ui.retryLeft` |
+| （畫面字）・next | 下一位：第 {n} 位　{name} ▸ | 本規格新寫 | `trial.ui.next` |
+| （畫面字）・guestDone | 打過了 | 本規格新寫 | `trial.ui.guestDone` |
+| （畫面字）・guestCur | 下一位 | 本規格新寫 | `trial.ui.guestCur` |
+| （畫面字）・guestLater | 還沒輪到 | 本規格新寫 | `trial.ui.guestLater` |
+| （畫面字）・hasAce | 帶王牌 | 本規格新寫 | `trial.ui.hasAce` |
+| （畫面字）・hp | 聲望 {n}/{max} | 本規格新寫 | `trial.ui.hp` |
+| （畫面字）・heal | 聲望 +{n} | 本規格新寫 | `trial.ui.heal` |
+| （畫面字）・level | Lv {n} | 本規格新寫 | `trial.ui.level` |
+| （畫面字）・xp | 經驗 {n}/{need} | 本規格新寫 | `trial.ui.xp` |
+| （畫面字）・atk | 品味 {n} | 本規格新寫 | `trial.ui.atk` |
+| （畫面字）・def | 底氣 {n} | 本規格新寫 | `trial.ui.def` |
+| （畫面字）・maxHp | 聲望上限 {n} | 本規格新寫 | `trial.ui.maxHp` |
+| （畫面字）・atkShort | 品 {n} | 本規格新寫 | `trial.ui.atkShort` |
+| （畫面字）・defShort | 底 {n} | 本規格新寫 | `trial.ui.defShort` |
+| （畫面字）・cont | 繼續試煉 ▸ | 本規格新寫 | `trial.ui.cont` |
+| （畫面字）・abandon | 放棄這一趟 | 本規格新寫 | `trial.ui.abandon` |
+| （畫面字）・abandonWarn | 再按一次就放棄這一趟（{where}），從頭推門。 | 本規格新寫 | `trial.ui.abandonWarn` |
+| （畫面字）・lastSummary | 看上一趟結算 | 本規格新寫 | `trial.ui.lastSummary` |
+| （畫面字）・retryMenu[0] | ▶ 再一場（這一輪只有一次） | 本規格新寫 | `trial.ui.retryMenu[0]` |
+| （畫面字）・retryMenu[1] | 到這裡就好 | 本規格新寫 | `trial.ui.retryMenu[1]` |
+| （畫面字）・shelfNew | 這一趟新認識 | 本規格新寫 | `trial.ui.shelfNew` |
+
+## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・title | 升級：Lv {n} | 本規格新寫 | `trial.levelUp.title` |
+| （畫面字）・sub | 聲望上限 +1（自動） | 本規格新寫 | `trial.levelUp.sub` |
+| （畫面字）・atk | 品味 +1 | 本規格新寫 | `trial.levelUp.atk` |
+| （畫面字）・def | 底氣 +1 | 本規格新寫 | `trial.levelUp.def` |
+| （畫面字）・hp | 聲望上限 +2 | 本規格新寫 | `trial.levelUp.hp` |
+| （畫面字）・atkSub | 只加在剋中 | 本規格新寫 | `trial.levelUp.atkSub` |
+| （畫面字）・defSub | 最多擋一半 | 本規格新寫 | `trial.levelUp.defSub` |
+| （畫面字）・hpSub | 現在的聲望也 +2 | 本規格新寫 | `trial.levelUp.hpSub` |
+
+## 無限試煉・結果行補的一句（品味／底氣多扣、少扣）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・atk | 品味：多扣 {n} | 本規格新寫 | `trial.notes.atk` |
+| （畫面字）・def | 底氣：少扣 {n} | 本規格新寫 | `trial.notes.def` |
+| （畫面字）・eAtk | 他的品味：多扣 {n} | 本規格新寫 | `trial.notes.eAtk` |
+| （畫面字）・eDef | 他的底氣：少扣 {n} | 本規格新寫 | `trial.notes.eDef` |
+
+## 無限試煉・結算與標題的紀錄
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・title | 試煉結束 | 本規格新寫 | `summary.title` |
+| （畫面字）・reached | 走到第 {n} 位 | 本規格新寫 | `summary.reached` |
+| （畫面字）・streak | 最多連贏 {n} 位 | 本規格新寫 | `summary.streak` |
+| （畫面字）・taken | 收了 {n} 張 | 本規格新寫 | `summary.taken` |
 | （畫面字）・wins | 贏了 {n} 位 | 本規格新寫 | `summary.wins` |
-| （畫面字）・taken | 收了 | 本規格新寫 | `summary.taken` |
-| （畫面字）・none | 這晚沒收唱片 | 本規格新寫 | `summary.none` |
-| （畫面字）・again | 再來一夜 | 本規格新寫 | `summary.again` |
+| （畫面字）・none | 這一趟沒收唱片 | 本規格新寫 | `summary.none` |
+| （畫面字）・best | 最遠：第 {n} 位 | 本規格新寫 | `summary.best` |
+| （畫面字）・newRecord | 新紀錄 | 本規格新寫 | `summary.newRecord` |
+| （畫面字）・checkpoints | 中繼點：第 {list} 位 | 本規格新寫 | `summary.checkpoints` |
+| （畫面字）・again | 再挑戰一趟 | 本規格新寫 | `summary.again` |
 
 ## 店內名牌（shops/basement.json）
 
@@ -485,12 +542,6 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[4].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[5].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[6].hot.label` |
-
-## 第二夜預告
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| （畫面字） | 增值哥（對街潮流館）／第二夜（尚未開放） | 本規格新寫 | `secondNight` |
 
 ## 推薦語・王牌（殿堂）
 

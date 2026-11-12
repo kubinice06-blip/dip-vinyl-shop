@@ -141,6 +141,12 @@
 .dl .relics .rl::before{content:'';position:absolute;left:-12px;right:-12px;top:-12px;bottom:-12px}
 .dl .relics .rl svg,.dl .relics .rl canvas,.dl .relics .rl img,.dl .relics .rl>span:not(.rl-t){max-width:16px;max-height:16px;display:block}
 .dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
+/* 品味／底氣小籤（無限試煉；duel.js statsHTML，大於 0 才有）：「品 2」金框、「底 1」黑框；兩邊名字列同一套 */
+.dl .nmrow .st{display:inline-flex;align-self:center;align-items:center;gap:3px;height:20px;margin-right:4px;flex:none}
+.dl .nmrow .st:empty{display:none}
+.dl .nmrow .st>span{font:700 11px var(--dl-zh);line-height:16px;height:18px;padding:0 4px;border:1px solid var(--gold,#b8860b);background:var(--cream,#fffbe9);color:var(--cream-ink,#5a4a10);white-space:nowrap}
+.dl .nmrow .st>.sd{border-color:var(--ink,#111);background:#fff;color:var(--ink,#111)}
+.dl .dl-e .nmrow .st{margin-left:6px}
 /* 手牌區：高由 duel.js 給（放得下疊著那一排；屬性鈕往上蓋）；每張絕對定位，transform＝位移 */
 .dl .hand{position:relative;height:120px;margin-top:2px;cursor:pointer;-webkit-touch-callout:none}
 .dl .hand .tiles{position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden}   /* 新抽的那張從手牌區底下滑上來：滑進來那 260 ms 不撐高盤面（不然 fit() 量到 scrollHeight 會開 .tighter，整個盤面跳一下；RH-1） */
@@ -209,6 +215,7 @@
 .dl.short{--ecv:44px;--tri-w:56px;--tri-h:50px;--ab-top:46px}   /* 相剋圖例最小 56（FIXLIST 7：56–72 px；R-06） */
 .dl.short .dl-e{padding:3px 12px 4px}
 .dl.short .nmrow{height:18px}
+.dl.short .nmrow .st{height:18px}.dl.short .nmrow .st>span{height:16px;line-height:14px;font-size:10px;padding:0 3px}
 .dl.short .hint{min-height:32px}
 .dl.short .hint .lb{font-size:11px;padding:0 6px;margin-right:6px}
 .dl.short .hint .tx{font-size:13px;line-height:17px;padding:3px 6px 3px 0}

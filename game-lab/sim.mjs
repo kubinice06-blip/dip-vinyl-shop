@@ -1,19 +1,34 @@
-// game-lab/sim.mjs — v4 balance simulation + thresholds (SPEC-v4 §5.2; Agent A1).  Runs on the REAL engine.js / content.js / cards.js / bins.js.
-// Usage: node game-lab/sim.mjs [--n 3000] [--mode all|nights|fights] [--econ both|none|smart] [--json out.json]
-//                              [--set mercy=false,threshold=2] [--hp '{"copycat":15}'] [--patch '{"economy":{"win":{"normal":250}}}']
-//                              [--policies thoughtful,high,...] [--data <dir with cards.js and bins.js>]
-//   --n       nights per cell (night tables) and fights per cell (single-fight tables)
-//   --econ    which shopPolicy mode(s) the night tables use; 'both' (default) is needed for S6
-//   --set     engine CFG overrides (numbers or true/false); --hp per-guest starting 聲望; --patch deep-merges into content (calibration trials)
-//   --data    use another cards.js／bins.js（e.g. Y's worktree game-lab/）for the shop stock — calibrate against the bins before they are merged
-// Model (§5.2): first night = prologue man (no tutorial; bargain pick "one per colour, highest peak") → Fishmans + one of three prologue
-// relics (runPolicy) → 3 normals → 1 elite → boss, the owner pleads once (retry); shopPolicy(mode) before every guest.
-// FIXLIST 10（平衡 R1）加兩條：S9＝會讀的＋smart 一晚裡的客人場（一般／菁英／藏家）由 KO 結束（任一方聲望歸零）≥35%；
-//   HP＝聲望單調：一般客人的最大值 ≤ 菁英的最小值、菁英的最大值 ≤ 藏家（同一級可以不一樣，跨級不准倒掛；規則卡頁尾照級寫範圍）。
-//   報表另列 KO 分「你 KO 他／他 KO 你」與「第 6 手比聲望條」結束的比例，一晚裡分一般／菁英／藏家，單場表每位客人也列。
-// FIXLIST 11（平衡 H5-1）：你的手牌 5 張（CFG.handSize；他的暗手 CFG.enemyHand 照舊 3）、你 9（CFG.playerHp）、客人 20–25／菁英 25–26／藏家 28；門檻不變（22 條）。
-//   老闆送的四張＋王牌不能賣回（engine.isGift）：smart 包包滿要賣時只賣不是送的那幾張。
-// Any failed threshold sets process.exitCode = 1.
+// game-lab/sim.mjs — v5 無限試煉 balance simulation + thresholds（SPEC 無限試煉 §4 第三棒）。Runs on the REAL engine.js / content.js / cards.js / bins.js.
+//   每一趟照 run API 跑到輸（newRun → 特價箱挑三張 → 序章男子 → 第 1 位 → … 最多 --cap 位）；規則、曲線、升級、商店、獎勵一行都不在這裡重寫，
+//   選擇全用引擎自己的 bargainPolicy／runPolicy（獎勵、升級＝harness MIX、說情）／shopPolicy('smart')。
+// Usage: node game-lab/sim.mjs [--n 2000] [--mode all|runs|man] [--flows smart,none,bare] [--gate smart] [--cap 300] [--json out.json]
+//                              [--policies thoughtful,novice,random,high,formula,mirrorHint,oracle] [--tier k]
+//                              [--set mercy=false] [--patch '{"trial":{"curve":{"atk":{"add":1}}}}'] [--data <dir with cards.js and bins.js>]
+//   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
+//   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；none＝同上但不買；
+//            bare＝最像 ../curve V3 模擬（curvesim.cjs）：不打序章、包包＝老闆四張＋特價箱三張＋男子那張、整趟不換（不拿獎勵、不買、沒有配件）；
+//            cards／relics＝none 但只拿唱片／只拿配件（拆解用，要自己點）。每個流程都有升級（runPolicy）與每輪一次說情
+//   --gate   門檻看哪個流程（預設 smart＝真的玩法）　--set 改 engine CFG　--patch deep-merge 進 content（例：C.trial.curve 旋鈕）　--tier C.trial.tiers 第 k 階
+// 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（永遠剋提示）、會讀的＝thoughtful、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
+// 名詞（照 ../curve/results.md）：深度＝這一趟輸在第幾位（打完 cap 位還沒輸記 cap）；到第 N 位＝深度 ≥ N；不說情＝同一趟在第一次輸的地方切斷；
+//   單位死亡率＝到了這一位的趟裡有幾成在這一位結束；首戰＝這一位的第一場（說情重打不算）；懸崖＝相鄰兩個非藏家位（都 ≥200 趟到過）首戰勝率掉最多的地方。
+//
+// 門檻（SPEC §4 第三棒；全部看 --gate 流程。2026-11-12 先跑一次 --n 2000 再定數字。任一條沒過 process.exitCode = 1）：
+//   T1 新手 第 1–3 位死亡 ≤5%（V3 2%）
+//   T2 照規劃書 #s3 的目標（主線 11-12 裁定：SPEC 原本照 V3 bare 寫的 8–20 不含獎勵與商店，改回店主的目標）：
+//      T2a 一般玩家（新手）深度中位數 10–30；T2b 讀得準的高手（會讀的）有機會破 100 位：到第 100 位 10–70%
+//   T3 會讀的 藏家位死亡率是非藏家位的 2–4 倍：第 4–60 位、到過 ≥200 趟的位置合併算（暖身第 1–3 位設計上不死，不算進來；V3 13–20% 對 5–7%）
+//   T4 相鄰非藏家位首戰勝率掉 ≤20 點（新手、會讀的各一條；V3 新手第 4→6 位 19 點、會讀的 14 點）
+//   T5 一場平均手數：新手 3–4.5（舊版試玩表 3–4 招）；會讀的 2.5–4.5（後段包包變強、一場變短；之後用 C.trial.tiers 難度階梯給高手加難度，店主 11-12 參考 Monster Train）
+//   T6 亂出 到第 5 位 ≤5%：第一次跑出 smart 1.5%、none 0.5%、bare 0.05%（亂出第 1 位首戰只贏 2 成，97% 死在第 1–3 位）；留 3 倍餘裕（舊 S3 也是 ≤5%）
+//   T7 會讀的比亂出走得遠：深度中位數 ≥ 亂出的 2 倍且至少多 5 位（第一次跑出 smart 90 對 1、bare 14 對 1）
+//   S5 序章男子（保留 v4 §5.2）：會讀的 ≥97%、平均 ≤4 手；只出最大星 ≥90%；新手（永遠剋提示）≥90%
+//   M6 最多 6 手（CFG.maxRounds）；HP 聲望單調 C.trial.guestHp 一般 ≤ 菁英 ≤ 藏家（不靠模擬）
+// 第一次跑（2026-11-12，--n 2000，171 秒）：smart 13/15，沒過的是 T2 會讀的中位 90（平均 103.9）、T5 會讀的 2.57 手。T1／T3–T7 的 SPEC 數字照用、不放寬。
+//   會讀的 深度中位／平均（新手）拆解：V3 12／15.8（6／6.6）→ bare 但放水唬人 0（--patch '{"trial":{"curve":{"mercyFeint":0}}}'）12／15.5（6／6.6，逐位對得上 V3）
+//   → bare 14／17.1（6／7.1；＋放水唬人）→ relics 18／21.7（8／8.6；＋序章、菁英、藏家給的配件）→ cards 61／67.2（15／14.8；＋客人丟的唱片）
+//   → none 68／74.8（15／15.7）→ smart 90／103.9（16／18.8；＋買，幾乎都是櫃檯的屬性加成配件：每趟買唱片 0.2 張、配件 0.96 件，賺 $220,057 只花 $3,113）。
+//   主因是獎勵唱片：後段客人的牌經過下限替換（第 14 位起總星 ≥13），拿回來包包平均總星 9.1→13.2，V3 的 harness 包包整趟不換。要改曲線還是改獎勵由主線定。
 import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
@@ -22,22 +37,28 @@ const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const EN = require(path.join(HERE, 'engine.js'));
 const C = require(path.join(HERE, 'content.js'));
-const { CFG, TIERS, COUNTER_OF } = EN;
+const { CFG, TIERS } = EN;
 
 // ---------------- args ----------------
 const argv = process.argv.slice(2);
 const arg = (name, def) => { const i = argv.indexOf('--' + name); return i >= 0 && argv[i + 1] != null ? argv[i + 1] : def; };
-const N = +arg('n', 3000);
+const N = +arg('n', 2000);
 const MODE = arg('mode', 'all');
-const ECON = arg('econ', 'both');
+const CAP = +arg('cap', 300);
+const TIER = +arg('tier', 0);
 const JSON_OUT = arg('json', null);
-if (!['both', 'none', 'smart'].includes(ECON)) { console.error('--econ both|none|smart'); process.exit(2); }
+const ALL_FLOWS = ['smart', 'none', 'bare', 'cards', 'relics'];
+const FLOWS = arg('flows', 'smart,none,bare').split(',').filter(Boolean);
+const GATE = arg('gate', 'smart');
+for (const f of FLOWS) if (!ALL_FLOWS.includes(f)) { console.error('--flows ' + ALL_FLOWS.join('|')); process.exit(2); }
+if (!ALL_FLOWS.includes(GATE)) { console.error('--gate ' + ALL_FLOWS.join('|')); process.exit(2); }
+if (!['all', 'runs', 'man'].includes(MODE)) { console.error('--mode all|runs|man'); process.exit(2); }
+if (!(CAP >= 5)) { console.error('--cap ≥ 5'); process.exit(2); }
 if (arg('set', null)) for (const kv of arg('set').split(',')) {
   const [k, v] = kv.split('=');
   if (!(k in CFG)) throw new Error('unknown CFG ' + k);
   CFG[k] = v === 'true' ? true : v === 'false' ? false : +v;
 }
-if (arg('hp', null)) { const o = JSON.parse(arg('hp')); for (const k in o) { if (!C.enemies[k]) throw new Error('unknown guest ' + k); C.enemies[k].hp = o[k]; } }
 if (arg('data', null)) {
   const dir = path.resolve(arg('data'));
   const cards = require(path.join(dir, 'cards.js')), bins = require(path.join(dir, 'bins.js'));
@@ -50,20 +71,29 @@ if (arg('data', null)) {
 const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) && t[k] && typeof t[k] === 'object') deepMerge(t[k], s[k]); else t[k] = s[k]; } return t; };
 if (arg('patch', null)) deepMerge(C, JSON.parse(arg('patch')));
 
-const ALL_POLS = ['thoughtful', 'high', 'counterHint', 'formula', 'mirrorHint', 'random', 'oracle'];
+const ALL_POLS = ['thoughtful', 'novice', 'random', 'high', 'formula', 'mirrorHint', 'oracle'];
 const POLS = arg('policies', ALL_POLS.join(',')).split(',').filter(Boolean);
 for (const p of POLS) if (!EN.policies[p]) { console.error('unknown policy ' + p); process.exit(2); }
-const LABEL = { thoughtful: '會讀的', high: '只出最大星', counterHint: '永遠剋提示', formula: '兩步公式', mirrorHint: '跟提示同色（對照）',
-  random: '亂出', oracle: '先知', novice: '新手（＝剋提示）' };
-const NORMALS = C.normals, ELITES = C.elites, BOSS = C.boss, MAN = C.prologueEnemy;
-const GUESTS = [...NORMALS, ...ELITES, BOSS];
-const nameOf = id => C.enemies[id].name;
-const CLASSES = ['normal', 'elite', 'boss'], CLASS_ZH = { normal: '一般', elite: '菁英', boss: '藏家' };
-const classOf = id => ELITES.includes(id) ? 'elite' : id === BOSS ? 'boss' : 'normal';
-const PLAN = C.plannerByDepth || EN.PLANNER_BY_DEPTH;   // S7 單場跟一晚用同一張表：一般客人 depth 0／1／2 各 1/3、菁英 3、藏家 4
-const pct = x => (100 * x).toFixed(1) + '%';
-const pt = x => (100 * x).toFixed(1);
+const CORE = ['thoughtful', 'novice', 'random'];                 // 每個流程都跑；其他策略只跑門檻流程
+const LABEL = { thoughtful: '會讀的', novice: '新手（剋提示）', random: '亂出', high: '只出最大星', counterHint: '永遠剋提示', formula: '兩步公式',
+  mirrorHint: '跟提示同色（對照）', oracle: '先知' };
+const FLOW_ZH = { smart: 'smart（獎勵＋買）', none: 'none（獎勵、不買）', bare: 'bare（＝V3）', cards: 'cards（只拿唱片）', relics: 'relics（只拿配件）' };
+const MAN = C.prologueEnemy;
+const pct = x => x == null ? '—' : (100 * x).toFixed(1) + '%';
+const pt = x => x == null ? '—' : (100 * x).toFixed(1);
+const p0 = x => x == null ? '—' : String(Math.round(100 * x));
+const r3 = x => (x == null || Number.isNaN(x) ? null : Math.round(x * 1000) / 1000);
+const f2 = x => x == null ? '—' : x.toFixed(2);
 const t0 = Date.now();
+const ok = (r, who, ch) => { if (!r || !r.ok) throw new Error(who + ' ' + (r && r.error) + ' ' + JSON.stringify(ch)); };
+
+// V3（../curve/results.md 三、與「每一位」表；新帳號、每格 4,000 趟、harness 的包包整趟不換、沒有放水唬人）——只拿來對照，不是門檻
+const V3 = {
+  novice: { median: 6, mean: 6.6, nrMean: 5.4, reach: [0.89, 0.16, 0, 0, 0], hands: 3.7, r6: 0.15, byBar: 0.05, die13: 0.02,
+    pos: '99/0 99/0 92/2 79/10 43/42 60/27 68/20 62/23 62/31 34/55 48/34 33/51' },
+  thoughtful: { median: 12, mean: 15.8, nrMean: 8.9, reach: [1, 0.69, 0.28, 0.02, 0], hands: 3.9, r6: 0.24, byBar: 0.29, die13: 0,
+    pos: '100/0 100/0 99/0 96/1 70/13 82/6 87/5 87/6 86/6 69/20 81/5 82/7 88/5 87/6 71/20 87/3' },
+};
 
 // ---------------- play one duel to the end ----------------
 function play(duel, pol, R, mem) {
@@ -76,198 +106,222 @@ function play(duel, pol, R, mem) {
   }
   return duel;
 }
+const bagPower = run => run.bag.reduce((s, id) => s + EN.power(C.cards[id]), 0) / Math.max(1, run.bag.length);
 
-// ---------------- a whole first night through the real run API ----------------
-function night(pol, mode, i) {
-  const seedKey = 'sim4-' + i;                                         // same nights for every policy／mode (common random numbers)
-  const run = EN.newRun(C, { seedKey, nightNo: 1, ace: TIERS[i % 3] });
-  const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + mode));
-  const mem = {}, fights = [];
-  let manTries = 0, lostMan = false;
-  for (let guard = 0; guard < 120; guard++) {
-    if (run.over && !run.pending) break;
-    if (EN.canBargainPick(run) && !run.duel && !run.pending) {
-      const r = EN.choose(run, C, EN.bargainPolicy(run, C)); if (!r.ok) throw new Error('bargainPick ' + r.error); continue;
-    }
-    const step = EN.nextStep(run);
-    if (!step) break;
-    if (step === 'reward' || step === 'retry') {
-      if (step === 'retry' && run.pending.free && manTries >= 30) { lostMan = true; break; }
-      const ch = EN.runPolicy(run, C); const r = EN.choose(run, C, ch);
-      if (!r.ok) throw new Error('runPolicy ' + r.error + ' ' + JSON.stringify(ch));
+// ---------------- one whole run through the real run API ----------------
+//   A＝這一格的每一位累計（到過、死、場次、勝、首戰、手數、打到第 6 手、比聲望條、KO）
+function runOnce(pol, flow, i, A) {
+  const seedKey = 'sim5-' + i;
+  const run = EN.newRun(C, { seedKey, runNo: 1, ace: TIERS[i % 3], prologue: flow !== 'bare', tier: TIER });
+  const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
+  let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0;
+  for (let guard = 0; ; guard++) {
+    if (guard > 40 * CAP + 400) throw new Error('runaway run ' + seedKey + ' ' + pol + ' ' + flow);
+    if (run.over) break;
+    if (!run.pending && !run.duel && run.pos > CAP) { cens = true; break; }
+    if (EN.canBargainPick(run) && !run.pending) {
+      const ch = EN.bargainPolicy(run, C); ok(EN.choose(run, C, ch), 'bargainPick', ch);
+      if (flow === 'bare') { const drop = C.enemies[MAN].drop; if (drop && !run.bag.includes(drop)) run.bag.push(drop); }   // bare：包包＝禮物 4＋特價 3＋男子那張
       continue;
     }
-    if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, mode)) { const r = EN.choose(run, C, ch); if (!r.ok) throw new Error('shopPolicy ' + r.error + ' ' + JSON.stringify(ch)); }
+    const step = EN.nextStep(run);
+    if (step === 'reward') {
+      let ch = flow === 'bare' ? { type: 'skip' } : EN.runPolicy(run, C);
+      const p = run.pending;
+      if (flow === 'cards' && ch.type === 'relic') ch = !p.cardDone && p.cards.length ? EN.runPolicy(run, C, { preferRelic: false }) : { type: 'skip' };
+      if (flow === 'cards' && ch.type === 'relic') ch = { type: 'skip' };
+      if (flow === 'relics' && ch.type === 'take') ch = p.need === 'cardOrRelic' && !p.relicDone ? (EN.runPolicy(run, C, { preferRelic: true })) : { type: 'skip' };
+      if (flow === 'relics' && ch.type === 'take') ch = { type: 'skip' };
+      ok(EN.choose(run, C, ch), 'runPolicy', ch); continue;
+    }
+    if (step === 'level' || step === 'retry') {
+      if (step === 'retry' && run.pending.free && manTries >= 30) { lostMan = true; break; }
+      const ch = EN.runPolicy(run, C); ok(EN.choose(run, C, ch), 'runPolicy', ch); continue;
+    }
+    if (step !== 'fight' && step !== 'prologue') throw new Error('unexpected step ' + step);
+    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart')) ok(EN.choose(run, C, ch), 'shopPolicy', ch);
     if (run.money < 0) throw new Error('money < 0');
+    const prologue = step === 'prologue', d = run.pos, att = retryAt === d ? 1 : 0;
+    if (!prologue && bag0 == null) bag0 = bagPower(run);
+    if (!prologue && lastReached < d) { A.reached[d]++; lastReached = d; }
     const f = EN.startFight(run, C, {});
-    if (f.enemyId === MAN) manTries++;
-    const d = play(f.duel, pol, R, mem);
-    fights.push({ id: f.enemyId, idx: run.idx, planner: d.e.planner, win: d.over.win, by: d.over.by, hands: d.stats.hands, eHp: d.e.hp, pHp: d.p.hp,
-      bluffs: d.stats.bluffs, caught: d.stats.caught, blocked: d.stats.blocked, ace: d.stats.ace });
-    EN.finishFight(run, C, d);
-  }
-  const cleared = run.over === 'clear' && !lostMan;
-  return { cleared, lostAt: cleared ? null : lostMan ? MAN : (run.stats.lostAt || {}).enemyId || '?', fights, run };
-}
-function nightCell(pol, mode, n) {
-  const c = { clear: 0, died: {}, fights: 0, retriesUsed: 0, money: { earned: 0, spent: 0, end: 0 }, bought: 0, relicsBought: 0, boughtNights: 0,
-    g: { n: 0, hands: 0, le3: 0, max: 0, hist: [0, 0, 0, 0, 0, 0, 0], win: 0, byRounds: 0, koP: 0, koE: 0, pile: 0 }, cls: {}, man: { n: 0, win: 0, hands: 0 }, per: {} };
-  for (let i = 0; i < n; i++) {
-    const r = night(pol, mode, i);
-    if (r.cleared) c.clear++; else c.died[r.lostAt] = (c.died[r.lostAt] || 0) + 1;
-    c.fights += r.fights.length; c.retriesUsed += r.run.stats.retries || 0;
-    const S = r.run.stats;
-    c.money.earned += S.earned; c.money.spent += S.spent; c.money.end += r.run.money;
-    c.bought += S.bought.length; c.relicsBought += S.relicsBought.length; if (S.bought.length + S.relicsBought.length) c.boughtNights++;
-    for (const f of r.fights) {
-      if (f.id === MAN) { c.man.n++; c.man.hands += f.hands; if (f.win) c.man.win++; continue; }
-      const G = c.g; G.n++; G.hands += f.hands; if (f.hands <= 3) G.le3++; G.max = Math.max(G.max, f.hands); G.hist[f.hands]++; if (f.win) G.win++; if (f.by === 'rounds') G.byRounds++;
-      if (f.by === 'hp') { if (f.win) G.koP++; else G.koE++; } if (f.by === 'pile') G.pile++;   // KO＝聲望歸零（同一手雙倒照聲望條算勝負，記在贏的那邊）
-      const K = c.cls[classOf(f.id)] || (c.cls[classOf(f.id)] = { n: 0, win: 0, hands: 0, koP: 0, koE: 0, rounds: 0 });
-      K.n++; K.hands += f.hands; if (f.win) K.win++; if (f.by === 'hp') { if (f.win) K.koP++; else K.koE++; } if (f.by === 'rounds') K.rounds++;
-      const P = c.per[f.id] || (c.per[f.id] = { n: 0, win: 0, hands: 0, le3: 0 }); P.n++; P.hands += f.hands; if (f.win) P.win++; if (f.hands <= 3) P.le3++;
+    if (!f) throw new Error('startFight null at ' + d);
+    const duel = play(f.duel, pol, R, mem), hands = duel.stats.hands, by = duel.over.by;
+    const res = EN.finishFight(run, C);
+    if (prologue) { manTries++; continue; }
+    maxHands = Math.max(maxHands, hands);
+    A.att[d]++; A.hands[d] += hands; if (hands >= CFG.maxRounds) A.r6[d]++;
+    if (by === 'rounds') A.bar[d]++; else if (by === 'hp') A.ko[d]++;
+    if (res.win) A.win[d]++;
+    if (att === 0) { A.att1[d]++; if (res.win) A.win1[d]++; }
+    if (!res.win) {
+      if (firstLoss == null) firstLoss = d;
+      if (run.pending && run.pending.type === 'retry') retryAt = d;
+      else { A.deaths[d]++; fatal = { by, cls: res.cls, hands }; }
     }
   }
-  const out = { n, clear: c.clear / n, died: c.died, fights: c.fights / n, retries: c.retriesUsed / n,
-    earned: c.money.earned / n, spent: c.money.spent / n, moneyEnd: c.money.end / n, bought: c.bought / n, relicsBought: c.relicsBought / n, boughtNights: c.boughtNights / n,
-    guests: { fights: c.g.n, hands: c.g.hands / c.g.n, le3: c.g.le3 / c.g.n, max: c.g.max, hist: c.g.hist.slice(1).map(x => x / c.g.n), win: c.g.win / c.g.n, byRounds: c.g.byRounds / c.g.n,
-      ko: (c.g.koP + c.g.koE) / c.g.n, koP: c.g.koP / c.g.n, koE: c.g.koE / c.g.n, pile: c.g.pile / c.g.n },
-    cls: Object.fromEntries(CLASSES.filter(k => c.cls[k]).map(k => { const K = c.cls[k];
-      return [k, { n: K.n, win: K.win / K.n, hands: K.hands / K.n, ko: (K.koP + K.koE) / K.n, koP: K.koP / K.n, koE: K.koE / K.n, byRounds: K.rounds / K.n }]; })),
-    man: { fights: c.man.n, win: c.man.win / c.man.n, hands: c.man.hands / c.man.n }, per: {} };
-  for (const id in c.per) out.per[id] = { n: c.per[id].n, win: c.per[id].win / c.per[id].n, hands: c.per[id].hands / c.per[id].n, le3: c.per[id].le3 / c.per[id].n };
-  return out;
+  const end = lostMan ? 0 : cens ? CAP : run.pos;
+  if (firstLoss == null) firstLoss = cens ? CAP + 1 : end;
+  const S = run.stats, sum = EN.runSummary(run);
+  return { end, cens, lostMan, firstLoss, fatal, maxHands, level: run.level, atk: run.atk, def: run.def, maxHp: run.maxHp, relics: run.relics.length,
+    taken: sum.taken, rewardCards: S.taken.length, bought: S.bought.length, relicsBought: S.relicsBought.length, relicsGot: S.relicsGot.length,
+    earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
+    bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run) };
 }
 
-// ---------------- single fights ----------------
-// S5：序章男子（新包包 7 張＝禮物 4＋特價箱三色各一，沒有配件）
+// ---------------- one cell (policy × flow) ----------------
+const q = (arr, p) => { const a = arr.slice().sort((x, y) => x - y); return a[Math.min(a.length - 1, Math.max(0, Math.ceil(p * a.length) - 1))]; };
+const BANDS = [[1, 3], [4, 5], [6, 10], [11, 20], [21, 50], [51, 100], [101, 1e9]];
+const HBANDS = [[1, 3], [4, 6], [8, 12], [18, 22], [48, 52]];
+const REACH = [5, 10, 20, 50, 100];
+function runCell(pol, flow, n) {
+  const NP = CAP + 2, z = () => new Float64Array(NP);
+  const A = { reached: z(), deaths: z(), att: z(), win: z(), att1: z(), win1: z(), hands: z(), r6: z(), bar: z(), ko: z() };
+  const recs = [];
+  for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, i, A));
+  const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
+  const share = (arr, p) => (arr.length ? arr.filter(p).length / arr.length : null);
+  const avg = k => recs.reduce((s, r) => s + r[k], 0) / n;
+  const sum = (key, a, b) => { let s = 0; for (let d = a; d <= Math.min(b, CAP); d++) s += A[key][d]; return s; };
+  const tot = k => sum(k, 1, CAP);
+  const dead = recs.filter(r => r.fatal);
+  const pos = [];
+  for (let d = 1; d <= Math.min(60, CAP); d++) if (A.att[d]) pos.push({ d, cls: EN.classAt(d), reached: A.reached[d], win1: A.att1[d] ? A.win1[d] / A.att1[d] : null,
+    win: A.win[d] / A.att[d], hazard: A.deaths[d] / A.reached[d], hands: A.hands[d] / A.att[d] });
+  let cliff = { drop: 0, at: null, from: null }, prev = null;
+  for (const p of pos) { if (p.cls === 'boss' || p.reached < 200) continue; if (prev && prev.win1 - p.win1 > cliff.drop) cliff = { drop: prev.win1 - p.win1, from: prev.d, at: p.d, w0: prev.win1, w1: p.win1 }; prev = p; }
+  let hzMax = { h: 0, at: null }; for (const p of pos) if (p.cls !== 'boss' && p.reached >= 200 && p.hazard > hzMax.h) hzMax = { h: p.hazard, at: p.d };
+  // T3：第 4–60 位、到過 ≥200 趟的位置，藏家位合併死亡率 ÷ 非藏家位合併死亡率（暖身第 1–3 位不算）
+  let hb = 0, hbn = 0, hn = 0, hnn = 0;
+  for (const p of pos) { if (p.d < 4 || p.reached < 200) continue; if (p.cls === 'boss') { hb += A.deaths[p.d]; hbn += p.reached; } else { hn += A.deaths[p.d]; hnn += p.reached; } }
+  const hazBoss = hbn ? hb / hbn : null, hazNon = hnn ? hn / hnn : null;
+  const handsBand = HBANDS.map(([a, b]) => { const at = sum('att', a, b); return at >= 100 ? sum('hands', a, b) / at : null; });
+  return {
+    pol, flow, n, cap: CAP,
+    median: q(ends, 0.5), mean: avg('end'), p25: q(ends, 0.25), p75: q(ends, 0.75), p90: q(ends, 0.9), censored: share(recs, r => r.cens), lostMan: share(recs, r => r.lostMan),
+    noRetry: { median: q(fl, 0.5), mean: fl.reduce((s, x) => s + x, 0) / n },
+    reach: REACH.map(d => share(recs, r => r.end >= d)), reach3: share(recs, r => r.end >= 3),
+    die13: share(recs, r => !r.cens && r.end <= 3),
+    deathBands: BANDS.map(([a, b]) => share(dead, r => r.end >= a && r.end <= b)),
+    fights: tot('att'), hands: tot('hands') / Math.max(1, tot('att')), r6: tot('r6') / Math.max(1, tot('att')), barShare: tot('bar') / Math.max(1, tot('att')),
+    koShare: tot('ko') / Math.max(1, tot('att')), win: tot('win') / Math.max(1, tot('att')), maxHands: Math.max(0, ...recs.map(r => r.maxHands)), handsBand,
+    deaths: { n: dead.length, byBar: share(dead, r => r.fatal.by === 'rounds'), byKO: share(dead, r => r.fatal.by === 'hp'), atBoss: share(dead, r => r.fatal.cls === 'boss') },
+    hazBoss, hazNon, bossRatio: hazBoss != null && hazNon ? hazBoss / hazNon : null, cliff, hzMax,
+    end: { level: avg('level'), atk: avg('atk'), def: avg('def'), maxHp: avg('maxHp'), relics: avg('relics'), taken: avg('taken'), rewardCards: avg('rewardCards'),
+      bought: avg('bought'), relicsBought: avg('relicsBought'), relicsGot: avg('relicsGot'), earned: avg('earned'), spent: avg('spent'), money: avg('money'),
+      checkpoints: avg('checkpoints'), bestStreak: avg('bestStreak'), bag0: avg('bag0'), bag1: avg('bag1') },
+    pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
+  };
+}
+
+// ---------------- S5：序章男子（新包包 7 張＝禮物 4＋特價箱三色各一，沒有配件；你 12 聲望） ----------------
 function manFight(pol, i) {
-  const run = EN.newRun(C, { seedKey: 'sim4-man-' + i, nightNo: 1, ace: TIERS[i % 3] });
-  const r = EN.choose(run, C, EN.bargainPolicy(run, C)); if (!r.ok) throw new Error('bargainPick ' + r.error);
+  const run = EN.newRun(C, { seedKey: 'sim5-man-' + i, runNo: 1, ace: TIERS[i % 3] });
+  const ch = EN.bargainPolicy(run, C); ok(EN.choose(run, C, ch), 'bargainPick', ch);
   const f = EN.startFight(run, C, {});
+  if (f.enemyId !== MAN) throw new Error('prologue guest is ' + f.enemyId);
   return play(f.duel, pol, EN.makeRng(EN.fnv1a32('man|' + pol + '|' + i)), {});
 }
-// S7：包包＝禮物 4＋特價箱 3（三色各一）＋Fishmans；序章配件 1 件（輪流）；出招照 C.plannerByDepth：一般客人 depth 0／1／2 各 1/3、菁英 depth 3、藏家 depth 4
-const PRO = C.rewards.prologueRelics.slice();
-function guestFight(pol, eKey, i) {
-  const tier = TIERS[i % 3];
-  const run = EN.newRun(C, { seedKey: 'sim4-g-' + eKey + '-' + i, nightNo: 1, ace: tier });
-  const r = EN.choose(run, C, EN.bargainPolicy(run, C)); if (!r.ok) throw new Error('bargainPick ' + r.error);
-  const bag = run.bag.concat(C.enemies[MAN].drop ? [C.enemies[MAN].drop] : []);
-  const E = C.enemies[eKey];
-  const depth = E.boss ? 4 : E.elite ? 3 : [0, 1, 2][Math.floor(i / 3) % 3];
-  const eDef = EN.enemyDef(C, eKey, { depth });
-  const pDef = EN.playerDef(C, { bag, ace: tier, relics: [PRO[Math.floor(i / 9) % PRO.length]] });
-  const opts = { seed: (EN.fnv1a32(eKey + '#' + i) ^ Math.imul(i + 1, 2654435761)) >>> 0 || 1 };
-  if (E.boss) opts.enemyAce = C.cards[C.aces[run.bossAce]];
-  const { duel } = EN.startDuel(pDef, eDef, opts);
-  return play(duel, pol, EN.makeRng(EN.fnv1a32('g|' + pol + '|' + eKey + '|' + i)), {});
-}
 function fightCell(fn, n) {
-  let w = 0, h = 0, le3 = 0, le3w = 0, rounds = 0, koP = 0, koE = 0;
-  for (let i = 0; i < n; i++) {
-    const d = fn(i); if (d.over.win) w++; h += d.stats.hands; if (d.stats.hands <= 3) { le3++; if (d.over.win) le3w++; } if (d.over.by === 'rounds') rounds++;
-    if (d.over.by === 'hp') { if (d.over.win) koP++; else koE++; }
-  }
-  return { n, win: w / n, hands: h / n, le3: le3 / n, le3win: le3w / n, rounds: rounds / n, ko: (koP + koE) / n, koP: koP / n, koE: koE / n };
+  let w = 0, h = 0;
+  for (let i = 0; i < n; i++) { const d = fn(i); if (d.over.win) w++; h += d.stats.hands; }
+  return { n, win: w / n, hands: h / n };
 }
 
 // ---------------- run ----------------
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
-const report = { N, ECON, CFG: Object.assign({}, CFG), hp: Object.fromEntries([MAN, ...GUESTS].map(k => [k, C.enemies[k].hp])), economy: C.economy,
-  relicPrices: Object.fromEntries(Object.keys(C.relics).map(k => [k, EN.relicPrice(C, k)])),
-  bins: Object.fromEntries(Object.keys(C.bins).map(k => [k, (C.bins[k].pool || []).length])),
-  decks: Object.fromEntries([MAN, ...GUESTS].map(k => [k, C.enemies[k].deck.slice()])) };
-const MODES = ECON === 'both' ? ['smart', 'none'] : [ECON];
+const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null) };
+const cells = {};
+const cellOf = (flow, pol) => (cells[flow] || {})[pol];
 
-if (MODE === 'all' || MODE === 'nights') {
-  const nt = {};
-  for (const mode of MODES) {
-    nt[mode] = {};
-    const pols = mode === 'smart' ? POLS : POLS.filter(p => p === 'thoughtful');
-    for (const pol of pols) nt[mode][pol] = nightCell(pol, mode, N);
+if (MODE === 'all' || MODE === 'runs') {
+  const flows = FLOWS.includes(GATE) ? FLOWS : [GATE, ...FLOWS];
+  for (const flow of flows) {
+    cells[flow] = {};
+    const pols = POLS.filter(p => flow === GATE || CORE.includes(p));
+    for (const pol of pols) cells[flow][pol] = runCell(pol, flow, N);
   }
-  report.nights = nt;
-  console.log(`\n### 一整晚（第一晚：序章男子 → Fishmans＋配件三選一 → 3 位一般 → 1 位菁英 → 藏家；老闆說情一次；N=${N} 晚／格；mercy ${CFG.mercy ? '開' : '關'}）\n`);
-  console.log('| 策略 | 買東西 | 一晚通關 | 死在哪（男子／一般 1–3／菁英／藏家） | 打幾場 | 客人場平均手數 | ≤3 手 | 賺／花 | 買唱片／配件 |');
+  report.runs = cells;
+  const rows = []; for (const flow of flows) for (const pol of Object.keys(cells[flow])) rows.push(cells[flow][pol]);
+  const reachStr = x => x.reach.map(p0).join('／');
+
+  console.log(`\n### 整趟無限試煉（新帳號；每格 N=${N} 趟、最多打到第 ${CAP} 位；說情每輪一次；mercy ${CFG.mercy ? '開' : '關'}、放水唬人 ${EN.trialCfg(C, TIER).curve.mercyFeint}${TIER ? '、難度階梯 ' + TIER : ''}；門檻看 ${GATE}）\n`);
+  console.log('| 策略 | 流程 | 深度 中位／平均 | p25–p75 | 不說情 中位／平均 | 到第 5／10／20／50／100 位（%） | 第 1–3 位死 | 一場幾手 | 打到第 6 手 | 死在比聲望條 | 藏家÷非藏家 死亡率（第 4–60 位） | 懸崖（非藏家首戰勝率最大跌幅） | 最高單位死亡率（非藏家） |');
+  console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
+  for (const x of rows) console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | **${x.median}**／${x.mean.toFixed(1)}${x.censored ? `（${pct(x.censored)} 打完 ${CAP} 位）` : ''} | ${x.p25}–${x.p75} | ${x.noRetry.median}／${x.noRetry.mean.toFixed(1)} | ${reachStr(x)} | ${pct(x.die13)} | ${f2(x.hands)} | ${pct(x.r6)} | ${pct(x.deaths.byBar)} | ${pct(x.hazBoss)}÷${pct(x.hazNon)}＝${x.bossRatio == null ? '—' : x.bossRatio.toFixed(2) + ' 倍'} | ${x.cliff.at ? `第 ${x.cliff.from}→${x.cliff.at} 位 ${p0(x.cliff.w0)}→${p0(x.cliff.w1)}（${pt(x.cliff.drop)} 點）` : '—'} | ${x.hzMax.at ? `第 ${x.hzMax.at} 位 ${pct(x.hzMax.h)}` : '—'} |`);
+
+  console.log(`\n平均手數分段、死在哪（死掉的趟裡）：\n`);
+  console.log('| 策略 | 流程 | 手數 1–3｜4–6｜8–12｜18–22｜48–52 位 | 死在哪 1–3／4–5／6–10／11–20／21–50／51–100／>100（%） | 死在藏家位 | 輸的那場 KO／比聲望條 | 客人場勝率 |');
+  console.log('|---|---|---|---|---|---|---|');
+  for (const x of rows) console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${x.handsBand.map(f2).join('｜')} | ${x.deathBands.map(p0).join('／')} | ${pct(x.deaths.atBoss)} | ${pct(x.deaths.byKO)}／${pct(x.deaths.byBar)} | ${pct(x.win)} |`);
+
+  console.log(`\n走到最後時（每趟平均）：成長、包包、錢\n`);
+  console.log('| 策略 | 流程 | 等級 | 品味／底氣／聲望上限 | 配件（拿到／買） | 收了 N 張（獎勵唱片／買的） | 包包平均總星 開局→最後 | 賺／花 | 中繼點 | 最多連贏 |');
+  console.log('|---|---|---|---|---|---|---|---|---|---|');
+  for (const x of rows) { const e = x.end;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.level.toFixed(1)} | ${e.atk.toFixed(1)}／${e.def.toFixed(1)}／${e.maxHp.toFixed(1)} | ${e.relics.toFixed(2)}（${e.relicsGot.toFixed(2)}／${e.relicsBought.toFixed(2)}） | ${e.taken.toFixed(1)}（${e.rewardCards.toFixed(1)}／${e.bought.toFixed(1)}） | ${e.bag0.toFixed(1)}→${e.bag1.toFixed(1)} | $${Math.round(e.earned).toLocaleString('en')}／$${Math.round(e.spent).toLocaleString('en')} | ${e.checkpoints.toFixed(2)} | ${e.bestStreak.toFixed(1)} |`); }
+
+  const PCOLS = 16;
+  console.log(`\n每一位：首戰勝率／單位死亡率（%；到過的趟 <200 打括號）\n`);
+  console.log('| 策略・流程 | ' + Array.from({ length: PCOLS }, (_, k) => { const d = k + 1, c = EN.classAt(d); return c === 'boss' ? `**${d}藏**` : c === 'elite' ? d + '菁' : String(d); }).join(' | ') + ' |');
+  console.log('|---|' + Array.from({ length: PCOLS }, () => '---').join('|') + '|');
+  const posRow = x => Array.from({ length: PCOLS }, (_, k) => { const p = x.pos.find(o => o.d === k + 1); if (!p) return '—'; const s = `${p0(p.win1)}／${p0(p.hazard)}`; return p.reached < 200 ? `(${s})` : s; }).join(' | ');
+  for (const pol of ['novice', 'thoughtful']) {
+    if (V3[pol]) console.log(`| V3・${LABEL[pol]} | ${V3[pol].pos.split(' ').concat(Array(PCOLS).fill('—')).slice(0, PCOLS).join(' | ').replace(/\//g, '／')} |`);
+    for (const flow of flows) if (cellOf(flow, pol)) console.log(`| ${LABEL[pol]}・${flow} | ${posRow(cellOf(flow, pol))} |`);
+  }
+
+  // 跟 ../curve/results.md 的 V3 比（新帳號）
+  console.log(`\n跟 V3（../curve/results.md，harness：包包整趟不換、沒有商店／獎勵／配件、沒有放水唬人）比：\n`);
+  console.log('| 誰 | 來源 | 深度 中位／平均 | 不說情平均 | 到第 5／10／20／50／100 位（%） | 第 1–3 位死 | 一場幾手 | 打到第 6 手 | 死在比聲望條 |');
   console.log('|---|---|---|---|---|---|---|---|---|');
-  for (const mode of MODES) for (const pol of Object.keys(nt[mode])) {
-    const x = nt[mode][pol];
-    const diedAt = id => (x.died[id] || 0) / x.n;
-    const dn = NORMALS.reduce((s, e) => s + diedAt(e), 0), de = ELITES.reduce((s, e) => s + diedAt(e), 0);
-    console.log(`| ${LABEL[pol] || pol} | ${mode} | **${pct(x.clear)}** | ${pt(diedAt(MAN))}／${pt(dn)}／${pt(de)}／${pt(diedAt(BOSS))} | ${x.fights.toFixed(2)} | ${x.guests.hands.toFixed(2)} | ${pct(x.guests.le3)} | $${Math.round(x.earned)}／$${Math.round(x.spent)} | ${x.bought.toFixed(2)}／${x.relicsBought.toFixed(2)} |`);
+  for (const pol of ['novice', 'thoughtful']) {
+    const v = V3[pol];
+    console.log(`| ${LABEL[pol]} | V3 | ${v.median}／${v.mean} | ${v.nrMean} | ${v.reach.map(p0).join('／')} | ${pct(v.die13)} | ${v.hands} | ${pct(v.r6)} | ${pct(v.byBar)} |`);
+    for (const flow of flows) { const x = cellOf(flow, pol); if (x) console.log(`| ${LABEL[pol]} | ${flow} | ${x.median}／${x.mean.toFixed(1)} | ${x.noRetry.mean.toFixed(1)} | ${reachStr(x)} | ${pct(x.die13)} | ${f2(x.hands)} | ${pct(x.r6)} | ${pct(x.deaths.byBar)} |`); }
   }
-  const TS = nt.smart && nt.smart.thoughtful, TN = nt.none && nt.none.thoughtful;
-  if (TS) {
-    console.log(`\n會讀的＋smart：客人場手數分布 1–6 手 ${TS.guests.hist.map(pct).join('／')}，第 6 手比聲望結束 ${pct(TS.guests.byRounds)}；每位客人（夜裡遇到時）勝率：` +
-      GUESTS.map(e => `${nameOf(e)} ${TS.per[e] ? pct(TS.per[e].win) + '（≤3 手 ' + pct(TS.per[e].le3) + '）' : '—'}`).join('、'));
-    const G = TS.guests;
-    console.log(`\n會讀的＋smart 客人場怎麼結束：KO ${pct(G.ko)}（你 KO 他 ${pct(G.koP)}／他 KO 你 ${pct(G.koE)}）、第 6 手比聲望條 ${pct(G.byRounds)}` +
-      (G.pile ? `、他牌出完 ${pct(G.pile)}` : '') + '；' +
-      CLASSES.filter(k => TS.cls[k]).map(k => { const K = TS.cls[k];
-        return `${CLASS_ZH[k]} 勝 ${pct(K.win)}、KO ${pct(K.ko)}（你 ${pct(K.koP)}／他 ${pct(K.koE)}）、比聲望條 ${pct(K.byRounds)}、${K.hands.toFixed(2)} 手`; }).join('；'));
-    check('S1', '會讀的＋smart 一晚通關 70–85%', TS.clear >= 0.70 && TS.clear <= 0.85, pct(TS.clear));
-    for (const p of ['high', 'counterHint', 'formula', 'mirrorHint']) if (nt.smart[p]) check('S2', `${LABEL[p]}＋smart 一晚通關 ≤ S1 − 15 點（≤${pct(TS.clear - 0.15)}）`, nt.smart[p].clear <= TS.clear - 0.15 + 1e-9, pct(nt.smart[p].clear));
-    if (nt.smart.random) check('S3', '亂出 一晚通關 ≤5%', nt.smart.random.clear <= 0.05, pct(nt.smart.random.clear));
-    check('S4', '會讀的 客人場（一般／菁英／藏家）平均 4.0–6.0 手', TS.guests.hands >= 4.0 && TS.guests.hands <= 6.0, TS.guests.hands.toFixed(2));
-    check('S4', '會讀的 客人場 ≤3 手就結束 ≤5%', TS.guests.le3 <= 0.05, pct(TS.guests.le3));
-    check('S4', '最多 6 手', Math.max(...Object.values(nt).flatMap(m => Object.values(m).map(x => x.guests.max))) <= CFG.maxRounds,
-      Math.max(...Object.values(nt).flatMap(m => Object.values(m).map(x => x.guests.max))));
-    if (nt.smart.oracle) check('S8', '先知 一晚通關 ≥97%', nt.smart.oracle.clear >= 0.97, pct(nt.smart.oracle.clear));
-    check('S9', '會讀的＋smart 客人場由 KO 結束（任一方聲望歸零）≥35%', G.ko >= 0.35 - 1e-9,
-      `${pct(G.ko)}（你 KO 他 ${pct(G.koP)}／他 KO 你 ${pct(G.koE)}；比聲望條 ${pct(G.byRounds)}）`);
-  }
-  if (TS && TN) {
-    check('S6', '會讀的 smart − none ≥ 5 點', TS.clear - TN.clear >= 0.05 - 1e-9, `${pt(TS.clear)} − ${pt(TN.clear)} = ${pt(TS.clear - TN.clear)} 點`);
-    check('S6', '會讀的＋none 一晚通關 ≥50%', TN.clear >= 0.50, pct(TN.clear));
-  }
+
+  // ---- 門檻（--gate 流程）----
+  const G = cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, tag = `［${GATE}］`;
+  if (NV) check('T1', `${tag}新手 第 1–3 位死亡 ≤5%`, NV.die13 <= 0.05 + 1e-9, `${pct(NV.die13)}（V3 2%）`);
+  if (NV) check('T2a', `${tag}新手 深度中位數 10–30（一般玩家走到第 10–30 位）`, NV.median >= 10 && NV.median <= 30, `中位 ${NV.median}、平均 ${NV.mean.toFixed(1)}`);
+  if (TH) check('T2b', `${tag}會讀的 到第 100 位 10–70%（高手有機會破 100）`, TH.reach[4] >= 0.10 - 1e-9 && TH.reach[4] <= 0.70 + 1e-9, `到第 100 位 ${pct(TH.reach[4])}、中位 ${TH.median}`);
+  if (TH) check('T3', `${tag}會讀的 藏家位死亡率是非藏家位的 2–4 倍（第 4–60 位）`, TH.bossRatio != null && TH.bossRatio >= 2 - 1e-9 && TH.bossRatio <= 4 + 1e-9,
+    `${pct(TH.hazBoss)} ÷ ${pct(TH.hazNon)} = ${TH.bossRatio == null ? '—' : TH.bossRatio.toFixed(2)} 倍（V3 13–20% 對 5–7%）`);
+  for (const x of [NV, TH]) if (x) check('T4', `${tag}${LABEL[x.pol]} 相鄰非藏家位首戰勝率掉 ≤20 點`, x.cliff.drop <= 0.20 + 1e-9,
+    x.cliff.at ? `第 ${x.cliff.from}→${x.cliff.at} 位 ${pt(x.cliff.w0)}→${pt(x.cliff.w1)}（${pt(x.cliff.drop)} 點）` : '沒有下跌');
+  for (const x of [NV, TH]) if (x) { const lo = x === TH ? 2.5 : 3; check('T5', `${tag}${LABEL[x.pol]} 一場平均 ${lo}–4.5 手`, x.hands >= lo - 1e-9 && x.hands <= 4.5 + 1e-9, `${f2(x.hands)} 手（V3 ${V3[x.pol].hands}）`); }
+  if (RD) check('T6', `${tag}亂出 到第 5 位 ≤5%`, RD.reach[0] <= 0.05 + 1e-9, pct(RD.reach[0]));
+  if (TH && RD) check('T7', `${tag}會讀的比亂出走得遠（中位 ≥ 亂出 ×2 且 ≥ 亂出 +5）`, TH.median >= 2 * RD.median && TH.median >= RD.median + 5,
+    `會讀的 ${TH.median} 對 亂出 ${RD.median}`);
+  const mh = Math.max(...rows.map(x => x.maxHands));
+  check('M6', '最多 6 手', mh <= CFG.maxRounds, mh);
+  if (cells.smart && cells.none && cells.smart.thoughtful && cells.none.thoughtful)
+    console.log(`\n會讀的：smart − none 深度中位 ${cells.smart.thoughtful.median - cells.none.thoughtful.median} 位、平均 ${(cells.smart.thoughtful.mean - cells.none.thoughtful.mean).toFixed(1)} 位（買東西有沒有用；只列不檢查）`);
 }
 
-if (MODE === 'all' || MODE === 'fights') {
-  // S5 男子
-  const manPols = POLS.filter(p => ['thoughtful', 'high', 'counterHint', 'formula', 'mirrorHint', 'random', 'oracle'].includes(p));
+if (MODE === 'all' || MODE === 'man') {
+  const manPols = POLS.filter(p => p !== 'counterHint');
   const mt = {};
   for (const pol of manPols) mt[pol] = fightCell(i => manFight(pol, i), N);
   report.man = mt;
-  console.log(`\n### 序章男子（聲望 ${C.enemies[MAN].hp}、包包 7 張＝禮物 4＋特價箱三色各一、planner easy、老實；N=${N}）\n`);
+  console.log(`\n### 序章男子（聲望 ${C.enemies[MAN].hp}、你 ${CFG.playerHp}；包包 7 張＝禮物 4＋特價箱三色各一、planner easy、老實；N=${N}）\n`);
   console.log('| 策略 | 勝率 | 平均手數 |'); console.log('|---|---|---|');
   for (const pol of manPols) console.log(`| ${LABEL[pol] || pol} | ${pct(mt[pol].win)} | ${mt[pol].hands.toFixed(2)} |`);
   if (mt.thoughtful) { check('S5', '男子：會讀的 ≥97%', mt.thoughtful.win >= 0.97, pct(mt.thoughtful.win)); check('S5', '男子：會讀的 平均 ≤4 手', mt.thoughtful.hands <= 4, mt.thoughtful.hands.toFixed(2)); }
   if (mt.high) check('S5', '男子：只出最大星 ≥90%', mt.high.win >= 0.90, pct(mt.high.win));
-  if (mt.counterHint) check('S5', '男子：永遠剋提示 ≥90%', mt.counterHint.win >= 0.90, pct(mt.counterHint.win));
-
-  // S7 單場
-  const gPols = POLS.filter(p => ['thoughtful', 'high', 'counterHint', 'random', 'oracle'].includes(p));
-  const gt = {};
-  for (const pol of gPols) { gt[pol] = {}; for (const e of GUESTS) gt[pol][e] = fightCell(i => guestFight(pol, e, i), N); }
-  report.fights = gt;
-  console.log(`\n### 單場（包包 8＝禮物 4＋特價箱 3＋Fishmans；序章配件 1 件；一般客人 planner ${PLAN.slice(0, 3).join('／')} 各 1/3、菁英 ${PLAN[3]}、藏家 ${PLAN[4]}；N=${N}／格）\n`);
-  const head = ['策略', ...GUESTS.map(e => `${nameOf(e)}（${C.enemies[e].hp}）`)];
-  console.log('| ' + head.join(' | ') + ' |'); console.log('|' + head.map(() => '---').join('|') + '|');
-  for (const pol of gPols) console.log('| ' + [LABEL[pol] || pol, ...GUESTS.map(e => pct(gt[pol][e].win))].join(' | ') + ' |');
-  if (gt.thoughtful) {
-    console.log('| 會讀的：平均手數 | ' + GUESTS.map(e => gt.thoughtful[e].hands.toFixed(2)).join(' | ') + ' |');
-    console.log('| 會讀的：≤3 手（其中你贏） | ' + GUESTS.map(e => `${pct(gt.thoughtful[e].le3)}（${pct(gt.thoughtful[e].le3win)}）`).join(' | ') + ' |');
-    console.log('| 會讀的：第 6 手比聲望 | ' + GUESTS.map(e => pct(gt.thoughtful[e].rounds)).join(' | ') + ' |');
-    console.log('| 會讀的：KO（你 KO 他／他 KO 你） | ' + GUESTS.map(e => `${pct(gt.thoughtful[e].ko)}（${pct(gt.thoughtful[e].koP)}／${pct(gt.thoughtful[e].koE)}）`).join(' | ') + ' |');
-    const ws = NORMALS.map(e => gt.thoughtful[e].win), spread = Math.max(...ws) - Math.min(...ws);
-    check('S7', '單場 會讀的：6 位一般客人最高減最低 ≤20 點', spread <= 0.20 + 1e-9, `${pt(Math.min(...ws))}–${pt(Math.max(...ws))}（${pt(spread)} 點）`);
-    for (const e of ELITES) check('S7', `單場 會讀的：菁英 ${nameOf(e)} 60–95%`, gt.thoughtful[e].win >= 0.60 && gt.thoughtful[e].win <= 0.95, pct(gt.thoughtful[e].win));
-    check('S7', `單場 會讀的：藏家 45–85%`, gt.thoughtful[BOSS].win >= 0.45 && gt.thoughtful[BOSS].win <= 0.85, pct(gt.thoughtful[BOSS].win));
-  }
+  if (mt.novice) check('S5', '男子：新手（永遠剋提示）≥90%', mt.novice.win >= 0.90, pct(mt.novice.win));
 }
 
-// HP：聲望單調（FIXLIST 10）——一般的最大 ≤ 菁英的最小、菁英的最大 ≤ 藏家；不靠模擬，每種 --mode 都檢查
+// HP：聲望單調——C.trial.guestHp 一般 ≤ 菁英 ≤ 藏家（不靠模擬，每種 --mode 都檢查）
 {
-  const hs = ids => ids.map(id => C.enemies[id].hp), hn = hs(NORMALS), he = hs(ELITES), hb = C.enemies[BOSS].hp;
-  const span = a => Math.min(...a) === Math.max(...a) ? String(a[0]) : Math.min(...a) + '–' + Math.max(...a);
-  report.hpOrder = { normal: [Math.min(...hn), Math.max(...hn)], elite: [Math.min(...he), Math.max(...he)], boss: hb };
-  check('HP', '聲望單調：一般最大 ≤ 菁英最小、菁英最大 ≤ 藏家', Math.max(...hn) <= Math.min(...he) && Math.max(...he) <= hb,
-    `一般 ${span(hn)}／菁英 ${span(he)}／藏家 ${hb}（你 ${CFG.playerHp}）`);
+  const H = EN.trialCfg(C, TIER).guestHp;
+  report.hpOrder = H;
+  check('HP', '聲望單調：一般 ≤ 菁英 ≤ 藏家（C.trial.guestHp）', H.normal <= H.elite && H.elite <= H.boss, `一般 ${H.normal}／菁英 ${H.elite}／藏家 ${H.boss}（你 ${EN.trialCfg(C, TIER).youHp}）`);
 }
 
-console.log('\n### 門檻（SPEC-v4 §5.2＋FIXLIST 10 的 S9／HP）');
+console.log('\n### 門檻（SPEC 無限試煉 §4 第三棒；數字見檔頭）');
 for (const c of checks) console.log((c.ok ? '  ok   ' : '  FAIL ') + c.id + ' ' + c.name + (c.info !== undefined ? '：' + c.info : ''));
 const failed = checks.filter(c => !c.ok);
 console.log(`\n${checks.length - failed.length}/${checks.length} 通過（${((Date.now() - t0) / 1000).toFixed(1)} 秒）`);

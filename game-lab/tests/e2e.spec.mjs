@@ -1,4 +1,4 @@
-// game-lab/tests/e2e.spec.mjs：品味對決 v4 端對端測試（SPEC-v4 §5.5；B2）。保留 v3 的情境編號，內容換成 v4。
+// game-lab/tests/e2e.spec.mjs：品味對決 v4 端對端測試（SPEC-v4 §5.5；B2）。保留 v3 的情境編號，內容換成 v4；v5 無限試煉（SPEC 無限試煉 §4 第二棒）改 #7 #9 #11 #13 #33，加 #45–#48。
 // 純 node 腳本（不用 @playwright/test）：
 //   LAB_BASE=http://localhost:8782 node game-lab/tests/e2e.spec.mjs
 //   共用函式從 tests/e2e-lib.mjs（A3）import：launch／newPage／openTitle／duelReady／tapAt／noScroll…；網址讀 LAB_URL 或 LAB_BASE。
@@ -13,33 +13,40 @@
 //   3 推門到第一手（猜歌、挑王牌、收下四張、特價三張、收下、接受對決（手伸進袋子））≤16 下（特價區用替身時照真的面板算 4 下）
 //   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌（疊成一排的 5 張＋王牌）的下緣都 ≤ innerHeight；點一張打開之後三顆屬性鈕也在畫面裡；誠實度名牌看不到（D §5）
 //   6 點擊區：屬性鈕 ≥44×44、手牌封面 ≥44×44、頂欄鈕 ≥40×44；數字 ≥12px（FIXLIST 11：沒有星鈕列、沒有丟！）
-//   7 序章打贏 → 地上的唱片撿起面板（沒有標題字，只有封面、藝人《專輯》、兩顆鈕）→ 配件三選一 → 今晚來客且第一位客人已在店裡
+//   7 序章打贏 → 地上的唱片撿起面板（沒有標題字，只有封面、藝人《專輯》、兩顆鈕）→ 配件三選一 → 來客（第 1 輪五顆頭像）且第一位客人已在店裡
 //   8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
-//   9 一整晚 autoplay('thoughtful',{until:'end'}) → 結算三件事 → 13 再來一夜（挑王牌 → 走到特價箱挑三張 → 今晚來客、包包 7；上一晚的配件還在）
-//  10 續玩：打到第 2 手重新整理 → 繼續今晚 → 同一場、同一手
-//  11 存檔只寫 dipGameLab_v1、版本 4；v3 存檔被安全丟掉
+//   9 一整趟 autoplay('thoughtful',{until:'end'})：序章 → 打到第 4 位以後 __lab.loseNext(1,{noRetry})（無限試煉不會自己結束）→ 結算三件事（走到第 n 位・最多連贏・收了幾張）、
+//     升級三選一由 autoplay 自動挑（picks＝等級−1）、標題紀錄「最遠」→ 13 再挑戰一趟（挑王牌 → 走到特價箱挑三張 → 來客、包包 7、runNo 2；上一趟的配件還在）
+//  10 續玩：打到第 2 手重新整理 → 繼續試煉 → 同一場、同一手
+//  11 存檔只寫 dipGameLab_v1、版本 5；v3 存檔被安全丟掉；v4 存檔遷移（唱片櫃、配件留著，一晚的 run 丟掉，nights → runs）
 //  12 網路：沒有 Firebase
 //  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝在那張打開、再點一下＝收回（都不開唱片資訊；v5 手風琴）
-//  16 標題有存檔時點兩下店門＝繼續今晚
+//  16 標題有存檔時點兩下店門＝繼續試煉
 //  17 他在上、你在下；舞台他左你右、老闆在中間；一台唱盤在兩人中間
 //  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
 //  19 教學三王牌六手照課表：每手 kind／toE／toP＝C.tutorial.expect、第 6 手 KO、學到 L1–L6、tutorialDone
 //  20 教學擋錯招：第 1 手點疊著那排的別張、第 2 手點打開那張的別色屬性鈕（都在遮罩上）→「先點我指的這裡。」、手數不前進（第 1 手沒打開、第 2 手沒丟出去）
 //  21 直接開打：沒有遮罩、男子 10 聲望；21b 教學程式不在（canTutorial 假）：兩顆鈕都在，第 0 顆照課表出牌（他 18、第一手 Mylo Xyloto）、沒有遮罩
-//  22 不捲動：標題、對決、今晚來客、挑唱片、規則卡、撿起面板
-//  27 無縫接軌：今晚來客 → 對決 → 挑唱片 → 今晚來客，#stage canvas 是同一個節點；黑條只在 #stage 裡、≤1.6 s
+//  22 不捲動：標題、對決、來客、挑唱片、規則卡、撿起面板（升級面板、結算：#46、#48）
+//  27 無縫接軌：來客 → 對決 → 挑唱片 → 來客，#stage canvas 是同一個節點；黑條只在 #stage 裡、≤1.6 s
 //  29 主控台 0 錯誤
-//  33 老闆說情：輸一次 → 同一位重開、聲望 10；再輸 → 散場
+//  33 老闆說情：輸一次 → 同一位、聲望回到開打前（帶傷 9/12 進場 → 重打還是 9）；再輸 → 散場（結算）
 //  35 跳過教學＋重新整理不會重開教學
 //  36 ⏸ 回標題會結束教學；之後的直接開打不被教學劫持
 //  37 連點安全：推門 ×2、下一位 ×2、台北 ×2
 //  38 傳說藏家登場卡擋點擊、點一下提早收掉
 //  39 規則卡六行＝D 規則卡逐字、頁尾聲望代入、不捲動；公告＝規則卡；重看教學帶得起來
-//  40 375×548 等矮螢幕：有存檔時「再按一次就放棄今晚」那行在畫面內
-//  41（新）贏一位 →「+$1,500」吐司（千分位，FIXLIST 8）、今晚來客顯示錢
+//  40 375×548 等矮螢幕：有存檔時「再按一次就放棄這一趟」那行在畫面內
+//  41（新）贏一位 →「+$1,500」吐司（千分位，FIXLIST 8）、來客顯示錢
 //  42（新）序章與對決中真點箱子 → 老闆泡泡「打完再翻。」、不開抽屜
-//  43（新）櫃檯：今晚來客＝配件面板（openRelicShop）、序章＝老闆一句
+//  43（新）櫃檯：來客＝配件面板（openRelicShop）、序章＝老闆一句
 //  44（新）序章途中重新整理：特價箱還沒挑 → 從頭開始；挑過了 → 直接到對決
+//  45（v5）來客：頂欄只寫「第 n 位」（沒有時間、打烊、今晚）；「第 R 輪」＋離下個中繼點還有 N 位＋說情剩幾次；五顆頭像寫第 n 位（照 engine.roundGuests）；
+//      下一位鈕「下一位：第 n 位　名字 ▸」；聲望那顆＝run.hp/maxHp，點開看等級、經驗、品味、底氣、上限；不捲動
+//  46（v5）升級三選一：打贏 → 收唱片 → 升級面板（三顆大鈕、第一顆是品味或底氣、沒有「算了」、不捲動）；連升兩級＝面板開兩次；選完到下一位；重新整理回到升級面板
+//  47（v5）打倒傳說藏家（第 5 位）：他的王牌收進唱片櫃 → 領獎 → 下一輪（第 6 位、五張新面孔、說情重設）；沒有結算畫面
+//  48（v5）結算：__lab.jump(第 10 位) 打贏 → 中繼點吐司、save.best.checkpoints；跳到第 23 位、loseNext → 結算三件事（走到第 23 位、最多連贏、收了幾張）、中繼點那行、不捲動；
+//      再挑戰一趟前標題「最遠：第 23 位」、「看上一趟結算」
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -52,7 +59,7 @@ const LAB = path.resolve(HERE, '..');
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const YOU_HP = createRequire(import.meta.url)(path.join(LAB, 'engine.js')).CFG.playerHp;   // 你的聲望（FIXLIST 11 H5-1：9）
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42]);
+const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48]);
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
 // D §5 規則卡六行（店主拍板，逐字；第 6 行照 FIXLIST 2／3 改：王牌沒有「不會被剋」、六手比聲望條剩幾成）
@@ -335,7 +342,7 @@ async function run() {
       await ctx.close();
     }
 
-    // #9 一整晚 ＋ #13 再來一夜 ＋ #11 存檔隔離 ＋ #12 網路
+    // #9 一整趟 ＋ #13 再挑戰一趟 ＋ #11 存檔隔離 ＋ #12 網路
     if (want(9) || want(13) || want(11) || want(12)) {
       const { ctx, page } = await newPage(browser, w, h, { watchStorage: true }); track(page);
       try {
@@ -343,18 +350,25 @@ async function run() {
         await page.click('[data-a=quiet]');
         await sleep(300);
         await page.evaluate(() => window.__lab.autoplay('thoughtful', { until: 'end', guess: 'right' }));
-        // 經濟介面是真的時，特價區要人挑（替身自己挑）
-        let end = false;
+        // 經濟介面是真的時，特價區要人挑（替身自己挑）。無限試煉不會自己結束：走到第 4 位以後下一場強制輸（說情也用掉；兩場＝說情重設了也一樣輸）
+        let end = false, lose = 0;
         const t0 = Date.now();
         while (!end && Date.now() - t0 < 240000) {
           end = (await screen(page)) === 'end';
           if (!end && ECON === 'real') await answerBargain(page);
+          if (!end && !lose && await page.evaluate(() => !!(window.__lab.run && window.__lab.run.pos >= 4))) lose = await page.evaluate(() => (window.__lab.loseNext(2, { noRetry: true }), window.__lab.run.pos));
           if (!end) await sleep(400);
         }
         await sleep(800);
-        const r = await page.evaluate(() => ({ over: window.__lab.run.over, rows: [...document.querySelectorAll('.lb-sum li')].map(li => li.textContent.replace(/\s+/g, ' ').trim()), again: !!document.querySelector('[data-a=again]'), nights: window.__lab.save.nights.length, trail: window.__lab.trail(), relics: window.__lab.save.relics.slice() }));
+        await page.evaluate(() => window.__lab.loseNext(0));
+        const r = await page.evaluate(() => { const R = window.__lab.run, S = window.__lab.save; return { over: R.over, pos: R.pos, level: R.level, picks: (R.picks || []).length, taken: R.taken, streak: R.bestStreak,
+          rows: [...document.querySelectorAll('.lb-sum li')].map(li => li.textContent.replace(/\s+/g, ' ').trim()), again: !!document.querySelector('[data-a=again]'), runs: S.runs.length, far: S.best.far,
+          txt: document.getElementById('app').textContent, trail: window.__lab.trail(), relics: S.relics.slice() }; });
         const sawNight = r.trail.filter(s => s === 'night').length, sawReward = r.trail.includes('reward');
-        if (want(9)) record(9, size, end && r.rows.length === 3 && r.again && r.nights === 1 && sawNight >= 2 && (sawReward || r.over === 'dead'), `end ${end} ${r.over}; rows ${JSON.stringify(r.rows)}; night×${sawNight}, reward ${sawReward}`);
+        const rowsOk = r.rows.length === 3 && r.rows[0].indexOf('第 ' + r.pos + ' 位') >= 0 && r.rows[1].indexOf(r.streak + ' 位') >= 0 && r.rows[2].indexOf(r.taken + ' 張') >= 0;
+        const noNight = !/今晚|打烊|\d\d:\d\d/.test(r.txt);
+        if (want(9)) record(9, size, end && r.over === 'dead' && rowsOk && r.again && r.runs === 1 && r.far === r.pos && r.pos >= 4 && sawNight >= 4 && sawReward && r.level >= 2 && r.picks === r.level - 1 && noNight,
+          `end ${end} ${r.over} at 第 ${r.pos} 位 (loseNext from ${lose}); rows ${JSON.stringify(r.rows)}; best.far ${r.far}; Lv ${r.level} picks ${r.picks}; night×${sawNight}, reward ${sawReward}; 沒有一晚字 ${noNight}`);
         if (want(13)) {
           await page.evaluate(() => window.__lab.stop());
           await jsClick(page, '[data-a=again]');
@@ -364,9 +378,9 @@ async function run() {
           let n2 = false; const t1 = Date.now();
           while (!n2 && Date.now() - t1 < 20000) { n2 = (await screen(page)) === 'night'; if (!n2) { await answerBargain(page); await sleep(200); } }
           await sleep(500);
-          const rr = await page.evaluate(() => !window.__lab.run ? { noRun: true, s: window.__lab.screen(), beat: window.__lab.beat, trail: window.__lab.trail().slice(-5), sheet: (document.querySelector('#panel > .lb-sheet') || {}).className || null, calls: (window.__econCalls || []).map(c => c.m) } : ({ prologue: window.__lab.run.prologue, nightNo: window.__lab.run.nightNo, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, trail: window.__lab.trail().slice(-4) }));
+          const rr = await page.evaluate(() => !window.__lab.run ? { noRun: true, s: window.__lab.screen(), beat: window.__lab.beat, trail: window.__lab.trail().slice(-5), sheet: (document.querySelector('#panel > .lb-sheet') || {}).className || null, calls: (window.__econCalls || []).map(c => c.m) } : ({ prologue: window.__lab.run.prologue, runNo: window.__lab.run.runNo, pos: window.__lab.run.pos, hp: window.__lab.run.hp, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, trail: window.__lab.trail().slice(-4) }));
           const ms = Date.now() - t1;
-          record(13, size, ace && n2 && rr.prologue == null && rr.nightNo === 2 && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics), `再來一夜 → acePick ${ace} → night ${n2} (${ms} ms); ${JSON.stringify(rr)}; relics last night ${JSON.stringify(r.relics)}`);
+          record(13, size, ace && n2 && rr.prologue == null && rr.runNo === 2 && rr.pos === 1 && rr.hp === YOU_HP && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics), `再挑戰一趟 → acePick ${ace} → night ${n2} (${ms} ms); ${JSON.stringify(rr)}; relics last run ${JSON.stringify(r.relics)}`);
         }
         if (want(11)) {
           const ks = await page.evaluate(() => ({ keys: [...new Set(window.__lsKeys)], v: JSON.parse(localStorage.getItem('dipGameLab_v1')).v }));
@@ -375,7 +389,18 @@ async function run() {
           await page.evaluate(() => localStorage.setItem('dipGameLab_v1', JSON.stringify({ v: 3, run: { v: 3, bag: [], order: ['man'], relics: [], stats: {}, ace: 'hall' }, settings: { sound: false }, shelf: { x: 1 }, tutorialDone: true })));
           await openTitle(page, Q());
           const old = await page.evaluate(() => ({ v: window.__lab.save.v, run: window.__lab.save.run, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]') }));
-          record(11, size, !bad.length && ks.v === 4 && old.v === 4 && !old.run && !old.cont && old.push, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}`);
+          // v4 存檔（一晚版）：照裁定 12 遷移——唱片櫃、配件、偏好留著；一晚的 run 丟掉；nights → runs；best → { far, checkpoints, bestStreak }
+          await page.evaluate(() => {
+            const C = window.DipLabContent, id = C.aces.hall;
+            localStorage.setItem('dipGameLab_v1', JSON.stringify({ v: 4, seen: { night: true }, learned: { L1: true }, settings: { fastAnim: true, sound: false }, player: null,
+              run: { v: 4, bag: [], order: ['copycat'], relics: [], stats: {}, ace: 'hall', times: ['22:00'] }, nights: [{ seedKey: '20261106', nightNo: 1, ace: 'hall', result: 'clear', reached: '02:00', wins: 6, taken: [id] }],
+              best: { clears: 1, bySeedKey: { 20261106: 1 } }, shelf: { [id]: { at: '20261106#1', seen: true } }, relics: ['stylus'], unlocks: { secondNightTeaser: true },
+              tutorialDone: true, prologueDone: true, lastAce: 'hall', lastBargain: null }));
+          });
+          await openTitle(page, Q());
+          const mig = await page.evaluate(() => { const S = window.__lab.save; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]') }; });
+          const migOk = mig.v === 5 && !mig.run && mig.shelf === 1 && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push;
+          record(11, size, !bad.length && ks.v === 5 && old.v === 5 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
         }
         if (want(12)) {
           const fb = page._requests.filter(u => /firebase|firestore|googleapis\.com\/identitytoolkit/i.test(u));
@@ -478,11 +503,12 @@ async function run() {
       await p2.ctx.close();
     }
 
-    // #33 老闆說情：輸一次 → 同一位重開、聲望 10；再輸 → 散場
+    // #33 老闆說情：輸一次 → 同一位、聲望回到開打前（帶傷 9/12 進場）；再輸 → 散場（結算）
     if (want(33)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
-        await seededContinue4(page, { ace: 'pearl', idx: 1 });
+        const HP_IN = YOU_HP - 3;
+        await seededContinue4(page, { ace: 'pearl', idx: 1, hp: HP_IN });
         await waitScreen(page, 'night');
         const eid = await page.evaluate(() => window.__lab.run.order[1]);
         await jsClick(page, '[data-a=go]');
@@ -491,14 +517,18 @@ async function run() {
         await page.evaluate(() => window.__lab.forceLose());
         const menu = await page.waitForSelector('.lb-dq.hasmenu .lb-dqopt[data-i="0"]', { timeout: 20000 }).then(() => true, () => false);
         const txt = menu ? await page.evaluate(() => document.querySelector('.lb-dq').textContent) : '';
+        const items = menu ? await page.evaluate(() => [...document.querySelectorAll('.lb-dq .lb-dqopt')].map(b => b.textContent.trim())) : [];
+        const want0 = await page.evaluate(() => window.DipLabContent.trial.ui.retryMenu);
         await sleep(450);
         await jsClick(page, '.lb-dq .lb-dqopt[data-i="0"]');
         await duelReady(page);
         const v = await page.evaluate(() => ({ d: window.__lab.duel(), left: window.__lab.run.retryLeft }));
         await page.evaluate(() => window.__lab.forceLose());
         const end = await waitScreen(page, 'end', 30000);
-        const o = await page.evaluate(() => window.__lab.run.over);
-        record(33, size, menu && /再一場/.test(txt) && v.d.eId === eid && v.d.pHp === YOU_HP && v.left === 0 && end && o === 'dead', `menu ${menu}; retry vs ${v.d.eId} (want ${eid}) pHp ${v.d.pHp} left ${v.left}; 2nd loss → end ${end} (${o})`);
+        const o = await page.evaluate(() => ({ over: window.__lab.run.over, rows: document.querySelectorAll('.lb-sum li').length }));
+        const menuOk = items.length === 2 && items[0].indexOf(want0[0].replace(/^▶\s*/, '')) >= 0 && items[1].indexOf(want0[1]) >= 0;
+        record(33, size, menu && /再一場/.test(txt) && menuOk && v.d.eId === eid && v.d.pHp === HP_IN && v.d.pMax === YOU_HP && v.left === 0 && end && o.over === 'dead' && o.rows === 3,
+          `menu ${menu} ${JSON.stringify(items)}; retry vs ${v.d.eId} (want ${eid}) pHp ${v.d.pHp}/${v.d.pMax} (want ${HP_IN}) left ${v.left}; 2nd loss → end ${end} (${JSON.stringify(o)})`);
       } catch (e) { record(33, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -745,6 +775,154 @@ async function run() {
         const trail = await page.evaluate(() => window.__lab.trail().join('>'));
         record(44, size, !a0.picked && a0.prologue === 'pending' && fromStart && b0.picked && b0.bag === 7 && atO14 && menu && toDuel && tut === false, `before pick ${JSON.stringify(a0)} → reload → beat ${beatA} (from start ${fromStart}); after pick ${JSON.stringify(b0)} → reload → beat ${beatB}、兩顆鈕 ${menu}、第二顆 → duel ${toDuel}（tut ${tut}）；${trail}`);
       } catch (e) { record(44, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #45 來客（v5）：頂欄只寫第 n 位、第 R 輪＋離下個中繼點、五顆頭像第 n 位、下一位鈕、聲望那顆（點開看等級…）、不捲動
+    if (want(45)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'hall', pos: 7, hp: 10, maxHp: 14, level: 3, atk: 1, def: 1 });
+        await waitScreen(page, 'night'); await sleep(900);
+        const r = await page.evaluate(() => {
+          const E = window.DipLabEngine, C = window.DipLabContent, R = window.__lab.run, U = C.trial.ui, f = (t, o) => String(t).replace(/\{(\w+)\}/g, (m, k) => o[k] != null ? o[k] : m);
+          const g = E.roundGuests(R, C);
+          return { top: document.querySelector('#top .tt, #top').textContent.replace(/\s+/g, ' ').trim(), nh: document.querySelector('.lb-night .nh').textContent.replace(/\s+/g, ' ').trim(),
+            ps: [...document.querySelectorAll('[data-tut=night] .nc .ps')].map(x => x.textContent.trim()), want: g.map(x => f(U.pos, { n: x.pos })),
+            cls: [...document.querySelectorAll('[data-tut=night] .nc')].map(x => (x.classList.contains('boss') ? 'B' : x.classList.contains('elite') ? 'E' : '') + (x.classList.contains('cur') ? '*' : '') + (x.classList.contains('done') ? '✓' : '')),
+            go: document.querySelector('[data-a=go]').textContent.trim(), goWant: f(U.next, { n: R.pos, name: C.enemies[R.order[R.idx]].name }),
+            round: f(U.round, { r: R.round }), toCp: f(U.toCheckpoint, { n: E.toCheckpoint(R, C) }), retry: f(U.retryLeft, { n: R.retryLeft }),
+            hp: (document.querySelector('.lb-bagline [data-a=me]') || {}).textContent || '', hpWant: f(U.hp, { n: R.hp, max: R.maxHp }), pos: R.pos, round0: R.round,
+            app: document.getElementById('app').textContent };
+        });
+        const sc = await noScroll(page);
+        await jsClick(page, '.lb-bagline [data-a=me]'); await sleep(500);
+        const me = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.me'); return s ? s.textContent.replace(/\s+/g, ' ') : null; });
+        const meWant = await page.evaluate(() => { const U = window.DipLabContent.trial.ui, R = window.__lab.run; return [U.level.replace('{n}', R.level), U.atk.replace('{n}', R.atk), U.def.replace('{n}', R.def), U.maxHp.replace('{n}', R.maxHp)]; });
+        const ok = r.pos === 7 && r.round0 === 2 && /^第 7 位/.test(r.top) && !/:|：\d|今晚|打烊/.test(r.top) && r.nh.indexOf(r.round) === 0 && r.nh.indexOf(r.toCp) > 0 && r.nh.indexOf(r.retry) > 0 &&
+          JSON.stringify(r.ps) === JSON.stringify(r.want) && r.cls.join() === '✓,*,,E,B' && r.go === r.goWant && r.hp.replace(/\s/g, '') === r.hpWant.replace(/\s/g, '') &&
+          !/今晚|打烊|\d\d:\d\d/.test(r.app) && scrollOk(sc) && me && meWant.every(x => me.indexOf(x) >= 0);
+        record(45, size, ok, `top「${r.top}」; nh「${r.nh}」; heads ${JSON.stringify(r.ps)} ${r.cls.join(',')}; go「${r.go}」; hp「${r.hp.trim()}」; me「${me}」; scroll ${JSON.stringify(sc)}`);
+      } catch (e) { record(45, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #46 升級三選一（v5）：連升兩級＝面板開兩次（第一格品味或底氣、沒有「算了」、不捲動）；重新整理回到升級面板；選完到下一位
+    if (want(46)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'pearl', idx: 1 });
+        await waitScreen(page, 'night'); await sleep(500);
+        // 等級 1 要 4、等級 2 要 5：經驗 8＋打贏一般 2＝10 → 連升兩級
+        await page.evaluate(() => { window.__lab.run.xp = 8; });
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        await page.evaluate(() => window.__lab.forceWin());
+        await waitScreen(page, 'reward'); await sleep(1200);
+        await jsClick(page, '.lb-sheet.reward [data-pick]');
+        const p1 = await page.waitForSelector('.lb-sheet.level [data-lv]', { timeout: 10000 }).then(() => true, () => false);
+        await sleep(800);
+        const L1 = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.level'), L = window.DipLabContent.trial.levelUp, R = window.__lab.run;
+          return { title: s.querySelector('h3').textContent, want: L.title.replace('{n}', R.pending.level), lv: [...s.querySelectorAll('[data-lv]')].map(b => b.dataset.lv), nm: [...s.querySelectorAll('[data-lv] .nm')].map(b => b.textContent),
+            names: [L.atk, L.def, L.hp], cancel: !!s.querySelector('[data-a=cancel],[data-a=skip]'), sub: s.querySelector('.hd .sub').textContent, autoSub: L.sub, level: R.level, ups: R.levelUps,
+            btnBottom: Math.max(...[...s.querySelectorAll('[data-lv]')].map(b => b.getBoundingClientRect().bottom)), vh: innerHeight }; });
+        const sc1 = await noScroll(page);
+        // 重新整理：回到升級面板
+        await openTitle(page);
+        await jsClick(page, '[data-a=cont]');
+        const back = await page.waitForSelector('.lb-sheet.level [data-lv]', { timeout: 15000 }).then(() => true, () => false);
+        await sleep(800);
+        const before = await page.evaluate(() => ({ maxHp: window.__lab.run.maxHp, hp: window.__lab.run.hp }));
+        await jsClick(page, '.lb-sheet.level [data-lv="hp"]');
+        const p2 = await page.waitForFunction(() => { const s = document.querySelector('.lb-sheet.level [data-lv]'); return s && window.__lab.run.levelUps === 1 && window.__lab.run.picks.length === 1; }, null, { timeout: 10000 }).then(() => true, () => false);
+        await sleep(800);
+        const L2 = await page.evaluate(() => ({ title: document.querySelector('.lb-sheet.level h3').textContent, maxHp: window.__lab.run.maxHp, hp: window.__lab.run.hp }));
+        await jsClick(page, '.lb-sheet.level [data-lv="atk"]');
+        const night = await waitScreen(page, 'night', 10000);
+        await sleep(500);
+        const fin = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, level: R.level, picks: R.picks.slice(), atk: R.atk, ups: R.levelUps }; });
+        const ok = p1 && L1.title === L1.want && L1.lv.length === 3 && /^(atk|def)$/.test(L1.lv[0]) && L1.lv.slice().sort().join() === 'atk,def,hp' && L1.nm.every(n => L1.names.includes(n)) && !L1.cancel &&
+          L1.sub.indexOf(L1.autoSub) === 0 && L1.level === 3 && L1.ups === 2 && L1.btnBottom <= L1.vh && scrollOk(sc1) && back && p2 && L2.maxHp === before.maxHp + 2 && L2.hp === before.hp + 2 &&
+          night && fin.pos === 3 && fin.level === 3 && fin.picks.join() === 'hp,atk' && fin.atk === 1 && fin.ups === 0;
+        record(46, size, ok, `1st「${L1.title}」${L1.lv} ${JSON.stringify(L1.nm)} sub「${L1.sub}」 Lv ${L1.level} ups ${L1.ups}; bottom ${Math.round(L1.btnBottom)} ≤ ${L1.vh}; scroll ${JSON.stringify(sc1)}; reload → panel ${back}; hp pick ${before.maxHp}→${L2.maxHp}; 2nd「${L2.title}」; → night ${night} ${JSON.stringify(fin)}`);
+      } catch (e) { record(46, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #47 打倒傳說藏家（v5）：王牌收進唱片櫃 → 領獎 → 下一輪（第 6 位、新面孔、說情重設）；沒有結算畫面
+    if (want(47)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'heresy', idx: 4 });
+        await waitScreen(page, 'night'); await sleep(500);
+        const r0 = await page.evaluate(() => { const R = window.__lab.run; R.retryLeft = 0; return { order: R.order.slice(), bossAce: window.DipLabContent.aces[R.bossAce], shelf: !!window.__lab.save.shelf[window.DipLabContent.aces[R.bossAce]] }; });
+        await jsClick(page, '[data-a=go]');
+        await waitScreen(page, 'scene');
+        for (let g = 0; g < 150 && !(await page.$('.lb-dq.hasmenu .lb-dqopt')); g++) { if (await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq'); await sleep(200); }
+        await sleep(450);
+        await jsClick(page, '.lb-dq .lb-dqopt');
+        await waitScreen(page, 'duel');
+        await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+        await sleep(600);
+        await page.evaluate(() => window.__lab.forceWin());
+        // 藏家那句＋他用過的那張（收進唱片櫃）
+        const stake = await advanceUntil(page, () => !!document.querySelector('#panel > .lb-sheet.one [data-i]'), null, 30000);
+        const one = stake ? await page.evaluate(() => ({ cid: (document.querySelector('#panel > .lb-sheet.one [data-cid]') || {}).getAttribute ? document.querySelector('#panel > .lb-sheet.one [data-cid]').getAttribute('data-cid') : null, txt: document.querySelector('#panel > .lb-sheet.one').textContent, said: (document.querySelector('.lb-dq .tx') || {}).textContent || '' })) : null;
+        const shelf1 = await page.evaluate(id => !!window.__lab.save.shelf[id], r0.bossAce);
+        await sleep(400);
+        if (stake) await jsClick(page, '#panel > .lb-sheet.one [data-i="0"]');
+        const rew = await waitScreen(page, 'reward', 15000);
+        await sleep(1200);
+        await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]'); if (b) b.click(); });
+        // 有升級就挑第一個
+        for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
+        const night = (await screen(page)) === 'night';
+        await sleep(600);
+        const r1 = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, round: R.round, idx: R.idx, order: R.order.slice(), retry: R.retryLeft, over: R.over, ps: [...document.querySelectorAll('[data-tut=night] .nc .ps')].map(x => x.textContent.trim()), trail: window.__lab.trail() }; });
+        const fresh = r1.order.slice(0, 3).filter(id => !r0.order.includes(id)).length;
+        const ok = stake && one && one.cid === r0.bossAce && shelf1 && rew && night && r1.pos === 6 && r1.round === 2 && r1.idx === 0 && r1.retry === 1 && !r1.over && r1.ps[0] === '第 6 位' && r1.ps[4] === '第 10 位' && fresh >= 1 && !r1.trail.includes('end');
+        record(47, size, ok, `ace panel ${one && one.cid} (want ${r0.bossAce}, on shelf ${shelf1}) said「${one && one.said}」; reward ${rew}; night ${night}; ${JSON.stringify({ pos: r1.pos, round: r1.round, retry: r1.retry, ps: r1.ps })}; 新面孔 ${fresh}/3 (${r0.order.slice(0, 3)} → ${r1.order.slice(0, 3)})`);
+      } catch (e) { record(47, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #48 中繼點＋結算＋標題紀錄（v5）：第 10 位打贏 → 中繼點吐司、best.checkpoints；跳到第 23 位、loseNext → 結算；標題「最遠：第 23 位」
+    if (want(48)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'pearl', pos: 10 });
+        await waitScreen(page, 'night'); await sleep(500);
+        const toCp0 = await page.evaluate(() => window.DipLabEngine.toCheckpoint(window.__lab.run, window.DipLabContent));
+        await page.evaluate(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); }))).observe(document.getElementById('app'), { childList: true }); });
+        await jsClick(page, '[data-a=go]');
+        await waitScreen(page, 'scene');      // 第 10 位＝藏家：先進門
+        for (let g = 0; g < 150 && !(await page.$('.lb-dq.hasmenu .lb-dqopt')); g++) { if (await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq'); await sleep(200); }
+        await sleep(450); await jsClick(page, '.lb-dq .lb-dqopt');
+        await waitScreen(page, 'duel');
+        await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+        await sleep(600);
+        await page.evaluate(() => window.__lab.forceWin());
+        await sleep(600);
+        const cp = await page.evaluate(() => ({ toasts: window.__toasts.slice(), best: window.__lab.save.best.checkpoints.slice(), run: window.__lab.run.checkpoints.slice(), want: window.DipLabContent.trial.ui.checkpoint.replace('{n}', 10) }));
+        // 跳到第 23 位、下一場強制輸（說情也用掉）→ 結算
+        await page.evaluate(() => { window.__lab.jump(23); window.__lab.loseNext(1, { noRetry: true }); });
+        await waitScreen(page, 'night'); await sleep(500);
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        const end = await advanceUntil(page, () => window.__lab.screen() === 'end', null, 40000);
+        await sleep(1200);
+        const r = await page.evaluate(() => { const S = window.DipLabContent.summary, R = window.__lab.run, sum = window.DipLabEngine.runSummary(R);
+          return { h1: document.querySelector('.lb-endhero .lb-h1').textContent, title: S.title, rows: [...document.querySelectorAll('.lb-sum li')].map(li => li.textContent.replace(/\s+/g, ' ').trim()), sum,
+            cps: (document.querySelector('.lb-cps') || {}).textContent || '', cpsWant: S.checkpoints.replace('{list}', '10'), again: (document.querySelector('[data-a=again]') || {}).textContent || '', againWant: S.again,
+            far: window.__lab.save.best.far, runs: window.__lab.save.runs.length, top: document.querySelector('#top').textContent }; });
+        const sc = await noScroll(page);
+        await openTitle(page);
+        const t = await page.evaluate(() => ({ foot: [...document.querySelectorAll('.lb-foot')].map(x => x.textContent).join('|'), want: window.DipLabContent.summary.best.replace('{n}', 23), last: (document.querySelector('[data-a=end]') || {}).textContent || '', lastWant: window.DipLabContent.trial.ui.lastSummary }));
+        const ok = toCp0 === 1 && cp.toasts.some(x => x.indexOf(cp.want) >= 0) && cp.best.includes(10) && cp.run.includes(10) && end && r.h1 === r.title && r.rows.length === 3 && r.rows[0].indexOf('第 23 位') >= 0 &&
+          r.cps === r.cpsWant && r.again === r.againWant && r.far === 23 && r.runs === 1 && /^第 23 位/.test(r.top.trim()) && scrollOk(sc) && t.foot.indexOf(t.want) >= 0 && t.last === t.lastWant;
+        record(48, size, ok, `toCheckpoint at 10 = ${toCp0}; toasts ${JSON.stringify(cp.toasts)}; best.checkpoints ${cp.best}; end ${end}「${r.h1}」 rows ${JSON.stringify(r.rows)}「${r.cps}」 again「${r.again}」; far ${r.far}; scroll ${JSON.stringify(sc)}; title「${t.foot}」「${t.last}」`);
+      } catch (e) { record(48, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 
