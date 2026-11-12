@@ -843,7 +843,8 @@
     // 牌桌小抄（店主 11-12）：點相剋圖打開、再點一下（哪裡都行）收起；別處那一下照常有作用（點手牌照樣打開那張）
     function cheatHTML() {
       const rows = (content.cheatSheet || []);
-      const tint = s => esc(s).replace(/[經冷硬]/g, ch => `<span class="${({ 經: 'c', 冷: 'o', 硬: 'h' })[ch]}">${ch}</span>`);
+      // 店主 11-12：屬性寫全名，第一個字照屬性色、第二個字黑；「剋」灰
+      const tint = s => esc(s).replace(/(經典|冷門|硬蕊)|剋/g, (m, name) => name ? `<span class="${({ 經典: 'c', 冷門: 'o', 硬蕊: 'h' })[name]}">${name[0]}</span>${name[1]}` : '<span class="kx">剋</span>');
       return rows.map(r => `<b>${tint(r[0])}</b><span>${esc(r[1])}</span>`).join('');
     }
     function setCheat(on) {
