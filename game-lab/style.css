@@ -124,6 +124,29 @@ small{font-size:inherit;}
 .lb-dqopt{display:flex;align-items:center;gap:8px;min-height:44px;padding:6px 10px;border:1px solid rgba(255,255,255,.7);background:#111;color:#fff;font:700 15px var(--zh);letter-spacing:.08em;text-align:left;}
 .lb-dqopt .cur{color:#f0c75e;font-size:13px;}
 .lb-dqopt+.lb-dqopt{border-color:rgba(255,255,255,.4);font-weight:400;font-size:14px;}
+.lb-dqopt .mt{display:flex;flex-direction:column;min-width:0;}
+.lb-dqopt .sub{font-size:11px;line-height:1.3;letter-spacing:.06em;color:rgba(255,255,255,.62);font-weight:400;}   /* 按鈕下方的小字（O21「跳過教學」） */
+/* 唱盤前（教學那條路）：老闆攤開猜歌那三張＋相剋圖＋老闆的話（ui.js tutIntroPanel；店主 11-12） */
+.lb-sheet.tutintro{cursor:pointer;padding-bottom:10px;}
+.lb-sheet.tutintro>.row:last-child{margin-bottom:0;}   /* 下緣的空白用 padding（naturalH 量得到），不用最後一個子元素的 margin */
+.lb-sheet.tutintro .lb-trio{margin-top:4px;}
+.lb-sheet.tutintro .lb-ct{cursor:pointer;transition:opacity .2s;}
+.lb-sheet.tutintro .lb-ct .lb-cv{outline:2px solid transparent;outline-offset:2px;transition:outline-color .2s;}
+.lb-sheet.tutintro .lb-ct.ax-c.lit .lb-cv{outline-color:var(--c);}
+.lb-sheet.tutintro .lb-ct.ax-o.lit .lb-cv{outline-color:var(--o);}
+.lb-sheet.tutintro .lb-ct.ax-h.lit .lb-cv{outline-color:var(--h);}
+.lb-sheet.tutintro .lb-ct.dim{opacity:.35;}
+.lb-sheet.tutintro .lb-ct .ar{margin-top:6px;}
+.lb-sheet.tutintro .axl{margin-top:2px;font-size:13px;font-weight:900;letter-spacing:.04em;}
+.lb-sheet.tutintro .gl{font-size:10px;line-height:1.35;color:var(--gray2);white-space:nowrap;letter-spacing:-.02em;}
+.lb-sheet.tutintro .row{display:flex;align-items:stretch;gap:10px;margin:8px 0 10px;flex:none;}
+.lb-sheet.tutintro .tri3{flex:none;width:66px;height:59px;align-self:center;}
+.lb-sheet.tutintro .tri3 svg{display:block;width:100%;height:100%;overflow:visible;}
+.lb-sheet.tutintro .say{position:relative;flex:1;min-width:0;min-height:62px;margin-top:8px;padding:12px 12px 14px;background:#111;color:#fff;border:4px double #fff;outline:1px solid #111;text-align:left;font:inherit;font-size:14px;line-height:1.6;cursor:pointer;}
+.lb-sheet.tutintro .say .nm{position:absolute;left:10px;top:-2px;transform:translateY(-50%);background:#111;color:#fff;border:2px solid #fff;font-size:12px;font-weight:700;padding:0 9px;line-height:20px;letter-spacing:.1em;}
+.lb-sheet.tutintro .say .tx{display:block;min-height:3.2em;word-break:normal;line-break:strict;}
+.lb-sheet.tutintro .say .sg{display:inline-block;}   /* 一段（到標點為止）不拆開，只在標點後面換行 */   /* 先留兩行的高：面板照第一句量，後面兩行的句子才不會撐出捲軸 */
+.lb-sheet.tutintro .say .nx{position:absolute;right:8px;bottom:2px;font-size:11px;animation:lbBlink 1s steps(1,end) infinite;}
 @keyframes lbBlink{0%,100%{opacity:1;}50%{opacity:0;}}
 /* 包包條（點一格＝唱片資訊：B06） */
 .lb-strip{flex:none;height:44px;display:flex;align-items:center;gap:4px;padding:0 10px 4px;position:relative;font-family:var(--zh);}
@@ -489,6 +512,8 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-rules .g{color:var(--win);} .lb-rules .r{color:var(--red);}
 .lb-rules .gold{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:900;padding:0 4px;line-height:15px;letter-spacing:.08em;margin-left:4px;vertical-align:1px;}
 .lb-rules .rrel{margin:12px 0 0;font-size:12px;color:#333;text-align:center;}
+.lb-rules .rwhy{margin:8px 0 0;font-size:12px;line-height:1.6;color:#333;}   /* 六行下面另起一段「為什麼這樣剋」（店主 11-12） */
+.lb-rules .rwhy b{font-weight:700;color:var(--ink);}
 .lb-rules .rfoot{margin-top:10px;font-size:11px;color:var(--gray);line-height:1.6;text-align:center;}
 /* 規則卡的頁尾：「重看教學」＋「關閉」同一列 */
 .lb-modal .mfoot.two{display:flex;gap:8px;}
@@ -502,6 +527,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
   .lb-help .lb-rules .rl li{gap:8px;padding:4px 0 3px;font-size:13px;line-height:1.45;}
   .lb-help .lb-rules .rl li .n{width:19px;height:19px;font-size:12px;line-height:19px;margin-top:0;}
   .lb-help .lb-rules .rrel{margin-top:6px;font-size:11px;}
+  .lb-help .lb-rules .rwhy{clear:both;margin-top:5px;font-size:11px;line-height:1.45;}
   .lb-help .lb-rules .rfoot{margin-top:4px;line-height:1.45;}
   .lb-help .lb-h3{margin:8px 0 4px;font-size:11px;}
   .lb-help .lb-learned{gap:4px;}

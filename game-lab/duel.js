@@ -39,6 +39,34 @@
   })();
   const ZH = { c: '經典', o: '冷門', h: '硬蕊' }, ZH1 = { c: '經', o: '冷', h: '硬' }, ATTRS = ['c', 'o', 'h'];
   const EDGES = [['o', 'c'], ['c', 'h'], ['h', 'o']];   // 三角的箭頭（畫圖用；輸贏一律看引擎事件）：冷→經、經→硬、硬→冷
+  // 相剋圖例的 SVG（純函式；盤面與序章「唱盤前」那個面板共用）。tone：{oc|ch|ho: 'k' 黑｜'g' 亮綠｜'r' 亮紅｜'f' 淡}；ring：哪一圈加黑框；idp：marker id 前綴（同頁兩張圖不撞）
+  function triMarkup(tone, ring, idp) {
+    const P = { c: [66, 23], h: [107, 94], o: [25, 94] }, R = 21;
+    const col = { c: 'var(--c,#1f5fae)', o: 'var(--o,#6a3fa0)', h: 'var(--h,#c11628)' };
+    const STROKE = { k: '#111', g: '#2e7d52', r: '#c11628', f: '#d6d6d6' };
+    tone = tone || {};
+    let s = `<svg viewBox="0 0 132 118" aria-label="冷剋經、經剋硬、硬剋冷" role="img"><defs>`;
+    Object.keys(STROKE).forEach(k => { s += `<marker id="${idp}${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${STROKE[k]}"/></marker>`; });
+    s += '</defs>';
+    EDGES.forEach(([a, b]) => {
+      const p0 = P[a], p1 = P[b], dx = p1[0] - p0[0], dy = p1[1] - p0[1], L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+      const x1 = p0[0] + ux * (R + 3), y1 = p0[1] + uy * (R + 3), x2 = p1[0] - ux * (R + 7), y2 = p1[1] - uy * (R + 7);
+      const k = tone[a + b] || 'k', w = k === 'f' ? 3 : (k === 'k' ? 4 : 6);
+      s += `<g data-tut="tri-${a}${b}" class="eg ${k}"><line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${STROKE[k]}" stroke-width="${w}" marker-end="url(#${idp}${k})"/></g>`;
+    });
+    ATTRS.forEach(a => {
+      const p = P[a];
+      s += `<circle cx="${p[0]}" cy="${p[1]}" r="${R}" fill="${col[a]}"${ring === a ? ' stroke="#111" stroke-width="5"' : ''}/>`;
+      s += `<text x="${p[0]}" y="${p[1] + 8.5}" text-anchor="middle" font-size="24" font-weight="900" fill="#fff">${ZH1[a]}</text>`;
+    });
+    return s + '</svg>';
+  }
+  // 只亮 lit 那幾條（綠）、其他淡；lit 空＝三條照常黑（序章「唱盤前」面板用）
+  function triLit(lit, idp) {
+    const on = [].concat(lit || []), tone = {};
+    EDGES.forEach(([a, b]) => { tone[a + b] = on.length ? (on.includes(a + b) ? 'g' : 'f') : 'k'; });
+    return triMarkup(tone, null, idp || 'dlx');
+  }
   const TIER_AXIS = { hall: 'c', pearl: 'o', heresy: 'h' };
   const LONG_MS = 450;     // 長按手牌封面＝唱片資訊
   const STACK_DX = 0.3;   // 疊著（店主 17:1x：不要扇形，水平直線像舊版新接龍）：同一條線上每張往右錯開 3 成寬，不轉角、不成弧形
@@ -310,10 +338,11 @@
       <section class="dl-t" data-tut="table">
         <div class="slot e" data-tut="slot-e"></div>
         <div class="slot p" data-tut="slot-p"></div>
-        <div class="tcol"><div class="rounds num" data-tut="rounds"></div><div class="tri" data-tut="tri"></div></div>
+        <div class="tcol"><div class="rounds num" data-tut="rounds"></div><div class="tri" data-tut="tri" role="button" aria-expanded="false"></div></div>
         <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
         <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div></div>
         <div class="lastline" data-tut="lastline"></div>
+        <div class="cheat" data-tut="cheat" hidden></div>
       </section>
       <section class="dl-p" data-tut="p-hud">
         <div class="nmrow"><b>你</b><span class="relics" data-tut="relics"></span><span class="sp"></span>
@@ -330,7 +359,7 @@
     const els = {
       e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
       hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
-      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'),
+      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), cheat: $('.cheat'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
       hand: $('.hand'), tiles: $('.hand .tiles'), abpop: $('.hand .pop'), tcol: $('.tcol'),
       pop: $('.dl-pop'), kost: $('.kost'), fx: $('.dl-fx'),
@@ -443,9 +472,6 @@
     // 相剋圖例（店主 2026-11-08：相剋圖縮小、專輯當主角）：牌桌中間一個約 64 px 的小三角，圓大一點、箭頭粗一點、不寫「剋」字（箭頭就是剋）；
     // 選了一顆星：你剋得到的那條亮綠、剋你的那條亮紅；揭曉：剋中的那條亮起
     function triSVG() {
-      const P = { c: [66, 23], h: [107, 94], o: [25, 94] }, R = 21;
-      const col = { c: 'var(--c,#1f5fae)', o: 'var(--o,#6a3fa0)', h: 'var(--h,#c11628)' };
-      const STROKE = { k: '#111', g: '#2e7d52', r: '#c11628', f: '#d6d6d6' };
       let ring = null;
       const tone = {};
       EDGES.forEach(([a, b]) => { tone[a + b] = 'k'; });
@@ -458,21 +484,7 @@
         const x = S.sel.attr; ring = x;
         EDGES.forEach(([a, b]) => { tone[a + b] = a === x ? 'g' : b === x ? 'r' : 'f'; });
       }
-      let s = `<svg viewBox="0 0 132 118" aria-label="冷剋經、經剋硬、硬剋冷" role="img"><defs>`;
-      Object.keys(STROKE).forEach(k => { s += `<marker id="dlm${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${STROKE[k]}"/></marker>`; });
-      s += '</defs>';
-      EDGES.forEach(([a, b]) => {
-        const p0 = P[a], p1 = P[b], dx = p1[0] - p0[0], dy = p1[1] - p0[1], L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
-        const x1 = p0[0] + ux * (R + 3), y1 = p0[1] + uy * (R + 3), x2 = p1[0] - ux * (R + 7), y2 = p1[1] - uy * (R + 7);
-        const k = tone[a + b], w = k === 'f' ? 3 : (k === 'k' ? 4 : 6);
-        s += `<g data-tut="tri-${a}${b}" class="eg ${k}"><line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${STROKE[k]}" stroke-width="${w}" marker-end="url(#dlm${k})"/></g>`;
-      });
-      ATTRS.forEach(a => {
-        const p = P[a];
-        s += `<circle cx="${p[0]}" cy="${p[1]}" r="${R}" fill="${col[a]}"${ring === a ? ' stroke="#111" stroke-width="5"' : ''}/>`;
-        s += `<text x="${p[0]}" y="${p[1] + 8.5}" text-anchor="middle" font-size="24" font-weight="900" fill="#fff">${ZH1[a]}</text>`;
-      });
-      return s + '</svg>';
+      return triMarkup(tone, ring, 'dlm');
     }
     function renderTri() { els.tri.innerHTML = triSVG(); }
     function renderRounds(v) { els.rounds.textContent = T('rounds', { n: Math.max(1, v.n | 0), max: v.maxRounds || (E.CFG && E.CFG.maxRounds) || 6 }); }
@@ -828,6 +840,19 @@
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 1600);
       return true;
     }
+    // 牌桌小抄（店主 11-12）：點相剋圖打開、再點一下（哪裡都行）收起；別處那一下照常有作用（點手牌照樣打開那張）
+    function cheatHTML() {
+      const rows = (content.cheatSheet || []);
+      const tint = s => esc(s).replace(/[經冷硬]/g, ch => `<span class="${({ 經: 'c', 冷: 'o', 硬: 'h' })[ch]}">${ch}</span>`);
+      return rows.map(r => `<b>${tint(r[0])}</b><span>${esc(r[1])}</span>`).join('');
+    }
+    function setCheat(on) {
+      on = !!on && !!(content.cheatSheet || []).length;
+      if (on && !els.cheat.innerHTML) els.cheat.innerHTML = cheatHTML();
+      els.cheat.hidden = !on;
+      els.tri.setAttribute('aria-expanded', on ? 'true' : 'false');
+      if (on) emit('cheat', true);
+    }
     function relicTap(btn) {
       const id = btn.dataset.relic, r = (S.v.relics || []).find(x => x.id === id); if (!r) return;
       emit('relic', id);
@@ -856,6 +881,8 @@
       if (sw && ev.detail && sw.el.contains(t)) { ev.preventDefault(); return; }   // 長按之後放開的那一下 click（不限時：按多久都一樣；下一次按下就作廢，V5 F6）
       if (S.held) { ev.preventDefault(); return; }
       if (!els.pop.hidden && !t.closest('.rl')) els.pop.hidden = true;
+      if (!els.cheat.hidden) { setCheat(false); if (t.closest('.cheat, .tri')) return; }
+      else if (t.closest('.tri') && !S.busy) { setCheat(true); return; }
       let x;
       if ((x = t.closest('.slot[data-card]'))) { infoOfSlot(x); return; }
       if ((x = t.closest('.rl'))) { relicTap(x); return; }
@@ -872,6 +899,7 @@
     }
     // 盤面外面（舞台、頂欄）也算「手牌外面」；唱片資訊、教學遮罩、面板上的點擊不算
     function onDocClick(ev) {
+      if (!els.cheat.hidden && ev.target && !(ev.target.closest && root.contains(ev.target))) setCheat(false);
       if (!S.sel || S.destroyed || S.infoOpen) return;
       const t = ev.target;
       if (!t || !t.closest || root.contains(t) || t.closest('#cardInfoMask, #tut, #tutTip, .lb-modal')) return;
@@ -932,7 +960,7 @@
       if (a) a.finished.then(() => { el.style.transformOrigin = '50% 50%'; }, () => {});
       return a;
     }
-    // 浮框的句子只在標點後面換行（「冷門」「白版」不會被拆成兩行）：每段（到，。！？為止）包成不拆的一塊（不用 lookbehind：iOS 16.3 以前不認）
+    // 浮框的句子只在標點後面換行（「冷門」「自主發行」不會被拆成兩行）：每段（到，。！？為止）包成不拆的一塊（不用 lookbehind：iOS 16.3 以前不認）
     const segHTML = t => String(t || '').replace(/([，。！？；：])/g, '$1\n').split('\n').filter(Boolean).map(x => `<span class="sg">${esc(x)}</span>`).join('');
     function fadeIn(el, ms) { if (el) A(el, [{ opacity: 0 }, { opacity: 1 }], { duration: ms || 200, easing: 'ease-out' }); }
     function showCallout(ct) {
@@ -1310,6 +1338,7 @@
     autoplay: policy => (CUR ? CUR.api.autoplay(policy) : false),
     stopAuto: () => { if (CUR) CUR.api.stopAuto(); },
     rerender: () => { if (CUR) CUR.api.rerender(); },
+    triSVG: (lit, idp) => triLit(lit, idp),
     _fmt: { clashText, ruleText, hintOf, text: dtOf },
   };
   window.DipLabDuel = DipLabDuel;
