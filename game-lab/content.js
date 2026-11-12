@@ -6,7 +6,8 @@
  *
  * v4：三相剋＋門檻 N=2（被剋方高 2 星以上剋不動，改比星）、對手暗選（提示＋誠實度，會唬人）、王牌 7 星（一場一次；沒有「不會被剋」，FIXLIST 2）、
  *     六手上限（比聲望條剩幾成，FIXLIST 3）；拿掉脾氣、急了、翻面、B 面。
- *     經濟（FIXLIST 8 台幣行情）：贏了拿錢、箱子買唱片（照稀有度定價）、櫃檯買配件、特價箱；錢與買的唱片打烊歸零，配件照 v3 帶到下一晚。
+ *     經濟（FIXLIST 8 台幣行情）：贏了拿錢、箱子買唱片（照稀有度定價）、櫃檯買配件、特價箱。
+ * v5 無限試煉（店主 11-12；SPEC 無限試煉 §0）：沒有時間、沒有打烊；一輪 5 位，打到輸為止；錢、包包、配件、王牌整趟帶著走（C.trial）。
  *
  * 第一波（A1）：§2.2.2–§2.2.10 的資料。第二波（B2）：v4 劇本（C.script、C.tonightLines、C.blocking，§2.5.4）、
  *   刪掉 v3 外殼墊片（junk、habits、retorts、v3 劇本、bins[*].ids）；教學步驟（C.tutorial.steps／learned／ui）第二波第 2 階段改。
@@ -77,11 +78,8 @@
     normal: { w: 0.6,  nz: 1.4, mercy: true },    // 原版 normal：星×0.6＋U(0,1.4)
     hard:   { w: 0.7,  nz: 0.8, mercy: true }     // 原版 hard：星×0.7＋U(0,0.8)
   };
-  // index＝run.idx（今晚第幾位客人，0 起：第 1／2／3 位一般、菁英、藏家）；序章男子固定 easy
-  //   原版 enemyForDepth 是 d<3 easy、d<5 normal、其餘 hard（roguelike.html:3480）。FIXLIST 10 平衡 R1 改成 normal／easy／easy／normal／normal：
-  //   第 1 位（包包最弱、還沒買東西）用 normal 比第 3 位用 normal 多壓 2–3 點通關率；藏家改 normal，難度改由聲望最高＋多一張王牌扛
-  //   FIXLIST 11 手牌 5 張（H5-1）：誠實度與這張表照 R1 不動，只動聲望（你 9、客人 20–28；見下「客人」）
-  C.plannerByDepth = ['normal', 'easy', 'easy', 'normal', 'normal'];
+  // 出招難度跟著位數走（無限試煉曲線 V3，C.trial.curve.planner：第 1–2 位 easy、3–4 normal、5 起 hard＝原版 enemyForDepth）；
+  //   C.honesty 只剩序章男子與直接開打的對決在用（無限試煉的說真話機率照位數，C.trial.curve.q）。一晚版的 C.plannerByDepth 拿掉了
 
   // ===================================================================
   // 發燒配件（9 件；全部被動、自動生效、最多帶 3 件；照 v3 帶到下一晚）
@@ -111,15 +109,16 @@
   C.relicShop = { pool: ['boost_c', 'boost_o', 'boost_h'] };     // 櫃檯只賣三件屬性加成（D §6）
 
   // ===================================================================
-  // 經濟（台幣行情，FIXLIST 8＋X／Y 契約；一晚內有效，打烊歸零）。畫面一律寫千分位（$1,200；engine.moneyText）
+  // 經濟（台幣行情，FIXLIST 8＋X／Y 契約；整趟無限試煉帶著走，輸了開新一趟才歸零）。畫面一律寫千分位（$1,200；engine.moneyText）
   //   唱片照稀有度定價（engine.rarity：score＝經典＋硬蕊＋(冷門=5 ? 1 : 0)；≤5 普通、6 稀有、7 獨特、8 史詩、≥9 傳奇；頂點卡＝頂點）
   //   箱子／新進／店長推薦只上普通～獨特（$800–1,200）；門口牆最靠門那格 FEATURE 只上史詩 $3,000／傳奇 $4,000；頂點 $8,000 先備好、v4 不上架（王牌是老闆送的）
   //   特價箱每張照最高星 $100／200／300（序章挑三張照舊免費）；櫃檯配件一件 $3,000；賣回一律半價
   //   start／win＝sim.mjs --n 3000 校準（dev/notes-X.md、dev/sim-v4.json）；其他是店主定的價，不拿來校準
+  //   win.boss：打贏藏家不再打烊，給菁英的 1.5 倍（主線裁定 3，真人試玩再調）
   // ===================================================================
   C.economy = {
     start: 1000,                                                  // 開局的錢（校準）
-    win:   { prologue: 0, normal: 1500, elite: 2500, boss: 0 },   // 贏一位客人拿多少（校準；序章 0、藏家 0＝打贏就打烊）
+    win:   { prologue: 0, normal: 1500, elite: 2500, boss: 3750 },   // 贏一位客人拿多少（校準；序章 0、藏家＝菁英 ×1.5）
     price: { common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 },
     bargain: { 1: 100, 2: 200, 3: 300 },                          // 特價箱每張，照那張最高星
     relicPrice: 3000,                                             // 櫃檯配件一件
@@ -130,7 +129,7 @@
   C.rarityTag = '店主';
   // 店裡的箱子（bins.js，由 tools/bake-cards.mjs 產生；沒有 bins.js 時是空的）。
   //   X／Y 契約：每個 key { key, label, zh, pool, front }：jazz tw rock elec soul hiphop pop classical world folk blues new feature picks
-  //   引擎照 pool 上今晚的貨（engine stockShop）；front＝畫在道具上的封面（Y）；名牌英文 label、點了看 zh
+  //   引擎照 pool 上這一輪的貨（engine restock，每輪開頭補貨）；front＝畫在道具上的封面（Y）；名牌英文 label、點了看 zh
   C.bins = {};
   (function () {
     var B = (BINS && BINS.shops && BINS.shops.dip) || (BINS && BINS.bins) || {};
@@ -143,21 +142,74 @@
   })();
 
   // ===================================================================
-  // 今晚來客（一般 6 抽 3、菁英 2 抽 1、藏家最後；日期種子；每晚一次老闆說情）
+  // 無限試煉（店主 11-12 拍板；SPEC 無限試煉 §0，engine.js trialCfg 讀這份，沒寫的欄位用 engine TRIAL 預設）
+  //   序章打完＝第 1 位；一輪 5 位：一般 3、第 4 位菁英、第 5 位傳說藏家；打完藏家接下一輪新面孔；打到輸為止。
+  //   你 12 聲望、帶到下一場、打贏回 3（不超過上限）；客人 12、藏家 14。老闆說情每輪 1 次；商店每輪補貨一次。
+  //   局內升級：贏一般 +2 經驗、菁英 +3、藏家 +4；升下一級要「目前等級＋3」；每升一級聲望上限 +1（現有聲望也 +1），再三選一（picks）。
+  //   中繼點：打贏第 10、20、30、50、75、100 位，之後每 50 位（票之後再做）。
+  //   curve＝難度曲線 V3（../curve/curves.cjs；照店主舊版 roguelike enemyForDepth 的形狀，第 6 位之後客人品味每 5 位 +1）。改難度只改這裡；
+  //   tiers＝之後的難度階梯（像 Monster Train 的 Covenant）：第 k 階＝tiers[k−1]，是 curve／guestHp… 的部分覆寫，例 { curve: { atk: { add: 1 } } }
   // ===================================================================
-  C.night = { prologueTime: '21:30', times: ['22:00', '22:40', '23:20', '00:10', '02:00'], normals: 3, retry: 1, label: '今晚來客', closing: '打烊' };
-  C.nightTag = '新';
+  C.trial = {
+    classes: ['normal', 'normal', 'normal', 'elite', 'boss'],
+    retry: 1,                                       // 老闆說情每輪 1 次（同一位、同一副牌、聲望回到開打前）
+    youHp: 12, heal: 3,                             // 你 12 聲望；打贏回 3（＝engine CFG.playerHp）
+    guestHp: { normal: 12, elite: 12, boss: 14 },
+    xp: { normal: 2, elite: 3, boss: 4 }, levelNeed: 3, levelHp: 1,
+    picks: { atk: 1, def: 1, hp: 2 },               // 三選一：品味 +1、底氣 +1、聲望上限 +2（現有聲望也 +2）
+    checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
+    curve: {
+      planner: { easyTo: 2, normalTo: 4 },          // 出招難度：第 1–2 位 easy、第 3–4 位 normal、第 5 位起 hard（C.planners）
+      // 說真話機率 q：easy 1、normal 0.85、hard 1−min(0.55, 0.18＋0.05×max(0, 位−5))（第 5 位 0.82、第 13 位起封底 0.45）
+      q: { easy: 1, normal: 0.85, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },
+      mercyFeint: 0.8,                              // 放水：你落後時他少唬，唬人率 ×(1−0.8×mercy)（舊版 roguelike.html:3693-3695）
+      // 客人品味（他這手扣到你才加，再扣你的底氣）：min(2, round(0.75×max(0, 位−3)))＋⌊max(0, 位−6)/5⌋，藏家 +1；add＝之後難度階梯用
+      atk: { lateFrom: 3, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },
+      // 客人底氣（最多擋一半）：min(1, round(0.45×max(0, 位−3)))，藏家 +1
+      def: { lateFrom: 3, rate: 0.45, cap: 1, boss: 1, add: 0 },
+      // 客人牌組：三軸總星下限 min(13, 3＋⌊0.7×位⌋)（低於的換掉）；主軸加 ⌊max(0, 位−3)/3⌋ 星、上限 5；
+      //   藏家必帶王牌；一般客人第 5 位起帶王牌機率 min(60%, 15%×(位−4))
+      deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6 }
+    },
+    tiers: [],
+    // ---- 畫面字（{x} 由畫面代入；第二棒 ui.js 用）----
+    ui: {
+      prologue: '序章',
+      pos: '第 {n} 位',                              // 頂欄只寫這個（店主：不寫時間）
+      round: '第 {r} 輪',
+      elite: '菁英', boss: '傳說藏家',
+      toCheckpoint: '離下個中繼點還有 {n} 位',
+      checkpoint: '中繼點：第 {n} 位',               // 打贏中繼點那一位的吐司
+      retryLeft: '老闆說情 剩 {n} 次',
+      next: '下一位：第 {n} 位　{name} ▸',
+      guestDone: '打過了', guestCur: '下一位', guestLater: '還沒輪到',
+      hasAce: '帶王牌',
+      hp: '聲望 {n}/{max}',
+      heal: '聲望 +{n}',                             // 打贏回 3 的吐司
+      level: 'Lv {n}', xp: '經驗 {n}/{need}', atk: '品味 {n}', def: '底氣 {n}', maxHp: '聲望上限 {n}',
+      atkShort: '品 {n}', defShort: '底 {n}',        // 對決「你／他」那列的小籤（大於 0 才顯示）
+      cont: '繼續試煉 ▸', abandon: '放棄這一趟', abandonWarn: '再按一次就放棄這一趟（{where}），從頭推門。', lastSummary: '看上一趟結算',
+      retryMenu: ['▶ 再一場（這一輪只有一次）', '到這裡就好'],
+      shelfNew: '這一趟新認識'
+    },
+    // 升級三選一（第一格固定是品味或底氣；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
+    levelUp: { title: '升級：Lv {n}', sub: '聲望上限 +1（自動）', atk: '品味 +1', def: '底氣 +1', hp: '聲望上限 +2', atkSub: '只加在剋中', defSub: '最多擋一半', hpSub: '現在的聲望也 +2' },
+    // 結果行補的一句（engine outcome 的 notes；{n}＝多扣／少扣幾點）
+    notes: { atk: '品味：多扣 {n}', def: '底氣：少扣 {n}', eAtk: '他的品味：多扣 {n}', eDef: '他的底氣：少扣 {n}' }
+  };
+  C.trialTag = '新';
 
   // ===================================================================
   // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望＝sim.mjs --n 3000 校準後的值（男子固定 10、教學 18），過程見 dev/notes-X.md、dev/notes-R1.md、dev/notes-H1.md）
   //   FIXLIST 11 平衡 H5-1（手牌 5 張；主線 2026-11-08 選案，scratchpad/v4/balance/H5A/results.md）：
-  //   一般 25（社團學長、二手店老闆 20）、菁英 主理人 25／樂評 26、藏家 28——聲望 一般 ≤ 菁英 ≤ 藏家（sim HP 檢查）；你 9（engine CFG.playerHp）。
+  //   無限試煉不用這裡的 hp（照 C.trial.guestHp：12／14）；這裡的 hp 只剩直接開打的對決（?debug=1 的對決實驗室、sim S7）在用。
+  //   一般 25（社團學長、二手店老闆 20）、菁英 主理人 25／樂評 26、藏家 28——聲望 一般 ≤ 菁英 ≤ 藏家（sim HP 檢查）；一晚版你 9。
   //   手牌 3 → 5 張讓「剋不到」的手從約 19% 降到 12%，R1 的數字通關率變 87%（超過 85）、KO 60%：你 −1 聲望壓通關率（約 −7 點），
   //   客人聲望往上加把多出來的 KO 收回（59.8% → 47.8%）。社團學長、二手店老闆是最難的兩位（單場約 79%），放低到 20 讓一般客人差距 ≤20 點。
   //   出招難度（C.plannerByDepth）與唬人率（C.honesty）照 R1 不動。R1（手牌 3 張）是 你 10、一般 22（社團學長 21）、菁英 22／24、藏家 24。
   //   name：一看就知道是誰、偏好什麼的身分（FIXLIST 6，店主 2026-11-08 06:03）；原本的綽號＋副標（title）併掉，沒有 title 欄
-  //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖；只在引擎裡，不上畫面）；出招難度跟著場次走（C.plannerByDepth）
-  //   taste：三軸並列時的順序（只當並列順序）；deck：7 張真唱片（藏家 6 張＋你沒選的那張王牌，由 engine 加；男子 6 張）
+  //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖；只在引擎裡，不上畫面）；無限試煉的出招難度與說真話機率跟著位數走（C.trial.curve）
+  //   taste：三軸並列時的順序（只當並列順序）；deck：7 張真唱片（藏家 6 張＋你沒選的那張王牌，由 engine 加；男子 6 張）。無限試煉照位數換牌、加星（engine trialDeck）
   //   line：口頭禪（開場泡泡，= lines[id].line）；drop：序章男子打輸掉出來的那張
   // ===================================================================
   C.enemies = {
@@ -270,7 +322,7 @@
   //     who：''＝旁白、'老闆'、'男子'、'藏家'、'？？？'、'player'
   //     text：字串，或 { hall, pearl, heresy }＝依今晚那張（C.tonightLines）
   //     tag：'原句'（roguelike.html RPG_BEATS／TUT_EPILOGUE_BEATS 一字不差）、'店主'（owner-lines-v4.json 逐字）、'新'
-  //     if：'guessRight' 猜中、'guessWrong' 猜錯、'firstClear' 第一次通關；沒有 if 的一律播
+  //     if：'guessRight' 猜中、'guessWrong' 猜錯；沒有 if 的一律播
   //     set：開口前立即套用 { put:{id:spot}, door:'open'|'swing'|'close', notes:bool, sprite:{id:spr}, hide:{id:bool}, sil:{id:bool},
   //          pose:{id:name|null}, emote:{id:kind|null}, stamp:'主字：副字' }
   //     pre：開口前依序做完的步驟（對話框空著、不打字）；act：跟打字同時開始、依序做的步驟。▼ 等字打完而且 act 做完才亮
@@ -301,7 +353,7 @@
     speed: 54,
     // O21 選完「接受對決」（不加台詞；對話框留著老闆那句，到盤面滑進來才收，整合版面 b）：老闆帶路走到唱盤後面，兩人走到唱盤兩側；三人站定才播遇敵特效（D §3）
     toDuel: [par(walk('o', 'ref'), seq(wait(400), par(walk('f', 'duelE'), walk('p', 'duelP'))))],
-    // 再來一夜：挑完王牌，走到門邊的特價箱挑三張（§2.5.2）
+    // 再挑戰一趟：挑完王牌，走到門邊的特價箱挑三張（§2.5.2）
     toSale: [walk('p', 'sale')]
   };
 
@@ -374,22 +426,21 @@
       { id: 'E10', who: '？？？', text: '「聽說這裡有個新來的，品味不錯？」', tag: '原句', act: [walk('f', 'atdoor'), door('close')] },
       { id: 'E11', who: '', text: '無止盡的品味試煉，開始了。', tag: '原句', ui: 'map' }
     ],
-    // 02:00 打烊前，傳說藏家推門（B2＝原版 BOSS_LINES[0]；出場蓋章＝BOSS_LINES[4]）
+    // 每輪第 5 位，傳說藏家推門（B2＝原版 BOSS_LINES[0]；出場蓋章＝BOSS_LINES[4]）
     bossEnter: [
       { id: 'B1', who: '', text: '這時，門開了。', tag: '原句', set: { sprite: { f: 'boss' }, put: { f: 'door' }, hide: { f: false }, sil: { f: false }, door: 'open' } },
       { id: 'B2', who: '傳說藏家', text: '「讓我看看你的品味有幾兩重。」', tag: '原句', set: { stamp: '三十年的耳朵，不會騙人。' },
         act: [walk('f', 'atdoor'), door('close')], ui: 'duel', prompt: '▶ 品味對決' }
     ],
-    // 通關：他用過的那張王牌（你當初沒選的）翻開、播放、收進唱片櫃
-    clear: [
-      { id: 'C1', who: '傳說藏家', text: '「……這張，送你。三十年前，我也是這樣拿到的。」', tag: '新:A', ui: 'stake', music: 'stake' },
-      { id: 'C2', who: '', text: '對街新開了一間黑膠潮流館。', tag: '新', if: 'firstClear', set: { stamp: '第二夜（尚未開放）' } }
+    // 打倒傳說藏家（每一輪；原本打烊那段的送牌搬過來，主線裁定 5）：他用過的那張王牌（你當初沒選的）翻開、播放、收進唱片櫃；接著領獎、升級、下一輪
+    bossDown: [
+      { id: 'C1', who: '傳說藏家', text: '「……這張，送你。三十年前，我也是這樣拿到的。」', tag: '新:A', ui: 'stake', music: 'stake' }
     ],
-    // 散場（倒下）
+    // 散場（倒下，這一趟結束）
     dead: [
-      { id: 'D1', who: '老闆', text: '「……今晚就到這。」', tag: '新', music: { stop: 1500 } }
+      { id: 'D1', who: '老闆', text: '「……就到這裡吧。」', tag: '新', music: { stop: 1500 } }
     ],
-    // 再來一夜（≤10 秒）：門晃 → 挑王牌 → 走到特價箱挑三張（C.blocking.toSale）→ 今晚來客
+    // 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 → 走到特價箱挑三張（C.blocking.toSale）→ 來客
     again: [
       { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' },
         ui: 'acePick', prompt: '（挑一張。）' }
@@ -404,7 +455,7 @@
   var RAW_LINES = {
     owner: {
       retry: L('……再一場。', '新'),                 // 序章男子輸了（免費、不用選）
-      retryAsk: L('……要不要再一場？', '新'),         // 客人輸了：接著是「再一場／今晚到這」兩顆（COPY-07：不要連說三次「再一場」）
+      retryAsk: L('……要不要再一場？', '新'),         // 客人輸了：接著是「再一場（這一輪只有一次）／到這裡就好」兩顆（C.trial.ui.retryMenu；COPY-07：不要連說三次「再一場」）
       bagFull: L('包包滿了。先拿一張出來。', '新'),
       relicFull: L('配件最多帶三件。先放一件回去。', '新')
     },
@@ -564,19 +615,12 @@
     ],
     why: '為什麼這樣剋：冷門笑經典太大眾，經典壓得住難懂的硬蕊，硬蕊拆穿只是沒人聽過的冷門。',   // 六行下面另起一段（店主 11-12；六行一字不動）
     relics: '發燒配件：自動生效，最多帶三件。',
-    foot: ['點專輯再點屬性出牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
+    foot: ['點專輯再點屬性出牌；按住封面看唱片資訊。', '你 12 聲望，打贏回 3；客人 {normal}、傳說藏家 {boss}。']
   };
   C.rulesTag = '新';          // title／relics／foot
   C.rulesLinesTag = '店主';   // lines（六行）
-  (function () {
-    var span = function (ids) {
-      var hs = ids.map(function (id) { return C.enemies[id] ? C.enemies[id].hp : null; }).filter(function (x) { return x != null; });
-      if (!hs.length) return '';
-      var lo = Math.min.apply(null, hs), hi = Math.max.apply(null, hs);
-      return lo === hi ? String(lo) : lo + '–' + hi;
-    };
-    C.rules.hpText = { normal: span(C.normals), elite: span(C.elites), boss: span([C.boss]) };
-  })();
+  // hpText：無限試煉的客人聲望（C.trial.guestHp；頁尾 {normal}／{elite}／{boss}）
+  C.rules.hpText = { normal: String(C.trial.guestHp.normal), elite: String(C.trial.guestHp.elite), boss: String(C.trial.guestHp.boss) };
 
   // ===================================================================
   // 序章男子那場的教學（§2.2.10）。A1 寫規則資料：hp／plays／hints／lessons／script／expect；B2（第二波）寫 steps／learned／ui。
@@ -692,7 +736,7 @@
   });
 
   // ===================================================================
-  // 店裡熱點的一句話、今晚來客、台北地圖預告（ui.js 讀這些鍵，沒有的鍵就不出那句）。來源標記在 shopLineTags（同形狀）。
+  // 店裡熱點的一句話、來客、台北地圖預告（ui.js 讀這些鍵，沒有的鍵就不出那句）。來源標記在 shopLineTags（同形狀）。
   // ===================================================================
   var RAW_SHOP = {
     cat: L('……喵。', '新'),
@@ -702,11 +746,11 @@
     ownerHint: {
       title: L('外面雨大，進來坐。', '新'),
       scene: L('慢慢看，不趕你。', '新'),
-      night: L('今晚的客人，一個一個來。', '新'),
+      night: L('客人一個一個來。', '新'),
       duel: L('先看提示那句。', '新'),
       reward: L('收好，別折到封套。', '新')
     },
-    nightIntro: [L('今晚的客人，一個一個來。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
+    nightIntro: [L('客人一個一個來，打到輸為止。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
     boothEmpty: L('唱片櫃還空著。贏一場再來聽。', '新'),
@@ -741,19 +785,19 @@
     bargainTake: '收下這三張',
     bargainBuy: '買下 ${n}',                                      // {n}＝挑的那幾張特價加起來（engine.bargainPriceOf；每張 $100／200／300）
     bargainEach: '${n}',                                          // 特價箱每張封面下的價（engine.bargainPriceOf）
-    bargainEmpty: '特價區今晚賣完了。',
+    bargainEmpty: '特價區賣完了，下一輪再補。',
     close: '關閉',
     earned: '+${n}',
     // B3 econ.js 用到的字（notes-B3 請求 7；econ.js 有同字後備）
     bag: '包包 {n}/{max}',
-    binEmpty: '這一箱今晚賣完了。',
+    binEmpty: '這一箱賣完了，下一輪再補。',
     owned: '包包裡有了',
     bagFullN: '包包放不下：先賣 {k} 張，半價 ${n}',
     moneyShort: '錢不夠：先賣一張，半價 ${n}',
     sellFirst: '先賣一張',
     relicSell: '賣這件',
     relicSold: '「{name}」賣掉，+${n}',
-    relicEmpty: '櫃檯今晚的配件賣完了。',
+    relicEmpty: '櫃檯的配件賣完了，下一輪再補。',
     relicMoneyShort: '錢不夠：先賣一件，半價 ${n}',
     relicSellFirst: '先賣一件',
     bargainHint: '挑一到三張',                                     // 特價箱（之後買）還沒挑時的鈕
@@ -764,12 +808,10 @@
   };
   C.shopUiTag = '新';
 
-  // 結算三件事
-  C.summary = { reached: '走到 {time}', wins: '贏了 {n} 位', taken: '收了', none: '這晚沒收唱片', again: '再來一夜' };
+  // 結算（這一趟結束）：「走到第 23 位・最多連贏 12 位・收了 9 張」（店主 11-12）；標題畫面的紀錄「最遠：第 23 位」
+  C.summary = { title: '試煉結束', reached: '走到第 {n} 位', streak: '最多連贏 {n} 位', taken: '收了 {n} 張', wins: '贏了 {n} 位', none: '這一趟沒收唱片',
+    best: '最遠：第 {n} 位', newRecord: '新紀錄', checkpoints: '中繼點：第 {list} 位', again: '再挑戰一趟' };
   C.summaryTag = '新';
-
-  // 第一次通關後的剪影預告
-  C.secondNight = { name: '增值哥', title: '對街潮流館', line: '對街新開了一間黑膠潮流館。', label: '第二夜（尚未開放）', tag: '新' };
 
   // ===================================================================
   // 新玩家沒有 DipChar 時的名字與造型（roguelike.html RANDOM_NAMES 去掉敵人用掉的 8 個）

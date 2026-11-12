@@ -1,4 +1,4 @@
-// game-lab/test/engine.test.mjs — v4 engine unit / property tests (SPEC-v4 §5.1 A1 列 #1–#14).  Plain node script:
+// game-lab/test/engine.test.mjs — v4 engine unit / property tests (SPEC-v4 §5.1 A1 列 #1–#14)＋無限試煉（v5 SPEC 無限試煉 §0–§2：#2 #3 #4 #8 #9 #10 改成整趟、#16 曲線與升級）.  Plain node script:
 //   node game-lab/test/engine.test.mjs [--quick]
 // Exits 1 on any failure.  Uses the real content.js (cards.js, bins.js).
 //   第一波：A3 還沒烘 v4 的新卡（cards.js 沒有的卡）時，用下面 STUB 表的星數補一張只有星數的假卡（只在測試裡）；
@@ -91,11 +91,17 @@ const BP3 = [C.bargain.pool[0], C.bargain.pool[3], C.bargain.pool[6]];     // �
 const relicObjs = rs => rs.map(r => typeof r === 'string' ? EN.relicObj(r, C) : r);
 const HEADPHONE_ON = Object.assign({}, C.relics.headphone, { v4: true });
 function pDefFor(tier, o = {}) {
-  return { hp: o.hp, bag: (o.bag || [...C.gifts[tier], ...BP3]).map(card), ace: o.noAce ? null : card(C.aces[tier]), relics: relicObjs(o.relics || []) };
+  return { hp: o.hp, maxHp: o.maxHp, atk: o.atk | 0, def: o.def | 0, noteText: C.trial.notes,
+    bag: (o.bag || [...C.gifts[tier], ...BP3]).map(card), ace: o.noAce ? null : card(C.aces[tier]), relics: relicObjs(o.relics || []) };
 }
+// 無限試煉：讓 id 站在類別對得上的位數（一般第 1–3 位、菁英第 4、藏家第 5，往後再推 0–7 輪）；序章男子沒有位數
+function posFor(id, s) { const e = C.enemies[id]; if (!e || e.prologue) return undefined; const k = s % 8; return 5 * k + (e.boss ? 5 : e.elite ? 4 : 1 + (s % 3)); }
+// o.pos：無限試煉那位（曲線的聲望／品味／底氣／難度／說真話、trialDeck 的牌、他帶的王牌）；沒給＝直接開打（content 的聲望與牌單、藏家帶王牌）
 function startFor(id, tier, seed, o = {}) {
-  const eDef = Object.assign(EN.enemyDef(C, id, { tutorial: !!o.tutorial, depth: o.depth }), o.eOver || {});
-  return EN.startDuel(pDefFor(tier, o), eDef, { seed, enemyAce: eDef.boss ? card(C.aces[otherTier(tier, seed)]) : null, script: o.script || null, hintTable: HINTS });
+  const trial = o.pos != null;
+  const eDef = Object.assign(EN.enemyDef(C, id, trial ? { pos: o.pos, seedKey: o.seedKey || ('tst-' + seed), runNo: o.runNo || 1, playerAce: tier, bossAce: o.bossAce || otherTier(tier, seed) } : { tutorial: !!o.tutorial }), o.eOver || {});
+  const enemyAce = eDef.ace || (eDef.boss && !trial ? card(C.aces[otherTier(tier, seed)]) : null);
+  return EN.startDuel(pDefFor(tier, o), eDef, { seed, enemyAce, script: o.script || null, hintTable: HINTS });
 }
 // cards are never mutated by the rules → a structural clone that shares card objects is enough (fast)
 function fastClone(st) {
@@ -105,6 +111,7 @@ function fastClone(st) {
     e: { ...E, pile: E.pile.slice(), hand: E.hand.slice(), thrown: E.thrown.slice(), deckIds: E.deckIds.slice() } };
 }
 const clashOf = evs => evs.find(e => e.t === 'clash');
+const sameSet = (a, b) => JSON.stringify([...a].sort()) === JSON.stringify([...b].sort());
 const sig = r => r && { kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, notes: r.notes || [] };
 function lcg(s) { s = s >>> 0; return () => (s = (Math.imul(s, 1103515245) + 12345) >>> 0) / 4294967296; }
 function play(d, pol, R, mem = {}, max = 40) { const evs = []; let g = 0; while (!d.over && g++ < max) { const act = EN.policies[pol](d, R, mem, C); ok(EN.isLegal(d, act), 'policy ' + pol + ' legal', act); evs.push(...EN.resolveTurn(d, act)); } return evs; }
@@ -123,11 +130,11 @@ const relicSet = s => {
 };
 
 // =====================================================================================================
-section('1 preview === resolve（10 客人 × 3 王牌 × 400 種子；每一手每一個合法動作；配件組合）', () => {
+section('1 preview === resolve（10 客人 × 3 王牌 × 400 種子；每一手每一個合法動作；配件組合；無限試煉的品味／底氣兩邊都有）', () => {
   const seeds = QUICK ? 40 : 400;
-  let checked = 0;
+  let checked = 0, statNotes = 0;
   for (const id of ENEMY_IDS) for (const tier of TIERS) for (let s = 1; s <= seeds; s++) {
-    const { duel } = startFor(id, tier, s * 7919 + 13, { relics: relicSet(s), depth: s % 5 });
+    const { duel } = startFor(id, tier, s * 7919 + 13, { relics: relicSet(s), pos: s % 4 ? posFor(id, s) : undefined, atk: s % 3, def: (s >> 2) % 3 });
     const R = lcg(s);
     let g = 0;
     while (!duel.over && g++ < 12) {
@@ -140,6 +147,7 @@ section('1 preview === resolve（10 客人 × 3 王牌 × 400 種子；每一手
         if (!ok(!!pv && !!cl, 'preview/resolve exist', { id, tier, s })) continue;
         if (JSON.stringify(sig(pv)) !== JSON.stringify(sig(cl))) ok(false, 'preview === clash', { id, tier, s, n: duel.n, act, want: sig(pv), got: sig(cl) });
         else pass++;
+        if (pv && pv.notes.some(n => n.stat)) statNotes++;
         checked++;
       }
       ok(JSON.stringify(duel) === before, 'preview is pure (state unchanged)', { id, tier, s, n: duel.n });
@@ -147,40 +155,82 @@ section('1 preview === resolve（10 客人 × 3 王牌 × 400 種子；每一手
     }
     ok(!!duel.over && duel.n <= CFG.maxRounds, 'duel ends within 6 hands', { id, tier, s, n: duel.n });
   }
-  console.log('     ' + checked + ' action previews checked');
+  ok(statNotes > 1000, 'previews with 品味／底氣 notes exercised', statNotes);
+  console.log('     ' + checked + ' action previews checked (' + statNotes + ' with 品味／底氣 notes)');
 });
 
-section('2 誠實度：每一級 ≥60,000 手照實比例＝q±0.01；ace／script／headphone 100% 照實；唬人出 BEATS[提示]；王牌不變式', () => {
-  const target = QUICK ? 12000 : 60000;
-  const LV = { honest: ['man'], sometimes: C.normals, often: C.elites, veteran: [C.boss] };
+// 無限試煉的說真話機率（SPEC §0：舊版虛晃率 oldQ；第 13 位起封底 0.45）——測試自己照 curves.cjs 寫一份，不讀 engine
+const oldQ = d => (d < 3 ? 1 : d < 5 ? 0.85 : 1 - Math.min(0.55, 0.18 + 0.05 * Math.max(0, d - 5)));
+const mercyOfT = st => { const P = st.p, E = st.e, pR = Math.max(0, P.hp) / (P.max || 1), eR = Math.max(0, E.hp) / (E.max || 1); let m = Math.max(0, eR - pR) * 1.3; if (P.hp <= 3) m += 0.35; return Math.min(1, m); };
+const idsAt = pos => { const c = EN.classAt(pos); return c === 'boss' ? [C.boss] : c === 'elite' ? C.elites : C.normals; };
+section('2 誠實度：無限試煉每一位 q＝舊版虛晃率（mercy 關 ±0.01）；放水：照實率＝Σ qNow（±0.01）；直接開打照 C.honesty；ace／script／headphone 100% 照實；唬人出 BEATS[提示]；王牌不變式', () => {
+  const POS = QUICK ? [1, 4, 6, 13] : [1, 2, 3, 4, 5, 6, 8, 10, 12, 13, 20];
+  const target = QUICK ? 12000 : 30000;
   const whyN = {};
-  for (const [lv, ids] of Object.entries(LV)) {
-    let hands = 0, honest = 0, aceThrows = 0;
-    for (let s = 1; hands < target; s++) {
-      const id = ids[s % ids.length], tier = TIERS[s % 3];
-      const { duel } = startFor(id, tier, s * 31 + 7 + lv.length, { depth: s % 5 });
-      const R = lcg(s * 3 + 1);
+  // (a) mercy 關：照實比例＝trialGuest(pos).q＝oldQ(pos)
+  try {
+    CFG.mercy = false;
+    for (const pos of POS) {
+      const ids = idsAt(pos), q = oldQ(pos);
+      ok(Math.abs(EN.trialGuest(C, pos, EN.classAt(pos)).q - q) < 1e-9, 'trialGuest q = oldQ at ' + pos);
+      let hands = 0, honest = 0;
+      for (let s = 1; hands < target; s++) {
+        const id = ids[s % ids.length], tier = TIERS[s % 3];
+        const { duel } = startFor(id, tier, s * 31 + 7 + pos, { pos, atk: s % 2, def: s % 3 === 0 ? 1 : 0 });
+        ok(Math.abs(duel.e.q - q) < 1e-9, 'duel q = curve q');
+        const R = lcg(s * 3 + 1);
+        while (!duel.over) {
+          const pl = duel.plan, eCard = duel.e.hand[pl.idx];
+          whyN[pl.why] = (whyN[pl.why] || 0) + 1;
+          if (pl.why === 'honest' || pl.why === 'bluff') { hands++; if (pl.why === 'honest') honest++; }
+          if (pl.why === 'bluff') { if (pl.attr !== BEATS[pl.hint.attr] || pl.bluff !== true || eCard.tier) ok(false, 'bluff plays BEATS[hint] and never the ace', pl); else pass++; }
+          else if (pl.attr !== pl.hint.attr || pl.bluff) ok(false, pl.why + ' → honest', pl);
+          if (pl.why === 'ace' && !(eCard.tier && pl.hint.attr === EN.aceAxis(eCard))) ok(false, 'why ace → plays the ace on its axis', pl);
+          const cl = clashOf(EN.resolveTurn(duel, EN.policies.random(duel, R)));
+          if (cl.eCard !== eCard || cl.eAttr !== pl.attr || cl.bluff !== pl.bluff) ok(false, 'clash shows the planned play', { pl, eAttr: cl.eAttr });
+          if (cl.eCard.tier && (cl.hint.attr !== EN.aceAxis(cl.eCard) || cl.bluff)) ok(false, 'ace thrown → hint is its axis, no bluff', cl.hint);
+        }
+      }
+      const f = honest / hands;
+      ok(Math.abs(f - q) <= 0.01, 'honest rate (mercy off) at pos ' + pos + ' = ' + q + ' ± 0.01', f.toFixed(4));
+      console.log('     pos ' + pos + ' (' + EN.classAt(pos) + '): honest ' + f.toFixed(4) + ' (q ' + q + ') over ' + hands + ' hands, mercy off');
+    }
+    // (c) 直接開打（沒有位數）：照 C.honesty（mercy 關）
+    const LV = { honest: ['man'], sometimes: C.normals, often: C.elites, veteran: [C.boss] };
+    for (const [lv, ids] of Object.entries(LV)) {
+      let hands = 0, honest = 0;
+      for (let s = 1; hands < target; s++) {
+        const { duel } = startFor(ids[s % ids.length], TIERS[s % 3], s * 37 + lv.length);
+        const R = lcg(s * 5 + 2);
+        while (!duel.over) { const w = duel.plan.why; if (w === 'honest' || w === 'bluff') { hands++; if (w === 'honest') honest++; } EN.resolveTurn(duel, EN.policies.random(duel, R)); }
+      }
+      ok(Math.abs(honest / hands - C.honesty[lv].q) <= 0.012, 'direct duel honest rate ' + lv + ' = ' + C.honesty[lv].q, (honest / hands).toFixed(4));
+    }
+  } finally { CFG.mercy = true; }
+  // (b) 放水（mercy 開）：這手的 qNow＝1−(1−q)(1−0.8·mercy)（只有 normal／hard）；照實手數＝Σ qNow（±0.01）；你落後時他確實少唬
+  for (const pos of POS.filter(p => p >= 3)) {
+    const ids = idsAt(pos), q = oldQ(pos);
+    let hands = 0, honest = 0, sumQ = 0, behind = 0;
+    for (let s = 1; hands < target / 2; s++) {
+      const { duel } = startFor(ids[s % ids.length], TIERS[s % 3], s * 41 + 3 + pos, { pos, hp: 4 + (s % 9), maxHp: 12 });
+      const R = lcg(s * 7 + 5);
       while (!duel.over) {
-        const pl = duel.plan, eCard = duel.e.hand[pl.idx];
-        whyN[pl.why] = (whyN[pl.why] || 0) + 1;
-        if (pl.why === 'honest' || pl.why === 'bluff') { hands++; if (pl.why === 'honest') honest++; }
-        if (pl.why === 'bluff') { if (pl.attr !== BEATS[pl.hint.attr] || pl.bluff !== true || eCard.tier) ok(false, 'bluff plays BEATS[hint] and never the ace', pl); else pass++; }
-        else if (pl.attr !== pl.hint.attr || pl.bluff) ok(false, pl.why + ' → honest', pl);
-        if (pl.why === 'ace' && !(eCard.tier && pl.hint.attr === EN.aceAxis(eCard))) ok(false, 'why ace → plays the ace on its axis', pl);
-        const cl = clashOf(EN.resolveTurn(duel, EN.policies.random(duel, R)));
-        if (cl.eCard !== eCard || cl.eAttr !== pl.attr || cl.bluff !== pl.bluff) ok(false, 'clash shows the planned play', { pl, eAttr: cl.eAttr });
-        if (cl.eCard.tier) { aceThrows++; if (cl.hint.attr !== EN.aceAxis(cl.eCard) || cl.bluff) ok(false, 'ace thrown → hint is its axis, no bluff', cl.hint); }
+        const pl = duel.plan, v = EN.view(duel), m = mercyOfT(duel), want = 1 - (1 - q) * (1 - C.trial.curve.mercyFeint * m);
+        if (Math.abs(v.honesty.qNow - want) > 1e-9) ok(false, 'view.honesty.qNow = 1−(1−q)(1−0.8·mercy)', { qNow: v.honesty.qNow, want, m }); else pass++;
+        if (pl.why === 'honest' || pl.why === 'bluff') { hands++; sumQ += want; if (pl.why === 'honest') honest++; if (m > 0) behind++; }
+        EN.resolveTurn(duel, EN.policies.random(duel, R));
       }
     }
-    const q = C.honesty[lv].q, f = honest / hands;
-    ok(Math.abs(f - q) <= 0.01, 'honest rate ' + lv + ' = ' + q + ' ± 0.01', f.toFixed(4));
-    console.log('     ' + lv + ': honest ' + f.toFixed(4) + ' (q ' + q + ') over ' + hands + ' hands' + (aceThrows ? '; ace thrown ' + aceThrows : ''));
+    ok(Math.abs(honest - sumQ) / hands <= 0.01, 'honest rate (mercy on) at pos ' + pos + ' = mean qNow ± 0.01', { f: (honest / hands).toFixed(4), qNow: (sumQ / hands).toFixed(4) });
+    ok(q === 1 || (sumQ / hands > q + 0.01 && behind > hands / 4), 'mercy on: he bluffs less when you are behind (pos ' + pos + ')', { qNow: (sumQ / hands).toFixed(4), q, behind, hands });
   }
-  // 王牌不變式：藏家 × 3 王牌 × ≥20,000 場
-  const games = QUICK ? 1500 : 20000;
+  // 王牌不變式：藏家（第 5、10、15 位）× 3 王牌
+  const games = QUICK ? 1500 : 12000;
   let aceHands = 0, bluffHands = 0;
   for (const tier of TIERS) for (let s = 1; s <= games; s++) {
-    const { duel } = startFor('boss', tier, s * 911 + 3, { depth: 4 });
+    const pos = 5 * (1 + (s % 3));
+    const { duel } = startFor('boss', tier, s * 911 + 3, { pos });
+    ok(duel.e.deckIds.length === 7 && duel.e.deckIds.includes(C.aces[otherTier(tier, s * 911 + 3)]), 'trial boss: 6 + the ace you did not pick');
     const R = lcg(s + 17);
     while (!duel.over) {
       const cl = clashOf(EN.resolveTurn(duel, EN.policies.random(duel, R)));
@@ -197,32 +247,54 @@ section('2 誠實度：每一級 ≥60,000 手照實比例＝q±0.01；ace／scr
   }
   let hp1 = 0, hpLater = 0;
   for (let s = 1; s <= 400; s++) {
-    const { duel } = startFor('copycat', TIERS[s % 3], s, { relics: [HEADPHONE_ON], eOver: { q: 0 } });
+    const { duel } = startFor('copycat', TIERS[s % 3], s, { relics: [HEADPHONE_ON], eOver: { q: 0, qMercy: 0 } });
     ok(duel.plan.why === 'headphone' && !duel.plan.bluff, 'headphone (v4 on) → first hand honest', duel.plan);
     if (duel.plan.why === 'headphone') hp1++;
     EN.resolveTurn(duel, EN.legalActions(duel)[0]);
     if (!duel.over) { if (duel.plan.why === 'bluff') hpLater++; ok(duel.plan.why !== 'headphone', 'headphone only on hand 1'); }
-    const off = startFor('copycat', TIERS[s % 3], s, { relics: ['headphone'], eOver: { q: 0 } }).duel;
+    const off = startFor('copycat', TIERS[s % 3], s, { relics: ['headphone'], eOver: { q: 0, qMercy: 0 } }).duel;
     ok(off.plan.why === 'bluff', 'headphone (v4 off) does nothing', off.plan.why);
   }
   ok(hp1 === 400 && hpLater > 300, 'headphone counts', { hp1, hpLater });
 });
 
-section('3 決定性：同種子同動作 → 同事件；每手 RNG 固定 8 次；mercy=false 次數不變、結果不同', () => {
+section('3 決定性：同種子同動作 → 同事件；每手 RNG 固定 8 次（無限試煉的換牌／加星／客人王牌不碰對決亂數）；mercy=false 次數不變、結果不同；客人照 seedKey#runNo#pos', () => {
   for (let s = 1; s <= 120; s++) {
-    const id = ENEMY_IDS[s % 10], tier = TIERS[s % 3];
-    const a = startFor(id, tier, s * 101, { depth: s % 5 }), b = startFor(id, tier, s * 101, { depth: s % 5 });
+    const id = ENEMY_IDS[s % 10], tier = TIERS[s % 3], o = { pos: posFor(id, s), atk: s % 2, def: s % 3 ? 0 : 1 };
+    const a = startFor(id, tier, s * 101, o), b = startFor(id, tier, s * 101, o);
     eq(a.events, b.events, 'start events equal');
     const ea = play(a.duel, 'thoughtful', lcg(s)), eb = play(b.duel, 'thoughtful', lcg(s));
     eq(ea, eb, 'event streams equal ' + id);
     eq(a.duel, b.duel, 'final state equal');
   }
-  const r1 = EN.newRun(C, { seedKey: '2026-11-07', nightNo: 1, ace: 'hall' }), r2 = EN.newRun(C, { seedKey: '2026-11-07', nightNo: 1, ace: 'pearl' });
+  const r1 = EN.newRun(C, { seedKey: '2026-11-07', runNo: 1, ace: 'hall' }), r2 = EN.newRun(C, { seedKey: '2026-11-07', runNo: 1, ace: 'pearl' });
   eq(r1.order, r2.order, 'same date → same guests whatever the ace');
+  for (let rd = 2; rd <= 12; rd++) eq(EN.jumpTo(r1, C, 5 * rd - 4).order, EN.jumpTo(r2, C, 5 * rd - 4).order, 'round ' + rd + ': same guests whatever the ace');
+  // 客人（牌、加星、王牌）＝seedKey#runNo#pos 的雜湊：同樣三個 → 一模一樣；跟對決種子、run.rng 走到哪無關
+  let diffPos = 0, diffRun = 0;
+  for (let s = 1; s <= 200; s++) {
+    const id = [...C.normals, ...C.elites, C.boss][s % 9], pos = posFor(id, s) + 20, o = { seedKey: 'det-' + (s % 7), runNo: 1 + (s % 3), playerAce: TIERS[s % 3], bossAce: otherTier(TIERS[s % 3], s) };
+    const a = EN.trialDeck(C, id, pos, o), b = EN.trialDeck(C, id, pos, Object.assign({}, o));
+    eq(a, b, 'trialDeck deterministic ' + id + '@' + pos);
+    if (JSON.stringify(EN.trialDeck(C, id, pos + 5, o).deck.map(c => c.id)) !== JSON.stringify(a.deck.map(c => c.id))) diffPos++;
+    if (JSON.stringify(EN.trialDeck(C, id, pos, Object.assign({}, o, { runNo: o.runNo + 1 })).deck.map(c => c.id)) !== JSON.stringify(a.deck.map(c => c.id))) diffRun++;
+    const po = { pos, seedKey: o.seedKey, runNo: o.runNo, bossAce: o.bossAce };
+    const d1 = startFor(id, o.playerAce, s * 3, po).duel, d2 = startFor(id, o.playerAce, s * 3 + 999, po).duel;
+    eq(d1.e.deckIds.slice().sort(), a.deck.map(c => c.id).concat(a.ace ? [a.ace.id] : []).sort(), 'duel deck = trialDeck (+ his ace)');
+    eq(d1.e.deckIds.slice().sort(), d2.e.deckIds.slice().sort(), 'his deck does not depend on the duel seed');
+  }
+  ok(diffPos > 50 && diffRun > 50, 'another position／another run → other replacements', { diffPos, diffRun });
+  { const ra = EN.newRun(C, { seedKey: 'rng-free', runNo: 2, ace: 'heresy' }), rb = JSON.parse(JSON.stringify(ra));
+    for (const r of [ra, rb]) { EN.choose(r, C, EN.bargainPolicy(r, C)); EN.jumpTo(r, C, 17); }
+    rb.rng = (rb.rng + 12345) | 0;                                   // run.rng 走到別處（多打了幾場、說情…）
+    const fa = EN.startFight(ra, C, {}), fb = EN.startFight(rb, C, {});
+    eq([fa.enemyId, fa.duel.e.deckIds.slice().sort(), fa.duel.e.hp, fa.duel.e.atk, fa.duel.e.def, fa.duel.e.q], [fb.enemyId, fb.duel.e.deckIds.slice().sort(), fb.duel.e.hp, fb.duel.e.atk, fb.duel.e.def, fb.duel.e.q], 'same seedKey#runNo#pos → same guest whatever run.rng');
+    ok(JSON.stringify(fa.duel.e.pile) !== JSON.stringify(fb.duel.e.pile) || fa.duel.rng !== fb.duel.rng, 'the duel itself still uses run.rng'); }
   // RNG：beginHand 每手 8 次；resolveTurn 沒洗牌時＝8 次（男子、客人、教學）
   const count = (d) => { const c = JSON.parse(JSON.stringify(d)); c.plan = null; c.n--; const b = c.rng; EN.beginHand(c, []); return rngCalls(b, c.rng); };
   let measured = 0;
-  const kinds = [['man', {}], ['copycat', { depth: 0 }], ['label', { depth: 3 }], ['boss', { depth: 4 }], ['man', { tutorial: true, script: C.tutorial.script.hall }]];
+  const kinds = [['man', {}], ['copycat', { pos: 1 }], ['label', { pos: 4 }], ['boss', { pos: 5 }], ['skip', { pos: 12, atk: 2, def: 1 }], ['critic', { pos: 29 }], ['boss', { pos: 40, atk: 3 }],
+    ['buyer', {}], ['man', { tutorial: true, script: C.tutorial.script.hall }]];
   for (const [id, o] of kinds) for (let s = 1; s <= 60; s++) {
     const { duel } = startFor(id, o.script ? 'hall' : TIERS[s % 3], s * 13, o);
     const R = lcg(s);
@@ -239,8 +311,8 @@ section('3 決定性：同種子同動作 → 同事件；每手 RNG 固定 8 �
   let diff = 0;
   try {
     for (let s = 1; s <= 300; s++) {
-      CFG.mercy = true; const a = startFor('critic', TIERS[s % 3], s * 5, { depth: 3 }).duel;
-      CFG.mercy = false; const b = startFor('critic', TIERS[s % 3], s * 5, { depth: 3 }).duel;
+      CFG.mercy = true; const a = startFor('critic', TIERS[s % 3], s * 5, { pos: 9 }).duel;
+      CFG.mercy = false; const b = startFor('critic', TIERS[s % 3], s * 5, { pos: 9 }).duel;
       const Ra = lcg(s), Rb = lcg(s);
       while (!a.over && !b.over) {
         if (a.plan.hint.attr !== b.plan.hint.attr) diff++;
@@ -254,13 +326,13 @@ section('3 決定性：同種子同動作 → 同事件；每手 RNG 固定 8 �
   ok(diff > 0, 'mercy=false changes some plans', diff);
 });
 
-// 一晚的推進器（sim／整晚測試共用）：bargainPick → (shop → fight → finish → reward…)
-function nightStep(run, pol, mode, R, log, mem) {
+// 一趟的推進器（整趟測試共用）：bargainPick → (shop → fight → finish → reward → level…)；maxPos：打到第幾位就停（無限試煉不會自己結束）
+function runStep(run, pol, mode, R, log, mem, maxPos = 1e9) {
   if (run.over && !run.pending) return false;
   if (EN.canBargainPick(run) && !run.duel && !run.pending) { const ch = EN.bargainPolicy(run, C); const r = EN.choose(run, C, ch); ok(r.ok, 'bargainPick ok', r.error); log.push(['bp', ch.ids]); return true; }
   const step = EN.nextStep(run);
-  if (step === 'reward' || step === 'retry') { const ch = EN.runPolicy(run, C); const r = EN.choose(run, C, ch); ok(r.ok, 'runPolicy choice ok', { ch, err: r.error }); log.push([step, ch, r.ok]); return true; }
-  if (!step) return false;
+  if (step === 'reward' || step === 'retry' || step === 'level') { const ch = EN.runPolicy(run, C); const r = EN.choose(run, C, ch); ok(r.ok, 'runPolicy choice ok', { ch, err: r.error }); log.push([step, ch, r.ok]); return true; }
+  if (!step || run.pos > maxPos) return false;
   if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, mode)) { ok(ch.sellId == null || !EN.isGift(run, C, ch.sellId), 'shopPolicy never sells a gift', ch); const r = EN.choose(run, C, ch); ok(r.ok, 'shopPolicy choice ok', { ch, err: r.error }); log.push(['shop', ch]); }
   ok(run.money >= 0, 'money ≥ 0', run.money);
   const f = EN.startFight(run, C, {});
@@ -271,12 +343,12 @@ function nightStep(run, pol, mode, R, log, mem) {
   ok(run.money >= 0, 'money ≥ 0', run.money);
   return true;
 }
-function playNight(run, pol, mode, R, log = [], max = 200) { let g = 0; const mem = {}; while (g++ < max && nightStep(run, pol, mode, R, log, mem)); return log; }
+function playRun(run, pol, mode, R, log = [], maxPos = 25, max = 2000) { let g = 0; const mem = {}; while (g++ < max && runStep(run, pol, mode, R, log, mem, maxPos)); return log; }
 
-section('4 存讀檔：對決打到一半、run 打到一半（含 money、shop）JSON 存讀後接著打，事件一模一樣', () => {
+section('4 存讀檔：對決打到一半、run 打到一半（含 money、shop、聲望、等級、位數）JSON 存讀後接著打，事件一模一樣', () => {
   for (let s = 1; s <= 150; s++) {
     const id = ENEMY_IDS[s % 10], tier = TIERS[s % 3];
-    const { duel } = startFor(id, tier, s * 977, { relics: relicSet(s), depth: s % 5 });
+    const { duel } = startFor(id, tier, s * 977, { relics: relicSet(s), pos: posFor(id, s), atk: s % 2, def: s % 3 ? 1 : 0, hp: 8 + (s % 5), maxHp: 14 });
     const R = lcg(s);
     for (let k = 0; k < 2 && !duel.over; k++) EN.resolveTurn(duel, EN.policies.novice(duel, R, {}, C));
     if (duel.over) continue;
@@ -286,14 +358,14 @@ section('4 存讀檔：對決打到一半、run 打到一半（含 money、shop�
     eq(EN.view(duel), EN.view(saved), 'resumed view equal');
   }
   for (let s = 1; s <= (QUICK ? 10 : 40); s++) {
-    const run = EN.newRun(C, { seedKey: 'save-' + s, nightNo: 1 + (s % 2), ace: TIERS[s % 3] });
+    const run = EN.newRun(C, { seedKey: 'save-' + s, runNo: 1 + (s % 2), ace: TIERS[s % 3] });
     const R = lcg(s), log = [];
-    for (let k = 0; k < 4 + (s % 4); k++) nightStep(run, 'thoughtful', 'smart', R, log, {});
+    for (let k = 0; k < 6 + (s % 9) * 3; k++) runStep(run, 'thoughtful', 'smart', R, log, {});
     const saved = JSON.parse(JSON.stringify(run));
-    ok(saved.v === 4 && typeof saved.money === 'number' && saved.shop && saved.shop.bins, 'run JSON has v4 money and shop');
-    const la = playNight(run, 'thoughtful', 'smart', lcg(s + 5)), lb = playNight(saved, 'thoughtful', 'smart', lcg(s + 5));
-    eq(la, lb, 'resumed night log equal');
-    eq(run, saved, 'resumed night end state equal');
+    ok(saved.v === 5 && typeof saved.money === 'number' && saved.shop && saved.shop.bins && Number.isInteger(saved.pos) && Number.isInteger(saved.hp) && Number.isInteger(saved.level), 'run JSON has v5 money, shop, pos, hp, level');
+    const la = playRun(run, 'thoughtful', 'smart', lcg(s + 5), [], 16), lb = playRun(saved, 'thoughtful', 'smart', lcg(s + 5), [], 16);
+    eq(la, lb, 'resumed run log equal');
+    eq(run, saved, 'resumed run end state equal');
   }
 });
 
@@ -375,13 +447,13 @@ section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一
   eq([EN.hpPct(6, 10), EN.hpPct(9, 18), EN.hpPct(-3, 10), EN.hpPct(7, 15)], [60, 50, 0, 47], 'hpPct');
   eq([EN.pctPair(6, 10, 9, 18), EN.pctPair(9, 10, 28, 31), EN.pctPair(5, 10, 15, 30), EN.pctPair(-1, 10, 3, 30)],
     [{ p: '60', e: '50' }, { p: '90.0', e: '90.3' }, { p: '50', e: '50' }, { p: '0', e: '10' }], 'pctPair: integers unless they would hide the winner');
-  // 你 9／10、客人 12–40：pctPair 顯示的大小永遠跟 playerAhead 一致（一樣大 ⇔ 真的一樣大）
-  for (const P of [9, 10]) for (let E = 12; E <= 40; E++) for (let e = 0; e <= E; e++) for (let p = 0; p <= P; p++) {
+  // 你 9–30（無限試煉：12 起、升級加上限）、客人 12–40：pctPair 顯示的大小永遠跟 playerAhead 一致（一樣大 ⇔ 真的一樣大）
+  for (const P of [9, 10, 12, 13, 15, 18, 21, 30]) for (let E = 12; E <= 40; E++) for (let e = 0; e <= E; e++) for (let p = 0; p <= P; p++) {
     const t = EN.pctPair(p, P, e, E), a = EN.playerAhead(p, P, e, E), b = EN.playerAhead(e, E, p, P);
     const shown = +t.p > +t.e ? 'p' : +t.p < +t.e ? 'e' : 'tie', real = a && b ? 'tie' : a ? 'p' : 'e';
     if (shown !== real) ok(false, 'pctPair consistent', { p, e, E, t }); else pass++;
   }
-  // 這一段的比例照「你 10」寫（6/10 vs 9/18…）：明確給你 10，跟 CFG.playerHp（現在 9）無關；最後一個 g 才用 CFG.playerHp
+  // 這一段的比例照「你 10」寫（6/10 vs 9/18…）：明確給你 10，跟 CFG.playerHp（現在 12）無關；最後一個 g 才用 CFG.playerHp
   const T = { debugOutcome: { kind: 'tie', toE: 0, toP: 0 } }, E10 = { hp: 10, eOver: { hp: 10 } }, Y10 = { hp: 10 };
   for (let s = 1; s <= 30; s++) {
     const { duel } = startFor('copycat', TIERS[s % 3], s, E10);
@@ -398,9 +470,9 @@ section('6 六手上限：比聲望條剩幾成（一樣算你贏）；落後一
     EN.resolveTurn(c, EN.legalActions(c)[0], { debugOutcome: { kind: 'mirrorLose', toE: 0, toP: 1 } });
     for (let k = 0; k < 4; k++) EN.resolveTurn(c, EN.legalActions(c)[0], T);
     ok(c.over && c.over.win === true, 'level after 6 → you win', c.over);
-    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 客人聲望 25 > 你 9：六手都 tie → 兩邊都滿條（100%＝100%）→ 你贏（舊規則比絕對值是他贏）
+    const g = startFor('copycat', TIERS[s % 3], s).duel;     // 直接開打：客人聲望 25 > 你 12：六手都 tie → 兩邊都滿條（100%＝100%）→ 你贏（舊規則比絕對值是他贏）
     const ge = []; for (let k = 0; k < 6; k++) ge.push(...EN.resolveTurn(g, EN.legalActions(g)[0], T));
-    ok(g.over && g.over.by === 'rounds' && g.over.win === true, 'rounds compare the bar (9/9 = 25/25 → you win)', g.over);
+    ok(g.over && g.over.by === 'rounds' && g.over.win === true, 'rounds compare the bar (12/12 = 25/25 → you win)', g.over);
     const ov = ge.find(e => e.t === 'over');
     ok(ov && ov.pPct === 100 && ov.ePct === 100 && ov.pMax === CFG.playerHp && ov.eMax === C.enemies.copycat.hp && ov.pct.p === '100' && ov.pct.e === '100', 'over event has pMax／eMax／pPct／ePct／pct', ov);
     // 你 6/10（60%）、他 9/18（50%）→ 你贏（舊規則 6 < 9 是你輸）；你 4/10、他 9/18 → 你輸
@@ -483,16 +555,19 @@ section('7 每一件發燒配件（9 件）', () => {
   eq(many.p.relics.length, 3, 'relicMax 3 in a duel');
 });
 
-section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨〔契約：每區 4–6、FEATURE 2–3 史詩／傳奇、全店不重複〕、特價箱、包包、時機）', () => {
+section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨〔契約：每區 4–6、FEATURE 2–3 史詩／傳奇、全店不重複〕、特價箱、包包、時機、v5 欄位）', () => {
   const seeds = QUICK ? 100 : 500;
   const seenBargain = { c: new Set(), o: new Set(), h: new Set() };
   const shopKeys = Object.keys(C.bins).filter(k => !C.bins[k].display);
   const seenStock = {}; for (const k of shopKeys) seenStock[k] = new Set();
   for (let s = 1; s <= seeds; s++) for (const ace of TIERS) {
     const night = 1 + (s % 3);
-    const run = EN.newRun(C, { seedKey: 'nr-' + s, nightNo: night, ace });
-    ok(run.v === 4 && run.prologue === (night === 1 ? 'pending' : null), 'v4, prologue only on night 1');
+    const run = EN.newRun(C, s % 2 ? { seedKey: 'nr-' + s, runNo: night, ace } : { seedKey: 'nr-' + s, nightNo: night, ace });   // nightNo＝舊名照收
+    ok(run.v === 5 && run.runNo === night && run.prologue === (night === 1 ? 'pending' : null), 'v5, runNo, prologue only on run 1');
     ok(run.order.length === 5 && new Set(run.order.slice(0, 3)).size === 3 && run.order.slice(0, 3).every(x => C.normals.includes(x)) && C.elites.includes(run.order[3]) && run.order[4] === C.boss, 'order: 3 normals, 1 elite, boss', run.order);
+    eq([run.pos, run.round, run.idx, run.hp, run.maxHp, run.hpIn, run.level, run.xp, run.atk, run.def, run.levelUps, run.streak, run.bestStreak, run.checkpoints, run.taken, run.retryLeft],
+      [1, 1, 0, C.trial.youHp, C.trial.youHp, C.trial.youHp, 1, 0, 0, 0, 0, 0, 0, [], 4, C.trial.retry], 'v5 run fields start: 第 1 位、第 1 輪、12/12、Lv 1、收了 4 張（老闆送的）');
+    ok(!('times' in run) && !('nightNo' in run), 'no times／nightNo (no clock in the endless trial)');
     ok(run.bossAce !== ace && TIERS.includes(run.bossAce), 'boss ace is one you did not pick');
     eq(run.bag, C.gifts[ace], 'bag starts as the 4 gifts');
     ok(run.money === C.economy.start && run.shop.bargainPicked === false && !EN.canShop(run) && EN.canBargainPick(run), 'start: money, not picked, cannot shop, can pick');
@@ -513,7 +588,7 @@ section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨〔契�
     const n = { c: 0, o: 0, h: 0 }; run.shop.bargain.forEach(id => { n[EN.topAttr(card(id))]++; seenBargain[EN.topAttr(card(id))].add(id); });
     ok(run.shop.bargain.length === 6 && n.c === 2 && n.o === 2 && n.h === 2, 'bargain 6 = 2 per color', n);
     const ch = EN.bargainPolicy(run, C), r = EN.choose(run, C, ch);
-    ok(r.ok && run.bag.length === 7 && run.shop.bargain.length === 3 && run.shop.bargainPicked, 'bargainPick → bag 7, 3 left', r.error);
+    ok(r.ok && run.bag.length === 7 && run.shop.bargain.length === 3 && run.shop.bargainPicked && run.taken === 7, 'bargainPick → bag 7, 3 left, 收了 7', r.error);
     ok(EN.canShop(run) === (night !== 1), 'can shop after the pick (prologue night: after the prologue)');
     ok(!EN.canBargainPick(run), 'pick only once');
     if (night === 1) { run.prologue = 'done'; ok(EN.canShop(run), 'prologue done → can shop'); }
@@ -523,33 +598,113 @@ section('8 newRun：500 種子 × 3 王牌（今晚來客、今晚的貨〔契�
     eq(shopKeys.slice().sort(), BIN_KEYS.slice().sort(), 'contract bins: 11 categories + new + feature + picks, all for sale');
     for (const k of shopKeys) ok(seenStock[k].size >= 4, 'bin ' + k + ' rotates across nights', seenStock[k].size);
   }
-  // 同一晚（同一個 seedKey＋nightNo）的貨一樣；換一晚會換
-  { const a = EN.newRun(C, { seedKey: 'same', nightNo: 2, ace: 'hall' }), b = EN.newRun(C, { seedKey: 'same', nightNo: 2, ace: 'hall' }), c2 = EN.newRun(C, { seedKey: 'same', nightNo: 3, ace: 'hall' });
-    eq(a.shop, b.shop, 'same night → same stock'); ok(JSON.stringify(a.shop.bins) !== JSON.stringify(c2.shop.bins), 'next night → new stock'); }
+  // 同一趟（同一個 seedKey＋runNo）的貨一樣；換一趟會換；每輪開頭補貨（換一批、特價箱補回池子扣掉包包的）
+  { const a = EN.newRun(C, { seedKey: 'same', runNo: 2, ace: 'hall' }), b = EN.newRun(C, { seedKey: 'same', runNo: 2, ace: 'hall' }), c2 = EN.newRun(C, { seedKey: 'same', runNo: 3, ace: 'hall' });
+    eq(a.shop, b.shop, 'same run → same stock'); ok(JSON.stringify(a.shop.bins) !== JSON.stringify(c2.shop.bins), 'next run → new stock');
+    EN.choose(a, C, EN.bargainPolicy(a, C));
+    const before = JSON.stringify(a.shop.bins);
+    EN.jumpTo(a, C, 6);
+    ok(JSON.stringify(a.shop.bins) !== before, 'round 2 → restocked');
+    const want = C.bargain.pool.filter(id => !a.bag.includes(id));
+    ok(a.shop.bargain.length === Math.min(6, want.length) && a.shop.bargain.every(id => want.includes(id)) && a.shop.bargainPicked && !EN.canBargainPick(a), 'round 2 bargain crate = pool minus bag (2 per color), no free pick', a.shop.bargain);
+    for (const k of Object.keys(a.shop.bins)) if (a.shop.bins[k].some(id => a.bag.includes(id))) ok(false, 'restock excludes the bag'); }
+  // 免費挑三張只在第 1 位之前（裁定 4）：沒挑就跳到第 2 位 → 不能挑
+  { const r = EN.newRun(C, { seedKey: 'bp1', runNo: 2, ace: 'pearl' }); ok(EN.canBargainPick(r), 'pos 1 → can pick'); r.pos = 2; r.idx = 1; ok(!EN.canBargainPick(r), 'pos 2 → cannot pick (even if never picked)'); }
   for (let s = 1; s <= 50; s++) {
-    const run = EN.newRun(C, { seedKey: 'rl-' + s, nightNo: 2, ace: 'hall', relics: ['boost_c', 'boost_o'] });
+    const run = EN.newRun(C, { seedKey: 'rl-' + s, runNo: 2, ace: 'hall', relics: ['boost_c', 'boost_o'] });
     eq(run.shop.relics, ['boost_h'], 'two boosts owned → counter has 1');
     eq(run.relics, ['boost_c', 'boost_o'], 'relics carried over');
   }
   ok(fakeBins || !!C.bins.feature || Object.keys(C.bins).some(k => C.bins[k].display), 'feature (contract) or old display areas exist');
 });
 
-section('9 整晚（thoughtful／high／random × shopPolicy none／smart）：一定結束、沒有非法選擇、錢永遠 ≥0', () => {
-  const nights = QUICK ? 12 : 60;
+section('9 整趟（thoughtful／high／random × shopPolicy none／smart，打到輸或第 30 位）：沒有非法選擇、錢 ≥0；位數／輪／說情／聲望／經驗／升級／中繼點／連勝／藏家王牌的不變式', () => {
+  const runs = QUICK ? 12 : 60, CAP = 30, T = C.trial;
   const tally = {};
   for (const pol of ['thoughtful', 'high', 'random']) for (const mode of ['none', 'smart']) {
-    let clear = 0, bought = 0;
-    for (let s = 1; s <= nights; s++) {
-      const run = EN.newRun(C, { seedKey: 'night-' + s, nightNo: 1, ace: TIERS[s % 3] });
-      playNight(run, pol, mode, lcg(s));
-      ok(!!run.over && !run.pending && !run.duel, 'night ends ' + pol + '/' + mode, { over: run.over, pending: run.pending });
-      ok(run.money >= 0 && run.bag.length <= CFG.bagMax && run.relics.length <= CFG.relicMax, 'limits hold');
-      if (run.over === 'clear') clear++;
+    let dead = 0, bought = 0, reach = 0, picks = 0, bossWins = 0, retries = 0;
+    for (let s = 1; s <= runs; s++) {
+      const run = EN.newRun(C, { seedKey: 'trial-' + s, runNo: 1, ace: TIERS[s % 3] });
+      const R = lcg(s), mem = {};
+      let g = 0, xpTot = 0, lastOrder = null, lastRound = 1, lastWinPos = 0, retryAt = null;
+      while (g++ < 4000) {
+        if (run.over && !run.pending) break;
+        if (EN.canBargainPick(run)) { ok(run.pos === 1, 'free pick only at pos 1'); ok(EN.choose(run, C, EN.bargainPolicy(run, C)).ok, 'bargainPick ok'); continue; }
+        const step = EN.nextStep(run);
+        if (step === 'level') {
+          const p = run.pending, offer = p.offer || [];
+          ok(offer.length === 3 && ['atk', 'def'].includes(offer[0].pick) && sameSet(offer.map(x => x.pick), ['atk', 'def', 'hp']) && offer.every(x => x.n === T.picks[x.pick]), 'level offer: 3, first is 品味 or 底氣', offer);
+          eq(EN.levelOffer(run, C), offer, 'levelOffer(run) = pending offer');
+          const b = { atk: run.atk, def: run.def, hp: run.hp, maxHp: run.maxHp, ups: run.levelUps, pos: run.pos };
+          const ch = EN.runPolicy(run, C); const r = EN.choose(run, C, ch);
+          ok(r.ok, 'level choice ok', r.error);
+          const n = T.picks[ch.pick];
+          ok(ch.pick === 'atk' ? run.atk === b.atk + n : ch.pick === 'def' ? run.def === b.def + n : (run.maxHp === b.maxHp + n && run.hp === b.hp + n), 'level pick applied ' + ch.pick);
+          ok(run.levelUps === b.ups - 1 && (run.levelUps > 0 ? EN.nextStep(run) === 'level' : run.pos === b.pos + 1), 'chained level-ups, then the next guest');
+          picks++; continue;
+        }
+        if (step === 'reward' || step === 'retry') {
+          const ch = EN.runPolicy(run, C), r = EN.choose(run, C, ch);
+          ok(r.ok, 'runPolicy choice ok', { ch, err: r.error });
+          if (step === 'retry' && ch.type === 'retry') { ok(run.hp === run.hpIn, 'retry: 聲望 back to before the fight'); retries++; }
+          continue;
+        }
+        if (!step || run.pos > CAP) break;
+        if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, mode)) { const r = EN.choose(run, C, ch); ok(r.ok, 'shopPolicy choice ok', { ch, err: r.error }); }
+        ok(run.money >= 0 && run.bag.length <= CFG.bagMax && run.relics.length <= CFG.relicMax, 'limits hold');
+        // 位數、輪、這一輪的 5 位
+        const prologue = run.prologue === 'pending';
+        ok(run.round === EN.roundOf(run.pos) && run.idx === (run.pos - 1) % 5 && run.order.length === 5 && run.order[4] === C.boss && C.elites.includes(run.order[3]), 'pos／round／idx／order consistent', { pos: run.pos, round: run.round, idx: run.idx });
+        if (!prologue && run.round !== lastRound) {
+          ok(run.round === lastRound + 1 && run.idx === 0 && run.retryLeft === T.retry, 'new round: idx 0, 說情 reset');
+          if (lastOrder) ok(!run.order.slice(0, 3).some(x => lastOrder.slice(0, 3).includes(x)) && run.order[3] !== lastOrder[3], 'new round: new faces (no normal and no elite from the last round)', [lastOrder, run.order]);
+          lastRound = run.round;
+        }
+        lastOrder = run.order.slice();
+        if (!prologue && lastWinPos && retryAt !== run.pos) ok(run.pos === lastWinPos + 1, 'won → next position', { pos: run.pos, lastWinPos });
+        ok(run.hp >= 1 && run.hp <= run.maxHp, '1 ≤ 聲望 ≤ 上限 before a fight', { hp: run.hp, max: run.maxHp });
+        const b = { pos: run.pos, hp: run.hp, maxHp: run.maxHp, streak: run.streak, retryLeft: run.retryLeft, cls: EN.classAt(run.pos), level: run.level };
+        const f = EN.startFight(run, C, {});
+        ok(run.hpIn === b.hp && f.duel.p.hp === b.hp && f.duel.p.max === b.maxHp && f.duel.p.atk === run.atk && f.duel.p.def === run.def, 'duel starts with the run 聲望／上限／品味／底氣');
+        if (!prologue) {
+          const gst = EN.trialGuest(C, b.pos, b.cls);
+          ok(f.duel.e.max === gst.hp && f.duel.e.atk === gst.atk && f.duel.e.def === gst.def && f.duel.e.q === gst.q && f.duel.e.planner === gst.planner, 'guest = curve at pos ' + b.pos, { e: [f.duel.e.max, f.duel.e.atk, f.duel.e.def, f.duel.e.q, f.duel.e.planner], gst });
+          if (b.cls === 'boss') ok(f.duel.e.deckIds.includes(C.aces[run.bossAce]), 'boss carries the ace you did not pick');
+        }
+        play(f.duel, pol, R, mem);
+        const res = EN.finishFight(run, C), pEnd = f.duel.p.hp;
+        ok(res.pos === b.pos && res.cls === (prologue ? 'prologue' : b.cls), 'finishFight reports pos／cls');
+        if (prologue) { if (res.win) ok(run.hp === run.maxHp && run.pos === 1, 'prologue won → 聲望 back to full, still pos 1'); continue; }
+        if (res.win) {
+          xpTot += T.xp[b.cls]; lastWinPos = b.pos; retryAt = null;
+          let L = 1, x = xpTot; while (x >= L + T.levelNeed) { x -= L + T.levelNeed; L++; }
+          ok(run.level === L && run.xp === x, 'level／xp = cumulative XP (' + xpTot + ')', { level: run.level, xp: run.xp, L, x });
+          const ups = L - b.level, healed = Math.min(b.maxHp, Math.max(1, pEnd) + T.heal);
+          ok(res.levelUps === ups && run.maxHp === b.maxHp + ups * T.levelHp && run.hp === healed + ups * T.levelHp, '回 3（不超過上限）＋每升一級 上限／聲望 +1', { hp: run.hp, healed, ups });
+          ok(res.heal === healed - Math.max(1, pEnd), 'finishFight.heal');
+          ok(run.streak === b.streak + 1 && run.bestStreak >= run.streak, 'streak +1');
+          const cp = EN.nextCheckpoint(b.pos, C) === b.pos;
+          ok(cp ? (res.checkpoint === b.pos && run.checkpoints.includes(b.pos)) : res.checkpoint == null, 'checkpoint recorded on beating it', { pos: b.pos, cp: res.checkpoint });
+          if (b.cls === 'boss') { bossWins++; ok(res.aceWon === C.aces[run.bossAce] && !run.over, 'boss beaten → his ace (shelf), the run goes on'); }
+          else ok(res.aceWon == null, 'aceWon only for the boss');
+        } else {
+          ok(run.streak === 0 && run.hp === b.hp, 'lost → streak 0, 聲望 not written back');
+          if (b.retryLeft > 0) { ok(run.pending && run.pending.type === 'retry' && !run.over, 'lost with 說情 left → retry offer'); retryAt = b.pos; }
+          else { ok(run.over === 'dead' && run.stats.lostAt && run.stats.lostAt.pos === b.pos, 'lost without 說情 → dead at pos', run.stats.lostAt); }
+        }
+      }
+      ok(run.over === 'dead' || run.pos > CAP, 'run ends dead or reaches the cap ' + pol + '/' + mode, { over: run.over, pos: run.pos });
+      ok(run.over !== 'clear', 'no clear in the endless trial');
+      const sm = EN.runSummary(run);
+      ok(sm.reached === run.pos && sm.wins === run.stats.beaten && sm.bestStreak === run.bestStreak && sm.taken === run.taken && sm.taken >= run.stats.taken.length + 7 && sameSet(sm.checkpoints, run.checkpoints), 'runSummary', sm);
+      if (run.over === 'dead') dead++;
+      reach += run.pos;
       bought += run.stats.bought.length + run.stats.relicsBought.length;
     }
     if (mode === 'none') ok(bought === 0, 'none buys nothing');
-    tally[pol + '/' + mode] = clear + '/' + nights + ' clear, ' + bought + ' bought';
+    tally[pol + '/' + mode] = { dead, meanPos: +(reach / runs).toFixed(1), bought, picks, bossWins, retries };
   }
+  ok(tally['thoughtful/smart'].meanPos > tally['random/none'].meanPos, 'thoughtful goes further than random');
   console.log('     ' + JSON.stringify(tally));
 });
 
@@ -568,7 +723,8 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.push(B[0]); err(r2, { type: 'bargainPick', ids: B.slice(0, 3) }, 'owned', 'bargainPick owned'); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.bag.push(extra[0], extra[1]); err(r2, { type: 'bargainPick', ids: B.slice(0, 3) }, 'bagFull', 'bargainPick bag full'); }
   { const r2 = JSON.parse(JSON.stringify(run)); r2.duel = {}; err(r2, { type: 'bargainPick', ids: B.slice(0, 3) }, 'notNow', 'bargainPick during a duel'); }
-  { const r2 = JSON.parse(JSON.stringify(run)); r2.idx = 1; err(r2, { type: 'bargainPick', ids: B.slice(0, 3) }, 'notNow', 'bargainPick after the first guest'); }
+  { const r2 = JSON.parse(JSON.stringify(run)); r2.pos = 2; r2.idx = 1; err(r2, { type: 'bargainPick', ids: B.slice(0, 3) }, 'notNow', 'bargainPick after the first guest'); }
+  { const r2 = JSON.parse(JSON.stringify(run)); EN.jumpTo(r2, C, 6); r2.shop.bargainPicked = false; err(r2, { type: 'bargainPick', ids: r2.shop.bargain.slice(0, 3) }, 'notNow', 'bargainPick at the start of round 2 (pos 6)'); }
   const ok1 = EN.choose(run, C, { type: 'bargainPick', ids: [B[1], B[0], B[2]] });
   ok(ok1.ok && JSON.stringify(run.bag.slice(4)) === JSON.stringify([B[1], B[0], B[2]]) && ok1.effects.length === 3, 'bargainPick in tap order', ok1);
   err(run, { type: 'bargainPick', ids: B.slice(3, 6) }, 'notNow', 'bargainPick twice');
@@ -648,6 +804,37 @@ section('10 choose：每一種（含每個錯誤碼）；錯的選擇完全不�
   const f = EN.startFight(run, C, {});
   ok(!!f && !!run.duel && !EN.canShop(run), 'no shopping during a fight');
   err(run, { type: 'buyRelic', relicId: RL[1] || RL[0] }, 'notNow', 'buyRelic during a fight');
+  // level（升級三選一）：沒有待選 → noLevel；不在選項裡 → notOffered；選了照數字加、選完才到下一位
+  err(run, { type: 'level', pick: 'atk' }, 'noLevel', 'level without a level-up');
+  { const r2 = EN.newRun(C, { seedKey: 'lv', runNo: 2, ace: 'pearl' });
+    EN.choose(r2, C, EN.bargainPolicy(r2, C));
+    const fx = EN.startFight(r2, C, {}); let g = 0;
+    while (!fx.duel.over && g++ < 12) EN.resolveTurn(fx.duel, EN.legalActions(fx.duel)[0], { debugOutcome: { kind: 'counter', toE: 30, toP: 0 } });
+    r2.xp = 3;                                                          // 第 1 位一般 +2 → 5 ≥ 1＋3：升 Lv 2
+    const res = EN.finishFight(r2, C);
+    ok(res.win && res.levelUps === 1 && r2.level === 2 && r2.xp === 1 && r2.maxHp === C.trial.youHp + 1, 'xp 3 + 2 → Lv 2 (need level + 3), 上限 +1', { level: r2.level, xp: r2.xp, max: r2.maxHp });
+    while (EN.nextStep(r2) === 'reward') EN.choose(r2, C, { type: 'skip' });
+    ok(EN.nextStep(r2) === 'level' && r2.pos === 1 && r2.pending.level === 2, 'reward done → level pending (still pos 1)', r2.pending);
+    err(r2, { type: 'level', pick: 'nope' }, 'notOffered', 'level pick not offered');
+    err(r2, { type: 'level' }, 'notOffered', 'level without pick');
+    err(r2, { type: 'buy', key: Object.keys(r2.shop.bins)[0], cardId: 'x' }, 'notNow', 'no shopping while a level pick waits');
+    const h0 = r2.hp, r = EN.choose(r2, C, { type: 'level', pick: 'hp' });
+    ok(r.ok && r2.maxHp === C.trial.youHp + 1 + C.trial.picks.hp && r2.hp === h0 + C.trial.picks.hp && r2.pos === 2 && !r2.pending, '聲望上限 +2 (current too) → pos 2', { r, max: r2.maxHp, hp: r2.hp });
+    eq(r.effects, [{ level: 'hp', n: C.trial.picks.hp }], 'level effects');
+    eq(r2.picks, ['hp'], 'picks recorded'); }
+  // retry／end：說情一輪一次、聲望回到開打前；end → dead、lostAt 記位數
+  { const r3 = EN.newRun(C, { seedKey: 'rt', runNo: 2, ace: 'hall' });
+    EN.choose(r3, C, EN.bargainPolicy(r3, C)); EN.jumpTo(r3, C, 7); r3.hp = 9;
+    const lose = () => { const fx = EN.startFight(r3, C, {}); let g = 0; while (!fx.duel.over && g++ < 12) EN.resolveTurn(fx.duel, EN.legalActions(fx.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 3 } }); return EN.finishFight(r3, C); };
+    const a = lose();
+    ok(!a.win && r3.pending.type === 'retry' && !r3.pending.free && r3.hp === 9 && r3.streak === 0, 'lost at pos 7 → retry offer, 聲望 9 kept');
+    ok(EN.choose(r3, C, { type: 'retry' }).ok && r3.retryLeft === 0 && r3.hp === 9 && r3.hpIn === 9 && r3.pos === 7, 'retry → same pos, 聲望 back to 9, 說情 used');
+    const b2 = lose();
+    ok(!b2.win && r3.over === 'dead' && r3.stats.lostAt.pos === 7 && r3.stats.lostAt.round === 2, 'lost again (no 說情 left) → dead at pos 7', r3.stats.lostAt);
+    const r4 = EN.newRun(C, { seedKey: 'rt', runNo: 3, ace: 'hall' }); EN.choose(r4, C, EN.bargainPolicy(r4, C)); EN.jumpTo(r4, C, 12);
+    const fx = EN.startFight(r4, C, {}); let g = 0; while (!fx.duel.over && g++ < 12) EN.resolveTurn(fx.duel, EN.legalActions(fx.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 5 } });
+    EN.finishFight(r4, C);
+    ok(EN.choose(r4, C, { type: 'end' }).ok && r4.over === 'dead' && r4.stats.lostAt.pos === 12 && EN.runSummary(r4).reached === 12, 'end at the retry menu → dead at pos 12', r4.stats.lostAt); }
 });
 
 section('11 policies：§2.1.7 每個都有、都合法、同 R 同結果；只有 oracle 讀 plan／e.hand／e.pile', () => {
@@ -664,7 +851,7 @@ section('11 policies：§2.1.7 每個都有、都合法、同 R 同結果；只�
   let states = 0;
   for (let s = 1; s <= (QUICK ? 30 : 120); s++) {
     const id = ENEMY_IDS[s % 10], tier = TIERS[s % 3];
-    const { duel } = startFor(id, tier, s * 53, { relics: relicSet(s), depth: s % 5 });
+    const { duel } = startFor(id, tier, s * 53, { relics: relicSet(s), pos: posFor(id, s), atk: s % 2 });
     const R = lcg(s);
     while (!duel.over) {
       states++;
@@ -693,15 +880,22 @@ section('11 policies：§2.1.7 每個都有、都合法、同 R 同結果；只�
   const r2 = JSON.parse(JSON.stringify(run));
   for (const ch of chs) ok(EN.choose(r2, C, ch).ok, 'shopPolicy choice valid', ch);
   eq(run.money, 3000, 'shopPolicy does not change the run');
+  // runPolicy 的升級照 harness MIX（A D A H D A X D A H；X→聲望上限）
+  const lr = JSON.parse(JSON.stringify(run)); lr.pending = { type: 'level', offer: [{ pick: 'def', n: 1 }, { pick: 'atk', n: 1 }, { pick: 'hp', n: 2 }] };
+  const MIX = ['atk', 'def', 'atk', 'hp', 'def', 'atk', 'hp', 'def', 'atk', 'hp'];
+  for (let k = 0; k < 12; k++) { lr.picks = MIX.slice(0, k % 10).concat([]); while (lr.picks.length < k) lr.picks.push('atk'); eq(EN.runPolicy(lr, C), { type: 'level', pick: MIX[k % 10] }, 'runPolicy level pick #' + (k + 1)); }
 });
 
 section('12 view() 不洩漏：沒有 plan／他的 attr／idx／bluff，也沒有他手牌的卡', () => {
   for (let s = 1; s <= (QUICK ? 60 : 300); s++) {
-    const { duel } = startFor(ENEMY_IDS[s % 10], TIERS[s % 3], s * 3, { depth: s % 5 });
+    const { duel } = startFor(ENEMY_IDS[s % 10], TIERS[s % 3], s * 3, { pos: posFor(ENEMY_IDS[s % 10], s) });
     const R = lcg(s);
     while (!duel.over) {
       const v = EN.view(duel);
       ok(['plan', 'attr', 'idx', 'bluff', 'why', 'eCard', 'eHand'].every(k => !(k in v)), 'no hidden keys at the top', Object.keys(v));
+      eq(v.eDeck.map(x => x.id), v.eDeckIds, 'eDeck = the public list (stars after the buff)');
+      ok(v.eDeck.every(x => { const c = [...duel.e.pile, ...duel.e.hand, ...duel.e.thrown].find(y => y.id === x.id); return c && c.c === x.c && c.o === x.o && c.h === x.h; }), 'eDeck stars = his real cards');
+      ok(['pAtk', 'pDef', 'eAtk', 'eDef'].every(k => Number.isInteger(v[k])) && v.eAtk === duel.e.atk && v.eDef === duel.e.def, 'view 品味／底氣 both sides');
       eq(Object.keys(v.hint).sort(), ['attr', 'line'], 'hint = {attr, line}');
       ok(v.hint.attr === duel.plan.hint.attr && v.hint.line === duel.plan.hint.line, 'hint is the plan hint');
       const hand = new Set(duel.e.hand);
@@ -818,8 +1012,134 @@ section('15 台幣行情（FIXLIST 8）：稀有度、價格、特價箱每張�
   { const bp = binsProblems(C, EN); ok(bp.length === 0, 'binsProblems (check-content) empty on ' + (fakeBins ? 'the fixture' : 'bins.js'), bp.slice(0, 8)); }
   // view：沒有誠實度的字（只有 key 與 q，給策略）；客人沒有副標
   const v = EN.view(startFor('label', 'hall', 3).duel);
-  eq(Object.keys(v.honesty).sort(), ['key', 'q'], 'view.honesty = {key, q}');
+  eq(Object.keys(v.honesty).sort(), ['key', 'q', 'qNow'], 'view.honesty = {key, q, qNow}（qNow：放水後的這手，策略用；畫面不寫）');
   ok(v.eTitle === null && v.eName === '地下廠牌主理人', 'view: name only, no title', { n: v.eName, t: v.eTitle });
+});
+
+// 無限試煉 V3 曲線（../curve/curves.cjs atkV3f／defV3f／oldQ／oldDiff；SPEC §0）——測試自己寫一份，對 engine 的預設（TRIAL）與 content 的旋鈕
+const lateT = d => Math.max(0, d - 3);
+const V3 = {
+  atk: (d, boss) => Math.min(2, Math.round(0.75 * lateT(d))) + Math.floor(Math.max(0, d - 6) / 5) + (boss ? 1 : 0),
+  def: (d, boss) => Math.min(1, Math.round(0.45 * lateT(d))) + (boss ? 1 : 0),
+  planner: d => (d < 3 ? 'easy' : d < 5 ? 'normal' : 'hard'),
+  q: d => (d < 3 ? 1 : d < 5 ? 0.85 : 1 - Math.min(0.55, 0.18 + 0.05 * Math.max(0, d - 5))),
+  floor: d => Math.min(13, 3 + Math.floor(0.7 * d)), buff: d => Math.floor(Math.max(0, d - 3) / 3), aceP: d => (d >= 5 ? Math.min(0.6, 0.15 * (d - 4)) : 0),
+};
+const levelAtT = (d, XP, need) => { let xp = 0; for (let k = 1; k < d; k++) xp += XP[EN.classAt(k)]; let L = 1; while (xp >= L + need) { xp -= L + need; L++; } return { L, xp }; };
+const forceWin = (run) => { const f = EN.startFight(run, C, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, C); };
+const settleAll = run => { let g = 0; while (run.pending && g++ < 40) { const ch = EN.runPolicy(run, C); if (!EN.choose(run, C, ch).ok) break; } };
+
+section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、難度階梯覆寫、trialDeck（下限、加星上限 5、王牌機率）、品味／底氣傷害、經驗與升級、中繼點、來客那排、結算', () => {
+  // (a) 位數 → 類別、輪；engine 預設＝V3（逐位 1–300）；驗算值（map-engine §E）；content 的旋鈕現在＝V3（店主 11/12；改難度時這條跟著改）
+  eq([1, 2, 3, 4, 5, 6, 10, 11, 25].map(EN.classAt), ['normal', 'normal', 'normal', 'elite', 'boss', 'normal', 'boss', 'normal', 'boss'], 'classAt');
+  eq([1, 5, 6, 10, 11, 100].map(EN.roundOf), [1, 1, 2, 2, 3, 20], 'roundOf');
+  const NOC = Object.assign({}, C, { trial: undefined });
+  let bad = 0;
+  for (let d = 1; d <= 300; d++) for (const cls of ['normal', 'elite', 'boss']) {
+    const g = EN.trialGuest(NOC, d, cls), b = cls === 'boss';
+    const want = { hp: b ? 14 : 12, atk: V3.atk(d, b), def: V3.def(d, b), planner: V3.planner(d), q: Math.round(V3.q(d) * 1e6) / 1e6 };
+    if (JSON.stringify(g) !== JSON.stringify(want)) { if (bad++ < 5) ok(false, 'engine default = V3 at ' + d + ' ' + cls, { g, want }); } else pass++;
+    if (JSON.stringify(EN.trialGuest(C, d, cls)) !== JSON.stringify(g)) { if (bad++ < 5) ok(false, 'content.trial.curve = V3 at ' + d + ' ' + cls); } else pass++;
+  }
+  const G = (d, c) => EN.trialGuest(C, d, c || EN.classAt(d));
+  ok(G(4).atk === 1 && G(4).def === 0 && G(5).atk === 3 && G(5).def === 2 && G(5).q === 0.82 && G(6).atk === 2 && G(6).def === 1 && G(11).atk === 3 && G(20).atk === 5 && G(12).q === 0.47 && G(13).q === 0.45 && G(60).q === 0.45,
+    'V3 驗算值：第 4 位攻 1、第 5 位藏家攻 3 底 2 q .82、第 6 位攻 2 底 1、第 11 位攻 3、第 20 位藏家攻 5、第 12 位 q .47、第 13 位起 .45');
+  ok(G(1).planner === 'easy' && G(2).planner === 'easy' && G(3).planner === 'normal' && G(4).planner === 'normal' && G(5).planner === 'hard' && G(5).hp === 14 && G(4).hp === 12, '出招難度 1–2 easy、3–4 normal、5 起 hard；客人 12、藏家 14');
+  // (b) 難度階梯（之後 Monster Train 式）：tiers[k−1] 是部分覆寫，只改資料
+  { const C2 = Object.assign({}, C, { trial: Object.assign({}, C.trial, { tiers: [{ curve: { atk: { add: 1 }, q: { feintMax: 0.6 } }, guestHp: { boss: 16 } }] }) });
+    const t0 = EN.trialGuest(C2, 20, 'boss', 0), t1 = EN.trialGuest(C2, 20, 'boss', 1);
+    ok(t1.atk === t0.atk + 1 && t1.hp === 16 && t0.hp === 14 && t1.q === 0.4 && t1.def === t0.def, 'tier 1 = partial override (攻 +1、藏家 16、q 封底 .4)', { t0, t1 });
+    const r = EN.newRun(C2, { seedKey: 'tier', runNo: 2, ace: 'hall', tier: 1 }); EN.choose(r, C2, EN.bargainPolicy(r, C2)); EN.jumpTo(r, C2, 20);
+    const f = EN.startFight(r, C2, {}); ok(f.duel.e.max === 16 && f.duel.e.atk === t1.atk, 'run.tier → startFight uses the tier'); }
+  // (c) trialDeck：下限、加星（上限 5、保留原 id、plus）、藏家王牌、一般客人王牌機率；content.cards 不被改
+  const snap = JSON.stringify(Object.keys(C.cards).map(id => [C.cards[id].c, C.cards[id].o, C.cards[id].h]));
+  const aceN = {}, aceTot = {};
+  for (let s = 1; s <= (QUICK ? 400 : 2000); s++) {
+    const id = [...C.normals, ...C.elites, C.boss][s % 9], ce = C.enemies[id], d = 1 + (s * 7) % 60, cls = ce.boss ? 'boss' : EN.classAt(d) === 'boss' ? 'normal' : EN.classAt(d);
+    const tier = TIERS[s % 3], o = { seedKey: 'td-' + s, runNo: 1 + (s % 4), playerAce: tier, bossAce: otherTier(tier, s), cls };
+    const td = EN.trialDeck(C, id, d, o), fl = V3.floor(d), bf = V3.buff(d);
+    ok(td.deck.length === ce.deck.length && new Set(td.deck.map(c => c.id)).size === ce.deck.length && td.floor === fl && td.buff === bf, 'deck size, unique, floor, buff', { id, d });
+    for (const c of td.deck) {
+      const orig = C.cards[c.id];
+      if (!orig || orig.tier) { ok(false, 'deck card is a pool card (no ace)', c.id); continue; }
+      const m = EN.topAttr(orig), want = Math.min(5, Math.max(orig[m], orig[m] + bf));
+      if (EN.power(orig) < fl || c[m] !== want || ATTRS.some(a => a !== m && c[a] !== orig[a]) || (want !== orig[m]) !== !!c.plus || (c.plus && (c.plus.attr !== m || c.plus.n !== want - orig[m]))) { ok(false, 'floor／buff per card', { id: c.id, d, fl, bf, orig: [orig.c, orig.o, orig.h], got: [c.c, c.o, c.h], plus: c.plus }); }
+      else pass++;
+      ok(ce.deck.includes(c.id) === (EN.power(orig) >= fl ? ce.deck.includes(c.id) : false), 'only below-floor cards are replaced');
+    }
+    for (const x of ce.deck) if (EN.power(C.cards[x]) >= fl && !td.deck.some(c => c.id === x)) ok(false, 'a guest keeps his own cards that meet the floor', { id, x, d });
+    if (cls === 'boss') ok(td.ace && td.ace.id === C.aces[o.bossAce], 'boss → the ace you did not pick');
+    else {
+      aceTot[d] = (aceTot[d] || 0) + 1;
+      if (td.ace) { aceN[d] = (aceN[d] || 0) + 1; ok(td.ace.tier && td.ace.id !== C.aces[tier], 'guest ace is one you did not pick'); }
+      if (d < 5) ok(!td.ace, 'no guest ace before pos 5');
+    }
+  }
+  ok(JSON.stringify(Object.keys(C.cards).map(id => [C.cards[id].c, C.cards[id].o, C.cards[id].h])) === snap, 'content.cards untouched by the buff');
+  { let n = 0, a = 0, e = 0; for (const d of Object.keys(aceTot)) { if (+d < 5) continue; n += aceTot[d]; a += aceN[d] || 0; e += aceTot[d] * V3.aceP(+d); }
+    ok(Math.abs(a - e) / n <= Math.max(0.02, 3 * Math.sqrt(0.25 / n)), 'guest ace rate ≈ min(60%, 15%×(pos−4)) (±3σ)', { got: (a / n).toFixed(3), want: (e / n).toFixed(3), n }); }
+  for (const d of [20, 40, 80]) { const td = EN.trialDeck(C, 'boss', d, { seedKey: 'cap', runNo: 1, playerAce: 'hall', bossAce: 'pearl' }); ok(td.deck.every(c => Math.max(c.c, c.o, c.h) <= 5), '加星上限 5 at ' + d); }
+  // (d) 品味／底氣：half(x, D)＝max(⌈x/2⌉, x−D)；你的品味只加在剋中；他的品味只在他扣到你時加；notes 帶 C.trial.notes 的字
+  eq([EN.half(6, 1), EN.half(8, 2), EN.half(8, 10), EN.half(1, 5), EN.half(5, 0)], [5, 6, 4, 1, 5], 'half: at most half is blocked');
+  const S3 = [mkCard('s1', 1, 4, 1), mkCard('s2', 4, 1, 1), mkCard('s3', 1, 1, 4)];
+  const E5 = [mkCard('f1', 5, 1, 1), mkCard('f2', 5, 1, 1), mkCard('f3', 5, 1, 1), mkCard('f4', 5, 1, 1)];
+  const stat = (o) => { const d = rig(o.relics || [], S3, E5, { pHp: 20 }); d.p.atk = o.pa | 0; d.p.def = o.pd | 0; d.e.atk = o.ea | 0; d.e.def = o.ed | 0; d.noteText = C.trial.notes; return d; };
+  { const d = stat({ pa: 2, ed: 1 }), r = EN.preview(d, { i: 0, attr: 'o' }, { attr: 'c', star: 4 });
+    eq([r.kind, r.toE, r.notes.map(n => [n.stat, n.n, n.text])], ['counter', 5, [['atk', 2, '品味：多扣 2'], ['eDef', 1, '他的底氣：少扣 1']]], '冷 4 剋經 4、品味 2、他底氣 1 → 4＋2＝6 → 擋 1 → 5');
+    const cl = clashOf(EN.resolveTurn(d, { i: 0, attr: 'o' })); eq([cl.toE, cl.notes.length, d.e.hp], [5, 2, 25], 'resolve = preview'); }
+  { const d = stat({ pa: 3, ed: 2 }), r = EN.preview(d, { i: 1, attr: 'c' }, { attr: 'c', star: 2 });
+    eq([r.kind, r.toE, r.notes.map(n => n.stat)], ['mirrorWin', 1, ['eDef']], '同色比星不加品味；他底氣 2 擋 2 → 最多擋一半 ⌈2/2⌉＝1'); }
+  { const d = stat({ ea: 3, pd: 2 }), r = EN.preview(d, { i: 2, attr: 'h' }, { attr: 'c', star: 5 });
+    eq([r.kind, r.toP, r.notes.map(n => [n.stat, n.n])], ['countered', 6, [['eAtk', 3], ['def', 2]]], '經 5 剋硬：5＋他的品味 3＝8 → 你的底氣 2 → 6'); }
+  { const d = stat({ ea: 1, pd: 9 }), r = EN.preview(d, { i: 2, attr: 'h' }, { attr: 'c', star: 5 });
+    eq([r.toP, r.notes.map(n => [n.stat, n.n])], [3, [['eAtk', 1], ['def', 3]]], '底氣再高也最多擋一半：6 → 3'); }
+  { const d = stat({ ea: 2, pd: 1, relics: ['dustcover'] }), r = EN.preview(d, { i: 2, attr: 'h' }, { attr: 'c', star: 5 });
+    eq([r.toP, r.notes.map(n => n.relic || n.stat)], [5, ['dustcover', 'eAtk', 'def']], '配件先算（防塵套 5→4）、再加他的品味（6）、再套底氣（5）'); }
+  { const d = stat({ pa: 4, ea: 4, pd: 4, ed: 4 }), r = EN.preview(d, { i: 1, attr: 'c' }, { attr: 'c', star: 4 }); eq([r.kind, r.toE, r.toP, r.notes.length], ['tie', 0, 0, 0], 'tie: nobody hits, no notes'); }
+  // (e) 經驗與升級（harness levelAt）：連贏到第 41 位，每一位的等級＝levelAt(位)；上限＝12＋(等級−1)＋聲望上限選項；打贏回 3；藏家獎金
+  { const run = EN.newRun(C, { seedKey: 'lv-path', runNo: 2, ace: 'heresy' }); EN.choose(run, C, EN.bargainPolicy(run, C));
+    let hpPicks = 0;
+    for (let d = 1; d <= 40; d++) {
+      const w = levelAtT(d, C.trial.xp, C.trial.levelNeed);
+      ok(run.pos === d && run.level === w.L && run.xp === w.xp, 'level at pos ' + d + ' = harness levelAt', { pos: run.pos, level: run.level, xp: run.xp, w });
+      ok(run.maxHp === C.trial.youHp + (run.level - 1) * C.trial.levelHp + hpPicks * C.trial.picks.hp, '上限 = 12 + (Lv−1) + 2×選聲望上限');
+      const m0 = run.money, res = forceWin(run);
+      ok(res.earn === C.economy.win[EN.classAt(d)] && run.money === m0 + res.earn, 'earn by class at ' + d);
+      settleAll(run);
+      hpPicks = run.picks.filter(x => x === 'hp').length;
+    }
+    ok(C.economy.win.boss === C.economy.win.elite * 1.5, 'economy.win.boss = elite × 1.5 (裁定 3)');
+    eq(run.picks.slice(0, 6), ['atk', 'def', 'atk', 'hp', 'def', 'atk'], 'runPolicy picks follow MIX');
+    eq(run.checkpoints, [10, 20, 30], 'checkpoints 10／20／30 after beating them');
+    eq([run.streak, run.bestStreak, EN.runSummary(run).wins, EN.runSummary(run).reached], [40, 40, 40, 41], 'streak 40, reached 41');
+    eq(EN.toCheckpoint(run, C), 10, 'pos 41 → 第 50 位還要贏 10 位'); }
+  // (f) 中繼點
+  eq([1, 9, 10, 11, 30, 31, 50, 51, 75, 76, 100, 101, 150, 151, 199, 200, 201].map(d => EN.nextCheckpoint(d, C)), [10, 10, 10, 20, 30, 50, 50, 75, 75, 100, 100, 150, 150, 200, 200, 200, 250], 'nextCheckpoint: 10 20 30 50 75 100, then every 50');
+  eq([1, 7, 10, 11].map(pos => EN.toCheckpoint({ pos }, C)), [10, 4, 1, 10], 'toCheckpoint counts the current guest');
+  // (g) 來客那排（這一輪 5 位）
+  { const run = EN.newRun(C, { seedKey: 'rg', runNo: 2, ace: 'pearl' }); EN.choose(run, C, EN.bargainPolicy(run, C)); EN.jumpTo(run, C, 12);
+    const rg = EN.roundGuests(run, C);
+    eq(rg.map(x => x.pos), [11, 12, 13, 14, 15], 'roundGuests: positions of this round');
+    eq(rg.map(x => x.id), run.order, 'roundGuests: ids = run.order');
+    ok(rg.every(x => { const g = EN.trialGuest(C, x.pos, x.cls); return x.cls === EN.classAt(x.pos) && x.hp === g.hp && x.atk === g.atk && x.def === g.def; }), 'roundGuests: curve numbers');
+    eq(rg.map(x => [x.done, x.cur]), [[true, false], [false, true], [false, false], [false, false], [false, false]], 'roundGuests: done／cur');
+    ok(rg[4].hasAce === true, 'the boss always carries an ace');
+    for (const x of rg.slice(0, 4)) ok(x.hasAce === !!EN.trialDeck(C, x.id, x.pos, { seedKey: 'rg', runNo: 2, playerAce: 'pearl', bossAce: run.bossAce, cls: x.cls }).ace, 'hasAce = trialDeck ace');
+    forceWin(run);
+    ok(EN.roundGuests(run, C)[1].done && run.pos === 12, 'won, reward pending → this guest shows done (pos not advanced yet)');
+    settleAll(run); ok(run.pos === 13 && EN.roundGuests(run, C)[2].cur, 'next guest is current');
+    // 打到第 15 位（藏家）：新一輪、新面孔、說情重設、補貨
+    run.retryLeft = 0; const o1 = run.order.slice(), sh1 = JSON.stringify(run.shop.bins);
+    for (let k = 0; k < 3; k++) { const res = forceWin(run); if (k === 2) ok(res.cls === 'boss' && res.aceWon === C.aces[run.bossAce], 'boss → aceWon'); settleAll(run); }
+    ok(run.pos === 16 && run.round === 4 && run.idx === 0 && run.retryLeft === C.trial.retry && JSON.stringify(run.order) !== JSON.stringify(o1) && JSON.stringify(run.shop.bins) !== sh1, 'after the boss: round 4, new faces, 說情 reset, restocked');
+    const t0 = run.taken; forceWin(run); settleAll(run); for (let k = 0; k < 4; k++) { forceWin(run); settleAll(run); }
+    ok(run.taken >= t0 && run.aceWon, 'the boss ace counts once in 收了'); }
+  // (h) 序章：打完聲望回滿、還是第 1 位；序章不給經驗
+  { const run = EN.newRun(C, { seedKey: 'pro', runNo: 1, ace: 'hall' }); EN.choose(run, C, EN.bargainPolicy(run, C)); run.hp = 5;
+    const f = EN.startFight(run, C, {}); ok(f.duel.p.hp === 5 && f.duel.e.id === 'man' && f.duel.e.atk === 0, 'prologue fight uses the run 聲望, no guest 品味');
+    let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 2 } });
+    const res = EN.finishFight(run, C);
+    ok(res.win && run.hp === run.maxHp && run.xp === 0 && run.streak === 0 && run.pos === 1 && res.cls === 'prologue', 'prologue won → full 聲望, no XP, still pos 1'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
