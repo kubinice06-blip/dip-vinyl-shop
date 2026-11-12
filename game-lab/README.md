@@ -175,7 +175,7 @@ node game-lab/test/shop.test.mjs            # 店家 JSON、唱盤、路線不�
 node game-lab/test/hit.test.mjs             # 命中：形狀＋深度、容錯、遮擋
 node game-lab/test/chars.test.mjs           # 小人
 node game-lab/sim.mjs --n 3000              # 平衡門檻 S1–S9＋HP 聲望單調（任何一條沒過 exit 1）
-node game-lab/tools/lint-copy.mjs           # 文案：禁用字、原句／店主句逐字、劇本 26 句順序；重產 LINES-REVIEW.md
+node game-lab/tools/lint-copy.mjs           # 文案：禁用字、原句／店主句逐字、劇本 25 句順序（第一句 11-10 改成開頭旁白）；重產 LINES-REVIEW.md
 node game-lab/tools/check-content.mjs       # 資料形狀、牌組限制、教學步驟、劇本
 node game-lab/tools/check-shops.mjs         # 店家配置、熱點（含 bin:* 與 buildHotList 交叉比對）、任兩站位的路線不穿家具
 node game-lab/tools/check-covers.mjs        # 每個看得到的封面在 cards.js、全店不重複、符合那一區的曲風
@@ -186,6 +186,7 @@ LAB_SIZES=$S node game-lab/tests/e2e-duel.mjs                # 對決盤面（in
 LAB_SIZES=$S node game-lab/tests/e2e-econ.mjs                # 經濟介面（econ-harness＋index.html #21–#25）
 LAB_SIZES=$S LAB_SCREENS=title,night node game-lab/tests/e2e-taps.mjs   # 真點每個熱點與家具（標題、今晚來客）
 node game-lab/tests/e2e-prologue.mjs                         # 序章時間軸 P1–P13（390×664、速度 1）
+LAB_SIZES=$S node game-lab/tests/e2e-intro.mjs              # 開頭旁白＋玻璃倒影捏人（?debug=1 預設不演，這支加 &intro=1）
 ```
 
 e2e 讀 `LAB_BASE`（伺服器根，預設 `http://localhost:8765`）或 `LAB_URL`。Playwright 只有 Chromium。**真 iPhone（Safari 與 Chrome）請各開一次**：店景清楚、聲音、教學遮罩洞裡點得到、抽屜關得掉、唱盤演出不卡。

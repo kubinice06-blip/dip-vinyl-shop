@@ -12,7 +12,7 @@
 //      對決與教學的字不准有「晃」（脾氣的內部名 C.habits.*.zh「虛晃」除外，它不上畫面）；
 //      「配件」只准出現在發燒配件的介面（content.js／duel.js／tutorial.js 裡，同一行原始碼要提到 relic；ui.js 本身就是配件介面所在，不擋）。
 //   3. 必須原樣出現的六句（序章拍板句與原句）；不得出現尾聲的耳朵宣告（09-03 店主拿掉）；
-//      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 26 句（原版 RPG_BEATS 19 句扣掉被換掉的 4 句＋TUT_EPILOGUE_BEATS 11 句），
+//      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 25 句（原版 RPG_BEATS 19 句扣掉被換掉的 5 句（第一句 11-10 改成開頭旁白）＋TUT_EPILOGUE_BEATS 11 句），
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
 //      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、pitches.json）；
@@ -110,6 +110,7 @@ const HAS_CJK = /[㐀-鿿　-〿＀-￯]/;
 // 「入耳」：舊的軸名不准（入耳 5、入耳：）；店主 11-12 的教學句用它當白話「難入耳」（再難入耳、難入耳），照用
 const AXIS_IN = [/入耳\s?[0-9０-９：:]/, /(^|[^一-鿿])入\s?[0-9０-９]/, /[經冷](典|門)?\s?[0-9０-９]*\s?[／/、・|｜ ]\s?入(?![一-鿿])/, /^入[:：]?$/];
 let HABIT_ZH = new Set();     // 脾氣的內部名（虛晃…）：不上畫面，「晃」不擋
+const SWAY_OK = new Set(['玻璃門晃了晃，映出推門的人。']);   // 店主 11-10 開頭旁白：玻璃門在晃，不是虛晃翻面
 function scanStrings(file, strings, opts = {}) {
   for (const { s, line, src } of strings) {
     if (!s) continue;
@@ -119,7 +120,7 @@ function scanStrings(file, strings, opts = {}) {
     for (const re of AXIS_IN) if (re.test(s)) err(at, '三軸寫成舊名「入」（要寫硬蕊）→ ' + s.slice(0, 60));
     if (opts.mech) for (const w of OLD_MECH) if (s.includes(w)) err(at, 'v3 拿掉的系統「' + w + '」不准出現在畫面字 → ' + s.slice(0, 60));
     if (opts.duelCopy) {
-      if (s.includes('晃') && !HABIT_ZH.has(s)) err(at, 'v3 對決／教學的字不准有「晃」（虛晃翻面已刪）→ ' + s.slice(0, 60));
+      if (s.includes('晃') && !HABIT_ZH.has(s) && !SWAY_OK.has(s)) err(at, 'v3 對決／教學的字不准有「晃」（虛晃翻面已刪）→ ' + s.slice(0, 60));
       if (s.includes('配件') && !/relic/i.test(src || '')) err(at, '「配件」只准出現在發燒配件的介面（這一行原始碼沒提到 relic）→ ' + s.slice(0, 60));
     }
   }
@@ -227,6 +228,12 @@ for (const [key, beats] of Object.entries(C.script || {})) {
     }
   });
 }
+// 開頭旁白＋玻璃倒影捏人（店主 11-10 定稿；第一次推門）
+((C.intro || {}).lines || []).forEach((x, k) => {
+  if (!TAG_OK(x.tag)) err('intro.lines[' + k + ']', '沒有 tag');
+  add({ scene: '開頭旁白（第一次推門：黑幕 → 玻璃倒影捏人）', where: 'intro.lines[' + k + ']', who: '旁白・' + x.id, text: x.text, tag: x.tag, beat: x.tag === '原句' });
+});
+for (const k of ['title', 'skip']) if ((C.intro || {})[k]) add({ scene: '開頭旁白（第一次推門：黑幕 → 玻璃倒影捏人）', where: 'intro.' + k, who: '（畫面字）', text: C.intro[k], tag: extraTag(C.intro[k]), ui: true });
 // 今晚那張的兩句音樂描述（D §2 猜歌第 2 步；店主草稿）
 for (const t of TIER_KEYS) ((C.tonightLines || {})[t] || []).forEach((x, k) => {
   if (!TAG_OK(C.tonightLinesTag)) err('tonightLines.' + t, '沒有 tag（tonightLinesTag）');
@@ -510,13 +517,15 @@ else for (const it of items) if (it.tag === '原句' || it.tag === '拍板') {
 // v4 劇本的原句（SPEC-v4 §2.5.4、§2.2.9 B2）：序章＋收尾標「原句」的恰好 26 句，順序＝原版 RPG_BEATS（扣掉 D §2 換掉的 4 句）＋TUT_EPILOGUE_BEATS
 //   換掉的 4 句：很迷人那句（→ 今晚那張的兩句描述）、「剛才那段，你覺得是哪一張？」、「跟你有緣，收下吧。」、「你把五張唱片…」
 const REPLACED_BY_D = ['……很迷人。你停下腳步，不自覺跟著點起頭來。', '「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」',
-  '「這四張也很適合你。跟你有緣，收下吧。」', '你把五張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。'];
+  '「這四張也很適合你。跟你有緣，收下吧。」', '你把五張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。',
+  // 店主 11-10：第一句改成開頭旁白（C.intro）
+  '下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。'];
 let orig26 = 0;
 if (ORIG) {
   const want = beatTextsOf('RPG_BEATS').filter(t => !REPLACED_BY_D.includes(t)).concat(beatTextsOf('TUT_EPILOGUE_BEATS'));
   const got = [].concat((C.script || {}).prologue || [], (C.script || {}).epilogueWin || []).filter(b => b.tag === '原句').map(b => b.text);
-  if (want.length !== 26) err('roguelike.html', '原版序章＋收尾扣掉換掉的 4 句應該是 26 句，抓到 ' + want.length + ' 句（格式變了？）');
-  if (got.length !== 26) err('script.prologue＋epilogueWin', '標「原句」的要恰好 26 句，現在 ' + got.length + ' 句');
+  if (want.length !== 25) err('roguelike.html', '原版序章＋收尾扣掉換掉的 5 句應該是 25 句，抓到 ' + want.length + ' 句（格式變了？）');
+  if (got.length !== 25) err('script.prologue＋epilogueWin', '標「原句」的要恰好 25 句，現在 ' + got.length + ' 句');
   want.forEach((t, k) => { if (got[k] !== t) err('script.prologue＋epilogueWin', '第 ' + (k + 1) + ' 句原句不對（要跟原版順序一致）：要「' + t + '」，是「' + (got[k] || '（沒有）') + '」'); else orig26++; });
 }
 // D §2 拿掉的試做版句子不准回來
@@ -575,6 +584,6 @@ report();
 if (!errors.length) {
   fs.writeFileSync(path.join(LAB, 'LINES-REVIEW.md'), md);
   console.log('文案檢查通過。掃過：' + scanned.join('、'));
-  console.log('句子 ' + items.length + '（原句 ' + counts['原句'] + '、拍板 ' + counts['拍板'] + '、店主 ' + counts['店主'] + '、新 ' + counts['新'] + '）；原句／拍板逐字比對 ' + origChecked + ' 句、店主逐字比對 ' + ownerChecked + ' 句一致；v4 劇本原句 ' + orig26 + '／26 句、順序一致。');
+  console.log('句子 ' + items.length + '（原句 ' + counts['原句'] + '、拍板 ' + counts['拍板'] + '、店主 ' + counts['店主'] + '、新 ' + counts['新'] + '）；原句／拍板逐字比對 ' + origChecked + ' 句、店主逐字比對 ' + ownerChecked + ' 句一致；v4 劇本原句 ' + orig26 + '／25 句、順序一致。');
   console.log('已寫 game-lab/LINES-REVIEW.md（新句 ' + fresh.length + '，' + byScene.size + ' 個場景）。');
 }

@@ -594,3 +594,16 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
   .drawcard .stats{margin-bottom:8px;}
 }
 .drawcard .ci-foot::before{content:'';position:absolute;left:0;right:0;top:-18px;height:18px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none;}
+/* 開頭旁白（第一次推門；店主 11-10）：黑幕兩句（淡入、▼、點一下或等一下就走）→ 玻璃倒影捏人（charedit scene:'glass'）→ 淡出到店裡 */
+.lb-intro{position:absolute;top:0;right:0;bottom:0;left:0;z-index:65;background:#000;color:#f2efe8;display:flex;align-items:center;justify-content:center;padding:0 34px;
+  cursor:pointer;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;transition:opacity .7s ease;}
+.lb-intro .tx{margin:0;max-width:19em;font:400 16px/2.1 var(--zh);letter-spacing:.08em;opacity:0;}
+.lb-intro .tx.in{animation:lbIntroIn 1.2s ease forwards;}
+@keyframes lbIntroIn{from{opacity:0}to{opacity:1}}
+.lb-intro .nx{position:absolute;right:26px;bottom:30px;font-size:12px;visibility:hidden;}
+.lb-intro .nx.on{visibility:visible;animation:lbBlink 1s steps(1,end) infinite;}
+.lb-intro.edit{cursor:default;padding:0;}
+.lb-intro.edit .tx,.lb-intro.edit .nx{display:none;}
+.lb-intro .lb-intro-ed{position:absolute;top:0;right:0;bottom:0;left:0;background:#fff;animation:lbIntroIn .6s ease;}
+.lb-intro.out{opacity:0;pointer-events:none;}
+@media (prefers-reduced-motion:reduce){.lb-intro{transition:none;}.lb-intro .tx.in,.lb-intro .lb-intro-ed{animation:none;opacity:1;}}

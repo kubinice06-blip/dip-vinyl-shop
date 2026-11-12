@@ -82,3 +82,7 @@
   .ce .ce-opt{min-height:44px;}
 }
 .ce .ce-body::after{content:'';position:-webkit-sticky;position:sticky;bottom:-10px;display:block;height:16px;margin:0 -10px -10px;background:linear-gradient(rgba(255,255,255,0),var(--ce-bg));pointer-events:none;}
+/* 開頭旁白那次（scene:'glass'，店主 11-10）：✕ 換成寫字的「先隨便」；標題「玻璃上的你」 */
+.ce .ce-x.ce-skip{width:auto;padding:0 4px;}
+.ce .ce-x.ce-skip i{width:auto;height:30px;padding:0 11px;font:700 12px/1 var(--ce-zh);letter-spacing:.14em;font-style:normal;}
+.ce.ce-glass .ce-stage{background:#1c130d;}

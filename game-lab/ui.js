@@ -1377,8 +1377,65 @@
     if (firstEver() && withSound && f && f.music && f.music.preload) {
       try { f.music.preload([card(tonightId())].filter(Boolean)); } catch (e) { console.error(e); }
     }
-    if (firstEver()) startPrologue();
+    if (firstEver()) { if (introWanted()) playIntro(); else startPrologue(); }
     else startAgain();
+  }
+  // ---- 開頭旁白＋玻璃倒影捏人（店主 11-10 定稿；只在第一次推門）：黑幕兩句 → 捏人（玻璃門上的倒影，「先隨便」可略過）→ 序章從 O2 接下去
+  //   捏過人（save.seen.glass）、序章中途放棄又推門：只念第一句就接 O2。網站上捏過的小人（dip-character）＝預設（ensurePlayer）
+  //   ?debug=1 預設不演（既有 e2e 從 O2 開始）；&intro=1 才演（tests/e2e-intro.mjs）
+  function introWanted() { return !!(C.intro && C.intro.lines && C.intro.lines.length) && !(DEBUG && QS.intro !== '1'); }
+  function playIntro() {
+    var IN = C.intro, lines = IN.lines.slice(0, (save.seen.glass || !canCharEdit()) ? 1 : 2);
+    var veil = el('div', 'lb-intro', '<p class="tx" aria-live="polite"></p><span class="nx" aria-hidden="true">▼</span>');
+    veil.setAttribute('role', 'dialog'); veil.setAttribute('aria-label', '開頭旁白');
+    app().appendChild(veil); UI.intro = veil;
+    var tx = qs('.tx', veil), nx = qs('.nx', veil), i = -1, tm = 0, armed = false, ended = false;
+    var f = FX(); if (soundOn() && f && f.rainStart) try { f.rainStart(); } catch (_) {}
+    tlog('intro', 'start', { lines: lines.length });
+    function next() {
+      if (ended) return;
+      clearTimeout(tm); armed = false; nx.classList.remove('on');
+      i++;
+      if (i >= lines.length) return lines.length > 1 ? glassEdit() : finish();
+      tx.classList.remove('in'); void tx.offsetWidth;
+      tx.textContent = lines[i].text; tx.classList.add('in'); veil.setAttribute('data-line', lines[i].id);
+      tlog('intro', 'line', { id: lines[i].id });
+      if (i === 0) later(function () { sfx('bell'); }, 900);          // 「門上的鈴鐺清脆一響」
+      later(function () { armed = true; nx.classList.add('on'); }, UI.auto ? 0 : 700);
+      tm = later(next, UI.auto ? 120 : Math.min(6500, 1400 + 140 * lines[i].text.length));   // 跟對白一樣：給足閱讀時間自己走，點一下就走
+    }
+    veil.addEventListener('click', function () { if (armed && !veil.classList.contains('edit')) next(); });
+    function glassEdit() {
+      veil.classList.add('edit'); tx.textContent = '';
+      ensurePlayer();
+      var host = el('div', 'lb-intro-ed'); veil.appendChild(host);
+      var ed = null, gone = false;
+      var proceed = function (r) {
+        if (gone) return; gone = true;
+        if (r && r.spec) { save.player.name = r.name; save.player.avatar = r.spec; }
+        save.seen.glass = true; persist();
+        tlog('intro', 'glass', { skip: !r || r.skip === true });
+        later(finish, 0);                                   // 等捏人畫面自己關掉
+      };
+      try {
+        ed = W.DipLabCharEdit.open(host, { name: save.player.name, spec: save.player.avatar }, {
+          title: IN.title, scene: 'glass', skip: IN.skip,
+          onSave: function (r) { proceed(r); },
+          // 「先隨便」：畫面上現在這個就是你（沒動過＝網站上的小人或隨機給的那個），不丟掉已經改的
+          onCancel: function () { var r = ed ? ed.get() : null; if (r) r.skip = true; proceed(r); }
+        });
+      } catch (e) { console.error(e); }
+      UI.charEd = ed;
+      if (!ed) proceed(null);
+    }
+    function finish() {
+      if (ended) return; ended = true;
+      clearTimeout(tm); UI.charEd = null;
+      startPrologue();                                      // 黑幕底下先換好店裡（O2：你在門口、門晃）
+      veil.classList.add('out');
+      setTimeout(function () { veil.remove(); if (UI.intro === veil) UI.intro = null; }, rm() ? 0 : 750);
+    }
+    next();
   }
 
   // ======================================================================= 開新的一晚
