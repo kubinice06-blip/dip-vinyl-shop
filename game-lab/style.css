@@ -352,7 +352,7 @@ small{font-size:inherit;}
 .lb-learned span{border:1px solid var(--gold);background:var(--cream);color:var(--cream-ink);font-size:12px;font-weight:700;padding:2px 8px;}
 
 /* ---------- 吐司（z 40，不吃點擊） ---------- */
-.lb-toast{position:absolute;left:50%;top:40px;z-index:40;-webkit-transform:translateX(-50%);transform:translateX(-50%);max-width:92%;background:#fff;border:1px solid var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18);
+.lb-toast{position:absolute;left:50%;top:40px;z-index:40;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:max-content;max-width:92%;background:#fff;border:1px solid var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18);
   padding:6px 12px;font:700 13px/1.5 var(--zh);text-align:center;pointer-events:none;animation:lbSheetIn .2s ease-out;}
 .lb-toast.out{opacity:0;transition:opacity .35s;}
 
