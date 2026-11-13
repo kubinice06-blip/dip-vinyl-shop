@@ -352,7 +352,7 @@ small{font-size:inherit;}
 .lb-learned span{border:1px solid var(--gold);background:var(--cream);color:var(--cream-ink);font-size:12px;font-weight:700;padding:2px 8px;}
 
 /* ---------- 吐司（z 40，不吃點擊） ---------- */
-.lb-toast{position:absolute;left:50%;top:40px;z-index:40;-webkit-transform:translateX(-50%);transform:translateX(-50%);max-width:92%;background:#fff;border:1px solid var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18);
+.lb-toast{position:absolute;left:50%;top:40px;z-index:40;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:max-content;max-width:92%;background:#fff;border:1px solid var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18);
   padding:6px 12px;font:700 13px/1.5 var(--zh);text-align:center;pointer-events:none;animation:lbSheetIn .2s ease-out;}
 .lb-toast.out{opacity:0;transition:opacity .35s;}
 
@@ -557,6 +557,10 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-habit .lb{flex:none;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 8px;}
 .lb-habit .tx{padding:5px 8px;font-size:13px;font-weight:700;line-height:1.45;}
 .lb-sheet.guest .sub{margin:6px 0 0;}
+/* 來客畫面點老闆（店主 11-13）：「聊聊／換一張王牌」；現在帶的那張寫在上面一行 */
+.lb-sheet.owner .ow-now{margin:6px 0 0;font-size:12px;color:#444;line-height:1.5;}
+.lb-sheet.owner .two .lb-btn.col{gap:1px;letter-spacing:.08em;}
+.lb-sheet.owner .two .lb-btn.col .sub{color:rgba(255,255,255,.75);opacity:1;letter-spacing:.02em;}
 /* 規則卡（v3/final/rule-card.png；mock rulecard.html 的樣式） */
 .lb-rules h1{margin:0;font-size:22px;font-weight:900;letter-spacing:.18em;text-align:center;}
 .lb-rules .rsub{text-align:center;font-size:12px;color:var(--gray);letter-spacing:.2em;margin-top:2px;}

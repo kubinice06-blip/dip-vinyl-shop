@@ -193,7 +193,10 @@
       atkHelp: '剋中時多扣他 {n}', defHelp: '被扣時少扣 {n}（最多擋一半）', eAtkHelp: '扣到你就多扣 {n}',
       cont: '繼續試煉 ▸', abandon: '放棄這一趟', abandonWarn: '再按一次就放棄這一趟（{where}），從頭推門。', lastSummary: '看上一趟結算',
       retryMenu: ['▶ 再一場（這一輪只有一次）', '到這裡就好'],
-      shelfNew: '這一趟新認識'
+      shelfNew: '這一趟新認識',
+      // 換王牌（店主 11-13：開局沿用上次那張；第 1 位開打前，來客畫面點老闆才換）。aceAsk＝換王牌面板的標題（老闆說的）
+      owner: '老闆', aceTalk: '聊聊', aceSwap: '換一張王牌', aceSwapSub: '老闆送的那幾張也跟著換',
+      aceNow: '現在帶的：{title}《{album}》', aceAsk: '「想換一張？」', aceHint: '想換王牌，點老闆。', aceSwapped: '王牌換成《{album}》'
     },
     // 升級三選一（第一格固定是品味或底氣；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
     //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）
@@ -220,10 +223,10 @@
     man: {
       id: 'man', name: '男子', spr: 'e0', avatar: null,
       honesty: 'honest', hp: 10, taste: 'coh',
-      // 店主 11-13：掉落的必須是他牌組裡的專輯 → Fishmans 放進牌組（換掉 Eminem，同樣經典 5 星），讓他某一手打出來，打完掉在地上
+      // 店主 11-13：掉落的必須是他牌組裡的專輯 → 改成掉 Eminem《The Eminem Show》（原本就在他牌組；Fishmans 不再出現），讓他某一手打出來，打完掉在地上
       deck: ['coldplay-mylo-xyloto', 'imagine-dragons-night-visions', 'limp-bizkit-results-may-vary', '老王樂隊-暮夜徐行',
-        'fishmans-long-season', 'katy-perry-prism'],
-      drop: 'fishmans-long-season', sig: { id: 'fishmans-long-season', n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
+        'eminem-the-eminem-show', 'katy-perry-prism'],
+      drop: 'eminem-the-eminem-show', sig: { id: 'eminem-the-eminem-show', n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
       prologue: true, voice: { freq: 659, wave: 'square' }
     },
     copycat: {
@@ -336,6 +339,7 @@
   //     ui：選擇句（▼ 以選擇樣式亮，點一下才開面板）：'guess' 猜歌、'acePick' 挑王牌、'recs' 老闆的四張、'bargain' 特價區挑三張、
   //         'duel' 兩顆接受對決、'stake' 地上那張盤、'relic' 發燒配件三選一、'map' 進今晚來客
   //     prompt：面板上方那行字；prompts：選單的鈕（duel）；button：面板的確認鈕（recs）
+  //     ms：沒有 ui 的句子自動前進的毫秒數（沒給＝照字數；點一下照樣走）；text 裡的 {x} 由執行器代入（again 的 {ace}＝這一趟王牌的專輯名）
   //   Step = { do:'walk', id, to:[spot|[x,y]…], speed? } | { do:'pose', id, name, ms? } | { do:'emote', id, kind, ms? } | { do:'wait', ms }
   //        | { do:'door', mode } | { do:'face', id, to } | { do:'hold', id, what } | { do:'hide', id, on } | { do:'give', from, gap }
   //        | { do:'floor', at } | { do:'sfx', name } | { do:'par', steps } | { do:'seq', steps }
@@ -359,7 +363,7 @@
     speed: 54,
     // O21 選完「接受對決」（不加台詞；對話框留著老闆那句，到盤面滑進來才收，整合版面 b）：老闆帶路走到唱盤後面，兩人走到唱盤兩側；三人站定才播遇敵特效（D §3）
     toDuel: [par(walk('o', 'ref'), seq(wait(400), par(walk('f', 'duelE'), walk('p', 'duelP'))))],
-    // 再挑戰一趟：挑完王牌，走到門邊的特價箱挑三張（§2.5.2）
+    // 再挑戰一趟：老闆說「老樣子」（王牌固定，點老闆才換），走到門邊的特價箱挑三張（§2.5.2）
     toSale: [walk('p', 'sale')]
   };
 
@@ -416,7 +420,7 @@
         prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'], promptSubs: ['', '跳過教學'] }   // promptSubs：按鈕下方的小字（店主 11-12：不接在括號後面）
     ],
     // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
-    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
+    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Eminem）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
     epilogueWin: [
       { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句', set: { hide: { r1: true } } },
       { id: 'E2', who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', tag: '原句', act: [face('f', 'p')] },
@@ -450,10 +454,11 @@
     drop: [
       { id: 'G1', who: '', text: '對方似乎掉落了什麼……', tag: '店主' }
     ],
-    // 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 →（第二趟起）從唱片櫃挑種子（C.seeds）→ 走到特價箱挑三張（C.blocking.toSale）→ 來客
+    // 再挑戰一趟（≤10 秒）：門晃 → 老闆說你帶的還是上次那張（店主 11-13：開局不再挑王牌；想換，來客畫面點老闆）→（第二趟起）從唱片櫃挑種子（C.seeds）
+    //   → 走到特價箱挑三張（C.blocking.toSale）→ 來客
     again: [
-      { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' },
-        ui: 'acePick', prompt: '（挑一張。）' }
+      { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' }, ms: 1600 },
+      { id: 'A2', who: '老闆', text: '「老樣子，《{ace}》。」', tag: '新', ms: 2400 }
     ]
   };
 
@@ -648,7 +653,7 @@
   // ===================================================================
   var TUT_PLAYS = [
     { id: 'coldplay-mylo-xyloto', attr: 'c' }, { id: 'imagine-dragons-night-visions', attr: 'c' }, { id: 'limp-bizkit-results-may-vary', attr: 'h' },
-    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'fishmans-long-season', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
+    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'eminem-the-eminem-show', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
   ];
   var TUT_HINTS = ['c5', 'c2', 'h2', 'o2', 'c4', 'c2'];
   var TUT_HANDS = {
@@ -762,6 +767,10 @@
       duel: L('先看提示那句。', '新'),
       reward: L('收好，別折到封套。', '新')
     },
+    // 換王牌（店主 11-13）：換完、選同一張、打過第 1 位之後點老闆（不給換了）
+    aceDone: L('好，換這張。送你的也一起換了。', '新'),
+    aceSame: L('那就照舊。', '新'),
+    aceLater: L('想換王牌？下一趟開門前再說。', '新'),
     nightIntro: [L('客人一個一個來，打到輸為止。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
@@ -775,6 +784,7 @@
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
+    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆',
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）' };
 
   // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號，{n} 一律代入千分位字串 engine.moneyText(n)：$1,200）

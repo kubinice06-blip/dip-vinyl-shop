@@ -14,7 +14,7 @@
  * 規則：
  *  - 只寫 localStorage 'dipGameLab_v1'（存檔版本 6；v4 存檔照 §1 裁定 12 遷移：留唱片櫃、偏好、小人、配件，丟掉一晚的 run；更舊的安全丟掉）；不用 Firebase；不 DipPlayer.mount。
  *  - 從唱片櫃挑牌開局（店主 11-13；SPEC 從唱片櫃挑牌開局）：唱片櫃分「擁有」（save.shelf[id].own＋src：'gift' 老闆送的／'run' 一趟留一張（店內取得金框）／'boss' 藏家王牌）
- *    與「認識」（照舊）；第二趟起挑完王牌、走去特價箱之前挑種子（最多 3 張）；打贏客人領獎前念掉落旁白（C.script.drop）；結算「這一趟帶走一張」。
+ *    與「認識」（照舊）；第二趟起老闆那句說完、走去特價箱之前挑種子（最多 3 張）；打贏客人領獎前念掉落旁白（C.script.drop）；結算「這一趟帶走一張」。
  *    存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張、打倒藏家拿到的王牌算擁有（migrate5）。
  *  - 整支包在 IIFE 裡，只掛 window.DipLabUI（＋?debug=1 的 window.__lab）。
  *  - UI 不算傷害、不讀 intent：所有數字都來自 DipLabEngine。
@@ -921,7 +921,7 @@
     function textOf(b) {
       var t = b.text;
       if (t && typeof t === 'object') t = t[ctx.tonightTier] || t.hall || '';
-      return String(t || '');
+      return ctx.vars ? fill(t, ctx.vars) : String(t || '');      // {x}：再挑戰一趟的 {ace}（這一趟王牌的專輯名；店主 11-13）
     }
     function runBeat(b, onUi) {
       st.beat = b.id || null; st.beatWho = b.who;
@@ -954,7 +954,7 @@
         }
         showNext(true, false); tlog(st.beat, 'next');
         // NP-11：自動前進給足閱讀時間（約每秒 6–7 字）；點一下就走。⏩ 快轉中不停
-        var ms = st.ff ? 0 : UI.auto ? 120 : Math.min(6500, 1400 + 140 * text.length);
+        var ms = st.ff ? 0 : UI.auto ? 120 : b.ms > 0 ? b.ms : Math.min(6500, 1400 + 140 * text.length);   // b.ms：劇本指定（再挑戰一趟不等太久）
         return waitTap(ms).then(function () { showNext(false); });
       });
     }
@@ -1322,7 +1322,7 @@
       }, 200);
     });
   }
-  // 一張唱片攤開（序章地上那張、打倒藏家時他送的那張）：封面 140＋三軸＋按鈕。title 為 null 時不畫標題列（D §2：Fishmans 那張不加敘述）
+  // 一張唱片攤開（序章地上那張、打倒藏家時他送的那張）：封面 140＋三軸＋按鈕。title 為 null 時不畫標題列（D §2：男子掉的那張 那張不加敘述）
   function cardPanel(c, opts) {
     opts = opts || {};
     return new Promise(function (res) {
@@ -1706,27 +1706,26 @@
     }
     return Promise.resolve();
   }
-  // ---- 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 →（第二趟起）從唱片櫃挑種子 → 走到特價箱挑三張（D §2「第一個自己決定牌組的選擇」）→ 來客（第 1 位）
+  // ---- 再挑戰一趟（≤10 秒）：門晃 → 老闆一句「老樣子，《王牌》。」（店主 11-13：開局不再挑王牌，沿用 save.lastAce；想換＝來客畫面第 1 位開打前點老闆）
+  //   →（第二趟起）從唱片櫃挑種子 → 走到特價箱挑三張（D §2「第一個自己決定牌組的選擇」）→ 來客（第 1 位）
   function startAgain() {
-    var ctx = { flags: {}, quiet: !soundOn(), defaultTier: save.lastAce || 'hall' };
+    var tier = TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : 'hall';
+    var ctx = { flags: {}, quiet: !soundOn(), defaultTier: tier, vars: { ace: (card(C.aces[tier]) || {}).album || '' } };
     abandonRun(save.run); save.run = null; persist();
-    go('scene', { p: 'door', f: 'hide', o: 'counter', stripState: { ace: null, bag: [] }, start: function (sc) {
+    go('scene', { p: 'door', f: 'hide', o: 'counter', stripState: { ace: C.aces[tier], bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
-      dlg.run(C.script.again, function (ui, b) {
-        if (ui !== 'acePick') return Promise.resolve();
-        return acePickPanel(sc, ctx, b).then(function (tier) {
-          // 挑完王牌、走去特價箱之前：從唱片櫃挑種子（店主 11-13 §1 裁定 2；櫃裡沒有能帶的就跳過）
-          return seedPickFlow(tier).then(function (seeds) { createRun({ ace: tier, prologue: false, seeds: seeds }); });
-        }).then(function () {
-          dlg.clear();
-          return dlg.steps((C.blocking && C.blocking.toSale) || [], 'toSale');
-        }).then(function () {
-          return bargainPickFlow((C.shopUi && C.shopUi.bargainPrompt) || '');
-        }).then(function () { go('night'); return new Promise(function () {}); });
-      });
+      dlg.run(C.script.again).then(function () {
+        // 老闆那句說完、走去特價箱之前：從唱片櫃挑種子（店主 11-13 §1 裁定 2；櫃裡沒有能帶的就跳過）
+        return seedPickFlow(tier).then(function (seeds) { createRun({ ace: tier, prologue: false, seeds: seeds }); });
+      }).then(function () {
+        dlg.clear();
+        return dlg.steps((C.blocking && C.blocking.toSale) || [], 'toSale');
+      }).then(function () {
+        return bargainPickFlow((C.shopUi && C.shopUi.bargainPrompt) || '');
+      }).then(function () { go('night'); });
     } });
   }
-  // ---- 挑種子（店主 11-13 §0 種子制；§1 裁定 2、3、12）：第二趟起，挑完王牌、走去特價箱之前。在店裡（舞台照舊），面板列出唱片櫃裡
+  // ---- 挑種子（店主 11-13 §0 種子制；§1 裁定 2、3、12）：第二趟起，老闆那句說完、走去特價箱之前。在店裡（舞台照舊），面板列出唱片櫃裡
   //   「擁有、不是頂點卡」的唱片（封面＋三色星數；店內取得金框），點選最多 3 張 →「就這幾張 ▸」；三色篩選；「先不挑」＝全用老闆送的。
   //   沒挑的格子用老闆送的（這次挑的王牌那組）補。矮螢幕不捲頁（面板內可捲）。自動遊玩：照最高星挑（engine.seedPolicy）
   //   審查 #3：這次王牌那組送的不列（帶了也一樣會送，挑了等於沒挑）；扣掉之後沒有能帶的就不開面板。
@@ -2080,7 +2079,7 @@
     });
   }
   // ---- 序章收尾（D §2 E1–E11）：他走出門、地上留一張盤 → 掉落旁白「對方似乎掉落了什麼……」（C.script.drop，同一個對白框；店主 11-13 §0：
-  //   男子那張 Fishmans 在他牌組裡＝客人掉落，engine 記進 run.drops；取代 DECISIONS-v4 的「撿起面板之前沒有旁白」）→ 撿起面板 → 老闆走到你面前 →
+  //   男子那張 Eminem 在他牌組裡＝客人掉落，engine 記進 run.drops；取代 DECISIONS-v4 的「撿起面板之前沒有旁白」）→ 撿起面板 → 老闆走到你面前 →
   //   長桌的木箱、發燒配件三選一 → 第一位客人推門 → 來客。重新整理回來從 E4 接著演，旁白一樣會念
   function epilogueFlow(resumed) {
     var r = save.run;
@@ -2402,7 +2401,15 @@
       }, 300);
       return;
     }
-    if (!save.seen.night && !UI.auto) later(function () {
+    // 換王牌的一次性提示（店主 11-13；save.seen.aceSwap）：第 1 位開打前、第一次來客的提示（nightIntro）看過之後才出——老闆頭上閃一下＋吐司「想換王牌，點老闆。」
+    if (save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C)) later(function () {
+      if (UI.screen !== 'night' || !save.run || !E.canSwitchAce(save.run, C) || save.seen.aceSwap) return;
+      save.seen.aceSwap = true; persist();
+      stg('emote', 'o', 'excl', 2600);
+      toast(TU('aceHint'));
+    }, 700);
+    var quiet = UI.quietNight; UI.quietNight = false;          // 剛換完王牌重畫：這一次不再排第一次來客的提示（審查：三則訊息疊在一起）
+    if (!save.seen.night && !UI.auto && !quiet) later(function () {
       if (UI.screen !== 'night') return;
       // 整個名單（含「第 n 輪」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
       var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
@@ -2474,6 +2481,55 @@
     floatSheet(html, 'relics');
   }
 
+  // ---- 來客畫面點老闆（店主 11-13：開局不再挑王牌，想換跟老闆說＝換流派）：這一趟第 1 位開打前（engine.canSwitchAce）＝小選單「聊聊／換一張王牌」；
+  //   打過第 1 位之後照舊只說一句（輪流提醒「下一趟開門前再說」）
+  function ownerTalk() {
+    var r = save.run; if (!r) return;
+    if (!E.canSwitchAce(r, C)) {
+      UI.ownerN = (UI.ownerN | 0) + 1;
+      stageSay('o', (UI.ownerN % 2 ? line('aceLater') : '') || line('ownerHint', 'night'), 'owner', 2600);
+      return;
+    }
+    sfx('tick');
+    if (!save.seen.aceSwap) { save.seen.aceSwap = true; persist(); }   // 自己來找老闆了：「想換王牌，點老闆。」的提示不用再出
+    var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
+    var a = card(C.aces[r.ace]) || {};
+    var html = '<div class="hd"><h3>' + esc(TU('owner')) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub ow-now">' + esc(TU('aceNow', { title: (C.aceTitle || {})[r.ace] || '', album: a.album || '' })) + '</p>' +
+      '<div class="two lb-ownermenu"><button type="button" class="lb-btn big key" data-a="talk">' + esc(TU('aceTalk')) + '</button>' +
+      '<button type="button" class="lb-btn pri big key col" data-a="swap">' + esc(TU('aceSwap')) + '<span class="sub">' + esc(TU('aceSwapSub')) + '</span></button></div>';
+    var s = floatSheet(html, 'owner');
+    s.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-a=talk],[data-a=swap]'); if (!b) return;
+      s.remove(); syncFloat();
+      if (b.getAttribute('data-a') === 'talk') stageSay('o', line('ownerHint', 'night'), 'owner', 2600);
+      else aceSwapFlow();
+    });
+  }
+  // 換一張王牌：現有的王牌三選一（標題＝老闆那句「想換一張？」、預設選中現在這張）；選同一張＝不換。換了：包包裡送的那幾張跟著換（engine.switchAce）、
+  //   新王牌與那組送的記成擁有（src gift，跟 createRun 一樣）、下一趟沿用（save.lastAce）
+  function aceSwapFlow() {
+    var r = save.run;
+    if (!r || UI.going || !E.canSwitchAce(r, C)) return;
+    UI.going = true;
+    var from = r.ace;
+    acePickPanel(null, { defaultTier: from }, { prompt: TU('aceAsk') }).then(function (tier) {
+      UI.going = false;
+      if (save.run !== r || UI.screen !== 'night') return;
+      var res = tier && tier !== from ? E.switchAce(r, C, tier) : null;
+      if (res && res.ok) {
+        save.lastAce = tier;
+        shelfAdd(C.aces[tier]); (C.gifts[tier] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
+        var got = runGot(r);
+        res.effects.forEach(function (f) { var k = f.loseCard ? got.indexOf(f.loseCard) : -1; if (k >= 0) got.splice(k, 1); if (f.gainCard) gotCard(r, f.gainCard); });
+        persist();
+      }
+      UI.keepP = true; UI.quietNight = true; go('night');
+      stageSay('o', line(res && res.ok ? 'aceDone' : 'aceSame'), 'owner', 2600);
+      if (res && res.ok) toast(TU('aceSwapped', { album: (card(C.aces[tier]) || {}).album || '' }));
+    });
+  }
+
   // ======================================================================= 店裡的東西點了會怎樣（牆上唱片＝唱片資訊、箱子＝翻、試聽機＝放一張、老闆／店貓＝一句）
   function boothIds() {
     var r = save.run, out = [], add = function (id) { var c = card(id); if (c && c.previewUrl && out.indexOf(id) < 0) out.push(id); };
@@ -2525,6 +2581,8 @@
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
     // 櫃檯：來客、兩位客人之間＝配件櫃（B3 的經濟介面）；其他畫面照舊老闆一句
     if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop'); return; }
+    // 來客畫面點老闆：第 1 位開打前＝「聊聊／換一張王牌」（店主 11-13）
+    if ((action === 'talk:owner' || action === 'owner' || action === 'counter') && scr === 'night' && save.run) { ownerTalk(); return; }
     if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
     if (action === 'cat') { var ct = line('cat'); if (ct) stageSay('o', ct, 'owner', 1600); return; }
     if ((m = /^shop:(.+)$/.exec(action))) { if (scr === 'taipei' && m[1] === 'dip') backFromTaipei(); return; }

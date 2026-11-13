@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 369（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 381（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -45,6 +45,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | 老闆・A1 | 「……又是你。」 | 本規格新寫 | `script.again[0]` |
+| 老闆・A2 | 「老樣子，《{ace}》。」 | 本規格新寫 | `script.again[1]` |
 
 ## 老闆（對決外）
 
@@ -336,6 +337,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・ownerHint.night | 客人一個一個來。 | 本規格新寫 | `shopLines.ownerHint.night` |
 | 老闆・ownerHint.duel | 先看提示那句。 | 本規格新寫 | `shopLines.ownerHint.duel` |
 | 老闆・ownerHint.reward | 收好，別折到封套。 | 本規格新寫 | `shopLines.ownerHint.reward` |
+| 老闆・aceDone | 好，換這張。送你的也一起換了。 | 本規格新寫 | `shopLines.aceDone` |
+| 老闆・aceSame | 那就照舊。 | 本規格新寫 | `shopLines.aceSame` |
+| 老闆・aceLater | 想換王牌？下一趟開門前再說。 | 本規格新寫 | `shopLines.aceLater` |
 | 老闆・bin | 點封面看唱片資訊、試聽。 | 本規格新寫 | `shopLines.bin` |
 | 老闆・booth | 挑一張你唱片櫃裡的，放來聽聽。 | 本規格新寫 | `shopLines.booth` |
 | 老闆・boothEmpty | 唱片櫃還空著。贏一場再來聽。 | 本規格新寫 | `shopLines.boothEmpty` |
@@ -459,6 +463,14 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・retryMenu[0] | ▶ 再一場（這一輪只有一次） | 本規格新寫 | `trial.ui.retryMenu[0]` |
 | （畫面字）・retryMenu[1] | 到這裡就好 | 本規格新寫 | `trial.ui.retryMenu[1]` |
 | （畫面字）・shelfNew | 這一趟新認識 | 本規格新寫 | `trial.ui.shelfNew` |
+| （畫面字）・owner | 老闆 | 本規格新寫 | `trial.ui.owner` |
+| （畫面字）・aceTalk | 聊聊 | 本規格新寫 | `trial.ui.aceTalk` |
+| （畫面字）・aceSwap | 換一張王牌 | 本規格新寫 | `trial.ui.aceSwap` |
+| （畫面字）・aceSwapSub | 老闆送的那幾張也跟著換 | 本規格新寫 | `trial.ui.aceSwapSub` |
+| （畫面字）・aceNow | 現在帶的：{title}《{album}》 | 本規格新寫 | `trial.ui.aceNow` |
+| （畫面字）・aceAsk | 「想換一張？」 | 本規格新寫 | `trial.ui.aceAsk` |
+| （畫面字）・aceHint | 想換王牌，點老闆。 | 本規格新寫 | `trial.ui.aceHint` |
+| （畫面字）・aceSwapped | 王牌換成《{album}》 | 本規格新寫 | `trial.ui.aceSwapped` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
 

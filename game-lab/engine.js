@@ -61,10 +61,16 @@
 //              拿獎勵包包滿「拿掉一張」照舊可以拿掉種子，拿掉就不再是種子）；run.gifts＝這一趟實際放進包包的老闆送的（isGift 照它）
 //            canSeed(content, id)（卡存在、不是頂點卡）· isSeed(run, content, id) · seedPolicy(content, ids, n?)（自動遊玩：照最高星挑；同星看總星、再看 id）
 //            bossAceFor(seedKey, runNo, ace)（這一趟藏家帶哪張王牌＝newRun 的 run.bossAce；存檔遷移用）
-//            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子掉的 Fishmans 也算：它在他牌組裡、他一定打出來，店主 11-13）
+//            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子掉的 Eminem 也算：它在他牌組裡、他一定打出來，店主 11-13）
 //            keepCandidates(run, content, owned) -> [ids]（一趟留一張的候選：entered＋drops，已經擁有的、頂點卡不列）
 //            keepOne(run, content, id, owned) -> {ok, error}（只在這一趟結束後、只能一次；run.kept＝那張）
 //            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart') -> [ch] · bargainPolicy(run, content) -> ch
+// Ace        換王牌（店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說＝換流派。流派目前只決定王牌那張、老闆送的四張、教學手牌，沒有被動規則）
+//            canSwitchAce(run, content)：這一趟第 1 位還沒開打（序章那一趟＝序章打完、第 1 位開打前）；run.fought＝這一趟跟客人開打過（startFight 記，序章不算；
+//              舊的 run 沒有這欄：第 1 輪的說情用掉了＝打過第 1 位）
+//            switchAce(run, content, tier) -> {ok, effects:[{ace, from}, {loseCard}…, {gainCard}…]} | {ok:false, error:'badAce'|'notNow'|'same'}（錯的不改 run）
+//              王牌換掉；包包裡老闆送的（run.gifts 還在包包裡的）原位換成新流派那組（照順序、跳過包包裡已經有的：種子、特價箱、買的；不夠就少）；其他不動。
+//              run.gifts、run.taken 跟著改；藏家王牌撞到新王牌就重抽（bossAceFor：雜湊，不碰 run.rng）；店裡擺著、現在進了包包的那幾張下架
 // Economy    台幣行情（FIXLIST 8＋X／Y 契約；數字在 content.economy，這裡的 ECON 是沒給時的預設）
 //            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
 //            rarityScore(card) ＝ c＋h＋(o===5 ? 1 : 0) · rarity(card) → 'common'≤5｜'rare'6｜'uncommon'7｜'epic'8｜'legendary'≥9｜'apex'（tier hall／pearl／heresy）
@@ -288,7 +294,7 @@
       deck: (E.deck || []).map(x => cardFrom(content, x)),
       honesty: hk, q: H.q, planner, coef: { w: co.w, nz: co.nz, mercy: !!co.mercy },
       elite: !!E.elite, boss: !!E.boss, atk: 0, def: 0, qMercy: trialCfg(content, o.tier).curve.mercyFeint, ace: null, pos: null, cls: null,
-      sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Fishmans，打完掉在地上）
+      sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Eminem，打完掉在地上）
     if (g) {
       const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss' });
@@ -808,6 +814,7 @@
     if (tut && content.tutorial.script) opts.script = content.tutorial.script[run.ace] || null;
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp || CFG.playerHp;
     run.hpIn = run.hp;                                        // 說情重打從這裡開始（裁定 8）
+    if (!prologue) run.fought = true;                          // 跟客人開打過：之後這一趟不能再換王牌（canSwitchAce）
     const r = startDuel(playerDef(content, run), eDef, opts);
     run.duel = r.duel; run.duelEnemy = enemyId;
     return { duel: r.duel, events: r.events, enemyId };
@@ -841,7 +848,7 @@
         const cards = (E.drop ? [E.drop] : []).filter(id => !run.bag.includes(id) && content.cards[id]);
         const relics = (((content.rewards || {}).prologueRelics) || []).filter(id => !run.relics.includes(id));
         run.pending = { type: 'reward', enemyId, prologue: true, cards, relics, need: 'cardThenRelic', cardDone: !cards.length, relicDone: !relics.length };
-        // 男子掉的 Fishmans 現在在他牌組裡、也打出來過（店主 11-13）＝客人掉落，給一趟留一張
+        // 男子掉的 Eminem 在他牌組裡、也打出來過（店主 11-13）＝客人掉落，給一趟留一張
         if (!Array.isArray(run.drops)) run.drops = [];
         for (const id of cards) if ((E.deck || []).some(c => (c && c.id || c) === id) && !run.drops.includes(id)) run.drops.push(id);
       } else {
@@ -1026,6 +1033,37 @@
   function canShop(run) { return !!run && !run.over && !run.pending && !run.duel && run.prologue !== 'pending' && !!shopOf(run).bargainPicked; }
   // 特價箱免費挑三張：只在第 1 位之前（裁定 4；之後每輪補貨、要買）
   function canBargainPick(run) { return !!run && !shopOf(run).bargainPicked && !run.duel && !run.over && run.pos === 1; }
+  // 換王牌（店主 11-13）：只在這一趟第 1 位開打之前（序章那一趟：序章打完、領完撿到的那張之後）
+  function canSwitchAce(run, content) {
+    if (!run || run.over || run.pending || run.duel || run.prologue === 'pending' || run.pos !== 1 || run.fought) return false;
+    return !(content && Number.isInteger(run.retryLeft) && run.retryLeft < trialCfg(content, run.tier).retry);   // 舊的 run：說情用掉了＝打過第 1 位
+  }
+  function switchAce(run, content, tier) {
+    const fail = error => ({ ok: false, error, effects: [] });
+    if (!run || !TIERS.includes(tier) || !cardOf(content, (content.aces || {})[tier])) return fail('badAce');
+    if (!canSwitchAce(run, content)) return fail('notNow');
+    if (tier === run.ace) return fail('same');
+    const from = run.ace, G = content.gifts || {};
+    const old = Array.isArray(run.gifts) ? run.gifts : (G[from] || []);
+    const slots = run.bag.map((id, k) => old.includes(id) ? k : -1).filter(k => k >= 0);
+    const rest = run.bag.filter((id, k) => !slots.includes(k));
+    const next = uniq((G[tier] || []).filter(id => cardOf(content, id) && !rest.includes(id))).slice(0, slots.length);
+    const lost = slots.map(k => run.bag[k]);
+    let j = 0; const bag = [];
+    run.bag.forEach((id, k) => { if (!slots.includes(k)) bag.push(id); else if (j < next.length) bag.push(next[j++]); });   // 原位換；不夠的格子拿掉
+    run.bag = bag; run.ace = tier; run.gifts = next.slice();
+    run.taken = Math.max(0, (run.taken | 0) + next.length - lost.length);
+    if (run.bossAce === tier || !TIERS.includes(run.bossAce)) run.bossAce = bossAceFor(run.seedKey, run.runNo, tier);
+    const SH = run.shop;
+    if (SH) {
+      if (SH.bins) for (const k of Object.keys(SH.bins)) if (Array.isArray(SH.bins[k])) SH.bins[k] = SH.bins[k].filter(id => !bag.includes(id));
+      if (Array.isArray(SH.bargain)) SH.bargain = SH.bargain.filter(id => !bag.includes(id));
+    }
+    const effects = [{ ace: tier, from }];
+    for (const id of lost) if (!next.includes(id)) effects.push({ loseCard: id });
+    for (const id of next) if (!lost.includes(id)) effects.push({ gainCard: id });
+    return { ok: true, effects };
+  }
 
   function choose(run, content, ch) {
     const effects = [];
@@ -1341,5 +1379,5 @@
     trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, isGift, moneyText,
     runPolicy, shopPolicy, bargainPolicy, policies,
-    canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne };
+    canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce };
 });
