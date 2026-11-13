@@ -639,7 +639,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | Beverly Glenn-Copeland《...Keyboard Fantasies...》 | 「八六年他自己出的卡帶。快三十年後，京都一家唱片行寫信來問還有沒有貨。」 | 本規格新寫 | `pitch#beverly-glenn-copeland-keyboard-fantasies` |
 | Daft Punk《Random Access Memories》 | 「兩個機器人這次找真的樂手進錄音室。〈Get Lucky〉那年走到哪都聽得到。」 | 本規格新寫 | `pitch#daft-punk-random-access-memories` |
-| Miles Davis《Sketches of Spain》 | 「跟 Gil Evans 一起做的。第一首〈Concierto de Aranjuez〉十六分鐘，小號像在唱歌。」 | 本規格新寫 | `pitch#miles-davis-sketches-of-spain` |
+| Miles Davis《Cookin' with the Miles Davis Quintet》 | 「第一代五重奏：Coltrane、Red Garland、Paul Chambers、Philly Joe Jones。第一首〈My Funny Valentine〉，小號輕得像在耳邊說話。」 | 本規格新寫 | `pitch#miles-davis-cookin-with-the-miles-davis-quintet` |
 | Brian Eno《Ambient 1: Music for Airports》 | 「他在機場等飛機時想到的。幾段長短不一的錄音帶一直繞，越聽越安靜。」 | 本規格新寫 | `pitch#brian-eno-ambient-1-music-for-airports` |
 
 ## 推薦語・老闆四張・流亡

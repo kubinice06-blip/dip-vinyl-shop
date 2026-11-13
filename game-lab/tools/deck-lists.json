@@ -1,5 +1,5 @@
 {
- "_doc": "v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4；FIXLIST 4／5 改成店主網站的十大類＋TW＋NEW＋門口牆 FEATURE／PICKS）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區 {label（名牌英文）, zh（點了掛的中文全名）, rule（上架規則，見 tools/check-covers.mjs ruleMisses）}；bin_<key>＝那一區的卡池（正面封面在 shops/dip.json，烘焙時讀進 bins.js 的 front）。",
+ "_doc": "keep_pool＝店主 11-13 殿堂禮物換成有名的之後、原本那兩張留在卡池（不再是禮物）。v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4；FIXLIST 4／5 改成店主網站的十大類＋TW＋NEW＋門口牆 FEATURE／PICKS）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區 {label（名牌英文）, zh（點了掛的中文全名）, rule（上架規則，見 tools/check-covers.mjs ruleMisses）}；bin_<key>＝那一區的卡池（正面封面在 shops/dip.json，烘焙時讀進 bins.js 的 front）。",
  "_region": {
   "吉田美奈子-monochrome": "jp",
   "松田聖子-風立ちぬ": "jp",
@@ -195,7 +195,11 @@
  ],
  "gift_hall": [
   "David Bowie|Low",
-  "Vashti Bunyan|Just Another Diamond Day",
+  "Daft Punk|Random Access Memories",
+  "Miles Davis|Cookin' with the Miles Davis Quintet",
+  "Brian Eno|Ambient 1: Music for Airports"
+ ],
+ "keep_pool": [
   "Scott Walker|Tilt",
   "Beverly Glenn-Copeland|...Keyboard Fantasies..."
  ],
@@ -315,7 +319,7 @@
  ],
  "bin_jazz": [
   "John Coltrane|Blue Train",
-  "Caetano Veloso|Transa",
+  "Miles Davis|Sketches of Spain",
   "Herbie Hancock|Maiden Voyage",
   "Thelonious Monk|Straight, No Chaser",
   "Kenny Drew|Everything I Love",
