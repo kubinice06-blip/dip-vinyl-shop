@@ -193,7 +193,10 @@
       atkHelp: '剋中時多扣他 {n}', defHelp: '被扣時少扣 {n}（最多擋一半）', eAtkHelp: '扣到你就多扣 {n}',
       cont: '繼續試煉 ▸', abandon: '放棄這一趟', abandonWarn: '再按一次就放棄這一趟（{where}），從頭推門。', lastSummary: '看上一趟結算',
       retryMenu: ['▶ 再一場（這一輪只有一次）', '到這裡就好'],
-      shelfNew: '這一趟新認識'
+      shelfNew: '這一趟新認識',
+      // 換王牌（店主 11-13：開局沿用上次那張；第 1 位開打前，來客畫面點老闆才換）。aceAsk＝換王牌面板的標題（老闆說的）
+      owner: '老闆', aceTalk: '聊聊', aceSwap: '換一張王牌', aceSwapSub: '老闆送的那幾張也跟著換',
+      aceNow: '現在帶的：{title}《{album}》', aceAsk: '「想換一張？」', aceHint: '想換王牌，點老闆。', aceSwapped: '王牌換成《{album}》'
     },
     // 升級三選一（第一格固定是品味或底氣；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
     //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）
@@ -336,6 +339,7 @@
   //     ui：選擇句（▼ 以選擇樣式亮，點一下才開面板）：'guess' 猜歌、'acePick' 挑王牌、'recs' 老闆的四張、'bargain' 特價區挑三張、
   //         'duel' 兩顆接受對決、'stake' 地上那張盤、'relic' 發燒配件三選一、'map' 進今晚來客
   //     prompt：面板上方那行字；prompts：選單的鈕（duel）；button：面板的確認鈕（recs）
+  //     ms：沒有 ui 的句子自動前進的毫秒數（沒給＝照字數；點一下照樣走）；text 裡的 {x} 由執行器代入（again 的 {ace}＝這一趟王牌的專輯名）
   //   Step = { do:'walk', id, to:[spot|[x,y]…], speed? } | { do:'pose', id, name, ms? } | { do:'emote', id, kind, ms? } | { do:'wait', ms }
   //        | { do:'door', mode } | { do:'face', id, to } | { do:'hold', id, what } | { do:'hide', id, on } | { do:'give', from, gap }
   //        | { do:'floor', at } | { do:'sfx', name } | { do:'par', steps } | { do:'seq', steps }
@@ -450,10 +454,11 @@
     drop: [
       { id: 'G1', who: '', text: '對方似乎掉落了什麼……', tag: '店主' }
     ],
-    // 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 →（第二趟起）從唱片櫃挑種子（C.seeds）→ 走到特價箱挑三張（C.blocking.toSale）→ 來客
+    // 再挑戰一趟（≤10 秒）：門晃 → 老闆說你帶的還是上次那張（店主 11-13：開局不再挑王牌；想換，來客畫面點老闆）→（第二趟起）從唱片櫃挑種子（C.seeds）
+    //   → 走到特價箱挑三張（C.blocking.toSale）→ 來客
     again: [
-      { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' },
-        ui: 'acePick', prompt: '（挑一張。）' }
+      { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' }, ms: 1600 },
+      { id: 'A2', who: '老闆', text: '「老樣子，《{ace}》。」', tag: '新', ms: 2400 }
     ]
   };
 
@@ -762,6 +767,10 @@
       duel: L('先看提示那句。', '新'),
       reward: L('收好，別折到封套。', '新')
     },
+    // 換王牌（店主 11-13）：換完、選同一張、打過第 1 位之後點老闆（不給換了）
+    aceDone: L('好，換這張。送你的也一起換了。', '新'),
+    aceSame: L('那就照舊。', '新'),
+    aceLater: L('想換王牌？下一趟開門前再說。', '新'),
     nightIntro: [L('客人一個一個來，打到輸為止。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
@@ -775,6 +784,7 @@
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
+    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆',
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）' };
 
   // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號，{n} 一律代入千分位字串 engine.moneyText(n)：$1,200）

@@ -1279,5 +1279,121 @@ section('17 從唱片櫃挑牌開局：種子（包包組成、序章不收、�
     ok(bad === 0, 'bossAceFor matches newRun', bad); }
 });
 
+section('18 換王牌（店主 11-13：開局沿用上次那張、跟老闆說才換）：時機（第 1 位開打前；序章那一趟＝序章打完後）、包包組成（原位換、跳過已有的、不夠就少）、藏家王牌重抽、錯的不改 run', () => {
+  const G = C.gifts, NON = Object.keys(C.cards).filter(id => !C.cards[id].tier).sort();
+  const free = NON.filter(id => !Object.values(G).flat().includes(id) && !C.bargain.pool.includes(id));
+  const forceLose = run => { const f = EN.startFight(run, C, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } }); return EN.finishFight(run, C); };
+  const untouched = (run, fn, err, name) => { const before = JSON.stringify(run), r = fn(); ok(!r.ok && r.error === err && JSON.stringify(run) === before && Array.isArray(r.effects) && !r.effects.length, name, r); };
+  // (a) 第二趟起（沒有序章）：開局就能換；特價箱挑完也能換；包包裡送的四張原位換成新那組、特價箱三張不動；收了幾張不變；王牌本身算送的
+  for (const from of TIERS) for (const to of TIERS) {
+    if (from === to) continue;
+    const run = EN.newRun(C, { seedKey: 'sw-' + from + to, runNo: 2, ace: from });
+    ok(EN.canSwitchAce(run, C), from + '→' + to + ': can switch before the bargain pick');
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    const bp = run.bag.slice(4), taken = run.taken, rng0 = run.rng, money = run.money;
+    ok(EN.canSwitchAce(run, C) && EN.canSwitchAce(run), from + '→' + to + ': can switch after the bargain pick (content optional)');
+    const r = EN.switchAce(run, C, to);
+    ok(r.ok && run.ace === to, from + '→' + to + ': ok', r);
+    eq(run.bag, G[to].concat(bp), from + '→' + to + ': bag = new gifts (same slots) + bargain 3');
+    eq(run.gifts, G[to], from + '→' + to + ': run.gifts = new set');
+    ok(run.taken === taken && run.rng === rng0 && run.money === money && run.pos === 1 && !run.pending && !run.duel, from + '→' + to + ': taken / rng / money / pos untouched');
+    eq(r.effects[0], { ace: to, from }, from + '→' + to + ': first effect {ace, from}');
+    ok(r.effects.filter(e => e.loseCard).length === 4 && r.effects.filter(e => e.gainCard).length === 4, from + '→' + to + ': 4 lose + 4 gain effects');
+    ok(G[to].every(id => EN.isGift(run, C, id)) && EN.isGift(run, C, C.aces[to]) && !EN.isGift(run, C, C.aces[from]) && G[from].every(id => !EN.isGift(run, C, id)), from + '→' + to + ': isGift follows the new set');
+    ok(run.bossAce !== run.ace && TIERS.includes(run.bossAce), from + '→' + to + ': boss ace differs from yours');
+    ok(Object.values(run.shop.bins).flat().every(id => !run.bag.includes(id)) && run.shop.bargain.every(id => !run.bag.includes(id)), from + '→' + to + ': shop does not sell what is in the bag');
+    const back = EN.switchAce(run, C, from);
+    ok(back.ok && run.ace === from, from + '→' + to + '→' + from + ': switching back is allowed');
+    eq(run.bag, G[from].concat(bp), from + '→' + to + '→' + from + ': original bag again');
+    const js = JSON.parse(JSON.stringify(run)); ok(EN.canSwitchAce(js, C) && js.ace === from, 'state survives JSON');
+  }
+  // (b) 種子：種子不動、送的那幾格換；新那組跟包包裡已有的（種子、買的）重複就跳過，往下補；不夠就少（包包變小、收了幾張跟著少）
+  { const sd = [free[2], free[9]];
+    const run = EN.newRun(C, { seedKey: 'sw-seed', runNo: 3, ace: 'hall', seeds: sd });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    const bp = run.bag.slice(4);
+    ok(EN.switchAce(run, C, 'heresy').ok, 'seeded run: switch ok');
+    eq(run.bag, sd.concat(G.heresy.slice(0, 2), bp), 'seeded run: seeds stay, the 2 gift slots get the first 2 of the new set');
+    eq([run.seeds, run.gifts], [sd, G.heresy.slice(0, 2)], 'seeded run: run.seeds untouched, run.gifts = placed ones'); }
+  { const run = EN.newRun(C, { seedKey: 'sw-dup', runNo: 3, ace: 'hall', seeds: [G.pearl[0]] });   // 拿 pearl 那組的第一張當種子
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    const bp = run.bag.slice(4);
+    ok(EN.switchAce(run, C, 'pearl').ok, 'dup: switch ok');
+    eq(run.bag, [G.pearl[0], G.pearl[1], G.pearl[2], G.pearl[3]].concat(bp), 'dup: the seed already holds pearl[0] → gifts skip it and fill the rest');
+    eq(run.gifts, G.pearl.slice(1), 'dup: run.gifts excludes the seed');
+    ok(EN.isSeed(run, C, G.pearl[0]), 'dup: the seed is still a seed'); }
+  { const run = EN.newRun(C, { seedKey: 'sw-few', runNo: 3, ace: 'hall', seeds: [G.pearl[0]] });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    run.bag.push(G.pearl[1]); run.bag.push(G.pearl[2]); run.taken += 2;            // 像是買來的
+    const taken = run.taken, n0 = run.bag.length;
+    ok(EN.switchAce(run, C, 'pearl').ok, 'few: switch ok');
+    ok(run.bag.length === n0 - 2 && run.bag.filter(id => G.pearl.includes(id)).length === 4 && new Set(run.bag).size === run.bag.length, 'few: only pearl[3] is new → 3 gift slots become 1, no duplicates', run.bag);
+    eq(run.gifts, [G.pearl[3]], 'few: run.gifts = the one placed');
+    ok(run.taken === taken - 2, 'few: taken shrinks with the bag');
+    ok(EN.switchAce(run, C, 'hall').ok && run.bag.filter(id => G.hall.includes(id)).length === 1, 'few: switching back only fills the slots that are left'); }
+  // (c) 店裡擺著的新禮物下架（不會再買到包包裡已有的）
+  { const run = EN.newRun(C, { seedKey: 'sw-shop', runNo: 2, ace: 'hall' });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    const key = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length);
+    run.shop.bins[key].push(G.heresy[2]);
+    ok(EN.switchAce(run, C, 'heresy').ok && !run.shop.bins[key].includes(G.heresy[2]) && run.bag.includes(G.heresy[2]), 'new gift on the shelf is taken off'); }
+  // (d) 藏家王牌撞到新王牌：照 bossAceFor 重抽（雜湊，不碰 run.rng）；沒撞到就不動
+  { let hit = 0, miss = 0;
+    for (let s = 0; s < 60; s++) for (const ace of TIERS) {
+      const run = EN.newRun(C, { seedKey: 'sw-boss' + s, runNo: 2, ace }), boss = run.bossAce, rng0 = run.rng;
+      const to = s % 2 ? boss : TIERS.find(t => t !== ace && t !== boss);
+      ok(EN.switchAce(run, C, to).ok, 'boss: switch ok');
+      if (to === boss) { hit++; ok(run.bossAce === EN.bossAceFor(run.seedKey, run.runNo, to) && run.bossAce !== to && run.rng === rng0, 'boss = new ace → re-drawn by hash', [boss, to, run.bossAce]); }
+      else { miss++; ok(run.bossAce === boss, 'boss ≠ new ace → unchanged'); }
+    }
+    ok(hit > 0 && miss > 0, 'boss: both branches covered', [hit, miss]); }
+  // (e) 序章那一趟：序章還沒打 → 不行；打完、撿到的那張收好之後（第 1 位開打前）→ 可以；撿到的那張（男子掉的）不動
+  { const run = EN.newRun(C, { seedKey: 'sw-pro', runNo: 1, ace: 'pearl' });
+    ok(run.prologue === 'pending' && !EN.canSwitchAce(run, C), 'prologue pending → cannot switch');
+    untouched(run, () => EN.switchAce(run, C, 'hall'), 'notNow', 'prologue pending → notNow, run untouched');
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    forceWin(run);
+    ok(run.pending && run.pending.prologue && !EN.canSwitchAce(run, C), 'prologue reward pending → cannot switch');
+    settleAll(run);
+    const drop = C.enemies.man.drop, extra = run.bag.slice(4);
+    ok(run.prologue === 'done' && run.pos === 1 && EN.canSwitchAce(run, C), 'prologue done, before guest 1 → can switch');
+    ok(EN.switchAce(run, C, 'hall').ok, 'prologue run: switch ok');
+    eq(run.bag, G.hall.concat(extra), 'prologue run: gifts swapped; bargain + the dropped card stay');
+    ok(!drop || run.bag.includes(drop) || !extra.includes(drop), 'the dropped card stays in the bag'); }
+  // (f) 不合法：同一張、不存在的王牌、對決中、打過第 1 位（贏了、輸了說情、說情後回到第 1 位、舊存檔沒有 fought）、這一趟結束 → 失敗、run 不動
+  { const run = EN.newRun(C, { seedKey: 'sw-bad', runNo: 2, ace: 'hall' });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    untouched(run, () => EN.switchAce(run, C, 'hall'), 'same', 'same ace → same');
+    untouched(run, () => EN.switchAce(run, C, 'nope'), 'badAce', 'unknown tier → badAce');
+    untouched(run, () => EN.switchAce(run, C, null), 'badAce', 'null tier → badAce');
+    ok(EN.switchAce(null, C, 'pearl').error === 'badAce' && !EN.canSwitchAce(null, C), 'no run');
+    EN.startFight(run, C, {});
+    ok(run.fought === true && !EN.canSwitchAce(run, C), 'duel in progress → cannot switch');
+    untouched(run, () => EN.switchAce(run, C, 'pearl'), 'notNow', 'duel in progress → notNow');
+    run.duel = null; run.duelEnemy = null;
+    ok(!EN.canSwitchAce(run, C), 'fight started at pos 1 (fought) → cannot switch even with no duel'); }
+  { const run = EN.newRun(C, { seedKey: 'sw-lose', runNo: 2, ace: 'pearl' });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    const r = forceLose(run);
+    ok(!r.win && run.pending && run.pending.type === 'retry', 'lost guest 1 → retry pending');
+    untouched(run, () => EN.switchAce(run, C, 'hall'), 'notNow', 'retry pending → notNow');
+    EN.choose(run, C, { type: 'retry' });
+    ok(run.pos === 1 && !run.pending && !run.duel && !EN.canSwitchAce(run, C), 'after 說情, back at pos 1 → still cannot switch');
+    delete run.fought;
+    ok(!EN.canSwitchAce(run, C) && EN.switchAce(run, C, 'hall').error === 'notNow', 'old save without fought: 說情 used → cannot switch'); }
+  { const run = EN.newRun(C, { seedKey: 'sw-win', runNo: 2, ace: 'heresy' });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    forceWin(run);
+    untouched(run, () => EN.switchAce(run, C, 'hall'), 'notNow', 'won guest 1, reward pending → notNow');
+    settleAll(run);
+    ok(run.pos === 2 && !EN.canSwitchAce(run, C), 'pos 2 → cannot switch');
+    untouched(run, () => EN.switchAce(run, C, 'hall'), 'notNow', 'pos 2 → notNow');
+    run.over = 'dead'; run.pos = 1;
+    ok(!EN.canSwitchAce(run, C), 'run over → cannot switch'); }
+  // (g) 自動遊玩不換：runPolicy／shopPolicy 從不給 switchAce（choose 不認得這個 type）
+  { const run = EN.newRun(C, { seedKey: 'sw-auto', runNo: 2, ace: 'hall' });
+    ok(EN.choose(run, C, { type: 'switchAce', tier: 'pearl' }).error === 'badChoice' && run.ace === 'hall', 'choose has no switchAce (autoplay never switches)'); }
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log(fails.join('\n')); process.exit(1); }

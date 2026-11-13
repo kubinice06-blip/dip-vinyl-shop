@@ -16,7 +16,8 @@
 //   7 序章打贏 → 地上的唱片撿起面板（沒有標題字，只有封面、藝人《專輯》、兩顆鈕）→ 配件三選一 → 來客（第 1 輪五顆頭像）且第一位客人已在店裡
 //   8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
 //   9 一整趟 autoplay('thoughtful',{until:'end'})：序章 → 打到第 4 位以後 __lab.loseNext(1,{noRetry})（無限試煉不會自己結束）→ 結算三件事（走到第 n 位・最多連贏・收了幾張）、
-//     升級三選一由 autoplay 自動挑（picks＝等級−1）、標題紀錄「最遠」→ 13 再挑戰一趟（挑王牌 → 走到特價箱挑三張 → 來客、包包 7、runNo 2；上一趟的配件還在）
+//     升級三選一由 autoplay 自動挑（picks＝等級−1）、標題紀錄「最遠」→ 13 再挑戰一趟（店主 11-13：不挑王牌，老闆說「老樣子，《王牌》。」沿用 save.lastAce →
+//     走到特價箱挑三張 → 來客、包包 7、runNo 2、王牌＝上一趟那張；上一趟的配件還在；整段沒有挑王牌面板）
 //  10 續玩：打到第 2 手重新整理 → 繼續試煉 → 同一場、同一手
 //  11 存檔只寫 dipGameLab_v1、版本 5；v3 存檔被安全丟掉；v4 存檔遷移（唱片櫃、配件留著，一晚的 run 丟掉，nights → runs）
 //  12 網路：沒有 Firebase
@@ -53,10 +54,14 @@
 //  49 掉落旁白：打贏客人（他丟過牌）→ 領獎前對白框念「對方似乎掉落了什麼……」（＝C.script.drop），面板之後才出來；掉落的唱片全在他這一場的實際牌單（trialDeck）裡、記進 run.drops
 //  50 結算帶走一張：「這一趟帶走一張」鈕（取代那面牆，不捲動）→ 面板（候選＝engine.keepCandidates：擁有的、頂點卡不列）→ 帶走 → 唱片櫃擁有（src run）＋金框「店內取得」
 //     （結算那塊、唱片櫃頁「我的收藏」都是金框）；只能帶一次
-//  51 第二趟挑種子：再挑戰一趟 → 挑王牌 → 挑種子面板（擁有、不是頂點卡；三色篩選；最多 3 張；面板內可捲、整頁不捲）→ 就這幾張 → 特價箱 → 來客：
+//  51 第二趟挑種子：再挑戰一趟 →（不挑王牌，沿用 save.lastAce＝pearl）→ 挑種子面板（擁有、不是頂點卡；三色篩選；最多 3 張；面板內可捲、整頁不捲）→ 就這幾張 → 特價箱 → 來客：
 //     包包＝種子＋老闆送的補到 4 張＋特價箱 3 張＝7、run.seeds＝挑的；序章那一趟不挑
 //  52 種子不能賣：包包滿了買箱子裡的 → 先賣子面板：種子標「櫃裡帶來」、選不了，點了說明「從唱片櫃帶來的不能賣」；引擎 buy 賣種子 → seedNoSell
 //  53 存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
+//  （換王牌，店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說）
+//  54 第 1 位開打前：來客畫面一次性提示（老闆頭上閃一下＋吐司「想換王牌，點老闆。」，save.seen.aceSwap，只出一次）→ 真點老闆＝小選單「聊聊／換一張王牌」（不捲動）
+//     → 聊聊＝老闆照舊說一句 → 換一張王牌＝挑王牌面板（標題「想換一張？」、預設選中現在那張、不捲動）→ 換 pearl：包包送的四張原位換、特價箱不動、
+//     save.lastAce、新那組算擁有（gift）、老闆說換好了＋吐司 → 再換選同一張＝不換（老闆「那就照舊。」）→ 打過第 1 位（第 2 位）點老闆：沒有選單、老闆說下一趟再換
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -69,7 +74,7 @@ const LAB = path.resolve(HERE, '..');
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const YOU_HP = createRequire(import.meta.url)(path.join(LAB, 'engine.js')).CFG.playerHp;   // 你的聲望（FIXLIST 11 H5-1：9）
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52]);
+const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52, 54]);
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
 // D §5 規則卡六行（店主拍板，逐字；第 6 行照 FIXLIST 2／3 改：王牌沒有「不會被剋」、六手比聲望條剩幾成）
@@ -394,21 +399,24 @@ async function run() {
           await page.evaluate(() => window.__lab.stop());
           // 審查 #3：挑種子面板不列這次王牌那組送的；扣掉之後沒有能帶的（上一趟只擁有那組）＝不開面板、直接走去特價箱
           const expSeeds = await page.evaluate(() => window.__lab.seedPool(window.__lab.save.lastAce || 'hall').length > 0);
+          const last = await page.evaluate(() => { const t = window.__lab.save.lastAce, C = window.DipLabContent; return { tier: t, want: C.script.again[1].text.replace('{ace}', C.cards[C.aces[t]].album) }; });
           await jsClick(page, '[data-a=again]');
-          const ace = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.acepick [data-a=ok]'), null, 20000);
-          await sleep(450);
-          await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
-          let n2 = false, sawSeeds = false; const t1 = Date.now();
-          while (!n2 && Date.now() - t1 < 20000) {
+          // 店主 11-13：開局不再挑王牌——老闆一句「老樣子，《王牌》。」（A2）就往下走；整段不該出現挑王牌面板
+          let n2 = false, sawSeeds = false, sawAce = false, a2 = ''; const t1 = Date.now();
+          while (!n2 && Date.now() - t1 < 25000) {
             n2 = (await screen(page)) === 'night';
-            // 第二趟起挑完王牌先挑種子（有能帶的才開）：這裡「先不挑」（#51 測挑的那條路）
+            const st = await page.evaluate(() => ({ ace: !!document.querySelector('.lb-sheet.acepick'), beat: window.__lab.beat, tx: (document.querySelector('.lb-dq .tx') || {}).textContent || '' }));
+            if (st.ace) sawAce = true;
+            if (st.beat === 'A2' && st.tx.length >= a2.length) a2 = st.tx;
+            // 第二趟起老闆那句說完先挑種子（有能帶的才開）：這裡「先不挑」（#51 測挑的那條路）
             if (!n2 && await page.$('.lb-sheet.seeds [data-a=none]')) { sawSeeds = true; await sleep(450); await jsClick(page, '.lb-sheet.seeds [data-a=none]'); await sleep(250); continue; }
             if (!n2) { await answerBargain(page); await sleep(200); }
           }
           await sleep(500);
-          const rr = await page.evaluate(() => !window.__lab.run ? { noRun: true, s: window.__lab.screen(), beat: window.__lab.beat, trail: window.__lab.trail().slice(-5), sheet: (document.querySelector('#panel > .lb-sheet') || {}).className || null, calls: (window.__econCalls || []).map(c => c.m) } : ({ prologue: window.__lab.run.prologue, runNo: window.__lab.run.runNo, pos: window.__lab.run.pos, hp: window.__lab.run.hp, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, trail: window.__lab.trail().slice(-4) }));
+          const rr = await page.evaluate(() => !window.__lab.run ? { noRun: true, s: window.__lab.screen(), beat: window.__lab.beat, trail: window.__lab.trail().slice(-5), sheet: (document.querySelector('#panel > .lb-sheet') || {}).className || null, calls: (window.__econCalls || []).map(c => c.m) } : ({ prologue: window.__lab.run.prologue, runNo: window.__lab.run.runNo, pos: window.__lab.run.pos, hp: window.__lab.run.hp, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, ace: window.__lab.run.ace, lastAce: window.__lab.save.lastAce, trail: window.__lab.trail().slice(-4) }));
           const ms = Date.now() - t1;
-          record(13, size, ace && sawSeeds === expSeeds && n2 && rr.prologue == null && rr.runNo === 2 && rr.pos === 1 && rr.hp === YOU_HP && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics), `再挑戰一趟 → acePick ${ace} → 挑種子（先不挑）${sawSeeds}（該不該開 ${expSeeds}）→ night ${n2} (${ms} ms); ${JSON.stringify(rr)}; relics last run ${JSON.stringify(r.relics)}`);
+          record(13, size, !sawAce && a2 === last.want && rr.ace === last.tier && rr.lastAce === last.tier && sawSeeds === expSeeds && n2 && rr.prologue == null && rr.runNo === 2 && rr.pos === 1 && rr.hp === YOU_HP && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics),
+            `再挑戰一趟 → 挑王牌面板 ${sawAce}（不該有）→ 老闆「${a2}」（要「${last.want}」）→ 挑種子（先不挑）${sawSeeds}（該不該開 ${expSeeds}）→ night ${n2} (${ms} ms); 王牌 ${rr.ace}＝上一趟 ${last.tier}; ${JSON.stringify(rr)}; relics last run ${JSON.stringify(r.relics)}`);
         }
         if (want(11)) {
           const ks = await page.evaluate(() => ({ keys: [...new Set(window.__lsKeys)], v: JSON.parse(localStorage.getItem('dipGameLab_v1')).v }));
@@ -1079,12 +1087,11 @@ async function run() {
         // 面板列的＝唱片櫃能當種子的、扣掉這次王牌（pearl）那組送的（審查 #3）
         const pool = await page.evaluate(() => window.__lab.seedPool('pearl'));
         const giftOut = await page.evaluate(() => window.__lab.seedable().filter(id => window.DipLabContent.gifts.pearl.includes(id)));
+        // 店主 11-13：開局不再挑王牌，沿用上次那張（save.lastAce）。上一趟（hall）當作跟老闆換成了 pearl → 這一趟就是 pearl（#54 測真的換）
+        await page.evaluate(() => { window.__lab.save.lastAce = 'pearl'; });
         await jsClick(page, '[data-a=again]');
-        const ace = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.acepick [data-a=ok]'), null, 20000);
-        await sleep(450);
-        await jsClick(page, '.lb-sheet.acepick .lb-ct[data-tier="pearl"] .acex'); await sleep(150);
-        await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
-        const seedsUp = await page.waitForSelector('.lb-sheet.seeds .lb-ct', { timeout: 10000 }).then(() => true, () => false);
+        const seedsUp = await page.waitForSelector('.lb-sheet.seeds .lb-ct', { timeout: 15000 }).then(() => true, () => false);
+        const ace = !(await page.$('.lb-sheet.acepick'));                 // 沒有挑王牌面板
         await sleep(600);
         const sp0 = await page.evaluate(() => { const C = window.DipLabContent, E = window.DipLabEngine;
           const tiles = [...document.querySelectorAll('.lb-sheet.seeds .lb-ct')].map(t => t.dataset.cid);
@@ -1192,6 +1199,81 @@ async function run() {
         const lgOk = lg.v === 6 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && !lg.hall.own;
         record(53, size, ok && lgOk, `一晚版 clear 那晚的藏家王牌 ${JSON.stringify(lg.heresy)}、自己挑的 ${JSON.stringify(lg.pearl)}、dead 那晚 ${JSON.stringify(lg.hall)}；v${m.v}（localStorage 還是 v${m.stored}：下一次寫入才換）；認識那張 own=${own(ref.known)}；hall／heresy 送的 own；pearl（一晚版那趟）own=${ref.gifts.pearl.every(own)}；藏家王牌 ${ref.boss1} ${JSON.stringify(m.shelf[ref.boss1])}、這一趟打倒的 ${ref.bossRun} ${JSON.stringify(m.shelf[ref.bossRun])}、第 3 位就倒的那趟 ${ref.boss2} own=${own(ref.boss2)}；進行中的 run 留著 ${m.run}`);
       } catch (e) { record(53, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #54 換王牌（店主 11-13）：第 1 位開打前點老闆換；打過第 1 位就不行
+    if (want(54)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'hall', idx: 0 }, Q(''));
+        await waitScreen(page, 'night');
+        await watchSay(page);
+        await page.evaluate(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); }))).observe(document.getElementById('app'), { childList: true }); });
+        await sleep(1500);
+        const U = await page.evaluate(() => Object.assign({}, window.DipLabContent.trial.ui, { aceDone: window.DipLabContent.shopLines.aceDone, aceSame: window.DipLabContent.shopLines.aceSame, aceLater: window.DipLabContent.shopLines.aceLater, night: window.DipLabContent.shopLines.ownerHint.night }));
+        const hint = await page.evaluate(() => ({ toasts: window.__toasts.slice(), seen: !!window.__lab.save.seen.aceSwap }));
+        const hintOk = hint.toasts.includes(U.aceHint) && hint.seen;
+        // 真點老闆（熱點 talk:owner）→ 小選單
+        await sleep(1200);
+        const hot = await tapHot(page, h => h.action === 'talk:owner');
+        await sleep(600);
+        const menu = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.owner'); if (!s) return null;
+          const b = [...s.querySelectorAll('[data-a=talk],[data-a=swap]')].map(x => { const r = x.getBoundingClientRect(); return { a: x.dataset.a, t: x.textContent, ok: r.top >= 0 && r.bottom <= innerHeight && r.height >= 44 }; });
+          return { b, now: (s.querySelector('.ow-now') || {}).textContent || '' }; });
+        const scM = await noScroll(page);
+        const menuOk = !!hot && !!menu && menu.b.length === 2 && menu.b.every(x => x.ok) && menu.b[0].t === U.aceTalk && menu.b[1].t.indexOf(U.aceSwap) === 0 && menu.now.indexOf('《') > 0 && scrollOk(scM);
+        // 聊聊＝照舊說一句
+        await jsClick(page, '.lb-sheet.owner [data-a=talk]'); await sleep(400);
+        const talk = await page.evaluate(() => ({ open: !!document.querySelector('.lb-sheet.owner'), said: window.__said.map(x => x.t) }));
+        const talkOk = !talk.open && talk.said.includes(U.night);
+        // 換一張王牌 → 挑王牌面板（標題＝老闆那句、預設選中 hall）→ pearl
+        const before = await page.evaluate(() => { const R = window.__lab.run; return { bag: R.bag.slice(), taken: R.taken, money: R.money }; });
+        await page.evaluate(() => window.__lab.stageAction('talk:owner')); await sleep(500);
+        await jsClick(page, '.lb-sheet.owner [data-a=swap]');
+        const pickUp = await page.waitForSelector('.lb-sheet.acepick .lb-ct', { timeout: 5000 }).then(() => true, () => false);
+        await sleep(500);
+        const pk = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.acepick'); const ok = s.querySelector('[data-a=ok]').getBoundingClientRect();
+          return { h3: (s.querySelector('.hd h3') || {}).textContent || '', sel: (s.querySelector('.lb-ct.sel') || {}).dataset.tier || null, n: s.querySelectorAll('.lb-ct').length, okIn: ok.bottom <= innerHeight && ok.top >= 0 }; });
+        const scP = await noScroll(page);
+        await jsClick(page, '.lb-sheet.acepick .lb-ct[data-tier="pearl"] .acex'); await sleep(150);
+        await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
+        await sleep(900);
+        const sw = await page.evaluate(() => { const R = window.__lab.run, S = window.__lab.save, C = window.DipLabContent, E = window.DipLabEngine;
+          return { scr: window.__lab.screen(), ace: R.ace, bag: R.bag.slice(), gifts: R.gifts.slice(), want: C.gifts.pearl.slice(), lastAce: S.lastAce, taken: R.taken, money: R.money,
+            own: C.gifts.pearl.every(id => S.shelf[id] && S.shelf[id].own && S.shelf[id].src === 'gift'), aceKnown: !!S.shelf[C.aces.pearl], bossOk: R.bossAce !== R.ace,
+            stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).run.ace, album: C.cards[C.aces.pearl].album, said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), can: E.canSwitchAce(R, C),
+            bagN: (document.querySelector('.lb-bagline [data-a=bag] b') || {}).textContent || '' }; });
+        const swOk = pickUp && pk.h3 === U.aceAsk && pk.sel === 'hall' && pk.n === 3 && pk.okIn && scrollOk(scP) && sw.scr === 'night' && sw.ace === 'pearl' &&
+          JSON.stringify(sw.bag) === JSON.stringify(sw.want.concat(before.bag.slice(4))) && JSON.stringify(sw.gifts) === JSON.stringify(sw.want) && sw.lastAce === 'pearl' && sw.taken === before.taken && sw.money === before.money &&
+          sw.own && sw.aceKnown && sw.bossOk && sw.stored === 'pearl' && sw.said.includes(U.aceDone) && sw.toasts.includes(U.aceSwapped.replace('{album}', sw.album)) && sw.can && sw.bagN === sw.bag.length + '/8';
+        // 再換一次、選同一張（pearl）＝不換
+        await page.evaluate(() => window.__lab.stageAction('talk:owner')); await sleep(500);
+        await jsClick(page, '.lb-sheet.owner [data-a=swap]');
+        await page.waitForSelector('.lb-sheet.acepick .lb-ct', { timeout: 5000 }).catch(() => {}); await sleep(450);
+        const sel2 = await page.evaluate(() => (document.querySelector('.lb-sheet.acepick .lb-ct.sel') || {}).dataset.tier || null);
+        await jsClick(page, '.lb-sheet.acepick [data-a=ok]'); await sleep(700);
+        const same = await page.evaluate(() => ({ ace: window.__lab.run.ace, bag: window.__lab.run.bag.slice(), said: window.__said.map(x => x.t) }));
+        const sameOk = sel2 === 'pearl' && same.ace === 'pearl' && JSON.stringify(same.bag) === JSON.stringify(sw.bag) && same.said.includes(U.aceSame);
+        // 打過第 1 位 → 第 2 位：點老闆沒有選單、老闆說下一趟再換；引擎也不給換；提示不再出
+        await jsClick(page, '[data-a=go]'); await duelReady(page);
+        const midFight = await page.evaluate(() => window.DipLabEngine.canSwitchAce(window.__lab.run, window.DipLabContent));
+        await page.evaluate(() => window.__lab.forceWin());
+        await waitScreen(page, 'reward', 15000); await pastDrop(page); await sleep(400);
+        await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]') || document.querySelector('.lb-sheet.reward [data-pick]'); if (b) b.click(); });
+        for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
+        await sleep(800);
+        await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
+        const hot2 = await tapHot(page, h => h.action === 'talk:owner');
+        await sleep(600);
+        const late = await page.evaluate(() => ({ pos: window.__lab.run.pos, menu: !!document.querySelector('.lb-sheet.owner'), pick: !!document.querySelector('.lb-sheet.acepick'), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(),
+          can: window.DipLabEngine.canSwitchAce(window.__lab.run, window.DipLabContent), eng: window.DipLabEngine.switchAce(JSON.parse(JSON.stringify(window.__lab.run)), window.DipLabContent, 'hall').error, ace: window.__lab.run.ace }));
+        const lateOk = !midFight && !!hot2 && late.pos === 2 && !late.menu && !late.pick && late.said.includes(U.aceLater) && !late.can && late.eng === 'notNow' && late.ace === 'pearl' && !late.toasts.includes(U.aceHint);
+        record(54, size, hintOk && menuOk && talkOk && swOk && sameOk && lateOk,
+          `提示 ${hintOk} ${JSON.stringify(hint.toasts)}；點老闆 ${hot && hot.id} → 選單 ${menuOk} ${JSON.stringify(menu)} ${JSON.stringify(scM)}；聊聊 ${talkOk} ${JSON.stringify(talk.said)}；` +
+          `換王牌面板 ${pickUp}「${pk.h3}」sel ${pk.sel} ${JSON.stringify(scP)} → ${swOk} ${JSON.stringify({ ace: sw.ace, bag: sw.bag, lastAce: sw.lastAce, own: sw.own, said: sw.said, toasts: sw.toasts, bagN: sw.bagN })}；` +
+          `同一張 ${sameOk}；打過第 1 位 ${lateOk} ${JSON.stringify({ midFight, pos: late.pos, menu: late.menu, said: late.said, can: late.can, eng: late.eng })}`);
+      } catch (e) { record(54, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 
