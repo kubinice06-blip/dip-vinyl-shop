@@ -419,17 +419,17 @@ section('matches／chipOk：點那張認 id／blocked／ace；點屬性（丟）
   const ctx = R.context();
   const S = TUT.stepsFor(C, 'hall');
   const k1 = S.find(s => s.id === 'k1'), k2 = S.find(s => s.id === 'k2'), m2 = S.find(s => s.id === 'm2'), m3 = S.find(s => s.id === 'm3');
-  const kf = 'beverly-glenn-copeland-keyboard-fantasies', low = 'david-bowie-low';
+  const kf = 'nick-drake-bryter-layter', low = 'daft-punk-random-access-memories';   // 店主 11-13：殿堂那組換成有名的（第 1 手 Random Access Memories、第 2 手 Bryter Layter）
   const iKF = idxOf(duel, kf), iLow = idxOf(duel, low);
-  ok(TUT.matches(m2, cardAct(duel, iLow), ctx), 'm2 點 Low 的封面：放行');
+  ok(TUT.matches(m2, cardAct(duel, iLow), ctx), 'm2 點 Random Access Memories 的封面：放行');
   ok(!TUT.matches(m2, cardAct(duel, iKF), ctx), 'm2 點別張：擋');
   ok(!TUT.matches(m2, shotAct(duel, iLow, 'c'), ctx), 'm2 還沒浮起就丟：擋');
-  eq(E.topAttr(C.cards[kf]), 'c', 'Keyboard Fantasies 的 topAttr 是經典');
-  ok(TUT.matches(k1, cardAct(duel, iKF), ctx), 'k1 點 Keyboard Fantasies 的封面（不管 topAttr）：放行');
-  ok(TUT.matches(k2, shotAct(duel, iKF, 'o'), ctx), 'k2 點 Keyboard Fantasies 的冷門：放行');
-  ok(!TUT.matches(k2, shotAct(duel, iKF, 'c'), ctx), 'k2 點 Keyboard Fantasies 的經典（topAttr）：擋');
+  eq(E.topAttr(C.cards[kf]), 'c', 'Bryter Layter 的 topAttr 是經典');
+  ok(TUT.matches(k1, cardAct(duel, iKF), ctx), 'k1 點 Bryter Layter 的封面（不管 topAttr）：放行');
+  ok(TUT.matches(k2, shotAct(duel, iKF, 'o'), ctx), 'k2 點 Bryter Layter 的冷門：放行');
+  ok(!TUT.matches(k2, shotAct(duel, iKF, 'c'), ctx), 'k2 點 Bryter Layter 的經典（topAttr）：擋');
   ok(!TUT.matches(m3, shotAct(duel, iKF, 'c'), ctx), 'm3 丟別張：擋');
-  ok(TUT.matches(m3, shotAct(duel, iLow, 'c'), ctx), 'm3 丟 Low 的經典：放行');
+  ok(TUT.matches(m3, shotAct(duel, iLow, 'c'), ctx), 'm3 丟 Random Access Memories 的經典：放行');
   ok(TUT.matches({ allow: { ace: true } }, { kind: 'card', i: 'ace', attr: 'c', id: C.aces.hall }, ctx), 'allow.ace：點王牌封面');
   ok(TUT.matches({ allow: { throw: true, ace: true } }, { kind: 'throw', i: 'ace', attr: 'c', id: C.aces.hall }, ctx) && !TUT.matches({ allow: { throw: true, ace: true } }, shotAct(duel, 0, 'c'), ctx), 'allow throw＋ace：只丟王牌');
   ok(!TUT.matches({ allow: { ace: true } }, cardAct(duel, 0), ctx), 'allow.ace：點別張擋');

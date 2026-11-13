@@ -49,7 +49,8 @@
   C.aceGlossTag = '新';
   C.aceAxis = { hall: 'c', pearl: 'o', heresy: 'h' };                    // 7 星那軸（王牌只能丟這一軸）
   C.gifts = {
-    hall:   ['david-bowie-low', 'vashti-bunyan-just-another-diamond-day', 'scott-walker-tilt', 'beverly-glenn-copeland-keyboard-fantasies'],
+    // 店主 11-13：經典那組要有名一點（原本除了 Bowie 都偏冷門）→ Daft Punk、Nick Drake、Brian Eno（店裡唱片箱沒擺的有名盤）；Bowie 留著
+    hall:   ['david-bowie-low', 'daft-punk-random-access-memories', 'nick-drake-bryter-layter', 'brian-eno-ambient-1-music-for-airports'],
     pearl:  ['charles-brackeen-rhythm-x', 'bark-psychosis-hex', '黃小楨-賞味期限', '傷心欲絕-我愛您'],
     heresy: ['the-velvet-underground-white-light-white-heat', 'melt-banana-speak-squeak-creak', 'pharoah-sanders-tauhid', 'magma-mekanik-destruktiw-kommandoh']
   };
@@ -658,9 +659,11 @@
   var TUT_HINTS = ['c5', 'c2', 'h2', 'o2', 'c4', 'c2'];
   var TUT_HANDS = {
     hall: {
-      hand: ['david-bowie-low', 'beverly-glenn-copeland-keyboard-fantasies', 'vashti-bunyan-just-another-diamond-day', 'scott-walker-tilt'], draw: [],
-      pick: [{ id: 'david-bowie-low', attr: 'c' }, { id: 'beverly-glenn-copeland-keyboard-fantasies', attr: 'o' }, { id: 'vashti-bunyan-just-another-diamond-day', attr: 'c' },
-        { id: 'scott-walker-tilt', attr: 'h' }, 'blocked:o', 'ace']
+      // 店主 11-13 換成有名的：第 1 手 Random Access Memories 經典 5（比星數 −3）、第 2 手 Bryter Layter 冷門 2（冷剋經 −2）、第 3 手 Low 經典 5（經剋硬 −5）、
+      //   第 4 手 Music for Airports 硬蕊 3（硬剋冷 −3；他的冷門 4 沒高 2 星，剋得動）；前四手 13、第 6 手王牌 −5，剛好 18 KO
+      hand: ['daft-punk-random-access-memories', 'nick-drake-bryter-layter', 'david-bowie-low', 'brian-eno-ambient-1-music-for-airports'], draw: [],
+      pick: [{ id: 'daft-punk-random-access-memories', attr: 'c' }, { id: 'nick-drake-bryter-layter', attr: 'o' }, { id: 'david-bowie-low', attr: 'c' },
+        { id: 'brian-eno-ambient-1-music-for-airports', attr: 'h' }, 'blocked:o', 'ace']
     },
     pearl: {
       hand: ['bark-psychosis-hex', '黃小楨-賞味期限', 'charles-brackeen-rhythm-x', '傷心欲絕-我愛您'], draw: [],
@@ -681,8 +684,8 @@
     lessons: ['mirror', 'oc', 'ch', 'ho', 'block', 'ace'],
     script: {},
     expect: {
-      hall: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 5, toP: 0 },
-        { kind: 'counter', toE: 4, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0 }],
+      hall: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 2, toP: 0 }, { kind: 'counter', toE: 5, toP: 0 },
+        { kind: 'counter', toE: 3, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0 }],
       pearl: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
         { kind: 'counter', toE: 3, toP: 0 }, GAP5, { kind: 'counter', toE: 7, toP: 0 }],
       heresy: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
