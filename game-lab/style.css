@@ -7,6 +7,7 @@
 :root{
   --ink:#111; --gray:#888; --line:#ddd; --bg:#fff; --hp-bg:#eee;
   --gold:#b8860b; --red:#c11628; --win:#2e7d52;
+  --gold-ink:#8a6508;   /* 小字用的深金（白底 5.3:1；--gold 只有 3.25:1） */
   --c:#1f5fae; --o:#6a3fa0; --h:#c11628;
   --cream:#fffbe9; --cream-ink:#5a4a10;
   --veil:rgba(255,255,255,.97);
@@ -284,24 +285,37 @@ small{font-size:inherit;}
 .lb-keep:active{background:#f3e6c2;}
 .lb-keep.done{cursor:default;background:#fff;}
 .lb-keep.done>.lb-cv{width:56px;height:56px;}
-.lb-keepnone{margin:6px 0 0;font-size:12px;}
+/* 「我的收藏」裡都有了（沒有可以帶走的）：跟中繼點併成同一行，放不下才換行（審查 #6） */
+.lb-cps .dot{margin:0 2px;}
+.lb-cps .kn{display:inline-block;}
 .lb-sheet.keep .lb-ct .src{margin-top:2px;font-size:10px;color:var(--gray2);letter-spacing:.04em;}
 .lb-sheet.keep .lb-ct .src.drop{color:var(--red,#c0392b);}
-/* 挑種子（第二趟起，挑完王牌；店主 11-13）：面板內可捲、底下兩顆固定；三色篩選；選了的封面描框、鈕變黑 */
+/* 挑種子（第二趟起，挑完王牌；店主 11-13）：面板內可捲、底下兩顆固定；三色篩選；選了的封面描框、鈕變黑
+   審查 #4：標題列（張數）＋說明那行黏在面板頂（捲到下面也看得到）；帶滿了沒選的變淡、張數變紅 */
+.lb-sheet.seeds .sdtop{position:-webkit-sticky;position:sticky;top:-10px;z-index:6;flex:none;margin:-10px -12px 0;padding:10px 12px 6px;background:#fff;box-shadow:0 1px 0 var(--line);}
+.lb-sheet.seeds .sdtop .note{margin-top:2px;}
 .lb-sheet.seeds .note.warn{color:var(--red,#c0392b);font-weight:700;}
+.lb-sheet.seeds .hd .cnt.full{color:var(--red);}
+.lb-toast.sdfull{width:max-content;}     /* 帶滿的吐司排一行（left:50% 的吐司預設只拿得到一半寬） */
+.lb-sheet.seeds.full .lb-ct:not(.sel) .lb-cv{opacity:.45;}
+.lb-sheet.seeds .lb-pickb[aria-disabled=true]{border-color:#c4c4c4;color:#9a9a9a;background:#f4f4f4;}
 .lb-sheet.seeds .lb-filters{margin:8px 0 0;flex:none;}
 .lb-sheet.seeds .lb-filters .lb-btn.c{color:var(--c);} .lb-sheet.seeds .lb-filters .lb-btn.o{color:var(--o);} .lb-sheet.seeds .lb-filters .lb-btn.h{color:var(--h);}
 .lb-sheet.seeds .lb-filters .lb-btn.on{background:var(--ink);color:#fff;}
 .lb-sheet.seeds .lb-ct.off{display:none;}
-.lb-sheet.seeds .lb-ct.sel .lb-cv{outline:3px solid var(--gold);outline-offset:1px;}
+/* 選了（審查 #10）：墨色粗框＋右上角 ✓ 章——跟「店內取得」的金框分開 */
+.lb-sheet.seeds .lb-ct.sel .lb-cv{outline:3px solid var(--ink);outline-offset:2px;}
+.lb-sheet.seeds .lb-ct.sel::before{content:'✓';position:absolute;top:-6px;right:-6px;z-index:5;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;
+  font:700 14px/24px var(--zh);text-align:center;box-shadow:0 0 0 2px #fff;pointer-events:none;}
 .lb-sheet.seeds .lb-sdempty{margin:12px 0;}
 .lb-sheet.seeds .hd .cnt{font:700 13px 'Space Mono',var(--zh);}
 /* 包包裡從唱片櫃帶來的（種子）：包包條金色虛線框、包包面板小籤 */
 .lb-strip .slot.seed.filled{border-color:var(--gold);border-width:2px;}
-.lb-ct .sdtag{margin-top:2px;font-size:9px;font-weight:700;color:var(--gold);text-align:center;letter-spacing:.02em;white-space:nowrap;}
+.lb-ct .sdtag{margin-top:2px;font-size:9px;font-weight:700;color:var(--gold-ink);text-align:center;letter-spacing:.02em;white-space:nowrap;}   /* 深金字：白底對比 ≥4.5（審查 #10） */
 /* 唱片櫃頁：上面「我的收藏」、下面「認識過」 */
 .lb-page .lb-own{margin-bottom:6px;}
 .lb-page .lb-own .lb-h2,.lb-page .lb-known .lb-h2{margin-top:6px;}
+.lb-page .lb-h2 small{display:inline-block;}     /* 說明那句放不下就整句換到下一行，不留孤字（審查 #9） */
 .lb-page .lb-known{border-top:1px solid var(--line);margin-top:14px;padding-top:4px;}
 /* 中繼點那行（結算；有走到才有） */
 .lb-cps{margin:-4px 0 10px;}

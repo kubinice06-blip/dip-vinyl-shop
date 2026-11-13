@@ -112,7 +112,7 @@
 .ec-sv.ec-gift{font:700 10px var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:#6b6b6b;letter-spacing:.02em;}
 /* 從唱片櫃帶來的種子（engine.isSeed；店主 11-13）：列出來但不能賣；點了說明（不是 disabled，所以游標照舊） */
 .ec-spick.seed .ec-tcv{opacity:.5;}
-.ec-sv.ec-seed{font:700 10px var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--gold,#b8860b);letter-spacing:.02em;}
+.ec-sv.ec-seed{font:700 10px var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--gold-ink,#8a6508);letter-spacing:.02em;}   /* 深金字：白底對比 ≥4.5（審查 #10） */
 .ec-line.warn{color:var(--red,#c0392b);font-weight:700;}
 .ec-foot{flex:none;padding-top:8px;}
 .ec-foot.two{display:flex;gap:8px;}

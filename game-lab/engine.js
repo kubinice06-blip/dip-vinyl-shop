@@ -61,7 +61,7 @@
 //              拿獎勵包包滿「拿掉一張」照舊可以拿掉種子，拿掉就不再是種子）；run.gifts＝這一趟實際放進包包的老闆送的（isGift 照它）
 //            canSeed(content, id)（卡存在、不是頂點卡）· isSeed(run, content, id) · seedPolicy(content, ids, n?)（自動遊玩：照最高星挑；同星看總星、再看 id）
 //            bossAceFor(seedKey, runNo, ace)（這一趟藏家帶哪張王牌＝newRun 的 run.bossAce；存檔遷移用）
-//            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子那張不算）
+//            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子掉的 Fishmans 也算：它在他牌組裡、他一定打出來，店主 11-13）
 //            keepCandidates(run, content, owned) -> [ids]（一趟留一張的候選：entered＋drops，已經擁有的、頂點卡不列）
 //            keepOne(run, content, id, owned) -> {ok, error}（只在這一趟結束後、只能一次；run.kept＝那張）
 //            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart') -> [ch] · bargainPolicy(run, content) -> ch

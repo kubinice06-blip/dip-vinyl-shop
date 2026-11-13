@@ -139,7 +139,9 @@
   // v5（無限試煉）→ v6（從唱片櫃挑牌開局 §1 裁定 10）：原本的唱片櫃都留成「認識」；「擁有」給——
   //   挑過的王牌那幾組老闆送的四張（src 'gift'；看 runs[]、lastAce、進行中的 run）、
   //   打倒藏家拿到的王牌（src 'boss'；runs[] 走到第 6 位以後＝打倒過第 5 位的藏家，那一趟藏家帶的王牌照 engine.bossAceFor 算；進行中的 run 看 aceWon）。
-  //   一晚版遷過來的（legacy）沒有位數，不算藏家。進行中的 run 照留（引擎自己補種子／記錄的欄位）
+  //   一晚版遷過來的（legacy）沒有位數：result 'clear'（v4 打烊＝打倒藏家、clearFlow 把他的王牌收進唱片櫃）才算，王牌看唱片櫃——
+  //   那一晚（at＝seedKey#runNo）第一次認識、又不是自己挑的那張王牌的頂點卡；剛好一張才給（v4 newRun 的亂數順序不同，bossAceFor 算不出來；審查 #2）。
+  //   進行中的 run 照留（引擎自己補種子／記錄的欄位）
   function migrate5(s) {
     var o = {}; Object.keys(s).forEach(function (k) { o[k] = s[k]; }); o.v = SAVE_V;
     var src = s.shelf && typeof s.shelf === 'object' && !Array.isArray(s.shelf) ? s.shelf : {}, sh = {};
@@ -154,9 +156,18 @@
     var aces = [];
     runs.map(function (n) { return n.ace; }).concat([s.lastAce, r && r.ace]).forEach(function (t) { if (TIERS.indexOf(t) >= 0 && aces.indexOf(t) < 0) aces.push(t); });
     aces.forEach(function (t) { (C.gifts[t] || []).forEach(function (id) { own(id, 'gift'); }); });
+    var aceIds = TIERS.map(function (t) { return C.aces[t]; });
     runs.forEach(function (n) {
-      if (n.legacy || (n.reached | 0) <= 5 || TIERS.indexOf(n.ace) < 0 || !n.seedKey) return;
-      own(C.aces[E.bossAceFor(n.seedKey, n.runNo || 1, n.ace)], 'boss', n.seedKey + '#' + (n.runNo || 1));
+      if (TIERS.indexOf(n.ace) < 0 || !n.seedKey) return;
+      var tag = n.seedKey + '#' + (n.runNo || 1);
+      if (n.legacy) {
+        if (n.result !== 'clear') return;
+        var won = aceIds.filter(function (id) { return id && id !== C.aces[n.ace] && sh[id] && sh[id].at === tag; });
+        if (won.length === 1) own(won[0], 'boss', tag);
+        return;
+      }
+      if ((n.reached | 0) <= 5) return;
+      own(C.aces[E.bossAceFor(n.seedKey, n.runNo || 1, n.ace)], 'boss', tag);
     });
     if (r && r.aceWon && TIERS.indexOf(r.bossAce) >= 0) own(C.aces[r.bossAce], 'boss');
     o.shelf = sh;
@@ -994,6 +1005,11 @@
         });
       },
       say: function (who, text, o) { return api.run([{ who: who, text: text, tag: '新' }], o); },
+      // ui 回呼裡、開面板之前，用同一個對白框再念幾句（序章收尾：E4「他走了」→ 掉落旁白 G1 → 撿起面板；店主 11-13 §0）：念的時候 ⏩ 照常可用
+      aside: function (beats) {
+        var was = st.inUi; st.inUi = false;
+        return api.run(beats || []).then(function (v) { st.inUi = was; return v; });
+      },
       run: function (beats, onUi) {
         var i = 0;
         var next = function () {
@@ -1363,7 +1379,7 @@
     return new Promise(function (res) {
       var r = save.run;
       var html = '<div class="hd"><h3>' + esc((C.lines.owner && C.lines.owner.bagFull) || '包包滿了。先拿一張出來。') + '</h3></div>' +
-        '<p class="msg">要放進來的是《' + esc((card(incomingId) || {}).album || '') + '》。挑一張拿出來，它會留在唱片櫃。</p>' +
+        '<p class="msg">' + esc(SU('bagOutMsg', { album: (card(incomingId) || {}).album || '' })) + '</p>' +     // 拿出來的只是「認識」（審查 #5）
         '<div class="lb-pick">' + r.bag.map(function (id) { return tileHTML(card(id), { text: false, pick: '拿出來' }); }).join('') + '</div>' +
         '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">算了，不放了</button></div>';
       var s = sheet(html, 'drop');
@@ -1713,40 +1729,55 @@
   // ---- 挑種子（店主 11-13 §0 種子制；§1 裁定 2、3、12）：第二趟起，挑完王牌、走去特價箱之前。在店裡（舞台照舊），面板列出唱片櫃裡
   //   「擁有、不是頂點卡」的唱片（封面＋三色星數；店內取得金框），點選最多 3 張 →「就這幾張 ▸」；三色篩選；「先不挑」＝全用老闆送的。
   //   沒挑的格子用老闆送的（這次挑的王牌那組）補。矮螢幕不捲頁（面板內可捲）。自動遊玩：照最高星挑（engine.seedPolicy）
+  //   審查 #3：這次王牌那組送的不列（帶了也一樣會送，挑了等於沒挑）；扣掉之後沒有能帶的就不開面板。
+  //   審查 #4：標題列（張數）＋說明那行黏在面板頂；帶滿了，沒選的鈕變淡（aria-disabled）、張數變紅，再點吐司說明。
+  //   審查 #8：篩選＝那一色是這張最高的（平手兩色都算）。審查 #10：選了＝墨色框＋✓ 章（跟店內取得的金框分開）
+  function seedPool(tier) {
+    var gift = C.gifts[tier] || [];
+    return seedableIds().filter(function (id) { return gift.indexOf(id) < 0; });
+  }
+  function topAxes(c) { var m = Math.max(c.c || 0, c.o || 0, c.h || 0); return ATTRS.filter(function (a) { return (c[a] || 0) === m; }); }
   function seedPickFlow(tier) {
-    var pool = seedableIds();
+    var pool = seedPool(tier);
     if (!pool.length) return Promise.resolve([]);
-    var max = E.CFG.seedMax;
+    var max = E.CFG.seedMax, giftN = (C.gifts[tier] || []).length || 4;
     pool.sort(function (a, b) { var A = card(a), B = card(b); return E.peak(B) - E.peak(A) || E.power(B) - E.power(A) || (a < b ? -1 : a > b ? 1 : 0); });
     return new Promise(function (res) {
       var picked = [], filter = 'all', done = false;
       var flt = [['all', SU('pickAll')]].concat(ATTRS.map(function (a) { return [a, ZH[a]]; }));
-      var html = '<div class="hd"><h3>' + esc(SU('pickTitle')) + '</h3><span class="sub cnt" aria-live="polite"></span></div>' +
-        '<p class="note sdn">' + esc(SU('pickSub', { max: max })) + '</p>' +
+      var html = '<div class="sdtop"><div class="hd"><h3>' + esc(SU('pickTitle')) + '</h3><span class="sub cnt" aria-live="polite"></span></div>' +
+        '<p class="note sdn">' + esc(SU('pickSub', { max: max, n: giftN })) + '</p></div>' +
         '<div class="lb-filters sd" role="group">' + flt.map(function (f) { return '<button type="button" class="lb-btn' + (f[0] === 'all' ? ' on' : ' ' + f[0]) + '" data-f="' + f[0] + '">' + esc(f[1]) + '</button>'; }).join('') + '</div>' +
         '<div class="lb-rgrid lb-seeds">' + pool.map(function (id) {
           var c = card(id);
-          return tileHTML(c, { store: isStore(id), cls: 'ax-' + E.topAttr(c), data: 'data-ax="' + E.topAttr(c) + '"', pick: SU('pickTake') });
+          return tileHTML(c, { store: isStore(id), cls: 'ax-' + E.topAttr(c), data: 'data-ax="' + topAxes(c).join(' ') + '"', pick: SU('pickTake') });
         }).join('') + '</div>' +
         '<p class="sub lb-sdempty" hidden>' + esc(SU('pickEmpty')) + '</p>' +
         '<div class="foot two"><button type="button" class="lb-btn" data-a="none">' + esc(SU('pickNone')) + '</button>' +
         '<button type="button" class="lb-btn pri key" data-a="ok">' + esc(SU('pickGo')) + '</button></div>';
       var s = sheet(html, 'seeds');
       var note = qs('.sdn', s), cnt = qs('.cnt', s), okb = qs('[data-a=ok]', s);
-      function mark(full) {
+      function mark(warn) {
+        var full = picked.length >= max;
         qsa('.lb-seeds .lb-ct', s).forEach(function (t) {
           var id = t.getAttribute('data-cid'), on = picked.indexOf(id) >= 0;
           t.classList.toggle('sel', on);
-          t.classList.toggle('off', filter !== 'all' && t.getAttribute('data-ax') !== filter);
-          var b = qs('[data-pick]', t); if (b) { b.textContent = on ? SU('picked') : SU('pickTake'); b.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+          t.classList.toggle('off', filter !== 'all' && (' ' + t.getAttribute('data-ax') + ' ').indexOf(' ' + filter + ' ') < 0);
+          var b = qs('[data-pick]', t);
+          if (b) {
+            b.textContent = on ? SU('picked') : SU('pickTake'); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            if (full && !on) b.setAttribute('aria-disabled', 'true'); else b.removeAttribute('aria-disabled');
+          }
         });
+        s.classList.toggle('full', full);
         qsa('[data-f]', s).forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-f') === filter); });
         var empty = !qsa('.lb-seeds .lb-ct:not(.off)', s).length, em = qs('.lb-sdempty', s);
         if (em) em.hidden = !empty;
         cnt.textContent = SU('pickCount', { n: picked.length, max: max });
+        cnt.classList.toggle('full', full);
         okb.disabled = !picked.length;
-        note.textContent = full ? SU('pickFull', { max: max }) : SU('pickSub', { max: max });
-        note.classList.toggle('warn', !!full);
+        note.textContent = warn ? SU('pickFull', { max: max }) : SU('pickSub', { max: max, n: giftN });
+        note.classList.toggle('warn', !!warn);
       }
       mark();
       roomForSheet(s);
@@ -1758,7 +1789,13 @@
         if (pk) {
           var id = pk.getAttribute('data-pick'), i = picked.indexOf(id);
           if (i >= 0) { picked.splice(i, 1); sfx('tick'); mark(); return; }
-          if (picked.length >= max) { sfx('tick'); mark(true); return; }
+          if (picked.length >= max) {
+            // 帶滿了還點（面板捲到下面、頂上那行看不到也一樣）：吐司說明；同一則不疊
+            sfx('tick'); mark(true);
+            qsa('.lb-toast.sdfull', app()).forEach(function (x) { x.remove(); });
+            toast(SU('pickFullToast', { max: max }), 'sdfull');
+            return;
+          }
           picked.push(id); sfx('select'); mark(); return;
         }
         var a = e.target.closest && e.target.closest('[data-a]');
@@ -2042,7 +2079,9 @@
       });
     });
   }
-  // ---- 序章收尾（D §2 E1–E11）：他走出門、地上留一張盤（撿起面板，沒有旁白）→ 老闆走到你面前 → 長桌的木箱、發燒配件三選一 → 第一位客人推門 → 來客
+  // ---- 序章收尾（D §2 E1–E11）：他走出門、地上留一張盤 → 掉落旁白「對方似乎掉落了什麼……」（C.script.drop，同一個對白框；店主 11-13 §0：
+  //   男子那張 Fishmans 在他牌組裡＝客人掉落，engine 記進 run.drops；取代 DECISIONS-v4 的「撿起面板之前沒有旁白」）→ 撿起面板 → 老闆走到你面前 →
+  //   長桌的木箱、發燒配件三選一 → 第一位客人推門 → 來客。重新整理回來從 E4 接著演，旁白一樣會念
   function epilogueFlow(resumed) {
     var r = save.run;
     save.prologueDone = true; persist();             // 序章打贏了：之後放棄這一趟也不會再從序章開始
@@ -2064,10 +2103,14 @@
         if (ui === 'stake') {
           if (!pend || pend.cardDone || !pend.cards.length) { stg('floorRecord', null); return Promise.resolve(); }
           var c = card(pend.cards[0]);
-          // D §2：撿起面板沒有任何敘述標題，只有封面、藝人《專輯》、兩顆鈕
-          return cardPanel(c, { title: null, isNew: true, buttons: [
-            { label: '收進包包', sub: '包包 ' + save.run.bag.length + '/' + E.CFG.bagMax, value: 'take', pri: true },
-            { label: '不用了', sub: '還是會留在唱片櫃', value: 'skip' }] }).then(function (v) {
+          // 掉落旁白（店主 11-13 §0、§1 裁定 7）：E4 念完、撿起面板之前，同一個對白框念 G1（地上那張盤 E4 一開始就放好了）
+          var dropBeats = (C.script && C.script.drop) || [];
+          return dlg.aside(dropBeats).then(function () {
+            // D §2：撿起面板沒有任何敘述標題，只有封面、藝人《專輯》、兩顆鈕（「不用了」底下：沒收的也算認識，審查 #5）
+            return cardPanel(c, { title: null, isNew: true, buttons: [
+              { label: '收進包包', sub: '包包 ' + save.run.bag.length + '/' + E.CFG.bagMax, value: 'take', pri: true },
+              { label: '不用了', sub: SU('stakeSkipSub'), value: 'skip' }] });
+          }).then(function (v) {
             shelfAdd(c.id);
             stg('floorRecord', null);
             if (v === 'take') return takeCard(c.id).then(function (res) { if (!res) doChoose({ type: 'skip' }); else toast(effectsText(res.effects)); sc.stripState = null; renderStrip(sc); });
@@ -2174,7 +2217,7 @@
       var footRelic = cards.length && relics.length;
       var html = '<div class="hd"><h3>' + (cards.length ? '他丟過的唱片：挑一張收進包包' : '他沒有能收的唱片') + '</h3><span class="sub">' + esc(bagLine) + '</span></div>' +
         (cards.length ? '<div class="lb-rgrid' + (cards.length > 4 ? ' rows2' : '') + '">' + cards.map(function (c) { return tileHTML(c, { pick: '收這張', isNew: isNewOnShelf(c.id) }); }).join('') + '</div>' +
-          '<p class="note">點封面看唱片資訊、試聽。沒收的也都進了唱片櫃。</p>' : '') +
+          '<p class="note">' + esc(SU('rewardNote')) + '</p>' : '') +      // 沒收的只算「認識」，不是「我的收藏」（審查 #5）
         (relics.length && !footRelic ? '<div class="lb-h3">挑一件發燒配件</div><div class="lb-opts">' + relicButtonsHTML(relics, 'data-r') + '</div>' : '') +
         (footRelic ? '<div class="foot two rel"><div class="orr"><span class="cap">或改拿一件發燒配件</span>' + relicButtonsHTML(relics, 'data-r') + '</div>' +
           '<button type="button" class="lb-btn" data-a="skip">都不要</button></div>'
@@ -2238,8 +2281,11 @@
     cam('full', 'scene', 600);                       // 看得到整間店：他往門口走、地上那張盤
     var dq = el('div', 'lb-dq narr drop', '<div class="nm"></div><div class="tx" aria-live="polite"></div><div class="nx" aria-hidden="true">▼</div><div class="menu"></div>');
     UI.panel.appendChild(dq);
+    // 高螢幕（430×932）：對白框照內容長，舞台往下接木地板吃掉剩下的高，框貼底（跟一般對白框一樣；審查 #7）。鏡頭停下來時 cam() 會再量一次
+    UI.dropDq = dq; floorSoon();
     var dlg = Dialogue({ panel: UI.panel, box: dq, dq: dq, strip: null }, {});
     dlg.run(beats).then(function () {
+      if (UI.dropDq === dq) UI.dropDq = null;
       if (UI.screen !== scr || UI.dlg !== dlg) return;
       dlg.cancel(); UI.dlg = null; dq.remove();
       then();
@@ -2532,14 +2578,15 @@
     var got = runGot(r).filter(card);                    // 這一趟收進包包的那幾張
     var keep = keepHTML(r);                              // 一趟留一張（有候選或已經帶走：取代那面牆；矮螢幕也不用捲）
     var cps = sum.checkpoints.slice().sort(function (x, y) { return x - y; });
+    // 這一趟有進過包包／客人掉的，但「我的收藏」裡都有了：說一聲為什麼沒有「帶走一張」。不另起一行——跟中繼點併成同一行（審查 #6：375×548 被底下那排鈕切掉）
+    var allOwned = !keep && !!((r.entered || []).length || (r.drops || []).length);
+    var cpLine = [cps.length ? fill(S.checkpoints, { list: cps.join('、') }) : '', allOwned ? SU('keepNone') : ''].filter(Boolean);
     var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="lb-h1">' + esc(S.title || '') + '</div>' +
       (lostEn ? '<p class="sub">輸給「' + esc(lostEn.name) + '」</p>' : '') + '</div>' +
       '<ul class="lb-sum">' +
       sumRow(S.reached, { n: sum.reached }, r.newRecord ? S.newRecord : '') + sumRow(S.streak, { n: sum.bestStreak }) + sumRow(S.taken, { n: sum.taken }) + '</ul>' +
-      (cps.length ? '<p class="sub lb-cps">' + esc(fill(S.checkpoints, { list: cps.join('、') })) + '</p>' : '') +
-      (keep || (got.length ? wallHTML(got) : '<p class="sub">' + esc(S.none || '') + '</p>') +
-        // 這一趟有進過包包／客人掉的，但唱片櫃裡都有了：說一聲為什麼沒有「帶走一張」
-        ((r.entered || []).length || (r.drops || []).length ? '<p class="sub lb-keepnone">' + esc(SU('keepNone')) + '</p>' : ''));
+      (cpLine.length ? '<p class="sub lb-cps' + (allOwned ? ' lb-keepnone' : '') + '">' + cpLine.map(function (t, i) { return '<span class="' + (allOwned && i === cpLine.length - 1 ? 'kn' : 'cp') + '">' + esc(t) + '</span>'; }).join('<span class="dot" aria-hidden="true">・</span>') + '</p>' : '') +
+      (keep || (got.length ? wallHTML(got) : '<p class="sub">' + esc(S.none || '') + '</p>'));
     // 唱片櫃／出門看看：併進底下固定那一列（「再挑戰一趟」上面），矮螢幕也不用捲（審查 #12）
     h += '</div></div><div class="foot lb-endbtns"><div class="row"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>' +
       '<button type="button" class="lb-btn pri big wide key" data-a="again">' + esc(S.again || '') + '</button></div>';
@@ -2777,6 +2824,7 @@
       // 從唱片櫃挑牌開局（e2e）：唱片櫃裡擁有的、能當種子的；own(ids, src) 直接收進唱片櫃（擁有）；keepIds＝結算「這一趟帶走一張」的候選
       owned: function () { return ownedIds(); },
       seedable: function () { return seedableIds(); },
+      seedPool: function (tier) { return seedPool(tier); },          // 挑種子面板會列的（扣掉這次王牌那組送的，審查 #3）
       own: function (ids, src) { [].concat(ids || []).forEach(function (id) { shelfOwn(id, src || 'run'); }); persist(); return ownedIds(); },
       keepIds: function () { return save.run ? keepIds(save.run) : []; },
       rules: openRules, openPage: openPage, go: go, replayTutorial: replayTutorial, stageAction: onStageAction,
@@ -2857,7 +2905,9 @@
     var cur = UI.floorX = floorNow();
     // 來客也接（V5-play-4：430×932 錢／包包那行下面空 193 px 白）；抽屜（econ）開著、面板蓋了 sheet 時不接——抽屜上面的空隙照 R2 是舞台黑
     var night = UI.screen === 'night' && !UI.econBusy && !qs(':scope > .lb-sheet', UI.panel || D.body);
-    if ((UI.screen !== 'scene' && !night) || !UI.panel) { UI.floorX = 0; st.floorExt(0); return; }   // 要過、還沒畫出來的也收掉（floorExt(0) 已經是 0 就不重畫）
+    // 領獎前的掉落旁白（只有對白框、面板還沒開）：一樣接地板（審查 #7）
+    var drop = UI.screen === 'reward' && !!UI.dropDq && UI.dropDq.parentNode === UI.panel && !qs(':scope > .lb-sheet', UI.panel || D.body);
+    if ((UI.screen !== 'scene' && !night && !drop) || !UI.panel) { UI.floorX = 0; st.floorExt(0); return; }   // 要過、還沒畫出來的也收掉（floorExt(0) 已經是 0 就不重畫）
     var p = UI.panel, pr = p.getBoundingClientRect(); if (!pr.height) return;
     var cs = getComputedStyle(p), need = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0) + 10;   // 包包條下面留 10 px
     for (var i = 0; i < p.children.length; i++) {

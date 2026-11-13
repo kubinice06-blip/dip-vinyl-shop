@@ -416,7 +416,7 @@
         prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'], promptSubs: ['', '跳過教學'] }   // promptSubs：按鈕下方的小字（店主 11-12：不接在括號後面）
     ],
     // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
-    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 撿起面板（沒有旁白、沒有敘述標題）
+    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
     epilogueWin: [
       { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句', set: { hide: { r1: true } } },
       { id: 'E2', who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', tag: '原句', act: [face('f', 'p')] },
@@ -830,29 +830,34 @@
   C.seeds = {
     ui: {
       pickTitle: '從唱片櫃帶唱片來開局',
-      pickSub: '最多 {max} 張；沒挑的，用老闆送的補。',
+      pickSub: '開局 {n} 張：你帶的，加上老闆送的補滿（最多帶 {max} 張）',   // n＝老闆送的那組幾張（4）；這次王牌那組不列（照樣會送，審查 #3）
       pickCount: '{n}／{max}',
       pickTake: '帶這張',
       picked: '✓ 帶了',
       pickGo: '就這幾張 ▸',
       pickNone: '先不挑',
       pickAll: '全部',
-      pickEmpty: '這個顏色還沒有收藏。',
+      pickEmpty: '這個顏色最強的，還沒有收藏。',                   // 篩選＝那一色是這張最高的（平手兩色都算，審查 #8）
       pickFull: '最多帶 {max} 張。先取消一張。',
+      pickFullToast: '已經帶滿 {max} 張，先取消一張再換。',   // 滿了還點：吐司（面板捲到下面也看得到，審查 #4）
       keepTitle: '這一趟帶走一張',
-      keepSub: '收進唱片櫃，下一趟可以帶來開局。',
+      keepSub: '收進「我的收藏」，下一趟可以帶來開局。',
       keepPick: '帶走這張',
       keepCount: '{n} 張可以挑：進過包包的、客人掉的',
       keepLater: '先不帶',
-      keepDone: '《{album}》收進唱片櫃了',
-      keepNone: '這一趟的唱片，唱片櫃裡都有了。',
+      keepDone: '《{album}》收進「我的收藏」了',
+      keepNone: '這一趟的唱片，「我的收藏」裡都有了。',
       fromBag: '進過包包',
       fromDrop: '客人掉的',
       shelfOwn: '我的收藏 {n} 張',
       shelfOwnSub: '可以帶來開局；王牌只展示。',
       shelfOwnEmpty: '還沒有收藏。挑過的王牌那組、每一趟帶走的，都會收進來。',
       shelfKnown: '認識過 {n}／{total}',
-      shelfKnownSub: '客人丟過的、你收過的、老闆送的，都算認識。',
+      shelfKnownSub: '客人丟的、你收的、老闆送的都算。',            // 360／375 寬也排一行（審查 #9）
+      // 「認識」的說法（唱片櫃＝「我的收藏」＋「認識過」兩段；沒收的、拿出來的只是認識，不能帶來開局，審查 #5）
+      rewardNote: '點封面看唱片資訊、試聽。沒收的也都算認識了。',
+      bagOutMsg: '要放進來的是《{album}》。挑一張拿出來，它也算認識了。',
+      stakeSkipSub: '也算認識了',
       storeTag: '店內取得'
     }
   };

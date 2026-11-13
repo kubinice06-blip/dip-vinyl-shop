@@ -189,9 +189,9 @@ const OWNER_SET = new Set(OWNER.lines || []);
 const items = []; // { scene, where, who, key?, text, tag, raw? }
 const draftEdits = []; // 改過店主草稿的提示句 { id, from, to, key }（R-03／COPY-05）
 const add = it => items.push(it);
-const SCENE = { prologue: '序章（O2–O21；O1 11-10 併進開頭旁白）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
+const SCENE = { prologue: '序章（O2–O21；O1 11-10 併進開頭旁白）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤（掉落旁白 G1）→ 發燒配件三選一 → 第一位客人推門）',
   bossEnter: '傳說藏家進門（每輪第 5 位）', bossDown: '打倒傳說藏家（每一輪：翻開他的王牌）', dead: '散場（這一趟結束）', again: '再挑戰一趟',
-  drop: '打贏客人・領獎之前（掉落旁白；店主 11-13）' };
+  drop: '打贏客人・領獎之前；序章收尾 E4 之後、撿起面板之前（掉落旁白；店主 11-13）' };
 const UI_OK = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
 const WHO_OK = ['', '老闆', '男子', '藏家', '傳說藏家', '？？？', 'player'];
 const TIER_KEYS = ['hall', 'pearl', 'heresy'];
@@ -459,7 +459,8 @@ for (const [k, v] of Object.entries(((C.seeds || {}).ui) || {})) {
   if (typeof v !== 'string' || !v) { err(where, '不是字串'); continue; }
   if (!TAG_OK(C.seedsTag)) err(where, '沒有 tag（seedsTag）');
   if (len(v.replace(/\{\w+\}/g, '')) > 28) err(where, '超過 28 字（不算 {x}）：' + v);
-  const scene = /^pick/.test(k) ? '從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）' : /^(keep|from)/.test(k) ? '從唱片櫃挑牌開局・結算：這一趟帶走一張' : '從唱片櫃挑牌開局・唱片櫃頁（我的收藏／認識過）';
+  const scene = /^pick/.test(k) ? '從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）' : /^(keep|from)/.test(k) ? '從唱片櫃挑牌開局・結算：這一趟帶走一張' :
+    /^(reward|bagOut|stake)/.test(k) ? '從唱片櫃挑牌開局・沒收的只算「認識」（領獎、包包滿拿出來、序章撿唱片）' : '從唱片櫃挑牌開局・唱片櫃頁（我的收藏／認識過）';
   add({ scene, where, who: '（畫面字）', key: k, text: v, tag: C.seedsTag });
 }
 for (const [k, v] of Object.entries(C.summary || {})) {
