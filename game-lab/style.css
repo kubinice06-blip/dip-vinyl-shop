@@ -184,6 +184,9 @@ small{font-size:inherit;}
 .lb-cv .badge.gold{background:var(--gold);}
 .lb-cv .badge.new{left:auto;right:0;background:var(--red);font-family:var(--zh);letter-spacing:0;}
 .lb-cv .badge.mod{top:auto;bottom:0;background:rgba(17,17,17,.82);}
+/* 店內取得（一趟留一張收進唱片櫃的；店主 11-13 §0）：金框蓋過稀有度框＋底下一條「店內取得」 */
+.lb-cv.store::after{content:'';position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none;z-index:3;border:3px solid var(--gold);box-shadow:inset 0 0 0 1px #fff,inset 0 0 10px rgba(240,199,94,.85);}
+.lb-cv .badge.store{top:auto;bottom:0;left:0;right:0;text-align:center;background:var(--gold);color:#111;font-size:9px;line-height:14px;letter-spacing:.08em;}
 .stars{font:700 12px 'Space Mono',var(--zh);letter-spacing:.02em;white-space:nowrap;}
 .stars b{font-weight:700;margin-right:5px;}
 .stars b:last-child{margin-right:0;}
@@ -270,6 +273,36 @@ small{font-size:inherit;}
 /* 牆只排一排（審查 #12）：多的收成「+N」那格，點了開唱片櫃 */
 .lb-wall .lb-more{width:100%;aspect-ratio:1/1;display:grid;place-items:center;border:1px dashed var(--ink);background:#f6f3ec;font:700 18px 'Space Mono',var(--zh);color:var(--ink);padding:0;cursor:pointer;}
 @supports not (aspect-ratio:1/1){.lb-wall .lb-more{height:0;padding-top:100%;position:relative;}.lb-wall .lb-more b{position:absolute;inset:0;display:grid;place-items:center;}}
+/* 一趟留一張（結算；店主 11-13）：取代那面牆、一樣高（矮螢幕也不用捲）。還沒帶走＝一顆金邊大鈕（字＋三張小封面），帶走了＝金框那張＋一句 */
+.lb-keep{display:flex;align-items:center;gap:10px;width:100%;min-height:64px;margin:2px 0 4px;padding:8px 10px;border:2px solid var(--gold);background:var(--cream,#fbf6e8);text-align:left;font:inherit;color:var(--ink);cursor:pointer;}
+.lb-keep .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;}
+.lb-keep .tx b{font-size:14px;letter-spacing:.06em;}
+.lb-keep .tx small{font-size:11px;color:var(--gray2);line-height:1.4;}
+.lb-keep .mini{flex:none;display:flex;}
+.lb-keep .mini .lb-cv{width:40px;height:40px;margin-left:-12px;box-shadow:-2px 0 0 #fff;}
+.lb-keep .mini .lb-cv:first-child{margin-left:0;}
+.lb-keep:active{background:#f3e6c2;}
+.lb-keep.done{cursor:default;background:#fff;}
+.lb-keep.done>.lb-cv{width:56px;height:56px;}
+.lb-keepnone{margin:6px 0 0;font-size:12px;}
+.lb-sheet.keep .lb-ct .src{margin-top:2px;font-size:10px;color:var(--gray2);letter-spacing:.04em;}
+.lb-sheet.keep .lb-ct .src.drop{color:var(--red,#c0392b);}
+/* 挑種子（第二趟起，挑完王牌；店主 11-13）：面板內可捲、底下兩顆固定；三色篩選；選了的封面描框、鈕變黑 */
+.lb-sheet.seeds .note.warn{color:var(--red,#c0392b);font-weight:700;}
+.lb-sheet.seeds .lb-filters{margin:8px 0 0;flex:none;}
+.lb-sheet.seeds .lb-filters .lb-btn.c{color:var(--c);} .lb-sheet.seeds .lb-filters .lb-btn.o{color:var(--o);} .lb-sheet.seeds .lb-filters .lb-btn.h{color:var(--h);}
+.lb-sheet.seeds .lb-filters .lb-btn.on{background:var(--ink);color:#fff;}
+.lb-sheet.seeds .lb-ct.off{display:none;}
+.lb-sheet.seeds .lb-ct.sel .lb-cv{outline:3px solid var(--gold);outline-offset:1px;}
+.lb-sheet.seeds .lb-sdempty{margin:12px 0;}
+.lb-sheet.seeds .hd .cnt{font:700 13px 'Space Mono',var(--zh);}
+/* 包包裡從唱片櫃帶來的（種子）：包包條金色虛線框、包包面板小籤 */
+.lb-strip .slot.seed.filled{border-color:var(--gold);border-width:2px;}
+.lb-ct .sdtag{margin-top:2px;font-size:9px;font-weight:700;color:var(--gold);text-align:center;letter-spacing:.02em;white-space:nowrap;}
+/* 唱片櫃頁：上面「我的收藏」、下面「認識過」 */
+.lb-page .lb-own{margin-bottom:6px;}
+.lb-page .lb-own .lb-h2,.lb-page .lb-known .lb-h2{margin-top:6px;}
+.lb-page .lb-known{border-top:1px solid var(--line);margin-top:14px;padding-top:4px;}
 /* 中繼點那行（結算；有走到才有） */
 .lb-cps{margin:-4px 0 10px;}
 .lb-endbtns{flex:none;display:flex;flex-direction:column;gap:8px;padding:8px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:#fff;}

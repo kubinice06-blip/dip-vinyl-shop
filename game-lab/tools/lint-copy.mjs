@@ -15,7 +15,7 @@
 //      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 25 句（原版 RPG_BEATS 19 句扣掉被換掉的 5 句（第一句 11-10 改成開頭旁白）＋TUT_EPILOGUE_BEATS 11 句），
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
-//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、pitches.json）；
+//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、seedsTag（從唱片櫃挑牌開局 C.seeds.ui）、pitches.json）；
 //      無限試煉沒有打烊、第二夜：C.night、C.secondNight 不准回來；畫面字不准再寫「今晚來客／打烊／再來一夜／今晚賣完」
 //      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
 //      FIXLIST 2：王牌沒有「不會被剋」（content 的字不准出現「不會被剋」）
@@ -190,7 +190,8 @@ const items = []; // { scene, where, who, key?, text, tag, raw? }
 const draftEdits = []; // 改過店主草稿的提示句 { id, from, to, key }（R-03／COPY-05）
 const add = it => items.push(it);
 const SCENE = { prologue: '序章（O2–O21；O1 11-10 併進開頭旁白）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
-  bossEnter: '傳說藏家進門（每輪第 5 位）', bossDown: '打倒傳說藏家（每一輪：翻開他的王牌）', dead: '散場（這一趟結束）', again: '再挑戰一趟' };
+  bossEnter: '傳說藏家進門（每輪第 5 位）', bossDown: '打倒傳說藏家（每一輪：翻開他的王牌）', dead: '散場（這一趟結束）', again: '再挑戰一趟',
+  drop: '打贏客人・領獎之前（掉落旁白；店主 11-13）' };
 const UI_OK = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
 const WHO_OK = ['', '老闆', '男子', '藏家', '傳說藏家', '？？？', 'player'];
 const TIER_KEYS = ['hall', 'pearl', 'heresy'];
@@ -451,6 +452,15 @@ for (const [grp, scene] of Object.entries(TRIAL_SCENE)) {
     add({ scene, where, who: '（畫面字）', key: where.replace(/^trial\.[a-zA-Z]+\./, ''), text: val, tag: C.trialTag });
   };
   for (const [k, v] of Object.entries((C.trial || {})[grp] || {})) walkT(v, 'trial.' + grp + '.' + k);
+}
+// 從唱片櫃挑牌開局（店主 11-13；C.seeds.ui）：挑種子、結算帶走一張、唱片櫃頁（我的收藏／認識過）；每句 ≤28 字（不算 {x}）
+for (const [k, v] of Object.entries(((C.seeds || {}).ui) || {})) {
+  const where = 'seeds.ui.' + k;
+  if (typeof v !== 'string' || !v) { err(where, '不是字串'); continue; }
+  if (!TAG_OK(C.seedsTag)) err(where, '沒有 tag（seedsTag）');
+  if (len(v.replace(/\{\w+\}/g, '')) > 28) err(where, '超過 28 字（不算 {x}）：' + v);
+  const scene = /^pick/.test(k) ? '從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）' : /^(keep|from)/.test(k) ? '從唱片櫃挑牌開局・結算：這一趟帶走一張' : '從唱片櫃挑牌開局・唱片櫃頁（我的收藏／認識過）';
+  add({ scene, where, who: '（畫面字）', key: k, text: v, tag: C.seedsTag });
 }
 for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');

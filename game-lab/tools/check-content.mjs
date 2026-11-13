@@ -19,7 +19,7 @@
 //   v4 劇本（§2.5.3、§2.5.4，B2；匯出 scriptProblems(C, layout)）：序章 O1–O21、收尾 E1–E11 的 id 與順序；D §2 店主改的句子逐字；
 //     步驟（do／人物／站位都在 shops/dip.json）；翻箱（pose dig）之前同一串步驟裡一定先走路；序章與收尾藏熟客；O11 停音樂、O14 才入袋；
 //     兩顆接受對決；E4 他走到門口才晃門、地上留一張盤、撿起面板；選完才走到唱盤（C.blocking.toDuel 三人終點）；v3 墊片都刪了；
-//     無限試煉沒有打烊：script 的鍵是 prologue／epilogueWin／bossEnter／bossDown（每輪打倒藏家）／dead／again，沒有 clear 與第二夜預告。
+//     無限試煉沒有打烊：script 的鍵是 prologue／epilogueWin／bossEnter／bossDown（每輪打倒藏家）／dead／again／drop（掉落旁白，店主 11-13），沒有 clear 與第二夜預告。
 //
 // 匯出 shapeProblems(C, E)：只看星數的形狀檢查（engine.test #14 也跑這一份；不檢查封面／試聽等烘焙欄位）。
 import fs from 'fs';
@@ -142,7 +142,9 @@ export function shapeProblems(C, E) {
     seen.set(id, g);
   }
   const drop = (C.enemies && C.enemies.man && C.enemies.man.drop) || null;
-  ok(drop && !seen.has(drop) && !aceIds.has(drop), '男子掉的那張（' + drop + '）不能跟牌組／禮物／特價箱重複');
+  // 店主 11-13：掉落的必須是他牌組裡的專輯（Fishmans 放進男子牌組，sig 第 2 手打出來）
+  ok(drop && (C.enemies.man.deck || []).includes(drop) && seen.get(drop) === '牌組' && !aceIds.has(drop), '男子掉的那張（' + drop + '）要在他自己的牌組裡、不跟禮物／特價箱重複');
+  ok(C.enemies.man.sig && C.enemies.man.sig.id === drop && Number.isInteger(C.enemies.man.sig.n), '男子的招牌（sig）＝掉的那張'); 
 
   // ---- 提示句（§2.2.4） ----
   ok(C.hintKeywords && ATTRS.every(a => Array.isArray(C.hintKeywords[a]) && C.hintKeywords[a].length === 3), 'hintKeywords 每色 3 個詞');
@@ -368,6 +370,14 @@ export function contentProblems(C, E) {
     'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',
     'bag', 'binEmpty', 'owned', 'bagFullN', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria'];
   ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8）');
+  // 從唱片櫃挑牌開局（店主 11-13）：種子不能賣的字、挑種子／帶走一張／唱片櫃頁的畫面字（ui.js 用；{x} 的佔位要在）
+  ok(C.shopUi && C.shopUi.seedTag && C.shopUi.seedNoSell === '從唱片櫃帶來的不能賣', 'shopUi.seedTag／seedNoSell（「從唱片櫃帶來的不能賣」，SPEC 從唱片櫃挑牌開局 §1 裁定 8）');
+  { const SD = ((C.seeds || {}).ui) || {};
+    const need = { pickTitle: [], pickSub: ['max'], pickCount: ['n', 'max'], pickTake: [], picked: [], pickGo: [], pickNone: [], pickAll: [], pickEmpty: [], pickFull: ['max'],
+      keepTitle: [], keepSub: [], keepPick: [], keepCount: ['n'], keepLater: [], keepDone: ['album'], keepNone: [], fromBag: [], fromDrop: [],
+      shelfOwn: ['n'], shelfOwnSub: [], shelfOwnEmpty: [], shelfKnown: ['n', 'total'], shelfKnownSub: [], storeTag: [] };
+    for (const [k, ph] of Object.entries(need)) ok(typeof SD[k] === 'string' && SD[k] && ph.every(x => SD[k].includes('{' + x + '}')), 'seeds.ui.' + k + (ph.length ? '（要有 ' + ph.map(x => '{' + x + '}').join('') + '）' : ''));
+    ok(C.seedsTag === '新', 'C.seedsTag'); }
   // 無限試煉的畫面字（第二棒 ui.js 用）：{x} 的佔位要在
   const TU = (C.trial || {}).ui || {};
   const NEED_UI = { prologue: [], pos: ['{n}'], round: ['{r}'], elite: [], boss: [], toCheckpoint: ['{n}'], checkpoint: ['{n}'], retryLeft: ['{n}'], next: ['{n}', '{name}'],
@@ -481,7 +491,10 @@ export function scriptProblems(C, L) {
   const flat = list => { const out = []; const go = l => (l || []).forEach(x => { if (!x) return; if (x.do === 'par' || x.do === 'seq') go(x.steps); else out.push(x); }); go(list); return out; };
   ok(!('retorts' in C) && !('junk' in C) && !('junkLabel' in C) && !('habits' in C) && !('habitLabels' in C), 'v3 外殼墊片（retorts／junk／junkLabel／habits／habitLabels）要刪掉');
   ok(Object.values(C.bins || {}).every(b => !('ids' in b)), 'C.bins[*].ids（v3 墊片）要刪掉');
-  ok(sameSet(Object.keys(S), ['prologue', 'epilogueWin', 'bossEnter', 'bossDown', 'dead', 'again']), 'C.script 要剛好是 prologue／epilogueWin／bossEnter／bossDown／dead／again（無限試煉沒有打烊：clear 換成每輪打倒藏家的 bossDown；quietPrologue、afterPrologue 刪掉）');
+  ok(sameSet(Object.keys(S), ['prologue', 'epilogueWin', 'bossEnter', 'bossDown', 'dead', 'again', 'drop']), 'C.script 要剛好是 prologue／epilogueWin／bossEnter／bossDown／dead／again／drop（無限試煉沒有打烊：clear 換成每輪打倒藏家的 bossDown；quietPrologue、afterPrologue 刪掉；drop＝打贏客人領獎前的掉落旁白，店主 11-13）');
+  // 掉落旁白（店主 11-13 §0）：旁白一句、店主句、逐字
+  { const Dr = S.drop || [];
+    ok(Dr.length === 1 && Dr[0].id === 'G1' && Dr[0].who === '' && Dr[0].tag === '店主' && Dr[0].text === '對方似乎掉落了什麼……' && !Dr[0].ui, 'script.drop：旁白「對方似乎掉落了什麼……」一句（店主）'); }
   for (const [key, beats] of Object.entries(S)) {
     if (!ok(Array.isArray(beats) && beats.length, 'script.' + key + '：不是陣列')) continue;
     beats.forEach((b, k) => {
