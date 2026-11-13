@@ -4,6 +4,8 @@
 //
 // 分區（FIXLIST 4／5，X／Y 契約）：十大類（genre-tree.json 頂層：rock jazz electronic→elec soul hiphop classical folk pop world blues）＋台灣 tw（地區優先）
 //   ＋新進 new（不限分類）＋門口牆 feature（店長推薦精選：史詩＋傳奇）／picks（店長推薦：不限分類）＋特價箱 sale（C.bargain）。
+//   v5 店面改版（店主 11-13）：pop 那一區改 citypop（CITY POP 城市流行）、門口長櫃拆 indierock（INDIE ROCK）／indiepop（INDIE POP），三區用子曲風規則 sub；
+//   blues 搬到窗下矮櫃（winbin）。
 // 查：
 //   1. 每個看得到的封面（箱子 front、有 bin 的牆架 cards、section 道具：高櫃 cards、試聽桌 stack）都在 cards.js、整家店不重複；
 //   2. 每個看得到的封面符合它那一區的 rule、在那一區的 pool；counter.now 除外；
@@ -11,9 +13,10 @@
 //      pool 夠大（每晚 4–6 張＋看得到的；feature 2–3 張＋看得到的）；店裡每個 bin.key 都有 bins.js 那一區、bins.js 每一區店裡都有；
 //   4. 各區 pool 兩兩不交集，也不跟牌組／禮物／特價箱／王牌／掉牌交集（deck-lists.json；content.js 是 v4 時也比 C.enemies／gifts／bargain／aces）；
 //   5. 名牌：道具上畫的英文（中島 tabs[0]、木箱／矮櫃 label、牆架 plate）＝bins.js label；bin.label（點了掛的字）＝zh；dip.json 不准有 lean 鍵；
-//   6. 宇多田ヒカル《First Love》在流行（POP）的正面、不在其他地方（D §6 點名：不准出現在搖滾）。
+//   6. 宇多田ヒカル《First Love》在店長推薦（picks）的卡池、不在搖滾（rock／indierock）（D §6 點名：不准出現在搖滾；v5 店面改版 POP 改 CITY POP 之後從 POP 移到 picks）。
 // rule（bake-cards.mjs 直接 import 這裡的 ruleMisses，同一份）：cat（契約的分類：地區 tw → tw，否則第一個曲風標籤對到十大類）、rarity（稀有度清單）、
-//   first（genres[0] 要在裡面）、regions、minYear、minTop:{attr,star}、notGenres、ost:true。
+//   first（genres[0] 要在裡面）、regions、minYear、minTop:{attr,star}、notGenres、ost:true、sub（子曲風路徑清單：卡的 subs 有一項等於其中一項或在它底下；
+//   v5 店面改版的 INDIE ROCK／INDIE POP／CITY POP 用）。
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -33,6 +36,8 @@ export const RARITIES = ['common', 'rare', 'uncommon', 'epic', 'legendary', 'ape
 export const RARITY_ZH = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };
 export function rarityScore(c) { return (c.c | 0) + (c.h | 0) + (c.o === 5 ? 1 : 0); }
 export function rarityOf(c) { if (c.tier) return 'apex'; const s = rarityScore(c); return s <= 5 ? 'common' : s === 6 ? 'rare' : s === 7 ? 'uncommon' : s === 8 ? 'epic' : 'legendary'; }
+// 子曲風（v5 店面改版）：卡的 subs（card-subgenres.json 的路徑，bake 烘進 cards.js）有一項＝rule.sub 的某一項、或是它底下的子路徑
+export function subMatch(want, subs) { return (subs || []).some(s => want.some(w => s === w || s.startsWith(w + '/'))); }
 export function ruleMisses(rule, c, ostIds) {
   const why = [];
   if (!rule) return ['no-rule'];
@@ -44,6 +49,7 @@ export function ruleMisses(rule, c, ostIds) {
   if (rule.minTop) { const v = c[rule.minTop.attr]; if (!(v >= rule.minTop.star && v === Math.max(c.c, c.o, c.h))) why.push('minTop ' + rule.minTop.attr + '=' + v); }
   if (rule.notGenres && (c.genres || []).some(g => rule.notGenres.includes(g))) why.push('notGenres');
   if (rule.ost && !(OST_RE.test(c.album || '') || (ostIds || []).includes(c.id))) why.push('not-ost');
+  if (rule.sub && !subMatch(rule.sub, c.subs)) why.push('sub');
   return why;
 }
 // 特價箱（§4.3）：峰值 ≤3、冷門 ≤3
@@ -193,13 +199,12 @@ export function runCovers(opts = {}) {
     if (o.bin.label !== B.zh) bad((o.id || o.type) + '：bin.label（點了掛的字）「' + o.bin.label + '」≠ bins.js ' + k + ' 的 zh「' + B.zh + '」');
   }
 
-  // ---- 6. 宇多田在流行（POP）的正面、不在其他地方
+  // ---- 6. 宇多田在店長推薦（picks）的卡池、不在搖滾（v5 店面改版：POP 改 CITY POP，它不是城市流行，移到 picks）
   const UTADA = '宇多田ヒカル-first-love';
-  const pop = binProps.find(o => o.bin.key === 'pop');
-  if (!pop || !(pop.front || []).includes(UTADA)) bad('宇多田ヒカル《First Love》要在流行（POP）的 front（D §6 點名；FIXLIST 4 沒有日本／CITY 了）');
+  if (!((bins.picks || {}).pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》要在店長推薦（picks）的卡池（v5 店面改版：POP 改 CITY POP 之後移過去）');
+  for (const k of ['rock', 'indierock']) if (((bins[k] || {}).pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》在 bins.js ' + k + ' 的 pool（D §6 點名：不准出現在搖滾）');
   const ut = vis.filter(v => v.id === UTADA);
-  if (ut.some(v => v.section !== 'pop')) bad('宇多田ヒカル《First Love》出現在流行以外：' + ut.filter(v => v.section !== 'pop').map(v => v.prop).join(', '));
-  for (const [k, B] of Object.entries(bins)) if (k !== 'pop' && (B.pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》在 bins.js ' + k + ' 的 pool');
+  if (ut.some(v => v.section !== 'picks')) bad('宇多田ヒカル《First Love》看得到的地方不在店長推薦：' + ut.filter(v => v.section !== 'picks').map(v => v.prop).join(', '));
 
   return { problems: P, warnings: W, info };
 }

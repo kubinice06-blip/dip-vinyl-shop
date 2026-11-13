@@ -4,7 +4,8 @@
 //   第一波：A3 還沒烘 v4 的新卡（cards.js 沒有的卡）時，用下面 STUB 表的星數補一張只有星數的假卡（只在測試裡）；
 //   烘好之後 STUB 用不到，#14 會順便比對 STUB 跟真卡的星數一致。
 //   箱子（FIXLIST 4／5／8＋X／Y 契約）：bins.js 還不是契約形狀（沒有 feature 那一區；Y 還沒交）時，用 contractBins() 做一份契約形狀的假箱子
-//   （十一個分類＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
+//   （十個分類＋三個子曲風區 citypop／indierock／indiepop＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
+//   v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP；這三區看子曲風（卡的 subs，規則 sub），不看第一個曲風。
 import { createRequire } from 'module';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -48,11 +49,15 @@ for (const [id, s] of Object.entries(STUB)) if (!CARDS[id]) { stubbed++; CARDS[i
 const USED = new Set([...Object.values(C0.aces), ...Object.values(C0.gifts).flat(), ...C0.bargain.pool,
   ...Object.values(C0.enemies).flatMap(e => e.deck.concat(e.drop ? [e.drop] : []))]);
 // X／Y 契約的箱子：鍵、英文名牌、中文名
-const CATS = ['jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues'];
+const CATS = ['jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'classical', 'world', 'folk', 'blues'];
+// 子曲風區（規則 sub＝card-subgenres.json 的路徑；卡的 subs 有一項等於它或在它底下）
+const SUB = { citypop: ['pop/jp-pop/city-pop'], indierock: ['rock/indie-alt/indie-rock', 'rock/indie-alt/alt-rock', 'rock/indie-alt/lo-fi', 'rock/dream-post/slowcore'],
+  indiepop: ['pop/indie-pop', 'rock/indie-alt/indie-pop', 'pop/pop-rock/power-pop'] };
+const subOk = (k, c) => (c.subs || []).some(s => SUB[k].some(w => s === w || s.startsWith(w + '/')));
 const LABEL = { jazz: ['JAZZ', '爵士'], tw: ['TW', '台灣'], rock: ['ROCK', '搖滾'], elec: ['ELEC', '電子'], soul: ['SOUL', '靈魂放克'], hiphop: ['HIP-HOP', '嘻哈 R&B'],
-  pop: ['POP', '流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'], blues: ['BLUES', '藍調'], new: ['NEW', '新進'],
-  feature: ['FEATURE', '店長推薦精選'], picks: ['PICKS', '店長推薦'] };
-const BIN_KEYS = [...CATS, 'new', 'feature', 'picks'];
+  citypop: ['CITY POP', '城市流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'], indierock: ['INDIE ROCK', '獨立搖滾'],
+  indiepop: ['INDIE POP', '獨立流行'], blues: ['BLUES', '藍調'], new: ['NEW', '新進'], feature: ['FEATURE', '店長推薦精選'], picks: ['PICKS', '店長推薦'] };
+const BIN_KEYS = [...CATS, ...Object.keys(SUB), 'new', 'feature', 'picks'];
 function contractBins() {
   const B = {}; for (const k of BIN_KEYS) B[k] = { key: k, label: LABEL[k][0], zh: LABEL[k][1], pool: [], front: [] };
   const GENRE = { elec: 'electronic' };
@@ -68,8 +73,9 @@ function contractBins() {
   // 每個分類補到 ≥7 張（fx-* 假卡；三軸輪流當主軸、普通／稀有／獨特都有）
   const STARS = [[1, 5, 1], [5, 1, 1], [1, 1, 5], [2, 4, 3], [4, 2, 1], [1, 3, 5], [3, 5, 3]];
   let n = 0;
-  const mk = (genre, region, st) => { const id = 'fx-' + (n++); CARDS[id] = { id, artist: id, album: id, c: st[0], o: st[1], h: st[2], tier: null, genres: [genre], region, fixture: true }; return id; };
+  const mk = (genre, region, st, sub) => { const id = 'fx-' + (n++); CARDS[id] = { id, artist: id, album: id, c: st[0], o: st[1], h: st[2], tier: null, genres: [genre], region, fixture: true, subs: sub ? [sub] : [] }; return id; };
   for (const k of CATS) for (let i = 0; B[k].pool.length < 7; i++) B[k].pool.push(mk(k === 'tw' ? 'rock' : (GENRE[k] || k), k === 'tw' ? 'tw' : 'xx', STARS[i % STARS.length]));
+  for (const k of Object.keys(SUB)) for (let i = 0; B[k].pool.length < 7; i++) B[k].pool.push(mk(k === 'indierock' ? 'rock' : 'pop', 'xx', STARS[i % STARS.length], SUB[k][0]));
   // 新進、店長推薦：不限曲風（跟分類箱的 pool 有重疊，上貨時全店不重複）；FEATURE：史詩＋傳奇
   B.new.pool = shelf.filter((id, k) => k % 3 === 0).concat([mk('pop', 'xx', [5, 2, 1]), mk('rock', 'xx', [1, 4, 4])]);
   B.picks.pool = shelf.filter((id, k) => k % 3 === 1).concat([mk('jazz', 'xx', [2, 5, 2]), mk('folk', 'xx', [1, 2, 5])]);
@@ -587,6 +593,7 @@ section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨�
       const rs = st.map(id => EN.rarity(card(id)));
       if (!rs.every(r => feat ? (r === 'epic' || r === 'legendary') : ['common', 'rare', 'uncommon'].includes(r))) ok(false, 'bin ' + k + ' rarity', rs); else pass++;
       if (CATS.includes(k) && !st.every(id => EN.categoryOf(card(id)) === k)) ok(false, 'bin ' + k + ' only its category', st); else pass++;
+      if (SUB[k] && !st.every(id => subOk(k, card(id)))) ok(false, 'bin ' + k + ' only its subgenres', st); else pass++;
       all.push(...st); st.forEach(id => seenStock[k].add(id));
     }
     if (new Set(all).size !== all.length) ok(false, 'nothing repeats across the shop', all.filter((x, k2) => all.indexOf(x) !== k2)); else pass++;
@@ -601,7 +608,7 @@ section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨�
   }
   for (const a of ATTRS) ok(seenBargain[a].size === 3, 'bargain color ' + a + ' shows all 3 cards across seeds', [...seenBargain[a]]);
   if (fakeBins) {
-    eq(shopKeys.slice().sort(), BIN_KEYS.slice().sort(), 'contract bins: 11 categories + new + feature + picks, all for sale');
+    eq(shopKeys.slice().sort(), BIN_KEYS.slice().sort(), 'contract bins: 10 categories + 3 subgenre bins + new + feature + picks, all for sale');
     for (const k of shopKeys) ok(seenStock[k].size >= 4, 'bin ' + k + ' rotates across nights', seenStock[k].size);
   }
   // 同一趟（同一個 seedKey＋runNo）的貨一樣；換一趟會換；每輪開頭補貨（換一批、特價箱補回池子扣掉包包的）
@@ -614,6 +621,23 @@ section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨�
     const want = C.bargain.pool.filter(id => !a.bag.includes(id));
     ok(a.shop.bargain.length === Math.min(6, want.length) && a.shop.bargain.every(id => want.includes(id)) && a.shop.bargainPicked && !EN.canBargainPick(a), 'round 2 bargain crate = pool minus bag (2 per color), no free pick', a.shop.bargain);
     for (const k of Object.keys(a.shop.bins)) if (a.shop.bins[k].some(id => a.bag.includes(id))) ok(false, 'restock excludes the bag'); }
+  // 舊存檔（v5 店面改版前：有 pop、沒有 citypop／indierock／indiepop）→ fixBins 只補缺的區（＝這一輪 restock 本來會上的、扣掉別區有的與包包裡的）、丟掉 pop、其他區不動
+  { const fresh = EN.newRun(C, { seedKey: 'old-save', runNo: 2, ace: 'hall' }); EN.choose(fresh, C, EN.bargainPolicy(fresh, C));
+    const old = JSON.parse(JSON.stringify(fresh)), B = old.shop.bins;
+    B.pop = (B.citypop || []).slice(); delete B.citypop; delete B.indierock; delete B.indiepop;
+    if (B.jazz && B.jazz.length) B.jazz.pop();                       // 這一輪已經買走一張爵士：不能被補回來
+    const jazz0 = B.jazz.slice(), rock0 = B.rock.slice();
+    const twin = JSON.parse(JSON.stringify(old));
+    ok(EN.fixBins(old, C) === true, 'fixBins: old save → changed');
+    eq(Object.keys(old.shop.bins), Object.keys(fresh.shop.bins), 'fixBins: keys = current bins in SHOP_ORDER (pop dropped, citypop／indierock／indiepop back)');
+    ok(!('pop' in old.shop.bins), 'fixBins: stale pop dropped');
+    for (const k of ['citypop', 'indierock', 'indiepop']) ok(old.shop.bins[k].length > 0 && old.shop.bins[k].every(id => fresh.shop.bins[k].includes(id)), 'fixBins: ' + k + ' restocked from this round\'s restock', old.shop.bins[k]);
+    eq([old.shop.bins.jazz, old.shop.bins.rock], [jazz0, rock0], 'fixBins: bins that were already there are untouched (bought stays bought)');
+    const all = Object.values(old.shop.bins).flat();
+    ok(new Set(all).size === all.length && !all.some(id => old.bag.includes(id)), 'fixBins: no duplicates across bins, nothing from the bag');
+    EN.fixBins(twin, C); eq(twin.shop.bins, old.shop.bins, 'fixBins: deterministic (same save → same fill)');
+    eq([old.rng, old.shop.relics, old.shop.bargain], [fresh.rng, fresh.shop.relics, fresh.shop.bargain], 'fixBins: run.rng, counter, bargain crate untouched');
+    ok(EN.fixBins(old, C) === false && EN.fixBins(fresh, C) === false, 'fixBins: current save → no change'); }
   // 免費挑三張只在第 1 位之前（裁定 4）：沒挑就跳到第 2 位 → 不能挑
   { const r = EN.newRun(C, { seedKey: 'bp1', runNo: 2, ace: 'pearl' }); ok(EN.canBargainPick(r), 'pos 1 → can pick'); r.pos = 2; r.idx = 1; ok(!EN.canBargainPick(r), 'pos 2 → cannot pick (even if never picked)'); }
   for (let s = 1; s <= 50; s++) {
@@ -1019,6 +1043,7 @@ section('15 台幣行情（FIXLIST 8）：稀有度、價格、特價箱每張�
     if (!ok(!!b, 'bin ' + k + ' exists')) continue;
     ok(b.key === k && b.zh === LABEL[k][1] && (k === 'picks' ? !!b.label : b.label === LABEL[k][0]) && Array.isArray(b.pool) && Array.isArray(b.front), 'bin ' + k + ' {key,label,zh,pool,front}', { key: b.key, label: b.label, zh: b.zh });
     if (CATS.includes(k)) ok(b.pool.every(id => EN.categoryOf(card(id)) === k), 'bin ' + k + ' pool = its category');
+    if (SUB[k]) ok(b.pool.every(id => subOk(k, card(id))), 'bin ' + k + ' pool = its subgenres');
     if (k === 'feature') ok(b.pool.every(id => ['epic', 'legendary'].includes(EN.rarity(card(id)))), 'feature pool = epic + legendary');
   }
   { const bp = binsProblems(C, EN); ok(bp.length === 0, 'binsProblems (check-content) empty on ' + (fakeBins ? 'the fixture' : 'bins.js'), bp.slice(0, 8)); }

@@ -408,6 +408,8 @@ export function checkOblique(L, file, lib, cards, content) {
   for (const [k, st, src] of stands) { const r = obsAt(st); if (r) bad(src + '：bin.stand ' + JSON.stringify(st) + ' 站在家具裡 ' + obsName(r)); }
   // 站著不動的人（老闆以外的 actors，例：熟客 r1）旁邊不能是 bin.stand：你走過去翻箱子會被他整個蓋掉（R-02：FEATURE 的站位在熟客正後面）。
   //   一個小人的身體寬約 38 格、高 44 格以內就會疊到（ui.js makeRoom 用同一組數字請門邊等的客人讓開）
+  //   v5 店面改版：窗下矮櫃改成 BLUES 藍調櫃，熟客原本站它前面 [200,104]，名牌和封面被她蓋掉、藍調站位也被這條擠到 INDIE POP 前面——
+  //   所以熟客搬到櫃檯後面的高櫃前（spots.regular），藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
   for (const a of (L.actors || [])) {
     if (a.id === 'o' || !spots[a.at]) continue;
     const s0 = spots[a.at];

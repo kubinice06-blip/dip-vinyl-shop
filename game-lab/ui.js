@@ -211,6 +211,8 @@
     if (!Array.isArray(s.relics)) s.relics = [];
     s.relics = s.relics.filter(function (id) { return C.relics && C.relics[id]; }).slice(0, 3);
     if (s.run && !validRun(s.run)) s.run = null;
+    // 這一輪的貨跟現在的箱子對不上（v5 店面改版前存的：有 pop、沒有 citypop／indierock／indiepop）：只補缺的區、丟掉沒有的區（同種子，每次載入一樣）
+    if (s.run && E.fixBins) { try { E.fixBins(s.run, C); } catch (_) { /* 補不了就照舊：那一區點了說賣完 */ } }
     // 唱片櫃（v6）：每一格 {at, seen, own?, src?}；擁有的 src 只認 gift／run／boss
     var shf = {};
     Object.keys(s.shelf).forEach(function (id) {

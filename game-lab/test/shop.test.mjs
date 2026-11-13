@@ -53,11 +53,14 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
   eq(dip.cameras.full.anchor, 'bottom', 'full 從牆頂裁（唱盤區留著）');
   ok(dip.meta && dip.meta.crates === null, 'meta.crates＝null（箱子由 bin 推出，SPEC-v4 §2.3.1）');
   const bins = dip.props.filter(p => p.bin);
-  // FIXLIST 4／5（X／Y 契約）：前排兩箱 jazz、tw；中島 8＝rock elec soul hiphop pop classical world folk；後牆矮櫃 blues；左木箱 new；門口牆 feature（靠門）＋picks
-  eq(bins.map(p => p.id + ':' + p.bin.key), ['wall-feature:feature', 'wall-picks:picks', 'backbin:blues', 'isl-0a:rock', 'isl-0b:elec', 'isl-1a:soul', 'isl-1b:hiphop', 'isl-2a:pop', 'isl-2b:classical',
-    'isl-3a:world', 'isl-3b:folk', 'crate-jazz:jazz', 'crate-tw:tw', 'crate-new:new', 'crate-sale:sale'], '十大類＋TW＋NEW＋門口牆兩區＋特價箱，位置照契約');
-  eq(bins.map(p => p.bin.label), ['店長推薦精選', '店長推薦', '藍調', '搖滾', '電子', '靈魂放克', '嘻哈 R&B', '流行', '古典', '世界', '民謠', '爵士', '台灣', '新進', '特價區'], '點了掛的中文全名');
-  eq(bins.map(p => CC.plateOf(p)), ['FEATURE', 'PICKS', 'BLUES', 'ROCK', 'ELEC', 'SOUL', 'HIP-HOP', 'POP', 'CLASSICAL', 'WORLD', 'FOLK', 'JAZZ', 'TW', 'NEW', 'SALE'], '名牌英文');
+  // FIXLIST 4／5（X／Y 契約）：前排兩箱 jazz、tw；中島 8＝rock elec soul hiphop citypop classical world folk；左木箱 new；門口牆 feature（靠門）＋picks
+  // v5 店面改版（店主 11-13）：門口長櫃拆成 INDIE ROCK／INDIE POP 兩個 4 欄櫃、中島 POP 改 CITY POP、BLUES 搬到窗下矮櫃（winbin，7 欄）
+  eq(bins.map(p => p.id + ':' + p.bin.key), ['wall-feature:feature', 'wall-picks:picks', 'backbin-ir:indierock', 'backbin-ip:indiepop', 'winbin:blues', 'isl-0a:rock', 'isl-0b:elec', 'isl-1a:soul', 'isl-1b:hiphop',
+    'isl-2a:citypop', 'isl-2b:classical', 'isl-3a:world', 'isl-3b:folk', 'crate-jazz:jazz', 'crate-tw:tw', 'crate-new:new', 'crate-sale:sale'], '十大類（POP 改 CITY POP）＋INDIE ROCK／INDIE POP＋TW＋NEW＋門口牆兩區＋特價箱，位置照契約');
+  eq(bins.map(p => p.bin.label), ['店長推薦精選', '店長推薦', '獨立搖滾', '獨立流行', '藍調', '搖滾', '電子', '靈魂放克', '嘻哈 R&B', '城市流行', '古典', '世界', '民謠', '爵士', '台灣', '新進', '特價區'], '點了掛的中文全名');
+  eq(bins.map(p => CC.plateOf(p)), ['FEATURE', 'PICKS', 'INDIE ROCK', 'INDIE POP', 'BLUES', 'ROCK', 'ELEC', 'SOUL', 'HIP-HOP', 'CITY POP', 'CLASSICAL', 'WORLD', 'FOLK', 'JAZZ', 'TW', 'NEW', 'SALE'], '名牌英文');
+  eq([propById('backbin-ir'), propById('backbin-ip'), propById('winbin')].map(p => [p.type, p.cols, p.x]), [['binCabinet', 4, 44], ['binCabinet', 4, 99], ['binCabinet', 7, 162]], '門口長櫃拆兩個 4 欄櫃、窗下矮櫃換成 7 欄藍調櫃');
+  ok(!dip.props.some(p => p.type === 'lowShelf' || p.id === 'backbin'), '沒有舊的 backbin／lowShelf');
   ok(dip.props.filter(p => p.type === 'binTable' || p.type === 'binCabinet').every(p => p.bin || p.decor === true), '每個箱子有 bin 或 decor');
   ok(dip.props.every(p => !('lean' in p)), '沒有 lean（島上那一格＝front[1]）');
   const boxes = bins.filter(p => p.type !== 'ledge'), walls = bins.filter(p => p.type === 'ledge');
@@ -65,17 +68,19 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
   ok(walls.every(p => Array.isArray(p.cards) && p.cards.length === p.n * (p.rows || 1) && !p.hot && !p.section), '門口牆每格都有唱片（n×rows）、不帶 hot／section');
   eq(walls.map(p => [p.x, p.n, p.rows, p.plate]), [[44, 2, 2, 'FEATURE'], [76, 5, 2, 'PICKS']], '門口牆：靠門 2×2＝FEATURE、其餘 5×2＝PICKS');
   ok(propById('wall-feature').x < propById('wall-picks').x && propById('wall-feature').x - (propById('door').x + propById('door').w) < 10, 'FEATURE 在最靠門那一格');
-  eq(propById('isl-2a').front[0], '宇多田ヒカル-first-love', '宇多田在流行（POP）正面（FIXLIST 4 沒有日本／CITY 了）');
+  eq(propById('isl-2a').front, ['miki-matsubara-pocket-park', '大貫妙子-grey-skies', '吉田美奈子-monochrome'], 'CITY POP 正面＝松原みき、大貫妙子、吉田美奈子');
   eq([propById('shelving').section, propById('booth').section], ['picks', 'picks'], '高櫃＋試聽桌的封面＝店長推薦');
   const seen = new Set(), dup = [];
   for (const p of dip.props) for (const id of [].concat(p.front || [], p.type === 'ledge' || p.type === 'shelving' ? p.cards : [], p.type === 'listenDesk' ? [p.stack] : [])) { if (seen.has(id)) dup.push(id); seen.add(id); }
   eq(dup, [], '看得到的封面整家店不重複');
-  eq(seen.size, 60, '看得到的封面 60 張（12 箱 41＋特價 2＋門口牆 14＋高櫃 2＋試聽 1）');
+  eq(seen.size, 67, '看得到的封面 67 張（14 箱 48＋特價 2＋門口牆 14＋高櫃 2＋試聽 1）');
   // bins.js（契約形狀）：每一區 { key, label, zh, pool, front }；front＝店裡畫出來的；feature＝史詩／傳奇、其他＝一般稀有度
-  const BJ = BINS.shops.dip, KEYS = ['jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues', 'new', 'feature', 'picks'];
+  const BJ = BINS.shops.dip, KEYS = ['jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'citypop', 'classical', 'world', 'folk', 'indierock', 'indiepop', 'blues', 'new', 'feature', 'picks'];
   eq(Object.keys(BJ), KEYS, 'bins.js 的區（契約順序）');
-  const ZH = { jazz: '爵士', tw: '台灣', rock: '搖滾', elec: '電子', soul: '靈魂放克', hiphop: '嘻哈 R&B', pop: '流行', classical: '古典', world: '世界', folk: '民謠', blues: '藍調', new: '新進', feature: '店長推薦精選', picks: '店長推薦' };
-  const EN = { jazz: 'JAZZ', tw: 'TW', rock: 'ROCK', elec: 'ELEC', soul: 'SOUL', hiphop: 'HIP-HOP', pop: 'POP', classical: 'CLASSICAL', world: 'WORLD', folk: 'FOLK', blues: 'BLUES', new: 'NEW', feature: 'FEATURE', picks: 'PICKS' };
+  const ZH = { jazz: '爵士', tw: '台灣', rock: '搖滾', elec: '電子', soul: '靈魂放克', hiphop: '嘻哈 R&B', citypop: '城市流行', classical: '古典', world: '世界', folk: '民謠', indierock: '獨立搖滾', indiepop: '獨立流行', blues: '藍調', new: '新進', feature: '店長推薦精選', picks: '店長推薦' };
+  const EN = { jazz: 'JAZZ', tw: 'TW', rock: 'ROCK', elec: 'ELEC', soul: 'SOUL', hiphop: 'HIP-HOP', citypop: 'CITY POP', classical: 'CLASSICAL', world: 'WORLD', folk: 'FOLK', indierock: 'INDIE ROCK', indiepop: 'INDIE POP', blues: 'BLUES', new: 'NEW', feature: 'FEATURE', picks: 'PICKS' };
+  // 子曲風區（v5 店面改版）：上架規則 sub＝card-subgenres.json 的路徑（bake 烘進 cards.js 的 subs）
+  const SUB_BINS = { citypop: ['pop/jp-pop/city-pop'], indierock: ['rock/indie-alt/indie-rock', 'rock/indie-alt/alt-rock', 'rock/indie-alt/lo-fi', 'rock/dream-post/slowcore'], indiepop: ['pop/indie-pop', 'rock/indie-alt/indie-pop', 'pop/pop-rock/power-pop'] };
   for (const k of KEYS) {
     const b = BJ[k];
     ok(b.key === k && b.label === EN[k] && b.zh === ZH[k] && Array.isArray(b.pool) && Array.isArray(b.front), 'bins.js ' + k + ' 形狀＝{key,label,zh,pool,front}', [b.key, b.label, b.zh]);
@@ -84,8 +89,13 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
     ok(b.pool.length >= b.front.length + (k === 'feature' ? 3 : 6), 'bins.js ' + k + ' pool 夠每晚上貨（' + b.pool.length + ' ≥ 看得到 ' + b.front.length + '＋' + (k === 'feature' ? 3 : 6) + '）');
     const rar = b.pool.map(id => CC.rarityOf(cards[id]));
     ok(rar.every(r => k === 'feature' ? (r === 'epic' || r === 'legendary') : ['common', 'rare', 'uncommon'].includes(r)), 'bins.js ' + k + ' 稀有度', rar);
-    if (!['new', 'feature', 'picks'].includes(k)) ok(b.pool.every(id => CC.catOf(cards[id]) === k), 'bins.js ' + k + ' 每張的分類（第一個曲風／台灣地區）＝' + k, b.pool.filter(id => CC.catOf(cards[id]) !== k));
+    if (SUB_BINS[k]) {
+      eq(b.rule.sub, SUB_BINS[k], 'bins.js ' + k + ' 上架規則 sub');
+      ok(b.pool.every(id => CC.subMatch(SUB_BINS[k], cards[id].subs)), 'bins.js ' + k + ' 每張的子曲風都在 ' + SUB_BINS[k].join('／') + ' 底下', b.pool.filter(id => !CC.subMatch(SUB_BINS[k], cards[id].subs)));
+    } else if (!['new', 'feature', 'picks'].includes(k)) ok(b.pool.every(id => CC.catOf(cards[id]) === k), 'bins.js ' + k + ' 每張的分類（第一個曲風／台灣地區）＝' + k, b.pool.filter(id => CC.catOf(cards[id]) !== k));
   }
+  // 宇多田《First Love》（D §6：不准出現在搖滾）：POP 改 CITY POP 之後在店長推薦的卡池（不在正面）
+  ok(BJ.picks.pool.includes('宇多田ヒカル-first-love') && !BJ.rock.pool.includes('宇多田ヒカル-first-love') && !BJ.indierock.pool.includes('宇多田ヒカル-first-love'), '宇多田在店長推薦（picks）的卡池、不在搖滾');
   const allPool = KEYS.flatMap(k => BJ[k].pool);
   eq(allPool.length, new Set(allPool).size, '各區卡池互不重疊（全店當天不會重複）');
   eq(JSON.stringify(BJ.feature.front), JSON.stringify(propById('wall-feature').cards), 'feature front＝牆上那 4 格');
@@ -106,11 +116,11 @@ section('熱點：id 唯一、本店該有的都有、牆上的唱片可以點',
   }
   const r = CS.checkLayout(dip, 'shops/dip.json', lib, cards, content);
   for (const id of CS.o34HotIds(dip)) ok(r.hotIds.includes(id), 'dip 有熱點 ' + id);
-  eq(CS.o34HotIds(dip).filter(h => h.startsWith('bin:')).length, 15, '主熱點 bin:<key> ×15（12 箱＋特價箱＋門口牆兩區，從 o.bin.key 推出）');
+  eq(CS.o34HotIds(dip).filter(h => h.startsWith('bin:')).length, 17, '主熱點 bin:<key> ×17（14 箱＋特價箱＋門口牆兩區，從 o.bin.key 推出）');
   ok(r.hotIds.includes('bin:feature') && r.hotIds.includes('bin:picks'), '門口牆 FEATURE／PICKS 都是可以點的熱點');
   ok(!r.hotIds.some(h => /^crate-/.test(h)), '沒有 v3 的 crate-* 熱點');
   const racks = r.hotIds.filter(h => h.startsWith('rack:'));
-  eq(racks.length, 10, '高櫃 2＋靠牆矮櫃 8 張唱片是單張熱點（門口牆整面＝翻那一區）');
+  eq(racks.length, 17, '高櫃 2＋門口長櫃 4＋4＋窗下藍調櫃 7 張唱片是單張熱點（門口牆整面＝翻那一區）');
   ok(racks.every(h => cards[h.slice(5)]), '每張都在卡池（點了開唱片資訊）');
   // 門口牆：有 bin 的牆架不出單張熱點；box 含名牌；沒有 bin 的牆架照舊每格一個（位置不變）
   const fw = propById('wall-feature'), pk = propById('wall-picks');
@@ -251,7 +261,7 @@ section('路線表（SPEC-v4 §2.3.2）：不穿家具、1 倍速不超過上限
   // 所有 bin.stand 兩兩之間、到 browse：≤4.5 s
   const ks = Object.keys(S).filter(k => k.startsWith('bin:')).concat(['browse']);
   let n = 0; for (const a of ks) for (const b of ks) if (a !== b) { one(a, b, 4.5, false); n++; }
-  eq(n, 16 * 15, '箱子 13 個＋門口牆 2 個 stand＋browse 兩兩');
+  eq(n, 18 * 17, '箱子 15 個（含特價箱）＋門口牆 2 個 stand＋browse 兩兩');
   // 特價箱：在門下方左牆邊、stand 貼著箱子、不擋 door→atdoor→nav[30,100]→nav[72,110]
   const sale = propById('crate-sale'), sb = DS.O34.PROPS.binTable.box(sale), st = sale.bin.stand;
   ok(sale.x <= 60 && sale.y >= 100 && sale.y <= 160, '特價箱在門下方的左牆邊（x ≤ 60、y 100–160）', [sale.x, sale.y]);
@@ -353,7 +363,7 @@ section('看得到的封面只來自資料（不用 P.poolPick 從全卡池隨�
   for (const o of [ledge, bin, desk]) DS.O34.PROPS[o.type].draw(P, o, S);
   eq(picks, 0, '空格畫素色封套／空架，不抽卡');
   const seen = [...covers].filter(id => id !== 'caetano-veloso-transa');
-  eq(seen.length, 60, '畫出來的固定封面＝資料裡的 60 張（不含櫃檯 NOW）');
+  eq(seen.length, 67, '畫出來的固定封面＝資料裡的 67 張（不含櫃檯 NOW）');
 });
 
 section('櫃檯 logo（B15，SPEC-v4 §2.3.6）：畫在正面板中央、不蓋到任何可點的東西', () => {
@@ -424,7 +434,7 @@ section('D §3：沒有任何人的路線穿過家具的腳下範圍（任兩個
   const standing = dip.props.filter(o => { const sp = OP[o.type], ly = o.layer || (sp && sp.layer); return sp && !o.hidden && !['wall', 'bg', 'fx'].includes(ly); });
   const covered = standing.map(o => o.id || o.type + '#' + dip.props.indexOf(o)).filter(id => feet.filter(f => f[2].includes(id)).length === 1);
   eq(covered.length, standing.length, '每個站立道具都剛好在一塊腳下範圍裡（' + standing.length + ' 件）');
-  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'crate-new', 'shelving', 'island', 'backbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
+  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'crate-new', 'shelving', 'island', 'backbin-ir', 'backbin-ip', 'winbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
   ok(['isl-0a', 'isl-0b', 'crate-jazz', 'crate-tw'].every(id => feet.find(f => f[0] === 'island')[2].includes(id)), '中島（含最上排 isl-0a／isl-0b）一塊');
   const obs = DS.navObstacles(dip), pts = Object.entries(dip.spots).filter(([, s]) => !s[2]).map(([k, s]) => [k, s.slice(0, 2)])
     .concat(dip.props.filter(p => p.bin).map(p => ['bin:' + p.bin.key, p.bin.stand]));
@@ -469,7 +479,7 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   const isl = F('island');
   ok(isl && isl.props.length === 10 && isl.gap <= 2, '中島 10 箱合成一塊（縫 ≤2 格）', isl && [isl.props.length, isl.gap]);
   // 每件道具畫出來的（寬 ≥3 格的）每一格都在它的腳下範圍裡（格子中心嚴格在多邊形內）
-  const own = { counter: 'counter', deck: 'deck', backbin: 'backbin', booth: 'booth', 'crate-sale': 'crate-sale', 'crate-new': 'crate-new', shelving: 'shelving' };
+  const own = { counter: 'counter', deck: 'deck', 'backbin-ir': 'backbin-ir', 'backbin-ip': 'backbin-ip', winbin: 'winbin', booth: 'booth', 'crate-sale': 'crate-sale', 'crate-new': 'crate-new', shelving: 'shelving' };
   for (const o of dip.props) if (/^isl-|^crate-(jazz|tw)$/.test(o.id || '')) own[o.id] = 'island';
   for (const [id, fid] of Object.entries(own)) {
     const o = P(id), f = F(fid), px = maskOfProp(o), bx = (dip.footprints.behind || {})[id], fy = o.y - o.d;
@@ -487,8 +497,8 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   eq([dip.spots.visit, dip.spots.near], [[180, 292], [112, 292]], 'visit、near 移到唱盤台旁邊（FIXLIST 1）');
   // 中島最上排（R&B／OST）畫出來的上緣：箱身與唱片 y≈104–106；腳下範圍從那裡起算（原本的 foot 只從 y128 起＝店主看到的「走在箱子上」）
   ok(isl.box[1] <= 106 && isl.box[0] <= 97 && isl.box[0] + isl.box[2] >= 185 && isl.box[1] + isl.box[3] >= 262, '中島腳下範圍 x 97–185、y ≤106–262', isl.box);
-  // 後走道：後牆矮櫃（民謠）與窗下矮櫃前緣以後、中島上緣以前；mid、leaving 站在這裡（不被中島擋住腳）
-  const backY = Math.max(F('backbin').box[1] + F('backbin').box[3], feet.find(f => f.props[0].startsWith('lowShelf')).box[1] + feet.find(f => f.props[0].startsWith('lowShelf')).box[3]);
+  // 後走道：門口長櫃（INDIE ROCK／INDIE POP）與窗下藍調櫃前緣以後、中島上緣以前；mid、leaving 站在這裡（不被中島擋住腳）
+  const backY = Math.max(...['backbin-ir', 'backbin-ip', 'winbin'].map(id => F(id).box[1] + F(id).box[3]));
   const islTop = isl.box[1];
   for (const k of ['mid', 'leaving']) { const s0 = dip.spots[k]; ok(s0[1] > backY && s0[1] < islTop && !feet.some(f => DS.inPoly(s0, f.poly)), k + ' 站在後走道（y ' + backY + '–' + islTop + '）', s0); }
   // 路線：counter→mid、pay→leaving 走右側走道上到後走道再橫移；mid→ref、atdoor→duelE 走左側走道；sale→pay、browse→sale、leaving→duelP 也不碰中島的外框
@@ -578,7 +588,7 @@ asection('舞台 v4：version、INTERACT、bins()、hold(\'o\')、finish、faceT
   eq([I.scene, I.duel, I.reward].map(x => JSON.stringify(x)), [JSON.stringify(['rack:*', 'now', 'bin:*']), JSON.stringify(['rack:*', 'now', 'owner', 'bin:*']), JSON.stringify(['bin:*'])], 'INTERACT scene／duel／reward（§2.3.8）');
   ok(I.title === null && I.map === null, 'title／map 照舊全開');
   const bins = st.bins();
-  eq(bins.length, 15, 'bins() 15 區（12 箱＋特價箱＋門口牆 FEATURE／PICKS）');
+  eq(bins.length, 17, 'bins() 17 區（14 箱＋特價箱＋門口牆 FEATURE／PICKS）');
   eq(bins.map(b => b.hotId), dip.props.filter(p => p.bin).map(p => 'bin:' + p.bin.key), 'hotId＝bin:<key>');
   ok(bins.every(b => { const p = propById(b.propId); return p && p.bin.label === b.label && JSON.stringify(p.bin.stand) === JSON.stringify(b.stand); }), 'label／stand／propId 照 layout');
   // hold('o')：老闆手上有那張、arm show；不呼叫 setFlips、不記進 TT.held（§2.3.2、§5.1 A2）

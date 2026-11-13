@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-13｜dip-vinyl-shop｜game-lab 店面箱子改版＋封面改回原版（遊戲 54 張、主站 2 張）
+
+- **店主 11-13**：「門口的 blues 切一半 indie rock 跟 indie pop、中間的 pop 改成 city pop、blues 不知道放哪」；「有些封面用成了 CD 版或特別版（Martha Argerich Rachmaninoff 3、石頭記），我只要正常版」。
+- **店面**：門口長櫃拆成 INDIE ROCK／INDIE POP 兩個 4 欄櫃；中島 POP → CITY POP；BLUES 搬到窗下矮櫃（winbin 7 欄，主線選方案 A；另兩案＝併 FOLK、地板新木箱）。新上架規則 `sub`（card-subgenres 子曲風路徑），新卡 26 張（城市流行 8、獨立搖滾 9、獨立流行 9，卡池 290→316，封面逐張看過是原版）；原 POP 裡非城市流行的移到 PICKS、Smiths 從 ROCK 移到 INDIE POP；熟客 r1 移到櫃檯後高櫃前 [272,168]（原本擋住 BLUES 名牌），BLUES 站位 [182,100]（最壞路線 4.445 s）；舊存檔缺新箱子時 `fixBins` 只補缺的區。
+- **封面**：遊戲 290 張逐張看圖＋覆核，54 張不是原版（多為 Apple Music 的再版／CD／特別版圖）→ 新增 `tools/cover-overrides.json`，bake 三條路都優先用它（以後重烘不會蓋回去）；Cookin' 的第三方 Bandcamp 用 `LINK_OVERRIDES` 拿掉。**主站即時寫入**：Firestore `card_catalog` 2 筆（達明一派《石頭記》→ Spotify 原版封面；Martha Argerich《Rachmaninoff 3》→ CAA 1995 Philips 446 673-2 首發），KV `cover6:達明一派|石頭記` 1 鍵（後備路徑一致）；Argerich 卡上年份 1983 不成立（最早 1995），未改、待店主。主站全面清查（ok-single 桶 157 組、rgMbid 釘在重發版）另案。
+- **流程**：Map（箱子規劃＋主站封面機制）＋Audit 7 批＋Verify 7 批 → 施工 → 審查＋驗證（確認 4 項）→ 修正。
+- **主要檔案**：`game-lab/{cards.js,bins.js,content.js,engine.js,ui.js,shops/dip.json,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{bake-cards.mjs,check-covers.mjs,check-content.mjs,check-shops.mjs,deck-lists.json,cover-overrides.json}`、`game-lab/test/{shop,hit,engine}.test.mjs`、`game-lab/tests/{e2e-taps,e2e-econ}.mjs`。`?v=62`。報告：scratchpad `v5/covers/`。
+- **驗證**：check-shops／check-covers（67 張、16 區）／check-content（316）／lint-copy OK；engine 2,307,378、tutorial 193,864、shop 1,442、hit 402、chars 30,061 全過；sim 16/16；e2e.spec 390 47/47、e2e-taps 390＋360 28/28、e2e-prologue 52/52、e2e-econ 21/21、三尺寸不捲動 36/36。
+
 ### 2026-11-13｜dip-vinyl-shop｜game-lab：殿堂禮物的 Miles 換成第一代經典五重奏《Cookin'》
 
 - **店主 11-13**：「Miles Davis 換成 miles 那張經典五重奏的」。卡池資料（seed＋Apple 試聽索引）裡第一代五重奏有試聽的只有 Prestige 四張（Cookin'／Relaxin'／Workin'／Steamin'），取最有名的《Cookin' with the Miles Davis Quintet》（1957，開場〈My Funny Valentine〉）；《'Round About Midnight》索引沒有試聽。

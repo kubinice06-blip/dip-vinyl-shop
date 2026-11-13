@@ -48,7 +48,7 @@
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept}
-//            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
+//            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）＋ level {pick:'atk'|'def'|'hp'}
@@ -82,7 +82,7 @@
 //              客人丟的、買的、特價箱的照舊半價。拿獎勵時包包滿要「拿掉一張」（take 的 dropId）不是賣、不收錢，照舊可以選
 //            run.shop（restock：newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng）：
 //              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
-//                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop pop classical world folk blues
+//                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues
 //                                            //   new picks 各 4–6 張（economy.stock；只抽普通／稀有／獨特）；照 SHOP_ORDER 上貨、全店同一輪不重複；
 //                                            //   不上你的王牌、包包裡的、特價箱的、頂點卡；display:true 的區（舊牆面）不賣
 //                relics: [ids],              // 櫃檯 2–3 件（economy.relicStock；relicShop.pool 扣掉身上的）
@@ -157,8 +157,9 @@
   const RARITY = ['common', 'rare', 'uncommon', 'epic', 'legendary', 'apex'];
   const FEATURE_RARITY = ['epic', 'legendary'];            // 門口牆最靠門那格（FEATURE 店長推薦精選）只放這兩種
   const SHELF_RARITY = ['common', 'rare', 'uncommon'];     // 其他箱子、新進、店長推薦：一般稀有度
-  // 上貨順序（全店同一輪不重複：先上的先拿）：FEATURE → 十一個分類箱 → 新進 → 店長推薦；不認得的鍵照字母排在最後
-  const SHOP_ORDER = ['feature', 'jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues', 'new', 'picks'];
+  // 上貨順序（全店同一輪不重複：先上的先拿）：FEATURE → 十三個分類箱 → 新進 → 店長推薦；不認得的鍵照字母排在最後
+  //   v5 店面改版（店主 11-13）：POP 改 CITY POP（城市流行）、門口長櫃拆 INDIE ROCK／INDIE POP（接在民謠後面）、BLUES 搬到窗下矮櫃
+  const SHOP_ORDER = ['feature', 'jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'citypop', 'classical', 'world', 'folk', 'indierock', 'indiepop', 'blues', 'new', 'picks'];
 
   // ---------- RNG (mulberry32; state lives in the object so clones are deterministic) ----------
   function rng(st) {
@@ -784,6 +785,29 @@
     SH.bargain = out;
     return SH;
   }
+  // 舊存檔的貨對不上現在的箱子（v5 店面改版：改版前存的 run 有 pop、沒有 citypop／indierock／indiepop → 點了說「賣完了」）：
+  //   載入時（ui.js loadSave 的 validRun 之後）只補缺的區、丟掉 content.bins 已經沒有（或只展示）的區；其他區原樣不動（這一輪可能已經買走幾張）。
+  //   補的貨＝這一輪 restock 本來就會上的那幾張（同一個種子，拿一份暫時的 run 跑一次；不碰 run.rng），再扣掉別區已經有的、包包裡的
+  //   → 同一份存檔每次載入補出來一樣。區的順序照 restock（SHOP_ORDER）。回傳 true＝有改。
+  function fixBins(run, content) {
+    const SH = run && run.shop;
+    if (!SH || !SH.bins || typeof SH.bins !== 'object') return false;
+    const B = content.bins || {};
+    const keys = SHOP_ORDER.filter(k => B[k]).concat(Object.keys(B).filter(k => !SHOP_ORDER.includes(k)).sort()).filter(k => !B[k].display);
+    const miss = keys.filter(k => !Array.isArray(SH.bins[k])), stale = Object.keys(SH.bins).filter(k => !keys.includes(k));
+    if (!miss.length && !stale.length) return false;
+    const bag = Array.isArray(run.bag) ? run.bag : [];
+    let fresh = {};
+    if (miss.length) {
+      const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: bag.slice(), relics: (run.relics || []).slice() };
+      fresh = restock(tmp, content).bins;
+    }
+    const have = new Set(keys.filter(k => !miss.includes(k)).flatMap(k => SH.bins[k]));
+    const bins = {};
+    for (const k of keys) bins[k] = miss.includes(k) ? (fresh[k] || []).filter(id => !have.has(id) && !bag.includes(id)) : SH.bins[k];
+    SH.bins = bins;
+    return true;
+  }
   function current(run, content) {
     if (run.duel && run.duelEnemy) return run.duelEnemy;
     if (run.pending && run.pending.enemyId) return run.pending.enemyId;
@@ -1376,7 +1400,7 @@
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, jumpTo, half, hintTableOf,
+    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, isGift, moneyText,
     runPolicy, shopPolicy, bargainPolicy, policies,
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce };
