@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-13｜dip-vinyl-shop｜game-lab：經典（殿堂）那組老闆送的四張換成有名的
+
+- **店主 11-13**：「經典的四張附贈專輯要有名一點，除了 Bowie 其他都沒看過還偏冷門」；「不要 Nick Drake……Miles Davis 好了」。
+- **改成**：David Bowie《Low》、Daft Punk《Random Access Memories》、Miles Davis《Sketches of Spain》、Brian Eno《Ambient 1: Music for Airports》（換掉 Vashti Bunyan、Scott Walker《Tilt》、Beverly Glenn-Copeland）。三張新推薦語（老闆口吻，tag 新，事實核過）寫進 `tools/pitches.json` 與 `cards.js`。
+- **連動**：教學殿堂手牌改成第 1 手 RAM（比星數 −3）、第 2 手 Sketches of Spain（冷剋經 −2）、第 3 手 Low（經剋硬 −5）、第 4 手 Music for Airports（硬剋冷 −3），第 6 手王牌剛好 18 KO；`check-content` 殿堂放寬「三色都要 ≥4／至少一張冷門 ≥4」（有名的經典本來就不冷門），改成冷門 ≥2、硬蕊 ≥3；Miles 從爵士箱撤下（`bin_jazz` 補 Caetano Veloso《Transa》、看得到的封面改擺 Thelonious Monk；`deck-lists.json`、`shops/dip.json`、`bins.js` 一起改）。注意：`deck-lists.json` 的 `gift_hall`／`man_drop` 沒改（它只決定哪些卡在卡池裡，執行時的禮物以 content.js 為準；改了重烘會把舊三張移出卡池）。`?v=59`。
+- **驗證**：tutorial.test 193,864、engine.test 2,273,723、shop.test 1,280 全過；check-content、check-covers、check-shops、lint-copy 通過；e2e-prologue 52/52、e2e.spec 390×664 47/47、sim --n 1000 16/16。
+
 ### 2026-11-13｜dip-vinyl-shop｜game-lab：王牌固定、點老闆才換＋序章男子改掉 Eminem
 
 - **店主 11-13**：「開局挑王牌改成固定一開始選的王牌，想換的話跟老闆對話更換（換流派）」；「不如讓對手掉落 Eminem 的專輯」。

@@ -57,9 +57,12 @@ export function shapeProblems(C, E) {
     ok(g.length === 4 && new Set(g).size === 4, 'gifts.' + t + ' 要 4 張不重複');
     const cs = g.map(id => card(id, 'gifts.' + t)).filter(Boolean);
     if (cs.length === 4) {
-      for (const x of ATTRS) ok(cs.some(c => c[x] >= 4), 'gifts.' + t + '：' + ZH[x] + '要有 ≥4 星的卡（§4.2）');
+      // 店主 11-13：經典那組要有名一點（有名的經典本來就不冷門、也不硬）→ 殿堂不套「三色都要 ≥4」與 D §5「至少一張冷門 ≥4」；
+      //   改成：三色都至少 2 星（第 2 手冷剋經剋得動：他經典 3、你冷門 ≥2）、硬蕊至少 3 星（第 4 手硬剋冷：他冷門 4、你硬蕊 ≥3 才剋得動）
+      if (t === 'hall') {
+        for (const x of ATTRS) ok(cs.some(c => c[x] >= (x === 'h' ? 3 : 2)), 'gifts.hall：' + ZH[x] + '要有 ≥' + (x === 'h' ? 3 : 2) + ' 星的卡（教學第 2／4 手剋得動）');
+      } else for (const x of ATTRS) ok(cs.some(c => c[x] >= 4), 'gifts.' + t + '：' + ZH[x] + '要有 ≥4 星的卡（§4.2）');
       ok(cs.filter(c => c[E.TIER_AXIS[t]] >= 4).length >= 2, 'gifts.' + t + '：王牌那軸 ≥4 的至少 2 張');
-      if (t === 'hall') ok(cs.some(c => c.o >= 4), 'gifts.hall：至少一張冷門 ≥4（D §5）');
       cs.forEach(c => ok(!c.tier && peak(c) <= 5, 'gifts.' + t + ': ' + c.id + ' 是王牌／頂點卡'));
     }
   }
