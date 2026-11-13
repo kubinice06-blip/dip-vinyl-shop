@@ -220,10 +220,10 @@
     man: {
       id: 'man', name: '男子', spr: 'e0', avatar: null,
       honesty: 'honest', hp: 10, taste: 'coh',
-      // 店主 11-13：掉落的必須是他牌組裡的專輯 → Fishmans 放進牌組（換掉 Eminem，同樣經典 5 星），讓他某一手打出來，打完掉在地上
+      // 店主 11-13：掉落的必須是他牌組裡的專輯 → 改成掉 Eminem《The Eminem Show》（原本就在他牌組；Fishmans 不再出現），讓他某一手打出來，打完掉在地上
       deck: ['coldplay-mylo-xyloto', 'imagine-dragons-night-visions', 'limp-bizkit-results-may-vary', '老王樂隊-暮夜徐行',
-        'fishmans-long-season', 'katy-perry-prism'],
-      drop: 'fishmans-long-season', sig: { id: 'fishmans-long-season', n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
+        'eminem-the-eminem-show', 'katy-perry-prism'],
+      drop: 'eminem-the-eminem-show', sig: { id: 'eminem-the-eminem-show', n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
       prologue: true, voice: { freq: 659, wave: 'square' }
     },
     copycat: {
@@ -416,7 +416,7 @@
         prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'], promptSubs: ['', '跳過教學'] }   // promptSubs：按鈕下方的小字（店主 11-12：不接在括號後面）
     ],
     // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
-    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
+    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Eminem）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
     epilogueWin: [
       { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句', set: { hide: { r1: true } } },
       { id: 'E2', who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', tag: '原句', act: [face('f', 'p')] },
@@ -648,7 +648,7 @@
   // ===================================================================
   var TUT_PLAYS = [
     { id: 'coldplay-mylo-xyloto', attr: 'c' }, { id: 'imagine-dragons-night-visions', attr: 'c' }, { id: 'limp-bizkit-results-may-vary', attr: 'h' },
-    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'fishmans-long-season', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
+    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'eminem-the-eminem-show', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
   ];
   var TUT_HINTS = ['c5', 'c2', 'h2', 'o2', 'c4', 'c2'];
   var TUT_HANDS = {

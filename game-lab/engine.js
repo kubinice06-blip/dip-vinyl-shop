@@ -288,7 +288,7 @@
       deck: (E.deck || []).map(x => cardFrom(content, x)),
       honesty: hk, q: H.q, planner, coef: { w: co.w, nz: co.nz, mercy: !!co.mercy },
       elite: !!E.elite, boss: !!E.boss, atk: 0, def: 0, qMercy: trialCfg(content, o.tier).curve.mercyFeint, ace: null, pos: null, cls: null,
-      sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Fishmans，打完掉在地上）
+      sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Eminem，打完掉在地上）
     if (g) {
       const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss' });
@@ -841,7 +841,7 @@
         const cards = (E.drop ? [E.drop] : []).filter(id => !run.bag.includes(id) && content.cards[id]);
         const relics = (((content.rewards || {}).prologueRelics) || []).filter(id => !run.relics.includes(id));
         run.pending = { type: 'reward', enemyId, prologue: true, cards, relics, need: 'cardThenRelic', cardDone: !cards.length, relicDone: !relics.length };
-        // 男子掉的 Fishmans 現在在他牌組裡、也打出來過（店主 11-13）＝客人掉落，給一趟留一張
+        // 男子掉的 Eminem 在他牌組裡、也打出來過（店主 11-13）＝客人掉落，給一趟留一張
         if (!Array.isArray(run.drops)) run.drops = [];
         for (const id of cards) if ((E.deck || []).some(c => (c && c.id || c) === id) && !run.drops.includes(id)) run.drops.push(id);
       } else {

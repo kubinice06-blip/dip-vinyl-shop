@@ -956,7 +956,7 @@ section('13 教學：3 王牌 × 特價箱 84 種挑法，照 pick 出 → 每�
     });
   }
   console.log('     ' + n + ' tutorial runs');
-  // 走 run 的路：newRun（序章）→ 特價箱挑三張 → startFight({tutorial}) → 照 pick 打 → 贏了收 Fishmans＋配件三選一
+  // 走 run 的路：newRun（序章）→ 特價箱挑三張 → startFight({tutorial}) → 照 pick 打 → 贏了收 Eminem＋配件三選一
   for (const tier of TIERS) {
     const run = EN.newRun(C, { seedKey: 'tut-' + tier, nightNo: 1, ace: tier });
     ok(EN.choose(run, C, EN.bargainPolicy(run, C)).ok, 'tutorial run: pick');

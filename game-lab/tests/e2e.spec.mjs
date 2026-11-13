@@ -338,8 +338,8 @@ async function run() {
         await sleep(1500);
         const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.atdoor; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, atdoor: at, r1: s.pos('r1') && !s.pos('r1').hidden }; });
         const near = st.f && !st.f.hidden && Math.hypot(st.f.x - st.atdoor[0], st.f.y - st.atdoor[1]) <= 3;
-        const ok = card && one && !one.title && one.notitle && /Fishmans|Long Season/i.test(one.text) && one.btns === 2 && one.cover && scrollOk(scOne) &&
-          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes('fishmans-long-season') && st.bag.length === 8 && st.heads === 5 && st.inside && near && st.r1;
+        const ok = card && one && !one.title && one.notitle && /Eminem/i.test(one.text) && one.btns === 2 && one.cover && scrollOk(scOne) &&
+          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes('eminem-the-eminem-show') && st.bag.length === 8 && st.heads === 5 && st.inside && near && st.r1;
         record(7, size, ok, `pickup ${JSON.stringify(one && { title: one.title, notitle: one.notitle, btns: one.btns, text: one.text.slice(0, 50) })}; relics offered ${rel}; night ${night}; ${JSON.stringify(st)}`);
       } catch (e) { record(7, size, false, 'error ' + e.message); }
       await ctx.close();

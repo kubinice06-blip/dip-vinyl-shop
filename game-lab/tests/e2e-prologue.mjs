@@ -177,7 +177,7 @@ async function openPage(browser, extra) {
 const errorsOf = page => page._errors.filter(e => !/Failed to load resource/.test(e));
 
 // 依 C.script 展開「應該出現的字」（套猜中／猜錯分支、今晚那張的兩句描述）；
-//   E4（他走了）之後、撿起面板之前念掉落旁白 C.script.drop（G1，店主 11-13 §0：男子那張 Fishmans＝客人掉落）
+//   E4（他走了）之後、撿起面板之前念掉落旁白 C.script.drop（G1，店主 11-13 §0：男子那張 Eminem＝客人掉落）
 function expectedTexts(guess) {
   const flags = { guessRight: guess === 'right', guessWrong: guess !== 'right' };
   return C.script.prologue.concat(C.script.epilogueWin).flatMap(b => b.id === 'E4' ? [b].concat(C.script.drop) : [b])

@@ -2080,7 +2080,7 @@
     });
   }
   // ---- 序章收尾（D §2 E1–E11）：他走出門、地上留一張盤 → 掉落旁白「對方似乎掉落了什麼……」（C.script.drop，同一個對白框；店主 11-13 §0：
-  //   男子那張 Fishmans 在他牌組裡＝客人掉落，engine 記進 run.drops；取代 DECISIONS-v4 的「撿起面板之前沒有旁白」）→ 撿起面板 → 老闆走到你面前 →
+  //   男子那張 Eminem 在他牌組裡＝客人掉落，engine 記進 run.drops；取代 DECISIONS-v4 的「撿起面板之前沒有旁白」）→ 撿起面板 → 老闆走到你面前 →
   //   長桌的木箱、發燒配件三選一 → 第一位客人推門 → 來客。重新整理回來從 E4 接著演，旁白一樣會念
   function epilogueFlow(resumed) {
     var r = save.run;

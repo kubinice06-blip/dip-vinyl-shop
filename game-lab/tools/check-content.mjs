@@ -142,7 +142,7 @@ export function shapeProblems(C, E) {
     seen.set(id, g);
   }
   const drop = (C.enemies && C.enemies.man && C.enemies.man.drop) || null;
-  // 店主 11-13：掉落的必須是他牌組裡的專輯（Fishmans 放進男子牌組，sig 第 2 手打出來）
+  // 店主 11-13：掉落的必須是他牌組裡的專輯（男子掉 Eminem，sig 第 2 手打出來）
   ok(drop && (C.enemies.man.deck || []).includes(drop) && seen.get(drop) === '牌組' && !aceIds.has(drop), '男子掉的那張（' + drop + '）要在他自己的牌組裡、不跟禮物／特價箱重複');
   ok(C.enemies.man.sig && C.enemies.man.sig.id === drop && Number.isInteger(C.enemies.man.sig.n), '男子的招牌（sig）＝掉的那張'); 
 
