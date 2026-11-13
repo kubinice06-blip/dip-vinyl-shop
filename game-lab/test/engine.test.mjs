@@ -1159,5 +1159,125 @@ section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、�
     ok(res.win && run.hp === run.maxHp && run.xp === 0 && run.streak === 0 && run.pos === 1 && res.cls === 'prologue', 'prologue won → full 聲望, no XP, still pos 1'); }
 });
 
+section('17 從唱片櫃挑牌開局：種子（包包組成、序章不收、頂點卡／重複擋掉）、不能賣回、這一趟進過包包／客人掉落的記錄、掉落＝他這一場的實際牌單、一趟留一張', () => {
+  const G = C.gifts, NON = Object.keys(C.cards).filter(id => !C.cards[id].tier).sort();
+  const others = t => NON.filter(id => !Object.values(G).flat().includes(id) && !C.bargain.pool.includes(id));
+  const free = others();
+  // (a) 包包＝種子＋老闆送的補到 4 張；種子跟送的重複：送的往下補；頂點卡、不存在、重複的丟掉；最多 3 張
+  for (const ace of TIERS) {
+    const r0 = EN.newRun(C, { seedKey: 'sd', runNo: 2, ace });
+    eq([r0.bag, r0.seeds, r0.gifts, r0.entered, r0.drops, r0.kept], [G[ace], [], G[ace], [], [], null], ace + ' no seeds → the 4 gifts, empty records');
+    for (let n = 0; n <= 3; n++) {
+      const sd = free.slice(n * 7, n * 7 + n);
+      const r = EN.newRun(C, { seedKey: 'sd' + n, runNo: 2, ace, seeds: sd });
+      eq(r.bag, sd.concat(G[ace].slice(0, 4 - n)), ace + ' ' + n + ' seeds + gifts fill to 4');
+      eq(r.seeds, sd, 'run.seeds'); eq(r.gifts, G[ace].slice(0, 4 - n), 'run.gifts = gifts actually placed');
+      ok(r.taken === 4, '收了 4 張 at start', r.taken);
+      const b = EN.bargainPolicy(r, C); ok(EN.choose(r, C, b).ok && r.bag.length === 7, 'bargain pick → 7 cards');
+      eq(r.entered, b.ids, 'bargain picks entered the bag'); 
+      ok(!r.bag.includes(C.aces[ace]) && r.shop.bins && Object.values(r.shop.bins).flat().every(id => !sd.includes(id)), 'seeds are not in the shop');
+    }
+    // 種子跟送的重複
+    const dup = [G[ace][0], G[ace][2], free[40]];
+    const rd = EN.newRun(C, { seedKey: 'dup', runNo: 3, ace, seeds: dup });
+    eq(rd.bag, dup.concat([G[ace][1]]), ace + ' duplicate gift → next gift fills');
+    ok(new Set(rd.bag).size === 4, 'no duplicate cards in the bag');
+    // 擋掉：頂點卡、不存在的卡、重複、第 4 張
+    const rb = EN.newRun(C, { seedKey: 'bad', runNo: 2, ace, seeds: [C.aces.hall, 'no-such-card', free[1], free[1], free[2], free[3], free[4], 7, null] });
+    eq(rb.seeds, [free[1], free[2], free[3]], 'apex / missing / duplicate dropped, max 3');
+    // 序章那一趟不挑
+    const rp = EN.newRun(C, { seedKey: 'pro', runNo: 1, ace, seeds: [free[1]] });
+    eq([rp.bag, rp.seeds], [G[ace], []], 'prologue run ignores seeds');
+    const rp2 = EN.newRun(C, { seedKey: 'pro', runNo: 3, ace, prologue: true, seeds: [free[1]] });
+    eq(rp2.seeds, [], 'prologue:true ignores seeds');
+  }
+  ok(!EN.canSeed(C, C.aces.hall) && !EN.canSeed(C, 'nope') && EN.canSeed(C, free[0]) && !EN.canSeed(C, null), 'canSeed');
+  // (b) 不能賣回：buy／buyBargain 賣種子 → seedNoSell，run 不動；送的照舊 giftNoSell；拿獎勵包包滿可以拿掉種子（拿掉就不是種子）
+  { const sd = [free[3], free[11], free[19]];
+    const run = EN.newRun(C, { seedKey: 'sell', runNo: 2, ace: 'pearl', seeds: sd });
+    EN.choose(run, C, EN.bargainPolicy(run, C)); run.money = 99999;
+    ok(sd.every(id => EN.isSeed(run, C, id)) && !EN.isSeed(run, C, G.pearl[0]) && !EN.isSeed(null, C, sd[0]) && EN.isSeed(run, C, card(sd[0])), 'isSeed');
+    ok(EN.isGift(run, C, G.pearl[0]) && !EN.isGift(run, C, G.pearl[1]), 'isGift = gifts actually placed (+ ace)');
+    const key = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid = run.shop.bins[key][0];
+    while (run.bag.length < CFG.bagMax) run.bag.push(free.find(id => !run.bag.includes(id) && !Object.values(run.shop.bins).flat().includes(id)));
+    for (const id of sd) { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: id }); ok(!r.ok && r.error === 'seedNoSell' && JSON.stringify(run) === before, 'buy selling a seed → seedNoSell, run untouched', r.error); }
+    { const r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: G.pearl[0] }); ok(!r.ok && r.error === 'giftNoSell', 'gift still giftNoSell'); }
+    const BL = run.shop.bargain.slice();
+    if (BL.length) { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buyBargain', ids: [BL[0]], sellIds: [sd[1]] }); ok(!r.ok && r.error === 'seedNoSell' && JSON.stringify(run) === before, 'buyBargain selling a seed → seedNoSell'); }
+    const plain = run.bag.find(id => !EN.isSeed(run, C, id) && !EN.isGift(run, C, id));
+    { const r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: plain }); ok(r.ok && run.entered.includes(cid) && !run.bag.includes(plain), 'buy selling a normal card works; bought card entered', r.error); }
+    for (const pol of ['none', 'smart']) { const r2 = JSON.parse(JSON.stringify(run)); for (const ch of EN.shopPolicy(r2, C, pol)) ok(!sd.includes(ch.sellId), 'shopPolicy never sells a seed'); }
+    // 拿獎勵：包包滿，拿掉一張種子
+    run.pending = { type: 'reward', enemyId: 'copycat', prologue: false, pos: 1, cls: 'normal', cards: [free[60]], relics: [], need: 'card', cardDone: false, relicDone: true };
+    const r = EN.choose(run, C, { type: 'take', cardId: free[60], dropId: sd[0] });
+    ok(r.ok && !run.bag.includes(sd[0]) && !run.seeds.includes(sd[0]) && run.seeds.length === 2 && run.entered.includes(free[60]), 'take dropping a seed: allowed, no longer a seed', r.error); }
+  // (c) 掉落＝他這一場的實際牌單（trialDeck 換牌、加星後；王牌不掉）；run.drops 記獎勵候選（沒拿的也算）；序章男子那張不算
+  { let checked = 0;
+    for (let s = 1; s <= (QUICK ? 6 : 20); s++) {
+      const run = EN.newRun(C, { seedKey: 'drop-' + s, runNo: 2, ace: TIERS[s % 3] });
+      EN.choose(run, C, EN.bargainPolicy(run, C));
+      const offered = [];
+      for (let g = 0; g < 12 && !run.over; g++) {
+        const id = run.order[run.idx], pos = run.pos;
+        const td = EN.trialDeck(C, id, pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier });
+        const deckIds = td.deck.map(c => c.id);
+        const res = forceWin(run);
+        ok(res.win, 'won');
+        const cards = res.offer && res.offer.type === 'reward' ? res.offer.cards : [];   // 沒有能收的（全在包包裡）：獎勵直接結掉
+        for (const cid of cards) { ok(deckIds.includes(cid) && !C.cards[cid].tier, 'drop ∈ his actual deck this fight (no ace)', { id, pos, cid }); checked++; }
+        ok(cards.every(cid => res.met.includes(cid)), 'drops are cards he threw');
+        offered.push(...cards);
+        settleAll(run);
+      }
+      ok(offered.every(id => run.drops.includes(id)) && run.drops.every(id => offered.includes(id)), 'run.drops = every reward card offered (taken or not)');
+      ok(run.entered.every(id => !G[run.ace].includes(id)), 'gifts never count as entered');
+    }
+    ok(checked > 20, 'checked enough drops', checked);
+    const pr = EN.newRun(C, { seedKey: 'pd', runNo: 1, ace: 'hall' }); EN.choose(pr, C, EN.bargainPolicy(pr, C));
+    const f = EN.startFight(pr, C, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+    const res = EN.finishFight(pr, C);
+    ok(res.win && res.offer.prologue && pr.drops.length === 1 && pr.drops[0] === C.enemies.man.drop, 'prologue man drop (in his deck since 11-13) is a customer drop', pr.drops);
+    const t = EN.choose(pr, C, { type: 'take', cardId: res.offer.cards[0] });
+    ok(t.ok && pr.entered.includes(res.offer.cards[0]), 'but taking it = entered the bag'); }
+  // (d) 一趟留一張：候選＝entered＋drops，擁有的、頂點卡不列；只在結束後、只能一次；owned 三種形狀
+  { const run = EN.newRun(C, { seedKey: 'keep', runNo: 2, ace: 'heresy', seeds: [free[5]] });
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    for (let k = 0; k < 6; k++) { forceWin(run); settleAll(run); }
+    run.drops.push(C.aces.hall);                                  // 頂點卡不列（理論上不會進來；保險）
+    const all = EN.keepCandidates(run, C, null);
+    ok(all.length >= 3 && all.every(id => (run.entered.includes(id) || run.drops.includes(id)) && !C.cards[id].tier) && new Set(all).size === all.length, 'candidates = entered ∪ drops, no apex, no dupes', all);
+    ok(!all.includes(free[5]) || run.entered.includes(free[5]) || run.drops.includes(free[5]), 'seed not a candidate unless it re-entered');
+    ok(G.heresy.every(id => !all.includes(id) || run.drops.includes(id)), 'gifts are not candidates (unless dropped)');
+    const own = [all[0]];
+    eq(EN.keepCandidates(run, C, own), all.slice(1), 'owned (array) not listed');
+    eq(EN.keepCandidates(run, C, id => id === all[0]), all.slice(1), 'owned (fn) not listed');
+    eq(EN.keepCandidates(run, C, { [all[0]]: { own: true }, [all[1]]: { own: false, at: 'x' } }), all.slice(1), 'owned (shelf map: .own) not listed');
+    ok(EN.keepOne(run, C, all[1], own).error === 'notOver', 'keepOne only after the run is over');
+    run.over = 'dead';
+    ok(EN.keepOne(run, C, all[0], own).error === 'notOffered', 'owned → notOffered');
+    ok(EN.keepOne(run, C, C.aces.hall, own).error === 'notOffered', 'apex → notOffered');
+    ok(EN.keepOne(run, C, 'nope', own).error === 'notOffered', 'unknown → notOffered');
+    const k1 = EN.keepOne(run, C, all[1], own);
+    ok(k1.ok && run.kept === all[1] && EN.runSummary(run).kept === all[1], 'keepOne → run.kept', k1);
+    ok(EN.keepOne(run, C, all[2], own).error === 'kept' && run.kept === all[1], 'only once');
+    const js = JSON.parse(JSON.stringify(run)); ok(js.kept === all[1] && Array.isArray(js.entered) && Array.isArray(js.drops), 'records survive JSON'); }
+  // (e) 舊的 run（沒有 seeds／gifts／entered／drops）照舊能玩：isGift 看那組四張、記錄自己補
+  { const run = EN.newRun(C, { seedKey: 'old', runNo: 2, ace: 'hall' }); delete run.seeds; delete run.gifts; delete run.entered; delete run.drops; delete run.kept;
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    ok(G.hall.every(id => EN.isGift(run, C, id)) && !EN.isSeed(run, C, G.hall[0]) && Array.isArray(run.entered) && run.entered.length === 3, 'old run: gifts by content, entered created on the fly');
+    forceWin(run); ok(Array.isArray(run.drops), 'old run: drops created on the fly'); settleAll(run);
+    eq(EN.keepCandidates(run, C, []).length > 0, true, 'old run has candidates'); }
+  // (f) 自動遊玩挑種子：照最高星（峰值），同星看總星、再看 id；頂點卡不挑
+  { const pool = free.slice(0, 40).concat([C.aces.pearl]);
+    const want = pool.filter(id => !C.cards[id].tier).sort((a, b) => EN.peak(C.cards[b]) - EN.peak(C.cards[a]) || EN.power(C.cards[b]) - EN.power(C.cards[a]) || (a < b ? -1 : 1)).slice(0, 3);
+    eq(EN.seedPolicy(C, pool), want, 'seedPolicy = top 3 by peak');
+    eq(EN.seedPolicy(C, pool, 1), want.slice(0, 1), 'seedPolicy n');
+    eq(EN.seedPolicy(C, [free[0]]), [free[0]], 'fewer than 3 owned → fewer seeds');
+    eq(EN.seedPolicy(C, [C.aces.hall]), [], 'apex only → none'); }
+  // (g) bossAceFor ＝ newRun 的藏家王牌（存檔遷移用）
+  { let bad = 0; for (let s = 0; s < 300; s++) for (const ace of TIERS) { const k = 'ba' + s, n = 1 + s % 5; if (EN.newRun(C, { seedKey: k, runNo: n, ace }).bossAce !== EN.bossAceFor(k, n, ace)) bad++; }
+    ok(bad === 0, 'bossAceFor matches newRun', bad); }
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log(fails.join('\n')); process.exit(1); }

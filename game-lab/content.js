@@ -220,9 +220,11 @@
     man: {
       id: 'man', name: '男子', spr: 'e0', avatar: null,
       honesty: 'honest', hp: 10, taste: 'coh',
+      // 店主 11-13：掉落的必須是他牌組裡的專輯 → Fishmans 放進牌組（換掉 Eminem，同樣經典 5 星），讓他某一手打出來，打完掉在地上
       deck: ['coldplay-mylo-xyloto', 'imagine-dragons-night-visions', 'limp-bizkit-results-may-vary', '老王樂隊-暮夜徐行',
-        'eminem-the-eminem-show', 'katy-perry-prism'],
-      drop: 'fishmans-long-season', prologue: true, voice: { freq: 659, wave: 'square' }
+        'fishmans-long-season', 'katy-perry-prism'],
+      drop: 'fishmans-long-season', sig: { id: 'fishmans-long-season', n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
+      prologue: true, voice: { freq: 659, wave: 'square' }
     },
     copycat: {
       id: 'copycat', name: '文青同好', spr: 'e1', avatar: null,
@@ -414,7 +416,7 @@
         prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'], promptSubs: ['', '跳過教學'] }   // promptSubs：按鈕下方的小字（店主 11-12：不接在括號後面）
     ],
     // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
-    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 撿起面板（沒有旁白、沒有敘述標題）
+    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
     epilogueWin: [
       { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句', set: { hide: { r1: true } } },
       { id: 'E2', who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', tag: '原句', act: [face('f', 'p')] },
@@ -444,7 +446,11 @@
     dead: [
       { id: 'D1', who: '老闆', text: '「……就到這裡吧。」', tag: '新', music: { stop: 1500 } }
     ],
-    // 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 → 走到特價箱挑三張（C.blocking.toSale）→ 來客
+    // 打贏客人、進領獎之前（店主 11-13 §0：掉落台詞）：客人掉的唱片一定是他這一場的牌（engine finishFight 的獎勵候選）；有能收的唱片才念
+    drop: [
+      { id: 'G1', who: '', text: '對方似乎掉落了什麼……', tag: '店主' }
+    ],
+    // 再挑戰一趟（≤10 秒）：門晃 → 挑王牌 →（第二趟起）從唱片櫃挑種子（C.seeds）→ 走到特價箱挑三張（C.blocking.toSale）→ 來客
     again: [
       { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' },
         ui: 'acePick', prompt: '（挑一張。）' }
@@ -642,7 +648,7 @@
   // ===================================================================
   var TUT_PLAYS = [
     { id: 'coldplay-mylo-xyloto', attr: 'c' }, { id: 'imagine-dragons-night-visions', attr: 'c' }, { id: 'limp-bizkit-results-may-vary', attr: 'h' },
-    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'eminem-the-eminem-show', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
+    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'fishmans-long-season', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
   ];
   var TUT_HINTS = ['c5', 'c2', 'h2', 'o2', 'c4', 'c2'];
   var TUT_HANDS = {
@@ -781,6 +787,8 @@
     sellPick: '賣這張',
     sellPickN: '賣這 {k} 張',        // 要賣兩張以上（特價箱一次買三張、包包放不下；RT-10）
     giftTag: '老闆送的',             // 先賣子面板：老闆送的（王牌那組四張；engine.isGift）不能賣，標這三個字、不能選（FIXLIST 11 追加）
+    seedTag: '櫃裡帶來',             // 從唱片櫃帶來的種子（engine.isSeed）：先賣子面板、包包條的小籤（店主 11-13 §0：不能賣回換錢）
+    seedNoSell: '從唱片櫃帶來的不能賣',   // 點了種子那張：說明（SPEC 從唱片櫃挑牌開局 §1 裁定 8）
     bought: '《{album}》進包包，−${n}',
     sold: '《{album}》賣掉，+${n}',
     relicTitle: '櫃檯的配件',
@@ -813,6 +821,47 @@
     infoAria: '唱片資訊、試聽'
   };
   C.shopUiTag = '新';
+
+  // ===================================================================
+  // 從唱片櫃挑牌開局（店主 11-13；SPEC 從唱片櫃挑牌開局）：唱片櫃分「擁有」（我的收藏）與「認識」；第二趟起開局從收藏挑最多 3 張種子，
+  //   其餘老闆送的、特價箱補；每一趟結束從這一趟進過包包、客人掉落的唱片帶走一張（店內取得：金框）。{x} 由畫面代入
+  //   掉落旁白（店主句）在 C.script.drop；賣回擋種子的字在 C.shopUi（seedTag／seedNoSell）
+  // ===================================================================
+  C.seeds = {
+    ui: {
+      pickTitle: '從唱片櫃帶唱片來開局',
+      pickSub: '開局 {n} 張：你帶的，加上老闆送的補滿（最多帶 {max} 張）',   // n＝老闆送的那組幾張（4）；這次王牌那組不列（照樣會送，審查 #3）
+      pickCount: '{n}／{max}',
+      pickTake: '帶這張',
+      picked: '✓ 帶了',
+      pickGo: '就這幾張 ▸',
+      pickNone: '先不挑',
+      pickAll: '全部',
+      pickEmpty: '這個顏色最強的，還沒有收藏。',                   // 篩選＝那一色是這張最高的（平手兩色都算，審查 #8）
+      pickFull: '最多帶 {max} 張。先取消一張。',
+      pickFullToast: '已經帶滿 {max} 張，先取消一張再換。',   // 滿了還點：吐司（面板捲到下面也看得到，審查 #4）
+      keepTitle: '這一趟帶走一張',
+      keepSub: '收進「我的收藏」，下一趟可以帶來開局。',
+      keepPick: '帶走這張',
+      keepCount: '{n} 張可以挑：進過包包的、客人掉的',
+      keepLater: '先不帶',
+      keepDone: '《{album}》收進「我的收藏」了',
+      keepNone: '這一趟的唱片，「我的收藏」裡都有了。',
+      fromBag: '進過包包',
+      fromDrop: '客人掉的',
+      shelfOwn: '我的收藏 {n} 張',
+      shelfOwnSub: '可以帶來開局；王牌只展示。',
+      shelfOwnEmpty: '還沒有收藏。挑過的王牌那組、每一趟帶走的，都會收進來。',
+      shelfKnown: '認識過 {n}／{total}',
+      shelfKnownSub: '客人丟的、你收的、老闆送的都算。',            // 360／375 寬也排一行（審查 #9）
+      // 「認識」的說法（唱片櫃＝「我的收藏」＋「認識過」兩段；沒收的、拿出來的只是認識，不能帶來開局，審查 #5）
+      rewardNote: '點封面看唱片資訊、試聽。沒收的也都算認識了。',
+      bagOutMsg: '要放進來的是《{album}》。挑一張拿出來，它也算認識了。',
+      stakeSkipSub: '也算認識了',
+      storeTag: '店內取得'
+    }
+  };
+  C.seedsTag = '新';
 
   // 結算（這一趟結束）：「走到第 23 位・最多連贏 12 位・收了 9 張」（店主 11-12）；標題畫面的紀錄「最遠：第 23 位」
   C.summary = { title: '試煉結束', reached: '走到第 {n} 位', streak: '最多連贏 {n} 位', taken: '收了 {n} 張', wins: '贏了 {n} 位', none: '這一趟沒收唱片',

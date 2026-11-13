@@ -47,14 +47,23 @@
 //            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
-//            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints}
+//            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）＋ level {pick:'atk'|'def'|'hp'}
-//              賣回：buy {sellId}／buyBargain {sellIds} 只收包包裡、不是老闆送的（isGift）卡；送的 → error 'giftNoSell'
+//              賣回：buy {sellId}／buyBargain {sellIds} 只收包包裡、不是老闆送的（isGift）、不是種子（isSeed）的卡；送的 → error 'giftNoSell'、種子 → 'seedNoSell'
 //              buyBargain {ids:[1–3], sellIds?}：每張照特價（bargainPriceOf）分開算、一次付總和；effects 每張 {gainCard, spend: 那張的價}
 //            canShop(run) · canBargainPick(run)
+// Seeds      從唱片櫃挑牌開局（SPEC 從唱片櫃挑牌開局 §0–§1；引擎不碰存檔：「擁有」由畫面傳進來，owned＝函式 id→bool｜陣列｜{id: truthy}）
+//            newRun 多收 seeds:[ids]（0–3 張，CFG.seedMax）：序章那一趟不收；頂點卡、不存在的卡、重複的丟掉。包包＝種子＋老闆送的（這次王牌那組）補到 4 張
+//              （種子跟送的重複：送的往下補下一張）；特價箱 3 張照舊 → 7 張。run.seeds＝包包裡從唱片櫃帶來的（不能賣回：buy／buyBargain → 'seedNoSell'；
+//              拿獎勵包包滿「拿掉一張」照舊可以拿掉種子，拿掉就不再是種子）；run.gifts＝這一趟實際放進包包的老闆送的（isGift 照它）
+//            canSeed(content, id)（卡存在、不是頂點卡）· isSeed(run, content, id) · seedPolicy(content, ids, n?)（自動遊玩：照最高星挑；同星看總星、再看 id）
+//            bossAceFor(seedKey, runNo, ace)（這一趟藏家帶哪張王牌＝newRun 的 run.bossAce；存檔遷移用）
+//            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子掉的 Fishmans 也算：它在他牌組裡、他一定打出來，店主 11-13）
+//            keepCandidates(run, content, owned) -> [ids]（一趟留一張的候選：entered＋drops，已經擁有的、頂點卡不列）
+//            keepOne(run, content, id, owned) -> {ok, error}（只在這一趟結束後、只能一次；run.kept＝那張）
 //            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart') -> [ch] · bargainPolicy(run, content) -> ch
 // Economy    台幣行情（FIXLIST 8＋X／Y 契約；數字在 content.economy，這裡的 ECON 是沒給時的預設）
 //            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
@@ -109,6 +118,7 @@
     cleanerTie: 1,       // 洗碟水：tie 時你扣他 1
     boostStar: 1,        // 重量盤／絕版編號標／內圈刻字：那色出招時 +1 星（王牌不加）
     bargainPick: 3,      // 每一趟開局特價箱挑 3 張（序章與再挑戰一趟都一樣；只在第 1 位之前）
+    seedMax: 3,          // 從唱片櫃帶來開局的種子最多 3 張（店主 11-13 §0：種子制；第二趟起才挑）
     mercy: true,         // 原版 aiPlan 的 mercyLevel（你落後時他出招變鈍，roguelike.html:3618-3624）；sim 可 --set mercy=false 對照
   };
   // content 沒給時的預設（＝content.js 的 C.honesty／C.planners／C.economy／C.trial；直接呼叫 startDuel 的地方不傳 content 也不會壞）
@@ -277,7 +287,8 @@
     const d = { id, name: E.name, title: E.title || null, hp: tut ? T.hp : E.hp, taste: tasteStr(E.taste),
       deck: (E.deck || []).map(x => cardFrom(content, x)),
       honesty: hk, q: H.q, planner, coef: { w: co.w, nz: co.nz, mercy: !!co.mercy },
-      elite: !!E.elite, boss: !!E.boss, atk: 0, def: 0, qMercy: trialCfg(content, o.tier).curve.mercyFeint, ace: null, pos: null, cls: null };
+      elite: !!E.elite, boss: !!E.boss, atk: 0, def: 0, qMercy: trialCfg(content, o.tier).curve.mercyFeint, ace: null, pos: null, cls: null,
+      sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Fishmans，打完掉在地上）
     if (g) {
       const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss' });
@@ -332,7 +343,13 @@
     if (sc) {
       const first = []; for (const pl of sc.plays) { const k = deck.findIndex(c => c.id === pl.id); if (k >= 0) first.push(deck.splice(k, 1)[0]); }
       E.pile = first.concat(deck);
-    } else E.pile = shuffle(deck, st);
+    } else {
+      E.pile = shuffle(deck, st);
+      // 招牌那張排到最前面（一開場就在手上、第 sig.n 手打出來）；不多抽亂數（每手固定 8 次）
+      const sg = eDef.sig, k = sg ? E.pile.findIndex(c => c && c.id === sg.id) : -1;
+      if (k > 0) E.pile.unshift(E.pile.splice(k, 1)[0]);
+      E.sig = sg || null;
+    }
     for (let i = 0; i < CFG.handSize; i++) P.hand.push(pull(st).card);
     const events = [];
     beginHand(st, events);
@@ -395,6 +412,9 @@
       plan = sp.attr; attr = sp.attr; why = 'script';
       idx = E.hand.findIndex(c => c && c.id === sp.id);
       if (idx < 0) idx = bestIdx(E.hand, attr, true);
+    } else if (E.sig && st.n === E.sig.n && E.hand.some(c => c && c.id === E.sig.id)) {
+      idx = E.hand.findIndex(c => c && c.id === E.sig.id);   // 招牌：照實出它最強那軸（老實人；亂數照樣抽完）
+      plan = attr = topAttr(E.hand[idx]); why = 'honest';
     } else if (plan !== null && isAce(E.hand[best[plan]])) {
       attr = plan; why = 'ace'; idx = best[plan];
     } else if (st.n === 1 && headphoneOn(st)) {
@@ -684,17 +704,33 @@
     return normals.concat([elite, B]).filter(Boolean);
   }
 
+  // 種子（SPEC 從唱片櫃挑牌開局 §0、§1 裁定 3）：卡存在、不是頂點卡（頂點卡只能放王牌格）
+  function canSeed(content, id) { const c = typeof id === 'string' ? cardOf(content, id) : null; return !!c && !c.tier; }
+  function seedsOf(content, ids) {
+    return (Array.isArray(ids) ? ids : []).filter((id, k, a) => canSeed(content, id) && a.indexOf(id) === k).slice(0, CFG.seedMax);
+  }
+  // 這一趟藏家帶哪張王牌（＝newRun 的 run.bossAce：run.rng 的第一個亂數；存檔遷移用它補「打倒藏家拿到的王牌」）
+  function bossAceFor(seedKey, runNo, ace) {
+    ace = TIERS.includes(ace) ? ace : 'hall';
+    const st = { rng: fnv1a32(String(seedKey || 'lab') + '#' + (runNo || 1)) || 1 };
+    return pickOne(TIERS.filter(t => t !== ace), st);
+  }
   function newRun(content, o) {
     o = o || {};
     const seedKey = String(o.seedKey || 'lab'), runNo = o.runNo || o.nightNo || 1;
     const ace = TIERS.includes(o.ace) ? o.ace : 'hall';
     const tier = Math.max(0, o.tier | 0), T = trialCfg(content, tier), EC = econ(content);
+    const prologue = o.prologue != null ? !!o.prologue : runNo === 1;
+    // 包包＝種子（0–3 張）＋老闆送的補到 4 張（種子跟送的重複：送的往下補下一張）；序章那一趟不挑（裁定 2）
+    const G = ((content.gifts || {})[ace] || []).slice();
+    const seeds = prologue ? [] : seedsOf(content, o.seeds);
+    const gifts = G.filter(id => !seeds.includes(id)).slice(0, Math.max(0, G.length - seeds.length));
     const run = {
       v: RUN_V, seedKey, runNo, tier, rng: fnv1a32(seedKey + '#' + runNo) || 1, ace, bossAce: null,
-      bag: ((content.gifts || {})[ace] || []).slice(),
+      bag: seeds.concat(gifts), seeds: seeds.slice(), gifts: gifts.slice(), entered: [], drops: [], kept: null,
       relics: (o.relics || []).filter((id, k, a) => relicOk(content, id) && a.indexOf(id) === k).slice(0, CFG.relicMax),
       pos: 1, round: 1, order: roundOrder(content, seedKey, runNo, 1, null), idx: 0,
-      prologue: (o.prologue != null ? !!o.prologue : runNo === 1) ? 'pending' : null,
+      prologue: prologue ? 'pending' : null,
       retryLeft: T.retry, pending: null, duel: null, duelEnemy: null, over: null,
       hp: T.youHp, maxHp: T.youHp, hpIn: T.youHp, level: 1, xp: 0, atk: 0, def: 0, levelUps: 0, picks: [],
       streak: 0, bestStreak: 0, checkpoints: [], taken: 0, aceWon: false,
@@ -703,9 +739,9 @@
       stats: { wins: 0, beaten: 0, fights: 0, hands: 0, retries: 0, taken: [], met: [], relicsGot: [], lostAt: null,
         earned: 0, spent: 0, bought: [], sold: [], relicsBought: [], relicsSold: [] },
     };
-    run.taken = run.bag.length;                                   // 收了幾張：老闆送的也算（裁定 9）
+    run.taken = run.bag.length;                                   // 收了幾張：老闆送的也算（裁定 9）；種子補的是送的那幾格，一樣算
     const others = TIERS.filter(t => t !== ace);
-    run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);
+    run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);   // ＝bossAceFor(seedKey, runNo, ace)（run.rng 的第一個亂數）
     restock(run, content);
     return run;
   }
@@ -805,6 +841,9 @@
         const cards = (E.drop ? [E.drop] : []).filter(id => !run.bag.includes(id) && content.cards[id]);
         const relics = (((content.rewards || {}).prologueRelics) || []).filter(id => !run.relics.includes(id));
         run.pending = { type: 'reward', enemyId, prologue: true, cards, relics, need: 'cardThenRelic', cardDone: !cards.length, relicDone: !relics.length };
+        // 男子掉的 Fishmans 現在在他牌組裡、也打出來過（店主 11-13）＝客人掉落，給一趟留一張
+        if (!Array.isArray(run.drops)) run.drops = [];
+        for (const id of cards) if ((E.deck || []).some(c => (c && c.id || c) === id) && !run.drops.includes(id)) run.drops.push(id);
       } else {
         S.beaten++;
         run.hp = Math.min(run.maxHp, Math.max(1, duel.p.hp) + T.heal);   // 打贏回 3（不超過上限）
@@ -816,6 +855,9 @@
           if (!run.aceWon) { run.aceWon = true; run.taken++; }
         }
         const cards = met.filter(id => content.cards[id] && !content.cards[id].tier && !run.bag.includes(id));
+        // 客人掉落（SPEC 從唱片櫃挑牌開局 §1 裁定 6、7）：獎勵候選＝他這一場真的丟過的（trialDeck 換牌、加星後那一副；王牌不掉）；沒拿的也記，給一趟留一張
+        if (!Array.isArray(run.drops)) run.drops = [];
+        for (const id of cards) if (!run.drops.includes(id)) run.drops.push(id);
         let relics = [];
         if (cls === 'elite' || cls === 'boss') {
           const pool = (((content.rewards || {}).relicPool) || Object.keys(content.relics || {})).filter(id => relicOk(content, id) && !run.relics.includes(id));
@@ -891,7 +933,7 @@
   // 結算：走到第幾位、最多連贏幾位、收了幾張
   function runSummary(run) {
     const S = run.stats || {};
-    return { reached: run.pos | 0, bestStreak: run.bestStreak | 0, taken: run.taken | 0, wins: S.beaten | 0, level: run.level | 0, checkpoints: (run.checkpoints || []).slice() };
+    return { reached: run.pos | 0, bestStreak: run.bestStreak | 0, taken: run.taken | 0, wins: S.beaten | 0, level: run.level | 0, checkpoints: (run.checkpoints || []).slice(), kept: run.kept || null };
   }
 
   // ---------- 稀有度、價格與時機 ----------
@@ -936,10 +978,44 @@
     return p == null ? 0 : Math.floor(p * econ(content).sellRate);
   }
   // 老闆送的不能賣回（FIXLIST 11 追加）：這一趟王牌那組的四張禮物（content.gifts[run.ace]）＋王牌本身。別組的禮物卡如果是客人丟的或買的，照舊能賣
+  //   run.gifts（從唱片櫃挑牌開局）＝這一趟實際放進包包的那幾張（種子佔掉的不算）；舊的 run 沒有 → 那組四張
   function isGift(run, content, x) {
     const id = x && typeof x === 'object' ? x.id : x;
     if (!run || !id || !content) return false;
-    return id === ((content.aces || {})[run.ace]) || (((content.gifts || {})[run.ace]) || []).includes(id);
+    const G = Array.isArray(run.gifts) ? run.gifts : (((content.gifts || {})[run.ace]) || []);
+    return id === ((content.aces || {})[run.ace]) || G.includes(id);
+  }
+  // 從唱片櫃帶來的種子不能賣回換錢（店主 11-13 §0 護欄）
+  function isSeed(run, content, x) {
+    const id = x && typeof x === 'object' ? x.id : x;
+    return !!(run && id && Array.isArray(run.seeds) && run.seeds.includes(id));
+  }
+  // 自動遊玩挑種子：照最高星（峰值）挑，同星看總星、再看 id（決定性）
+  function seedPolicy(content, ids, n) {
+    const k = n == null ? CFG.seedMax : Math.max(0, Math.min(CFG.seedMax, n | 0));
+    return uniq((ids || []).filter(id => canSeed(content, id)))
+      .sort((a, b) => peak(cardOf(content, b)) - peak(cardOf(content, a)) || power(cardOf(content, b)) - power(cardOf(content, a)) || (a < b ? -1 : a > b ? 1 : 0))
+      .slice(0, k);
+  }
+  // 一趟留一張（SPEC 從唱片櫃挑牌開局 §1 裁定 6）：候選＝這一趟進過包包的（獎勵、買的、特價箱的）＋客人掉落（獎勵候選，沒拿的也算）；
+  //   已經擁有的不列、頂點卡不列。owned 由畫面給（引擎不碰存檔）：函式 id→bool、陣列，或 {id: truthy}（值是物件就看 .own）
+  function ownedFn(owned) {
+    if (typeof owned === 'function') return owned;
+    if (Array.isArray(owned)) return id => owned.includes(id);
+    if (owned && typeof owned === 'object') return id => { const v = owned[id]; return !!(v && (typeof v === 'object' ? v.own : v)); };
+    return () => false;
+  }
+  function keepCandidates(run, content, owned) {
+    if (!run) return [];
+    const has = ownedFn(owned);
+    return uniq([].concat(run.entered || [], run.drops || [])).filter(id => canSeed(content, id) && !has(id));
+  }
+  function keepOne(run, content, id, owned) {
+    if (!run || !run.over) return { ok: false, error: 'notOver' };
+    if (run.kept) return { ok: false, error: 'kept' };
+    if (!keepCandidates(run, content, owned).includes(id)) return { ok: false, error: 'notOffered' };
+    run.kept = id;
+    return { ok: true, effects: [{ keep: id }] };
   }
   // 畫面上的錢：千分位（1200 → '1,200'）。C.shopUi 的字串自己帶 '$'，UI 代入 {n} 時用這個
   function moneyText(n) {
@@ -958,6 +1034,8 @@
     if (!ch || !ch.type) return fail('badChoice');
     const rew = p && p.type === 'reward' ? p : null;
     const S = run.stats, EC = econ(content), SH = shopOf(run);
+    // 這一趟進過包包的（一趟留一張的候選；老闆送的、種子不算）
+    const enter = id => { if (!Array.isArray(run.entered)) run.entered = []; if (!run.entered.includes(id)) run.entered.push(id); };
     switch (ch.type) {
       case 'take': {
         if (!rew || rew.cardDone) return fail('noCardOffer');
@@ -966,8 +1044,9 @@
         if (run.bag.length >= CFG.bagMax) {
           if (!ch.dropId || !run.bag.includes(ch.dropId)) return fail('bagFull');
           run.bag.splice(run.bag.indexOf(ch.dropId), 1); effects.push({ loseCard: ch.dropId });
+          if (Array.isArray(run.seeds) && run.seeds.includes(ch.dropId)) run.seeds.splice(run.seeds.indexOf(ch.dropId), 1);   // 拿掉的種子就不是種子了
         }
-        run.bag.push(ch.cardId); S.taken.push(ch.cardId); run.taken++; effects.push({ gainCard: ch.cardId });
+        run.bag.push(ch.cardId); S.taken.push(ch.cardId); run.taken++; enter(ch.cardId); effects.push({ gainCard: ch.cardId });
         rew.cardDone = true; if (rew.need === 'cardOrRelic') rew.relicDone = true;
         settle(run, content); return { ok: true, effects };
       }
@@ -1026,7 +1105,7 @@
         if (!ids.every(id => SH.bargain.includes(id) && cardOf(content, id))) return fail('notInStock');
         if (ids.some(id => run.bag.includes(id))) return fail('owned');
         if (run.bag.length + ids.length > CFG.bagMax) return fail('bagFull');
-        for (const id of ids) { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); run.taken++; effects.push({ gainCard: id }); }
+        for (const id of ids) { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); run.taken++; enter(id); effects.push({ gainCard: id }); }
         SH.bargainPicked = true;
         return { ok: true, effects };
       }
@@ -1038,13 +1117,13 @@
         const price = priceOf(content, ch.cardId);
         if (price == null) return fail('notInStock');
         let sell = null;
-        if (ch.sellId != null) { if (!run.bag.includes(ch.sellId) || !cardOf(content, ch.sellId)) return fail('badSell'); if (isGift(run, content, ch.sellId)) return fail('giftNoSell'); sell = ch.sellId; }
+        if (ch.sellId != null) { if (!run.bag.includes(ch.sellId) || !cardOf(content, ch.sellId)) return fail('badSell'); if (isGift(run, content, ch.sellId)) return fail('giftNoSell'); if (isSeed(run, content, ch.sellId)) return fail('seedNoSell'); sell = ch.sellId; }
         else if (run.bag.length >= CFG.bagMax) return fail('bagFull');
         const earn = sell ? sellValue(content, cardOf(content, sell)) : 0;
         if (run.money + earn < price) return fail('noMoney');
         if (sell) { run.bag.splice(run.bag.indexOf(sell), 1); run.money += earn; S.earned += earn; S.sold.push(sell); effects.push({ loseCard: sell, earn }); }
         run.money -= price; S.spent += price;
-        run.bag.push(ch.cardId); stock.splice(stock.indexOf(ch.cardId), 1); S.bought.push(ch.cardId); run.taken++;
+        run.bag.push(ch.cardId); stock.splice(stock.indexOf(ch.cardId), 1); S.bought.push(ch.cardId); run.taken++; enter(ch.cardId);
         effects.push({ gainCard: ch.cardId, spend: price });
         return { ok: true, effects };
       }
@@ -1060,13 +1139,14 @@
         if (sells.length < need) return fail('bagFull');
         if (sells.length > need || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
         if (sells.some(id => isGift(run, content, id))) return fail('giftNoSell');
+        if (sells.some(id => isSeed(run, content, id))) return fail('seedNoSell');
         const each = ids.map(id => bargainPriceOf(content, id));
         if (each.some(p => p == null)) return fail('notInStock');
         const earn = sells.reduce((s, id) => s + sellValue(content, cardOf(content, id)), 0), price = each.reduce((s, p) => s + p, 0);
         if (run.money + earn < price) return fail('noMoney');
         for (const id of sells) { const v = sellValue(content, cardOf(content, id)); run.bag.splice(run.bag.indexOf(id), 1); run.money += v; S.earned += v; S.sold.push(id); effects.push({ loseCard: id, earn: v }); }
         run.money -= price; S.spent += price;
-        ids.forEach((id, k) => { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); S.bought.push(id); run.taken++; effects.push({ gainCard: id, spend: each[k] }); });
+        ids.forEach((id, k) => { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); S.bought.push(id); run.taken++; enter(id); effects.push({ gainCard: id, spend: each[k] }); });
         return { ok: true, effects };
       }
       case 'buyRelic': {
@@ -1154,7 +1234,7 @@
       for (const x of cands) {
         const ch = { type: 'buy', key: x.key, cardId: x.cid };
         if (r.bag.length >= CFG.bagMax) {
-          ch.sellId = r.bag.filter(x => !isGift(r, content, x)).sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || peak(cardOf(content, a)) - peak(cardOf(content, b)))[0];   // 老闆送的不能賣
+          ch.sellId = r.bag.filter(x => !isGift(r, content, x) && !isSeed(r, content, x)).sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || peak(cardOf(content, a)) - peak(cardOf(content, b)))[0];   // 老闆送的不能賣
           if (ch.sellId == null) continue;
         }
         if (choose(r, content, ch).ok) { out.push(ch); bought = true; break; }
@@ -1260,5 +1340,6 @@
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
     trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, isGift, moneyText,
-    runPolicy, shopPolicy, bargainPolicy, policies };
+    runPolicy, shopPolicy, bargainPolicy, policies,
+    canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne };
 });

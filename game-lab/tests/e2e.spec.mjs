@@ -49,6 +49,14 @@
 //  48（v5）中繼點＋吐司＋結算：__lab.jump(第 9 位) 打贏 →「+$…・聲望 +n」吐司在領獎畫面看得到 ≥1 秒 → 走到第 10 位＝來客畫面的中繼點吐司（看得到 ≥1 秒）、save.best.checkpoints、
 //      離下個中繼點還有 10 位；跳到第 23 位、loseNext → 結算三件事（走到第 23 位、最多連贏、收了幾張）、中繼點那行、牆一排、底下兩顆鈕不用捲；
 //      再挑戰一趟前標題「最遠：第 23 位」、「看上一趟結算」
+//  （從唱片櫃挑牌開局，店主 11-13；SPEC 從唱片櫃挑牌開局 §3）
+//  49 掉落旁白：打贏客人（他丟過牌）→ 領獎前對白框念「對方似乎掉落了什麼……」（＝C.script.drop），面板之後才出來；掉落的唱片全在他這一場的實際牌單（trialDeck）裡、記進 run.drops
+//  50 結算帶走一張：「這一趟帶走一張」鈕（取代那面牆，不捲動）→ 面板（候選＝engine.keepCandidates：擁有的、頂點卡不列）→ 帶走 → 唱片櫃擁有（src run）＋金框「店內取得」
+//     （結算那塊、唱片櫃頁「我的收藏」都是金框）；只能帶一次
+//  51 第二趟挑種子：再挑戰一趟 → 挑王牌 → 挑種子面板（擁有、不是頂點卡；三色篩選；最多 3 張；面板內可捲、整頁不捲）→ 就這幾張 → 特價箱 → 來客：
+//     包包＝種子＋老闆送的補到 4 張＋特價箱 3 張＝7、run.seeds＝挑的；序章那一趟不挑
+//  52 種子不能賣：包包滿了買箱子裡的 → 先賣子面板：種子標「櫃裡帶來」、選不了，點了說明「從唱片櫃帶來的不能賣」；引擎 buy 賣種子 → seedNoSell
+//  53 存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -61,7 +69,7 @@ const LAB = path.resolve(HERE, '..');
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const YOU_HP = createRequire(import.meta.url)(path.join(LAB, 'engine.js')).CFG.playerHp;   // 你的聲望（FIXLIST 11 H5-1：9）
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48]);
+const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52]);
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
 // D §5 規則卡六行（店主拍板，逐字；第 6 行照 FIXLIST 2／3 改：王牌沒有「不會被剋」、六手比聲望條剩幾成）
@@ -84,6 +92,17 @@ function silentWav(sec = 1, rate = 8000) {
   return b;
 }
 const WAV = silentWav(20);
+// 掉落旁白（從唱片櫃挑牌開局，店主 11-13）：領獎畫面先念「對方似乎掉落了什麼……」（他有能收的唱片才有）；點一下跳過，等到面板（挑唱片／升級）出來
+async function pastDrop(page, ms = 5000) {
+  const t0 = Date.now();
+  while (Date.now() - t0 < ms) {
+    const st = await page.evaluate(() => ({ dq: !!document.querySelector('.lb-dq.drop .nx.on'), sheet: !!document.querySelector('#panel > .lb-sheet') }));
+    if (st.sheet) return true;
+    if (st.dq) await jsClick(page, '.lb-dq.drop');
+    await sleep(120);
+  }
+  return false;
+}
 async function newPage(browser, w, h, o = {}) {
   const r = await newPage0(browser, w, h, o);
   r.page._econStub = ECON === 'stub';
@@ -260,6 +279,7 @@ async function run() {
         await resolveHands(page, 2, 'thoughtful');
         await page.evaluate(() => window.__lab.forceWin());
         await waitScreen(page, 'reward');
+        await pastDrop(page);
         await sleep(1200);
         const scR = await noScroll(page);
         const rew = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-pick]'); if (!b) return null; const r = b.getBoundingClientRect(); const f = document.querySelector('.lb-sheet.reward .foot').getBoundingClientRect(); return { btnBottom: r.bottom, footTop: f.top, vh: innerHeight }; });
@@ -372,16 +392,23 @@ async function run() {
           `end ${end} ${r.over} at 第 ${r.pos} 位 (loseNext from ${lose}); rows ${JSON.stringify(r.rows)}; best.far ${r.far}; Lv ${r.level} picks ${r.picks}; night×${sawNight}, reward ${sawReward}; 沒有一晚字 ${noNight}`);
         if (want(13)) {
           await page.evaluate(() => window.__lab.stop());
+          // 審查 #3：挑種子面板不列這次王牌那組送的；扣掉之後沒有能帶的（上一趟只擁有那組）＝不開面板、直接走去特價箱
+          const expSeeds = await page.evaluate(() => window.__lab.seedPool(window.__lab.save.lastAce || 'hall').length > 0);
           await jsClick(page, '[data-a=again]');
           const ace = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.acepick [data-a=ok]'), null, 20000);
           await sleep(450);
           await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
-          let n2 = false; const t1 = Date.now();
-          while (!n2 && Date.now() - t1 < 20000) { n2 = (await screen(page)) === 'night'; if (!n2) { await answerBargain(page); await sleep(200); } }
+          let n2 = false, sawSeeds = false; const t1 = Date.now();
+          while (!n2 && Date.now() - t1 < 20000) {
+            n2 = (await screen(page)) === 'night';
+            // 第二趟起挑完王牌先挑種子（有能帶的才開）：這裡「先不挑」（#51 測挑的那條路）
+            if (!n2 && await page.$('.lb-sheet.seeds [data-a=none]')) { sawSeeds = true; await sleep(450); await jsClick(page, '.lb-sheet.seeds [data-a=none]'); await sleep(250); continue; }
+            if (!n2) { await answerBargain(page); await sleep(200); }
+          }
           await sleep(500);
           const rr = await page.evaluate(() => !window.__lab.run ? { noRun: true, s: window.__lab.screen(), beat: window.__lab.beat, trail: window.__lab.trail().slice(-5), sheet: (document.querySelector('#panel > .lb-sheet') || {}).className || null, calls: (window.__econCalls || []).map(c => c.m) } : ({ prologue: window.__lab.run.prologue, runNo: window.__lab.run.runNo, pos: window.__lab.run.pos, hp: window.__lab.run.hp, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, trail: window.__lab.trail().slice(-4) }));
           const ms = Date.now() - t1;
-          record(13, size, ace && n2 && rr.prologue == null && rr.runNo === 2 && rr.pos === 1 && rr.hp === YOU_HP && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics), `再挑戰一趟 → acePick ${ace} → night ${n2} (${ms} ms); ${JSON.stringify(rr)}; relics last run ${JSON.stringify(r.relics)}`);
+          record(13, size, ace && sawSeeds === expSeeds && n2 && rr.prologue == null && rr.runNo === 2 && rr.pos === 1 && rr.hp === YOU_HP && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics), `再挑戰一趟 → acePick ${ace} → 挑種子（先不挑）${sawSeeds}（該不該開 ${expSeeds}）→ night ${n2} (${ms} ms); ${JSON.stringify(rr)}; relics last run ${JSON.stringify(r.relics)}`);
         }
         if (want(11)) {
           const ks = await page.evaluate(() => ({ keys: [...new Set(window.__lsKeys)], v: JSON.parse(localStorage.getItem('dipGameLab_v1')).v }));
@@ -399,12 +426,13 @@ async function run() {
               tutorialDone: true, prologueDone: true, lastAce: 'hall', lastBargain: null }));
           });
           await openTitle(page, Q());
-          const mig = await page.evaluate(() => { const S = window.__lab.save; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
+          const mig = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, id = C.aces.hall; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, known: !!S.shelf[id] && !S.shelf[id].own, giftsOwn: C.gifts.hall.every(g => S.shelf[g] && S.shelf[g].own && S.shelf[g].src === 'gift'), relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
           await openTitle(page, Q());
           mig.lastAce2 = await page.evaluate(() => window.__lab.save.lastAce);
-          const migOk = mig.v === 5 && !mig.run && mig.shelf === 1 && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
+          // v4 → v5 → v6：唱片櫃那張留成「認識」；挑過的王牌（lastAce hall）那組送的四張算擁有（一晚版沒有位數：不算打倒藏家）
+          const migOk = mig.v === 6 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
             mig.lastAce === 'hall' && mig.runSeq === 1 && mig.lastAce2 === 'hall';   // 審查 #1：lastAce 遷移後、重新整理後都留著；#5：同一天第幾趟的計數器從舊的一晚接著數
-          record(11, size, !bad.length && ks.v === 5 && old.v === 5 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
+          record(11, size, !bad.length && ks.v === 6 && old.v === 6 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
         }
         if (want(12)) {
           const fb = page._requests.filter(u => /firebase|firestore|googleapis\.com\/identitytoolkit/i.test(u));
@@ -955,22 +983,215 @@ async function run() {
         const r = await page.evaluate(() => { const S = window.DipLabContent.summary, R = window.__lab.run, sum = window.DipLabEngine.runSummary(R);
           const vis = sel => { const e = document.querySelector(sel); if (!e) return false; const b = e.getBoundingClientRect(), x = b.left + b.width / 2, y = b.top + b.height / 2; const top = document.elementFromPoint(x, y); return b.bottom <= innerHeight && b.top >= 0 && !!top && (top === e || e.contains(top)); };
           const wall = [...document.querySelectorAll('.lb-wall > *')].map(e => Math.round(e.getBoundingClientRect().top));
+          // 一趟留一張（從唱片櫃挑牌開局）：有候選時那面牆換成「這一趟帶走一張」那顆鈕（一樣一排、不用捲）
+          const keep = vis('.lb-keep[data-a=keep]');
           return { h1: document.querySelector('.lb-endhero .lb-h1').textContent, title: S.title, rows: [...document.querySelectorAll('.lb-sum li')].map(li => li.textContent.replace(/\s+/g, ' ').trim()), sum,
-            cps: (document.querySelector('.lb-cps') || {}).textContent || '', cpsWant: S.checkpoints.replace('{list}', '10'), again: (document.querySelector('[data-a=again]') || {}).textContent || '', againWant: S.again,
+            cps: (document.querySelector('.lb-cps .cp') || {}).textContent || '', cpsWant: S.checkpoints.replace('{list}', '10'), again: (document.querySelector('[data-a=again]') || {}).textContent || '', againWant: S.again,
             far: window.__lab.save.best.far, runs: window.__lab.save.runs.length, top: document.querySelector('#top').textContent,
-            btns: { shelf: vis('.lb-endbtns [data-a=shelf]'), taipei: vis('.lb-endbtns [data-a=taipei]'), again: vis('[data-a=again]') }, wallRows: new Set(wall).size, wallN: wall.length,
+            btns: { shelf: vis('.lb-endbtns [data-a=shelf]'), taipei: vis('.lb-endbtns [data-a=taipei]'), again: vis('[data-a=again]') }, wallRows: new Set(wall).size, wallN: wall.length, keep,
             scr: (() => { const s = document.querySelector('.lb-screen.end .lb-scroll'); return s ? s.scrollHeight - s.clientHeight : -1; })() }; });
         const sc = await noScroll(page);
+        // 審查 #6：有中繼點＋這一趟的唱片「我的收藏」都有了（沒有「帶走一張」）→ 那句併進中繼點那行；矮螢幕不被底下那排鈕切掉、不用捲
+        await page.evaluate(() => { window.__lab.own(window.__lab.keepIds(), 'run'); window.__lab.go('end'); });
+        await sleep(900);
+        const ao = await page.evaluate(() => { const U = window.DipLabContent.seeds.ui, kn = document.querySelector('.lb-cps .kn'), eb = document.querySelector('.lb-endbtns');
+          return { kn: kn ? kn.textContent : '', want: U.keepNone, keep: !!document.querySelector('.lb-keep'), cp: (document.querySelector('.lb-cps .cp') || {}).textContent || '',
+            knBottom: kn ? Math.round(kn.getBoundingClientRect().bottom) : 0, btnTop: eb ? Math.round(eb.getBoundingClientRect().top) : 0,
+            scr: (() => { const x = document.querySelector('.lb-screen.end .lb-scroll'); return x ? x.scrollHeight - x.clientHeight : -1; })() }; });
+        const scAo = await noScroll(page);
+        const aoOk = ao.kn === ao.want && !ao.keep && ao.cp === r.cpsWant && ao.knBottom > 0 && ao.knBottom <= ao.btnTop && ao.scr <= 1 && scrollOk(scAo);
         await openTitle(page);
         const t = await page.evaluate(() => ({ foot: [...document.querySelectorAll('.lb-foot')].map(x => x.textContent).join('|'), want: window.DipLabContent.summary.best.replace('{n}', 23), last: (document.querySelector('[data-a=end]') || {}).textContent || '', lastWant: window.DipLabContent.trial.ui.lastSummary,
           top: document.querySelector('#top .tt').textContent.trim(), game: window.DipLabContent.trial.ui.game }));
         const ok = toCp0 === 1 && tMoney && tMoney.vis >= 1000 && tMoney.screen === 'reward' && tCp && tCp.vis >= 1000 && tCp.screen === 'night' && cp.pos === 10 && cp.best.includes(10) && cp.run.includes(10) &&
           cp.toCpN === 10 && cp.nh.indexOf(cp.toCp) >= 0 &&
           end && r.h1 === r.title && r.rows.length === 3 && r.rows[0].indexOf('第 23 位') >= 0 &&
-          r.cps === r.cpsWant && r.again === r.againWant && r.far === 23 && r.runs === 1 && /^第 23 位/.test(r.top.trim()) && scrollOk(sc) && r.btns.shelf && r.btns.taipei && r.btns.again && r.wallRows === 1 && r.scr <= 1 &&
-          t.foot.indexOf(t.want) >= 0 && t.last === t.lastWant && t.top === t.game;
-        record(48, size, ok, `toCheckpoint at 9 = ${toCp0}, at 10 = ${cp.toCpN}「${cp.nh}」; toasts ${JSON.stringify(cp.toasts)}; best.checkpoints ${cp.best}; end ${end}「${r.h1}」 rows ${JSON.stringify(r.rows)}「${r.cps}」 again「${r.again}」 btns ${JSON.stringify(r.btns)} wall ${r.wallN}/${r.wallRows} row(s) scroll ${r.scr}; far ${r.far}; scroll ${JSON.stringify(sc)}; title「${t.top}」「${t.foot}」「${t.last}」`);
+          r.cps === r.cpsWant && r.again === r.againWant && r.far === 23 && r.runs === 1 && /^第 23 位/.test(r.top.trim()) && scrollOk(sc) && r.btns.shelf && r.btns.taipei && r.btns.again && (r.keep ? r.wallRows === 0 : r.wallRows === 1) && r.scr <= 1 &&
+          t.foot.indexOf(t.want) >= 0 && t.last === t.lastWant && t.top === t.game && aoOk;
+        record(48, size, ok, `都有了＋中繼點 ${JSON.stringify(ao)} ${aoOk}；toCheckpoint at 9 = ${toCp0}, at 10 = ${cp.toCpN}「${cp.nh}」; toasts ${JSON.stringify(cp.toasts)}; best.checkpoints ${cp.best}; end ${end}「${r.h1}」 rows ${JSON.stringify(r.rows)}「${r.cps}」 again「${r.again}」 btns ${JSON.stringify(r.btns)} wall ${r.wallN}/${r.wallRows} row(s) keep ${r.keep} scroll ${r.scr}; far ${r.far}; scroll ${JSON.stringify(sc)}; title「${t.top}」「${t.foot}」「${t.last}」`);
       } catch (e) { record(48, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #49–#52 從唱片櫃挑牌開局（店主 11-13）：同一趟接著做——掉落旁白（#49）→ 結算帶走一張（#50）→ 第二趟挑種子（#51）→ 種子不能賣（#52）
+    if (want(49) || want(50) || want(51) || want(52)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      let stage = '49';
+      try {
+        // v5 存檔（seedRun）：遷到 v6 時，上次挑的王牌（hall）那組送的四張算擁有
+        await seededContinue4(page, { ace: 'hall', pos: 2 }, Q());
+        await waitScreen(page, 'night'); await sleep(500);
+        // ---- #49 掉落旁白：他丟過一張牌才打贏（forceWin），領獎前先念旁白
+        await jsClick(page, '[data-a=go]'); await duelReady(page); await sleep(200);
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        await duelReady(page);
+        const before = await page.evaluate(() => { const R = window.__lab.run, d = window.__lab.rawDuel(); return { id: R.duelEnemy, pos: R.pos, thrown: d.e.thrown.map(c => c.id),
+          deck: window.DipLabEngine.trialDeck(window.DipLabContent, R.duelEnemy, R.pos, { seedKey: R.seedKey, runNo: R.runNo, playerAce: R.ace, bossAce: R.bossAce, tier: R.tier }).deck.map(c => c.id) }; });
+        await page.evaluate(() => window.__lab.forceWin());
+        await waitScreen(page, 'reward', 15000);
+        let narr = null;
+        for (let g = 0; g < 60 && !(narr && narr.text); g++) { narr = await page.evaluate(() => ({ text: (document.querySelector('.lb-dq.drop .tx') || {}).textContent || '', sheet: !!document.querySelector('.lb-sheet.reward') })); if (!narr.text) await sleep(50); }
+        await sleep(300);
+        const n2 = await page.evaluate(() => ({ text: (document.querySelector('.lb-dq.drop .tx') || {}).textContent || '', want: window.DipLabContent.script.drop[0].text, sheet: !!document.querySelector('.lb-sheet.reward'),
+          cards: window.__lab.run.pending.cards.slice(), drops: window.__lab.run.drops.slice() }));
+        const sc49 = await noScroll(page);
+        await jsClick(page, '.lb-dq.drop');
+        const sheet49 = await page.waitForSelector('.lb-sheet.reward [data-pick]', { timeout: 8000 }).then(() => true, () => false);
+        const dqGone = await page.evaluate(() => !document.querySelector('.lb-dq.drop'));
+        if (want(49)) record(49, size, narr.text.length > 0 && !narr.sheet && n2.text === n2.want && n2.want === '對方似乎掉落了什麼……' && !n2.sheet && sheet49 && dqGone && n2.cards.length > 0 &&
+          n2.cards.every(id => before.deck.includes(id) && before.thrown.includes(id) && n2.drops.includes(id)) && scrollOk(sc49),
+          `旁白「${n2.text}」（面板還沒出來 ${!n2.sheet}）→ 點一下 → 挑唱片面板 ${sheet49}；掉落 ${JSON.stringify(n2.cards)} ⊂ 他這一場的牌單 ${n2.cards.every(id => before.deck.includes(id))}、記進 drops ${JSON.stringify(n2.drops)}；scroll ${JSON.stringify(sc49)}`);
+        // 收一張（進過包包）→ 升級 → 來客
+        await sleep(700);
+        const took = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-pick]'); if (!b) return null; b.click(); return b.getAttribute('data-pick'); });
+        for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(250); }
+        // ---- #50 結算帶走一張
+        stage = '50';
+        await page.evaluate(() => { window.__lab.own([window.DipLabContent.aces.pearl], 'boss'); window.__lab.jump(12); window.__lab.loseNext(1, { noRetry: true }); });
+        await waitScreen(page, 'night'); await sleep(400);
+        await jsClick(page, '[data-a=go]'); await duelReady(page);
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        await advanceUntil(page, () => window.__lab.screen() === 'end', null, 40000);
+        await sleep(1200);
+        const e0 = await page.evaluate(() => { const R = window.__lab.run, S = window.__lab.save, C = window.DipLabContent, E = window.DipLabEngine;
+          const vis = sel => { const e = document.querySelector(sel); if (!e) return false; const b = e.getBoundingClientRect(), top = document.elementFromPoint(b.left + b.width / 2, b.top + b.height / 2); return b.bottom <= innerHeight && b.top >= 0 && !!top && (top === e || e.contains(top)); };
+          return { keep: vis('.lb-keep[data-a=keep]'), again: vis('[data-a=again]'), ids: window.__lab.keepIds(), want: E.keepCandidates(R, C, S.shelf), entered: R.entered.slice(), drops: R.drops.slice(),
+            owned: window.__lab.owned(), scr: (() => { const x = document.querySelector('.lb-screen.end .lb-scroll'); return x ? x.scrollHeight - x.clientHeight : -1; })() }; });
+        const sc50 = await noScroll(page);
+        await jsClick(page, '.lb-keep[data-a=keep]'); await sleep(700);
+        const ks = await page.evaluate(() => ({ tiles: [...document.querySelectorAll('.lb-sheet.keep .lb-ct')].map(t => t.dataset.cid), x: (() => { const s = document.querySelector('.lb-sheet.keep'); return s ? s.getBoundingClientRect().bottom : 0; })() }));
+        const sc50b = await noScroll(page);
+        const kid = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.keep [data-pick]'); if (!b) return null; b.click(); return b.getAttribute('data-pick'); });
+        await sleep(700);
+        const k1 = await page.evaluate(id => { const S = window.__lab.save, R = window.__lab.run; return { kept: R.kept, shelf: S.shelf[id] || null, done: !!document.querySelector('.lb-keep.done .lb-cv.store[data-cid="' + id + '"]'), btn: !!document.querySelector('.lb-keep[data-a=keep]'),
+          again: window.DipLabEngine.keepOne(R, window.DipLabContent, window.__lab.keepIds()[0] || 'x', S.shelf).error, runKept: (S.runs[S.runs.length - 1] || {}).kept }; }, kid);
+        await jsClick(page, '.lb-endbtns [data-a=shelf]'); await sleep(600);
+        const sp = await page.evaluate(id => ({ own: !!document.querySelector('.lb-wall.own .lb-cv.store[data-cid="' + id + '"]'), ownN: document.querySelectorAll('.lb-wall.own .lb-cv').length, owned: window.__lab.owned().length,
+          known: !!document.querySelector('.lb-wall.known .lb-cv[data-cid="' + id + '"]'), h: [...document.querySelectorAll('.lb-page .lb-h2')].map(x => x.textContent) }), kid);
+        await jsClick(page, '.lb-page [data-a=close]'); await sleep(300);
+        const apexOut = e0.ids.every(id => !/^(radiohead-ok-computer|barney-wilen-zodiac|swans-filth)$/.test(id)) && await page.evaluate(ids => ids.every(id => !window.DipLabContent.cards[id].tier), e0.ids);
+        const okKeepIds = JSON.stringify(e0.ids) === JSON.stringify(e0.want) && e0.ids.length > 0 && e0.ids.every(id => !e0.owned.includes(id) && (e0.entered.includes(id) || e0.drops.includes(id))) && (!took || e0.ids.includes(took) || e0.owned.includes(took));
+        if (want(50)) record(50, size, e0.keep && e0.again && e0.scr <= 1 && scrollOk(sc50) && okKeepIds && JSON.stringify(ks.tiles) === JSON.stringify(e0.ids) && scrollOk(sc50b) &&
+          kid && k1.kept === kid && k1.shelf && k1.shelf.own === true && k1.shelf.src === 'run' && k1.done && !k1.btn && k1.again === 'kept' && k1.runKept === kid && sp.own && sp.known && sp.ownN === sp.owned && apexOut,
+          `結算鈕 ${e0.keep}（scroll ${e0.scr}、${JSON.stringify(sc50)}）；候選 ${e0.ids.length}（＝keepCandidates ${okKeepIds}；擁有的不列、頂點卡不列）；帶走 ${kid} → own ${JSON.stringify(k1.shelf)}、結算金框 ${k1.done}、再帶一次 ${k1.again}；唱片櫃「我的收藏」金框 ${sp.own}（${sp.ownN}＝${sp.owned}）${JSON.stringify(sp.h)}`);
+        // ---- #51 第二趟挑種子
+        stage = '51';
+        // 面板列的＝唱片櫃能當種子的、扣掉這次王牌（pearl）那組送的（審查 #3）
+        const pool = await page.evaluate(() => window.__lab.seedPool('pearl'));
+        const giftOut = await page.evaluate(() => window.__lab.seedable().filter(id => window.DipLabContent.gifts.pearl.includes(id)));
+        await jsClick(page, '[data-a=again]');
+        const ace = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.acepick [data-a=ok]'), null, 20000);
+        await sleep(450);
+        await jsClick(page, '.lb-sheet.acepick .lb-ct[data-tier="pearl"] .acex'); await sleep(150);
+        await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
+        const seedsUp = await page.waitForSelector('.lb-sheet.seeds .lb-ct', { timeout: 10000 }).then(() => true, () => false);
+        await sleep(600);
+        const sp0 = await page.evaluate(() => { const C = window.DipLabContent, E = window.DipLabEngine;
+          const tiles = [...document.querySelectorAll('.lb-sheet.seeds .lb-ct')].map(t => t.dataset.cid);
+          return { tiles, apex: tiles.filter(id => C.cards[id].tier).length, stars: document.querySelectorAll('.lb-sheet.seeds .lb-ct .stars').length, filters: [...document.querySelectorAll('.lb-sheet.seeds [data-f]')].map(b => b.textContent),
+            go: (document.querySelector('.lb-sheet.seeds [data-a=ok]') || {}).textContent || '', none: (document.querySelector('.lb-sheet.seeds [data-a=none]') || {}).textContent || '', okDis: document.querySelector('.lb-sheet.seeds [data-a=ok]').disabled,
+            foot: (() => { const f = document.querySelector('.lb-sheet.seeds .foot'); const b = f.getBoundingClientRect(); return b.bottom <= innerHeight + 1 && b.top >= 0; })(), store: document.querySelectorAll('.lb-sheet.seeds .lb-cv.store').length,
+            sub: document.querySelector('.lb-sheet.seeds .sdn').textContent, subWant: C.seeds.ui.pickSub.replace('{n}', C.gifts.pearl.length).replace('{max}', 3),
+            U: C.seeds.ui }; });
+        const sc51 = await noScroll(page);
+        // 三色篩選（審查 #8）：那一色是這張最高的（平手兩色都算）。第一張的最高色 → 只剩最高色含它的（張數對得上）；沒有任何一張以它為最高的那一色 → 空的那句
+        const MX = `c => { const m = Math.max(c.c || 0, c.o || 0, c.h || 0); return ['c', 'o', 'h'].filter(a => (c[a] || 0) === m); }`;
+        const ax = await page.evaluate(MX => { const mx = eval(MX); return mx(window.DipLabContent.cards[document.querySelector('.lb-sheet.seeds .lb-ct').dataset.cid])[0]; }, MX);
+        await jsClick(page, `.lb-sheet.seeds [data-f=${ax}]`); await sleep(200);
+        const fo = await page.evaluate(MX => { const mx = eval(MX); return [...document.querySelectorAll('.lb-sheet.seeds .lb-ct')].filter(t => getComputedStyle(t).display !== 'none').map(t => mx(window.DipLabContent.cards[t.dataset.cid]).join('')); }, MX);
+        const foWant = await page.evaluate(({ pool, ax, MX }) => { const mx = eval(MX); return pool.filter(id => mx(window.DipLabContent.cards[id]).includes(ax)).length; }, { pool, ax, MX });
+        const noneAx = await page.evaluate(({ pool, MX }) => { const mx = eval(MX); return ['c', 'o', 'h'].find(a => !pool.some(id => mx(window.DipLabContent.cards[id]).includes(a))) || null; }, { pool, MX });
+        let emptyOk = true;
+        if (noneAx) { await jsClick(page, `.lb-sheet.seeds [data-f=${noneAx}]`); await sleep(200); emptyOk = await page.evaluate(() => { const e = document.querySelector('.lb-sheet.seeds .lb-sdempty'); return !!e && !e.hidden && e.textContent === window.DipLabContent.seeds.ui.pickEmpty; }); }
+        await jsClick(page, '.lb-sheet.seeds [data-f=all]'); await sleep(200);
+        // 點四張：只收三張、第四張說最多 3 張（審查 #4：吐司；滿了沒選的鈕 aria-disabled、張數變紅；捲到底標題列還看得到。審查 #10：選了＝墨色框＋✓ 章）
+        const tried = await page.evaluate(() => [...document.querySelectorAll('.lb-sheet.seeds [data-pick]')].slice(0, 4).map(b => { b.click(); return b.getAttribute('data-pick'); }));
+        await sleep(200);
+        const sel = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.seeds'), cnt = s.querySelector('.cnt'), t0 = s.querySelector('.lb-ct.sel');
+          s.scrollTop = s.scrollHeight;
+          const cb = cnt.getBoundingClientRect(), sb = s.getBoundingClientRect(), hit = document.elementFromPoint(cb.left + cb.width / 2, cb.top + cb.height / 2);
+          return { sel: [...s.querySelectorAll('.lb-ct.sel')].map(t => t.dataset.cid), cnt: cnt.textContent, note: s.querySelector('.sdn').textContent, okDis: s.querySelector('[data-a=ok]').disabled,
+            toast: [...document.querySelectorAll('.lb-toast')].map(x => x.textContent), toastWant: window.DipLabContent.seeds.ui.pickFullToast.replace('{max}', 3),
+            dis: [...s.querySelectorAll('.lb-ct:not(.sel) [data-pick]')].map(b => b.getAttribute('aria-disabled')), selDis: [...s.querySelectorAll('.lb-ct.sel [data-pick]')].map(b => b.getAttribute('aria-disabled')),
+            red: getComputedStyle(cnt).color, gray: getComputedStyle(s.querySelector('.sdn.warn') || cnt).color,
+            stuck: cb.top >= sb.top - 1 && cb.bottom <= sb.bottom && !!hit && (hit === cnt || cnt.contains(hit)), scrolled: s.scrollTop,
+            check: t0 ? getComputedStyle(t0, '::before').content : '', outline: t0 ? getComputedStyle(t0.querySelector('.lb-cv')).outlineColor : '' }; });
+        await page.evaluate(() => { const s = document.querySelector('.lb-sheet.seeds'); if (s) s.scrollTop = 0; });
+        await jsClick(page, '.lb-sheet.seeds [data-a=ok]');
+        let nn = false; const t1 = Date.now();
+        while (!nn && Date.now() - t1 < 20000) { nn = (await screen(page)) === 'night'; if (!nn) { await answerBargain(page); await sleep(200); } }
+        await sleep(500);
+        const rr = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent; return { bag: R.bag.slice(), seeds: R.seeds.slice(), gifts: C.gifts[R.ace], ace: R.ace, runNo: R.runNo, picked: R.shop.bargainPicked, prologue: R.prologue }; });
+        const wantSeeds = tried.slice(0, 3), fill = rr.gifts.filter(g => !wantSeeds.includes(g)).slice(0, 4 - wantSeeds.length);
+        const bagOk = JSON.stringify(rr.bag.slice(0, 4)) === JSON.stringify(wantSeeds.concat(fill)) && rr.bag.length === 7 && JSON.stringify(rr.seeds) === JSON.stringify(wantSeeds) && rr.picked;
+        if (want(51)) record(51, size, ace && seedsUp && JSON.stringify(sp0.tiles.slice().sort()) === JSON.stringify(pool.slice().sort()) && sp0.apex === 0 && sp0.stars === sp0.tiles.length && sp0.store >= 1 &&
+          sp0.filters.join() === [sp0.U.pickAll, '經典', '冷門', '硬蕊'].join() && sp0.go === sp0.U.pickGo && sp0.none === sp0.U.pickNone && sp0.okDis && sp0.foot && scrollOk(sc51) && fo.length === foWant && fo.length > 0 && fo.every(a => a.includes(ax)) && emptyOk &&
+          JSON.stringify(sel.sel.slice().sort()) === JSON.stringify(wantSeeds.slice().sort()) && sel.cnt === '3／3' && sel.note.indexOf('最多帶 3 張') >= 0 && !sel.okDis && nn && bagOk && rr.runNo === 2 && rr.prologue == null && rr.ace === 'pearl' &&
+          sp0.tiles.every(id => !giftOut.includes(id)) && sp0.sub === sp0.subWant && sel.toast.includes(sel.toastWant) && sel.dis.length > 0 && sel.dis.every(x => x === 'true') && sel.selDis.every(x => x === null) &&
+          sel.red === 'rgb(193, 22, 40)' && sel.stuck && /✓/.test(sel.check) && sel.outline === 'rgb(17, 17, 17)',
+          `挑種子面板 ${seedsUp}：${sp0.tiles.length} 張（＝唱片櫃能當種子的 ${pool.length}；頂點卡 ${sp0.apex}、金框 ${sp0.store}）、篩選 ${sp0.filters.join('／')}（${ax} → ${fo.join('')}／${foWant}；沒有的那色 ${noneAx}：空的那句 ${emptyOk}）、點四張 → 選 ${sel.sel.length}「${sel.cnt}」「${sel.note}」吐司 ${JSON.stringify(sel.toast)} 沒選的 aria-disabled ${sel.dis.join()} 張數 ${sel.red} 捲到 ${sel.scrolled} 標題列看得到 ${sel.stuck} 選了 ${sel.check} ${sel.outline}；不列 pearl 送的 ${JSON.stringify(giftOut)}；副標「${sp0.sub}」；scroll ${JSON.stringify(sc51)}；` +
+          `包包 ${JSON.stringify(rr.bag)}（種子＋送的補到 4 ${bagOk}）`);
+        // ---- #52 種子不能賣：包包補到 8 張、錢不夠 → 箱子裡買一張 → 先賣子面板
+        stage = '52';
+        const setup = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine;
+          const extra = Object.keys(C.cards).filter(id => !C.cards[id].tier && !R.bag.includes(id) && !Object.values(R.shop.bins).flat().includes(id) && !C.bargain.pool.includes(id)).slice(0, 8 - R.bag.length);
+          R.bag.push(...extra); window.__lab.money(5000);                                 // 錢夠、包包滿：要先賣一張
+          const key = 'jazz', id = R.shop.bins[key][0], sd = R.seeds[0];
+          return { key, id, sd, eng: E.choose(JSON.parse(JSON.stringify(R)), C, { type: 'buy', key, cardId: id, sellId: sd }).error, bag: R.bag.length }; });
+        await page.evaluate(() => window.__lab.stageAction('crate:jazz'));
+        const drawer = await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer [data-a=buy]'), null, { timeout: 9000 }).then(() => true, () => false);
+        await sleep(450);
+        await jsClick(page, '.ec-drawer [data-a=buy]'); await sleep(400);
+        const sub = await page.evaluate(() => ({ sub: window.DipLabEcon.debug().sub, seeds: [...document.querySelectorAll('.ec-drawer .ec-spick.seed')].map(t => [t.dataset.cid, t.getAttribute('aria-disabled'), (t.querySelector('.ec-seed') || {}).textContent || '']) }));
+        await page.evaluate(sd => { const b = document.querySelector(`.ec-drawer .ec-spick[data-cid="${sd}"]`); if (b) b.click(); }, setup.sd); await sleep(250);
+        const after = await page.evaluate(() => ({ picks: (window.DipLabEcon.debug().sub || {}).picks || null, line: (document.querySelector('.ec-drawer .ec-line.warn') || {}).textContent || '', toast: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent).join('|'), want: window.DipLabContent.shopUi.seedNoSell, tag: window.DipLabContent.shopUi.seedTag }));
+        await page.evaluate(() => { const E = window.DipLabEcon; if (E && E.close) E.close(); }); await sleep(300);
+        if (want(52)) record(52, size, setup.eng === 'seedNoSell' && setup.bag === 8 && drawer && sub.sub && sub.sub.kind === 'card' && sub.seeds.length === 3 && sub.seeds.every(([, dis, tx]) => dis === 'true' && tx === after.tag) &&
+          after.picks && after.picks.length === 0 && after.line === after.want && after.want === '從唱片櫃帶來的不能賣' && after.toast.indexOf(after.want) >= 0,
+          `引擎賣種子 → ${setup.eng}；子面板 ${JSON.stringify(sub.sub)}：種子 ${sub.seeds.length} 張 ${JSON.stringify(sub.seeds.map(x => x[1] + '/' + x[2]))}；點了 → 沒選（${JSON.stringify(after.picks)}）、說明「${after.line}」、吐司 ${after.toast.indexOf(after.want) >= 0}`);
+      } catch (e) { record(+stage, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #53 存檔 v5 → v6（只在第一個尺寸跑）
+    if (want(53)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page, Q());
+        const ref = await page.evaluate(() => {
+          const C = window.DipLabContent, E = window.DipLabEngine;
+          const r = E.newRun(C, { seedKey: '20261106', runNo: 3, ace: 'heresy', prologue: false }); E.choose(r, C, E.bargainPolicy(r, C)); E.jumpTo(r, C, 7); r.aceWon = true;
+          const known = C.enemies.copycat.deck[0];
+          const s = { v: 5, seen: { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r,
+            runs: [{ seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 12, bestStreak: 11, taken: 9, wins: 11 }, { seedKey: '20261102', runNo: 2, ace: 'hall', result: 'dead', reached: 3, bestStreak: 2, taken: 7, wins: 2 },
+              { seedKey: '20261020', runNo: 1, ace: 'pearl', result: 'clear', reached: 0, legacy: true }],
+            runSeq: { 20261101: 1 }, best: { far: 12, checkpoints: [10], bestStreak: 11 }, shelf: { [known]: { at: '20261101#1', seen: true }, [C.aces.hall]: { at: '20261101#1', seen: true } }, relics: [],
+            tutorialDone: true, prologueDone: true, lastAce: 'heresy', lastBargain: null };
+          localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
+          return { known, boss1: C.aces[E.bossAceFor('20261101', 1, 'hall')], boss2: C.aces[E.bossAceFor('20261102', 2, 'hall')], bossRun: C.aces[r.bossAce], gifts: { hall: C.gifts.hall, pearl: C.gifts.pearl, heresy: C.gifts.heresy } };
+        });
+        await openTitle(page, Q());
+        const m = await page.evaluate(() => { const S = window.__lab.save; return { v: S.v, shelf: S.shelf, run: !!S.run, runV: S.run && S.run.v, cont: !!document.querySelector('[data-a=cont]'), far: S.best.far, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).v }; });
+        const own = id => !!(m.shelf[id] && m.shelf[id].own);
+        const ok = m.v === 6 && m.run && m.cont && m.far === 12 && !own(ref.known) && !!m.shelf[ref.known] &&
+          ref.gifts.hall.every(id => own(id) && m.shelf[id].src === 'gift') && ref.gifts.heresy.every(id => own(id) && m.shelf[id].src === 'gift') &&
+          ref.gifts.pearl.every(id => own(id) && m.shelf[id].src === 'gift') &&        // 一晚版（legacy）那趟也挑過王牌：送的四張一樣算擁有（只是沒有位數，不算打倒藏家）
+          own(ref.boss1) && m.shelf[ref.boss1].src === 'boss' && own(ref.bossRun) && m.shelf[ref.bossRun].src === 'boss' &&
+          (ref.boss2 === ref.boss1 || ref.boss2 === ref.bossRun || !own(ref.boss2));
+        // 審查 #2：一晚版（legacy）result 'clear'＝那晚打倒過藏家：那晚第一次認識、不是自己挑的那張王牌的頂點卡算擁有（src 'boss'）；'dead' 那晚不算
+        await page.evaluate(() => {
+          const C = window.DipLabContent;
+          localStorage.setItem('dipGameLab_v1', JSON.stringify({ v: 5, seen: {}, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: null,
+            runs: [{ seedKey: '20261020', runNo: 1, ace: 'pearl', result: 'clear', reached: 0, legacy: true }, { seedKey: '20261021', runNo: 1, ace: 'hall', result: 'dead', reached: 0, legacy: true }],
+            runSeq: {}, best: { far: 0, checkpoints: [], bestStreak: 0 }, relics: [], tutorialDone: true, prologueDone: true, lastAce: 'hall', lastBargain: null,
+            shelf: { [C.aces.pearl]: { at: '20261020#1', seen: true }, [C.aces.heresy]: { at: '20261020#1', seen: true }, [C.aces.hall]: { at: '20261021#1', seen: true } } }));
+        });
+        await openTitle(page, Q());
+        const lg = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, e = id => S.shelf[id] || null;
+          return { v: S.v, heresy: e(C.aces.heresy), pearl: e(C.aces.pearl), hall: e(C.aces.hall) }; });
+        const lgOk = lg.v === 6 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && !lg.hall.own;
+        record(53, size, ok && lgOk, `一晚版 clear 那晚的藏家王牌 ${JSON.stringify(lg.heresy)}、自己挑的 ${JSON.stringify(lg.pearl)}、dead 那晚 ${JSON.stringify(lg.hall)}；v${m.v}（localStorage 還是 v${m.stored}：下一次寫入才換）；認識那張 own=${own(ref.known)}；hall／heresy 送的 own；pearl（一晚版那趟）own=${ref.gifts.pearl.every(own)}；藏家王牌 ${ref.boss1} ${JSON.stringify(m.shelf[ref.boss1])}、這一趟打倒的 ${ref.bossRun} ${JSON.stringify(m.shelf[ref.bossRun])}、第 3 位就倒的那趟 ${ref.boss2} own=${own(ref.boss2)}；進行中的 run 留著 ${m.run}`);
+      } catch (e) { record(53, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 

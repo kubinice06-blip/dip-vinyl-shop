@@ -1,11 +1,11 @@
 # 台詞審稿：品味對決 v4（LINES-REVIEW）
 
 > 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、名牌、提示、規則卡、教學）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
-> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（45 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（70 句）。全部一致才會產生這份。
+> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（45 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（71 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 70、新 338（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 369（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -389,6 +389,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・sellPick | 賣這張 | 本規格新寫 | `shopUi.sellPick` |
 | （畫面字）・sellPickN | 賣這 {k} 張 | 本規格新寫 | `shopUi.sellPickN` |
 | （畫面字）・giftTag | 老闆送的 | 本規格新寫 | `shopUi.giftTag` |
+| （畫面字）・seedTag | 櫃裡帶來 | 本規格新寫 | `shopUi.seedTag` |
+| （畫面字）・seedNoSell | 從唱片櫃帶來的不能賣 | 本規格新寫 | `shopUi.seedNoSell` |
 | （畫面字）・bought | 《{album}》進包包，−${n} | 本規格新寫 | `shopUi.bought` |
 | （畫面字）・sold | 《{album}》賣掉，+${n} | 本規格新寫 | `shopUi.sold` |
 | （畫面字）・relicTitle | 櫃檯的配件 | 本規格新寫 | `shopUi.relicTitle` |
@@ -479,6 +481,55 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・def | 底氣：少扣 {n} | 本規格新寫 | `trial.notes.def` |
 | （畫面字）・eAtk | 他的品味：多扣 {n} | 本規格新寫 | `trial.notes.eAtk` |
 | （畫面字）・eDef | 他的底氣：少扣 {n} | 本規格新寫 | `trial.notes.eDef` |
+
+## 從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・pickTitle | 從唱片櫃帶唱片來開局 | 本規格新寫 | `seeds.ui.pickTitle` |
+| （畫面字）・pickSub | 開局 {n} 張：你帶的，加上老闆送的補滿（最多帶 {max} 張） | 本規格新寫 | `seeds.ui.pickSub` |
+| （畫面字）・pickCount | {n}／{max} | 本規格新寫 | `seeds.ui.pickCount` |
+| （畫面字）・pickTake | 帶這張 | 本規格新寫 | `seeds.ui.pickTake` |
+| （畫面字）・picked | ✓ 帶了 | 本規格新寫 | `seeds.ui.picked` |
+| （畫面字）・pickGo | 就這幾張 ▸ | 本規格新寫 | `seeds.ui.pickGo` |
+| （畫面字）・pickNone | 先不挑 | 本規格新寫 | `seeds.ui.pickNone` |
+| （畫面字）・pickAll | 全部 | 本規格新寫 | `seeds.ui.pickAll` |
+| （畫面字）・pickEmpty | 這個顏色最強的，還沒有收藏。 | 本規格新寫 | `seeds.ui.pickEmpty` |
+| （畫面字）・pickFull | 最多帶 {max} 張。先取消一張。 | 本規格新寫 | `seeds.ui.pickFull` |
+| （畫面字）・pickFullToast | 已經帶滿 {max} 張，先取消一張再換。 | 本規格新寫 | `seeds.ui.pickFullToast` |
+
+## 從唱片櫃挑牌開局・結算：這一趟帶走一張
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・keepTitle | 這一趟帶走一張 | 本規格新寫 | `seeds.ui.keepTitle` |
+| （畫面字）・keepSub | 收進「我的收藏」，下一趟可以帶來開局。 | 本規格新寫 | `seeds.ui.keepSub` |
+| （畫面字）・keepPick | 帶走這張 | 本規格新寫 | `seeds.ui.keepPick` |
+| （畫面字）・keepCount | {n} 張可以挑：進過包包的、客人掉的 | 本規格新寫 | `seeds.ui.keepCount` |
+| （畫面字）・keepLater | 先不帶 | 本規格新寫 | `seeds.ui.keepLater` |
+| （畫面字）・keepDone | 《{album}》收進「我的收藏」了 | 本規格新寫 | `seeds.ui.keepDone` |
+| （畫面字）・keepNone | 這一趟的唱片，「我的收藏」裡都有了。 | 本規格新寫 | `seeds.ui.keepNone` |
+| （畫面字）・fromBag | 進過包包 | 本規格新寫 | `seeds.ui.fromBag` |
+| （畫面字）・fromDrop | 客人掉的 | 本規格新寫 | `seeds.ui.fromDrop` |
+
+## 從唱片櫃挑牌開局・唱片櫃頁（我的收藏／認識過）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・shelfOwn | 我的收藏 {n} 張 | 本規格新寫 | `seeds.ui.shelfOwn` |
+| （畫面字）・shelfOwnSub | 可以帶來開局；王牌只展示。 | 本規格新寫 | `seeds.ui.shelfOwnSub` |
+| （畫面字）・shelfOwnEmpty | 還沒有收藏。挑過的王牌那組、每一趟帶走的，都會收進來。 | 本規格新寫 | `seeds.ui.shelfOwnEmpty` |
+| （畫面字）・shelfKnown | 認識過 {n}／{total} | 本規格新寫 | `seeds.ui.shelfKnown` |
+| （畫面字）・shelfKnownSub | 客人丟的、你收的、老闆送的都算。 | 本規格新寫 | `seeds.ui.shelfKnownSub` |
+| （畫面字）・storeTag | 店內取得 | 本規格新寫 | `seeds.ui.storeTag` |
+
+## 從唱片櫃挑牌開局・沒收的只算「認識」（領獎、包包滿拿出來、序章撿唱片）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・rewardNote | 點封面看唱片資訊、試聽。沒收的也都算認識了。 | 本規格新寫 | `seeds.ui.rewardNote` |
+| （畫面字）・bagOutMsg | 要放進來的是《{album}》。挑一張拿出來，它也算認識了。 | 本規格新寫 | `seeds.ui.bagOutMsg` |
+| （畫面字）・stakeSkipSub | 也算認識了 | 本規格新寫 | `seeds.ui.stakeSkipSub` |
 
 ## 無限試煉・結算與標題的紀錄
 
@@ -670,6 +721,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 原句 | 無止盡的品味試煉，開始了。 | `script.epilogueWin[10]` |
 | 原句 | 三十年的耳朵，不會騙人。 | `script.bossEnter[1].set.stamp` |
 | 原句 | 「讓我看看你的品味有幾兩重。」 | `script.bossEnter[1]` |
+| 店主 | 對方似乎掉落了什麼…… | `script.drop[0]` |
 | 店主 | 雨下個不停。巷子深處，有人輕輕推開那扇半掩的門，門上的鈴鐺清脆一響，隨即被雨聲吞沒。 | `intro.lines[0]` |
 | 店主 | 玻璃門晃了晃，映出推門的人。 | `intro.lines[1]` |
 | 店主 | 玻璃上的你 | `intro.title` |
