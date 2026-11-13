@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-13｜dip-vinyl-shop｜game-lab：殿堂禮物的 Miles 換成第一代經典五重奏《Cookin'》
+
+- **店主 11-13**：「Miles Davis 換成 miles 那張經典五重奏的」。卡池資料（seed＋Apple 試聽索引）裡第一代五重奏有試聽的只有 Prestige 四張（Cookin'／Relaxin'／Workin'／Steamin'），取最有名的《Cookin' with the Miles Davis Quintet》（1957，開場〈My Funny Valentine〉）；《'Round About Midnight》索引沒有試聽。
+- **改了什麼**：新卡 `miles-davis-cookin-with-the-miles-davis-quintet`（經典 4／冷門 2／硬蕊 2；封面 iTunes 300px、試聽索引、appleUrl；spotifyUrl 空＝畫面退回搜尋）加進 `cards.js`（卡池 289→290）；推薦語（tag 新）進 `tools/pitches.json`；殿堂禮物與教學第 2 手換成它；爵士箱改回原樣（Sketches of Spain 放回、Caetano／Monk 撤回）；`deck-lists.json` 的 `gift_hall` 同步成實際四張，原本 Scott Walker、Glenn-Copeland 移到新 `keep_pool` 群組（重烘時留在卡池）。`?v=60`。
+- **驗證**：tutorial.test 193,864、engine.test 2,271,069、shop.test 1,280 全過；check-content（卡 290）、check-covers、check-shops、lint-copy 通過；封面 200、試聽 206；e2e-prologue 52/52、e2e.spec 390×664 47/47、sim --n 1000 16/16。
+
 ### 2026-11-13｜dip-vinyl-shop｜game-lab：經典（殿堂）那組老闆送的四張換成有名的
 
 - **店主 11-13**：「經典的四張附贈專輯要有名一點，除了 Bowie 其他都沒看過還偏冷門」；「不要 Nick Drake……Miles Davis 好了」。
