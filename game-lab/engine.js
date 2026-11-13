@@ -82,7 +82,7 @@
 //              客人丟的、買的、特價箱的照舊半價。拿獎勵時包包滿要「拿掉一張」（take 的 dropId）不是賣、不收錢，照舊可以選
 //            run.shop（restock：newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng）：
 //              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
-//                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop pop classical world folk blues
+//                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues
 //                                            //   new picks 各 4–6 張（economy.stock；只抽普通／稀有／獨特）；照 SHOP_ORDER 上貨、全店同一輪不重複；
 //                                            //   不上你的王牌、包包裡的、特價箱的、頂點卡；display:true 的區（舊牆面）不賣
 //                relics: [ids],              // 櫃檯 2–3 件（economy.relicStock；relicShop.pool 扣掉身上的）
@@ -157,8 +157,9 @@
   const RARITY = ['common', 'rare', 'uncommon', 'epic', 'legendary', 'apex'];
   const FEATURE_RARITY = ['epic', 'legendary'];            // 門口牆最靠門那格（FEATURE 店長推薦精選）只放這兩種
   const SHELF_RARITY = ['common', 'rare', 'uncommon'];     // 其他箱子、新進、店長推薦：一般稀有度
-  // 上貨順序（全店同一輪不重複：先上的先拿）：FEATURE → 十一個分類箱 → 新進 → 店長推薦；不認得的鍵照字母排在最後
-  const SHOP_ORDER = ['feature', 'jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'pop', 'classical', 'world', 'folk', 'blues', 'new', 'picks'];
+  // 上貨順序（全店同一輪不重複：先上的先拿）：FEATURE → 十三個分類箱 → 新進 → 店長推薦；不認得的鍵照字母排在最後
+  //   v5 店面改版（店主 11-13）：POP 改 CITY POP（城市流行）、門口長櫃拆 INDIE ROCK／INDIE POP（接在民謠後面）、BLUES 搬到窗下矮櫃
+  const SHOP_ORDER = ['feature', 'jazz', 'tw', 'rock', 'elec', 'soul', 'hiphop', 'citypop', 'classical', 'world', 'folk', 'indierock', 'indiepop', 'blues', 'new', 'picks'];
 
   // ---------- RNG (mulberry32; state lives in the object so clones are deterministic) ----------
   function rng(st) {

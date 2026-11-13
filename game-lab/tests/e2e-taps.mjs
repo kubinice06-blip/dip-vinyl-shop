@@ -91,7 +91,15 @@ async function runScreen(browser, w, h, screenName) {
         const R = sh.hotRegion(h.id); if (!R) return;
         const w = R.box[2], hh = R.box[3]; let y0 = 1e9, y1 = -1;
         for (let j = 0; j < hh; j++) for (let i = 0; i < w; i++) if (R.m[j * w + i]) { y0 = Math.min(y0, j); y1 = Math.max(y1, j); }
-        const row = Math.round((y0 + y1) / 2); let x0 = 1e9, x1 = -1;
+        // 中間那一列；那一列被子熱點切開（後牆三櫃的封面帶：點了是唱片資訊，#1 另外測）就改用離中間最近、沒被切開、不比它窄的那一列
+        //   （v5 店面改版：窗下藍調櫃 h15，中間那列正好落在封面帶上）
+        const runOf = j => { let a = -1, b = -1, n = 0; for (let i = 0; i < w; i++) if (R.m[j * w + i]) { if (a < 0) a = i; b = i; n++; } return { n, solid: n > 0 && n === b - a + 1 }; };
+        let row = Math.round((y0 + y1) / 2);
+        if (!runOf(row).solid) {
+          const n0 = runOf(row).n;
+          for (let d = 1, found = false; !found && d <= y1 - y0; d++) for (const j of [row + d, row - d]) if (!found && j >= y0 && j <= y1 && runOf(j).solid && runOf(j).n >= n0) { row = j; found = true; }
+        }
+        let x0 = 1e9, x1 = -1;
         for (let i = 0; i < w; i++) if (R.m[row * w + i]) { x0 = Math.min(x0, i); x1 = Math.max(x1, i); }
         [x0 + 2, Math.round((x0 + x1) / 2), x1 - 2].forEach((i, k) => {
           const ax = R.box[0] + i, ay = R.box[1] + row, q = sh.hostCss(ax + 0.5, ay + 0.5);

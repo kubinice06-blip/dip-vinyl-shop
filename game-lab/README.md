@@ -90,7 +90,7 @@
 - **種子**：第二趟起（`startAgain`：老闆那句說完、走去特價箱之前）開挑種子面板：唱片櫃裡擁有、不是頂點卡的（封面＋三色星數、店內取得金框），點選最多 3 張 →「就這幾張 ▸」；三色篩選；「先不挑」。包包＝種子＋老闆送的（這次挑的王牌那組）補到 4 張（重複的話送的往下補）＋特價箱 3 張＝7 張。序章那一趟不挑。種子在包包裡標「櫃裡帶來」（包包條金框），不能賣回（先賣子面板選不了，點了說「從唱片櫃帶來的不能賣」；拿獎勵包包滿時照舊可以拿掉）。自動遊玩照最高星挑（`engine.seedPolicy`）。
 - **掉落**：獎勵候選＝他這一場真的丟過的（無限試煉換牌、加星後那一副；王牌不掉），記進 `run.drops`（沒拿的也算）。序章男子那張（Eminem，第 2 手一定打出來）也算客人掉落（店主 11-13）。
 - **一趟留一張**：結算「這一趟帶走一張 ▸」→ 面板：候選＝這一趟進過包包的（獎勵、買的、特價箱的；送的、種子不算）＋客人掉的，已經擁有的、頂點卡不列（`engine.keepCandidates`）；帶走＝擁有、金框「店內取得」，一趟只能一次（`engine.keepOne`、`run.kept`）。可以不帶。
-- **唱片櫃頁**：上面「我的收藏 n 張」（店內取得在前、再來藏家的王牌、老闆送的），下面「認識過 m／289」（原本那面牆＋篩選）。
+- **唱片櫃頁**：上面「我的收藏 n 張」（店內取得在前、再來藏家的王牌、老闆送的），下面「認識過 m／316」（原本那面牆＋篩選）。
 - 這一波不做：樂歷（種子格 3→4→5）、想要清單、主站登入、回寫主站。
 
 ## 平衡（FIXLIST 11，H5-1；`node game-lab/sim.mjs --n 3000`，結果在 `dev/sim-v4.json`）
@@ -138,33 +138,37 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 | 賣回 | 一律半價（特價箱的卡照特價的一半）；**老闆送的四張＋王牌不能賣**（FIXLIST 11 追加；`engine.isGift`，賣回面板照樣列出來、標「老闆送的」、不能選；引擎擋 `giftNoSell`）。客人丟的、買的照舊半價 |
 | 包包 | 最多 8 張；滿了要先半價賣一張。錢不夠但賣一張就夠＝可以「先賣一張」 |
 
-每輪的貨（引擎 `restock`，每輪開頭補貨；種子＝日期＋第幾趟＋第幾輪）：十一個分類箱、新進、店長推薦各 4–6 張，FEATURE 2–3 張；全店同一輪不重複、不上包包裡的。兩位客人之間點箱子＝走過去翻（一張大封面翻著看、點封面＝唱片資訊＋試聽；抽屜標題＝名牌英文＋中文，每張標稀有度與價）。序章與對決中點箱子＝老闆「打完再翻。」
+每輪的貨（引擎 `restock`，每輪開頭補貨；種子＝日期＋第幾趟＋第幾輪）：十三個分類箱（含 CITY POP、INDIE ROCK、INDIE POP）、新進、店長推薦各 4–6 張，FEATURE 2–3 張；全店同一輪不重複、不上包包裡的。兩位客人之間點箱子＝走過去翻（一張大封面翻著看、點封面＝唱片資訊＋試聽；抽屜標題＝名牌英文＋中文，每張標稀有度與價）。序章與對決中點箱子＝老闆「打完再翻。」
 
 配件會帶到下一趟（包括櫃檯買的，最多 3 件）；錢與用錢買的唱片整趟帶著走，輸了開新一趟才歸零。
 
 ## 店裡的箱子（FIXLIST 4／5；`bins.js`，`tools/bake-cards.mjs` 從 `tools/deck-lists.json` 產生）
 
 一類一箱。名牌寫英文短字，點了掛中文全名。分類＝卡的第一個曲風標籤對到 `genre-tree.json` 頂層十類；地區台灣一律 TW。
+**v5 店面改版（店主 11-13）**：中島的 POP 改成 CITY POP、門口長櫃拆成 INDIE ROCK／INDIE POP 兩櫃、BLUES 搬到窗下矮櫃。這三個新區看**子曲風**（規則 `sub`：`card-subgenres.json` 的路徑，烘焙時寫進卡的 `subs`），原本 POP 裡不算城市流行的移到 PICKS。
 
 | 位置 | 箱子 |
 |---|---|
 | 前排兩箱 | JAZZ 爵士、TW 台灣 |
-| 中島 8 箱 | ROCK 搖滾、ELEC 電子、SOUL 靈魂放克、HIP-HOP 嘻哈 R&B、POP 流行、CLASSICAL 古典、WORLD 世界、FOLK 民謠 |
-| 後牆矮櫃 | BLUES 藍調 |
+| 中島 8 箱 | ROCK 搖滾、ELEC 電子、SOUL 靈魂放克、HIP-HOP 嘻哈 R&B、CITY POP 城市流行（子曲風 city-pop）、CLASSICAL 古典、WORLD 世界、FOLK 民謠 |
+| 門口長櫃（左） | INDIE ROCK 獨立搖滾（子曲風 indie-rock／alt-rock／lo-fi／slowcore） |
+| 門口長櫃（右） | INDIE POP 獨立流行（子曲風 indie-pop／power-pop） |
+| 窗下矮櫃 | BLUES 藍調（7 欄，熟客在這裡翻） |
 | 左邊木箱（原 NOISE） | NEW 新進（不限分類） |
 | 門口牆最靠門那格 | FEATURE 店長推薦精選（金名牌；史詩／傳奇） |
 | 門口牆其餘 | PICKS 店長推薦（不限分類） |
 
-每一區的卡池、店裡畫出來的封面：`dev/bins-v4.md`。
+每一區的卡池：`tools/deck-lists.json` 的 `bin_<key>`；店裡畫出來的封面：`shops/dip.json`（`dev/bins-v4.md` 是 v4 當時的清單，沒有 v5 店面改版）。
+封面覆寫：`tools/cover-overrides.json`（店主 11-13：封面要正常版，不要 CD 版／再版系列；烘焙三條路都優先用它）。
 
 ## 檔案
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=56` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=61` |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、無限試煉（位數曲線、升級、中繼點）、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
-| `cards.js`、`bins.js` | 卡池與 14 區（十大類＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改） |
+| `cards.js`、`bins.js` | 卡池（316 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |
 | `ui.js`、`style.css` | 外殼：頂欄＋常駐舞台＋面板、標題、逐句執行器與序章面板、來客（第 n 位、聲望那顆）、進退場、挑唱片（掉落旁白）、升級三選一、打倒藏家、老闆說情、結算（一趟留一張）、挑種子、唱片櫃（我的收藏／認識過）、規則卡、⏸、店內熱點、存檔 v6（v5、v4 遷移） |
 | `duel.js`、`duel.css` | 對決盤面：提示句、蓋著的封套、牌桌兩張（主角）、小相剋圖例（字帶左邊）、結果句、手牌（疊成一排、點一張在那張打開＋屬性鈕）、品味／底氣小籤 |
 | `econ.js`、`econ.css` | 經濟介面：箱子抽屜（名牌＋中文、稀有度、價；FEATURE 金名牌與大稀有度標）、包包滿／錢不夠先賣、櫃檯配件、特價箱兩種模式（每格標價） |

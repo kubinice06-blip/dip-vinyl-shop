@@ -12,7 +12,7 @@
 //   無限試煉 C.trial（SPEC 無限試煉 §0：一輪 5 位的類別＝engine、你 12＝CFG.playerHp、回 3、客人 12／藏家 14、經驗與升級、三選一的字跟數字一致、中繼點、曲線旋鈕齊全）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字（你 12、回 3、客人＝C.trial.guestHp）、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字、
 //   無限試煉的畫面字（C.trial.ui／levelUp／notes、C.summary 結算）。
-//   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十四區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
+//   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十六區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
 //     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
@@ -410,18 +410,19 @@ export function contentProblems(C, E) {
 
 // ================================================================================================
 // 箱子（FIXLIST 4／5／8＋X／Y 契約；bins.js 是契約形狀＝有 feature 那一區時才查）。匯出給 engine.test 查 fixture
-//   十四區 { key, label, zh, pool, front }；分類箱的 pool 都是那一類（第一個曲風＝genre-tree 頂層、台灣地區＝tw）；FEATURE 只有史詩／傳奇；
+//   十六區 { key, label, zh, pool, front }（v5 店面改版：POP 改 CITY POP、加 INDIE ROCK／INDIE POP）；分類箱的 pool 都是那一類（第一個曲風＝genre-tree 頂層、台灣地區＝tw）；FEATURE 只有史詩／傳奇；
 //   沒有頂點卡；front 的卡都在；30 晚 newRun 每區都上得到 4–6 張（FEATURE 2–3）、全店不重複
 // ================================================================================================
 export const BIN_LABELS = { jazz: ['JAZZ', '爵士'], tw: ['TW', '台灣'], rock: ['ROCK', '搖滾'], elec: ['ELEC', '電子'], soul: ['SOUL', '靈魂放克'],
-  hiphop: ['HIP-HOP', '嘻哈 R&B'], pop: ['POP', '流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'], blues: ['BLUES', '藍調'],
+  hiphop: ['HIP-HOP', '嘻哈 R&B'], citypop: ['CITY POP', '城市流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'],
+  indierock: ['INDIE ROCK', '獨立搖滾'], indiepop: ['INDIE POP', '獨立流行'], blues: ['BLUES', '藍調'],
   new: ['NEW', '新進'], feature: ['FEATURE', '店長推薦精選'], picks: [null, '店長推薦'] };
 export function binsProblems(C, E) {
   const bad = [];
   const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
   const B = C.bins || {}, CARDS = C.cards || {};
   let tops = null; try { tops = JSON.parse(fs.readFileSync(path.join(ROOT, 'genre-tree.json'), 'utf8')).genres.map(g => g.id); } catch (_) { tops = null; }
-  ok(sameSet(Object.keys(B), Object.keys(BIN_LABELS)), 'bins 的鍵要剛好是契約的 14 區：' + Object.keys(BIN_LABELS).join(' ') + '（現在 ' + Object.keys(B).join(' ') + '）');
+  ok(sameSet(Object.keys(B), Object.keys(BIN_LABELS)), 'bins 的鍵要剛好是契約的 16 區：' + Object.keys(BIN_LABELS).join(' ') + '（現在 ' + Object.keys(B).join(' ') + '）');
   if (tops) ok(sameSet(Object.keys(E.GENRE_BIN), tops), 'engine GENRE_BIN 的鍵＝genre-tree.json 頂層十類');
   const CATS = Object.values(E.GENRE_BIN).concat(['tw']);
   for (const [k, [label, zh]] of Object.entries(BIN_LABELS)) {

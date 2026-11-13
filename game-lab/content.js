@@ -129,7 +129,7 @@
   C.rarityZh = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };   // CARD_GAME_DESIGN §5 的名字
   C.rarityTag = '店主';
   // 店裡的箱子（bins.js，由 tools/bake-cards.mjs 產生；沒有 bins.js 時是空的）。
-  //   X／Y 契約：每個 key { key, label, zh, pool, front }：jazz tw rock elec soul hiphop pop classical world folk blues new feature picks
+  //   X／Y 契約：每個 key { key, label, zh, pool, front }：jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues new feature picks（v5 店面改版：pop → citypop、加 indierock／indiepop）
   //   引擎照 pool 上這一輪的貨（engine restock，每輪開頭補貨）；front＝畫在道具上的封面（Y）；名牌英文 label、點了看 zh
   C.bins = {};
   (function () {

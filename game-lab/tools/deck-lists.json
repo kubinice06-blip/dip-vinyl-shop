@@ -1,5 +1,5 @@
 {
- "_doc": "keep_pool＝店主 11-13 殿堂禮物換成有名的之後、原本那兩張留在卡池（不再是禮物）。v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4；FIXLIST 4／5 改成店主網站的十大類＋TW＋NEW＋門口牆 FEATURE／PICKS）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區 {label（名牌英文）, zh（點了掛的中文全名）, rule（上架規則，見 tools/check-covers.mjs ruleMisses）}；bin_<key>＝那一區的卡池（正面封面在 shops/dip.json，烘焙時讀進 bins.js 的 front）。",
+ "_doc": "keep_pool＝店主 11-13 殿堂禮物換成有名的之後、原本那兩張留在卡池（不再是禮物）。v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4；FIXLIST 4／5 改成店主網站的十大類＋TW＋NEW＋門口牆 FEATURE／PICKS；v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP、BLUES 搬到窗下矮櫃，三個新區用子曲風規則 sub）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區 {label（名牌英文）, zh（點了掛的中文全名）, rule（上架規則，見 tools/check-covers.mjs ruleMisses）}；bin_<key>＝那一區的卡池（正面封面在 shops/dip.json，烘焙時讀進 bins.js 的 front）。",
  "_region": {
   "吉田美奈子-monochrome": "jp",
   "松田聖子-風立ちぬ": "jp",
@@ -15,7 +15,14 @@
   "王菲-浮躁": "zh",
   "ryoji-ikeda-1000-fragments": "jp",
   "susumu-yokota-sakura": "jp",
-  "miki-matsubara-pocket-park": "jp"
+  "miki-matsubara-pocket-park": "jp",
+  "寺尾聰-reflections": "jp",
+  "間宮貴子-love-trip": "jp",
+  "南佳孝-摩天楼のヒロイン": "jp",
+  "大滝詠一-niagara-moon": "jp",
+  "epo-down-town": "jp",
+  "亜蘭知子-浮遊空間": "jp",
+  "佐藤博-awakening": "jp"
  },
  "_bins": {
   "jazz": {
@@ -90,11 +97,13 @@
     ]
    }
   },
-  "pop": {
-   "label": "POP",
-   "zh": "流行",
+  "citypop": {
+   "label": "CITY POP",
+   "zh": "城市流行",
    "rule": {
-    "cat": "pop",
+    "sub": [
+     "pop/jp-pop/city-pop"
+    ],
     "rarity": [
      "common",
      "rare",
@@ -131,6 +140,39 @@
    "zh": "民謠",
    "rule": {
     "cat": "folk",
+    "rarity": [
+     "common",
+     "rare",
+     "uncommon"
+    ]
+   }
+  },
+  "indierock": {
+   "label": "INDIE ROCK",
+   "zh": "獨立搖滾",
+   "rule": {
+    "sub": [
+     "rock/indie-alt/indie-rock",
+     "rock/indie-alt/alt-rock",
+     "rock/indie-alt/lo-fi",
+     "rock/dream-post/slowcore"
+    ],
+    "rarity": [
+     "common",
+     "rare",
+     "uncommon"
+    ]
+   }
+  },
+  "indiepop": {
+   "label": "INDIE POP",
+   "zh": "獨立流行",
+   "rule": {
+    "sub": [
+     "pop/indie-pop",
+     "rock/indie-alt/indie-pop",
+     "pop/pop-rock/power-pop"
+    ],
     "rarity": [
      "common",
      "rare",
@@ -350,7 +392,6 @@
   "The Who|The Who Sell Out",
   "Mogwai|Come On Die Young",
   "PJ Harvey|To Bring You My Love",
-  "The Smiths|Hatful of Hollow",
   "Goblin|Profondo rosso",
   "はっぴいえんど|はっぴいえんど",
   "細野晴臣|Tropical Dandy",
@@ -401,19 +442,19 @@
   "billy woods|Church",
   "Public Enemy|The Evil Empire of Everything"
  ],
- "bin_pop": [
-  "宇多田ヒカル|First Love",
-  "Big Star|Radio City",
-  "Françoise Hardy|Tous les garçons et les filles",
-  "XTC|Skylarking",
-  "Scott Walker|Scott 3",
-  "Pet Shop Boys|Actually",
-  "Belle and Sebastian|If You're Feeling Sinister",
-  "松田聖子|風立ちぬ",
+ "bin_citypop": [
+  "Miki Matsubara|Pocket Park",
   "大貫妙子|Grey Skies",
-  "竹内まりや|Beginning",
   "吉田美奈子|Monochrome",
-  "久石譲|となりのトトロ サウンドトラック集"
+  "竹内まりや|Beginning",
+  "寺尾聰|Reflections",
+  "Anri|Timely!!",
+  "間宮貴子|Love Trip",
+  "南佳孝|摩天楼のヒロイン",
+  "大滝詠一|NIAGARA MOON",
+  "EPO|Down Town",
+  "亜蘭知子|浮遊空間",
+  "佐藤博|Awakening"
  ],
  "bin_classical": [
   "Herbert von Karajan|Beethoven: 9 Symphonies (1963)",
@@ -456,6 +497,34 @@
   "Mississippi John Hurt|Last Sessions",
   "Brigitte Fontaine & Areski Belkacem|Vous et nous",
   "Tenores di Bitti|S'amore 'e mama"
+ ],
+ "bin_indierock": [
+  "Yo La Tengo|And Then Nothing Turned Itself Inside-Out",
+  "Sonic Youth|Dirty",
+  "Galaxie 500|Today",
+  "Pavement|Crooked Rain, Crooked Rain",
+  "The Feelies|Crazy Rhythms",
+  "Built to Spill|Perfect from Now On",
+  "Modest Mouse|The Moon & Antarctica",
+  "The Breeders|Last Splash",
+  "R.E.M.|Murmur",
+  "Liz Phair|Exile in Guyville",
+  "Dinosaur Jr.|Where You Been",
+  "Silver Jews|American Water"
+ ],
+ "bin_indiepop": [
+  "Belle and Sebastian|If You're Feeling Sinister",
+  "Big Star|Radio City",
+  "The Smiths|Hatful of Hollow",
+  "Orange Juice|You Can't Hide Your Love Forever",
+  "The Go-Betweens|16 Lovers Lane",
+  "Aztec Camera|High Land, Hard Rain",
+  "The Sundays|Reading, Writing and Arithmetic",
+  "Saint Etienne|Foxbase Alpha",
+  "The Magnetic Fields|69 Love Songs",
+  "Camera Obscura|Let's Get Out of This Country",
+  "Alvvays|Antisocialites",
+  "The Field Mice|For Keeps"
  ],
  "bin_blues": [
   "Howlin' Wolf|Howlin' Wolf",
@@ -519,7 +588,6 @@
   "Cocteau Twins|Head Over Heels",
   "Stan Getz|Jazz Samba",
   "Shuggie Otis|Inspiration Information",
-  "Miki Matsubara|Pocket Park",
   "Gal Costa|Gal Costa",
   "Neil Young|Zuma",
   "雷光夏 Summer Lei|黑暗之光",
@@ -529,11 +597,15 @@
   "Harold Budd & Brian Eno|Ambient 2: The Plateaux of Mirror",
   "Fleetwood Mac|Then Play On",
   "Marcos Valle|Previsão do Tempo",
-  "Yo La Tengo|And Then Nothing Turned Itself Inside-Out",
-  "Galaxie 500|Today",
-  "Sonic Youth|Dirty",
   "林生祥|野蓮出庄",
-  "宇宙人|一萬小時"
+  "宇宙人|一萬小時",
+  "宇多田ヒカル|First Love",
+  "Françoise Hardy|Tous les garçons et les filles",
+  "XTC|Skylarking",
+  "Scott Walker|Scott 3",
+  "Pet Shop Boys|Actually",
+  "松田聖子|風立ちぬ",
+  "久石譲|となりのトトロ サウンドトラック集"
  ],
  "gold": [
   "Barney Wilen|Moshi",
