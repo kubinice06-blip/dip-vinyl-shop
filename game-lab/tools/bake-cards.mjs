@@ -23,6 +23,8 @@
 //   appleUrl    ← Apple 試聽索引的專輯 id＋slug＋國別（https://music.apple.com/<cc>/album/<slug>/<id>）；沒有就空（畫面上退回搜尋連結）
 //   spotifyUrl  ← dip-vinyl-worker /spotify-search，沒有再問 /spotify-album-link（店裡唱片櫃同一套）
 //   bandcampUrl ← dip-vinyl-worker /bandcamp-search，而且 bandcamp 子網域要對得上藝人名（搜尋常回別人的翻唱／現場頁，對不上就不烘）
+//   LINK_OVERRIDES（下面）：逐張固定某個平台連結（'' ＝不給鈕）；搜尋回的頁子網域對得上、其實是第三方再版頁的就寫在這裡。
+//     三條路都套（完整烘焙、--links-only 抓完連結之後、--covers-only 也照套），重烘不會把它抓回來。
 //
 // 來源（全部唯讀）：
 //   ../seed_cards.json                    三軸星數（seed 原值）、曲風、年份、apex tier
@@ -341,6 +343,20 @@ function bandcampMatches(url, artist, album) {
   if (!al || slug.indexOf(al) < 0) return false;
   return BC_EXTRA.test(slug.replace(al, '').replace(/^the/, ''));
 }
+// 平台連結逐張覆寫：{cardId: {appleUrl?, spotifyUrl?, bandcampUrl?}}；'' ＝不給那個鈕（唱片資訊退回搜尋連結）
+const LINK_OVERRIDES = {
+  // 審查 11-13：/bandcamp-search 回的 themilesdavisquintet.bandcamp.com 是第三方的 50 週年 K2 CD 再版頁，不是原版、也不是唱片公司官方
+  'miles-davis-cookin-with-the-miles-davis-quintet': { bandcampUrl: '' },
+};
+function applyLinkOverrides(cards) {
+  let n = 0;
+  for (const [id, o] of Object.entries(LINK_OVERRIDES)) {
+    if (!cards[id]) { console.log('LINK_OVERRIDES：' + id + ' 不在這次的卡裡（跳過）'); continue; }
+    for (const k of ['appleUrl', 'spotifyUrl', 'bandcampUrl']) if (k in o) cards[id][k] = o[k];
+    n++;
+  }
+  return n;
+}
 async function bakeLinks(cards, ids) {
   const stat = { apple: 0, spotify: 0, bandcamp: 0 };
   for (const id of ids) {
@@ -362,6 +378,7 @@ async function bakeLinks(cards, ids) {
   console.log('links: apple', stat.apple + '/' + ids.length, ' spotify', stat.spotify, ' bandcamp', stat.bandcamp);
 }
 if (!COVERS_ONLY) await bakeLinks(cards, ids);
+console.log('link overrides:', applyLinkOverrides(cards), '(LINK_OVERRIDES)');
 
 // ---- 寫檔 ----
 const FIELDS = ['id', 'artist', 'album', 'year', 'genres', 'region', 'c', 'o', 'h', 'tier', 'coverUrl', 'localCover', 'previewUrl', 'tags', 'pitch', 'gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs'];

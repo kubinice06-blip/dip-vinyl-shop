@@ -27,6 +27,8 @@
 //   23 買一張 → run.money 減價格；點抽屜外面關掉 → 來客重畫：錢那一格、包包 n/8 跟著變；存檔（localStorage）也是新的錢
 //   24 真點櫃檯 → 走到櫃檯前、配件面板（2–3 件）；✕ 關掉
 //   25 真點特價箱（已挑過）→ 買的模式（每格 $100–300、鈕「挑一到三張」）；✕ 關掉；整段主控台 0 錯誤、本機檔案沒有 4xx
+//   26 舊存檔（v5 店面改版前：這一輪的貨有 pop、沒有 citypop／indierock／indiepop）→ 載入時只補缺的區、丟掉 pop（engine.fixBins）；
+//      真點 INDIE ROCK → 抽屜有貨（不是「這一箱賣完了」）；其他區的貨原樣
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen } from './e2e-lib.mjs';
 
@@ -560,6 +562,30 @@ async function runIndex(browser, w, h) {
       record(25, size, d.kind === 'bargain' && d.mode === 'buy' && lab === '挑一到三張' && pok && closed && !errs.length && !bad.length,
         `真點特價箱 → ${d.kind}/${d.mode}「${lab}」；${ps}；✕ 關掉 ${closed}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}；本機 4xx ${bad.length}${bad.length ? '：' + bad.slice(0, 3).join(' / ') : ''}`);
     });
+    await T(26, async () => {
+      // 改版前的存檔：pop 有貨、三個新區沒有；爵士少一張（這一輪買走了，不能被補回來）
+      await seedNight(page, 5000);
+      const before = await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')), B = s.run.shop.bins;
+        B.pop = (B.citypop || []).slice(); delete B.citypop; delete B.indierock; delete B.indiepop; B.jazz = B.jazz.slice(1);
+        localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); return { jazz: B.jazz, rock: B.rock }; });
+      await openTitleI(page);
+      await jsClick(page, '[data-a=cont]');
+      if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客');
+      await sleep(1500);
+      const r0 = await page.evaluate(() => { const b = window.__lab.run.shop.bins, C = window.DipLabContent;
+        return { keys: Object.keys(b), want: Object.keys(C.bins).filter(k => !C.bins[k].display), jazz: b.jazz, rock: b.rock, ir: (b.indierock || []).length, ip: (b.indiepop || []).length, cp: (b.citypop || []).length }; });
+      const ht = await tapHotWhere(page, h => h.id === 'bin:indierock');
+      if (!ht) throw new Error('點不到 INDIE ROCK');
+      await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer'), null, { timeout: 12000 });
+      await sleep(400);
+      const d = await page.evaluate(() => ({ dbg: window.DipLabEcon.debug(), empty: ((document.querySelector('.ec-empty') || {}).textContent || '').trim() }));
+      await tapSel(page, '.ec-drawer [data-a=close]');
+      await page.waitForFunction(() => !window.DipLabEcon.isOpen() && !document.querySelector('.ec-drawer'), null, { timeout: 4000 }).catch(() => {});
+      const keysOk = !r0.keys.includes('pop') && JSON.stringify(r0.keys.slice().sort()) === JSON.stringify(r0.want.slice().sort());
+      const same = JSON.stringify([r0.jazz, r0.rock]) === JSON.stringify([before.jazz, before.rock]);
+      record(26, size, keysOk && same && r0.ir > 0 && r0.ip > 0 && r0.cp > 0 && d.dbg.kind === 'bin' && d.dbg.key === 'indierock' && d.dbg.ids.length === r0.ir && !d.empty,
+        `載入後的區 ${r0.keys.length}（pop 丟掉 ${!r0.keys.includes('pop')}、跟 bins.js 一樣 ${keysOk}）；補貨 INDIE ROCK ${r0.ir}／INDIE POP ${r0.ip}／CITY POP ${r0.cp} 張；爵士、搖滾原樣 ${same}；真點 INDIE ROCK → 抽屜 ${d.dbg.kind}/${d.dbg.key} ${d.dbg.ids.length} 張${d.empty ? '「' + d.empty + '」' : ''}`);
+    });
     return true;
   } finally {
     await ctx.close();
@@ -571,7 +597,7 @@ try {
   for (const [w, h] of SIZES) await runSize(browser, w, h);
   if (process.env.ECON_INDEX !== '0') {
     for (const [w, h] of SIZES) {
-      if (!(await runIndex(browser, w, h))) { console.log(`SKIP  index.html（${IURL}）還沒接上經濟介面（沒有 econ.js 或 __lab）：#21–#25 等整合後再跑`); break; }
+      if (!(await runIndex(browser, w, h))) { console.log(`SKIP  index.html（${IURL}）還沒接上經濟介面（沒有 econ.js 或 __lab）：#21–#26 等整合後再跑`); break; }
     }
   }
 } finally {

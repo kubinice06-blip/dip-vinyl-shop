@@ -153,7 +153,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 | 中島 8 箱 | ROCK 搖滾、ELEC 電子、SOUL 靈魂放克、HIP-HOP 嘻哈 R&B、CITY POP 城市流行（子曲風 city-pop）、CLASSICAL 古典、WORLD 世界、FOLK 民謠 |
 | 門口長櫃（左） | INDIE ROCK 獨立搖滾（子曲風 indie-rock／alt-rock／lo-fi／slowcore） |
 | 門口長櫃（右） | INDIE POP 獨立流行（子曲風 indie-pop／power-pop） |
-| 窗下矮櫃 | BLUES 藍調（7 欄，熟客在這裡翻） |
+| 窗下矮櫃 | BLUES 藍調（7 欄；站位在櫃子正前面偏左，熟客改站櫃檯後面的高櫃前） |
 | 左邊木箱（原 NOISE） | NEW 新進（不限分類） |
 | 門口牆最靠門那格 | FEATURE 店長推薦精選（金名牌；史詩／傳奇） |
 | 門口牆其餘 | PICKS 店長推薦（不限分類） |
@@ -165,7 +165,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=61` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=62` |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、無限試煉（位數曲線、升級、中繼點）、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
 | `cards.js`、`bins.js` | 卡池（316 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |

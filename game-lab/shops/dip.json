@@ -32,7 +32,7 @@
   "note": "pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給"
  },
  "cameras": {"full": {"y": 0, "h": 322, "minH": 250, "anchor": "bottom"}, "scene": {"y": 0, "h": 322, "minH": 240, "anchor": "bottom"}, "map": {"y": 0, "h": 322, "minH": 250, "anchor": "bottom"}, "reward": {"y": 40, "h": 282, "minH": 230, "anchor": "bottom"}, "strip": {"y": 228, "h": 90, "grow": {"panel": 584}}, "stripS": {"y": 256, "h": 62}, "night": {"y": 0, "h": 322, "minH": 290, "anchor": "top"}},
- "spots": {"out": [24, 78, true], "q1": [17, 77, true], "q2": [31, 76, true], "door": [24, 90], "leave": [24, 88], "atdoor": [40, 100], "in": [64, 170], "counter": [244, 176], "regular": [200, 104], "ref": [146, 304], "pay": [222, 224], "aisle": [72, 140], "near": [112, 292], "visit": [180, 292], "browse": [198, 240], "crateP": [120, 274], "dig1": [112, 274], "dig2": [168, 274], "dig3": [26, 276], "listen": [54, 186], "between": [146, 304], "frontleft": [60, 296], "map": [150, 300], "duelE": [90, 316], "duelP": [202, 316], "leaving": [170, 95], "mid": [96, 100], "sale": [44, 128], "wait": [28, 200]},
+ "spots": {"out": [24, 78, true], "q1": [17, 77, true], "q2": [31, 76, true], "door": [24, 90], "leave": [24, 88], "atdoor": [40, 100], "in": [64, 170], "counter": [244, 176], "regular": [272, 168], "ref": [146, 304], "pay": [222, 224], "aisle": [72, 140], "near": [112, 292], "visit": [180, 292], "browse": [198, 240], "crateP": [120, 274], "dig1": [112, 274], "dig2": [168, 274], "dig3": [26, 276], "listen": [54, 186], "between": [146, 304], "frontleft": [60, 296], "map": [150, 300], "duelE": [90, 316], "duelP": [202, 316], "leaving": [170, 95], "mid": [96, 100], "sale": [44, 128], "wait": [28, 200]},
  "nav": [
   [30, 100],
   [72, 110],
@@ -87,7 +87,7 @@
   {"type": "stringLights", "layer": "wall", "x0": 150, "x1": 286, "y": 10},
   {"type": "binCabinet", "id": "backbin-ir", "x": 44, "y": 90, "cols": 4, "d": 10, "h": 22, "rec": 8, "hotCovers": true, "front": ["yo-la-tengo-and-then-nothing-turned-itself-inside-out", "sonic-youth-dirty", "pavement-crooked-rain-crooked-rain", "the-feelies-crazy-rhythms"], "bin": {"key": "indierock", "label": "獨立搖滾", "stand": [72, 100]}, "label": "INDIE ROCK"},
   {"type": "binCabinet", "id": "backbin-ip", "x": 99, "y": 90, "cols": 4, "d": 10, "h": 22, "rec": 8, "hotCovers": true, "front": ["belle-and-sebastian-if-you-re-feeling-sinister", "big-star-radio-city", "the-smiths-hatful-of-hollow", "orange-juice-you-can-t-hide-your-love-forever"], "bin": {"key": "indiepop", "label": "獨立流行", "stand": [128, 100]}, "label": "INDIE POP"},
-  {"type": "binCabinet", "id": "winbin", "x": 162, "y": 90, "cols": 7, "d": 10, "h": 15, "rec": 8, "hotCovers": true, "front": ["howlin-wolf-howlin-wolf", "muddy-waters-folk-singer", "b-b-king-live-at-the-regal", "albert-king-born-under-a-bad-sign", "robert-johnson-the-complete-recordings", "john-lee-hooker-it-serve-you-right-to-suffer", "junior-kimbrough-all-night-long"], "bin": {"key": "blues", "label": "藍調", "stand": [150, 100]}, "label": "BLUES"},
+  {"type": "binCabinet", "id": "winbin", "x": 162, "y": 90, "cols": 7, "d": 10, "h": 15, "rec": 8, "hotCovers": true, "front": ["howlin-wolf-howlin-wolf", "muddy-waters-folk-singer", "b-b-king-live-at-the-regal", "albert-king-born-under-a-bad-sign", "robert-johnson-the-complete-recordings", "john-lee-hooker-it-serve-you-right-to-suffer", "junior-kimbrough-all-night-long"], "bin": {"key": "blues", "label": "藍調", "stand": [182, 100]}, "label": "BLUES"},
   {"type": "plant", "x": 270, "y": 93, "size": "big"},
   {"type": "shelving", "id": "shelving", "x": 228, "y": 150, "w": 56, "d": 9, "h": 45, "cards": ["ella-fitzgerald-mack-the-knife-ella-in-berlin", "steely-dan-countdown-to-ecstasy"], "section": "picks"},
   {"type": "binTable", "id": "isl-0a", "x": 98, "y": 154, "cols": 3, "d": 26, "h": 22, "rec": 8, "tabs": ["ROCK"], "rail": "L", "sections": 1, "front": ["the-rolling-stones-some-girls", "the-who-the-who-sell-out", "pj-harvey-to-bring-you-my-love"], "bin": {"key": "rock", "label": "搖滾", "stand": [86, 162]}},
@@ -115,6 +115,6 @@
  ],
  "actors": [
   {"id": "o", "at": "counter", "sprite": "owner"},
-  {"id": "r1", "at": "regular", "sprite": "girl", "back": true, "pose": "dig", "note": "熟客：背對鏡頭翻窗下的藍調櫃（v5 店面改版前是矮櫃；R-02／V06：原本站在門口牆 FEATURE 的站位前、會把你整個蓋掉，也會跟門邊等的客人疊在一起）；舞台 API 不動她"}
+  {"id": "r1", "at": "regular", "sprite": "girl", "back": true, "pose": "dig", "note": "熟客：背對鏡頭、站在老闆右手邊翻櫃檯後面的高櫃（v5 店面改版：原本站窗下矮櫃前 [200,104]，矮櫃改成 BLUES 藍調櫃後會把名牌和兩張封面蓋掉，藍調站位也只能擠到 INDIE POP 前面，所以搬來這裡；她在老闆身後半步、不擋老闆、高櫃上排兩張封面和櫃檯；R-02／V06：更早站門口牆 FEATURE 的站位前、會把你整個蓋掉）；舞台 API 不動她"}
  ]
 }

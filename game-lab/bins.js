@@ -1,7 +1,7 @@
 /* bins.js：由 tools/bake-cards.mjs 產生，請勿手改（改 tools/deck-lists.json 的 bin_<key>／_bins 或 shops/dip.json 的封面後重跑）。
  *   node game-lab/tools/bake-cards.mjs          （只改了店裡的封面：--covers-only 也會重寫 bins.js）
  * FIXLIST 4／5（X／Y 契約）：shops.<shop>.<key> = { key, label（名牌英文）, zh（點了掛的中文全名）, rule, pool（卡池）, front（店裡畫出來的封面，照道具順序） }。
- * 分類＝第一個曲風標籤對到十大類、台灣地區一律 tw；new／picks 不限分類；feature＝史詩＋傳奇。每一區都賣（沒有 display）。
+ * 分類＝第一個曲風標籤對到十大類、台灣地區一律 tw；citypop／indierock／indiepop＝子曲風（rule.sub，卡的 subs；v5 店面改版）；new／picks 不限分類；feature＝史詩＋傳奇。每一區都賣（沒有 display）。
  * jazz 12（看得到 3）、tw 12（看得到 3）、rock 11（看得到 3）、elec 12（看得到 3）、soul 12（看得到 3）、hiphop 12（看得到 3）、citypop 12（看得到 3）、classical 12（看得到 3）、world 12（看得到 3）、folk 12（看得到 3）、indierock 12（看得到 4）、indiepop 12（看得到 4）、blues 14（看得到 7）、new 12（看得到 3）、feature 23（看得到 4）、picks 24（看得到 13）
  */
 (function (root, factory) {

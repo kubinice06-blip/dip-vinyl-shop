@@ -621,6 +621,23 @@ section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨�
     const want = C.bargain.pool.filter(id => !a.bag.includes(id));
     ok(a.shop.bargain.length === Math.min(6, want.length) && a.shop.bargain.every(id => want.includes(id)) && a.shop.bargainPicked && !EN.canBargainPick(a), 'round 2 bargain crate = pool minus bag (2 per color), no free pick', a.shop.bargain);
     for (const k of Object.keys(a.shop.bins)) if (a.shop.bins[k].some(id => a.bag.includes(id))) ok(false, 'restock excludes the bag'); }
+  // 舊存檔（v5 店面改版前：有 pop、沒有 citypop／indierock／indiepop）→ fixBins 只補缺的區（＝這一輪 restock 本來會上的、扣掉別區有的與包包裡的）、丟掉 pop、其他區不動
+  { const fresh = EN.newRun(C, { seedKey: 'old-save', runNo: 2, ace: 'hall' }); EN.choose(fresh, C, EN.bargainPolicy(fresh, C));
+    const old = JSON.parse(JSON.stringify(fresh)), B = old.shop.bins;
+    B.pop = (B.citypop || []).slice(); delete B.citypop; delete B.indierock; delete B.indiepop;
+    if (B.jazz && B.jazz.length) B.jazz.pop();                       // 這一輪已經買走一張爵士：不能被補回來
+    const jazz0 = B.jazz.slice(), rock0 = B.rock.slice();
+    const twin = JSON.parse(JSON.stringify(old));
+    ok(EN.fixBins(old, C) === true, 'fixBins: old save → changed');
+    eq(Object.keys(old.shop.bins), Object.keys(fresh.shop.bins), 'fixBins: keys = current bins in SHOP_ORDER (pop dropped, citypop／indierock／indiepop back)');
+    ok(!('pop' in old.shop.bins), 'fixBins: stale pop dropped');
+    for (const k of ['citypop', 'indierock', 'indiepop']) ok(old.shop.bins[k].length > 0 && old.shop.bins[k].every(id => fresh.shop.bins[k].includes(id)), 'fixBins: ' + k + ' restocked from this round\'s restock', old.shop.bins[k]);
+    eq([old.shop.bins.jazz, old.shop.bins.rock], [jazz0, rock0], 'fixBins: bins that were already there are untouched (bought stays bought)');
+    const all = Object.values(old.shop.bins).flat();
+    ok(new Set(all).size === all.length && !all.some(id => old.bag.includes(id)), 'fixBins: no duplicates across bins, nothing from the bag');
+    EN.fixBins(twin, C); eq(twin.shop.bins, old.shop.bins, 'fixBins: deterministic (same save → same fill)');
+    eq([old.rng, old.shop.relics, old.shop.bargain], [fresh.rng, fresh.shop.relics, fresh.shop.bargain], 'fixBins: run.rng, counter, bargain crate untouched');
+    ok(EN.fixBins(old, C) === false && EN.fixBins(fresh, C) === false, 'fixBins: current save → no change'); }
   // 免費挑三張只在第 1 位之前（裁定 4）：沒挑就跳到第 2 位 → 不能挑
   { const r = EN.newRun(C, { seedKey: 'bp1', runNo: 2, ace: 'pearl' }); ok(EN.canBargainPick(r), 'pos 1 → can pick'); r.pos = 2; r.idx = 1; ok(!EN.canBargainPick(r), 'pos 2 → cannot pick (even if never picked)'); }
   for (let s = 1; s <= 50; s++) {
