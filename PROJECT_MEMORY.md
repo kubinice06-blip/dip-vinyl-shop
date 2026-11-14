@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-14｜dip-vinyl-shop｜主站封面版本清查（換回正常原版）——進行中
+
+- **店主 11-13／11-14**：「有些封面用成了 CD 版或其他特別版（Argerich 拉三、石頭記），我只要正常版就好」→「全面清查」。
+- **範圍**：card_catalog 23,634 筆（seed 22,302 張）。封面來源：CAA release-group 13,007、Apple 5,639、Spotify 1,909、CAA release 1,230、Bandcamp 648、Discogs 619。
+- **流程**（scratch `v5/siteaudit/`，規則 `RULES.md`＝08-30 取捨 0–3＋這次的五種問題）：MB/CAA 補掃（舊 edition-scan 只涵蓋 3,750 組）→ 看圖初判（Apple／Spotify 6,888 張：可疑 817）→ 參考圖對照（Discogs／CAA，抽樣發現光靠記憶判 keep 會漏約 11%）→ 挑原版（CAA 同 RG 版本／Discogs 版本）→ 找圖 → 兩個角度對抗驗證（設計、品質都通過才收）→ 回讀 Firestore 現值沒被改過才寫。
+- **已套用**：第 1 批 31 張（ok-single 晚期試跑；全是 Discogs 原版掃描）。Firestore 31/31 回讀一致；KV cover6 12 張同步（其餘 19 張 KV 本來沒有鍵）；Discogs 名冊 +31（631→662）。紀錄 `scripts/cover-audit/data/edition-fix-20261114.json`。
+- **主要檔案**：`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`scripts/cover-audit/data/edition-fix-20261114.json`。
+
 ### 2026-11-14｜dip-vinyl-shop｜game-lab：The Smiths 移到 INDIE ROCK＋Argerich《Rach 3》年份改 1995
 
 - **店主 11-14**：「The Smiths 不可能是 indie pop，是還沒整理還是弄錯了？」——主線分錯（它的子曲風同時有 alt-rock 與 indie-pop，上次被放進 INDIE POP）。
