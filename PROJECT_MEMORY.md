@@ -1,6 +1,6 @@
 # dip vinyl 專案備忘錄
 
-### 2026-11-14｜dip-vinyl-shop｜主站封面版本清查（換回正常原版）——進行中
+### 2026-11-14｜dip-vinyl-shop｜主站封面版本清查（換回正常原版）——863 張已換；Discogs 參考圖對照約 2,855 張待下一個工作階段
 
 - **店主 11-13／11-14**：「有些封面用成了 CD 版或其他特別版（Argerich 拉三、石頭記），我只要正常版就好」→「全面清查」。
 - **範圍**：card_catalog 23,634 筆（seed 22,302 張）。封面來源：CAA release-group 13,007、Apple 5,639、Spotify 1,909、CAA release 1,230、Bandcamp 648、Discogs 619。
@@ -9,6 +9,9 @@
 - **第 2 批 258 張**（全是 CAA 原版，網址用 `front-1200`，避免原圖十幾 MB 拖慢載入）：Apple／Spotify 可疑卡與 MB 補掃 CAA 組。常見問題：配錯專輯（同名別團、精選、現場盤、演奏版、混音帶）、Deluxe／週年版另做的封面或加印字樣、OBC／OJC／RVG 系列標、重發另做的設計。Firestore 258/258 回讀一致；KV 241 張同步（17 張 KV 沒有鍵）。
 - **第 3 批 204 張**（CAA 190＋Discogs 14）：Apple／Spotify 可疑卡第二批與補驗。Firestore 204/204 回讀一致；KV 192 張；Discogs 名冊 +14。Taylor Swift《1989》提議的那筆 MB 標 Bootleg，主線改用同設計的官方 US CD。累計 493 張。
 - **第 4 批 165 張**（CAA 122＋Discogs 43）：參考圖對照（Discogs／CAA 主圖 vs 現用圖）抓到的不同設計、MB 補掃的晚期／重發 RG 組，以及前幾輪「沒有可用候選」的重新找圖。Firestore 165/165 回讀一致；KV 133 張（32 張 KV 沒有鍵）；Discogs 名冊 +43（676→719）。另查已換上與待換的 622 張長寬比：只有 2 張超過 1.06，裁成方形字都完整。累計 658 張。
+- **第 5 批 205 張**（CAA 93＋Discogs 112）：被否決的再找一輪（附審查意見，最後一輪）與 Apple／Spotify 組「沒有可用候選」的找圖。Firestore 205/205 回讀一致；KV 157 張（48 張 KV 沒有鍵）；Discogs 名冊 +112（719→831）。主線裁定 2 張：Tommy Flanagan《Overseas》（唯一否決理由是 /front 16.9MB，套用一律走 front-1200）、姚蘇蓉《今天不回家》（兩輪設計審查矛盾，依取捨 0 取重發／復刻／展覽原件都用的黃底版）。**累計 863 張**。
+- **沒做完、交接**：`scripts/cover-audit/edition-20261114/`（流程腳本、RULES、HANDOFF、壓縮的狀態檔）。(1) Discogs 參考圖對照約 2,855 張沒跑完（背景 worker 2 小時上限被停；1,217 筆是 Discogs 擠爆造成的假查無，匯出時已清掉待重查）；(2) 573 張 Apple／Spotify 封面完全沒有參考圖；(3) 最後一輪仍沒解決 92 張（`state/unresolved.json`，多半是原版只有實拍／小圖，或查證後 NOW 就是通行版）；(4) 卡片身分疑點 4 張（`state/identity-notes.json`，例如 Brendel《Diabelli》封面是 Vox 錄音、試聽是 1988 Philips）。
+- **待店主決定**：Lennon／Ono《Two Virgins》維持牛皮紙袋版（原版全裸封面沒有自動換）；Joni Mitchell《Don Juan's Reckless Daughter》已換回原版（原版封面有 blackface 造型）。
 - **主要檔案**：`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`scripts/cover-audit/data/edition-fix-20261114.json`。
 
 ### 2026-11-14｜dip-vinyl-shop｜game-lab：The Smiths 移到 INDIE ROCK＋Argerich《Rach 3》年份改 1995
