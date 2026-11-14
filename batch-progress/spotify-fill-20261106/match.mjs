@@ -20,7 +20,7 @@ export const normalize = s => fold(String(s || ''))
 
 const EDITION = /(remaster|remastered|remasterise|deluxe|expanded|edition|anniversary|bonus|version|reissue|\bmono\b|\bstereo\b|explicit|special|legacy|collector|digital|\d{4}\s*mix|original\s*recording|soundtrack|original\s*score|motion\s*picture|\d+(st|nd|rd|th)\s*album|the\s*\w+\s*album|rudy\s*van\s*gelder|rvg)/i;
 // 「另一種作品」：卡名沒有、Spotify 名卻有 → 不是同一張
-export const OTHER_WORK = /\b(live|e\.?\s?p\.?|single|demos?|instrumentals?|karaoke|remix(es|ed)?|acoustic|beats|taylor'?s\s*version|re-?recorded|sped\s*up|slowed|lullab(y|ies)|tribute|best\s*of|greatest\s*hits|the\s*hits|a\s*cappella|covers?|commentary|elemental\s*mix(es)?|piano\s*version|8-?bit|reimagined|redux|unplugged|sessions?)\b/i;
+export const OTHER_WORK = /\b(instrumentales?|highlights|live|e\.?\s?p\.?|single|demos?|instrumentals?|karaoke|remix(es|ed)?|acoustic|beats|taylor'?s\s*version|re-?recorded|sped\s*up|slowed|lullab(y|ies)|tribute|best\s*of|greatest\s*hits|the\s*hits|a\s*cappella|covers?|commentary|elemental\s*mix(es)?|piano\s*version|8-?bit|reimagined|redux|unplugged|sessions?)\b/i;
 
 export const stripEdition = raw => {
   let s = (raw || '').trim();

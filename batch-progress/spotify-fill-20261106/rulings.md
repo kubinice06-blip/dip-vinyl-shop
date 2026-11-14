@@ -44,3 +44,7 @@
 
 ## 每日批次 2026-11-13（第 8 批，395 次）
 - 找到 167（exact 142、edition 25），全收；edition 都是同張的重製（RVG／Keepnews／OJC）／擴充版。
+
+## 每日批次 2026-11-14（第 9 批，395 次）
+- 找到 138（exact 117、edition 21），收 136。**不收** Michel Legrand《Les Demoiselles de Rochefort》→「Version instrumentale」純音樂版（法文 instrumentale 漏網）；Andrew Lloyd Webber《Cats》1981 原卡司 → 2019 電影版 Highlights。兩張進 rejected.json。
+- 規則補強：OTHER_WORK 加 instrumentale(s)、highlights。回頭複查已寫入 2,071 條，無同類漏網。
