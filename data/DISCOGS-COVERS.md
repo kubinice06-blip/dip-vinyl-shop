@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **662** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 420、已退回 1）。
+共 **676** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 434、已退回 1）。
 最後更新：2026-11-14
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -1391,11 +1391,14 @@
 | Rien Djamain 《Api Asmara》 | [#10804495](https://www.discogs.com/release/10804495) | 1975 | Hidayat | 1-1007 | 年份 1975、廠牌 Hidayat、目錄號 1-1007 | pending |
 | Titiek Puspa 《Doa Ibu》 | [#9555592](https://www.discogs.com/release/9555592) | 1965 | Irama | LPI 17580 | 年份 1965、廠牌 Irama、目錄號 LPI 17580 | pending |
 
-## edition-20261114（31 張）
+## edition-20261114（45 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | A.L. Lloyd 《Leviathan!》 | [#1998706](https://www.discogs.com/release/1998706) | 1967 | Topic Records | 12T174 | 年份 1967、廠牌 Topic Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| All Saved Freak Band 《My Poor Generation》 | [#6184736](https://www.discogs.com/release/6184736) | 1976 | Rock The World Enterprises | 730605 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Andraé Crouch & the Disciples 《Live at Carnegie Hall》 | [#1680570](https://www.discogs.com/release/1680570) | 1973 | Light Records | LS-5602-LP | 年份 1973、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Art Bears 《Hopes and Fears》 | [#423998](https://www.discogs.com/release/423998) | 1978 | Rē Records | Rē 2188 | 年份 1978、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Bobby Timmons 《In Person》 | [#11061008](https://www.discogs.com/release/11061008) | 1961 | Riverside Records | RLP 391 | 年份 1961、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Bukka White 《Mississippi Blues》 | [#21047626](https://www.discogs.com/release/21047626) | 1968 | Takoma | B-1001 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dakota Staton 《The Late, Late Show》 | [#17485840](https://www.discogs.com/release/17485840) | — | Capitol Records | T 876 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
@@ -1407,6 +1410,9 @@
 | Jule Styne 《Gypsy》 | [#2165587](https://www.discogs.com/release/2165587) | 1959 | Columbia Masterworks | OL 5420 | 年份 1959、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Little Milton 《If Walls Could Talk》 | [#1558368](https://www.discogs.com/release/1558368) | 1970 | Checker | LPS 3012 | 年份 1970、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Los Kjarkas 《Canto a la Mujer de Mi Pueblo》 | [#4445486](https://www.discogs.com/release/4445486) | 1983 | Lauro Records | LPLR/S-1408 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| M’bilia Bel 《Boya Ye》 | [#2381003](https://www.discogs.com/release/2381003) | 1985 | Genidia | GEN 116 | 年份 1985、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Marc Barreca 《Twilight》 | [#105794](https://www.discogs.com/release/105794) | 1980 | Palace Of Lights | POL. 05/1000 | 年份 1980、廠牌 Palace Of Lights、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Marion Brown 《Porto Novo》 | [#3734900](https://www.discogs.com/release/3734900) | 1969 | Polydor | 583 724 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Max Roach 《Deeds, Not Words》 | [#4749292](https://www.discogs.com/release/4749292) | 1958 | Riverside Records | RLP 12-280 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Michigan & Smiley 《Rub-A-Dub Style》 | [#299871](https://www.discogs.com/release/299871) | 1979 | Studio One | SOLP 1138 | 年份 1979、廠牌 Studio One、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Muzsikás 《Máramaros: The Lost Jewish Music of Transylvania》 | [#1520519](https://www.discogs.com/release/1520519) | — | Hannibal Records | HNCD 1373 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
@@ -1420,8 +1426,16 @@
 | Sonny Terry & Brownie McGhee 《At Sugar Hill》 | [#14193976](https://www.discogs.com/release/14193976) | 1962 | Fantasy | 3340 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Thad Jones & Mel Lewis 《Live at the Village Vanguard》 | [#2050749](https://www.discogs.com/release/2050749) | 1967 | Solid State Records (2) | SS 18016 | 年份 1967、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Dells 《There Is》 | [#7242835](https://www.discogs.com/release/7242835) | 1968 | Cadet | LPS 804 | 年份 1968、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| The Group for Contemporary Music 《Wuorinen: Six Trios》 | [#3823490](https://www.discogs.com/release/3823490) | 1993 | Koch International Classics | 3-7123-2 H1 | 年份 1993、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| The Harmonizing Four 《Working for the Lord》 | [#7523131](https://www.discogs.com/release/7523131) | 1976 | Jewel Records (3) | LPS 0124 | 年份 1976、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Moonglows 《Look! It's the Moonglows》 | [#1012562](https://www.discogs.com/release/1012562) | 1958 | Chess | LP-1430 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Three 6 Mafia 《Mystic Stylez》 | [#435045](https://www.discogs.com/release/435045) | 1995 | Prophet Entertainment | PCD 4401 | 年份 1995、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tito Puente 《Top Percussion》 | [#1712091](https://www.discogs.com/release/1712091) | 1958 | RCA Victor | LSP-1617 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| TLC 《TLC》 | [#10466424](https://www.discogs.com/release/10466424) | 2017 | 852 Musiq | TLC011 | 年份 2017、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Todd Rundgren 《Todd》 | [#380303](https://www.discogs.com/release/380303) | 1974 | Bearsville | 2 BR 6952 | 年份 1974、目錄號 2 BR 6952、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Tom Rush 《The Circle Game》 | [#1610807](https://www.discogs.com/release/1610807) | 1968 | Elektra | EKS-74018 | 年份 1968、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Tuxedomoon 《Half-Mute》 | [#3676548](https://www.discogs.com/release/3676548) | 1980 | Ralph Records | TX8004-L | 年份 1980、廠牌 Ralph Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| U-Roy 《Rasta Ambassador》 | [#865514](https://www.discogs.com/release/865514) | 1977 | Virgin | V 2092 | 年份 1977、廠牌 Virgin、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Various Artists 《The Iron Muse: A Panorama of Industrial Folk Song》 | [#2573166](https://www.discogs.com/release/2573166) | 1964 | Topic Records | 12T86 | 廠牌 Topic Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | かぐや姫 《かぐや姫さあど》 | [#31825730](https://www.discogs.com/release/31825730) | 2007 | Crown (3) | CRCP-20395 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | 中原めいこ 《Mint》 | [#11149146](https://www.discogs.com/release/11149146) | 2012 | Eastworld | TOCT-12009 | 廠牌 Eastworld、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |

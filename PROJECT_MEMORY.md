@@ -7,6 +7,7 @@
 - **流程**（scratch `v5/siteaudit/`，規則 `RULES.md`＝08-30 取捨 0–3＋這次的五種問題）：MB/CAA 補掃（舊 edition-scan 只涵蓋 3,750 組）→ 看圖初判（Apple／Spotify 6,888 張：可疑 817）→ 參考圖對照（Discogs／CAA，抽樣發現光靠記憶判 keep 會漏約 11%）→ 挑原版（CAA 同 RG 版本／Discogs 版本）→ 找圖 → 兩個角度對抗驗證（設計、品質都通過才收）→ 回讀 Firestore 現值沒被改過才寫。
 - **已套用**：第 1 批 31 張（ok-single 晚期試跑；全是 Discogs 原版掃描）。Firestore 31/31 回讀一致；KV cover6 12 張同步（其餘 19 張 KV 本來沒有鍵）；Discogs 名冊 +31（631→662）。紀錄 `scripts/cover-audit/data/edition-fix-20261114.json`。
 - **第 2 批 258 張**（全是 CAA 原版，網址用 `front-1200`，避免原圖十幾 MB 拖慢載入）：Apple／Spotify 可疑卡與 MB 補掃 CAA 組。常見問題：配錯專輯（同名別團、精選、現場盤、演奏版、混音帶）、Deluxe／週年版另做的封面或加印字樣、OBC／OJC／RVG 系列標、重發另做的設計。Firestore 258/258 回讀一致；KV 241 張同步（17 張 KV 沒有鍵）。
+- **第 3 批 204 張**（CAA 190＋Discogs 14）：Apple／Spotify 可疑卡第二批與補驗。Firestore 204/204 回讀一致；KV 192 張；Discogs 名冊 +14。Taylor Swift《1989》提議的那筆 MB 標 Bootleg，主線改用同設計的官方 US CD。累計 493 張。
 - **主要檔案**：`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`scripts/cover-audit/data/edition-fix-20261114.json`。
 
 ### 2026-11-14｜dip-vinyl-shop｜game-lab：The Smiths 移到 INDIE ROCK＋Argerich《Rach 3》年份改 1995
