@@ -1,0 +1,539 @@
+{
+ "note": "2026-11-14 主站封面版本清查（店主：「有些封面用成了 CD 版或其他特別版，我只要正常版」）。每筆是已寫進 Firestore card_catalog.coverUrl 的修正：from＝原本的圖、to＝換上的原版圖；verify＝兩個審查角度（設計、品質）的理由。KV cover6 有這張卡的鍵時同步換 imageUrl（保留 spotifyUrl）。用 Discogs 圖的卡同時登記在 data/discogs-cover-registry.json（batch edition-20261114）。",
+ "batches": {
+  "b1": {
+   "date": "2026-11-14",
+   "count": 31,
+   "scope": "ok-single 晚期 181 組試跑（舊掃描 edition-scan.json）"
+  }
+ },
+ "changes": [
+  {
+   "key": "reverend gary davis|say no to the devil",
+   "artist": "Reverend Gary Davis",
+   "album": "Say No to the Devil",
+   "year": 1962,
+   "from": "https://coverartarchive.org/release-group/583d4370-05df-39eb-b21c-5bfa7029cba0/front",
+   "to": "https://i.discogs.com/GDf_ba8ljzeCdzNivJ3Lbq7Rv9cToCesJss3vHJPjUk/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NDE2/ODM1LTE2MjU3MjQ4/NTktOTk0Ny5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 19416835,
+   "why": "原版是 1962 Bluesville BV 1049：上方紅色條印 bluesville / Reverend Gary Davis，左側紅字直排 say no to the devil，黑白戴墨鏡特寫。NOW 是同一套設計，只是左下角多了 OBC 系列 logo 方塊",
+   "verify": {
+    "design": "NOW 左下角加了 OBC 方塊。NEW 是 1962 Bluesville BV 1049 同一套設計，平面掃描，只有輕微磨痕，跟 REF 的 master 主圖一致。",
+    "quality": "NEW 其實是舊封套實拍，不是提議說的平掃：紅色標題帶上緣有幾塊白色擦痕，右下角也有小磨損；不過畫面正、沒露背景，縮到卡片大小幾乎看不出來，算可接受。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "johnny shines|standing at the crossroads",
+   "artist": "Johnny Shines",
+   "album": "Standing at the Crossroads",
+   "year": 1971,
+   "from": "https://coverartarchive.org/release-group/8b55ea02-fcf4-3a1a-ad2a-fe33040445b3/front",
+   "to": "https://i.discogs.com/jUzMBIuy_piZHIaujax7XKbAaMMiyhcQot5kawV1sWY/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NDQ1/NjktMTM4MDg1MTMx/OS01ODYyLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 3844569,
+   "why": "通行的 LP 封面是滿版棕褐色單色照（Johnny Shines 抱吉他），頂端一行白字 JOHNNY SHINES STANDING AT THE CROSSROADS。NOW 是 1995 Testament CD 重做的版面（深藍照＋大字標題＋TESTAMENT RECORDS 框＋底部宣傳字）",
+   "verify": {
+    "design": "NOW 是 1995 CD 另做的版面。首版雖然是黃底內嵌照，但 1972、1980 和 2013 再版都用棕褐滿版照，流傳最廣。NEW（1972 再版）是那一套最乾淨的平面掃描。",
+    "quality": "NEW 是乾淨的棕褐色平掃，T-2221／STEREO 都是原版就有的字，沒有貼紙、反光，裁切也完整，比 NOW 清楚。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "little milton|if walls could talk",
+   "artist": "Little Milton",
+   "album": "If Walls Could Talk",
+   "year": 1970,
+   "from": "https://coverartarchive.org/release-group/76362adc-9153-3bbd-b38e-58d54102cd3e/front",
+   "to": "https://i.discogs.com/fqVGsE5w-KAeRPjFbZmvfAwFn0BeupORT6zBi9ibrsM/rs:fit/g:sm/q:90/h:582/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTgz/NjgtMTU2NzYyMDE0/OC0zOTkzLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1558368,
+   "why": "原版是 1970 Checker LPS 3012：白底，上方藍色手寫體 Little Milton / If Walls Could Talk，下面三張 Little Milton 演唱照斜疊。NOW 是後來數位發行的重做版面（大寫 m 橘色塊＋雙色調照片＋內嵌小照）",
+   "verify": {
+    "design": "NOW 是後來重做的版面。NEW 是 1970 Checker LPS 3012 白底藍字加三張演唱照的原版，跟 REF 縮圖一致，掃描乾淨。",
+    "quality": "NEW 是二手封套掃描，白底有點灰、有零星小斑點，但沒有側標、貼紙或膜光，也沒歪斜或露背景，字清楚，縮到卡片大小看起來正常。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "silvio rodríguez|rabo de nube",
+   "artist": "Silvio Rodríguez",
+   "album": "Rabo de Nube",
+   "year": 1980,
+   "from": "https://coverartarchive.org/release-group/52518151-100a-3721-be6c-378fcacde5d6/front",
+   "to": "https://i.discogs.com/UMovT1P6AIRBtNqipCoUTvkn6xhQ3lVhjxHkTcJi7zI/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTE2/NDktMTU3MTc4OTgz/OC0zNzAzLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 2451649,
+   "why": "原版是整面馬賽克畫（橘色雲團、閃電、白色山坡小屋），左上 estereo、頂端 VOLUMEN I；NOW 把原畫縮小嵌進紅框。",
+   "verify": {
+    "design": "NOW 把原畫縮進紅框，加了 fonomusic 抬頭和 CD-8033。NEW 是 1979 古巴 Areito 發行國首版，滿版馬賽克畫，平面掃描乾淨，跟 REF 一致。",
+    "quality": "NEW 是平整的 Areito LP 掃描，白邊是原版就有的，只有邊緣輕微舊痕；沒有貼紙、反光或內嵌框，清晰度跟 NOW 差不多。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "tito puente|top percussion",
+   "artist": "Tito Puente",
+   "album": "Top Percussion",
+   "year": 1958,
+   "from": "https://coverartarchive.org/release-group/19e784fc-d2e4-3db0-aeda-577dcba1dcd5/front",
+   "to": "https://i.discogs.com/bhlWOIgH4M2b4POipIjiF26eFEmftUSOyE5ISbaBZOs/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MTIw/OTEtMTYxMDY5OTE5/Ny02NzI4LnBuZw.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1712091,
+   "why": "原版是紅紫打光的康加鼓靜物照，頂端有 Living Stereo 橫條與 RCA Victor 標、黃字標題；NOW 是帶膜實拍的 CD 版，沒有抬頭。",
+   "verify": {
+    "design": "NOW 是帶收縮膜反光的實拍，而且只有 225px。NEW 是 1958 US LSP-1617 Living Stereo 原版，平面掃描乾淨，也是 Discogs 收藏數最多的版本。",
+    "quality": "NEW 是乾淨的 Living Stereo 原版平掃，沒有膜、貼紙或磨損，四邊完整，顏色飽和，比 NOW 那張帶膜的小圖好很多。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "los kjarkas|canto a la mujer de mi pueblo",
+   "artist": "Los Kjarkas",
+   "album": "Canto a la Mujer de Mi Pueblo",
+   "year": 1981,
+   "from": "https://coverartarchive.org/release-group/a8e5dc10-9efd-375b-a52a-3421acfa9b9d/front",
+   "to": "https://i.discogs.com/1cwQHYxCrBcvtSQFL420yJiswyAGmDcehu4Dq0GRAF4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDU0/ODYtMTM2NTA4Njk5/OC01NDQ4LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 4445486,
+   "why": "原版是 Lauro 版：盛裝女子與團員的戶外合照、紅字 KJARKAS 大標、左側印詩句、底部黃字標題；NOW 是 Tumi 系列模板，用的是另一張女子特寫。",
+   "verify": {
+    "design": "NOW 是 Tumi 系列套版，照片也換了。NEW 是 Lauro 玻利維亞原版設計（紅字 KJARKAS 加團員合照），跟 1982 最早版本和 REF 一致，平面掃描，邊緣沒露背景。",
+    "quality": "NEW 是 Lauro 原版的平整掃描，顏色略舊但沒有嚴重褪色，沒有貼紙、膜光或背景，四邊完整，清晰度跟 NOW 相當。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "dennis brown|wolf & leopards",
+   "artist": "Dennis Brown",
+   "album": "Wolf & Leopards",
+   "year": 1977,
+   "from": "https://coverartarchive.org/release-group/e5c789be-f384-3441-8103-a1da5b67c8b0/front",
+   "to": "https://i.discogs.com/FF457GyMPBgnDyJTuuM3Vk20FXq2gN7-RMBD0uO1tPM/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4Nzk3/MzMtMTI0OTcyNjE0/NS5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1879733,
+   "why": "原版是紅底、黃字 WOLF & LEOPARDS／DENNIS BROWN，中間是 Dennis 被狼、豹、羊圍繞的畫；NOW 是 VP 系列做舊套版的實拍。",
+   "verify": {
+    "design": "NOW 是 VP 2006 CD 的實拍，封面歪斜縮在做舊底圖上，還有 1977 Classic 圓章和 New Low Price 貼紙。NEW 是 1977 英國 D.E.B. MOLP 01 的平掃，紅底黃字，人物畫一致。Discogs 全部 31 個版本裡，英國、牙買加、美國 Observer 以及後來的重發幾乎都用這套紅底設計，叢林畫那套只出現在 Joe Gibbs 美版，所以 NEW 是通行的原版。",
+    "quality": "NEW 是平放掃描、紅底黃字清楚，沒有側標、貼紙或圓章；只有下緣一排細白磨點和右下角小缺角，縮到卡片大小幾乎看不到，畫質明顯比 NOW 那張 CD 實拍好。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "shelagh mcdonald|stargazer",
+   "artist": "Shelagh McDonald",
+   "album": "Stargazer",
+   "year": 1971,
+   "from": "https://coverartarchive.org/release-group/5bb58297-989e-484b-8b08-425ba449e78c/front",
+   "to": "https://i.discogs.com/sEal9_r81y8Gdtnhye8pQG-kDJALL3qCMtJKkDDQrug/rs:fit/g:sm/q:90/h:600/w:570/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MTk1/NzMtMTYzOTE0NjQ3/OC02NTI3LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 3619573,
+   "why": "原版是星點框裡放人像與 Stargazer 字樣，底色是深藍黑；NOW 底色改成亮藍，右上多了 CD 加值斜條",
+   "verify": {
+    "design": "NOW 是 1999 Mooncrest CD，右上有加值斜條，底色也改成亮藍。NEW 是 1971 英國 B&C CAS 1043 原版。拿 1971 英國白標試壓、1972 荷蘭版、1972 日本版對照，都是深藍底配星點框，設計一致，NEW 乾淨。",
+    "quality": "NEW 是原版深藍黑底的平掃圖，星點框、標題和人像完整清楚，沒有 CD 加值斜條、貼紙或反光，深色底只有很淡的磨痕，可以接受。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "john wright|mr. soul",
+   "artist": "John Wright",
+   "album": "Mr. Soul",
+   "year": 1962,
+   "from": "https://coverartarchive.org/release-group/41d3145b-9d08-3e77-bcfe-199ab816859f/front",
+   "to": "https://i.discogs.com/53wUhOZ7uWbnkExrzn-M2zz9gWVk5ywnJNcsYNitC-s/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyOTc2/MjUtMTQ3OTc5MTcz/NS0yODE3LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 4297625,
+   "why": "原版是暗底人像，上方是打字機字體 JOHN WRIGHT: MR. SOUL 和 Prestige 標誌；NOW 左下多了 OJC 系列標",
+   "verify": {
+    "design": "NOW 左下有 OJC Limited Edition 圓標。NEW 是 1962 Prestige PR 7233 原版：打字機字標題、Prestige 標誌、暗底人像都對得上，沒有加印，乾淨。",
+    "quality": "NEW 平整無標，PR 7233、Prestige 標誌和打字機字體標題都清楚，沒有 OJC 圓標、貼紙或缺邊；銳化稍重，但比 400px 的 NOW 大，看起來不比 NOW 差。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "red garland|rojo",
+   "artist": "Red Garland",
+   "album": "Rojo",
+   "year": 1961,
+   "from": "https://coverartarchive.org/release-group/13b246da-6734-3a74-bc4d-a489783e2ed0/front",
+   "to": "https://i.discogs.com/hdjKgl6PZk1KIul_q3_HSOqEup0So5G0eUhhzQuDgzs/rs:fit/g:sm/q:90/h:400/w:379/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODA0/NjUtMTM0MjgyMzA5/NC02NDA0LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1380465,
+   "why": "原版是左上紅色大字 ROJO，下方黃橘色框裡放 Red Garland 頭像；NOW 右下多了 OJC 標誌",
+   "verify": {
+    "design": "NOW 右下有 OJC 方塊。NEW 是 1961 Prestige PRLP 7193，也是這張唯一的 1961 美國首版：ROJO 大字、PRESTIGE 7193、框內頭像都是原版樣子，乾淨。框色偏橘和 NOW 的黃只算色差。",
+    "quality": "NEW 雖然只有 379×400，但 ROJO、PRESTIGE 7193 和 PLUS—RAY BARRETTO 小字都看得清楚，沒有 OJC 方塊、貼紙或磨損，只有上緣微微歪斜不到 1 度，可以接受。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "hampton hawes|the seance",
+   "artist": "Hampton Hawes",
+   "album": "The Seance",
+   "year": 1969,
+   "from": "https://coverartarchive.org/release-group/a0c4e355-4006-4fe4-b089-2f392320b149/front",
+   "to": "https://i.discogs.com/-KN6754w0YVLzwVkRJ6p68PjKALFgtQiLeY1L9Y6PFM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNzk4/MzQtMTU5MDkzNzc3/NC0xNTAxLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 3279834,
+   "why": "原版是暗紫色調，Hawes 在逆光中彈琴，右上是紅字標題與 Contemporary STEREO S7621；NOW 右下多了 OJC 方塊",
+   "verify": {
+    "design": "NOW 右下有 OJC 方塊。NEW 雖然是 1990 OJC LP，放大看正面沒有任何 OJC 標記，標題字和右上的「CONTEMPORARY STEREO S7621」都跟 Discogs 主圖那張未拆原版一模一樣，視覺等同原版，而且沒有膜反光。",
+    "quality": "NEW 是平整的乾淨掃描，正面沒有 OJC 標誌、膜光或貼紙，標題紅字和 CONTEMPORARY STEREO S7621 跟 NOW 一樣清楚，四角也完整。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "bobby timmons|in person",
+   "artist": "Bobby Timmons",
+   "album": "In Person",
+   "year": 1961,
+   "from": "https://coverartarchive.org/release-group/c8cdca7f-f1b9-3638-bb07-c8f845bdd5d3/front",
+   "to": "https://i.discogs.com/CevkeHCLkejgYBthL0Y6Tf5B35u9JLz0DlrZL-hzlAQ/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDYx/MDA4LTE1Mzk1MjY1/NDEtNzYwOS5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 11061008,
+   "why": "原版是三人黑白合照，左上是白字加橘字 The Bobby Timmons Trio In Person，右下有 RIVERSIDE；NOW 左下多了 OJC 系列標",
+   "verify": {
+    "design": "NOW 是 OJC20 CD，左下有 OJC 標。NEW 是 1961 Riverside RLP 391 單聲道首版：同一張三人合照，左上白字加橘字標題，右下是 391 RIVERSIDE。NOW 右上的 STEREO 9391 只是立體聲版的排法，兩種都是原版設計，NEW 乾淨。",
+    "quality": "NEW 是 1961 年 Riverside 原版的平掃，標題、Recorded \"live\" 小字和右下 391 RIVERSIDE 都清楚，沒有 OJC 標、貼紙或缺邊，黑底只有輕微擦痕，銳利度還比 NOW 高。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "thad jones & mel lewis|live at the village vanguard",
+   "artist": "Thad Jones & Mel Lewis",
+   "album": "Live at the Village Vanguard",
+   "year": 1967,
+   "from": "https://coverartarchive.org/release-group/4dbf5f33-00ac-3e05-844d-172721b84baa/front",
+   "to": "https://i.discogs.com/WOrbebx40qSFApHwn01QNykZvN1DEJYTQ9dyNAQnFTU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNTA3/NDktMTM5NjE5Mjg3/MC0zMjk1LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 2050749,
+   "why": "原版是 Solid State 插畫封面（藍、橘、黃三段色塊的人像，黃字標題，下方 Solid State logo）；NOW 設計相同，但缺角、褪色、看得到書背",
+   "verify": {
+    "design": "NOW 是同一套 Solid State 設計的實物掃描，放大看右下角缺角破損、右緣露出黑邊，整體也褪色，符合規則 4。NEW 是同一張 1967 SS 18016 原版，色彩飽和、四角完整，設計完全一致。",
+    "quality": "NEW 是色彩飽和的平掃，網點清楚、四角完整，看不到書背或缺角；只有白色區有幾點小黃斑，上緣有約 2px 的暗邊，不影響觀看。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "the dells|there is",
+   "artist": "The Dells",
+   "album": "There Is",
+   "year": 1968,
+   "from": "https://coverartarchive.org/release-group/695b7030-1e80-396f-9ccf-1a751e5d1ec6/front",
+   "to": "https://i.discogs.com/VBS0dO3F2zR68fHS_XvT_d_3ETCJQdSw9snOpzWNutc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNDI4/MzUtMTUzOTA4MTMz/OS01Mzk4LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 7242835,
+   "why": "原版 Cadet LPS 804：黑框標題區，左側 Cadet 鸚鵡 logo，白色花體「THE DELLS／THERE IS」，下方是五人指向鏡頭的合照；NOW 的 Cadet logo 換成了 Original Chess Masters 徽章",
+   "verify": {
+    "design": "NOW 把左側的 Cadet 鸚鵡 logo 換成了 Original Chess Masters 徽章，屬於重發加標。NEW 是 1968 Cadet LPS 804 立體聲原版：鸚鵡 logo、上方的 LPS 804／STEREO、五人指向鏡頭的合照都對得上，沒有膜也沒有貼紙。",
+    "quality": "NEW 是正面拍攝、沒有歪斜，也沒有膜光或貼紙，LPS 804、STEREO、Cadet logo 和標題都清楚；黑色外框有些輕微擦痕，但縮到卡片大小看不出來，色彩正常。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "the moonglows|look! it's the moonglows",
+   "artist": "The Moonglows",
+   "album": "Look! It's the Moonglows",
+   "year": 1959,
+   "from": "https://coverartarchive.org/release-group/9b97a278-7ea8-3396-8034-78af1b898dc4/front",
+   "to": "https://i.discogs.com/TJcLQA0zgzwjZ6Y-fDBqXKlpNURgYn6gsnHlq2GrXRs/rs:fit/g:sm/q:90/h:592/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTI1/NjItMTE4NDAzODk4/MC5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1012562,
+   "why": "原版：芝加哥湖岸天際線前，四人剪影朝天指，上方黑字「LOOK!」，右側白色直條藍字「-it's THE MOONGLOWS」；NOW 多了 Original Chess 圓標和 CHD 目錄號",
+   "verify": {
+    "design": "NOW 是 MCA CD，右上有 Original Chess 圓標，左下加印 CHD-31267。NEW 是 Chess LP-1430 原版，湖岸剪影、LOOK! 和直條藍字都一致。Discogs 標的 Misprint 只是圓標上曲名拼錯，跟封面無關；REF 那張澳洲版是另一套設計，可以忽略。",
+    "quality": "NEW 沒有 Original Chess 圓標、CHD 目錄號或貼紙，構圖完整；畫面比 NOW 稍軟、稍褪一點，左緣有淡淡的邊緣磨損，但 LOOK!、直條藍字和書背小字都讀得出來，在可接受範圍內。"
+   },
+   "batch": "pilot"
+  },
+  {
+   "key": "sonny terry & brownie mcghee|at sugar hill",
+   "artist": "Sonny Terry & Brownie McGhee",
+   "album": "At Sugar Hill",
+   "year": 1961,
+   "from": "https://coverartarchive.org/release-group/8dddaeb9-f38c-43b3-8ea3-cb126306df58/front",
+   "to": "https://i.discogs.com/AHLADZjYI2nZSNk2ps6K6rP7p4RZd8GT1DZ--JwHfv4/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTkz/OTc2LTE2ODM3NjQy/OTYtMjI5NS5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 14193976,
+   "why": "這張的首發是 Fantasy 3340（1962 單聲道），不是 Bluesville，但封面跟上一關描述的是同一套：左邊棕調照片是 Brownie 彈吉他、Sonny 吹口琴，右側白底直條印藍字，右上 Fantasy High Fidelity 標。14193976 是 1962 原版 maroon 標（紅色透明膠），封面是 599x595 的平面掃描，乾淨、沒有 OBC 方塊、沒有貼紙或側標，只有很輕的邊角磨損。MB 的 1961 LP（3327fd65）和 1991 DE CD 在 CAA 都沒有圖，所以改用 Discogs master 397531。另一張 1962 mono 3797864 上半部有折痕，所以不選。",
+   "verify": {
+    "design": "NOW 左下角有 OBC「Original Blues Classics」系列方塊（目錄號 8091 也是重發）。NEW 是 Fantasy 3340 原版，同一張照片、同樣的藍字直排，沒有 OBC 標，算是修掉了；棕色調只是顏色差異。",
+    "quality": "這張是平面掃描，畫面清楚，沒有貼紙、側標或反光。只有右上緣 1–2px 的藍色背景細線和右下一個小圓角，不影響。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "muzsikás|máramaros: the lost jewish music of transylvania",
+   "artist": "Muzsikás",
+   "album": "Máramaros: The Lost Jewish Music of Transylvania",
+   "year": 1993,
+   "from": "https://coverartarchive.org/release-group/ade64cf4-b1e6-32a1-946a-61604cac8608/front",
+   "to": "https://i.discogs.com/UIRVIDAZvmnnduNdhgrdw2uz7ndKTH00Da-VvapotgY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjA1/MTktMTcyMjI5ODk5/Ni04MzcxLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1520519,
+   "why": "卡片標題是英文的《Máramaros: The Lost Jewish Music of Transylvania》，對應 Hannibal 國際版。通行設計是棕色木框中間嵌老照片、黃字 Muzsikás、MÁRAMAROS 字樣（Hannibal 版收藏數遠多於 1992 匈牙利 Gong 紅框版，符合取捨 0）。CAA 方面，同 RG ade64cf4 的 1993 HU Hannibal（a33809ab）和 2003 US Hannibal（4dba7590）都沒有圖。Discogs master 190609：1993 HNCD 1373（32262621）的主圖是隔著 CD 盒實拍，上緣看得到盒子鉸鏈，也有反光，不採用；同一套設計、同一個目錄號的 repress（1520519）是平面掃描，600x600、清楚、沒有貼紙，依取捨 3 改用這張。1520519 的第 2 張圖是褪色的粉灰色版本，也不採用。這張卡用了 3 次 Discogs 請求。",
+   "verify": {
+    "design": "NOW 是匈牙利 Gong 版《Szól a kakas már》，封面自己印著「Out of Hungary released as: MÁRAMAROS」。卡片的標題《Máramaros…》和年份 1993 都對應 Hannibal 國際版。NEW 是 Hannibal 那套（木框老照片），也是流通最廣的（repress 收藏 155，Gong 版 27），平面掃描、乾淨。",
+    "quality": "平面掃描，600px 清楚。四周的黑邊是木框照片本身的設計，沒有貼紙、反光或盒子鉸鏈。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "ewan maccoll|the manchester angel",
+   "artist": "Ewan MacColl",
+   "album": "The Manchester Angel",
+   "year": 1966,
+   "from": "https://coverartarchive.org/release-group/569a348e-b788-4f23-9136-321972203bc8/front",
+   "to": "https://i.discogs.com/DkQtVW4L5D839Atk1i_DgZBvlDRWZJ2J_Zwfc3l4VOo/rs:fit/g:sm/q:90/h:489/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTcx/MDgtMTMwNzE5NTQy/MS5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 2917108,
+   "why": "NOW 是 2012 年數位版，右下角加了 Topic 70 週年 logo。CAA：同 RG 569a348e 的 1966 GB 12T147（2c5018d6）、1968 US Tradition（77549ae9）和 2011 US CD-R（d809b190）都沒有圖。Discogs master 360127：1966 英國原版 12T147（2917108）的主圖是乾淨的平面掃描，500x489，黃底木刻、沒有 70 週年 logo，右緣和下緣只多幾 px 白邊。比對過的 UK 重發 25324378（600x595）封面貼了 $5.00 價格貼紙，不採用。發行國原版、年份最早，畫面也清楚，所以選 2917108。這張卡用了 3 次 Discogs 請求。",
+   "verify": {
+    "design": "NOW 右下角加了 Topic 70 週年 logo，是重發才有的標記。NEW 是 1966 年 12T147 原版，木刻圖、字樣完全一樣，沒有 70 週年標；邊緣只多了幾 px 白邊。",
+    "quality": "黃黑木刻的平面掃描，清楚銳利，顏色正常。四周只有 1–4px 的白色掃描邊，可以接受。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "a.l. lloyd|leviathan!",
+   "artist": "A.L. Lloyd",
+   "album": "Leviathan!",
+   "year": 1967,
+   "from": "https://coverartarchive.org/release-group/df09d729-e0f7-3270-8bbc-b5056c7bcf69/front",
+   "to": "https://i.discogs.com/FwsxcAPkY9QWEm5ulUXWaJ5UfJLU_VnGTvqVhWPAf-c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTg3/MDYtMTc4MTkwMzE3/OC03OTIyLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 1998706,
+   "why": "NOW 是 1998 年 CD（TSCD497）重排的深藍帶彩色畫版，跟原版是不同的設計。CAA：同 RG df09d729 的 1967 GB 12T174（e54ad921）沒有圖。Discogs master 243837：1967 英國原版 12T174（1998706）的主圖 600x600，單色捕鯨版畫，右上有襯線字 A.L.Lloyd LEVIATHAN!，畫面平整清楚，沒有貼紙也沒有反光，只是裁得比較緊，色調偏褐。另外比對了 70 年代 UK 重發 16310055（600x595），是同一套設計的中性灰掃描，邊緣有些磨損。原版夠清楚，依取捨 2 選較早的 1998706。這張卡用了 3 次 Discogs 請求。",
+   "verify": {
+    "design": "NOW 是 1998 年 CD 重新設計的版面（深藍標題列配彩色油畫），不是原版。NEW 是 1967 年 Topic 12T174 原版的單色捕鯨版畫，有 A.L.Lloyd LEVIATHAN! 字樣和 TOPIC 標，平整清楚。",
+    "quality": "平面掃描，畫面平整清楚，沒有貼紙或反光。色調稍微偏褐，但不到嚴重偏色。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "sonny boy williamson ii|the real folk blues",
+   "artist": "Sonny Boy Williamson II",
+   "album": "The Real Folk Blues",
+   "year": 1965,
+   "from": "https://coverartarchive.org/release-group/5fa654f2-c9a0-337e-8c1b-9593a2f088d4/front",
+   "to": "https://i.discogs.com/bnI3A0_1idXvNUHEIgWMyoHdSzf2VvmymwglOwySGic/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3OTk4/MTktMTc5MjY4MDkw/OC02ODYyLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 3799819,
+   "why": "原版 Chess LP-1503 的設計是白底、圓頂禮帽配口琴，右上角是 CHESS 1503 小 logo。選的這張是 2005 年 Speakers Corner 照原版重製的復刻盤，用 primary 圖（600x591），平面掃描，乾淨，沒有 NOW 那個「The Original Chess Masters」重發圓標。CAA：RG 5fa654f2 底下 1965 Chess LP-1503（9587b5fc）和 2005 Speakers Corner（7654c492）都沒有圖，只有 NOW 那筆 CD 有。Discogs master 306497：1966 US 5197152 是平面掃描，但左半邊看得到塑膠膜的白色反光線；2656226 是實拍，有斑點、會反光；16155890 偏黃；23151770 封面有手寫字；1987 年的重發也印著 Chess 重發系列標。依取捨第 3 條，同一套視覺裡挑最清楚的這張。如果要以美國首版為準，次選是 5197152（有輕微反光線）。",
+   "verify": {
+    "design": "NOW 右上角有「The Original Chess Masters」圓標，左下角印 CHD-9272，是 MCA CD 重發。NEW 是 Speakers Corner 照原版重製的 LP-1503：右上是 CHESS 1503 小標，帽子、口琴、簽名都一樣，封面上沒有加復刻的字樣或貼紙。",
+    "quality": "白底平面掃描，乾淨，只有原版就有的 CHESS 1503 小標和簽名，沒有 Speakers Corner 或 Remastered 字樣，也沒有貼紙。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "various artists|the iron muse: a panorama of industrial folk song",
+   "artist": "Various Artists",
+   "album": "The Iron Muse: A Panorama of Industrial Folk Song",
+   "year": 1963,
+   "from": "https://coverartarchive.org/release-group/5c0ec9d7-6a63-4385-ad19-0e069f21c7a8/front",
+   "to": "https://i.discogs.com/2HIre9PRhPI8jIg_KZ6N5Al87UaWSiV2fr8xXvEr5Vc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NzMx/NjYtMTUyNzQ1NTE3/OS02MDcyLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 2573166,
+   "why": "原版是 1963 年 Topic 12T86，上方是褐色大字 THE IRON MUSE，底下是煙霧瀰漫的工廠煙囪與連棟屋頂照片，右側列出 A L Lloyd 等演出者（上一關 design 寫成「工業版畫」並不準確）。選的這張是 1964 年英國再版 12T86，同一套設計，primary 圖 600x600，平面掃描，清晰，沒有貼紙也沒有反光，右緣可能稍微裁到一點點。CAA：RG 5c0ec9d7 底下 1964 LP（a8c9dba3）沒有圖。Discogs master 1039457：1963 年首版 22916693 沒有 primary 圖，images[0] 是實拍，四角有磨損、邊緣露出背景；12407450 光線不均，邊緣有磨損；19930309 是模糊的實拍；11604994 是後期另一套機械照片的設計（和 NOW 那套類似），不採用。",
+   "verify": {
+    "design": "NOW 是 1993 年 CD TSCD465，換成機械工人照片，還多列了 High Level Ranters 等演出者，跟原版是不同設計。Discogs 上 1963 年首版 22916693 是工廠煙囪那套，跟 NEW（1964 年 12T86）一樣；NEW 平面掃描、清楚。",
+    "quality": "平面掃描，600px 清楚，沒有貼紙、反光或磨損，邊緣完整。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "宮川泰|交響組曲 宇宙戦艦ヤマト",
+   "artist": "宮川泰",
+   "album": "交響組曲 宇宙戦艦ヤマト",
+   "year": 1977,
+   "from": "https://coverartarchive.org/release-group/3c337678-077e-3dab-8645-e4d523fef4c8/front",
+   "to": "https://i.discogs.com/j-4atn5OR5VMtDOnGC3W6TrwbuFUT4iaDkEAinsCqBo/rs:fit/g:sm/q:90/h:503/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNDY4/MzktMTI2NjU0NzE2/Ni5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 2146839,
+   "why": "注意：這張用的是 release 2146839 的 images[1]（secondary），不是 images[0]。images[0] 是 588x600 的原版 LP，但左邊整條側標都拍進去了。選的 images[1] 是 1977 年原版 CQ-7001 正面，500x503，平面掃描，乾淨，沒有側標：整面藍色星空插畫（森雪、大和號）加上 Symphonic Suite Yamato 草寫字，右上角是 Columbia logo 和目錄號（原版本來就有）。上一關抓到的 DM/D1–D3 是《ヤマトIII》（master 1889436），抓錯了。改用目錄號 CQ-7001 搜尋，找到正確的 master 1033022（6 個版本）：1977 卡帶是直式構圖；1995 CD 帶側標，而且是實拍；2012 COCX-37382 就是 NOW 的紅框系列版；2024 年 CD 和 LP 都帶側標，封面還加印了「2024mix」字樣。CAA：RG 3c337678 底下 1977 LP（e9a1ef9c）、2013 US 數位版、2012 數位版都沒有圖。如果下游規定只能用 images[0]，這張就改判 found=false。",
+   "verify": {
+    "design": "NEW 是 1977 CQ-7001 原版 LP 沒有側標的正面（我對過同一筆 release 帶側標的主圖，插畫和 Symphonic Suite Yamato 字樣都一樣），也正好是 NOW 紅框「YAMATO SOUND ALMANAC」系列套版裡縮小內嵌的那張原圖，系列套版的問題修掉了。",
+    "quality": "平面掃描，沒有側標或貼紙。畫質稍軟，但字和插畫都看得清楚，邊緣只有 1px 左右的白線。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "max roach|deeds, not words",
+   "artist": "Max Roach",
+   "album": "Deeds, Not Words",
+   "year": 1958,
+   "from": "https://coverartarchive.org/release-group/3019d9aa-d8b1-3e62-8283-e20f58dfd4a1/front",
+   "to": "https://i.discogs.com/mddcEtpaDE2wAm1YXnYQoa23wPMcAoQUaPVi1bznql8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDky/OTItMTczOTEyNTQ2/My00NTA2LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 4749292,
+   "why": "Discogs master 183535 主版本 4749292（1958 美國 Riverside RLP 12-280 原版 LP），主圖 600x600，是乾淨的平面掃描。左上角是 Riverside Contemporary Series／12-280，墨鏡托鼓棒的黑白照配橘色 Max Roach 和彩色 Deeds, Not Words，沒有 OJC 方塊、貼紙或反光。MB RG 3019d9aa 另有 6 筆 release（1958 RLP 12-280、1960 FR、OJC CD×2、數位、2007 JP），但查 CAA 都沒有圖。",
+   "verify": {
+    "design": "NEW 是 1958 Riverside RLP 12-280 原版，墨鏡托鼓棒照、橘字 Max Roach、彩色 Deeds, Not Words，和 NOW 同一套設計，畫面乾淨；NOW 是 OJC CD，左下有 OJC 系列方塊，換掉剛好修正。",
+    "quality": "600px 的平面掃描，銳利乾淨，沒有 OJC 方塊、貼紙或反光，四角完整。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "jule styne|gypsy",
+   "artist": "Jule Styne",
+   "album": "Gypsy",
+   "year": 1959,
+   "from": "https://coverartarchive.org/release-group/7b656d67-81e2-3d74-ab48-48b66cbd11a5/front",
+   "to": "https://i.discogs.com/iV65uUx7L47YZ9EktzEcMnMQJQ5ov3WKOh-VXTgUZHw/rs:fit/g:sm/q:90/h:589/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNjU1/ODctMTcyMzI0MTMy/MC0zNzY1LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 2165587,
+   "why": "CAA 沒有可用的：RG 7b656d67 裡，1959 年的 OL 5420、OS 2017 都沒有圖；1999 SK 60848 只有內頁圖。其他 RG 都是別張或特別版：2015 倫敦卡司、2024 百老匯卡司、50th Anniversary Edition。Discogs search 找到正確的 master 298049（1959 原版百老匯卡司；上一關對到的 970337 是 2003 年 Bernadette Peters 版，那是錯的）。看過它的版本後要修正上一關的 design：1959 年首版（美國、加拿大的 OL 5420／OS 2017 全部）是白底線條插畫、藍框粉紅字 ETHEL MERMAN / GYPSY a musical fable 那套。NOW 那種舞台劇照拼貼是 1962 年重發才換的，1973 S 32607、1986 CD 沿用；1999 remaster、2009 50 週年版、2017 LP 重發又都改回白底插畫。所以白底插畫既是首版，也是現在通行的那套（取捨 0、2）。選 1959 美國 Columbia Masterworks OL 5420 mono（2165587），主圖 589x589 平面掃描，乾淨，沒有貼紙、側標或浮水印。左上的 THE ORIGINAL BROADWAY CAST 方標、右上的 Columbia Masterworks LP 標、左下的 OL 5420 都是原版本來就印的。如果店主堅持要劇照拼貼那套，1962 年重發（3882125）的縮圖有 Rubyhightops 浮水印，不能用，要另外找。",
+   "verify": {
+    "design": "查過 Discogs master 298049：1959 年 OL 5420／OS 2017 全部是白底線條插畫配粉紅字招牌，劇照拼貼是 1962 年起的重發才換的；NOW 是 1986 CD，用的是拼貼那套，還印了 COMPACT DISC 標和 DIGITALLY MASTERED 字樣；NEW 是 1959 首版平面掃描，乾淨，也跟 1999 年以後通行的版本一致。",
+    "quality": "白底平面掃描，乾淨清楚，只有原版就印的方標、Columbia 標和目錄號，沒有貼紙、側標或浮水印。"
+   },
+   "batch": "pilot-s1"
+  },
+  {
+   "key": "bukka white|mississippi blues",
+   "artist": "Bukka White",
+   "album": "Mississippi Blues",
+   "year": 1964,
+   "from": "https://coverartarchive.org/release-group/7ac8780b-cbbe-35b2-bc9b-2d247b99ba14/front",
+   "to": "https://i.discogs.com/pcV268LteCUU04KCizVcuV2RQnuxjbfUkSmkF_rzNBg/rs:fit/g:sm/q:90/h:579/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDQ3/NjI2LTE2Njc4NDcw/NTMtNzE2Ny5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 21047626,
+   "why": "照審查員的意見改選白底空拍那一套：白底，左邊一張黑白空拍地貌照，右上是 Takoma T 標和 B-1001，右邊大字 MISSISSIPPI BLUES / BUKKA WHITE，左上一行 GUITAR, BOTTLENECK GUITAR, PIANO & SINGING。Discogs 版本縮圖一張張看過：Takoma 1968（21047626、13048634）、1970（2506036）、2010 年 4 Men With Beards LP（2515485）和 2010 年 Water CD 都是這一套。1964 黑白坐姿照那一套只有少數幾筆。Sonet 那些筆數雖多，但都是 Legacy of the Blues 系列套版，不考慮。21047626 是這套最早的 1968 US Takoma 首發（立體聲），575x579，平面掃描、四邊完整，沒有側標、貼紙、膜光，只有左上一個很小的雜點，看不太出來。CAA 查過：MB 上 1964 Takoma（8cdbc658）和其他 CD 版都沒有圖。上次被否決的 4665870 沒有再選。",
+   "verify": {
+    "quality": "Takoma 白底平掃，四邊完整、沒有側標貼紙膜光，歪斜不到 0.5°；只有上半部打光稍暗、略偏米黃（約 200 對下方 240），縮成卡片看起來還是乾淨的白封套，可以接受。",
+    "design": "NOW 是 Sonet「The Legacy of the Blues」系列套版，確定有問題。NEW 是 Takoma B-1001 的白底空拍版，字跟藝人都對得上。這張的封面確實分成兩套：1964 首版是黑白坐姿照（REF），1968 年起 Takoma 美國各版、4 Men With Beards 2010 LP 和 Water CD 都改用空拍這套。Discogs 收藏數空拍約 600、坐姿約 176，依取捨 0 取空拍說得過去，卡名《Mississippi Blues》（沒有 Vol.1）也跟這套一致。"
+   },
+   "batch": "pilot-s2"
+  },
+  {
+   "key": "snooks eaglin|new orleans street singer",
+   "artist": "Snooks Eaglin",
+   "album": "New Orleans Street Singer",
+   "year": 1959,
+   "from": "https://coverartarchive.org/release-group/29bbe00f-e8ab-356f-b63a-9b0f8cbaed80/front",
+   "to": "https://i.discogs.com/-T74iADQ6K3qTtriJL56AvoGvwOVRh0ovms_lp_ncho/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NDA1/ODItMTQzMDkwMTg5/MC03OTcxLmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 3540582,
+   "why": "已查證審查員點名的 3540582（1968 US Folkways FA 2476）。設計就是 1959 原版那一套：湖水綠單色照，Snooks 戴墨鏡抱吉他，左邊直排 SNOOKS，橫排 EAGLIN / NEW ORLEANS STREET SINGER，下方有 recorded by HARRY OSTER 字樣。這張是 500x500 的平面掃描，沒有地毯背景、水漬、貼紙或反光，四邊完整。CAA 查過：MB 上 1959 Folkways（eaed39e3）和 1994 版都沒有圖。上次被否決的 30190772（實拍、有地毯、有水漬）沒有再選。",
+   "verify": {
+    "quality": "500×500 平面掃描，湖水綠底色均勻，字跟人像都清楚，四邊只有 1–2px 的細邊，沒有背景、水漬、貼紙或反光，清晰度跟 NOW 同級。",
+    "design": "NOW 經 MB 查證是 2005 年 Smithsonian Folkways SFW CD 40165 擴充重發，另外畫了一張素描封面，不是原版設計。NEW 是湖水綠單色照那套，印有 FOLKWAYS RECORDS FA 2476，跟 1959 原版（REF／master 主圖）是同一套，掃描也乾淨。"
+   },
+   "batch": "pilot-s2"
+  },
+  {
+   "key": "かぐや姫|かぐや姫さあど",
+   "artist": "かぐや姫",
+   "album": "かぐや姫さあど",
+   "year": 1973,
+   "from": "https://coverartarchive.org/release-group/e6d745fd-4316-47f4-a4d8-c701a4f95acf/front",
+   "to": "https://i.discogs.com/FiNCN1c7qppq5kAdKvxvH8S7NEyeMNtdhsurYt79rfE/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxODI1/NzMwLTE3MjcyODI1/NDItNjI0Mi5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 31825730,
+   "why": "選 2007 紙殼 CD CRCP-20395 的 images[1]，就是拿掉側標後的正面；主圖 images[0] 帶側標。它照 1973 GW-4007 原版 LP 封套復刻：上橘下灰紫的漸層，三位團員各站一格，底下印 PANDA / KOSETSU / SHOYAN，左上 PANAM / STEREO。原版在左上印 GW-4007，這張同一個位置改成 CRCP-20395，算原版本來就有的目錄號，沒有 Compact Disc 標誌。600x593 平面掃描，四個角放大看過，都是封面本身，沒露背景、沒白邊、沒側標或貼紙，也沒歪。上方橘色約 220/151/89，比 LP 實拍（170/117/55，偏暗偏褐）亮，跟 NOW（243/161/98）接近，不像上一輪 17393722 那樣偏黃綠。第一輪被否決的 17393722 其實是把這版的掃描登記到 1993 年那筆 release 底下；這次直接用 CRCP-20395 本身的 release，來源登記就對得上。要提醒審查：它是 CD 時代的紙殼復刻，不是 LP。剩下的路都試過了：Discogs 搜尋只有這個 master 的 8 筆，沒有不在 master 裡的版本；1973 LP 6768387 全部 12 張圖裡，只有 images[0] 帶側標、images[1] 是白底實拍（已被否決）、images[4] 是帶側標的斜拍，其餘是內頁、封底和圓標；2013 年 25951594 是手機拍的，左邊和下面露出背景；1990 年版有 CD 標誌；1994 年版連塑膠盒一起拍；1985 年版沒有圖；8 軌是另一種包裝。MB 這個 RG 的 LP 1bdea51f 和其他 CD 在 CAA 都沒有圖。這張卡用了 1 次 Discogs。",
+   "verify": {
+    "quality": "NEW 是紙殼 CD 的平面掃描，600x593，四角沒露背景，沒有側標、貼紙或 CD 標誌，也沒歪；左上偏黃一點，但在原設計漸層的範圍內，清晰度跟 NOW 差不多（726 對 841）。",
+    "design": "API 查證 31825730 就是 CRCP-20395《かぐや姫さあど》；三格人像、PANDA/KOSETSU/SHOYAN、版位都跟 1973 LP（REF）一致，左上只換成目錄號，四角乾淨；NOW 是 CD 改排版、還印 Compact Disc 標誌，修掉了。"
+   },
+   "batch": "pilot-s3"
+  },
+  {
+   "key": "中原めいこ|mint",
+   "artist": "中原めいこ",
+   "album": "Mint",
+   "year": 1983,
+   "from": "https://coverartarchive.org/release-group/898a9666-ce98-4ad6-abcd-a4f2104cc005/front",
+   "to": "https://i.discogs.com/AGnHT4UM3aU0dYEytl6UBD6ayYUnpDzCAxK50-t5kUM/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTQ5/MTQ2LTE1ODk5NzI2/NjktNzIwNy5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 11149146,
+   "why": "注意：用的是 release 11149146 的 images[2]（secondary），不是 images[0]。images[0] 是隔著收縮膜拍的、帶側標的 CD。images[2] 是 2012 年東芝 EMI 重發 CD（TOCT-12009）內頁正面的平面掃描，600x593。設計和 1983 原版 LP 完全一樣：左上白色細長手寫 mint 加 MEIKO NAKAHARA，人物趴在桌邊，前面有海芋和盤子。上面沒有 Compact Disc 標誌，沒有 CD 目錄號，沒有側標、貼紙或反光，四邊也沒有掃到外面的背景。小瑕疵：左緣有約 4–5px 偏淺的青色細邊（內頁摺邊），其他三邊都滿版；色調比 LP 稍微偏青綠。被否決的 3744315 images[1]（木桌邊）這次沒有再選。查過的來源：MB 搜尋只有 RG 898a9666 一組，1983 LP 6bf29867、1984 CD 6f009fbd、2012 CD 102a72df 在 CAA 都重新確認是 404，只剩 NOW 那筆 2004 數位版。Discogs master 1345884 重新抓版本表，還是 7 個：3744315 images[0] 有收縮膜貼紙，images[1] 被否決；25096096 宣傳盤正面褪色，右下有「見本」貼紙；23278898、14527070（CA35-1049）和 14527133（CT32-5211）都印了 Compact Disc 標誌；14550139 卡帶排版不同；11149146 只有 images[2] 乾淨。另外用 search 查 q=Nakahara Mint，沒有掛在 master 外的版本。依取捨 3：原版 LP 沒有乾淨的掃描，所以取同一套視覺裡最清楚、又沒加印的這張。如果下游規定只能用 images[0]，這張就改判 found=false。",
+   "verify": {
+    "quality": "NEW 是內頁平面掃描，清楚、沒有側標、貼紙、反光或 CD 標誌；只有左緣約 5px 的淺色摺邊，縮圖幾乎看不到，清晰度還比 NOW 好。",
+    "design": "11149146 是中原めいこ《Mint》2012 重發，NEW 的 mint 手寫字、人物、海芋擺位跟 LP（REF）同一套，沒有 CD 標誌和目錄號；只有左緣幾 px 摺邊、色調稍偏青綠，NOW 的 CT32-5211 和 Compact Disc 標誌都拿掉了。"
+   },
+   "batch": "pilot-s3"
+  },
+  {
+   "key": "dakota staton|the late, late show",
+   "artist": "Dakota Staton",
+   "album": "The Late, Late Show",
+   "year": 1957,
+   "from": "https://coverartarchive.org/release-group/87c0aa6a-530a-3aaa-a501-48cd3c8f5ee3/front",
+   "to": "https://i.discogs.com/gL3wsyUzgqo703BFMPi0yP6eyHhTiRJTMuzk_brSZ48/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NDg1/ODQwLTE3MjU3ODM0/ODEtNjA3MS5qcGVn.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 17485840,
+   "why": "Discogs 17485840 images[0]（primary），595x600，是 1960 年代初英國 EMI 壓製的 Capitol T 876 單聲道版。我量過四邊，像素值和封面內部一樣，滿版、沒有白框或木紋邊，也沒有貼紙、側標、反光或磨損，深藍底和白毛草都很清楚。跟美國 1957 原版（2598810）放在一起比，是同一套設計：左上淺藍字「the late, late show」、白字 DAKOTA STATON，左下 Capitol 圓標加 HIGH FIDELITY RECORDING，上緣沒有 DUOPHONIC 橫條，也沒有 Collectables 標。被否決的 2598810、4744253 這次沒有再選。查過的來源：CAA 沒有可用的（MB 只有 1957 US 1ca26d47，CAA 404，還有 NOW 那張 Collectables CD）。Discogs master 346502 的 38 個版本，縮圖全看過，再抓了 4 筆 release。6535210（1958 US T-876）四邊有 8–10px 淺色掃描框；32986479（1958 US）上緣和左緣露出黃色背景；5445106（1957 法國）只有 510x476，比例被裁過。其他美國版：12395613 褪色；22607525 滿是斑點；9590894 有宣傳貼紙；8359872 有黃邊；12466075 在收縮膜裡反光；11696841（TT-876）右上多了月亮標記；SM／DT 系列是後期立體聲重發。依取捨 3：發行國美國的版本都褪色、有框或磨損，所以取同一套視覺裡最清楚的這張英國早期版。",
+   "verify": {
+    "quality": "NEW 滿版、沒有貼紙、側標或反光，字很清楚；右上角只有 2–3px 的白色小缺角，展示尺寸看不到。比 NOW 軟一點（415 對 784），但在可接受範圍。",
+    "design": "NEW 跟美國原版（REF）版面完全一樣（字的位置、Capitol 圓標、HIGH FIDELITY），英國壓片沒在正面加任何字，畫面清楚，只有右上角 2–3px 磨角；NOW 的 DUOPHONIC 橫條和 Collectables 標都修掉了。"
+   },
+   "batch": "pilot-s3"
+  },
+  {
+   "key": "sharon redd|redd hott",
+   "artist": "Sharon Redd",
+   "album": "Redd Hott",
+   "year": 1982,
+   "from": "https://coverartarchive.org/release-group/10493796-8828-376e-8133-110f10e87626/front",
+   "to": "https://i.discogs.com/bd8n3jmc8VLZxPUtF35r-C4XiezyTpf6R2v2JDJyRfM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjIz/OC0xMjE2MTE4ODI1/LmpwZWc.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 112238,
+   "why": "Discogs 112238 images[0]（primary），600x600，是 1982 年德國 Jupiter 授權版（TELDEC 壓製）。滿版平面掃描，沒有白框，沒有紅圓「Includes the hits」，沒有貼紙、折痕或污漬。設計和美國 Prelude PRL 14106 一樣：淺灰藍底，左上黑字 SHARON REDD 疊紅字 REDD HOTT，紅洋裝人像。唯一的差別是左下沒有 Prelude 小標。小瑕疵：左緣有約 4px 淺米色細邊，上緣有 1–2px 淺線，整體比美國版稍微偏灰。被否決的 4574549 和 228144 都沒有再選，跟 228144 同一張圖的 5024246 也沒選。查過的來源：CAA 的 MB e092b6d6（US）、905c814f（GB）、9df94858（Unidisc CD）都是 404。Discogs master 36881 的 27 個版本縮圖全看過，美國版裡：1511386 邊緣掃到深色底、有污點，它另外兩張圖只是圓標；15549327 右下有 565 貼紙；14105750 右下印了相機日期 01/10/2017；28965145 偏褐、褪色；27172695（抓了 release）是實拍，露出木桌和外框；7082589 只有白標圓標圖。非美國版：7891554（西班牙 Prelude）上下各有約 4px 白邊；3193307（法國 EMI）只有 225px；13722043（Unidisc 加拿大 CD）在收縮膜裡反光，邊緣是黑的；英國、加拿大、巴西版都有紅圓或宣傳標。備選是 159323（1982 荷蘭 Rams Horn），一樣滿版，但比較糊，左下換成 Rams Horn 標。依取捨 3：發行國美國的版本沒有乾淨的掃描，所以取同一套視覺裡最清楚、同年的這張。",
+   "verify": {
+    "quality": "NEW 滿版、沒有紅圓、貼紙、摺痕，字清楚可讀；缺點是整體偏灰偏暗、比 NOW 糊（220 對 503），左緣也有約 4px 米色細邊，不過都沒有嚴重到褪色或看不清字的程度，勉強過關。",
+    "design": "112238 是 Sharon Redd《Redd Hott》1982 德國授權版，人像、字樣排法跟美國 Prelude 原版（REF）同一套，只少了左下角的小廠標，平面掃描很乾淨；NOW 印的紅圓「收錄熱門曲」標記拿掉了。"
+   },
+   "batch": "pilot-s3"
+  },
+  {
+   "key": "michigan & smiley|rub-a-dub style",
+   "artist": "Michigan & Smiley",
+   "album": "Rub-A-Dub Style",
+   "year": 1979,
+   "from": "https://coverartarchive.org/release-group/7dda9e46-8ddf-34d9-bd0e-a2e691a22b4b/front",
+   "to": "https://i.discogs.com/Wxz99kytBfEDfBwfxt84dbHaAH169v0pgc3YxzGttiE/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5OTg3/MS0xNjYwNTcwNjgz/LTU5ODEuanBlZw.jpeg",
+   "source": "discogs",
+   "caaRelease": null,
+   "discogsRelease": 299871,
+   "why": "這張是審查員點名的 299871，已經查證過。Discogs 299871 images[0]（primary），599x590，1979 年 Studio One SOLP 1138。是原版粉紅拱門那套設計：左上 STUDIO ONE 標，拱門框裡是兩人戴帽和墨鏡的合照，手寫體 General Smilie & Papa Michigan，紅色花體 RUB-A-DUB STYLE 加花邊。四邊離邊約 10px 的深色細框線是封面本身印的，邊緣外側也還是粉紅紙面，沒有掃到外面的背景。放大看過，沒有撕破、污漬帶、貼紙、側標或反光，畫面清楚。被否決的 4810783（牙買加首版，髒又破）這次沒有再選。查過的牙買加版：13379090（SOL 1138）右上有貼紙，左上有白邊；14936122（牙買加、無目錄號，600x600）也是平面掃描，可以當備案，但上緣有擦痕、整體比較糊；1307669（SOL 1138 repress）只有 350px。其他牙買加無目錄號版本的縮圖，都偏黃、褪色或是實拍。SOLP-3512 和 Heartbeat CD 878919、24284789 是後期的藍框大字設計，NOW 就是這套。MB 的 1979 US（7bb33b53）和 1992 Heartbeat CD（257ebb05）在 CAA 都沒有圖。依取捨 3：發行國牙買加的版本都髒或有貼紙，所以取同一套視覺裡最清楚的 1979 美國同期版。",
+   "verify": {
+    "quality": "NEW 是清楚的平面掃描（銳利度 1617，NOW 是 846），四邊都是粉紅紙面，沒有貼紙、側標、反光或破損；左下角只有幾個像素的磨角，展示尺寸看不到。",
+    "design": "NEW 跟牙買加首版 4810783（master 主圖）是同一個粉紅拱門設計（General Smilie & Papa Michigan、紅色花體 RUB-A-DUB STYLE），比首版乾淨很多；NOW 是 Heartbeat 重發另做的藍框大字版，還印 ORIGINAL STUDIO ONE MASTERS 系列標，換掉是對的。"
+   },
+   "batch": "pilot-s3"
+  }
+ ]
+}
