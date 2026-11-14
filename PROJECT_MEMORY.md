@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-14｜dip-vinyl-shop｜game-lab：The Smiths 移到 INDIE ROCK＋Argerich《Rach 3》年份改 1995
+
+- **店主 11-14**：「The Smiths 不可能是 indie pop，是還沒整理還是弄錯了？」——主線分錯（它的子曲風同時有 alt-rock 與 indie-pop，上次被放進 INDIE POP）。
+- **改了什麼**：`deck-lists.json` 的 `bin_indiepop` 拿掉《Hatful of Hollow》、加進 `bin_indierock`（INDIE ROCK 13 張、INDIE POP 11 張；它有 `rock/indie-alt/alt-rock`，符合 INDIE ROCK 規則，不用改規則）；`shops/dip.json` INDIE POP 櫃看得到的封面改成 The Field Mice《For Keeps》；`bins.js` 用 `--covers-only` 重烘；`?v=63`。
+- **Argerich《Rachmaninoff: Piano Concerto no. 3》**：1982-12 柏林現場（Chailly），最早發行 1995 Philips 446 673-2，沒有 1983 年的唱片 → `seed_cards.json` 年份 1983→1995、`data/year-overrides.json` 加一筆（附理由）、`game-lab/cards.js` 同步。
+- **驗證**：check-shops／check-covers（67 張、16 區）／check-content（316）／lint-copy OK；shop.test 1,442、hit.test 402 全過；e2e.spec 390×664 47/47、e2e-taps（title,night）14/14。
+
 ### 2026-11-13｜dip-vinyl-shop｜game-lab 店面箱子改版＋封面改回原版（遊戲 54 張、主站 2 張）
 
 - **店主 11-13**：「門口的 blues 切一半 indie rock 跟 indie pop、中間的 pop 改成 city pop、blues 不知道放哪」；「有些封面用成了 CD 版或特別版（Martha Argerich Rachmaninoff 3、石頭記），我只要正常版」。
