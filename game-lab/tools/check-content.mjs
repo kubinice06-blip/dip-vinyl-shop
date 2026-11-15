@@ -377,6 +377,12 @@ export function contentProblems(C, E) {
   }
   const SL = C.shopLines || {};
   for (const k of ['poster', 'cat', 'locked', 'binBusy', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop', 'bin', 'booth', 'boothEmpty']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
+  // 你家（聆聽室，v5 第六項第三期）：ui.js 的房間段讀這些鍵；{album}／{n} 要留著給 UI 代入
+  for (const k of ['homeBtn', 'homeTitle', 'homeSub', 'homeNote', 'homeEmpty', 'homeShelf', 'homeDeck', 'homeConsole', 'homeShelfSub', 'homeDeckSub', 'homeDeckEmpty',
+    'homePut', 'homeOnDeck', 'homeStop', 'homeNow', 'homeIdle', 'homeWantN', 'homeWant', 'homeWantAgain', 'homeTuneFail', 'homeTuneLoading', 'homeTuneBack']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k + '（你家）');
+  for (const k of ['homeOnDeck', 'homeWant', 'homeWantAgain']) ok(String(SL[k] || '').includes('{album}'), 'shopLines.' + k + ' 要有 {album}');
+  ok(String(SL.homeWantN || '').includes('{n}'), 'shopLines.homeWantN 要有 {n}');
+  ok(String(SL.homePut || '').length <= 4, 'shopLines.homePut（唱片架每張下面的小鈕）≤4 字');
   ok(SL.binBusy === '打完再翻。', 'shopLines.binBusy＝「打完再翻。」（D §6）');
   ok(SL.ownerHint && ['title', 'scene', 'night', 'duel', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 五個畫面');
   ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 3, 'shopLines.nightIntro 三句（第 2 句「客人跟剛才那位不一樣」店主 11-12）');

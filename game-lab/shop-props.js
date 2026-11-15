@@ -643,6 +643,15 @@
       var x = o.x, y = o.y, lock = o.locked, hop = (!lock && o.current && Math.floor(S.t * 3) % 2) ? 1 : 0;
       P.rect(x - 2, y, 5, 1, 'rgba(0,0,0,0.3)');
       var cy = y - 8 - hop;
+      if (o.icon === 'home') {   // 你家（v5 第六項第三期聆聽室）：圖釘頭畫成小房子（紅屋頂、米色牆、木門、亮著的窗）
+        var hy = y - 12 - hop, rf = o.color === 'g' ? '#3f8a4a' : '#c0392b';
+        for (var ri = 0; ri < 5; ri++) P.rect(x - ri, hy + ri, ri * 2 + 1, 1, ri === 4 ? '#7d1f22' : rf);
+        P.rect(x - 3, hy + 5, 7, 5, '#f3ead6'); P.vl(x - 4, hy + 5, 5, '#5a3b1e'); P.vl(x + 4, hy + 5, 5, '#5a3b1e'); P.hl(x - 4, hy + 10, 9, '#5a3b1e');
+        P.rect(x, hy + 7, 2, 3, '#7a4f2e'); P.px(x - 2, hy + 6, '#f2c540');
+        P.vl(x, hy + 11, 1, 'line');
+        if (o.cleared) P.px(x + 4, hy, 'y');
+        return;
+      }
       P.vl(x, cy + 3, 5 - (hop ? 0 : 0), 'line');
       P.ellipse(x, cy, 4, 4, lock ? 'mt2' : 'k'); P.ring(x, cy, 3, 3, lock ? 'mt3' : 'mt1');
       if (lock) { P.text('?', x - 1, cy - 2, 'mt5'); }
@@ -672,7 +681,7 @@
     layer: 'bg',
     draw: function (P, o, S) {
       var L = S.L, y0 = L.wallBase, y1 = L.size[1], Wd = L.size[0];
-      var cols = ['#8e5a35', '#865330', '#93613b', '#7e4e2c', '#9a673e', '#8a5733', '#83512e', '#965f37'];
+      var cols = o.cols || ['#8e5a35', '#865330', '#93613b', '#7e4e2c', '#9a673e', '#8a5733', '#83512e', '#965f37'];   // o.cols：別的地板色（你家＝淺一點的橡木）
       var BW = 6;
       for (var bx = 0, i = 0; bx < Wd; bx += BW, i++) {
         var y = y0 - Math.floor(hash(i, 1, 1) * 45), j = 0;
@@ -691,11 +700,11 @@
               P.r(gx, gy, 1, Math.min(gl, ye - gy), shade(base, hash(i, j * 13 + g, 29) < 0.6 ? -0.14 : 0.1));
             }
             if (hash(i, j, 99) < 0.12) { var kx = bx + 2 + Math.floor(hash(i, j, 98) * 3), ky = ys + 3 + Math.floor(hash(i, j, 97) * Math.max(1, ye - ys - 6)); P.r(kx, ky, 2, 1, shade(base, -0.32)); P.p(kx, ky + 1, shade(base, -0.2)); }
-            if (y + len < y1) P.r(bx, y + len - 1, Math.min(BW, Wd - bx), 1, '#4b2d18');
+            if (y + len < y1) P.r(bx, y + len - 1, Math.min(BW, Wd - bx), 1, o.seam || '#4b2d18');
           }
           y += len; j++;
         }
-        P.r(bx, y0, 1, y1 - y0, '#4f301b');
+        P.r(bx, y0, 1, y1 - y0, o.seam || '#4f301b');
       }
       // 走道與唱盤區磨得比較亮（很淡）；地板往下延伸時（shop.js fitExt：L.extFrom＝原本的底），碰到原本底邊的那幾塊跟著往下接
       var wb = L.extFrom || y1;
@@ -705,19 +714,34 @@
   });
 
   // ================================================================ 後牆＋左右收邊（灰白漆牆、天花板梁影、管線、踢腳板）
+  // o.paint（你家，v5 第六項第三期）：牆漆色（'#色' 或 {c,l,d,dd}），沒有本店的裂縫與管線；o.wainscot＝下半截護牆板高幾格（米白直條板＋上緣飾條）
+  function paintOf(p) {
+    if (!p) return { c: C.wall, l: C.wallL, d: C.wallD, dd: C.wallDD };
+    if (typeof p === 'string') return { c: p, l: shade(p, 0.1), d: shade(p, -0.1), dd: shade(p, -0.24) };
+    return { c: p.c, l: p.l || shade(p.c, 0.1), d: p.d || shade(p.c, -0.1), dd: p.dd || shade(p.c, -0.24) };
+  }
   defO('backWall', {
     layer: 'bg',
     draw: function (P, o, S) {
-      var L = S.L, Wd = L.size[0], base = L.wallBase, H = L.size[1];
-      P.r(6, 6, Wd - 12, base - 6, C.wall);
+      var L = S.L, Wd = L.size[0], base = L.wallBase, H = L.size[1], pt = paintOf(o.paint);
+      P.r(6, 6, Wd - 12, base - 6, pt.c);
       for (var yy = 6; yy < base; yy++) for (var xx = 6; xx < Wd - 6; xx++) {
         var r = hash(xx, yy, 5);
-        if (r < 0.035) P.p(xx, yy, C.wallD); else if (r > 0.975) P.p(xx, yy, C.wallL);
+        if (r < 0.035) P.p(xx, yy, pt.d); else if (r > 0.975) P.p(xx, yy, pt.l);
       }
-      P.r(6, 6, Wd - 12, 1, C.wallDD); P.r(6, 7, Wd - 12, 2, C.wallD);
-      P.r(6, 6, 2, base - 6, C.wallD); P.r(Wd - 8, 6, 2, base - 6, C.wallD);
-      P.r(150, 9, 1, 3, C.wallDD); P.r(151, 12, 1, 2, C.wallDD);
-      P.r(8, 9, 130, 1, '#bdb6a6'); P.r(8, 10, 130, 1, '#d6cfbf');
+      P.r(6, 6, Wd - 12, 1, pt.dd); P.r(6, 7, Wd - 12, 2, pt.d);
+      P.r(6, 6, 2, base - 6, pt.d); P.r(Wd - 8, 6, 2, base - 6, pt.d);
+      if (!o.paint) {   // 本店那面牆的裂縫與管線
+        P.r(150, 9, 1, 3, C.wallDD); P.r(151, 12, 1, 2, C.wallDD);
+        P.r(8, 9, 130, 1, '#bdb6a6'); P.r(8, 10, 130, 1, '#d6cfbf');
+      }
+      if (o.wainscot > 0) {
+        var wy = base - 3 - o.wainscot, WC = o.wainscotColor || '#e8dcc2', WD = shade(WC, -0.1), WL = shade(WC, 0.3);
+        P.r(8, wy, Wd - 16, o.wainscot, WC);
+        for (var bx = 12; bx < Wd - 10; bx += 6) { P.r(bx, wy + 3, 1, o.wainscot - 3, WD); P.r(bx + 1, wy + 3, 1, o.wainscot - 3, WL); }
+        P.r(8, wy - 2, Wd - 16, 2, WL); P.r(8, wy, Wd - 16, 1, WD); P.r(8, wy + 1, Wd - 16, 1, shade(WC, -0.2));
+        P.a(0.25, function () { P.r(8, wy - 3, Wd - 16, 1, '#1b0e05'); });
+      }
       P.r(6, base - 3, Wd - 12, 3, C.walnut); P.r(6, base - 3, Wd - 12, 1, C.walnutL);
       P.r(0, 0, Wd, 6, C.cap); P.r(0, 5, Wd, 1, C.capL);
       P.r(0, 0, 6, H, C.cap); P.r(5, 6, 1, H - 6, C.capL);
@@ -753,13 +777,35 @@
     P.r(x + 1, y + h - 5, w - 2, 5, C.tealD); P.r(x + 1, y + h - 5, w - 2, 1, shade(C.teal, 0.1));
     P.r(x + 8, y + 27, 12, 6, '#1d1712'); P.ptext('OPEN', x + 8, y + 28, '#f2c540');
   }
+  // 你家的門（style:'home'，v5 第六項第三期）：胡桃木四片凸板門、黃銅門把與貓眼、掛一塊 HOME 小木牌；沒有 OPEN 牌、門外不畫排隊的影子
+  var HDOOR = { c: '#8a5632', l: '#a86d43', d: '#6a3f22', dd: '#4c2b16' };
+  function homeDoorPanel(P, x, y, w, h) {
+    P.r(x, y, w, h, HDOOR.c);
+    P.r(x, y, 1, h, HDOOR.l); P.r(x, y, w, 1, HDOOR.l); P.r(x + w - 1, y, 1, h, HDOOR.d);
+    for (var yy = y + 2; yy < y + h - 2; yy += 2) for (var xx = x + 2; xx < x + w - 2; xx += 3) if (hash(xx, yy, 43) < 0.1) P.p(xx, yy, shade(HDOOR.c, -0.08));
+    var pw = Math.floor((w - 9) / 2), ph1 = 18, ph2 = h - ph1 - 15;
+    [[x + 3, y + 5, pw, ph1], [x + 6 + pw, y + 5, pw, ph1], [x + 3, y + 10 + ph1, pw, ph2], [x + 6 + pw, y + 10 + ph1, pw, ph2]].forEach(function (r) {
+      P.r(r[0], r[1], r[2], r[3], HDOOR.dd); P.r(r[0] + 1, r[1] + 1, r[2] - 1, r[3] - 1, HDOOR.d); P.r(r[0] + 2, r[1] + 2, r[2] - 3, r[3] - 3, HDOOR.l); P.r(r[0] + 2, r[1] + 3, r[2] - 3, r[3] - 4, HDOOR.c);
+    });
+    P.r(x + w - 6, y + 31, 3, 3, '#7a5a1c'); P.r(x + w - 6, y + 31, 2, 2, '#e8c35a'); P.p(x + w - 6, y + 31, '#fff1b8'); P.r(x + w - 5, y + 35, 1, 2, '#7a5a1c');
+    P.r(x + Math.floor(w / 2) - 1, y + 2, 2, 2, '#b8892e'); P.p(x + Math.floor(w / 2) - 1, y + 2, '#2a1a10');
+    // HOME 小木牌：細繩掛在上面兩塊凸板中間
+    var sx = x + Math.floor(w / 2) - 9, sy = y + 12;
+    P.line(sx + 4, sy, sx + 9, sy - 5, '#d8c9a5'); P.line(sx + 14, sy, sx + 9, sy - 5, '#d8c9a5'); P.p(sx + 9, sy - 5, '#b8892e');
+    shadowRect(P, sx + 1, sy + 1, 19, 8, 0.3);
+    P.r(sx, sy, 19, 8, '#5a3b1e'); P.r(sx + 1, sy + 1, 17, 6, '#f3ecd9'); P.r(sx + 1, sy + 6, 17, 1, '#d6ccb4');
+    P.ptext('HOME', sx + 2, sy + 1, '#7a2a24');
+    P.r(x + 1, y + h - 4, w - 2, 4, HDOOR.dd); P.r(x + 1, y + h - 4, w - 2, 1, HDOOR.d);
+  }
   defO('door', {
     layer: 'wall', dyn: true,
     box: function (o) { return [o.x, o.y, o.w, o.h]; },
     draw: function (P, o, S) {
-      var x = o.x, y = o.y, w = o.w, h = o.h, st = (S.state && S.state.door) || o.state || 'closed';
-      P.r(x - 3, y - 3, w + 6, h + 3, '#f4f0e6'); P.r(x - 3, y - 3, w + 6, 1, '#ffffff'); P.r(x + w + 2, y - 3, 1, h + 3, '#cdc6b6');
-      P.r(x - 1, y - 1, w + 2, h + 1, '#bdb5a2');
+      var x = o.x, y = o.y, w = o.w, h = o.h, st = (S.state && S.state.door) || o.state || 'closed', home = o.style === 'home';
+      var trim = home ? '#efe6d2' : '#f4f0e6';
+      P.r(x - 3, y - 3, w + 6, h + 3, trim); P.r(x - 3, y - 3, w + 6, 1, '#ffffff'); P.r(x + w + 2, y - 3, 1, h + 3, home ? '#cbbfa6' : '#cdc6b6');
+      P.r(x - 1, y - 1, w + 2, h + 1, home ? '#9d8a6a' : '#bdb5a2');
+      if (home && st !== 'open' && st !== 'ajar') { homeDoorPanel(P, x, y, w, h); return; }
       if (st === 'open' || st === 'ajar') {
         doorStreet(P, x, y, w, h);
         if (S.drawOutside) S.drawOutside(P, [x, y, w, h]);
@@ -843,9 +889,47 @@
   });
 
   // ================================================================ 窗（黃昏下雨的台北街景、陽台鐵窗、直立招牌、貼在玻璃上的海報）
+  // 你家的窗（style:'home'，v5 第六項第三期）：任意寬高；夜空、月亮、遠方的 101、對面公寓的燈、雨絲；木窗框十字格、兩側窗簾（o.curtain 色）、窗台一小盆仙人掌
+  function homeWindow(P, o) {
+    var x = o.x, y = o.y, w = o.w, h = o.h, i, sky = ['#1c2544', '#222c50', '#29355c', '#313f69', '#3a4977', '#445385'];
+    for (var yy = 0; yy < h; yy++) P.r(x, y + yy, w, 1, sky[Math.min(sky.length - 1, Math.floor(yy * sky.length / h))]);
+    for (i = 0; i < 9; i++) P.p(x + 2 + Math.floor(hash(i, 1, 61) * (w - 4)), y + 1 + Math.floor(hash(i, 2, 61) * (h * 0.4)), hash(i, 3, 61) < 0.5 ? '#c9d3ef' : '#8f9cc6');
+    var mx = x + w - 11, my = y + 7;
+    P.ell(mx, my, 3.4, 3.4, '#f3ecc8'); P.p(mx - 1, my, '#d9d0a6'); P.p(mx + 1, my + 1, '#d9d0a6');
+    var tx = x + Math.round(w * 0.3), tb = y + h - 9;   // 遠方的 101（剪影）
+    for (i = 0; i < 6; i++) P.r(tx - 2, tb - 4 - i * 3, 5, 3, i % 2 ? '#2c3858' : '#283353');
+    P.r(tx, tb - 24, 1, 6, '#283353'); P.p(tx, tb - 25, '#e2483b');
+    for (var bx = x, k = 0; bx < x + w; k++) {   // 對面的公寓
+      var bw = 9 + Math.floor(hash(k, 4, 62) * 9), bh = 9 + Math.floor(hash(k, 5, 62) * 14), by = y + h - bh;
+      P.r(bx, by, Math.min(bw, x + w - bx), bh, k % 2 ? '#1a2034' : '#20283e'); P.r(bx, by, Math.min(bw, x + w - bx), 1, '#2c3550');
+      for (var wy = by + 3; wy < y + h - 3; wy += 4) for (var wx = bx + 2; wx < Math.min(bx + bw - 2, x + w - 2); wx += 4) if (hash(wx, wy, 63) < 0.4) P.r(wx, wy, 2, 2, hash(wx, wy, 64) < 0.6 ? '#f0c96d' : '#9fd0e8');
+      bx += bw + 1;
+    }
+    for (var r = 0; r < Math.round(w * h / 60); r++) { var rx = x + Math.floor(hash(r, 11, 65) * w), ry = y + Math.floor(hash(r, 12, 65) * (h - 3)); P.a(0.45, function () { P.r(rx, ry, 1, 2, '#a9bcd8'); }); }
+    P.a(0.1, function () { for (var g = 0; g < Math.min(14, h - 4); g++) P.p(x + 5 + g, y + h - 5 - g, '#ffffff'); });
+    var F = '#6e4526', FL = '#93603b', mxw = x + Math.floor(w / 2) - 1, myh = y + Math.floor(h * 0.42);
+    P.r(x - 2, y - 2, w + 4, 2, F); P.r(x - 2, y, 2, h, F); P.r(x + w, y, 2, h, F);
+    P.r(mxw, y, 2, h, F); P.r(mxw, y, 1, h, FL); P.r(x, myh, w, 2, F); P.r(x, myh, w, 1, FL);
+    P.r(x - 4, y + h, w + 8, 3, '#efe6d2'); P.r(x - 4, y + h, w + 8, 1, '#ffffff'); shadowRect(P, x - 3, y + h + 3, w + 6, 1, 0.25);
+    // 窗台上的小仙人掌
+    var cx = x + 5, cy = y + h;
+    P.r(cx, cy - 4, 5, 4, '#b5653a'); P.r(cx, cy - 4, 5, 1, '#d07f50'); P.r(cx + 1, cy - 9, 3, 5, '#3f8a4a'); P.r(cx + 2, cy - 9, 1, 5, '#63ad5e'); P.r(cx - 1, cy - 7, 2, 1, '#3f8a4a'); P.r(cx - 1, cy - 9, 1, 2, '#3f8a4a'); P.p(cx + 2, cy - 10, '#f2a0b8');
+    // 窗簾：上面一根桿子（兩端圓頭），兩側布簾垂到窗台下面，皺褶一深一淺
+    var cu = o.curtain || '#c4623f', cuL = shade(cu, 0.18), cuD = shade(cu, -0.22), rodY = y - 6, cwid = Math.max(8, Math.round(w * 0.16));
+    P.r(x - 9, rodY, w + 18, 1, '#3b2313'); P.r(x - 10, rodY - 1, 2, 3, '#b8892e'); P.r(x + w + 8, rodY - 1, 2, 3, '#b8892e');
+    [[x - 8, 1], [x + w + 8 - cwid, -1]].forEach(function (c) {
+      var c0 = c[0], bot = y + h + 6;
+      P.r(c0, rodY + 1, cwid, bot - rodY - 1, cu);
+      for (var f = 1; f < cwid; f += 3) { P.r(c0 + f, rodY + 2, 1, bot - rodY - 2, cuD); P.r(c0 + f + 1, rodY + 2, 1, bot - rodY - 2, cuL); }
+      for (var q = 0; q < cwid; q += 2) P.p(c0 + q, rodY + 1, '#3b2313');
+      P.r(c0, bot - 1, cwid, 1, cuD);
+      P.r(c[1] > 0 ? c0 + cwid - 2 : c0, y + Math.floor(h * 0.55), 2, 2, '#e8c35a');   // 綁帶
+    });
+  }
   defO('window', {
     layer: 'wall',
     draw: function (P, o) {
+      if (o.style === 'home') { homeWindow(P, o); return; }
       var x = o.x, y = o.y, w = o.w, h = o.h, b;
       var sky = ['#34476f', '#3c5079', '#465a84', '#51658e', '#5d7099', '#6a7ba3'];
       for (var yy = 0; yy < h; yy++) P.r(x, y + yy, w, 1, sky[Math.min(sky.length - 1, Math.floor(yy / 4))]);
@@ -1163,6 +1247,156 @@
       [[x + 1, 0], [x + 5, -2], [x + 9, 0]].forEach(function (l) { P.r(l[0], sy + 2, 1, 13 + l[1], l[1] ? C.chromeD : C.chrome); });
       P.r(x + 1, fy - 5, 9, 1, C.chromeD);
       P.ell(x + 5.5, sy + 1.5, 5.5, 2.2, '#7d1f22'); P.ell(x + 5.5, sy + 0.5, 5, 1.8, '#c0393b'); P.r(x + 3, sy, 3, 1, '#e0605a');
+    }
+  });
+
+  // ================================================================ 你家（聆聽室，v5 第六項第三期）的家具
+  // 小控制台（tuneConsole）：小書桌上一台像素控制台（深橄欖金屬殼、一小塊星圖螢幕、三顆銅輪＝能量／質地／溫度、三顆 LED）；點了推近成頻率光譜的星圖。
+  //   o.x＝桌子左緣、o.y＝桌子前緣（地板）、o.w＝桌寬（≥36）、o.d＝桌深、o.h＝桌面高（≈0.7 m＝20 格）。星星與 LED 在 glow 裡閃（每格畫、不進快取）
+  var TUNE8 = ['#f2cf5b', '#ff9a3c', '#ff4d3a', '#e8578f', '#5ee6f0', '#bfe8ff', '#4f8dff', '#9b6bff'];   // 頻率八格（dip-tune.js CELL_COLOR 的順序：放鬆、雀躍、沸騰、恍惚、平靜、冷冽、暴躁、頹靡）
+  function consoleGeo(o) {
+    var top = o.y - o.h - o.d, lip = o.y - o.h, cw = 30, cx = o.x + Math.floor((o.w - cw) / 2), by = top + 5;
+    return { top: top, lip: lip, cx: cx, cw: cw, by: by, scr: [cx + 2, by - 14, 13, 9], wheels: [cx + 18, cx + 22, cx + 26], leds: [[cx + 3, by - 3], [cx + 6, by - 3], [cx + 9, by - 3]] };
+  }
+  var TUNE_STARS = [[2, 2], [5, 6], [9, 1], [11, 5], [3, 7], [7, 3], [10, 7], [1, 4]];
+  defO('tuneConsole', {
+    box: function (o) { var g = consoleGeo(o); return [o.x - 1, g.by - 18, o.w + 2, o.y - (g.by - 18) + 1]; },
+    foot: function (o) { return [o.x, o.y - o.d, o.w, o.d]; },
+    lights: function (o) { var g = consoleGeo(o); return [[g.scr[0] + 6, g.scr[1] + 5, 22, 14, 'rgba(120,190,255,1)', 0.16]]; },
+    draw: function (P, o) {
+      var x = o.x, fy = o.y, w = o.w, d = o.d, h = o.h, g = consoleGeo(o), top = g.top, lip = g.lip;
+      var T0 = '#a8794c', TL = '#c4935f', TD = '#7a5432', LEG = '#4a2e1a';
+      shadowRect(P, x, fy - d, w, d, 0.45);
+      [x + 1, x + w - 3].forEach(function (lx) { P.r(lx, lip + 2, 2, h - 2, LEG); P.r(lx, lip + 2, 1, h - 2, '#6a4428'); shadowRect(P, lx, fy, 3, 1, 0.45); });
+      P.r(x + 3, fy - 5, w - 6, 1, LEG);
+      // 桌面＋前緣＋小抽屜
+      P.r(x, top, w, d, T0); P.r(x, top, w, 1, TD);
+      for (var gI = 0; gI < 8; gI++) P.r(x + 2 + Math.floor(hash(gI, 3, 81) * (w - 8)), top + 1 + Math.floor(hash(gI, 4, 81) * (d - 2)), 4, 1, TL);
+      P.r(x, lip, w, 3, TD); P.r(x, lip, w, 1, TL); P.r(x, lip + 2, w, 1, '#4a3020');
+      P.r(x + 10, lip + 3, w - 20, 5, TD); P.r(x + 10, lip + 3, w - 20, 1, TL); P.r(x + Math.floor(w / 2) - 1, lip + 5, 3, 1, '#c9a24a');
+      // 控制台本體（往後牆那邊立起來）
+      var cx = g.cx, cw = g.cw, by = g.by;
+      shadowRect(P, cx, by + 1, cw + 1, 2, 0.4);
+      P.r(cx - 1, by - 17, cw + 2, 18, '#1d1712');
+      P.r(cx, by - 16, cw, 16, '#3b4136'); P.r(cx, by - 16, cw, 1, '#5d6553'); P.r(cx, by - 1, cw, 1, '#262a22'); P.r(cx + cw - 1, by - 15, 1, 14, '#2b3027');
+      P.p(cx + 1, by - 15, '#7a8268'); P.p(cx + cw - 2, by - 15, '#7a8268'); P.p(cx + 1, by - 2, '#7a8268'); P.p(cx + cw - 2, by - 2, '#7a8268');   // 四顆螺絲
+      // 星圖螢幕（深色玻璃＋框）
+      var s = g.scr;
+      P.r(s[0] - 1, s[1] - 1, s[2] + 2, s[3] + 2, '#14160f'); P.r(s[0], s[1], s[2], s[3], '#070a16');
+      P.r(s[0], s[1] + s[3] - 1, s[2], 1, '#0e1426');
+      // 三顆銅輪（直立的滾輪，看得到半圈：亮面＋滾花）
+      g.wheels.forEach(function (wx, i) {
+        var wy = by - 14;
+        P.r(wx - 1, wy - 1, 5, 11, '#1d1712');
+        P.r(wx, wy, 3, 9, '#b87333'); P.r(wx, wy, 1, 9, '#e9a96a'); P.r(wx + 2, wy, 1, 9, '#7a4a22');
+        for (var k = 0; k < 9; k += 2) P.p(wx + 1, wy + k, '#8a5428');
+        P.p(wx + 1, wy + 10, ['#f2b341', '#8fe0a0', '#ff7a6b'][i]);   // 三軸的小色點（能量、質地、溫度）
+      });
+      // 下排：三顆 LED 的燈座＋小開關
+      g.leds.forEach(function (l) { P.r(l[0] - 1, l[1] - 1, 3, 3, '#1d1712'); P.p(l[0], l[1], '#2a3a22'); });
+      P.r(cx + 13, by - 4, 3, 3, '#1d1712'); P.r(cx + 14, by - 4, 1, 2, C.chrome);
+      // 電線：從背面垂到桌後（往牆角的插座）
+      P.line(cx + cw, by - 6, cx + cw + 3, by - 2, '#1d1712'); P.line(cx + cw + 3, by - 2, cx + cw + 4, top + 2, '#1d1712');
+      // 桌上：一杯茶、一張寫著頻率的小紙條
+      var mx = x + 3, my = top + 5;
+      P.r(mx, my - 4, 4, 5, '#efe8d6'); P.r(mx, my - 4, 4, 1, '#8a5a36'); P.r(mx + 4, my - 3, 1, 2, '#efe8d6'); P.r(mx, my, 4, 1, '#cfc5b0');
+      P.r(x + w - 8, top + 4, 6, 4, '#f3ecd9'); P.r(x + w - 7, top + 5, 4, 1, '#c0393b'); P.r(x + w - 7, top + 6, 3, 1, '#9a9aa2');
+    },
+    glow: function (P, o, S) {
+      var g = consoleGeo(o), s = g.scr, t = (S && S.rt) || 0;
+      P.a(0.22, function () { P.r(s[0], s[1], s[2], s[3], '#3a5a9a'); });
+      TUNE_STARS.forEach(function (q, i) {
+        var on = Math.floor(t * 2.2 + i * 0.7) % 4 !== 0, c = TUNE8[i % TUNE8.length];
+        P.p(s[0] + q[0], s[1] + q[1], on ? c : shade(c, -0.55));
+        if (on && i % 3 === 0) P.a(0.4, function () { P.p(s[0] + q[0] + 1, s[1] + q[1], c); });
+      });
+      var cur = Math.floor(t * 1.3) % TUNE_STARS.length, q0 = TUNE_STARS[cur];   // 鎖定框：一格一格跳
+      P.a(0.7, function () { P.r(s[0] + q0[0] - 1, s[1] + q0[1] - 1, 3, 1, '#fff1c4'); P.r(s[0] + q0[0] - 1, s[1] + q0[1] + 1, 3, 1, '#fff1c4'); });
+      ['#64d36a', '#f2c540', '#ff7a6b'].forEach(function (c, i) { var l = g.leds[i], on = i === 0 || Math.floor(t * 3 + i) % 3 === 0; P.p(l[0], l[1], on ? c : '#2a3a22'); });
+    }
+  });
+
+  // 落地燈（你家）：圓底座、細桿、米色燈罩；晚上暖暖的一圈光（lights＝燈池）
+  defO('floorLamp', {
+    box: function (o) { return [o.x - 8, o.y - 60, 17, 61]; },
+    foot: function (o) { return [o.x - 4, o.y - 3, 9, 3]; },
+    lights: function (o) { return [[o.x, o.y - 40, 46, 34, 'rgba(255,205,140,1)', 0.26], [o.x + 4, o.y - 2, 34, 10, 'rgba(255,214,160,1)', 0.12]]; },
+    draw: function (P, o) {
+      var x = o.x, fy = o.y, sh0 = o.shade || '#f0dcae';
+      P.a(0.4, function () { P.ell(x, fy, 6, 1.6, '#1b0e05'); });
+      P.ell(x, fy - 1, 4.5, 1.6, '#2a2420'); P.r(x - 3, fy - 2, 7, 1, '#4a403a');
+      P.r(x, fy - 48, 1, 46, '#2a2420'); P.r(x + 1, fy - 48, 1, 46, '#5a504a');
+      P.r(x - 1, fy - 22, 4, 1, '#2a2420');
+      // 燈罩：上窄下寬的梯形
+      for (var j = 0; j < 12; j++) { var hw = 4 + Math.floor(j * 4 / 11); P.r(x - hw, fy - 60 + j, hw * 2 + 2, 1, j === 0 ? shade(sh0, -0.2) : j === 11 ? shade(sh0, -0.28) : (j % 3 === 0 ? shade(sh0, -0.06) : sh0)); }
+      P.r(x - 7, fy - 49, 16, 1, '#a07a3c');
+    },
+    glow: function (P, o) {
+      var x = o.x, fy = o.y;
+      P.a(0.35, function () { P.r(x - 6, fy - 48, 14, 2, '#fff1c4'); });
+      P.a(0.18, function () { P.r(x - 5, fy - 59, 12, 10, '#fff7d8'); });
+      P.r(x - 1, fy - 48, 3, 1, '#fffbe6');
+    }
+  });
+
+  // 單人沙發（你家）：芥末黃絨布、木腳、靠背上兩顆鈕扣、一顆紅格子抱枕（o.color 換布色）
+  defO('armchair', {
+    box: function (o) { return [o.x, o.y - 37, o.w || 36, 38]; },
+    foot: function (o) { return [o.x, o.y - 12, o.w || 36, 12]; },
+    draw: function (P, o) {
+      var x = o.x, fy = o.y, w = o.w || 36, F = o.color || '#c58f2c', FL = shade(F, 0.2), FD = shade(F, -0.2), FDD = shade(F, -0.42);
+      P.a(0.45, function () { P.ell(x + w / 2, fy, w / 2 + 2, 2.2, '#1b0e05'); });
+      [x + 3, x + w - 5].forEach(function (lx) { P.r(lx, fy - 3, 2, 3, '#3b2313'); });
+      // 靠背
+      P.r(x + 4, fy - 36, w - 8, 22, '#1d1712'); P.r(x + 5, fy - 35, w - 10, 20, FD); P.r(x + 5, fy - 35, w - 10, 2, F); P.r(x + 6, fy - 33, w - 12, 1, FL);
+      [x + Math.floor(w / 3), x + Math.floor(2 * w / 3) - 1].forEach(function (bx) { P.p(bx, fy - 27, FDD); P.p(bx, fy - 26, FL); });
+      // 座墊
+      P.r(x + 5, fy - 17, w - 10, 6, '#1d1712'); P.r(x + 6, fy - 16, w - 12, 5, F); P.r(x + 6, fy - 16, w - 12, 1, FL); P.r(x + 6, fy - 12, w - 12, 1, FD);
+      // 前面板
+      P.r(x + 5, fy - 11, w - 10, 8, '#1d1712'); P.r(x + 6, fy - 11, w - 12, 7, FD); P.r(x + 6, fy - 11, w - 12, 1, F);
+      // 兩邊扶手（圓圓的頂）
+      [x, x + w - 7].forEach(function (ax, i) {
+        P.r(ax, fy - 23, 7, 20, '#1d1712'); P.r(ax + 1, fy - 22, 5, 19, i ? FD : F); P.r(ax + 1, fy - 24, 5, 3, FL); P.r(ax + 2, fy - 25, 3, 1, FL); P.r(ax, fy - 24, 1, 2, '#1d1712'); P.r(ax + 6, fy - 24, 1, 2, '#1d1712');
+        P.r(ax + 1, fy - 4, 5, 1, FDD);
+      });
+      // 抱枕（紅格子）
+      var px = x + 9, py = fy - 26;
+      P.r(px - 1, py - 1, 11, 10, '#1d1712'); P.r(px, py, 9, 8, '#b9443a');
+      for (var q = 1; q < 9; q += 3) { P.r(px + q, py, 1, 8, '#d9645a'); P.r(px, py + q, 9, 1, '#d9645a'); }
+      P.p(px, py, '#1d1712'); P.p(px + 8, py + 7, '#1d1712');
+    }
+  });
+
+  // 小邊桌（你家）：圓木桌面、一支腳；上面平放兩張唱片（封套）＋一杯茶
+  defO('sideTable', {
+    box: function (o) { return [o.x - 9, o.y - 24, 19, 25]; },
+    foot: function (o) { return [o.x - 5, o.y - 4, 11, 4]; },
+    draw: function (P, o) {
+      var x = o.x, fy = o.y, ty = fy - 16;
+      P.a(0.45, function () { P.ell(x, fy, 7, 1.8, '#1b0e05'); });
+      P.ell(x, fy - 1, 4.5, 1.4, '#4a2e1a'); P.r(x - 1, ty + 2, 3, fy - ty - 3, '#5a3a22'); P.r(x - 1, ty + 2, 1, fy - ty - 3, '#7a5432');
+      P.ell(x, ty + 1, 9, 3.4, '#4a2e1a'); P.ell(x, ty, 9, 3.2, '#a8794c'); P.ell(x, ty - 0.4, 7.6, 2.4, '#b88a57');
+      // 平放的兩張封套（斜斜疊著）＋上面那張的黑膠露出一角
+      P.r(x - 7, ty - 3, 9, 3, '#1d1712'); P.r(x - 6, ty - 3, 7, 2, '#3f6fa6'); P.r(x - 6, ty - 3, 7, 1, '#6f9bd0');
+      P.r(x - 5, ty - 5, 9, 3, '#1d1712'); P.r(x - 4, ty - 5, 7, 2, '#e9ddbd'); P.r(x - 2, ty - 5, 3, 1, '#c0393b');
+      P.p(x + 4, ty - 4, '#151515'); P.p(x + 5, ty - 4, '#2a2a2a');
+      P.r(x + 3, ty - 6, 3, 4, '#efe8d6'); P.r(x + 3, ty - 6, 3, 1, '#8a5a36'); P.p(x + 6, ty - 5, '#efe8d6');
+    }
+  });
+  // 地上的唱片箱（你家）：木箱裡一排唱片書背，最前面一張朝外（只是擺設，不能翻）
+  defO('recordCrate', {
+    box: function (o) { return [o.x - 1, o.y - 22, (o.w || 26) + 2, 23]; },
+    foot: function (o) { return [o.x, o.y - 9, o.w || 26, 9]; },
+    draw: function (P, o) {
+      var x = o.x, fy = o.y, w = o.w || 26, h = 10, d = 8, lip = fy - h, back = fy - h - d;
+      shadowRect(P, x - 1, fy - 1, w + 2, 2, 0.4);
+      P.r(x, back, w, d, '#5a3a22');
+      var cols = ['#e9ddbd', '#2c2725', '#b9443a', '#3f6fa6', '#d8b56c', '#efe8d6', '#5f8f4e', '#1d1d22', '#d9783a', '#c3bca9', '#8b5aa0', '#e6cd7c'];
+      for (var i = 0; i < w - 4; i += 2) { var c = cols[(i / 2 + (o.seed | 0)) % cols.length], top = back - 4 - Math.floor(hash(i, 7, 91 + (o.seed | 0)) * 3); P.r(x + 2 + i, top, 2, lip - top, c); P.r(x + 3 + i, top, 1, lip - top, shade(c, -0.18)); }
+      P.r(x + 4, back - 9, 12, 12, '#1d1712'); P.r(x + 5, back - 8, 10, 10, o.cover || '#c4623f'); P.ell(x + 10, back - 3, 3, 3, '#151515'); P.p(x + 10, back - 3, '#f2c540');
+      P.r(x, lip, w, h, C.pine); P.r(x, lip, w, 1, C.pineL); P.r(x, lip + 4, w, 1, C.pineD); P.r(x, fy - 2, w, 2, C.pineDD);
+      P.r(x, back, 1, fy - back, C.pineD); P.r(x + w - 1, back, 1, fy - back, C.pineDD);
+      P.r(x + Math.floor(w / 2) - 3, lip + 2, 6, 2, '#3b2313');
     }
   });
 

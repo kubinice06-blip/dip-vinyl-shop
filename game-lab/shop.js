@@ -2176,13 +2176,22 @@
       render();
       layoutOverlay();
     }
-    var hiddenAt = 0;
+    var hiddenAt = 0, frozen = false, frozenAt = 0;
     function onVis() {
-      if (destroyed) return;
+      if (destroyed || frozen) return;   // 凍著（freeze）：迴圈本來就停了，回前景也不重開（解凍時才開）
       if (document.hidden) { cancelAnimationFrame(raf); raf = 0; hiddenAt = now(); }
       else if (!raf) { if (hiddenAt) tPaused += now() - hiddenAt; hiddenAt = 0; last = 0; raf = requestAnimationFrame(loop); }
     }
     document.addEventListener('visibilitychange', onVis);
+    // 停／恢復店景迴圈（v5 第六項第三期：聆聽室的控制台推近成全螢幕星圖時，被蓋住的店景不用每格畫）；照 onVis 的寫法，停著的時間不算（走路、動畫接著原本的進度）
+    function freeze(on) {
+      if (destroyed) return;
+      if (on) { if (frozen) return; frozen = true; cancelAnimationFrame(raf); raf = 0; frozenAt = now(); if (hiddenAt) { tPaused += now() - hiddenAt; hiddenAt = 0; } return; }
+      if (!frozen) return;
+      frozen = false; tPaused += now() - frozenAt; frozenAt = 0; last = 0;
+      if (document.hidden) { hiddenAt = now(); return; }
+      if (!raf) raf = requestAnimationFrame(loop);
+    }
     var OBS = null;
     function spotXY(key) {
       if (Array.isArray(key)) return { x: key[0], y: key[1], outside: !!key[2] };
@@ -2437,6 +2446,8 @@
       toCss: toCss, hostCss: hostCss, render: render, fit: fit,
       setTime: function (t) { fixedT = t; state.t = t; render(); return api; },
       cacheInfo: function () { return cache ? { ms: Math.round(cache.ms), entries: cache.entries.length, mb: Math.round(cache.bytes / 1048576 * 10) / 10, k: k } : null; },
+      freeze: function (on) { freeze(on !== false); return api; },
+      get frozen() { return frozen; },
       destroy: function () {
         destroyed = true; cancelAnimationFrame(raf); if (ro) ro.disconnect(); clearTimeout(coverQ);
         document.removeEventListener('visibilitychange', onVis);

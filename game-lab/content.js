@@ -826,13 +826,40 @@
     taipeiHere: L('你在這', '新'),
     taipeiNote: L('其他店還沒開。之後一家一家開，每家的箱子、客人、老闆都不一樣。', '新'),
     taipeiLink: L('出門看看（台北地圖・預告）', '新'),
-    backToShop: L('回店裡', '新')
+    backToShop: L('回店裡', '新'),
+    // 你家（聆聽室，v5 第六項第三期第一步）：台北地圖的小房子、房間的頂欄與面板、唱片架、唱盤、控制台（頻率光譜的星圖）、想要清單
+    homeBtn: L('你家', '新'),
+    homeTitle: L('你家', '新'),
+    homeSub: L('聆聽室', '新'),
+    homeNote: L('點唱片架、唱盤、控制台，會走過去打開。', '新'),
+    homeEmpty: L('唱片架還空著。推門玩一趟，帶走的唱片會擺在這裡。', '新'),
+    homeShelf: L('唱片架', '新'),
+    homeDeck: L('唱盤', '新'),
+    homeConsole: L('控制台', '新'),
+    homeShelfSub: L('點封面看唱片資訊，按「放唱盤」就放來聽。', '新'),
+    homeDeckSub: L('挑一張放上唱盤。放完接下一張收藏。', '新'),
+    homeDeckEmpty: L('唱片架還空著，唱盤沒東西放。', '新'),
+    homePut: L('放唱盤', '新'),
+    homeOnDeck: L('放上唱盤：《{album}》', '新'),
+    homeStop: L('停', '新'),
+    homeNow: L('唱盤上', '新'),
+    homeIdle: L('唱盤空著。點唱盤挑一張來放。', '新'),
+    homeWantN: L('想要清單 {n} 張', '新'),
+    homeWant: L('《{album}》加進想要清單。', '新'),
+    homeWantAgain: L('《{album}》已經在想要清單裡。', '新'),
+    homeTuneFail: L('控制台開不起來，等一下再試。', '新'),
+    homeTuneLoading: L('控制台開機中…', '新'),
+    homeTuneBack: L('回房間', '新')
   };
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
     aceDone: '老闆', aceSame: '老闆', aceLater: '老闆',
-    titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）' };
+    titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）',
+    homeBtn: '（畫面字）', homeTitle: '（畫面字）', homeSub: '（畫面字）', homeNote: '（畫面字）', homeEmpty: '（畫面字）', homeShelf: '（畫面字）', homeDeck: '（畫面字）',
+    homeConsole: '（畫面字）', homeShelfSub: '（畫面字）', homeDeckSub: '（畫面字）', homeDeckEmpty: '（畫面字）', homePut: '（畫面字）', homeOnDeck: '（畫面字）', homeStop: '（畫面字）', homeNow: '（畫面字）', homeIdle: '（畫面字）',
+    homeWantN: '（畫面字）', homeWant: '（畫面字）', homeWantAgain: '（畫面字）', homeTuneFail: '（畫面字）',
+    homeTuneLoading: '（畫面字）', homeTuneBack: '（畫面字）' };
 
   // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號，{n} 一律代入千分位字串 engine.moneyText(n)：$1,200）
   C.shopUi = {
