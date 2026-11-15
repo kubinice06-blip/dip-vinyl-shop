@@ -705,14 +705,15 @@ html.tune-inapp-lock body{padding-top:120px}
   function clearQueue() { queue.length = 0; clearTimeout(qTimer); qTimer = 0; }
   // ── 搜尋：找到的那張，三顆輪子依序轉過去（能量→質地→色溫），轉的路上照樣掃過沿途的唱片 ──
   let travelTok = 0;
-  function cancelTravel() { travelTok++; }
+  let traveling = false;   // 轉台動畫走到一半（電台撥下去時不要先播路上那張，到站自己會播）
+  function cancelTravel() { travelTok++; traveling = false; }
   function travelTo(c, quiet) {
-    const tok = ++travelTok; let k = 0, done;
+    const tok = ++travelTok; let k = 0, done; traveling = true;
     const finished = new Promise(r => { done = r; });
     if (!quiet) ensureAudio(); stopPreview(); clearQueue();   // quiet：不是使用者手勢觸發（網址參數），不能拿來解鎖音訊
     const leg = () => {
       if (tok !== travelTok) { done(false); return; }
-      if (k >= 3) { clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
+      if (k >= 3) { traveling = false; clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
       const axis = ['x', 'y', 'z'][k++], from = state.p[axis], to = c['p' + axis], dist = Math.abs(to - from);
       if (dist < 0.05) { leg(); return; }
       const dur = Math.min(1000, 280 + dist * 10), t0 = performance.now();
@@ -1260,7 +1261,7 @@ html.tune-inapp-lock body{padding-top:120px}
   function radioToggled() {
     clearTimeout(radioT); if (!state.radio) return;
     ensureAudio(); cfg.onGesture?.(true);
-    if (playing) return;
+    if (playing || traveling) return;   // 正在轉台：到站的那張 armPreview 會播，播完照常換下一張（不然路上那張先播一次、到站又播一次）
     if (previewCard && audibleCard !== previewCard && !previewCard.card.previewUnavailable) playPreview(); else radioNext(300);
   }
   function playPreview() {
@@ -1428,8 +1429,7 @@ html.tune-inapp-lock body{padding-top:120px}
     const b = el?.mineBtn; if (!b) return;
     const on = mineOn();
     b.setAttribute('aria-pressed', String(on)); b.classList.toggle('busy', mineBusy && !on);
-    let tot = 0; if (MINE) MINE.forEach(n => { tot++; });
-    b.title = on ? `只看我的唱片櫃：開（唱片櫃 ${tot} 張・星圖上 ${mineInMap()} 張）` : mineBusy ? '只看我的唱片櫃：讀唱片櫃中…' : '只看我的唱片櫃';
+    b.title = on ? `只看我的唱片櫃：開（唱片櫃 ${MINE.size} 張・星圖上 ${mineInMap()} 張）` : mineBusy ? '只看我的唱片櫃：讀唱片櫃中…' : '只看我的唱片櫃';
   }
   function mineFlash(msg) { if (!el.hint) return; el.hint.textContent = msg; el.hint.classList.remove('is-tucked'); }
   // 開：有登入就跟頁面要唱片櫃（頁面讀過就直接給記憶體裡那份）；沒登入但已經有資料（測試、聆聽室灌的）也照開
@@ -1590,7 +1590,7 @@ html.tune-inapp-lock body{padding-top:120px}
 
   // ── 進出 ──────────────────────────────────────────────────────────
   let leverT = 0;
-  const modeHint = () => passN === 0 && N ? (mineOn() && !filterActive() ? '唱片櫃裡還沒有星圖上的唱片：按「就這張」再收進唱片櫃' : '沒有符合的卡：換個篩選，或按「全部」')
+  const modeHint = () => passN === 0 && N ? (mineOn() && !filterActive() ? '唱片櫃裡還沒有星圖上的唱片：關掉唱片架鈕，挑一張收進唱片櫃' : '沒有符合的卡：換個篩選，或按「全部」')
     : state.radio ? (mineOn() ? '收藏電台：只播你唱片櫃裡的，試聽播完自動換下一張' : 'RADIO：試聽播完自動轉到下一張　轉輪隨時換台') : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
   function setModeUI(animate) {
     const f = state.radio, pos = f ? 'down' : 'up';
@@ -1758,6 +1758,6 @@ html.tune-inapp-lock body{padding-top:120px}
   function stop() { clearTimeout(radioT); backFrom = null; state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
   global.DipTune = { configure, start, stop, pickAgain, keepsPlaying, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, setMine, refreshMine, mineCount,
-    get filter() { return { ...FILT, mine: mineOn() ? 1 : 0, matched: passN }; }, get mine() { let n = 0; if (MINE) MINE.forEach(() => { n++; }); return { on: mineOn(), want: mineWant, busy: mineBusy, size: n, onMap: mineInMap() }; },
+    get filter() { return { ...FILT, mine: mineOn() ? 1 : 0, matched: passN }; }, get mine() { return { on: mineOn(), want: mineWant, busy: mineBusy, size: MINE ? MINE.size : 0, onMap: mineInMap() }; },
     get state() { return state; }, findCards: q => (CARDS ? findCards(q).map(c => c.card) : []), get previewCard() { return previewCard ? previewCard.card : null; } };
 })(window);
