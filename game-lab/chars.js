@@ -13,7 +13,8 @@
  *       (x, y)＝腳底中點（ctx 座標）。opts：
  *         scale   ctx px／小人格，預設 3（ctx 以美術格為單位時）；P2 裝置解析度就給 3*k。3 的倍數或 ≥6 → 美術格模式（含 GBA 修飾），
  *                 其他（1、2、4、5）→ 原版平面像素（沒有描邊）。
- *         flip    朝左；dir 朝向 'front'｜'back'（DIRS；舊的 back:true＝dir:'back'，照收）；倒地一律正面
+ *         flip    朝左；dir 朝向 'front'｜'back'｜'side'（DIRS；舊的 back:true＝dir:'back'，照收）；倒地一律正面；
+ *                 側面畫朝右（flip＝朝左＝鏡像），只有 idle／walk 有，其他姿勢退回正面
  *         outline／shade（預設 true）；plain:true＝兩個都關（＝原版一模一樣）
  *         tint    受傷閃色：'#ff3030' 或 { color, a }；sil 剪影色（整個人塗成一色）；alpha；shadow（預設 true，地上的橢圓影子）
  *         wear    臨時穿戴（例：{ hat:'phones' } 試聽機戴上耳機），不改 spec
@@ -38,7 +39,7 @@
  *       hurt 往後仰（0／1 抖）、ko 倒地、cheer 雙手舉高（1 跳起來）、dig 彎腰翻箱（1 抽出一張）、hold 雙手拿在胸前、
  *       point 手伸直指（老闆舉旗）、sit 坐著、talk 說話比手勢
  *   ARM／P2POSE → 舊 shop.js 的手勢、P2 原型的 pose 名稱對到 [pose, frame]
- *   DIRS → ['front','back']：畫得出來的朝向（第二步加 'side'；shop.js 看這個決定橫走用不用側面）
+ *   DIRS → ['front','back','side']：畫得出來的朝向（shop.js 看這個決定橫走用不用側面）
  *   cast() → 全部 npc id；legacyParity() → 瀏覽器裡有 dip-character.js 時，核對抄過來的資料跟原檔一致
  *
  * spec（缺的補預設；顏色值＝調色盤 id，舊的單字母 k g r b w e d n p o y c t u v m s 都照原色；'auto'＝那一款的預設色）
@@ -258,6 +259,113 @@
       back: L(0, ['.....kkkkkk.....', '.....kkkkkk.....', '.....kkkkkk.....', '...kkkkkkkkkk...', '....kkkkkkkk....', '....kkkkkkkk....', '.....ssssss.....']) }
   };
 
+  // ===================================================================== 側面（v5 第五項第二步：寶可夢黃版的前／後／側三向）
+  // 側面一律畫朝右，朝左＝整張鏡像（flip）；單邊的東西（旁分、單片眼鏡、斜背包、帽沿…）鏡像後會換邊，寶可夢也這樣。
+  // 只有站（idle）跟走（walk）有側面，其他姿勢 compose 退回正面。正面 build() 一行不動（原版逐格比對的測試靠它），側面另外畫：buildSide()。
+  // 版型：身體中線在欄 8（跟正面一樣，轉身不會左右跳一格）；頭 欄 4–11、臉朝右、一隻眼在第 4 列第 10 欄、耳朵在欄 7；
+  //       身體 欄 5–10（比正面窄）；看得到的那隻手從欄 8 的肩膀垂下來；腿＝站（兩腿併）、跨步（前腳往前、後腳往後）兩格。
+  // 欄位：sd＝畫在前面那層、sdb＝畫在身體後面那層（長髮、馬尾、帽 T 的帽子、身後的包）；
+  //       下身 legs＝[站, 跨步]（第 12–14 列，含鞋 S）、over＝吊帶；帽子 cut＝蓋掉第幾列以上的頭髮（沒給就沿用正面）。字母同正面（見「零件」）。
+  var SIDE_HEAD = L(2, ['.....ssssss.....', '....ssssssss....', '....ssssssks....', '....ssssssss....', '.....ssssss.....']);
+  var SIDE = {
+    hair: {
+      neat: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '....HHHH........', '....HHH.........', '....HH..........']) },
+      bob: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '....HHHHHHHH....', '....HHHHH.......', '....HHHHH.......', '....HHH.........']) },
+      spike: { sd: L(0, ['...H.H.H.H......', '...HHHHHHHH.....', '....HHHHHHHH....', '....HHHHH.......', '....HHH.........', '....HH..........']) },
+      long: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '...HHHHHHH......', '...HHHHHH.......', '...HHHHHH.......', '...HHHH.........']),
+        sdb: L(7, ['...HHH..........', '...HHH..........', '....H...........']) },
+      sidepart: { sd: L(1, ['.....HHHHHHH....', '....HHHHHHHHH...', '....HHHHHH..H...', '....HHH.........', '....HH..........']) },
+      curtain: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '....HHHHHHHH....', '....HHHH...H....', '....HHH.........']) },
+      buzz: { sd: L(2, ['.....HHHHHH.....', '....HHHHH.......', '....HH..........']) },
+      mohawk: { sd: L(-1, ['....H.HH.HH.....', '....HHHHHHH.....', '....HHHHHHH.....', '.....ffffff.....', '....ffff........']) },
+      bald: {},
+      mullet: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '....HHHHH.......', '...HHHH.........', '...HHHH.........', '...HHH..........']),
+        sdb: L(7, ['...HHH..........', '...HH...........']) },
+      bun: { sd: L(-1, ['....HH..........', '...HHHH.........', '...HHHHHHHH.....', '....HHHHHHHH....', '....HHHHH.......', '....HHH.........', '....HH..........']) },
+      ponytail: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '...rHHHHH.......', '....HHH.........', '....HH..........']),
+        sdb: L(4, ['..HH............', '.HH.............', '.HH.............', '..H.............']) },
+      twintails: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '...rHHHHH.......', '...HHHH.........', '...HHH..........', '...HH...........', '...HH...........', '...HH...........', '....H...........']) },
+      bangs: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '...HHHHHHHHH....', '...HHHHHH.......', '...HHHHHH.......', '...HHHHH........']),
+        sdb: L(7, ['...HHH..........', '...HHH..........', '...HH...........']) },
+      wavy: { sd: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '...HHHHHHHH.....', '..HHHHHH........', '..HHHHHH........', '..HHHHH.........']),
+        sdb: L(7, ['..HHHH..........', '...HHH..........', '..HH............']) },
+      afro: { sd: L(-1, ['....HHHHHH......', '..HHHHHHHHHH....', '.HHHHHHHHHHHH...', '.HHHHHHHHHHHH...', '.HHHHHHHHH......', '.HHHHHHH........', '..HHHHHH........', '...HHH..........']) },
+      curly: { sd: L(0, ['....HH.HH.......', '...HHHHHHHH.....', '...HHHHHHHHH....', '...HHHHHHH.H....', '...HHHH.........', '....HH..........']) }
+    },
+    hat: {
+      cap: { sd: L(1, ['.....AAAAAA.....', '....AAAAAAAAAA..']) },
+      capback: { sd: L(1, ['.....AAAAAA.....', '..AAAAAAAAAA....']) },
+      trucker: { sd: L(1, ['.....AAABBB.....', '....AAAABBBAAA..']) },
+      beanie: { sd: L(1, ['.....AAAAAA.....', '....AAAAAAAA....', '....AAAAA.......']) },
+      pompom: { sd: L(-1, ['......BB........', '.....AAAAAA.....', '....AAAAAAAA....', '....aaaaaaaa....']) },
+      bucket: { sd: L(0, ['.....AAAAAA.....', '.....AAAAAA.....', '...AAAAAAAAAA...', '...A........A...']) },
+      beret: { sd: L(0, ['.......a........', '....AAAAAA......', '...AAAAAAAA.....']) },
+      fedora: { sd: L(1, ['......AAAAA.....', '.....AAAAAA.....', '..AAAAAAAAAAAA..']) },
+      tophat: { sd: L(-2, ['.....AAAAAA.....', '.....AAAAAA.....', '.....AAAAAA.....', '.....BBBBBB.....', '...AAAAAAAAAA...']) },
+      bandana: { sd: L(1, ['.....AABAAA.....', '...AABAAABAA....', '..AA............', '...A............']) },
+      phones: { sd: L(0, ['......AAA.......', '.......A........', '.......A........', '......AA........', '......AA........']) },
+      bigphones: { sd: L(0, ['.....AAA........', '......A.........', '.....BBB........', '....BBBBB.......', '.....BBB........']) },
+      neckphones: { sd: L(6, ['.....A..........', '......BB........']) },
+      crown: { sd: L(0, ['....A.A.A.A.....', '....AAAAAAAA....']) }
+    },
+    glasses: {
+      classic: { sd: L(4, ['.......GGGkk....']) },
+      round: { sd: L(4, ['.......GGGke....']) },
+      square: { sd: L(3, ['..........GG....', '.......GGGke....', '..........GG....']) },
+      browline: { sd: L(3, ['.........GGG....', '.......GGGke....']) },
+      sunglasses: { sd: L(3, ['..........GG....', '.......GGGwk....']) },
+      monocle: { sd: L(3, ['.........GGG....', '.........G.G....', '.........GGG....', '...........G....']) }
+    },
+    facial: {
+      beard: { sd: L(5, ['.......F..FF....', '.......FFFFF....']) },
+      mustache: { sd: L(5, ['.........FFF....']) },
+      goatee: { sd: L(5, ['..........FF....', '..........FF....', '...........F....']) },
+      stubble: { sd: L(5, ['.......f...f....', '.......ffff.....']) },
+      sideburns: { sd: L(4, ['.......F........', '......FF........']) }
+    },
+    top: {
+      tee: { sd: L(7, ['.....TTTTTT.....', '.....TTTTTT.....', '.....TTTTTT.....', '.....TTTTTT.....', '.....TTTTTT.....']) },
+      graphic: { sd: L(7, ['.....TTTTTT.....', '.....TTTTTU.....', '.....TTTTUr.....', '.....TTTTTU.....', '.....TTTTTT.....']) },
+      tank: { sd: L(7, ['.....TTTsTT.....', '.....TTTTTT.....', '.....TTTTTT.....', '.....TTTTTT.....', '.....TTTTTT.....']) },
+      stripe: { sd: L(7, ['.....TTTTTT.....', '.....UUUUUU.....', '.....TTTTTT.....', '.....UUUUUU.....', '.....TTTTTT.....']) },
+      hoodie: { sd: L(7, ['.....TTTTTw.....', '.....TTTTTw.....', '.....TTTTTT.....', '.....TTTUUU.....', '.....TTTTTT.....']),
+        sdb: L(6, ['....T...........', '....T...........']) },
+      sweater: { sd: L(7, ['.....TTUUUU.....', '.....TTTTTT.....', '.....TTTTTT.....', '.....TTTTTT.....', '.....UUUUUU.....']) },
+      flannel: { sd: L(7, ['.....TUTTUT.....', '.....TUTTUT.....', '.....UUUUUU.....', '.....TUTTUT.....', '.....TUTTUT.....']) },
+      jacket: { sd: L(7, ['.....TTTTUU.....', '.....TTTTTU.....', '.....TTTTTU.....', '.....TTTTTU.....', '.....TTTTTU.....']) },
+      suit: { sd: L(7, ['.....TTTTww.....', '.....TTTTwU.....', '.....TTTTTU.....', '.....TTTTTT.....', '.....TTTTTT.....']) },
+      apron: { sd: L(7, ['.....TTTTTT.....', '.....TTTTUU.....', '....UUUUUUU.....', '....UTTTUUU.....', '.....TTTUUU.....']) }
+    },
+    bottom: {
+      pants: { legs: [L(12, ['.....LLLLLL.....', '......LLLL......', '......SSSSS.....']), L(12, ['.....LLLLLL.....', '.....LL..LL.....', '....SSS..SSS....'])] },
+      jeans: { legs: [L(12, ['.....LLLLLL.....', '......LLsL......', '......SSSSS.....']), L(12, ['.....LLLLLL.....', '.....LL..sL.....', '....SSS..SSS....'])] },
+      slim: { legs: [L(12, ['.....LLLLLL.....', '.......LL.......', '......SSSS......']), L(12, ['.....LLLLLL.....', '......L..L......', '.....SSS.SSS....'])] },
+      shorts: { legs: [L(12, ['.....LLLLLL.....', '......ssss......', '......SSSSS.....']), L(12, ['.....LLLLLL.....', '.....ss..ss.....', '....SSS..SSS....'])] },
+      skirt: { legs: [L(12, ['.....LLLLLL.....', '....LLLLLLLL....', '......SSSSS.....']), L(12, ['.....LLLLLL.....', '....LLLLLLLL....', '....SSS..SSS....'])] },
+      longskirt: { legs: [L(12, ['.....LLLLLL.....', '....LLLLLLLL....', '....LLLLLLSS....']), L(12, ['.....LLLLLL.....', '....LLLLLLLL....', '...SLLLLLLLSS...'])] },
+      overalls: { legs: [L(12, ['.....LLLLLL.....', '......LLLL......', '......SSSSS.....']), L(12, ['.....LLLLLL.....', '.....LL..LL.....', '....SSS..SSS....'])],
+        over: L(7, ['.......LL.......', '......L..L......', '.....L...LL.....', '.....L..LLL.....', '.....LLLLLL.....']) }
+    },
+    neck: {
+      scarf: { sd: L(7, ['.....NNNNNNN....']) },
+      longscarf: { sd: L(7, ['.....NNNNNNN....', '..........N.....', '..........N.....', '..........N.....']) },
+      bowtie: { sd: L(7, ['..........kN....']) },
+      necklace: { sd: L(7, ['.........N......', '..........N.....', '.........NN.....']) }
+    },
+    bag: {
+      recordbag: { sd: L(7, ['........Q.......', '.......Q........', '...kkkk.........', '...MMMM.........', '...MQMM.........', '...MMMM.........']) },
+      tote: { sdb: L(7, ['................', '....Q...........', '...MMM..........', '...MQM..........', '...MMM..........', '...MMM..........']) },
+      crossbag: { sd: L(7, ['.......Q........', '........Q.......', '.........Q......', '.........MMM....', '.........MMM....']) },
+      backpack: { sd: L(6, ['...MMM..........', '..MMMM.M........', '..MMMM.M........', '..MQMM..........', '..MQMM..........', '..MMMM..........']) }
+    },
+    head: {   // NPC 的整顆頭（傳說藏家：高禮帽壓低、單片眼鏡在看得到的那隻眼）
+      boss: L(0, ['.....kkkkkk.....', '.....kkkkkk.....', '.....kkkkkk.....', '..kkkkkkkkkkkk..', '....kkssssss....', '....kksssyys....', '.....ssssss.....'])
+    }
+  };
+  // 側面的手：看得到的那隻（近手）從欄 8 的肩膀垂下來；走路跨步那格近手往前擺、遠手往後（只露出身後的手掌）
+  //   從第 7 列的肩頭算起，袖子＝上衣的 sl＋1 格（短袖蓋到上臂、長袖蓋到手腕、背心沒有袖子），顏色 X＝上衣暗一階
+  var SARMS = { down: [[8, 7], [8, 8], [8, 9], [8, 10]], fwd: [[8, 7], [9, 8], [10, 9], [11, 10]], back: [[7, 7], [6, 8], [5, 9], [4, 10]] };
+
   // ===================================================================== spec
   var DEFAULT = { skin: 's', hair: 'neat', hairColor: 'k', hat: 'none', hatColor: 'auto', hat2Color: 'auto', glasses: 'none', glassesColor: 'auto',
     facial: 'none', facialColor: 'auto', top: 'tee', topColor: 'b', top2Color: 'auto', bottom: 'pants', bottomColor: 'k', shoesColor: 'k',
@@ -365,6 +473,7 @@
       L: colorHex(s.bottomColor) || LP.k,
       S: colorHex(s.shoesColor) || LP.k
     };
+    C.X = mix(C.T, '#2a1838', lum(C.T) > 0.85 ? 0.2 : 0.3);   // 側面的袖子（手臂疊在身體上，比上衣暗一階才看得出來；正面不用）
     C.F = pick(s.facialColor, s.hairColor) || C.H;
     C.f = mix(C.s, C.F, 0.38);
     C.A = pick(s.hatColor, ht.dc || 'b') || LP.b;
@@ -519,6 +628,53 @@
     pts.held = P.held === 'chest' ? [8, 10, up] : P.held === 'hand' ? pts.hand : null;
     return { ops: ops, pts: pts, P: P };
   }
+  // 側面（朝右；只給 idle／walk）：idle 兩格＝呼吸（第 2 格上身沉 1 美術格）；walk 第 0 格＝站（兩腿併、手垂著）、第 1 格＝跨步（上身沉 1 格、近手往前、遠手往後）
+  //   疊的順序（由後往前）：身後層 sdb（長髮、帽 T 的帽子、身後的包）→ 遠手 → 腿＋鞋 → 上衣 → 吊帶 → 包 → 近手 → 頸飾 → 頭（側臉）→ 鬍 → 頭髮 → 眼鏡 → 帽
+  function hasSide(s) { return !s.head || !HEADS[s.head] || !!SIDE.head[s.head]; }
+  function buildSide(s, pose, frame) {
+    var stride = pose === 'walk' && frame === 1;
+    var P = { R: stride ? 'fwd' : 'down', Lf: stride ? 'back' : null, legs: stride ? 'stride' : 'stand', up: frame === 1 ? [0, 1] : [0, 0], head: [0, 0], hop: 0, ko: false, held: null };
+    var top = TOPS_[s.top] || TOPS_.tee, hatP = HATS_[s.hat] || HATS_.none, preset = s.head && HEADS[s.head];
+    var hair = SIDE.hair[s.hair] || SIDE.hair.neat, hat = SIDE.hat[s.hat], tp = SIDE.top[s.top] || SIDE.top.tee, bot = SIDE.bottom[s.bottom] || SIDE.bottom.pants;
+    var gl = SIDE.glasses[s.glasses], fc = SIDE.facial[s.facial], nk = SIDE.neck[s.neck], bg = SIDE.bag[s.bag];
+    var cut = hat ? (hat.cut != null ? hat.cut : hatP.cut) : -99, ops = [], pts = {};
+    var up = P.up, hd = up;
+    function op(cells, d) { if (cells.length) ops.push({ cells: cells, dx: d[0], dy: d[1] }); }
+    var noCut = function (c, r) { return r > cut; };
+    function arm(name, key) {
+      var chain = SARMS[name], cells = [];
+      var sl = top.sl ? top.sl + 1 : 0;
+      for (var i = 0; i < chain.length; i++) cells.push([chain[i][0], chain[i][1], i < sl ? 'X' : 's']);
+      var h = chain[chain.length - 1]; pts[key] = [h[0] + 0.5, h[1] + 0.5, up];
+      return cells;
+    }
+    // 1 身後
+    if (!preset && hair.sdb) op(layerCells(hair.sdb, [], noCut), hd);
+    if (tp.sdb) op(layerCells(tp.sdb, []), up);
+    if (bg && bg.sdb) op(layerCells(bg.sdb, []), up);
+    if (P.Lf) op(arm(P.Lf, 'handB'), up);
+    // 2 腿＋鞋（站／跨步）
+    op(layerCells(bot.legs[stride ? 1 : 0], []), [0, 0]);
+    // 3 上衣、吊帶
+    op(layerCells(tp.sd, []), up);
+    if (bot.over) op(layerCells(bot.over, []), up);
+    // 4 包
+    if (bg && bg.sd) op(layerCells(bg.sd, []), up);
+    // 5 近手、頸飾（圍巾繞過肩頭，蓋在手臂上面）
+    op(arm(P.R, 'hand'), up);
+    if (!pts.handB) pts.handB = pts.hand;
+    if (nk && nk.sd) op(layerCells(nk.sd, []), up);
+    // 6 頭
+    op(layerCells(preset ? SIDE.head[s.head] : SIDE_HEAD, []), hd);
+    if (!preset) {
+      if (fc && fc.sd) op(layerCells(fc.sd, []), hd);
+      if (hair.sd) op(layerCells(hair.sd, [], noCut), hd);
+      if (gl && gl.sd) op(layerCells(gl.sd, []), hd);
+      if (hat && hat.sd) op(layerCells(hat.sd, []), hatP.neck ? up : hd);
+    }
+    pts.face = [9.5, 4.5, hd]; pts.chest = [8, 9.5, up]; pts.foot = [8, 15, [0, 0]]; pts.seat = [8, 12, [0, 0]]; pts.held = null;
+    return { ops: ops, pts: pts, P: P };
+  }
 
   // ===================================================================== 光柵化（美術格：1 小人格＝3×3）
   var C0 = -6, R0 = -6, GC = 28, GR = 25;          // 格子範圍：欄 −6…21、列 −6…18
@@ -527,10 +683,12 @@
   function ay0(r) { return 1 + (r - R0) * 3; }
   var memo = {}, memoN = 0, MEMO_MAX = 600;
   function keyOf(s, pose, frame, o) { return JSON.stringify(s) + '|' + pose + '|' + frame + '|' + (o.flip ? 1 : 0) + o.dir.charAt(0) + (o.outline ? 1 : 0) + (o.shade ? 1 : 0) + '|' + (o.tint || '') + '|' + (o.sil || '') + '|' + o.mode; }
-  // 朝向：dir 'front'｜'back'（DIRS 裡的才算）；沒給 dir 時讀舊的 back:true；倒地一律正面
-  var DIRS = ['front', 'back'];
+  // 朝向：dir 'front'｜'back'｜'side'（DIRS 裡的才算）；沒給 dir 時讀舊的 back:true；倒地一律正面；
+  //       側面只有站（idle）、走（walk），其他姿勢（對決、翻箱、丟牌、拿東西…）退回正面；沒有側面頭的 NPC 預設頭也退回正面
+  var DIRS = ['front', 'back', 'side'], SIDE_POSES = { idle: 1, walk: 1 };
   function dirOf(opts, pose) {
     var d = DIRS.indexOf(opts.dir) >= 0 ? opts.dir : (opts.back ? 'back' : 'front');
+    if (d === 'side' && !SIDE_POSES[pose]) return 'front';
     return pose === 'ko' ? 'front' : d;
   }
   function compose(spec, pose, frame, opts) {
@@ -541,6 +699,7 @@
     var plain = !!opts.plain, mode = opts.mode === 'sprite' ? 'sprite' : 'art';
     var tint = opts.tint ? (typeof opts.tint === 'string' ? opts.tint + '@0.45' : opts.tint.color + '@' + (opts.tint.a == null ? 0.45 : opts.tint.a)) : '';
     var o = { flip: !!opts.flip, dir: dirOf(opts, pose), outline: !plain && opts.outline !== false && mode === 'art', shade: !plain && opts.shade !== false && mode === 'art', tint: tint, sil: opts.sil || '', mode: mode };
+    if (o.dir === 'side' && !hasSide(s)) o.dir = 'front';
     var key = keyOf(s, pose, frame, o);
     if (memo[key]) return memo[key];
     var res = mode === 'sprite' ? composeSprite(s, pose, frame, o) : composeArt(s, pose, frame, o);
@@ -550,7 +709,7 @@
   }
   // 小人格層 → 一張格子圖（倒地＝整張轉 90°）
   function cellsOf(s, pose, frame, o) {
-    var B = build(s, pose === 'ko' ? 'idle' : pose, pose === 'ko' ? 0 : frame, o.dir === 'back'), col = resolver(s);
+    var B = o.dir === 'side' ? buildSide(s, pose, frame) : build(s, pose === 'ko' ? 'idle' : pose, pose === 'ko' ? 0 : frame, o.dir === 'back'), col = resolver(s);
     var ops = B.ops.map(function (op) { return { dx: op.dx, dy: op.dy, cells: op.cells.map(function (x) { return [x[0], x[1], x[2], col(x[2])]; }) }; });
     var pts = {}; Object.keys(B.pts).forEach(function (k) { var p = B.pts[k]; if (p) pts[k] = [p[0], p[1], p[2] ? p[2][0] : 0, (p[2] ? p[2][1] : 0) - B.P.hop]; });
     if (pose === 'ko') {
@@ -846,7 +1005,7 @@
     npc: npc, cast: cast, fromDipChar: fromDipChar, toDipChar: toDipChar, random: random, normalize: normalize, isSpec: isSpec,
     parts: parts, DEFAULTS: DEFAULTS, SECOND: SECOND, DEFAULT: DEFAULT, POSES: POSES, DIRS: DIRS.slice(), ARM: ARM, P2POSE: P2POSE, swatch: swatch, legacyParity: legacyParity,
     SCALE: { sprite: 16, art: 48, x: 3 }, OUTLINE: OUTLINE,
-    _internal: { LP: LP, LHEADS: LHEADS, LBODY: LBODY, LSPR: LSPR, legacyRows: legacyRows, HAIR: HAIR, HATS: HATS, GLASSES: GLASSES, FACIAL: FACIAL, TOPS: TOPS, BOTTOMS: BOTTOMS, NECKS: NECKS, BAGS: BAGS, NPCS: NPCS, PAL: PAL, build: build, resolver: resolver, clear: function () { memo = {}; memoN = 0; cvCache = {}; } },
+    _internal: { LP: LP, LHEADS: LHEADS, LBODY: LBODY, LSPR: LSPR, legacyRows: legacyRows, HAIR: HAIR, HATS: HATS, GLASSES: GLASSES, FACIAL: FACIAL, TOPS: TOPS, BOTTOMS: BOTTOMS, NECKS: NECKS, BAGS: BAGS, NPCS: NPCS, PAL: PAL, SIDE: SIDE, SIDE_HEAD: SIDE_HEAD, SARMS: SARMS, build: build, buildSide: buildSide, resolver: resolver, clear: function () { memo = {}; memoN = 0; cvCache = {}; } },
     version: '4.0'
   };
 });

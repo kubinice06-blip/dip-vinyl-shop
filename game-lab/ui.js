@@ -86,7 +86,7 @@
   function defSave() {
     return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, runs: [], runSeq: {},
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [],
-      tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null };
+      tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null, bring: null };   // bring：主站「帶去店裡對決」帶來的那張（{id, at}；下一趟開局挑種子排第一、預設勾好，用一次就清）
   }
   var posInt = function (x) { return typeof x === 'number' && Math.floor(x) === x && x >= 1; };
   function validRun(r) {
@@ -203,6 +203,9 @@
     var rq = {}; Object.keys(s.runSeq).forEach(function (k2) { if (posInt(s.runSeq[k2])) rq[k2] = s.runSeq[k2]; }); s.runSeq = rq;
     // 上次序章挑的特價箱三張（重看教學用；不合法就當沒有）
     if (s.lastBargain != null && !(Array.isArray(s.lastBargain) && s.lastBargain.length === 3 && s.lastBargain.every(function (id) { return typeof id === 'string' && card(id); }))) s.lastBargain = null;
+    // 主站帶來的那張（v5 第六項第一期）：不是 {id}、卡不在了、是王牌（帶不進來）就當沒有
+    if (s.bring != null && !validBring(s.bring)) s.bring = null;
+    bringSeen = bringKey(s.bring);
     s.settings = Object.assign({}, d.settings, s.settings || {});
     var b = s.best && typeof s.best === 'object' ? s.best : {};
     s.best = { far: Math.max(0, b.far | 0), bestStreak: Math.max(0, b.bestStreak | 0),
@@ -228,7 +231,23 @@
   }
   function persist() {
     if (UI.saveReadOnly || UI.noSave) return;
-    try { W.localStorage.setItem(KEY, JSON.stringify(save)); } catch (_) { /* 寫不進去不影響遊戲 */ }
+    syncBring();
+    try { W.localStorage.setItem(KEY, JSON.stringify(save)); bringSeen = bringKey(save.bring); } catch (_) { /* 寫不進去不影響遊戲 */ }
+  }
+  // 主站帶來的那張（save.bring）跨分頁同步（審查：遊戲 A →「在頻率光譜找它」→ 光譜分頁 →「帶去店裡對決」開出遊戲分頁 C；
+  //   C 收下寫進存檔，A 還開著、記憶體裡是舊的。A 一存檔整份寫回去就把它蓋掉）。bringSeen＝這個分頁上次讀到／寫進去的那張；
+  //   存檔裡的跟它不一樣＝別的分頁收了新的（或用掉了）→ 改用存檔裡的。只同步 bring，其他欄位照舊（同一份存檔兩個分頁都在玩，後存的贏）
+  var bringSeen = '';
+  function validBring(b) { return !!(b && typeof b === 'object' && typeof b.id === 'string' && card(b.id) && E.canSeed(C, b.id)); }
+  function bringKey(b) { return b ? b.id + '@' + b.at : ''; }
+  function syncBring() {
+    if (!save || UI.saveReadOnly || UI.noSave) return;
+    var s = null;
+    try { var raw = W.localStorage.getItem(KEY); if (!raw) return; s = JSON.parse(raw); } catch (_) { return; }
+    if (!s || typeof s !== 'object' || s.v !== SAVE_V) return;
+    var b = validBring(s.bring) ? { id: s.bring.id, at: s.bring.at } : null;
+    if (bringKey(b) === bringSeen) return;               // 沒有別的分頁動過：這個分頁的（可能剛收下、剛用掉）照舊
+    save.bring = b; bringSeen = bringKey(b);
   }
   // 唱片櫃：at＝哪一趟第一次認識（seedKey#runNo）；seen＝打開唱片櫃看過了沒（NEW 只標「這一趟新認識、還沒看過」的，ART-17）
   function runTag(r) { r = r || save.run; return r ? r.seedKey + '#' + (r.runNo || 1) : seedKey(); }
@@ -375,6 +394,7 @@
     if (o.isNew) badge += '<span class="badge new">新認識</span>';     // COPY-16：跟唱片櫃「這一趟新認識」同一個詞；NEW 留給新進那一箱
     // 店內取得（一趟留一張收進唱片櫃的；店主 11-13 §0）：金框＋底下「店內取得」
     if (o.store) badge += '<span class="badge store">' + esc(SU('storeTag')) + '</span>';
+    if (o.brought) badge += '<span class="badge bring">' + esc(SU('pickBrought')) + '</span>';   // 主站「帶去店裡對決」帶來的（挑種子面板第一張）
     var src = coverSrc(c);
     return '<span class="lb-cv ' + (o.frame === false ? '' : rarityCls(c)) + (o.store ? ' store' : '') + (o.sel ? ' sel' : '') + '"' + st + (o.info === false ? '' : ' data-info="1" data-cid="' + esc(c.id) + '"') +
       ' role="img" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="alt" aria-hidden="true">' + esc(c.album) + '</span>' +
@@ -1406,14 +1426,15 @@
     var ci = CI();
     if (ci && ci.isOpen()) { toastQ.push([text, cls]); return; }
     // 錢（−$3,000）與短詞（進包包）不拆到兩行（V11：「…，−」／「$3,000」看起來像賺錢）
+    //   主站帶來的那張（標題吐司）：「在櫃檯等你：」「先跟老闆走一趟，」「下一趟（開局可以）帶上場」各自不拆（審查：360／375 寬斷成「下一／趟帶上場」）
     var html = esc(text).replace(/[−+-]\$[\d,]+/g, function (m) { return '<span class="nw">' + m + '</span>'; })
-      .replace(/(進包包|賣掉|拿出來了|放回去了)/g, '<span class="nw">$1</span>');
+      .replace(/(進包包|賣掉|拿出來了|放回去了|在櫃檯等你：|先跟老闆走一趟，|下一趟(?:開局可以)?帶上場)/g, '<span class="nw">$1</span>');
     var t = el('div', 'lb-toast' + (cls ? ' ' + cls : ''), html);
     // 同時好幾個（贏錢＋聲望 +3、中繼點）：往下疊，不蓋在同一個位置
     var prev = qsa('.lb-toast:not(.out)', app());
     app().appendChild(t);
     if (prev.length) { var ar = app().getBoundingClientRect(), y = 0; prev.forEach(function (x) { y = Math.max(y, x.getBoundingClientRect().bottom - ar.top); }); t.style.top = Math.round(y + 6) + 'px'; }
-    setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 1900 / speed());
+    setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, (/(^| )long( |$)/.test(cls || '') ? 3800 : 1900) / speed());   // long：句子長的（主站帶來的那張）多留一下
   }
   function flushToasts() { var q = toastQ; toastQ = []; q.forEach(function (x, i) { setTimeout(function () { toast(x[0], x[1]); }, i * 300); }); }
   // 排到下一個畫面掛好之後才出的吐司（打贏的錢＋聲望、走到中繼點）：go() 跑完 SCREENS[id] 才 flush；帶 .keep，接著再換畫面也不被 cleanup 拿掉（審查 #0）
@@ -1495,6 +1516,12 @@
     h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
+    // 主站「帶去店裡對決」帶進來（開機讀 ?card=）：吐司說明一次（第一次玩的人要先走完序章那一趟）
+    if (UI.bringToast != null) {
+      var bt = UI.bringToast; UI.bringToast = null;
+      if (bt) toast(SU(firstEver() ? 'bringToastFirst' : 'bringToast', { album: (card(bt) || {}).album || '' }), 'keep long');
+      else toast(SU('bringMissing'), 'keep');
+    }
     // 面板量出來要多高，舞台就收到放得下（B-title-375-clipped：警告那行永遠在畫面裡）
     var need = Math.max(130, Math.ceil(naturalH(box) + 8));
     cam('full', 'title', (UI.firstScreen || UI.camQuick) ? 0 : 450, need);
@@ -1640,13 +1667,19 @@
   }
   function createRun(o) {
     var k = seedKey();
-    // 種子（第二趟起；序章那一趟不挑）：只收擁有、不是頂點卡的（引擎再擋一次）
-    var seeds = o.prologue ? [] : (o.seeds || []).filter(function (id) { return isOwned(id) && E.canSeed(C, id); });
+    // 種子（第二趟起；序章那一趟不挑）：只收擁有、不是頂點卡的（引擎再擋一次）；主站帶來的那張（save.bring）不用擁有，這一趟可以當種子
+    var brought = o.prologue ? null : bringNow();
+    var seeds = o.prologue ? [] : (o.seeds || []).filter(function (id) { return (isOwned(id) || id === brought) && E.canSeed(C, id); });
+    // 帶來的那張用一次就沒了（不管這次有沒有帶它上場）；帶上場的算認識（包包裡有它），不算擁有（一趟留一張的候選照舊不列種子）
+    var tookBring = !o.prologue && !!brought && seeds.indexOf(brought) >= 0;
+    if (!o.prologue && save.bring) save.bring = null;
     var r = E.newRun(C, { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds });
     r.tut = null;                                     // tut：null＝還沒選、true＝老闆帶的那場（教學）、false＝直接打／教學結束
     r.farBefore = save.best.far | 0;                  // 結算的「新紀錄」：跟開這一趟之前的最遠比
     r.got = r.bag.slice();                            // 這一趟收進包包的（老闆送的、種子也算，裁定 9）
     save.run = r; save.lastAce = o.ace;
+    // 帶上場的那張記成「這一趟認識的」（at＝這一趟 seedKey#runNo，NEW 章、「這一趟新認識」才找得到；審查：之前在 save.run 設好前記，at 少了 #runNo）
+    if (tookBring) shelfAdd(brought);
     // 挑過這個王牌：那組送的四張算擁有（src 'gift'，不是金框；種子佔掉的那幾格也算）；王牌本身照舊只是認識（頂點卡維持老闆三選一）
     shelfAdd(C.aces[o.ace]); (C.gifts[o.ace] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
     persist();
@@ -1736,8 +1769,28 @@
   //   審查 #4：標題列（張數）＋說明那行黏在面板頂；帶滿了，沒選的鈕變淡（aria-disabled）、張數變紅，再點吐司說明。
   //   審查 #8：篩選＝那一色是這張最高的（平手兩色都算）。審查 #10：選了＝墨色框＋✓ 章（跟店內取得的金框分開）
   function seedPool(tier) {
+    syncBring();                                        // 別的分頁剛收下的（或用掉的）以存檔為準
     var gift = C.gifts[tier] || [];
-    return seedableIds().filter(function (id) { return gift.indexOf(id) < 0; });
+    var pool = seedableIds().filter(function (id) { return gift.indexOf(id) < 0; });
+    // 主站「帶去店裡對決」帶來的那張（v5 第六項第一期）：不在這次王牌那組送的（送的照樣會進包包）就排第一（seedPickFlow 預設勾好）
+    var b = bringNow(tier);
+    if (b) { pool = pool.filter(function (id) { return id !== b; }); pool.unshift(b); }
+    return pool;
+  }
+  // 主站帶來、這一趟可以帶上場的那張：合法（卡在、不是王牌）、而且不在這次王牌那組送的四張裡；沒有回 null
+  function bringNow(tier) {
+    var b = save && save.bring && save.bring.id;
+    if (!b || !card(b) || !E.canSeed(C, b)) return null;
+    if (tier && (C.gifts[tier] || []).indexOf(b) >= 0) return null;
+    return b;
+  }
+  // 開機讀網址 ?card=<遊戲卡 id>（主站頻率光譜結果頁「帶去店裡對決」）：收進 save.bring、把參數從網址拿掉（重新整理不會再收一次）；標題畫面吐司說明
+  function takeBring() {
+    if (QS.card == null) return;
+    var id = String(QS.card); delete QS.card;
+    try { var u = new URL(location.href); u.searchParams.delete('card'); history.replaceState(history.state, '', u.pathname + u.search + u.hash); } catch (_) {}
+    if (card(id) && E.canSeed(C, id)) { save.bring = { id: id, at: now() }; UI.bringToast = id; persist(); }
+    else UI.bringToast = '';      // 查不到、王牌（帶不進來）：吐司說店裡沒有
   }
   function topAxes(c) { var m = Math.max(c.c || 0, c.o || 0, c.h || 0); return ATTRS.filter(function (a) { return (c[a] || 0) === m; }); }
   function seedPickFlow(tier) {
@@ -1745,15 +1798,18 @@
     if (!pool.length) return Promise.resolve([]);
     var max = E.CFG.seedMax, giftN = (C.gifts[tier] || []).length || 4;
     pool.sort(function (a, b) { var A = card(a), B = card(b); return E.peak(B) - E.peak(A) || E.power(B) - E.power(A) || (a < b ? -1 : a > b ? 1 : 0); });
+    var brought = bringNow(tier);
+    if (brought && pool.indexOf(brought) >= 0) { pool.splice(pool.indexOf(brought), 1); pool.unshift(brought); }   // 主站帶來的排第一、預設勾好
+    else brought = null;
     return new Promise(function (res) {
-      var picked = [], filter = 'all', done = false;
+      var picked = brought ? [brought] : [], filter = 'all', done = false;
       var flt = [['all', SU('pickAll')]].concat(ATTRS.map(function (a) { return [a, ZH[a]]; }));
       var html = '<div class="sdtop"><div class="hd"><h3>' + esc(SU('pickTitle')) + '</h3><span class="sub cnt" aria-live="polite"></span></div>' +
         '<p class="note sdn">' + esc(SU('pickSub', { max: max, n: giftN })) + '</p></div>' +
         '<div class="lb-filters sd" role="group">' + flt.map(function (f) { return '<button type="button" class="lb-btn' + (f[0] === 'all' ? ' on' : ' ' + f[0]) + '" data-f="' + f[0] + '">' + esc(f[1]) + '</button>'; }).join('') + '</div>' +
         '<div class="lb-rgrid lb-seeds">' + pool.map(function (id) {
           var c = card(id);
-          return tileHTML(c, { store: isStore(id), cls: 'ax-' + E.topAttr(c), data: 'data-ax="' + topAxes(c).join(' ') + '"', pick: SU('pickTake') });
+          return tileHTML(c, { store: isStore(id), brought: id === brought, cls: 'ax-' + E.topAttr(c) + (id === brought ? ' brought' : ''), data: 'data-ax="' + topAxes(c).join(' ') + '"', pick: SU('pickTake') });
         }).join('') + '</div>' +
         '<p class="sub lb-sdempty" hidden>' + esc(SU('pickEmpty')) + '</p>' +
         '<div class="foot two"><button type="button" class="lb-btn" data-a="none">' + esc(SU('pickNone')) + '</button>' +
@@ -3069,6 +3125,7 @@
     D.body.classList.add('in-battle');
     svhFallback();
     save = loadSave();
+    takeBring();
     var f = FX();
     if (f) { try { if (f.init) f.init(); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
     // 對決以外：一首試聽自然放完就接下一首（包包裡的）

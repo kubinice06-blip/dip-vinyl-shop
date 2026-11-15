@@ -12,6 +12,8 @@
  *   DipTune.start();     // 進入分頁時呼叫；再次呼叫只會重新顯示，不重建
  *   DipTune.stop();      // 離開分頁：停試聽、停音效
  *   DipTune.pickAgain(); // 結果頁「同頻率再抽一張」：在目前頻率附近加權隨機
+ *   只看我的唱片櫃（v5 第六項第一期，2026-11-15）：configure 多 loadMine()（→ Map<cardId, 張數> 或 null；沒登入回 null）、signIn()、isSignedIn()；
+ *   DipTune.setMine(ids | Map | null)：唱片櫃有變（收進、刪除、登出）時頁面推進來；測試與聆聽室也用它灌資料（cardId＝cardIdOf 的「藝人|專輯」小寫）。
  *
  * onResult 收到 { card, cell, cellName, coords, continuing }，由呼叫端沿用既有結果頁（showGpResult），本模組不碰那段。
  * continuing＝這張在星圖上正在試聽、沒有停掉，結果頁應接手而不是重播。
@@ -78,7 +80,7 @@
       const m = byHash.get(h);
       if (!m) continue;
       const i = CARDS.length;
-      CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]), tier: tierOfCard(c),
+      CARDS.push({ i, card: c, h, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]), tier: tierOfCard(c),
         px: pSpread('x', m[0], hashU(i, 7919, 997)), py: pSpread('y', m[1], hashU(i, 104729, 991)), pz: pSpread('z', m[2], hashU(i, 1299709, 983)) });
     }
     N = CARDS.length;
@@ -208,6 +210,8 @@
 .tune-hbtn{width:24px;padding:2px;justify-content:center}
 .tune-hbtn svg{display:block}.tune-hbtn .f{fill:#e9e2c8}.tune-hbtn .s{fill:#5ee6f0}.tune-hbtn .k{fill:#0b0c10}
 .tune-hbtn[aria-pressed="false"] .f{fill:#8d9478}.tune-hbtn[aria-pressed="false"] .s{fill:#2b2f2a}
+/* 只看我的唱片櫃（v5 第六項第一期）：唱片架＋三片唱片；開著唱片金色，讀唱片櫃中唱片閃 */
+.tune-mine .m{fill:#ffd166}.tune-mine[aria-pressed="false"] .m{fill:#4a4f44}.tune-mine.busy .m{fill:#ffd166;animation:tuneBlink .9s steps(2) infinite}
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
 .tune-app [hidden],#tuneApp[hidden],#tuneResultWrap[hidden]{display:none!important}
 .tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:end center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
@@ -309,6 +313,8 @@ html.tune-inapp-lock body{padding-top:120px}
   const SPK = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="20" height="20"><path class="b" d="M1 4h2v4H1zM3 3h1v6H3zM4 2h1v8H4zM5 1h1v10H5z"/><path class="w" d="M8 4h1v4H8zM10 2h1v1h-1zM10 9h1v1h-1zM11 3h1v6h-1z"/><path class="o" d="M8 3h1v1H8zM9 4h1v1H9zM10 5h1v2h-1zM9 7h1v1H9zM8 8h1v1H8zM11 3h1v1h-1zM11 8h1v1h-1zM10 4h1v1h-1zM10 7h1v1h-1z"/></svg>';
 
   const HOLO = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="18" height="18"><path class="f" d="M1 2h10v7H1zM4 10h4v1H4z"/><path class="k" d="M2 3h8v5H2z"/><path class="s" d="M3 4h6v1H3zM3 6h6v1H3z"/></svg>';
+  // 唱片架：兩側板＋底板，裡面立著三片唱片（最後一片斜靠）
+  const SHELF = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="18" height="18"><path class="f" d="M1 1h1v10H1zM10 1h1v10h-1zM1 10h10v1H1z"/><path class="m" d="M3 3h1v7H3zM5 2h1v8H5zM7 5h1v5H7zM8 3h1v2H8z"/></svg>';
   function html() {
     return `
 <div class="tune-app" id="tuneApp">
@@ -317,6 +323,7 @@ html.tune-inapp-lock body{padding-top:120px}
       <div class="tune-readout" id="tuneReadout" title="能量 / 質地 / 溫度"><span style="--c:${AX.x}"><b>-.--</b></span><span style="--c:${AX.y}"><b>-.--</b></span><span style="--c:${AX.z}"><b>-.--</b></span></div>
       <button class="tune-spk" id="tuneSpk" type="button" aria-pressed="true" aria-label="聲音">${SPK}</button>
       <button class="tune-spk tune-hbtn" id="tuneHoloBtn" type="button" aria-pressed="true" aria-label="懸浮封面" title="懸浮封面">${HOLO}</button>
+      <button class="tune-spk tune-hbtn tune-mine" id="tuneMineBtn" type="button" aria-pressed="false" aria-label="只看我的唱片櫃" title="只看我的唱片櫃">${SHELF}</button>
       <button class="tune-back" id="tuneBack" type="button" aria-label="回找一張來聽" title="找一張來聽">↩</button>
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
@@ -419,7 +426,8 @@ html.tune-inapp-lock body{padding-top:120px}
   const toG = (axis, v) => axis === 'x' ? (v - 3) / 2 : axis === 'y' ? -v / 2 : v / 2;
   const S3 = c => { if (!c.g) c.g = [toG('x', c.x) + jit(c, 'x'), toG('y', c.y) + jit(c, 'y'), toG('z', c.z) + jit(c, 'z')].map(v => Math.max(-1.04, Math.min(1.04, v))); return c.g; };
   // 一般星星 0.45 亮；篩選掉的壓到 0.06、縮小，只留一層微光看得出整體分布
-  function dimStar(i) { const out = !passes(i), k = out ? 0.06 : 0.45 * (CARDS[i].conf === 0 ? 0.7 : 1);
+  // 只看我的唱片櫃：自己的星拉亮一點（0.45 → 0.7，規劃書「收得越多，你的星空越亮」）
+  function dimStar(i) { const out = !passes(i), k = out ? 0.06 : (mineOn() ? 0.7 : 0.45) * (CARDS[i].conf === 0 ? 0.7 : 1);
     col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = out ? 2.2 : 3.2; }
   function recolor() { if (!THREE_OK) return; for (let i = 0; i < CARDS.length; i++) if (i !== litIdx) dimStar(i); geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true; }
   function light(c) {
@@ -626,7 +634,7 @@ html.tune-inapp-lock body{padding-top:120px}
     const p = state.p, t = target(); readout(t);
     if (THREE_OK) { PX.position.x = toG('x', rawOf('x', p.x)); PY.position.y = toG('y', rawOf('y', p.y)); PZ.position.z = toG('z', rawOf('z', p.z)); }   // 定位線跟著原始分數走（掃過密集的中段會走得比較慢）
     if (!previewCard) { const n = nearest(); if (n) scan(n); }
-    const cell = cellOf(t.x, t.y, t.z);
+    const cell = previewCard && previewCard === pinned ? previewCard.cell : cellOf(t.x, t.y, t.z);   // 搜尋找來的那張：滾筒照它的格（見 armPreview）
     roll(el.dx, t.x >= T.x ? 1 : 0); roll(el.dy, t.y >= T.y ? 1 : 0); roll(el.dz, t.z >= T.z ? 1 : 0); roll(el.dcell, ORDER.indexOf(cell));
     el.draw.disabled = !previewCard;
   }
@@ -697,14 +705,16 @@ html.tune-inapp-lock body{padding-top:120px}
   function clearQueue() { queue.length = 0; clearTimeout(qTimer); qTimer = 0; }
   // ── 搜尋：找到的那張，三顆輪子依序轉過去（能量→質地→色溫），轉的路上照樣掃過沿途的唱片 ──
   let travelTok = 0;
-  function cancelTravel() { travelTok++; }
+  let traveling = false;   // 轉台動畫走到一半（電台撥下去時不要先播路上那張，到站自己會播）
+  let travelDest = null;   // 正在轉往哪一張（唱片櫃在轉往搜尋那張的路上讀回來：不取消，見 filterChanged）
+  function cancelTravel() { travelTok++; traveling = false; travelDest = null; }
   function travelTo(c, quiet) {
-    const tok = ++travelTok; let k = 0, done;
+    const tok = ++travelTok; let k = 0, done; traveling = true; travelDest = c;
     const finished = new Promise(r => { done = r; });
     if (!quiet) ensureAudio(); stopPreview(); clearQueue();   // quiet：不是使用者手勢觸發（網址參數），不能拿來解鎖音訊
     const leg = () => {
       if (tok !== travelTok) { done(false); return; }
-      if (k >= 3) { clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
+      if (k >= 3) { traveling = false; travelDest = null; clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
       const axis = ['x', 'y', 'z'][k++], from = state.p[axis], to = c['p' + axis], dist = Math.abs(to - from);
       if (dist < 0.05) { leg(); return; }
       const dur = Math.min(1000, 280 + dist * 10), t0 = performance.now();
@@ -727,7 +737,8 @@ html.tune-inapp-lock body{padding-top:120px}
     if (!SEARCH) SEARCH = CARDS.map(c => ({ c, a: norm(c.card.artist + (c.card.alias || '')), b: norm(c.card.album) }));
     const all = toks.join(''), out = [];
     for (const r of SEARCH) { const hay = r.a + '|' + r.b; if (!toks.every(t => hay.includes(t))) continue;
-      let sc = 0; if (r.b === all || r.a === all) sc += 100; if (r.b.startsWith(all)) sc += 40; if (r.a.startsWith(all)) sc += 30; if (hay.includes(all)) sc += 10; sc -= (r.a.length + r.b.length) * 0.01;
+      // 藝人＋專輯整串相符 +120（2026-11-15：遊戲「在頻率光譜找它」帶「藝人 專輯」進來，同名專輯（はっぴいえんど／Gal Costa）不會轉到別張）
+      let sc = 0; if (r.a + r.b === all) sc += 120; if (r.b === all || r.a === all) sc += 100; if (r.b.startsWith(all)) sc += 40; if (r.a.startsWith(all)) sc += 30; if (hay.includes(all)) sc += 10; sc -= (r.a.length + r.b.length) * 0.01;
       out.push([sc, r.c]); }
     out.sort((u, w) => w[0] - u[0]); return out.slice(0, 50).map(x => x[1]);
   }
@@ -762,7 +773,7 @@ html.tune-inapp-lock body{padding-top:120px}
   function chooseSugg(i) {
     const c = sugg[i]; if (!c) return;
     el.search.value = `${c.card.artist} — ${c.card.album}`; sugg = []; suggAt = -1; renderSugg(false); el.search.blur();
-    sfxClick(); travelTo(c);
+    sfxClick(); pinned = c; travelTo(c);
   }
   function wireSearch() {
     el.search.addEventListener('input', () => { clearTimeout(suggTimer); suggTimer = setTimeout(() => { sugg = findCards(el.search.value); suggAt = sugg.length ? 0 : -1; renderSugg(true); }, 70); });
@@ -792,7 +803,9 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && !previewCard.egg && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
+  // 停下來那張跟滾筒的格對不上就換成這格最近的（2026-10-24）；搜尋找來的那張（pinned）不換：百分位平台邊緣停穩後可能差一格，
+  // 不然 ?q= 帶進來的（遊戲「在頻率光譜找它」316 張有 5 張、全星圖 367 張）0.7 秒後會被換成別張（2026-11-15）
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && !previewCard.egg && previewCard !== pinned && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
   // 懸浮封面：停穩（跟試聽同一個 0.7 秒）才開機，一轉動就關
   let holoCard = null;
   // 封面放大成螢幕要清楚一點、又不要抓原圖：CAA 取 500 px 縮圖，Apple 換 600×600
@@ -1217,20 +1230,40 @@ html.tune-inapp-lock body{padding-top:120px}
   const RADIO_GAP_MS = 1200, RADIO_SKIP_MS = 2500, radioSeen = [];
   let radioT = 0;
   function radioPick() {
+    if (mineOn()) return minePick();
     const skip = new Set(radioSeen);
     for (let k = 0; k < 30; k++) { const c = weightedPick(); if (c && c !== previewCard && !c.egg && !c.card.previewUnavailable && !skip.has(c.i)) return c; }
     return null;
   }
+  // 收藏電台（只看我的唱片櫃開著時；v5 第六項第一期）：不走 weightedPick——它在「這一格還有沒看過的」時只在這格挑，
+  // 收藏少的人這格三五張播完就 30 次都挑到播過的，電台靜靜停掉（map-site 坑 1）。改成：在唱片櫃的卡裡挑百分位空間離這張最近、
+  // 這一圈還沒播過的（沿著自己的星空一顆一顆飛過去）；全部播過就清掉從頭繞；只剩這一張就再播它一次
+  const mineSeen = new Set();
+  function minePick() {
+    const p = previewCard || { px: state.p.x, py: state.p.y, pz: state.p.z };
+    const ok = i => passes(i) && !CARDS[i].egg && !CARDS[i].card.previewUnavailable;
+    const near = skip => { let best = null, bd = Infinity;
+      for (let i = 0; i < N; i++) { if (!ok(i) || skip(i)) continue; const c = CARDS[i], d = (c.px - p.px) ** 2 + (c.py - p.py) ** 2 + (c.pz - p.pz) ** 2; if (d < bd) { bd = d; best = c; } }
+      return best; };
+    let c = near(i => mineSeen.has(i) || CARDS[i] === previewCard);
+    if (!c) { mineSeen.clear(); c = near(i => CARDS[i] === previewCard) || (previewCard && ok(previewCard.i) ? previewCard : null); }
+    return c;
+  }
   function radioNext(delay) {
     clearTimeout(radioT); if (!state.radio) return;
-    radioT = setTimeout(() => { if (!state.radio || !state.visible || playing) return; const c = radioPick(); if (!c) return;
-      radioSeen.push(c.i); if (radioSeen.length > 200) radioSeen.shift(); travelTo(c, true); }, delay);
+    radioT = setTimeout(() => { if (!state.radio || !state.visible || playing) return;
+      if (mineOn() && previewCard) mineSeen.add(previewCard.i);
+      const c = radioPick();
+      // 挑不到：符合的是 0 張（唱片櫃空的、跟滾筒疊到 0）就留著 modeHint 那句（教怎麼辦）；有符合的、只是都沒有試聽才換這句
+      if (!c) { if (mineOn() && el.hint && passN > 0) el.hint.textContent = filterActive() ? '收藏電台：唱片櫃裡符合的唱片都沒有試聽' : '收藏電台：唱片櫃裡星圖上的唱片都沒有試聽'; return; }
+      if (mineOn()) mineSeen.add(c.i); else { radioSeen.push(c.i); if (radioSeen.length > 200) radioSeen.shift(); }
+      travelTo(c, true); }, delay);
   }
   // 撥到 RADIO：這一下是手勢，順便授權自動試聽；目前這張還沒聽就先播它，聽過了（或沒有這張）就直接轉下一張
   function radioToggled() {
     clearTimeout(radioT); if (!state.radio) return;
     ensureAudio(); cfg.onGesture?.(true);
-    if (playing) return;
+    if (playing || traveling) return;   // 正在轉台：到站的那張 armPreview 會播，播完照常換下一張（不然路上那張先播一次、到站又播一次）
     if (previewCard && audibleCard !== previewCard && !previewCard.card.previewUnavailable) playPreview(); else radioNext(300);
   }
   function playPreview() {
@@ -1316,7 +1349,7 @@ html.tune-inapp-lock body{padding-top:120px}
     grade: [['all', '全部'], ['c4', '經典4★+'], ['c5', '經典5★'], ['o4', '冷門4★+'], ['o5', '冷門5★'], ['h4', '硬蕊4★+'], ['h5', '硬蕊5★'], ['s10', '總分10+'], ['s12', '總分12+']],
     tier: [['all', '全部'], ['hall', '殿堂'], ['pearl', '流亡'], ['heresy', '異端'], ['legendary', '傳奇'], ['epic', '史詩'], ['uncommon', '獨特'], ['rare', '稀有'], ['common', '普通']],
   };
-  const FILT = { genre: 0, grade: 0, tier: 0 };
+  const FILT = { genre: 0, grade: 0, tier: 0, mine: 0 };   // mine：只看我的唱片櫃（不是滾筒，HUD 一顆開關；「全部」鍵不關它）
   let PASS = null, passN = 0;
   function tierOfCard(c) {
     if (c.tier) return c.tier;
@@ -1332,12 +1365,16 @@ html.tune-inapp-lock body{padding-top:120px}
       case 'h4': return hd >= 4; case 'h5': return hd >= 5; case 's10': return cl + ob + hd >= 10; case 's12': return cl + ob + hd >= 12; }
     return true;
   }
+  // 三顆滾筒有沒有轉（「全部」鍵亮不亮、按了歸零哪些）；只看我的唱片櫃另算（mineOn）
   function filterActive() { return FILT.genre || FILT.grade || FILT.tier; }
+  const mineOn = () => !!(FILT.mine && MINE);
   function computePass() {
+    if (!CARDS) return;
     const g = FILTER_OPTS.genre[FILT.genre][0], gr = FILTER_OPTS.grade[FILT.grade][0], t = FILTER_OPTS.tier[FILT.tier][0];
-    if (!filterActive()) { PASS = null; passN = N; return; }
+    if (!filterActive() && !mineOn()) { PASS = null; passN = N; return; }
     PASS = new Uint8Array(CARDS.length); passN = 0;
     for (let i = 0; i < N; i++) { const c = CARDS[i], card = c.card;
+      if (mineOn() && !MINE.has(c.h)) continue;
       if (g !== 'all' && !(card.genres || []).includes(g)) continue;
       if (t !== 'all' && c.tier !== t) continue;
       if (!gradeOk(card, gr)) continue;
@@ -1353,14 +1390,81 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   // 「全部」鍵：三個條件一起歸零
   function resetFilters() { if (!filterActive()) { syncFilterUI?.(); return; } FILT.genre = FILT.grade = FILT.tier = 0; filterChanged(); }
-  function filterChanged() {
-    computePass(); recolor(); syncFilterUI?.();
+  // stay：不是玩家剛按的（唱片櫃讀回來、收進／刪掉一張）——停在搜尋找來的那張（pinned：?q= 或搜尋框挑的）就留著，只重新上色（遊戲「在頻率光譜找它」帶進來的不被轉走）
+  //   轉往搜尋那張的路上（?q= 開機一秒後才轉、轉 1–3 秒）唱片櫃才讀回來：previewCard 是路上掃到的別張，照樣不取消、讓它轉到
+  // 不在畫面（結果頁、別的分頁、登出）時變了：只重算、換撥桿字和提示，轉不轉走等回到畫面（start）再說——
+  //   沒變就不檢查（搜尋找來的那張本來就不受篩選限制，回來不該被換走、試聽也不該被切掉）
+  let pinned = null, pendFilt = null;
+  function filterChanged(o) {
+    computePass(); recolor(); syncFilterUI?.(); syncMineUI();
     if (!state.built) return;
-    if (previewCard && (previewCard.egg || passes(previewCard.i))) return;
+    if (el.mode) setModeUI();
+    if (!state.visible) { pendFilt = { stay: (pendFilt ? pendFilt.stay : true) && !!o?.stay }; return; }
+    if (o?.stay && traveling && pinned && travelDest === pinned) return;
+    if (previewCard && (previewCard.egg || passes(previewCard.i) || (o?.stay && previewCard === pinned))) return;
     cancelTravel(); stopPreview(); hideHolo(); clearQueue(); previewCard = null;
     const n = nearest(); if (n) { el.hint.textContent = modeHint(); travelTo(n, true); }
-    else { unlight(); setNowPlaying(false); el.now.hidden = true; el.draw.disabled = true; el.hint.textContent = '沒有符合的卡：換個篩選，或按「全部」'; }
+    else { unlight(); setNowPlaying(false); el.now.hidden = true; el.draw.disabled = true; el.hint.textContent = modeHint(); }
   }
+  // ── 只看我的唱片櫃（v5 第六項第一期，2026-11-15 店主「六全做」）──────────────────
+  // 唱片櫃在 Firestore collections/{uid}/cards（要登入、只有本人讀得到），頁面讀好交進來（cfg.loadMine）；這裡只存 FNV 雜湊 → 張數。
+  // 開關記在這台裝置（localStorage dipTuneMine）；下次進來要等唱片櫃讀回來才真的套用，沒登入就安靜地維持關
+  let MINE = null, mineBusy = false, mineTok = 0, mineWant = false;
+  try { mineWant = global.localStorage.getItem('dipTuneMine') === '1'; } catch (_) {}
+  function saveMineWant(on) { mineWant = !!on; try { global.localStorage.setItem('dipTuneMine', on ? '1' : '0'); } catch (_) {} }
+  function toMineMap(x) {
+    if (!x) return null;
+    const out = new Map(), add = (id, n) => { if (typeof id !== 'string' || !id) return; const h = fnv(id); out.set(h, (out.get(h) || 0) + (Math.max(1, n | 0) || 1)); };
+    if (x instanceof Map) x.forEach((n, id) => add(id, n));
+    else if (Array.isArray(x) || x instanceof Set) for (const v of x) { if (Array.isArray(v)) add(v[0], v[1]); else if (v && typeof v === 'object') add(v.cardId || idOf(v.artist, v.album), v.count); else add(v, 1); }
+    else if (typeof x === 'object') for (const id in x) add(id, typeof x[id] === 'number' ? x[id] : 1);
+    return out;
+  }
+  // 唱片櫃有變（收進、刪掉、換人、登出）或測試灌資料：唱片櫃的 key 已經是 cardIdOf 的「藝人|專輯」小寫，直接 fnv，不再過 idOf。
+  // null＝沒有資料（登出）：開關熄掉，但這台裝置「想開」的偏好留著，下次登入讀回來再開
+  function setMine(x, o) {
+    MINE = toMineMap(x);
+    if (!MINE) FILT.mine = 0; else if (o?.on) FILT.mine = 1;
+    mineSeen.clear();
+    filterChanged({ stay: !o?.on });   // 不在畫面時 filterChanged 只重算、換撥桿字（登出後回來不會還寫「收藏」），轉不轉走等回到畫面
+  }
+  // 結果頁「已在唱片櫃 ×n」：手上有唱片櫃資料就回張數（沒有這張＝0），沒有資料回 null（頁面自己去讀）
+  function mineCount(artist, album) { return MINE ? (MINE.get(fnv(idOf(artist, album))) || 0) : null; }
+  function mineInMap() { if (!MINE || !CARDS) return 0; let n = 0; for (let i = 0; i < N; i++) if (MINE.has(CARDS[i].h)) n++; return n; }
+  function syncMineUI() {
+    const b = el?.mineBtn; if (!b) return;
+    const on = mineOn();
+    b.setAttribute('aria-pressed', String(on)); b.classList.toggle('busy', mineBusy && !on);
+    b.title = on ? `只看我的唱片櫃：開（唱片櫃 ${MINE.size} 張・星圖上 ${mineInMap()} 張）` : mineBusy ? '只看我的唱片櫃：讀唱片櫃中…' : '只看我的唱片櫃';
+  }
+  function mineFlash(msg) { if (!el.hint) return; el.hint.textContent = msg; el.hint.classList.remove('is-tucked'); }
+  // 開：有登入就跟頁面要唱片櫃（頁面讀過就直接給記憶體裡那份）；沒登入但已經有資料（測試、聆聽室灌的）也照開
+  async function mineTurnOn(explicit) {
+    const tok = ++mineTok; mineBusy = true; syncMineUI(); if (explicit) mineFlash('讀唱片櫃中…');
+    let m = null;
+    if (cfg.loadMine && (!explicit || cfg.isSignedIn?.())) { try { m = await cfg.loadMine(); } catch (_) { m = null; } }
+    if (tok !== mineTok || !mineBusy) return;   // 讀的時候又按了一下（關掉）
+    mineBusy = false;
+    if (m) MINE = toMineMap(m);
+    if (!MINE) { syncMineUI(); if (explicit) mineFlash(cfg.isSignedIn?.() ? '唱片櫃讀不到，等一下再試' : '登入後才看得到你的唱片櫃'); return; }
+    FILT.mine = 1; mineSeen.clear();
+    filterChanged({ stay: !explicit });
+    if (explicit) mineFlash(modeHint());
+  }
+  function mineToggle() {
+    sfxClick();
+    if (FILT.mine || mineBusy) { mineBusy = false; mineTok++; FILT.mine = 0; saveMineWant(false); filterChanged(); el.hint.textContent = modeHint(); return; }
+    // 沒登入、也沒有資料：跳 Google 登入（要在點擊當下叫，彈窗才不會被擋），開關不亮；登入成功就接著開
+    if (!cfg.isSignedIn?.() && !MINE) {
+      mineFlash('登入後才看得到你的唱片櫃');
+      let p = null; try { p = cfg.signIn?.(); } catch (_) {}
+      Promise.resolve(p).then(() => { if (cfg.isSignedIn?.() && state.visible && !FILT.mine && !mineBusy) { saveMineWant(true); mineTurnOn(true); } }).catch(() => {});
+      return;
+    }
+    saveMineWant(true); mineTurnOn(true);
+  }
+  // 頁面在登入狀態改變時叫：這台裝置想開、唱片櫃讀得到就開（沒登入照舊關著）
+  function refreshMine() { if (mineWant && state.built && !FILT.mine && !mineBusy) mineTurnOn(false); }
   // 隨機選一張（2026-11-06 店主：就這張旁邊多一顆「隨機」）：在符合篩選的卡裡均勻抽，最近 200 張不重複，轉過去停在它上面
   const randSeen = [];
   function randomPick() {
@@ -1400,7 +1504,13 @@ html.tune-inapp-lock body{padding-top:120px}
     if (st) { playing = c; watchPlayer(); if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); } else setNowPlaying(false, '找試聽中'); }
     else if (state.radio) radioNext(RADIO_GAP_MS);
   }
-  function pickAgain() { const c = weightedPick(); if (c) { previewCard = c; light(c); emit(c); } }
+  // 篩選（尤其只看我的唱片櫃）剩沒幾張時，同頻率再抽會把符合的都抽成「看過的」，weightedPick 回 null、按鈕沒反應（map-site 坑 1 的另一半）：
+  // 清掉看過的（留最後一張不馬上重複）再抽；只剩一張就還是它
+  function pickAgain() {
+    let c = weightedPick();
+    if (!c && PASS) { const last = state.seen.slice(-1); state.seen.length = 0; state.seen.push(...last); c = weightedPick(); if (!c && previewCard && passes(previewCard.i) && !previewCard.egg) c = previewCard; }
+    if (c) { previewCard = c; light(c); emit(c); }
+  }
 
   // ── 篩選滾筒（2026-11-06 面板第二版）──────────────────────────────────
   // 上下拖：字跟著手指 1:1 走、每過一格喀一聲＋輕震；放手停在最近一格才真的套用（只重算一次）。
@@ -1486,10 +1596,14 @@ html.tune-inapp-lock body{padding-top:120px}
 
   // ── 進出 ──────────────────────────────────────────────────────────
   let leverT = 0;
-  const modeHint = () => passN === 0 && N ? '沒有符合的卡：換個篩選，或按「全部」' : state.radio ? 'RADIO：試聽播完自動轉到下一張　轉輪隨時換台' : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
+  const modeHint = () => passN === 0 && N ? (mineOn() && !filterActive() ? '唱片櫃裡還沒有星圖上的唱片：關掉唱片架鈕，挑一張收進唱片櫃' : '沒有符合的卡：換個篩選，或按「全部」')
+    : state.radio ? (mineOn() ? '收藏電台：只播你唱片櫃裡的，試聽播完自動換下一張' : 'RADIO：試聽播完自動轉到下一張　轉輪隨時換台') : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
   function setModeUI(animate) {
     const f = state.radio, pos = f ? 'down' : 'up';
     el.ledTop.classList.toggle('on', !f); el.ledBot.classList.toggle('on', f); el.swTop.classList.toggle('on', !f); el.swBot.classList.toggle('on', f); el.mode.setAttribute('aria-pressed', String(f));
+    // 只看我的唱片櫃開著：RADIO 變「收藏電台」，撥桿下面的字換「收藏」（兩個全形字塞得進字框）
+    el.swBot.textContent = mineOn() ? '收藏' : 'RADIO';
+    el.mode.setAttribute('aria-label', mineOn() ? 'SCAN 手動轉台／收藏電台：只播唱片櫃裡的，試聽播完自動換下一張' : 'SCAN 手動轉台／RADIO 電台：試聽播完自動換下一張');
     clearTimeout(leverT); if (animate) { el.lever.dataset.pos = 'mid'; leverT = setTimeout(() => { el.lever.dataset.pos = pos; }, 70); } else el.lever.dataset.pos = pos;
     el.hint.textContent = modeHint();
   }
@@ -1533,8 +1647,9 @@ html.tune-inapp-lock body{padding-top:120px}
     el.holoBtn.onclick = () => { state.holo = !state.holo; try { global.localStorage.setItem('dipTuneHolo', state.holo ? '1' : '0'); } catch (_) {} setHoloUI(); sfxClick();
       if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
     el.mode.onclick = () => { state.radio = !state.radio; setModeUI(true); sfxClick(); radioToggled(); };
+    el.mineBtn = host.querySelector('#tuneMineBtn'); el.mineBtn.onclick = mineToggle; syncMineUI();
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) { const n = nearest(); if (n) scan(n); } emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard !== pinned && previewCard.cell !== targetCell()) { const n = nearest(); if (n) scan(n); } emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
     wireFilters(host);
     let data;
@@ -1545,6 +1660,8 @@ html.tune-inapp-lock body{padding-top:120px}
     buildCards(data);
     if (!N) { el.msg.textContent = '卡池裡沒有座標'; return; }
     syncFilterUI(false);
+    // 上次開著「只看我的唱片櫃」：等登入狀態＋唱片櫃讀回來才套用（不擋開機；沒登入就安靜地維持關）
+    if (mineWant) mineTurnOn(false);
     // 開場位置：三軸各在中段（百分位 30–70）隨機（2026-10-26 店主：每次進來都停在同一張）
     for (const k of ['x', 'y', 'z']) state.p[k] = 30 + Math.random() * 40;
     el.msg.hidden = true;
@@ -1569,7 +1686,7 @@ html.tune-inapp-lock body{padding-top:120px}
     { const qs = new URLSearchParams(global.location.search), q0 = qs.get('q') || (qs.get('egg') === '1' ? '台北順起來' : '');
       // 畫面真的出現後 1 秒才搜（店主：「大概等一秒鐘就搜尋」）；不走 ensureAudio——沒有手勢時解鎖音訊在手機上會失敗、還會把真正的第一次點擊用掉
       if (q0) { const t0 = performance.now(), go = () => { if (!state.visible || performance.now() - t0 < 1000) { setTimeout(go, 100); return; }
-        try { const c = findCards(q0)[0]; if (c) { el.search.value = `${c.card.artist} — ${c.card.album}`; travelTo(c, true); } } catch (e) { console.warn('[tune] ?q 搜尋失敗', e); } }; go(); } }
+        try { const c = findCards(q0)[0]; if (c) { el.search.value = `${c.card.artist} — ${c.card.album}`; pinned = c; travelTo(c, true); } } catch (e) { console.warn('[tune] ?q 搜尋失敗', e); } }; go(); } }
     // 主畫面 App 帶不了網址參數：左上角讀數（本來就不能按）1.5 秒內連點三下也會開跑，這三下本身就是出聲要的手勢
     { let taps = []; el.readout.addEventListener('pointerdown', () => { const now = performance.now(); taps = taps.filter(t => now - t < 1500); taps.push(now); if (taps.length >= 3) { taps = []; runDemo(false); } }); }
   }
@@ -1641,9 +1758,12 @@ html.tune-inapp-lock body{padding-top:120px}
     // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
-    else { setAudioUI(); el.draw.disabled = !previewCard; hideHolo(); resumeAfterResult(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）；同一張不重播
+    else { setAudioUI(); el.draw.disabled = !previewCard; hideHolo(); resumeAfterResult();   // 從結果頁回來：全像板重新開機（放大時藏起來了）；同一張不重播
+      if (pendFilt) { const o = pendFilt; pendFilt = null; filterChanged(o); } }   // 不在畫面時唱片櫃變了（例如在唱片櫃頁刪了這張）；搜尋找來的那張照 stay 留著
   }
   function stop() { clearTimeout(radioT); backFrom = null; state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
-  global.DipTune = { configure, start, stop, pickAgain, keepsPlaying, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, get filter() { return { ...FILT, matched: passN }; }, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, keepsPlaying, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, setMine, refreshMine, mineCount,
+    get filter() { return { ...FILT, mine: mineOn() ? 1 : 0, matched: passN }; }, get mine() { return { on: mineOn(), want: mineWant, busy: mineBusy, size: MINE ? MINE.size : 0, onMap: mineInMap() }; },
+    get state() { return state; }, findCards: q => (CARDS ? findCards(q).map(c => c.card) : []), get previewCard() { return previewCard ? previewCard.card : null; } };
 })(window);
