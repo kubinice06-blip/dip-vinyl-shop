@@ -33,6 +33,9 @@
 //   27 到站朝向（v5 第五項審查修正）：你站在對決位 duelP → 回來客（go('night')）往上走回 browse：途中有背面、到了 0.5 秒內轉正面、之後一直正面；
 //      第一位客人在 wait → 回來客走回門邊 atdoor（最後一段往上）：到了轉正面；接連走兩段往上（walk().then(walk)）中間那站不閃正面；
 //      點試聽機 → 走到試聽桌 listen：到了是背面（面向桌子、戴耳機）
+//   28 收音機轉頻率（v5 第六項第二期）：存一份這一輪特價箱 6 張的存檔 → 真點舞台上的收音機 → 你走到收音機站位、面板八格（色點＋名字；抽不到的反灰＝engine.radioPool 空）、
+//      面板在畫面裡不溢出、格子 ≥44 高 → 點一格 → run.shop.radio＝那格、轉到的那張出現在面板 →「去特價箱看看」→ 特價箱 7 張、四欄（.ec-g4）、
+//      第一格＝電台那張（左上「電台」＋那格色點）、價＝原價（engine.priceOf，不是特價）、抽屜不溢出 → 買它：錢扣原價 → 再點收音機＝「這一輪已經轉過了」、八格都停用
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen } from './e2e-lib.mjs';
 
@@ -673,6 +676,81 @@ async function runIndex(browser, w, h) {
       record(27, size, ok1 && ok2 && ok3 && ok4,
         `duelP→回來客：到 browse ${at(p1, L.browse)}、途中背面 ${i1.backs} 格、停下後 ${i1.turnMs} ms 轉 ${i1.endDir}（之後換向 ${i1.flips} 次）；` +
         `門邊客人 wait→atdoor：有客人 ${hasF}、到了 ${at(f2, L.atdoor)}、途中背面 ${i2.backs} 格、${i2.turnMs} ms 轉 ${i2.endDir}；接連走兩段往上：中間閃正面 ${flash} 格、最後 ${stop3.endDir}；試聽桌：到了 ${at(p4, L.listen)}、${p4 && p4.dir}`);
+    });
+    await T(28, async () => {
+      // 這一輪特價箱 6 張（restock＝新一輪的貨；特價箱已挑過），錢 $5,000
+      await seedNight(page, 5000);
+      await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')), E = window.DipLabEngine, C = window.DipLabContent;
+        E.restock(s.run, C); s.run.shop.bargainPicked = true; s.run.money = 5000; localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); });
+      await openTitleI(page);
+      await jsClick(page, '[data-a=cont]');
+      if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客');
+      await sleep(1500);
+      const ht = await tapHotWhere(page, h => h.id === 'radio');
+      if (!ht) throw new Error('點不到收音機');
+      await page.waitForSelector('.lb-sheet.radio .rd-cell', { timeout: 8000 });
+      await page.waitForFunction(() => { const st = window.__lab.stage, a = st.pos('p'), sp = st.spot('radio'); return sp && Math.abs(a.x - sp[0]) <= 1 && Math.abs(a.y - sp[1]) <= 1; }, null, { timeout: 6000 }).catch(() => {});
+      await sleep(300);
+      const p0 = await page.evaluate(() => {
+        const s = document.querySelector('.lb-sheet.radio'), r = s.getBoundingClientRect(), E = window.DipLabEngine, C = window.DipLabContent, run = window.__lab.run, st = window.__lab.stage, a = st.pos('p'), sp = st.spot ? st.spot('radio') : null;
+        const cells = [...s.querySelectorAll('.rd-cell')].map(b => { const q = b.getBoundingClientRect(), dot = b.querySelector('i'); return { cell: b.dataset.cell, dis: b.disabled, h: Math.round(q.height), w: Math.round(q.width), dot: dot ? getComputedStyle(dot).backgroundColor : '', name: b.textContent.trim(), empty: !E.radioPool(run, C, b.dataset.cell).length }; });
+        return { cells, top: r.top, bottom: r.bottom, vh: innerHeight, scrollH: s.scrollHeight, clientH: s.clientHeight, p: [Math.round(a.x), Math.round(a.y)], spot: sp, bargain: run.shop.bargain.length };
+      });
+      const want = await page.evaluate(() => window.DipLabContent.tunes.order.map(k => [k, window.DipLabContent.tunes.names[k]]));
+      const cellsOk = p0.cells.length === 8 && p0.cells.every((c, k) => c.cell === want[k][0] && c.name === want[k][1] && c.h >= 44 && c.dot && c.dis === c.empty);
+      const fit0 = p0.top >= 0 && p0.bottom <= p0.vh + 1 && p0.scrollH <= p0.clientH + 1;
+      const at = p0.spot && Math.abs(p0.p[0] - p0.spot[0]) <= 1 && Math.abs(p0.p[1] - p0.spot[1]) <= 1;
+      const pickCell = p0.cells.find(c => !c.dis);
+      if (!pickCell) throw new Error('八格都抽不到');
+      await tapSel(page, `.lb-sheet.radio .rd-cell[data-cell=${pickCell.cell}]`);
+      await page.waitForSelector('.lb-sheet.radio .rd-got', { timeout: 4000 });
+      await sleep(500);
+      const g = await page.evaluate(() => { const run = window.__lab.run, s = document.querySelector('.lb-sheet.radio'), r = s.getBoundingClientRect();
+        return { radio: run.shop.radio, first: run.shop.bargain[0], n: run.shop.bargain.length, got: (s.querySelector('.rd-got b') || {}).textContent || '', gotId: (s.querySelector('.rd-got [data-cid]') || { dataset: {} }).dataset.cid,
+          dis: [...s.querySelectorAll('.rd-cell')].every(b => b.disabled), on: (s.querySelector('.rd-cell.on') || { dataset: {} }).dataset.cell, bottom: r.bottom, vh: innerHeight, scrollH: s.scrollHeight, clientH: s.clientHeight }; });
+      const album = await page.evaluate(id => (window.DipLabContent.cards[id] || {}).album, g.radio && g.radio.id);
+      const spun = g.radio && g.radio.cell === pickCell.cell && g.first === g.radio.id && g.n === p0.bargain + 1 && g.gotId === g.radio.id && g.got.includes(album) && g.dis && g.on === pickCell.cell && g.bottom <= g.vh + 1 && g.scrollH <= g.clientH + 1;
+      await tapSel(page, '.lb-sheet.radio [data-a=toBargain]');
+      await skipWalk(page).catch(() => {});
+      await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer .ec-grid'), null, { timeout: 12000 });
+      await sleep(500);
+      const b = await page.evaluate(() => { const E = window.DipLabEngine, C = window.DipLabContent, run = window.__lab.run, grid = document.querySelector('.ec-drawer .ec-grid'), tiles = [...grid.querySelectorAll('.ec-tile')];
+        const t0 = tiles[0], tag = t0 && t0.querySelector('.ec-radio'), dot = tag && tag.querySelector('i');
+        return { n: tiles.length, g4: grid.classList.contains('ec-g4'), id0: t0 && t0.dataset.cid, radio0: t0 && t0.dataset.radio === '1', others: tiles.slice(1).filter(t => t.querySelector('.ec-radio')).length,
+          tag: tag ? tag.textContent.trim() : '', dot: dot ? getComputedStyle(dot).backgroundColor : '', price0: +(t0 && t0.dataset.price), want: E.priceOf(C, run.shop.radio.id), sale: E.bargainPriceOf(C, run.shop.radio.id),
+          pt: ((t0 && t0.querySelector('.ec-pt')) || {}).textContent || '', mt: E.moneyText(E.priceOf(C, run.shop.radio.id)), money: run.money };
+      });
+      const m = await measure(page), [pok, ps] = panelOk(m, '特價箱（電台那張）');
+      const gridOk = b.n === 7 && b.g4 && b.id0 === g.radio.id && b.radio0 && !b.others && b.tag === '電台' && b.dot && b.price0 === b.want && b.want >= 800 && b.pt.includes(b.mt);
+      // 買電台那張：錢扣原價
+      await tapSel(page, `.ec-drawer .ec-tile[data-cid="${b.id0}"]`); await sleep(250);
+      // 選起來的勾（右上）不被電台籤（左上）蓋住：勾的中心點最上面就是勾；兩塊不重疊（375×548 四欄封面 47 px → 電台籤只留色點）
+      const ck = await page.evaluate(id => { const t = document.querySelector(`.ec-drawer .ec-tile[data-cid="${id}"]`), k = t && t.querySelector('.ec-chk'), g = t && t.querySelector('.ec-radio');
+        if (!k || !g) return { ok: false, why: '沒有勾或電台籤' };
+        const a = k.getBoundingClientRect(), b = g.getBoundingClientRect(), top = document.elementFromPoint(a.left + a.width / 2, a.top + a.height / 2), word = g.querySelector('b');
+        return { ok: true, top: !!top && (top === k || k.contains(top)), gap: Math.round(a.left - b.right), tag: Math.round(b.width), tile: Math.round(t.querySelector('.ec-tcv').getBoundingClientRect().width), word: !!word && getComputedStyle(word).display !== 'none' };
+      }, b.id0);
+      const ckOk = ck.ok && ck.top && ck.gap >= 0;
+      await tapSel(page, '.ec-drawer [data-a=bbuy]'); await sleep(500);
+      const bought = await page.evaluate(id => ({ money: window.__lab.run.money, has: window.__lab.run.bag.includes(id) }), b.id0);
+      await tapSel(page, '.ec-drawer [data-a=close]');
+      await page.waitForFunction(() => !window.DipLabEcon.isOpen() && !document.querySelector('.ec-drawer'), null, { timeout: 4000 }).catch(() => {});
+      await sleep(900);
+      // 再點收音機：這一輪已經轉過了、八格都停用
+      const ht2 = await tapHotWhere(page, h => h.id === 'radio');
+      await page.waitForSelector('.lb-sheet.radio .rd-cell', { timeout: 8000 }).catch(() => {});
+      await sleep(500);
+      const u = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.radio'), R = window.DipLabContent.radio;
+        return s ? { sub: (s.querySelector('p.sub') || {}).textContent || '', dis: [...s.querySelectorAll('.rd-cell')].every(b => b.disabled), toB: !!s.querySelector('[data-a=toBargain]'),
+          gone: ((s.querySelector('.rd-gone') || {}).textContent || '').trim(), want: R.bagged, price: R.price } : null; });
+      await jsClick(page, '.lb-sheet.radio [data-a=close]');
+      // 電台那張買走了：不再出「去特價箱看看」、改寫「已經收進包包了。」，也不寫「電台那張照原價。」
+      const usedOk = !!ht2 && u && u.sub.startsWith('這一輪已經轉過了') && u.dis && !u.toB && u.gone === u.want && !u.sub.includes(u.price);
+      const errs = page._errors.slice();
+      record(28, size, cellsOk && fit0 && at && spun && gridOk && pok && bought.has && bought.money === b.money - b.want && ckOk && usedOk && !errs.length,
+        `真點 ${ht.id} → 你在 [${p0.p}]（radio ${JSON.stringify(p0.spot)}）；八格 ${p0.cells.map(c => c.name + (c.dis ? '×' : '')).join(' ')}（格高 ${Math.min(...p0.cells.map(c => c.h))}）；面板在畫面裡 ${fit0}；` +
+        `轉 ${pickCell.cell} → ${g.radio && g.radio.id}（特價箱 ${p0.bargain}→${g.n} 張、第一格 ${g.first === (g.radio && g.radio.id)}、面板「${g.got}」）；` +
+        `特價箱 ${b.n} 張 四欄 ${b.g4}、第一格「${b.tag}」色點 ${b.dot}、價 $${b.price0}（原價 $${b.want}，特價會是 $${b.sale}）；${ps}；選取勾在最上面 ${ck.top}（封面 ${ck.tile}px、電台籤 ${ck.tag}px${ck.word ? '「電台」' : ' 只留色點'}、跟勾隔 ${ck.gap}px）；買 → $${b.money} → $${bought.money}；再點收音機「${u && u.sub}」八格停用 ${u && u.dis}、去特價箱鈕 ${u && u.toB}、「${u && u.gone}」；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}`);
     });
     return true;
   } finally {

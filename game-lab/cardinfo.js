@@ -40,7 +40,13 @@
     return { id: c.id, artist: c.artist || '', album: c.album || '', year: c.year || '', coverUrl: c.localCover || c.coverUrl || '',
       classic: c.c | 0, obscurity: c.o | 0, accessibility: c.h | 0, ace: c.tier || null, gold: !!c.gold, previewUrl: c.previewUrl || '', previewResolved: true,
       junk: !!c.junk, pitch: c.pitch || '', _attr: c._attr || null, painted: !!c.painted,
-      appleUrl: c.appleUrl || '', spotifyUrl: c.spotifyUrl || '', bandcampUrl: c.bandcampUrl || '' };
+      appleUrl: c.appleUrl || '', spotifyUrl: c.spotifyUrl || '', bandcampUrl: c.bandcampUrl || '', tune: c.tune || null };
+  }
+  // 頻率（v5 第六項第二期）：「頻率 ● 暴躁」（主站結果頁同一個寫法）；顏色、名字照 DipLabContent.tunes（抄主站）。只上色、不進規則；手繪封面（不在卡池）沒有
+  function tuneHTML(o) {
+    var T = (W.DipLabContent || {}).tunes, col = T && T.colors && T.colors[o.tune];
+    if (o.painted || !col) return '';
+    return '<div class="tn" data-tune="' + esc(o.tune) + '"><span class="k">' + esc(T.label || '頻率') + '</span><i style="--tn:' + esc(col) + '" aria-hidden="true"></i>' + esc((T.names || {})[o.tune] || '') + '</div>';
   }
   // 原版 starsHTML：平常 5 格；王牌那軸 7 格。這一手出的那軸（act）標籤金色粗體
   function starsHTML(o, act) {
@@ -167,7 +173,7 @@
       '<div class="lab">唱片資訊</div>' + cover +
       '<div class="ar">' + esc(o.artist) + '</div>' +
       '<div class="al">' + esc(o.album) + '</div>' +
-      '<div class="yr">' + esc(o.year) + mods + '</div>' +
+      '<div class="yr">' + esc(o.year) + mods + '</div>' + tuneHTML(o) +
       (aceTag ? '<div class="acerow">' + aceTag + '</div>' : '') +
       (o.painted ? '' : '<div class="stats">' + starsHTML(o, act) + '</div>') +
       (o.previewUrl ? '<button class="lb-mini-player muted" type="button" aria-pressed="false" aria-label="播放試聽"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>' : '<div class="lb-mini-none">（這張沒有試聽）</div>') +

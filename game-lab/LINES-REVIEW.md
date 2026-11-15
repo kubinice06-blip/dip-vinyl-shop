@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 389（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 413（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -567,6 +567,44 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・again | 再挑戰一趟 | 本規格新寫 | `summary.again` |
 | （畫面字）・more | 還有 {n} 張，點了開唱片櫃 | 本規格新寫 | `summary.more` |
 
+## 頻率・唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● 暴躁」、提示籤前的圓點（讀屏）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・label | 頻率 | 本規格新寫 | `tunes.label` |
+| （畫面字）・guest | 常聽 | 本規格新寫 | `tunes.guest` |
+| （畫面字）・guestAria | 常聽頻率：{name} | 本規格新寫 | `tunes.guestAria` |
+
+## 頻率・八格的名字（抄主站頻率光譜；改名要兩邊一起改）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・calm | 放鬆 | 本規格新寫 | `tunes.names.calm` |
+| （畫面字）・still | 平靜 | 本規格新寫 | `tunes.names.still` |
+| （畫面字）・languid | 恍惚 | 本規格新寫 | `tunes.names.languid` |
+| （畫面字）・decay | 頹靡 | 本規格新寫 | `tunes.names.decay` |
+| （畫面字）・lift | 雀躍 | 本規格新寫 | `tunes.names.lift` |
+| （畫面字）・crisp | 冷冽 | 本規格新寫 | `tunes.names.crisp` |
+| （畫面字）・boil | 沸騰 | 本規格新寫 | `tunes.names.boil` |
+| （畫面字）・charge | 暴躁 | 本規格新寫 | `tunes.names.charge` |
+
+## 收音機・轉頻率（兩位客人之間、每輪一次；{x} 由畫面代入）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・title | 收音機 | 本規格新寫 | `radio.title` |
+| （畫面字）・prompt | 轉一個頻率，抽一張放進這一輪的特價箱。 | 本規格新寫 | `radio.prompt` |
+| （畫面字）・price | 電台那張照原價。 | 本規格新寫 | `radio.price` |
+| （畫面字）・got | 特價箱多了一張《{album}》。 | 本規格新寫 | `radio.got` |
+| （畫面字）・used | 這一輪已經轉過了。 | 本規格新寫 | `radio.used` |
+| （畫面字）・usedSub | 這一輪轉到{name}：《{album}》 | 本規格新寫 | `radio.usedSub` |
+| （畫面字）・empty | 這個頻率抽不到唱片了。 | 本規格新寫 | `radio.empty` |
+| （畫面字）・later | 兩位客人之間才能轉。 | 本規格新寫 | `radio.later` |
+| （畫面字）・tag | 電台 | 本規格新寫 | `radio.tag` |
+| （畫面字）・toBargain | 去特價箱看看 | 本規格新寫 | `radio.toBargain` |
+| （畫面字）・bagged | 已經收進包包了。 | 本規格新寫 | `radio.bagged` |
+| （畫面字）・gone | 已經不在特價箱了。 | 本規格新寫 | `radio.gone` |
+
 ## 店內名牌（shops/basement.json）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -593,20 +631,21 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | 獨立搖滾 | 本規格新寫 | `shops/dip.json.props[12].bin.label` |
 | （畫面字） | 獨立流行 | 本規格新寫 | `shops/dip.json.props[13].bin.label` |
 | （畫面字） | 藍調 | 本規格新寫 | `shops/dip.json.props[14].bin.label` |
-| （畫面字） | 搖滾 | 本規格新寫 | `shops/dip.json.props[17].bin.label` |
-| （畫面字） | 電子 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
-| （畫面字） | 靈魂放克 | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
-| （畫面字） | 嘻哈 R&B | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
-| （畫面字） | 城市流行 | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
-| （畫面字） | 古典 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
-| （畫面字） | 世界 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
-| （畫面字） | 民謠 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
-| （畫面字） | 爵士 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
-| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[26].bin.label` |
-| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[27].hot.label` |
-| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[29].bin.label` |
-| （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[30].bin.label` |
-| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[31].hot.label` |
+| （畫面字） | 收音機 | 本規格新寫 | `shops/dip.json.props[17].hot.label` |
+| （畫面字） | 搖滾 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
+| （畫面字） | 電子 | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
+| （畫面字） | 靈魂放克 | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
+| （畫面字） | 嘻哈 R&B | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
+| （畫面字） | 城市流行 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
+| （畫面字） | 古典 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
+| （畫面字） | 世界 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
+| （畫面字） | 民謠 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
+| （畫面字） | 爵士 | 本規格新寫 | `shops/dip.json.props[26].bin.label` |
+| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[27].bin.label` |
+| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[28].hot.label` |
+| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[30].bin.label` |
+| （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[31].bin.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[32].hot.label` |
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
 | （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
 

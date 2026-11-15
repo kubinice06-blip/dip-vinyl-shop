@@ -34,7 +34,7 @@ export const SHOP_SPOTS = ['out', 'q1', 'q2', 'door', 'atdoor', 'in', 'counter',
 export const SHOP_CAMERAS = ['full', 'reward', 'strip', 'stripS'];
 export const O34_CAMERAS = ['full', 'scene', 'map', 'reward', 'strip', 'stripS'];
 // 斜俯視本店一定要有的熱點；箱子的主熱點 bin:<key> 由資料推出（o34HotIds，SPEC-v4 §5.1：check-shops 自己從 o.bin.key 推，不呼叫 shop.js 的 buildHotList）
-export const O34_HOTS = ['door', 'now', 'poster-event', 'booth', 'counter', 'cat', 'owner'];
+export const O34_HOTS = ['door', 'now', 'poster-event', 'booth', 'counter', 'cat', 'owner', 'radio'];   // radio：收音機轉頻率（v5 第六項第二期）
 export function o34HotIds(L) { return O34_HOTS.concat((L.props || []).filter(o => o.bin && o.bin.key).map(o => 'bin:' + o.bin.key)); }
 // v4 新增的站位（序章後走道對峙、特價箱前）
 export const O34_SPOTS = SHOP_SPOTS.concat(['leaving', 'mid', 'sale', 'wait']);
@@ -71,7 +71,7 @@ export function routeHitsFeet(DS, pts, feet) {
   for (let i = 1; i < pts.length; i++) for (const [id, f] of feet) if (hits(pts[i - 1], pts[i], f)) return { seg: [pts[i - 1], pts[i]], id, foot: f };
   return null;
 }
-const ACTION_RE = /^(door|listen|counter|cat|talk:owner|poster:event|now|locked|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
+const ACTION_RE = /^(door|listen|radio|counter|cat|talk:owner|poster:event|now|locked|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
 // 小人看得到的列數 × 每格場景像素（斜俯視：人整格 16×spriteScale＝48 格；腳底在第 14 列）
 export function charH(L) { return L && L.projection ? 16 * (L.spriteScale || 3) : CHAR_H * ((L && L.fine && L.spriteScale) || 1); }
 // 本店箱子的卡池：v2 content.pools.crate[key]（陣列）；v3 content.bins[key].ids
