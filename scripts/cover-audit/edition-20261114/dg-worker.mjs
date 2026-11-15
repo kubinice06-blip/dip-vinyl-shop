@@ -40,16 +40,35 @@ async function doSearch(t) {
   // 一次搜尋（不限 type），master 與 release 混在結果裡：先挑同名 master，沒有再挑最早有圖的同名 release
   let r = await dg(`/database/search?artist=${encodeURIComponent(t.artist)}&release_title=${encodeURIComponent(t.album)}&per_page=50`);
   if (!r) return null;
-  if (!(r.results || []).length) {   // 被擠爆時 Discogs 會回 200＋空結果：等一下再查一次確認
-    await sleep(10000);
-    r = await dg(`/database/search?artist=${encodeURIComponent(t.artist)}&release_title=${encodeURIComponent(t.album)}&per_page=50`);
-    if (!r) return null;
+  if (!(r.results || []).length) {
+    // 2026-11-15：artist= 只比對主名，藝人在該張用別名（ANV，例如「Richie Beirach*」）或日文名時會回 0 筆，
+    // 不是擠爆。先用全文 q= 查；仍是 0 筆才當成可能擠爆，等 10 秒再查一次原式。
+    const rq = await dg(`/database/search?q=${encodeURIComponent(t.artist + ' ' + t.album)}&per_page=50`);
+    if (rq && (rq.results || []).length) r = rq;
+    else {
+      await sleep(10000);
+      r = await dg(`/database/search?artist=${encodeURIComponent(t.artist)}&release_title=${encodeURIComponent(t.album)}&per_page=50`);
+      if (!r) return null;
+    }
   }
-  const res = (r.results || []).filter(good);
+  // 2026-11-15：未登入的搜尋結果 thumb／cover_image 一律是空字串，不能再用「有圖」過濾；
+  // 先用盤名／藝人挑，再打 /masters/<id> 或 /releases/<id> 拿主圖（每張卡多 1 次請求）。
+  const res = r.results || [];
   let { list, exact } = pick(res.filter(x => x.type === 'master'), t);
-  if (list.length) { const h = list[0]; return { kind: 'master', exact, id: h.id, title: h.title, year: h.year, country: h.country, img: h.cover_image, thumb: h.thumb }; }
+  for (const h of list.slice(0, 2)) {
+    const m = await dg('/masters/' + h.id);
+    if (!m || m.__404) continue;
+    const im = m.images || []; const pr = im.find(i => i.type === 'primary') || im[0];
+    if (pr?.uri) return { kind: 'master', exact, id: h.id, title: h.title, year: h.year, country: h.country, mainRelease: m.main_release, img: pr.uri, thumb: pr.uri150 || pr.uri };
+  }
   ({ list, exact } = pick(res.filter(x => x.type === 'release'), t));
-  if (list.length) { const h = list[0]; return { kind: 'release', exact, id: h.id, masterId: h.master_id || null, title: h.title, year: h.year, country: h.country, label: (h.label || [])[0], catno: h.catno, format: (h.format || []).join(','), img: h.cover_image, thumb: h.thumb }; }
+  for (const h of list.slice(0, 2)) {
+    const x = await dg('/releases/' + h.id);
+    if (!x || x.__404) continue;
+    const im = x.images || []; const pr = im.find(i => i.type === 'primary') || im[0];
+    if (pr?.uri) return { kind: 'release', exact, id: h.id, masterId: h.master_id || null, title: h.title, year: h.year, country: h.country, label: (h.label || [])[0], catno: h.catno, format: (h.format || []).join(','), img: pr.uri, thumb: pr.uri150 || pr.uri };
+  }
+  if (res.length) return { kind: 'noimg', n: res.length };
   return { kind: 'none' };
 }
 async function doVersions(id) {
