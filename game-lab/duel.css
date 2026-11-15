@@ -126,6 +126,10 @@
 .dl .hint.done{border-color:#ccc}.dl .hint.done .lb{background:#bbb}.dl .hint.done .tx{color:#aaa}
 .dl.revealed .hint{visibility:hidden}
 .dl:not(.revealed) .lastline{visibility:hidden}
+/* 頻率圓點（v5 第六項第二期）：提示籤前＝客人的常聽頻率；1 px 墨框（放鬆／平靜／冷冽在白底才看得到）；不染字、不染框；打完變灰 */
+.dl .hint .tn{flex:none;align-self:center;width:10px;height:10px;border-radius:50%;background:var(--tn,#ccc);box-shadow:0 0 0 1px var(--ink,#111);margin:0 6px 0 7px}
+.dl .hint.done .tn{background:#ddd;box-shadow:0 0 0 1px #bbb}
+.dl.short .hint .tn{width:8px;height:8px;margin:0 5px}
 /* 結果框（560 ms）：l1 規則句（唬人時「他唬你！…」）、l2 扣多少、l3 關鍵字那句（照實）或規則句（唬人又剋不動）
    在中間字帶右邊（相剋圖例旁邊），不蓋封面；字太長就在標點後換行 */
 .dl .callout{position:absolute;left:var(--bx);right:var(--pl);top:var(--bt);transform-origin:50% 0;background:rgba(255,255,255,.97);border:1px solid var(--ink,#111);box-shadow:0 6px 22px rgba(0,0,0,.2);padding:4px 8px 5px;text-align:center;z-index:4;pointer-events:none;display:none}
