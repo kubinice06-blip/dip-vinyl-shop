@@ -2571,7 +2571,9 @@
     var r = save.run;
     if (!r || UI.screen !== 'night' || !E.canShop(r)) { toast(radioText('later')); return; }
     var T = C.tunes || {}, order = T.order || [];
-    var s = floatSheet('', 'radio');
+    var s = floatSheet('<div class="hd"><h3>' + esc(radioText('title')) + '</h3><span class="np"></span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div><div class="rd-body"></div>', 'radio');
+    var body = qs('.rd-body', s);
+    watchPlaying(qs('.np', s));
     var render = function (justGot) {
       var R = r.shop && r.shop.radio, used = !!R, rc = R ? card(R.id) : null;
       var cells = order.map(function (k) {
@@ -2582,10 +2584,8 @@
       var got = rc ? '<div class="rd-got">' + tileHTML(rc, { text: false, stars: false, cls: 'rd-cv' }) +
           '<div class="rd-tx"><b>' + esc(justGot ? radioText('got', { album: rc.album }) : radioText('usedSub', { name: (T.names || {})[R.cell] || '', album: rc.album })) + '</b>' +
           '<span class="sub">' + esc(rc.artist) + '</span><button type="button" class="lb-btn pri" data-a="toBargain">' + esc(radioText('toBargain')) + '</button></div></div>' : '';
-      s.innerHTML = '<div class="hd"><h3>' + esc(radioText('title')) + '</h3><span class="np"></span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
-        '<p class="sub">' + esc(used && !justGot ? radioText('used') : radioText('prompt')) + '<small class="rd-price">' + esc(radioText('price')) + '</small></p>' +
+      body.innerHTML = '<p class="sub">' + esc(used && !justGot ? radioText('used') : radioText('prompt')) + '<small class="rd-price">' + esc(radioText('price')) + '</small></p>' +
         '<div class="lb-radio" role="group" aria-label="' + esc(T.label || '') + '">' + cells + '</div>' + got;
-      watchPlaying(qs('.np', s));
     };
     render(false);
     if (UI.screen === 'night') stgP('walk', 'p', ['radio'], 110).then(function () { UI.lastSpot = 'radio'; });
