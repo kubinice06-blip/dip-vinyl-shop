@@ -185,8 +185,14 @@ async function tapName(page, name) {
 }
 // 點那張（＝在那張打開；已經打開就不再點：再點＝收回）
 async function liftIt(page, i) {
-  if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
-  await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(260);
+  for (let t = 0; t < 2; t++) {
+    if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
+    // 剛收回（select(null)）時手牌還在滑回疊好的位置：先等它停，才算點得到的那一點（不然點到隔壁那張；11-15 查到的偶發失敗）
+    await sleep(t ? 450 : 120);
+    await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(260);
+    if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
+    await page.evaluate(() => window.DipLabDuel.select(null));
+  }
 }
 // 找得到 want 的這一手（找不到就換種子重開），回 find() 的結果
 async function setup(page, want, seed0 = 7) {
@@ -446,20 +452,21 @@ async function runSize(browser, w, h) {
         const legOf = () => page.evaluate(() => {
           const q = s => document.querySelector(s), R = e => { const b = e.getBoundingClientRect(); return { l: b.left, t: b.top, r: b.right, b: b.bottom }; };
           const leg = q('.dl .trileg'), hint = q('.dl .hint'), tri = q('.dl .tri'), tcol = q('.dl .tcol'), tbl = q('.dl .dl-t');
-          return { on: !leg.hidden && leg.offsetHeight > 0, tx: leg.textContent, leg: R(leg), hint: R(hint), tri: R(tri), tcol: R(tcol), tbl: R(tbl), fits: leg.scrollWidth <= leg.clientWidth + 1, lines: hint.querySelector('.tx').getClientRects().length };
+          return { on: !leg.hidden && leg.offsetHeight > 0, tx: leg.textContent, leg: R(leg), hint: R(hint), tri: R(tri), tcol: R(tcol), tbl: R(tbl), fits: leg.scrollWidth <= leg.clientWidth + 1, lines: (tx => { const c = getComputedStyle(tx); return Math.round((tx.getBoundingClientRect().height - parseFloat(c.paddingTop) - parseFloat(c.paddingBottom)) / (parseFloat(c.lineHeight) || 20)); })(hint.querySelector('.tx')), pop: [...document.querySelectorAll('.dl .pop .ab')].map(R) };
         });
         const want = await page.evaluate(a => {
           const C = window.DipLabContent || {}, ZH = { c: '經典', o: '冷門', h: '硬蕊' }, beat = { o: 'c', c: 'h', h: 'o' }, by = { c: 'o', h: 'c', o: 'h' };
           return String(C.triLegend || '').replace('{a}', ZH[a]).replace('{b}', ZH[beat[a]]).replace('{c}', ZH[by[a]]);
         }, r.top);
-        const geoOk = g => g.on && g.fits && g.leg.t >= g.hint.b + 3 - 0.5 && g.leg.b <= g.tcol.b + 0.5 && g.leg.l >= g.tri.r - 0.5 && g.leg.t >= g.tcol.t && g.leg.r <= g.tbl.r + 0.5;
+        const geoOk = g => g.on && g.fits && g.leg.t >= g.hint.b + 3 - 0.5 && g.leg.b <= g.tcol.b + 0.5 && g.leg.l >= g.tri.r - 0.5 && g.leg.t >= g.tcol.t && g.leg.r <= g.tbl.r + 0.5
+          && g.pop.every(p => p.t >= g.leg.b + 1 || p.r <= g.leg.l || p.l >= g.leg.r);   // 屬性鈕（含最高那顆）不頂進這行字（審查 11-15）
         const g1 = await legOf();
         const orig = await page.evaluate(() => document.querySelector('.dl .hint .tx').textContent);
         const longest = await page.evaluate(() => { const H = (window.DipLabContent || {}).hints || {}; return Object.values(H).flat().map(x => x.text).sort((a, b) => [...b].length - [...a].length)[0] || ''; });
         await page.evaluate(t => { document.querySelector('.dl .hint .tx').textContent = t + t.slice(0, 6); }, longest); await sleep(200);
         const g2 = await legOf();
         await page.evaluate(t => { document.querySelector('.dl .hint .tx').textContent = t; }, orig); await sleep(150);
-        const ok2t = !!want && g1.tx === want && geoOk(g1) && geoOk(g2) && g2.lines >= 1;
+        const ok2t = !!want && g1.tx === want && geoOk(g1) && geoOk(g2) && g2.lines >= 2;
         record('2t', size, ok2t, `「${g1.tx}」（要「${want}」）；提示框下緣 ${Math.round(g1.hint.b)}＋3 ≤ 這行 ${Math.round(g1.leg.t)}–${Math.round(g1.leg.b)} ≤ 字帶下緣 ${Math.round(g1.tcol.b)}；兩行提示（${g2.lines} 列）：${Math.round(g2.hint.b)}＋3 ≤ ${Math.round(g2.leg.t)}`);
       }
       await tapName(page, 'card-2'); await sleep(320);

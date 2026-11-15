@@ -111,7 +111,9 @@
 /* 提示句（店主 FIXLIST 9）：中間字帶（兩張封面下方）；出牌前是提示句，揭曉時換成結果框，下一手換回下一句提示 */
 /* 選屬性時相剋圖旁那一行（v5 第二項小尾巴）：「冷門：剋經典｜怕硬蕊」；在提示框下面、貼著中間字帶下緣（相剋圖右下）。
    --hs：提示框兩行時往上讓出這一行（duel.js placeLeg，看提示框自己的高，不看有沒有選牌） */
-.dl .trileg{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) - var(--leg-h,14px));height:var(--leg-h,14px);
+/* --leg-off：離字帶下緣留 3 px（375×548 最高那顆屬性鈕的上緣會伸進字帶 1 px；審查 11-15） */
+.dl{--leg-off:3px}
+.dl .trileg{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) - var(--leg-h,14px) - var(--leg-off,3px));height:var(--leg-h,14px);
   font-size:11px;font-weight:700;line-height:var(--leg-h,14px);letter-spacing:.02em;color:var(--ink,#111);white-space:nowrap;overflow:hidden;pointer-events:none;z-index:2;font-family:var(--dl-zh)}
 .dl .trileg[hidden]{display:none}
 .dl .trileg .g{color:var(--win,#2e7d52)}.dl .trileg .r{color:var(--red,#c11628)}.dl .trileg .sep{color:var(--gray,#888);margin:0 2px}

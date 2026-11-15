@@ -519,7 +519,8 @@
       return esc(tpl).replace(/\{([abc])\}|剋|怕|｜/g, (m, k) => k ? nm(({ a: x, b, c })[k]) : m === '剋' ? '<span class="g">剋</span>' : m === '怕' ? '<span class="r">怕</span>' : '<span class="sep">｜</span>');
     }
     function renderLeg() {
-      const x = S.sel && !S.busy && !S.flash && S.v && !S.v.over ? S.sel.attr : null;
+      // 教學裡不出（審查 11-15：教學強制亮邊時圖上沒有紅箭頭、「怕」對不上；教學遮罩的洞邊會從這行字中間切過去）
+      const x = !tut && !S.triForce && S.sel && !S.busy && !S.flash && S.v && !S.v.over ? S.sel.attr : null;
       const key = x || '';
       if (els.leg.dataset.a === key) return;
       els.leg.dataset.a = key;
@@ -529,9 +530,9 @@
     // 提示框（中間字帶垂直置中）兩行時會蓋到最下面那一行字：先往上讓（只看提示框自己的高，不看有沒有選牌 → 打開手牌時不跳）
     function placeLeg() {
       const band = parseFloat(root.style.getPropertyValue('--band-h')) || els.tcol.offsetHeight || 0;
-      const h = els.hint.offsetHeight, lh = parseFloat(getComputedStyle(els.leg).lineHeight) || 14;
+      const cs = getComputedStyle(els.leg), h = els.hint.offsetHeight, lh = parseFloat(cs.lineHeight) || 14, off = parseFloat(cs.getPropertyValue('--leg-off')) || 0;
       if (!band || !h) return;
-      const shift = Math.max(0, Math.ceil(h / 2 + 4 + lh - band / 2));   // 4＝提示框陰影 3 px＋1 px 縫
+      const shift = Math.max(0, Math.ceil(h / 2 + 4 + lh + off - band / 2));   // 4＝提示框陰影 3 px＋1 px 縫；off＝這行字離字帶下緣（讓屬性鈕的黑框與陰影）
       els.hint.style.setProperty('--hs', shift + 'px');
     }
     function renderRounds(v) { els.rounds.textContent = T('rounds', { n: Math.max(1, v.n | 0), max: v.maxRounds || (E.CFG && E.CFG.maxRounds) || 6 }); }
