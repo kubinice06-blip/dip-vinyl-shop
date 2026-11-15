@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **831** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 589、已退回 1）。
-最後更新：2026-11-14
+共 **959** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 717、已退回 1）。
+最後更新：2026-11-15
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -1391,26 +1391,40 @@
 | Rien Djamain 《Api Asmara》 | [#10804495](https://www.discogs.com/release/10804495) | 1975 | Hidayat | 1-1007 | 年份 1975、廠牌 Hidayat、目錄號 1-1007 | pending |
 | Titiek Puspa 《Doa Ibu》 | [#9555592](https://www.discogs.com/release/9555592) | 1965 | Irama | LPI 17580 | 年份 1965、廠牌 Irama、目錄號 LPI 17580 | pending |
 
-## edition-20261114（200 張）
+## edition-20261114（328 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | A.L. Lloyd 《Leviathan!》 | [#1998706](https://www.discogs.com/release/1998706) | 1967 | Topic Records | 12T174 | 年份 1967、廠牌 Topic Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Abdullah Ibrahim 《Africa - Tears and Laughter》 | [#31623955](https://www.discogs.com/release/31623955) | 1983 | Enja Records | enja 3039 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Abdullah Ibrahim 《Banyana》 | [#496673](https://www.discogs.com/release/496673) | 1976 | Enja Records | enja 2070 | 年份 1976、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Abruptum 《Obscuritatem Advoco Amplectère Me》 | [#590632](https://www.discogs.com/release/590632) | 1993 | Deathlike Silence Productions | Anti-Mosh 004 | 年份 1993、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Adrian Boult 《Holst: The Planets》 | [#14664506](https://www.discogs.com/release/14664506) | 1981 | His Master's Voice | ASD 3649 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Al Haig 《Duke 'n' Bird》 | [#30151682](https://www.discogs.com/release/30151682) | 2015 | East Wind | UCCJ-9181 | 廠牌 East Wind、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Albert Mangelsdorff 《A Jazz Tune I Hope》 | [#7242467](https://www.discogs.com/release/7242467) | 1979 | MPS Records | KUX-130-P | 年份 1979、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Alfred Brendel 《Beethoven: Diabelli Variations》 | [#35296942](https://www.discogs.com/release/35296942) | 1968 | Turnabout | TV 34139S | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Alicia de Larrocha 《Albéniz: Iberia》 | [#9922339](https://www.discogs.com/release/9922339) | — | Decca | SXL 6586-7 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | All Saved Freak Band 《My Poor Generation》 | [#6184736](https://www.discogs.com/release/6184736) | 1976 | Rock The World Enterprises | 730605 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Alone in a Crowd / Inside Out 《Alone in a Crowd / Inside Out》 | [#3753902](https://www.discogs.com/release/3753902) | 1989 | Flux Records (4) | FR-2 | 年份 1989、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Andraé Crouch & the Disciples 《Live at Carnegie Hall》 | [#1680570](https://www.discogs.com/release/1680570) | 1973 | Light Records | LS-5602-LP | 年份 1973、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Andrew Hill 《Blue Black》 | [#38325840](https://www.discogs.com/release/38325840) | 1977 | East Wind | EW-8029 | 年份 1977、廠牌 East Wind、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Andrzej Trzaskowski Quintet 《Polish Jazz Vol. 4》 | [#1763330](https://www.discogs.com/release/1763330) | 1965 | Polskie Nagrania Muza | XL 0258 | 年份 1965、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Angel Witch 《Angel Witch》 | [#2137655](https://www.discogs.com/release/2137655) | 1980 | Bronze | BRON 532 | 年份 1980、廠牌 Bronze、目錄號 BRON 532、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Antal Doráti 《Tchaikovsky: 1812 Overture》 | [#7844503](https://www.discogs.com/release/7844503) | 1979 | Decca | SXL 6895 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Archie Shepp Quartet 《True Blue》 | [#14556786](https://www.discogs.com/release/14556786) | 1999 | Venus Records (5) | TKCV-35080 | 年份 1999、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Art Bears 《Hopes and Fears》 | [#423998](https://www.discogs.com/release/423998) | 1978 | Rē Records | Rē 2188 | 年份 1978、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Arturo Toscanini 《Beethoven: Symphony no. 3 Eroica (1953)》 | [#8969337](https://www.discogs.com/release/8969337) | 1960 | RCA Victor Red Seal | LM 2387 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Asin 《Himig Ng Pag-ibig》 | [#4891114](https://www.discogs.com/release/4891114) | 1979 | Ugat | TSP-5283 | 年份 1979、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Atahualpa Yupanqui 《Basta ya》 | [#13091777](https://www.discogs.com/release/13091777) | — | Le Chant Du Monde | LDX 7 4457 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Baden Powell 《Images on Guitar》 | [#2692806](https://www.discogs.com/release/2692806) | 1972 | MPS Records | 21 29057-3 | 年份 1972、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Barney Kessel 《The Poll Winners》 | [#3513300](https://www.discogs.com/release/3513300) | 1957 | Contemporary Records | C3535 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Barry Harris 《Magnificent!》 | [#4555426](https://www.discogs.com/release/4555426) | — | Prestige | PR 7733 | 廠牌 Prestige、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Beyond 《亞拉伯跳舞女郎》 | [#15129542](https://www.discogs.com/release/15129542) | 2008 | Cinepoly | 178132 0 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Bim Sherman 《In A Rub-A-Dub Style》 | [#2938739](https://www.discogs.com/release/2938739) | 1980 | Yard International | YI 05 | 年份 1980、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Blind Lemon Jefferson 《Blind Lemon Jefferson》 | [#12632715](https://www.discogs.com/release/12632715) | 1974 | Milestone (4) | M-47022 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Bobby Hutcherson 《Live at Montreux》 | [#1059364](https://www.discogs.com/release/1059364) | 1974 | Blue Note | BN-LA249-G | 年份 1974、廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Bobby Timmons 《In Person》 | [#11061008](https://www.discogs.com/release/11061008) | 1961 | Riverside Records | RLP 391 | 年份 1961、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Bodkin 《Bodkin》 | [#6813547](https://www.discogs.com/release/6813547) | 1972 | West (7) | CSA 104 LP | 年份 1972、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Bonga 《Angola 72》 | [#11581027](https://www.discogs.com/release/11581027) | 2017 | Lusafrica | 56725 762581 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Boredoms 《Soul Discharge》 | [#1810824](https://www.discogs.com/release/1810824) | 1989 | Selfish Records | BEL-12039 | 年份 1989、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Brigitte Fontaine & Areski Belkacem 《Vous et nous》 | [#13483527](https://www.discogs.com/release/13483527) | 1977 | Saravah | RSL 1071 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
@@ -1420,118 +1434,220 @@
 | Carlos Chávez 《Sinfonía India》 | [#23027867](https://www.discogs.com/release/23027867) | 1959 | Everest | SDBR 3029 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Celia Cruz 《La reina del ritmo cubano》 | [#10836782](https://www.discogs.com/release/10836782) | 1958 | Seeco | SCLP 9101 | 年份 1958、廠牌 Seeco、目錄號 SCLP 9101、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Chet Baker 《Gerry Mulligan Quartet》 | [#2723860](https://www.discogs.com/release/2723860) | 1955 | Pacific Jazz | PJ-1207 | 年份 1955、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Christa Ludwig 《Mahler: Das Lied von der Erde》 | [#3535708](https://www.discogs.com/release/3535708) | 1975 | Columbia Masterworks | KM 31919 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Claude Williamson Trio 《Song for My Father》 | [#13079971](https://www.discogs.com/release/13079971) | 2006 | Venus Records (5) | TKCV-35367 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Clifford Brown 《Jazz Immortal》 | [#14468018](https://www.discogs.com/release/14468018) | 1965 | Pacific Jazz | PJ-3 | 廠牌 Pacific Jazz、目錄號 PJ-3、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Common 《Resurrection》 | [#249390](https://www.discogs.com/release/249390) | 1994 | Relativity | 88561-1208-1 | 年份 1994、目錄號 88561-1208-1、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Concrete Rubber Band 《Risen Savior》 | [#1092081](https://www.discogs.com/release/1092081) | 1974 | American Artists | AAS-1164-LP | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Conflict 《The Ungovernable Force》 | [#2457587](https://www.discogs.com/release/2457587) | 1986 | Mortarhate Records | MORT 20 | 年份 1986、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Crass 《The Feeding of the 5000》 | [#368224](https://www.discogs.com/release/368224) | 1981 | Crass Records | 621984 | 廠牌 Crass Records、目錄號 621984、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Crispy Ambulance 《The Plateau Phase》 | [#432141](https://www.discogs.com/release/432141) | 1982 | Factory Benelux | FBN 12 | 年份 1982、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Cymande 《Arrival》 | [#806298](https://www.discogs.com/release/806298) | 1981 | Paul Winley Records | LP 141 | 年份 1981、廠牌 Paul Winley Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Czerwone Gitary 《To właśnie my》 | [#5605615](https://www.discogs.com/release/5605615) | 1966 | Pronit | XL 0350 | 年份 1966、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Czesław Bartkowski 《Drums Dream》 | [#685533](https://www.discogs.com/release/685533) | 1976 | Polskie Nagrania Muza | SX 1419 | 年份 1976、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dakota Staton 《The Late, Late Show》 | [#17485840](https://www.discogs.com/release/17485840) | — | Capitol Records | T 876 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | David Bowie 《David Bowie》 | [#11894782](https://www.discogs.com/release/11894782) | 2018 | UMC | 0602567154433 | 廠牌 Deram、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| David Munrow 《The Art of Courtly Love》 | [#2145393](https://www.discogs.com/release/2145393) | 1973 | His Master's Voice | SLS 863 | 年份 1973、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Deep Purple 《Who Do We Think We Are》 | [#25329304](https://www.discogs.com/release/25329304) | 1973 | Purple Records | TPSA 7508 | 年份 1973、廠牌 Purple Records、目錄號 TPSA 7508、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Denise LaSalle 《Trapped by a Thing Called Love》 | [#1376476](https://www.discogs.com/release/1376476) | 1972 | Westbound Records | WB 2012 | 年份 1972、廠牌 Westbound Records、目錄號 WB 2012、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dennis Brown 《Wolf & Leopards》 | [#1879733](https://www.discogs.com/release/1879733) | 1977 | D.E.B. Music | MOLP 01 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Deux Filles 《Silence & Wisdom》 | [#1389870](https://www.discogs.com/release/1389870) | 1982 | Papier Maché | Pulp 31 | 年份 1982、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dexter Gordon 《The Tower of Power!》 | [#34255045](https://www.discogs.com/release/34255045) | — | Prestige | PR 7623 | 廠牌 Original Jazz Classics、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dexter Gordon 《Homecoming: Live at the Village Vanguard》 | [#2973345](https://www.discogs.com/release/2973345) | 1977 | Columbia | PG 34650 | 年份 1977、廠牌 Columbia、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Dick Gaughan 《Coppers & Brass》 | [#13861209](https://www.discogs.com/release/13861209) | 1977 | Topic Records | 12TS315 | 年份 1977、廠牌 Topic Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Dietrich Fischer-Dieskau 《Schubert: Die schöne Müllerin》 | [#15898770](https://www.discogs.com/release/15898770) | 1962 | His Master's Voice | ASD 481 | 年份 1962、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Django Reinhardt 《The Great Artistry of Django Reinhardt》 | [#29353630](https://www.discogs.com/release/29353630) | 1953 | Clef Records | MGC-516 | 年份 1953、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dollar Brand 《African Piano》 | [#2111309](https://www.discogs.com/release/2111309) | 1980 | Japo Records | JAPO 60002 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Dom Um Romão 《Dom Um Romão》 | [#3390571](https://www.discogs.com/release/3390571) | — | Muse Records | MR 5013 | 廠牌 Muse Records、目錄號 MR 5013、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Donald Byrd 《Jazz Lab》 | [#4283142](https://www.discogs.com/release/4283142) | 1957 | Columbia | CL 998 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Donald Byrd 《The Young Bloods》 | [#8972151](https://www.discogs.com/release/8972151) | 2014 | Prestige | UCCO-5280 | 廠牌 Prestige、目錄號 UCCO-5280、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Earl Hooker 《Sweet Black Angel》 | [#3685767](https://www.discogs.com/release/3685767) | 1969 | Blue Thumb Records | BTS 12 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Eddie Hazel 《Game, Dames and Guitar Thangs》 | [#8159593](https://www.discogs.com/release/8159593) | 1977 | Warner Bros. Records | BS 3058 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Eddie Jefferson 《Body and Soul》 | [#3563441](https://www.discogs.com/release/3563441) | 1969 | Prestige | PR 7619 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Eddie Palmieri 《Sentido》 | [#12824981](https://www.discogs.com/release/12824981) | 2016 | Bomba Records (4) | BOM 1201 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Édith Piaf 《Édith Piaf》 | [#5669169](https://www.discogs.com/release/5669169) | — | Columbia | 33 FS 1014 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ernest Hood 《Neighborhoods》 | [#4549152](https://www.discogs.com/release/4549152) | 1975 | Thistlefield | RR 5120 | 年份 1975、目錄號 RR 5120、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ewan MacColl 《The Manchester Angel》 | [#2917108](https://www.discogs.com/release/2917108) | 1966 | Topic Records | 12T147 | 年份 1966、廠牌 Topic Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Fats Sadi 《"Fats" Sadi's Combo》 | [#5743456](https://www.discogs.com/release/5743456) | 1997 | Vogue | L.D. 212 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Fear 《The Record》 | [#965730](https://www.discogs.com/release/965730) | 1982 | Slash | SR-111 | 年份 1982、廠牌 Slash、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Fifty Foot Hose 《Cauldron》 | [#977518](https://www.discogs.com/release/977518) | 1969 | Limelight | LS 86062 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Fläsket Brinner 《Fläsket brinner》 | [#3202237](https://www.discogs.com/release/3202237) | 1971 | Silence (3) | SRS 4606 | 年份 1971、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Forest 《Forest》 | [#2199362](https://www.discogs.com/release/2199362) | 1969 | Harvest | SHVL 760 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Franco Corelli 《Puccini: Turandot》 | [#2460305](https://www.discogs.com/release/2460305) | 1966 | Angel Records | SCL-3671 | 年份 1966、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Frankie Armstrong 《Lovely on the Water》 | [#14317846](https://www.discogs.com/release/14317846) | — | Topic Records | 12TS216 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Fritz Kreisler 《The 1926 & 1927 Victor Recordings: Favourite Short Pieces》 | [#24101780](https://www.discogs.com/release/24101780) | 1993 | Biddulph Recordings | LAB 075 | 廠牌 Biddulph Recordings、目錄號 LAB 075、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Fritz Reiner 《Prokofiev: Lieutenant Kijé / Stravinsky: Song of the Nightingale》 | [#3727919](https://www.discogs.com/release/3727919) | 1958 | RCA Victor Red Seal | LSC-2150 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Fritz Wunderlich 《Salzburger Liederabend》 | [#6651971](https://www.discogs.com/release/6651971) | 1984 | Acanta | 40.23 529 | 廠牌 Acanta、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Gabor Szabo 《Jazz Raga》 | [#3699007](https://www.discogs.com/release/3699007) | 1967 | Impulse! | A-9128 | 年份 1967、廠牌 Impulse!、目錄號 AS-9128、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Ganelin Trio 《Ancora da Capo》 | [#2686458](https://www.discogs.com/release/2686458) | 1982 | Leo Records | LR 108 | 年份 1982、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Gary Bartz 《Another Earth》 | [#10962844](https://www.discogs.com/release/10962844) | 1969 | Milestone (4) | MSP 9018 | 年份 1969、目錄號 MSP 9018、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Gary Wilson 《You Think You Really Know Me》 | [#2796337](https://www.discogs.com/release/2796337) | 1977 | MCM (3) | none | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Gautier Capuçon 《Saint-Saëns: Cello Concerto》 | [#20486482](https://www.discogs.com/release/20486482) | 2013 | Warner Classics | none | 年份 2013、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Gene Ammons 《The Boss Is Back!》 | [#2362176](https://www.discogs.com/release/2362176) | 1970 | Prestige | PRST 7739 | 廠牌 Prestige、目錄號 PRST 7739、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Gene Harris 《Tone Tantrum》 | [#573963](https://www.discogs.com/release/573963) | 1977 | Blue Note | BN-LA760-H | 年份 1977、廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | George Russell 《Ezz-thetics》 | [#4795510](https://www.discogs.com/release/4795510) | 2006 | Riverside Records | VICJ-41530 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Georges Delerue 《Le Mépris》 | [#4898896](https://www.discogs.com/release/4898896) | 2010 | Mercury | 532 407-9 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Gherkin Jerks 《Stomp the Beat》 | [#1073739](https://www.discogs.com/release/1073739) | 1988 | Gherkin Records | GKE 1052 | 年份 1988、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| GREENMACHiNE 《D.A.M.N.》 | [#15178506](https://www.discogs.com/release/15178506) | 1996 | Taste (2) | T/CD-1 ( BL-1006 ) | 年份 1996、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Grenadine 《Goya》 | [#1667648](https://www.discogs.com/release/1667648) | 1992 | Shimmy Disc | Shimmy Disc No. 59 | 年份 1992、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Guido Cantelli 《Brahms: Symphony no. 3》 | [#4623044](https://www.discogs.com/release/4623044) | 1956 | His Master's Voice | BLP 1083 | 年份 1956、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Hampton Hawes 《The Seance》 | [#3279834](https://www.discogs.com/release/3279834) | 1990 | Original Jazz Classics | OJC-455 | 廠牌 Original Jazz Classics、目錄號 S7621、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Hampton Hawes 《For Real!》 | [#3837482](https://www.discogs.com/release/3837482) | 1961 | Contemporary Records | M3589 | 年份 1961、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Hamza El Din 《Music of Nubia》 | [#16560930](https://www.discogs.com/release/16560930) | 1964 | Vanguard | VSD-79164 | 年份 1964、廠牌 Vanguard、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Harry Mudie 《In Dub Conference Vol. 2》 | [#4443875](https://www.discogs.com/release/4443875) | 1977 | Moodisc Records | HM 110 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Hemant Kumar 《Sahib Bibi Aur Ghulam》 | [#11856965](https://www.discogs.com/release/11856965) | 1962 | Angel Records | 3AE 1024 | 年份 1962、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| High Rise 《Psychedelic Speed Freaks》 | [#1054297](https://www.discogs.com/release/1054297) | 1984 | P.S.F. Records | PSF-1 | 年份 1984、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Horrific Child 《L'Étrange Mr Whinster》 | [#1829955](https://www.discogs.com/release/1829955) | 1976 | Eurodisc | 913063 | 年份 1976、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Hotdog 《Unang Kagat》 | [#3643604](https://www.discogs.com/release/3643604) | 1975 | Villar | MLS-5391 | 廠牌 Villar、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Houston Person 《Person to Person》 | [#1925201](https://www.discogs.com/release/1925201) | 1971 | Prestige | PR 10003 | 廠牌 Prestige、目錄號 PR 10003、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Howard McGhee 《Howard McGhee Volume 2》 | [#7003915](https://www.discogs.com/release/7003915) | 1975 | Blue Note | BLP 5024 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Hunters & Collectors 《Human Frailty》 | [#771419](https://www.discogs.com/release/771419) | 1986 | White Label Records | L 38524 | 年份 1986、廠牌 White Label Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| I Musici 《Vivaldi: The Four Seasons》 | [#12248537](https://www.discogs.com/release/12248537) | 1959 | Philips | 835 030 AY | 年份 1959、廠牌 Philips、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Idir 《Ay Arrac Nneɣ...》 | [#7585985](https://www.discogs.com/release/7585985) | 1979 | Azwaw | AZW 021 | 年份 1979、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Idoli 《VIS Idoli》 | [#9075851](https://www.discogs.com/release/9075851) | 1981 | Jugoton | LSY-61582 | 年份 1981、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Igor Markevitch 《Stravinsky: The Rite of Spring》 | [#5605636](https://www.discogs.com/release/5605636) | — | His Master's Voice | OASD 313 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ike Quebec 《With a Song in My Heart》 | [#2746049](https://www.discogs.com/release/2746049) | 1980 | Blue Note | LT-1052 | 年份 1980、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Inti-Illimani 《Inti-Illimani 2: La nueva canción chilena》 | [#31179580](https://www.discogs.com/release/31179580) | 1974 | I Dischi Dello Zodiaco | VPA 8207 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Irakere 《Cuba libre》 | [#1873383](https://www.discogs.com/release/1873383) | 1980 | JVC | VIJ-28005 | 年份 1980、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Jackie Mittoo 《Macka Fat》 | [#11585036](https://www.discogs.com/release/11585036) | 1971 | Coxsone Records | SOL 1120 | 廠牌 Studio One、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Jacqueline du Pré 《Haydn: Cello Concertos》 | [#14030382](https://www.discogs.com/release/14030382) | 1967 | His Master's Voice | ASD 2331 | 年份 1967、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Jan Ptaszyn Wróblewski 《Sprzedawcy glonów》 | [#26958431](https://www.discogs.com/release/26958431) | 2023 | Polskie Nagrania Muza | SXL 1141 | 廠牌 Polskie Nagrania Muza、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Jeremy Dormouse 《The Toad Recordings》 | [#4062454](https://www.discogs.com/release/4062454) | 2001 | Hallucination Cds | HCD05 | 廠牌 Hallucination Cds、目錄號 HCD05、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Jessie Montgomery 《Strum》 | [#23250800](https://www.discogs.com/release/23250800) | 2015 | Azica Records | ACD-71302 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Jim Hall 《... Where Would I Be?》 | [#26683646](https://www.discogs.com/release/26683646) | 1972 | Milestone (4) | MSP 9037 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Jimmy Giuffre 《The Jimmy Giuffre 3》 | [#7904399](https://www.discogs.com/release/7904399) | 1957 | Atlantic | 1254 | 年份 1957、廠牌 Atlantic、目錄號 1254、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Jimmy Riley 《Rydim Driven》 | [#3422852](https://www.discogs.com/release/3422852) | 1981 | Taxi | MLPS 9671 | 年份 1981、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Jimmy Smith 《The Sounds of Jimmy Smith》 | [#3708067](https://www.discogs.com/release/3708067) | 1957 | Blue Note | BLP 1556 | 廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Johann Sebastian Bach 《Motetten》 | [#8666100](https://www.discogs.com/release/8666100) | 1984 | Capriccio (2) | 10 030 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| John Butcher 《Thirteen Friendly Numbers》 | [#2368323](https://www.discogs.com/release/2368323) | 1992 | Acta | ACTA 6 | 年份 1992、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | John Cage & David Tudor 《Variations IV》 | [#792782](https://www.discogs.com/release/792782) | 1966 | Everest | EVEREST 3132 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | John Fahey 《The Transfiguration of Blind Joe Death》 | [#8320745](https://www.discogs.com/release/8320745) | 2016 | 4 Men With Beards | 4m205 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | John McLaughlin 《Extrapolation》 | [#3093046](https://www.discogs.com/release/3093046) | 1969 | Marmalade | 608 007 | 年份 1969、廠牌 Marmalade、目錄號 608 007、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | John Wright 《Mr. Soul》 | [#4297625](https://www.discogs.com/release/4297625) | 1962 | Prestige | PR 7233 | 年份 1962、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| John Zorn 《Pool》 | [#1313097](https://www.discogs.com/release/1313097) | 1980 | Parachute | POO 11/12 | 年份 1980、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| John Zorn 《Cobra》 | [#1251065](https://www.discogs.com/release/1251065) | 1987 | hat ART | hat ART 2034 | 年份 1987、廠牌 hat ART、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Johnny Shines 《Standing at the Crossroads》 | [#3844569](https://www.discogs.com/release/3844569) | 1972 | Testament Records | T-2221 | 廠牌 Testament Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Juan de la Cruz Band 《Maskara》 | [#4261977](https://www.discogs.com/release/4261977) | 1974 | Sunshine (4) | TSP-5127 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Juke Boy Bonner 《Things Ain't Right》 | [#3219337](https://www.discogs.com/release/3219337) | 1970 | Liberty | LBS 83319 | 年份 1970、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Jule Styne 《Gypsy》 | [#2165587](https://www.discogs.com/release/2165587) | 1959 | Columbia Masterworks | OL 5420 | 年份 1959、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Julius Eastman 《Femenine》 | [#8970703](https://www.discogs.com/release/8970703) | 2016 | Frozen Reeds | fr6 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Junipher Greene 《Friendship》 | [#2360306](https://www.discogs.com/release/2360306) | 1971 | Sonet | SLP 1413 | 年份 1971、廠牌 Sonet、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Kathleen Ferrier 《Gluck: Orfeo ed Euridice》 | [#7980818](https://www.discogs.com/release/7980818) | 1954 | Decca | LXT 2893 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Kenny Barron Trio 《Imo Live》 | [#27245001](https://www.discogs.com/release/27245001) | 2023 | Octave Lab | OTLCD2636 | 廠牌 Whynot、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Kevin Drumm 《Tannenbaum》 | [#4263900](https://www.discogs.com/release/4263900) | 2013 | Hospital Productions | HOS-371 | 年份 2013、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Klaus Renft Combo 《Renft》 | [#24356057](https://www.discogs.com/release/24356057) | 1974 | AMIGA | 8 55 396 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Lazy Smoke 《Corridor of Faces》 | [#2519859](https://www.discogs.com/release/2519859) | 2010 | Jackpot Records (3) | JPR7107 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Lee Konitz 《Subconscious-Lee》 | [#11376416](https://www.discogs.com/release/11376416) | 2013 | Prestige | UCCO-5204 | 廠牌 Prestige、目錄號 PRLP 7004、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Lejaren Hiller 《Computer Music Retrospective》 | [#824966](https://www.discogs.com/release/824966) | 1986 | WERGO | WER 60128 | 年份 1986、廠牌 WERGO、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Lennie Tristano 《Lennie Tristano》 | [#9389164](https://www.discogs.com/release/9389164) | 1968 | Atlantic | 1224 | 廠牌 Atlantic、目錄號 1224、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | León Gieco 《De Ushuaia a La Quiaca》 | [#6697107](https://www.discogs.com/release/6697107) | 1999 | Abraxas (5) | LG-2001 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Leopold Stokowski 《Rhapsodies》 | [#15104401](https://www.discogs.com/release/15104401) | 1961 | RCA Victor Red Seal | LSC-2471 | 年份 1961、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Leroy Smart 《Impressions of Leroy Smart》 | [#14808963](https://www.discogs.com/release/14808963) | 2020 | Burning Sounds | BSRLP904 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Lightnin' Hopkins 《Lightnin'》 | [#6255054](https://www.discogs.com/release/6255054) | 1961 | Prestige Bluesville | BV-1019 | 年份 1961、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Little Milton 《If Walls Could Talk》 | [#1558368](https://www.discogs.com/release/1558368) | 1970 | Checker | LPS 3012 | 年份 1970、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Los Ángeles Negros 《Aplaude mi final》 | [#5551214](https://www.discogs.com/release/5551214) | 1974 | International (17) | SLP 00465 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Los Fabulosos Cadillacs 《El satánico Dr. Cadillac》 | [#6423256](https://www.discogs.com/release/6423256) | 1995 | Epic | 481184 2 | 廠牌 Epic、目錄號 481184 2、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Los Jaivas 《Canción del sur》 | [#3365623](https://www.discogs.com/release/3365623) | 1977 | EMI | 5169 | 年份 1977、廠牌 EMI、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Los Kjarkas 《Canto a la Mujer de Mi Pueblo》 | [#4445486](https://www.discogs.com/release/4445486) | 1983 | Lauro Records | LPLR/S-1408 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Los Mirlos 《Los charapas de oro》 | [#6800500](https://www.discogs.com/release/6800500) | 1975 | Infopesa | LPS-8069 | 年份 1975、廠牌 Infopesa、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Love Song 《Love Song》 | [#3787283](https://www.discogs.com/release/3787283) | 1971 | Good News Records | GNR-08100 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Luciano Pavarotti 《King of the High C's》 | [#2994472](https://www.discogs.com/release/2994472) | 1974 | Decca | SXL 6658 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Luciano Pavarotti 《Donizetti: L'elisir d'amore》 | [#4400428](https://www.discogs.com/release/4400428) | 1971 | Decca | SET 503-5 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Lycia 《Wake》 | [#316935](https://www.discogs.com/release/316935) | 1993 | Projekt | PRO31 | 廠牌 Projekt、目錄號 PRO31、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | M’bilia Bel 《Boya Ye》 | [#2381003](https://www.discogs.com/release/2381003) | 1985 | Genidia | GEN 116 | 年份 1985、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Machito 《With Flute to Boot》 | [#13130266](https://www.discogs.com/release/13130266) | 2011 | Roulette | TOCJ-50193 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Mahavishnu Orchestra 《Inner Worlds》 | [#1512324](https://www.discogs.com/release/1512324) | 1976 | Columbia | PC 33908 | 年份 1976、廠牌 Columbia、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Mal Waldron 《Free at Last》 | [#1515708](https://www.discogs.com/release/1515708) | 1970 | ECM Records | ECM 1001 | 廠牌 ECM Records、目錄號 ECM 1001、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Marc Barreca 《Twilight》 | [#105794](https://www.discogs.com/release/105794) | 1980 | Palace Of Lights | POL. 05/1000 | 年份 1980、廠牌 Palace Of Lights、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Marilyn Horne 《Rossini: Semiramide》 | [#11281347](https://www.discogs.com/release/11281347) | 1966 | Decca | SET 317-9 | 年份 1966、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Marion Brown 《Porto Novo》 | [#3734900](https://www.discogs.com/release/3734900) | 1969 | Polydor | 583 724 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Marion Brown Quintet 《Offering》 | [#12909532](https://www.discogs.com/release/12909532) | 2000 | Venus Records (5) | TKCV-35508 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Matthew Shipp Trio 《Circular Temple》 | [#1215309](https://www.discogs.com/release/1215309) | 1992 | Quinton Records (2) | QTN1 | 年份 1992、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Maurizio Pollini 《Schoenberg: Piano Works》 | [#1035153](https://www.discogs.com/release/1035153) | 1975 | Deutsche Grammophon | 2530 531 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Max Roach 《Deeds, Not Words》 | [#4749292](https://www.discogs.com/release/4749292) | 1958 | Riverside Records | RLP 12-280 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Maze 《Golden Time of Day》 | [#9084384](https://www.discogs.com/release/9084384) | 1978 | Capitol Records | ST-11710 | 年份 1978、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | McCoy Tyner 《Sahara》 | [#7078983](https://www.discogs.com/release/7078983) | 1972 | Milestone (4) | MSP 9039 | 年份 1972、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| McCoy Tyner 《Echoes of a Friend》 | [#2138488](https://www.discogs.com/release/2138488) | 1974 | Milestone (4) | M-9055 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Michel Petrucciani 《Pianism》 | [#3491957](https://www.discogs.com/release/3491957) | 1986 | Blue Note | BTC 85124 | 年份 1986、廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Michigan & Smiley 《Rub-A-Dub Style》 | [#299871](https://www.discogs.com/release/299871) | 1979 | Studio One | SOLP 1138 | 年份 1979、廠牌 Studio One、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Mike Westbrook 《Live》 | [#1697877](https://www.discogs.com/release/1697877) | 1973 | Cadillac Records | SGC 1001 | 年份 1973、廠牌 Cadillac Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Mississippi John Hurt 《Today!》 | [#2755805](https://www.discogs.com/release/2755805) | 1966 | Vanguard | VRS 9220 | 年份 1966、廠牌 Vanguard、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Mongo Santamaría 《Watermelon Man!》 | [#12079156](https://www.discogs.com/release/12079156) | 1963 | Battle (2) | BS 96120 | 年份 1963、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Monique Haas 《Ravel: Piano Works》 | [#13823796](https://www.discogs.com/release/13823796) | 2015 | Deutsche Grammophon | 00289 479 4575 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Morgan Babb 《Keep Faith In God》 | [#6908587](https://www.discogs.com/release/6908587) | 1963 | Nashboro | LP 7012 | 年份 1963、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Muzsikás 《Máramaros: The Lost Jewish Music of Transylvania》 | [#1520519](https://www.discogs.com/release/1520519) | — | Hannibal Records | HNCD 1373 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Neville Marriner 《Bach: Brandenburg Concertos》 | [#4357059](https://www.discogs.com/release/4357059) | 1981 | Philips | 6769 058 | 年份 1981、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| New York Art Quartet 《New York Art Quartet》 | [#31321707](https://www.discogs.com/release/31321707) | 2016 | ESP-Disk' | none | 廠牌 ESP-Disk'、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| New York Liner 《New York Liner》 | [#12390960](https://www.discogs.com/release/12390960) | 2014 | Electric Bird | KICJ-2380 | 廠牌 Electric Bird、目錄號 KICJ-2380、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Nusrat Fateh Ali Khan 《Shahen-Shah》 | [#3732651](https://www.discogs.com/release/3732651) | 1989 | Real World Records | RWCD3 | 年份 1989、目錄號 RWCD3、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Oliver Nelson 《Stolen Moments》 | [#2366434](https://www.discogs.com/release/2366434) | 1979 | Inner City Records | IC 6008 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Organum 《Sphyx》 | [#121431](https://www.discogs.com/release/121431) | 1994 | Aeroplane | AR14 | 年份 1994、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Otis Spann 《The Blues Never Die!》 | [#10979659](https://www.discogs.com/release/10979659) | 1969 | Prestige | PR 7719 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Panda Bear 《Panda Bear》 | [#1209472](https://www.discogs.com/release/1209472) | 1999 | Soccer Star | 01 | 年份 1999、廠牌 Soccer Star、目錄號 01、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Pavement 《Summer Babe》 | [#10451713](https://www.discogs.com/release/10451713) | 1992 | Drag City | DC9 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Pere Ubu 《New Picnic Time》 | [#374019](https://www.discogs.com/release/374019) | 1979 | Chrysalis | CHR 1248 | 年份 1979、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Peter Cusack 《After Being in Holland for Two Years》 | [#1046771](https://www.discogs.com/release/1046771) | 1977 | Bead Records | BEAD  5 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Peter Pears & Julian Bream 《Elizabethan Lute Songs》 | [#7088412](https://www.discogs.com/release/7088412) | 1956 | Decca | LW 5243 | 年份 1956、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Philip Glass 《Satyagraha》 | [#351796](https://www.discogs.com/release/351796) | 1985 | CBS Masterworks | I3M 39672 | 年份 1985、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Philly Joe Jones 《Blues for Dracula》 | [#3073168](https://www.discogs.com/release/3073168) | — | Riverside Records | RLP 12-282 | 目錄號 RLP 12-282、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Pierre Henry 《Variations pour une porte et un soupir》 | [#9844502](https://www.discogs.com/release/9844502) | 1968 | Philips | 836.898 DSY | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Pinchas Zukerman 《Beethoven: Violin Sonatas》 | [#7033839](https://www.discogs.com/release/7033839) | 1973 | His Master's Voice | SLS 871 | 年份 1973、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Providence 《And I'll Recite an Old Myth From...》 | [#2610151](https://www.discogs.com/release/2610151) | 1989 | B.S.P. Project | B.S.P. 004 | 年份 1989、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Pussy 《Pussy Plays》 | [#1885498](https://www.discogs.com/release/1885498) | 1969 | Morgan Blue Town | B.T. 5002 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Rabih Abou-Khalil 《Between Dusk and Dawn》 | [#15323939](https://www.discogs.com/release/15323939) | 1987 | MMP | MMP 170886 | 年份 1987、廠牌 MMP、目錄號 MMP 170886、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Rafael Kubelík 《Smetana: Má vlast》 | [#4737454](https://www.discogs.com/release/4737454) | 1959 | Decca | SXL 2064 | 年份 1959、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ravi Shankar 《Three Ragas》 | [#1125023](https://www.discogs.com/release/1125023) | 1967 | World Pacific Records | WPS-21438 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ravi Shankar 《Improvisations》 | [#11186895](https://www.discogs.com/release/11186895) | — | World Pacific Records | ST-1416 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Red Garland 《Rojo》 | [#1380465](https://www.discogs.com/release/1380465) | 1961 | Prestige | PRLP 7193 | 年份 1961、廠牌 Prestige、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Reginald Kell 《Mozart: Clarinet Concerto》 | [#15983461](https://www.discogs.com/release/15983461) | 1950 | Decca | DL 7500 | 年份 1950、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Renata Tebaldi 《Puccini: Madama Butterfly》 | [#6970692](https://www.discogs.com/release/6970692) | 1958 | Decca | LXT 5468-69-70 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Ressurection 《Ressurection》 | [#1529984](https://www.discogs.com/release/1529984) | 1991 | New Age Records | NA10 | 年份 1991、廠牌 New Age Records、目錄號 NA10、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Reverend Gary Davis 《Say No to the Devil》 | [#19416835](https://www.discogs.com/release/19416835) | 1962 | Prestige Bluesville | BV 1049 | 年份 1962、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Revolutionary Ensemble 《The Psyche》 | [#1098967](https://www.discogs.com/release/1098967) | 1975 | RE: Records | RE 3117 | 年份 1975、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Riistetyt 《Valtion vankina》 | [#4237100](https://www.discogs.com/release/4237100) | 1983 | Propaganda (7) | PRO-006 | 年份 1983、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Robert Calvert 《Hype》 | [#3146349](https://www.discogs.com/release/3146349) | 1981 | A Side Records (2) | IF 0311 | 年份 1981、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Robert Calvert 《Freq》 | [#917409](https://www.discogs.com/release/917409) | 1984 | Flicknife Records | SHARP 021 | 年份 1984、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Roberto Goyeneche 《Cantor de mi barrio》 | [#4593212](https://www.discogs.com/release/4593212) | 1991 | Música & Marketing | TK 16007 | 年份 1991、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ronald Shannon Jackson 《Eye on You》 | [#1084510](https://www.discogs.com/release/1084510) | 1980 | About Time Records | AT-1003 | 年份 1980、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Rusty Blade 《Awas!》 | [#5501039](https://www.discogs.com/release/5501039) | 1989 | Life | HM 2033 | 年份 1989、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Ruth White 《Flowers of Evil》 | [#974211](https://www.discogs.com/release/974211) | 1969 | Limelight | LS-86066 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Sam Cooke 《Live at the Harlem Square Club, 1963》 | [#1338361](https://www.discogs.com/release/1338361) | 1985 | RCA | PL 85181 | 年份 1985、廠牌 RCA、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Samson François 《Ravel: Piano Concertos》 | [#4144116](https://www.discogs.com/release/4144116) | 1961 | Columbia | SAX 2394 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Scott Joplin 《Treemonisha》 | [#13833439](https://www.discogs.com/release/13833439) | 2011 | New World Records | 80720-2 | 年份 2011、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Sharon Redd 《Redd Hott》 | [#112238](https://www.discogs.com/release/112238) | 1982 | Jupiter Records | 6.25319 | 年份 1982、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Sheer Terror 《Just Can't Hate Enough》 | [#440912](https://www.discogs.com/release/440912) | 1989 | Starving Missile | S.M.R. 054 | 年份 1989、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Shelagh McDonald 《Stargazer》 | [#3619573](https://www.discogs.com/release/3619573) | 1971 | B & C Records | CAS 1043 | 年份 1971、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Shirley Collins 《Adieu to Old England》 | [#2252084](https://www.discogs.com/release/2252084) | 1974 | Topic Records | 12TS238 | 年份 1974、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Shudder to Think 《Ten Spot》 | [#1190054](https://www.discogs.com/release/1190054) | 1990 | Dischord Records | DISCHORD #46 | 年份 1990、廠牌 Dischord Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Shuggie Otis 《Inspiration Information》 | [#191641](https://www.discogs.com/release/191641) | 1974 | Epic | KE 33059 | 年份 1974、廠牌 Epic、目錄號 KE 33059、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Sidney Bechet 《Sidney Bechet with "Wild Bill" Davison》 | [#9531812](https://www.discogs.com/release/9531812) | 1953 | Blue Note | BLP 7001 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Siege 《Drop Dead》 | [#2370051](https://www.discogs.com/release/2370051) | 2004 | Deep Six Records | DS55 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Silvio Rodríguez 《Rabo de Nube》 | [#2451649](https://www.discogs.com/release/2451649) | 1979 | Areito | LD 3844 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Skare 《Solstice City》 | [#17335342](https://www.discogs.com/release/17335342) | 2020 | Glacial Movements Records | none | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Slayer 《Seasons in the Abyss》 | [#415249](https://www.discogs.com/release/415249) | 1990 | Def American Recordings | 9 24307-2 | 年份 1990、廠牌 Def American Recordings、目錄號 9 24307-2、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Snooks Eaglin 《New Orleans Street Singer》 | [#3540582](https://www.discogs.com/release/3540582) | 1968 | Folkways Records | FA 2476 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Socrates Drank the Conium 《Phos》 | [#2985733](https://www.discogs.com/release/2985733) | 1976 | Vertigo | 6331 950 | 年份 1976、廠牌 Vertigo、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Socrates Drank the Conium 《Taste of Conium》 | [#2898253](https://www.discogs.com/release/2898253) | 1972 | International Polydor Production | 2421023 | 年份 1972、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Sol Invictus 《Trees in Winter》 | [#236309](https://www.discogs.com/release/236309) | 1991 | Tursa | TURSA 002 CD | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Sonny Boy Williamson II 《The Real Folk Blues》 | [#3799819](https://www.discogs.com/release/3799819) | 2005 | Chess | LP-1503 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Sonny Terry & Brownie McGhee 《At Sugar Hill》 | [#14193976](https://www.discogs.com/release/14193976) | 1962 | Fantasy | 3340 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Stan Sulzmann 《On Loan with Gratitude》 | [#467708](https://www.discogs.com/release/467708) | 1977 | Mosaic Records | GCM 772 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Stanisław Sojka 《Blublula》 | [#588465](https://www.discogs.com/release/588465) | 1981 | Polskie Nagrania Muza | SX 2302 | 年份 1981、廠牌 Polskie Nagrania Muza、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Stanley Cowell Trio 《Dancers In Love》 | [#11199458](https://www.discogs.com/release/11199458) | 2010 | Venus Records (5) | VHCD-78058 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Stanley Turrentine 《Another Story》 | [#3012361](https://www.discogs.com/release/3012361) | 1970 | Blue Note | BST 84336 | 年份 1970、廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Stanley Turrentine 《In Memory Of》 | [#2836229](https://www.discogs.com/release/2836229) | 1980 | Blue Note | LT-1037 | 年份 1980、廠牌 Blue Note、目錄號 LT-1037、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Steve Earle 《Guitar Town》 | [#12022618](https://www.discogs.com/release/12022618) | 1986 | MCA Records | MCA-5713 | 年份 1986、廠牌 MCA Records、目錄號 MCA-5713、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Steve Lacy 《Evidence》 | [#7213832](https://www.discogs.com/release/7213832) | 1965 | New Jazz | NJ 8271 | 廠牌 New Jazz、目錄號 NJ 8271、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Suzanne Ciani 《Seven Waves》 | [#1863241](https://www.discogs.com/release/1863241) | 1982 | Finnadar Records | 90175-1 | 年份 1982、廠牌 Finnadar Records、目錄號 90175-1、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Svarte Greiner 《Penpals Forever (And Ever)》 | [#2322429](https://www.discogs.com/release/2322429) | 2010 | Digitalis Recordings | DIGI056V | 年份 2010、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Swamp Dogg 《Total Destruction to Your Mind》 | [#17198413](https://www.discogs.com/release/17198413) | 1970 | Canyon Records (3) | LP-7706 | 年份 1970、目錄號 LP-7706、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tete Montoliu 《Songs for Love》 | [#5730761](https://www.discogs.com/release/5730761) | 1974 | Enja Records | enja 2040 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Thad Jones & Mel Lewis 《Live at the Village Vanguard》 | [#2050749](https://www.discogs.com/release/2050749) | 1967 | Solid State Records (2) | SS 18016 | 年份 1967、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The 13th Floor Elevators 《Easter Everywhere》 | [#7743333](https://www.discogs.com/release/7743333) | 1978 | International Artists | IA-LP-5 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Alarm 《Declaration》 | [#9533966](https://www.discogs.com/release/9533966) | 1984 | I.R.S. Records | IRSA 7044 | 年份 1984、廠牌 I.R.S. Records、目錄號 IRSA 7044、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| The Clark Sisters 《You Brought the Sunshine》 | [#1320869](https://www.discogs.com/release/1320869) | 1981 | Sound Of Gospel Records | SOG 132 | 年份 1981、廠牌 Sound Of Gospel Records、目錄號 SOG 132、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Consolers 《Singing Gospel Songs》 | [#8083730](https://www.discogs.com/release/8083730) | 1961 | Nashboro | LP 7004 | 年份 1961、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| The Dave Brubeck Quartet 《Jazz Impressions of Eurasia》 | [#2509016](https://www.discogs.com/release/2509016) | 1958 | Columbia | CS 8058 | 年份 1958、廠牌 Columbia、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Dells 《There Is》 | [#7242835](https://www.discogs.com/release/7242835) | 1968 | Cadet | LPS 804 | 年份 1968、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Dells 《Freedom Means》 | [#11606830](https://www.discogs.com/release/11606830) | 1971 | Cadet | CA 50004 | 年份 1971、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Door and the Window 《Detailed Twang》 | [#7105887](https://www.discogs.com/release/7105887) | 2015 | Overground Records | OVER 146LP | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
@@ -1542,10 +1658,12 @@
 | The Jasmine Minks 《Another Age》 | [#11531181](https://www.discogs.com/release/11531181) | 2017 | PoppyDisc | POPPYLP031 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Meters 《Trick Bag》 | [#1901884](https://www.discogs.com/release/1901884) | 1976 | Reprise Records | MS 2252 | 年份 1976、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Meters 《Rejuvenation》 | [#6434489](https://www.discogs.com/release/6434489) | 1974 | Reprise Records | MS 2200 | 年份 1974、廠牌 Reprise Records、目錄號 MS 2200、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| The Mighty Diamonds 《Deeper Roots (Back to the Channel)》 | [#2599871](https://www.discogs.com/release/2599871) | 1979 | Front Line (2) | FLD 6001 | 年份 1979、廠牌 Virgin、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Moonglows 《Look! It's the Moonglows》 | [#1012562](https://www.discogs.com/release/1012562) | 1958 | Chess | LP-1430 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Sensational Nightingales 《The Best of the Sensational Nightingales》 | [#3759447](https://www.discogs.com/release/3759447) | 1974 | Peacock Records | PLP-137 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Stooges 《Fun House》 | [#1352562](https://www.discogs.com/release/1352562) | 1970 | Elektra | EKS-74071 | 年份 1970、廠牌 Elektra、目錄號 EKS-74071、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Stylistics 《The Stylistics》 | [#1625028](https://www.discogs.com/release/1625028) | 1971 | Avco | AV-33023 | 年份 1971、廠牌 Avco、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| The Three Sounds 《Feelin' Good》 | [#1401170](https://www.discogs.com/release/1401170) | 1961 | Blue Note | BLP 4072 | 年份 1961、廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Watts Prophets 《Rappin' Black in a White World》 | [#1062937](https://www.discogs.com/release/1062937) | 1971 | Ala | ALA 1971 | 年份 1971、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | The Wolfhounds 《Unseen Ripples from a Pebble》 | [#535252](https://www.discogs.com/release/535252) | 1987 | The Pink Label | PINKY 19 | 年份 1987、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Thin Lizzy 《Fighting》 | [#14698253](https://www.discogs.com/release/14698253) | 2020 | Vertigo | 0802637 | 廠牌 Vertigo、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
@@ -1553,26 +1671,36 @@
 | Thomas Beecham 《Haydn: Symphonies 93-98》 | [#15370381](https://www.discogs.com/release/15370381) | 1958 | His Master's Voice | ALP 1624-26 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Three 6 Mafia 《Mystic Stylez》 | [#435045](https://www.discogs.com/release/435045) | 1995 | Prophet Entertainment | PCD 4401 | 年份 1995、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tito Puente 《Top Percussion》 | [#1712091](https://www.discogs.com/release/1712091) | 1958 | RCA Victor | LSP-1617 | 年份 1958、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Tito Puente 《Puente Goes Jazz》 | [#7195439](https://www.discogs.com/release/7195439) | 1956 | RCA Victor | LPM-1312 | 年份 1956、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | TLC 《TLC》 | [#10466424](https://www.discogs.com/release/10466424) | 2017 | 852 Musiq | TLC011 | 年份 2017、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Todd Rundgren 《Todd》 | [#380303](https://www.discogs.com/release/380303) | 1974 | Bearsville | 2 BR 6952 | 年份 1974、目錄號 2 BR 6952、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tom Rush 《The Circle Game》 | [#1610807](https://www.discogs.com/release/1610807) | 1968 | Elektra | EKS-74018 | 年份 1968、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tom Zé 《Tom Zé》 | [#13642027](https://www.discogs.com/release/13642027) | 2019 | Polysom | 7898324317064 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tomasz Stańko 《Balladyna》 | [#37420743](https://www.discogs.com/release/37420743) | 2026 | ECM Records | ECM 1071 ST | 廠牌 ECM Records、目錄號 ECM 1071、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Tommy Flanagan 《Confirmation》 | [#3431991](https://www.discogs.com/release/3431991) | 1982 | Enja Records | ENJA 4014 | 年份 1982、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Tuxedomoon 《Half-Mute》 | [#3676548](https://www.discogs.com/release/3676548) | 1980 | Ralph Records | TX8004-L | 年份 1980、廠牌 Ralph Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | U-Roy 《Rasta Ambassador》 | [#865514](https://www.discogs.com/release/865514) | 1977 | Virgin | V 2092 | 年份 1977、廠牌 Virgin、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Various Artists 《The Iron Muse: A Panorama of Industrial Folk Song》 | [#2573166](https://www.discogs.com/release/2573166) | 1964 | Topic Records | 12T86 | 廠牌 Topic Records、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Vitorino 《Semear Salsa Ao Reguinho》 | [#4865022](https://www.discogs.com/release/4865022) | 1975 | Orfeu | STAT 031 | 年份 1975、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Walter Davis Jr. 《Davis Cup》 | [#1248453](https://www.discogs.com/release/1248453) | 1959 | Blue Note | BLP 4018 | 廠牌 Blue Note、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Walter Gieseking 《Debussy: Préludes》 | [#8119553](https://www.discogs.com/release/8119553) | 1954 | Columbia | 33CX 1098 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Wardell Gray 《Wardell Gray Memorial, Vol. 1》 | [#5005833](https://www.discogs.com/release/5005833) | 2007 | Prestige | UCCO-9111 | 廠牌 Prestige、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Wendy Carlos 《Switched-On Bach》 | [#7858](https://www.discogs.com/release/7858) | 1968 | Columbia Masterworks | MS 7194 | 年份 1968、廠牌 Columbia Masterworks、目錄號 MS 7194、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Wes Montgomery 《So Much Guitar!》 | [#8764721](https://www.discogs.com/release/8764721) | 2015 | Riverside Records | RLP-9382 | 廠牌 Original Jazz Classics、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Western Union Band 《Western Union Band》 | [#7369574](https://www.discogs.com/release/7369574) | 1977 | EMI | EMGS-5010 | 年份 1977、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | White Noise 《An Electric Storm》 | [#386727](https://www.discogs.com/release/386727) | 1969 | Island Records | ILPS 9099 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Whitehouse 《Great White Death》 | [#2247549](https://www.discogs.com/release/2247549) | 2010 | Very Friendly | VFSL07 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | William Primrose 《Bartók: Viola Concerto》 | [#5170498](https://www.discogs.com/release/5170498) | 1952 | Bartók Records | BRS 309 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Wynton Marsalis 《Trumpet Concertos》 | [#35319163](https://www.discogs.com/release/35319163) | 1983 | CBS Masterworks Digital | IM 37846 | 年份 1983、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Wynton Marsalis 《Wynton Marsalis》 | [#396333](https://www.discogs.com/release/396333) | 1982 | Columbia | FC 37574 | 年份 1982、廠牌 Columbia、目錄號 FC 37574、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Wynton Marsalis 《Think of One》 | [#395755](https://www.discogs.com/release/395755) | 1983 | CBS | CBS 25354 | 年份 1983、廠牌 CBS、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Yusef Lateef 《The Three Faces of Yusef Lateef》 | [#11515860](https://www.discogs.com/release/11515860) | — | Riverside Records | RLP-1176 | 目錄號 RLP-1176、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Z-Ro 《Let the Truth Be Told》 | [#638713](https://www.discogs.com/release/638713) | 2005 | Rap-A-Lot 4 Life | 07559 68523 2 6 | 年份 2005、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Zbigniew Seifert 《Solo Violin》 | [#4005184](https://www.discogs.com/release/4005184) | 1978 | Musicians Record Co. | 1C 066-45 088 | 年份 1978、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Ziad Rahbani 《Bennesbeh Labokra... Chou?》 | [#4885798](https://www.discogs.com/release/4885798) | 1978 | Zida | ZIDA 501 | 年份 1978、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Zoot Sims 《Zoot Sims in Paris》 | [#10904208](https://www.discogs.com/release/10904208) | 1962 | United Artists Jazz | UAJS15013 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Νίκος Ξυλούρης 《Ερωτόκριτος》 | [#3071446](https://www.discogs.com/release/3071446) | 1976 | Columbia | 2J 064-70276 | 年份 1976、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+| Σωτηρία Μπέλλου 《Τα ρεμπέτικα της Σωτηρίας Μπέλλου》 | [#11868307](https://www.discogs.com/release/11868307) | 1966 | Lyra | XLP 3224 | 年份 1966、廠牌 Lyra、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | Валерий Ободзинский 《Поёт Валерий Ободзинский》 | [#2684226](https://www.discogs.com/release/2684226) | 1970 | Мелодия | Д—028841-2 | 年份 1970、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | かぐや姫 《かぐや姫さあど》 | [#31825730](https://www.discogs.com/release/31825730) | 2007 | Crown (3) | CRCP-20395 | Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | 中原めいこ 《Mint》 | [#11149146](https://www.discogs.com/release/11149146) | 2012 | Eastworld | TOCT-12009 | 廠牌 Eastworld、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
