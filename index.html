@@ -384,6 +384,8 @@
     .history-empty { font-size: 12px; color: var(--gray); padding-bottom: 24px; }
     .quiz-share-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; margin-bottom: 12px; transition: opacity 0.15s; }
     .quiz-share-btn:hover { opacity: 0.75; }
+    /* 頻率光譜結果頁「帶去店裡對決」（v5 第六項第一期）：連到 game-lab/?card=，樣式沿用分享鈕（a 要自己撐成整條） */
+    .quiz-bring-btn { display: block; box-sizing: border-box; text-align: center; text-decoration: none; }
     .quiz-result-cover-link { display: block; }
     .quiz-stock-row { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
     .quiz-stock-row-label { font-size: 9px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
@@ -1072,7 +1074,7 @@
 <script src="dip-player.js?v=57"></script>
 <script src="dip-draw-anim.js?v=5"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=72"></script>
+<script src="dip-tune.js?v=73"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -1096,10 +1098,22 @@
   const googleProvider = new GoogleAuthProvider();
   let currentUser = null;
   let authReady = false; // Firebase 首次回報登入狀態前為 false
+  // 可以 await 的「登入狀態好了」（v5 第六項第一期：頻率光譜直接開 /tune/ 時，Firebase 要幾百毫秒才回報，讀唱片櫃得先等）
+  let _authReadyResolve;
+  const authReadyP = new Promise(r => { _authReadyResolve = r; });
+  let _mine = null, _minePromise = null, _mineUid;   // 我的唱片櫃記憶體表（loadMine，見下面「我的唱片櫃的記憶體表」）
 
   onAuthStateChanged(auth, (user) => {
     currentUser = user;
     authReady = true;
+    _authReadyResolve();
+    // 換人或登出：唱片櫃記憶體表作廢、頻率光譜的「只看我的唱片櫃」先熄；登入了就讓頻率光譜照這台裝置的偏好重開（要讀到唱片櫃才開）
+    const uid = user ? user.uid : null;
+    if (uid !== _mineUid) {
+      _mineUid = uid; _mine = null; _minePromise = null;
+      window.DipTune?.setMine?.(null);
+      if (uid) window.DipTune?.refreshMine?.();
+    }
     if (user) upsertUserProfile(user);
     updateAuthUI();
     // 若正在看唱片櫃，登入狀態改變時重畫（唱片櫃不是 main-tab，故用 currentView 判斷，
@@ -1223,6 +1237,7 @@
         const mapGenres = await findMapGenres(card, cur.mapGenres);
         if (mapGenres.length && !validMapGenres(cur.mapGenres).length) upgrade.mapGenres = mapGenres;
         await setDoc(ref, { count: (cur.count || 1) + 1, lastObtainedAt: Date.now(), ...upgrade }, { merge: true });
+        mineSync(id, 1);
         await addMusicMapCredit(mapGenres);
         return 'dup';
       }
@@ -1241,12 +1256,48 @@
         ...(card.heresy ? { heresy: true } : {}),
         ...(mapGenres.length ? { mapGenres } : {})
       });
+      mineSync(id, 1);
       await addMusicMapCredit(mapGenres);
       return 'new';
     } catch (e) {
       console.warn('[collection] save failed', e);
       return false;
     }
+  }
+
+  // ───────── 我的唱片櫃的記憶體表（v5 第六項第一期：頻率光譜「只看我的唱片櫃」、結果頁「已在唱片櫃 ×n」）─────────
+  // Map<cardId, 張數>；null＝還沒讀。一次造訪只讀一次整櫃（N 張＝N 次讀取），之後靠收進／刪除時同步，不每次進頻率光譜都重讀。
+  // id 用欄位重算（starmap-lab 同一套）：舊文件可能沒有 cardId 欄、文件 id 也可能是改名前的，算不出來才用文件 id
+  async function loadMine({ force } = {}) {
+    await authReadyP;
+    const u = currentUser; if (!u) return null;
+    if (_mine && !force) return _mine;
+    if (!_minePromise || force) {
+      const uid = u.uid;
+      _minePromise = getDocs(collection(db, 'collections', uid, 'cards')).then(snap => {
+        if (currentUser?.uid !== uid) return null;
+        const m = new Map();
+        snap.docs.forEach(d => { const v = d.data() || {}; const id = (v.artist && v.album) ? cardIdOf(v.artist, v.album) : d.id; m.set(id, (m.get(id) || 0) + (Number(v.count) || 1)); });
+        _mine = m;
+        return m;
+      }).catch(e => { console.warn('[mine] load failed', e); _minePromise = null; return null; });
+    }
+    return _minePromise;
+  }
+  // 收進（+1）或刪掉（null）一張：讀過的記憶體表跟著改，再推給頻率光譜（沒讀過就不用管，下次要用時整櫃讀）
+  function mineSync(id, delta) {
+    if (!_mine || !id) return;
+    if (delta === null) _mine.delete(id); else _mine.set(id, (_mine.get(id) || 0) + delta);
+    window.DipTune?.setMine?.(_mine);
+  }
+  // 結果頁「已在唱片櫃 ×n」：頻率光譜手上有資料就問它（含測試／聆聽室灌的），再來記憶體表，都沒有才單張讀一次；沒登入回 0
+  async function collectionCountOf(artist, album) {
+    const t = window.DipTune?.mineCount?.(artist, album);
+    if (typeof t === 'number') return t;
+    if (!currentUser) return 0;
+    const id = cardIdOf(artist, album);
+    if (_mine) return _mine.get(id) || 0;
+    try { const s = await getDoc(doc(db, 'collections', currentUser.uid, 'cards', id)); return s.exists() ? (Number(s.data().count) || 1) : 0; } catch (e) { return 0; }
   }
 
   async function getMyCollection() {
@@ -1908,6 +1959,9 @@
     if (!confirm('確定要從唱片櫃刪除這張卡嗎？')) return;
     try {
       await deleteDoc(doc(db, 'collections', currentUser.uid, 'cards', cardId));
+      const gone = _collCache.find(c => c.cardId === cardId);
+      if (gone?.artist && gone?.album) mineSync(cardIdOf(gone.artist, gone.album), null);
+      mineSync(cardId, null);
       _collCache = _collCache.filter(c => c.cardId !== cardId);
       closeCardDetail();
       drawCollection();
@@ -5873,7 +5927,17 @@ ${seenList}
     document.getElementById('tuneApp').hidden = !show;
     document.getElementById('tuneResultWrap').hidden = show;
   }
+  // 遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json＝{ 主站 cardId: 遊戲卡 id }（扣掉三張王牌：遊戲裡帶不進去）。
+  // 結果頁的卡在裡面才出「帶去店裡對決」；載不到就當沒有、不出鈕（下次進頻率光譜再試）。店內模式（?shop=1）不出，不用載
+  let _poolIndexP = null;
+  function loadPoolIndex() {
+    if (SHOP_MODE) return Promise.resolve(null);
+    if (!_poolIndexP) _poolIndexP = fetch('game-lab/pool-index.json').then(r => r.ok ? r.json() : null).then(j => (j && typeof j === 'object' && !Array.isArray(j)) ? j : null)
+      .catch(() => null).then(j => { if (!j) _poolIndexP = null; return j; });
+    return _poolIndexP;
+  }
   function openTune() {
+    void loadPoolIndex();
     tuneShowApp(true);
     // 不先等 three：面板馬上畫，星圖程式庫由模組在載資料時一起等（最多 8 秒，載不到只用面板）
     DipTune.start();
@@ -5900,6 +5964,10 @@ ${seenList}
     // 搜尋清單用：先只讀 card_catalog 的封面（一次讀取），沒有才走完整查找（含 Spotify）
     listCover: async (card) => { try { const s = await getDoc(doc(db, 'card_catalog', cardIdOf(card.artist, card.album))); const u = s.exists() && s.data().coverUrl; if (u) return u; } catch (e) {} return (await resolveCardAssets(card.artist, card.album)).coverUrl || ''; },
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
+    // 只看我的唱片櫃（v5 第六項第一期）：唱片櫃記憶體表、登入（開關在沒登入時按下去用，要在點擊當下叫）、登入了沒
+    loadMine: () => loadMine(),
+    signIn: () => signInWithGoogle(),
+    isSignedIn: () => !!currentUser,
     onResult: async ({ card, cell, cellName, targetCellName, continuing }) => {
       gpResultHost = 'tuneContent';
       gpStopPreview();
@@ -5918,22 +5986,27 @@ ${seenList}
         gpEnsurePlayer();
         void window.DipPlayer?.warmAlbum?.({ artist: card.artist, album: card.album });
       }
+      // 跟封面一起查：唱片櫃裡有幾張（×n）、在不在遊戲卡池（帶去店裡對決）；都不擋結果頁（1.5 秒內沒回來就當沒有）
+      const late = (p, v) => Promise.race([Promise.resolve(p).catch(() => v), new Promise(r => setTimeout(() => r(v), 1500))]);
+      const mineP = late(collectionCountOf(card.artist, card.album), 0);
+      const gameP = late(loadPoolIndex().then(ix => (ix && ix[cardIdOf(card.artist, card.album)]) || null), null);
       let assets;
       try { assets = await resolveCardAssets(card.artist, card.album); }
       catch (e) { assets = { ov: null, coverUrl: '', spotifyUrl: '', bandcampUrl: '', ytUrl: '', previewUrl: '', previewUnavailable: false }; }
+      const [mineN, gameId] = await Promise.all([mineP, gameP]);
       if (seq !== _tuneSeq) { warp.cancel(); return; }   // 這段期間又抽了一張，舊的不要畫
       const ratings = (card.classic && !card.tier) ? {
         classic: assets.ov?.classic || card.classic,
         obscurity: assets.ov?.obscurity || card.obscurity,
         accessibility: assets.ov?.accessibility || card.accessibility,
       } : null;
-      const note = `頻率 <span style="color:${warpColor}">●</span> ${cellName}`;
+      const note = `頻率 <span style="color:${warpColor}">●</span> ${cellName}` + (mineN > 0 ? `　·　已在唱片櫃 ×${mineN}` : '');
       await showGpResult({
         artist: card.artist, album: card.album, reason: '', ratings,
         _coverUrl: assets.coverUrl, _spotifyUrl: assets.spotifyUrl,
         _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
-        _matchNote: note, _mode: 'tune', _streaming: true, _continuePreview: !!continuing,
+        _matchNote: note, _mode: 'tune', _streaming: true, _continuePreview: !!continuing, _gameId: SHOP_MODE ? null : gameId,
         _hall: card.tier === 'hall', _pearl: card.tier === 'pearl', _heresy: card.tier === 'heresy',
       });
       if (seq !== _tuneSeq) { warp.cancel(); return; }
@@ -6219,6 +6292,7 @@ ${seenList}
         ${stockRecoHtml}
         <button class="quiz-collect-btn" data-collect${result._hall ? ' data-hall="1"' : ''}${result._pearl ? ' data-pearl="1"' : ''}${result._heresy ? ' data-heresy="1"' : ''} data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進唱片櫃</button>
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
+        ${result._mode === 'tune' && result._gameId && !SHOP_MODE ? `<a class="quiz-share-btn quiz-bring-btn" data-bring href="game-lab/?card=${encodeURIComponent(result._gameId)}" target="_blank" rel="noopener">⚔ 帶去店裡對決</a>` : ''}
         ${result._mode === 'tree'
           ? `<button class="quiz-another-btn" data-gt-again>再抽一張</button>
              <button class="quiz-retry-btn" data-gt-restart>換個類型</button>`
