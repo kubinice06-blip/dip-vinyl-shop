@@ -367,6 +367,30 @@ section('走路朝向 faceDir：純函式、路線表每一段、來回不抖', 
     ok(ts.length >= 4 && ts.every((v, j) => !j || v - ts[j - 1] >= 0.12 - 1e-9), '12 格上下交錯：有換、間隔 ≥ 0.12 秒', ts.map(v => v.toFixed(3))); }
 });
 
+// 審查修正：到站之後朝哪（走完留在背面＝來客畫面你是後腦勺、門邊等的客人面向門口）→ 預設回正面，只有試聽桌 listen 背面
+section('到站朝向 arriveDir：預設正面、試聽桌背面、layout.faceAt 可改', () => {
+  const AD = DS.arriveDir;
+  ok(typeof AD === 'function', 'DipShop.arriveDir 有匯出');
+  eq(DS.FACE.arrive, 0.2, '到站 0.2 秒（走路時鐘）後才轉：接連走不閃一格正面');
+  eq(DS.FACE_AT, { listen: 'back' }, '預設表只有試聽桌');
+  // 審查重現的兩條：duelP→browse（打完客人回來客畫面）、wait→atdoor（第一位客人回門邊）都是最後一段往上；走完都要回正面
+  for (const k of ['browse', 'atdoor', 'wait', 'pay', 'counter', 'duelP', 'duelE', 'door', 'in', 'bin:jazz', '[198,240]', undefined]) eq(AD(dip, k, 'back'), 'front', '到 ' + k + '（剛往上走完）＝正面');
+  eq(AD(dip, 'listen', 'front'), 'back', '到試聽桌＝背面（戴著桌邊的耳機面向桌子）');
+  ok(!dip.faceAt || !Object.keys(dip.faceAt).length, 'dip.json 沒另外設 faceAt（用預設表）');
+  const L2 = { faceAt: { listen: 'front', pay: 'back', counter: 'keep' } };
+  eq([AD(L2, 'listen', 'back'), AD(L2, 'pay', 'front'), AD(L2, 'counter', 'back'), AD(L2, 'counter', 'front'), AD(L2, 'browse', 'back')], ['front', 'back', 'back', 'front', 'front'], 'layout.faceAt：蓋掉預設、指定背面、keep＝留在最後走的方向、沒寫的回正面');
+  eq(AD(null, 'listen'), 'back', '沒有 layout 也照預設表');
+  // 劇本走位每一條（同上面路線表）：走完那一刻的方向不管是什麼，到站後只有試聽桌是背面
+  const obs = DS.navObstacles(dip), S = Object.assign({}, dip.spots); for (const p of dip.props) if (p.bin) S['bin:' + p.bin.key] = p.bin.stand;
+  const ends = [['duelP', 'browse'], ['duelP', 'listen'], ['wait', 'atdoor'], ['browse', 'listen'], ['pay', 'listen'], ['bin:jazz', 'pay'], ['dig2', 'counter']];
+  for (const [a, b] of ends) {
+    const r = CS.routeOf(DS, dip, S[a].slice(0, 2), S[b].slice(0, 2), obs); if (!r) { ok(false, '走不到 ' + a + '→' + b); continue; }
+    const pts = [S[a].slice(0, 2)].concat(r.pts); let cur = { dir: 'front', flip: false, at: null }, x = pts[0][0], y = pts[0][1], t = 0, segTo = -1, segLen = 0;
+    for (let i = 1; i < pts.length; i++) { while (true) { t += 0.1; const dx = pts[i][0] - x, dy = pts[i][1] - y, d = Math.hypot(dx, dy); if (segTo !== i) { segTo = i; segLen = d; } cur = DS.faceDir(cur, dx, dy, { t, seg: segLen }); if (d <= 7.2) { x = pts[i][0]; y = pts[i][1]; break; } x += dx / d * 7.2; y += dy / d * 7.2; } }
+    eq(AD(dip, b, cur.dir), b === 'listen' ? 'back' : 'front', a + '→' + b + '：走完 ' + cur.dir + ' → 到站 ' + (b === 'listen' ? '背面' : '正面'));
+  }
+});
+
 section('舊 POS 別名表齊全（SPEC-v2 §5.2）', () => {
   const want = {
     'p.door': 'door', 'p.browse': 'browse', 'p.pay': 'pay', 'p.leaving': 'leave', 'p.atdoor': 'atdoor', 'p.duel': 'duelP', 'p.map': 'map',
