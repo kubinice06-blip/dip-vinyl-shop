@@ -22,6 +22,10 @@
 (function (global) {
   'use strict';
 
+  // 資產（座標檔、面板圖）的根目錄＝這支檔案所在的資料夾（v5 第六項第三期：遊戲的聆聽室從 /game-lab/ 載 ../dip-tune.js，相對頁面的路徑會 404）。
+  // 主站從根目錄載（index.html 有 <base href="/">）→ 就是站根，跟原本相對頁面的結果一樣；算不出來（例如被打包）就退回相對頁面
+  const BASE = (() => { try { const s = document.currentScript; return s && s.src ? new URL('.', s.src).href : ''; } catch (_) { return ''; } })();
+
   let cfg = { host: null, loadCardPool: null, onResult: null, onBack: null, player: null, cardIdOf: null };
   const ORDER = ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'];
   // 八格配色（2026-10-22 店主定稿，八個色相照色相環排）：暖半邊 放鬆金黃→雀躍橙→沸騰朱紅→恍惚洋紅；
@@ -46,7 +50,7 @@
   function loadData() {
     if (!dataPromise) {
       dataPromise = Promise.all([
-        fetch('data/mood/card-moods.json').then(r => { if (!r.ok) throw new Error('情緒座標載入失敗'); return r.json(); }),
+        fetch(BASE + 'data/mood/card-moods.json').then(r => { if (!r.ok) throw new Error('情緒座標載入失敗'); return r.json(); }),
         cfg.loadCardPool(),
       ]).then(([moods, pool]) => {
         if (!Array.isArray(moods._h) || moods._h.length !== moods.cards.length) throw new Error('情緒座標檔格式不對');
@@ -219,7 +223,7 @@
 /* 主機是一整塊像素面板（2026-10-23 店主：「下面的面板整合起來變成一個像素面板」，拿掉最下面的抽屜讓星圖長大）：
    tune/panel-all.png 由 scripts/build-tune-panel.py 從原稿拼成，下列活件位置都是那支腳本印出來的百分比。
    整台高 ≈ 0.98 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
-.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 0.99));aspect-ratio:1438/1413;background:url(tune/panel-all.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
+.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 0.99));aspect-ratio:1438/1413;background:url(${BASE}tune/panel-all.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
 @media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 24px) / 0.99))}}
 /* 手機直放：面板放大塞滿寬度（2026-10-23 店主：左右空位太多），星圖讓出高度。
    高度一律用 --tvh（JS 記下的視窗高，打字時鍵盤彈出不更新）：不然 100dvh 跟著鍵盤縮、直式被判成橫式，整台版面會跳成左右並排 */
@@ -232,37 +236,37 @@
 .tune-key[disabled]{opacity:.55;cursor:default}
 .tune-key:focus-visible{outline:2px solid #ffd166;outline-offset:1px}
 /* 兩顆鍵只有像素圖示、不疊字（2026-11-06 店主：「就這張」字溢出、「隨機只需要留骰子」「就這張也要有一個圖示」）：就這張＝黑膠、隨機＝骰子 */
-.tune-draw{left:79.903%;top:12.597%;width:11.683%;height:11.323%;background-image:url(tune/key-draw.png?v=${AV})}
-.tune-rand{left:79.903%;top:24.699%;width:11.683%;height:11.323%;background-image:url(tune/key-rand.png?v=${AV})}
+.tune-draw{left:79.903%;top:12.597%;width:11.683%;height:11.323%;background-image:url(${BASE}tune/key-draw.png?v=${AV})}
+.tune-rand{left:79.903%;top:24.699%;width:11.683%;height:11.323%;background-image:url(${BASE}tune/key-rand.png?v=${AV})}
 .tune-drum{position:absolute;overflow:hidden;background:transparent;top:24.204%;width:7.789%;height:10.262%}
 #tuneDx{left:14.951%}#tuneDy{left:23.992%}#tuneDz{left:33.032%}#tuneDcell{left:42.072%;width:18.776%}
 .tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
 .tune-drum span{display:block;height:6.259cqw;line-height:6.259cqw;text-align:center;font-family:var(--pix);font-size:4.2cqw;color:var(--w,#e9e2c8);white-space:nowrap}
 .tune-drum.wide span{font-size:3.5cqw;letter-spacing:.2em;padding-left:.2em}
-.tune-drum::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-145.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-drum::after{content:"";position:absolute;inset:0;background:url(${BASE}tune/drum-shade-145.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-sw{left:64.047%;top:17.268%;width:14.117%;height:18.754%;background:transparent;border:0;cursor:pointer;padding:0}
 .tune-sw:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
 .tune-swlab{left:71.975%;width:6.189%;height:2.548%;display:flex;align-items:center;font-family:var(--pix);font-size:2.2cqw;color:#8d9478;pointer-events:none;white-space:nowrap}
 .tune-swlab.top{top:17.268%}.tune-swlab.bot{top:33.475%}
 .tune-swlab.on{color:#ffd34d}
-.tune-led{left:69.611%;width:1.808%;height:1.132%;background:url(tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-led{left:69.611%;width:1.808%;height:1.132%;background:url(${BASE}tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-led.top{top:17.976%}.tune-led.bot{top:34.183%}
-.tune-led.on{background-image:url(tune/led-on.png?v=${AV})}
+.tune-led.on{background-image:url(${BASE}tune/led-on.png?v=${AV})}
 /* SCAN／RADIO 撥桿：原稿槽位上疊三格（上｜中｜下），撥的時候走一格中間 */
-.tune-lever{left:68.498%;top:21.798%;width:4.103%;height:9.696%;background:url(tune/switch.png?v=${AV}) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-lever{left:68.498%;top:21.798%;width:4.103%;height:9.696%;background:url(${BASE}tune/switch.png?v=${AV}) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-lever[data-pos="mid"]{background-position:50% 0}.tune-lever[data-pos="down"]{background-position:100% 0}
 /* 篩選滾筒：上下拖、點上半／下半、滾輪、方向鍵切換，選項繞一圈；不開任何視窗 */
 .tune-fplate{top:38.783%;height:4.317%;display:flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--pix);font-size:2.2cqw;color:#2a1e07;white-space:nowrap;pointer-events:none}
 .tune-fplate small{font-size:.9em;letter-spacing:.06em}
 .tune-fplate[data-k="genre"]{left:12.517%;width:14.395%}.tune-fplate[data-k="grade"]{left:28.303%;width:19.333%}.tune-fplate[data-k="tier"]{left:49.096%;width:14.326%}
-.tune-fled{top:44.232%;width:2.364%;height:1.557%;background:url(tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
-.tune-fled.on{background-image:url(tune/led-on.png?v=${AV})}
+.tune-fled{top:44.232%;width:2.364%;height:1.557%;background:url(${BASE}tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-fled.on{background-image:url(${BASE}tune/led-on.png?v=${AV})}
 .tune-fled[data-k="genre"]{left:18.498%}.tune-fled[data-k="grade"]{left:36.787%}.tune-fled[data-k="tier"]{left:55.076%}
 .tune-flt{top:38.783%;height:19.604%;cursor:ns-resize;touch-action:none;outline:0}
 .tune-flt[data-k="genre"]{left:12.378%;width:14.673%}.tune-flt[data-k="grade"]{left:28.164%;width:19.611%}.tune-flt[data-k="tier"]{left:48.957%;width:14.604%}
 .tune-flt:focus-visible .fdrum{outline:2px solid #ffd166;outline-offset:-2px}
 .tune-flt .fdrum{position:absolute;left:0;right:0;top:40.793%;height:45.486%;overflow:hidden;pointer-events:none}
-.tune-flt .fdrum::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-126.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+.tune-flt .fdrum::after{content:"";position:absolute;inset:0;background:url(${BASE}tune/drum-shade-126.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
 .tune-flt .strip{will-change:transform}
 .tune-flt .strip.anim{transition:transform .22s cubic-bezier(.25,.9,.3,1.08)}
 .tune-flt span{display:block;height:4.8cqw;line-height:4.8cqw;text-align:center;font-family:var(--pix);font-size:3.27cqw;color:#8d9478;white-space:nowrap}
@@ -273,11 +277,11 @@
 .tune-lcd{left:68.15%;top:39.207%;width:21.558%;height:8.563%;pointer-events:none}
 .tune-odo{position:absolute;top:9.097%;height:81.817%;width:16.128%;overflow:hidden}
 .tune-odo:nth-child(1){left:5.483%}.tune-odo:nth-child(2){left:23.226%}.tune-odo:nth-child(3){left:41.29%;width:15.81%}.tune-odo:nth-child(4){left:59.031%}.tune-odo:nth-child(5){left:76.774%}
-.tune-odo::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-99.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+.tune-odo::after{content:"";position:absolute;inset:0;background:url(${BASE}tune/drum-shade-99.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
 .tune-odo .strip{will-change:transform}
 .tune-odo span{display:block;height:5.2cqw;line-height:5.2cqw;text-align:center;font-family:var(--pix);font-size:4.4cqw;color:#e9e2c8}
 .tune-lcd.zero span{color:#ff7a6b}
-.tune-all{left:67.803%;top:49.328%;width:22.323%;height:9.059%;background-image:url(tune/key-all.png?v=${AV});color:#8d9478;font-size:3.6cqw;line-height:1.15;text-align:center;padding-top:.6cqw}
+.tune-all{left:67.803%;top:49.328%;width:22.323%;height:9.059%;background-image:url(${BASE}tune/key-all.png?v=${AV});color:#8d9478;font-size:3.6cqw;line-height:1.15;text-align:center;padding-top:.6cqw}
 .tune-all small{display:block;font-size:2.2cqw;letter-spacing:.08em}
 .tune-all.on{color:#e9e2c8}
 /* 轉輪：點擊範圍放大到整欄（含名牌與刻度），手指好抓。2026-11-07 店主：輪子往上擴充、篩選排縮小（輪子 190 → 288 列） */
@@ -1669,8 +1673,8 @@ html.tune-inapp-lock body{padding-top:120px}
     { const items = ORDER.map(k => `<span style="color:${CELL_COLOR[k]}">${NAMES[k]}</span>`); el.cellStrip.dataset.n = items.length; el.cellStrip.innerHTML = items.join('') + items.join('') + items.join(''); }
     host.querySelectorAll('.tune-drum .strip').forEach(st => { if (st.id === 'tuneCellStrip') return; const items = [...st.children].map(e => e.outerHTML); st.dataset.n = items.length; st.innerHTML = items.join('') + items.join('') + items.join(''); });
     // 輪子素材
-    try { SPANS = await fetch(`tune/wheel-spans.json?v=${AV}`).then(r => r.json()); } catch (_) { SPANS = null; }
-    for (const k of ['x', 'y', 'z']) { const im = new Image(); im.src = `tune/tile-${k}.png?v=${AV}`; TILES[k] = im; }
+    try { SPANS = await fetch(`${BASE}tune/wheel-spans.json?v=${AV}`).then(r => r.json()); } catch (_) { SPANS = null; }
+    for (const k of ['x', 'y', 'z']) { const im = new Image(); im.src = `${BASE}tune/tile-${k}.png?v=${AV}`; TILES[k] = im; }
     try { buildScene(); } catch (e) { console.warn('[tune] 星圖建不起來，只用面板', e); THREE_OK = false; }
     host.querySelectorAll('.tune-wheel').forEach(n => { WHEELS[n.dataset.axis] = wheel(n, host.querySelector(`.tune-wcol[data-axis="${n.dataset.axis}"]`)); });
     wireSearch();
