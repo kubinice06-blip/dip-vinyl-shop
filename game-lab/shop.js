@@ -18,7 +18,8 @@
  *   shop.setView({ y, h }) / tweenView({ y, h }, ms) / tag / untag / float / anchor / pose / emote / highlight / hotRect
  *   唱盤區（v3）：shop.arm(id, 'wind'|'throw'|'shield'|'up'|'flag'|'shrug'|null) / hold(id, what) / nudge(id, dx)
  *                 shop.state.fx（飛行唱片、火花、碎片、旗…，由 stage.js 的 clash() 每格填）/ state.decks / fast(on) / onTick(fn)
- *   朝向（v5 第五項）：走路時 faceDir 自己算（往上走背面、往下正面、橫走照舊左右翻，有遲滯）；只有站、走有背面，其他姿勢一律正面。
+ *   朝向（v5 第五項，寶可夢黃版三向）：走路時 faceDir 自己算（往上走背面、往下正面、橫走側面＋左右翻＝鏡像，有遲滯）；
+ *                 DipLabChars.DIRS 沒有 'side'（?chars=0、舊 chars.js）時橫走照第一步：正面左右翻。只有站、走有背面／側面，其他姿勢一律正面。
  *                 到站 0.2 秒後轉回正面（試聽桌 listen 例外：背面；layout.faceAt 可改，見 arriveDir）；
  *                 停著時叫 flip／pose／arm／hold 轉回正面、put 一律正面；shop.pos(id).dir／flip 給測試看；shop.dir(id, 'back') 劇本手動指定
  *
@@ -1365,13 +1366,13 @@
     return { pts: [b], how: 'straight' };
   }
 
-  // ===================================================================== 走路朝向（v5 第五項第一步：往上走背面、往下正面、橫走照舊左右翻）
+  // ===================================================================== 走路朝向（v5 第五項：往上走背面、往下正面、橫走側面；第一步沒有側面圖時橫走＝正面左右翻）
   // faceDir(cur, dx, dy, o) → { dir, flip, at }：純函式（Node 測得到；stepActors 每一步叫一次）
   //   cur＝{ dir:'front'|'back'|'side', flip, at:上次換向的時間（秒）}
   //   (dx, dy)＝剩下到這個路點的向量（美術格；斜俯視地板 1:1，y 越大越靠近鏡頭）。用「剩下的」不用每格位移：同一段裡方向不變
   //   o＝{ t:現在（秒，走路時鐘）, seg:這一段起點時的長度, hi:55, lo:35, minSeg:6, hold:0.12, side:false }
   // 遲滯（方向要明顯換了才轉、不會抖）：θ＝atan2(|dy|, |dx|)。θ ≥ hi → 上下（dy<0＝背面、dy>0＝正面）；θ ≤ lo → 橫走
-  //   （正面、flip＝往左；o.side＝有側面圖時回 'side'）；中間 → 保持原方向。這一段短於 minSeg 格 → 不轉。
+  //   （o.side＝有側面圖（stepActors 看 DipLabChars.DIRS）→ 'side'，沒有 → 'front'；flip＝往左）；中間 → 保持原方向。這一段短於 minSeg 格 → 不轉。
   //   換過方向後 hold 秒內不再換（flip 也算）。flip 只在橫走時更新：上下走保留原本的左右（單肩包、單片眼鏡不會往下走時突然換邊）
   var FACE = { hi: 55, lo: 35, minSeg: 6, hold: 0.12, arrive: 0.2 };
   // 到站之後朝哪（審查修正：走完留在背面＝來客畫面、門邊等的客人一直是後腦勺）：預設轉回正面；只有「面向東西」的站位照表
@@ -1701,7 +1702,8 @@
     }
     // DipLabChars → 點陣圖。×3（美術格模式）：toCanvas 直接給 1 美術格＝1 px 的圖，含 GBA 修飾（1 格描邊＋一階陰影；臉與比例一格不動）。
     // layout.charScale 不是 3 的話退回舊作法（scale 1 平面畫，再 ×cScale）。快取 key＝spec＋姿勢＋格＋翻面＋朝向＋變體
-    // 快取：多了朝向（×2，之後側面 ×3）以後 400 張會常常整包清空、走路時重算掉格 → 上限 900、超過只丟最久沒用的 300 張（Map 照放進去的順序；用到就移到最後）
+    // 快取：多了朝向（正／背／側 ×3）以後 400 張會常常整包清空、走路時重算掉格 → 上限 900、超過只丟最久沒用的 300 張（Map 照放進去的順序；用到就移到最後）
+    //   估量（第二步）：一個人站 2＋走 2 格 × 翻面 2 × 朝向 3＝24 張，加正面才有的姿勢（翻箱、受擊、丟…）約 20 張、剪影／金框變體，同場 8 人約 400–500 張，900 夠
     var charCache = new Map(), CHAR_MAX = 900;
     function cachePut(key, v) { charCache.set(key, v); if (charCache.size > CHAR_MAX) { var it = charCache.keys(); for (var n = 0; n < 300; n++) charCache.delete(it.next().value); } return v; }
     function artMode() { return cScale() === 3 && typeof charsApi().toCanvas === 'function'; }
