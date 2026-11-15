@@ -818,6 +818,7 @@
     aceDone: L('好，換這張。送你的也一起換了。', '新'),
     aceSame: L('那就照舊。', '新'),
     aceLater: L('想換王牌？下一趟開門前再說。', '新'),
+    aceKeep: L('好，就帶這張。', '新'),                          // 頂點卡試做（?apex=1）：同一派換另一張頂點卡（送的四張沒換）
     nightIntro: [L('客人一個一個來，打到輸為止。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
@@ -854,7 +855,7 @@
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
-    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆',
+    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆', aceKeep: '老闆',
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）',
     homeBtn: '（畫面字）', homeTitle: '（畫面字）', homeSub: '（畫面字）', homeNote: '（畫面字）', homeEmpty: '（畫面字）', homeShelf: '（畫面字）', homeDeck: '（畫面字）',
     homeConsole: '（畫面字）', homeShelfSub: '（畫面字）', homeDeckSub: '（畫面字）', homeDeckEmpty: '（畫面字）', homePut: '（畫面字）', homeOnDeck: '（畫面字）', homeStop: '（畫面字）', homeNow: '（畫面字）', homeIdle: '（畫面字）',
@@ -1080,7 +1081,9 @@
       revealHonest: '真話', revealBluff: '唬人！',                    // 看穿：提示框上蓋的章
       fired: '王牌《{album}》：{name}',                              // 發動那一刻提示框下面跳的一行
       healToast: '聲望 +{n}',                                         // 回聲望（發動當下）
-      rulesFoot: '你開局 {hp} 聲望（升級會加），打贏回 {heal}；客人 {normal}、傳說藏家 {boss}。'   // 規則卡頁尾第 2 行（旗標下；{heal}＝winHeal）
+      rulesFoot: '你開局 {hp} 聲望（升級會加），打贏回 {heal}；客人 {normal}、傳說藏家 {boss}。',   // 規則卡頁尾第 2 行（旗標下；{heal}＝winHeal）
+      // 介面棒加的（ui.js）：tag＝標題牌與挑王牌面板角上的小字；tutNote＝序章挑王牌那行、教學那場開打的吐司（教學照舊 7 星，FRAME 1.6）
+      tag: '頂點卡試做', tutNote: '教學這場王牌照舊 7 星，之後改當輔助卡。'
     },
     // 一次性老闆小提示（旗標下多兩則；≤20 字）
     tips: { tip_apex: '王牌一場發動一次，不佔這一手。', tip_apexMiss: '王牌要碰到條件才有用。' },
