@@ -48,3 +48,7 @@
 ## 每日批次 2026-11-14（第 9 批，395 次）
 - 找到 138（exact 117、edition 21），收 136。**不收** Michel Legrand《Les Demoiselles de Rochefort》→「Version instrumentale」純音樂版（法文 instrumentale 漏網）；Andrew Lloyd Webber《Cats》1981 原卡司 → 2019 電影版 Highlights。兩張進 rejected.json。
 - 規則補強：OTHER_WORK 加 instrumentale(s)、highlights。回頭複查已寫入 2,071 條，無同類漏網。
+
+## 每日批次 2026-11-15（第 10 批，395 次）
+- 找到 94（exact 86、edition 8），全收；edition 都是同張的原聲帶／重製／擴充版。命中率下降（剩下多為冷門盤）。
+- 寫入 89／94：許冠傑《半斤八兩》、陶喆、孫燕姿、張惠妹《Bad Boy》、王菲《天空》5 張 KV 已無此鍵（前台會即時查），記進 `skipped-nokey.json`，make-plan 不再列入。

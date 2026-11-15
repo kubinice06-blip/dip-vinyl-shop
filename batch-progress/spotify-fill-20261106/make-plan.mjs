@@ -6,6 +6,8 @@ for (const f of fs.readdirSync(D)) if (/^applied-.*\.json$/.test(f)) for (const 
 // 主線裁定不收的（rulings.md），每天的 plan 都要排除，否則已退回的對應隔天又會被寫進去
 const rejected = new Set(fs.existsSync(D + 'rejected.json') ? JSON.parse(fs.readFileSync(D + 'rejected.json', 'utf8')).map(r => r.key) : []);
 for (const k of rejected) applied.add(k);
+// KV 已無此鍵的（寫入時 apply.mjs 跳過），前台會即時查，不再每天列入
+if (fs.existsSync(D + 'skipped-nokey.json')) for (const r of JSON.parse(fs.readFileSync(D + 'skipped-nokey.json', 'utf8'))) applied.add(r.key);
 const rows = new Map();
 for (const l of fs.readFileSync(D + 'spotify.jsonl', 'utf8').split('\n')) if (l.trim()) { const r = JSON.parse(l); rows.set(r.key, r); }
 const plan = [...rows.values()].filter(r => r.v2 && r.url && !applied.has(r.key)).map(r => ({ key: r.key, url: r.url, via: 'spotify-v2-' + r.how }));
