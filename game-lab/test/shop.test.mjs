@@ -277,6 +277,96 @@ section('路線表（SPEC-v4 §2.3.2）：不穿家具、1 倍速不超過上限
   ok(!obs.some(o => DS.inObs([30, 100], o)) && clear(dip.spots.atdoor.slice(0, 2), [30, 100]) && clear(dip.spots.door.slice(0, 2), [30, 100]), '[30,100] 不在家具裡、door／atdoor 走得到');
 });
 
+// v5 第五項第一步：走路朝向 faceDir（往上走背面、往下正面、橫走照舊左右翻；遲滯 ≥55° 上下、≤35° 橫走、中間保持；<6 格不轉；換向後 0.12 秒內不再換）
+section('走路朝向 faceDir：純函式、路線表每一段、來回不抖', () => {
+  const FD = DS.faceDir, F = DS.FACE;
+  ok(typeof FD === 'function', 'DipShop.faceDir 有匯出');
+  eq([F.hi, F.lo, F.minSeg, F.hold], [55, 35, 6, 0.12], '門檻：55°／35°／6 格／0.12 秒');
+  const at = (deg, len = 40) => [Math.cos(deg * Math.PI / 180) * len, -Math.sin(deg * Math.PI / 180) * len];   // 角度：0°＝往右、90°＝往上（離鏡頭）
+  const F0 = { dir: 'front', flip: false, at: null };
+  const d = (cur, deg, o = {}) => { const [dx, dy] = at(deg, o.len || 40); return FD(cur, dx, dy, Object.assign({ t: 10 }, o)); };
+  eq(d(F0, 90).dir, 'back', '正上（90°）＝背面');
+  eq(d(F0, -90).dir, 'front', '正下（-90°）＝正面');
+  eq(d({ dir: 'back', flip: false }, -90).dir, 'front', '背面往下走 → 正面');
+  eq([d(F0, 0).dir, d(F0, 0).flip], ['front', false], '往右＝正面、不翻');
+  eq([d(F0, 180).dir, d(F0, 180).flip], ['front', true], '往左＝正面、翻面');
+  eq([d({ dir: 'back', flip: false }, 180).dir, d({ dir: 'back', flip: false }, 180).flip], ['front', true], '背面往左走 → 正面＋翻面');
+  eq(d(F0, 55).dir, 'back', '55° 算上下'); eq(d(F0, 125).dir, 'back', '125°（往左上 55°）算上下');
+  for (const deg of [36, 45, 54, 126, 135, 144, -45, -135]) {
+    const b = d({ dir: 'back', flip: true }, deg), f = d({ dir: 'front', flip: false }, deg);
+    eq([b.dir, b.flip, f.dir, f.flip], ['back', true, 'front', false], deg + '° 在死區：保持原方向（含左右）');
+  }
+  eq(d({ dir: 'back', flip: false }, 34).dir, 'front', '34° 算橫走'); eq(d({ dir: 'back', flip: false }, 34).flip, false, '往右上 34° 不翻');
+  eq(d({ dir: 'back', flip: false }, 146).flip, true, '往左上 34° 翻面');
+  // 上下走不動左右：往下走時單肩包不會突然換邊
+  eq(d({ dir: 'back', flip: true }, -80).flip, true, '往下（略偏右）保留原本的翻面');
+  eq(d({ dir: 'front', flip: false }, 100).flip, false, '往上（略偏左）保留原本的不翻');
+  // 短段不轉
+  eq(d(F0, 90, { len: 5, seg: 5 }).dir, 'front', '這段只有 5 格：不轉');
+  eq(d(F0, 90, { len: 3, seg: 30 }).dir, 'back', '這段 30 格、剩 3 格：照轉（看的是起點時的長度）');
+  eq(FD(F0, 0, 0, { t: 10, seg: 30 }).dir, 'front', '剩 0 格：不轉');
+  // 換向後 0.12 秒內不再換
+  const c1 = d(F0, 90, { t: 5 }); eq([c1.dir, c1.at], ['back', 5], '換向記時間');
+  eq(d(c1, -90, { t: 5.1 }).dir, 'back', '0.1 秒後：還不能換回來');
+  eq(d(c1, -90, { t: 5.13 }).dir, 'front', '0.13 秒後：可以換');
+  eq(d(c1, 180, { t: 5.05 }).flip, false, '0.12 秒內也不翻面');
+  eq(d(c1, 90, { t: 5.01 }), c1, '同方向：不動、時間不變');
+  eq(FD({ dir: 'back', flip: false, at: 5 }, 0, -40, {}).dir, 'back', '沒給時間：不擋');   // o.t 缺 → 沒有最短停留
+  eq(d(F0, 180, { side: true }).dir, 'side', 'side:true（之後有側面圖）：橫走回 side');
+  eq(d(F0, 70, { hi: 75 }).dir, 'front', 'hi 可調（layout.faceDeg）');
+
+  // 照 shop.js stepActors 走一遍（每格 0.1 秒、1 倍速 72 格/秒；路點吸附）：記錄每一格的朝向
+  const obs = DS.navObstacles(dip), S = Object.assign({}, dip.spots);
+  for (const p of dip.props) if (p.bin) S['bin:' + p.bin.key] = p.bin.stand;
+  function walkSim(pts, cur = { dir: 'front', flip: false, at: null }, o = {}) {
+    let x = pts[0][0], y = pts[0][1], t = 0; const dt = o.dt || 0.1, sp = (o.k || 1) * 72 * dt, log = [], path = pts.slice(1).map((p, i) => ({ x: p[0], y: p[1], i }));
+    let segTo = null, segLen = 0, guard = 0;
+    while (path.length && guard++ < 5000) {
+      t += dt * (o.k || 1); const tg = path[0], dx = tg.x - x, dy = tg.y - y, dist = Math.hypot(dx, dy);
+      if (segTo !== tg) { segTo = tg; segLen = dist; }
+      cur = FD(cur, dx, dy, { t, seg: segLen }); log.push({ t, seg: tg.i, dir: cur.dir, flip: cur.flip, at: cur.at });
+      if (dist <= sp) { x = tg.x; y = tg.y; path.shift(); } else { x += dx / dist * sp; y += dy / dist * sp; }
+    }
+    return { log, cur };
+  }
+  const pairs = [['door', 'browse'], ['browse', 'pay'], ['pay', 'leave'], ['counter', 'dig1'], ['counter', 'dig2'], ['dig2', 'counter'], ['counter', 'mid'], ['mid', 'ref'], ['pay', 'leaving'], ['atdoor', 'duelE'],
+    ['leaving', 'duelP'], ['ref', 'visit'], ['visit', 'dig1'], ['duelE', 'door'], ['browse', 'sale'], ['sale', 'pay'], ['door', 'in'], ['in', 'counter']];
+  for (const k of Object.keys(S).filter(k => k.startsWith('bin:'))) pairs.push(['door', k], [k, 'pay']);
+  let nRoutes = 0, upLen = 0, allLen = 0, changes = 0, upSegs = 0;
+  for (const [a, b] of pairs) {
+    if (!S[a] || !S[b]) continue;
+    const r = CS.routeOf(DS, dip, S[a].slice(0, 2), S[b].slice(0, 2), obs); if (!r) { ok(false, '走不到 ' + a + '→' + b); continue; }
+    const pts = [S[a].slice(0, 2)].concat(r.pts), { log } = walkSim(pts); nRoutes++;
+    // 每一段：夠長（≥ 6 格）、往上 ≥ 55° → 這段走完的時候是背面；往下 ≥ 55° → 正面；橫走 ≤ 35° → 正面、左右對
+    for (let i = 1; i < pts.length; i++) {
+      const dx = pts[i][0] - pts[i - 1][0], dy = pts[i][1] - pts[i - 1][1], len = Math.hypot(dx, dy), th = Math.atan2(Math.abs(dy), Math.abs(dx)) * 180 / Math.PI;
+      allLen += len; const L0 = log.filter(s => s.seg === i - 1); if (!L0.length || len < 6) continue;
+      const end = L0[L0.length - 1];
+      if (th >= 55) { eq(end.dir, dy < 0 ? 'back' : 'front', a + '→' + b + ' 第 ' + i + ' 段（' + Math.round(th) + '°、' + Math.round(len) + ' 格）' + (dy < 0 ? '往上＝背面' : '往下＝正面')); if (dy < 0) { upLen += len; upSegs++; } }
+      else if (th <= 35) eq([end.dir, end.flip], ['front', dx < 0], a + '→' + b + ' 第 ' + i + ' 段橫走＝正面、' + (dx < 0 ? '翻面' : '不翻'));
+      // 同一段裡最多換一次（不抖）
+      let ch = 0; for (let j = 1; j < L0.length; j++) if (L0[j].dir !== L0[j - 1].dir || L0[j].flip !== L0[j - 1].flip) ch++;
+      ok(ch === 0, a + '→' + b + ' 第 ' + i + ' 段裡不來回換', L0.map(s => s.dir[0] + (s.flip ? 'L' : 'R')).join(''));
+    }
+    // 整條路：兩次換向至少隔 0.12 秒
+    const ts = []; for (let j = 0; j < log.length; j++) { const p = j ? log[j - 1] : { dir: 'front', flip: false }; if (log[j].dir !== p.dir || log[j].flip !== p.flip) ts.push(log[j].t); }
+    changes += ts.length; for (let j = 1; j < ts.length; j++) ok(ts[j] - ts[j - 1] >= 0.12 - 1e-9, a + '→' + b + ' 換向間隔 ≥ 0.12 秒', ts);
+  }
+  ok(nRoutes >= 50, '跑了 ≥ 50 條常用路線', nRoutes);
+  ok(upSegs >= 10 && upLen / allLen > 0.08, '有一成左右的路是往上走（換背面）', [upSegs, +(upLen / allLen).toFixed(3)]);
+  ok(changes > 0 && changes < nRoutes * 3, '換向次數合理（不抖）', [changes, nRoutes]);
+  if (process.argv.includes('--routes')) console.log('  朝向：' + nRoutes + ' 條路線、往上 ' + upSegs + ' 段（路長 ' + (upLen / allLen * 100).toFixed(1) + '%）、換向 ' + changes + ' 次');
+  // 來回不抖：沿 45° 左右的鋸齒走（每段 10 格、44°↔46°）→ 一次都不換；短段上下交錯（每段 4 格）→ 不換
+  { const pts = [[100, 200]]; for (let i = 0; i < 20; i++) { const p = pts[pts.length - 1], [dx, dy] = at(i % 2 ? 44 : 46, 10); pts.push([p[0] + dx, p[1] + dy]); }
+    const { log } = walkSim(pts, { dir: 'front', flip: false, at: null }); ok(log.every(s => s.dir === 'front' && !s.flip), '45° 鋸齒：一次都不換', log.map(s => s.dir[0]).join('')); }
+  { const pts = [[100, 200]]; for (let i = 0; i < 20; i++) { const p = pts[pts.length - 1]; pts.push([p[0] + 1, p[1] + (i % 2 ? 4 : -4)]); }
+    const { log } = walkSim(pts); ok(log.every(s => s.dir === 'front'), '4 格的短段上下交錯：不轉', log.map(s => s.dir[0]).join('')); }
+  // 長的上下交錯（每段 12 格、快轉 4 倍）：會換，但兩次換向至少隔 0.12 秒（走路時鐘＝真時間 × 倍速，跟 shop.js 一樣）
+  { const pts = [[100, 200]]; for (let i = 0; i < 12; i++) { const p = pts[pts.length - 1]; pts.push([p[0], p[1] + (i % 2 ? 12 : -12)]); }
+    const { log } = walkSim(pts, undefined, { k: 4, dt: 0.016 }); const ts = []; for (let j = 1; j < log.length; j++) if (log[j].dir !== log[j - 1].dir) ts.push(log[j].t);
+    ok(ts.length >= 4 && ts.every((v, j) => !j || v - ts[j - 1] >= 0.12 - 1e-9), '12 格上下交錯：有換、間隔 ≥ 0.12 秒', ts.map(v => v.toFixed(3))); }
+});
+
 section('舊 POS 別名表齊全（SPEC-v2 §5.2）', () => {
   const want = {
     'p.door': 'door', 'p.browse': 'browse', 'p.pay': 'pay', 'p.leaving': 'leave', 'p.atdoor': 'atdoor', 'p.duel': 'duelP', 'p.map': 'map',

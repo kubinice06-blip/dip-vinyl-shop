@@ -19,6 +19,7 @@
 //   13 沒有 run（標題）：抽屜只能翻、沒有買的鈕
 //   15 包包沒滿、錢不夠但賣一張就夠（SPEC §2.5.6 第 3 點）：鈕可按（「買 $400／先賣一張」）→ 子面板「錢不夠：先賣一張」、賣了也不夠的那張不給選 → 賣一張買到、包包張數不變；
 //      櫃檯配件同理（「先賣一件」，配件沒滿 3 件）
+//   16 走路朝向（v5 第五項）：browse → 爵士箱一路正面、翻箱正面；爵士箱 → 櫃檯最後一段往上（約 60°）畫背面（pos('p').dir 逐格取樣）、到了 faceTo 回正面
 //   14 所有面板（箱子、賣回、特價兩種、櫃檯、配件賣回、錢不夠先賣）不捲出畫面、鈕 ≥44 高；主控台 0 錯誤（最後跑）
 //
 // index.html（整合後：ui.js 已經 configure 經濟介面、載入 econ.css／econ.js；沒接上就印 SKIP、不算失敗；ECON_INDEX=0 不跑）：
@@ -433,6 +434,32 @@ async function runSize(browser, w, h) {
       const sRelic = `配件 $${rs.money}、「${rs.rid}」$${rs.price}：鈕「${rtxt}」可按 ${!rdis}；「${rmsg}」；賣 ${rsell}（+${rs.max}）→ $${q1.money}、配件 ${q1.relics.join(',')}`;
       record(15, size, okCard && okRelic, sCard + '；' + sRelic);
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
+    });
+    // ---------------- 16：走路朝向（v5 第五項）：往上走那段畫背面、往下／橫走正面；到箱子前翻箱、到櫃檯 faceTo 都回正面 ----------------
+    await T(16, async () => {
+      await reset(page, { mode: 'night', money: 5000, bag: 2, relics: 2 });
+      const walkSample = k => page.evaluate(k => {
+        const st = window.H.stage; window.__fd = [];
+        const f = () => { const a = st.pos('p'); window.__fd.push({ x: a.x, y: a.y, dir: a.dir, flip: a.flip, open: !!document.querySelector('.ec-drawer') }); if (window.__fd.length < 3000 && !(window.__fd.length > 3 && document.querySelector('.ec-drawer'))) window.__fdr = requestAnimationFrame(f); };
+        window.__fdr = requestAnimationFrame(f); window.H.open(k);
+      }, k);
+      const moves = smp => { const out = []; for (let i = 1; i < smp.length; i++) { const dx = smp[i].x - smp[i - 1].x, dy = smp[i].y - smp[i - 1].y; if (Math.hypot(dx, dy) > 0.5) out.push({ dx, dy, dir: smp[i].dir, th: Math.atan2(Math.abs(dy), Math.abs(dx)) * 180 / Math.PI }); } return out; };
+      // browse → 爵士箱（往下、往左）：一路正面；到了翻箱＝正面
+      await walkSample('bin:jazz'); await waitOpen(page, 15000);
+      const s1 = await page.evaluate(() => { cancelAnimationFrame(window.__fdr); return { smp: window.__fd, at: window.H.stage.pos('p') }; });
+      const m1 = moves(s1.smp);
+      await page.evaluate(() => window.DipLabEcon.close()); await sleep(500);
+      // 爵士箱 → 櫃檯（最後一段往右上約 60°）：那段要畫背面
+      await walkSample('relic'); await waitOpen(page, 15000);
+      const s2 = await page.evaluate(() => { cancelAnimationFrame(window.__fdr); return { smp: window.__fd, at: window.H.stage.pos('p') }; });
+      const m2 = moves(s2.smp), up = m2.filter(m => m.dy < 0 && m.th >= 60), backs = m2.filter(m => m.dir === 'back');
+      const down = m1.concat(m2).filter(m => m.dy > 0.5 && m.th >= 55), flat = m1.concat(m2).filter(m => m.th <= 30);
+      const sumUp = backs.reduce((a, m) => a + m.dy, 0), sumX = backs.reduce((a, m) => a + Math.abs(m.dx), 0);
+      const okBack = up.length >= 2 && up.filter(m => m.dir === 'back').length >= up.length - 1 && sumUp < 0 && -sumUp > sumX;
+      const okFront = down.every(m => m.dir === 'front') && flat.filter(m => m.dir === 'back').length <= 1 && m1.length > 3;
+      const okStop = s1.at.dir === 'front' && s2.at.dir === 'front';
+      await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
+      record(16, size, okBack && okFront && okStop, `往上 ${up.length} 步（背面 ${up.filter(m => m.dir === 'back').length}）；背面那幾步 Σdy ${Math.round(sumUp)}、Σ|dx| ${Math.round(sumX)}；往下 ${down.length} 步全正面 ${down.every(m => m.dir === 'front')}；橫走 ${flat.length} 步、背面 ${flat.filter(m => m.dir === 'back').length}；到箱子前 ${s1.at.dir}、到櫃檯 ${s2.at.dir}`);
     });
     // ---------------- 14：所有面板不捲出畫面、主控台 0 錯誤 ----------------
     await T(14, async () => {
