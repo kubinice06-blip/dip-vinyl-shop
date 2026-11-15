@@ -9,6 +9,7 @@
  * }
  *
  * 版面（由上到下，置中、最寬 360）：唱片資訊 → 封面 200px → 藝人 → 專輯 → 年份 → 王牌徽章 → 三軸色格（這一手的那軸標籤金色）
+ *   → 頻率「頻率 ● 暴躁」＋「在頻率光譜找它 ↗」（新分頁到主站 /tune/?q=；v5 第六項）
  *   → 像素唱機（FX().music；點一下停／播）→ 老闆推薦語 → 店家簡介框 → 四平台鈕（烘焙好的連結；執行期不打網路）
  *   → Preview provided courtesy of iTunes → 「關閉」黑色整條（sticky，永遠在畫面底部）。
  * 原始碼：roguelike.html openCardInfo R:L4915–4949、closeCardInfo R:L4874、starsHTML R:L1726、streamingBtnsHtml R:L3748、
@@ -43,10 +44,17 @@
       appleUrl: c.appleUrl || '', spotifyUrl: c.spotifyUrl || '', bandcampUrl: c.bandcampUrl || '', tune: c.tune || null };
   }
   // 頻率（v5 第六項第二期）：「頻率 ● 暴躁」（主站結果頁同一個寫法）；顏色、名字照 DipLabContent.tunes（抄主站）。只上色、不進規則；手繪封面（不在卡池）沒有
+  // 後面接「在頻率光譜找它 ↗」（v5 第六項第一期）：開新分頁到主站 /tune/?q=藝人 專輯（頻率光譜載入後搜這串、轉到那張；同名專輯靠 dip-tune findCards 的整串加分）。
+  //   class 不能用 streaming-btn：遊戲也載 ../dip-player.js，它把點 a.streaming-btn 當「去聽串流」→ 關掉這個分頁的自動試聽，回到遊戲就沒聲音（map-site 坑 3）
+  //   手繪封面（店裡的，同一張專輯）沒有頻率，只出連結
+  function tuneLinkHTML(o) {
+    var q = ((o.artist || '') + ' ' + (o.album || '')).trim();
+    return q ? '<a class="ci-tune" href="/tune/?q=' + encodeURIComponent(q) + '" target="_blank" rel="noopener">在頻率光譜找它 ↗</a>' : '';
+  }
   function tuneHTML(o) {
-    var T = (W.DipLabContent || {}).tunes, col = T && T.colors && T.colors[o.tune];
-    if (o.painted || !col) return '';
-    return '<div class="tn" data-tune="' + esc(o.tune) + '"><span class="k">' + esc(T.label || '頻率') + '</span><i style="--tn:' + esc(col) + '" aria-hidden="true"></i>' + esc((T.names || {})[o.tune] || '') + '</div>';
+    var T = (W.DipLabContent || {}).tunes, col = T && T.colors && T.colors[o.tune], link = tuneLinkHTML(o);
+    if (o.painted || !col) return link ? '<div class="tn">' + link + '</div>' : '';
+    return '<div class="tn" data-tune="' + esc(o.tune) + '"><span class="k">' + esc(T.label || '頻率') + '</span><i style="--tn:' + esc(col) + '" aria-hidden="true"></i>' + esc((T.names || {})[o.tune] || '') + link + '</div>';
   }
   // 原版 starsHTML：平常 5 格；王牌那軸 7 格。這一手出的那軸（act）標籤金色粗體
   function starsHTML(o, act) {

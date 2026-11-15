@@ -187,6 +187,7 @@ small{font-size:inherit;}
 .lb-cv .badge.mod{top:auto;bottom:0;background:rgba(17,17,17,.82);}
 /* 店內取得（一趟留一張收進唱片櫃的；店主 11-13 §0）：金框蓋過稀有度框＋底下一條「店內取得」 */
 .lb-cv.store::after{content:'';position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none;z-index:3;border:3px solid var(--gold);box-shadow:inset 0 0 0 1px #fff,inset 0 0 10px rgba(240,199,94,.85);}
+.lb-cv .badge.bring{background:var(--ink,#111);}   /* 主站「帶去店裡對決」帶來的（挑種子面板第一張；v5 第六項第一期） */
 .lb-cv .badge.store{top:auto;bottom:0;left:0;right:0;text-align:center;background:var(--gold);color:#111;font-size:9px;line-height:14px;letter-spacing:.08em;}
 .stars{font:700 12px 'Space Mono',var(--zh);letter-spacing:.02em;white-space:nowrap;}
 .stars b{font-weight:700;margin-right:5px;}
@@ -394,6 +395,9 @@ small{font-size:inherit;}
 /* 頻率（v5 第六項第二期）：年份下面一行「頻率 ● 暴躁」；圓點 1 px 墨框（淺色格在白底才看得到）；字不上色（頻率色跟三軸色撞） */
 .drawcard .tn{font-size:11px;line-height:14px;color:#555;letter-spacing:.1em;margin:-6px 0 10px;}
 .drawcard .tn .k{color:#888;}
+/* 「在頻率光譜找它 ↗」（v5 第六項第一期）：接在頻率那行後面，不多佔一行；上下各墊 9px 當點擊範圍（負 margin 抵掉，行高不變） */
+.drawcard .tn .ci-tune{display:inline-block;margin:-9px 0 -9px 10px;padding:9px 4px;color:#111;font-weight:700;letter-spacing:.04em;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;-webkit-tap-highlight-color:rgba(0,0,0,.08);}
+.drawcard .tn:not([data-tune]) .ci-tune{margin-left:0;}
 .drawcard .tn i,.pv-who .bl.tn i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--tn,#ccc);box-shadow:0 0 0 1px var(--ink,#111);margin:0 5px 0 6px;vertical-align:-1px;}
 .drawcard .acebadge{display:inline-block;font-size:10px;font-weight:700;color:#fff;background:#9aa0a8;padding:1px 6px;letter-spacing:.1em;}
 .drawcard .acebadge.pearl{background:#5b4a8a;}.drawcard .acebadge.heresy{background:#a01020;}.drawcard .acebadge.gold{background:#b8860b;}
