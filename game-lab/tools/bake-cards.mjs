@@ -12,12 +12,17 @@
 //   node game-lab/tools/bake-cards.mjs              # 解析 seed＋Apple 試聽索引＋Firestore 封面，驗證後寫 cards.js
 //   node game-lab/tools/bake-cards.mjs --no-verify  # 不逐一驗證封面／試聽網址（只在離線時用）
 //   node game-lab/tools/bake-cards.mjs --links-only # v2：只補四平台連結（appleUrl／spotifyUrl／bandcampUrl），其他欄位原封不動
-//   node game-lab/tools/bake-cards.mjs --covers-only # v2 fix：只套 LOCAL_COVER_SKIP（本機封面是錯的那幾張改用遠端 coverUrl）＋tools/cover-overrides.json＋重算 subs，不打 Firestore、不重抓連結
+//   node game-lab/tools/bake-cards.mjs --covers-only # v2 fix：只套 LOCAL_COVER_SKIP（本機封面是錯的那幾張改用遠端 coverUrl）＋tools/cover-overrides.json＋重算 subs、tune，不打 Firestore、不重抓連結
+//     （--covers-only --no-verify＝完全不打網路；主站重建 data/mood/card-moods.json 之後用這條更新頻率）
 //
 // 封面覆寫（店主 11-13：「有些封面用成了 cd 版或其他特別版……我只要正常版就好」）：tools/cover-overrides.json {cardId: {coverUrl, source, note}}
 //   三條路（完整烘焙、--covers-only、--links-only）都優先用它，重烘不會把修好的封面蓋回去；有覆寫的卡不給 localCover（畫面優先讀本機圖），
 //   也不做 CAA→Apple 300px 的替換（Apple 那張常是再版／系列圖：Argerich 拉三、石頭記就是這樣換錯的）；覆寫的網址打不開就失敗，不退回 iTunes。
 // 子曲風（v5 店面改版：INDIE ROCK／INDIE POP／CITY POP 三區的上架規則 sub）：../card-subgenres.json 的 "藝人|專輯" → subs（子曲風路徑），烘進每張卡（空的不寫）。
+// 頻率（v5 第六項第二期）：../data/mood/card-moods.json（主站頻率光譜的前台檔）→ tune（八格之一：calm still languid decay lift crisp boil charge）。
+//   對卡跟主站一樣：fnv1a32(catalogId(藝人, 專輯)) 在 _h 找索引 → cards[i] 的 [x, y, z]，門檻用檔內 thresholds 判格（dip-tune.js 的 cellOf），
+//   所以遊戲顯示的格子跟主站頻率光譜一模一樣。必填：查不到 → NO-TUNE（整份不寫）。三條路都算（REUSE 路也重算）。
+//   只上色、不進戰鬥規則（engine 的 outcome／星數不准讀 tune）。
 //
 // v2（SPEC-v2 §4.3）：唱片資訊的平台鈕在烘焙時就把連結烘進 cards.js，執行期不打網路。
 //   appleUrl    ← Apple 試聽索引的專輯 id＋slug＋國別（https://music.apple.com/<cc>/album/<slug>/<id>）；沒有就空（畫面上退回搜尋連結）
@@ -35,6 +40,7 @@
 //   tools/pitches.json                    推薦語 {cardId:{text, tag}}
 //   tools/cover-overrides.json            封面覆寫 {cardId:{coverUrl, source, note}}（見上）
 //   ../card-subgenres.json                子曲風 {"藝人|專輯": [路徑]}（店主網站的子曲風樹；只在烘焙時讀）
+//   ../data/mood/card-moods.json          頻率座標（_h 雜湊＋cards [x,y,z,把握]＋thresholds；只在烘焙時讀，頁面執行期不載這份 600 KB）
 //
 // 規則：王牌改 NEO 星數 7/1/1、1/7/1、1/1/7；非王牌組不得用到 apex 卡；每張卡一定要有能開的封面與試聽，否則失敗（exit 1）。
 // 從 $S/design/ref/build-cards.mjs 擴寫。
@@ -65,6 +71,16 @@ const COVER_OVERRIDES = fs.existsSync(path.join(HERE, 'cover-overrides.json')) ?
 for (const k of Object.keys(COVER_OVERRIDES)) if (k.startsWith('_')) delete COVER_OVERRIDES[k];
 const SUBGENRES = fs.existsSync(ROOT + 'card-subgenres.json') ? JSON.parse(fs.readFileSync(ROOT + 'card-subgenres.json', 'utf8')) : {};
 const subsOf = (artist, album) => (SUBGENRES[artist + '|' + album] || []).slice();
+// 頻率：跟 dip-tune.js 同一套（fnv＝:57、cellOf＝:65，門檻讀檔內 thresholds、不寫死）；鍵＝catalogId（下面，跟主站 cardIdOf 同一條）
+const MOODS = JSON.parse(fs.readFileSync(ROOT + 'data/mood/card-moods.json', 'utf8'));
+if (!Array.isArray(MOODS._h) || MOODS._h.length !== MOODS.cards.length || !MOODS.thresholds) throw new Error('data/mood/card-moods.json 格式不對（_h／cards／thresholds）');
+const MOOD_BY_HASH = new Map();
+MOODS._h.forEach((h, i) => { if (MOODS.cards[i]) MOOD_BY_HASH.set(h, MOODS.cards[i]); });
+const fnv = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
+const MT = MOODS.thresholds;
+const cellOf = (x, y, z) => (x >= MT.x ? (y >= MT.y ? (z >= MT.z ? 'boil' : 'charge') : (z >= MT.z ? 'lift' : 'crisp'))
+                                       : (y >= MT.y ? (z >= MT.z ? 'languid' : 'decay') : (z >= MT.z ? 'calm' : 'still')));
+const tuneOf = (artist, album) => { const m = MOOD_BY_HASH.get(fnv(catalogId(artist, album))); return m ? cellOf(m[0], m[1], m[2]) : null; };
 
 // Apple 索引的鍵：與 dip-player 同一套正規化
 const norm = v => String(v || '').normalize('NFKD').toLowerCase().replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
@@ -114,7 +130,8 @@ for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) fo
     .concat(year < 1980 ? ['y:<1980'] : year >= 2000 ? ['y:>=2000'] : [])
     .concat(region !== 'xx' ? ['r:' + region] : []);
   cards[id] = { id, artist, album, year, genres: genres || [], region, c: st[0], o: st[1], h: st[2], tier: aceTier,
-    coverUrl: null, localCover: null, previewUrl, tags, pitch: null, subs: subsOf(artist, album) };
+    coverUrl: null, localCover: null, previewUrl, tags, pitch: null, subs: subsOf(artist, album), tune: tuneOf(artist, album) };
+  if (!cards[id].tune) problems.push('NO-TUNE ' + s + ' [' + group + ']（data/mood/card-moods.json 查不到；catalogId=' + catalogId(artist, album) + '）');
 }
 // 金邊池（店主私藏）：gold 標記
 for (const id of Object.keys(cards)) if (groupsOf[id].includes('gold')) cards[id].gold = true;
@@ -254,8 +271,9 @@ if (REUSE) {
   const { createRequire } = await import('module');
   const existing = createRequire(import.meta.url)(path.join(LAB, 'cards.js'));
   for (const k of Object.keys(cards)) delete cards[k];
-  for (const [k, v] of Object.entries(existing)) cards[k] = Object.assign({}, v, { subs: subsOf(v.artist, v.album) });
+  for (const [k, v] of Object.entries(existing)) cards[k] = Object.assign({}, v, { subs: subsOf(v.artist, v.album), tune: tuneOf(v.artist, v.album) });
   problems.length = 0;
+  for (const [k, v] of Object.entries(cards)) if (!v.tune) problems.push('NO-TUNE ' + k + '（data/mood/card-moods.json 查不到；catalogId=' + catalogId(v.artist, v.album) + '）');
 }
 const ids = Object.keys(cards);
 const fsCovers = REUSE ? {} : await batchGetCovers(ids);
@@ -381,7 +399,7 @@ if (!COVERS_ONLY) await bakeLinks(cards, ids);
 console.log('link overrides:', applyLinkOverrides(cards), '(LINK_OVERRIDES)');
 
 // ---- 寫檔 ----
-const FIELDS = ['id', 'artist', 'album', 'year', 'genres', 'region', 'c', 'o', 'h', 'tier', 'coverUrl', 'localCover', 'previewUrl', 'tags', 'pitch', 'gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs'];
+const FIELDS = ['id', 'artist', 'album', 'year', 'genres', 'region', 'c', 'o', 'h', 'tier', 'coverUrl', 'localCover', 'previewUrl', 'tags', 'pitch', 'gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs', 'tune'];
 const OPTIONAL = new Set(['gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs']);
 const lines = ids.map(id => {
   const c = cards[id]; const o = {};
@@ -393,7 +411,9 @@ const js = `/* cards.js：由 tools/bake-cards.mjs 產生，請勿手改（改 t
  *   node game-lab/tools/bake-cards.mjs
  * ${ids.length} 張；三軸＝seed 原值（王牌改 7/1/1 系列）；封面＝Firestore card_catalog 預烘（CAA front-250／scdn 300px／mzstatic 300x300bb），
  * 本機有的另給 localCover；tools/cover-overrides.json 的卡用覆寫的原版封面（不給 localCover）；previewUrl＝Apple 固定試聽；
- * appleUrl／spotifyUrl／bandcampUrl＝唱片資訊的平台鈕（有就烘）；subs＝card-subgenres.json 的子曲風路徑（箱子規則 sub 用，有就烘）。分組：${groupsSummary}
+ * appleUrl／spotifyUrl／bandcampUrl＝唱片資訊的平台鈕（有就烘）；subs＝card-subgenres.json 的子曲風路徑（箱子規則 sub 用，有就烘）。
+ * tune＝data/mood/card-moods.json（_v ${MOODS._v}、_built ${MOODS._built}）判的八格頻率（跟主站頻率光譜同一格；只上色、不進戰鬥規則）：${(() => { const n = {}; for (const id of ids) n[cards[id].tune] = (n[cards[id].tune] || 0) + 1; return Object.entries(n).sort((a, b) => b[1] - a[1]).map(([k, v]) => k + ' ' + v).join('、'); })()}。
+ * 分組：${groupsSummary}
  */
 (function (root, factory) {
   var cards = factory();
