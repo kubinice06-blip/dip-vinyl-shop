@@ -2926,7 +2926,7 @@
       [['shelf', line('homeShelf')], ['deck', line('homeDeck')], ['console', line('homeConsole')]].map(function (b) { return '<button type="button" class="lb-btn key" data-a="' + b[0] + '">' + esc(b[1]) + '</button>'; }).join('') +
       '</div><div class="lb-homenp" aria-live="polite"></div>' +
       (own.length ? '<p class="sub">' + esc(SU('shelfOwn', { n: own.length })) + (save.want.length ? '・' + esc(fill(line('homeWantN'), { n: save.want.length })) : '') + '</p>' : '') + '</div>';
-    panel.addEventListener('click', function (e) {
+    qs('.lb-pad', panel).addEventListener('click', function (e) {   // 掛在這個畫面自己的元素上（#panel 每個畫面共用，掛在它上面會一次一次疊）
       var b = e.target.closest && e.target.closest('[data-a]'); if (!b || UI.screen !== 'home') return;
       var a = b.getAttribute('data-a');
       homeAction(a === 'shelf' ? 'shelf:own' : a === 'deck' ? 'deck:play' : a === 'console' ? 'tune' : '');
@@ -2937,12 +2937,9 @@
       if (UI.screen !== 'home' || UI.homeTok !== tok) return;
       UI.going = false;
       stg('interact', 'home');
-      var fromIn = p.from === 'tune';
-      place('p', fromIn ? 'atConsole' : 'door', 'player');
+      place('p', 'door', 'player');
       homeSyncDeck();
-      if (!fromIn) stgP('walk', 'p', ['in'], 120);
-      // 第一次開控制台要下載三樣（three 0.6 MB、座標 0.6 MB、面板圖 0.7 MB）：進房間就先背景抓 three 與座標，點控制台時少等一點
-      if (!UI.tunePre) { UI.tunePre = true; setTimeout(function () { if (UI.screen === 'home') tunePrefetch(); }, 1500); }
+      stgP('walk', 'p', ['in'], 120);
     });
     if (f && f.music && f.music.onChange) { UI.offs.push(f.music.onChange(homeSyncDeck)); if (f.onSound) UI.offs.push(f.onSound(homeSyncDeck)); }
     var iv = setInterval(homeSyncDeck, 1500); UI.offs.push(function () { clearInterval(iv); });
@@ -2955,6 +2952,8 @@
     sfx('tick');
     qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); }); syncFloat();
     var tok = UI.homeTok = (UI.homeTok | 0) + 1;
+    // 第一次開控制台要下載四樣（dip-tune 0.2 MB、three 0.6 MB、座標 0.6 MB、面板圖 0.7 MB）：一點控制台就先抓程式（走過去的路上）；不在進房間時就抓：只來聽唱片的人不用多下載
+    if (action === 'tune') tunePrefetch();
     stgP('walk', 'p', [to], 130).then(function () {
       if (UI.screen !== 'home' || UI.homeTok !== tok || UI.tune) return;
       if (action === 'shelf:own') openHomeShelf(0);
@@ -3030,9 +3029,9 @@
     if (!UI.tuneLibP) UI.tuneLibP = loadScript('../dip-tune.js?v=' + TUNE_V).then(function () { if (!W.DipTune) throw new Error('DipTune 沒載到'); return W.DipTune; }, function (e) { UI.tuneLibP = null; throw e; });
     return UI.tuneLibP;
   }
-  // 進房間 1.5 秒後背景先抓：three 與座標檔（瀏覽器快取；dip-tune 自己 fetch 時就是快取裡的）
+  // 點了控制台、人還在走過去：先抓 dip-tune.js 與 three（座標檔與面板圖等 DipTune.start() 建星圖時才抓，跟 three 一起等）
   function tunePrefetch() {
-    try { threeReady(); fetch('../data/mood/card-moods.json').catch(function () {}); } catch (_) {}
+    try { threeReady(); tuneLib().catch(function () {}); } catch (_) {}
   }
   function catalogId(c) { return ((c.artist || '') + '|' + (c.album || '')).toLowerCase().replace(/\//g, '-').trim(); }   // 主站 cardIdOf＝bake-cards.mjs:85 同一條
   function tuneCardOf(o) {   // 星圖那張（{artist, album}）→ 遊戲的卡
@@ -3153,9 +3152,9 @@
     stg('freeze', false);
     var sh = UI.stageHost;
     sh.classList.remove('lb-zoom-in', 'lb-zoom-fade', 'lb-zoomed');
+    if (t.focus && t.focus.isConnected && t.focus !== D.body) try { t.focus.focus({ preventScroll: true }); } catch (_) {}   // 焦點回到開控制台之前的那顆鈕（讀屏、鍵盤）
     if (instant || rm()) { sh.style.transformOrigin = ''; homeSyncDeck(); return Promise.resolve(); }
     sh.classList.add('lb-zoom-out');
-    if (t.focus && t.focus.isConnected) try { t.focus.focus({ preventScroll: true }); } catch (_) {}
     return new Promise(function (res) { setTimeout(function () { sh.classList.remove('lb-zoom-out'); sh.style.transformOrigin = ''; homeSyncDeck(); res(); }, 320); });
   }
 

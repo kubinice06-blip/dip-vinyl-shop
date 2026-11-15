@@ -37,7 +37,7 @@
  "props": [
   {"type": "floor", "layer": "bg", "worn": [], "cols": ["#a3734a", "#9a6b43", "#ab7c51", "#93653f", "#b08254", "#9f7048", "#986a44", "#a8794e"], "seam": "#5c3b22"},
   {"type": "backWall", "layer": "bg", "paint": "#4f6f5a", "wainscot": 22},
-  {"type": "door", "id": "door", "layer": "wall", "style": "home", "x": 10, "y": 22, "w": 28, "h": 58, "hot": {"label": "回本店", "action": "shop:dip", "rect": [10, 22, 28, 58]}},
+  {"type": "door", "id": "door", "layer": "wall", "style": "home", "x": 10, "y": 22, "w": 28, "h": 58, "hot": {"label": "回店裡", "action": "shop:dip", "rect": [10, 22, 28, 58]}},
   {"type": "ledge", "id": "shelf", "layer": "wall", "x": 46, "y": 40, "n": 6, "rows": 3, "plate": "MY RECORDS", "fill": "owned", "cards": [], "hot": {"label": "唱片架", "action": "shelf:own"}},
   {"type": "speaker", "layer": "wall", "x": 139, "y": 43},
   {"type": "window", "layer": "wall", "style": "home", "x": 156, "y": 16, "w": 40, "h": 30, "curtain": "#c4623f"},

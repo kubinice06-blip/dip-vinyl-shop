@@ -684,7 +684,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | （畫面字） | 你家 | 本規格新寫 | `shops/home.json.name` |
 | （畫面字） | 聆聽室 | 本規格新寫 | `shops/home.json.district` |
-| （畫面字） | 回本店 | 本規格新寫 | `shops/home.json.props[2].hot.label` |
+| （畫面字） | 回店裡 | 本規格新寫 | `shops/home.json.props[2].hot.label` |
 | （畫面字） | 唱片架 | 本規格新寫 | `shops/home.json.props[3].hot.label` |
 | （畫面字） | 唱盤 | 本規格新寫 | `shops/home.json.props[8].hot.label` |
 | （畫面字） | 控制台 | 本規格新寫 | `shops/home.json.props[9].hot.label` |

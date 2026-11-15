@@ -171,26 +171,34 @@ async function runSize(browser, w, h) {
       `隨機＋就這張 → onResult 遊戲卡 ${last4}（停的那張 ${got.gid}；是你的 ${owned4}）→ 收回 ${closed4}、唱盤 ${deck4 === last4 ? '換成那張' : deck4}`);
 
     // 再開（DOM 鈕）→ 關收藏開關 → 挑一張不是你的 → 想要清單 +1、星圖還開著 → ↩ 收回
-    await jsClick(page, '#panel .lb-homebtns [data-a=console]');
-    const re5 = await page.waitForFunction(() => window.__lab.home.tune() && window.DipTune.state.visible && !document.getElementById('labTune').hidden, null, { timeout: 15000 }).then(() => true, () => false);
-    await sleep(900);
-    const wantBefore = await page.evaluate(() => window.__lab.home.want().length);
-    const w5 = await page.evaluate(async () => {
-      document.querySelector('#labTune #tuneMineBtn').click();
-      await new Promise(r => setTimeout(r, 500));
-      const mineOff = !window.DipTune.mine.on, owned = new Set(window.__lab.home.owned());
-      let pc = null;
-      for (let k = 0; k < 30; k++) { window.DipTune.randomPick(); await new Promise(r => setTimeout(r, 900)); pc = window.DipTune.previewCard; if (pc && !owned.has(pc._gid)) break; }
-      const seen = []; const mo = new MutationObserver(() => document.querySelectorAll('.lb-toast').forEach(t => { if (!seen.includes(t.textContent)) seen.push(t.textContent); })); mo.observe(document.getElementById('app'), { childList: true });
-      const b = document.querySelector('#labTune #tuneDraw'); if (b && !b.disabled) b.click();
-      await new Promise(r => setTimeout(r, 900)); mo.disconnect();
-      const last = window.__lab.home.last(), C = window.DipLabContent.cards;
-      return { mineOff, gid: last, owned: last ? owned.has(last) : null, album: last && C[last] ? C[last].album : '', want: window.__lab.home.want(), tune: window.__lab.home.tune(), toast: seen.join('｜') };
-    });
+    //   就這張會把「停在格子邊上」的那張換成目前頻率最近的（主站同一套）：換到的剛好是你的＝放上唱盤、收回；那就再開一次重挑（最多 4 次）
+    let re5 = true, w5 = null, wantBefore = 0;
+    for (let attempt = 0; attempt < 4; attempt++) {
+      await jsClick(page, '#panel .lb-homebtns [data-a=console]');
+      re5 = re5 && await page.waitForFunction(() => window.__lab.home.tune() && window.DipTune.state.visible && !document.getElementById('labTune').hidden, null, { timeout: 15000 }).then(() => true, () => false);
+      await sleep(900);
+      wantBefore = await page.evaluate(() => window.__lab.home.want().length);
+      w5 = await page.evaluate(async () => {
+        if (window.DipTune.mine.on) document.querySelector('#labTune #tuneMineBtn').click();
+        await new Promise(r => setTimeout(r, 500));
+        const mineOff = !window.DipTune.mine.on, owned = new Set(window.__lab.home.owned());
+        let pc = null;
+        for (let k = 0; k < 30; k++) { window.DipTune.randomPick(); await new Promise(r => setTimeout(r, 900)); pc = window.DipTune.previewCard; if (pc && !owned.has(pc._gid)) break; }
+        const seen = []; const mo = new MutationObserver(() => document.querySelectorAll('.lb-toast').forEach(t => { if (!seen.includes(t.textContent)) seen.push(t.textContent); })); mo.observe(document.getElementById('app'), { childList: true });
+        const b = document.querySelector('#labTune #tuneDraw'); if (b && !b.disabled) b.click();
+        await new Promise(r => setTimeout(r, 900)); mo.disconnect();
+        const last = window.__lab.home.last(), C = window.DipLabContent.cards;
+        return { mineOff, gid: last, owned: last ? owned.has(last) : null, album: last && C[last] ? C[last].album : '', want: window.__lab.home.want(), tune: window.__lab.home.tune(), toast: seen.join('｜'), tries: 0 };
+      });
+      w5.tries = attempt + 1;
+      if (w5.owned === false || !w5.gid) break;
+      await page.waitForFunction(() => !window.__lab.home.tune(), null, { timeout: 6000 }).catch(() => {});   // 換到你的：已經收回、放上唱盤；再開一次
+      await sleep(600);
+    }
     await page.evaluate(() => document.querySelector('#labTune #tuneBack').click());
     const closed5 = await page.waitForFunction(() => !window.__lab.home.tune() && document.getElementById('labTune').hidden, null, { timeout: 6000 }).then(() => true, () => false);
     record(5, size, re5 && w5.mineOff && w5.gid && w5.owned === false && w5.want.length === wantBefore + 1 && w5.want[w5.want.length - 1] === w5.gid && w5.tune && w5.toast.includes('《' + w5.album + '》加進想要清單') && closed5,
-      `再開 ${re5}；關收藏開關 ${w5.mineOff}；挑不是你的 ${w5.gid} → 想要清單 ${wantBefore}→${w5.want.length}、星圖還開著 ${w5.tune}、吐司「${w5.toast}」；↩ 收回 ${closed5}`);
+      `再開 ${re5}（第 ${w5.tries} 次）；關收藏開關 ${w5.mineOff}；挑不是你的 ${w5.gid} → 想要清單 ${wantBefore}→${w5.want.length}、星圖還開著 ${w5.tune}、吐司「${w5.toast}」；↩ 收回 ${closed5}`);
 
     // ---- 6. 收回後店景照常、門回本店
     await sleep(500);
@@ -204,6 +212,7 @@ async function runSize(browser, w, h) {
     await checkScroll('收回後');
     const tapDoor = await tapHot(page, hh => hh.id === 'door');
     const back6 = await waitScreen(page, 'title', 10000) && await page.waitForFunction(() => window.__lab.stage.shopId === 'dip' && !window.__lab.going(), null, { timeout: 8000 }).then(() => true, () => false);
+    await sleep(700);   // 標題的鏡頭與面板剛換上的那一兩格會多出幾 px（從台北回店裡也一樣），等停下來再量
     await checkScroll('回本店');
     record(6, size, !s6.frozen && s6.frames >= 3 && s6.hidden && !/zoom/.test(s6.zoom) && !s6.cls && tapShelf6 && sh6 && tapDoor && back6,
       `收回後：迴圈在跑 ${!s6.frozen}（0.7 s ${s6.frames} 格）、星圖藏起 ${s6.hidden}、舞台沒放大 ${!/zoom/.test(s6.zoom)}；再點唱片架面板 ${sh6}；真點門 → 標題、舞台回本店 ${back6}`);
