@@ -42,13 +42,25 @@
       return [it.label + ' ' + it.id, sp];
     });
   }
+  // 格子多寬多高：用 compose 量這一頁每一格的實際範圍（ax＝腳底左邊、w−ax＝右邊、ay＝頭頂，都含 1 格黑框）＋2 格留白。
+  // 下限半寬 26、頭頂 55 美術格（帆布袋／唱片袋正背面會伸到 25，馬尾、爆炸頭、雙馬尾 22）；以後零件更寬就自動加寬，不會被切掉一截
+  function cellSize(list, cols) {
+    var hw = 26, up = 55;
+    list.forEach(function (r) {
+      cols.forEach(function (c) {
+        var R = CH.compose(r[1], c[3], c[4], { dir: c[1], flip: c[2] });
+        hw = Math.max(hw, R.ax + 2, R.w - R.ax + 2); up = Math.max(up, R.ay + 2);
+      });
+    });
+    return { W: 2 * hw * S, H: (up + 5) * S };
+  }
   function draw() {
-    var cols = kind === 'random' ? WALK : COLS, t = document.getElementById('t');
+    var cols = kind === 'random' ? WALK : COLS, t = document.getElementById('t'), list = rows(), C = cellSize(list, cols);
     t.innerHTML = '<tr><th></th>' + cols.map(function (c) { return '<th>' + c[0] + '</th>'; }).join('') + '</tr>';
-    rows().forEach(function (r) {
+    list.forEach(function (r) {
       var tr = document.createElement('tr'), l = document.createElement('td'); l.className = 'l'; l.textContent = r[0]; tr.appendChild(l);
       cols.forEach(function (c) {
-        var td = document.createElement('td'), cv = document.createElement('canvas'), W = 40 * S, H = 60 * S; cv.width = W; cv.height = H;
+        var td = document.createElement('td'), cv = document.createElement('canvas'), W = C.W, H = C.H; cv.width = W; cv.height = H;
         var g = cv.getContext('2d'); g.fillStyle = '#6b5440'; g.fillRect(0, H - 5 * S, W, 5 * S);
         CH.render(g, r[1], c[3], c[4], W / 2, H - 5 * S, { scale: 3 * S, dir: c[1], flip: c[2] });
         td.appendChild(cv); tr.appendChild(td);
