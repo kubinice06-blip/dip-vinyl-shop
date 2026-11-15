@@ -19,6 +19,7 @@
 //   13 沒有 run（標題）：抽屜只能翻、沒有買的鈕
 //   15 包包沒滿、錢不夠但賣一張就夠（SPEC §2.5.6 第 3 點）：鈕可按（「買 $400／先賣一張」）→ 子面板「錢不夠：先賣一張」、賣了也不夠的那張不給選 → 賣一張買到、包包張數不變；
 //      櫃檯配件同理（「先賣一件」，配件沒滿 3 件）
+//   16 走路朝向（v5 第五項）：browse → 爵士箱一路正面、翻箱正面；爵士箱 → 櫃檯最後一段往上（約 60°）畫背面（pos('p').dir 逐格取樣）、到了 faceTo 回正面
 //   14 所有面板（箱子、賣回、特價兩種、櫃檯、配件賣回、錢不夠先賣）不捲出畫面、鈕 ≥44 高；主控台 0 錯誤（最後跑）
 //
 // index.html（整合後：ui.js 已經 configure 經濟介面、載入 econ.css／econ.js；沒接上就印 SKIP、不算失敗；ECON_INDEX=0 不跑）：
@@ -29,6 +30,9 @@
 //   25 真點特價箱（已挑過）→ 買的模式（每格 $100–300、鈕「挑一到三張」）；✕ 關掉；整段主控台 0 錯誤、本機檔案沒有 4xx
 //   26 舊存檔（v5 店面改版前：這一輪的貨有 pop、沒有 citypop／indierock／indiepop）→ 載入時只補缺的區、丟掉 pop（engine.fixBins）；
 //      真點 INDIE ROCK → 抽屜有貨（不是「這一箱賣完了」）；其他區的貨原樣
+//   27 到站朝向（v5 第五項審查修正）：你站在對決位 duelP → 回來客（go('night')）往上走回 browse：途中有背面、到了 0.5 秒內轉正面、之後一直正面；
+//      第一位客人在 wait → 回來客走回門邊 atdoor（最後一段往上）：到了轉正面；接連走兩段往上（walk().then(walk)）中間那站不閃正面；
+//      點試聽機 → 走到試聽桌 listen：到了是背面（面向桌子、戴耳機）
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen } from './e2e-lib.mjs';
 
@@ -434,6 +438,32 @@ async function runSize(browser, w, h) {
       record(15, size, okCard && okRelic, sCard + '；' + sRelic);
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
     });
+    // ---------------- 16：走路朝向（v5 第五項）：往上走那段畫背面、往下／橫走正面；到箱子前翻箱、到櫃檯 faceTo 都回正面 ----------------
+    await T(16, async () => {
+      await reset(page, { mode: 'night', money: 5000, bag: 2, relics: 2 });
+      const walkSample = k => page.evaluate(k => {
+        const st = window.H.stage; window.__fd = [];
+        const f = () => { const a = st.pos('p'); window.__fd.push({ x: a.x, y: a.y, dir: a.dir, flip: a.flip, open: !!document.querySelector('.ec-drawer') }); if (window.__fd.length < 3000 && !(window.__fd.length > 3 && document.querySelector('.ec-drawer'))) window.__fdr = requestAnimationFrame(f); };
+        window.__fdr = requestAnimationFrame(f); window.H.open(k);
+      }, k);
+      const moves = smp => { const out = []; for (let i = 1; i < smp.length; i++) { const dx = smp[i].x - smp[i - 1].x, dy = smp[i].y - smp[i - 1].y; if (Math.hypot(dx, dy) > 0.5) out.push({ dx, dy, dir: smp[i].dir, th: Math.atan2(Math.abs(dy), Math.abs(dx)) * 180 / Math.PI }); } return out; };
+      // browse → 爵士箱（往下、往左）：一路正面；到了翻箱＝正面
+      await walkSample('bin:jazz'); await waitOpen(page, 15000);
+      const s1 = await page.evaluate(() => { cancelAnimationFrame(window.__fdr); return { smp: window.__fd, at: window.H.stage.pos('p') }; });
+      const m1 = moves(s1.smp);
+      await page.evaluate(() => window.DipLabEcon.close()); await sleep(500);
+      // 爵士箱 → 櫃檯（最後一段往右上約 60°）：那段要畫背面
+      await walkSample('relic'); await waitOpen(page, 15000);
+      const s2 = await page.evaluate(() => { cancelAnimationFrame(window.__fdr); return { smp: window.__fd, at: window.H.stage.pos('p') }; });
+      const m2 = moves(s2.smp), up = m2.filter(m => m.dy < 0 && m.th >= 60), backs = m2.filter(m => m.dir === 'back');
+      const down = m1.concat(m2).filter(m => m.dy > 0.5 && m.th >= 55), flat = m1.concat(m2).filter(m => m.th <= 30);
+      const sumUp = backs.reduce((a, m) => a + m.dy, 0), sumX = backs.reduce((a, m) => a + Math.abs(m.dx), 0);
+      const okBack = up.length >= 2 && up.filter(m => m.dir === 'back').length >= up.length - 1 && sumUp < 0 && -sumUp > sumX;
+      const okFront = down.every(m => m.dir === 'front') && flat.filter(m => m.dir === 'back').length <= 1 && m1.length > 3;
+      const okStop = s1.at.dir === 'front' && s2.at.dir === 'front';
+      await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
+      record(16, size, okBack && okFront && okStop, `往上 ${up.length} 步（背面 ${up.filter(m => m.dir === 'back').length}）；背面那幾步 Σdy ${Math.round(sumUp)}、Σ|dx| ${Math.round(sumX)}；往下 ${down.length} 步全正面 ${down.every(m => m.dir === 'front')}；橫走 ${flat.length} 步、背面 ${flat.filter(m => m.dir === 'back').length}；到箱子前 ${s1.at.dir}、到櫃檯 ${s2.at.dir}`);
+    });
     // ---------------- 14：所有面板不捲出畫面、主控台 0 錯誤 ----------------
     await T(14, async () => {
       const lines = panels.map(([n, m]) => panelOk(m, n));
@@ -585,6 +615,64 @@ async function runIndex(browser, w, h) {
       const same = JSON.stringify([r0.jazz, r0.rock]) === JSON.stringify([before.jazz, before.rock]);
       record(26, size, keysOk && same && r0.ir > 0 && r0.ip > 0 && r0.cp > 0 && d.dbg.kind === 'bin' && d.dbg.key === 'indierock' && d.dbg.ids.length === r0.ir && !d.empty,
         `載入後的區 ${r0.keys.length}（pop 丟掉 ${!r0.keys.includes('pop')}、跟 bins.js 一樣 ${keysOk}）；補貨 INDIE ROCK ${r0.ir}／INDIE POP ${r0.ip}／CITY POP ${r0.cp} 張；爵士、搖滾原樣 ${same}；真點 INDIE ROCK → 抽屜 ${d.dbg.kind}/${d.dbg.key} ${d.dbg.ids.length} 張${d.empty ? '「' + d.empty + '」' : ''}`);
+    });
+    await T(27, async () => {
+      // rAF 取樣 id 的位置與朝向，直到 until() 成立後再多取 extraMs（看到站後有沒有轉、轉了有沒有又變回去）
+      const sample = (ids, kick, extraMs, maxMs = 12000) => page.evaluate(([ids, kick, extraMs, maxMs]) => new Promise(res => {
+        const st = window.__lab.stage, out = [], t0 = performance.now(); let doneAt = 0;
+        const f = () => {
+          const t = performance.now() - t0, o = { t };
+          for (const id of ids) { const a = st.pos(id); o[id] = a ? { x: a.x, y: a.y, dir: a.dir } : null; }
+          out.push(o);
+          const moving = ids.some(id => { const a = st.shop.pos(id), b = out.length > 1 ? out[out.length - 2][id] : null; return a && b && Math.hypot(a.x - b.x, a.y - b.y) > 0.01; });
+          if (!moving && t > 400 && !doneAt) doneAt = t;
+          if (moving) doneAt = 0;
+          if ((doneAt && t - doneAt > extraMs) || t > maxMs) return res(out);
+          requestAnimationFrame(f);
+        };
+        requestAnimationFrame(f); (new Function(kick))();
+      }), [ids, kick, extraMs, maxMs]);
+      const last = (smp, id) => smp[smp.length - 1][id];
+      // 停下來的那一刻（最後一次移動）之後：多久轉成最後的朝向、之後有沒有再變
+      const settleInfo = (smp, id) => {
+        let k = smp.length - 1; while (k > 0 && smp[k][id] && smp[k - 1][id] && Math.hypot(smp[k][id].x - smp[k - 1][id].x, smp[k][id].y - smp[k - 1][id].y) < 0.01) k--;
+        const stopT = smp[k].t, endDir = last(smp, id).dir; let j = smp.length - 1; while (j > k && smp[j - 1][id].dir === endDir) j--;
+        const backs = smp.slice(0, k + 1).filter((s, i) => i && s[id].dir === 'back' && s[id].y < smp[i - 1][id].y - 0.01).length;
+        return { stopT, turnMs: Math.round(smp[j].t - stopT), endDir, backs, flips: smp.slice(k).filter((s, i, a) => i && s[id].dir !== a[i - 1][id].dir).length };
+      };
+      // (1) 打完客人：你在 duelP → 回來客
+      await page.evaluate(() => { const st = window.__lab.stage; st.put('p', 'duelP'); });
+      await sleep(300);
+      const s1 = await sample(['p'], "window.__lab.go('night')", 1200);
+      const i1 = settleInfo(s1, 'p'), p1 = last(s1, 'p');
+      // (2) 第一位客人在 wait、你在 browse → 回來客：他走回門邊
+      await page.evaluate(() => { const st = window.__lab.stage, r = window.__lab.run; r.shop.firstGuestInside = true; st.put('p', 'browse'); window.__lab.go('night'); });   // 先讓他照常進店（有造型）
+      await sleep(1500);
+      await page.evaluate(() => { window.__lab.stage.put('f', 'wait'); });
+      await sleep(300);
+      const hasF = await page.evaluate(() => window.__lab.run.idx === 0 && window.__lab.stage.has('f'));
+      const s2 = await sample(['f'], "window.__lab.go('night')", 1200);
+      const i2 = settleInfo(s2, 'f'), f2 = last(s2, 'f');
+      // (3) 接連走：duelP → [202,288] → browse，兩段都往上；中間那站不閃正面
+      await page.evaluate(() => { window.__lab.stage.put('p', 'duelP'); });
+      await sleep(300);
+      const s3 = await sample(['p'], "const st = window.__lab.stage; st.walk('p', [[202, 288]], 54).then(() => st.walk('p', ['browse'], 54));", 800);
+      const firstBack = s3.findIndex(s => s.p.dir === 'back'), stop3 = settleInfo(s3, 'p');
+      const flash = s3.filter((s, i) => i > firstBack && firstBack >= 0 && s.t < stop3.stopT - 1 && s.p.dir !== 'back').length;
+      // (4) 試聽機 → 走到 listen：到了背面（之後一直背面）
+      const s4 = await sample(['p'], "window.__lab.stageAction('listen')", 1000);
+      const i4 = settleInfo(s4, 'p'), p4 = last(s4, 'p');
+      await page.evaluate(() => { const x = document.querySelector('.lb-sheet.booth [data-a=close], .booth [data-a=close]'); if (x) x.click(); });
+      await sleep(400);
+      const L = await page.evaluate(() => ({ browse: window.__lab.stage.spot('browse'), atdoor: window.__lab.stage.spot('atdoor'), listen: window.__lab.stage.spot('listen') }));
+      const at = (q, sp) => q && sp && Math.abs(q.x - sp[0]) <= 1 && Math.abs(q.y - sp[1]) <= 1;
+      const ok1 = at(p1, L.browse) && i1.backs >= 2 && i1.endDir === 'front' && i1.turnMs <= 500 && i1.flips === 1;
+      const ok2 = hasF && at(f2, L.atdoor) && i2.backs >= 1 && i2.endDir === 'front' && i2.turnMs <= 500 && i2.flips <= 1;
+      const ok3 = firstBack >= 0 && flash === 0 && stop3.endDir === 'front';
+      const ok4 = at(p4, L.listen) && i4.endDir === 'back' && i4.flips <= 1;
+      record(27, size, ok1 && ok2 && ok3 && ok4,
+        `duelP→回來客：到 browse ${at(p1, L.browse)}、途中背面 ${i1.backs} 格、停下後 ${i1.turnMs} ms 轉 ${i1.endDir}（之後換向 ${i1.flips} 次）；` +
+        `門邊客人 wait→atdoor：有客人 ${hasF}、到了 ${at(f2, L.atdoor)}、途中背面 ${i2.backs} 格、${i2.turnMs} ms 轉 ${i2.endDir}；接連走兩段往上：中間閃正面 ${flash} 格、最後 ${stop3.endDir}；試聽桌：到了 ${at(p4, L.listen)}、${p4 && p4.dir}`);
     });
     return true;
   } finally {

@@ -7,6 +7,7 @@
 //   3. 每位 NPC（e0…e7、boss、guard、digger、heretic、owner 與 content.js 的客人）＝roguelike SPR 一格不差
 //   4. GBA 修飾不改臉：每格 3×3 的正中間＝原色；多出來的只有外圍描邊
 //   5. 零件目錄（數量、指定款式、繁中 label、每款畫得出來而且彼此不同）、姿勢（每格都畫得出、跟站姿不同、翻面、背面）
+//   6b. 朝向 dir（'front'｜'back'，舊 back 照收）；背面瑕疵：馬尾只剩正中一條、破洞牛仔褲背面沒洞、單肩包換邊、領結看不到、吊帶褲沒護胸、頭巾結在正中
 //   6. random 同 seed 同人、normalize、toDipChar、render（假 ctx）、svg、錨點、只掛一個全域
 //   7. charedit.js 純邏輯；瀏覽器（:8765 有開才跑）：捏人畫面 390×664／375×548／360×640 不捲、點得動、完成回傳 v2 spec
 import path from 'path';
@@ -230,6 +231,71 @@ await section('6 姿勢', () => {
   // 舊手勢、P2 名稱對得到
   Object.keys(CH.ARM).concat(Object.keys(CH.P2POSE)).forEach(k => { const v = CH.ARM[k] || CH.P2POSE[k]; ok(CH.POSES[v[0]] > v[1], '對照 ' + k); });
   ok(CH.compose({}, 'wind', 0).w > 0 && CH.compose({}, 'browse', 0).w > 0, '直接給舊名稱也畫得出來');
+});
+
+// v5 第五項第一步：opts.dir（'front'｜'back'；舊的 back:true 照收）＋背面瑕疵（馬尾兩條、破洞牛仔褲背面有洞、單肩包沒換邊、領結、吊帶褲護胸、頭巾結）
+await section('6b 朝向 dir、背面瑕疵', () => {
+  ok(Array.isArray(CH.DIRS) && CH.DIRS[0] === 'front' && CH.DIRS.includes('back'), 'DIRS 有 front、back', CH.DIRS);
+  const H = (s, p, f, o) => hashData(CH.compose(s, p, f, o));
+  const specs = CH.cast().map(id => CH.npc(id)); for (let i = 0; i < 12; i++) specs.push(CH.random('dir' + i));
+  specs.forEach((s, si) => Object.keys(CH.POSES).forEach(p => { for (let f = 0; f < CH.POSES[p]; f++) {
+    eq(H(s, p, f, { dir: 'back' }), H(s, p, f, { back: true }), 'dir:back＝back:true ' + p + f + ' #' + si);
+    eq(H(s, p, f, { dir: 'back', flip: true }), H(s, p, f, { back: true, flip: true }), 'dir:back＋flip＝back:true＋flip ' + p + f + ' #' + si);
+    eq(H(s, p, f, { dir: 'front' }), H(s, p, f, {}), 'dir:front＝預設 ' + p + f + ' #' + si);
+    eq(H(s, p, f, { dir: 'front', back: true }), H(s, p, f, {}), 'dir 優先於舊的 back ' + p + f + ' #' + si);
+    if (!CH.DIRS.includes('side')) eq(H(s, p, f, { dir: 'side' }), H(s, p, f, {}), '還沒有側面：dir:side 退回正面 ' + p + f + ' #' + si);
+  } }));
+  eq(H({}, 'ko', 0, { dir: 'back' }), H({}, 'ko', 0, {}), '倒地一律正面');
+  ok(H({}, 'walk', 0, { dir: 'back' }) !== H({}, 'walk', 1, { dir: 'back' }), '背面走路兩格不一樣');
+  ok(H({}, 'idle', 0, { dir: 'back' }) !== H({}, 'idle', 0, {}), '背面跟正面不一樣');
+  eq(CH.rows({ hair: 'ponytail' }, 'idle', 0, { dir: 'back' }).rows, CH.rows({ hair: 'ponytail' }, 'idle', 0, { back: true }).rows, 'rows() 也收 dir');
+  ok(CH.anchor({}, 'walk', 0, 'head', { dir: 'back' })[1] < 0, 'anchor() 收 dir');
+  // 平面格（小人格 c,r → hex）
+  const grid = (s, o, pose = 'idle', fr = 0) => CH.compose(s, pose, fr, Object.assign({ mode: 'sprite', plain: true }, o)).grid;
+  const cells = (g, hex) => Object.keys(g).filter(k => g[k] === hex).map(k => k.split(',').map(Number));
+  const RED = hex6(I.LP.r);
+  // 馬尾：背面只有正中那一條、一個髮圈；欄 0–3 沒有頭髮
+  for (const o of [{ dir: 'back' }, { dir: 'back', flip: true }]) for (const [pose, fr] of [['idle', 0], ['walk', 0], ['walk', 1]]) {
+    const s = { hair: 'ponytail', hairColor: 'mustard', topColor: 'w' }, g = grid(s, o, pose, fr), hairC = cells(g, CH.swatch('mustard')), ties = cells(g, RED);
+    ok(hairC.length > 20 && !hairC.some(([c]) => c <= 3 || c >= 12), '馬尾背面：兩側沒有甩出去的頭髮 ' + JSON.stringify(o) + pose + fr, hairC.filter(([c]) => c <= 3 || c >= 12));
+    eq(ties.length, 2, '馬尾背面：只有一個髮圈（正中 2 格） ' + JSON.stringify(o) + pose + fr);
+    ok(ties.every(([c]) => c === 7 || c === 8), '髮圈在正中 ' + JSON.stringify(o) + pose + fr, ties);
+  }
+  { const g = grid({ hair: 'ponytail', hairColor: 'mustard', topColor: 'w' }, {}); ok(cells(g, CH.swatch('mustard')).some(([c]) => c <= 3), '馬尾正面照舊甩在一邊'); }
+  // 破洞牛仔褲：正面膝蓋有洞，背面（站、走兩格、翻面）沒有
+  { const skin = CH.swatch('s'), s = { bottom: 'jeans', bottomColor: 'denim', topColor: 'w' };
+    ok(cells(grid(s, {}), skin).some(([, r]) => r === 13), '破洞牛仔褲正面有洞');
+    for (const o of [{ dir: 'back' }, { dir: 'back', flip: true }]) for (const [pose, fr] of [['idle', 0], ['idle', 1], ['walk', 0], ['walk', 1]]) {
+      const g = grid(s, o, pose, fr);
+      ok(!cells(g, skin).some(([, r]) => r >= 12), '破洞牛仔褲背面沒有洞 ' + JSON.stringify(o) + pose + fr, cells(g, skin).filter(([, r]) => r >= 12));
+      ok(cells(g, CH.swatch('denim')).filter(([, r]) => r >= 12).length >= 8, '背面還是有褲子 ' + JSON.stringify(o) + pose + fr);
+    }
+    const w0 = grid(s, { dir: 'back' }, 'walk', 0), shoes = cells(w0, CH.swatch('k')).filter(([, r]) => r === 13);
+    ok(shoes.length >= 3, '背面走路：抬起來那隻鞋在第 13 列', shoes);
+  }
+  // 單肩的唱片袋、帆布袋：背面換到另一邊（跟斜背包一樣）
+  for (const [bag, frontLeft] of [['recordbag', false], ['tote', true]]) {
+    const s = { bag, bagColor: 'r', topColor: 'w' }, f = cells(grid(s, {}), RED), b = cells(grid(s, { dir: 'back' }), RED);
+    const left = xs => xs.length && xs.every(([c]) => c <= 3), right = xs => xs.length && xs.every(([c]) => c >= 12);
+    ok(frontLeft ? left(f) : right(f), bag + ' 正面在' + (frontLeft ? '左' : '右'), f);
+    ok(frontLeft ? right(b) : left(b), bag + ' 背面換到另一邊', b);
+  }
+  // 領結：背後看不到；圍巾背面還是繞過後頸
+  ok(!cells(grid({ neck: 'bowtie', neckColor: 'p', topColor: 'w' }, { dir: 'back' }), CH.swatch('p')).length, '領結背面看不到');
+  ok(cells(grid({ neck: 'bowtie', neckColor: 'p', topColor: 'w' }, {}), CH.swatch('p')).length === 2, '領結正面照舊');
+  ok(cells(grid({ neck: 'scarf', neckColor: 'p', topColor: 'w' }, { dir: 'back' }), CH.swatch('p')).length === 8, '圍巾背面＝後頸一條');
+  // 吊帶褲：背面沒有護胸（第 9–10 列不是一整片），兩條吊帶交叉
+  { const s = { bottom: 'overalls', bottomColor: 'r', topColor: 'w' }, f = cells(grid(s, {}), RED), b = cells(grid(s, { dir: 'back' }), RED);
+    const row = (xs, r) => xs.filter(x => x[1] === r).length;
+    ok(row(f, 9) >= 6 && row(f, 10) >= 6, '吊帶褲正面有護胸', [row(f, 9), row(f, 10)]);
+    ok(row(b, 9) <= 2 && row(b, 10) <= 2 && row(b, 8) === 2, '吊帶褲背面：兩條吊帶交叉、沒有護胸', [row(b, 8), row(b, 9), row(b, 10)]);
+    ok(row(b, 12) >= 8, '吊帶褲背面還是有褲子'); }
+  // 頭巾：背面結在後腦正中，不在一邊
+  { const s = { hat: 'bandana', hatColor: 'r', topColor: 'w' }, f = cells(grid(s, {}), RED), b = cells(grid(s, { dir: 'back' }), RED);
+    ok(f.some(([c, r]) => r === 3 && c >= 12), '頭巾正面結在一邊');
+    ok(!b.some(([c, r]) => r >= 3 && (c <= 5 || c >= 10)) && b.some(([c, r]) => r === 3 && (c === 7 || c === 8)), '頭巾背面結在後腦正中', b.filter(([, r]) => r >= 3)); }
+  // 正面零件一格都沒動（新欄位只在背面用）
+  for (const id of ['jeans', 'overalls']) eq(H({ bottom: id }, 'walk', 0, {}), H({ bottom: id }, 'walk', 0, { dir: 'front' }), id + ' 正面不變');
 });
 
 await section('7 random、normalize、toDipChar、wear', () => {
