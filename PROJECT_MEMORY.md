@@ -1,12 +1,15 @@
 # dip vinyl 專案備忘錄
 
-### 2026-11-15｜dip-vinyl-shop｜主站封面版本清查第二階段：b6 167 張換回原版（累計 1,030 張）
+### 2026-11-15｜dip-vinyl-shop｜主站封面版本清查第二階段：b6 167＋b7 111 張換回原版（累計 1,141 張）；Discogs 參考圖對照 2,855 張跑完
 
 - **接手 11-14 交接**（`scripts/cover-audit/edition-20261114/HANDOFF.md`，規則照 `RULES.md` 不改）：把還沒拿 Discogs 參考圖比對的 CAA 晚期／重發組 1,364 張、Apple／Spotify 組 1,491 張跑完。
 - **找到上一輪「假查無」的真正原因**：Discogs 未登入的搜尋結果 `thumb`／`cover_image` 現在一律是空字串，`dg-worker` 用「有圖」過濾就把全部結果濾光，記成查無（上一輪 dg-cache 只有 70 筆 master 有圖）。改成先挑盤名／藝人、再打 `/masters/<id>`、`/releases/<id>` 拿主圖；另外 `artist=` 只比對主名，藝人在該張用別名（`Richie Beirach*`）或日文名時回 0 筆，補了全文 `q=` 退路。抽查的查無（古典曲目命名、別名）都不是擠爆。
 - **b6 167 張**（Discogs 128＋CAA 39）：CAA 組 c1–c10 對照抓出的不同設計／系列套版／側標／加印字樣，加上被否決的附審查意見重找、「沒有可用候選」找圖。兩票（設計＋品質）都過才換；套用前縮圖 167 張逐張看過。Firestore `card_catalog.coverUrl` 167/167 寫前回讀現值一致、寫後回讀一致；KV `cover6:*` 57 鍵同步 imageUrl 並回讀一致（110 張 KV 沒有鍵）；Discogs 名冊 +128（831→959）。
 - **主線裁定 2 張**：Claude Williamson Trio《Song for My Father》兩輪設計審查矛盾，依取捨 0 取 Discogs 5 版中 4 版用的紅底舞裙（2006 TKCV-35367，無 SACD 標）；Stanley Cowell《Dancers in Love》找圖代理提議改藍白配色，主線改選通行的棕褐配色（2010 VHCD-78058 第 2 張圖），只修掉 SACD 標語條。另有 1 張提議（Tallis《Lamentations》改成 Hilliard ECM 錄音）屬換錄音，主線排除。
-- **主要檔案**：`scripts/cover-audit/data/edition-fix-20261114.json`（batch b6）、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`。
+- **b7 111 張**（Discogs 61＋CAA 50）：CAA 組最後幾段（含「查無」改全文搜尋後新拿到參考圖的 94 張）＋Apple／Spotify 組 1,491 張的 Discogs 參考圖對照（a1–a6）＋第二輪重找。Firestore 111/111 寫前寫後回讀一致；KV 61 鍵回讀一致（50 張 KV 沒有鍵）；Discogs 名冊 +61（959→1,020）。主線改判 2 張保留：The Sweetest Ache《Jaguar》1992 首發本來就按格式分三種配色（NOW 是首發 CD 的紫底）、Peter Kowald Quintet 首版正面是每張不同的手工拼貼，紅框紅心是 FMP 1974/75 起的固定設計。
+- **第二階段總計**：可疑 460 張 → 換 278、查證後保留 98、仍未解決 84（`state/unresolved-2.json`）。CAA 組 871 張、Apple／Spotify 組 1,299 張拿到 Discogs 參考圖；沒有參考圖的 CAA 493、Apple／Spotify 187。卡片身分疑點新增 9 張（`state/identity-notes.json`，換封面等於換錄音的都沒動，例如 Smyth《The Wreckers》綁的是 Mass in D、Cage《Sonatas and Interludes》演奏者未定）。
+- **沒做完**：第一階段已「對照過」的 Apple／Spotify 卡約 1,948 張，當時 Discogs 搜尋正在 bug 中，其實只跟 CAA 參考圖比過；抽 78 張重查，67 張拿到 Discogs 主圖、重新對照全部沒問題。全部重查約 3.5 小時 Discogs，做法寫在 HANDOFF。
+- **主要檔案**：`scripts/cover-audit/data/edition-fix-20261114.json`（batch b6、b7）、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`。
 
 ### 2026-11-15｜dip-vinyl-shop｜game-lab v5 第二項小尾巴：選屬性時相剋圖旁多一行「冷門：剋經典｜怕硬蕊」
 
