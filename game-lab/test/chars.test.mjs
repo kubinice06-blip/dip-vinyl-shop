@@ -8,6 +8,7 @@
 //   4. GBA 修飾不改臉：每格 3×3 的正中間＝原色；多出來的只有外圍描邊
 //   5. 零件目錄（數量、指定款式、繁中 label、每款畫得出來而且彼此不同）、姿勢（每格都畫得出、跟站姿不同、翻面、背面）
 //   6b. 朝向 dir（'front'｜'back'，舊 back 照收）；背面瑕疵：馬尾只剩正中一條、破洞牛仔褲背面沒洞、單肩包換邊、領結看不到、吊帶褲沒護胸、頭巾結在正中
+//   6c. 側面 dir:'side'：正面＋背面逐格摘要不變、67 件零件都有側面且彼此不同、不出格、沒破洞、中線欄 8、朝左＝鏡像、一隻眼、只有站走有側面、走路兩格
 //   6. random 同 seed 同人、normalize、toDipChar、render（假 ctx）、svg、錨點、只掛一個全域
 //   7. charedit.js 純邏輯；瀏覽器（:8765 有開才跑）：捏人畫面 390×664／375×548／360×640 不捲、點得動、完成回傳 v2 spec
 import path from 'path';
@@ -298,6 +299,100 @@ await section('6b 朝向 dir、背面瑕疵', () => {
   for (const id of ['jeans', 'overalls']) eq(H({ bottom: id }, 'walk', 0, {}), H({ bottom: id }, 'walk', 0, { dir: 'front' }), id + ' 正面不變');
 });
 
+// v5 第五項第二步：側面（寶可夢黃版三向：前／後／側，左右互為鏡像，每方向 2 格走路；只有站、走有側面）
+await section('6c 側面 dir:side', () => {
+  ok(CH.DIRS.includes('side'), 'DIRS 有 side', CH.DIRS);
+  const H = (s, p, f, o) => hashData(CH.compose(s, p, f, o));
+  const flat = (s, o, pose = 'idle', fr = 0) => CH.compose(s, pose, fr, Object.assign({ mode: 'sprite', plain: true, dir: 'side' }, o));
+  const cellsOf = R => Object.keys(R.grid).map(k => k.split(',').map(Number));
+  // 正面、背面逐格不變：每款零件 × 每個姿勢每格 × {正、翻、背、背翻、平面}＋全部 NPC＋40 個隨機人的摘要
+  //   （= 側面施工前 bd44488d3 的 chars.js 算出來的；要動正面／背面時才重算這個數）
+  { const base = CH.normalize({ hairColor: 'u', topColor: 'navy', bottomColor: 'denim', skin: 's' }), specs = [];
+    ['hair', 'hat', 'glasses', 'facial', 'top', 'bottom', 'neck', 'bag'].forEach(f => CH.parts[f].forEach(it => specs.push(Object.assign({}, base, { [f]: it.id }))));
+    CH.cast().forEach(id => specs.push(CH.npc(id))); for (let i = 0; i < 40; i++) specs.push(CH.random('front-lock' + i));
+    let h = 2166136261, n = 0;
+    for (const s of specs) for (const p of Object.keys(CH.POSES)) for (let f = 0; f < CH.POSES[p]; f++) for (const o of [{}, { flip: true }, { back: true }, { back: true, flip: true }, { mode: 'sprite', plain: true }]) {
+      for (const ch of hashData(CH.compose(s, p, f, o))) h = Math.imul(h ^ ch.charCodeAt(0), 16777619); n++;
+    }
+    eq([(h >>> 0).toString(16), n], ['6fac13c1', 11790], '正面＋背面逐格＝側面施工前（摘要）'); }
+  // 每件零件都有側面（67 件；光頭沒有頭髮可畫）、畫得出來、同類彼此不同、跟沒選不一樣
+  const SD = I.SIDE, base = CH.normalize({ hairColor: 'u', topColor: 'navy', bottomColor: 'denim', skin: 's' });
+  let n = 0;
+  [['hair', 'hair'], ['hat', 'hat'], ['glasses', 'glasses'], ['facial', 'facial'], ['top', 'top'], ['bottom', 'bottom'], ['neck', 'neck'], ['bag', 'bag']].forEach(([field, kind]) => {
+    const seen = {};
+    CH.parts[field].forEach(it => {
+      const s = Object.assign({}, base, { [field]: it.id });
+      if (it.id !== 'none') {
+        n++;
+        const d = SD[kind][it.id];
+        ok(d && (kind === 'bottom' ? d.legs && d.legs.length === 2 : (d.sd || d.sdb || it.id === 'bald')), '有側面 ' + field + '.' + it.id);
+      }
+      for (const [p, f] of [['idle', 0], ['idle', 1], ['walk', 0], ['walk', 1]]) for (const o of [{ dir: 'side' }, { dir: 'side', flip: true }]) {
+        const R = CH.compose(s, p, f, o); ok(R.w > 10 && R.h >= 38 && R.ax >= 0 && R.ax <= R.w && R.ay >= 0 && R.ay <= R.h, '側面畫得出來 ' + field + '.' + it.id + ' ' + p + f + JSON.stringify(o), [R.w, R.h, R.ax, R.ay]);
+      }
+      const h = H(s, 'idle', 0, { dir: 'side' });
+      ok(!seen[h], '側面 ' + field + '.' + it.id + ' 跟 ' + seen[h] + ' 一模一樣'); seen[h] = it.id;
+    });
+  });
+  eq(n, 67, '零件 67 件（髮 17、帽 14、眼鏡 6、鬍 5、上衣 10、下身 7、脖子 4、包 4）');
+  ok(I.SIDE.head.boss, '傳說藏家的頭有側面');
+  // 輪廓不出格、沒破洞、中線在欄 8、一隻眼：每位 NPC＋每款零件＋60 個隨機人，站與走兩格、朝右朝左
+  const specs = CH.cast().map(id => CH.npc(id)); for (let i = 0; i < 60; i++) specs.push(CH.random('side' + i));
+  ['hair', 'hat', 'glasses', 'facial', 'top', 'bottom', 'neck', 'bag'].forEach(f => CH.parts[f].forEach(it => specs.push(Object.assign({}, base, { [f]: it.id }))));
+  specs.forEach((s, si) => {
+    for (const [p, f] of [['idle', 0], ['idle', 1], ['walk', 0], ['walk', 1]]) {
+      const R = flat(s, {}, p, f), C = cellsOf(R), tag = ' #' + si + ' ' + p + f;
+      ok(C.every(([c, r]) => c >= 0 && c <= 15 && r >= -3 && r <= 14), '側面不出 16 欄、腳在第 14 列以上' + tag, C.filter(([c, r]) => c < 0 || c > 15 || r < -3 || r > 14).slice(0, 4));
+      // 身體（第 7–12 列欄 5–10）、頭（第 3–5 列欄 4–11）沒有破洞
+      const holes = []; for (let r = 7; r <= 12; r++) for (let c = 5; c <= 10; c++) if (!R.grid[c + ',' + r]) holes.push([c, r]);
+      if (!(s.head && s.head === 'boss')) for (let r = 3; r <= 5; r++) for (let c = 4; c <= 11; c++) if (!R.grid[c + ',' + r]) holes.push([c, r]);
+      eq(holes, [], '側面沒有破洞' + tag);
+      // 中線：第 10 列（身體）左右邊緣的中點在欄 7.5–8.5；腳底錨點仍是 [0,0]
+      const row = C.filter(([, r]) => r === 10).map(([c]) => c).filter(c => c >= 5 && c <= 10), mid = (Math.min(...row) + Math.max(...row) + 1) / 2;
+      ok(mid >= 7.5 && mid <= 8.5, '身體中線在欄 8 附近' + tag, mid);
+      eq(CH.compose(s, p, f, { dir: 'side' }).anchors.foot, [0, 0], '腳底錨點' + tag);
+      // 朝左＝朝右的鏡像（平面；美術格也鏡像）
+      const L2 = flat(s, { flip: true }, p, f);
+      ok(Object.keys(R.grid).every(k => { const [c, r] = k.split(',').map(Number); return L2.grid[(15 - c) + ',' + r] === R.grid[k]; }) && Object.keys(L2.grid).length === Object.keys(R.grid).length, '朝左＝朝右的鏡像' + tag);
+      // 美術格：輪廓（不透明的範圍）也是鏡像（陰影固定打在右下，跟正面一樣不鏡像）
+      const A = CH.compose(s, p, f, { dir: 'side' }), B = CH.compose(s, p, f, { dir: 'side', flip: true });
+      let same = A.w === B.w && A.h === B.h && A.ax + B.ax === A.w;
+      for (let y = 0; same && y < A.h; y++) for (let x = 0; x < A.w; x++) { if (A.data[(y * A.w + x) * 4 + 3] !== B.data[(y * B.w + (B.w - 1 - x)) * 4 + 3]) { same = false; break; } }
+      ok(same, '美術格朝左＝輪廓鏡像' + tag, [A.w, A.h, A.ax, B.w, B.h, B.ax]);
+      ok(Math.sign(A.anchors.face[0]) === 1 && Math.sign(B.anchors.face[0]) === -1, '臉的錨點在前面（朝右在右、朝左在左）' + tag, [A.anchors.face, B.anchors.face]);
+    }
+  });
+  // 一隻眼：沒戴眼鏡的人，第 4 列只有一格黑（欄 10）
+  for (const h of CH.parts.hair) { const R = flat({ hair: h.id, hairColor: 'o', skin: 's' }, {}), k = cellsOf(R).filter(([c, r]) => r === 4 && R.grid[c + ',' + r] === '#111111'); eq(k, [[10, 4]], '側面一隻眼在第 4 列第 10 欄 ' + h.id); }
+  // 只有站、走有側面：其他姿勢給 side＝正面同一張；倒地也是正面
+  CH.cast().map(id => CH.npc(id)).concat([CH.random('sidefb1'), CH.random('sidefb2')]).forEach((s, si) => Object.keys(CH.POSES).forEach(p => { for (let f = 0; f < CH.POSES[p]; f++) {
+    if (p === 'idle' || p === 'walk') { ok(H(s, p, f, { dir: 'side' }) !== H(s, p, f, {}), '側面跟正面不一樣 ' + p + f + ' #' + si); continue; }
+    eq(H(s, p, f, { dir: 'side' }), H(s, p, f, {}), '其他姿勢退回正面 ' + p + f + ' #' + si);
+    eq(H(s, p, f, { dir: 'side', flip: true }), H(s, p, f, { flip: true }), '其他姿勢退回正面（翻面） ' + p + f + ' #' + si);
+  } }));
+  // 走路兩格：站（兩腿併）→ 跨步（兩腳分開、上身沉 1 格、近手往前）
+  specs.slice(0, 30).forEach((s, si) => {
+    ok(H(s, 'walk', 0, { dir: 'side' }) !== H(s, 'walk', 1, { dir: 'side' }), '側面走路兩格不一樣 #' + si);
+    const w0 = flat(s, {}, 'walk', 0), w1 = flat(s, {}, 'walk', 1), shoe = (R) => cellsOf(R).filter(([c, r]) => r === 14).map(([c]) => c);
+    const s0 = shoe(w0), s1 = shoe(w1);
+    if (!(s.bottom === 'longskirt')) ok(Math.max(...s1) - Math.min(...s1) > Math.max(...s0) - Math.min(...s0), '跨步那格兩腳比站著開 #' + si, [s0, s1]);
+    ok(CH.compose(s, 'walk', 1, { dir: 'side' }).anchors.hand[0] > CH.compose(s, 'walk', 0, { dir: 'side' }).anchors.hand[0], '跨步那格近手往前擺 #' + si);
+  });
+  ok(H({}, 'idle', 0, { dir: 'side' }) !== H({}, 'idle', 1, { dir: 'side' }), '側面站著會呼吸（兩格不一樣）');
+  // 單邊的東西鏡像後換邊（寶可夢也這樣）：斜背包朝右時在前面、朝左時在另一邊
+  { const s = { bag: 'crossbag', bagColor: 'r', topColor: 'w' }, red = CH.swatch('r'), xs = R => cellsOf(R).filter(([c, r]) => R.grid[c + ',' + r] === red && r >= 10).map(([c]) => c);
+    ok(xs(flat(s, {})).every(c => c >= 9) && xs(flat(s, { flip: true })).every(c => c <= 6), '斜背包朝右在前、朝左鏡像', [xs(flat(s, {})), xs(flat(s, { flip: true }))]); }
+  // 帶 head 預設頭的 NPC：藏家有側面；不認得的頭照 normalize 剔除
+  ok(H(CH.npc('boss'), 'idle', 0, { dir: 'side' }) !== H(CH.npc('boss'), 'idle', 0, {}), '藏家側面跟正面不一樣');
+  // 其他 API 也收 dir:'side'
+  ok(CH.rows({}, 'walk', 1, { dir: 'side' }).rows.join('') !== CH.rows({}, 'walk', 1, {}).rows.join(''), 'rows() 收 dir:side');
+  ok(CH.anchor({}, 'walk', 0, 'head', { dir: 'side' })[1] < 0, 'anchor() 收 dir:side');
+  eq(H({}, 'idle', 0, { dir: 'side', back: true }), H({}, 'idle', 0, { dir: 'side' }), 'dir 優先於舊的 back');
+  // 袖子：短袖蓋到上臂、長袖蓋到手腕、背心沒有袖子（X＝上衣暗一階）
+  { const sl = top => { const R = flat({ top, topColor: 'w' }, {}), x = CH._internal.resolver(CH.normalize({ top, topColor: 'w' }))('X'); return [7, 8, 9, 10].filter(r => R.grid['8,' + r] === x).length; };
+    eq([sl('tee'), sl('hoodie'), sl('tank')], [2, 3, 0], '側面袖長：T 恤 2、帽 T 3、背心 0'); }
+});
+
 await section('7 random、normalize、toDipChar、wear', () => {
   eq(CH.random('abc'), CH.random('abc'), 'random 同 seed 同人');
   ok(JSON.stringify(CH.random('abc')) !== JSON.stringify(CH.random('abd')), 'random 不同 seed 不同人');
@@ -365,14 +460,22 @@ await section('9 charedit.js 純邏輯', () => {
   const r = L.result('阿明', { hair: 'afro' }); eq(r.name, '阿明', 'result.name'); eq(r.spec, CH.normalize({ hair: 'afro' }), 'result.spec＝v2 spec');
   ok(CJK.test(L.summary(CH.random(3))), 'summary 繁中');
   ok(L.shuffle(5).v === 2, 'shuffle 給 v2 spec');
+  // 點人換動作：7 個，第 6 個「背面」換成「轉一圈」（索引不變）；轉一圈＝正 → 側（朝右）→ 背 → 另一側（朝左）→ 正
+  eq(L.ACTIONS.map(a => a[0]), ['idle', 'walk', 'throw', 'cheer', 'dig', 'turn', 'hurt'], '動作 7 個、第 6 個是轉一圈');
+  eq(L.ACTIONS[5][1], '轉一圈', '轉一圈的字');
+  const seq = []; for (let t = 0; t < 2250; t += 50) { const f = L.turnAt(t, true), k = f.dir + (f.flip ? 'L' : ''); if (seq[seq.length - 1] !== k) seq.push(k); }
+  eq(seq, ['front', 'side', 'back', 'sideL'], '轉一圈的順序（一圈）');
+  eq([L.turnAt(2250, true), L.turnAt(2250 * 3 + 1000, true)], [{ dir: 'front', flip: false }, { dir: 'side', flip: false }], '轉完回正面、再一圈');
+  const seq2 = []; for (let t = 0; t < 1350; t += 50) { const f = L.turnAt(t, false); if (seq2[seq2.length - 1] !== f.dir) seq2.push(f.dir); }
+  eq(seq2, ['front', 'back'], '沒有側面時只轉正、背');
 });
 
 // ---------------------------------------------------------------- 瀏覽器（:8765 有開才跑）
 function up(url) { return new Promise(res => { const q = http.get(url, r => { r.resume(); res(r.statusCode === 200); }); q.on('error', () => res(false)); q.setTimeout(1500, () => { q.destroy(); res(false); }); }); }
-const BASE = 'http://localhost:8765/';
+const BASE = (process.env.LAB_BASE || 'http://localhost:8765').replace(/\/?$/, '/');
 let pw = null; try { pw = require('playwright'); } catch (e) { pw = null; }
 if (process.env.NO_BROWSER || !pw || !(await up(BASE + 'game-lab/chars.js'))) {
-  console.log('skip 瀏覽器（' + (process.env.NO_BROWSER ? 'NO_BROWSER' : !pw ? '沒有 playwright' : ':8765 沒開') + '）');
+  console.log('skip 瀏覽器（' + (process.env.NO_BROWSER ? 'NO_BROWSER' : !pw ? '沒有 playwright' : BASE + ' 沒開') + '）');
 } else {
   await section('10 瀏覽器：render＝compose、legacyParity、捏人畫面', async () => {
     const browser = await pw.chromium.launch({ proxy: { server: process.env.HTTPS_PROXY || 'http://localhost:1', bypass: 'localhost,127.0.0.1' } });
@@ -417,6 +520,14 @@ if (process.env.NO_BROWSER || !pw || !(await up(BASE + 'game-lab/chars.js'))) {
         ok(st.spec.v === 2 && st.spec.hair !== 'neat', '點了之後 spec 有變', st.spec);
         ok(await page.evaluate(() => window.__changes) >= 7, 'onChange 有叫');
         await page.locator('.ce-cv').click(); await page.locator('.ce-cv').click();
+        // 轉一圈：點到第 6 個動作，2.25 秒裡舞台的人換了四面（正、側、背、另一側），左右兩側互為鏡像
+        await page.evaluate(() => window.__ed.act(5));
+        const faces = [];
+        for (const ms of [300, 1100, 1550, 2000]) {
+          await page.evaluate(ms => new Promise(r => { const t0 = performance.now(); (function w() { performance.now() - t0 >= ms - 10 ? r() : requestAnimationFrame(w); })(); }), ms - (faces.length ? [300, 1100, 1550, 2000][faces.length - 1] : 0));
+          faces.push(await page.evaluate(() => { const c = document.querySelector('.ce-cv'), g = c.getContext('2d'), w = c.width, h = c.height, d = g.getImageData(0, 0, w, h).data; let x = 2166136261; for (let i = 0; i < d.length; i += 16) x = Math.imul(x ^ d[i] ^ d[i + 1] << 8, 16777619); return x >>> 0; }));
+        }
+        ok(new Set(faces).size === 4, '轉一圈：四個時間點畫面都不一樣 ' + w, faces);
         await page.locator('.ce-rand').click();
         const st2 = await page.evaluate(() => window.__ed.get());
         ok(JSON.stringify(st2.spec) !== JSON.stringify(st.spec), '隨機換了一個人');

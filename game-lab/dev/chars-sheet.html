@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>零件三向總表：正面／側面／背面（v5 第五項）</title>
+<style>
+  html,body{margin:0;background:#1a1410;color:#eee5c6;font:13px/1.4 system-ui,'Noto Sans TC','PingFang TC',sans-serif;-webkit-text-size-adjust:100%}
+  .bar{position:sticky;top:0;z-index:2;background:#1a1410;padding:8px 10px;display:flex;flex-wrap:wrap;gap:5px;align-items:center;border-bottom:1px solid #4a3a2c}
+  button{font:inherit;font-size:12px;color:#1d1712;background:#eee5c6;border:2px solid #1d1712;padding:4px 8px;border-radius:0;cursor:pointer}
+  button.on{background:#e9c35a}
+  .wrap{overflow-x:auto;padding:6px 10px 20px}
+  table{border-collapse:collapse}
+  th{font-weight:400;font-size:12px;color:#c9b98e;padding:2px 6px;white-space:nowrap}
+  td{text-align:center;vertical-align:bottom;padding:4px 6px;border-top:1px solid #3a2c22}
+  td.l{text-align:left;font-size:12px;white-space:nowrap;vertical-align:middle}
+  canvas{image-rendering:pixelated;display:block;margin:0 auto}
+</style>
+</head>
+<body>
+<!-- 給店主看側面美術用：每類零件一列一款，正面｜側面（站、走 0、走 1）｜背面｜側面朝左（鏡像）；「隨機」＝12 個捏人的三向＋走路兩格。
+     ?k=hair｜hat｜glasses｜facial｜top｜bottom｜neck｜bag｜npc｜random、?s=放大倍數（美術格，預設 4） -->
+<div class="bar" id="bar"></div>
+<div class="wrap"><table id="t"></table></div>
+<script src="../chars.js"></script>
+<script>
+(function () {
+  var CH = window.DipLabChars, q = new URLSearchParams(location.search);
+  var KINDS = [['hair', '髮'], ['hat', '帽'], ['glasses', '眼鏡'], ['facial', '鬍'], ['top', '上衣'], ['bottom', '下身'], ['neck', '脖子'], ['bag', '包'], ['npc', 'NPC'], ['random', '隨機 12 人']];
+  var kind = q.get('k') || 'hair', S = Math.max(2, Math.min(8, +q.get('s') || 4)), seed = 0;
+  var BASE = { skin: 's', hairColor: 'u', topColor: 'sky', bottomColor: 'navy', shoesColor: 'k' };
+  var COLS = [['正面', 'front', false, 'idle', 0], ['側面', 'side', false, 'idle', 0], ['側走 0', 'side', false, 'walk', 0], ['側走 1', 'side', false, 'walk', 1], ['背面', 'back', false, 'idle', 0], ['朝左', 'side', true, 'idle', 0]];
+  var WALK = [['正面', 'front', false, 'idle', 0], ['正走 0', 'front', false, 'walk', 0], ['正走 1', 'front', false, 'walk', 1], ['側面', 'side', false, 'idle', 0], ['側走 0', 'side', false, 'walk', 0], ['側走 1', 'side', false, 'walk', 1],
+    ['背面', 'back', false, 'idle', 0], ['背走 0', 'back', false, 'walk', 0], ['背走 1', 'back', false, 'walk', 1], ['朝左走 1', 'side', true, 'walk', 1]];
+  function rows() {
+    if (kind === 'npc') return CH.cast().map(function (id) { return [id, CH.npc(id)]; });
+    if (kind === 'random') { var out = []; for (var i = 0; i < 12; i++) out.push(['#' + (i + 1), CH.random('sheet' + seed + '-' + i)]); return out; }
+    var extra = { neck: { topColor: 'w' }, bag: { topColor: 'w' }, hat: { hairColor: 'choco' } }[kind] || {};
+    return CH.parts[kind].filter(function (it) { return it.id !== 'none'; }).map(function (it) {
+      var sp = Object.assign({}, BASE, extra); sp[kind] = it.id;
+      if (kind === 'top') sp.topColor = (CH.DEFAULTS.top[it.id] && CH.DEFAULTS.top[it.id].c) || 'b';
+      return [it.label + ' ' + it.id, sp];
+    });
+  }
+  // 格子多寬多高：用 compose 量這一頁每一格的實際範圍（ax＝腳底左邊、w−ax＝右邊、ay＝頭頂，都含 1 格黑框）＋2 格留白。
+  // 下限半寬 26、頭頂 55 美術格（帆布袋／唱片袋正背面會伸到 25，馬尾、爆炸頭、雙馬尾 22）；以後零件更寬就自動加寬，不會被切掉一截
+  function cellSize(list, cols) {
+    var hw = 26, up = 55;
+    list.forEach(function (r) {
+      cols.forEach(function (c) {
+        var R = CH.compose(r[1], c[3], c[4], { dir: c[1], flip: c[2] });
+        hw = Math.max(hw, R.ax + 2, R.w - R.ax + 2); up = Math.max(up, R.ay + 2);
+      });
+    });
+    return { W: 2 * hw * S, H: (up + 5) * S };
+  }
+  function draw() {
+    var cols = kind === 'random' ? WALK : COLS, t = document.getElementById('t'), list = rows(), C = cellSize(list, cols);
+    t.innerHTML = '<tr><th></th>' + cols.map(function (c) { return '<th>' + c[0] + '</th>'; }).join('') + '</tr>';
+    list.forEach(function (r) {
+      var tr = document.createElement('tr'), l = document.createElement('td'); l.className = 'l'; l.textContent = r[0]; tr.appendChild(l);
+      cols.forEach(function (c) {
+        var td = document.createElement('td'), cv = document.createElement('canvas'), W = C.W, H = C.H; cv.width = W; cv.height = H;
+        var g = cv.getContext('2d'); g.fillStyle = '#6b5440'; g.fillRect(0, H - 5 * S, W, 5 * S);
+        CH.render(g, r[1], c[3], c[4], W / 2, H - 5 * S, { scale: 3 * S, dir: c[1], flip: c[2] });
+        td.appendChild(cv); tr.appendChild(td);
+      });
+      t.appendChild(tr);
+    });
+  }
+  var bar = document.getElementById('bar');
+  KINDS.forEach(function (k) {
+    var b = document.createElement('button'); b.textContent = k[1]; b.className = k[0] === kind ? 'on' : '';
+    b.onclick = function () { if (kind === 'random' && k[0] === 'random') seed++; kind = k[0]; Array.prototype.forEach.call(bar.querySelectorAll('button[data-k]'), function (x) { x.className = x.dataset.k === kind ? 'on' : ''; }); draw(); };
+    b.dataset.k = k[0]; bar.appendChild(b);
+  });
+  [3, 4, 6].forEach(function (n) { var b = document.createElement('button'); b.textContent = '×' + n; b.onclick = function () { S = n; draw(); }; bar.appendChild(b); });
+  draw();
+})();
+</script>
+</body>
+</html>
