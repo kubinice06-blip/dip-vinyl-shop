@@ -13,7 +13,8 @@
  *       (x, y)＝腳底中點（ctx 座標）。opts：
  *         scale   ctx px／小人格，預設 3（ctx 以美術格為單位時）；P2 裝置解析度就給 3*k。3 的倍數或 ≥6 → 美術格模式（含 GBA 修飾），
  *                 其他（1、2、4、5）→ 原版平面像素（沒有描邊）。
- *         flip    朝左；back 背面；outline／shade（預設 true）；plain:true＝兩個都關（＝原版一模一樣）
+ *         flip    朝左；dir 朝向 'front'｜'back'（DIRS；舊的 back:true＝dir:'back'，照收）；倒地一律正面
+ *         outline／shade（預設 true）；plain:true＝兩個都關（＝原版一模一樣）
  *         tint    受傷閃色：'#ff3030' 或 { color, a }；sil 剪影色（整個人塗成一色）；alpha；shadow（預設 true，地上的橢圓影子）
  *         wear    臨時穿戴（例：{ hat:'phones' } 試聽機戴上耳機），不改 spec
  *       anchors（ctx 座標）：foot 腳底、head 頭頂（含帽子；名牌、泡泡貼這）、face 臉、chest 胸口（被打中的點）、
@@ -21,9 +22,9 @@
  *   compose(spec, pose, frame, opts) → { w, h, data(RGBA Uint8ClampedArray), ax, ay, anchors, unit:'art'|'sprite' }（Node 也能跑；anchors 為相對腳底的美術格）
  *   toCanvas(spec, pose, frame, opts) → canvas（1:1；.ax .ay）；toDataURL(...)
  *   runs(spec, pose, frame, opts) → [[列, x0, x1, 'rgb()']…]（同色一段一段；自己用 fillRect 畫，例如 P2 的 P.r）
- *   rows(spec, pose, frame, { flip, back }) → { rows:[16 字串…], pal:{字:色}, ax, ay }（小人格平面圖，舊 P.sprite／pixArtHTML 用得上）
+ *   rows(spec, pose, frame, { flip, dir, back }) → { rows:[16 字串…], pal:{字:色}, ax, ay }（小人格平面圖，舊 P.sprite／pixArtHTML 用得上）
  *   svg(spec, size, { pose, frame, crop:'full'|'head'|'bust', flip }) → '<svg …>'（HTML 頭像；原版平面）
- *   anchor(spec, pose, frame, name, { flip, back, scale }) → [dx, dy]（相對腳底，ctx 單位）
+ *   anchor(spec, pose, frame, name, { flip, dir, back, scale }) → [dx, dy]（相對腳底，ctx 單位）
  *   npc(id) → spec：男子 man／copycat／already／needle／skip／broke／buyer／label／critic／boss／owner，
  *                   舊 SPR 鍵 e0…e7／boss／guard／digger／heretic／owner，店裡閒逛的客人 girl／cust2／dude／regular
  *   fromDipChar(avatar) → spec（dip-character.js 的 {head,hair,shirt,pants,skin}，畫出來跟 avatarRows 一格不差）
@@ -37,6 +38,7 @@
  *       hurt 往後仰（0／1 抖）、ko 倒地、cheer 雙手舉高（1 跳起來）、dig 彎腰翻箱（1 抽出一張）、hold 雙手拿在胸前、
  *       point 手伸直指（老闆舉旗）、sit 坐著、talk 說話比手勢
  *   ARM／P2POSE → 舊 shop.js 的手勢、P2 原型的 pose 名稱對到 [pose, frame]
+ *   DIRS → ['front','back']：畫得出來的朝向（第二步加 'side'；shop.js 看這個決定橫走用不用側面）
  *   cast() → 全部 npc id；legacyParity() → 瀏覽器裡有 dip-character.js 時，核對抄過來的資料跟原檔一致
  *
  * spec（缺的補預設；顏色值＝調色盤 id，舊的單字母 k g r b w e d n p o y c t u v m s 都照原色；'auto'＝那一款的預設色）
@@ -143,11 +145,13 @@
   //   角色色：H 頭髮、s 皮膚、A 帽、a 帽的暗面、B 帽第二色、G 鏡框、F 鬍子、f 鬍渣／剃邊（膚＋髮混色）、T 上衣、U 上衣第二色、L 褲裙、S 鞋、N 頸飾、M 包、Q 包第二色
   //   固定色：k g r b w e d n p o y c t u v m（原版調色盤）
   function L(y, rows) { return { y: y, rows: rows }; }
+  function mirrorL(l) { return l && L(l.y, l.rows.map(function (r) { return r.split('').reverse().join(''); })); }
 
   // 頭（光頭＋臉）：原版每種頭在這底下都長一樣（眼睛在第 4 列第 6、9 欄）
   var HEAD_BASE = L(2, ['.....ssssss.....', '....ssssssss....', '....ssksskss....', '....ssssssss....', '.....ssssss.....']);
 
-  // 髮型：f＝臉前面那層、b＝身體後面那層（長髮垂到肩後）、bk＝背面時頭髮蓋到第幾列（-1＝光頭）、bb＝背面多畫的（馬尾）
+  // 髮型：f＝臉前面那層、b＝身體後面那層（長髮垂到肩後）、bk＝背面時頭髮蓋到第幾列（-1＝光頭）、
+  //       bb＝背面多畫的，有 bb 的背面就不畫 b（馬尾：正面甩在一邊的 b、背面只剩正中那條 bb）
   var HAIR = [
     { id: 'neat', label: '西裝頭', legacy: 1, f: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '....H......H....']), bk: 5 },
     { id: 'bob', label: '妹妹頭', legacy: 1, f: L(1, ['.....HHHHHH.....', '....HHHHHHHH....', '....HHHHHHHH....', '....H......H....', '....H......H....']), bk: 5 },
@@ -179,7 +183,8 @@
     { id: 'beret', label: '貝雷帽', legacy: 1, dc: 'p', f: L(1, ['......AAAA......', '....AAAAAAAA....']), cut: 2 },
     { id: 'fedora', label: '紳士帽', legacy: 1, dc: 'o', f: L(1, ['.....AAAAAA.....', '.....AAAAAA.....', '...AAAAAAAAAA...']), cut: 3 },
     { id: 'tophat', label: '高禮帽', dc: 'k', dc2: 'r', f: L(-2, ['.....AAAAAA.....', '.....AAAAAA.....', '.....AAAAAA.....', '.....BBBBBB.....', '...AAAAAAAAAA...']), cut: 2 },
-    { id: 'bandana', label: '頭巾', dc: 'r', dc2: 'w', f: L(1, ['.....AABAAA.....', '....ABAAABAAA...', '............AA..']), cut: 2 },
+    { id: 'bandana', label: '頭巾', dc: 'r', dc2: 'w', f: L(1, ['.....AABAAA.....', '....ABAAABAAA...', '............AA..']), cut: 2,
+      back: L(1, ['.....AAABAA.....', '....ABAAABAA....', '.......AA.......', '......A..A......']) },   // 背面：結在後腦正中、兩條尾巴垂下來
     { id: 'phones', label: '耳機', legacy: 1, dc: 'g', f: L(0, ['.....AAAAAA.....', '................', '................', '...A........A...', '...A........A...']), cut: -9 },
     { id: 'bigphones', label: '大耳罩', dc: 'k', dc2: 'r', f: L(0, ['.....AAAAAA.....', '....A......A....', '...A........A...', '..BB........BB..', '..BB........BB..']), cut: -9 },
     { id: 'neckphones', label: '掛脖耳機', dc: 'k', dc2: 'r', f: L(6, ['....A......A....', '....BB....BB....']), cut: -9, neck: 1 },
@@ -216,31 +221,34 @@
     { id: 'suit', label: '西裝', legacy: 1, dc: 'k', dc2: 'r', sl: 1, f: L(7, ['....TTwUUwTT....', '....TTwUUwTT....', '....TTTTTTTT....', '....TTTTTTTT....', '....TTTTTTTT....']), back: 'plain' },
     { id: 'apron', label: '圍裙', legacy: 1, dc: 'w', dc2: 'g', sl: 1, f: L(7, ['....TTTTTTTT....', '....UUUUUUUU....', '....UUUUUUUU....', '....UUUUUUUU....', '....UUUUUUUU....']), back: L(7, ['....TTTTTTTT....', '....TTTTTTTT....', '....TTTUUTTT....', '....UUUTTUUU....', '....TTTTTTTT....']) }
   ];
-  // 褲裙（第 12–13 列；裙子會蓋到 14）。skirt＝走路時腳不抬（裙子遮著）；over＝畫在上衣上面的（吊帶）
+  // 褲裙（第 12–13 列；裙子會蓋到 14）。skirt＝走路時腳不抬（裙子遮著）；over＝畫在上衣上面的（吊帶）；back／overBack＝背面
   var BOTTOMS = [
     { id: 'pants', label: '長褲', legacy: 1, dc: 'k', f: L(12, ['....LLLLLLLL....', '....LLL..LLL....']) },
-    { id: 'jeans', label: '破洞牛仔褲', dc: 'denim', f: L(12, ['....LLLLLLLL....', '....LsL..LsL....']) },
+    { id: 'jeans', label: '破洞牛仔褲', dc: 'denim', f: L(12, ['....LLLLLLLL....', '....LsL..LsL....']), back: L(12, ['....LLLLLLLL....', '....LLL..LLL....']) },   // 洞在膝蓋前面，背後看不到
     { id: 'slim', label: '窄管褲', dc: 'k', f: L(12, ['....LLLLLLLL....', '.....LL..LL.....']) },
     { id: 'shorts', label: '短褲', dc: 'khaki', f: L(12, ['....LLLLLLLL....', '....sss..sss....']) },
     { id: 'skirt', label: '短裙', dc: 'navy', skirt: 1, f: L(12, ['....LLLLLLLL....', '...LLLLLLLLLL...']) },
     { id: 'longskirt', label: '長裙', dc: 'wine', skirt: 1, f: L(12, ['....LLLLLLLL....', '...LLLLLLLLLL...', '...LSSLLLLSSL...']) },
-    { id: 'overalls', label: '吊帶褲', dc: 'denim', f: L(12, ['....LLLLLLLL....', '....LLL..LLL....']), over: L(7, ['.....L....L.....', '.....L....L.....', '.....LLLLLL.....', '.....LLLLLL.....', '....LLLLLLLL....']) }
+    { id: 'overalls', label: '吊帶褲', dc: 'denim', f: L(12, ['....LLLLLLLL....', '....LLL..LLL....']), over: L(7, ['.....L....L.....', '.....L....L.....', '.....LLLLLL.....', '.....LLLLLL.....', '....LLLLLLLL....']),
+      overBack: L(7, ['.....L....L.....', '......L..L......', '.......LL.......', '......L..L......', '....LLLLLLLL....']) }   // 背面：兩條吊帶在背後交叉，沒有護胸
   ];
+  // 頸飾：背面預設只畫第一列（圍巾繞過後頸）；back＝背面另給（null＝背面看不到）
   var NECKS = [
     { id: 'none', label: '沒有' },
     { id: 'scarf', label: '圍巾', legacy: 1, dc: 'r', f: L(7, ['....NNNNNNNN....']) },
     { id: 'longscarf', label: '長圍巾', dc: 'mustard', f: L(7, ['....NNNNNNNN....', '.........N......', '.........N......', '.........N......']) },
-    { id: 'bowtie', label: '領結', dc: 'r', f: L(7, ['......NkkN......']) },
+    { id: 'bowtie', label: '領結', dc: 'r', f: L(7, ['......NkkN......']), back: null },   // 領結在前面，背後看不到
     { id: 'necklace', label: '項鍊', dc: 'g', f: L(7, ['.....N....N.....', '......NNNN......', '.......NN.......']) }
   ];
-  // 包：f 正面、back 背面
+  // 包：f 正面、back 背面（'mirror'＝正面左右翻：掛在一邊肩上的包，從背後看在另一邊）
   var BAGS = [
     { id: 'none', label: '沒有' },
-    { id: 'recordbag', label: '唱片袋', dc: 'w', dc2: 'k', f: L(7, ['............Q...', '.............kk.', '.............MMM', '.............MQM', '.............MMM', '.............MMM']) },
-    { id: 'tote', label: '帆布袋', dc: 'cream', dc2: 'r', f: L(7, ['...Q............', '..Q.............', 'MMM.............', 'MQM.............', 'MMM.............', 'MMM.............']) },
+    { id: 'recordbag', label: '唱片袋', dc: 'w', dc2: 'k', f: L(7, ['............Q...', '.............kk.', '.............MMM', '.............MQM', '.............MMM', '.............MMM']), back: 'mirror' },
+    { id: 'tote', label: '帆布袋', dc: 'cream', dc2: 'r', f: L(7, ['...Q............', '..Q.............', 'MMM.............', 'MQM.............', 'MMM.............', 'MMM.............']), back: 'mirror' },
     { id: 'crossbag', label: '斜背包', dc: 'u', dc2: 'k', f: L(7, ['..........Q.....', '.........Q......', '........Q.......', '...MMMMQ........', '...MMMM.........']), back: L(7, ['.....Q..........', '......Q.........', '.......Q........', '........QMMMM...', '.........MMMM...']) },
     { id: 'backpack', label: '後背包', dc: 'o', dc2: 'k', f: L(7, ['.....M....M.....', '.....M....M.....', '.....M....M.....']), back: L(6, ['.....MMMMMM.....', '....MMMMMMMM....', '....MMMMMMMM....', '....MMMMMMMM....', '....MQQQQQQM....', '....MMMMMMMM....']) }
   ];
+  BAGS.forEach(function (b) { if (b.back === 'mirror') b.back = mirrorL(b.f); });
   function byId(list) { var o = {}; list.forEach(function (x) { o[x.id] = x; }); return o; }
   var HAIR_ = byId(HAIR), HATS_ = byId(HATS), GLASSES_ = byId(GLASSES), FACIAL_ = byId(FACIAL), TOPS_ = byId(TOPS), BOTTOMS_ = byId(BOTTOMS), NECKS_ = byId(NECKS), BAGS_ = byId(BAGS);
 
@@ -446,7 +454,7 @@
     } else {
       var liftL = P.legs === 'stepL', liftR = P.legs === 'stepR';
       shoe(4, liftL ? 13 : shoeRow); shoe(9, liftR ? 13 : shoeRow);
-      var bc = layerCells(bot.f, []);
+      var bc = layerCells(back && bot.back ? bot.back : bot.f, []);
       if (!bot.skirt && (liftL || liftR)) bc = bc.filter(function (x) { return !(x[1] === 13 && (liftL ? x[0] <= 7 : x[0] >= 8)); });
       lo = lo.concat(bot.skirt ? bc : bc);
       if (!bot.skirt) {   // 抬起來那隻：鞋子要在褲管前面（把那一列的鞋子再補一次在最上層）
@@ -460,11 +468,12 @@
     var torso = layerCells(back && top.back && top.back !== 'plain' ? top.back : (back && top.back === 'plain' ? L(7, ['....TTTTTTTT....', '....TTTTTTTT....', '....TTTTTTTT....', '....TTTTTTTT....', '....TTTTTTTT....']) : top.f), []);
     if (P.legs === 'sit') { /* 坐下：上衣原樣，整個上身往下一格 */ }
     op(torso, up);
-    if (bot.over) op(layerCells(bot.over, []), up);
+    if (bot.over) op(layerCells(back && bot.overBack ? bot.overBack : bot.over, []), up);
     // 4 包、頸飾
     var bagL = bg && (back && bg.back ? bg.back : bg.f);
     if (bagL && !(back && bg.id === 'backpack')) op(layerCells(bagL, []), up);
-    if (nk && nk.f) op(layerCells(back ? L(7, [nk.f.rows[0]]) : nk.f, []), up);
+    var nkL = nk && nk.f ? (!back ? nk.f : ('back' in nk ? nk.back : L(7, [nk.f.rows[0]]))) : null;
+    if (nkL) op(layerCells(nkL, []), up);
     // 5 手
     function arm(name, mirror) {
       var chain = ARMS[name] || ARMS.down, cells = [];
@@ -494,7 +503,7 @@
           for (var r2 = 7; r2 <= hair.bk; r2++) for (var c2 = 4; c2 <= 11; c2++) fill.push([c2, r2, 'H']);
         }
         op(fill, hd);
-        if (hair.b) op(layerCells(hair.b, [], noCut), hd);
+        if (hair.b && !hair.bb) op(layerCells(hair.b, [], noCut), hd);   // 馬尾：背面只畫正中那條（bb），不再兩條
         op(layerCells(hair.f, [], noCut), hd);
         if (hair.bb) op(layerCells(hair.bb, [], noCut), hd);
       } else {
@@ -517,7 +526,13 @@
   function ax0(c) { return 1 + (c - C0) * 3; }
   function ay0(r) { return 1 + (r - R0) * 3; }
   var memo = {}, memoN = 0, MEMO_MAX = 600;
-  function keyOf(s, pose, frame, o) { return JSON.stringify(s) + '|' + pose + '|' + frame + '|' + (o.flip ? 1 : 0) + (o.back ? 1 : 0) + (o.outline ? 1 : 0) + (o.shade ? 1 : 0) + '|' + (o.tint || '') + '|' + (o.sil || '') + '|' + o.mode; }
+  function keyOf(s, pose, frame, o) { return JSON.stringify(s) + '|' + pose + '|' + frame + '|' + (o.flip ? 1 : 0) + o.dir.charAt(0) + (o.outline ? 1 : 0) + (o.shade ? 1 : 0) + '|' + (o.tint || '') + '|' + (o.sil || '') + '|' + o.mode; }
+  // 朝向：dir 'front'｜'back'（DIRS 裡的才算）；沒給 dir 時讀舊的 back:true；倒地一律正面
+  var DIRS = ['front', 'back'];
+  function dirOf(opts, pose) {
+    var d = DIRS.indexOf(opts.dir) >= 0 ? opts.dir : (opts.back ? 'back' : 'front');
+    return pose === 'ko' ? 'front' : d;
+  }
   function compose(spec, pose, frame, opts) {
     opts = opts || {};
     var s = normalize(opts.wear ? Object.assign({}, normalize(spec), opts.wear) : spec);
@@ -525,7 +540,7 @@
     frame = ((frame | 0) % POSES[pose] + POSES[pose]) % POSES[pose];
     var plain = !!opts.plain, mode = opts.mode === 'sprite' ? 'sprite' : 'art';
     var tint = opts.tint ? (typeof opts.tint === 'string' ? opts.tint + '@0.45' : opts.tint.color + '@' + (opts.tint.a == null ? 0.45 : opts.tint.a)) : '';
-    var o = { flip: !!opts.flip, back: !!opts.back && pose !== 'ko', outline: !plain && opts.outline !== false && mode === 'art', shade: !plain && opts.shade !== false && mode === 'art', tint: tint, sil: opts.sil || '', mode: mode };
+    var o = { flip: !!opts.flip, dir: dirOf(opts, pose), outline: !plain && opts.outline !== false && mode === 'art', shade: !plain && opts.shade !== false && mode === 'art', tint: tint, sil: opts.sil || '', mode: mode };
     var key = keyOf(s, pose, frame, o);
     if (memo[key]) return memo[key];
     var res = mode === 'sprite' ? composeSprite(s, pose, frame, o) : composeArt(s, pose, frame, o);
@@ -535,7 +550,7 @@
   }
   // 小人格層 → 一張格子圖（倒地＝整張轉 90°）
   function cellsOf(s, pose, frame, o) {
-    var B = build(s, pose === 'ko' ? 'idle' : pose, pose === 'ko' ? 0 : frame, o.back), col = resolver(s);
+    var B = build(s, pose === 'ko' ? 'idle' : pose, pose === 'ko' ? 0 : frame, o.dir === 'back'), col = resolver(s);
     var ops = B.ops.map(function (op) { return { dx: op.dx, dy: op.dy, cells: op.cells.map(function (x) { return [x[0], x[1], x[2], col(x[2])]; }) }; });
     var pts = {}; Object.keys(B.pts).forEach(function (k) { var p = B.pts[k]; if (p) pts[k] = [p[0], p[1], p[2] ? p[2][0] : 0, (p[2] ? p[2][1] : 0) - B.P.hop]; });
     if (pose === 'ko') {
@@ -636,7 +651,7 @@
   // 原版 16×16 字母圖（每格一個字、配色表）：給 HTML 頭像、舊 P.sprite
   function rows(spec, pose, frame, opts) {
     opts = opts || {};
-    var R = compose(spec, pose || 'idle', frame || 0, { mode: 'sprite', flip: opts.flip, back: opts.back, plain: true }), s = normalize(spec);
+    var R = compose(spec, pose || 'idle', frame || 0, { mode: 'sprite', flip: opts.flip, dir: opts.dir, back: opts.back, plain: true }), s = normalize(spec);
     var pal = {}, inv = {}, letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', n = 0, out = [];
     // 固定 16×16 框（原版的欄列），姿勢超出去的另外加寬
     var c0 = Math.min(0, R.minC), r0 = Math.min(0, R.minR), c1 = Math.max(15, R.minC + R.w - 1), r1 = Math.max(15, R.minR + R.h - 1);
@@ -829,7 +844,7 @@
   return {
     render: render, compose: compose, runs: function (spec, pose, frame, opts) { return runsOf(compose(spec, pose, frame, opts)); }, toCanvas: toCanvas, toDataURL: toDataURL, rows: rows, svg: svg, anchor: anchor,
     npc: npc, cast: cast, fromDipChar: fromDipChar, toDipChar: toDipChar, random: random, normalize: normalize, isSpec: isSpec,
-    parts: parts, DEFAULTS: DEFAULTS, SECOND: SECOND, DEFAULT: DEFAULT, POSES: POSES, ARM: ARM, P2POSE: P2POSE, swatch: swatch, legacyParity: legacyParity,
+    parts: parts, DEFAULTS: DEFAULTS, SECOND: SECOND, DEFAULT: DEFAULT, POSES: POSES, DIRS: DIRS.slice(), ARM: ARM, P2POSE: P2POSE, swatch: swatch, legacyParity: legacyParity,
     SCALE: { sprite: 16, art: 48, x: 3 }, OUTLINE: OUTLINE,
     _internal: { LP: LP, LHEADS: LHEADS, LBODY: LBODY, LSPR: LSPR, legacyRows: legacyRows, HAIR: HAIR, HATS: HATS, GLASSES: GLASSES, FACIAL: FACIAL, TOPS: TOPS, BOTTOMS: BOTTOMS, NECKS: NECKS, BAGS: BAGS, NPCS: NPCS, PAL: PAL, build: build, resolver: resolver, clear: function () { memo = {}; memoN = 0; cvCache = {}; } },
     version: '4.0'
