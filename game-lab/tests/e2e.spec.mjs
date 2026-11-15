@@ -62,6 +62,11 @@
 //  54 第 1 位開打前：來客畫面一次性提示（老闆頭上閃一下＋吐司「想換王牌，點老闆。」，save.seen.aceSwap，只出一次）→ 真點老闆＝小選單「聊聊／換一張王牌」（不捲動）
 //     → 聊聊＝老闆照舊說一句 → 換一張王牌＝挑王牌面板（標題「想換一張？」、預設選中現在那張、不捲動）→ 換 pearl：包包送的四張原位換、特價箱不動、
 //     save.lastAce、新那組算擁有（gift）、老闆說換好了＋吐司 → 再換選同一張＝不換（老闆「那就照舊。」）→ 打過第 1 位（第 2 位）點老闆：沒有選單、老闆說下一趟再換
+//  （主站互通入口，v5 第六項第一期，店主 11-15）
+//  55 主站「帶去店裡對決」：?card=<遊戲卡 id>（第一次玩）→ 網址的 card 拿掉、save.bring、標題吐司（先走一趟那句）→ 序章算走完、唱片櫃有幾張比它強的 →
+//     再推門＝第二趟挑種子：第一張是它、已勾、封面「帶來的」、1／3、不捲動 → 就這幾張 → 開局包包第一張是它、run.seeds、save.bring 清空、認識不算擁有；
+//     ?card=王牌 →「店裡沒有這張唱片。」、不收；不是第一次玩 → 下一趟那句；
+//     唱片資訊「在頻率光譜找它 ↗」：在頻率那行、/tune/?q=藝人 專輯、新分頁、不是 .streaming-btn、點了開新分頁、回來聲音還在（dip-player 沒關自動試聽）
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -74,7 +79,8 @@ const LAB = path.resolve(HERE, '..');
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const YOU_HP = createRequire(import.meta.url)(path.join(LAB, 'engine.js')).CFG.playerHp;   // 你的聲望（FIXLIST 11 H5-1：9）
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52, 54]);
+const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52, 54, 55]);
+const SHOTS = process.env.LAB_SHOTS || '';      // 設了就把 #55 的挑種子面板、唱片資訊截圖存到這個資料夾（給店主看）
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
 // D §5 規則卡六行（店主拍板，逐字；第 6 行照 FIXLIST 2／3 改：王牌沒有「不會被剋」、六手比聲望條剩幾成）
@@ -1274,6 +1280,83 @@ async function run() {
           `換王牌面板 ${pickUp}「${pk.h3}」sel ${pk.sel} ${JSON.stringify(scP)} → ${swOk} ${JSON.stringify({ ace: sw.ace, bag: sw.bag, lastAce: sw.lastAce, own: sw.own, said: sw.said, toasts: sw.toasts, bagN: sw.bagN })}；` +
           `同一張 ${sameOk}；打過第 1 位 ${lateOk} ${JSON.stringify({ midFight, pos: late.pos, menu: late.menu, said: late.said, can: late.can, eng: late.eng })}`);
       } catch (e) { record(54, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #55 主站「帶去店裡對決」帶來的那張＋唱片資訊「在頻率光譜找它」（v5 第六項第一期）
+    if (want(55)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        const BR = 'xtc-skylarking';
+        // 新分頁到主站頻率光譜：換成空白頁（只驗網址；不在這裡載主站）
+        await ctx.route(/\/tune\/\?q=/, rt => rt.fulfill({ contentType: 'text/html', body: '<!doctype html><meta charset="utf-8"><title>tune</title>' }));
+        await page.addInitScript(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); })))
+          .observe(document, { childList: true, subtree: true }); });
+        // 1. 第一次玩（沒有存檔）帶卡進來
+        await openTitle(page, Q('&fast=1&card=' + BR));
+        await sleep(300);
+        const a = await page.evaluate(BR => { const U = window.DipLabContent.seeds.ui, al = window.DipLabContent.cards[BR].album, ls = JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null');
+          return { search: location.search, href: location.href, bring: window.__lab.save.bring, ls: ls && ls.bring, toasts: window.__toasts.slice(), want: U.bringToastFirst.replace('{album}', al), U }; }, BR);
+        const aOk = !/[?&]card=/.test(a.search) && /debug=1/.test(a.search) && a.bring && a.bring.id === BR && a.ls && a.ls.id === BR && a.toasts.includes(a.want);
+        // 2. 序章那一趟算走完（第二趟起才挑種子）＋唱片櫃有四張比它強的（排序本來會在它前面）；重新整理：不再收、不再吐司
+        const strong = await page.evaluate(BR => { const C = window.DipLabContent, E = window.DipLabEngine;
+          const ids = Object.keys(C.cards).filter(id => !C.cards[id].tier && !C.gifts.hall.includes(id) && id !== BR).sort((x, y) => E.peak(C.cards[y]) - E.peak(C.cards[x]) || E.power(C.cards[y]) - E.power(C.cards[x])).slice(0, 4);
+          const s = window.__lab.save; s.prologueDone = true; s.tutorialDone = true; s.lastAce = 'hall';
+          s.runs = [{ seedKey: 'e2e', runNo: 1, ace: 'hall', result: 'lose', reached: 3, bestStreak: 1, taken: 5, wins: 1 }];
+          window.__lab.own(ids, 'run'); return ids; }, BR);
+        await openTitle(page, Q('&fast=1'));
+        const b0 = await page.evaluate(() => ({ bring: window.__lab.save.bring, toasts: window.__toasts.slice() }));
+        // 3. 推門 → 再挑戰一趟 → 挑種子面板
+        await jsClick(page, '[data-a=push]');
+        const up = await page.waitForSelector('.lb-sheet.seeds .lb-ct', { timeout: 20000 }).then(() => true, () => false);
+        await sleep(700);
+        const sd = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.seeds'); if (!s) return null; const t = [...s.querySelectorAll('.lb-ct')];
+          return { tiles: t.map(x => x.dataset.cid), sel: t.filter(x => x.classList.contains('sel')).map(x => x.dataset.cid), badge: (t[0].querySelector('.badge.bring') || {}).textContent || '',
+            cnt: s.querySelector('.cnt').textContent, okDis: s.querySelector('[data-a=ok]').disabled, pressed: (t[0].querySelector('[data-pick]') || {}).getAttribute && t[0].querySelector('[data-pick]').getAttribute('aria-pressed'),
+            badgeIn: (() => { const b = t[0].querySelector('.badge.bring'); if (!b) return false; const r = b.getBoundingClientRect(), c = t[0].querySelector('.lb-cv').getBoundingClientRect(); return r.left >= c.left - 1 && r.right <= c.right + 1 && r.top >= c.top - 1; })() }; });
+        const scS = await noScroll(page);
+        if (SHOTS) await page.screenshot({ path: path.join(SHOTS, `wave2-c-seeds-${size}.png`) });
+        const sdOk = up && !!sd && sd.tiles[0] === BR && sd.sel.length === 1 && sd.sel[0] === BR && sd.badge === a.U.pickBrought && sd.badgeIn && sd.cnt === '1／3' && !sd.okDis && sd.pressed === 'true' &&
+          strong.every(id => sd.tiles.includes(id)) && scrollOk(scS);
+        // 4. 就這幾張 → 特價箱 → 來客：包包第一張是它、run.seeds、save.bring 清空、認識不算擁有
+        await jsClick(page, '.lb-sheet.seeds [data-a=ok]');
+        let nn = false; const t1 = Date.now();
+        while (!nn && Date.now() - t1 < 20000) { nn = (await screen(page)) === 'night'; if (!nn) { await answerBargain(page); await sleep(200); } }
+        await sleep(500);
+        const rr = await page.evaluate(BR => { const R = window.__lab.run, S = window.__lab.save, ls = JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null');
+          return { bag: R.bag.slice(), seeds: R.seeds.slice(), runNo: R.runNo, bring: S.bring, lsBring: ls && ls.bring, shelf: S.shelf[BR] || null }; }, BR);
+        const runOk = nn && rr.bag[0] === BR && rr.bag.length === 7 && JSON.stringify(rr.seeds) === JSON.stringify([BR]) && rr.bring === null && rr.lsBring === null && rr.shelf && !rr.shelf.own;
+        // 5. 唱片資訊「在頻率光譜找它 ↗」
+        const snd0 = await page.evaluate(() => ({ on: window.DipLabFx.soundOn(), pref: window.DipPlayer && window.DipPlayer.autoplayPreference ? window.DipPlayer.autoplayPreference() : null }));
+        await page.evaluate(BR => { window.__lab.info(BR); }, BR);
+        await page.waitForSelector('#cardInfoMask .ci-tune', { timeout: 5000 }).catch(() => {});
+        await sleep(500);
+        const ci = await page.evaluate(BR => { const l = document.querySelector('#cardInfoMask .ci-tune'); if (!l) return null; const c = window.DipLabContent.cards[BR], r = l.getBoundingClientRect(), row = l.closest('.tn');
+          const mk = document.getElementById('cardInfoMask');
+          return { href: l.getAttribute('href'), want: '/tune/?q=' + encodeURIComponent(c.artist + ' ' + c.album), target: l.target, rel: l.rel, text: l.textContent, stream: l.classList.contains('streaming-btn'), row: !!row && !!row.dataset.tune,
+            inView: r.left >= 0 && r.right <= innerWidth && r.top >= 0 && r.bottom <= innerHeight, h: Math.round(r.height), w: Math.round(r.width), oneLine: row ? Math.round(row.getBoundingClientRect().height) : 0, scrollX: mk.scrollWidth - mk.clientWidth }; }, BR);
+        if (SHOTS) await page.screenshot({ path: path.join(SHOTS, `wave2-c-cardinfo-${size}.png`) });
+        const popP = ctx.waitForEvent('page', { timeout: 6000 }).then(p => p, () => null);
+        await tapAt(page, '#cardInfoMask .ci-tune');
+        const pop = await popP; const popUrl = pop ? pop.url() : '';
+        if (pop) { await pop.waitForLoadState('domcontentloaded').catch(() => {}); await pop.close().catch(() => {}); }
+        await page.bringToFront(); await sleep(500);
+        const snd1 = await page.evaluate(() => ({ on: window.DipLabFx.soundOn(), pref: window.DipPlayer && window.DipPlayer.autoplayPreference ? window.DipPlayer.autoplayPreference() : null, ss: sessionStorage.getItem('dip:autoplay'), open: !!document.getElementById('cardInfoMask') }));
+        await closeInfo(page);
+        const ciOk = !!ci && ci.href === ci.want && ci.target === '_blank' && /noopener/.test(ci.rel) && ci.text === '在頻率光譜找它 ↗' && !ci.stream && ci.row && ci.inView && ci.h >= 30 && ci.oneLine <= 16 && ci.scrollX <= 1 &&
+          !!pop && popUrl.indexOf(ci.want.replace(/^\//, '')) >= 0 && snd0.on === true && snd1.on === true && snd1.pref !== 'off' && snd1.ss !== 'off' && snd1.open;
+        // 6. ?card=王牌 → 店裡沒有、不收；?card=（不是第一次玩）→ 下一趟那句
+        await page.evaluate(() => { window.__toasts.length = 0; });
+        await openTitle(page, Q('&fast=1&card=radiohead-ok-computer'));
+        const bad = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringMissing }));
+        await openTitle(page, Q('&fast=1&card=bob-dylan-john-wesley-harding'));
+        const g2 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringToast.replace('{album}', window.DipLabContent.cards['bob-dylan-john-wesley-harding'].album) }));
+        const badOk = !/card=/.test(bad.search) && bad.bring === null && bad.toasts.includes(bad.want) && !/card=/.test(g2.search) && g2.bring && g2.bring.id === 'bob-dylan-john-wesley-harding' && g2.toasts.includes(g2.want);
+        record(55, size, aOk && b0.bring && b0.bring.id === BR && !b0.toasts.length && sdOk && runOk && ciOk && badOk,
+          `收下 ${aOk}（網址 ${a.search}、吐司 ${JSON.stringify(a.toasts)}）、重新整理 ${JSON.stringify(b0)}；挑種子 ${sdOk} ${JSON.stringify(sd && { first: sd.tiles[0], n: sd.tiles.length, sel: sd.sel, badge: sd.badge, badgeIn: sd.badgeIn, cnt: sd.cnt })} ${JSON.stringify(scS)}；` +
+          `開局 ${runOk} ${JSON.stringify({ bag0: rr.bag[0], n: rr.bag.length, seeds: rr.seeds, bring: rr.bring, shelf: rr.shelf })}；唱片資訊 ${ciOk} ${JSON.stringify(ci)} 新分頁 ${popUrl} 聲音 ${JSON.stringify(snd0)}→${JSON.stringify(snd1)}；` +
+          `王牌／第二次 ${badOk} ${JSON.stringify(bad.toasts)} ${JSON.stringify(g2.toasts)}`);
+      } catch (e) { record(55, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 
