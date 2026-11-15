@@ -460,14 +460,22 @@ await section('9 charedit.js 純邏輯', () => {
   const r = L.result('阿明', { hair: 'afro' }); eq(r.name, '阿明', 'result.name'); eq(r.spec, CH.normalize({ hair: 'afro' }), 'result.spec＝v2 spec');
   ok(CJK.test(L.summary(CH.random(3))), 'summary 繁中');
   ok(L.shuffle(5).v === 2, 'shuffle 給 v2 spec');
+  // 點人換動作：7 個，第 6 個「背面」換成「轉一圈」（索引不變）；轉一圈＝正 → 側（朝右）→ 背 → 另一側（朝左）→ 正
+  eq(L.ACTIONS.map(a => a[0]), ['idle', 'walk', 'throw', 'cheer', 'dig', 'turn', 'hurt'], '動作 7 個、第 6 個是轉一圈');
+  eq(L.ACTIONS[5][1], '轉一圈', '轉一圈的字');
+  const seq = []; for (let t = 0; t < 2250; t += 50) { const f = L.turnAt(t, true), k = f.dir + (f.flip ? 'L' : ''); if (seq[seq.length - 1] !== k) seq.push(k); }
+  eq(seq, ['front', 'side', 'back', 'sideL'], '轉一圈的順序（一圈）');
+  eq([L.turnAt(2250, true), L.turnAt(2250 * 3 + 1000, true)], [{ dir: 'front', flip: false }, { dir: 'side', flip: false }], '轉完回正面、再一圈');
+  const seq2 = []; for (let t = 0; t < 1350; t += 50) { const f = L.turnAt(t, false); if (seq2[seq2.length - 1] !== f.dir) seq2.push(f.dir); }
+  eq(seq2, ['front', 'back'], '沒有側面時只轉正、背');
 });
 
 // ---------------------------------------------------------------- 瀏覽器（:8765 有開才跑）
 function up(url) { return new Promise(res => { const q = http.get(url, r => { r.resume(); res(r.statusCode === 200); }); q.on('error', () => res(false)); q.setTimeout(1500, () => { q.destroy(); res(false); }); }); }
-const BASE = 'http://localhost:8765/';
+const BASE = (process.env.LAB_BASE || 'http://localhost:8765').replace(/\/?$/, '/');
 let pw = null; try { pw = require('playwright'); } catch (e) { pw = null; }
 if (process.env.NO_BROWSER || !pw || !(await up(BASE + 'game-lab/chars.js'))) {
-  console.log('skip 瀏覽器（' + (process.env.NO_BROWSER ? 'NO_BROWSER' : !pw ? '沒有 playwright' : ':8765 沒開') + '）');
+  console.log('skip 瀏覽器（' + (process.env.NO_BROWSER ? 'NO_BROWSER' : !pw ? '沒有 playwright' : BASE + ' 沒開') + '）');
 } else {
   await section('10 瀏覽器：render＝compose、legacyParity、捏人畫面', async () => {
     const browser = await pw.chromium.launch({ proxy: { server: process.env.HTTPS_PROXY || 'http://localhost:1', bypass: 'localhost,127.0.0.1' } });
@@ -512,6 +520,14 @@ if (process.env.NO_BROWSER || !pw || !(await up(BASE + 'game-lab/chars.js'))) {
         ok(st.spec.v === 2 && st.spec.hair !== 'neat', '點了之後 spec 有變', st.spec);
         ok(await page.evaluate(() => window.__changes) >= 7, 'onChange 有叫');
         await page.locator('.ce-cv').click(); await page.locator('.ce-cv').click();
+        // 轉一圈：點到第 6 個動作，2.25 秒裡舞台的人換了四面（正、側、背、另一側），左右兩側互為鏡像
+        await page.evaluate(() => window.__ed.act(5));
+        const faces = [];
+        for (const ms of [300, 1100, 1550, 2000]) {
+          await page.evaluate(ms => new Promise(r => { const t0 = performance.now(); (function w() { performance.now() - t0 >= ms - 10 ? r() : requestAnimationFrame(w); })(); }), ms - (faces.length ? [300, 1100, 1550, 2000][faces.length - 1] : 0));
+          faces.push(await page.evaluate(() => { const c = document.querySelector('.ce-cv'), g = c.getContext('2d'), w = c.width, h = c.height, d = g.getImageData(0, 0, w, h).data; let x = 2166136261; for (let i = 0; i < d.length; i += 16) x = Math.imul(x ^ d[i] ^ d[i + 1] << 8, 16777619); return x >>> 0; }));
+        }
+        ok(new Set(faces).size === 4, '轉一圈：四個時間點畫面都不一樣 ' + w, faces);
         await page.locator('.ce-rand').click();
         const st2 = await page.evaluate(() => window.__ed.get());
         ok(JSON.stringify(st2.spec) !== JSON.stringify(st.spec), '隨機換了一個人');

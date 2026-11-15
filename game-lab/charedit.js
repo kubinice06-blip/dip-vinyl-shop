@@ -16,7 +16,7 @@
  *              沒有高度（或給 document.body）就自己開一層全螢幕白底。
  *
  * 版面（390×664、375×548、360×640 都不捲頁面）
- *   上：店裡一角（P2 斜俯視的木地板、牆、唱片箱）＋你站在中間，放大到 1 小人格＝3 美術格×3；會呼吸。點人換動作（站著→走路→丟唱片→歡呼→翻箱→背面）。
+ *   上：店裡一角（P2 斜俯視的木地板、牆、唱片箱）＋你站在中間，放大到 1 小人格＝3 美術格×3；會呼吸。點人換動作（站著→走路（側面）→丟唱片→歡呼→翻箱→轉一圈→被打中）。
  *       舞台的店景：有 DipLabStage.paintSlice／DipShop.paintSlice(ctx, { x, y, w, h, unit }) 就用店裡真的；沒有就畫同一套木色的一角。
  *       頭上是名牌（黑底白字，跟店裡的「你」一樣），點了就能改名。
  *   中：7 個分頁（臉、頭髮、帽子、眼鏡、上衣、下身、配件）。
@@ -254,7 +254,18 @@
     head: { c0: 0, c1: 16, r0: -2.5, r1: 8 }, face: { c0: 2, c1: 14, r0: 1, r1: 8 }, torso: { c0: 0, c1: 16, r0: 5, r1: 13 },
     legs: { c0: 1, c1: 15, r0: 9, r1: 15.4 }, full: { c0: -1, c1: 17, r0: -1, r1: 15.4 }, bag: { c0: -1, c1: 17, r0: 5, r1: 14 }
   };
-  var ACTIONS = [['idle', '站著'], ['walk', '走路'], ['throw', '丟唱片'], ['cheer', '歡呼'], ['dig', '翻箱'], ['back', '背面'], ['hurt', '被打中']];
+  var ACTIONS = [['idle', '站著'], ['walk', '走路'], ['throw', '丟唱片'], ['cheer', '歡呼'], ['dig', '翻箱'], ['turn', '轉一圈'], ['hurt', '被打中']];
+  // 轉一圈（v5 第五項第二步）：正 → 側（朝右）→ 背 → 另一側（朝左＝鏡像）→ 正，一圈 2.25 秒、轉完在正面多停一下再轉；站姿呼吸
+  //   chars.js 沒有側面（DIRS 沒有 'side'）時只轉正、背兩面
+  var TURN = [['front', false, 900], ['side', false, 450], ['back', false, 450], ['side', true, 450]];
+  function turnAt(ph, hasSide) {
+    var seq = hasSide ? TURN : [TURN[0], TURN[2]], tot = 0, i;
+    for (i = 0; i < seq.length; i++) tot += seq[i][2];
+    var k = ((ph % tot) + tot) % tot;
+    for (i = 0; i < seq.length; i++) { if (k < seq[i][2]) return { dir: seq[i][0], flip: seq[i][1] }; k -= seq[i][2]; }
+    return { dir: 'front', flip: false };
+  }
+  LOGIC.ACTIONS = ACTIONS; LOGIC.turnAt = turnAt;
 
   function open(container, init, cb) {
     var CH = getCH(); if (!CH || typeof document === 'undefined') return null;
@@ -313,13 +324,13 @@
       draw();
     }
     function curPose(t) {
-      var a = ACTIONS[state.act][0], ph = t - state.t0;
+      var a = ACTIONS[state.act][0], ph = t - state.t0, side = !!(CH.DIRS && CH.DIRS.indexOf('side') >= 0);
       if (a === 'idle') return { pose: 'idle', frame: Math.floor(ph / 520) % 2 };
-      if (a === 'walk') return { pose: 'walk', frame: Math.floor(ph / 190) % 2 };
+      if (a === 'walk') return { pose: 'walk', frame: Math.floor(ph / 190) % 2, dir: side ? 'side' : 'front' };   // 走路看側面（店裡最常看到自己的就是橫走）
       if (a === 'throw') { var k = ph % 1500; return { pose: k < 700 ? 'throw' : k < 1100 ? 'throw' : 'idle', frame: k < 700 ? 0 : 1, disc: k < 700 ? 'hand' : null, fly: k >= 700 && k < 1100 ? (k - 700) / 400 : null }; }
       if (a === 'cheer') return { pose: 'cheer', frame: Math.floor(ph / 260) % 2 };
       if (a === 'dig') return { pose: 'dig', frame: Math.floor(ph / 640) % 2, disc: Math.floor(ph / 640) % 2 ? 'held' : null };
-      if (a === 'back') return { pose: 'idle', frame: Math.floor(ph / 520) % 2, back: true };
+      if (a === 'turn') { var tn = turnAt(ph, side); return { pose: 'idle', frame: Math.floor(ph / 520) % 2, dir: tn.dir, flip: tn.flip }; }
       return { pose: 'hurt', frame: Math.floor(ph / 120) % 2, tint: (ph % 1200) < 240 ? '#ff3030' : null };
     }
     function draw(t) {
@@ -328,7 +339,7 @@
       var g = cv.getContext('2d'); g.imageSmoothingEnabled = false;
       g.drawImage(scene.cv, 0, 0, artW * U, artH * U);
       var P = curPose(t), fx = scene.standX * U, fy = scene.standY * U;
-      var o = { scale: 3 * U, back: !!P.back }; if (P.tint) o.tint = P.tint;
+      var o = { scale: 3 * U, dir: P.dir || 'front', flip: !!P.flip }; if (P.tint) o.tint = P.tint;
       // 玻璃門：人先畫在另一張畫布，染一層冷色、半透明疊上去（倒影），再畫雨痕和門框
       var pg = g;
       if (scene.glass && refl) { pg = refl.getContext('2d'); pg.imageSmoothingEnabled = false; pg.clearRect(0, 0, refl.width, refl.height); }
