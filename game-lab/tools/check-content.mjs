@@ -15,6 +15,7 @@
 //   頻率（v5 第六項第二期）：C.tunes 八格齊全（order／names／colors／label）、每張卡都有 tune 而且在八格內、10 位客人各一個 tune（八格內、每格最多 2 位）、C.radio 的字；
 //     跟主站比（tuneWarnings，走鐘只警告、不擋）：C.tunes 的名字＝data/mood/card-moods.json names、顏色＝dip-tune.js CELL_COLOR、順序＝dip-tune.js ORDER；
 //     每張卡的 tune＝現在的 card-moods.json 判的格（主站每批上架都會重建這份，遊戲是烘焙快照；不一樣就用 bake-cards.mjs --covers-only --no-verify 重烘）。
+//   遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json 跟 cards.js 一致（tools/build-pool-index.mjs 產生；扣三張王牌、每個 cardId 主站卡池找得到）。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十六區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
@@ -29,6 +30,7 @@ import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
 import { fileURLToPath, pathToFileURL } from 'url';
+import { poolIndexProblems } from './build-pool-index.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const LAB = path.resolve(HERE, '..');
@@ -705,7 +707,8 @@ const isMain = process.argv[1] && import.meta.url === pathToFileURL(path.resolve
 if (isMain) {
   const C = require(path.join(LAB, 'content.js'));
   const E = require(path.join(LAB, 'engine.js'));
-  const bad = contentProblems(C, E);
+  // 遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json＝cards.js 算出來的 { 主站 cardId: 遊戲卡 id }（扣王牌）；漂掉主站「帶去店裡對決」會帶錯張
+  const bad = contentProblems(C, E).concat(poolIndexProblems().map(x => '遊戲卡池索引：' + x));
   for (const x of tuneWarnings(C)) console.log('  注意（頻率走鐘，只警告）：' + x);
   if (bad.length) { console.log('content 自檢沒過（' + bad.length + '）：'); bad.forEach(b => console.log('  ✗ ' + b)); process.exitCode = 1; }
   else {
