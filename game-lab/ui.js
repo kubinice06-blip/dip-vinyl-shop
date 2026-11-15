@@ -2859,6 +2859,7 @@
   //   點家具＝先走過去再開面板（照翻箱）；頂欄下面三顆 DOM 鈕做同一件事（給點不準、讀屏的人）。不碰規則、經濟。
   var HOME_PAGE = 12;                                   // 唱片架分頁：每頁 12 張（六欄兩排）
   var TUNE_V = 74;                                      // ../dip-tune.js 的 ?v＝主站 index.html 那個號（主站改 dip-tune 時這裡跟著加）
+  var TUNE_WAIT = 15000;                                // 等 dip-tune.js 最多 15 秒（慢的手機網路 65 KB 壓縮後約 2 秒）：等不到就吐司、收回
   // 擁有的唱片，照唱片櫃頁的排法：店內取得 → 藏家王牌 → 老闆送的（同一類最近收的在前）
   function homeOwnedIds() {
     var ORD = { run: 0, boss: 1, gift: 2 };
@@ -2881,23 +2882,24 @@
   }
   // 唱盤上那張：正在出聲的那張（放完接下一張也跟著換）；沒在出聲＝你最後放上去的那張（還在抓試聽：照轉；抓不到或停了：抬著針），
   //   都沒有才看「唱盤上那張」（靜音時 music 只換那張）。不能直接看 music.current()：剛按「放唱盤」時它還是上一首（抓檔中）
+  //   「你最後放上去的那張」只記你擁有的（裁定：不是你的只進想要清單，不上唱盤）；控制台開著時不動（店景凍住、面板蓋著，星圖試聽的那張不是你放上唱盤的）
   function deckRec(id, state) { var c = card(id); return c ? { rec: { card: id, attr: E.topAttr(c), kind: c.tier ? 'ace' : null }, state: state } : null; }
   function homeSyncDeck() {
-    if (UI.screen !== 'home' || !UI.stage || UI.going) return;
+    if (UI.screen !== 'home' || !UI.stage || UI.going || UI.tune) return;
     var f = FX(), c = f && f.music && f.music.current && f.music.current(), on = !!(c && card(c.id) && f.music.playing()), d = null;
     var pend = !!(UI.homeDeckId && card(UI.homeDeckId) && UI.homeDeckAt && now() - UI.homeDeckAt < 4000 && !(on && c.id === UI.homeDeckId));   // 剛放上去、還在抓試聽：先顯示它（上一首還在響也一樣）
     if (pend) d = deckRec(UI.homeDeckId, 'spin');
-    else if (on) { UI.homeDeckId = c.id; d = deckRec(c.id, 'spin'); }
-    else if (UI.homeDeckId && card(UI.homeDeckId)) d = deckRec(UI.homeDeckId, 'armMid');
-    else if (c && card(c.id)) d = deckRec(c.id, 'armMid');
+    else if (on) { if (isOwned(c.id)) UI.homeDeckId = c.id; d = deckRec(c.id, 'spin'); }
+    else if (UI.homeDeckId && isOwned(UI.homeDeckId)) d = deckRec(UI.homeDeckId, 'armMid');
+    else if (c && isOwned(c.id)) d = deckRec(c.id, 'armMid');
     stg('deck', d);
-    // 面板上「唱盤上」那一行（小封面＋專輯＋藝人；點封面＝唱片資訊）
-    var np = qs('.lb-homenp', UI.panel), id = d && d.rec.card, key = (id || '') + '|' + (d ? d.state : '');
+    // 面板上「唱盤上」那一行（小封面＋專輯＋藝人；點封面＝唱片資訊）；唱盤空著：有能放的才寫「點唱盤挑一張」，沒有就不出這一行（點了只會吐司「沒東西放」）
+    var np = qs('.lb-homenp', UI.panel), id = d && d.rec.card, idle = !d && homePlayable().length > 0, key = (id || '') + '|' + (d ? d.state : idle ? 'idle' : '');
     if (np && np._k !== key) {
       np._k = key;
       var cc = id && card(id);
       np.innerHTML = cc ? coverHTML(cc, { size: 40, badge: false }) + '<div class="tx"><span class="k">' + esc(line('homeNow')) + (d.state === 'spin' ? '<span class="rec" aria-hidden="true"></span>' : '') + '</span><b>' + esc(cc.album) + '</b><span class="ar">' + esc(cc.artist) + '</span></div>'
-        : '<p class="sub">' + esc(line('homeIdle')) + '</p>';
+        : idle ? '<p class="sub">' + esc(line('homeIdle')) + '</p>' : '';
     }
   }
   function homePut(id, o) {
@@ -3015,8 +3017,15 @@
   }
 
   // ---- 小控制台：推近成頻率光譜的星圖（主站 ../dip-tune.js，同一份；不搬進 game-lab、不複製）
-  function loadScript(src) {
-    return new Promise(function (res, rej) { var sc = D.createElement('script'); sc.src = src; sc.async = true; sc.onload = function () { res(); }; sc.onerror = function () { sc.remove(); rej(new Error('載入失敗 ' + src)); }; D.head.appendChild(sc); });
+  // ms：等多久就當失敗（請求卡住不回時不要永遠等；逾時後那支程式若晚到，下次 tuneLib 直接用）
+  function loadScript(src, ms) {
+    return new Promise(function (res, rej) {
+      var sc = D.createElement('script'), tm = ms ? setTimeout(function () { rej(new Error('載入逾時 ' + src)); }, ms) : 0;
+      sc.src = src; sc.async = true;
+      sc.onload = function () { clearTimeout(tm); res(); };
+      sc.onerror = function () { clearTimeout(tm); sc.remove(); rej(new Error('載入失敗 ' + src)); };
+      D.head.appendChild(sc);
+    });
   }
   function threeReady() {
     if (W.THREE && W.THREE.OrbitControls) return Promise.resolve();
@@ -3026,7 +3035,7 @@
   }
   function tuneLib() {
     if (W.DipTune) return Promise.resolve(W.DipTune);
-    if (!UI.tuneLibP) UI.tuneLibP = loadScript('../dip-tune.js?v=' + TUNE_V).then(function () { if (!W.DipTune) throw new Error('DipTune 沒載到'); return W.DipTune; }, function (e) { UI.tuneLibP = null; throw e; });
+    if (!UI.tuneLibP) UI.tuneLibP = loadScript('../dip-tune.js?v=' + TUNE_V, TUNE_WAIT).then(function () { if (!W.DipTune) throw new Error('DipTune 沒載到'); return W.DipTune; }, function (e) { UI.tuneLibP = null; throw e; });
     return UI.tuneLibP;
   }
   // 點了控制台、人還在走過去：先抓 dip-tune.js 與 three（座標檔與面板圖等 DipTune.start() 建星圖時才抓，跟 three 一起等）
@@ -3050,6 +3059,7 @@
     if (f && f.music && f.music.onEnded) f.music.onEnded(function (c) { if (UI.tune && st && st.status === 'playing' && c && st.id === c.id) emit({ status: 'stopped', code: '', artist: st.artist, album: st.album, id: c.id }); });
     return {
       playAlbum: function (o) {
+        if (!UI.tune) return Promise.resolve(false);   // 控制台已經收掉（例如建星圖途中按 ↩）：星圖晚到的試聽不准出聲、不開聲音、不上唱盤
         var c = tuneCardOf(o), my = ++tok, fx = FX();
         if (!c || !c.previewUrl || !fx || !fx.music) { emit({ status: 'error', code: 'NO-PREVIEW', artist: o && o.artist, album: o && o.album }); return Promise.resolve(false); }
         if (!soundOn()) { soundUp(); }
@@ -3107,15 +3117,41 @@
     if (!had) { save.want.push(c.id); if (save.want.length > 200) save.want.shift(); persist(); }
     toast(fill(line(had ? 'homeWantAgain' : 'homeWant'), { album: c.album }), 'keep');
     // 留在星圖上：當成「從結果頁回到星圖」（同一張不重播）
-    var DT = W.DipTune; if (DT && UI.tune) setTimeout(function () { if (UI.tune) try { DT.start(); } catch (e) { console.error(e); } }, 60);
+    var DT = W.DipTune; if (DT && UI.tune) setTimeout(function () { if (UI.tune) tuneStart(DT); }, 60);
+  }
+  // DipTune.start()：第一次會建星圖（抓座標檔、等 three，慢的網路要好幾秒）。建的途中收掉又重開：等那一次跑完再 start（不然同一組 DOM 建兩次＝兩條星圖迴圈、輪子與搜尋的監聽兩份）；
+  //   跑完時控制台已經收掉：再 stop 一次（建完它會挑最近那張、0.7 秒後試聽；收掉那時 stop 過了，但那時還沒挑）
+  function tuneStart(DT) {
+    var p = UI.tuneStartP = Promise.resolve(UI.tuneStartP).then(function () {
+      if (!UI.tune) return;
+      var r = DT.start();
+      tuneBackBtn(UI.tuneHost, true);   // build() 一開頭就把面板畫好了（還在等資料）：返回鍵先改名、給焦點
+      return r;
+    }).catch(function (e) { console.error(e); }).then(function () {
+      if (!UI.tune) try { DT.stop(); } catch (e) { console.error(e); }
+      if (UI.tuneStartP === p) UI.tuneStartP = null;
+    });
+    return p;
+  }
+  // 星圖的返回鍵是主站那顆（讀屏與滑鼠提示寫主站頁名「回找一張來聽」）：遊戲裡改叫「回房間」、看得到字（樣式在 style.css 的 #labTune .tune-back）
+  function tuneBackBtn(host, focus) {
+    var bk = host && qs('#tuneBack', host); if (!bk) return;
+    var t = line('homeTuneBack') || '回房間';
+    if (bk.getAttribute('data-lb') !== '1') { bk.setAttribute('data-lb', '1'); bk.setAttribute('aria-label', t); bk.title = t; bk.innerHTML = '<span aria-hidden="true">↩</span>' + esc(t); }
+    var a = D.activeElement;
+    if (focus && !(a && a !== D.body && a !== bk && host.contains(a))) try { bk.focus({ preventScroll: true }); } catch (_) {}   // 已經在星圖裡點了別的（例如搜尋框）就不搶
   }
   function tuneKey(e) { if (e.key === 'Escape' && UI.tune && !(CI() && CI().isOpen())) { e.preventDefault(); closeTuneConsole(); } }
   // 推近：舞台以控制台為中心放大＋淡出（減少動態＝150 ms 淡入淡出），接著蓋上全螢幕一層、DipTune.start()；店景迴圈停掉（被蓋住了不用畫）
   function openTuneConsole() {
     if (UI.tune || UI.screen !== 'home') return;
     var host = UI.tuneHost;
-    if (!host) { host = UI.tuneHost = el('div', 'lb-tune'); host.id = 'labTune'; host.setAttribute('role', 'dialog'); host.setAttribute('aria-label', line('homeConsole') || '控制台'); host.hidden = true; app().appendChild(host); }
-    else if (!host.isConnected) app().appendChild(host);
+    if (!host) {
+      host = UI.tuneHost = el('div', 'lb-tune'); host.id = 'labTune'; host.setAttribute('role', 'dialog'); host.setAttribute('aria-label', line('homeConsole') || '控制台'); host.hidden = true; app().appendChild(host);
+      host.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-a=tuneBack]'); if (b) closeTuneConsole(); });
+    } else if (!host.isConnected) app().appendChild(host);
+    // 星圖還沒畫（第一次開、dip-tune.js 還在路上）：先放遊戲自己的「載入中」＋「回房間」，不然是一整片空的黑幕、觸控出不去；dip-tune 的 build() 會整個換掉
+    if (!qs('#tuneApp', host)) host.innerHTML = '<div class="lb-tune-wait"><p role="status">' + esc(line('homeTuneLoading')) + '</p><button type="button" class="lb-btn" data-a="tuneBack">' + esc(line('homeTuneBack')) + '</button></div>';
     var tok = UI.homeTok, t0 = now(), sh = UI.stageHost, r = stg('hotRect', 'console'), hb = sh.getBoundingClientRect();
     UI.tune = { at: t0, tok: tok, focus: D.activeElement };
     D.body.classList.add('lb-tune-open');
@@ -3125,20 +3161,22 @@
     sh.classList.add(reduced ? 'lb-zoom-fade' : 'lb-zoom-in');
     var zoomed = new Promise(function (res) { setTimeout(res, reduced ? 150 : 380); });
     var lib = tuneLib();
+    lib.catch(function () {});   // 載入失敗在推近那 0.38 秒內就回來（預抓已經失敗、這裡重抓）：先接住，不然算沒人處理的錯誤；真的處理在下面
     return zoomed.then(function () {
       if (!UI.tune || UI.tune.at !== t0) return;
       sh.classList.remove('lb-zoom-in', 'lb-zoom-fade'); sh.classList.add('lb-zoomed');   // 放大完：藏起來（不留著 2.6 倍的變形，#app 量起來才不會多出一截）
       stg('freeze', true);
       host.hidden = false; host.classList.add('in');
+      var wb = qs('.lb-tune-wait [data-a=tuneBack]', host); if (wb) try { wb.focus({ preventScroll: true }); } catch (_) {}
       return lib.then(function (DT) {
         if (!UI.tune || UI.tune.at !== t0) return;
         tuneConfigure(DT);
-        return Promise.resolve(DT.start()).then(function () {
+        return tuneStart(DT).then(function () {
           if (!UI.tune || UI.tune.at !== t0) return;
           tuneMine(DT);
-          var bk = host.querySelector('#tuneBack'); if (bk) try { bk.focus({ preventScroll: true }); } catch (_) {}
+          tuneBackBtn(host, true);
         });
-      }, function (e) { console.error(e); toast(line('homeTuneFail')); closeTuneConsole(); });
+      }, function (e) { if (!UI.tune || UI.tune.at !== t0) return; console.error(e); toast(line('homeTuneFail')); closeTuneConsole(); });   // 已經收掉（按了回房間）就不吐司、不記
     });
   }
   // 收掉：DipTune.stop()（停試聽、音效、iOS 內建瀏覽器的鎖）、藏起那一層（不移除：dip-tune 記著裡面的元素，下次開直接重用）、解凍店景、反向縮回

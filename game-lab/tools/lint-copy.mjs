@@ -431,7 +431,7 @@ else {
 // 店裡熱點、今晚來客、台北預告（C.shopLines ↔ C.shopLineTags 同形狀）
 if (C.shopLines) {
   const SHORT = ['poster', 'cat', 'locked', 'binBusy', 'ownerHint', 'nightIntro', 'taipeiHere', 'backToShop', 'bin', 'booth', 'boothEmpty',
-    'homeBtn', 'homeTitle', 'homeSub', 'homeShelf', 'homeDeck', 'homeConsole', 'homePut', 'homeStop', 'homeNow', 'homeIdle', 'homeWantN', 'homeDeckEmpty', 'homeOnDeck', 'homeWant', 'homeWantAgain', 'homeTuneFail'];
+    'homeBtn', 'homeTitle', 'homeSub', 'homeShelf', 'homeDeck', 'homeConsole', 'homePut', 'homeStop', 'homeNow', 'homeIdle', 'homeWantN', 'homeDeckEmpty', 'homeOnDeck', 'homeWant', 'homeWantAgain', 'homeTuneFail', 'homeTuneLoading', 'homeTuneBack'];
   const sceneOf = key => key === 'nightIntro' ? '今晚來客・第一次（soft 提示）' : /^home/.test(key) ? '你家・聆聽室' : /^taipei|backToShop/.test(key) ? '台北地圖預告' : '店裡熱點（點了說一句）';
   const walkS = (val, tag, key, where) => {
     if (Array.isArray(val)) return val.forEach((v, k) => walkS(v, Array.isArray(tag) ? tag[k] : tag, key, where + '[' + k + ']'));

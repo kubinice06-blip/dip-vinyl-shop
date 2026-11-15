@@ -847,7 +847,9 @@
     homeWantN: L('想要清單 {n} 張', '新'),
     homeWant: L('《{album}》加進想要清單。', '新'),
     homeWantAgain: L('《{album}》已經在想要清單裡。', '新'),
-    homeTuneFail: L('控制台開不起來，等一下再試。', '新')
+    homeTuneFail: L('控制台開不起來，等一下再試。', '新'),
+    homeTuneLoading: L('控制台開機中…', '新'),
+    homeTuneBack: L('回房間', '新')
   };
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
@@ -856,7 +858,8 @@
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）',
     homeBtn: '（畫面字）', homeTitle: '（畫面字）', homeSub: '（畫面字）', homeNote: '（畫面字）', homeEmpty: '（畫面字）', homeShelf: '（畫面字）', homeDeck: '（畫面字）',
     homeConsole: '（畫面字）', homeShelfSub: '（畫面字）', homeDeckSub: '（畫面字）', homeDeckEmpty: '（畫面字）', homePut: '（畫面字）', homeOnDeck: '（畫面字）', homeStop: '（畫面字）', homeNow: '（畫面字）', homeIdle: '（畫面字）',
-    homeWantN: '（畫面字）', homeWant: '（畫面字）', homeWantAgain: '（畫面字）', homeTuneFail: '（畫面字）' };
+    homeWantN: '（畫面字）', homeWant: '（畫面字）', homeWantAgain: '（畫面字）', homeTuneFail: '（畫面字）',
+    homeTuneLoading: '（畫面字）', homeTuneBack: '（畫面字）' };
 
   // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號，{n} 一律代入千分位字串 engine.moneyText(n)：$1,200）
   C.shopUi = {

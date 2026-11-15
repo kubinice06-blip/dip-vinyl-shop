@@ -379,7 +379,7 @@ export function contentProblems(C, E) {
   for (const k of ['poster', 'cat', 'locked', 'binBusy', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop', 'bin', 'booth', 'boothEmpty']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
   // 你家（聆聽室，v5 第六項第三期）：ui.js 的房間段讀這些鍵；{album}／{n} 要留著給 UI 代入
   for (const k of ['homeBtn', 'homeTitle', 'homeSub', 'homeNote', 'homeEmpty', 'homeShelf', 'homeDeck', 'homeConsole', 'homeShelfSub', 'homeDeckSub', 'homeDeckEmpty',
-    'homePut', 'homeOnDeck', 'homeStop', 'homeNow', 'homeIdle', 'homeWantN', 'homeWant', 'homeWantAgain', 'homeTuneFail']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k + '（你家）');
+    'homePut', 'homeOnDeck', 'homeStop', 'homeNow', 'homeIdle', 'homeWantN', 'homeWant', 'homeWantAgain', 'homeTuneFail', 'homeTuneLoading', 'homeTuneBack']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k + '（你家）');
   for (const k of ['homeOnDeck', 'homeWant', 'homeWantAgain']) ok(String(SL[k] || '').includes('{album}'), 'shopLines.' + k + ' 要有 {album}');
   ok(String(SL.homeWantN || '').includes('{n}'), 'shopLines.homeWantN 要有 {n}');
   ok(String(SL.homePut || '').length <= 4, 'shopLines.homePut（唱片架每張下面的小鈕）≤4 字');

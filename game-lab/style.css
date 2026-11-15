@@ -753,6 +753,14 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-tune[hidden]{display:none;}
 .lb-tune.in{animation:lbFadeIn .2s ease-out;}
 body.lb-tune-open{overflow:hidden;}
+/* 星圖還沒畫好（dip-tune.js 還在路上）：遊戲自己的「控制台開機中…」＋「回房間」，dip-tune 的 build() 會整個換掉 */
+.lb-tune-wait{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;color:#9aa088;font-size:13px;letter-spacing:.08em;text-align:center;}
+.lb-tune-wait p{margin:0;}
+.lb-tune-wait .lb-btn{min-width:120px;}
+/* 星圖的返回鍵（主站那顆 24×24 的 ↩）：遊戲裡寫出「回房間」、點擊範圍大一點（ui.js tuneBackBtn 換字與讀屏名） */
+#labTune .tune-back{width:auto;height:32px;padding:0 10px;gap:4px;font-size:12px;letter-spacing:.06em;}
+#labTune .tune-back span{font-size:14px;line-height:1;}
+.lb-panel.home .lb-homenp:empty{display:none;}
 @media (prefers-reduced-motion:reduce){
   .lb-stage.lb-zoom-out{animation:lbFadeIn .15s ease-out;}
   .lb-homenp .k .rec{animation:none;}
