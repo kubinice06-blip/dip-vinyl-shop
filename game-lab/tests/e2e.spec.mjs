@@ -1324,8 +1324,9 @@ async function run() {
         while (!nn && Date.now() - t1 < 20000) { nn = (await screen(page)) === 'night'; if (!nn) { await answerBargain(page); await sleep(200); } }
         await sleep(500);
         const rr = await page.evaluate(BR => { const R = window.__lab.run, S = window.__lab.save, ls = JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null');
-          return { bag: R.bag.slice(), seeds: R.seeds.slice(), runNo: R.runNo, bring: S.bring, lsBring: ls && ls.bring, shelf: S.shelf[BR] || null }; }, BR);
-        const runOk = nn && rr.bag[0] === BR && rr.bag.length === 7 && JSON.stringify(rr.seeds) === JSON.stringify([BR]) && rr.bring === null && rr.lsBring === null && rr.shelf && !rr.shelf.own;
+          return { bag: R.bag.slice(), seeds: R.seeds.slice(), runNo: R.runNo, tag: R.seedKey + '#' + (R.runNo || 1), bring: S.bring, lsBring: ls && ls.bring, shelf: S.shelf[BR] || null }; }, BR);
+        // 帶上場的那張記成這一趟認識的（at＝seedKey#runNo：NEW 章、「這一趟新認識」找得到；審查：之前少了 #runNo）
+        const runOk = nn && rr.bag[0] === BR && rr.bag.length === 7 && JSON.stringify(rr.seeds) === JSON.stringify([BR]) && rr.bring === null && rr.lsBring === null && rr.shelf && !rr.shelf.own && rr.shelf.at === rr.tag;
         // 5. 唱片資訊「在頻率光譜找它 ↗」
         const snd0 = await page.evaluate(() => ({ on: window.DipLabFx.soundOn(), pref: window.DipPlayer && window.DipPlayer.autoplayPreference ? window.DipPlayer.autoplayPreference() : null }));
         await page.evaluate(BR => { window.__lab.info(BR); }, BR);
@@ -1352,10 +1353,25 @@ async function run() {
         await openTitle(page, Q('&fast=1&card=bob-dylan-john-wesley-harding'));
         const g2 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringToast.replace('{album}', window.DipLabContent.cards['bob-dylan-john-wesley-harding'].album) }));
         const badOk = !/card=/.test(bad.search) && bad.bring === null && bad.toasts.includes(bad.want) && !/card=/.test(g2.search) && g2.bring && g2.bring.id === 'bob-dylan-john-wesley-harding' && g2.toasts.includes(g2.want);
-        record(55, size, aOk && b0.bring && b0.bring.id === BR && !b0.toasts.length && sdOk && runOk && ciOk && badOk,
+        // 7. 兩個分頁（審查）：遊戲分頁 A 開著（記憶體裡是剛才那張 Dylan）→ 主站「帶去店裡對決」開出遊戲分頁 C 收下 BR；
+        //    C 開著時 A 存一次檔（不准把 C 收的蓋掉）→ 關掉 C → A 推門：挑種子第一張是 BR
+        const Cp = await ctx.newPage(); track(Cp);
+        await openTitle(Cp, Q('&fast=1&card=' + BR));
+        const c7 = await Cp.evaluate(() => (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null);
+        await page.bringToFront();
+        const a7 = await page.evaluate(() => { window.__lab.own([], 'run'); return { mem: window.__lab.save.bring, ls: (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null }; });
+        await Cp.close();
+        await jsClick(page, '[data-a=push]'); await sleep(450); await jsClick(page, '[data-a=push]');   // 這一趟還沒打完：按兩下才重新推門
+        const up7 = await page.waitForSelector('.lb-sheet.seeds .lb-ct', { timeout: 20000 }).then(() => true, () => false);
+        await sleep(500);
+        const sd7 = await page.evaluate(() => { const t = [...document.querySelectorAll('.lb-sheet.seeds .lb-ct')]; return { first: t[0] && t[0].dataset.cid, sel: t.filter(x => x.classList.contains('sel')).map(x => x.dataset.cid),
+          ls: (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null }; });
+        const twoOk = !!c7 && c7.id === BR && !!a7.ls && a7.ls.id === BR && !!a7.mem && a7.mem.id === BR && up7 && sd7.first === BR && sd7.sel.length === 1 && sd7.sel[0] === BR && !!sd7.ls && sd7.ls.id === BR;
+        record(55, size, aOk && b0.bring && b0.bring.id === BR && !b0.toasts.length && sdOk && runOk && ciOk && badOk && twoOk,
           `收下 ${aOk}（網址 ${a.search}、吐司 ${JSON.stringify(a.toasts)}）、重新整理 ${JSON.stringify(b0)}；挑種子 ${sdOk} ${JSON.stringify(sd && { first: sd.tiles[0], n: sd.tiles.length, sel: sd.sel, badge: sd.badge, badgeIn: sd.badgeIn, cnt: sd.cnt })} ${JSON.stringify(scS)}；` +
           `開局 ${runOk} ${JSON.stringify({ bag0: rr.bag[0], n: rr.bag.length, seeds: rr.seeds, bring: rr.bring, shelf: rr.shelf })}；唱片資訊 ${ciOk} ${JSON.stringify(ci)} 新分頁 ${popUrl} 聲音 ${JSON.stringify(snd0)}→${JSON.stringify(snd1)}；` +
-          `王牌／第二次 ${badOk} ${JSON.stringify(bad.toasts)} ${JSON.stringify(g2.toasts)}`);
+          `王牌／第二次 ${badOk} ${JSON.stringify(bad.toasts)} ${JSON.stringify(g2.toasts)}；` +
+          `兩個分頁 ${twoOk} ${JSON.stringify({ c: c7 && c7.id, aLs: a7.ls && a7.ls.id, aMem: a7.mem && a7.mem.id, first: sd7.first, sel: sd7.sel, ls: sd7.ls && sd7.ls.id })}`);
       } catch (e) { record(55, size, false, 'error ' + e.message); }
       await ctx.close();
     }

@@ -204,7 +204,8 @@
     // 上次序章挑的特價箱三張（重看教學用；不合法就當沒有）
     if (s.lastBargain != null && !(Array.isArray(s.lastBargain) && s.lastBargain.length === 3 && s.lastBargain.every(function (id) { return typeof id === 'string' && card(id); }))) s.lastBargain = null;
     // 主站帶來的那張（v5 第六項第一期）：不是 {id}、卡不在了、是王牌（帶不進來）就當沒有
-    if (s.bring != null && !(s.bring && typeof s.bring === 'object' && typeof s.bring.id === 'string' && card(s.bring.id) && E.canSeed(C, s.bring.id))) s.bring = null;
+    if (s.bring != null && !validBring(s.bring)) s.bring = null;
+    bringSeen = bringKey(s.bring);
     s.settings = Object.assign({}, d.settings, s.settings || {});
     var b = s.best && typeof s.best === 'object' ? s.best : {};
     s.best = { far: Math.max(0, b.far | 0), bestStreak: Math.max(0, b.bestStreak | 0),
@@ -230,7 +231,23 @@
   }
   function persist() {
     if (UI.saveReadOnly || UI.noSave) return;
-    try { W.localStorage.setItem(KEY, JSON.stringify(save)); } catch (_) { /* 寫不進去不影響遊戲 */ }
+    syncBring();
+    try { W.localStorage.setItem(KEY, JSON.stringify(save)); bringSeen = bringKey(save.bring); } catch (_) { /* 寫不進去不影響遊戲 */ }
+  }
+  // 主站帶來的那張（save.bring）跨分頁同步（審查：遊戲 A →「在頻率光譜找它」→ 光譜分頁 →「帶去店裡對決」開出遊戲分頁 C；
+  //   C 收下寫進存檔，A 還開著、記憶體裡是舊的。A 一存檔整份寫回去就把它蓋掉）。bringSeen＝這個分頁上次讀到／寫進去的那張；
+  //   存檔裡的跟它不一樣＝別的分頁收了新的（或用掉了）→ 改用存檔裡的。只同步 bring，其他欄位照舊（同一份存檔兩個分頁都在玩，後存的贏）
+  var bringSeen = '';
+  function validBring(b) { return !!(b && typeof b === 'object' && typeof b.id === 'string' && card(b.id) && E.canSeed(C, b.id)); }
+  function bringKey(b) { return b ? b.id + '@' + b.at : ''; }
+  function syncBring() {
+    if (!save || UI.saveReadOnly || UI.noSave) return;
+    var s = null;
+    try { var raw = W.localStorage.getItem(KEY); if (!raw) return; s = JSON.parse(raw); } catch (_) { return; }
+    if (!s || typeof s !== 'object' || s.v !== SAVE_V) return;
+    var b = validBring(s.bring) ? { id: s.bring.id, at: s.bring.at } : null;
+    if (bringKey(b) === bringSeen) return;               // 沒有別的分頁動過：這個分頁的（可能剛收下、剛用掉）照舊
+    save.bring = b; bringSeen = bringKey(b);
   }
   // 唱片櫃：at＝哪一趟第一次認識（seedKey#runNo）；seen＝打開唱片櫃看過了沒（NEW 只標「這一趟新認識、還沒看過」的，ART-17）
   function runTag(r) { r = r || save.run; return r ? r.seedKey + '#' + (r.runNo || 1) : seedKey(); }
@@ -1409,8 +1426,9 @@
     var ci = CI();
     if (ci && ci.isOpen()) { toastQ.push([text, cls]); return; }
     // 錢（−$3,000）與短詞（進包包）不拆到兩行（V11：「…，−」／「$3,000」看起來像賺錢）
+    //   主站帶來的那張（標題吐司）：「在櫃檯等你：」「先跟老闆走一趟，」「下一趟（開局可以）帶上場」各自不拆（審查：360／375 寬斷成「下一／趟帶上場」）
     var html = esc(text).replace(/[−+-]\$[\d,]+/g, function (m) { return '<span class="nw">' + m + '</span>'; })
-      .replace(/(進包包|賣掉|拿出來了|放回去了)/g, '<span class="nw">$1</span>');
+      .replace(/(進包包|賣掉|拿出來了|放回去了|在櫃檯等你：|先跟老闆走一趟，|下一趟(?:開局可以)?帶上場)/g, '<span class="nw">$1</span>');
     var t = el('div', 'lb-toast' + (cls ? ' ' + cls : ''), html);
     // 同時好幾個（贏錢＋聲望 +3、中繼點）：往下疊，不蓋在同一個位置
     var prev = qsa('.lb-toast:not(.out)', app());
@@ -1653,12 +1671,15 @@
     var brought = o.prologue ? null : bringNow();
     var seeds = o.prologue ? [] : (o.seeds || []).filter(function (id) { return (isOwned(id) || id === brought) && E.canSeed(C, id); });
     // 帶來的那張用一次就沒了（不管這次有沒有帶它上場）；帶上場的算認識（包包裡有它），不算擁有（一趟留一張的候選照舊不列種子）
-    if (!o.prologue && save.bring) { if (brought && seeds.indexOf(brought) >= 0) shelfAdd(brought); save.bring = null; }
+    var tookBring = !o.prologue && !!brought && seeds.indexOf(brought) >= 0;
+    if (!o.prologue && save.bring) save.bring = null;
     var r = E.newRun(C, { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds });
     r.tut = null;                                     // tut：null＝還沒選、true＝老闆帶的那場（教學）、false＝直接打／教學結束
     r.farBefore = save.best.far | 0;                  // 結算的「新紀錄」：跟開這一趟之前的最遠比
     r.got = r.bag.slice();                            // 這一趟收進包包的（老闆送的、種子也算，裁定 9）
     save.run = r; save.lastAce = o.ace;
+    // 帶上場的那張記成「這一趟認識的」（at＝這一趟 seedKey#runNo，NEW 章、「這一趟新認識」才找得到；審查：之前在 save.run 設好前記，at 少了 #runNo）
+    if (tookBring) shelfAdd(brought);
     // 挑過這個王牌：那組送的四張算擁有（src 'gift'，不是金框；種子佔掉的那幾格也算）；王牌本身照舊只是認識（頂點卡維持老闆三選一）
     shelfAdd(C.aces[o.ace]); (C.gifts[o.ace] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
     persist();
@@ -1748,6 +1769,7 @@
   //   審查 #4：標題列（張數）＋說明那行黏在面板頂；帶滿了，沒選的鈕變淡（aria-disabled）、張數變紅，再點吐司說明。
   //   審查 #8：篩選＝那一色是這張最高的（平手兩色都算）。審查 #10：選了＝墨色框＋✓ 章（跟店內取得的金框分開）
   function seedPool(tier) {
+    syncBring();                                        // 別的分頁剛收下的（或用掉的）以存檔為準
     var gift = C.gifts[tier] || [];
     var pool = seedableIds().filter(function (id) { return gift.indexOf(id) < 0; });
     // 主站「帶去店裡對決」帶來的那張（v5 第六項第一期）：不在這次王牌那組送的（送的照樣會進包包）就排第一（seedPickFlow 預設勾好）
