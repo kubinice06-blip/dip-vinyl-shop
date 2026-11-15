@@ -2,6 +2,7 @@
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   node game-lab/tests/e2e-taps.mjs
 //   環境變數（見 e2e-lib.mjs）：LAB_URL 或 LAB_BASE、LAB_SIZES（預設四個驗收尺寸）；LAB_SCREENS＝title（預設）或 title,night（來客：seedRun 一份 v5 存檔、標題「繼續試煉」進去；C 整合後加跑）
+//     ,home（你家＝聆聽室，v5 第六項第三期：唱片櫃種 8 張擁有、直接 go('home')；只跑 #1 每個熱點真點、#4 家具、#5 按下金框＋名牌、#7 主控台，#2／#3／#6 是店的箱子與唱盤區）
 //
 // 每個尺寸、每個畫面（全開）：
 //   1. __lab.stage.shop.hotPoints() 的每一點用 page.touchscreen.tap 真點；__lab.stage.onAction 先換成只記 hot.id 的函式（不開面板），觸發的 id＝自己；
@@ -59,6 +60,12 @@ async function runScreen(browser, w, h, screenName) {
       const scr = await page.evaluate(() => window.__lab.screen());
       if (scr !== 'night') throw new Error('沒進到來客（畫面＝' + scr + '）');
     }
+    if (screenName === 'home') {
+      await page.evaluate(() => { const C = window.DipLabContent.cards; window.__lab.own(Object.keys(C).filter(id => !C[id].tier && C[id].previewUrl).sort().slice(0, 8), 'run'); window.__lab.go('home', { back: 'title' }); });
+      await page.waitForFunction(() => window.__lab.screen() === 'home' && !window.__lab.going() && window.__lab.stage.shopId === 'home', null, { timeout: 15000 });
+      await sleep(1500);   // 走進門、站定
+    }
+    const room = screenName === 'home';
     await page.waitForFunction(() => window.__lab && window.__lab.stage && window.__lab.stage.shop && window.__lab.stage.shop.hotPoints, null, { timeout: 10000 });
     await install(page);
     const S = await stageInfo(page);
@@ -80,11 +87,12 @@ async function runScreen(browser, w, h, screenName) {
     const outOfView = await page.evaluate(ids => { const sh = window.__lab.stage.shop; return ids.filter(id => !sh.hotRegion(id)); }, noPt);
     const lost = noPt.filter(id => !outOfView.includes(id));
     // 至少 30 個熱點：真點過的＋整個在鏡頭外的（矮螢幕的來客，面板讓鏡頭從牆頂裁掉兩排牆上唱片與海報；箱子與家具一定在畫面裡，見 #2／#4）
-    record(1, size, !bad1.length && !covered.length && !lost.length && S.pts.length + outOfView.length >= 30,
+    record(1, size, !bad1.length && !covered.length && !lost.length && S.pts.length + outOfView.length >= (room ? 12 : 30),
       `hotPoints ${S.pts.length} 點真點、觸發自己 ${S.pts.length - bad1.length - covered.length}/${S.pts.length}` + (bad1.length ? ' 錯：' + bad1.join('、') : '') +
       (covered.length ? ' 被 DOM 蓋住：' + covered.join('、') : '') + (lost.length ? ' 看得到卻沒點：' + lost.join('、') : '') + (outOfView.length ? '（鏡頭外：' + outOfView.join('、') + '）' : ''));
 
-    // ---- 2. 每箱沿可見帶左、中、右
+    // ---- 2. 每箱沿可見帶左、中、右（房間沒有箱子：跳過 #2、#3）
+    if (!room) {
     const bandPts = await page.evaluate(() => {
       const sh = window.__lab.stage.shop, out = [];
       sh.hotList().filter(h => h.bin && h.enabled).forEach(h => {
@@ -132,6 +140,7 @@ async function runScreen(browser, w, h, screenName) {
       } else front3.push(`(${x},${y})${top}→${got.join('')}`);
     }
     record(3, size, !bad3.length && n3 >= 10 && back3.length === 2, `中島最後一排（${back3.join('／')}）可見區 ${n3} 點不會開成爵士／台灣` + (bad3.length ? ' 錯：' + bad3.join('、') : '') + `（前排木箱範圍內 ${front3.length} 點：${front3.join(' ')}）`);
+    }
 
     // ---- 4. 每個站立家具的可見區中心：自己的熱點或什麼都沒有
     const furn = await page.evaluate(() => {
@@ -162,11 +171,11 @@ async function runScreen(browser, w, h, screenName) {
       if (!f.own.length && got.length) bad4.push(f.name + '（不能點的家具）→' + JSON.stringify(got));
     }
     const occN = furn.filter(f => !f.own.length).length;
-    record(4, size, !bad4.length && furn.length >= 15, `${furn.length} 件家具（其中 ${occN} 件不能點、${coveredF.length} 件被 DOM 蓋住${coveredF.length ? '：' + coveredF.join('、') : ''}）：只觸發自己或什麼都沒有` + (bad4.length ? ' 錯：' + bad4.join('、') : ''));
+    record(4, size, !bad4.length && furn.length >= (room ? 8 : 15), `${furn.length} 件家具（其中 ${occN} 件不能點、${coveredF.length} 件被 DOM 蓋住${coveredF.length ? '：' + coveredF.join('、') : ''}）：只觸發自己或什麼都沒有` + (bad4.length ? ' 錯：' + bad4.join('、') : ''));
 
     // ---- 5. 按下 50 ms 有金框；放開 300 ms 內名牌＝bin.label
     const cdp = await ctx.newCDPSession(page);
-    const pressIds = S.pts.filter(p => /^bin:/.test(p.id) || ['counter', 'booth', 'door'].includes(p.id)).map(p => p.id);
+    const pressIds = S.pts.filter(p => /^bin:/.test(p.id) || (room ? ['shelf', 'deck', 'console', 'door'] : ['counter', 'booth', 'door']).includes(p.id)).map(p => p.id);
     let bad5 = [], gold = [];
     for (const id of pressIds) {
       const p = S.pts.find(q => q.id === id);
@@ -194,9 +203,10 @@ async function runScreen(browser, w, h, screenName) {
       const taps = await page.evaluate(() => window.__taps.slice());
       if (taps.length !== 1 || taps[0] !== id) bad5.push(id + ' 放開觸發 ' + JSON.stringify(taps));
     }
-    record(5, size, !bad5.length && pressIds.length >= 15, `${pressIds.length} 個熱點按下有金框、放開掛名牌` + (bad5.length ? ' 錯：' + bad5.join('、') : '') + '（金色像素 前→中：' + gold.slice(0, 4).join('；') + '…）');
+    record(5, size, !bad5.length && pressIds.length >= (room ? 4 : 15), `${pressIds.length} 個熱點按下有金框、放開掛名牌` + (bad5.length ? ' 錯：' + bad5.join('、') : '') + '（金色像素 前→中：' + gold.slice(0, 4).join('；') + '…）');
 
-    // ---- 泡泡避開中間（橫條鏡頭；SPEC-v4 §2.3.7）
+    // ---- 泡泡避開中間（橫條鏡頭；SPEC-v4 §2.3.7；房間沒有唱盤區橫條：跳過）
+    if (!room) {
     const bub = await page.evaluate(async () => {
       const st = window.__lab.stage, sh = st.shop;
       await st.camera('strip', { ms: 0, screen: 'duel' });
@@ -215,6 +225,7 @@ async function runScreen(browser, w, h, screenName) {
     });
     const bubOk = bub.f.right <= bub.ownerL + 0.5 && bub.p.left >= bub.ownerR - 0.5;
     record(6, size, bubOk, `橫條（${bub.cam}）泡泡不碰老闆 x±16 格：男子 右緣 ${bub.f.right.toFixed(1)} ≤ ${bub.ownerL.toFixed(1)}；你 左緣 ${bub.p.left.toFixed(1)} ≥ ${bub.ownerR.toFixed(1)}`);
+    }
 
     // ---- 主控台 0 錯誤（含嚴格模式的 [shop] no route）
     const errs = page._errors.concat(page._badLocal);
