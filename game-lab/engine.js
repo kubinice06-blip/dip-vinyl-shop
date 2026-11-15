@@ -55,6 +55,11 @@
 //              賣回：buy {sellId}／buyBargain {sellIds} 只收包包裡、不是老闆送的（isGift）、不是種子（isSeed）的卡；送的 → error 'giftNoSell'、種子 → 'seedNoSell'
 //              buyBargain {ids:[1–3], sellIds?}：每張照特價（bargainPriceOf）分開算、一次付總和；effects 每張 {gainCard, spend: 那張的價}
 //            canShop(run) · canBargainPick(run)
+//            收音機轉頻率（v5 第六項第二期，店主 11-15）：choose {type:'radio', cell}（cell＝八格之一，content.tunes.order）：canShop 才能轉（兩位客人之間）、每輪一次（第二次 → 'used'）；
+//              抽卡池 radioPool(run, content, cell)＝trialPool（非頂點）∩ tune===cell ∩ SHELF_RARITY（普通／稀有／獨特）− 包包 − 這一輪各箱子已上架的 − 特價箱（池子 9 張與現在擺的）；
+//              空的 → 'empty'（不算轉過、什麼都不改）。種子＝seedKey#runNo#radio#輪#cell（獨立，不碰 run.rng、不碰補貨）。抽到的放進 run.shop.bargain 第一格、記 run.shop.radio＝{cell, id}；
+//              effects [{radio: cell, card: id}]。canRadio(run)＝canShop 且這輪還沒轉。tune 只用在抽卡池，outcome／星數不讀它（頻率不進戰鬥規則）
+//            bargainPriceIn(run, content, id)：特價箱這一格的價＝電台那張照原價（priceOf：稀有度價；特價箱封頂 $300 會被低買高賣）、其他照 bargainPriceOf；buyBargain 用它
 // Seeds      從唱片櫃挑牌開局（SPEC 從唱片櫃挑牌開局 §0–§1；引擎不碰存檔：「擁有」由畫面傳進來，owned＝函式 id→bool｜陣列｜{id: truthy}）
 //            newRun 多收 seeds:[ids]（0–3 張，CFG.seedMax）：序章那一趟不收；頂點卡、不存在的卡、重複的丟掉。包包＝種子＋老闆送的（這次王牌那組）補到 4 張
 //              （種子跟送的重複：送的往下補下一張）；特價箱 3 張照舊 → 7 張。run.seeds＝包包裡從唱片櫃帶來的（不能賣回：buy／buyBargain → 'seedNoSell'；
@@ -88,6 +93,7 @@
 //                relics: [ids],              // 櫃檯 2–3 件（economy.relicStock；relicShop.pool 扣掉身上的）
 //                bargain: [ids],             // 特價箱 6 張＝經／冷／硬各 2（bargain.pool 9 張洗牌）
 //                bargainPicked: boolean,     // 開局挑三張（免費）做過沒；只在第 1 位之前（canBargainPick：run.pos === 1）
+//                radio: {cell, id} | null,   // 這一輪收音機轉到的（每輪開頭 restock 清成 null；舊存檔沒有這欄＝這輪還沒轉）
 //                firstGuestInside: boolean } // UI 用
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
@@ -742,7 +748,7 @@
       hp: T.youHp, maxHp: T.youHp, hpIn: T.youHp, level: 1, xp: 0, atk: 0, def: 0, levelUps: 0, picks: [],
       streak: 0, bestStreak: 0, checkpoints: [], taken: 0, aceWon: false,
       money: EC.start,
-      shop: { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false },
+      shop: { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false, radio: null },
       stats: { wins: 0, beaten: 0, fights: 0, hands: 0, retries: 0, taken: [], met: [], relicsGot: [], lostAt: null,
         earned: 0, spent: 0, bought: [], sold: [], relicsBought: [], relicsSold: [] },
     };
@@ -758,7 +764,8 @@
   //   櫃檯：relicShop 扣掉身上的；特價箱 6 張＝經／冷／硬各 2（池子扣掉包包裡的，不夠就少擺）
   function restock(run, content) {
     const EC = econ(content), st = { rng: fnv1a32(run.seedKey + '#' + run.runNo + '#shop#' + (run.round || 1)) || 1 };
-    const SH = run.shop || (run.shop = { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false });
+    const SH = run.shop || (run.shop = { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false, radio: null });
+    SH.radio = null;                                   // 收音機每輪一次：新一輪重來（電台那張跟特價箱一起換掉）
     const taken = new Set([content.aces && content.aces[run.ace], ...run.bag, ...(((content.bargain || {}).pool) || [])].filter(Boolean));
     const span = (lohi, fallback) => { const lo = (lohi && lohi[0]) | 0 || fallback[0], hi = (lohi && lohi[1]) | 0 || fallback[1]; return lo + Math.floor(rng(st) * (Math.max(hi, lo) - lo + 1)); };
     const B = content.bins || {};
@@ -804,7 +811,8 @@
     }
     const have = new Set(keys.filter(k => !miss.includes(k)).flatMap(k => SH.bins[k]));
     const bins = {};
-    for (const k of keys) bins[k] = miss.includes(k) ? (fresh[k] || []).filter(id => !have.has(id) && !bag.includes(id)) : SH.bins[k];
+    const radioId = SH.radio && SH.radio.id;            // 收音機這輪抽到、擺在特價箱的那張：補的區不再上它
+    for (const k of keys) bins[k] = miss.includes(k) ? (fresh[k] || []).filter(id => !have.has(id) && !bag.includes(id) && id !== radioId) : SH.bins[k];
     SH.bins = bins;
     return true;
   }
@@ -999,6 +1007,23 @@
     const p = econ(content).price[rarity(c)];
     return p != null ? p : null;
   }
+  // 特價箱裡這一格的價（buyBargain、econ.js 的價籤）：收音機抽的那張照原價（priceOf＝稀有度價 $800–1,200）；
+  //   不能用 bargainPriceOf（最高星 >3 一律 $300，賣回卻是 priceOf 的半價 $400–600 → 一買一賣就賺）。其他照特價
+  function bargainPriceIn(run, content, id) {
+    const R = run && run.shop && run.shop.radio;
+    if (R && R.id === id) return priceOf(content, id);
+    return bargainPriceOf(content, id);
+  }
+  // 收音機轉頻率（v5 第六項第二期）：抽卡池（見檔頭契約）；頻率八格＝content.tunes.order（沒給時用主站 ORDER）
+  const TUNE_CELLS = ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'];
+  const tuneCells = content => ((content && content.tunes && Array.isArray(content.tunes.order) && content.tunes.order.length) ? content.tunes.order : TUNE_CELLS);
+  function radioPool(run, content, cell) {
+    if (!run || !tuneCells(content).includes(cell)) return [];
+    const SH = shopOf(run), bag = new Set(run.bag || []);
+    const shelf = new Set([].concat(...Object.values(SH.bins || {}).filter(Array.isArray), SH.bargain || [], ((content.bargain || {}).pool) || []));
+    return trialPool(content).filter(c => c.tune === cell && SHELF_RARITY.includes(rarity(c)) && !bag.has(c.id) && !shelf.has(c.id)).map(c => c.id);
+  }
+  function canRadio(run) { return canShop(run) && !shopOf(run).radio; }
   function relicPrice(content, id) {
     const r = content && content.relics && content.relics[id];
     if (!r) return null;
@@ -1053,7 +1078,7 @@
     const v = Math.round(+n || 0), s = String(Math.abs(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     return (v < 0 ? '-' : '') + s;
   }
-  const shopOf = run => run.shop || { bins: {}, relics: [], bargain: [], bargainPicked: false };
+  const shopOf = run => run.shop || { bins: {}, relics: [], bargain: [], bargainPicked: false, radio: null };
   function canShop(run) { return !!run && !run.over && !run.pending && !run.duel && run.prologue !== 'pending' && !!shopOf(run).bargainPicked; }
   // 特價箱免費挑三張：只在第 1 位之前（裁定 4；之後每輪補貨、要買）
   function canBargainPick(run) { return !!run && !shopOf(run).bargainPicked && !run.duel && !run.over && run.pos === 1; }
@@ -1202,13 +1227,28 @@
         if (sells.length > need || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
         if (sells.some(id => isGift(run, content, id))) return fail('giftNoSell');
         if (sells.some(id => isSeed(run, content, id))) return fail('seedNoSell');
-        const each = ids.map(id => bargainPriceOf(content, id));
+        const each = ids.map(id => bargainPriceIn(run, content, id));   // 電台那張照原價（沒有套利）
         if (each.some(p => p == null)) return fail('notInStock');
         const earn = sells.reduce((s, id) => s + sellValue(content, cardOf(content, id)), 0), price = each.reduce((s, p) => s + p, 0);
         if (run.money + earn < price) return fail('noMoney');
         for (const id of sells) { const v = sellValue(content, cardOf(content, id)); run.bag.splice(run.bag.indexOf(id), 1); run.money += v; S.earned += v; S.sold.push(id); effects.push({ loseCard: id, earn: v }); }
         run.money -= price; S.spent += price;
         ids.forEach((id, k) => { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); S.bought.push(id); run.taken++; enter(id); effects.push({ gainCard: id, spend: each[k] }); });
+        return { ok: true, effects };
+      }
+      // 收音機轉頻率（v5 第六項第二期）：先驗完全部條件，才動 run；抽不到（'empty'）不算轉過
+      case 'radio': {
+        if (!canShop(run)) return fail('notNow');
+        if (!tuneCells(content).includes(ch.cell)) return fail('badCell');
+        if (SH.radio) return fail('used');
+        const pool = radioPool(run, content, ch.cell);
+        if (!pool.length) return fail('empty');
+        const st = { rng: fnv1a32(run.seedKey + '#' + run.runNo + '#radio#' + (run.round || 1) + '#' + ch.cell) || 1 };
+        const id = pool[Math.floor(rng(st) * pool.length)];
+        if (!Array.isArray(SH.bargain)) SH.bargain = [];
+        SH.bargain.unshift(id);
+        SH.radio = { cell: ch.cell, id };
+        effects.push({ radio: ch.cell, card: id });
         return { ok: true, effects };
       }
       case 'buyRelic': {
@@ -1401,7 +1441,8 @@
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
     trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, jumpTo, half, hintTableOf,
-    rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, relicPrice, sellValue, isGift, moneyText,
+    rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
+    radioPool, canRadio,
     runPolicy, shopPolicy, bargainPolicy, policies,
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce };
 });

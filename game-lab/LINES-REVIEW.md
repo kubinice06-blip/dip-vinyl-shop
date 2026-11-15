@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 410（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 411（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -629,20 +629,21 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | 獨立搖滾 | 本規格新寫 | `shops/dip.json.props[12].bin.label` |
 | （畫面字） | 獨立流行 | 本規格新寫 | `shops/dip.json.props[13].bin.label` |
 | （畫面字） | 藍調 | 本規格新寫 | `shops/dip.json.props[14].bin.label` |
-| （畫面字） | 搖滾 | 本規格新寫 | `shops/dip.json.props[17].bin.label` |
-| （畫面字） | 電子 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
-| （畫面字） | 靈魂放克 | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
-| （畫面字） | 嘻哈 R&B | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
-| （畫面字） | 城市流行 | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
-| （畫面字） | 古典 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
-| （畫面字） | 世界 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
-| （畫面字） | 民謠 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
-| （畫面字） | 爵士 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
-| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[26].bin.label` |
-| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[27].hot.label` |
-| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[29].bin.label` |
-| （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[30].bin.label` |
-| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[31].hot.label` |
+| （畫面字） | 收音機 | 本規格新寫 | `shops/dip.json.props[17].hot.label` |
+| （畫面字） | 搖滾 | 本規格新寫 | `shops/dip.json.props[18].bin.label` |
+| （畫面字） | 電子 | 本規格新寫 | `shops/dip.json.props[19].bin.label` |
+| （畫面字） | 靈魂放克 | 本規格新寫 | `shops/dip.json.props[20].bin.label` |
+| （畫面字） | 嘻哈 R&B | 本規格新寫 | `shops/dip.json.props[21].bin.label` |
+| （畫面字） | 城市流行 | 本規格新寫 | `shops/dip.json.props[22].bin.label` |
+| （畫面字） | 古典 | 本規格新寫 | `shops/dip.json.props[23].bin.label` |
+| （畫面字） | 世界 | 本規格新寫 | `shops/dip.json.props[24].bin.label` |
+| （畫面字） | 民謠 | 本規格新寫 | `shops/dip.json.props[25].bin.label` |
+| （畫面字） | 爵士 | 本規格新寫 | `shops/dip.json.props[26].bin.label` |
+| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[27].bin.label` |
+| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[28].hot.label` |
+| （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[30].bin.label` |
+| （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[31].bin.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[32].hot.label` |
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
 | （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
 

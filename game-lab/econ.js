@@ -76,7 +76,21 @@
     if (!b || !b.label) return esc(fallback || '');
     return '<span class="ec-plate' + (key === 'feature' ? ' gold' : '') + '">' + esc(b.label) + '</span>' + esc(b.zh || fallback || '');
   }
-  function bargainPrice(id) { try { return E().bargainPriceOf ? E().bargainPriceOf(C(), id) : 100; } catch (_) { return null; } }
+  // 特價箱每一格的價：收音機抽的那張照原價（engine.bargainPriceIn；v5 第六項第二期），其他照特價（bargainPriceOf）
+  function bargainPrice(id) {
+    try {
+      var r = liveRun();
+      if (r && E().bargainPriceIn) return E().bargainPriceIn(r, C(), id);
+      return E().bargainPriceOf ? E().bargainPriceOf(C(), id) : 100;
+    } catch (_) { return null; }
+  }
+  // 收音機這一輪抽到、擺在特價箱的那張：{cell, id}｜null
+  function radioOf(r) { var x = r && r.shop && r.shop.radio; return x && x.id ? x : null; }
+  // 那一格的小籤：「● 電台」（色點＝那格頻率；C.radio.tag、C.tunes.colors）
+  function radioTagHTML(cell) {
+    var T = C().tunes || {}, R = C().radio || {}, col = (T.colors || {})[cell] || '#ccc';
+    return '<span class="ec-radio" title="' + esc(((T.names || {})[cell] || '') + '・' + (R.tag || '')) + '"><i style="--tn:' + esc(col) + '" aria-hidden="true"></i>' + esc(R.tag || '') + '</span>';
+  }
   function moneyHTML(n) { return '<span class="ec-money">' + esc(money(n == null ? 0 : n)) + '</span>'; }
   function bagMax() { return (E().CFG && E().CFG.bagMax) || 8; }
   function relicMax() { return (E().CFG && E().CFG.relicMax) || 3; }
@@ -404,11 +418,12 @@
     var title = pick ? S.label + '　' + S.prompt : S.label;
     if (pick && S.prompt) extra = '<span class="ec-free">' + esc(ui('bargainFree')) + '</span>' + extra;
     var fc = S.focusId && card(S.focusId);
+    var rad = radioOf(r);
     var tiles = ids.map(function (id) {
-      var c = card(id), on = S.sel.indexOf(id) >= 0, bp = bargainPrice(id);
+      var c = card(id), on = S.sel.indexOf(id) >= 0, bp = bargainPrice(id), isRad = !!rad && rad.id === id;
       var pt = bp == null ? '' : '<span class="ec-pt' + (pick ? ' free' : '') + '">' + (pick ? '<s>' + esc(money(bp)) + '</s>' : esc(fill(ui('bargainEach'), { n: mt(bp) }))) + '</span>';
       return '<button type="button" class="ec-tile' + (on ? ' sel' : '') + '" data-a="' + (view ? 'info' : 'tog') + '" data-cid="' + esc(id) + '"' + (bp == null ? '' : ' data-price="' + bp + '"') + (view ? '' : ' aria-pressed="' + on + '"') +
-        ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (bp == null ? '' : (pick ? '（免費）' : ' ' + money(bp)))) + '"><span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + pt + '</span>' + starsHTML(c, { col: true }) + '</button>';
+        ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (isRad ? '（' + ((C().radio || {}).tag || '') + '）' : '') + (bp == null ? '' : (pick ? '（免費）' : ' ' + money(bp)))) + '"' + (isRad ? ' data-radio="1"' : '') + '><span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + (isRad ? radioTagHTML(rad.cell) : '') + pt + '</span>' + starsHTML(c, { col: true }) + '</button>';
     }).join('');
     var foot = '';
     if (pick) foot = '<button type="button" class="lb-btn pri big wide" data-a="take"' + (S.sel.length === pickN() ? '' : ' disabled') + '>' + esc(ui('bargainTake')) + '</button>';
@@ -423,7 +438,7 @@
       foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + ' data-total="' + price + '">' + label + '</button>';
     }
     return headHTML(title, extra) +
-      '<div class="ec-grid">' + tiles + '</div>' +
+      '<div class="ec-grid' + (ids.length > 6 ? ' ec-g4' : '') + '">' + tiles + '</div>' +   // 收音機多一張（7 張）：改四欄兩排（375×548 三欄三排會太擠；店主 11-15 裁定）
       '<p class="ec-line">' + (fc ? esc(fc.artist + '《' + fc.album + '》') : '&nbsp;') + '</p>' +
       (foot ? '<div class="ec-foot">' + foot + '</div>' : '');
   }

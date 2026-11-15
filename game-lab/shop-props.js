@@ -1075,6 +1075,40 @@
     }
   });
 
+  // ================================================================ 收音機（v5 第六項第二期「轉頻率」）：擺在櫃檯後高櫃的頂上（胡桃木外殼、布面喇叭、琥珀色刻度窗＋紅指針、兩顆旋鈕、斜斜的天線）
+  // o.x＝左緣、o.base＝坐在哪一條（高櫃頂面中間，y≈101）；o.y＝跟高櫃同一個地板前緣（排在高櫃後面畫：人站高櫃前面才蓋得到它）。
+  // 腳下範圍＝畫出來的那一塊（跟高櫃疊在一起；BLUES 櫃跟高櫃中間本來就走不過去）；熱點 rect 在 shops/dip.json（不蓋 BLUES 櫃的熱點）。
+  function radioGeo(o) { var by = o.base != null ? o.base : o.y - 49, top = by - 10; return { by: by, top: top, dial: [o.x + 12, top + 2, 6, 3] }; }
+  defO('radio', {
+    foot: function (o) { return [o.x, o.y - 9, 20, 9]; },
+    draw: function (P, o) {
+      var x = o.x, g = radioGeo(o), top = g.top, by = g.by;
+      shadowRect(P, x - 1, by, 22, 1, 0.45);
+      // 天線（伸縮鉻棒，往右上斜；尖端一顆小球）
+      P.line(x + 17, top - 1, x + 21, top - 6, C.chromeD); P.line(x + 18, top - 1, x + 22, top - 6, C.chrome); P.r(x + 21, top - 7, 2, 2, C.chrome); P.p(x + 22, top - 7, '#ffffff');
+      // 外殼
+      P.r(x - 1, top - 1, 22, 12, '#1d1712');
+      P.r(x, top, 20, 10, C.walnut); P.r(x, top, 20, 1, C.walnutL); P.r(x, top + 9, 20, 1, C.walnutDD); P.r(x + 19, top + 1, 1, 8, C.walnutD);
+      P.r(x + 1, top - 2, 18, 1, '#1d1712'); P.r(x + 2, top - 3, 16, 1, '#1d1712'); P.r(x + 2, top - 2, 16, 1, C.walnutL);   // 圓角頂
+      // 布面喇叭（米色布＋織紋）
+      P.r(x + 2, top + 2, 8, 6, '#3a2a1e'); P.r(x + 3, top + 3, 6, 4, '#c9b48c');
+      for (var yy = 0; yy < 4; yy++) for (var xx = 0; xx < 6; xx++) if ((xx + yy) % 2) P.p(x + 3 + xx, top + 3 + yy, '#a8936b');
+      // 刻度窗（琥珀色）＋紅指針＋刻度
+      var dl = g.dial;
+      P.r(dl[0] - 1, dl[1] - 1, dl[2] + 2, dl[3] + 2, '#1d1712'); P.r(dl[0], dl[1], dl[2], dl[3], '#f2c96d');
+      P.p(dl[0] + 1, dl[1], '#7a5a20'); P.p(dl[0] + 3, dl[1], '#7a5a20'); P.p(dl[0] + 5, dl[1], '#7a5a20');
+      P.r(dl[0] + 2, dl[1], 1, dl[3], '#c0393b');
+      // 兩顆旋鈕
+      P.r(x + 12, top + 6, 2, 2, C.chrome); P.p(x + 13, top + 7, C.chromeD); P.r(x + 16, top + 6, 2, 2, C.chrome); P.p(x + 17, top + 7, C.chromeD);
+      // 腳
+      P.r(x + 1, by, 3, 1, '#1d1712'); P.r(x + 16, by, 3, 1, '#1d1712');
+    },
+    glow: function (P, o) {   // 刻度窗晚上會亮（一點點光暈）
+      var dl = radioGeo(o).dial;
+      P.a(0.35, function () { P.r(dl[0] - 1, dl[1] - 1, dl[2] + 2, dl[3] + 2, '#f2c96d'); });
+    }
+  });
+
   // ================================================================ 試聽桌（耳機掛在桌邊、桌燈、小擴大機、要試的那疊）
   var PHONES = ['...kkkkk...', '..ksssssk..', '.ks.....sk.', '.ks.....sk.', 'kcck...kcck', 'kcuk...kucr', 'kcuk...kuck', 'kcck...kcck', '.kk.....kk.'];
   var PHONE_PAL = { k: '#121216', s: '#d4d7dc', c: '#26262c', u: '#c9b48c', r: '#c0393b' };

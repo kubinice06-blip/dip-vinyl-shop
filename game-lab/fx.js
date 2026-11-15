@@ -274,6 +274,12 @@
       tone(c, { type: 'square', f: 261.63, t: 0.3, d: 0.3, g: 0.14, a: 0.002, filter: { type: 'lowpass', f: 3000, f2: 200 } });
     },
     flip(c) { noise(c, { d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); noise(c, { t: 0.09, d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); },
+    // 收音機轉台（v5 第六項第二期）：照主站頻率光譜 sfxTurn 的做法——帶通雜訊往上掃（沙沙轉過電台）＋一條很輕的嘯聲，最後兩下短「卡」對上頻率
+    tune(c) {
+      noise(c, { d: 0.42, g: 0.16, a: 0.03, curve: 'lin', filter: { type: 'bandpass', f: 600, f2: 2400, q: 1.4 } });
+      tone(c, { type: 'sine', f: 420, f2: 1250, d: 0.36, g: 0.035, a: 0.02, lin: true });
+      tone(c, { type: 'square', f: 1320, t: 0.4, d: 0.025, g: 0.08, a: 0.001 }); tone(c, { type: 'square', f: 990, t: 0.46, d: 0.03, g: 0.08, a: 0.001 });
+    },
     // 每手落針後的屬性短音（SPEC-v4 §2.3.9，0.25 s 內）：經典＝大三和弦上行 C5-E5-G5；冷門＝小三和弦下行 A4-F4-D4（三角波）；
     // 硬蕊＝短方波兩下低音＋噪音；attr null（平手）＝空轉的唱針聲：0.3 s 低通白噪音沙沙＋兩下很輕的低頻「咚」，不帶音高
     chime(c, o) {

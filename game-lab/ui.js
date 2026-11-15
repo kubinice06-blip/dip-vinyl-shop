@@ -213,6 +213,8 @@
     if (s.run && !validRun(s.run)) s.run = null;
     // 這一輪的貨跟現在的箱子對不上（v5 店面改版前存的：有 pop、沒有 citypop／indierock／indiepop）：只補缺的區、丟掉沒有的區（同種子，每次載入一樣）
     if (s.run && E.fixBins) { try { E.fixBins(s.run, C); } catch (_) { /* 補不了就照舊：那一區點了說賣完 */ } }
+    // 收音機（v5 第六項第二期）：舊存檔沒有 shop.radio＝這一輪還沒轉；壞掉的（不是 {cell, id}、格子或卡不在了）當作沒轉
+    if (s.run && s.run.shop) { var rd = s.run.shop.radio; if (rd != null && !(rd && typeof rd === 'object' && card(rd.id) && C.tunes && C.tunes.colors && C.tunes.colors[rd.cell])) s.run.shop.radio = null; if (rd === undefined) s.run.shop.radio = null; }
     // 唱片櫃（v6）：每一格 {at, seen, own?, src?}；擁有的 src 只認 gift／run／boss
     var shf = {};
     Object.keys(s.shelf).forEach(function (id) {
@@ -2429,7 +2431,13 @@
       row(TU('atk', { n: r.atk }), TU('atkHelp', { n: r.atk | 0 })) + row(TU('def', { n: r.def }), TU('defHelp', { n: r.def | 0 })) + row(TU('maxHp', { n: r.maxHp })) + '</ul>';
     floatSheet(html, 'me');
   }
-  // 點頭像：他是第幾位、名字、聲望（品味／底氣大於 0 才寫）、帶不帶王牌、口頭禪
+  // 客人的常聽頻率（v5 第六項第二期）：「常聽 ● 暴躁」（C.enemies[id].tune；顏色、名字照 C.tunes）。只上色、不進規則
+  function guestTuneHTML(en) {
+    var T = C.tunes || {}, k = en && en.tune, col = T.colors && T.colors[k];
+    if (!col) return '';
+    return '<div class="bl tn" data-tune="' + esc(k) + '"><b>' + esc(T.guest || '') + '</b><i style="--tn:' + esc(col) + '" aria-hidden="true"></i>' + esc((T.names || {})[k] || '') + '</div>';
+  }
+  // 點頭像：他是第幾位、名字、聲望（品味／底氣大於 0 才寫）、帶不帶王牌、口頭禪、常聽頻率
   function guestSheet(i) {
     var r = save.run, g = E.roundGuests(r, C)[i], id = g && g.id, en = C.enemies[id]; if (!en) return;
     var cur = g.cur, done = g.done, ln = (C.lines[id] && C.lines[id].line) || en.line || '';
@@ -2439,7 +2447,7 @@
     // 聲望一行；品味／底氣各一行、後面一句說它在做什麼（客人的品味：扣到你就多扣；底氣跟你的一樣；審查 #11）
     var bl = '<div class="bl">' + esc('聲望 ' + g.hp) + '</div>' +
       (g.atk ? '<div class="bl st"><b>' + esc(TU('atk', { n: g.atk })) + '</b>' + esc(TU('eAtkHelp', { n: g.atk })) + '</div>' : '') +
-      (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '');
+      (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '') + guestTuneHTML(en);
     var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
       tags + bl + '</div></div>' +
@@ -2556,6 +2564,45 @@
       stg('play', true);
     });
   }
+  // 收音機轉頻率（v5 第六項第二期，店主 11-15）：兩位客人之間（canShop）、每輪一次；八格色點＋名字，抽不到的那格反灰；
+  //   轉到就播那張的試聽（照 openBooth：沒開聲音先開）、放進這一輪的特價箱第一格（照原價，engine.bargainPriceIn）。交易走 doChoose({type:'radio', cell})
+  function radioText(k, o) { var R = C.radio || {}; return fill(R[k] || '', o || {}); }
+  function openRadio() {
+    var r = save.run;
+    if (!r || UI.screen !== 'night' || !E.canShop(r)) { toast(radioText('later')); return; }
+    var T = C.tunes || {}, order = T.order || [];
+    var s = floatSheet('', 'radio');
+    var render = function (justGot) {
+      var R = r.shop && r.shop.radio, used = !!R, rc = R ? card(R.id) : null;
+      var cells = order.map(function (k) {
+        var n = used ? 0 : (E.radioPool ? E.radioPool(r, C, k).length : 0), off = used ? (R.cell !== k) : !n, on = used && R.cell === k;
+        return '<button type="button" class="rd-cell' + (on ? ' on' : '') + (off && !on ? ' off' : '') + '" data-cell="' + esc(k) + '"' + (used || !n ? ' disabled' : '') +
+          ' aria-label="' + esc((T.names || {})[k] || k) + (off && !on && !used ? '：' + radioText('empty') : '') + '"><i style="--tn:' + esc((T.colors || {})[k] || '#ccc') + '" aria-hidden="true"></i><span>' + esc((T.names || {})[k] || k) + '</span></button>';
+      }).join('');
+      var got = rc ? '<div class="rd-got">' + tileHTML(rc, { text: false, stars: false, cls: 'rd-cv' }) +
+          '<div class="rd-tx"><b>' + esc(justGot ? radioText('got', { album: rc.album }) : radioText('usedSub', { name: (T.names || {})[R.cell] || '', album: rc.album })) + '</b>' +
+          '<span class="sub">' + esc(rc.artist) + '</span><button type="button" class="lb-btn pri" data-a="toBargain">' + esc(radioText('toBargain')) + '</button></div></div>' : '';
+      s.innerHTML = '<div class="hd"><h3>' + esc(radioText('title')) + '</h3><span class="np"></span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+        '<p class="sub">' + esc(used && !justGot ? radioText('used') : radioText('prompt')) + '<small class="rd-price">' + esc(radioText('price')) + '</small></p>' +
+        '<div class="lb-radio" role="group" aria-label="' + esc(T.label || '') + '">' + cells + '</div>' + got;
+      watchPlaying(qs('.np', s));
+    };
+    render(false);
+    if (UI.screen === 'night') stgP('walk', 'p', ['radio'], 110).then(function () { UI.lastSpot = 'radio'; });
+    s.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-cell],[data-a=toBargain]'); if (!b || b.disabled) return;
+      if (b.getAttribute('data-a') === 'toBargain') { s.remove(); syncFloat(); sfx('tick'); econCall('openBargain'); return; }
+      var res = doChoose({ type: 'radio', cell: b.getAttribute('data-cell') });
+      if (!res.ok) { toast(radioText(res.error === 'used' ? 'used' : res.error === 'empty' ? 'empty' : 'later')); render(false); return; }
+      sfx('tune');
+      var c = card(r.shop.radio.id), f = FX();
+      if (c && f && f.music) {
+        if (!soundOn()) { try { if (f.init) f.init(); if (f.setSound) f.setSound(true); else f.unlockFromGesture(true); } catch (err) { console.error(err); } save.settings.sound = true; persist(); }
+        later(function () { try { f.music.play(c, { fadeMs: 900 }); } catch (err) { console.error(err); } stg('play', true); }, 420);   // 轉台聲先走完再放
+      }
+      render(true);
+    });
+  }
   // 牆上手繪的封面（不在卡池裡）：卡池有同一張就開那張；沒有就開一張只有名字的唱片資訊（不給星）
   function paintedCard(id, label) {
     var m = /^(.*?)《(.*)》\s*$/.exec(String(label || '')), artist = m ? m[1].trim() : String(label || '').trim(), album = m ? m[2].trim() : '';
@@ -2602,6 +2649,7 @@
     }
     if (scr === 'duel' || scr === 'scene' || scr === 'reward') return;      // 這些畫面只開唱片資訊與老闆那句
     if (action === 'listen' || action === 'booth') { sfx('tick'); openBooth(); return; }
+    if (action === 'radio') { sfx('tick'); openRadio(); return; }
     if (/^poster/.test(action)) { sfx('tick'); openRules(); return; }
     if (action === 'door') {
       if (scr === 'title') { var cb = qs('[data-a=cont]', UI.panel) || qs('[data-a=push]', UI.panel); if (cb) cb.click(); return; }   // B-title-door-abandons-run：有存檔＝繼續試煉

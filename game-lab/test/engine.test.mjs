@@ -1420,5 +1420,113 @@ section('18 換王牌（店主 11-13：開局沿用上次那張、跟老闆說�
     ok(EN.choose(run, C, { type: 'switchAce', tier: 'pearl' }).error === 'badChoice' && run.ace === 'hall', 'choose has no switchAce (autoplay never switches)'); }
 });
 
+section('19 收音機轉頻率（v5 第六項第二期）：時機（canShop、每輪一次）、抽卡池（非頂點∩那格∩普通／稀有／獨特−包包−這輪已上架−特價箱）、獨立種子、抽不到、電台那張照原價（沒有套利）、存檔遷移、頻率不進規則', () => {
+  const cells = C.tunes.order;
+  const untouched = (run, fn, err, name) => { const before = JSON.stringify(run), r = fn(); ok(!r.ok && r.error === err && JSON.stringify(run) === before && Array.isArray(r.effects) && !r.effects.length, name, r); };
+  const fresh = (seedKey, ace) => { const run = EN.newRun(C, { seedKey, runNo: 2, ace: ace || 'hall' }); EN.choose(run, C, EN.bargainPolicy(run, C)); return run; };
+  const SHELF = new Set(EN.SHELF_RARITY);
+  const expectPool = (run, cell) => {
+    const SH = run.shop, shelf = new Set([].concat(...Object.values(SH.bins), SH.bargain, C.bargain.pool));
+    return Object.keys(C.cards).sort().filter(id => { const c = C.cards[id]; return !c.tier && c.tune === cell && SHELF.has(EN.rarity(c)) && !run.bag.includes(id) && !shelf.has(id); });
+  };
+  // (a) 時機：第 1 位之前還沒挑特價箱 → notNow；挑完 → 可以轉；對決中、等領獎、這一趟結束 → notNow
+  { const run = EN.newRun(C, { seedKey: 'rd-time', runNo: 2, ace: 'hall' });
+    ok(!EN.canShop(run) && !EN.canRadio(run), 'before the bargain pick → cannot spin');
+    untouched(run, () => EN.choose(run, C, { type: 'radio', cell: 'calm' }), 'notNow', 'radio before the bargain pick → notNow');
+    EN.choose(run, C, EN.bargainPolicy(run, C));
+    ok(EN.canShop(run) && EN.canRadio(run) && run.shop.radio === null, 'after the pick: canRadio, shop.radio null');
+    untouched(run, () => EN.choose(run, C, { type: 'radio', cell: 'nope' }), 'badCell', 'unknown cell → badCell');
+    untouched(run, () => EN.choose(run, C, { type: 'radio' }), 'badCell', 'no cell → badCell');
+    EN.startFight(run, C, {});
+    untouched(run, () => EN.choose(run, C, { type: 'radio', cell: 'calm' }), 'notNow', 'duel in progress → notNow');
+    run.duel = null; run.duelEnemy = null;
+    const r2 = fresh('rd-time2'); forceWin(r2);
+    ok(r2.pending && !EN.canRadio(r2), 'reward pending → cannot spin');
+    untouched(r2, () => EN.choose(r2, C, { type: 'radio', cell: 'calm' }), 'notNow', 'reward pending → notNow');
+    const r3 = fresh('rd-time3'); r3.over = 'dead';
+    untouched(r3, () => EN.choose(r3, C, { type: 'radio', cell: 'calm' }), 'notNow', 'run over → notNow'); }
+  // (b) 抽卡池＝契約（200 種子 × 八格）；轉一次：放進特價箱第一格、記 shop.radio、其他都不動、不碰 run.rng；同種子同格＝同一張
+  let spins = 0, sizes = {};
+  for (let i = 0; i < (QUICK ? 40 : 200); i++) {
+    const run = fresh('rd-' + i, TIERS[i % 3]);
+    for (const cell of cells) {
+      const pool = EN.radioPool(run, C, cell);
+      eq(pool, expectPool(run, cell), 'radioPool contract ' + cell + ' #' + i);
+      sizes[cell] = Math.min(sizes[cell] == null ? 1e9 : sizes[cell], pool.length);
+    }
+    const cell = cells[i % cells.length], pool = EN.radioPool(run, C, cell);
+    if (!pool.length) continue;
+    const before = JSON.parse(JSON.stringify(run)), twin = JSON.parse(JSON.stringify(run));
+    const res = EN.choose(run, C, { type: 'radio', cell });
+    ok(res.ok && res.effects.length === 1 && res.effects[0].radio === cell && pool.includes(res.effects[0].card), 'radio ok, effect {radio, card} from the pool', res);
+    const id = res.effects[0].card;
+    ok(run.shop.radio && run.shop.radio.cell === cell && run.shop.radio.id === id, 'shop.radio = {cell, id}');
+    eq(run.shop.bargain, [id].concat(before.shop.bargain), 'radio card goes first into the bargain bin');
+    eq([run.rng, run.bag, run.money, run.shop.bins, run.shop.relics, run.pos, run.taken], [before.rng, before.bag, before.money, before.shop.bins, before.shop.relics, before.pos, before.taken], 'radio changes nothing else (run.rng untouched)');
+    ok(C.cards[id].tune === cell && !C.cards[id].tier && SHELF.has(EN.rarity(C.cards[id])), 'radio card: that cell, not apex, shelf rarity');
+    twin.rng = (twin.rng + 12345) >>> 0;
+    ok(EN.choose(twin, C, { type: 'radio', cell }).effects[0].card === id, 'independent seed: same card whatever run.rng is');
+    ok(!EN.canRadio(run), 'spun → canRadio false');
+    for (const c2 of cells) untouched(run, () => EN.choose(run, C, { type: 'radio', cell: c2 }), 'used', 'second spin this round (' + c2 + ') → used');
+    spins++;
+  }
+  ok(spins > 100 || QUICK, 'spun in most seeds', spins);
+  ok(cells.every(c => sizes[c] > 0), 'every cell has at least one card to draw on a fresh run', sizes);
+  // (c) 電台那張照原價：bargainPriceIn＝priceOf（稀有度價 800–1,200）；其他照特價；買進再賣回一定虧（沒有套利）
+  { let arb = 0, checked = 0;
+    for (const id of Object.keys(C.cards)) { const c = C.cards[id]; if (c.tier || !SHELF.has(EN.rarity(c))) continue; checked++; if (EN.sellValue(C, c) > EN.bargainPriceOf(C, c)) arb++; }
+    ok(arb > 0, 'why: with the bargain price (≤$300) some radio cards would sell back for more', arb + '/' + checked);
+    const run = fresh('rd-price'), cell = cells.find(k => EN.radioPool(run, C, k).length);
+    EN.choose(run, C, { type: 'radio', cell });
+    const id = run.shop.radio.id, other = run.shop.bargain.find(x => x !== id), P = EN.priceOf(C, id);
+    ok(P === C.economy.price[EN.rarity(C.cards[id])] && P >= 800 && P <= 1200, 'radio card price = price[rarity]', P);
+    eq([EN.bargainPriceIn(run, C, id), EN.bargainPriceIn(run, C, other)], [P, EN.bargainPriceOf(C, other)], 'bargainPriceIn: radio card full price, others bargain price');
+    ok(EN.sellValue(C, C.cards[id]) < P, 'sell back < buy (no arbitrage)', [EN.sellValue(C, C.cards[id]), P]);
+    // 買：錢不夠一塊 → noMoney；剛好夠 → 扣原價；連同特價箱的另一張一起買 → 兩個價分開算
+    { const r2 = JSON.parse(JSON.stringify(run)); r2.bag = r2.bag.slice(0, 4); r2.money = P - 1; untouched(r2, () => EN.choose(r2, C, { type: 'buyBargain', ids: [id] }), 'noMoney', 'radio card short by 1 → noMoney'); }
+    { const r2 = JSON.parse(JSON.stringify(run)); r2.bag = r2.bag.slice(0, 4); r2.money = P; const res = EN.choose(r2, C, { type: 'buyBargain', ids: [id] });
+      ok(res.ok && r2.money === 0 && r2.bag.includes(id) && !r2.shop.bargain.includes(id) && res.effects[0].spend === P, 'buy radio card at full price', res);
+      // 賣回（買箱子時順便賣）：拿回半價
+      const key = Object.keys(r2.shop.bins).find(k => r2.shop.bins[k].length), cid = r2.shop.bins[key][0]; r2.money = 5000; while (r2.bag.length < CFG.bagMax) r2.bag.push(Object.keys(C.cards).find(x => !C.cards[x].tier && !r2.bag.includes(x) && x !== cid && x !== id));
+      const m = r2.money, rs = EN.choose(r2, C, { type: 'buy', key, cardId: cid, sellId: id });
+      ok(rs.ok && r2.money === m + P / 2 - EN.priceOf(C, cid), 'radio card sells back at half (P/2)', rs); }
+    { const r2 = JSON.parse(JSON.stringify(run)); r2.bag = r2.bag.slice(0, 4); r2.money = 99999; const each = [P, EN.bargainPriceOf(C, other)];
+      const res = EN.choose(r2, C, { type: 'buyBargain', ids: [id, other] });
+      ok(res.ok && r2.money === 99999 - each[0] - each[1] && res.effects.map(f => f.spend).join() === each.join(), 'radio + bargain card: each priced on its own', res); } }
+  // (d) 抽不到：那格能抽的都已經上架 → empty，什麼都不改、不算轉過
+  { const run = fresh('rd-empty'), cell = cells.slice().sort((a, b) => EN.radioPool(run, C, a).length - EN.radioPool(run, C, b).length)[0];
+    run.shop.bins.jazz = (run.shop.bins.jazz || []).concat(EN.radioPool(run, C, cell));
+    ok(EN.radioPool(run, C, cell).length === 0, 'all of ' + cell + ' shelved → empty pool');
+    untouched(run, () => EN.choose(run, C, { type: 'radio', cell }), 'empty', 'empty cell → empty');
+    ok(EN.canRadio(run), 'an empty cell does not use up this round');
+    const c2 = cells.find(k => EN.radioPool(run, C, k).length);
+    ok(EN.choose(run, C, { type: 'radio', cell: c2 }).ok, 'another cell still works'); }
+  // (e) 每輪一次：同一輪打下一位還是 used；新一輪（restock）清掉、電台那張跟特價箱一起換掉、又可以轉
+  { const run = fresh('rd-round'), cell = cells.find(k => EN.radioPool(run, C, k).length);
+    EN.choose(run, C, { type: 'radio', cell }); const id = run.shop.radio.id;
+    forceWin(run); settleAll(run);
+    ok(run.pos === 2 && run.round === 1 && EN.canShop(run) && !EN.canRadio(run), 'pos 2 same round → still used');
+    untouched(run, () => EN.choose(run, C, { type: 'radio', cell }), 'used', 'pos 2 same round → used');
+    let g = 0; while (run.round === 1 && !run.over && g++ < 20) { forceWin(run); settleAll(run); }
+    ok(run.round === 2 && run.idx === 0, 'reached round 2', [run.round, run.idx]);
+    ok(run.shop.radio === null && EN.canRadio(run) && !run.shop.bargain.includes(id), 'new round: radio cleared, last radio card gone with the bargain restock');
+    ok(EN.choose(run, C, { type: 'radio', cell }).ok, 'new round → can spin again'); }
+  // (f) 存檔：JSON 存讀（轉過的）一樣；舊存檔沒有 shop.radio＝這輪還沒轉；fixBins 補的區不上電台那張
+  { const run = fresh('rd-save'), cell = cells.find(k => EN.radioPool(run, C, k).length);
+    const old = JSON.parse(JSON.stringify(run)); delete old.shop.radio;
+    ok(EN.canRadio(old) && EN.bargainPriceIn(old, C, old.shop.bargain[0]) === EN.bargainPriceOf(C, old.shop.bargain[0]), 'old save without shop.radio → not spun yet, bargain prices unchanged');
+    const r1 = EN.choose(old, C, { type: 'radio', cell }), r0 = EN.choose(run, C, { type: 'radio', cell });
+    ok(r1.ok && r0.ok && r1.effects[0].card === r0.effects[0].card, 'old save spins the same card');
+    const back = JSON.parse(JSON.stringify(run));
+    ok(!EN.canRadio(back) && EN.choose(back, C, { type: 'radio', cell }).error === 'used' && EN.bargainPriceIn(back, C, back.shop.radio.id) === EN.priceOf(C, back.shop.radio.id), 'JSON round trip keeps the spin and the full price');
+    const fx = JSON.parse(JSON.stringify(run)), id = fx.shop.radio.id, key = Object.keys(fx.shop.bins).find(k => C.bins[k] && (C.bins[k].pool || []).includes(id));
+    if (key) { delete fx.shop.bins[key]; EN.fixBins(fx, C); ok(Array.isArray(fx.shop.bins[key]) && !fx.shop.bins[key].includes(id), 'fixBins refill never re-shelves the radio card'); }
+    else ok(true, 'radio card is in no bin pool (fixBins n/a)'); }
+  // (g) 頻率不進戰鬥規則：對決／勝負／星數的函式不讀 tune；自動遊玩（shopPolicy）不轉收音機
+  for (const fn of [EN.clash, EN.preview, EN.resolveTurn, EN.startDuel, EN.enemyDef, EN.playerDef, EN.view, EN.trialDeck, EN.finishFight, EN.startFight])
+    ok(!/tune/.test(String(fn)), 'no tune in ' + fn.name);
+  { const run = fresh('rd-pol'); ok(EN.shopPolicy(run, C, 'smart').every(ch => ch.type !== 'radio'), 'shopPolicy never spins the radio'); }
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log(fails.join('\n')); process.exit(1); }

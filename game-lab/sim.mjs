@@ -5,7 +5,9 @@
 //                              [--policies thoughtful,novice,random,high,formula,mirrorHint,oracle] [--tier k]
 //                              [--set mercy=false] [--patch '{"trial":{"curve":{"atk":{"add":1}}}}'] [--data <dir with cards.js and bins.js>]
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
-//   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；none＝同上但不買；
+//   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；
+//            ＋收音機（v5 第六項第二期）：每輪第一次能買東西時轉一次（radioSmart：挑抽卡池裡「剋下一位主屬性那軸」平均星最高的那格），買得起就買（照原價；
+//            包包滿就賣掉能賣的最弱那張，但電台那張要比它強）；none＝同上但不買、不轉；
 //            bare＝最像 ../curve V3 模擬（curvesim.cjs）：不打序章、包包＝老闆四張＋特價箱三張＋男子那張、整趟不換（不拿獎勵、不買、沒有配件）；
 //            cards／relics＝none 但只拿唱片／只拿配件（拆解用，要自己點）。每個流程都有升級（runPolicy）與每輪一次說情
 //   --gate   門檻看哪個流程（預設 smart＝真的玩法）　--set 改 engine CFG　--patch deep-merge 進 content（例：C.trial.curve 旋鈕）　--tier C.trial.tiers 第 k 階
@@ -107,6 +109,32 @@ function play(duel, pol, R, mem) {
   return duel;
 }
 const bagPower = run => run.bag.reduce((s, id) => s + EN.power(C.cards[id]), 0) / Math.max(1, run.bag.length);
+// 收音機（smart 流程）：每輪一次。轉哪格＝抽卡池裡「剋下一位主屬性（換牌、加星後的牌單＋他帶的王牌）那軸」平均星最高的那格（抽到哪張不偷看；壓力測試：比隨便轉更強）；
+//   轉到就看買不買得起（engine.bargainPriceIn＝原價）：包包有空位、錢夠就買；包包滿＝賣掉能賣的最弱那張（不是送的、不是種子）換，電台那張要比它強、錢加賣回的要夠
+function radioSmart(run, R) {
+  if (!EN.canRadio || !EN.canRadio(run)) return;
+  const id = run.order[run.idx], E = C.enemies[id]; if (!E) return;
+  const g = EN.trialDeck(C, id, run.pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier, cls: EN.classAt(run.pos) });
+  const deck = g.deck.slice(); if (g.ace) deck.push(g.ace);
+  const T = EN.COUNTER_OF[EN.deckMain(deck, E.taste)];
+  let best = null, bv = -1;
+  for (const cell of C.tunes.order) {
+    const pool = EN.radioPool(run, C, cell); if (!pool.length) continue;
+    const v = pool.reduce((s, x) => s + EN.star(C.cards[x], T), 0) / pool.length;
+    if (v > bv) { bv = v; best = cell; }
+  }
+  if (!best) return;
+  ok(EN.choose(run, C, { type: 'radio', cell: best }), 'radio', best); R.spins++;
+  const rid = run.shop.radio.id, price = EN.bargainPriceIn(run, C, rid), ch = { type: 'buyBargain', ids: [rid] };
+  if (run.bag.length >= CFG.bagMax) {
+    const weak = run.bag.filter(x => !EN.isGift(run, C, x) && !EN.isSeed(run, C, x)).sort((a, b) => EN.power(C.cards[a]) - EN.power(C.cards[b]))[0];
+    if (weak == null || EN.power(C.cards[weak]) >= EN.power(C.cards[rid])) return;
+    ch.sellIds = [weak];
+  }
+  const earn = (ch.sellIds || []).reduce((s, x) => s + EN.sellValue(C, C.cards[x]), 0);
+  if (run.money + earn < price) return;
+  ok(EN.choose(run, C, ch), 'radio buy', ch); R.bought++; R.spent += price;
+}
 
 // ---------------- one whole run through the real run API ----------------
 //   A＝這一格的每一位累計（到過、死、場次、勝、首戰、手數、打到第 6 手、比聲望條、KO）
@@ -115,6 +143,7 @@ function runOnce(pol, flow, i, A) {
   const run = EN.newRun(C, { seedKey, runNo: 1, ace: TIERS[i % 3], prologue: flow !== 'bare', tier: TIER });
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0;
+  const RADIO = { spins: 0, bought: 0, spent: 0 };
   for (let guard = 0; ; guard++) {
     if (guard > 40 * CAP + 400) throw new Error('runaway run ' + seedKey + ' ' + pol + ' ' + flow);
     if (run.over) break;
@@ -140,6 +169,7 @@ function runOnce(pol, flow, i, A) {
     }
     if (step !== 'fight' && step !== 'prologue') throw new Error('unexpected step ' + step);
     if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart')) ok(EN.choose(run, C, ch), 'shopPolicy', ch);
+    if (flow === 'smart' && EN.canShop(run)) radioSmart(run, RADIO);
     if (run.money < 0) throw new Error('money < 0');
     const prologue = step === 'prologue', d = run.pos, att = retryAt === d ? 1 : 0;
     if (!prologue && bag0 == null) bag0 = bagPower(run);
@@ -166,7 +196,7 @@ function runOnce(pol, flow, i, A) {
   return { end, cens, lostMan, firstLoss, fatal, maxHands, level: run.level, atk: run.atk, def: run.def, maxHp: run.maxHp, relics: run.relics.length,
     taken: sum.taken, rewardCards: S.taken.length, bought: S.bought.length, relicsBought: S.relicsBought.length, relicsGot: S.relicsGot.length,
     earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
-    bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run) };
+    bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent };
 }
 
 // ---------------- one cell (policy × flow) ----------------
@@ -209,7 +239,8 @@ function runCell(pol, flow, n) {
     hazBoss, hazNon, bossRatio: hazBoss != null && hazNon ? hazBoss / hazNon : null, cliff, hzMax,
     end: { level: avg('level'), atk: avg('atk'), def: avg('def'), maxHp: avg('maxHp'), relics: avg('relics'), taken: avg('taken'), rewardCards: avg('rewardCards'),
       bought: avg('bought'), relicsBought: avg('relicsBought'), relicsGot: avg('relicsGot'), earned: avg('earned'), spent: avg('spent'), money: avg('money'),
-      checkpoints: avg('checkpoints'), bestStreak: avg('bestStreak'), bag0: avg('bag0'), bag1: avg('bag1') },
+      checkpoints: avg('checkpoints'), bestStreak: avg('bestStreak'), bag0: avg('bag0'), bag1: avg('bag1'),
+      radioSpins: avg('radioSpins'), radioBought: avg('radioBought'), radioSpent: avg('radioSpent') },
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
   };
 }
@@ -257,10 +288,10 @@ if (MODE === 'all' || MODE === 'runs') {
   for (const x of rows) console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${x.handsBand.map(f2).join('｜')} | ${x.deathBands.map(p0).join('／')} | ${pct(x.deaths.atBoss)} | ${pct(x.deaths.byKO)}／${pct(x.deaths.byBar)} | ${pct(x.win)} |`);
 
   console.log(`\n走到最後時（每趟平均）：成長、包包、錢\n`);
-  console.log('| 策略 | 流程 | 等級 | 品味／底氣／聲望上限 | 配件（拿到／買） | 收了 N 張（獎勵唱片／買的） | 包包平均總星 開局→最後 | 賺／花 | 中繼點 | 最多連贏 |');
-  console.log('|---|---|---|---|---|---|---|---|---|---|');
+  console.log('| 策略 | 流程 | 等級 | 品味／底氣／聲望上限 | 配件（拿到／買） | 收了 N 張（獎勵唱片／買的） | 包包平均總星 開局→最後 | 賺／花 | 中繼點 | 最多連贏 | 收音機 轉／買（花） |');
+  console.log('|---|---|---|---|---|---|---|---|---|---|---|');
   for (const x of rows) { const e = x.end;
-    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.level.toFixed(1)} | ${e.atk.toFixed(1)}／${e.def.toFixed(1)}／${e.maxHp.toFixed(1)} | ${e.relics.toFixed(2)}（${e.relicsGot.toFixed(2)}／${e.relicsBought.toFixed(2)}） | ${e.taken.toFixed(1)}（${e.rewardCards.toFixed(1)}／${e.bought.toFixed(1)}） | ${e.bag0.toFixed(1)}→${e.bag1.toFixed(1)} | $${Math.round(e.earned).toLocaleString('en')}／$${Math.round(e.spent).toLocaleString('en')} | ${e.checkpoints.toFixed(2)} | ${e.bestStreak.toFixed(1)} |`); }
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.level.toFixed(1)} | ${e.atk.toFixed(1)}／${e.def.toFixed(1)}／${e.maxHp.toFixed(1)} | ${e.relics.toFixed(2)}（${e.relicsGot.toFixed(2)}／${e.relicsBought.toFixed(2)}） | ${e.taken.toFixed(1)}（${e.rewardCards.toFixed(1)}／${e.bought.toFixed(1)}） | ${e.bag0.toFixed(1)}→${e.bag1.toFixed(1)} | $${Math.round(e.earned).toLocaleString('en')}／$${Math.round(e.spent).toLocaleString('en')} | ${e.checkpoints.toFixed(2)} | ${e.bestStreak.toFixed(1)} | ${e.radioSpins.toFixed(1)}／${e.radioBought.toFixed(1)}（$${Math.round(e.radioSpent).toLocaleString('en')}） |`); }
 
   const PCOLS = 16;
   console.log(`\n每一位：首戰勝率／單位死亡率（%；到過的趟 <200 打括號）\n`);
