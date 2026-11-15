@@ -13,5 +13,12 @@
       "pin": "pin-basement",
       "status": "debug"
     }
+  ],
+  "rooms": [
+    {
+      "id": "home",
+      "layout": "shops/home.json",
+      "pin": "pin-home"
+    }
   ]
 }
