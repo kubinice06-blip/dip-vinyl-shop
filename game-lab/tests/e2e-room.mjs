@@ -11,8 +11,15 @@
 //   3. 唱盤：真點唱盤 → 走到 atDeck、面板列擁有的（有試聽的）→ 放這張 → 唱盤上那張＝它；放完接下一張收藏（照唱片架順序）
 //   4. 控制台：真點控制台 → 推近、全螢幕星圖載得起來（DipTune built、收藏亮＝只看唱片櫃開著、符合張數＝14）、店景迴圈停了；
 //      隨機一張＋就這張（是你的）→ onResult 回遊戲卡 id → 收回、唱盤換那張；再開、關掉收藏開關、挑一張不是你的 → 想要清單多一筆、還在星圖上；↩ 收回
-//   5. 收回後店景照常（迴圈在跑、熱點點得到、面板開得起來）；門 → 標題、舞台回本店
-//   7. 收藏 0 張（全新存檔、另開一頁）：房間說明、唱盤空著、唱片架沒有封面、唱片架面板寫空的、唱盤吐司
+//      星圖的返回鍵是主站那顆 ↩：遊戲裡讀屏名、滑鼠提示、看得到的字都是「回房間」，高 ≥32、開好後焦點在它上面；
+//      收回後房間唱盤：不是星圖試聽的那張（不是你的不上唱盤，審查修正 2）
+//   6. 收回後店景照常（迴圈在跑、熱點點得到、面板開得起來）；門 → 標題、舞台回本店
+//   7. 收藏 0 張（全新存檔、另開一頁）：房間說明、唱盤那一行不出現（沒東西能放就不叫人去點唱盤）、唱片架沒有封面、唱片架面板寫空的、唱盤吐司
+//   9. 同一頁（0 張）：開控制台、星圖自己試聽一張、↩ 收回 → 房間唱盤空著、面板沒有「唱盤上」
+//  10. 載入中就關掉（另開一頁、收藏 5 張；dip-tune.js 晚 4 秒、座標檔再晚 3 秒）：
+//      dip-tune.js 還在路上＝遊戲自己的「控制台開機中…」＋「回房間」（最上層、觸控點得到）→ 真點回房間收回；
+//      再開、星圖面板出來但還在等座標檔 → 真點 ↩（回房間）收回 → 等它在背後建完再 1.5 秒：沒有出聲、沒打開聲音、唱盤空著
+//  11. 載入中收掉又重開（只跑第一個尺寸；座標檔晚 4 秒）：星圖只建一次（THREE.WebGLRenderer 只 new 一個）、開好後收藏亮
 //   每一步：#app 與頁面不捲動；最後主控台 0 錯誤、本機檔案 0 個 404、localStorage 只寫允許的鍵
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import fs from 'fs';
@@ -29,6 +36,16 @@ const shot = async (page, name, w, h) => { if (SHOTS) await page.screenshot({ pa
 // 擁有的 14 張：從卡池挑有試聽、不是王牌的（固定順序，每次一樣）
 async function pickOwn(page, n) {
   return page.evaluate(n => { const C = window.DipLabContent.cards; return Object.keys(C).filter(id => !C[id].tier && C[id].previewUrl).sort().slice(0, n); }, n);
+}
+// 台北頂欄的「你家」進去（不真點圖釘；10、11 用）
+async function enterHome(page) {
+  await jsClick(page, '#top [data-a=taipei]');
+  await waitScreen(page, 'taipei', 8000); await page.waitForFunction(() => !window.__lab.going() && window.__lab.stage.shopId === 'taipei', null, { timeout: 8000 }).catch(() => {});
+  await sleep(450);
+  await jsClick(page, '#top [data-a=home]');
+  const ok = await homeReady(page);
+  await walkDone(page, 'in'); await sleep(400);
+  return ok;
 }
 const homeReady = page => page.waitForFunction(() => window.__lab.screen() === 'home' && !window.__lab.going() && window.__lab.stage.shopId === 'home', null, { timeout: 15000 }).then(() => true, () => false);
 const walkDone = (page, spot) => page.waitForFunction(s => { const st = window.__lab.stage, p = st.pos('p'), q = st.spot(s); return p && q && Math.abs(p.x - q[0]) < 1 && Math.abs(p.y - q[1]) < 1; }, spot, { timeout: 8000 }).then(() => true, () => false);
@@ -139,7 +156,9 @@ async function runSize(browser, w, h) {
     await sleep(1200);
     const s4 = await page.evaluate(() => {
       const f = window.DipTune.filter, st = window.__lab.stage, host = document.getElementById('labTune'), r = host.getBoundingClientRect();
-      return { matched: f.matched, mine: window.DipTune.mine, frozen: !!st.shop.frozen, msg: (host.querySelector('#tuneMsg') || {}).hidden, host: [Math.round(r.width), Math.round(r.height)], vw: innerWidth, vh: innerHeight, gl: !!host.querySelector('#tuneGl') };
+      const b = host.querySelector('#tuneBack'), br = b.getBoundingClientRect(), hit = document.elementFromPoint(br.left + br.width / 2, br.top + br.height / 2);
+      return { matched: f.matched, mine: window.DipTune.mine, frozen: !!st.shop.frozen, msg: (host.querySelector('#tuneMsg') || {}).hidden, host: [Math.round(r.width), Math.round(r.height)], vw: innerWidth, vh: innerHeight, gl: !!host.querySelector('#tuneGl'),
+        back: { aria: b.getAttribute('aria-label'), title: b.title, txt: b.textContent, w: Math.round(br.width), h: Math.round(br.height), hit: !!hit && b.contains(hit), focus: document.activeElement === b, want: window.DipLabContent.shopLines.homeTuneBack } };
     });
     await checkScroll('星圖');
     let perf = null;
@@ -166,8 +185,10 @@ async function runSize(browser, w, h) {
     await sleep(600);
     const last4 = await page.evaluate(() => window.__lab.home.last());   // onResult 收到的那張（就這張可能把停在格子邊上的換成最近那張，不一定是 previewCard）
     const deck4 = await deckCard(page), owned4 = await page.evaluate(id => window.__lab.home.owned().includes(id), last4);
-    record(4, size, tapCon && walked4 && built && s4.mine.on && s4.matched === 14 && s4.frozen && s4.host[0] === s4.vw && s4.host[1] === s4.vh && !!last4 && owned4 && closed4 && deck4 === last4,
+    const bk4 = s4.back, backOk4 = bk4.aria === bk4.want && bk4.title === bk4.want && bk4.txt.includes(bk4.want) && bk4.h >= 32 && bk4.hit && bk4.focus;
+    record(4, size, tapCon && walked4 && built && s4.mine.on && s4.matched === 14 && s4.frozen && s4.host[0] === s4.vw && s4.host[1] === s4.vh && backOk4 && !!last4 && owned4 && closed4 && deck4 === last4,
       `真點控制台→走到 atConsole ${walked4}→星圖 ${built}（${tBuilt} ms）：收藏亮 ${s4.mine.on}（唱片櫃 ${s4.mine.size}、星圖上 ${s4.mine.onMap}）、符合 ${s4.matched}、店景迴圈停 ${s4.frozen}、全螢幕 ${s4.host.join('×')}；` +
+      `返回鍵 讀屏「${bk4.aria}」提示「${bk4.title}」字「${bk4.txt}」${bk4.w}×${bk4.h}、最上層 ${bk4.hit}、焦點 ${bk4.focus}；` +
       `隨機＋就這張 → onResult 遊戲卡 ${last4}（停的那張 ${got.gid}；是你的 ${owned4}）→ 收回 ${closed4}、唱盤 ${deck4 === last4 ? '換成那張' : deck4}`);
 
     // 再開（DOM 鈕）→ 關收藏開關 → 挑一張不是你的 → 想要清單 +1、星圖還開著 → ↩ 收回
@@ -195,10 +216,17 @@ async function runSize(browser, w, h) {
       await page.waitForFunction(() => !window.__lab.home.tune(), null, { timeout: 6000 }).catch(() => {});   // 換到你的：已經收回、放上唱盤；再開一次
       await sleep(600);
     }
+    // 星圖的試聽在響、而且已經過了「剛放上唱盤」那 4 秒：這時唱盤同步（每 1.5 秒＋換歌時）還在跑，不准把星圖試聽的那張記成你放上唱盤的
+    const aud5 = await page.waitForFunction(() => { const c = window.DipLabFx.music.current(); return c && window.DipLabFx.music.playing() ? c.id : null; }, null, { timeout: 6000 }).then(x => x.jsonValue(), () => null);
+    await sleep(4200);
     await page.evaluate(() => document.querySelector('#labTune #tuneBack').click());
     const closed5 = await page.waitForFunction(() => !window.__lab.home.tune() && document.getElementById('labTune').hidden, null, { timeout: 6000 }).then(() => true, () => false);
-    record(5, size, re5 && w5.mineOff && w5.gid && w5.owned === false && w5.want.length === wantBefore + 1 && w5.want[w5.want.length - 1] === w5.gid && w5.tune && w5.toast.includes('《' + w5.album + '》加進想要清單') && closed5,
-      `再開 ${re5}（第 ${w5.tries} 次）；關收藏開關 ${w5.mineOff}；挑不是你的 ${w5.gid} → 想要清單 ${wantBefore}→${w5.want.length}、星圖還開著 ${w5.tune}、吐司「${w5.toast}」；↩ 收回 ${closed5}`);
+    await sleep(1700);   // 唱盤同步每 1.5 秒一次：收回後至少跑過一次
+    const d5 = await page.evaluate(() => { const d = window.__lab.stage.clashState().deck; return { home: window.__lab.home.deck(), stage: d && d.rec ? d.rec.card : null, owned: window.__lab.home.owned() }; });
+    const deck5ok = (!d5.home || d5.owned.includes(d5.home)) && (!d5.stage || d5.owned.includes(d5.stage)) && d5.stage !== w5.gid && d5.home !== w5.gid;
+    record(5, size, re5 && w5.mineOff && w5.gid && w5.owned === false && w5.want.length === wantBefore + 1 && w5.want[w5.want.length - 1] === w5.gid && w5.tune && w5.toast.includes('《' + w5.album + '》加進想要清單') && closed5 && deck5ok,
+      `再開 ${re5}（第 ${w5.tries} 次）；關收藏開關 ${w5.mineOff}；挑不是你的 ${w5.gid} → 想要清單 ${wantBefore}→${w5.want.length}、星圖還開著 ${w5.tune}、吐司「${w5.toast}」；↩ 收回 ${closed5}；` +
+      `星圖試聽 ${aud5}；收回後唱盤 ${d5.stage}（記的 ${d5.home}；是你的或空著 ${deck5ok}）`);
 
     // ---- 6. 收回後店景照常、門回本店
     await sleep(500);
@@ -228,7 +256,7 @@ async function runSize(browser, w, h) {
       const atHome7 = await homeReady(p7);
       await walkDone(p7, 'in'); await sleep(500);
       const s7 = await p7.evaluate(() => ({ owned: window.__lab.home.owned().length, racks: window.__lab.stage.hotspots().filter(x => /^rack:/.test(x.id)).length, note: (document.querySelector('#panel .lb-tp') || {}).textContent || '', empty: window.DipLabContent.shopLines.homeEmpty,
-        idle: (document.querySelector('#panel .lb-homenp') || {}).textContent || '', idleWant: window.DipLabContent.shopLines.homeIdle, deck: window.__lab.stage.clashState().deck }));
+        idle: (document.querySelector('#panel .lb-homenp') || {}).textContent || '', idleShown: !!(document.querySelector('#panel .lb-homenp') || {}).offsetParent, deck: window.__lab.stage.clashState().deck }));
       await shot(p7, 'empty', w, h);
       await jsClick(p7, '#panel .lb-homebtns [data-a=shelf]');
       const sh7 = await sheet(p7, 'hshelf');
@@ -238,9 +266,93 @@ async function runSize(browser, w, h) {
       const toast7 = await p7.waitForFunction(() => [...document.querySelectorAll('.lb-toast')].some(t => t.textContent === window.DipLabContent.shopLines.homeDeckEmpty), null, { timeout: 5000 }).then(() => true, () => false);
       const sc7 = await noScroll(p7); if (!scrollOk(sc7)) scrollBad.push('空房間' + JSON.stringify(sc7));
       const errs7 = p7._errors.concat(p7._badLocal);
-      record(7, size, atHome7 && s7.owned === 0 && s7.racks === 0 && s7.note === s7.empty && s7.idle === s7.idleWant && !s7.deck && sh7 && s7b.tiles === 0 && s7b.txt.includes(s7.empty) && toast7 && !errs7.length,
-        `全新存檔：台北頂欄「你家」→ home ${atHome7}；店景封面 ${s7.racks}；房間說明「${s7.note}」；唱盤空著「${s7.idle}」；唱片架面板空的 ${s7b.tiles === 0}；唱盤吐司 ${toast7}` + (errs7.length ? '；主控台錯誤：' + errs7.slice(0, 2).join(' | ') : ''));
+      record(7, size, atHome7 && s7.owned === 0 && s7.racks === 0 && s7.note === s7.empty && s7.idle === '' && !s7.idleShown && !s7.deck && sh7 && s7b.tiles === 0 && s7b.txt.includes(s7.empty) && toast7 && !errs7.length,
+        `全新存檔：台北頂欄「你家」→ home ${atHome7}；店景封面 ${s7.racks}；房間說明「${s7.note}」；唱盤那一行不出現 ${!s7.idleShown}（「${s7.idle}」）；唱片架面板空的 ${s7b.tiles === 0}；唱盤吐司 ${toast7}` + (errs7.length ? '；主控台錯誤：' + errs7.slice(0, 2).join(' | ') : ''));
+
+      // ---- 9. 0 張：星圖自己試聽一張 → ↩ 收回 → 唱盤空著（試聽的那張不是你的，不記成「你最後放上去的」）
+      await jsClick(p7, '#panel .lb-homebtns [data-a=console]');
+      const built9 = await p7.waitForFunction(() => window.DipTune && window.DipTune.state.built && window.DipTune.state.visible && window.__lab.home.tune() && !document.getElementById('labTune').hidden, null, { timeout: 30000 }).then(() => true, () => false);
+      const aud9 = await p7.waitForFunction(() => { const c = window.DipLabFx.music.current(); return c && window.DipLabFx.music.playing() ? c.id : null; }, null, { timeout: 10000 }).then(h => h.jsonValue(), () => null);
+      await sleep(1700);
+      const b9 = await p7.evaluate(() => { const b = document.querySelector('#labTune #tuneBack'), r = b.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+      await p7.touchscreen.tap(b9.x, b9.y);
+      const closed9 = await p7.waitForFunction(() => !window.__lab.home.tune() && document.getElementById('labTune').hidden, null, { timeout: 6000 }).then(() => true, () => false);
+      await sleep(1900);
+      const s9 = await p7.evaluate(() => { const d = window.__lab.stage.clashState().deck, np = document.querySelector('#panel .lb-homenp'); return { home: window.__lab.home.deck(), stage: d && d.rec ? d.rec.card : null, np: np ? np.textContent : '', npShown: !!(np && np.offsetParent), playing: window.DipLabFx.music.playing() }; });
+      const errs9 = p7._errors.concat(p7._badLocal);
+      record(9, size, built9 && !!aud9 && closed9 && !s9.home && !s9.stage && !s9.npShown && !s9.playing && !errs9.length,
+        `0 張開控制台 ${built9}、星圖自己試聽 ${aud9}；真點 ↩ 收回 ${closed9} → 唱盤 ${s9.stage}（記的 ${s9.home}）、面板「唱盤上」${s9.npShown ? '出現「' + s9.np + '」' : '沒出現'}、還在響 ${s9.playing}` + (errs9.length ? '；主控台錯誤：' + errs9.slice(0, 2).join(' | ') : ''));
     } finally { await ctx7.close(); }
+
+    // ---- 10. 載入中就關掉：等待畫面（觸控回房間）、↩ 改名、收掉後星圖在背後建完也不准出聲、不上唱盤
+    {
+      const { ctx: c10, page: p10 } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+      try {
+        await p10.route(/\/dip-tune\.js/, async r => { await sleep(4000); await r.continue().catch(() => {}); });
+        await p10.route('**/data/mood/card-moods.json*', async r => { await sleep(3000); await r.continue().catch(() => {}); });
+        await openTitle(p10, Q('&fast=1&strict=1'));
+        const own10 = await pickOwn(p10, 5);
+        await p10.evaluate(ids => window.__lab.own(ids, 'run'), own10);
+        await spyPlay(p10);
+        const in10 = await enterHome(p10);
+        const snd0 = await p10.evaluate(() => !!(window.DipLabFx.soundOn && window.DipLabFx.soundOn()));
+        const idle10 = await p10.evaluate(() => (document.querySelector('#panel .lb-homenp') || {}).textContent || '');
+        // a. dip-tune.js 還在路上：遊戲自己的等待畫面
+        await jsClick(p10, '#panel .lb-homebtns [data-a=console]');
+        const wait10 = await p10.waitForFunction(() => { const h = document.getElementById('labTune'); return h && !h.hidden && h.querySelector('.lb-tune-wait'); }, null, { timeout: 4000 }).then(() => true, () => false);
+        const a10 = await p10.evaluate(() => { const h = document.getElementById('labTune'), w = h && h.querySelector('.lb-tune-wait'), b = w && w.querySelector('[data-a=tuneBack]'), r = b && b.getBoundingClientRect();
+          return { txt: w ? w.innerText.replace(/\s+/g, '') : '', btn: b ? b.textContent : '', x: r ? r.left + r.width / 2 : 0, y: r ? r.top + r.height / 2 : 0, hit: !!r && document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2) === b, lib: !!window.DipTune,
+            L: window.DipLabContent.shopLines.homeTuneLoading, B: window.DipLabContent.shopLines.homeTuneBack }; });
+        await shot(p10, 'tune-wait', w, h);
+        if (a10.hit) await p10.touchscreen.tap(a10.x, a10.y);
+        const closedA = await p10.waitForFunction(() => !window.__lab.home.tune() && document.getElementById('labTune').hidden && !document.body.classList.contains('lb-tune-open'), null, { timeout: 3000 }).then(() => true, () => false);
+        // b. 再開：星圖面板出來了、還在等座標檔 → 真點 ↩
+        await sleep(300);
+        await jsClick(p10, '#panel .lb-homebtns [data-a=console]');
+        const panel10 = await p10.waitForFunction(() => { const h = document.getElementById('labTune'), b = h && h.querySelector('#tuneBack'); return h && !h.hidden && b && b.getBoundingClientRect().width > 0; }, null, { timeout: 12000 }).then(() => true, () => false);
+        const b10 = await p10.evaluate(() => { const b = document.querySelector('#labTune #tuneBack'), r = b.getBoundingClientRect(); return { aria: b.getAttribute('aria-label'), title: b.title, txt: b.textContent, x: r.left + r.width / 2, y: r.top + r.height / 2, built: window.DipTune.state.built }; });
+        await p10.touchscreen.tap(b10.x, b10.y);
+        const closedB = await p10.waitForFunction(() => !window.__lab.home.tune() && document.getElementById('labTune').hidden, null, { timeout: 3000 }).then(() => true, () => false);
+        const bg10 = await p10.waitForFunction(() => window.DipTune.state.built, null, { timeout: 15000 }).then(() => true, () => false);
+        await sleep(1600);   // 建完挑最近那張、0.7 秒後試聽；同步唱盤每 1.5 秒
+        const s10 = await p10.evaluate(() => { const d = window.__lab.stage.clashState().deck; return { plays: (window.__plays || []).slice(), playing: window.DipLabFx.music.playing(), snd: !!(window.DipLabFx.soundOn && window.DipLabFx.soundOn()), home: window.__lab.home.deck(), stage: d && d.rec ? d.rec.card : null, vis: window.DipTune.state.visible, np: (document.querySelector('#panel .lb-homenp') || {}).textContent || '' }; });
+        const errs10 = p10._errors.concat(p10._badLocal);
+        record(10, size, in10 && wait10 && !a10.lib && a10.txt.includes(a10.L) && a10.btn === a10.B && a10.hit && closedA && panel10 && !b10.built && b10.aria === a10.B && b10.title === a10.B && b10.txt.includes(a10.B) && closedB && bg10 &&
+          !s10.plays.length && !s10.playing && s10.snd === snd0 && !s10.home && !s10.stage && !s10.vis && s10.np === idle10 && !errs10.length,
+          `收藏 5 張進你家 ${in10}；dip-tune.js 還在路上：等待畫面 ${wait10}「${a10.txt}」、回房間最上層 ${a10.hit} → 真點收回 ${closedA}；` +
+          `再開、面板出來還沒建好 ${panel10 && !b10.built}、↩ 讀屏「${b10.aria}」提示「${b10.title}」→ 真點收回 ${closedB}；背後建完 ${bg10}：music.play ${s10.plays.length} 次、在響 ${s10.playing}、聲音 ${snd0}→${s10.snd}、唱盤 ${s10.stage}（記的 ${s10.home}）、面板「${s10.np}」` +
+          (errs10.length ? '；主控台錯誤：' + errs10.slice(0, 2).join(' | ') : ''));
+      } finally { await c10.close(); }
+    }
+
+    // ---- 11. 載入中收掉又重開：星圖只建一次（只跑第一個尺寸：跟版面無關）
+    if (w === SIZES[0][0] && h === SIZES[0][1]) {
+      const { ctx: c11, page: p11 } = await newPage(browser, w, h);
+      try {
+        await p11.route('**/data/mood/card-moods.json*', async r => { await sleep(4000); await r.continue().catch(() => {}); });
+        await openTitle(p11, Q('&fast=1&strict=1'));
+        const own11 = await pickOwn(p11, 5);
+        await p11.evaluate(ids => window.__lab.own(ids, 'run'), own11);
+        const in11 = await enterHome(p11);
+        await jsClick(p11, '#panel .lb-homebtns [data-a=console]');
+        await p11.waitForSelector('#labTune #tuneBack', { state: 'attached', timeout: 12000 }).catch(() => {});
+        const hooked = await p11.waitForFunction(() => { const T = window.THREE; if (!T || !T.WebGLRenderer) return false; if (!T.__cnt) { const R = T.WebGLRenderer; window.__rend = 0; T.WebGLRenderer = function (...a) { window.__rend++; return new R(...a); }; T.__cnt = 1; } return !window.DipTune.state.built; }, null, { timeout: 8000 }).then(h => h.jsonValue(), () => false);
+        await p11.evaluate(() => document.querySelector('#labTune #tuneBack').click());
+        const closed11 = await p11.waitForFunction(() => !window.__lab.home.tune(), null, { timeout: 3000 }).then(() => true, () => false);
+        await sleep(300);
+        await jsClick(p11, '#panel .lb-homebtns [data-a=console]');
+        const re11 = await p11.waitForFunction(() => window.__lab.home.tune() && !window.DipTune.state.built, null, { timeout: 3000 }).then(() => true, () => false);   // 重開的時候還沒建好
+        const built11 = await p11.waitForFunction(() => window.DipTune.state.built && window.DipTune.state.visible && window.__lab.home.tune() && !document.getElementById('labTune').hidden && window.DipTune.mine.on, null, { timeout: 20000 }).then(() => true, () => false);
+        await sleep(800);
+        const s11 = await p11.evaluate(() => ({ rend: window.__rend, gl: document.querySelectorAll('#labTune #tuneGl').length, matched: window.DipTune.filter.matched, back: document.querySelector('#labTune #tuneBack').getAttribute('aria-label') }));
+        await p11.evaluate(() => document.querySelector('#labTune #tuneBack').click());
+        const closedB11 = await p11.waitForFunction(() => !window.__lab.home.tune() && document.getElementById('labTune').hidden, null, { timeout: 3000 }).then(() => true, () => false);
+        const errs11 = p11._errors.concat(p11._badLocal);
+        record(11, size, in11 && hooked && closed11 && re11 && built11 && s11.rend === 1 && s11.gl === 1 && s11.matched === 5 && closedB11 && !errs11.length,
+          `載入中收掉 ${closed11}、還沒建好就重開 ${re11} → 建好、收藏亮 ${built11}（符合 ${s11.matched}）；WebGLRenderer new 了 ${s11.rend} 個、星圖畫布 ${s11.gl}；↩「${s11.back}」收回 ${closedB11}` +
+          (errs11.length ? '；主控台錯誤：' + errs11.slice(0, 2).join(' | ') : ''));
+      } finally { await c11.close(); }
+    }
 
     // ---- 主控台、捲動、localStorage
     const errs = page._errors.concat(page._badLocal);
