@@ -4,6 +4,9 @@
 // Usage: node game-lab/sim.mjs [--n 2000] [--mode all|runs|man] [--flows smart,none,bare] [--gate smart] [--cap 300] [--json out.json]
 //                              [--policies thoughtful,novice,random,high,formula,mirrorHint,oracle] [--tier k]
 //                              [--set mercy=false] [--patch '{"trial":{"curve":{"atk":{"add":1}}}}'] [--data <dir with cards.js and bins.js>]
+//                              [--apex [--apex-ace <頂點卡 id>]]
+//   --apex   頂點卡純輔助卡試做（＝遊戲網址 ?apex=1；scratchpad v5/apextrial）：startFight 傳 {apex:true}（序章照舊 7 星）；王牌＝各派預設那張（C.aces），
+//            策略自己決定什麼時候發動（engine policies 的頂點卡分支）。--apex-ace＝每一趟都帶這張（流派跟著它；用來量單張能力，跟沒給時的三派輪流不是同一批客人組成）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
 //   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；
 //            ＋收音機（v5 第六項第二期）：每輪第一次能買東西時轉一次（radioSmart：挑抽卡池裡「剋下一位主屬性那軸」平均星最高的那格），買得起就買（照原價；
@@ -48,6 +51,10 @@ const N = +arg('n', 2000);
 const MODE = arg('mode', 'all');
 const CAP = +arg('cap', 300);
 const TIER = +arg('tier', 0);
+const APEX = argv.includes('--apex');
+const APEX_ACE = arg('apex-ace', null);
+if (APEX_ACE && !(C.cards[APEX_ACE] && EN.apexList(C, C.cards[APEX_ACE].tier).some(x => x.card === APEX_ACE))) { console.error('--apex-ace 要是 C.apexTrial 名單裡的頂點卡 id'); process.exit(2); }
+if (APEX_ACE && !APEX) { console.error('--apex-ace 要跟 --apex 一起用'); process.exit(2); }
 const JSON_OUT = arg('json', null);
 const ALL_FLOWS = ['smart', 'none', 'bare', 'cards', 'relics'];
 const FLOWS = arg('flows', 'smart,none,bare').split(',').filter(Boolean);
@@ -140,7 +147,7 @@ function radioSmart(run, R) {
 //   A＝這一格的每一位累計（到過、死、場次、勝、首戰、手數、打到第 6 手、比聲望條、KO）
 function runOnce(pol, flow, i, A) {
   const seedKey = 'sim5-' + i;
-  const run = EN.newRun(C, { seedKey, runNo: 1, ace: TIERS[i % 3], prologue: flow !== 'bare', tier: TIER });
+  const run = EN.newRun(C, Object.assign({ seedKey, runNo: 1, ace: TIERS[i % 3], prologue: flow !== 'bare', tier: TIER }, APEX_ACE ? { ace: C.cards[APEX_ACE].tier, aceId: APEX_ACE } : {}));
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
@@ -174,7 +181,7 @@ function runOnce(pol, flow, i, A) {
     const prologue = step === 'prologue', d = run.pos, att = retryAt === d ? 1 : 0;
     if (!prologue && bag0 == null) bag0 = bagPower(run);
     if (!prologue && lastReached < d) { A.reached[d]++; lastReached = d; }
-    const f = EN.startFight(run, C, {});
+    const f = EN.startFight(run, C, APEX ? { apex: true } : {});
     if (!f) throw new Error('startFight null at ' + d);
     const duel = play(f.duel, pol, R, mem), hands = duel.stats.hands, by = duel.over.by;
     const res = EN.finishFight(run, C);
@@ -262,7 +269,8 @@ function fightCell(fn, n) {
 // ---------------- run ----------------
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
-const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null) };
+const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null), apex: APEX ? (APEX_ACE || 'default') : null };
+if (APEX) console.log('\n頂點卡純輔助卡試做（--apex）：王牌 ' + (APEX_ACE ? C.cards[APEX_ACE].album + '（' + EN.abilityOf(C, APEX_ACE).name + '）' : '各派預設那張') + '；打贏回 ' + ((C.apexTrial && C.apexTrial.winHeal) || EN.trialCfg(C, TIER).heal));
 const cells = {};
 const cellOf = (flow, pol) => (cells[flow] || {})[pol];
 

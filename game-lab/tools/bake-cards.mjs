@@ -4,6 +4,9 @@
 //   - deck-lists.json 裡 `_` 開頭的鍵是設定，不是卡組：_region（{cardId: tw|jp|zh|xx} 覆寫）、_bins（每一區的 rule）、_ost（原聲帶旗標）。
 //   - region 值域 tw｜jp｜zh｜xx：先看 _region，再看 TW／JP／ZH 正規式；王菲＝zh。
 //   - 推薦語強制：ace_*、gift_*、bargain、gold。
+//   - apex_trial（頂點卡純輔助卡試做 ?apex=1，2026-11-15）：tier 照 seed（不是頂點卡就失敗）、星數照王牌烘（ACE_STATS：那軸 7、其他 1）、不強制推薦語、
+//     不強制試聽（Apple 索引沒有的＝主站「無來源」，previewUrl ''；42 張裡 21 張）；
+//     名單與能力在 content.js C.apexTrial（三派各 15 張，第 1 張＝ace_* 那張；這一組只列另外 42 張）。放在最後一組：新卡接在 cards.js 最後面
 //   - 另外寫 bins.js（UMD：window.DipLabBins／module.exports）：bin_<key> → shops.dip.<key>＝{ key, label, zh, rule, pool, front }
 //     （FIXLIST 4／5，X／Y 契約：十大類＋tw＋new＋門口牆 feature／picks；label／zh／rule 在 deck-lists.json 的 _bins；
 //     front＝shops/dip.json 那一區看得到的封面，照道具順序，由 check-covers.mjs 的 sectionFronts 讀）；
@@ -108,6 +111,7 @@ const appleIdOf = {};
 const seedRow = s => { const [a, b] = s.split('|'); return seed.find(r => r[0] === a && r[1] === b) || seed.find(r => norm(r[0]) === norm(a) && norm(r[1]) === norm(b)); };
 // v4：牆（wall_a／wall_b）原本是展示用、可以擺王牌；FIXLIST 4／5 起門口牆也是賣的（feature／picks＝bin_*），沒有展示組了
 const DISPLAY_GROUPS = new Set([]);
+const APEX_TRIAL = 'apex_trial';   // 頂點卡純輔助卡試做（見檔頭）
 const ACE_OF = {};
 for (const [group, arr] of Object.entries(lists)) if (group.startsWith('ace_')) for (const s of arr) { const r = seedRow(s); if (r) ACE_OF[cardId(r[0], r[1])] = group.slice(4); }
 for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) for (const s of arr) {
@@ -115,7 +119,8 @@ for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) fo
   if (!r) { problems.push('MISSING-IN-SEED ' + s + ' [' + group + ']'); continue; }
   const [artist, album, c, o, h, genres, year, , tier] = r;
   const id = cardId(artist, album);
-  const aceTier = group.startsWith('ace_') ? group.slice(4) : (DISPLAY_GROUPS.has(group) && tier && ACE_OF[id] === tier) ? tier : null;
+  const aceTier = group.startsWith('ace_') ? group.slice(4) : group === APEX_TRIAL ? (tier || null) : (DISPLAY_GROUPS.has(group) && tier && ACE_OF[id] === tier) ? tier : null;
+  if (group === APEX_TRIAL && !tier) problems.push('APEX-TRIAL-NOT-APEX ' + s + '（seed 沒有 tier）');
   if (tier && !aceTier) problems.push('APEX-AS-NORMAL ' + s + ' (' + tier + ') [' + group + ']');
   if (aceTier && tier !== aceTier) problems.push('ACE-TIER-MISMATCH ' + s + ' seed=' + tier + ' group=' + aceTier);
   (groupsOf[id] = groupsOf[id] || []).includes(group) || groupsOf[id].push(group);
@@ -124,7 +129,7 @@ for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) fo
   const ap = apple[norm(artist) + '\u0000' + norm(album)] || [];
   const previewUrl = ap[2] || '';
   if (ap[1]) appleIdOf[id] = { id: ap[1], cc: ap[0] };
-  if (!previewUrl) problems.push('NO-PREVIEW ' + s + ' [' + group + ']');
+  if (!previewUrl && group !== APEX_TRIAL) problems.push('NO-PREVIEW ' + s + ' [' + group + ']');   // apex_trial：主站沒有固定試聽的照「無來源」烘（previewUrl ''；畫面本來就會跳過沒有試聽的卡）
   const region = REGION_OVERRIDE[id] || (TW.test(artist) ? 'tw' : JP.test(artist) ? 'jp' : ZH.test(artist) ? 'zh' : 'xx');
   const tags = (genres || []).map(g => 'g:' + g)
     .concat(year < 1980 ? ['y:<1980'] : year >= 2000 ? ['y:>=2000'] : [])

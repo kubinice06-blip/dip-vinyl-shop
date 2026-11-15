@@ -15,6 +15,10 @@
 //   頻率（v5 第六項第二期）：C.tunes 八格齊全（order／names／colors／label）、每張卡都有 tune 而且在八格內、10 位客人各一個 tune（八格內、每格最多 2 位）、C.radio 的字；
 //     跟主站比（tuneWarnings，走鐘只警告、不擋）：C.tunes 的名字＝data/mood/card-moods.json names、顏色＝dip-tune.js CELL_COLOR、順序＝dip-tune.js ORDER；
 //     每張卡的 tune＝現在的 card-moods.json 判的格（主站每批上架都會重建這份，遊戲是烘焙快照；不一樣就用 bake-cards.mjs --covers-only --no-verify 重烘）。
+//   頂點卡純輔助卡試做（?apex=1；匯出 apexProblems(C, E)）：C.apexTrial 三派各 10–20 張（試做 15）、第 1 張＝C.aces、卡存在而且 tier 對、不重複；
+//     每張 id 全表唯一、name ≤8、text ≤25、timing hand／duel／hold、op 在 engine APEX_OPS（combo＝2 個以上原語）、params 在範圍內、時機准用、hold 只有 timing hold 才有（而且是准當「留著」的原語）；
+//     禁區字（不會被剋、必中、免疫、無視）；winHeal 整數；notes 每個用到的 op 都有一句（≤25 字）；C.apexTrialOnly＝名單扣 C.aces；
+//     名單裡的新卡（C.apexTrialOnly）可以沒有試聽（主站沒有固定試聽＝「無來源」，烘成 previewUrl ''）。
 //   遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json 跟 cards.js 一致（tools/build-pool-index.mjs 產生；扣三張王牌、每個 cardId 主站卡池找得到）。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十六區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
@@ -302,13 +306,14 @@ export function contentProblems(C, E) {
   const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
   const CARDS = C.cards || {};
   const ids = Object.keys(CARDS);
+  const APEX_ONLY = new Set(C.apexTrialOnly || []);   // 頂點卡試做的新卡：主站沒有固定試聽的照「無來源」（previewUrl ''）
   for (const id of ids) {
     const c = CARDS[id];
     ok(c.id === id, id + ': id 不一致');
     for (const k of ['artist', 'album']) ok(typeof c[k] === 'string' && c[k], id + ': 缺 ' + k);
     for (const k of ATTRS) ok(Number.isInteger(c[k]) && c[k] >= 1 && c[k] <= 7, id + ': 星數 ' + k + '=' + c[k]);
     ok(c.coverUrl || c.localCover, id + ': 沒有封面');
-    ok(typeof c.previewUrl === 'string' && /^https:\/\//.test(c.previewUrl), id + ': 沒有試聽');
+    ok(typeof c.previewUrl === 'string' && (/^https:\/\//.test(c.previewUrl) || (c.previewUrl === '' && APEX_ONLY.has(id))), id + ': 沒有試聽');
     ok(['tw', 'jp', 'zh', 'xx'].includes(c.region), id + ': region ' + c.region);
     ok(Array.isArray(c.tags) && Array.isArray(c.genres), id + ': tags/genres');
     ok(c.tier == null || TIERS.includes(c.tier), id + ': tier ' + c.tier);
@@ -317,6 +322,7 @@ export function contentProblems(C, E) {
   }
   bad.push(...shapeProblems(C, E));
   bad.push(...tuneProblems(C));
+  bad.push(...apexProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
   for (const id of [...Object.values(C.aces), ...Object.values(C.gifts).flat(), ...C.bargain.pool]) if (CARDS[id]) ok(CARDS[id].pitch, id + ': 缺推薦語（王牌、老闆四張、特價箱）');
   has(C.enemies.man.drop, 'enemies.man.drop');
@@ -706,6 +712,79 @@ export function tuneWarnings(C) {
     if (drift.length) w.push('卡的頻率跟主站現在不一樣 ' + drift.length + ' 張（例 ' + drift.slice(0, 3).join('、') + '）：bake-cards.mjs --covers-only --no-verify 重烘');
   }
   return w;
+}
+
+// ================================================================================================
+// 頂點卡純輔助卡試做（?apex=1）：C.apexTrial（見檔頭）
+// ================================================================================================
+const APEX_BANNED = ['不會被剋', '必中', '免疫', '無視'];
+const clen = s => [...String(s)].length;
+export function apexProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const A = C.apexTrial;
+  if (A == null) return bad;                                   // 試做拿掉了：不檢查
+  if (!ok(A && typeof A === 'object', 'apexTrial 要是物件')) return bad;
+  const OPS = E.APEX_OPS || {}, CARDS = C.cards || {};
+  ok(Number.isInteger(A.winHeal) && A.winHeal >= 0 && A.winHeal <= 10, 'apexTrial.winHeal 要是 0–10 的整數');
+  const seen = new Set(), cardsSeen = new Set(), usedOps = new Set();
+  const paramsOk = (op, params, where, cap) => {
+    const spec = OPS[op];
+    if (!ok(spec, where + '：op ' + op + ' 不在 engine APEX_OPS')) return;
+    if (!ok(params && typeof params === 'object' && !Array.isArray(params), where + '：params 要是物件')) return;
+    for (const k of Object.keys(params)) ok(k in spec.params, where + '：' + op + ' 沒有參數 ' + k);
+    for (const [k, rg] of Object.entries(spec.params)) {
+      const v = params[k];
+      if (rg === 'bool') { ok(v === undefined || typeof v === 'boolean', where + '：' + op + '.' + k + ' 要是布林'); continue; }
+      if (!ok(Number.isInteger(v) && v >= rg[0] && v <= rg[1], where + '：' + op + '.' + k + '＝' + v + ' 不在 ' + rg[0] + '–' + rg[1])) continue;
+      if (cap && cap[k] != null) ok(v <= cap[k], where + '：' + op + '.' + k + '＝' + v + ' 超過這個時機的上限 ' + cap[k]);
+    }
+    usedOps.add(op);
+  };
+  for (const t of TIERS) {
+    const L = A[t], w0 = 'apexTrial.' + t;
+    if (!ok(Array.isArray(L) && L.length >= 10 && L.length <= 20, w0 + '：要 10–20 張（試做 15）')) continue;
+    ok(L[0] && L[0].card === C.aces[t], w0 + '[0] 要是 C.aces.' + t + '（預設那張）');
+    L.forEach((x, k) => {
+      const w = w0 + '[' + k + ']（' + (x && x.card) + '）';
+      if (!ok(x && typeof x === 'object', w + '：不是物件')) return;
+      const c = CARDS[x.card];
+      ok(c && c.tier === t, w + '：卡不存在或 tier 不是 ' + t);
+      ok(!cardsSeen.has(x.card), w + '：卡重複'); cardsSeen.add(x.card);
+      ok(typeof x.id === 'string' && /^[a-z0-9-]+$/.test(x.id) && !seen.has(x.id), w + '：能力 id 要英數短橫線、全表唯一：' + x.id); seen.add(x.id);
+      ok(typeof x.name === 'string' && x.name && clen(x.name) <= 8, w + '：name ≤8 字：' + x.name);
+      ok(typeof x.text === 'string' && x.text && clen(x.text) <= 25, w + '：text ≤25 字（' + clen(x.text) + '）：' + x.text);
+      for (const b of APEX_BANNED) ok(!String(x.text).includes(b) && !String(x.name).includes(b), w + '：禁區字「' + b + '」');
+      if (!ok(E.APEX_TIMINGS.includes(x.timing), w + '：timing ' + x.timing)) return;
+      const tm = x.timing === 'duel' ? 'duel' : 'hand';               // hold 的大效果＝這手
+      if (x.op === 'combo') {
+        const ops = x.params && x.params.ops;
+        if (ok(Array.isArray(ops) && ops.length >= 2 && Object.keys(x.params).length === 1, w + '：combo 要 params.ops（2 個以上原語）'))
+          for (const o of ops) { ok(OPS[o.op] && OPS[o.op].timing.includes(tm), w + '：combo 裡的 ' + o.op + ' 不能用在 ' + tm); paramsOk(o.op, o.params || {}, w, tm === 'duel' ? (OPS[o.op] || {}).duelMax : null); }
+        usedOps.add('combo');
+      } else {
+        ok(OPS[x.op] && OPS[x.op].timing.includes(tm), w + '：' + x.op + ' 不能用在 ' + x.timing);
+        paramsOk(x.op, x.params, w, tm === 'duel' ? (OPS[x.op] || {}).duelMax : null);
+      }
+      if (x.timing === 'hold') {
+        if (ok(x.hold && typeof x.hold === 'object' && OPS[x.hold.op] && OPS[x.hold.op].small, w + '：hold 要有 {op, params}，而且 op 准當「留著」的小效果')) { paramsOk(x.hold.op, x.hold.params || {}, w + '.hold', OPS[x.hold.op].smallMax); ok(((A.holdNotes || {})[x.hold.op]), w + '：holdNotes 沒有 ' + x.hold.op); }
+        ok(clen(x.text) <= 25 && /^留著：.+；發動：/.test(x.text), w + '：留著型的說明要「留著：…；發動：…」');
+      } else ok(x.hold === null, w + '：只有 timing hold 才有 hold（其他要 null）');
+      ok(typeof x.fact === 'string' && x.fact, w + '：fact（典故出處）');
+    });
+  }
+  ok(Array.isArray(C.apexTrialOnly) && sameSet(C.apexTrialOnly, [...cardsSeen].filter(id => !Object.values(C.aces).includes(id))), 'apexTrialOnly＝名單扣 C.aces');
+  const N = A.notes || {};
+  for (const op of usedOps) if (op !== 'reveal') ok(typeof N[op] === 'string' && N[op], 'apexTrial.notes 少了 ' + op);
+  if (usedOps.has('critLeech')) ok(N.leech, 'apexTrial.notes 少了 leech（拆穿回血 ×1）');
+  for (const k of ['none', 'noneHonest']) ok(typeof N[k] === 'string' && N[k], 'apexTrial.notes 少了 ' + k);
+  for (const [k, v] of Object.entries(N).concat(Object.entries(A.holdNotes || {}))) ok(typeof v === 'string' && clen(v.replace(/\{(d|h)\}/g, '12').replace('{name}', '一二三四五')) <= 25, 'apexTrial 結果句 ' + k + ' 代入後超過 25 字：' + v);
+  const U = A.ui || {};
+  for (const k of ['slot', 'use', 'used', 'usedNote', 'noStar', 'rule', 'intro', 'pickTitle', 'pickGo', 'infoTitle', 'revealHonest', 'revealBluff', 'fired', 'rulesFoot']) ok(typeof U[k] === 'string' && U[k], 'apexTrial.ui.' + k);
+  ok(U.timing && ['hand', 'duel', 'hold'].every(k => typeof U.timing[k] === 'string' && U.timing[k]), 'apexTrial.ui.timing 三種');
+  for (const [k, v] of Object.entries(A.tips || {})) ok(typeof v === 'string' && clen(v) <= 20, 'apexTrial.tips.' + k + ' ≤20 字');
+  ok(C.apexTrialTag === '新', 'C.apexTrialTag');
+  return bad;
 }
 
 // ================================================================================================

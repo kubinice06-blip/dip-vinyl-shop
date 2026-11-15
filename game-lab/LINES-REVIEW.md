@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 446（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 535（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -635,6 +635,125 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・toBargain | 去特價箱看看 | 本規格新寫 | `radio.toBargain` |
 | （畫面字）・bagged | 已經收進包包了。 | 本規格新寫 | `radio.bagged` |
 | （畫面字）・gone | 已經不在特價箱了。 | 本規格新寫 | `radio.gone` |
+
+## 頂點卡試做・殿堂的王牌能力（能力名・時機：說明；挑王牌面板 5×3 的順序；?apex=1）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Radiohead《OK Computer》・text | 安全氣囊・這手：氣囊救了你一命：回 2 聲望。 | 本規格新寫 | `apexTrial.hall[0].text` |
+| Glenn Gould《Bach: The Goldberg Variations (1955)》・text | 三十段變奏・整場：一段詠嘆調變三十次：這場比星多算 1。 | 本規格新寫 | `apexTrial.hall[1].text` |
+| Miles Davis《Kind of Blue》・text | 那又怎樣・這手：比輸了又怎樣：這手比星輸了不扣。 | 本規格新寫 | `apexTrial.hall[2].text` |
+| The Beatles《Abbey Road》・text | 扛起重擔・整場：這場比星多算 1，被剋少扣 1。 | 本規格新寫 | `apexTrial.hall[3].text` |
+| Pink Floyd《The Dark Side of the Moon》・text | 我們與他們・這手：正面比個高下：這手比星多算 2。 | 本規格新寫 | `apexTrial.hall[4].text` |
+| Bob Marley & The Wailers《Exodus》・text | 調暗燈光・這手：燈光調暗一點：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[5].text` |
+| 大滝詠一《A Long Vacation》・text | 夏日音牆・這手：音牆疊得厚：這手比星多算 2。 | 本規格新寫 | `apexTrial.hall[6].text` |
+| Michael Jackson《Thriller》・text | 史上最暢銷・這手：名盤份量最重：這手你的唱片 +1 星。 | 本規格新寫 | `apexTrial.hall[7].text` |
+| 鄧麗君 Teresa Teng《淡淡幽情》・text | 但願人長久・留著：留著：被剋少扣 1；發動：這手他少 1 星。 | 本規格新寫 | `apexTrial.hall[8].text` |
+| 張雨生《口是心非》・text | 口是心非・這手：他說的不算：這手比星多算 2，輸了不扣。 | 本規格新寫 | `apexTrial.hall[9].text` |
+| 陳綺貞 Cheer Chen《讓我想一想》・text | 讓我想一想・留著：留著：同色同星扣他 1；發動：這手比星多算 2。 | 本規格新寫 | `apexTrial.hall[10].text` |
+| Daft Punk《Discovery》・text | 更快更強・整場：更硬更好更快更強：這場比星多算 1。 | 本規格新寫 | `apexTrial.hall[11].text` |
+| 周杰倫《范特西》・text | 雙截棍・這手：哼哼哈兮：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[12].text` |
+| Kendrick Lamar《To Pimp a Butterfly》・text | 唸完那首詩・整場：一路唸到最後：這場比星多算 1。 | 本規格新寫 | `apexTrial.hall[13].text` |
+| 羅大佑《之乎者也》・text | 光陰的故事・這手：光陰沖淡一顆：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[14].text` |
+
+## 頂點卡試做・流亡的王牌能力（能力名・時機：說明；挑王牌面板 5×3 的順序；?apex=1）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Barney Wilen《Zodiac》・text | 黃道借星・整場：借他的星：這場你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[0].text` |
+| Beyond《再見理想》・text | 自掏腰包・整場：硬碰大牌：這場你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[1].text` |
+| Harry Roesli《Ken Arok》・text | 草莽稱王・整場：草莽挑王：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[2].text` |
+| 夾子電動大樂隊《地下人》・text | 地下人・整場：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[3].text` |
+| 灰野敬二《滲有無》・text | 滲透・整場：滲過去：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[4].text` |
+| 楊祖珺《楊祖珺》・text | 禁不掉・整場：禁不掉：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[5].text` |
+| 嘉手苅林昌《嘉手苅林昌》・text | 島唄之神・整場：老神在在：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[6].text` |
+| Blue Notes《Blue Notes for Mongezi》・text | 流亡者回敬・整場：這場被剋或比星輸時，扣你的星有一半彈回去扣他。 | 本規格新寫 | `apexTrial.pearl[7].text` |
+| 小久保隆《Get at the Wave》・text | 浪打回頭・整場：這場被剋或比星輸時，扣你的星有一半彈回去扣他。 | 本規格新寫 | `apexTrial.pearl[8].text` |
+| Derek Bailey《Solo Guitar Volume 1》・text | 一把吉他・這手：一把吉他：這手你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[9].text` |
+| Gorilla Biscuits《demo 1987》・text | 一卷 demo・這手：這手你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[10].text` |
+| 高柳昌行《Eclipse/侵蝕》・text | 侵蝕・這手：以彼之道：這手你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[11].text` |
+| 1976《Late Summer of 1976 不插電現場實況》・text | 不插電・這手：拔掉插頭：這手你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[12].text` |
+| Black Renaissance《Body, Mind and Spirit》・text | 身心靈・這手：身心靈都養回來：回 2 聲望。 | 本規格新寫 | `apexTrial.pearl[13].text` |
+| Alton Ellis《A New Day》・text | 新的一天・這手：新的一天重新站起來：回 2 聲望。 | 本規格新寫 | `apexTrial.pearl[14].text` |
+
+## 頂點卡試做・異端的王牌能力（能力名・時機：說明；挑王牌面板 5×3 的順序；?apex=1）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Swans《Filth》・text | 揭穿髒招・整場：唬人是髒招：這場抓到他唬你，扣加倍。 | 本規格新寫 | `apexTrial.heresy[0].text` |
+| Ornette Coleman《Free Jazz: A Collective Improvisation》・text | 雙四重奏・整場：兩組四重奏齊上：這場抓到他唬你，扣加倍。 | 本規格新寫 | `apexTrial.heresy[1].text` |
+| Captain Beefheart & His Magic Band《Trout Mask Replica》・text | 撕下面具・整場：面具撕下來：這場抓到他唬你，扣加倍。 | 本規格新寫 | `apexTrial.heresy[2].text` |
+| Discharge《Hear Nothing See Nothing Say Nothing》・text | 什麼都不聽・整場：他說的都不聽：這場抓到他唬你，扣三倍。 | 本規格新寫 | `apexTrial.heresy[3].text` |
+| Lou Reed《Metal Machine Music》・text | 四面回授・整場：回授：這場抓到他唬你，扣加倍，扣到的一半回你聲望。 | 本規格新寫 | `apexTrial.heresy[4].text` |
+| Throbbing Gristle《The Second Annual Report》・text | 年度結算・整場：對帳：這場抓到他唬你，扣加倍，扣到的一半回你聲望。 | 本規格新寫 | `apexTrial.heresy[5].text` |
+| Alvin Lucier《I Am Sitting in a Room》・text | 一遍又一遍・整場：一遍遍錄回來：這場抓到他唬你，扣到的一半回你聲望。 | 本規格新寫 | `apexTrial.heresy[6].text` |
+| Les Rallizes Dénudés《'77 Live》・text | 赤裸裸・這手：剝個精光：看穿這手提示是真話還是唬人。 | 本規格新寫 | `apexTrial.heresy[7].text` |
+| Ryoji Ikeda《+/-》・text | 正負號・這手：非正即負：看穿這手提示是真話還是唬人。 | 本規格新寫 | `apexTrial.heresy[8].text` |
+| 非常階段《蔵六の奇病》・text | 逃生梯・這手：先走逃生梯：回 2 聲望。 | 本規格新寫 | `apexTrial.heresy[9].text` |
+| Einstürzende Neubauten《Kollaps》・text | 一拆就塌・整場：謊話一拆就塌：這場抓到他唬你，扣加倍。 | 本規格新寫 | `apexTrial.heresy[10].text` |
+| 零與聲音解放組織《Z.S.L.O.》・text | 往零推・這手：往零推一格：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.heresy[11].text` |
+| Sunn O)))《Black One》・text | 低頻壓頂・這手：低頻壓下來：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.heresy[12].text` |
+| Napalm Death《Scum》・text | 一秒鐘・這手：一秒就結束：這手抓到他唬你，扣三倍。 | 本規格新寫 | `apexTrial.heresy[13].text` |
+| Peter Brötzmann《Machine Gun》・text | 機關槍・留著：留著：剋中多扣 1；發動：這手抓到他唬你扣三倍。 | 本規格新寫 | `apexTrial.heresy[14].text` |
+
+## 頂點卡試做・畫面字（王牌格、能力框、挑王牌面板、看穿的章；{x} 由畫面代入）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・slot | 王牌 | 本規格新寫 | `apexTrial.ui.slot` |
+| （畫面字）・use | 發動 | 本規格新寫 | `apexTrial.ui.use` |
+| （畫面字）・used | 用過 | 本規格新寫 | `apexTrial.ui.used` |
+| （畫面字）・usedNote | 這場用過了 | 本規格新寫 | `apexTrial.ui.usedNote` |
+| （畫面字）・noStar | 王牌不比星。 | 本規格新寫 | `apexTrial.ui.noStar` |
+| （畫面字）・hand | 這手 | 本規格新寫 | `apexTrial.ui.timing.hand` |
+| （畫面字）・duel | 整場 | 本規格新寫 | `apexTrial.ui.timing.duel` |
+| （畫面字）・hold | 留著 | 本規格新寫 | `apexTrial.ui.timing.hold` |
+| （畫面字）・rule | 王牌不比星：每場發動一次，照樣出一張唱片。 | 本規格新寫 | `apexTrial.ui.rule` |
+| （畫面字）・intro | 「接下來，王牌不上場比星，改成一場幫你一次。」 | 本規格新寫 | `apexTrial.ui.intro` |
+| （畫面字）・pickTitle | 「這派的王牌有十五張，挑一張帶著。」 | 本規格新寫 | `apexTrial.ui.pickTitle` |
+| （畫面字）・pickGo | 就這張 | 本規格新寫 | `apexTrial.ui.pickGo` |
+| （畫面字）・pickSame | 就帶這張 | 本規格新寫 | `apexTrial.ui.pickSame` |
+| （畫面字）・pickLine | {name}・{timing}：{text} | 本規格新寫 | `apexTrial.ui.pickLine` |
+| （畫面字）・infoTitle | 王牌能力 | 本規格新寫 | `apexTrial.ui.infoTitle` |
+| （畫面字）・revealHonest | 真話 | 本規格新寫 | `apexTrial.ui.revealHonest` |
+| （畫面字）・revealBluff | 唬人！ | 本規格新寫 | `apexTrial.ui.revealBluff` |
+| （畫面字）・fired | 王牌《{album}》：{name} | 本規格新寫 | `apexTrial.ui.fired` |
+| （畫面字）・healToast | 聲望 +{n} | 本規格新寫 | `apexTrial.ui.healToast` |
+| （畫面字）・rulesFoot | 你開局 {hp} 聲望（升級會加），打贏回 {heal}；客人 {normal}、傳說藏家 {boss}。 | 本規格新寫 | `apexTrial.ui.rulesFoot` |
+
+## 頂點卡試做・一次性老闆小提示（第一次看到能力框／第一次「沒作用」）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・tip_apex | 王牌一場發動一次，不佔這一手。 | 本規格新寫 | `apexTrial.tips.tip_apex` |
+| 老闆・tip_apexMiss | 王牌要碰到條件才有用。 | 本規格新寫 | `apexTrial.tips.tip_apexMiss` |
+
+## 頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・heal | 王牌：回 {d} 聲望 | 本規格新寫 | `apexTrial.notes.heal` |
+| （畫面字）・star | 王牌：你 +1 星，多賺 {d} | 本規格新寫 | `apexTrial.notes.star` |
+| （畫面字）・eStar | 王牌：他少 1 星，多賺 {d} | 本規格新寫 | `apexTrial.notes.eStar` |
+| （畫面字）・mirrorPlus | 王牌：比星多算，多賺 {d} | 本規格新寫 | `apexTrial.notes.mirrorPlus` |
+| （畫面字）・loseZero | 王牌：比星輸了不扣，少扣 {d} | 本規格新寫 | `apexTrial.notes.loseZero` |
+| （畫面字）・tieWin | 王牌：同色同星，他 −{d} | 本規格新寫 | `apexTrial.notes.tieWin` |
+| （畫面字）・shield | 王牌：被剋少扣 {d} | 本規格新寫 | `apexTrial.notes.shield` |
+| （畫面字）・halfIn | 王牌：被剋減半，少扣 {d} | 本規格新寫 | `apexTrial.notes.halfIn` |
+| （畫面字）・theirStar | 王牌：以小搏大，多賺 {d} | 本規格新寫 | `apexTrial.notes.theirStar` |
+| （畫面字）・pThr | 王牌：剋得動了，多賺 {d} | 本規格新寫 | `apexTrial.notes.pThr` |
+| （畫面字）・bounce | 王牌：彈回去 {d} | 本規格新寫 | `apexTrial.notes.bounce` |
+| （畫面字）・crit | 王牌：拆穿！多扣 {d} | 本規格新寫 | `apexTrial.notes.crit` |
+| （畫面字）・critLeech | 王牌：拆穿！多扣 {d}，回 {h} 聲望 | 本規格新寫 | `apexTrial.notes.critLeech` |
+| （畫面字）・leech | 王牌：拆穿！回 {h} 聲望 | 本規格新寫 | `apexTrial.notes.leech` |
+| （畫面字）・counterPlus | 王牌：剋中多扣 {d} | 本規格新寫 | `apexTrial.notes.counterPlus` |
+| （畫面字）・counterMult | 王牌：剋中加倍，多扣 {d} | 本規格新寫 | `apexTrial.notes.counterMult` |
+| （畫面字）・combo | 王牌：{name}，多賺 {d} | 本規格新寫 | `apexTrial.notes.combo` |
+| （畫面字）・none | 王牌：這手沒碰到，沒作用 | 本規格新寫 | `apexTrial.notes.none` |
+| （畫面字）・noneHonest | 王牌：他這手沒唬你，沒作用 | 本規格新寫 | `apexTrial.notes.noneHonest` |
+| （畫面字）・shield | 王牌（留著）：被剋少扣 {d} | 本規格新寫 | `apexTrial.holdNotes.shield` |
+| （畫面字）・tieWin | 王牌（留著）：同色同星，他 −{d} | 本規格新寫 | `apexTrial.holdNotes.tieWin` |
+| （畫面字）・counterPlus | 王牌（留著）：剋中多扣 {d} | 本規格新寫 | `apexTrial.holdNotes.counterPlus` |
 
 ## 店內名牌（shops/basement.json）
 
