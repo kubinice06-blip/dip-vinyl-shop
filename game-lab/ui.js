@@ -2594,12 +2594,11 @@
       if (b.getAttribute('data-a') === 'toBargain') { s.remove(); syncFloat(); sfx('tick'); econCall('openBargain'); return; }
       var res = doChoose({ type: 'radio', cell: b.getAttribute('data-cell') });
       if (!res.ok) { toast(radioText(res.error === 'used' ? 'used' : res.error === 'empty' ? 'empty' : 'later')); render(false); return; }
-      sfx('tune');
       var c = card(r.shop.radio.id), f = FX();
-      if (c && f && f.music) {
-        if (!soundOn()) { try { if (f.init) f.init(); if (f.setSound) f.setSound(true); else f.unlockFromGesture(true); } catch (err) { console.error(err); } save.settings.sound = true; persist(); }
-        later(function () { try { f.music.play(c, { fadeMs: 900 }); } catch (err) { console.error(err); } stg('play', true); }, 420);   // 轉台聲先走完再放
-      }
+      // 沒開聲音：先開（照 openBooth），轉台聲才聽得到
+      if (c && f && f.music && !soundOn()) { try { if (f.init) f.init(); if (f.setSound) f.setSound(true); else f.unlockFromGesture(true); } catch (err) { console.error(err); } save.settings.sound = true; persist(); }
+      sfx('tune');
+      if (c && f && f.music) later(function () { try { f.music.play(c, { fadeMs: 900 }); } catch (err) { console.error(err); } stg('play', true); }, 420);   // 轉台聲先走完再放
       render(true);
     });
   }
