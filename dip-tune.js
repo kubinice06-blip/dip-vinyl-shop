@@ -634,7 +634,7 @@ html.tune-inapp-lock body{padding-top:120px}
     const p = state.p, t = target(); readout(t);
     if (THREE_OK) { PX.position.x = toG('x', rawOf('x', p.x)); PY.position.y = toG('y', rawOf('y', p.y)); PZ.position.z = toG('z', rawOf('z', p.z)); }   // 定位線跟著原始分數走（掃過密集的中段會走得比較慢）
     if (!previewCard) { const n = nearest(); if (n) scan(n); }
-    const cell = cellOf(t.x, t.y, t.z);
+    const cell = previewCard && previewCard === pinned ? previewCard.cell : cellOf(t.x, t.y, t.z);   // 搜尋找來的那張：滾筒照它的格（見 armPreview）
     roll(el.dx, t.x >= T.x ? 1 : 0); roll(el.dy, t.y >= T.y ? 1 : 0); roll(el.dz, t.z >= T.z ? 1 : 0); roll(el.dcell, ORDER.indexOf(cell));
     el.draw.disabled = !previewCard;
   }
@@ -801,7 +801,9 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && !previewCard.egg && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
+  // 停下來那張跟滾筒的格對不上就換成這格最近的（2026-10-24）；搜尋找來的那張（pinned）不換：百分位平台邊緣停穩後可能差一格，
+  // 不然 ?q= 帶進來的（遊戲「在頻率光譜找它」316 張有 5 張、全星圖 367 張）0.7 秒後會被換成別張（2026-11-15）
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && !previewCard.egg && previewCard !== pinned && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
   // 懸浮封面：停穩（跟試聽同一個 0.7 秒）才開機，一轉動就關
   let holoCard = null;
   // 封面放大成螢幕要清楚一點、又不要抓原圖：CAA 取 500 px 縮圖，Apple 換 600×600
@@ -1641,7 +1643,7 @@ html.tune-inapp-lock body{padding-top:120px}
     el.mode.onclick = () => { state.radio = !state.radio; setModeUI(true); sfxClick(); radioToggled(); };
     el.mineBtn = host.querySelector('#tuneMineBtn'); el.mineBtn.onclick = mineToggle; syncMineUI();
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) { const n = nearest(); if (n) scan(n); } emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard !== pinned && previewCard.cell !== targetCell()) { const n = nearest(); if (n) scan(n); } emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
     wireFilters(host);
     let data;
