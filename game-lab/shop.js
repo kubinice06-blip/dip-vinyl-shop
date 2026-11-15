@@ -18,6 +18,8 @@
  *   shop.setView({ y, h }) / tweenView({ y, h }, ms) / tag / untag / float / anchor / pose / emote / highlight / hotRect
  *   唱盤區（v3）：shop.arm(id, 'wind'|'throw'|'shield'|'up'|'flag'|'shrug'|null) / hold(id, what) / nudge(id, dx)
  *                 shop.state.fx（飛行唱片、火花、碎片、旗…，由 stage.js 的 clash() 每格填）/ state.decks / fast(on) / onTick(fn)
+ *   朝向（v5 第五項）：走路時 faceDir 自己算（往上走背面、往下正面、橫走照舊左右翻，有遲滯）；只有站、走有背面，其他姿勢一律正面。
+ *                 停著時叫 flip／pose／arm／hold 轉回正面、put 一律正面；shop.pos(id).dir／flip 給測試看；shop.dir(id, 'back') 劇本手動指定
  *
  * 道具在 shop-props.js 用 DipShop.defProp(type, spec) 註冊；店的配置是純 JSON（shops/*.json）。
  * 只掛 window.DipShop；不宣告 dip-character.js 的同名全域。
