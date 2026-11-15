@@ -86,7 +86,8 @@
   function defSave() {
     return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, runs: [], runSeq: {},
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [],
-      tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null, bring: null };   // bring：主站「帶去店裡對決」帶來的那張（{id, at}；下一趟開局挑種子排第一、預設勾好，用一次就清）
+      tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null, bring: null,   // bring：主站「帶去店裡對決」帶來的那張（{id, at}；下一趟開局挑種子排第一、預設勾好，用一次就清）
+      want: [] };   // want：想要清單（你家的控制台在星圖上挑到、還沒擁有的；v5 第六項第三期，先只記、不影響進貨；不用升存檔版本：舊存檔缺這個鍵就補空的）
   }
   var posInt = function (x) { return typeof x === 'number' && Math.floor(x) === x && x >= 1; };
   function validRun(r) {
@@ -227,6 +228,8 @@
       shf[id] = x;
     });
     s.shelf = shf;
+    // 想要清單：卡還在、不重複、已經擁有的拿掉（收進唱片櫃了就不用想要了）；最多 200 張
+    s.want = s.want.filter(function (id, i, a) { return typeof id === 'string' && card(id) && a.indexOf(id) === i && !(shf[id] && shf[id].own); }).slice(-200);
     return s;
   }
   function persist() {
@@ -629,6 +632,7 @@
   }
   function go(id, params) {
     if (UI.screen === 'duel' && id !== 'duel') leaveDuel();
+    if (UI.tune) closeTuneConsole(true);              // 你家的控制台（全螢幕星圖）開著就收掉
     cleanup();
     closePage(true);
     UI.screen = id; UI.params = params || {}; UI.screenAt = now();
@@ -2684,6 +2688,9 @@
     var scr = UI.screen, m;
     if ((m = /^wall-record:(.+)$/.exec(action))) { info(m[1], { from: 'stage' }); return; }
     if ((m = /^wall-painted:(.+)$/.exec(action))) { info(paintedCard(m[1], hot && hot.label), { from: 'stage' }); return; }
+    // 你家（聆聽室）：房間裡的熱點自己處理（走過去才開面板）；台北地圖的小房子＝回你家
+    if (scr === 'home') { homeAction(action); return; }
+    if (action === 'home' && scr === 'taipei') { goHome(UI.taipeiBack || 'title'); return; }
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
     // 櫃檯：來客、兩位客人之間＝配件櫃（B3 的經濟介面）；其他畫面照舊老闆一句
     if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop'); return; }
@@ -2823,7 +2830,8 @@
   // ======================================================================= 台北地圖預告（同一個渲染器換一份 JSON）
   SCREENS.taipei = function (p) {
     UI.taipeiBack = p.back || 'title';
-    setTop('台北踢館地圖<small>預告・示意</small>', { links: [[line('backToShop') || '回店裡', backFromTaipei, 'back']] });
+    // 你家（v5 第六項第三期）：地圖上的小房子；點不準、讀屏的人用頂欄這顆（做同一件事）
+    setTop('台北踢館地圖<small>預告・示意</small>', { links: [[line('homeBtn') || '你家', function () { if (!UI.backing) goHome(UI.taipeiBack || 'title'); }, 'home'], [line('backToShop') || '回店裡', backFromTaipei, 'back']] });
     var panel = UI.panel; panel.classList.add('taipei');
     panel.innerHTML = '<div class="lb-pad"><p class="lb-tp"><b>dip vinyl（本店）</b>：' + esc(line('taipeiHere') || '你在這。') + '</p>' +
       (line('taipeiNote') ? '<p class="sub">' + esc(line('taipeiNote')) + '</p>' : '') + '</div>';
@@ -2843,6 +2851,312 @@
       place('o', 'counter', 'owner');
       if (back === 'end' && save.run && save.run.over) go('end'); else go('title');
     });
+  }
+
+  // ======================================================================= 你家（聆聽室，v5 第六項第三期第一步；map-room.md §6、§7、§9）
+  // 台北地圖的小房子 → 斜俯視的房間（shops/home.json，kind:room）：唱片架（唱片櫃裡擁有的，分頁面板每頁 12 張）、唱盤（點唱片試聽、放完接下一張收藏）、
+  //   小控制台（推近成全螢幕一層，載主站 ../dip-tune.js 的頻率光譜星圖：收藏亮、其他暗；選到你的＝放上唱盤，不是你的＝加進想要清單 save.want，先只記）、門（回本店）。
+  //   點家具＝先走過去再開面板（照翻箱）；頂欄下面三顆 DOM 鈕做同一件事（給點不準、讀屏的人）。不碰規則、經濟。
+  var HOME_PAGE = 12;                                   // 唱片架分頁：每頁 12 張（六欄兩排）
+  var TUNE_V = 74;                                      // ../dip-tune.js 的 ?v＝主站 index.html 那個號（主站改 dip-tune 時這裡跟著加）
+  // 擁有的唱片，照唱片櫃頁的排法：店內取得 → 藏家王牌 → 老闆送的（同一類最近收的在前）
+  function homeOwnedIds() {
+    var ORD = { run: 0, boss: 1, gift: 2 };
+    return Object.keys(save.shelf).filter(card).reverse().filter(isOwned).sort(function (a, b) { return (ORD[save.shelf[a].src] | 0) - (ORD[save.shelf[b].src] | 0); });
+  }
+  function homePlayable() { return homeOwnedIds().filter(function (id) { return !!(card(id) || {}).previewUrl; }); }
+  function homeLayout() {
+    var SG = W.DipLabStage;
+    var p = SG && SG.loadLayout ? SG.loadLayout('home') : Promise.reject(new Error('DipLabStage 不在'));
+    return p.then(function (L) {
+      var own = homeOwnedIds();
+      (L.props || []).forEach(function (o) { if (o.type === 'ledge' && o.fill === 'owned') { var n = (o.n || 7) * Math.max(1, o.rows || 1); o.cards = own.slice(0, n); while (o.cards.length < n) o.cards.push(null); } });
+      return L;
+    });
+  }
+  function soundUp() {
+    var f = FX(); if (!f || soundOn()) return;
+    try { if (f.init) f.init(); if (f.setSound) f.setSound(true); else f.unlockFromGesture(true); } catch (err) { console.error(err); }
+    save.settings.sound = true; persist();
+  }
+  // 唱盤上那張：正在出聲的那張（放完接下一張也跟著換）；沒在出聲＝你最後放上去的那張（還在抓試聽：照轉；抓不到或停了：抬著針），
+  //   都沒有才看「唱盤上那張」（靜音時 music 只換那張）。不能直接看 music.current()：剛按「放唱盤」時它還是上一首（抓檔中）
+  function deckRec(id, state) { var c = card(id); return c ? { rec: { card: id, attr: E.topAttr(c), kind: c.tier ? 'ace' : null }, state: state } : null; }
+  function homeSyncDeck() {
+    if (UI.screen !== 'home' || !UI.stage || UI.going) return;
+    var f = FX(), c = f && f.music && f.music.current && f.music.current(), on = !!(c && card(c.id) && f.music.playing()), d = null;
+    var pend = !!(UI.homeDeckId && card(UI.homeDeckId) && UI.homeDeckAt && now() - UI.homeDeckAt < 4000 && !(on && c.id === UI.homeDeckId));   // 剛放上去、還在抓試聽：先顯示它（上一首還在響也一樣）
+    if (pend) d = deckRec(UI.homeDeckId, 'spin');
+    else if (on) { UI.homeDeckId = c.id; d = deckRec(c.id, 'spin'); }
+    else if (UI.homeDeckId && card(UI.homeDeckId)) d = deckRec(UI.homeDeckId, 'armMid');
+    else if (c && card(c.id)) d = deckRec(c.id, 'armMid');
+    stg('deck', d);
+    // 面板上「唱盤上」那一行（小封面＋專輯＋藝人；點封面＝唱片資訊）
+    var np = qs('.lb-homenp', UI.panel), id = d && d.rec.card, key = (id || '') + '|' + (d ? d.state : '');
+    if (np && np._k !== key) {
+      np._k = key;
+      var cc = id && card(id);
+      np.innerHTML = cc ? coverHTML(cc, { size: 40, badge: false }) + '<div class="tx"><span class="k">' + esc(line('homeNow')) + (d.state === 'spin' ? '<span class="rec" aria-hidden="true"></span>' : '') + '</span><b>' + esc(cc.album) + '</b><span class="ar">' + esc(cc.artist) + '</span></div>'
+        : '<p class="sub">' + esc(line('homeIdle')) + '</p>';
+    }
+  }
+  function homePut(id, o) {
+    o = o || {};
+    var c = card(id), f = FX(); if (!c) return;
+    soundUp();
+    UI.homeDeckId = id; UI.homeDeckAt = now();
+    stg('deck', deckRec(id, 'spin'));
+    if (f && f.music) { try { f.music.play(c, { fadeMs: 900 }); } catch (err) { console.error(err); } }
+    if (!o.quiet) toast(fill(line('homeOnDeck'), { album: c.album }));
+  }
+  function goHome(back) {
+    if (UI.going || UI.backing) return;
+    sfx('tick');
+    go('home', { back: back || 'title' });
+  }
+  SCREENS.home = function (p) {
+    UI.homeBack = p.back || UI.homeBack || 'title';
+    UI.homeTok = (UI.homeTok | 0) + 1;
+    setTop(esc(line('homeTitle') || '你家') + '<small>' + esc(line('homeSub') || '聆聽室') + '</small>',
+      { links: [['台北', function () { go('taipei', { back: UI.homeBack }); }, 'taipei'], [line('backToShop') || '回店裡', backFromHome, 'back']] });
+    var panel = UI.panel; panel.classList.add('home');
+    var own = homeOwnedIds();
+    panel.innerHTML = '<div class="lb-pad"><p class="lb-tp">' + esc(own.length ? line('homeNote') : line('homeEmpty')) + '</p>' +
+      '<div class="lb-homebtns" role="group" aria-label="' + esc(line('homeSub') || '聆聽室') + '">' +
+      [['shelf', line('homeShelf')], ['deck', line('homeDeck')], ['console', line('homeConsole')]].map(function (b) { return '<button type="button" class="lb-btn key" data-a="' + b[0] + '">' + esc(b[1]) + '</button>'; }).join('') +
+      '</div><div class="lb-homenp" aria-live="polite"></div>' +
+      (own.length ? '<p class="sub">' + esc(SU('shelfOwn', { n: own.length })) + (save.want.length ? '・' + esc(fill(line('homeWantN'), { n: save.want.length })) : '') + '</p>' : '') + '</div>';
+    panel.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-a]'); if (!b || UI.screen !== 'home') return;
+      var a = b.getAttribute('data-a');
+      homeAction(a === 'shelf' ? 'shelf:own' : a === 'deck' ? 'deck:play' : a === 'console' ? 'tune' : '');
+    });
+    UI.going = true;
+    var tok = UI.homeTok, f = FX();
+    homeLayout().then(function (L) { return stgP('load', L, { camera: 'full', screen: 'home' }); }).then(function () {
+      if (UI.screen !== 'home' || UI.homeTok !== tok) return;
+      UI.going = false;
+      stg('interact', 'home');
+      var fromIn = p.from === 'tune';
+      place('p', fromIn ? 'atConsole' : 'door', 'player');
+      homeSyncDeck();
+      if (!fromIn) stgP('walk', 'p', ['in'], 120);
+      // 第一次開控制台要下載三樣（three 0.6 MB、座標 0.6 MB、面板圖 0.7 MB）：進房間就先背景抓 three 與座標，點控制台時少等一點
+      if (!UI.tunePre) { UI.tunePre = true; setTimeout(function () { if (UI.screen === 'home') tunePrefetch(); }, 1500); }
+    });
+    if (f && f.music && f.music.onChange) { UI.offs.push(f.music.onChange(homeSyncDeck)); if (f.onSound) UI.offs.push(f.onSound(homeSyncDeck)); }
+    var iv = setInterval(homeSyncDeck, 1500); UI.offs.push(function () { clearInterval(iv); });
+  };
+  // 房間的熱點與 DOM 鈕：先走到家具前（照翻箱「走過去才開」），走到了、這中間沒有又點別的，才開面板
+  function homeAction(action) {
+    if (UI.screen !== 'home' || UI.going || UI.tune || UI.modal || UI.page) return;
+    var to = { 'shelf:own': 'atShelf', 'deck:play': 'atDeck', tune: 'atConsole', 'shop:dip': 'door' }[action];
+    if (!to) return;
+    sfx('tick');
+    qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); }); syncFloat();
+    var tok = UI.homeTok = (UI.homeTok | 0) + 1;
+    stgP('walk', 'p', [to], 130).then(function () {
+      if (UI.screen !== 'home' || UI.homeTok !== tok || UI.tune) return;
+      if (action === 'shelf:own') openHomeShelf(0);
+      else if (action === 'deck:play') openHomeDeck();
+      else if (action === 'tune') openTuneConsole();
+      else if (action === 'shop:dip') backFromHome();
+    });
+  }
+  function backFromHome() {
+    if (UI.backing) return;
+    if (UI.tune) closeTuneConsole(true);
+    UI.backing = true; UI.going = true;
+    var back = UI.homeBack || 'title';
+    stg('door', 'swing', { quiet: true });
+    stgP('load', 'dip', { camera: 'full', screen: back === 'end' ? 'end' : 'title' }).then(function () {
+      UI.backing = false;
+      place('o', 'counter', 'owner');
+      if (back === 'end' && save.run && save.run.over) go('end'); else go('title');
+    });
+  }
+  // 唱片架（分頁）：六欄兩排一頁 12 張；點封面＝唱片資訊，「放唱盤」＝放上唱盤試聽
+  function openHomeShelf(pg) {
+    var own = homeOwnedIds(), pages = Math.max(1, Math.ceil(own.length / HOME_PAGE));
+    pg = Math.max(0, Math.min(pages - 1, pg | 0));
+    var ids = own.slice(pg * HOME_PAGE, (pg + 1) * HOME_PAGE), f = FX(), cur = f && f.music && f.music.current && f.music.current();
+    var html = '<div class="hd"><h3>' + esc(line('homeShelf')) + '</h3><span class="sub">' + esc(SU('shelfOwn', { n: own.length })) + '</span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      (own.length ? '<p class="sub">' + esc(line('homeShelfSub')) + '</p>' +
+        '<div class="lb-pick hshelf">' + ids.map(function (id) { var c = card(id); return tileHTML(c, { text: false, stars: false, store: isStore(id), pick: line('homePut') || '放唱盤', disabled: !c.previewUrl, sel: !!(cur && cur.id === id) }); }).join('') + '</div>' +
+        (pages > 1 ? '<div class="lb-pager"><button type="button" class="lb-btn" data-pg="' + (pg - 1) + '"' + (pg ? '' : ' disabled') + ' aria-label="上一頁">‹</button><span class="pn" aria-live="polite">' + (pg + 1) + '／' + pages + '</span>' +
+          '<button type="button" class="lb-btn" data-pg="' + (pg + 1) + '"' + (pg < pages - 1 ? '' : ' disabled') + ' aria-label="下一頁">›</button></div>' : '') +
+        (save.want.length ? '<p class="sub sm">' + esc(fill(line('homeWantN'), { n: save.want.length })) + '</p>' : '')
+        : '<p class="sub">' + esc(line('homeEmpty')) + '</p>');
+    var s = floatSheet(html, 'hshelf tall');
+    s.setAttribute('data-page', String(pg));
+    s.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-pg],[data-pick]'); if (!b || b.disabled) return;
+      if (b.hasAttribute('data-pg')) { sfx('tick'); openHomeShelf(+b.getAttribute('data-pg')); return; }
+      var id = b.getAttribute('data-pick');
+      qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x === b.closest('.lb-ct')); });
+      homePut(id);
+    });
+  }
+  // 唱盤（照試聽機 openBooth）：擁有、有試聽的；選了就放上唱盤（店景的唱盤 NOW 小窗換那張、轉起來）
+  function openHomeDeck() {
+    var ids = homePlayable();
+    if (!ids.length) { toast(line('homeDeckEmpty')); return; }
+    var f = FX(), cur = f && f.music && f.music.current && f.music.current();
+    var html = '<div class="hd"><h3>' + esc(line('homeDeck')) + '</h3><span class="np"></span><button type="button" class="lb-btn hdb" data-a="stop">' + esc(line('homeStop') || '停') + '</button><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub">' + esc(line('homeDeckSub')) + '</p><div class="lb-pick booth">' + ids.map(function (id) { return tileHTML(card(id), { text: false, stars: false, pick: '放這張', sel: !!(cur && cur.id === id) }); }).join('') + '</div>';
+    var s = floatSheet(html, 'booth hdeck tall');
+    watchPlaying(qs('.np', s));
+    s.addEventListener('click', function (e) {
+      var st = e.target.closest && e.target.closest('[data-a=stop]');
+      if (st) { var f2 = FX(); UI.homeDeckId = null; UI.homeDeckAt = 0; if (f2 && f2.music) f2.music.stop({ fadeMs: 600 }); stg('deck', null); qsa('.lb-ct', s).forEach(function (x) { x.classList.remove('sel'); }); return; }
+      var b = e.target.closest && e.target.closest('[data-pick]'); if (!b) return;
+      qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x === b.closest('.lb-ct')); });
+      homePut(b.getAttribute('data-pick'), { quiet: true });
+    });
+  }
+
+  // ---- 小控制台：推近成頻率光譜的星圖（主站 ../dip-tune.js，同一份；不搬進 game-lab、不複製）
+  function loadScript(src) {
+    return new Promise(function (res, rej) { var sc = D.createElement('script'); sc.src = src; sc.async = true; sc.onload = function () { res(); }; sc.onerror = function () { sc.remove(); rej(new Error('載入失敗 ' + src)); }; D.head.appendChild(sc); });
+  }
+  function threeReady() {
+    if (W.THREE && W.THREE.OrbitControls) return Promise.resolve();
+    if (!UI.threeP) UI.threeP = (W.THREE ? Promise.resolve() : loadScript('../vendor/three-r128.min.js')).then(function () { if (!W.THREE.OrbitControls) return loadScript('../vendor/three-r128-OrbitControls.js'); })
+      .catch(function (e) { UI.threeP = null; console.warn('[home]', e); });
+    return UI.threeP;
+  }
+  function tuneLib() {
+    if (W.DipTune) return Promise.resolve(W.DipTune);
+    if (!UI.tuneLibP) UI.tuneLibP = loadScript('../dip-tune.js?v=' + TUNE_V).then(function () { if (!W.DipTune) throw new Error('DipTune 沒載到'); return W.DipTune; }, function (e) { UI.tuneLibP = null; throw e; });
+    return UI.tuneLibP;
+  }
+  // 進房間 1.5 秒後背景先抓：three 與座標檔（瀏覽器快取；dip-tune 自己 fetch 時就是快取裡的）
+  function tunePrefetch() {
+    try { threeReady(); fetch('../data/mood/card-moods.json').catch(function () {}); } catch (_) {}
+  }
+  function catalogId(c) { return ((c.artist || '') + '|' + (c.album || '')).toLowerCase().replace(/\//g, '-').trim(); }   // 主站 cardIdOf＝bake-cards.mjs:85 同一條
+  function tuneCardOf(o) {   // 星圖那張（{artist, album}）→ 遊戲的卡
+    if (!o) return null;
+    if (o._gid && card(o._gid)) return card(o._gid);
+    var k = catalogId(o);
+    if (!UI.tuneIdx) { UI.tuneIdx = {}; Object.keys(C.cards).forEach(function (id) { UI.tuneIdx[catalogId(C.cards[id])] = id; }); }
+    return card(UI.tuneIdx[k]);
+  }
+  function coverAbs(c) { var u = coverSrc(c); if (!u) return ''; try { return new URL(u, location.href).href; } catch (_) { return u; } }
+  // 播放器轉接（dip-tune 的 cfg.player）：playAlbum → fx.js music.play；不掛主站 DipPlayer（遊戲規則：絕不 DipPlayer.mount，fx.js 也不借它的 AudioContext）
+  //   onStateChange 回報 {status:'loading'|'playing'|'stopped'|'error', artist, album}：一首自然放完（music.onEnded）＝stopped，收藏電台靠它換下一張
+  function tunePlayer() {
+    var subs = [], st = null, tok = 0, f = FX();
+    var emit = function (x) { st = x; subs.slice().forEach(function (cb) { try { cb(x); } catch (e) { console.error(e); } }); };
+    if (f && f.music && f.music.onEnded) f.music.onEnded(function (c) { if (UI.tune && st && st.status === 'playing' && c && st.id === c.id) emit({ status: 'stopped', code: '', artist: st.artist, album: st.album, id: c.id }); });
+    return {
+      playAlbum: function (o) {
+        var c = tuneCardOf(o), my = ++tok, fx = FX();
+        if (!c || !c.previewUrl || !fx || !fx.music) { emit({ status: 'error', code: 'NO-PREVIEW', artist: o && o.artist, album: o && o.album }); return Promise.resolve(false); }
+        if (!soundOn()) { soundUp(); }
+        emit({ status: 'loading', artist: c.artist, album: c.album, id: c.id });
+        return Promise.resolve(fx.music.play(c, { fadeMs: 600, exclusive: true })).then(function (ok) {
+          if (my === tok) emit(ok ? { status: 'playing', artist: c.artist, album: c.album, id: c.id } : { status: 'error', code: '', artist: c.artist, album: c.album, id: c.id });
+          return ok;
+        });
+      },
+      stop: function () { tok++; var fx = FX(); if (fx && fx.music) fx.music.stop({ fadeMs: 400 }); if (st && st.status !== 'stopped') emit({ status: 'stopped', code: '', artist: st.artist, album: st.album, id: st.id }); },
+      audioContext: function () { var fx = FX(); return fx && fx.audioContext ? fx.audioContext() : null; },
+      onStateChange: function (cb) { subs.push(cb); if (st) { try { cb(st); } catch (_) {} } return function () { subs = subs.filter(function (x) { return x !== cb; }); }; },
+      debugState: function () { return { code: (st && st.code) || '' }; }
+    };
+  }
+  function tuneConfigure(DT) {
+    if (UI.tuneCfg) return;
+    UI.tuneCfg = true;
+    var pool = { cards: Object.keys(C.cards).map(function (id) { var c = C.cards[id];
+      return { artist: c.artist, album: c.album, classic: c.c, obscurity: c.o, accessibility: c.h, tier: c.tier || undefined, previewUrl: c.previewUrl || '', coverUrl: coverAbs(c), year: c.year || 0, genres: (c.genres || []).slice(), _gid: id }; }), apex: {} };
+    DT.configure({
+      host: function () { return UI.tuneHost; },
+      threeReady: threeReady,
+      loadCardPool: function () { return Promise.resolve(pool); },
+      cardIdOf: function (a, b) { return catalogId({ artist: a, album: b }); },
+      player: tunePlayer(),
+      resolveCover: function (c) { return Promise.resolve(c.coverUrl || ''); },
+      listCover: function (c) { return Promise.resolve(c.coverUrl || ''); },
+      audioPref: function () { return save.settings.sound !== false; },
+      setAudioPref: function (on) { var f = FX(); if (on) soundUp(); else if (f && f.setSound) { try { f.setSound(false); } catch (_) {} save.settings.sound = false; persist(); } },
+      onFirstGesture: function (on) { if (on) soundUp(); },
+      onGesture: function (on) { if (on) soundUp(); },
+      onBack: function () { closeTuneConsole(); },
+      onResult: function (r) { tuneResult(r); }
+    });
+  }
+  // 收藏亮、其他暗：唱片櫃擁有的推進星圖（setMine；鍵＝主站 cardIdOf）。0 張＝不開（整片星空照常亮，挑到的都加進想要清單）
+  function tuneMine(DT) {
+    if (typeof DT.setMine !== 'function') return;
+    var own = homeOwnedIds();
+    try {
+      if (own.length) DT.setMine(new Map(own.map(function (id) { return [catalogId(card(id)), 1]; })), { on: true });
+      else { DT.setMine(null); DT.setMine(new Map()); }
+    } catch (e) { console.error(e); }
+  }
+  function tuneResult(r) {
+    var c = tuneCardOf(r && r.card);
+    if (!c) return;
+    UI.tuneLast = c.id;
+    if (isOwned(c.id)) {   // 是你的：收掉星圖、回房間，放上唱盤（星圖上正在試聽的就是這張＝不重播，接著放）
+      closeTuneConsole().then(function () { homePut(c.id); });
+      return;
+    }
+    var had = save.want.indexOf(c.id) >= 0;
+    if (!had) { save.want.push(c.id); if (save.want.length > 200) save.want.shift(); persist(); }
+    toast(fill(line(had ? 'homeWantAgain' : 'homeWant'), { album: c.album }), 'keep');
+    // 留在星圖上：當成「從結果頁回到星圖」（同一張不重播）
+    var DT = W.DipTune; if (DT && UI.tune) setTimeout(function () { if (UI.tune) try { DT.start(); } catch (e) { console.error(e); } }, 60);
+  }
+  function tuneKey(e) { if (e.key === 'Escape' && UI.tune && !(CI() && CI().isOpen())) { e.preventDefault(); closeTuneConsole(); } }
+  // 推近：舞台以控制台為中心放大＋淡出（減少動態＝150 ms 淡入淡出），接著蓋上全螢幕一層、DipTune.start()；店景迴圈停掉（被蓋住了不用畫）
+  function openTuneConsole() {
+    if (UI.tune || UI.screen !== 'home') return;
+    var host = UI.tuneHost;
+    if (!host) { host = UI.tuneHost = el('div', 'lb-tune'); host.id = 'labTune'; host.setAttribute('role', 'dialog'); host.setAttribute('aria-label', line('homeConsole') || '控制台'); host.hidden = true; app().appendChild(host); }
+    else if (!host.isConnected) app().appendChild(host);
+    var tok = UI.homeTok, t0 = now(), sh = UI.stageHost, r = stg('hotRect', 'console'), hb = sh.getBoundingClientRect();
+    UI.tune = { at: t0, tok: tok, focus: D.activeElement };
+    D.body.classList.add('lb-tune-open');
+    D.addEventListener('keydown', tuneKey, true);
+    var reduced = rm();
+    if (r && r.width) sh.style.transformOrigin = Math.round(r.left + r.width / 2 - hb.left) + 'px ' + Math.round(r.top + r.height / 2 - hb.top) + 'px';
+    sh.classList.add(reduced ? 'lb-zoom-fade' : 'lb-zoom-in');
+    var zoomed = new Promise(function (res) { setTimeout(res, reduced ? 150 : 380); });
+    var lib = tuneLib();
+    return zoomed.then(function () {
+      if (!UI.tune || UI.tune.at !== t0) return;
+      sh.classList.remove('lb-zoom-in', 'lb-zoom-fade'); sh.classList.add('lb-zoomed');   // 放大完：藏起來（不留著 2.6 倍的變形，#app 量起來才不會多出一截）
+      stg('freeze', true);
+      host.hidden = false; host.classList.add('in');
+      return lib.then(function (DT) {
+        if (!UI.tune || UI.tune.at !== t0) return;
+        tuneConfigure(DT);
+        return Promise.resolve(DT.start()).then(function () {
+          if (!UI.tune || UI.tune.at !== t0) return;
+          tuneMine(DT);
+          var bk = host.querySelector('#tuneBack'); if (bk) try { bk.focus({ preventScroll: true }); } catch (_) {}
+        });
+      }, function (e) { console.error(e); toast(line('homeTuneFail')); closeTuneConsole(); });
+    });
+  }
+  // 收掉：DipTune.stop()（停試聽、音效、iOS 內建瀏覽器的鎖）、藏起那一層（不移除：dip-tune 記著裡面的元素，下次開直接重用）、解凍店景、反向縮回
+  function closeTuneConsole(instant) {
+    if (!UI.tune) return Promise.resolve();
+    var t = UI.tune; UI.tune = null;
+    D.removeEventListener('keydown', tuneKey, true);
+    D.body.classList.remove('lb-tune-open');
+    try { if (W.DipTune) W.DipTune.stop(); } catch (e) { console.error(e); }
+    var host = UI.tuneHost; if (host) { host.hidden = true; host.classList.remove('in'); }
+    stg('freeze', false);
+    var sh = UI.stageHost;
+    sh.classList.remove('lb-zoom-in', 'lb-zoom-fade', 'lb-zoomed');
+    if (instant || rm()) { sh.style.transformOrigin = ''; homeSyncDeck(); return Promise.resolve(); }
+    sh.classList.add('lb-zoom-out');
+    if (t.focus && t.focus.isConnected) try { t.focus.focus({ preventScroll: true }); } catch (_) {}
+    return new Promise(function (res) { setTimeout(function () { sh.classList.remove('lb-zoom-out'); sh.style.transformOrigin = ''; homeSyncDeck(); res(); }, 320); });
   }
 
   // ======================================================================= 唱片櫃（整頁蓋在舞台上；舞台不重掛）
@@ -2993,6 +3307,9 @@
       own: function (ids, src) { [].concat(ids || []).forEach(function (id) { shelfOwn(id, src || 'run'); }); persist(); return ownedIds(); },
       keepIds: function () { return save.run ? keepIds(save.run) : []; },
       rules: openRules, openPage: openPage, go: go, replayTutorial: replayTutorial, stageAction: onStageAction,
+      // 你家（聆聽室，v5 第六項第三期）：擁有的排法、想要清單、控制台開著沒、唱盤上那張
+      home: { owned: function () { return homeOwnedIds(); }, want: function () { return save.want.slice(); }, tune: function () { return !!UI.tune; }, deck: function () { return UI.homeDeckId || null; }, last: function () { return UI.tuneLast || null; },
+        close: function () { return closeTuneConsole(); }, ended: function (id) { onMusicEnded(card(id)); return UI.homeNext || null; } },
       // v4（§2.5.2）：設錢、這一輪的貨、逐句執行器的時間軸（§5.4）、經濟介面
       money: function (n) { var r = save.run; if (!r) return null; r.money = Math.max(0, Math.floor(+n || 0)); persist(); return r.money; },
       shop: function () { return save.run ? save.run.shop : null; },
@@ -3118,6 +3435,19 @@
         onEnd: function (how) { if ((how === 'done' || how === 'skipped' || how === 'released') && !UI.tutReplay) { save.tutorialDone = true; if (save.run) save.run.tut = false; persist(); } } });
     } catch (e) { console.error(e); }
   }
+  // 一首試聽自然放完（fx.js music.onEnded）：對決以外接下一首（來客／領獎＝包包裡的、你家＝下一張收藏），其他畫面重播同一首
+  function onMusicEnded(c) {
+    var f = FX();
+    if (!c || !f || !f.music || UI.screen === 'duel' || !soundOn() || UI.tune) return;   // 你家的控制台開著：星圖的電台自己接下一張（轉接器回報 stopped）
+    var next = c, r = save.run;
+    if (r && (UI.screen === 'night' || UI.screen === 'reward')) {
+      var pool = (r.bag || []).map(card).filter(function (x) { return x && x.previewUrl && x.id !== c.id; });
+      if (pool.length) next = pickR(pool);
+    }
+    // 你家：唱盤放完接下一張收藏（照唱片架的順序，最後一張接回第一張）
+    if (UI.screen === 'home') { var hp = homePlayable(), hi = hp.indexOf(c.id); if (hp.length) next = card(hp[(hi + 1) % hp.length]) || c; UI.homeNext = next.id; }
+    setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
+  }
   function boot() {
     if (UI.booted) return; UI.booted = true;
     E = W.DipLabEngine; C = W.DipLabContent;
@@ -3128,16 +3458,8 @@
     takeBring();
     var f = FX();
     if (f) { try { if (f.init) f.init(); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
-    // 對決以外：一首試聽自然放完就接下一首（包包裡的）
-    if (f && f.music && f.music.onEnded) f.music.onEnded(function (c) {
-      if (!c || UI.screen === 'duel' || !soundOn()) return;
-      var next = c, r = save.run;
-      if (r && (UI.screen === 'night' || UI.screen === 'reward')) {
-        var pool = (r.bag || []).map(card).filter(function (x) { return x && x.previewUrl && x.id !== c.id; });
-        if (pool.length) next = pickR(pool);
-      }
-      setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
-    });
+    // 對決以外：一首試聽自然放完就接下一首（包包裡的；你家＝下一張收藏）
+    if (f && f.music && f.music.onEnded) f.music.onEnded(onMusicEnded);
     var ci = CI();
     if (ci) {
       ci.config({ onSoundUnlock: function () { save.settings.sound = true; persist(); }, cardOf: function (id) { return card(id); } });

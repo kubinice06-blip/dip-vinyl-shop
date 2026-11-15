@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 417（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 444（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -368,6 +368,31 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・taipeiLink | 出門看看（台北地圖・預告） | 本規格新寫 | `shopLines.taipeiLink` |
 | （畫面字）・backToShop | 回店裡 | 本規格新寫 | `shopLines.backToShop` |
 
+## 你家・聆聽室
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・homeBtn | 你家 | 本規格新寫 | `shopLines.homeBtn` |
+| （畫面字）・homeTitle | 你家 | 本規格新寫 | `shopLines.homeTitle` |
+| （畫面字）・homeSub | 聆聽室 | 本規格新寫 | `shopLines.homeSub` |
+| （畫面字）・homeNote | 點唱片架、唱盤、控制台，會走過去打開。 | 本規格新寫 | `shopLines.homeNote` |
+| （畫面字）・homeEmpty | 唱片架還空著。推門玩一趟，帶走的唱片會擺在這裡。 | 本規格新寫 | `shopLines.homeEmpty` |
+| （畫面字）・homeShelf | 唱片架 | 本規格新寫 | `shopLines.homeShelf` |
+| （畫面字）・homeDeck | 唱盤 | 本規格新寫 | `shopLines.homeDeck` |
+| （畫面字）・homeConsole | 控制台 | 本規格新寫 | `shopLines.homeConsole` |
+| （畫面字）・homeShelfSub | 點封面看唱片資訊，按「放唱盤」就放來聽。 | 本規格新寫 | `shopLines.homeShelfSub` |
+| （畫面字）・homeDeckSub | 挑一張放上唱盤。放完接下一張收藏。 | 本規格新寫 | `shopLines.homeDeckSub` |
+| （畫面字）・homeDeckEmpty | 唱片架還空著，唱盤沒東西放。 | 本規格新寫 | `shopLines.homeDeckEmpty` |
+| （畫面字）・homePut | 放唱盤 | 本規格新寫 | `shopLines.homePut` |
+| （畫面字）・homeOnDeck | 放上唱盤：《{album}》 | 本規格新寫 | `shopLines.homeOnDeck` |
+| （畫面字）・homeStop | 停 | 本規格新寫 | `shopLines.homeStop` |
+| （畫面字）・homeNow | 唱盤上 | 本規格新寫 | `shopLines.homeNow` |
+| （畫面字）・homeIdle | 唱盤空著。點唱盤挑一張來放。 | 本規格新寫 | `shopLines.homeIdle` |
+| （畫面字）・homeWantN | 想要清單 {n} 張 | 本規格新寫 | `shopLines.homeWantN` |
+| （畫面字）・homeWant | 《{album}》加進想要清單。 | 本規格新寫 | `shopLines.homeWant` |
+| （畫面字）・homeWantAgain | 《{album}》已經在想要清單裡。 | 本規格新寫 | `shopLines.homeWantAgain` |
+| （畫面字）・homeTuneFail | 控制台開不起來，等一下再試。 | 本規格新寫 | `shopLines.homeTuneFail` |
+
 ## 店裡熱點・箱子的名牌
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -653,6 +678,17 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
 | （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
 
+## 店內名牌（shops/home.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 你家 | 本規格新寫 | `shops/home.json.name` |
+| （畫面字） | 聆聽室 | 本規格新寫 | `shops/home.json.district` |
+| （畫面字） | 回本店 | 本規格新寫 | `shops/home.json.props[2].hot.label` |
+| （畫面字） | 唱片架 | 本規格新寫 | `shops/home.json.props[3].hot.label` |
+| （畫面字） | 唱盤 | 本規格新寫 | `shops/home.json.props[8].hot.label` |
+| （畫面字） | 控制台 | 本規格新寫 | `shops/home.json.props[9].hot.label` |
+
 ## 店內名牌（shops/taipei.json）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -660,10 +696,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | 台北市 | 本規格新寫 | `shops/taipei.json.name` |
 | （畫面字） | 踢館地圖（示意） | 本規格新寫 | `shops/taipei.json.district` |
 | （畫面字） | dip vinyl（本店） | 本規格新寫 | `shops/taipei.json.props[2].hot.label` |
-| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[3].hot.label` |
+| （畫面字） | 你家 | 本規格新寫 | `shops/taipei.json.props[3].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[4].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[5].hot.label` |
 | （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[6].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[7].hot.label` |
 
 ## 推薦語・王牌（殿堂）
 
