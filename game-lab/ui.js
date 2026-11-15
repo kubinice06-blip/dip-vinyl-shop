@@ -2576,6 +2576,8 @@
     watchPlaying(qs('.np', s));
     var render = function (justGot) {
       var R = r.shop && r.shop.radio, used = !!R, rc = R ? card(R.id) : null;
+      // 電台那張這一輪已經買走（不在特價箱）：不再叫人「去特價箱看看」、不寫「照原價」；在包包＝「已經收進包包了」，賣掉了＝「已經不在特價箱了」
+      var stocked = !!(rc && ((r.shop && r.shop.bargain) || []).indexOf(R.id) >= 0), inBag = !!(rc && (r.bag || []).indexOf(R.id) >= 0);
       var cells = order.map(function (k) {
         var n = used ? 0 : (E.radioPool ? E.radioPool(r, C, k).length : 0), off = used ? (R.cell !== k) : !n, on = used && R.cell === k;
         return '<button type="button" class="rd-cell' + (on ? ' on' : '') + (off && !on ? ' off' : '') + '" data-cell="' + esc(k) + '"' + (used || !n ? ' disabled' : '') +
@@ -2583,8 +2585,8 @@
       }).join('');
       var got = rc ? '<div class="rd-got">' + tileHTML(rc, { text: false, stars: false, cls: 'rd-cv' }) +
           '<div class="rd-tx"><b>' + esc(justGot ? radioText('got', { album: rc.album }) : radioText('usedSub', { name: (T.names || {})[R.cell] || '', album: rc.album })) + '</b>' +
-          '<span class="sub">' + esc(rc.artist) + '</span><button type="button" class="lb-btn pri" data-a="toBargain">' + esc(radioText('toBargain')) + '</button></div></div>' : '';
-      body.innerHTML = '<p class="sub">' + esc(used && !justGot ? radioText('used') : radioText('prompt')) + '<small class="rd-price">' + esc(radioText('price')) + '</small></p>' +
+          '<span class="sub">' + esc(rc.artist) + '</span>' + (stocked ? '<button type="button" class="lb-btn pri" data-a="toBargain">' + esc(radioText('toBargain')) + '</button>' : '<span class="rd-gone">' + esc(radioText(inBag ? 'bagged' : 'gone')) + '</span>') + '</div></div>' : '';
+      body.innerHTML = '<p class="sub">' + esc(used && !justGot ? radioText('used') : radioText('prompt')) + (rc && !stocked ? '' : '<small class="rd-price">' + esc(radioText('price')) + '</small>') + '</p>' +
         '<div class="lb-radio" role="group" aria-label="' + esc(T.label || '') + '">' + cells + '</div>' + got;
     };
     render(false);

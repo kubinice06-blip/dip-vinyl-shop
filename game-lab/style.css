@@ -526,6 +526,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .rd-got .rd-tx b{font-size:13px;line-height:1.5;}
 .rd-got .rd-tx .sub{font-size:11px;color:var(--gray2);}
 .rd-got .lb-btn{min-height:40px;padding:0 14px;font-size:13px;}
+.rd-got .rd-gone{font-size:12px;line-height:1.5;color:var(--ink);}                       /* 電台那張已經買走：取代「去特價箱看看」鈕 */
 /* 來客（無限試煉：這一輪五顆頭像，頭像上面寫第 n 位；打完的變黑、下一位金框、第 5 位紅框傳說藏家）＋下一位＋聲望／錢／包包／配件 */
 .lb-panel.night{justify-content:flex-start;}
 .lb-night{flex:none;padding:8px 10px 0;}

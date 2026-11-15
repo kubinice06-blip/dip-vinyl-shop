@@ -662,7 +662,7 @@ export function tuneProblems(C) {
   for (const [k, ids] of Object.entries(per)) ok(ids.length <= 2, '客人常聽頻率每格最多 2 位：' + k + ' 有 ' + ids.join('、'));
   // 收音機的字（ui.js openRadio、econ.js 特價箱那格）：{x} 的佔位要在
   const R = C.radio || {};
-  const need = { title: [], prompt: [], price: [], got: ['album'], used: [], usedSub: ['name', 'album'], empty: [], later: [], tag: [], toBargain: [] };
+  const need = { title: [], prompt: [], price: [], got: ['album'], used: [], usedSub: ['name', 'album'], empty: [], later: [], tag: [], toBargain: [], bagged: [], gone: [] };
   for (const [k, ph] of Object.entries(need)) ok(typeof R[k] === 'string' && R[k] && ph.every(x => R[k].includes('{' + x + '}')), 'radio.' + k + (ph.length ? '（要有 ' + ph.map(x => '{' + x + '}').join('') + '）' : ''));
   ok(C.radioTag === '新', 'C.radioTag');
   ok(!/今晚/.test(Object.values(R).join('')), 'radio 的字寫「這一輪」，不寫「今晚」（11-12 拿掉時間）');
