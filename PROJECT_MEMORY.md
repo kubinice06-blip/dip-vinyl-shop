@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-15｜dip-vinyl-shop｜game-lab v5 第五項第一步（人物往上走換背面）＋第六項第二期（遊戲頻率＋收音機）
+
+- **店主 11-15**：「五六全做」。裁定寫在 scratchpad `v5/w56/rulings.md`（規劃書未定的都照建議：對決／翻箱／丟牌照舊正面、頻率不進戰鬥規則、聆聽室先當遊戲場景、主站唱片櫃頁並存）。本筆是第一波；第二波（主站頻率光譜第一期、側面三向）與第三波（聆聽室）另記。
+- **人物轉身第一步**：`chars.js` 加 `opts.dir`（舊 `back` 照收），修背面瑕疵（馬尾兩條→一條、破洞牛仔褲背面有洞、唱片袋／帆布袋換邊、領結背後看得到、吊帶褲護胸、頭巾結）；`shop.js` 純函式 `faceDir`（≥55° 上下、≤35° 橫走、中間保持；<6 格不轉；換向後 0.12 秒內不再換）；走到站 0.2 秒後轉回那站方向（`FACE_AT`，預設正面、試聽桌背面）；拿東西、對決、翻箱、丟牌一律正面。順手修：台北地圖上的你一直畫預設造型（改照捏的樣子畫，捏好的造型不眨眼，免得把黑髮／鏡框挖成膚色）。
+- **頻率（只上色）**：卡多 `tune`（八格之一；`bake-cards.mjs` 讀前台 `data/mood/card-moods.json`＋雜湊，跟主站頻率光譜同格；316／316；查不到報 NO-TUNE）；`C.tunes`（名字、顏色抄主站）；10 位客人常聽頻率（星數加權多數決、每格最多 2 位，表在 content.js 註解）；提示籤前一顆常聽頻率圓點（教學裡不出）、唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● …」。頻率不進 engine 的勝負／星數。
+- **收音機**：高櫃頂上新畫一台（熱點包到天線尖，不再點成 BLUES 箱）；兩位客人之間、每輪一次，選一格抽一張那格的牌放進這一輪特價箱第一格（標「電台」、**照原價**，買進賣回一定虧）；抽不到那格反灰；買走後面板改寫「已經收進包包了。」。特價箱 7 張改四欄（375×548 窄格只留色點）。sim 加「每輪轉一次」策略 --n 2000：會讀的中位 90→90、到第 100 位 43.0→43.1%、新手中位 16→16（幾乎沒影響）。
+- **流程**：改動地圖 4 代理 → 兩條平行施工（各自 worktree）→ 每條兩角度審查＋逐條推翻驗證（人物確認 3 項：回來客背對鏡頭、門邊客人背對、台北眨眼挖洞；頻率確認 4 項：買走後面板仍叫人去特價箱、收音機熱點被 BLUES 吃掉、窄格選取勾被電台籤蓋住）→ 全修 → 主線合併（e2e-econ 兩邊都編 #27，收音機改 #28）。
+- **主要檔案**：`game-lab/{chars.js,shop.js,cards.js,content.js,engine.js,ui.js,duel.js,duel.css,cardinfo.js,econ.js,econ.css,style.css,fx.js,shop-props.js,shops/dip.json,sim.mjs,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{bake-cards,check-content,check-shops,lint-copy}.mjs`、`game-lab/test/{chars,shop,hit,engine}.test.mjs`、`game-lab/tests/e2e-econ.mjs`。`?v=65`。
+- **驗證（合併後整套）**：check-content／lint-copy／check-shops／check-covers 通過；engine 2,312,021、tutorial 193,864、chars 32,860、shop 1,798、hit 420 全過；e2e-econ 390＋375 48/48、e2e-duel 390＋375 84/84、e2e.spec 390 47/47、e2e-prologue 52/52、e2e-taps 14/14。**沒跑**：真 iPhone。
+
 ### 2026-11-15｜dip-vinyl-shop｜主站封面版本清查第二階段：b6 167＋b7 111 張換回原版（累計 1,141 張）；Discogs 參考圖對照 2,855 張跑完
 
 - **接手 11-14 交接**（`scripts/cover-audit/edition-20261114/HANDOFF.md`，規則照 `RULES.md` 不改）：把還沒拿 Discogs 參考圖比對的 CAA 晚期／重發組 1,364 張、Apple／Spotify 組 1,491 張跑完。

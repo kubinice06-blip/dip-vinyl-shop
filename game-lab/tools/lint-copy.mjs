@@ -15,7 +15,8 @@
 //      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 25 句（原版 RPG_BEATS 19 句扣掉被換掉的 5 句（第一句 11-10 改成開頭旁白）＋TUT_EPILOGUE_BEATS 11 句），
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
-//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、seedsTag（從唱片櫃挑牌開局 C.seeds.ui）、pitches.json）；
+//      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、seedsTag（從唱片櫃挑牌開局 C.seeds.ui）、
+//      tunesTag／radioTag（頻率八格的名字與收音機，v5 第六項第二期）、pitches.json）；
 //      無限試煉沒有打烊、第二夜：C.night、C.secondNight 不准回來；畫面字不准再寫「今晚來客／打烊／再來一夜／今晚賣完」
 //      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
 //      FIXLIST 2：王牌沒有「不會被剋」（content 的字不准出現「不會被剋」）
@@ -476,6 +477,19 @@ for (const [k, v] of Object.entries(((C.seeds || {}).ui) || {})) {
 for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');
   add({ scene: '無限試煉・結算與標題的紀錄', where: 'summary.' + k, who: '（畫面字）', key: k, text: v, tag: C.summaryTag });
+}
+// 頻率（v5 第六項第二期）：八格的名字（抄主站頻率光譜 card-moods.json names；check-content 比對走鐘）、label／guest／guestAria；收音機轉頻率的字。每句 ≤28 字（不算 {x}）
+{
+  const T = C.tunes || {};
+  const one = (where, v, scene, tag, tagName) => {
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(tag)) err(where, '沒有 tag（' + tagName + '）');
+    if (len(v.replace(/\{\w+\}/g, '')) > 28) err(where, '超過 28 字（不算 {x}）：' + v);
+    add({ scene, where, who: '（畫面字）', key: where.split('.').pop(), text: v, tag });
+  };
+  for (const k of ['label', 'guest', 'guestAria']) if (k in T) one('tunes.' + k, T[k], '頻率・唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● 暴躁」、提示籤前的圓點（讀屏）', C.tunesTag, 'tunesTag');
+  for (const k of (T.order || Object.keys(T.names || {}))) one('tunes.names.' + k, (T.names || {})[k], '頻率・八格的名字（抄主站頻率光譜；改名要兩邊一起改）', C.tunesTag, 'tunesTag');
+  for (const [k, v] of Object.entries(C.radio || {})) one('radio.' + k, v, '收音機・轉頻率（兩位客人之間、每輪一次；{x} 由畫面代入）', C.radioTag, 'radioTag');
 }
 // 一晚版的字不准回到畫面字（店主 11-12：沒有時間、沒有打烊）；序章「今晚那張」（猜歌那張盤）照用
 const NIGHT_WORDS = [/今晚來客/, /打烊/, /再來一夜/, /今晚賣完/, /今晚就到這/, /今晚到這/, /第二夜/];

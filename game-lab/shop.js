@@ -18,6 +18,9 @@
  *   shop.setView({ y, h }) / tweenView({ y, h }, ms) / tag / untag / float / anchor / pose / emote / highlight / hotRect
  *   唱盤區（v3）：shop.arm(id, 'wind'|'throw'|'shield'|'up'|'flag'|'shrug'|null) / hold(id, what) / nudge(id, dx)
  *                 shop.state.fx（飛行唱片、火花、碎片、旗…，由 stage.js 的 clash() 每格填）/ state.decks / fast(on) / onTick(fn)
+ *   朝向（v5 第五項）：走路時 faceDir 自己算（往上走背面、往下正面、橫走照舊左右翻，有遲滯）；只有站、走有背面，其他姿勢一律正面。
+ *                 到站 0.2 秒後轉回正面（試聽桌 listen 例外：背面；layout.faceAt 可改，見 arriveDir）；
+ *                 停著時叫 flip／pose／arm／hold 轉回正面、put 一律正面；shop.pos(id).dir／flip 給測試看；shop.dir(id, 'back') 劇本手動指定
  *
  * 道具在 shop-props.js 用 DipShop.defProp(type, spec) 註冊；店的配置是純 JSON（shops/*.json）。
  * 只掛 window.DipShop；不宣告 dip-character.js 的同名全域。
@@ -265,7 +268,7 @@
     opts = opts || {};
     var L = layout, W = L.size[0], H = L.size[1];
     var pal = Object.assign({}, DEFAULT_PAL, L.palette || {});
-    var spritePal = Object.assign({}, opts.spritePal || {});
+    var spritePal = Object.assign({}, opts.spritePal || {}), spritePal0 = spritePal;
     var world = document.createElement('canvas'); world.width = W; world.height = H;
     var wctx = world.getContext('2d', { willReadFrequently: true });
     var P = Painter(wctx, pal);
@@ -338,8 +341,21 @@
       if (Array.isArray(spr)) return spr;
       var lib = typeof opts.sprites === 'function' ? opts.sprites() : opts.sprites;
       if (typeof spr === 'string' && lib && lib[spr]) return lib[spr];
+      var sr = specRows(spr); if (sr) return sr;
       if (typeof opts.resolveSprite === 'function') { var r = opts.resolveSprite(spr); if (r) return r; }
       return null;
+    }
+    // 捏人存的 v2 spec（{ v:2, hair, top… }）：舊的 avatarRows 讀不懂、台北地圖上的你一直是預設的藍衣西裝頭。
+    // 改用 DipLabChars 畫成同格式的字母圖（rows.pal＝這一張自己的配色；ax／ay＝腳底那格，高帽子會超出 16 列）
+    function specRows(spr) {
+      var CH = typeof window !== 'undefined' && window.DipLabChars;
+      if (!CH || typeof CH.rows !== 'function' || typeof CH.isSpec !== 'function' || !spr || typeof spr !== 'object' || !CH.isSpec(spr)) return null;
+      if (opts.noChars || L.noChars || /[?&]chars=0/.test(location.search)) return null;   // ?chars=0＝照舊字母圖（跟本店一樣）
+      try {
+        var R = CH.rows(spr, 'idle', 0), rows = R.rows.slice();
+        rows.pal = R.pal; rows.ax = R.ax; rows.ay = R.ay;
+        return rows;
+      } catch (e) { console.error(e); return null; }
     }
     function spotXY(key) {
       if (Array.isArray(key)) return { x: key[0], y: key[1], outside: !!key[2] };
@@ -354,6 +370,8 @@
     var K = L.spriteScale || 1, KE = L.iconScale || Math.max(1, K - 2);
     function drawActor(P2, a, inOutside) {
       var rows = a.rows; if (!rows) return;
+      // spec 畫的字母圖：自己的配色、腳底不一定在第 8 欄／第 15 列（高帽子）；舊字母圖照舊（spritePal、16×16）
+      var spritePal = rows.pal || spritePal0, rax = rows.ax != null ? rows.ax : 8, ray = rows.ay != null ? rows.ay : 15, rw = rows[0].length, specDrawn = !!rows.pal;
       if (a.arm) { if (!a._arm || a._arm.src !== rows || a._arm.kind !== a.arm) a._arm = { src: rows, kind: a.arm, rows: (typeof opts.arm === 'function' ? opts.arm : armRows)(rows, a.arm) }; rows = a._arm.rows; }
       var pose = inOutside ? null : poseOf(a);
       var bob = 0, ox = 0, oy = 0;
@@ -372,10 +390,10 @@
         return;
       }
       if (pose === 'sit') {   // 坐下（門口台階、試聽機的圓凳）：不畫腿，身體往下 3 格
-        rows = a._sit && a._sit.src === a.rows ? a._sit.rows : (a._sit = { src: a.rows, rows: a.rows.slice(0, 12) }).rows;
+        rows = a._sit && a._sit.src === a.rows ? a._sit.rows : (a._sit = { src: a.rows, rows: a.rows.slice(0, 12 + ray - 15) }).rows;
         oy = 3 * K;
       }
-      var x = fx - 8 * K, y = fy - 15 * K + 1 + (a.dy || 0) + oy;
+      var x = fx - (a.flip ? rw - rax : rax) * K, y = fy - ray * K + 1 + (a.dy || 0) + oy;
       // 腳下影子：細格子世界用兩層（外淡內濃），不是一條 1 px 線
       if (!inOutside && !a.sil) { P2.rect(fx - 5 * K, fy - 1, 10 * K, 3, 'rgba(18,8,2,0.22)'); P2.rect(fx - 4 * K, fy, 8 * K, 2, 'rgba(18,8,2,0.28)'); }
       var sil = a.sil ? true : inOutside === 'sil' ? '#0a0e1c' : null;
@@ -388,8 +406,9 @@
       P2.sprite(rows, x, by, spritePal, { flip: a.flip, sil: sil, k: K });
       // 受擊：閃紅（疊一層半透明紅，不整個塗掉，看得出是誰）
       if (pose === 'hurt' && !sil && Math.floor((state.rt - (a.poseAt || 0)) * 10) % 2 === 0) P2.sprite(rows, x, y, spritePal, { flip: a.flip, sil: 'rgba(230,40,56,0.6)', k: K });
-      // 呼吸：站著時偶爾眨眼
-      if (!a.moving && !sil && a.bob !== false && !pose && rows[4] && Math.floor(state.t * 10 + a.phase * 7) % 34 === 0) {
+      // 呼吸：站著時偶爾眨眼。只有舊的 16×16 字母圖：spec 畫的（rows.pal，台北地圖上捏好的你）頭髮、鏡框、墨鏡也是 'k'，
+      // 照「這列 k、上一列不是 k」塗膚色會把黑髮和鏡框挖洞（審查修正）→ 不眨，跟本店 DipLabChars 小人一樣
+      if (!specDrawn && !a.moving && !sil && a.bob !== false && !pose && rows[4] && Math.floor(state.t * 10 + a.phase * 7) % 34 === 0) {
         for (var i = 0; i < rows[4].length; i++) if (rows[4].charAt(i) === 'k' && rows[3].charAt(i) !== 'k') P2.rect(x + (a.flip ? rows[4].length - 1 - i : i) * K, y + 4 * K, K, K, spritePal.s || '#e8b48c');
       }
       if (a.hold && !sil) {
@@ -1346,6 +1365,40 @@
     return { pts: [b], how: 'straight' };
   }
 
+  // ===================================================================== 走路朝向（v5 第五項第一步：往上走背面、往下正面、橫走照舊左右翻）
+  // faceDir(cur, dx, dy, o) → { dir, flip, at }：純函式（Node 測得到；stepActors 每一步叫一次）
+  //   cur＝{ dir:'front'|'back'|'side', flip, at:上次換向的時間（秒）}
+  //   (dx, dy)＝剩下到這個路點的向量（美術格；斜俯視地板 1:1，y 越大越靠近鏡頭）。用「剩下的」不用每格位移：同一段裡方向不變
+  //   o＝{ t:現在（秒，走路時鐘）, seg:這一段起點時的長度, hi:55, lo:35, minSeg:6, hold:0.12, side:false }
+  // 遲滯（方向要明顯換了才轉、不會抖）：θ＝atan2(|dy|, |dx|)。θ ≥ hi → 上下（dy<0＝背面、dy>0＝正面）；θ ≤ lo → 橫走
+  //   （正面、flip＝往左；o.side＝有側面圖時回 'side'）；中間 → 保持原方向。這一段短於 minSeg 格 → 不轉。
+  //   換過方向後 hold 秒內不再換（flip 也算）。flip 只在橫走時更新：上下走保留原本的左右（單肩包、單片眼鏡不會往下走時突然換邊）
+  var FACE = { hi: 55, lo: 35, minSeg: 6, hold: 0.12, arrive: 0.2 };
+  // 到站之後朝哪（審查修正：走完留在背面＝來客畫面、門邊等的客人一直是後腦勺）：預設轉回正面；只有「面向東西」的站位照表
+  //   FACE_AT＝預設表（試聽桌：戴著桌邊的耳機面向桌子）；layout.faceAt 可以蓋／加（{ 站名: 'front'|'back'|'keep' }，keep＝留在最後走的方向）
+  //   arriveDir(L, 站名, 現在的朝向) → 'front'|'back'|…：純函式；stepActors 在到站 FACE.arrive 秒（走路時鐘）後才轉，
+  //   接連走（walk().then(walk)）不會在中間那站閃一格正面（迴圈 10 fps，一格就 100 ms）
+  var FACE_AT = { listen: 'back' };
+  function arriveDir(L, name, cur) {
+    var fa = (L && L.faceAt) || {}, v = Object.prototype.hasOwnProperty.call(fa, name) ? fa[name] : FACE_AT[name];
+    if (v === 'keep') return cur || 'front';
+    return v === 'back' || v === 'side' ? v : 'front';
+  }
+  function faceDir(cur, dx, dy, o) {
+    cur = cur || {}; o = o || {};
+    var res = { dir: cur.dir || 'front', flip: !!cur.flip, at: cur.at == null ? null : cur.at };
+    var hi = o.hi != null ? o.hi : FACE.hi, lo = o.lo != null ? o.lo : FACE.lo, minSeg = o.minSeg != null ? o.minSeg : FACE.minSeg, hold = o.hold != null ? o.hold : FACE.hold;
+    var len = Math.sqrt(dx * dx + dy * dy), seg = o.seg != null ? o.seg : len;
+    if (!(len > 1e-6) || seg < minSeg) return res;
+    if (res.at != null && o.t != null && o.t - res.at < hold) return res;
+    var th = Math.atan2(Math.abs(dy), Math.abs(dx)) * 180 / Math.PI, nd, nf = res.flip;
+    if (th >= hi) nd = dy < 0 ? 'back' : 'front';
+    else if (th <= lo) { nd = o.side ? 'side' : 'front'; nf = dx < 0; }
+    else return res;
+    if (nd !== res.dir || nf !== res.flip) { res.dir = nd; res.flip = nf; res.at = o.t == null ? null : o.t; }
+    return res;
+  }
+
   // ===================================================================== 命中（SPEC-v4 §2.4：看得到的形狀＋深度＋沒命中才容錯）
   // hot = { id, action, label, rect, shape:[[x,y,w,h],…], depth, sub?, parent?, pri?, enabled, occluder? }
   //   主熱點（道具的 hot、箱子的 bin）、子熱點（道具 hots(o,S)：牆上封面、矮櫃封面、櫃檯 now／cat；深度＝父道具＋0.01）、
@@ -1611,7 +1664,7 @@
     }
     function setLook(a, spr) { a.spr = spr; a.rows = rowsOf(spr); a.spec = specOf(spr); a.specKey = a.spec ? JSON.stringify(a.spec) : null; a.head = headOf(a); }
     function headOf(a) {
-      if (a.spec) { var b = charBitmap(a, 'idle', 0, false, null); if (b && b.top != null) return b.top; }
+      if (a.spec) { var b = charBitmap(a, 'idle', 0, false, null, 'front'); if (b && b.top != null) return b.top; }
       if (a.rows) { for (var r = 0; r < a.rows.length; r++) if (/[^. ]/.test(a.rows[r])) return (15 - r) * KS; }
       return 15 * KS;
     }
@@ -1647,29 +1700,31 @@
       return b;
     }
     // DipLabChars → 點陣圖。×3（美術格模式）：toCanvas 直接給 1 美術格＝1 px 的圖，含 GBA 修飾（1 格描邊＋一階陰影；臉與比例一格不動）。
-    // layout.charScale 不是 3 的話退回舊作法（scale 1 平面畫，再 ×cScale）。快取 key＝spec＋姿勢＋格＋翻面＋變體
-    var charCache = {}, charN = 0;
+    // layout.charScale 不是 3 的話退回舊作法（scale 1 平面畫，再 ×cScale）。快取 key＝spec＋姿勢＋格＋翻面＋朝向＋變體
+    // 快取：多了朝向（×2，之後側面 ×3）以後 400 張會常常整包清空、走路時重算掉格 → 上限 900、超過只丟最久沒用的 300 張（Map 照放進去的順序；用到就移到最後）
+    var charCache = new Map(), CHAR_MAX = 900;
+    function cachePut(key, v) { charCache.set(key, v); if (charCache.size > CHAR_MAX) { var it = charCache.keys(); for (var n = 0; n < 300; n++) charCache.delete(it.next().value); } return v; }
     function artMode() { return cScale() === 3 && typeof charsApi().toCanvas === 'function'; }
-    function charBitmap(a, pose, frame, flip, variant) {
+    function charBitmap(a, pose, frame, flip, variant, dir) {
       var CH = charsApi(); if (!CH || !a.spec) return null;
-      var key = a.specKey + '|' + pose + '|' + frame + '|' + (flip ? 1 : 0) + (a.back ? 'b' : '') + (a.phones ? 'h' : '') + '|' + (variant || '');
-      var hit = charCache[key]; if (hit) return hit;
-      if (++charN > 400) { charCache = {}; charN = 0; }
+      dir = dir || 'front';
+      var key = a.specKey + '|' + pose + '|' + frame + '|' + (flip ? 1 : 0) + dir.charAt(0) + (a.phones ? 'h' : '') + '|' + (variant || '');
+      var hit = charCache.get(key); if (hit) { charCache.delete(key); charCache.set(key, hit); return hit; }
       try {
-        var o = { flip: !!flip, back: !!a.back, shadow: false };
+        var o = { flip: !!flip, dir: dir, shadow: false };
         if (a.phones && !/phones$/.test(String(a.spec.hat || ''))) o.wear = { hat: 'phones', hatColor: 'd' };   // 站在試聽桌前：戴上桌邊那副耳機
         if (variant === 'sil' || variant === 'night') o.sil = '#0b0f1a'; else if (variant === 'gold') o.sil = '#f0c75e'; else if (variant === 'red') o.tint = { color: '#e62838', a: 0.6 };
         if (L.spriteOutline === false && L.spriteShade === false) o.plain = true;
         else { if (L.spriteOutline === false) o.outline = false; if (L.spriteShade === false) o.shade = false; }
         if (artMode()) {
           var tc = CH.toCanvas(a.spec, pose, frame, o);
-          if (tc) return (charCache[key] = { cv: tc, ax: tc.ax, ay: tc.ay, s: 1, top: tc.ay, anchors: tc.anchors || null });
+          if (tc) return cachePut(key, { cv: tc, ax: tc.ax, ay: tc.ay, s: 1, top: tc.ay, anchors: tc.anchors || null });
         }
         var cv = document.createElement('canvas'); cv.width = 80; cv.height = 80;
         var c = cv.getContext('2d'); o.scale = 1;
         var r = CH.render(c, a.spec, pose, frame, 40, 74, o) || {};
         var s = cScale();
-        return (charCache[key] = { cv: cv, ax: 40, ay: 74, s: s, top: r.y != null ? (74 - r.y) * s : null, anchors: r.anchors || null });
+        return cachePut(key, { cv: cv, ax: 40, ay: 74, s: s, top: r.y != null ? (74 - r.y) * s : null, anchors: r.anchors || null });
       } catch (e) { console.error(e); a.spec = null; a.head = headOf(a); return null; }
     }
     function charPose(a, pose) {
@@ -1680,10 +1735,20 @@
       if (pose === 'hurt' && ok('hurt')) return ['hurt', Math.floor(t * 10) % 2];
       if (pose === 'dig' && ok('dig')) return ['dig', Math.floor(t * 3) % 2];   // 翻箱：每秒換 3 格（店裡的熟客一直在翻，太快會像在發抖）
       if (pose === 'sit' && ok('sit')) return ['sit', 0];
-      if (a.moving && ok('walk')) return ['walk', Math.floor(state.t * 8) % 4];
+      if (a.moving && ok('walk')) return ['walk', Math.floor(state.t * 8) % 2];   // 2 格、每 125 ms 換（chars.js 的 walk 就 2 格；%4 會把同一張圖存兩份）
       if (pose === 'atk' && ok('throw')) return ['throw', 1];
       return ['idle', Math.floor(t * 1.5) % 2];
     }
+    // 這一格畫哪一面（v5 第五項）：layout 強制背面（熟客 r1 背對鏡頭翻箱）排第一；手上有東西、對決、翻箱、丟牌、受擊…一律正面；
+    // 只有站（idle）跟走（walk）照走路算出來的 a.dir
+    function dirFor(a, pose) {
+      if (a.back) return 'back';
+      if (a.arm || a.hold || (pose !== 'idle' && pose !== 'walk')) return 'front';
+      return a.dir || 'front';
+    }
+    function shownDir(a) { var cp = a.spec && charsApi() ? charPose(a, poseOf(a)) : [a.moving ? 'walk' : 'idle']; return dirFor(a, cp[0]); }
+    // 停著的時候被叫 flip／pose／arm／hold（faceTo、對決站位、翻箱、序章的 pose／face）→ 轉回正面；走路中由走路決定（不閃一格正面）
+    function faceFront(a) { if (!(a.path && a.path.length)) { a.dir = 'front'; a.arrive = null; } }
     function rowsForPose(a, pose) {
       var rows = a.rows; if (!rows) return null;
       if (a.arm) { if (!a._arm || a._arm.src !== rows || a._arm.kind !== a.arm) a._arm = { src: rows, kind: a.arm, rows: (typeof opts.arm === 'function' ? opts.arm : armRows)(rows, a.arm) }; rows = a._arm.rows; }
@@ -1693,7 +1758,7 @@
     }
     // 一個小人這一格的點陣圖：{ cv, ax, ay（腳底中點）, s（美術格/點陣格）}
     function lookOf(a, pose, variant) {
-      if (a.spec) { var cp = charPose(a, pose), b = charBitmap(a, cp[0], cp[1], a.flip, variant); if (b) return b; }
+      if (a.spec) { var cp = charPose(a, pose), b = charBitmap(a, cp[0], cp[1], a.flip, variant, dirFor(a, cp[0])); if (b) return b; }
       var rows = rowsForPose(a, pose); if (!rows) return null;
       var bm = rowsBitmap(rows, pose === 'ko' ? (a.fwd || 1) > 0 : a.flip, variant);
       if (pose === 'ko') return { cv: bm.cv, ax: 8 * KS + 1, ay: 12 * KS + 1, s: 1 };
@@ -1755,7 +1820,7 @@
     // ---------------- 熱點（SPEC-v4 §2.4：buildHotList＝看得到的形狀＋深度；hots＝可以點的，hitList＝再加遮擋物，給 hitPick）
     var hitList = [];
     function propBoxO(o) { var sp = OP[o.type]; return (sp && sp.box) ? sp.box(o) : [o.x || 0, (o.y || 0) - (o.h || 8), o.w || 8, o.h || 8]; }
-    function actorView(id) { var a = actors[id]; return a ? { x: a.x, y: a.y, hidden: a.hidden, outside: a.outside, look: hasLook(a) } : null; }
+    function actorView(id) { var a = actors[id]; return a ? { x: a.x, y: a.y, hidden: a.hidden, outside: a.outside, look: hasLook(a), dir: shownDir(a), flip: !!a.flip } : null; }
     function buildHots() {
       hitList = buildHotList(L, OP, Object.assign(Object.create(S), { actor: actorView }));
       hots = hitList.filter(function (h) { return !h.occluder; });
@@ -2148,13 +2213,28 @@
       });
       return out;
     }
+    // 走路時鐘（秒，跟著倍速）：faceDir 的「換向後 0.12 秒內不再換」用它，⏩ 時一樣是走了那段距離才能再換
+    function faceOpts(a) { var CH = charsApi(); return { t: state.wt, seg: a.segLen, hi: L.faceDeg || FACE.hi, side: !!(CH && CH.DIRS && CH.DIRS.indexOf('side') >= 0) }; }
     function stepActors(dt) {
       var kk = spd();
+      state.wt = (state.wt || 0) + dt * kk;
       Object.keys(actors).forEach(function (id) {
-        var a = actors[id]; if (!a.path || !a.path.length) return;
+        var a = actors[id];
+        if (!a.path || !a.path.length) {   // 停著：到站滿 FACE.arrive 秒就轉成那一站的朝向（手上有東西的照舊正面，dirFor 會管）
+          if (a.arrive && state.wt - a.arrive.t >= FACE.arrive - 1e-6) { a.dir = a.arrive.dir; a.arrive = null; }
+          return;
+        }
         var tgt = a.path[0], dx = tgt.x - a.x, dy = tgt.y - a.y, dist = Math.sqrt(dx * dx + dy * dy), sp = (a.speed || 36) * (L.walkK || 2) * dt * kk;
-        a.moving = true; if (Math.abs(dx) > 0.5 && !a.hold && !a.arm) a.flip = dx < 0;   // 手上拿著東西（對決的封套）就不轉身
-        if (dist <= sp) { a.x = tgt.x; a.y = tgt.y; a.outside = tgt.outside; a.path.shift(); if (!a.path.length) { a.moving = false; var r = a.res; a.res = null; if (r) r(); } }
+        if (a.segTo !== tgt) { a.segTo = tgt; a.segLen = dist; }   // 這一段起點時的長度（短段不轉身）
+        a.moving = true; a.arrive = null;   // 又開始走：上一站的待轉作廢
+        if (!a.hold && !a.arm) {   // 手上拿著東西（對決的封套）就不轉身
+          var fd = faceDir({ dir: a.dir, flip: a.flip, at: a.dirAt }, dx, dy, faceOpts(a));
+          a.dir = fd.dir; a.flip = fd.flip; a.dirAt = fd.at;
+        }
+        if (dist <= sp) {
+          a.x = tgt.x; a.y = tgt.y; a.outside = tgt.outside; a.path.shift();
+          if (!a.path.length) { a.moving = false; a.arrive = { t: state.wt, dir: arriveDir(L, a.at, a.dir) }; var r = a.res; a.res = null; if (r) r(); }
+        }
         else { a.x += dx / dist * sp; a.y += dy / dist * sp; if (tgt.outside !== a.outside && dist < 6 * KS) a.outside = tgt.outside; }
       });
     }
@@ -2175,14 +2255,14 @@
       layout: L, world: null, canvas: view, overlay: overlay, host: host, state: state, oblique: true,
       put: function (id, key, spr) {
         var a = actor(id), p = spotXY(key); if (spr != null) setLook(a, spr);
-        if (p) { a.x = p.x; a.y = p.y; a.outside = p.outside; a.at = spotName(key); if (a.res) { var r = a.res; a.res = null; r(); } a.path = null; a.moving = false; a.hidden = false; }
+        if (p) { a.x = p.x; a.y = p.y; a.outside = p.outside; a.at = spotName(key); if (a.res) { var r = a.res; a.res = null; r(); } a.path = null; a.moving = false; a.hidden = false; a.dir = 'front'; a.arrive = null; }
         layoutOverlay(); return api;
       },
       sprite: function (id, spr) { setLook(actor(id), spr); return api; },
       hide: function (id, on) { actor(id).hidden = on !== false; layoutOverlay(); return api; },
       sil: function (id, on) { actor(id).sil = !!on; return api; },
       has: function (id) { var a = actors[id]; return !!(a && !a.hidden && hasLook(a)); },
-      pos: function (id) { var a = actors[id]; return a ? { x: a.x, y: a.y, outside: a.outside, hidden: a.hidden } : null; },
+      pos: function (id) { var a = actors[id]; return a ? { x: a.x, y: a.y, outside: a.outside, hidden: a.hidden, dir: shownDir(a), flip: !!a.flip } : null; },
       walk: function (id, keys, speed) {
         var a = actor(id); a.hidden = false;
         if (a.res) { var r0 = a.res; a.res = null; r0(); }
@@ -2196,17 +2276,19 @@
       // 舊呼叫端 [at].concat(shop.route(...)) 不會壞：走不到回 []（不回 null，SPEC-v4 §2.4.5）
       route: function (from, to) { var A = spotXY(from), B = spotXY(to); if (!A || !B) return []; if (!OBS) OBS = navObstacles(L); return navRoute(L, [A.x, A.y], [B.x, B.y], OBS) || []; },
       face: function (id, fwd) { actor(id).fwd = fwd; return api; },
-      arm: function (id, kind) { actor(id).arm = kind || null; return api; },
-      hold: function (id, what) { actor(id).hold = what || null; return api; },
+      arm: function (id, kind) { var a = actor(id); a.arm = kind || null; faceFront(a); return api; },
+      hold: function (id, what) { var a = actor(id); a.hold = what || null; faceFront(a); return api; },
       nudge: function (id, dx) { actor(id).ox = dx || 0; return api; },
-      flip: function (id, on) { actor(id).flip = !!on; return api; },
+      flip: function (id, on) { var a = actor(id); a.flip = !!on; faceFront(a); return api; },
+      // 劇本要某人背對鏡頭站著（例：老闆面向唱片牆）：dir(id, 'back')；之後走路、flip、pose…照規則再換。不給 d＝回現在畫的那一面
+      dir: function (id, d) { var a = actor(id); if (d == null) return shownDir(a); a.dir = d === 'back' || d === 'side' ? d : 'front'; a.arrive = null; return api; },
       handAt: handAt,
       headY: function (id) { var a = actors[id]; return a ? a.y - a.head : null; },
       fast: function (on) { fastN = Math.max(0, fastN + (on ? 1 : -1)); return api; },
       onTick: function (fn) { ticks.push(fn); return function () { ticks = ticks.filter(function (f) { return f !== fn; }); }; },
       tick: function () { state.rt = (now() - t0 - tPaused) / 1000; if (fixedT == null) state.t = state.rt; ticks.forEach(function (f) { try { f(state.rt, 0); } catch (e) { console.error(e); } }); render(); layoutOverlay(); return api; },
       now: function () { return (now() - t0 - tPaused) / 1000; },
-      pose: function (id, name, ms) { var a = actor(id); a.pose = name || null; a.poseAt = state.rt; a.poseUntil = (name && ms) ? state.rt + ms / 1000 / spd() : 0; return api; },
+      pose: function (id, name, ms) { var a = actor(id); a.pose = name || null; a.poseAt = state.rt; a.poseUntil = (name && ms) ? state.rt + ms / 1000 / spd() : 0; faceFront(a); return api; },
       emote: function (id, kind, ms) { var a = actor(id); a.emote = kind || null; a.emoteUntil = (kind && ms) ? state.rt + ms / 1000 : 0; return api; },
       say: function (id, text, o) {
         o = o || {};
@@ -2374,7 +2456,7 @@
 
   // strict：走不到就丟錯（Node 測試設 DipShop.strict＝true；瀏覽器用 ?strict=1 開，SPEC-v4 §2.4.5）
   var EXPORTS = { mount: mount, defProp: defProp, hook: hook, HOOKS: HOOKS, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, HANDAT: HANDAT, armRows: armRows, bayer: bayer, seeded: seeded,
-    defO: defO, hookO: hookO, O34: O34, OPainter: OPainter, navRoute: navRoute, navObstacles: navObstacles, navClear: navClear, navFallback: navFallback, segHitsRect: segHitsRect,
+    defO: defO, hookO: hookO, O34: O34, OPainter: OPainter, faceDir: faceDir, FACE: FACE, FACE_AT: FACE_AT, arriveDir: arriveDir, navRoute: navRoute, navObstacles: navObstacles, navClear: navClear, navFallback: navFallback, segHitsRect: segHitsRect,
     segHitsPoly: segHitsPoly, inPoly: inPoly, rectPoly: rectPoly, rectsPoly: rectsPoly, inObs: inObs, segHitsObs: segHitsObs, drawnExtent: drawnExtent, propFoot: propFoot, pocketRect: pocketRect, footprints: footprints,
     buildHotList: buildHotList, hitPick: hitPick, hitTop: hitTop, hotRegion: hotRegion, regionCenter: regionCenter, regionOutline: regionOutline, followHot: followHot, propVisBox: propVisBox,
     strict: false, version: '4.0' };

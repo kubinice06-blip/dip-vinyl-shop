@@ -254,7 +254,8 @@ small{font-size:inherit;}
 .pv-who small{font-size:12px;color:var(--gray);margin-left:6px;}
 .pv-who .bl{font-size:12px;color:#444;margin-top:2px;line-height:1.5;}
 .pv-who .bl.st{margin-top:0;line-height:1.45;}
-.pv-who .bl.st b{font-size:12px;color:var(--ink);margin-right:6px;}   /* 客人頭像：「品味 4　扣到你就多扣 4」（審查 #11） */
+.pv-who .bl.st b{font-size:12px;color:var(--ink);margin-right:6px;}
+.pv-who .bl.tn{margin-top:0;line-height:1.45;}.pv-who .bl.tn b{font-size:12px;color:var(--ink);}   /* 客人頭像：「常聽 ● 暴躁」（v5 第六項第二期） */   /* 客人頭像：「品味 4　扣到你就多扣 4」（審查 #11） */
 .kv{margin-top:8px;font-size:12px;line-height:1.9;}
 .kv .k{color:var(--gray);display:inline-block;min-width:34px;margin-right:4px;}
 .kv .num{font:700 13px 'Space Mono',monospace;}
@@ -390,6 +391,10 @@ small{font-size:inherit;}
 .drawcard .yr{font-size:11px;color:#888;letter-spacing:.14em;margin-bottom:10px;min-height:1px;}
 .drawcard .yr .mod{display:inline-block;margin-left:8px;font-size:10px;letter-spacing:.06em;border:1px solid #888;padding:0 4px;line-height:14px;}
 .drawcard .acerow{margin:-2px 0 10px;}
+/* 頻率（v5 第六項第二期）：年份下面一行「頻率 ● 暴躁」；圓點 1 px 墨框（淺色格在白底才看得到）；字不上色（頻率色跟三軸色撞） */
+.drawcard .tn{font-size:11px;line-height:14px;color:#555;letter-spacing:.1em;margin:-6px 0 10px;}
+.drawcard .tn .k{color:#888;}
+.drawcard .tn i,.pv-who .bl.tn i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--tn,#ccc);box-shadow:0 0 0 1px var(--ink,#111);margin:0 5px 0 6px;vertical-align:-1px;}
 .drawcard .acebadge{display:inline-block;font-size:10px;font-weight:700;color:#fff;background:#9aa0a8;padding:1px 6px;letter-spacing:.1em;}
 .drawcard .acebadge.pearl{background:#5b4a8a;}.drawcard .acebadge.heresy{background:#a01020;}.drawcard .acebadge.gold{background:#b8860b;}
 .drawcard .stats{width:max-content;margin:0 auto 12px;display:flex;flex-direction:column;gap:2px;}
@@ -506,6 +511,22 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-pick.booth{grid-template-columns:repeat(4,minmax(0,1fr));}
 .lb-pick.booth .lb-pickb{min-height:40px;}
 .lb-pick.booth .lb-ct.sel .lb-cv{outline:2px solid var(--gold);outline-offset:2px;}
+/* 收音機轉頻率（v5 第六項第二期）：八格（四欄兩排）色點＋名字；抽不到的那格反灰；轉到的那格黑底；轉到那張＝封面＋一句＋「去特價箱看看」 */
+.lb-sheet.radio .sub .rd-price{display:block;margin-top:2px;font-size:11px;color:var(--gray2);}
+.lb-radio{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:10px;flex:none;}
+.rd-cell{display:flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 4px;border:1px solid var(--ink);background:#fff;font:700 13px var(--zh);letter-spacing:.08em;color:var(--ink);}
+.rd-cell i{flex:none;width:10px;height:10px;border-radius:50%;background:var(--tn,#ccc);box-shadow:0 0 0 1px var(--ink);}
+.rd-cell:active{background:#f3efe6;}
+.rd-cell.on{background:var(--ink);color:#fff;}.rd-cell.on i{box-shadow:0 0 0 1px #fff;}
+.rd-cell.off,.rd-cell:disabled:not(.on){color:#aaa;border-color:#ccc;}
+.rd-cell.off i,.rd-cell:disabled:not(.on) i{background:#e2e2e2;box-shadow:0 0 0 1px #bbb;}
+.rd-got{display:flex;align-items:center;gap:12px;margin-top:12px;flex:none;}
+.rd-got .rd-cv{flex:none;width:64px;}
+.rd-got .rd-tx{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;}
+.rd-got .rd-tx b{font-size:13px;line-height:1.5;}
+.rd-got .rd-tx .sub{font-size:11px;color:var(--gray2);}
+.rd-got .lb-btn{min-height:40px;padding:0 14px;font-size:13px;}
+.rd-got .rd-gone{font-size:12px;line-height:1.5;color:var(--ink);}                       /* 電台那張已經買走：取代「去特價箱看看」鈕 */
 /* 來客（無限試煉：這一輪五顆頭像，頭像上面寫第 n 位；打完的變黑、下一位金框、第 5 位紅框傳說藏家）＋下一位＋聲望／錢／包包／配件 */
 .lb-panel.night{justify-content:flex-start;}
 .lb-night{flex:none;padding:8px 10px 0;}
@@ -669,6 +690,7 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
   .drawcard .cov{width:min(200px,30svh);}
   .drawcard .lab{margin-bottom:6px;}
   .drawcard .yr{margin-bottom:6px;}
+  .drawcard .tn{margin:-3px 0 6px;}
   .drawcard .stats{margin-bottom:8px;}
 }
 .drawcard .ci-foot::before{content:'';position:absolute;left:0;right:0;top:-18px;height:18px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none;}

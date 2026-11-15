@@ -208,6 +208,15 @@
       rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, lastCt: null, debug: { log: [], hands: [] },
     };
     const paused = () => !!(S.infoOpen || S.held);
+    // 頻率（v5 第六項第二期，主線 11-15）：提示籤前一顆小圓點＝這位客人的「常聽頻率」（C.enemies[id].tune；content.tunes 的顏色）。
+    //   不洩漏他這手（不看 plan、不看他要出哪張）；只上色、不進規則。不放進 .tx（e2e 逐字比 .tx）；1 px 墨框（淺色格在白底才看得到）；
+    //   不染字、不染框（頻率色跟三軸色撞）；.done 時變灰；教學裡不出（多一個沒解釋的東西）
+    function tuneDot() {
+      const TN = content.tunes || {}, k = enemy.tune, col = TN.colors && TN.colors[k];
+      if (tut || !col) return '';
+      const lab = String(TN.guestAria || '{name}').replace('{name}', (TN.names && TN.names[k]) || '');
+      return `<i class="tn" data-tune="${esc(k)}" role="img" style="--tn:${esc(col)}" aria-label="${esc(lab)}" title="${esc(lab)}"></i>`;
+    }
     const baseSpeed = () => FAST ? 4 : (settings().fastAnim ? 2 : 1);
     S.speed = baseSpeed();
     const rm = () => { const f = Fx(); try { return f && f.reducedMotion ? f.reducedMotion() : rmq(); } catch (_) { return rmq(); } };
@@ -347,7 +356,7 @@
         <div class="slot p" data-tut="slot-p"></div>
         <div class="tcol"><div class="rounds num" data-tut="rounds"></div><div class="tri" data-tut="tri" role="button" aria-expanded="false"></div></div>
         <div class="trileg" data-tut="trileg" hidden></div>
-        <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
+        <div class="hint" data-tut="e-hint">${tuneDot()}<span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
         <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="l4" aria-hidden="true"></div></div>
         <div class="lastline" data-tut="lastline"></div>
         <div class="cheat" data-tut="cheat" hidden></div>

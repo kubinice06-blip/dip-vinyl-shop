@@ -1,7 +1,8 @@
 // game-lab/test/hit.test.mjs — 店內命中與走位加固（SPEC-v4 §2.4、§5.1 A3）。A3。
 //   node game-lab/test/hit.test.mjs        # 有失敗 exit 1
 // 測：DipShop.buildHotList(dip.json) 的形狀＋深度（主熱點、子熱點、跟著人走、遮擋物）；hitPick：每箱可見區的每一格都命中自己、
-//     R-x0 probe3 的誤觸（中島最後一排 世界／民謠 的下緣不會被前排爵士／台灣吃掉）、後牆三個櫃子（門口長櫃 INDIE ROCK／INDIE POP、窗下藍調櫃 BLUES；v5 店面改版）
+//     R-x0 probe3 的誤觸（中島最後一排 世界／民謠 的下緣不會被前排爵士／台灣吃掉）、後牆三個櫃子（門口長櫃 INDIE ROCK／INDIE POP、窗下藍調櫃 BLUES；v5 店面改版）、
+//     收音機的天線＋圓角頂歸收音機（疊在 BLUES 櫃右下角上；v5 第六項第二期）
 //     封面＝rack:<id>、櫃身＝bin:<key>、門口牆 FEATURE／PICKS 整面＝bin:feature／bin:picks、容錯只在沒命中時、
 //     點在植物上＝null、停用的前排不會讓點擊穿到後面、老闆熱點的深度跟著他的 y；navRoute 走不到回 null、api.route 回 []；
 //     DipShop.strict 時 walk 到走不到的點會 reject、非嚴格時不瞬移（每格位移 ≤ 速度＋1）；hotPoints 每一點都點得到自己；按下就描框。
@@ -96,7 +97,10 @@ await section('R-x0 probe3：中島最後一排（世界／民謠）的下緣不
 // v5 店面改版：門口長櫃拆成 INDIE ROCK（backbin-ir）／INDIE POP（backbin-ip）兩個 4 欄櫃、窗下矮櫃換成 BLUES 藍調櫃（winbin，7 欄）
 await section('後牆三櫃（INDIE ROCK／INDIE POP／BLUES）：封面＝rack:<id>（唱片資訊＋試聽），其他看得到的地方＝bin:<key>（開抽屜）', () => {
   const hots = H();
-  const body = { 'backbin-ir': [[60, 52], [60, 85], [90, 80]], 'backbin-ip': [[110, 52], [140, 75], [150, 85]], winbin: [[200, 80], [240, 85], [170, 58]] };
+  // 收音機（v5 第六項第二期）擺在 BLUES 櫃右下角前面：天線＋圓角頂那一截（y84–89）歸收音機（下一段測），櫃身的探點避開它
+  const radioR = (dip.props.find(p => p.id === 'radio') || { hot: { rect: [0, 0, 0, 0] } }).hot.rect;
+  const inRadio = ([x, y]) => x >= radioR[0] && y >= radioR[1] && x < radioR[0] + radioR[2] && y < radioR[1] + radioR[3];
+  const body = { 'backbin-ir': [[60, 52], [60, 85], [90, 80]], 'backbin-ip': [[110, 52], [140, 75], [150, 85]], winbin: [[200, 80], [225, 85], [226, 89], [170, 58]] };
   for (const [pid, n] of [['backbin-ir', 4], ['backbin-ip', 4], ['winbin', 7]]) {
     const o = dip.props.find(p => p.id === pid), key = 'bin:' + o.bin.key;
     const covers = hots.filter(h => h.parent === key);
@@ -107,9 +111,21 @@ await section('後牆三櫃（INDIE ROCK／INDIE POP／BLUES）：封面＝rack:
       eq(c.action, 'wall-record:' + c.id.slice(5), c.id + ' 動作＝wall-record');
     }
     const box = PROPS[o.type].box(o);
-    for (const [x, y] of [[box[0] + 4, box[1] + 3], [box[0] + box[2] - 4, box[1] + box[3] - 2]].concat(body[pid]))
+    for (const [x, y] of [[box[0] + 4, box[1] + 3], [box[0] + box[2] - 4, box[1] + box[3] - 2]].concat(body[pid]).filter(q => !inRadio(q)))
       eq(idOf(pick(hots, x, y)), key, `${pid} 櫃身 (${x},${y}) → ${key}`);
   }
+});
+
+// 收音機（v5 第六項第二期轉頻率）：畫出來的天線（y84–90）與圓角頂（y88–89）落在 BLUES 櫃的 box 裡（y54–89）；
+//   收音機排在前面（深度 151 對 90），熱點從天線尖 y84 起算 → 那一截點下去是收音機，不是藍調箱（審查：手指稍微偏上就開成藍調箱）
+await section('收音機：天線＋圓角頂那一截歸收音機（比 BLUES 櫃前面），旁邊的 BLUES 櫃身照舊', () => {
+  const hots = H(), r = byId(hots, 'radio');
+  ok(r && r.action === 'radio', 'radio 熱點存在、action＝radio');
+  ok(r && r.depth > byId(hots, 'bin:blues').depth, 'radio 深度比 bin:blues 大（排在前面）');
+  for (const [x, y] of [[252, 84], [252, 85], [250, 87], [249, 88], [241, 88], [233, 88], [240, 89], [232, 89], [241, 95], [231, 101]])
+    eq(idOf(pick(hots, x, y)), 'radio', `收音機 (${x},${y}) → radio`);
+  for (const [x, y] of [[226, 86], [226, 89], [228, 84], [200, 85]])
+    eq(idOf(pick(hots, x, y)), 'bin:blues', `收音機左邊的 BLUES 櫃身 (${x},${y}) → bin:blues`);
 });
 
 await section('門口牆（FIXLIST 4／5）：FEATURE（靠門 2×2＋名牌）、PICKS（其餘 5×2＋名牌）整面都是那一區', () => {
