@@ -925,7 +925,7 @@
     function giveStep(s, L) {
       var r = save.run;
       if (!r || !sc.strip) { sc.stripState = null; renderStrip(sc); return L.end('done'); }
-      var ids = [C.aces[r.ace]].concat(r.bag);
+      var ids = [aceIdOf(r)].concat(r.bag);
       var got = { ace: null, bag: [] };
       sc.stripState = got; renderStrip(sc);
       var from = stg('hotRect', s.from || 'counter') || anchorOf('o');
@@ -2116,8 +2116,8 @@
       hooks: duelHooks(p)
     };
     var boss = !!en.boss && enter;
-    // 頂點卡試做：序章那場（教學）照舊 7 星王牌——開打時吐司寫明一次（FRAME 1.6）
-    if (UI.apex && !UI.auto && (inPrologue(r) || en.prologue) && !p.replay) later(function () { if (UI.screen === 'duel') toast(AU('tag') + '・' + AU('tutNote')); }, enter ? 1600 : 300);
+    // 頂點卡試做：序章那場照舊 7 星王牌——開打時吐司寫明一次（FRAME 1.6；老闆帶的那場有教學泡泡，不疊吐司：挑王牌那行已經寫了）
+    if (UI.apex && !UI.auto && (inPrologue(r) || en.prologue) && !p.replay && !p.tutorial) later(function () { if (UI.screen === 'duel') toast(AU('tag') + '・' + AU('tutNote')); }, enter ? 1600 : 300);
     var mountBoard = function () {
       var Dl = DUEL();
       if (Dl && typeof Dl.mount === 'function') { try { Dl.mount(wrap, opts); } catch (e) { console.error(e); stubDuel(wrap, opts); } }

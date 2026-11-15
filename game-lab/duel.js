@@ -632,7 +632,7 @@
       const v = S.v, X = v && v.apex; if (!X || !canAct()) return false;
       ensureApexEls();
       if (S.sel) clearSel();
-      els.apx.innerHTML = apexBoxHTML(X);
+      els.apx.innerHTML = apexBoxHTML(X); els.apx.setAttribute('aria-label', X.name || '');
       els.apx.hidden = false; S.apxOpen = true; S.apxAt = performance.now();
       const tl = apexTileEl(); if (tl) tl.classList.add('apxon');
       placeApex();

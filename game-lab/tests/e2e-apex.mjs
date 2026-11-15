@@ -23,7 +23,7 @@
 //      序章打完回到來客畫面 → 老闆說那句 → 自動跳挑王牌面板（只在 390 跑：整段序章約 1 分鐘）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, noScroll, scrollOk, duelReady, tapAt, hitPoint,
-  seededContinue, watchSay, tapHot, longPress, infoOpen, closeInfo, openTitle, prologueToDuel, advanceUntil } from './e2e-lib.mjs';
+  seededContinue, seedRun, watchSay, tapHot, longPress, infoOpen, closeInfo, openTitle, prologueToDuel, advanceUntil } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.APEX_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -52,9 +52,12 @@ const pickState = page => C(page, () => {
 const expDet = (page, id) => C(page, id => { const E = window.DipLabEngine, Cn = window.DipLabContent, c = Cn.cards[id], A = E.abilityOf(Cn, id), U = Cn.apexTrial.ui;
   return c.artist + '《' + c.album + '》' + U.pickLine.replace('{name}', A.name).replace('{timing}', U.timing[A.timing]).replace('{text}', A.text); }, id);
 async function toNightWithPanel(page) {
-  await seededContinue(page, { ace: 'heresy', idx: 0 }, QA());
+  await openTitle(page, QA());
+  await seedRun(page, { ace: 'heresy', idx: 0 });
+  await openTitle(page, QA());
+  await watchSay(page); await watchToasts(page);          // 老闆那句在來客畫面一畫出來就說：先包好再按「繼續」
+  await jsClick(page, '[data-a=cont]');
   await waitScreen(page, 'night');
-  await watchSay(page); await watchToasts(page);
   return page.waitForSelector('.lb-sheet.apxpick .apx-c', { timeout: 9000 }).then(() => true, () => false);
 }
 
