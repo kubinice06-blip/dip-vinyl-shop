@@ -7,7 +7,7 @@
 //                              [--apex [--apex-ace <頂點卡 id>] [--apex-params '{"<能力 id>":{"n":3}}']] [--ace hall|pearl|heresy]
 //   --apex   頂點卡純輔助卡試做（＝遊戲網址 ?apex=1；scratchpad v5/apextrial）：startFight 傳 {apex:true}（序章照舊 7 星）；王牌＝各派預設那張（C.aces），
 //            策略自己決定什麼時候發動（engine policies 的頂點卡分支）。--apex-ace＝每一趟都帶這張（流派跟著它；用來量單張能力，跟沒給時的三派輪流不是同一批客人組成）
-//            --apex-params＝試調參數（只在這次模擬裡蓋掉 C.apexTrial 那幾張的 params；{"<id>":{"hold":{…}}} 蓋留著的小效果；不改 content.js）
+//            --apex-params＝試調參數（只在這次模擬裡蓋掉 C.apexTrial 那幾張的 params；{"<id>":{"hold":{…}}} 蓋留著的小效果；@檔名＝從 JSON 檔讀；不改 content.js）
 //            旗標下多印一張「頂點卡發動」表（發動率、第幾手、發動那手的勝負、作用幾手）；不開 --apex 時輸出跟以前一字不差
 //   --ace    每一趟都用這一派（沒給＝三派輪流 TIERS[i % 3]）；不開 --apex 也能用＝現行 7 星王牌的分派基準（跟 --apex-ace 同一批客人組成）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
@@ -61,7 +61,7 @@ if (APEX_ACE && !APEX) { console.error('--apex-ace 要跟 --apex 一起用'); pr
 const ACE_T = arg('ace', null);
 if (ACE_T && !TIERS.includes(ACE_T)) { console.error('--ace ' + TIERS.join('|')); process.exit(2); }
 if (ACE_T && APEX_ACE && C.cards[APEX_ACE].tier !== ACE_T) { console.error('--ace 跟 --apex-ace 那張的派不同'); process.exit(2); }
-const APEX_PARAMS = arg('apex-params', null) ? JSON.parse(arg('apex-params')) : null;
+const APEX_PARAMS = arg('apex-params', null) ? JSON.parse(arg('apex-params').startsWith('@') ? fs.readFileSync(arg('apex-params').slice(1), 'utf8') : arg('apex-params')) : null;   // @檔名＝從檔案讀
 if (APEX_PARAMS && !APEX) { console.error('--apex-params 要跟 --apex 一起用'); process.exit(2); }
 if (APEX_PARAMS) for (const id of Object.keys(APEX_PARAMS)) {
   const e = TIERS.flatMap(t => EN.apexList(C, t)).find(x => x.id === id);
