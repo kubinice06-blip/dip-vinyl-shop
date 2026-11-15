@@ -346,6 +346,7 @@
         <div class="slot e" data-tut="slot-e"></div>
         <div class="slot p" data-tut="slot-p"></div>
         <div class="tcol"><div class="rounds num" data-tut="rounds"></div><div class="tri" data-tut="tri" role="button" aria-expanded="false"></div></div>
+        <div class="trileg" data-tut="trileg" hidden></div>
         <div class="hint" data-tut="e-hint"><span class="lb">${esc(T('hintLabel'))}</span><span class="tx"></span></div>
         <div class="callout" data-tut="result" aria-live="polite"><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="l4" aria-hidden="true"></div></div>
         <div class="lastline" data-tut="lastline"></div>
@@ -366,7 +367,7 @@
     const els = {
       e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'), est: $('.dl-e .st'), pst: $('.dl-p .st'),
       hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
-      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), cheat: $('.cheat'),
+      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), cheat: $('.cheat'), leg: $('.trileg'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
       hand: $('.hand'), tiles: $('.hand .tiles'), abpop: $('.hand .pop'), tcol: $('.tcol'),
       pop: $('.dl-pop'), kost: $('.kost'), fx: $('.dl-fx'),
@@ -507,7 +508,33 @@
       }
       return triMarkup(tone, ring, 'dlm');
     }
-    function renderTri() { els.tri.innerHTML = triSVG(); }
+    function renderTri() { els.tri.innerHTML = triSVG(); renderLeg(); }
+    // 選屬性時相剋圖旁那一行（v5 第二項小尾巴）：「冷門：剋經典｜怕硬蕊」。跟相剋圖的綠／紅同一個條件（選了一顆、還沒丟、不在揭曉閃那一下）；
+    //   字放在提示框下面、貼著中間字帶下緣（相剋圖右下）；提示框會先往上讓出這一行（placeLeg），所以打開手牌時版面不跳
+    function legHTML(x) {
+      const b = (EDGES.find(e => e[0] === x) || [])[1], c = (EDGES.find(e => e[1] === x) || [])[0];
+      const tpl = content.triLegend;
+      if (!tpl || !b || !c) return '';
+      const nm = a => `<span class="an"><span class="${a}">${ZH[a][0]}</span>${ZH[a][1]}</span>`;
+      return esc(tpl).replace(/\{([abc])\}|剋|怕|｜/g, (m, k) => k ? nm(({ a: x, b, c })[k]) : m === '剋' ? '<span class="g">剋</span>' : m === '怕' ? '<span class="r">怕</span>' : '<span class="sep">｜</span>');
+    }
+    function renderLeg() {
+      // 教學裡不出（審查 11-15：教學強制亮邊時圖上沒有紅箭頭、「怕」對不上；教學遮罩的洞邊會從這行字中間切過去）
+      const x = !tut && !S.triForce && S.sel && !S.busy && !S.flash && S.v && !S.v.over ? S.sel.attr : null;
+      const key = x || '';
+      if (els.leg.dataset.a === key) return;
+      els.leg.dataset.a = key;
+      els.leg.innerHTML = x ? legHTML(x) : '';
+      els.leg.hidden = !x || !els.leg.innerHTML;
+    }
+    // 提示框（中間字帶垂直置中）兩行時會蓋到最下面那一行字：先往上讓（只看提示框自己的高，不看有沒有選牌 → 打開手牌時不跳）
+    function placeLeg() {
+      const band = parseFloat(root.style.getPropertyValue('--band-h')) || els.tcol.offsetHeight || 0;
+      const cs = getComputedStyle(els.leg), h = els.hint.offsetHeight, lh = parseFloat(cs.lineHeight) || 14, off = parseFloat(cs.getPropertyValue('--leg-off')) || 0;
+      if (!band || !h) return;
+      const shift = Math.max(0, Math.ceil(h / 2 + 4 + lh + off - band / 2));   // 4＝提示框陰影 3 px＋1 px 縫；off＝這行字離字帶下緣（讓屬性鈕的黑框與陰影）
+      els.hint.style.setProperty('--hs', shift + 'px');
+    }
     function renderRounds(v) { els.rounds.textContent = T('rounds', { n: Math.max(1, v.n | 0), max: v.maxRounds || (E.CFG && E.CFG.maxRounds) || 6 }); }
     function lastLineHTML(ct) {
       return `<span class="lb">${esc(T('lastPrefix'))}</span><b>${esc(ct.l1)}<span class="${ct.cls}">${esc(ct.l2)}</span></b>`
@@ -714,6 +741,7 @@
       sizeBoard();
       if (root.scrollHeight > root.clientHeight + 1) { root.classList.add('tighter'); sizeBoard(); }
       fitRow(els.e); fitRow(els.p);
+      placeLeg();
     }
     // 牌桌（兩張封面＋下面那行字＋中間字帶）與手牌區：
     //   手牌區至少 handMin（疊著那一排放得下；v4 的數字照留，牌桌的大小不變）；其餘給牌桌，兩張封面照剩下的高與寬放大（空出來的高度給牌桌）；
@@ -751,6 +779,7 @@
     function scheduleFit() { if (!S.fitRaf) { fit(); S.fitRaf = requestAnimationFrame(() => { S.fitRaf = 0; fit(); }); } }
     try { S.ro = new ResizeObserver(() => scheduleFit()); S.ro.observe(root); } catch (_) {}
     try { S.roCall = new ResizeObserver(() => { if (els.call.classList.contains('on')) placeCallout(); }); S.roCall.observe(els.call); } catch (_) {}   // 字型晚到、換行變了：結果框重新擺（RH-3）
+    try { S.roHint = new ResizeObserver(() => placeLeg()); S.roHint.observe(els.hint); } catch (_) {}   // 提示句換了、變兩行：提示框往上讓出相剋圖旁那一行
     try { if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => scheduleFit()); } catch (_) {}
 
     // ---------------- input（v5 手風琴：點一張＝在那張打開＋跳屬性鈕；點別張＝換那張打開；再點打開那張或點手牌外面＝收回；點屬性鈕＝照那個屬性丟出） ----------------
@@ -1285,6 +1314,7 @@
       if (S.fitRaf) cancelAnimationFrame(S.fitRaf);
       if (S.ro) try { S.ro.disconnect(); } catch (_) {}
       if (S.roCall) try { S.roCall.disconnect(); } catch (_) {}
+      if (S.roHint) try { S.roHint.disconnect(); } catch (_) {}
       root.remove();
     }
     // ---------------- 名字 → 元素（教學手指、e2e） ----------------
@@ -1327,7 +1357,7 @@
       const slot = el => ({ who: txt(el.querySelector('.who')), card: el.dataset.card || null, dim: el.classList.contains('dim'), back: el.classList.contains('back') });
       return {
         call: { l1: txt(els.call.querySelector('.l1')), l2: txt(els.call.querySelector('.l2 .v')), l3: txt(els.call.querySelector('.l3')), notes: txt(els.call.querySelector('.l2 .nt')), on: els.call.classList.contains('on') },
-        slotE: slot(els.se), slotP: slot(els.sp), lastline: txt(els.last), hint: txt(els.htx), rounds: txt(els.rounds),
+        slotE: slot(els.se), slotP: slot(els.sp), lastline: txt(els.last), hint: txt(els.htx), rounds: txt(els.rounds), leg: els.leg.hidden ? '' : txt(els.leg),
         eHp: txt(els.ehpn), pHp: txt(els.phpn), pile: txt(els.pileTx), open: S.sel ? S.sel.i : null, pop: txt(els.abpop),
       };
     }

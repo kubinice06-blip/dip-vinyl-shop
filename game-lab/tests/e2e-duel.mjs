@@ -185,8 +185,14 @@ async function tapName(page, name) {
 }
 // 點那張（＝在那張打開；已經打開就不再點：再點＝收回）
 async function liftIt(page, i) {
-  if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
-  await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(260);
+  for (let t = 0; t < 2; t++) {
+    if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
+    // 剛收回（select(null)）時手牌還在滑回疊好的位置：先等它停，才算點得到的那一點（不然點到隔壁那張；11-15 查到的偶發失敗）
+    await sleep(t ? 450 : 120);
+    await tapName(page, i === 'ace' ? 'card-ace' : `card-${i}`); await sleep(260);
+    if ((await page.evaluate(() => window.DipLabDuel.debug().open)) === i) return;
+    await page.evaluate(() => window.DipLabDuel.select(null));
+  }
 }
 // 找得到 want 的這一手（找不到就換種子重開），回 find() 的結果
 async function setup(page, want, seed0 = 7) {
@@ -440,18 +446,41 @@ async function runSize(browser, w, h) {
       });
       const ok2 = r.open === 1 && r.sel && r.sel.i === 1 && r.sel.attr === r.top && r.ab.join() === ['c', 'o', 'h'].map(a => `chip-1-${a}${a === r.top ? '*' : ''}`).join() && / pre/.test(r.slotP);
       record(2, size, ok2, `疊著點 card-1 → 打開 ${r.open}、${short(r.sel)}（topAttr ${r.top}）；屬性鈕 ${r.ab.join(',')}；你丟的「${r.slotP}」`);
+      // 2t 選屬性時相剋圖旁那一行（v5 第二項小尾巴）：字＝content.triLegend 代入（你選的／它剋的／剋它的）；在中間字帶裡、不蓋提示框（含陰影 3 px）與相剋圖、
+      //    不超出牌桌；提示句換成最長、兩行時也一樣（提示框往上讓）；收回手牌就藏起來
+      {
+        const legOf = () => page.evaluate(() => {
+          const q = s => document.querySelector(s), R = e => { const b = e.getBoundingClientRect(); return { l: b.left, t: b.top, r: b.right, b: b.bottom }; };
+          const leg = q('.dl .trileg'), hint = q('.dl .hint'), tri = q('.dl .tri'), tcol = q('.dl .tcol'), tbl = q('.dl .dl-t');
+          return { on: !leg.hidden && leg.offsetHeight > 0, tx: leg.textContent, leg: R(leg), hint: R(hint), tri: R(tri), tcol: R(tcol), tbl: R(tbl), fits: leg.scrollWidth <= leg.clientWidth + 1, lines: (tx => { const c = getComputedStyle(tx); return Math.round((tx.getBoundingClientRect().height - parseFloat(c.paddingTop) - parseFloat(c.paddingBottom)) / (parseFloat(c.lineHeight) || 20)); })(hint.querySelector('.tx')), pop: [...document.querySelectorAll('.dl .pop .ab')].map(R) };
+        });
+        const want = await page.evaluate(a => {
+          const C = window.DipLabContent || {}, ZH = { c: '經典', o: '冷門', h: '硬蕊' }, beat = { o: 'c', c: 'h', h: 'o' }, by = { c: 'o', h: 'c', o: 'h' };
+          return String(C.triLegend || '').replace('{a}', ZH[a]).replace('{b}', ZH[beat[a]]).replace('{c}', ZH[by[a]]);
+        }, r.top);
+        const geoOk = g => g.on && g.fits && g.leg.t >= g.hint.b + 3 - 0.5 && g.leg.b <= g.tcol.b + 0.5 && g.leg.l >= g.tri.r - 0.5 && g.leg.t >= g.tcol.t && g.leg.r <= g.tbl.r + 0.5
+          && g.pop.every(p => p.t >= g.leg.b + 1 || p.r <= g.leg.l || p.l >= g.leg.r);   // 屬性鈕（含最高那顆）不頂進這行字（審查 11-15）
+        const g1 = await legOf();
+        const orig = await page.evaluate(() => document.querySelector('.dl .hint .tx').textContent);
+        const longest = await page.evaluate(() => { const H = (window.DipLabContent || {}).hints || {}; return Object.values(H).flat().map(x => x.text).sort((a, b) => [...b].length - [...a].length)[0] || ''; });
+        await page.evaluate(t => { document.querySelector('.dl .hint .tx').textContent = t + t.slice(0, 6); }, longest); await sleep(200);
+        const g2 = await legOf();
+        await page.evaluate(t => { document.querySelector('.dl .hint .tx').textContent = t; }, orig); await sleep(150);
+        const ok2t = !!want && g1.tx === want && geoOk(g1) && geoOk(g2) && g2.lines >= 2;
+        record('2t', size, ok2t, `「${g1.tx}」（要「${want}」）；提示框下緣 ${Math.round(g1.hint.b)}＋3 ≤ 這行 ${Math.round(g1.leg.t)}–${Math.round(g1.leg.b)} ≤ 字帶下緣 ${Math.round(g1.tcol.b)}；兩行提示（${g2.lines} 列）：${Math.round(g2.hint.b)}＋3 ≤ ${Math.round(g2.leg.t)}`);
+      }
       await tapName(page, 'card-2'); await sleep(320);
       const s3 = await snapHand();
       const ov3 = s3.strips[1] < s3.tiles[1].r.w - 0.5 && s3.tiles[3].r.l >= s3.tiles[2].r.r - 0.5;
       record(3, size, s3.open === 2 && s3.sel && s3.sel.i === 2 && s3.abs.length === 3 && s3.abs.every(b => /^chip-2-/.test(b.tut)) && ov3, `點 card-2 → 換成 ${short(s3.sel)}；屬性鈕 ${s3.abs.map(b => b.tut).join(',')}；card-1 又被蓋回去、card-2 整張露出來 ${ov3}`);
       await tapName(page, 'card-2'); await sleep(400);
-      const s4 = await page.evaluate(() => { const x = window.DipLabDuel.debug(); return { phase: x.phase, n: x.n, busy: x.busy, open: x.open, sel: x.sel, ab: document.querySelectorAll('.dl .pop .ab').length }; });
+      const s4 = await page.evaluate(() => { const x = window.DipLabDuel.debug(); return { phase: x.phase, n: x.n, busy: x.busy, open: x.open, sel: x.sel, ab: document.querySelectorAll('.dl .pop .ab').length, leg: !document.querySelector('.dl .trileg').hidden }; });
       await tapName(page, 'card-2'); await sleep(400);
       const s4a = await dbg(page);
       await tapName(page, 'slot-e'); await sleep(350);
-      const s4b = await page.evaluate(() => ({ open: window.DipLabDuel.debug().open, sel: window.DipLabDuel.debug().sel, n: window.DipLabDuel.debug().n, ab: document.querySelectorAll('.dl .pop .ab').length }));
-      const ok4 = s4.phase === 'choose' && s4.n === n0 && !s4.busy && s4.open == null && !s4.sel && !s4.ab && s4a.sel && s4a.sel.i === 2 && s4b.open == null && !s4b.sel && s4b.n === n0 && !s4b.ab;
-      record(4, size, ok4, `再點打開那張 → 收回：第 ${s4.n} 手、${s4.phase}、打開 ${s4.open}、屬性鈕 ${s4.ab}；再點 → 打開 ${short(s4a.sel)}；點牌桌（手牌外面）→ 打開 ${s4b.open}、屬性鈕 ${s4b.ab}`);
+      const s4b = await page.evaluate(() => ({ open: window.DipLabDuel.debug().open, sel: window.DipLabDuel.debug().sel, n: window.DipLabDuel.debug().n, ab: document.querySelectorAll('.dl .pop .ab').length, leg: !document.querySelector('.dl .trileg').hidden }));
+      const ok4 = s4.phase === 'choose' && s4.n === n0 && !s4.busy && s4.open == null && !s4.sel && !s4.ab && s4a.sel && s4a.sel.i === 2 && s4b.open == null && !s4b.sel && s4b.n === n0 && !s4b.ab && !s4.leg && !s4b.leg;
+      record(4, size, ok4, `再點打開那張 → 收回：第 ${s4.n} 手、${s4.phase}、打開 ${s4.open}、屬性鈕 ${s4.ab}；再點 → 打開 ${short(s4a.sel)}；點牌桌（手牌外面）→ 打開 ${s4b.open}、屬性鈕 ${s4b.ab}；相剋圖旁那行收起 ${!s4.leg && !s4b.leg}`);
       const p3 = await hitPoint(page, 'dt:card-3');
       await page.touchscreen.tap(p3.x, p3.y); await sleep(120); await page.touchscreen.tap(p3.x, p3.y); await sleep(400);
       const s4c = await page.evaluate(() => window.DipLabDuel.debug().open);
