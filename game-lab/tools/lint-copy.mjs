@@ -349,6 +349,16 @@ else {
   if (len(r[0] + r[1]) > 20) err('cheatSheet[' + k + ']', '超過 20 字：' + r.join(' '));
   add({ scene: '對決盤面・牌桌小抄（點相剋圖打開）', where: 'cheatSheet[' + k + ']', who: '（畫面字）', text: r[0] + '　' + r[1], tag: C.cheatSheetTag });
 });
+// 選屬性時相剋圖旁那一行（v5 第二項小尾巴）：{a}＝你選的、{b}＝它剋的、{c}＝剋它的；三個空格都要有、組出來 ≤12 字
+if (C.triLegend != null) {
+  if (!TAG_OK(C.triLegendTag)) err('triLegend', '沒有 tag（triLegendTag）');
+  if (typeof C.triLegend !== 'string' || !['{a}', '{b}', '{c}'].every(k => C.triLegend.includes(k))) err('triLegend', '要有 {a}／{b}／{c} 三個空格');
+  else {
+    const ex = C.triLegend.replace('{a}', '冷門').replace('{b}', '經典').replace('{c}', '硬蕊');
+    if (len(ex) > 12) err('triLegend', '組出來超過 12 字：' + ex);
+    add({ scene: '對決盤面・選屬性時相剋圖旁那一行', where: 'triLegend', who: '（畫面字）', text: ex + '（例：選冷門）', tag: C.triLegendTag });
+  }
+}
 // 三軸 7 星的白話（挑王牌那行括號、唱盤前三張的小字）
 for (const [t, v] of Object.entries(C.aceGloss || {})) {
   if (!TAG_OK(C.aceGlossTag)) err('aceGloss.' + t, '沒有 tag（aceGlossTag）');

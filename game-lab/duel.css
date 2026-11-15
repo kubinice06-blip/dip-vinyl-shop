@@ -109,7 +109,14 @@
 .dl .cheat b .kx{color:var(--gray,#888)}
 .dl.short .cheat{font-size:12px;line-height:17px;padding:6px 10px}
 /* 提示句（店主 FIXLIST 9）：中間字帶（兩張封面下方）；出牌前是提示句，揭曉時換成結果框，下一手換回下一句提示 */
-.dl .hint{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) / 2);transform:translateY(-50%);z-index:3;
+/* 選屬性時相剋圖旁那一行（v5 第二項小尾巴）：「冷門：剋經典｜怕硬蕊」；在提示框下面、貼著中間字帶下緣（相剋圖右下）。
+   --hs：提示框兩行時往上讓出這一行（duel.js placeLeg，看提示框自己的高，不看有沒有選牌） */
+.dl .trileg{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) - var(--leg-h,14px));height:var(--leg-h,14px);
+  font-size:11px;font-weight:700;line-height:var(--leg-h,14px);letter-spacing:.02em;color:var(--ink,#111);white-space:nowrap;overflow:hidden;pointer-events:none;z-index:2;font-family:var(--dl-zh)}
+.dl .trileg[hidden]{display:none}
+.dl .trileg .g{color:var(--win,#2e7d52)}.dl .trileg .r{color:var(--red,#c11628)}.dl .trileg .sep{color:var(--gray,#888);margin:0 2px}
+.dl.short{--leg-h:13px}
+.dl .hint{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) / 2);transform:translateY(calc(-50% - var(--hs,0px)));z-index:3;
   display:flex;align-items:stretch;min-height:40px;border:1.5px solid var(--ink,#111);background:#fff;min-width:0;box-shadow:0 3px 0 rgba(0,0,0,.08)}
 .dl .hint .lb{flex:none;display:grid;place-items:center;background:var(--ink,#111);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;padding:0 8px;margin-right:8px;white-space:nowrap}
 .dl .hint .tx{align-self:center;font-size:15px;font-weight:700;letter-spacing:.02em;line-height:20px;padding:6px 8px 6px 0;min-width:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}

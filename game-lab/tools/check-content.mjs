@@ -364,6 +364,11 @@ export function contentProblems(C, E) {
     ok(f(T.roundsScore, { p: 60, e: 50, who: '你' }) === '你剩 60%，他剩 50%：你贏', 'duelText.roundsScore：比聲望條剩幾 %（FIXLIST 3）');
     ok(f(T.roundsEven, { p: 50, e: 50 }) === '你剩 50%，他剩 50%：一樣，算你贏', 'duelText.roundsEven：比例一樣算你贏（FIXLIST 3）');
   }
+  // 選屬性時相剋圖旁那一行（v5 第二項小尾巴；duel.js legHTML 照 EDGES 代入）：冷門→「冷門：剋經典｜怕硬蕊」
+  {
+    const f = (s, o) => String(s || '').replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+    ok(f(C.triLegend, { a: '冷門', b: '經典', c: '硬蕊' }) === '冷門：剋經典｜怕硬蕊', 'triLegend：組不出「冷門：剋經典｜怕硬蕊」');
+  }
   const SL = C.shopLines || {};
   for (const k of ['poster', 'cat', 'locked', 'binBusy', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop', 'bin', 'booth', 'boothEmpty']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
   ok(SL.binBusy === '打完再翻。', 'shopLines.binBusy＝「打完再翻。」（D §6）');
