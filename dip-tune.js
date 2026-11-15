@@ -706,14 +706,15 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 搜尋：找到的那張，三顆輪子依序轉過去（能量→質地→色溫），轉的路上照樣掃過沿途的唱片 ──
   let travelTok = 0;
   let traveling = false;   // 轉台動畫走到一半（電台撥下去時不要先播路上那張，到站自己會播）
-  function cancelTravel() { travelTok++; traveling = false; }
+  let travelDest = null;   // 正在轉往哪一張（唱片櫃在轉往搜尋那張的路上讀回來：不取消，見 filterChanged）
+  function cancelTravel() { travelTok++; traveling = false; travelDest = null; }
   function travelTo(c, quiet) {
-    const tok = ++travelTok; let k = 0, done; traveling = true;
+    const tok = ++travelTok; let k = 0, done; traveling = true; travelDest = c;
     const finished = new Promise(r => { done = r; });
     if (!quiet) ensureAudio(); stopPreview(); clearQueue();   // quiet：不是使用者手勢觸發（網址參數），不能拿來解鎖音訊
     const leg = () => {
       if (tok !== travelTok) { done(false); return; }
-      if (k >= 3) { traveling = false; clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
+      if (k >= 3) { traveling = false; travelDest = null; clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
       const axis = ['x', 'y', 'z'][k++], from = state.p[axis], to = c['p' + axis], dist = Math.abs(to - from);
       if (dist < 0.05) { leg(); return; }
       const dur = Math.min(1000, 280 + dist * 10), t0 = performance.now();
@@ -1253,7 +1254,8 @@ html.tune-inapp-lock body{padding-top:120px}
     radioT = setTimeout(() => { if (!state.radio || !state.visible || playing) return;
       if (mineOn() && previewCard) mineSeen.add(previewCard.i);
       const c = radioPick();
-      if (!c) { if (mineOn() && el.hint) el.hint.textContent = '收藏電台：唱片櫃裡星圖上的唱片都沒有試聽'; return; }
+      // 挑不到：符合的是 0 張（唱片櫃空的、跟滾筒疊到 0）就留著 modeHint 那句（教怎麼辦）；有符合的、只是都沒有試聽才換這句
+      if (!c) { if (mineOn() && el.hint && passN > 0) el.hint.textContent = filterActive() ? '收藏電台：唱片櫃裡符合的唱片都沒有試聽' : '收藏電台：唱片櫃裡星圖上的唱片都沒有試聽'; return; }
       if (mineOn()) mineSeen.add(c.i); else { radioSeen.push(c.i); if (radioSeen.length > 200) radioSeen.shift(); }
       travelTo(c, true); }, delay);
   }
@@ -1389,11 +1391,16 @@ html.tune-inapp-lock body{padding-top:120px}
   // 「全部」鍵：三個條件一起歸零
   function resetFilters() { if (!filterActive()) { syncFilterUI?.(); return; } FILT.genre = FILT.grade = FILT.tier = 0; filterChanged(); }
   // stay：不是玩家剛按的（唱片櫃讀回來、收進／刪掉一張）——停在搜尋找來的那張（pinned：?q= 或搜尋框挑的）就留著，只重新上色（遊戲「在頻率光譜找它」帶進來的不被轉走）
-  let pinned = null;
+  //   轉往搜尋那張的路上（?q= 開機一秒後才轉、轉 1–3 秒）唱片櫃才讀回來：previewCard 是路上掃到的別張，照樣不取消、讓它轉到
+  // 不在畫面（結果頁、別的分頁、登出）時變了：只重算、換撥桿字和提示，轉不轉走等回到畫面（start）再說——
+  //   沒變就不檢查（搜尋找來的那張本來就不受篩選限制，回來不該被換走、試聽也不該被切掉）
+  let pinned = null, pendFilt = null;
   function filterChanged(o) {
     computePass(); recolor(); syncFilterUI?.(); syncMineUI();
     if (!state.built) return;
     if (el.mode) setModeUI();
+    if (!state.visible) { pendFilt = { stay: (pendFilt ? pendFilt.stay : true) && !!o?.stay }; return; }
+    if (o?.stay && traveling && pinned && travelDest === pinned) return;
     if (previewCard && (previewCard.egg || passes(previewCard.i) || (o?.stay && previewCard === pinned))) return;
     cancelTravel(); stopPreview(); hideHolo(); clearQueue(); previewCard = null;
     const n = nearest(); if (n) { el.hint.textContent = modeHint(); travelTo(n, true); }
@@ -1419,8 +1426,7 @@ html.tune-inapp-lock body{padding-top:120px}
     MINE = toMineMap(x);
     if (!MINE) FILT.mine = 0; else if (o?.on) FILT.mine = 1;
     mineSeen.clear();
-    if (!state.visible) { computePass(); recolor(); syncFilterUI?.(); syncMineUI(); return; }
-    filterChanged({ stay: !o?.on });
+    filterChanged({ stay: !o?.on });   // 不在畫面時 filterChanged 只重算、換撥桿字（登出後回來不會還寫「收藏」），轉不轉走等回到畫面
   }
   // 結果頁「已在唱片櫃 ×n」：手上有唱片櫃資料就回張數（沒有這張＝0），沒有資料回 null（頁面自己去讀）
   function mineCount(artist, album) { return MINE ? (MINE.get(fnv(idOf(artist, album))) || 0) : null; }
@@ -1753,7 +1759,7 @@ html.tune-inapp-lock body{padding-top:120px}
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
     else { setAudioUI(); el.draw.disabled = !previewCard; hideHolo(); resumeAfterResult();   // 從結果頁回來：全像板重新開機（放大時藏起來了）；同一張不重播
-      if (previewCard && !previewCard.egg && !passes(previewCard.i)) filterChanged(); }   // 不在畫面時唱片櫃變了（例如在唱片櫃頁刪了這張）
+      if (pendFilt) { const o = pendFilt; pendFilt = null; filterChanged(o); } }   // 不在畫面時唱片櫃變了（例如在唱片櫃頁刪了這張）；搜尋找來的那張照 stay 留著
   }
   function stop() { clearTimeout(radioT); backFrom = null; state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
