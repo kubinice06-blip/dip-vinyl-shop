@@ -1338,6 +1338,9 @@
       }
       renderGrid(); mark();
       roomForSheet(s);
+      // 15 張封面比一般面板高：full 鏡頭讓不出那麼多（舞台最矮約 234 px；390×664 會差 18 px 要捲）＝收成對決那條，面板照內容高，不用捲
+      var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight, nat = Math.ceil(naturalH(s) + 4);
+      if (UI.camName !== 'strip' && vh - 32 - nat < 240) cam('strip', 'reward', 380, null, nat);
       // 按住封面＝唱片資訊（放開的那一下不算「選」）
       var lp = null, swallow = false;
       var lpOff = function () { if (lp) { clearTimeout(lp.h); lp = null; } };
