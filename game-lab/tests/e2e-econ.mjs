@@ -636,6 +636,13 @@ async function runIndex(browser, w, h) {
       const gridOk = b.n === 7 && b.g4 && b.id0 === g.radio.id && b.radio0 && !b.others && b.tag === '電台' && b.dot && b.price0 === b.want && b.want >= 800 && b.pt.includes(b.mt);
       // 買電台那張：錢扣原價
       await tapSel(page, `.ec-drawer .ec-tile[data-cid="${b.id0}"]`); await sleep(250);
+      // 選起來的勾（右上）不被電台籤（左上）蓋住：勾的中心點最上面就是勾；兩塊不重疊（375×548 四欄封面 47 px → 電台籤只留色點）
+      const ck = await page.evaluate(id => { const t = document.querySelector(`.ec-drawer .ec-tile[data-cid="${id}"]`), k = t && t.querySelector('.ec-chk'), g = t && t.querySelector('.ec-radio');
+        if (!k || !g) return { ok: false, why: '沒有勾或電台籤' };
+        const a = k.getBoundingClientRect(), b = g.getBoundingClientRect(), top = document.elementFromPoint(a.left + a.width / 2, a.top + a.height / 2), word = g.querySelector('b');
+        return { ok: true, top: !!top && (top === k || k.contains(top)), gap: Math.round(a.left - b.right), tag: Math.round(b.width), tile: Math.round(t.querySelector('.ec-tcv').getBoundingClientRect().width), word: !!word && getComputedStyle(word).display !== 'none' };
+      }, b.id0);
+      const ckOk = ck.ok && ck.top && ck.gap >= 0;
       await tapSel(page, '.ec-drawer [data-a=bbuy]'); await sleep(500);
       const bought = await page.evaluate(id => ({ money: window.__lab.run.money, has: window.__lab.run.bag.includes(id) }), b.id0);
       await tapSel(page, '.ec-drawer [data-a=close]');
@@ -645,14 +652,17 @@ async function runIndex(browser, w, h) {
       const ht2 = await tapHotWhere(page, h => h.id === 'radio');
       await page.waitForSelector('.lb-sheet.radio .rd-cell', { timeout: 8000 }).catch(() => {});
       await sleep(500);
-      const u = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.radio'); return s ? { sub: (s.querySelector('p.sub') || {}).textContent || '', dis: [...s.querySelectorAll('.rd-cell')].every(b => b.disabled) } : null; });
+      const u = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.radio'), R = window.DipLabContent.radio;
+        return s ? { sub: (s.querySelector('p.sub') || {}).textContent || '', dis: [...s.querySelectorAll('.rd-cell')].every(b => b.disabled), toB: !!s.querySelector('[data-a=toBargain]'),
+          gone: ((s.querySelector('.rd-gone') || {}).textContent || '').trim(), want: R.bagged, price: R.price } : null; });
       await jsClick(page, '.lb-sheet.radio [data-a=close]');
-      const usedOk = !!ht2 && u && u.sub.startsWith('這一輪已經轉過了') && u.dis;
+      // 電台那張買走了：不再出「去特價箱看看」、改寫「已經收進包包了。」，也不寫「電台那張照原價。」
+      const usedOk = !!ht2 && u && u.sub.startsWith('這一輪已經轉過了') && u.dis && !u.toB && u.gone === u.want && !u.sub.includes(u.price);
       const errs = page._errors.slice();
-      record(27, size, cellsOk && fit0 && at && spun && gridOk && pok && bought.has && bought.money === b.money - b.want && usedOk && !errs.length,
+      record(27, size, cellsOk && fit0 && at && spun && gridOk && pok && bought.has && bought.money === b.money - b.want && ckOk && usedOk && !errs.length,
         `真點 ${ht.id} → 你在 [${p0.p}]（radio ${JSON.stringify(p0.spot)}）；八格 ${p0.cells.map(c => c.name + (c.dis ? '×' : '')).join(' ')}（格高 ${Math.min(...p0.cells.map(c => c.h))}）；面板在畫面裡 ${fit0}；` +
         `轉 ${pickCell.cell} → ${g.radio && g.radio.id}（特價箱 ${p0.bargain}→${g.n} 張、第一格 ${g.first === (g.radio && g.radio.id)}、面板「${g.got}」）；` +
-        `特價箱 ${b.n} 張 四欄 ${b.g4}、第一格「${b.tag}」色點 ${b.dot}、價 $${b.price0}（原價 $${b.want}，特價會是 $${b.sale}）；${ps}；買 → $${b.money} → $${bought.money}；再點收音機「${u && u.sub}」八格停用 ${u && u.dis}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}`);
+        `特價箱 ${b.n} 張 四欄 ${b.g4}、第一格「${b.tag}」色點 ${b.dot}、價 $${b.price0}（原價 $${b.want}，特價會是 $${b.sale}）；${ps}；選取勾在最上面 ${ck.top}（封面 ${ck.tile}px、電台籤 ${ck.tag}px${ck.word ? '「電台」' : ' 只留色點'}、跟勾隔 ${ck.gap}px）；買 → $${b.money} → $${bought.money}；再點收音機「${u && u.sub}」八格停用 ${u && u.dis}、去特價箱鈕 ${u && u.toB}、「${u && u.gone}」；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}`);
     });
     return true;
   } finally {

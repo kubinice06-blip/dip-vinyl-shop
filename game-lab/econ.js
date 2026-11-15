@@ -89,7 +89,7 @@
   // 那一格的小籤：「● 電台」（色點＝那格頻率；C.radio.tag、C.tunes.colors）
   function radioTagHTML(cell) {
     var T = C().tunes || {}, R = C().radio || {}, col = (T.colors || {})[cell] || '#ccc';
-    return '<span class="ec-radio" title="' + esc(((T.names || {})[cell] || '') + '・' + (R.tag || '')) + '"><i style="--tn:' + esc(col) + '" aria-hidden="true"></i>' + esc(R.tag || '') + '</span>';
+    return '<span class="ec-radio" title="' + esc(((T.names || {})[cell] || '') + '・' + (R.tag || '')) + '"><i style="--tn:' + esc(col) + '" aria-hidden="true"></i><b>' + esc(R.tag || '') + '</b></span>';
   }
   function moneyHTML(n) { return '<span class="ec-money">' + esc(money(n == null ? 0 : n)) + '</span>'; }
   function bagMax() { return (E().CFG && E().CFG.bagMax) || 8; }
@@ -527,6 +527,8 @@
       var t = Math.floor(Math.min((w - 24 - gap * (cols - 1)) / cols - side, cols === 3 ? 104 : 88));
       el.style.setProperty('--ec-tile', t + 'px');
       while (over() && t > 36) { t -= 4; el.style.setProperty('--ec-tile', t + 'px'); }
+      // 封面太窄（375×548 四欄 47 px）：電台籤（約 39 px）會碰到右上的選取勾（18 px）→ 只留色點、不寫字（讀屏字在格子的 aria-label）
+      grid.classList.toggle('ec-narrow', t < 64);
     }
   }
 
