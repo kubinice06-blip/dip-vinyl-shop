@@ -12,6 +12,9 @@
 //   無限試煉 C.trial（SPEC 無限試煉 §0：一輪 5 位的類別＝engine、你 12＝CFG.playerHp、回 3、客人 12／藏家 14、經驗與升級、三選一的字跟數字一致、中繼點、曲線旋鈕齊全）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字（你 12、回 3、客人＝C.trial.guestHp）、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字、
 //   無限試煉的畫面字（C.trial.ui／levelUp／notes、C.summary 結算）。
+//   頻率（v5 第六項第二期）：C.tunes 八格齊全（order／names／colors／label）、每張卡都有 tune 而且在八格內、10 位客人各一個 tune（八格內、每格最多 2 位）、C.radio 的字；
+//     跟主站比（tuneWarnings，走鐘只警告、不擋）：C.tunes 的名字＝data/mood/card-moods.json names、顏色＝dip-tune.js CELL_COLOR、順序＝dip-tune.js ORDER；
+//     每張卡的 tune＝現在的 card-moods.json 判的格（主站每批上架都會重建這份，遊戲是烘焙快照；不一樣就用 bake-cards.mjs --covers-only --no-verify 重烘）。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十六區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
@@ -311,6 +314,7 @@ export function contentProblems(C, E) {
     else ok(Math.max(c.c, c.o, c.h) <= 5, id + ': 一般卡最高 5 星');
   }
   bad.push(...shapeProblems(C, E));
+  bad.push(...tuneProblems(C));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
   for (const id of [...Object.values(C.aces), ...Object.values(C.gifts).flat(), ...C.bargain.pool]) if (CARDS[id]) ok(CARDS[id].pitch, id + ': 缺推薦語（王牌、老闆四張、特價箱）');
   has(C.enemies.man.drop, 'enemies.man.drop');
@@ -631,11 +635,78 @@ export function tutorialProblems(C) {
 }
 
 // ================================================================================================
+// 頻率（v5 第六項第二期）：只上色、不進戰鬥規則。形狀有錯＝擋；跟主站走鐘＝tuneWarnings 只警告
+// ================================================================================================
+const TUNE_CELLS = ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'];
+export function tuneProblems(C) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const T = C.tunes || {};
+  ok(Array.isArray(T.order) && T.order.length === 8 && sameSet(T.order, TUNE_CELLS), 'tunes.order 要剛好是八格（' + TUNE_CELLS.join(' ') + '）');
+  for (const k of TUNE_CELLS) {
+    ok(T.names && typeof T.names[k] === 'string' && T.names[k], 'tunes.names.' + k);
+    ok(T.colors && /^#[0-9a-f]{6}$/i.test(String(T.colors[k] || '')), 'tunes.colors.' + k + ' 要是 #rrggbb');
+  }
+  ok(T.names && Object.keys(T.names).length === 8 && T.colors && Object.keys(T.colors).length === 8, 'tunes.names／colors 只能有八格');
+  ok(typeof T.label === 'string' && T.label && typeof T.guest === 'string' && T.guest && /\{name\}/.test(T.guestAria || ''), 'tunes.label／guest／guestAria（含 {name}）');
+  ok(C.tunesTag === '新', 'C.tunesTag');
+  // 每張卡都有 tune（bake-cards.mjs 的 NO-TUNE 也擋）
+  const CARDS = C.cards || {};
+  const noTune = Object.keys(CARDS).filter(id => !TUNE_CELLS.includes(CARDS[id].tune));
+  ok(!noTune.length, '卡沒有 tune 或不在八格內（' + noTune.length + ' 張，例 ' + noTune.slice(0, 3).join('、') + '）：重跑 bake-cards.mjs --covers-only --no-verify');
+  // 客人常聽頻率：10 位都有、八格內、每格最多 2 位（主線 11-15 裁定）
+  const per = {};
+  for (const [id, e] of Object.entries(C.enemies || {})) {
+    if (ok(TUNE_CELLS.includes(e.tune), 'enemies.' + id + '.tune 要是八格之一（現在 ' + e.tune + '）')) (per[e.tune] = per[e.tune] || []).push(id);
+  }
+  for (const [k, ids] of Object.entries(per)) ok(ids.length <= 2, '客人常聽頻率每格最多 2 位：' + k + ' 有 ' + ids.join('、'));
+  // 收音機的字（ui.js openRadio、econ.js 特價箱那格）：{x} 的佔位要在
+  const R = C.radio || {};
+  const need = { title: [], prompt: [], price: [], got: ['album'], used: [], usedSub: ['name', 'album'], empty: [], later: [], tag: [], toBargain: [] };
+  for (const [k, ph] of Object.entries(need)) ok(typeof R[k] === 'string' && R[k] && ph.every(x => R[k].includes('{' + x + '}')), 'radio.' + k + (ph.length ? '（要有 ' + ph.map(x => '{' + x + '}').join('') + '）' : ''));
+  ok(C.radioTag === '新', 'C.radioTag');
+  ok(!/今晚/.test(Object.values(R).join('')), 'radio 的字寫「這一輪」，不寫「今晚」（11-12 拿掉時間）');
+  return bad;
+}
+// 跟主站比（走鐘只警告）：回傳警告字串陣列；讀不到主站檔也只警告
+export function tuneWarnings(C) {
+  const w = [];
+  const T = C.tunes || {};
+  let moods = null, tuneJs = null;
+  try { moods = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/mood/card-moods.json'), 'utf8')); } catch (e) { w.push('讀不到 ../data/mood/card-moods.json：' + e.message); }
+  try { tuneJs = fs.readFileSync(path.join(ROOT, 'dip-tune.js'), 'utf8'); } catch (e) { w.push('讀不到 ../dip-tune.js：' + e.message); }
+  if (moods && moods.names) for (const k of TUNE_CELLS) if ((T.names || {})[k] !== moods.names[k]) w.push('tunes.names.' + k + '＝' + (T.names || {})[k] + '，主站 card-moods.json 是 ' + moods.names[k]);
+  if (tuneJs) {
+    const cc = /const CELL_COLOR = \{([^}]*)\}/.exec(tuneJs), od = /const ORDER = \[([^\]]*)\]/.exec(tuneJs);
+    if (!cc) w.push('dip-tune.js 找不到 CELL_COLOR（格式變了？）');
+    else for (const [, k, v] of cc[1].matchAll(/(\w+):\s*'(#[0-9a-fA-F]{6})'/g)) if (String((T.colors || {})[k] || '').toLowerCase() !== v.toLowerCase()) w.push('tunes.colors.' + k + '＝' + (T.colors || {})[k] + '，主站 dip-tune.js CELL_COLOR 是 ' + v);
+    if (!od) w.push('dip-tune.js 找不到 ORDER（格式變了？）');
+    else { const o = [...od[1].matchAll(/'(\w+)'/g)].map(m => m[1]); if (JSON.stringify(o) !== JSON.stringify(T.order || [])) w.push('tunes.order＝' + (T.order || []).join(' ') + '，主站 dip-tune.js ORDER 是 ' + o.join(' ')); }
+  }
+  // 每張卡的 tune 跟現在的 card-moods.json 判的格（跟 bake-cards.mjs 同一套：fnv1a32(catalogId)、檔內 thresholds）
+  if (moods && Array.isArray(moods._h) && moods.thresholds) {
+    const fnv = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
+    const M = moods.thresholds, by = new Map(); moods._h.forEach((h, i) => { if (moods.cards[i]) by.set(h, moods.cards[i]); });
+    const cellOf = (x, y, z) => (x >= M.x ? (y >= M.y ? (z >= M.z ? 'boil' : 'charge') : (z >= M.z ? 'lift' : 'crisp')) : (y >= M.y ? (z >= M.z ? 'languid' : 'decay') : (z >= M.z ? 'calm' : 'still')));
+    const drift = [], miss = [];
+    for (const c of Object.values(C.cards || {})) {
+      const m = by.get(fnv((c.artist + '|' + c.album).toLowerCase().replace(/\//g, '-').trim()));
+      if (!m) { miss.push(c.id); continue; }
+      const now = cellOf(m[0], m[1], m[2]); if (now !== c.tune) drift.push(c.id + '（遊戲 ' + c.tune + '、主站現在 ' + now + '）');
+    }
+    if (miss.length) w.push('主站 card-moods.json 現在查不到 ' + miss.length + ' 張（例 ' + miss.slice(0, 3).join('、') + '）：主站改了藝人／專輯名？');
+    if (drift.length) w.push('卡的頻率跟主站現在不一樣 ' + drift.length + ' 張（例 ' + drift.slice(0, 3).join('、') + '）：bake-cards.mjs --covers-only --no-verify 重烘');
+  }
+  return w;
+}
+
+// ================================================================================================
 const isMain = process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
 if (isMain) {
   const C = require(path.join(LAB, 'content.js'));
   const E = require(path.join(LAB, 'engine.js'));
   const bad = contentProblems(C, E);
+  for (const x of tuneWarnings(C)) console.log('  注意（頻率走鐘，只警告）：' + x);
   if (bad.length) { console.log('content 自檢沒過（' + bad.length + '）：'); bad.forEach(b => console.log('  ✗ ' + b)); process.exitCode = 1; }
   else {
     const decks = Object.values(C.enemies).map(e => e.id + ' ' + e.deck.length + '／' + e.hp + '／' + E.deckMain(e.deck.map(id => C.cards[id]), e.taste)).join('、');

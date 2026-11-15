@@ -64,6 +64,37 @@
   C.bargainTag = '新';
 
   // ===================================================================
+  // 頻率（v5 規劃書第六項第二期，店主 11-15「五六全做」）：每張卡的 tune＝主站頻率光譜的八格之一（cards.js 烘焙時從 data/mood/card-moods.json 判格）。
+  //   只上色、不進戰鬥規則（engine 的 outcome／星數不准讀 tune）：對決提示籤前的小圓點（客人常聽頻率）、唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● 暴躁」、收音機轉頻率。
+  //   值照抄主站（check-content 會比對，走鐘只警告）：order＝dip-tune.js ORDER、names＝card-moods.json names、colors＝dip-tune.js CELL_COLOR（店主 10-22 定稿，給深色底設計的：
+  //   遊戲白底上淺色格要靠圓點的 1 px 墨框；不另調色票）。遊戲頁不載 dip-tune.js（3D 星圖＋600 KB 資料）。
+  //   頻率色跟三軸色撞（暴躁≈經典藍、頹靡≈冷門紫、沸騰≈硬蕊紅）：只用小圓點＋中文名，不染字、不染框。
+  // ===================================================================
+  C.tunes = {
+    label: '頻率',                                       // 唱片資訊那一行「頻率 ● 暴躁」（主站結果頁同一個寫法）
+    guest: '常聽',                                       // 客人資訊那一行「常聽 ● 暴躁」
+    guestAria: '常聽頻率：{name}',                        // 提示籤前那顆圓點的讀屏字／title
+    order: ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'],
+    names: { calm: '放鬆', still: '平靜', languid: '恍惚', decay: '頹靡', lift: '雀躍', crisp: '冷冽', boil: '沸騰', charge: '暴躁' },
+    colors: { calm: '#f2cf5b', lift: '#ff9a3c', boil: '#ff4d3a', languid: '#e8578f', still: '#5ee6f0', crisp: '#bfe8ff', charge: '#4f8dff', decay: '#9b6bff' }
+  };
+  C.tunesTag = '新';
+  // 收音機「轉頻率」（第六項第二期；店主 11-15）：兩位客人之間、每輪一次，挑一格頻率，抽一張那格的唱片放進這一輪的特價箱（照原價，不是特價）。{x} 由畫面代入
+  C.radio = {
+    title: '收音機',
+    prompt: '轉一個頻率，抽一張放進這一輪的特價箱。',
+    price: '電台那張照原價。',
+    got: '特價箱多了一張《{album}》。',
+    used: '這一輪已經轉過了。',
+    usedSub: '這一輪轉到{name}：《{album}》',
+    empty: '這個頻率抽不到唱片了。',
+    later: '兩位客人之間才能轉。',
+    tag: '電台',                                         // 特價箱那一格的小籤
+    toBargain: '去特價箱看看'
+  };
+  C.radioTag = '新';
+
+  // ===================================================================
   // 誠實度（D §5：照實出的機率 q）與出招難度（原版 aiPlan 的係數，roguelike.html:3650-3660，拿掉相生與氣勢）
   //   誠實度只在引擎裡用，畫面上不寫任何誠實度的字（店主 2026-11-08 06:05「不用寫什麼提示大多可信 看了很煩」，FIXLIST 6）；
   //   玩家從結果句「他唬你！」自己體會。
@@ -219,11 +250,18 @@
   //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖；只在引擎裡，不上畫面）；無限試煉的出招難度與說真話機率跟著位數走（C.trial.curve）
   //   taste：三軸並列時的順序（只當並列順序）；deck：7 張真唱片（藏家 6 張＋你沒選的那張王牌，由 engine 加；男子 6 張）。無限試煉照位數換牌、加星（engine trialDeck）
   //   line：口頭禪（開場泡泡，= lines[id].line）；drop：序章男子打輸掉出來的那張
+  //   tune：常聽頻率（C.tunes 八格之一；只上色：對決提示籤前的小圓點、客人資訊「常聽」那行；不進戰鬥規則）。主線 11-15 裁定：底牌星數加權多數決
+  //     （每張的權重＝三軸星數總和 c＋o＋h；無限試煉照位數換牌，這裡固定看 deck 底牌，不在執行期重算），並列或撞格人工分散、每格最多 2 位：
+  //       男子 沸騰 13（多數）｜文青同好 恍惚（頹靡 20／雀躍 19／恍惚 18 幾乎三格並列 → 分到沒人的恍惚；Beach House、Weyes Blood 的夢幻感）
+  //       社團學長 冷冽 25（多數）｜音響發燒友 冷冽 40（多數；冷冽滿 2 位）｜二手店老闆 放鬆 55（多數）｜地下樂團吉他手 暴躁 51（多數）
+  //       前衛樂迷 頹靡 28（多數）｜地下廠牌主理人 沸騰（暴躁 24＝冷冽 24 並列、兩格都已滿 2 位 → 第三名沸騰 13）
+  //       資深樂評 暴躁 44（多數；暴躁滿 2 位）｜傳說藏家 雀躍（暴躁 39 第一但撞格：吉他手 71%、樂評 58%、藏家 51% 佔比最低 → 第二名雀躍 25）
+  //     每格人數：沸騰 2、冷冽 2、暴躁 2、放鬆 1、恍惚 1、頹靡 1、雀躍 1、平靜 0。
   // ===================================================================
   C.enemies = {
     man: {
       id: 'man', name: '男子', spr: 'e0', avatar: null,
-      honesty: 'honest', hp: 10, taste: 'coh',
+      honesty: 'honest', hp: 10, taste: 'coh', tune: 'boil',
       // 店主 11-13：掉落的必須是他牌組裡的專輯 → 改成掉 Eminem《The Eminem Show》（原本就在他牌組；Fishmans 不再出現），讓他某一手打出來，打完掉在地上
       deck: ['coldplay-mylo-xyloto', 'imagine-dragons-night-visions', 'limp-bizkit-results-may-vary', '老王樂隊-暮夜徐行',
         'eminem-the-eminem-show', 'katy-perry-prism'],
@@ -232,14 +270,14 @@
     },
     copycat: {
       id: 'copycat', name: '文青同好', spr: 'e1', avatar: null,
-      honesty: 'sometimes', hp: 25, taste: 'och',
+      honesty: 'sometimes', hp: 25, taste: 'och', tune: 'languid',
       deck: ['beach-house-teen-dream', 'weyes-blood-titanic-rising', 'mitski-be-the-cowboy', 'billie-eilish-when-we-all-fall-asleep-where-do-we-go',
         'low-double-negative', 'sophie-oil-of-every-pearl-s-un-insides', '大象體操-elephant-gym-角度'],
       voice: { freq: 523, wave: 'square' }
     },
     already: {
       id: 'already', name: '社團學長', spr: 'e2', avatar: null,
-      honesty: 'sometimes', hp: 20, taste: 'hco',
+      honesty: 'sometimes', hp: 20, taste: 'hco', tune: 'crisp',
       deck: ['don-slepian-sea-of-bliss', 'harold-budd-abandoned-cities', 'demetrio-stratos-metrodora',
         'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des', 'nocturnal-emissions-fruiting-body', 'eivind-aarset-electronique-noire',
         'yezda-urfa-boris'],
@@ -247,14 +285,14 @@
     },
     needle: {
       id: 'needle', name: '音響發燒友', spr: 'e6', avatar: null,
-      honesty: 'sometimes', hp: 25, taste: 'coh',
+      honesty: 'sometimes', hp: 25, taste: 'coh', tune: 'crisp',
       deck: ['steely-dan-gaucho', 'art-pepper-art-pepper-meets-the-rhythm-section', 'bill-evans-waltz-for-debby', 'kenny-burrell-midnight-blue',
         'roscoe-mitchell-sextet-sound', 'john-zorn-cobra', 'andrew-cyrille-what-about'],
       voice: { freq: 587, wave: 'triangle' }
     },
     skip: {
       id: 'skip', name: '二手店老闆', spr: 'e4', avatar: null,
-      honesty: 'sometimes', hp: 20, taste: 'coh',
+      honesty: 'sometimes', hp: 20, taste: 'coh', tune: 'calm',
       deck: ['roberto-goyeneche-cantor-de-mi-barrio', 'amalia-rodrigues-gostava-de-ser-quem-era', 'king-sunny-ade-aura',
         'washington-phillips-the-key-to-the-kingdom', 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri',
         'tony-scott-the-indonesian-all-stars-djanger-bali', 'barney-wilen-moshi'],
@@ -263,7 +301,7 @@
     broke: {
       id: 'broke', name: '地下樂團吉他手', spr: null,
       avatar: { head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' },
-      honesty: 'sometimes', hp: 25, taste: 'och',
+      honesty: 'sometimes', hp: 25, taste: 'och', tune: 'charge',
       deck: ['血肉果汁機-flesh-juicer-golden太子bro', '血肉果汁機-flesh-juicer-深海童話', '閃靈-失竊千年',
         '血肉果汁機-flesh-juicer-血肉宮建宮蓋廟演唱會', '閃靈-永劫輪迴', '閃靈-醒靈寺大決戰', '林強-驚蟄'],
       voice: { freq: 494, wave: 'square' }
@@ -271,28 +309,28 @@
     buyer: {
       id: 'buyer', name: '前衛樂迷', spr: null,
       avatar: { head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' },
-      honesty: 'sometimes', hp: 25, taste: 'coh',
+      honesty: 'sometimes', hp: 25, taste: 'coh', tune: 'decay',
       deck: ['swans-soundtracks-for-the-blind', 'venetian-snares-making-orange-things', 'nurse-with-wound-homotopy-to-marie',
         'ryoji-ikeda-mort-aux-vaches', 'sunn-o-white1', 'sigur-ros-von', 'william-basinski-the-disintegration-loops'],
       voice: { freq: 554, wave: 'square' }
     },
     label: {
       id: 'label', name: '地下廠牌主理人', spr: 'e5', avatar: null,
-      honesty: 'often', hp: 25, taste: 'ohc',
+      honesty: 'often', hp: 25, taste: 'ohc', tune: 'boil',
       deck: ['廢五金-廢五金', '明田川荘之-yamazaki-blues', '菊地雅章-end-for-the-beginning', 'keiji-haino-watashi-dake',
         'harry-roesli-gang-philosophy-gang', 'c-o-b-moyshe-mcstiff-and-the-tartan-lancers-of-the-sacred-he', 'pholas-dactylus-concerto-delle-menti'],
       elite: true, voice: { freq: 294, wave: 'sine' }
     },
     critic: {
       id: 'critic', name: '資深樂評', spr: 'e3', avatar: null,
-      honesty: 'often', hp: 26, taste: 'ohc',
+      honesty: 'often', hp: 26, taste: 'ohc', tune: 'charge',
       deck: ['tim-buckley-starsailor', 'throbbing-gristle-20-jazz-funk-greats', 'black-midi-schlagenheim', 'faust-faust-iv',
         'neu-neu', 'sun-ra-space-is-the-place', 'the-plastic-people-of-the-universe-egon-bondy-s-happy-hearts'],
       elite: true, voice: { freq: 392, wave: 'square' }
     },
     boss: {
       id: 'boss', name: '傳說藏家', spr: 'boss', avatar: null,
-      honesty: 'veteran', hp: 28, taste: 'coh',
+      honesty: 'veteran', hp: 28, taste: 'coh', tune: 'lift',
       deck: ['交工樂隊-我等就來唱山歌', 'ganelin-trio-ancora-da-capo', 'luis-russell-the-luis-russell-story-1929-1934',
         'raw-material-time-is', 'alexander-von-schlippenbach-globe-unity', '裸のラリーズ-the-oz-tapes'],
       boss: true, voice: { freq: 147, wave: 'sine' }
