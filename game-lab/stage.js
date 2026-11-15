@@ -32,6 +32,7 @@
  *   Stage.badge(side, {attr, star, ace}|null, ms?) ; badgeRect(side) → DOMRect|null   頭頂屬性方塊（.ds-badge；方塊在時那人的名牌暫時收起）
  *   Stage.flag('e'|'p'|null, ms) ; burst(x,y,size,color,ms) ; flatDisc(at, attr, o)
  *   Stage.pause(on) ; speed(k) ; seek(t|null) ; clashState() → { items, deck, held, badges, paused, speed, fast }
+ *   Stage.freeze(on)：店景迴圈整個停／恢復（v5 第六項第三期：聆聽室的控制台全螢幕星圖開著時）；Stage.load(layout 物件) 也收（你家：ui.js 塞好唱片架再載）
  *   舊 Stage 相容：anger notes busy dig show foe setSprite actor cls stamp clearStamps unmount
  *
  * 規則：整支包在 IIFE；只掛 window.DipLabStage；讀 dip-character.js 的 avatarRows／PIX_PAL，不宣告同名全域；不碰 localStorage。
@@ -50,7 +51,7 @@
     'q.q1': 'q1', 'q.q2': 'q2'
   };
   // 矮螢幕規則：面板最少要留多高（SPEC-v2 §2）
-  var PANEL_MIN = { title: 130, scene: 150, map: 200, reward: 260, node: 260, end: 260, taipei: 92 };
+  var PANEL_MIN = { title: 130, scene: 150, map: 200, reward: 260, node: 260, end: 260, taipei: 92, home: 120 };
   var CAM_PANEL = { full: 150, scene: 150, map: 200, reward: 260 };
   // 每個畫面舞台上哪些東西可以點（SPEC-v2 §5.4；v4 §2.3.8：scene／duel／reward 也能點箱子，ui.js 決定開抽屜還是老闆說「打完再翻。」）
   var INTERACT = {
@@ -60,7 +61,8 @@
     duel: ['rack:*', 'now', 'owner', 'bin:*'],
     reward: ['bin:*'],
     node: [], none: [],
-    taipei: ['pin-*']
+    taipei: ['pin-*'],
+    home: ['rack:*', 'door', 'shelf', 'deck', 'console']   // 你家（v5 第六項第三期）：牆上唱片（唱片資訊）、門、唱片架、唱盤、控制台
   };
   var layoutCache = {};
 
@@ -622,6 +624,8 @@
         return stage;
       },
       pause: function (on) { TT.paused = !!on; return stage; },
+      // 停／恢復店景迴圈（shop.freeze；聆聽室的控制台蓋滿畫面時）。pause 只停唱盤區的時間軸，這個連店景都不畫
+      freeze: function (on) { if (shop && typeof shop.freeze === 'function') shop.freeze(on !== false); return stage; },
       speed: function (k) { if (k > 0) TT.speedK = k; return stage; },
       // 除錯／截圖：把正在演的時間軸停在 t（ms）。t==null＝放開
       seek: function (t) { if (t == null) { TT.paused = false; return stage; } TT.paused = true; TT.items.forEach(function (x) { x.t = t; }); ttTick(shop.now()); shop.render(); return stage; },
