@@ -718,6 +718,8 @@
 
   const api = {
     init, unlockFromGesture, soundOn, mountToggle, onSound, sfx, sfxNames: () => Object.keys(SFX), blip, rainStart, rainStop, music,
+    // 自己的 AudioContext（v5 第六項第三期：聆聽室的控制台載主站 dip-tune.js，它的轉台音效借這個，不另開一個）
+    audioContext() { try { return ctx(); } catch (_) { return null; } },
     shake, hitStop, flash, floatText, stamp, sparks, encounter, encounter2, bossIntro, reducedMotion, setSpeed, vibrate, setSound,
     get speed() { return S.speed; },
     _state: S,

@@ -27,7 +27,7 @@ const lib = CS.loadLib();
 const cards = CS.loadCards();
 const content = CS.loadContent();
 const read = (f) => JSON.parse(fs.readFileSync(path.join(LAB, 'shops', f), 'utf8'));
-const dip = read('dip.json'), taipei = read('taipei.json'), basement = read('basement.json'), index = read('index.json');
+const dip = read('dip.json'), taipei = read('taipei.json'), basement = read('basement.json'), index = read('index.json'), home = read('home.json');
 const DS = lib.DipShop, KS = dip.spriteScale, PERSON = 16 * KS;
 const propById = id => dip.props.find(p => p.id === id);
 const BINS = CS.loadBins();
@@ -109,7 +109,7 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
 });
 
 section('熱點：id 唯一、本店該有的都有、牆上的唱片可以點', () => {
-  for (const [f, L] of [['dip.json', dip], ['basement.json', basement], ['taipei.json', taipei]]) {
+  for (const [f, L] of [['dip.json', dip], ['basement.json', basement], ['taipei.json', taipei], ['home.json', home]]) {
     const r = CS.checkLayout(L, 'shops/' + f, lib, cards, content);
     eq(r.hotIds.length, new Set(r.hotIds).size, f + ' 熱點 id 唯一');
     eq(r.problems, [], f + ' layout 問題');
@@ -881,11 +881,52 @@ asection('舞台 v4：duelIn 在 shop.route 回 []／null 時不丟錯、照常�
   }
 });
 
+section('你家（聆聽室，v5 第六項第三期）：房間 layout', () => {
+  eq(home.kind, 'room', 'kind:room');
+  eq(home.projection, 'oblique34', '斜俯視（跟本店同一套）');
+  eq(home.size[0], dip.size[0], '跟本店一樣寬（292）：人跟本店一樣大');
+  eq([home.spriteScale, home.pxPerM, home.wallBase], [dip.spriteScale, dip.pxPerM, dip.wallBase], '比例、牆高跟本店一樣');
+  const r = CS.checkLayout(home, 'shops/home.json', lib, cards, content);
+  eq(r.problems, [], 'check-shops 房間分支 0 問題');
+  for (const id of CS.ROOM_HOTS) ok(r.hotIds.includes(id), '房間有熱點 ' + id);
+  for (const k of CS.ROOM_SPOTS) ok(Array.isArray(home.spots[k]), '房間有站位 ' + k);
+  const by = id => home.props.find(p => p.id === id);
+  eq([by('shelf').type, by('shelf').n * by('shelf').rows, by('shelf').fill], ['ledge', 18, 'owned'], '唱片架 6×3＝18 格、fill:owned（執行時塞擁有的）');
+  eq(by('shelf').hot.action, 'shelf:own', '唱片架整面＝分頁面板');
+  eq([by('deck').type, by('deck').hot.action], ['duelDeck', 'deck:play'], '唱盤＝duelDeck、動作 deck:play');
+  eq([by('console').type, by('console').hot.action], ['tuneConsole', 'tune'], '控制台＝tuneConsole、動作 tune');
+  eq([by('door').style, by('door').hot.action], ['home', 'shop:dip'], '門：家門樣子、回本店');
+  ok(!home.props.some(p => p.bin), '房間不放翻箱');
+  ok(!home.props.some(p => /rug/i.test(p.type)), '沒有地毯（店主）');
+  ok(!home.duel && !home.props.some(p => p.type === 'duelfx' || p.type === 'counter'), '沒有對決、沒有櫃檯');
+  // 站位兩兩走得到、每段不穿家具腳下範圍
+  const obs = DS.navObstacles(home), feet = CS.footprints(home, DS.O34.PROPS, null, DS), S = home.spots, ks = Object.keys(S).filter(k => !S[k][2]);
+  for (const a of ks) for (const b of ks) {
+    if (a === b) continue;
+    const rt = CS.routeOf(DS, home, S[a].slice(0, 2), S[b].slice(0, 2), obs);
+    ok(rt && rt.clear && !CS.routeHitsFeet(DS, rt.pts, feet), '房間 ' + a + '→' + b + ' 走得到、不穿家具');
+  }
+  // 店景上的唱片架：塞了卡＝每格一個 rack:<id>（唱片資訊）；空格不出熱點
+  const L2 = JSON.parse(JSON.stringify(home)), ids = Object.keys(cards).filter(id => !cards[id].tier).slice(0, 5);
+  L2.props.find(p => p.id === 'shelf').cards = ids.concat(Array(13).fill(null));
+  const hl = DS.buildHotList(L2, DS.O34.PROPS, { card: id => cards[id] || null }).filter(h => !h.occluder);
+  eq(hl.filter(h => /^rack:/.test(h.id)).map(h => h.id.slice(5)), ids, '擁有 5 張＝唱片架前 5 格有封面熱點，其他空著');
+  ok(hl.some(h => h.id === 'shelf') && hl.some(h => h.id === 'console') && hl.some(h => h.id === 'deck') && hl.some(h => h.id === 'door'), 'buildHotList 有唱片架、控制台、唱盤、門');
+  // 新道具畫得出來（量外框）：控制台比人矮、在畫布裡
+  const sp = DS.O34.PROPS.tuneConsole, bx = sp.box(by('console'));
+  ok(bx[1] >= home.wallBase - 30 && bx[3] < PERSON, '控制台（含桌子）比人矮', bx);
+});
+
 section('index.json 與台北地圖預告', () => {
   eq(index.map, 'shops/taipei.json', 'map');
   eq(index.shops.map(s => s.id + ':' + s.status), ['dip:open', 'basement:debug'], '本店開、地下室只在 debug');
   const pins = taipei.props.filter(p => p.type === 'pin');
-  eq(pins.filter(p => !p.locked).map(p => p.id), ['pin-dip'], '只有本店圖釘開著');
+  // v5 第六項第三期：你家（rooms[]）也開著；圖釘動作＝房間 id，地圖上畫成小房子
+  eq(pins.filter(p => !p.locked).map(p => p.id), ['pin-dip', 'pin-home'], '開著的圖釘：本店與你家');
+  eq((index.rooms || []).map(r => r.id + ':' + r.layout + ':' + r.pin), ['home:shops/home.json:pin-home'], 'index.json rooms＝你家');
+  const ph = pins.find(p => p.id === 'pin-home');
+  ok(ph && ph.hot.action === 'home' && ph.hot.label === '你家' && ph.icon === 'home', '你家的圖釘：動作 home、名牌「你家」、小房子圖示', ph);
+  ok(Array.isArray(taipei.spots.home), '地圖 spots.home');
   ok(pins.filter(p => p.locked).every(p => p.hot.label === '？？？（還沒開）' && p.hot.action === 'locked'), '其他圖釘：？？？（還沒開）');
   ok(taipei.fictional === true, '地圖是示意');
 });

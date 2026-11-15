@@ -193,6 +193,28 @@ await section('老闆熱點的深度跟著他的 y（站到箱子前面就擋住
   ok(ow.gone && pick(hots, ow.rect[0] + 12, ow.rect[1] + 12) !== ow, '藏起來＝gone，點不到');
 });
 
+// 你家（聆聽室，v5 第六項第三期）：唱片架塞了擁有的 5 張（其他空格）；每個熱點看得到的那一塊中心命中自己；封面＝rack:<id>、架子框與名牌＝shelf、控制台螢幕＝console、唱盤 NOW 小窗＝deck、門＝door
+await section('你家：唱片架／唱盤／控制台／門的命中（房間 layout）', () => {
+  const home = CS.readJSON('shops/home.json'), L = JSON.parse(JSON.stringify(home)), own = Object.keys(cards).filter(id => !cards[id].tier).slice(0, 5);
+  const shelf = L.props.find(o => o.id === 'shelf'); shelf.cards = own.concat(Array(shelf.n * shelf.rows - own.length).fill(null));
+  const hots = DS.buildHotList(L, PROPS, S0), F = [0, 0, L.size[0], L.size[1]], r = Math.max(L.fat || 6, Math.ceil(22 / (390 / 292)));
+  const real = hots.filter(h => !h.occluder);
+  eq(real.map(h => h.id).filter(id => !/^rack:/.test(id)).sort(), ['console', 'deck', 'door', 'shelf'], '房間的主熱點');
+  eq(real.filter(h => /^rack:/.test(h.id)).length, 5, '唱片架上 5 張封面各一個子熱點（空格沒有）');
+  for (const h of real) {
+    const R = DS.hotRegion(hots, h, F, true), c = R && DS.regionCenter(R);
+    ok(c, h.id + ' 有看得到的一塊'); if (!c) continue;
+    eq(idOf(DS.hitPick(hots, c.x, c.y, { r })), h.id, h.id + ' 可見區中心命中自己');
+  }
+  const con = L.props.find(o => o.id === 'console'), cx = con.x + Math.floor((con.w - 30) / 2), by = con.y - con.h - con.d + 5;
+  eq(idOf(DS.hitPick(hots, cx + 8, by - 10, { r })), 'console', '控制台的星圖螢幕＝console');
+  const deck = L.props.find(o => o.id === 'deck'), lip = deck.y - deck.h;
+  eq(idOf(DS.hitPick(hots, deck.x + Math.floor(deck.w / 2), lip + 6, { r })), 'deck', '唱盤的 NOW 小窗＝deck');
+  eq(idOf(DS.hitPick(hots, shelf.x + 3 + 6, shelf.y - 6, { r })), 'rack:' + own[0], '唱片架第一格封面＝唱片資訊');
+  eq(idOf(DS.hitPick(hots, shelf.x + 3 + 5 * 14 + 6, shelf.y + 32 - 6, { r })), 'shelf', '唱片架的空格＝整面唱片架（分頁面板）');
+  eq(idOf(DS.hitPick(hots, 24, 50, { r })), 'door', '門');
+});
+
 await section('navRoute：走不到回 null、自己不丟例外', () => {
   const L = { size: [100, 100], props: [], obstacles: [[40, -5, 10, 110]], nav: [[20, 50], [30, 20]] };
   eq(DS.navRoute(L, [10, 50], [90, 50]), null, '整面牆擋住 → null（不再回 [b] 直線穿過去）');
