@@ -25,6 +25,8 @@
 //      看穿的章不疊在提示句上（16 場）；發動那行專輯名太長只截專輯名、能力名看得到、點唱片就收掉；回聲望滿聲望＝「發動」灰掉＋寫原因；
 //      結果句：彈回兩邊都扣寫兩個數字、比星輸王牌免扣不寫「一樣大」、他丟他的王牌補「他的王牌照舊 7 星」（旗標關時這三種都不會出現）；藏家真的丟王牌那手也有那句
 //   10 不開旗標：這份存檔開旗標時挑過的試做卡（記成認識）不會出現在試聽機的清單（試做的 42 張當作不存在）
+//   11 跳過序章（店主 11-16）：新存檔標題有「跳過序章，直接開打」→ 點 → 來客畫面第 1 位、非序章、包包 7 張（送的 4＋特價箱 3）、跳挑王牌面板（15 張）；
+//      挑完回來客；有一趟在打時第一下只變「再按一次…」不換局，第二下才開新的一趟；不開旗標時沒有這顆鈕
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, noScroll, scrollOk, duelReady, tapAt, hitPoint,
   seededContinue, seedRun, watchSay, tapHot, longPress, infoOpen, closeInfo, openTitle, prologueToDuel, advanceUntil } from './e2e-lib.mjs';
@@ -511,6 +513,43 @@ async function runSize(browser, w, h) {
         `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n })}；挑完 ${JSON.stringify(st1)}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
     } catch (e) { record(8, size, false, 'error ' + e.message); }
     await ctx.close();
+  }
+  // ---------------------------------------------------------------- 11：跳過序章、直接玩輔助卡版
+  if (want(11)) {
+    const { ctx, page } = await newPage(browser, w, h); track(page);
+    try {
+      await openTitle(page, QA());
+      const u = await U(page);
+      const has = await C(page, () => { const b = document.querySelector('[data-a=skip]'); return b ? b.textContent : ''; });
+      await tapAt(page, '[data-a=skip]');
+      const night = await waitScreen(page, 'night');
+      const up = await page.waitForSelector('.lb-sheet.apxpick .apx-c', { timeout: 9000 }).then(() => true, () => false);
+      await sleep(400);
+      const p0 = await pickState(page);
+      const r0 = await C(page, () => { const r = window.__lab.run; return { pos: r.pos, pro: !!r.prologue, bag: r.bag.length, picked: !!(r.shop && r.shop.bargainPicked), no: r.runNo }; });
+      await tapAt(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(1300);
+      const after = await C(page, () => ({ scr: window.__lab.screen(), panel: !!document.querySelector('.lb-sheet.apxpick') }));
+      // 有一趟在打：回標題 → 第一下只變字、第二下才換局
+      await openTitle(page, QA());
+      const no1 = await C(page, () => window.__lab.run.runNo);
+      await tapAt(page, '[data-a=skip]'); await sleep(300);
+      const armed = await C(page, () => ({ t: (document.querySelector('[data-a=skip]') || {}).textContent || '', scr: window.__lab.screen() }));
+      await sleep(350);
+      await tapAt(page, '[data-a=skip]');
+      const night2 = await waitScreen(page, 'night');
+      const no2 = await C(page, () => window.__lab.run.runNo);
+      const ok = has.includes(u.skip.replace(' ▸', '')) && night && up && p0 && p0.n === 15 && r0.pos === 1 && !r0.pro && r0.bag === 7 && r0.picked &&
+        after.scr === 'night' && !after.panel && armed.t === u.skipAgain && armed.scr === 'title' && night2 && no2 !== no1;
+      record(11, size, ok && !errs(page).length, `鈕「${has}」；來客 ${night}、面板 ${up} ${p0 && p0.n}；run ${JSON.stringify(r0)}；挑完 ${JSON.stringify(after)}；有一趟時第一下 ${JSON.stringify(armed)}；第二下 ${night2} runNo ${no1}→${no2}；錯誤 ${errs(page).length}`);
+    } catch (e) { record(11, size, false, 'error ' + e.message); }
+    await ctx.close();
+    const o = await newPage(browser, w, h); track(o.page);
+    try {
+      await openTitle(o.page, Q());
+      const n = await C(o.page, () => document.querySelectorAll('[data-a=skip]').length);
+      record(11, size + '/off', n === 0 && !errs(o.page).length, `不開旗標：跳過鈕 ${n} 顆`);
+    } catch (e) { record(11, size + '/off', false, 'error ' + e.message); }
+    await o.ctx.close();
   }
 }
 
