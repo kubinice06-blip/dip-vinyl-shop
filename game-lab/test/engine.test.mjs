@@ -168,6 +168,8 @@ section('1 preview === resolve（10 客人 × 3 王牌 × 400 種子；每一手
 
 // 無限試煉的說真話機率（SPEC §0：舊版虛晃率 oldQ；第 13 位起封底 0.45）——測試自己照 curves.cjs 寫一份，不讀 engine
 const oldQ = d => (d < 3 ? 1 : d < 5 ? 0.85 : 1 - Math.min(0.55, 0.18 + 0.05 * Math.max(0, d - 5)));
+// 放水照位數機率（第 A 波 2，店主 11-16 選 C）：第 1–10 位每手放水；第 11 位起 max(0.2, 0.9 − 0.1×⌊(位−11)/5⌋)——測試自己寫一份
+const mercyPT = d => (d < 11 ? 1 : Math.max(0.2, 0.9 - 0.1 * Math.floor((d - 11) / 5)));
 const mercyOfT = st => { const P = st.p, E = st.e, pR = Math.max(0, P.hp) / (P.max || 1), eR = Math.max(0, E.hp) / (E.max || 1); let m = Math.max(0, eR - pR) * 1.3; if (P.hp <= 3) m += 0.35; return Math.min(1, m); };
 const idsAt = pos => { const c = EN.classAt(pos); return c === 'boss' ? [C.boss] : c === 'elite' ? C.elites : C.normals; };
 section('2 誠實度：無限試煉每一位 q＝舊版虛晃率（mercy 關 ±0.01）；放水：照實率＝Σ qNow（±0.01）；直接開打照 C.honesty；ace／script／headphone 100% 照實；唬人出 BEATS[提示]；王牌不變式', () => {
@@ -214,22 +216,33 @@ section('2 誠實度：無限試煉每一位 q＝舊版虛晃率（mercy 關 ±0
       ok(Math.abs(honest / hands - C.honesty[lv].q) <= 0.012, 'direct duel honest rate ' + lv + ' = ' + C.honesty[lv].q, (honest / hands).toFixed(4));
     }
   } finally { CFG.mercy = true; }
-  // (b) 放水（mercy 開）：這手的 qNow＝1−(1−q)(1−0.8·mercy)（只有 normal／hard）；照實手數＝Σ qNow（±0.01）；你落後時他確實少唬
+  // (b) 放水（mercy 開）：這手的 qNow＝1−(1−q)(1−0.8·mercy·p)（只有 normal／hard；p＝第 11 位起每手放水的機率，第 1–10 位 1）；照實手數＝Σ qNow（±0.01）；你落後時他確實少唬
+  //   第 A 波 2：qNow 是期望值（策略不知道這手有沒有放水）；第 11 位起再看這手真的放水（plan.mercy）的比例 ≈ p，沒放水的手照實率 ≈ q
   for (const pos of POS.filter(p => p >= 3)) {
-    const ids = idsAt(pos), q = oldQ(pos);
-    let hands = 0, honest = 0, sumQ = 0, behind = 0;
+    const ids = idsAt(pos), q = oldQ(pos), pm = mercyPT(pos);
+    let hands = 0, honest = 0, sumQ = 0, behind = 0, on = 0, offH = 0, offHonest = 0;
     for (let s = 1; hands < target / 2; s++) {
       const { duel } = startFor(ids[s % ids.length], TIERS[s % 3], s * 41 + 3 + pos, { pos, hp: 4 + (s % 9), maxHp: 12 });
+      ok(pm < 1 ? duel.e.mercyP === pm && Number.isInteger(duel.e.mercyKey) : !('mercyP' in duel.e) && !('mercyKey' in duel.e), 'duel.e.mercyP only from pos 11 (' + pos + ')');
       const R = lcg(s * 7 + 5);
       while (!duel.over) {
-        const pl = duel.plan, v = EN.view(duel), m = mercyOfT(duel), want = 1 - (1 - q) * (1 - C.trial.curve.mercyFeint * m);
-        if (Math.abs(v.honesty.qNow - want) > 1e-9) ok(false, 'view.honesty.qNow = 1−(1−q)(1−0.8·mercy)', { qNow: v.honesty.qNow, want, m }); else pass++;
-        if (pl.why === 'honest' || pl.why === 'bluff') { hands++; sumQ += want; if (pl.why === 'honest') honest++; if (m > 0) behind++; }
+        const pl = duel.plan, v = EN.view(duel), m = mercyOfT(duel), want = 1 - (1 - q) * (1 - C.trial.curve.mercyFeint * m * pm);
+        if (Math.abs(v.honesty.qNow - want) > 1e-9) ok(false, 'view.honesty.qNow = 1−(1−q)(1−0.8·mercy·p)', { qNow: v.honesty.qNow, want, m, pm }); else pass++;
+        if (pl.why === 'honest' || pl.why === 'bluff') {
+          hands++; sumQ += want; if (pl.why === 'honest') honest++; if (m > 0) behind++;
+          if (pl.mercy) on++; else { offH++; if (pl.why === 'honest') offHonest++; }
+        }
+        if (pm >= 1 && pl.mercy !== true) ok(false, 'pos ≤10: every hand is a mercy hand', pl);
         EN.resolveTurn(duel, EN.policies.random(duel, R));
       }
     }
     ok(Math.abs(honest - sumQ) / hands <= 0.01, 'honest rate (mercy on) at pos ' + pos + ' = mean qNow ± 0.01', { f: (honest / hands).toFixed(4), qNow: (sumQ / hands).toFixed(4) });
     ok(q === 1 || (sumQ / hands > q + 0.01 && behind > hands / 4), 'mercy on: he bluffs less when you are behind (pos ' + pos + ')', { qNow: (sumQ / hands).toFixed(4), q, behind, hands });
+    if (pm < 1) {
+      ok(Math.abs(on / hands - pm) <= 0.02, 'pos ' + pos + ': share of mercy hands ≈ ' + pm + ' ± 0.02', (on / hands).toFixed(4));
+      ok(offH > 200 && Math.abs(offHonest / offH - q) <= 3.5 * Math.sqrt(q * (1 - q) / offH) + 0.005, 'pos ' + pos + ': hands without mercy → honest rate ≈ q (' + q + ', ±3.5σ)', { f: (offHonest / offH).toFixed(4), offH });
+      console.log('     pos ' + pos + ': mercy hands ' + (on / hands).toFixed(3) + ' (p ' + pm + '), honest without mercy ' + (offHonest / offH).toFixed(3) + ' (q ' + q + ')');
+    }
   }
   // 王牌不變式：藏家（第 5、10、15 位）× 3 王牌
   const games = QUICK ? 1500 : 12000;
@@ -1223,7 +1236,8 @@ section('17 從唱片櫃挑牌開局：種子（包包組成、序章不收、�
     eq(rp2.seeds, [], 'prologue:true ignores seeds');
   }
   ok(!EN.canSeed(C, C.aces.hall) && !EN.canSeed(C, 'nope') && EN.canSeed(C, free[0]) && !EN.canSeed(C, null), 'canSeed');
-  // (b) 不能賣回：buy／buyBargain 賣種子 → seedNoSell，run 不動；送的照舊 giftNoSell；拿獎勵包包滿可以拿掉種子（拿掉就不是種子）
+  // (b) 不能賣回換錢（第 A 波 5 起：移出包包只走櫃檯 sell）：buy／buyBargain 順手賣 → counterOnly，run 不動（種子、送的、一般的都一樣）；
+  //     櫃檯 sell 種子＝交還老闆 $0（拿掉就不是種子）；收獎勵時不能順手拿掉（dropId → counterOnly）
   { const sd = [free[3], free[11], free[19]];
     const run = EN.newRun(C, { seedKey: 'sell', runNo: 2, ace: 'pearl', seeds: sd });
     EN.choose(run, C, EN.bargainPolicy(run, C)); run.money = 99999;
@@ -1231,17 +1245,23 @@ section('17 從唱片櫃挑牌開局：種子（包包組成、序章不收、�
     ok(EN.isGift(run, C, G.pearl[0]) && !EN.isGift(run, C, G.pearl[1]), 'isGift = gifts actually placed (+ ace)');
     const key = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid = run.shop.bins[key][0];
     while (run.bag.length < 8) run.bag.push(free.find(id => !run.bag.includes(id) && !Object.values(run.shop.bins).flat().includes(id)));   // 包包 8 張（不限之後照樣：賣種子／送的照擋）
-    for (const id of sd) { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: id }); ok(!r.ok && r.error === 'seedNoSell' && JSON.stringify(run) === before, 'buy selling a seed → seedNoSell, run untouched', r.error); }
-    { const r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: G.pearl[0] }); ok(!r.ok && r.error === 'giftNoSell', 'gift still giftNoSell'); }
+    for (const id of sd) { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: id }); ok(!r.ok && r.error === 'counterOnly' && JSON.stringify(run) === before, 'buy selling a seed → counterOnly (sell at the counter), run untouched', r.error); }
+    { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: G.pearl[0] }); ok(!r.ok && r.error === 'counterOnly' && JSON.stringify(run) === before, 'buy selling a gift → counterOnly'); }
     const BL = run.shop.bargain.slice();
-    if (BL.length) { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buyBargain', ids: [BL[0]], sellIds: [sd[1]] }); ok(!r.ok && r.error === 'seedNoSell' && JSON.stringify(run) === before, 'buyBargain selling a seed → seedNoSell'); }
+    if (BL.length) { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buyBargain', ids: [BL[0]], sellIds: [sd[1]] }); ok(!r.ok && r.error === 'counterOnly' && JSON.stringify(run) === before, 'buyBargain selling a seed → counterOnly'); }
     const plain = run.bag.find(id => !EN.isSeed(run, C, id) && !EN.isGift(run, C, id));
-    { const r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: plain }); ok(r.ok && run.entered.includes(cid) && !run.bag.includes(plain), 'buy selling a normal card works; bought card entered', r.error); }
-    for (const pol of ['none', 'smart']) { const r2 = JSON.parse(JSON.stringify(run)); for (const ch of EN.shopPolicy(r2, C, pol)) ok(!sd.includes(ch.sellId), 'shopPolicy never sells a seed'); }
-    // 拿獎勵：包包滿，拿掉一張種子
+    { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'buy', key, cardId: cid, sellId: plain }); ok(!r.ok && r.error === 'counterOnly' && JSON.stringify(run) === before, 'buy selling a normal card → counterOnly too', r.error); }
+    { const m = run.money, r = EN.choose(run, C, { type: 'buy', key, cardId: cid }); ok(r.ok && run.entered.includes(cid) && run.money === m - EN.priceOf(C, cid), 'buy without selling works; bought card entered', r.error); }
+    for (const pol of ['none', 'smart']) { const r2 = JSON.parse(JSON.stringify(run)); for (const ch of EN.shopPolicy(r2, C, pol)) ok(ch.sellId == null && ch.sellIds == null, 'shopPolicy never sells while buying'); }
+    // 櫃檯交還一張種子：$0、不再是種子
+    { const m = run.money, q = EN.sellQuote(run, C, sd[2]), r = EN.choose(run, C, { type: 'sell', cardId: sd[2] });
+      ok(q.ok && q.earn === 0 && q.reclaim === 'seed' && r.ok && run.money === m && !run.bag.includes(sd[2]) && !run.seeds.includes(sd[2]) && !EN.isSeed(run, C, sd[2]), 'sell a seed at the counter: $0, reclaimed, no longer a seed', { q, r });
+      eq(r.effects, [{ loseCard: sd[2], earn: 0, reclaim: 'seed' }], 'sell a seed: effects say reclaim'); }
+    // 拿獎勵：不能順手拿掉種子（第 A 波 5：移出包包只能去櫃檯）
     run.pending = { type: 'reward', enemyId: 'copycat', prologue: false, pos: 1, cls: 'normal', cards: [free[60]], relics: [], need: 'card', cardDone: false, relicDone: true };
-    const r = EN.choose(run, C, { type: 'take', cardId: free[60], dropId: sd[0] });
-    ok(r.ok && !run.bag.includes(sd[0]) && !run.seeds.includes(sd[0]) && run.seeds.length === 2 && run.entered.includes(free[60]), 'take dropping a seed: allowed, no longer a seed', r.error); }
+    { const before = JSON.stringify(run), r = EN.choose(run, C, { type: 'take', cardId: free[60], dropId: sd[0] }); ok(!r.ok && r.error === 'counterOnly' && JSON.stringify(run) === before, 'take dropping a seed → counterOnly, run untouched', r.error); }
+    const r = EN.choose(run, C, { type: 'take', cardId: free[60] });
+    ok(r.ok && run.bag.includes(sd[0]) && run.seeds.includes(sd[0]) && run.seeds.length === 2 && run.entered.includes(free[60]), 'take without dropping: seeds stay', r.error); }
   // (c) 掉落＝他這一場的實際牌單（trialDeck 換牌、加星後；王牌不掉）；run.drops 記獎勵候選（沒拿的也算）；序章男子那張不算
   { let checked = 0;
     for (let s = 1; s <= (QUICK ? 6 : 20); s++) {
@@ -1250,7 +1270,7 @@ section('17 從唱片櫃挑牌開局：種子（包包組成、序章不收、�
       const offered = [];
       for (let g = 0; g < 12 && !run.over; g++) {
         const id = run.order[run.idx], pos = run.pos;
-        const td = EN.trialDeck(C, id, pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier });
+        const td = EN.trialDeck(C, id, pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier, main: EN.mainAt(run, C, pos) });   // 第 A 波 6：照主屬性組的那副
         const deckIds = td.deck.map(c => c.id);
         const res = forceWin(run);
         ok(res.win, 'won');
@@ -1492,10 +1512,10 @@ section('19 收音機轉頻率（v5 第六項第二期）：時機（canShop、�
     { const r2 = JSON.parse(JSON.stringify(run)); r2.bag = r2.bag.slice(0, 4); r2.money = P - 1; untouched(r2, () => EN.choose(r2, C, { type: 'buyBargain', ids: [id] }), 'noMoney', 'radio card short by 1 → noMoney'); }
     { const r2 = JSON.parse(JSON.stringify(run)); r2.bag = r2.bag.slice(0, 4); r2.money = P; const res = EN.choose(r2, C, { type: 'buyBargain', ids: [id] });
       ok(res.ok && r2.money === 0 && r2.bag.includes(id) && !r2.shop.bargain.includes(id) && res.effects[0].spend === P, 'buy radio card at full price', res);
-      // 賣回（買箱子時順便賣）：拿回半價
-      const key = Object.keys(r2.shop.bins).find(k => r2.shop.bins[k].length), cid = r2.shop.bins[key][0]; r2.money = 5000; while (r2.bag.length < 8) r2.bag.push(Object.keys(C.cards).find(x => !C.cards[x].tier && !r2.bag.includes(x) && x !== cid && x !== id));
-      const m = r2.money, rs = EN.choose(r2, C, { type: 'buy', key, cardId: cid, sellId: id });
-      ok(rs.ok && r2.money === m + P / 2 - EN.priceOf(C, cid), 'radio card sells back at half (P/2)', rs); }
+      // 賣回（第 A 波 5：去櫃檯賣給老闆）：拿回半價
+      r2.money = 5000; while (r2.bag.length < 8) r2.bag.push(Object.keys(C.cards).find(x => !C.cards[x].tier && !r2.bag.includes(x) && x !== id));
+      const m = r2.money, rs = EN.choose(r2, C, { type: 'sell', cardId: id });
+      ok(rs.ok && r2.money === m + P / 2 && rs.effects[0].earn === P / 2 && !rs.effects[0].reclaim, 'radio card sells back at half (P/2) at the counter', rs); }
     { const r2 = JSON.parse(JSON.stringify(run)); r2.bag = r2.bag.slice(0, 4); r2.money = 99999; const each = [P, EN.bargainPriceOf(C, other)];
       const res = EN.choose(r2, C, { type: 'buyBargain', ids: [id, other] });
       ok(res.ok && r2.money === 99999 - each[0] - each[1] && res.effects.map(f => f.spend).join() === each.join(), 'radio + bargain card: each priced on its own', res); } }
@@ -1924,7 +1944,7 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     ok(!/"sellId"/.test(REF), 'unlimited shopPolicy never attaches sellId');
     try { for (const v of [null, 0, -1, undefined]) { CFG.bagMax = v; ok(shopAll() === REF, 'bagMax ' + v + '：shopPolicy／runPolicy ＝ Infinity（不強迫賣）'); } }
     finally { CFG.bagMax = B0; } }
-  // (b) 收第 9、第 20 張不用丟；dropId 可給可不給
+  // (b) 收第 9、第 20 張不用丟；dropId 不收了（第 A 波 5：收獎勵時不能順手丟，移出包包只能去櫃檯 → 'counterOnly'）
   { const run = picked('b21-take'); let n = run.bag.length, taken = run.taken;
     eq(n, 7, 'start: 4 gifts + 3 bargain');
     for (let k = 0; n < 21 && k < 60; k++) {
@@ -1935,34 +1955,40 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
       n = run.bag.length; taken = run.taken;
     }
     offer(run, [NONB[40]]);
-    untouched(run, { type: 'take', cardId: NONB[40], dropId: 'nope' }, 'badDrop', 'take with a dropId not in the bag');
-    untouched(run, { type: 'take', cardId: NONB[40], dropId: NONB[40] }, 'badDrop', 'take dropping the card itself');
-    const drop = run.bag[6], r = EN.choose(run, C, { type: 'take', cardId: NONB[40], dropId: drop });
-    ok(r.ok && run.bag.length === n && !run.bag.includes(drop) && run.bag.includes(NONB[40]) && r.effects[0].loseCard === drop, 'take with dropId still drops it (optional; no money)', r); }
-  // (c) 買唱片／特價箱不用賣；給了照賣；多賣也行（不限時）；賣完不能少於 5 張
+    untouched(run, { type: 'take', cardId: NONB[40], dropId: 'nope' }, 'counterOnly', 'take with a dropId not in the bag');
+    untouched(run, { type: 'take', cardId: NONB[40], dropId: NONB[40] }, 'counterOnly', 'take dropping the card itself');
+    untouched(run, { type: 'take', cardId: NONB[40], dropId: run.bag[6] }, 'counterOnly', 'take with a dropId in the bag (no dropping while taking a reward)');
+    const r = EN.choose(run, C, { type: 'take', cardId: NONB[40] });
+    ok(r.ok && run.bag.length === n + 1 && run.bag.includes(NONB[40]) && !r.effects.some(e => e.loseCard), 'take without dropId still works', r); }
+  // (c) 買唱片／特價箱不用賣；第 A 波 5：順手賣（sellId／sellIds）→ 'counterOnly'（錢不夠＝'noMoney'，去櫃檯賣）；櫃檯賣完不能少於 5 張
   { const run = picked('b21-buy'); run.money = 99999; run.bag = run.bag.concat(NONB.slice(100, 110));
     const key = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid = run.shop.bins[key][0], n = run.bag.length, m = run.money;
     const r = EN.choose(run, C, { type: 'buy', key, cardId: cid });
     ok(r.ok && run.bag.length === n + 1 && run.money === m - EN.priceOf(C, cid) && r.effects.length === 1, 'buy into a ' + n + '-card bag without selling', r);
-    const key2 = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid2 = run.shop.bins[key2][0], sell = NONB[100], m2 = run.money;
-    const r2 = EN.choose(run, C, { type: 'buy', key: key2, cardId: cid2, sellId: sell });
-    ok(r2.ok && !run.bag.includes(sell) && run.bag.length === n + 1 && run.money === m2 + EN.sellValue(C, card(sell)) - EN.priceOf(C, cid2), 'buy with a voluntary sellId: one for one', r2);
+    const key2 = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length), cid2 = run.shop.bins[key2][0], sell = NONB[100];
+    untouched(run, { type: 'buy', key: key2, cardId: cid2, sellId: sell }, 'counterOnly', 'buy with a sellId (sell at the counter instead)');
+    { const r2 = JSON.parse(JSON.stringify(run)); r2.money = EN.priceOf(C, cid2) - 1; untouched(r2, { type: 'buy', key: key2, cardId: cid2, sellId: sell }, 'counterOnly', 'buy short of money with a sellId → counterOnly (not a way to sell)');
+      untouched(r2, { type: 'buy', key: key2, cardId: cid2 }, 'noMoney', 'buy short of money → noMoney (go sell at the counter)');
+      const v = EN.sellValue(C, card(sell)); ok(EN.choose(r2, C, { type: 'sell', cardId: sell }).ok && r2.money === EN.priceOf(C, cid2) - 1 + v, 'sell at the counter first');
+      ok(EN.choose(r2, C, { type: 'buy', key: key2, cardId: cid2 }).ok && r2.money === v - 1, 'then buy (two separate actions)'); }
     const BL = run.shop.bargain.slice(), n3 = run.bag.length, m3 = run.money;
     const r3 = EN.choose(run, C, { type: 'buyBargain', ids: BL.slice(0, 2) });
     ok(r3.ok && run.bag.length === n3 + 2 && run.money === m3 - EN.bargainPriceOf(C, BL[0]) - EN.bargainPriceOf(C, BL[1]), 'buyBargain 2 into a big bag, no sells', r3);
     const sells = [NONB[101], NONB[102], NONB[103]], n4 = run.bag.length, m4 = run.money;
-    untouched(run, { type: 'buyBargain', ids: [BL[2]], sellIds: [NONB[101], NONB[101]] }, 'badSell', 'buyBargain duplicate sells');
-    untouched(run, { type: 'buyBargain', ids: [BL[2]], sellIds: [NONB[101], C.gifts.hall[0]] }, 'giftNoSell', 'buyBargain selling a gift');
-    const r4 = EN.choose(run, C, { type: 'buyBargain', ids: [BL[2]], sellIds: sells });
-    ok(r4.ok && run.bag.length === n4 + 1 - 3 && sells.every(id => !run.bag.includes(id)) && run.money === m4 - EN.bargainPriceOf(C, BL[2]) + sells.reduce((t, id) => t + EN.sellValue(C, card(id)), 0), 'buyBargain 1 with 3 voluntary sells (bag shrinks by 2)', r4);
-    // 賣完不能少於 5 張：送的 4 張不能賣，所以只有送的被拿掉過（舊規則 take 的 dropId 可以拿掉送的）才碰得到。2 張送的＋4 張一般＝6 張
+    untouched(run, { type: 'buyBargain', ids: [BL[2]], sellIds: [NONB[101], NONB[101]] }, 'counterOnly', 'buyBargain duplicate sells');
+    untouched(run, { type: 'buyBargain', ids: [BL[2]], sellIds: [NONB[101], C.gifts.hall[0]] }, 'counterOnly', 'buyBargain selling a gift');
+    untouched(run, { type: 'buyBargain', ids: [BL[2]], sellIds: sells }, 'counterOnly', 'buyBargain with 3 sells');
+    const r4 = EN.choose(run, C, { type: 'buyBargain', ids: [BL[2]], sellIds: [] });
+    ok(r4.ok && run.bag.length === n4 + 1 && run.money === m4 - EN.bargainPriceOf(C, BL[2]), 'buyBargain with sellIds [] is fine (nothing sold)', r4);
+    // 櫃檯賣完不能少於 5 張（送的現在也能交還）：2 張送的＋4 張一般＝6 張 → 賣 1 張剩 5 → 再賣 → bagMin（送的、一般的都一樣）
     const small = picked('b21-min'); small.money = 99999;
-    const SB = small.shop.bargain.slice(), plain = NONB.slice(190, 194);
+    const plain = NONB.slice(190, 194);
     small.bag = small.gifts.slice(0, 2).concat(plain);
-    untouched(small, { type: 'buyBargain', ids: [SB[0]], sellIds: plain }, 'bagMin', 'buyBargain 1 selling 4 of 6 → 3 left → bagMin');
-    untouched(small, { type: 'buyBargain', ids: [SB[0]], sellIds: plain.slice(0, 3) }, 'bagMin', 'buyBargain 1 selling 3 of 6 → 4 left → bagMin');
-    ok(EN.choose(small, C, { type: 'buyBargain', ids: [SB[0]], sellIds: plain.slice(0, 2) }).ok && small.bag.length === 5, 'buyBargain 1 selling 2 of 6 → 5 left → ok'); }
-  // (d) sell {cardId}：單獨賣回
+    ok(EN.choose(small, C, { type: 'sell', cardId: plain[0] }).ok && small.bag.length === 5, 'sell 1 of 6 → 5 left → ok');
+    untouched(small, { type: 'sell', cardId: plain[1] }, 'bagMin', 'sell at 5 → bagMin');
+    untouched(small, { type: 'sell', cardId: small.gifts[0] }, 'bagMin', 'hand back a gift at 5 → bagMin');
+    eq(EN.sellQuote(small, C, plain[1]), { ok: false, error: 'bagMin' }, 'sellQuote says bagMin too'); }
+  // (d) sell {cardId}：櫃檯賣給老闆（第 A 波 5：送的、種子也能交還，$0）
   { const run = EN.newRun(C, { seedKey: 'b21-sell', runNo: 2, ace: 'pearl', seeds: [NONB[210]] });
     untouched(run, { type: 'sell', cardId: run.bag[0] }, 'notNow', 'sell before the bargain pick');
     EN.choose(run, C, EN.bargainPolicy(run, C));
@@ -1971,19 +1997,25 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     untouched(run, { type: 'sell', cardId: 'nope' }, 'badSell', 'sell unknown card');
     untouched(run, { type: 'sell', cardId: NONB[213] }, 'badSell', 'sell a card not in the bag');
     untouched(run, { type: 'sell', cardId: C.aces.pearl }, 'badSell', 'sell the ace (not in the bag)');
-    untouched(run, { type: 'sell', cardId: run.gifts[0] }, 'giftNoSell', 'sell a gift');
-    untouched(run, { type: 'sell', cardId: NONB[210] }, 'seedNoSell', 'sell a seed');
+    { const r2 = JSON.parse(JSON.stringify(run)), g = r2.gifts[0], m = r2.money, q = EN.sellQuote(r2, C, g), r = EN.choose(r2, C, { type: 'sell', cardId: g });
+      ok(q.ok && q.earn === 0 && q.reclaim === 'gift' && r.ok && r2.money === m && !r2.bag.includes(g) && !r2.gifts.includes(g) && !EN.isGift(r2, C, g) && r2.stats.sold.includes(g), 'hand a gift back: $0, no longer a gift', { q, r });
+      eq(r.effects, [{ loseCard: g, earn: 0, reclaim: 'gift' }], 'hand a gift back: effects'); }
+    { const r2 = JSON.parse(JSON.stringify(run)), m = r2.money, r = EN.choose(r2, C, { type: 'sell', cardId: NONB[210] });
+      ok(r.ok && r2.money === m && !r2.seeds.includes(NONB[210]) && !r2.bag.includes(NONB[210]), 'hand a seed back: $0, no longer a seed', r);
+      eq(r.effects, [{ loseCard: NONB[210], earn: 0, reclaim: 'seed' }], 'hand a seed back: effects'); }
     { const r2 = JSON.parse(JSON.stringify(run)); r2.pending = { type: 'retry', enemyId: 'copycat', free: false }; untouched(r2, { type: 'sell', cardId: NONB[211] }, 'notNow', 'sell while a choice is pending'); }
+    { const r2 = JSON.parse(JSON.stringify(run)); offer(r2, [NONB[214]]); untouched(r2, { type: 'sell', cardId: NONB[211] }, 'notNow', 'sell while taking a reward (no dropping on the way)'); eq(EN.sellQuote(r2, C, NONB[211]), { ok: false, error: 'notNow' }, 'sellQuote notNow while a reward waits'); }
+    { const r2 = JSON.parse(JSON.stringify(run)); r2.duel = {}; untouched(r2, { type: 'sell', cardId: NONB[211] }, 'notNow', 'sell during a duel'); }
     const m = run.money, n = run.bag.length, ent = run.entered.slice(), r = EN.choose(run, C, { type: 'sell', cardId: NONB[211] });
     ok(r.ok && run.money === m + EN.sellValue(C, card(NONB[211])) && run.bag.length === n - 1 && run.stats.sold.includes(NONB[211]) && JSON.stringify(run.entered) === JSON.stringify(ent), 'sell: half price, bag −1, stats.sold, entered untouched', r);
     eq(r.effects, [{ loseCard: NONB[211], earn: EN.sellValue(C, card(NONB[211])) }], 'sell effects');
     const m2 = run.money; ok(EN.choose(run, C, { type: 'sell', cardId: ret }).ok && run.money === m2 + Math.floor(EN.bargainPriceOf(C, ret) / 2), 'retired bargain card sells at half its bargain price (no profit for old saves)');
-    for (let g = 0; g < 40 && run.bag.filter(id => !EN.isGift(run, C, id) && !EN.isSeed(run, C, id)).length && run.bag.length > CFG.handSize; g++) {
-      const x = run.bag.find(id => !EN.isGift(run, C, id) && !EN.isSeed(run, C, id)); ok(EN.choose(run, C, { type: 'sell', cardId: x }).ok, 'sell down', x);
+    for (let g = 0; g < 40 && run.bag.length > CFG.handSize; g++) {
+      const x = run.bag[run.bag.length - 1], q = EN.sellQuote(run, C, x), m = run.money, r = EN.choose(run, C, { type: 'sell', cardId: x });
+      ok(q.ok && r.ok && run.money === m + q.earn, 'sell down (sellQuote = what you get)', { x, q });
     }
     eq(run.bag.length, CFG.handSize, 'sold down to 5 (hand size)');
-    const last = run.bag.find(id => !EN.isGift(run, C, id) && !EN.isSeed(run, C, id));
-    if (last) untouched(run, { type: 'sell', cardId: last }, 'bagMin', 'sell the 6th-to-last → bagMin (keep ≥5 for a full hand)'); else pass++; }
+    for (const last of run.bag) untouched(run, { type: 'sell', cardId: last }, 'bagMin', 'sell at 5 → bagMin (keep ≥5 for a full hand)'); }
   // (e) 開局挑三張、收音機：包包再大都不會 bagFull
   { const r = EN.newRun(C, { seedKey: 'b21-pick', runNo: 2, ace: 'heresy' }); r.bag = r.bag.concat(NONB.slice(150, 180));
     ok(EN.choose(r, C, EN.bargainPolicy(r, C)).ok && r.bag.length === 37, 'bargainPick into a 34-card bag');
@@ -2057,7 +2089,8 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     const run = picked('b21-score'); const weak = C.bargain.pool.find(id => !run.bag.includes(id) && EN.power(card(id)) === 4);
     run.bag = run.bag.concat(NONB.filter(id => EN.peak(card(id)) >= 5 && EN.power(card(id)) >= 12).slice(0, 8));
     ok(EN.bagGain(run, C, weak) < 0, 'adding a weak bargain card to a strong bag dilutes it', EN.bagGain(run, C, weak)); }
-  // (j) 策略：runPolicy 不給 dropId、只拿會漲的、拿漲最多的；shopPolicy 不賣（買的時候）；thinPolicy 只賣排不進前 5 的、不賣送的／種子、剩 5 張停
+  // (j) 策略：runPolicy 不給 dropId、只拿會漲的、拿漲最多的；shopPolicy 不賣（買的時候）；thinPolicy 只賣排不進前 5 的、剩 5 張停；
+  //     第 A 波 5：送的／種子也會交還（$0），但先賣有錢拿的
   { let takes = 0, skips = 0;
     for (let s = 0; s < 40; s++) {
       const run = picked('b21-pol-' + s, TIERS[s % 3]); run.bag = run.bag.concat(NONB.filter((id, k) => (k * 7 + s) % 41 === 0).slice(0, s % 12));
@@ -2070,22 +2103,26 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
       else { skips++; ok(ch.type === 'skip' && best <= 0.005, 'runPolicy skips only when nothing helps', { ch, gains }); }
     }
     ok(takes > 0 && skips > 0, 'runPolicy both takes and skips', [takes, skips]);
-    let sold = 0, shops = 0;
+    let sold = 0, shops = 0, reclaimed = 0;
     for (let s = 0; s < 40; s++) {
       const run = picked('b21-shop-' + s, TIERS[s % 3], { seeds: s % 2 ? [NONB[250 + s]] : [] }); run.money = 50000;
       run.bag = run.bag.concat(NONB.filter((id, k) => (k * 11 + s) % 23 === 0 && !run.bag.includes(id)).slice(0, 10));
       const chs = EN.shopPolicy(run, C, 'smart'); shops++;
       for (const ch of chs) {
         if (ch.type === 'buy' || ch.type === 'buyBargain') ok(ch.sellId == null && ch.sellIds == null, 'shopPolicy buys without selling when unlimited', ch);
-        if (ch.type === 'sell') { sold++; ok(!EN.isGift(run, C, ch.cardId) && !EN.isSeed(run, C, ch.cardId), 'thin never sells gifts／seeds', ch); }
-        const b = run.bag.slice(), r = EN.choose(run, C, ch); ok(r.ok, 'shopPolicy choice ok', { ch, err: r.error });
-        if (ch.type === 'sell') { const c = card(ch.cardId); ok(ATTRS.every(a => b.filter(x => x !== ch.cardId && card(x)[a] >= c[a]).length >= CFG.handSize), 'thin sells only dead weight (≥5 others ≥ it on every axis)', ch); }
+        const b = run.bag.slice(), free = ch.type === 'sell' && (EN.isGift(run, C, ch.cardId) || EN.isSeed(run, C, ch.cardId));
+        if (ch.type === 'sell') { sold++; if (free) { reclaimed++; const dead = x => ATTRS.every(a => b.filter(y => y !== x && card(y)[a] >= card(x)[a]).length >= CFG.handSize);
+          ok(!b.some(x => x !== ch.cardId && !EN.isGift(run, C, x) && !EN.isSeed(run, C, x) && dead(x)), 'thin hands back a gift／seed only after the paid dead weight is gone', ch); } }
+        const r = EN.choose(run, C, ch); ok(r.ok, 'shopPolicy choice ok', { ch, err: r.error });
+        if (ch.type === 'sell') { const c = card(ch.cardId); ok(ATTRS.every(a => b.filter(x => x !== ch.cardId && card(x)[a] >= c[a]).length >= CFG.handSize), 'thin sells only dead weight (≥5 others ≥ it on every axis)', ch);
+          ok(!!r.effects[0].reclaim === free && (free ? r.effects[0].earn === 0 : r.effects[0].earn > 0), 'thin: gifts／seeds go back for $0, others for money', r.effects); }
       }
       ok(run.bag.length >= CFG.handSize, 'bag ≥ 5 after the shop');
       const r2 = picked('b21-shop-' + s, TIERS[s % 3]); r2.money = 50000; r2.bag = run.bag.slice();
       ok(!EN.shopPolicy(r2, C, 'smart', { thin: false }).some(ch => ch.type === 'sell'), 'shopPolicy {thin:false} never sells');
     }
     ok(sold > 0, 'thinPolicy sold something across 40 shops', sold);
+    console.log('     thinPolicy over 40 shops: sold ' + sold + ' (handed back ' + reclaimed + ' gifts／seeds)');
     // 有上限（--set bagMax=8）：runPolicy 照舊，滿了換掉最弱那張
     const B0 = CFG.bagMax;
     try { CFG.bagMax = 8; const run = picked('b21-lim'); run.bag.push(NONB[0]); const strong = NONB.find(id => EN.power(card(id)) >= 13 && EN.peak(card(id)) === 5); offer(run, [strong]);
@@ -2111,6 +2148,168 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     }
     ok(maxBag > 8, 'unlimited bag actually grows past 8 in real runs', maxBag);
     console.log('     biggest bag in 24 runs: ' + maxBag); }
+});
+
+section('22 第 A 波（店主 11-16）：放水照位數機率（可重現、不碰對決亂數）、稱號每 2 位、客人主屬性（一輪三色、牌組照主屬性、出牌比例）、櫃檯賣給老闆（送的／種子 $0、sellQuote、counterOnly）', () => {
+  const untouched = (run, ch, code, name) => { const b = JSON.stringify(run), r = EN.choose(run, C, ch); ok(!r.ok && r.error === code && JSON.stringify(run) === b, name + ' → ' + code, r); };
+  // (a) 放水機率：第 1–10 位 1；第 11–15 位 .9、16–20 位 .8 … 第 46 位起 .2；content＝engine 預設；難度階梯可以覆寫
+  { const NOC = Object.assign({}, C, { trial: undefined });
+    let bad = 0;
+    for (let d = 1; d <= 200; d++) { const w = mercyPT(d); if (Math.abs(EN.mercyPAt(C, d) - w) > 1e-9 || Math.abs(EN.mercyPAt(NOC, d) - w) > 1e-9) { if (bad++ < 5) ok(false, 'mercyPAt(' + d + ') = ' + w, [EN.mercyPAt(C, d), EN.mercyPAt(NOC, d)]); } else pass++; }
+    eq([10, 11, 15, 16, 20, 21, 41, 45, 46, 300].map(d => EN.mercyPAt(C, d)), [1, 0.9, 0.9, 0.8, 0.8, 0.7, 0.3, 0.3, 0.2, 0.2], 'mercyPAt: 10→1, 11–15 .9, 16–20 .8, 21 .7, 41–45 .3, 46+ .2');
+    const C2 = Object.assign({}, C, { trial: Object.assign({}, C.trial, { tiers: [{ curve: { mercyP: { from: 6, p0: 0.5 } } }] }) });
+    eq([EN.mercyPAt(C2, 5, 1), EN.mercyPAt(C2, 6, 1), EN.mercyPAt(C2, 11, 1), EN.mercyPAt(C2, 6, 0)], [1, 0.5, 0.4, 1], 'tier override of mercyP (partial)');
+    for (let d = 1; d <= 30; d++) { const e = EN.enemyDef(C, 'skip', { pos: d, seedKey: 'mp', runNo: 1, playerAce: 'hall', bossAce: 'pearl' }); ok(d < 11 ? !('mercyP' in e) : e.mercyP === mercyPT(d), 'enemyDef.mercyP only from pos 11 (' + d + ')'); }
+    ok(!('mercyP' in EN.enemyDef(C, 'skip', {})) && !('mercyP' in EN.enemyDef(C, 'man', { tutorial: true })), 'no mercyP for direct duels／the prologue'); }
+  // (b) 放水的判斷：雜湊（對決種子＋第幾手），同種子同結果；不取 duel.rng；mercyP 0＝CFG.mercy false、mercyP 1＝沒有這欄（舊行為）
+  { let same = 0, diffSeed = 0;
+    const count = d => { const c = JSON.parse(JSON.stringify(d)); c.plan = null; c.n--; const b = c.rng; EN.beginHand(c, []); return rngCalls(b, c.rng); };
+    for (let s = 1; s <= 120; s++) {
+      const o = { pos: 11 + (s % 40), eOver: { mercyP: 0.5 } };
+      const a = startFor('critic', TIERS[s % 3], s * 17, o).duel, b = startFor('critic', TIERS[s % 3], s * 17, o).duel, c = startFor('critic', TIERS[s % 3], s * 17 + 1, o).duel;
+      ok(a.e.mercyP === 0.5 && a.e.mercyKey === ((s * 17) >>> 0), 'e.mercyKey = the duel seed');
+      const R1 = lcg(s), R2 = lcg(s), seqA = [], seqB = [];
+      while (!a.over) { if (count(a) !== 8) ok(false, 'mercy gate takes no RNG (8 per hand)'); else pass++; seqA.push(a.plan.mercy); EN.resolveTurn(a, EN.policies.random(a, R1)); }
+      while (!b.over) { seqB.push(b.plan.mercy); EN.resolveTurn(b, EN.policies.random(b, R2)); }
+      if (JSON.stringify(seqA) === JSON.stringify(seqB)) same++;
+      if (c.plan.mercy !== seqA[0]) diffSeed++;                    // 第 1 手：換一個種子，有沒有放水跟著變（p .5）
+    }
+    eq(same, 120, 'same seed → same mercy hands');
+    ok(diffSeed > 20, 'another seed → other mercy hands', diffSeed);
+    // mercyP 0 ≡ CFG.mercy false；mercyP 1 ≡ 舊的（沒有這兩欄）
+    let eq0 = 0, eq1 = 0;
+    for (let s = 1; s <= 150; s++) {
+      const pos = 12 + (s % 30), id = ['skip', 'critic', 'boss'][s % 3], tier = TIERS[s % 3];
+      const z = startFor(id, tier, s * 29, { pos: posFor(id, s) + 15, eOver: { mercyP: 0 } }).duel;
+      let off; try { CFG.mercy = false; off = startFor(id, tier, s * 29, { pos: posFor(id, s) + 15 }).duel; } finally { CFG.mercy = true; }
+      const R1 = lcg(s), R2 = lcg(s); let g = 0;
+      while (!z.over && g++ < 12) { const act = EN.policies.random(z, R1); EN.resolveTurn(z, act); }
+      try { CFG.mercy = false; g = 0; while (!off.over && g++ < 12) EN.resolveTurn(off, EN.policies.random(off, R2)); } finally { CFG.mercy = true; }
+      if (JSON.stringify(z.log) === JSON.stringify(off.log)) eq0++;
+      const one = startFor(id, tier, s * 31, { pos: 7, eOver: { mercyP: 1 } }).duel, old = startFor(id, tier, s * 31, { pos: 7 }).duel;
+      ok(!('mercyP' in one.e) && !('mercyKey' in one.e), 'mercyP 1 → no fields on the duel');
+      if (JSON.stringify(play(one, 'thoughtful', lcg(s))) === JSON.stringify(play(old, 'thoughtful', lcg(s)))) eq1++;
+    }
+    eq([eq0, eq1], [150, 150], 'mercyP 0 ≡ CFG.mercy=false；mercyP 1 ≡ old behaviour');
+    // 存讀檔：第 11 位起打到一半存起來，接著打一模一樣
+    for (let s = 1; s <= 40; s++) {
+      const { duel } = startFor('label', TIERS[s % 3], s * 7, { pos: 14 + 5 * (s % 6) });
+      EN.resolveTurn(duel, EN.policies.random(duel, lcg(s)));
+      if (duel.over) continue;
+      const saved = JSON.parse(JSON.stringify(duel));
+      eq(play(duel, 'thoughtful', lcg(s + 1)), play(saved, 'thoughtful', lcg(s + 1)), 'resumed duel (pos ≥11) same events');
+    } }
+  // (c) 稱號：每 2 位換一次、第 15 位起品味之神；藏家不掛、跟名字一樣不掛；來客那排、對決 view.eTitle
+  { const T = C.trial.titles;
+    eq(T, ['音樂小白', '文青同好', '社團學長', '資深樂評', '二手店老闆', '地下廠牌主理人', '品味行家', '品味之神'], 'titles = old enemyForDepth titles');
+    eq(Array.from({ length: 18 }, (_, k) => EN.titleAt(C, k + 1)), [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 7, 7].map(k => T[k]), 'titleAt: every 2 positions, stays at 品味之神 from 15');
+    eq([EN.titleAt(C, 300), EN.titleAt(Object.assign({}, C, { trial: undefined }), 7)], [T[7], T[3]], 'titleAt far out / engine default');
+    ok(EN.guestTitle(C, 5, 'boss') === null && EN.guestTitle(C, 15, 'boss') === null, 'the collector has no title');
+    ok(EN.guestTitle(C, 3, 'copycat') === null && EN.guestTitle(C, 3, 'skip') === '文青同好' && EN.guestTitle(C, 5, 'skip', 'normal') === '社團學長' && EN.guestTitle(C, 5, 'already', 'normal') === null && EN.guestTitle(C, 6, 'already') === null, 'same as his name → null');
+    ok(EN.guestTitle(C, 4, 'label') === '文青同好' && EN.guestTitle(C, 14, 'critic') === '品味行家' && EN.guestTitle(C, 9, 'skip') === null && EN.guestTitle(C, 10, 'skip', 'normal') === null, 'elites carry the position title too');
+    for (let s = 0; s < 40; s++) {
+      const run = EN.newRun(C, { seedKey: 'ttl-' + s, runNo: 2, ace: TIERS[s % 3] }); EN.choose(run, C, EN.bargainPolicy(run, C)); EN.jumpTo(run, C, 1 + (s * 3) % 40);
+      const rg = EN.roundGuests(run, C);
+      ok(rg.every(x => x.title === EN.guestTitle(C, x.pos, x.id)), 'roundGuests title = guestTitle');
+      const f = EN.startFight(run, C, {}), v = EN.view(f.duel);
+      ok(v.eTitle === rg[run.idx].title && v.eName === C.enemies[f.enemyId].name, 'view.eTitle = this guest title', { t: v.eTitle, g: rg[run.idx].title });
+    } }
+  // (d) 主屬性：每一輪一般 3 位三色各一（對上原本牌組主屬性最多的排列）、菁英／藏家照種子輪（同輪不同色、每三輪各一次）；跟王牌無關、可重現
+  { const PER = ['c', 'o', 'h'], nat = id => EN.deckMain(C.enemies[id].deck.map(x => C.cards[x]), C.enemies[id].taste);
+    eq(['copycat', 'already', 'needle', 'skip', 'broke', 'buyer', 'label', 'critic', 'boss'].map(nat), ['c', 'o', 'c', 'o', 'h', 'h', 'o', 'c', 'c'], 'natural mains (the decks in content)');
+    let bad = 0, count = { c: 0, o: 0, h: 0 };
+    for (let s = 0; s < (QUICK ? 120 : 600); s++) {
+      const sk = 'mn-' + s, rn = 1 + (s % 4), rot = [];
+      for (let r = 1; r <= 9; r++) {
+        const order = EN.jumpTo(EN.newRun(C, { seedKey: sk, runNo: rn, ace: 'hall' }), C, 5 * r - 4).order, M = EN.roundMains(C, sk, rn, r, order);
+        const n3 = M.slice(0, 3), hits = order.slice(0, 3).reduce((t, id, k) => t + (nat(id) === n3[k] ? 1 : 0), 0);
+        const best = Math.max(...[['c', 'o', 'h'], ['c', 'h', 'o'], ['o', 'c', 'h'], ['o', 'h', 'c'], ['h', 'c', 'o'], ['h', 'o', 'c']].map(p => order.slice(0, 3).reduce((t, id, k) => t + (nat(id) === p[k] ? 1 : 0), 0)));
+        if (!(sameSet(n3, PER) && hits === best && M[3] !== M[4] && PER.includes(M[3]) && PER.includes(M[4]))) { if (bad++ < 5) ok(false, 'round mains', { s, r, order, M, hits, best }); } else pass++;
+        eq(EN.roundMains(C, sk, rn, r), M, 'roundMains without order = with the walked order');
+        rot.push(M[3] + M[4]); for (const a of M) count[a]++;
+        const r2 = EN.jumpTo(EN.newRun(C, { seedKey: sk, runNo: rn, ace: 'heresy' }), C, 5 * r - 2);
+        ok(JSON.stringify([2, 3, 4].map(k => EN.mainAt(r2, C, 5 * r - 4 + k))) === JSON.stringify(M.slice(2)), 'mainAt = roundMains (whatever the ace)');
+      }
+      ok(sameSet(rot.slice(0, 3).map(x => x[0]), PER) && sameSet(rot.slice(0, 3).map(x => x[1]), PER), 'elite／collector rotate through all three every 3 rounds', rot);
+    }
+    ok(['c', 'o', 'h'].every(a => count[a] === count.c), 'each colour equally often over whole 3-round blocks', count); }
+  // (e) trialDeck(main)：張數、不重複、主屬性那軸最高的牌 ≥ round(0.7×張數)、他自己夠下限的主屬性牌全留、加星加在主屬性那軸；mainShare 0／沒給＝舊規則
+  { const need = n => Math.round(C.trial.curve.deck.mainShare * n);
+    let bad = 0;
+    for (let s = 1; s <= (QUICK ? 600 : 3000); s++) {
+      const id = [...C.normals, ...C.elites, C.boss][s % 9], ce = C.enemies[id], d = 1 + (s * 7) % 80, M = ATTRS[s % 3];
+      const o = { seedKey: 'tdm-' + s, runNo: 1 + (s % 3), playerAce: TIERS[s % 3], bossAce: otherTier(TIERS[s % 3], s), cls: ce.boss ? 'boss' : EN.classAt(d) === 'boss' ? 'normal' : EN.classAt(d), main: M };
+      const td = EN.trialDeck(C, id, d, o), old = EN.trialDeck(C, id, d, Object.assign({}, o, { main: undefined }));
+      const orig = td.deck.map(c => C.cards[c.id]), isM = c => c[M] === Math.max(c.c, c.o, c.h), b = td.buff;
+      const okDeck = td.main === M && td.deck.length === ce.deck.length && new Set(td.deck.map(c => c.id)).size === td.deck.length && orig.every(c => c && !c.tier)
+        && orig.filter(isM).length >= need(ce.deck.length) && orig.every(c => EN.power(c) >= td.floor)
+        && ce.deck.every(x => !(EN.power(C.cards[x]) >= td.floor && isM(C.cards[x])) || td.deck.some(c => c.id === x))
+        && td.deck.every((c, k) => { const g = orig[k], ax = isM(g) ? M : EN.topAttr(g), w = Math.min(5, Math.max(g[ax], g[ax] + b)); return c[ax] === w && ATTRS.every(a => a === ax || c[a] === g[a]) && (!!c.plus === (w !== g[ax])); })
+        && JSON.stringify(td.ace) === JSON.stringify(old.ace) && td.floor === old.floor && td.buff === old.buff;
+      if (!okDeck) { if (bad++ < 5) ok(false, 'trialDeck with a main', { id, d, M, deck: td.deck.map(c => [c.id, c.c, c.o, c.h]), floor: td.floor }); } else pass++;
+    }
+    const C0s = Object.assign({}, C, { trial: Object.assign({}, C.trial, { curve: Object.assign({}, C.trial.curve, { deck: Object.assign({}, C.trial.curve.deck, { mainShare: 0 }) }) }) });
+    for (let s = 1; s <= 200; s++) { const id = C.normals[s % 6], o = { seedKey: 'z-' + s, runNo: 1, playerAce: 'hall', bossAce: 'pearl', main: ATTRS[s % 3] };
+      const a = EN.trialDeck(C0s, id, 1 + s % 50, o), z = EN.trialDeck(C, id, 1 + s % 50, Object.assign({}, o, { main: null }));
+      if (!(JSON.stringify(a.deck) === JSON.stringify(z.deck) && a.main === o.main && !('main' in z))) { ok(false, 'mainShare 0 = old deck, still labelled', { id }); break; } else pass++; } }
+  // (f) 整趟：對決的牌＝照主屬性組的那副；view.eMain＝來客那排的 main＝mainAt
+  for (let s = 0; s < 30; s++) {
+    const run = EN.newRun(C, { seedKey: 'mrun-' + s, runNo: 2, ace: TIERS[s % 3] }); EN.choose(run, C, EN.bargainPolicy(run, C)); EN.jumpTo(run, C, 1 + (s * 7) % 60);
+    const id = run.order[run.idx], m = EN.mainAt(run, C, run.pos), rg = EN.roundGuests(run, C);
+    const td = EN.trialDeck(C, id, run.pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier, cls: EN.classAt(run.pos), main: m });
+    const f = EN.startFight(run, C, {}), v = EN.view(f.duel);
+    ok(ATTRS.includes(m) && v.eMain === m && rg[run.idx].main === m && f.duel.e.main === m, 'eMain = roundGuests main = mainAt', { m, e: v.eMain });
+    eq(f.duel.e.deckIds.slice().sort(), td.deck.map(c => c.id).concat(td.ace ? [td.ace.id] : []).sort(), 'duel deck = trialDeck(main) (+ his ace)');
+    ok(sameSet(rg.slice(0, 3).map(x => x.main), ATTRS), 'this round: the three regulars are one of each colour');
+  }
+  ok(EN.view(startFor('copycat', 'hall', 5).duel).eMain === null && EN.view(startFor('man', 'hall', 5, { tutorial: true }).duel).eMain === null, 'direct duels／prologue: no main');
+  // (g) 出牌比例（店主「為何對手都打經典」）：新手打到第 12 位、smart：三色各 25–40%（改版前 40／31／30、這版約 38／31／31：前幾位的牌大多是他自己的，
+  //     經典卡的經典星最純，冷門／硬蕊卡的第二高常是經典）、每種主屬性的客人提示最多的是主屬性那色、出主屬性那色 > 剋它的那色
+  { const play3 = { c: 0, o: 0, h: 0 }, byM = {}, hintM = {};
+    for (let s = 0; s < (QUICK ? 80 : 300); s++) {
+      const run = EN.newRun(C, { seedKey: 'share-' + s, runNo: 1, ace: TIERS[s % 3], prologue: false }); EN.choose(run, C, EN.bargainPolicy(run, C));
+      const R = lcg(s), mem = {};
+      for (let g = 0; g < 200 && !run.over; g++) {
+        const st = EN.nextStep(run);
+        if (st === 'reward' || st === 'level' || st === 'retry') { EN.choose(run, C, EN.runPolicy(run, C)); continue; }
+        if (st !== 'fight' || run.pos > 12) break;
+        for (const ch of EN.shopPolicy(run, C, 'smart')) EN.choose(run, C, ch);
+        const f = EN.startFight(run, C, {}), mn = f.duel.e.main;
+        play(f.duel, 'novice', R, mem);
+        for (const l of f.duel.log) { play3[l.eAttr]++; byM[mn] = byM[mn] || { c: 0, o: 0, h: 0 }; byM[mn][l.eAttr]++; hintM[mn] = hintM[mn] || { c: 0, o: 0, h: 0 }; hintM[mn][l.hint]++; }
+        EN.finishFight(run, C);
+      }
+    }
+    const tot = play3.c + play3.o + play3.h, sh = a => play3[a] / tot;
+    ok(ATTRS.every(a => sh(a) >= 0.25 && sh(a) <= 0.40), 'he plays each colour 25–40% of the time', ATTRS.map(a => (100 * sh(a)).toFixed(1)));
+    for (const M of ATTRS) { const H = hintM[M], P = byM[M]; ok(H && ATTRS.every(a => a === M || H[M] > H[a]) && P[M] > P[COUNTER_OF[M]], 'main ' + M + ': hints it most, plays it more than its counter', { H, P }); }
+    console.log('     guests play 經／冷／硬 ' + ATTRS.map(a => (100 * sh(a)).toFixed(1)).join('／') + '%（novice smart to pos 12）；main share of plays ' + ATTRS.map(M => M + ' ' + (100 * byM[M][M] / (byM[M].c + byM[M].o + byM[M].h)).toFixed(0) + '%').join('、')); }
+  // (h) 櫃檯：sellQuote＝choose sell（每張、每個時機）；舊的 run 沒有 gifts 欄也能交還；交還的禮物買回來＝買的（半價）
+  { let n = 0;
+    for (let s = 0; s < 30; s++) {
+      const run = EN.newRun(C, { seedKey: 'sq-' + s, runNo: 2, ace: TIERS[s % 3], seeds: s % 2 ? [Object.keys(C.cards).filter(id => !C.cards[id].tier && !C.bargain.pool.includes(id)).sort()[20 + s]] : [] });
+      if (s % 5) EN.choose(run, C, EN.bargainPolicy(run, C));
+      if (s % 7 === 3) run.pending = { type: 'retry', enemyId: run.order[0], free: false };
+      for (const id of run.bag.concat(['nope', C.aces[run.ace]])) {
+        const r2 = JSON.parse(JSON.stringify(run)), q = EN.sellQuote(r2, C, id), m = r2.money, r = EN.choose(r2, C, { type: 'sell', cardId: id });
+        if (q.ok !== r.ok || (!q.ok && q.error !== r.error) || (q.ok && (r2.money !== m + q.earn || !!r.effects[0].reclaim !== !!q.reclaim))) ok(false, 'sellQuote = choose sell', { s, id, q, r }); else pass++;
+        n++;
+      }
+    }
+    ok(n > 200, 'sellQuote parity cases', n);
+    const run = EN.newRun(C, { seedKey: 'oldgift', runNo: 2, ace: 'pearl' }); EN.choose(run, C, EN.bargainPolicy(run, C)); delete run.gifts;
+    const g = C.gifts.pearl[1], r = EN.choose(run, C, { type: 'sell', cardId: g });
+    ok(r.ok && r.effects[0].reclaim === 'gift' && Array.isArray(run.gifts) && !run.gifts.includes(g) && run.gifts.length === 3 && !EN.isGift(run, C, g), 'old run without run.gifts: hand back a gift (gifts list rebuilt)', run.gifts);
+    const key = Object.keys(run.shop.bins).find(k => run.shop.bins[k].length); run.shop.bins[key].push(g); run.money = 9999;
+    ok(EN.choose(run, C, { type: 'buy', key, cardId: g }).ok && !EN.isGift(run, C, g) && EN.sellQuote(run, C, g).earn === EN.sellValue(C, card(g)) && EN.sellQuote(run, C, g).reclaim === null, 'a handed-back gift bought again = a bought card (half price)');
+    // 有上限（--set bagMax=8 舊規則對照）：take dropId、buy sellId 照舊（不回 counterOnly）
+    const B0 = CFG.bagMax;
+    try { CFG.bagMax = 8; const r8 = EN.newRun(C, { seedKey: 'lim8', runNo: 2, ace: 'hall' }); EN.choose(r8, C, EN.bargainPolicy(r8, C)); r8.bag.push(Object.keys(C.cards).find(id => !C.cards[id].tier && !r8.bag.includes(id)));
+      ok(EN.bagFull(r8), 'bagMax=8: bag of 8 is full');
+      r8.pending = { type: 'reward', enemyId: 'copycat', prologue: false, pos: 1, cls: 'normal', cards: [Object.keys(C.cards).find(id => !C.cards[id].tier && !r8.bag.includes(id) && C.cards[id].c === 5)], relics: [], need: 'card', cardDone: false, relicDone: true };
+      const rt = EN.choose(r8, C, { type: 'take', cardId: r8.pending.cards[0], dropId: r8.bag[5] });
+      ok(rt.ok && rt.effects[0].loseCard, 'bagMax=8: take with dropId still the old rule', rt); }
+    finally { CFG.bagMax = B0; } }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

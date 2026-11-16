@@ -28,7 +28,7 @@
 //            preview(duel, act, eSide) -> {kind,toE,toP,blocked,by,notes}   eSide = {i, attr}（他手牌第 i 張）| {attr, star, ace}（假設值）
 //            resolveTurn(duel, act, {forcedPlay?:{i,attr}, debugOutcome?:{kind,toE,toP}}) -> Event[]   (illegal act → [] and nothing changes)
 //            view(duel) -> 公開資訊（§2.1.5；不含他這手出哪張、哪色、有沒有唬人）；多 pAtk pDef eAtk eDef、eDeck（公開牌單的星數 {id,c,o,h,tier,plus}）、
-//              honesty.qNow（這手放水後的說真話機率；策略用，畫面不寫）
+//              honesty.qNow（這手放水後的說真話機率的期望值；策略用，畫面不寫）、eTitle（無限試煉的稱號，guestTitle；沒有＝null）、eMain（客人主屬性 'c'|'o'|'h'｜null）
 //            bestChip(duel, attr, {ace}) · blockedChoice(duel, attr) -> {i, attr} | null（用 attr 出會被 'gap' 擋下的那張；教學第 5 手）
 //            Events {t:'hand', n, hint:{attr, line}, eHandN, pile}
 //                   {t:'clash', n, pCard, pAttr, pStar, pBase, ace, eCard, eAttr, eStar, eAce, kind, toE, toP, blocked, by, hint, bluff, notes, pHp, eHp}
@@ -46,22 +46,32 @@
 //            順序：贏 → reward（挑唱片／配件）→ level（有升級才有，連升就連選）→ 下一位（第 5 位打完換新一輪：新面孔、說情重設、商店補貨）
 //            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
-//            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
+//            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur, title, main}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
+//            第 A 波（店主 11-16）：
+//              放水照位數機率：mercyPAt(content, pos, tier?)＝第 11 位起每手放水的機率（C.trial.curve.mercyP；第 1–10 位 1）。enemyDef 帶 eDef.mercyP（<1 才有）→
+//                startDuel 存 e.mercyP、e.mercyKey（＝對決種子）；beginHand 這手放不放水＝hash01('mercy#'＋mercyKey＋'#'＋n) < mercyP（不取 duel.rng，每手照樣 8 次；
+//                plan.mercy 記結果）。不放水的手：出招不鈍化（mercy 0）、說真話機率＝q。view.honesty.qNow＝期望值 1−(1−q)(1−qMercy×mercy×mercyP)
+//              稱號：titleAt(content, pos, tier?)＝C.trial.titles[min(末, ⌊(位−1)/titleEvery⌋)]；guestTitle(content, pos, id, cls?, tier?)＝要顯示的（藏家、跟名字一樣＝null）
+//              客人主屬性：roundMains(content, seedKey, runNo, 輪, order?) -> [5 個 'c'|'o'|'h']（一般 3 位三色各一，照「原本牌組的主屬性」對上最多的排列、一樣多照雜湊；
+//                菁英／藏家照種子輪）· mainAt(run, content, pos) · guestDef(run, content, id, pos)（＝startFight／roundGuests／shopPolicy 用的 eDef，含 main、title、mercyP）
+//                trialDeck 多收 o.main：牌組至少 round(deck.mainShare×張數) 張主屬性那軸最高的牌、其他格子另外兩軸輪流補、加星加在主屬性那軸；沒給 main／mainShare 0＝舊規則
+//              櫃檯賣給老闆：移出包包只有 choose sell（見下面 Economy／sellQuote）；take 的 dropId、buy 的 sellId、buyBargain 的 sellIds → 'counterOnly'（不限張數時）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）＋ level {pick:'atk'|'def'|'hp'}
-//              賣回：buy {sellId}／buyBargain {sellIds} 只收包包裡、不是老闆送的（isGift）、不是種子（isSeed）的卡；送的 → error 'giftNoSell'、種子 → 'seedNoSell'
+//              賣回（第 A 波起只走櫃檯 sell；下面 buy {sellId}／buyBargain {sellIds} 只剩 --set bagMax=8 舊規則那條路）：只收包包裡、不是老闆送的（isGift）、不是種子（isSeed）的卡；送的 → 'giftNoSell'、種子 → 'seedNoSell'
 //              buyBargain {ids:[1–3], sellIds?}：每張照特價（bargainPriceOf）分開算、一次付總和；effects 每張 {gainCard, spend: 那張的價}
 //            包包不限張數（店主 11-16「手牌不要只限八張，可以無限多直到結束才重置」；CFG.bagMax＝Infinity，一趟結束 newRun 才重置，不跨趟）：
-//              take 不用 dropId（給了、在包包裡就照拿掉；不在 → 'badDrop'）；buy 不用 sellId、buyBargain 不用 sellIds（給了照賣，buyBargain 給幾張都行）；
-//              bargainPick、收音機不會 'bagFull'。新動作 sell {cardId}：canShop 時單獨賣回一張（半價；送的 'giftNoSell'、種子 'seedNoSell'）。
-//              賣完包包不能少於手牌張數（CFG.handSize 5）→ 'bagMin'（sell、buyBargain 多賣）。bagCap()（Infinity｜n）· bagLimited() · bagFull(run)
+//              take 不用 dropId、buy 不用 sellId、buyBargain 不用 sellIds——第 A 波（店主 11-16「要去櫃檯賣給老闆才能移出包包」）：給了就 'counterOnly'（run 不動）；
+//              bargainPick、收音機不會 'bagFull'。sell {cardId}：櫃檯賣給老闆，canShop（兩位客人之間）時賣一張：一般唱片半價；老闆送的、種子＝老闆收回 $0
+//              （effects {loseCard, earn: 0, reclaim:'gift'|'seed'}；從 run.gifts／run.seeds 拿掉）。sellQuote(run, content, id) -> {ok, earn, reclaim} | {ok:false, error}（同一套檢查、不改 run）。
+//              賣完包包不能少於手牌張數（CFG.handSize 5）→ 'bagMin'。bagCap()（Infinity｜n）· bagLimited() · bagFull(run)
 //              有上限時（sim --set bagMax=8）take／buy／buyBargain／runPolicy／shopPolicy 走舊規則那條路（逐字照舊；sell 照樣可用）
 //            策略判斷「值不值得放進包包」：bagScore(content, ids)＝手牌 5 張每軸最大星的期望值三軸加總（精確解）；bagGain(run, content, id, drop?)＝收這張漲多少（負＝稀釋）
 //              runPolicy 收獎勵：挑漲最多的那張，漲不到 0.005 就不拿；shopPolicy 'smart'：舊挑法＋要漲才買、不用賣，買完 thinPolicy 瘦身
-//              thinPolicy(run, content) -> [{type:'sell', cardId}]：賣掉每一軸都排不進包包前 5 名的牌（deadWeight；不是送的、不是種子；包包剩 5 張停）
+//              thinPolicy(run, content) -> [{type:'sell', cardId}]：賣掉每一軸都排不進包包前 5 名的牌（deadWeight；第 A 波起送的、種子也交還 $0，先賣有錢拿的；包包剩 5 張停）
 //            canShop(run) · canBargainPick(run)
 //            收音機轉頻率（v5 第六項第二期，店主 11-15）：choose {type:'radio', cell}（cell＝八格之一，content.tunes.order）：canShop 才能轉（兩位客人之間）、每輪一次（第二次 → 'used'）；
 //              抽卡池 radioPool(run, content, cell)＝trialPool（非頂點）∩ tune===cell ∩ SHELF_RARITY（普通／稀有／獨特）− 包包 − 這一輪各箱子已上架的 − 特價箱（池子 9 張與現在擺的）；
@@ -70,8 +80,8 @@
 //            bargainPriceIn(run, content, id)：特價箱這一格的價＝電台那張照原價（priceOf：稀有度價；特價箱封頂 $300 會被低買高賣）、其他照 bargainPriceOf；buyBargain 用它
 // Seeds      從唱片櫃挑牌開局（SPEC 從唱片櫃挑牌開局 §0–§1；引擎不碰存檔：「擁有」由畫面傳進來，owned＝函式 id→bool｜陣列｜{id: truthy}）
 //            newRun 多收 seeds:[ids]（0–3 張，CFG.seedMax）：序章那一趟不收；頂點卡、不存在的卡、重複的丟掉。包包＝種子＋老闆送的（這次王牌那組）補到 4 張
-//              （種子跟送的重複：送的往下補下一張）；特價箱 3 張照舊 → 7 張。run.seeds＝包包裡從唱片櫃帶來的（不能賣回：buy／buyBargain → 'seedNoSell'；
-//              拿獎勵包包滿「拿掉一張」照舊可以拿掉種子，拿掉就不再是種子）；run.gifts＝這一趟實際放進包包的老闆送的（isGift 照它）
+//              （種子跟送的重複：送的往下補下一張）；特價箱 3 張照舊 → 7 張。run.seeds＝包包裡從唱片櫃帶來的（不能賣回換錢；第 A 波起可以在櫃檯交還老闆 $0，
+//              交還就不再是種子；舊規則路 buy／buyBargain → 'seedNoSell'）；run.gifts＝這一趟實際放進包包的老闆送的（isGift 照它）
 //            canSeed(content, id)（卡存在、不是頂點卡）· isSeed(run, content, id) · seedPolicy(content, ids, n?)（自動遊玩：照最高星挑；同星看總星、再看 id）
 //            bossAceFor(seedKey, runNo, ace)（這一趟藏家帶哪張王牌＝newRun 的 run.bossAce；存檔遷移用）
 //            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子掉的 Eminem 也算：它在他牌組裡、他一定打出來，店主 11-13）
@@ -109,8 +119,8 @@
 //            topAxes(card) 峰值那幾軸（並列都算）· bargainLane(card) 特價箱的色（峰值那軸，並列取後面那軸）· priceOf(content, card|id)：特價箱的卡（bargain.pool＋retired 換下的舊特價箱）＝bargainPriceOf；其他＝economy.price[rarity]（800／1000／1200／3000／4000；頂點 8000 先備好、不上架）
 //            bargainPriceOf(content, card|id)：economy.bargain[最高星 1–3] ＝ 100／200／300 · relicPrice(content, id)：relics[id].price ?? economy.relicPrice（3000）
 //            sellValue(content, card|relicId) ＝ floor(價 × sellRate 0.5) · moneyText(n) ＝ 千分位字串（1200 → '1,200'；C.shopUi 的字串自己帶 '$'）
-//            isGift(run, content, id)：老闆送的（這一趟王牌那組的四張＋王牌本身）→ 不能賣回（FIXLIST 11 追加）；buy 的 sellId、buyBargain 的 sellIds 有它 → 'giftNoSell'。
-//              客人丟的、買的、特價箱的照舊半價。take 的 dropId（拿掉一張）不是賣、不收錢；包包不限之後不用給（有上限、包包滿才要）
+//            isGift(run, content, id)：老闆送的（這一趟王牌那組的四張＋王牌本身）。第 A 波起櫃檯 sell 收（老闆收回 $0）；舊規則路 buy sellId／buyBargain sellIds 照舊 'giftNoSell'。
+//              客人丟的、買的、特價箱的照舊半價。take 的 dropId（拿掉一張）只剩 --set bagMax=8 舊規則那條路（包包滿才要）
 //            run.shop（restock：newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng）：
 //              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
 //                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues
@@ -180,10 +190,15 @@
       planner: { easyTo: 2, normalTo: 4 },                                         // 第 1–2 位 easy、3–4 normal、5 起 hard
       q: { easy: 1, normal: 0.85, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },   // hard：q＝1−min(.55, .18＋.05·max(0, 位−5))
       mercyFeint: 0.8,                                                              // 放水：唬人率 ×(1−0.8×mercy)（roguelike.html:3693-3695）
+      // 放水照位數機率（店主 11-16 選 C）：第 from 位以前每手都放水；之後每手照機率 p＝max(min, p0 − step×⌊(位−from)/every⌋) 才放水（mercyPAt）
+      mercyP: { from: 11, p0: 0.9, step: 0.1, every: 5, min: 0.2 },
       atk: { lateFrom: 3, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },   // min(2, round(.75·late))＋⌊max(0, 位−6)/5⌋（藏家 +1）
       def: { lateFrom: 3, rate: 0.45, cap: 1, boss: 1, add: 0 },                                  // min(1, round(.45·late))（藏家 +1）
-      deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6 },
+      // mainShare：客人主屬性（第 A 波 6）那副牌至少幾成是主屬性那軸最高的牌（trialDeck o.main）
+      deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6, mainShare: 0.7 },
     },
+    // 客人稱號（舊版 enemyForDepth 的 titles；第 A 波 3）：每 titleEvery 位換一次，最後一個之後停在最後一個（titleAt／guestTitle）
+    titles: ['音樂小白', '文青同好', '社團學長', '資深樂評', '二手店老闆', '地下廠牌主理人', '品味行家', '品味之神'], titleEvery: 2,
     tiers: [],
   };
   const POS_CLASSES = TRIAL.classes, PER_ROUND = POS_CLASSES.length;
@@ -495,8 +510,12 @@
       elite: !!E.elite, boss: !!E.boss, atk: 0, def: 0, qMercy: trialCfg(content, o.tier).curve.mercyFeint, ace: null, pos: null, cls: null,
       sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Eminem，打完掉在地上）
     if (g) {
-      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier });
-      Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss' });
+      const main = ATTRS.includes(o.main) ? o.main : null;
+      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier, main });
+      Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss',
+        title: guestTitle(content, pos, id, cls, o.tier), main });
+      const mp = mercyPAt(content, pos, o.tier);
+      if (mp < 1) d.mercyP = mp;                                // 第 11 位起：每手放水的機率（startDuel 存進 e.mercyP）
     }
     return d;
   }
@@ -536,7 +555,8 @@
       e: { id: eDef.id, name: eDef.name, title: eDef.title || null, elite: !!eDef.elite, boss: !!eDef.boss,
         honesty: hk, q: eDef.q != null ? +eDef.q : HONESTY[hk].q, qMercy: eDef.qMercy != null ? +eDef.qMercy : 0,
         planner: eDef.planner || 'normal', coef: { w: co.w, nz: co.nz, mercy: !!co.mercy }, taste: tasteStr(eDef.taste),
-        hp: eDef.hp, max: eDef.hp, atk: eDef.atk | 0, def: eDef.def | 0, deckIds: [], deckPub: [], pile: [], hand: [], thrown: [], last: null, deckSize: 0 },
+        hp: eDef.hp, max: eDef.hp, atk: eDef.atk | 0, def: eDef.def | 0, deckIds: [], deckPub: [], pile: [], hand: [], thrown: [], last: null, deckSize: 0,
+        main: ATTRS.includes(eDef.main) ? eDef.main : null },   // 客人主屬性（第 A 波 6；view.eMain「常出：冷門」）；沒有＝null
       hintTable: opts.hintTable && ATTRS.every(a => Array.isArray(opts.hintTable[a]) && opts.hintTable[a].length) ? clone(opts.hintTable) : clone(DEFAULT_HINTS),
       noteText: pDef.noteText ? Object.assign({}, pDef.noteText) : null,
       script: sc, plan: null, last: null, log: [],
@@ -549,6 +569,8 @@
       st.stats.apexAt = 0; st.stats.apexHits = 0;
     }
     const P = st.p, E = st.e;
+    // 放水照位數機率（第 11 位起；eDef.mercyP < 1 才有這兩欄，其他對決的狀態一字不改）：mercyKey＝對決種子（mercyOn 的雜湊用；不取 duel.rng）
+    if (eDef.mercyP != null && +eDef.mercyP < 1) { E.mercyP = Math.max(0, +eDef.mercyP); E.mercyKey = st.rng >>> 0; }
     // 你的牌堆：script 的起手＋抽牌在前，剩下的照包包順序（有 script 不洗；教學第 5 手要抽到特價箱那幾張）；沒 script 整包洗
     const bag = (pDef.bag || []).filter(Boolean).slice();
     const takeIds = ids => { const out = []; for (const id of ids || []) { const k = bag.findIndex(c => c.id === id); if (k >= 0) out.push(bag.splice(k, 1)[0]); } return out; };
@@ -602,12 +624,23 @@
     return Math.min(1, m);
   }
 
+  // 放水照位數機率（店主 11-16 選 C；C.trial.curve.mercyP）：e.mercyP＝這位客人每手放水的機率（第 1–10 位、序章、直接開打＝沒有這欄＝每手都放水）。
+  //   這手放不放水＝hash01('mercy#'＋對決種子＋'#'＋第幾手) < mercyP：不取 duel.rng（每手照樣 8 次、既有序列不動），同種子同手數一定一樣、存讀檔照舊
+  const mercyPOf = st => { const p = st.e.mercyP; return p == null ? 1 : Math.max(0, Math.min(1, +p)); };
+  function mercyOn(st) {
+    const p = mercyPOf(st);
+    if (p >= 1) return true;
+    if (!(p > 0)) return false;
+    return hash01('mercy#' + (st.e.mercyKey >>> 0) + '#' + st.n) < p;
+  }
   // 這手的說真話機率（放水後）：你落後時他少唬，唬人率 ×(1−qMercy×mercy)（舊版 roguelike.html:3693-3695，feintP×(1−0.8·mercy)）。
   //   只在出招難度有 mercy（normal／hard）且 CFG.mercy 時；不多取亂數（每手照樣 8 次）。view.honesty.qNow 給策略
-  function qNowOf(st) {
+  //   on：true／false＝這手確定放水／不放水（beginHand 用）；沒給＝期望值（view 用；策略不知道這手有沒有放水）：1−(1−q)(1−qMercy×mercy×mercyP)
+  function qNowOf(st, on) {
     const E = st.e, co = E.coef || PLANNERS.normal, q = +E.q;
     if (!co.mercy || !CFG.mercy || !E.qMercy) return q;
-    return 1 - (1 - q) * (1 - E.qMercy * mercyOf(st));
+    if (on === false) return q;
+    return 1 - (1 - q) * (1 - E.qMercy * mercyOf(st) * (on === true ? 1 : mercyPOf(st)));
   }
   // 開手（§2.1.4）：他補牌 → 計畫屬性（原版 aiPlan 去掉相生／氣勢）→ 提示句 → 照實或唬人 → 出哪張。
   // RNG 每手固定 8 次（計畫 6＋提示 1＋照實 1），script／王牌／耳機都照取，讓 RNG 流不分支。
@@ -616,7 +649,8 @@
     st.n++;
     while (E.hand.length < CFG.enemyHand && E.pile.length) E.hand.push(E.pile.shift());
     const best = {}; for (const a of ATTRS) best[a] = bestIdx(E.hand, a, false);
-    const co = E.coef || PLANNERS.normal, m = mercyOf(st), useMercy = !!co.mercy && !!CFG.mercy;
+    const mOn = mercyOn(st);                              // 這手放不放水（第 11 位起照機率；雜湊，不取亂數）
+    const co = E.coef || PLANNERS.normal, m = mOn ? mercyOf(st) : 0, useMercy = !!co.mercy && !!CFG.mercy;
     let plan = null, ps = -Infinity;
     for (const a of ATTRS) {
       const u1 = rng(st), u2 = rng(st);
@@ -638,7 +672,7 @@
       attr = plan; why = 'ace'; idx = best[plan];
     } else if (st.n === 1 && headphoneOn(st)) {
       attr = plan; why = 'headphone';
-    } else if (r < qNowOf(st)) {
+    } else if (r < qNowOf(st, mOn)) {
       attr = plan; why = 'honest';
     } else {
       attr = BEATS[plan]; why = 'bluff';
@@ -657,7 +691,7 @@
       if (lines.length > 1 && lines[k] === prev) k = (k + 1) % lines.length;
       line = lines[k];
     }
-    st.plan = { hint: { attr: plan, line }, attr, idx, bluff: attr !== plan, why };
+    st.plan = { hint: { attr: plan, line }, attr, idx, bluff: attr !== plan, why, mercy: mOn };
     events.push({ t: 'hand', n: st.n, hint: { attr: plan, line }, eHandN: E.hand.length, pile: E.pile.length });
   }
 
@@ -772,7 +806,7 @@
     const out = {
       n: st.n, maxRounds: CFG.maxRounds, over: st.over ? { win: st.over.win, by: st.over.by } : null,
       pHp: P.hp, pMax: P.max, eHp: E.hp, eMax: E.max,
-      eId: E.id, eName: E.name, eTitle: E.title, elite: E.elite, boss: E.boss,
+      eId: E.id, eName: E.name, eTitle: E.title, eMain: E.main || null, elite: E.elite, boss: E.boss,
       honesty: { key: E.honesty, q: E.q, qNow: pl ? qNowOf(st) : null },
       hint: pl ? { attr: pl.hint.attr, line: pl.hint.line } : null,
       eHandN: E.hand.length, pile: E.pile.length, pileMax: E.deckSize,
@@ -847,6 +881,29 @@
     const def = Math.min(D.cap, Math.round(D.rate * Math.max(0, d - D.lateFrom))) + (boss ? D.boss : 0) + (D.add | 0);
     return { hp: T.guestHp[cls], atk: Math.max(0, atk), def: Math.max(0, def), planner, q: Math.round(q * 1e6) / 1e6 };
   }
+  // 放水照位數機率（店主 11-16 選 C；C.trial.curve.mercyP）：第 from 位以前 1（每手都放水）；之後 max(min, p0 − step×⌊(位−from)/every⌋)
+  //   預設：第 11–15 位 90%、16–20 位 80%…、第 46 位起 20%。只有出招難度有 mercy（normal／hard）時才有作用（easy 本來就不放水）
+  function mercyPAt(content, pos, tier) {
+    const MP = trialCfg(content, tier).curve.mercyP || {}, d = Math.max(1, pos | 0);
+    if (!(MP.from > 0) || d < MP.from) return 1;
+    const every = MP.every > 0 ? MP.every : 1;
+    const p = (MP.p0 != null ? +MP.p0 : 1) - (+MP.step || 0) * Math.floor((d - MP.from) / every);
+    return Math.round(Math.max(+MP.min || 0, Math.min(1, p)) * 1e6) / 1e6;
+  }
+  // 客人稱號（第 A 波 3；舊版 enemyForDepth）：每 titleEvery 位換一次（第 1–2 位 titles[0]、第 3–4 位 titles[1]…），最後一個之後停在最後一個（第 15 位起品味之神）
+  function titleAt(content, pos, tier) {
+    const T = trialCfg(content, tier), L = Array.isArray(T.titles) ? T.titles : [];
+    if (!L.length) return null;
+    const every = T.titleEvery > 0 ? T.titleEvery | 0 : 2;
+    return L[Math.min(L.length - 1, Math.floor((Math.max(1, pos | 0) - 1) / every))] || null;
+  }
+  // 要顯示的稱號（來客條、對決他名字旁）：傳說藏家沒有（舊版藏家的稱號就是「傳說藏家」＝他的名字）；跟他的名字一樣（第 3–4 位碰上社團學長）也不顯示 → null
+  function guestTitle(content, pos, id, cls, tier) {
+    cls = POS_CLASSES.includes(cls) ? cls : classAt(pos);
+    if (cls === 'boss') return null;
+    const t = titleAt(content, pos, tier), E = content && content.enemies && content.enemies[id];
+    return t && !(E && E.name === t) ? t : null;
+  }
   // 客人牌組越來越好（curve harness core.cjs bcDeck，V3：加星上限 5）：
   //   三軸總星低於下限 min(13, 3＋⌊0.7×位⌋) 的換成池子裡夠格的（照雜湊排序；王牌不進池）；主軸加 ⌊max(0, 位−3)/3⌋ 星（上限 5，王牌不加）；
   //   藏家帶你們都沒選的那張王牌（run.bossAce）；一般客人第 5 位起帶王牌機率 min(60%, 15%×(位−4))（你沒選的兩張之一）。
@@ -869,17 +926,53 @@
     const u = s => hash01(tag + '|' + s);
     const fl = Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * d));
     const pool = trialPool(content);
-    let bag = pool.filter(c => power(c) >= fl); if (bag.length < K.minPool) bag = pool;
+    const M0 = ATTRS.includes(o.main) ? o.main : null, M = M0 && +K.mainShare > 0 ? M0 : null;   // mainShare 0＝主屬性只標示、不改牌組（sim 對照用）
+    const hv = new Map(), hOf = c => { let v = hv.get(c.id); if (v === undefined) { v = u(id + '|' + c.id); hv.set(c.id, v); } return v; };   // 同一張只算一次雜湊
+    const byHash = (arr, used) => arr.filter(c => !used.has(c.id)).map(c => [hOf(c), c]).sort((a, z) => a[0] - z[0] || (a[1].id < z[1].id ? -1 : 1)).map(x => x[1]);
     const deck = [], used = new Set();
-    for (const c of base) if (power(c) >= fl) { deck.push(c); used.add(c.id); }
-    if (deck.length < base.length) {
-      const pr = bag.filter(c => !used.has(c.id)).map(c => [u(id + '|' + c.id), c]).sort((a, b) => a[0] - b[0] || (a[1].id < b[1].id ? -1 : 1));
-      for (const [, c] of pr) { if (deck.length >= base.length) break; deck.push(c); used.add(c.id); }
+    const put = c => { deck.push(c); used.add(c.id); };
+    if (!M) {                                                    // 沒給主屬性（直接開打、測試直接呼叫）或 mainShare 0：舊規則一字不改
+      let bag = pool.filter(c => power(c) >= fl); if (bag.length < K.minPool) bag = pool;
+      for (const c of base) if (power(c) >= fl) put(c);
+      if (deck.length < base.length) for (const c of byHash(bag, used)) { if (deck.length >= base.length) break; put(c); }
+    } else {
+      // 客人主屬性（第 A 波 6，店主問「為何對手都打經典」）：這副牌至少 need＝round(mainShare×張數) 張是 M 那軸最高（並列算）的牌。
+      //   ① 他自己夠下限的牌：M 那軸最高的全留；其他的留到「張數 − max(need, 留下的主屬性張數)」為止（照原本順序）
+      //   ② 主屬性不夠 need → 從池子補 M 那軸最高、夠下限的（照雜湊；其中「只有 M 最高、不並列」的有 minPool 張以上就只用這些；
+      //      夠下限的不到 minPool 張 → 改用 M 那軸最高裡總星最高的 minPool 張）
+      //   ③ 剩下的格子補非主屬性的牌：另外兩軸輪流補（張數少的那軸先；一樣多先補 BEATS[M]＝他唬人時出的那軸），池子照雜湊；某軸補不到就用另一軸
+      //   池子大多是經典最高的牌（323 張裡經 249、冷 73、硬 61，並列都算），不這樣分，冷門／硬蕊客人換來的牌又會是經典
+      const isM = c => star(c, M) === peak(c);
+      const need = Math.min(base.length, Math.max(0, Math.round((+K.mainShare || 0) * base.length)));
+      const keepM = base.filter(c => power(c) >= fl && isM(c)), keepO = base.filter(c => power(c) >= fl && !isM(c));
+      for (const c of keepM) put(c);
+      for (const c of keepO.slice(0, Math.max(0, base.length - Math.max(need, keepM.length)))) put(c);
+      if (keepM.length < need) {
+        let mb = pool.filter(c => isM(c) && power(c) >= fl);
+        const strict = mb.filter(c => topAxes(c).length === 1);
+        if (strict.length >= K.minPool) mb = strict;
+        if (mb.length < K.minPool) mb = pool.filter(isM).sort((a, z) => power(z) - power(a) || (a.id < z.id ? -1 : 1)).slice(0, Math.max(K.minPool, mb.length));
+        let k = keepM.length;
+        for (const c of byHash(mb, used)) { if (k >= need || deck.length >= base.length) break; put(c); k++; }
+      }
+      const others = ATTRS.filter(a => a !== M), first = BEATS[M];
+      const ob = pool.filter(c => !isM(c) && power(c) >= fl), obAll = ob.length >= K.minPool ? ob : pool.filter(c => !isM(c));
+      const lane = (c, a) => star(c, a) === peak(c);
+      for (let guard = 0; deck.length < base.length && guard < 40; guard++) {
+        const cnt = a => deck.filter(c => !isM(c) && lane(c, a)).length;
+        const order = others.slice().sort((a, z) => cnt(a) - cnt(z) || (a === first ? -1 : z === first ? 1 : 0));
+        let got = null;
+        for (const a of order) { got = byHash(obAll.filter(c => lane(c, a)), used)[0]; if (got) break; }
+        if (!got) got = byHash(obAll, used)[0] || byHash(pool, used)[0];
+        if (!got) break;
+        put(got);
+      }
     }
     const b = Math.floor(Math.max(0, d - K.buffFrom) / K.buffEvery);
     // 每張都是他自己的一份（換來的牌可能跟你包包裡的是同一張唱片：對決狀態裡不共用物件）
+    //   加星：加在那張最高那軸（topAttr）；有主屬性時，主屬性那軸也是最高（並列）的牌加在主屬性那軸（「加星偏主屬性」）
     const out = deck.map(c => {
-      const m = topAttr(c), s0 = star(c, m), nv = b && !c.tier ? Math.min(K.buffCap, Math.max(s0, s0 + b)) : s0;
+      const m = M && star(c, M) === peak(c) ? M : topAttr(c), s0 = star(c, m), nv = b && !c.tier ? Math.min(K.buffCap, Math.max(s0, s0 + b)) : s0;
       return nv === s0 ? Object.assign({}, c) : Object.assign({}, c, { [m]: nv, plus: { attr: m, n: nv - s0 } });
     });
     let ace = null;
@@ -892,7 +985,9 @@
         if (others.length) ace = cardFrom(content, aces[others[Math.floor(u('acepick') * others.length) % others.length]]);
       }
     }
-    return { deck: out, ace, floor: fl, buff: b, replaced: base.length - deck.filter(c => base.includes(c)).length };
+    const res = { deck: out, ace, floor: fl, buff: b, replaced: base.length - deck.filter(c => base.includes(c)).length };
+    if (M0) res.main = M0;
+    return res;
   }
   // 中繼點：第 10、20、30、50、75、100 位，之後每 50 位（走到就記：advance 到那一位時）
   function checkpointsOf(content) { const T = trialCfg(content); return { list: (T.checkpoints || []).slice().sort((a, b) => a - b), every: T.checkpointEvery | 0 }; }
@@ -934,6 +1029,37 @@
     const eFresh = EL.filter(x => !prev.includes(x)), ePool = eFresh.length ? eFresh : EL;
     const elite = ePool.length ? ePool[Math.floor(rng(st) * ePool.length)] : null;
     return normals.concat([elite, B]).filter(Boolean);
+  }
+  // 客人主屬性（第 A 波 6，店主 11-16）：同一輪 5 位三種都有——一般 3 位各一（經／冷／硬的排列裡挑「跟他原本那副牌的主屬性對上最多」的那個，
+  //   一樣多照雜湊 seedKey#runNo#main#輪）；菁英、藏家照種子輪：k＝雜湊 seedKey#runNo#mainrot（0–2），菁英 ATTRS[(k＋輪)%3]、藏家 ATTRS[(k＋輪＋1)%3]
+  //   （同一輪兩位不同色，每三輪各色各輪到一次）。不碰 run.rng；同一天同一趟不管挑哪張王牌都一樣
+  const PERMS = [['c', 'o', 'h'], ['c', 'h', 'o'], ['o', 'c', 'h'], ['o', 'h', 'c'], ['h', 'c', 'o'], ['h', 'o', 'c']];
+  function naturalMain(content, id) {
+    const E = content && content.enemies && content.enemies[id];
+    return E ? deckMain((E.deck || []).map(x => cardOf(content, x)).filter(Boolean), E.taste) : null;
+  }
+  function roundMains(content, seedKey, runNo, r, order) {
+    r = Math.max(1, r | 0);
+    order = Array.isArray(order) ? order : roundOrder(content, seedKey, runNo, r, null);
+    const tag = String(seedKey || 'lab') + '#' + (runNo || 1), out = order.map(() => null);
+    const nIdx = order.map((id, i) => POS_CLASSES[i] === 'normal' ? i : -1).filter(i => i >= 0);
+    const nat = nIdx.map(i => naturalMain(content, order[i]));
+    let best = PERMS[0], bs = -1, bh = 2;
+    for (const p of PERMS) {
+      const s = nIdx.reduce((t, i, k) => t + (nat[k] === p[k % 3] ? 1 : 0), 0), h = hash01(tag + '#main#' + r + '#' + p.join(''));
+      if (s > bs || (s === bs && h < bh)) { best = p; bs = s; bh = h; }
+    }
+    nIdx.forEach((i, k) => { out[i] = best[k % 3]; });
+    const k0 = Math.floor(hash01(tag + '#mainrot') * 3) % 3;
+    order.forEach((id, i) => { if (POS_CLASSES[i] === 'elite') out[i] = ATTRS[(k0 + r) % 3]; else if (POS_CLASSES[i] === 'boss') out[i] = ATTRS[(k0 + r + 1) % 3]; });
+    return out;
+  }
+  // 第 pos 位客人的主屬性（這一輪＝run.order；別輪照 roundOrder 算）
+  function mainAt(run, content, pos) {
+    if (!run) return null;
+    const d = Math.max(1, pos | 0), r = roundOf(d), i = (d - 1) % PER_ROUND;
+    const order = r === run.round && Array.isArray(run.order) ? run.order : roundOrder(content, run.seedKey, run.runNo, r, null);
+    return roundMains(content, run.seedKey, run.runNo, r, order)[i] || null;
   }
 
   // 種子（SPEC 從唱片櫃挑牌開局 §0、§1 裁定 3）：卡存在、不是頂點卡（頂點卡只能放王牌格）
@@ -1062,8 +1188,9 @@
     return run.prologue === 'pending' ? 'prologue' : 'fight';
   }
   // 這一位的客人設定（畫面的來客那排、shopPolicy、startFight 共用）
+  //   主屬性（第 A 波 6）：mainAt（這一輪三色都有）→ trialDeck 照它組牌；稱號：guestTitle（藏家、跟名字一樣＝null）
   function guestDef(run, content, id, pos) {
-    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier });
+    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier, main: mainAt(run, content, pos) });
   }
   function startFight(run, content, o) {
     o = o || {};
@@ -1196,14 +1323,15 @@
     restock(run, content);
     return run;
   }
-  // 這一輪 5 位（來客那排）：{id, pos, cls, hp, atk, def, hasAce, done, cur}
+  // 這一輪 5 位（來客那排）：{id, pos, cls, hp, atk, def, hasAce, done, cur, title, main}
+  //   title＝要顯示的稱號（guestTitle：藏家、跟名字一樣＝null）；main＝主屬性 'c'|'o'|'h'（「常出：冷門」＝C.trial.ui.mainAttr 代入 ZH[main]）
   function roundGuests(run, content) {
     const p = run.pending, beat = !!(p && (p.type === 'reward' || p.type === 'level') && !p.prologue);
     const first = (run.round - 1) * PER_ROUND + 1;
     return (run.order || []).map((id, i) => {
       const pos = first + i, g = guestDef(run, content, id, pos);
       return { id, pos, cls: classAt(pos), hp: g.hp, atk: g.atk, def: g.def, hasAce: !!g.ace || (classAt(pos) === 'boss' && !!run.bossAce),
-        done: i < run.idx || (i === run.idx && beat), cur: i === run.idx };
+        done: i < run.idx || (i === run.idx && beat), cur: i === run.idx, title: g.title || null, main: g.main || null };
     });
   }
   // 結算：走到第幾位、最多連贏幾位、收了幾張
@@ -1272,7 +1400,7 @@
     const p = typeof x === 'string' ? relicPrice(content, x) : priceOf(content, x);
     return p == null ? 0 : Math.floor(p * econ(content).sellRate);
   }
-  // 老闆送的不能賣回（FIXLIST 11 追加）：這一趟王牌那組的四張禮物（content.gifts[run.ace]）＋王牌本身。別組的禮物卡如果是客人丟的或買的，照舊能賣
+  // 老闆送的不能賣回換錢（FIXLIST 11 追加；第 A 波起櫃檯交還老闆 $0，sellQuote）：這一趟王牌那組的四張禮物（content.gifts[run.ace]）＋王牌本身。別組的禮物卡如果是客人丟的或買的，照舊能賣
   //   run.gifts（從唱片櫃挑牌開局）＝這一趟實際放進包包的那幾張（種子佔掉的不算）；舊的 run 沒有 → 那組四張
   function isGift(run, content, x) {
     const id = x && typeof x === 'object' ? x.id : x;
@@ -1280,10 +1408,21 @@
     const G = Array.isArray(run.gifts) ? run.gifts : (((content.gifts || {})[run.ace]) || []);
     return id === ((content.aces || {})[run.ace]) || G.includes(id);
   }
-  // 從唱片櫃帶來的種子不能賣回換錢（店主 11-13 §0 護欄）
+  // 從唱片櫃帶來的種子不能賣回換錢（店主 11-13 §0 護欄；第 A 波起櫃檯交還老闆 $0，sellQuote）
   function isSeed(run, content, x) {
     const id = x && typeof x === 'object' ? x.id : x;
     return !!(run && id && Array.isArray(run.seeds) && run.seeds.includes(id));
+  }
+  // 櫃檯賣給老闆（第 A 波 5，店主 11-16「要去櫃檯賣給老闆才能移出包包，也是在局中備戰時發生，就是 Monster Train 的方式」）：
+  //   移出包包只有這一條（choose sell）。兩位客人之間（canShop）；包包裡；賣完至少留 5 張（bagFloor，'bagMin'）。
+  //   一般唱片半價（sellValue；特價箱的照特價算）；老闆送的（isGift）、從唱片櫃帶來的種子（isSeed）也可以交給老闆：老闆收回、$0（reclaim 'gift'｜'seed'）。
+  //   回 {ok:true, earn, reclaim:null|'gift'|'seed'} | {ok:false, error}（不改 run；畫面列「賣給老闆 $400」「交還老闆」用，choose sell 走同一套）
+  function sellQuote(run, content, id) {
+    if (!canShop(run)) return { ok: false, error: 'notNow' };
+    if (!Array.isArray(run.bag) || !run.bag.includes(id) || !cardOf(content, id)) return { ok: false, error: 'badSell' };
+    if (run.bag.length - 1 < bagFloor(run)) return { ok: false, error: 'bagMin' };
+    const reclaim = isSeed(run, content, id) ? 'seed' : isGift(run, content, id) ? 'gift' : null;
+    return { ok: true, earn: reclaim ? 0 : sellValue(content, cardOf(content, id)), reclaim };
   }
   // 自動遊玩挑種子：照最高星（峰值）挑，同星看總星、再看 id（決定性）
   function seedPolicy(content, ids, n) {
@@ -1384,8 +1523,10 @@
         if (!rew || rew.cardDone) return fail('noCardOffer');
         if (!rew.cards.includes(ch.cardId)) return fail('notOffered');
         if (run.bag.includes(ch.cardId)) return fail('owned');
-        // 有上限（--set bagMax=8）：照舊，滿了才要 dropId、沒滿給了也不理。不限（預設）：不用 dropId；給了（而且在包包裡）就照拿掉，不在包包裡 → 'badDrop'
-        const drop = bagLimited() ? (bagFull(run) ? ch.dropId : null) : (ch.dropId != null ? ch.dropId : null);
+        // 有上限（--set bagMax=8）：照舊，滿了才要 dropId、沒滿給了也不理。
+        //   不限（預設）：收獎勵時不能順手丟（第 A 波 5：移出包包只能去櫃檯賣給老闆）→ 給了 dropId 就 'counterOnly'
+        if (!bagLimited() && ch.dropId != null) return fail('counterOnly');
+        const drop = bagLimited() && bagFull(run) ? ch.dropId : null;
         if (bagLimited() && bagFull(run) && (!drop || !run.bag.includes(drop))) return fail('bagFull');
         if (drop != null && !run.bag.includes(drop)) return fail('badDrop');
         if (drop != null) {
@@ -1462,6 +1603,7 @@
         if (run.bag.includes(ch.cardId)) return fail('owned');
         const price = priceOf(content, ch.cardId);
         if (price == null) return fail('notInStock');
+        if (!bagLimited() && ch.sellId != null) return fail('counterOnly');   // 第 A 波 5：箱子買唱片不能順手賣（去櫃檯賣給老闆；錢不夠＝'noMoney'）
         let sell = null;
         if (ch.sellId != null) { if (!run.bag.includes(ch.sellId) || !cardOf(content, ch.sellId)) return fail('badSell'); if (isGift(run, content, ch.sellId)) return fail('giftNoSell'); if (isSeed(run, content, ch.sellId)) return fail('seedNoSell'); sell = ch.sellId; }
         else if (bagFull(run)) return fail('bagFull');            // 不限時不會滿：sellId 可給可不給（給了照賣、一換一）
@@ -1481,7 +1623,8 @@
         if (ids.some(id => run.bag.includes(id))) return fail('owned');
         const sells = ch.sellIds == null ? [] : ch.sellIds;
         if (!Array.isArray(sells)) return fail('badSell');
-        // 有上限：照舊，賣的張數要剛好等於放不下的（多賣 → 'badSell'）。不限：need＝0，sellIds 可給可不給、給幾張都照賣（賣完包包不能少於 5 張 → 'bagMin'）
+        if (!bagLimited() && sells.length) return fail('counterOnly');   // 第 A 波 5：特價箱買唱片不能順手賣（去櫃檯賣給老闆）；空陣列照收
+        // 有上限：照舊，賣的張數要剛好等於放不下的（多賣 → 'badSell'）。不限：need＝0、不收 sellIds（上一行；舊的「給幾張都照賣」拿掉了）
         const need = Math.max(0, run.bag.length + ids.length - bagCap());
         if (sells.length < need) return fail('bagFull');
         if ((bagLimited() && sells.length > need) || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
@@ -1512,18 +1655,19 @@
         effects.push({ radio: ch.cell, card: id });
         return { ok: true, effects };
       }
-      // 賣回（店主 11-16 包包不限之後才有的單獨動作）：{type:'sell', cardId}。兩位客人之間（canShop）、包包裡、不是老闆送的、不是種子；
-      //   半價（sellValue：特價箱的照特價算）；賣完包包不能少於手牌 5 張（'bagMin'）。賣掉的不回貨架；run.entered 不動（一趟留一張照樣可以留它）
+      // 櫃檯賣給老闆（第 A 波 5；移出包包只有這一條）：{type:'sell', cardId}。兩位客人之間（canShop）、包包裡；賣完至少留 5 張（'bagMin'）。
+      //   一般唱片半價（sellValue：特價箱的照特價算）；老闆送的、種子＝老闆收回 $0，effects 多 reclaim 'gift'｜'seed'，之後不再算送的／種子
+      //   （從 run.gifts／run.seeds 拿掉：之後再買回來＝買的，照半價）。賣掉的不回貨架；run.entered 不動（一趟留一張照樣可以留它）
       case 'sell': {
-        if (!canShop(run)) return fail('notNow');
-        const id = ch.cardId;
-        if (!run.bag.includes(id) || !cardOf(content, id)) return fail('badSell');
-        if (isGift(run, content, id)) return fail('giftNoSell');
-        if (isSeed(run, content, id)) return fail('seedNoSell');
-        if (run.bag.length - 1 < bagFloor(run)) return fail('bagMin');
-        const v = sellValue(content, cardOf(content, id));
-        run.bag.splice(run.bag.indexOf(id), 1); run.money += v; S.earned += v; S.sold.push(id);
-        effects.push({ loseCard: id, earn: v });
+        const id = ch.cardId, q = sellQuote(run, content, id);
+        if (!q.ok) return fail(q.error);
+        if (q.reclaim === 'gift') {
+          if (!Array.isArray(run.gifts)) run.gifts = (((content.gifts || {})[run.ace]) || []).filter(x => run.bag.includes(x));   // 舊的 run 沒有這欄：先補上
+          if (run.gifts.includes(id)) run.gifts.splice(run.gifts.indexOf(id), 1);
+        }
+        if (q.reclaim === 'seed' && Array.isArray(run.seeds)) run.seeds.splice(run.seeds.indexOf(id), 1);
+        run.bag.splice(run.bag.indexOf(id), 1); run.money += q.earn; S.earned += q.earn; S.sold.push(id);
+        effects.push(q.reclaim ? { loseCard: id, earn: 0, reclaim: q.reclaim } : { loseCard: id, earn: q.earn });
         return { ok: true, effects };
       }
       case 'buyRelic': {
@@ -1627,7 +1771,7 @@
   // 兩位客人之間怎麼買（§2.1.6）：'none' 不買；'smart' 看下一位客人的牌單（無限試煉：換牌、加星後，含他帶的王牌）主屬性 M，買 COUNTER_OF[M] 軸 ≥4 星、而且比包包裡該軸最強那張更強的唱片
   //   （包包滿就賣總星最少的那張；老闆送的不能賣，跳過），錢夠且還有空位就買加成 COUNTER_OF[M] 的配件
   //   包包不限（預設，店主 11-16）：同一條挑法，但要再加一個條件「放進包包 bagScore 會漲」（漲不到 BAG_EPS 不買，牌組變大會稀釋）、不用賣；
-  //   買完再「瘦身」（o.thin，預設開；thinPolicy）：賣掉每一軸都排不進包包前 5 名的牌（不是送的、不是種子），包包剩 5 張就停。
+  //   買完再去櫃檯「瘦身」（o.thin，預設開；thinPolicy＝choose sell）：賣掉每一軸都排不進包包前 5 名的牌（第 A 波起送的、種子也交還），包包剩 5 張就停。
   //   有上限（--set bagMax=8）：舊規則一字不差、不瘦身
   function shopPolicy(run, content, mode, o) {
     if (mode !== 'smart' || !canShop(run)) return [];
@@ -1669,19 +1813,21 @@
     return out;
   }
   // 包包瘦身（包包不限之後「拿了賣錢」那一半）：賣掉「在每一軸都排不進包包前 5 名」的牌（deadWeight：每一軸都有至少 5 張別的牌那軸星 ≥ 它
-  //   ＝它永遠不會是你手上那軸最好的那張，只會佔掉手牌的格子）。能賣的（不是送的、不是種子）裡先賣總星最少的，一次一張、重算；
+  //   ＝它永遠不會是你手上那軸最好的那張，只會佔掉手牌的格子）。先賣有錢拿的、再交還送的／種子（$0），同一類裡先賣總星最少的，一次一張、重算；
   //   沒有了、包包剩手牌張數（5）、或不能賣（canShop）就停。回傳 [{type:'sell', cardId}…]（照順序做；不改傳進來的 run）
   function deadWeight(content, bag, id) {
     const c = cardOf(content, id); if (!c) return true;
     const others = bag.filter(x => x !== id).map(x => cardOf(content, x)).filter(Boolean);
     return ATTRS.every(a => others.filter(o => star(o, a) >= star(c, a)).length >= CFG.handSize);
   }
+  //   第 A 波 5（櫃檯賣給老闆）：老闆送的、種子也能交還（$0），一樣看 deadWeight；先賣有錢拿的，再交還 $0 的（同一類裡總星少的先）
   function thinPolicy(run, content) {
     if (!canShop(run)) return [];
     const r = clone(run), out = [];
+    const free = x => isGift(r, content, x) || isSeed(r, content, x);
     for (let guard = 0; guard < 60 && r.bag.length > CFG.handSize; guard++) {
-      const pick = r.bag.filter(x => !isGift(r, content, x) && !isSeed(r, content, x) && deadWeight(content, r.bag, x))
-        .sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || (a < b ? -1 : a > b ? 1 : 0))[0];
+      const pick = r.bag.filter(x => deadWeight(content, r.bag, x))
+        .sort((a, b) => (free(a) ? 1 : 0) - (free(b) ? 1 : 0) || power(cardOf(content, a)) - power(cardOf(content, b)) || (a < b ? -1 : a > b ? 1 : 0))[0];
       if (pick == null) break;
       const ch = { type: 'sell', cardId: pick };
       if (!choose(r, content, ch).ok) break;
@@ -1835,7 +1981,7 @@
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, jumpTo, half, hintTableOf,
+    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, mercyPAt, titleAt, guestTitle, roundMains, mainAt, guestDef, sellQuote, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
     bagCap, bagLimited, bagFull, bagScore, bagGain, topAxes, bargainLane,

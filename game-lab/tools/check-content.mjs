@@ -286,7 +286,8 @@ export function shapeProblems(C, E) {
 const TRIAL_CURVE = {
   planner: ['easyTo', 'normalTo'], q: ['easy', 'normal', 'feintBase', 'feintStep', 'feintFrom', 'feintMax'],
   atk: ['lateFrom', 'rate', 'cap', 'slopeFrom', 'slopeEvery', 'boss', 'add'], def: ['lateFrom', 'rate', 'cap', 'boss', 'add'],
-  deck: ['floorBase', 'floorRate', 'floorMax', 'minPool', 'buffFrom', 'buffEvery', 'buffCap', 'aceFrom', 'aceRate', 'aceMax']
+  deck: ['floorBase', 'floorRate', 'floorMax', 'minPool', 'buffFrom', 'buffEvery', 'buffCap', 'aceFrom', 'aceRate', 'aceMax', 'mainShare'],
+  mercyP: ['from', 'p0', 'step', 'every', 'min']                    // 第 A 波 2：放水前期保留、第 11 位起照機率
 };
 function shapeTrial(C, E, ok) {
   const T = C.trial;
@@ -315,6 +316,12 @@ function shapeTrial(C, E, ok) {
   if (CV.planner) ok(CV.planner.easyTo <= CV.planner.normalTo, 'trial.curve.planner：easyTo ≤ normalTo');
   if (CV.q) ok(CV.q.easy > 0 && CV.q.easy <= 1 && CV.q.normal > 0 && CV.q.normal <= 1 && CV.q.feintMax >= 0 && CV.q.feintMax < 1, 'trial.curve.q：機率在 0–1');
   if (CV.deck) ok(CV.deck.buffCap <= 5 && CV.deck.aceMax <= 1 && CV.deck.floorMax <= 15, 'trial.curve.deck：加星上限 ≤5（一般卡最高 5 星）、王牌機率 ≤1');
+  if (CV.deck) ok(CV.deck.mainShare >= 0 && CV.deck.mainShare <= 1, 'trial.curve.deck.mainShare（客人主屬性那軸最高的牌至少幾成）0–1');
+  if (CV.mercyP) ok(int(CV.mercyP.from, 1) && int(CV.mercyP.every, 1) && [CV.mercyP.p0, CV.mercyP.step, CV.mercyP.min].every(x => x >= 0 && x <= 1) && CV.mercyP.min <= CV.mercyP.p0,
+    'trial.curve.mercyP：第 from 位起每手放水機率 p0、每 every 位 −step、最低 min（機率在 0–1、min ≤ p0）');
+  // 客人稱號（第 A 波 3；舊版 enemyForDepth）：8 個、每 2 位換一次，字照舊版
+  ok(Array.isArray(T.titles) && T.titles.length >= 2 && T.titles.every(x => typeof x === 'string' && x && [...x].length <= 8) && new Set(T.titles).size === T.titles.length && int(T.titleEvery, 1),
+    'trial.titles：稱號（字串、≤8 字、不重複）＋titleEvery（每幾位換一次）');
   ok(Array.isArray(T.tiers), 'trial.tiers（之後的難度階梯）要是陣列');
 }
 
@@ -438,7 +445,7 @@ export function contentProblems(C, E) {
   const NEED_UI = { prologue: [], pos: ['{n}'], round: ['{r}'], elite: [], boss: [], toCheckpoint: ['{n}'], checkpoint: ['{n}'], retryLeft: ['{n}'], next: ['{n}', '{name}'],
     guestDone: [], guestCur: [], guestLater: [], hasAce: [], hp: ['{n}', '{max}'], heal: ['{n}'], level: ['{n}'], xp: ['{n}', '{need}'], atk: ['{n}'], def: ['{n}'], maxHp: ['{n}'],
     atkShort: ['{n}'], defShort: ['{n}'], cont: [], abandon: [], abandonWarn: ['{where}'], lastSummary: [], shelfNew: [],
-    game: [], atkHelp: ['{n}'], defHelp: ['{n}', '最多擋一半'], eAtkHelp: ['{n}'] };
+    game: [], atkHelp: ['{n}'], defHelp: ['{n}', '最多擋一半'], eAtkHelp: ['{n}'], mainAttr: ['{attr}'] };
   for (const [k, ph] of Object.entries(NEED_UI)) ok(typeof TU[k] === 'string' && TU[k] && ph.every(x => TU[k].includes(x)), 'trial.ui.' + k + ' 要是字串' + (ph.length ? '、含 ' + ph.join(' ') : ''));
   ok(Array.isArray(TU.retryMenu) && TU.retryMenu.length === 2 && TU.retryMenu.every(x => typeof x === 'string' && x), 'trial.ui.retryMenu：說情兩顆（再一場／到這裡就好）');
   ok(TU.pos === '第 {n} 位', 'trial.ui.pos＝「第 {n} 位」（店主：頂欄只寫第 n 位）');

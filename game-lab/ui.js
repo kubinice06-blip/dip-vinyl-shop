@@ -69,7 +69,16 @@
     if (!r) return esc(TU('game'));                 // 還沒有這一趟（標題、序章開頭、再挑戰一趟挑王牌前）：「品味對決」（沒有日期、沒有雨夜；審查 #14）
     if (inPrologue(r)) return esc(TU('prologue'));
     var sub = TU('round', { r: r.round }) + (cls === 'elite' ? '・' + TU('elite') : cls === 'boss' ? '・' + TU('boss') : '');
-    return esc(TU('pos', { n: r.pos })) + '<small>' + esc(sub) + '</small>';
+    var nb = toRecordN(r);                          // 離最遠紀錄 3 位內：「再贏 N 位破紀錄」（第 A 波 4；打的當下就亮）
+    return esc(TU('pos', { n: r.pos })) + '<small>' + esc(sub) + '</small>' + (nb ? '<small class="rec" data-tut="to-record">' + esc(TU('toRecord', { n: nb })) + '</small>' : '');
+  }
+  // 再贏幾位破紀錄（＝走到第 最遠＋1 位）：1–3 才回（離紀錄 3 位內）；沒有紀錄（第一趟）、已經破了、這一趟結束了＝0
+  var REC_NEAR = 3;
+  function toRecordN(r) {
+    var far = r ? r.farBefore | 0 : 0;
+    if (!r || far <= 0 || r.over || !Number.isInteger(r.pos)) return 0;
+    var n = far + 1 - r.pos;
+    return n >= 1 && n <= REC_NEAR ? n : 0;
   }
   function dt(k, o) { var T = (C && C.duelText) || {}; return fill(T[k] || '', o); }
   // 經典／冷門／硬蕊 三個字上屬性色（esc 之後再換）
@@ -2567,11 +2576,44 @@
   }
   function makeRoom(to) {
     if (UI.screen !== 'night' || !to || !stg('has', 'f')) return;
+    if (save.run && UI.atTable === tableKey(save.run)) return;   // 在對戰台等你的客人（第 A 波 1）：那是他的位置，不讓開
     var f = stg('pos', 'f'); if (!f || f.hidden || f.outside) return;
     var near = function (a) { return a && Math.abs(a[0] - to[0]) < ROOM_DX && Math.abs(a[1] - to[1]) < ROOM_DY; };
     if (!near([f.x, f.y])) return;
     var alt = ['wait', 'atdoor'].map(function (k) { return [k, stg('spot', k)]; }).filter(function (x) { return x[1] && !near(x[1]); })[0];
     if (alt) stgP('walk', 'f', [alt[0]], (C.blocking && C.blocking.speed) || 54);
+  }
+  // ---- 挑戰者在對戰台等（第 A 波 1）：UI.atTable＝已經走到對戰台的那一位（runTag@第幾位）——來客畫面重畫（關抽屜、換王牌、重新整理）時他就站在那裡，
+  //   不再推門一次；第一次輪到他才推門、走進來（in → duelE），到了說他的開場那句
+  function tableKey(r) { return runTag(r) + '@' + r.pos; }
+  function guestWaits(r) { var id = r && r.order && r.order[r.idx], en = id && C.enemies[id]; return !!(en && !en.boss); }
+  function guestToTable(r) {
+    var id = r.order[r.idx], en = C.enemies[id] || {}, spr = enemySpr(en), key = tableKey(r);
+    var inside = !!(r.shop && r.shop.firstGuestInside) && r.idx === 0;
+    if (inside) { r.shop.firstGuestInside = false; persist(); }
+    var at = stg('pos', 'f');
+    // 已經走進來了（或自動遊玩、鏡頭快轉）：站到（走回）對戰台；序章收尾推門進來的那位（還在門邊）從原地走過去
+    if (UI.atTable === key || inside || UI.auto || UI.camQuick) {
+      var seen = UI.atTable === key; UI.atTable = key;
+      if (!seen && inside && at && !at.hidden && !at.outside && stg('has', 'f')) {
+        stg('sprite', 'f', spr); stg('sil', 'f', false);
+        stgP('walk', 'f', ['duelE'], TABLE_WALK).then(function () { arriveTable(key, id); });
+        return;
+      }
+      settle('f', 'duelE', spr); stg('sil', 'f', false); stg('door', 'close');
+      return;
+    }
+    UI.atTable = key;
+    stg('door', 'swing'); place('f', 'door', spr); stg('sil', 'f', false);
+    stgP('walk', 'f', ['in', 'duelE'], TABLE_WALK).then(function () { arriveTable(key, id); });
+  }
+  var TABLE_WALK = 90;                                         // 客人走到對戰台的速度（shop 預設 36；推門到對戰台約 2 秒）
+  function arriveTable(key, id) {
+    if (UI.screen !== 'night' || UI.atTable !== key || UI.going) return;
+    stg('door', 'close');
+    stg('faceTo', 'f', 'duelP');                               // 面向對戰台另一邊（你站上去的位置）
+    var intro = C.lines[id] && C.lines[id].intro;
+    if (intro && !qs('.ec-drawer', app())) stageSay('f', [].concat(intro)[0], null, 1800);
   }
   SCREENS.night = function () {
     var r = save.run;
@@ -2587,17 +2629,19 @@
     stg('hide', 'r1', false);                                  // 熟客：序章與收尾藏著，來客才出現（D §2）
     settle('o', 'counter', 'owner');
     if (UI.keepP && stg('has', 'p')) UI.keepP = false; else { UI.keepP = false; settle('p', UI.lastSpot || 'browse', 'player'); }
-    // 序章收尾 E10 推門進來的那位＝第 1 位：已經在店裡（門邊、不剪影），門外排的是再下一位
-    var inside = !!(r.shop && r.shop.firstGuestInside) && r.idx === 0;
-    var nx = r.order[r.idx], q = inside ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
-    if (inside && nx) { settle('f', waitSpot(), enemySpr(C.enemies[nx])); stg('sil', 'f', false); } else { hideActor('f'); stg('door', 'close'); }
+    // 挑戰者進門直接走到對戰台等你（第 A 波 1；店主 11-16）：這一位推門進來、走到對戰台（duelE）站著；門外排的是再下一位。
+    //   序章收尾 E10 推門進來的那位＝第 1 位：已經在店裡，從門邊走過去。傳說藏家照舊在門外（他有自己的進場那段，bossEnterFlow）
+    var nx = r.order[r.idx], waits = guestWaits(r);
+    var q = waits ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
+    if (waits) guestToTable(r); else { hideActor('f'); stg('door', 'close'); }
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
     var row = E.roundGuests(r, C).map(function (g, i) {
       var en = C.enemies[g.id] || {}, pl = TU('pos', { n: g.pos });
-      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name) + '">' +
+      // 稱號（第 A 波 3；engine guestTitle：每 2 位換一次、藏家／跟名字一樣＝null）：名字下面一行小字
+      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + (g.title ? g.title + ' ' : '') + en.name) + '">' +
         '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + '</span>' +
-        '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
+        '<span class="nm">' + esc(en.name || '') + '</span>' + (g.title ? '<span class="tl">' + esc(g.title) + '</span>' : '') + '</button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
     var nen = C.enemies[nx] || {}, toCp = E.toCheckpoint(r, C);
     var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b><span class="sub">' +
@@ -2610,8 +2654,8 @@
       '<button type="button" class="rl" data-a="relics" aria-label="發燒配件">' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span class="rn">' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span class="k">發燒配件</span><span class="rn">（還沒有）</span>') + '</button></div>';
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     guardClicks(box);
-    // 鏡頭 night（layout 有才用；沒有 stage 退回 full）：放不下整間店時從上往下裁（門口牆 FEATURE／PICKS 的名牌在最上面、唱盤區這裡用不到），
-    //   最少留到前排 JAZZ／TW 箱子（minH 290）；375×548 也看得到、點得到門口牆（整合版面 d）
+    // 鏡頭 night（layout 有才用；沒有 stage 退回 full）：放不下整間店時從牆頂往下裁、留下面（第 A 波 1：客人在對戰台等你，唱盤區要看得到；
+    //   原本 anchor top 留門口牆 FEATURE／PICKS 的名牌）。minH 290：375×548 門口牆的封面、門照樣點得到，名牌被裁掉
     cam('night', 'map', 600, Math.max(170, Math.ceil(naturalH(box) + 6)));
     box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a],[data-i]'); if (!b || UI.going) return;
@@ -2683,11 +2727,13 @@
     var cur = g.cur, done = g.done, ln = (C.lines[id] && C.lines[id].line) || en.line || '';
     // 菁英／傳說藏家的籤：名字本身就是這個詞（傳說藏家）就不再加（審查 #15）
     var tag = function (t) { return t && t !== en.name ? '<span class="gtag">' + esc(t) + '</span>' : ''; };
-    var tags = tag(g.cls === 'elite' ? TU('elite') : g.cls === 'boss' ? TU('boss') : '') + (g.hasAce ? tag(TU('hasAce')) : '');
+    var tags = (g.title ? tag(g.title) : '') + tag(g.cls === 'elite' ? TU('elite') : g.cls === 'boss' ? TU('boss') : '') + (g.hasAce ? tag(TU('hasAce')) : '');   // 稱號（第 A 波 3）
     // 聲望一行；品味／底氣各一行、後面一句說它在做什麼（客人的品味：扣到你就多扣；底氣跟你的一樣；審查 #11）
     var bl = '<div class="bl">' + esc('聲望 ' + g.hp) + '</div>' +
       (g.atk ? '<div class="bl st"><b>' + esc(TU('atk', { n: g.atk })) + '</b>' + esc(TU('eAtkHelp', { n: g.atk })) + '</div>' : '') +
-      (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '') + guestTuneHTML(en);
+      (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '') +
+      // 常出哪一色（第 A 波 6：客人主屬性，engine roundGuests[i].main）：「常出：冷門」，屬性字上三軸色
+      (g.main && E.ZH && E.ZH[g.main] ? '<div class="bl ma" data-main="' + esc(g.main) + '">' + colorZh(TU('mainAttr', { attr: E.ZH[g.main] })) + '</div>' : '') + guestTuneHTML(en);
     var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
       tags + bl + '</div></div>' +
@@ -2706,69 +2752,32 @@
     var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
     var id = r.order[r.idx], en = C.enemies[id] || {};
     if (en.boss) { later(function () { bossEnterFlow(); }, 200); return; }
-    // 第一位已經在店裡（序章收尾推門進來的那位）：不開門、不走進來，直接開打
-    if (r.shop && r.shop.firstGuestInside) { r.shop.firstGuestInside = false; persist(); later(function () { if (UI.screen === 'night') beginFight({ enter: true }); }, UI.auto ? 120 : 300); return; }
-    hideActor('q1');
-    stg('door', 'swing'); place('f', 'door', enemySpr(en)); stg('sil', 'f', false);
-    var intro = C.lines[id] && C.lines[id].intro;
-    stgP('walk', 'f', ['in']).then(function () { if (intro) stageSay('f', [].concat(intro)[0], null, 1500); });
-    later(function () { if (UI.screen === 'night') beginFight({ enter: true }); }, UI.auto ? 300 : 1100);
+    if (r.shop && r.shop.firstGuestInside) { r.shop.firstGuestInside = false; persist(); }
+    // 他在對戰台等（第 A 波 1）：你走到對戰台（duelP）就開打；他還在路上就一起過去（duelIn 把兩個人放到位）
+    if (UI.atTable !== tableKey(r)) { UI.atTable = tableKey(r); settle('f', 'duelE', enemySpr(en)); stg('sil', 'f', false); }
+    var start = function () { if (UI.screen === 'night' && save.run === r) beginFight({ enter: true }); };
+    var p = stg('pos', 'p'), sp = stg('spot', 'duelP');
+    if (UI.auto || !p || p.hidden || p.outside || !sp || (Math.round(p.x) === sp[0] && Math.round(p.y) === sp[1])) { later(start, UI.auto ? 120 : 200); return; }
+    stg('pose', 'p', null);
+    stgP('walk', 'p', ['duelP'], 110).then(start);
   }
-  // 包包（來客畫面包包條點開）：王牌＋包包每一張。包包不限張數（店主 11-16「可以無限多直到結束才重置」）：張數多了面板自己捲（標題列黏在上面），
-  //   375×548 也不爆版。兩位客人之間（engine.canShop）每張底下「賣 $n」（半價，engine.sellValue）：點了底下那條先問「賣掉《…》？」→「賣掉 +$n」
-  //   才賣（engine.choose sell）——包包變長後玩家自己瘦身的地方。老闆送的、櫃裡帶來的標小籤、不給賣；包包剩 5 張（手牌補得滿，engine 'bagMin'）
-  //   鈕停用、寫原因。賣完：吐司「《…》賣掉，+$n」、包包條的錢與張數跟著變
-  var BAG_HINT_AT = 10;                                        // 包包賣回的一次性提示：包包幾張以上才出（開局 7 張、序章那一趟 8 張；打贏兩三位之後）
+  // 包包（來客畫面包包條點開）：王牌＋包包每一張，只看、點封面開唱片資訊（第 A 波 5：移出包包只走櫃檯「賣給老闆」，包包面板不給賣）。
+  //   包包不限張數（店主 11-16「可以無限多直到結束才重置」）：張數多了面板自己捲（標題列黏在上面），375×548 也不爆版。
+  //   老闆送的、櫃裡帶來的標小籤；兩位客人之間說明那行指去櫃檯（C.shopUi.bagNote）
+  var BAG_HINT_AT = 10;                                        // 「拿去櫃檯賣給老闆」的一次性提示：包包幾張以上才出（開局 7 張、序章那一趟 8 張；打贏兩三位之後）
   function bagSheet(r) {
-    var pick = null, floor = (E.CFG && E.CFG.handSize) || 5;
-    if (E.canShop(r) && !save.seen.bagSell) { save.seen.bagSell = true; persist(); }   // 能賣的時候自己點開過：「點包包可以賣回」的提示不用再出
     var tag = function (cls, t) { return '<span class="sdtag' + (cls ? ' ' + cls : '') + '">' + esc(t) + '</span>'; };
-    var body = function () {
-      var shop = E.canShop(r), atMin = r.bag.length <= floor;
-      if (!shop || (pick && r.bag.indexOf(pick) < 0)) pick = null;
-      var pc = pick ? card(pick) : null;
-      var tiles = tileHTML(card(aceIdOf(r)), { text: false }) + r.bag.map(function (id) {
-        var c = card(id); if (!c) return '';
-        var sd = E.isSeed(r, C, id), gf = shop && !sd && E.isGift(r, C, id);   // 從唱片櫃帶來的（種子）：小籤「櫃裡帶來」；老闆送的：逛店時標「老闆送的」（都不能賣回）
-        var o = { text: false, store: isStore(id), sel: id === pick, cls: sd ? 'seed' : gf ? 'gift' : '', extra: sd ? tag('', SHU('seedTag')) : gf ? tag('gf', SHU('giftTag')) : '' };
-        if (shop && !sd && !gf) { o.pick = SHU('bagSellBtn', { n: E.moneyText(E.sellValue(C, c)) }); o.disabled = atMin; }
-        return tileHTML(c, o);
-      }).join('');
-      var note = shop ? '<p class="sub bgnote' + (atMin ? ' warn' : '') + '">' + esc(atMin ? SHU('bagSellMin', { n: floor }) : SHU('bagSellNote')) + '</p>' : '';
-      var foot = pc ? '<div class="foot bgsell"><p class="ask">' + esc(SHU('bagSellAsk', { album: pc.album })) + '</p><div class="two">' +
-        '<button type="button" class="lb-btn" data-a="sno">' + esc(SHU('bagSellNo')) + '</button>' +
-        '<button type="button" class="lb-btn pri" data-a="sgo">' + esc(SHU('bagSellGo', { n: E.moneyText(E.sellValue(C, pc)) })) + '</button></div></div>' : '';
-      return '<div class="hd"><h3>' + esc(bagText(r.bag.length)) + '</h3>' + (shop ? '<span class="bgmoney">' + moneyHTML(r.money) + '</span>' : '') +
-        '<button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
-        '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p>' + note + '<div class="lb-pick">' + tiles + '</div>' + foot;
-    };
-    var s = floatSheet(body(), 'bag tall');
-    // 重畫（捲到哪裡留在哪裡）；問「賣掉《…》？」那條出來時，選的那張被它蓋到就往上捲一點
-    var redraw = function () {
-      var y = s.scrollTop; s.innerHTML = body(); s.scrollTop = y;
-      s.classList.toggle('asking', !!pick);
-      var ft = pick && qs('.foot', s), tl = ft && qsa('.lb-ct', s).filter(function (x) { return x.getAttribute('data-cid') === pick; })[0];
-      if (ft && tl) { var d = tl.getBoundingClientRect().bottom - ft.getBoundingClientRect().top + 6; if (d > 0) s.scrollTop += d; }
-    };
-    s.addEventListener('click', function (e) {
-      var t = e.target.closest && e.target.closest('[data-pick],[data-a=sno],[data-a=sgo]');
-      if (!t || t.disabled || !s.contains(t)) return;
-      if (t.hasAttribute('data-pick')) { var id = t.getAttribute('data-pick'); pick = pick === id ? null : id; sfx(pick ? 'select' : 'tick'); redraw(); return; }
-      if (t.getAttribute('data-a') === 'sno') { pick = null; sfx('tick'); redraw(); return; }
-      var sid = pick; if (!sid) return;
-      var res = doChoose({ type: 'sell', cardId: sid });
-      pick = null;
-      if (!res || !res.ok) {
-        var why = res && res.error;
-        if (why === 'bagMin') toast(SHU('bagSellMin', { n: floor })); else if (why === 'seedNoSell') toast(SHU('seedNoSell'));
-        redraw(); return;
-      }
-      sfx('readHit');
-      var f = (res.effects || []).filter(function (x) { return x.loseCard; })[0];
-      toast(SHU('sold', { album: (card(sid) || {}).album || '', n: E.moneyText((f && f.earn) || 0) }));
-      redraw(); syncBagline(r);
-    });
-    return s;
+    var shop = E.canShop(r);
+    var tiles = tileHTML(card(aceIdOf(r)), { text: false }) + r.bag.map(function (id) {
+      var c = card(id); if (!c) return '';
+      var sd = E.isSeed(r, C, id), gf = shop && !sd && E.isGift(r, C, id);   // 從唱片櫃帶來的（種子）：小籤「櫃裡帶來」；老闆送的：逛店時標「老闆送的」
+      return tileHTML(c, { text: false, store: isStore(id), cls: sd ? 'seed' : gf ? 'gift' : '', extra: sd ? tag('', SHU('seedTag')) : gf ? tag('gf', SHU('giftTag')) : '' });
+    }).join('');
+    var note = shop ? '<p class="sub bgnote">' + esc(SHU('bagNote')) + '</p>' : '';
+    var html = '<div class="hd"><h3>' + esc(bagText(r.bag.length)) + '</h3>' + (shop ? '<span class="bgmoney">' + moneyHTML(r.money) + '</span>' : '') +
+      '<button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p>' + note + '<div class="lb-pick">' + tiles + '</div>';
+    return floatSheet(html, 'bag tall');
   }
   // 包包面板賣回之後：來客的包包條（錢、包包張數）跟著變，不重畫整個來客畫面
   function syncBagline(r) {
@@ -2928,6 +2937,8 @@
     if (scr === 'home') { homeAction(action); return; }
     if (action === 'home' && scr === 'taipei') { goHome(UI.taipeiBack || 'title'); return; }
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
+    // 對戰台（第 A 波 1）：來客畫面＝走過去開打（跟「下一位」一樣）；其他畫面不理
+    if (action === 'duel') { if (scr === 'night' && save.run && E.nextStep(save.run) === 'fight') nextGuest(); return; }
     // 櫃檯：來客、兩位客人之間＝配件櫃（B3 的經濟介面）；其他畫面照舊老闆一句
     if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop'); return; }
     // 來客畫面點老闆：第 1 位開打前＝「聊聊／換一張王牌」（店主 11-13）

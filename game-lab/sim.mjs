@@ -14,6 +14,8 @@
 //   包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity）：獎勵照 runPolicy（收這張 bagScore 漲才拿，見 engine 檔頭）、買照 shopPolicy（要漲才買、不用賣）＋瘦身（thinPolicy：
 //            賣掉每一軸都排不進包包前 5 名的牌）；收音機那張也要漲才買。--no-thin＝不瘦身（只靠「不拿」控制牌組大小）。
 //            --set bagMax=8＝舊規則對照（choose／策略走舊路、收音機包包滿賣最弱的；JSON 跟改版前逐字相同）。不限時 JSON 的 end 多 bagN（最後幾張）、bagMaxN（最多幾張）、sold（賣掉幾張）
+//   第 A 波（店主 11-16）：賣牌只走櫃檯（engine choose sell；收獎勵、買唱片不能順手丟／賣）＝shopPolicy 的 thinPolicy；老闆送的、種子也會交還（$0）。
+//            客人主屬性（engine roundMains／mainAt）：收音機挑格照 guestDef（換牌、加星後、照主屬性組的牌）。多印一張「客人出牌三色、放水、交還老闆」表（JSON 每格多 eplay）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
 //   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；
 //            ＋收音機（v5 第六項第二期）：每輪第一次能買東西時轉一次（radioSmart：挑抽卡池裡「剋下一位主屬性那軸」平均星最高的那格），買得起就買（照原價；
@@ -139,8 +141,10 @@ const V3 = {
 // ---------------- play one duel to the end ----------------
 function play(duel, pol, R, mem) {
   const fn = EN.policies[pol]; let g = 0;
+  duel._mN = 0; duel._mOn = 0;
   while (!duel.over) {
     if (++g > 20) throw new Error('runaway duel');
+    if (duel.e.mercyP != null && duel.plan) { duel._mN++; if (duel.plan.mercy) duel._mOn++; }   // 第 11 位起：這手有沒有放水（plan.mercy；只記不讀）
     const act = fn(duel, R, mem, C);
     if (!EN.isLegal(duel, act)) throw new Error('illegal act from ' + pol + ': ' + JSON.stringify(act));
     const ev = EN.resolveTurn(duel, act);
@@ -158,7 +162,7 @@ const bagPower = run => run.bag.reduce((s, id) => s + EN.power(C.cards[id]), 0) 
 function radioSmart(run, R) {
   if (!EN.canRadio || !EN.canRadio(run)) return;
   const id = run.order[run.idx], E = C.enemies[id]; if (!E) return;
-  const g = EN.trialDeck(C, id, run.pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier, cls: EN.classAt(run.pos) });
+  const g = EN.guestDef(run, C, id, run.pos);                         // 換牌、加星、照主屬性組的那副（＝startFight 會打到的）
   const deck = g.deck.slice(); if (g.ace) deck.push(g.ace);
   const T = EN.COUNTER_OF[EN.deckMain(deck, E.taste)];
   let best = null, bv = -1;
@@ -188,6 +192,7 @@ function runOnce(pol, flow, i, A) {
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0, bagMaxN = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
+  const EP = A.ep;                                                      // 客人出牌三色、提示三色、出主屬性那色的手、放水、交還老闆（第 A 波）
   for (let guard = 0; ; guard++) {
     if (guard > 40 * CAP + 400) throw new Error('runaway run ' + seedKey + ' ' + pol + ' ' + flow);
     if (run.over) break;
@@ -212,7 +217,10 @@ function runOnce(pol, flow, i, A) {
       const ch = EN.runPolicy(run, C); ok(EN.choose(run, C, ch), 'runPolicy', ch); continue;
     }
     if (step !== 'fight' && step !== 'prologue') throw new Error('unexpected step ' + step);
-    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart', NO_THIN ? { thin: false } : undefined)) ok(EN.choose(run, C, ch), 'shopPolicy', ch);
+    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart', NO_THIN ? { thin: false } : undefined)) {
+      const r = EN.choose(run, C, ch); ok(r, 'shopPolicy', ch);
+      for (const e of r.effects) if (e.reclaim) EP.reclaim[e.reclaim]++;
+    }
     if (flow === 'smart' && EN.canShop(run)) radioSmart(run, RADIO);
     if (run.money < 0) throw new Error('money < 0');
     const prologue = step === 'prologue', d = run.pos, att = retryAt === d ? 1 : 0;
@@ -222,6 +230,11 @@ function runOnce(pol, flow, i, A) {
     const f = EN.startFight(run, C, APEX ? { apex: true } : {});
     if (!f) throw new Error('startFight null at ' + d);
     const duel = play(f.duel, pol, R, mem), hands = duel.stats.hands, by = duel.over.by;
+    if (!prologue) {
+      const mn = duel.e.main;
+      for (const l of duel.log) { EP.play[l.eAttr]++; EP.hint[l.hint]++; EP.hands++; if (mn) { EP.mHands++; if (l.eAttr === mn) EP.mPlay++; if (l.hint === mn) EP.mHint++; } }
+      EP.mercyN += duel._mN | 0; EP.mercyOn += duel._mOn | 0;
+    }
     const res = EN.finishFight(run, C);
     if (prologue) { manTries++; continue; }
     maxHands = Math.max(maxHands, hands);
@@ -262,7 +275,8 @@ const HBANDS = [[1, 3], [4, 6], [8, 12], [18, 22], [48, 52]];
 const REACH = [5, 10, 20, 50, 100];
 function runCell(pol, flow, n) {
   const NP = CAP + 2, z = () => new Float64Array(NP);
-  const A = { reached: z(), deaths: z(), att: z(), win: z(), att1: z(), win1: z(), hands: z(), r6: z(), bar: z(), ko: z() };
+  const A = { reached: z(), deaths: z(), att: z(), win: z(), att1: z(), win1: z(), hands: z(), r6: z(), bar: z(), ko: z(),
+    ep: { play: { c: 0, o: 0, h: 0 }, hint: { c: 0, o: 0, h: 0 }, hands: 0, mHands: 0, mPlay: 0, mHint: 0, mercyN: 0, mercyOn: 0, reclaim: { gift: 0, seed: 0 } } };
   if (APEX) A.ax = { fights: 0, used: 0, nSum: 0, nHist: [0, 0, 0, 0, 0, 0, 0], dSum: 0, healSum: 0, hitHand: 0, hw: 0, hl: 0, ht: 0, netSum: 0, rev: { honest: 0, bluff: 0 },
     hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0 };
   const recs = [];
@@ -306,8 +320,11 @@ function runCell(pol, flow, n) {
       ...(EN.bagLimited() ? {} : { bagN: avg('bagN'), bagMaxN: avg('bagMaxN'), bagMaxMax: Math.max(...recs.map(r => r.bagMaxN)), sold: avg('sold') }) },   // 包包不限才有（--set bagMax=8 時 JSON 跟改版前一樣）
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
+    eplay: { play: shareOf(A.ep.play), hint: shareOf(A.ep.hint), hands: A.ep.hands, mainPlay: A.ep.mHands ? A.ep.mPlay / A.ep.mHands : null, mainHint: A.ep.mHands ? A.ep.mHint / A.ep.mHands : null,
+      mercyOn: A.ep.mercyN ? A.ep.mercyOn / A.ep.mercyN : null, mercyHands: A.ep.mercyN, reclaim: { gift: A.ep.reclaim.gift / n, seed: A.ep.reclaim.seed / n } },
   };
 }
+const shareOf = o => { const t = o.c + o.o + o.h; return t ? { c: o.c / t, o: o.o / t, h: o.h / t } : null; };
 
 // ---------------- S5：序章男子（新包包 7 張＝禮物 4＋特價箱三色各一，沒有配件；你 12 聲望） ----------------
 function manFight(pol, i) {
@@ -368,6 +385,12 @@ if (MODE === 'all' || MODE === 'runs') {
     console.log('|---|---|---|---|---|');
     for (const x of rows) { const e = x.end; console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.bagN.toFixed(1)} | ${e.bagMaxN.toFixed(1)}／${e.bagMaxMax} | ${e.sold.toFixed(2)} |`); }
   }
+
+  console.log(`\n客人出牌（第 A 波：主屬性、放水照位數機率、櫃檯交還；客人場、每手）：\n`);
+  console.log('| 策略 | 流程 | 他出 經／冷／硬（%） | 他提示 經／冷／硬（%） | 出主屬性那色／提示主屬性那色 | 第 11 位起這手放水 | 每趟交還老闆 送的／種子 |');
+  console.log('|---|---|---|---|---|---|---|');
+  for (const x of rows) { const e = x.eplay, s3 = o => o ? [o.c, o.o, o.h].map(p0).join('／') : '—';
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${s3(e.play)} | ${s3(e.hint)} | ${pct(e.mainPlay)}／${pct(e.mainHint)} | ${pct(e.mercyOn)}（${e.mercyHands} 手） | ${e.reclaim.gift.toFixed(2)}／${e.reclaim.seed.toFixed(2)} |`); }
 
   const PCOLS = 16;
   console.log(`\n每一位：首戰勝率／單位死亡率（%；到過的趟 <200 打括號）\n`);

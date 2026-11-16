@@ -203,14 +203,23 @@
       // 說真話機率 q：easy 1、normal 0.85、hard 1−min(0.55, 0.18＋0.05×max(0, 位−5))（第 5 位 0.82、第 13 位起封底 0.45）
       q: { easy: 1, normal: 0.85, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },
       mercyFeint: 0.8,                              // 放水：你落後時他少唬，唬人率 ×(1−0.8×mercy)（舊版 roguelike.html:3693-3695）
+      // 放水前期保留、後期照機率（店主 11-16 選 C；engine mercyPAt）：第 1–10 位每手都放水；第 11 位起每手照機率才放水，
+      //   p＝max(min, p0 − step×⌊(位−from)/every⌋)：第 11–15 位 90%、16–20 位 80%…第 46 位起 20%（畫面不顯示；同一場同一手一定一樣）
+      mercyP: { from: 11, p0: 0.9, step: 0.1, every: 5, min: 0.2 },
       // 客人品味（他這手扣到你才加，再扣你的底氣）：min(2, round(0.75×max(0, 位−3)))＋⌊max(0, 位−6)/5⌋，藏家 +1；add＝之後難度階梯用
       atk: { lateFrom: 3, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },
       // 客人底氣（最多擋一半）：min(1, round(0.45×max(0, 位−3)))，藏家 +1
       def: { lateFrom: 3, rate: 0.45, cap: 1, boss: 1, add: 0 },
       // 客人牌組：三軸總星下限 min(13, 3＋⌊0.7×位⌋)（低於的換掉）；主軸加 ⌊max(0, 位−3)/3⌋ 星、上限 5；
       //   藏家必帶王牌；一般客人第 5 位起帶王牌機率 min(60%, 15%×(位−4))
-      deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6 }
+      //   mainShare：客人主屬性（第 A 波 6，店主問「為何對手都打經典」）：每位客人有主屬性，同一輪一般 3 位經／冷／硬各一、菁英與藏家照種子輪（engine roundMains）；
+      //     牌組至少 round(0.7×張數) 張是主屬性那軸最高的牌（他自己的先留，不夠從池子補）、其他格子另外兩軸輪流補，加星加在主屬性那軸。0＝只標示、不改牌組
+      deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6, mainShare: 0.7 }
     },
+    // 客人稱號（第 A 波 3；舊版 roguelike.html enemyForDepth 的 titles，原字照搬）：每 titleEvery 位換一次，第 15 位起停在品味之神。
+    //   顯示在來客條與對決他名字旁（engine guestTitle：傳說藏家不掛稱號〔舊版藏家的稱號就是「傳說藏家」〕、跟他的名字一樣的不重複掛）
+    titles: ['音樂小白', '文青同好', '社團學長', '資深樂評', '二手店老闆', '地下廠牌主理人', '品味行家', '品味之神'],
+    titleEvery: 2,
     tiers: [],
     // ---- 畫面字（{x} 由畫面代入；第二棒 ui.js 用）----
     ui: {
@@ -236,7 +245,11 @@
       shelfNew: '這一趟新認識',
       // 換王牌（店主 11-13：開局沿用上次那張；第 1 位開打前，來客畫面點老闆才換）。aceAsk＝換王牌面板的標題（老闆說的）
       owner: '老闆', aceTalk: '聊聊', aceSwap: '換一張王牌', aceSwapSub: '老闆送的那幾張也跟著換',
-      aceNow: '現在帶的：{title}《{album}》', aceAsk: '「想換一張？」', aceHint: '想換王牌，點老闆。', aceSwapped: '王牌換成《{album}》'
+      aceNow: '現在帶的：{title}《{album}》', aceAsk: '「想換一張？」', aceHint: '想換王牌，點老闆。', aceSwapped: '王牌換成《{album}》',
+      // 客人主屬性（第 A 波 6）：客人資訊那一行；{attr}＝engine.ZH[main]（經典／冷門／硬蕊；roundGuests[i].main、view.eMain）
+      mainAttr: '常出：{attr}',
+      // 第 A 波 4（演出與字）：對決頂欄離最遠紀錄 3 位內（{n}＝再贏幾位才破）；打贏時大章下的連勝（{n}＝打贏這位之後的連勝）；剩 1–2 聲望贏下的大章
+      toRecord: '再贏 {n} 位破紀錄', streak: '連勝 {n}', closeWin: '險勝！'
     },
     // 升級三選一（第一格固定是品味或底氣；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
     //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）
@@ -653,7 +666,9 @@
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
-    tapOn: '點一下繼續'   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
+    tapOn: '點一下繼續',   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
+    // 讀對了就說出來（第 A 波 4，規劃書三＋四 ①）：剋中他（照實出）結果句前加 readRight；他唬人、你照他真正出的剋中＝seeThrough（取代「他唬你！」那句）
+    readRight: '讀對了。', seeThrough: '你看穿了！『{key}』是{hint}，他出的是{e}。', seeThroughNoKey: '你看穿了！提示是{hint}，他出的是{e}。'
   };
   C.duelTextTag = '新';
   // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄寫全名；duel.js 只把屬性第一個字上色、第二個字黑、剋灰（店主 11-12）
@@ -825,7 +840,11 @@
     aceLater: L('想換王牌？下一趟開門前再說。', '新'),
     aceKeep: L('好，就帶這張。', '新'),                          // 頂點卡試做（?apex=1）：同一派換另一張頂點卡（送的四張沒換）
     nightIntro: [L('客人一個一個來，打到輸為止。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新'),
-      L('用不到的唱片，點「包包」可以賣回，半價。', '新')],   // 第 4 句：包包不限張數之後（店主 11-16）玩家自己瘦身的入口在包包面板
+      L('用不到的唱片，拿去櫃檯賣給老闆，半價。', '新')],   // 第 4 句：移出包包只能在兩位客人之間去櫃檯賣給老闆（第 A 波 5；店主 11-16「就是 Monster Train 的方式」）
+    // 第 A 波：險勝（剩 1–2 聲望贏下，大章換「險勝！」時老闆補一句）；櫃檯交還老闆送的／櫃裡帶來的（$0）那一下老闆說的
+    closeWin: L('好險，差一點就輸了。', '新'),
+    reclaimGift: L('送你的，我先收回來。', '新'),
+    reclaimSeed: L('你自己的那張？我先替你收著。', '新'),
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
     boothEmpty: L('唱片櫃還空著。贏一場再來聽。', '新'),
@@ -861,7 +880,7 @@
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
-    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆', aceKeep: '老闆',
+    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆', aceKeep: '老闆', closeWin: '老闆', reclaimGift: '老闆', reclaimSeed: '老闆',
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）',
     homeBtn: '（畫面字）', homeTitle: '（畫面字）', homeSub: '（畫面字）', homeNote: '（畫面字）', homeEmpty: '（畫面字）', homeShelf: '（畫面字）', homeDeck: '（畫面字）',
     homeConsole: '（畫面字）', homeShelfSub: '（畫面字）', homeDeckSub: '（畫面字）', homeDeckEmpty: '（畫面字）', homePut: '（畫面字）', homeOnDeck: '（畫面字）', homeStop: '（畫面字）', homeNow: '（畫面字）', homeIdle: '（畫面字）',
@@ -874,10 +893,8 @@
     binTitle: '{label}',
     buy: '買 ${n}',
     noMoney: '錢不夠',
-    sellPick: '賣這張',              // 錢不夠、賣一張就夠：先賣子面板的鈕（包包不限張數之後只剩這條是「先賣」，店主 11-16）
-    giftTag: '老闆送的',             // 先賣子面板：老闆送的（王牌那組四張；engine.isGift）不能賣，標這三個字、不能選（FIXLIST 11 追加）
-    seedTag: '櫃裡帶來',             // 從唱片櫃帶來的種子（engine.isSeed）：先賣子面板、包包條的小籤（店主 11-13 §0：不能賣回換錢）
-    seedNoSell: '從唱片櫃帶來的不能賣',   // 點了種子那張：說明（SPEC 從唱片櫃挑牌開局 §1 裁定 8）
+    giftTag: '老闆送的',             // 老闆送的（王牌那組四張；engine.isGift）：包包面板、櫃檯「賣給老闆」的小籤（交還老闆，$0）
+    seedTag: '櫃裡帶來',             // 從唱片櫃帶來的種子（engine.isSeed）：包包面板、櫃檯「賣給老闆」的小籤（交還老闆，$0）
     bought: '《{album}》進包包，−${n}',
     sold: '《{album}》賣掉，+${n}',
     relicTitle: '櫃檯的配件',
@@ -895,8 +912,6 @@
     bag: '包包 {n} 張',                 // 包包不限張數（店主 11-16）：只寫張數，不寫上限（抽屜標題、來客包包條、領獎面板）
     binEmpty: '這一箱賣完了，下一輪再補。',
     owned: '包包裡有了',
-    moneyShort: '錢不夠：先賣一張，半價 ${n}',
-    sellFirst: '先賣一張',
     relicSell: '賣這件',
     relicSold: '「{name}」賣掉，+${n}',
     relicEmpty: '櫃檯的配件賣完了，下一輪再補。',
@@ -907,14 +922,23 @@
     prev: '上一張',
     next: '下一張',
     infoAria: '唱片資訊、試聽',
-    // 包包面板（來客畫面點「包包」）：兩位客人之間自己賣回（engine.choose sell；店主 11-16 包包不限張數之後，玩家自己瘦身的地方）
-    bagSellNote: '兩位客人之間可以賣回，半價。',
-    bagSellBtn: '賣 ${n}',                  // 每張底下的鈕（{n}＝engine.sellValue）
-    bagSellAsk: '賣掉《{album}》？',         // 點了「賣」：底下那條先問一次
-    bagSellGo: '賣掉 +${n}',
-    bagSellNo: '算了',
+    // 櫃檯賣給老闆（第 A 波 5；店主 11-16「要去櫃檯賣給老闆才能移出包包，這也是在局中備戰時發生，就是 Monster Train 的方式」）：
+    //   移出包包只走櫃檯（engine.choose sell＋sellQuote）；櫃檯抽屜兩個分頁「配件／賣給老闆」。一般唱片半價；老闆送的、櫃裡帶來的交還老闆（$0）
+    relicTab: '配件', sellTab: '賣給老闆',
+    sellTitle: '賣給老闆',
+    sellNote: '半價收。老闆送的、櫃裡帶來的交還老闆。',
+    sellAsk: '賣掉《{album}》？',            // 點一張：底下那條先問一次
+    sellGo: '賣給老闆 +${n}',
+    reclaimAsk: '把《{album}》交還老闆？',
+    reclaimGo: '交還老闆',
+    reclaimTag: '交還老闆',                  // 送的／種子那格封面下的字（不寫錢）
+    reclaimed: '《{album}》交還老闆',          // 吐司
+    sellNo: '算了',
     bagSellMin: '包包至少留 {n} 張，手牌才補得滿。',   // {n}＝engine.CFG.handSize（engine 'bagMin'）
-    bagSellHint: '包包越塞越滿？點「包包」可以賣回，半價。'   // 一次性提示（save.seen.bagSell）：兩位客人之間、包包 10 張以上，包包那顆閃三下＋吐司
+    goCounter: '去櫃檯賣唱片',               // 箱子／特價箱錢不夠：鈕下面的小字（買唱片時不能順手賣，engine 'counterOnly'）
+    // 包包面板（來客畫面點「包包」）：只看、點封面開唱片資訊；說明那行指去櫃檯
+    bagNote: '要拿出包包：兩位客人之間，去櫃檯賣給老闆。',
+    bagSellHint: '包包越塞越滿？拿去櫃檯賣給老闆，半價。'   // 一次性提示（save.seen.bagSell）：兩位客人之間、包包 10 張以上，老闆頭上閃一下＋吐司
   };
   C.shopUiTag = '新';
 
@@ -966,7 +990,9 @@
   // 結算（這一趟結束）：「走到第 23 位・最多連贏 12 位・收了 9 張」（店主 11-12）；標題畫面的紀錄「最遠：第 23 位」
   C.summary = { title: '試煉結束', reached: '走到第 {n} 位', streak: '最多連贏 {n} 位', taken: '收了 {n} 張', wins: '贏了 {n} 位', none: '這一趟沒收唱片',
     best: '最遠：第 {n} 位', newRecord: '新紀錄', checkpoints: '中繼點：第 {list} 位', again: '再挑戰一趟',
-    more: '還有 {n} 張，點了開唱片櫃' };                // 結算那面牆只排一排，多的收成「+N」那格（讀屏念這句）
+    more: '還有 {n} 張，點了開唱片櫃',                 // 結算那面牆只排一排，多的收成「+N」那格（讀屏念這句）
+    // 差一點摘要（第 A 波 4，規劃書三＋四「都是真的資訊，不造假」）：走到的那一列後面的小籤；輸掉那場他剩的聲望與翻盤那一手
+    toBreak: '差 {n} 位破紀錄', closeHp: '他只剩 {n} 聲望', flipBy: '第 {k} 手被{e}剋{p}翻盤', flipAt: '第 {k} 手被他翻盤' };
   C.summaryTag = '新';
 
   // ===================================================================
