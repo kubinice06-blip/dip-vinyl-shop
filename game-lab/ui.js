@@ -301,6 +301,28 @@
   function apexOwnedNow(sv) { return E.ownedApex ? E.ownedApex(C, ownFn(sv), { tiers: unlockedNow(sv) }) : []; }
   // newRun／fixUnlock 的解鎖參數：已解鎖的派、初始流派、旗標開時擁有的頂點卡（旗標只看網址，每次載入照現在的旗標同步進 run）
   function unlockArgs(sv, start) { var o = { unlocked: unlockedNow(sv), start: start || lastTier(sv) }; if (UI.apex) o.apexOwned = apexOwnedNow(sv); return o; }
+  // 介面棒（scratchpad v5/unlock CONTRACT 第 4 節）：流派名稱的代入值（新字寫「殿堂（經典）」；店主 11-16 定的新名稱先用括號帶著，既有字不大改）
+  function tierVars(t) { return { title: (C.aceTitle || {})[t] || '', axis: ZH[(C.aceAxis || {})[t]] || '' }; }
+  // 這一趟能換的（引擎 aceChoices：已解鎖的派；旗標開＝擁有的頂點卡）。沒有解鎖制的舊引擎＝三派都能換
+  function choicesOf(r) {
+    var ch = r && E.aceChoices ? E.aceChoices(r, C) : null;
+    return { tiers: ch && Array.isArray(ch.tiers) && ch.tiers.length ? ch.tiers : TIERS.slice(), apex: ch && Array.isArray(ch.apex) ? ch.apex : null };
+  }
+  // 點老闆有沒有東西可以換：別的派解鎖了，或（旗標開）同一派收到別張
+  function canSwapAny(r) {
+    var ch = choicesOf(r);
+    if (ch.tiers.length > 1) return true;
+    return !!(UI.apex && ch.apex && ch.apex.filter(function (id) { return E.tierOfApex ? E.tierOfApex(C, id) === r.ace : true; }).length > 1);
+  }
+  // 解鎖進度一行（標題、唱片櫃）：「流派 1／3・下一派：殿堂（經典）」；?apex=1 再加「頂點卡 n／45」。新玩家（一派都沒有）＝空字串
+  function unlockLine() {
+    var un = unlockedNow(); if (!un.length) return '';
+    var out = [TU('unlockProg', { n: un.length })];
+    var nx = E.nextUnlock ? E.nextUnlock(un) : null;
+    if (nx) out.push(TU('unlockNext', tierVars(nx)));
+    if (UI.apex && E.apexCards) out.push(TU('apexProg', { n: apexOwnedNow().length, total: E.apexCards(C).length }));
+    return out.join('・');
+  }
 
   // ======================================================================= 像素小人、配件圖示
   // LAB_SPR＝roguelike.html 的 SPR 整段（依賴 dip-character.js 的 sprRows；不宣告它的同名全域）
@@ -333,10 +355,14 @@
     headphone: ['............', '....kkkk....', '...kk..kk...', '..kk....kk..', '..k......k..', '..k......k..', '.kkk....kkk.', '.kkk....kkk.', '.kkk....kkk.', '.kkk....kkk.', '............', '............'],
     heavy180: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kkkkddkkkk.', '.kkkd..dkkk.', '.kkkd..dkkk.', '.kkkkddkkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............'],
     numbered: ['............', '.kkkkkkkkk..', '.kwwwwwwwk..', '.kwkwwkwwk..', '.kwwwwwwwk..', '.kwwkwkwwk..', '.kwwwwwwwk..', '.kkkkkkkkk..', '....kk......', '....kk......', '............', '............'],
+    // 流派解鎖（店主 11-16）：鎖住的派／沒收到的頂點卡（鎖頭），打倒藏家解鎖那一下（打開的鎖）
+    lock: ['............', '....kkkk....', '...kk..kk...', '...k....k...', '...k....k...', '..kkkkkkkk..', '..kyyyyyyk..', '..kyykkyyk..', '..kyykkyyk..', '..kyyyyyyk..', '..kkkkkkkk..', '............'],
+    unlock: ['.....kkkk...', '....kk..kk..', '....k....k..', '....k.......', '....k.......', '..kkkkkkkk..', '..kyyyyyyk..', '..kyykkyyk..', '..kyykkyyk..', '..kyyyyyyk..', '..kkkkkkkk..', '............'],
     matrix: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kw.....wkk.', '.kkkddddkkk.', '.kkkd..dkkk.', '.kkkddddkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............']
   };
   function pix(rows, size, cls) { return (typeof W.pixArtHTML === 'function' && rows) ? W.pixArtHTML(rows, size, cls) : ''; }
   function relicOf(id) { return (C && C.relics && C.relics[id]) || null; }
+  function lockIcon(size, open) { return pix(LAB_ICONS[open ? 'unlock' : 'lock'], size || 14, 'lk') || '<span class="lk-tx" aria-hidden="true">' + (open ? '開' : '鎖') + '</span>'; }
   function relicIcon(id, size) {
     var r = relicOf(id); var rows = r && LAB_ICONS[r.icon];
     var h = rows ? pix(rows, size || 24) : '';
@@ -419,7 +445,8 @@
     var badge = '';
     if (c.tier && o.badge !== false) badge = '<span class="badge ' + c.tier + '">' + esc((C.aceTitle || {})[c.tier] || '') + '</span>';
     else if (c.gold && o.badge !== false) badge = '<span class="badge gold">私藏</span>';
-    if (o.isNew) badge += '<span class="badge new">新認識</span>';     // COPY-16：跟唱片櫃「這一趟新認識」同一個詞；NEW 留給新進那一箱
+    // COPY-16：跟唱片櫃「這一趟新認識」同一個詞；NEW 留給新進那一箱。o.newText：打倒藏家收到新的頂點卡＝「新收藏」（解鎖制，C.trial.ui.newOwn）
+    if (o.isNew) badge += '<span class="badge new">' + esc(o.newText || '新認識') + '</span>';
     // 店內取得（一趟留一張收進唱片櫃的；店主 11-13 §0）：金框＋底下「店內取得」
     if (o.store) badge += '<span class="badge store">' + esc(SU('storeTag')) + '</span>';
     if (o.brought) badge += '<span class="badge bring">' + esc(SU('pickBrought')) + '</span>';   // 主站「帶去店裡對決」帶來的（挑種子面板第一張）
@@ -1270,26 +1297,33 @@
   }
   // 挑王牌（O9；再挑戰一趟）：三張王牌（殿堂・經典 7…）；點封面下面那行＝選、封面＝唱片資訊、「就這張」確認。不切歌（D §2：音樂播到私人收藏那句說完）
   //   預設選中＝猜歌時選的那張（猜對＝今晚那張）
+  //   解鎖制（店主 11-16）：ctx.open＝能挑的派（沒給＝三派；新玩家第一次挑＝初始流派）；鎖住的派封面灰掉、下面那行換成鎖頭＋「打倒傳說藏家解鎖」，點了只說明、不選。
+  //   ctx.noTut＝不是序章那一趟（跳過序章的新存檔三選一）：不寫「教學這場照舊 7 星」
   function acePickPanel(sc, ctx, beat) {
     return new Promise(function (res) {
+      var open = (ctx.open || TIERS).filter(function (t) { return TIERS.indexOf(t) >= 0; }); if (!open.length) open = TIERS.slice();
       var sel = ctx.guessed || ctx.defaultTier || 'hall';
+      if (open.indexOf(sel) < 0) sel = open.indexOf(save.lastAce) >= 0 ? save.lastAce : open[0];   // 猜中的／今晚那派還鎖著：預設選你解鎖的
       var html = '<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3><span class="np"></span></div><div class="lb-trio">' +
         TIERS.map(function (t) {
-          var c = card(C.aces[t]), ax = C.aceAxis[t];
-          return tileHTML(c, { sel: t === sel, stars: false, text: false, badge: false, data: 'data-tier="' + t + '"',      // 名號寫在下面那行，封面角不再蓋標（V13：異端標蓋住 SWANS）
-            extra: '<button type="button" class="acex"><span class="' + ax + '">' + esc(C.aceTitle[t]) + '・' + ZH[ax] + ' 7</span><span class="al one">' + esc(c.album) + '</span></button>' });
+          var c = card(C.aces[t]), ax = C.aceAxis[t], lk = open.indexOf(t) < 0;
+          return tileHTML(c, { sel: t === sel, cls: lk ? 'locked' : '', stars: false, text: false, badge: false, data: 'data-tier="' + t + '"' + (lk ? ' data-locked="1"' : ''),      // 名號寫在下面那行，封面角不再蓋標（V13：異端標蓋住 SWANS）
+            extra: (lk ? '<span class="lockov" aria-hidden="true">' + lockIcon(22) + '</span>' : '') +
+              '<button type="button" class="acex"' + (lk ? ' aria-disabled="true"' : '') + '><span class="' + ax + '">' + esc(C.aceTitle[t]) + '・' + ZH[ax] + ' 7</span>' +
+              (lk ? '<span class="al one lockt">' + lockIcon(11) + esc(TU('aceLocked')) + '</span>' : '<span class="al one">' + esc(c.album) + '</span>') + '</button>' });
         }).join('') + '</div><p class="note detail"></p><div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok">就這張</button></div>';
       var s = sheet(html, 'acepick');
       // 焦點放在「就這張」：不要讓第一行名號（殿堂）的焦點框跟選中的那張同時亮（V01 兩個框）
       var okb = qs('[data-a=ok]', s); if (okb) try { okb.focus({ preventScroll: true }); } catch (_) {}
       watchPlaying(qs('.np', s));
       var det = qs('.detail', s);
-      function mark() {
-        qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-tier') === sel); });
+      function mark(peek) {
+        qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-tier') === sel); x.classList.toggle('peek', x.getAttribute('data-tier') === peek); });
+        if (peek) { det.innerHTML = '<span class="lockt">' + lockIcon(12) + esc(TU('aceLockedNote', tierVars(peek))) + '</span>'; return; }   // 點了鎖住的那派：只說明
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
         var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
         det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。' +
-          (UI.apex ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '');   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
+          (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '');   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
       }
       mark();
       roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）。說明那行先填好再量（矮螢幕它沒有最小高，空著量＝0；V5-play-7）
@@ -1298,7 +1332,9 @@
         if (done) return;
         var t = e.target.closest && e.target.closest('.lb-ct');
         if (t && !(e.target.closest('[data-a=ok]'))) {
-          var tier = t.getAttribute('data-tier'); if (tier === sel) return;
+          var tier = t.getAttribute('data-tier');
+          if (open.indexOf(tier) < 0) { sfx('tick'); mark(tier); return; }      // 鎖住的派：不選，說明怎麼解鎖
+          if (tier === sel) { mark(); return; }
           sel = tier; sfx('select'); mark();
           return;
         }
@@ -1334,34 +1370,47 @@
   function lastAceIdFor(tier) { return apexPickOk(tier, save.lastAceId) && apexOwnedNow().indexOf(save.lastAceId) >= 0 ? save.lastAceId : null; }   // 解鎖制：要擁有（只認識的不算）
   // 挑王牌面板（FRAME 7.2）：標題＋「頂點卡試做」小字 → 三派分頁 → 那派 15 張封面 5×3（角上小字：這手／整場／留著）→ 藝人《專輯》／能力名・時機：說明 →「就這張」
   //   點封面＝選；按住封面＝唱片資訊（多一塊「王牌能力」）。切到別派＝換流派：下面多一行灰字「老闆送的那幾張也跟著換」。
-  //   o：{tier, aceId, canSwitch}；回 {tier, aceId}
+  //   o：{tier, aceId, canSwitch, open, owned}；回 {tier, aceId}
+  //   解鎖制（店主 11-16）：o.open＝能切的派（鎖住的分頁上鎖、點了只說明）、o.owned＝收到的頂點卡（沒收到的灰掉＋鎖頭，點了寫「還沒收到：打倒傳說藏家收集」、不能選）；
+  //   分頁裡第二行「已收 n／15」。沒給＝舊行為（三派、15 張都能挑）
   function apexPickPanel(o) {
     o = o || {};
     return new Promise(function (res) {
       var t0 = TIERS.indexOf(o.tier) >= 0 ? o.tier : 'hall', id0 = apexPickOk(t0, o.aceId) ? o.aceId : C.aces[t0];
-      var tier = t0, sel = id0, TM = (AX().ui && AX().ui.timing) || {};
+      var tier = t0, sel = id0, peek = null, TM = (AX().ui && AX().ui.timing) || {};
+      var open = Array.isArray(o.open) && o.open.length ? o.open.slice() : TIERS.slice(); if (open.indexOf(t0) < 0) open.push(t0);
+      var owned = Array.isArray(o.owned) ? o.owned.slice() : null;
+      var has = function (id) { return !owned || owned.indexOf(id) >= 0 || id === id0; };
       var tabs = o.canSwitch === false ? [t0] : TIERS;
       var html = '<div class="hd"><h3>' + esc(AU('pickTitle')) + '</h3><span class="apx-tag">' + esc(AU('tag')) + '</span></div>' +
-        '<div class="apx-tabs" role="tablist">' + tabs.map(function (t) { return '<button type="button" class="key" role="tab" data-tab="' + t + '">' + esc(C.aceTitle[t]) + '</button>'; }).join('') + '</div>' +
+        '<div class="apx-tabs" role="tablist">' + tabs.map(function (t) {
+          var lk = open.indexOf(t) < 0, all = E.apexList(C, t).filter(function (x) { return x && card(x.card); });
+          var cnt = owned && !lk ? '<span class="tc">' + esc(AU('got', { n: all.filter(function (x) { return has(x.card); }).length, total: all.length })) + '</span>' : '';   // 這派收了幾張
+          return '<button type="button" class="key' + (lk ? ' locked' : '') + (cnt ? ' two' : '') + '" role="tab" data-tab="' + t + '"' + (lk ? ' aria-disabled="true"' : '') + '><span class="tn">' + (lk ? lockIcon(11) : '') + esc(C.aceTitle[t]) + '</span>' + cnt + '</button>';
+        }).join('') + '</div>' +
         '<div class="apx-grid" role="listbox"></div><p class="note detail apx-det"></p><p class="note apx-sw" hidden>' + esc(TU('aceSwapSub')) + '</p>' +
         '<div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok"></button></div>';
-      var s = sheet(html, 'apxpick');
+      var s = sheet(html, 'apxpick' + (owned ? ' unl' : ''));
       var grid = qs('.apx-grid', s), det = qs('.apx-det', s), sw = qs('.apx-sw', s), okb = qs('[data-a=ok]', s);
       if (okb) try { okb.focus({ preventScroll: true }); } catch (_) {}
       function renderGrid() {
         grid.innerHTML = E.apexList(C, tier).map(function (x) {
           var c = card(x.card); if (!c) return '';
-          return '<button type="button" class="apx-c" role="option" data-cid="' + esc(c.id) + '" data-ab="' + esc(x.id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》：' + x.name) + '">' +
-            coverHTML(c, { info: false, badge: false }) + '<span class="tm ' + esc(x.timing) + '">' + esc(TM[x.timing] || '') + '</span></button>';
+          var mine = has(c.id);
+          return '<button type="button" class="apx-c' + (mine ? '' : ' unowned') + '" role="option" data-cid="' + esc(c.id) + '" data-ab="' + esc(x.id) + '"' + (mine ? '' : ' aria-disabled="true"') +
+            ' aria-label="' + esc(c.artist + '《' + c.album + '》：' + x.name + (mine ? '' : '（' + AU('notYet') + '）')) + '">' +
+            coverHTML(c, { info: false, badge: false }) + (mine ? '' : '<span class="lockov" aria-hidden="true">' + lockIcon(16) + '</span>') + '<span class="tm ' + esc(x.timing) + '">' + esc(TM[x.timing] || '') + '</span></button>';
         }).join('');
       }
       function mark() {
         qsa('.apx-tabs [data-tab]', s).forEach(function (b) { var on = b.getAttribute('data-tab') === tier; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
-        qsa('.apx-c', grid).forEach(function (b) { var on = b.getAttribute('data-cid') === sel; b.classList.toggle('sel', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
-        var c = card(sel) || {}, A = E.abilityOf(C, sel) || {};
+        qsa('.apx-c', grid).forEach(function (b) { var id = b.getAttribute('data-cid'), on = id === sel; b.classList.toggle('sel', on); b.classList.toggle('peek', id === peek); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
+        // 說明＝選中的那張；點了沒收到的那張＝那張（能力照寫，知道在收什麼）。怎麼拿／怎麼解鎖寫在換派灰字那一行（位置本來就留著，面板不長高）
+        var pk = peek && peek.indexOf('tab:') === 0 ? peek.slice(4) : null, cid = peek && !pk ? peek : sel, c = card(cid) || {}, A = E.abilityOf(C, cid) || {};
         det.innerHTML = '<span class="ar">' + esc((c.artist || '') + '《' + (c.album || '') + '》') + '</span>' +
           '<span class="ab">' + esc(AU('pickLine', { name: '\u0001', timing: TM[A.timing] || '', text: A.text || '' })).replace('\u0001', '<b>' + esc(A.name || '') + '</b>') + '</span>';
-        sw.hidden = tier === t0;
+        if (peek) { sw.innerHTML = lockIcon(11) + esc(pk ? TU('aceLockedNote', tierVars(pk)) : AU('notYet') + '：' + AU('lockCard')); sw.classList.add('lockt'); sw.hidden = false; }
+        else { sw.textContent = TU('aceSwapSub'); sw.classList.remove('lockt'); sw.hidden = tier === t0; }
         okb.textContent = tier === t0 && sel === id0 ? AU('pickSame') : AU('pickGo');
       }
       // 15 張封面比一般面板高：full 鏡頭讓不出那麼多（舞台最矮約 234 px；390×664 會差 18 px 要捲）＝收成對決那條，面板照內容高，不用捲。
@@ -1389,9 +1438,20 @@
       s.addEventListener('click', function (e) {
         if (done) return;
         var tb = e.target.closest && e.target.closest('[data-tab]');
-        if (tb) { var t = tb.getAttribute('data-tab'); if (t === tier) return; tier = t; sel = t === t0 ? id0 : C.aces[t]; sfx('select'); renderGrid(); mark(); refit(); return; }
+        if (tb) {
+          var t = tb.getAttribute('data-tab');
+          if (open.indexOf(t) < 0) { peek = 'tab:' + t; sfx('tick'); mark(); refit(); return; }   // 鎖住的派：不切，說明怎麼解鎖
+          if (t === tier) { if (peek) { peek = null; mark(); } return; }
+          tier = t; peek = null; sel = t === t0 ? id0 : C.aces[t]; sfx('select'); renderGrid(); mark(); refit(); return;
+        }
         var cb = e.target.closest && e.target.closest('.apx-c');
-        if (cb) { if (swallow) { swallow = false; return; } var id = cb.getAttribute('data-cid'); if (id === sel) return; sel = id; sfx('select'); mark(); refit(); return; }
+        if (cb) {
+          if (swallow) { swallow = false; return; }
+          var id = cb.getAttribute('data-cid');
+          if (!has(id)) { peek = id; sfx('tick'); mark(); refit(); return; }                        // 沒收到的：不選，說明怎麼拿
+          if (id === sel && !peek) return;
+          sel = id; peek = null; sfx('select'); mark(); refit(); return;
+        }
         if (e.target.closest && e.target.closest('[data-a=ok]')) { done = true; lpOff(); sfx('select'); closeSheet(s); res({ tier: tier, aceId: sel }); }
       });
       autoAct(function () {
@@ -1407,12 +1467,12 @@
     var r = save.run;
     if (!r || UI.going || !E.canSwitchAce(r, C)) return;
     UI.going = true;
-    var fromT = r.ace, fromId = aceIdOf(r);
-    apexPickPanel({ tier: fromT, aceId: fromId }).then(function (pick) {
+    var fromT = r.ace, fromId = aceIdOf(r), ch = choicesOf(r);
+    apexPickPanel({ tier: fromT, aceId: fromId, open: ch.tiers, owned: ch.apex }).then(function (pick) {   // 解鎖制：鎖住的派、沒收到的頂點卡上鎖（engine.aceChoices）
       UI.going = false;
       if (save.run !== r || UI.screen !== 'night') return;
       var res = pick && (pick.tier !== fromT || pick.aceId !== fromId) ? E.switchAce(r, C, pick.tier, { aceId: pick.aceId }) : null;
-      var ok = !!(res && res.ok);
+      var ok = !!(res && res.ok), lockedErr = !!(res && !res.ok && (res.error === 'locked' || res.error === 'notOwned'));
       if (ok) {
         save.lastAce = r.ace;
         if (r.ace !== fromT) (C.gifts[r.ace] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
@@ -1426,7 +1486,8 @@
       if (ok) {
         stageSay('o', line(r.ace !== fromT ? 'aceDone' : 'aceKeep'), 'owner', 2600);
         toast(TU('aceSwapped', { album: (card(save.lastAceId) || {}).album || '' }));
-      } else if (!first) stageSay('o', line('aceSame'), 'owner', 2600);
+      } else if (lockedErr) stageSay('o', line('aceLockedSay'), 'owner', 2600);   // 畫面已經擋了（保險）
+      else if (!first) stageSay('o', line('aceSame'), 'owner', 2600);
       // 第一次挑王牌（序章剛打完的新玩家）：第一次來客的教學泡泡晚一點出——原本三則訊息（吐司、老闆、教學）疊在一起（審查 11-16）
       if (first && !save.seen.night && !UI.auto) later(function () {
         if (UI.screen !== 'night' || save.seen.night || save.run !== r || qs(':scope > .lb-sheet', UI.panel)) return;
@@ -1521,15 +1582,19 @@
   function cardPanel(c, opts) {
     opts = opts || {};
     return new Promise(function (res) {
+      // opts.unlock：{tier, title, sub}＝打倒藏家、新的一派解鎖（鎖頭打開＋大字；scratchpad v5/unlock）
+      var U = opts.unlock;
       var html = (opts.title ? '<div class="hd"><h3>' + esc(opts.title) + '</h3><span class="np"></span></div>' : '') +
-        '<div class="lb-one">' + coverHTML(c, { size: 132, isNew: !!opts.isNew }) +
+        (U ? '<div class="lb-unlock ' + esc(U.tier) + '" role="status"><span class="lk">' + lockIcon(26) + lockIcon(26, true) + '</span><span class="t"><b>' + esc(U.title) + '</b><small>' + esc(U.sub || '') + '</small></span></div>' : '') +
+        '<div class="lb-one">' + coverHTML(c, { size: U ? 112 : 132, isNew: !!opts.isNew, newText: opts.newText }) +
         '<div class="meta"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div><div class="yr">' + esc(c.year || '') + '</div>' +
         starsHTML(c, { cls: 'big' }) + '<span class="sub">點封面：唱片資訊</span></div></div>' +
         (opts.note ? '<p class="msg">' + esc(opts.note) + '</p>' : '') +
         '<div class="btns">' + (opts.buttons || []).map(function (b, i) {
           return '<button type="button" class="lb-btn big col' + (b.pri ? ' pri' : '') + '" data-i="' + i + '"><span class="lb">' + esc(b.label) + '</span>' + (b.sub ? '<span class="sub">' + esc(b.sub) + '</span>' : '') + '</button>';
         }).join('') + '</div>';
-      var s = sheet(html, 'one' + (opts.title ? '' : ' notitle'));
+      var s = sheet(html, 'one' + (opts.title ? '' : ' notitle') + (U ? ' unlock' : ''));
+      if (U || opts.note) roomForSheet(s);   // 多了解鎖那塊／收到新的一張那行：舞台讓出放得下的高（不用在面板裡捲才看到「收進唱片櫃」）
       if (opts.title) watchPlaying(qs('.np', s));
       var f = FX(); if (f && f.music && soundOn() && c.previewUrl) try { f.music.play(c, { fadeMs: 1500 }); } catch (_) {}
       stg('play', true);
@@ -1664,9 +1729,13 @@
     }
     // 頂點卡試做（?apex=1，店主 11-16）：跳過序章、直接開打（不走旁白、捏人、序章、挑種子；特價箱照策略自動挑三張）→ 來客畫面跳挑王牌面板
     if (UI.apex) h += '<button type="button" class="lb-btn wide col key" data-a="skip">' + esc(AU('skip')) + '<span class="sub">' + esc(AU('skipSub')) + '</span></button>';
+    var unl = unlockLine();                              // 解鎖進度（店主 11-16）：「流派 1／3・下一派：殿堂（經典）」；新玩家不出
     h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
+      (unl ? '<p class="lb-foot sm unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') +
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
+    // 舊存檔第一次載入（解鎖制以前的存檔；loadSave 補了 lastAce 那派那張）：吐司說一次規則改了
+    if (UI.migratedUnlock) { UI.migratedUnlock = false; toast(TU('unlockMigrated'), 'keep long'); }
     // 主站「帶去店裡對決」帶進來（開機讀 ?card=）：吐司說明一次（第一次玩的人要先走完序章那一趟）
     if (UI.bringToast != null) {
       var bt = UI.bringToast; UI.bringToast = null;
@@ -1721,14 +1790,27 @@
   };
   // 跳過序章、直接玩輔助卡版（?apex=1，店主 11-16）：放棄進行中的那一趟 → 開一趟非序章的（王牌沿用上次那派／那張，沒有就殿堂預設）
   //   → 特價箱照引擎策略自動挑三張 → 來客畫面；挑王牌面板由 apexIntroOnNight 跳（每次走這條路都跳，讓你換一張再打）
+  //   解鎖制（店主 11-16）：從沒挑過派的新存檔（unlockedNow() 是空的）先三選一挑初始流派（老闆說「先挑一派…」），挑了才開這一趟
   function skipToApex() {
     if (UI.going || !UI.apex) return;
     var f = FX(), want = save.settings.sound !== false;
     if (f) { try { if (f.init) f.init(); f.unlockFromGesture(want); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
     if (save.settings.sound == null) save.settings.sound = want;
     ensurePlayer();
+    if (!unlockedNow().length) {
+      UI.going = true;
+      tlog('apex', 'firstPick', {});
+      acePickPanel(null, { defaultTier: tierOfCard(tonightId()) || 'hall', noTut: true }, { prompt: TU('firstPick') }).then(function (tier) {
+        UI.going = false;
+        if (UI.screen !== 'title') return;
+        skipStart(TIERS.indexOf(tier) >= 0 ? tier : 'hall');
+      });
+      return;
+    }
+    skipStart(TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : unlockedNow()[0]);
+  }
+  function skipStart(tier) {
     abandonRun(save.run); save.run = null;
-    var tier = TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : 'hall';
     createRun({ ace: tier, prologue: false, seeds: [] });
     var r = save.run;
     if (r && E.canBargainPick(r)) {
@@ -1893,7 +1975,9 @@
     } });
   }
   // 挑王牌之後只建 run（包包 4 張），不畫包包條：封面要等 O14 櫃檯看過才飛進來
+  //   解鎖制（店主 11-16）：新玩家三派都能挑（第一次挑＝初始流派）；已經有解鎖的派（序章中途放棄又重來）＝只能挑解鎖的
   function acePickAndCreate(sc, ctx, b, prologue) {
+    var un = unlockedNow(); ctx.open = un.length ? un : null;
     return acePickPanel(sc, ctx, b).then(function (tier) { createRun({ ace: tier, prologue: prologue }); return tier; });
   }
   function resumePrologueAfterBargain() {
@@ -2261,7 +2345,8 @@
     r.tut = false;
     (out.met || []).forEach(shelfAdd);
     var aceNew = false;
-    if (out.aceWon) { aceNew = !save.shelf[out.aceWon]; shelfOwn(out.aceWon, 'boss'); gotCard(r, out.aceWon); }   // 打倒藏家：他的王牌收進唱片櫃、算擁有（src 'boss'；頂點卡只展示，不能當種子）（裁定 5；每輪都送，「收了」只算一次）
+    // 新章：解鎖制的 run 照引擎 out.aceNew（開局時還沒擁有＝真的多一張；試做卡在挑王牌面板看過也算新）；舊的 run 照舊看唱片櫃有沒有這張
+    if (out.aceWon) { aceNew = out.aceNew != null ? !!out.aceNew && !isOwned(out.aceWon) : !save.shelf[out.aceWon]; shelfOwn(out.aceWon, 'boss'); gotCard(r, out.aceWon); }   // 打倒藏家：他的王牌收進唱片櫃、算擁有（src 'boss'；頂點卡只展示，不能當種子）（裁定 5；每輪都送，「收了」只算一次）
     persist();
     // 吐司：贏錢＋聲望 +3 一顆（§2.5.2；千分位 FIXLIST 8）。排到下一個畫面（領獎／藏家那段）掛好才出，不在換畫面那一下被收掉（審查 #0）
     var tw = [];
@@ -2392,14 +2477,27 @@
     });
   }
   // ---- 打倒傳說藏家（每一輪；裁定 5：原本打烊那段的送牌搬到這裡）：他用過的那張王牌（你當初沒選的）翻開、收進唱片櫃 → 領獎 → 升級 → 下一輪
+  //   解鎖制（店主 11-16）：他那張讓新的一派解鎖（out.aceUnlock）＝面板多一塊「解鎖了殿堂派（經典）」（鎖頭打開的小演出＋下一趟開局怎麼換）；
+  //   沒解鎖新派、但收到新的一張（旗標開：同一派或別派的試做卡；out.aceNew）＝「收進唱片櫃，下一趟開局可以換」
   function bossDownFlow(out, isNew) {
-    var aceId = out.aceWon;
+    var aceId = out.aceWon, un = out.aceUnlock && TIERS.indexOf(out.aceUnlock) >= 0 ? out.aceUnlock : null;
+    var gain = !un && UI.apex && !!out.aceNew;
+    if (un) tlog('unlock', 'tier', { tier: un, card: aceId });
     afterDuelScene(out.enemyId, { o: 'counter' }, function (sc) {
       var dlg = Dialogue(sc, { flags: {}, stakeId: aceId });
       dlg.run(C.script.bossDown || [], function (ui) {
-        if (ui === 'stake' && card(aceId)) return cardPanel(card(aceId), { title: '他用過的那張', isNew: !!isNew, buttons: [{ label: '收進唱片櫃', value: 'ok', pri: true }] });
+        if (ui === 'stake' && card(aceId)) {
+          var p = cardPanel(card(aceId), { title: '他用過的那張', isNew: !!isNew, newText: (un || gain) ? TU('newOwn') : null,
+            unlock: un ? { tier: un, title: TU('unlocked', tierVars(un)), sub: TU('unlockedSub') } : null,
+            note: gain ? AU('gotNew') : null, buttons: [{ label: '收進唱片櫃', value: 'ok', pri: true }] });
+          if (un) later(function () { sfx('win'); }, 650);              // 鎖頭打開那一下
+          return p;
+        }
         return Promise.resolve();
-      }).then(function () { go('reward', { said: true }); });     // 他那句剛說完：領獎畫面不再補說（審查 #2）
+      }).then(function () {
+        go('reward', { said: true });     // 他那句剛說完：領獎畫面不再補說（審查 #2）
+        if (un) toast(TU('unlocked', tierVars(un)), 'gold');   // 領獎畫面再提醒一次（面板收掉之後）
+      });
     });
   }
   // ---- 散場：你坐在地上，老闆一句
@@ -2663,9 +2761,10 @@
     // 頂點卡試做（?apex=1）：這份存檔第一次開旗標、第 1 位開打前＝老闆說一句、跳挑王牌面板（apexIntroOnNight；旗標關時不走）
     if (apexIntroOnNight(r)) return;
     // 換王牌的一次性提示（店主 11-13；save.seen.aceSwap）：第 1 位開打前、第一次來客的提示（nightIntro）看過之後才出——老闆頭上閃一下＋吐司「想換王牌，點老闆。」
-    var aceHintNow = save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C);
+    //   解鎖制（店主 11-16）：沒東西可換（只解鎖一派）先不提示，等第一次打倒傳說藏家解鎖了別派再說
+    var aceHintNow = save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C) && canSwapAny(r);
     if (aceHintNow) later(function () {
-      if (UI.screen !== 'night' || !save.run || !E.canSwitchAce(save.run, C) || save.seen.aceSwap) return;
+      if (UI.screen !== 'night' || !save.run || !E.canSwitchAce(save.run, C) || !canSwapAny(save.run) || save.seen.aceSwap) return;
       save.seen.aceSwap = true; persist();
       stg('emote', 'o', 'excl', 2600);
       toast(TU('aceHint'));
@@ -2717,6 +2816,13 @@
     var bl = '<div class="bl">' + esc('聲望 ' + g.hp) + '</div>' +
       (g.atk ? '<div class="bl st"><b>' + esc(TU('atk', { n: g.atk })) + '</b>' + esc(TU('eAtkHelp', { n: g.atk })) + '</div>' : '') +
       (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '') + guestTuneHTML(en);
+    // 解鎖制（店主 11-16）：傳說藏家帶哪張（run.bossCard，每輪可以不同）、打倒他會解鎖哪一派／收到這張（舊的 run 沒有 run.unlock：不寫，照舊）
+    var bc = g.cls === 'boss' && r.unlock && r.bossCard ? card(r.bossCard) : null;
+    if (bc) {
+      var bt = E.tierOfApex ? E.tierOfApex(C, bc.id) : null, chs = choicesOf(r);
+      var gain = bt && chs.tiers.indexOf(bt) < 0 ? TU('bossUnlock', tierVars(bt)) : (UI.apex && chs.apex && chs.apex.indexOf(bc.id) < 0 ? TU('bossCollect') : '');
+      bl += '<div class="bl st boss-ace"><b>' + esc(TU('bossCarry', { album: bc.album })) + '</b>' + esc(gain) + '</div>';
+    }
     var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
       tags + bl + '</div></div>' +
@@ -2828,10 +2934,14 @@
     if (!save.seen.aceSwap) { save.seen.aceSwap = true; persist(); }   // 自己來找老闆了：「想換王牌，點老闆。」的提示不用再出
     var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
     var a = card(aceIdOf(r)) || {};
+    // 解鎖制（店主 11-16）：沒東西可換（只解鎖一派；旗標開＝這派也只收到一張）→「換一張王牌」改成說明、按不下去
+    var can = canSwapAny(r);
+    var swapB = can ? '<button type="button" class="lb-btn pri big key col" data-a="swap">' + esc(TU('aceSwap')) + '<span class="sub">' + esc(TU('aceSwapSub')) + '</span></button>'
+      : '<button type="button" class="lb-btn big col ow-none" disabled><span class="lb">' + lockIcon(12) + esc(UI.apex ? AU('noneMore') : TU('aceSwapNone')) + '</span>' +
+        '<span class="sub">' + esc(UI.apex ? AU('lockCard') : TU('aceLocked')) + '</span></button>';
     var html = '<div class="hd"><h3>' + esc(TU('owner')) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<p class="sub ow-now">' + esc(TU('aceNow', { title: (C.aceTitle || {})[r.ace] || '', album: a.album || '' })) + '</p>' +
-      '<div class="two lb-ownermenu"><button type="button" class="lb-btn big key" data-a="talk">' + esc(TU('aceTalk')) + '</button>' +
-      '<button type="button" class="lb-btn pri big key col" data-a="swap">' + esc(TU('aceSwap')) + '<span class="sub">' + esc(TU('aceSwapSub')) + '</span></button></div>';
+      '<div class="two lb-ownermenu"><button type="button" class="lb-btn big key" data-a="talk">' + esc(TU('aceTalk')) + '</button>' + swapB + '</div>';
     var s = floatSheet(html, 'owner');
     s.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a=talk],[data-a=swap]'); if (!b) return;
@@ -2843,15 +2953,17 @@
   }
   // 換一張王牌：現有的王牌三選一（標題＝老闆那句「想換一張？」、預設選中現在這張）；選同一張＝不換。換了：包包裡送的那幾張跟著換（engine.switchAce）、
   //   新王牌與那組送的記成擁有（src gift，跟 createRun 一樣）、下一趟沿用（save.lastAce）
+  //   解鎖制（店主 11-16）：只能挑已解鎖的派（engine.aceChoices）；鎖住的上鎖、點不了
   function aceSwapFlow() {
     var r = save.run;
     if (!r || UI.going || !E.canSwitchAce(r, C)) return;
     UI.going = true;
     var from = r.ace;
-    acePickPanel(null, { defaultTier: from }, { prompt: TU('aceAsk') }).then(function (tier) {
+    acePickPanel(null, { defaultTier: from, open: choicesOf(r).tiers, noTut: true }, { prompt: TU('aceAsk') }).then(function (tier) {
       UI.going = false;
       if (save.run !== r || UI.screen !== 'night') return;
       var res = tier && tier !== from ? E.switchAce(r, C, tier) : null;
+      if (res && !res.ok && (res.error === 'locked' || res.error === 'notOwned')) { UI.keepP = true; UI.quietNight = true; go('night'); stageSay('o', line('aceLockedSay'), 'owner', 2600); return; }
       if (res && res.ok) {
         save.lastAce = tier;
         shelfAdd(C.aces[tier]); (C.gifts[tier] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
@@ -3494,6 +3606,7 @@
     qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
     var body = el('div', 'lb-scroll');
     body.innerHTML = '<div class="lb-pad">' +
+      (unlockLine() ? '<p class="sub lb-unl">' + lockIcon(10, true) + esc(unlockLine()) + '</p>' : '') +    // 解鎖進度（店主 11-16）
       '<section class="lb-own"><div class="lb-h2">' + esc(SU('shelfOwn', { n: own.length })) + '<small>' + esc(SU('shelfOwnSub')) + '</small></div>' +
       (own.length ? '<div class="lb-wall own">' + own.map(function (id) { return coverHTML(card(id), { store: isStore(id) }); }).join('') + '</div>' : '<p class="sub">' + esc(SU('shelfOwnEmpty')) + '</p>') + '</section>' +
       '<section class="lb-known"><div class="lb-h2">' + esc(SU('shelfKnown', { n: ids.length, total: total })) + '<small>' + esc(SU('shelfKnownSub')) + '</small></div>' +
@@ -3778,7 +3891,7 @@
     if (DEBUG) installDebug();
     buildShell();
     configTut();
-    if (UI.discardedOld) persist();
+    if (UI.discardedOld || UI.migratedUnlock) persist();   // 解鎖制遷移（補了 lastAce 那派那張）寫回去：下次載入不再補、不再提示
     // 舞台最多等 1.2 s：標題要在 2 s 內出來；晚到的舞台照樣接上（B-slow-stage-empty-scene：標題的鈕等舞台好了才收點擊）
     var started = false;
     var start = function () { if (started) return; started = true; UI.firstScreen = true; go('title'); UI.firstScreen = false; };

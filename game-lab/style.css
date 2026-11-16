@@ -822,3 +822,59 @@ body.lb-tune-open{overflow:hidden;}
 .drawcard .apx .nm{font-size:14px;line-height:1.5;margin-top:1px;}
 .drawcard .apx .nm .tm{display:inline-block;margin-left:8px;font-size:10px;font-weight:700;line-height:15px;padding:0 5px;color:#fff;background:var(--ink,#111);vertical-align:1px;letter-spacing:.06em;}
 .drawcard .apx .tx{font-size:12px;line-height:1.6;color:#333;}
+/* ---------- 流派與頂點卡解鎖（店主 11-16「流派的頂點卡要透過遊戲蒐集才能解鎖」；ui.js acePickPanel／apexPickPanel／ownerTalk／bossDownFlow；scratchpad v5/unlock） ---------- */
+.pixicon.lk{display:inline-block;flex:none;vertical-align:-2px;margin-right:3px;}
+.lk-tx{display:inline-block;margin-right:3px;font-size:9px;font-weight:700;line-height:12px;padding:0 2px;border:1px solid currentColor;}
+.lockt{white-space:normal;}
+/* 挑王牌三選一：鎖住的派＝封面灰掉＋中間一把鎖；下面那行換成鎖頭＋「打倒傳說藏家解鎖」 */
+.lb-ct.locked{cursor:default;}
+.lb-ct.locked .lb-cv{-webkit-filter:grayscale(1) brightness(.8);filter:grayscale(1) brightness(.8);opacity:.5;}
+.lb-ct .lockov{position:absolute;left:0;top:0;width:100%;aspect-ratio:1/1;display:grid;place-items:center;z-index:6;pointer-events:none;}
+@supports not (aspect-ratio:1/1){.lb-ct .lockov{height:0;padding-top:100%;}}
+.lb-ct .lockov .pixicon,.lb-ct .lockov .lk-tx{margin:0;background:rgba(255,255,255,.92);padding:4px;box-shadow:0 0 0 1.5px var(--ink);}
+.lb-ct.locked .acex{color:var(--gray2);cursor:default;}
+.lb-ct.locked .acex .al.one.lockt{display:flex;align-items:center;margin-top:1px;font-size:10px;font-weight:700;letter-spacing:0;color:var(--ink);white-space:normal;line-height:1.3;}
+.lb-ct.peek .acex{border-bottom:2px dashed var(--ink);}
+.lb-sheet .note.detail .lockt{display:flex;align-items:center;font-weight:700;color:var(--ink);}
+/* 挑王牌面板（?apex=1）：分頁第二行「已收 n／15」；鎖住的分頁虛線、灰；沒收到的封面灰掉＋小鎖；點了的那張虛線框 */
+.lb-sheet.apxpick .apx-tabs button{display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.lb-sheet.apxpick .apx-tabs button .tn{display:inline-flex;align-items:center;height:16px;line-height:16px;}
+.lb-sheet.apxpick .apx-tabs button .tc{display:block;height:12px;margin-top:1px;font:400 9px/12px var(--zh);letter-spacing:.02em;opacity:.8;}
+.lb-sheet.apxpick .apx-tabs button.two,.lb-sheet.apxpick.unl .apx-tabs button{height:38px;}                       /* 兩行（名字＋已收 n／15）：鎖住的那顆跟著一樣高 */
+@media (max-height:600px){.lb-sheet.apxpick .apx-tabs button.two,.lb-sheet.apxpick.unl .apx-tabs button{height:36px;}}
+.lb-sheet.apxpick .apx-tabs button.locked{border-style:dashed;background:#f2f2f2;color:var(--gray2);cursor:default;}
+.lb-sheet.apxpick .apx-c.unowned{cursor:default;}
+.lb-sheet.apxpick .apx-c.unowned .lb-cv{-webkit-filter:grayscale(1) brightness(.6);filter:grayscale(1) brightness(.6);opacity:.55;}
+.lb-sheet.apxpick .apx-c .lockov{position:absolute;left:0;top:0;width:100%;aspect-ratio:1/1;display:grid;place-items:center;z-index:4;pointer-events:none;}
+.lb-sheet.apxpick .apx-c .lockov .pixicon,.lb-sheet.apxpick .apx-c .lockov .lk-tx{margin:0;background:rgba(255,255,255,.88);padding:2px;box-shadow:0 0 0 1px var(--ink);}
+.lb-sheet.apxpick .apx-c.unowned .tm{background:rgba(110,110,110,.85);}
+.lb-sheet.apxpick .apx-c.peek .lb-cv{outline:2px dashed var(--ink);outline-offset:1px;opacity:.8;}
+.lb-sheet.apxpick .apx-sw.lockt{display:flex;align-items:center;color:var(--ink);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+/* 點老闆小選單：沒東西可換＝「其他流派還鎖著」（按不下去，小字寫怎麼解鎖） */
+.lb-sheet.owner .two .lb-btn.ow-none{opacity:1;border-style:dashed;color:var(--gray2);background:#f4f4f4;gap:1px;}
+.lb-sheet.owner .two .lb-btn.ow-none .lb{display:inline-flex;align-items:center;font-weight:700;letter-spacing:.04em;}
+.lb-sheet.owner .two .lb-btn.ow-none .sub{color:var(--gray2);opacity:1;}
+/* 打倒傳說藏家、新的一派解鎖：鎖頭打開（關著的鎖淡出、打開的鎖彈出來）＋大字 */
+.lb-unlock{display:flex;align-items:center;gap:10px;margin-top:8px;padding:8px 10px;border:1.5px solid var(--gold);background:var(--cream,#fffbe9);flex:none;animation:lbUnlockIn .5s ease-out both;}
+.lb-unlock .lk{position:relative;flex:none;width:26px;height:26px;}
+.lb-unlock .lk .pixicon,.lb-unlock .lk .lk-tx{position:absolute;left:0;top:0;margin:0;}
+.lb-unlock .lk .pixicon:first-child{animation:lbLockOff .3s ease-in .55s both;}
+.lb-unlock .lk .pixicon:last-child{animation:lbLockOn .45s cubic-bezier(.3,1.6,.5,1) .6s both;}
+.lb-unlock .t{display:flex;flex-direction:column;min-width:0;}
+.lb-unlock .t b{font-size:16px;line-height:1.3;letter-spacing:.06em;color:var(--ink);}
+.lb-unlock .t small{font-size:11px;line-height:1.4;color:#555;}
+.lb-unlock.hall .t b{color:var(--c,#1f5fae);}
+.lb-unlock.pearl .t b{color:var(--o,#6a3fa0);}
+.lb-unlock.heresy .t b{color:var(--h,#c11628);}
+@keyframes lbUnlockIn{0%{opacity:0;transform:translateY(-6px);}100%{opacity:1;transform:none;}}
+@keyframes lbLockOff{0%{opacity:1;transform:none;}40%{transform:rotate(-12deg);}100%{opacity:0;transform:scale(.6);}}
+@keyframes lbLockOn{0%{opacity:0;transform:scale(.4);}100%{opacity:1;transform:none;}}
+/* 標題、唱片櫃：解鎖進度一行 */
+.lb-foot.unl,.lb-unl{display:flex;align-items:center;justify-content:center;gap:0;}
+.lb-page .lb-unl{justify-content:flex-start;margin:0 0 10px;font-size:12px;color:#444;}
+@media (prefers-reduced-motion:reduce){
+  .lb-unlock{animation:none;}
+  .lb-unlock .lk .pixicon:first-child{animation:none;opacity:0;}
+  .lb-unlock .lk .pixicon:last-child{animation:none;opacity:1;}
+}
+@media (max-height:600px){.lb-panel.title .lb-foot.unl{display:none;}}   /* 矮螢幕：解鎖進度只在唱片櫃寫（標題的鈕與「再按一次就放棄」那行優先） */

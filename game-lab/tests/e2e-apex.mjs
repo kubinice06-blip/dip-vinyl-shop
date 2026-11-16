@@ -20,13 +20,17 @@
 //   7  不開旗標：挑王牌畫面跟現在一樣（老闆 → 換一張王牌＝三張王牌三選一、沒有分頁與 15 張；來客畫面不自動跳；王牌格照舊可以丟、屬性鈕「王牌 硬 7」；
 //      規則卡照舊「王牌 7 星」；唱片資訊沒有「王牌能力」；唱片櫃分母 326＝卡池 368 扣掉試做 42 張；店主 11-16 特價箱換牌加 10 張前是 316）
 //   8  序章（旗標開）：挑王牌那行寫「頂點卡試做・教學這場王牌照舊 7 星…」、序章那場照舊 7 星（view 沒有 apex、王牌可以丟）、開打吐司寫明；
-//      序章打完回到來客畫面 → 老闆說那句 → 自動跳挑王牌面板 → 挑 → 老闆＋吐司先出、第一次來客的教學泡泡等它們收掉才出（不三則疊在一起）（只在 390 跑：整段序章約 1 分鐘）
+//      序章打完回到來客畫面 → 老闆說那句 → 自動跳挑王牌面板（解鎖制：新玩家只有這派預設那張＝已收 1／15、別派分頁上鎖；點別張＝不選、寫怎麼拿）
+//      →「就帶這張」→ 沒換＝老闆不說、沒有吐司，第一次來客的教學泡泡照出（只在 390 跑：整段序章約 1 分鐘）
 //   9  審查 11-16 的版面與字（旗標開）：挑王牌面板三派 45 張逐一點，說明三行與換派灰字都在「就這張」那列上面、不被切、面板不捲；
 //      看穿的章不疊在提示句上（16 場）；發動那行專輯名太長只截專輯名、能力名看得到、點唱片就收掉；回聲望滿聲望＝「發動」灰掉＋寫原因；
 //      結果句：彈回兩邊都扣寫兩個數字、比星輸王牌免扣不寫「一樣大」、他丟他的王牌補「他的王牌照舊 7 星」（旗標關時這三種都不會出現）；藏家真的丟王牌那手也有那句
 //   10 不開旗標：這份存檔開旗標時挑過的試做卡（記成認識）不會出現在試聽機的清單（試做的 42 張當作不存在）
-//   11 跳過序章（店主 11-16）：新存檔標題有「跳過序章，直接開打」→ 點 → 來客畫面第 1 位、非序章、包包 7 張（送的 4＋特價箱 3）、跳挑王牌面板（15 張）；
-//      挑完回來客；有一趟在打時第一下只變「再按一次…」不換局，第二下才開新的一趟；不開旗標時沒有這顆鈕
+//   11 跳過序章（店主 11-16）：新存檔標題有「跳過序章，直接開打」→ 點 →（解鎖制：從沒挑過派＝先三選一挑初始流派「先挑一派…」，三派都能挑）→
+//      來客畫面第 1 位、非序章、包包 7 張（送的 4＋特價箱 3）、跳挑王牌面板（15 張；只有挑的那派能點、已收 1／15）；
+//      挑完回來客；有一趟在打時第一下只變「再按一次…」不換局，第二下才開新的一趟（不再問派）；不開旗標時沒有這顆鈕
+//   解鎖制（店主 11-16）：1–4、9 的存檔先放好三派與《'77 Live》《Thriller》（打倒藏家拿到的）；7 先放好另外兩派；8 是新玩家（只有初始流派那一張）。
+//      上鎖本身（新存檔只有初始派、點不了、打倒藏家掉被剋那派、沒收到的卡不能挑）在 tests/e2e-unlock.mjs
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, noScroll, scrollOk, duelReady, tapAt, hitPoint,
   seededContinue, seedRun, watchSay, tapHot, longPress, infoOpen, closeInfo, openTitle, prologueToDuel, advanceUntil } from './e2e-lib.mjs';
@@ -53,13 +57,17 @@ const pickState = page => C(page, () => {
   return { title: (s.querySelector('.hd h3') || {}).textContent || '', tag: (s.querySelector('.apx-tag') || {}).textContent || '',
     tabs: [...s.querySelectorAll('[data-tab]')].map(b => b.dataset.tab + (b.classList.contains('on') ? '*' : '')), n: cs.length, sel: (s.querySelector('.apx-c.sel') || { dataset: {} }).dataset.cid || null,
     tm: cs.map(b => (b.querySelector('.tm') || {}).textContent || ''), det: (s.querySelector('.apx-det') || {}).textContent || '', sw: !s.querySelector('.apx-sw').hidden, okt: okb.textContent,
-    okIn: ok.top >= 0 && ok.bottom <= innerHeight && ok.height >= 44, sheetScroll: s.scrollHeight - s.clientHeight, inView: sr.top >= 0 && sr.bottom <= innerHeight + 0.5, cw: Math.round(c0.width) };
+    okIn: ok.top >= 0 && ok.bottom <= innerHeight && ok.height >= 44, sheetScroll: s.scrollHeight - s.clientHeight, inView: sr.top >= 0 && sr.bottom <= innerHeight + 0.5, cw: Math.round(c0.width),
+    // 解鎖制：鎖住的分頁、這派收了幾張（分頁第二行）、沒收到的封面數、換派灰字那行（點了沒收到的＝怎麼拿）
+    locked: [...s.querySelectorAll('[data-tab].locked')].map(b => b.dataset.tab).join(), tc: ((s.querySelector('[data-tab].on .tc') || {}).textContent || ''), unowned: s.querySelectorAll('.apx-c.unowned').length,
+    swt: (s.querySelector('.apx-sw') || {}).textContent || '' };
 });
 const expDet = (page, id) => C(page, id => { const E = window.DipLabEngine, Cn = window.DipLabContent, c = Cn.cards[id], A = E.abilityOf(Cn, id), U = Cn.apexTrial.ui;
   return c.artist + '《' + c.album + '》' + U.pickLine.replace('{name}', A.name).replace('{timing}', U.timing[A.timing]).replace('{text}', A.text); }, id);
+// 解鎖制（店主 11-16）：三派都解鎖、'77 Live 與 Thriller 收過（打倒藏家拿到的）＝這幾項要挑的都挑得到
 async function toNightWithPanel(page) {
   await openTitle(page, QA());
-  await seedRun(page, { ace: 'heresy', idx: 0 });
+  await seedRun(page, { ace: 'heresy', idx: 0, ownAces: ['hall', 'pearl'], ownIds: [RALLIZES, THRILLER] });
   await openTitle(page, QA());
   await watchSay(page); await watchToasts(page);          // 老闆那句在來客畫面一畫出來就說：先包好再按「繼續」
   await jsClick(page, '[data-a=cont]');
@@ -289,7 +297,7 @@ async function runSize(browser, w, h) {
   if (want(7)) {
     const { ctx, page } = await newPage(browser, w, h); track(page);
     try {
-      await seededContinue(page, { ace: 'hall', idx: 0 }, Q());
+      await seededContinue(page, { ace: 'hall', idx: 0, ownAces: ['pearl', 'heresy'] }, Q());   // 解鎖制：三派都解鎖了＝三選一跟現在一樣
       await waitScreen(page, 'night');
       await sleep(2600);
       const auto = await C(page, () => !!document.querySelector('.lb-sheet.apxpick'));
@@ -298,7 +306,7 @@ async function runSize(browser, w, h) {
       const up = await page.waitForSelector('.lb-sheet.acepick .lb-ct', { timeout: 5000 }).then(() => true, () => false);
       await sleep(400);
       const pk = await C(page, () => { const s = document.querySelector('.lb-sheet.acepick'); return { h3: (s.querySelector('.hd h3') || {}).textContent || '', n: s.querySelectorAll('.lb-ct').length, tiers: [...s.querySelectorAll('.lb-ct')].map(x => x.dataset.tier).join(),
-        apx: s.querySelectorAll('[class*="apx"]').length, acex: [...s.querySelectorAll('.acex')].map(x => x.textContent), det: (s.querySelector('.detail') || {}).textContent || '', apexFlag: window.__lab.apex() }; });
+        apx: s.querySelectorAll('[class*="apx"]').length, locked: s.querySelectorAll('.lb-ct.locked').length, acex: [...s.querySelectorAll('.acex')].map(x => x.textContent), det: (s.querySelector('.detail') || {}).textContent || '', apexFlag: window.__lab.apex() }; });
       const aceAsk = await C(page, () => window.DipLabContent.trial.ui.aceAsk);
       await jsClick(page, '.lb-sheet.acepick [data-a=ok]'); await sleep(800);
       const plate = await C(page, () => !!document.querySelector('.lb-plate .apx'));
@@ -313,7 +321,7 @@ async function runSize(browser, w, h) {
       await C(page, () => window.__lab.rules()); await sleep(300);
       const l6 = await C(page, () => { const li = document.querySelectorAll('.lb-modal .rl li'); return li[5] ? li[5].textContent : ''; });
       const shelf = await C(page, () => window.__lab.save && Object.keys(window.DipLabContent.cards).length);
-      const ok7 = !auto && up && pk.h3 === aceAsk && pk.n === 3 && pk.tiers === 'hall,pearl,heresy' && pk.apx === 0 && pk.acex.every(x => / 7/.test(x)) && !pk.apexFlag &&
+      const ok7 = !auto && up && pk.h3 === aceAsk && pk.n === 3 && pk.tiers === 'hall,pearl,heresy' && pk.apx === 0 && pk.locked === 0 && pk.acex.every(x => / 7/.test(x)) && !pk.apexFlag &&
         !plate && !t.mode && /\bace\b/.test(t.tile) && !/\bapx\b/.test(t.tile) && t.legal && !t.view && chip && /7/.test(chip) && inf && !ci.apx && !ci.ns && l6.includes('王牌 7 星');
       record(7, size, ok7 && !errs(page).length, `沒旗標：來客自動跳 ${auto}；換王牌面板 ${up} ${JSON.stringify(pk)}；標題牌小字 ${plate}；對決 ${JSON.stringify(t)} 屬性鈕「${chip}」；唱片資訊 ${JSON.stringify(ci)}；規則第 6 行「${l6}」`);
       // 唱片櫃分母＝卡池扣掉試做的 42 張（旗標關時不算）：326（店主 11-16 特價箱換牌加了 10 張：358 → 368 張，分母 316 → 326）
@@ -487,13 +495,15 @@ async function runSize(browser, w, h) {
       const said = await C(page, () => (window.__said || []).map(x => x.t));
       const ps = up ? await pickState(page) : null;
       const tier = await C(page, () => window.__lab.run && window.__lab.run.ace);
-      // 挑一張（同一派換另一張）→ 老闆那句＋吐司先出；第一次來客的教學泡泡等吐司收掉才出（不三則疊在一起；照遊戲速度，不寫死秒數）
-      let st1 = null;
+      // 解鎖制（店主 11-16）：新玩家只收到這派預設那張 → 點第 5 張（沒收到）＝不選、灰字寫怎麼拿 →「就帶這張」＝沒換：老闆不說、沒有吐司；
+      //   第一次來客的教學泡泡照出（原本「老闆＋吐司先出、泡泡等它們收掉」那段只在真的換了才有，新玩家第一晚換不了）
+      let st1 = null, peek = null;
       if (up) {
         await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
         const other = await C(page, () => { const b = [...document.querySelectorAll('.lb-sheet.apxpick .apx-c')][4]; return b ? b.dataset.cid : null; });
         if (other) await tapAt(page, `.lb-sheet.apxpick .apx-c[data-cid="${other}"]`);
         await sleep(200);
+        peek = await pickState(page);
         await tapAt(page, '.lb-sheet.apxpick [data-a=ok]');
         st1 = await C(page, () => new Promise(done => {
           const t0 = performance.now(); let firstToast = null;
@@ -506,11 +516,13 @@ async function runSize(browser, w, h) {
         }));
       }
       const intro0 = await C(page, () => [].concat(window.DipLabContent.shopLines.nightIntro || [])[0] || '');
+      const others = ['hall', 'pearl', 'heresy'].filter(t => t !== tier).join();
       const ok8 = ready && !pd.mode && !pd.hasApex && pd.ace && pd.star === 7 && pd.legal && pd.pick.includes(u.tutNote) && pd.toasts.some(t => t.includes(u.tutNote)) &&
-        night && up && ps.tabs.includes(tier + '*') && ps.n === 15 &&
-        !!st1 && st1.at != null && !st1.toastNow && st1.firstToast != null && st1.firstToast < st1.at && st1.said.includes(u.aceKeep) && st1.toasts.some(t => t.startsWith(u.aceSwapped.split('{')[0])) && !!intro0 && st1.tx.includes(intro0.slice(0, 6));
+        night && up && ps.tabs.includes(tier + '*') && ps.n === 15 && ps.locked === others && ps.tc === u.got.replace('{n}', 1).replace('{total}', 15) && ps.unowned === 14 &&
+        !!peek && peek.sel === ps.sel && peek.swt.indexOf(u.lockCard) >= 0 &&
+        !!st1 && st1.at != null && !st1.toastNow && !st1.said.includes(u.aceKeep) && !st1.toasts.some(t => t.startsWith(u.aceSwapped.split('{')[0])) && !!intro0 && st1.tx.includes(intro0.slice(0, 6));
       record(8, size, ok8 && !errs(page).length, `序章挑王牌那行「${pd.pick}」；序章對決 ${JSON.stringify({ mode: pd.mode, hasApex: pd.hasApex, star: pd.star, legal: pd.legal })} 吐司 ${JSON.stringify(pd.toasts)}；` +
-        `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n })}；挑完 ${JSON.stringify(st1)}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
+        `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n, locked: ps.locked, tc: ps.tc, unowned: ps.unowned })}；點沒收到的 ${peek && JSON.stringify({ sel: peek.sel, swt: peek.swt })}；挑完 ${JSON.stringify(st1)}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
     } catch (e) { record(8, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -522,11 +534,19 @@ async function runSize(browser, w, h) {
       const u = await U(page);
       const has = await C(page, () => { const b = document.querySelector('[data-a=skip]'); return b ? b.textContent : ''; });
       await tapAt(page, '[data-a=skip]');
+      // 解鎖制：新存檔先三選一挑初始流派（還在標題；三派都能挑、沒有「教學這場照舊 7 星」那行）→ 挑流亡
+      const first = await page.waitForSelector('.lb-sheet.acepick .lb-ct', { timeout: 6000 }).then(() => true, () => false);
+      await sleep(400);
+      const fp = first ? await C(page, () => { const s = document.querySelector('.lb-sheet.acepick'), ok = s.querySelector('[data-a=ok]').getBoundingClientRect();
+        return { h3: (s.querySelector('.hd h3') || {}).textContent || '', n: s.querySelectorAll('.lb-ct').length, locked: s.querySelectorAll('.lb-ct.locked').length, tut: !!s.querySelector('.apx-tut'), scr: window.__lab.screen(), run: !!window.__lab.run, okIn: ok.top >= 0 && ok.bottom <= innerHeight }; }) : null;
+      const firstPick = await C(page, () => window.DipLabContent.trial.ui.firstPick);
+      if (first) { await tapAt(page, '.lb-sheet.acepick .lb-ct[data-tier="pearl"] .acex'); await sleep(200); await tapAt(page, '.lb-sheet.acepick [data-a=ok]'); }
       const night = await waitScreen(page, 'night');
       const up = await page.waitForSelector('.lb-sheet.apxpick .apx-c', { timeout: 9000 }).then(() => true, () => false);
       await sleep(400);
       const p0 = await pickState(page);
-      const r0 = await C(page, () => { const r = window.__lab.run; return { pos: r.pos, pro: !!r.prologue, bag: r.bag.length, picked: !!(r.shop && r.shop.bargainPicked), no: r.runNo }; });
+      const r0 = await C(page, () => { const r = window.__lab.run, S = window.__lab.save, C = window.DipLabContent; return { pos: r.pos, pro: !!r.prologue, bag: r.bag.length, picked: !!(r.shop && r.shop.bargainPicked), no: r.runNo,
+        ace: r.ace, last: S.lastAce, start: (S.shelf[C.aces.pearl] || {}).src || null, tiers: (r.unlock && r.unlock.tiers || []).join() }; });
       await tapAt(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(1300);
       const after = await C(page, () => ({ scr: window.__lab.screen(), panel: !!document.querySelector('.lb-sheet.apxpick') }));
       // 有一趟在打：回標題 → 第一下只變字、第二下才換局
@@ -536,11 +556,16 @@ async function runSize(browser, w, h) {
       const armed = await C(page, () => ({ t: (document.querySelector('[data-a=skip]') || {}).textContent || '', scr: window.__lab.screen() }));
       await sleep(350);
       await tapAt(page, '[data-a=skip]');
+      await sleep(300);
+      const ask2 = await C(page, () => !!document.querySelector('.lb-sheet.acepick'));      // 已經有初始流派：不再問
       const night2 = await waitScreen(page, 'night');
-      const no2 = await C(page, () => window.__lab.run.runNo);
-      const ok = has.includes(u.skip.replace(' ▸', '')) && night && up && p0 && p0.n === 15 && r0.pos === 1 && !r0.pro && r0.bag === 7 && r0.picked &&
-        after.scr === 'night' && !after.panel && armed.t === u.skipAgain && armed.scr === 'title' && night2 && no2 !== no1;
-      record(11, size, ok && !errs(page).length, `鈕「${has}」；來客 ${night}、面板 ${up} ${p0 && p0.n}；run ${JSON.stringify(r0)}；挑完 ${JSON.stringify(after)}；有一趟時第一下 ${JSON.stringify(armed)}；第二下 ${night2} runNo ${no1}→${no2}；錯誤 ${errs(page).length}`);
+      const no2 = await C(page, () => ({ no: window.__lab.run.runNo, ace: window.__lab.run.ace }));
+      const ok = has.includes(u.skip.replace(' ▸', '')) && first && fp && fp.h3 === firstPick && fp.n === 3 && fp.locked === 0 && !fp.tut && fp.scr === 'title' && !fp.run && fp.okIn &&
+        night && up && p0 && p0.n === 15 && p0.tabs.join() === 'hall,pearl*,heresy' && p0.locked === 'hall,heresy' && p0.unowned === 14 &&
+        r0.pos === 1 && !r0.pro && r0.bag === 7 && r0.picked && r0.ace === 'pearl' && r0.last === 'pearl' && r0.start === 'start' && r0.tiers === 'pearl' &&
+        after.scr === 'night' && !after.panel && armed.t === u.skipAgain && armed.scr === 'title' && !ask2 && night2 && no2.no !== no1 && no2.ace === 'pearl';
+      record(11, size, ok && !errs(page).length, `鈕「${has}」；先挑初始流派 ${first} ${JSON.stringify(fp)}；來客 ${night}、面板 ${up} ${p0 && JSON.stringify({ n: p0.n, tabs: p0.tabs, locked: p0.locked, unowned: p0.unowned })}；run ${JSON.stringify(r0)}；挑完 ${JSON.stringify(after)}；` +
+        `有一趟時第一下 ${JSON.stringify(armed)}；第二下 ${night2}（再問派 ${ask2}）runNo ${no1}→${JSON.stringify(no2)}；錯誤 ${errs(page).length}`);
     } catch (e) { record(11, size, false, 'error ' + e.message); }
     await ctx.close();
     const o = await newPage(browser, w, h); track(o.page);
