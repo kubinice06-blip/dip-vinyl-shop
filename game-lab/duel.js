@@ -3,6 +3,7 @@
 // ── v4 contract（tutorial.js／ui.js／e2e 照這些名字找）────────────────────────────────────────────────────
 // data-tut  他的一塊：e-hud e-name e-hp e-stats e-hint e-rec e-sleeve e-pile（名牌只有名字：副標與誠實度都拿掉，FIXLIST 6）
 //           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho rounds result（浮框 .l1 .l2 .l3） lastline
+//                     lastplay lp-e lp-p（上一手小列：牌桌最上面一列，第 2 手起才有；店主 11-16「打完要把上一手的專輯留在檯面上」）
 //           你的一塊：p-hud p-hp p-stats relics relic-<id> hand hand-<i> hand-ace card-<i> card-ace pop chip-<i>-<attr> chip-ace
 //             （e-stats／p-stats：無限試煉的品味／底氣小籤「品 n」「底 n」（content.trial.ui.atkShort／defShort；view 的 eAtk eDef／pAtk pDef，大於 0 才有）。
 //              你那一列的在發燒配件右邊，算進屬性鈕的讓位清單（nameRowItems）；結果句的品味／底氣那句（clash.notes 的 stat）出現時那顆閃一下）
@@ -27,6 +28,7 @@
 //   {kind:'chip',i,attr,id}（只有 API select(i, attr) 送：換預覽的屬性，不出手） {kind:'info',where} {kind:'close'}；i＝0..handSize−1 或 'ace'
 // 事件：'phase'(choose|resolve|over) 'selected'({i,attr}|null：打開哪張／收回) 'resolved'(evs：560 ms 浮框剛出現時，同步) 'settled'(evs：1460 浮框收成一行)
 //       'handStart'(view) 'over'(result) 'info'(where) 'infoClosed'(where) 'relic'(id) 'apex'({open}|{t:'apex',…}：頂點卡試做的能力框開關／發動)
+//       info 的 where：hand｜hand-ace｜slot-e｜slot-p｜last-e｜last-p（上一手小列；cardinfo 收到的 from＝'duel:' + where）
 //
 // 頂點卡純輔助卡試做（?apex=1；view().apex 有才走，旗標關時下面這些一個元素都不建）：王牌格＝輔助卡格，不能拿來比星（不跳屬性鈕）。
 //   點它＝正上方跳能力框（能力名・時機、說明、「王牌不比星。」＋「發動」；用過了只寫「這場用過了」）；點框外／點別張＝收起（不發動）。
@@ -37,7 +39,7 @@
 //
 // 規則：畫面上每個數字都來自引擎的 view()／resolveTurn() 事件；UI 不算傷害、不讀 duel.plan。提示只寫句子，不寫屬性名（D §5）。
 // 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、手牌收回疊好、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
-//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手。結算中點畫面任一處（牌桌兩張除外）＝這手 4 倍速；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
+//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手（牌桌兩張縮小、搬進最上面的上一手小列）。結算中點畫面任一處（牌桌兩張、上一手小列除外：那是唱片資訊）＝這手 4 倍速；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
 (function () {
   'use strict';
   if (typeof window === 'undefined') return;
@@ -135,6 +137,7 @@
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
     tapOn: '點一下繼續',
+    lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊',
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};
@@ -225,6 +228,7 @@
       lp: null, swallow: null, enterDone: !opts.enter, ending: false, auto: false, tagged: false, lay: null, pendTap: null, openTap: null,
       rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, lastCt: null, debug: { log: [], hands: [] },
       apxOpen: false, apxAt: 0, apxEv: null,
+      lpd: null, lpOn: false, lpFade: false,   // 上一手小列：放的那一手（{e,p} 快照）、有沒有長出來（第一次換手起）、揭曉中變淡
     };
     const paused = () => !!(S.infoOpen || S.held);
     // 頻率（v5 第六項第二期，主線 11-15）：提示籤前一顆小圓點＝這位客人的「常聽頻率」（C.enemies[id].tune；content.tunes 的顏色）。
@@ -371,6 +375,7 @@
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
       </section>
       <section class="dl-t" data-tut="table">
+        <div class="lastplay" data-tut="lastplay" hidden></div>
         <div class="slot e" data-tut="slot-e"></div>
         <div class="slot p" data-tut="slot-p"></div>
         <div class="tcol"><div class="rounds num" data-tut="rounds"></div><div class="tri" data-tut="tri" role="button" aria-expanded="false"></div></div>
@@ -395,7 +400,7 @@
     const els = {
       e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'), est: $('.dl-e .st'), pst: $('.dl-p .st'),
       hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
-      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), cheat: $('.cheat'), leg: $('.trileg'),
+      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), lp: $('.lastplay'), cheat: $('.cheat'), leg: $('.trileg'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
       hand: $('.hand'), tiles: $('.hand .tiles'), abpop: $('.hand .pop'), tcol: $('.tcol'),
       pop: $('.dl-pop'), kost: $('.kost'), fx: $('.dl-fx'),
@@ -500,7 +505,7 @@
 
     // ---------------- render: 牌桌 ----------------
     // 出牌前（店主 FIXLIST 9：中間不留空帶）：他那格＝蓋著的封套＋「？」，你那格＝目前選的那張（半透明預覽＋屬性與星數），沒選才是空格。
-    // 上一手的兩張不再留在牌桌（「上一手」那行只在揭曉後、換手前出現）；打完（over）照舊留著最後一手
+    // 上一手的兩張不留在大格：換手時縮小、搬進牌桌最上面的上一手小列（renderStrip）；打完（over）大格照舊留著最後一手
     function preSlot(side) { return !S.busy && !(S.v && S.v.over) && (!S.table || S.table.dim); }
     function renderSlot(side) {
       const el = side === 'e' ? els.se : els.sp, Tb = S.table;
@@ -579,7 +584,40 @@
         + (ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : '');
     }
     function renderLast() { els.last.innerHTML = S.lastCt ? lastLineHTML(S.lastCt) : ''; }
-    function renderTable(v) { renderSlot('e'); renderSlot('p'); renderTri(); renderRounds(v); renderLast(); }
+    // ---- 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上，不然玩家無法看清楚對方打的專輯，就無法認識新專輯」）----
+    //   牌桌最上面一列：左＝他上一手（小封面＋「［上一手］他・冷門 4」＋專輯名一行），右＝你上一手（鏡像）。點一下＝唱片資訊（where＝last-e／last-p）。
+    //   兩項各自在字首掛深灰「上一手」籤、屬性字灰色（審查 11-16：他那項疊在他蓋著的袖套正上方，只靠中間一個淡籤＋全彩「他・經典 5」會被讀成他這手）。
+    //   第一手沒有上一手：不佔位置（照現行）。換手（t=2060）時牌桌兩張大封面縮小、搬進小列——第一次是長出來，之後是換掉；換掉的那一刻只有這一個。
+    //   你丟出去（t=0）到換手前：小列淡到 40%、「上一手」籤藏起（這時中間那行「上一手 …」指的是這一手；畫面上的「上一手」永遠只指一手）。
+    //   打完（over）：照樣淡著留在原位（不收起：收起會在牌桌上緣留一條空帶，審查 11-16）。他這手的大格照樣整格蓋著，不洩漏。
+    const lpSnap = d => d && d.card ? { card: d.card, attr: d.attr, star: d.star, ace: !!d.ace } : null;
+    const lpHas = () => !!(S.lpOn && S.lpd && S.lpd.e && S.lpd.p);
+    // 每顆按鈕畫出來時放的那一手：長按跨過換手（innerHTML 整列重建、S.lpd 換成新的一手）時，開的仍是手指按下去那張（審查 11-16）
+    const lpData = new WeakMap();
+    function lpItem(side, d) {
+      const c = d.card, lab = T('lpAria', { who: side === 'e' ? '他' : '你', t: title(c) });
+      return `<button type="button" class="lp ${side}${d.ace ? ' ace' : ''}" data-side="${side}" data-card="${esc(c.id)}" data-tut="lp-${side}" aria-label="${esc(lab)}">`
+        + `<span class="lpc">${img(c)}</span><span class="lpt"><span class="lpw"><span class="lpk">${esc(T('lastPrefix'))}</span>${esc(T(side === 'e' ? 'he' : 'you'))}<span class="lpa">${ZH[d.attr]} <span class="num">${d.star}</span></span></span>`
+        + `<span class="lpn">${esc(c.album || '')}</span></span></button>`;
+    }
+    function renderStrip() {
+      const on = lpHas(), d = S.lpd;
+      const key = on ? [d.e.card.id, d.e.attr, d.e.star, d.p.card.id, d.p.attr, d.p.star].join('|') : '';
+      if (els.lp.dataset.k !== key) {
+        els.lp.dataset.k = key;
+        els.lp.innerHTML = on ? lpItem('e', d.e) + lpItem('p', d.p) : '';
+        if (on) els.lp.querySelectorAll('.lp').forEach(b => lpData.set(b, d[b.dataset.side]));
+      }
+      els.lp.hidden = !on;
+      els.lp.classList.toggle('fade', on && S.lpFade);
+    }
+    // 換手時：牌桌兩張大封面（換手前量的 rect）縮小、飛進小列；字（含「上一手」籤）淡入。減少動態＝直接換
+    function lpFly(bigE, bigP) {
+      if (els.lp.hidden || rm()) return;
+      fly(els.lp.querySelector('.lp.e .cv'), bigE, 300); fly(els.lp.querySelector('.lp.p .cv'), bigP, 300);
+      els.lp.querySelectorAll('.lpt').forEach(x => fadeIn(x, 300));
+    }
+    function renderTable(v) { renderSlot('e'); renderSlot('p'); renderStrip(); renderTri(); renderRounds(v); renderLast(); }
 
     // ---------------- render: 你的一塊、手牌、星鈕 ----------------
     function relicIconHTML(r) {
@@ -888,6 +926,9 @@
     //   [上緣 --tp, 字高 --lab, 中間字帶高, 封面最小, 封面最大, 手牌區最低]（上緣、字高跟 duel.css 的 .dl-t 一致）
     const BOARD = { short: [4, 17, 66, 84, 176, 120], compact: [6, 19, 72, 96, 176, 120], base: [6, 19, 74, 100, 176, 127], roomy: [12, 20, 80, 110, 196, 135] };
     const PAIR_GAP = 10, TX = 12;
+    // 上一手小列的高（小封面＝高 − 2）與它跟兩張大封面之間的縫；小列出現時 --lp＝高＋縫（第一手 0）
+    const LP_H = { short: 28, compact: 30, base: 32, roomy: 36 }, LP_GAP = 3;
+    const HAND_R = 0.68, HAND_K = 1.15, HAND_PAD = 8;   // 手牌封面＝牌桌封面 × 0.68（上限）；手牌區要 F × 1.15 ＋ 8 才放得下（跟下面 F 的算法同一組數字）
     function sizeBoard() {
       const k = ['short', 'compact', 'roomy'].find(c => root.classList.contains(c)) || 'base';
       const [tp, lab, band, mn, mx, handMin] = BOARD[k];
@@ -896,11 +937,17 @@
       // 你的一塊除了手牌區以外的高（上框線＋名字列＋聲望條＋留白；.dl-p 是 flex:1，不能用它自己的高去減）
       const eH = els.e.offsetHeight, pFixed = 1 + els.hand.offsetTop + (parseFloat(getComputedStyle(els.p).paddingBottom) || 0);
       const hw = els.hand.clientWidth || (W - 2 * TX), n = ((E.CFG && E.CFG.handSize) || 5) + 1;   // 一排照最多 6 張（手牌＋王牌）算，換手時不跳
-      const fixedT = tp + lab + 6 + band + 6;
+      const lp = lpHas() ? LP_H[k] + LP_GAP : 0;
+      root.style.setProperty('--lp', lp + 'px'); root.style.setProperty('--lp-h', LP_H[k] + 'px');
+      const fixedT = tp + lp + lab + 6 + band + 6;
       const byW = Math.floor((W - 2 * TX - PAIR_GAP) / 2);
-      const scv = Math.round(Math.max(mn, Math.min(mx, byW, total - eH - pFixed - handMin - fixedT - 1)));
+      let scv = Math.round(Math.max(mn, Math.min(mx, byW, total - eH - pFixed - handMin - fixedT - 1)));
+      // 小列吃掉的高，牌桌封面跟手牌一起分攤：手牌封面被「不超過牌桌封面 7 成」卡住時，手牌區多出來的高還給牌桌封面（不然手牌上下留一大塊白）。
+      //   只在小列出現時才分攤；第一手的算法跟以前一樣
+      const handNeed = s2 => Math.round(s2 * HAND_R) * HAND_K + HAND_PAD;
+      if (lp) { const room = total - eH - pFixed - fixedT - 1, cap = Math.min(mx, byW); for (let s2 = scv + 1; s2 <= cap && room - s2 >= handNeed(s2); s2++) scv = s2; }
       const tableH = fixedT + scv;
-      const handH = Math.max(handMin, total - eH - pFixed - tableH - 1);
+      const handH = Math.max(lp ? Math.min(handMin, Math.ceil(handNeed(scv))) : handMin, total - eH - pFixed - tableH - 1);
       els.table.style.height = tableH + 'px';
       els.hand.style.height = handH + 'px';
       root.style.setProperty('--scv', scv + 'px');
@@ -909,7 +956,7 @@
       //   直線疊法上下各留的空不能超過約 24 px（FIXLIST 9）→ 430×932 牌桌封面上限 196、手牌 128；
       //   寬：疊著一排（F＋5×3 成）放得下，而且打開一張（兩張整張＋其他四條收到最窄 22%＋縫）也放得下——寬度不夠先收窄那幾條，還不夠才整排一起縮小
       const byWStack = Math.floor((hw - 8) / (1 + STACK_DX * (n - 1))), byWOpen = Math.floor((hw - OPEN_GAP) / (2 + OPEN_MIN * (n - 2)));
-      const F = Math.max(44, Math.min(Math.round(scv * 0.68), 128, Math.floor((handH - 8) / 1.15), byWStack, byWOpen));
+      const F = Math.max(44, Math.min(Math.round(scv * HAND_R), 128, Math.floor((handH - HAND_PAD) / HAND_K), byWStack, byWOpen));
       S.lay = { F, handH, handMin, scv };
       layoutHand(false);
     }
@@ -1055,7 +1102,13 @@
       els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
     }
-    // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下；他蓋著的封套不給看
+    // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下；上一手小列點一下或長按；他蓋著的封套不給看
+    //   小列：開這顆按鈕畫出來時的那一手（lpData），不是當下的 S.lpd——長按跨過 t=2060 換手時，x 已是被重建掉的舊按鈕，開的仍是手指按下去那張
+    function infoOfLast(x) {
+      const side = x.dataset.side, d = lpData.get(x);
+      if (d && d.card && d.card.id === x.dataset.card) { openInfo(d.card, 'last-' + side, d.attr); return true; }
+      return false;
+    }
     function infoOfSlot(x) {
       const side = x.classList.contains('e') ? 'e' : 'p', d = S.table && S.table[side];
       if (d && d.card && !d.hidden) { openInfo(d.card, 'slot-' + side, d.attr); return true; }
@@ -1080,6 +1133,7 @@
       if (!els.cheat.hidden) { setCheat(false); if (t.closest('.cheat, .tri')) return; }
       else if (t.closest('.tri') && !S.busy) { setCheat(true); return; }
       let x;
+      if ((x = t.closest('.lastplay .lp'))) { infoOfLast(x); return; }   // 上一手小列：手牌開著也不收回、結算中也不加速（跟點牌桌大格一樣）
       if ((x = t.closest('.slot[data-card]'))) { infoOfSlot(x); return; }
       if ((x = t.closest('.rl'))) { relicTap(x); return; }
       if (S.busy) {   // 結算中點畫面＝這手 4 倍速；唬你／剋不動的結果框停著時＝看完了、繼續
@@ -1103,7 +1157,7 @@
       if (!t || !t.closest || root.contains(t) || t.closest('#cardInfoMask, #tut, #tutTip, .lb-modal')) return;
       closeHand(true);
     }
-    const LP_SEL = '.cvw[data-act="pick"], .slot[data-card], .ab';
+    const LP_SEL = '.cvw[data-act="pick"], .slot[data-card], .ab, .lastplay .lp';
     function onDown(ev) {
       S.down = { x: ev.clientX, y: ev.clientY, t: performance.now() };   // 手指真正按下的位置（觸控校正只改 click 的座標；inChipGap 用）
       S.swallow = null;   // 新的一次按下：上一次長按放開的 click 沒來（觸控取消、Android 長按不補 click）就不再等它，這一下照常（V5 F6）
@@ -1113,8 +1167,10 @@
       lp.h = later(() => {
         if (S.lp !== lp) return;
         S.lp = null;
-        const ok = t.matches('.ab') ? chipTip(t) : t.matches('.slot') ? infoOfSlot(t) : infoOfTile(t);
-        if (ok) S.swallow = { el: t };   // 放開手指的那一下 click 不再打開／收回／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）
+        const ok = t.matches('.ab') ? chipTip(t) : t.matches('.slot') ? infoOfSlot(t) : t.matches('.lp') ? infoOfLast(t) : infoOfTile(t);
+        // 放開手指的那一下 click 不再打開／收回／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）。
+        //   小列的按鈕若在按住時被換手重建掉（t 已不在畫面上）：吞的是整列裡的那一下
+        if (ok) S.swallow = { el: !t.isConnected && t.matches('.lp') ? els.lp : t };
       }, LONG_MS);
     }
     function onMove(ev) { const lp = S.lp; if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { clearTimeout(lp.h); S.lp = null; } }
@@ -1135,7 +1191,7 @@
     root.addEventListener('pointerup', onUp);
     root.addEventListener('pointercancel', () => { onUp(); S.swallow = null; });   // 取消＝不會有 click 來（V5 F6）
     root.addEventListener('pointerover', onOver);
-    root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.ab,.sleeve')) ev.preventDefault(); });
+    root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.ab,.sleeve,.lp')) ev.preventDefault(); });
     root.addEventListener('keydown', ev => {
       if ((ev.key === 'Enter' || ev.key === ' ') && ev.target.classList && ev.target.classList.contains('slot')) { ev.preventDefault(); ev.target.click(); }
       if (ev.key === 'Escape' && S.apxOpen) { ev.preventDefault(); closeApex(); return; }
@@ -1275,6 +1331,7 @@
       // ---- t=0：你的牌飛上牌桌、手牌收回疊好；他那格「蓋著」；舞台一台唱盤開演
       S.lastCt = null; S.flash = null;
       S.table = { e: { card: cl.eCard, attr: cl.eAttr, star: cl.eStar, ace: !!cl.eAce, hidden: true }, p: { card: cl.pCard, attr: cl.pAttr, star: cl.pStar, ace: !!cl.ace }, dim: false };
+      S.lpFade = true;                                   // 上一手小列變淡、籤藏起：牌桌兩格才是這一手
       renderTable(v0);
       if (tileEl) tileEl.classList.add('gone');
       renderPop(); layoutHand(true);
@@ -1328,12 +1385,17 @@
       // ---- t=2060：下一手（提示句換字、手數加一）
       S.debug.lastMs = performance.now() - t0;
       S.v = v1;
+      // 牌桌兩張搬進上一手小列（第一次＝長出來，版面縮一號；之後＝換掉）：先量大封面，換完版面再飛
+      const bigE = rectOf(els.se.querySelector('.cv')), bigP = rectOf(els.sp.querySelector('.cv'));
+      if (S.table && S.table.e && S.table.p) { S.lpd = { e: lpSnap(S.table.e), p: lpSnap(S.table.p) }; S.lpOn = !!(S.lpd.e && S.lpd.p); }
+      S.lpFade = false;
       if (S.table) S.table.dim = true;
       S.speed = baseSpeed(); setSpeed(S.speed); S.rush = false;
       root.classList.remove('busy', 'revealed');
       S.busy = false;
       renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null });
-      scheduleFit();
+      const fitPend = !!S.fitRaf; scheduleFit(); if (fitPend) fit();   // 小列第一次長出來：這一刻就要量好新版面（飛的終點）
+      lpFly(bigE, bigP);
       // 提示從半透明開始：中間字帶不會只剩「提示」兩個字（R-05b）
       if (!rm()) { A(els.htx, [{ opacity: .45, transform: 'translateY(-3px)' }, { opacity: 1, transform: 'none' }], { duration: 240, easing: 'ease-out' }); A(els.rounds, [{ opacity: .2 }, { opacity: 1 }], { duration: 320 }); }
       if (hs) onEvent(hs);
@@ -1345,6 +1407,7 @@
       holdBack();
       holdSleeve('p', null);
       if ((v.n | 0) >= (v.maxRounds || 6)) hint('tip_rounds', ['rounds']);
+      if (lpHas() && !els.lp.hidden) hint('tip_lastplay', ['lastplay']);   // 一次性：上一手兩張留在上面、點得開（教學中不出，由 tutorial.js queueTip 擋）
       emit('handStart', v);
     }
     // 六手打完／他牌出完的副標（FIXLIST 3：比聲望條剩幾成）。% 用引擎 over 事件的 pct（＝E.pctPair：整數一樣但勝負不同時改一位小數），
@@ -1405,11 +1468,12 @@
     }
 
     // ---------------- 起手 ----------------
-    function initialTable() {   // 續玩：從 view().last 還原「上一手」兩張（變淡）
+    function initialTable() {   // 續玩：從 view().last 還原「上一手」兩張（放進上一手小列）
       const l = S.v.last;
       if (!l || S.v.over) return;
       S.lastCt = clashText(l, T, hints, l && 'apex' in l ? apxUI() : undefined);
       S.table = { e: { card: l.eCard, attr: l.eAttr, star: l.eStar, ace: !!l.eAce }, p: { card: l.pCard, attr: l.pAttr, star: l.pStar, ace: !!l.ace }, dim: true };
+      S.lpd = { e: lpSnap(S.table.e), p: lpSnap(S.table.p) }; S.lpOn = !!(S.lpd.e && S.lpd.p);   // 上一手小列一開始就在
     }
     initialTable();
     renderAll();
@@ -1522,6 +1586,8 @@
         call: { l1: txt(els.call.querySelector('.l1')), l2: txt(els.call.querySelector('.l2 .v')), l3: txt(els.call.querySelector('.l3')), notes: txt(els.call.querySelector('.l2 .nt')), on: els.call.classList.contains('on') },
         slotE: slot(els.se), slotP: slot(els.sp), lastline: txt(els.last), hint: txt(els.htx), rounds: txt(els.rounds), leg: els.leg.hidden ? '' : txt(els.leg),
         eHp: txt(els.ehpn), pHp: txt(els.phpn), pile: txt(els.pileTx), open: S.sel ? S.sel.i : null, pop: txt(els.abpop),
+        lastplay: { e: (els.lp.querySelector('.lp.e') || { dataset: {} }).dataset.card || null, p: (els.lp.querySelector('.lp.p') || { dataset: {} }).dataset.card || null,
+          fade: els.lp.classList.contains('fade'), hidden: els.lp.hidden, text: txt(els.lp) },
         ...(S.v && S.v.apex ? { apx: els.apx && !els.apx.hidden ? txt(els.apx) : '', apxf: els.apxf && !els.apxf.hidden ? txt(els.apxf) : '', stamp: txt(els.hint.querySelector('.apxst:not([hidden])')),
           aceTile: (apexTileEl() || { dataset: {} }).dataset.apex || null } : {}),
       };

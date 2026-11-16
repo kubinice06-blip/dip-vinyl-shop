@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-16｜dip-vinyl-shop｜game-lab 對決：上一手兩張專輯留在牌桌上方小列
+
+- **店主 11-16**：「打完要把上一手的專輯留在檯面上，不然玩家無法看清楚對方打的專輯，就無法認識新專輯。」
+- **做了什麼**：牌桌最上面加一列「上一手」小列（`duel.js` `renderStrip`、`.lastplay`）：左邊他上一手、右邊你上一手（小封面＋「［上一手］他・經典 5」灰字＋專輯名），點、長按、鍵盤都開唱片資訊（where `last-e`／`last-p`；`cardinfo.js` 擋 `duel:last-e` 不露他王牌能力）。他這手照樣整格蓋著。換手（t=2060）時兩張大封面縮進小列；揭曉中與打完淡到 40%、籤藏起；第 1 手沒有小列。一次性老闆小提示 `tip_lastplay`「上一手留在上面，點封面看唱片資訊。」
+- **代價**：第 2 手起牌桌封面 375×548 144→126、手牌 97→86（390×664 176→155、115→103）；四尺寸不捲動。
+- **流程**：兩個原型（原位留著 vs 上方小列）評比 → 選小列並嫁接三點 → 施工 → 邏輯／體驗審查＋對抗驗證（確認 3 項 low：長按跨過換手開錯張、「上一手」標示太弱、打完留 40 px 空帶）→ 全修。設計 `v5/lastplay/DESIGN.md`。
+- **主要檔案**：`game-lab/{duel.js,duel.css,content.js,cardinfo.js,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/tests/{e2e-duel,e2e.spec}.mjs`。併入 #463 後 `?v=74`。
+- **驗證**：check-content／lint-copy；engine 2,344,997（併入後主線複跑）、tutorial 505,169 等全過；e2e-duel 102/102（併入後主線複跑 390 59/59）、e2e.spec 四尺寸 142/142、e2e-prologue 52×2、e2e-apex 35/35（併入後主線複跑 375 18/18）、e2e-taps 14/14、e2e-econ 54/54；教學 26 步走完。**沒驗**：真 iPhone。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 前期加難：第 1 位就會唬人（只動第 1–4 位）
 
 - **店主 11-16**：「現在玩起來前期太簡單了，沒有挑戰性。」原因：`C.trial.curve` 第 1–2 位說真話 1（永遠不唬）、品味第 4 位、底氣第 5 位才有，照提示剋就送分（smart 新手第 1–3 位死 1.5%）。

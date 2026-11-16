@@ -377,13 +377,14 @@ export function contentProblems(C, E) {
   }
 
   // 小提示、盤面字、店內字、經濟介面字
-  ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds');
+  ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds tip_lastplay');
   for (const k of Object.keys(C.coachTips || {})) ok(C.coachTipTags && C.coachTipTags[k], 'coachTipTags.' + k);
   // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'），
   //   再扣掉 picked／again／throwBtn／waiting／aceUsed（FIXLIST 11：沒有「丟！」列；用過的王牌不留在手牌裡）、pickHint（v5 手風琴：沒有整排攤開的「點一張專輯」框）
   const DT = ['hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
-    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn'];   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
+    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn',   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
+    'lpAria'];   // lpAria：上一手小列的讀屏字（店主 11-16）
   ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');
   // D §5 的三個例句要組得出來

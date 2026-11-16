@@ -44,7 +44,7 @@
 .dl .dl-e>.nmrow,.dl .dl-e>.hp{grid-column:1 / -1}
 /* 提示句（店主 FIXLIST 9）：不再是上面獨立的一條，而是牌桌中間的「字帶」——兩張封面下方、跟結果框同一個位置；
    出牌前是提示句（主角之一），揭曉時換成結果框，下一手換回下一句提示。字帶在封面下面剩下的高（--band-h，duel.js sizeTable）裡置中 */
-.dl .hint{position:absolute;left:var(--tx);right:var(--tx);top:calc(var(--tp) + var(--scv) + var(--lab) + 6px + var(--band-h,74px) / 2);transform:translateY(-50%);z-index:3;
+.dl .hint{position:absolute;left:var(--tx);right:var(--tx);top:calc(var(--tp) + var(--lp,0px) + var(--scv) + var(--lab) + 6px + var(--band-h,74px) / 2);transform:translateY(-50%);z-index:3;
   display:flex;align-items:stretch;min-height:40px;border:1.5px solid var(--ink,#111);background:#fff;min-width:0;box-shadow:0 3px 0 rgba(0,0,0,.08)}
 .dl .hint .lb{flex:none;display:grid;place-items:center;background:var(--ink,#111);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;padding:0 9px;margin-right:9px;white-space:nowrap}
 .dl .hint .tx{align-self:center;font-size:15px;font-weight:700;letter-spacing:.02em;line-height:20px;padding:6px 8px 6px 0;min-width:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -68,10 +68,11 @@
 /* ===================== 牌桌（中間）：兩張丟出去的專輯是主角（店主 2026-11-08：「相剋圖比例太大 主角是專輯」）=====================
    兩格並排（--scv＝封面邊長，duel.js sizeBoard() 照牌桌剩下的高與寬算），中間只留 --gap；兩張置中（--pl＝左邊那張的左緣）。
    封面下面那行「他・經典 5」，再下面是中間字帶（--band-h）：左邊一欄「第 n／6 手」＋小相剋圖例（FIXLIST 7：56–72 px），右邊是提示句／結果框／上一手。
-   --tp＝封面上緣、--lab＝封面下那行字的高、--bt＝中間字帶的上緣、--bx＝字帶裡提示句的左緣。 */
-.dl .dl-t{--tp:6px;--lab:19px;--gap:10px;--pl:calc(50% - var(--gap) / 2 - var(--scv));--bt:calc(var(--tp) + var(--scv) + var(--lab) + 6px);--bx:calc(var(--pl) + var(--tri-w) + 8px);
+   --tp＝牌桌上緣的留白、--lp＝上一手小列佔掉的高（小列＋3 px 縫；第一手 0，duel.js sizeBoard）、--lab＝封面下那行字的高、--bt＝中間字帶的上緣、--bx＝字帶裡提示句的左緣。
+   兩張大封面的上緣＝--tp ＋ --lp。 */
+.dl .dl-t{--tp:6px;--lab:19px;--gap:10px;--pl:calc(50% - var(--gap) / 2 - var(--scv));--bt:calc(var(--tp) + var(--lp,0px) + var(--scv) + var(--lab) + 6px);--bx:calc(var(--pl) + var(--tri-w) + 8px);
   --tx:var(--pl);flex:none;height:300px;position:relative;z-index:2}
-.dl .slot{position:absolute;top:var(--tp);width:var(--scv);height:var(--scv);-webkit-touch-callout:none}
+.dl .slot{position:absolute;top:calc(var(--tp) + var(--lp,0px));width:var(--scv);height:var(--scv);-webkit-touch-callout:none}
 .dl .slot.e{left:var(--pl)}
 .dl .slot.p{right:var(--pl)}
 .dl .slot .cvw{position:relative;display:block;width:var(--scv);height:var(--scv)}
@@ -265,6 +266,32 @@
   .dl .ab:active{transform:none}
 }
 .dl.over .lastline{visibility:hidden}   /* 打完：大章在中間，「上一手」那行不要從大章兩側露出半截（R2 截圖） */
+/* 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上」）：牌桌最上面一列、兩張大封面正上方（--tp 到 --tp＋--lp-h）。
+   左＝他上一手（小封面＋「［上一手］他・冷門 4」＋專輯名一行），右＝你上一手（鏡像：封面靠右、字靠右）。
+   兩項各自在字首掛深灰「上一手」籤（白字對 #5f5f5f 約 6.4:1），「他・冷門 4」整行灰字、屬性不上色（審查 11-16：他那項疊在他蓋著的袖套正上方，
+   原本只有中間一個淡籤＋全彩屬性字，會被讀成「他這手出冷門 4」）。灰底、灰字：一看就是過去式；封面照原色（要認得出是哪張）。第一手沒有（hidden、不佔高）。
+   揭曉中（.fade）淡到 40%、籤藏起：中間那行「上一手 …」指的是這一手，畫面上的「上一手」永遠只指一手。
+   打完（.dl.over）：照樣淡著、籤藏起，留在原位（不收起：收起會在牌桌上緣留一條 40–48 px 的空帶，審查 11-16） */
+.dl .lastplay{position:absolute;top:var(--tp);left:12px;right:12px;height:var(--lp-h,30px);display:flex;align-items:stretch;gap:6px;z-index:2;transition:opacity .2s}
+.dl .lastplay .lp{position:relative;flex:1 1 0;min-width:0;display:flex;align-items:center;height:100%;background:#f3f2ef;border:1px solid #dcdad4;cursor:pointer;-webkit-touch-callout:none}
+.dl .lastplay .lp::after{content:'';position:absolute;left:-1px;right:-1px;top:calc(-1px - var(--tp,6px));bottom:-4px}   /* 命中區：往上到牌桌上緣、往下到大格上緣（3 px 縫），不蓋大格 */
+.dl .lastplay .lp:active{background:#e8e6e0}
+.dl .lastplay .lp:focus-visible{outline:2px solid var(--ink,#111);outline-offset:1px}
+.dl .lastplay .lp.p{flex-direction:row-reverse;text-align:right}
+.dl .lastplay .lpc{flex:none;display:block;width:calc(var(--lp-h,30px) - 2px);height:calc(var(--lp-h,30px) - 2px)}
+.dl .lastplay .lpc .cv{width:100%;height:100%;border:0}
+.dl .lastplay .lpc .cv.noimg{padding:0}.dl .lastplay .lpc .cv.noimg>span{display:none}   /* 封面載不到：只留斜紋底，專輯名旁邊就有 */
+.dl .lastplay .lp.ace .lpc .cv{outline:2px solid var(--gold,#b8860b);outline-offset:-2px}
+.dl .lastplay .lpt{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;justify-content:center;padding:0 6px}
+.dl .lastplay .lpw{font-size:11px;line-height:13px;font-weight:700;color:#6f6f6f;white-space:nowrap;overflow:hidden}
+.dl .lastplay .lpk{display:inline-block;vertical-align:top;margin-right:4px;padding:0 3px;font-size:10px;letter-spacing:.04em;color:#fff;background:#5f5f5f}   /* 「上一手」籤：行高跟著 .lpw */
+.dl .lastplay .lpn{font-size:12px;line-height:15px;font-weight:700;color:#3a3a3a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dl .lastplay.fade,.dl.over .lastplay{opacity:.4}
+.dl .lastplay.fade .lpk,.dl.over .lastplay .lpk{display:none}
+.dl.short .lastplay .lpw,.dl.compact .lastplay .lpw{font-size:10px;line-height:12px}
+.dl.short .lastplay .lpn,.dl.compact .lastplay .lpn{font-size:11px;line-height:14px}
+.dl.roomy .lastplay .lpw{font-size:11px;line-height:14px}
+.dl.roomy .lastplay .lpn{font-size:13px;line-height:17px}
 /* 唬你／剋不動的結果框停住（店主 11-12）：最下面一行灰字「點一下繼續 ▼」 */
 .dl .callout .l4{display:none;font-size:10px;font-weight:700;line-height:14px;color:var(--gray,#888);text-align:right;letter-spacing:.08em;margin-top:1px}
 .dl .callout.wait .l4{display:block;animation:dlBlink 1s steps(1,end) infinite}
