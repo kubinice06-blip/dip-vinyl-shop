@@ -175,3 +175,9 @@
 .ec-poor.ec-go small{font-family:var(--zh,sans-serif);font-weight:400;letter-spacing:.02em;}
 .ec-cs.gift .ec-tcv,.ec-cs.seed .ec-tcv{opacity:1;}   /* 賣給老闆：送的／種子可以交還，不淡掉（停用的才淡，.ec-cs:disabled） */
 .ec-cs:disabled.gift .ec-tcv,.ec-cs:disabled.seed .ec-tcv{opacity:.4;}
+/* 櫃檯賣給老闆（審查 A-8）：每格封面下面多一行三軸星數；封面窄（<64 px，四欄）只留彩色數字。選了一張：問句＋「唱片資訊」小鈕（問句太長只切問句） */
+.ec-csell .ec-g4 .ec-stars.col{gap:3px;}
+.ec-csell .ec-narrow .ec-stars b i{display:none;}
+.ec-line.ec-cl{display:flex;align-items:center;gap:8px;height:26px;line-height:26px;}
+.ec-line.ec-cl .tx{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ec-drawer .ec-inf{flex:none;font:700 11px/1 var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--ink,#111);background:#fff;border:1px solid var(--ink,#111);padding:6px 8px;min-height:26px;cursor:pointer;}

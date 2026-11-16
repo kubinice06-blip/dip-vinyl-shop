@@ -455,7 +455,7 @@ if (C.bargain && C.bargain.label) { if (!TAG_OK(C.bargainTag)) err('bargain.labe
 // 無限試煉（C.trial 的畫面字：頂欄、來客、說情、升級三選一、結果行補的一句）與結算
 if ('night' in C || 'secondNight' in C) err('content', '無限試煉沒有一晚與第二夜：C.night／C.secondNight 不准回來');
 const TRIAL_SCENE = { ui: '無限試煉・頂欄、來客、說情、標題（{x} 由畫面代入）', levelUp: '無限試煉・升級三選一（店主暫定的名字：品味／底氣）', notes: '無限試煉・結果行補的一句（品味／底氣多扣、少扣）',
-  titles: '無限試煉・客人稱號（每 2 位換一次；舊版 enemyForDepth 的字，來客條與對決他名字旁）' };
+  titles: '無限試煉・客人稱號（每 2 位換一次；舊版 enemyForDepth 的字，來客條與對決他名字旁）', titlesShort: '無限試煉・客人稱號在來客條的短寫（名牌放不下的）' };
 for (const [grp, scene] of Object.entries(TRIAL_SCENE)) {
   const walkT = (val, where) => {
     if (Array.isArray(val)) return val.forEach((v, k) => walkT(v, where + '[' + k + ']'));

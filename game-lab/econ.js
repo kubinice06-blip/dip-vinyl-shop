@@ -167,8 +167,14 @@
   }
   // 櫃檯賣給老闆（engine.sellQuote：跟 choose sell 同一套檢查、不改 run）→ {ok, earn, reclaim} 或 {ok:false, error}
   function quote(r, id) { try { return E().sellQuote ? E().sellQuote(r, C(), id) : { ok: false, error: 'badSell' }; } catch (_) { return { ok: false, error: 'badSell' }; } }
-  // 錢不夠時要不要寫「去櫃檯賣唱片」：包包裡還有能換錢的（不是送的、不是種子、沒到 5 張下限）
-  function canRaise(r) { return !!r && r.bag.some(function (id) { var q = quote(r, id); return q.ok && q.earn > 0; }); }
+  // 錢不夠時要不要寫「去櫃檯賣唱片」：包包至少留 5 張，最多能賣（張數 − 5）張；挑最值錢的那幾張賣掉，錢加起來夠買這一張（price）才寫——
+  //   賣光也不夠就只寫「錢不夠」，不引你去白賣牌（審查 A-10：開局 $1,000、7 張裡 4 張送的，最多湊 $300，原本 FEATURE $3,000 也叫你去賣）
+  function raiseMax(r) {
+    var k = r ? r.bag.length - handMin() : 0; if (k <= 0) return 0;
+    var vals = r.bag.map(function (id) { var q = quote(r, id); return q.ok ? q.earn | 0 : 0; }).filter(function (v) { return v > 0; }).sort(function (a, b) { return b - a; });
+    return vals.slice(0, k).reduce(function (s, v) { return s + v; }, 0);
+  }
+  function canRaise(r, price) { var m = raiseMax(r); return m > 0 && r.money + m >= price; }
   function handMin() { return (E().CFG && E().CFG.handSize) || 5; }
   // D §6：序章／對決中（含等你收獎勵）點箱子＝老闆「打完再翻。」
   function busy(r) { return !!(r && (r.duel || r.prologue === 'pending' || r.pending)); }
@@ -399,7 +405,7 @@
       var owned = r.bag.indexOf(c.id) >= 0;
       var can = price != null && !owned && r.money >= price;   // 買的時候不能順手賣（第 A 波 5：移出包包只走櫃檯）：錢不夠就停用、指去櫃檯
       btn = '<button type="button" class="ec-buy lb-btn pri" data-a="buy" data-cid="' + esc(c.id) + '"' + (can ? '' : ' disabled') + '>' +
-        (owned ? esc(ui('owned')) : !can ? poorHTML(price, canRaise(r)) : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>';
+        (owned ? esc(ui('owned')) : !can ? poorHTML(price, price != null && canRaise(r, price)) : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>';
     } else {   // 只看（標題畫面、現在還不能買）：照樣標價
       var pv = E().priceOf(C(), c);
       if (pv != null) btn = '<span class="ec-pv">' + esc(money(pv)) + '</span>';
@@ -447,7 +453,7 @@
       var can = k >= 1 && k <= pickN() && r.money >= price;
       var cheapest = Math.min.apply(null, ids.map(bargainPrice).filter(function (v) { return v != null; }).concat([Infinity]));
       var poorAll = r.money < cheapest;   // 連最便宜的一張都買不起
-      var label = k < 1 ? (poorAll ? esc(ui('noMoney')) : esc(ui('bargainHint'))) : can ? esc(fill(ui('bargainBuy'), { n: mt(price) })) : poorHTML(price, canRaise(r));
+      var label = k < 1 ? (poorAll ? esc(ui('noMoney')) : esc(ui('bargainHint'))) : can ? esc(fill(ui('bargainBuy'), { n: mt(price) })) : poorHTML(price, canRaise(r, price));
       foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + ' data-total="' + price + '">' + label + '</button>';
     }
     return headHTML(title, extra) +
@@ -503,14 +509,16 @@
       var tag = gift ? ui('giftTag') : seed ? ui('seedTag') : '';
       return '<button type="button" class="ec-tile ec-spick ec-cs' + (on ? ' sel' : '') + (gift ? ' gift' : '') + (seed ? ' seed' : '') + '" data-a="cpick" data-cid="' + esc(id) + '" aria-pressed="' + on + '"' + (q.ok ? '' : ' disabled') +
         (back ? ' data-back="1"' : '') + ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (tag ? '（' + tag + '）' : '') + '：' + (back ? ui('reclaimTag') : '+' + money(q.ok ? q.earn : 0))) + '">' +
-        '<span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + '</span>' + lab + '</button>';
+        '<span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + '</span>' + lab + starsHTML(c, { col: true }) + '</button>';
     }).join('');
     var pc = S.spick ? card(S.spick) : null, pq = pc ? quote(r, pc.id) : null, pback = !!(pq && pq.ok && pq.reclaim);
-    var line = pc ? esc(fill(ui(pback ? 'reclaimAsk' : 'sellAsk'), { album: pc.album })) : '&nbsp;';
+    // 選了一張：底下那條問一次，旁邊「唱片資訊」（賣之前看得到是哪張、試聽；格子長按也開，審查 A-8）
+    var line = pc ? '<span class="tx">' + esc(fill(ui(pback ? 'reclaimAsk' : 'sellAsk'), { album: pc.album })) + '</span>' +
+      '<button type="button" class="ec-inf" data-a="info" data-cid="' + esc(pc.id) + '">' + esc(ui('sellInfo') || ui('infoAria')) + '</button>' : '&nbsp;';
     var go = pc && pq && pq.ok ? (pback ? esc(ui('reclaimGo')) : esc(fill(ui('sellGo'), { n: mt(pq.earn) }))) : esc(ui('sellTitle'));
     return headHTML(S.label) + '<p class="ec-msg ec-cnote' + (atMin ? '' : ' ok') + '">' + esc(atMin ? fill(ui('bagSellMin'), { n: handMin() }) : ui('sellNote')) + '</p>' +
       '<div class="ec-grid ec-g4">' + tiles + '</div>' +
-      '<p class="ec-line">' + line + '</p>' +
+      '<p class="ec-line ec-cl">' + line + '</p>' +
       '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="cno"' + (pc ? '' : ' disabled') + '>' + esc(ui('sellNo')) + '</button>' +
       '<button type="button" class="lb-btn pri ec-sellb" data-a="cgo"' + (pc && pq && pq.ok ? '' : ' disabled') + '>' + go + '</button></div>';
   }
@@ -613,7 +621,7 @@
     if (!t) { S.drag = null; return; }
     S.drag = { x: e.clientX, y: e.clientY, el: t, id: e.pointerId, long: false };
     clearTimeout(S.lpT);
-    if (t.classList.contains('ec-tile') && t.getAttribute('data-a') === 'tog') {
+    if (t.classList.contains('ec-tile') && /^(tog|cpick)$/.test(t.getAttribute('data-a') || '')) {   // 特價箱挑牌、櫃檯賣給老闆的格子
       // 長按 450 ms：先標起來（看得到按住了），放開才開唱片資訊
       S.lpT = setTimeout(function () { if (!S.drag || S.drag.el !== t) return; S.drag.long = true; t.classList.add('ec-lp'); }, LONG_MS);
     }

@@ -2263,9 +2263,10 @@ section('22 第 A 波（店主 11-16）：放水照位數機率（可重現、�
     ok(sameSet(rg.slice(0, 3).map(x => x.main), ATTRS), 'this round: the three regulars are one of each colour');
   }
   ok(EN.view(startFor('copycat', 'hall', 5).duel).eMain === null && EN.view(startFor('man', 'hall', 5, { tutorial: true }).duel).eMain === null, 'direct duels／prologue: no main');
-  // (g) 出牌比例（店主「為何對手都打經典」）：新手打到第 12 位、smart：三色各 25–40%（改版前 40／31／30、這版約 38／31／31：前幾位的牌大多是他自己的，
-  //     經典卡的經典星最純，冷門／硬蕊卡的第二高常是經典）、每種主屬性的客人提示最多的是主屬性那色、出主屬性那色 > 剋它的那色
-  { const play3 = { c: 0, o: 0, h: 0 }, byM = {}, hintM = {};
+  // (g) 出牌比例（店主「為何對手都打經典」）：新手打到第 12 位、smart：三色各 25–40%；第 4–12 位（出招偏主屬性 mainBias 起算）三色各 30–36%
+  //     （改版前 39／30／31；只照主屬性組牌、出招不偏＝37／31／32，這條擋得住；這版約 34／33／32。第 1–3 位不偏，約 40／32／28：見 content.js mainBias）、
+  //     每種主屬性的客人提示最多的是主屬性那色、出主屬性那色 > 剋它的那色
+  { const play3 = { c: 0, o: 0, h: 0 }, late3 = { c: 0, o: 0, h: 0 }, byM = {}, hintM = {};
     for (let s = 0; s < (QUICK ? 80 : 300); s++) {
       const run = EN.newRun(C, { seedKey: 'share-' + s, runNo: 1, ace: TIERS[s % 3], prologue: false }); EN.choose(run, C, EN.bargainPolicy(run, C));
       const R = lcg(s), mem = {};
@@ -2274,16 +2275,18 @@ section('22 第 A 波（店主 11-16）：放水照位數機率（可重現、�
         if (st === 'reward' || st === 'level' || st === 'retry') { EN.choose(run, C, EN.runPolicy(run, C)); continue; }
         if (st !== 'fight' || run.pos > 12) break;
         for (const ch of EN.shopPolicy(run, C, 'smart')) EN.choose(run, C, ch);
-        const f = EN.startFight(run, C, {}), mn = f.duel.e.main;
+        const pos = run.pos, f = EN.startFight(run, C, {}), mn = f.duel.e.main;
         play(f.duel, 'novice', R, mem);
-        for (const l of f.duel.log) { play3[l.eAttr]++; byM[mn] = byM[mn] || { c: 0, o: 0, h: 0 }; byM[mn][l.eAttr]++; hintM[mn] = hintM[mn] || { c: 0, o: 0, h: 0 }; hintM[mn][l.hint]++; }
+        for (const l of f.duel.log) { play3[l.eAttr]++; if (pos >= 4) late3[l.eAttr]++; byM[mn] = byM[mn] || { c: 0, o: 0, h: 0 }; byM[mn][l.eAttr]++; hintM[mn] = hintM[mn] || { c: 0, o: 0, h: 0 }; hintM[mn][l.hint]++; }
         EN.finishFight(run, C);
       }
     }
     const tot = play3.c + play3.o + play3.h, sh = a => play3[a] / tot;
     ok(ATTRS.every(a => sh(a) >= 0.25 && sh(a) <= 0.40), 'he plays each colour 25–40% of the time', ATTRS.map(a => (100 * sh(a)).toFixed(1)));
+    const lt = late3.c + late3.o + late3.h, sl = a => late3[a] / lt;
+    ok(ATTRS.every(a => sl(a) >= 0.30 && sl(a) <= 0.36), 'positions 4–12 (mainBias): he plays each colour 30–36% of the time', ATTRS.map(a => (100 * sl(a)).toFixed(1)));
     for (const M of ATTRS) { const H = hintM[M], P = byM[M]; ok(H && ATTRS.every(a => a === M || H[M] > H[a]) && P[M] > P[COUNTER_OF[M]], 'main ' + M + ': hints it most, plays it more than its counter', { H, P }); }
-    console.log('     guests play 經／冷／硬 ' + ATTRS.map(a => (100 * sh(a)).toFixed(1)).join('／') + '%（novice smart to pos 12）；main share of plays ' + ATTRS.map(M => M + ' ' + (100 * byM[M][M] / (byM[M].c + byM[M].o + byM[M].h)).toFixed(0) + '%').join('、')); }
+    console.log('     guests play 經／冷／硬 ' + ATTRS.map(a => (100 * sh(a)).toFixed(1)).join('／') + '%（novice smart to pos 12；pos 4–12 ' + ATTRS.map(a => (100 * sl(a)).toFixed(1)).join('／') + '%）；main share of plays ' + ATTRS.map(M => M + ' ' + (100 * byM[M][M] / (byM[M].c + byM[M].o + byM[M].h)).toFixed(0) + '%').join('、')); }
   // (h) 櫃檯：sellQuote＝choose sell（每張、每個時機）；舊的 run 沒有 gifts 欄也能交還；交還的禮物買回來＝買的（半價）
   { let n = 0;
     for (let s = 0; s < 30; s++) {

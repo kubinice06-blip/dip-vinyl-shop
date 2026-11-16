@@ -20,7 +20,7 @@
 //   startDuelLesson({ tier, replay? }) → Promise<'done'|'skipped'|'released'|'aborted'>  // mount 之後叫；依 duel.n 自己接到那一手的步驟
 //   skip(), abort(), active(), fastForward()
 //   hintHook(id, targets)   // ＝DipLabDuel hooks.hint：一次性老闆小提示；教學進行中不出、不記
-//   firstTime(id, targets)  // 同一條佇列；另有 'night'（C.shopLines.nightIntro 四句，壓暗 40%、點一下換句）
+//   firstTime(id, targets, o?)  // 同一條佇列；另有 'night'（C.shopLines.nightIntro 四句，壓暗 40%、點一下換句）；o.keep＝泡泡要避開的目標（例 'shop:deck'）
 //   dismissSoft(), step(def), replayDuel(C, tier, seed?, {bargain?}), learned(), learnedIds(), settled(), debug()
 // };
 // gate action（duel.js 送進來）：{kind:'card',i,attr,id}（點一張封面＝在那張打開）
@@ -1141,7 +1141,7 @@
   }
 
   // ---------------------------------------------------------------- 對決以外的一次性提示（今晚來客）：壓暗 40%、不擋，點一下換句
-  function firstTime(id, targets) {
+  function firstTime(id, targets, o) {
     if (!id) return;
     if (/^tip_/.test(id) || (Cn().coachTips && Cn().coachTips[id])) return queueTip(id, targets);
     if (S.lesson) return;
@@ -1150,18 +1150,18 @@
     var lines = (id === 'night' || id === 'map' || id === 'h_map') ? ((SL.nightIntro || SL.mapIntro || []).slice()) : (C.hints && C.hints[id] ? [C.hints[id]] : []);
     if (!lines.length) return;
     if (S.softQ.some(function (x) { return x.id === id; }) || (S.soft && S.soft.id === id)) return;
-    S.softQ.push({ id: id, targets: (targets || []).slice(), lines: lines });
+    S.softQ.push({ id: id, targets: (targets || []).slice(), lines: lines, keep: o && o.keep ? [].concat(o.keep) : null });
     setTimeout(pumpSoft, 0);
   }
   function pumpSoft() {
     if (S.soft || !S.softQ.length || S.lesson) return;
     var h = S.softQ.shift();
-    var cur = { id: h.id, kind: 'other', lines: h.lines, k: 0, targets: h.targets };
+    var cur = { id: h.id, kind: 'other', lines: h.lines, k: 0, targets: h.targets, keep: h.keep };
     S.soft = cur;
     showSoft(cur);
   }
   function showSoft(cur) {
-    setShow({ mode: 'soft', targets: cur.targets, text: cur.lines[cur.k], point: null, bubble: 'auto' });
+    setShow({ mode: 'soft', targets: cur.targets, text: cur.lines[cur.k], point: null, bubble: 'auto', keep: cur.keep || undefined });
     cur.shownAt = cur.shownAt || now();
     cur.lineAt = now();                 // 這一句出現的時間（最後一句停滿 1.2 s 才點掉，才算讀過）
     var t0 = cur.lineAt;

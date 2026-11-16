@@ -1187,7 +1187,7 @@ async function run() {
         const sdTile = await page.evaluate(sd => { const t = document.querySelector(`.ec-drawer .ec-cs[data-cid="${sd}"]`); return t ? { seed: t.classList.contains('seed'), sv: (t.querySelector('.ec-sv') || {}).textContent || '', dis: t.disabled } : null; }, setup.sd);
         await watchSay(page);
         await page.evaluate(sd => { const b = document.querySelector(`.ec-drawer .ec-cs[data-cid="${sd}"]`); if (b) b.click(); }, setup.sd); await sleep(250);
-        const ask = await page.evaluate(() => ({ line: (document.querySelector('.ec-drawer .ec-line') || {}).textContent || '', go: (document.querySelector('.ec-drawer [data-a=cgo]') || {}).textContent || '' }));
+        const ask = await page.evaluate(() => ({ line: (document.querySelector('.ec-drawer .ec-line .tx') || document.querySelector('.ec-drawer .ec-line') || {}).textContent || '', go: (document.querySelector('.ec-drawer [data-a=cgo]') || {}).textContent || '' }));
         const m0 = await page.evaluate(() => window.__lab.run.money);
         await jsClick(page, '.ec-drawer [data-a=cgo]'); await sleep(500);
         const back = await page.evaluate(sd => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine;
@@ -1481,17 +1481,19 @@ async function run() {
         const atTable = await page.waitForFunction(() => { const s = window.__lab.stage, f = s.pos('f'), d = s.layout.spots.duelE; return f && !f.hidden && Math.hypot(f.x - d[0], f.y - d[1]) <= 1; }, null, { timeout: 10000 }).then(() => true, () => false);
         await sleep(400);
         const nt = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine, G = E.roundGuests(R, C);
-          return { tl: [...document.querySelectorAll('[data-tut=night] .nc')].map(n => (n.querySelector('.tl') || {}).textContent || null), want: G.map(g => g.title || null), cur: G.find(g => g.cur),
+          const tf = t => t ? C.trial.ui.titleFmt.replace('{t}', t) : null;   // 稱號寫成「○○級」（審查 A-6）；來客條放不下的用短寫（C.trial.titlesShort）
+          return { tl: [...document.querySelectorAll('[data-tut=night] .nc')].map(n => (n.querySelector('.tl') || {}).textContent || null), want: G.map(g => tf(g.title && ((C.trial.titlesShort || {})[g.title] || g.title))), cur: G.find(g => g.cur),
+            curT: tf((G.find(g => g.cur) || {}).title), tline: C.trial.ui.titleLine,
             top: document.querySelector('#top .tt').textContent, rec: C.trial.ui.toRecord.replace('{n}', 2), fv: (() => { const f = window.__lab.stage.pos('f'), a = document.querySelector('#stage') || document.body; return !!f; })() }; });
         const scN = await noScroll(page);
         // 客人資訊
         await jsClick(page, '[data-tut=night] .nc.cur'); await sleep(500);
         const gs = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.guest'); if (!s) return null; const ma = s.querySelector('.bl.ma');
-          return { ma: ma ? ma.textContent : '', cls: ma ? (ma.querySelector('b') || {}).className : '', tags: [...s.querySelectorAll('.gtag')].map(t => t.textContent) }; });
+          return { ma: ma ? ma.textContent : '', cls: ma ? (ma.querySelector('b') || {}).className : '', tags: [...s.querySelectorAll('.gtag')].map(t => t.textContent), tl: (s.querySelector('.bl.tl') || {}).textContent || null }; });
         const mainZh = await page.evaluate(m => window.DipLabEngine.ZH[m], nt.cur.main);
         await jsClick(page, '.lb-sheet.float.guest [data-a=close]'); await sleep(300);
         const okA1 = atTable && JSON.stringify(nt.tl) === JSON.stringify(nt.want) && nt.want.some(Boolean) && nt.tl[4] === null && nt.top.indexOf(nt.rec) >= 0 && scrollOk(scN) &&
-          gs && gs.ma === '常出：' + mainZh && gs.cls === nt.cur.main && (!nt.cur.title || gs.tags.includes(nt.cur.title));
+          gs && gs.ma === '常出：' + mainZh && gs.cls === nt.cur.main && (nt.curT ? gs.tl === nt.tline.replace('{t}', nt.curT) : gs.tl === null) && !gs.tags.some(t => nt.want.includes(t) || (nt.cur.title && t === nt.cur.title));
         // 真點對戰台 → 你走到 duelP → 開打
         const hot = await tapHot(page, x => x.id === 'deck' || x.action === 'duel');
         const walked = await page.waitForFunction(() => { const s = window.__lab.stage, p = s.pos('p'), d = s.layout.spots.duelP; return p && Math.hypot(p.x - d[0], p.y - d[1]) <= 1; }, null, { timeout: 8000 }).then(() => true, () => false);
@@ -1499,7 +1501,7 @@ async function run() {
         await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
         await sleep(500);
         const dv = await page.evaluate(() => { const d = window.DipLabDuel.debug(), t = document.querySelector('.dl-e .ttl'); return { eTitle: d.view.eTitle, ttl: t && !t.hidden ? t.textContent : null, eMain: d.view.eMain, top: document.querySelector('#top .tt').textContent }; });
-        const okA2 = !!hot && walked && dv.eTitle === nt.cur.title && (dv.ttl === dv.eTitle || (!dv.eTitle && dv.ttl === null)) && dv.eMain === nt.cur.main && dv.top.indexOf(nt.rec) >= 0;
+        const okA2 = !!hot && walked && dv.eTitle === nt.cur.title && (dv.ttl === nt.curT || (!dv.eTitle && dv.ttl === null)) && dv.eMain === nt.cur.main && dv.top.indexOf(nt.rec) >= 0;
         // (b) 連續剋中三手
         await page.evaluate(() => window.__lab.force({ kind: 'counter', toE: 2 }));
         const hands = [];
@@ -1522,7 +1524,7 @@ async function run() {
         await waitScreen(page, 'reward', 20000); await sleep(3000);
         const cz = await page.evaluate(() => ({ stamp: window.__stamp, said: (window.__said || []).filter(x => x.id === 'o').map(x => x.t), cash: window.__cash.slice(), money: window.__lab.run.money, U: window.DipLabContent.trial.ui, L: window.DipLabContent.shopLines.closeWin, M: window.DipLabEngine.moneyText }));
         const earn = await page.evaluate(m0 => window.__lab.run.money - m0, money0), mt = await page.evaluate(n => window.DipLabEngine.moneyText(n), cz.money);
-        const okC = !!cz.stamp && cz.stamp.text === cz.U.closeWin && cz.stamp.chip === cz.U.streak.replace('{n}', 4) + ' +1' && /gold/.test(cz.stamp.cls) && cz.said.includes(cz.L) &&
+        const okC = !!cz.stamp && cz.stamp.text === cz.U.closeWin && cz.stamp.chip === cz.U.streak.replace('{n}', 4) && /gold/.test(cz.stamp.cls) && cz.said.includes(cz.L) &&
           earn > 0 && cz.cash.some(t => t.indexOf('+$') === 0) && cz.cash.some(t => t.endsWith('$' + mt));
         // (d) 差一點：下一位（第 14 位）打輸、說情用完 → 結算
         await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]'); if (b) b.click(); });
@@ -1548,7 +1550,7 @@ async function run() {
         const scE = await noScroll(page);
         const okD = end && ed.near === ed.nearWant && !!ed.L && ed.L.eHp === 2 && ed.L.flip && ed.L.flip.k === 2 && ed.L.flip.kind === 'countered' && ed.close === ed.closeWant && ed.scr <= 1 && scrollOk(scE);
         record(57, size, okA1 && okA2 && okB && okC && okD,
-          `(a) 客人走到對戰台 ${atTable}；稱號 ${JSON.stringify(nt.tl)}＝${JSON.stringify(nt.want)}；頂欄「${nt.top}」；客人資訊「${gs && gs.ma}」(${gs && gs.cls}) 籤 ${JSON.stringify(gs && gs.tags)}；` +
+          `(a) 客人走到對戰台 ${atTable}；稱號 ${JSON.stringify(nt.tl)}＝${JSON.stringify(nt.want)}；頂欄「${nt.top}」；客人資訊「${gs && gs.ma}」(${gs && gs.cls})「${gs && gs.tl}」籤 ${JSON.stringify(gs && gs.tags)}；` +
           `真點 ${hot && hot.id} → 走到 duelP ${walked}、對決稱號「${dv.ttl}」(view ${dv.eTitle})、常出 ${dv.eMain}、頂欄「${dv.top}」；` +
           `(b) ${hands.map(x => x.l1.slice(0, 6) + '…/' + x.snd).join('、')}；(c) 大章 ${JSON.stringify(cz.stamp)}、老闆「${cz.said.slice(-1)}」、錢條 ${JSON.stringify(cz.cash.slice(-2))}（+$${earn}）；` +
           `(d) 結算 ${end}：「${ed.near}」「${ed.close}」lastLoss ${JSON.stringify(ed.L)}、捲動 ${ed.scr}`);

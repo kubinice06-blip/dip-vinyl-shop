@@ -423,7 +423,8 @@ export function contentProblems(C, E) {
   ok(SL.ownerHint && ['title', 'scene', 'night', 'duel', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 五個畫面');
   ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 4, 'shopLines.nightIntro 四句（第 2 句「客人跟剛才那位不一樣」店主 11-12；第 4 句講去櫃檯賣給老闆，第 A 波 5）');
   ok(String((SL.nightIntro || [])[1] || '').startsWith('客人跟剛才那位不一樣'), 'shopLines.nightIntro 第 2 句「客人跟剛才那位不一樣」（店主 11-12）');
-  ok(/櫃檯/.test(String((SL.nightIntro || [])[3] || '')) && /賣給老闆/.test(String((SL.nightIntro || [])[3] || '')), 'shopLines.nightIntro 第 4 句講「櫃檯」「賣給老闆」（第 A 波 5：移出包包只走櫃檯）');
+  ok(/櫃檯/.test(String((SL.nightIntro || [])[3] || '')) && /半價/.test(String((SL.nightIntro || [])[3] || '')), 'shopLines.nightIntro 第 4 句講「櫃檯」「半價」（第 A 波 5：移出包包只走櫃檯；老闆自己講，不說「賣給老闆」）');
+  ok(/對戰台/.test(String((SL.nightIntro || [])[0] || '')), 'shopLines.nightIntro 第 1 句講「對戰台」（第 A 波 1：客人在對戰台等你）');
   ok(['closeWin', 'reclaimGift', 'reclaimSeed'].every(k => typeof SL[k] === 'string' && SL[k] && C.shopLineTags[k] === '新' && C.shopLineWho[k] === '老闆'), 'shopLines.closeWin／reclaimGift／reclaimSeed（老闆說的，第 A 波 4、5）');
   const SU = ['money', 'binTitle', 'buy', 'noMoney', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
     'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',

@@ -61,6 +61,8 @@
   function fill(s, o) { return String(s || '').replace(/\{(\w+)\}/g, function (m, k) { return o && o[k] != null ? o[k] : m; }); }
   // 無限試煉的畫面字（content.js C.trial.ui；{x} 由這裡代入）
   function TU(k, o) { var U = (C && C.trial && C.trial.ui) || {}; return fill(U[k] || '', o); }
+  // 客人稱號的寫法（第 A 波 3；審查 A-6）：「○○級」（C.trial.ui.titleFmt）——稱號多半就是別的客人的名字，照原字掛會看成兩個人名；null＝不顯示
+  function titleTx(t) { return t ? (TU('titleFmt', { t: t }) || t) : ''; }
   // 從唱片櫃挑牌開局的畫面字（content.js C.seeds.ui）
   function SU(k, o) { var U = (C && C.seeds && C.seeds.ui) || {}; return fill(U[k] || '', o); }
   // 頂欄（店主 11-12：只寫第幾位，不寫時間）：還沒有 run＝「品味對決」；序章（含收尾）＝「序章」；之後「第 n 位<small>第 R 輪</small>」，對決時小字加「・菁英／傳說藏家」
@@ -70,14 +72,21 @@
     if (inPrologue(r)) return esc(TU('prologue'));
     var sub = TU('round', { r: r.round }) + (cls === 'elite' ? '・' + TU('elite') : cls === 'boss' ? '・' + TU('boss') : '');
     var nb = toRecordN(r);                          // 離最遠紀錄 3 位內：「再贏 N 位破紀錄」（第 A 波 4；打的當下就亮）
-    return esc(TU('pos', { n: r.pos })) + '<small>' + esc(sub) + '</small>' + (nb ? '<small class="rec" data-tut="to-record">' + esc(TU('toRecord', { n: nb })) + '</small>' : '');
+    if (!nb) return esc(TU('pos', { n: r.pos })) + '<small>' + esc(sub) + '</small>';
+    // 有「再贏 N 位破紀錄」：整列 flex，放不下先切「第 R 輪・傳說藏家」那段（省略號），破紀錄那句一定完整（審查 A-14：三位數位數的藏家對決，375 寬被切成「破紀…」）
+    return '<span class="tw">' + esc(TU('pos', { n: r.pos })) + '<small class="sb">' + esc(sub) + '</small><small class="rec" data-tut="to-record">' + esc(TU('toRecord', { n: nb })) + '</small></span>';
   }
+  // 第一次來客的四句（tutorial firstTime 'night'）：泡泡避開對戰台（客人走過去站在那裡等你、到了說開場那句；night 鏡頭貼底，對戰台在店景最下面一條，
+  //   原本泡泡放在名單正上方剛好蓋住，審查 A-11）→ 放不下就放到店景上面那段空白
+  var NIGHT_INTRO_O = { keep: ['shop:deck'] };
   // 再贏幾位破紀錄（＝走到第 最遠＋1 位）：1–3 才回（離紀錄 3 位內）；沒有紀錄（第一趟）、已經破了、這一趟結束了＝0
   var REC_NEAR = 3;
   function toRecordN(r) {
     var far = r ? r.farBefore | 0 : 0;
     if (!r || far <= 0 || r.over || !Number.isInteger(r.pos)) return 0;
     var n = far + 1 - r.pos;
+    var pd = r.pending && r.pending.type;
+    if (pd === 'reward' || pd === 'level') n -= 1;   // 這一位剛打贏、還在領獎／升級（r.pos 還沒往前）：已經贏了，少算一位（審查 A-5）
     return n >= 1 && n <= REC_NEAR ? n : 0;
   }
   function dt(k, o) { var T = (C && C.duelText) || {}; return fill(T[k] || '', o); }
@@ -1416,7 +1425,7 @@
       // 第一次挑王牌（序章剛打完的新玩家）：第一次來客的教學泡泡晚一點出——原本三則訊息（吐司、老闆、教學）疊在一起（審查 11-16）
       if (first && !save.seen.night && !UI.auto) later(function () {
         if (UI.screen !== 'night' || save.seen.night || save.run !== r || qs(':scope > .lb-sheet', UI.panel)) return;
-        var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
+        var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next'], NIGHT_INTRO_O); } catch (e) { console.error(e); }
       }, ok ? 2900 + 450 * speed() : 700);   // 老闆那句 2600／吐司 1900（照速度縮）＋吐司淡出 400 ms（不縮）都收掉之後
     });
   }
@@ -2154,11 +2163,12 @@
       // 他打完說的那句（盤面左邊的泡泡，約 1.8 秒）說完才換老闆，兩個泡泡不疊；藏家打完不說話（送牌那段才說）
       var boss = !!(C.enemies[duel && duel.e && duel.e.id] || {}).boss;
       var at = boss ? 380 : 1850;
-      later(function () { if (UI.screen !== 'duel') return; if (!boss) stg('say', 'f', null); stageSay('o', line('closeWin'), 'owner', 2200); }, at);   // 他那句收掉才換老闆（泡泡不疊）
+      // 他那句收掉才換老闆（泡泡不疊）；兩邊頭上的名牌（他的名字、「你」）先收掉：375×548 的店景條只有約 80 px，老闆的泡泡跟名牌同一高度、會被蓋住（審查 A-7）
+      later(function () { if (UI.screen !== 'duel') return; if (!boss) stg('say', 'f', null); stg('untag'); stageSay('o', line('closeWin'), 'owner', 2200); }, at);
       out.holdMs = at + 1500;                          // 大章停到老闆那句看得到（duel.js 照速度縮）
     }
     var st = (r.streak | 0) + 1;                       // 引擎 finishFight 之後才 +1：這一場打贏後的連勝
-    if (st >= 2) out.chip = TU('streak', { n: st }) + ' +1';
+    if (st >= 2) out.chip = TU('streak', { n: st });   // 「連勝 +1（4 連勝）」（原本「連勝 4 +1」會讀成 4 加 1，審查 A-13）
     return close || out.chip ? out : null;
   }
   // 對決的頂欄：「第 n 位<small>第 R 輪・菁英／傳說藏家</small>」；序章男子（含重看教學的 fakeRun）＝「序章」
@@ -2309,12 +2319,21 @@
     B.checkpoints.push(pos); B.checkpoints.sort(function (a, b) { return a - b; });
   }
   // 差一點摘要（第 A 波 4；規劃書三＋四「都是真的資訊，不造假」）：輸掉那場他剩幾聲望（eHp／eMax）、翻盤那一手（flip：{k, kind, p, e}｜null）。
-  //   翻盤＝你那一手之前領先（聲望條比例比他高），那一手之後落後、到最後都沒再追回來；聲望從結尾往回推（duel.log 每手的 toP／toE）
+  //   翻盤＝你那一手之前領先（聲望條比例比他高），那一手之後落後、到最後都沒再追回來。
+  //   每手打完的聲望直接用 duel.log 的 pHp／eHp（引擎第 A 波審查起記；頂點卡回聲望也算進去）；開打前＝第 1 手的 pHp＋toP−heal、eHp＋toE。
+  //   舊的對決（log 沒有 pHp：升版前開打、續玩打完的）才照舊從結尾用 toP／toE 往回推
   function lossInfo(d) {
     if (!d || !d.p || !d.e) return null;
-    var log = (d.log || []).slice(), pM = d.p.max || 1, eM = d.e.max || 1, p = d.p.hp, e = d.e.hp, hp = [];
-    for (var i = log.length - 1; i >= 0; i--) { hp[i + 1] = [p, e]; p += log[i].toP | 0; e += log[i].toE | 0; }
-    hp[0] = [p, e];
+    var log = (d.log || []).slice(), pM = d.p.max || 1, eM = d.e.max || 1, hp = [];
+    var exact = log.length > 0 && log.every(function (L) { return typeof L.pHp === 'number' && typeof L.eHp === 'number'; });
+    if (exact) {
+      for (var j = 0; j < log.length; j++) hp[j + 1] = [log[j].pHp, log[j].eHp];
+      hp[0] = [log[0].pHp + (log[0].toP | 0) - (log[0].heal | 0), log[0].eHp + (log[0].toE | 0)];
+    } else {
+      var p = d.p.hp, e = d.e.hp;
+      for (var i = log.length - 1; i >= 0; i--) { hp[i + 1] = [p, e]; p += log[i].toP | 0; e += log[i].toE | 0; }
+      hp[0] = [p, e];
+    }
     var cmp = function (x) { var a = x[0] * eM, b = x[1] * pM; return a > b ? 1 : a < b ? -1 : 0; }, flip = null;
     for (var k = log.length; k >= 1; k--) {
       if (cmp(hp[k]) >= 0) break;                      // 這一手之後沒落後：再往前的不算「翻盤」
@@ -2692,9 +2711,11 @@
     var row = E.roundGuests(r, C).map(function (g, i) {
       var en = C.enemies[g.id] || {}, pl = TU('pos', { n: g.pos });
       // 稱號（第 A 波 3；engine guestTitle：每 2 位換一次、藏家／跟名字一樣＝null）：頭像下緣一塊小名牌（壓在頭像上，不多佔一行：375×548 店景不再縮）
-      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + (g.title ? g.title + ' ' : '') + en.name) + '">' +
+      //   「○○級」（titleTx）；放不下的用短寫（C.trial.titlesShort：地下廠牌主理人 → 廠牌主理人；aria-label 照全名）；6 字以上的名牌收一號（.lg），其他 10 px
+      var tt = titleTx(g.title), ts = titleTx(g.title && ((C.trial || {}).titlesShort || {})[g.title] || g.title);
+      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '')) + '">' +
         '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + '</span>' +
-        (g.title ? '<span class="tl">' + esc(g.title) + '</span>' : '') + '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
+        (ts ? '<span class="tl' + (ts.length >= 6 ? ' lg' : '') + '">' + esc(ts) + '</span>' : '') + '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
     var nen = C.enemies[nx] || {}, toCp = E.toCheckpoint(r, C);
     var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b><span class="sub">' +
@@ -2739,13 +2760,16 @@
       toast(TU('aceHint'));
     }, 700);
     var quiet = UI.quietNight; UI.quietNight = false;          // 剛換完王牌重畫：這一次不再排第一次來客的提示（審查：三則訊息疊在一起）
-    // 「拿去櫃檯賣給老闆」的一次性提示（save.seen.bagSell；第 A 波 5：移出包包只走櫃檯）：第一次來客的提示看過之後、兩位客人之間、包包長到 BAG_HINT_AT 張以上——
+    // 「拿去櫃檯賣給老闆」的一次性提示（save.seen.counterSell；第 A 波 5：移出包包只走櫃檯）：第一次來客的提示看過之後、兩位客人之間、包包長到 BAG_HINT_AT 張以上——
     //   老闆頭上閃一下（！）＋櫃檯描框一下＋吐司「包包越塞越滿？拿去櫃檯賣給老闆，半價。」（不提示的話牌組只會越收越大）。
-    //   自己打開過「賣給老闆」就不再出；同一次不跟換王牌的提示疊
-    if (!aceHintNow && !quiet && save.seen.night && !save.seen.bagSell && !UI.auto && E.canShop(r) && r.bag.length >= BAG_HINT_AT) later(function () {
+    //   自己打開過「賣給老闆」就不再出；同一次不跟換王牌的提示疊。
+    //   鍵換成 counterSell（審查 A-2）：舊版的 seen.bagSell 在舊提示出過、或兩位客人之間點開包包就設了——玩過舊版的人會永遠看不到新的賣法
+    //   提示出過之後，這一次來客畫面點櫃檯直接開「賣給老闆」分頁（UI.sellNudge；描框的是櫃檯，點了卻開配件＝審查 A-9）
+    if (!aceHintNow && !quiet && save.seen.night && !save.seen.counterSell && !UI.auto && E.canShop(r) && r.bag.length >= BAG_HINT_AT) later(function () {
       var rr = save.run;
-      if (UI.screen !== 'night' || !rr || save.seen.bagSell || !E.canShop(rr) || rr.bag.length < BAG_HINT_AT || qs('.lb-sheet.float', app()) || qs('.ec-drawer', app())) return;
-      save.seen.bagSell = true; persist();
+      if (UI.screen !== 'night' || !rr || save.seen.counterSell || !E.canShop(rr) || rr.bag.length < BAG_HINT_AT || qs('.lb-sheet.float', app()) || qs('.ec-drawer', app())) return;
+      save.seen.counterSell = true; persist();
+      UI.sellNudge = rr;
       stg('emote', 'o', 'excl', 2600);
       stg('highlight', [{ ids: ['counter'] }]); later(function () { if (UI.screen === 'night' && !qs('.ec-drawer', app())) stg('highlight', []); }, 2600);
       toast(SHU('bagSellHint'), 'long');
@@ -2753,7 +2777,7 @@
     if (!save.seen.night && !UI.auto && !quiet) later(function () {
       if (UI.screen !== 'night') return;
       // 整個名單（含「第 n 輪」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
-      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
+      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next'], NIGHT_INTRO_O); } catch (e) { console.error(e); }
     }, 700);
     autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
@@ -2780,9 +2804,11 @@
     var cur = g.cur, done = g.done, ln = (C.lines[id] && C.lines[id].line) || en.line || '';
     // 菁英／傳說藏家的籤：名字本身就是這個詞（傳說藏家）就不再加（審查 #15）
     var tag = function (t) { return t && t !== en.name ? '<span class="gtag">' + esc(t) + '</span>' : ''; };
-    var tags = (g.title ? tag(g.title) : '') + tag(g.cls === 'elite' ? TU('elite') : g.cls === 'boss' ? TU('boss') : '') + (g.hasAce ? tag(TU('hasAce')) : '');   // 稱號（第 A 波 3）
+    var tags = tag(g.cls === 'elite' ? TU('elite') : g.cls === 'boss' ? TU('boss') : '') + (g.hasAce ? tag(TU('hasAce')) : '');
+    // 稱號（第 A 波 3）：不跟菁英／帶王牌放同一排小籤（看起來像分類，審查 A-6）——另起一行「稱號：○○級」
+    var ttl = g.title ? '<div class="bl tl">' + esc(TU('titleLine', { t: titleTx(g.title) })) + '</div>' : '';
     // 聲望一行；品味／底氣各一行、後面一句說它在做什麼（客人的品味：扣到你就多扣；底氣跟你的一樣；審查 #11）
-    var bl = '<div class="bl">' + esc('聲望 ' + g.hp) + '</div>' +
+    var bl = ttl + '<div class="bl">' + esc('聲望 ' + g.hp) + '</div>' +
       (g.atk ? '<div class="bl st"><b>' + esc(TU('atk', { n: g.atk })) + '</b>' + esc(TU('eAtkHelp', { n: g.atk })) + '</div>' : '') +
       (g.def ? '<div class="bl st"><b>' + esc(TU('def', { n: g.def })) + '</b>' + esc(TU('defHelp', { n: g.def })) + '</div>' : '') +
       // 常出哪一色（第 A 波 6：客人主屬性，engine roundGuests[i].main）：「常出：冷門」，屬性字上三軸色
@@ -2799,7 +2825,7 @@
   function nextGuest() {
     var r = save.run;
     if (UI.going || !r || E.nextStep(r) !== 'fight') return;
-    UI.going = true;
+    UI.going = true; UI.sellNudge = null;          // 開打：櫃檯那個「點了直接開賣給老闆」只在提示出過的那一次來客畫面
     sfx('select');
     qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); }); syncFloat();
     var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
@@ -2992,7 +3018,8 @@
     // 對戰台（第 A 波 1）：來客畫面＝走過去開打（跟「下一位」一樣）；其他畫面不理
     if (action === 'duel') { if (scr === 'night' && save.run && E.nextStep(save.run) === 'fight') nextGuest(); return; }
     // 櫃檯：來客、兩位客人之間＝配件櫃（B3 的經濟介面）；其他畫面照舊老闆一句
-    if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop'); return; }
+    //   「拿去櫃檯賣給老闆」的提示剛出過（還沒打開過賣給老闆）：點櫃檯直接開「賣給老闆」分頁
+    if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop', UI.sellNudge === save.run ? { tab: 'sell' } : undefined); return; }
     // 來客畫面點老闆：第 1 位開打前＝「聊聊／換一張王牌」（店主 11-13）
     if ((action === 'talk:owner' || action === 'owner' || action === 'counter') && scr === 'night' && save.run) { ownerTalk(); return; }
     if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
@@ -3785,7 +3812,7 @@
         info: function (c) { var ci = CI(); return ci ? ci.open(c, { from: 'econ' }) : Promise.resolve(); },
         sfx: function (n, o) { sfx(n, o); }, toast: toast, app: app, makeRoom: makeRoom,
         // 櫃檯「賣給老闆」分頁打開過：「拿去櫃檯賣給老闆」的一次性提示不用再出（第 A 波 5）
-        onSellOpen: function () { if (!save.seen.bagSell) { save.seen.bagSell = true; persist(); } } });
+        onSellOpen: function () { UI.sellNudge = null; if (!save.seen.counterSell) { save.seen.counterSell = true; persist(); } } });
     } catch (e) { console.error(e); }
   }
   // iOS < 15.4 沒有 svh：100vh 會比可視區高。改用可視高。

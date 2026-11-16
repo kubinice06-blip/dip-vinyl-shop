@@ -57,6 +57,8 @@
 //              客人主屬性：roundMains(content, seedKey, runNo, 輪, order?) -> [5 個 'c'|'o'|'h']（一般 3 位三色各一，照「原本牌組的主屬性」對上最多的排列、一樣多照雜湊；
 //                菁英／藏家照種子輪）· mainAt(run, content, pos) · guestDef(run, content, id, pos)（＝startFight／roundGuests／shopPolicy 用的 eDef，含 main、title、mercyP）
 //                trialDeck 多收 o.main：牌組至少 round(deck.mainShare×張數) 張主屬性那軸最高的牌、其他格子另外兩軸輪流補、加星加在主屬性那軸；沒給 main／mainShare 0＝舊規則
+//              出招偏主屬性（第 A 波審查）：C.trial.curve.mainBias {from, n}＝第 from 位起 enemyDef 帶 eDef.mainBias → startDuel 存 e.mainBias；
+//                beginHand 挑計畫時主屬性那色的星數多算 n（不多取亂數）。duel.log 每手多記打完的 pHp／eHp（＋heal＝這手實際回的聲望，有才記）
 //              櫃檯賣給老闆：移出包包只有 choose sell（見下面 Economy／sellQuote）；take 的 dropId、buy 的 sellId、buyBargain 的 sellIds → 'counterOnly'（不限張數時）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
@@ -192,6 +194,9 @@
       mercyFeint: 0.8,                                                              // 放水：唬人率 ×(1−0.8×mercy)（roguelike.html:3693-3695）
       // 放水照位數機率（店主 11-16 選 C）：第 from 位以前每手都放水；之後每手照機率 p＝max(min, p0 − step×⌊(位−from)/every⌋) 才放水（mercyPAt）
       mercyP: { from: 11, p0: 0.9, step: 0.1, every: 5, min: 0.2 },
+      // 出招偏主屬性（第 A 波 6 審查）：第 from 位起，他挑這手打哪色時，主屬性那色的星數當作多 n 星（只影響計畫，不改牌、不多取亂數）；n 0＝不偏。
+      //   第 1–3 位不偏（新手第 1–3 位死亡率 T1：偏了以後他少出硬蕊、多出你難剋的色，死亡率翻倍）
+      mainBias: { from: 4, n: 1.5 },
       atk: { lateFrom: 3, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },   // min(2, round(.75·late))＋⌊max(0, 位−6)/5⌋（藏家 +1）
       def: { lateFrom: 3, rate: 0.45, cap: 1, boss: 1, add: 0 },                                  // min(1, round(.45·late))（藏家 +1）
       // mainShare：客人主屬性（第 A 波 6）那副牌至少幾成是主屬性那軸最高的牌（trialDeck o.main）
@@ -514,6 +519,8 @@
       const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier, main });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss',
         title: guestTitle(content, pos, id, cls, o.tier), main });
+      const MB = trialCfg(content, o.tier).curve.mainBias || {}, mb = pos >= (MB.from | 0) ? +MB.n || 0 : 0;
+      if (main && mb > 0) d.mainBias = mb;                       // 出招偏主屬性（startDuel 存進 e.mainBias；beginHand 挑計畫時主屬性那色多算 mainBias 星）
       const mp = mercyPAt(content, pos, o.tier);
       if (mp < 1) d.mercyP = mp;                                // 第 11 位起：每手放水的機率（startDuel 存進 e.mercyP）
     }
@@ -571,6 +578,7 @@
     const P = st.p, E = st.e;
     // 放水照位數機率（第 11 位起；eDef.mercyP < 1 才有這兩欄，其他對決的狀態一字不改）：mercyKey＝對決種子（mercyOn 的雜湊用；不取 duel.rng）
     if (eDef.mercyP != null && +eDef.mercyP < 1) { E.mercyP = Math.max(0, +eDef.mercyP); E.mercyKey = st.rng >>> 0; }
+    if (E.main && +eDef.mainBias > 0) E.mainBias = +eDef.mainBias;   // 出招偏主屬性（第 A 波 6 審查；有主屬性的客人才有這欄）
     // 你的牌堆：script 的起手＋抽牌在前，剩下的照包包順序（有 script 不洗；教學第 5 手要抽到特價箱那幾張）；沒 script 整包洗
     const bag = (pDef.bag || []).filter(Boolean).slice();
     const takeIds = ids => { const out = []; for (const id of ids || []) { const k = bag.findIndex(c => c.id === id); if (k >= 0) out.push(bag.splice(k, 1)[0]); } return out; };
@@ -652,10 +660,11 @@
     const mOn = mercyOn(st);                              // 這手放不放水（第 11 位起照機率；雜湊，不取亂數）
     const co = E.coef || PLANNERS.normal, m = mOn ? mercyOf(st) : 0, useMercy = !!co.mercy && !!CFG.mercy;
     let plan = null, ps = -Infinity;
+    const mb = E.main && E.mainBias > 0 ? +E.mainBias : 0;   // 出招偏主屬性：主屬性那色多算 mainBias 星（不多取亂數）
     for (const a of ATTRS) {
       const u1 = rng(st), u2 = rng(st);
       if (best[a] < 0) continue;
-      const s = co.w * eStarOf(E.hand[best[a]], a) + u1 * co.nz + (useMercy ? u2 * 5 * m : 0);
+      const s = co.w * (eStarOf(E.hand[best[a]], a) + (a === E.main ? mb : 0)) + u1 * co.nz + (useMercy ? u2 * 5 * m : 0);
       if (plan === null || s > ps) { plan = a; ps = s; }
     }
     const uLine = rng(st), r = rng(st);
@@ -733,7 +742,7 @@
   function resolveTurn(st, act, opts) {
     opts = opts || {};
     if (!isLegal(st, act) || !st.plan) return [];
-    const P = st.p, E = st.e, plan = st.plan, events = act.apex ? activateApex(st) : [];   // 頂點卡試做：先發動（{t:'apex'}）再結算
+    const P = st.p, E = st.e, plan = st.plan, p0 = P.hp, events = act.apex ? activateApex(st) : [];   // 頂點卡試做：先發動（{t:'apex'}）再結算；p0＝這手開打前你的聲望（log 的 heal 用）
     const fp = opts.forcedPlay;
     const eSide = (fp && Number.isInteger(fp.i) && E.hand[fp.i] && ATTRS.includes(fp.attr)) ? { i: fp.i, attr: fp.attr } : { i: plan.idx, attr: plan.attr };
     const pPlay = actPlay(st, act), ePlay = ePlayOf(st, eSide), eCard = ePlay.card;
@@ -755,7 +764,10 @@
       kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, hint, bluff, notes: r.notes };
     if (st.apexMode) { sum.apex = r.apex || null; if (r.apex && r.apex.hit) S.apexHits = (S.apexHits | 0) + 1; }
     st.last = sum;
-    st.log.push({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked });
+    // log 每手記打完的聲望（pHp／eHp）：結算「第 n 手被翻盤」直接用，不從 toP／toE 往回推（頂點卡回聲望不在 toP 裡，推回來會造假；審查 A-1）。
+    //   heal＝這手你實際回了幾聲望（頂點卡發動＋拆穿回血；有才記）：這手開打前＝pHp＋toP−heal
+    const hl = P.hp - p0 + r.toP;
+    st.log.push(Object.assign({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, pHp: P.hp, eHp: E.hp }, hl > 0 ? { heal: hl } : {}));
     events.push(Object.assign({ t: 'clash' }, sum, { pHp: P.hp, eHp: E.hp }));
     P.last = pPlay.attr; E.last = ePlay.attr;
     E.thrown.push(eCard); E.hand.splice(eSide.i, 1); st.plan = null;

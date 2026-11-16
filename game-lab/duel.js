@@ -169,6 +169,7 @@
     return T('mirror', { a: a0, b });                                                                  // 「同樣是經典」：同色不加「王牌」
   }
   // 頂點卡試做（?apex=1）的畫面字：content.apexTrial.ui（e2e 直接呼叫 _fmt.clashText 時沒給 U → 讀頁面上的 DipLabContent）
+  const BEATS_OF = { o: 'c', c: 'h', h: 'o' };          // x 剋 BEATS_OF[x]（＝engine BEATS）
   const apexUIOf = () => { const Cn = (typeof window !== 'undefined' && window.DipLabContent) || null; return (Cn && Cn.apexTrial && Cn.apexTrial.ui) || {}; };
   const fillU = (t, o) => String(t || '').replace(/\{(\w+)\}/g, (m, k) => (o && o[k] != null ? o[k] : m));
   function clashText(c, T, hints, U) {
@@ -186,8 +187,9 @@
     else if (apx && c.kind === 'mirrorLose') l2 = (U && U.loseFree) || '你輸了，但不扣。';   // 比星輸了、王牌免扣（不是「一樣大」）
     else l2 = T('tie');
     const h = c.hint && ATTRS.includes(c.hint.attr) ? c.hint : null;
-    // 讀對了就說出來（第 A 波 4）：剋中他＝結果句前加「讀對了。」；他唬人、你照他真正出的剋中＝「你看穿了！」取代「他唬你！」（字沒有就照舊）
-    const read = c.kind === 'counter', saw = read && !!c.bluff && !!h;
+    // 讀對了就說出來（第 A 波 4）：剋中他＝結果句前加「讀對了。」；他唬人、你出的是剋他真正那張的顏色＝「你看穿了！」取代「他唬你！」（字沒有就照舊）。
+    //   看穿了但他高你 2 星以上、剋不動（blocked gap）也算看穿（審查 A-4；引擎 stats.caught 也算這手抓到）：l3 照舊寫「…剋不動。」
+    const read = c.kind === 'counter', saw = !!c.bluff && !!h && (read || (c.blocked === 'gap' && BEATS_OF[c.pAttr] === c.eAttr));
     if (read && !saw && T('readRight')) l1 = T('readRight') + l1;
     if (h) {
       const x = hintOf(hints, h), key = x && x.key ? x.key : null, hz = ZH[h.attr], e = ZH[c.eAttr];
@@ -477,8 +479,9 @@
     function renderE(v, opt) {
       opt = opt || {};
       els.enm.textContent = enemy.name || v.eName || '';
-      // 稱號（第 A 波 3；view.eTitle：藏家、跟名字一樣、序章＝null）：名字旁小字
-      els.ettl.textContent = v.eTitle || ''; els.ettl.hidden = !v.eTitle;
+      // 稱號（第 A 波 3；view.eTitle：藏家、跟名字一樣、序章＝null）：名字旁一塊小名牌，寫成「○○級」（C.trial.ui.titleFmt；稱號多半是別的客人的名字，審查 A-6）
+      const tf = ((content.trial || {}).ui || {}).titleFmt;
+      els.ettl.textContent = v.eTitle ? (tf ? String(tf).replace('{t}', v.eTitle) : v.eTitle) : ''; els.ettl.hidden = !v.eTitle;
       els.est.innerHTML = statsHTML(v.eAtk, v.eDef);
       if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, false);
       renderHint(v);

@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 586（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 590（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -361,10 +361,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・nightIntro[0] | 客人一個一個來，打到輸為止。 | 本規格新寫 | `shopLines.nightIntro[0]` |
+| 老闆・nightIntro[0] | 客人在對戰台等，走過去就開打，輸了才停。 | 本規格新寫 | `shopLines.nightIntro[0]` |
 | 老闆・nightIntro[1] | 客人跟剛才那位不一樣，有時會唬你。 | 本規格新寫 | `shopLines.nightIntro[1]` |
 | 老闆・nightIntro[2] | 贏了有錢，兩位客人之間可以去箱子買唱片。 | 本規格新寫 | `shopLines.nightIntro[2]` |
-| 老闆・nightIntro[3] | 用不到的唱片，拿去櫃檯賣給老闆，半價。 | 本規格新寫 | `shopLines.nightIntro[3]` |
+| 老闆・nightIntro[3] | 用不到的唱片，拿來櫃檯，我半價收。 | 本規格新寫 | `shopLines.nightIntro[3]` |
 
 ## 台北地圖預告
 
@@ -470,9 +470,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・reclaimTag | 交還老闆 | 本規格新寫 | `shopUi.reclaimTag` |
 | （畫面字）・reclaimed | 《{album}》交還老闆 | 本規格新寫 | `shopUi.reclaimed` |
 | （畫面字）・sellNo | 算了 | 本規格新寫 | `shopUi.sellNo` |
+| （畫面字）・sellInfo | 唱片資訊 | 本規格新寫 | `shopUi.sellInfo` |
 | （畫面字）・bagSellMin | 包包至少留 {n} 張，手牌才補得滿。 | 本規格新寫 | `shopUi.bagSellMin` |
 | （畫面字）・goCounter | 去櫃檯賣唱片 | 本規格新寫 | `shopUi.goCounter` |
-| （畫面字）・bagNote | 要拿出包包：兩位客人之間，去櫃檯賣給老闆。 | 本規格新寫 | `shopUi.bagNote` |
+| （畫面字）・bagNote | 不要的唱片：兩位客人之間，拿去櫃檯賣給老闆。 | 本規格新寫 | `shopUi.bagNote` |
 | （畫面字）・bagSellHint | 包包越塞越滿？拿去櫃檯賣給老闆，半價。 | 本規格新寫 | `shopUi.bagSellHint` |
 | （畫面字） | 特價 | 本規格新寫 | `bargain.label` |
 
@@ -522,8 +523,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・aceHint | 想換王牌，點老闆。 | 本規格新寫 | `trial.ui.aceHint` |
 | （畫面字）・aceSwapped | 王牌換成《{album}》 | 本規格新寫 | `trial.ui.aceSwapped` |
 | （畫面字）・mainAttr | 常出：{attr} | 本規格新寫 | `trial.ui.mainAttr` |
+| （畫面字）・titleFmt | {t}級 | 本規格新寫 | `trial.ui.titleFmt` |
+| （畫面字）・titleLine | 稱號：{t} | 本規格新寫 | `trial.ui.titleLine` |
 | （畫面字）・toRecord | 再贏 {n} 位破紀錄 | 本規格新寫 | `trial.ui.toRecord` |
-| （畫面字）・streak | 連勝 {n} | 本規格新寫 | `trial.ui.streak` |
+| （畫面字）・streak | 連勝 +1（{n} 連勝） | 本規格新寫 | `trial.ui.streak` |
 | （畫面字）・closeWin | 險勝！ | 本規格新寫 | `trial.ui.closeWin` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
@@ -560,6 +563,12 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・5 | 地下廠牌主理人 | 本規格新寫 | `trial.titles.5` |
 | （畫面字）・6 | 品味行家 | 本規格新寫 | `trial.titles.6` |
 | （畫面字）・7 | 品味之神 | 本規格新寫 | `trial.titles.7` |
+
+## 無限試煉・客人稱號在來客條的短寫（名牌放不下的）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・地下廠牌主理人 | 廠牌主理人 | 本規格新寫 | `trial.titlesShort.地下廠牌主理人` |
 
 ## 從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）
 

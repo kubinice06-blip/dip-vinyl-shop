@@ -269,6 +269,9 @@ async function synthetic(browser) {
       out.seeNk = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'cx' } }), T, NK).l1;
       const rr = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' } }), T, C.hints);
       out.readHon = [rr.l1, rr.l3, rr.read, rr.saw];
+      // 審查 A-4：他唬人（提示經典、出冷門 5 星）、你出硬蕊 3 星（硬蕊剋冷門＝看穿了）但差 2 星剋不動 → 一樣是「你看穿了！」、l3＝剋不動那句、不算被唬
+      const sg = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'mirrorLose', toP: 2, blocked: 'gap', by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' } }), T, C.hints);
+      out.seeGap = [sg.l1, sg.l2, sg.l3, sg.bluff, sg.saw, sg.read];
       return out;
     });
     const want = {
@@ -279,6 +282,7 @@ async function synthetic(browser) {
       aceCounter: '讀對了。王牌冷門剋經典，命中！他 −7',
       see: ['你看穿了！『紀念版』是經典，他出的是冷門。', '他 −3', '', false, true, true], seeNk: '你看穿了！提示是經典，他出的是冷門。',
       readHon: ['讀對了。硬蕊剋冷門，命中！', '『自主發行』是冷門，他照實出。', true, false],
+      seeGap: ['你看穿了！『紀念版』是經典，他出的是冷門。', '你 −2', '硬蕊剋冷門，但他高你 2 星以上，剋不動。比星數。', false, true, false],
       mirror: '同樣是經典，比星數，他 −1', tie: '同樣是經典，比星數，一樣大，不扣。', countered: '冷門剋經典，被剋了。你 −5',
       rs: ['六手打完，比聲望條', '你剩 90%，他剩 70%：你贏', '你剩 50%，他剩 50%：一樣，算你贏'],
     };
