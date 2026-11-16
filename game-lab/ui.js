@@ -1299,12 +1299,16 @@
   //   預設選中＝猜歌時選的那張（猜對＝今晚那張）
   //   解鎖制（店主 11-16）：ctx.open＝能挑的派（沒給＝三派；新玩家第一次挑＝初始流派）；鎖住的派封面灰掉、下面那行換成鎖頭＋「打倒傳說藏家解鎖」，點了只說明、不選。
   //   ctx.noTut＝不是序章那一趟（跳過序章的新存檔三選一）：不寫「教學這場照舊 7 星」
+  //   審查 11-16：序章 O9 新玩家第一次挑（ctx.noTut 沒設、一派都還沒解鎖）＝說明那行最後多一行「挑了就是初始流派…」；
+  //   ctx.cancel＝標題多一顆 ✕（跳過序章的新存檔三選一：這一下會定下初始流派，按錯可以退回標題）→ 回 null
   function acePickPanel(sc, ctx, beat) {
     return new Promise(function (res) {
       var open = (ctx.open || TIERS).filter(function (t) { return TIERS.indexOf(t) >= 0; }); if (!open.length) open = TIERS.slice();
       var sel = ctx.guessed || ctx.defaultTier || 'hall';
       if (open.indexOf(sel) < 0) sel = open.indexOf(save.lastAce) >= 0 ? save.lastAce : open[0];   // 猜中的／今晚那派還鎖著：預設選你解鎖的
-      var html = '<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3><span class="np"></span></div><div class="lb-trio">' +
+      var fresh = !ctx.noTut && !unlockedNow().length;   // 序章新玩家第一次挑＝初始流派
+      var html = '<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3><span class="np"></span>' +
+        (ctx.cancel ? '<button type="button" class="x" data-a="close" aria-label="關閉">✕</button>' : '') + '</div><div class="lb-trio">' +
         TIERS.map(function (t) {
           var c = card(C.aces[t]), ax = C.aceAxis[t], lk = open.indexOf(t) < 0;
           return tileHTML(c, { sel: t === sel, cls: lk ? 'locked' : '', stars: false, text: false, badge: false, data: 'data-tier="' + t + '"' + (lk ? ' data-locked="1"' : ''),      // 名號寫在下面那行，封面角不再蓋標（V13：異端標蓋住 SWANS）
@@ -1323,7 +1327,8 @@
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
         var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
         det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。' +
-          (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '');   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
+          (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '') +   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
+          (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '');   // 這一挑定下初始流派，其他兩派要打倒傳說藏家（審查 11-16）
       }
       mark();
       roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）。說明那行先填好再量（矮螢幕它沒有最小高，空著量＝0；V5-play-7）
@@ -1339,6 +1344,7 @@
           return;
         }
         if (e.target.closest && e.target.closest('[data-a=ok]')) { done = true; sfx('select'); closeSheet(s); ctx.acePicked = true; res(sel); }
+        else if (ctx.cancel && e.target.closest && e.target.closest('[data-a=close]')) { done = true; sfx('tick'); closeSheet(s); res(null); }
       });
       autoAct(function () {
         if (UI.auto && UI.auto.ace && UI.auto.ace !== sel) { var b0 = qs('.lb-ct[data-tier="' + UI.auto.ace + '"] .acex', s); if (b0) b0.click(); }
@@ -1373,6 +1379,9 @@
   //   o：{tier, aceId, canSwitch, open, owned}；回 {tier, aceId}
   //   解鎖制（店主 11-16）：o.open＝能切的派（鎖住的分頁上鎖、點了只說明）、o.owned＝收到的頂點卡（沒收到的灰掉＋鎖頭，點了寫「還沒收到：打倒傳說藏家收集」、不能選）；
   //   分頁裡第二行「已收 n／15」。沒給＝舊行為（三派、15 張都能挑）
+  //   審查 11-16：沒點別的時候，這派有沒收到的（或有鎖住的派）＝灰字那行寫「有鎖的還沒收到：打倒傳說藏家收集」（原本要先點一張鎖住的才看得到）；
+  //   點了沒收到的那張（說明換成那張）＝大鈕寫「還是帶《選中那張》」（按下去帶的是選中那張，不是說明裡那張）；
+  //   分頁兩行的 class 用 cnt2（原本的 two 撞到 .lb-sheet .two 的通用規則 display:flex;gap:8px，字頂出框線）
   function apexPickPanel(o) {
     o = o || {};
     return new Promise(function (res) {
@@ -1386,7 +1395,7 @@
         '<div class="apx-tabs" role="tablist">' + tabs.map(function (t) {
           var lk = open.indexOf(t) < 0, all = E.apexList(C, t).filter(function (x) { return x && card(x.card); });
           var cnt = owned && !lk ? '<span class="tc">' + esc(AU('got', { n: all.filter(function (x) { return has(x.card); }).length, total: all.length })) + '</span>' : '';   // 這派收了幾張
-          return '<button type="button" class="key' + (lk ? ' locked' : '') + (cnt ? ' two' : '') + '" role="tab" data-tab="' + t + '"' + (lk ? ' aria-disabled="true"' : '') + '><span class="tn">' + (lk ? lockIcon(11) : '') + esc(C.aceTitle[t]) + '</span>' + cnt + '</button>';
+          return '<button type="button" class="key' + (lk ? ' locked' : '') + (cnt ? ' cnt2' : '') + '" role="tab" data-tab="' + t + '"' + (lk ? ' aria-disabled="true"' : '') + '><span class="tn">' + (lk ? lockIcon(11) : '') + esc(C.aceTitle[t]) + '</span>' + cnt + '</button>';
         }).join('') + '</div>' +
         '<div class="apx-grid" role="listbox"></div><p class="note detail apx-det"></p><p class="note apx-sw" hidden>' + esc(TU('aceSwapSub')) + '</p>' +
         '<div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok"></button></div>';
@@ -1402,6 +1411,9 @@
             coverHTML(c, { info: false, badge: false }) + (mine ? '' : '<span class="lockov" aria-hidden="true">' + lockIcon(16) + '</span>') + '<span class="tm ' + esc(x.timing) + '">' + esc(TM[x.timing] || '') + '</span></button>';
         }).join('');
       }
+      // 這派有沒收到的、或有鎖住的派（灰字那行的「有鎖的還沒收到」）；大鈕裡的專輯名太長就截（鈕一行放得下）
+      function anyLocked() { return !!owned && (tabs.some(function (t) { return open.indexOf(t) < 0; }) || E.apexList(C, tier).some(function (x) { return x && card(x.card) && !has(x.card); })); }
+      function shortAlbum(a) { a = String(a || ''); return a.length > 14 ? a.slice(0, 13) + '…' : a; }
       function mark() {
         qsa('.apx-tabs [data-tab]', s).forEach(function (b) { var on = b.getAttribute('data-tab') === tier; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
         qsa('.apx-c', grid).forEach(function (b) { var id = b.getAttribute('data-cid'), on = id === sel; b.classList.toggle('sel', on); b.classList.toggle('peek', id === peek); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
@@ -1409,9 +1421,10 @@
         var pk = peek && peek.indexOf('tab:') === 0 ? peek.slice(4) : null, cid = peek && !pk ? peek : sel, c = card(cid) || {}, A = E.abilityOf(C, cid) || {};
         det.innerHTML = '<span class="ar">' + esc((c.artist || '') + '《' + (c.album || '') + '》') + '</span>' +
           '<span class="ab">' + esc(AU('pickLine', { name: '\u0001', timing: TM[A.timing] || '', text: A.text || '' })).replace('\u0001', '<b>' + esc(A.name || '') + '</b>') + '</span>';
-        if (peek) { sw.innerHTML = lockIcon(11) + esc(pk ? TU('aceLockedNote', tierVars(pk)) : AU('notYet') + '：' + AU('lockCard')); sw.classList.add('lockt'); sw.hidden = false; }
-        else { sw.textContent = TU('aceSwapSub'); sw.classList.remove('lockt'); sw.hidden = tier === t0; }
-        okb.textContent = tier === t0 && sel === id0 ? AU('pickSame') : AU('pickGo');
+        if (peek) { sw.innerHTML = lockIcon(11) + esc(pk ? TU('aceLockedNote', tierVars(pk)) : AU('notYet') + '：' + AU('lockCard')); sw.classList.add('lockt'); sw.classList.remove('soft'); sw.hidden = false; }
+        else if (tier === t0 && anyLocked()) { sw.innerHTML = lockIcon(11) + esc(AU('lockNote')); sw.classList.add('lockt'); sw.classList.add('soft'); sw.hidden = false; }
+        else { sw.textContent = TU('aceSwapSub'); sw.classList.remove('lockt'); sw.classList.remove('soft'); sw.hidden = tier === t0; }
+        okb.textContent = peek && !pk ? AU('pickKeep', { album: shortAlbum((card(sel) || {}).album) }) : tier === t0 && sel === id0 ? AU('pickSame') : AU('pickGo');
       }
       // 15 張封面比一般面板高：full 鏡頭讓不出那麼多（舞台最矮約 234 px；390×664 會差 18 px 要捲）＝收成對決那條，面板照內容高，不用捲。
       //   說明三行、換派灰字一行的高在 CSS 先留好（點別張、切分頁不長高）；萬一還是比面板高（字型沒載到、字很長），再量一次讓高（審查 11-16：原本只在打開時量一次）
@@ -1495,15 +1508,20 @@
       }, ok ? 2900 + 450 * speed() : 700);   // 老闆那句 2600／吐司 1900（照速度縮）＋吐司淡出 400 ms（不縮）都收掉之後
     });
   }
-  // 序章打完（或舊存檔第一次開旗標）、第 1 位開打前：老闆先說一句，再跳挑王牌面板（每份存檔一次）。回 true＝這一次來客畫面交給它
+  // 序章打完（或舊存檔第一次開旗標）、第 1 位開打前：老闆先說一句，再跳挑王牌面板（每份存檔一次）。
+  //   回 'panel'＝這一次來客畫面交給它；'said'＝老闆只說了那句（沒得挑），第一次來客的提示等它說完；false＝沒事
+  //   解鎖制（審查 11-16）：只收到一張（canSwapAny 不成立：新玩家、或跳過序章剛三選一完）＝不跳面板（原本跳出 15 格只有 1 張能選、14 張鎖著，
+  //   跳過序章那條還會連挑兩次）。老闆那句照說（王牌從這裡起改當輔助卡）；怎麼收別張交給 lockHint 那則一次性吐司
   function apexIntroOnNight(r) {
     if (!UI.apex || UI.auto || (save.seen && save.seen.apexPick) || !E.canSwitchAce(r, C)) return false;
     save.seen.apexPick = true; persist();
-    UI.going = true;
+    var can = canSwapAny(r);
+    if (can) UI.going = true;
     stg('emote', 'o', 'excl', 2200);
     stageSay('o', AU('intro').replace(/^「|」$/g, ''), 'owner', 3200);
+    if (!can) return 'said';
     later(function () { UI.going = false; if (UI.screen === 'night' && save.run === r) apexSwapFlow(true); }, 1900);
-    return true;
+    return 'panel';
   }
   // 老闆的四張（O12）：四張封面＋各自的推薦語；封面＝唱片資訊；鈕「收下這四張」只是確認（入袋在 O14 櫃檯看過之後）
   function recsPanel(ids, beat) {
@@ -1728,7 +1746,8 @@
         (overRun ? '<button type="button" class="lb-btn wide" data-a="end">' + esc(TU('lastSummary')) + '</button>' : '');
     }
     // 頂點卡試做（?apex=1，店主 11-16）：跳過序章、直接開打（不走旁白、捏人、序章、挑種子；特價箱照策略自動挑三張）→ 來客畫面跳挑王牌面板
-    if (UI.apex) h += '<button type="button" class="lb-btn wide col key" data-a="skip">' + esc(AU('skip')) + '<span class="sub">' + esc(AU('skipSub')) + '</span></button>';
+    //   新存檔（一派都還沒解鎖）：小字改成「先挑你的初始流派」（這一下會定下初始流派；審查 11-16）
+    if (UI.apex) h += '<button type="button" class="lb-btn wide col key" data-a="skip">' + esc(AU('skip')) + '<span class="sub">' + esc(AU(unlockedNow().length ? 'skipSub' : 'skipSubFirst')) + '</span></button>';
     var unl = unlockLine();                              // 解鎖進度（店主 11-16）：「流派 1／3・下一派：殿堂（經典）」；新玩家不出
     h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
       (unl ? '<p class="lb-foot sm unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') +
@@ -1791,6 +1810,8 @@
   // 跳過序章、直接玩輔助卡版（?apex=1，店主 11-16）：放棄進行中的那一趟 → 開一趟非序章的（王牌沿用上次那派／那張，沒有就殿堂預設）
   //   → 特價箱照引擎策略自動挑三張 → 來客畫面；挑王牌面板由 apexIntroOnNight 跳（每次走這條路都跳，讓你換一張再打）
   //   解鎖制（店主 11-16）：從沒挑過派的新存檔（unlockedNow() 是空的）先三選一挑初始流派（老闆說「先挑一派…」），挑了才開這一趟
+  //   審查 11-16：三選一開著時把標題招牌收起來（舞台縮小後招牌會移到面板標題上，蓋住「其他流派，打倒傳說藏家再解鎖」那句）；
+  //   面板右上 ✕＝不挑、回標題（招牌回來；這一下會定下初始流派，按錯可以退）
   function skipToApex() {
     if (UI.going || !UI.apex) return;
     var f = FX(), want = save.settings.sound !== false;
@@ -1800,9 +1821,11 @@
     if (!unlockedNow().length) {
       UI.going = true;
       tlog('apex', 'firstPick', {});
-      acePickPanel(null, { defaultTier: tierOfCard(tonightId()) || 'hall', noTut: true }, { prompt: TU('firstPick') }).then(function (tier) {
+      var plate = qs('.lb-plate', app()); if (plate) plate.style.visibility = 'hidden';
+      acePickPanel(null, { defaultTier: tierOfCard(tonightId()) || 'hall', noTut: true, cancel: true }, { prompt: TU('firstPick') }).then(function (tier) {
         UI.going = false;
         if (UI.screen !== 'title') return;
+        if (!tier) { tlog('apex', 'firstPickCancel', {}); go('title'); return; }     // ✕：不挑，標題重畫（招牌、按鈕回來）
         skipStart(TIERS.indexOf(tier) >= 0 ? tier : 'hall');
       });
       return;
@@ -2759,7 +2782,10 @@
       return;
     }
     // 頂點卡試做（?apex=1）：這份存檔第一次開旗標、第 1 位開打前＝老闆說一句、跳挑王牌面板（apexIntroOnNight；旗標關時不走）
-    if (apexIntroOnNight(r)) return;
+    //   沒得挑（只收到一張）＝老闆只說那句：下面的提示都晚 sayMs 再出（不跟老闆那句疊）
+    var intro = apexIntroOnNight(r);
+    if (intro === 'panel') return;
+    var sayMs = intro === 'said' ? 2600 : 0;
     // 換王牌的一次性提示（店主 11-13；save.seen.aceSwap）：第 1 位開打前、第一次來客的提示（nightIntro）看過之後才出——老闆頭上閃一下＋吐司「想換王牌，點老闆。」
     //   解鎖制（店主 11-16）：沒東西可換（只解鎖一派）先不提示，等第一次打倒傳說藏家解鎖了別派再說
     var aceHintNow = save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C) && canSwapAny(r);
@@ -2768,12 +2794,30 @@
       save.seen.aceSwap = true; persist();
       stg('emote', 'o', 'excl', 2600);
       toast(TU('aceHint'));
-    }, 700);
+    }, 700 + sayMs);
     var quiet = UI.quietNight; UI.quietNight = false;          // 剛換完王牌重畫：這一次不再排第一次來客的提示（審查：三則訊息疊在一起）
+    var bagHintNow = !aceHintNow && !quiet && save.seen.night && !save.seen.bagSell && !UI.auto && E.canShop(r) && r.bag.length >= BAG_HINT_AT;
+    // 流派還鎖著的一次性提示（審查 11-16；save.seen.unlockHint）：只解鎖一派（沒得換）、第 1 位開打前＝老闆頭上閃一下＋吐司
+    //   「其他流派還鎖著：打倒傳說藏家，解鎖殿堂（經典）。」（序章 O9 那一挑定下初始流派，之前畫面上沒地方講其他派怎麼來；矮螢幕標題那行又收起來）。
+    //   跟「想換王牌」那則不會同時成立；包包的提示優先（同一次不疊，下次再說）。第一晚（第一次來客的提示還沒看過）＝等那幾句看完才出
+    if (!aceHintNow && !bagHintNow && !quiet && !UI.auto && !save.seen.unlockHint && E.canSwitchAce(r, C) && !canSwapAny(r)) {
+      var lockHint = function () {      // 回 true＝不用再等（出了，或已經不適用）
+        if (UI.screen !== 'night' || save.run !== r || save.seen.unlockHint || !E.canSwitchAce(r, C) || canSwapAny(r)) return true;
+        var tt = D.getElementById('tut');
+        if (!save.seen.night || UI.going || (tt && /\bon\b/.test(tt.className)) || qs(':scope > .lb-sheet', UI.panel) || qs('.lb-sheet.float', app())) return false;
+        var nx = E.nextUnlock ? E.nextUnlock(unlockedNow()) : null; if (!nx) return true;
+        save.seen.unlockHint = true; persist();
+        stg('emote', 'o', 'excl', 2600);
+        toast(TU('lockHint', tierVars(nx)), 'long');
+        return true;
+      };
+      if (save.seen.night) later(lockHint, 700 + sayMs);
+      else { var lhIv = setInterval(function () { if (lockHint()) clearInterval(lhIv); }, 400); UI.offs.push(function () { clearInterval(lhIv); }); }
+    }
     // 包包賣回的一次性提示（店主 11-16 包包不限張數之後；save.seen.bagSell）：第一次來客的提示看過之後、兩位客人之間、包包長到 BAG_HINT_AT 張以上——
     //   包包那顆閃三下＋吐司「包包越塞越滿？點「包包」可以賣回，半價。」（玩家自己瘦身唯一的入口在包包面板；不提示的話牌組只會越收越大）。
     //   自己點開過包包（能賣的時候）就不再出；同一次不跟換王牌的提示疊
-    if (!aceHintNow && !quiet && save.seen.night && !save.seen.bagSell && !UI.auto && E.canShop(r) && r.bag.length >= BAG_HINT_AT) later(function () {
+    if (bagHintNow) later(function () {
       var rr = save.run;
       if (UI.screen !== 'night' || !rr || save.seen.bagSell || !E.canShop(rr) || rr.bag.length < BAG_HINT_AT || qs('.lb-sheet.float', app())) return;
       save.seen.bagSell = true; persist();
@@ -2785,7 +2829,7 @@
       if (UI.screen !== 'night') return;
       // 整個名單（含「第 n 輪」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
       var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
-    }, 700);
+    }, 700 + sayMs);
     autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
   // 聲望那顆（來客的錢那條最左）：「聲望 10/14」，數字粗體、「聲望」兩字小一號

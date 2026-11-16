@@ -2278,6 +2278,42 @@ section('22 流派與頂點卡靠遊戲解鎖（店主 11-16）：被剋鏈（�
     const d2 = EN.newRun(C, { seedKey: 'ul-fix4', runNo: 2, ace: 'hall', prologue: false }); winTo(d2, 5); forceWin(d2);
     ok(d2.pending && d2.pending.cls === 'boss', 'pending boss reward');
     EN.fixUnlock(d2, C, { unlocked: ['hall'] }); ok(d2.bossCard === A[d2.bossAce] && JSON.stringify(d2.acesWon) === JSON.stringify([A[d2.bossAce]]), 'pending boss reward → bossCard = what he carried'); }
+  // 輸給藏家、說情重打還沒按（pending retry）：這一輪的卡不動——重打＝同一位、同一副牌（審查 11-16：原本會重算成被剋鏈那張）
+  { const loseBoss = (run, o = {}) => {
+      const f = EN.startFight(run, C, o), had = f.duel.e.deckIds.find(id => EN.tierOfApex(C, id)), ids = f.duel.e.deckIds.slice().sort(); let h = 0;
+      while (!f.duel.over && h++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } });
+      EN.finishFight(run, C); return { had, ids };
+    };
+    const again = (run, o = {}) => { EN.choose(run, C, { type: 'retry' }); const f = EN.startFight(run, C, o); return { had: f.duel.e.deckIds.find(id => EN.tierOfApex(C, id)), ids: f.duel.e.deckIds.slice().sort() }; };
+    // 舊 run（解鎖制以前存的）：補快照時藏家的卡＝content.aces[run.bossAce]（他剛才那場帶的），不是被剋鏈那張
+    let hit = 0;
+    for (let k = 1; k < 40 && hit < 2; k++) {
+      const e2 = EN.newRun(C, { seedKey: 'ul-retry' + k, runNo: 2, ace: 'hall', prologue: false }); winTo(e2, 5);
+      if (EN.nextUnlock(['hall']) === e2.bossAce) continue;                        // 要他帶的那派跟被剋鏈那派不同，才測得出來
+      hit++;
+      const l1 = loseBoss(e2);
+      ok(e2.pending && e2.pending.type === 'retry' && e2.pending.pos === 5 && !e2.unlock && l1.had === A[e2.bossAce], 'legacy run lost to the boss → pending retry', [e2.pending, l1.had]);
+      ok(EN.fixUnlock(e2, C, { unlocked: ['hall'], start: 'hall' }) && e2.bossCard === l1.had && JSON.stringify(e2.acesWon) === '[]', 'legacy pending retry → bossCard = what he carried (not the chain card)', [e2.bossCard, l1.had]);
+      ok(!EN.fixUnlock(e2, C, { unlocked: ['hall'], start: 'hall' }), 'second load → no change');
+      const l2 = again(e2);
+      ok(l2.had === l1.had && JSON.stringify(l2.ids) === JSON.stringify(l1.ids), 'retry → same boss, same deck', [l1.had, l2.had]);
+    }
+    ok(hit === 2, 'found legacy runs where his tier ≠ the chain tier', hit);
+    // 新規則的 run（旗標開、三派都開＝藏家帶試做卡）：輸了之後不開旗標重新整理，重打照樣是剛才那張
+    const n2 = EN.newRun(C, { seedKey: 'ul-retry-new', runNo: 2, ace: 'hall', prologue: false, unlocked: TIERS, apexOwned: [] }); winTo(n2, 5, { apex: true });
+    const m1 = loseBoss(n2, { apex: true });
+    ok(n2.pending && n2.pending.type === 'retry' && !DEF.includes(m1.had) && n2.bossCard === m1.had, 'flag on: lost to a boss carrying a trial card', m1.had);
+    ok(!EN.fixUnlock(n2, C, { unlocked: TIERS, apexOwned: [] }), 'same save, same flag → no change');
+    EN.fixUnlock(n2, C, { unlocked: TIERS }); ok(n2.bossCard === m1.had && n2.unlock.apex === null, 'reopened without the flag mid-retry → his card stays', [n2.bossCard, m1.had]);
+    const m2 = again(n2);
+    ok(m2.had === m1.had && JSON.stringify(m2.ids) === JSON.stringify(m1.ids), 'retry → same trial card, same deck');
+    // 序章輸了（free retry、沒有 pos）：照舊重算（第 1 位不是藏家）
+    const pr = EN.newRun(C, { seedKey: 'ul-retry-pro', runNo: 1, ace: 'pearl', unlocked: [], start: 'pearl' });
+    const fp = EN.startFight(pr, C, { tutorial: true }); let hp = 0;
+    while (!fp.duel.over && hp++ < 12) EN.resolveTurn(fp.duel, EN.legalActions(fp.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } });
+    EN.finishFight(pr, C); const bc = pr.bossCard; pr.bossCard = null;
+    EN.fixUnlock(pr, C, { unlocked: ['pearl'], start: 'pearl' });
+    ok(pr.pending && pr.pending.type === 'retry' && pr.pending.free && pr.bossCard === bc && bc === A.hall, 'prologue retry → recomputed (chain card)', [pr.pending, bc]); }
   // 旗標只看網址：同一份存檔開關 ?apex=1，三派都開後藏家帶試做卡或照舊跟著變
   { const run = EN.newRun(C, { seedKey: 'ul-flag', runNo: 2, ace: 'hall', prologue: false, unlocked: TIERS, apexOwned: [] }), c1 = run.bossCard;
     ok(!DEF.includes(c1), 'flag on → trial card');

@@ -836,12 +836,14 @@ body.lb-tune-open{overflow:hidden;}
 .lb-ct.locked .acex .al.one.lockt{display:flex;align-items:center;margin-top:1px;font-size:10px;font-weight:700;letter-spacing:0;color:var(--ink);white-space:normal;line-height:1.3;}
 .lb-ct.peek .acex{border-bottom:2px dashed var(--ink);}
 .lb-sheet .note.detail .lockt{display:flex;align-items:center;font-weight:700;color:var(--ink);}
+.lb-sheet .note.detail .lockt.fp{margin-top:2px;font-size:11px;line-height:1.5;}   /* 序章 O9 新玩家第一次挑：「挑了就是初始流派…」（審查 11-16） */
 /* 挑王牌面板（?apex=1）：分頁第二行「已收 n／15」；鎖住的分頁虛線、灰；沒收到的封面灰掉＋小鎖；點了的那張虛線框 */
 .lb-sheet.apxpick .apx-tabs button{display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .lb-sheet.apxpick .apx-tabs button .tn{display:inline-flex;align-items:center;height:16px;line-height:16px;}
 .lb-sheet.apxpick .apx-tabs button .tc{display:block;height:12px;margin-top:1px;font:400 9px/12px var(--zh);letter-spacing:.02em;opacity:.8;}
-.lb-sheet.apxpick .apx-tabs button.two,.lb-sheet.apxpick.unl .apx-tabs button{height:38px;}                       /* 兩行（名字＋已收 n／15）：鎖住的那顆跟著一樣高 */
-@media (max-height:600px){.lb-sheet.apxpick .apx-tabs button.two,.lb-sheet.apxpick.unl .apx-tabs button{height:36px;}}
+.lb-sheet.apxpick .apx-tabs button.cnt2,.lb-sheet.apxpick.unl .apx-tabs button{height:38px;gap:0;}                 /* 兩行（名字＋已收 n／15）：鎖住的那顆跟著一樣高。
+   class 叫 cnt2（審查 11-16：原本叫 two，撞到 .lb-sheet .two 的 gap:8px，16＋8＋1＋12＝37 px 塞進 36 px 的鈕，字頂出框線）；gap 寫死 0 保險 */
+@media (max-height:600px){.lb-sheet.apxpick .apx-tabs button.cnt2,.lb-sheet.apxpick.unl .apx-tabs button{height:36px;}}
 .lb-sheet.apxpick .apx-tabs button.locked{border-style:dashed;background:#f2f2f2;color:var(--gray2);cursor:default;}
 .lb-sheet.apxpick .apx-c.unowned{cursor:default;}
 .lb-sheet.apxpick .apx-c.unowned .lb-cv{-webkit-filter:grayscale(1) brightness(.6);filter:grayscale(1) brightness(.6);opacity:.55;}
@@ -850,6 +852,7 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.apxpick .apx-c.unowned .tm{background:rgba(110,110,110,.85);}
 .lb-sheet.apxpick .apx-c.peek .lb-cv{outline:2px dashed var(--ink);outline-offset:1px;opacity:.8;}
 .lb-sheet.apxpick .apx-sw.lockt{display:flex;align-items:center;color:var(--ink);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-sheet.apxpick .apx-sw.lockt.soft{color:var(--gray2);font-weight:400;}   /* 沒點別的時候的「有鎖的還沒收到…」（審查 11-16）：比點了鎖住那張的說明淡 */
 /* 點老闆小選單：沒東西可換＝「其他流派還鎖著」（按不下去，小字寫怎麼解鎖） */
 .lb-sheet.owner .two .lb-btn.ow-none{opacity:1;border-style:dashed;color:var(--gray2);background:#f4f4f4;gap:1px;}
 .lb-sheet.owner .two .lb-btn.ow-none .lb{display:inline-flex;align-items:center;font-weight:700;letter-spacing:.04em;}

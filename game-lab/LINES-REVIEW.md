@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 579（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 584（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -516,6 +516,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・aceLockedNote | {title}（{axis}）還鎖著，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.aceLockedNote` |
 | （畫面字）・aceSwapNone | 其他流派還鎖著 | 本規格新寫 | `trial.ui.aceSwapNone` |
 | （畫面字）・firstPick | 「先挑一派。其他流派，打倒傳說藏家再解鎖。」 | 本規格新寫 | `trial.ui.firstPick` |
+| （畫面字）・firstPickNote | 挑了就是初始流派。其他兩派，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.firstPickNote` |
+| （畫面字）・lockHint | 其他流派還鎖著：打倒傳說藏家，解鎖{title}（{axis}）。 | 本規格新寫 | `trial.ui.lockHint` |
 | （畫面字）・unlocked | 解鎖了{title}派（{axis}） | 本規格新寫 | `trial.ui.unlocked` |
 | （畫面字）・unlockedSub | 下一趟開局，點老闆就能換。 | 本規格新寫 | `trial.ui.unlockedSub` |
 | （畫面字）・newOwn | 新收藏 | 本規格新寫 | `trial.ui.newOwn` |
@@ -748,9 +750,12 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・skip | 跳過序章，直接開打 ▸ | 本規格新寫 | `apexTrial.ui.skip` |
 | （畫面字）・skipSub | 輔助卡試做・挑一張王牌就開始 | 本規格新寫 | `apexTrial.ui.skipSub` |
 | （畫面字）・skipAgain | 再按一次：放棄這一趟、直接開打 | 本規格新寫 | `apexTrial.ui.skipAgain` |
+| （畫面字）・skipSubFirst | 輔助卡試做・先挑你的初始流派 | 本規格新寫 | `apexTrial.ui.skipSubFirst` |
 | （畫面字）・got | 已收 {n}／{total} | 本規格新寫 | `apexTrial.ui.got` |
 | （畫面字）・notYet | 還沒收到 | 本規格新寫 | `apexTrial.ui.notYet` |
 | （畫面字）・lockCard | 打倒傳說藏家收集 | 本規格新寫 | `apexTrial.ui.lockCard` |
+| （畫面字）・lockNote | 有鎖的還沒收到：打倒傳說藏家收集 | 本規格新寫 | `apexTrial.ui.lockNote` |
+| （畫面字）・pickKeep | 還是帶《{album}》 | 本規格新寫 | `apexTrial.ui.pickKeep` |
 | （畫面字）・gotNew | 收進唱片櫃，下一趟開局可以換 | 本規格新寫 | `apexTrial.ui.gotNew` |
 | （畫面字）・noneMore | 還沒收到別張王牌 | 本規格新寫 | `apexTrial.ui.noneMore` |
 

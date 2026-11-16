@@ -1045,8 +1045,8 @@
   // 載入存檔時把 run 的解鎖狀態對齊存檔（畫面每次 loadSave 都呼叫；o＝{unlocked, start?, apexOwned?}，apexOwned 有給＝現在開著 ?apex=1）：
   //   ・舊的進行中 run（解鎖制以前存的，沒有 run.unlock）：補上快照；打過藏家（run.aceWon）＝那張（content.aces[run.bossAce]）算這一趟收的、start＝o.start 或這次的派
   //   ・已經有的：tiers／apex 換成存檔現在的（旗標只看網址：同一份存檔開關 ?apex=1，三派都開後藏家帶試做卡或照舊跟著變）；start、acesWon 不動
-  //   還能換王牌、旗標開、王牌是沒擁有的試做卡 → 拿掉 run.aceId（回那派預設）。這一輪藏家的卡重算；藏家那場打到一半、或剛打完在領獎／升級 →
-  //   不動（舊 run＝他真的帶的那張）。回 true＝有改
+  //   還能換王牌、旗標開、王牌是沒擁有的試做卡 → 拿掉 run.aceId（回那派預設）。這一輪藏家的卡重算；藏家那場打到一半、剛打完在領獎／升級、
+  //   或輸給他、說情重打還沒按（pending retry；重打＝同一位、同一副牌）→ 不動（舊 run＝他真的帶的那張：打到一半看牌單、其他＝content.aces[run.bossAce]）。回 true＝有改
   function fixUnlock(run, content, o) {
     if (!run || !o || !Array.isArray(o.unlocked) || !TIERS.includes(run.ace)) return false;
     const before = JSON.stringify([run.unlock, run.acesWon, run.bossCard, run.aceId]);
@@ -1057,7 +1057,7 @@
     const tiers = TIERS.filter(t => o.unlocked.includes(t) || t === run.ace || (apex || []).some(id => tierOfApex(content, id) === t));
     run.unlock = { tiers, start: !old && TIERS.includes(run.unlock.start) ? run.unlock.start : TIERS.includes(o.start) ? o.start : run.ace, apex };
     if (run.aceId != null && apex && canSwitchAce(run, content) && !ownedApexOf(run, content).includes(run.aceId)) delete run.aceId;
-    const p = run.pending, bossNow = !!(run.duel && run.duel.e && run.duel.e.boss) || !!(p && !p.prologue && p.type !== 'retry' && classAt(p.pos || run.pos) === 'boss');
+    const p = run.pending, bossNow = !!(run.duel && run.duel.e && run.duel.e.boss) || !!(p && !p.prologue && run.prologue !== 'pending' && classAt(p.pos || run.pos) === 'boss');
     if (!bossNow) run.bossCard = bossCardFor(run, content);
     else if (old || !run.bossCard) run.bossCard = run.duel ? bossWonCard(run, content, run.duel) : (p.aceWon || aces[run.bossAce] || null);
     return JSON.stringify([run.unlock, run.acesWon, run.bossCard, run.aceId]) !== before;

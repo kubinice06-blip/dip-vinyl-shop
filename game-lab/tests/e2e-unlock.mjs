@@ -6,7 +6,8 @@
 //
 // 每個尺寸：
 //   1  新存檔只有初始派（旗標關）：上次挑流亡的存檔（解鎖制以前的 v5）→ 標題吐司「流派改成打倒傳說藏家才解鎖…」一次、流亡那張補記成擁有（src start）；
-//      來客畫面：沒有「想換王牌，點老闆。」的提示；點老闆小選單「換一張王牌」換成「其他流派還鎖著／打倒傳說藏家解鎖」（按不下去、不捲）；
+//      來客畫面：沒有「想換王牌，點老闆。」的提示，改出一次性吐司「其他流派還鎖著：打倒傳說藏家，解鎖殿堂（經典）。」（審查 11-16）；
+//      點老闆小選單「換一張王牌」換成「其他流派還鎖著／打倒傳說藏家解鎖」（按不下去、不捲）；
 //      引擎 switchAce 到殿堂＝locked；唱片櫃最上面一行「流派 1／3・下一派：殿堂（經典）」
 //   2  鎖住的派點不了（旗標關）：殿堂＋已解鎖流亡的存檔 → 點老闆 → 換一張王牌 → 三選一：異端灰掉、中間一把鎖、下面「打倒傳說藏家解鎖」；
 //      點異端＝不選、說明那行「異端（硬蕊）還鎖著…」；「就這張」在畫面裡、不捲；選殿堂＝照舊（老闆「那就照舊。」）
@@ -15,8 +16,10 @@
 //      唱片櫃殿堂那張擁有（src boss）、已解鎖＝殿堂、流亡；下一輪（第 10 位）藏家帶異端那張（殿堂剋異端）；唱片櫃那行「流派 2／3・下一派：異端（硬蕊）」
 //   4  旗標開時沒擁有的卡不能挑（?apex=1）：異端＋殿堂解鎖、收過《'77 Live》《Scum》的存檔 → 第 1 位前自動跳挑王牌面板：流亡分頁上鎖、異端「已收 3／15」、
 //      沒收到的 12 張灰＋鎖；點沒收到的＝不選、灰字「還沒收到：打倒傳說藏家收集」；點流亡分頁＝不切、灰字「流亡（冷門）還鎖著…」；挑《'77 Live》＝照舊換；
-//      引擎 switchAce 挑沒收到的＝notOwned、挑流亡＝locked
-//   5  旗標開、新玩家只有一張：點老闆小選單「還沒收到別張王牌／打倒傳說藏家收集」（按不下去）
+//      引擎 switchAce 挑沒收到的＝notOwned、挑流亡＝locked。
+//      審查 11-16：沒點別的時候灰字那行就寫「有鎖的還沒收到：打倒傳說藏家收集」；點了沒收到的（說明換成那張）＝大鈕「還是帶《Filth》」（按下去帶選中那張），
+//      點回選中那張＝「就帶這張」；分頁兩行（名字＋已收 n／15）的字都在框線裡（原本 class two 撞到 gap 8px，頂出框線）
+//   5  旗標開、新玩家只有一張：第 1 位前不自動跳挑王牌面板（沒得挑；審查 11-16），老闆照說那句；點老闆小選單「還沒收到別張王牌／打倒傳說藏家收集」（按不下去）
 //   6  旗標開、三派都開之後打倒藏家：他帶一張你還沒收到的試做卡（先挑別派）→ 送牌那段沒有解鎖那塊、寫「收進唱片櫃，下一趟開局可以換」、封面角「新收藏」→ 擁有
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import fs from 'fs';
@@ -107,7 +110,7 @@ async function runSize(browser, w, h) {
       await watchSay(page);
       await jsClick(page, '[data-a=cont]');
       await waitScreen(page, 'night'); await sleep(2200);
-      const hint = await C(page, () => ({ toasts: window.__toasts.slice(), seen: !!window.__lab.save.seen.aceSwap }));
+      const hint = await C(page, () => ({ toasts: window.__toasts.slice(), seen: !!window.__lab.save.seen.aceSwap, lockSeen: !!window.__lab.save.seen.unlockHint }));
       await C(page, () => window.__lab.stageAction('talk:owner')); await sleep(500);
       const menu = await C(page, () => { const s = document.querySelector('.lb-sheet.float.owner'); if (!s) return null;
         const b = s.querySelector('.ow-none'), r = b ? b.getBoundingClientRect() : null;
@@ -120,11 +123,12 @@ async function runSize(browser, w, h) {
       await C(page, () => window.__lab.openPage('shelf')); await sleep(500);
       const line = await C(page, () => (document.querySelector('.lb-page .lb-unl') || {}).textContent || '');
       const wantLine = fill(x.unlockProg, { n: 1 }) + '・' + fill(x.unlockNext, tv('hall', x));
+      const lockHint = fill(x.lockHint, tv('hall', x));
       const ok = t1.includes(x.unlockMigrated) && !t2.includes(x.unlockMigrated) && st.e && st.e.own === true && st.e.src === 'start' && st.stored === 6 &&
-        u0.tiers === 'pearl' && u0.run === 'pearl' && !hint.toasts.includes(x.aceHint) && !hint.seen &&
+        u0.tiers === 'pearl' && u0.run === 'pearl' && !hint.toasts.includes(x.aceHint) && !hint.seen && hint.toasts.filter(t => t === lockHint).length === 1 && hint.lockSeen &&
         menu && !menu.swap && menu.none === x.aceSwapNone + x.aceLocked && menu.dis && menu.inView && scrollOk(scM) && !after.pick && after.eng === 'locked' && line === wantLine;
       record(1, size, ok && !errs(page).length, `遷移吐司 ${t1.includes(x.unlockMigrated)}（再整理 ${t2.includes(x.unlockMigrated)}）、流亡那張 ${JSON.stringify(st.e)} v${st.stored}；解鎖 ${JSON.stringify(u0)}；` +
-        `換王牌提示 ${hint.toasts.includes(x.aceHint)}（seen ${hint.seen}）；點老闆 ${JSON.stringify(menu)} ${JSON.stringify(scM)} → 點了 ${JSON.stringify(after)}；唱片櫃「${line}」（要「${wantLine}」）；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
+        `換王牌提示 ${hint.toasts.includes(x.aceHint)}（seen ${hint.seen}）、流派鎖著的吐司 ${JSON.stringify(hint.toasts)}（seen ${hint.lockSeen}）；點老闆 ${JSON.stringify(menu)} ${JSON.stringify(scM)} → 點了 ${JSON.stringify(after)}；唱片櫃「${line}」（要「${wantLine}」）；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
     } catch (e) { record(1, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -219,7 +223,11 @@ async function runSize(browser, w, h) {
       const st = () => C(page, () => { const s = document.querySelector('.lb-sheet.apxpick'); if (!s) return null; const ok = s.querySelector('[data-a=ok]').getBoundingClientRect();
         return { tabs: [...s.querySelectorAll('[data-tab]')].map(b => b.dataset.tab + (b.classList.contains('on') ? '*' : '') + (b.classList.contains('locked') ? '!' : '')).join(), tc: (s.querySelector('[data-tab].on .tc') || {}).textContent || '',
           unowned: [...s.querySelectorAll('.apx-c.unowned')].map(b => b.dataset.cid), sel: (s.querySelector('.apx-c.sel') || { dataset: {} }).dataset.cid || null, peek: (s.querySelector('.apx-c.peek') || { dataset: {} }).dataset.cid || null,
-          sw: s.querySelector('.apx-sw').hidden ? '' : s.querySelector('.apx-sw').textContent, okIn: ok.top >= 0 && ok.bottom <= innerHeight, sc: s.scrollHeight - s.clientHeight }; });
+          sw: s.querySelector('.apx-sw').hidden ? '' : s.querySelector('.apx-sw').textContent, okIn: ok.top >= 0 && ok.bottom <= innerHeight, sc: s.scrollHeight - s.clientHeight,
+          okt: s.querySelector('[data-a=ok]').textContent,
+          // 分頁裡每一行離框線內緣的距離（< 0＝頂出框線）
+          tabIn: Math.min(...[...s.querySelectorAll('[data-tab]')].flatMap(b => { const r = b.getBoundingClientRect(), bw = parseFloat(getComputedStyle(b).borderTopWidth);
+            return [...b.children].map(k => { const kr = k.getBoundingClientRect(); return Math.min(kr.top - r.top - bw, r.bottom - bw - kr.bottom); }); })) }; });
       const p0 = await st();
       const sc = await noScroll(page);
       const other = p0 && p0.unowned[0];
@@ -227,6 +235,9 @@ async function runSize(browser, w, h) {
       await sleep(300);
       const p1 = await st();
       const f4 = await shot(page, 'unlock-2-apex-panel', w, h);
+      // 點回選中那張：說明、大鈕回來
+      await tapAt(page, `.lb-sheet.apxpick .apx-c[data-cid="${x.aces.heresy}"]`); await sleep(300);
+      const p1b = await st();
       await tapAt(page, '.lb-sheet.apxpick [data-tab="pearl"]'); await sleep(300);
       const p2 = await st();
       await tapAt(page, `.lb-sheet.apxpick .apx-c[data-cid="${RALLIZES}"]`); await sleep(300);
@@ -234,12 +245,14 @@ async function runSize(browser, w, h) {
       await tapAt(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(1300);
       const res = await C(page, ([o]) => { const R = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent, cp = () => JSON.parse(JSON.stringify(R));
         return { ace: R.ace, aceId: R.aceId, notOwned: E.switchAce(cp(), Cn, 'heresy', { aceId: o }).error, locked: E.switchAce(cp(), Cn, 'pearl').error, can: E.canSwitchAce(R, Cn) }; }, [other]);
+      const filth = await C(page, () => window.DipLabContent.cards[window.DipLabContent.aces.heresy].album);
       const ok = up && p0 && p0.tabs === 'hall,pearl!,heresy*' && p0.tc === fill(x.apx.got, { n: 3, total: 15 }) && p0.unowned.length === 12 && !p0.unowned.includes(RALLIZES) && !p0.unowned.includes(SCUM) &&
-        p0.sel === x.aces.heresy && p0.okIn && p0.sc <= 1 && scrollOk(sc) &&
-        p1.sel === x.aces.heresy && p1.peek === other && p1.sw === x.apx.notYet + '：' + x.apx.lockCard &&
+        p0.sel === x.aces.heresy && p0.okIn && p0.sc <= 1 && scrollOk(sc) && p0.sw === x.apx.lockNote && p0.okt === x.apx.pickSame && p0.tabIn >= 0 &&
+        p1.sel === x.aces.heresy && p1.peek === other && p1.sw === x.apx.notYet + '：' + x.apx.lockCard && p1.okt === fill(x.apx.pickKeep, { album: filth }) &&
+        p1b && p1b.sel === x.aces.heresy && !p1b.peek && p1b.okt === x.apx.pickSame && p1b.sw === x.apx.lockNote &&
         p2.tabs === 'hall,pearl!,heresy*' && p2.sw === fill(x.aceLockedNote, tv('pearl', x)) &&
         p3.sel === RALLIZES && !p3.peek && res.ace === 'heresy' && res.aceId === RALLIZES && res.can && res.notOwned === 'notOwned' && res.locked === 'locked';
-      record(4, size, ok && !errs(page).length, `面板 ${up} ${JSON.stringify(Object.assign({}, p0, { unowned: p0 && p0.unowned.length }))} ${JSON.stringify(sc)}；點沒收到的 ${JSON.stringify(p1 && { sel: p1.sel, peek: p1.peek, sw: p1.sw })}；` +
+      record(4, size, ok && !errs(page).length, `面板 ${up} ${JSON.stringify(Object.assign({}, p0, { unowned: p0 && p0.unowned.length }))} ${JSON.stringify(sc)}；點沒收到的 ${JSON.stringify(p1 && { sel: p1.sel, peek: p1.peek, sw: p1.sw, okt: p1.okt })}；點回 ${JSON.stringify(p1b && { okt: p1b.okt, sw: p1b.sw })}；` +
         `點流亡分頁 ${JSON.stringify(p2 && { tabs: p2.tabs, sw: p2.sw })}；挑'77 Live ${JSON.stringify(p3 && { sel: p3.sel, peek: p3.peek })} → ${JSON.stringify(res)}${f4 ? '；截圖 ' + f4 : ''}；錯誤 ${errs(page).length}`);
     } catch (e) { record(4, size, false, 'error ' + e.message); }
     await ctx.close();
@@ -250,16 +263,18 @@ async function runSize(browser, w, h) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
       await openTitle(page, QA());
-      await seedRun(page, { ace: 'hall', idx: 0, seen: { apexPick: true } });     // 挑王牌面板看過了（不自動跳）
+      await seedRun(page, { ace: 'hall', idx: 0 });                              // 這份存檔第一次開旗標（seen.apexPick 沒記）：原本會自動跳面板
       await openTitle(page, QA());
+      await watchSay(page);
       await jsClick(page, '[data-a=cont]');
-      await waitScreen(page, 'night'); await sleep(1200);
+      await waitScreen(page, 'night'); await sleep(2400);
       const x = await TX(page);
       const auto = await C(page, () => !!document.querySelector('.lb-sheet.apxpick'));
+      const said = await C(page, () => (window.__said || []).map(o => o.t));
       await C(page, () => window.__lab.stageAction('talk:owner')); await sleep(500);
       const menu = await C(page, () => { const s = document.querySelector('.lb-sheet.float.owner'); if (!s) return null; const b = s.querySelector('.ow-none'); return { swap: !!s.querySelector('[data-a=swap]'), none: b ? b.textContent : null, dis: !!(b && b.disabled) }; });
-      const ok = !auto && menu && !menu.swap && menu.none === x.apx.noneMore + x.apx.lockCard && menu.dis;
-      record(5, size, ok && !errs(page).length, `自動跳 ${auto}；點老闆 ${JSON.stringify(menu)}；錯誤 ${errs(page).length}`);
+      const ok = !auto && said.includes(x.apx.intro.replace(/^「|」$/g, '')) && menu && !menu.swap && menu.none === x.apx.noneMore + x.apx.lockCard && menu.dis;
+      record(5, size, ok && !errs(page).length, `自動跳 ${auto}（不該跳）；老闆 ${JSON.stringify(said)}；點老闆 ${JSON.stringify(menu)}；錯誤 ${errs(page).length}`);
     } catch (e) { record(5, size, false, 'error ' + e.message); }
     await ctx.close();
   }
