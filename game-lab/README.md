@@ -225,7 +225,7 @@ LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-apex.mjs   # 頂點卡試做�
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-unlock.mjs # 流派與頂點卡解鎖：新存檔只有初始派、鎖住的派點不了、打倒藏家掉被剋那派、旗標開沒收到的卡不能挑
 ```
 
-e2e 讀 `LAB_BASE`（伺服器根，預設 `http://localhost:8765`）或 `LAB_URL`。Playwright 只有 Chromium。**真 iPhone（Safari 與 Chrome）請各開一次**：店景清楚、聲音、教學遮罩洞裡點得到、抽屜關得掉、唱盤演出不卡。
+e2e 讀 `LAB_BASE`（伺服器根，預設 `http://localhost:8765`）或 `LAB_URL`；開不了本機伺服器時加 `LAB_ROOT=<repo 根目錄>`，Playwright 直接從磁碟回應 `LAB_BASE` 底下的請求（`tests/e2e-lib.mjs`）。Playwright 只有 Chromium。**真 iPhone（Safari 與 Chrome）請各開一次**：店景清楚、聲音、教學遮罩洞裡點得到、抽屜關得掉、唱盤演出不卡。
 
 ## 等店主決定的
 
