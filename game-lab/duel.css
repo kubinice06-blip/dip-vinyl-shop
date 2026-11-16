@@ -267,10 +267,12 @@
 }
 .dl.over .lastline{visibility:hidden}   /* 打完：大章在中間，「上一手」那行不要從大章兩側露出半截（R2 截圖） */
 /* 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上」）：牌桌最上面一列、兩張大封面正上方（--tp 到 --tp＋--lp-h）。
-   左＝他上一手（小封面＋「他・冷門 4」＋專輯名一行），中間灰籤「上一手」，右＝你上一手（鏡像：封面靠右、字靠右）。
-   灰底、灰字：一看就是過去式；封面照原色（要認得出是哪張）。第一手沒有（hidden、不佔高）。
-   揭曉中（.fade）淡到 40%、籤藏起：中間那行「上一手 …」指的是這一手，畫面上的「上一手」永遠只指一手。打完收起（visibility：高度不變、版面不跳） */
-.dl .lastplay{position:absolute;top:var(--tp);left:12px;right:12px;height:var(--lp-h,30px);display:flex;align-items:stretch;z-index:2;transition:opacity .2s}
+   左＝他上一手（小封面＋「［上一手］他・冷門 4」＋專輯名一行），右＝你上一手（鏡像：封面靠右、字靠右）。
+   兩項各自在字首掛深灰「上一手」籤（白字對 #5f5f5f 約 6.4:1），「他・冷門 4」整行灰字、屬性不上色（審查 11-16：他那項疊在他蓋著的袖套正上方，
+   原本只有中間一個淡籤＋全彩屬性字，會被讀成「他這手出冷門 4」）。灰底、灰字：一看就是過去式；封面照原色（要認得出是哪張）。第一手沒有（hidden、不佔高）。
+   揭曉中（.fade）淡到 40%、籤藏起：中間那行「上一手 …」指的是這一手，畫面上的「上一手」永遠只指一手。
+   打完（.dl.over）：照樣淡著、籤藏起，留在原位（不收起：收起會在牌桌上緣留一條 40–48 px 的空帶，審查 11-16） */
+.dl .lastplay{position:absolute;top:var(--tp);left:12px;right:12px;height:var(--lp-h,30px);display:flex;align-items:stretch;gap:6px;z-index:2;transition:opacity .2s}
 .dl .lastplay .lp{position:relative;flex:1 1 0;min-width:0;display:flex;align-items:center;height:100%;background:#f3f2ef;border:1px solid #dcdad4;cursor:pointer;-webkit-touch-callout:none}
 .dl .lastplay .lp::after{content:'';position:absolute;left:-1px;right:-1px;top:calc(-1px - var(--tp,6px));bottom:-4px}   /* 命中區：往上到牌桌上緣、往下到大格上緣（3 px 縫），不蓋大格 */
 .dl .lastplay .lp:active{background:#e8e6e0}
@@ -281,17 +283,15 @@
 .dl .lastplay .lpc .cv.noimg{padding:0}.dl .lastplay .lpc .cv.noimg>span{display:none}   /* 封面載不到：只留斜紋底，專輯名旁邊就有 */
 .dl .lastplay .lp.ace .lpc .cv{outline:2px solid var(--gold,#b8860b);outline-offset:-2px}
 .dl .lastplay .lpt{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;justify-content:center;padding:0 6px}
-.dl .lastplay .lpw{font-size:11px;line-height:13px;font-weight:700;color:#8a8a8a;white-space:nowrap;overflow:hidden}
-.dl .lastplay .lpw>span{opacity:.8}
+.dl .lastplay .lpw{font-size:11px;line-height:13px;font-weight:700;color:#6f6f6f;white-space:nowrap;overflow:hidden}
+.dl .lastplay .lpk{display:inline-block;vertical-align:top;margin-right:4px;padding:0 3px;font-size:10px;letter-spacing:.04em;color:#fff;background:#5f5f5f}   /* 「上一手」籤：行高跟著 .lpw */
 .dl .lastplay .lpn{font-size:12px;line-height:15px;font-weight:700;color:#3a3a3a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dl .lastplay .lpl{flex:none;align-self:center;margin:0 5px;padding:0 4px;font-size:10px;line-height:15px;font-weight:700;letter-spacing:.06em;color:#fff;background:#9a9a9a;white-space:nowrap}
-.dl .lastplay.fade{opacity:.4}
-.dl .lastplay.fade .lpl{visibility:hidden}
+.dl .lastplay.fade,.dl.over .lastplay{opacity:.4}
+.dl .lastplay.fade .lpk,.dl.over .lastplay .lpk{display:none}
 .dl.short .lastplay .lpw,.dl.compact .lastplay .lpw{font-size:10px;line-height:12px}
 .dl.short .lastplay .lpn,.dl.compact .lastplay .lpn{font-size:11px;line-height:14px}
 .dl.roomy .lastplay .lpw{font-size:11px;line-height:14px}
 .dl.roomy .lastplay .lpn{font-size:13px;line-height:17px}
-.dl.over .lastplay{visibility:hidden}
 /* 唬你／剋不動的結果框停住（店主 11-12）：最下面一行灰字「點一下繼續 ▼」 */
 .dl .callout .l4{display:none;font-size:10px;font-weight:700;line-height:14px;color:var(--gray,#888);text-align:right;letter-spacing:.08em;margin-top:1px}
 .dl .callout.wait .l4{display:block;animation:dlBlink 1s steps(1,end) infinite}

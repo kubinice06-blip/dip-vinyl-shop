@@ -585,16 +585,19 @@
     }
     function renderLast() { els.last.innerHTML = S.lastCt ? lastLineHTML(S.lastCt) : ''; }
     // ---- 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上，不然玩家無法看清楚對方打的專輯，就無法認識新專輯」）----
-    //   牌桌最上面一列：左＝他上一手（小封面＋「他・冷門 4」＋專輯名一行），中間灰籤「上一手」，右＝你上一手（鏡像）。點一下＝唱片資訊（where＝last-e／last-p）。
+    //   牌桌最上面一列：左＝他上一手（小封面＋「［上一手］他・冷門 4」＋專輯名一行），右＝你上一手（鏡像）。點一下＝唱片資訊（where＝last-e／last-p）。
+    //   兩項各自在字首掛深灰「上一手」籤、屬性字灰色（審查 11-16：他那項疊在他蓋著的袖套正上方，只靠中間一個淡籤＋全彩「他・經典 5」會被讀成他這手）。
     //   第一手沒有上一手：不佔位置（照現行）。換手（t=2060）時牌桌兩張大封面縮小、搬進小列——第一次是長出來，之後是換掉；換掉的那一刻只有這一個。
     //   你丟出去（t=0）到換手前：小列淡到 40%、「上一手」籤藏起（這時中間那行「上一手 …」指的是這一手；畫面上的「上一手」永遠只指一手）。
-    //   打完（over）：收起（visibility，高度不變、版面不跳）。他這手的大格照樣整格蓋著，不洩漏。
+    //   打完（over）：照樣淡著留在原位（不收起：收起會在牌桌上緣留一條空帶，審查 11-16）。他這手的大格照樣整格蓋著，不洩漏。
     const lpSnap = d => d && d.card ? { card: d.card, attr: d.attr, star: d.star, ace: !!d.ace } : null;
     const lpHas = () => !!(S.lpOn && S.lpd && S.lpd.e && S.lpd.p);
+    // 每顆按鈕畫出來時放的那一手：長按跨過換手（innerHTML 整列重建、S.lpd 換成新的一手）時，開的仍是手指按下去那張（審查 11-16）
+    const lpData = new WeakMap();
     function lpItem(side, d) {
       const c = d.card, lab = T('lpAria', { who: side === 'e' ? '他' : '你', t: title(c) });
       return `<button type="button" class="lp ${side}${d.ace ? ' ace' : ''}" data-side="${side}" data-card="${esc(c.id)}" data-tut="lp-${side}" aria-label="${esc(lab)}">`
-        + `<span class="lpc">${img(c)}</span><span class="lpt"><span class="lpw">${esc(T(side === 'e' ? 'he' : 'you'))}<span class="${d.attr}">${ZH[d.attr]} <span class="num">${d.star}</span></span></span>`
+        + `<span class="lpc">${img(c)}</span><span class="lpt"><span class="lpw"><span class="lpk">${esc(T('lastPrefix'))}</span>${esc(T(side === 'e' ? 'he' : 'you'))}<span class="lpa">${ZH[d.attr]} <span class="num">${d.star}</span></span></span>`
         + `<span class="lpn">${esc(c.album || '')}</span></span></button>`;
     }
     function renderStrip() {
@@ -602,16 +605,17 @@
       const key = on ? [d.e.card.id, d.e.attr, d.e.star, d.p.card.id, d.p.attr, d.p.star].join('|') : '';
       if (els.lp.dataset.k !== key) {
         els.lp.dataset.k = key;
-        els.lp.innerHTML = on ? lpItem('e', d.e) + `<span class="lpl" aria-hidden="true">${esc(T('lastPrefix'))}</span>` + lpItem('p', d.p) : '';
+        els.lp.innerHTML = on ? lpItem('e', d.e) + lpItem('p', d.p) : '';
+        if (on) els.lp.querySelectorAll('.lp').forEach(b => lpData.set(b, d[b.dataset.side]));
       }
       els.lp.hidden = !on;
       els.lp.classList.toggle('fade', on && S.lpFade);
     }
-    // 換手時：牌桌兩張大封面（換手前量的 rect）縮小、飛進小列；字與籤淡入。減少動態＝直接換
+    // 換手時：牌桌兩張大封面（換手前量的 rect）縮小、飛進小列；字（含「上一手」籤）淡入。減少動態＝直接換
     function lpFly(bigE, bigP) {
       if (els.lp.hidden || rm()) return;
       fly(els.lp.querySelector('.lp.e .cv'), bigE, 300); fly(els.lp.querySelector('.lp.p .cv'), bigP, 300);
-      fadeIn(els.lp.querySelector('.lpl'), 300); els.lp.querySelectorAll('.lpt').forEach(x => fadeIn(x, 300));
+      els.lp.querySelectorAll('.lpt').forEach(x => fadeIn(x, 300));
     }
     function renderTable(v) { renderSlot('e'); renderSlot('p'); renderStrip(); renderTri(); renderRounds(v); renderLast(); }
 
@@ -1099,9 +1103,10 @@
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
     }
     // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下；上一手小列點一下或長按；他蓋著的封套不給看
+    //   小列：開這顆按鈕畫出來時的那一手（lpData），不是當下的 S.lpd——長按跨過 t=2060 換手時，x 已是被重建掉的舊按鈕，開的仍是手指按下去那張
     function infoOfLast(x) {
-      const side = x.dataset.side, d = lpHas() && S.lpd[side];
-      if (d && d.card) { openInfo(d.card, 'last-' + side, d.attr); return true; }
+      const side = x.dataset.side, d = lpData.get(x);
+      if (d && d.card && d.card.id === x.dataset.card) { openInfo(d.card, 'last-' + side, d.attr); return true; }
       return false;
     }
     function infoOfSlot(x) {
@@ -1163,7 +1168,9 @@
         if (S.lp !== lp) return;
         S.lp = null;
         const ok = t.matches('.ab') ? chipTip(t) : t.matches('.slot') ? infoOfSlot(t) : t.matches('.lp') ? infoOfLast(t) : infoOfTile(t);
-        if (ok) S.swallow = { el: t };   // 放開手指的那一下 click 不再打開／收回／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）
+        // 放開手指的那一下 click 不再打開／收回／再開一次／丟出（按住屬性鈕＝看說明，不出牌；RV11-6）。
+        //   小列的按鈕若在按住時被換手重建掉（t 已不在畫面上）：吞的是整列裡的那一下
+        if (ok) S.swallow = { el: !t.isConnected && t.matches('.lp') ? els.lp : t };
       }, LONG_MS);
     }
     function onMove(ev) { const lp = S.lp; if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { clearTimeout(lp.h); S.lp = null; } }
