@@ -485,24 +485,30 @@ async function runSize(browser, w, h) {
       const said = await C(page, () => (window.__said || []).map(x => x.t));
       const ps = up ? await pickState(page) : null;
       const tier = await C(page, () => window.__lab.run && window.__lab.run.ace);
-      // 挑一張（同一派換另一張）→ 1.3 秒時：老闆那句＋吐司在、教學泡泡還沒出；3.6 秒時教學泡泡出來（第一次來客那兩句）
-      let st1 = null, st2 = null;
+      // 挑一張（同一派換另一張）→ 老闆那句＋吐司先出；第一次來客的教學泡泡等吐司收掉才出（不三則疊在一起；照遊戲速度，不寫死秒數）
+      let st1 = null;
       if (up) {
         await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
         const other = await C(page, () => { const b = [...document.querySelectorAll('.lb-sheet.apxpick .apx-c')][4]; return b ? b.dataset.cid : null; });
         if (other) await tapAt(page, `.lb-sheet.apxpick .apx-c[data-cid="${other}"]`);
         await sleep(200);
         await tapAt(page, '.lb-sheet.apxpick [data-a=ok]');
-        const bub = () => C(page, () => { const t = document.getElementById('tut'), b = t && t.querySelector('.tut-bub'); return { on: !!(t && /\bon\b/.test(t.className) && b && !b.hidden), tx: b && !b.hidden ? (b.querySelector('.tx') || {}).textContent || '' : '', said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), seen: !!window.__lab.save.seen.night }; });
-        await sleep(1300); st1 = await bub();
-        await sleep(2300); st2 = await bub();
+        st1 = await C(page, () => new Promise(done => {
+          const t0 = performance.now(); let firstToast = null;
+          const iv = setInterval(() => {
+            const t = document.getElementById('tut'), b = t && t.querySelector('.tut-bub'), on = !!(t && /\bon\b/.test(t.className) && b && !b.hidden), toast = !!document.querySelector('.lb-toast');
+            if (toast && firstToast == null) firstToast = Math.round(performance.now() - t0);
+            const ms = Math.round(performance.now() - t0);
+            if (on || ms > 9000) { clearInterval(iv); done({ at: on ? ms : null, toastNow: toast, firstToast, tx: on ? (b.querySelector('.tx') || {}).textContent || '' : '', said: window.__said.map(x => x.t), toasts: window.__toasts.slice() }); }
+          }, 25);
+        }));
       }
       const intro0 = await C(page, () => [].concat(window.DipLabContent.shopLines.nightIntro || [])[0] || '');
       const ok8 = ready && !pd.mode && !pd.hasApex && pd.ace && pd.star === 7 && pd.legal && pd.pick.includes(u.tutNote) && pd.toasts.some(t => t.includes(u.tutNote)) &&
         night && up && ps.tabs.includes(tier + '*') && ps.n === 15 &&
-        !!st1 && !st1.on && st1.said.includes(u.aceKeep) && st1.toasts.some(t => t.startsWith(u.aceSwapped.split('{')[0])) && !!st2 && st2.on && !!intro0 && st2.tx.includes(intro0.slice(0, 6));
+        !!st1 && st1.at != null && !st1.toastNow && st1.firstToast != null && st1.firstToast < st1.at && st1.said.includes(u.aceKeep) && st1.toasts.some(t => t.startsWith(u.aceSwapped.split('{')[0])) && !!intro0 && st1.tx.includes(intro0.slice(0, 6));
       record(8, size, ok8 && !errs(page).length, `序章挑王牌那行「${pd.pick}」；序章對決 ${JSON.stringify({ mode: pd.mode, hasApex: pd.hasApex, star: pd.star, legal: pd.legal })} 吐司 ${JSON.stringify(pd.toasts)}；` +
-        `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n })}；挑完 1.3 秒 ${JSON.stringify(st1)} → 3.6 秒 ${JSON.stringify(st2 && { on: st2.on, tx: st2.tx })}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
+        `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n })}；挑完 ${JSON.stringify(st1)}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
     } catch (e) { record(8, size, false, 'error ' + e.message); }
     await ctx.close();
   }

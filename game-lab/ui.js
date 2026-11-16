@@ -1403,7 +1403,7 @@
       if (first && !save.seen.night && !UI.auto) later(function () {
         if (UI.screen !== 'night' || save.seen.night || save.run !== r || qs(':scope > .lb-sheet', UI.panel)) return;
         var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
-      }, ok ? 2900 : 700);
+      }, ok ? 2900 + 450 * speed() : 700);   // 老闆那句 2600／吐司 1900（照速度縮）＋吐司淡出 400 ms（不縮）都收掉之後
     });
   }
   // 序章打完（或舊存檔第一次開旗標）、第 1 位開打前：老闆先說一句，再跳挑王牌面板（每份存檔一次）。回 true＝這一次來客畫面交給它
