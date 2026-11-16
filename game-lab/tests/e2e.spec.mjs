@@ -24,7 +24,7 @@
 //  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝在那張打開、再點一下＝收回（都不開唱片資訊；v5 手風琴）
 //  16 標題有存檔時點兩下店門＝繼續試煉
 //  17 他在上、你在下；舞台他左你右、老闆在中間；一台唱盤在兩人中間
-//  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
+//  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、上一手小列兩張（第 2 手：點一下、長按他那張；放開手指後還開著）、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
 //  19 教學三王牌六手照課表：每手 kind／toE／toP＝C.tutorial.expect、第 6 手 KO、學到 L1–L6、tutorialDone
 //  20 教學擋錯招：第 1 手點疊著那排的別張、第 2 手點打開那張的別色屬性鈕（都在遮罩上）→「先點我指的這裡。」、手數不前進（第 1 手沒打開、第 2 手沒丟出去）
 //  21 直接開打：沒有遮罩、男子 10 聲望；21b 教學程式不在（canTutorial 假）：兩顆鈕都在，第 0 顆照課表出牌（他 18、第一手 Mylo Xyloto）、沒有遮罩
@@ -59,10 +59,12 @@
 //  52 種子（第 A 波 5：移出包包只走櫃檯「賣給老闆」）：錢不夠時箱子的鈕停用「錢不夠 $n・去櫃檯賣唱片」、沒有先賣子面板；引擎 buy 帶種子 sellId → counterOnly、
 //     單獨 sell 種子 → ok（$0、reclaim seed）；包包面板種子標「櫃裡帶來」、整個包包沒有「賣」鈕；櫃檯「賣給老闆」：種子那格「交還老闆」→ 交還：$0、不再是種子、老闆說一句
 //  53 存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
+//     解鎖制（店主 11-16）：lastAce 那派預設那張補記成擁有（src 'start'）；舊 run 補快照（已解鎖＝lastAce ∪ 擁有頂點卡的派，打倒過藏家＝那張算這一趟收的）
 //  （換王牌，店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說）
 //  54 第 1 位開打前：來客畫面一次性提示（老闆頭上閃一下＋吐司「想換王牌，點老闆。」，save.seen.aceSwap，只出一次）→ 真點老闆＝小選單「聊聊／換一張王牌」（不捲動）
 //     → 聊聊＝老闆照舊說一句 → 換一張王牌＝挑王牌面板（標題「想換一張？」、預設選中現在那張、不捲動）→ 換 pearl：包包送的四張原位換、特價箱不動、
 //     save.lastAce、新那組算擁有（gift）、老闆說換好了＋吐司 → 再換選同一張＝不換（老闆「那就照舊。」）→ 打過第 1 位（第 2 位）點老闆：沒有選單、直接開櫃檯「賣給老闆」（第 A 波 5）
+//     解鎖制（店主 11-16）：存檔先放好流亡那張（pearl 解鎖）；異端（heresy）還鎖著＝面板上鎖、點了不選、說明那行寫「打倒傳說藏家解鎖」
 //  （第 A 波，店主 11-16「全部開始做吧」）
 //  57 客人走到對戰台等你（真點「對戰台」開打）、來客條稱號、客人資訊「常出：○○」、頂欄「再贏 N 位破紀錄」、對決名字旁稱號；讀對了／看穿了、越讀越響；
 //     險勝章＋連勝 +1＋老闆補一句、錢跳數字入帳；差一點摘要（差 N 位破紀錄、他只剩 X 聲望、第 n 手被○剋○翻盤）
@@ -76,7 +78,7 @@
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
-import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, duelReady, openTitle, noScroll, scrollOk,
+import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, hitPoint, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
   watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4 } from './e2e-lib.mjs';
 
@@ -266,6 +268,24 @@ async function run() {
             for (const [k, s] of [['slotE', '.dl [data-tut=slot-e] .cv'], ['slotP', '.dl [data-tut=slot-p] .cv']]) {
               const ok1 = await jsClick(page, s); opened[k] = ok1 ? await infoOpen(page) : 'missing'; if (opened[k] === true) await closeInfo(page);
             }
+            // 上一手小列（店主 11-16）：第 2 手開始時牌桌最上面那列＝第 1 手兩張；真點一下兩張、長按他那張都開唱片資訊，放開手指 400 ms 後還開著（where＝last-e／last-p）
+            const n2 = await duelReady(page, 15000) && await page.evaluate(() => { const x = window.DipLabDuel.debug(); return x.n === 2 && !x.view.over; });
+            if (!n2) opened.last = 'no hand 2';
+            else {
+              for (const [k, side, how] of [['lastE', 'e', 'tap'], ['lastP', 'p', 'tap'], ['lastLong', 'e', 'long']]) {
+                await page.evaluate(() => { window.__infoEv.length = 0; });
+                const sel = `.dl .lastplay .lp.${side}`;
+                if (how === 'long') await longPress(page, ctx, sel);
+                else { const r0 = await hitPoint(page, sel); if (r0) await page.touchscreen.tap(r0.x, r0.y); }
+                const open0 = await infoOpen(page, 2500);
+                await sleep(400);
+                const mask = !!(await page.$('#cardInfoMask'));
+                const ev = await page.evaluate(() => window.__infoEv.slice());
+                opened[k] = open0 && mask && ev.includes('last-' + side) ? true : (open0 ? 'closed' : 'missing') + ' ' + ev.join(',');
+                if (open0 && !mask) closedAtOnce.push(k);
+                if (mask) await closeInfo(page);
+              }
+            }
             record(18, size, Object.values(opened).every(v => v === true), `duel covers ${JSON.stringify(opened)}${closedAtOnce.length ? '（放開手指就被關掉：' + closedAtOnce.join('、') + '）' : ''}`);
           }
         } else {
@@ -448,10 +468,11 @@ async function run() {
               tutorialDone: true, prologueDone: true, lastAce: 'hall', lastBargain: null }));
           });
           await openTitle(page, Q());
-          const mig = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, id = C.aces.hall; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, known: !!S.shelf[id] && !S.shelf[id].own, giftsOwn: C.gifts.hall.every(g => S.shelf[g] && S.shelf[g].own && S.shelf[g].src === 'gift'), relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
+          const mig = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, id = C.aces.hall; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, known: !!S.shelf[id] && !!S.shelf[id].own && S.shelf[id].src === 'start', giftsOwn: C.gifts.hall.every(g => S.shelf[g] && S.shelf[g].own && S.shelf[g].src === 'gift'), relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
           await openTitle(page, Q());
           mig.lastAce2 = await page.evaluate(() => window.__lab.save.lastAce);
           // v4 → v5 → v6：唱片櫃那張留成「認識」；挑過的王牌（lastAce hall）那組送的四張算擁有（一晚版沒有位數：不算打倒藏家）
+          //   解鎖制（店主 11-16）：那張（殿堂預設）就是 lastAce 那派的頂點卡＝載入時補記成擁有（src start），known 改看這個
           const migOk = mig.v === 6 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
             mig.lastAce === 'hall' && mig.runSeq === 1 && mig.lastAce2 === 'hall';   // 審查 #1：lastAce 遷移後、重新整理後都留著；#5：同一天第幾趟的計數器從舊的一晚接著數
           record(11, size, !bad.length && ks.v === 6 && old.v === 6 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
@@ -908,9 +929,10 @@ async function run() {
     if (want(47)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
-        await seededContinue4(page, { ace: 'heresy', idx: 4 });
+        // 解鎖制（店主 11-16）：三派都解鎖了（存檔先放好殿堂、流亡那兩張）＝旗標關時藏家照舊帶 run.bossAce 那張、每輪同一張（被剋鏈那段在 tests/e2e-unlock.mjs）
+        await seededContinue4(page, { ace: 'heresy', idx: 4, ownAces: ['hall', 'pearl'] });
         await waitScreen(page, 'night'); await sleep(500);
-        const r0 = await page.evaluate(() => { const R = window.__lab.run; R.retryLeft = 0; return { order: R.order.slice(), bossAce: window.DipLabContent.aces[R.bossAce], shelf: !!window.__lab.save.shelf[window.DipLabContent.aces[R.bossAce]] }; });
+        const r0 = await page.evaluate(() => { const R = window.__lab.run, id = R.bossCard || window.DipLabContent.aces[R.bossAce]; R.retryLeft = 0; return { order: R.order.slice(), bossAce: id, legacy: id === window.DipLabContent.aces[R.bossAce], shelf: !!window.__lab.save.shelf[id] }; });
         await jsClick(page, '[data-a=go]');
         await waitScreen(page, 'scene');
         for (let g = 0; g < 150 && !(await page.$('.lb-dq.hasmenu .lb-dqopt')); g++) { if (await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq'); await sleep(200); }
@@ -952,7 +974,7 @@ async function run() {
         await sleep(2600);
         const r2 = await page.evaluate(() => { const t = window.__lab.trail(); return { tail: t.slice(t.lastIndexOf('duel')), one: !!document.querySelector('#panel > .lb-sheet.one'), said: (window.__said || []).filter(x => x.id === 'f').map(x => x.t), lose: [].concat((window.DipLabContent.lines[window.DipLabContent.boss] || {}).lose || [])[0] || '' }; });
         const noGift = rew2 && r2.tail.join() === 'duel,reward' && !r2.one && !!r2.lose && !r2.said.some(t => t.indexOf(r2.lose) >= 0);
-        const ok = stake && one && one.cid === r0.bossAce && shelf1 && rew && night && r1.pos === 6 && r1.round === 2 && r1.idx === 0 && r1.retry === 1 && !r1.over && r1.ps[0] === '第 6 位' && r1.ps[4] === '第 10 位' && fresh >= 1 && !r1.trail.includes('end') &&
+        const ok = stake && one && one.cid === r0.bossAce && r0.legacy && shelf1 && rew && night && r1.pos === 6 && r1.round === 2 && r1.idx === 0 && r1.retry === 1 && !r1.over && r1.ps[0] === '第 6 位' && r1.ps[4] === '第 10 位' && fresh >= 1 && !r1.trail.includes('end') &&
           trail1.slice(0, 3).join() === 'duel,scene,reward' && noGift;
         record(47, size, ok, `ace panel ${one && one.cid} (want ${r0.bossAce}, on shelf ${shelf1}) said「${one && one.said}」; reward ${rew}; night ${night}; ${JSON.stringify({ pos: r1.pos, round: r1.round, retry: r1.retry, ps: r1.ps })}; 新面孔 ${fresh}/3 (${r0.order.slice(0, 3)} → ${r1.order.slice(0, 3)}); 1st ${trail1.join('>')}; 2nd boss ${r2.tail.join('>')} panel ${r2.one} said ${JSON.stringify(r2.said)}`);
       } catch (e) { record(47, size, false, 'error ' + e.message); }
@@ -1218,16 +1240,21 @@ async function run() {
             runSeq: { 20261101: 1 }, best: { far: 12, checkpoints: [10], bestStreak: 11 }, shelf: { [known]: { at: '20261101#1', seen: true }, [C.aces.hall]: { at: '20261101#1', seen: true } }, relics: [],
             tutorialDone: true, prologueDone: true, lastAce: 'heresy', lastBargain: null };
           localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
-          return { known, boss1: C.aces[E.bossAceFor('20261101', 1, 'hall')], boss2: C.aces[E.bossAceFor('20261102', 2, 'hall')], bossRun: C.aces[r.bossAce], gifts: { hall: C.gifts.hall, pearl: C.gifts.pearl, heresy: C.gifts.heresy } };
+          return { known, boss1: C.aces[E.bossAceFor('20261101', 1, 'hall')], boss2: C.aces[E.bossAceFor('20261102', 2, 'hall')], bossRun: C.aces[r.bossAce], start: C.aces.heresy, aces: Object.assign({}, C.aces), gifts: { hall: C.gifts.hall, pearl: C.gifts.pearl, heresy: C.gifts.heresy } };
         });
         await openTitle(page, Q());
-        const m = await page.evaluate(() => { const S = window.__lab.save; return { v: S.v, shelf: S.shelf, run: !!S.run, runV: S.run && S.run.v, cont: !!document.querySelector('[data-a=cont]'), far: S.best.far, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).v }; });
+        const m = await page.evaluate(() => { const S = window.__lab.save, R = S.run; return { v: S.v, shelf: S.shelf, run: !!S.run, runV: S.run && S.run.v, cont: !!document.querySelector('[data-a=cont]'), far: S.best.far, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).v,
+          unlock: R && R.unlock ? R.unlock.tiers.slice().sort().join() : null, won: R && Array.isArray(R.acesWon) ? R.acesWon.length : -1 }; });
         const own = id => !!(m.shelf[id] && m.shelf[id].own);
         const ok = m.v === 6 && m.run && m.cont && m.far === 12 && !own(ref.known) && !!m.shelf[ref.known] &&
           ref.gifts.hall.every(id => own(id) && m.shelf[id].src === 'gift') && ref.gifts.heresy.every(id => own(id) && m.shelf[id].src === 'gift') &&
           ref.gifts.pearl.every(id => own(id) && m.shelf[id].src === 'gift') &&        // 一晚版（legacy）那趟也挑過王牌：送的四張一樣算擁有（只是沒有位數，不算打倒藏家）
           own(ref.boss1) && m.shelf[ref.boss1].src === 'boss' && own(ref.bossRun) && m.shelf[ref.bossRun].src === 'boss' &&
-          (ref.boss2 === ref.boss1 || ref.boss2 === ref.bossRun || !own(ref.boss2));
+          (ref.boss2 === ref.boss1 || ref.boss2 === ref.bossRun || ref.boss2 === ref.start || !own(ref.boss2)) &&
+          // 解鎖制（店主 11-16；BRIEF 第 6 條）：lastAce（heresy）那派預設那張補記成擁有（src 'start'，已經擁有的不改來源）；進行中的舊 run 補快照：
+          //   已解鎖＝lastAce ∪ 唱片櫃擁有頂點卡的派（藏家王牌 src 'boss'）、打倒過藏家（aceWon）＝那張算這一趟收的
+          own(ref.start) && (m.shelf[ref.start].src === 'start' || ref.start === ref.boss1 || ref.start === ref.bossRun) &&
+          m.unlock === ['heresy'].concat([ref.boss1, ref.bossRun].map(id => Object.keys(ref.aces).find(t => ref.aces[t] === id))).filter((t, i, a) => t && a.indexOf(t) === i).sort().join() && m.won === 1;
         // 審查 #2：一晚版（legacy）result 'clear'＝那晚打倒過藏家：那晚第一次認識、不是自己挑的那張王牌的頂點卡算擁有（src 'boss'）；'dead' 那晚不算
         await page.evaluate(() => {
           const C = window.DipLabContent;
@@ -1238,18 +1265,21 @@ async function run() {
         });
         await openTitle(page, Q());
         const lg = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, e = id => S.shelf[id] || null;
-          return { v: S.v, heresy: e(C.aces.heresy), pearl: e(C.aces.pearl), hall: e(C.aces.hall) }; });
-        const lgOk = lg.v === 6 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && !lg.hall.own;
-        record(53, size, ok && lgOk, `一晚版 clear 那晚的藏家王牌 ${JSON.stringify(lg.heresy)}、自己挑的 ${JSON.stringify(lg.pearl)}、dead 那晚 ${JSON.stringify(lg.hall)}；v${m.v}（localStorage 還是 v${m.stored}：下一次寫入才換）；認識那張 own=${own(ref.known)}；hall／heresy 送的 own；pearl（一晚版那趟）own=${ref.gifts.pearl.every(own)}；藏家王牌 ${ref.boss1} ${JSON.stringify(m.shelf[ref.boss1])}、這一趟打倒的 ${ref.bossRun} ${JSON.stringify(m.shelf[ref.bossRun])}、第 3 位就倒的那趟 ${ref.boss2} own=${own(ref.boss2)}；進行中的 run 留著 ${m.run}`);
+          return { v: S.v, heresy: e(C.aces.heresy), pearl: e(C.aces.pearl), hall: e(C.aces.hall),
+            unl: window.DipLabEngine.unlockedTiers(C, id => !!(S.shelf[id] && S.shelf[id].own), { start: S.lastAce }).slice().sort().join() }; });
+        // 解鎖制：lastAce（hall）那派預設那張補記成擁有（src 'start'）；自己挑過的 pearl（一晚版那趟）照舊只是認識（流派解鎖照 lastAce ∪ 擁有頂點卡的派：hall、heresy）
+        const lgOk = lg.v === 6 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && lg.hall.own === true && lg.hall.src === 'start' && lg.unl === 'hall,heresy';
+        record(53, size, ok && lgOk, `解鎖制：lastAce 那張 ${JSON.stringify(m.shelf[ref.start])}、舊 run 補快照 ${m.unlock}（收了 ${m.won} 張）、第二份存檔解鎖 ${lg.unl}；一晚版 clear 那晚的藏家王牌 ${JSON.stringify(lg.heresy)}、自己挑的 ${JSON.stringify(lg.pearl)}、dead 那晚 ${JSON.stringify(lg.hall)}；v${m.v}（localStorage 還是 v${m.stored}：下一次寫入才換）；認識那張 own=${own(ref.known)}；hall／heresy 送的 own；pearl（一晚版那趟）own=${ref.gifts.pearl.every(own)}；藏家王牌 ${ref.boss1} ${JSON.stringify(m.shelf[ref.boss1])}、這一趟打倒的 ${ref.bossRun} ${JSON.stringify(m.shelf[ref.bossRun])}、第 3 位就倒的那趟 ${ref.boss2} own=${own(ref.boss2)}；進行中的 run 留著 ${m.run}`);
       } catch (e) { record(53, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 
     // #54 換王牌（店主 11-13）：第 1 位開打前點老闆換；打過第 1 位就不行
+    //   解鎖制（店主 11-16）：只能換解鎖的派＝存檔先放好流亡（pearl）那張頂點卡（打倒藏家拿到的）；異端（heresy）還鎖著：面板上鎖、點了不選
     if (want(54)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
-        await seededContinue4(page, { ace: 'hall', idx: 0 }, Q(''));
+        await seededContinue4(page, { ace: 'hall', idx: 0, ownAces: ['pearl'] }, Q(''));
         await waitScreen(page, 'night');
         await watchSay(page);
         await page.evaluate(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); }))).observe(document.getElementById('app'), { childList: true }); });
@@ -1277,8 +1307,11 @@ async function run() {
         const pickUp = await page.waitForSelector('.lb-sheet.acepick .lb-ct', { timeout: 5000 }).then(() => true, () => false);
         await sleep(500);
         const pk = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.acepick'); const ok = s.querySelector('[data-a=ok]').getBoundingClientRect();
-          return { h3: (s.querySelector('.hd h3') || {}).textContent || '', sel: (s.querySelector('.lb-ct.sel') || {}).dataset.tier || null, n: s.querySelectorAll('.lb-ct').length, okIn: ok.bottom <= innerHeight && ok.top >= 0 }; });
+          return { h3: (s.querySelector('.hd h3') || {}).textContent || '', sel: (s.querySelector('.lb-ct.sel') || {}).dataset.tier || null, n: s.querySelectorAll('.lb-ct').length, okIn: ok.bottom <= innerHeight && ok.top >= 0,
+            locked: [...s.querySelectorAll('.lb-ct.locked')].map(x => x.dataset.tier).join() }; });
         const scP = await noScroll(page);
+        await jsClick(page, '.lb-sheet.acepick .lb-ct[data-tier="heresy"] .acex'); await sleep(150);      // 鎖住的：不選，說明那行寫怎麼解鎖
+        const lockTap = await page.evaluate(() => ({ sel: (document.querySelector('.lb-sheet.acepick .lb-ct.sel') || {}).dataset.tier || null, det: (document.querySelector('.lb-sheet.acepick .detail') || {}).textContent || '' }));
         await jsClick(page, '.lb-sheet.acepick .lb-ct[data-tier="pearl"] .acex'); await sleep(150);
         await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
         await sleep(900);
@@ -1287,7 +1320,8 @@ async function run() {
             own: C.gifts.pearl.every(id => S.shelf[id] && S.shelf[id].own && S.shelf[id].src === 'gift'), aceKnown: !!S.shelf[C.aces.pearl], bossOk: R.bossAce !== R.ace,
             stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).run.ace, album: C.cards[C.aces.pearl].album, said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), can: E.canSwitchAce(R, C),
             bagN: (document.querySelector('.lb-bagline [data-a=bag] b') || {}).textContent || '' }; });
-        const swOk = pickUp && pk.h3 === U.aceAsk && pk.sel === 'hall' && pk.n === 3 && pk.okIn && scrollOk(scP) && sw.scr === 'night' && sw.ace === 'pearl' &&
+        const lockOk = pk.locked === 'heresy' && lockTap.sel === 'hall' && lockTap.det.indexOf(U.aceLocked) >= 0;
+        const swOk = pickUp && pk.h3 === U.aceAsk && pk.sel === 'hall' && pk.n === 3 && pk.okIn && lockOk && scrollOk(scP) && sw.scr === 'night' && sw.ace === 'pearl' &&
           JSON.stringify(sw.bag) === JSON.stringify(sw.want.concat(before.bag.slice(4))) && JSON.stringify(sw.gifts) === JSON.stringify(sw.want) && sw.lastAce === 'pearl' && sw.taken === before.taken && sw.money === before.money &&
           sw.own && sw.aceKnown && sw.bossOk && sw.stored === 'pearl' && sw.said.includes(U.aceDone) && sw.toasts.includes(U.aceSwapped.replace('{album}', sw.album)) && sw.can && sw.bagN === String(sw.bag.length);   // 包包條只寫張數（「包包 <b>n</b> 張」，店主 11-16 包包不限張數）
         // 再換一次、選同一張（pearl）＝不換
@@ -1318,8 +1352,8 @@ async function run() {
         const lateOk = !midFight && !!hot2 && late.pos === 2 && !late.menu && !late.pick && late.sell && !late.can && late.eng === 'notNow' && late.ace === 'pearl' && !late.toasts.includes(U.aceHint);
         record(54, size, hintOk && menuOk && talkOk && swOk && sameOk && lateOk,
           `提示 ${hintOk} ${JSON.stringify(hint.toasts)}；點老闆 ${hot && hot.id} → 選單 ${menuOk} ${JSON.stringify(menu)} ${JSON.stringify(scM)}；聊聊 ${talkOk} ${JSON.stringify(talk.said)}；` +
-          `換王牌面板 ${pickUp}「${pk.h3}」sel ${pk.sel} ${JSON.stringify(scP)} → ${swOk} ${JSON.stringify({ ace: sw.ace, bag: sw.bag, lastAce: sw.lastAce, own: sw.own, said: sw.said, toasts: sw.toasts, bagN: sw.bagN })}；` +
-          `同一張 ${sameOk}；打過第 1 位 ${lateOk} ${JSON.stringify({ midFight, pos: late.pos, menu: late.menu, sell: late.sell, can: late.can, eng: late.eng })}`);
+          `換王牌面板 ${pickUp}「${pk.h3}」sel ${pk.sel} 鎖住 ${pk.locked}（點了 ${JSON.stringify(lockTap)}）${JSON.stringify(scP)} → ${swOk} ${JSON.stringify({ ace: sw.ace, bag: sw.bag, lastAce: sw.lastAce, own: sw.own, said: sw.said, toasts: sw.toasts, bagN: sw.bagN })}；` +
+          `同一張 ${sameOk}；打過第 1 位 ${lateOk} ${JSON.stringify({ midFight, pos: late.pos, menu: late.menu, sell: late.sell, said: late.said, can: late.can, eng: late.eng })}`);
       } catch (e) { record(54, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -1344,6 +1378,7 @@ async function run() {
           const ids = Object.keys(C.cards).filter(id => !C.cards[id].tier && !C.gifts.hall.includes(id) && id !== BR).sort((x, y) => E.peak(C.cards[y]) - E.peak(C.cards[x]) || E.power(C.cards[y]) - E.power(C.cards[x])).slice(0, 4);
           const s = window.__lab.save; s.prologueDone = true; s.tutorialDone = true; s.lastAce = 'hall';
           s.runs = [{ seedKey: 'e2e', runNo: 1, ace: 'hall', result: 'lose', reached: 3, bestStreak: 1, taken: 5, wins: 1 }];
+          window.__lab.own([C.aces.hall], 'start');          // 解鎖制：序章挑殿堂＝初始流派那張擁有（createRun 會記；不然重新整理會當舊存檔補記、出一次吐司）
           window.__lab.own(ids, 'run'); return ids; }, BR);
         await openTitle(page, Q('&fast=1'));
         const b0 = await page.evaluate(() => ({ bring: window.__lab.save.bring, toasts: window.__toasts.slice() }));

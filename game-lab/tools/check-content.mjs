@@ -319,6 +319,10 @@ function shapeTrial(C, E, ok) {
   if (CV.deck) ok(CV.deck.mainShare >= 0 && CV.deck.mainShare <= 1, 'trial.curve.deck.mainShare（客人主屬性那軸最高的牌至少幾成）0–1');
   if (CV.mercyP) ok(int(CV.mercyP.from, 1) && int(CV.mercyP.every, 1) && [CV.mercyP.p0, CV.mercyP.step, CV.mercyP.min].every(x => x >= 0 && x <= 1) && CV.mercyP.min <= CV.mercyP.p0,
     'trial.curve.mercyP：第 from 位起每手放水機率 p0、每 every 位 −step、最低 min（機率在 0–1、min ≤ p0）');
+  // 主線 11-16「放水前期保留」：前期加難後第 1–2 位 easy 也會唬（q.easy < 1）→ easy 也吃放水唬人（engine qNowOf 不看出招難度），
+  //   而且 easy／normal 那幾位每手都放水（mercyP 從 hard 之後才照機率）
+  if (CV.q) ok(CV.q.easy >= 1 || CV.mercyFeint > 0, 'trial.curve：easy 會唬人（q.easy < 1）就要有放水唬人（mercyFeint > 0；easy 也吃放水）');
+  if (CV.mercyP && CV.planner) ok(CV.mercyP.from > CV.planner.normalTo, 'trial.curve.mercyP.from 要在 planner.normalTo 之後（easy／normal 那幾位每手都放水，放水前期保留）');
   // 客人稱號（第 A 波 3；舊版 enemyForDepth）：8 個、每 2 位換一次，字照舊版
   ok(Array.isArray(T.titles) && T.titles.length >= 2 && T.titles.every(x => typeof x === 'string' && x && [...x].length <= 8) && new Set(T.titles).size === T.titles.length && int(T.titleEvery, 1),
     'trial.titles：稱號（字串、≤8 字、不重複）＋titleEvery（每幾位換一次）');
@@ -384,15 +388,16 @@ export function contentProblems(C, E) {
   }
 
   // 小提示、盤面字、店內字、經濟介面字
-  ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds');
+  ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds tip_lastplay');
   for (const k of Object.keys(C.coachTips || {})) ok(C.coachTipTags && C.coachTipTags[k], 'coachTipTags.' + k);
   // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'），
   //   再扣掉 picked／again／throwBtn／waiting／aceUsed（FIXLIST 11：沒有「丟！」列；用過的王牌不留在手牌裡）、pickHint（v5 手風琴：沒有整排攤開的「點一張專輯」框）
   const DT = ['hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
     'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn',   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
-    'readRight', 'seeThrough', 'seeThroughNoKey'];   // 第 A 波 4：讀對了就說出來（剋中前加「讀對了。」；看穿唬人＝「你看穿了！」）
-  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey）');
+    'readRight', 'seeThrough', 'seeThroughNoKey',   // 第 A 波 4：讀對了就說出來（剋中前加「讀對了。」；看穿唬人＝「你看穿了！」）
+    'lpAria'];   // lpAria：上一手小列的讀屏字（店主 11-16）
+  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey；上一手小列加 lpAria）');
   ok(C.duelText && ['seeThrough'].every(k => ['{key}', '{hint}', '{e}'].every(x => String(C.duelText[k]).includes(x))) && ['{hint}', '{e}'].every(x => String(C.duelText.seeThroughNoKey).includes(x)) && /^你看穿了/.test(C.duelText.seeThrough) && /讀對了/.test(C.duelText.readRight),
     'duelText.readRight「讀對了」、seeThrough／seeThroughNoKey「你看穿了！」＋{key}{hint}{e} 的佔位（第 A 波 4）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');

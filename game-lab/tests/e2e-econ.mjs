@@ -47,6 +47,7 @@
 //   31 「拿去櫃檯賣給老闆」的提示（第 A 波 5）：包包 9 張不出；12 張（兩位客人之間）→ 老闆頭上「！」＋櫃檯描框＋吐司 C.shopUi.bagSellHint、存檔 seen.counterSell；
 //      真點被描框的櫃檯 → 直接開「賣給老闆」分頁（審查 A-9）；舊存檔 seen.bagSell＝true（舊版提示出過）照樣出新的提示（審查 A-2）；
 //      再進來不出；只點開包包不算、一進來先自己打開「賣給老闆」＝看過、之後不出；第 1 位前換王牌的提示要出的那一次讓位（不疊、不記看過）；
+//      流派還鎖著（解鎖制 lockHint）：跟櫃檯提示同一次只出一則（櫃檯的出了，它不出、不記看過），再進來輪到它（不會被永遠擋掉；主線合併 11-16）；
 //      第一次來客的提示（C.shopLines.nightIntro）四句：第 1 句講對戰台、第 4 句講拿來櫃檯半價收；泡泡不蓋對戰台（審查 A-11）
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen, infoOpen, closeInfo } from './e2e-lib.mjs';
@@ -564,8 +565,9 @@ async function runSize(browser, w, h) {
 const IURL = /econ-harness/.test(URL0) ? new URL('../index.html', URL0).href : URL0.replace(/\?.*$/, '');
 const IQ = IURL + '?debug=1&seed=20261106';
 // 一份 v5 存檔（同 e2e-lib 的 seedRun）：第 1 位之前、特價箱已挑、錢 money
-async function seedNight(page, money, bagN, seen) {
-  await page.evaluate(([money, bagN, seen]) => {
+// ownAces（解鎖制，店主 11-16）：這幾派的預設頂點卡算擁有（＝那派解鎖，才有王牌可換）；有給就直接寫 v6（v5 的唱片櫃沒有「擁有」，遷移時重算）
+async function seedNight(page, money, bagN, seen, ownAces) {
+  await page.evaluate(([money, bagN, seen, ownAces]) => {
     const E = window.DipLabEngine, C = window.DipLabContent;
     const r = E.newRun(C, { seedKey: '20261106', runNo: 1, ace: 'pearl', prologue: false, relics: [] });
     r.tut = false;
@@ -578,8 +580,13 @@ async function seedNight(page, money, bagN, seen) {
     const s = { v: 5, seen: seen || { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
+    if (ownAces && ownAces.length) {
+      s.v = 6;
+      (C.gifts[r.ace] || []).forEach(id => { s.shelf[id] = Object.assign(s.shelf[id] || { at: r.seedKey + '#1', seen: false }, { own: true, src: 'gift' }); });
+      ownAces.forEach(t => { s.shelf[C.aces[t]] = { at: r.seedKey + '#1', seen: true, own: true, src: 'boss' }; });
+    }
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
-  }, [money, bagN || 0, seen || null]);
+  }, [money, bagN || 0, seen || null, ownAces || null]);
 }
 async function openTitleI(page) {
   await page.goto(IQ, { waitUntil: 'domcontentloaded' });
@@ -841,7 +848,8 @@ async function runIndex(browser, w, h) {
     await T(29, async () => {
       // 第 A 波 5：包包面板只看（沒有「賣」鈕、說明指去櫃檯）；點老闆 →「賣給老闆」→ 走到櫃檯、抽屜開在「賣給老闆」分頁 → 賣一張：錢、包包條、存檔跟著變
       page._errors.length = 0;
-      await seedNight(page, 3000, 24);
+      //   解鎖制（店主 11-16）：只解鎖一派時「換一張王牌」是按不下去的說明鈕（沒有 data-a）＝存檔先放好殿堂那張，選單才是三顆（主線合併 11-16）
+      await seedNight(page, 3000, 24, null, ['hall']);
       await openTitleI(page);
       await jsClick(page, '[data-a=cont]');
       if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客');
@@ -934,7 +942,8 @@ async function runIndex(browser, w, h) {
     // ---------------- 31：「拿去櫃檯賣給老闆」的提示（第 A 波 5：移出包包只走櫃檯；包包面板沒有賣鈕了）----------------
     await T(31, async () => {
       page._errors.length = 0;
-      const U = await page.evaluate(() => ({ hint: window.DipLabContent.shopUi.bagSellHint, intro: window.DipLabContent.shopLines.nightIntro.slice() }));
+      const U = await page.evaluate(() => ({ hint: window.DipLabContent.shopUi.bagSellHint, intro: window.DipLabContent.shopLines.nightIntro.slice(),
+        lock: window.DipLabContent.trial.ui.lockHint.split('{')[0] }));   // 流派還鎖著的吐司（解鎖制）開頭：seedNight 沒放別派＝只解鎖流亡，第 1 位開打前它也成立
       // 進來客：一到就裝探針（老闆頭上的「！」、櫃檯描框；提示 700 ms 後才出）
       const enter = async () => { await openTitleI(page); await jsClick(page, '[data-a=cont]'); if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客');
         await page.evaluate(() => { const st = window.__lab.stage; window.__spy = []; const oe = st.emote, oh = st.highlight;
@@ -955,7 +964,10 @@ async function runIndex(browser, w, h) {
       const bs = await spied();
       b.nud = bs.some(x => x[0] === 'emote' && x[1] === 'o' && x[2] === 'excl') && bs.some(x => x[0] === 'hl' && /counter/.test(x[1]));
       await sleep(300);
-      const b2 = await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return { seen: !!window.__lab.save.seen.counterSell, stored: !!(s && s.seen && s.seen.counterSell), ts: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent) }; });
+      const b2 = await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return { seen: !!window.__lab.save.seen.counterSell, stored: !!(s && s.seen && s.seen.counterSell), ts: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent),
+        lockSeen: !!window.__lab.save.seen.unlockHint }; });
+      // (b3) 主線合併 11-16：櫃檯提示跟「流派還鎖著」同一次只出一則——這一次櫃檯的出了，流派那則不出、也不記看過（下面 (c) 再進來輪到它）
+      b2.lock = b.ts.concat(b2.ts).some(t => t.startsWith(U.lock));
       // (b2) 真點被描框的櫃檯 → 直接開「賣給老闆」分頁（審查 A-9：原本開「配件」）
       await sleep(2600);
       await tapHot(page, 'counter');
@@ -963,7 +975,8 @@ async function runIndex(browser, w, h) {
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(400);
       // (c) 同一份存檔再進來：不再出
       await enter(); await sleep(1800);
-      const c = { ts: await toastsNow(), nud: (await spied()).some(x => x[0] === 'hl' && /counter/.test(x[1])) };
+      const c = { ts: await toastsNow(), nud: (await spied()).some(x => x[0] === 'hl' && /counter/.test(x[1])), lockSeen: await page.evaluate(() => !!window.__lab.save.seen.unlockHint) };
+      c.lock = c.ts.some(t => t.startsWith(U.lock));                 // 櫃檯提示看過了 → 這次輪到流派那則（不會被櫃檯提示永遠擋掉）
       // (d) 包包 12 張、還沒提示過、一進來就自己去櫃檯打開「賣給老闆」→ 算看過（存檔記下），再進來不出；只點開包包不算
       await seedNight(page, 3000, 12, SEEN); await enter();
       await jsClick(page, '.lb-bagline [data-a=bag]'); await page.waitForSelector('.lb-sheet.float.bag', { timeout: 5000 }).catch(() => {});
@@ -976,7 +989,8 @@ async function runIndex(browser, w, h) {
       await enter(); await sleep(1800);
       const d = { seen: dSeen, ts: await toastsNow() };
       // (f) 第 1 位開打前、換王牌的提示還沒出過：那一次只出換王牌的（不疊），包包的不出、也不記看過
-      await seedNight(page, 3000, 12, { night: true }); await enter(); await sleep(1800);
+      //   解鎖制（店主 11-16）：有別派可換才出換王牌的提示＝存檔先放好殿堂那張
+      await seedNight(page, 3000, 12, { night: true }, ['hall']); await enter(); await sleep(1800);
       const f = { ts: await toastsNow(), seen: await page.evaluate(() => !!window.__lab.save.seen.counterSell), ace: await page.evaluate(() => !!window.__lab.save.seen.aceSwap) };
       // (e) 第一次來客的提示（nightIntro）：四句，第 4 句講拿去櫃檯賣給老闆
       await seedNight(page, 3000, 8, {}); await enter();
@@ -991,14 +1005,14 @@ async function runIndex(browser, w, h) {
       }
       const errs = page._errors.slice();
       const okA = !a.ts.includes(U.hint) && !a.seen;
-      const okB = b.nud && b.at >= 300 && (b.ts.includes(U.hint) || b2.ts.includes(U.hint)) && b2.seen && b2.stored && /櫃檯/.test(U.hint) && /賣給老闆/.test(U.hint) && bTab === 'sell';
-      const okC = !c.ts.includes(U.hint) && !c.nud;
+      const okB = b.nud && b.at >= 300 && (b.ts.includes(U.hint) || b2.ts.includes(U.hint)) && b2.seen && b2.stored && /櫃檯/.test(U.hint) && /賣給老闆/.test(U.hint) && bTab === 'sell' && !b2.lock && !b2.lockSeen;
+      const okC = !c.ts.includes(U.hint) && !c.nud && c.lock && c.lockSeen;
       const okD = d.seen && !d.ts.includes(U.hint);
       const okF = f.ace && !f.seen && !f.ts.includes(U.hint);
       const okE = on && U.intro.length === 4 && lines.length === 4 && lines.every((t, k) => t === U.intro[k]) && /對戰台/.test(lines[0]) && /櫃檯/.test(lines[3]) && /半價/.test(lines[3]) && cover.every(x => x === false);
       record(31, size, okA && okB && okC && okD && okE && okF && !errs.length,
         `包包 9 張：不提示 ${okA}；包包 12 張（舊存檔 seen.bagSell）：${b.at} ms 老闆「！」＋櫃檯描框 ${b.nud}、吐司「${U.hint}」${b.ts.includes(U.hint) || b2.ts.includes(U.hint)}、存檔記下 ${b2.stored}、點櫃檯開 ${bTab}；` +
-        `再進來不出 ${okC}；只點開包包不算、先自己打開「賣給老闆」＝看過 ${d.seen}、之後不出 ${!d.ts.includes(U.hint)}；換王牌的提示那一次讓位 ${okF}；第一次來客的提示 ${lines.length} 句、第 1 句「${lines[0] || ''}」第 4 句「${lines[3] || ''}」、蓋到對戰台 ${JSON.stringify(cover)} ${okE}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 2).join(' / ') : ''}`);
+        `流派還鎖著那則：同一次不疊 ${!b2.lock && !b2.lockSeen}、再進來輪到它 ${c.lock && c.lockSeen}；再進來不出 ${okC}；只點開包包不算、先自己打開「賣給老闆」＝看過 ${d.seen}、之後不出 ${!d.ts.includes(U.hint)}；換王牌的提示那一次讓位 ${okF}；第一次來客的提示 ${lines.length} 句、第 1 句「${lines[0] || ''}」第 4 句「${lines[3] || ''}」、蓋到對戰台 ${JSON.stringify(cover)} ${okE}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 2).join(' / ') : ''}`);
     });
     return true;
   } finally {

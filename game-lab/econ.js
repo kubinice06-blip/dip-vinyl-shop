@@ -2,7 +2,7 @@
  *
  * window.DipLabEcon = {
  *   configure({ content, engine, stage, run:()=>save.run, choose:(ch)=>res, info:(card)=>Promise, sfx, toast, app:()=>#app,
- *               coverBase?, relicIcon?(id,size), makeRoom?([x,y]), onSellOpen?() })   // onSellOpen：櫃檯「賣給老闆」分頁打開了（ui.js 記 save.seen.bagSell）   // makeRoom：你要走去站的位置旁邊有人時，ui.js 請他讓開   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
+ *               coverBase?, relicIcon?(id,size), makeRoom?([x,y]), onSellOpen?() })   // onSellOpen：櫃檯「賣給老闆」分頁打開了（ui.js 記 save.seen.counterSell）   // makeRoom：你要走去站的位置旁邊有人時，ui.js 請他讓開   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
  *   openBin(key)      → Promise<void>     // 走過去翻 → 抽屜（一張大封面翻著看）→ 關掉才 resolve；key==='sale' 轉 openBargain
  *                                         //   標題＝名牌英文＋中文（C.bins[key].label／zh；FEATURE 金色名牌）；每張標稀有度（C.rarityZh）與價（engine.priceOf）
  *   openBargain()     → Promise<void>     // 之後買特價箱（每張 $100／200／300、最多三張，付挑的那幾張的總和）；還沒挑過開局三張（canBargainPick）→ 轉 bargainPick

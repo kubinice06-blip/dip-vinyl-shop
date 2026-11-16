@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 590（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 617（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -150,6 +150,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・第一次剋不動（你或他） | 差 2 星以上，剋不動。 | 本規格新寫 | `coachTips.tip_block` |
 | 老闆・第一次丟王牌 | 王牌 7 星，一場用一次。 | 本規格新寫 | `coachTips.tip_ace` |
 | 老闆・第一次打到第 6 手 | 六手沒分勝負，比聲望條剩幾成。 | 本規格新寫 | `coachTips.tip_rounds` |
+| 老闆・第一次出現上一手小列（第 2 手） | 上一手留在上面，點封面看唱片資訊。 | 本規格新寫 | `coachTips.tip_lastplay` |
 
 ## 規則卡（「?」小抄）
 
@@ -223,6 +224,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・readRight | 讀對了。 | 本規格新寫 | `duelText.readRight` |
 | （畫面字）・seeThrough | 你看穿了！『{key}』是{hint}，他出的是{e}。 | 本規格新寫 | `duelText.seeThrough` |
 | （畫面字）・seeThroughNoKey | 你看穿了！提示是{hint}，他出的是{e}。 | 本規格新寫 | `duelText.seeThroughNoKey` |
+| （畫面字）・lpAria | 上一手{who}丟的：{t}，點一下看唱片資訊 | 本規格新寫 | `duelText.lpAria` |
 
 ## 發燒配件（點圖示看的說明／生效那手結果行補的一句）
 
@@ -349,6 +351,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・aceSame | 那就照舊。 | 本規格新寫 | `shopLines.aceSame` |
 | 老闆・aceLater | 想換王牌？下一趟開門前再說。 | 本規格新寫 | `shopLines.aceLater` |
 | 老闆・aceKeep | 好，就帶這張。 | 本規格新寫 | `shopLines.aceKeep` |
+| 老闆・aceLockedSay | 那張還沒到手。打倒傳說藏家再說。 | 本規格新寫 | `shopLines.aceLockedSay` |
 | 老闆・closeWin | 好險，差一點就輸了。 | 本規格新寫 | `shopLines.closeWin` |
 | 老闆・reclaimGift | 送你的，我先收回來。 | 本規格新寫 | `shopLines.reclaimGift` |
 | 老闆・reclaimSeed | 你自己的那張？我先替你收著。 | 本規格新寫 | `shopLines.reclaimSeed` |
@@ -528,6 +531,22 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・toRecord | 再贏 {n} 位破紀錄 | 本規格新寫 | `trial.ui.toRecord` |
 | （畫面字）・streak | 連勝 +1（{n} 連勝） | 本規格新寫 | `trial.ui.streak` |
 | （畫面字）・closeWin | 險勝！ | 本規格新寫 | `trial.ui.closeWin` |
+| （畫面字）・aceLocked | 打倒傳說藏家解鎖 | 本規格新寫 | `trial.ui.aceLocked` |
+| （畫面字）・aceLockedNote | {title}（{axis}）還鎖著，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.aceLockedNote` |
+| （畫面字）・aceSwapNone | 其他流派還鎖著 | 本規格新寫 | `trial.ui.aceSwapNone` |
+| （畫面字）・firstPick | 「先挑一派。其他流派，打倒傳說藏家再解鎖。」 | 本規格新寫 | `trial.ui.firstPick` |
+| （畫面字）・firstPickNote | 挑了就是初始流派。其他兩派，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.firstPickNote` |
+| （畫面字）・lockHint | 其他流派還鎖著：打倒傳說藏家，解鎖{title}（{axis}）。 | 本規格新寫 | `trial.ui.lockHint` |
+| （畫面字）・unlocked | 解鎖了{title}派（{axis}） | 本規格新寫 | `trial.ui.unlocked` |
+| （畫面字）・unlockedSub | 下一趟開局，點老闆就能換。 | 本規格新寫 | `trial.ui.unlockedSub` |
+| （畫面字）・newOwn | 新收藏 | 本規格新寫 | `trial.ui.newOwn` |
+| （畫面字）・unlockMigrated | 流派改成打倒傳說藏家才解鎖。你現在這派照舊。 | 本規格新寫 | `trial.ui.unlockMigrated` |
+| （畫面字）・unlockProg | 流派 {n}／3 | 本規格新寫 | `trial.ui.unlockProg` |
+| （畫面字）・unlockNext | 下一派：{title}（{axis}） | 本規格新寫 | `trial.ui.unlockNext` |
+| （畫面字）・apexProg | 頂點卡 {n}／{total} | 本規格新寫 | `trial.ui.apexProg` |
+| （畫面字）・bossCarry | 帶的王牌《{album}》 | 本規格新寫 | `trial.ui.bossCarry` |
+| （畫面字）・bossUnlock | 打倒他，解鎖{title}派（{axis}） | 本規格新寫 | `trial.ui.bossUnlock` |
+| （畫面字）・bossCollect | 打倒他，這張就收進唱片櫃 | 本規格新寫 | `trial.ui.bossCollect` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
 
@@ -773,6 +792,14 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・skip | 跳過序章，直接開打 ▸ | 本規格新寫 | `apexTrial.ui.skip` |
 | （畫面字）・skipSub | 輔助卡試做・挑一張王牌就開始 | 本規格新寫 | `apexTrial.ui.skipSub` |
 | （畫面字）・skipAgain | 再按一次：放棄這一趟、直接開打 | 本規格新寫 | `apexTrial.ui.skipAgain` |
+| （畫面字）・skipSubFirst | 輔助卡試做・先挑你的初始流派 | 本規格新寫 | `apexTrial.ui.skipSubFirst` |
+| （畫面字）・got | 已收 {n}／{total} | 本規格新寫 | `apexTrial.ui.got` |
+| （畫面字）・notYet | 還沒收到 | 本規格新寫 | `apexTrial.ui.notYet` |
+| （畫面字）・lockCard | 打倒傳說藏家收集 | 本規格新寫 | `apexTrial.ui.lockCard` |
+| （畫面字）・lockNote | 有鎖的還沒收到：打倒傳說藏家收集 | 本規格新寫 | `apexTrial.ui.lockNote` |
+| （畫面字）・pickKeep | 還是帶《{album}》 | 本規格新寫 | `apexTrial.ui.pickKeep` |
+| （畫面字）・gotNew | 收進唱片櫃，下一趟開局可以換 | 本規格新寫 | `apexTrial.ui.gotNew` |
+| （畫面字）・noneMore | 還沒收到別張王牌 | 本規格新寫 | `apexTrial.ui.noneMore` |
 
 ## 頂點卡試做・一次性老闆小提示（第一次看到能力框／第一次「沒作用」）
 
