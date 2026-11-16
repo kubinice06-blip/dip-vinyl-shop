@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------
 // Constants  ATTRS ['c','o','h'] · ZH {c:'經典',o:'冷門',h:'硬蕊'} · ZH1 {c:'經',o:'冷',h:'硬'} · TIERS · TIER_AXIS · COLOR_RELIC
 //            BEATS {o:'c',c:'h',h:'o'} (x beats BEATS[x]) · COUNTER_OF {c:'o',o:'h',h:'c'} (the attr that beats x) · beats(x,y)
-//            CFG {playerHp 12, handSize 5, enemyHand 3, bagMax 8, retries 1, relicMax 3, threshold 2, maxRounds 6, aceStar 7,
+//            CFG {playerHp 12, handSize 5, enemyHand 3, bagMax Infinity（包包不限，店主 11-16；--set bagMax=8＝舊規則對照）, retries 1, relicMax 3, threshold 2, maxRounds 6, aceStar 7,
 //                 colorRelicBonus 1, dustcoverCut 1, cleanerTie 1, boostStar 1, bargainPick 3, mercy true}  (sim --set k=v 改這裡)
 //            手牌 5 張＋王牌（FIXLIST 11：點牌才跳出三個屬性、平時疊成一排錯開；原版起手也是 5）；他的暗手維持 3 張。
 //            你 12 聲望（無限試煉 §0；整趟帶著走，＝content.trial.youHp）；客人 12、藏家 14（content.trial.guestHp），一晚版的 9 對 20–28 不用了
@@ -48,12 +48,20 @@
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept}
-//            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
+//            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）＋ level {pick:'atk'|'def'|'hp'}
 //              賣回：buy {sellId}／buyBargain {sellIds} 只收包包裡、不是老闆送的（isGift）、不是種子（isSeed）的卡；送的 → error 'giftNoSell'、種子 → 'seedNoSell'
 //              buyBargain {ids:[1–3], sellIds?}：每張照特價（bargainPriceOf）分開算、一次付總和；effects 每張 {gainCard, spend: 那張的價}
+//            包包不限張數（店主 11-16「手牌不要只限八張，可以無限多直到結束才重置」；CFG.bagMax＝Infinity，一趟結束 newRun 才重置，不跨趟）：
+//              take 不用 dropId（給了、在包包裡就照拿掉；不在 → 'badDrop'）；buy 不用 sellId、buyBargain 不用 sellIds（給了照賣，buyBargain 給幾張都行）；
+//              bargainPick、收音機不會 'bagFull'。新動作 sell {cardId}：canShop 時單獨賣回一張（半價；送的 'giftNoSell'、種子 'seedNoSell'）。
+//              賣完包包不能少於手牌張數（CFG.handSize 5）→ 'bagMin'（sell、buyBargain 多賣）。bagCap()（Infinity｜n）· bagLimited() · bagFull(run)
+//              有上限時（sim --set bagMax=8）take／buy／buyBargain／runPolicy／shopPolicy 走舊規則那條路（逐字照舊；sell 照樣可用）
+//            策略判斷「值不值得放進包包」：bagScore(content, ids)＝手牌 5 張每軸最大星的期望值三軸加總（精確解）；bagGain(run, content, id, drop?)＝收這張漲多少（負＝稀釋）
+//              runPolicy 收獎勵：挑漲最多的那張，漲不到 0.005 就不拿；shopPolicy 'smart'：舊挑法＋要漲才買、不用賣，買完 thinPolicy 瘦身
+//              thinPolicy(run, content) -> [{type:'sell', cardId}]：賣掉每一軸都排不進包包前 5 名的牌（deadWeight；不是送的、不是種子；包包剩 5 張停）
 //            canShop(run) · canBargainPick(run)
 //            收音機轉頻率（v5 第六項第二期，店主 11-15）：choose {type:'radio', cell}（cell＝八格之一，content.tunes.order）：canShop 才能轉（兩位客人之間）、每輪一次（第二次 → 'used'）；
 //              抽卡池 radioPool(run, content, cell)＝trialPool（非頂點）∩ tune===cell ∩ SHELF_RARITY（普通／稀有／獨特）− 包包 − 這一輪各箱子已上架的 − 特價箱（池子 9 張與現在擺的）；
@@ -69,7 +77,7 @@
 //            這一趟出現過的：run.entered＝進過包包的（獎勵、買的、特價箱的；老闆送的、種子不算）、run.drops＝客人掉落（打贏客人的獎勵候選，沒拿的也算；序章男子掉的 Eminem 也算：它在他牌組裡、他一定打出來，店主 11-13）
 //            keepCandidates(run, content, owned) -> [ids]（一趟留一張的候選：entered＋drops，已經擁有的、頂點卡不列）
 //            keepOne(run, content, id, owned) -> {ok, error}（只在這一趟結束後、只能一次；run.kept＝那張）
-//            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart') -> [ch] · bargainPolicy(run, content) -> ch
+//            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart', {thin?}) -> [ch] · thinPolicy(run, content) -> [ch] · bargainPolicy(run, content) -> ch
 // Ace        換王牌（店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說＝換流派。流派目前只決定王牌那張、老闆送的四張、教學手牌，沒有被動規則）
 //            canSwitchAce(run, content)：這一趟第 1 位還沒開打（序章那一趟＝序章打完、第 1 位開打前）；run.fought＝這一趟跟客人開打過（startFight 記，序章不算；
 //              舊的 run 沒有這欄：第 1 輪的說情用掉了＝打過第 1 位）
@@ -98,18 +106,18 @@
 //            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
 //            rarityScore(card) ＝ c＋h＋(o===5 ? 1 : 0) · rarity(card) → 'common'≤5｜'rare'6｜'uncommon'7｜'epic'8｜'legendary'≥9｜'apex'（tier hall／pearl／heresy）
 //              RARITY（由低到高）· FEATURE_RARITY ['epic','legendary'] · SHELF_RARITY ['common','rare','uncommon'] · SHOP_ORDER（上貨順序）
-//            priceOf(content, card|id)：特價箱的卡＝bargainPriceOf；其他＝economy.price[rarity]（800／1000／1200／3000／4000；頂點 8000 先備好、不上架）
+//            topAxes(card) 峰值那幾軸（並列都算）· bargainLane(card) 特價箱的色（峰值那軸，並列取後面那軸）· priceOf(content, card|id)：特價箱的卡（bargain.pool＋retired 換下的舊特價箱）＝bargainPriceOf；其他＝economy.price[rarity]（800／1000／1200／3000／4000；頂點 8000 先備好、不上架）
 //            bargainPriceOf(content, card|id)：economy.bargain[最高星 1–3] ＝ 100／200／300 · relicPrice(content, id)：relics[id].price ?? economy.relicPrice（3000）
 //            sellValue(content, card|relicId) ＝ floor(價 × sellRate 0.5) · moneyText(n) ＝ 千分位字串（1200 → '1,200'；C.shopUi 的字串自己帶 '$'）
 //            isGift(run, content, id)：老闆送的（這一趟王牌那組的四張＋王牌本身）→ 不能賣回（FIXLIST 11 追加）；buy 的 sellId、buyBargain 的 sellIds 有它 → 'giftNoSell'。
-//              客人丟的、買的、特價箱的照舊半價。拿獎勵時包包滿要「拿掉一張」（take 的 dropId）不是賣、不收錢，照舊可以選
+//              客人丟的、買的、特價箱的照舊半價。take 的 dropId（拿掉一張）不是賣、不收錢；包包不限之後不用給（有上限、包包滿才要）
 //            run.shop（restock：newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng）：
 //              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
 //                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues
 //                                            //   new picks 各 4–6 張（economy.stock；只抽普通／稀有／獨特）；照 SHOP_ORDER 上貨、全店同一輪不重複；
 //                                            //   不上你的王牌、包包裡的、特價箱的、頂點卡；display:true 的區（舊牆面）不賣
 //                relics: [ids],              // 櫃檯 2–3 件（economy.relicStock；relicShop.pool 扣掉身上的）
-//                bargain: [ids],             // 特價箱 6 張＝經／冷／硬各 2（bargain.pool 9 張洗牌）
+//                bargain: [ids],             // 特價箱 6 張＝經／冷／硬各 2（bargain.pool 12 張洗牌；「色」＝bargainLane：峰值那軸、並列取後面那軸 硬→冷→經）
 //                bargainPicked: boolean,     // 開局挑三張（免費）做過沒；只在第 1 位之前（canBargainPick：run.pos === 1）
 //                radio: {cell, id} | null,   // 這一輪收音機轉到的（每輪開頭 restock 清成 null；舊存檔沒有這欄＝這輪還沒轉）
 //                firstGuestInside: boolean } // UI 用
@@ -137,9 +145,11 @@
 
   const CFG = {
     playerHp: 12,        // 無限試煉 §0：你 12 聲望（＝content.trial.youHp，check-content 對）；規則卡頁尾「你 12 聲望」照這個寫
-    handSize: 5,         // FIXLIST 11：你的手牌 5 張（＋王牌格）；包包 8 張、打出一張補一張、牌堆抽完把丟過的洗回
+    handSize: 5,         // FIXLIST 11：你的手牌 5 張（＋王牌格）；從包包抽、打出一張補一張、牌堆抽完把丟過的洗回；也是賣回之後包包最少要留的張數
     enemyHand: 3,        // 他的暗手維持 3 張（H5-A：他 3／4／5 張對通關率影響 ≤2 點，5 張反而讓 S2／S6 餘裕少 1–2 點）
-    bagMax: 8, retries: 1, relicMax: 3,
+    // 包包上限：店主 11-16「手牌不要只限八張，可以無限多直到結束才重置」→ Infinity＝不限（一趟結束 newRun 才重置）。
+    //   sim --set bagMax=8 回到舊規則對照（choose／runPolicy／shopPolicy 走舊的那條路，一字不差）；null／0 也當不限（bagCap）
+    bagMax: Infinity, retries: 1, relicMax: 3,
     threshold: 2,        // D §5 規則 4：被剋方星數 − 剋方星數 ≥ 2 → 剋不動，改比星
     maxRounds: 6,        // D §5 規則 6：第 6 手結算完還沒人倒 → 比聲望條剩幾成（playerAhead），一樣算你贏
     aceStar: 7,
@@ -206,6 +216,11 @@
   // ---------- 卡片 ----------
   function topAttr(card) { let b = 'c'; for (const a of ['o', 'h']) if (star(card, a) > star(card, b)) b = a; return b; }
   function peak(card) { return Math.max(star(card, 'c'), star(card, 'o'), star(card, 'h')); }
+  // 峰值那幾軸（並列都算；＝ui.js topAxes）
+  function topAxes(card) { const m = peak(card); return ATTRS.filter(a => star(card, a) === m); }
+  // 特價箱的「色」（店主 11-16 換牌：最高 ≤3、加總 ≤5 的牌照 topAttr 分幾乎全是經典，冷、硬靠 2/2/1、2/1/2 這種並列補）：
+  //   峰值那軸；並列時取後面那軸（硬 → 冷 → 經；經典的牌最多）。沒有並列的＝topAttr（舊 9 張全是這種）
+  function bargainLane(card) { const t = topAxes(card); return t[t.length - 1] || 'c'; }
   // 牌單主屬性：每張卡的峰值軸算一票（並列的每一軸都算一票）；票數最多的那軸，並列照 taste
   function deckMain(cards, taste) {
     const t = tasteStr(taste), votes = { c: 0, o: 0, h: 0 };
@@ -971,7 +986,7 @@
     const EC = econ(content), st = { rng: fnv1a32(run.seedKey + '#' + run.runNo + '#shop#' + (run.round || 1)) || 1 };
     const SH = run.shop || (run.shop = { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false, radio: null });
     SH.radio = null;                                   // 收音機每輪一次：新一輪重來（電台那張跟特價箱一起換掉）
-    const taken = new Set([content.aces && content.aces[run.ace], ...run.bag, ...(((content.bargain || {}).pool) || [])].filter(Boolean));
+    const taken = new Set([content.aces && content.aces[run.ace], ...run.bag, ...bargainIds(content)].filter(Boolean));
     const span = (lohi, fallback) => { const lo = (lohi && lohi[0]) | 0 || fallback[0], hi = (lohi && lohi[1]) | 0 || fallback[1]; return lo + Math.floor(rng(st) * (Math.max(hi, lo) - lo + 1)); };
     const B = content.bins || {};
     const keys = SHOP_ORDER.filter(k => B[k]).concat(Object.keys(B).filter(k => !SHOP_ORDER.includes(k)).sort());
@@ -990,8 +1005,9 @@
     SH.relics = rp.slice(0, Math.min(span(EC.relicStock, ECON.relicStock), rp.length));
     const bp = (((content.bargain || {}).pool) || []).filter(id => cardOf(content, id) && !run.bag.includes(id));
     shuffle(bp, st);
+    // 每色 2 張；「色」＝bargainLane（峰值那軸、並列取後面那軸；店主 11-16 換牌）。舊 9 張沒有並列 → 跟舊的 topAttr 分堆逐張相同
     const by = { c: [], o: [], h: [] };
-    for (const id of bp) by[topAttr(cardOf(content, id))].push(id);
+    for (const id of bp) by[bargainLane(cardOf(content, id))].push(id);
     const out = [];
     for (let k = 0; k < 2; k++) for (const a of ATTRS) if (by[a][k]) out.push(by[a][k]);
     SH.bargain = out;
@@ -1019,6 +1035,19 @@
     const radioId = SH.radio && SH.radio.id;            // 收音機這輪抽到、擺在特價箱的那張：補的區不再上它
     for (const k of keys) bins[k] = miss.includes(k) ? (fresh[k] || []).filter(id => !have.has(id) && !bag.includes(id) && id !== radioId) : SH.bins[k];
     SH.bins = bins;
+    return true;
+  }
+  // 舊存檔停在「開局特價箱還沒挑」（canBargainPick：序章 O13 之前、或再挑戰一趟特價區挑到一半），箱子擺的還是換下來的舊特價箱
+  //   （content.bargain.retired，或任何已經不在 pool 的卡；店主 11-16 換牌：每張最高星 ≤3、三軸加起來 ≤5）→ 載入時（ui.js loadSave，fixBins 之後）
+  //   用現在的池子重擺：＝這一輪 restock 本來就會擺的那 6 張（同一個種子，拿一份暫時的 run 跑一次；不碰 run.rng），扣掉包包裡的 → 同一份存檔每次載入一樣。
+  //   只管還沒挑的開局三張（免費）；挑過了（之後每輪要買）舊牌照特價賣到這一輪結束，下一輪 restock 自然換新。回傳 true＝有改
+  function fixBargain(run, content) {
+    const SH = run && run.shop;
+    if (!SH || !Array.isArray(SH.bargain) || !Array.isArray(run.bag) || !canBargainPick(run)) return false;
+    const pool = ((content && content.bargain) || {}).pool || [];
+    if (SH.bargain.every(id => pool.includes(id))) return false;
+    const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: run.bag.slice(), relics: (run.relics || []).slice() };
+    SH.bargain = restock(tmp, content).bargain.slice();
     return true;
   }
   function current(run, content) {
@@ -1199,7 +1228,9 @@
     return GENRE_BIN[((card.genres || [])[0]) || ''] || null;
   }
   const cardArg = (content, card) => typeof card === 'string' ? cardOf(content, card) : card;
-  const inBargain = (content, id) => ((((content && content.bargain) || {}).pool) || []).includes(id);
+  // 特價箱的卡＝content.bargain.pool（現在擺的）＋retired（店主 11-16 換下的舊特價箱：舊存檔的包包、這一輪特價箱可能還有）。兩種都照特價算價、都不上架、收音機都不抽
+  const bargainIds = content => { const B = (content && content.bargain) || {}; return [].concat(B.pool || [], B.retired || []); };
+  const inBargain = (content, id) => bargainIds(content).includes(id);
   // 特價箱每張的價：照最高星 1／2／3 → 100／200／300（序章那次挑三張免費）；峰值 >3 照 3 算
   function bargainPriceOf(content, card) {
     const c = cardArg(content, card);
@@ -1228,7 +1259,7 @@
   function radioPool(run, content, cell) {
     if (!run || !tuneCells(content).includes(cell)) return [];
     const SH = shopOf(run), bag = new Set(run.bag || []);
-    const shelf = new Set([].concat(...Object.values(SH.bins || {}).filter(Array.isArray), SH.bargain || [], ((content.bargain || {}).pool) || []));
+    const shelf = new Set([].concat(...Object.values(SH.bins || {}).filter(Array.isArray), SH.bargain || [], bargainIds(content)));
     return trialPool(content).filter(c => c.tune === cell && SHELF_RARITY.includes(rarity(c)) && !bag.has(c.id) && !shelf.has(c.id)).map(c => c.id);
   }
   function canRadio(run) { return canShop(run) && !shopOf(run).radio; }
@@ -1287,6 +1318,13 @@
     return (v < 0 ? '-' : '') + s;
   }
   const shopOf = run => run.shop || { bins: {}, relics: [], bargain: [], bargainPicked: false, radio: null };
+  // 包包上限（店主 11-16：不限張數，一趟結束 newRun 才重置）。bagCap()＝CFG.bagMax（有限正數）或 Infinity；bagLimited()＝有上限（sim --set bagMax=8 對照）；
+  //   bagFull(run)＝有上限而且滿了（不限時永遠 false）。有上限時 choose／runPolicy／shopPolicy 走舊規則那條路（逐字照舊）
+  const bagCap = () => (typeof CFG.bagMax === 'number' && CFG.bagMax > 0) ? CFG.bagMax : Infinity;
+  const bagLimited = () => Number.isFinite(bagCap());
+  const bagFull = run => !!run && Array.isArray(run.bag) && run.bag.length >= bagCap();
+  // 賣回之後包包最少留幾張：手牌 5 張要補得滿（CFG.handSize）；本來就不到的（理論上不會：開局 7 張）不能再少
+  const bagFloor = run => Math.min(CFG.handSize, (run.bag || []).length);
   function canShop(run) { return !!run && !run.over && !run.pending && !run.duel && run.prologue !== 'pending' && !!shopOf(run).bargainPicked; }
   // 特價箱免費挑三張：只在第 1 位之前（裁定 4；之後每輪補貨、要買）
   function canBargainPick(run) { return !!run && !shopOf(run).bargainPicked && !run.duel && !run.over && run.pos === 1; }
@@ -1346,10 +1384,13 @@
         if (!rew || rew.cardDone) return fail('noCardOffer');
         if (!rew.cards.includes(ch.cardId)) return fail('notOffered');
         if (run.bag.includes(ch.cardId)) return fail('owned');
-        if (run.bag.length >= CFG.bagMax) {
-          if (!ch.dropId || !run.bag.includes(ch.dropId)) return fail('bagFull');
-          run.bag.splice(run.bag.indexOf(ch.dropId), 1); effects.push({ loseCard: ch.dropId });
-          if (Array.isArray(run.seeds) && run.seeds.includes(ch.dropId)) run.seeds.splice(run.seeds.indexOf(ch.dropId), 1);   // 拿掉的種子就不是種子了
+        // 有上限（--set bagMax=8）：照舊，滿了才要 dropId、沒滿給了也不理。不限（預設）：不用 dropId；給了（而且在包包裡）就照拿掉，不在包包裡 → 'badDrop'
+        const drop = bagLimited() ? (bagFull(run) ? ch.dropId : null) : (ch.dropId != null ? ch.dropId : null);
+        if (bagLimited() && bagFull(run) && (!drop || !run.bag.includes(drop))) return fail('bagFull');
+        if (drop != null && !run.bag.includes(drop)) return fail('badDrop');
+        if (drop != null) {
+          run.bag.splice(run.bag.indexOf(drop), 1); effects.push({ loseCard: drop });
+          if (Array.isArray(run.seeds) && run.seeds.includes(drop)) run.seeds.splice(run.seeds.indexOf(drop), 1);   // 拿掉的種子就不是種子了
         }
         run.bag.push(ch.cardId); S.taken.push(ch.cardId); run.taken++; enter(ch.cardId); effects.push({ gainCard: ch.cardId });
         rew.cardDone = true; if (rew.need === 'cardOrRelic') rew.relicDone = true;
@@ -1409,7 +1450,7 @@
         if (!Array.isArray(ids) || ids.length !== CFG.bargainPick || new Set(ids).size !== ids.length) return fail('badCount');
         if (!ids.every(id => SH.bargain.includes(id) && cardOf(content, id))) return fail('notInStock');
         if (ids.some(id => run.bag.includes(id))) return fail('owned');
-        if (run.bag.length + ids.length > CFG.bagMax) return fail('bagFull');
+        if (run.bag.length + ids.length > bagCap()) return fail('bagFull');
         for (const id of ids) { run.bag.push(id); SH.bargain.splice(SH.bargain.indexOf(id), 1); run.taken++; enter(id); effects.push({ gainCard: id }); }
         SH.bargainPicked = true;
         return { ok: true, effects };
@@ -1423,7 +1464,7 @@
         if (price == null) return fail('notInStock');
         let sell = null;
         if (ch.sellId != null) { if (!run.bag.includes(ch.sellId) || !cardOf(content, ch.sellId)) return fail('badSell'); if (isGift(run, content, ch.sellId)) return fail('giftNoSell'); if (isSeed(run, content, ch.sellId)) return fail('seedNoSell'); sell = ch.sellId; }
-        else if (run.bag.length >= CFG.bagMax) return fail('bagFull');
+        else if (bagFull(run)) return fail('bagFull');            // 不限時不會滿：sellId 可給可不給（給了照賣、一換一）
         const earn = sell ? sellValue(content, cardOf(content, sell)) : 0;
         if (run.money + earn < price) return fail('noMoney');
         if (sell) { run.bag.splice(run.bag.indexOf(sell), 1); run.money += earn; S.earned += earn; S.sold.push(sell); effects.push({ loseCard: sell, earn }); }
@@ -1440,11 +1481,13 @@
         if (ids.some(id => run.bag.includes(id))) return fail('owned');
         const sells = ch.sellIds == null ? [] : ch.sellIds;
         if (!Array.isArray(sells)) return fail('badSell');
-        const need = Math.max(0, run.bag.length + ids.length - CFG.bagMax);
+        // 有上限：照舊，賣的張數要剛好等於放不下的（多賣 → 'badSell'）。不限：need＝0，sellIds 可給可不給、給幾張都照賣（賣完包包不能少於 5 張 → 'bagMin'）
+        const need = Math.max(0, run.bag.length + ids.length - bagCap());
         if (sells.length < need) return fail('bagFull');
-        if (sells.length > need || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
+        if ((bagLimited() && sells.length > need) || new Set(sells).size !== sells.length || !sells.every(id => run.bag.includes(id) && cardOf(content, id))) return fail('badSell');
         if (sells.some(id => isGift(run, content, id))) return fail('giftNoSell');
         if (sells.some(id => isSeed(run, content, id))) return fail('seedNoSell');
+        if (run.bag.length + ids.length - sells.length < bagFloor(run)) return fail('bagMin');
         const each = ids.map(id => bargainPriceIn(run, content, id));   // 電台那張照原價（沒有套利）
         if (each.some(p => p == null)) return fail('notInStock');
         const earn = sells.reduce((s, id) => s + sellValue(content, cardOf(content, id)), 0), price = each.reduce((s, p) => s + p, 0);
@@ -1469,6 +1512,20 @@
         effects.push({ radio: ch.cell, card: id });
         return { ok: true, effects };
       }
+      // 賣回（店主 11-16 包包不限之後才有的單獨動作）：{type:'sell', cardId}。兩位客人之間（canShop）、包包裡、不是老闆送的、不是種子；
+      //   半價（sellValue：特價箱的照特價算）；賣完包包不能少於手牌 5 張（'bagMin'）。賣掉的不回貨架；run.entered 不動（一趟留一張照樣可以留它）
+      case 'sell': {
+        if (!canShop(run)) return fail('notNow');
+        const id = ch.cardId;
+        if (!run.bag.includes(id) || !cardOf(content, id)) return fail('badSell');
+        if (isGift(run, content, id)) return fail('giftNoSell');
+        if (isSeed(run, content, id)) return fail('seedNoSell');
+        if (run.bag.length - 1 < bagFloor(run)) return fail('bagMin');
+        const v = sellValue(content, cardOf(content, id));
+        run.bag.splice(run.bag.indexOf(id), 1); run.money += v; S.earned += v; S.sold.push(id);
+        effects.push({ loseCard: id, earn: v });
+        return { ok: true, effects };
+      }
       case 'buyRelic': {
         if (!canShop(run)) return fail('notNow');
         if (!SH.relics.includes(ch.relicId) || !relicOk(content, ch.relicId)) return fail('notInStock');
@@ -1490,6 +1547,32 @@
     return fail('badChoice');
   }
 
+  // 包包強度（策略用；店主 11-16 包包不限張數之後「這張值不值得放進包包」）：每一手從包包抽 5 張手牌（CFG.handSize），
+  //   三軸各算「這 5 張裡那軸最大星」的期望值，三軸加總。精確解（不用模擬）：那軸星數由小到大 v1..vN、h＝min(5, N)，
+  //   第 k 小的是這手最大的機率＝C(k−1, h−1)／C(N, h)。強牌越多分越高；加一張比手上常見那幾張都弱的牌 → 抽到強牌的機會變小 → 分數掉（稀釋）。
+  //   王牌不在包包裡、不算。只給策略用（runPolicy／shopPolicy／thinPolicy／sim），引擎規則不讀它
+  const BAG_EPS = 0.005;
+  function comb(n, k) { if (k < 0 || k > n) return 0; let r = 1; for (let i = 1; i <= k; i++) r = r * (n - k + i) / i; return r; }
+  function handMaxEv(vals, h) {
+    const v = vals.slice().sort((a, b) => a - b), N = v.length, all = comb(N, h);
+    let e = 0;
+    for (let k = h; k <= N; k++) e += v[k - 1] * comb(k - 1, h - 1) / all;
+    return e;
+  }
+  function bagScore(content, ids) {
+    const cs = (ids || []).map(id => cardOf(content, id)).filter(Boolean), N = cs.length;
+    if (!N) return 0;
+    const h = Math.min(CFG.handSize, N);
+    let sum = 0;
+    for (const a of ATTRS) sum += handMaxEv(cs.map(c => star(c, a)), h);
+    return sum;
+  }
+  // 收這張（或買這張）包包強度漲多少（負的＝稀釋）；drop＝同時拿掉／賣掉的那張
+  function bagGain(run, content, id, drop) {
+    const bag = (run && run.bag) || [], next = bag.filter(x => x !== drop);
+    if (id != null && !next.includes(id)) next.push(id);
+    return bagScore(content, next) - bagScore(content, bag);
+  }
   const LEVEL_MIX = ['atk', 'def', 'atk', 'hp', 'def', 'atk', 'hp', 'def', 'atk', 'hp'];   // variants MIX（X→hp）
   // a reasonable player's choice for whatever the run waits on (sim, __lab autoplay)
   function runPolicy(run, content, o) {
@@ -1511,9 +1594,18 @@
     };
     if (p.need === 'cardOrRelic' && preferRelic) { const r = pickRelic(); if (r) return r; }
     if (!p.cardDone) {
-      const best = p.cards.slice().sort((a, b) => peak(cOf(b)) - peak(cOf(a)) || power(cOf(b)) - power(cOf(a)))[0];
+      const order = p.cards.slice().sort((a, b) => peak(cOf(b)) - peak(cOf(a)) || power(cOf(b)) - power(cOf(a)));
+      // 包包不限（預設）：挑讓包包強度（bagScore：5 張手牌每軸最大星的期望值加總）漲最多的那張，漲不到 BAG_EPS 就不拿（牌組變大會稀釋）
+      if (!bagLimited()) {
+        const base = bagScore(content, run.bag);
+        let pick = null, gain = BAG_EPS;
+        for (const id of order) { if (run.bag.includes(id)) continue; const g = bagScore(content, run.bag.concat([id])) - base; if (g > gain) { gain = g; pick = id; } }
+        return pick ? { type: 'take', cardId: pick } : { type: 'skip' };
+      }
+      // 有上限（--set bagMax=8 對照）：舊規則一字不差——沒滿拿峰值最大的；滿了換掉總星最少那張（不比它強就不拿）
+      const best = order[0];
       if (!best) return { type: 'skip' };
-      if (run.bag.length < CFG.bagMax) return { type: 'take', cardId: best };
+      if (!bagFull(run)) return { type: 'take', cardId: best };
       const weakest = run.bag.slice().sort((a, b) => power(cOf(a)) - power(cOf(b)) || peak(cOf(a)) - peak(cOf(b)))[0];
       if (power(cOf(weakest)) >= power(cOf(best))) return { type: 'skip' };
       return { type: 'take', cardId: best, dropId: weakest };
@@ -1527,14 +1619,19 @@
     const left = shopOf(run).bargain.filter(id => cardOf(content, id) && !run.bag.includes(id));
     const better = (a, b) => peak(cardOf(content, b)) - peak(cardOf(content, a)) || power(cardOf(content, b)) - power(cardOf(content, a));
     const ids = [];
-    for (const a of ATTRS) { const c = left.filter(id => !ids.includes(id) && topAttr(cardOf(content, id)) === a).sort(better)[0]; if (c) ids.push(c); }
+    // 每色（bargainLane）挑峰值大的、同峰值挑總星大的（舊 9 張沒有並列：＝舊的 topAttr 挑法）
+    for (const a of ATTRS) { const c = left.filter(id => !ids.includes(id) && bargainLane(cardOf(content, id)) === a).sort(better)[0]; if (c) ids.push(c); }
     for (const id of left.slice().sort(better)) if (ids.length < CFG.bargainPick && !ids.includes(id)) ids.push(id);
     return ids.length === CFG.bargainPick ? { type: 'bargainPick', ids } : null;
   }
   // 兩位客人之間怎麼買（§2.1.6）：'none' 不買；'smart' 看下一位客人的牌單（無限試煉：換牌、加星後，含他帶的王牌）主屬性 M，買 COUNTER_OF[M] 軸 ≥4 星、而且比包包裡該軸最強那張更強的唱片
   //   （包包滿就賣總星最少的那張；老闆送的不能賣，跳過），錢夠且還有空位就買加成 COUNTER_OF[M] 的配件
-  function shopPolicy(run, content, mode) {
+  //   包包不限（預設，店主 11-16）：同一條挑法，但要再加一個條件「放進包包 bagScore 會漲」（漲不到 BAG_EPS 不買，牌組變大會稀釋）、不用賣；
+  //   買完再「瘦身」（o.thin，預設開；thinPolicy）：賣掉每一軸都排不進包包前 5 名的牌（不是送的、不是種子），包包剩 5 張就停。
+  //   有上限（--set bagMax=8）：舊規則一字不差、不瘦身
+  function shopPolicy(run, content, mode, o) {
     if (mode !== 'smart' || !canShop(run)) return [];
+    const thin = !(o && o.thin === false), unl = !bagLimited();
     const r = clone(run), out = [];
     const id = r.order[r.idx], E = id && content.enemies[id];
     if (!E) return [];
@@ -1551,9 +1648,11 @@
       }
       cands.sort((a, b) => star(b.c, T) - star(a.c, T) || power(b.c) - power(a.c) || a.price - b.price);
       let bought = false;
+      const base = unl ? bagScore(content, r.bag) : 0;
       for (const x of cands) {
         const ch = { type: 'buy', key: x.key, cardId: x.cid };
-        if (r.bag.length >= CFG.bagMax) {
+        if (unl && bagScore(content, r.bag.concat([x.cid])) - base <= BAG_EPS) continue;
+        if (bagFull(r)) {                                       // 有上限而且滿了才要賣（bagMax null／0／負數＝不限，跟 Infinity 一樣不賣）
           ch.sellId = r.bag.filter(x => !isGift(r, content, x) && !isSeed(r, content, x)).sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || peak(cardOf(content, a)) - peak(cardOf(content, b)))[0];   // 老闆送的不能賣
           if (ch.sellId == null) continue;
         }
@@ -1565,6 +1664,28 @@
     if (r.shop.relics.includes(rid) && r.relics.length < CFG.relicMax) {
       const ch = { type: 'buyRelic', relicId: rid };
       if (choose(r, content, ch).ok) out.push(ch);
+    }
+    if (unl && thin) for (const ch of thinPolicy(r, content)) if (choose(r, content, ch).ok) out.push(ch);
+    return out;
+  }
+  // 包包瘦身（包包不限之後「拿了賣錢」那一半）：賣掉「在每一軸都排不進包包前 5 名」的牌（deadWeight：每一軸都有至少 5 張別的牌那軸星 ≥ 它
+  //   ＝它永遠不會是你手上那軸最好的那張，只會佔掉手牌的格子）。能賣的（不是送的、不是種子）裡先賣總星最少的，一次一張、重算；
+  //   沒有了、包包剩手牌張數（5）、或不能賣（canShop）就停。回傳 [{type:'sell', cardId}…]（照順序做；不改傳進來的 run）
+  function deadWeight(content, bag, id) {
+    const c = cardOf(content, id); if (!c) return true;
+    const others = bag.filter(x => x !== id).map(x => cardOf(content, x)).filter(Boolean);
+    return ATTRS.every(a => others.filter(o => star(o, a) >= star(c, a)).length >= CFG.handSize);
+  }
+  function thinPolicy(run, content) {
+    if (!canShop(run)) return [];
+    const r = clone(run), out = [];
+    for (let guard = 0; guard < 60 && r.bag.length > CFG.handSize; guard++) {
+      const pick = r.bag.filter(x => !isGift(r, content, x) && !isSeed(r, content, x) && deadWeight(content, r.bag, x))
+        .sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || (a < b ? -1 : a > b ? 1 : 0))[0];
+      if (pick == null) break;
+      const ch = { type: 'sell', cardId: pick };
+      if (!choose(r, content, ch).ok) break;
+      out.push(ch);
     }
     return out;
   }
@@ -1714,10 +1835,11 @@
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, jumpTo, half, hintTableOf,
+    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
-    runPolicy, shopPolicy, bargainPolicy, policies,
+    bagCap, bagLimited, bagFull, bagScore, bagGain, topAxes, bargainLane,
+    runPolicy, shopPolicy, thinPolicy, bargainPolicy, policies,
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce,
     APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex };
 });

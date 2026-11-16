@@ -11,6 +11,9 @@
 //              兩個原語合一（combo）：{"ops":[…]} 整組換；{"mirrorPlus":{"n":2}} 只改那個原語；平的 {"n":2} 蓋到組裡有 n 的每個原語（都沒有＝報錯）
 //            旗標下多印一張「頂點卡發動」表（發動率、第幾手、發動那手的勝負、作用幾手）；不開 --apex 時輸出跟以前一字不差
 //   --ace    每一趟都用這一派（沒給＝三派輪流 TIERS[i % 3]）；不開 --apex 也能用＝現行 7 星王牌的分派基準（跟 --apex-ace 同一批客人組成）
+//   包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity）：獎勵照 runPolicy（收這張 bagScore 漲才拿，見 engine 檔頭）、買照 shopPolicy（要漲才買、不用賣）＋瘦身（thinPolicy：
+//            賣掉每一軸都排不進包包前 5 名的牌）；收音機那張也要漲才買。--no-thin＝不瘦身（只靠「不拿」控制牌組大小）。
+//            --set bagMax=8＝舊規則對照（choose／策略走舊路、收音機包包滿賣最弱的；JSON 跟改版前逐字相同）。不限時 JSON 的 end 多 bagN（最後幾張）、bagMaxN（最多幾張）、sold（賣掉幾張）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
 //   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；
 //            ＋收音機（v5 第六項第二期）：每輪第一次能買東西時轉一次（radioSmart：挑抽卡池裡「剋下一位主屬性那軸」平均星最高的那格），買得起就買（照原價；
@@ -56,6 +59,7 @@ const MODE = arg('mode', 'all');
 const CAP = +arg('cap', 300);
 const TIER = +arg('tier', 0);
 const APEX = argv.includes('--apex');
+const NO_THIN = argv.includes('--no-thin');
 const APEX_ACE = arg('apex-ace', null);
 if (APEX_ACE && !(C.cards[APEX_ACE] && EN.apexList(C, C.cards[APEX_ACE].tier).some(x => x.card === APEX_ACE))) { console.error('--apex-ace 要是 C.apexTrial 名單裡的頂點卡 id'); process.exit(2); }
 if (APEX_ACE && !APEX) { console.error('--apex-ace 要跟 --apex 一起用'); process.exit(2); }
@@ -150,6 +154,7 @@ function play(duel, pol, R, mem) {
 const bagPower = run => run.bag.reduce((s, id) => s + EN.power(C.cards[id]), 0) / Math.max(1, run.bag.length);
 // 收音機（smart 流程）：每輪一次。轉哪格＝抽卡池裡「剋下一位主屬性（換牌、加星後的牌單＋他帶的王牌）那軸」平均星最高的那格（抽到哪張不偷看；壓力測試：比隨便轉更強）；
 //   轉到就看買不買得起（engine.bargainPriceIn＝原價）：包包有空位、錢夠就買；包包滿＝賣掉能賣的最弱那張（不是送的、不是種子）換，電台那張要比它強、錢加賣回的要夠
+//   包包不限（預設）：不會滿；收進包包 bagScore 要漲（engine.bagGain > 0.005）才買，不然不買（牌組變大會稀釋）
 function radioSmart(run, R) {
   if (!EN.canRadio || !EN.canRadio(run)) return;
   const id = run.order[run.idx], E = C.enemies[id]; if (!E) return;
@@ -165,11 +170,11 @@ function radioSmart(run, R) {
   if (!best) return;
   ok(EN.choose(run, C, { type: 'radio', cell: best }), 'radio', best); R.spins++;
   const rid = run.shop.radio.id, price = EN.bargainPriceIn(run, C, rid), ch = { type: 'buyBargain', ids: [rid] };
-  if (run.bag.length >= CFG.bagMax) {
+  if (EN.bagFull(run)) {                                             // 有上限而且滿了才賣（bagMax null／0／負數＝不限，跟 Infinity 一樣）
     const weak = run.bag.filter(x => !EN.isGift(run, C, x) && !EN.isSeed(run, C, x)).sort((a, b) => EN.power(C.cards[a]) - EN.power(C.cards[b]))[0];
     if (weak == null || EN.power(C.cards[weak]) >= EN.power(C.cards[rid])) return;
     ch.sellIds = [weak];
-  }
+  } else if (!EN.bagLimited() && EN.bagGain(run, C, rid) <= 0.005) return;
   const earn = (ch.sellIds || []).reduce((s, x) => s + EN.sellValue(C, C.cards[x]), 0);
   if (run.money + earn < price) return;
   ok(EN.choose(run, C, ch), 'radio buy', ch); R.bought++; R.spent += price;
@@ -181,7 +186,7 @@ function runOnce(pol, flow, i, A) {
   const seedKey = 'sim5-' + i;
   const run = EN.newRun(C, Object.assign({ seedKey, runNo: 1, ace: ACE_T || TIERS[i % 3], prologue: flow !== 'bare', tier: TIER }, APEX_ACE ? { ace: C.cards[APEX_ACE].tier, aceId: APEX_ACE } : {}));
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
-  let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0;
+  let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0, bagMaxN = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
   for (let guard = 0; ; guard++) {
     if (guard > 40 * CAP + 400) throw new Error('runaway run ' + seedKey + ' ' + pol + ' ' + flow);
@@ -207,11 +212,12 @@ function runOnce(pol, flow, i, A) {
       const ch = EN.runPolicy(run, C); ok(EN.choose(run, C, ch), 'runPolicy', ch); continue;
     }
     if (step !== 'fight' && step !== 'prologue') throw new Error('unexpected step ' + step);
-    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart')) ok(EN.choose(run, C, ch), 'shopPolicy', ch);
+    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart', NO_THIN ? { thin: false } : undefined)) ok(EN.choose(run, C, ch), 'shopPolicy', ch);
     if (flow === 'smart' && EN.canShop(run)) radioSmart(run, RADIO);
     if (run.money < 0) throw new Error('money < 0');
     const prologue = step === 'prologue', d = run.pos, att = retryAt === d ? 1 : 0;
     if (!prologue && bag0 == null) bag0 = bagPower(run);
+    if (run.bag.length > bagMaxN) bagMaxN = run.bag.length;
     if (!prologue && lastReached < d) { A.reached[d]++; lastReached = d; }
     const f = EN.startFight(run, C, APEX ? { apex: true } : {});
     if (!f) throw new Error('startFight null at ' + d);
@@ -245,7 +251,8 @@ function runOnce(pol, flow, i, A) {
   return { end, cens, lostMan, firstLoss, fatal, maxHands, level: run.level, atk: run.atk, def: run.def, maxHp: run.maxHp, relics: run.relics.length,
     taken: sum.taken, rewardCards: S.taken.length, bought: S.bought.length, relicsBought: S.relicsBought.length, relicsGot: S.relicsGot.length,
     earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
-    bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent };
+    bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent,
+    bagN: run.bag.length, bagMaxN: Math.max(bagMaxN, run.bag.length), sold: S.sold.length };
 }
 
 // ---------------- one cell (policy × flow) ----------------
@@ -295,7 +302,8 @@ function runCell(pol, flow, n) {
     end: { level: avg('level'), atk: avg('atk'), def: avg('def'), maxHp: avg('maxHp'), relics: avg('relics'), taken: avg('taken'), rewardCards: avg('rewardCards'),
       bought: avg('bought'), relicsBought: avg('relicsBought'), relicsGot: avg('relicsGot'), earned: avg('earned'), spent: avg('spent'), money: avg('money'),
       checkpoints: avg('checkpoints'), bestStreak: avg('bestStreak'), bag0: avg('bag0'), bag1: avg('bag1'),
-      radioSpins: avg('radioSpins'), radioBought: avg('radioBought'), radioSpent: avg('radioSpent') },
+      radioSpins: avg('radioSpins'), radioBought: avg('radioBought'), radioSpent: avg('radioSpent'),
+      ...(EN.bagLimited() ? {} : { bagN: avg('bagN'), bagMaxN: avg('bagMaxN'), bagMaxMax: Math.max(...recs.map(r => r.bagMaxN)), sold: avg('sold') }) },   // 包包不限才有（--set bagMax=8 時 JSON 跟改版前一樣）
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
   };
@@ -354,6 +362,12 @@ if (MODE === 'all' || MODE === 'runs') {
   console.log('|---|---|---|---|---|---|---|---|---|---|---|');
   for (const x of rows) { const e = x.end;
     console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.level.toFixed(1)} | ${e.atk.toFixed(1)}／${e.def.toFixed(1)}／${e.maxHp.toFixed(1)} | ${e.relics.toFixed(2)}（${e.relicsGot.toFixed(2)}／${e.relicsBought.toFixed(2)}） | ${e.taken.toFixed(1)}（${e.rewardCards.toFixed(1)}／${e.bought.toFixed(1)}） | ${e.bag0.toFixed(1)}→${e.bag1.toFixed(1)} | $${Math.round(e.earned).toLocaleString('en')}／$${Math.round(e.spent).toLocaleString('en')} | ${e.checkpoints.toFixed(2)} | ${e.bestStreak.toFixed(1)} | ${e.radioSpins.toFixed(1)}／${e.radioBought.toFixed(1)}（$${Math.round(e.radioSpent).toLocaleString('en')}） |`); }
+  if (!EN.bagLimited()) {                                            // 包包不限（店主 11-16）：包包長到幾張、賣掉幾張
+    console.log(`\n包包不限張數${NO_THIN ? '（--no-thin：不瘦身）' : '（買完照 thinPolicy 瘦身）'}：每趟平均\n`);
+    console.log('| 策略 | 流程 | 最後幾張 | 最多幾張（平均／全部最大） | 賣掉幾張 |');
+    console.log('|---|---|---|---|---|');
+    for (const x of rows) { const e = x.end; console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.bagN.toFixed(1)} | ${e.bagMaxN.toFixed(1)}／${e.bagMaxMax} | ${e.sold.toFixed(2)} |`); }
+  }
 
   const PCOLS = 16;
   console.log(`\n每一位：首戰勝率／單位死亡率（%；到過的趟 <200 打括號）\n`);

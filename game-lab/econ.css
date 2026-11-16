@@ -1,6 +1,6 @@
 /* game-lab/econ.css：經濟介面（econ.js；SPEC-v4 §2.5.6）。B3。
  * 店主原版 token（style.css :root）：白底、1px 黑線、Space Mono 數字、金與紅、經冷硬三色；方角。這裡只用 var(...)，沒載 style.css 時有後備色。
- * 抽屜（.ec-drawer）＝#app 底部的面板，最高 #app 的 50%（econ.js fit() 依可用高度設 --ec-cv／--ec-tile，內容不捲動）；
+ * 抽屜（.ec-drawer）＝#app 底部的面板，最高 #app 的 50%（econ.js fit() 依可用高度設 --ec-cv／--ec-tile，內容不捲動；先賣子面板包包太長時只有格子那一區捲，.ec-scroll）；
  * 抽屜外面的 .ec-veil 吃點擊（＝關掉；走路途中＝直接走到）。z：veil 21、抽屜 22（浮面板 20 之上、吐司 40／唱片資訊 70 之下）。
  */
 .ec-veil{position:absolute;left:0;right:0;top:0;bottom:0;z-index:21;background:transparent;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
@@ -119,6 +119,9 @@
 .ec-spick.seed .ec-tcv{opacity:.5;}
 .ec-sv.ec-seed{font:700 10px var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--gold-ink,#8a6508);letter-spacing:.02em;}   /* 深金字：白底對比 ≥4.5（審查 #10） */
 .ec-line.warn{color:var(--red,#c0392b);font-weight:700;}
+/* 先賣子面板（錢不夠、賣一張就夠）列整個包包：包包不限張數（店主 11-16），封面縮到 36 px 還放不下 → 封面放回 56 px、格子那一區自己捲（標題、說明、鈕不動；econ.js fit()） */
+.ec-drawer.ec-scroll .ec-grid{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:4px;touch-action:pan-y;
+  grid-auto-rows:max-content;align-content:start;}   /* 列高照內容（格子自己捲時 auto 列會被壓成 44 px、封面疊在一起） */
 .ec-foot{flex:none;padding-top:8px;}
 .ec-foot.two{display:flex;gap:8px;}
 .ec-foot.two .lb-btn{flex:1;min-width:0;}

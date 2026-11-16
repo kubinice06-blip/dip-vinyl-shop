@@ -3,7 +3,7 @@
 // 用 content.js 的 C.tutorial、tutorial.js 的純邏輯（stepsFor／createRunner／matches…）與真引擎（startFight(run, C, {tutorial:true})）：
 // 照教學的每一步餵 gate（跟 duel.js 送的一樣；v5 手風琴：點一張封面（疊著那排露出來的那一條）＝在那張打開 {kind:'card'} → 點屬性鈕＝丟 {kind:'throw'}；
 //   再點打開那張、點手牌外面 {kind:'collapse'} 教學中一律不放行、也不罵；沒有 {kind:'spread'} 了），丟出去時 resolveTurn。
-// 路線：三張王牌 × 特價箱 84 種挑法 × {照做、真的點（card 帶 at 座標）、點錯、看唱片資訊}，每條：
+// 路線：三張王牌 × 特價箱 C(n,3) 種挑法（店主 11-16 換牌後 12 張＝220 種；原本 9 張 84 種）× {照做、真的點（card 帶 at 座標）、點錯、看唱片資訊}，每條：
 //   26 步照順序走完、每手 kind／toE／toP＝C.tutorial.expect、第 5 手剋不動（你 −(5−冷)）、第 6 手王牌 KO、前 5 手不 KO、學到 L1–L6、你沒倒。
 //   手牌 5 張（FIXLIST 11；CFG.handSize）：每一手開手時你手上都是 5 張、要教的那張在手上；第 5 手手指指的（blockedChoice 最左）＝特價箱挑的第 2 張。男子的暗手照舊 3 張。
 // 另外測：步驟資料（六手、字數、禁用字、目標名＝duel.js 的名字、allow、三角邊、小卡）、老闆說的話是真的、擋錯招（e2e #20 的純邏輯版）、
@@ -284,8 +284,11 @@ section('老闆說的話是真的：提示、點破的關鍵字、三相剋、�
 });
 
 // ---------------------------------------------------------------------------
-section('三王牌 × 特價箱 84 種挑法 × {照做、真的點、點錯、看唱片資訊}：26 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
-  eq(COMBOS.length, 84, '特價箱 9 張挑 3＝84 種');
+section('三王牌 × 特價箱 C(n,3) 種挑法 × {照做、真的點、點錯、看唱片資訊}：26 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
+  // 店主 11-16 特價箱換牌（12–15 張，每張最高 ≤3、加總 ≤5）：原本 9 張 84 種；現在 n 張 C(n,3) 種，全部照樣走
+  const nP = POOL.length;
+  ok(nP >= 12 && nP <= 15, '特價箱 12–15 張，現在 ' + nP);
+  eq(COMBOS.length, nP * (nP - 1) * (nP - 2) / 6, '特價箱 ' + nP + ' 張挑 3＝C(' + nP + ',3) 種');
   let n = 0;
   for (const t of TIERS) for (let k = 0; k < COMBOS.length; k++) {
     for (const variant of ['plain', 'tap', 'wrong', 'info']) {
@@ -315,7 +318,7 @@ section('三王牌 × 特價箱 84 種挑法 × {照做、真的點、點錯、�
       if (variant === 'info') ok(r.infoOk >= 18, r.tag + ' 每一步都能看唱片資訊（' + r.infoOk + ' 次）');
     }
   }
-  eq(n, 3 * 84 * 4, '路線數 3 王牌 × 84 種 × 4 種點法');
+  eq(n, 3 * COMBOS.length * 4, '路線數 3 王牌 × ' + COMBOS.length + ' 種 × 4 種點法');
 });
 
 // ---------------------------------------------------------------------------

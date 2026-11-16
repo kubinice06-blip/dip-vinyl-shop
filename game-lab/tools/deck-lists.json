@@ -1,5 +1,5 @@
 {
- "_doc": "keep_pool＝店主 11-13 殿堂禮物換成有名的之後、原本那兩張留在卡池（不再是禮物）。v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4；FIXLIST 4／5 改成店主網站的十大類＋TW＋NEW＋門口牆 FEATURE／PICKS；v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP、BLUES 搬到窗下矮櫃，三個新區用子曲風規則 sub）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區 {label（名牌英文）, zh（點了掛的中文全名）, rule（上架規則，見 tools/check-covers.mjs ruleMisses）}；bin_<key>＝那一區的卡池（正面封面在 shops/dip.json，烘焙時讀進 bins.js 的 front）。 apex_trial＝頂點卡純輔助卡試做（?apex=1，2026-11-15）的 42 張頂點卡（三派各 15 張扣掉 ace_* 那 3 張；名單與能力在 content.js C.apexTrial）：tier 照 seed、星數照王牌烘（那軸 7、其他 1）、不用推薦語；engine trialPool 濾掉 tier，不進客人牌組、箱子、收音機。",
+ "_doc": "keep_pool＝店主 11-13 殿堂禮物換成有名的之後、原本那兩張留在卡池（不再是禮物）。v4 牌組／箱子清單（SPEC-v4 §2.2.1、§4；FIXLIST 4／5 改成店主網站的十大類＋TW＋NEW＋門口牆 FEATURE／PICKS；v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP、BLUES 搬到窗下矮櫃，三個新區用子曲風規則 sub）。每張以 seed_cards.json 原字串 \"artist|album\" 列出；bake-cards.mjs 跳過 _ 開頭的鍵。_region＝卡片區域覆寫 {cardId: tw|jp|zh|xx}；_bins＝每一區 {label（名牌英文）, zh（點了掛的中文全名）, rule（上架規則，見 tools/check-covers.mjs ruleMisses）}；bin_<key>＝那一區的卡池（正面封面在 shops/dip.json，烘焙時讀進 bins.js 的 front）。 apex_trial＝頂點卡純輔助卡試做（?apex=1，2026-11-15）的 42 張頂點卡（三派各 15 張扣掉 ace_* 那 3 張；名單與能力在 content.js C.apexTrial）：tier 照 seed、星數照王牌烘（那軸 7、其他 1）、不用推薦語；engine trialPool 濾掉 tier，不進客人牌組、箱子、收音機。 bargain＝特價箱（2026-11-16 店主：每張最高星 ≤3、三軸加起來 ≤5；12 張，經／冷／硬三條各 4 張，峰值並列算兩色；名單同 content.js C.bargain.pool）；放在最後一組：新卡接在 cards.js 最後面。bargain_v4＝換下來的舊特價箱 9 張（舊存檔的包包、這一輪的特價箱可能還有，卡要留在 cards.js；content.js C.bargain.retired 照特價算價、不上架）。",
  "_region": {
   "吉田美奈子-monochrome": "jp",
   "松田聖子-風立ちぬ": "jp",
@@ -271,7 +271,7 @@
   "Pharoah Sanders|Tauhid",
   "Magma|Mëkanïk Dëstruktïw Kömmandöh"
  ],
- "bargain": [
+ "bargain_v4": [
   "Blur|The Great Escape",
   "Oasis|Dig Out Your Soul",
   "David Bowie|Never Let Me Down",
@@ -693,5 +693,19 @@
   "Sunn O)))|Black One",
   "Napalm Death|Scum",
   "Peter Brötzmann|Machine Gun"
+ ],
+ "bargain": [
+  "Oasis|Dig Out Your Soul",
+  "Lady Gaga|ARTPOP",
+  "Arcade Fire|Everything Now",
+  "The Strokes|Angles",
+  "Queensrÿche|Take Cover",
+  "David Bowie|Never Let Me Down",
+  "Megadeth|Risk",
+  "KISS|Hot in the Shade",
+  "Limp Bizkit|Gold Cobra",
+  "Eminem|Revival",
+  "Daft Punk|Human After All",
+  "The Weeknd|Kiss Land"
  ]
 }

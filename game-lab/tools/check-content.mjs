@@ -4,7 +4,8 @@
 //
 // 檢查：
 //   卡片：欄位、星數（一般卡 ≤5、王牌那軸 7）、封面、試聽、region ∈ tw／jp／zh／xx；所有引用的卡 id 都存在（王牌、禮物、特價箱、牌單、掉牌、教學、箱子）。
-//   王牌、禮物（§4.2：三軸都有 ≥4 星、殿堂有冷門 ≥4、王牌那軸 ≥4 至少 2 張）、特價箱（§4.3：9 張、topAttr 3／3／3、峰值 ≤3、冷門 ≤3）。
+//   王牌、禮物（§4.2：三軸都有 ≥4 星、殿堂有冷門 ≥4、王牌那軸 ≥4 至少 2 張）、特價箱（店主 11-16：12–15 張、每張最高星 ≤3 且三軸加起來 ≤5、
+//   bargainLane（峰值那軸、並列取後面那軸）每色 ≥3 張且有一張 topAttr 純色、每輪擺 6 張每色 2、冷門 ≤3；retired 換下的照特價算價）。
 //   客人（§2.2.3、§4.1）：名字（FIXLIST 6 的身分、沒有 title）、誠實度（男子老實、一般偶爾唬人、菁英愛唬人、藏家老江湖；只有 q）、聲望（男子 10、其他 12–40）、張數（男子 6、一般與菁英 7、藏家 6）；
 //     牌組限制（deckMain、嚴格峰值 ≥4、唬人色 ≥4 星 ≥2 張、剋他用色 ≥4 星 ≥1 張；男子只要一張副屬性 ≥4；經典客人 ≤4 位不含藏家；
 //     藏家三色各 ≥2 張峰值、每色都有 ≥4 星）；牌組／禮物／特價箱彼此不重複且不含王牌。
@@ -75,13 +76,32 @@ export function shapeProblems(C, E) {
       cs.forEach(c => ok(!c.tier && peak(c) <= 5, 'gifts.' + t + ': ' + c.id + ' 是王牌／頂點卡'));
     }
   }
+  // 特價箱（店主 11-16「三張特價，星星最高三，加起來不高於五」）：12–15 張，每張最高星 ≤3、三軸加起來 ≤5；
+  //   「色」＝engine.bargainLane（峰值那軸、並列取後面那軸）：每色 ≥3 張、每色至少一張 topAttr 純色（重看教學 replayBag、對決試玩照 topAttr 找三色）；
+  //   每輪擺 6 張＝每色 2 張（engine.restock，抽 60 個種子驗）；retired（換下的舊特價箱）卡要在、不在池子裡、照特價算價
   const BP = (C.bargain && C.bargain.pool) || [];
-  ok(BP.length === 9 && new Set(BP).size === 9, '特價箱要 9 張不重複，現在 ' + BP.length);
+  ok(BP.length >= 12 && BP.length <= 15 && new Set(BP).size === BP.length, '特價箱要 12–15 張不重複，現在 ' + BP.length);
   const bcs = BP.map(id => card(id, 'bargain')).filter(Boolean);
-  if (bcs.length === 9) {
-    const n = { c: 0, o: 0, h: 0 }; bcs.forEach(c => n[topAttr(c)]++);
-    ok(n.c === 3 && n.o === 3 && n.h === 3, '特價箱 topAttr 要 經／冷／硬各 3，現在 ' + JSON.stringify(n));
-    bcs.forEach(c => { ok(peak(c) <= 3, '特價箱 ' + c.id + ' 峰值要 ≤3'); ok(c.o <= 3, '特價箱 ' + c.id + ' 冷門要 ≤3（教學第 5 手）'); ok(!c.tier, '特價箱 ' + c.id + ' 是王牌'); });
+  bcs.forEach(c => {
+    ok(peak(c) <= 3, '特價箱 ' + c.id + ' 最高星要 ≤3（店主 11-16），現在 ' + peak(c));
+    ok(c.c + c.o + c.h <= 5, '特價箱 ' + c.id + ' 三軸加起來要 ≤5（店主 11-16），現在 ' + (c.c + c.o + c.h));
+    ok(c.o <= 3, '特價箱 ' + c.id + ' 冷門要 ≤3（教學第 5 手）'); ok(!c.tier, '特價箱 ' + c.id + ' 是王牌');
+  });
+  for (const a of ATTRS) {
+    ok(bcs.filter(c => E.bargainLane(c) === a).length >= 3, '特價箱 ' + ZH[a] + '（bargainLane：峰值那軸、並列取後面那軸）要 ≥3 張');
+    ok(bcs.some(c => topAttr(c) === a && E.topAxes(c).length === 1), '特價箱要有一張 topAttr 純' + ZH[a] + '（重看教學、對決試玩照 topAttr 挑三色）');
+  }
+  if (bcs.length === BP.length) for (let k = 0; k < 60; k++) {
+    const r = E.newRun(C, { seedKey: 'cc-bargain-' + k, runNo: 1 + (k % 3), ace: TIERS[k % 3], prologue: k % 2 === 0 });
+    const lanes = r.shop.bargain.map(id => E.bargainLane(CARDS[id]));
+    const cover = ATTRS.every(a => lanes.filter(l => l === a).length === 2);
+    if (!ok(r.shop.bargain.length === 6 && cover, '特價箱每輪擺 6 張、每色 ≥2（種子 cc-bargain-' + k + '）：' + r.shop.bargain.join(','))) break;
+  }
+  const RET = (C.bargain && C.bargain.retired) || [];
+  for (const id of RET) {
+    const c = card(id, 'bargain.retired');
+    ok(!BP.includes(id), 'bargain.retired ' + id + ' 不能也在 pool');
+    if (c) ok(E.priceOf(C, id) === (((C.economy || {}).bargain) || { 1: 100, 2: 200, 3: 300 })[Math.min(3, peak(c))], 'bargain.retired ' + id + ' 照特價算價（舊存檔賣回不套利）');
   }
 
   // ---- 誠實度（只有機率 q；FIXLIST 6：畫面不寫誠實度，沒有 zh）、難度 ----
@@ -391,11 +411,20 @@ export function contentProblems(C, E) {
   ok(String(SL.homePut || '').length <= 4, 'shopLines.homePut（唱片架每張下面的小鈕）≤4 字');
   ok(SL.binBusy === '打完再翻。', 'shopLines.binBusy＝「打完再翻。」（D §6）');
   ok(SL.ownerHint && ['title', 'scene', 'night', 'duel', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 五個畫面');
-  ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 3, 'shopLines.nightIntro 三句（第 2 句「客人跟剛才那位不一樣」店主 11-12）');
-  const SU = ['money', 'binTitle', 'buy', 'noMoney', 'bagFull', 'sellPick', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
+  ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 4, 'shopLines.nightIntro 四句（第 2 句「客人跟剛才那位不一樣」店主 11-12；第 4 句講包包賣回，店主 11-16 包包不限張數）');
+  ok(String((SL.nightIntro || [])[1] || '').startsWith('客人跟剛才那位不一樣'), 'shopLines.nightIntro 第 2 句「客人跟剛才那位不一樣」（店主 11-12）');
+  ok(/包包/.test(String((SL.nightIntro || [])[3] || '')) && /賣回/.test(String((SL.nightIntro || [])[3] || '')), 'shopLines.nightIntro 第 4 句講「包包」可以「賣回」（包包不限張數之後唯一自己瘦身的入口）');
+  const SU = ['money', 'binTitle', 'buy', 'noMoney', 'sellPick', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
     'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',
-    'bag', 'binEmpty', 'owned', 'bagFullN', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria'];
+    'bag', 'binEmpty', 'owned', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria',
+    'bagSellNote', 'bagSellBtn', 'bagSellAsk', 'bagSellGo', 'bagSellNo', 'bagSellMin', 'bagSellHint'];
   ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8）');
+  // 包包不限張數（店主 11-16）：包包只寫張數（不寫上限）；「包包滿要先賣／先丟」的字拿掉了（強迫的流程沒有了）
+  ok(C.shopUi && /\{n\}/.test(C.shopUi.bag) && !/\{max\}|\//.test(C.shopUi.bag), 'shopUi.bag 只寫張數（「包包 {n} 張」，不寫上限）');
+  ok(C.shopUi && !['bagFull', 'bagFullN', 'sellPickN'].some(k => k in C.shopUi) && !('bagFull' in (((C.lines || {}).owner) || {})) && !('bagOutMsg' in (((C.seeds || {}).ui) || {})),
+    '包包滿的字（shopUi.bagFull／bagFullN／sellPickN、老闆 bagFull、seeds.ui.bagOutMsg）拿掉了');
+  ok(C.shopUi && /\{n\}/.test(C.shopUi.bagSellBtn) && /\{n\}/.test(C.shopUi.bagSellGo) && /\{album\}/.test(C.shopUi.bagSellAsk) && /\{n\}/.test(C.shopUi.bagSellMin),
+    'shopUi.bagSell*（包包面板賣回：{n}／{album} 的佔位）');
   // 從唱片櫃挑牌開局（店主 11-13）：種子不能賣的字、挑種子／帶走一張／唱片櫃頁的畫面字（ui.js 用；{x} 的佔位要在）
   ok(C.shopUi && C.shopUi.seedTag && C.shopUi.seedNoSell === '從唱片櫃帶來的不能賣', 'shopUi.seedTag／seedNoSell（「從唱片櫃帶來的不能賣」，SPEC 從唱片櫃挑牌開局 §1 裁定 8）');
   { const SD = ((C.seeds || {}).ui) || {};

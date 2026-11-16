@@ -18,7 +18,7 @@
 //      飄字「聲望 +n」、結果句「王牌：回 n 聲望」；看穿（'77 Live）提示框蓋章「真話／唬人！」跟引擎一致
 //   6  旗標下的規則卡、標題、唱片資訊：標題牌角上「頂點卡試做」；規則卡第 6 行換成「王牌不比星：…」、頁尾「打贏回 4」、不捲動；按住王牌格＝唱片資訊有「王牌能力」
 //   7  不開旗標：挑王牌畫面跟現在一樣（老闆 → 換一張王牌＝三張王牌三選一、沒有分頁與 15 張；來客畫面不自動跳；王牌格照舊可以丟、屬性鈕「王牌 硬 7」；
-//      規則卡照舊「王牌 7 星」；唱片資訊沒有「王牌能力」；唱片櫃分母 316）
+//      規則卡照舊「王牌 7 星」；唱片資訊沒有「王牌能力」；唱片櫃分母 326＝卡池 368 扣掉試做 42 張；店主 11-16 特價箱換牌加 10 張前是 316）
 //   8  序章（旗標開）：挑王牌那行寫「頂點卡試做・教學這場王牌照舊 7 星…」、序章那場照舊 7 星（view 沒有 apex、王牌可以丟）、開打吐司寫明；
 //      序章打完回到來客畫面 → 老闆說那句 → 自動跳挑王牌面板 → 挑 → 老闆＋吐司先出、第一次來客的教學泡泡等它們收掉才出（不三則疊在一起）（只在 390 跑：整段序章約 1 分鐘）
 //   9  審查 11-16 的版面與字（旗標開）：挑王牌面板三派 45 張逐一點，說明三行與換派灰字都在「就這張」那列上面、不被切、面板不捲；
@@ -316,12 +316,12 @@ async function runSize(browser, w, h) {
       const ok7 = !auto && up && pk.h3 === aceAsk && pk.n === 3 && pk.tiers === 'hall,pearl,heresy' && pk.apx === 0 && pk.acex.every(x => / 7/.test(x)) && !pk.apexFlag &&
         !plate && !t.mode && /\bace\b/.test(t.tile) && !/\bapx\b/.test(t.tile) && t.legal && !t.view && chip && /7/.test(chip) && inf && !ci.apx && !ci.ns && l6.includes('王牌 7 星');
       record(7, size, ok7 && !errs(page).length, `沒旗標：來客自動跳 ${auto}；換王牌面板 ${up} ${JSON.stringify(pk)}；標題牌小字 ${plate}；對決 ${JSON.stringify(t)} 屬性鈕「${chip}」；唱片資訊 ${JSON.stringify(ci)}；規則第 6 行「${l6}」`);
-      // 唱片櫃分母 316（試做的 42 張旗標關時不算）
+      // 唱片櫃分母＝卡池扣掉試做的 42 張（旗標關時不算）：326（店主 11-16 特價箱換牌加了 10 張：358 → 368 張，分母 316 → 326）
       await jsClick(page, '.lb-modal [data-x]'); await sleep(200);
       await C(page, () => window.__lab.openPage('shelf')); await sleep(500);
       const sh = await C(page, () => (document.querySelector('.lb-top.page .tt small') || {}).textContent || '');
       const only = await C(page, () => window.DipLabContent.apexTrialOnly.length);
-      record(7.1, size, /／316/.test(sh) && only === 42 && shelf === 358, `唱片櫃「${sh}」（cards ${shelf}、試做 ${only} 張）`);
+      record(7.1, size, sh.includes('／' + (shelf - only)) && only === 42 && shelf === 368, `唱片櫃「${sh}」（cards ${shelf}、試做 ${only} 張；分母要是 ${shelf - only}）`);
     } catch (e) { record(7, size, false, 'error ' + e.message); }
     await ctx.close();
   }

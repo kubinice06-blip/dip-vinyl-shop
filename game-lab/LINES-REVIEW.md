@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 546（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 559（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -53,7 +53,6 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | 老闆・老闆說情 | ……再一場。 | 本規格新寫 | `lines.owner.retry` |
 | 老闆・retryAsk | ……要不要再一場？ | 本規格新寫 | `lines.owner.retryAsk` |
-| 老闆・包包滿了 | 包包滿了。先拿一張出來。 | 本規格新寫 | `lines.owner.bagFull` |
 | 老闆・發燒配件滿了 | 配件最多帶三件。先放一件回去。 | 本規格新寫 | `lines.owner.relicFull` |
 
 ## 舞台泡泡・文青同好
@@ -359,6 +358,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・nightIntro[0] | 客人一個一個來，打到輸為止。 | 本規格新寫 | `shopLines.nightIntro[0]` |
 | 老闆・nightIntro[1] | 客人跟剛才那位不一樣，有時會唬你。 | 本規格新寫 | `shopLines.nightIntro[1]` |
 | 老闆・nightIntro[2] | 贏了有錢，兩位客人之間可以去箱子買唱片。 | 本規格新寫 | `shopLines.nightIntro[2]` |
+| 老闆・nightIntro[3] | 用不到的唱片，點「包包」可以賣回，半價。 | 本規格新寫 | `shopLines.nightIntro[3]` |
 
 ## 台北地圖預告
 
@@ -425,9 +425,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・binTitle | {label} | 本規格新寫 | `shopUi.binTitle` |
 | （畫面字）・buy | 買 ${n} | 本規格新寫 | `shopUi.buy` |
 | （畫面字）・noMoney | 錢不夠 | 本規格新寫 | `shopUi.noMoney` |
-| （畫面字）・bagFull | 包包滿了：先賣一張，半價 ${n} | 本規格新寫 | `shopUi.bagFull` |
 | （畫面字）・sellPick | 賣這張 | 本規格新寫 | `shopUi.sellPick` |
-| （畫面字）・sellPickN | 賣這 {k} 張 | 本規格新寫 | `shopUi.sellPickN` |
 | （畫面字）・giftTag | 老闆送的 | 本規格新寫 | `shopUi.giftTag` |
 | （畫面字）・seedTag | 櫃裡帶來 | 本規格新寫 | `shopUi.seedTag` |
 | （畫面字）・seedNoSell | 從唱片櫃帶來的不能賣 | 本規格新寫 | `shopUi.seedNoSell` |
@@ -444,10 +442,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・bargainEmpty | 特價區賣完了，下一輪再補。 | 本規格新寫 | `shopUi.bargainEmpty` |
 | （畫面字）・close | 關閉 | 本規格新寫 | `shopUi.close` |
 | （畫面字）・earned | +${n} | 本規格新寫 | `shopUi.earned` |
-| （畫面字）・bag | 包包 {n}/{max} | 本規格新寫 | `shopUi.bag` |
+| （畫面字）・bag | 包包 {n} 張 | 本規格新寫 | `shopUi.bag` |
 | （畫面字）・binEmpty | 這一箱賣完了，下一輪再補。 | 本規格新寫 | `shopUi.binEmpty` |
 | （畫面字）・owned | 包包裡有了 | 本規格新寫 | `shopUi.owned` |
-| （畫面字）・bagFullN | 包包放不下：先賣 {k} 張，半價 ${n} | 本規格新寫 | `shopUi.bagFullN` |
 | （畫面字）・moneyShort | 錢不夠：先賣一張，半價 ${n} | 本規格新寫 | `shopUi.moneyShort` |
 | （畫面字）・sellFirst | 先賣一張 | 本規格新寫 | `shopUi.sellFirst` |
 | （畫面字）・relicSell | 賣這件 | 本規格新寫 | `shopUi.relicSell` |
@@ -460,6 +457,13 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・prev | 上一張 | 本規格新寫 | `shopUi.prev` |
 | （畫面字）・next | 下一張 | 本規格新寫 | `shopUi.next` |
 | （畫面字）・infoAria | 唱片資訊、試聽 | 本規格新寫 | `shopUi.infoAria` |
+| （畫面字）・bagSellNote | 兩位客人之間可以賣回，半價。 | 本規格新寫 | `shopUi.bagSellNote` |
+| （畫面字）・bagSellBtn | 賣 ${n} | 本規格新寫 | `shopUi.bagSellBtn` |
+| （畫面字）・bagSellAsk | 賣掉《{album}》？ | 本規格新寫 | `shopUi.bagSellAsk` |
+| （畫面字）・bagSellGo | 賣掉 +${n} | 本規格新寫 | `shopUi.bagSellGo` |
+| （畫面字）・bagSellNo | 算了 | 本規格新寫 | `shopUi.bagSellNo` |
+| （畫面字）・bagSellMin | 包包至少留 {n} 張，手牌才補得滿。 | 本規格新寫 | `shopUi.bagSellMin` |
+| （畫面字）・bagSellHint | 包包越塞越滿？點「包包」可以賣回，半價。 | 本規格新寫 | `shopUi.bagSellHint` |
 | （畫面字） | 特價 | 本規格新寫 | `bargain.label` |
 
 ## 無限試煉・頂欄、來客、說情、標題（{x} 由畫面代入）
@@ -580,7 +584,6 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字）・rewardNote | 點封面看唱片資訊、試聽。沒收的也都算認識了。 | 本規格新寫 | `seeds.ui.rewardNote` |
-| （畫面字）・bagOutMsg | 要放進來的是《{album}》。挑一張拿出來，它也算認識了。 | 本規格新寫 | `seeds.ui.bagOutMsg` |
 | （畫面字）・stakeSkipSub | 也算認識了 | 本規格新寫 | `seeds.ui.stakeSkipSub` |
 
 ## 無限試煉・結算與標題的紀錄
@@ -880,19 +883,34 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Pharoah Sanders《Tauhid》 | 「前面很安靜。後面不要被嚇到。」 | 本規格新寫 | `pitch#pharoah-sanders-tauhid` |
 | Magma《Mëkanïk Dëstruktïw Kömmandöh》 | 「法國的鼓手自創了一種語言，整張都用它來唱。」 | 本規格新寫 | `pitch#magma-mekanik-destruktiw-kommandoh` |
 
-## 推薦語・特價箱
+## 推薦語・舊特價箱（2026-11-16 換下，只剩舊存檔）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | Blur《The Great Escape》 | 「那年單曲贏了 Oasis，專輯輸了。」 | 本規格新寫 | `pitch#blur-the-great-escape` |
-| Oasis《Dig Out Your Soul》 | 「他們最後一張。兄弟倆隔年就拆夥了。」 | 本規格新寫 | `pitch#oasis-dig-out-your-soul` |
-| David Bowie《Never Let Me Down》 | 「連鮑伊都有這種時候。」 | 本規格新寫 | `pitch#david-bowie-never-let-me-down` |
 | The Velvet Underground《Squeeze》 | 「掛著 Velvet 的名字，裡面一個創團的人都沒有。」 | 本規格新寫 | `pitch#the-velvet-underground-squeeze` |
 | Stevie Wonder《Eivets Rednow》 | 「名字倒過來寫就是他。那年他才十八歲。」 | 本規格新寫 | `pitch#stevie-wonder-eivets-rednow` |
 | The Kinks《Preservation Act 1》 | 「搖滾歌劇的第一幕。第二幕更長。」 | 本規格新寫 | `pitch#the-kinks-preservation-act-1` |
 | Metallica《Reload》 | 「上一張的剩菜，隔年再端出來一次。」 | 本規格新寫 | `pitch#metallica-reload` |
 | Weezer《Van Weezer》 | 「學八〇年代的長髮金屬，學得很認真。」 | 本規格新寫 | `pitch#weezer-van-weezer` |
 | Ramones《Halfway to Sanity》 | 「第十張了，還是那三個和弦。」 | 本規格新寫 | `pitch#ramones-halfway-to-sanity` |
+
+## 推薦語・特價箱
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Oasis《Dig Out Your Soul》 | 「他們最後一張。兄弟倆隔年就拆夥了。」 | 本規格新寫 | `pitch#oasis-dig-out-your-soul` |
+| David Bowie《Never Let Me Down》 | 「連鮑伊都有這種時候。」 | 本規格新寫 | `pitch#david-bowie-never-let-me-down` |
+| Lady Gaga《ARTPOP》 | 「發片前說要掀起一場藝術革命。賣得比上一張少了一大截。」 | 本規格新寫 | `pitch#lady-gaga-artpop` |
+| Arcade Fire《Everything Now》 | 「整張在嘲笑消費主義，結果被樂評嘲笑得更兇。」 | 本規格新寫 | `pitch#arcade-fire-everything-now` |
+| The Strokes《Angles》 | 「主唱很少進錄音室，人聲錄好再用 email 寄給團員。」 | 本規格新寫 | `pitch#the-strokes-angles` |
+| Queensrÿche《Take Cover》 | 「一整張都在唱別人的歌。」 | 本規格新寫 | `pitch#queensryche-take-cover` |
+| Megadeth《Risk》 | 「鞭擊金屬改走流行搖滾，專輯名就叫《冒險》。」 | 本規格新寫 | `pitch#megadeth-risk` |
+| KISS《Hot in the Shade》 | 「卸了妝的那幾年。一張塞了十五首。」 | 本規格新寫 | `pitch#kiss-hot-in-the-shade` |
+| Limp Bizkit《Gold Cobra》 | 「吉他手回團，隔了八年的新專輯。聽起來還停在 2000 年。」 | 本規格新寫 | `pitch#limp-bizkit-gold-cobra` |
+| Eminem《Revival》 | 「被罵得太兇，他隔年突襲發了一張專輯罵回去。」 | 本規格新寫 | `pitch#eminem-revival` |
+| Daft Punk《Human After All》 | 「據說六個禮拜就錄完。這些歌到了巡演現場才真正活過來。」 | 本規格新寫 | `pitch#daft-punk-human-after-all` |
+| The Weeknd《Kiss Land》 | 「三張混音帶之後的第一張正式專輯。他說靈感來自恐怖片。」 | 本規格新寫 | `pitch#the-weeknd-kiss-land` |
 
 ## 推薦語・客人的唱片（二手店老闆）
 

@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-16｜dip-vinyl-shop｜game-lab 包包不限張數＋開局特價箱改「最高 3 星、三軸加總 ≤5」
+
+- **店主 11-16**：「手牌不要只限八張，可以無限多直到結束才重置；一開始只要給玩家王牌＋四張一般＋三張特價（星星最高三，加起來不高於五）。」主線解讀：「手牌」＝包包（對決手牌照舊 5 張）；「加起來不高於五」＝每一張自己三軸加總（可逆，寫在 `v5/bag/BRIEF.md`）。
+- **包包**：`CFG.bagMax = Infinity`（null／0／負數也當不限，sim 可 `--set bagMax=8` 對照）；收獎勵、買唱片、特價箱、收音機都不再強迫丟或賣；新動作 `sell {cardId}`（兩位客人之間、半價、老闆送的與種子不能賣、包包至少留 5 張）。包包面板重寫（標題固定、可捲、每張「賣 $半價」、確認列）；「包包 n 張」；場景包包條超過 8 張寫「+N」；第一次來客教學加第 4 句「用不到的唱片，點『包包』可以賣回，半價」，包包 10 張以上一次性提示。一趟結束照舊重置。
+- **特價箱**：新 12 張（經 Oasis《Dig Out Your Soul》、Lady Gaga《ARTPOP》、Arcade Fire《Everything Now》、The Strokes《Angles》；冷 Queensrÿche《Take Cover》、Bowie《Never Let Me Down》、Megadeth《Risk》、KISS《Hot in the Shade》；硬 Limp Bizkit《Gold Cobra》、Eminem《Revival》、Daft Punk《Human After All》、The Weeknd《Kiss Land》），新增 10 張卡烘進 `cards.js`（舊 358 張逐張不變）；分色改用 `bargainLane`（峰值軸、並列取後者），因為全卡池符合條件的照 topAttr 冷只有 1 張；舊 7 張進 `C.bargain.retired`；舊存檔停在「特價箱還沒挑」時 `engine.fixBargain` 重擺。店景特價箱兩張封面換成 Daft Punk、Lady Gaga。
+- **流程**：引擎 → 介面 → 四組模擬比較 → 邏輯／體驗審查＋對抗驗證（確認 5 項：舊存檔舊特價箱、bagMax null 邊界、先賣子面板捲動跳頂、長包包先賣排序、新玩家不知道能賣回）→ 全修。中途 WIP 備份提交。
+- **模擬（smart 8000 趟）**：門檻 T1–T7 四組全過（`?apex=1` 也過）。特價箱換牌對深度沒影響（會讀的 90／102.0 → 90／101.9）；新手前三位死 1.9%→3.1%（門檻 ≤5%）。包包不限讓會讀的少走約 5 位（90→85、到第 100 位 43.3%→38.6%），新手不變（16）；主因是老闆送的 4 張整趟拿不掉（舊規則滿 8 會被迫換掉）。none 流程（不能賣）會讀的 68→52。**待店主**：要不要 R1「收獎勵時可順手拿出一張」（試跑會讀的 95，略比改動前容易）。報告 `v5/bag/sim-results.md`。
+- **主要檔案**：`game-lab/{engine.js,content.js,cards.js,ui.js,econ.js,econ.css,style.css,tutorial.js,sim.mjs,index.html,README.md,LINES-REVIEW.md,pool-index.json,shops/dip.json,dev/econ-harness.html}`、`game-lab/tools/{deck-lists.json,pitches.json,check-content.mjs,lint-copy.mjs}`、`game-lab/test/{engine,tutorial}.test.mjs`、`game-lab/tests/{e2e-econ,e2e.spec,e2e-apex}.mjs`。`?v=72`。
+- **驗證**：check-content／lint-copy／check-shops／check-covers／build-pool-index 通過；engine 2,327,462、tutorial 505,169 全過（主線複跑）；e2e-econ 390 27/27、e2e-apex 375 18/18（主線複跑），fix 棒全套 e2e 全過。**沒驗**：真 iPhone。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 頂點卡試做：標題「跳過序章，直接開打」（只在 `?apex=1`）
 
 - **店主 11-16**：「給我一個可以跳過序章、直接玩輔助卡版本的選項」。

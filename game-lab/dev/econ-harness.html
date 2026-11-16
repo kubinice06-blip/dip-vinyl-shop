@@ -36,7 +36,7 @@
         <button class="h" data-m="duel">對決中</button><button class="h" data-m="title">標題（沒有 run）</button>
       </div>
       <div class="row"><b>錢</b><button class="h" data-money="800">$800</button><button class="h" data-money="150">$150</button><button class="h" data-money="0">$0</button>
-        <b>包包</b><button class="h" data-bag="8">8</button><button class="h" data-bag="5">5</button>
+        <b>包包</b><button class="h" data-bag="24">24</button><button class="h" data-bag="8">8</button><button class="h" data-bag="5">5</button>
         <b>配件</b><button class="h" data-rel="2">2</button><button class="h" data-rel="3">3</button></div>
       <pre class="st" id="st"></pre>
     </div>
@@ -127,7 +127,7 @@
   function upd() {
     var r = H.run;
     $('#nsub').textContent = r ? (r.prologue === 'pending' ? '序章' : r.duel ? '對決中' : E.canBargainPick(r) ? '特價箱還沒挑' : '') : '（沒有 run）';
-    $('#bagline').innerHTML = r ? '<button type="button" class="bag">' + EC.moneyHTML(r.money) + '</button><button type="button" class="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
+    $('#bagline').innerHTML = r ? '<button type="button" class="bag">' + EC.moneyHTML(r.money) + '</button><button type="button" class="bag">包包 <b>' + r.bag.length + '</b> 張</button>' +
       '<button type="button" class="rl"><span class="k">發燒配件</span>' + r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + '</button>' : '';
     $('#st').textContent = r ? ('mode ' + H.o.mode + '　$' + r.money + '　包包 ' + r.bag.length + '　配件 ' + r.relics.join(',') + '　canShop ' + E.canShop(r) + '　canBargainPick ' + E.canBargainPick(r) +
       '\n櫃檯 ' + r.shop.relics.join(',') + '　特價 ' + r.shop.bargain.length + ' 張\n' + JSON.stringify(EC.debug())) : 'mode title（沒有 run）\n' + JSON.stringify(EC.debug());
