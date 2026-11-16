@@ -434,6 +434,9 @@ async function runSize(browser, w, h) {
       await tapSel(page, '.ec-drawer [data-a=buy]'); await sleep(350);
       const bd = await dbg(page), bm = await measure(page);
       panels.push(['錢不夠先賣（包包 24 張，格子捲）', bm]);
+      // 格子自己捲時列高照內容：第二列的格子在第一列封面的下面（不疊在一起）
+      const ov = await page.evaluate(() => { const t = [...document.querySelectorAll('.ec-drawer .ec-spick')], a = t[0] && t[0].querySelector('.ec-tcv').getBoundingClientRect(), b = t[4] && t[4].getBoundingClientRect();
+        return a && b ? { ok: b.top >= a.bottom - 0.5, a: Math.round(a.bottom), b: Math.round(b.top) } : { ok: false }; });
       const bvis = await shown(page, 'bin:hiphop');
       await page.evaluate(() => { const g = document.querySelector('.ec-drawer .ec-grid'); if (g) g.scrollTop = g.scrollHeight; }); await sleep(200);
       const lastIn = await page.evaluate(id => { const g = document.querySelector('.ec-drawer .ec-grid'), t = document.querySelector(`.ec-drawer .ec-spick[data-cid="${id}"]`); if (!g || !t) return false;
@@ -444,11 +447,11 @@ async function runSize(browser, w, h) {
         const picked = (await dbg(page)).sub.picks.slice();
         await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
         const b1 = await run(page), bd1 = await dbg(page);
-        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && picked.join() === big.last &&
+        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && ov.ok && picked.join() === big.last &&
           b1.money === big.money + big.v - big.price && b1.bag.length === 24 && !b1.bag.includes(big.last) && b1.bag.includes(big.id) && !bd1.sub;
-        sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}）、箱子沒被蓋到 ${bvis.ok}；捲到底最後一張看得到 ${lastIn}、選了 ${picked.join()}；賣 +${big.v} 買 $${big.price}：$${big.money} → $${b1.money}、包包 ${b1.bag.length}`;
+        sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}；第二列 ${ov.b} ≥ 第一列封面下緣 ${ov.a}）、箱子沒被蓋到 ${bvis.ok}；捲到底最後一張看得到 ${lastIn}、選了 ${picked.join()}；賣 +${big.v} 買 $${big.price}：$${big.money} → $${b1.money}、包包 ${b1.bag.length}`;
       } else {
-        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn;
+        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && ov.ok;
         sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}）、箱子沒被蓋到 ${bvis.ok}；捲到底最後一張看得到 ${lastIn}（最後一張賣回價不夠買，不賣）`;
       }
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
