@@ -1656,6 +1656,8 @@
         '<button type="button" class="lb-btn big wide key" data-a="quiet">安靜地推門</button>' +
         (overRun ? '<button type="button" class="lb-btn wide" data-a="end">' + esc(TU('lastSummary')) + '</button>' : '');
     }
+    // 頂點卡試做（?apex=1，店主 11-16）：跳過序章、直接開打（不走旁白、捏人、序章、挑種子；特價箱照策略自動挑三張）→ 來客畫面跳挑王牌面板
+    if (UI.apex) h += '<button type="button" class="lb-btn wide col key" data-a="skip">' + esc(AU('skip')) + '<span class="sub">' + esc(AU('skipSub')) + '</span></button>';
     h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
@@ -1693,6 +1695,15 @@
           return;
         }
         pushDoor(act === 'push');
+      } else if (act === 'skip') {
+        if (hasRun && armed !== 'skip') {                                    // 有一趟在打：跟重新推門一樣，再按一次才放棄
+          armed = 'skip'; armedAt = now();
+          qsa('[data-a=push],[data-a=quiet],[data-a=skip]', box).forEach(function (x) { x.classList.toggle('armed', x === b); });
+          b.textContent = AU('skipAgain'); box.classList.add('warned'); sfx('tick');
+          return;
+        }
+        if (hasRun && now() - armedAt < 300) return;
+        skipToApex();
       } else if (act === 'end') go('end');
       else if (act === 'cont') {
         UI.going = true;
@@ -1702,6 +1713,29 @@
       }
     });
   };
+  // 跳過序章、直接玩輔助卡版（?apex=1，店主 11-16）：放棄進行中的那一趟 → 開一趟非序章的（王牌沿用上次那派／那張，沒有就殿堂預設）
+  //   → 特價箱照引擎策略自動挑三張 → 來客畫面；挑王牌面板由 apexIntroOnNight 跳（每次走這條路都跳，讓你換一張再打）
+  function skipToApex() {
+    if (UI.going || !UI.apex) return;
+    var f = FX(), want = save.settings.sound !== false;
+    if (f) { try { if (f.init) f.init(); f.unlockFromGesture(want); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
+    if (save.settings.sound == null) save.settings.sound = want;
+    ensurePlayer();
+    abandonRun(save.run); save.run = null;
+    var tier = TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : 'hall';
+    createRun({ ace: tier, prologue: false, seeds: [] });
+    var r = save.run;
+    if (r && E.canBargainPick(r)) {
+      var ch = E.bargainPolicy ? E.bargainPolicy(r, C) : null;
+      var ids = (ch && Array.isArray(ch.ids)) ? ch.ids : r.shop.bargain.slice(0, E.CFG.bargainPick || 3);
+      var res = E.choose(r, C, { type: 'bargainPick', ids: ids.slice() });
+      if (res && res.ok) res.effects.forEach(function (x) { if (x.gainCard) gotCard(r, x.gainCard); });
+    }
+    save.seen.apexPick = false;                          // 每次走這條路都跳挑王牌面板
+    persist();
+    tlog('apex', 'skip', { tier: tier });
+    go('night');
+  }
   function pushDoor(withSound) {
     if (UI.going) return;
     UI.going = true;
