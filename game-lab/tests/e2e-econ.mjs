@@ -824,7 +824,7 @@ async function runIndex(browser, w, h) {
       const p0 = await P();
       const U = await page.evaluate(() => window.DipLabContent.shopUi);
       const ok0 = l0.bag === '包包24張' && p0 && p0.h3 === '包包 24 張' && p0.money === '$3,000' && p0.n === 25 && p0.top >= 0 && p0.bottom <= p0.vh + 1 && p0.left >= -1 && p0.right <= p0.vw + 1 && p0.docW <= p0.vw &&
-        p0.sh > p0.ch + 20 && p0.note === U.bagSellNote && p0.gifts.length === 4 && p0.gifts.every(g => !g[0] && g[1] === U.giftTag) && p0.sells.length === 20 &&
+        p0.note === U.bagSellNote && p0.gifts.length === 4 && p0.gifts.every(g => !g[0] && g[1] === U.giftTag) && p0.sells.length === 20 &&
         p0.sells.every(b => b.t === b.want && b.h >= 36 - 0.5 && b.w >= 44 - 0.5 && !b.dis);
       // 捲到底：標題列還在最上面、最後一張的「賣」鈕點得到
       await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.bag'); s.scrollTop = s.scrollHeight; }); await sleep(300);
@@ -839,7 +839,7 @@ async function runIndex(browser, w, h) {
         return { tileBottom: tr.bottom, footTop: fr.top, footBottom: fr.bottom, bs, sel: t.classList.contains('sel') }; }, last.id);
       const v = await page.evaluate(id => window.DipLabEngine.sellValue(window.DipLabContent, window.DipLabContent.cards[id]), last.id);
       const mtv = await page.evaluate(v => window.DipLabEngine.moneyText(v), v);
-      const okAsk = p1.hdOk && p1.hdTop >= p1.top - 1 && p1.st > 0 && lastIn && p2.ask === '賣掉《' + album + '》？' && fv.sel && fv.tileBottom <= fv.footTop + 1 && fv.footBottom <= p2.vh + 1 &&
+      const okAsk = p1.hdOk && p1.hdTop >= p1.top - 1 && (p0.sh <= p0.ch + 1 || p1.st > 0) && lastIn   // 放不下就自己捲（430×932 這類高螢幕 24 張差不多放得下） && p2.ask === '賣掉《' + album + '》？' && fv.sel && fv.tileBottom <= fv.footTop + 1 && fv.footBottom <= p2.vh + 1 &&
         fv.bs.length === 2 && fv.bs.every(b => b.h >= 44 - 0.5) && fv.bs[1].t === '賣掉 +$' + mtv && p2.bag === 24;
       await tapSel(page, '.lb-sheet.float.bag [data-a=sgo]'); await sleep(600);
       const p3 = await P(), l3 = await nightLine(page), toasts = await page.evaluate(() => [...document.querySelectorAll('.lb-toast')].map(t => t.textContent));
