@@ -445,10 +445,11 @@ async function run() {
               tutorialDone: true, prologueDone: true, lastAce: 'hall', lastBargain: null }));
           });
           await openTitle(page, Q());
-          const mig = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, id = C.aces.hall; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, known: !!S.shelf[id] && !S.shelf[id].own, giftsOwn: C.gifts.hall.every(g => S.shelf[g] && S.shelf[g].own && S.shelf[g].src === 'gift'), relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
+          const mig = await page.evaluate(() => { const S = window.__lab.save, C = window.DipLabContent, id = C.aces.hall; return { v: S.v, run: S.run, shelf: Object.keys(S.shelf).length, known: !!S.shelf[id] && !!S.shelf[id].own && S.shelf[id].src === 'start', giftsOwn: C.gifts.hall.every(g => S.shelf[g] && S.shelf[g].own && S.shelf[g].src === 'gift'), relics: S.relics, runs: S.runs.length, runNo: S.runs[0] && S.runs[0].runNo, best: S.best, nights: 'nights' in S, unlocks: 'unlocks' in S, learned: !!S.learned.L1, fast: S.settings.fastAnim, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]'), lastAce: S.lastAce, runSeq: (S.runSeq || {})['20261106'] }; });
           await openTitle(page, Q());
           mig.lastAce2 = await page.evaluate(() => window.__lab.save.lastAce);
           // v4 → v5 → v6：唱片櫃那張留成「認識」；挑過的王牌（lastAce hall）那組送的四張算擁有（一晚版沒有位數：不算打倒藏家）
+          //   解鎖制（店主 11-16）：那張（殿堂預設）就是 lastAce 那派的頂點卡＝載入時補記成擁有（src start），known 改看這個
           const migOk = mig.v === 6 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
             mig.lastAce === 'hall' && mig.runSeq === 1 && mig.lastAce2 === 'hall';   // 審查 #1：lastAce 遷移後、重新整理後都留著；#5：同一天第幾趟的計數器從舊的一晚接著數
           record(11, size, !bad.length && ks.v === 6 && old.v === 6 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
@@ -1334,6 +1335,7 @@ async function run() {
           const ids = Object.keys(C.cards).filter(id => !C.cards[id].tier && !C.gifts.hall.includes(id) && id !== BR).sort((x, y) => E.peak(C.cards[y]) - E.peak(C.cards[x]) || E.power(C.cards[y]) - E.power(C.cards[x])).slice(0, 4);
           const s = window.__lab.save; s.prologueDone = true; s.tutorialDone = true; s.lastAce = 'hall';
           s.runs = [{ seedKey: 'e2e', runNo: 1, ace: 'hall', result: 'lose', reached: 3, bestStreak: 1, taken: 5, wins: 1 }];
+          window.__lab.own([C.aces.hall], 'start');          // 解鎖制：序章挑殿堂＝初始流派那張擁有（createRun 會記；不然重新整理會當舊存檔補記、出一次吐司）
           window.__lab.own(ids, 'run'); return ids; }, BR);
         await openTitle(page, Q('&fast=1'));
         const b0 = await page.evaluate(() => ({ bring: window.__lab.save.bring, toasts: window.__toasts.slice() }));
