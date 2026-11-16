@@ -2128,5 +2128,228 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     console.log('     biggest bag in 24 runs: ' + maxBag); }
 });
 
+section('22 流派與頂點卡靠遊戲解鎖（店主 11-16）：被剋鏈（三種初始流派）、藏家每輪帶的卡、旗標開收試做卡（每張一次、可重現）、換派限制、舊存檔遷移與舊 run 補快照、不碰 run.rng', () => {
+  const A = C.aces, TB = EN.TIER_BEATS, ALL = EN.apexCards(C), DEF = TIERS.map(t => A[t]);
+  const shelfOf = (ids, src) => { const o = {}; for (const id of ids) o[id] = { at: '', seen: true, own: true, src: src || 'boss' }; return o; };
+  // 打到第 pos 位（序章、特價箱照做；每位都硬贏；領獎照 runPolicy）；回每一位的 finishFight
+  const winTo = (run, pos, o = {}) => {
+    const out = [];
+    if (EN.canBargainPick(run)) EN.choose(run, C, EN.bargainPolicy(run, C));
+    for (let g = 0; g < 400 && !run.over && run.pos <= pos; g++) {
+      if (run.pos === pos && !run.pending && run.prologue !== 'pending') break;
+      const f = EN.startFight(run, C, o.apex ? { apex: true } : {}); let h = 0;
+      if (o.onFight) o.onFight(run, f);
+      while (!f.duel.over && h++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+      out.push(EN.finishFight(run, C)); settleAll(run);
+    }
+    return out;
+  };
+  // (a) 常數與純函式
+  for (const t of TIERS) ok(EN.BEATS[EN.TIER_AXIS[t]] === EN.TIER_AXIS[TB[t]], t + ' beats ' + TB[t] + '（冷剋經、經剋硬、硬剋冷）');
+  eq([TB.pearl, TB.hall, TB.heresy], ['hall', 'heresy', 'pearl'], '流亡→殿堂、殿堂→異端、異端→流亡');
+  eq(EN.unlockChain('pearl'), ['pearl', 'hall', 'heresy'], 'chain from 流亡'); eq(EN.unlockChain('hall'), ['hall', 'heresy', 'pearl'], 'chain from 殿堂'); eq(EN.unlockChain('heresy'), ['heresy', 'pearl', 'hall'], 'chain from 異端');
+  for (const t of TIERS) { const ch = EN.unlockChain(t); ok(EN.nextUnlock([t]) === ch[1] && EN.nextUnlock([t, ch[1]]) === ch[2] && EN.nextUnlock([ch[1], t]) === ch[2], 'nextUnlock follows the chain from ' + t); }
+  ok(EN.nextUnlock([]) === null && EN.nextUnlock(TIERS) === null && EN.nextUnlock(['pearl', 'heresy']) === 'hall' && EN.nextUnlock(['x']) === null, 'nextUnlock: none / all / off-chain pair → the one left');
+  ok(ALL.length === 45 && new Set(ALL).size === 45 && TIERS.every(t => EN.apexCards(C, t)[0] === A[t] && EN.apexCards(C, t).length === 15 && EN.apexCards(C, t).every(id => EN.tierOfApex(C, id) === t)), 'apexCards: 3 × 15, default first, tier right', ALL.length);
+  ok(EN.tierOfApex(C, A.hall) === 'hall' && EN.tierOfApex(C, C.gifts.hall[0]) === null && EN.tierOfApex(C, 'nope') === null && EN.tierOfApex(C, null) === null, 'tierOfApex');
+  const tr = t => EN.apexList(C, t)[5].card;   // 一張試做卡
+  for (const owned of [[A.hall, tr('heresy')], id => id === A.hall || id === tr('heresy'), { [A.hall]: true, [tr('heresy')]: { own: true } }, shelfOf([A.hall, tr('heresy')])])
+    eq(EN.unlockedTiers(C, owned), ['hall', 'heresy'], 'unlockedTiers: any apex card owned (array / fn / map / shelf)');
+  eq(EN.unlockedTiers(C, { [A.pearl]: { at: '', seen: true } }), [], 'known only (not owned) does not unlock');
+  eq(EN.unlockedTiers(C, [], { start: 'pearl' }), ['pearl'], 'start always unlocked'); eq(EN.unlockedTiers(C, [C.gifts.hall[0]]), [], 'gifts do not unlock');
+  eq(EN.ownedApex(C, [tr('heresy')], { start: 'pearl' }), [A.pearl, A.heresy, tr('heresy')], 'ownedApex: owned + defaults of unlocked tiers, in TIERS/list order');
+  ok(!EN.ownedApex(C, [], { start: 'pearl' }).includes(tr('pearl')) && EN.ownedApex(C, [], { tiers: [] }).length === 0, 'ownedApex: trial cards only when owned');
+
+  // (b) 被剋鏈（旗標關）：三種初始流派、新玩家第一趟：第 1 輪藏家帶初始派剋的那派預設那張、第 2 輪下一派、三派都開後照舊 content.aces[run.bossAce]
+  for (const start of TIERS) {
+    const ch = EN.unlockChain(start);
+    const run = EN.newRun(C, { seedKey: 'ul-' + start, runNo: 1, ace: start, unlocked: [], start });
+    const legacy = EN.newRun(C, { seedKey: 'ul-' + start, runNo: 1, ace: start });
+    eq(run.unlock, { tiers: [start], start, apex: null }, start + ': new player → only the start tier');
+    ok(run.bossCard === A[ch[1]] && run.rng === legacy.rng && run.bossAce === legacy.bossAce && JSON.stringify(run.shop) === JSON.stringify(legacy.shop) && JSON.stringify(run.order) === JSON.stringify(legacy.order),
+      start + ': round 1 boss carries ' + ch[1] + '; run.rng／bossAce／shop／order same as the old run', [run.bossCard, run.rng, legacy.rng]);
+    ok(!('unlock' in legacy) && !('acesWon' in legacy) && !('bossCard' in legacy), 'no unlocked → no new fields');
+    ok(EN.roundGuests(run, C)[4].hasAce, 'boss shows hasAce');
+    let deckAce = null; const res = winTo(run, 16, { onFight: (r, f) => { if (f.duel.e.boss) deckAce = (deckAce || []).concat([f.duel.e.deckIds.filter(id => EN.tierOfApex(C, id))]); } });
+    const boss = res.filter(x => x.cls === 'boss');
+    ok(boss.length === 3 && run.pos === 16, start + ': beat 3 bosses', [boss.length, run.pos]);
+    eq(deckAce, [[A[ch[1]]], [A[ch[2]]], [A[legacy.bossAce]]], start + ': the boss deck holds exactly that one apex card each round');
+    eq(boss.map(x => [x.aceWon, x.aceFirst, x.aceNew, x.aceUnlock]), [[A[ch[1]], true, true, ch[1]], [A[ch[2]], true, true, ch[2]], [A[legacy.bossAce], false, false, null]],
+      start + ': aceWon chain ' + ch.join('→') + ', then the old pick (already collected)');
+    eq(run.acesWon, [A[ch[1]], A[ch[2]]], start + ': acesWon'); eq(EN.runSummary(run).aces, [A[ch[1]], A[ch[2]]], 'runSummary.aces');
+    eq(EN.unlockTiersOf(run, C), TIERS, 'all unlocked by the end'); ok(run.bossCard === A[legacy.bossAce], 'round 4: old behaviour');
+    ok(res.filter(x => x.cls !== 'boss').every(x => x.aceWon == null && !x.aceFirst && x.aceUnlock == null), 'only the boss gives an apex card');
+  }
+  // 「收了幾張」：每張新卡 +1（舊行為：一趟只算一次）
+  { const run = EN.newRun(C, { seedKey: 'ul-taken', runNo: 2, ace: 'hall', prologue: false, unlocked: [] }); winTo(run, 1); const t0 = run.taken;
+    winTo(run, 6); const t1 = run.taken; const r5 = run.stats.taken.length; winTo(run, 11); const t2 = run.taken, r10 = run.stats.taken.length; winTo(run, 16);
+    ok(t1 - t0 - r5 === 1 && t2 - t1 - (r10 - r5) === 1 && run.taken - t2 - (run.stats.taken.length - r10) === 0, 'taken: +1 per new apex card (2 new, then a repeat)', [t0, t1, t2, run.taken]); }
+  // 跨趟（存檔裡的「擁有」帶到下一趟）：第二趟從已解鎖的接著鏈
+  for (const start of TIERS) {
+    const ch = EN.unlockChain(start);
+    const r2 = EN.newRun(C, { seedKey: 'ul2-' + start, runNo: 2, ace: start, prologue: false, unlocked: [start, ch[1]] });
+    ok(r2.bossCard === A[ch[2]], start + ': next run with 2 tiers → the boss carries the last one');
+    const r2b = EN.newRun(C, { seedKey: 'ul2-' + start, runNo: 2, ace: ch[1], prologue: false, unlocked: [start, ch[1]] });
+    ok(r2b.bossCard === A[ch[2]], start + ': playing the 2nd tier → still the last one');
+    const r3 = EN.newRun(C, { seedKey: 'ul3-' + start, runNo: 2, ace: start, prologue: false, unlocked: TIERS });
+    ok(r3.bossCard === A[r3.bossAce] && r3.bossAce !== start, start + ': all unlocked, flag off → old pick');
+    const off = EN.newRun(C, { seedKey: 'ul4-' + start, runNo: 2, ace: start, prologue: false, unlocked: ['pearl', 'heresy'].includes(start) ? ['pearl', 'heresy'] : ['hall', 'pearl'] });
+    ok(off.bossCard === A[EN.nextUnlock(off.unlock.tiers)], 'off-chain pair (old saves) → the one left');
+  }
+
+  // (c) 旗標開（apexOwned）：先照鏈解鎖新派（那派預設那張），三派都開後每輪帶一張還沒擁有的試做卡（先別派、別派收齊才你這派）；每張一次；可重現
+  for (const start of TIERS) {
+    const mk = () => EN.newRun(C, { seedKey: 'ulx-' + start, runNo: 2, ace: start, prologue: false, unlocked: [], start, apexOwned: [] });
+    const run = mk(), ch = EN.unlockChain(start);
+    eq(run.unlock.apex, [], 'flag on, new player: owns nothing but the start default'); eq(EN.ownedApexOf(run, C), [A[start]], 'ownedApexOf = start default');
+    const res = winTo(run, 5 * 12 + 1).filter(x => x.cls === 'boss');
+    ok(res.length === 12, 'flag on: 12 bosses', res.length);
+    ok(res[0].aceWon === A[ch[1]] && res[1].aceWon === A[ch[2]] && res[0].aceUnlock === ch[1] && res[1].aceUnlock === ch[2], start + ': chain first (defaults)');
+    const trial = res.slice(2).map(x => x.aceWon);
+    ok(trial.every(id => id && !DEF.includes(id)) && new Set(trial).size === 10, start + ': then 10 different trial cards', trial);
+    ok(res.every(x => x.aceFirst && x.aceNew) && res.slice(2).every(x => x.aceUnlock == null), 'each new, collected once');
+    ok(trial.every(id => EN.tierOfApex(C, id) !== start), start + ': other tiers first (28 left there)');
+    eq(run.acesWon, res.map(x => x.aceWon), 'acesWon = every card, in order');
+    const again = mk(); winTo(again, 5 * 12 + 1); eq(again.acesWon, run.acesWon, start + ': reproducible (same seed → same cards)');
+    // 別派收齊 → 你這派
+    const others = ALL.filter(id => EN.tierOfApex(C, id) !== start);
+    const late = EN.newRun(C, { seedKey: 'ulx-own-' + start, runNo: 2, ace: start, prologue: false, unlocked: TIERS, apexOwned: others });
+    ok(late.bossCard && EN.tierOfApex(C, late.bossCard) === start && !DEF.includes(late.bossCard), start + ': other tiers done → a card of your own tier', late.bossCard);
+    const full = EN.newRun(C, { seedKey: 'ulx-full-' + start, runNo: 2, ace: start, prologue: false, unlocked: TIERS, apexOwned: ALL });
+    ok(full.bossCard === A[full.bossAce], start + ': all 45 owned → old pick');
+  }
+  // 不同輪抽不同張（雜湊照輪）；不碰 run.rng
+  { const a = EN.newRun(C, { seedKey: 'ulx-h', runNo: 3, ace: 'pearl', prologue: false, unlocked: TIERS, apexOwned: [] }), rng0 = a.rng, seen = new Set();
+    for (let r = 1; r <= 8; r++) { a.round = r; seen.add(EN.bossCardFor(a, C)); }
+    ok(seen.size >= 6 && a.rng === rng0, 'different rounds → different cards (hash per round), rng untouched', seen.size); }
+  // newRun 的 aceId：旗標開要擁有才收
+  { const own = tr('pearl'), not = EN.apexList(C, 'pearl')[7].card;
+    const r1 = EN.newRun(C, { seedKey: 'ulx-id', runNo: 2, ace: 'pearl', prologue: false, unlocked: ['pearl'], apexOwned: [own], aceId: own });
+    const r2 = EN.newRun(C, { seedKey: 'ulx-id', runNo: 2, ace: 'pearl', prologue: false, unlocked: ['pearl'], apexOwned: [own], aceId: not });
+    const r3 = EN.newRun(C, { seedKey: 'ulx-id', runNo: 2, ace: 'pearl', prologue: false, unlocked: ['pearl'], aceId: not });
+    ok(r1.aceId === own && !('aceId' in r2) && r3.aceId === not, 'aceId: owned kept / unowned dropped (flag on) / flag off not checked'); }
+
+  // (d) 換派：只在一趟開頭；只能換到解鎖的派、擁有的卡；錯的不改 run
+  { const untouched = (run, fn, err, name) => { const b = JSON.stringify(run), r = fn(); ok(!r.ok && r.error === err && JSON.stringify(run) === b, name, r); };
+    const run = EN.newRun(C, { seedKey: 'ul-sw', runNo: 2, ace: 'pearl', prologue: false, unlocked: [] });
+    eq(EN.aceChoices(run, C), { tiers: ['pearl'], apex: null }, 'aceChoices: new player, flag off');
+    untouched(run, () => EN.switchAce(run, C, 'hall'), 'locked', 'switch to a locked tier → locked');
+    untouched(run, () => EN.switchAce(run, C, 'heresy'), 'locked', 'switch to a locked tier → locked (2)');
+    untouched(run, () => EN.switchAce(run, C, 'pearl'), 'same', 'same tier → same');
+    const r2 = EN.newRun(C, { seedKey: 'ul-sw2', runNo: 2, ace: 'pearl', prologue: false, unlocked: ['pearl', 'hall'] });
+    ok(EN.switchAce(r2, C, 'hall').ok && r2.ace === 'hall' && r2.bossCard === A.heresy, 'switch to an unlocked tier → ok, boss still carries the last locked one');
+    untouched(r2, () => EN.switchAce(r2, C, 'heresy'), 'locked', 'still locked after switching');
+    const own = tr('hall'), not = EN.apexList(C, 'hall')[9].card;
+    const r3 = EN.newRun(C, { seedKey: 'ul-sw3', runNo: 2, ace: 'pearl', prologue: false, unlocked: ['pearl', 'hall'], apexOwned: [own] });
+    eq(EN.aceChoices(r3, C), { tiers: ['hall', 'pearl'], apex: [A.hall, own, A.pearl] }, 'aceChoices: flag on');
+    untouched(r3, () => EN.switchAce(r3, C, 'hall', { aceId: not }), 'notOwned', 'unowned card → notOwned');
+    untouched(r3, () => EN.switchAce(r3, C, 'pearl', { aceId: EN.apexList(C, 'pearl')[3].card }), 'notOwned', 'unowned card in your own tier → notOwned');
+    untouched(r3, () => EN.switchAce(r3, C, 'heresy', { aceId: A.heresy }), 'locked', 'locked tier with its default → locked');
+    ok(EN.switchAce(r3, C, 'hall', { aceId: own }).ok && r3.aceId === own, 'owned card of an unlocked tier → ok');
+    ok(EN.switchAce(r3, C, 'hall', { aceId: A.hall }).ok && r3.aceId === A.hall, 'back to the default of that tier → ok');
+    // 時機：只在第 1 位開打前（序章那一趟＝序章打完後）；notNow 先於 locked
+    const p = EN.newRun(C, { seedKey: 'ul-sw4', runNo: 1, ace: 'heresy', unlocked: ['heresy', 'pearl'] });
+    ok(!EN.canSwitchAce(p, C), 'prologue pending → cannot switch');
+    winTo(p, 1); ok(EN.canSwitchAce(p, C) && p.pos === 1 && p.prologue === 'done', 'prologue done, pos 1 → can switch');
+    const f = EN.startFight(p, C, {}); ok(!EN.canSwitchAce(p, C), 'first fight started → cannot');
+    while (!f.duel.over) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); EN.finishFight(p, C); settleAll(p);
+    untouched(p, () => EN.switchAce(p, C, 'pearl'), 'notNow', 'mid-run, unlocked tier → notNow');
+    untouched(p, () => EN.switchAce(p, C, 'hall'), 'notNow', 'mid-run, locked tier → notNow first');
+    ok(!EN.canSwitchAce(p, C) && p.pos === 2, 'pos 2 → cannot'); }
+
+  // (e) 舊存檔遷移（BRIEF 第 6 條）：已解鎖＝lastAce ∪ 擁有頂點卡的派；擁有的試做卡＝唱片櫃擁有的；lastAce 那派預設補記擁有
+  { const sh = Object.assign(shelfOf([A.heresy], 'boss'), { [A.pearl]: { at: 'x#1', seen: true }, [tr('hall')]: { at: 'x#1', seen: true }, [tr('heresy')]: { at: '', seen: true, own: true, src: 'boss' } });
+    const m = EN.unlockMigrate(C, sh, 'pearl');
+    eq(m, { tiers: ['pearl', 'heresy'], apex: [A.pearl, A.heresy, tr('heresy')], own: [A.pearl] }, 'migrate: lastAce + boss tiers; known-only trial not owned; own lastAce default');
+    eq(EN.unlockMigrate(C, Object.assign({}, sh, { [A.pearl]: { own: true, src: 'start' } }), 'pearl').own, [], 'already owned → nothing to add (runs every load)');
+    eq(EN.unlockMigrate(C, sh, null), { tiers: ['heresy'], apex: [A.heresy, tr('heresy')], own: [] }, 'no lastAce → only owned tiers');
+    eq(EN.unlockMigrate(C, {}, 'bogus'), { tiers: [], apex: [], own: [] }, 'brand new save → nothing');
+    // v5 → v6 遷移過的（藏家王牌 src 'boss'）＋lastAce：照樣接著鏈
+    const t = EN.unlockMigrate(C, shelfOf([A.hall], 'boss'), 'heresy');
+    ok(EN.nextUnlock(t.tiers) === 'pearl', 'old save (heresy + boss hall) → next is pearl'); }
+  // 舊的進行中 run（沒有 run.unlock）：fixUnlock 補快照
+  { // 第 2 輪、打過第 1 輪藏家（他帶 content.aces[run.bossAce]）
+    const run = EN.newRun(C, { seedKey: 'ul-fix', runNo: 2, ace: 'hall', prologue: false }); winTo(run, 7);
+    ok(run.aceWon && !run.unlock, 'legacy run in round 2');
+    const won = A[run.bossAce], ok1 = EN.fixUnlock(run, C, { unlocked: EN.unlockedTiers(C, [won], { start: 'hall' }) });
+    ok(ok1 && run.unlock && JSON.stringify(run.acesWon) === JSON.stringify([won]) && run.unlock.start === 'hall', 'fixUnlock: snapshot, the boss card counts as won this run', run.unlock);
+    ok(run.bossCard === A[EN.nextUnlock(['hall', run.bossAce])] && !EN.fixUnlock(run, C, { unlocked: EN.unlockedTiers(C, [won], { start: 'hall' }) }), 'fixUnlock: chain boss card; second call → no change');
+    ok(!EN.fixUnlock(run, C, {}) && !EN.fixUnlock(null, C, { unlocked: [] }), 'fixUnlock: needs o.unlocked');
+    // 還在第 1 位、王牌是沒擁有的試做卡（旗標開）→ 回預設；擁有的 → 留著
+    const x = EN.apexList(C, 'pearl')[4].card;
+    const a = EN.newRun(C, { seedKey: 'ul-fix2', runNo: 2, ace: 'pearl', prologue: false, aceId: x });
+    EN.fixUnlock(a, C, { unlocked: ['pearl'], apexOwned: [] }); ok(!('aceId' in a), 'unowned trial ace at pos 1 → default');
+    const b = EN.newRun(C, { seedKey: 'ul-fix2', runNo: 2, ace: 'pearl', prologue: false, aceId: x });
+    EN.fixUnlock(b, C, { unlocked: ['pearl'], apexOwned: [x] }); ok(b.aceId === x, 'owned trial ace kept');
+    // 藏家那場打到一半：這一輪的卡＝他牌單裡那張；打完收的就是它
+    const c2 = EN.newRun(C, { seedKey: 'ul-fix3', runNo: 2, ace: 'heresy', prologue: false }); winTo(c2, 5);
+    const f = EN.startFight(c2, C, {}), had = f.duel.e.deckIds.find(id => EN.tierOfApex(C, id));
+    EN.fixUnlock(c2, C, { unlocked: ['heresy'] });
+    ok(c2.bossCard === had && had === A[c2.bossAce], 'mid boss duel → bossCard = his deck card');
+    while (!f.duel.over) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+    const out = EN.finishFight(c2, C); ok(out.aceWon === had && out.aceFirst && out.aceNew && out.aceUnlock === c2.bossAce, 'finishing it → aceWon = that card (unlocks his tier)', out);
+    settleAll(c2); ok(c2.pos === 6 && c2.bossCard === A[EN.nextUnlock(EN.unlockTiersOf(c2, C))], 'next round → chain again', [c2.bossCard, EN.unlockTiersOf(c2, C)]);
+    // 剛打完藏家在領獎：不動
+    const d2 = EN.newRun(C, { seedKey: 'ul-fix4', runNo: 2, ace: 'hall', prologue: false }); winTo(d2, 5); forceWin(d2);
+    ok(d2.pending && d2.pending.cls === 'boss', 'pending boss reward');
+    EN.fixUnlock(d2, C, { unlocked: ['hall'] }); ok(d2.bossCard === A[d2.bossAce] && JSON.stringify(d2.acesWon) === JSON.stringify([A[d2.bossAce]]), 'pending boss reward → bossCard = what he carried'); }
+  // 輸給藏家、說情重打還沒按（pending retry）：這一輪的卡不動——重打＝同一位、同一副牌（審查 11-16：原本會重算成被剋鏈那張）
+  { const loseBoss = (run, o = {}) => {
+      const f = EN.startFight(run, C, o), had = f.duel.e.deckIds.find(id => EN.tierOfApex(C, id)), ids = f.duel.e.deckIds.slice().sort(); let h = 0;
+      while (!f.duel.over && h++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } });
+      EN.finishFight(run, C); return { had, ids };
+    };
+    const again = (run, o = {}) => { EN.choose(run, C, { type: 'retry' }); const f = EN.startFight(run, C, o); return { had: f.duel.e.deckIds.find(id => EN.tierOfApex(C, id)), ids: f.duel.e.deckIds.slice().sort() }; };
+    // 舊 run（解鎖制以前存的）：補快照時藏家的卡＝content.aces[run.bossAce]（他剛才那場帶的），不是被剋鏈那張
+    let hit = 0;
+    for (let k = 1; k < 40 && hit < 2; k++) {
+      const e2 = EN.newRun(C, { seedKey: 'ul-retry' + k, runNo: 2, ace: 'hall', prologue: false }); winTo(e2, 5);
+      if (EN.nextUnlock(['hall']) === e2.bossAce) continue;                        // 要他帶的那派跟被剋鏈那派不同，才測得出來
+      hit++;
+      const l1 = loseBoss(e2);
+      ok(e2.pending && e2.pending.type === 'retry' && e2.pending.pos === 5 && !e2.unlock && l1.had === A[e2.bossAce], 'legacy run lost to the boss → pending retry', [e2.pending, l1.had]);
+      ok(EN.fixUnlock(e2, C, { unlocked: ['hall'], start: 'hall' }) && e2.bossCard === l1.had && JSON.stringify(e2.acesWon) === '[]', 'legacy pending retry → bossCard = what he carried (not the chain card)', [e2.bossCard, l1.had]);
+      ok(!EN.fixUnlock(e2, C, { unlocked: ['hall'], start: 'hall' }), 'second load → no change');
+      const l2 = again(e2);
+      ok(l2.had === l1.had && JSON.stringify(l2.ids) === JSON.stringify(l1.ids), 'retry → same boss, same deck', [l1.had, l2.had]);
+    }
+    ok(hit === 2, 'found legacy runs where his tier ≠ the chain tier', hit);
+    // 新規則的 run（旗標開、三派都開＝藏家帶試做卡）：輸了之後不開旗標重新整理，重打照樣是剛才那張
+    const n2 = EN.newRun(C, { seedKey: 'ul-retry-new', runNo: 2, ace: 'hall', prologue: false, unlocked: TIERS, apexOwned: [] }); winTo(n2, 5, { apex: true });
+    const m1 = loseBoss(n2, { apex: true });
+    ok(n2.pending && n2.pending.type === 'retry' && !DEF.includes(m1.had) && n2.bossCard === m1.had, 'flag on: lost to a boss carrying a trial card', m1.had);
+    ok(!EN.fixUnlock(n2, C, { unlocked: TIERS, apexOwned: [] }), 'same save, same flag → no change');
+    EN.fixUnlock(n2, C, { unlocked: TIERS }); ok(n2.bossCard === m1.had && n2.unlock.apex === null, 'reopened without the flag mid-retry → his card stays', [n2.bossCard, m1.had]);
+    const m2 = again(n2);
+    ok(m2.had === m1.had && JSON.stringify(m2.ids) === JSON.stringify(m1.ids), 'retry → same trial card, same deck');
+    // 序章輸了（free retry、沒有 pos）：照舊重算（第 1 位不是藏家）
+    const pr = EN.newRun(C, { seedKey: 'ul-retry-pro', runNo: 1, ace: 'pearl', unlocked: [], start: 'pearl' });
+    const fp = EN.startFight(pr, C, { tutorial: true }); let hp = 0;
+    while (!fp.duel.over && hp++ < 12) EN.resolveTurn(fp.duel, EN.legalActions(fp.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } });
+    EN.finishFight(pr, C); const bc = pr.bossCard; pr.bossCard = null;
+    EN.fixUnlock(pr, C, { unlocked: ['pearl'], start: 'pearl' });
+    ok(pr.pending && pr.pending.type === 'retry' && pr.pending.free && pr.bossCard === bc && bc === A.hall, 'prologue retry → recomputed (chain card)', [pr.pending, bc]); }
+  // 旗標只看網址：同一份存檔開關 ?apex=1，三派都開後藏家帶試做卡或照舊跟著變
+  { const run = EN.newRun(C, { seedKey: 'ul-flag', runNo: 2, ace: 'hall', prologue: false, unlocked: TIERS, apexOwned: [] }), c1 = run.bossCard;
+    ok(!DEF.includes(c1), 'flag on → trial card');
+    ok(EN.fixUnlock(run, C, { unlocked: TIERS }) && run.unlock.apex === null && run.bossCard === A[run.bossAce], 'reopened without the flag → old pick');
+    ok(EN.fixUnlock(run, C, { unlocked: TIERS, apexOwned: [] }) && run.bossCard === c1, 'flag back on → same trial card'); }
+
+  // (f) 整條線（存檔＝唱片櫃的「擁有」，畫面照 CONTRACT 的做法跨趟帶）：第一次選流亡 → 第一次打倒藏家掉殿堂 → 下一次掉異端 → 旗標開再收試做卡直到 45 張
+  for (const start of TIERS) {
+    const shelf = {}; let last = start, firstPick = true, n = 0, order = [];
+    for (let k = 1; k <= 30 && Object.keys(shelf).filter(id => shelf[id].own && EN.tierOfApex(C, id)).length < 45; k++) {
+      const un = EN.unlockedTiers(C, shelf, { start: firstPick ? null : last });
+      const ace = un.length ? last : start;
+      const run = EN.newRun(C, { seedKey: 'ul-life-' + start, runNo: k, ace, prologue: false, unlocked: un, start: ace, apexOwned: EN.ownedApex(C, shelf, { tiers: un.length ? un : [ace] }) });
+      if (firstPick) { shelf[A[ace]] = { own: true, src: 'start' }; firstPick = false; }
+      for (const x of winTo(run, 11).filter(x => x.aceWon && x.aceFirst)) { if (!shelf[x.aceWon] || !shelf[x.aceWon].own) { shelf[x.aceWon] = { own: true, src: 'boss' }; order.push(x.aceWon); } n++; }
+      last = ace;
+    }
+    ok(order[0] === A[TB[start]] && order[1] === A[TB[TB[start]]], start + ': first boss drops the tier it beats, then the next', order.slice(0, 2));
+    ok(Object.keys(shelf).filter(id => shelf[id].own).length === 45 && n === 44, start + ': all 45 collected, each once', [Object.keys(shelf).length, n]);
+  }
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log(fails.join('\n')); process.exit(1); }

@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-16｜dip-vinyl-shop｜game-lab 流派與頂點卡靠遊戲解鎖（打倒傳說藏家掉被剋那派）
+
+- **店主 11-16**：「換流派只能每局一開始，中間不能換；每次流派的頂點卡要透過遊戲蒐集才能解鎖，不是一開始就給 15 張……第一次通過傳說藏家時，可以獲得玩家初始流派的被剋流派，比如流亡就掉落殿堂，以此類推。」
+- **規則**：新玩家只有**初始流派**（序章 O9 挑的那派；`?apex=1` 跳過序章的新存檔先三選一，有 ✕ 可退）。打倒傳說藏家＝收他帶的頂點卡；藏家帶哪張照被剋鏈（`engine.TIER_BEATS`：流亡→殿堂→異端→流亡；`run.bossCard` 每輪算，雜湊選卡、不碰 `run.rng`）。解鎖＝擁有那派任一張（唱片櫃 src `start`／`boss`）。三派都開、旗標開時藏家帶一張還沒收到的試做卡。換派照舊只在開局（`canSwitchAce`），`switchAce` 多錯誤碼 `locked`／`notOwned`。
+- **介面**：三選一面板鎖住的派灰掉加像素鎖；`?apex=1` 挑王牌面板鎖住的分頁、沒收到的卡灰掉（點了大鈕改「還是帶《…》」）；點老闆小選單沒得換時按不下去；打倒藏家「解鎖了○○派」（鎖頭打開動畫）／「收進唱片櫃」；點藏家頭像寫他帶的那張；標題與唱片櫃「流派 1／3・下一派…」（`?apex=1` 加「頂點卡 n／45」）；第一次挑派說明「挑了就是初始流派。其他兩派，打倒傳說藏家解鎖。」＋第一晚一次性吐司。舊存檔：lastAce 那派補記成擁有、吐司說明一次，存檔版本不升。
+- **流程**：引擎 → 介面 → 邏輯／體驗審查＋對抗驗證（確認 7 項：說情重打時藏家換卡、招牌蓋住三選一標題、點沒收到的卡大鈕不一致、只有一張也跳 15 格、分頁 class 撞通用 gap、三選一沒有返回、序章 O9 沒說會定死）→ 全修。契約 `v5/unlock/CONTRACT.md`。
+- **主線裁定（可逆）**：解鎖速度照店主原話「每位藏家掉鏈上的下一派」：第一趟打到第 10 位就三派全開（會讀的 96%、新手 88%）；`?apex=1` 時會讀的一趟收約 16 張、約三趟收齊 45 張。要放慢只改 `bossCardFor` 一處。
+- **e2e 工具**：`tests/e2e-lib.mjs` 加選用 `LAB_ROOT`（不開伺服器時由 Playwright 從磁碟回應）、`seedRun` 加 `ownAces`／`ownIds`；新增 `tests/e2e-unlock.mjs`。
+- **模擬**：sim `--unlock` 選用參數（每趟當新玩家）；不開時輸出跟改動前逐字相同。併入 #463／#464 後 `sim --n 1000` 門檻全過（T1 10.8%、T1b 0.8%、會讀的中位 87、到第 100 位 39.3%）。
+- **主要檔案**：`game-lab/{engine.js,ui.js,content.js,style.css,sim.mjs,index.html,README.md,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-lib,e2e-unlock,e2e-apex,e2e-econ,e2e-room,e2e.spec}.mjs`。併入後 `?v=75`。
+- **驗證**：check-content／lint-copy／check-shops／check-covers／build-pool-index --check 通過；併入後主線複跑 engine 2,345,161、tutorial 505,169 全過，e2e-unlock 6/6、e2e-duel 59/59、e2e-apex 18/18（390），e2e.spec 390 49/49；fix 棒全套（apex 35、duel 84、econ 54、prologue 52、intro 25、taps 28、room 21、unlock 12、e2e.spec 四尺寸）全過。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 對決：上一手兩張專輯留在牌桌上方小列
 
 - **店主 11-16**：「打完要把上一手的專輯留在檯面上，不然玩家無法看清楚對方打的專輯，就無法認識新專輯。」

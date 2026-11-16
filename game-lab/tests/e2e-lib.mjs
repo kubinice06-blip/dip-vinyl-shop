@@ -29,8 +29,21 @@ export function launch() {
   if (process.env.HTTPS_PROXY) o.proxy = { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' };
   return chromium.launch(o);
 }
+// LAB_ROOT＝repo 根目錄：不開本機伺服器，LAB_BASE 底下的請求由 Playwright 直接從磁碟回應（context.route；不能開伺服器的環境用）。沒設＝照舊打伺服器
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.svg': 'image/svg+xml', '.mp3': 'audio/mpeg', '.woff2': 'font/woff2', '.txt': 'text/plain; charset=utf-8', '.ico': 'image/x-icon' };
+async function serveFromDisk(ctx) {
+  const fs = require('fs'), path = require('path'), root = path.resolve(process.env.LAB_ROOT), origin = new URL(URL0).origin;
+  await ctx.route(u => u.origin === origin, async route => {
+    const p = decodeURIComponent(new URL(route.request().url()).pathname), f = path.resolve(root, '.' + p);
+    if (!f.startsWith(root + path.sep) && f !== root) return route.fulfill({ status: 403, body: '' });
+    let file = f; try { if (fs.statSync(file).isDirectory()) file = path.join(file, 'index.html'); } catch (_) { return route.fulfill({ status: 404, body: '' }); }
+    try { return route.fulfill({ status: 200, contentType: MIME[path.extname(file).toLowerCase()] || 'application/octet-stream', body: fs.readFileSync(file) }); } catch (_) { return route.fulfill({ status: 404, body: '' }); }
+  });
+}
 export async function newPage(browser, w, h, opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: opts.dpr || 1, hasTouch: true, isMobile: true });
+  if (process.env.LAB_ROOT) await serveFromDisk(ctx);
   const page = await ctx.newPage();
   page._errors = []; page._requests = []; page._clicks = 0; page._loadFail = [];
   // 像素店把遠端封面縮進 canvas 要 CORS；偶爾某張圖的回應沒帶 ACAO，店裡改畫色塊。這種瀏覽器自己印的 CORS 訊息不算程式錯誤。
@@ -188,6 +201,14 @@ export async function seedRun(page, o = {}) {
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: o.tutorialDone !== false, prologueDone: !o.prologue,
       lastAce: o.ace || 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
+    // 解鎖制（店主 11-16）：o.ownAces＝這幾派的預設頂點卡算擁有（＝那派解鎖）、o.ownIds＝這幾張算擁有（?apex=1 的試做卡）；src 'boss'（打倒藏家拿到的）。
+    //   v5 存檔的唱片櫃沒有「擁有」（遷移時重算），有給就直接寫 v6（這次王牌那組送的照 v6 遷移算擁有）
+    const ownIds = [].concat((o.ownAces || []).map(t => C.aces[t]), o.ownIds || []).filter(Boolean);
+    if (ownIds.length) {
+      s.v = 6;
+      (C.gifts[r.ace] || []).forEach(id => { s.shelf[id] = Object.assign(s.shelf[id] || { at: r.seedKey + '#1', seen: false }, { own: true, src: 'gift' }); });
+      ownIds.forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: true, own: true, src: 'boss' }; });
+    }
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
   }, o);
 }

@@ -11,6 +11,8 @@
 //              兩個原語合一（combo）：{"ops":[…]} 整組換；{"mirrorPlus":{"n":2}} 只改那個原語；平的 {"n":2} 蓋到組裡有 n 的每個原語（都沒有＝報錯）
 //            旗標下多印一張「頂點卡發動」表（發動率、第幾手、發動那手的勝負、作用幾手）；不開 --apex 時輸出跟以前一字不差
 //   --ace    每一趟都用這一派（沒給＝三派輪流 TIERS[i % 3]）；不開 --apex 也能用＝現行 7 星王牌的分派基準（跟 --apex-ace 同一批客人組成）
+//   --unlock 流派與頂點卡靠遊戲解鎖（店主 11-16；scratchpad v5/unlock）：每一趟都當新玩家（只解鎖這一趟的派；--apex 時擁有的頂點卡只有那派預設那張，
+//            --apex-ace 給的那張也算擁有），藏家照被剋鏈帶卡（engine bossCardFor）。多印一張「頂點卡收集」表；不開時輸出跟以前一字不差（模擬照舊三派都能用、藏家照 run.bossAce）
 //   包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity）：獎勵照 runPolicy（收這張 bagScore 漲才拿，見 engine 檔頭）、買照 shopPolicy（要漲才買、不用賣）＋瘦身（thinPolicy：
 //            賣掉每一軸都排不進包包前 5 名的牌）；收音機那張也要漲才買。--no-thin＝不瘦身（只靠「不拿」控制牌組大小）。
 //            --set bagMax=8＝舊規則對照（choose／策略走舊路、收音機包包滿賣最弱的；JSON 跟改版前逐字相同）。不限時 JSON 的 end 多 bagN（最後幾張）、bagMaxN（最多幾張）、sold（賣掉幾張）
@@ -69,6 +71,7 @@ if (APEX_ACE && !APEX) { console.error('--apex-ace 要跟 --apex 一起用'); pr
 const ACE_T = arg('ace', null);
 if (ACE_T && !TIERS.includes(ACE_T)) { console.error('--ace ' + TIERS.join('|')); process.exit(2); }
 if (ACE_T && APEX_ACE && C.cards[APEX_ACE].tier !== ACE_T) { console.error('--ace 跟 --apex-ace 那張的派不同'); process.exit(2); }
+const UNLOCK = argv.includes('--unlock');
 const APEX_PARAMS = arg('apex-params', null) ? JSON.parse(arg('apex-params').startsWith('@') ? fs.readFileSync(arg('apex-params').slice(1), 'utf8') : arg('apex-params')) : null;   // @檔名＝從檔案讀
 if (APEX_PARAMS && !APEX) { console.error('--apex-params 要跟 --apex 一起用'); process.exit(2); }
 if (APEX_PARAMS) for (const id of Object.keys(APEX_PARAMS)) {
@@ -161,7 +164,7 @@ const bagPower = run => run.bag.reduce((s, id) => s + EN.power(C.cards[id]), 0) 
 function radioSmart(run, R) {
   if (!EN.canRadio || !EN.canRadio(run)) return;
   const id = run.order[run.idx], E = C.enemies[id]; if (!E) return;
-  const g = EN.trialDeck(C, id, run.pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier, cls: EN.classAt(run.pos) });
+  const g = EN.trialDeck(C, id, run.pos, { seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, cls: EN.classAt(run.pos) });
   const deck = g.deck.slice(); if (g.ace) deck.push(g.ace);
   const T = EN.COUNTER_OF[EN.deckMain(deck, E.taste)];
   let best = null, bv = -1;
@@ -187,7 +190,9 @@ function radioSmart(run, R) {
 //   A＝這一格的每一位累計（到過、死、場次、勝、首戰、手數、打到第 6 手、比聲望條、KO）
 function runOnce(pol, flow, i, A) {
   const seedKey = 'sim5-' + i;
-  const run = EN.newRun(C, Object.assign({ seedKey, runNo: 1, ace: ACE_T || TIERS[i % 3], prologue: flow !== 'bare', tier: TIER }, APEX_ACE ? { ace: C.cards[APEX_ACE].tier, aceId: APEX_ACE } : {}));
+  const o0 = Object.assign({ seedKey, runNo: 1, ace: ACE_T || TIERS[i % 3], prologue: flow !== 'bare', tier: TIER }, APEX_ACE ? { ace: C.cards[APEX_ACE].tier, aceId: APEX_ACE } : {});
+  if (UNLOCK) Object.assign(o0, { unlocked: [], start: o0.ace }, APEX ? { apexOwned: APEX_ACE ? [APEX_ACE] : [] } : {});   // --unlock：新玩家（只解鎖這一派）
+  const run = EN.newRun(C, o0);
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0, bagMaxN = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
@@ -255,7 +260,9 @@ function runOnce(pol, flow, i, A) {
     taken: sum.taken, rewardCards: S.taken.length, bought: S.bought.length, relicsBought: S.relicsBought.length, relicsGot: S.relicsGot.length,
     earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
     bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent,
-    bagN: run.bag.length, bagMaxN: Math.max(bagMaxN, run.bag.length), sold: S.sold.length };
+    bagN: run.bag.length, bagMaxN: Math.max(bagMaxN, run.bag.length), sold: S.sold.length,
+    ...(UNLOCK ? { aces: (run.acesWon || []).length, unlocks: (run.acesWon || []).filter(id => !(run.unlock.tiers || []).includes(EN.tierOfApex(C, id))).length,
+    trialAces: (run.acesWon || []).filter(id => !Object.values(C.aces).includes(id)).length } : {}) };
 }
 
 // ---------------- one cell (policy × flow) ----------------
@@ -309,6 +316,8 @@ function runCell(pol, flow, n) {
       ...(EN.bagLimited() ? {} : { bagN: avg('bagN'), bagMaxN: avg('bagMaxN'), bagMaxMax: Math.max(...recs.map(r => r.bagMaxN)), sold: avg('sold') }) },   // 包包不限才有（--set bagMax=8 時 JSON 跟改版前一樣）
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
+    ...(UNLOCK ? { unlock: { aces: avg('aces'), unlocks: avg('unlocks'), trialAces: avg('trialAces'),          // --unlock：每趟收幾張、解鎖幾派、收到第 k 張的趟（%）
+      atLeast: [1, 2, 3, 4].map(k => share(recs, r => r.aces >= k)), unlock2: share(recs, r => r.unlocks >= 1), unlock3: share(recs, r => r.unlocks >= 2) } } : {}),
   };
 }
 
@@ -332,9 +341,11 @@ const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }
 const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null) };
 if (APEX) report.apex = APEX_ACE || 'default';                           // 不開 --apex 時 JSON 跟以前逐字相同（不多 "apex": null）
 if (ACE_T) report.ace = ACE_T;
+if (UNLOCK) report.unlock = true;                                          // 不開 --unlock 時 JSON 跟以前逐字相同
 if (APEX_PARAMS) report.apexParams = APEX_PARAMS;
 if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] || ACE_T) + '（--ace ' + ACE_T + '）');
 if (APEX_PARAMS) console.log('\n試調參數（--apex-params，不改 content.js）：' + JSON.stringify(APEX_PARAMS));
+if (UNLOCK) console.log('\n解鎖制（--unlock）：每一趟都是新玩家，只解鎖這一趟的派' + (APEX ? '；擁有的頂點卡只有那派預設那張' : ''));
 if (APEX) console.log('\n頂點卡純輔助卡試做（--apex）：王牌 ' + (APEX_ACE ? C.cards[APEX_ACE].album + '（' + EN.abilityOf(C, APEX_ACE).name + '）' : '各派預設那張') + '；打贏回 ' + ((C.apexTrial && C.apexTrial.winHeal) || EN.trialCfg(C, TIER).heal));
 const cells = {};
 const cellOf = (flow, pol) => (cells[flow] || {})[pol];
@@ -388,6 +399,14 @@ if (MODE === 'all' || MODE === 'runs') {
     console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
     for (const x of rows) { const a = x.apex; if (!a) continue; const u = a.used || 1;
       console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(a.useRate)} | ${f2(a.n)} | ${a.nHist.map(k => p0(k / u)).join('／')} | ${p0(a.handWin)}／${p0(a.handTie)}／${p0(a.handLose)} | ${f2(a.net)} | ${f2(a.d)} | ${pct(a.hitHand)} | ${f2(a.hitsPerFight)} | ${f2(a.heal)} | ${a.rev.honest}／${a.rev.bluff} | ${pct(a.winUsed)}／${pct(a.winUnused)} |`); }
+  }
+
+  if (UNLOCK) {                                                          // 頂點卡收集（--unlock：每趟新玩家，只解鎖這一派）
+    console.log(`\n頂點卡收集（--unlock：每一趟都是新玩家、只解鎖這一派；打倒藏家收他帶的那張：被剋鏈${APEX ? '→ 三派都開後收試做卡' : ''}）：\n`);
+    console.log('| 策略 | 流程 | 每趟收幾張 | 收到 ≥1／≥2／≥3／≥4 張（%） | 解鎖第 2 派／第 3 派（%） | 其中試做卡 |');
+    console.log('|---|---|---|---|---|---|');
+    for (const x of rows) { const u = x.unlock; if (!u) continue;
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f2(u.aces)} | ${u.atLeast.map(p0).join('／')} | ${p0(u.unlock2)}／${p0(u.unlock3)} | ${f2(u.trialAces)} |`); }
   }
 
   // 跟 ../curve/results.md 的 V3 比（新帳號）

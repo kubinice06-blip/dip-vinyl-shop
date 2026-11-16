@@ -18,7 +18,7 @@
 //            playerAhead(pHp, pMax, eHp, eMax) 比聲望條剩幾成（hp÷max，一樣算你贏；FIXLIST 3）· hpPct(hp, max) 畫面用的 %（四捨五入、≥0）
 //            pctPair(pHp, pMax, eHp, eMax) -> {p, e} 結果句的兩個 %（字串；整數一樣但勝負分得出來時改一位小數，數字永遠跟勝負一致）
 //              （v3 墊片：clash(pStar, pAttr, eStar, eAttr) 也收，第二波 B2 改掉 ui.js 的舊呼叫後可刪）
-// Duel       enemyDef(content, id, {tutorial, pos?, seedKey?, runNo?, playerAce?, bossAce?, planner?}) -> eDef（pos＝無限試煉第幾位：聲望／品味／底氣／
+// Duel       enemyDef(content, id, {tutorial, pos?, seedKey?, runNo?, playerAce?, bossAce?, bossCard?, planner?}) -> eDef（pos＝無限試煉第幾位：聲望／品味／底氣／
 //              出招難度／說真話機率照位數曲線、牌組照 trialDeck、eDef.ace＝他帶的王牌）· playerDef(content, {bag, ace, relics, hp?, maxHp?, atk?, def?}) -> pDef
 //            startDuel(pDef, eDef, {seed, enemyAce?, script?, hintTable?}) -> {duel, events}
 //            品味／底氣（SPEC 無限試煉 §0；逐字照 curve harness core.cjs modded＋TAKEN.half）：你剋中（counter 且 toE>0）＋你的品味；
@@ -44,10 +44,10 @@
 //                jumpTo 不記）；打贏藏家 aceWon＝他的王牌（收進唱片櫃，畫面做）
 //              輸：連勝歸 0；這一輪還能說情 → pending retry（同一位、同一副牌、聲望回到開打前 run.hpIn）；不能 → over 'dead'（沒有 'clear'）
 //            順序：贏 → reward（挑唱片／配件）→ level（有升級才有，連升就連選）→ 下一位（第 5 位打完換新一輪：新面孔、說情重設、商店補貨）
-//            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce})
+//            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce, bossCard?})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
-//            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept}
+//            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept, aces?（解鎖制：這一趟收的頂點卡）}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
@@ -79,6 +79,7 @@
 //            keepOne(run, content, id, owned) -> {ok, error}（只在這一趟結束後、只能一次；run.kept＝那張）
 //            runPolicy(run, content, {preferRelic}) · shopPolicy(run, content, 'none'|'smart', {thin?}) -> [ch] · thinPolicy(run, content) -> [ch] · bargainPolicy(run, content) -> ch
 // Ace        換王牌（店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說＝換流派。流派目前只決定王牌那張、老闆送的四張、教學手牌，沒有被動規則）
+//            店主 11-16「換流派只能每局一開始，中間不能換」：就是這條（只在第 1 位開打前）；能換到哪派、哪張看解鎖（見 Unlock）
 //            canSwitchAce(run, content)：這一趟第 1 位還沒開打（序章那一趟＝序章打完、第 1 位開打前）；run.fought＝這一趟跟客人開打過（startFight 記，序章不算；
 //              舊的 run 沒有這欄：第 1 輪的說情用掉了＝打過第 1 位）
 //            switchAce(run, content, tier) -> {ok, effects:[{ace, from}, {loseCard}…, {gainCard}…]} | {ok:false, error:'badAce'|'notNow'|'same'}（錯的不改 run）
@@ -102,6 +103,23 @@
 //            finishFight：duel.apexMode 時打贏回 content.apexTrial.winHeal（沒給＝C.trial.heal）。藏家、客人帶的王牌照舊 7 星、沒有能力
 //            策略：policies 在 duel.apexMode 且 canApex 時自己決定發動（會讀的＝期望增益 ≥ APEX_TAU[第 n 手]；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N；
 //              看穿＝用「知道真假」的資訊價值；新手、只出最大星、兩步公式、跟提示同色＝第 1 手就發動；亂出＝每手 1/6；先知＝有好處就發動）
+// Unlock     流派與頂點卡靠遊戲解鎖（店主 11-16；scratchpad v5/unlock 的 BRIEF.md、CONTRACT.md）。引擎不碰存檔：「擁有」由畫面傳進來（owned＝ownedFn 那三種形狀）
+//            TIER_BEATS {pearl:'hall', hall:'heresy', heresy:'pearl'}（流亡剋殿堂、殿堂剋異端、異端剋流亡＝冷剋經、經剋硬、硬剋冷）· unlockChain(start) -> [初始, 它剋的, 再下一派]
+//            apexCards(content, tier?)（頂點卡：三派預設＋試做名單，照 TIERS、名單順序）· tierOfApex(content, id)
+//            unlockedTiers(content, owned, {start?}) -> [tiers]（擁有那派任一張頂點卡就解鎖；start＝初始流派／目前在玩的那派，一定算）
+//            ownedApex(content, owned, {tiers?|start?}) -> [ids]（擁有的頂點卡＋已解鎖各派預設那張）· nextUnlock(tiers) -> tier|null（鎖著、被某個已解鎖的派剋的那派；0 或 3 派＝null）
+//            unlockMigrate(content, owned, lastAce) -> {tiers, apex, own:[ids]}（舊存檔：lastAce ∪ 擁有頂點卡的派；own＝要補記成擁有的 lastAce 那派預設那張，src 'start'）
+//            newRun 多收 unlocked:[tiers]、start、apexOwned:[ids]（只有旗標開才給）。沒給 unlocked＝舊行為（sim、舊呼叫：三派都能用、藏家照 run.bossAce），run 一個欄位都不多
+//              給了：run.unlock {tiers, start, apex:[ids]|null}（開局快照；tiers 一定含 start 與這次的王牌）、run.acesWon [ids]（這一趟打倒藏家收的，每張一次）、
+//              run.bossCard（這一輪藏家帶的頂點卡＝bossCardFor：①還有鎖著的派→nextUnlock 那派預設那張 ②三派都開、旗標開→一張還沒擁有的試做卡（先別派；
+//              雜湊 seedKey#runNo#bossApex#輪，不碰 run.rng）③其他＝content.aces[run.bossAce] 照舊）；newRun、每輪開頭、jumpTo、switchAce 重算。o.aceId 要擁有才收（旗標開）
+//            finishFight 多回 aceFirst（這一趟第一次收這張）、aceNew（開局時還沒擁有）、aceUnlock（這張讓哪一派解鎖｜null）；aceWon＝藏家這場真的帶的那張（duel 牌單裡的頂點卡）
+//              run.unlock 時每張新卡 run.taken +1（舊行為：一趟只算一次）
+//            unlockTiersOf(run, content) · ownedApexOf(run, content)（開局快照＋這一趟收到的）· aceChoices(run, content) -> {tiers, apex:[ids]|null}（換王牌能換的）
+//            switchAce 多兩個錯誤碼：'locked'（那派還鎖著）、'notOwned'（旗標開：那張還沒擁有）；檢查順序 badAce → notNow → locked → notOwned → same
+//            fixUnlock(run, content, {unlocked, start?, apexOwned?})：載入存檔時把 run 對齊存檔（畫面每次 loadSave 呼叫；apexOwned 有給＝現在開著 ?apex=1）。
+//              舊的進行中 run（沒有 run.unlock）補上快照（打過藏家＝aceWon 那張算這一趟收的）；已經有的換成存檔現在的 tiers／apex（旗標只看網址）；
+//              還能換王牌、王牌是沒擁有的試做卡 → 回預設；這一輪藏家的卡重算（藏家那場打到一半／剛打完領獎 → 不動）。回 true＝有改
 // Economy    台幣行情（FIXLIST 8＋X／Y 契約；數字在 content.economy，這裡的 ECON 是沒給時的預設）
 //            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
 //            rarityScore(card) ＝ c＋h＋(o===5 ? 1 : 0) · rarity(card) → 'common'≤5｜'rare'6｜'uncommon'7｜'epic'8｜'legendary'≥9｜'apex'（tier hall／pearl／heresy）
@@ -496,7 +514,7 @@
       elite: !!E.elite, boss: !!E.boss, atk: 0, def: 0, qMercy: trialCfg(content, o.tier).curve.mercyFeint, ace: null, pos: null, cls: null,
       sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Eminem，打完掉在地上）
     if (g) {
-      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, cls, tier: o.tier });
+      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, bossCard: o.bossCard, cls, tier: o.tier });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss' });
     }
     return d;
@@ -885,7 +903,8 @@
     });
     let ace = null;
     const aces = content.aces || {};
-    if (cls === 'boss') ace = o.bossAce && aces[o.bossAce] ? cardFrom(content, aces[o.bossAce]) : null;
+    if (cls === 'boss') ace = o.bossCard && tierOfApex(content, o.bossCard) ? cardFrom(content, o.bossCard)   // 解鎖制：這一輪的 run.bossCard
+      : o.bossAce && aces[o.bossAce] ? cardFrom(content, aces[o.bossAce]) : null;
     else {
       const p = d >= K.aceFrom ? Math.min(K.aceMax, K.aceRate * (d - K.aceFrom + 1)) : 0;
       if (p > 0 && u('ace') < p) {
@@ -948,6 +967,102 @@
     const st = { rng: fnv1a32(String(seedKey || 'lab') + '#' + (runNo || 1)) || 1 };
     return pickOne(TIERS.filter(t => t !== ace), st);
   }
+  // ---------- 流派與頂點卡解鎖（店主 11-16：「流派的頂點卡要透過遊戲蒐集才能解鎖」；scratchpad v5/unlock） ----------
+  //   引擎不碰存檔：「擁有」由畫面傳（owned＝ownedFn 三種形狀）。解鎖順序＝被剋鏈：流亡剋殿堂、殿堂剋異端、異端剋流亡（冷剋經、經剋硬、硬剋冷）
+  const TIER_BEATS = { pearl: 'hall', hall: 'heresy', heresy: 'pearl' };
+  function unlockChain(start) { const s = TIERS.includes(start) ? start : 'hall'; return [s, TIER_BEATS[s], TIER_BEATS[TIER_BEATS[s]]]; }
+  function tierOfApex(content, id) { const c = typeof id === 'string' ? cardOf(content, id) : null; return c && TIERS.includes(c.tier) ? c.tier : null; }
+  // 頂點卡：三派預設（content.aces）＋試做名單（content.apexTrial）；照 TIERS、名單順序、不重複；卡要存在、tier 要對
+  function apexCards(content, tier) {
+    const out = [];
+    for (const t of TIERS) {
+      if (tier && t !== tier) continue;
+      for (const id of [(content.aces || {})[t]].concat(apexList(content, t).map(e => e && e.card))) if (id && tierOfApex(content, id) === t && !out.includes(id)) out.push(id);
+    }
+    return out;
+  }
+  // 已解鎖的派：擁有那一派任一張頂點卡；o.start（初始流派／目前在玩的那派；舊存檔＝save.lastAce）一定算。照 TIERS 順序
+  function unlockedTiers(content, owned, o) {
+    const has = ownedFn(owned), st = o && o.start;
+    return TIERS.filter(t => t === st || apexCards(content, t).some(id => has(id)));
+  }
+  // 擁有的頂點卡（?apex=1 挑王牌能挑的）：owned 裡的頂點卡＋已解鎖各派預設那張（解鎖的派至少有預設那張：舊存檔的初始派只「認識」也算）
+  //   o.tiers＝已解鎖的派（沒給＝unlockedTiers(content, owned, o)）
+  function ownedApex(content, owned, o) {
+    const has = ownedFn(owned), tiers = o && Array.isArray(o.tiers) ? o.tiers : unlockedTiers(content, owned, o);
+    const def = TIERS.filter(t => tiers.includes(t)).map(t => (content.aces || {})[t]).filter(Boolean);
+    return apexCards(content).filter(id => has(id) || def.includes(id));
+  }
+  // 下一個要解鎖的派：還鎖著、而且被某個已解鎖的派剋的那一派（解鎖 1 派 → 它剋的那派；2 派 → 剩下那派；0 或 3 派 → null）
+  function nextUnlock(tiers) {
+    const u = (tiers || []).filter(t => TIERS.includes(t));
+    return u.length ? (TIERS.find(t => !u.includes(t) && u.some(x => TIER_BEATS[x] === t)) || null) : null;
+  }
+  // 舊存檔（解鎖制以前，BRIEF 第 6 條）：已解鎖＝save.lastAce ∪ 唱片櫃擁有頂點卡的派；擁有的試做卡＝唱片櫃擁有的（只「認識」的不算）。
+  //   own＝要補記成擁有的：lastAce 那派預設那張（src 'start'；之後換到別派，初始派也不會鎖回去）。畫面每次載入都可以跑（新規則的存檔 own 永遠是空的）
+  function unlockMigrate(content, owned, lastAce) {
+    const has = ownedFn(owned), st = TIERS.includes(lastAce) ? lastAce : null;
+    const tiers = unlockedTiers(content, has, { start: st }), def = st ? (content.aces || {})[st] : null;
+    return { tiers, apex: ownedApex(content, has, { tiers }), own: def && cardOf(content, def) && !has(def) ? [def] : [] };
+  }
+  // run 的解鎖狀態＝開局快照（run.unlock）＋這一趟收到的（run.acesWon）＋這次的王牌那派；沒有 run.unlock＝三派都開（舊行為）
+  function unlockTiersOf(run, content) {
+    const U = run && run.unlock;
+    if (!U) return TIERS.slice();
+    const got = (run.acesWon || []).map(id => tierOfApex(content, id));
+    return TIERS.filter(t => (U.tiers || []).includes(t) || got.includes(t) || t === run.ace);
+  }
+  // run 擁有的頂點卡：快照（旗標關＝null：只算各派預設）＋這一趟收到的＋已解鎖各派預設那張
+  function ownedApexOf(run, content) {
+    const U = run && run.unlock, tiers = unlockTiersOf(run, content);
+    if (!U) return apexCards(content).filter(id => tiers.includes(tierOfApex(content, id)));
+    const has = new Set([].concat(Array.isArray(U.apex) ? U.apex : [], run.acesWon || []));
+    return ownedApex(content, id => has.has(id), { tiers });
+  }
+  // 換王牌能換的：已解鎖的派；旗標開（run.unlock.apex 是陣列）＝擁有的頂點卡（旗標關＝null：每派只有預設那張）
+  function aceChoices(run, content) {
+    const U = run && run.unlock;
+    return { tiers: unlockTiersOf(run, content), apex: !U || Array.isArray(U.apex) ? ownedApexOf(run, content) : null };
+  }
+  // 這一輪的藏家帶哪張頂點卡（7 星比星，跟以前一樣；run.unlock 才走，沒有＝content.aces[run.bossAce]）：
+  //   ①還有鎖著的派 → 被剋鏈下一派（nextUnlock）的預設那張；②三派都開、旗標開 → 一張還沒擁有的試做頂點卡（先挑別派的、別派都收齊了才挑你這派；
+  //   雜湊 seedKey#runNo#bossApex#輪，每輪各抽、不碰 run.rng）；③其他（旗標關、或 45 張全收齊）→ content.aces[run.bossAce] 照舊
+  function bossCardFor(run, content) {
+    const aces = content.aces || {}, legacy = aces[run.bossAce] || null, U = run && run.unlock;
+    if (!U) return legacy;
+    const nx = nextUnlock(unlockTiersOf(run, content));
+    if (nx && cardOf(content, aces[nx])) return aces[nx];
+    if (!Array.isArray(U.apex)) return legacy;
+    const have = new Set(ownedApexOf(run, content)), free = apexCards(content).filter(id => !have.has(id));
+    const tag = String(run.seedKey || 'lab') + '#' + (run.runNo || 1) + '#bossApex#' + (run.round || 1);
+    const first = ids => ids.map(id => [hash01(tag + '|' + id), id]).sort((a, b) => a[0] - b[0] || (a[1] < b[1] ? -1 : 1)).map(x => x[1])[0];
+    return first(free.filter(id => tierOfApex(content, id) !== run.ace)) || first(free) || legacy;
+  }
+  // 藏家這一場真的帶的那張（他牌單裡的頂點卡）；沒有就照這一輪的設定
+  function bossWonCard(run, content, duel) {
+    const ids = (duel && duel.e && duel.e.deckIds) || [];
+    return ids.find(id => tierOfApex(content, id)) || run.bossCard || (content.aces || {})[run.bossAce] || null;
+  }
+  // 載入存檔時把 run 的解鎖狀態對齊存檔（畫面每次 loadSave 都呼叫；o＝{unlocked, start?, apexOwned?}，apexOwned 有給＝現在開著 ?apex=1）：
+  //   ・舊的進行中 run（解鎖制以前存的，沒有 run.unlock）：補上快照；打過藏家（run.aceWon）＝那張（content.aces[run.bossAce]）算這一趟收的、start＝o.start 或這次的派
+  //   ・已經有的：tiers／apex 換成存檔現在的（旗標只看網址：同一份存檔開關 ?apex=1，三派都開後藏家帶試做卡或照舊跟著變）；start、acesWon 不動
+  //   還能換王牌、旗標開、王牌是沒擁有的試做卡 → 拿掉 run.aceId（回那派預設）。這一輪藏家的卡重算；藏家那場打到一半、剛打完在領獎／升級、
+  //   或輸給他、說情重打還沒按（pending retry；重打＝同一位、同一副牌）→ 不動（舊 run＝他真的帶的那張：打到一半看牌單、其他＝content.aces[run.bossAce]）。回 true＝有改
+  function fixUnlock(run, content, o) {
+    if (!run || !o || !Array.isArray(o.unlocked) || !TIERS.includes(run.ace)) return false;
+    const before = JSON.stringify([run.unlock, run.acesWon, run.bossCard, run.aceId]);
+    const aces = content.aces || {}, old = !run.unlock;
+    if (old) run.acesWon = run.aceWon && aces[run.bossAce] && cardOf(content, aces[run.bossAce]) ? [aces[run.bossAce]] : [];
+    if (!Array.isArray(run.acesWon)) run.acesWon = [];
+    const apex = Array.isArray(o.apexOwned) ? uniq(o.apexOwned.filter(id => tierOfApex(content, id))) : null;
+    const tiers = TIERS.filter(t => o.unlocked.includes(t) || t === run.ace || (apex || []).some(id => tierOfApex(content, id) === t));
+    run.unlock = { tiers, start: !old && TIERS.includes(run.unlock.start) ? run.unlock.start : TIERS.includes(o.start) ? o.start : run.ace, apex };
+    if (run.aceId != null && apex && canSwitchAce(run, content) && !ownedApexOf(run, content).includes(run.aceId)) delete run.aceId;
+    const p = run.pending, bossNow = !!(run.duel && run.duel.e && run.duel.e.boss) || !!(p && !p.prologue && run.prologue !== 'pending' && classAt(p.pos || run.pos) === 'boss');
+    if (!bossNow) run.bossCard = bossCardFor(run, content);
+    else if (old || !run.bossCard) run.bossCard = run.duel ? bossWonCard(run, content, run.duel) : (p.aceWon || aces[run.bossAce] || null);
+    return JSON.stringify([run.unlock, run.acesWon, run.bossCard, run.aceId]) !== before;
+  }
   function newRun(content, o) {
     o = o || {};
     const seedKey = String(o.seedKey || 'lab'), runNo = o.runNo || o.nightNo || 1;
@@ -972,10 +1087,19 @@
       stats: { wins: 0, beaten: 0, fights: 0, hands: 0, retries: 0, taken: [], met: [], relicsGot: [], lostAt: null,
         earned: 0, spent: 0, bought: [], sold: [], relicsBought: [], relicsSold: [] },
     };
-    if (o.aceId != null && apexList(content, ace).some(e => e && e.card === o.aceId)) run.aceId = o.aceId;   // 頂點卡試做：挑的那張（旗標關時不讀）
+    // 解鎖制（店主 11-16）：畫面傳 o.unlocked（已解鎖的派）、o.start（初始流派）、o.apexOwned（旗標開：擁有的頂點卡）。沒給 unlocked＝舊行為、run 不多欄位（sim、舊呼叫）
+    if (Array.isArray(o.unlocked)) {
+      const apex = Array.isArray(o.apexOwned) ? uniq(o.apexOwned.filter(id => tierOfApex(content, id))) : null;
+      const start = TIERS.includes(o.start) ? o.start : ace;
+      run.unlock = { tiers: TIERS.filter(t => o.unlocked.includes(t) || t === start || t === ace || (apex || []).some(id => tierOfApex(content, id) === t)), start, apex };
+      run.acesWon = [];
+    }
+    if (o.aceId != null && apexList(content, ace).some(e => e && e.card === o.aceId) &&
+      !(run.unlock && run.unlock.apex && !ownedApexOf(run, content).includes(o.aceId))) run.aceId = o.aceId;   // 頂點卡試做：挑的那張（旗標關時不讀；解鎖制旗標開：要擁有）
     run.taken = run.bag.length;                                   // 收了幾張：老闆送的也算（裁定 9）；種子補的是送的那幾格，一樣算
     const others = TIERS.filter(t => t !== ace);
-    run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);   // ＝bossAceFor(seedKey, runNo, ace)（run.rng 的第一個亂數）
+    run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);   // ＝bossAceFor(seedKey, runNo, ace)（run.rng 的第一個亂數；解鎖制照樣抽，run.rng 序列不變）
+    if (run.unlock) run.bossCard = bossCardFor(run, content);    // 這一輪藏家帶的頂點卡（被剋鏈／試做卡／照舊）
     restock(run, content);
     return run;
   }
@@ -1064,7 +1188,7 @@
   }
   // 這一位的客人設定（畫面的來客那排、shopPolicy、startFight 共用）
   function guestDef(run, content, id, pos) {
-    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, tier: run.tier });
+    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier });
   }
   function startFight(run, content, o) {
     o = o || {};
@@ -1079,7 +1203,7 @@
     const apex = !!o.apex && !prologue && !!apexCfg(content);   // 頂點卡試做：序章那場照舊 7 星教學
     if (apex) opts.apex = true;
     if (eDef.ace) opts.enemyAce = eDef.ace;
-    else if (eDef.boss && run.bossAce) opts.enemyAce = cardFrom(content, content.aces[run.bossAce]);
+    else if (eDef.boss && (run.bossCard || run.bossAce)) opts.enemyAce = cardFrom(content, run.bossCard || content.aces[run.bossAce]);
     if (tut && content.tutorial.script) opts.script = content.tutorial.script[run.ace] || null;
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp || CFG.playerHp;
     run.hpIn = run.hp;                                        // 說情重打從這裡開始（裁定 8）
@@ -1106,7 +1230,7 @@
     const met = uniq(duel.e.thrown.map(c => c.id));
     for (const id of met) if (!S.met.includes(id)) S.met.push(id);
     run.duel = null; run.duelEnemy = null;
-    let earn = 0, heal = 0, ups = 0, aceWon = null;
+    let earn = 0, heal = 0, ups = 0, aceWon = null, aceFirst = false, aceNew = false, aceUnlock = null;
     if (win) {
       S.wins++;
       earn = Math.max(0, econ(content).win[cls] | 0);
@@ -1127,8 +1251,19 @@
         heal = run.hp - Math.max(1, duel.p.hp);
         ups = gainXp(run, T, T.xp[cls] | 0);
         run.streak++; if (run.streak > run.bestStreak) run.bestStreak = run.streak;
-        if (cls === 'boss' && content.aces && content.aces[run.bossAce]) {
+        if (cls === 'boss' && run.unlock) {                   // 解鎖制：他這場真的帶的那張（每輪可以不同）；這一趟每張新卡各算一次「收了」
+          const won = bossWonCard(run, content, duel);
+          if (won) {
+            const tiers0 = unlockTiersOf(run, content), had = ownedApexOf(run, content).includes(won), t = tierOfApex(content, won);
+            if (!Array.isArray(run.acesWon)) run.acesWon = [];
+            aceWon = won; aceFirst = !run.acesWon.includes(won); aceNew = aceFirst && !had;
+            aceUnlock = aceFirst && t && !tiers0.includes(t) ? t : null;
+            if (aceFirst) { run.acesWon.push(won); run.taken++; }
+            run.aceWon = true;
+          }
+        } else if (cls === 'boss' && content.aces && content.aces[run.bossAce]) {
           aceWon = content.aces[run.bossAce];                 // 藏家的王牌收進唱片櫃（畫面做；同一張每輪都送，只算一次「收了」）
+          aceFirst = !run.aceWon;
           if (!run.aceWon) { run.aceWon = true; run.taken++; }
         }
         const cards = met.filter(id => content.cards[id] && !content.cards[id].tier && !run.bag.includes(id));
@@ -1153,7 +1288,7 @@
         S.lostAt = { enemyId, pos, round: run.round, idx: run.idx, cls, n: duel.n, last: duel.last };
       }
     }
-    return { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon };
+    return { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon, aceFirst, aceNew, aceUnlock };
   }
   // 獎勵收完：有升級就先選（連升就連選），選完才到下一位
   function settle(run, content) {
@@ -1181,6 +1316,7 @@
       run.round = roundOf(run.pos);
       run.order = roundOrder(content, run.seedKey, run.runNo, run.round, prev);
       run.retryLeft = trialCfg(content, run.tier).retry;
+      if (run.unlock) run.bossCard = bossCardFor(run, content);   // 解鎖制：新一輪的藏家帶哪張（上一輪收到的已經算進 run.acesWon）
       restock(run, content);
     }
   }
@@ -1194,6 +1330,7 @@
     run.order = roundOrder(content, run.seedKey, run.runNo, run.round, null);
     run.retryLeft = trialCfg(content, run.tier).retry;
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp;
+    if (run.unlock) run.bossCard = bossCardFor(run, content);
     restock(run, content);
     return run;
   }
@@ -1210,7 +1347,8 @@
   // 結算：走到第幾位、最多連贏幾位、收了幾張
   function runSummary(run) {
     const S = run.stats || {};
-    return { reached: run.pos | 0, bestStreak: run.bestStreak | 0, taken: run.taken | 0, wins: S.beaten | 0, level: run.level | 0, checkpoints: (run.checkpoints || []).slice(), kept: run.kept || null };
+    return { reached: run.pos | 0, bestStreak: run.bestStreak | 0, taken: run.taken | 0, wins: S.beaten | 0, level: run.level | 0, checkpoints: (run.checkpoints || []).slice(), kept: run.kept || null,
+      ...(run.unlock ? { aces: (run.acesWon || []).slice() } : {}) };   // 解鎖制：這一趟收的頂點卡（舊 run 不多這個鍵）
   }
 
   // ---------- 稀有度、價格與時機 ----------
@@ -1341,6 +1479,10 @@
     const want = o && o.aceId != null ? o.aceId : null;
     if (want != null && !apexList(content, tier).some(e => e && e.card === want && cardOf(content, want))) return fail('badAce');
     if (!canSwitchAce(run, content)) return fail('notNow');
+    if (run.unlock) {                                          // 解鎖制（店主 11-16）：只能換到已解鎖的派；旗標開只能換擁有的那張
+      if (!unlockTiersOf(run, content).includes(tier)) return fail('locked');
+      if (want != null && Array.isArray(run.unlock.apex) && !ownedApexOf(run, content).includes(want)) return fail('notOwned');
+    }
     if (tier === run.ace) {
       const cur = apexAceId(run, content);
       if (want == null || want === cur) return fail('same');
@@ -1360,6 +1502,7 @@
     if (want != null) run.aceId = want; else if (run.aceId != null) delete run.aceId;
     run.taken = Math.max(0, (run.taken | 0) + next.length - lost.length);
     if (run.bossAce === tier || !TIERS.includes(run.bossAce)) run.bossAce = bossAceFor(run.seedKey, run.runNo, tier);
+    if (run.unlock) run.bossCard = bossCardFor(run, content);   // 解鎖制：試做卡先挑別派的，換派可能換掉這一輪藏家帶的那張
     const SH = run.shop;
     if (SH) {
       if (SH.bins) for (const k of Object.keys(SH.bins)) if (Array.isArray(SH.bins[k])) SH.bins[k] = SH.bins[k].filter(id => !bag.includes(id));
@@ -1842,5 +1985,6 @@
     bagCap, bagLimited, bagFull, bagScore, bagGain, topAxes, bargainLane,
     runPolicy, shopPolicy, thinPolicy, bargainPolicy, policies,
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce,
+    TIER_BEATS, unlockChain, tierOfApex, apexCards, unlockedTiers, ownedApex, nextUnlock, unlockMigrate, unlockTiersOf, ownedApexOf, aceChoices, bossCardFor, fixUnlock,
     APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex };
 });

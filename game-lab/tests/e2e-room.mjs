@@ -288,8 +288,9 @@ async function runSize(browser, w, h) {
     {
       const { ctx: c10, page: p10 } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
       try {
-        await p10.route(/\/dip-tune\.js/, async r => { await sleep(4000); await r.continue().catch(() => {}); });
-        await p10.route('**/data/mood/card-moods.json*', async r => { await sleep(3000); await r.continue().catch(() => {}); });
+        // 延遲後 fallback（不是 continue）：交給下一個處理（LAB_ROOT 從磁碟回應的那層；沒有就照舊打伺服器）
+        await p10.route(/\/dip-tune\.js/, async r => { await sleep(4000); await r.fallback().catch(() => {}); });
+        await p10.route('**/data/mood/card-moods.json*', async r => { await sleep(3000); await r.fallback().catch(() => {}); });
         await openTitle(p10, Q('&fast=1&strict=1'));
         const own10 = await pickOwn(p10, 5);
         await p10.evaluate(ids => window.__lab.own(ids, 'run'), own10);
@@ -329,7 +330,7 @@ async function runSize(browser, w, h) {
     if (w === SIZES[0][0] && h === SIZES[0][1]) {
       const { ctx: c11, page: p11 } = await newPage(browser, w, h);
       try {
-        await p11.route('**/data/mood/card-moods.json*', async r => { await sleep(4000); await r.continue().catch(() => {}); });
+        await p11.route('**/data/mood/card-moods.json*', async r => { await sleep(4000); await r.fallback().catch(() => {}); });
         await openTitle(p11, Q('&fast=1&strict=1'));
         const own11 = await pickOwn(p11, 5);
         await p11.evaluate(ids => window.__lab.own(ids, 'run'), own11);

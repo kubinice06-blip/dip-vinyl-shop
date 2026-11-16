@@ -572,8 +572,9 @@ async function runSize(browser, w, h) {
 const IURL = /econ-harness/.test(URL0) ? new URL('../index.html', URL0).href : URL0.replace(/\?.*$/, '');
 const IQ = IURL + '?debug=1&seed=20261106';
 // 一份 v5 存檔（同 e2e-lib 的 seedRun）：第 1 位之前、特價箱已挑、錢 money
-async function seedNight(page, money, bagN, seen) {
-  await page.evaluate(([money, bagN, seen]) => {
+// ownAces（解鎖制，店主 11-16）：這幾派的預設頂點卡算擁有（＝那派解鎖，才有王牌可換）；有給就直接寫 v6（v5 的唱片櫃沒有「擁有」，遷移時重算）
+async function seedNight(page, money, bagN, seen, ownAces) {
+  await page.evaluate(([money, bagN, seen, ownAces]) => {
     const E = window.DipLabEngine, C = window.DipLabContent;
     const r = E.newRun(C, { seedKey: '20261106', runNo: 1, ace: 'pearl', prologue: false, relics: [] });
     r.tut = false;
@@ -586,8 +587,13 @@ async function seedNight(page, money, bagN, seen) {
     const s = { v: 5, seen: seen || { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
+    if (ownAces && ownAces.length) {
+      s.v = 6;
+      (C.gifts[r.ace] || []).forEach(id => { s.shelf[id] = Object.assign(s.shelf[id] || { at: r.seedKey + '#1', seen: false }, { own: true, src: 'gift' }); });
+      ownAces.forEach(t => { s.shelf[C.aces[t]] = { at: r.seedKey + '#1', seen: true, own: true, src: 'boss' }; });
+    }
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
-  }, [money, bagN || 0, seen || null]);
+  }, [money, bagN || 0, seen || null, ownAces || null]);
 }
 async function openTitleI(page) {
   await page.goto(IQ, { waitUntil: 'domcontentloaded' });
@@ -976,7 +982,8 @@ async function runIndex(browser, w, h) {
       await enter(); await sleep(1800);
       const d = { seen: dSeen, ts: await toastsNow() };
       // (f) 第 1 位開打前、換王牌的提示還沒出過：那一次只出換王牌的（不疊），包包的不出、也不記看過
-      await seedNight(page, 3000, 12, { night: true }); await enter(); await sleep(1800);
+      //   解鎖制（店主 11-16）：有別派可換才出換王牌的提示＝存檔先放好殿堂那張
+      await seedNight(page, 3000, 12, { night: true }, ['hall']); await enter(); await sleep(1800);
       const f = { ts: await toastsNow(), seen: await page.evaluate(() => !!window.__lab.save.seen.bagSell), ace: await page.evaluate(() => !!window.__lab.save.seen.aceSwap) };
       // (e) 第一次來客的提示（nightIntro）：四句，第 4 句講點「包包」可以賣回
       await seedNight(page, 3000, 8, {}); await enter();
