@@ -48,7 +48,7 @@
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept}
-//            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
+//            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
 //            run 多 pos(1 起) round idx(輪內 0–4) order(這一輪 5 位) hp maxHp hpIn level xp atk def levelUps picks streak bestStreak checkpoints taken(收了幾張)
 //            choose(run, content, ch) -> {ok, effects} | {ok:false, error}
 //              ch: take／relic／skip／retry／end（v3）＋ bargainPick／buy／buyBargain／buyRelic（§2.1.6；錯的選擇完全不改 run）＋ level {pick:'atk'|'def'|'hp'}
@@ -1037,6 +1037,19 @@
     SH.bins = bins;
     return true;
   }
+  // 舊存檔停在「開局特價箱還沒挑」（canBargainPick：序章 O13 之前、或再挑戰一趟特價區挑到一半），箱子擺的還是換下來的舊特價箱
+  //   （content.bargain.retired，或任何已經不在 pool 的卡；店主 11-16 換牌：每張最高星 ≤3、三軸加起來 ≤5）→ 載入時（ui.js loadSave，fixBins 之後）
+  //   用現在的池子重擺：＝這一輪 restock 本來就會擺的那 6 張（同一個種子，拿一份暫時的 run 跑一次；不碰 run.rng），扣掉包包裡的 → 同一份存檔每次載入一樣。
+  //   只管還沒挑的開局三張（免費）；挑過了（之後每輪要買）舊牌照特價賣到這一輪結束，下一輪 restock 自然換新。回傳 true＝有改
+  function fixBargain(run, content) {
+    const SH = run && run.shop;
+    if (!SH || !Array.isArray(SH.bargain) || !Array.isArray(run.bag) || !canBargainPick(run)) return false;
+    const pool = ((content && content.bargain) || {}).pool || [];
+    if (SH.bargain.every(id => pool.includes(id))) return false;
+    const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: run.bag.slice(), relics: (run.relics || []).slice() };
+    SH.bargain = restock(tmp, content).bargain.slice();
+    return true;
+  }
   function current(run, content) {
     if (run.duel && run.duelEnemy) return run.duelEnemy;
     if (run.pending && run.pending.enemyId) return run.pending.enemyId;
@@ -1592,7 +1605,7 @@
       // 有上限（--set bagMax=8 對照）：舊規則一字不差——沒滿拿峰值最大的；滿了換掉總星最少那張（不比它強就不拿）
       const best = order[0];
       if (!best) return { type: 'skip' };
-      if (run.bag.length < CFG.bagMax) return { type: 'take', cardId: best };
+      if (!bagFull(run)) return { type: 'take', cardId: best };
       const weakest = run.bag.slice().sort((a, b) => power(cOf(a)) - power(cOf(b)) || peak(cOf(a)) - peak(cOf(b)))[0];
       if (power(cOf(weakest)) >= power(cOf(best))) return { type: 'skip' };
       return { type: 'take', cardId: best, dropId: weakest };
@@ -1639,7 +1652,7 @@
       for (const x of cands) {
         const ch = { type: 'buy', key: x.key, cardId: x.cid };
         if (unl && bagScore(content, r.bag.concat([x.cid])) - base <= BAG_EPS) continue;
-        if (r.bag.length >= CFG.bagMax) {
+        if (bagFull(r)) {                                       // 有上限而且滿了才要賣（bagMax null／0／負數＝不限，跟 Infinity 一樣不賣）
           ch.sellId = r.bag.filter(x => !isGift(r, content, x) && !isSeed(r, content, x)).sort((a, b) => power(cardOf(content, a)) - power(cardOf(content, b)) || peak(cardOf(content, a)) - peak(cardOf(content, b)))[0];   // 老闆送的不能賣
           if (ch.sellId == null) continue;
         }
@@ -1822,7 +1835,7 @@
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, jumpTo, half, hintTableOf,
+    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
     bagCap, bagLimited, bagFull, bagScore, bagGain, topAxes, bargainLane,

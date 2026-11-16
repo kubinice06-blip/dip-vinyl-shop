@@ -1904,7 +1904,7 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
     ok(JSON.stringify(EN.APEX_TAU) === JSON.stringify(keep), 'APEX_TAU restored'); }
 });
 
-section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、買東西不用賣、賣回仍可（sell）、最少留 5 張、不跨趟、舊存檔照玩；特價箱（最高 ≤3、加總 ≤5、每色）；策略判斷值不值得收', () => {
+section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、買東西不用賣、賣回仍可（sell）、最少留 5 張、不跨趟、舊存檔照玩（開局特價箱還沒挑的重擺）；特價箱（最高 ≤3、加總 ≤5、每色）；策略判斷值不值得收', () => {
   const untouched = (run, ch, code, name) => { const b = JSON.stringify(run), r = EN.choose(run, C, ch); ok(!r.ok && r.error === code && JSON.stringify(run) === b, name + ' → ' + code, r); };
   const NONB = Object.keys(C.cards).filter(id => !C.cards[id].tier && !C.bargain.pool.includes(id) && !(C.bargain.retired || []).includes(id) && !Object.values(C.gifts).flat().includes(id)).sort();
   const picked = (seedKey, ace = 'hall', o = {}) => { const r = EN.newRun(C, Object.assign({ seedKey, runNo: 2, ace }, o)); ok(EN.choose(r, C, EN.bargainPolicy(r, C)).ok, 'bargainPick ok'); return r; };
@@ -1917,7 +1917,13 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     try {
       CFG.bagMax = 8; const r = picked('b21-a8'); r.bag.push(NONB[0]); ok(EN.bagCap() === 8 && EN.bagLimited() && EN.bagFull(r), '--set bagMax=8：有上限、8 張＝滿');
       for (const v of [null, 0, -1, undefined]) { CFG.bagMax = v; ok(EN.bagCap() === Infinity && !EN.bagLimited(), 'bagMax ' + v + ' 也當不限'); }
-    } finally { CFG.bagMax = B0; } }
+    } finally { CFG.bagMax = B0; }
+    // null／0／負數＝不限：shopPolicy、runPolicy 跟 Infinity 逐字相同（審查：shopPolicy 直接比 bag.length >= CFG.bagMax，0／null 時每筆買都被附上 sellId）
+    const shopAll = () => { let out = ''; for (let s = 0; s < (QUICK ? 30 : 120); s++) { const r = picked('b21-bm-' + s, TIERS[s % 3]); r.money = 20000; if (s % 2) r.bag = r.bag.concat(NONB.slice(300 + s % 7, 303 + s % 7)); out += JSON.stringify(EN.shopPolicy(r, C, 'smart', { thin: s % 3 !== 0 })); offer(r, [NONB[s], NONB[s + 1]]); out += JSON.stringify(EN.runPolicy(r, C)); } return out; };
+    const REF = shopAll();
+    ok(!/"sellId"/.test(REF), 'unlimited shopPolicy never attaches sellId');
+    try { for (const v of [null, 0, -1, undefined]) { CFG.bagMax = v; ok(shopAll() === REF, 'bagMax ' + v + '：shopPolicy／runPolicy ＝ Infinity（不強迫賣）'); } }
+    finally { CFG.bagMax = B0; } }
   // (b) 收第 9、第 20 張不用丟；dropId 可給可不給
   { const run = picked('b21-take'); let n = run.bag.length, taken = run.taken;
     eq(n, 7, 'start: 4 gifts + 3 bargain');
@@ -2007,6 +2013,24 @@ section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、
     EN.jumpTo(old, C, 6);
     ok(old.shop.bargain.length && old.shop.bargain.every(id => C.bargain.pool.includes(id)), 'next round: crate restocked from the new pool only', old.shop.bargain);
     ok(!Object.values(old.shop.bins).flat().some(id => RET.includes(id) || C.bargain.pool.includes(id)), 'bins never stock bargain／retired'); }
+  // (g2) 舊存檔停在「開局特價箱還沒挑」、箱子還擺換下來的舊牌（審查：免費挑三張照樣是三軸加起來 6–7 的舊牌）→ fixBargain 用現在的池子重擺
+  //   ＝同種子 newRun 本來會擺的那 6 張；run 其他欄位不動；再呼叫一次不改；挑過了、或已經是新池子的不動
+  { const RET = C.bargain.retired, P = C.bargain.pool;
+    for (let s = 0; s < (QUICK ? 40 : 200); s++) {
+      const o = { seedKey: 'b21-oldpick-' + s, runNo: 1 + (s % 3), ace: TIERS[s % 3] };
+      const run = EN.newRun(C, o), ref = EN.newRun(C, o);
+      run.shop.bargain = RET.slice(s % 4, s % 4 + 4).concat(P.slice(0, 2));
+      const rest = x => JSON.stringify(Object.assign({}, x, { shop: Object.assign({}, x.shop, { bargain: null }) }));
+      const before = rest(run), changed = EN.fixBargain(run, C);
+      if (!(changed && JSON.stringify(run.shop.bargain) === JSON.stringify(ref.shop.bargain) && rest(run) === before && !EN.fixBargain(run, C))) { ok(false, 'fixBargain re-lays the crate like newRun', { s, got: run.shop.bargain, want: ref.shop.bargain }); break; } else pass++;
+      const r = EN.choose(run, C, EN.bargainPolicy(run, C));
+      if (!(r.ok && run.bag.slice(-3).every(id => P.includes(id) && EN.peak(card(id)) <= 3 && card(id).c + card(id).o + card(id).h <= 5))) { ok(false, 'after fixBargain: the free three are from the new pool (max ≤3, sum ≤5)', { s, bag: run.bag }); break; } else pass++;
+    }
+    const done = picked('b21-oldpick-done'); done.shop.bargain = RET.slice(0, 3); const b = JSON.stringify(done);
+    ok(!EN.fixBargain(done, C) && JSON.stringify(done) === b, 'fixBargain: already picked → untouched (retired ones sell at their bargain price until next round)');
+    const fresh = EN.newRun(C, { seedKey: 'b21-oldpick-fresh', runNo: 1, ace: 'pearl' }), fb = JSON.stringify(fresh);
+    ok(!EN.fixBargain(fresh, C) && JSON.stringify(fresh) === fb, 'fixBargain: crate already from the new pool → untouched');
+    ok(!EN.fixBargain(null, C) && !EN.fixBargain({}, C) && !EN.fixBargain({ shop: {} }, C), 'fixBargain: junk → false'); }
   // (h) 特價箱：每張最高 ≤3、加總 ≤5；每色（bargainLane）≥3；每輪 6 張＝每色 2；開局挑法三色各一
   { const P = C.bargain.pool;
     for (const id of P) { const c = card(id); ok(EN.peak(c) <= 3 && c.c + c.o + c.h <= 5 && !c.tier, 'bargain ' + id + ': max ≤3, sum ≤5', [c.c, c.o, c.h]); }

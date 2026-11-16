@@ -23,6 +23,7 @@
  *     配件一件 $3,000；賣回半價。畫面上的錢一律千分位（mt＝engine.moneyText）。
  *   - 包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity）：買唱片、買特價箱都不用「先賣一張」；只剩「錢不夠、賣一張就夠」那條先賣（自願的，子面板可以關掉）。
  *     包包長了（20、30 張）：先賣子面板的格子縮到 36 px 還放不下，就把封面放回 56 px、讓格子那一區自己捲（.ec-scroll），標題、說明、鈕留在原位。
+ *     子面板的排法：能選的（賣了就夠）排前面 → 賣了也不夠的 → 櫃裡帶來的 → 老闆送的（同一類照包包順序）；點選重畫時格子捲到哪留在哪（不跳回頂端）。
  *   - 老闆送的（王牌那組四張＋王牌，engine.isGift）不能賣回（FIXLIST 11 追加）：先賣子面板裡照樣列出來，但標「老闆送的」（C.shopUi.giftTag）、不能選；
  *     能不能買（賣一張就夠）、賣回價的範圍都只算能賣的那幾張。
  *   - 從唱片櫃帶來的種子（engine.isSeed；店主 11-13 §0 護欄）也不能賣回：先賣子面板照樣列出來、標「櫃裡帶來」（C.shopUi.seedTag）、選不了；
@@ -473,8 +474,12 @@
     var bvals = sellVals(r);   // 賣回價的範圍只算能賣的（老闆送的不算）
     var msg = fill(ui('moneyShort'), { n: range(bvals) });   // 包包不限張數之後，唱片的先賣只剩錢不夠這條（店主 11-16）
     var fc = sub.picks.length ? card(sub.picks[sub.picks.length - 1]) : null;
+    // 排法（包包不限張數之後包包會很長；審查：能選的散在十列裡、第一列永遠是老闆送的）：能選的（賣了就夠）排前面 → 賣了也不夠的 → 櫃裡帶來的 → 老闆送的；
+    //   同一類照包包順序。只看錢與價錢，點選不會改排法（重畫時格子捲到哪留在哪，見 render）
+    var rank = function (id) { var c = card(id); if (!c) return 4; if (isGift(r, id)) return 3; if (isSeed(r, id)) return 2; return sub.need === 1 && r.money + E().sellValue(C(), c) < sub.price ? 1 : 0; };
+    var order = r.bag.map(function (id, i) { return { id: id, i: i, k: rank(id) }; }).sort(function (a, b) { return a.k - b.k || a.i - b.i; }).map(function (x) { return x.id; });
     return headHTML(S.label) + '<p class="ec-msg">' + esc(msg) + '</p>' +
-      '<div class="ec-grid ec-g4">' + r.bag.map(function (id) {
+      '<div class="ec-grid ec-g4">' + order.map(function (id) {
         var c = card(id); if (!c) return '';
         var gift = isGift(r, id);   // 老闆送的：照樣列出來、標「老闆送的」、不能選
         var seed = !gift && isSeed(r, id);   // 從唱片櫃帶來的：標「櫃裡帶來」、選不了；點了說明為什麼（所以不加 disabled，用 aria-disabled）
@@ -499,10 +504,13 @@
   // ------------------------------------------------------------------ 畫＋量（抽屜最高 #app 的 50%，內容縮到放得下，不捲動；只有先賣子面板包包太長時格子那一區自己捲）
   function render() {
     var el = S.el; if (!el) return;
+    // 先賣子面板的格子自己捲（.ec-scroll）：點一張會整個重畫——捲到哪留在哪（審查：跳回頂端，剛選的那張被捲出畫面）。剛打開子面板（上一畫不是子面板）從頂端開始
+    var g0 = S.sub && el.classList.contains('ec-sub') ? el.querySelector('.ec-grid') : null, keep = g0 ? g0.scrollTop : 0;
     var html = S.sub ? sellHTML() : S.kind === 'bin' ? binHTML() : S.kind === 'relic' ? relicHTML() : gridHTML();
     el.innerHTML = html;
     el.classList.toggle('ec-sub', !!S.sub);
     fit();
+    if (keep > 0) { var g1 = el.querySelector('.ec-grid'); if (g1) g1.scrollTop = keep; }
     if (S.focusH != null) refocus();   // 高度變了（賣回子面板變高、先賣一件變矮）就重新對焦：箱子不被蓋到、也不露出後面的來客
   }
   function fit() {

@@ -170,7 +170,7 @@ function radioSmart(run, R) {
   if (!best) return;
   ok(EN.choose(run, C, { type: 'radio', cell: best }), 'radio', best); R.spins++;
   const rid = run.shop.radio.id, price = EN.bargainPriceIn(run, C, rid), ch = { type: 'buyBargain', ids: [rid] };
-  if (run.bag.length >= CFG.bagMax) {
+  if (EN.bagFull(run)) {                                             // 有上限而且滿了才賣（bagMax null／0／負數＝不限，跟 Infinity 一樣）
     const weak = run.bag.filter(x => !EN.isGift(run, C, x) && !EN.isSeed(run, C, x)).sort((a, b) => EN.power(C.cards[a]) - EN.power(C.cards[b]))[0];
     if (weak == null || EN.power(C.cards[weak]) >= EN.power(C.cards[rid])) return;
     ch.sellIds = [weak];

@@ -411,11 +411,13 @@ export function contentProblems(C, E) {
   ok(String(SL.homePut || '').length <= 4, 'shopLines.homePut（唱片架每張下面的小鈕）≤4 字');
   ok(SL.binBusy === '打完再翻。', 'shopLines.binBusy＝「打完再翻。」（D §6）');
   ok(SL.ownerHint && ['title', 'scene', 'night', 'duel', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 五個畫面');
-  ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 3, 'shopLines.nightIntro 三句（第 2 句「客人跟剛才那位不一樣」店主 11-12）');
+  ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 4, 'shopLines.nightIntro 四句（第 2 句「客人跟剛才那位不一樣」店主 11-12；第 4 句講包包賣回，店主 11-16 包包不限張數）');
+  ok(String((SL.nightIntro || [])[1] || '').startsWith('客人跟剛才那位不一樣'), 'shopLines.nightIntro 第 2 句「客人跟剛才那位不一樣」（店主 11-12）');
+  ok(/包包/.test(String((SL.nightIntro || [])[3] || '')) && /賣回/.test(String((SL.nightIntro || [])[3] || '')), 'shopLines.nightIntro 第 4 句講「包包」可以「賣回」（包包不限張數之後唯一自己瘦身的入口）');
   const SU = ['money', 'binTitle', 'buy', 'noMoney', 'sellPick', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
     'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',
     'bag', 'binEmpty', 'owned', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria',
-    'bagSellNote', 'bagSellBtn', 'bagSellAsk', 'bagSellGo', 'bagSellNo', 'bagSellMin'];
+    'bagSellNote', 'bagSellBtn', 'bagSellAsk', 'bagSellGo', 'bagSellNo', 'bagSellMin', 'bagSellHint'];
   ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8）');
   // 包包不限張數（店主 11-16）：包包只寫張數（不寫上限）；「包包滿要先賣／先丟」的字拿掉了（強迫的流程沒有了）
   ok(C.shopUi && /\{n\}/.test(C.shopUi.bag) && !/\{max\}|\//.test(C.shopUi.bag), 'shopUi.bag 只寫張數（「包包 {n} 張」，不寫上限）');

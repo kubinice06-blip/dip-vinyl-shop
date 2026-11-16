@@ -20,7 +20,7 @@
 //   startDuelLesson({ tier, replay? }) → Promise<'done'|'skipped'|'released'|'aborted'>  // mount 之後叫；依 duel.n 自己接到那一手的步驟
 //   skip(), abort(), active(), fastForward()
 //   hintHook(id, targets)   // ＝DipLabDuel hooks.hint：一次性老闆小提示；教學進行中不出、不記
-//   firstTime(id, targets)  // 同一條佇列；另有 'night'（C.shopLines.nightIntro 兩句，壓暗 40%、點一下換句）
+//   firstTime(id, targets)  // 同一條佇列；另有 'night'（C.shopLines.nightIntro 四句，壓暗 40%、點一下換句）
 //   dismissSoft(), step(def), replayDuel(C, tier, seed?, {bargain?}), learned(), learnedIds(), settled(), debug()
 // };
 // gate action（duel.js 送進來）：{kind:'card',i,attr,id}（點一張封面＝在那張打開）

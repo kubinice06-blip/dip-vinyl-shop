@@ -571,6 +571,10 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-bagline{flex:none;margin-top:auto;border-top:1px solid var(--line);height:44px;display:flex;align-items:center;gap:6px;padding:0 6px 0 2px;font-size:12px;white-space:nowrap;overflow:hidden;}
 .lb-bagline button{min-height:44px;padding:0 8px;display:inline-flex;align-items:center;gap:5px;font:400 12px var(--zh);}
 .lb-bagline .bag b{font:700 13px 'Space Mono',monospace;}
+/* 包包賣回的一次性提示（店主 11-16 包包不限張數；ui.js BAG_HINT_AT）：包包那顆閃三下（包包條 overflow:hidden → 用內框，不被裁掉） */
+@keyframes lbBagNudge{0%,100%{box-shadow:inset 0 0 0 0 rgba(184,134,11,0);background:transparent;}50%{box-shadow:inset 0 0 0 2px var(--gold);background:rgba(184,134,11,.14);}}
+.lb-bagline .bag.nudge{animation:lbBagNudge 1s ease-in-out 3;border-radius:6px;}
+@media (prefers-reduced-motion:reduce){.lb-bagline .bag.nudge{animation:none;box-shadow:inset 0 0 0 2px var(--gold);}}
 /* 發燒配件（審查 #10）：有配件只放圖示（一件才加名字，放不下名字就省略號）；圖示永遠不縮；沒有配件寫「發燒配件（還沒有）」 */
 .lb-bagline .rl{color:var(--gray2);font-size:11px;flex:0 1 auto;min-width:0;overflow:hidden;gap:4px;padding:0 6px;}
 .lb-bagline .rl .k{color:var(--gray);flex:none;}

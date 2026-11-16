@@ -217,6 +217,8 @@
     if (s.run && !validRun(s.run)) s.run = null;
     // 這一輪的貨跟現在的箱子對不上（v5 店面改版前存的：有 pop、沒有 citypop／indierock／indiepop）：只補缺的區、丟掉沒有的區（同種子，每次載入一樣）
     if (s.run && E.fixBins) { try { E.fixBins(s.run, C); } catch (_) { /* 補不了就照舊：那一區點了說賣完 */ } }
+    // 停在「開局特價箱還沒挑」的舊存檔（店主 11-16 換特價箱之前存的）：箱子還擺換下來的舊牌（三軸加起來 6–7）→ 用現在的池子重擺（同種子，每次載入一樣）
+    if (s.run && E.fixBargain) { try { E.fixBargain(s.run, C); } catch (_) { /* 重擺不了就照舊 */ } }
     // 收音機（v5 第六項第二期）：舊存檔沒有 shop.radio＝這一輪還沒轉；壞掉的（不是 {cell, id}、格子或卡不在了）當作沒轉
     if (s.run && s.run.shop) { var rd = s.run.shop.radio; if (rd != null && !(rd && typeof rd === 'object' && card(rd.id) && C.tunes && C.tunes.colors && C.tunes.colors[rd.cell])) s.run.shop.radio = null; if (rd === undefined) s.run.shop.radio = null; }
     // 唱片櫃（v6）：每一格 {at, seen, own?, src?}；擁有的 src 只認 gift／run／boss
@@ -2632,13 +2634,25 @@
     // 頂點卡試做（?apex=1）：這份存檔第一次開旗標、第 1 位開打前＝老闆說一句、跳挑王牌面板（apexIntroOnNight；旗標關時不走）
     if (apexIntroOnNight(r)) return;
     // 換王牌的一次性提示（店主 11-13；save.seen.aceSwap）：第 1 位開打前、第一次來客的提示（nightIntro）看過之後才出——老闆頭上閃一下＋吐司「想換王牌，點老闆。」
-    if (save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C)) later(function () {
+    var aceHintNow = save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C);
+    if (aceHintNow) later(function () {
       if (UI.screen !== 'night' || !save.run || !E.canSwitchAce(save.run, C) || save.seen.aceSwap) return;
       save.seen.aceSwap = true; persist();
       stg('emote', 'o', 'excl', 2600);
       toast(TU('aceHint'));
     }, 700);
     var quiet = UI.quietNight; UI.quietNight = false;          // 剛換完王牌重畫：這一次不再排第一次來客的提示（審查：三則訊息疊在一起）
+    // 包包賣回的一次性提示（店主 11-16 包包不限張數之後；save.seen.bagSell）：第一次來客的提示看過之後、兩位客人之間、包包長到 BAG_HINT_AT 張以上——
+    //   包包那顆閃三下＋吐司「包包越塞越滿？點「包包」可以賣回，半價。」（玩家自己瘦身唯一的入口在包包面板；不提示的話牌組只會越收越大）。
+    //   自己點開過包包（能賣的時候）就不再出；同一次不跟換王牌的提示疊
+    if (!aceHintNow && !quiet && save.seen.night && !save.seen.bagSell && !UI.auto && E.canShop(r) && r.bag.length >= BAG_HINT_AT) later(function () {
+      var rr = save.run;
+      if (UI.screen !== 'night' || !rr || save.seen.bagSell || !E.canShop(rr) || rr.bag.length < BAG_HINT_AT || qs('.lb-sheet.float', app())) return;
+      save.seen.bagSell = true; persist();
+      var bb = qs('.lb-bagline [data-a=bag]', app());
+      if (bb) { bb.classList.remove('nudge'); void bb.offsetWidth; bb.classList.add('nudge'); setTimeout(function () { bb.classList.remove('nudge'); }, 3400); }
+      toast(SHU('bagSellHint'), 'long');
+    }, 700);
     if (!save.seen.night && !UI.auto && !quiet) later(function () {
       if (UI.screen !== 'night') return;
       // 整個名單（含「第 n 輪」那行）當目標：泡泡放在名單上面，不蓋標題（RT-11）
@@ -2704,8 +2718,10 @@
   //   375×548 也不爆版。兩位客人之間（engine.canShop）每張底下「賣 $n」（半價，engine.sellValue）：點了底下那條先問「賣掉《…》？」→「賣掉 +$n」
   //   才賣（engine.choose sell）——包包變長後玩家自己瘦身的地方。老闆送的、櫃裡帶來的標小籤、不給賣；包包剩 5 張（手牌補得滿，engine 'bagMin'）
   //   鈕停用、寫原因。賣完：吐司「《…》賣掉，+$n」、包包條的錢與張數跟著變
+  var BAG_HINT_AT = 10;                                        // 包包賣回的一次性提示：包包幾張以上才出（開局 7 張、序章那一趟 8 張；打贏兩三位之後）
   function bagSheet(r) {
     var pick = null, floor = (E.CFG && E.CFG.handSize) || 5;
+    if (E.canShop(r) && !save.seen.bagSell) { save.seen.bagSell = true; persist(); }   // 能賣的時候自己點開過：「點包包可以賣回」的提示不用再出
     var tag = function (cls, t) { return '<span class="sdtag' + (cls ? ' ' + cls : '') + '">' + esc(t) + '</span>'; };
     var body = function () {
       var shop = E.canShop(r), atMin = r.bag.length <= floor;

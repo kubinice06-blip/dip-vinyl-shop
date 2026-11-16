@@ -18,8 +18,9 @@
 //   12 序章、對決中點箱子 → 老闆說「打完再翻。」、不開抽屜
 //   13 沒有 run（標題）：抽屜只能翻、沒有買的鈕
 //   15 錢不夠但賣一張就夠（SPEC §2.5.6 第 3 點；包包不限張數之後唯一的「先賣」，自願）：鈕可按（「買 $400／先賣一張」）→ 子面板「錢不夠：先賣一張」、賣了也不夠的那張不給選、
-//      老闆送的標「老闆送的」不給選 → 賣一張買到、包包張數不變；包包 24 張：封面縮到 36 px 還放不下 → 封面放回 56 px、格子那一區自己捲（.ec-scroll）、抽屜 ≤50% 不溢出、
-//      捲到最後一張選得到、賣了買到；櫃檯配件同理（「先賣一件」，配件沒滿 3 件）
+//      老闆送的標「老闆送的」不給選 → 賣一張買到、包包張數不變；排法：能選的（賣了就夠）排前面 → 賣了也不夠的 → 老闆送的（同一類照包包順序）；
+//      包包 24 張：封面縮到 36 px 還放不下 → 封面放回 56 px、格子那一區自己捲（.ec-scroll）、抽屜 ≤50% 不溢出；只有一張湊得到（擺在包包最後）→ 它排第一格、不用捲就看得到；
+//      每張都湊得到 → 捲到底點最後一張能選的：格子不跳回頂端、那張還看得到、選到了（再點另一張也一樣）→ 賣了買到；櫃檯配件同理（「先賣一件」，配件沒滿 3 件）
 //   16 走路朝向（v5 第五項，三向）：browse → 爵士箱、爵士箱 → 櫃檯逐格取樣 pos('p').dir／flip：往上（約 60°）那段背面、往下正面、
 //      橫走側面（往左朝左＝flip、往右朝右）；到箱子前翻箱、到櫃檯 faceTo 都回正面
 //   14 所有面板（箱子、包包 24 張的箱子、特價兩種、櫃檯、配件賣回、錢不夠先賣、包包 24 張的先賣）不捲出畫面、鈕 ≥44 高（格子那一區捲的：捲出去的格子不算）；主控台 0 錯誤（最後跑）
@@ -42,6 +43,10 @@
 //      老闆送的標「老闆送的」、沒有「賣」鈕，其他每張「賣 $半價」（≥36 高）→ 捲到底：標題列還在最上面、最後一張的「賣」鈕點得到 → 底下那條「賣掉《…》？」
 //      （那張沒被蓋到、兩顆鈕 ≥44 高）→「賣掉 +$n」：錢 +半價、包包 23、標題與包包條都變、吐司「《…》賣掉，+$n」；包包剩 6 張賣一張 → 5 張：「賣」鈕全停用、
 //      說明那行變紅「包包至少留 5 張，手牌才補得滿。」、引擎再賣 → bagMin；主控台 0 錯誤
+//   30 舊存檔停在「開局特價箱還沒挑」、箱子還擺換下來的舊特價箱（店主 11-16 換牌之前存的）→ 載入時用現在的池子重擺（engine.fixBargain：＝同種子新開一趟會擺的）：
+//      開局挑三張的面板 6 張全是新池子（每張最高 ≤3、加總 ≤5）→ 挑三張收下 → 包包 +3、都是新牌
+//   31 包包賣回的提示（包包不限張數之後唯一自己瘦身的入口）：包包 9 張不出；12 張（兩位客人之間）→ 包包那顆閃（.nudge）＋吐司 C.shopUi.bagSellHint、存檔 seen.bagSell；
+//      再進來不出；一進來先自己點開包包＝看過、之後不出；第 1 位前換王牌的提示要出的那一次讓位（不疊、不記看過）；第一次來客的提示（C.shopLines.nightIntro）四句、第 4 句講點「包包」可以賣回
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen } from './e2e-lib.mjs';
 
@@ -410,7 +415,9 @@ async function runSize(browser, w, h) {
       const tiles = await page.evaluate(() => [...document.querySelectorAll('.ec-drawer .ec-spick')].map(t => [t.dataset.cid, t.disabled]));
       const gtiles = await page.evaluate(() => [...document.querySelectorAll('.ec-drawer .ec-spick.gift')].map(t => [t.dataset.cid, t.disabled, (t.querySelector('.ec-gift') || {}).textContent || '']));
       const okGift = gtiles.length === setup.all.filter(x => x[2]).length && gtiles.length > 0 && gtiles.every(([, dis, tx]) => dis && tx === '老闆送的');
-      const want = setup.all.map(([id, v, gift]) => [id, gift || setup.money + v < setup.price]);   // 老闆送的：一律不給選
+      // 排法（審查：包包長了能選的散在十列裡）：能選的（賣了就夠）排前面 → 賣了也不夠的 → 老闆送的；同一類照包包順序
+      const rank = ([, v, gift]) => gift ? 3 : setup.money + v < setup.price ? 1 : 0;
+      const want = setup.all.map((x, i) => [x, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([[id, v, gift]]) => [id, gift || setup.money + v < setup.price]);   // 老闆送的：一律不給選
       const sell = setup.sv.find(x => x[1] === setup.max)[0];
       await tapSel(page, `.ec-drawer .ec-spick[data-cid="${sell}"]`); await sleep(200);
       await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
@@ -420,15 +427,23 @@ async function runSize(browser, w, h) {
         r1.money === setup.money + setup.max - setup.price && r1.bag.length === r0.bag.length && !r1.bag.includes(sell) && r1.bag.includes(setup.id) && !d1.ids.includes(setup.id) && !d1.sub && /賣掉/.test(toasts.slice(-1)[0] || '');
       const sCard = `$${setup.money}、《${setup.id}》$${setup.price}：鈕「${txt}」可按 ${!dis}；子面板「${msg}」（箱子沒被蓋到 ${vis.ok}）；不給選 ${tiles.filter(t => t[1]).length}/${tiles.length} 張（照賣回價算 ${JSON.stringify(tiles) === JSON.stringify(want)}；老闆送的 ${gtiles.length} 張標「${(gtiles[0] || [])[2]}」${okGift}）；賣 ${sell}（+${setup.max}）→ $${r1.money}、包包 ${r0.bag.length} → ${r1.bag.length}`;
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
-      // 包包 24 張（不限張數，店主 11-16）：先賣子面板列整個包包 → 格子那一區自己捲；捲到最後一張、選它、賣了買到
+      // 包包 24 張（不限張數，店主 11-16）：先賣子面板列整個包包 → 格子那一區自己捲。
+      //   (a) 只有賣回價最高的湊得到（同價的可能有好幾張），其中一張擺在包包最後：能選的排到最前面、第一張不用捲就看得到（審查：第一列永遠是老闆送的、能選的散在十列裡）；
+      //       能選的都在不能選的前面、送的排最後；選第一格那張賣了買到
+      //   (b) 每張都湊得到：捲到底、點最後一張能選的 → 格子不跳回頂端、那張還在眼前、選到了（審查：點了整個重畫、scrollTop 跳回 0）→ 賣了買到
+      const gridState = id => page.evaluate(id => { const g = document.querySelector('.ec-drawer .ec-grid'), t = id && document.querySelector(`.ec-drawer .ec-spick[data-cid="${id}"]`); if (!g) return null;
+        const a = g.getBoundingClientRect(), b = t && t.getBoundingClientRect(), tiles = [...g.querySelectorAll('.ec-spick')];
+        return { st: Math.round(g.scrollTop), sh: g.scrollHeight, ch: g.clientHeight, vis: !!b && b.top >= a.top - 1 && b.bottom <= a.bottom + 1, sel: !!t && t.classList.contains('sel'),
+          ids: tiles.map(x => x.dataset.cid), dis: tiles.map(x => x.disabled || x.getAttribute('aria-disabled') === 'true'), gift: tiles.map(x => x.classList.contains('gift')) }; }, id);
       await reset(page, { mode: 'night', money: 0, bag: 24, relics: 2 });
       const big = await page.evaluate(() => {
         const C = window.DipLabContent, E = window.DipLabEngine, r = window.H.run, id = r.shop.bins.hiphop[0];
         const price = E.priceOf(C, id), sellable = r.bag.filter(b => !E.isGift(r, C, b));
         const last = sellable.slice().sort((x, y) => E.sellValue(C, C.cards[y]) - E.sellValue(C, C.cards[x]))[0], v = E.sellValue(C, C.cards[last]);
-        r.bag.splice(r.bag.indexOf(last), 1); r.bag.push(last);   // 賣回價最高那張擺到包包最後（子面板最後一格：要捲才看得到）
+        r.bag.splice(r.bag.indexOf(last), 1); r.bag.push(last);   // 賣回價最高那張擺到包包最後（照包包順序的話要捲到底才看得到）
         r.money = Math.max(0, price - v);                           // 錢不夠；賣最後那張就買得起
-        return { id, price, last, v, money: r.money, enough: r.money + v >= price, n: r.bag.length };
+        const ok = r.bag.filter(b => !E.isGift(r, C, b) && r.money + E.sellValue(C, C.cards[b]) >= price);
+        return { id, price, last, v, money: r.money, enough: r.money + v >= price, n: r.bag.length, ok, v0: ok.length ? E.sellValue(C, C.cards[ok[0]]) : 0, gifts: r.bag.filter(b => E.isGift(r, C, b)) };   // v0＝第一格那張的賣回價（錢夾在 0 時能選的不一定同價）
       });
       await openAndWait(page, 'bin:hiphop');
       await tapSel(page, '.ec-drawer [data-a=buy]'); await sleep(350);
@@ -438,23 +453,56 @@ async function runSize(browser, w, h) {
       const ov = await page.evaluate(() => { const t = [...document.querySelectorAll('.ec-drawer .ec-spick')], a = t[0] && t[0].querySelector('.ec-tcv').getBoundingClientRect(), b = t[4] && t[4].getBoundingClientRect();
         return a && b ? { ok: b.top >= a.bottom - 0.5, a: Math.round(a.bottom), b: Math.round(b.top) } : { ok: false }; });
       const bvis = await shown(page, 'bin:hiphop');
+      const g0 = await gridState(big.ok[0]);
+      const firstDis = g0.dis.indexOf(true), sortedOk = firstDis < 0 || g0.dis.slice(firstDis).every(Boolean);   // 能選的都在前面
+      const giftsLast = g0.gift.slice(g0.gift.length - big.gifts.length).every(Boolean) && g0.gift.filter(Boolean).length === big.gifts.length;
+      const okOrder = g0.ids[0] === big.ok[0] && JSON.stringify(g0.ids.slice(0, big.ok.length)) === JSON.stringify(big.ok) && g0.st === 0 && g0.vis && sortedOk && giftsLast;
       await page.evaluate(() => { const g = document.querySelector('.ec-drawer .ec-grid'); if (g) g.scrollTop = g.scrollHeight; }); await sleep(200);
-      const lastIn = await page.evaluate(id => { const g = document.querySelector('.ec-drawer .ec-grid'), t = document.querySelector(`.ec-drawer .ec-spick[data-cid="${id}"]`); if (!g || !t) return false;
-        const a = g.getBoundingClientRect(), b = t.getBoundingClientRect(); return b.top >= a.top - 1 && b.bottom <= a.bottom + 1; }, big.last);
+      const lastIn = await page.evaluate(() => { const g = document.querySelector('.ec-drawer .ec-grid'), t = [...document.querySelectorAll('.ec-drawer .ec-spick')].pop(); if (!g || !t) return false;
+        const a = g.getBoundingClientRect(), b = t.getBoundingClientRect(); return b.top >= a.top - 1 && b.bottom <= a.bottom + 1; });
       let bigOk = false, sBig = '';
+      const sOrder = `能選的 ${big.ok.length} 張（含擺在包包最後那張 ${big.ok.includes(big.last)}）排最前（第一格 ${g0.ids[0] === big.ok[0]}、不用捲就看得到 ${g0.vis}）、能選的都在前面 ${sortedOk}、送的 ${big.gifts.length} 張排最後 ${giftsLast}`;
       if (big.enough) {
-        await tapSel(page, `.ec-drawer .ec-spick[data-cid="${big.last}"]`); await sleep(200);
+        await page.evaluate(() => { const g = document.querySelector('.ec-drawer .ec-grid'); if (g) g.scrollTop = 0; }); await sleep(150);
+        await tapSel(page, `.ec-drawer .ec-spick[data-cid="${big.ok[0]}"]`); await sleep(200);
         const picked = (await dbg(page)).sub.picks.slice();
         await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
         const b1 = await run(page), bd1 = await dbg(page);
-        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && ov.ok && picked.join() === big.last &&
-          b1.money === big.money + big.v - big.price && b1.bag.length === 24 && !b1.bag.includes(big.last) && b1.bag.includes(big.id) && !bd1.sub;
-        sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}；第二列 ${ov.b} ≥ 第一列封面下緣 ${ov.a}）、箱子沒被蓋到 ${bvis.ok}；捲到底最後一張看得到 ${lastIn}、選了 ${picked.join()}；賣 +${big.v} 買 $${big.price}：$${big.money} → $${b1.money}、包包 ${b1.bag.length}`;
+        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && ov.ok && okOrder && picked.join() === big.ok[0] && big.ok.includes(big.last) &&
+          b1.money === big.money + big.v0 - big.price && b1.bag.length === 24 && !b1.bag.includes(big.ok[0]) && b1.bag.includes(big.id) && !bd1.sub;
+        sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}；第二列 ${ov.b} ≥ 第一列封面下緣 ${ov.a}）、箱子沒被蓋到 ${bvis.ok}；${sOrder}；捲到底最後一張看得到 ${lastIn}；選了 ${picked.join()}；賣 +${big.v0} 買 $${big.price}：$${big.money} → $${b1.money}、包包 ${b1.bag.length}`;
       } else {
-        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && ov.ok;
-        sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}）、箱子沒被蓋到 ${bvis.ok}；捲到底最後一張看得到 ${lastIn}（最後一張賣回價不夠買，不賣）`;
+        bigOk = big.n === 24 && bd.sub && bd.scroll && bm.grid && bm.grid.sh > bm.grid.ch + 4 && bvis.ok && lastIn && ov.ok && sortedOk && giftsLast;
+        sBig = `包包 ${big.n}：子面板格子捲 ${bd.scroll}（格子 ${bm.grid && bm.grid.sh}/${bm.grid && bm.grid.ch}）、箱子沒被蓋到 ${bvis.ok}；${sOrder}；捲到底最後一張看得到 ${lastIn}（賣回價最高那張也不夠買，不賣）`;
       }
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
+      // (b) 每張能賣的都湊得到：捲到底點最後一張能選的 → 格子留在原位、那張看得到、選到了
+      await reset(page, { mode: 'night', money: 0, bag: 24, relics: 2 });
+      const all = await page.evaluate(() => {
+        const C = window.DipLabContent, E = window.DipLabEngine, r = window.H.run, id = r.shop.bins.hiphop[0];
+        const price = E.priceOf(C, id), sellable = r.bag.filter(b => !E.isGift(r, C, b)), min = Math.min(...sellable.map(b => E.sellValue(C, C.cards[b])));
+        r.money = Math.max(0, price - min);
+        const ok = r.bag.filter(b => !E.isGift(r, C, b) && r.money + E.sellValue(C, C.cards[b]) >= price);
+        return { id, price, money: r.money, short: r.money < price, ok, pick: ok[ok.length - 1], v: E.sellValue(C, C.cards[ok[ok.length - 1]]) };
+      });
+      await openAndWait(page, 'bin:hiphop');
+      await tapSel(page, '.ec-drawer [data-a=buy]'); await sleep(350);
+      // 捲到最後一張能選的那一列（它在格子最上面、整張看得到；scrollTop 一定 > 0）
+      await page.evaluate(id => { const g = document.querySelector('.ec-drawer .ec-grid'), t = document.querySelector(`.ec-drawer .ec-spick[data-cid="${id}"]`); if (g && t) g.scrollTop += t.getBoundingClientRect().top - g.getBoundingClientRect().top - 2; }, all.pick); await sleep(200);
+      const s0 = await gridState(all.pick);
+      await tapSel(page, `.ec-drawer .ec-spick[data-cid="${all.pick}"]`); await sleep(250);
+      const s1 = await gridState(all.pick), pk = (await dbg(page)).sub;
+      // 再點同一列的另一張（改選）：一樣不跳
+      const other = all.ok[all.ok.length - 2];
+      await tapSel(page, `.ec-drawer .ec-spick[data-cid="${other}"]`); await sleep(250);
+      const s2 = await gridState(other), pk2 = (await dbg(page)).sub;
+      await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
+      const a1 = await run(page);
+      const keepOk = all.short && all.ok.length === 20 && s0.st > 0 && s0.vis && Math.abs(s1.st - s0.st) <= 1 && s1.vis && s1.sel && pk && pk.picks.join() === all.pick &&
+        s2.vis && s2.sel && s2.st > 0 && pk2 && pk2.picks.join() === other && a1.bag.includes(all.id) && !a1.bag.includes(other);
+      const sKeep = `每張都湊得到（能選 ${all.ok.length} 張）：捲到 ${s0.st}/${s0.sh - s0.ch}（最後一張能選的那一列）點它 → 捲動 ${s1.st}（不跳回頂端 ${Math.abs(s1.st - s0.st) <= 1}）、那張看得到 ${s1.vis}、選到 ${s1.sel}；再點 ${other} → ${s2.st}、看得到 ${s2.vis}；賣了買到 ${a1.bag.includes(all.id)}`;
+      await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
+      bigOk = bigOk && keepOk; sBig += '；' + sKeep;
       // 配件：沒滿 3 件、錢不夠但賣一件就夠
       await reset(page, { mode: 'night', money: 0, bag: 5, relics: 2 });
       const rs = await page.evaluate(() => {
@@ -524,8 +572,8 @@ async function runSize(browser, w, h) {
 const IURL = /econ-harness/.test(URL0) ? new URL('../index.html', URL0).href : URL0.replace(/\?.*$/, '');
 const IQ = IURL + '?debug=1&seed=20261106';
 // 一份 v5 存檔（同 e2e-lib 的 seedRun）：第 1 位之前、特價箱已挑、錢 money
-async function seedNight(page, money, bagN) {
-  await page.evaluate(([money, bagN]) => {
+async function seedNight(page, money, bagN, seen) {
+  await page.evaluate(([money, bagN, seen]) => {
     const E = window.DipLabEngine, C = window.DipLabContent;
     const r = E.newRun(C, { seedKey: '20261106', runNo: 1, ace: 'pearl', prologue: false, relics: [] });
     r.tut = false;
@@ -535,11 +583,11 @@ async function seedNight(page, money, bagN) {
       const used = new Set([C.aces[r.ace], ...r.bag, ...Object.values(r.shop.bins).flat(), ...r.shop.bargain]);
       r.bag.push(...Object.keys(C.cards).filter(id => !C.cards[id].tier && !used.has(id) && E.priceOf(C, C.cards[id]) != null).slice(0, bagN - r.bag.length));
     }
-    const s = { v: 5, seen: { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
+    const s = { v: 5, seen: seen || { night: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
-  }, [money, bagN || 0]);
+  }, [money, bagN || 0, seen || null]);
 }
 async function openTitleI(page) {
   await page.goto(IQ, { waitUntil: 'domcontentloaded' });
@@ -863,6 +911,92 @@ async function runIndex(browser, w, h) {
         `送的 ${p0.gifts.length} 張 ${JSON.stringify(p0.gifts[0])}、能賣 ${p0.sells.length} 張（「${p0.sells[0] && p0.sells[0].t}」高 ${p0.sells[0] && Math.round(p0.sells[0].h)}）；捲到 ${p1.st}：標題列還在 ${p1.hdOk}、最後一張的鈕看得到 ${lastIn} → 「${p2.ask}」（那張沒被蓋到 ${fv.tileBottom <= fv.footTop + 1}、鈕 ${fv.bs.map(b => b.t + ' ' + Math.round(b.h)).join('／')}）→ ` +
         `賣：$3,000 → $${p3.runMoney}、包包 ${p3.bag}、「${p3.h3}」、包包條「${l3.bag}」${l3.money}、存檔 $${l3.saved}、吐司 ${JSON.stringify(toasts.slice(-1))}；` +
         `6 張賣一張 → ${p5.bag} 張：鈕停用 ${p5.sells.every(b => b.dis)}、「${p5.note}」紅 ${p5.warn}、引擎 ${eng}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}`);
+    });
+    // ---------------- 30：舊存檔停在「開局特價箱還沒挑」、箱子還擺換下來的舊特價箱 → 載入時重擺（engine.fixBargain）----------------
+    await T(30, async () => {
+      page._errors.length = 0;
+      const want = await page.evaluate(() => {
+        const E = window.DipLabEngine, C = window.DipLabContent, o = { seedKey: '20261106', runNo: 2, ace: 'pearl', prologue: false, relics: [] };
+        const r = E.newRun(C, o), ref = E.newRun(C, o);
+        r.tut = false;
+        r.shop.bargain = C.bargain.retired.slice(0, 4).concat(C.bargain.pool.slice(0, 2));   // 店主 11-16 換牌之前擺的（三軸加起來 6–7 的舊牌）
+        const s = { v: 5, seen: { night: true, bagSell: true }, learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
+          best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: true, prologueDone: true, lastAce: 'pearl', lastBargain: null };
+        [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#2', seen: false }; });
+        localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
+        return { crate: ref.shop.bargain, old: r.shop.bargain, bag: r.bag.slice() };
+      });
+      await openTitleI(page);
+      await jsClick(page, '[data-a=cont]');
+      if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客');
+      const up = await page.waitForFunction(() => { const d = window.DipLabEcon.debug(); return d.open && d.kind === 'pick' && document.querySelector('.ec-drawer .ec-tile'); }, null, { timeout: 15000 }).then(() => true, () => false);
+      await sleep(400);
+      const d = await page.evaluate(() => { const C = window.DipLabContent, dd = window.DipLabEcon.debug();
+        return { ids: dd.ids, stars: dd.ids.map(id => { const c = C.cards[id]; return [c.c, c.o, c.h]; }), tiles: [...document.querySelectorAll('.ec-drawer .ec-tile')].map(t => t.dataset.cid), retired: dd.ids.filter(id => (C.bargain.retired || []).includes(id)) }; });
+      const three = await page.evaluate(() => { const E = window.DipLabEngine, C = window.DipLabContent, ch = E.bargainPolicy(window.__lab.run, C); return ch ? ch.ids : []; });
+      for (const id of three) { await jsClick(page, `.ec-drawer [data-a=tog][data-cid="${id}"]`); await sleep(150); }
+      await jsClick(page, '.ec-drawer [data-a=take]');
+      await page.waitForFunction(() => !window.DipLabEcon.isOpen(), null, { timeout: 8000 }).catch(() => {});
+      await sleep(500);
+      const after = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent; return { bag: R.bag.slice(), picked: R.shop.bargainPicked, sums: R.bag.slice(-3).map(id => { const c = C.cards[id]; return [Math.max(c.c, c.o, c.h), c.c + c.o + c.h]; }) }; });
+      const errs = page._errors.slice();
+      const okCrate = up && JSON.stringify(d.ids) === JSON.stringify(want.crate) && JSON.stringify(d.tiles) === JSON.stringify(want.crate) && !d.retired.length && d.stars.every(([c, o, h]) => Math.max(c, o, h) <= 3 && c + o + h <= 5);
+      const okPick = three.length === 3 && after.picked && after.bag.length === want.bag.length + 3 && JSON.stringify(after.bag.slice(-3).slice().sort()) === JSON.stringify(three.slice().sort()) && after.sums.every(([mx, sm]) => mx <= 3 && sm <= 5);
+      record(30, size, okCrate && okPick && !errs.length,
+        `舊存檔的特價箱 ${JSON.stringify(want.old.map(id => id.split('-').slice(0, 2).join('-')))} → 載入後開局挑三張 ${up}：${d.ids.length} 張＝同種子新開一趟的 ${JSON.stringify(d.ids) === JSON.stringify(want.crate)}、` +
+        `星數 ${JSON.stringify(d.stars)}、還有舊牌 ${d.retired.length}；挑 ${three.length} 張收下 → 包包 ${after.bag.length}、最高／加總 ${JSON.stringify(after.sums)}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 2).join(' / ') : ''}`);
+    });
+    // ---------------- 31：包包賣回的提示（審查：包包不限張數之後唯一自己瘦身的入口，沒有任何提示）----------------
+    await T(31, async () => {
+      page._errors.length = 0;
+      const U = await page.evaluate(() => ({ hint: window.DipLabContent.shopUi.bagSellHint, intro: window.DipLabContent.shopLines.nightIntro.slice() }));
+      const enter = async () => { await openTitleI(page); await jsClick(page, '[data-a=cont]'); if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了來客'); };
+      const toastsNow = () => page.evaluate(() => [...document.querySelectorAll('.lb-toast')].map(t => t.textContent));
+      // 第 1 位開打前：換王牌的一次性提示優先（同一次不疊）→ 這裡先當它看過了（aceSwap），只看包包的提示
+      const SEEN = { night: true, aceSwap: true };
+      // (a) 包包 9 張：不提示
+      await seedNight(page, 3000, 9, SEEN); await enter(); await sleep(1800);
+      const a = { ts: await toastsNow(), seen: await page.evaluate(() => !!window.__lab.save.seen.bagSell) };
+      // (b) 包包 12 張、兩位客人之間：包包那顆閃（.nudge 動畫）＋吐司；記在存檔
+      await seedNight(page, 3000, 12, SEEN); await enter();
+      const b = await page.evaluate(() => new Promise(done => { const t0 = performance.now(); const iv = setInterval(() => {
+        const bb = document.querySelector('.lb-bagline [data-a=bag]'), nud = !!bb && bb.classList.contains('nudge'), ts = [...document.querySelectorAll('.lb-toast')].map(t => t.textContent);
+        if (nud || performance.now() - t0 > 5000) { clearInterval(iv); done({ nud, ts, at: Math.round(performance.now() - t0), anim: bb ? getComputedStyle(bb).animationName : '' }); } }, 30); }));
+      await sleep(300);
+      const b2 = await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return { seen: !!window.__lab.save.seen.bagSell, stored: !!(s && s.seen && s.seen.bagSell), ts: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent) }; });
+      // (c) 同一份存檔再進來：不再出
+      await enter(); await sleep(1800);
+      const c = { ts: await toastsNow(), nud: await page.evaluate(() => { const bb = document.querySelector('.lb-bagline [data-a=bag]'); return !!bb && bb.classList.contains('nudge'); }) };
+      // (d) 包包 12 張、還沒提示過、一進來就自己點開包包（能賣）→ 算看過（存檔記下），再進來不出
+      await seedNight(page, 3000, 12, SEEN); await enter();
+      await jsClick(page, '.lb-bagline [data-a=bag]'); await page.waitForSelector('.lb-sheet.float.bag', { timeout: 5000 }).catch(() => {});
+      const dSeen = await page.evaluate(() => !!window.__lab.save.seen.bagSell);
+      await sleep(900);
+      await page.evaluate(() => { const x = document.querySelector('.lb-sheet.float.bag [data-a=close]'); if (x) x.click(); }); await sleep(300);
+      await enter(); await sleep(1800);
+      const d = { seen: dSeen, ts: await toastsNow() };
+      // (f) 第 1 位開打前、換王牌的提示還沒出過：那一次只出換王牌的（不疊），包包的不出、也不記看過
+      await seedNight(page, 3000, 12, { night: true }); await enter(); await sleep(1800);
+      const f = { ts: await toastsNow(), seen: await page.evaluate(() => !!window.__lab.save.seen.bagSell), ace: await page.evaluate(() => !!window.__lab.save.seen.aceSwap) };
+      // (e) 第一次來客的提示（nightIntro）：四句，第 4 句講點「包包」可以賣回
+      await seedNight(page, 3000, 8, {}); await enter();
+      const on = await page.waitForFunction(() => { const t = document.getElementById('tut'), b = t && t.querySelector('.tut-bub'); return !!(t && /\bon\b/.test(t.className) && b && !b.hidden); }, null, { timeout: 8000 }).then(() => true, () => false);
+      const lines = [];
+      for (let k = 0; k < 4 && on; k++) {
+        await sleep(250);
+        lines.push(await page.evaluate(() => ((document.querySelector('#tut .tut-bub .tx') || {}).textContent || '').trim()));
+        if (k < 3) await page.evaluate(() => document.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, cancelable: true })));
+      }
+      const errs = page._errors.slice();
+      const okA = !a.ts.includes(U.hint) && !a.seen;
+      const okB = b.nud && b.anim === 'lbBagNudge' && b.at >= 300 && (b.ts.includes(U.hint) || b2.ts.includes(U.hint)) && b2.seen && b2.stored;
+      const okC = !c.ts.includes(U.hint) && !c.nud;
+      const okD = d.seen && !d.ts.includes(U.hint);
+      const okF = f.ace && !f.seen && !f.ts.includes(U.hint);
+      const okE = on && U.intro.length === 4 && lines.length === 4 && lines.every((t, k) => t === U.intro[k]) && /包包/.test(lines[3]) && /賣回/.test(lines[3]);
+      record(31, size, okA && okB && okC && okD && okE && okF && !errs.length,
+        `包包 9 張：不提示 ${okA}；包包 12 張：${b.at} ms 包包那顆閃 ${b.nud}（${b.anim}）、吐司「${U.hint}」${b.ts.includes(U.hint) || b2.ts.includes(U.hint)}、存檔記下 ${b2.stored}；` +
+        `再進來不出 ${okC}；先自己點開包包＝看過 ${d.seen}、之後不出 ${!d.ts.includes(U.hint)}；換王牌的提示那一次讓位 ${okF}；第一次來客的提示 ${lines.length} 句、第 4 句「${lines[3] || ''}」${okE}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 2).join(' / ') : ''}`);
     });
     return true;
   } finally {
