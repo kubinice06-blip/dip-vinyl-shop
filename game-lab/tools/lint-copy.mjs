@@ -16,7 +16,7 @@
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
 //      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、seedsTag（從唱片櫃挑牌開局 C.seeds.ui）、
-//      tunesTag／radioTag（頻率八格的名字與收音機，v5 第六項第二期）、pitches.json）；
+//      tunesTag／radioTag（頻率八格的名字與收音機，v5 第六項第二期）、apexTrialTag（頂點卡純輔助卡試做 ?apex=1：能力名 ≤8、說明 ≤25、畫面字、小提示 ≤20、結果句 ≤25）、pitches.json）；
 //      無限試煉沒有打烊、第二夜：C.night、C.secondNight 不准回來；畫面字不准再寫「今晚來客／打烊／再來一夜／今晚賣完」
 //      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
 //      FIXLIST 2：王牌沒有「不會被剋」（content 的字不准出現「不會被剋」）
@@ -491,6 +491,29 @@ for (const [k, v] of Object.entries(C.summary || {})) {
   for (const k of ['label', 'guest', 'guestAria']) if (k in T) one('tunes.' + k, T[k], '頻率・唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● 暴躁」、提示籤前的圓點（讀屏）', C.tunesTag, 'tunesTag');
   for (const k of (T.order || Object.keys(T.names || {}))) one('tunes.names.' + k, (T.names || {})[k], '頻率・八格的名字（抄主站頻率光譜；改名要兩邊一起改）', C.tunesTag, 'tunesTag');
   for (const [k, v] of Object.entries(C.radio || {})) one('radio.' + k, v, '收音機・轉頻率（兩位客人之間、每輪一次；{x} 由畫面代入）', C.radioTag, 'radioTag');
+}
+// 頂點卡純輔助卡試做（?apex=1；C.apexTrial、apexTrialTag）：每張「能力名・時機：說明」（名 ≤8、說明 ≤25）、畫面字 ≤25（規則卡頁尾那行照頁尾）、小提示 ≤20、結果句 ≤25（不算 {x}）；
+//   fact（典故出處）不上畫面、不列（禁用字照掃 content.js）
+if (C.apexTrial) {
+  const A = C.apexTrial, TZ = { hall: '殿堂', pearl: '流亡', heresy: '異端' }, TM = (A.ui || {}).timing || {};
+  const one = (where, v, scene, max, who, text) => {
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.apexTrialTag)) err(where, '沒有 tag（apexTrialTag）');
+    if (max && len(v.replace(/\{\w+\}/g, '')) > max) err(where, '超過 ' + max + ' 字（不算 {x}）：' + v);
+    add({ scene, where, who: who || '（畫面字）', key: where.split('.').pop(), text: text || v, tag: C.apexTrialTag });
+  };
+  for (const t of ['hall', 'pearl', 'heresy']) (A[t] || []).forEach((x, k) => {
+    const c = CARDS[x.card] || {}, w = 'apexTrial.' + t + '[' + k + ']', who = c.artist ? c.artist + '《' + c.album + '》' : x.card;
+    if (typeof x.name !== 'string' || !x.name || len(x.name) > 8) err(w + '.name', '能力名要 1–8 字：' + x.name);
+    one(w + '.text', x.text, '頂點卡試做・' + (TZ[t] || t) + '的王牌能力（能力名・時機：說明；挑王牌面板 5×3 的順序；?apex=1）', 25, who, x.name + '・' + (TM[x.timing] || x.timing) + '：' + x.text);
+  });
+  for (const [k, v] of Object.entries(A.ui || {})) {
+    if (k === 'timing') { for (const [t, x] of Object.entries(v || {})) one('apexTrial.ui.timing.' + t, x, '頂點卡試做・畫面字（王牌格、能力框、挑王牌面板、看穿的章；{x} 由畫面代入）', 25); continue; }
+    one('apexTrial.ui.' + k, v, '頂點卡試做・畫面字（王牌格、能力框、挑王牌面板、看穿的章；{x} 由畫面代入）', k === 'rulesFoot' ? 48 : 25);
+  }
+  for (const [k, v] of Object.entries(A.tips || {})) one('apexTrial.tips.' + k, v, '頂點卡試做・一次性老闆小提示（第一次看到能力框／第一次「沒作用」）', 20, '老闆');
+  for (const [k, v] of Object.entries(A.notes || {})) one('apexTrial.notes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
+  for (const [k, v] of Object.entries(A.holdNotes || {})) one('apexTrial.holdNotes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
 }
 // 一晚版的字不准回到畫面字（店主 11-12：沒有時間、沒有打烊）；序章「今晚那張」（猜歌那張盤）照用
 const NIGHT_WORDS = [/今晚來客/, /打烊/, /再來一夜/, /今晚賣完/, /今晚就到這/, /今晚到這/, /第二夜/];

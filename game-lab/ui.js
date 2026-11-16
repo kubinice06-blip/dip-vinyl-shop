@@ -505,12 +505,16 @@
   // 規則卡（「?」小抄）：D §5 的六行一字不改（編號由這裡加；第 6 行 54 字，自動換行）；頁尾的 {normal}／{elite}／{boss} 代入 C.rules.hpText
   function rulesHTML() {
     var R = C.rules || {};
-    var lines = (R.lines || []).map(function (s, i) { return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : i === 2 ? tintBeats(s) : esc(s)) + '</div></li>'; }).join('');
+    // 頂點卡試做（?apex=1）：第 6 行的「王牌 7 星，一場用一次。」換成輔助卡那句、頁尾第 2 行換成打贏回 winHeal（C.rules 本身一字不動；旗標關照舊）
+    var apx = function (s, i) { return !UI.apex ? s : String(s).replace('王牌 7 星，一場用一次。', AU('rule')); };
+    var lines = (R.lines || []).map(function (s, i) { s = apx(s, i); return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : i === 2 ? tintBeats(s) : esc(s)) + '</div></li>'; }).join('');
+    var foot = (R.foot || []).slice();
+    if (UI.apex && foot.length > 1) foot[1] = AU('rulesFoot', { hp: (C.trial && C.trial.youHp) || '', heal: AX().winHeal, normal: '{normal}', boss: '{boss}' });
     return '<div class="lb-rules"><h1>' + esc(R.title || '品味對決・規則') + '</h1>' + triSVG() +
       '<ol class="rl">' + lines + '</ol>' +
       (R.why ? '<p class="rwhy">' + whyHTML(R.why) + '</p>' : '') +      // 六行下面另起一段「為什麼這樣剋」（店主 11-12；六行一字不動）
       (R.relics ? '<p class="rrel">' + esc(R.relics) + '</p>' : '') +
-      '<div class="rfoot">' + (R.foot || []).map(function (t) { return esc(fill(t, R.hpText || {})); }).join('<br>') + '</div></div>';
+      '<div class="rfoot">' + foot.map(function (t) { return esc(fill(t, R.hpText || {})); }).join('<br>') + '</div></div>';
   }
   function whyHTML(t) { var i = String(t).indexOf('：'); return i > 0 ? '<b>' + esc(t.slice(0, i)) + '</b>' + esc(t.slice(i)) : esc(t); }
   function tutLabel(k, d) { var u = C && C.tutorial && C.tutorial.ui; return (u && typeof u[k] === 'string' && u[k]) || d; }
@@ -693,7 +697,7 @@
     var f = FX(); if (soundOn() && f && f.rainStart) try { f.rainStart(); } catch (_) {}
     return sc;
   }
-  function stripFromRun() { var r = save.run; if (!r) return { ace: null, bag: [] }; return { ace: C.aces[r.ace], bag: r.bag.slice() }; }
+  function stripFromRun() { var r = save.run; if (!r) return { ace: null, bag: [] }; return { ace: aceIdOf(r), bag: r.bag.slice() }; }
   function isBargain(id) { return !!(C.bargain && C.bargain.pool && C.bargain.pool.indexOf(id) >= 0); }
   function renderStrip(sc) {
     if (!sc.strip) return;
@@ -921,7 +925,7 @@
     function giveStep(s, L) {
       var r = save.run;
       if (!r || !sc.strip) { sc.stripState = null; renderStrip(sc); return L.end('done'); }
-      var ids = [C.aces[r.ace]].concat(r.bag);
+      var ids = [aceIdOf(r)].concat(r.bag);
       var got = { ace: null, bag: [] };
       sc.stripState = got; renderStrip(sc);
       var from = stg('hotRect', s.from || 'counter') || anchorOf('o');
@@ -1256,7 +1260,8 @@
         qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-tier') === sel); });
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
         var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
-        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。';
+        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。' +
+          (UI.apex ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '');   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
       }
       mark();
       roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）。說明那行先填好再量（矮螢幕它沒有最小高，空著量＝0；V5-play-7）
@@ -1276,6 +1281,140 @@
         var b = qs('[data-a=ok]', s); if (b) b.click();
       }, 260);
     });
+  }
+  // ======================================================================= 頂點卡純輔助卡試做（?apex=1；scratchpad v5/apextrial FRAME 第 7 節、CONTRACT）
+  //   旗標只看網址（UI.apex），不存進存檔：同一份存檔不加旗標打開＝現行 7 星王牌。旗標關時這一段只有 cardVis／poolIds 會走（把試做的 42 張當作不存在）。
+  //   序章照舊（三張預設王牌 7 星教學）；序章打完、第 1 位開打前老闆說一句 → 挑王牌面板（三派 → 那派 15 張挑一張；每份存檔一次，save.seen.apexPick）；
+  //   之後想換＝點老闆（同一個面板）。下一趟沿用（save.lastAceId，跟 save.lastAce 一樣）。
+  function AX() { return (C && C.apexTrial) || null; }
+  function AU(k, o) { var U = (AX() && AX().ui) || {}; return fill(U[k] || '', o); }
+  function apexBoot() {
+    UI.apexOnly = {};
+    (C.apexTrialOnly || []).forEach(function (id) { UI.apexOnly[id] = true; });
+    UI.apex = QS.apex === '1' && !!AX() && typeof E.apexList === 'function' && typeof E.activateApex === 'function';
+    if (!UI.apex) return;
+    // 一次性老闆小提示（tutorial.js 照 C.coachTips 找字）：旗標下多兩則（tip_apex、tip_apexMiss）
+    var tips = AX().tips || {}; if (!C.coachTips) C.coachTips = {};
+    Object.keys(tips).forEach(function (k) { if (!C.coachTips[k]) C.coachTips[k] = tips[k]; });
+  }
+  // 這一趟帶的王牌（卡 id）：旗標下＝挑的那張（engine.apexAceId：沒挑過、舊存檔＝那派預設）；旗標關＝那派預設
+  function aceIdOf(r) { return !r ? null : UI.apex ? E.apexAceId(r, C) : C.aces[r.ace]; }
+  // 旗標關時，只有試做才用到的 42 張（C.apexTrialOnly）當作不存在：唱片櫃「認識過 m／N」、依專輯名找卡、給主站的卡池（CONTRACT 第 8 節）
+  function cardVis(id) { return !!card(id) && (UI.apex || !(UI.apexOnly && UI.apexOnly[id])); }
+  function poolIds() { return Object.keys(C.cards).filter(cardVis); }
+  function apexPickOk(tier, id) { return !!id && TIERS.indexOf(tier) >= 0 && E.apexList(C, tier).some(function (x) { return x && x.card === id; }); }
+  function lastAceIdFor(tier) { return apexPickOk(tier, save.lastAceId) ? save.lastAceId : null; }
+  // 挑王牌面板（FRAME 7.2）：標題＋「頂點卡試做」小字 → 三派分頁 → 那派 15 張封面 5×3（角上小字：這手／整場／留著）→ 藝人《專輯》／能力名・時機：說明 →「就這張」
+  //   點封面＝選；按住封面＝唱片資訊（多一塊「王牌能力」）。切到別派＝換流派：下面多一行灰字「老闆送的那幾張也跟著換」。
+  //   o：{tier, aceId, canSwitch}；回 {tier, aceId}
+  function apexPickPanel(o) {
+    o = o || {};
+    return new Promise(function (res) {
+      var t0 = TIERS.indexOf(o.tier) >= 0 ? o.tier : 'hall', id0 = apexPickOk(t0, o.aceId) ? o.aceId : C.aces[t0];
+      var tier = t0, sel = id0, TM = (AX().ui && AX().ui.timing) || {};
+      var tabs = o.canSwitch === false ? [t0] : TIERS;
+      var html = '<div class="hd"><h3>' + esc(AU('pickTitle')) + '</h3><span class="apx-tag">' + esc(AU('tag')) + '</span></div>' +
+        '<div class="apx-tabs" role="tablist">' + tabs.map(function (t) { return '<button type="button" class="key" role="tab" data-tab="' + t + '">' + esc(C.aceTitle[t]) + '</button>'; }).join('') + '</div>' +
+        '<div class="apx-grid" role="listbox"></div><p class="note detail apx-det"></p><p class="note apx-sw" hidden>' + esc(TU('aceSwapSub')) + '</p>' +
+        '<div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok"></button></div>';
+      var s = sheet(html, 'apxpick');
+      var grid = qs('.apx-grid', s), det = qs('.apx-det', s), sw = qs('.apx-sw', s), okb = qs('[data-a=ok]', s);
+      if (okb) try { okb.focus({ preventScroll: true }); } catch (_) {}
+      function renderGrid() {
+        grid.innerHTML = E.apexList(C, tier).map(function (x) {
+          var c = card(x.card); if (!c) return '';
+          return '<button type="button" class="apx-c" role="option" data-cid="' + esc(c.id) + '" data-ab="' + esc(x.id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》：' + x.name) + '">' +
+            coverHTML(c, { info: false, badge: false }) + '<span class="tm ' + esc(x.timing) + '">' + esc(TM[x.timing] || '') + '</span></button>';
+        }).join('');
+      }
+      function mark() {
+        qsa('.apx-tabs [data-tab]', s).forEach(function (b) { var on = b.getAttribute('data-tab') === tier; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
+        qsa('.apx-c', grid).forEach(function (b) { var on = b.getAttribute('data-cid') === sel; b.classList.toggle('sel', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
+        var c = card(sel) || {}, A = E.abilityOf(C, sel) || {};
+        det.innerHTML = '<span class="ar">' + esc((c.artist || '') + '《' + (c.album || '') + '》') + '</span>' +
+          '<span class="ab">' + esc(AU('pickLine', { name: '\u0001', timing: TM[A.timing] || '', text: A.text || '' })).replace('\u0001', '<b>' + esc(A.name || '') + '</b>') + '</span>';
+        sw.hidden = tier === t0;
+        okb.textContent = tier === t0 && sel === id0 ? AU('pickSame') : AU('pickGo');
+      }
+      // 15 張封面比一般面板高：full 鏡頭讓不出那麼多（舞台最矮約 234 px；390×664 會差 18 px 要捲）＝收成對決那條，面板照內容高，不用捲。
+      //   說明三行、換派灰字一行的高在 CSS 先留好（點別張、切分頁不長高）；萬一還是比面板高（字型沒載到、字很長），再量一次讓高（審查 11-16：原本只在打開時量一次）
+      function fit() {
+        roomForSheet(s);
+        var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight, nat = Math.ceil(naturalH(s) + 4);
+        if (UI.camName !== 'strip' && vh - 32 - nat < 240) cam('strip', 'reward', 380, null, nat);
+      }
+      function refit() { if (s.parentNode && s.scrollHeight > s.clientHeight + 1) fit(); }
+      renderGrid(); mark();
+      fit();
+      // 按住封面＝唱片資訊（放開的那一下不算「選」）
+      var lp = null, swallow = false;
+      var lpOff = function () { if (lp) { clearTimeout(lp.h); lp = null; } };
+      grid.addEventListener('pointerdown', function (e) {
+        swallow = false; lpOff();
+        var b = e.target.closest && e.target.closest('.apx-c'); if (!b || (e.button != null && e.button > 0)) return;
+        var me = lp = { x: e.clientX, y: e.clientY, h: setTimeout(function () { if (lp !== me) return; lp = null; swallow = true; sfx('tick'); info(b.getAttribute('data-cid'), { from: 'apexPick' }); }, 450) };
+      });
+      grid.addEventListener('pointermove', function (e) { if (lp && (Math.abs(e.clientX - lp.x) > 10 || Math.abs(e.clientY - lp.y) > 10)) lpOff(); });
+      ['pointerup', 'pointercancel'].forEach(function (k) { grid.addEventListener(k, lpOff); });
+      grid.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      var done = false;
+      s.addEventListener('click', function (e) {
+        if (done) return;
+        var tb = e.target.closest && e.target.closest('[data-tab]');
+        if (tb) { var t = tb.getAttribute('data-tab'); if (t === tier) return; tier = t; sel = t === t0 ? id0 : C.aces[t]; sfx('select'); renderGrid(); mark(); refit(); return; }
+        var cb = e.target.closest && e.target.closest('.apx-c');
+        if (cb) { if (swallow) { swallow = false; return; } var id = cb.getAttribute('data-cid'); if (id === sel) return; sel = id; sfx('select'); mark(); refit(); return; }
+        if (e.target.closest && e.target.closest('[data-a=ok]')) { done = true; lpOff(); sfx('select'); closeSheet(s); res({ tier: tier, aceId: sel }); }
+      });
+      autoAct(function () {
+        var want = UI.auto && UI.auto.apexId;
+        if (want && want !== sel) { var wt = TIERS.filter(function (t) { return apexPickOk(t, want); })[0]; if (wt && wt !== tier) { var tb0 = qs('[data-tab="' + wt + '"]', s); if (tb0) tb0.click(); } var b0 = qs('.apx-c[data-cid="' + want + '"]', s); if (b0) b0.click(); }
+        var b = qs('[data-a=ok]', s); if (b) b.click();
+      }, 260);
+    });
+  }
+  // 換王牌（旗標下；點老闆、或第一次開旗標時自動跳）：同一派換另一張＝只換王牌（送的四張不動）；換派＝送的四張跟著換（engine.switchAce）。
+  //   挑的那張記成「認識」（頂點卡只展示）；下一趟沿用（save.lastAce／lastAceId）
+  function apexSwapFlow(first) {
+    var r = save.run;
+    if (!r || UI.going || !E.canSwitchAce(r, C)) return;
+    UI.going = true;
+    var fromT = r.ace, fromId = aceIdOf(r);
+    apexPickPanel({ tier: fromT, aceId: fromId }).then(function (pick) {
+      UI.going = false;
+      if (save.run !== r || UI.screen !== 'night') return;
+      var res = pick && (pick.tier !== fromT || pick.aceId !== fromId) ? E.switchAce(r, C, pick.tier, { aceId: pick.aceId }) : null;
+      var ok = !!(res && res.ok);
+      if (ok) {
+        save.lastAce = r.ace;
+        if (r.ace !== fromT) (C.gifts[r.ace] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
+        var got = runGot(r);
+        res.effects.forEach(function (f) { var k = f.loseCard ? got.indexOf(f.loseCard) : -1; if (k >= 0) got.splice(k, 1); if (f.gainCard) gotCard(r, f.gainCard); });
+      }
+      save.lastAceId = aceIdOf(r);
+      shelfAdd(save.lastAceId);
+      persist();
+      UI.keepP = true; UI.quietNight = true; go('night');   // 重畫來客畫面：這一次不排第一次來客的提示（第一次挑王牌時改到下面，等老闆那句、吐司收掉再出）
+      if (ok) {
+        stageSay('o', line(r.ace !== fromT ? 'aceDone' : 'aceKeep'), 'owner', 2600);
+        toast(TU('aceSwapped', { album: (card(save.lastAceId) || {}).album || '' }));
+      } else if (!first) stageSay('o', line('aceSame'), 'owner', 2600);
+      // 第一次挑王牌（序章剛打完的新玩家）：第一次來客的教學泡泡晚一點出——原本三則訊息（吐司、老闆、教學）疊在一起（審查 11-16）
+      if (first && !save.seen.night && !UI.auto) later(function () {
+        if (UI.screen !== 'night' || save.seen.night || save.run !== r || qs(':scope > .lb-sheet', UI.panel)) return;
+        var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
+      }, ok ? 2900 + 450 * speed() : 700);   // 老闆那句 2600／吐司 1900（照速度縮）＋吐司淡出 400 ms（不縮）都收掉之後
+    });
+  }
+  // 序章打完（或舊存檔第一次開旗標）、第 1 位開打前：老闆先說一句，再跳挑王牌面板（每份存檔一次）。回 true＝這一次來客畫面交給它
+  function apexIntroOnNight(r) {
+    if (!UI.apex || UI.auto || (save.seen && save.seen.apexPick) || !E.canSwitchAce(r, C)) return false;
+    save.seen.apexPick = true; persist();
+    UI.going = true;
+    stg('emote', 'o', 'excl', 2200);
+    stageSay('o', AU('intro').replace(/^「|」$/g, ''), 'owner', 3200);
+    later(function () { UI.going = false; if (UI.screen === 'night' && save.run === r) apexSwapFlow(true); }, 1900);
+    return true;
   }
   // 老闆的四張（O12）：四張封面＋各自的推薦語；封面＝唱片資訊；鈕「收下這四張」只是確認（入袋在 O14 櫃檯看過之後）
   function recsPanel(ids, beat) {
@@ -1490,7 +1629,7 @@
 
   // ======================================================================= title
   function firstEver() { return !save.prologueDone && !(save.runs && save.runs.length); }
-  function shelfCount() { return { n: Object.keys(save.shelf).filter(card).length, total: Object.keys(C.cards).length }; }
+  function shelfCount() { return { n: Object.keys(save.shelf).filter(cardVis).length, total: poolIds().length }; }   // 旗標關：試做的 42 張不算（CONTRACT 第 8 節）
   // 「繼續試煉」的副字：第 7 位・二手店老闆（序章收尾（撿唱片、挑配件）也還是序章，RT-7）
   function runWhere(r) {
     if (!r) return '';
@@ -1535,7 +1674,7 @@
     if (firstEver()) hideActor('r1'); else stg('hide', 'r1', false);     // 第一次（接著是序章）：店裡只有老闆（D §2 序章藏起熟客）
     place('p', 'out', 'player'); stg('sil', 'p', true);
     stg('door', 'close'); stg('play', true); stg('dim', 1);
-    var plate = el('div', 'lb-plate', '<b>品味對決<i>・</i>試做</b><small>dip vinyl game lab</small>');
+    var plate = el('div', 'lb-plate', '<b>品味對決<i>・</i>試做</b><small>dip vinyl game lab</small>' + (UI.apex ? '<span class="apx">' + esc(AU('tag')) + '</span>' : ''));
     app().appendChild(plate); UI.decor.push(plate);
     var placePlate = function () { if (!plate.isConnected) return; var sh0 = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(); plate.style.top = Math.max(36, Math.round(sh0.bottom - ar.top - 26)) + 'px'; };
     placePlate(); if (W.ResizeObserver) { var ro = new ResizeObserver(placePlate); ro.observe(UI.stageHost); UI.offs.push(function () { ro.disconnect(); }); }
@@ -1677,7 +1816,9 @@
     // 帶來的那張用一次就沒了（不管這次有沒有帶它上場）；帶上場的算認識（包包裡有它），不算擁有（一趟留一張的候選照舊不列種子）
     var tookBring = !o.prologue && !!brought && seeds.indexOf(brought) >= 0;
     if (!o.prologue && save.bring) save.bring = null;
-    var r = E.newRun(C, { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds });
+    var nro = { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds };
+    if (UI.apex && !o.prologue && lastAceIdFor(o.ace)) nro.aceId = lastAceIdFor(o.ace);   // 頂點卡試做：沿用上次挑的那張（旗標關時不加這欄）
+    var r = E.newRun(C, nro);
     r.tut = null;                                     // tut：null＝還沒選、true＝老闆帶的那場（教學）、false＝直接打／教學結束
     r.farBefore = save.best.far | 0;                  // 結算的「新紀錄」：跟開這一趟之前的最遠比
     r.got = r.bag.slice();                            // 這一趟收進包包的（老闆送的、種子也算，裁定 9）
@@ -1685,7 +1826,7 @@
     // 帶上場的那張記成「這一趟認識的」（at＝這一趟 seedKey#runNo，NEW 章、「這一趟新認識」才找得到；審查：之前在 save.run 設好前記，at 少了 #runNo）
     if (tookBring) shelfAdd(brought);
     // 挑過這個王牌：那組送的四張算擁有（src 'gift'，不是金框；種子佔掉的那幾格也算）；王牌本身照舊只是認識（頂點卡維持老闆三選一）
-    shelfAdd(C.aces[o.ace]); (C.gifts[o.ace] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
+    shelfAdd(aceIdOf(r)); (C.gifts[o.ace] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
     persist();
     return r;
   }
@@ -1751,9 +1892,10 @@
   //   →（第二趟起）從唱片櫃挑種子 → 走到特價箱挑三張（D §2「第一個自己決定牌組的選擇」）→ 來客（第 1 位）
   function startAgain() {
     var tier = TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : 'hall';
-    var ctx = { flags: {}, quiet: !soundOn(), defaultTier: tier, vars: { ace: (card(C.aces[tier]) || {}).album || '' } };
+    var aceId = (UI.apex && lastAceIdFor(tier)) || C.aces[tier];      // 頂點卡試做：上次挑的那張（旗標關＝那派預設）
+    var ctx = { flags: {}, quiet: !soundOn(), defaultTier: tier, vars: { ace: (card(aceId) || {}).album || '' } };
     abandonRun(save.run); save.run = null; persist();
-    go('scene', { p: 'door', f: 'hide', o: 'counter', stripState: { ace: C.aces[tier], bag: [] }, start: function (sc) {
+    go('scene', { p: 'door', f: 'hide', o: 'counter', stripState: { ace: aceId, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
       dlg.run(C.script.again).then(function () {
         // 老闆那句說完、走去特價箱之前：從唱片櫃挑種子（店主 11-13 §1 裁定 2；櫃裡沒有能帶的就跳過）
@@ -1913,7 +2055,8 @@
     // 老闆帶的那場（教學）：引擎照 C.tutorial.script 出牌；遮罩與手指要教學程式在（overlay），不在時照課表打、只是沒有遮罩（§2.5.7）
     var tutorial = !!o.tutorial && r.prologue === 'pending' && !r.duel;
     var res = null;
-    try { res = E.startFight(r, C, { tutorial: tutorial }); } catch (e) { console.error(e); }
+    var fo = { tutorial: tutorial }; if (UI.apex) fo.apex = true;       // 頂點卡試做：每次開打都帶旗標（不存進 run；序章那場引擎自己不開）
+    try { res = E.startFight(r, C, fo); } catch (e) { console.error(e); }
     if (!res || !res.duel) { console.error('startFight failed'); persist(); return go(r.over ? 'end' : 'night'); }
     if (!res.resumed) r.tut = tutorial;
     persist();
@@ -1986,6 +2129,8 @@
       hooks: duelHooks(p)
     };
     var boss = !!en.boss && enter;
+    // 頂點卡試做：序章那場照舊 7 星王牌——開打時吐司寫明一次（FRAME 1.6；老闆帶的那場有教學泡泡，不疊吐司：挑王牌那行已經寫了）
+    if (UI.apex && !UI.auto && (inPrologue(r) || en.prologue) && !p.replay && !p.tutorial) later(function () { if (UI.screen === 'duel') toast(AU('tag') + '・' + AU('tutNote')); }, enter ? 1600 : 300);
     var mountBoard = function () {
       var Dl = DUEL();
       if (Dl && typeof Dl.mount === 'function') { try { Dl.mount(wrap, opts); } catch (e) { console.error(e); stubDuel(wrap, opts); } }
@@ -2465,6 +2610,8 @@
       }, 300);
       return;
     }
+    // 頂點卡試做（?apex=1）：這份存檔第一次開旗標、第 1 位開打前＝老闆說一句、跳挑王牌面板（apexIntroOnNight；旗標關時不走）
+    if (apexIntroOnNight(r)) return;
     // 換王牌的一次性提示（店主 11-13；save.seen.aceSwap）：第 1 位開打前、第一次來客的提示（nightIntro）看過之後才出——老闆頭上閃一下＋吐司「想換王牌，點老闆。」
     if (save.seen.night && !save.seen.aceSwap && !UI.auto && E.canSwitchAce(r, C)) later(function () {
       if (UI.screen !== 'night' || !save.run || !E.canSwitchAce(save.run, C) || save.seen.aceSwap) return;
@@ -2536,7 +2683,7 @@
   }
   function bagSheet(r) {
     var html = '<div class="hd"><h3>包包 ' + r.bag.length + '/' + E.CFG.bagMax + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
-      '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p><div class="lb-pick">' + tileHTML(card(C.aces[r.ace]), { text: false }) + r.bag.map(function (id) {
+      '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p><div class="lb-pick">' + tileHTML(card(aceIdOf(r)), { text: false }) + r.bag.map(function (id) {
         var sd = E.isSeed(r, C, id);                // 從唱片櫃帶來的（種子）：小籤「櫃裡帶來」（不能賣回）
         return tileHTML(card(id), { text: false, store: isStore(id), cls: sd ? 'seed' : '', extra: sd ? '<span class="sdtag">' + esc((C.shopUi && C.shopUi.seedTag) || '') + '</span>' : '' });
       }).join('') + '</div>';
@@ -2563,7 +2710,7 @@
     sfx('tick');
     if (!save.seen.aceSwap) { save.seen.aceSwap = true; persist(); }   // 自己來找老闆了：「想換王牌，點老闆。」的提示不用再出
     var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
-    var a = card(C.aces[r.ace]) || {};
+    var a = card(aceIdOf(r)) || {};
     var html = '<div class="hd"><h3>' + esc(TU('owner')) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<p class="sub ow-now">' + esc(TU('aceNow', { title: (C.aceTitle || {})[r.ace] || '', album: a.album || '' })) + '</p>' +
       '<div class="two lb-ownermenu"><button type="button" class="lb-btn big key" data-a="talk">' + esc(TU('aceTalk')) + '</button>' +
@@ -2573,6 +2720,7 @@
       var b = e.target.closest && e.target.closest('[data-a=talk],[data-a=swap]'); if (!b) return;
       s.remove(); syncFloat();
       if (b.getAttribute('data-a') === 'talk') stageSay('o', line('ownerHint', 'night'), 'owner', 2600);
+      else if (UI.apex) apexSwapFlow(false);           // 頂點卡試做：三派 → 那派 15 張挑一張
       else aceSwapFlow();
     });
   }
@@ -2602,8 +2750,8 @@
 
   // ======================================================================= 店裡的東西點了會怎樣（牆上唱片＝唱片資訊、箱子＝翻、試聽機＝放一張、老闆／店貓＝一句）
   function boothIds() {
-    var r = save.run, out = [], add = function (id) { var c = card(id); if (c && c.previewUrl && out.indexOf(id) < 0) out.push(id); };
-    if (r) { add(C.aces[r.ace]); r.bag.forEach(add); }
+    var r = save.run, out = [], add = function (id) { var c = cardVis(id) ? card(id) : null; if (c && c.previewUrl && out.indexOf(id) < 0) out.push(id); };   // 旗標關：試做的 42 張不列（CONTRACT 第 8 節）
+    if (r) { add(aceIdOf(r)); r.bag.forEach(add); }
     Object.keys(save.shelf).reverse().forEach(add);
     return out.slice(0, 24);
   }
@@ -2668,7 +2816,7 @@
   function paintedCard(id, label) {
     var m = /^(.*?)《(.*)》\s*$/.exec(String(label || '')), artist = m ? m[1].trim() : String(label || '').trim(), album = m ? m[2].trim() : '';
     var lo = function (x) { return String(x || '').toLowerCase().replace(/[^a-z0-9\u3040-\u9fff]/g, ''); };
-    if (album) for (var k in C.cards) { var c = C.cards[k]; if (lo(c.album) === lo(album) && (!artist || lo(c.artist).indexOf(lo(artist)) >= 0 || lo(artist).indexOf(lo(c.artist)) >= 0)) return c; }
+    if (album) for (var k in C.cards) { if (!cardVis(k)) continue; var c = C.cards[k]; if (lo(c.album) === lo(album) && (!artist || lo(c.artist).indexOf(lo(artist)) >= 0 || lo(artist).indexOf(lo(c.artist)) >= 0)) return c; }
     return { id: 'painted:' + id, artist: artist, album: album || artist, painted: true, c: 0, o: 0, h: 0 };
   }
   // 經濟介面（econ.js，B3）：沒載到就在主控台說一聲、什麼都不開（不丟例外）
@@ -3047,7 +3195,7 @@
     if (!o) return null;
     if (o._gid && card(o._gid)) return card(o._gid);
     var k = catalogId(o);
-    if (!UI.tuneIdx) { UI.tuneIdx = {}; Object.keys(C.cards).forEach(function (id) { UI.tuneIdx[catalogId(C.cards[id])] = id; }); }
+    if (!UI.tuneIdx) { UI.tuneIdx = {}; poolIds().forEach(function (id) { UI.tuneIdx[catalogId(C.cards[id])] = id; }); }
     return card(UI.tuneIdx[k]);
   }
   function coverAbs(c) { var u = coverSrc(c); if (!u) return ''; try { return new URL(u, location.href).href; } catch (_) { return u; } }
@@ -3078,7 +3226,7 @@
   function tuneConfigure(DT) {
     if (UI.tuneCfg) return;
     UI.tuneCfg = true;
-    var pool = { cards: Object.keys(C.cards).map(function (id) { var c = C.cards[id];
+    var pool = { cards: poolIds().map(function (id) { var c = C.cards[id];
       return { artist: c.artist, album: c.album, classic: c.c, obscurity: c.o, accessibility: c.h, tier: c.tier || undefined, previewUrl: c.previewUrl || '', coverUrl: coverAbs(c), year: c.year || 0, genres: (c.genres || []).slice(), _gid: id }; }), apex: {} };
     DT.configure({
       host: function () { return UI.tuneHost; },
@@ -3219,8 +3367,8 @@
   //   擁有的排法：店內取得的在前（最近帶走的先），再來藏家的王牌、老闆送的
   function renderShelf(pg, filter) {
     pg.innerHTML = '';
-    var total = Object.keys(C.cards).length;
-    var ids = Object.keys(save.shelf).filter(card).reverse();
+    var total = poolIds().length;                       // 旗標關：試做的 42 張不算（分母維持 316）
+    var ids = Object.keys(save.shelf).filter(cardVis).reverse();
     var shown = ids.filter(function (id) { return filter === 'new' ? isNewOnShelf(id) : filter === 'ace' ? !!card(id).tier : true; });
     var SRC_ORDER = { run: 0, boss: 1, gift: 2 };
     var own = ids.filter(isOwned).sort(function (a, b) { return (SRC_ORDER[save.shelf[a].src] | 0) - (SRC_ORDER[save.shelf[b].src] | 0); });
@@ -3301,7 +3449,7 @@
       trail: function () { return UI.trail.slice(); },
       cam: function () { return UI.camName; },
       going: function () { return !!UI.going; },
-      autoplay: function (policy, o) { o = o || {}; UI.auto = { policy: policy || 'novice', until: o.until || 'duelEnd', animated: !!o.animated, tut: !!o.tut, ace: o.ace || null, guess: o.guess || null }; kick(); return true; },
+      autoplay: function (policy, o) { o = o || {}; UI.auto = { policy: policy || 'novice', until: o.until || 'duelEnd', animated: !!o.animated, tut: !!o.tut, ace: o.ace || null, guess: o.guess || null, apexId: o.apexId || null }; kick(); return true; },
       stop: function () { UI.auto = null; },
       seed: function (n) { UI.seedOverride = String(n); return seedKey(); },
       // 讓之後每一手都照這個結果（e2e #32：7 手同色 → 唱片丟完）；null 取消
@@ -3344,6 +3492,7 @@
       own: function (ids, src) { [].concat(ids || []).forEach(function (id) { shelfOwn(id, src || 'run'); }); persist(); return ownedIds(); },
       keepIds: function () { return save.run ? keepIds(save.run) : []; },
       rules: openRules, openPage: openPage, go: go, replayTutorial: replayTutorial, stageAction: onStageAction,
+      apex: function () { return !!UI.apex; }, aceId: function () { return save.run ? aceIdOf(save.run) : null; },   // 頂點卡試做（?apex=1）
       // 你家（聆聽室，v5 第六項第三期）：擁有的排法、想要清單、控制台開著沒、唱盤上那張
       home: { owned: function () { return homeOwnedIds(); }, want: function () { return save.want.slice(); }, tune: function () { return !!UI.tune; }, deck: function () { return UI.homeDeckId || null; }, last: function () { return UI.tuneLast || null; },
         close: function () { return closeTuneConsole(); }, ended: function (id) { onMusicEnded(card(id)); return UI.homeNext || null; } },
@@ -3382,9 +3531,13 @@
     if (o.eAtk != null) eDef.atk = Math.max(0, o.eAtk | 0);
     if (o.eDef != null) eDef.def = Math.max(0, o.eDef | 0);
     var pick3 = ['c', 'o', 'h'].map(function (a) { return ((C.bargain && C.bargain.pool) || []).filter(function (id) { return C.cards[id] && E.topAttr(C.cards[id]) === a; })[0]; }).filter(Boolean);
-    var pDef = E.playerDef(C, { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: Array.isArray(o.relics) ? o.relics.slice(0, 3) : [], atk: o.atk | 0, def: o.def | 0 });   // relics：e2e-duel #1g（屬性鈕與「你」那一列的發燒配件）
+    var pSrc = { bag: (C.gifts[ace] || []).concat(pick3), ace: ace, relics: Array.isArray(o.relics) ? o.relics.slice(0, 3) : [], atk: o.atk | 0, def: o.def | 0 };   // relics：e2e-duel #1g（屬性鈕與「你」那一列的發燒配件）
+    var apex = UI.apex && o.apex !== false;             // 頂點卡試做（?apex=1）：王牌＝o.aceId 那張（那派名單裡；沒給＝預設）、純輔助卡
+    if (apex && apexPickOk(ace, o.aceId)) pSrc.aceId = o.aceId;
+    var pDef = apex ? E.playerDef(C, pSrc, { apex: true }) : E.playerDef(C, pSrc);
     if (o.hp != null) pDef.hp = pDef.maxHp = +o.hp;
     var seed = (+o.seed >>> 0) || 1, opts = { seed: seed, hintTable: E.hintTableOf ? E.hintTableOf(C) : undefined };
+    if (apex) opts.apex = true;
     if (!opts.hintTable) { var ht = {}; ['c', 'o', 'h'].forEach(function (a) { ht[a] = ((C.hints || {})[a] || []).map(function (h) { return h.id; }); }); opts.hintTable = ht; }
     if (eDef.ace) opts.enemyAce = eDef.ace;
     else if (eDef.boss) { var others = E.TIERS.filter(function (t) { return t !== ace; }); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
@@ -3489,6 +3642,7 @@
     if (UI.booted) return; UI.booted = true;
     E = W.DipLabEngine; C = W.DipLabContent;
     if (!E || !C || !app() || !E.newRun) { if (app()) app().innerHTML = '<div class="lb-boot">載入失敗，請重新整理。</div>'; return; }
+    apexBoot();
     D.body.classList.add('in-battle');
     svhFallback();
     save = loadSave();
@@ -3500,6 +3654,7 @@
     var ci = CI();
     if (ci) {
       ci.config({ onSoundUnlock: function () { save.settings.sound = true; persist(); }, cardOf: function (id) { return card(id); } });
+      if (UI.apex) ci.config({ apex: true });          // 頂點卡試做：頂點卡的唱片資訊多一塊「王牌能力」（旗標關時不設，一字不變）
       ci.on('close', function () { flushToasts(); });
     }
     labSpr();

@@ -4,6 +4,13 @@
 // Usage: node game-lab/sim.mjs [--n 2000] [--mode all|runs|man] [--flows smart,none,bare] [--gate smart] [--cap 300] [--json out.json]
 //                              [--policies thoughtful,novice,random,high,formula,mirrorHint,oracle] [--tier k]
 //                              [--set mercy=false] [--patch '{"trial":{"curve":{"atk":{"add":1}}}}'] [--data <dir with cards.js and bins.js>]
+//                              [--apex [--apex-ace <頂點卡 id>] [--apex-params '{"<能力 id>":{"n":3}}']] [--ace hall|pearl|heresy]
+//   --apex   頂點卡純輔助卡試做（＝遊戲網址 ?apex=1；scratchpad v5/apextrial）：startFight 傳 {apex:true}（序章照舊 7 星）；王牌＝各派預設那張（C.aces），
+//            策略自己決定什麼時候發動（engine policies 的頂點卡分支）。--apex-ace＝每一趟都帶這張（流派跟著它；用來量單張能力，跟沒給時的三派輪流不是同一批客人組成）
+//            --apex-params＝試調參數（只在這次模擬裡蓋掉 C.apexTrial 那幾張的 params；{"<id>":{"hold":{…}}} 蓋留著的小效果；@檔名＝從 JSON 檔讀；不改 content.js）
+//              兩個原語合一（combo）：{"ops":[…]} 整組換；{"mirrorPlus":{"n":2}} 只改那個原語；平的 {"n":2} 蓋到組裡有 n 的每個原語（都沒有＝報錯）
+//            旗標下多印一張「頂點卡發動」表（發動率、第幾手、發動那手的勝負、作用幾手）；不開 --apex 時輸出跟以前一字不差
+//   --ace    每一趟都用這一派（沒給＝三派輪流 TIERS[i % 3]）；不開 --apex 也能用＝現行 7 星王牌的分派基準（跟 --apex-ace 同一批客人組成）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
 //   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；
 //            ＋收音機（v5 第六項第二期）：每輪第一次能買東西時轉一次（radioSmart：挑抽卡池裡「剋下一位主屬性那軸」平均星最高的那格），買得起就買（照原價；
@@ -48,6 +55,34 @@ const N = +arg('n', 2000);
 const MODE = arg('mode', 'all');
 const CAP = +arg('cap', 300);
 const TIER = +arg('tier', 0);
+const APEX = argv.includes('--apex');
+const APEX_ACE = arg('apex-ace', null);
+if (APEX_ACE && !(C.cards[APEX_ACE] && EN.apexList(C, C.cards[APEX_ACE].tier).some(x => x.card === APEX_ACE))) { console.error('--apex-ace 要是 C.apexTrial 名單裡的頂點卡 id'); process.exit(2); }
+if (APEX_ACE && !APEX) { console.error('--apex-ace 要跟 --apex 一起用'); process.exit(2); }
+const ACE_T = arg('ace', null);
+if (ACE_T && !TIERS.includes(ACE_T)) { console.error('--ace ' + TIERS.join('|')); process.exit(2); }
+if (ACE_T && APEX_ACE && C.cards[APEX_ACE].tier !== ACE_T) { console.error('--ace 跟 --apex-ace 那張的派不同'); process.exit(2); }
+const APEX_PARAMS = arg('apex-params', null) ? JSON.parse(arg('apex-params').startsWith('@') ? fs.readFileSync(arg('apex-params').slice(1), 'utf8') : arg('apex-params')) : null;   // @檔名＝從檔案讀
+if (APEX_PARAMS && !APEX) { console.error('--apex-params 要跟 --apex 一起用'); process.exit(2); }
+if (APEX_PARAMS) for (const id of Object.keys(APEX_PARAMS)) {
+  const e = TIERS.flatMap(t => EN.apexList(C, t)).find(x => x.id === id);
+  if (!e) { console.error('--apex-params：沒有能力 ' + id); process.exit(2); }
+  const o = APEX_PARAMS[id];
+  if (o.hold) { if (!e.hold) { console.error('--apex-params：' + id + ' 不是留著型'); process.exit(2); } e.hold = Object.assign({}, e.hold, { params: Object.assign({}, e.hold.params, o.hold) }); }
+  const pp = Object.assign({}, o); delete pp.hold;
+  if (e.op === 'combo' && Object.keys(pp).length) {                     // 兩個原語合一：{"ops":[…]}＝整組換掉；平的鍵（{"n":2}）＝蓋到組裡有這個參數的原語（沒有任何原語有它＝報錯，不默默不改）
+    const ops = Array.isArray(pp.ops) ? pp.ops.map(x => ({ op: x.op, params: Object.assign({}, x.params) })) : (e.params.ops || []).map(x => ({ op: x.op, params: Object.assign({}, x.params) }));
+    for (const [k, v] of Object.entries(pp)) {
+      if (k === 'ops') continue;
+      const byOp = ops.filter(x => x.op === k);                           // {"mirrorPlus":{"n":2}}＝只改組裡那個原語
+      if (byOp.length && v && typeof v === 'object') { for (const x of byOp) Object.assign(x.params, v); continue; }
+      const hit = ops.filter(x => k in (x.params || {}));
+      if (!hit.length) { console.error('--apex-params：' + id + ' 是 combo（' + ops.map(x => x.op).join('＋') + '），沒有參數 ' + k + '；整組換用 {"ops":[…]}'); process.exit(2); }
+      for (const x of hit) x.params[k] = v;
+    }
+    e.params = { ops };
+  } else if (Object.keys(pp).length) e.params = Object.assign({}, e.params, pp);
+}
 const JSON_OUT = arg('json', null);
 const ALL_FLOWS = ['smart', 'none', 'bare', 'cards', 'relics'];
 const FLOWS = arg('flows', 'smart,none,bare').split(',').filter(Boolean);
@@ -104,7 +139,11 @@ function play(duel, pol, R, mem) {
     if (++g > 20) throw new Error('runaway duel');
     const act = fn(duel, R, mem, C);
     if (!EN.isLegal(duel, act)) throw new Error('illegal act from ' + pol + ': ' + JSON.stringify(act));
-    EN.resolveTurn(duel, act);
+    const ev = EN.resolveTurn(duel, act);
+    if (act.apex) {                                                     // 頂點卡試做：記發動那手（只有 --apex 會走到）
+      const a = ev.find(e => e.t === 'apex'), c = ev.find(e => e.t === 'clash');
+      duel._apexHand = { n: c.n, toE: c.toE, toP: c.toP, kind: c.kind, heal: (a && a.heal) | 0, reveal: a ? a.reveal || null : null, d: c.apex ? c.apex.d : 0, hit: !!(c.apex && c.apex.hit) };
+    }
   }
   return duel;
 }
@@ -140,7 +179,7 @@ function radioSmart(run, R) {
 //   A＝這一格的每一位累計（到過、死、場次、勝、首戰、手數、打到第 6 手、比聲望條、KO）
 function runOnce(pol, flow, i, A) {
   const seedKey = 'sim5-' + i;
-  const run = EN.newRun(C, { seedKey, runNo: 1, ace: TIERS[i % 3], prologue: flow !== 'bare', tier: TIER });
+  const run = EN.newRun(C, Object.assign({ seedKey, runNo: 1, ace: ACE_T || TIERS[i % 3], prologue: flow !== 'bare', tier: TIER }, APEX_ACE ? { ace: C.cards[APEX_ACE].tier, aceId: APEX_ACE } : {}));
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
@@ -174,7 +213,7 @@ function runOnce(pol, flow, i, A) {
     const prologue = step === 'prologue', d = run.pos, att = retryAt === d ? 1 : 0;
     if (!prologue && bag0 == null) bag0 = bagPower(run);
     if (!prologue && lastReached < d) { A.reached[d]++; lastReached = d; }
-    const f = EN.startFight(run, C, {});
+    const f = EN.startFight(run, C, APEX ? { apex: true } : {});
     if (!f) throw new Error('startFight null at ' + d);
     const duel = play(f.duel, pol, R, mem), hands = duel.stats.hands, by = duel.over.by;
     const res = EN.finishFight(run, C);
@@ -184,6 +223,16 @@ function runOnce(pol, flow, i, A) {
     if (by === 'rounds') A.bar[d]++; else if (by === 'hp') A.ko[d]++;
     if (res.win) A.win[d]++;
     if (att === 0) { A.att1[d]++; if (res.win) A.win1[d]++; }
+    if (A.ax) {                                                         // 頂點卡發動統計（--apex）
+      const X = A.ax, h = duel._apexHand, hits = duel.stats.apexHits | 0;
+      X.fights++; X.hits += hits;
+      if (h) {
+        X.used++; X.nSum += h.n; X.nHist[Math.min(6, h.n)]++; X.dSum += h.d; X.healSum += h.heal; if (h.hit) X.hitHand++;
+        if (h.toE > h.toP) X.hw++; else if (h.toE < h.toP) X.hl++; else X.ht++;
+        X.netSum += h.toE - h.toP; if (h.reveal) X.rev[h.reveal]++;
+        X.fUsed++; if (res.win) X.wUsed++;
+      } else { X.fUnused++; if (res.win) X.wUnused++; }
+    }
     if (!res.win) {
       if (firstLoss == null) firstLoss = d;
       if (run.pending && run.pending.type === 'retry') retryAt = d;
@@ -207,6 +256,8 @@ const REACH = [5, 10, 20, 50, 100];
 function runCell(pol, flow, n) {
   const NP = CAP + 2, z = () => new Float64Array(NP);
   const A = { reached: z(), deaths: z(), att: z(), win: z(), att1: z(), win1: z(), hands: z(), r6: z(), bar: z(), ko: z() };
+  if (APEX) A.ax = { fights: 0, used: 0, nSum: 0, nHist: [0, 0, 0, 0, 0, 0, 0], dSum: 0, healSum: 0, hitHand: 0, hw: 0, hl: 0, ht: 0, netSum: 0, rev: { honest: 0, bluff: 0 },
+    hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0 };
   const recs = [];
   for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
@@ -226,6 +277,10 @@ function runCell(pol, flow, n) {
   for (const p of pos) { if (p.d < 4 || p.reached < 200) continue; if (p.cls === 'boss') { hb += A.deaths[p.d]; hbn += p.reached; } else { hn += A.deaths[p.d]; hnn += p.reached; } }
   const hazBoss = hbn ? hb / hbn : null, hazNon = hnn ? hn / hnn : null;
   const handsBand = HBANDS.map(([a, b]) => { const at = sum('att', a, b); return at >= 100 ? sum('hands', a, b) / at : null; });
+  const X = A.ax, apexStats = X ? { fights: X.fights, used: X.used, useRate: X.fights ? X.used / X.fights : null, perRun: X.used / n, n: X.used ? X.nSum / X.used : null,
+    nHist: X.nHist.slice(1), handWin: X.used ? X.hw / X.used : null, handLose: X.used ? X.hl / X.used : null, handTie: X.used ? X.ht / X.used : null,
+    net: X.used ? X.netSum / X.used : null, d: X.used ? X.dSum / X.used : null, heal: X.used ? X.healSum / X.used : null, hitHand: X.used ? X.hitHand / X.used : null,
+    hitsPerFight: X.fights ? X.hits / X.fights : null, rev: X.rev, winUsed: X.fUsed ? X.wUsed / X.fUsed : null, winUnused: X.fUnused ? X.wUnused / X.fUnused : null } : null;
   return {
     pol, flow, n, cap: CAP,
     median: q(ends, 0.5), mean: avg('end'), p25: q(ends, 0.25), p75: q(ends, 0.75), p90: q(ends, 0.9), censored: share(recs, r => r.cens), lostMan: share(recs, r => r.lostMan),
@@ -242,6 +297,7 @@ function runCell(pol, flow, n) {
       checkpoints: avg('checkpoints'), bestStreak: avg('bestStreak'), bag0: avg('bag0'), bag1: avg('bag1'),
       radioSpins: avg('radioSpins'), radioBought: avg('radioBought'), radioSpent: avg('radioSpent') },
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
+    ...(apexStats ? { apex: apexStats } : {}),
   };
 }
 
@@ -263,6 +319,12 @@ function fightCell(fn, n) {
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
 const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null) };
+if (APEX) report.apex = APEX_ACE || 'default';                           // 不開 --apex 時 JSON 跟以前逐字相同（不多 "apex": null）
+if (ACE_T) report.ace = ACE_T;
+if (APEX_PARAMS) report.apexParams = APEX_PARAMS;
+if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] || ACE_T) + '（--ace ' + ACE_T + '）');
+if (APEX_PARAMS) console.log('\n試調參數（--apex-params，不改 content.js）：' + JSON.stringify(APEX_PARAMS));
+if (APEX) console.log('\n頂點卡純輔助卡試做（--apex）：王牌 ' + (APEX_ACE ? C.cards[APEX_ACE].album + '（' + EN.abilityOf(C, APEX_ACE).name + '）' : '各派預設那張') + '；打贏回 ' + ((C.apexTrial && C.apexTrial.winHeal) || EN.trialCfg(C, TIER).heal));
 const cells = {};
 const cellOf = (flow, pol) => (cells[flow] || {})[pol];
 
@@ -301,6 +363,14 @@ if (MODE === 'all' || MODE === 'runs') {
   for (const pol of ['novice', 'thoughtful']) {
     if (V3[pol]) console.log(`| V3・${LABEL[pol]} | ${V3[pol].pos.split(' ').concat(Array(PCOLS).fill('—')).slice(0, PCOLS).join(' | ').replace(/\//g, '／')} |`);
     for (const flow of flows) if (cellOf(flow, pol)) console.log(`| ${LABEL[pol]}・${flow} | ${posRow(cellOf(flow, pol))} |`);
+  }
+
+  if (APEX) {                                                            // 頂點卡發動（--apex；只算客人場，序章不開）
+    console.log(`\n頂點卡發動（客人場；發動那手的勝負＝那手扣他的 vs 他扣你的，回聲望不算在內）：\n`);
+    console.log('| 策略 | 流程 | 發動率（每場） | 平均第幾手 | 第 1／2／3／4／5／6 手（%） | 那手 贏／平／輸 | 那手淨賺（扣他−扣你） | 能力改了幾點 | 那手作用到 | 整場作用手數 | 回聲望 | 看穿 真／唬 | 場勝率 發動／沒發動 |');
+    console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
+    for (const x of rows) { const a = x.apex; if (!a) continue; const u = a.used || 1;
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(a.useRate)} | ${f2(a.n)} | ${a.nHist.map(k => p0(k / u)).join('／')} | ${p0(a.handWin)}／${p0(a.handTie)}／${p0(a.handLose)} | ${f2(a.net)} | ${f2(a.d)} | ${pct(a.hitHand)} | ${f2(a.hitsPerFight)} | ${f2(a.heal)} | ${a.rev.honest}／${a.rev.bluff} | ${pct(a.winUsed)}／${pct(a.winUnused)} |`); }
   }
 
   // 跟 ../curve/results.md 的 V3 比（新帳號）

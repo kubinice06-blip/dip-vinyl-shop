@@ -76,6 +76,24 @@
 //            switchAce(run, content, tier) -> {ok, effects:[{ace, from}, {loseCard}…, {gainCard}…]} | {ok:false, error:'badAce'|'notNow'|'same'}（錯的不改 run）
 //              王牌換掉；包包裡老闆送的（run.gifts 還在包包裡的）原位換成新流派那組（照順序、跳過包包裡已經有的：種子、特價箱、買的；不夠就少）；其他不動。
 //              run.gifts、run.taken 跟著改；藏家王牌撞到新王牌就重抽（bossAceFor：雜湊，不碰 run.rng）；店裡擺著、現在進了包包的那幾張下架
+// Apex       頂點卡純輔助卡試做（店主 11-15；只在 ?apex=1：畫面／sim 每次把 {apex:true} 傳進 startFight，不存在 run 裡）。scratchpad v5/apextrial 的 FRAME.md（規則）、CONTRACT.md（給畫面的 API）。
+//            旗標關時下面這些全部不走：duel 沒有 apexMode、run.aceId 不讀，舊行為一字不改（engine.test 逐一驗）。
+//            能力資料＝content.apexTrial（hall／pearl／heresy 各 15 張 {card, id, name, text, timing, op, params, hold}；winHeal＝旗標下打贏回幾聲望）。
+//            apexList(content, tier) · apexAceId(run, content)（run.aceId 在這派名單裡＝它，否則 C.aces[run.ace]）· abilityOf(content, cardId) · APEX_OPS（原語、參數範圍、可用時機）
+//            newRun 多收 aceId；switchAce(run, content, tier, {aceId})：同一派換卡只改 run.aceId（effects [{ace, from, aceId, fromId}]）；換派照舊再設 aceId
+//            startFight(run, content, {apex:true})：序章那場不開（序章照舊 7 星教學）；duel.apexMode、duel.p.ability（能力複本）、duel.p.apexOn（null｜{n, heal?, reveal?}）
+//              playerDef(content, run, {apex:true}) 的王牌＝apexAceId 那張＋ability；startDuel(pDef, eDef, {apex:true})
+//            你的王牌不比星：legalActions 不列 {ace:true}、isLegal 擋 {ace:true}；view.ace＝null（王牌不能當唱片丟）、view.aceCard 照舊
+//            canApex(duel)（只會回聲望的能力在聲望滿時＝false，view.apex.full 給畫面寫原因）· activateApex(duel) -> Event[]（[{t:'apex', n, card, id, name, op, timing, heal?, reveal?:'honest'|'bluff', pHp}]；不合法 []、什麼都不改；不取 duel.rng、不推進手數）
+//            resolveTurn(duel, {i, attr, apex:true})＝先 activateApex 再結算（act.apex 但 !canApex → 不合法）；preview(duel, {…, apex:true}, eSide)＝假設這手發動（不寫回）
+//            時機：hand＝發動那手；duel＝發動那手起到這場結束；hold＝還沒發動前每手套 hold 小效果，發動＝放掉它、換這手的 op。一手最多一個王牌效果
+//            outcome 的步驟（FRAME 1.4）：①你 +N 星 ②他 −N 星 ③判相剋（剋得動門檻 pThr、以小搏大）④改寫比星（比星多算、同色同星扣他、比星輸不扣）⑤配件 ⑥品味
+//              ⑦剋中多扣→剋中加倍→拆穿（你出提示那色剋中＝抓到唬人）⑧彈回一半（他品味前）⑨他的底氣 ⑩他的品味 ⑪你的底氣 ⑫被剋少扣／減半（最少扣 1）⑬拆穿回血（扣完聲望後）
+//            clash 事件多 apex: null｜{id, op, src:'on'|'hold', first, hit, dE, dP, d, h, caught, pStar, eStar}；notes 多一句 {apex, op, src, d, h, hit, text}（text＝content.apexTrial.notes／holdNotes 代入）
+//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null, full}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'）
+//            finishFight：duel.apexMode 時打贏回 content.apexTrial.winHeal（沒給＝C.trial.heal）。藏家、客人帶的王牌照舊 7 星、沒有能力
+//            策略：policies 在 duel.apexMode 且 canApex 時自己決定發動（會讀的＝期望增益 ≥ APEX_TAU[第 n 手]；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N；
+//              看穿＝用「知道真假」的資訊價值；新手、只出最大星、兩步公式、跟提示同色＝第 1 手就發動；亂出＝每手 1/6；先知＝有好處就發動）
 // Economy    台幣行情（FIXLIST 8＋X／Y 契約；數字在 content.economy，這裡的 ECON 是沒給時的預設）
 //            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
 //            rarityScore(card) ＝ c＋h＋(o===5 ? 1 : 0) · rarity(card) → 'common'≤5｜'rare'6｜'uncommon'7｜'epic'8｜'legendary'≥9｜'apex'（tier hall／pearl／heresy）
@@ -205,6 +223,7 @@
   function clash(p, e, opts) {
     if (typeof p === 'number') { const x = arguments; return clash({ star: x[0], attr: x[1] }, { star: x[2], attr: x[3] }); }   // v3 墊片（ui.js 舊規則卡例子）
     const N = opts && opts.threshold != null ? opts.threshold : CFG.threshold;
+    const NP = opts && opts.pThr != null ? opts.pThr : N;   // 頂點卡試做：只改你剋他那邊的門檻（剋得動 3、以小搏大＝不判剋不動）
     const ps = p.star | 0, es = e.star | 0;
     const cmp = (blocked, by) => {
       const d = ps - es;
@@ -215,7 +234,7 @@
     // 王牌沒有「不會被剋」（FIXLIST 2，店主 2026-11-08）：王牌只是 7 星，照三相剋＋差 2 星門檻；王牌對王牌一樣照三相剋
     if (p.attr === e.attr) return cmp(null, null);
     if (BEATS[p.attr] === e.attr) {                       // 你剋他
-      if (es - ps >= N) return cmp('gap', 'p');
+      if (es - ps >= NP) return cmp('gap', 'p');
       return { kind: 'counter', toE: ps, toP: 0, blocked: null, by: 'p' };
     }
     if (ps - es >= N) return cmp('gap', 'e');             // 他剋你
@@ -238,13 +257,154 @@
   // 監聽耳機：v4 新效果（第一手他不唬人）只在 relic.v4 打開時生效（〔補〕⚠規則，預設不上架）
   const headphoneOn = st => st.p.relics.some(r => r.id === 'headphone' && r.v4 === true);
 
+  // ---------- 頂點卡純輔助卡試做（?apex=1；檔頭 Apex）。旗標關時（st.apexMode 沒有）這一段一行都不走 ----------
+  // 原語表：params＝參數範圍（[最小, 最大]；'bool'＝布林，可省）；timing＝當主效果可用的時機（hold 的大效果算 hand）；small＝可以當「留著」的小效果；
+  //   duelMax／smallMax＝整場、留著時參數上限（FRAME 第 2.1 節：整場比星多算 1、整場少扣 1…）；now＝發動當下做完（不進 outcome）。check-content 照這張表擋
+  const APEX_OPS = {
+    heal:        { params: { n: [2, 5] }, timing: ['hand'], now: true },
+    reveal:      { params: {}, timing: ['hand'], now: true },
+    star:        { params: { n: [1, 1] }, timing: ['hand'] },
+    eStar:       { params: { n: [1, 1] }, timing: ['hand'] },
+    pThr:        { params: { n: [3, 4] }, timing: ['hand', 'duel'], duelMax: { n: 3 } },
+    theirStar:   { params: {}, timing: ['hand', 'duel'] },
+    mirrorPlus:  { params: { n: [1, 3] }, timing: ['hand', 'duel'], duelMax: { n: 1 } },
+    loseZero:    { params: {}, timing: ['hand'] },
+    tieWin:      { params: { n: [1, 2] }, timing: [], small: true, smallMax: { n: 1 } },
+    counterPlus: { params: { n: [1, 3] }, timing: ['hand', 'duel'], small: true, duelMax: { n: 1 }, smallMax: { n: 1 } },
+    counterMult: { params: { mult: [2, 2] }, timing: ['hand'] },
+    crit:        { params: { mult: [2, 3] }, timing: ['hand', 'duel'] },
+    critLeech:   { params: { mult: [1, 3] }, timing: ['hand', 'duel'] },
+    bounce:      { params: { lose: 'bool' }, timing: ['hand', 'duel'] },
+    shield:      { params: { n: [1, 3] }, timing: ['hand', 'duel'], small: true, duelMax: { n: 1 }, smallMax: { n: 1 } },
+    halfIn:      { params: {}, timing: ['hand'] },
+  };
+  const APEX_TIMINGS = ['hand', 'duel', 'hold'];
+  const apexCfg = content => (content && content.apexTrial && typeof content.apexTrial === 'object') ? content.apexTrial : null;
+  // 這一派可以挑的頂點卡（content.apexTrial[tier]；第 1 張＝content.aces[tier]）
+  function apexList(content, tier) { const A = apexCfg(content); return A && TIERS.includes(tier) && Array.isArray(A[tier]) ? A[tier] : []; }
+  function apexEntry(content, cardId) {
+    for (const t of TIERS) { const x = apexList(content, t).find(e => e && e.card === cardId); if (x) return Object.assign({ tier: t }, x); }
+    return null;
+  }
+  // 旗標下 run 帶的那張：run.aceId 在這一派名單裡、卡存在、tier 對 → 它；否則（舊存檔、沒挑過、換了派）＝content.aces[run.ace]
+  function apexAceId(run, content) {
+    const t = run && TIERS.includes(run.ace) ? run.ace : 'hall', def = (content.aces || {})[t] || null;
+    const id = run && run.aceId, c = id ? cardOf(content, id) : null;
+    return id && c && c.tier === t && apexList(content, t).some(e => e && e.card === id) ? id : def;
+  }
+  // 那張的能力（複本；對決狀態裡存這份，存檔讀檔不用再查 content）
+  function abilityOf(content, cardId) {
+    const e = apexEntry(content, cardId);
+    if (!e) return null;
+    return { id: e.id, card: e.card, tier: e.tier, name: e.name, text: e.text, timing: e.timing, op: e.op, params: clone(e.params || {}), hold: e.hold ? clone(e.hold) : null };
+  }
+  const apexOps = (op, params) => op === 'combo' ? ((params && params.ops) || []).map(o => ({ op: o.op, params: o.params || {} })) : [{ op, params: params || {} }];
+  const apexHas = (A, op) => !!A && apexOps(A.op, A.params).some(x => x.op === op);
+  // 只會回聲望的能力（安全氣囊、身心靈、新的一天、逃生梯）：聲望滿的時候發動＝白白用掉 → 不讓發動（canApex false；view.apex.full 給畫面寫原因）
+  const apexHealOnly = A => !!A && apexOps(A.op, A.params).every(x => x.op === 'heal');
+  const apexFull = st => apexHealOnly(st.p.ability) && st.p.hp >= st.p.max;
+  // 一組原語 → outcome 讀的旗標
+  function apexModsOf(ops) {
+    const M = {};
+    for (const o of ops) {
+      const q = o.params || {}, n = q.n | 0, mult = q.mult | 0;
+      switch (o.op) {
+        case 'star': M.star = (M.star | 0) + n; break;
+        case 'eStar': M.eStar = (M.eStar | 0) + n; break;
+        case 'pThr': M.pThr = n; break;
+        case 'theirStar': M.theirStar = true; M.pThr = Infinity; break;          // 你剋他一律剋得動
+        case 'mirrorPlus': M.mirrorPlus = (M.mirrorPlus | 0) + n; break;
+        case 'loseZero': M.loseZero = true; break;
+        case 'tieWin': M.tieWin = (M.tieWin | 0) + n; break;
+        case 'counterPlus': M.counterPlus = (M.counterPlus | 0) + n; break;
+        case 'counterMult': M.mult = mult; break;
+        case 'crit': M.crit = mult; break;
+        case 'critLeech': if (mult > 1) M.crit = mult; M.leech = true; break;
+        case 'bounce': M.bounce = true; M.bounceLose = !!q.lose; break;
+        case 'shield': M.shield = (M.shield | 0) + n; break;
+        case 'halfIn': M.halfIn = true; break;
+        default: break;                                                         // heal／reveal：發動當下做完
+      }
+    }
+    return M;
+  }
+  // 這手哪個王牌效果在作用：{src:'on'|'hold', first, ops, M, on} | null。hyp＝假設這手發動（preview 的 act.apex、策略估值；不寫回）
+  function apexNow(st, hyp) {
+    if (!st || !st.apexMode) return null;
+    const P = st.p, A = P.ability;
+    if (!A || !P.ace) return null;
+    const on = P.apexOn || (hyp ? { n: st.n, hyp: true } : null);
+    if (on) {
+      if (!(A.timing === 'duel' ? on.n <= st.n : on.n === st.n)) return null;
+      const ops = apexOps(A.op, A.params);
+      return { src: 'on', first: on.n === st.n, ops, M: apexModsOf(ops), on };
+    }
+    if (A.timing === 'hold' && A.hold && !P.aceUsed) { const ops = apexOps(A.hold.op, A.hold.params); return { src: 'hold', first: false, ops, M: apexModsOf(ops), on: null }; }
+    return null;
+  }
+  // 結果行那一句與 clash 事件的 apex 欄（b＝同一手不算王牌的結果）
+  const CRIT_OPS = ['crit', 'critLeech'];
+  function apexInfo(st, AX, r, b, pPlay, ePlay, caught, ps, es) {
+    const P = st.p, A = P.ability, T = st.apexText || {};
+    const op = AX.ops.length === 1 ? AX.ops[0].op : 'combo';
+    const dE = r.toE - b.toE, dP = b.toP - r.toP, h = r.heal | 0;
+    const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
+    let d, hit;
+    if (op === 'heal') { const n = AX.ops[0].params.n | 0; d = AX.on && AX.on.heal != null ? AX.on.heal : Math.max(0, Math.min(n, P.max - P.hp)); hit = AX.first && d > 0; }
+    else if (op === 'reveal') { d = 0; hit = false; }
+    else if (CRIT_OPS.includes(op)) { d = dE; hit = caught && (d > 0 || h > 0); }          // 拆穿回血 ×1 在滿聲望時抓到：沒多扣、也沒回到＝沒作用
+    else if (op === 'counterPlus' || op === 'counterMult' || op === 'tieWin') { d = dE; hit = d > 0; }
+    else if (op === 'shield' || op === 'halfIn' || op === 'loseZero') { d = dP; hit = d > 0; }
+    else if (op === 'bounce') { d = r.bounced | 0; hit = d > 0; }
+    else { d = dE + dP; hit = d > 0; }                                           // star eStar mirrorPlus theirStar pThr combo：兩邊加起來
+    const info = { id: A.id, op, src: AX.src, first: !!AX.first, hit: !!hit, dE, dP, d, h, caught: !!caught, pStar: ps, eStar: es };
+    let tpl = null, full = false;
+    const N = T.notes || {};
+    if (AX.src === 'hold') tpl = hit ? (T.holdNotes || {})[op] : null;
+    else if (op === 'reveal') tpl = null;                                       // 看穿：提示框蓋章，不進結果句
+    else if (hit) tpl = op === 'critLeech' ? (d <= 0 ? N.leech : h > 0 ? N.critLeech : (N.crit || N.critLeech)) : N[op];   // 拆穿回血：沒回到（滿聲望）就不寫「回 0 聲望」
+    else if (op === 'critLeech' && caught) { tpl = N.leechFull || null; full = true; }      // 抓到唬人但聲望是滿的（不算「沒碰到條件」）
+    else if (AX.first) tpl = CRIT_OPS.includes(op) && ePlay.attr === hintA ? (N.noneHonest || N.none) : N.none;
+    const note = tpl ? Object.assign({ apex: A.id, op, src: AX.src, d, h, hit: !!hit, text: String(tpl).replace(/\{d\}/g, d).replace(/\{h\}/g, h).replace(/\{name\}/g, A.name || '') }, full ? { full: true } : {}) : null;
+    return { info, note };
+  }
+  function canApex(st) { return !!(st && st.apexMode && st.p && st.p.ace && st.p.ability && !st.p.aceUsed && st.plan && !st.over) && !apexFull(st); }
+  // 發動（一場一次、出唱片前、不佔這一手）：回聲望、看穿在這裡做完；不取 st.rng、不推進手數、不動他的牌
+  function activateApex(st) {
+    if (!canApex(st)) return [];
+    const P = st.p, A = P.ability;
+    P.aceUsed = true; P.apexOn = { n: st.n };
+    const ev = { t: 'apex', n: st.n, card: P.ace, id: A.id, name: A.name, op: A.op, timing: A.timing };
+    for (const o of apexOps(A.op, A.params)) {
+      if (o.op === 'heal') { const h = Math.max(0, Math.min(P.max - P.hp, o.params.n | 0)); P.hp += h; P.apexOn.heal = h; ev.heal = h; }
+      if (o.op === 'reveal') { const v = st.plan.bluff ? 'bluff' : 'honest'; P.apexOn.reveal = v; ev.reveal = v; }
+    }
+    ev.pHp = P.hp;
+    st.stats.apexAt = st.n;
+    return [ev];
+  }
+
   // 加成與配件（§2.1.3 outcome）。pPlay/ePlay = {attr, star, ace}。純函式，除非 commit（只會改 dustUsed）
-  function outcome(st, pPlay, ePlay, commit) {
+  //   hyp：'on'＝假設這手發動王牌（preview act.apex）；'off'＝不算王牌（結果句的「差幾點」）；沒給＝照對決現在的狀態
+  function outcome(st, pPlay, ePlay, commit, hyp) {
+    const AX = st.apexMode && hyp !== 'off' ? apexNow(st, hyp === 'on') : null, M = AX ? AX.M : null;
+    const base = AX ? outcome(st, pPlay, ePlay, false, 'off') : null;          // 先算（commit 會改 dustUsed）
     const notes = [];
     let ps = pPlay.star | 0;
     const boost = 'boost_' + pPlay.attr;
     if (!pPlay.ace && hasRelic(st, boost)) { ps += CFG.boostStar; notes.push(noteOf(st, boost)); }
-    const r = clash({ attr: pPlay.attr, star: ps, ace: !!pPlay.ace }, { attr: ePlay.attr, star: ePlay.star | 0, ace: !!ePlay.ace });
+    let es = ePlay.star | 0;
+    if (M) { if (M.star) ps += M.star; if (M.eStar) es = Math.max(0, es - M.eStar); }      // ①②
+    const r = clash({ attr: pPlay.attr, star: ps, ace: !!pPlay.ace }, { attr: ePlay.attr, star: es, ace: !!ePlay.ace }, M && M.pThr ? { pThr: M.pThr } : undefined);
+    if (M) {                                                                    // ③④
+      if (M.theirStar && r.kind === 'counter') r.toE = Math.max(r.toE, es);
+      if (M.mirrorPlus && (r.kind === 'mirrorWin' || r.kind === 'mirrorLose' || r.kind === 'tie')) {
+        const d = ps + M.mirrorPlus - es;
+        r.kind = d > 0 ? 'mirrorWin' : d < 0 ? 'mirrorLose' : 'tie'; r.toE = Math.max(0, d); r.toP = Math.max(0, -d);
+      }
+      if (M.tieWin && r.kind === 'tie') r.toE += M.tieWin;
+      if (M.loseZero && r.kind === 'mirrorLose') r.toP = 0;
+    }
     if (r.kind === 'counter' && hasRelic(st, COLOR_RELIC[pPlay.attr])) { r.toE += CFG.colorRelicBonus; notes.push(noteOf(st, COLOR_RELIC[pPlay.attr])); }
     if (r.kind === 'countered' && !st.p.dustUsed && hasRelic(st, 'dustcover')) {
       r.toP = Math.max(0, r.toP - CFG.dustcoverCut); notes.push(noteOf(st, 'dustcover'));
@@ -254,14 +414,31 @@
     // 品味／底氣（無限試煉；逐字照 harness core.cjs modded＋TAKEN.half）：配件算完才加減
     const P = st.p, E = st.e, pA = P.atk | 0, pD = P.def | 0, eA = E.atk | 0, eD = E.def | 0;
     if (r.kind === 'counter' && r.toE > 0 && pA) { r.toE += pA; notes.push(statNote(st, 'atk', pA)); }
+    let caught = false;
+    if (M) {                                                                    // ⑦⑧
+      const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
+      caught = r.kind === 'counter' && r.toE > 0 && !!hintA && pPlay.attr === hintA;   // 你出提示那色還剋中＝他唬你、被你抓到
+      if (M.counterPlus && r.kind === 'counter' && r.toE > 0) r.toE += M.counterPlus;
+      if (M.mult && r.kind === 'counter' && r.toE > 0) r.toE *= M.mult;
+      if (M.crit > 1 && caught) r.toE *= M.crit;
+      if (M.bounce && (r.kind === 'countered' || (M.bounceLose && r.kind === 'mirrorLose')) && r.toP > 0) {   // 他這手要扣你的（他品味前）一半捨去改扣他
+        const k = Math.floor(r.toP / 2); r.toE += k; r.toP -= k; r.bounced = k;
+      }
+    }
     if (r.toE > 0 && eD) { const v = half(r.toE, eD); if (v < r.toE) { notes.push(statNote(st, 'eDef', r.toE - v)); r.toE = v; } }
     if (r.toP > 0) {
       let x = r.toP;
       if (eA) { x += eA; notes.push(statNote(st, 'eAtk', eA)); }
       if (pD) { const v = half(x, pD); if (v < x) { notes.push(statNote(st, 'def', x - v)); x = v; } }
+      if (M && r.kind === 'countered') { if (M.shield) x = Math.max(1, x - M.shield); if (M.halfIn) x = Math.ceil(x / 2); }   // ⑫ 最少扣 1
       r.toP = x;
     }
+    if (M && M.leech && caught) r.heal = Math.min(Math.max(0, st.p.max - st.p.hp), Math.ceil(Math.min(r.toE, Math.max(0, st.e.hp)) / 2));   // ⑬（resolveTurn 扣完聲望後回）
     r.notes = notes; r.pStar = ps;
+    if (AX) {
+      const x = apexInfo(st, AX, r, base, pPlay, ePlay, caught, ps, es);
+      r.apex = x.info; if (x.note) notes.push(x.note);
+    }
     return r;
   }
   // 底氣最多擋一半：被扣 x、底氣 D → max(⌈x/2⌉, x−D)（variants TAKEN.half）
@@ -308,14 +485,22 @@
     }
     return d;
   }
-  // playerDef(content, {bag:[ids], ace:tier, relics:[ids], hp?, maxHp?, atk?, def?}) — a run (or anything shaped like it) → pDef
+  // playerDef(content, {bag:[ids], ace:tier, aceId?, relics:[ids], hp?, maxHp?, atk?, def?}, {apex?}) — a run (or anything shaped like it) → pDef
   //   run 帶著走的聲望（hp／maxHp）、品味（atk）、底氣（def）；沒有就 CFG.playerHp、0、0（教學重看、直接開打）
-  function playerDef(content, src) {
+  //   o.apex（頂點卡試做）：王牌＝apexAceId(src, content) 那張，多 ability（能力複本）、apexText（結果句樣板）；沒有 content.apexTrial 就照舊
+  function playerDef(content, src, o) {
     const hp = Number.isInteger(src.hp) && src.hp > 0 ? src.hp : CFG.playerHp;
     const maxHp = Number.isInteger(src.maxHp) && src.maxHp >= hp ? src.maxHp : Math.max(hp, CFG.playerHp);
-    return { hp, maxHp, atk: src.atk | 0, def: src.def | 0, noteText: (((content || {}).trial || {}).notes) || null,
-      bag: (src.bag || []).map(x => cardFrom(content, x)), ace: src.ace ? cardFrom(content, content.aces[src.ace]) : null,
+    const apex = !!(o && o.apex) && !!src.ace && !!apexCfg(content);
+    const d = { hp, maxHp, atk: src.atk | 0, def: src.def | 0, noteText: (((content || {}).trial || {}).notes) || null,
+      bag: (src.bag || []).map(x => cardFrom(content, x)), ace: src.ace ? cardFrom(content, apex ? apexAceId(src, content) : content.aces[src.ace]) : null,
       relics: (src.relics || []).map(r => relicObj(r, content)).filter(Boolean) };
+    if (apex && d.ace) {
+      d.ability = abilityOf(content, d.ace.id);
+      const A = apexCfg(content);
+      d.apexText = { notes: clone(A.notes || {}), holdNotes: clone(A.holdNotes || {}) };
+    }
+    return d;
   }
   function normScript(sc) {
     if (!sc || !Array.isArray(sc.plays)) return null;
@@ -342,6 +527,12 @@
       script: sc, plan: null, last: null, log: [],
       stats: { hands: 0, counter: 0, countered: 0, mirror: 0, tie: 0, blocked: 0, blockedYou: 0, bluffs: 0, honest: 0, caught: 0, ace: 0, relicNotes: 0 },
     };
+    // 頂點卡試做（opts.apex＋pDef.ability）：你的王牌改成一場一次的輔助卡（不比星）；沒有就照舊 7 星王牌（不加任何欄位）
+    if (opts.apex && pDef.ace && pDef.ability) {
+      st.apexMode = true; st.p.ability = clone(pDef.ability); st.p.apexOn = null;
+      st.apexText = pDef.apexText ? clone(pDef.apexText) : null;
+      st.stats.apexAt = 0; st.stats.apexHits = 0;
+    }
     const P = st.p, E = st.e;
     // 你的牌堆：script 的起手＋抽牌在前，剩下的照包包順序（有 script 不洗；教學第 5 手要抽到特價箱那幾張）；沒 script 整包洗
     const bag = (pDef.bag || []).filter(Boolean).slice();
@@ -459,12 +650,13 @@
     if (st.over) return [];
     const out = [];
     st.p.hand.forEach((c, i) => { if (c) for (const a of ATTRS) out.push({ i, attr: a }); });
-    if (st.p.ace && !st.p.aceUsed) out.push({ ace: true, attr: aceAxis(st.p.ace) });
+    if (st.p.ace && !st.p.aceUsed && !st.apexMode) out.push({ ace: true, attr: aceAxis(st.p.ace) });   // 頂點卡試做：王牌不能當唱片丟
     return out;
   }
   function isLegal(st, act) {
     if (!st || st.over || !act) return false;
-    if (act.ace) return !!st.p.ace && !st.p.aceUsed && (!act.attr || act.attr === aceAxis(st.p.ace));
+    if (act.ace) return !st.apexMode && !!st.p.ace && !st.p.aceUsed && (!act.attr || act.attr === aceAxis(st.p.ace));
+    if (act.apex && !canApex(st)) return false;                       // {i, attr, apex:true}＝這手先發動王牌
     return Number.isInteger(act.i) && act.i >= 0 && act.i < st.p.hand.length && !!st.p.hand[act.i] && ATTRS.includes(act.attr);
   }
   function actPlay(st, act) {
@@ -483,14 +675,16 @@
   function preview(st, act, eSide) {
     if (!isLegal(st, act)) return null;
     const e = ePlayOf(st, eSide); if (!e) return null;
-    const r = outcome(st, actPlay(st, act), e, false);
-    return { kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, notes: r.notes };
+    const r = outcome(st, actPlay(st, act), e, false, act.apex ? 'on' : undefined);
+    const out = { kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, notes: r.notes };
+    if (st.apexMode) { out.heal = r.heal | 0; out.apex = r.apex || null; }
+    return out;
   }
 
   function resolveTurn(st, act, opts) {
     opts = opts || {};
     if (!isLegal(st, act) || !st.plan) return [];
-    const P = st.p, E = st.e, plan = st.plan, events = [];
+    const P = st.p, E = st.e, plan = st.plan, events = act.apex ? activateApex(st) : [];   // 頂點卡試做：先發動（{t:'apex'}）再結算
     const fp = opts.forcedPlay;
     const eSide = (fp && Number.isInteger(fp.i) && E.hand[fp.i] && ATTRS.includes(fp.attr)) ? { i: fp.i, attr: fp.attr } : { i: plan.idx, attr: plan.attr };
     const pPlay = actPlay(st, act), ePlay = ePlayOf(st, eSide), eCard = ePlay.card;
@@ -500,6 +694,7 @@
       r = { kind: d.kind, toE: d.toE | 0, toP: d.toP | 0, blocked: d.blocked || null, by: d.by || null, notes: [], pStar: pPlay.star };
     } else r = outcome(st, pPlay, ePlay, true);
     E.hp -= r.toE; P.hp -= r.toP;
+    if (r.heal) P.hp = Math.min(P.max, P.hp + r.heal);                // 頂點卡試做：拆穿回血（扣完聲望後）
     const hint = { attr: plan.hint.attr, line: plan.hint.line }, bluff = ePlay.attr !== hint.attr;
     const S = st.stats;
     S.hands++; if (act.ace) S.ace++; S.relicNotes += r.notes.length;
@@ -509,6 +704,7 @@
     const sum = { n: st.n, pCard: pPlay.card, pAttr: pPlay.attr, pStar: r.pStar, pBase: pPlay.star, ace: !!act.ace,
       eCard, eAttr: ePlay.attr, eStar: ePlay.star, eAce: ePlay.ace,
       kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, hint, bluff, notes: r.notes };
+    if (st.apexMode) { sum.apex = r.apex || null; if (r.apex && r.apex.hit) S.apexHits = (S.apexHits | 0) + 1; }
     st.last = sum;
     st.log.push({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked });
     events.push(Object.assign({ t: 'clash' }, sum, { pHp: P.hp, eHp: E.hp }));
@@ -558,7 +754,7 @@
     const P = st.p, E = st.e;
     const aceLive = P.aceUsed ? null : P.ace;
     const pl = st.over ? null : st.plan;
-    return {
+    const out = {
       n: st.n, maxRounds: CFG.maxRounds, over: st.over ? { win: st.over.win, by: st.over.by } : null,
       pHp: P.hp, pMax: P.max, eHp: E.hp, eMax: E.max,
       eId: E.id, eName: E.name, eTitle: E.title, elite: E.elite, boss: E.boss,
@@ -571,11 +767,19 @@
       pAtk: P.atk | 0, pDef: P.def | 0, eAtk: E.atk | 0, eDef: E.def | 0,
       eDeck: (E.deckPub || []).map(x => Object.assign({}, x, { plus: x.plus ? Object.assign({}, x.plus) : null })),
     };
+    if (st.apexMode) {                                    // 頂點卡試做：王牌不能當唱片丟（ace＝null；aceCard 照舊），多能力欄
+      const A = P.ability, AX = pl ? apexNow(st, false) : null;
+      out.ace = null;
+      out.apex = { card: P.ace, id: A.id, name: A.name, text: A.text, timing: A.timing, op: A.op, params: clone(A.params || {}), hold: A.hold ? clone(A.hold) : null,
+        can: canApex(st), used: !!P.aceUsed, on: P.apexOn ? P.apexOn.n : null, live: AX ? AX.src : null, full: !P.aceUsed && apexFull(st) };
+      out.apexReveal = pl && P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n ? P.apexOn.reveal : null;
+    }
+    return out;
   }
 
   function bestChip(st, attr, o) {
     let best = null, bs = -1;
-    if (o && o.ace && st.p.ace && !st.p.aceUsed && aceAxis(st.p.ace) === attr) { best = { ace: true, attr }; bs = CFG.aceStar; }
+    if (o && o.ace && !st.apexMode && st.p.ace && !st.p.aceUsed && aceAxis(st.p.ace) === attr) { best = { ace: true, attr }; bs = CFG.aceStar; }
     st.p.hand.forEach((c, i) => { if (c && star(c, attr) > bs) { bs = star(c, attr); best = { i, attr }; } });
     return best;
   }
@@ -752,6 +956,7 @@
       stats: { wins: 0, beaten: 0, fights: 0, hands: 0, retries: 0, taken: [], met: [], relicsGot: [], lostAt: null,
         earned: 0, spent: 0, bought: [], sold: [], relicsBought: [], relicsSold: [] },
     };
+    if (o.aceId != null && apexList(content, ace).some(e => e && e.card === o.aceId)) run.aceId = o.aceId;   // 頂點卡試做：挑的那張（旗標關時不讀）
     run.taken = run.bag.length;                                   // 收了幾張：老闆送的也算（裁定 9）；種子補的是送的那幾格，一樣算
     const others = TIERS.filter(t => t !== ace);
     run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);   // ＝bossAceFor(seedKey, runNo, ace)（run.rng 的第一個亂數）
@@ -841,13 +1046,15 @@
     const tut = !!o.tutorial && prologue && !!content.tutorial;
     const eDef = prologue ? enemyDef(content, enemyId, { tutorial: tut }) : guestDef(run, content, enemyId, run.pos);
     const opts = { seed: (Math.floor(rng(run) * 4294967296) >>> 0) || 1, hintTable: hintTableOf(content) };
+    const apex = !!o.apex && !prologue && !!apexCfg(content);   // 頂點卡試做：序章那場照舊 7 星教學
+    if (apex) opts.apex = true;
     if (eDef.ace) opts.enemyAce = eDef.ace;
     else if (eDef.boss && run.bossAce) opts.enemyAce = cardFrom(content, content.aces[run.bossAce]);
     if (tut && content.tutorial.script) opts.script = content.tutorial.script[run.ace] || null;
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp || CFG.playerHp;
     run.hpIn = run.hp;                                        // 說情重打從這裡開始（裁定 8）
     if (!prologue) run.fought = true;                          // 跟客人開打過：之後這一趟不能再換王牌（canSwitchAce）
-    const r = startDuel(playerDef(content, run), eDef, opts);
+    const r = startDuel(playerDef(content, run, apex ? { apex: true } : undefined), eDef, opts);
     run.duel = r.duel; run.duelEnemy = enemyId;
     return { duel: r.duel, events: r.events, enemyId };
   }
@@ -885,7 +1092,8 @@
         for (const id of cards) if ((E.deck || []).some(c => (c && c.id || c) === id) && !run.drops.includes(id)) run.drops.push(id);
       } else {
         S.beaten++;
-        run.hp = Math.min(run.maxHp, Math.max(1, duel.p.hp) + T.heal);   // 打贏回 3（不超過上限）
+        const winHeal = duel.apexMode && apexCfg(content) && Number.isInteger(apexCfg(content).winHeal) ? apexCfg(content).winHeal : T.heal;   // 頂點卡試做：回 winHeal
+        run.hp = Math.min(run.maxHp, Math.max(1, duel.p.hp) + winHeal);   // 打贏回 3（不超過上限）
         heal = run.hp - Math.max(1, duel.p.hp);
         ups = gainXp(run, T, T.xp[cls] | 0);
         run.streak++; if (run.streak > run.bestStreak) run.bestStreak = run.streak;
@@ -1087,11 +1295,19 @@
     if (!run || run.over || run.pending || run.duel || run.prologue === 'pending' || run.pos !== 1 || run.fought) return false;
     return !(content && Number.isInteger(run.retryLeft) && run.retryLeft < trialCfg(content, run.tier).retry);   // 舊的 run：說情用掉了＝打過第 1 位
   }
-  function switchAce(run, content, tier) {
+  // o.aceId（頂點卡試做）：這一派名單裡的那張；同一派＝只換 run.aceId（送的不動）、換派＝照舊換送的再設 run.aceId。沒給＝照舊（換派時清掉舊的 aceId）
+  function switchAce(run, content, tier, o) {
     const fail = error => ({ ok: false, error, effects: [] });
     if (!run || !TIERS.includes(tier) || !cardOf(content, (content.aces || {})[tier])) return fail('badAce');
+    const want = o && o.aceId != null ? o.aceId : null;
+    if (want != null && !apexList(content, tier).some(e => e && e.card === want && cardOf(content, want))) return fail('badAce');
     if (!canSwitchAce(run, content)) return fail('notNow');
-    if (tier === run.ace) return fail('same');
+    if (tier === run.ace) {
+      const cur = apexAceId(run, content);
+      if (want == null || want === cur) return fail('same');
+      run.aceId = want;
+      return { ok: true, effects: [{ ace: tier, from: tier, aceId: want, fromId: cur }] };
+    }
     const from = run.ace, G = content.gifts || {};
     const old = Array.isArray(run.gifts) ? run.gifts : (G[from] || []);
     const slots = run.bag.map((id, k) => old.includes(id) ? k : -1).filter(k => k >= 0);
@@ -1100,7 +1316,9 @@
     const lost = slots.map(k => run.bag[k]);
     let j = 0; const bag = [];
     run.bag.forEach((id, k) => { if (!slots.includes(k)) bag.push(id); else if (j < next.length) bag.push(next[j++]); });   // 原位換；不夠的格子拿掉
+    const fromId = want != null || run.aceId != null ? apexAceId(run, content) : null;
     run.bag = bag; run.ace = tier; run.gifts = next.slice();
+    if (want != null) run.aceId = want; else if (run.aceId != null) delete run.aceId;
     run.taken = Math.max(0, (run.taken | 0) + next.length - lost.length);
     if (run.bossAce === tier || !TIERS.includes(run.bossAce)) run.bossAce = bossAceFor(run.seedKey, run.runNo, tier);
     const SH = run.shop;
@@ -1108,7 +1326,7 @@
       if (SH.bins) for (const k of Object.keys(SH.bins)) if (Array.isArray(SH.bins[k])) SH.bins[k] = SH.bins[k].filter(id => !bag.includes(id));
       if (Array.isArray(SH.bargain)) SH.bargain = SH.bargain.filter(id => !bag.includes(id));
     }
-    const effects = [{ ace: tier, from }];
+    const effects = [want != null ? { ace: tier, from, aceId: want, fromId } : { ace: tier, from }];
     for (const id of lost) if (!next.includes(id)) effects.push({ loseCard: id });
     for (const id of next) if (!lost.includes(id)) effects.push({ gainCard: id });
     return { ok: true, effects };
@@ -1433,6 +1651,62 @@
     },
   };
   policyFns.novice = policyFns.counterHint;
+  // ---- 頂點卡試做：旗標下（duel.apexMode）而且這手還能發動，策略自己決定要不要發動（回傳的 act 多 apex:true）；旗標關時一行都不走（亂數也不多取）----
+  //   會讀的：期望增益 ≥ APEX_TAU[第 n 手] 才發動（越後面越鬆；FRAME 附錄 A）；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N 才發動（不浪費）；
+  //     看穿＝「知道真假」的資訊價值，發動後照真假挑最好的。拆穿回血把預期回的聲望算進增益。
+  //   新手（永遠剋提示）、只出最大星、兩步公式、跟提示同色：第 1 手就發動（看穿：改剋他真正要出的那色）；亂出：每手 1/6；先知：有好處就發動
+  const APEX_TAU = [0, 2.5, 1.5, 0.6, 0.2, 0.01, 0];
+  const withApex = act => act ? Object.assign({}, act, { apex: true }) : act;
+  function apexEv(st, v, act, dist) {
+    const terminal = v.n >= v.maxRounds || (v.eHandN + v.pile) <= 1;
+    let ev = 0;
+    for (const d of dist) { if (!d.p) continue; const r = preview(st, act, d.side); if (r) ev += d.p * (valueOf(v, r, terminal) + (r.heal | 0)); }
+    return ev;
+  }
+  function apexPolicy(name, f, st, R, mem, content) {
+    const A = st.p.ability;
+    if (apexHas(A, 'heal')) {
+      const act = f(st, R, mem, content), n = apexOps(A.op, A.params).find(x => x.op === 'heal').params.n | 0;
+      return st.p.hp <= st.p.max - n ? withApex(act) : act;
+    }
+    if (name === 'random') { const RR = R || fallbackR(st), act = f(st, RR, mem, content); return RR() < 1 / 6 ? withApex(act) : act; }
+    const reveal = apexHas(A, 'reveal');
+    if (name === 'thoughtful' || name === 'oracle') {
+      const v = view(st), os = pubOpts(v);
+      if (!os.length || !v.hint) return f(st, R, mem, content);
+      let dist;
+      if (name === 'oracle') dist = [{ p: 1, side: { i: st.plan.idx, attr: st.plan.attr } }];
+      else {
+        const hq = v.honesty || {}, q = hq.qNow != null ? hq.qNow : hq.q != null ? hq.q : 1, h = v.hint.attr, est = estStars(v, content);
+        dist = [{ p: q, side: { attr: h, star: est[h], ace: false } }, { p: 1 - q, side: { attr: BEATS[h], star: est[BEATS[h]], ace: false } }];
+      }
+      const b0 = evPick(st, v, os, dist, 2);
+      let gain, act1;
+      if (reveal) {
+        if (dist.length < 2) return b0.act;
+        const dh = [{ p: 1, side: dist[0].side }], db = [{ p: 1, side: dist[1].side }];
+        const bh = evPick(st, v, os, dh, 2), bb = evPick(st, v, os, db, 2);
+        gain = dist[0].p * (apexEv(st, v, bh.act, dh) - apexEv(st, v, b0.act, dh)) + dist[1].p * (apexEv(st, v, bb.act, db) - apexEv(st, v, b0.act, db));
+        act1 = withApex(st.plan.bluff ? bb.act : bh.act);                // 發動就知道這手是真是假
+      } else {
+        const b1 = evPick(st, v, os.map(o => Object.assign({}, o, { act: withApex(o.act) })), dist, 2);
+        act1 = b1.act; gain = apexEv(st, v, act1, dist) - apexEv(st, v, b0.act, dist);
+      }
+      if (A.timing === 'duel') return act1;                              // 整場型：第 1 手就開（FRAME 量測同口徑）
+      const tau = name === 'oracle' ? 0 : APEX_TAU[Math.min(6, v.n)];
+      return gain > 0 && gain >= tau ? act1 : b0.act;
+    }
+    // 新手、只出最大星、兩步公式、跟提示同色：第 1 手就發動
+    if (reveal && name !== 'high') {
+      const a = st.plan.attr, o = bestChip(st, COUNTER_OF[a]);
+      return withApex(o && star(st.p.hand[o.i], o.attr) > 1 ? o : f(st, R, mem, content));
+    }
+    return withApex(f(st, R, mem, content));
+  }
+  for (const k of Object.keys(policyFns)) {
+    const f = policyFns[k];
+    policyFns[k] = (st, R, mem, content) => (st && st.apexMode && canApex(st)) ? apexPolicy(k, f, st, R, mem, content) : f(st, R, mem, content);
+  }
   const policies = policyFns;
 
   return { VERSION, RUN_V, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, TRIAL,
@@ -1444,5 +1718,6 @@
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
     runPolicy, shopPolicy, bargainPolicy, policies,
-    canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce };
+    canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce,
+    APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex };
 });

@@ -818,6 +818,7 @@
     aceDone: L('好，換這張。送你的也一起換了。', '新'),
     aceSame: L('那就照舊。', '新'),
     aceLater: L('想換王牌？下一趟開門前再說。', '新'),
+    aceKeep: L('好，就帶這張。', '新'),                          // 頂點卡試做（?apex=1）：同一派換另一張頂點卡（送的四張沒換）
     nightIntro: [L('客人一個一個來，打到輸為止。', '新'), L('客人跟剛才那位不一樣，有時會唬你。', '新'), L('贏了有錢，兩位客人之間可以去箱子買唱片。', '新')],
     bin: L('點封面看唱片資訊、試聽。', '新'),
     booth: L('挑一張你唱片櫃裡的，放來聽聽。', '新'),
@@ -854,7 +855,7 @@
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
-    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆',
+    aceDone: '老闆', aceSame: '老闆', aceLater: '老闆', aceKeep: '老闆',
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）',
     homeBtn: '（畫面字）', homeTitle: '（畫面字）', homeSub: '（畫面字）', homeNote: '（畫面字）', homeEmpty: '（畫面字）', homeShelf: '（畫面字）', homeDeck: '（畫面字）',
     homeConsole: '（畫面字）', homeShelfSub: '（畫面字）', homeDeckSub: '（畫面字）', homeDeckEmpty: '（畫面字）', homePut: '（畫面字）', homeOnDeck: '（畫面字）', homeStop: '（畫面字）', homeNow: '（畫面字）', homeIdle: '（畫面字）',
@@ -957,6 +958,158 @@
     best: '最遠：第 {n} 位', newRecord: '新紀錄', checkpoints: '中繼點：第 {list} 位', again: '再挑戰一趟',
     more: '還有 {n} 張，點了開唱片櫃' };                // 結算那面牆只排一排，多的收成「+N」那格（讀屏念這句）
   C.summaryTag = '新';
+
+  // ===================================================================
+  // 頂點卡純輔助卡試做（店主 11-15「三流派先各挑十～二十張賦予特殊能力試試看；純輔助卡，不是七星卡」；只在網址 ?apex=1 生效）。
+  //   規格：scratchpad v5/apextrial（FRAME.md 框架、ABILITIES.json 平衡表、CONTRACT.md 給畫面的 API）。旗標關時沒有任何程式讀這一節。
+  //   開旗標：你的王牌不比星、一場發動一次、出唱片前發動、不佔這一手（那手照樣出一張唱片）；藏家／客人帶的王牌照舊 7 星（試做待定）。序章照舊 7 星教學。
+  //   hall／pearl／heresy：每派 15 張，順序＝挑王牌面板 5×3；第 1 張＝C.aces[tier]（預設那張：舊存檔、沒挑過的都用它）。
+  //   每張 { card（cards.js id）, id（能力 id，全表唯一；存檔、統計、e2e 用）, name（≤8 字）, text（≤25 字）, timing 'hand' 這手｜'duel' 整場｜'hold' 留著,
+  //          op（engine APEX_OPS 的原語；'combo'＝params.ops 幾個原語合一）, params（範圍見 engine APEX_OPS，check-content 擋）,
+  //          hold（只有 timing 'hold'：{op, params}＝還沒發動前每手都有的小效果；發動＝放掉它、換這手的 op）,
+  //          grade／power（Simulate 棒實量：會讀的深度中位 ÷ 同派現行 7 星王牌 %，N=600、封頂 200，scratchpad sim-results.md；引擎不讀）, fact（典故出處，不上畫面） }
+  //   數字照模擬調過（11-16）：比星多算 2→3（我們與他們、夏日音牆、口是心非、讓我想一想）、拆穿回血 ×2→×1（四面回授、年度結算）、彈回只在被剋時（流亡者回敬、浪打回頭）
+  //   winHeal：旗標下打贏回幾聲望（現行 C.trial.heal 3；FRAME 方案 B／Balance 棒建議 4：純輔助卡補不回 7 星那手保住的聲望，改這一個數字就能拿掉）
+  //   頂點卡只放王牌格（engine：不進客人牌組、箱子、收音機、種子）；這 42 張新卡（C.apexTrialOnly）旗標關時畫面要當作不存在（唱片櫃分母等，見 CONTRACT.md）
+  // ===================================================================
+  C.apexTrial = {
+    winHeal: 4,
+    hall: [
+      { card: 'radiohead-ok-computer', id: 'okc-airbag', name: '安全氣囊', text: '氣囊救了你一命：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+        grade: '主力（預設）', power: 89, fact: '開場曲〈Airbag〉唱的是車禍生還（An airbag saved my life）；回聲望＝保住帶著走的聲望。預設那張：新手第 1 手就用也不浪費。' },
+      { card: 'glenn-gould-bach-the-goldberg-variations-1955', id: 'gould-variations', name: '三十段變奏', text: '一段詠嘆調變三十次：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+        grade: '主力', power: 87, fact: '《郭德堡變奏曲》＝一段詠嘆調＋30 段變奏，最後詠嘆調再回來；1955 年錄音是顧爾德的第一張唱片。一個主題撐全曲＝一個效果撐整場。' },
+      { card: 'miles-davis-kind-of-blue', id: 'kob-so-what', name: '那又怎樣', text: '比輸了又怎樣：這手比星輸了不扣。', timing: 'hand', op: 'loseZero', params: {}, hold: null,
+        grade: '特色', power: 79, fact: '開場曲〈So What〉＝那又怎樣。敢「疑」、跟他正面比，輸了不扣；「信」那條路照樣會被剋。' },
+      { card: 'the-beatles-abbey-road', id: 'abbey-carry-weight', name: '扛起重擔', text: '這場比星多算 1，被剋少扣 1。', timing: 'duel', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 1 } }, { op: 'shield', params: { n: 1 } }] }, hold: null,
+        grade: '主力', power: 94, fact: 'B 面組曲裡的〈Carry That Weight〉：比星有份量、被剋也扛得住一點（少扣最少扣 1）。' },
+      { card: 'pink-floyd-the-dark-side-of-the-moon', id: 'dsotm-us-them', name: '我們與他們', text: '正面比個高下：這手比星多算 3。', timing: 'hand', op: 'mirrorPlus', params: { n: 3 }, hold: null,
+        grade: '主力', power: 86, fact: '〈Us and Them〉＝我們與他們，正面比。留到正面對決那手才用。' },
+      { card: 'bob-marley-the-wailers-exodus', id: 'exodus-lights-low', name: '調暗燈光', text: '燈光調暗一點：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 85, fact: '專輯裡的〈Turn Your Lights Down Low〉：把他那張的光調暗一格。' },
+      { card: '大滝詠一-a-long-vacation', id: 'longvac-wall', name: '夏日音牆', text: '音牆疊得厚：這手比星多算 3。', timing: 'hand', op: 'mirrorPlus', params: { n: 3 }, hold: null,
+        grade: '主力', power: 86, fact: '大瀧詠一學 Phil Spector「音牆」的厚實編曲；封面是永井博的泳池插畫。聲音疊得厚＝正面比多兩星份量。' },
+      { card: 'michael-jackson-thriller', id: 'thriller-bestseller', name: '史上最暢銷', text: '名盤份量最重：這手你的唱片 +1 星。', timing: 'hand', op: 'star', params: { n: 1 }, hold: null,
+        grade: '明星', power: 100, fact: '金氏世界紀錄列為史上最暢銷的專輯：「名盤講份量」最直接的一張。殿堂唯一的 +1 星（模擬要盯的那張）。' },
+      { card: '鄧麗君-teresa-teng-淡淡幽情', id: 'teng-longlast', name: '但願人長久', text: '留著：被剋少扣 1；發動：這手他少 1 星。', timing: 'hold', op: 'eStar', params: { n: 1 }, hold: { op: 'shield', params: { n: 1 } },
+        grade: '特色', power: 83, fact: '整張把古典詩詞譜成歌，〈但願人長久〉唱的是蘇軾〈水調歌頭〉：留得越久越好，捨得放才換一次大的。' },
+      { card: '張雨生-口是心非', id: 'chang-two-faced', name: '口是心非', text: '他說的不算：這手比星多算 3，輸了不扣。', timing: 'hand', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 3 } }, { op: 'loseZero', params: {} }] }, hold: null,
+        grade: '主力', power: 86, fact: '同名曲〈口是心非〉：嘴上說的跟心裡想的不一樣，正好是唬人。不信提示、直接正面比；「信」那條路照樣會被剋。' },
+      { card: '陳綺貞-cheer-chen-讓我想一想', id: 'cheer-think', name: '讓我想一想', text: '留著：同色同星扣他 1；發動：這手比星多算 3。', timing: 'hold', op: 'mirrorPlus', params: { n: 3 }, hold: { op: 'tieWin', params: { n: 1 } },
+        grade: '特色', power: 88, fact: '1998 年出道專輯與同名曲〈讓我想一想〉：先想一想＝留著不用；同一個「比星」家族，小份量一直在、大份量用一次。' },
+      { card: 'daft-punk-discovery', id: 'discovery-stronger', name: '更快更強', text: '更硬更好更快更強：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+        grade: '主力', power: 87, fact: '〈Harder, Better, Faster, Stronger〉；整張專輯後來配成一整部動畫電影《Interstella 5555》（2003）：一整張＝一整場。' },
+      { card: '周杰倫-范特西', id: 'jay-nunchucks', name: '雙截棍', text: '哼哼哈兮：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 85, fact: '〈雙截棍〉的「快使用雙截棍，哼哼哈兮」：一棍敲掉他一顆星。' },
+      { card: 'kendrick-lamar-to-pimp-a-butterfly', id: 'tpab-poem', name: '唸完那首詩', text: '一路唸到最後：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+        grade: '主力', power: 87, fact: '一首詩拆成好幾段散在整張專輯，到最後一首〈Mortal Man〉才唸完整：一口氣唸到底＝整場有效。' },
+      { card: '羅大佑-之乎者也', id: 'lo-time', name: '光陰的故事', text: '光陰沖淡一顆：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 85, fact: '〈光陰的故事〉，羅大佑 1982 年首張專輯《之乎者也》：時間把他那張的光沖淡一格。Build 棒換下草東《醜奴兒》（團名有 lint-copy 擋的字，卡名會上畫面）；能力照原本那張（這手他少 1 星）。' }
+    ],
+    pearl: [
+      { card: 'barney-wilen-zodiac', id: 'zodiac-borrow', name: '黃道借星', text: '借他的星：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
+        grade: '明星（預設）', power: 103, fact: '法國次中音薩克斯風手，年輕時吹過 Miles Davis《死刑台與電梯》配樂；1966 年這張轉進自由爵士。黃道＝星座：借他那張的星來扣他。' },
+      { card: 'beyond-再見理想', id: 'beyond-selffund', name: '自掏腰包', text: '硬碰大牌：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
+        grade: '明星', power: 103, fact: '出道前自己出錢錄、以卡帶發行的第一張：沒有唱片公司撐腰，照樣跟大牌硬碰。' },
+      { card: 'harry-roesli-ken-arok', id: 'kenarok-rise', name: '草莽稱王', text: '草莽挑王：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+        grade: '主力', power: 90, fact: '印尼搖滾歌劇，取材爪哇傳說：Ken Arok 出身草莽、奪位開創新王朝。小人物也剋得動高他一截的對手。' },
+      { card: '夾子電動大樂隊-地下人', id: 'clip-underground', name: '地下人', text: '這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+        grade: '主力', power: 90, fact: '盤名就是「地下的人」：檯面下的小牌也剋得動檯面上的大牌。台灣獨立樂團。' },
+      { card: '灰野敬二-滲有無', id: 'haino-seep', name: '滲透', text: '滲過去：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+        grade: '主力', power: 90, fact: '盤名的「滲」：聲音一點一點滲過去，他靠星數築起的「剋不動」那道牆被滲穿。' },
+      { card: '楊祖珺-楊祖珺', id: 'yang-unbanned', name: '禁不掉', text: '禁不掉：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+        grade: '主力', power: 90, fact: '唱過李雙澤〈美麗島〉的民歌手；那首歌後來成了禁歌，她轉進社運：想擋也擋不住。（只講那首歌，不說這張專輯被禁）' },
+      { card: '嘉手苅林昌-嘉手苅林昌', id: 'kadekaru-shima', name: '島唄之神', text: '老神在在：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+        grade: '主力', power: 90, fact: '被稱為「島唄之神」的沖繩民謠歌手：老神在在，一把三線也壓得住比他大的對手。（原本的「留著」型字寫不清楚，改成整場剋得動）' },
+      { card: 'blue-notes-blue-notes-for-mongezi', id: 'bluenotes-return', name: '流亡者回敬', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
+        grade: '新手向', power: 66, fact: '派名就叫流亡：種族隔離時期離開南非、留在歐洲的樂團，為 1975 年底在倫敦過世的小號手 Mongezi Feza 錄的送別即興。挨了打，一半還回去。' },
+      { card: '小久保隆-get-at-the-wave', id: 'kokubo-wave', name: '浪打回頭', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
+        grade: '新手向', power: 66, fact: '日本環境音樂。盤名的浪：打過來的浪有一半退回去。' },
+      { card: 'derek-bailey-solo-guitar-volume-1', id: 'bailey-solo', name: '一把吉他', text: '一把吉他：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+        grade: '特色（看時機）', power: 69, fact: '自由即興吉他宗師的第一張獨奏（1971，他參與創辦的 Incus 發行）：一個人一把吉他，正面對上整個傳統。' },
+      { card: 'gorilla-biscuits-demo-1987', id: 'gb-demo', name: '一卷 demo', text: '這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+        grade: '特色（看時機）', power: 69, fact: '紐約硬蕊樂團出道前的一卷 demo 帶：最小的發行形式，扣的卻是大牌的份量。' },
+      { card: '高柳昌行-eclipse-侵蝕', id: 'takayanagi-erode', name: '侵蝕', text: '以彼之道：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+        grade: '特色（看時機）', power: 69, fact: '盤名「侵蝕」：拿他自己那張的份量反過來蝕掉他（以彼之道，還施彼身）。日本自由爵士吉他手。' },
+      { card: '1976-late-summer-of-1976-不插電現場實況', id: '1976-unplugged', name: '不插電', text: '拔掉插頭：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+        grade: '特色（看時機）', power: 69, fact: '拔掉插頭、音量最小的一場，照樣扣得到大牌的份量。台灣獨立樂團。' },
+      { card: 'black-renaissance-body-mind-and-spirit', id: 'blackren-heal', name: '身心靈', text: '身心靈都養回來：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+        grade: '主力', power: 97, fact: '盤名就是身、心、靈：回聲望＝養回來。Harry Whitaker 帶的一次性錄音，靈性爵士的冷門聖杯。' },
+      { card: 'alton-ellis-a-new-day', id: 'alton-newday', name: '新的一天', text: '新的一天重新站起來：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+        grade: '主力', power: 97, fact: '盤名「新的一天」＝重新站起來、回一口氣。rocksteady 教父。' }
+    ],
+    heresy: [
+      { card: 'swans-filth', id: 'filth-expose', name: '揭穿髒招', text: '唬人是髒招：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+        grade: '主力（預設）', power: 88, fact: 'Swans 第一張錄音室專輯，以極慢、極重、極大音量出名。Filth＝骯髒：他唬你是髒招，揭穿就加倍奉還。' },
+      { card: 'ornette-coleman-free-jazz-a-collective-improvisation', id: 'freejazz-double', name: '雙四重奏', text: '兩組四重奏齊上：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+        grade: '主力', power: 88, fact: '兩組四重奏各佔立體聲左右聲道，一整首集體即興佔滿兩面黑膠（封面開窗是 Jackson Pollock 的畫）。兩組＝加倍，一整首＝整場。' },
+      { card: 'captain-beefheart-his-magic-band-trout-mask-replica', id: 'trout-mask-off', name: '撕下面具', text: '面具撕下來：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+        grade: '主力', power: 88, fact: '專輯名＝鱒魚面具複製品，封面上 Beefheart 戴著一顆魚頭；Frank Zappa 製作。唬人就是戴面具，撕下來。' },
+      { card: 'discharge-hear-nothing-see-nothing-say-nothing', id: 'hnsnsn-hear-nothing', name: '什麼都不聽', text: '他說的都不聽：這場抓到他唬你，扣三倍。', timing: 'duel', op: 'crit', params: { mult: 3 }, hold: null,
+        grade: '主力', power: 89, fact: 'Discharge 第一張專輯，D-beat 這個名字就來自這個團。專輯名三個 Nothing＝三倍；「不聽」他的提示，正好就是「疑」。' },
+      { card: 'lou-reed-metal-machine-music', id: 'mmm-feedback', name: '四面回授', text: '回授：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
+        grade: '主力', power: 93, fact: '雙張黑膠四面全是吉他回授疊出來的噪音。回授＝訊號繞回自己：扣到他的，有一半繞回你身上；四面一口氣放完＝整場。' },
+      { card: 'throbbing-gristle-the-second-annual-report', id: 'tg-annual-report', name: '年度結算', text: '對帳：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
+        grade: '主力', power: 93, fact: 'TG 第一張專輯，由自家 Industrial Records 發行，「工業音樂」這個詞就從這個廠牌來。專輯名＝第二份年度報告：整場記帳，抓到唬人那筆，一半入你口袋。' },
+      { card: 'alvin-lucier-i-am-sitting-in-a-room', id: 'lucier-room', name: '一遍又一遍', text: '一遍遍錄回來：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
+        grade: '主力', power: 93, fact: '念一段話錄下來，放回房間再錄，一遍又一遍，到最後只剩房間的共振。一遍遍「回來」＝整場回聲望。' },
+      { card: 'les-rallizes-denudes-77-live', id: 'rallizes-denuded', name: '赤裸裸', text: '剝個精光：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
+        grade: '明星', power: 117, fact: '1977 年 3 月在東京立川的現場錄音，1991 年才發行；團名的 Dénudés 是法文「剝光、赤裸」。現場盤＝台下看得一清二楚。' },
+      { card: 'ryoji-ikeda', id: 'ikeda-plusminus', name: '正負號', text: '非正即負：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
+        grade: '明星', power: 117, fact: '池田亮司用正弦波、高頻脈衝做的專輯，名字就是「正或負」：看穿只給二選一的答案，真或唬。' },
+      { card: '非常階段-蔵六の奇病', id: 'hijokaidan-exit', name: '逃生梯', text: '先走逃生梯：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+        grade: '主力', power: 100, fact: '團名「非常階段」＝日文的緊急逃生梯；《蔵六の奇病》是日本噪音早期經典。打不下去先走逃生梯，保住帶著走的聲望。異端裡新手也有感的一張。' },
+      { card: 'einsturzende-neubauten-kollaps', id: 'neubauten-collapse', name: '一拆就塌', text: '謊話一拆就塌：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+        grade: '主力', power: 88, fact: '團名＝倒塌的新建築，第一張專輯 Kollaps＝崩塌，拿廢鐵、電鑽當樂器。他的謊話一拆就塌。' },
+      { card: '零與聲音解放組織-z-s-l-o', id: 'zslo-zero', name: '往零推', text: '往零推一格：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 94, fact: '林其蔚等人在 1990 年代初組成的台灣噪音先驅。團名的「零」：把他那張往零推一格。異端頂點卡裡唯一的台灣盤。' },
+      { card: 'sunn-o-black-one', id: 'sunn-low-end', name: '低頻壓頂', text: '低頻壓下來：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 94, fact: '以極大音量、拉得極長的低頻聞名，台上披連帽長袍、滿台煙霧：噪音蓋過他，壓下去一顆星。' },
+      { card: 'napalm-death-scum', id: 'scum-one-second', name: '一秒鐘', text: '一秒就結束：這手抓到他唬你，扣三倍。', timing: 'hand', op: 'crit', params: { mult: 3 }, hold: null,
+        grade: '特色', power: 72, fact: '常被當成 grindcore 的起點；裡面的〈You Suffer〉只有一秒多，金氏世界紀錄列為最短的歌。一秒＝只有這一手。' },
+      { card: 'peter-brotzmann-machine-gun', id: 'brotzmann-machine-gun', name: '機關槍', text: '留著：剋中多扣 1；發動：這手抓到他唬你扣三倍。', timing: 'hold', op: 'crit', params: { mult: 3 }, hold: { op: 'counterPlus', params: { n: 1 } },
+        grade: '特色', power: 80, fact: '1968 年的八重奏錄音，歐洲自由爵士代表作，名字就叫機關槍：平常一發一發點放（剋中多扣 1），發動就整排掃出去。' }
+    ],
+    // 畫面字（FRAME 第 7 節；{x} 由畫面代入）
+    ui: {
+      slot: '王牌', use: '發動', used: '用過', usedNote: '這場用過了', noStar: '王牌不比星。',
+      timing: { hand: '這手', duel: '整場', hold: '留著' },
+      rule: '你的王牌不比星，每場發動一次；客人的照舊 7 星。',     // 一句話規則（規則卡第 6 行；藏家、第 5 位起的客人帶的王牌照舊 7 星比星，審查 11-16）
+      intro: '「接下來，王牌不上場比星，改成一場幫你一次。」',       // 序章打完、第 1 位開打前，老闆說（然後跳挑王牌面板）
+      pickTitle: '「這派的王牌有十五張，挑一張帶著。」', pickGo: '就這張', pickSame: '就帶這張',
+      pickLine: '{name}・{timing}：{text}',                           // 挑王牌面板第二行：能力名・時機：說明
+      infoTitle: '王牌能力',                                          // 唱片資訊多一塊
+      revealHonest: '真話', revealBluff: '唬人！',                    // 看穿：提示框上蓋的章
+      fired: '王牌《{album}》：{name}',                              // 發動那一刻提示框下面跳的一行
+      healToast: '聲望 +{n}',                                         // 回聲望（發動當下）
+      rulesFoot: '你開局 {hp} 聲望（升級會加），打贏回 {heal}；客人 {normal}、傳說藏家 {boss}。',   // 規則卡頁尾第 2 行（旗標下；{heal}＝winHeal）
+      // 介面棒加的（ui.js）：tag＝標題牌與挑王牌面板角上的小字；tutNote＝序章挑王牌那行、教學那場開打的吐司（教學照舊 7 星，FRAME 1.6）
+      tag: '頂點卡試做', tutNote: '教學這場王牌照舊 7 星，之後改當輔助卡。',
+      // 審查 11-16 補的：full＝只會回聲望的王牌在聲望滿時（不能發動）能力框那行；結果框：hitBoth＝同一手兩邊都扣（彈回）、loseFree＝比星輸了但王牌免扣、
+      //   eAceNote＝他丟的是他帶的王牌（照舊 7 星比星）時結果行補的一句
+      full: '聲望是滿的，掉了再用。', hitBoth: '你 −{p}，他 −{e}', loseFree: '你輸了，但不扣。', eAceNote: '他的王牌照舊 7 星'
+    },
+    // 一次性老闆小提示（旗標下多兩則；≤20 字）
+    tips: { tip_apex: '王牌一場發動一次，不佔這一手。', tip_apexMiss: '王牌要碰到條件才有用。' },
+    // 結果行補的一句（engine outcome 的 notes：{apex, op, src, d, h, text}；{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）
+    //   combo（兩個原語合一）用 combo；none＝發動那手沒碰到條件；noneHonest＝拆穿類發動那手他沒唬你
+    notes: {
+      heal: '王牌：回 {d} 聲望',
+      star: '王牌：你 +1 星，多賺 {d}', eStar: '王牌：他少 1 星，多賺 {d}', mirrorPlus: '王牌：比星多算，多賺 {d}',
+      loseZero: '王牌：比星輸了不扣，少扣 {d}', tieWin: '王牌：同色同星，他 −{d}',
+      shield: '王牌：被剋少扣 {d}', halfIn: '王牌：被剋減半，少扣 {d}',
+      theirStar: '王牌：以小搏大，多賺 {d}', pThr: '王牌：剋得動了，多賺 {d}', bounce: '王牌：彈回去 {d}',
+      crit: '王牌：拆穿！多扣 {d}', critLeech: '王牌：拆穿！多扣 {d}，回 {h} 聲望', leech: '王牌：拆穿！回 {h} 聲望', leechFull: '王牌：拆穿！聲望是滿的，沒回到',
+      counterPlus: '王牌：剋中多扣 {d}', counterMult: '王牌：剋中加倍，多扣 {d}',
+      combo: '王牌：{name}，多賺 {d}',
+      none: '王牌：這手沒碰到，沒作用', noneHonest: '王牌：他這手沒唬你，沒作用'
+    },
+    holdNotes: { shield: '王牌（留著）：被剋少扣 {d}', tieWin: '王牌（留著）：同色同星，他 −{d}', counterPlus: '王牌（留著）：剋中多扣 {d}' }
+  };
+  C.apexTrialTag = '新';
+  // 只有試做才用到的 42 張（三派 15 張扣掉 C.aces）：旗標關時畫面當作不存在（唱片櫃「認識過 m／N」的 N、搜尋、匯出給主站的卡池…）
+  C.apexTrialOnly = [];
+  ['hall', 'pearl', 'heresy'].forEach(function (t) { C.apexTrial[t].forEach(function (x) { if (x.card !== C.aces[t]) C.apexTrialOnly.push(x.card); }); });
 
   // ===================================================================
   // 新玩家沒有 DipChar 時的名字與造型（roguelike.html RANDOM_NAMES 去掉敵人用掉的 8 個）

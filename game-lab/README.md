@@ -35,6 +35,7 @@
 | v5 人物轉身第二步（店主 11-15） | 寶可夢黃版的做法（不照抄任何現成圖）：前、後、側三向，左右互為鏡像，每方向兩格走路。`chars.js` 另寫 `buildSide`（正面那條路一行不動），67 件零件各一張側面＋側臉、側面手、每款下身站／跨步兩格、傳說藏家側面頭；側面只給站和走，其他姿勢退回正面。`shop.js` 橫走換側面（往上背面、往下正面、到站轉回 `FACE_AT`）。捏人預覽「背面」鈕換「轉一圈」。總表頁 `dev/chars-sheet.html` |
 | v5 主站互通（第六項第一期，店主 11-15） | 主站頻率光譜：「只看我的唱片櫃」開關（要登入；記住開關；沒收藏的星壓暗）、開著時 RADIO 變「收藏電台」（撥桿字「收藏」，挑最近沒播過的、播完重繞）、結果頁「已在唱片櫃 ×n」、遊戲卡池的卡多「⚔ 帶去店裡對決」（`game-lab/pool-index.json`，`tools/build-pool-index.mjs --check`；`?shop=1` 不出）。遊戲讀 `?card=<id>` → `save.bring`（跨分頁同步）→ 下一趟挑種子面板排第一、預設勾好（不用擁有、不改引擎）；唱片資訊頻率那行後面「在頻率光譜找它 ↗」（新分頁開 `/tune/?q=`） |
 | v5 聆聽室（第六項第三期第一步，店主 11-15） | 台北地圖「你家」小房子圖釘（頂欄也有「你家」鈕）→ `shops/home.json`（kind:'room'，斜俯視 292×236）：唱片架（我的收藏，分頁面板每頁 12 張，點封面看唱片資訊／放唱盤）、唱盤（試聽，放完接下一張收藏）、小控制台（推近成全螢幕頻率光譜星圖：載主站 `../dip-tune.js`（`BASE` 路徑；`TUNE_V` 要跟主站 index.html 的 `dip-tune.js?v` 同號）、收藏亮其他暗、選到你的放上唱盤、不是你的記進 `save.want` 想要清單（只記、不影響進貨）、開著時店景凍住、載入中有「控制台開機中…」與「回房間」、15 秒逾時）、門回本店。點家具先走過去才開。`tests/e2e-room.mjs` |
+| 頂點卡純輔助卡試做（`?apex=1`，店主 11-15） | **網址加 `?apex=1` 才生效**（不加＝現行 7 星王牌，當對照組；旗標不存進存檔，同一份存檔兩種都能玩）。三派各 15 張頂點卡（`C.apexTrial`；新卡 42 張在 cards.js 最後，旗標關時唱片櫃分母、主站互通都不算它們）：王牌改成**一場一次的輔助卡、不比星**——每手看過提示、出唱片前點王牌格 → 能力框（能力名・這手／整場／留著、說明、「發動」）；發動不佔這一手，照樣出一張專輯，結果句多一行「王牌：…」；看穿＝提示框蓋章「真話／唬人！」。序章照舊 7 星教學（挑王牌那行、開打吐司寫明）；序章打完、第 1 位開打前老闆說「接下來，王牌不上場比星，改成一場幫你一次。」→ 挑王牌面板（三派分頁 → 那派 15 張 5×3 → 就這張；每份存檔自動跳一次，之後點老闆換；下一趟沿用 `save.lastAceId`）；打贏回 4。藏家、客人的王牌照舊 7 星。規則、能力、介面契約在 scratchpad `v5/apextrial/`（FRAME、ABILITIES、CONTRACT）；`sim.mjs --apex`、`tests/e2e-apex.mjs` |
 
 ## 規則（規則卡六行，D §5 逐字）
 
@@ -171,7 +172,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=62` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=69` |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、無限試煉（位數曲線、升級、中繼點）、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
 | `cards.js`、`bins.js` | 卡池（316 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |
