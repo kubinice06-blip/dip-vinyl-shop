@@ -10,7 +10,7 @@
 - **e2e 工具**：`tests/e2e-lib.mjs` 加選用 `LAB_ROOT`（不開伺服器時由 Playwright 從磁碟回應）、`seedRun` 加 `ownAces`／`ownIds`；新增 `tests/e2e-unlock.mjs`。
 - **模擬**：sim `--unlock` 選用參數（每趟當新玩家）；不開時輸出跟改動前逐字相同。併入 #463／#464 後 `sim --n 1000` 門檻全過（T1 10.8%、T1b 0.8%、會讀的中位 87、到第 100 位 39.3%）。
 - **主要檔案**：`game-lab/{engine.js,ui.js,content.js,style.css,sim.mjs,index.html,README.md,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-lib,e2e-unlock,e2e-apex,e2e-econ,e2e-room,e2e.spec}.mjs`。併入後 `?v=75`。
-- **驗證**：check-content／lint-copy／check-shops／check-covers／build-pool-index --check 通過；併入後主線複跑 engine 2,345,161、tutorial 505,169 全過，e2e-unlock 6/6、e2e-duel 59/59、e2e-apex 18/18（390），e2e.spec 390 見下；fix 棒全套（apex 35、duel 84、econ 54、prologue 52、intro 25、taps 28、room 21、unlock 12、e2e.spec 四尺寸）全過。
+- **驗證**：check-content／lint-copy／check-shops／check-covers／build-pool-index --check 通過；併入後主線複跑 engine 2,345,161、tutorial 505,169 全過，e2e-unlock 6/6、e2e-duel 59/59、e2e-apex 18/18（390），e2e.spec 390 49/49；fix 棒全套（apex 35、duel 84、econ 54、prologue 52、intro 25、taps 28、room 21、unlock 12、e2e.spec 四尺寸）全過。
 
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 對決：上一手兩張專輯留在牌桌上方小列
 
