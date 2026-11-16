@@ -13,7 +13,7 @@
 - **流程**：引擎 → 介面 → 模擬 → 邏輯／體驗審查＋對抗驗證（確認 14 項）→ 全修 → 併入主線 → 交互審查（確認 5 項）→ 全修。報告 `v5/wave-a/{review-fixes,merge/MERGE,merge/FIX}.md`。
 - **模擬（併入後 smart）**：n2000 預設 17/17；新手第 1–3 位死 8.6%、深度中位 15；會讀的中位 67、到第 100 位 19.6%（併入前 40%：主因是客人偏主屬性出招，sim 的會讀策略不知道「常出」，真人看得到；`mainBias.n` 設 0 可回到約 30%）。
 - **主要檔案**：`game-lab/{engine.js,content.js,ui.js,econ.js,econ.css,duel.js,duel.css,fx.js,style.css,tutorial.js,sim.mjs,index.html,README.md,LINES-REVIEW.md,shops/dip.json,dev/econ-harness.html}`、`game-lab/tools/{check-content,check-shops,lint-copy}.mjs`、`game-lab/test/{engine,hit}.test.mjs`、`game-lab/tests/{e2e-duel,e2e-econ,e2e.spec,e2e-prologue,e2e-unlock}.mjs`。`?v=76`。
-- **驗證**：check-content／check-shops／check-covers／lint-copy；engine 2,500,898、tutorial 505,169、chars、shop、hit 全過；併入後 e2e（390、375）duel 106、econ 54、unlock 12、prologue 52、intro 25、room 21、apex、taps 與 e2e.spec 390 見 PR。**沒驗**：真 iPhone。
+- **驗證**：check-content／check-shops／check-covers／lint-copy；engine 2,500,898、tutorial 505,169、chars、shop、hit 全過；併入後 e2e（390、375）duel 106、econ 54、unlock 12、prologue 52、intro 25、room 21、apex 35、taps 28、e2e.spec 390 50/50；合併前全套 e2e 兩尺寸與 e2e.spec 四尺寸 146/146 全過。**沒驗**：真 iPhone。
 
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 流派與頂點卡靠遊戲解鎖（打倒傳說藏家掉被剋那派）
 
