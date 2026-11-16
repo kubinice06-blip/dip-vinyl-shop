@@ -2624,13 +2624,7 @@
   }
   // 你要走去的站位旁邊站著人（來客畫面、門邊等的第一位客人 f）：他走到另一個空的等候位（atdoor／wait），兩個人不疊在一起（RT-12）
   var ROOM_DX = 38, ROOM_DY = 44;
-  // 第一位客人在店裡等：平常站門邊（atdoor）；你站在門邊附近（剛翻完特價箱、FEATURE）就站試聽桌前（wait），關抽屜回來也不疊在一起（RT-12）
-  function waitSpot() {
-    var p = stg('pos', 'p'), a = stg('spot', 'atdoor'), w = stg('spot', 'wait');
-    if (!p || p.hidden || !a || !w) return 'atdoor';
-    var near = function (q) { return q && Math.abs(q[0] - a[0]) < ROOM_DX && Math.abs(q[1] - a[1]) < ROOM_DY; };
-    return (near([p.x, p.y]) || near(stg('spot', UI.lastSpot || 'browse'))) ? 'wait' : 'atdoor';   // 你現在站的、或正要走回去的位置
-  }
+  // （第 A 波 1 之前：第一位客人站門邊 atdoor／試聽桌前 wait 等你＝waitSpot；現在客人一律走到對戰台 duelE 等，見 guestToTable）
   function makeRoom(to) {
     if (UI.screen !== 'night' || !to || !stg('has', 'f')) return;
     if (save.run && UI.atTable === tableKey(save.run)) return;   // 在對戰台等你的客人（第 A 波 1）：那是他的位置，不讓開
@@ -2837,13 +2831,6 @@
       '<button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p>' + note + '<div class="lb-pick">' + tiles + '</div>';
     return floatSheet(html, 'bag tall');
-  }
-  // 包包面板賣回之後：來客的包包條（錢、包包張數）跟著變，不重畫整個來客畫面
-  function syncBagline(r) {
-    var bl = qs('.lb-bagline', app()); if (!bl || !r) return;
-    var m = qs('.money', bl), b = qs('[data-a=bag]', bl);
-    if (m) m.innerHTML = moneyHTML(r.money);
-    if (b) b.innerHTML = bagBtnHTML(r.bag.length);
   }
   function relicSheet(r) {
     var html = '<div class="hd"><h3>發燒配件</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +

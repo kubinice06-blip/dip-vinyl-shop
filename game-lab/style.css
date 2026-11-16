@@ -844,3 +844,4 @@ body.lb-tune-open{overflow:hidden;}
 /* 4 差一點摘要（結算）：走到那一列後面的小籤、輸給誰那行後面的半句 */
 .lb-sum li .nr.near{background:#fff;color:var(--gold-ink,#8a6508);box-shadow:inset 0 0 0 1px var(--gold);}
 .lb-endhero .sub .close{color:var(--ink);font-weight:700;}
+.lb-night .nc.done .ok{bottom:auto;top:0;}   /* 打完的勾移到右上：右下被稱號名牌壓住（第 A 波 3） */

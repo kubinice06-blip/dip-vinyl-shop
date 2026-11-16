@@ -153,7 +153,7 @@
 
   // ------------------------------------------------------------------ run 的狀態
   function liveRun() { var r = null; try { r = CFG.run ? CFG.run() : null; } catch (_) {} return r && !r.over ? r : null; }
-  // 老闆送的（王牌那組四張＋王牌）不能賣回（FIXLIST 11 追加；engine.isGift，沒有就看 C.gifts[run.ace]）
+  // 老闆送的（王牌那組四張；engine.isGift，沒有就看 C.gifts[run.ace]）：賣給老闆時交還（$0），小籤「老闆送的」
   function isGift(r, id) {
     if (!r || !id) return false;
     try { if (E().isGift) return !!E().isGift(r, C(), id); } catch (_) {}

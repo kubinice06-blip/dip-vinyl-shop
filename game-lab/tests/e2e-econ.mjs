@@ -432,7 +432,7 @@ async function runSize(browser, w, h) {
         return ids.map(id => ({ id, sv: q(id).reclaim ? C.shopUi.reclaimTag : '+$' + E.moneyText(q(id).earn), gift: E.isGift(r, C, id) })); });
       const okTabs = dr0.kind === 'relic' && dr0.tab === 'relic' && t0.tabs.join() === '配件*,賣給老闆' && dr1.tab === 'sell' && t1.tabs.join() === '配件,賣給老闆*' &&
         JSON.stringify(t1.tiles.map(t => [t.id, t.sv])) === JSON.stringify(want.map(t => [t.id, t.sv])) && t1.tiles.every(t => !t.dis) && t1.tiles.filter(t => t.gift).length === want.filter(t => t.gift).length && want.some(t => t.gift) &&
-        !t1.warn && t1.goDis && bm.grid && dr1.scroll === (bm.grid.sh > bm.grid.ch + 4) && (dr1.scroll || bm.grid.sh <= bm.grid.ch + 1) && bvis.ok;   // 放得下（高螢幕）就不捲
+        !t1.warn && t1.goDis && (bm.grid ? dr1.scroll && bm.grid.sh > bm.grid.ch + 4 : !dr1.scroll && bm.scrollH <= bm.clientH + 1) && bvis.ok;   // 放得下（高螢幕）就不捲（measure 只在 .ec-scroll 時量格子）
       // (c) 捲到底點最後一張能換錢的：格子不跳回頂端、那張看得到、選到 → 底下問「賣掉《…》？」→「賣給老闆 +$n」→ 錢 +、包包 −1、吐司
       const pick = want.filter(t => !t.gift)[want.filter(t => !t.gift).length - 1];
       const gstate = id => page.evaluate(id => { const g = document.querySelector('.ec-drawer .ec-grid'), t = document.querySelector(`.ec-drawer .ec-cs[data-cid="${id}"]`); if (!g || !t) return null; const a = g.getBoundingClientRect(), q = t.getBoundingClientRect();
