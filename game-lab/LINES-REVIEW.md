@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 546（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 556（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -880,19 +880,34 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Pharoah Sanders《Tauhid》 | 「前面很安靜。後面不要被嚇到。」 | 本規格新寫 | `pitch#pharoah-sanders-tauhid` |
 | Magma《Mëkanïk Dëstruktïw Kömmandöh》 | 「法國的鼓手自創了一種語言，整張都用它來唱。」 | 本規格新寫 | `pitch#magma-mekanik-destruktiw-kommandoh` |
 
-## 推薦語・特價箱
+## 推薦語・舊特價箱（2026-11-16 換下，只剩舊存檔）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | Blur《The Great Escape》 | 「那年單曲贏了 Oasis，專輯輸了。」 | 本規格新寫 | `pitch#blur-the-great-escape` |
-| Oasis《Dig Out Your Soul》 | 「他們最後一張。兄弟倆隔年就拆夥了。」 | 本規格新寫 | `pitch#oasis-dig-out-your-soul` |
-| David Bowie《Never Let Me Down》 | 「連鮑伊都有這種時候。」 | 本規格新寫 | `pitch#david-bowie-never-let-me-down` |
 | The Velvet Underground《Squeeze》 | 「掛著 Velvet 的名字，裡面一個創團的人都沒有。」 | 本規格新寫 | `pitch#the-velvet-underground-squeeze` |
 | Stevie Wonder《Eivets Rednow》 | 「名字倒過來寫就是他。那年他才十八歲。」 | 本規格新寫 | `pitch#stevie-wonder-eivets-rednow` |
 | The Kinks《Preservation Act 1》 | 「搖滾歌劇的第一幕。第二幕更長。」 | 本規格新寫 | `pitch#the-kinks-preservation-act-1` |
 | Metallica《Reload》 | 「上一張的剩菜，隔年再端出來一次。」 | 本規格新寫 | `pitch#metallica-reload` |
 | Weezer《Van Weezer》 | 「學八〇年代的長髮金屬，學得很認真。」 | 本規格新寫 | `pitch#weezer-van-weezer` |
 | Ramones《Halfway to Sanity》 | 「第十張了，還是那三個和弦。」 | 本規格新寫 | `pitch#ramones-halfway-to-sanity` |
+
+## 推薦語・特價箱
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Oasis《Dig Out Your Soul》 | 「他們最後一張。兄弟倆隔年就拆夥了。」 | 本規格新寫 | `pitch#oasis-dig-out-your-soul` |
+| David Bowie《Never Let Me Down》 | 「連鮑伊都有這種時候。」 | 本規格新寫 | `pitch#david-bowie-never-let-me-down` |
+| Lady Gaga《ARTPOP》 | 「發片前說要掀起一場藝術革命。賣得比上一張少了一大截。」 | 本規格新寫 | `pitch#lady-gaga-artpop` |
+| Arcade Fire《Everything Now》 | 「整張在嘲笑消費主義，結果被樂評嘲笑得更兇。」 | 本規格新寫 | `pitch#arcade-fire-everything-now` |
+| The Strokes《Angles》 | 「主唱很少進錄音室，人聲錄好再用 email 寄給團員。」 | 本規格新寫 | `pitch#the-strokes-angles` |
+| Queensrÿche《Take Cover》 | 「一整張都在唱別人的歌。」 | 本規格新寫 | `pitch#queensryche-take-cover` |
+| Megadeth《Risk》 | 「鞭擊金屬改走流行搖滾，專輯名就叫《冒險》。」 | 本規格新寫 | `pitch#megadeth-risk` |
+| KISS《Hot in the Shade》 | 「卸了妝的那幾年。一張塞了十五首。」 | 本規格新寫 | `pitch#kiss-hot-in-the-shade` |
+| Limp Bizkit《Gold Cobra》 | 「吉他手回團，隔了八年的新專輯。聽起來還停在 2000 年。」 | 本規格新寫 | `pitch#limp-bizkit-gold-cobra` |
+| Eminem《Revival》 | 「被罵得太兇，他隔年突襲發了一張專輯罵回去。」 | 本規格新寫 | `pitch#eminem-revival` |
+| Daft Punk《Human After All》 | 「據說六個禮拜就錄完。這些歌到了巡演現場才真正活過來。」 | 本規格新寫 | `pitch#daft-punk-human-after-all` |
+| The Weeknd《Kiss Land》 | 「三張混音帶之後的第一張正式專輯。他說靈感來自恐怖片。」 | 本規格新寫 | `pitch#the-weeknd-kiss-land` |
 
 ## 推薦語・客人的唱片（二手店老闆）
 

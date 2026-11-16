@@ -41,7 +41,7 @@
   }
 
   // ===================================================================
-  // 王牌、老闆送的四張（§4.2）、特價箱（§4.3）。每一晚包包開局＝老闆四張；特價箱挑三張後 7 張；最多 8 張（不含王牌）
+  // 王牌、老闆送的四張（§4.2）、特價箱（§4.3）。每一趟包包開局＝老闆四張（第二趟起種子佔掉幾格）；特價箱挑三張後 7 張；包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity），一趟結束才重置
   // ===================================================================
   C.aces = { hall: 'radiohead-ok-computer', pearl: 'barney-wilen-zodiac', heresy: 'swans-filth' };
   C.aceTitle = { hall: '殿堂', pearl: '流亡', heresy: '異端' };          // 王牌名（附錄 D）
@@ -54,11 +54,17 @@
     pearl:  ['charles-brackeen-rhythm-x', 'bark-psychosis-hex', '黃小楨-賞味期限', '傷心欲絕-我愛您'],
     heresy: ['the-velvet-underground-white-light-white-heat', 'melt-banana-speak-squeak-creak', 'pharoah-sanders-tauhid', 'magma-mekanik-destruktiw-kommandoh']
   };
-  // 特價箱：9 張（峰值 ≤3、冷門 ≤3、topAttr 經／冷／硬各 3）；每晚擺 6 張＝每色 2 張（engine newRun）
+  // 特價箱（店主 11-16：「三張特價，星星最高三，加起來不高於五」）：12 張，每張最高星 ≤3、三軸加起來 ≤5（check-content 驗）。
+  //   「色」＝engine.bargainLane：峰值那軸，並列時取後面那軸（硬→冷→經）。全卡池符合的 402 張照 topAttr 分只有冷 1、硬 3（經 398），
+  //   所以冷、硬兩條用並列的牌補（經 2＝冷 2 的 2/2/1 算冷、經 2＝硬 2 的 2/1/2 算硬；特價箱價籤兩軸都亮）。經／冷／硬各 4 張，
+  //   每條第一張是 topAttr 純色（重看教學、對決試玩照 topAttr 找三色）。每輪擺 6 張＝每色 2 張（engine restock：各色洗牌取前兩張、池子扣掉包包裡的）；冷門都 ≤3（教學第 5 手剋不動）
+  //   retired＝換下來的舊特價箱（v4 那 9 張扣掉留下的 2 張）：舊存檔的包包、這一輪的特價箱可能還有 → 照特價算價（priceOf／賣回半價）、不上架、收音機不抽
   C.bargain = {
     label: '特價',
-    pool: ['blur-the-great-escape', 'oasis-dig-out-your-soul', 'david-bowie-never-let-me-down',
-      'the-velvet-underground-squeeze', 'stevie-wonder-eivets-rednow', 'the-kinks-preservation-act-1',
+    pool: ['oasis-dig-out-your-soul', 'lady-gaga-artpop', 'arcade-fire-everything-now', 'the-strokes-angles',
+      'queensryche-take-cover', 'david-bowie-never-let-me-down', 'megadeth-risk', 'kiss-hot-in-the-shade',
+      'limp-bizkit-gold-cobra', 'eminem-revival', 'daft-punk-human-after-all', 'the-weeknd-kiss-land'],
+    retired: ['blur-the-great-escape', 'the-velvet-underground-squeeze', 'stevie-wonder-eivets-rednow', 'the-kinks-preservation-act-1',
       'metallica-reload', 'weezer-van-weezer', 'ramones-halfway-to-sanity']
   };
   C.bargainTag = '新';
@@ -506,13 +512,12 @@
   // ===================================================================
   // 台詞（舞台泡泡）。lines[誰][鍵]＝字串或字串陣列；lineTags 同形狀，記每句的來源標記。
   //   line 口頭禪（開場泡泡）、intro 進門那句、lose 你贏時（他說）、win 你輸時（他說）；v4 拿掉 switch（急了／翻面）與 man.jabBubble
-  //   owner：retry 老闆說情（輸了重打同一位）、bagFull 包包滿 8 張、relicFull 配件滿 3 件
+  //   owner：retry 老闆說情（輸了重打同一位）、relicFull 配件滿 3 件（包包不限張數之後沒有「包包滿」那句，店主 11-16）
   // ===================================================================
   var RAW_LINES = {
     owner: {
       retry: L('……再一場。', '新'),                 // 序章男子輸了（免費、不用選）
       retryAsk: L('……要不要再一場？', '新'),         // 客人輸了：接著是「再一場（這一輪只有一次）／到這裡就好」兩顆（C.trial.ui.retryMenu；COPY-07：不要連說三次「再一場」）
-      bagFull: L('包包滿了。先拿一張出來。', '新'),
       relicFull: L('配件最多帶三件。先放一件回去。', '新')
     },
     // 序章男子：只有原版的句子（D §2：試做版自己加的口頭禪、贏你那句拿掉；COPY-01）。lose＝E2／E3 原句（收尾對白講，盤面不再冒泡泡）
@@ -868,9 +873,7 @@
     binTitle: '{label}',
     buy: '買 ${n}',
     noMoney: '錢不夠',
-    bagFull: '包包滿了：先賣一張，半價 ${n}',
-    sellPick: '賣這張',
-    sellPickN: '賣這 {k} 張',        // 要賣兩張以上（特價箱一次買三張、包包放不下；RT-10）
+    sellPick: '賣這張',              // 錢不夠、賣一張就夠：先賣子面板的鈕（包包不限張數之後只剩這條是「先賣」，店主 11-16）
     giftTag: '老闆送的',             // 先賣子面板：老闆送的（王牌那組四張；engine.isGift）不能賣，標這三個字、不能選（FIXLIST 11 追加）
     seedTag: '櫃裡帶來',             // 從唱片櫃帶來的種子（engine.isSeed）：先賣子面板、包包條的小籤（店主 11-13 §0：不能賣回換錢）
     seedNoSell: '從唱片櫃帶來的不能賣',   // 點了種子那張：說明（SPEC 從唱片櫃挑牌開局 §1 裁定 8）
@@ -888,10 +891,9 @@
     close: '關閉',
     earned: '+${n}',
     // B3 econ.js 用到的字（notes-B3 請求 7；econ.js 有同字後備）
-    bag: '包包 {n}/{max}',
+    bag: '包包 {n} 張',                 // 包包不限張數（店主 11-16）：只寫張數，不寫上限（抽屜標題、來客包包條、領獎面板）
     binEmpty: '這一箱賣完了，下一輪再補。',
     owned: '包包裡有了',
-    bagFullN: '包包放不下：先賣 {k} 張，半價 ${n}',
     moneyShort: '錢不夠：先賣一張，半價 ${n}',
     sellFirst: '先賣一張',
     relicSell: '賣這件',
@@ -903,7 +905,14 @@
     bargainFree: '這次免費',                                       // 序章／開局挑三張：每張的特價劃掉
     prev: '上一張',
     next: '下一張',
-    infoAria: '唱片資訊、試聽'
+    infoAria: '唱片資訊、試聽',
+    // 包包面板（來客畫面點「包包」）：兩位客人之間自己賣回（engine.choose sell；店主 11-16 包包不限張數之後，玩家自己瘦身的地方）
+    bagSellNote: '兩位客人之間可以賣回，半價。',
+    bagSellBtn: '賣 ${n}',                  // 每張底下的鈕（{n}＝engine.sellValue）
+    bagSellAsk: '賣掉《{album}》？',         // 點了「賣」：底下那條先問一次
+    bagSellGo: '賣掉 +${n}',
+    bagSellNo: '算了',
+    bagSellMin: '包包至少留 {n} 張，手牌才補得滿。'   // {n}＝engine.CFG.handSize（engine 'bagMin'）
   };
   C.shopUiTag = '新';
 
@@ -939,9 +948,8 @@
       shelfOwnEmpty: '還沒有收藏。挑過的王牌那組、每一趟帶走的，都會收進來。',
       shelfKnown: '認識過 {n}／{total}',
       shelfKnownSub: '客人丟的、你收的、老闆送的都算。',            // 360／375 寬也排一行（審查 #9）
-      // 「認識」的說法（唱片櫃＝「我的收藏」＋「認識過」兩段；沒收的、拿出來的只是認識，不能帶來開局，審查 #5）
+      // 「認識」的說法（唱片櫃＝「我的收藏」＋「認識過」兩段；沒收的只是認識，不能帶來開局，審查 #5）。包包不限張數之後沒有「挑一張拿出來」（店主 11-16）
       rewardNote: '點封面看唱片資訊、試聽。沒收的也都算認識了。',
-      bagOutMsg: '要放進來的是《{album}》。挑一張拿出來，它也算認識了。',
       stakeSkipSub: '也算認識了',
       storeTag: '店內取得',
       // 主站頻率光譜「帶去店裡對決」帶來的那張（v5 第六項第一期）：下一趟開局挑種子排第一、預設勾好；不用擁有，用一次就沒了（不進戰鬥規則、不動平衡）

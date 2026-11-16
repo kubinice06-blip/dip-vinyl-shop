@@ -245,7 +245,7 @@ for (const t of TIER_KEYS) ((C.tonightLines || {})[t] || []).forEach((x, k) => {
 
 // 舞台泡泡（lines ↔ lineTags 同形狀）
 const LINE_KEY = { line: '口頭禪（開場泡泡）', intro: '進門那句', switch: '急了／翻面（泡泡）', lose: '你贏了（他說）', win: '你輸了（他說）',
-  jabBubble: '回嘴選了那張（第一手）', stampSub: '出場蓋章的副標', retry: '老闆說情', bagFull: '包包滿了', relicFull: '發燒配件滿了' };
+  jabBubble: '回嘴選了那張（第一手）', stampSub: '出場蓋章的副標', retry: '老闆說情', relicFull: '發燒配件滿了' };
 const WHO = { owner: '老闆', player: '你' };
 for (const [who, lines] of Object.entries(C.lines || {})) {
   const tags = (C.lineTags || {})[who];
@@ -275,7 +275,7 @@ for (const id of Object.keys(C.enemies || {})) {
   const KEYS = [].concat(...Object.values(C.hintKeywords || {}), ...Object.values(C.hints || {}).map(a => a.map(h => h.key)));
   for (const k of ['line', 'intro']) [].concat(l[k] || []).forEach(t => { const hit = KEYS.find(w => w && String(t).includes(w)); if (hit) err('lines.' + id + '.' + k, '用到提示關鍵字「' + hit + '」：' + t); });
 }
-for (const k of ['retry', 'bagFull', 'relicFull']) if (!((C.lines || {}).owner || {})[k]) err('lines.owner', '缺少 ' + k);
+for (const k of ['retry', 'relicFull']) if (!((C.lines || {}).owner || {})[k]) err('lines.owner', '缺少 ' + k);   // 包包不限張數（店主 11-16）：沒有 bagFull 那句了
 
 // 誠實度不上畫面（FIXLIST 6，店主 2026-11-08 06:05）：C.honesty 只留機率 q；客人只有名字（身分），沒有副標
 for (const [k, h] of Object.entries(C.honesty || {})) if (h && 'zh' in h) err('honesty.' + k + '.zh', '誠實度不上畫面（FIXLIST 6）：拿掉 zh');

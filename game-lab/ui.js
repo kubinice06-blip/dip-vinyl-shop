@@ -1541,26 +1541,6 @@
       autoAct(function () { var id = opts.autoId; var b = id ? qs('[data-r="' + id + '"]', s) : qs('[data-r]', s); if (b) b.click(); });
     });
   }
-  // 包包滿了：先拿一張出來（點卡片＝拿出來；封面＝唱片資訊；「算了」取消）
-  function dropPanel(incomingId, autoId) {
-    return new Promise(function (res) {
-      var r = save.run;
-      var html = '<div class="hd"><h3>' + esc((C.lines.owner && C.lines.owner.bagFull) || '包包滿了。先拿一張出來。') + '</h3></div>' +
-        '<p class="msg">' + esc(SU('bagOutMsg', { album: (card(incomingId) || {}).album || '' })) + '</p>' +     // 拿出來的只是「認識」（審查 #5）
-        '<div class="lb-pick">' + r.bag.map(function (id) { return tileHTML(card(id), { text: false, pick: '拿出來' }); }).join('') + '</div>' +
-        '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">算了，不放了</button></div>';
-      var s = sheet(html, 'drop');
-      roomForSheet(s);                       // 兩排八張＋「算了」：舞台讓出放得下的高，不用在面板裡捲（V02）
-      var done = false;
-      s.addEventListener('click', function (e) {
-        if (done) return;
-        var t = e.target.closest && e.target.closest('.lb-ct');
-        if (t) { done = true; sfx('tick'); closeSheet(s); res(t.getAttribute('data-cid')); return; }
-        if (e.target.closest && e.target.closest('[data-a=cancel]')) { done = true; closeSheet(s); res(null); }
-      });
-      autoAct(function () { var b = autoId ? qs('.lb-ct[data-cid="' + autoId + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); });
-    });
-  }
 
   // ======================================================================= 吐司（z 40；唱片資訊開著時排隊）
   var toastQ = [];
@@ -1612,12 +1592,10 @@
     return r.got;
   }
   function gotCard(r, id) { if (!r || !id) return; var g = runGot(r); if (g.indexOf(id) < 0) g.push(id); }
-  // 收一張進包包：滿 8 張先挑一張拿出來（拿出來的留在唱片櫃）
-  function takeCard(cardId, autoDrop) {
-    var r = save.run;
-    if (r.bag.length < E.CFG.bagMax) return Promise.resolve(doChoose({ type: 'take', cardId: cardId }));
-    // 老闆那句就是面板標題；不再另外在舞台上冒同一句（泡泡貼在舞台右緣會被切掉）
-    return dropPanel(cardId, autoDrop).then(function (dropId) { return dropId ? doChoose({ type: 'take', cardId: cardId, dropId: dropId }) : null; });
+  // 收一張進包包：包包不限張數（店主 11-16「手牌不要只限八張，可以無限多直到結束才重置」）——不用先拿一張出來，直接收（engine take 不給 dropId）
+  function takeCard(cardId) {
+    var res = doChoose({ type: 'take', cardId: cardId });
+    return Promise.resolve(res && res.ok ? res : null);
   }
   function takeRelic(relicId, autoDrop) {
     var r = save.run;
@@ -2350,7 +2328,7 @@
           return dlg.aside(dropBeats).then(function () {
             // D §2：撿起面板沒有任何敘述標題，只有封面、藝人《專輯》、兩顆鈕（「不用了」底下：沒收的也算認識，審查 #5）
             return cardPanel(c, { title: null, isNew: true, buttons: [
-              { label: '收進包包', sub: '包包 ' + save.run.bag.length + '/' + E.CFG.bagMax, value: 'take', pri: true },
+              { label: '收進包包', sub: bagText(save.run.bag.length), value: 'take', pri: true },
               { label: '不用了', sub: SU('stakeSkipSub'), value: 'skip' }] });
           }).then(function (v) {
             shelfAdd(c.id);
@@ -2451,10 +2429,10 @@
     var dropping = p.type === 'reward' && cards.length && !p.cardDone;      // 掉落旁白：他早一點轉身走，地上那張盤才看得到
     later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, dropping ? 900 : 1700);
     var busy = false;
-    // 面板（包包滿／配件滿按「算了」回來時重畫這一張：sheet() 開新面板會把它拿掉；RT-1）
+    // 面板（配件滿按「算了」回來時重畫這一張：sheet() 開新面板會把它拿掉；RT-1）
     function showSheet() {
       var rr = save.run;
-      var bagLine = '包包 ' + rr.bag.length + '/' + E.CFG.bagMax;
+      var bagLine = bagText(rr.bag.length);           // 包包不限張數（店主 11-16）：只寫張數
       // 有唱片又有配件：配件放進底下那條、跟「都不要」並排，矮螢幕也不用捲才看得到（RT-3）
       var footRelic = cards.length && relics.length;
       var html = '<div class="hd"><h3>' + (cards.length ? '他丟過的唱片：挑一張收進包包' : '他沒有能收的唱片') + '</h3><span class="sub">' + esc(bagLine) + '</span></div>' +
@@ -2481,7 +2459,7 @@
       });
       autoAct(function () {
         var ch = E.runPolicy(save.run, C) || { type: 'skip' };
-        if (ch.type === 'take') { busy = true; takeCard(ch.cardId, ch.dropId).then(finish); }
+        if (ch.type === 'take') { busy = true; takeCard(ch.cardId).then(finish); }
         else if (ch.type === 'relic') { busy = true; takeRelic(ch.relicId, ch.dropRelicId).then(finish); }
         else { busy = true; finish(doChoose({ type: 'skip' })); }
       }, 300);
@@ -2491,7 +2469,7 @@
       clearDrop();                                                          // 地上那張（掉落旁白）收掉
       if (res && res.effects) toast(effectsText(res.effects), 'keep');      // 接著 300 ms 換畫面：留到時間到（審查 #0）
       var rr = save.run;
-      if (rr.pending && rr.pending.type === 'reward') { busy = false; if (UI.screen === 'reward') showSheet(); return; }   // 還沒選完（包包滿了按「算了」）：挑唱片的面板放回來
+      if (rr.pending && rr.pending.type === 'reward') { busy = false; if (UI.screen === 'reward') showSheet(); return; }   // 還沒選完（配件滿了按「算了」）：挑唱片的面板放回來
       if (rr.pending && rr.pending.type === 'level') return later(levelNext, 300);
       if (rr.over) { recordRun(rr); return later(function () { go('end'); }, 300); }
       later(function () { go('night'); }, 300);
@@ -2558,6 +2536,10 @@
   // ======================================================================= 來客（SPEC-v3 §9：店內底部一條，五顆頭像，打完的變黑，下一位金框；v4：錢、熟客出現、第一位客人已在店裡；
   //   v5 無限試煉：這一輪 5 位（頭像下寫第 n 位，第 5 位紅框傳說藏家；打完藏家整排換成下一輪的新面孔＝滾動）、離下個中繼點還有幾位、說情剩幾次、聲望那顆）
   function moneyHTML(n) { var X = econ(); if (X && typeof X.moneyHTML === 'function') try { return X.moneyHTML(n); } catch (e) { console.error(e); } return fill((C.shopUi && C.shopUi.money) || '${n}', { n: E.moneyText(n | 0) }); }
+  // 包包張數（店主 11-16 包包不限張數：只寫張數，不寫上限）：「包包 9 張」（C.shopUi.bag）；包包條那顆數字粗體
+  function SHU(k, o) { return fill((C.shopUi && C.shopUi[k]) || '', o); }
+  function bagText(n) { return fill((C.shopUi && C.shopUi.bag) || '包包 {n} 張', { n: n }); }
+  function bagBtnHTML(n) { var t = (C.shopUi && C.shopUi.bag) || '包包 {n} 張', k = t.indexOf('{n}'); return k < 0 ? esc(fill(t, { n: n })) : esc(t.slice(0, k)) + '<b>' + n + '</b>' + esc(t.slice(k + 3)); }
   // 人已經在店裡、看得到：走過去（不瞬移）；不在店裡（藏著、在門外）才直接擺上去
   function settle(id, spot, spr) {
     var at = stg('pos', id), sp = stg('spot', spot);
@@ -2618,7 +2600,7 @@
       '<div class="nrow" data-tut="night">' + row + '</div>' +
       '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">' + esc(TU('next', { n: r.pos, name: nen.name || '' })) + '</button></div>' +
       '<div class="lb-bagline"><button type="button" class="me" data-a="me" data-tut="hp">' + hpChipHTML(r) + '</button>' +
-      '<span class="money" data-tut="money">' + moneyHTML(r.money) + '</span><button type="button" class="bag" data-a="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
+      '<span class="money" data-tut="money">' + moneyHTML(r.money) + '</span><button type="button" class="bag" data-a="bag">' + bagBtnHTML(r.bag.length) + '</button>' +
       // 發燒配件：有配件只放圖示（一件才加名字，放不下就省略號）；沒有才寫「發燒配件（還沒有）」（審查 #10：聲望那顆加進來以後，窄螢幕放不下）
       '<button type="button" class="rl" data-a="relics" aria-label="發燒配件">' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span class="rn">' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span class="k">發燒配件</span><span class="rn">（還沒有）</span>') + '</button></div>';
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
@@ -2715,13 +2697,60 @@
     stgP('walk', 'f', ['in']).then(function () { if (intro) stageSay('f', [].concat(intro)[0], null, 1500); });
     later(function () { if (UI.screen === 'night') beginFight({ enter: true }); }, UI.auto ? 300 : 1100);
   }
+  // 包包（來客畫面包包條點開）：王牌＋包包每一張。包包不限張數（店主 11-16「可以無限多直到結束才重置」）：張數多了面板自己捲（標題列黏在上面），
+  //   375×548 也不爆版。兩位客人之間（engine.canShop）每張底下「賣 $n」（半價，engine.sellValue）：點了底下那條先問「賣掉《…》？」→「賣掉 +$n」
+  //   才賣（engine.choose sell）——包包變長後玩家自己瘦身的地方。老闆送的、櫃裡帶來的標小籤、不給賣；包包剩 5 張（手牌補得滿，engine 'bagMin'）
+  //   鈕停用、寫原因。賣完：吐司「《…》賣掉，+$n」、包包條的錢與張數跟著變
   function bagSheet(r) {
-    var html = '<div class="hd"><h3>包包 ' + r.bag.length + '/' + E.CFG.bagMax + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
-      '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p><div class="lb-pick">' + tileHTML(card(aceIdOf(r)), { text: false }) + r.bag.map(function (id) {
-        var sd = E.isSeed(r, C, id);                // 從唱片櫃帶來的（種子）：小籤「櫃裡帶來」（不能賣回）
-        return tileHTML(card(id), { text: false, store: isStore(id), cls: sd ? 'seed' : '', extra: sd ? '<span class="sdtag">' + esc((C.shopUi && C.shopUi.seedTag) || '') + '</span>' : '' });
-      }).join('') + '</div>';
-    floatSheet(html, 'bag tall');
+    var pick = null, floor = (E.CFG && E.CFG.handSize) || 5;
+    var tag = function (cls, t) { return '<span class="sdtag' + (cls ? ' ' + cls : '') + '">' + esc(t) + '</span>'; };
+    var body = function () {
+      var shop = E.canShop(r), atMin = r.bag.length <= floor;
+      if (!shop || (pick && r.bag.indexOf(pick) < 0)) pick = null;
+      var pc = pick ? card(pick) : null;
+      var tiles = tileHTML(card(aceIdOf(r)), { text: false }) + r.bag.map(function (id) {
+        var c = card(id); if (!c) return '';
+        var sd = E.isSeed(r, C, id), gf = shop && !sd && E.isGift(r, C, id);   // 從唱片櫃帶來的（種子）：小籤「櫃裡帶來」；老闆送的：逛店時標「老闆送的」（都不能賣回）
+        var o = { text: false, store: isStore(id), sel: id === pick, cls: sd ? 'seed' : gf ? 'gift' : '', extra: sd ? tag('', SHU('seedTag')) : gf ? tag('gf', SHU('giftTag')) : '' };
+        if (shop && !sd && !gf) { o.pick = SHU('bagSellBtn', { n: E.moneyText(E.sellValue(C, c)) }); o.disabled = atMin; }
+        return tileHTML(c, o);
+      }).join('');
+      var note = shop ? '<p class="sub bgnote' + (atMin ? ' warn' : '') + '">' + esc(atMin ? SHU('bagSellMin', { n: floor }) : SHU('bagSellNote')) + '</p>' : '';
+      var foot = pc ? '<div class="foot bgsell"><p class="ask">' + esc(SHU('bagSellAsk', { album: pc.album })) + '</p><div class="two">' +
+        '<button type="button" class="lb-btn" data-a="sno">' + esc(SHU('bagSellNo')) + '</button>' +
+        '<button type="button" class="lb-btn pri" data-a="sgo">' + esc(SHU('bagSellGo', { n: E.moneyText(E.sellValue(C, pc)) })) + '</button></div></div>' : '';
+      return '<div class="hd"><h3>' + esc(bagText(r.bag.length)) + '</h3>' + (shop ? '<span class="bgmoney">' + moneyHTML(r.money) + '</span>' : '') +
+        '<button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+        '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p>' + note + '<div class="lb-pick">' + tiles + '</div>' + foot;
+    };
+    var s = floatSheet(body(), 'bag tall');
+    var redraw = function () { var y = s.scrollTop; s.innerHTML = body(); s.scrollTop = y; };
+    s.addEventListener('click', function (e) {
+      var t = e.target.closest && e.target.closest('[data-pick],[data-a=sno],[data-a=sgo]');
+      if (!t || t.disabled || !s.contains(t)) return;
+      if (t.hasAttribute('data-pick')) { var id = t.getAttribute('data-pick'); pick = pick === id ? null : id; sfx(pick ? 'select' : 'tick'); redraw(); return; }
+      if (t.getAttribute('data-a') === 'sno') { pick = null; sfx('tick'); redraw(); return; }
+      var sid = pick; if (!sid) return;
+      var res = doChoose({ type: 'sell', cardId: sid });
+      pick = null;
+      if (!res || !res.ok) {
+        var why = res && res.error;
+        if (why === 'bagMin') toast(SHU('bagSellMin', { n: floor })); else if (why === 'seedNoSell') toast(SHU('seedNoSell'));
+        redraw(); return;
+      }
+      sfx('readHit');
+      var f = (res.effects || []).filter(function (x) { return x.loseCard; })[0];
+      toast(SHU('sold', { album: (card(sid) || {}).album || '', n: E.moneyText((f && f.earn) || 0) }));
+      redraw(); syncBagline(r);
+    });
+    return s;
+  }
+  // 包包面板賣回之後：來客的包包條（錢、包包張數）跟著變，不重畫整個來客畫面
+  function syncBagline(r) {
+    var bl = qs('.lb-bagline', app()); if (!bl || !r) return;
+    var m = qs('.money', bl), b = qs('[data-a=bag]', bl);
+    if (m) m.innerHTML = moneyHTML(r.money);
+    if (b) b.innerHTML = bagBtnHTML(r.bag.length);
   }
   function relicSheet(r) {
     var html = '<div class="hd"><h3>發燒配件</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +

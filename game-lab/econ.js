@@ -21,8 +21,10 @@
  *   - 價格、賣回、能不能買全部問引擎（priceOf／bargainPriceOf／relicPrice／sellValue／rarity／canShop／canBargainPick），交易一律走 configure 給的 choose。
  *   - 台幣行情（FIXLIST 8）：箱子／新進／店長推薦照稀有度 $800／1,000／1,200；FEATURE 史詩 $3,000／傳奇 $4,000；特價箱每張 $100–300（序章挑三張免費：價錢劃掉）；
  *     配件一件 $3,000；賣回半價。畫面上的錢一律千分位（mt＝engine.moneyText）。
+ *   - 包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity）：買唱片、買特價箱都不用「先賣一張」；只剩「錢不夠、賣一張就夠」那條先賣（自願的，子面板可以關掉）。
+ *     包包長了（20、30 張）：先賣子面板的格子縮到 52 px 還放不下，就讓格子那一區自己捲（.ec-scroll），標題、說明、鈕留在原位。
  *   - 老闆送的（王牌那組四張＋王牌，engine.isGift）不能賣回（FIXLIST 11 追加）：先賣子面板裡照樣列出來，但標「老闆送的」（C.shopUi.giftTag）、不能選；
- *     能不能買（賣一張就夠／包包滿）、賣回價的範圍都只算能賣的那幾張。
+ *     能不能買（賣一張就夠）、賣回價的範圍都只算能賣的那幾張。
  *   - 從唱片櫃帶來的種子（engine.isSeed；店主 11-13 §0 護欄）也不能賣回：先賣子面板照樣列出來、標「櫃裡帶來」（C.shopUi.seedTag）、選不了；
  *     點了說明「從唱片櫃帶來的不能賣」（C.shopUi.seedNoSell；吐司＋底下那行）。
  * 前綴 ec-；樣式在 econ.css。只掛 window.DipLabEcon；不碰 localStorage。
@@ -35,8 +37,7 @@
   var ZH1 = { c: '經', o: '冷', h: '硬' }, ATTRS = ['c', 'o', 'h'];
   // C.shopUi 沒有的字（新；已請 B2 補進 C.shopUi，見 dev/notes-B3.md「請求」）
   var FALLBACK = {
-    bag: '包包 {n}/{max}', binEmpty: '這一箱賣完了，下一輪再補。', owned: '包包裡有了',
-    bagFullN: '包包放不下：先賣 {k} 張，半價 ${n}',
+    bag: '包包 {n} 張', binEmpty: '這一箱賣完了，下一輪再補。', owned: '包包裡有了',   // 包包不限張數（店主 11-16）：只寫張數
     relicSell: '賣這件', relicSold: '「{name}」賣掉，+${n}', relicEmpty: '櫃檯的配件賣完了，下一輪再補。',   // relic
     prev: '上一張', next: '下一張', infoAria: '唱片資訊、試聽',
     // 包包沒滿、錢不夠，但賣一張就夠（SPEC §2.5.6 第 3 點：賣一張也不夠才停用）
@@ -92,7 +93,6 @@
     return '<span class="ec-radio" title="' + esc(((T.names || {})[cell] || '') + '・' + (R.tag || '')) + '"><i style="--tn:' + esc(col) + '" aria-hidden="true"></i><b>' + esc(R.tag || '') + '</b></span>';
   }
   function moneyHTML(n) { return '<span class="ec-money">' + esc(money(n == null ? 0 : n)) + '</span>'; }
-  function bagMax() { return (E().CFG && E().CFG.bagMax) || 8; }
   function relicMax() { return (E().CFG && E().CFG.relicMax) || 3; }
   function pickN() { return (E().CFG && E().CFG.bargainPick) || 3; }
   function reduced() { try { return !!(W.matchMedia && W.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (_) { return false; } }
@@ -364,7 +364,7 @@
       w = '<span class="ec-wallet">' + moneyHTML(r.money) +
         (S.kind === 'relic'
           ? '<span class="ec-rl">' + r.relics.map(function (id) { return '<i>' + relicIconHTML(id, 16) + '</i>'; }).join('') + '<small>' + r.relics.length + '/' + relicMax() + '</small></span>'
-          : '<span class="ec-bag">' + esc(fill(ui('bag'), { n: r.bag.length, max: bagMax() })) + '</span>') + '</span>';
+          : '<span class="ec-bag">' + esc(fill(ui('bag'), { n: r.bag.length })) + '</span>') + '</span>';
     }
     var x = S.kind === 'pick' ? '' : '<button type="button" class="ec-x" data-a="close" aria-label="' + esc(ui('close')) + '">✕</button>';
     var t = S.titleHTML && title === S.label ? S.titleHTML : esc(title);
@@ -379,12 +379,12 @@
     var c = card(ids[S.idx]);
     var btn = '';
     if (S.mode === 'buy' && r) {
-      var price = E().priceOf(C(), c), full = r.bag.length >= bagMax(), short = price != null && r.money < price;
-      var sv = sellVals(r), maxSell = full || short ? maxOf(sv) : 0;   // 包包滿、或錢不夠：要先賣一張（老闆送的不能賣）
+      var price = E().priceOf(C(), c), short = price != null && r.money < price;
+      var maxSell = short ? maxOf(sellVals(r)) : 0;   // 錢不夠：賣一張就夠的話可以先賣（老闆送的不能賣）；包包不限張數，不會「包包滿要先賣」（店主 11-16）
       var owned = r.bag.indexOf(c.id) >= 0;
-      var can = price != null && !owned && (!full || sv.length > 0) && r.money + maxSell >= price;
+      var can = price != null && !owned && r.money + maxSell >= price;
       btn = '<button type="button" class="ec-buy lb-btn pri" data-a="buy" data-cid="' + esc(c.id) + '"' + (can ? '' : ' disabled') + '>' +
-        (owned ? esc(ui('owned')) : !can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'sellFirst') : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>';
+        (owned ? esc(ui('owned')) : !can ? poorHTML(price) : short ? sellFirstHTML(price, 'sellFirst') : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>';
     } else {   // 只看（標題畫面、現在還不能買）：照樣標價
       var pv = E().priceOf(C(), c);
       if (pv != null) btn = '<span class="ec-pv">' + esc(money(pv)) + '</span>';
@@ -428,12 +428,10 @@
     var foot = '';
     if (pick) foot = '<button type="button" class="lb-btn pri big wide" data-a="take"' + (S.sel.length === pickN() ? '' : ' disabled') + '>' + esc(ui('bargainTake')) + '</button>';
     else if (!view && r) {
-      var k = S.sel.length, price = bargainTotal(S.sel), need = Math.max(0, r.bag.length + k - bagMax());
-      var sellsAll = sellVals(r).sort(function (a, b) { return b - a; });   // 老闆送的不能賣
-      var sum = function (a) { return a.reduce(function (s, v) { return s + v; }, 0); };
-      var can = k >= 1 && k <= pickN() && need <= sellsAll.length && r.money + sum(sellsAll.slice(0, need)) >= price;
+      var k = S.sel.length, price = bargainTotal(S.sel);   // 包包不限張數（店主 11-16）：放得下，錢夠就能買
+      var can = k >= 1 && k <= pickN() && r.money >= price;
       var cheapest = Math.min.apply(null, ids.map(bargainPrice).filter(function (v) { return v != null; }).concat([Infinity]));
-      var poorAll = r.money + sum(sellsAll.slice(0, Math.max(0, r.bag.length + 1 - bagMax()))) < cheapest;   // 連最便宜的一張都買不起
+      var poorAll = r.money < cheapest;   // 連最便宜的一張都買不起
       var label = k < 1 ? (poorAll ? esc(ui('noMoney')) : esc(ui('bargainHint'))) : can ? esc(fill(ui('bargainBuy'), { n: mt(price) })) : poorHTML(price);
       foot = '<button type="button" class="lb-btn pri big wide" data-a="bbuy"' + (can ? '' : ' disabled') + ' data-total="' + price + '">' + label + '</button>';
     }
@@ -458,7 +456,7 @@
           (!can ? poorHTML(price) : short && !full ? sellFirstHTML(price, 'relicSellFirst') : esc(fill(ui('buy'), { n: mt(price) }))) + '</button>' : '') + '</div>';
     }).join('') + '</div>';
   }
-  // 先賣（唱片：包包滿了；配件：滿 3 件）
+  // 先賣（唱片：錢不夠、賣一張就夠；配件：滿 3 件、或錢不夠）
   function sellHTML() {
     var r = liveRun(), sub = S.sub;
     if (sub.kind === 'relic') {
@@ -473,7 +471,7 @@
         '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(ui('relicSell')) + '</span>' + tgtHTML(sub) + '</button></div>';
     }
     var bvals = sellVals(r);   // 賣回價的範圍只算能賣的（老闆送的不算）
-    var msg = sub.need > 1 ? fill(ui('bagFullN'), { k: sub.need, n: range(bvals) }) : fill(ui(sub.why === 'money' ? 'moneyShort' : 'bagFull'), { n: range(bvals) });
+    var msg = fill(ui('moneyShort'), { n: range(bvals) });   // 包包不限張數之後，唱片的先賣只剩錢不夠這條（店主 11-16）
     var fc = sub.picks.length ? card(sub.picks[sub.picks.length - 1]) : null;
     return headHTML(S.label) + '<p class="ec-msg">' + esc(msg) + '</p>' +
       '<div class="ec-grid ec-g4">' + r.bag.map(function (id) {
@@ -487,7 +485,7 @@
       }).join('') + '</div>' +
       '<p class="ec-line' + (sub.why2 ? ' warn' : '') + '">' + (sub.why2 ? esc(sub.why2) : fc ? esc(fc.artist + '《' + fc.album + '》') : '&nbsp;') + '</p>' +
       '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="back">' + esc(ui('close')) + '</button>' +
-      '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(sub.need > 1 ? fill(ui('sellPickN') || '賣這 {k} 張', { k: sub.need }) : ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
+      '<button type="button" class="lb-btn pri col ec-sellb" data-a="sell"' + (sellReady() ? '' : ' disabled') + '><span>' + esc(ui('sellPick')) + '</span>' + tgtHTML(sub) + '</button></div>';
   }
   // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
   //   專輯名太長只切專輯名，價錢一定看得到（V5-play-6：「《Come On Die Young》買…」把價錢切掉了）
@@ -498,7 +496,7 @@
     return r.money + earn >= sub.price;
   }
 
-  // ------------------------------------------------------------------ 畫＋量（抽屜最高 #app 的 50%，內容縮到放得下，不捲動）
+  // ------------------------------------------------------------------ 畫＋量（抽屜最高 #app 的 50%，內容縮到放得下，不捲動；只有先賣子面板包包太長時格子那一區自己捲）
   function render() {
     var el = S.el; if (!el) return;
     var html = S.sub ? sellHTML() : S.kind === 'bin' ? binHTML() : S.kind === 'relic' ? relicHTML() : gridHTML();
@@ -519,16 +517,19 @@
       el.style.setProperty('--ec-cv', cv + 'px');
       while (over() && cv > 72) { cv -= 6; el.style.setProperty('--ec-cv', cv + 'px'); }
     }
-    el.classList.remove('ec-tight');
+    el.classList.remove('ec-tight', 'ec-scroll');
     if (over() && el.querySelector('.ec-rows')) el.classList.add('ec-tight');   // 矮螢幕：配件列收成一行（說明藏起來）
     if (grid) {
       var cols = grid.classList.contains('ec-g4') ? 4 : 3, gap = 6;
       var side = cols === 3 ? 30 : 0;   // 三欄：封面右邊放三軸星數
       var t = Math.floor(Math.min((w - 24 - gap * (cols - 1)) / cols - side, cols === 3 ? 104 : 88));
       el.style.setProperty('--ec-tile', t + 'px');
-      while (over() && t > 36) { t -= 4; el.style.setProperty('--ec-tile', t + 'px'); }
+      // 先賣子面板列整個包包（不限張數，店主 11-16）：封面最小 52 px（看得出是哪張）；還放不下就讓格子那一區自己捲（標題、說明、鈕不動）
+      var tmin = S.sub ? 52 : 36;
+      while (over() && t > tmin) { t -= 4; el.style.setProperty('--ec-tile', t + 'px'); }
       // 封面太窄（375×548 四欄 47 px）：電台籤（約 39 px）會碰到右上的選取勾（18 px）→ 只留色點、不寫字（讀屏字在格子的 aria-label）
       grid.classList.toggle('ec-narrow', t < 64);
+      if (S.sub && over()) el.classList.add('ec-scroll');
     }
   }
 
@@ -633,9 +634,9 @@
   }
   function buyCard(id) {
     var r = liveRun(); if (!r) return;
-    var c = card(id), price = E().priceOf(C(), c), full = r.bag.length >= bagMax();
-    if (full || (price != null && r.money < price)) {   // 包包滿、或錢不夠：先賣一張（引擎的 buy 收沒滿時的 sellId）
-      S.sub = { kind: 'card', why: full ? 'full' : 'money', need: 1, picks: [], price: price, tgt: '《' + c.album + '》', done: function (picks) { done(choose({ type: 'buy', key: S.key, cardId: id, sellId: picks[0] })); } };
+    var c = card(id), price = E().priceOf(C(), c);
+    if (price != null && r.money < price) {   // 錢不夠：先賣一張（引擎的 buy 收 sellId；包包不限張數，不會包包滿，店主 11-16）
+      S.sub = { kind: 'card', why: 'money', need: 1, picks: [], price: price, tgt: '《' + c.album + '》', done: function (picks) { done(choose({ type: 'buy', key: S.key, cardId: id, sellId: picks[0] })); } };
       sfx('tick'); render(); return;
     }
     done(choose({ type: 'buy', key: S.key, cardId: id }));
@@ -643,13 +644,7 @@
   function bargainTotal(ids) { return ids.reduce(function (s, id) { var p = bargainPrice(id); return s + (p == null ? 0 : p); }, 0); }
   function buyBargain() {
     var r = liveRun(); if (!r || !S.sel.length) return;
-    var ids = S.sel.slice(), need = Math.max(0, r.bag.length + ids.length - bagMax());
-    var price = bargainTotal(ids);
-    if (need > 0) {
-      S.sub = { kind: 'card', need: need, picks: [], price: price, tgt: ids.map(function (x) { return '《' + ((card(x) || {}).album || '') + '》'; }).join(''), done: function (picks) { done(choose({ type: 'buyBargain', ids: ids, sellIds: picks })); } };
-      sfx('tick'); render(); return;
-    }
-    done(choose({ type: 'buyBargain', ids: ids }));
+    done(choose({ type: 'buyBargain', ids: S.sel.slice() }));   // 包包不限張數（店主 11-16）：不用先賣
   }
   function buyRelic(id) {
     var r = liveRun(); if (!r) return;
@@ -688,7 +683,8 @@
   // ------------------------------------------------------------------ 給測試看的
   function debug() {
     return { cfg: !!(CFG && CFG.content && CFG.engine), open: S.open, walking: S.walking, kind: S.kind, key: S.key, mode: S.mode, idx: S.idx, ids: S.open ? binIds() : [], sel: (S.sel || []).slice(),
-      sub: S.sub ? { kind: S.sub.kind, why: S.sub.why || 'full', need: S.sub.need, picks: S.sub.picks.slice() } : null, height: S.el ? S.el.offsetHeight : 0, focusH: S.focusH };
+      sub: S.sub ? { kind: S.sub.kind, why: S.sub.why || 'full', need: S.sub.need, picks: S.sub.picks.slice() } : null, height: S.el ? S.el.offsetHeight : 0, focusH: S.focusH,
+      scroll: !!(S.el && S.el.classList.contains('ec-scroll')) };
   }
 
   W.DipLabEcon = {

@@ -314,6 +314,18 @@ small{font-size:inherit;}
 /* 包包裡從唱片櫃帶來的（種子）：包包條金色虛線框、包包面板小籤 */
 .lb-strip .slot.seed.filled{border-color:var(--gold);border-width:2px;}
 .lb-ct .sdtag{margin-top:2px;font-size:9px;font-weight:700;color:var(--gold-ink);text-align:center;letter-spacing:.02em;white-space:nowrap;}   /* 深金字：白底對比 ≥4.5（審查 #10） */
+/* 包包面板（包包不限張數，店主 11-16）：張數多了面板自己捲、標題列（張數、錢、✕）黏在上面；兩位客人之間每張底下「賣 $n」，
+   點了底下那條（sticky）先問「賣掉《…》？」才賣。老闆送的標灰字小籤、不給賣；包包剩 5 張鈕停用、說明那行變紅 */
+.lb-sheet.float.bag .hd{position:-webkit-sticky;position:sticky;top:-10px;z-index:3;background:#fff;margin:-10px -12px 0;padding:10px 12px 4px;}
+.lb-sheet.float.bag .hd .bgmoney{flex:none;font:700 13px 'Space Mono',monospace;}
+.lb-sheet.float.bag .bgnote{margin:2px 0 0;}
+.lb-sheet.float.bag .bgnote.warn{color:var(--red);font-weight:700;}
+.lb-sheet.float.bag .lb-pick .lb-pickb{min-height:36px;padding:0 2px;font-size:11px;letter-spacing:0;white-space:nowrap;overflow:hidden;}
+.lb-ct .sdtag.gf{color:#6b6b6b;}   /* 老闆送的（不能賣）：灰字；白底對比 ≥4.5 */
+.lb-sheet.float.bag .foot.bgsell{padding-top:8px;}
+.lb-sheet.float.bag .foot .ask{margin:0 0 6px;font-size:13px;font-weight:700;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-sheet.float.bag .foot .two{margin-top:0;}
+.lb-sheet.float.bag .foot .two .lb-btn{height:46px;}
 /* 唱片櫃頁：上面「我的收藏」、下面「認識過」 */
 .lb-page .lb-own{margin-bottom:6px;}
 .lb-page .lb-own .lb-h2,.lb-page .lb-known .lb-h2{margin-top:6px;}

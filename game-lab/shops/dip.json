@@ -104,7 +104,7 @@
   {"type": "listenDesk", "id": "booth", "x": 6, "y": 176, "w": 38, "d": 13, "h": 21, "stack": "susumu-yokota-sakura", "section": "picks", "hot": {"label": "試聽機", "action": "listen", "rect": [4, 131, 50, 46]}},
   {"type": "stool", "x": 20, "y": 190},
   {"type": "binTable", "id": "crate-new", "x": 6, "y": 252, "cols": 3, "d": 26, "h": 22, "rec": 8, "label": "NEW", "front": ["little-simz-sometimes-i-might-be-introvert", "weyes-blood-and-in-the-darkness-hearts-aglow", "ezra-collective-where-i-m-meant-to-be"], "sections": 1, "bin": {"key": "new", "label": "新進", "stand": [27, 264]}},
-  {"type": "binTable", "id": "crate-sale", "x": 4, "y": 130, "cols": 2, "d": 14, "h": 12, "rec": 6, "label": "SALE", "front": ["blur-the-great-escape", "weezer-van-weezer"], "sections": 1, "bin": {"key": "sale", "label": "特價區", "stand": [44, 128]}},
+  {"type": "binTable", "id": "crate-sale", "x": 4, "y": 130, "cols": 2, "d": 14, "h": 12, "rec": 6, "label": "SALE", "front": ["daft-punk-human-after-all", "lady-gaga-artpop"], "sections": 1, "bin": {"key": "sale", "label": "特價區", "stand": [44, 128]}},
   {"type": "counter", "id": "counter", "x": 212, "y": 206, "w": 72, "d": 13, "h": 28, "now": "caetano-veloso-transa", "sign": {"emblem": "dip"}, "hot": {"label": "櫃檯", "action": "counter", "rect": [212, 178, 72, 28], "labelAt": [236, 178]}},
   {"type": "plant", "x": 276, "y": 258, "size": "small"},
   {"type": "duelDeck", "id": "deck", "x": 122, "y": 316, "w": 48, "d": 9, "h": 18},
