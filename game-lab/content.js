@@ -625,11 +625,12 @@
     tip_bluff: '嘴上說名盤，手上不一定是。',
     tip_block: '差 2 星以上，剋不動。',
     tip_ace: '王牌 7 星，一場用一次。',
-    tip_rounds: '六手沒分勝負，比聲望條剩幾成。'
+    tip_rounds: '六手沒分勝負，比聲望條剩幾成。',
+    tip_lastplay: '上一手留在上面，點封面看唱片資訊。'   // 店主 11-16「打完要把上一手的專輯留在檯面上」：小封面很小，教玩家點得開（17 字：375／360 寬泡泡也是一行）
   };
   C.coachTipWhen = {
     tip_mirror: '第一次同色比星（含同色同星）', tip_bluff: '第一次被唬', tip_block: '第一次剋不動（你或他）',
-    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手'
+    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手', tip_lastplay: '第一次出現上一手小列（第 2 手）'
   };
   C.coachTipTags = {};
   Object.keys(C.coachTips).forEach(function (k) { C.coachTipTags[k] = '新'; });
@@ -653,7 +654,8 @@
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
-    tapOn: '點一下繼續'   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
+    tapOn: '點一下繼續',   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
+    lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊'   // 上一手小列的讀屏字（店主 11-16）；{who}＝他／你，{t}＝藝人《專輯》
   };
   C.duelTextTag = '新';
   // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄寫全名；duel.js 只把屬性第一個字上色、第二個字黑、剋灰（店主 11-12）

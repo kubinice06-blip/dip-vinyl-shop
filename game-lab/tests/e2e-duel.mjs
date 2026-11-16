@@ -29,6 +29,11 @@
 //  13 最後一手 KO：你 KO 他 → 「品味勝出」、勝利曲＝你那張；他 KO 你 → 「聲望歸零」、勝利曲＝他那張
 //  14 autoplay('thoughtful') 打完一場（走正常點擊流程）
 //  15 主控台 0 錯誤
+//  16 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上」）：16a 第 1 手沒有小列、--lp＝0；
+//     16b 第 2 手開始：小列兩張＝第 1 手他丟的／你丟的（專輯名、「他・」「你・」、讀屏字）、「上一手」籤看得到、不淡；他這手的大格照樣整格蓋著（沒有封面、沒有 data-card、不含他這手要出的那張）；
+//         不捲動、沒有 .tighter、空帶 ≤24；16c 你挑一張：你那格＝新挑的那張（半透明預覽），小列照舊是上一手；小列跟屬性鈕／提示框／相剋圖／相剋圖旁那行／手牌／大格不相交；
+//     16d 點小列他那張＝唱片資訊（info where＝last-e、那張）、關掉後手牌還開著；16e 點小列你那張＝唱片資訊（last-p）；
+//     16f 丟出：揭曉中小列變淡（.fade、約 .4）、「上一手」籤藏起、仍是第 1 手那兩張、還點得開；16g 第 3 手：小列換成第 2 手那兩張、不淡、籤出來
 // 只跑一次（不分尺寸）：0 合成事件逐字（D 的三個例句、key 為 null 的退路句、其他規則句）。
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import fs from 'fs';
@@ -116,7 +121,7 @@ function pageTools() {
       const dl = document.querySelector('.dl'), R = dl.getBoundingClientRect(), bot = Math.min(R.bottom, innerHeight);
       const iv = [];
       const vis = el => { const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden' || el.hidden || el.closest('[hidden]')) return false; const b = el.getBoundingClientRect(); return b.width > 0 && b.height > 0; };
-      for (const q of ['.dl-e .nmrow', '.dl-e .hp', '.slot.e', '.slot.p', '.slot .who', '.rounds', '.tri', '.hint', '.callout.on', '.lastline', '.dl-p .nmrow', '.dl-p .hp', '.tile:not(.gone)', '.pop .ab'])
+      for (const q of ['.dl-e .nmrow', '.dl-e .hp', '.lastplay', '.slot.e', '.slot.p', '.slot .who', '.rounds', '.tri', '.hint', '.callout.on', '.lastline', '.dl-p .nmrow', '.dl-p .hp', '.tile:not(.gone)', '.pop .ab'])
         dl.querySelectorAll(q).forEach(el => { if (!vis(el)) return; const b = el.getBoundingClientRect(); iv.push([b.top, b.bottom]); });
       const e = dl.querySelector('.dl-e').getBoundingClientRect(), p = dl.querySelector('.dl-p').getBoundingClientRect();
       iv.push([e.bottom - 1, e.bottom], [p.top, p.top + 1]);
@@ -125,6 +130,24 @@ function pageTools() {
       for (const [t, b] of iv) { if (t > y && t - y > max) { max = t - y; at = Math.round(y); } y = Math.max(y, b); }
       if (bot - y > max) { max = bot - y; at = Math.round(y); }
       return { max: Math.round(max), at };
+    },
+    // 上一手小列（16）：小列、兩項、籤、牌桌兩格、跟其他東西的位置
+    lastplay() {
+      const dl = document.querySelector('.dl'), lp = dl.querySelector('.lastplay');
+      const rect = el => { if (!el) return null; const b = el.getBoundingClientRect(); return { l: b.left, t: b.top, r: b.right, b: b.bottom, w: b.width, h: b.height }; };
+      const vis = el => { if (!el || el.hidden || el.closest('[hidden]')) return false; const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden') return false; const b = el.getBoundingClientRect(); return b.width > 0 && b.height > 0; };
+      const item = s => { const b = lp.querySelector('.lp.' + s); return b ? { card: b.dataset.card || null, tag: b.tagName, aria: b.getAttribute('aria-label') || '', who: ((b.querySelector('.lpw') || {}).textContent || '').replace(/\s+/g, ' ').trim(),
+        name: (b.querySelector('.lpn') || {}).textContent || '', cover: !!b.querySelector('.lpc .cv'), vis: vis(b), r: rect(b) } : null; };
+      const se = dl.querySelector('.slot.e'), sp = dl.querySelector('.slot.p'), lbl = lp.querySelector('.lpl');
+      const d = window.__lab.rawDuel(), v = window.DipLabEngine.view(d), planned = d && d.plan && d.e.hand[d.plan.idx];
+      const nm = el => (el.className && el.className.baseVal != null ? el.className.baseVal : el.className).split(' ')[0] + (el.dataset && el.dataset.tut ? '[' + el.dataset.tut + ']' : '');
+      return { n: v.n, hidden: lp.hidden, vis: vis(lp), opacity: +getComputedStyle(lp).opacity, fade: lp.classList.contains('fade'), r: rect(lp), e: item('e'), p: item('p'),
+        label: lbl ? { text: lbl.textContent.trim(), vis: vis(lbl) } : null, lpVar: dl.style.getPropertyValue('--lp').trim(), cls: dl.className, scroll: [dl.scrollHeight, dl.clientHeight],
+        slotE: { cls: se.className, card: se.dataset.card || null, text: se.textContent.replace(/\s+/g, ' ').trim(), cover: !!se.querySelector('img, .cv.noimg'), html: se.innerHTML, r: rect(se) },
+        slotP: { cls: sp.className, card: sp.dataset.card || null, alt: (sp.querySelector('img') || {}).alt || '', r: rect(sp) },
+        planned: planned ? { id: planned.id, album: planned.album || '' } : null, stripHtml: lp.innerHTML,
+        others: [...dl.querySelectorAll('.pop .ab, .hint, .tri, .trileg, .tile:not(.gone), .slot')].filter(vis).map(el => ({ q: nm(el), r: rect(el) })),
+        bands: window.__e2e.bands() };
     },
     hintNow() {
       const C = window.DipLabContent, v = window.DipLabEngine.view(window.__lab.rawDuel());
@@ -577,6 +600,103 @@ async function runSize(browser, w, h) {
       record(11, size, ok, `疊著長按 card-2 → ${st.log.join(',') || '沒有'}；唱片資訊${st.modal ? '開著' : '沒開'}；選牌 ${short(st.sel)}、打開 ${st.open}`);
       await page.evaluate(q => { const b = document.querySelector(q); if (b) b.click(); }, INFO_CLOSE);
       await sleep(250);
+    }
+    // ---- 16 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上」）
+    {
+      await waitChoose(page);
+      await page.evaluate(() => window.DipLabDuel.select(null));
+      await remount(page, 21);
+      await page.evaluate(() => { if (!window.__lpInfoOn) { window.__lpInfoOn = true; window.__lpInfo = []; window.DipLabDuel.on('info', w => window.__lpInfo.push(w)); } });
+      const LP = () => page.evaluate(() => window.__e2e.lastplay());
+      const ttl = c => c ? `${c.artist || ''}《${c.album || ''}》` : '';
+      // 最後一手的兩張（clash 事件裡的卡）：{ e, p } 各 { id, artist, album }
+      const lastCards = () => page.evaluate(() => { const l = window.DipLabDuel.debug().last, cl = l && l.evs.find(e => e.t === 'clash'); const f = c => c ? { id: c.id, artist: c.artist, album: c.album } : null; return cl ? { e: f(cl.eCard), p: f(cl.pCard) } : { e: null, p: null }; });
+      const hit = (a, b) => a && b && a.l < b.r - 0.5 && a.r > b.l + 0.5 && a.t < b.b - 0.5 && a.b > b.t + 0.5;
+      const noScroll = L => L.scroll[0] <= L.scroll[1] + 1;
+      // 16a 第 1 手：沒有小列、不佔高
+      const A1 = await LP();
+      record('16a', size, A1.n === 1 && A1.hidden && !A1.vis && (A1.lpVar === '0px' || A1.lpVar === ''), `第 ${A1.n} 手：小列 ${A1.hidden ? 'hidden' : '出現了'}；--lp ${A1.lpVar || '（沒設）'}`);
+      // 第 1 手：丟第 0 張最高那色
+      await quickPlay(page, 0);
+      await waitCallout(page);
+      const ex1 = await page.evaluate(() => window.__e2e.expect());
+      const okN2 = await waitChoose(page);
+      await sleep(250);
+      // 16b 第 2 手開始
+      const B = await LP();
+      const { e: eC1, p: pC1 } = await lastCards();
+      const w16b = [];
+      if (!okN2 || B.n !== 2) w16b.push('沒到第 2 手（n=' + B.n + '）');
+      if (B.hidden || !B.vis) w16b.push('小列沒出現');
+      if (!B.e || B.e.card !== ex1.eCard) w16b.push(`他那張 ${B.e && B.e.card} ≠ 第 1 手他丟的 ${ex1.eCard}`);
+      if (!B.p || B.p.card !== ex1.pCard) w16b.push(`你那張 ${B.p && B.p.card} ≠ 第 1 手你丟的 ${ex1.pCard}`);
+      if (B.e && (B.e.tag !== 'BUTTON' || !B.e.cover || !B.e.vis || B.e.name !== (eC1 && eC1.album) || !/^他・/.test(B.e.who) || B.e.aria !== `上一手他丟的：${ttl(eC1)}，點一下看唱片資訊`)) w16b.push('他那項：' + short(B.e));
+      if (B.p && (B.p.tag !== 'BUTTON' || !B.p.cover || !B.p.vis || B.p.name !== (pC1 && pC1.album) || !/^你・/.test(B.p.who) || B.p.aria !== `上一手你丟的：${ttl(pC1)}，點一下看唱片資訊`)) w16b.push('你那項：' + short(B.p));
+      if (!B.label || B.label.text !== '上一手' || !B.label.vis) w16b.push('「上一手」籤：' + short(B.label));
+      if (B.fade || B.opacity < 0.99) w16b.push('挑牌時小列是淡的（' + B.opacity + '）');
+      if (!(parseFloat(B.lpVar) > 0)) w16b.push('--lp ' + B.lpVar);
+      // 他這手照樣整格蓋著：沒有封面、沒有 data-card、字是「蓋著」、不含他這手要出的那張
+      if (!/\bpre\b/.test(B.slotE.cls) || B.slotE.card || B.slotE.cover || !/蓋著/.test(B.slotE.text)) w16b.push('他那格沒蓋著：' + short(B.slotE));
+      if (B.planned && (B.slotE.html.includes(B.planned.id) || B.stripHtml.includes(B.planned.id))) w16b.push('洩漏他這手那張 ' + B.planned.id);
+      if (hit(B.r, B.slotE.r) || hit(B.r, B.slotP.r)) w16b.push('小列蓋到大格');
+      if (!(B.r && B.slotE.r && B.r.b <= B.slotE.r.t + 0.5)) w16b.push('小列不在大格上面');
+      if (!noScroll(B) || /tighter/.test(B.cls)) w16b.push('捲動 ' + B.scroll.join('/') + '（' + B.cls + '）');
+      if (B.bands.max > 24) w16b.push('空帶 ' + B.bands.max + ' px（y=' + B.bands.at + '）');
+      record('16b', size, !w16b.length, `${w16b.join('；') || 'ok'}；小列 他「${B.e && B.e.who}／${B.e && B.e.name}」｜${B.label && B.label.text}｜你「${B.p && B.p.who}／${B.p && B.p.name}」；--lp ${B.lpVar}；他那格「${B.slotE.text}」；空帶 ${B.bands.max} px`);
+      // 16c 你挑一張（第 1 張）：你那格＝新挑的那張；小列照舊；不疊到其他東西
+      await liftIt(page, 1);
+      await sleep(250);
+      const Cc = await LP();
+      const sel1 = await page.evaluate(() => { const x = window.DipLabDuel.debug(), v = window.DipLabEngine.view(window.__lab.rawDuel()); const c = x.sel && v.hand[x.sel.i]; return c ? { i: x.sel.i, id: c.id, t: `${c.artist || ''}《${c.album || ''}》` } : null; });
+      const w16c = [];
+      if (!sel1 || sel1.i !== 1) w16c.push('沒打開第 1 張');
+      if (!/\bpre\b/.test(Cc.slotP.cls) || !sel1 || Cc.slotP.alt !== sel1.t) w16c.push(`你那格「${Cc.slotP.alt}」（${Cc.slotP.cls}）≠ 新挑的「${sel1 && sel1.t}」`);
+      if (!Cc.e || !Cc.p || Cc.e.card !== ex1.eCard || Cc.p.card !== ex1.pCard || Cc.fade) w16c.push('小列變了：' + short([Cc.e && Cc.e.card, Cc.p && Cc.p.card, Cc.fade]));
+      const over = Cc.others.filter(o => hit(Cc.r, o.r));
+      if (over.length) w16c.push('小列疊到 ' + over.map(o => o.q).join('、'));
+      if (!Cc.others.some(o => /^ab\b/.test(o.q))) w16c.push('沒有屬性鈕');
+      if (!noScroll(Cc) || /tighter/.test(Cc.cls)) w16c.push('捲動 ' + Cc.scroll.join('/'));
+      if (Cc.bands.max > 24) w16c.push('空帶 ' + Cc.bands.max + ' px（y=' + Cc.bands.at + '）');
+      record('16c', size, !w16c.length, `${w16c.join('；') || 'ok'}；你那格「${Cc.slotP.alt}」；量了 ${Cc.others.length} 個（${[...new Set(Cc.others.map(o => o.q))].join('、')}）；空帶 ${Cc.bands.max} px`);
+      // 16d／16e 點小列兩張＝唱片資訊（關掉後手牌還開著）
+      for (const [k, side, want] of [['16d', 'e', ex1.eCard], ['16e', 'p', ex1.pCard]]) {
+        await page.evaluate(() => { window.__lpInfo.length = 0; });
+        const n0 = await page.evaluate(() => window.__h.log.length);
+        const pt = await hitPoint(page, `.dl .lastplay .lp.${side}`);
+        if (pt) await page.touchscreen.tap(pt.x, pt.y);
+        const modal = await page.waitForSelector(INFO_SEL, { timeout: 3000 }).then(() => true, () => false);
+        const st = await page.evaluate(([n0, q]) => ({ log: window.__h.log.slice(n0), ev: window.__lpInfo.slice(), from: (document.querySelector(q) || { getAttribute: () => null }).getAttribute('data-from') }), [n0, INFO_SEL]);
+        if (modal) { await page.evaluate(q => { const b = document.querySelector(q); if (b) b.click(); }, INFO_CLOSE); await page.waitForSelector(INFO_SEL, { state: 'detached', timeout: 2000 }).catch(() => {}); await sleep(200); }
+        const after = await page.evaluate(() => window.DipLabDuel.debug().open);
+        const ok = !!pt && modal && st.ev.includes('last-' + side) && st.log.includes('info ' + want) && after === 1;
+        record(k, size, ok, `點小列${side === 'e' ? '他' : '你'}那張 → 唱片資訊 ${modal ? '開了' : '沒開'}（info ${st.ev.join(',') || '—'}；${st.log.filter(x => /^info /.test(x)).join(',') || '—'}，要 ${want}；data-from ${st.from}）；關掉後手牌打開 ${after}`);
+      }
+      // 16f 丟出（第 2 手）：揭曉中小列變淡、籤藏起、仍是第 1 手那兩張、還點得開
+      const top = await page.evaluate(() => (document.querySelector('.dl .pop .ab.top') || {}).dataset || {});
+      await tapName(page, top.tut || 'chip-1-c');
+      await waitCallout(page);
+      await sleep(300);
+      const F1 = await LP();
+      const ex2 = await page.evaluate(() => window.__e2e.expect());
+      await page.evaluate(() => { window.__lpInfo.length = 0; });
+      const ptF = await hitPoint(page, '.dl .lastplay .lp.e');
+      if (ptF) await page.touchscreen.tap(ptF.x, ptF.y);
+      const modalF = await page.waitForSelector(INFO_SEL, { timeout: 3000 }).then(() => true, () => false);
+      const evF = await page.evaluate(() => window.__lpInfo.slice());
+      if (modalF) { await page.evaluate(q => { const b = document.querySelector(q); if (b) b.click(); }, INFO_CLOSE); await page.waitForSelector(INFO_SEL, { state: 'detached', timeout: 2000 }).catch(() => {}); }
+      const w16f = [];
+      if (!F1.fade || F1.opacity > 0.45 || F1.opacity < 0.35) w16f.push(`沒變淡（fade ${F1.fade}、${F1.opacity}）`);
+      if (!F1.label || F1.label.vis) w16f.push('「上一手」籤還在');
+      if (!F1.e || !F1.p || F1.e.card !== ex1.eCard || F1.p.card !== ex1.pCard) w16f.push('揭曉中小列不是第 1 手：' + short([F1.e && F1.e.card, F1.p && F1.p.card]));
+      if (!modalF || !evF.includes('last-e')) w16f.push('揭曉中點不開（' + evF.join(',') + '）');
+      record('16f', size, !w16f.length, `${w16f.join('；') || 'ok'}；揭曉中 opacity ${F1.opacity}、籤 ${F1.label && F1.label.vis ? '看得到' : '藏起'}；小列 ${F1.e && F1.e.card}／${F1.p && F1.p.card}；點開 ${modalF}`);
+      // 16g 第 3 手：小列換成第 2 手那兩張
+      const okN3 = await waitChoose(page);
+      await sleep(250);
+      const G = await LP();
+      const ok16g = okN3 && G.n === 3 && G.vis && !G.fade && G.opacity > 0.99 && G.label && G.label.vis && G.e && G.p && ex2 && G.e.card === ex2.eCard && G.p.card === ex2.pCard
+        && /\bpre\b/.test(G.slotE.cls) && !G.slotE.card && !G.slotE.cover && !/tighter/.test(G.cls) && noScroll(G);
+      record('16g', size, ok16g, `第 ${G.n} 手：小列 ${G.e && G.e.card}／${G.p && G.p.card}（第 2 手 ${ex2 && ex2.eCard}／${ex2 && ex2.pCard}）、淡 ${G.fade}、籤 ${G.label && G.label.vis}；他那格「${G.slotE.text}」`);
     }
     // ---- 12 六手比聲望（最後一手他贏、你靠聲望贏整場）＋勝利曲＋提示句每手換
     {
