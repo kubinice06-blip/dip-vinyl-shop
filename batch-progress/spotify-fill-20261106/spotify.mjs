@@ -47,7 +47,12 @@ async function search(q, lang) {
     used++;
     const r = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=album&limit=10&market=TW`, { headers: { Authorization: 'Bearer ' + token, 'Accept-Language': lang } });
     if (r.status === 401) { getToken(); continue; }
-    if (r.status === 429) { stop = `429 retry-after ${r.headers.get('retry-after')}s`; return null; }
+    if (r.status === 429) {
+      // 短暫限流（retry-after ≤ 120 秒，11-16 遇過 23 秒）就等一下再查；長的（日配額鎖）才停
+      const ra = +(r.headers.get('retry-after') || 0);
+      if (ra > 0 && ra <= 120 && i === 0) { await new Promise(s => setTimeout(s, (ra + 1) * 1000)); continue; }
+      stop = `429 retry-after ${r.headers.get('retry-after')}s`; return null;
+    }
     if (!r.ok) {
       // 出錯也要等，連續出錯就停（11-07 limit=20 被拒時一路空打 201 次、寫了 100 列空結果）
       consecutiveErr++;
