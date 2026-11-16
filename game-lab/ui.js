@@ -709,7 +709,10 @@
     };
     var h = '<span class="lab">包包</span>' + slot(s.ace, ' ace', 'ace') + '<span class="sep"></span>';
     var seeds = (save.run && save.run.seeds) || [];
-    for (var i = 0; i < Math.max(7, Math.min(8, s.bag.length)); i++) h += slot(s.bag[i], (isBargain(s.bag[i]) ? ' junk' : '') + (s.bag[i] && seeds.indexOf(s.bag[i]) >= 0 ? ' seed' : ''), i);
+    // 包包不限張數（店主 11-16）：這一條最多排 8 格；超過 8 張排前 7 張，第 8 格寫「+N」（其餘幾張；整個包包在來客的包包面板看）
+    var more = s.bag.length > 8 ? s.bag.length - 7 : 0, nSlot = more ? 7 : Math.max(7, Math.min(8, s.bag.length));
+    for (var i = 0; i < nSlot; i++) h += slot(s.bag[i], (isBargain(s.bag[i]) ? ' junk' : '') + (s.bag[i] && seeds.indexOf(s.bag[i]) >= 0 ? ' seed' : ''), i);
+    if (more) h += '<span class="slot more" aria-label="' + esc(bagText(s.bag.length)) + '">+' + more + '</span>';
     sc.strip.innerHTML = h;
   }
   // 一張封面從 from 飛到 to（from／to＝元素或畫面上的矩形）；回 { done: Promise, cancel() }。cancel＝直接到終點（不飛了）
@@ -2724,7 +2727,13 @@
         '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p>' + note + '<div class="lb-pick">' + tiles + '</div>' + foot;
     };
     var s = floatSheet(body(), 'bag tall');
-    var redraw = function () { var y = s.scrollTop; s.innerHTML = body(); s.scrollTop = y; };
+    // 重畫（捲到哪裡留在哪裡）；問「賣掉《…》？」那條出來時，選的那張被它蓋到就往上捲一點
+    var redraw = function () {
+      var y = s.scrollTop; s.innerHTML = body(); s.scrollTop = y;
+      s.classList.toggle('asking', !!pick);
+      var ft = pick && qs('.foot', s), tl = ft && qsa('.lb-ct', s).filter(function (x) { return x.getAttribute('data-cid') === pick; })[0];
+      if (ft && tl) { var d = tl.getBoundingClientRect().bottom - ft.getBoundingClientRect().top + 6; if (d > 0) s.scrollTop += d; }
+    };
     s.addEventListener('click', function (e) {
       var t = e.target.closest && e.target.closest('[data-pick],[data-a=sno],[data-a=sgo]');
       if (!t || t.disabled || !s.contains(t)) return;

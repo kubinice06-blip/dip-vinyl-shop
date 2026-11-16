@@ -22,7 +22,7 @@
  *   - 台幣行情（FIXLIST 8）：箱子／新進／店長推薦照稀有度 $800／1,000／1,200；FEATURE 史詩 $3,000／傳奇 $4,000；特價箱每張 $100–300（序章挑三張免費：價錢劃掉）；
  *     配件一件 $3,000；賣回半價。畫面上的錢一律千分位（mt＝engine.moneyText）。
  *   - 包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity）：買唱片、買特價箱都不用「先賣一張」；只剩「錢不夠、賣一張就夠」那條先賣（自願的，子面板可以關掉）。
- *     包包長了（20、30 張）：先賣子面板的格子縮到 52 px 還放不下，就讓格子那一區自己捲（.ec-scroll），標題、說明、鈕留在原位。
+ *     包包長了（20、30 張）：先賣子面板的格子縮到 36 px 還放不下，就把封面放回 56 px、讓格子那一區自己捲（.ec-scroll），標題、說明、鈕留在原位。
  *   - 老闆送的（王牌那組四張＋王牌，engine.isGift）不能賣回（FIXLIST 11 追加）：先賣子面板裡照樣列出來，但標「老闆送的」（C.shopUi.giftTag）、不能選；
  *     能不能買（賣一張就夠）、賣回價的範圍都只算能賣的那幾張。
  *   - 從唱片櫃帶來的種子（engine.isSeed；店主 11-13 §0 護欄）也不能賣回：先賣子面板照樣列出來、標「櫃裡帶來」（C.shopUi.seedTag）、選不了；
@@ -524,12 +524,13 @@
       var side = cols === 3 ? 30 : 0;   // 三欄：封面右邊放三軸星數
       var t = Math.floor(Math.min((w - 24 - gap * (cols - 1)) / cols - side, cols === 3 ? 104 : 88));
       el.style.setProperty('--ec-tile', t + 'px');
-      // 先賣子面板列整個包包（不限張數，店主 11-16）：封面最小 52 px（看得出是哪張）；還放不下就讓格子那一區自己捲（標題、說明、鈕不動）
-      var tmin = S.sub ? 52 : 36;
-      while (over() && t > tmin) { t -= 4; el.style.setProperty('--ec-tile', t + 'px'); }
+      var t0 = t;
+      while (over() && t > 36) { t -= 4; el.style.setProperty('--ec-tile', t + 'px'); }
+      // 先賣子面板列整個包包（不限張數，店主 11-16）：縮到 36 px 還放不下（包包長了）→ 封面放回 56 px（看得出是哪張），格子那一區自己捲（標題、說明、鈕不動）；
+      //   包包不長（放得下）照舊縮到放得下、不捲
+      if (S.sub && over()) { t = Math.min(t0, 56); el.style.setProperty('--ec-tile', t + 'px'); el.classList.add('ec-scroll'); }
       // 封面太窄（375×548 四欄 47 px）：電台籤（約 39 px）會碰到右上的選取勾（18 px）→ 只留色點、不寫字（讀屏字在格子的 aria-label）
       grid.classList.toggle('ec-narrow', t < 64);
-      if (S.sub && over()) el.classList.add('ec-scroll');
     }
   }
 

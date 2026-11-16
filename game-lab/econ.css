@@ -119,7 +119,7 @@
 .ec-spick.seed .ec-tcv{opacity:.5;}
 .ec-sv.ec-seed{font:700 10px var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--gold-ink,#8a6508);letter-spacing:.02em;}   /* 深金字：白底對比 ≥4.5（審查 #10） */
 .ec-line.warn{color:var(--red,#c0392b);font-weight:700;}
-/* 先賣子面板（錢不夠、賣一張就夠）列整個包包：包包不限張數（店主 11-16），封面縮到 52 px 還放不下 → 格子那一區自己捲（標題、說明、鈕不動；econ.js fit()） */
+/* 先賣子面板（錢不夠、賣一張就夠）列整個包包：包包不限張數（店主 11-16），封面縮到 36 px 還放不下 → 封面放回 56 px、格子那一區自己捲（標題、說明、鈕不動；econ.js fit()） */
 .ec-drawer.ec-scroll .ec-grid{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:4px;touch-action:pan-y;}
 .ec-foot{flex:none;padding-top:8px;}
 .ec-foot.two{display:flex;gap:8px;}

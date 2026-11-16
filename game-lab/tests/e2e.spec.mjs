@@ -56,12 +56,15 @@
 //     （結算那塊、唱片櫃頁「我的收藏」都是金框）；只能帶一次
 //  51 第二趟挑種子：再挑戰一趟 →（不挑王牌，沿用 save.lastAce＝pearl）→ 挑種子面板（擁有、不是頂點卡；三色篩選；最多 3 張；面板內可捲、整頁不捲）→ 就這幾張 → 特價箱 → 來客：
 //     包包＝種子＋老闆送的補到 4 張＋特價箱 3 張＝7、run.seeds＝挑的；序章那一趟不挑
-//  52 種子不能賣：包包滿了買箱子裡的 → 先賣子面板：種子標「櫃裡帶來」、選不了，點了說明「從唱片櫃帶來的不能賣」；引擎 buy 賣種子 → seedNoSell
+//  52 種子不能賣：錢不夠、賣一張就夠時買箱子裡的 → 先賣子面板（自願；包包不限張數之後沒有「包包滿先賣」）：種子標「櫃裡帶來」、選不了，點了說明「從唱片櫃帶來的不能賣」；
+//     引擎 buy 賣種子、單獨 sell 種子 → seedNoSell；包包面板（兩位客人之間）種子標「櫃裡帶來」、沒有「賣」鈕
 //  53 存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
 //  （換王牌，店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說）
 //  54 第 1 位開打前：來客畫面一次性提示（老闆頭上閃一下＋吐司「想換王牌，點老闆。」，save.seen.aceSwap，只出一次）→ 真點老闆＝小選單「聊聊／換一張王牌」（不捲動）
 //     → 聊聊＝老闆照舊說一句 → 換一張王牌＝挑王牌面板（標題「想換一張？」、預設選中現在那張、不捲動）→ 換 pearl：包包送的四張原位換、特價箱不動、
 //     save.lastAce、新那組算擁有（gift）、老闆說換好了＋吐司 → 再換選同一張＝不換（老闆「那就照舊。」）→ 打過第 1 位（第 2 位）點老闆：沒有選單、老闆說下一趟再換
+//  （包包不限張數，店主 11-16）
+//  56 包包 8 張打贏 → 挑唱片面板小字「包包 8 張」→ 收這張＝直接進包包（第 9 張；沒有「挑一張拿出來」面板）；包包 20 張再打贏 → 第 21 張也一樣；包包條「包包 21 張」
 //  （主站互通入口，v5 第六項第一期，店主 11-15）
 //  55 主站「帶去店裡對決」：?card=<遊戲卡 id>（第一次玩）→ 網址的 card 拿掉、save.bring、標題吐司（先走一趟那句）→ 序章算走完、唱片櫃有幾張比它強的 →
 //     再推門＝第二趟挑種子：第一張是它、已勾、封面「帶來的」、1／3、不捲動 → 就這幾張 → 開局包包第一張是它、run.seeds、save.bring 清空、認識不算擁有；
@@ -1144,13 +1147,16 @@ async function run() {
           sel.red === 'rgb(193, 22, 40)' && sel.stuck && /✓/.test(sel.check) && sel.outline === 'rgb(17, 17, 17)',
           `挑種子面板 ${seedsUp}：${sp0.tiles.length} 張（＝唱片櫃能當種子的 ${pool.length}；頂點卡 ${sp0.apex}、金框 ${sp0.store}）、篩選 ${sp0.filters.join('／')}（${ax} → ${fo.join('')}／${foWant}；沒有的那色 ${noneAx}：空的那句 ${emptyOk}）、點四張 → 選 ${sel.sel.length}「${sel.cnt}」「${sel.note}」吐司 ${JSON.stringify(sel.toast)} 沒選的 aria-disabled ${sel.dis.join()} 張數 ${sel.red} 捲到 ${sel.scrolled} 標題列看得到 ${sel.stuck} 選了 ${sel.check} ${sel.outline}；不列 pearl 送的 ${JSON.stringify(giftOut)}；副標「${sp0.sub}」；scroll ${JSON.stringify(sc51)}；` +
           `包包 ${JSON.stringify(rr.bag)}（種子＋送的補到 4 ${bagOk}）`);
-        // ---- #52 種子不能賣：包包補到 8 張、錢不夠 → 箱子裡買一張 → 先賣子面板
+        // ---- #52 種子不能賣（包包不限張數之後，店主 11-16）：包包補到 8 張、錢不夠但賣一張就夠 → 箱子裡買一張 → 先賣子面板（自願）；包包面板種子沒有「賣」鈕
         stage = '52';
         const setup = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine;
-          const extra = Object.keys(C.cards).filter(id => !C.cards[id].tier && !R.bag.includes(id) && !Object.values(R.shop.bins).flat().includes(id) && !C.bargain.pool.includes(id)).slice(0, 8 - R.bag.length);
-          R.bag.push(...extra); window.__lab.money(5000);                                 // 錢夠、包包滿：要先賣一張
-          const key = 'jazz', id = R.shop.bins[key][0], sd = R.seeds[0];
-          return { key, id, sd, eng: E.choose(JSON.parse(JSON.stringify(R)), C, { type: 'buy', key, cardId: id, sellId: sd }).error, bag: R.bag.length }; });
+          const extra = Object.keys(C.cards).filter(id => !C.cards[id].tier && !R.bag.includes(id) && !Object.values(R.shop.bins).flat().includes(id) && !C.bargain.pool.includes(id) && !(C.bargain.retired || []).includes(id)).slice(0, 8 - R.bag.length);
+          R.bag.push(...extra);
+          const key = 'jazz', id = R.shop.bins[key][0], sd = R.seeds[0], price = E.priceOf(C, C.cards[id]);
+          const max = Math.max(...R.bag.filter(b => !E.isGift(R, C, b) && !E.isSeed(R, C, b)).map(b => E.sellValue(C, C.cards[b])));
+          window.__lab.money(Math.max(0, price - max));                                   // 錢不夠、賣最值錢那張就夠：先賣子面板
+          const cp = () => JSON.parse(JSON.stringify(R));
+          return { key, id, sd, price, max, eng: E.choose(cp(), C, { type: 'buy', key, cardId: id, sellId: sd }).error, engSell: E.choose(cp(), C, { type: 'sell', cardId: sd }).error, bag: R.bag.length }; });
         await page.evaluate(() => window.__lab.stageAction('crate:jazz'));
         const drawer = await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer [data-a=buy]'), null, { timeout: 9000 }).then(() => true, () => false);
         await sleep(450);
@@ -1158,10 +1164,20 @@ async function run() {
         const sub = await page.evaluate(() => ({ sub: window.DipLabEcon.debug().sub, seeds: [...document.querySelectorAll('.ec-drawer .ec-spick.seed')].map(t => [t.dataset.cid, t.getAttribute('aria-disabled'), (t.querySelector('.ec-seed') || {}).textContent || '']) }));
         await page.evaluate(sd => { const b = document.querySelector(`.ec-drawer .ec-spick[data-cid="${sd}"]`); if (b) b.click(); }, setup.sd); await sleep(250);
         const after = await page.evaluate(() => ({ picks: (window.DipLabEcon.debug().sub || {}).picks || null, line: (document.querySelector('.ec-drawer .ec-line.warn') || {}).textContent || '', toast: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent).join('|'), want: window.DipLabContent.shopUi.seedNoSell, tag: window.DipLabContent.shopUi.seedTag }));
-        await page.evaluate(() => { const E = window.DipLabEcon; if (E && E.close) E.close(); }); await sleep(300);
-        if (want(52)) record(52, size, setup.eng === 'seedNoSell' && setup.bag === 8 && drawer && sub.sub && sub.sub.kind === 'card' && sub.seeds.length === 3 && sub.seeds.every(([, dis, tx]) => dis === 'true' && tx === after.tag) &&
-          after.picks && after.picks.length === 0 && after.line === after.want && after.want === '從唱片櫃帶來的不能賣' && after.toast.indexOf(after.want) >= 0,
-          `引擎賣種子 → ${setup.eng}；子面板 ${JSON.stringify(sub.sub)}：種子 ${sub.seeds.length} 張 ${JSON.stringify(sub.seeds.map(x => x[1] + '/' + x[2]))}；點了 → 沒選（${JSON.stringify(after.picks)}）、說明「${after.line}」、吐司 ${after.toast.indexOf(after.want) >= 0}`);
+        await page.evaluate(() => { const E = window.DipLabEcon; if (E && E.close) E.close(); }); await sleep(600);
+        // 包包面板（兩位客人之間）：種子標「櫃裡帶來」、沒有「賣」鈕；別的（不是送的）有
+        await waitScreen(page, 'night'); await sleep(300);
+        await jsClick(page, '.lb-bagline [data-a=bag]'); await sleep(500);
+        const sds52 = await page.evaluate(() => window.__lab.run.seeds.slice());
+        const bp = await page.evaluate(sds => { const s = document.querySelector('.lb-sheet.float.bag'); if (!s) return null;
+          const t = id => [...s.querySelectorAll('.lb-ct')].find(x => x.getAttribute('data-cid') === id);
+          return { seeds: sds.map(id => { const x = t(id); return x ? [!!x.querySelector('[data-pick]'), (x.querySelector('.sdtag') || {}).textContent || ''] : null; }), sell: s.querySelectorAll('[data-pick]').length }; }, sds52);
+        await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.bag [data-a=close]'); if (s) s.click(); }); await sleep(200);
+        if (want(52)) record(52, size, setup.eng === 'seedNoSell' && setup.engSell === 'seedNoSell' && setup.bag === 8 && drawer && sub.sub && sub.sub.kind === 'card' && sub.sub.why === 'money' && sub.seeds.length === 3 && sub.seeds.every(([, dis, tx]) => dis === 'true' && tx === after.tag) &&
+          after.picks && after.picks.length === 0 && after.line === after.want && after.want === '從唱片櫃帶來的不能賣' && after.toast.indexOf(after.want) >= 0 &&
+          bp && bp.seeds.length === 3 && bp.seeds.every(x => x && !x[0] && x[1] === after.tag) && bp.sell > 0,
+          `引擎買時賣種子 → ${setup.eng}、單獨賣種子 → ${setup.engSell}；錢 $${setup.price - setup.max}（《${setup.id}》$${setup.price}）→ 子面板 ${JSON.stringify(sub.sub)}：種子 ${sub.seeds.length} 張 ${JSON.stringify(sub.seeds.map(x => x[1] + '/' + x[2]))}；點了 → 沒選（${JSON.stringify(after.picks)}）、說明「${after.line}」、吐司 ${after.toast.indexOf(after.want) >= 0}；` +
+          `包包面板：種子 ${JSON.stringify(bp && bp.seeds)}（[有賣鈕, 小籤]）、能賣的 ${bp && bp.sell} 張`);
       } catch (e) { record(+stage, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -1252,7 +1268,7 @@ async function run() {
             bagN: (document.querySelector('.lb-bagline [data-a=bag] b') || {}).textContent || '' }; });
         const swOk = pickUp && pk.h3 === U.aceAsk && pk.sel === 'hall' && pk.n === 3 && pk.okIn && scrollOk(scP) && sw.scr === 'night' && sw.ace === 'pearl' &&
           JSON.stringify(sw.bag) === JSON.stringify(sw.want.concat(before.bag.slice(4))) && JSON.stringify(sw.gifts) === JSON.stringify(sw.want) && sw.lastAce === 'pearl' && sw.taken === before.taken && sw.money === before.money &&
-          sw.own && sw.aceKnown && sw.bossOk && sw.stored === 'pearl' && sw.said.includes(U.aceDone) && sw.toasts.includes(U.aceSwapped.replace('{album}', sw.album)) && sw.can && sw.bagN === sw.bag.length + '/8';
+          sw.own && sw.aceKnown && sw.bossOk && sw.stored === 'pearl' && sw.said.includes(U.aceDone) && sw.toasts.includes(U.aceSwapped.replace('{album}', sw.album)) && sw.can && sw.bagN === String(sw.bag.length);   // 包包條只寫張數（「包包 <b>n</b> 張」，店主 11-16 包包不限張數）
         // 再換一次、選同一張（pearl）＝不換
         await page.evaluate(() => window.__lab.stageAction('talk:owner')); await sleep(500);
         await jsClick(page, '.lb-sheet.owner [data-a=swap]');
@@ -1373,6 +1389,55 @@ async function run() {
           `王牌／第二次 ${badOk} ${JSON.stringify(bad.toasts)} ${JSON.stringify(g2.toasts)}；` +
           `兩個分頁 ${twoOk} ${JSON.stringify({ c: c7 && c7.id, aLs: a7.ls && a7.ls.id, aMem: a7.mem && a7.mem.id, first: sd7.first, sel: sd7.sel, ls: sd7.ls && sd7.ls.id })}`);
       } catch (e) { record(55, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #56 包包不限張數（店主 11-16）：包包 8 張打贏 → 挑唱片面板小字「包包 8 張」→ 收這張＝直接進包包（第 9 張，沒有「挑一張拿出來」面板）；
+    //     包包 20 張再打贏一位 → 收第 21 張也一樣；來客包包條「包包 21 張」
+    if (want(56)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'hall', pos: 2 }, Q());
+        await waitScreen(page, 'night'); await sleep(500);
+        const pad = n => page.evaluate(n => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine;
+          const used = new Set([C.aces[R.ace], ...R.bag, ...Object.values(R.shop.bins).flat(), ...R.shop.bargain, ...C.bargain.pool, ...(C.bargain.retired || [])]);
+          const extra = Object.keys(C.cards).filter(id => !C.cards[id].tier && !used.has(id) && E.priceOf(C, C.cards[id]) != null).slice(0, n - R.bag.length);
+          R.bag.push(...extra); return R.bag.length; }, n);
+        const winTake = async () => {
+          await jsClick(page, '[data-a=go]'); await duelReady(page); await sleep(200);
+          await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));   // 他丟一張：才有唱片可以撿
+          await duelReady(page);
+          await page.evaluate(() => window.__lab.forceWin());
+          await waitScreen(page, 'reward', 15000);
+          for (let g = 0; g < 60; g++) {
+            if (await page.$('.lb-sheet.reward [data-pick]')) break;
+            if (await page.$('.lb-dq.drop .nx.on')) await jsClick(page, '.lb-dq.drop');
+            await sleep(150);
+          }
+          await sleep(800);
+          const pre = await page.evaluate(() => ({ sub: (document.querySelector('.lb-sheet.reward .hd .sub') || {}).textContent || '', bag: window.__lab.run.bag.length,
+            pick: (document.querySelector('.lb-sheet.reward [data-pick]') || {}).getAttribute ? document.querySelector('.lb-sheet.reward [data-pick]').getAttribute('data-pick') : null }));
+          await tapAt(page, '.lb-sheet.reward [data-pick]');
+          let dropSheet = false;
+          for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) {
+            if (await page.$('.lb-sheet.drop')) dropSheet = true;
+            await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); });
+            await sleep(250);
+          }
+          await sleep(500);
+          const post = await page.evaluate(() => ({ bag: window.__lab.run.bag.slice(), line: ((document.querySelector('.lb-bagline [data-a=bag]') || {}).textContent || '').replace(/\s+/g, ''),
+            toasts: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent).join('|') }));
+          return { pre, post, dropSheet, scr: await screen(page) };
+        };
+        const n8 = await pad(8);
+        const a = await winTake();
+        const okA = n8 === 8 && a.pre.bag === 8 && a.pre.sub === '包包 8 張' && !!a.pre.pick && !a.dropSheet && a.scr === 'night' && a.post.bag.length === 9 && a.post.bag.includes(a.pre.pick) && a.post.line === '包包9張';
+        const n20 = await pad(20);
+        const b = await winTake();
+        const okB = n20 === 20 && b.pre.sub === '包包 20 張' && !!b.pre.pick && !b.dropSheet && b.scr === 'night' && b.post.bag.length === 21 && b.post.bag.includes(b.pre.pick) && b.post.line === '包包21張';
+        record(56, size, okA && okB, `包包 ${n8}：小字「${a.pre.sub}」→ 收《${a.pre.pick}》→ 拿出來面板 ${a.dropSheet}、${a.scr}、包包 ${a.post.bag.length}（有那張 ${a.post.bag.includes(a.pre.pick)}）、包包條「${a.post.line}」；` +
+          `包包 ${n20}：小字「${b.pre.sub}」→ 收《${b.pre.pick}》→ 拿出來面板 ${b.dropSheet}、${b.scr}、包包 ${b.post.bag.length}、包包條「${b.post.line}」`);
+      } catch (e) { record(56, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 

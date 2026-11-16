@@ -158,6 +158,7 @@ small{font-size:inherit;}
 .lb-strip .slot.filled{border-style:solid;border-color:var(--ink);cursor:pointer;}
 .lb-strip .slot.junk{opacity:.85;}
 .lb-strip .sep{width:1px;height:28px;background:var(--line);margin:0 2px;}
+.lb-strip .slot.more{display:grid;place-items:center;border-style:solid;border-color:var(--ink);background:#fff;font:700 10px 'Space Mono',monospace;color:var(--ink);letter-spacing:-.02em;}   /* 包包超過 8 張：第 8 格「+N」（店主 11-16 包包不限張數） */
 .lb-strip .tag{font-size:10px;color:var(--gray2);white-space:nowrap;margin-left:4px;overflow:hidden;text-overflow:ellipsis;min-width:0;}
 .lb-fly{position:fixed;z-index:60;background-size:cover;background-position:center;border:1px solid var(--ink);pointer-events:none;}
 
@@ -322,6 +323,7 @@ small{font-size:inherit;}
 .lb-sheet.float.bag .bgnote.warn{color:var(--red);font-weight:700;}
 .lb-sheet.float.bag .lb-pick .lb-pickb{min-height:36px;padding:0 2px;font-size:11px;letter-spacing:0;white-space:nowrap;overflow:hidden;}
 .lb-ct .sdtag.gf{color:#6b6b6b;}   /* 老闆送的（不能賣）：灰字；白底對比 ≥4.5 */
+.lb-sheet.float.bag.asking{padding-bottom:0;}   /* 底下那條自己留安全區（.foot 的 padding-bottom），面板不再多留一截 */
 .lb-sheet.float.bag .foot.bgsell{padding-top:8px;}
 .lb-sheet.float.bag .foot .ask{margin:0 0 6px;font-size:13px;font-weight:700;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .lb-sheet.float.bag .foot .two{margin-top:0;}
