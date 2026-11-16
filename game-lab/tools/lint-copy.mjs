@@ -310,8 +310,8 @@ for (const [a, ws] of Object.entries(C.hintKeywords || {})) (ws || []).forEach((
   add({ scene: '提示的關鍵字族（D §5；參考清單）', where: 'hintKeywords.' + a + '[' + k + ']', who: '（關鍵字）', key: ATTR_ZH[a], text: w, tag: C.hintKeywordsTag });
 });
 
-// 一次性老闆小提示（SPEC-v3 §6）：duel.js hooks.hint 的五個 id
-const TIP_IDS = ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds'];
+// 一次性老闆小提示（SPEC-v3 §6）：duel.js hooks.hint 的六個 id（tip_lastplay：上一手小列，店主 11-16）
+const TIP_IDS = ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay'];
 const TIPS = C.coachTips || {};
 for (const id of TIP_IDS) if (!TIPS[id]) err('coachTips.' + id, '缺少（duel.js 會送這個 id）');
 for (const [k, v] of Object.entries(TIPS)) {

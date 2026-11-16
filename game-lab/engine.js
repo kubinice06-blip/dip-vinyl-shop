@@ -189,6 +189,7 @@
     price: { common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 },
     bargain: { 1: 100, 2: 200, 3: 300 }, relicPrice: 3000, sellRate: 0.5, stock: [4, 6], featureStock: [2, 3], relicStock: [2, 3] };
   // 無限試煉（＝content.js 的 C.trial；沒給時的預設）。曲線 V3（../curve/curves.cjs：舊版 roguelike enemyForDepth 的形狀＋甲的斜率）
+  //   ＋店主 11-16「前期太簡單」：只動第 1–4 位（q.easy 1→0.8、q.normal 0.85→0.75、atk／def.lateFrom 3→1），第 5 位起跟 V3 逐位一樣
   const TRIAL = {
     classes: ['normal', 'normal', 'normal', 'elite', 'boss'],   // 一輪 5 位：一般 3、菁英、傳說藏家
     retry: 1, youHp: 12, heal: 3, guestHp: { normal: 12, elite: 12, boss: 14 },
@@ -196,10 +197,10 @@
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
     curve: {
       planner: { easyTo: 2, normalTo: 4 },                                         // 第 1–2 位 easy、3–4 normal、5 起 hard
-      q: { easy: 1, normal: 0.85, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },   // hard：q＝1−min(.55, .18＋.05·max(0, 位−5))
+      q: { easy: 0.8, normal: 0.75, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },   // hard：q＝1−min(.55, .18＋.05·max(0, 位−5))
       mercyFeint: 0.8,                                                              // 放水：唬人率 ×(1−0.8×mercy)（roguelike.html:3693-3695）
-      atk: { lateFrom: 3, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },   // min(2, round(.75·late))＋⌊max(0, 位−6)/5⌋（藏家 +1）
-      def: { lateFrom: 3, rate: 0.45, cap: 1, boss: 1, add: 0 },                                  // min(1, round(.45·late))（藏家 +1）
+      atk: { lateFrom: 1, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },   // min(2, round(.75·max(0, 位−1)))＋⌊max(0, 位−6)/5⌋（藏家 +1）
+      def: { lateFrom: 1, rate: 0.45, cap: 1, boss: 1, add: 0 },                                  // min(1, round(.45·max(0, 位−1)))（藏家 +1）
       deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6 },
     },
     tiers: [],
@@ -854,7 +855,7 @@
   // 第幾位 → 類別（每 5 位：一般 3、菁英、藏家）、第幾輪
   const classAt = pos => POS_CLASSES[((Math.max(1, pos | 0) - 1) % PER_ROUND)];
   const roundOf = pos => Math.ceil(Math.max(1, pos | 0) / PER_ROUND);
-  // 客人曲線 V3（../curve/curves.cjs：atkV3f、defV3f、oldQ、oldDiff；聲望固定 12、藏家 14）
+  // 客人曲線 V3（../curve/curves.cjs：atkV3f、defV3f、oldQ、oldDiff；聲望固定 12、藏家 14）＋11-16 前期加難（第 1–4 位，見 TRIAL）
   function trialGuest(content, pos, cls, tier) {
     const T = trialCfg(content, tier), K = T.curve, d = Math.max(1, pos | 0);
     cls = POS_CLASSES.includes(cls) ? cls : classAt(d);

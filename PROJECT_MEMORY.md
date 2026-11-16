@@ -1,5 +1,37 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-16｜dip-vinyl-shop｜game-lab 流派與頂點卡靠遊戲解鎖（打倒傳說藏家掉被剋那派）
+
+- **店主 11-16**：「換流派只能每局一開始，中間不能換；每次流派的頂點卡要透過遊戲蒐集才能解鎖，不是一開始就給 15 張……第一次通過傳說藏家時，可以獲得玩家初始流派的被剋流派，比如流亡就掉落殿堂，以此類推。」
+- **規則**：新玩家只有**初始流派**（序章 O9 挑的那派；`?apex=1` 跳過序章的新存檔先三選一，有 ✕ 可退）。打倒傳說藏家＝收他帶的頂點卡；藏家帶哪張照被剋鏈（`engine.TIER_BEATS`：流亡→殿堂→異端→流亡；`run.bossCard` 每輪算，雜湊選卡、不碰 `run.rng`）。解鎖＝擁有那派任一張（唱片櫃 src `start`／`boss`）。三派都開、旗標開時藏家帶一張還沒收到的試做卡。換派照舊只在開局（`canSwitchAce`），`switchAce` 多錯誤碼 `locked`／`notOwned`。
+- **介面**：三選一面板鎖住的派灰掉加像素鎖；`?apex=1` 挑王牌面板鎖住的分頁、沒收到的卡灰掉（點了大鈕改「還是帶《…》」）；點老闆小選單沒得換時按不下去；打倒藏家「解鎖了○○派」（鎖頭打開動畫）／「收進唱片櫃」；點藏家頭像寫他帶的那張；標題與唱片櫃「流派 1／3・下一派…」（`?apex=1` 加「頂點卡 n／45」）；第一次挑派說明「挑了就是初始流派。其他兩派，打倒傳說藏家解鎖。」＋第一晚一次性吐司。舊存檔：lastAce 那派補記成擁有、吐司說明一次，存檔版本不升。
+- **流程**：引擎 → 介面 → 邏輯／體驗審查＋對抗驗證（確認 7 項：說情重打時藏家換卡、招牌蓋住三選一標題、點沒收到的卡大鈕不一致、只有一張也跳 15 格、分頁 class 撞通用 gap、三選一沒有返回、序章 O9 沒說會定死）→ 全修。契約 `v5/unlock/CONTRACT.md`。
+- **主線裁定（可逆）**：解鎖速度照店主原話「每位藏家掉鏈上的下一派」：第一趟打到第 10 位就三派全開（會讀的 96%、新手 88%）；`?apex=1` 時會讀的一趟收約 16 張、約三趟收齊 45 張。要放慢只改 `bossCardFor` 一處。
+- **e2e 工具**：`tests/e2e-lib.mjs` 加選用 `LAB_ROOT`（不開伺服器時由 Playwright 從磁碟回應）、`seedRun` 加 `ownAces`／`ownIds`；新增 `tests/e2e-unlock.mjs`。
+- **模擬**：sim `--unlock` 選用參數（每趟當新玩家）；不開時輸出跟改動前逐字相同。併入 #463／#464 後 `sim --n 1000` 門檻全過（T1 10.8%、T1b 0.8%、會讀的中位 87、到第 100 位 39.3%）。
+- **主要檔案**：`game-lab/{engine.js,ui.js,content.js,style.css,sim.mjs,index.html,README.md,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-lib,e2e-unlock,e2e-apex,e2e-econ,e2e-room,e2e.spec}.mjs`。併入後 `?v=75`。
+- **驗證**：check-content／lint-copy／check-shops／check-covers／build-pool-index --check 通過；併入後主線複跑 engine 2,345,161、tutorial 505,169 全過，e2e-unlock 6/6、e2e-duel 59/59、e2e-apex 18/18（390），e2e.spec 390 見下；fix 棒全套（apex 35、duel 84、econ 54、prologue 52、intro 25、taps 28、room 21、unlock 12、e2e.spec 四尺寸）全過。
+
+### 2026-11-16｜dip-vinyl-shop｜game-lab 對決：上一手兩張專輯留在牌桌上方小列
+
+- **店主 11-16**：「打完要把上一手的專輯留在檯面上，不然玩家無法看清楚對方打的專輯，就無法認識新專輯。」
+- **做了什麼**：牌桌最上面加一列「上一手」小列（`duel.js` `renderStrip`、`.lastplay`）：左邊他上一手、右邊你上一手（小封面＋「［上一手］他・經典 5」灰字＋專輯名），點、長按、鍵盤都開唱片資訊（where `last-e`／`last-p`；`cardinfo.js` 擋 `duel:last-e` 不露他王牌能力）。他這手照樣整格蓋著。換手（t=2060）時兩張大封面縮進小列；揭曉中與打完淡到 40%、籤藏起；第 1 手沒有小列。一次性老闆小提示 `tip_lastplay`「上一手留在上面，點封面看唱片資訊。」
+- **代價**：第 2 手起牌桌封面 375×548 144→126、手牌 97→86（390×664 176→155、115→103）；四尺寸不捲動。
+- **流程**：兩個原型（原位留著 vs 上方小列）評比 → 選小列並嫁接三點 → 施工 → 邏輯／體驗審查＋對抗驗證（確認 3 項 low：長按跨過換手開錯張、「上一手」標示太弱、打完留 40 px 空帶）→ 全修。設計 `v5/lastplay/DESIGN.md`。
+- **主要檔案**：`game-lab/{duel.js,duel.css,content.js,cardinfo.js,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/tests/{e2e-duel,e2e.spec}.mjs`。併入 #463 後 `?v=74`。
+- **驗證**：check-content／lint-copy；engine 2,344,997（併入後主線複跑）、tutorial 505,169 等全過；e2e-duel 102/102（併入後主線複跑 390 59/59）、e2e.spec 四尺寸 142/142、e2e-prologue 52×2、e2e-apex 35/35（併入後主線複跑 375 18/18）、e2e-taps 14/14、e2e-econ 54/54；教學 26 步走完。**沒驗**：真 iPhone。
+
+### 2026-11-16｜dip-vinyl-shop｜game-lab 前期加難：第 1 位就會唬人（只動第 1–4 位）
+
+- **店主 11-16**：「現在玩起來前期太簡單了，沒有挑戰性。」原因：`C.trial.curve` 第 1–2 位說真話 1（永遠不唬）、品味第 4 位、底氣第 5 位才有，照提示剋就送分（smart 新手第 1–3 位死 1.5%）。
+- **做了什麼**：只改 `C.trial.curve` 四個旋鈕（`engine.js` 的 TRIAL 預設同步）：q.easy 1→0.8、q.normal 0.85→0.75、atk.lateFrom 3→1、def.lateFrom 3→1。逐位：第 1 位唬 20%（品味底氣 0）、第 2 位唬 20%＋品味 1、第 3–4 位唬 25%（有放水）＋品味 2 底氣 1；第 5 位起跟 V3 逐位一樣（engine.test #16 第 5–300 位三類別逐位守）。planner、feint*、mercyFeint、deck、guestHp 不動；序章男子與教學不受影響。
+- **門檻**：T1 改「新手第 1–3 位死 8–15%」（原 ≤5%＝刻意暖身）；新增 T1b「會讀的第 1–3 位死 ≤3%」；T3 註解改字。
+- **流程**：兩路掃描（唬人旋鈕 21 組、數值旋鈕 13 組，n=1000／2000）→ 選組（q80n75-lf1）→ 施工 → 審查＋對抗驗證（確認 0 項；「第 1–2 位唬人不放水」判定為寫明的設計：easy 出招本來沒有放水，改成放水也只到 8.3%）→ 全套重驗。報告 `v5/early/{PICK,FINAL}.md`。
+- **模擬（smart n=2000，同一批客人）**：新手第 1–3 位死 1.5%→9.8%、會讀的 0%→1.0%；新手第 1–4 位首戰 96／98／100／99→88／89／94／94；新手深度中位 16→15、會讀的到第 100 位 40%→38.9%；一場手數新手 3.07→3.16；sim 門檻 17/17 過。
+- **待接**：第 A 波（放水第 11 位起照機率）也改 `C.trial.curve`，合併後重跑 sim；屆時順手讓第 1–2 位 easy 出招也吃放水，跟店主「放水前期保留」一致（量過 T1 仍 8.3% 過）。
+- **主要檔案**：`game-lab/{content.js,engine.js,sim.mjs,index.html,README.md}`、`game-lab/test/engine.test.mjs`。`?v=73`。
+- **驗證**：check-content／lint-copy／check-shops／check-covers 通過；engine 2,344,995（主線複跑）、tutorial 505,169、chars、shop、hit 全過；e2e-duel 84/84、e2e-econ 54/54、e2e-apex 35/35、e2e-room 21/21、e2e-prologue 52/52×2、e2e-intro 25/25、e2e-taps 28/28、e2e.spec 四尺寸 142/142。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 包包不限張數＋開局特價箱改「最高 3 星、三軸加總 ≤5」
 
 - **店主 11-16**：「手牌不要只限八張，可以無限多直到結束才重置；一開始只要給玩家王牌＋四張一般＋三張特價（星星最高三，加起來不高於五）。」主線解讀：「手牌」＝包包（對決手牌照舊 5 張）；「加起來不高於五」＝每一張自己三軸加總（可逆，寫在 `v5/bag/BRIEF.md`）。

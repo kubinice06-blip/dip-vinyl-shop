@@ -187,7 +187,7 @@
   //   你 12 聲望、帶到下一場、打贏回 3（不超過上限）；客人 12、藏家 14。老闆說情每輪 1 次；商店每輪補貨一次。
   //   局內升級：贏一般 +2 經驗、菁英 +3、藏家 +4；升下一級要「目前等級＋3」；每升一級聲望上限 +1（現有聲望也 +1），再三選一（picks）。
   //   中繼點：打贏第 10、20、30、50、75、100 位，之後每 50 位（票之後再做）。
-  //   curve＝難度曲線 V3（../curve/curves.cjs；照店主舊版 roguelike enemyForDepth 的形狀，第 6 位之後客人品味每 5 位 +1）。改難度只改這裡；
+  //   curve＝難度曲線 V3（../curve/curves.cjs；照店主舊版 roguelike enemyForDepth 的形狀，第 6 位之後客人品味每 5 位 +1）＋11-16 前期加難（只動第 1–4 位）。改難度只改這裡；
   //   tiers＝之後的難度階梯（像 Monster Train 的 Covenant）：第 k 階＝tiers[k−1]，是 curve／guestHp… 的部分覆寫，例 { curve: { atk: { add: 1 } } }
   // ===================================================================
   C.trial = {
@@ -199,14 +199,18 @@
     picks: { atk: 1, def: 1, hp: 2 },               // 三選一：品味 +1、底氣 +1、聲望上限 +2（現有聲望也 +2）
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
     curve: {
-      planner: { easyTo: 2, normalTo: 4 },          // 出招難度：第 1–2 位 easy、第 3–4 位 normal、第 5 位起 hard（C.planners）
-      // 說真話機率 q：easy 1、normal 0.85、hard 1−min(0.55, 0.18＋0.05×max(0, 位−5))（第 5 位 0.82、第 13 位起封底 0.45）
-      q: { easy: 1, normal: 0.85, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },
-      mercyFeint: 0.8,                              // 放水：你落後時他少唬，唬人率 ×(1−0.8×mercy)（舊版 roguelike.html:3693-3695）
-      // 客人品味（他這手扣到你才加，再扣你的底氣）：min(2, round(0.75×max(0, 位−3)))＋⌊max(0, 位−6)/5⌋，藏家 +1；add＝之後難度階梯用
-      atk: { lateFrom: 3, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },
-      // 客人底氣（最多擋一半）：min(1, round(0.45×max(0, 位−3)))，藏家 +1
-      def: { lateFrom: 3, rate: 0.45, cap: 1, boss: 1, add: 0 },
+      // 前期加難（店主 11-16「前期太簡單了，沒有挑戰性」）：只動第 1–4 位，第 5 位起跟 V3 逐位一樣。
+      //   原本第 1–2 位說真話 1（永遠不唬）、品味第 4 位、底氣第 5 位才有，照提示剋就送分；現在第 1 位就會唬人（品味、底氣仍 0，要讀出唬人才贏得穩）、
+      //   第 2 位品味 1、第 3–4 位品味 2 底氣 1、唬人 25%（有放水）。sim n=2000：新手第 1–3 位死 1.5%→約 10%、會讀的約 1%（T1／T1b）
+      planner: { easyTo: 2, normalTo: 4 },          // 出招難度：第 1–2 位 easy（沒有放水）、第 3–4 位 normal、第 5 位起 hard（C.planners）
+      // 說真話機率 q：easy 0.8、normal 0.75（V3 是 1／0.85）、hard 1−min(0.55, 0.18＋0.05×max(0, 位−5))（第 5 位 0.82、第 13 位起封底 0.45）
+      q: { easy: 0.8, normal: 0.75, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },
+      mercyFeint: 0.8,                              // 放水：你落後時他少唬，唬人率 ×(1−0.8×mercy)（舊版 roguelike.html:3693-3695；easy 出招不放水）
+      // 客人品味（他這手扣到你才加，再扣你的底氣）：min(2, round(0.75×max(0, 位−1)))＋⌊max(0, 位−6)/5⌋，藏家 +1；add＝之後難度階梯用
+      //   lateFrom 1（V3 是 3）：第 1 位 0、第 2 位 1、第 3 位起 2（第 5 位起跟 V3 一樣）
+      atk: { lateFrom: 1, rate: 0.75, cap: 2, slopeFrom: 6, slopeEvery: 5, boss: 1, add: 0 },
+      // 客人底氣（最多擋一半）：min(1, round(0.45×max(0, 位−1)))，藏家 +1（lateFrom 1：第 3 位起 1；V3 是第 5 位起）
+      def: { lateFrom: 1, rate: 0.45, cap: 1, boss: 1, add: 0 },
       // 客人牌組：三軸總星下限 min(13, 3＋⌊0.7×位⌋)（低於的換掉）；主軸加 ⌊max(0, 位−3)/3⌋ 星、上限 5；
       //   藏家必帶王牌；一般客人第 5 位起帶王牌機率 min(60%, 15%×(位−4))
       deck: { floorBase: 3, floorRate: 0.7, floorMax: 13, minPool: 7, buffFrom: 3, buffEvery: 3, buffCap: 5, aceFrom: 5, aceRate: 0.15, aceMax: 0.6 }
@@ -643,11 +647,12 @@
     tip_bluff: '嘴上說名盤，手上不一定是。',
     tip_block: '差 2 星以上，剋不動。',
     tip_ace: '王牌 7 星，一場用一次。',
-    tip_rounds: '六手沒分勝負，比聲望條剩幾成。'
+    tip_rounds: '六手沒分勝負，比聲望條剩幾成。',
+    tip_lastplay: '上一手留在上面，點封面看唱片資訊。'   // 店主 11-16「打完要把上一手的專輯留在檯面上」：小封面很小，教玩家點得開（17 字：375／360 寬泡泡也是一行）
   };
   C.coachTipWhen = {
     tip_mirror: '第一次同色比星（含同色同星）', tip_bluff: '第一次被唬', tip_block: '第一次剋不動（你或他）',
-    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手'
+    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手', tip_lastplay: '第一次出現上一手小列（第 2 手）'
   };
   C.coachTipTags = {};
   Object.keys(C.coachTips).forEach(function (k) { C.coachTipTags[k] = '新'; });
@@ -671,7 +676,8 @@
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
-    tapOn: '點一下繼續'   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
+    tapOn: '點一下繼續',   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
+    lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊'   // 上一手小列的讀屏字（店主 11-16）；{who}＝他／你，{t}＝藝人《專輯》
   };
   C.duelTextTag = '新';
   // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄寫全名；duel.js 只把屬性第一個字上色、第二個字黑、剋灰（店主 11-12）

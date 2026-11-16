@@ -28,10 +28,13 @@
 //   單位死亡率＝到了這一位的趟裡有幾成在這一位結束；首戰＝這一位的第一場（說情重打不算）；懸崖＝相鄰兩個非藏家位（都 ≥200 趟到過）首戰勝率掉最多的地方。
 //
 // 門檻（SPEC §4 第三棒；全部看 --gate 流程。2026-11-12 先跑一次 --n 2000 再定數字。任一條沒過 process.exitCode = 1）：
-//   T1 新手 第 1–3 位死亡 ≤5%（V3 2%）
+//   T1 新手 第 1–3 位死亡 8–15%（2026-11-16 店主「前期太簡單了，沒有挑戰性」；原本 ≤5%＝刻意的暖身，V3 2%、smart 1.5%）：
+//      C.trial.curve 第 1–4 位加難（第 1 位就會唬人）後 smart n=2000 9.8%。下限 8% 擋退回送分（q.easy 0.9 只有 4.1%、0.85 也只 5.0%）；
+//      上限 15% 擋把只會照提示剋的新手卡死在前三位（掃描裡有一組 18.7%）。scratchpad v5/early/PICK.md
+//   T1b 會讀的 第 1–3 位死亡 ≤3%（11-16 新增：加的難度要「讀得出唬人就過得去」，不是全面變難；選定組 1.0%）
 //   T2 照規劃書 #s3 的目標（主線 11-12 裁定：SPEC 原本照 V3 bare 寫的 8–20 不含獎勵與商店，改回店主的目標）：
 //      T2a 一般玩家（新手）深度中位數 10–30；T2b 讀得準的高手（會讀的）有機會破 100 位：到第 100 位 10–70%
-//   T3 會讀的 藏家位死亡率是非藏家位的 2–4 倍：第 4–60 位、到過 ≥200 趟的位置合併算（暖身第 1–3 位設計上不死，不算進來；V3 13–20% 對 5–7%）
+//   T3 會讀的 藏家位死亡率是非藏家位的 2–4 倍：第 4–60 位、到過 ≥200 趟的位置合併算（第 1–3 位是前期、另有 T1／T1b 看，不算進來；V3 13–20% 對 5–7%）
 //   T4 相鄰非藏家位首戰勝率掉 ≤20 點（新手、會讀的各一條；V3 新手第 4→6 位 19 點、會讀的 14 點）
 //   T5 一場平均手數：新手 3–4.5（舊版試玩表 3–4 招）；會讀的 2.5–4.5（後段包包變強、一場變短；之後用 C.trial.tiers 難度階梯給高手加難度，店主 11-12 參考 Monster Train）
 //   T6 亂出 到第 5 位 ≤5%：第一次跑出 smart 1.5%、none 0.5%、bare 0.05%（亂出第 1 位首戰只贏 2 成，97% 死在第 1–3 位）；留 3 倍餘裕（舊 S3 也是 ≤5%）
@@ -286,7 +289,7 @@ function runCell(pol, flow, n) {
   let cliff = { drop: 0, at: null, from: null }, prev = null;
   for (const p of pos) { if (p.cls === 'boss' || p.reached < 200) continue; if (prev && prev.win1 - p.win1 > cliff.drop) cliff = { drop: prev.win1 - p.win1, from: prev.d, at: p.d, w0: prev.win1, w1: p.win1 }; prev = p; }
   let hzMax = { h: 0, at: null }; for (const p of pos) if (p.cls !== 'boss' && p.reached >= 200 && p.hazard > hzMax.h) hzMax = { h: p.hazard, at: p.d };
-  // T3：第 4–60 位、到過 ≥200 趟的位置，藏家位合併死亡率 ÷ 非藏家位合併死亡率（暖身第 1–3 位不算）
+  // T3：第 4–60 位、到過 ≥200 趟的位置，藏家位合併死亡率 ÷ 非藏家位合併死亡率（第 1–3 位是前期，看 T1／T1b，不算進來）
   let hb = 0, hbn = 0, hn = 0, hnn = 0;
   for (const p of pos) { if (p.d < 4 || p.reached < 200) continue; if (p.cls === 'boss') { hb += A.deaths[p.d]; hbn += p.reached; } else { hn += A.deaths[p.d]; hnn += p.reached; } }
   const hazBoss = hbn ? hb / hbn : null, hazNon = hnn ? hn / hnn : null;
@@ -418,7 +421,8 @@ if (MODE === 'all' || MODE === 'runs') {
 
   // ---- 門檻（--gate 流程）----
   const G = cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, tag = `［${GATE}］`;
-  if (NV) check('T1', `${tag}新手 第 1–3 位死亡 ≤5%`, NV.die13 <= 0.05 + 1e-9, `${pct(NV.die13)}（V3 2%）`);
+  if (NV) check('T1', `${tag}新手 第 1–3 位死亡 8–15%（前期要有挑戰，見檔頭）`, NV.die13 >= 0.08 - 1e-9 && NV.die13 <= 0.15 + 1e-9, `${pct(NV.die13)}（V3 2%；11-16 前期加難前 smart 1.5%）`);
+  if (TH) check('T1b', `${tag}會讀的 第 1–3 位死亡 ≤3%`, TH.die13 <= 0.03 + 1e-9, `${pct(TH.die13)}（V3 0%）`);
   if (NV) check('T2a', `${tag}新手 深度中位數 10–30（一般玩家走到第 10–30 位）`, NV.median >= 10 && NV.median <= 30, `中位 ${NV.median}、平均 ${NV.mean.toFixed(1)}`);
   if (TH) check('T2b', `${tag}會讀的 到第 100 位 10–70%（高手有機會破 100）`, TH.reach[4] >= 0.10 - 1e-9 && TH.reach[4] <= 0.70 + 1e-9, `到第 100 位 ${pct(TH.reach[4])}、中位 ${TH.median}`);
   if (TH) check('T3', `${tag}會讀的 藏家位死亡率是非藏家位的 2–4 倍（第 4–60 位）`, TH.bossRatio != null && TH.bossRatio >= 2 - 1e-9 && TH.bossRatio <= 4 + 1e-9,

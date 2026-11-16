@@ -81,9 +81,9 @@
       '</div><div class="stream-attribution">Preview provided courtesy of iTunes</div>';
   }
 
-  // 頂點卡試做（?apex=1）：這張的能力（engine.abilityOf；不在名單＝null）
+  // 頂點卡試做（?apex=1）：這張的能力（engine.abilityOf；不在名單＝null）。他丟的那張（牌桌他那格、上一手小列他那張）不露他王牌的能力
   function apexOf(o, opts) {
-    if (!CFG.apex || !o.ace || (opts && opts.from === 'duel:slot-e')) return null;
+    if (!CFG.apex || !o.ace || (opts && /^duel:(slot|last)-e$/.test(String(opts.from || '')))) return null;
     var E = W.DipLabEngine, C = W.DipLabContent;
     try { return E && E.abilityOf && C && C.apexTrial ? E.abilityOf(C, o.id) : null; } catch (_) { return null; }
   }

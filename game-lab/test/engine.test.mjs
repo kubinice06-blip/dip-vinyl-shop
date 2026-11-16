@@ -168,18 +168,20 @@ section('1 preview === resolve（10 客人 × 3 王牌 × 400 種子；每一手
 
 // 無限試煉的說真話機率（SPEC §0：舊版虛晃率 oldQ；第 13 位起封底 0.45）——測試自己照 curves.cjs 寫一份，不讀 engine
 const oldQ = d => (d < 3 ? 1 : d < 5 ? 0.85 : 1 - Math.min(0.55, 0.18 + 0.05 * Math.max(0, d - 5)));
+// 現在的曲線 q：店主 11-16「前期太簡單」——第 1–2 位 0.8（easy，會唬人、不放水）、第 3–4 位 0.75（normal）；第 5 位起＝oldQ
+const curQ = d => (d < 3 ? 0.8 : d < 5 ? 0.75 : oldQ(d));
 const mercyOfT = st => { const P = st.p, E = st.e, pR = Math.max(0, P.hp) / (P.max || 1), eR = Math.max(0, E.hp) / (E.max || 1); let m = Math.max(0, eR - pR) * 1.3; if (P.hp <= 3) m += 0.35; return Math.min(1, m); };
 const idsAt = pos => { const c = EN.classAt(pos); return c === 'boss' ? [C.boss] : c === 'elite' ? C.elites : C.normals; };
-section('2 誠實度：無限試煉每一位 q＝舊版虛晃率（mercy 關 ±0.01）；放水：照實率＝Σ qNow（±0.01）；直接開打照 C.honesty；ace／script／headphone 100% 照實；唬人出 BEATS[提示]；王牌不變式', () => {
+section('2 誠實度：無限試煉每一位 q＝曲線 q（舊版虛晃率＋11-16 前期加難；mercy 關 ±0.01）；放水：照實率＝Σ qNow（±0.01）；直接開打照 C.honesty；ace／script／headphone 100% 照實；唬人出 BEATS[提示]；王牌不變式', () => {
   const POS = QUICK ? [1, 4, 6, 13] : [1, 2, 3, 4, 5, 6, 8, 10, 12, 13, 20];
   const target = QUICK ? 12000 : 30000;
   const whyN = {};
-  // (a) mercy 關：照實比例＝trialGuest(pos).q＝oldQ(pos)
+  // (a) mercy 關：照實比例＝trialGuest(pos).q＝curQ(pos)（第 1–2 位 easy 也會唬：q 0.8）
   try {
     CFG.mercy = false;
     for (const pos of POS) {
-      const ids = idsAt(pos), q = oldQ(pos);
-      ok(Math.abs(EN.trialGuest(C, pos, EN.classAt(pos)).q - q) < 1e-9, 'trialGuest q = oldQ at ' + pos);
+      const ids = idsAt(pos), q = curQ(pos);
+      ok(Math.abs(EN.trialGuest(C, pos, EN.classAt(pos)).q - q) < 1e-9, 'trialGuest q = curQ at ' + pos);
       let hands = 0, honest = 0;
       for (let s = 1; hands < target; s++) {
         const id = ids[s % ids.length], tier = TIERS[s % 3];
@@ -216,7 +218,7 @@ section('2 誠實度：無限試煉每一位 q＝舊版虛晃率（mercy 關 ±0
   } finally { CFG.mercy = true; }
   // (b) 放水（mercy 開）：這手的 qNow＝1−(1−q)(1−0.8·mercy)（只有 normal／hard）；照實手數＝Σ qNow（±0.01）；你落後時他確實少唬
   for (const pos of POS.filter(p => p >= 3)) {
-    const ids = idsAt(pos), q = oldQ(pos);
+    const ids = idsAt(pos), q = curQ(pos);
     let hands = 0, honest = 0, sumQ = 0, behind = 0;
     for (let s = 1; hands < target / 2; s++) {
       const { duel } = startFor(ids[s % ids.length], TIERS[s % 3], s * 41 + 3 + pos, { pos, hp: 4 + (s % 9), maxHp: 12 });
@@ -1059,7 +1061,7 @@ section('15 台幣行情（FIXLIST 8）：稀有度、價格、特價箱每張�
   ok(v.eTitle === null && v.eName === '地下廠牌主理人', 'view: name only, no title', { n: v.eName, t: v.eTitle });
 });
 
-// 無限試煉 V3 曲線（../curve/curves.cjs atkV3f／defV3f／oldQ／oldDiff；SPEC §0）——測試自己寫一份，對 engine 的預設（TRIAL）與 content 的旋鈕
+// 無限試煉 V3 曲線（../curve/curves.cjs atkV3f／defV3f／oldQ／oldDiff；SPEC §0）——測試自己寫一份；CUR＝V3＋11-16 前期加難，對 engine 的預設（TRIAL）與 content 的旋鈕
 const lateT = d => Math.max(0, d - 3);
 const V3 = {
   atk: (d, boss) => Math.min(2, Math.round(0.75 * lateT(d))) + Math.floor(Math.max(0, d - 6) / 5) + (boss ? 1 : 0),
@@ -1068,25 +1070,38 @@ const V3 = {
   q: d => (d < 3 ? 1 : d < 5 ? 0.85 : 1 - Math.min(0.55, 0.18 + 0.05 * Math.max(0, d - 5))),
   floor: d => Math.min(13, 3 + Math.floor(0.7 * d)), buff: d => Math.floor(Math.max(0, d - 3) / 3), aceP: d => (d >= 5 ? Math.min(0.6, 0.15 * (d - 4)) : 0),
 };
+// 現在的曲線（engine 預設＝content）：V3＋店主 11-16「前期太簡單」——只動第 1–4 位：q.easy 0.8、q.normal 0.75、atk／def.lateFrom 3→1；第 5 位起＝V3
+const late1 = d => Math.max(0, d - 1);
+const CUR = Object.assign({}, V3, {
+  atk: (d, boss) => Math.min(2, Math.round(0.75 * late1(d))) + Math.floor(Math.max(0, d - 6) / 5) + (boss ? 1 : 0),
+  def: (d, boss) => Math.min(1, Math.round(0.45 * late1(d))) + (boss ? 1 : 0),
+  q: d => (d < 3 ? 0.8 : d < 5 ? 0.75 : V3.q(d)),
+});
 const levelAtT = (d, XP, need) => { let xp = 0; for (let k = 1; k < d; k++) xp += XP[EN.classAt(k)]; let L = 1; while (xp >= L + need) { xp -= L + need; L++; } return { L, xp }; };
 const forceWin = (run) => { const f = EN.startFight(run, C, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, C); };
 const settleAll = run => { let g = 0; while (run.pending && g++ < 40) { const ch = EN.runPolicy(run, C); if (!EN.choose(run, C, ch).ok) break; } };
 
 section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、難度階梯覆寫、trialDeck（下限、加星上限 5、王牌機率）、品味／底氣傷害、經驗與升級、中繼點、來客那排、結算', () => {
-  // (a) 位數 → 類別、輪；engine 預設＝V3（逐位 1–300）；驗算值（map-engine §E）；content 的旋鈕現在＝V3（店主 11/12；改難度時這條跟著改）
+  // (a) 位數 → 類別、輪；engine 預設＝CUR（逐位 1–300）＝content 的旋鈕；第 5 位起＝V3（店主 11/12），第 1–4 位＝11-16 前期加難；驗算值（map-engine §E）；改難度時這條跟著改
   eq([1, 2, 3, 4, 5, 6, 10, 11, 25].map(EN.classAt), ['normal', 'normal', 'normal', 'elite', 'boss', 'normal', 'boss', 'normal', 'boss'], 'classAt');
   eq([1, 5, 6, 10, 11, 100].map(EN.roundOf), [1, 1, 2, 2, 3, 20], 'roundOf');
   const NOC = Object.assign({}, C, { trial: undefined });
-  let bad = 0;
+  let bad = 0, early = 0;
+  const wantOf = (K, d, b) => ({ hp: b ? 14 : 12, atk: K.atk(d, b), def: K.def(d, b), planner: K.planner(d), q: Math.round(K.q(d) * 1e6) / 1e6 });
   for (let d = 1; d <= 300; d++) for (const cls of ['normal', 'elite', 'boss']) {
     const g = EN.trialGuest(NOC, d, cls), b = cls === 'boss';
-    const want = { hp: b ? 14 : 12, atk: V3.atk(d, b), def: V3.def(d, b), planner: V3.planner(d), q: Math.round(V3.q(d) * 1e6) / 1e6 };
-    if (JSON.stringify(g) !== JSON.stringify(want)) { if (bad++ < 5) ok(false, 'engine default = V3 at ' + d + ' ' + cls, { g, want }); } else pass++;
-    if (JSON.stringify(EN.trialGuest(C, d, cls)) !== JSON.stringify(g)) { if (bad++ < 5) ok(false, 'content.trial.curve = V3 at ' + d + ' ' + cls); } else pass++;
+    const want = wantOf(CUR, d, b), v3 = wantOf(V3, d, b);
+    if (JSON.stringify(g) !== JSON.stringify(want)) { if (bad++ < 5) ok(false, 'engine default = CUR at ' + d + ' ' + cls, { g, want }); } else pass++;
+    if (JSON.stringify(EN.trialGuest(C, d, cls)) !== JSON.stringify(g)) { if (bad++ < 5) ok(false, 'content.trial.curve = engine default at ' + d + ' ' + cls); } else pass++;
+    if (d >= 5) { if (JSON.stringify(g) !== JSON.stringify(v3)) { if (bad++ < 5) ok(false, 'pos ≥5 = V3 at ' + d + ' ' + cls, { g, v3 }); } else pass++; }
+    else if (JSON.stringify(g) !== JSON.stringify(v3)) early++;
   }
+  ok(early > 0, '第 1–4 位跟 V3 不同（前期加難有生效）', early);
   const G = (d, c) => EN.trialGuest(C, d, c || EN.classAt(d));
-  ok(G(4).atk === 1 && G(4).def === 0 && G(5).atk === 3 && G(5).def === 2 && G(5).q === 0.82 && G(6).atk === 2 && G(6).def === 1 && G(11).atk === 3 && G(20).atk === 5 && G(12).q === 0.47 && G(13).q === 0.45 && G(60).q === 0.45,
-    'V3 驗算值：第 4 位攻 1、第 5 位藏家攻 3 底 2 q .82、第 6 位攻 2 底 1、第 11 位攻 3、第 20 位藏家攻 5、第 12 位 q .47、第 13 位起 .45');
+  ok(G(1).q === 0.8 && G(1).atk === 0 && G(1).def === 0 && G(2).q === 0.8 && G(2).atk === 1 && G(2).def === 0 && G(3).q === 0.75 && G(3).atk === 2 && G(3).def === 1 && G(4).q === 0.75 && G(4).atk === 2 && G(4).def === 1,
+    '前期加難驗算值（11-16）：第 1 位 q .8 攻 0 底 0、第 2 位 q .8 攻 1、第 3 位 q .75 攻 2 底 1、第 4 位菁英 q .75 攻 2 底 1');
+  ok(G(5).atk === 3 && G(5).def === 2 && G(5).q === 0.82 && G(6).atk === 2 && G(6).def === 1 && G(11).atk === 3 && G(20).atk === 5 && G(12).q === 0.47 && G(13).q === 0.45 && G(60).q === 0.45,
+    'V3 驗算值（第 5 位起不變）：第 5 位藏家攻 3 底 2 q .82、第 6 位攻 2 底 1、第 11 位攻 3、第 20 位藏家攻 5、第 12 位 q .47、第 13 位起 .45');
   ok(G(1).planner === 'easy' && G(2).planner === 'easy' && G(3).planner === 'normal' && G(4).planner === 'normal' && G(5).planner === 'hard' && G(5).hp === 14 && G(4).hp === 12, '出招難度 1–2 easy、3–4 normal、5 起 hard；客人 12、藏家 14');
   // (b) 難度階梯（之後 Monster Train 式）：tiers[k−1] 是部分覆寫，只改資料
   { const C2 = Object.assign({}, C, { trial: Object.assign({}, C.trial, { tiers: [{ curve: { atk: { add: 1 }, q: { feintMax: 0.6 } }, guestHp: { boss: 16 } }] }) });

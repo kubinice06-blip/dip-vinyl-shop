@@ -24,7 +24,7 @@
 //  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝在那張打開、再點一下＝收回（都不開唱片資訊；v5 手風琴）
 //  16 標題有存檔時點兩下店門＝繼續試煉
 //  17 他在上、你在下；舞台他左你右、老闆在中間；一台唱盤在兩人中間
-//  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
+//  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、上一手小列兩張（第 2 手：點一下、長按他那張；放開手指後還開著）、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
 //  19 教學三王牌六手照課表：每手 kind／toE／toP＝C.tutorial.expect、第 6 手 KO、學到 L1–L6、tutorialDone
 //  20 教學擋錯招：第 1 手點疊著那排的別張、第 2 手點打開那張的別色屬性鈕（都在遮罩上）→「先點我指的這裡。」、手數不前進（第 1 手沒打開、第 2 手沒丟出去）
 //  21 直接開打：沒有遮罩、男子 10 聲望；21b 教學程式不在（canTutorial 假）：兩顆鈕都在，第 0 顆照課表出牌（他 18、第一手 Mylo Xyloto）、沒有遮罩
@@ -75,7 +75,7 @@
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
-import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, duelReady, openTitle, noScroll, scrollOk,
+import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, hitPoint, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
   watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4 } from './e2e-lib.mjs';
 
@@ -264,6 +264,24 @@ async function run() {
             await sleep(120);
             for (const [k, s] of [['slotE', '.dl [data-tut=slot-e] .cv'], ['slotP', '.dl [data-tut=slot-p] .cv']]) {
               const ok1 = await jsClick(page, s); opened[k] = ok1 ? await infoOpen(page) : 'missing'; if (opened[k] === true) await closeInfo(page);
+            }
+            // 上一手小列（店主 11-16）：第 2 手開始時牌桌最上面那列＝第 1 手兩張；真點一下兩張、長按他那張都開唱片資訊，放開手指 400 ms 後還開著（where＝last-e／last-p）
+            const n2 = await duelReady(page, 15000) && await page.evaluate(() => { const x = window.DipLabDuel.debug(); return x.n === 2 && !x.view.over; });
+            if (!n2) opened.last = 'no hand 2';
+            else {
+              for (const [k, side, how] of [['lastE', 'e', 'tap'], ['lastP', 'p', 'tap'], ['lastLong', 'e', 'long']]) {
+                await page.evaluate(() => { window.__infoEv.length = 0; });
+                const sel = `.dl .lastplay .lp.${side}`;
+                if (how === 'long') await longPress(page, ctx, sel);
+                else { const r0 = await hitPoint(page, sel); if (r0) await page.touchscreen.tap(r0.x, r0.y); }
+                const open0 = await infoOpen(page, 2500);
+                await sleep(400);
+                const mask = !!(await page.$('#cardInfoMask'));
+                const ev = await page.evaluate(() => window.__infoEv.slice());
+                opened[k] = open0 && mask && ev.includes('last-' + side) ? true : (open0 ? 'closed' : 'missing') + ' ' + ev.join(',');
+                if (open0 && !mask) closedAtOnce.push(k);
+                if (mask) await closeInfo(page);
+              }
             }
             record(18, size, Object.values(opened).every(v => v === true), `duel covers ${JSON.stringify(opened)}${closedAtOnce.length ? '（放開手指就被關掉：' + closedAtOnce.join('、') + '）' : ''}`);
           }
