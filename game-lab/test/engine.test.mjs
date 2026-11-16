@@ -1644,6 +1644,12 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
   { const d = duelWith(ab('critLeech', { mult: 1 }), { hp: 6 });
     const r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
     eq([...kv(r), r.heal, apexNote(r).text], ['counter', 4, 0, 2, '王牌：拆穿！回 2 聲望'], 'critLeech ×1: no multiplier, heal 2'); }
+  { const d = duelWith(ab('critLeech', { mult: 1 }, 'duel'));                     // 滿聲望（審查 11-16）
+    let r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true }), n = apexNote(r);
+    eq([...kv(r), r.heal | 0, r.apex.caught, r.apex.hit, n.text, n.full, n.hit], ['counter', 4, 0, 0, true, false, '王牌：拆穿！聲望是滿的，沒回到', true, false], 'critLeech ×1 at full: caught, no heal, leechFull (not "回 0")');
+    const d2 = duelWith(ab('critLeech', { mult: 2 }, 'duel'));
+    r = pv(d2, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true }); n = apexNote(r);
+    eq([...kv(r), r.heal | 0, r.apex.hit, n.text, !!n.full], ['counter', 8, 0, 0, true, '王牌：拆穿！多扣 4', false], 'critLeech ×2 at full: crit line without "回 0 聲望"'); }
   { const d = duelWith(ab('bounce', {}), { eAtk: 2 });                             // ⑧ 彈回一半（他品味前）
     let r = pv(d, fx(3, 1, 1), 'c', { attr: 'o', star: 5 }, { apex: true });
     eq([...kv(r), r.apex.d, apexNote(r).text], ['countered', 2, 5, 2, '王牌：彈回去 2'], 'bounce: 5 → he 2, you 3 + 品味 2');
@@ -1660,14 +1666,48 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
     eq(kv(pv(d, fx(3, 1, 1), 'c', { attr: 'o', star: 5 }, { apex: true })), ['countered', 0, 3], 'halfIn: ⌈5/2⌉ = 3'); }
   { const d = duelWith(ab('tieWin', { n: 1 }));
     eq(kv(pv(d, fx(3, 1, 1), 'c', { attr: 'c', star: 3 }, { apex: true })), ['tie', 1, 0], 'tieWin: same colour same stars → he −1'); }
+  // FRAME 1.4 跟配件交錯的順序（審查 11-16：duelWith 把配件清掉了，這幾條原本沒鎖住）
+  const withRelics = (d, ids) => { d.p.relics = ids.map(id => EN.relicObj(id, C)); d.p.dustUsed = false; return d; };
+  const relicNote = (r, id) => (r.notes || []).some(n => n.relic === id);
+  { const d = withRelics(duelWith(ab('bounce', {}, 'duel')), ['dustcover']);            // ⑤ 防塵套先（5→4），⑧ 再彈回一半（2／2）
+    const r = pv(d, fx(3, 1, 1), 'c', { attr: 'o', star: 5 }, { apex: true });
+    eq([...kv(r), r.apex.d, relicNote(r, 'dustcover'), apexNote(r).text], ['countered', 2, 2, 2, true, '王牌：彈回去 2'], 'dustcover then bounce: 5 → 4 → he 2／you 2');
+    eq(kv(pv(d, fx(3, 1, 1), 'c', { attr: 'o', star: 5 })), ['countered', 0, 4], 'dustcover alone: 4 (control)');
+    const r4 = pv(d, fx(3, 1, 1), 'c', { attr: 'o', star: 4 }, { apex: true });   // 4：防塵套先＝3 → 彈 1／扣你 2（彈回先就會變成 2／1）
+    eq([...kv(r4), r4.apex.d], ['countered', 1, 2, 1], 'dustcover then bounce: 4 → 3 → he 1／you 2 (order matters)'); }
+  { const d = withRelics(duelWith(ab('mirrorPlus', { n: 3 }, 'hold', { op: 'tieWin', params: { n: 1 } })), ['cleaner']);   // ④ 留著平手扣他 1＋⑤ 洗碟水 1＝他 −2（兩個都算、不互相蓋掉）
+    const r = pv(d, fx(3, 1, 1), 'c', { attr: 'c', star: 3 });
+    eq([...kv(r), relicNote(r, 'cleaner'), r.apex.src, r.apex.d, apexNote(r).text], ['tie', 2, 0, true, 'hold', 1, '王牌（留著）：同色同星，他 −1'], 'cleaner + tieWin (hold): he −2');
+    eq(kv(pv(d, fx(3, 1, 1), 'c', { attr: 'c', star: 3 }, { apex: true })), ['mirrorWin', 3, 0], 'hold fired: mirrorPlus 3 replaces tieWin, cleaner gone (not a tie)'); }
+  { const d = withRelics(duelWith(ab('crit', { mult: 2 }, 'duel')), ['testpress']);       // ⑤ 見本盤（冷剋多 1）→ ⑦ 拆穿 ×2：(4+1)×2
+    const r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
+    eq([...kv(r), relicNote(r, 'testpress'), r.apex.caught, apexNote(r).text], ['counter', 10, 0, true, true, '王牌：拆穿！多扣 5'], 'side label then crit: (4+1)×2 = 10'); }
+  { const d = withRelics(duelWith(ab('crit', { mult: 2 }, 'duel')), ['obi']);             // 側標（經剋多 1）＋品味 1 → 拆穿：(4+1+1)×2
+    d.p.atk = 1;
+    const r = pv(d, fx(4, 1, 1), 'c', { attr: 'h', star: 3 }, { hint: 'c', apex: true });
+    eq([...kv(r), relicNote(r, 'obi'), apexNote(r).text], ['counter', 12, 0, true, '王牌：拆穿！多扣 6'], 'obi + 品味 then crit: (4+1+1)×2 = 12'); }
+  { const d = withRelics(duelWith(ab('star', { n: 1 })), ['boost_c']);                   // 重量盤 +1 星＋① 王牌 +1 星：c3 → 5
+    const r = pv(d, fx(3, 1, 1), 'c', { attr: 'c', star: 3 }, { apex: true });
+    eq([...kv(r), r.apex.pStar, relicNote(r, 'boost_c'), r.apex.d], ['mirrorWin', 2, 0, 5, true, 1], 'boost + star: 3+1+1 = 5 vs 3');
+    eq(kv(pv(d, fx(1, 1, 3), 'h', { attr: 'c', star: 4 }, { apex: true })), ['countered', 0, 4], 'boost is per colour: h3+1 (no boost_h) vs c4 → countered');
+    eq(kv(pv(d, fx(2, 1, 1), 'c', { attr: 'h', star: 5 })), ['mirrorLose', 0, 2], 'boost alone: c2+1 vs h5 → gap 2, blocked');
+    eq(kv(pv(d, fx(2, 1, 1), 'c', { attr: 'h', star: 5 }, { apex: true })), ['counter', 4, 0], 'boost + star: c2+1+1 vs h5 → gap 1, counter 4'); }
   // 發動當下：回聲望（不超過上限）、看穿（真話／唬人；不取亂數）
   { const d = duelWith(ab('heal', { n: 2 }), { hp: 7 }), rng0 = d.rng;
     const ev = EN.activateApex(d);
     eq([ev.length, ev[0].t, ev[0].heal, ev[0].pHp, d.p.hp, d.p.aceUsed, d.p.apexOn.n, d.rng === rng0, d.n], [1, 'apex', 2, 9, 9, true, 1, true, 1], 'heal: +2, no RNG, same hand');
     ok(EN.activateApex(d).length === 0 && !EN.canApex(d), 'heal: only once a duel');
     const evs = EN.resolveTurn(d, { i: 0, attr: 'c' }), cl = clashOf(evs);
-    ok(cl.apex && cl.apex.op === 'heal' && apexNote(cl) && apexNote(cl).text === '王牌：回 2 聲望', 'heal: result line', cl.notes);
+    ok(cl.apex && cl.apex.op === 'heal' && cl.apex.hit && apexNote(cl) && apexNote(cl).text === '王牌：回 2 聲望', 'heal: result line', cl.notes);
     const d2 = duelWith(ab('heal', { n: 2 }), { hp: 11 }); eq(EN.activateApex(d2)[0].heal, 1, 'heal: capped at max'); }
+  { const d = duelWith(ab('heal', { n: 2 })), v = EN.view(d), before = JSON.stringify(d);           // 只會回聲望＋聲望滿＝不能發動（不白白用掉）；畫面看 view.apex.full
+    ok(d.p.hp === d.p.max && !EN.canApex(d) && !v.apex.can && v.apex.full === true && !v.apex.used, 'heal at full: cannot fire, view.apex.full', v.apex);
+    ok(EN.activateApex(d).length === 0 && !EN.isLegal(d, { i: 0, attr: 'c', apex: true }) && EN.resolveTurn(d, { i: 0, attr: 'c', apex: true }).length === 0 && JSON.stringify(d) === before, 'heal at full: activate／act.apex illegal, nothing changes');
+    ok(EN.preview(d, { i: 0, attr: 'c', apex: true }, { attr: 'c', star: 3 }) === null, 'heal at full: preview with apex = null');
+    d.p.hp -= 1; ok(EN.canApex(d) && EN.view(d).apex.can && EN.view(d).apex.full === false, 'heal one below max: can fire (回 1)');
+    const v0 = EN.view(duelWith(ab('mirrorPlus', { n: 1 }, 'duel'))); ok(v0.apex.can && v0.apex.full === false, 'non-heal ability at full HP: can fire'); }
+  { const d = duelWith(ab('combo', { ops: [{ op: 'heal', params: { n: 2 } }, { op: 'mirrorPlus', params: { n: 1 } }] }));
+    ok(EN.canApex(d), 'heal + something else at full HP: can fire (not heal-only)'); }
   for (const bluff of [false, true]) {
     const d = duelWith(ab('reveal'));
     d.plan.bluff = bluff; const rng0 = d.rng;
@@ -1702,7 +1742,7 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
     eq(kv(pv(d, fx(3, 1, 1), 'c', E3)), ['tie', 0, 0], 'hold: hand 2 nothing'); }
 
   // (e) 王牌不能當唱片丟；一場一次；act.apex 不合法時整個不合法、什麼都不改；view／bestChip
-  { const d = duelWith(null), v = EN.view(d);
+  { const d = duelWith(null, { hp: 5 }), v = EN.view(d);
     ok(!EN.legalActions(d).some(a => a.ace) && !EN.isLegal(d, { ace: true }) && !EN.isLegal(d, { ace: true, attr: 'c' }), 'apex: ace is not a card to play');
     ok(v.ace === null && v.aceCard && v.aceCard.id === C.aces.hall && v.apex.id === 'okc-airbag' && v.apex.can && !v.apex.used && v.apex.on === null, 'view.apex', v.apex);
     eq(EN.bestChip(d, 'c', { ace: true }) && EN.bestChip(d, 'c', { ace: true }).ace, undefined, 'bestChip never returns the ace');
@@ -1830,6 +1870,32 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
   for (const n of NAMES) ok(used[n].fired > 0 && used[n].healWaste === 0, n + ' fires (and never wastes 回聲望)', used[n]);
   ok(used.novice.at1 >= used.novice.fired * 0.6, 'novice fires early', used.novice);
   console.log('     policies under the flag: ' + NAMES.map(n => n + ' ' + used[n].fired + '/' + used[n].fights).join('、'));
+
+  // (l) 會讀的「這手」型門檻 APEX_TAU（審查 11-16：(k) 的標題寫了但沒有斷言）：同一批第 1 手的局面——照現在的門檻會發動的 ⊆ 門檻歸零會發動的，而且門檻真的擋掉一些；
+  //   門檻無限大＝第 1 手一次都不發動；整場型第 1 手一律發動（不看門檻）
+  { const TAU = EN.APEX_TAU, keep = TAU.slice();
+    ok(TAU[1] === 2.5 && TAU[2] === 1.5 && TAU[6] === 0 && TAU.every((x, k) => k < 2 || x <= TAU[k - 1]), 'APEX_TAU: 2.5 at hand 1, non-increasing, 0 at hand 6', TAU);
+    const hands = TIERS.flatMap(t => EN.apexList(C, t)).filter(x => x.timing !== 'duel' && x.op !== 'heal' && x.op !== 'reveal');
+    let real = 0, zero = 0, inf = 0, sub = true, dFire = 0, dN = 0;
+    try {
+      for (let s = 1; s <= (QUICK ? 30 : 90); s++) {                     // 真的一場（無限試煉第 1–30 位、三派），能力換成這手型那張
+        const x = hands[s % hands.length], t = TIERS[s % 3];
+        const run = EN.newRun(C, { seedKey: 'apx-tau-' + s, runNo: 2, ace: t, prologue: false });
+        EN.choose(run, C, EN.bargainPolicy(run, C)); EN.jumpTo(run, C, 1 + (s * 7) % 30);
+        const d = EN.startFight(run, C, { apex: true }).duel; d.p.ability = EN.abilityOf(C, x.card); d.p.hp = Math.min(d.p.hp, d.p.max - 2);
+        ok(d.n === 1 && EN.canApex(d), 'tau: hand 1, can fire');
+        const ask = tau => { TAU[1] = tau; const a = EN.policies.thoughtful(d, lcg(s), {}, C); return !!(a && a.apex); };
+        const a = ask(keep[1]), b = ask(0), c = ask(Infinity);
+        TAU[1] = keep[1];
+        real += a; zero += b; inf += c; if (a && !b) sub = false;
+        const dd = duelWith(ab('mirrorPlus', { n: 1 }, 'duel'), { seed: s * 13 + 5 }); dN++;
+        const ad = EN.policies.thoughtful(dd, lcg(s), {}, C); if (ad && ad.apex) dFire++;
+      }
+    } finally { TAU.splice(0, TAU.length, ...keep); }
+    console.log('     thoughtful hand-type at hand 1: fires ' + real + ' (τ=2.5) / ' + zero + ' (τ=0) / ' + inf + ' (τ=∞)；duel-type ' + dFire + '/' + dN);
+    ok(sub && zero > real && real > 0 && inf === 0, 'thoughtful: hand-1 threshold 2.5 actually holds back some firings (τ=2.5 ⊆ τ=0, strictly fewer; τ=∞ never)', [real, zero, inf]);
+    ok(dFire === dN, 'thoughtful: duel-type fires on hand 1 regardless of τ', [dFire, dN]);
+    ok(JSON.stringify(EN.APEX_TAU) === JSON.stringify(keep), 'APEX_TAU restored'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

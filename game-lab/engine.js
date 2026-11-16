@@ -84,13 +84,13 @@
 //            startFight(run, content, {apex:true})：序章那場不開（序章照舊 7 星教學）；duel.apexMode、duel.p.ability（能力複本）、duel.p.apexOn（null｜{n, heal?, reveal?}）
 //              playerDef(content, run, {apex:true}) 的王牌＝apexAceId 那張＋ability；startDuel(pDef, eDef, {apex:true})
 //            你的王牌不比星：legalActions 不列 {ace:true}、isLegal 擋 {ace:true}；view.ace＝null（王牌不能當唱片丟）、view.aceCard 照舊
-//            canApex(duel) · activateApex(duel) -> Event[]（[{t:'apex', n, card, id, name, op, timing, heal?, reveal?:'honest'|'bluff', pHp}]；不合法 []、什麼都不改；不取 duel.rng、不推進手數）
+//            canApex(duel)（只會回聲望的能力在聲望滿時＝false，view.apex.full 給畫面寫原因）· activateApex(duel) -> Event[]（[{t:'apex', n, card, id, name, op, timing, heal?, reveal?:'honest'|'bluff', pHp}]；不合法 []、什麼都不改；不取 duel.rng、不推進手數）
 //            resolveTurn(duel, {i, attr, apex:true})＝先 activateApex 再結算（act.apex 但 !canApex → 不合法）；preview(duel, {…, apex:true}, eSide)＝假設這手發動（不寫回）
 //            時機：hand＝發動那手；duel＝發動那手起到這場結束；hold＝還沒發動前每手套 hold 小效果，發動＝放掉它、換這手的 op。一手最多一個王牌效果
 //            outcome 的步驟（FRAME 1.4）：①你 +N 星 ②他 −N 星 ③判相剋（剋得動門檻 pThr、以小搏大）④改寫比星（比星多算、同色同星扣他、比星輸不扣）⑤配件 ⑥品味
 //              ⑦剋中多扣→剋中加倍→拆穿（你出提示那色剋中＝抓到唬人）⑧彈回一半（他品味前）⑨他的底氣 ⑩他的品味 ⑪你的底氣 ⑫被剋少扣／減半（最少扣 1）⑬拆穿回血（扣完聲望後）
 //            clash 事件多 apex: null｜{id, op, src:'on'|'hold', first, hit, dE, dP, d, h, caught, pStar, eStar}；notes 多一句 {apex, op, src, d, h, hit, text}（text＝content.apexTrial.notes／holdNotes 代入）
-//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'）
+//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null, full}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'）
 //            finishFight：duel.apexMode 時打贏回 content.apexTrial.winHeal（沒給＝C.trial.heal）。藏家、客人帶的王牌照舊 7 星、沒有能力
 //            策略：policies 在 duel.apexMode 且 canApex 時自己決定發動（會讀的＝期望增益 ≥ APEX_TAU[第 n 手]；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N；
 //              看穿＝用「知道真假」的資訊價值；新手、只出最大星、兩步公式、跟提示同色＝第 1 手就發動；亂出＝每手 1/6；先知＝有好處就發動）
@@ -300,6 +300,9 @@
   }
   const apexOps = (op, params) => op === 'combo' ? ((params && params.ops) || []).map(o => ({ op: o.op, params: o.params || {} })) : [{ op, params: params || {} }];
   const apexHas = (A, op) => !!A && apexOps(A.op, A.params).some(x => x.op === op);
+  // 只會回聲望的能力（安全氣囊、身心靈、新的一天、逃生梯）：聲望滿的時候發動＝白白用掉 → 不讓發動（canApex false；view.apex.full 給畫面寫原因）
+  const apexHealOnly = A => !!A && apexOps(A.op, A.params).every(x => x.op === 'heal');
+  const apexFull = st => apexHealOnly(st.p.ability) && st.p.hp >= st.p.max;
   // 一組原語 → outcome 讀的旗標
   function apexModsOf(ops) {
     const M = {};
@@ -347,24 +350,25 @@
     const dE = r.toE - b.toE, dP = b.toP - r.toP, h = r.heal | 0;
     const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
     let d, hit;
-    if (op === 'heal') { const n = AX.ops[0].params.n | 0; d = AX.on && AX.on.heal != null ? AX.on.heal : Math.max(0, Math.min(n, P.max - P.hp)); hit = AX.first; }
+    if (op === 'heal') { const n = AX.ops[0].params.n | 0; d = AX.on && AX.on.heal != null ? AX.on.heal : Math.max(0, Math.min(n, P.max - P.hp)); hit = AX.first && d > 0; }
     else if (op === 'reveal') { d = 0; hit = false; }
-    else if (CRIT_OPS.includes(op)) { d = dE; hit = caught; }
+    else if (CRIT_OPS.includes(op)) { d = dE; hit = caught && (d > 0 || h > 0); }          // 拆穿回血 ×1 在滿聲望時抓到：沒多扣、也沒回到＝沒作用
     else if (op === 'counterPlus' || op === 'counterMult' || op === 'tieWin') { d = dE; hit = d > 0; }
     else if (op === 'shield' || op === 'halfIn' || op === 'loseZero') { d = dP; hit = d > 0; }
     else if (op === 'bounce') { d = r.bounced | 0; hit = d > 0; }
     else { d = dE + dP; hit = d > 0; }                                           // star eStar mirrorPlus theirStar pThr combo：兩邊加起來
     const info = { id: A.id, op, src: AX.src, first: !!AX.first, hit: !!hit, dE, dP, d, h, caught: !!caught, pStar: ps, eStar: es };
-    let tpl = null;
+    let tpl = null, full = false;
     const N = T.notes || {};
     if (AX.src === 'hold') tpl = hit ? (T.holdNotes || {})[op] : null;
     else if (op === 'reveal') tpl = null;                                       // 看穿：提示框蓋章，不進結果句
-    else if (hit) tpl = op === 'critLeech' && d <= 0 ? N.leech : N[op];
+    else if (hit) tpl = op === 'critLeech' ? (d <= 0 ? N.leech : h > 0 ? N.critLeech : (N.crit || N.critLeech)) : N[op];   // 拆穿回血：沒回到（滿聲望）就不寫「回 0 聲望」
+    else if (op === 'critLeech' && caught) { tpl = N.leechFull || null; full = true; }      // 抓到唬人但聲望是滿的（不算「沒碰到條件」）
     else if (AX.first) tpl = CRIT_OPS.includes(op) && ePlay.attr === hintA ? (N.noneHonest || N.none) : N.none;
-    const note = tpl ? { apex: A.id, op, src: AX.src, d, h, hit: !!hit, text: String(tpl).replace(/\{d\}/g, d).replace(/\{h\}/g, h).replace(/\{name\}/g, A.name || '') } : null;
+    const note = tpl ? Object.assign({ apex: A.id, op, src: AX.src, d, h, hit: !!hit, text: String(tpl).replace(/\{d\}/g, d).replace(/\{h\}/g, h).replace(/\{name\}/g, A.name || '') }, full ? { full: true } : {}) : null;
     return { info, note };
   }
-  function canApex(st) { return !!(st && st.apexMode && st.p && st.p.ace && st.p.ability && !st.p.aceUsed && st.plan && !st.over); }
+  function canApex(st) { return !!(st && st.apexMode && st.p && st.p.ace && st.p.ability && !st.p.aceUsed && st.plan && !st.over) && !apexFull(st); }
   // 發動（一場一次、出唱片前、不佔這一手）：回聲望、看穿在這裡做完；不取 st.rng、不推進手數、不動他的牌
   function activateApex(st) {
     if (!canApex(st)) return [];
@@ -767,7 +771,7 @@
       const A = P.ability, AX = pl ? apexNow(st, false) : null;
       out.ace = null;
       out.apex = { card: P.ace, id: A.id, name: A.name, text: A.text, timing: A.timing, op: A.op, params: clone(A.params || {}), hold: A.hold ? clone(A.hold) : null,
-        can: canApex(st), used: !!P.aceUsed, on: P.apexOn ? P.apexOn.n : null, live: AX ? AX.src : null };
+        can: canApex(st), used: !!P.aceUsed, on: P.apexOn ? P.apexOn.n : null, live: AX ? AX.src : null, full: !P.aceUsed && apexFull(st) };
       out.apexReveal = pl && P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n ? P.apexOn.reveal : null;
     }
     return out;

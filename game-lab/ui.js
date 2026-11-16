@@ -1336,11 +1336,16 @@
         sw.hidden = tier === t0;
         okb.textContent = tier === t0 && sel === id0 ? AU('pickSame') : AU('pickGo');
       }
+      // 15 張封面比一般面板高：full 鏡頭讓不出那麼多（舞台最矮約 234 px；390×664 會差 18 px 要捲）＝收成對決那條，面板照內容高，不用捲。
+      //   說明三行、換派灰字一行的高在 CSS 先留好（點別張、切分頁不長高）；萬一還是比面板高（字型沒載到、字很長），再量一次讓高（審查 11-16：原本只在打開時量一次）
+      function fit() {
+        roomForSheet(s);
+        var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight, nat = Math.ceil(naturalH(s) + 4);
+        if (UI.camName !== 'strip' && vh - 32 - nat < 240) cam('strip', 'reward', 380, null, nat);
+      }
+      function refit() { if (s.parentNode && s.scrollHeight > s.clientHeight + 1) fit(); }
       renderGrid(); mark();
-      roomForSheet(s);
-      // 15 張封面比一般面板高：full 鏡頭讓不出那麼多（舞台最矮約 234 px；390×664 會差 18 px 要捲）＝收成對決那條，面板照內容高，不用捲
-      var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight, nat = Math.ceil(naturalH(s) + 4);
-      if (UI.camName !== 'strip' && vh - 32 - nat < 240) cam('strip', 'reward', 380, null, nat);
+      fit();
       // 按住封面＝唱片資訊（放開的那一下不算「選」）
       var lp = null, swallow = false;
       var lpOff = function () { if (lp) { clearTimeout(lp.h); lp = null; } };
@@ -1356,9 +1361,9 @@
       s.addEventListener('click', function (e) {
         if (done) return;
         var tb = e.target.closest && e.target.closest('[data-tab]');
-        if (tb) { var t = tb.getAttribute('data-tab'); if (t === tier) return; tier = t; sel = t === t0 ? id0 : C.aces[t]; sfx('select'); renderGrid(); mark(); return; }
+        if (tb) { var t = tb.getAttribute('data-tab'); if (t === tier) return; tier = t; sel = t === t0 ? id0 : C.aces[t]; sfx('select'); renderGrid(); mark(); refit(); return; }
         var cb = e.target.closest && e.target.closest('.apx-c');
-        if (cb) { if (swallow) { swallow = false; return; } var id = cb.getAttribute('data-cid'); if (id === sel) return; sel = id; sfx('select'); mark(); return; }
+        if (cb) { if (swallow) { swallow = false; return; } var id = cb.getAttribute('data-cid'); if (id === sel) return; sel = id; sfx('select'); mark(); refit(); return; }
         if (e.target.closest && e.target.closest('[data-a=ok]')) { done = true; lpOff(); sfx('select'); closeSheet(s); res({ tier: tier, aceId: sel }); }
       });
       autoAct(function () {
@@ -1389,11 +1394,16 @@
       save.lastAceId = aceIdOf(r);
       shelfAdd(save.lastAceId);
       persist();
-      UI.keepP = true; UI.quietNight = !first; go('night');
+      UI.keepP = true; UI.quietNight = true; go('night');   // 重畫來客畫面：這一次不排第一次來客的提示（第一次挑王牌時改到下面，等老闆那句、吐司收掉再出）
       if (ok) {
         stageSay('o', line(r.ace !== fromT ? 'aceDone' : 'aceKeep'), 'owner', 2600);
         toast(TU('aceSwapped', { album: (card(save.lastAceId) || {}).album || '' }));
       } else if (!first) stageSay('o', line('aceSame'), 'owner', 2600);
+      // 第一次挑王牌（序章剛打完的新玩家）：第一次來客的教學泡泡晚一點出——原本三則訊息（吐司、老闆、教學）疊在一起（審查 11-16）
+      if (first && !save.seen.night && !UI.auto) later(function () {
+        if (UI.screen !== 'night' || save.seen.night || save.run !== r || qs(':scope > .lb-sheet', UI.panel)) return;
+        var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night-box', 'night-next']); } catch (e) { console.error(e); }
+      }, ok ? 2900 : 700);
     });
   }
   // 序章打完（或舊存檔第一次開旗標）、第 1 位開打前：老闆先說一句，再跳挑王牌面板（每份存檔一次）。回 true＝這一次來客畫面交給它
@@ -2740,7 +2750,7 @@
 
   // ======================================================================= 店裡的東西點了會怎樣（牆上唱片＝唱片資訊、箱子＝翻、試聽機＝放一張、老闆／店貓＝一句）
   function boothIds() {
-    var r = save.run, out = [], add = function (id) { var c = card(id); if (c && c.previewUrl && out.indexOf(id) < 0) out.push(id); };
+    var r = save.run, out = [], add = function (id) { var c = cardVis(id) ? card(id) : null; if (c && c.previewUrl && out.indexOf(id) < 0) out.push(id); };   // 旗標關：試做的 42 張不列（CONTRACT 第 8 節）
     if (r) { add(aceIdOf(r)); r.bag.forEach(add); }
     Object.keys(save.shelf).reverse().forEach(add);
     return out.slice(0, 24);

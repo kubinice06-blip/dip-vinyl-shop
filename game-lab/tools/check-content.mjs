@@ -776,11 +776,11 @@ export function apexProblems(C, E) {
   ok(Array.isArray(C.apexTrialOnly) && sameSet(C.apexTrialOnly, [...cardsSeen].filter(id => !Object.values(C.aces).includes(id))), 'apexTrialOnly＝名單扣 C.aces');
   const N = A.notes || {};
   for (const op of usedOps) if (op !== 'reveal') ok(typeof N[op] === 'string' && N[op], 'apexTrial.notes 少了 ' + op);
-  if (usedOps.has('critLeech')) ok(N.leech, 'apexTrial.notes 少了 leech（拆穿回血 ×1）');
+  if (usedOps.has('critLeech')) { ok(N.leech, 'apexTrial.notes 少了 leech（拆穿回血 ×1）'); ok(N.leechFull, 'apexTrial.notes 少了 leechFull（拆穿回血：抓到但聲望是滿的）'); }
   for (const k of ['none', 'noneHonest']) ok(typeof N[k] === 'string' && N[k], 'apexTrial.notes 少了 ' + k);
   for (const [k, v] of Object.entries(N).concat(Object.entries(A.holdNotes || {}))) ok(typeof v === 'string' && clen(v.replace(/\{(d|h)\}/g, '12').replace('{name}', '一二三四五')) <= 25, 'apexTrial 結果句 ' + k + ' 代入後超過 25 字：' + v);
   const U = A.ui || {};
-  for (const k of ['slot', 'use', 'used', 'usedNote', 'noStar', 'rule', 'intro', 'pickTitle', 'pickGo', 'infoTitle', 'revealHonest', 'revealBluff', 'fired', 'rulesFoot']) ok(typeof U[k] === 'string' && U[k], 'apexTrial.ui.' + k);
+  for (const k of ['slot', 'use', 'used', 'usedNote', 'noStar', 'rule', 'intro', 'pickTitle', 'pickGo', 'infoTitle', 'revealHonest', 'revealBluff', 'fired', 'rulesFoot', 'full', 'hitBoth', 'loseFree', 'eAceNote']) ok(typeof U[k] === 'string' && U[k], 'apexTrial.ui.' + k);
   ok(U.timing && ['hand', 'duel', 'hold'].every(k => typeof U.timing[k] === 'string' && U.timing[k]), 'apexTrial.ui.timing 三種');
   for (const [k, v] of Object.entries(A.tips || {})) ok(typeof v === 'string' && clen(v) <= 20, 'apexTrial.tips.' + k + ' ≤20 字');
   ok(C.apexTrialTag === '新', 'C.apexTrialTag');

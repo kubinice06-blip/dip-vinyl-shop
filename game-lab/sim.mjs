@@ -8,6 +8,7 @@
 //   --apex   頂點卡純輔助卡試做（＝遊戲網址 ?apex=1；scratchpad v5/apextrial）：startFight 傳 {apex:true}（序章照舊 7 星）；王牌＝各派預設那張（C.aces），
 //            策略自己決定什麼時候發動（engine policies 的頂點卡分支）。--apex-ace＝每一趟都帶這張（流派跟著它；用來量單張能力，跟沒給時的三派輪流不是同一批客人組成）
 //            --apex-params＝試調參數（只在這次模擬裡蓋掉 C.apexTrial 那幾張的 params；{"<id>":{"hold":{…}}} 蓋留著的小效果；@檔名＝從 JSON 檔讀；不改 content.js）
+//              兩個原語合一（combo）：{"ops":[…]} 整組換；{"mirrorPlus":{"n":2}} 只改那個原語；平的 {"n":2} 蓋到組裡有 n 的每個原語（都沒有＝報錯）
 //            旗標下多印一張「頂點卡發動」表（發動率、第幾手、發動那手的勝負、作用幾手）；不開 --apex 時輸出跟以前一字不差
 //   --ace    每一趟都用這一派（沒給＝三派輪流 TIERS[i % 3]）；不開 --apex 也能用＝現行 7 星王牌的分派基準（跟 --apex-ace 同一批客人組成）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
@@ -69,7 +70,18 @@ if (APEX_PARAMS) for (const id of Object.keys(APEX_PARAMS)) {
   const o = APEX_PARAMS[id];
   if (o.hold) { if (!e.hold) { console.error('--apex-params：' + id + ' 不是留著型'); process.exit(2); } e.hold = Object.assign({}, e.hold, { params: Object.assign({}, e.hold.params, o.hold) }); }
   const pp = Object.assign({}, o); delete pp.hold;
-  if (Object.keys(pp).length) e.params = e.op === 'combo' ? Object.assign({}, e.params, pp) : Object.assign({}, e.params, pp);
+  if (e.op === 'combo' && Object.keys(pp).length) {                     // 兩個原語合一：{"ops":[…]}＝整組換掉；平的鍵（{"n":2}）＝蓋到組裡有這個參數的原語（沒有任何原語有它＝報錯，不默默不改）
+    const ops = Array.isArray(pp.ops) ? pp.ops.map(x => ({ op: x.op, params: Object.assign({}, x.params) })) : (e.params.ops || []).map(x => ({ op: x.op, params: Object.assign({}, x.params) }));
+    for (const [k, v] of Object.entries(pp)) {
+      if (k === 'ops') continue;
+      const byOp = ops.filter(x => x.op === k);                           // {"mirrorPlus":{"n":2}}＝只改組裡那個原語
+      if (byOp.length && v && typeof v === 'object') { for (const x of byOp) Object.assign(x.params, v); continue; }
+      const hit = ops.filter(x => k in (x.params || {}));
+      if (!hit.length) { console.error('--apex-params：' + id + ' 是 combo（' + ops.map(x => x.op).join('＋') + '），沒有參數 ' + k + '；整組換用 {"ops":[…]}'); process.exit(2); }
+      for (const x of hit) x.params[k] = v;
+    }
+    e.params = { ops };
+  } else if (Object.keys(pp).length) e.params = Object.assign({}, e.params, pp);
 }
 const JSON_OUT = arg('json', null);
 const ALL_FLOWS = ['smart', 'none', 'bare', 'cards', 'relics'];
@@ -306,7 +318,8 @@ function fightCell(fn, n) {
 // ---------------- run ----------------
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
-const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null), apex: APEX ? (APEX_ACE || 'default') : null };
+const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null) };
+if (APEX) report.apex = APEX_ACE || 'default';                           // 不開 --apex 時 JSON 跟以前逐字相同（不多 "apex": null）
 if (ACE_T) report.ace = ACE_T;
 if (APEX_PARAMS) report.apexParams = APEX_PARAMS;
 if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] || ACE_T) + '（--ace ' + ACE_T + '）');

@@ -167,12 +167,22 @@
     if (c.kind === 'countered') return T('countered', { a, b });
     return T('mirror', { a: a0, b });                                                                  // 「同樣是經典」：同色不加「王牌」
   }
-  function clashText(c, T, hints) {
+  // 頂點卡試做（?apex=1）的畫面字：content.apexTrial.ui（e2e 直接呼叫 _fmt.clashText 時沒給 U → 讀頁面上的 DipLabContent）
+  const apexUIOf = () => { const Cn = (typeof window !== 'undefined' && window.DipLabContent) || null; return (Cn && Cn.apexTrial && Cn.apexTrial.ui) || {}; };
+  const fillU = (t, o) => String(t || '').replace(/\{(\w+)\}/g, (m, k) => (o && o[k] != null ? o[k] : m));
+  function clashText(c, T, hints, U) {
     T = T || T0;
     const rule = ruleText(c, T);
+    const apx = !!c && 'apex' in c;                    // 頂點卡試做的對決（clash 事件才有 apex 鍵；旗標關時沒有 → 下面三種情形都不會發生，一字不改）
+    if (apx && !U) U = apexUIOf();
     let l1 = rule, l2, l3 = '', cls = 'z';
-    if ((c.toE | 0) > 0) { l2 = T('hitE', { n: c.toE }); cls = 'g'; }
-    else if ((c.toP | 0) > 0) { l2 = T('hitP', { n: c.toP }); cls = 'r'; }
+    const tE = c.toE | 0, tP = c.toP | 0;
+    if (tE > 0 && tP > 0) {                            // 同一手兩邊都扣（彈回：被剋的一半彈回去扣他）：兩個數字都寫，顏色看誰扣得多
+      l2 = fillU((U && U.hitBoth) || '你 −{p}，他 −{e}', { p: tP, e: tE }); cls = tP > tE ? 'r' : tE > tP ? 'g' : 'z';
+    }
+    else if (tE > 0) { l2 = T('hitE', { n: c.toE }); cls = 'g'; }
+    else if (tP > 0) { l2 = T('hitP', { n: c.toP }); cls = 'r'; }
+    else if (apx && c.kind === 'mirrorLose') l2 = (U && U.loseFree) || '你輸了，但不扣。';   // 比星輸了、王牌免扣（不是「一樣大」）
     else l2 = T('tie');
     const h = c.hint && ATTRS.includes(c.hint.attr) ? c.hint : null;
     if (h) {
@@ -183,6 +193,7 @@
       } else l3 = key ? T('honest', { key, hint: hz }) : T('honestNoKey', { hint: hz });
     }
     const notes = (c.notes || []).map(n => (typeof n === 'string' ? n : n && n.text) || '').filter(Boolean);
+    if (apx && c.eAce && U && U.eAceNote) notes.push(U.eAceNote);   // 旗標下你的王牌不比星，他帶的照舊 7 星：丟出來那手寫明（審查 11-16）
     return { l1, l2, l3, cls, rule, notes, bluff: !!c.bluff };
   }
 
@@ -552,6 +563,7 @@
       els.leg.dataset.a = key;
       els.leg.innerHTML = x ? legHTML(x) : '';
       els.leg.hidden = !x || !els.leg.innerHTML;
+      if (!els.leg.hidden && els.apxf) hideApxf();   // 頂點卡試做：「王牌《…》：…」那行跟相剋圖那行同一個位置——選了唱片就讓給相剋圖那行
     }
     // 提示框（中間字帶垂直置中）兩行時會蓋到最下面那一行字：先往上讓（只看提示框自己的高，不看有沒有選牌 → 打開手牌時不跳）
     function placeLeg() {
@@ -614,7 +626,7 @@
       const U = apxUI(), tm = (U.timing || {})[X.timing] || '';
       return `<div class="hd"><b>${esc(X.name)}</b><span class="tm">${esc(tm)}</span></div>`
         + (X.used ? `<p class="tx used">${esc(U.usedNote || '')}</p>`
-          : `<p class="tx">${esc(X.text)}</p><div class="ft"><small>${esc(U.noStar || '')}</small><button type="button" class="go key" data-tut="apex-go"${X.can ? '' : ' disabled'}>${esc(U.use || '')}</button></div>`);
+          : `<p class="tx">${esc(X.text)}</p><div class="ft">${X.full ? `<small class="full">${esc(U.full || '')}</small>` : `<small>${esc(U.noStar || '')}</small>`}<button type="button" class="go key" data-tut="apex-go"${X.can ? '' : ' disabled'}>${esc(U.use || '')}</button></div>`);   // 只會回聲望的王牌、聲望滿＝不能發動，寫原因
     }
     // 能力框：右緣對齊王牌格（夾在左右 16 px 裡）；放在提示框上面（蓋牌桌那兩格：出牌前只有蓋著的封套與空格）——要發動之前還看得到提示那句。
     //   提示框上面放不下（很矮的盤面）才放王牌格正上方
@@ -643,6 +655,7 @@
       emit('apex', { open: true });
       return true;
     }
+    function hideApxf() { if (els.apxf && !els.apxf.hidden) { els.apxf.hidden = true; clearTimeout(S.apxfT); } }
     function closeApex() {
       if (!S.apxOpen) return true;
       S.apxOpen = false;
@@ -673,10 +686,11 @@
         const rmv = () => sw.remove(); if (a) a.finished.then(rmv, rmv); else later(rmv, 400);
       }
       sfx('readHit');
-      // 提示框下面那一行：「王牌《Filth》：揭穿髒招」1.2 秒
+      // 提示框下面那一行：「王牌《Filth》：揭穿髒招」1.2 秒；專輯名太長只截專輯名（能力名一定看得到）。點唱片（相剋圖那行出來）、出手時就收掉，不蓋那行、不蓋結果框
       ensureApexEls();
-      const f = els.apxf;
-      f.textContent = fillT(U.fired, { album: (ev.card && ev.card.album) || '', name: ev.name || '' });
+      const f = els.apxf, fp = String(U.fired || '').split('{album}'), alb = (ev.card && ev.card.album) || '';
+      f.innerHTML = fp.length === 2 ? `<span class="f0">${esc(fillT(fp[0], { name: ev.name || '' }))}</span><span class="al">${esc(alb)}</span><span class="f1">${esc(fillT(fp[1], { name: ev.name || '' }))}</span>`
+        : `<span class="f1">${esc(fillT(U.fired, { album: alb, name: ev.name || '' }))}</span>`;
       f.hidden = false; clearTimeout(S.apxfT);
       if (!rm()) A(f, [{ opacity: 0, transform: 'translateY(3px)' }, { opacity: 1, transform: 'none' }], { duration: 160, easing: 'ease-out' });
       S.apxfT = later(() => { f.hidden = true; }, 1200);
@@ -1204,7 +1218,7 @@
       else A(k, [{ transform: 'translate(-50%,-50%) rotate(-4deg) scale(1.8)', opacity: 0 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(.96)', opacity: 1, offset: .5 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(1)', opacity: 1 }], { duration: 420, easing: 'ease-out', fill: 'forwards' });
     }
     // 音效：counter→readHit、countered／mirrorLose→hurt、其他→mirror（§2.5.1）
-    const hitSfx = c => c.kind === 'counter' ? 'readHit' : (c.kind === 'countered' || c.kind === 'mirrorLose') ? 'hurt' : 'mirror';
+    const hitSfx = c => c.kind === 'counter' ? 'readHit' : (c.kind === 'countered' || (c.kind === 'mirrorLose' && (c.toP | 0) > 0)) ? 'hurt' : 'mirror';   // 比星輸了但王牌免扣（toP 0）＝不是被打（旗標關時 mirrorLose 一定 toP>0）
     function flashOf(c) {
       if (c.kind === 'counter') return { edge: c.pAttr + c.eAttr, tone: 'g' };
       if (c.kind === 'countered') return { edge: c.eAttr + c.pAttr, tone: 'r' };
@@ -1230,11 +1244,11 @@
       if (cl.blocked === 'gap') hint('tip_block', ['result']);
       if (cl.ace) hint('tip_ace', ['result']);          // 第一次丟王牌（FIXLIST 2；hint 一場只送一次）
       if (cl.pAttr === cl.eAttr) hint('tip_mirror', ['result']);
-      if ((cl.notes || []).some(n => n && n.apex && n.hit === false)) hint('tip_apexMiss', ['result']);   // 頂點卡試做：第一次出現「沒作用」那句（看穿、回聲望沒有這句）
+      if ((cl.notes || []).some(n => n && n.apex && n.hit === false && !n.full)) hint('tip_apexMiss', ['result']);   // 頂點卡試做：第一次出現「沒作用」那句（看穿、回聲望沒有這句）
     }
     async function play(act, sel) {
       if (!canAct() || !legal(sel)) return false;
-      closeApex();
+      closeApex(); if (els.apxf) hideApxf();
       S.busy = true; S.rush = false; S.playAt = performance.now();
       const v0 = S.v;
       const tileEl = els.tiles.querySelector(`.tile[data-i="${sel.i}"]`);
@@ -1251,7 +1265,7 @@
       const over = evs.find(e => e.t === 'over'), hs = evs.find(e => e.t === 'hand'), dr = evs.find(e => e.t === 'draw');
       if (!cl) { console.error('DipLabDuel: no clash event', evs); S.busy = false; S.v = v1; renderAll(); return false; }
       const t0 = performance.now();
-      const ct = clashText(cl, T, hints);
+      const ct = clashText(cl, T, hints, apexMode() ? apxUI() : undefined);
       const rec = { n: v0.n, act, sel, evs, ct };
       S.debug.hands.push(rec); if (S.debug.hands.length > 300) S.debug.hands.shift();
       S.sel = null; S.openTap = null;                    // 丟出去：手牌收回疊好（下一手從疊著開始）
@@ -1394,7 +1408,7 @@
     function initialTable() {   // 續玩：從 view().last 還原「上一手」兩張（變淡）
       const l = S.v.last;
       if (!l || S.v.over) return;
-      S.lastCt = clashText(l, T, hints);
+      S.lastCt = clashText(l, T, hints, l && 'apex' in l ? apxUI() : undefined);
       S.table = { e: { card: l.eCard, attr: l.eAttr, star: l.eStar, ace: !!l.eAce }, p: { card: l.pCard, attr: l.pAttr, star: l.pStar, ace: !!l.ace }, dim: true };
     }
     initialTable();
@@ -1424,22 +1438,31 @@
       if (typeof pol !== 'function') return false;
       S.auto = true;
       const r = E.makeRng ? E.makeRng(1234) : Math.random, mem = {};
+      const noApex = a => { const b = Object.assign({}, a); delete b.apex; return b; };
+      let held = null;                                    // 頂點卡試做：發動之後要出的那張（策略一步到位挑的；看穿＝照真假挑的那張，不再問一次策略）
       while (S.auto && !S.destroyed && !isOver()) {
         if (!canAct() || paused()) { await wait(40); continue; }
-        let act; try { act = pol(duel, r, mem, content); } catch (e) { console.error(e); break; }
+        let act = null;
+        if (held && held.n === (S.v && S.v.n) && E.isLegal(duel, held.act)) act = held.act;
+        else held = null;
+        if (!act) { try { act = pol(duel, r, mem, content); } catch (e) { console.error(e); break; } }
         if (!act) break;
-        if (act.apex && apexMode() && E.canApex(duel)) {   // 頂點卡試做：策略要發動＝照畫面點王牌格、按「發動」
+        if (act.apex && apexMode() && E.canApex(duel)) {   // 頂點卡試做：策略要發動＝照畫面點王牌格、按「發動」，接著出策略同一步挑的那張（跟 sim 的 resolveTurn({…, apex:true}) 同一個出法）
+          const n0 = S.v && S.v.n;
           if (!S.apxOpen) openApex();
           await wait(120);
           if (!fireApex()) closeApex();
+          else held = { n: n0, act: noApex(act) };
           await wait(160);
           continue;
         }
+        if (act.apex) act = noApex(act);
         const sel = act.ace ? { i: 'ace', attr: aceAx(S.v) } : { i: act.i, attr: act.attr };
         if (!(S.sel && S.sel.i === sel.i) && !liftCard(sel.i)) { await wait(80); continue; }
         await wait(100);
         if (!canAct() || !S.sel || S.sel.i !== sel.i) continue;
         throwAttr(sel.i, sel.attr, els.abpop.querySelector(`.ab[data-a="${sel.attr}"]`) || els.abpop.querySelector('.ab'));
+        held = null;
         await wait(60);
       }
       return true;

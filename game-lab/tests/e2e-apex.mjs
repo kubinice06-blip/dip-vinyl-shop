@@ -20,7 +20,11 @@
 //   7  不開旗標：挑王牌畫面跟現在一樣（老闆 → 換一張王牌＝三張王牌三選一、沒有分頁與 15 張；來客畫面不自動跳；王牌格照舊可以丟、屬性鈕「王牌 硬 7」；
 //      規則卡照舊「王牌 7 星」；唱片資訊沒有「王牌能力」；唱片櫃分母 316）
 //   8  序章（旗標開）：挑王牌那行寫「頂點卡試做・教學這場王牌照舊 7 星…」、序章那場照舊 7 星（view 沒有 apex、王牌可以丟）、開打吐司寫明；
-//      序章打完回到來客畫面 → 老闆說那句 → 自動跳挑王牌面板（只在 390 跑：整段序章約 1 分鐘）
+//      序章打完回到來客畫面 → 老闆說那句 → 自動跳挑王牌面板 → 挑 → 老闆＋吐司先出、第一次來客的教學泡泡等它們收掉才出（不三則疊在一起）（只在 390 跑：整段序章約 1 分鐘）
+//   9  審查 11-16 的版面與字（旗標開）：挑王牌面板三派 45 張逐一點，說明三行與換派灰字都在「就這張」那列上面、不被切、面板不捲；
+//      看穿的章不疊在提示句上（16 場）；發動那行專輯名太長只截專輯名、能力名看得到、點唱片就收掉；回聲望滿聲望＝「發動」灰掉＋寫原因；
+//      結果句：彈回兩邊都扣寫兩個數字、比星輸王牌免扣不寫「一樣大」、他丟他的王牌補「他的王牌照舊 7 星」（旗標關時這三種都不會出現）；藏家真的丟王牌那手也有那句
+//   10 不開旗標：這份存檔開旗標時挑過的試做卡（記成認識）不會出現在試聽機的清單（試做的 42 張當作不存在）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, noScroll, scrollOk, duelReady, tapAt, hitPoint,
   seededContinue, seedRun, watchSay, tapHot, longPress, infoOpen, closeInfo, openTitle, prologueToDuel, advanceUntil } from './e2e-lib.mjs';
@@ -320,6 +324,138 @@ async function runSize(browser, w, h) {
     await ctx.close();
   }
 
+  // ---------------------------------------------------------------- 9：審查 11-16 的版面與字（旗標開）
+  if (want(9)) {
+    const { ctx, page } = await newPage(browser, w, h); track(page);
+    try {
+      const up = await toNightWithPanel(page);
+      const u = await U(page);
+      await sleep(500);
+      // (a) 三派 × 15 張逐一點：說明、換派灰字都在「就這張」那列上面、不被切；面板不捲、在畫面裡
+      const pk = up ? await C(page, async () => {
+        const s = document.querySelector('.lb-sheet.apxpick'), out = { n: 0, bad: [] };
+        const meas = (tag) => {
+          const foot = s.querySelector('.foot').getBoundingClientRect(), det = s.querySelector('.apx-det'), dr = det.getBoundingClientRect(), sw = s.querySelector('.apx-sw'), wr = sw.getBoundingClientRect(), sr = s.getBoundingClientRect();
+          const ab = det.querySelector('.ab'), abr = ab ? ab.getBoundingClientRect() : dr;
+          const ok = dr.bottom <= foot.top + 0.5 && abr.bottom <= foot.top + 0.5 && det.scrollHeight <= det.clientHeight + 1 && (sw.hidden || wr.bottom <= foot.top + 0.5) && s.scrollHeight - s.clientHeight <= 1 && sr.bottom <= innerHeight + 0.5;
+          out.n++; if (!ok) out.bad.push({ tag, det: [Math.round(dr.top), Math.round(dr.bottom), det.scrollHeight, det.clientHeight], ab: Math.round(abr.bottom), sw: sw.hidden ? null : [Math.round(wr.top), Math.round(wr.bottom)], foot: Math.round(foot.top), sc: s.scrollHeight - s.clientHeight });
+        };
+        const wait = ms => new Promise(r => setTimeout(r, ms));
+        for (const t of ['hall', 'pearl', 'heresy']) {
+          s.querySelector(`[data-tab="${t}"]`).click(); await wait(80);
+          for (const b of [...s.querySelectorAll('.apx-c')]) { b.click(); await wait(40); meas(t + ':' + b.dataset.cid); }
+        }
+        s.querySelector('[data-tab="heresy"]').click(); await wait(80);
+        const def = window.DipLabContent.aces.heresy; s.querySelector(`.apx-c[data-cid="${def}"]`).click(); await wait(60);
+        return out;
+      }) : null;
+      if (up) { await jsClick(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(900); }
+      const ok9a = up && pk && pk.n === 45 && !pk.bad.length;
+      record('9a', size, ok9a && !errs(page).length, `挑王牌面板 45 張逐一點：${pk && pk.n} 個狀態、蓋住 ${pk && pk.bad.length} ${pk && pk.bad.length ? JSON.stringify(pk.bad.slice(0, 3)) : ''}`);
+
+      const lab = (o) => C(page, o => window.__lab.duelLab.start(o), o).then(() => duelReady(page));
+      // (b) 看穿的章不疊在提示句上（16 場）
+      const st = [];
+      for (let seed = 1; seed <= 16; seed++) {
+        await lab({ ace: 'heresy', aceId: RALLIZES, enemy: 'copycat', seed });
+        await sleep(200);
+        await tapAt(page, 'dt:card-ace'); await sleep(300); await tapAt(page, '.dl .apx-box .go'); await sleep(250);
+        st.push(await C(page, () => {
+          const hi = document.querySelector('.dl .hint'), tx = hi.querySelector('.tx'), a = hi.querySelector('.apxst:not([hidden])');
+          if (!a) return { none: true };
+          const r = a.getBoundingClientRect(), t = tx.getBoundingClientRect(), h = hi.getBoundingClientRect();
+          // 提示句每一個字的框
+          const rg = document.createRange(); rg.selectNodeContents(tx); const rects = [...rg.getClientRects()];
+          const hitText = rects.some(q => !(r.left >= q.right - 0.5 || r.right <= q.left + 0.5 || r.top >= q.bottom - 0.5 || r.bottom <= q.top + 0.5));
+          return { hitText, clip: tx.scrollHeight > tx.clientHeight + 1, inBox: r.right <= h.right + 0.5 && r.left >= h.left - 0.5, t: tx.textContent, stamp: a.textContent };
+        }));
+      }
+      const ok9b = st.length === 16 && st.every(x => !x.none && !x.hitText && !x.clip && x.inBox);
+      record('9b', size, ok9b && !errs(page).length, `看穿蓋章 16 場：疊字 ${st.filter(x => x.hitText).length}、提示句被切 ${st.filter(x => x.clip).length}、章出框 ${st.filter(x => !x.inBox).length}、沒章 ${st.filter(x => x.none).length}；例 ${JSON.stringify(st[8])}`);
+
+      // (c) 發動那行：專輯名很長（Goldberg）只截專輯名，能力名看得到；點唱片就收掉、相剋圖那行出來；層級在結果框下面
+      const GOULD = 'glenn-gould-bach-the-goldberg-variations-1955';
+      await lab({ ace: 'hall', aceId: GOULD, enemy: 'copycat', seed: 21 });
+      await sleep(200);
+      await tapAt(page, 'dt:card-ace'); await sleep(300); await tapAt(page, '.dl .apx-box .go'); await sleep(200);
+      const f1 = await C(page, () => {
+        const f = document.querySelector('.dl .apxf'); if (!f || f.hidden) return null;
+        const r = f.getBoundingClientRect(), a = f.querySelector('.f1'), ar = a ? a.getBoundingClientRect() : { right: 1e9, width: 0 }, al = f.querySelector('.al');
+        return { t: f.textContent, f1: a ? a.textContent : '', nameIn: ar.width > 0 && ar.right <= r.right + 0.5, alClip: al ? al.scrollWidth > al.clientWidth : false,
+          z: +getComputedStyle(f).zIndex, zc: +getComputedStyle(document.querySelector('.dl .callout')).zIndex };
+      });
+      const gname = await C(page, id => window.DipLabEngine.abilityOf(window.DipLabContent, id).name, GOULD);
+      await tapAt(page, 'dt:card-0'); await sleep(250);
+      const f2 = await C(page, () => ({ apxf: !document.querySelector('.dl .apxf') || document.querySelector('.dl .apxf').hidden, leg: !document.querySelector('.dl .trileg').hidden }));
+      const ok9c = !!f1 && f1.f1.includes(gname) && f1.nameIn && f1.z < f1.zc && f1.t === u.fired.replace('{album}', 'Bach: The Goldberg Variations (1955)').replace('{name}', gname) && f2.apxf && f2.leg;
+      record('9c', size, ok9c && !errs(page).length, `發動那行 ${JSON.stringify(f1)}；點唱片後 ${JSON.stringify(f2)}`);
+
+      // (d) 回聲望（OK Computer）滿聲望：「發動」灰掉、寫原因；按了也不會用掉
+      await lab({ ace: 'hall', enemy: 'copycat', seed: 31 });
+      await sleep(200);
+      await tapAt(page, 'dt:card-ace'); await sleep(350);
+      const hb = await C(page, () => { const b = document.querySelector('.dl .apx-box'), go = b && b.querySelector('.go'), d = window.__lab.rawDuel();
+        return b && !b.hidden ? { full: (b.querySelector('.full') || {}).textContent || '', dis: !!(go && go.disabled), hp: d.p.hp, max: d.p.max, tile: document.querySelector('.dl .tile[data-i=ace]').dataset.apex } : null; });
+      await C(page, () => { const g = document.querySelector('.dl .apx-box .go'); if (g) g.click(); }); await sleep(250);
+      const hb2 = await C(page, () => ({ used: !!window.__lab.rawDuel().p.aceUsed }));
+      await tapAt(page, '.dl .dl-e .nm'); await sleep(200);
+      const ok9d = !!hb && hb.hp === hb.max && hb.full === u.full && hb.dis && hb.tile !== 'can' && !hb2.used;
+      record('9d', size, ok9d && !errs(page).length, `滿聲望回聲望 ${JSON.stringify(hb)}；按了 ${JSON.stringify(hb2)}`);
+
+      // (e) 結果句（_fmt.clashText 用頁面上的字）：彈回兩邊都扣、比星輸免扣、他的王牌；旗標關（事件沒有 apex 鍵）時照舊
+      const fx = await C(page, () => {
+        const F = window.DipLabDuel._fmt, T = F.text(window.DipLabContent), H = window.DipLabContent.hints, n = (o) => Object.assign({ pAttr: 'c', eAttr: 'o', pStar: 3, eStar: 3, notes: [] }, o);
+        return {
+          both: F.clashText(n({ kind: 'countered', toE: 1, toP: 2, apex: { op: 'bounce' }, notes: [{ apex: 'x', text: '王牌：彈回去 1' }] }), T, H),
+          free: F.clashText(n({ kind: 'mirrorLose', pAttr: 'c', eAttr: 'c', toE: 0, toP: 0, apex: { op: 'loseZero' } }), T, H),
+          eace: F.clashText(n({ kind: 'mirrorWin', pAttr: 'h', eAttr: 'h', toE: 2, toP: 0, eAce: true, apex: null }), T, H),
+          offTie: F.clashText(n({ kind: 'mirrorLose', pAttr: 'c', eAttr: 'c', toE: 0, toP: 0 }), T, H),
+          offAce: F.clashText(n({ kind: 'mirrorWin', pAttr: 'h', eAttr: 'h', toE: 2, toP: 0, eAce: true }), T, H),
+          tie: T('tie')
+        };
+      });
+      const ok9e = fx.both.l2 === u.hitBoth.replace('{p}', 2).replace('{e}', 1) && fx.both.cls === 'r' && fx.free.l2 === u.loseFree && fx.free.l2 !== fx.tie &&
+        fx.eace.notes.includes(u.eAceNote) && fx.offTie.l2 === fx.tie && !fx.offAce.notes.includes(u.eAceNote);
+      record('9e', size, ok9e && !errs(page).length, `結果句 ${JSON.stringify({ both: [fx.both.l2, fx.both.cls], free: fx.free.l2, eace: fx.eace.notes, offTie: fx.offTie.l2, offAce: fx.offAce.notes })}`);
+
+      // (f) 藏家真的丟他的王牌那手：結果行有「他的王牌照舊 7 星」
+      let bo = null;
+      for (let seed = 7; seed <= 30 && !bo; seed++) {
+        await lab({ ace: 'hall', enemy: 'boss', seed });
+        const j = await C(page, () => { const d = window.__lab.rawDuel(); const j = d.e.hand.findIndex(c => c && c.tier); return j >= 0 ? { j, ax: window.DipLabEngine.TIER_AXIS[d.e.hand[j].tier] } : null; });
+        if (!j) continue;
+        await sleep(200);
+        await C(page, p => window.__lab.duelLab.setNext({ i: p.j, attr: p.ax }), j);
+        await tapAt(page, 'dt:card-0'); await sleep(250);
+        const top = await C(page, () => (document.querySelector('.dl .pop .ab.top') || { dataset: {} }).dataset.a);
+        await tapAt(page, `.dl .pop .ab[data-a="${top}"]`);
+        await page.waitForFunction(() => { const d = window.DipLabDuel.debug(); return d.last && d.last.ui && d.last.ui.call.on; }, null, { timeout: 8000 }).catch(() => {});
+        bo = await C(page, () => { const d = window.DipLabDuel.debug(), cl = d.last.evs.find(e => e.t === 'clash'); return { seed: 0, eAce: !!cl.eAce, notes: d.last.ct.notes, call: d.last.ui.call.notes || '' }; });
+        bo.seed = seed;
+      }
+      const ok9f = !!bo && bo.eAce && bo.notes.includes(u.eAceNote);
+      record('9f', size, ok9f && !errs(page).length, `藏家丟王牌 ${JSON.stringify(bo)}`);
+    } catch (e) { for (const k of ['9a', '9b', '9c', '9d', '9e', '9f']) record(k, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 10：不開旗標：試做卡不進試聽機
+  if (want(10)) {
+    const { ctx, page } = await newPage(browser, w, h); track(page);
+    try {
+      await seededContinue(page, { ace: 'heresy', idx: 0 }, Q());
+      await waitScreen(page, 'night');
+      await sleep(600);
+      const has = await C(page, id => { const c = window.DipLabContent.cards[id]; window.__lab.save.shelf[id] = { at: 'r1', seen: true }; return !!(c && c.previewUrl) && window.DipLabContent.apexTrialOnly.includes(id); }, RALLIZES);
+      await C(page, () => window.__lab.stageAction('booth')); await sleep(600);
+      const ids = await C(page, () => [...document.querySelectorAll('.lb-sheet.booth [data-pick]')].map(b => b.getAttribute('data-pick')));
+      const ok10 = has && ids.length > 0 && !ids.includes(RALLIZES);
+      const leak = await C(page, ids => ids.filter(id => window.DipLabContent.apexTrialOnly.includes(id)), ids);
+      record(10, size, ok10 && !leak.length && !errs(page).length, `旗標關、唱片櫃有試做卡（有試聽 ${has}）→ 試聽機 ${ids.length} 張、試做卡 ${JSON.stringify(leak)}`);
+    } catch (e) { record(10, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+
   // ---------------------------------------------------------------- 8：序章（旗標開；只跑第一個尺寸）
   if (want(8) && w === SIZES[0][0] && h === SIZES[0][1]) {
     const { ctx, page } = await newPage(browser, w, h); track(page);
@@ -349,10 +485,24 @@ async function runSize(browser, w, h) {
       const said = await C(page, () => (window.__said || []).map(x => x.t));
       const ps = up ? await pickState(page) : null;
       const tier = await C(page, () => window.__lab.run && window.__lab.run.ace);
+      // 挑一張（同一派換另一張）→ 1.3 秒時：老闆那句＋吐司在、教學泡泡還沒出；3.6 秒時教學泡泡出來（第一次來客那兩句）
+      let st1 = null, st2 = null;
+      if (up) {
+        await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
+        const other = await C(page, () => { const b = [...document.querySelectorAll('.lb-sheet.apxpick .apx-c')][4]; return b ? b.dataset.cid : null; });
+        if (other) await tapAt(page, `.lb-sheet.apxpick .apx-c[data-cid="${other}"]`);
+        await sleep(200);
+        await tapAt(page, '.lb-sheet.apxpick [data-a=ok]');
+        const bub = () => C(page, () => { const t = document.getElementById('tut'), b = t && t.querySelector('.tut-bub'); return { on: !!(t && /\bon\b/.test(t.className) && b && !b.hidden), tx: b && !b.hidden ? (b.querySelector('.tx') || {}).textContent || '' : '', said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), seen: !!window.__lab.save.seen.night }; });
+        await sleep(1300); st1 = await bub();
+        await sleep(2300); st2 = await bub();
+      }
+      const intro0 = await C(page, () => [].concat(window.DipLabContent.shopLines.nightIntro || [])[0] || '');
       const ok8 = ready && !pd.mode && !pd.hasApex && pd.ace && pd.star === 7 && pd.legal && pd.pick.includes(u.tutNote) && pd.toasts.some(t => t.includes(u.tutNote)) &&
-        night && up && ps.tabs.includes(tier + '*') && ps.n === 15;
+        night && up && ps.tabs.includes(tier + '*') && ps.n === 15 &&
+        !!st1 && !st1.on && st1.said.includes(u.aceKeep) && st1.toasts.some(t => t.startsWith(u.aceSwapped.split('{')[0])) && !!st2 && st2.on && !!intro0 && st2.tx.includes(intro0.slice(0, 6));
       record(8, size, ok8 && !errs(page).length, `序章挑王牌那行「${pd.pick}」；序章對決 ${JSON.stringify({ mode: pd.mode, hasApex: pd.hasApex, star: pd.star, legal: pd.legal })} 吐司 ${JSON.stringify(pd.toasts)}；` +
-        `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n })}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
+        `打完 → 來客 ${night}、老闆 ${JSON.stringify(said.slice(-2))}、面板 ${up} ${ps && JSON.stringify({ tabs: ps.tabs, n: ps.n })}；挑完 1.3 秒 ${JSON.stringify(st1)} → 3.6 秒 ${JSON.stringify(st2 && { on: st2.on, tx: st2.tx })}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
     } catch (e) { record(8, size, false, 'error ' + e.message); }
     await ctx.close();
   }

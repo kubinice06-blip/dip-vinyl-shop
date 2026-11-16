@@ -783,15 +783,18 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.apxpick .apx-c.sel .lb-cv{outline:3px solid var(--gold);outline-offset:1px;}
 .lb-sheet.apxpick .apx-c .tm{position:absolute;right:0;bottom:0;z-index:5;font:700 9px/13px var(--zh);padding:0 3px;color:#fff;background:rgba(17,17,17,.8);letter-spacing:.04em;pointer-events:none;}
 .lb-sheet.apxpick .apx-c.sel .tm{background:var(--gold);color:#111;}
-.lb-sheet.apxpick .apx-det{min-height:40px;margin-top:8px;line-height:1.55;}
+/* 說明（藝人《專輯》一行＋能力兩行）與換派那行灰字：面板開的時候就留好最多要的高，點別張、切分頁不會長高、不會被「就這張」那列蓋住（審查 11-16）；
+   flex:none＝直排擠不扁它（不然字會畫到框外、面板也捲不出來） */
+.lb-sheet.apxpick .apx-det{flex:none;min-height:calc(3 * 1.55em);margin-top:8px;line-height:1.55;}
 .lb-sheet.apxpick .apx-det .ar{display:block;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .lb-sheet.apxpick .apx-det .ab{display:block;color:#333;}
 .lb-sheet.apxpick .apx-det .ab b{color:var(--cream-ink,#5a4a10);}
-.lb-sheet.apxpick .apx-sw{margin-top:2px;font-size:11px;line-height:1.4;}
+.lb-sheet.apxpick .apx-sw{flex:none;margin-top:2px;font-size:11px;line-height:1.4;}
+.lb-sheet.apxpick .apx-sw[hidden]{display:block;visibility:hidden;}   /* 沒換派時看不到、但位置留著 */
 @media (max-height:600px){
   .lb-sheet.apxpick .apx-grid{gap:6px;max-width:330px;}
   .lb-sheet.apxpick .apx-tabs button{height:32px;}
-  .lb-sheet.apxpick .apx-det{margin-top:6px;font-size:11.5px;line-height:1.5;}
+  .lb-sheet.apxpick .apx-det{margin-top:6px;font-size:11.5px;line-height:1.5;min-height:calc(3 * 1.5em);}
 }
 /* 唱片資訊：頂點卡的星數變灰＋「王牌不比星。」，下面一塊「王牌能力」 */
 .drawcard .stats.apxdim{margin-bottom:4px;opacity:.45;-webkit-filter:grayscale(1);filter:grayscale(1);}
