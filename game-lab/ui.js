@@ -230,6 +230,18 @@
       shf[id] = x;
     });
     s.shelf = shf;
+    // 解鎖制（店主 11-16；scratchpad v5/unlock BRIEF 第 6 條）：已解鎖的派＝save.lastAce ∪ 唱片櫃擁有頂點卡的派；?apex=1 擁有的試做卡＝唱片櫃擁有的（只認識的不算）。
+    //   lastAce 那派預設那張補記成擁有（src 'start'）：之後換到別派，那派也不會鎖回去。每次載入都跑（新規則的存檔不會有要補的）；有補＝UI.migratedUnlock
+    if (E.unlockMigrate && TIERS.indexOf(s.lastAce) >= 0) {
+      try {
+        E.unlockMigrate(C, function (id) { return !!(shf[id] && shf[id].own); }, s.lastAce).own.forEach(function (id) {
+          var e = shf[id] || (shf[id] = { at: '', seen: true });
+          if (!e.own) { e.own = true; e.src = 'start'; UI.migratedUnlock = true; }
+        });
+      } catch (_) { /* 補不了就照舊：lastAce 那派照樣算解鎖（unlockedTiers 的 start） */ }
+    }
+    // 進行中的舊 run（沒有 run.unlock）：補上開局快照（之後換王牌只能換解鎖的、藏家照被剋鏈帶卡）
+    if (s.run && E.fixUnlock) { try { E.fixUnlock(s.run, C, unlockArgs(s)); } catch (_) {} }
     // 想要清單：卡還在、不重複、已經擁有的拿掉（收進唱片櫃了就不用想要了）；最多 200 張
     s.want = s.want.filter(function (id, i, a) { return typeof id === 'string' && card(id) && a.indexOf(id) === i && !(shf[id] && shf[id].own); }).slice(-200);
     return s;
@@ -263,8 +275,9 @@
   }
   function isNewOnShelf(id) { var s = save.shelf[id]; return !!(s && !s.seen && s.at === runTag()); }
   // 擁有（從唱片櫃挑牌開局 §1 裁定 4）：src 'gift' 老闆送的（挑過那個王牌，那四張）、'run' 一趟留一張（店內取得：金框）、'boss' 打倒藏家拿到的王牌
+  //   'start' 初始流派那張頂點卡（解鎖制，店主 11-16：新玩家第一次挑的那派；舊存檔＝save.lastAce 那派，loadSave 補）。
   //   已經擁有的不改來源。回傳這次是不是剛擁有
-  var SHELF_SRC = ['gift', 'run', 'boss'];
+  var SHELF_SRC = ['gift', 'run', 'boss', 'start'];
   function shelfOwn(id, src) {
     if (!id || !card(id)) return false;
     shelfAdd(id);
@@ -278,6 +291,16 @@
   function ownedIds() { return Object.keys(save.shelf).filter(function (id) { return card(id) && isOwned(id); }); }
   // 可以當種子的＝擁有、而且不是頂點卡（頂點卡只展示）
   function seedableIds() { return ownedIds().filter(function (id) { return E.canSeed(C, id); }); }
+  // ---- 解鎖制（店主 11-16「流派的頂點卡要透過遊戲蒐集才能解鎖」；scratchpad v5/unlock CONTRACT）：引擎從唱片櫃的「擁有」算（引擎不碰存檔）
+  //   sv 沒給＝目前的 save（loadSave 裡還沒設好 save，傳正在讀的那份）
+  function ownFn(sv) { sv = sv || save; return function (id) { var e = sv && sv.shelf && sv.shelf[id]; return !!(e && e.own); }; }
+  function lastTier(sv) { sv = sv || save; return sv && TIERS.indexOf(sv.lastAce) >= 0 ? sv.lastAce : null; }
+  // 已解鎖的派（擁有那派任一張頂點卡＋目前在玩的那派 lastAce）；一派都沒有＝新玩家，第一次挑的那派是初始流派
+  function unlockedNow(sv) { return E.unlockedTiers ? E.unlockedTiers(C, ownFn(sv), { start: lastTier(sv) }) : TIERS.slice(); }
+  // 擁有的頂點卡（?apex=1 挑王牌只能挑這些）：唱片櫃擁有的＋已解鎖各派預設那張
+  function apexOwnedNow(sv) { return E.ownedApex ? E.ownedApex(C, ownFn(sv), { tiers: unlockedNow(sv) }) : []; }
+  // newRun／fixUnlock 的解鎖參數：已解鎖的派、初始流派、旗標開時擁有的頂點卡（旗標只看網址，每次載入照現在的旗標同步進 run）
+  function unlockArgs(sv, start) { var o = { unlocked: unlockedNow(sv), start: start || lastTier(sv) }; if (UI.apex) o.apexOwned = apexOwnedNow(sv); return o; }
 
   // ======================================================================= 像素小人、配件圖示
   // LAB_SPR＝roguelike.html 的 SPR 整段（依賴 dip-character.js 的 sprRows；不宣告它的同名全域）
@@ -1308,7 +1331,7 @@
   function cardVis(id) { return !!card(id) && (UI.apex || !(UI.apexOnly && UI.apexOnly[id])); }
   function poolIds() { return Object.keys(C.cards).filter(cardVis); }
   function apexPickOk(tier, id) { return !!id && TIERS.indexOf(tier) >= 0 && E.apexList(C, tier).some(function (x) { return x && x.card === id; }); }
-  function lastAceIdFor(tier) { return apexPickOk(tier, save.lastAceId) ? save.lastAceId : null; }
+  function lastAceIdFor(tier) { return apexPickOk(tier, save.lastAceId) && apexOwnedNow().indexOf(save.lastAceId) >= 0 ? save.lastAceId : null; }   // 解鎖制：要擁有（只認識的不算）
   // 挑王牌面板（FRAME 7.2）：標題＋「頂點卡試做」小字 → 三派分頁 → 那派 15 張封面 5×3（角上小字：這手／整場／留著）→ 藝人《專輯》／能力名・時機：說明 →「就這張」
   //   點封面＝選；按住封面＝唱片資訊（多一塊「王牌能力」）。切到別派＝換流派：下面多一行灰字「老闆送的那幾張也跟著換」。
   //   o：{tier, aceId, canSwitch}；回 {tier, aceId}
@@ -1833,13 +1856,19 @@
     // 帶來的那張用一次就沒了（不管這次有沒有帶它上場）；帶上場的算認識（包包裡有它），不算擁有（一趟留一張的候選照舊不列種子）
     var tookBring = !o.prologue && !!brought && seeds.indexOf(brought) >= 0;
     if (!o.prologue && save.bring) save.bring = null;
+    // 解鎖制（店主 11-16）：一派都還沒解鎖＝新玩家，這次挑的就是初始流派（預設那張下面記成擁有，src 'start'）；
+    //   有解鎖的派、卻挑了鎖著的（介面該擋；保險）→ 改用上次那派／第一個解鎖的派
+    var un = unlockedNow(), first = !un.length;
+    if (!first && un.indexOf(o.ace) < 0) o.ace = un.indexOf(save.lastAce) >= 0 ? save.lastAce : un[0];
     var nro = { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds };
     if (UI.apex && !o.prologue && lastAceIdFor(o.ace)) nro.aceId = lastAceIdFor(o.ace);   // 頂點卡試做：沿用上次挑的那張（旗標關時不加這欄）
+    if (E.unlockedTiers) Object.assign(nro, unlockArgs(null, first ? o.ace : null));
     var r = E.newRun(C, nro);
     r.tut = null;                                     // tut：null＝還沒選、true＝老闆帶的那場（教學）、false＝直接打／教學結束
     r.farBefore = save.best.far | 0;                  // 結算的「新紀錄」：跟開這一趟之前的最遠比
     r.got = r.bag.slice();                            // 這一趟收進包包的（老闆送的、種子也算，裁定 9）
     save.run = r; save.lastAce = o.ace;
+    if (first) shelfOwn(C.aces[o.ace], 'start');            // 新玩家：初始流派預設那張算擁有（＝那派解鎖；之後換派也不會鎖回去）
     // 帶上場的那張記成「這一趟認識的」（at＝這一趟 seedKey#runNo，NEW 章、「這一趟新認識」才找得到；審查：之前在 save.run 設好前記，at 少了 #runNo）
     if (tookBring) shelfAdd(brought);
     // 挑過這個王牌：那組送的四張算擁有（src 'gift'，不是金框；種子佔掉的那幾格也算）；王牌本身照舊只是認識（頂點卡維持老闆三選一）
@@ -2245,7 +2274,7 @@
     if (off && off.type === 'retry') return retryFlow(out);
     if (off && off.prologue) return epilogueFlow(false);
     // 藏家：這一趟第一次打倒他才演送牌那段（他的王牌收進唱片櫃）；之後每輪同一張、已經在櫃子裡了：直接領獎／升級（審查 #18）
-    if (out.aceWon && firstBoss) return bossDownFlow(out, aceNew);
+    if (out.aceWon && (out.aceFirst != null ? out.aceFirst : firstBoss)) return bossDownFlow(out, aceNew);   // 解鎖制：每輪的藏家可以帶不同張，這一趟第一次收這張才演
     if (off && (off.type === 'reward' || off.type === 'level')) return go('reward');
     if (r.over) { recordRun(r); return deadFlow(out); }
     go('night');
@@ -3098,7 +3127,7 @@
   var TUNE_WAIT = 15000;                                // 等 dip-tune.js 最多 15 秒（慢的手機網路 65 KB 壓縮後約 2 秒）：等不到就吐司、收回
   // 擁有的唱片，照唱片櫃頁的排法：店內取得 → 藏家王牌 → 老闆送的（同一類最近收的在前）
   function homeOwnedIds() {
-    var ORD = { run: 0, boss: 1, gift: 2 };
+    var ORD = { run: 0, boss: 1, start: 1, gift: 2 };
     return Object.keys(save.shelf).filter(card).reverse().filter(isOwned).sort(function (a, b) { return (ORD[save.shelf[a].src] | 0) - (ORD[save.shelf[b].src] | 0); });
   }
   function homePlayable() { return homeOwnedIds().filter(function (id) { return !!(card(id) || {}).previewUrl; }); }
@@ -3458,7 +3487,7 @@
     var total = poolIds().length;                       // 旗標關：試做的 42 張不算（分母維持 316）
     var ids = Object.keys(save.shelf).filter(cardVis).reverse();
     var shown = ids.filter(function (id) { return filter === 'new' ? isNewOnShelf(id) : filter === 'ace' ? !!card(id).tier : true; });
-    var SRC_ORDER = { run: 0, boss: 1, gift: 2 };
+    var SRC_ORDER = { run: 0, boss: 1, start: 1, gift: 2 };
     var own = ids.filter(isOwned).sort(function (a, b) { return (SRC_ORDER[save.shelf[a].src] | 0) - (SRC_ORDER[save.shelf[b].src] | 0); });
     var bar = el('div', 'lb-top page', '<div class="tt">唱片櫃<small>' + esc(SU('shelfOwn', { n: own.length })) + '・' + esc(SU('shelfKnown', { n: ids.length, total: total })) + '</small></div><button type="button" class="lnk" data-a="close">關閉</button>');
     pg.appendChild(bar);

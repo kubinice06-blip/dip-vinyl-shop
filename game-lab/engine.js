@@ -117,8 +117,9 @@
 //              run.unlock 時每張新卡 run.taken +1（舊行為：一趟只算一次）
 //            unlockTiersOf(run, content) · ownedApexOf(run, content)（開局快照＋這一趟收到的）· aceChoices(run, content) -> {tiers, apex:[ids]|null}（換王牌能換的）
 //            switchAce 多兩個錯誤碼：'locked'（那派還鎖著）、'notOwned'（旗標開：那張還沒擁有）；檢查順序 badAce → notNow → locked → notOwned → same
-//            fixUnlock(run, content, {unlocked, start?, apexOwned?})：舊的進行中 run（沒有 run.unlock）補上快照（打過藏家＝aceWon 那張算這一趟收的；
-//              還能換王牌、王牌是沒擁有的試做卡 → 回預設；藏家那場打到一半／剛打完領獎 → 這一輪的卡＝他真的帶的）。回 true＝有改
+//            fixUnlock(run, content, {unlocked, start?, apexOwned?})：載入存檔時把 run 對齊存檔（畫面每次 loadSave 呼叫；apexOwned 有給＝現在開著 ?apex=1）。
+//              舊的進行中 run（沒有 run.unlock）補上快照（打過藏家＝aceWon 那張算這一趟收的）；已經有的換成存檔現在的 tiers／apex（旗標只看網址）；
+//              還能換王牌、王牌是沒擁有的試做卡 → 回預設；這一輪藏家的卡重算（藏家那場打到一半／剛打完領獎 → 不動）。回 true＝有改
 // Economy    台幣行情（FIXLIST 8＋X／Y 契約；數字在 content.economy，這裡的 ECON 是沒給時的預設）
 //            categoryOf(card)：地區台灣 → 'tw'；否則第一個曲風（genre-tree 頂層十類，electronic → 'elec'）；對不到 → null · GENRE_BIN
 //            rarityScore(card) ＝ c＋h＋(o===5 ? 1 : 0) · rarity(card) → 'common'≤5｜'rare'6｜'uncommon'7｜'epic'8｜'legendary'≥9｜'apex'（tier hall／pearl／heresy）
@@ -1041,20 +1042,25 @@
     const ids = (duel && duel.e && duel.e.deckIds) || [];
     return ids.find(id => tierOfApex(content, id)) || run.bossCard || (content.aces || {})[run.bossAce] || null;
   }
-  // 舊的進行中 run（解鎖制以前存的，沒有 run.unlock）：補上開局快照，之後照新規則（換王牌只能換解鎖的、藏家照鏈帶卡）。
-  //   打過藏家（run.aceWon）＝那張（content.aces[run.bossAce]）算這一趟收的；還能換王牌、王牌是沒擁有的試做卡 → 拿掉 run.aceId（回那派預設）；
-  //   藏家那場打到一半、或剛打完在領獎／升級 → 這一輪的卡＝他真的帶的那張（下一輪開頭照新規則重算）。回 true＝有改
+  // 載入存檔時把 run 的解鎖狀態對齊存檔（畫面每次 loadSave 都呼叫；o＝{unlocked, start?, apexOwned?}，apexOwned 有給＝現在開著 ?apex=1）：
+  //   ・舊的進行中 run（解鎖制以前存的，沒有 run.unlock）：補上快照；打過藏家（run.aceWon）＝那張（content.aces[run.bossAce]）算這一趟收的、start＝o.start 或這次的派
+  //   ・已經有的：tiers／apex 換成存檔現在的（旗標只看網址：同一份存檔開關 ?apex=1，三派都開後藏家帶試做卡或照舊跟著變）；start、acesWon 不動
+  //   還能換王牌、旗標開、王牌是沒擁有的試做卡 → 拿掉 run.aceId（回那派預設）。這一輪藏家的卡重算；藏家那場打到一半、或剛打完在領獎／升級 →
+  //   不動（舊 run＝他真的帶的那張）。回 true＝有改
   function fixUnlock(run, content, o) {
-    if (!run || run.unlock || !o || !Array.isArray(o.unlocked) || !TIERS.includes(run.ace)) return false;
-    const aces = content.aces || {}, won = run.aceWon && aces[run.bossAce] && cardOf(content, aces[run.bossAce]) ? [aces[run.bossAce]] : [];
+    if (!run || !o || !Array.isArray(o.unlocked) || !TIERS.includes(run.ace)) return false;
+    const before = JSON.stringify([run.unlock, run.acesWon, run.bossCard, run.aceId]);
+    const aces = content.aces || {}, old = !run.unlock;
+    if (old) run.acesWon = run.aceWon && aces[run.bossAce] && cardOf(content, aces[run.bossAce]) ? [aces[run.bossAce]] : [];
+    if (!Array.isArray(run.acesWon)) run.acesWon = [];
     const apex = Array.isArray(o.apexOwned) ? uniq(o.apexOwned.filter(id => tierOfApex(content, id))) : null;
     const tiers = TIERS.filter(t => o.unlocked.includes(t) || t === run.ace || (apex || []).some(id => tierOfApex(content, id) === t));
-    run.unlock = { tiers, start: TIERS.includes(o.start) ? o.start : run.ace, apex };
-    run.acesWon = won;
+    run.unlock = { tiers, start: !old && TIERS.includes(run.unlock.start) ? run.unlock.start : TIERS.includes(o.start) ? o.start : run.ace, apex };
     if (run.aceId != null && apex && canSwitchAce(run, content) && !ownedApexOf(run, content).includes(run.aceId)) delete run.aceId;
-    const p = run.pending, bossNow = (run.duel && run.duel.e && run.duel.e.boss) || (p && !p.prologue && p.type !== 'retry' && classAt(p.pos || run.pos) === 'boss');
-    run.bossCard = bossNow ? (run.duel ? bossWonCard(run, content, run.duel) : (p.aceWon || aces[run.bossAce] || null)) : bossCardFor(run, content);
-    return true;
+    const p = run.pending, bossNow = !!(run.duel && run.duel.e && run.duel.e.boss) || !!(p && !p.prologue && p.type !== 'retry' && classAt(p.pos || run.pos) === 'boss');
+    if (!bossNow) run.bossCard = bossCardFor(run, content);
+    else if (old || !run.bossCard) run.bossCard = run.duel ? bossWonCard(run, content, run.duel) : (p.aceWon || aces[run.bossAce] || null);
+    return JSON.stringify([run.unlock, run.acesWon, run.bossCard, run.aceId]) !== before;
   }
   function newRun(content, o) {
     o = o || {};
