@@ -881,3 +881,33 @@ body.lb-tune-open{overflow:hidden;}
   .lb-unlock .lk .pixicon:last-child{animation:none;opacity:1;}
 }
 @media (max-height:600px){.lb-panel.title .lb-foot.unl{display:none;}}   /* 矮螢幕：解鎖進度只在唱片櫃寫（標題的鈕與「再按一次就放棄」那行優先） */
+
+/* ===================== 第 A 波（店主 11-16「全部開始做吧」）===================== */
+/* 4 錢跳數字入帳：頂欄下面一顆金色小條「+$1,500 $600→$2,100」（ui.js cashRise；取代 1.9 秒的「+$…」吐司） */
+.lb-toast.cash{display:flex;align-items:baseline;gap:10px;padding:6px 14px;}
+.lb-toast.cash .ce{font:700 13px var(--mono);color:var(--win,#2e7d52);}
+.lb-toast.cash .cv{font:700 18px/1 var(--mono);color:var(--gold);letter-spacing:.02em;min-width:5.2em;text-align:right;}
+.lb-toast.cash.done .cv{animation:lbCashPop .32s ease-out;}
+@keyframes lbCashPop{0%{transform:scale(1);}45%{transform:scale(1.18);}100%{transform:scale(1);}}
+@media (prefers-reduced-motion: reduce){ .lb-toast.cash.done .cv{animation:none;} }
+/* 4 再贏 N 位破紀錄（頂欄小字，對決與來客）：金色 */
+.lb-top .tt small.rec{color:var(--gold-ink,#8a6508);font-weight:700;}
+.lb-top .tt .tw{display:flex;align-items:baseline;white-space:nowrap;min-width:0;}
+.lb-top .tt .tw small.sb{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+.lb-top .tt .tw small.rec{flex:none;}
+/* 3 稱號：來客條頭像下緣一塊小名牌（engine guestTitle；壓在頭像上、不多佔一行） */
+.lb-night .nc .tl{position:relative;z-index:1;margin:-12px 0 -1px;font:700 10px/12px var(--zh);color:var(--gray2,#555);background:#fff;border:1px solid var(--line,#ccc);padding:0 2px;white-space:nowrap;letter-spacing:-.02em;max-width:calc(100% + 8px);overflow:hidden;}
+/*   6 字以上（二手店老闆級、廠牌主理人級）收一號：360–375 寬一格約 65–68 px（審查 A-12：原本 8.5 px 手機上讀不清） */
+.lb-night .nc .tl.lg{font-size:9px;letter-spacing:-.05em;padding:0 1px;}
+.lb-night .nc.cur .tl{color:var(--gold-ink,#8a6508);border-color:var(--gold);}
+.lb-night .nc.done .tl{color:var(--gray);}
+/* 6 常出：冷門（客人資訊） */
+.bl.ma b{font-weight:700;}
+/* 3 稱號（客人資訊另起一行「稱號：○○級」，不跟菁英／帶王牌的小籤排在一起；審查 A-6） */
+.pv-who .bl.tl{color:var(--gold-ink,#8a6508);font-weight:700;}
+/* 5 點老闆的小選單：賣給老闆（第 1 位開打前多這一顆） */
+.lb-ownersell{margin-top:8px;}
+/* 4 差一點摘要（結算）：走到那一列後面的小籤、輸給誰那行後面的半句 */
+.lb-sum li .nr.near{background:#fff;color:var(--gold-ink,#8a6508);box-shadow:inset 0 0 0 1px var(--gold);}
+.lb-endhero .sub .close{color:var(--ink);font-weight:700;}
+.lb-night .nc.done .ok{bottom:auto;top:0;}   /* 打完的勾移到右上：右下被稱號名牌壓住（第 A 波 3） */

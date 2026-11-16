@@ -286,7 +286,8 @@ export function shapeProblems(C, E) {
 const TRIAL_CURVE = {
   planner: ['easyTo', 'normalTo'], q: ['easy', 'normal', 'feintBase', 'feintStep', 'feintFrom', 'feintMax'],
   atk: ['lateFrom', 'rate', 'cap', 'slopeFrom', 'slopeEvery', 'boss', 'add'], def: ['lateFrom', 'rate', 'cap', 'boss', 'add'],
-  deck: ['floorBase', 'floorRate', 'floorMax', 'minPool', 'buffFrom', 'buffEvery', 'buffCap', 'aceFrom', 'aceRate', 'aceMax']
+  deck: ['floorBase', 'floorRate', 'floorMax', 'minPool', 'buffFrom', 'buffEvery', 'buffCap', 'aceFrom', 'aceRate', 'aceMax', 'mainShare'],
+  mercyP: ['from', 'p0', 'step', 'every', 'min']                    // 第 A 波 2：放水前期保留、第 11 位起照機率
 };
 function shapeTrial(C, E, ok) {
   const T = C.trial;
@@ -315,6 +316,16 @@ function shapeTrial(C, E, ok) {
   if (CV.planner) ok(CV.planner.easyTo <= CV.planner.normalTo, 'trial.curve.planner：easyTo ≤ normalTo');
   if (CV.q) ok(CV.q.easy > 0 && CV.q.easy <= 1 && CV.q.normal > 0 && CV.q.normal <= 1 && CV.q.feintMax >= 0 && CV.q.feintMax < 1, 'trial.curve.q：機率在 0–1');
   if (CV.deck) ok(CV.deck.buffCap <= 5 && CV.deck.aceMax <= 1 && CV.deck.floorMax <= 15, 'trial.curve.deck：加星上限 ≤5（一般卡最高 5 星）、王牌機率 ≤1');
+  if (CV.deck) ok(CV.deck.mainShare >= 0 && CV.deck.mainShare <= 1, 'trial.curve.deck.mainShare（客人主屬性那軸最高的牌至少幾成）0–1');
+  if (CV.mercyP) ok(int(CV.mercyP.from, 1) && int(CV.mercyP.every, 1) && [CV.mercyP.p0, CV.mercyP.step, CV.mercyP.min].every(x => x >= 0 && x <= 1) && CV.mercyP.min <= CV.mercyP.p0,
+    'trial.curve.mercyP：第 from 位起每手放水機率 p0、每 every 位 −step、最低 min（機率在 0–1、min ≤ p0）');
+  // 主線 11-16「放水前期保留」：前期加難後第 1–2 位 easy 也會唬（q.easy < 1）→ easy 也吃放水唬人（engine qNowOf 不看出招難度），
+  //   而且 easy／normal 那幾位每手都放水（mercyP 從 hard 之後才照機率）
+  if (CV.q) ok(CV.q.easy >= 1 || CV.mercyFeint > 0, 'trial.curve：easy 會唬人（q.easy < 1）就要有放水唬人（mercyFeint > 0；easy 也吃放水）');
+  if (CV.mercyP && CV.planner) ok(CV.mercyP.from > CV.planner.normalTo, 'trial.curve.mercyP.from 要在 planner.normalTo 之後（easy／normal 那幾位每手都放水，放水前期保留）');
+  // 客人稱號（第 A 波 3；舊版 enemyForDepth）：8 個、每 2 位換一次，字照舊版
+  ok(Array.isArray(T.titles) && T.titles.length >= 2 && T.titles.every(x => typeof x === 'string' && x && [...x].length <= 8) && new Set(T.titles).size === T.titles.length && int(T.titleEvery, 1),
+    'trial.titles：稱號（字串、≤8 字、不重複）＋titleEvery（每幾位換一次）');
   ok(Array.isArray(T.tiers), 'trial.tiers（之後的難度階梯）要是陣列');
 }
 
@@ -384,8 +395,11 @@ export function contentProblems(C, E) {
   const DT = ['hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
     'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn',   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
+    'readRight', 'seeThrough', 'seeThroughNoKey',   // 第 A 波 4：讀對了就說出來（剋中前加「讀對了。」；看穿唬人＝「你看穿了！」）
     'lpAria'];   // lpAria：上一手小列的讀屏字（店主 11-16）
-  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
+  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey；上一手小列加 lpAria）');
+  ok(C.duelText && ['seeThrough'].every(k => ['{key}', '{hint}', '{e}'].every(x => String(C.duelText[k]).includes(x))) && ['{hint}', '{e}'].every(x => String(C.duelText.seeThroughNoKey).includes(x)) && /^你看穿了/.test(C.duelText.seeThrough) && /讀對了/.test(C.duelText.readRight),
+    'duelText.readRight「讀對了」、seeThrough／seeThroughNoKey「你看穿了！」＋{key}{hint}{e} 的佔位（第 A 波 4）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');
   // D §5 的三個例句要組得出來
   if (C.duelText) {
@@ -412,22 +426,28 @@ export function contentProblems(C, E) {
   ok(String(SL.homePut || '').length <= 4, 'shopLines.homePut（唱片架每張下面的小鈕）≤4 字');
   ok(SL.binBusy === '打完再翻。', 'shopLines.binBusy＝「打完再翻。」（D §6）');
   ok(SL.ownerHint && ['title', 'scene', 'night', 'duel', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 五個畫面');
-  ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 4, 'shopLines.nightIntro 四句（第 2 句「客人跟剛才那位不一樣」店主 11-12；第 4 句講包包賣回，店主 11-16 包包不限張數）');
+  ok(Array.isArray(SL.nightIntro) && SL.nightIntro.length === 4, 'shopLines.nightIntro 四句（第 2 句「客人跟剛才那位不一樣」店主 11-12；第 4 句講去櫃檯賣給老闆，第 A 波 5）');
   ok(String((SL.nightIntro || [])[1] || '').startsWith('客人跟剛才那位不一樣'), 'shopLines.nightIntro 第 2 句「客人跟剛才那位不一樣」（店主 11-12）');
-  ok(/包包/.test(String((SL.nightIntro || [])[3] || '')) && /賣回/.test(String((SL.nightIntro || [])[3] || '')), 'shopLines.nightIntro 第 4 句講「包包」可以「賣回」（包包不限張數之後唯一自己瘦身的入口）');
-  const SU = ['money', 'binTitle', 'buy', 'noMoney', 'sellPick', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
+  ok(/櫃檯/.test(String((SL.nightIntro || [])[3] || '')) && /半價/.test(String((SL.nightIntro || [])[3] || '')), 'shopLines.nightIntro 第 4 句講「櫃檯」「半價」（第 A 波 5：移出包包只走櫃檯；老闆自己講，不說「賣給老闆」）');
+  ok(/對戰台/.test(String((SL.nightIntro || [])[0] || '')), 'shopLines.nightIntro 第 1 句講「對戰台」（第 A 波 1：客人在對戰台等你）');
+  ok(['closeWin', 'reclaimGift', 'reclaimSeed'].every(k => typeof SL[k] === 'string' && SL[k] && C.shopLineTags[k] === '新' && C.shopLineWho[k] === '老闆'), 'shopLines.closeWin／reclaimGift／reclaimSeed（老闆說的，第 A 波 4、5）');
+  const SU = ['money', 'binTitle', 'buy', 'noMoney', 'bought', 'sold', 'relicTitle', 'relicFull', 'relicBought', 'bargainTitle', 'bargainPrompt',
     'bargainTake', 'bargainBuy', 'bargainEmpty', 'close', 'earned',
-    'bag', 'binEmpty', 'owned', 'moneyShort', 'sellFirst', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria',
-    'bagSellNote', 'bagSellBtn', 'bagSellAsk', 'bagSellGo', 'bagSellNo', 'bagSellMin', 'bagSellHint'];
-  ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8）');
+    'bag', 'binEmpty', 'owned', 'relicSell', 'relicSold', 'relicEmpty', 'relicMoneyShort', 'relicSellFirst', 'prev', 'next', 'infoAria',
+    'relicTab', 'sellTab', 'sellTitle', 'sellNote', 'sellAsk', 'sellGo', 'reclaimAsk', 'reclaimGo', 'reclaimTag', 'reclaimed', 'sellNo', 'bagSellMin', 'goCounter', 'bagNote', 'bagSellHint'];
+  ok(C.shopUi && SU.every(k => typeof C.shopUi[k] === 'string' && C.shopUi[k]), 'shopUi 的鍵（§2.2.8；第 A 波 5 櫃檯賣給老闆）');
+  // 第 A 波 5：唱片的「先賣一張」子面板、包包面板的賣鈕拿掉了（移出包包只走櫃檯）；「從唱片櫃帶來的不能賣」不再成立（可以交還老闆）
+  ok(C.shopUi && !['sellPick', 'moneyShort', 'sellFirst', 'bagSellNote', 'bagSellBtn', 'bagSellAsk', 'bagSellGo', 'bagSellNo', 'seedNoSell'].some(k => k in C.shopUi),
+    'shopUi 拿掉唱片先賣／包包賣鈕／種子不能賣的字（第 A 波 5）');
+  ok(C.shopUi && /櫃檯/.test(C.shopUi.bagSellHint) && /賣給老闆/.test(C.shopUi.bagSellHint) && /櫃檯/.test(C.shopUi.bagNote) && /櫃檯/.test(C.shopUi.goCounter), 'shopUi.bagSellHint／bagNote／goCounter 指去櫃檯（第 A 波 5）');
   // 包包不限張數（店主 11-16）：包包只寫張數（不寫上限）；「包包滿要先賣／先丟」的字拿掉了（強迫的流程沒有了）
   ok(C.shopUi && /\{n\}/.test(C.shopUi.bag) && !/\{max\}|\//.test(C.shopUi.bag), 'shopUi.bag 只寫張數（「包包 {n} 張」，不寫上限）');
   ok(C.shopUi && !['bagFull', 'bagFullN', 'sellPickN'].some(k => k in C.shopUi) && !('bagFull' in (((C.lines || {}).owner) || {})) && !('bagOutMsg' in (((C.seeds || {}).ui) || {})),
     '包包滿的字（shopUi.bagFull／bagFullN／sellPickN、老闆 bagFull、seeds.ui.bagOutMsg）拿掉了');
-  ok(C.shopUi && /\{n\}/.test(C.shopUi.bagSellBtn) && /\{n\}/.test(C.shopUi.bagSellGo) && /\{album\}/.test(C.shopUi.bagSellAsk) && /\{n\}/.test(C.shopUi.bagSellMin),
-    'shopUi.bagSell*（包包面板賣回：{n}／{album} 的佔位）');
+  ok(C.shopUi && /\{n\}/.test(C.shopUi.sellGo) && /\{album\}/.test(C.shopUi.sellAsk) && /\{album\}/.test(C.shopUi.reclaimAsk) && /\{album\}/.test(C.shopUi.reclaimed) && /\{n\}/.test(C.shopUi.bagSellMin),
+    'shopUi 櫃檯賣給老闆：{n}／{album} 的佔位');
   // 從唱片櫃挑牌開局（店主 11-13）：種子不能賣的字、挑種子／帶走一張／唱片櫃頁的畫面字（ui.js 用；{x} 的佔位要在）
-  ok(C.shopUi && C.shopUi.seedTag && C.shopUi.seedNoSell === '從唱片櫃帶來的不能賣', 'shopUi.seedTag／seedNoSell（「從唱片櫃帶來的不能賣」，SPEC 從唱片櫃挑牌開局 §1 裁定 8）');
+  ok(C.shopUi && C.shopUi.seedTag && C.shopUi.giftTag, 'shopUi.seedTag／giftTag（包包面板、賣給老闆的小籤）');
   { const SD = ((C.seeds || {}).ui) || {};
     const need = { pickTitle: [], pickSub: ['max'], pickCount: ['n', 'max'], pickTake: [], picked: [], pickGo: [], pickNone: [], pickAll: [], pickEmpty: [], pickFull: ['max'],
       keepTitle: [], keepSub: [], keepPick: [], keepCount: ['n'], keepLater: [], keepDone: ['album'], keepNone: [], fromBag: [], fromDrop: [],
@@ -439,14 +459,16 @@ export function contentProblems(C, E) {
   const NEED_UI = { prologue: [], pos: ['{n}'], round: ['{r}'], elite: [], boss: [], toCheckpoint: ['{n}'], checkpoint: ['{n}'], retryLeft: ['{n}'], next: ['{n}', '{name}'],
     guestDone: [], guestCur: [], guestLater: [], hasAce: [], hp: ['{n}', '{max}'], heal: ['{n}'], level: ['{n}'], xp: ['{n}', '{need}'], atk: ['{n}'], def: ['{n}'], maxHp: ['{n}'],
     atkShort: ['{n}'], defShort: ['{n}'], cont: [], abandon: [], abandonWarn: ['{where}'], lastSummary: [], shelfNew: [],
-    game: [], atkHelp: ['{n}'], defHelp: ['{n}', '最多擋一半'], eAtkHelp: ['{n}'] };
+    game: [], atkHelp: ['{n}'], defHelp: ['{n}', '最多擋一半'], eAtkHelp: ['{n}'], mainAttr: ['{attr}'],
+    toRecord: ['{n}', '破紀錄'], streak: ['{n}'], closeWin: ['險勝'] };   // 第 A 波 4：再贏 N 位破紀錄、連勝小章、險勝章
   for (const [k, ph] of Object.entries(NEED_UI)) ok(typeof TU[k] === 'string' && TU[k] && ph.every(x => TU[k].includes(x)), 'trial.ui.' + k + ' 要是字串' + (ph.length ? '、含 ' + ph.join(' ') : ''));
   ok(Array.isArray(TU.retryMenu) && TU.retryMenu.length === 2 && TU.retryMenu.every(x => typeof x === 'string' && x), 'trial.ui.retryMenu：說情兩顆（再一場／到這裡就好）');
   ok(TU.pos === '第 {n} 位', 'trial.ui.pos＝「第 {n} 位」（店主：頂欄只寫第 n 位）');
   const NT = (C.trial || {}).notes || {};
   ok(['atk', 'def', 'eAtk', 'eDef'].every(k => typeof NT[k] === 'string' && NT[k].includes('{n}')), 'trial.notes：atk／def／eAtk／eDef 結果行那句（含 {n}）');
   const SM = C.summary || {};
-  const NEED_SM = { title: [], reached: ['{n}'], streak: ['{n}'], taken: ['{n}'], wins: ['{n}'], none: [], best: ['{n}'], newRecord: [], checkpoints: ['{list}'], again: [], more: ['{n}'] };
+  const NEED_SM = { title: [], reached: ['{n}'], streak: ['{n}'], taken: ['{n}'], wins: ['{n}'], none: [], best: ['{n}'], newRecord: [], checkpoints: ['{list}'], again: [], more: ['{n}'],
+    toBreak: ['{n}', '破紀錄'], closeHp: ['{n}'], flipBy: ['{k}', '{e}', '{p}', '翻盤'], flipAt: ['{k}', '翻盤'] };   // 第 A 波 4：差一點摘要
   const LU = (C.trial || {}).levelUp || {};
   ok(['atkSub', 'defSub', 'hpSub'].every(k => typeof LU[k] === 'string' && LU[k].includes('{n}')) && /剋中/.test(LU.atkSub) && /最多擋一半/.test(LU.defSub),
     'trial.levelUp：atkSub／defSub／hpSub 含 {n}，說清楚加的是什麼（剋中時多扣他、被扣時少扣、最多擋一半；審查 #11）');

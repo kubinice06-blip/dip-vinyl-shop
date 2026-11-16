@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-16｜dip-vinyl-shop｜game-lab 第 A 波六件：客人走到對戰台、放水後期照機率、稱號、演出與字、櫃檯賣給老闆、客人主屬性
+
+- **店主 11-16**：「全部開始做吧。18 則是要去櫃檯賣給老闆才能移出包包，這也是在局中備戰時發生（就是 Monster Train 的方式）」；另「不要出店門……挑戰者進來後直接走去對戰台等玩家」「放水前期保留、後期照機率」「為何對手都打經典卡」。總表 scratchpad `v5/relay/PLAN.md`。
+- **1 走到對戰台**：客人推門進來站到對戰台旁等（藏家照舊門外進場）；點舞台「對戰台」、按「下一位」、點頭像「就他了」三條路都是你先走過去再開打。`shops/dip.json` 唱盤台加熱點 action `duel`。
+- **2 放水**：第 1–10 位每手都放水（easy 出招也吃，主線依店主「前期保留」）；第 11 位起每手照 `C.trial.curve.mercyP`（90%、每 5 位 −10 點、最低 20%），雜湊決定、不碰 duel.rng。
+- **3 稱號**：每 2 位換（音樂小白 → … → 品味之神，停在品味之神），顯示成「○○級」（`titleFmt`，避免跟客人名字撞）；來客條頭像名牌、對決名字旁小名牌、客人資訊一行。
+- **4 演出與字**：剋中「讀對了。」、看穿唬人「你看穿了！」（差 2 星剋不動也算）；連續讀對命中音升調、第 3 次停格震動（減少動態略過）；錢跳數字＋錢幣聲；險勝章＋老闆一句；輸了的差一點摘要（引擎每手記聲望，`?apex=1` 回血也算對）；離紀錄 3 位內「再贏 N 位破紀錄」；連勝 +1 小章。
+- **5 櫃檯賣給老闆**：移出包包只能兩位客人之間在櫃檯「賣給老闆」（econ 分頁「配件／賣給老闆」；一般唱片半價、老闆送的與種子 $0 交還、至少留 5 張；格子有三軸星數、可開唱片資訊）；包包面板只看；收獎勵／買唱片／特價箱不再能順手丟（引擎回 `counterOnly`）；錢不夠時只有賣得到才提示「去櫃檯賣唱片」；一次性提示 `seen.counterSell`（老闆頭上「！」＋櫃檯描框＋吐司）。
+- **6 客人主屬性**：每輪一般 3 位經／冷／硬各一，菁英與藏家照種子輪；牌組 7 成主屬性（`deck.mainShare 0.7`），第 4 位起出招偏主屬性（`mainBias {from:4,n:1.5}`）；客人資訊「常出：冷門」。第 4–12 位客人出牌三色 39／30／31 → 35／33／32。舊 run 靠 `run.mainFrom`／`fixMain` 讓說情重打同一副牌。
+- **併入 #463／#464／#465**：13 檔衝突兩邊都留（engine.test 第 A 波改第 23 段）；第一晚提示順序（老闆四句 → 櫃檯提示／解鎖吐司互斥）重排。**主線裁定**：easy 也吃放水後 T1 掉到約 7%（n2000 6.8%），`q.easy` 0.8→0.75 拉回（n2000 8.6%）。
+- **流程**：引擎 → 介面 → 模擬 → 邏輯／體驗審查＋對抗驗證（確認 14 項）→ 全修 → 併入主線 → 交互審查（確認 5 項）→ 全修。報告 `v5/wave-a/{review-fixes,merge/MERGE,merge/FIX}.md`。
+- **模擬（併入後 smart）**：n2000 預設 17/17；新手第 1–3 位死 8.6%、深度中位 15；會讀的中位 67、到第 100 位 19.6%（併入前 40%：主因是客人偏主屬性出招，sim 的會讀策略不知道「常出」，真人看得到；`mainBias.n` 設 0 可回到約 30%）。
+- **主要檔案**：`game-lab/{engine.js,content.js,ui.js,econ.js,econ.css,duel.js,duel.css,fx.js,style.css,tutorial.js,sim.mjs,index.html,README.md,LINES-REVIEW.md,shops/dip.json,dev/econ-harness.html}`、`game-lab/tools/{check-content,check-shops,lint-copy}.mjs`、`game-lab/test/{engine,hit}.test.mjs`、`game-lab/tests/{e2e-duel,e2e-econ,e2e.spec,e2e-prologue,e2e-unlock}.mjs`。`?v=76`。
+- **驗證**：check-content／check-shops／check-covers／lint-copy；engine 2,500,898、tutorial 505,169、chars、shop、hit 全過；併入後 e2e（390、375）duel 106、econ 54、unlock 12、prologue 52、intro 25、room 21、apex 35、taps 28、e2e.spec 390 50/50；合併前全套 e2e 兩尺寸與 e2e.spec 四尺寸 146/146 全過。**沒驗**：真 iPhone。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 流派與頂點卡靠遊戲解鎖（打倒傳說藏家掉被剋那派）
 
 - **店主 11-16**：「換流派只能每局一開始，中間不能換；每次流派的頂點卡要透過遊戲蒐集才能解鎖，不是一開始就給 15 張……第一次通過傳說藏家時，可以獲得玩家初始流派的被剋流派，比如流亡就掉落殿堂，以此類推。」

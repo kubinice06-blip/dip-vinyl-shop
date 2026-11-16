@@ -48,7 +48,8 @@ await section('buildHotList：主熱點、子熱點、跟著人走、遮擋物�
   eq(['indierock', 'indiepop', 'blues'].map(k => hots.filter(h => /^rack:/.test(h.id) && h.parent === 'bin:' + k).length), [4, 4, 7], '後牆三櫃的封面（4＋4＋7）父熱點＝bin:indierock／bin:indiepop／bin:blues');
   eq([byId(hots, 'now').parent, byId(hots, 'cat').parent], ['counter', 'counter'], '櫃檯 now／cat 的父熱點＝counter');
   const occ = hots.filter(h => h.occluder).map(h => h.prop.type).sort();
-  eq(occ, ['duelDeck', 'plant', 'plant', 'shelving', 'stool'], '遮擋物＝沒有主熱點的站立道具（植物、凳子、高櫃、唱盤台；窗下矮櫃改成藍調櫃了）');
+  eq(occ, ['plant', 'plant', 'shelving', 'stool'], '遮擋物＝沒有主熱點的站立道具（植物、凳子、高櫃；窗下矮櫃改成藍調櫃了；唱盤台第 A 波起是「對戰台」熱點）');
+  { const dk = byId(hots, 'deck'); ok(!!dk && dk.action === 'duel' && dk.label === '對戰台' && !dk.occluder, '唱盤台＝「對戰台」熱點（action duel；第 A 波 1：客人在這裡等你，點了走過去開打）', dk && [dk.action, dk.label]); }
   ok(hots.filter(h => h.occluder).every(h => h.enabled === false && h.depth === h.prop.y), '遮擋物不能點、深度＝o.y');
   eq(byId(hots, 'poster-event').depth, -1, '沒有 follow 的 layout 熱點（公告）＝牆層 −1');
   eq(byId(hots, 'door').depth, -1, '門（牆層）＝−1');
@@ -161,8 +162,8 @@ await section('容錯只在沒命中時；點在植物上＝null；停用的前�
     const c = DS.regionCenter(DS.hotRegion(hots, occ, FULL));
     eq(pick(hots, c.x, c.y), null, '點在植物上（' + occ.id + ' ' + c.x + ',' + c.y + '）→ null（不容錯、不穿過去）');
   }
-  const deck = hots.find(h => h.occluder && h.prop.type === 'duelDeck'), dc = DS.regionCenter(DS.hotRegion(hots, deck, FULL));
-  eq(pick(hots, dc.x, dc.y), null, '點在唱盤台上 → null');
+  const deck = hots.find(h => h.prop && h.prop.type === 'duelDeck'), dc = DS.regionCenter(DS.hotRegion(hots, deck, FULL));
+  eq(idOf(pick(hots, dc.x, dc.y)), 'deck', '點在唱盤台上 → 對戰台（deck；第 A 波 1 之前是遮擋物 → null）');
   // 停用前排（爵士）：(118,215) 在爵士與新進的形狀裡，爵士在前 → null，不會變成新進
   const noJazz = h => h.id !== 'bin:jazz';
   eq(idOf(pick(hots, 118, 215, { enabled: noJazz })), null, '爵士停用：點爵士（壓在新進上那塊）→ null，不往後穿到新進');

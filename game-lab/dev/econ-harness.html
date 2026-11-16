@@ -148,6 +148,7 @@
     if (k === 'pick') return EC.bargainPick().then(function (ids) { upd(); return ids; });
     if (k === 'bargain') return EC.openBargain().then(upd);
     if (k === 'relic') return EC.openRelicShop().then(upd);
+    if (k === 'sell') return EC.openCounterSell().then(upd);   // 第 A 波 5：櫃檯「賣給老闆」分頁
     if (/^bin:/.test(k)) return EC.openBin(k.slice(4)).then(upd);
     return Promise.resolve();
   };

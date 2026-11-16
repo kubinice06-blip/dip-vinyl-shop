@@ -274,6 +274,8 @@
       tone(c, { type: 'square', f: 261.63, t: 0.3, d: 0.3, g: 0.14, a: 0.002, filter: { type: 'lowpass', f: 3000, f2: 200 } });
     },
     flip(c) { noise(c, { d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); noise(c, { t: 0.09, d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); },
+    // 錢幣聲（第 A 波 4：錢跳數字入帳）：方波兩下短音 B5→E6（像撿到金幣）；o.k＝第幾下（0–4），每下升兩個半音
+    coin(c, o) { const k = Math.pow(2, (2 * ((o && o.k) | 0)) / 12); tone(c, { type: 'square', f: NOTE.B5 * k, d: 0.05, g: 0.12, a: 0.001 }); tone(c, { type: 'square', f: NOTE.E6 * k, t: 0.05, d: 0.11, g: 0.12, a: 0.001 }); },
     // 收音機轉台（v5 第六項第二期）：照主站頻率光譜 sfxTurn 的做法——帶通雜訊往上掃（沙沙轉過電台）＋一條很輕的嘯聲，最後兩下短「卡」對上頻率
     tune(c) {
       noise(c, { d: 0.42, g: 0.16, a: 0.03, curve: 'lin', filter: { type: 'bandpass', f: 600, f2: 2400, q: 1.4 } });

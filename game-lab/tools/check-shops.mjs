@@ -81,7 +81,7 @@ export function routeHitsFeet(DS, pts, feet) {
   for (let i = 1; i < pts.length; i++) for (const [id, f] of feet) if (hits(pts[i - 1], pts[i], f)) return { seg: [pts[i - 1], pts[i]], id, foot: f };
   return null;
 }
-const ACTION_RE = /^(door|listen|radio|counter|cat|talk:owner|poster:event|now|locked|home|shelf:own|deck:play|tune|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
+const ACTION_RE = /^(door|listen|radio|counter|duel|cat|talk:owner|poster:event|now|locked|home|shelf:own|deck:play|tune|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
 // 小人看得到的列數 × 每格場景像素（斜俯視：人整格 16×spriteScale＝48 格；腳底在第 14 列）
 export function charH(L) { return L && L.projection ? 16 * (L.spriteScale || 3) : CHAR_H * ((L && L.fine && L.spriteScale) || 1); }
 // 本店箱子的卡池：v2 content.pools.crate[key]（陣列）；v3 content.bins[key].ids

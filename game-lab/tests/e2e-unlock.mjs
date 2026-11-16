@@ -7,7 +7,7 @@
 // 每個尺寸：
 //   1  新存檔只有初始派（旗標關）：上次挑流亡的存檔（解鎖制以前的 v5）→ 標題吐司「流派改成打倒傳說藏家才解鎖…」一次、流亡那張補記成擁有（src start）；
 //      來客畫面：沒有「想換王牌，點老闆。」的提示，改出一次性吐司「其他流派還鎖著：打倒傳說藏家，解鎖殿堂（經典）。」（審查 11-16）；
-//      點老闆小選單「換一張王牌」換成「其他流派還鎖著／打倒傳說藏家解鎖」（按不下去、不捲）；
+//      點老闆小選單「換一張王牌」換成「其他流派還鎖著／打倒傳說藏家解鎖」（按不下去、不捲）；選單＝聊聊＋鎖住的說明＋「賣給老闆」（在畫面裡，點了開到賣給老闆那一頁）；
 //      引擎 switchAce 到殿堂＝locked；唱片櫃最上面一行「流派 1／3・下一派：殿堂（經典）」
 //   2  鎖住的派點不了（旗標關）：殿堂＋已解鎖流亡的存檔 → 點老闆 → 換一張王牌 → 三選一：異端灰掉、中間一把鎖、下面「打倒傳說藏家解鎖」；
 //      點異端＝不選、說明那行「異端（硬蕊）還鎖著…」；「就這張」在畫面裡、不捲；選殿堂＝照舊（老闆「那就照舊。」）
@@ -113,22 +113,29 @@ async function runSize(browser, w, h) {
       const hint = await C(page, () => ({ toasts: window.__toasts.slice(), seen: !!window.__lab.save.seen.aceSwap, lockSeen: !!window.__lab.save.seen.unlockHint }));
       await C(page, () => window.__lab.stageAction('talk:owner')); await sleep(500);
       const menu = await C(page, () => { const s = document.querySelector('.lb-sheet.float.owner'); if (!s) return null;
-        const b = s.querySelector('.ow-none'), r = b ? b.getBoundingClientRect() : null;
-        return { swap: !!s.querySelector('[data-a=swap]'), none: b ? b.textContent : null, dis: !!(b && b.disabled), inView: !!r && r.top >= 0 && r.bottom <= innerHeight && r.height >= 44 }; });
+        const b = s.querySelector('.ow-none'), r = b ? b.getBoundingClientRect() : null, o = s.querySelector('[data-a=osell]'), q = o ? o.getBoundingClientRect() : null;
+        return { swap: !!s.querySelector('[data-a=swap]'), none: b ? b.textContent : null, dis: !!(b && b.disabled), inView: !!r && r.top >= 0 && r.bottom <= innerHeight && r.height >= 44,
+          a: [...s.querySelectorAll('[data-a]')].map(x => x.dataset.a).join(), osell: !!q && q.top >= 0 && q.bottom <= innerHeight && q.height >= 44 }; });
       const scM = await noScroll(page);
       if (menu && menu.none) await C(page, () => { const b = document.querySelector('.lb-sheet.owner .ow-none'); if (b) b.click(); });
       await sleep(300);
       const after = await C(page, () => ({ pick: !!document.querySelector('.lb-sheet.acepick'), eng: window.DipLabEngine.switchAce(JSON.parse(JSON.stringify(window.__lab.run)), window.DipLabContent, 'hall').error }));
       await C(page, () => { const b = document.querySelector('.lb-sheet.owner [data-a=close]'); if (b) b.click(); });
+      // 只解鎖一派（新玩家預設）的老闆選單也有「賣給老闆」（osell）：在畫面裡、點了開到賣給老闆那一頁（合併審查 11-16：econ #29 前置改成先放殿堂以後，沒有別的 e2e 斷言這條）
+      await sleep(300); await C(page, () => window.__lab.stageAction('talk:owner')); await sleep(500);
+      await C(page, () => { const b = document.querySelector('.lb-sheet.owner [data-a=osell]'); if (b) b.click(); });
+      const sellTab = await page.waitForFunction(() => { const d = window.DipLabEcon.debug(); return d.open ? d.tab : null; }, null, { timeout: 12000 }).then(hh => hh.jsonValue(), () => null);
+      await C(page, () => window.DipLabEcon.close()); await sleep(450);
       await C(page, () => window.__lab.openPage('shelf')); await sleep(500);
       const line = await C(page, () => (document.querySelector('.lb-page .lb-unl') || {}).textContent || '');
       const wantLine = fill(x.unlockProg, { n: 1 }) + '・' + fill(x.unlockNext, tv('hall', x));
       const lockHint = fill(x.lockHint, tv('hall', x));
       const ok = t1.includes(x.unlockMigrated) && !t2.includes(x.unlockMigrated) && st.e && st.e.own === true && st.e.src === 'start' && st.stored === 6 &&
         u0.tiers === 'pearl' && u0.run === 'pearl' && !hint.toasts.includes(x.aceHint) && !hint.seen && hint.toasts.filter(t => t === lockHint).length === 1 && hint.lockSeen &&
-        menu && !menu.swap && menu.none === x.aceSwapNone + x.aceLocked && menu.dis && menu.inView && scrollOk(scM) && !after.pick && after.eng === 'locked' && line === wantLine;
+        menu && !menu.swap && menu.none === x.aceSwapNone + x.aceLocked && menu.dis && menu.inView && menu.a === 'close,talk,osell' && menu.osell && sellTab === 'sell' &&
+        scrollOk(scM) && !after.pick && after.eng === 'locked' && line === wantLine;
       record(1, size, ok && !errs(page).length, `遷移吐司 ${t1.includes(x.unlockMigrated)}（再整理 ${t2.includes(x.unlockMigrated)}）、流亡那張 ${JSON.stringify(st.e)} v${st.stored}；解鎖 ${JSON.stringify(u0)}；` +
-        `換王牌提示 ${hint.toasts.includes(x.aceHint)}（seen ${hint.seen}）、流派鎖著的吐司 ${JSON.stringify(hint.toasts)}（seen ${hint.lockSeen}）；點老闆 ${JSON.stringify(menu)} ${JSON.stringify(scM)} → 點了 ${JSON.stringify(after)}；唱片櫃「${line}」（要「${wantLine}」）；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
+        `換王牌提示 ${hint.toasts.includes(x.aceHint)}（seen ${hint.seen}）、流派鎖著的吐司 ${JSON.stringify(hint.toasts)}（seen ${hint.lockSeen}）；點老闆 ${JSON.stringify(menu)} ${JSON.stringify(scM)} → 點了 ${JSON.stringify(after)}；再點老闆 → 賣給老闆 tab ${sellTab}；唱片櫃「${line}」（要「${wantLine}」）；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
     } catch (e) { record(1, size, false, 'error ' + e.message); }
     await ctx.close();
   }
