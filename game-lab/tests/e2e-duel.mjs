@@ -263,14 +263,22 @@ async function synthetic(browser) {
       out.tie = line(F.clashText(ev({ pAttr: 'c', eAttr: 'c', kind: 'tie' }), T, C.hints));
       out.countered = line(F.clashText(ev({ pAttr: 'c', eAttr: 'o', kind: 'countered', toP: 5, by: 'e' }), T, C.hints));
       out.rs = [T('roundsOut'), T('roundsScore', { p: '90', e: '70', who: '你' }), T('roundsEven', { p: '50', e: '50' })];
+      // 第 A 波 4（讀對了就說出來）：他唬人、你照他真正出的剋中＝「你看穿了！」（不停住、不標唬人）；key 為 null＝NoKey 版；照實剋中＝「讀對了。」＋規則句、l3＝照實那句
+      const see = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' } }), T, C.hints);
+      out.see = [see.l1, see.l2, see.l3, see.bluff, see.saw, see.read];
+      out.seeNk = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'cx' } }), T, NK).l1;
+      const rr = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' } }), T, C.hints);
+      out.readHon = [rr.l1, rr.l3, rr.read, rr.saw];
       return out;
     });
     const want = {
-      d1: '冷門剋經典，命中！他 −4', d2: '冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3', d3: '他唬你！『紀念版』是經典，他出的是硬蕊。你 −4',
+      d1: '讀對了。冷門剋經典，命中！他 −4', d2: '冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3', d3: '他唬你！『紀念版』是經典，他出的是硬蕊。你 −4',
       nkB: '他唬你！提示是經典，他出的是硬蕊。', nkH: '提示是冷門，他照實出。', hon: '『自主發行』是冷門，他照實出。',
       bb: ['他唬你！『自主發行』是冷門，他出的是經典。', '他 −2', '經典剋硬蕊，但你高他 2 星以上，他剋不動。比星數。'],
       him: '冷門剋經典，但你高他 2 星以上，他剋不動。比星數，他 −2', aceGap: '經典剋王牌硬蕊，但你高他 2 星以上，他剋不動。比星數，他 −5', aceText: false,
-      aceCounter: '王牌冷門剋經典，命中！他 −7',
+      aceCounter: '讀對了。王牌冷門剋經典，命中！他 −7',
+      see: ['你看穿了！『紀念版』是經典，他出的是冷門。', '他 −3', '', false, true, true], seeNk: '你看穿了！提示是經典，他出的是冷門。',
+      readHon: ['讀對了。硬蕊剋冷門，命中！', '『自主發行』是冷門，他照實出。', true, false],
       mirror: '同樣是經典，比星數，他 −1', tie: '同樣是經典，比星數，一樣大，不扣。', countered: '冷門剋經典，被剋了。你 −5',
       rs: ['六手打完，比聲望條', '你剩 90%，他剩 70%：你贏', '你剩 50%，他剩 50%：一樣，算你贏'],
     };

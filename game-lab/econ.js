@@ -2,7 +2,7 @@
  *
  * window.DipLabEcon = {
  *   configure({ content, engine, stage, run:()=>save.run, choose:(ch)=>res, info:(card)=>Promise, sfx, toast, app:()=>#app,
- *               coverBase?, relicIcon?(id,size), makeRoom?([x,y]) })   // makeRoom：你要走去站的位置旁邊有人時，ui.js 請他讓開   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
+ *               coverBase?, relicIcon?(id,size), makeRoom?([x,y]), onSellOpen?() })   // onSellOpen：櫃檯「賣給老闆」分頁打開了（ui.js 記 save.seen.bagSell）   // makeRoom：你要走去站的位置旁邊有人時，ui.js 請他讓開   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
  *   openBin(key)      → Promise<void>     // 走過去翻 → 抽屜（一張大封面翻著看）→ 關掉才 resolve；key==='sale' 轉 openBargain
  *                                         //   標題＝名牌英文＋中文（C.bins[key].label／zh；FEATURE 金色名牌）；每張標稀有度（C.rarityZh）與價（engine.priceOf）
  *   openBargain()     → Promise<void>     // 之後買特價箱（每張 $100／200／300、最多三張，付挑的那幾張的總和）；還沒挑過開局三張（canBargainPick）→ 轉 bargainPick
@@ -307,6 +307,7 @@
       mountDrawer('ec-' + kind, o.label);
       render();
       refocus();
+      if (csOn()) sellOpened();
     });
     return pr;
   }
@@ -523,6 +524,7 @@
   }
 
   // ------------------------------------------------------------------ 畫＋量（抽屜最高 #app 的 50%，內容縮到放得下，不捲動；只有先賣子面板包包太長時格子那一區自己捲）
+  function sellOpened() { if (CFG && typeof CFG.onSellOpen === 'function') try { CFG.onSellOpen(); } catch (e) { console.error(e); } }
   function csOn() { return S.kind === 'relic' && S.mode === 'buy' && S.tab === 'sell' && !S.sub; }   // 櫃檯「賣給老闆」分頁開著
   function render() {
     var el = S.el; if (!el) return;
@@ -596,7 +598,7 @@
     if (a === 'bbuy') { buyBargain(); return; }
     if (a === 'rbuy') { buyRelic(b.getAttribute('data-r')); return; }
     if (a === 'spick') { sellPick(b.getAttribute('data-r')); return; }
-    if (a === 'tab') { var t2 = b.getAttribute('data-t'); if (t2 !== S.tab) { S.tab = t2; S.spick = null; sfx('tick'); render(); } return; }
+    if (a === 'tab') { var t2 = b.getAttribute('data-t'); if (t2 !== S.tab) { S.tab = t2; S.spick = null; sfx('tick'); render(); if (t2 === 'sell') sellOpened(); } return; }
     if (a === 'cpick') { var cid = b.getAttribute('data-cid'); S.spick = S.spick === cid ? null : cid; sfx(S.spick ? 'select' : 'tick'); render(); return; }
     if (a === 'cno') { S.spick = null; sfx('tick'); render(); return; }
     if (a === 'cgo') { sellToOwner(S.spick); return; }

@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 568（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 586（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -220,6 +220,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・roundsScore | 你剩 {p}%，他剩 {e}%：{who}贏 | 本規格新寫 | `duelText.roundsScore` |
 | （畫面字）・roundsEven | 你剩 {p}%，他剩 {e}%：一樣，算你贏 | 本規格新寫 | `duelText.roundsEven` |
 | （畫面字）・tapOn | 點一下繼續 | 本規格新寫 | `duelText.tapOn` |
+| （畫面字）・readRight | 讀對了。 | 本規格新寫 | `duelText.readRight` |
+| （畫面字）・seeThrough | 你看穿了！『{key}』是{hint}，他出的是{e}。 | 本規格新寫 | `duelText.seeThrough` |
+| （畫面字）・seeThroughNoKey | 你看穿了！提示是{hint}，他出的是{e}。 | 本規格新寫 | `duelText.seeThroughNoKey` |
 
 ## 發燒配件（點圖示看的說明／生效那手結果行補的一句）
 
@@ -346,6 +349,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・aceSame | 那就照舊。 | 本規格新寫 | `shopLines.aceSame` |
 | 老闆・aceLater | 想換王牌？下一趟開門前再說。 | 本規格新寫 | `shopLines.aceLater` |
 | 老闆・aceKeep | 好，就帶這張。 | 本規格新寫 | `shopLines.aceKeep` |
+| 老闆・closeWin | 好險，差一點就輸了。 | 本規格新寫 | `shopLines.closeWin` |
+| 老闆・reclaimGift | 送你的，我先收回來。 | 本規格新寫 | `shopLines.reclaimGift` |
+| 老闆・reclaimSeed | 你自己的那張？我先替你收著。 | 本規格新寫 | `shopLines.reclaimSeed` |
 | 老闆・bin | 點封面看唱片資訊、試聽。 | 本規格新寫 | `shopLines.bin` |
 | 老闆・booth | 挑一張你唱片櫃裡的，放來聽聽。 | 本規格新寫 | `shopLines.booth` |
 | 老闆・boothEmpty | 唱片櫃還空著。贏一場再來聽。 | 本規格新寫 | `shopLines.boothEmpty` |
@@ -358,7 +364,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・nightIntro[0] | 客人一個一個來，打到輸為止。 | 本規格新寫 | `shopLines.nightIntro[0]` |
 | 老闆・nightIntro[1] | 客人跟剛才那位不一樣，有時會唬你。 | 本規格新寫 | `shopLines.nightIntro[1]` |
 | 老闆・nightIntro[2] | 贏了有錢，兩位客人之間可以去箱子買唱片。 | 本規格新寫 | `shopLines.nightIntro[2]` |
-| 老闆・nightIntro[3] | 用不到的唱片，點「包包」可以賣回，半價。 | 本規格新寫 | `shopLines.nightIntro[3]` |
+| 老闆・nightIntro[3] | 用不到的唱片，拿去櫃檯賣給老闆，半價。 | 本規格新寫 | `shopLines.nightIntro[3]` |
 
 ## 台北地圖預告
 
@@ -425,10 +431,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・binTitle | {label} | 本規格新寫 | `shopUi.binTitle` |
 | （畫面字）・buy | 買 ${n} | 本規格新寫 | `shopUi.buy` |
 | （畫面字）・noMoney | 錢不夠 | 本規格新寫 | `shopUi.noMoney` |
-| （畫面字）・sellPick | 賣這張 | 本規格新寫 | `shopUi.sellPick` |
 | （畫面字）・giftTag | 老闆送的 | 本規格新寫 | `shopUi.giftTag` |
 | （畫面字）・seedTag | 櫃裡帶來 | 本規格新寫 | `shopUi.seedTag` |
-| （畫面字）・seedNoSell | 從唱片櫃帶來的不能賣 | 本規格新寫 | `shopUi.seedNoSell` |
 | （畫面字）・bought | 《{album}》進包包，−${n} | 本規格新寫 | `shopUi.bought` |
 | （畫面字）・sold | 《{album}》賣掉，+${n} | 本規格新寫 | `shopUi.sold` |
 | （畫面字）・relicTitle | 櫃檯的配件 | 本規格新寫 | `shopUi.relicTitle` |
@@ -445,8 +449,6 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・bag | 包包 {n} 張 | 本規格新寫 | `shopUi.bag` |
 | （畫面字）・binEmpty | 這一箱賣完了，下一輪再補。 | 本規格新寫 | `shopUi.binEmpty` |
 | （畫面字）・owned | 包包裡有了 | 本規格新寫 | `shopUi.owned` |
-| （畫面字）・moneyShort | 錢不夠：先賣一張，半價 ${n} | 本規格新寫 | `shopUi.moneyShort` |
-| （畫面字）・sellFirst | 先賣一張 | 本規格新寫 | `shopUi.sellFirst` |
 | （畫面字）・relicSell | 賣這件 | 本規格新寫 | `shopUi.relicSell` |
 | （畫面字）・relicSold | 「{name}」賣掉，+${n} | 本規格新寫 | `shopUi.relicSold` |
 | （畫面字）・relicEmpty | 櫃檯的配件賣完了，下一輪再補。 | 本規格新寫 | `shopUi.relicEmpty` |
@@ -457,13 +459,21 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・prev | 上一張 | 本規格新寫 | `shopUi.prev` |
 | （畫面字）・next | 下一張 | 本規格新寫 | `shopUi.next` |
 | （畫面字）・infoAria | 唱片資訊、試聽 | 本規格新寫 | `shopUi.infoAria` |
-| （畫面字）・bagSellNote | 兩位客人之間可以賣回，半價。 | 本規格新寫 | `shopUi.bagSellNote` |
-| （畫面字）・bagSellBtn | 賣 ${n} | 本規格新寫 | `shopUi.bagSellBtn` |
-| （畫面字）・bagSellAsk | 賣掉《{album}》？ | 本規格新寫 | `shopUi.bagSellAsk` |
-| （畫面字）・bagSellGo | 賣掉 +${n} | 本規格新寫 | `shopUi.bagSellGo` |
-| （畫面字）・bagSellNo | 算了 | 本規格新寫 | `shopUi.bagSellNo` |
+| （畫面字）・relicTab | 配件 | 本規格新寫 | `shopUi.relicTab` |
+| （畫面字）・sellTab | 賣給老闆 | 本規格新寫 | `shopUi.sellTab` |
+| （畫面字）・sellTitle | 賣給老闆 | 本規格新寫 | `shopUi.sellTitle` |
+| （畫面字）・sellNote | 半價收。老闆送的、櫃裡帶來的交還老闆。 | 本規格新寫 | `shopUi.sellNote` |
+| （畫面字）・sellAsk | 賣掉《{album}》？ | 本規格新寫 | `shopUi.sellAsk` |
+| （畫面字）・sellGo | 賣給老闆 +${n} | 本規格新寫 | `shopUi.sellGo` |
+| （畫面字）・reclaimAsk | 把《{album}》交還老闆？ | 本規格新寫 | `shopUi.reclaimAsk` |
+| （畫面字）・reclaimGo | 交還老闆 | 本規格新寫 | `shopUi.reclaimGo` |
+| （畫面字）・reclaimTag | 交還老闆 | 本規格新寫 | `shopUi.reclaimTag` |
+| （畫面字）・reclaimed | 《{album}》交還老闆 | 本規格新寫 | `shopUi.reclaimed` |
+| （畫面字）・sellNo | 算了 | 本規格新寫 | `shopUi.sellNo` |
 | （畫面字）・bagSellMin | 包包至少留 {n} 張，手牌才補得滿。 | 本規格新寫 | `shopUi.bagSellMin` |
-| （畫面字）・bagSellHint | 包包越塞越滿？點「包包」可以賣回，半價。 | 本規格新寫 | `shopUi.bagSellHint` |
+| （畫面字）・goCounter | 去櫃檯賣唱片 | 本規格新寫 | `shopUi.goCounter` |
+| （畫面字）・bagNote | 要拿出包包：兩位客人之間，去櫃檯賣給老闆。 | 本規格新寫 | `shopUi.bagNote` |
+| （畫面字）・bagSellHint | 包包越塞越滿？拿去櫃檯賣給老闆，半價。 | 本規格新寫 | `shopUi.bagSellHint` |
 | （畫面字） | 特價 | 本規格新寫 | `bargain.label` |
 
 ## 無限試煉・頂欄、來客、說情、標題（{x} 由畫面代入）
@@ -512,6 +522,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・aceHint | 想換王牌，點老闆。 | 本規格新寫 | `trial.ui.aceHint` |
 | （畫面字）・aceSwapped | 王牌換成《{album}》 | 本規格新寫 | `trial.ui.aceSwapped` |
 | （畫面字）・mainAttr | 常出：{attr} | 本規格新寫 | `trial.ui.mainAttr` |
+| （畫面字）・toRecord | 再贏 {n} 位破紀錄 | 本規格新寫 | `trial.ui.toRecord` |
+| （畫面字）・streak | 連勝 {n} | 本規格新寫 | `trial.ui.streak` |
+| （畫面字）・closeWin | 險勝！ | 本規格新寫 | `trial.ui.closeWin` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
 
@@ -615,6 +628,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・checkpoints | 中繼點：第 {list} 位 | 本規格新寫 | `summary.checkpoints` |
 | （畫面字）・again | 再挑戰一趟 | 本規格新寫 | `summary.again` |
 | （畫面字）・more | 還有 {n} 張，點了開唱片櫃 | 本規格新寫 | `summary.more` |
+| （畫面字）・toBreak | 差 {n} 位破紀錄 | 本規格新寫 | `summary.toBreak` |
+| （畫面字）・closeHp | 他只剩 {n} 聲望 | 本規格新寫 | `summary.closeHp` |
+| （畫面字）・flipBy | 第 {k} 手被{e}剋{p}翻盤 | 本規格新寫 | `summary.flipBy` |
+| （畫面字）・flipAt | 第 {k} 手被他翻盤 | 本規格新寫 | `summary.flipAt` |
 
 ## 頻率・唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● 暴躁」、提示籤前的圓點（讀屏）
 
@@ -824,6 +841,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字） | 新進 | 本規格新寫 | `shops/dip.json.props[30].bin.label` |
 | （畫面字） | 特價區 | 本規格新寫 | `shops/dip.json.props[31].bin.label` |
 | （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[32].hot.label` |
+| （畫面字） | 對戰台 | 本規格新寫 | `shops/dip.json.props[34].hot.label` |
 | （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
 | （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
 

@@ -112,7 +112,7 @@ function driver(o) {
   setInterval(() => {
     if (D.done || !window.__lab) return;
     const scr = window.__lab.screen();
-    if (scr === 'night') { if (!D.nightAt) D.nightAt = Date.now(); if (Date.now() - D.nightAt > 2500) D.done = true; return; }
+    if (scr === 'night') { if (!D.nightAt) D.nightAt = Date.now(); if (Date.now() - D.nightAt > 4000) D.done = true; return; }   // 4 秒：第 1 位從門邊走到對戰台（第 A 波 1）
     if (scr === 'duel') {
       if (!D.won && window.__lab.rawDuel() && !window.__lab.going() && after('duel', 600)) { D.won = true; D.steps.push([Date.now(), 'forceWin']); window.__lab.forceWin(); }
       return;
@@ -285,9 +285,9 @@ async function fullRun(browser, mode) {
   // P11：熟客 r1 在序章與收尾一直是隱藏；今晚來客畫面出現
   const pro = S.filter(s => s.scr === 'scene' || s.scr === 'duel'), night = S.filter(s => s.scr === 'night');
   check('P11 ' + label, pro.length && pro.every(s => !s.r1 || s.r1.h) && night.length && night[night.length - 1].r1 && !night[night.length - 1].r1.h, '序章與收尾藏著（' + pro.filter(s => s.r1 && !s.r1.h).length + ' 個取樣露出來）、今晚來客出現');
-  // 今晚來客：第一位客人已經在店裡（門邊、不剪影）、包包 8 張
+  // 今晚來客：第一位客人已經在店裡、從門邊直接走到對戰台（duelE）等你（第 A 波 1；不剪影、firstGuestInside 用掉）、包包 8 張
   const last = night[night.length - 1];
-  check(label + ' 今晚來客', data.run && data.run.inside && last.f && !last.f.h && dist(last.f, SP.atdoor) <= 1 && data.run.bag === 8, '第一位在 atdoor、包包 ' + (data.run && data.run.bag) + ' 張');
+  check(label + ' 今晚來客', data.run && !data.run.inside && last.f && !last.f.h && dist(last.f, SP.duelE) <= 1 && data.run.bag === 8, '第一位在對戰台 duelE（離 ' + (last.f ? dist(last.f, SP.duelE).toFixed(1) : '—') + ' 格）、包包 ' + (data.run && data.run.bag) + ' 張');
   // P13：劇本逐字（讀 .lb-dq .tx 打完的字；順序＝依 C.script 展開）
   const want = expectedTexts(opt.guess);
   const shown = [];

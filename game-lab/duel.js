@@ -17,7 +17,7 @@
 //
 // DipLabDuel.mount(panelEl, { duel, events, run, content, enter, onEnd(result), onSave(duel),
 //   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim}, onEvent(ev,duel), tut, resolveOpts(act),
-//            beforeEnd(result)->Promise, endText(result)->{title,sub}|null, relicIcon(id,size)->html } })
+//            beforeEnd(result)->Promise, endText(result, 預設 {title,sub,cls})->{title,sub,cls,chip,holdMs}|null（第 A 波：險勝章、連勝小章；holdMs＝大章至少停多久）, relicIcon(id,size)->html } })
 //   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'rounds'|'pile', pHp, eHp, duel }
 // DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) preview(attr) play(act)->Promise
 //           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
@@ -135,6 +135,7 @@
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零',
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
     tapOn: '點一下繼續',
+    readRight: '讀對了。', seeThrough: '你看穿了！『{key}』是{hint}，他出的是{e}。', seeThroughNoKey: '你看穿了！提示是{hint}，他出的是{e}。',   // 第 A 波 4
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};
@@ -185,16 +186,20 @@
     else if (apx && c.kind === 'mirrorLose') l2 = (U && U.loseFree) || '你輸了，但不扣。';   // 比星輸了、王牌免扣（不是「一樣大」）
     else l2 = T('tie');
     const h = c.hint && ATTRS.includes(c.hint.attr) ? c.hint : null;
+    // 讀對了就說出來（第 A 波 4）：剋中他＝結果句前加「讀對了。」；他唬人、你照他真正出的剋中＝「你看穿了！」取代「他唬你！」（字沒有就照舊）
+    const read = c.kind === 'counter', saw = read && !!c.bluff && !!h;
+    if (read && !saw && T('readRight')) l1 = T('readRight') + l1;
     if (h) {
       const x = hintOf(hints, h), key = x && x.key ? x.key : null, hz = ZH[h.attr], e = ZH[c.eAttr];
       if (c.bluff) {
-        l1 = key ? T('bluff', { key, hint: hz, e }) : T('bluffNoKey', { hint: hz, e });
+        const st = saw && T(key ? 'seeThrough' : 'seeThroughNoKey', { key, hint: hz, e });
+        l1 = st || (key ? T('bluff', { key, hint: hz, e }) : T('bluffNoKey', { hint: hz, e }));
         if (c.blocked) l3 = rule.replace(/[，,]\s*$/, '。');
       } else l3 = key ? T('honest', { key, hint: hz }) : T('honestNoKey', { hint: hz });
     }
     const notes = (c.notes || []).map(n => (typeof n === 'string' ? n : n && n.text) || '').filter(Boolean);
     if (apx && c.eAce && U && U.eAceNote) notes.push(U.eAceNote);   // 旗標下你的王牌不比星，他帶的照舊 7 星：丟出來那手寫明（審查 11-16）
-    return { l1, l2, l3, cls, rule, notes, bluff: !!c.bluff };
+    return { l1, l2, l3, cls, rule, notes, bluff: !!c.bluff && !saw, read, saw };
   }
 
   // ------------------------------------------------------------------ module state
@@ -225,7 +230,10 @@
       lp: null, swallow: null, enterDone: !opts.enter, ending: false, auto: false, tagged: false, lay: null, pendTap: null, openTap: null,
       rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, lastCt: null, debug: { log: [], hands: [] },
       apxOpen: false, apxAt: 0, apxEv: null,
+      readRun: 0, sounds: [],
     };
+    // 越讀越響（第 A 波 4）：同一場連續讀對（剋中）幾手了——續玩時從引擎的 duel.log 尾巴數回來
+    for (let k = ((duel && duel.log) || []).length - 1; k >= 0 && duel.log[k] && duel.log[k].kind === 'counter'; k--) S.readRun++;
     const paused = () => !!(S.infoOpen || S.held);
     // 頻率（v5 第六項第二期，主線 11-15）：提示籤前一顆小圓點＝這位客人的「常聽頻率」（C.enemies[id].tune；content.tunes 的顏色）。
     //   不洩漏他這手（不看 plan、不看他要出哪張）；只上色、不進規則。不放進 .tx（e2e 逐字比 .tx）；1 px 墨框（淺色格在白底才看得到）；
@@ -365,7 +373,7 @@
     root.setAttribute('aria-label', '品味對決');
     root.innerHTML = `
       <section class="dl-e" data-tut="e-hud">
-        <div class="nmrow"><b class="nm" data-tut="e-name"></b>
+        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="ttl" data-tut="e-title" hidden></span>
           <div class="rec" data-tut="e-rec"><div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div></div><span class="st" data-tut="e-stats"></span><span class="sp"></span>
           <span class="hpn" data-tut="e-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
@@ -393,7 +401,7 @@
     panel.appendChild(root);
     const $ = s => root.querySelector(s);
     const els = {
-      e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'), est: $('.dl-e .st'), pst: $('.dl-p .st'),
+      e: $('.dl-e'), enm: $('.dl-e .nm'), ettl: $('.dl-e .ttl'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'), est: $('.dl-e .st'), pst: $('.dl-p .st'),
       hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
       table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'), cheat: $('.cheat'), leg: $('.trileg'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
@@ -469,6 +477,8 @@
     function renderE(v, opt) {
       opt = opt || {};
       els.enm.textContent = enemy.name || v.eName || '';
+      // 稱號（第 A 波 3；view.eTitle：藏家、跟名字一樣、序章＝null）：名字旁小字
+      els.ettl.textContent = v.eTitle || ''; els.ettl.hidden = !v.eTitle;
       els.est.innerHTML = statsHTML(v.eAtk, v.eDef);
       if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, false);
       renderHint(v);
@@ -1210,12 +1220,29 @@
         h = setTimeout(tick, 50); S.timers.add(h);
       });
     }
-    function bigStamp(text, cls, sub) {
+    function bigStamp(text, cls, sub, chip) {
       const k = els.kost;
       k.className = 'kost on ' + (cls || '');
-      k.innerHTML = `<b>${esc(text)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}`;
+      // chip（第 A 波 4）：連勝 +1 那顆小章（大章下面晚一點跳出來）
+      k.innerHTML = `<b>${esc(text)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}${chip ? `<i class="chip" data-tut="streak">${esc(chip)}</i>` : ''}`;
+      const ch = chip && k.querySelector('.chip');
+      if (ch && !rm()) A(ch, [{ transform: 'scale(.2)', opacity: 0 }, { transform: 'scale(.2)', opacity: 0, offset: .45 }, { transform: 'scale(1.25)', opacity: 1, offset: .8 }, { transform: 'scale(1)', opacity: 1 }], { duration: 760, easing: 'ease-out', fill: 'both' });
       if (rm()) A(k, [{ opacity: 0 }, { opacity: 1 }], { duration: 200, fill: 'forwards' });
       else A(k, [{ transform: 'translate(-50%,-50%) rotate(-4deg) scale(1.8)', opacity: 0 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(.96)', opacity: 1, offset: .5 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(1)', opacity: 1 }], { duration: 420, easing: 'ease-out', fill: 'forwards' });
+    }
+    // 越讀越響（第 A 波 4，規劃書三＋四 ①）：同一場連續讀對（剋中），命中音一次比一次高（每次升兩個半音、第 5 次起不再升）；
+    //   第三次起加停格（hitStop）＋牌桌震一下＋手機震動（減少動態時略過）。沒剋中就從頭數
+    function readSound(cl) {
+      if (cl.kind !== 'counter') { S.readRun = 0; S.sounds.push(hitSfx(cl)); sfx(hitSfx(cl)); return; }
+      S.readRun++;
+      const k = Math.min(S.readRun, 5) - 1, oct = Math.pow(2, (2 * k) / 12);
+      S.sounds.push('readHit@' + oct.toFixed(3) + (S.readRun >= 3 ? '+stop' : ''));
+      if (S.sounds.length > 40) S.sounds.shift();
+      sfx('readHit', { oct });
+      if (S.readRun >= 3 && !rm()) {
+        const f = Fx();
+        try { if (f && f.hitStop) f.hitStop(70); if (f && f.shake) f.shake(els.table, 3, 160); if (f && f.vibrate) f.vibrate(18); } catch (_) {}
+      }
     }
     // 音效：counter→readHit、countered／mirrorLose→hurt、其他→mirror（§2.5.1）
     const hitSfx = c => c.kind === 'counter' ? 'readHit' : (c.kind === 'countered' || (c.kind === 'mirrorLose' && (c.toP | 0) > 0)) ? 'hurt' : 'mirror';   // 比星輸了但王牌免扣（toP 0）＝不是被打（旗標關時 mirrorLose 一定 toP>0）
@@ -1297,7 +1324,7 @@
       S.flash = flashOf(cl); renderTri();
       root.classList.add('revealed');          // 中間字帶：提示句收起、換成結果句（之後是「上一手」那行），下一手才換回提示（FIXLIST 9）
       showCallout(ct);
-      sfx(hitSfx(cl));
+      readSound(cl);
       if (!hasStage('clash')) stageFallbackHit(cl);
       setHp(els.ehp, els.ehpn, v1.eHp, v1.eMax, true);
       setHp(els.php, els.phpn, v1.pHp, v1.pMax, true);
@@ -1378,22 +1405,25 @@
       later(() => sfx(win ? 'win' : 'lose'), 300);
       winnerSong(win, cl);
       let tx = null;
-      if (typeof hooks.endText === 'function') try { tx = hooks.endText(result); } catch (e) { console.error(e); }
-      if (!tx) {
+      {
         const nm = enemy.name || '';
         if (result.by === 'rounds' || result.by === 'pile') { const rv = roundsVars(over, v1, win); tx = { title: T('roundsOut'), sub: T(rv.even ? 'roundsEven' : 'roundsScore', rv), cls: win ? 'ink' : 'red' }; }
         else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
         else tx = { title: T('koLose'), sub: '', cls: 'red' };      // 老闆說情由接下來的對白講（COPY-07：大章不再寫「老闆：……再一場。」）
       }
+      // hooks.endText(result, 預設) → 換掉的大章（{title, sub, cls, chip}）；回 null＝照預設（第 A 波 4：險勝章、連勝 +1 由 ui.js 給）
+      if (typeof hooks.endText === 'function') try { const t2 = hooks.endText(result, Object.assign({}, tx)); if (t2) tx = t2; } catch (e) { console.error(e); }
       if (els.call.classList.contains('on')) await wait(220);      // 結果框淡完再蓋大章（R-05c：大章被結果框蓋住半秒）
       if (S.destroyed) return;
-      bigStamp(tx.title, tx.cls || (win ? 'ink' : 'red'), tx.sub);
+      bigStamp(tx.title, tx.cls || (win ? 'ink' : 'red'), tx.sub, tx.chip);
+      S.endTx = tx;
       onEvent(over);
       S.v = v1;
       emit('over', result);
       // 比聲望條的大章有兩行要看：至少 3 秒（R-05c）；他打完說的那句也要看得完（真實時間）
       const endMs = result.by === 'rounds' || result.by === 'pile' ? 3000 : 1500;
-      await wait(Math.max(endMs, (endLine && !FAST && !S.auto) ? (readMs(endLine) - 300) * S.speed : 0));
+      // tx.holdMs（第 A 波 4：險勝章後老闆補一句）：大章至少停這麼久（照速度縮）
+      await wait(Math.max(endMs, (endLine && !FAST && !S.auto) ? (readMs(endLine) - 300) * S.speed : 0, (tx && tx.holdMs) | 0));
       if (S.destroyed) return;
       if (typeof hooks.beforeEnd === 'function') { try { await hooks.beforeEnd(result); } catch (e) { console.error(e); } }
       if (S.destroyed) return;
@@ -1566,6 +1596,7 @@
         phase: S.phase, n: S.v.n, view: S.v, sel: S.sel, open: S.sel ? S.sel.i : null, lay: S.lay, hand: S.handGeom || null, busy: S.busy, held: S.held, speed: S.speed, enterDone: S.enterDone, rush: S.rush,
         ui: snapUI(), hands: S.debug.hands.map(h => ({ n: h.n, sel: h.sel, evs: h.evs, ct: h.ct, ui: h.ui })), last: S.debug.hands[S.debug.hands.length - 1] || null,
         log: S.debug.log.slice(), ms: S.debug.lastMs || null, cls: root.className,
+        readRun: S.readRun, sounds: S.sounds.slice(), endTx: S.endTx || null, stamp: { text: txt(els.kost.querySelector('b')), sub: txt(els.kost.querySelector('small')), chip: txt(els.kost.querySelector('.chip')), cls: els.kost.className },
       }),
     };
     if (qs.get('debug') === '1') window.__dl = api;

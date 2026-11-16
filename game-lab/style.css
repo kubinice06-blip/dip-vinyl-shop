@@ -822,3 +822,25 @@ body.lb-tune-open{overflow:hidden;}
 .drawcard .apx .nm{font-size:14px;line-height:1.5;margin-top:1px;}
 .drawcard .apx .nm .tm{display:inline-block;margin-left:8px;font-size:10px;font-weight:700;line-height:15px;padding:0 5px;color:#fff;background:var(--ink,#111);vertical-align:1px;letter-spacing:.06em;}
 .drawcard .apx .tx{font-size:12px;line-height:1.6;color:#333;}
+
+/* ===================== 第 A 波（店主 11-16「全部開始做吧」）===================== */
+/* 4 錢跳數字入帳：頂欄下面一顆金色小條「+$1,500 $600→$2,100」（ui.js cashRise；取代 1.9 秒的「+$…」吐司） */
+.lb-toast.cash{display:flex;align-items:baseline;gap:10px;padding:6px 14px;}
+.lb-toast.cash .ce{font:700 13px var(--mono);color:var(--win,#2e7d52);}
+.lb-toast.cash .cv{font:700 18px/1 var(--mono);color:var(--gold);letter-spacing:.02em;min-width:5.2em;text-align:right;}
+.lb-toast.cash.done .cv{animation:lbCashPop .32s ease-out;}
+@keyframes lbCashPop{0%{transform:scale(1);}45%{transform:scale(1.18);}100%{transform:scale(1);}}
+@media (prefers-reduced-motion: reduce){ .lb-toast.cash.done .cv{animation:none;} }
+/* 4 再贏 N 位破紀錄（頂欄小字，對決與來客）：金色 */
+.lb-top .tt small.rec{color:var(--gold-ink,#8a6508);font-weight:700;}
+/* 3 稱號：來客條頭像下緣一塊小名牌（engine guestTitle；壓在頭像上、不多佔一行） */
+.lb-night .nc .tl{position:relative;z-index:1;margin:-11px 0 -1px;font:700 8.5px/11px var(--zh);color:var(--gray2,#555);background:#fff;border:1px solid var(--line,#ccc);padding:0 3px;white-space:nowrap;letter-spacing:-.03em;max-width:calc(100% + 6px);overflow:hidden;}
+.lb-night .nc.cur .tl{color:var(--gold-ink,#8a6508);border-color:var(--gold);}
+.lb-night .nc.done .tl{color:var(--gray);}
+/* 6 常出：冷門（客人資訊） */
+.bl.ma b{font-weight:700;}
+/* 5 點老闆的小選單：賣給老闆（第 1 位開打前多這一顆） */
+.lb-ownersell{margin-top:8px;}
+/* 4 差一點摘要（結算）：走到那一列後面的小籤、輸給誰那行後面的半句 */
+.lb-sum li .nr.near{background:#fff;color:var(--gold-ink,#8a6508);box-shadow:inset 0 0 0 1px var(--gold);}
+.lb-endhero .sub .close{color:var(--ink);font-weight:700;}

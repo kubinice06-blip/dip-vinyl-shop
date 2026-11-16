@@ -173,3 +173,5 @@
 .ec-cs:disabled .ec-tcv{opacity:.4;}
 .ec-cs .ec-sv{margin-top:1px;}
 .ec-poor.ec-go small{font-family:var(--zh,sans-serif);font-weight:400;letter-spacing:.02em;}
+.ec-cs.gift .ec-tcv,.ec-cs.seed .ec-tcv{opacity:1;}   /* 賣給老闆：送的／種子可以交還，不淡掉（停用的才淡，.ec-cs:disabled） */
+.ec-cs:disabled.gift .ec-tcv,.ec-cs:disabled.seed .ec-tcv{opacity:.4;}

@@ -56,13 +56,16 @@
 //     （結算那塊、唱片櫃頁「我的收藏」都是金框）；只能帶一次
 //  51 第二趟挑種子：再挑戰一趟 →（不挑王牌，沿用 save.lastAce＝pearl）→ 挑種子面板（擁有、不是頂點卡；三色篩選；最多 3 張；面板內可捲、整頁不捲）→ 就這幾張 → 特價箱 → 來客：
 //     包包＝種子＋老闆送的補到 4 張＋特價箱 3 張＝7、run.seeds＝挑的；序章那一趟不挑
-//  52 種子不能賣：錢不夠、賣一張就夠時買箱子裡的 → 先賣子面板（自願；包包不限張數之後沒有「包包滿先賣」）：種子標「櫃裡帶來」、選不了，點了說明「從唱片櫃帶來的不能賣」；
-//     引擎 buy 賣種子、單獨 sell 種子 → seedNoSell；包包面板（兩位客人之間）種子標「櫃裡帶來」、沒有「賣」鈕
+//  52 種子（第 A 波 5：移出包包只走櫃檯「賣給老闆」）：錢不夠時箱子的鈕停用「錢不夠 $n・去櫃檯賣唱片」、沒有先賣子面板；引擎 buy 帶種子 sellId → counterOnly、
+//     單獨 sell 種子 → ok（$0、reclaim seed）；包包面板種子標「櫃裡帶來」、整個包包沒有「賣」鈕；櫃檯「賣給老闆」：種子那格「交還老闆」→ 交還：$0、不再是種子、老闆說一句
 //  53 存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
 //  （換王牌，店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說）
 //  54 第 1 位開打前：來客畫面一次性提示（老闆頭上閃一下＋吐司「想換王牌，點老闆。」，save.seen.aceSwap，只出一次）→ 真點老闆＝小選單「聊聊／換一張王牌」（不捲動）
 //     → 聊聊＝老闆照舊說一句 → 換一張王牌＝挑王牌面板（標題「想換一張？」、預設選中現在那張、不捲動）→ 換 pearl：包包送的四張原位換、特價箱不動、
-//     save.lastAce、新那組算擁有（gift）、老闆說換好了＋吐司 → 再換選同一張＝不換（老闆「那就照舊。」）→ 打過第 1 位（第 2 位）點老闆：沒有選單、老闆說下一趟再換
+//     save.lastAce、新那組算擁有（gift）、老闆說換好了＋吐司 → 再換選同一張＝不換（老闆「那就照舊。」）→ 打過第 1 位（第 2 位）點老闆：沒有選單、直接開櫃檯「賣給老闆」（第 A 波 5）
+//  （第 A 波，店主 11-16「全部開始做吧」）
+//  57 客人走到對戰台等你（真點「對戰台」開打）、來客條稱號、客人資訊「常出：○○」、頂欄「再贏 N 位破紀錄」、對決名字旁稱號；讀對了／看穿了、越讀越響；
+//     險勝章＋連勝 +1＋老闆補一句、錢跳數字入帳；差一點摘要（差 N 位破紀錄、他只剩 X 聲望、第 n 手被○剋○翻盤）
 //  （包包不限張數，店主 11-16）
 //  56 包包 8 張打贏 → 挑唱片面板小字「包包 8 張」→ 收這張＝直接進包包（第 9 張；沒有「挑一張拿出來」面板）；包包 20 張再打贏 → 第 21 張也一樣；包包條「包包 21 張」
 //  （主站互通入口，v5 第六項第一期，店主 11-15）
@@ -82,7 +85,7 @@ const LAB = path.resolve(HERE, '..');
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const YOU_HP = createRequire(import.meta.url)(path.join(LAB, 'engine.js')).CFG.playerHp;   // 你的聲望（FIXLIST 11 H5-1：9）
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52, 54, 55]);
+const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42, 45, 46, 48, 49, 50, 51, 52, 54, 55, 57]);
 const SHOTS = process.env.LAB_SHOTS || '';      // 設了就把 #55 的挑種子面板、唱片資訊截圖存到這個資料夾（給店主看）
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
@@ -349,11 +352,13 @@ async function run() {
         await sleep(450);
         if (relic) await jsClick(page, '.lb-sheet.relics [data-r="stylus"]');
         const night = await advanceUntil(page, () => window.__lab.screen() === 'night', null, 60000);
-        await sleep(1500);
-        const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.atdoor; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, atdoor: at, r1: s.pos('r1') && !s.pos('r1').hidden }; });
-        const near = st.f && !st.f.hidden && Math.hypot(st.f.x - st.atdoor[0], st.f.y - st.atdoor[1]) <= 3;
+        // 第 A 波 1：推門進來的第 1 位從門邊直接走到對戰台（duelE）等你（不再停在門邊 atdoor）
+        await page.waitForFunction(() => { const s = window.__lab.stage, f = s.pos('f'), d = s.layout.spots.duelE; return f && !f.hidden && Math.hypot(f.x - d[0], f.y - d[1]) <= 3; }, null, { timeout: 8000 }).catch(() => {});
+        await sleep(300);
+        const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.duelE; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, duelE: at, r1: s.pos('r1') && !s.pos('r1').hidden }; });
+        const near = st.f && !st.f.hidden && Math.hypot(st.f.x - st.duelE[0], st.f.y - st.duelE[1]) <= 3;
         const ok = card && one && !one.title && one.notitle && /Eminem/i.test(one.text) && one.btns === 2 && one.cover && scrollOk(scOne) &&
-          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes('eminem-the-eminem-show') && st.bag.length === 8 && st.heads === 5 && st.inside && near && st.r1;
+          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes('eminem-the-eminem-show') && st.bag.length === 8 && st.heads === 5 && !st.inside && near && st.r1;
         record(7, size, ok, `pickup ${JSON.stringify(one && { title: one.title, notitle: one.notitle, btns: one.btns, text: one.text.slice(0, 50) })}; relics offered ${rel}; night ${night}; ${JSON.stringify(st)}`);
       } catch (e) { record(7, size, false, 'error ' + e.message); }
       await ctx.close();
@@ -1147,37 +1152,53 @@ async function run() {
           sel.red === 'rgb(193, 22, 40)' && sel.stuck && /✓/.test(sel.check) && sel.outline === 'rgb(17, 17, 17)',
           `挑種子面板 ${seedsUp}：${sp0.tiles.length} 張（＝唱片櫃能當種子的 ${pool.length}；頂點卡 ${sp0.apex}、金框 ${sp0.store}）、篩選 ${sp0.filters.join('／')}（${ax} → ${fo.join('')}／${foWant}；沒有的那色 ${noneAx}：空的那句 ${emptyOk}）、點四張 → 選 ${sel.sel.length}「${sel.cnt}」「${sel.note}」吐司 ${JSON.stringify(sel.toast)} 沒選的 aria-disabled ${sel.dis.join()} 張數 ${sel.red} 捲到 ${sel.scrolled} 標題列看得到 ${sel.stuck} 選了 ${sel.check} ${sel.outline}；不列 pearl 送的 ${JSON.stringify(giftOut)}；副標「${sp0.sub}」；scroll ${JSON.stringify(sc51)}；` +
           `包包 ${JSON.stringify(rr.bag)}（種子＋送的補到 4 ${bagOk}）`);
-        // ---- #52 種子不能賣（包包不限張數之後，店主 11-16）：包包補到 8 張、錢不夠但賣一張就夠 → 箱子裡買一張 → 先賣子面板（自願）；包包面板種子沒有「賣」鈕
+        // ---- #52 種子（第 A 波 5：移出包包只走櫃檯「賣給老闆」）：包包補到 8 張、錢不夠 → 箱子裡買一張＝鈕停用「錢不夠…・去櫃檯賣唱片」、沒有先賣子面板；
+        //      引擎 buy 帶種子 sellId → counterOnly、單獨 sell 種子 → ok（$0、reclaim seed）；包包面板種子標「櫃裡帶來」、整個包包都沒有「賣」鈕；
+        //      櫃檯「賣給老闆」：種子那格「交還老闆」、點了問「把《…》交還老闆？」→ 交還：$0、包包 −1、不再是種子、老闆說「你自己的那張？…」
         stage = '52';
         const setup = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine;
           const extra = Object.keys(C.cards).filter(id => !C.cards[id].tier && !R.bag.includes(id) && !Object.values(R.shop.bins).flat().includes(id) && !C.bargain.pool.includes(id) && !(C.bargain.retired || []).includes(id)).slice(0, 8 - R.bag.length);
           R.bag.push(...extra);
           const key = 'jazz', id = R.shop.bins[key][0], sd = R.seeds[0], price = E.priceOf(C, C.cards[id]);
-          const max = Math.max(...R.bag.filter(b => !E.isGift(R, C, b) && !E.isSeed(R, C, b)).map(b => E.sellValue(C, C.cards[b])));
-          window.__lab.money(Math.max(0, price - max));                                   // 錢不夠、賣最值錢那張就夠：先賣子面板
+          window.__lab.money(Math.max(0, price - 100));                                   // 錢不夠（差 $100）
           const cp = () => JSON.parse(JSON.stringify(R));
-          return { key, id, sd, price, max, eng: E.choose(cp(), C, { type: 'buy', key, cardId: id, sellId: sd }).error, engSell: E.choose(cp(), C, { type: 'sell', cardId: sd }).error, bag: R.bag.length }; });
+          const s1 = E.choose(cp(), C, { type: 'sell', cardId: sd });
+          return { key, id, sd, price, eng: E.choose(cp(), C, { type: 'buy', key, cardId: id, sellId: sd }).error, engSell: s1.ok ? JSON.stringify(s1.effects) : s1.error, bag: R.bag.length, go: C.shopUi.goCounter }; });
         await page.evaluate(() => window.__lab.stageAction('crate:jazz'));
         const drawer = await page.waitForFunction(() => window.DipLabEcon.debug().open && document.querySelector('.ec-drawer [data-a=buy]'), null, { timeout: 9000 }).then(() => true, () => false);
         await sleep(450);
+        const bb = await page.evaluate(() => { const b = document.querySelector('.ec-drawer [data-a=buy]'); return { dis: b.disabled, t: b.textContent.replace(/\s+/g, '') }; });
         await jsClick(page, '.ec-drawer [data-a=buy]'); await sleep(400);
-        const sub = await page.evaluate(() => ({ sub: window.DipLabEcon.debug().sub, seeds: [...document.querySelectorAll('.ec-drawer .ec-spick.seed')].map(t => [t.dataset.cid, t.getAttribute('aria-disabled'), (t.querySelector('.ec-seed') || {}).textContent || '']) }));
-        await page.evaluate(sd => { const b = document.querySelector(`.ec-drawer .ec-spick[data-cid="${sd}"]`); if (b) b.click(); }, setup.sd); await sleep(250);
-        const after = await page.evaluate(() => ({ picks: (window.DipLabEcon.debug().sub || {}).picks || null, line: (document.querySelector('.ec-drawer .ec-line.warn') || {}).textContent || '', toast: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent).join('|'), want: window.DipLabContent.shopUi.seedNoSell, tag: window.DipLabContent.shopUi.seedTag }));
+        const sub = await page.evaluate(() => window.DipLabEcon.debug().sub);
         await page.evaluate(() => { const E = window.DipLabEcon; if (E && E.close) E.close(); }); await sleep(600);
-        // 包包面板（兩位客人之間）：種子標「櫃裡帶來」、沒有「賣」鈕；別的（不是送的）有
+        // 包包面板（兩位客人之間）：種子標「櫃裡帶來」；整個包包沒有「賣」鈕
         await waitScreen(page, 'night'); await sleep(300);
         await jsClick(page, '.lb-bagline [data-a=bag]'); await sleep(500);
         const sds52 = await page.evaluate(() => window.__lab.run.seeds.slice());
+        const tag = await page.evaluate(() => window.DipLabContent.shopUi.seedTag);
         const bp = await page.evaluate(sds => { const s = document.querySelector('.lb-sheet.float.bag'); if (!s) return null;
           const t = id => [...s.querySelectorAll('.lb-ct')].find(x => x.getAttribute('data-cid') === id);
-          return { seeds: sds.map(id => { const x = t(id); return x ? [!!x.querySelector('[data-pick]'), (x.querySelector('.sdtag') || {}).textContent || ''] : null; }), sell: s.querySelectorAll('[data-pick]').length }; }, sds52);
+          return { seeds: sds.map(id => { const x = t(id); return x ? (x.querySelector('.sdtag') || {}).textContent || '' : null; }), sell: s.querySelectorAll('[data-pick]').length }; }, sds52);
         await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.bag [data-a=close]'); if (s) s.click(); }); await sleep(200);
-        if (want(52)) record(52, size, setup.eng === 'seedNoSell' && setup.engSell === 'seedNoSell' && setup.bag === 8 && drawer && sub.sub && sub.sub.kind === 'card' && sub.sub.why === 'money' && sub.seeds.length === 3 && sub.seeds.every(([, dis, tx]) => dis === 'true' && tx === after.tag) &&
-          after.picks && after.picks.length === 0 && after.line === after.want && after.want === '從唱片櫃帶來的不能賣' && after.toast.indexOf(after.want) >= 0 &&
-          bp && bp.seeds.length === 3 && bp.seeds.every(x => x && !x[0] && x[1] === after.tag) && bp.sell > 0,
-          `引擎買時賣種子 → ${setup.eng}、單獨賣種子 → ${setup.engSell}；錢 $${setup.price - setup.max}（《${setup.id}》$${setup.price}）→ 子面板 ${JSON.stringify(sub.sub)}：種子 ${sub.seeds.length} 張 ${JSON.stringify(sub.seeds.map(x => x[1] + '/' + x[2]))}；點了 → 沒選（${JSON.stringify(after.picks)}）、說明「${after.line}」、吐司 ${after.toast.indexOf(after.want) >= 0}；` +
-          `包包面板：種子 ${JSON.stringify(bp && bp.seeds)}（[有賣鈕, 小籤]）、能賣的 ${bp && bp.sell} 張`);
+        // 櫃檯「賣給老闆」：種子交還老闆
+        await page.evaluate(() => { window.DipLabEcon.openCounterSell(); });
+        const sOpen = await page.waitForFunction(() => { const d = window.DipLabEcon.debug(); return d.open && d.tab === 'sell' && document.querySelector('.ec-drawer .ec-cs'); }, null, { timeout: 12000 }).then(() => true, () => false);
+        await sleep(400);
+        const sdTile = await page.evaluate(sd => { const t = document.querySelector(`.ec-drawer .ec-cs[data-cid="${sd}"]`); return t ? { seed: t.classList.contains('seed'), sv: (t.querySelector('.ec-sv') || {}).textContent || '', dis: t.disabled } : null; }, setup.sd);
+        await watchSay(page);
+        await page.evaluate(sd => { const b = document.querySelector(`.ec-drawer .ec-cs[data-cid="${sd}"]`); if (b) b.click(); }, setup.sd); await sleep(250);
+        const ask = await page.evaluate(() => ({ line: (document.querySelector('.ec-drawer .ec-line') || {}).textContent || '', go: (document.querySelector('.ec-drawer [data-a=cgo]') || {}).textContent || '' }));
+        const m0 = await page.evaluate(() => window.__lab.run.money);
+        await jsClick(page, '.ec-drawer [data-a=cgo]'); await sleep(500);
+        const back = await page.evaluate(sd => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine;
+          return { money: R.money, bag: R.bag.length, has: R.bag.includes(sd), seed: E.isSeed(R, C, sd), said: (window.__said || []).map(x => x.t), want: C.shopLines.reclaimSeed, album: C.cards[sd].album, toast: [...document.querySelectorAll('.lb-toast')].map(t => t.textContent) }; }, setup.sd);
+        await page.evaluate(() => { const E = window.DipLabEcon; if (E && E.close) E.close(); }); await sleep(600);
+        if (want(52)) record(52, size, setup.eng === 'counterOnly' && /"reclaim":"seed"/.test(setup.engSell) && /"earn":0/.test(setup.engSell) && setup.bag === 8 && drawer && bb.dis && bb.t.indexOf(setup.go) > 0 && !sub &&
+          bp && bp.seeds.length === 3 && bp.seeds.every(x => x === tag) && bp.sell === 0 &&
+          sOpen && sdTile && sdTile.seed && !sdTile.dis && sdTile.sv === '交還老闆' && ask.line === '把《' + back.album + '》交還老闆？' && ask.go.trim() === '交還老闆' &&
+          back.money === m0 && back.bag === setup.bag - 1 && !back.has && !back.seed && back.said.includes(back.want) && back.toast.includes('《' + back.album + '》交還老闆'),
+          `引擎買時賣種子 → ${setup.eng}、單獨賣種子 → ${setup.engSell}；錢不夠（《${setup.id}》$${setup.price}）→ 鈕停用 ${bb.dis}「${bb.t}」、子面板 ${JSON.stringify(sub)}；` +
+          `包包面板：種子 ${JSON.stringify(bp && bp.seeds)}、賣鈕 ${bp && bp.sell} 個；賣給老闆：種子那格 ${JSON.stringify(sdTile)}、「${ask.line}」「${ask.go.trim()}」→ $${m0} → $${back.money}、包包 ${back.bag}、還是種子 ${back.seed}、老闆「${back.said.slice(-1)}」`);
       } catch (e) { record(+stage, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -1288,13 +1309,17 @@ async function run() {
         await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
         const hot2 = await tapHot(page, h => h.action === 'talk:owner');
         await sleep(600);
+        // 第 A 波 5：兩位客人之間點老闆＝櫃檯「賣給老闆」（不再只說「下一趟開門前再說」）
+        await page.waitForFunction(() => { const d = window.DipLabEcon.debug(); return d.open && d.tab === 'sell'; }, null, { timeout: 12000 }).catch(() => {});
         const late = await page.evaluate(() => ({ pos: window.__lab.run.pos, menu: !!document.querySelector('.lb-sheet.owner'), pick: !!document.querySelector('.lb-sheet.acepick'), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(),
+          sell: window.DipLabEcon.debug().tab === 'sell' && !!document.querySelector('.ec-drawer .ec-cs'),
           can: window.DipLabEngine.canSwitchAce(window.__lab.run, window.DipLabContent), eng: window.DipLabEngine.switchAce(JSON.parse(JSON.stringify(window.__lab.run)), window.DipLabContent, 'hall').error, ace: window.__lab.run.ace }));
-        const lateOk = !midFight && !!hot2 && late.pos === 2 && !late.menu && !late.pick && late.said.includes(U.aceLater) && !late.can && late.eng === 'notNow' && late.ace === 'pearl' && !late.toasts.includes(U.aceHint);
+        await page.evaluate(() => window.DipLabEcon.close()); await sleep(400);
+        const lateOk = !midFight && !!hot2 && late.pos === 2 && !late.menu && !late.pick && late.sell && !late.can && late.eng === 'notNow' && late.ace === 'pearl' && !late.toasts.includes(U.aceHint);
         record(54, size, hintOk && menuOk && talkOk && swOk && sameOk && lateOk,
           `提示 ${hintOk} ${JSON.stringify(hint.toasts)}；點老闆 ${hot && hot.id} → 選單 ${menuOk} ${JSON.stringify(menu)} ${JSON.stringify(scM)}；聊聊 ${talkOk} ${JSON.stringify(talk.said)}；` +
           `換王牌面板 ${pickUp}「${pk.h3}」sel ${pk.sel} ${JSON.stringify(scP)} → ${swOk} ${JSON.stringify({ ace: sw.ace, bag: sw.bag, lastAce: sw.lastAce, own: sw.own, said: sw.said, toasts: sw.toasts, bagN: sw.bagN })}；` +
-          `同一張 ${sameOk}；打過第 1 位 ${lateOk} ${JSON.stringify({ midFight, pos: late.pos, menu: late.menu, said: late.said, can: late.can, eng: late.eng })}`);
+          `同一張 ${sameOk}；打過第 1 位 ${lateOk} ${JSON.stringify({ midFight, pos: late.pos, menu: late.menu, sell: late.sell, can: late.can, eng: late.eng })}`);
       } catch (e) { record(54, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -1438,6 +1463,96 @@ async function run() {
         record(56, size, okA && okB, `包包 ${n8}：小字「${a.pre.sub}」→ 收《${a.pre.pick}》→ 拿出來面板 ${a.dropSheet}、${a.scr}、包包 ${a.post.bag.length}（有那張 ${a.post.bag.includes(a.pre.pick)}）、包包條「${a.post.line}」；` +
           `包包 ${n20}：小字「${b.pre.sub}」→ 收《${b.pre.pick}》→ 拿出來面板 ${b.dropSheet}、${b.scr}、包包 ${b.post.bag.length}、包包條「${b.post.line}」`);
       } catch (e) { record(56, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #57 第 A 波（店主 11-16「全部開始做吧」）：
+    //   (a) 挑戰者進門直接走到對戰台（duelE）等你；來客條每顆頭像下寫稱號（＝engine roundGuests[i].title，null 不寫）；客人資訊「常出：○○」（主屬性上色）＋稱號小籤；
+    //       頂欄離最遠紀錄 3 位內「再贏 N 位破紀錄」；真點舞台上的「對戰台」→ 你走到 duelP → 開打；他名字旁稱號＝view.eTitle
+    //   (b) 讀對了就說出來（剋中＝「讀對了。」／看穿唬人＝「你看穿了！」）、越讀越響（連續剋中音一次比一次高、第三次停格）
+    //   (c) 險勝章（剩 1–2 聲望贏下＝「險勝！」）＋連勝 +1 小章＋老闆補一句；錢跳數字入帳（領獎畫面頂欄下的金色小條，數字跳到新的錢）
+    //   (d) 差一點摘要：輸掉（說情用完）→ 結算「走到」那一列「差 N 位破紀錄」、輸給誰那行「他只剩 X 聲望，第 n 手被○剋○翻盤」；不捲動
+    if (want(57)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue4(page, { ace: 'hall', pos: 13 }, Q());
+        await waitScreen(page, 'night');
+        await page.evaluate(() => { const r = window.__lab.run; r.farBefore = 14; r.streak = 3; window.__lab.go('night'); });
+        const atTable = await page.waitForFunction(() => { const s = window.__lab.stage, f = s.pos('f'), d = s.layout.spots.duelE; return f && !f.hidden && Math.hypot(f.x - d[0], f.y - d[1]) <= 1; }, null, { timeout: 10000 }).then(() => true, () => false);
+        await sleep(400);
+        const nt = await page.evaluate(() => { const R = window.__lab.run, C = window.DipLabContent, E = window.DipLabEngine, G = E.roundGuests(R, C);
+          return { tl: [...document.querySelectorAll('[data-tut=night] .nc')].map(n => (n.querySelector('.tl') || {}).textContent || null), want: G.map(g => g.title || null), cur: G.find(g => g.cur),
+            top: document.querySelector('#top .tt').textContent, rec: C.trial.ui.toRecord.replace('{n}', 2), fv: (() => { const f = window.__lab.stage.pos('f'), a = document.querySelector('#stage') || document.body; return !!f; })() }; });
+        const scN = await noScroll(page);
+        // 客人資訊
+        await jsClick(page, '[data-tut=night] .nc.cur'); await sleep(500);
+        const gs = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.guest'); if (!s) return null; const ma = s.querySelector('.bl.ma');
+          return { ma: ma ? ma.textContent : '', cls: ma ? (ma.querySelector('b') || {}).className : '', tags: [...s.querySelectorAll('.gtag')].map(t => t.textContent) }; });
+        const mainZh = await page.evaluate(m => window.DipLabEngine.ZH[m], nt.cur.main);
+        await jsClick(page, '.lb-sheet.float.guest [data-a=close]'); await sleep(300);
+        const okA1 = atTable && JSON.stringify(nt.tl) === JSON.stringify(nt.want) && nt.want.some(Boolean) && nt.tl[4] === null && nt.top.indexOf(nt.rec) >= 0 && scrollOk(scN) &&
+          gs && gs.ma === '常出：' + mainZh && gs.cls === nt.cur.main && (!nt.cur.title || gs.tags.includes(nt.cur.title));
+        // 真點對戰台 → 你走到 duelP → 開打
+        const hot = await tapHot(page, x => x.id === 'deck' || x.action === 'duel');
+        const walked = await page.waitForFunction(() => { const s = window.__lab.stage, p = s.pos('p'), d = s.layout.spots.duelP; return p && Math.hypot(p.x - d[0], p.y - d[1]) <= 1; }, null, { timeout: 8000 }).then(() => true, () => false);
+        await duelReady(page);
+        await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+        await sleep(500);
+        const dv = await page.evaluate(() => { const d = window.DipLabDuel.debug(), t = document.querySelector('.dl-e .ttl'); return { eTitle: d.view.eTitle, ttl: t && !t.hidden ? t.textContent : null, eMain: d.view.eMain, top: document.querySelector('#top .tt').textContent }; });
+        const okA2 = !!hot && walked && dv.eTitle === nt.cur.title && (dv.ttl === dv.eTitle || (!dv.eTitle && dv.ttl === null)) && dv.eMain === nt.cur.main && dv.top.indexOf(nt.rec) >= 0;
+        // (b) 連續剋中三手
+        await page.evaluate(() => window.__lab.force({ kind: 'counter', toE: 2 }));
+        const hands = [];
+        for (let k = 0; k < 3; k++) {
+          await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+          await page.waitForFunction(n => { const d = window.DipLabDuel.debug(); return d && d.hands.length > n && d.hands[d.hands.length - 1].ui; }, k, { timeout: 8000 }).catch(() => {});
+          hands.push(await page.evaluate(() => { const d = window.DipLabDuel.debug(), hd = d.hands[d.hands.length - 1]; return { l1: hd.ui.call.l1, bluff: !!(hd.evs.find(e => e.t === 'clash') || {}).bluff, read: d.readRun, snd: d.sounds[d.sounds.length - 1] }; }));
+          await page.waitForFunction(() => { const d = window.DipLabDuel.debug(); return d && d.phase === 'choose'; }, null, { timeout: 15000 }).catch(() => {});
+        }
+        const DT = await page.evaluate(() => window.DipLabContent.duelText);
+        const okB = hands.length === 3 && hands.every((x, k) => x.read === k + 1 && (x.bluff ? x.l1.indexOf('你看穿了！') === 0 : x.l1.indexOf(DT.readRight) === 0)) &&
+          hands[0].snd === 'readHit@1.000' && hands[1].snd === 'readHit@1.122' && hands[2].snd === 'readHit@1.260+stop';
+        // (c) 險勝：你剩 2、這一手扣他到 0
+        await watchSay(page);
+        await page.evaluate(() => { window.__stamp = null; window.__cash = []; const d = window.__lab.rawDuel(); d.p.hp = 2; window.__lab.force({ kind: 'counter', toE: 40 });
+          setInterval(() => { const x = window.DipLabDuel.debug(); if (x && x.stamp && x.stamp.text) window.__stamp = x.stamp; document.querySelectorAll('.lb-toast.cash').forEach(t => { if (!window.__cash.includes(t.textContent)) window.__cash.push(t.textContent); }); }, 40); });
+        const money0 = await page.evaluate(() => window.__lab.run.money);
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        await page.waitForFunction(() => window.__stamp, null, { timeout: 12000 }).catch(() => {});
+        await waitScreen(page, 'reward', 20000); await sleep(3000);
+        const cz = await page.evaluate(() => ({ stamp: window.__stamp, said: (window.__said || []).filter(x => x.id === 'o').map(x => x.t), cash: window.__cash.slice(), money: window.__lab.run.money, U: window.DipLabContent.trial.ui, L: window.DipLabContent.shopLines.closeWin, M: window.DipLabEngine.moneyText }));
+        const earn = await page.evaluate(m0 => window.__lab.run.money - m0, money0), mt = await page.evaluate(n => window.DipLabEngine.moneyText(n), cz.money);
+        const okC = !!cz.stamp && cz.stamp.text === cz.U.closeWin && cz.stamp.chip === cz.U.streak.replace('{n}', 4) + ' +1' && /gold/.test(cz.stamp.cls) && cz.said.includes(cz.L) &&
+          earn > 0 && cz.cash.some(t => t.indexOf('+$') === 0) && cz.cash.some(t => t.endsWith('$' + mt));
+        // (d) 差一點：下一位（第 14 位）打輸、說情用完 → 結算
+        await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]'); if (b) b.click(); });
+        for (let g = 0; g < 50 && (await screen(page)) !== 'night'; g++) { if (await page.$('.lb-dq.drop .nx.on')) await jsClick(page, '.lb-dq.drop'); await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]') || document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(250); }
+        await page.evaluate(() => { const r = window.__lab.run; r.retryLeft = 0; r.farBefore = r.pos + 1; window.__lab.go('night'); });   // 再贏 2 位才破
+        await sleep(600);
+        await jsClick(page, '[data-a=go]'); await duelReady(page);
+        await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+        await sleep(300);
+        // 第 1 手你剋中扣到他剩 2（你領先）→ 第 2 手被剋、你歸零（翻盤）
+        await page.evaluate(() => { const d = window.__lab.rawDuel(); window.__lab.force({ kind: 'counter', toE: d.e.hp - 2 }); });
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        await page.waitForFunction(() => { const d = window.DipLabDuel.debug(); return d && d.phase === 'choose' && d.n >= 2; }, null, { timeout: 15000 }).catch(() => {});
+        await page.evaluate(() => { const d = window.__lab.rawDuel(); window.__lab.force({ kind: 'countered', toP: d.p.hp }); });
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        const end = await advanceUntil(page, () => window.__lab.screen() === 'end', null, 40000);
+        await sleep(1000);
+        const ed = await page.evaluate(() => { const S = window.DipLabContent.summary, R = window.__lab.run, Z = window.DipLabEngine.ZH, L = R.lastLoss;
+          const sub = document.querySelector('.lb-endhero .sub'), nr = document.querySelector('.lb-sum .nr.near');
+          return { near: nr ? nr.textContent : '', nearWant: S.toBreak.replace('{n}', 2), close: ((sub && sub.querySelector('.close')) || {}).textContent || '', L,
+            closeWant: L && L.flip ? S.closeHp.replace('{n}', L.eHp) + '，' + S.flipBy.replace('{k}', L.flip.k).replace('{e}', Z[L.flip.e]).replace('{p}', Z[L.flip.p]) : '',
+            scr: (() => { const s = document.querySelector('.lb-screen.end .lb-scroll'); return s ? s.scrollHeight - s.clientHeight : -1; })() }; });
+        const scE = await noScroll(page);
+        const okD = end && ed.near === ed.nearWant && !!ed.L && ed.L.eHp === 2 && ed.L.flip && ed.L.flip.k === 2 && ed.L.flip.kind === 'countered' && ed.close === ed.closeWant && ed.scr <= 1 && scrollOk(scE);
+        record(57, size, okA1 && okA2 && okB && okC && okD,
+          `(a) 客人走到對戰台 ${atTable}；稱號 ${JSON.stringify(nt.tl)}＝${JSON.stringify(nt.want)}；頂欄「${nt.top}」；客人資訊「${gs && gs.ma}」(${gs && gs.cls}) 籤 ${JSON.stringify(gs && gs.tags)}；` +
+          `真點 ${hot && hot.id} → 走到 duelP ${walked}、對決稱號「${dv.ttl}」(view ${dv.eTitle})、常出 ${dv.eMain}、頂欄「${dv.top}」；` +
+          `(b) ${hands.map(x => x.l1.slice(0, 6) + '…/' + x.snd).join('、')}；(c) 大章 ${JSON.stringify(cz.stamp)}、老闆「${cz.said.slice(-1)}」、錢條 ${JSON.stringify(cz.cash.slice(-2))}（+$${earn}）；` +
+          `(d) 結算 ${end}：「${ed.near}」「${ed.close}」lastLoss ${JSON.stringify(ed.L)}、捲動 ${ed.scr}`);
+      } catch (e) { record(57, size, false, 'error ' + e.message); }
       await ctx.close();
     }
 
