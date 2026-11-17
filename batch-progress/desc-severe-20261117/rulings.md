@@ -1980,6 +1980,52 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
 
+## sd-070（30 張，其餘：Guitoud、GUMI、GZA、Habib Mohebian、Hang Raiji、Hank Mobley 4、Hank Williams 2、Harold Vick、Harry Mudie 2、Harvey Williams、Haze 2、Heaven & Earth、Helén Eriksen 2、Henry Franklin、Herbie Hancock、松本英彦、High Tides、Highwoods String Band、後藤浩文、岡野等、Hoody、Hoogway、Hope of Glory）— s38
+
+- 研究：3 支 Sonnet，WebSearch 17＋15＋20＝52 次；none：岡野等《Double Image》三塊、後藤浩文 story／sound、松本英彦 story、Hang Raiji story／sound、Hoogway story。母語來源：Habib Mohebian 波斯文（Radio Farda、ILNA）、Helén Eriksen 挪威文（Dagbladet 1998 專訪、2000 年《City Dust》評）、Hoody 韓文（AOMG、ELLE Korea）。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 3 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Harold Vick《Don't Look Back》（原盤 Vick 自寫內頁：危機時期收到「愛的禮物」後的新心態、逐曲獻給誰、終曲禱詞、全班底）→ story／sound 升 ok；Heaven & Earth（Mercury 原盤 credits：芝加哥錄音室伴奏班底，舊稿「四位貝斯手」其實是伴奏，但不寫成團員）→ sound 升 ok；Helén Eriksen《Standards》（Tommy Tee 製作、班底與 N-Light-N 客席）→ sound 升 ok；Henry Franklin 班底；Hang Raiji（credits、岩浪洋三內頁、2024 年 Steps Records 再發行）what 升 ok；岡野等（四重奏編制與製作）what none→thin；松本英彦（児山紀芳監修、杉並錄音日）；後藤浩文（全碟一人包辦、Frogman 創辦人任 A&R）。岡野等日文搜尋 2 次全被同名美國團與同名講師污染，無新料；照 delayde 前例薄寫上線（158 字）。
+- 事實裁定：Hang Raiji 團員只用 Discogs 原文拼法（漢字未證）；Mobley《Poppin'》《Thinking of Home》擱置原因不詳不寫；Hank Williams 兩張不寫確切發行年；Hoogway 不寫 Sleep Tales，2018 年舊作聲音寫成「一向」的手法；Hoody 的 2021 年 ELLE 訪談同理；松本英彦的鋼琴與鼓手研究稿漢字錯（Karashima＝辛島文雄、George Ohtsuka＝ジョージ大塚），正文不寫兩人名字；High Tides 不寫「首張」；Haze 不寫末軌、長笛不算到 Deas 頭上。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-070.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Hank Mobley《Hank Mobley》 | 刪「原版首壓如今是 Blue Note 最難找的原盤之一」 | 原盤收藏價值屬版本雜項 |
+| Hank Williams《Luke the Drifter》 | 第二句補《盤名》；刪「內容多是道德勸誡……反史達林的新奇歌」壓回 232 字 | 無《》、字數 |
+| Hope of Glory《Second Look》 | 鉤子「錄音到 2020 年都還沒數位化」→「在教會裡演出……要的是低調的激勵，不是搖滾」 | 數位化與否屬版本雜項 |
+| Harry Mudie《Vol. 3》 | 「接進 12 軌混音台」→「接進他的混音台」 | QA 誤判軌數，順手避開 |
+
+其餘逐張四問無改：鉤子都對過研究稿（GZA 從混濁音場換成清脆鼓、Mohebian 二十七八歲才開唱且只唱自作、Mobley 三位新人首登 Blue Note、Hancock 錄完兩個月與 17 歲的 Tony Williams 加入 Miles、Vick 標題指熬過危機的心態、Mudie 是雷鬼最早大量用弦樂的製作人、Luke the Drifter 化名是怕點唱機業者抗議、Haze 借來的 Portastudio 進地窖、Eriksen 年度新人獎頒給嘻哈製作人操刀的爵士盤）。GZA 榜位（Billboard 200 第 9、R&B／嘻哈冠軍）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-070.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-071（30 張，其餘：Horace Parlan、Horace Silver 6、Howard McGhee、Hugh Mundell、Hughie Izachaar、Hula、Hurd、I Am David Sparkle、I Awake、Ida、Ike Quebec 4、il:lo、Immanu El、Immanuel Wilkins 3、In Spe、Inade 2、Incapacitants、Inner Dialogue、Integrity）— s38
+
+- 研究：3 支 Sonnet，WebSearch 13＋13＋18＝44 次；none 0。母語來源：Hurd 蒙古文（蒙古文維基、ETV 企劃報導）、Incapacitants 日文（美川自述）、In Spe 愛沙尼亞脈絡。Horace Silver 三部曲概念以 Blue Note 官網、Silver 1974 年電台訪談、blp1553 轉錄的 Blumenthal／Cuscuna 文字查清。
+- **主線補查**（WebSearch 1 次＋WebFetch＋Discogs 公開 API，facts 標【主線補查】）：Immanu El《Moen》（Discogs notes：Norrköping Fasanstudion 現場錄樂團、哥特堡家中補錄人聲與弦樂）→ story 升 ok；Integrity（Victory 1990 初版 credits：Mars Recording、Aaron Melnick 製作、班底）；Inner Dialogue《Friend》（credits 證實 Kay Cole／Lynn Dolin 人聲，研究層原說查不到）；Hughie Izachaar（倫敦 Conscious Sounds 錄音、合寫者）；Wilkins Vol. 2（Blue Note 新聞稿、Stereogum：〈Grace and Mercy〉出自《Omega》）。Wilkins Vol. 2／3 無專卷樂評，照整套四重奏描述薄寫。
+- 事實裁定：《Total Response》寫 1970 年底到隔年初錄、1972 年發行；《27th Man》不寫 Brecker 兄弟年齡（舊稿錯）、不寫兩場先後；《Silver 'n Wood》疊錄層是整排木管加長號（舊稿「長笛與低音薩克斯風」不精確）；《Jah Fire》寫清 Mundell 唱三首、Castell 唱五首，不寫軌序；Ike Quebec《Easy Living》是 1962 年 1 月 20 日同場完整版（舊稿「1981 先放三軌」錯，是五首）；il:lo《Myriad》是 EP、不寫「唯一客席」；Incapacitants《Repo》是美川一人時期最後一張（舊稿「美川與小堺第一次壓黑膠」錯）；Inade 兩張不寫舊稿查無出處的「Deep Ambient 自稱」「羅馬數字曲名」「2005 年起再混音」；Integrity 不寫 Dark Empire 先後與「八軌版本」；Wilkins 不編分三卷的理由、不寫〈Composition IX〉屬 Bach 系列（推論）、不寫「三卷全新曲」（〈Warriors〉也出自《Omega》）；Hurd 不混淆團長鼓手與主吉他手。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 28 處，改動檔 `review-sd-071.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Horace Silver《In Pursuit of the 27th Man》 | 鉤子「封面上 26 個人一起望向第 27 人」→「標題裡的第 27 人，Horace Silver 說是人類正在走向的更進步的未來人」；補《盤名》、刪「Silver 想換個音色」 | 鉤子取自封面畫面屬封套；無《》；字數 |
+| Silver 三張（'n Wood、Serenade、Healin' Feelin'）、McGhee、Jah Fire、Izachaar、Quebec 2 張、Wilkins Vol. 3、Inade《Samadhi State》 | 第二句補《盤名》，各刪一句次要細節壓回 240（Wade Marcus 指揮疊錄、Cook 高音域、改彈電鋼琴、McGhee 頂尖小號手、Mundell 幫 Castell 入行、Tubby／Pablo 影響、Blue Note 早期套裝、2026 發行、Takenaga 旋律線） | QA 無《》、字數 |
+| 《Silver 'n Wood》 | 鉤子開頭「標題裡的」→「盤名的 Wood 指木管」 | 同批前四字相撞 |
+| Incapacitants《Repo》 | 刪「原版只壓約 300 張」；「一面……另一面」→「前半……後半」 | 壓片數屬版本雜項；避 A／B 面寫法 |
+| Ike Quebec《With a Song in My Heart》 | 刪「當年只出過兩首 45 轉」 | 字數、發行格式雜項 |
+| Inner Dialogue《Friend》 | 鉤子「Ranwood 把《Friend》送上了輕音樂電台」→「《Friend》的單曲在美國輕音樂電台大量播放，發行它的是 Lawrence Welk 的廠牌 Ranwood」；刪 Gene DiNovi 一句壓字數 | Record World 說的是單曲獲 MOR 電台播放 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Parlan 小兒麻痺與左手、《All》四副嗓子含 Silver 自己、《Total Response》要先說服 Blue Note 高層、McGhee 與 Navarro 1948 同場、Hula 用 melodica 補鍵盤、Hurd 每週在電視播新歌、I Am David Sparkle 在快節奏樂壇以沉穩出名、Ida 起於送朋友的卡帶、In Spe 把打字機當鼓、Integrity 先虛構再成真、Wilkins 三卷各取不同角度）。Incapacitants「約兩年後小堺加入」有美川自述。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-071.json`；30 張 30 鍵（皆非 CJK，Hurd 為西里爾字母；原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 100 次（研究層 sd-070 52、sd-071 44，主線 4）。
 ## sd-074（30 張，其餘：Jimmy Smith 7、jinsang 3、Joachim Kühn、Joe Chambers、Joe Lee Wilson、Joe Lovano 2、Joey Calderazzo 3、Jogging House 2、John Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）— s40
 
 - 研究：3 支 Sonnet，WebSearch 15＋15＋18＝48 次；無 none。AllMusic、Discogs 網頁、jazzmusicarchives 多 403；b 組用 DownBeat 1991–93 PDF 全文補 Calderazzo 樂評。

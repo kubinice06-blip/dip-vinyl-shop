@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s38：sd-070、sd-071 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-070 上線 30（Guitoud、GUMI、GZA、Habib Mohebian、Hang Raiji、Hank Mobley 4、Hank Williams 2、Harold Vick、Harry Mudie 2、Harvey Williams、Haze 2、Heaven & Earth、Helén Eriksen 2、Henry Franklin、Hancock、松本英彦、High Tides、Highwoods、後藤浩文、岡野等、Hoody、Hoogway、Hope of Glory）；sd-071 上線 30（Parlan、Horace Silver 6、McGhee、Mundell、Izachaar、Hula、Hurd、I Am David Sparkle、I Awake、Ida、Ike Quebec 4、il:lo、Immanu El、Immanuel Wilkins 3、In Spe、Inade 2、Incapacitants、Inner Dialogue、Integrity）。岡野等《Double Image》（158 字）、後藤浩文照 delayde 前例薄寫上線。
+- **主線補查**（Discogs 公開 API notes／credits 為主）：Vick《Don't Look Back》原盤自寫內頁（story／sound 升 ok）、Heaven & Earth 芝加哥錄音班底、Eriksen《Standards》Tommy Tee 班底、Hang Raiji、松本英彦（児山紀芳監修）、Immanu El 錄音經過、Integrity Victory 初版、Inner Dialogue 人聲、Wilkins Vol. 2。審稿改 sd-070 5 處（版本雜項、補《盤名》、Hope of Glory 鉤子改掉「未數位化」）、sd-071 28 處（多為補《盤名》壓字數；《27th Man》鉤子改掉封面畫面、《Repo》刪壓片數）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-070.json,review-sd-071.json,kv-before-sd-070.json,kv-before-sd-071.json}`、`desc-tools/batches/{cards,research,output}/sd-07{0,1}*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 100 次。
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s40：sd-074、sd-075 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-074 上線 30（Jimmy Smith 7、jinsang 3、Kühn、Chambers、Joe Lee Wilson、Lovano 2、Calderazzo 3、Jogging House 2、Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）；sd-075 上線 30（Neptune、Lewis & Jones、John Russell、Scofield 2、Zorn、Toivanen、Kraus、Cortés、Léandre／Grimal、Juaneco、Judge、Silvano、Kadel 2、JUN SKY WALKER(S)、Byles、Delgado、Mance、Murvin、Justice、Hipp、Noetinger 2、Jónsi & Alex、Kangaroo、Kareem Ali、KaS Product、Gentile、Katra Turana）。資料薄的（jinsang、Holt《My Desire》、Kareem Ali、Kangaroo）照 delayde 前例薄寫上線。
