@@ -8,6 +8,27 @@
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-092.json,review-sd-093.json,kv-before-sd-092.json,kv-before-sd-093.json}`、`desc-tools/batches/{cards,research,output}/sd-09[23]*`、onboarding manifest 58 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 75 次。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s52：sd-098、sd-099 上線（53 張，無留置）
+
+- **結果**：其餘組最後兩批。sd-098 上線 30（Geoff Mann 2、GoGo Penguin、Grand Puba、Götz Alsmann 2、HANA、Aurex '80、IVE、J. Valentine、Guitar Workshop in L.A.、Joe Williams、John Lee & Gerry Brown 2、Juice WRLD、Kevin Richard Martin、King General、Lou Rawls、Mach One、Mad Professor 2、Maximum Penalty、Mtume、Nightmares on Wax、Noblemen、Möslang、Ottottrio、Peaking Lights、Evans／Blancarte、Raw Deal）；sd-099 上線 23（Red Summer … Smasher，含 Технология、ဇော်ဝင်းထွဋ်）。Mach One、Aurex、Morning Stars、Smasher 等照 delayde 前例薄寫上線。
+- **主線補查**：Zaw Win Htut（英文維基救回早期資料，sound none→thin）；Ottottrio、Mach One、Lou Rawls、King General、Crowns of Glory、Morning Stars、Sidevision、Salena Jones 補查無新料。舊稿錯誤更正：Richard Pine 是松本易夫的企畫名義、Noblemen 不是首作、Ottottrio 是「是方博邦」。審稿改 sd-098 7 處、sd-099 21 處（限量／重發雜項、後設句、單一出處「常被」、補盤名）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-098.json,review-sd-099.json,kv-before-sd-098.json,kv-before-sd-099.json}`、`desc-tools/batches/{cards,research,output}/sd-09[89]*`、onboarding manifest 46 處。
+- **驗證**：`kv-token-check` exit 0；desc2 53 鍵 bulk put Success；回讀 53/53 一致；`front-check` 前台 53/53 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s47：sd-088、sd-089 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-088 上線 30（Slint、Slovenly、Smuv／mt. fujitive、Snapcase 3、Social Tension、SOIL&"PIMP"SESSIONS、Sonia Rosa、Sonny Fortune、Sonny Rollins、Soul-Junk、Soulive、Sounds From the Ground、Spirit of Love、Spirogyra、SME、St. Christopher、Stan Forebee、Sulzmann、Stan Tracey、Cowell、Turrentine 4、State Azure、Di Battista、Stefon Harris、Lacy／Smith）；sd-089 上線 30（Stewart Walker、Stjepko Gut、sToa、Stone、Strapping Fieldhands、Stray Kids 2、Huchard、Subsonic Eye、Suduaya 2、Sugar Loaf Express、Sugar Minott、Sun Electric、Sunburst、Sunny Murray、Suzukiski、Sweeps、SwuM.、Sync24、Tellier、Sīpoli、T.S. Monk 3、Ta-ku 5）。Snapcase 卡帶、Suzukiski、Sweeps、SwuM.、Stjepko Gut 等照 delayde 前例薄寫上線。
+- **主線補查**：Lacy／Smith《Sidelines》（Jorrit Dijkstra〈Existence〉研究文、AllMusic）、Suzukiski《Kamakura》（Zero Gravity 廠牌第一號）。審稿改 sd-088 20 處（單一出處「常被視為」降級、補《盤名》壓字數、Rollins 把 Cranshaw 與 Mtume 混成一人）、sd-089 13 處（補《盤名》、Monk Institute 年份不寫、空格），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-088.json,review-sd-089.json,kv-before-sd-088.json,kv-before-sd-089.json}`、`desc-tools/batches/{cards,research,output}/sd-08[89]*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 88 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s50：sd-094、sd-095 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-094 上線 30（This Heat、Tho-So-Aa、Thomas Köner、Thắng、Thủy Triều Đỏ、Tim Hagans 4、Titiek Puspa、Todd Terry、Tom Rainey、Tommy Smith、Tony Tuff、Tony Williams 2、Tosca、Travelling Day、Triston Palma 3、Trovante、Tuscadero、Twisted Science、Tånk、U-Street All Stars、Ulrich Schnauss 2、Ultima Thule、Uncle Charlie Osborne）；sd-095 上線 30（Voerkel／Frey／Lovens、Us3、Ponomarev、Valet、Shotguns 3、Chichadélicas、Groove Club 2、Music for Dancefloors、Thai Beat、Crying Princess、Trường Sơn 4、Wounds of Love、Zendooni、Vehicle Flips、Venetian Snares、Vince Staples、Vision of Disorder、Vitamiin、Void Stasis、Voivod、Volcano the Bear、Walter Bishop Jr.、Warzone 2、wave to earth、Wayne Davis、Wha-ha-ha）。Titiek Puspa、Thủy Triều Đỏ、Tånk、Trường Sơn 4、Vitamiin 等 12 張照 delayde 前例薄寫上線。
+- **主線補查**（Discogs API 為主，WebSearch 4 次）：Todd Terry《Works》確認是 Torso 化名作品合輯、Ultima Thule 芬蘭發行與歌唱革命註記、Wha-ha-ha 1981 現場與雙轉速、Vitamiin 塔林電台錄音、Ponomarev Van Gelder 錄音等 17 張。派工特注錯 6 處已更正（U-Street All Stars 芬蘭團、Uncle Charlie Osborne 與 Osborne Brothers 無關、Tosca 廠牌、Crying Princess 廠牌、Music for Dancefloors 編者、Groove Club 與 Parallel World 無關）。審稿 sd-094 改 12 處、sd-095 改 55 處（多為第二句補長盤名後壓字數；《Zendooni》裁定只寫主標）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-094.json,review-sd-095.json,kv-before-sd-094.json,kv-before-sd-095.json}`、`desc-tools/batches/{cards,research,output}/sd-09[45]*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
 
 - **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。
