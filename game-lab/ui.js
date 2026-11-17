@@ -1873,6 +1873,35 @@
     setTimeout(tick, 120 / speed());
     return t;
   }
+  // 經驗跳數字（第 C 波 SPEC-C §4.1，戰利品列的音符飛進頂上）：錢那條下面一顆小條「+2 經驗 3/5」，數字從舊的跳到新的（每跳一下「啵」一次比一次高）；
+  //   o＝{gain, from, to, need, up}（ui onDuelEnd xpInfo；升級那場跳到滿）。減少動態＝直接寫新的
+  function xpRise(o) {
+    if (!o || !(o.gain > 0)) return null;
+    qsa('.lb-toast.xp', app()).forEach(function (x) { x.remove(); });
+    var txt = function (n) { return TU('xp', { n: n, need: o.need }); };
+    var t = el('div', 'lb-toast xp keep', '<span class="ce">+' + (o.gain | 0) + '</span><b class="cv">' + esc(txt(o.from)) + '</b>');
+    t.setAttribute('role', 'status');
+    var prev = qsa('.lb-toast:not(.out):not(.xp)', app());
+    app().appendChild(t);
+    if (prev.length) { var ar = app().getBoundingClientRect(), y = 0; prev.forEach(function (x) { y = Math.max(y, x.getBoundingClientRect().bottom - ar.top); }); t.style.top = Math.round(y + 6) + 'px'; }
+    var cv = qs('.cv', t), from = o.from | 0, to = o.to | 0, steps = rm() ? 1 : Math.max(1, Math.min(6, to - from)), k = 0;
+    var tick = function () {
+      k++; cv.textContent = txt(k >= steps ? to : Math.round(from + (to - from) * k / steps));
+      sfx('pop', { k: Math.min(6, k + 1) });
+      if (k < steps) setTimeout(tick, 130 / speed()); else { t.classList.add('done'); setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 1600 / speed()); }
+    };
+    setTimeout(tick, 120 / speed());
+    return t;
+  }
+  // 這場的經驗（finishFight 之後）：{gain, from, to, need, up}；升級的那場＝從升級前的數跳到滿（接著升級面板）
+  function xpInfo(r, out) {
+    var T = (E.trialCfg ? E.trialCfg(C, r.tier) : C.trial) || {}, g = ((T.xp || {})[out.cls]) | 0, need = T.levelNeed | 0, ups = out.levelUps | 0;
+    if (!(g > 0)) return null;
+    if (!ups) return { gain: g, from: Math.max(0, (r.xp | 0) - g), to: r.xp | 0, need: (r.level | 0) + need };
+    var L0 = (r.level | 0) - ups, tot = r.xp | 0;
+    for (var l = L0; l < (r.level | 0); l++) tot += l + need;
+    return { gain: g, from: Math.max(0, tot - g), to: L0 + need, need: L0 + need, up: true };
+  }
   function effectsText(effects) {
     var out = [];
     (effects || []).forEach(function (f) {
@@ -2633,7 +2662,7 @@
     var wasTut = r.tut === true, firstBoss = !r.aceWon;   // engine 打倒藏家才設 run.aceWon（這一趟第一次）
     // 這場紀錄（11-17）：打完存一份進 run（結算、領獎、說情那段的頂欄「紀錄」看得到；重新整理也在；下一場打完換掉）。序章／教學不存
     if (!inPrologue(r) && !wasTut) { try { r.lastFight = fightRecap(duel); } catch (e) { console.error(e); r.lastFight = null; } }
-    var out = null;
+    var out = null, dry0 = r.chestDry | 0;              // 第 C 波：寶箱保底計數（打之前；保底那箱掀蓋前老闆提醒，SPEC-C §4.2）
     try { out = E.finishFight(r, C, duel); } catch (e) { console.error(e); }
     if (!out || out.error) { console.error('finishFight', out && out.error); persist(); return go(r.over ? 'end' : 'night'); }
     if (wasTut && out.win) save.tutorialDone = true;     // 教學那場打贏（含教學步驟中 KO）：B-tut-done-not-persisted
@@ -2642,9 +2671,19 @@
     var aceNew = false;
     // 新章：解鎖制的 run 照引擎 out.aceNew（開局時還沒擁有＝真的多一張；試做卡在挑王牌面板看過也算新）；舊的 run 照舊看唱片櫃有沒有這張
     if (out.aceWon) { aceNew = out.aceNew != null ? !!out.aceNew && !isOwned(out.aceWon) : !save.shelf[out.aceWon]; shelfOwn(out.aceWon, 'boss'); gotCard(r, out.aceWon); }   // 打倒藏家：他的王牌收進唱片櫃、算擁有（src 'boss'；頂點卡只展示，不能當種子）（裁定 5；每輪都送，「收了」只算一次）
+    // 第 C 波（SPEC-C §4.1、§4.2）：戰利品列／寶箱（pending reward 有 kind）。寶箱保底計數寫回存檔（跨趟；CONTRACT §2 chestDry）
+    var lootP = out.offer && out.offer.type === 'reward' && out.offer.kind && !out.offer.prologue ? out.offer : null;
+    if (lootP && lootP.kind === 'chest' && typeof r.chestDry === 'number') save.chestDry = r.chestDry;
     persist();
     // 錢跳數字入帳＋錢幣聲（第 A 波 4，取代 1.9 秒的「+$…」吐司）：下一個畫面（領獎／藏家那段）掛好才出；聲望 +3 照舊一顆吐司（審查 #0）
-    if (out.earn > 0) cashAfter(r.money - out.earn, r.money);
+    //   第 C 波：紅包、踢館帖那筆 finishFight 已經入帳（out.packetCash／dareCash）：起點扣回來（CRITIQUE 1.9b），那一段在戰利品列／寶箱再演；
+    //   戰利品列的酬勞也在面板裡「錢袋飛進頂上」那一下才跳（loot.js，1.35 秒）
+    var pkC = out.packetCash | 0, dareC = out.dareCash | 0;
+    if (lootP && W.DipLabLoot && UI.lootOk) {
+      UI.lootOut = { p: lootP, earn: out.earn | 0, packetCash: pkC, dareCash: dareC, money: r.money | 0, xp: lootP.kind === 'loot' ? xpInfo(r, out) : null,
+        pity: lootP.kind === 'chest' && (lootP.apexSlot || []).length > 0 && dry0 >= (((E.wcCfg ? E.wcCfg(C) : {}).chest || {}).pity | 0) };
+      if (lootP.kind === 'chest' && out.earn > 0) cashAfter(r.money - out.earn - dareC, r.money - dareC);
+    } else if (out.earn > 0) cashAfter(r.money - out.earn - pkC - dareC, r.money);
     if (out.heal > 0) toastAfter(TU('heal', { n: out.heal }), 'gold');
     // 差一點摘要（第 A 波 4）：輸了記下他剩幾聲望、第幾手被翻盤（結算畫面用；說情再打贏就換掉）
     if (!out.win && !inPrologue(r)) r.lastLoss = lossInfo(duel); else if (out.win) r.lastLoss = null;
@@ -2913,8 +2952,10 @@
     var said = fromDuel || !!(UI.params && UI.params.said) || p.cls === 'boss';
     if (!said && lose.length) later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
     var cards = (p.cards || []).map(card).filter(Boolean), relics = (p.relics || []).filter(relicOf);
-    var dropping = p.type === 'reward' && cards.length && !p.cardDone;      // 掉落旁白：他早一點轉身走，地上那張盤才看得到
-    later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, dropping ? 900 : 1700);
+    // 第 C 波（SPEC-C §4.1、§4.2）：pending 有 kind＝戰利品列（loot）／寶箱（chest），交給 loot.js 演；沒有 kind＝升版前存的舊形狀，照舊路
+    var LT = p.type === 'reward' && p.kind && W.DipLabLoot && UI.lootOk ? W.DipLabLoot : null;
+    var dropping = !LT && p.type === 'reward' && cards.length && !p.cardDone;      // 掉落旁白：他早一點轉身走，地上那張盤才看得到
+    later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, LT ? 300 : dropping ? 900 : 1700);   // 戰利品列：0 秒他就轉身走（字幕同時出）
     var busy = false;
     // 面板（配件滿按「算了」回來時重畫這一張：sheet() 開新面板會把它拿掉；RT-1）
     function showSheet() {
@@ -2930,12 +2971,7 @@
           '<button type="button" class="lb-btn" data-a="skip">都不要</button></div>'
           : '<div class="foot"><button type="button" class="lb-btn wide" data-a="skip">' + (cards.length || relics.length ? '都不要' : '繼續') + '</button></div>');
       var s = sheet(html, 'reward');
-      // 面板量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）：收這張的鈕不被底下那條蓋住
-      var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
-      var needR = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
-      if (vh - 32 - needR < 210) cam('strip', 'reward', 600);       // 放不下整間店：收成對決那條（你和他都還在畫面裡），不要把店縮成一小塊
-      else cam('reward', 'reward', 600, needR);
-      s._armUntil = now() + 620 / speed();                            // 鏡頭收完、鈕停在最後的位置才收點擊（RT-13）
+      fitRewardSheet(s);
       s.addEventListener('click', function (e) {
         if (busy) return;
         var pk = e.target.closest && e.target.closest('[data-pick]');
@@ -2956,7 +2992,7 @@
       clearDrop();                                                          // 地上那張（掉落旁白）收掉
       if (res && res.effects) toast(effectsText(res.effects), 'keep');      // 接著 300 ms 換畫面：留到時間到（審查 #0）
       var rr = save.run;
-      if (rr.pending && rr.pending.type === 'reward') { busy = false; if (UI.screen === 'reward') showSheet(); return; }   // 還沒選完（配件滿了按「算了」）：挑唱片的面板放回來
+      if (rr.pending && rr.pending.type === 'reward') { busy = false; if (UI.screen === 'reward') { if (LT) LT.redraw(); else showSheet(); } return; }   // 還沒選完（配件滿了按「算了」）：挑唱片的面板放回來
       if (rr.pending && rr.pending.type === 'level') return later(levelNext, 300);
       if (rr.over) { recordRun(rr); return later(function () { go('end'); }, 300); }
       later(function () { go('night'); }, 300);
@@ -2973,10 +3009,24 @@
       });
     };
     if (p.type === 'level') { later(levelNext, 300); return; }
+    // 戰利品列／寶箱（loot.js）：剛打完才有 out（onDuelEnd 的 UI.lootOut：錢、經驗、紅包、踢館帖、保底）；重新整理回來＝null（同一列直接翻開、不再演錢）
+    if (LT) {
+      var lo = UI.lootOut && UI.lootOut.p === p ? UI.lootOut : null; UI.lootOut = null;
+      try { LT[p.kind === 'chest' ? 'chestFlow' : 'lootFlow']({ p: p, out: lo, finish: finish }); } catch (e) { console.error(e); showSheet(); }
+      return;
+    }
     // 掉落旁白（店主 11-13 §0、§1 裁定 7）：有能收的唱片才念「對方似乎掉落了什麼……」，他站的地方留一張平躺的唱片（照序章收尾 E4）；念完才開挑唱片的面板
     if (dropping) return dropNarration(cards, showSheet);
     showSheet();
   };
+  // 領獎面板（舊的挑唱片、戰利品列、寶箱）：面板量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）：收這張的鈕不被底下那條蓋住
+  function fitRewardSheet(s) {
+    var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+    var needR = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
+    if (vh - 32 - needR < 210) cam('strip', 'reward', 600);       // 放不下整間店：收成對決那條（你和他都還在畫面裡），不要把店縮成一小塊
+    else cam('reward', 'reward', 600, needR);
+    s._armUntil = now() + 620 / speed();                            // 鏡頭收完、鈕停在最後的位置才收點擊（RT-13）
+  }
   // 掉落旁白：對白框（旁白）念 C.script.drop，點一下或時間到才往下；面板收掉時地上的唱片一起收（finish → clearDrop）
   function dropNarration(cards, then) {
     var beats = (C.script && C.script.drop) || [];
@@ -4373,7 +4423,46 @@
     return W.DipLabStage.mount(UI.stageHost, {
       shop: 'dip', cards: C.cards, coverBase: './', sprites: labSpr(), player: function () { return save && save.player ? playerAv() : { head: 'neat' }; },
       camera: 'full', screen: 'title', speed: speed, onAction: onStageAction
-    }).then(function (st) { UI.stage = st; st.onAction = onStageAction; configTut(); configEcon(); return st; }, function (e) { console.error(e); UI.stageHost.classList.add('nostage'); configEcon(); return null; });
+    }).then(function (st) { UI.stage = st; st.onAction = onStageAction; configTut(); configEcon(); configLoot(); return st; }, function (e) { console.error(e); UI.stageHost.classList.add('nostage'); configEcon(); configLoot(); return null; });
+  }
+  // 戰利品列＋寶箱（loot.js，第 C 波 SPEC-C §4.1、§4.2）：交易一律走 doChoose（take／relic／skip），面板、鏡頭、錢跳數字用這裡的
+  function configLoot() {
+    var X = W.DipLabLoot; if (!X || typeof X.configure !== 'function' || UI.lootOk) return;
+    var rectAt = function (x, y) { return { left: x - 20, top: y - 20, width: 40, height: 40 }; };
+    try {
+      X.configure({ content: C, engine: E,
+        run: function () { return save.run; },
+        alive: function () { return UI.screen === 'reward' && !!save.run; },
+        // 面板頂邊的演出層（字幕、錢袋、音符）：掛在 #app、top 釘在舞台下緣（舞台 z 3 壓過面板；鏡頭收放時跟著走），換畫面 cleanup 收掉
+        overlay: function (node) {
+          app().appendChild(node); UI.decor.push(node);
+          var put = function () { if (!node.isConnected) return; var sh = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(); node.style.top = Math.round(sh.bottom - ar.top) + 'px'; };
+          put(); if (W.ResizeObserver) { var ro = new ResizeObserver(put); ro.observe(UI.stageHost); UI.offs.push(function () { ro.disconnect(); }); }
+          return node;
+        },
+        sheet: function (html, cls) { return sheet(html, cls); },
+        fit: fitRewardSheet,
+        after: function (fn, ms) { var t = setTimeout(fn, Math.max(0, ms | 0)); UI.timers.push(t); return t; },   // 換畫面 cleanup 清掉；ms 由 loot.js 自己照速度算
+        sfx: function (n, o) { sfx(n, o); },
+        say: function (id, t, ms) { stageSay(id, t, id === 'o' ? 'owner' : null, ms); },
+        emote: function (id, k, ms) { stg('emote', id, k, ms); },
+        toast: toast, cashRise: cashRise, cashAfter: cashAfter, xpRise: xpRise,
+        coverHTML: function (c, o) { return coverHTML(c, o); }, starsHTML: function (c, o) { return starsHTML(c, o); }, relicButtonsHTML: relicButtonsHTML,
+        bagText: bagText, rewardNote: function () { return SU('rewardNote'); },
+        bagGain: function (id) { try { return E.bagGain ? E.bagGain(save.run, C, id) : 0; } catch (e) { return 0; } },
+        take: takeCard, relic: takeRelic, skip: function () { return doChoose({ type: 'skip' }); },
+        shelfAdd: shelfAdd, shelfHas: function (id) { return !!(save.shelf && save.shelf[id]); },
+        seen: function (k) { return !!(save.seen && save.seen[k]); }, markSeen: function (k) { if (!save.seen) save.seen = {}; save.seen[k] = true; persist(); },
+        fly: function (c, from, to) { return flyCover(c, from, to, 0).done; },
+        wallRect: function () { var r = UI.stageHost.getBoundingClientRect(); return rectAt(r.left + r.width / 2, r.top + Math.min(40, r.height / 4)); },
+        bagRect: function () { var a = app().getBoundingClientRect(); return rectAt(a.left + a.width / 2, a.bottom - 30); },
+        topRect: function () { var a = app().getBoundingClientRect(); return { left: a.left + a.width / 2 - 40, top: a.top + 40, width: 80, height: 26 }; },
+        auto: autoAct, policy: function () { return E.runPolicy(save.run, C); },
+        anim: function () { return { fast: !!(save.settings && save.settings.fastAnim), k: FAST ? 4 : 1, rm: rm() }; },
+        floor: function (id) { var c = card(id); if (!c) return; stg('floorRecord', 'duelE', { attr: E.topAttr(c) }); UI.dropFloor = true; }
+      });
+      UI.lootOk = true;
+    } catch (e) { console.error(e); }
   }
   // 經濟介面（econ.js，B3；§2.5.2）：舞台好了、第一個畫面之前接上一次
   function configEcon() {

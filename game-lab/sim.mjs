@@ -37,6 +37,16 @@
 //            bare＝最像 ../curve V3 模擬（curvesim.cjs）：不打序章、包包＝老闆四張＋特價箱三張＋男子那張、整趟不換（不拿獎勵、不買、沒有配件）；
 //            cards／relics＝none 但只拿唱片／只拿配件（拆解用，要自己點）。每個流程都有升級（runPolicy）與每輪一次說情
 //   --gate   門檻看哪個流程（預設 smart＝真的玩法）　--set 改 engine CFG　--patch deep-merge 進 content（例：C.trial.curve 旋鈕）　--tier C.trial.tiers 第 k 階
+//   第 C 波（獎勵與店內攤位；scratchpad v5/wave-c SPEC-C §7）：content 的 C.waveC 全開＝預設就量 C 波（戰利品列、藏家寶箱、今天的攤位、中繼點開局選秀；客人補償 C.trial.guestHpSteps）。
+//            攤位、選秀、獎勵交給引擎 cPolicy（smart／none；bare 不逛攤位＝stallLeave，其他流程照 cPolicy）。新手保底（C.waveC.safety）要 newRun 給 safety 才有：預設不給（門檻照「沒保底」量）
+//   --wc '<json>'  deep-merge 進 C.waveC（例 --wc '{"stall":{"on":false}}' 拆解）。--wc off＝C 波全關（loot／chest／stall／safety 關＋C.trial.guestHpSteps []）＝現行對照，輸出跟 C 波之前逐字相同
+//              （JSON 只差 report.trial 多 guestHpSteps:[]）。--wc 先套、--patch 再蓋。C 波開著時多印三張表（printWC：錢、各件次數、每種站出現→被選），JSON 每格多 wcx、report 多 waveC
+//   --copt '<json>' cPolicy 選項：pickFirst、firstSide、dare 'auto'|'always'|'never'、dareHp、reserve（1e9＝永遠不買門票）、reroll、takeSell（bagScore 不漲的照收、下一位前拿去櫃檯賣）、boostFirst
+//   --safety   每一趟都有新手保底（第 1 位輸了免費重打；只印對照，門檻照不加量）
+//   --from N   從第 N 位中繼點開局（快速選秀；N 要是中繼點 10／20／30／50／75／100…）；--from-relics a,b,c＝身上配件。多印「中繼點開局」表（只印、不判 C1）
+//   --returning a,b,c  老玩家＝不打序章、帶這三件配件開局（建議 dustcover,stylus,boost_c）；D3 用它判
+//   --dbase <json>  現況對照（同 n、同旗標、--wc off 跑出來的 --json 檔）：D1（新帳號）／D3（--returning）照它判；沒給就只列參考
+//   深度＝run.pos（備份盤不上，沒有 run.far）
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
 //   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
 //   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
@@ -73,6 +83,13 @@
 //      真要拉 T3 是 boss 往下，但只調 boss −.20 新手過得了第 5 位（T2c 到第 10 位 39%），要連一般位一起看＝難度決定，給店主
 //   S5 序章男子（保留 v4 §5.2）：會讀的 ≥97%、平均 ≤4 手；只出最大星 ≥90%；新手（永遠剋提示）≥90%
 //   M6 最多 6 手（CFG.maxRounds）；HP 聲望單調 C.trial.guestHp 一般 ≤ 菁英 ≤ 藏家（不靠模擬）
+//   第 C 波（SPEC-C §8 定稿；C 波開著才檢查，上面 13 條照舊全看 C 波開著的 smart）：
+//   D1 C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點（--dbase 給同 n、同旗標的現況）　D2 新手 到第 10 位 ≤33%
+//   D3 老玩家不變難也不變簡單（--returning）：會讀的 到第 50 位在現況 ±4 點內　——D1–D3 n ≥ 4000 才判，更小只列參考（跟 T3 一樣）
+//   K1 選路有差：會讀的 每種站出現時被選 15–85%（出現 <50 次的站只列）　K2 踢館帖：smart 接帖率（接÷走到那站）20–80%；--copt '{"dare":"always"}' 時接帖那輪首戰勝率比平常少 ≤10 點（第 31 位起）
+//   K4 新手 到第 5 位 ≥75%　N1 會讀的 第 15 位起路上的盤重複 ≤10%、一趟新認識 ≥50 張
+//   （K1、K2 接帖率只在沒給 --copt 時判；--from 不判 K／N）
+//   參考（只印）：E1 會讀的花掉 ≥60%、E2 新手 ≥40%、E3 每輪開頭的錢中位 ≤ 現況 $41,350 的 60%、E4 演唱會 ≤ 基本樂歷 25%、路線 ≤40%、到第 100 位
 // 第一次跑（2026-11-12，--n 2000，171 秒）：smart 13/15，沒過的是 T2 會讀的中位 90（平均 103.9）、T5 會讀的 2.57 手。T1／T3–T7 的 SPEC 數字照用、不放寬。
 //   會讀的 深度中位／平均（新手）拆解：V3 12／15.8（6／6.6）→ bare 但放水唬人 0（--patch '{"trial":{"curve":{"mercyFeint":0}}}'）12／15.5（6／6.6，逐位對得上 V3）
 //   → bare 14／17.1（6／7.1；＋放水唬人）→ relics 18／21.7（8／8.6；＋序章、菁英、藏家給的配件）→ cards 61／67.2（15／14.8；＋客人丟的唱片）
@@ -153,7 +170,21 @@ const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === '
 const LOT_ARG = arg('lot', null);
 if (LOT_ARG != null && !['on', 'off'].includes(LOT_ARG)) { console.error('--lot on|off'); process.exit(2); }
 if (LOT_ARG) deepMerge(C, { lot: { on: LOT_ARG === 'on' } });
+// 第 C 波旗標（見檔頭）：--wc 先套（off＝全關＋客人補償關）、--patch 再蓋
+const WC_ARG = arg('wc', null);
+if (WC_ARG === 'off') deepMerge(C, { waveC: { loot: { on: false }, chest: { on: false }, stall: { on: false }, safety: { on: false } }, trial: { guestHpSteps: [] } });
+else if (WC_ARG) { C.waveC = C.waveC || {}; deepMerge(C.waveC, JSON.parse(WC_ARG)); }
 if (arg('patch', null)) deepMerge(C, JSON.parse(arg('patch')));
+const WCC = EN.wcCfg(C), WC_ON = !!(WCC.loot.on || WCC.chest.on || WCC.stall.on || WCC.safety.on);
+const COPT = JSON.parse(arg('copt', '{}')), COPT_SET = Object.keys(COPT).length > 0;
+const SAFETY = argv.includes('--safety');
+const FROM = arg('from', null) != null ? +arg('from') : null;
+if (FROM != null && !(Number.isInteger(FROM) && FROM > 1 && EN.isCheckpoint(FROM, C))) { console.error('--from N（N 要是中繼點：' + [10, 20, 30, 50, 75, 100].join('／') + '…）'); process.exit(2); }
+const FROM_RELICS = (arg('from-relics', '') || '').split(',').filter(Boolean);
+const RET_RELICS = arg('returning', null) ? arg('returning').split(',').filter(Boolean) : null;
+for (const id of FROM_RELICS.concat(RET_RELICS || [])) if (!(C.relics || {})[id]) { console.error('沒有配件 ' + id); process.exit(2); }
+if ((FROM || SAFETY || COPT_SET) && !WC_ON) { console.error('--from／--safety／--copt 要 C 波開著（不要 --wc off）'); process.exit(2); }
+const DBASE = arg('dbase', null) ? JSON.parse(fs.readFileSync(arg('dbase'), 'utf8')) : null;
 const LOT_ON = !!EN.lotCfg(C).on;
 const BROWSE = +arg('browse', 16);
 if (!(Number.isInteger(BROWSE) && BROWSE >= 1)) { console.error('--browse k（1–16 的整數；16＝全看）'); process.exit(2); }
@@ -303,7 +334,11 @@ function runOnce(pol, flow, i, A) {
   if (UNLOCK) Object.assign(o0, { unlocked: [], start: o0.ace }, APEX ? { apexOwned: APEX_ACE ? [APEX_ACE] : [] } : {});   // --unlock：新玩家（只解鎖這一派）
   if (WANT_N) o0.want = wantFor(i);
   if (SEEDS) { o0.prologue = false; o0.seeds = seedsFor(i); }           // 種子只在不打序章的那一趟有效
+  if (SAFETY) o0.safety = true;                                         // 第 C 波：新手保底（只印對照）
+  if (FROM) { o0.from = FROM; o0.prologue = false; o0.relics = FROM_RELICS.slice(); }   // 中繼點開局（快速選秀）
+  if (RET_RELICS) { o0.prologue = false; o0.relics = RET_RELICS.slice(); }   // 老玩家：不打序章、帶 3 件配件
   const run = EN.newRun(C, o0);
+  const RM = [], CW = A.cw || null; let rmSeen = 0;                       // 第 C 波：每輪開頭（攤位之前）的錢；踢館帖那輪首戰
   const LS = A.lt || null, WS = A.wt || null, wantSet = WS ? new Set(run.want) : null;
   let lotRef = null, lotRec = null, shelfPos = 0;
   const closeLot = () => { if (LS && lotRec) { LS.rounds.push({ no: lotRec.no, seen: lotRec.seen.size, seenF: lotRec.seenF.size, guests: lotRec.guests }); } lotRec = null; };
@@ -314,6 +349,7 @@ function runOnce(pol, flow, i, A) {
   for (let guard = 0; ; guard++) {
     if (guard > 40 * CAP + 400) throw new Error('runaway run ' + seedKey + ' ' + pol + ' ' + flow);
     if (run.over) break;
+    if (CW && run.pos > 1 && (run.pos - 1) % 5 === 0 && rmSeen < run.pos && !run.duel) { rmSeen = run.pos; RM.push({ pos: run.pos, m: run.money }); }   // 每輪開頭（攤位之前）的錢
     if (!run.pending && !run.duel && run.pos > CAP) { cens = true; break; }
     if (EN.canBargainPick(run) && !run.pending) {
       const ch = EN.bargainPolicy(run, C); ok(EN.choose(run, C, ch), 'bargainPick', ch);
@@ -321,8 +357,12 @@ function runOnce(pol, flow, i, A) {
       continue;
     }
     const step = EN.nextStep(run);
+    if (step === 'stall' || step === 'draft') {                         // 第 C 波：今天的攤位、中繼點開局選秀（bare 不逛攤位）
+      const ch = step === 'stall' && flow === 'bare' && run.pending.pick == null ? { type: 'stallLeave' } : EN.cPolicy(run, C, COPT);   // bare 先不逛（剩下錄音室照帶過）
+      ok(EN.choose(run, C, ch), 'cPolicy ' + step, ch); continue;
+    }
     if (step === 'reward') {
-      let ch = flow === 'bare' ? { type: 'skip' } : EN.runPolicy(run, C);
+      let ch = flow === 'bare' ? { type: 'skip' } : (flow === 'smart' || flow === 'none') ? EN.cPolicy(run, C, COPT) : EN.runPolicy(run, C);
       const p = run.pending;
       if (flow === 'cards' && ch.type === 'relic') ch = !p.cardDone && p.cards.length ? EN.runPolicy(run, C, { preferRelic: false }) : { type: 'skip' };
       if (flow === 'cards' && ch.type === 'relic') ch = { type: 'skip' };
@@ -391,8 +431,10 @@ function runOnce(pol, flow, i, A) {
       }
       EP.mercyN += duel._mN | 0; EP.mercyOn += duel._mOn | 0;
     }
+    const dareNow = !prologue && !!(run.dare && run.dare.round === run.round);
     const res = EN.finishFight(run, C);
     if (prologue) { manTries++; continue; }
+    if (CW && att === 0 && d >= 31) { const k = dareNow ? 'dare' : 'plain'; CW[k].f++; if (res.win) CW[k].w++; }   // K2：接帖那輪首戰 vs 平常（踢館帖第 30 位後才出）
     maxHands = Math.max(maxHands, hands);
     A.att[d]++; A.hands[d] += hands; if (hands >= CFG.maxRounds) A.r6[d]++;
     if (by === 'rounds') A.bar[d]++; else if (by === 'hp') A.ko[d]++;
@@ -425,6 +467,7 @@ function runOnce(pol, flow, i, A) {
     earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
     bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent,
     bagN: run.bag.length, bagMaxN: Math.max(bagMaxN, run.bag.length), sold: S.sold.length,
+    ...(CW ? { wc: S.c || {}, lexp: sum.lexp || {}, rm: RM, road: (run.road || []).length, drops: (run.drops || []).length, from: sum.from || 1 } : {}),
     ...(UNLOCK ? { aces: (run.acesWon || []).length, unlocks: (run.acesWon || []).filter(id => !(run.unlock.tiers || []).includes(EN.tierOfApex(C, id))).length,
     trialAces: (run.acesWon || []).filter(id => !Object.values(C.aces).includes(id)).length } : {}) };
 }
@@ -448,6 +491,7 @@ function runCell(pol, flow, n) {
     A.lt = { runs: 0, rounds: [], shelf: [], good: [], good1: [], goodOpen: [], bag10: [], bag20: [], buy: 0, buyF: 0, rar: Object.fromEntries(SHELF_RAR.map(r => [r, 0])) };
     if (WANT_N) A.wt = { runs: 0, l1: { lots: 0, in: 0, elig: 0, inElig: 0 }, l2: { lots: 0, in: 0, elig: 0, inElig: 0 }, onShelf: 0, bought: 0 };
   }
+  if (WC_ON) A.cw = { dare: { f: 0, w: 0 }, plain: { f: 0, w: 0 } };   // 第 C 波（全關不記、JSON 不多欄位）
   const recs = [];
   for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
@@ -491,6 +535,9 @@ function runCell(pol, flow, n) {
     ...(apexStats ? { apex: apexStats } : {}),
     ...(A.lt ? { lot: lotStats(A.lt, n) } : {}),
     ...(A.wt ? { want: wantStats(A.wt, n) } : {}),
+    ...(A.cw ? { wcx: wcStatsOf(recs, A.cw, n) } : {}),
+    ...(FROM ? { cp: { from: FROM, reach10: share(recs, r => r.end >= FROM + 10), reach5: share(recs, r => r.end >= FROM + 5), first: A.reached[FROM] ? A.deaths[FROM] / A.reached[FROM] : null,
+      median: q(ends, 0.5), p25: q(ends, 0.25), p75: q(ends, 0.75), mean: avg('end') } } : {}),
     ...(UNLOCK ? { unlock: { aces: avg('aces'), unlocks: avg('unlocks'), trialAces: avg('trialAces'),          // --unlock：每趟收幾張、解鎖幾派、收到第 k 張的趟（%）
       atLeast: [1, 2, 3, 4].map(k => share(recs, r => r.aces >= k)), unlock2: share(recs, r => r.unlocks >= 1), unlock3: share(recs, r => r.unlocks >= 2) } } : {}),
     perHand: Object.fromEntries(PH_SEGS.map(k => { const H = A.ph[k], f = x => (H.n ? x / H.n : null); return [k, { n: H.n, counter: f(H.counter), countered: f(H.countered),
@@ -516,6 +563,45 @@ function lotStats(L, n) {
 function wantStats(W, n) {
   const one = x => ({ lots: x.lots, perLot: x.lots ? x.in / x.lots : null, perCard: x.lots ? x.in / (x.lots * WANT_N) : null, eligPerLot: x.lots ? x.elig / x.lots : null, perElig: x.elig ? x.inElig / x.elig : null });
   return { N: WANT_N, l1: one(W.l1), l2: one(W.l2), onShelf: W.onShelf / n, bought: W.bought / n };
+}
+
+// 第 C 波統計（每趟平均；SPEC-C §7.3）：run.stats.c 各計數、錢的入出（income／spend 分項）、樂歷記帳（基本＝engine lexpBase：15×實際打過的位數＋8×最多連贏）、
+//   每輪開頭的錢（攤位之前）、每種站出現→被選、踢館帖那輪首戰 vs 平常（第 31 位起）、新認識（路上的盤＋客人掉落）
+const WC_KEYS = ['loot', 'lootTake', 'lootSkip', 'lootRelic', 'gold', 'goldTake', 'packet', 'packetCash', 'packetLexp', 'chest', 'chestTake', 'chestRelic', 'chestSkip', 'chestGold', 'chestApex', 'chestGoldTake',
+  'sess', 'cpSess', 'leave', 'snackHp', 'tickets', 'digTake', 'digSkip', 'rerolls', 'tradeBuy', 'gearBuy', 'marketBuy', 'bags', 'consign', 'consignGot', 'dareOffer', 'dareAccept', 'dareTough', 'dareTank', 'dareWon', 'safety', 'r15', 'r15d'];
+const WC_KINDS = ['dig', 'trade', 'gear', 'snack', 'gig', 'promo', 'fortune', 'consign', 'home', 'dare', 'warehouse'];
+function wcStatsOf(recs, CW, n) {
+  const avg = f => recs.reduce((s, r) => s + (f(r) || 0), 0) / n;
+  const sumK = f => { const o = {}; for (const r of recs) { const x = f(r) || {}; for (const k of Object.keys(x)) if (typeof x[k] === 'number') o[k] = (o[k] || 0) + x[k]; } for (const k of Object.keys(o)) o[k] /= n; return o; };
+  const W = r => r.wc || {};
+  const lexpAll = sumK(r => r.lexp), base = lexpAll.base || 0, lexp = Object.assign({}, lexpAll); delete lexp.base;
+  const lexpRoute = Object.values(lexp).reduce((s, x) => s + x, 0);
+  const rmAll = recs.flatMap(r => r.rm.map(x => x.m)), rmMed = rmAll.length ? q(rmAll, 0.5) : null;
+  const rmMean = rmAll.length ? rmAll.reduce((s, x) => s + x, 0) / rmAll.length : null;
+  const off = sumK(r => W(r).offered), pk = sumK(r => W(r).picked);
+  const pick = {}; for (const k of Object.keys(off)) pick[k] = { offered: off[k] * n, picked: (pk[k] || 0) * n, rate: off[k] ? (pk[k] || 0) / off[k] : null };
+  const k = {}; for (const x of WC_KEYS) k[x] = avg(r => W(r)[x]);
+  const earned = avg(r => r.earned), spent = avg(r => r.spent);
+  return { k, spend: sumK(r => W(r).spend), income: sumK(r => W(r).income), lexp, lexpRoute, lexpBase: base, gigShare: base ? (lexp.gig || 0) / base : null, routeShare: base ? lexpRoute / base : null,
+    rmMed, rmMean, pick, dare: CW ? { f: CW.dare.f, w1: CW.dare.f ? CW.dare.w / CW.dare.f : null, pf: CW.plain.f, pw1: CW.plain.f ? CW.plain.w / CW.plain.f : null } : null,
+    dareRate: pick.dare && pick.dare.picked ? (k.dareAccept * n) / pick.dare.picked : null,
+    r15dup: k.r15 ? k.r15d / k.r15 : null, known: avg(r => r.road + r.drops), spentShare: earned ? spent / earned : null };
+}
+function printWC(rows) {
+  const f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en'), f1 = x => x == null ? '—' : x.toFixed(1);
+  const w = WCC, on = x => x ? '開' : '關';
+  console.log(`\n### 第 C 波（每趟平均；戰利品列 ${on(w.loot.on)}、寶箱 ${on(w.chest.on)}、攤位 ${on(w.stall.on)}、客人補償 ${JSON.stringify(EN.trialCfg(C, TIER).guestHpSteps || [])}${SAFETY ? '、新手保底（--safety）' : ''}${COPT_SET ? '、cPolicy ' + JSON.stringify(COPT) : ''}${RET_RELICS ? '、老玩家 ' + RET_RELICS.join(',') : ''}${FROM ? '、從第 ' + FROM + ' 位開局' : ''}）\n`);
+  console.log('| 策略 | 流程 | 賺／花（花掉%） | 每輪開頭的錢 中位／平均 | 花在：門票／唱片(調貨＋市集)／配件／重翻／福袋 | 多的收入：不收／紅包／先不逛／踢館帖／出清 | 樂歷：基本／路線（演唱會／店裡唱盤／公關片／紅包／錄 demo）／占比 演唱會·路線 |');
+  console.log('|---|---|---|---|---|---|---|');
+  for (const x of rows) { const W = x.wcx; if (!W) continue; const sp = W.spend, inc = W.income, l = W.lexp;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f0(x.end.earned)}／${f0(x.end.spent)}（${pct(W.spentShare)}） | ${f0(W.rmMed)}／${f0(W.rmMean)} | ${f0(sp.gig)}／${f0((sp.trade || 0) + (sp.market || 0))}／${f0(sp.gear)}／${f0(sp.reroll)}／${f0(sp.bag)} | ${f0(inc.skip)}／${f0(inc.packet)}／${f0(inc.leave)}／${f0(inc.dare)}／${f0(inc.sell)} | ${f0(W.lexpBase)}／${f0(W.lexpRoute)}（${f0(l.gig)}／${f0(l.home)}／${f0(l.promo)}／${f0(l.packet)}／${f0(l.demo)}）／${pct(W.gigShare)}·${pct(W.routeShare)} |`); }
+  console.log('\n| 策略 | 流程 | 戰利品列 次／收／不收／配件；金邊 出／收；紅包 錢／樂歷 | 寶箱 次／收／配件／不收；有金邊／鎮店盤格；收金邊 | 攤位 次（中繼點）／先不逛；宵夜回聲望；門票張；挖寶 收／不收／重翻；調貨買／器材買／市集買／福袋；寄賣 放／領 | 踢館帖 出現／接（狠／耐）／撐完；接帖率；接帖那輪首戰 vs 平常（第 31 位起） | 新手保底用 | 路上的盤 第 15 位起 張／重複；新認識 |');
+  console.log('|---|---|---|---|---|---|---|---|');
+  for (const x of rows) { const W = x.wcx; if (!W) continue; const k = W.k, d = W.dare;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f1(k.loot)}／${f1(k.lootTake)}／${f1(k.lootSkip)}／${f2(k.lootRelic)}；${f2(k.gold)}／${f2(k.goldTake)}；${f2(k.packetCash)}／${f2(k.packetLexp)} | ${f1(k.chest)}／${f2(k.chestTake)}／${f2(k.chestRelic)}／${f2(k.chestSkip)}；${f2(k.chestGold)}／${f2(k.chestApex)}；${f2(k.chestGoldTake)} | ${f1(k.sess)}（${f2(k.cpSess)}）／${f2(k.leave)}；${f1(k.snackHp)}；${f1(k.tickets)}；${f2(k.digTake)}／${f2(k.digSkip)}／${f2(k.rerolls)}；${f2(k.tradeBuy)}／${f2(k.gearBuy)}／${f2(k.marketBuy)}／${f2(k.bags)}；${f2(k.consign)}／${f2(k.consignGot)} | ${f2(k.dareOffer)}／${f2(k.dareAccept)}（${f2(k.dareTough)}／${f2(k.dareTank)}）／${f2(k.dareWon)}；${pct(W.dareRate)}；${d && d.f ? pct(d.w1) : '—'}（${d ? d.f : 0} 場）vs ${d && d.pf ? pct(d.pw1) : '—'} | ${f2(k.safety)} | ${f1(k.r15)}／${pct(W.r15dup)}；${f1(W.known)} |`); }
+  console.log('\n| 策略 | 流程 | 每種站：出現次數（每趟）→被選（%） ' + WC_KINDS.map(k => (C.waveC && C.waveC.stations && C.waveC.stations[k]) || k).join('／') + ' |');
+  console.log('|---|---|---|');
+  for (const x of rows) { const W = x.wcx; if (!W) continue; const P = W.pick; console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ` + WC_KINDS.map(k => P[k] ? f2(P[k].offered / x.n) + '→' + pct(P[k].rate) : '—').join('／') + ' |'); }
 }
 
 // ---------------- S5：序章男子（新包包 7 張＝禮物 4＋特價箱三色各一，沒有配件；你 12 聲望） ----------------
@@ -546,6 +632,17 @@ if (LOT_ON) report.lot = EN.lotCfg(C);                                   // 第 
 if (BROWSE < 16) report.browse = BROWSE;
 if (SEEDS) report.seeds = Object.assign({}, SEEDS, { example: seedsFor(0) });
 if (WANT_N) report.want = WANT_N;
+if (WC_ON) report.waveC = WCC;                                             // 第 C 波：開著才多這些鍵（--wc off 時 JSON 跟 C 波之前一樣，只差 trial.guestHpSteps）
+if (COPT_SET) report.copt = COPT;
+if (SAFETY) report.safety = true;
+if (FROM) report.from = { n: FROM, relics: FROM_RELICS };
+if (RET_RELICS) report.returning = RET_RELICS;
+if (RET_RELICS) console.log('\n老玩家（--returning）：不打序章、帶 ' + RET_RELICS.join('、') + ' 開局');
+if (FROM) console.log('\n中繼點開局（--from ' + FROM + '）：快速選秀（撿盤 ' + EN.draftPlan(C, FROM).k + ' 次二選一、升級 ' + EN.draftPlan(C, FROM).m + ' 次三選一）→ 特價箱 → 從第 ' + FROM + ' 位開打；配件 ' + (FROM_RELICS.join('、') || '無'));
+if (SAFETY) console.log('\n新手保底（--safety）：每一趟第 1 位輸了免費重打一次（只印對照）');
+if (DBASE && !(DBASE.N === N && DBASE.CAP === CAP && JSON.stringify(DBASE.returning || null) === JSON.stringify(RET_RELICS || null) && !DBASE.waveC)) {
+  console.error('--dbase 要是同 n、同 cap、同 --returning、--wc off 跑出來的 JSON（這份 n ' + DBASE.N + '、cap ' + DBASE.CAP + '、returning ' + JSON.stringify(DBASE.returning || null) + (DBASE.waveC ? '、C 波開著' : '') + '）'); process.exit(2);
+}
 if (SEEDS) console.log('\n開局種子（--seeds ' + SEEDS.k + ':' + SEEDS.rarity + '）：每一趟都不打序章（種子只在不打序章的那一趟有效）' + (SEEDS.k ? '；種子＝' + (C.rarityZh || {})[SEEDS.rarity] + '裡 peak 最高的 ' + SEEDS.k + ' 張（同分照趟雜湊），例：第 0 趟 ' + seedsFor(0).map(id => C.cards[id].album).join('、') : '；沒有種子（對照組）'));
 if (WANT_N) console.log('\n想要清單（--want ' + WANT_N + '）：每一趟 ' + WANT_N + ' 張（有箱子的非頂點卡、照趟雜湊取；跟策略無關）');
 if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] || ACE_T) + '（--ace ' + ACE_T + '）');
@@ -566,7 +663,7 @@ if (MODE === 'all' || MODE === 'runs') {
   const rows = []; for (const flow of flows) for (const pol of Object.keys(cells[flow])) rows.push(cells[flow][pol]);
   const reachStr = x => x.reach.map(p0).join('／');
 
-  console.log(`\n### 整趟無限試煉（新帳號；每格 N=${N} 趟、最多打到第 ${CAP} 位；說情每輪一次；mercy ${CFG.mercy ? '開' : '關'}、放水唬人 ${EN.trialCfg(C, TIER).curve.mercyFeint}${TIER ? '、難度階梯 ' + TIER : ''}；門檻看 ${GATE}）\n`);
+  console.log(`\n### 整趟無限試煉（${RET_RELICS ? '老玩家：不打序章、帶 ' + RET_RELICS.join('、') : FROM ? '從第 ' + FROM + ' 位中繼點開局' : '新帳號'}；每格 N=${N} 趟、最多打到第 ${CAP} 位；說情每輪一次；mercy ${CFG.mercy ? '開' : '關'}、放水唬人 ${EN.trialCfg(C, TIER).curve.mercyFeint}${TIER ? '、難度階梯 ' + TIER : ''}；門檻看 ${GATE}）\n`);
   if (BROWSE < 16) console.log(`smart 每位客人前只打開 ${BROWSE} 箱（--browse ${BROWSE}：FEATURE＋其他箱照雜湊挑 ${BROWSE - 1} 箱；門檻照 16 箱定義，這組是一檔貨效益的下緣）\n`);
   console.log('| 策略 | 流程 | 深度 中位／平均 | p25–p75 | 不說情 中位／平均 | 到第 5／10／20／50／100 位（%） | 第 1–3 位死 | 一場幾手 | 打到第 6 手 | 死在比聲望條 | 藏家÷非藏家 死亡率（第 4–60 位） | 懸崖（非藏家首戰勝率最大跌幅） | 最高單位死亡率（非藏家） |');
   console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
@@ -637,6 +734,14 @@ if (MODE === 'all' || MODE === 'runs') {
       console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${w1(w.l1)} | ${w1(w.l2)} | ${f2(w.onShelf)} | ${f2(w.bought)} |`); }
   }
 
+  if (WC_ON) printWC(rows);                                              // 第 C 波（全關不印）
+  if (FROM) {                                                            // 中繼點開局（--from N；只印、不判 C1）
+    console.log(`\n中繼點開局（從第 ${FROM} 位開；第一場是藏家）：\n`);
+    console.log(`| 策略 | 流程 | 深度 中位（p25–p75）／平均 | 撐過 5 位（到第 ${FROM + 5} 位） | 撐過 10 位（到第 ${FROM + 10} 位） | 第 ${FROM} 位（第一場）死亡率 | 客人場勝率 |`);
+    console.log('|---|---|---|---|---|---|---|');
+    for (const x of rows) { const c = x.cp; if (!c) continue; console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${c.median}（${c.p25}–${c.p75}）／${c.mean.toFixed(1)} | ${pct(c.reach5)} | ${pct(c.reach10)} | ${pct(c.first)} | ${pct(x.win)} |`); }
+  }
+
   if (UNLOCK) {                                                          // 頂點卡收集（--unlock：每趟新玩家，只解鎖這一派）
     console.log(`\n頂點卡收集（--unlock：每一趟都是新玩家、只解鎖這一派；打倒藏家收他帶的那張：被剋鏈${APEX ? '→ 三派都開後收試做卡' : ''}）：\n`);
     console.log('| 策略 | 流程 | 每趟收幾張 | 收到 ≥1／≥2／≥3／≥4 張（%） | 解鎖第 2 派／第 3 派（%） | 其中試做卡 |');
@@ -655,8 +760,8 @@ if (MODE === 'all' || MODE === 'runs') {
     for (const flow of flows) { const x = cellOf(flow, pol); if (x) console.log(`| ${LABEL[pol]} | ${flow} | ${x.median}／${x.mean.toFixed(1)} | ${x.noRetry.mean.toFixed(1)} | ${reachStr(x)} | ${pct(x.die13)} | ${f2(x.hands)} | ${pct(x.r6)} | ${pct(x.deaths.byBar)} |`); }
   }
 
-  // ---- 門檻（--gate 流程）----
-  const G = cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, HR = G.humanRead, OR = G.oldReader, FM = G.formula, MR = G.mirrorHint, tag = `［${GATE}］`;
+  // ---- 門檻（--gate 流程；--from 中繼點開局不判，只印中繼點開局表，M6、HP 照判）----
+  const G = FROM ? {} : cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, HR = G.humanRead, OR = G.oldReader, FM = G.formula, MR = G.mirrorHint, tag = `［${GATE}］`;
   if (NV) check('T1', `${tag}新手 第 1–3 位死亡 8–15%（前期要有挑戰，見檔頭）`, NV.die13 >= 0.08 - 1e-9 && NV.die13 <= 0.15 + 1e-9, `${pct(NV.die13)}（V3 2%；11-16 前期加難前 smart 1.5%）`);
   if (TH) check('T1b', `${tag}會讀的 第 1–3 位死亡 ≤3%`, TH.die13 <= 0.03 + 1e-9, `${pct(TH.die13)}（V3 0%）`);
   // 11-17 讀牌加難（DESIGN §1.4）：T2a 改看一般玩家、T2c 新手走不遠、T2b 改看到第 50 位；R1–R4 讀牌要有用、舊讀法會被騙、沒有安全牌、會讀的前 10 位不靠運氣
@@ -691,6 +796,46 @@ if (MODE === 'all' || MODE === 'runs') {
     `會讀的 ${TH.median} 對 亂出 ${RD.median}`);
   const mh = Math.max(...rows.map(x => x.maxHands));
   check('M6', '最多 6 手', mh <= CFG.maxRounds, mh);
+  if (WC_ON) {                                                           // 第 C 波門檻（SPEC-C §8 定稿；見檔頭）
+    const refs0 = refs.length, D_N = 4000, gate = (id, name, okv, info) => { if (N >= D_N) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + `；n ${N} < ${D_N} 只列參考（判 ${id} 用 --n ${D_N}）` }); };
+    const B = DBASE && DBASE.runs && DBASE.runs[GATE] ? DBASE.runs[GATE] : null, BT = B && B.thoughtful, BN = B && B.novice;
+    if (TH && !FROM && !RET_RELICS) {
+      if (BT) gate('D1', `${tag}C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點`, TH.reach[3] <= BT.reach[3] + 0.04 + 1e-9, `${pct(TH.reach[3])} 對 現況 ${pct(BT.reach[3])}（${(TH.reach[3] - BT.reach[3] >= 0 ? '+' : '') + pt(TH.reach[3] - BT.reach[3])} 點）`);
+      else refs.push({ id: 'D1', name: `${tag}C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點`, ok: null, info: `${pct(TH.reach[3])}；沒給 --dbase（同 n、--wc off 的 JSON）只列參考` });
+    }
+    if (NV && !FROM && !RET_RELICS) gate('D2', `${tag}C 波不放水：新手 到第 10 位 ≤33%`, NV.reach[1] <= 0.33 + 1e-9, `${pct(NV.reach[1])}${BN ? `（現況 ${pct(BN.reach[1])}）` : ''}`);
+    if (TH && RET_RELICS && !FROM) {
+      if (BT) gate('D3', `${tag}老玩家不變難也不變簡單：會讀的 到第 50 位在現況 ±4 點內`, Math.abs(TH.reach[3] - BT.reach[3]) <= 0.04 + 1e-9, `${pct(TH.reach[3])} 對 現況 ${pct(BT.reach[3])}（${(TH.reach[3] - BT.reach[3] >= 0 ? '+' : '') + pt(TH.reach[3] - BT.reach[3])} 點）`);
+      else refs.push({ id: 'D3', name: `${tag}老玩家 會讀的 到第 50 位在現況 ±4 點內`, ok: null, info: `${pct(TH.reach[3])}；沒給 --dbase 只列參考` });
+    }
+    if (!FROM) {
+      const W = TH && TH.wcx;
+      if (W && WCC.stall.on && !COPT_SET) {
+        const P = W.pick, judged = WC_KINDS.filter(k => P[k] && P[k].offered >= 50), out = judged.filter(k => !(P[k].rate >= 0.15 - 1e-9 && P[k].rate <= 0.85 + 1e-9)), few = WC_KINDS.filter(k => !P[k] || P[k].offered < 50);
+        const zh = k => (C.waveC && C.waveC.stations && C.waveC.stations[k]) || k;
+        check('K1', `${tag}選路有差：會讀的 每種站出現時被選 15–85%`, judged.length && !out.length,
+          judged.map(k => zh(k) + ' ' + p0(P[k].rate)).join('、') + (out.length ? '（沒過：' + out.map(zh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(k => zh(k) + (P[k] ? ' ' + Math.round(P[k].offered) + ' 次' : ' 0 次')).join('、') : ''));
+        const dp = P.dare ? P.dare.picked : 0;
+        if (dp >= 30) check('K2', `${tag}踢館帖：會讀的 接帖率（接÷走到那站）20–80%`, W.dareRate >= 0.20 - 1e-9 && W.dareRate <= 0.80 + 1e-9, `${pct(W.dareRate)}（走到 ${Math.round(dp)} 次）`);
+        else refs.push({ id: 'K2', name: `${tag}踢館帖接帖率 20–80%`, ok: null, info: `走到那站只有 ${Math.round(dp)} 次，不判` });
+      }
+      if (W && COPT.dare === 'always' && W.dare) {
+        const d = W.dare, okv = d.f >= 100 && d.pf >= 100 ? d.w1 >= d.pw1 - 0.10 - 1e-9 : null;
+        if (okv == null) refs.push({ id: 'K2', name: `${tag}踢館帖不跳崖`, ok: null, info: `接帖那輪首戰 ${d.f} 場、平常 ${d.pf} 場，太少不判` });
+        else check('K2', `${tag}踢館帖不跳崖：接帖那輪首戰勝率比平常少 ≤10 點（--copt dare always、第 31 位起、會讀的）`, okv, `${pct(d.w1)}（${d.f} 場）vs ${pct(d.pw1)}（${(d.w1 - d.pw1 >= 0 ? '+' : '') + pt(d.w1 - d.pw1)} 點）`);
+      }
+      if (NV && !RET_RELICS) check('K4', `${tag}新手看得到第一趟：新手 到第 5 位 ≥75%`, NV.reach[0] >= 0.75 - 1e-9, pct(NV.reach[0]));
+      if (W && (WCC.loot.on || WCC.chest.on || WCC.stall.on)) check('N1', `${tag}新鮮度：會讀的 第 15 位起路上的盤重複 ≤10%、一趟新認識 ≥50 張`, (W.r15dup == null || W.r15dup <= 0.10 + 1e-9) && W.known >= 50 - 1e-9,
+        `重複 ${pct(W.r15dup)}（第 15 位起 ${f2(W.k.r15)} 張／趟）、新認識 ${W.known.toFixed(1)} 張`);
+      const fx = x => x == null ? '—' : '$' + Math.round(x).toLocaleString('en');
+      if (W) refs.push({ id: 'E1', name: `${tag}會讀的花掉幾成 ≥60%`, ok: W.spentShare >= 0.60 - 1e-9, info: pct(W.spentShare) });
+      if (NV && NV.wcx) refs.push({ id: 'E2', name: `${tag}新手花掉幾成 ≥40%`, ok: NV.wcx.spentShare >= 0.40 - 1e-9, info: pct(NV.wcx.spentShare) });
+      if (W) refs.push({ id: 'E3', name: `${tag}會讀的 每輪開頭的錢中位 ≤ 現況 $41,350 的 60%（$24,810）`, ok: W.rmMed != null && W.rmMed <= 24810, info: `${fx(W.rmMed)}（${W.rmMed != null ? p0(W.rmMed / 41350) + '%' : '—'}；平均 ${fx(W.rmMean)}）` });
+      if (W) refs.push({ id: 'E4', name: `${tag}會讀的 樂歷：演唱會 ≤ 基本 25%、路線全部 ≤40%`, ok: W.gigShare <= 0.25 + 1e-9 && W.routeShare <= 0.40 + 1e-9, info: `${pct(W.gigShare)}、${pct(W.routeShare)}（基本 ${Math.round(W.lexpBase)}／趟）` });
+      if (TH) refs.push({ id: '100', name: `${tag}會讀的 到第 100 位`, ok: null, info: `${pct(TH.reach[4])}${BT ? `（現況 ${pct(BT.reach[4])}）` : ''}` });
+    }
+    for (const c of refs.slice(refs0)) if (typeof c.ok === 'boolean') c.info += c.ok ? '［在門檻內］' : '［不在門檻內］';
+  }
   if (cells.smart && cells.none && cells.smart.thoughtful && cells.none.thoughtful)
     console.log(`\n會讀的：smart − none 深度中位 ${cells.smart.thoughtful.median - cells.none.thoughtful.median} 位、平均 ${(cells.smart.thoughtful.mean - cells.none.thoughtful.mean).toFixed(1)} 位（買東西有沒有用；只列不檢查）`);
 }

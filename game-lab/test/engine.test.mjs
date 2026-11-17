@@ -21,7 +21,8 @@ const QUICK = process.argv.includes('--quick');
 let pass = 0, fail = 0; const fails = [];
 function ok(cond, name, info) { if (cond) pass++; else { fail++; if (fails.length < 60) fails.push(name + (info !== undefined ? ' :: ' + (typeof info === 'string' ? info : JSON.stringify(info)) : '')); } return !!cond; }
 function eq(a, b, name) { const A = JSON.stringify(a), B = JSON.stringify(b); return ok(A === B, name, A + ' !== ' + B); }
-function section(name, fn) { const f0 = fail; const t0 = Date.now(); try { fn(); } catch (e) { fail++; fails.push(name + ' threw: ' + (e.stack || e)); } console.log((fail === f0 ? 'ok  ' : 'FAIL') + ' ' + name + ' (' + (Date.now() - t0) + ' ms)'); }
+const ONLY = process.env.ENGINE_ONLY || null;   // ENGINE_ONLY=29 node game-lab/test/engine.test.mjs＝只跑名字以 29 開頭的那一節（改單一節時用）
+function section(name, fn) { if (ONLY && !name.startsWith(ONLY)) return; const f0 = fail; const t0 = Date.now(); try { fn(); } catch (e) { fail++; fails.push(name + ' threw: ' + (e.stack || e)); } console.log((fail === f0 ? 'ok  ' : 'FAIL') + ' ' + name + ' (' + (Date.now() - t0) + ' ms)'); }
 
 // ---------------- test content（STUB 星數＝SPEC-v4 §4.1–§4.3 的表；already／skip 各 2 張是 A3-M2 換上的新卡） ----------------
 const STUB = {
@@ -85,7 +86,11 @@ function contractBins() {
 }
 let BINS = C0.bins, fakeBins = false;
 if (!BINS.feature) { fakeBins = true; BINS = contractBins(); }
-const C = Object.assign({}, C0, { cards: CARDS, bins: BINS });
+// 第 C 波（SPEC-C §11.0，CRITIQUE 1.3）：舊段落用全關的 content（C.waveC 每件 on:false、客人補償 guestHpSteps []）＝第 C 波以前的行為，舊斷言一條都不改；
+//   新段落（§11.1）用 CW＝出貨設定（content.js 的 C.waveC 全開、guestHpSteps [[31,1]]）
+const WC_OFF = { loot: { on: false }, chest: { on: false }, stall: { on: false }, safety: { on: false } };
+const C = Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [] }) });
+const CW = Object.assign({}, C0, { cards: CARDS, bins: BINS });
 const COFF = Object.assign({}, C, { lot: Object.assign({}, C.lot, { on: false }) });   // 一檔貨關（第 B 波 SPEC-B §3.2 on:false＝舊補貨原封不動）
 
 // ---------------- helpers ----------------
@@ -3272,6 +3277,409 @@ section('28 第 B 波升版的舊 run（驗收 F1）：待說情／打到一半�
   eq(EN.guestDef(bad, C0, 'label', 4).deck.map(c => c.id), EN.guestDef(mk(), C0, 'label', 4).deck.map(c => c.id), 'unknown ids → ignored (normal deck)');
   const other = mk(); other.retryDeck = { pos: 3, id: 'label', ids: OLD };
   eq(EN.guestDef(other, C0, 'label', 4).deck.map(c => c.id), EN.guestDef(mk(), C0, 'label', 4).deck.map(c => c.id), 'another pos → ignored');
+});
+
+// ============================================================================================================================
+// 第 C 波（SPEC-C §11.1；scratchpad v5/wave-c）：戰利品列、寶箱、店內攤位、踢館帖、客人補償、新手保底、中繼點開局、賣回、一趟留一張、setCtx、樂歷記帳、公關片。
+//   用 CW（出貨設定：content.js 的 C.waveC 全開、guestHpSteps [[31,1]]）；C（全關）只在 29-1 對照
+// ============================================================================================================================
+const WCK = ['far0', 'road', 'lexp', 'tickets', 'chestDry', 'dare', 'dareLast', 'consign', 'fortune', 'safety', 'found'];
+const fwin = (run, content) => { const f = EN.startFight(run, content, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, content); };
+const flose = (run, content) => { EN.startFight(run, content, {}); run.duel.p.hp = 0; run.duel.over = { win: false, by: 'hp', pHp: 0, eHp: run.duel.e.hp }; return EN.finishFight(run, content); };
+const autoW = (run, content, o) => { let g = 0; while (run.pending && g++ < 200) { const ch = EN.runPolicy(run, content, o); const r = EN.choose(run, content, ch); if (!ok(r.ok, 'auto choice ok', { ch, err: r.error, p: run.pending && run.pending.type })) break; } };
+// 打到第 pos 位（站在他面前、沒有 pending）；攤位、獎勵、升級都照 runPolicy／cPolicy
+const winToW = (run, content, pos, o) => {
+  if (EN.canBargainPick(run) && !run.pending) EN.choose(run, content, EN.bargainPolicy(run, content));
+  for (let g = 0; g < 600 && !run.over; g++) {
+    if (run.pending) { autoW(run, content, o); continue; }
+    if (EN.canBargainPick(run)) { EN.choose(run, content, EN.bargainPolicy(run, content)); continue; }
+    if (run.pos >= pos) break;
+    fwin(run, content);
+  }
+  return run;
+};
+const newW = (sk, o) => EN.newRun(CW, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {}));
+// 攤位手做：塞一場只有這幾站的攤位（pending 是純資料，跟 stallSession 產生的同形狀）
+const fakeStall = (run, groups, o) => { run.pending = Object.assign({ type: 'stall', after: run.pos - 1, pos: run.pos, cp: false, first: false, groups, pick: null, q: [], k: 0, post: [], cur: null, done: [] }, o || {}); return run.pending; };
+const pickG = (run, g) => { const r = EN.choose(run, CW, { type: 'stallPick', group: g }); ok(r.ok, 'stallPick ok', r.error); return r; };
+const act = (run, a, x) => EN.choose(run, CW, Object.assign({ type: 'stallAct', act: a }, x || {}));
+// 全關一趟 50 位（29-1；跟第 C 波以前的引擎逐字相同：scratchpad v5/wave-c/build/src/offdigest.cjs 用 HEAD 的 engine.js 量的摘要）
+function driveOff(content, seedKey, runNo, ace, maxPos) {
+  const run = EN.newRun(content, { seedKey, runNo, ace }), R = lcg(EN.fnv1a32(seedKey + runNo)), mem = {};
+  for (let g = 0; g < 4000; g++) {
+    if (run.over && !run.pending) break;
+    if (EN.canBargainPick(run) && !run.duel && !run.pending) { EN.choose(run, content, EN.bargainPolicy(run, content)); continue; }
+    const st = EN.nextStep(run);
+    if (st === 'reward' || st === 'retry' || st === 'level') { EN.choose(run, content, EN.runPolicy(run, content)); continue; }
+    if (!st || run.pos > maxPos) break;
+    if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, content, 'smart')) EN.choose(run, content, ch);
+    const f = EN.startFight(run, content, {});
+    let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, content));
+    EN.finishFight(run, content);
+  }
+  return run;
+}
+
+section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、寶箱、攤位（抽站規則、踢館帖、中繼點）、各站動作、做完就存、踢館帖、客人補償、新手保底、中繼點開局、賣回、一趟留一張、setCtx、樂歷、公關片、舊 run', () => {
+  EN.setCtx(null);
+  // ---- 1 功能全關：一趟 50 位 run JSON（扣第 C 波欄位）跟現行逐字相同；第 C 波欄位停在初值、沒有 stats.c ----
+  { let s = ''; const reached = [];
+    const CNONE = Object.assign({}, C); delete CNONE.waveC;           // content 沒有 waveC＝引擎預設（也是全關）
+    for (const [sk, rn, ace] of [['wcoff1', 1, 'hall'], ['wcoff2', 2, 'pearl'], ['wcoff3', 3, 'heresy'], ['wcoff4', 2, 'hall'], ['wcoff5', 4, 'pearl'], ['wcoff6', 5, 'heresy']]) {
+      const run = driveOff(C, sk, rn, ace, 50), o = JSON.parse(JSON.stringify(run));
+      ok(o.road.length === 0 && o.found.length === 0 && o.tickets === 0 && o.dare === null && o.consign === null && o.fortune === null && o.safety === false && JSON.stringify(o.lexp) === '{}' && !o.stats.c && o.chestDry === 0, 'off: wave C fields stay at their initial values', sk);
+      eq(JSON.stringify(driveOff(CNONE, sk, rn, ace, 50)), JSON.stringify(run), 'off (content waveC on:false) = engine defaults (no content.waveC) ' + sk);
+      for (const k of WCK) delete o[k];
+      reached.push(o.pos); s += JSON.stringify(o) + '\n';
+    }
+    eq(reached, [37, 29, 41, 3, 18, 51], 'off: reached the same positions as before wave C');
+    eq(EN.fnv1a32(s), 4066452980, 'off: run JSON (minus wave C fields) = engine before wave C (fnv of 6 runs)');
+    eq(EN.trialGuest(C, 31, 'normal').hp, 12, 'off: no guest hp step'); }
+
+  // ---- 2／3 戰利品列 ----
+  { let rows = 0, withUnplayed = 0, golds = 0, packets = 0;
+    for (let s = 1; s <= 60; s++) {
+      const run = newW('loot-' + s); EN.choose(run, CW, EN.bargainPolicy(run, CW));
+      for (let pos = 1; pos <= 4; pos++) {
+        const pre = JSON.stringify(run), m0 = run.money;
+        const res = fwin(run, CW), p = run.pending;
+        if (!ok(p && p.type === 'reward' && p.kind === 'loot', 'loot pending', p)) break;
+        rows++;
+        ok(p.cards.length === 3 && new Set(p.cards).size === 3 && p.cards.every(id => !run.bag.includes(id) && CW.cards[id] && !CW.cards[id].tier), 'loot: 3 distinct, not in bag, no apex', p.cards);
+        ok(p.src.length === 3 && p.skipCash === 400 && p.need === (pos === 4 ? 'cardOrRelic' : 'card'), 'loot: src, skipCash, need (elite = cardOrRelic)', p);
+        if (p.src.includes('unplayed')) withUnplayed++;
+        if (p.gold.length) { golds++; const th = EN.wcTh(CW, pos, 'gold'); ok(p.gold.every(id => EN.power(CW.cards[id]) >= th && p.cards.includes(id)), 'gold card from the gold pool', { th, g: p.gold }); }
+        ok(p.cards.every(id => run.drops.includes(id)), 'loot cards are the drops (keep-one candidates)');
+        if (p.packet) { packets++; if (p.packet.kind === 'cash') ok(res.packetCash === res.earn && run.money === m0 + 2 * res.earn, 'cash packet: paid now, out.packetCash', { m0, m: run.money, res }); else ok(res.packetCash === 0 && run.lexp.packet >= 15, 'lexp packet: lexp.packet +15', run.lexp); }
+        else ok(res.packetCash === 0 && run.money === m0 + res.earn, 'no packet: only the win money', res);
+        // 同一 met、同一狀態 → 同一列；JSON 來回照存好的
+        const a = JSON.parse(pre), b = JSON.parse(pre);
+        const fa = fwin(a, CW), fb = fwin(b, CW);
+        eq([a.pending.cards, a.pending.src, a.pending.packet], [b.pending.cards, b.pending.src, b.pending.packet], 'same state & met → same row');
+        if (JSON.stringify(fa.met) === JSON.stringify(res.met)) eq(a.pending.cards, p.cards, 'same met → same row as the real one');
+        const j = JSON.parse(JSON.stringify(run)); eq(j.pending, run.pending, 'row survives JSON');
+        // 3：不收 +$400（stats.earned 也加）；收下的進 found
+        if (pos % 2) {
+          const m1 = run.money, e1 = run.stats.earned, r = EN.choose(run, CW, pos === 4 ? { type: 'skip' } : { type: 'skip' });
+          ok(r.ok && run.money === m1 + 400 && run.stats.earned === e1 + 400 && r.effects.some(x => x.cash === 400), 'skip: +$400 (money and stats.earned)', r);
+        } else {
+          const id = p.cards[0], r = EN.choose(run, CW, { type: 'take', cardId: id });
+          ok(r.ok && run.bag.includes(id) && run.found.includes(id), 'take: into the bag and run.found', r);
+        }
+        autoW(run, CW);
+      }
+    }
+    ok(rows >= 200, 'enough loot rows', rows);
+    ok(withUnplayed / rows >= 0.99, 'loot: ≥99% rows have an unplayed card', withUnplayed + '/' + rows);
+    ok(golds > 10 && golds < rows * 0.3, 'loot: some gold rows (15%)', golds + '/' + rows);
+    ok(packets > 5 && packets < rows * 0.25, 'loot: some packets (12%)', packets + '/' + rows);
+    // 菁英改拿配件：relic → 不給錢、cardDone
+    const run = newW('loot-elite'); winToW(run, CW, 4); fwin(run, CW);
+    const p = run.pending, m = run.money, r = EN.choose(run, CW, { type: 'relic', relicId: p.relics[0] });
+    ok(p.need === 'cardOrRelic' && r.ok && run.relics.includes(p.relics[0]) && run.money === m, 'elite: or take a relic (no cash)', r); }
+
+  // ---- 4 寶箱 ----
+  { let n = 0, gold = 0;
+    for (let s = 1; s <= 40; s++) {
+      const run = newW('chest-' + s, { unlocked: ['hall'] }); winToW(run, CW, 5);
+      if (s === 1) run.chestDry = 5;
+      const res = fwin(run, CW), p = run.pending;
+      if (!ok(p && p.kind === 'chest', 'boss → chest', p)) continue;
+      n++;
+      ok(p.cards.length === 3 && new Set(p.cards).size === 3 && p.cards.every(id => !CW.cards[id].tier), 'chest: 3 cards, no apex card', p.cards);
+      ok(p.relics.length === 1 && p.need === 'cardOrRelic' && p.skipCash === 400, 'chest: one relic, cardOrRelic, +$400', p);
+      ok(res.aceWon && run.acesWon.includes(res.aceWon) && !p.cards.includes(res.aceWon), 'boss apex card still goes to acesWon (#465), not into the chest', res.aceWon);
+      if (p.gold.length) gold++;
+      if (s === 1) ok(p.src[0] === 'apex' && p.apexSlot.length >= 1 && run.chestDry === 0, 'pity: chestDry 5 → apex slot, then 0', { src: p.src, dry: run.chestDry });
+      else ok(run.chestDry === (p.apexSlot.length ? 0 : 1), 'chestDry +1 or 0', run.chestDry);
+    }
+    ok(n === 40 && gold >= 10, 'chests with gold (8%+30% each card)', gold);
+    // 踢館帖撐完：4 張、保證金邊、+$5,000
+    const run = newW('chest-dare'); winToW(run, CW, 5); run.dare = { round: run.round, mode: 'tough' };
+    const m0 = run.money, res = fwin(run, CW), p = run.pending;
+    ok(p.cards.length === 4 && p.dare === true && p.src.some(x => x === 'gold' || x === 'apex'), 'dare chest: 4 cards with gold', p);
+    ok(run.money === m0 + res.earn + 5000 && res.dareCash === 5000 && run.stats.c.income.dare === 5000, 'dare done: +$5,000', { m0, m: run.money, res }); }
+
+  // ---- 5 攤位 ----
+  { const run = newW('stall-a');
+    winToW(run, CW, 5); ok(!run.pending && run.pos === 5, 'no stall inside a round');
+    fwin(run, CW); autoW(run, CW, { pickFirst: true });           // pickFirst：停在…不，autoW 會逛完；改用手走
+    ok(run.pos === 6 && !run.pending, 'first session walked through (auto)');
+    const r2 = newW('stall-b'); winToW(r2, CW, 5); fwin(r2, CW);
+    for (let g = 0; g < 10 && r2.pending && r2.pending.type !== 'stall'; g++) EN.choose(r2, CW, EN.runPolicy(r2, CW));
+    const p = r2.pending;
+    ok(p && p.type === 'stall' && p.after === 5 && p.first && !p.cp, 'after the round (pos 5 won) → stall session', p);
+    eq(p.groups, [['dig', 'fortune'], ['warehouse', 'home']], 'first session: fixed groups');
+    eq(p.post, ['studio'], 'first session: studio after');
+    ok(EN.nextStep(r2) === 'stall' && !EN.canShop(r2), 'stall pending: nextStep stall, cannot shop');
+    // 中繼點（打完第 10 位）：市集＋錄音室
+    autoW(r2, CW); winToW(r2, CW, 10); fwin(r2, CW);
+    for (let g = 0; g < 10 && r2.pending && r2.pending.type !== 'stall'; g++) EN.choose(r2, CW, EN.runPolicy(r2, CW));
+    ok(r2.pending && r2.pending.cp && r2.pending.after === 10 && !r2.pending.first, 'checkpoint session after 10', r2.pending);
+    eq(r2.pending.post, ['market', 'studio'], 'checkpoint: market then studio');
+    ok(!r2.pending.groups.flat().includes('dare'), 'no dare at a checkpoint'); }
+  { // 抽站規則（CRITIQUE 3.1）：1 萬場、花錢站每組 ≤1、四站至少一個藍框（含換上踢館帖之後）；同組不重複；未解鎖的不出；踢館帖只在第 ② 站
+    const W = EN.wcCfg(CW), PAID = W.stall.paid, BLUE = W.stall.blue;
+    let bad = 0, dares = 0, n = 0, promoEarly = 0, consignEarly = 0, dareAt1 = 0;
+    for (let i = 0; i < 10000; i++) {
+      const after = [6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 21, 26, 31, 36, 41, 46, 51, 56][i % 18] * 5 / 5 | 0;
+      const a = [10, 15, 20, 25, 35, 40, 45, 55, 60, 65][i % 10];   // 打完第幾位（不是中繼點：中繼點另驗）
+      const run = newW('draw-' + i, { bestFar: i % 3 ? 0 : 40 }); run.pos = a + 1; run.round = EN.roundOf(a + 1); run.idx = 0;
+      if (EN.isCheckpoint(a, CW)) continue;
+      EN.stallSession(run, CW); const p = run.pending; n++;
+      const all = p.groups.flat();
+      if (p.groups.some(g => g.filter(k => PAID.includes(k)).length > 1) || !all.some(k => BLUE.includes(k)) || new Set(all).size !== all.length || p.groups.length !== 2) bad++;
+      if (all.includes('dare')) { dares++; if (p.groups.some(g => g[0] === 'dare')) dareAt1++; }
+      if (run.far0 === 0 && a < 10 && all.includes('promo')) promoEarly++;
+      if (run.far0 === 0 && a < 15 && all.includes('consign')) consignEarly++;
+    }
+    ok(n > 7000 && bad === 0, 'draw rules hold in every session (paid ≤1 per group, ≥1 blue, distinct, 2 groups)', { n, bad });
+    ok(dares > 0 && dareAt1 === 0, 'dare only as station ②', { dares, dareAt1 });
+    ok(promoEarly === 0 && consignEarly === 0, 'locked stations never show', { promoEarly, consignEarly });
+    // 解鎖看 max(最遠紀錄, 剛打完)：最遠 40 的老玩家打完第 10 位前 promo 可以出
+    let promoOld = 0; for (let i = 0; i < 400; i++) { const run = newW('drawp-' + i, { bestFar: 40 }); run.pos = 16; run.round = 4; EN.stallSession(run, CW); if (run.pending.groups.flat().includes('promo')) promoOld++; }
+    ok(promoOld > 0, 'far ≥10 → promo can show at after 15', promoOld); }
+  { // 踢館帖（CRITIQUE 3.2）：最遠 30 的老玩家第 16–29 位 0 次；第 30 位起（非中繼點）35%；不連兩輪
+    let early = 0, at35 = 0, N35 = 2000, consec = 0;
+    for (let i = 0; i < 2000; i++) for (const a of [15, 20, 25]) { const run = newW('dare-e' + i, { bestFar: 30 }); run.pos = a + 1; run.round = EN.roundOf(a + 1); EN.stallSession(run, CW); if (run.pending.groups.flat().includes('dare')) early++; }
+    for (let i = 0; i < N35; i++) { const run = newW('dare-l' + i, { bestFar: 30 }); run.pos = 36; run.round = 8; EN.stallSession(run, CW); if (run.pending.groups.flat().includes('dare')) at35++; }
+    ok(early === 0, 'dare: none before this run reaches 30 (even with best 30)', early);
+    ok(Math.abs(at35 / N35 - 0.35) < 0.04, 'dare: ~35% from 30 on', at35 / N35);
+    for (let i = 0; i < 400; i++) { const run = newW('dare-c' + i); let last = false; for (let a = 35; a <= 95; a += 5) { if (EN.isCheckpoint(a, CW)) { last = false; continue; } run.pos = a + 1; run.round = EN.roundOf(a + 1); EN.stallSession(run, CW); const d = run.pending.groups.flat().includes('dare'); if (d && last) consec++; last = d; } }
+    ok(consec === 0, 'dare never two rounds in a row', consec);
+    // 中繼點開局那一位打完的攤位不是中繼點攤位（CRITIQUE 4.5）；下一個中繼點起照常
+    const cp = newW('cp-sess'); cp.cpFrom = 10; cp.pos = 11; cp.round = 3; EN.stallSession(cp, CW);
+    ok(!cp.pending.cp && !cp.pending.post.length && !cp.pending.first, 'cp start: the session after N is a normal one', cp.pending);
+    cp.pos = 21; cp.round = 5; cp.pending = null; EN.stallSession(cp, CW); ok(cp.pending.cp && cp.pending.post.join() === 'market,studio', 'next checkpoint as usual'); }
+
+  // ---- 6 每一站動作 ----
+  { // 挖寶攤：錢不夠擋、重翻價錢梯、不收 +$400、收下＝撿來的
+    const run = newW('st-dig'); winToW(run, CW, 6); run.pos = 7; fakeStall(run, [['dig', 'snack'], ['home', 'gig']]); pickG(run, 0);
+    const cur = run.pending.cur; ok(cur.kind === 'dig' && cur.cards.length === 3 && cur.name, 'dig: 3 cards and a name', cur);
+    ok(new Set(cur.cards.map(id => EN.topAttr(CW.cards[id]))).size === 3 || !!cur.gold, 'dig: one of each colour (unless gold took the last)', cur.cards.map(id => EN.topAttr(CW.cards[id])));
+    run.money = 400; const s0 = JSON.stringify(run); ok(act(run, 'reroll').error === 'money' && JSON.stringify(run) === s0, 'reroll: not enough money → unchanged');
+    run.money = 5000; const c0 = cur.cards.slice(); ok(act(run, 'reroll').ok && run.money === 4500 && run.pending.cur.rolls === 1, 'reroll 1 = $500');
+    ok(JSON.stringify(run.pending.cur.cards) !== JSON.stringify(c0), 'reroll: new cards'); ok(act(run, 'reroll').ok && run.money === 3500, 'reroll 2 = $1,000');
+    const id = run.pending.cur.cards[0]; ok(act(run, 'take', { cardId: id }).ok && run.bag.includes(id) && run.found.includes(id) && run.pending.cur.kind === 'snack', 'take → bag, found, next station');
+    const h0 = run.hp; run.hp = Math.max(1, run.maxHp - 5); const h1 = run.hp; ok(act(run, 'ok').ok && run.hp === Math.min(run.maxHp, h1 + 3), 'snack +3 (cap)', { h0, h1, hp: run.hp });
+    ok(run.pending === null, 'group of two done → pending cleared (no post)'); }
+  { // 演唱會：門票價錢梯整趟累計（演唱會 → 市集）、gigKeepN
+    const run = newW('st-gig'); winToW(run, CW, 11); run.money = 20000; run.tickets = 0; const lx0 = Object.assign({}, run.lexp);
+    eq([EN.gigPrice(run, CW, 1), EN.gigPrice(run, CW, 3)], [3000, 12000], 'gigPrice: 3000, 3000+4000+5000');
+    eq(EN.gigKeepN(run, CW), 3, 'gigKeepN: keep $4,000 → 3 tickets ($12,000 of $16,000)');
+    fakeStall(run, [['gig', 'snack'], ['dig', 'home']], { cp: true, post: ['market', 'studio'] }); pickG(run, 0);
+    ok(act(run, 'tickets', { n: 2 }).ok && run.money === 13000 && run.tickets === 2 && run.lexp.gig === (lx0.gig | 0) + 40, 'gig: 2 tickets $7,000, lexp +40', { m: run.money, t: run.tickets });
+    act(run, 'ok');                                                // 宵夜
+    ok(run.pending.cur.kind === 'market', 'then the market');
+    eq(EN.gigPrice(run, CW, 1), 5000, 'ladder carries across stations: next is $5,000');
+    ok(act(run, 'tickets', { n: 1 }).ok && run.money === 8000 && run.tickets === 3, 'market tickets use the same ladder');
+    run.money = 100; ok(act(run, 'tickets', { n: 1 }).error === 'money', 'market tickets: money');
+    ok(act(run, 'tickets', { n: -1 }).error === 'badN', 'tickets: bad n');
+    ok(act(run, 'done').ok && run.pending.cur.kind === 'studio', 'market done → studio');
+    ok(act(run, 'ok').ok && run.pending === null && run.lexp.demo === (lx0.demo | 0) + 15, 'studio: lexp demo +15, done', run.lexp); }
+  { // 器材行：配件滿 3 件要丟（半價賣掉）；不扣這一輪櫃檯在賣的
+    const run = newW('st-gear', { relics: ['dustcover', 'stylus', 'cleaner'] }); winToW(run, CW, 6); run.money = 10000;
+    fakeStall(run, [['gear', 'snack'], ['dig', 'home']]); pickG(run, 0);
+    const cur = run.pending.cur; ok(cur.relics.length >= 1 && cur.relics.every(id => !run.relics.includes(id) && !(run.shop.relics || []).includes(id)), 'gear: not owned, not on the counter this round', { cur: cur.relics, shop: run.shop.relics });
+    ok(act(run, 'buyRelic', { relicId: cur.relics[0] }).error === 'relicsFull', 'relics full → need a drop');
+    const half = EN.sellValue(CW, 'stylus'), m = run.money;
+    ok(act(run, 'buyRelic', { relicId: cur.relics[0], dropRelicId: 'stylus' }).ok && run.money === m - 3000 + half && !run.relics.includes('stylus') && run.relics.length === 3, 'drop stylus (half price), pay $3,000', run.money); }
+  { // 寄賣：放 1 張、兩輪後的攤位開頭先領（三張金邊挑一）；領完 pending 還在、能選組；中繼點還有市集和錄音室（CRITIQUE 1.2）
+    const run = newW('st-con'); winToW(run, CW, 16); fakeStall(run, [['consign', 'snack'], ['dig', 'home']]); pickG(run, 0);
+    const gift = run.gifts[0]; ok(act(run, 'consign', { cardId: gift }).error === 'badConsign', 'cannot consign a gift');
+    const x = run.bag.find(id => !run.gifts.includes(id) && !(run.seeds || []).includes(id));
+    ok(act(run, 'consign', { cardId: x }).ok && !run.bag.includes(x) && run.consign.card === x && run.consign.due === run.round + 2, 'consign: out of the bag, due in two rounds', run.consign);
+    act(run, 'ok'); ok(run.pending === null, 'done');
+    // 一輪後：還沒到
+    run.round += 1; run.pos += 5; EN.stallSession(run, CW); ok(run.pending.q.length === 0 && !run.pending.cur, 'not due yet');
+    // 兩輪後、而且剛好是中繼點（打完第 30 位）
+    run.round = 7; run.pos = 31; run.pending = null; EN.stallSession(run, CW);
+    const p = run.pending; ok(p.cp && p.cur && p.cur.kind === 'consignGet' && p.cur.cards.length === 3, 'due: consignGet first, 3 gold cards', p);
+    const s1 = JSON.stringify(p.cur.cards); ok(EN.choose(run, CW, { type: 'stallPick', group: 0 }).error === 'noStallPick', 'cannot pick a group before the consign book');
+    const take = p.cur.cards[1]; ok(act(run, 'take', { cardId: take }).ok && run.bag.includes(take) && run.found.includes(take) && run.consign === null, 'take one of three → found, consign cleared');
+    ok(run.pending && run.pending.type === 'stall' && run.pending.pick === null && !run.pending.cur, 'pending stays, waiting for a group (CRITIQUE 1.2)');
+    pickG(run, 1); ok(run.pending.q.slice(-2).join() === 'market,studio', 'checkpoint still has market and studio', run.pending.q);
+    // 不拿也一樣留著（沒有 +$400）
+    const r2 = newW('st-con2'); winToW(r2, CW, 16); r2.consign = { card: 'x', due: r2.round }; r2.pos = 21; r2.round = 5; EN.stallSession(r2, CW);
+    const m2 = r2.money; ok(act(r2, 'skip').ok && r2.money === m2 && r2.pending && r2.pending.pick === null && r2.consign === null, 'skip the consign book: no cash, pending stays'); void s1; }
+  { // 今天不逛了（CRITIQUE 1.7）：選組前（一般 +$2,000、中繼點 +$3,000）、選組後、市集裡
+    const a = newW('lv-a'); winToW(a, CW, 6); fakeStall(a, [['dig', 'snack'], ['home', 'gig']]);
+    let m = a.money, r = EN.choose(a, CW, { type: 'stallLeave' }); ok(r.ok && a.money === m + 2000 && a.pending === null && r.effects.some(x => x.cash === 2000), 'leave before picking: +$2,000', r);
+    const b = newW('lv-b'); winToW(b, CW, 11); fakeStall(b, [['dig', 'snack'], ['home', 'gig']], { cp: true, post: ['market', 'studio'] });
+    m = b.money; r = EN.choose(b, CW, { type: 'stallLeave' }); ok(r.ok && b.money === m + 3000 && b.pending.cur.kind === 'studio' && b.pending.pick === -1, 'checkpoint, before picking: +$3,000, studio stays', b.pending);
+    ok(act(b, 'ok').ok && b.pending === null, 'studio done');
+    const c = newW('lv-c'); winToW(c, CW, 6); fakeStall(c, [['dig', 'snack'], ['home', 'gig']]); pickG(c, 0); act(c, 'skip');
+    m = c.money; r = EN.choose(c, CW, { type: 'stallLeave' }); ok(r.ok && c.money === m + 1000 && c.pending === null, 'after picking, one station left: +$1,000');
+    const d = newW('lv-d'); winToW(d, CW, 11); fakeStall(d, [['snack', 'home'], ['dig', 'gig']], { cp: true, post: ['market', 'studio'] }); pickG(d, 0); act(d, 'ok'); act(d, 'ok');
+    ok(d.pending.cur.kind === 'market', 'in the market'); m = d.money; r = EN.choose(d, CW, { type: 'stallLeave' }); ok(r.ok && d.money === m + 1000 && d.pending.cur.kind === 'studio', 'leave in the market: +$1,000, studio stays');
+    // 寄賣領取那站照留
+    const e = newW('lv-e'); winToW(e, CW, 16); e.consign = { card: 'x', due: 6 }; e.round = 6; e.pos = 26; EN.stallSession(e, CW);   // 打完第 25 位（不是中繼點）
+    const g0 = JSON.stringify(e.pending.cur); m = e.money; r = EN.choose(e, CW, { type: 'stallLeave' });
+    ok(r.ok && e.money === m + 2000 && e.pending.cur && e.pending.cur.kind === 'consignGet' && JSON.stringify(e.pending.cur) === g0, 'leave at the consign book: +$2,000, the book stays (same cards)'); }
+
+  // ---- 7 做完就存：JSON 來回 pending.cur 一樣、照樣做完；同一 seed 同一場攤位同一批貨 ----
+  { const mk = () => { const r = newW('save-st'); winToW(r, CW, 5); fwin(r, CW); for (let g = 0; g < 10 && r.pending && r.pending.type !== 'stall'; g++) EN.choose(r, CW, EN.runPolicy(r, CW)); return r; };
+    const a = mk(), b = mk(); eq(a.pending, b.pending, 'same seed → same session'); pickG(a, 0); pickG(b, 0);
+    eq(a.pending.cur, b.pending.cur, 'same seed → same goods'); const j = JSON.parse(JSON.stringify(a)); eq(j.pending.cur, a.pending.cur, 'cur survives JSON');
+    const id = j.pending.cur.cards[0]; ok(EN.choose(j, CW, { type: 'stallAct', act: 'take', cardId: id }).ok && j.bag.includes(id), 'finish the station after a reload');
+    // cur 沒了（舊版存在 cur 產生前）→ stallResume 重進同一站、同一批貨
+    // cur 沒了（保險路徑，§2.4）→ stallResume 重進同一站；這時 road 已經扣過那一批，貨可以不同（SPEC 明文「無所謂」）
+    const k = JSON.parse(JSON.stringify(a)); k.pending.cur = null; EN.stallResume(k, CW);
+    ok(k.pending.cur && k.pending.cur.kind === a.pending.cur.kind && k.pending.cur.cards.length === 3 && k.pending.k === a.pending.k, 'stallResume: same station again', k.pending.cur); }
+
+  // ---- 8 踢館帖：那一輪 guestDef 加上、roundGuests 帶 dare、下一輪清掉 ----
+  { const run = newW('dare-g'); winToW(run, CW, 36); const id = run.order[run.idx];
+    const g0 = EN.guestDef(run, CW, id, 36); run.dare = { round: run.round, mode: 'tough' };
+    const g1 = EN.guestDef(run, CW, id, 36); ok(g1.atk === g0.atk + 1 && g1.hp === g0.hp && g1.dare === 'tough', 'tough: atk +1', { g0: g0.atk, g1: g1.atk });
+    run.dare.mode = 'tank'; const g2 = EN.guestDef(run, CW, id, 36); ok(g2.hp === g0.hp + 4 && g2.atk === g0.atk && g2.dare === 'tank', 'tank: hp +4');
+    ok(EN.roundGuests(run, CW).every(x => x.dare === 'tank'), 'roundGuests carry dare');
+    ok(!('dare' in EN.roundGuests(newW('dare-n'), CW)[0]), 'no dare → no key');
+    winToW(run, CW, 41); ok(run.dare === null && !EN.guestDef(run, CW, run.order[run.idx], 41).dare, 'next round: cleared'); }
+
+  // ---- 9 客人補償 guestHpSteps [[31,1]] ----
+  eq([EN.trialGuest(CW, 30, 'normal').hp, EN.trialGuest(CW, 31, 'normal').hp, EN.trialGuest(CW, 30, 'boss').hp, EN.trialGuest(CW, 35, 'boss').hp, EN.trialGuest(CW, 99, 'elite').hp], [12, 13, 14, 15, 13], 'guestHpSteps: 30 → 12, 31 → 13, boss 30 → 14, 35 → 15, then no more');
+  eq(EN.trialGuest(Object.assign({}, CW, { trial: Object.assign({}, CW.trial, { guestHpSteps: [[11, 1], [31, 2]] }) }), 40, 'normal').hp, 15, 'steps add up');
+
+  // ---- 10 新手保底 ----
+  { const run = newW('safe', { safety: true }); ok(run.safety === true, 'safety on'); EN.choose(run, CW, EN.bargainPolicy(run, CW));
+    const r0 = run.retryLeft; flose(run, CW); const p = run.pending;
+    ok(p && p.type === 'retry' && p.free && p.safety && p.pos === 1 && run.safety === false && run.retryLeft === r0, 'lose at 1 → free retry (no plea used), only once', p);
+    const r = EN.choose(run, CW, { type: 'retry' }); ok(r.ok && run.retryLeft === r0 && r.effects[0].safety === true, 'retry: retryLeft unchanged', r);
+    flose(run, CW); ok(run.pending.type === 'retry' && !run.pending.free && !run.pending.safety, 'second loss at 1 → normal plea');
+    const s2 = newW('safe2', { safety: true }); winToW(s2, CW, 2); flose(s2, CW); ok(!s2.pending.safety && !s2.pending.free, 'lose at 2 → normal plea');
+    ok(newW('safe3', { safety: true, from: 10 }).safety === false && newW('safe4').safety === false, 'no safety for a checkpoint start or without o.safety');
+    ok(EN.newRun(C, { seedKey: 's5', runNo: 2, ace: 'hall', prologue: false, safety: true }).safety === false, 'content safety off → none'); }
+
+  // ---- 11 中繼點開局 ----
+  { eq([10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(CW, N)), [{ k: 2, m: 4 }, { k: 3, m: 6 }, { k: 4, m: 8 }, { k: 5, m: 10 }, { k: 5, m: 13 }, { k: 5, m: 16 }], 'draftPlan table (§5.6)');
+    const run = newW('cp10', { from: 10, relics: ['dustcover'] });
+    ok(run.cpFrom === 10 && run.pos === 1 && run.prologue === null && run.pending.type === 'draft' && run.pending.k === 2 && run.pending.m === 4 && EN.nextStep(run) === 'draft', 'from 10 → draft, pos stays 1', run.pending);
+    ok(!EN.canBargainPick(run) && !EN.canSwitchAce(run, CW), 'no bargain pick / ace switch during the draft');
+    const j = JSON.parse(JSON.stringify(run)); eq(j.pending, run.pending, 'draft survives JSON');
+    const of = run.pending.offer; ok(of.kind === 'card' && of.cards.length === 2, 'card offer: 2 cards');
+    const r = EN.choose(run, CW, { type: 'draft', cardId: of.cards[0] });
+    ok(r.ok && r.effects.some(x => x.gainCard === of.cards[0]) && run.entered.includes(of.cards[0]) && run.stats.taken.includes(of.cards[0]) && run.found.includes(of.cards[0]), 'draft card: gainCard effect, entered, stats.taken, found (CRITIQUE 1.6)');
+    ok(EN.choose(run, CW, { type: 'draft', cardId: 'nope' }).error === 'notOffered', 'draft: not offered');
+    const L0 = run.level; autoW(run, CW);
+    ok(!run.pending && run.pos === 10 && run.round === 2 && run.idx === 4 && run.level === L0 + 4 && run.retryLeft === 1, 'draft done → at 10, 4 level-ups', { pos: run.pos, lv: run.level });
+    ok(EN.canBargainPick(run), 'bargain pick before 10'); EN.choose(run, CW, EN.bargainPolicy(run, CW));
+    ok(EN.canSwitchAce(run, CW) && EN.switchAce(run, CW, 'pearl').ok, 'can switch ace before the first fight (CRITIQUE 1.6)');
+    ok(EN.classAt(10) === 'boss', 'first guest is the boss');
+    fwin(run, CW); for (let g = 0; g < 10 && run.pending && run.pending.type !== 'stall'; g++) EN.choose(run, CW, EN.runPolicy(run, CW));
+    ok(run.pending && run.pending.type === 'stall' && !run.pending.cp && !run.pending.post.length, 'session after N is not a checkpoint session (CRITIQUE 4.5)', run.pending);
+    // 選秀 0 題：直接跳
+    const z = EN.newRun(Object.assign({}, CW, { waveC: Object.assign({}, CW.waveC, { draft: { k: 0, m: 0 } }) }), { seedKey: 'cpz', runNo: 2, ace: 'hall', from: 20 });
+    ok(!z.pending && z.pos === 20, 'k 0 m 0 → straight to N'); }
+
+  // ---- 12 賣（CRITIQUE 1.5／2.1）：櫃檯、同業調貨、市集三處都走 sellCore ----
+  { const run = newW('sell', { seeds: [] }); winToW(run, CW, 6); run.money = 50000;
+    fakeStall(run, [['trade', 'snack'], ['dig', 'home']]); pickG(run, 0);
+    const plain = run.bag.find(id => !run.gifts.includes(id)), half = EN.sellValue(CW, CW.cards[plain]);
+    eq(EN.sellQuote(run, CW, plain), { ok: false, error: 'notNow' }, 'counter sellQuote during the stall → notNow');
+    const g = run.gifts[0]; let m = run.money, r = act(run, 'sell', { cardId: g });
+    ok(r.ok && run.money === m && !run.gifts.includes(g) && !run.bag.includes(g) && r.effects[0].reclaim === 'gift', 'trade: a gift goes back for $0 and is not a gift any more', r);
+    const id = run.pending.cur.cards[1], pr = EN.priceOf(CW, id); m = run.money;
+    ok(act(run, 'buy', { cardId: id }).ok && run.money === m - pr && run.stats.bought.includes(id) && !run.found.includes(id), 'trade: buy (bought, not found)');
+    m = run.money; ok(act(run, 'sell', { cardId: id }).ok && run.money === m + EN.sellValue(CW, CW.cards[id]), 'trade: sell a bought one = half');
+    const f = run.bag.find(x => !run.gifts.includes(x)); run.found.push(f); m = run.money;
+    ok(act(run, 'sell', { cardId: f }).ok && run.money === m + Math.min(EN.sellValue(CW, CW.cards[f]), 400) && !run.found.includes(f), 'trade: a found one = $400, out of found');
+    run.bag.push(f); eq(EN.sellCore(run, CW, f).earn, EN.sellValue(CW, CW.cards[f]), 'bought back later → half again');
+    act(run, 'done'); act(run, 'ok'); ok(!run.pending && EN.canShop(run), 'stall over → counter open');
+    const f2 = run.bag.find(x => !run.gifts.includes(x) && x !== f); run.found.push(f2);
+    const q = EN.sellQuote(run, CW, f2); ok(q.ok && q.found === true && q.earn === Math.min(EN.sellValue(CW, CW.cards[f2]), 400), 'counter: found → $400 (q.found)', q);
+    m = run.money; r = EN.choose(run, CW, { type: 'sell', cardId: f2 }); ok(r.ok && run.money === m + q.earn && r.effects[0].found === true && !run.found.includes(f2), 'counter sell found', r);
+    // 種子
+    const sd = newW('sell-sd', { seeds: [EN.seedPolicy(CW, Object.keys(CW.cards), 1)[0]] }); winToW(sd, CW, 2); const s0 = sd.seeds[0];
+    m = sd.money; r = EN.choose(sd, CW, { type: 'sell', cardId: s0 }); ok(r.ok && sd.money === m && !sd.seeds.includes(s0) && r.effects[0].reclaim === 'seed', 'counter: seed → $0, not a seed any more', r);
+    // 市集
+    const mk = newW('sell-mk'); winToW(mk, CW, 11); fakeStall(mk, [['snack', 'home'], ['dig', 'gig']], { cp: true, post: ['market', 'studio'] }); pickG(mk, 0); act(mk, 'ok'); act(mk, 'ok');
+    const fm = mk.bag.find(x => !mk.gifts.includes(x)); mk.found.push(fm); m = mk.money;
+    ok(mk.pending.cur.kind === 'market' && act(mk, 'sell', { cardId: fm }).ok && mk.money === m + Math.min(EN.sellValue(CW, CW.cards[fm]), 400), 'market sell = sellCore');
+    ok(act(mk, 'sell', { cardId: 'nope' }).error === 'badSell', 'market sell: not in the bag'); }
+
+  // ---- 13 一趟留一張：不含買的；含撿來的、他掉的 ----
+  { const run = newW('keep-w'); winToW(run, CW, 6); run.money = 50000; fakeStall(run, [['trade', 'snack'], ['dig', 'home']]); pickG(run, 0);
+    const b = run.pending.cur.cards[0]; act(run, 'buy', { cardId: b }); act(run, 'done'); act(run, 'ok');
+    fwin(run, CW); const row = run.pending.cards.slice(); EN.choose(run, CW, { type: 'take', cardId: row[0] }); autoW(run, CW);
+    const k = EN.keepCandidates(run, CW, null);
+    ok(!k.includes(b) && k.includes(row[0]) && row.every(id => k.includes(id) || CW.cards[id].tier), 'keep: not the bought one; the taken and the shown ones are in', { b, k: k.length }); }
+
+  // ---- 14 setCtx（CRITIQUE 1.8）：設了 owned → 金邊、公關片不出擁有的；清掉 → 跟沒設一樣 ----
+  { let tested = 0;
+    for (let s = 1; s <= 80 && tested < 3; s++) {
+      const run = newW('ctx-' + s); EN.choose(run, CW, EN.bargainPolicy(run, CW)); const pre = JSON.stringify(run);
+      fwin(run, CW); const g = run.pending.gold[0]; if (!g) continue; tested++;
+      const a = JSON.parse(pre); EN.setCtx({ owned: id => id === g }); fwin(a, CW); EN.setCtx(null);
+      ok(a.pending.gold.length === 1 && a.pending.gold[0] !== g, 'owned gold card is not offered', [g, a.pending.gold]);
+      const b = JSON.parse(pre); fwin(b, CW); eq(b.pending.cards, run.pending.cards, 'setCtx(null) = never set');
+    }
+    ok(tested === 3, 'found gold rows to test', tested);
+    const run = newW('ctx-promo'); winToW(run, CW, 11); const pre = JSON.stringify(run);
+    fakeStall(run, [['promo', 'snack'], ['dig', 'home']]); pickG(run, 0); const c0 = run.pending.cur.cards.slice();
+    const a = JSON.parse(pre); EN.setCtx({ owned: c0 }); fakeStall(a, [['promo', 'snack'], ['dig', 'home']]); pickG(a, 0); EN.setCtx(null);
+    ok(a.pending.cur.cards.every(id => !c0.includes(id)), 'promo: owned ones skipped (array form)', a.pending.cur.cards);
+    let hit0 = 0, hit1 = 0; const T2 = ['night', 'drive'].filter(Boolean), cells = (CW.tunes && CW.tunes.order) || [];
+    const two = cells.slice(0, 2);
+    for (let s = 0; s < 150; s++) {
+      const x = newW('ctx-t' + s); x.pos = 21; fakeStall(x, [['promo', 'snack'], ['dig', 'home']]); pickG(x, 0); hit0 += x.pending.cur.cards.filter(id => two.includes(CW.cards[id].tune)).length;
+      const y = newW('ctx-t' + s); y.pos = 21; EN.setCtx({ tunes: () => two }); fakeStall(y, [['promo', 'snack'], ['dig', 'home']]); pickG(y, 0); EN.setCtx(null); hit1 += y.pending.cur.cards.filter(id => two.includes(CW.cards[id].tune)).length;
+    }
+    ok(two.length === 2 && hit1 > hit0 * 1.5, 'promo: your two tunes ×3', { two, hit0, hit1 }); void T2; }
+
+  // ---- 15 樂歷基本／runSummary（CRITIQUE 3.4） ----
+  { const r = newW('lx', { from: 10 }); autoW(r, CW); r.pos = 14; r.bestStreak = 3; r.lexp = { gig: 40 };
+    eq(EN.lexpBase(r), 15 * 5 + 8 * 3, 'lexpBase from 10: 15×(14−10+1)+8×3');
+    const sm = EN.runSummary(r); ok(sm.from === 10 && sm.lexp.base === 99 && sm.lexp.gig === 40, 'runSummary.from, lexp with base', sm);
+    const n = newW('lx2'); n.pos = 7; n.bestStreak = 6; eq([EN.lexpBase(n), EN.runSummary(n).from], [15 * 7 + 48, 1], 'lexpBase from 1'); }
+
+  // ---- 16 公關片：effects 是「認識」（shelf），不是 own、不進包包 ----
+  { const run = newW('promo'); winToW(run, CW, 11); fakeStall(run, [['promo', 'snack'], ['dig', 'home']]); pickG(run, 0);
+    const cards = run.pending.cur.cards.slice(), bag = run.bag.slice(), p0 = run.lexp.promo | 0, r = act(run, 'ok');
+    ok(r.ok && r.effects.some(x => JSON.stringify(x.shelf) === JSON.stringify(cards)) && !r.effects.some(x => x.gainCard || x.own) && JSON.stringify(run.bag) === JSON.stringify(bag) && run.lexp.promo === p0 + 10, 'promo: shelf effect (met), not owned, not in the bag, lexp +10', r.effects); }
+
+  // ---- 其他：站點錯誤不動 run、算命、倉庫、home、解鎖階梯、舊 run（fixWaveC）、整趟自動玩 ----
+  { const run = newW('misc'); winToW(run, CW, 6);
+    ok(EN.choose(run, CW, { type: 'stallAct', act: 'ok' }).error === 'noStation' && EN.choose(run, CW, { type: 'stallPick', group: 0 }).error === 'noStallPick' && EN.choose(run, CW, { type: 'draft', pick: 'atk' }).error === 'noDraft', 'no stall/draft → errors');
+    fakeStall(run, [['fortune', 'home'], ['dig', 'snack']]); ok(EN.choose(run, CW, { type: 'stallPick', group: 5 }).error === 'badGroup', 'bad group'); pickG(run, 0);
+    const fb = run.pending.cur.boss; ok(fb && fb.pos === 10 && fb.id === run.order[4] && fb.ratio.c + fb.ratio.o + fb.ratio.h === EN.guestDef(run, CW, fb.id, 10).deck.length && run.fortune === fb, 'fortune: this round boss ratio', fb);
+    ok(EN.roundGuests(run, CW)[4].fortune === fb && !('fortune' in EN.roundGuests(run, CW)[0]), 'roundGuests: fortune on the boss slot');
+    const s0 = JSON.stringify(run); ok(act(run, 'take').error === 'badAct' && JSON.stringify(run) === s0, 'wrong act → unchanged'); act(run, 'ok');
+    ok(act(run, 'ok', { cardId: 'nope' }).error === 'notOffered', 'home: card must be in the bag');
+    const r = act(run, 'ok', { cardId: run.bag[0] }); ok(r.ok && r.effects.some(x => x.nowPlaying === run.bag[0]) && run.lexp.home === 30 && !run.pending, 'home: now playing + lexp 30');
+    const w = newW('wh', { relics: ['dustcover', 'stylus', 'cleaner'] }); winToW(w, CW, 6); fakeStall(w, [['warehouse', 'home'], ['dig', 'snack']]); pickG(w, 0);
+    ok(!w.pending.cur.relics.length && w.pending.cur.cards.length === 2, 'warehouse with 3 relics → two records instead');
+    const L0 = EN.stallLadder(CW, 0), L5 = EN.stallLadder(CW, 12);
+    ok(L0.n === 2 && L0.total === 6 && L0.next.id === 'studio' && L0.next.left === 5 && L5.n === 4 && L5.next.id === 'consign' && L5.next.left === 3 && EN.stallLadder(CW, 30).next === null, 'stall ladder', { L0, L5 }); }
+  { // 舊 run（第 C 波以前存的）：fixWaveC 補欄位；不在卡池的 id 濾掉、各有退路
+    const old = newW('fix'); winToW(old, CW, 2); for (const k of WCK) delete old[k];
+    ok(EN.fixWaveC(old, CW, { bestFar: 23, chestDry: 2 }) && old.far0 === 23 && old.chestDry === 2 && Array.isArray(old.road) && Array.isArray(old.found) && old.safety === false, 'old run: fields filled');
+    ok(EN.fixWaveC(old, CW, {}) === false, 'second call: no change');
+    const r = newW('fix2'); winToW(r, CW, 2); fwin(r, CW); r.pending.cards[1] = 'gone|gone'; r.found.push('gone|x'); r.road.push('gone|y');
+    EN.fixWaveC(r, CW); ok(r.pending.cards.length === 2 && r.pending.src.length === 2 && !r.found.includes('gone|x') && !r.road.includes('gone|y'), 'unknown ids dropped (cards and src together)', r.pending);
+    const z = newW('fix3'); winToW(z, CW, 2); fwin(z, CW); z.pending.cards = ['gone|1']; z.pending.src = ['played']; EN.fixWaveC(z, CW);
+    const m = z.money, k = EN.choose(z, CW, { type: 'skip' }); ok(k.ok && z.money === m + 400, 'all filtered → skip still gives $400');
+    const st = newW('fix4'); winToW(st, CW, 6); fakeStall(st, [['dig', 'snack'], ['home', 'gig']]); pickG(st, 0); const c0 = st.pending.cur.cards.slice();
+    st.pending.cur.cards = ['gone|a', 'gone|b', 'gone|c']; EN.fixWaveC(st, CW);
+    ok(st.pending.cur && st.pending.cur.kind === 'dig' && st.pending.cur.cards.length === 3 && st.pending.cur.cards.every(id => CW.cards[id] && !c0.includes(id)), 'station goods all gone → re-enter the station (fresh goods)', st.pending.cur);
+    const dr = newW('fix5', { from: 10 }); dr.pending.offer.cards = ['gone|a', dr.pending.offer.cards[0]]; EN.fixWaveC(dr, CW); ok(dr.pending.offer.cards.length === 2 && dr.pending.offer.cards.every(id => CW.cards[id]), 'draft card question re-asked'); }
+  { // 整趟自動玩（cPolicy）：每一步都合法、錢不會負、pending 種類對；同一 seed 兩次一樣
+    const play1 = sk => { const run = EN.newRun(CW, { seedKey: sk, runNo: 2, ace: 'pearl', prologue: false }), R = lcg(EN.fnv1a32(sk)), mem = {}; const kinds = new Set();
+      for (let g = 0; g < 6000; g++) {
+        if (run.over && !run.pending) break;
+        if (EN.canBargainPick(run) && !run.duel && !run.pending) { EN.choose(run, CW, EN.bargainPolicy(run, CW)); continue; }
+        const st = EN.nextStep(run);
+        if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { kinds.add(st === 'stall' ? 'stall:' + (run.pending.cur ? run.pending.cur.kind : 'pick') : st); const ch = EN.runPolicy(run, CW); const r = EN.choose(run, CW, ch); if (!ok(r.ok, 'auto play ok', { st, ch, e: r.error })) break; ok(run.money >= 0, 'money ≥ 0'); continue; }
+        if (!st || run.pos > 60) break;
+        if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, CW, 'smart')) EN.choose(run, CW, ch);
+        const f = EN.startFight(run, CW, {}); let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CW));
+        EN.finishFight(run, CW);
+      }
+      return { run, kinds }; };
+    let deep = 0; const seen = new Set();
+    for (let s = 1; s <= 8; s++) { const { run, kinds } = play1('auto-' + s); for (const k of kinds) seen.add(k); if (run.pos >= 11) deep++; ok(run.stats.c && run.stats.c.sess >= Math.floor((run.pos - 1) / 5) - 1, 'sessions counted', run.stats.c && run.stats.c.sess); }
+    ok(deep >= 3 && seen.has('stall:pick') && seen.has('stall:studio') && seen.has('reward'), 'auto runs went deep and through stalls', [...seen].sort());
+    eq(JSON.stringify(play1('auto-1').run), JSON.stringify(play1('auto-1').run), 'same seed → same run (with wave C on)'); }
+  EN.setCtx(null);
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

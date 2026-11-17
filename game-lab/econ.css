@@ -187,3 +187,6 @@
 .ec-line.ec-cl{display:flex;align-items:center;gap:8px;height:26px;line-height:26px;}
 .ec-line.ec-cl .tx{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .ec-drawer .ec-inf{flex:none;font:700 11px/1 var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--ink,#111);background:#fff;border:1px solid var(--ink,#111);padding:6px 8px;min-height:26px;cursor:pointer;}
+/* 第 C 波（SPEC-C §2.2、§5.1）：撿來的（戰利品列、寶箱收的）賣回一律 $400：價下面一行小籤「撿來的」（深金字，白底 ≥4.5） */
+.ec-sv.ec-found{display:flex;flex-direction:column;align-items:center;line-height:1.15;}
+.ec-sv.ec-found small{font:700 9px var(--zh,'Noto Sans TC','PingFang TC',sans-serif);color:var(--gold-ink,#8a6508);letter-spacing:.02em;}

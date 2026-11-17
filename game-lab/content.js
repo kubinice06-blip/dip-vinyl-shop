@@ -310,6 +310,7 @@
     retry: 1,                                       // 老闆說情每輪 1 次（同一位、同一副牌、聲望回到開打前）
     youHp: 12, heal: 3,                             // 你 12 聲望；打贏回 3（＝engine CFG.playerHp）
     guestHp: { normal: 12, elite: 12, boss: 14 },
+    guestHpSteps: [[31, 1]],                        // 第 C 波客人補償（SPEC-C §5.5）：第 31 位起一般／菁英 12→13、藏家 14→15，之後不再長（[[第幾位起, +n], …]；[]＝關）
     xp: { normal: 2, elite: 3, boss: 4 }, levelNeed: 3, levelHp: 1,
     picks: { atk: 1, def: 1, hp: 2 },               // 三選一：品味 +1、底氣 +1、聲望上限 +2（現有聲望也 +2）
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
@@ -1545,6 +1546,114 @@
     // 差一點摘要（第 A 波 4，規劃書三＋四「都是真的資訊，不造假」）：走到的那一列後面的小籤；輸掉那場他剩的聲望與翻盤那一手
     toBreak: '差 {n} 位破紀錄', closeHp: '他只剩 {n} 聲望', flipBy: '第 {k} 手被{e}剋{p}翻盤', flipAt: '第 {k} 手被他翻盤' };
   C.summaryTag = '新';
+
+  // ===================================================================
+  // 第 C 波：獎勵與店內攤位（店主 11-16「全部開始做吧」；規格 scratchpad v5/wave-c SPEC-C；engine.js WAVEC 是同一份預設、全關，wcCfg 逐層合併）
+  //   loot  每打贏一位一般／菁英：戰利品列（三張蓋牌挑一、不收 +$400；15% 金邊盤、12% 紅包）
+  //   chest 打贏藏家：寶箱（三張；8% 鎮店盤格〔九第二波前＝金邊盤〕、30% 金邊；連 5 箱沒有鎮店盤格下一箱必有，跨趟）；藏家帶的頂點卡照 #465 直接收下，寶箱不放頂點卡
+  //   stall 每打完一輪：今天的攤位二選一（花錢站每組最多 1、四站至少一個藍框；第一趟固定；中繼點多市集＋錄音室；這一趟第 30 位起 35% 踢館帖）
+  //   safety 新手保底（上一趟沒到第 10 位：第 1 位輸了免費重打一次）；draft 中繼點開局快速選秀（null＝照公式）
+  //   撿來的盤（戰利品列、寶箱、挖寶攤、倉庫、寄賣領回、選秀收的）櫃檯賣回一律 $400（＝不收）；樂歷 C 波只記帳（save.lexpBank），D 波一次入帳
+  //   ui：畫面字（{n} 等由畫面代入；錢先 E.moneyText）
+  // ===================================================================
+  C.waveC = {
+    loot: { on: true, n: 3, gold: 0.15, packet: 0.12, packetCash: 0.7, packetLexp: 15, skipCash: 400 },
+    chest: { on: true, n: 3, apex: 0.08, gold: 0.30, pity: 5, dareN: 4, dareCash: 5000, skipCash: 400 },
+    pools: { goldPlus: 2, goldMin: 10, goldCap: 12, goodPlus: 1, goodMin: 9, goodCap: 12, powerMin: 6, powerCap: 11, colorMin: 30 },
+    stall: {
+      on: true,
+      weights: { dig: 3, trade: 2, gear: 2, snack: 2, gig: 2, promo: 2, fortune: 1.5, consign: 1, home: 1 },
+      unlock: { promo: 10, consign: 15, dare: 30 },               // promo／consign 看 max(最遠紀錄, 剛打完第幾位)；dare 只給解鎖階梯顯示（出不出照 dare.from）
+      first: [['dig', 'fortune'], ['warehouse', 'home']],          // 第一趟（每一趟打完第 5 位）固定；後面再接錄音室（宵夜換窗邊算命，§14-4）
+      paid: ['trade', 'gear', 'gig'], blue: ['gig', 'promo', 'home'],   // 花錢站每組最多 1 個；四站至少一個藍框（樂歷站）
+      leaveCash: 1000, reroll: 500, skipCash: 400, tradeN: 3, gearN: 2, gearPrice: 3000, snackHp: 3,
+      gig: { base: 3000, step: 1000, lexp: 20, keep: 4000 },       // 第 k 張 $3,000＋$1,000×(k−1)，整趟累計；keep＝「買到剩 $4,000」
+      promoN: 3, promoLexp: 10, homeLexp: 30, demoLexp: 15, consignRounds: 2,
+      market: { cards: 6, gear: 3, bag: { price: 2500, n: 3, apex: 0.06, max: 1 } },
+      dare: { from: 30, p: 0.35, tough: { atk: 1 }, tank: { hp: 4 } },   // from 看「這一趟剛打完第幾位」，不看最遠紀錄
+      digNames: [                                                  // 攤名＝曲風／地區 ×3（不是篩選）；lit＝店裡跟著亮的箱（shops/dip.json prop id）
+        { id: 'jazzTeacher', genres: ['jazz'], lit: ['crate-jazz'] },
+        { id: 'bandRoom', genres: ['rock'], lit: ['isl-0a'] },
+        { id: 'djAbroad', genres: ['electronic', 'hiphop'], lit: ['isl-0b', 'isl-1b'] },
+        { id: 'oldRadio', region: ['tw', 'zh'], lit: ['crate-tw'] },
+        { id: 'grandpa', genres: ['pop', 'soul', 'blues'], lit: ['isl-1a', 'winbin'] },
+        { id: 'classicalStudy', genres: ['classical'], lit: ['isl-2b'] },
+        { id: 'backpacker', genres: ['world'], lit: ['isl-3a'] },
+        { id: 'closedShop', lit: [] }] },                          // 不加權
+    safety: { on: true },
+    draft: { k: null, m: null, mRate: 0.8 },
+    ui: {
+      // 戰利品列（掉落字幕沿用 C.script.drop G1，店主句一字不改）
+      take: '收這張',
+      skip: '不收（+${n}）',
+      orRelic: '或改拿一件發燒配件',                              // 菁英（relic）
+      firstLoot: '包包越厚，好牌越難抽到。不收也有 ${n}。',         // 老闆，第一次出戰利品列說一次（save.seen）
+      foundSell: '賣給老闆 ${n}（撿來的）',                        // 櫃檯價籤：撿來的一律 $400
+      foundTag: '撿來的',                                          // 櫃檯「賣給老闆」格子上的小籤（介面 A 加；確認鈕寫 foundSell）
+      packetCash: '酬勞再給一次',
+      packetLexp: '樂歷經驗 +{n}（之後開放）',
+      // 戰利品列、寶箱的面板（介面 A 加；loot.js）
+      lootTitle: '他掉的唱片：挑一張收進包包',
+      lootFlip: '點一下翻開',                                       // 蓋著那張的說明（讀屏、小字）
+      xpGain: '經驗 +{n}',                                          // 音符旁邊那個數
+      upHint: '收了包包會變強',                                     // 角落「↑」（bagScore 會漲才畫）
+      shelfPlus: '唱片櫃 +{n}',                                     // 不收：三張飛向唱片牆
+      chestTitle: '藏家的木箱：挑一張收進包包',
+      chestOpen: '點一下掀開',
+      // 寶箱
+      chestRelic: '改拿一件配件',                                  // 寶箱第二顆鈕（relic）
+      chestPity: '這箱有好東西。',
+      dareDone: '踢館帖撐完 +${n}',
+      // 今天的攤位（底部面板）
+      stallTitle: '今天的攤位',
+      stallHint: '選一邊，另一邊今天就收了。',
+      left: '左邊', right: '右邊', pickThis: '就這組',
+      priceFree: '免費', priceFrom: '${n} 起', priceLexp: '樂歷',
+      leave: '今天不逛了（剩下每攤 +${n}）',
+      leaveAsk: '今天不逛了？剩下的攤位每攤給你 ${n}。',
+      leaveYes: '不逛了', leaveNo: '再看看',
+      busy: '先逛完今天的攤位。',                                   // 攤位中點箱子、收音機、櫃檯、對戰台
+      done: '逛完了',
+      lexpLater: '樂歷經驗 +{n}（之後開放）',
+      // 各站的鈕與小字
+      reroll: '再翻一次（${n}）',
+      sellOne: '賣一張給他',
+      relicFull: '配件滿 3 件，先選一件半價賣掉。',                  // 器材行、市集器材（relic）
+      snackBtn: '聲望 +{n}',
+      gigBuy: '買 {k} 張（${n}）',
+      gigKeep: '買到剩 ${n}',
+      gigNone: '先不買',
+      promoNote: '收進唱片櫃，認識一下。',
+      fortuneRatio: '經典 {c}・冷門 {o}・硬蕊 {h}',
+      fortuneAce: '他帶的王牌',
+      consignPick: '挑一張寄賣',
+      consignBack: '寄賣到期，三張挑一張。',
+      homePick: '挑一張放上去',
+      dareTough: '狠角色（品味 +{n}）', dareTank: '耐打（聲望 +{n}）', dareNo: '不接',
+      marketTabs: ['唱片', '器材', '門票', '福袋'],
+      bagBuy: '福袋 ${n}',
+      demo: '錄了一段 demo。樂歷經驗 +{n}（之後開放）',            // 錄音室（C 波自動帶過，浮一行）
+      // 新手保底
+      safety: '第一位不算，再來一次。', safetyBtn: '再來一次',
+      // 中繼點開局
+      cpTitle: '從哪裡開始？', cpFirst: '第 1 位（從頭）', cpAt: '第 {n} 位（中繼點）',
+      draftCard: '補到第 {n} 位：挑一張唱片 {i}/{k}', draftLevel: '補到第 {n} 位：升級 {i}/{m}',
+      cpFrom: '這一趟從第 {n} 位開始',                             // 結算頁
+      // 解鎖階梯（標題頁、結算頁一行；E.stallLadder）
+      ladder: '店內攤位 {a}/{b}｜再走 {n} 位開{name}', ladderAll: '店內攤位 {a}/{b}'
+    },
+    // 站名（底部面板站牌、小面板標題、解鎖階梯 {name}）
+    stations: { stall: '攤位', dig: '挖寶攤', trade: '同業調貨', gear: '器材行', snack: '宵夜', gig: '演唱會', promo: '公關片', fortune: '窗邊算命',
+      consign: '寄賣', consignGet: '寄賣簿', home: '店裡唱盤', dare: '踢館帖', warehouse: '老闆的倉庫', market: '黑膠市集', studio: '錄音室' },
+    // 站主一句（≤16 字）
+    stationLines: { dig: '一箱翻到底，喜歡就帶走。', trade: '這幾張我只賣懂的人。', gear: '這批唱針剛到，要不要？', snack: '先吃碗麵線，再回去拚。',
+      gig: '今晚這場，聽完再顧店。', promo: '公關片來了，聽聽看。', fortune: '下個藏家？我看看……', consign: '放這裡，兩輪後回來換。',
+      home: '放一張，把今天記下來。', dare: '下一輪都是來踢館的，接不接？', warehouse: '倉庫翻到的，挑一件帶走。', market: '攤位全擺出來了，慢慢挑。' },
+    // 挖寶攤攤名（全部虛構，不放真實店名）
+    digTitles: { jazzTeacher: '退休老師的爵士櫃', bandRoom: '解散樂團的團練室', djAbroad: '要出國的 DJ', oldRadio: '老電台的片庫',
+      grandpa: '阿公的西洋老歌', classicalStudy: '古典樂迷的書房', backpacker: '背包客的世界音樂', closedShop: '收掉的小唱片行' }
+  };
+  C.waveCTag = '新';
 
   // ===================================================================
   // 頂點卡純輔助卡試做（店主 11-15「三流派先各挑十～二十張賦予特殊能力試試看；純輔助卡，不是七星卡」；只在網址 ?apex=1 生效）。

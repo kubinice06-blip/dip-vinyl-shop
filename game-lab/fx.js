@@ -276,6 +276,12 @@
     flip(c) { noise(c, { d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); noise(c, { t: 0.09, d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); },
     // 錢幣聲（第 A 波 4：錢跳數字入帳）：方波兩下短音 B5→E6（像撿到金幣）；o.k＝第幾下（0–4），每下升兩個半音
     coin(c, o) { const k = Math.pow(2, (2 * ((o && o.k) | 0)) / 12); tone(c, { type: 'square', f: NOTE.B5 * k, d: 0.05, g: 0.12, a: 0.001 }); tone(c, { type: 'square', f: NOTE.E6 * k, t: 0.05, d: 0.11, g: 0.12, a: 0.001 }); },
+    // 第 C 波（SPEC-C §4.5；戰利品列、寶箱，loot.js）：主體都在 400 Hz 以上（手機喇叭）
+    //   啵：地上跳出一樣東西（o.k＝第幾樣，一次比一次高兩個半音）；入袋：收一張進包包；木箱：寶箱落地／掀蓋；叮：金邊盤翻開
+    pop(c, o) { const k = Math.pow(2, (2 * ((o && o.k) | 0)) / 12); tone(c, { type: 'triangle', f: 520 * k, f2: 980 * k, d: 0.06, g: 0.3, a: 0.002 }); noise(c, { d: 0.02, g: 0.12, filter: { type: 'highpass', f: 3000 } }); },
+    pocket(c) { noise(c, { d: 0.07, g: 0.22, filter: { type: 'bandpass', f: 1600, f2: 700, q: 0.9 } }); tone(c, { type: 'triangle', f: 660, f2: 440, t: 0.04, d: 0.09, g: 0.26, a: 0.003 }); },
+    crate(c) { noise(c, { d: 0.09, g: 0.4, filter: { type: 'bandpass', f: 700, q: 0.8 } }); tone(c, { type: 'square', f: 420, f2: 260, d: 0.08, g: 0.22, filter: { type: 'lowpass', f: 1800 } }); noise(c, { t: 0.1, d: 0.05, g: 0.25, filter: { type: 'bandpass', f: 1100, q: 1 } }); },
+    ding(c) { [NOTE.E6, NOTE.B5 * 2].forEach((f, i) => tone(c, { f, t: i * 0.07, d: 0.5, g: 0.16, a: 0.002 })); },
     // 收音機轉台（v5 第六項第二期）：照主站頻率光譜 sfxTurn 的做法——帶通雜訊往上掃（沙沙轉過電台）＋一條很輕的嘯聲，最後兩下短「卡」對上頻率
     tune(c) {
       noise(c, { d: 0.42, g: 0.16, a: 0.03, curve: 'lin', filter: { type: 'bandpass', f: 600, f2: 2400, q: 1.4 } });
