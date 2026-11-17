@@ -2165,3 +2165,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。
+
+## sd-084（30 張，其餘：Prince Jazzbo、Princess Sharifa、Alex Bradford、Harold Boggs 3、Project Lazarus 2、Prolapse、Providence、Proxyon 2、Prysm 4、Purl、Purrple Cat 9、Quantec、Quasar、quasimode 2）— s45
+
+- 研究：3 支 Sonnet，WebSearch 15＋9＋10＝34 次；none 只有 Princess Sharifa story、Purrple Cat《Sleep Tight》story／sound。
+- **主線補查**（WebSearch 8 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Prince Jazzbo（Discogs API 原版：封底印 King Tubby 錄音室混音、Bunny Lee 與 Jazzbo 製作；reggaerecord 亦列 Bunny Lee）→ 舊稿 Bunny Lee 製作屬實；Harold Boggs 三張（Journal of Gospel Music 長文：全盲、母親創立的教會、Nashboro 十張的第一／四／八張、唱法越來越急切）→《Lord Give Me Strength》story ok；Prysm（多份 de Bethmann 傳記：1998 Django d'Or 年度團體、Blue Note 四張）；Quasar（MLWZ Kev Rowland 樂評：Turner 一人寫全部歌曲、龐克後英國樂評無視前衛搖滾、早於 IQ／Marillion 出片、Genesis 式鍵盤、製作偏薄）→ story／sound 升 ok；quasimode《daybreak》查無訪談（OTOTOY 2009-12-01 頁是 bonobos）；Purrple Cat《Sleep Tight》官網只有外連。
+- **薄寫上線不留置**（delayde 前例）：Princess Sharifa、Alex Bradford、Purrple Cat 九張（166–199 字，各張以 Bandcamp 一句文案的場景錯開，不編樂器、不寫匿名與出身地）、Proxyon《The Return of Tarah》、Project Lazarus《К солнцу, к звездам》。
+- 事實裁定：Providence 是日本 neo-prog 團（派工特注寫荷蘭是協調端誤記），Atoll 吉他手客席寫「據說」；Princess Sharifa 不寫蘇格蘭出生與 1969 生年；Boggs 不寫 Clapton〈Give Me Strength〉（單一轉述）；Proxyon 製作人只寫 van der Kuy 與 Rob van Eijk、〈Space Fly〉致敬 Space 不寫；Prysm 不寫團名由來；quasimode《daybreak》barks.jp 列 2009-12-02 發行（Jazz Music Archives 列 2010），正文不寫年份、客座不寫國籍；《mode of blue》不寫小松正人。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-084.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quantec《Journey of Mind》 | 刪「原版是 100 張手工編號的 CD-R」「回收紙板包裝」 | 版本與封套雜項 |
+| Purrple Cat《Cat Nap》 | 鉤子去掉「Bandcamp 頁面只寫了這一句」的破折號結構 | 鉤子不靠頁面說明 |
+| Prysm《Time》 | 鉤子由管理顧問轉行改為三人分頭寫曲、奇數拍 | 與《Prysm》鉤子撞材料 |
+| Prysm《Prysm》 | 「La Défense 首獎」→「最佳樂團獎」；刪「獲 Django d'Or 提名」；補《Prysm》 | 來源是最佳獨奏與最佳樂團；提名只見搜尋摘要；QA 無《》 |
+| Prysm《On Tour》 | 「激烈的六年過後」→「之後」 | 與「七年」自相矛盾 |
+| Proxyon《Proxyon》 | 補《Proxyon》，刪「常與 Koto 並列」壓回 235 字 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Jazzbo 吟誦不唱、Ariwa 最老的黑人廠牌、Little Richard 學唱腔、1958 同名單曲、停巡演回教會、全盲、第九行星太空人、第一張就往太空、單曲變專輯、女聲與 mellotron、Laserdance 作曲者另開線、換製作人、三百多場、管理顧問、〈Extension〉貝斯開場、Purl 自寫短詩、Purrple Cat 九張各自場景、老合成器、早於 IQ／Marillion、能跳舞的 JAZZ、Blue Note 70 週年）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-084.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
