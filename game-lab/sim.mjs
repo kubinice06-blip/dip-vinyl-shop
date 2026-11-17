@@ -54,6 +54,7 @@
 //   --talent '{"atk":1,"def":1,"hp":1,"plea":1,"xp":2}'  樂歷主幹固定檔位（每一趟都帶；newRun talent，engine applyTalent）。序章那場也帶（sim 照舊每趟打序章；真人第 1 趟沒有天賦）
 //   --ladder L｜'{"seedMax":4,"relicPick":3,"goldAdd":0.01}'  樂歷階梯那幾項：數字＝樂歷 Lv L 開了的（engine talentArgs 去掉天賦）；JSON＝直接給
 //   --seeds k:rarity  k 的上限＝seedMax（--ladder 給的，沒給＝CFG.seedMax 3）
+//   --i0 k  趟的編號從 k 起（seedKey sim5-<k+i>；另一批獨立的客人，跟 --i0 0 的合併＝加大樣本；C1 第 75 位的 cpbase 用）
 //   --posmax N  JSON 每格 pos（每一位的到過／首戰／死亡率）存到第 N 位（預設 60；C1 的 --cpbase 要 --from＋10 位，量第 75／100 位中繼點用 --posmax 120）
 //   給了 --talent／--ladder 或 --tier 時多印「到第 21 位（打倒第 20 位藏家）」表（試煉過關率）＋每趟樂歷（基本／路線）；JSON 每格多 reach21、lexp。沒給時輸出跟以前一字不差
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
@@ -210,6 +211,8 @@ if (LADDER_ARG != null) {
 }
 const SEED_MAX = LADDER && LADDER.seedMax > 0 ? LADDER.seedMax | 0 : CFG.seedMax;
 const POSMAX = +arg('posmax', 60);
+const I0 = +arg('i0', 0);                                                 // 第 D 波：趟的編號從 i0 起（另一批獨立的客人；跟 i0 0 的同 n 合併＝加大樣本）
+if (!(Number.isInteger(I0) && I0 >= 0)) { console.error('--i0 k（非負整數）'); process.exit(2); }
 if (!(Number.isInteger(POSMAX) && POSMAX >= 1)) { console.error('--posmax N（正整數）'); process.exit(2); }
 const D1EX = !!(TALENT || LADDER || TIER);                                  // 多印「到第 21 位」＋樂歷表、JSON 多 reach21／lexp
 const SEEDS_ARG = arg('seeds', null);
@@ -520,7 +523,7 @@ function runCell(pol, flow, n) {
   }
   if (WC_ON) A.cw = { dare: { f: 0, w: 0 }, plain: { f: 0, w: 0 } };   // 第 C 波（全關不記、JSON 不多欄位）
   const recs = [];
-  for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, i, A));
+  for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, I0 + i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
   const share = (arr, p) => (arr.length ? arr.filter(p).length / arr.length : null);
   const avg = k => recs.reduce((s, r) => s + r[k], 0) / n;
@@ -662,6 +665,7 @@ if (SEEDS) report.seeds = Object.assign({}, SEEDS, { example: seedsFor(0) });
 if (TALENT) report.talent = TALENT;                                        // 第 D 波（沒給＝JSON 跟以前一樣）
 if (LADDER) report.ladder = LADDER;
 if (POSMAX !== 60) report.posmax = POSMAX;
+if (I0) report.i0 = I0;
 if (WANT_N) report.want = WANT_N;
 if (WC_ON) report.waveC = WCC;                                             // 第 C 波：開著才多這些鍵（--wc off 時 JSON 跟 C 波之前一樣，只差 trial.guestHpSteps）
 if (COPT_SET) report.copt = COPT;
