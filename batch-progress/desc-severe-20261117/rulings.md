@@ -806,3 +806,31 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-022.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
+
+## sd-027（30 張，經典度≥4：Bodkin、Bold、BONES、Bongwater、Boo Williams、Booker Little、Boredoms、Born Against、Boua Xou Mua、Brain Failure、Bread、Brigada Víctor Jara、Brighter、BROCKBEATS、Huberman、Brother Ah、Budapest String Quartet、Budka Suflera、Bulldog Breed、Bunny Wailer、Byron Stingily、C.O.B.、Canarios、Candido 2、Cannon's Jug Stompers、Captain Funk、Carl Perkins、Carmell Jones、CASHFORGOLD）— s16
+
+- 研究：3 支 Sonnet，派工詞預告「整組 15–25 次」，WebSearch 16＋16＋16＝48 次；無 none。
+- **主線補查 6 張**（WebSearch 8 次＋WebFetch，facts 標【主線補查】）：Booker Little（維基：Manassas 高中、1958 年回 Roach 團與曼菲斯老友 George Coleman 重聚）、Boredoms《Pop Tatari》（RBMA：1992 年 Warner Japan 簽約、Katznelson 欲簽 Reprise、「大廠最不商業的專輯之一」）、BONES《Rotten》（The Fader：發片速度、Mediafire 連結、不上 iTunes）、BROCKBEATS（官網：Vinyl-Digital、廣告與電視配樂；The Find Mag 聲音描述）、Brother Ah（Twisted Soul：七段「聲音旅程」講戒毒與出家的掙扎；90 人合唱團、Max Roach、M'Boom）。Brain Failure 主線再搜一次中文仍查無專輯層級資料，照研究稿薄寫（只寫樂團風格，年份寫「2000 年代初」）。Candido《Thousand Finger Man》、Captain Funk 研究稿已有足夠骨幹，未再補。
+- 身分／事實裁定：Bodkin 壓量 100／200／500 各說不一，寫「壓量極少」；Bold 不寫「唯一完整專輯」；Boredoms 是第三張全長作；Booker Little 只寫「三首自作」；Budapest 寫 1940 年錄、1953 年出 LP，刪 78 轉；Brigada 是葡萄牙樂團、不寫樂器配置；Brother Ah 寫 1972、不指定哪一面有 Max Roach；Budka 不寫「隔年組 Lady Pank」；Carl Perkins 兄弟寫名不寫長幼；C.O.B. 1971 年 11 月；CASHFORGOLD 底特律近郊。
+- 前台：開工前先打 `/album-desc` 查過 sd-027／028 共 60 張，全是 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 31 處，改動檔 `review-sd-027.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Hmong、Huberman、Budapest、Bulldog Breed、Bunny Wailer、Cannon's、Captain Funk、Carmell Jones、Booker Little、Born Against、Budka Suflera | 第二句「這張／這是／這套」→ 以《盤名》起句（Budka、Bulldog、Bunny、Captain Funk、Budapest、Booker Little、Born Against 原稿全文沒有盤名），連帶刪句壓回 240（Hmong 教學童、Huberman 慢樂章與華彩、Budapest 俄羅斯陣容與暢銷團體、Bulldog 錄音年與「短命」、Bunny 錄音地、Cannon's 末句評價、Captain Funk 上班背景、Perkins 收錄〈Blue Suede Shoes〉、Carmell Jones 搬到洛杉磯等） | 第二句要有盤名；字數 |
+| Bodkin | 「原版只壓了幾百張」→「原版壓量極少」 | 壓量各說不一 |
+| Bold | 「唯一一張完整專輯，常被視為」→「改名後的第一張 LP，被視為」 | 研究稿無「唯一」出處；單一出處（Revelation） |
+| BONES | 「多半只附一個下載連結」→「有時只附」 | Fader 原文 sometimes |
+| Boo Williams、Booker Little、Boredoms、Cannon's | 「常被」→「被」 | 單一出處 |
+| Boredoms | 「正弦波與高頻噪音」→「正弦波與噪音裝置」 | 研究稿無「高頻」 |
+| Budapest | 刪「先出 78 轉」 | 版本雜項 |
+| Budka Suflera | 刪「當時已在籌組 Lady Pank」 | Borysewicz 自述只說 Lady Pank 起步時他已在離團 |
+| Carl Perkins | 「兩個哥哥」→「兄弟 Jay、Clayton」；「集結成冊」→「集結成專輯」 | Clayton 是弟弟 |
+
+其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50，材料取自故事（Gates 父親葬禮、McTell 抱怨樂團、Perkins 車禍、Torgerson 封城時在母親家錄音）、概念（Canarios 四季換人生四階段、Born Against 盤名反諷）、聲音或地位；查無軌序、曲長、盤號、評分。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-027.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處（23 檔）。

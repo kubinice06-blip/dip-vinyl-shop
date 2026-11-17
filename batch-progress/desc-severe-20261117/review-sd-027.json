@@ -1,10 +1,284 @@
 [
- {"key":"bodkin|bodkin","old":"原版只壓了幾百張","new":"原版壓量極少","why":"壓量 100／200／500 各說不一，不落數字"},
- {"key":"bold|speak out","old":"是這支 straight edge 樂團唯一一張完整專輯，常被視為","new":"是這支 straight edge 樂團改名後的第一張 LP，被視為","why":"「唯一完整專輯」研究稿無出處；單一出處（Revelation）不寫「常」"},
- {"key":"bones|rotten","old":"多半只附一個下載連結","new":"有時只附一個下載連結","why":"Fader 原文 sometimes"},
- {"key":"boo williams|home town chicago lp","old":"常被推薦為","new":"被推薦為","why":"單一出處（Bandcamp Daily）"},
- {"key":"booker little & max roach|booker little 4 & max roach","old":"常被形容為","new":"被形容為","why":"單一出處（AllMusic）"},
- {"key":"boredoms|pop tatari","old":"它常被視為","new":"它被視為","why":"單一出處（RBMA）"},
- {"key":"boredoms|pop tatari","old":"正弦波與高頻噪音","new":"正弦波與噪音裝置","why":"研究稿只有 sine wave 與「隨機的噪音裝置」，無「高頻」"},
- {"key":"boua xou mua|the music of the hmong people of laos","old":"這張 1995 年由 Arhoolie 發行的 CD，錄自","new":"《The Music of the Hmong People of Laos》1995 年由 Arhoolie 發行，錄自","why":"第二句要有盤名"}
+ {
+  "key": "bodkin|bodkin",
+  "old": "原版只壓了幾百張",
+  "new": "原版壓量極少",
+  "why": "壓量 100／200／500 各說不一，不落數字"
+ },
+ {
+  "key": "bold|speak out",
+  "old": "是這支 straight edge 樂團唯一一張完整專輯，常被視為",
+  "new": "是這支 straight edge 樂團改名後的第一張 LP，被視為",
+  "why": "「唯一完整專輯」研究稿無出處；單一出處（Revelation）不寫「常」"
+ },
+ {
+  "key": "bones|rotten",
+  "old": "多半只附一個下載連結",
+  "new": "有時只附一個下載連結",
+  "why": "Fader 原文 sometimes"
+ },
+ {
+  "key": "boo williams|home town chicago lp",
+  "old": "常被推薦為",
+  "new": "被推薦為",
+  "why": "單一出處（Bandcamp Daily）"
+ },
+ {
+  "key": "booker little & max roach|booker little 4 & max roach",
+  "old": "常被形容為",
+  "new": "被形容為",
+  "why": "單一出處（AllMusic）"
+ },
+ {
+  "key": "boredoms|pop tatari",
+  "old": "它常被視為",
+  "new": "它被視為",
+  "why": "單一出處（RBMA）"
+ },
+ {
+  "key": "boredoms|pop tatari",
+  "old": "正弦波與高頻噪音",
+  "new": "正弦波與噪音裝置",
+  "why": "研究稿只有 sine wave 與「隨機的噪音裝置」，無「高頻」"
+ },
+ {
+  "key": "boua xou mua|the music of the hmong people of laos",
+  "old": "這張 1995 年由 Arhoolie 發行的 CD，錄自",
+  "new": "《The Music of the Hmong People of Laos》1995 年由 Arhoolie 發行，錄自",
+  "why": "第二句要有盤名"
+ },
+ {
+  "key": "budka suflera|za ostatni grosz",
+  "old": "這支盧布林搖滾團 1981 年錄音、1982 年由 Tonpress 發行",
+  "new": "《Za ostatni grosz》是這支盧布林搖滾團的第五張專輯，1982 年由 Tonpress 發行",
+  "why": "全文無盤名，第二句補盤名"
+ },
+ {
+  "key": "budka suflera|za ostatni grosz",
+  "old": "，當時已在籌組 Lady Pank",
+  "new": "",
+  "why": "Borysewicz 自述只說 Lady Pank 起步時他已在離團；壓字數"
+ },
+ {
+  "key": "budka suflera|za ostatni grosz",
+  "old": "吉他簡單俐落，",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "bulldog breed|made in england",
+  "old": "這支英國迷幻流行搖滾團只出過這一張",
+  "new": "《Made in England》是這支英國迷幻流行搖滾團唯一的專輯",
+  "why": "全文無盤名"
+ },
+ {
+  "key": "bunny wailer|sings the wailers",
+  "old": "這張 1980 年發行",
+  "new": "《Sings the Wailers》1980 年發行",
+  "why": "全文無盤名"
+ },
+ {
+  "key": "cannon's jug stompers|the complete works: 1927-1930",
+  "old": "這套合集收齊",
+  "new": "《The Complete Works: 1927-1930》收齊",
+  "why": "第二句要有盤名"
+ },
+ {
+  "key": "cannon's jug stompers|the complete works: 1927-1930",
+  "old": "常被視為最好的",
+  "new": "被視為最好的",
+  "why": "單一出處（Mainly Norfolk）"
+ },
+ {
+  "key": "captain funk|tatsuya oe presents an encounter with captain funk",
+  "old": "首張專輯同年 4 月由 Music Mine／Sublime 發行，Captain Funk 的名義由此誕生。",
+  "new": "《Tatsuya Oe Presents An Encounter With Captain Funk》是他同年 4 月的首張專輯，Captain Funk 的名義由此誕生。",
+  "why": "全文無盤名"
+ },
+ {
+  "key": "captain funk|tatsuya oe presents an encounter with captain funk",
+  "old": "他一邊在廣告公司上班一邊用筆電做音樂，養分是",
+  "new": "他的養分是",
+  "why": "壓字數"
+ },
+ {
+  "key": "carl perkins (rockabilly)|dance album of carl perkins",
+  "old": "集結成冊",
+  "new": "集結成專輯",
+  "why": "用詞"
+ },
+ {
+  "key": "carl perkins (rockabilly)|dance album of carl perkins",
+  "old": "他與兩個哥哥和鼓手",
+  "new": "他與兄弟 Jay、Clayton 和鼓手",
+  "why": "Clayton 是弟弟，研究稿只列兩兄弟"
+ },
+ {
+  "key": "carmell jones|the remarkable carmell jones",
+  "old": "這是他首張",
+  "new": "《The Remarkable Carmell Jones》是他首張",
+  "why": "第二句要有盤名"
+ },
+ {
+  "key": "carmell jones|the remarkable carmell jones",
+  "old": "，與 Land 融合得好，節奏組一路搖擺",
+  "new": "，節奏組一路搖擺",
+  "why": "壓字數"
+ },
+ {
+  "key": "booker little & max roach|booker little 4 & max roach",
+  "old": "這是他掛名領銜的第一張專輯，",
+  "new": "《Booker Little 4 & Max Roach》是他掛名領銜的第一張專輯，",
+  "why": "第二句要有盤名"
+ },
+ {
+  "key": "booker little & max roach|booker little 4 & max roach",
+  "old": "，Roach 火熱的鼓聲推著整張前進",
+  "new": "，Roach 的鼓聲推著整張前進",
+  "why": "壓字數"
+ },
+ {
+  "key": "born against|nine patriotic hymns for children",
+  "old": "盤名叫給孩子的愛國讚美詩，唱的卻是種族分裂、墮胎權與死刑。這是紐約硬核樂團",
+  "new": "盤名叫給孩子的愛國讚美詩，唱的卻是種族分裂、墮胎權與死刑。《Nine Patriotic Hymns for Children》是紐約硬核樂團",
+  "why": "第二句要有盤名"
+ },
+ {
+  "key": "born against|nine patriotic hymns for children",
+  "old": "他們常被視為影響了 Refused 等後來的團。",
+  "new": "他們被視為影響了 Refused 等後來的團。",
+  "why": "壓字數"
+ },
+ {
+  "key": "boua xou mua|the music of the hmong people of laos",
+  "old": "，在當地教學童 Hmong 文化",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "boua xou mua|the music of the hmong people of laos",
+  "old": "把六根彎曲竹管插在木製風箱上的簧管樂器",
+  "new": "六根彎竹管插在木風箱上的簧管樂器",
+  "why": "壓字數"
+ },
+ {
+  "key": "boua xou mua|the music of the hmong people of laos",
+  "old": "以及笛子、口簧琴和用香蕉葉吹出的旋律",
+  "new": "以及笛子、口簧琴和香蕉葉吹奏",
+  "why": "壓字數"
+ },
+ {
+  "key": "bronisław huberman|violin concertos",
+  "old": "這張收錄這位師從 Joseph Joachim 的波蘭小提琴家",
+  "new": "《Violin Concertos》收錄這位師從 Joseph Joachim 的波蘭小提琴家",
+  "why": "第二句要有盤名"
+ },
+ {
+  "key": "bronisław huberman|violin concertos",
+  "old": "，速度隨性變動，慢樂章內斂；",
+  "new": "，速度隨性變動；",
+  "why": "壓字數"
+ },
+ {
+  "key": "budapest string quartet|ravel: quartet in f major / debussy: quartet in g minor",
+  "old": "拉威爾與德布西的弦樂四重奏都在 1940 年於紐約錄成，先出 78 轉，1953 年才出成 LP。",
+  "new": "《Ravel: Quartet in F Major / Debussy: Quartet in G Minor》的兩首都在 1940 年於紐約錄成，1953 年才出成 LP。",
+  "why": "全文無盤名；78 轉屬版本雜項，刪"
+ },
+ {
+  "key": "budapest string quartet|ravel: quartet in f major / debussy: quartet in g minor",
+  "old": "，長年是 Columbia 的古典暢銷團體",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "bulldog breed|made in england",
+  "old": "，1969 年錄音，1970 年初由 Decca 旗下短命的 Deram Nova 發行",
+  "new": "，1970 年初由 Decca 旗下的 Deram Nova 發行",
+  "why": "壓字數"
+ },
+ {
+  "key": "bulldog breed|made in england",
+  "old": "比起當年的前衛搖滾更接近 1966–67 年的 mod 口味",
+  "new": "更接近 1966–67 年的 mod 口味",
+  "why": "壓字數"
+ },
+ {
+  "key": "bunny wailer|sings the wailers",
+  "old": "，在 Kingston 錄音，把",
+  "new": "，把",
+  "why": "壓字數"
+ },
+ {
+  "key": "captain funk|tatsuya oe presents an encounter with captain funk",
+  "old": "他的養分是當 DJ 時聽的 rare groove、disco 與 hip hop。",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "carl perkins (rockabilly)|dance album of carl perkins",
+  "old": "，包括〈Blue Suede Shoes〉",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "carmell jones|the remarkable carmell jones",
+  "old": "，五重奏裡有次中音薩克斯風手 Harold Land 與貝斯手 Gary Peacock",
+  "new": "，五重奏裡有次中音薩克斯風手 Harold Land 與 Gary Peacock",
+  "why": "壓字數"
+ },
+ {
+  "key": "carmell jones|the remarkable carmell jones",
+  "old": "Jones 音色溫暖而篤定，節奏組一路搖擺；",
+  "new": "Jones 音色溫暖而篤定；",
+  "why": "壓字數"
+ },
+ {
+  "key": "booker little & max roach|booker little 4 & max roach",
+  "old": "當時他約 20 歲，剛從音樂院畢業回到 Roach 的樂團，也和",
+  "new": "他剛從音樂院畢業回到 Roach 的樂團，和",
+  "why": "壓字數"
+ },
+ {
+  "key": "booker little & max roach|booker little 4 & max roach",
+  "old": "他的小號建立在 Brown 的 bebop 語法上，",
+  "new": "他的小號承自 Brown，",
+  "why": "壓字數"
+ },
+ {
+  "key": "born against|nine patriotic hymns for children",
+  "old": "，攻擊性的訊息為他們招來注意也招來敵意",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "bronisław huberman|violin concertos",
+  "old": "兩份重要的協奏曲錄音",
+  "new": "兩份協奏曲錄音",
+  "why": "壓字數"
+ },
+ {
+  "key": "bronisław huberman|violin concertos",
+  "old": "、華彩技巧華麗",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "budapest string quartet|ravel: quartet in f major / debussy: quartet in g minor",
+  "old": "，這時是四位俄羅斯樂手的陣容",
+  "new": "",
+  "why": "壓字數"
+ },
+ {
+  "key": "cannon's jug stompers|the complete works: 1927-1930",
+  "old": "這批錄音被視為最好的 jug band 錄音之一。",
+  "new": "",
+  "why": "壓字數；與鉤子重複"
+ },
+ {
+  "key": "carmell jones|the remarkable carmell jones",
+  "old": "，搬到洛杉磯後被",
+  "new": "，被",
+  "why": "壓字數"
+ }
 ]
