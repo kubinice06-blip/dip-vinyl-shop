@@ -1,388 +1,577 @@
 [
- {
-  "key": "moskwa|nigdy!",
-  "artist": "Moskwa",
-  "album": "Nigdy!",
-  "facts": [
-   {
-    "text": "Moskwa（波蘭文「莫斯科」）是 1983 年在洛茲（Łódź）成立的波蘭龐克團，創團成員為主唱兼吉他 Paweł「Guma」Gumola、貝斯 Piotr「Rogoza」Rogoziński 與鼓手 Tomek「Pałker」Gron；洛茲是當時重工業的工人城市。",
-    "src": "https://en.wikipedia.org/wiki/Moskwa",
-    "block": "what"
-   },
-   {
-    "text": "早期聲音走粗糙原始的龐克路線，承接 The Exploited、GBH、Discharge 一脈；樂團長期處在與當局及保安機關的緊張關係中，仍能在 FMR Jarocin 這類東歐集團最重要的另類音樂節之一公開演出。",
-    "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
-    "block": "what"
-   },
-   {
-    "text": "1984 年 Jarocin 的演出被音樂節藝術總監中途打斷，樂團名氣反而在波蘭搖滾地下圈暴漲，海報上團名常被審查成 M.kwa 或 M-kwa。",
-    "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
-    "block": "story"
-   },
-   {
-    "text": "《Nigdy!》是 1986 年錄製、由 Prawda 以卡帶發行的處女作 demo，只在地下流通：影印的封面、非常粗的錄音，歌詞過不了審查的剪刀，讓人覺得這是一件不受體制控制的、有機而摸得到的東西。",
-    "src": "https://www.sorrystaterecords.com/products/moskwanigdy",
-    "block": "story"
-   },
-   {
-    "text": "二十首飆速的硬核龐克在全國靠人手傳人手、不斷翻拷流傳；再發行廠稱它是 80 年代波蘭龐克最重要的錄音之一。",
-    "src": "https://www.sorrystaterecords.com/products/moskwanigdy",
-    "block": "what"
-   },
-   {
-    "text": "這批錄音在 2014 年由 Warsaw Pact Records 首度壓成黑膠，母帶取自原始卡帶，在 Studio As One 重新處理；限量版附依原卡帶封面做的摺疊海報，並重製樂團 1986 年自製、演出時分發的 10 頁小冊，另有波蘭藝術家 Józef Robakowski 拍的 16 頁樂團照片冊；一般版封面由 Prosiak 設計，附團員 Guma、Wózek、Balon 回憶當年的 20 頁內頁。",
-    "src": "https://www.sorrystaterecords.com/products/moskwanigdy",
-    "block": "after"
-   },
-   {
-    "text": "Maximum RocknRoll 的 Matt Badenhop 在 2015 年把這張再發行選為「Reissue of the Week」，稱這是樂團最凶猛的錄音：極快的速度與尖高、聽來瘋狂的吉他，在 Dezerter、TZN Xenna、Post Regiment、Rejestracja 等波蘭龐克英雄之中自成一格。",
-    "src": "https://www.maximumrocknroll.com/reissue-of-the-week-moskwa/",
-    "block": "what"
-   },
-   {
-    "text": "同篇樂評稱錄音「又熱又粗」，預設速度又快又猛，但〈Za Kratami〉與〈Problem〉這類中速歌最突出；和弦進行與帶嘶吼的人聲旋律顯出寫歌的功力。",
-    "src": "https://www.maximumrocknroll.com/reissue-of-the-week-moskwa/",
-    "block": "sound"
-   },
-   {
-    "text": "聲音構成：二十首短促的快節奏硬核龐克、尖銳高頻的吉他、粗糙的卡帶現場感錄音，加上波蘭文嘶吼唱腔；中速的歌才拉出旋律。",
-    "src": "https://www.maximumrocknroll.com/reissue-of-the-week-moskwa/",
-    "block": "sound"
-   },
-   {
-    "text": "1986 年 Jarocin 的演出引起 BBC 注意，英國紀錄片《My Blood, Your Blood》（導演 Andrzej Kostenko）訪問主唱 Gumola 談在東歐集團當龐克的處境，片中收有樂團的招牌曲〈Nigdy!〉（意為「絕不」）現場演出。",
-    "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
-    "block": "story"
-   },
-   {
-    "text": "1987 年樂團遷到華沙、換上新成員（Maleo、Gogo Szulc 等），旋律與個人化的方向加重；他們原想在 1983–1986 這一期出自己的黑膠 LP 卻沒做成，《Nigdy!》因此只留下卡帶。",
-    "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
-    "block": "after"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "ok",
-   "sound": "ok"
+  {
+    "key": "moskwa|nigdy!",
+    "artist": "Moskwa",
+    "album": "Nigdy!",
+    "facts": [
+      {
+        "text": "Moskwa（波蘭文「莫斯科」）是 1983 年在洛茲（Łódź）成立的波蘭龐克團，創團成員為主唱兼吉他 Paweł「Guma」Gumola、貝斯 Piotr「Rogoza」Rogoziński 與鼓手 Tomek「Pałker」Gron；洛茲是當時重工業的工人城市。",
+        "src": "https://en.wikipedia.org/wiki/Moskwa",
+        "block": "what"
+      },
+      {
+        "text": "早期聲音走粗糙原始的龐克路線，承接 The Exploited、GBH、Discharge 一脈；樂團長期處在與當局及保安機關的緊張關係中，仍能在 FMR Jarocin 這類東歐集團最重要的另類音樂節之一公開演出。",
+        "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
+        "block": "what"
+      },
+      {
+        "text": "1984 年 Jarocin 的演出被音樂節藝術總監中途打斷，樂團名氣反而在波蘭搖滾地下圈暴漲，海報上團名常被審查成 M.kwa 或 M-kwa。",
+        "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
+        "block": "story"
+      },
+      {
+        "text": "《Nigdy!》是 1986 年錄製、由 Prawda 以卡帶發行的處女作 demo，只在地下流通：影印的封面、非常粗的錄音，歌詞過不了審查的剪刀，讓人覺得這是一件不受體制控制的、有機而摸得到的東西。",
+        "src": "https://www.sorrystaterecords.com/products/moskwanigdy",
+        "block": "story"
+      },
+      {
+        "text": "二十首飆速的硬核龐克在全國靠人手傳人手、不斷翻拷流傳；再發行廠稱它是 80 年代波蘭龐克最重要的錄音之一。",
+        "src": "https://www.sorrystaterecords.com/products/moskwanigdy",
+        "block": "what"
+      },
+      {
+        "text": "這批錄音在 2014 年由 Warsaw Pact Records 首度壓成黑膠，母帶取自原始卡帶，在 Studio As One 重新處理；限量版附依原卡帶封面做的摺疊海報，並重製樂團 1986 年自製、演出時分發的 10 頁小冊，另有波蘭藝術家 Józef Robakowski 拍的 16 頁樂團照片冊；一般版封面由 Prosiak 設計，附團員 Guma、Wózek、Balon 回憶當年的 20 頁內頁。",
+        "src": "https://www.sorrystaterecords.com/products/moskwanigdy",
+        "block": "after"
+      },
+      {
+        "text": "Maximum RocknRoll 的 Matt Badenhop 在 2015 年把這張再發行選為「Reissue of the Week」，稱這是樂團最凶猛的錄音：極快的速度與尖高、聽來瘋狂的吉他，在 Dezerter、TZN Xenna、Post Regiment、Rejestracja 等波蘭龐克英雄之中自成一格。",
+        "src": "https://www.maximumrocknroll.com/reissue-of-the-week-moskwa/",
+        "block": "what"
+      },
+      {
+        "text": "同篇樂評稱錄音「又熱又粗」，預設速度又快又猛，但〈Za Kratami〉與〈Problem〉這類中速歌最突出；和弦進行與帶嘶吼的人聲旋律顯出寫歌的功力。",
+        "src": "https://www.maximumrocknroll.com/reissue-of-the-week-moskwa/",
+        "block": "sound"
+      },
+      {
+        "text": "聲音構成：二十首短促的快節奏硬核龐克、尖銳高頻的吉他、粗糙的卡帶現場感錄音，加上波蘭文嘶吼唱腔；中速的歌才拉出旋律。",
+        "src": "https://www.maximumrocknroll.com/reissue-of-the-week-moskwa/",
+        "block": "sound"
+      },
+      {
+        "text": "1986 年 Jarocin 的演出引起 BBC 注意，英國紀錄片《My Blood, Your Blood》（導演 Andrzej Kostenko）訪問主唱 Gumola 談在東歐集團當龐克的處境，片中收有樂團的招牌曲〈Nigdy!〉（意為「絕不」）現場演出。",
+        "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
+        "block": "story"
+      },
+      {
+        "text": "1987 年樂團遷到華沙、換上新成員（Maleo、Gogo Szulc 等），旋律與個人化的方向加重；他們原想在 1983–1986 這一期出自己的黑膠 LP 卻沒做成，《Nigdy!》因此只留下卡帶。",
+        "src": "https://diyconspiracy.net/moskwa-wiem-session-1987-ep/",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "ok"
+    },
+    "notes": "查證：(1) 母語搜尋一次（波蘭文），只找到英文來源與維基；pl.wikipedia 無 Moskwa 條目，en.wikipedia 為 stub（其 discography 把《Nigdy!》列 1984，與 Discogs／再發行廠的 1986 衝突，採 1986）。(2) 商品頁：Sorry State（Refuse Records 描述）有完整原文介紹；Bandcamp warsawpactrecords 頁抓不到。(3) 藝人維基：en 有 stub。(4) 英文樂評：MRR 有；Discogs release 3594132 notes 空、6466736 僅版本資訊；RYM 未查。舊簡介：「編號 0001」「第二組編號」「重錄於 Pronit 黑膠」等屬盤號雜項，未逐項驗證，寫作不要用；二十八年（2014）可由再發行廠確認；Discogs 把 Wózek=鼓、Balon=貝斯（Rogoza／Pałker 為維基創團名，團員稱呼不一）寫作時只用 Guma 即可。曲名 〈Za Kratami〉〈Problem〉有樂評提及。「Gumola 1986 紀錄片」來自 DIY Conspiracy，非 Wikipedia。"
   },
-  "notes": "查證：(1) 母語搜尋一次（波蘭文），只找到英文來源與維基；pl.wikipedia 無 Moskwa 條目，en.wikipedia 為 stub（其 discography 把《Nigdy!》列 1984，與 Discogs／再發行廠的 1986 衝突，採 1986）。(2) 商品頁：Sorry State（Refuse Records 描述）有完整原文介紹；Bandcamp warsawpactrecords 頁抓不到。(3) 藝人維基：en 有 stub。(4) 英文樂評：MRR 有；Discogs release 3594132 notes 空、6466736 僅版本資訊；RYM 未查。舊簡介：「編號 0001」「第二組編號」「重錄於 Pronit 黑膠」等屬盤號雜項，未逐項驗證，寫作不要用；二十八年（2014）可由再發行廠確認；Discogs 把 Wózek=鼓、Balon=貝斯（Rogoza／Pałker 為維基創團名，團員稱呼不一）寫作時只用 Guma 即可。曲名 〈Za Kratami〉〈Problem〉有樂評提及。「Gumola 1986 紀錄片」來自 DIY Conspiracy，非 Wikipedia。"
- },
- {
-  "key": "mother gong|robot woman",
-  "artist": "Mother Gong",
-  "album": "Robot Woman",
-  "facts": [
-   {
-    "text": "Mother Gong 是 Gong 共同創辦人 Gilli Smyth（1960 年代末與伴侶 Daevid Allen 創立 Gong，在團裡以 Shakti Yoni 之名念詩、發出被稱為「space whispers」的聲音）離團生子後，於 1978–79 年與 Harry Williamson 合組的分支團；1978 年她的個人專輯《Mother》是 Mother Gong 的起點。",
-    "src": "https://en.wikipedia.org/wiki/Gilli_Smyth",
-    "block": "what"
-   },
-   {
-    "text": "《Robot Woman》（日後稱 Robot Woman 1）是 Mother Gong「Robot Woman 三部曲」的第一張，錄於 1981 年夏天北德文郡 Oxes Cross，另有三首取自 1981 年 Glastonbury 現場；Butt Records 發行，© 1981，Discogs 原版標 1982。",
-    "src": "https://api.discogs.com/releases/7264822",
-    "block": "what"
-   },
-   {
-    "text": "Canterbury Scene 作者在 2019 年 Madfish 三部曲盒裝的評論中稱它「比任何一張都更像表演藝術」：整張像一則故事，表面上預告電腦化與自動化的到來，實際上是機靈交織的評論，談女人在男性主導的世界裡如何被看待、被物化。",
-    "src": "https://canterburyscene.com/2019/03/22/mother-gong-the-robot-woman-trilogy-boxset-madfish/",
-    "block": "story"
-   },
-   {
-    "text": "同篇評論說，角色刻畫尖銳到有時讓人皺眉（例如〈Customs Man – Rapist〉），音樂則忙碌地替故事當背景；比起 Smyth 日後 Gong 圈的反思作品，《Robot Woman》音樂上「粗礪得多」。",
-    "src": "https://canterburyscene.com/2019/03/22/mother-gong-the-robot-woman-trilogy-boxset-madfish/",
-    "block": "sound"
-   },
-   {
-    "text": "Burning Shed 的盒裝介紹：三部曲的主題明確關乎女性，聚焦在日益科技化、可能疏離（也可能解放）的世界裡人的自主；也有人認為整個計畫是對 Gong 的 Radio Gnome 三部曲的回應。",
-    "src": "https://exystence.net/?p=175464",
-    "block": "story"
-   },
-   {
-    "text": "樂手陣容：Gilli Smyth 與 Harry Williamson 主唱並兼合成器、吉他；Gong 的 Didier Malherbe 吹薩克斯風、短笛與竹笛，Van der Graaf Generator 的 Guy Evans 打鼓，Yan Emeric Vagh 彈吉他（含 slide），Dane Kronenberg 與 Hugh Hopper 擔任貝斯；一群孩子（含 Daevid Allen 的孩子 Orlando 與 Taliesin）唱合唱。",
-    "src": "https://api.discogs.com/releases/7264822",
-    "block": "what"
-   },
-   {
-    "text": "Canterbury Scene 評論指出：Malherbe 與 Evans 雖是核心班底，個人風格卻被「融進一台無縫的整體機器」，一起把故事往前推。",
-    "src": "https://canterburyscene.com/2019/03/22/mother-gong-the-robot-woman-trilogy-boxset-madfish/",
-    "block": "sound"
-   },
-   {
-    "text": "聲音構成：Smyth 的 space whisper 與念白、Williamson 的合成器與滑音（glissando）吉他、Malherbe 的薩克斯風與短笛、Guy Evans 的鼓、Dave Sawyer 的紙鼓與竹製打擊樂；〈Machine Song〉的基底節奏取自 Williamson 參與的 The Radio Actors 單曲〈Digital Love〉。",
-    "src": "https://api.discogs.com/releases/7264822",
-    "block": "sound"
-   },
-   {
-    "text": "Burning Shed 形容 Williamson 的音樂為「動聽、聰明、旋律性強的爵士，甚至帶古典色彩的搖滾」。",
-    "src": "https://exystence.net/?p=175464",
-    "block": "sound"
-   },
-   {
-    "text": "三部曲二十年後才有 CD：2019 年 Madfish／Burning Shed 的四碟盒裝（限量 1500 套、64 頁精裝書）首度把三張專輯做成 CD，書中還重印 Robot Woman 2 的 15 頁漫畫；Gilli Smyth 與 Williamson 1982 年移居澳洲，第三部在澳洲錄成。",
-    "src": "https://progrockjournal.com/?p=34215",
-    "block": "after"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "ok",
-   "sound": "ok"
+  {
+    "key": "mother gong|robot woman",
+    "artist": "Mother Gong",
+    "album": "Robot Woman",
+    "facts": [
+      {
+        "text": "Mother Gong 是 Gong 共同創辦人 Gilli Smyth（1960 年代末與伴侶 Daevid Allen 創立 Gong，在團裡以 Shakti Yoni 之名念詩、發出被稱為「space whispers」的聲音）離團生子後，於 1978–79 年與 Harry Williamson 合組的分支團；1978 年她的個人專輯《Mother》是 Mother Gong 的起點。",
+        "src": "https://en.wikipedia.org/wiki/Gilli_Smyth",
+        "block": "what"
+      },
+      {
+        "text": "《Robot Woman》（日後稱 Robot Woman 1）是 Mother Gong「Robot Woman 三部曲」的第一張，錄於 1981 年夏天北德文郡 Oxes Cross，另有三首取自 1981 年 Glastonbury 現場；Butt Records 發行，© 1981，Discogs 原版標 1982。",
+        "src": "https://api.discogs.com/releases/7264822",
+        "block": "what"
+      },
+      {
+        "text": "Canterbury Scene 作者在 2019 年 Madfish 三部曲盒裝的評論中稱它「比任何一張都更像表演藝術」：整張像一則故事，表面上預告電腦化與自動化的到來，實際上是機靈交織的評論，談女人在男性主導的世界裡如何被看待、被物化。",
+        "src": "https://canterburyscene.com/2019/03/22/mother-gong-the-robot-woman-trilogy-boxset-madfish/",
+        "block": "story"
+      },
+      {
+        "text": "同篇評論說，角色刻畫尖銳到有時讓人皺眉（例如〈Customs Man – Rapist〉），音樂則忙碌地替故事當背景；比起 Smyth 日後 Gong 圈的反思作品，《Robot Woman》音樂上「粗礪得多」。",
+        "src": "https://canterburyscene.com/2019/03/22/mother-gong-the-robot-woman-trilogy-boxset-madfish/",
+        "block": "sound"
+      },
+      {
+        "text": "Burning Shed 的盒裝介紹：三部曲的主題明確關乎女性，聚焦在日益科技化、可能疏離（也可能解放）的世界裡人的自主；也有人認為整個計畫是對 Gong 的 Radio Gnome 三部曲的回應。",
+        "src": "https://exystence.net/?p=175464",
+        "block": "story"
+      },
+      {
+        "text": "樂手陣容：Gilli Smyth 與 Harry Williamson 主唱並兼合成器、吉他；Gong 的 Didier Malherbe 吹薩克斯風、短笛與竹笛，Van der Graaf Generator 的 Guy Evans 打鼓，Yan Emeric Vagh 彈吉他（含 slide），Dane Kronenberg 與 Hugh Hopper 擔任貝斯；一群孩子（含 Daevid Allen 的孩子 Orlando 與 Taliesin）唱合唱。",
+        "src": "https://api.discogs.com/releases/7264822",
+        "block": "what"
+      },
+      {
+        "text": "Canterbury Scene 評論指出：Malherbe 與 Evans 雖是核心班底，個人風格卻被「融進一台無縫的整體機器」，一起把故事往前推。",
+        "src": "https://canterburyscene.com/2019/03/22/mother-gong-the-robot-woman-trilogy-boxset-madfish/",
+        "block": "sound"
+      },
+      {
+        "text": "聲音構成：Smyth 的 space whisper 與念白、Williamson 的合成器與滑音（glissando）吉他、Malherbe 的薩克斯風與短笛、Guy Evans 的鼓、Dave Sawyer 的紙鼓與竹製打擊樂；〈Machine Song〉的基底節奏取自 Williamson 參與的 The Radio Actors 單曲〈Digital Love〉。",
+        "src": "https://api.discogs.com/releases/7264822",
+        "block": "sound"
+      },
+      {
+        "text": "Burning Shed 形容 Williamson 的音樂為「動聽、聰明、旋律性強的爵士，甚至帶古典色彩的搖滾」。",
+        "src": "https://exystence.net/?p=175464",
+        "block": "sound"
+      },
+      {
+        "text": "三部曲二十年後才有 CD：2019 年 Madfish／Burning Shed 的四碟盒裝（限量 1500 套、64 頁精裝書）首度把三張專輯做成 CD，書中還重印 Robot Woman 2 的 15 頁漫畫；Gilli Smyth 與 Williamson 1982 年移居澳洲，第三部在澳洲錄成。",
+        "src": "https://progrockjournal.com/?p=34215",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "ok"
+    },
+    "notes": "查證：(1) 母語搜尋：英語系樂團，查英文專文（Canterbury Scene、Burning Shed、Progarchives 摘要）。(2) 商品頁：Burning Shed 介紹（經 exystence/progrockjournal 轉載）、Discogs notes 有；Bandcamp 未查。(3) 藝人維基：Gilli Smyth 有；Mother Gong 無獨立條目。(4) 英文樂評：Canterbury Scene 2019 有；Progarchives／springstudio 遭 403／驗證擋住。舊簡介大致與 Discogs 一致但屬雜項（錄音工程掛 Michael Eavis／Tony Andrews、海報、內袋廣告、再壓盤名 Robot Woman 1）不要用；Eavis 是 Glastonbury 音樂節創辦人（舊簡介稱「音樂節創辦人」）。年份：卡單 1981，原版 © 1981、Discogs 標 1982，寫「1981 年錄製」最穩。Discogs notes 註明錄音地 Oxes Cross 在「North Devon」；Wikipedia 稱 Mother Gong 成立 1978/79 不一，寫 1979 前後即可。『Beta 機器人』那條未驗證，勿寫。"
   },
-  "notes": "查證：(1) 母語搜尋：英語系樂團，查英文專文（Canterbury Scene、Burning Shed、Progarchives 摘要）。(2) 商品頁：Burning Shed 介紹（經 exystence/progrockjournal 轉載）、Discogs notes 有；Bandcamp 未查。(3) 藝人維基：Gilli Smyth 有；Mother Gong 無獨立條目。(4) 英文樂評：Canterbury Scene 2019 有；Progarchives／springstudio 遭 403／驗證擋住。舊簡介大致與 Discogs 一致但屬雜項（錄音工程掛 Michael Eavis／Tony Andrews、海報、內袋廣告、再壓盤名 Robot Woman 1）不要用；Eavis 是 Glastonbury 音樂節創辦人（舊簡介稱「音樂節創辦人」）。年份：卡單 1981，原版 © 1981、Discogs 標 1982，寫「1981 年錄製」最穩。Discogs notes 註明錄音地 Oxes Cross 在「North Devon」；Wikipedia 稱 Mother Gong 成立 1978/79 不一，寫 1979 前後即可。『Beta 機器人』那條未驗證，勿寫。"
- },
- {
-  "key": "mt. fujitive|eternal",
-  "artist": "mt. fujitive",
-  "album": "Eternal",
-  "facts": [
-   {
-    "text": "mt. fujitive 本名 Magnús Valur Willemsson Verheul，是住在冰島雷克雅維克的器樂 hip-hop 製作人，Bandcamp 自 2016 年起陸續發行《winter weibs》《honshu island》《ventures》《sanctuary》《hanski》等作品；《Eternal》是 2021 年 4 月 2 日上線的第六張 Bandcamp 專輯。",
-    "src": "https://www.last.fm/music/mt.+fujitive/+wiki",
-    "block": "what"
-   },
-   {
-    "text": "Spotify 藝人介紹稱他做 lofi hip hop 已超過十年，beat 來自 AKAI MPC 2000 XL 取樣機，搭配「祕密珍藏」的大量取樣；承襲 90 年代黃金年代製作人 J Dilla、Pete Rock、Madlib 的脈絡。",
-    "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
-    "block": "what"
-   },
-   {
-    "text": "他自述音樂是「感受的容器」：最大的讚美是有人說他的音樂讓人放下所有煩惱、像一整個宇宙而不想結束；他希望替聽眾留出可以安放任何情緒的安全空間，給的是「平靜」。",
-    "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
-    "block": "story"
-   },
-   {
-    "text": "《Eternal》是十七首的 beat tape 形式：多數曲子只有一兩分鐘，Hyukbae、Jhfly、oofoe 三位客座各在一首（〈Dawn〉〈Skyward〉〈Julie〉）；Bandcamp 標籤為 lofi hip hop、lofi beats。",
-    "src": "https://mtfujitive.bandcamp.com/album/eternal",
-    "block": "what"
-   },
-   {
-    "text": "Bandcamp 上有數十位買家／支持者留言與收藏，一則留言說聽了「覺得好平靜」；同頁推薦相近的 jinsang；Discogs 風格標為 Hip Hop／Instrumental。",
-    "src": "https://mtfujitive.bandcamp.com/album/eternal",
-    "block": "what"
-   },
-   {
-    "text": "2021 年這張由德國 Vinyl Digital 壓成限量 300 張黑膠，Sterilone 負責母帶。",
-    "src": "https://api.discogs.com/releases/17835754",
-    "block": "after"
-   },
-   {
-    "text": "聲音構成：以 AKAI MPC 2000 XL 取樣機加上大量取樣做出的 lofi hip hop 器樂 beat，走冥想、安靜的路線（出自藝人自述與 Bandcamp 標籤）。",
-    "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
-    "block": "sound"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "thin",
-   "sound": "thin"
+  {
+    "key": "mt. fujitive|eternal",
+    "artist": "mt. fujitive",
+    "album": "Eternal",
+    "facts": [
+      {
+        "text": "mt. fujitive 本名 Magnús Valur Willemsson Verheul，是住在冰島雷克雅維克的器樂 hip-hop 製作人，Bandcamp 自 2016 年起陸續發行《winter weibs》《honshu island》《ventures》《sanctuary》《hanski》等作品；《Eternal》是 2021 年 4 月 2 日上線的第六張 Bandcamp 專輯。",
+        "src": "https://www.last.fm/music/mt.+fujitive/+wiki",
+        "block": "what"
+      },
+      {
+        "text": "Spotify 藝人介紹稱他做 lofi hip hop 已超過十年，beat 來自 AKAI MPC 2000 XL 取樣機，搭配「祕密珍藏」的大量取樣；承襲 90 年代黃金年代製作人 J Dilla、Pete Rock、Madlib 的脈絡。",
+        "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
+        "block": "what"
+      },
+      {
+        "text": "他自述音樂是「感受的容器」：最大的讚美是有人說他的音樂讓人放下所有煩惱、像一整個宇宙而不想結束；他希望替聽眾留出可以安放任何情緒的安全空間，給的是「平靜」。",
+        "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
+        "block": "story"
+      },
+      {
+        "text": "《Eternal》是十七首的 beat tape 形式：多數曲子只有一兩分鐘，Hyukbae、Jhfly、oofoe 三位客座各在一首（〈Dawn〉〈Skyward〉〈Julie〉）；Bandcamp 標籤為 lofi hip hop、lofi beats。",
+        "src": "https://mtfujitive.bandcamp.com/album/eternal",
+        "block": "what"
+      },
+      {
+        "text": "Bandcamp 上有數十位買家／支持者留言與收藏，一則留言說聽了「覺得好平靜」；同頁推薦相近的 jinsang；Discogs 風格標為 Hip Hop／Instrumental。",
+        "src": "https://mtfujitive.bandcamp.com/album/eternal",
+        "block": "what"
+      },
+      {
+        "text": "2021 年這張由德國 Vinyl Digital 壓成限量 300 張黑膠，Sterilone 負責母帶。",
+        "src": "https://api.discogs.com/releases/17835754",
+        "block": "after"
+      },
+      {
+        "text": "聲音構成：以 AKAI MPC 2000 XL 取樣機加上大量取樣做出的 lofi hip hop 器樂 beat，走冥想、安靜的路線（出自藝人自述與 Bandcamp 標籤）。",
+        "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
+        "block": "sound"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "thin",
+      "sound": "thin"
+    },
+    "notes": "必查清單：(1) 母語（冰島文）：英語圈 lofi，未見冰島報導；WebSearch 兩次（藝人＋專輯＋訪談／評論）只回 Last.fm、Bandcamp、similar-artist 頁，無訪談無樂評。(2) 商品頁：Bandcamp album 頁已抓（僅曲目、標籤、留言）；Vinyl Digital 官網被 bot check 擋；soundcloud 無介紹。(3) 藝人維基：無維基；Last.fm wiki 僅一行；Spotify 藝人介紹（轉載於 musicmetricsvault）是最好的素材。(4) 英文樂評：AllMusic／Pitchfork／RYM 無；Discogs 17835754 notes 只有限量 300 張。結論：這張專輯本身沒有找到故事與具名評價，聲音只能用藝人整體自述與標籤，標 thin。『sound』最後一條是我依自述與標籤的整理，具體樂器僅 MPC 2000 XL 與取樣有出處，『慵懶 boom-bap 式節拍』『塵埃感』屬推論，寫作層請只寫『MPC 取樣＋lofi』級別，勿加形容。舊簡介錯誤：『B 面〈Julie〉』『兩年後一起出專輯』屬客座名單雜項，不要沿用；Aeon 在 Bandcamp 是 2023-11-21，與《Eternal》相隔兩年半，非『兩年後』精確。三位客座中 Oofoe 為維也納製作人（Discogs）。Eternal 專輯 2021 年 4 月 2 日。藝人早年 Bandcamp 年份我從 discography 列表讀得（2016 winter weibs 起），只有月份，無細節。"
   },
-  "notes": "必查清單：(1) 母語（冰島文）：英語圈 lofi，未見冰島報導；WebSearch 兩次（藝人＋專輯＋訪談／評論）只回 Last.fm、Bandcamp、similar-artist 頁，無訪談無樂評。(2) 商品頁：Bandcamp album 頁已抓（僅曲目、標籤、留言）；Vinyl Digital 官網被 bot check 擋；soundcloud 無介紹。(3) 藝人維基：無維基；Last.fm wiki 僅一行；Spotify 藝人介紹（轉載於 musicmetricsvault）是最好的素材。(4) 英文樂評：AllMusic／Pitchfork／RYM 無；Discogs 17835754 notes 只有限量 300 張。結論：這張專輯本身沒有找到故事與具名評價，聲音只能用藝人整體自述與標籤，標 thin。『sound』最後一條是我依自述與標籤的整理，具體樂器僅 MPC 2000 XL 與取樣有出處，『慵懶 boom-bap 式節拍』『塵埃感』屬推論，寫作層請只寫『MPC 取樣＋lofi』級別，勿加形容。舊簡介錯誤：『B 面〈Julie〉』『兩年後一起出專輯』屬客座名單雜項，不要沿用；Aeon 在 Bandcamp 是 2023-11-21，與《Eternal》相隔兩年半，非『兩年後』精確。三位客座中 Oofoe 為維也納製作人（Discogs）。Eternal 專輯 2021 年 4 月 2 日。藝人早年 Bandcamp 年份我從 discography 列表讀得（2016 winter weibs 起），只有月份，無細節。"
- },
- {
-  "key": "mt. fujitive & oofoe|aeon",
-  "artist": "mt. fujitive & oofoe",
-  "album": "aeon",
-  "facts": [
-   {
-    "text": "《aeon》是冰島雷克雅維克的 lofi 製作人 mt. fujitive 與維也納製作人 oofoe 的合作專輯，2023 年 11 月 21 日上 Bandcamp；oofoe 先前已在 mt. fujitive 2021 年的《Eternal》客座〈Julie〉。",
-    "src": "https://api.discogs.com/releases/29113975",
-    "block": "what"
-   },
-   {
-    "text": "mt. fujitive 本名 Magnús Valur Willemsson Verheul，Spotify 藝人介紹稱他做 lofi hip hop 超過十年，用 AKAI MPC 2000 XL 取樣機與大量取樣做 beat，承襲 J Dilla、Pete Rock、Madlib 的 90 年代黃金年代製作人脈絡。",
-    "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
-    "block": "what"
-   },
-   {
-    "text": "他自述音樂是「感受的容器」，希望替聽眾留出安全的空間，讓人在歌裡安放各種情緒、得到平靜。",
-    "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
-    "block": "story"
-   },
-   {
-    "text": "《aeon》共二十首，多數只有一兩分鐘，更像連續的 beat tape 而非單曲集；Bandcamp 標籤為 hip hop、lofi hip hop、lofi beats，Discogs 風格為 Hip Hop／Instrumental。",
-    "src": "https://mtfujitive.bandcamp.com/album/aeon",
-    "block": "what"
-   },
-   {
-    "text": "曲名全是一兩個詞的短字，有些取自別種語言（例：〈blau〉為德文的藍、〈lumi〉為芬蘭文的雪）；這是曲名體例，只能當點綴，不適合當主體。",
-    "src": "https://mtfujitive.bandcamp.com/album/aeon",
-    "block": "what"
-   },
-   {
-    "text": "Bandcamp 上的支持者包含 PMM、wettblue、Patrick Wozniak 等人；2023 年這張由德國 Vinyl Digital 壓成限量 100 張黑膠，母帶 Sterilone。",
-    "src": "https://api.discogs.com/releases/29113975",
-    "block": "after"
-   },
-   {
-    "text": "mt. fujitive 2024 年再以 Alda Music 發行黑膠專輯《Afterlife》，母帶同為 Staub Audio Engineering 體系。",
-    "src": "https://api.discogs.com/releases/32263863",
-    "block": "after"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "thin",
-   "sound": "thin"
+  {
+    "key": "mt. fujitive & oofoe|aeon",
+    "artist": "mt. fujitive & oofoe",
+    "album": "aeon",
+    "facts": [
+      {
+        "text": "《aeon》是冰島雷克雅維克的 lofi 製作人 mt. fujitive 與維也納製作人 oofoe 的合作專輯，2023 年 11 月 21 日上 Bandcamp；oofoe 先前已在 mt. fujitive 2021 年的《Eternal》客座〈Julie〉。",
+        "src": "https://api.discogs.com/releases/29113975",
+        "block": "what"
+      },
+      {
+        "text": "mt. fujitive 本名 Magnús Valur Willemsson Verheul，Spotify 藝人介紹稱他做 lofi hip hop 超過十年，用 AKAI MPC 2000 XL 取樣機與大量取樣做 beat，承襲 J Dilla、Pete Rock、Madlib 的 90 年代黃金年代製作人脈絡。",
+        "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
+        "block": "what"
+      },
+      {
+        "text": "他自述音樂是「感受的容器」，希望替聽眾留出安全的空間，讓人在歌裡安放各種情緒、得到平靜。",
+        "src": "https://www.musicmetricsvault.com/artists/mt-fujitive/2V9zpugQCHRiu2lPjsUM6d",
+        "block": "story"
+      },
+      {
+        "text": "《aeon》共二十首，多數只有一兩分鐘，更像連續的 beat tape 而非單曲集；Bandcamp 標籤為 hip hop、lofi hip hop、lofi beats，Discogs 風格為 Hip Hop／Instrumental。",
+        "src": "https://mtfujitive.bandcamp.com/album/aeon",
+        "block": "what"
+      },
+      {
+        "text": "曲名全是一兩個詞的短字，有些取自別種語言（例：〈blau〉為德文的藍、〈lumi〉為芬蘭文的雪）；這是曲名體例，只能當點綴，不適合當主體。",
+        "src": "https://mtfujitive.bandcamp.com/album/aeon",
+        "block": "what"
+      },
+      {
+        "text": "Bandcamp 上的支持者包含 PMM、wettblue、Patrick Wozniak 等人；2023 年這張由德國 Vinyl Digital 壓成限量 100 張黑膠，母帶 Sterilone。",
+        "src": "https://api.discogs.com/releases/29113975",
+        "block": "after"
+      },
+      {
+        "text": "mt. fujitive 2024 年再以 Alda Music 發行黑膠專輯《Afterlife》，母帶同為 Staub Audio Engineering 體系。",
+        "src": "https://api.discogs.com/releases/32263863",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "thin",
+      "sound": "thin"
+    },
+    "notes": "必查清單：(1) 母語：冰島文／德文報導未找到；WebSearch 兩次（含 Vinyl Digital、Vienna 合作）只回 Bandcamp 與 Afterlife 零售頁，無訪談無樂評。(2) 商品頁：Bandcamp 已抓；Vinyl Digital 被 bot check 擋；oofoe Bandcamp 403。(3) 藝人維基：無；Last.fm 僅一行；Spotify 藝人介紹為唯一像樣的素材。(4) 英文樂評：無；Discogs 29113975 notes 僅『限量 100 張黑膠』與『Mt. Fujitive (Reykjavík) & oofoe (Vienna)』。結論：故事與聲音確實只查得到藝人整體自述，標 thin，寫作層薄寫（150 字上下），不拿曲名語源湊。舊簡介：『sambolero 拼自 samba 與 bolero』『20 首』中 20 首正確（Bandcamp）；sambolero 語源沒找到出處，勿寫；blau 德文藍、lumi 芬蘭文雪是常識無誤，但屬曲名雜項。具體聲音只有『MPC 2000 XL＋取樣、lofi hip hop、短曲 beat tape』，沒有逐曲描述。專輯具體共同創作過程（誰做哪首）無資料。『Afterlife』那條 src 是 Discogs 搜尋結果，僅確認廠牌與年份，非必要可略。"
   },
-  "notes": "必查清單：(1) 母語：冰島文／德文報導未找到；WebSearch 兩次（含 Vinyl Digital、Vienna 合作）只回 Bandcamp 與 Afterlife 零售頁，無訪談無樂評。(2) 商品頁：Bandcamp 已抓；Vinyl Digital 被 bot check 擋；oofoe Bandcamp 403。(3) 藝人維基：無；Last.fm 僅一行；Spotify 藝人介紹為唯一像樣的素材。(4) 英文樂評：無；Discogs 29113975 notes 僅『限量 100 張黑膠』與『Mt. Fujitive (Reykjavík) & oofoe (Vienna)』。結論：故事與聲音確實只查得到藝人整體自述，標 thin，寫作層薄寫（150 字上下），不拿曲名語源湊。舊簡介：『sambolero 拼自 samba 與 bolero』『20 首』中 20 首正確（Bandcamp）；sambolero 語源沒找到出處，勿寫；blau 德文藍、lumi 芬蘭文雪是常識無誤，但屬曲名雜項。具體聲音只有『MPC 2000 XL＋取樣、lofi hip hop、短曲 beat tape』，沒有逐曲描述。專輯具體共同創作過程（誰做哪首）無資料。『Afterlife』那條 src 是 Discogs 搜尋結果，僅確認廠牌與年份，非必要可略。"
- },
- {
-  "key": "multi-story|east west",
-  "artist": "Multi-Story",
-  "album": "East West",
-  "facts": [
-   {
-    "text": "Multi-Story 來自威爾斯東南角，1980 年代成軍，核心是主唱兼吉他 Paul Ford 與鍵盤手 Rob Wilsher；1984 年他們受邀到倫敦 BBC Maida Vale 錄音間，為 Tommy Vance 的 Radio One Rock Show 錄了三首（〈Ahead Of Your Time〉〈I Marcus〉〈The Willow And The Sun〉），節目播出後簽進 Heavy Metal Records 旗下的新廠牌 FM。",
-    "src": "https://www.proggnosis.com/Artist/2135",
-    "block": "story"
-   },
-   {
-    "text": "製作人選了替 Ratt 與 Rachel Sweet 出道專輯掌鏡的 Liam Sternberg；錄音在 1985 年 2、3 月於 Monmouth 的 Rockfield Studios，工程師 Ted Sharp。據樂團官網，錄製期間 Sternberg 的一首歌被 The Bangles 選去錄，團員因此聽到他不插電彈唱後來成為 The Bangles 大熱曲的〈Walk Like an Egyptian〉。",
-    "src": "https://www.proggnosis.com/Artist/2135",
-    "block": "story"
-   },
-   {
-    "text": "《East/West》是 1985 年樂團的首張專輯；1984 年 BBC 錄音與 demo 帶中的〈I, Marcus〉〈Star Traveller〉〈Willow and the Sun〉後來改名放進這張（官網括號標註對應〈Heroes〉〈Traveller〉〈The Wire〉，〈Breaking New Ground〉也改成〈Breaking Ground〉）。",
-    "src": "https://www.proggnosis.com/Artist/2135",
-    "block": "story"
-   },
-   {
-    "text": "發片後樂團先暖身演出，再以 Magnum「On A Storyteller's Night」巡演的開場團身分跑了英國 20 場（含 Cornwall Coliseum、Birmingham Odeon、Manchester Apollo、Edinburgh Playhouse、倫敦 Dominion Theatre），巡演成功使他們拿到 Marquee Club 的壓軸演出，並上 ITV 的《Rock Steady》演出 20 分鐘。",
-    "src": "https://www.proggnosis.com/Artist/2135",
-    "block": "after"
-   },
-   {
-    "text": "陣容：Paul Ford 主唱與吉他（Ovation 六／十二弦、Les Paul）、Andy Carney 主奏吉他（Aria Pro）、Rob Wilsher 鋼琴、Mellotron 與合成器（Solina Strings、Polysix、DX7、Pro-1）、Roger Nasey 貝斯、Steve Byrne 鼓；詞曲與編曲主要由 Ford 與 Wilsher 負責。",
-    "src": "https://api.discogs.com/releases/2817327",
-    "block": "sound"
-   },
-   {
-    "text": "Proggnosis 樂迷樂評（Eric，2005）：滿是 Yes 的影子，聽感像「80 年代中期由 Magnum 領軍的英國商業搖滾」，同路還有 Nightwing、Snowblind、Dark Star、Grand Prix；他也覺得像 Saga，稱這是「前衛／AOR 的一塊小天堂」，適合這種風格的樂迷。",
-    "src": "https://www.proggnosis.com/Release/4988",
-    "block": "sound"
-   },
-   {
-    "text": "該樂評人指出鼓手 Steve Byrne 與鍵盤手 Rob Wilsher 來自 NWOBHM 樂團 Boulevard（出過一張搶手的 45 轉單曲與 demo）；他認為第二張專輯更偏 AOR。",
-    "src": "https://www.proggnosis.com/Release/4988",
-    "block": "what"
-   },
-   {
-    "text": "Proggnosis 與 Discogs 將其歸為 Prog Rock／AOR（新前衛搖滾）；Proggnosis 推薦給喜歡 Marillion、Pendragon、Yes 的人；Progarchives 使用者評論（透過搜尋摘要）說像早期的 IQ 與 Pendragon，稱讚 Ford 的歌聲，也有人說是典型的八〇年代產品。",
-    "src": "https://www.proggnosis.com/Artist/2135",
-    "block": "what"
-   },
-   {
-    "text": "1987 年第二張《Through Your Eyes》換上 Gary Davies 鼓與後來 Feeder 的 Grant Nicholas 主唱（Ford 與 Byrne 離團），隨後離開 FM；2010 年代 Wilsher 與 Ford 重組，2015 年推出《Crimson Stone》。",
-    "src": "https://api.discogs.com/artists/2194985",
-    "block": "after"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "ok",
-   "sound": "ok"
+  {
+    "key": "multi-story|east west",
+    "artist": "Multi-Story",
+    "album": "East West",
+    "facts": [
+      {
+        "text": "Multi-Story 來自威爾斯東南角，1980 年代成軍，核心是主唱兼吉他 Paul Ford 與鍵盤手 Rob Wilsher；1984 年他們受邀到倫敦 BBC Maida Vale 錄音間，為 Tommy Vance 的 Radio One Rock Show 錄了三首（〈Ahead Of Your Time〉〈I Marcus〉〈The Willow And The Sun〉），節目播出後簽進 Heavy Metal Records 旗下的新廠牌 FM。",
+        "src": "https://www.proggnosis.com/Artist/2135",
+        "block": "story"
+      },
+      {
+        "text": "製作人選了替 Ratt 與 Rachel Sweet 出道專輯掌鏡的 Liam Sternberg；錄音在 1985 年 2、3 月於 Monmouth 的 Rockfield Studios，工程師 Ted Sharp。據樂團官網，錄製期間 Sternberg 的一首歌被 The Bangles 選去錄，團員因此聽到他不插電彈唱後來成為 The Bangles 大熱曲的〈Walk Like an Egyptian〉。",
+        "src": "https://www.proggnosis.com/Artist/2135",
+        "block": "story"
+      },
+      {
+        "text": "《East/West》是 1985 年樂團的首張專輯；1984 年 BBC 錄音與 demo 帶中的〈I, Marcus〉〈Star Traveller〉〈Willow and the Sun〉後來改名放進這張（官網括號標註對應〈Heroes〉〈Traveller〉〈The Wire〉，〈Breaking New Ground〉也改成〈Breaking Ground〉）。",
+        "src": "https://www.proggnosis.com/Artist/2135",
+        "block": "story"
+      },
+      {
+        "text": "發片後樂團先暖身演出，再以 Magnum「On A Storyteller's Night」巡演的開場團身分跑了英國 20 場（含 Cornwall Coliseum、Birmingham Odeon、Manchester Apollo、Edinburgh Playhouse、倫敦 Dominion Theatre），巡演成功使他們拿到 Marquee Club 的壓軸演出，並上 ITV 的《Rock Steady》演出 20 分鐘。",
+        "src": "https://www.proggnosis.com/Artist/2135",
+        "block": "after"
+      },
+      {
+        "text": "陣容：Paul Ford 主唱與吉他（Ovation 六／十二弦、Les Paul）、Andy Carney 主奏吉他（Aria Pro）、Rob Wilsher 鋼琴、Mellotron 與合成器（Solina Strings、Polysix、DX7、Pro-1）、Roger Nasey 貝斯、Steve Byrne 鼓；詞曲與編曲主要由 Ford 與 Wilsher 負責。",
+        "src": "https://api.discogs.com/releases/2817327",
+        "block": "sound"
+      },
+      {
+        "text": "Proggnosis 樂迷樂評（Eric，2005）：滿是 Yes 的影子，聽感像「80 年代中期由 Magnum 領軍的英國商業搖滾」，同路還有 Nightwing、Snowblind、Dark Star、Grand Prix；他也覺得像 Saga，稱這是「前衛／AOR 的一塊小天堂」，適合這種風格的樂迷。",
+        "src": "https://www.proggnosis.com/Release/4988",
+        "block": "sound"
+      },
+      {
+        "text": "該樂評人指出鼓手 Steve Byrne 與鍵盤手 Rob Wilsher 來自 NWOBHM 樂團 Boulevard（出過一張搶手的 45 轉單曲與 demo）；他認為第二張專輯更偏 AOR。",
+        "src": "https://www.proggnosis.com/Release/4988",
+        "block": "what"
+      },
+      {
+        "text": "Proggnosis 與 Discogs 將其歸為 Prog Rock／AOR（新前衛搖滾）；Proggnosis 推薦給喜歡 Marillion、Pendragon、Yes 的人；Progarchives 使用者評論（透過搜尋摘要）說像早期的 IQ 與 Pendragon，稱讚 Ford 的歌聲，也有人說是典型的八〇年代產品。",
+        "src": "https://www.proggnosis.com/Artist/2135",
+        "block": "what"
+      },
+      {
+        "text": "1987 年第二張《Through Your Eyes》換上 Gary Davies 鼓與後來 Feeder 的 Grant Nicholas 主唱（Ford 與 Byrne 離團），隨後離開 FM；2010 年代 Wilsher 與 Ford 重組，2015 年推出《Crimson Stone》。",
+        "src": "https://api.discogs.com/artists/2194985",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "ok"
+    },
+    "notes": "必查清單：(1) 母語：英文來源，已搜 Progarchives（403）、AllMusic（403 無法抓）、Proggnosis（抓到官網 bio 轉載＋樂迷樂評）。(2) 商品頁：cdgo 抓不到（403）；Discogs 2817327／2541243 notes 與 artist profile 取得。(3) 藝人維基：英文維基沒有 Multi-Story 條目，無母語版；樂團官網 multistoryband.co.uk 由 Proggnosis 轉載。(4) 英文樂評：Proggnosis 樂迷樂評（單一網友，非具名媒體，寫作時只能寫『常被拿來和 Magnum、Yes 比』級別，不寫『某某說』）；Progarchives 摘要為搜尋結果間接，未驗證頁面。舊簡介雜項（版權 Heavy Metal Record Co.、編號 WKFM LP 32、曲長、兩種封面）全部不要用。Liam Sternberg『Walk Like an Egyptian』軼事來自樂團官網，屬趣聞，可用最多一句且須與製作人有關。Eric 樂評說 Byrne／Wilsher 來自 Boulevard 為單一網友說法，未交叉驗證，勿寫入簡介。舊簡介說『1984 年做過 BBC 錄音』可證實（Tommy Vance 的 Radio One Rock Show，Maida Vale）。曲名改名對應（Heroes=I Marcus 等）來自官網括號標註，與 Chimes 的 Discogs notes 部分不一（Discogs 說 I, Marcus／Star Traveller／Willow and the Sun 改名，官網括號顯示 Breaking New Ground 也改名），用時取交集：三首 BBC 曲後改名。"
   },
-  "notes": "必查清單：(1) 母語：英文來源，已搜 Progarchives（403）、AllMusic（403 無法抓）、Proggnosis（抓到官網 bio 轉載＋樂迷樂評）。(2) 商品頁：cdgo 抓不到（403）；Discogs 2817327／2541243 notes 與 artist profile 取得。(3) 藝人維基：英文維基沒有 Multi-Story 條目，無母語版；樂團官網 multistoryband.co.uk 由 Proggnosis 轉載。(4) 英文樂評：Proggnosis 樂迷樂評（單一網友，非具名媒體，寫作時只能寫『常被拿來和 Magnum、Yes 比』級別，不寫『某某說』）；Progarchives 摘要為搜尋結果間接，未驗證頁面。舊簡介雜項（版權 Heavy Metal Record Co.、編號 WKFM LP 32、曲長、兩種封面）全部不要用。Liam Sternberg『Walk Like an Egyptian』軼事來自樂團官網，屬趣聞，可用最多一句且須與製作人有關。Eric 樂評說 Byrne／Wilsher 來自 Boulevard 為單一網友說法，未交叉驗證，勿寫入簡介。舊簡介說『1984 年做過 BBC 錄音』可證實（Tommy Vance 的 Radio One Rock Show，Maida Vale）。曲名改名對應（Heroes=I Marcus 等）來自官網括號標註，與 Chimes 的 Discogs notes 部分不一（Discogs 說 I, Marcus／Star Traveller／Willow and the Sun 改名，官網括號顯示 Breaking New Ground 也改名），用時取交集：三首 BBC 曲後改名。"
- },
- {
-  "key": "multi-story|chimes",
-  "artist": "Multi-Story",
-  "album": "Chimes",
-  "facts": [
-   {
-    "text": "《Chimes》是威爾斯東南部新前衛／AOR 搖滾團 Multi-Story 1984 年自製發行的 demo 卡帶，團員為 Paul Ford（主唱、Ovation 原音吉他）、Andy Carney（吉他）、Rob Wilsher（鍵盤）、Roger Nasey（貝斯）、Steve Byrne（鼓），錄於 Gwent 凱爾利恩（Caerleon）的 Loco Studios。",
-    "src": "https://api.discogs.com/releases/6235188",
-    "block": "what"
-   },
-   {
-    "text": "鍵盤手 Rob Wilsher 說，同年另有一捲 Solo Sounds 發行的自題 demo 卡帶，〈Star Traveller〉與〈Tutankhamun〉的版本與《Chimes》相同；當時樂團還有一位叫 Keith 的薩克斯風手，只待了很短時間。",
-    "src": "https://api.discogs.com/releases/14894878",
-    "block": "story"
-   },
-   {
-    "text": "1984 年樂團受邀到倫敦 BBC Maida Vale 為 Tommy Vance 的 Radio One Rock Show 錄了三首：〈Ahead Of Your Time〉〈I, Marcus〉〈The Willow and the Sun〉，播出後簽進 Heavy Metal Records 旗下的 FM 廠牌。",
-    "src": "https://www.proggnosis.com/Artist/2135",
-    "block": "story"
-   },
-   {
-    "text": "《Chimes》裡的〈I, Marcus〉〈Star Traveller〉〈Willow and the Sun〉後來改名放進 1985 年首張專輯《East/West》（官網括號標註對應〈Heroes〉〈Traveller〉〈The Wire〉）。這捲帶子因此是《East/West》歌曲的雛形。",
-    "src": "https://api.discogs.com/releases/6235188",
-    "block": "story"
-   },
-   {
-    "text": "Wilsher 還指出，demo 帶〈Maria〉中段的器樂段落與〈Heroes〉（即〈I, Marcus〉）的器樂段相近，可見樂團把舊素材回收改寫。",
-    "src": "https://api.discogs.com/releases/14894878",
-    "block": "story"
-   },
-   {
-    "text": "成名後的《East/West》由 Liam Sternberg 製作、Magnum 巡演開場，Proggnosis 的樂迷樂評形容樂團聽來像 Yes、Saga，屬 80 年代中期英國 Magnum 一路的商業前衛搖滾；《Chimes》是這種聲音成形前的版本。",
-    "src": "https://www.proggnosis.com/Release/4988",
-    "block": "sound"
-   },
-   {
-    "text": "Multi-Story 的招牌配置是 Rob Wilsher 的 Mellotron、Solina Strings 與 Polysix／DX7 合成器鋪底，配 Ford 的原音與電吉他、Carney 的主奏吉他（《East/West》專輯的器材清單，demo 帶同班底）。",
-    "src": "https://api.discogs.com/releases/2817327",
-    "block": "sound"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "thin",
-   "sound": "thin"
+  {
+    "key": "multi-story|chimes",
+    "artist": "Multi-Story",
+    "album": "Chimes",
+    "facts": [
+      {
+        "text": "《Chimes》是威爾斯東南部新前衛／AOR 搖滾團 Multi-Story 1984 年自製發行的 demo 卡帶，團員為 Paul Ford（主唱、Ovation 原音吉他）、Andy Carney（吉他）、Rob Wilsher（鍵盤）、Roger Nasey（貝斯）、Steve Byrne（鼓），錄於 Gwent 凱爾利恩（Caerleon）的 Loco Studios。",
+        "src": "https://api.discogs.com/releases/6235188",
+        "block": "what"
+      },
+      {
+        "text": "鍵盤手 Rob Wilsher 說，同年另有一捲 Solo Sounds 發行的自題 demo 卡帶，〈Star Traveller〉與〈Tutankhamun〉的版本與《Chimes》相同；當時樂團還有一位叫 Keith 的薩克斯風手，只待了很短時間。",
+        "src": "https://api.discogs.com/releases/14894878",
+        "block": "story"
+      },
+      {
+        "text": "1984 年樂團受邀到倫敦 BBC Maida Vale 為 Tommy Vance 的 Radio One Rock Show 錄了三首：〈Ahead Of Your Time〉〈I, Marcus〉〈The Willow and the Sun〉，播出後簽進 Heavy Metal Records 旗下的 FM 廠牌。",
+        "src": "https://www.proggnosis.com/Artist/2135",
+        "block": "story"
+      },
+      {
+        "text": "《Chimes》裡的〈I, Marcus〉〈Star Traveller〉〈Willow and the Sun〉後來改名放進 1985 年首張專輯《East/West》（官網括號標註對應〈Heroes〉〈Traveller〉〈The Wire〉）。這捲帶子因此是《East/West》歌曲的雛形。",
+        "src": "https://api.discogs.com/releases/6235188",
+        "block": "story"
+      },
+      {
+        "text": "Wilsher 還指出，demo 帶〈Maria〉中段的器樂段落與〈Heroes〉（即〈I, Marcus〉）的器樂段相近，可見樂團把舊素材回收改寫。",
+        "src": "https://api.discogs.com/releases/14894878",
+        "block": "story"
+      },
+      {
+        "text": "成名後的《East/West》由 Liam Sternberg 製作、Magnum 巡演開場，Proggnosis 的樂迷樂評形容樂團聽來像 Yes、Saga，屬 80 年代中期英國 Magnum 一路的商業前衛搖滾；《Chimes》是這種聲音成形前的版本。",
+        "src": "https://www.proggnosis.com/Release/4988",
+        "block": "sound"
+      },
+      {
+        "text": "Multi-Story 的招牌配置是 Rob Wilsher 的 Mellotron、Solina Strings 與 Polysix／DX7 合成器鋪底，配 Ford 的原音與電吉他、Carney 的主奏吉他（《East/West》專輯的器材清單，demo 帶同班底）。",
+        "src": "https://api.discogs.com/releases/2817327",
+        "block": "sound"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "thin",
+      "sound": "thin"
+    },
+    "notes": "必查清單：(1) 母語：英文來源；WebSearch 兩次（與 East West 共用，藝人＋專輯＋評論／Revolver 再發行）。(2) 商品頁：Discogs 6235188／14894878 notes 有；cdgo 403；沒有 Bandcamp 頁面可查（找不到）。(3) 藝人維基：無；Proggnosis 轉載樂團官網 bio 取代。(4) 英文樂評：這捲 demo 帶本身沒有樂評；AllMusic／Progarchives 403。結論：story 只能靠官網 bio 與 Discogs 備註，sound 只能借 East/West 的樂評與器材清單，標 thin；寫作層請寫成『1984 年自製 demo 帶、後來變成 East/West 的雛形』，聲音一句帶過，薄寫約 150 字，不要拿曲名編號長度湊。舊簡介雜項（MS003、七軌、Loco Studios 長度、署名五人、最長曲 8:20）不用；『帶子上的三首歌後來為 1985 年那張改了名字』屬實但曲名對應有來源衝突（官網括號：I Marcus→Heroes、Star Traveller→Traveller、Willow→The Wire；Discogs 只說三首 re-titled）。舊簡介『那個自營廠牌只出過這一張』我沒驗證，勿寫。『Chimes』曲目表含 Come Alive、Ahead Of Your Time、Breaking Ground、Tutenkamun 等，Discogs 也列〈Ahead Of Your Time〉。"
   },
-  "notes": "必查清單：(1) 母語：英文來源；WebSearch 兩次（與 East West 共用，藝人＋專輯＋評論／Revolver 再發行）。(2) 商品頁：Discogs 6235188／14894878 notes 有；cdgo 403；沒有 Bandcamp 頁面可查（找不到）。(3) 藝人維基：無；Proggnosis 轉載樂團官網 bio 取代。(4) 英文樂評：這捲 demo 帶本身沒有樂評；AllMusic／Progarchives 403。結論：story 只能靠官網 bio 與 Discogs 備註，sound 只能借 East/West 的樂評與器材清單，標 thin；寫作層請寫成『1984 年自製 demo 帶、後來變成 East/West 的雛形』，聲音一句帶過，薄寫約 150 字，不要拿曲名編號長度湊。舊簡介雜項（MS003、七軌、Loco Studios 長度、署名五人、最長曲 8:20）不用；『帶子上的三首歌後來為 1985 年那張改了名字』屬實但曲名對應有來源衝突（官網括號：I Marcus→Heroes、Star Traveller→Traveller、Willow→The Wire；Discogs 只說三首 re-titled）。舊簡介『那個自營廠牌只出過這一張』我沒驗證，勿寫。『Chimes』曲目表含 Come Alive、Ahead Of Your Time、Breaking Ground、Tutenkamun 等，Discogs 也列〈Ahead Of Your Time〉。"
- },
- {
-  "key": "mushroom now!|traveller's light",
-  "artist": "Mushroom Now!",
-  "album": "Traveller's Light",
-  "facts": [
-   {
-    "text": "Mushroom Now! 是日本電子音樂人澤崎義博（サワサキヨシヒロ，Yoshihiro Sawasaki）的名義，《Traveller's Light》是 1994 年由日本 Transonic Records 發行的第一張專輯（實質第一張個人專輯），被日本發行方稱為 90 年代日本 techno 的傳奇作品。",
-    "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
-    "block": "what"
-   },
-   {
-    "text": "澤崎 1993 年以 Techno The Gong 名義起步；1994 年因石井健（Ken Ishii）推薦而寄出的 demo 帶，使他以 Meditation Y.S. 名義登上比利時 R&S 旗下專攻 ambient 的子廠牌 Apollo 出道，接著才在國內 Transonic 以 Mushroom Now! 名義發行這張專輯。",
-    "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
-    "block": "story"
-   },
-   {
-    "text": "Transonic 的藝人介紹稱他早期呈現深受前衛搖滾影響、帶宇宙感與浪漫氣質的 ambient 聲音，在日本與歐洲 techno 圈都造成衝擊；他 1993 年起用的名義 Techno The Gong 取自法國前衛搖滾團 Gong，早期也翻唱過 Gong 的歌。",
-    "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
-    "block": "story"
-   },
-   {
-    "text": "再發行廠 ExT Recordings／Transonic 的介紹文：這張專輯雖大量使用 TB-303、TR-909，聽起來卻不像把重點放在俱樂部音樂的 progressive techno，而讓人聯想到 Pink Floyd、Gong、Tangerine Dream 這類 70 年代前衛搖滾，展開「宇宙般壯大、抒情」的電子音樂。",
-    "src": "https://ultra-vybe.co.jp/post/EXT-0037.html",
-    "block": "sound"
-   },
-   {
-    "text": "聲音構成：大量使用 Roland TB-303 與 TR-909，寬廣、長篇幅的電子音鋪陳；整張只有五首，其中〈2017 Space Flight〉分成五個段落（Glittering of the Asteroid Bay、Astrodrive、Dimension Zero 等），以長篇組曲的方式推進。",
-    "src": "https://ultra-vybe.co.jp/post/EXT-0037.html",
-    "block": "sound"
-   },
-   {
-    "text": "Discogs 與唱片行標籤將原盤歸為 Electronic／Progressive Trance；Y.S. 同時掛名全部曲目的作曲與製作、視覺概念，CGI 由 Neurotic Eyes 製作，共同製作人 Kazunao Nagata。",
-    "src": "https://api.discogs.com/releases/401962",
-    "block": "what"
-   },
-   {
-    "text": "2021 年 6 月 Transonic 先推出合輯《Transonic Records From 1994 to 1995》，反應很好，所以接著重發這張；2021 年 10 月 6 日 ExT Recordings 推出雙 CD 豪華版（EXT-0037），收錄 8 首加曲（含 Techno The Gong 的 Gong 翻唱、〈REMIX TRAX〉提供曲、未發表曲），並以 2021 年新母帶處理；同年底英國 Cosmic Soup（曾重發 Susumu Yokota）推出 2LP 黑膠。",
-    "src": "https://ultra-vybe.co.jp/post/EXT-0037.html",
-    "block": "after"
-   },
-   {
-    "text": "日本官方介紹稱這是「海外再評價高漲」的 90 年代日本 techno 隱藏名盤；2016 年澤崎睽違 16 年用本名推出《Sawasaki Is Back!》，近年轉做以溫泉為主題的 Naturally Gushing 系列 ambient。",
-    "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
-    "block": "after"
-   }
-  ],
-  "coverage": {
-   "what": "ok",
-   "story": "ok",
-   "sound": "ok"
+  {
+    "key": "mushroom now!|traveller's light",
+    "artist": "Mushroom Now!",
+    "album": "Traveller's Light",
+    "facts": [
+      {
+        "text": "Mushroom Now! 是日本電子音樂人澤崎義博（サワサキヨシヒロ，Yoshihiro Sawasaki）的名義，《Traveller's Light》是 1994 年由日本 Transonic Records 發行的第一張專輯（實質第一張個人專輯），被日本發行方稱為 90 年代日本 techno 的傳奇作品。",
+        "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
+        "block": "what"
+      },
+      {
+        "text": "澤崎 1993 年以 Techno The Gong 名義起步；1994 年因石井健（Ken Ishii）推薦而寄出的 demo 帶，使他以 Meditation Y.S. 名義登上比利時 R&S 旗下專攻 ambient 的子廠牌 Apollo 出道，接著才在國內 Transonic 以 Mushroom Now! 名義發行這張專輯。",
+        "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
+        "block": "story"
+      },
+      {
+        "text": "Transonic 的藝人介紹稱他早期呈現深受前衛搖滾影響、帶宇宙感與浪漫氣質的 ambient 聲音，在日本與歐洲 techno 圈都造成衝擊；他 1993 年起用的名義 Techno The Gong 取自法國前衛搖滾團 Gong，早期也翻唱過 Gong 的歌。",
+        "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
+        "block": "story"
+      },
+      {
+        "text": "再發行廠 ExT Recordings／Transonic 的介紹文：這張專輯雖大量使用 TB-303、TR-909，聽起來卻不像把重點放在俱樂部音樂的 progressive techno，而讓人聯想到 Pink Floyd、Gong、Tangerine Dream 這類 70 年代前衛搖滾，展開「宇宙般壯大、抒情」的電子音樂。",
+        "src": "https://ultra-vybe.co.jp/post/EXT-0037.html",
+        "block": "sound"
+      },
+      {
+        "text": "聲音構成：大量使用 Roland TB-303 與 TR-909，寬廣、長篇幅的電子音鋪陳；整張只有五首，其中〈2017 Space Flight〉分成五個段落（Glittering of the Asteroid Bay、Astrodrive、Dimension Zero 等），以長篇組曲的方式推進。",
+        "src": "https://ultra-vybe.co.jp/post/EXT-0037.html",
+        "block": "sound"
+      },
+      {
+        "text": "Discogs 與唱片行標籤將原盤歸為 Electronic／Progressive Trance；Y.S. 同時掛名全部曲目的作曲與製作、視覺概念，CGI 由 Neurotic Eyes 製作，共同製作人 Kazunao Nagata。",
+        "src": "https://api.discogs.com/releases/401962",
+        "block": "what"
+      },
+      {
+        "text": "2021 年 6 月 Transonic 先推出合輯《Transonic Records From 1994 to 1995》，反應很好，所以接著重發這張；2021 年 10 月 6 日 ExT Recordings 推出雙 CD 豪華版（EXT-0037），收錄 8 首加曲（含 Techno The Gong 的 Gong 翻唱、〈REMIX TRAX〉提供曲、未發表曲），並以 2021 年新母帶處理；同年底英國 Cosmic Soup（曾重發 Susumu Yokota）推出 2LP 黑膠。",
+        "src": "https://ultra-vybe.co.jp/post/EXT-0037.html",
+        "block": "after"
+      },
+      {
+        "text": "日本官方介紹稱這是「海外再評價高漲」的 90 年代日本 techno 隱藏名盤；2016 年澤崎睽違 16 年用本名推出《Sawasaki Is Back!》，近年轉做以溫泉為主題的 Naturally Gushing 系列 ambient。",
+        "src": "http://www.transonicrecords.com/2021/08/mushroom-now-travellers-light-deluxe.html",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "ok"
+    },
+    "notes": "必查清單：(1) 母語（日文）：ja.wikipedia 無 Mushroom Now!／澤崎義博條目；日文搜尋一次（Transonic／レビュー），主力來源為日文廠牌介紹（ULTRA-VYBE、Transonic Records 官方部落格、sawasaki.jp）。(2) 商品頁：ULTRA-VYBE、Transonic 官方 blog、All Night Flight（有曲目表但『Words incoming』）；extrecordings.net／Tower／Bandcamp 抓不到。(3) 藝人維基：無；用 Transonic 的 biography 取代。(4) 英文樂評：搜尋兩次（日文一次、英文 extended 一次）未見具名樂評；Discogs 401962 notes 空、21583183 為加曲清單。舊簡介：「Y.S. 其實是 Yoshihiro Sawasaki」可由 Discogs 21583183（Producer: Yoshihiro Sawasaki）與官網確認；『2021 年的加值版改印全名』屬 credit 雜項，不用。曲長（4:30、26:10、22:22）、錄音 Hanagebyoon Studio 不用。『Techno The Gong 一名取 Gong 的諧音玩笑』是我的推測，來源只寫名稱與翻唱 Gong，寫作層勿寫『玩笑』。聲音描述『酸性貝斯線』屬 TB-303 的常識推論，來源只寫 TB-303／TR-909，寫作時勿加。評價『傳奇』『隱藏名盤』來自再發行廠自身宣傳，寫作時須謹慎，不當客觀評價。"
   },
-  "notes": "必查清單：(1) 母語（日文）：ja.wikipedia 無 Mushroom Now!／澤崎義博條目；日文搜尋一次（Transonic／レビュー），主力來源為日文廠牌介紹（ULTRA-VYBE、Transonic Records 官方部落格、sawasaki.jp）。(2) 商品頁：ULTRA-VYBE、Transonic 官方 blog、All Night Flight（有曲目表但『Words incoming』）；extrecordings.net／Tower／Bandcamp 抓不到。(3) 藝人維基：無；用 Transonic 的 biography 取代。(4) 英文樂評：搜尋兩次（日文一次、英文 extended 一次）未見具名樂評；Discogs 401962 notes 空、21583183 為加曲清單。舊簡介：「Y.S. 其實是 Yoshihiro Sawasaki」可由 Discogs 21583183（Producer: Yoshihiro Sawasaki）與官網確認；『2021 年的加值版改印全名』屬 credit 雜項，不用。曲長（4:30、26:10、22:22）、錄音 Hanagebyoon Studio 不用。『Techno The Gong 一名取 Gong 的諧音玩笑』是我的推測，來源只寫名稱與翻唱 Gong，寫作層勿寫『玩笑』。聲音描述『酸性貝斯線』屬 TB-303 的常識推論，來源只寫 TB-303／TR-909，寫作時勿加。評價『傳奇』『隱藏名盤』來自再發行廠自身宣傳，寫作時須謹慎，不當客觀評價。"
- }
+  {
+    "key": "muslimgauze|buddhist on fire",
+    "artist": "Muslimgauze",
+    "album": "Buddhist on Fire",
+    "facts": [
+      {
+        "text": "Muslimgauze 是曼徹斯特實驗音樂人 Bryn Jones（1961–1999）的個人計畫，名字把 muslin（一種薄紗）與 Muslim 拼在一起，指向他對穆斯林世界衝突的關注；他本人不是穆斯林。計畫成形於 1982 年以色列入侵黎巴嫩之後，他的研究後來擴及阿富汗、巴基斯坦、車臣、伊朗、伊拉克等地。",
+        "src": "https://en.wikipedia.org/wiki/Muslimgauze",
+        "block": "what"
+      },
+      {
+        "text": "《Buddhist on Fire》是 1984 年的第三張 LP（兩年內第三張），由 Simon Crab（Bourbonese Qualk）主持的獨立合作廠牌 Recloose 發行；Jones 同年稍早也以自己的 Limited Editions 廠牌出了《Hunting Out with an Aerial Eye》。",
+        "src": "https://en.wikipedia.org/wiki/Muslimgauze",
+        "block": "what"
+      },
+      {
+        "text": "封面是一名西藏僧人自焚抗議後的畫面，Jones 的「政治」不靠歌詞——他在訪談中說音樂沒有歌詞，因為那會變成說教，「想知道更多得自己去查」。曲名如〈Soviet Occupied Territories〉〈Turkish Falaka〉〈Dissidents in Exile〉給整張帶一種暗示性的反抗氣息。",
+        "src": "https://ugohere.blogspot.com/2020/05/influential-album-muslimgauze-buddhist.html",
+        "block": "story"
+      },
+      {
+        "text": "一位 1985 年買到這張唱片的樂迷回憶：早期的 Muslimgauze 像「一個人加一台鼓機」，起初方塊而粗糙，到了第三張已有了某種巧思與成熟；只有五首長曲，節奏的執拗令人著迷。",
+        "src": "https://ugohere.blogspot.com/2020/05/influential-album-muslimgauze-buddhist.html",
+        "block": "sound"
+      },
+      {
+        "text": "PopMatters（J. Simpson，2023）評：這是「比前兩張更像它那個年代的產物」——玻璃質的合成器鋪底與尖銳的貝斯，像 80 年代中期藝術搖滾樂團與前衛金屬樂團一起即興；〈Priest〉用玻璃感的數位鋼琴和早期天主教素歌，近乎 New Age（「Windham Hill 遇上 Enigma 的 MCMXC」）。",
+        "src": "https://www.popmatters.com/muslimgauze-first-five-albums-tribute",
+        "block": "sound"
+      },
+      {
+        "text": "同篇評論指出，Muslimgauze 的招牌手法在這張首度成形：〈Turkish Falaka〉的阿拉伯式循環節奏（locked grooves），以及〈Reuters〉裡旋轉的白噪音與粗暴的人聲取樣——已預告後來《Gun Aramaic》《Coup d'Etat》的 Muslimgauze；他稱整張「不平均，但有魅力，更像一件好奇的收藏」。",
+        "src": "https://www.popmatters.com/muslimgauze-first-five-albums-tribute",
+        "block": "sound"
+      },
+      {
+        "text": "Northsound 資料標這張約 39 分鐘、五首，標籤為 industrial、dub、noise，開頭是〈Soviet Occupied Territories〉。",
+        "src": "https://northsound.fm/album/buddhist-on-fire-116082",
+        "block": "sound"
+      },
+      {
+        "text": "Recloose 的 Simon Crab 回憶，廠牌辦公室的倉庫曾被鄰近酒吧的惡棍縱火攻擊，一批新壓的《Buddhist on Fire》因而被毀；後來 Jones 就改往 Staalplaat、Soleilmoon 等廠牌發行。他一生發行超過 90 張原創專輯、近兩千首作品。",
+        "src": "https://en.wikipedia.org/wiki/Muslimgauze",
+        "block": "after"
+      },
+      {
+        "text": "2016 年德國 Vinyl-on-demand 以限量 200 張重新壓片，Anders Peterson 負責母帶修復。",
+        "src": "https://api.discogs.com/releases/8007013",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "ok"
+    },
+    "notes": "必查清單：(1) 母語：英國藝人，用英文專文（PopMatters、Wikipedia、部落格、Substack）；WebSearch 一次。(2) 商品頁：Northsound、Discogs（197846 備註：早期版附 Triptych 7\"，8007013）；Bandcamp／Boomkat／VOD 頁未查。(3) 藝人維基：en.wikipedia.org/wiki/Muslimgauze 取得；Buddhist on Fire 無獨立條目。(4) 英文樂評：PopMatters 2023（具名 J. Simpson）；AllMusic 只有日期；RYM 未查。舊簡介錯處／雜項：『最早的幾批成品夾進 1982 年的七吋，名為 E.g Oblique Graph』——Discogs 說早期份數附 Triptych 7\" EP（LOOSE 002），並未寫 1982 年與 E.g Oblique Graph；E.g Oblique Graph 是 Jones 1982 年的更早名義（維基），兩者的連結舊簡介可能混了，不要寫。『五軌〈Turkish Falaka〉8:20、13:30』是曲長雜項不要用。『Experimental 與 Tribal』是 Discogs 風格標籤。封面是西藏僧侶自焚畫面來自部落格網友，Wikipedia 另說 Jones 提過聲援西藏佛教徒，寫作時可寫『封面是藏僧自焚的照片』但請當一般描述，不寫誰說。PopMatters 說『Priest』有天主教素歌，注意這與『西藏』題材看似不一，照實寫即可。『近 400 張專輯』是 PopMatters 誇張，勿用；用『超過 90 張原創專輯』（維基）。"
+  },
+  {
+    "key": "muslimgauze|kabul",
+    "artist": "Muslimgauze",
+    "album": "Kabul",
+    "facts": [
+      {
+        "text": "Muslimgauze 是曼徹斯特實驗音樂人 Bryn Jones（1961–1999）的計畫，名字把 muslin（薄紗）與 Muslim 拼在一起；這個計畫據稱是回應 1982 年以色列入侵黎巴嫩而成形，該事件促使他研究中東衝突的來龍去脈，後來成為他一生的創作焦點。",
+        "src": "https://en.wikipedia.org/wiki/Muslimgauze",
+        "block": "what"
+      },
+      {
+        "text": "《Kabul》是 1983 年自己的廠牌 Product Kinematograph 發行的第一張 LP；Jones 先前以 E.g Oblique Graph 之名發過作品，音樂是電子／實驗的 drone、偶爾有合成器旋律和廣播取樣。",
+        "src": "https://en.wikipedia.org/wiki/Muslimgauze",
+        "block": "what"
+      },
+      {
+        "text": "PopMatters（J. Simpson，2023）稱《Kabul》是 Muslimgauze 的「胚胎狀態」：Jones 一邊擺弄鼓機、一邊實驗錄音技術，做出輕薄、異國、飄忽的聲音世界；其中第三首〈Muslin Gauze Muslim Prayer〉正是 Muslimgauze 這個名字的來源。",
+        "src": "https://www.popmatters.com/muslimgauze-first-five-albums-tribute",
+        "block": "story"
+      },
+      {
+        "text": "Jones 自己壓製這張黑膠，並附上他自製的 Facsimile 小冊，裡面是拼貼圖像與文字剪接；PopMatters 認為這是 DIY 時代的作法，顯示他從一開始就相信自己的作品、有很多話想說。",
+        "src": "https://www.popmatters.com/muslimgauze-first-five-albums-tribute",
+        "block": "story"
+      },
+      {
+        "text": "PopMatters 對聲音的描述：電池驅動的廉價合成器，加上沉在回音與殘響裡、像是脫離身體的人聲取樣，像「一場中東市集的夢」；節拍不斷變化，催眠、冥想，像聽一支土耳其婚禮樂隊在夜裡演奏到深夜，只有一堆餘燼的光，聽法是讓它沉進骨頭裡，而不是專心分析。",
+        "src": "https://www.popmatters.com/muslimgauze-first-five-albums-tribute",
+        "block": "sound"
+      },
+      {
+        "text": "樂評統整 Muslimgauze 的一貫手法：幾乎無旋律的中東式 breakbeat，用 dub 技法與各種效果處理，疊上田野錄音和阿拉伯語念白片段，帶民族誌質感；Jones 的音樂沒有歌詞，因為「那會變成說教」。",
+        "src": "https://www.popmatters.com/muslimgauze-first-five-albums-tribute",
+        "block": "sound"
+      },
+      {
+        "text": "Jones 一生發行超過 90 張原創專輯，近兩千首作品；他的公開表演很少，1986 年第一次現場演出讓他受創，直到 1995 年才重新登台，改以現場打擊樂配合底帶演出。",
+        "src": "https://en.wikipedia.org/wiki/Muslimgauze",
+        "block": "after"
+      },
+      {
+        "text": "2016 年德國 Vinyl-on-demand 以限量 200 張重壓，Anders Peterson 負責母帶修復，Discogs 風格標 Dark Ambient、Industrial、Dub。",
+        "src": "https://api.discogs.com/releases/8006985",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "ok"
+    },
+    "notes": "必查清單：(1) 母語：英國藝人，用英文專文；WebSearch 與 Buddhist on Fire 共用（已有 PopMatters 對 Kabul 的整段評論）。(2) 商品頁：Discogs 326830（Product Kinematograph PKR-1 備註：薄白色挖孔內袋、Facsimile 1 12 頁小冊）、8006985；Bandcamp／Boomkat 未查。(3) 藝人維基：en 有，Kabul 無獨立條目。(4) 英文樂評：PopMatters 2023（具名 J. Simpson）。舊簡介雜項（PKR-1、內袋標籤、12 頁 A4）不要用，但『Facsimile 1 小冊』可作為 DIY 的一句交代。『以色列入侵黎巴嫩』措辭：維基稱 Operation Peace of the Galilee（1982）；寫『1982 年以色列入侵黎巴嫩』即可。『他說』：舊簡介說『他說這個計畫最初是回應…』——維基未註明是 Jones 親口說，來源寫『formed in response to...』，所以寫作時不要寫『他說』，改為『據說／據稱』或直接陳述。PopMatters 說『無旋律』的泛論是整體特徵，與 Kabul 的『gauzy ethereal』稍有出入，寫聲音以 Kabul 段落為主。"
+  },
+  {
+    "key": "mylène farmer|cendres de lune",
+    "artist": "Mylène Farmer",
+    "album": "Cendres de lune",
+    "facts": [
+      {
+        "text": "《Cendres de lune》是 Mylène Farmer 的首張專輯，1986 年 4 月 1 日由 Polydor 發行。首單曲〈Maman a tort〉1984 年賣破 10 萬張，但 1985 年初下一首〈On est tous des imbéciles〉失敗，RCA 不再續約；她轉簽 Polydor（對方想培養新人，給了三張專輯合約），原本替她寫首批歌的 Jérôme Dahan 也與她和 Laurent Boutonnat 分道揚鑣。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "what"
+      },
+      {
+        "text": "Farmer 與 Boutonnat 這對搭檔埋頭寫第一張專輯，探討法國流行歌少有碰觸的題材：性、死亡、童年、宗教。〈Plus grandir〉是她第一首自己寫詞的歌；專輯名取自〈Libertine〉第一段的第一句歌詞。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "story"
+      },
+      {
+        "text": "錄於 1985 年 6 月至 1986 年 1 月，地點是 Aubervilliers 的 Studio Le Matin Calme；Boutonnat 包辦大部分作曲、編曲與製作，音響工程與混音是 Jean-Claude Dequéant，〈Libertine〉的曲子即由 Dequéant 所作。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "what"
+      },
+      {
+        "text": "Polydor 總裁 Alain Lévy 出人意料地先發〈Plus grandir〉（1985 年 9 月）：Boutonnat 為它拍了近八分鐘、法國第一支以 CinemaScope 拍攝的短片式 MV，結合性與宗教，在鬧鬼般的屋子裡拍成，被數個節目禁播，只獲得口碑上的成功。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "story"
+      },
+      {
+        "text": "專輯的轉折在夏天：〈Libertine〉的 11 分鐘 MV（18 世紀背景，受 Kubrick《Barry Lyndon》與 Ridley Scott《The Duellists》啟發，她在片中裸身、頭髮染成紅色）引發爭議並讓她爆紅，登上 Top 50 第 10 名，並入圍 1986 年 Victoires de la musique 最佳 MV；專輯後來賣到近 70 萬張、1988 年獲雙金唱片。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "after"
+      },
+      {
+        "text": "1987 年因〈Tristana〉大受歡迎（Top 50 第 7 名，MV 改編自格林童話《白雪公主》、設定在俄羅斯以襯托斯拉夫旋律感），專輯在春季重發並加入這首新歌。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "after"
+      },
+      {
+        "text": "樂手：Boutonnat 彈鍵盤、Slim Pezin 吉他、Alain Matot 薩克斯風、Gilles Choir 鼓；合唱包括 Carole Fredericks 等人，以及「Les Moines Fous du Tibet」（瘋狂西藏僧侶）。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "sound"
+      },
+      {
+        "text": "當年樂評：Rock & Folk 說「這個月只能選一張法國唱片，就選這張：全是精華、沒有廢物」；Swing 稱它是「令人振奮的法語專輯，原創、能與英美製作抗衡……音色極大，應成為必備品」，並讚歌詞精妙、時有雙關，Mylène 的嗓音很有黏性；20 ans 雜誌形容她在專輯裡輪流是天真、浪漫、賤女人、戀人、孩童、毒藥、挑逗者，「她放進食譜裡的香料，正是法語歌曲缺少的」。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "what"
+      },
+      {
+        "text": "Le Quotidien de Paris 形容她的聲音「像水晶」，歌詞「奇異、超脫時空與規範」；Club Dial 樂評人票選它為 20 世紀第 18 名專輯（法語維基引述）。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "what"
+      },
+      {
+        "text": "封面是 Boutonnat 拍的黑白側臉照，Farmer 還是黑髮、幾乎認不出，唯一的顏色是紅色的名字與專輯名；風格被歸為 pop／variété française。",
+        "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune",
+        "block": "sound"
+      },
+      {
+        "text": "【主線補查】Qobuz 藝人介紹：早期作品是節奏輕快的舞曲流行，配上 Farmer 帶氣音的唱法；專輯頁曲風標為 synthpop、new wave、baroque pop。",
+        "src": "https://www.qobuz.com/it-it/interpreter/mylene-farmer/43325",
+        "block": "sound"
+      },
+      {
+        "text": "【主線補查】Boutonnat 寫了大部分的曲，Farmer 寫詞；專輯後來獲雙金唱片、銷量超過 60 萬張（Nostalgie）。",
+        "src": "https://www.nostalgie.fr/artistes/mylene-farmer/actus/mylene-farmer-zoom-sur-libertine-son-plus-grand-tube-356574",
+        "block": "after"
+      },
+      {
+        "text": "【主線補查】Purecharts 把它排在 Farmer 專輯最後一名，嫌音樂上不夠成熟，但認為它確立了她陰暗、挑釁的形象。",
+        "src": "https://www.purebreak.com/news/mylene-farmer-on-a-classe-ses-albums/257915",
+        "block": "after"
+      }
+    ],
+    "coverage": {
+      "what": "ok",
+      "story": "ok",
+      "sound": "thin"
+    },
+    "notes": "必查清單：(1) 母語（法文）：fr.wikipedia 專輯條目為主力，含當年樂評引述（Rock & Folk、Swing、Le Quotidien de Paris、20 ans 等）；未再另搜新聞。(2) 商品頁：Discogs api 未另抓（維基註引 Discogs 805214、6843396、master 50267）；Fnac／Polydor 頁未查。(3) 藝人維基：fr.wikipedia 已看專輯條目，歌曲子條目〈Libertine〉〈Tristana〉〈Plus grandir〉未開。(4) 英文樂評：未查（法國盤，優先母語）。sound 標 thin 是因為多數樂評講『聲音很大』『嗓音黏人』，具體聲音構成只有樂手與器材名單，沒有詳細曲風描述；寫作層可借 Rock & Folk／Swing 的引述一兩句；不要自加『冷波／synth-pop』之類曲風字眼，本稿沒有出處。建議主線補查：Libertine／Maman a tort 的具名樂評（Mylène Farmer 條目英文維基或 Les Inrocks）。舊簡介雜項（9 軌 vs 12 軌、1:47、Tristana 插入第 4 位）不要用；『隔年為塞進〈Tristana〉整張重出』可寫成『1987 年重發加入〈Tristana〉』一句，屬發行經過可以簡述。年份：1986 年 4 月 1 日（舊簡介說 4 月屬實）。Wikipedia 曲目表第 1 軌是〈Libertine〉，舊簡介說『末軌同名曲』無誤。Club Dial 排名為維基引述，我未查原文。｜主線補查：聲音仍偏薄，只寫 synthpop／new wave 底、氣音唱法，不加器材細節。"
+  }
 ]
