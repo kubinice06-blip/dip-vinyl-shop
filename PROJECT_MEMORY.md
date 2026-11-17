@@ -5,6 +5,19 @@
 - **結果**：其餘組。sd-064 上線 30（Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Gillespie、Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Wilkerson、Donald Byrd 8、Doodle、Doris Norton）；sd-065 上線 30（Norwood、DOUBLE、Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Candles of Vision、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）。資料薄的照 delayde 前例薄寫上線。
 - **主線補查**（Discogs 公開 API notes／credits 為主）：Gillespie《Horn of Plenty》巴黎兩場、Don Carlos & Gold 兩張製作班底、Doky 兩張客席、Pullen《Kele Mou Bana》編制、Doodle（樂天商品頁）、Eddie Daniels 留日錄音（Thad Jones–Mel Lewis 巡演失誤）、Pearson《How Insensitive》Jack Manno 人聲大樂團、Earl Cunningham、Candles of Vision 格拉茨錄音。審稿改 sd-064 27 處（補《盤名》、軌數／軌序、聽眾留言非評論）、sd-065 12 處（版本、軌數、單源「常被視為」）。
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-064.json,review-sd-065.json,kv-before-sd-064.json,kv-before-sd-065.json}`、`desc-tools/batches/{cards,research,output}/sd-06{4,5}*`、onboarding manifest 58 處。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s37：sd-068、sd-069 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-068 上線 30（FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）；sd-069 上線 30（Gone、Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）。FRICTION、George Young、Petrella、Ghost、Images、Dou Mahi 等資料只到藝人層級，照 delayde 前例薄寫上線。
+- **主線補查**：Gene Harris 1972／1973（blp1553 轉載原盤內頁，story／sound 救成 ok）、Russell《So What》、Mellé《Mindscape》（題獻 Alfred Lion）、Googoosh《Akharin Khabar》、Rapsodia 葛萊美入圍、Grant Green《I Want to Hold Your Hand》、Grenadine《Nopalitos》。審稿改 sd-068 9 處（General Magic 單源形容詞、補《盤名》壓字數）、sd-069 2 處（刪單源《紐約時報》年度專輯、Goya 的「老式標準曲」封套說法）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-068.json,review-sd-069.json,kv-before-sd-068.json,kv-before-sd-069.json}`、`desc-tools/batches/{cards,research,output}/sd-06{8,9}*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 99 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s34：sd-062、sd-063 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-062 上線 30（Cicada、Circle、Claude François、Claude Young、Clifford Jordan 4、McPhatter、Black Light District、Collage 2、Consumer Electronics、Controlled Bleeding、Council of Nine、Count Ossie、Credo、Cro-Mags 2、Crown of Thornz、Crystal Vibe、Culture Freeman、Curly Ray Cline 2、Cuushe 2、Cygnus、CYNE、Norby 2）；sd-063 上線 30（Da Vàng、Dando Shaft 2、Fingerprints、Danielle Howle、Dariush、Dark Comedy、Holzman、Stackenäs、Deafheaven 2、Death of Samantha、Deepchord 2、Del McCoury 2、delayde、Jannah、Hodge、Banhart 2、Devo、Dexter Gordon 3、Dezerter 2、Dhamika、Dianne Reeves 2）。資料只到藝人／廠牌層級的（delayde 續集、Dhamika、Dariush、Norby《Queen》等）照前例薄寫上線。
+- **主線補查**：Discogs API release notes 為主——Reeves《The Nearness of You》日本先行與罐裝咖啡廣告曲、三場 Van Gelder 錄音；Death of Samantha Moonliner 六小時現場錄完；Del McCoury、Dark Comedy、Claude Young、Hello Hank Jones、Love Ballads、Leathersex（福克蘭備戰期 C90）、Käokiri 編制；Da Vàng 越文 VnExpress 專訪；Norby 英文維基。審稿改 sd-062 3 處、sd-063 21 處（補《盤名》、Chillhop 同名未證實刪、McCoury 兩張鉤子相撞改寫）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-062.json,review-sd-063.json,kv-before-sd-062.json,kv-before-sd-063.json}`、`desc-tools/batches/{cards,research,output}/sd-06{2,3}*`、onboarding manifest 59 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。WebSearch 約 91 次。
 
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s33：sd-060、sd-061 上線（60 張，無留置）

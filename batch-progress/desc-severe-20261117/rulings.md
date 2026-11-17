@@ -1846,3 +1846,89 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-065.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 91 次（研究層 sd-064 42、sd-065 41，主線 8）。
+
+## sd-062（30 張，其餘：Cicada、Circle、Claude François、Claude Young、Clifford Jordan 4、Clyde McPhatter、Coil presents Black Light District、Collage 2、Consumer Electronics、Controlled Bleeding、Council of Nine、Count Ossie、Credo、Cro-Mags 2、Crown of Thornz、Crystal Vibe、Culture Freeman meets the Bush Chemists、Curly Ray Cline 2、Cuushe 2、Cygnus、CYNE、Cæcilie Norby 2）— s34
+
+- 研究：3 支 Sonnet，WebSearch 11＋17＋14＝42 次；none 只有 Norby《Queen of Bad Excuses》sound。母語來源：Cicada 日文 CD Journal／flau、Claude François 法文維基、Collage 愛沙尼亞文維基、Credo 拉脫維亞來源、Norby 丹麥文維基。寫稿前預查 60 張（sd-062／063）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 2 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Claude Young（題獻、底特律與倫敦兩地錄音、Elypsia）；Clifford Jordan《Hello, Hank Jones》（Media Sound、Workman／Waits、製作人小沢善雄、東芝 EMI Eastworld）；《Cliff Craft》（Van Gelder Hackensack、Farmer 由 ABC-Paramount 授權）；McPhatter《Love Ballads》（Sequel 再發註記：1955-08～1958-02 三間錄音室的單曲錄音，證明是拼盤）；Norby《My Corner of the Sky》（英文維基：與 Niels Lan Doky 把流行歌改編給爵士編制、填詞 Brecker／Corea／Grolnick／Shorter、美國班底）→ story ok；《Queen of Bad Excuses》（與 Danielsson 合作）；Consumer Electronics（1982 年 4 月福克蘭備戰期間的 C90 首版）；Collage《Käokiri》（Melodiya credit：愛沙尼亞電台錄音、Vahuri 編曲指揮、樂器與七位歌手；1982 再壓盤列 Apelsin，關係不明不寫）。
+- 事實裁定：Cicada《Farewell》不是第一張在日本上架的實體（flau 2015《Ocean》才是）；Circle 不寫伊藤潔生平、石岡瑛子、母帶遺失；Black Light District 不寫 Derek Jarman；Love Ballads 不寫十歲、週薪、〈Lucille〉自寫；Controlled Bleeding 的 Joe Papa 是主唱（舊稿誤作鼓手）；Consumer Electronics 不寫 Best 生年（1966／1968 兩說），聲音照實寫成 power electronics 類型通則；Collage 兩張團史與聲音屬共用事實，年份寫「1970 年代中期／後期」；Count Ossie 那張錄音經過照實寫「至今不清楚」；Council of Nine 母親健康故事單源略過；Cro-Mags《Alpha-Omega》作曲權爭議不採任一方、《Best Wishes》不寫鬧鬼與海洛因；Crown of Thornz 只寫「主唱」；Cuushe《WAKEN》不寫 aus 共同製作、騷擾事件不寫人名；Norby《Queen》不寫藏曲與 Scofield 七軌；CYNE 是四人團、不斷言廠牌；Crystal Vibe 不寫成烏克蘭廠牌（Altar 在蒙特婁）。
+- **薄寫上線不留置**：Claude Young、Love Ballads、Käokiri、Leathersex、Crystal Vibe、Culture Freeman、Cygnus、Credo（聲音）、Crown of Thornz、Norby 兩張（《Queen》183 字、聲音只寫合作分工）、Cuushe《Red Rocket Telepathy》183 字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 3 處，改動檔 `review-sd-062.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Clifford Jordan《Cliff Craft》 | 「加上 咆勃」刪多餘空格 | 格式 |
+| Clyde McPhatter《Love Ballads》 | 「單曲與 B 面」→「單曲正反面」 | 避 A／B 面字眼 |
+| Clifford Jordan《Hello, Hank Jones》 | 刪「Jones 在〈Love for Sale〉的演奏特別受稱讚」 | 出處只有網友留言 |
+
+其餘逐張四問無改：Cicada 離別概念（flau 定位）、Circle 閣樓排練的廚房用具與風箱（Holland 回憶）、François 改寫英美流行歌、Jordan 四張各取一角（八個月三張、18 歲 Lee Morgan 供曲、直刻錄音、中午到午夜的馬拉松場次）、Coil 偷聽情侶對話的取樣、Collage regilaul、Golgotha 被當成基督教專輯、Count Ossie 過世後七年才出、Credo 的廣島原爆聯篇（Raimonds Pauls）、Flanagan 接主唱、Crown of Thornz 為 Killing Time 暖場趕歌、Cline 被 Stanley 比作五弦琴、〈Why Me, Ralph?〉惡搞 Kristofferson 笑場、Cygnus 'Oumuamua 虛構故事、CYNE 取樣 Spinners／Isaac Hayes 皆有出處。《Hello, Hank Jones》鉤子是直刻錄音方式，比照 sd-054 Hannibal 先例屬故事。《Melnais kliedziens》列樂章題名是在交代聯篇概念，不算曲名體例。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-062.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-063（30 張，其餘：Da Vàng、Dando Shaft 2、D'Agaro／Schlippenbach／Bennink、Danielle Howle、Dariush、Dark Comedy、David Holzman、Stackenäs＋Lonberg-Holm、Deafheaven 2、Death of Samantha、Deepchord 2、Del McCoury 2、delayde、Denise Jannah、Derrick Hodge、Devendra Banhart 2、Devo、Dexter Gordon 3、Dezerter 2、Dhamika、Dianne Reeves 2）— s34
+
+- 研究：3 支 Sonnet，WebSearch 15＋12＋15＝42 次；none 只有 Dark Comedy sound、delayde story。母語來源：Da Vàng 越文（VnExpress）、Dezerter 波蘭文、Denise Jannah 荷蘭文維基。
+- **主線補查**（WebSearch 5 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Dianne Reeves《The Nearness of You》（Discogs 日本盤側標與註記：日本先行發售、附 Pepsi 罐裝咖啡廣告曲〈Freedom〉，三場 Van Gelder 錄音日、Mims／Reeves 製作、完整班底）→ story ok，舊稿「罐裝咖啡廣告曲」屬實、「2 到 5 月分四次」改為三場＋2 月洛杉磯廣告曲；Da Vàng（VnExpress 貝斯手 Lê Quang 專訪：第一屆胡志明市 pop-rock 聯歡得獎、觀眾要他們改唱排行榜歌、「搖滾團能活下來就很好」）；Death of Samantha（封套註記：Moonliner 現場六小時錄完、樂團自製、班底含 Doug Gillard）→ story ok；Del McCoury《Our Kind of Grass》（1976 年 4、6 月錄，Freeland 製作，Bill Runkle 五弦琴兼主唱）；Dark Comedy（Larkin 一人包辦、Art of Dance Studios、Elypsia）；Nights at the Keystone 3（Qobuz／AllMusic 摘要：深夜抒情慢歌、中途提勁）；Deepchord《Tonality of Night》、Stackenäs、Howle 補 credit。Hello Hank Jones、Dhamika、Dariush 補查無新料。
+- 事實裁定：Dariush《Cheshme Man》1991 Caltex 版與 1972 同名專輯關係不明，只寫歌名多有重疊、不寫重錄；Holzman 那張是 Troy（Albany 旗下），不寫解說自寫與錄音廳；Howle、Dark Comedy、Death of Samantha 年份兩說，正文不寫或不強調；Death of Samantha 不寫刻紋師 Porky；Del McCoury《Livin' on the Mountain》不斷言原名，只寫 1971 錄、1976 Grassound、1992 Rebel；Hodge 是在自己的工作室、臥室與旅館錄（舊稿「三間錄音室」錯）；Reeves《Nearness》鋼琴獨奏電子雜音不寫；Landslide 不寫八個 take、單曲版；Underground Out of Poland 不寫美英兩版與 12 吋；Dhamika 不寫「水晶般光脈衝」（Bandcamp 無此語）。
+- **薄寫上線不留置**：delayde《finding solitude 2》（189 字、無鉤子，以「這是什麼」開頭，比照 sd-fix-1 前例）、Dhamika、Dariush、Dark Comedy、Del McCoury《Our Kind of Grass》、Keystone 3、Da Vàng、Danielle Howle、Stackenäs。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 21 處，改動檔 `review-sd-063.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| delayde《finding solitude 2》 | 刪「他後來成為 Chillhop 的固定製作人」 | Chillhop 的 delayde 未證實同一人（sd-fix-1 裁定） |
+| Del McCoury《Our Kind of Grass》 | 鉤子改為「掛 Del McCoury 的名字，主唱卻有一半交給了五弦琴手」，正文補 Runkle 分擔主唱，刪 Baltimore 句壓字數 | 原鉤子與同批《Livin' on the Mountain》同取 Monroe 節奏吉他、前四字相撞；主唱分工出自 Discogs credit，是錄音編制不是 credit 雜項 |
+| Stackenäs、Jannah、Banhart《Oh Me Oh My...》、Devo、Landslide、Keystone 3、Underground Out of Poland、That Day…、Nearness of You | 第二句「這是／這張」改為《盤名》，隨之刪次要句壓字數（Stackenäs 皇家音樂院、Jannah〈'Round Midnight〉、Banhart 煙火槍聲、Dezerter「後半仍然粗暴」與「常被列為最重要專輯之一」、That Day「兼容並蓄」、Nearness「側標寫明全球先行發售」與「Pepsi」） | QA 無《》、字數；側標字樣屬印刷雜項；Dezerter 評價單源 |
+| Nights at the Keystone 3 | 刪「錄音把俱樂部的空間感與四重奏的聲音完整留下」 | 無出處的空話 |
+
+其餘逐張四問無改：Da Vàng 被認定為金屬團（樂團自述）、Dando Shaft demo 直接發行、Lantaloon 轉向搖滾後解散、Fingerprints 無貝斯三重奏、Holzman 引 Martino「十指的手蓋住鍵盤」（NewMusicBox 自述）、Larkin 服役錯過 techno 頭幾年、Deafheaven 兩張（家族創傷與〈Winona〉／四首 demo 與 N Judah）、Deepchord 自稱氛圍音效設計者與短波電台、Jannah 第一位簽 Blue Note 的荷蘭爵士音樂人、Hodge 臥室與旅館、Banhart 兩張（同批亞特蘭大錄音／Gira 不重錄四軌帶）、Devo 首張發行一個月就開錄、Clubhouse 擱置十四年、Landslide 三場拼接、Dezerter 審查改盤名與 D.O.A. 主唱帶出錄音帶、Reeves 罐裝咖啡廣告與 Armatrading／Shirelles 選曲皆有出處。30 張鉤子前四字互異、加權 ≤50（delayde 無鉤子）；查無軌序、曲長、盤號。
+
+### 上線（sd-063）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-063.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-062 42、sd-063 42，主線 7）。
+## sd-068（30 張，其餘：FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）— s37
+
+- 研究：3 支 Sonnet，WebSearch 13＋10＋13＝36 次；none 只有 Schönfeld《Jazz》、George Young《Burgundy》、Mellé《Mindscape》的 sound。母語來源：FRICTION 日文維基、渡辺文男日文維基與大口純一郎回憶、Schönfeld／Katzenbeier 德文維基。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 11 次＋WebFetch＋Discogs API release notes，facts 標【主線補查】）：Gene Harris 1972（blp1553 轉載的 Leroy Robinson 原盤內頁：Butler 與 Wade Marcus 要把他推成領班、刻意配上從沒合作過的東岸樂手）、1973（Gene Edwards 內頁：底特律 Club Mozambique 淵源、Gene Harris Sound）→ story／sound 升 ok；George Russell《So What》（All About Jazz：緊接《The African Game》、〈Time Spiral〉是最後的長篇之一）；Mellé《Mindscape》（Discogs notes：題獻 Alfred Lion、馬里布 Diamondhead 一人錄成）。FRICTION 兩張（日文搜尋 2 次、P-Vine 商品頁 404、Discogs notes 只有錄音地點）、渡辺文男、George Young 兩張、Petrella《Kaleido》、Ghost 兩張（Drag City 頁只有一句宣傳）補查無新料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Replicant Walk 不寫 Mosimann 製作與 Zorn 曲數；聲音段借 1989 現場盤《Dumb Numb CD》評論描述「這個時期」的 FRICTION（同期、含同名曲），照收。Superfunk 不寫 Johnny Guitar Watson 彈貝斯；GENDEMA 不寫 chillwave 與 No Problema Tapes；Funki Porcini 錄音室寫 The Uterus Goldmine；Gemini 的 FACT 引文不套本盤；Mellé《New Faces》寫次中音／上低音（舊稿長號錯）；God Bullies 不寫「電台」「Jesus Goes to Hell Singers」；George Young 不寫 Paddle Wheel／King／David Matthews；Russell 不寫「改寫 Miles 獨奏」「Smalltet」；Braith《Soul Stream》不寫「只有一首出自別人」；Clinton 不寫軌序；Petrella、Glenn Underground 的前作聲音描述不寫成本盤。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-068.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| General Magic《Rechenkönig》 | 刪「失真的快拍混著數位啁啾、爆裂聲」，改「以靜電、回授與節奏脈衝構成」 | 前者只出自 Brainwashed 搜尋摘要（原頁 404），寫作層回報說拿掉其實沒拿 |
+| Gary Burton、Gene Harris 2 張、Ghost《Second Time Around》 | 第二句補《盤名》，並刪次要細節壓回 240 字（JVC 數位爵士系列、三重奏解散句、jazz-funk 標籤） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Schönfeld 廣播樂團十年首席中音、渡辺文男原是歌手、Funk Inc. 試聽帶簽約、Gemini 的樂迷名單、Braith 悼 JFK、Clinton 取樣自己、Mellé 引介 Van Gelder 給 Lion、Glenn Underground 的〈I Feel Love〉重編、Global Communication 兩城各做一半、Ghost 唯一全英文演唱、Petrella 連兩年 DownBeat 新人）。渡辺貞夫為渡辺文男實兄、Adams《Old Feeling》「去世前一年」（1991 錄、1992 年 11 月逝）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條《76:14》盤名誤判曲長）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-068.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-069（30 張，其餘：Gone、Gonzalo Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier Music 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）— s37
+
+- 研究：3 支 Sonnet，WebSearch 18＋16＋14＝48 次；none 0。母語／原文來源：Googoosh 波斯文維基與 Radio Farda 訪談、Rubalcaba 的 DownBeat 1993 年 9 月號報導、Grant Green 原盤內頁（Cuscuna、Goldberg）。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Googoosh《Akharin Khabar》（Amoeba：Caltex 發行、Ghanbari／Zakarian 寫、Cheshmazar 編曲；RadioJavan 2010 年回顧其「清新聲音」）；《Rapsodia》（維基：1995 年葛萊美最佳爵士器樂演奏入圍）；Grant Green《I Want to Hold Your Hand》（Steve Huey 評語、1966 年發行）；Grenadine《Nopalitos》（Michigan Daily 1995 正評、Trouser Press 負評與 Defever 製作）。Images、Dou Mahi、Chaos Laboratory 無新料，照研究稿薄寫。
+- 事實裁定：Gone 盤名照卡單《Let's Get Real, Real Gone for a Change》，Trouser Press 偏負面評語不寫；Avatar 不寫「七首全是他寫的」「後現代」；Imagine 不寫 Dianne Reeves；Googoosh 不寫〈Shak Mikonam〉、《Dou Mahi》不寫作曲人；Grant Green《Remembering》不寫磁頭／相位偏移、《Gooden's Corner》不寫 take 數與標題由來、《Am I Blue》改用 Goldberg 內頁的 mood album；Collier 不寫 Malcolm Lowry；Gosub 不寫「1990 年代初」；Growling Mad Scientists 是阿姆斯特丹二人組（派工詞誤寫以色列，研究層更正），不寫 Yaniv Tal；Goya 1992、不寫「戲仿／概念專輯」；Inner Circle 不寫延後理由、St. Louis Shoes 不寫雙關。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 2 處，改動檔 `review-sd-069.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Greg Osby《Art Forum》 | 刪「曾入選當年《紐約時報》的年度專輯」 | 只見 WRTI 一則轉述、無年份名次 |
+| Grenadine《Goya》 | 「整張刻意寫成老式標準曲」→「仿老派情歌的輕快原創」 | 老式標準曲是封套宣稱，Trouser Press 說它誤導 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Gone 替 Black Flag 開場半年、Haden 在古巴發現 Rubalcaba、國務院到 5 月才發簽證、《Suite 4 y 20》碰上「政權沒那麼糟」風波、Googoosh 禁唱 21 年與 Googooshi 造型、Gorky's 雙語、Govinda 二十年古典小提琴、Grant Green「最愛的三重奏」引語、Osby 的 Inner Circle Music 取名於本張、GMS 從 gabber 時代的阿姆斯特丹去果阿）。Rubalcaba 八張、Osby 七張各取本張概念，生平只一句。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題；鉤子禁詞檢出「迷你裙」的「你」為誤判）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
