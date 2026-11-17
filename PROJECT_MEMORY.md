@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s48：sd-090、sd-091 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-090 上線 30（Tabu Ley Rochereau 2、Tagomago、Tamaru、Ted Lundy／Bob Paisley、Telenights、Tempalay、Terence Blanchard 3、Terra Rosa、Thad Jones、Aggrovators、American Dollar 3、Angelic Gospel Singers 2、Angelica Sanchez、Argo Singers 2、Awakening、Benny Green、Bob Belden、Brooklyn Allstars 4、Bush Chemists、Clark Sisters）；sd-091 上線 30（The Comes、Congos、Consolers 3、Contemporary Jazz Quintet、Dave Pike Set、Dead Milkmen、Dicks、Disciples、Door and the Window、Enid、Famous Ward Singers、Freed Unit、Gospel Keynotes、Great Jazz Trio 10、Grey Wolves、Groundhogs、Harmonizing Four 2、Icemen）。Tagomago、Tamaru、Telenights、福音團多張、Grey Wolves、Icemen 等照 delayde 前例薄寫上線。
+- **主線補查**：Tabu Ley《Africa Worldwide》（Christgau：重錄早年舊作）、Tempalay（ナタリー／OTOTOY）、Bush Chemists（Forced Exposure）、Congos（Roots Archives 樂手與錄音室）、The Comes、Enid（DPRP 專文：四季寓言＋四個主導動機）、Icemen（維基＋訪談）、Great Jazz Trio（日文維基）。舊稿錯誤更正：Gospel Keynotes 廠牌是 Nashboro、Ward Singers 那張非現場、Congos 舊稿把《Heart of the Congos》的 Perry／Island 糾紛套進來。審稿改 sd-090 13 處、sd-091 31 處（多為補《盤名》與壓字數）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-090.json,review-sd-091.json,kv-before-sd-090.json,kv-before-sd-091.json}`、`desc-tools/batches/{cards,research,output}/sd-09[01]*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s51：sd-096、sd-097 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-096 上線 30（White Heaven 2、Willie Colón、Wizz Jones、Yagya 2、Yaron Herman 2、Namysłowski、Zion Train 2、Zodiac、Zoviet France 3 等）；sd-097 上線 30（Zoviet France、Étienne Daho、Ξαρχάκος、Caravan、Pumpuang、Sai Htee Saing、Lay Phyu 2、BOYNEXTDOOR、Charli xcx、Bukka White、cv313 2、Das Damen 等）。無留置；Wun Two 3、YOUTH 83、Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson 等照 delayde 前例薄寫。
+- **主線補查**：Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson（Discogs API＋搜尋），無新料。
+- **審稿**：sd-096 改 9 處、sd-097 改 19 處（單一出處的「常被視為」降級、Earland 合成器轉向時點、第二句補《盤名》壓字數），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-096.json,review-sd-097.json,kv-before-sd-096.json,kv-before-sd-097.json}`、`desc-tools/batches/{cards,research,output}/sd-09[67]*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 81 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s49：sd-092、sd-093 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-092 上線 30（II Generation、Jazz Crusaders、King of Luxembourg、The Lines、Loving Sisters、Meditations、Microphones、Mommyheads、Mountain Goats 3、Mountain Ramblers、Oddfellows、Orchids 2、Penguins、Pentagon、Players 2、Raymond Brake、Rootsman vs Muslimgauze、Royals、Sallyangie、Sea and Cake、Secret Stars、Nightingales、Williams Brothers、THE SQUARE 3）；sd-093 上線 30（THE SQUARE 3、Staple Singers、Sunset Travelers、Waldron／Lacy、Super Trio、Supreme Angels 4、Swanee Quintet 5、Sweetest Ache、Three Sounds 5、The Tourists (Mongolia)、Viceroys、Yips、Yummy Fur、Monk、Thierry Lang、Third Quadrant 2）。
+- **主線補查**：Third Quadrant（Prog 雜誌 157 期、The Progressive Aspect：西北英格蘭 Cheshire 團，舊稿「格拉斯哥」錯）；Royals、Secret Stars、兩支福音團、Supreme Angels、The Tourists、Players《Space Travel》查無新料，照 delayde 前例薄寫上線。舊稿錯誤更正：Staple Singers《Swing Low》與 1963《Swing Low Sweet Chariot》是兩張。
+- **審稿**：sd-092 改 2 處（Players 現場盤補盤名壓字數，首次上 KV 242 字已修正重寫）、sd-093 改 6 處（Tourists 曲目與「B 面」、Swanee 單曲 credit、Sweet Basil 補盤名），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-092.json,review-sd-093.json,kv-before-sd-092.json,kv-before-sd-093.json}`、`desc-tools/batches/{cards,research,output}/sd-09[23]*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 75 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s52：sd-098、sd-099 上線（53 張，無留置）
+
+- **結果**：其餘組最後兩批。sd-098 上線 30（Geoff Mann 2、GoGo Penguin、Grand Puba、Götz Alsmann 2、HANA、Aurex '80、IVE、J. Valentine、Guitar Workshop in L.A.、Joe Williams、John Lee & Gerry Brown 2、Juice WRLD、Kevin Richard Martin、King General、Lou Rawls、Mach One、Mad Professor 2、Maximum Penalty、Mtume、Nightmares on Wax、Noblemen、Möslang、Ottottrio、Peaking Lights、Evans／Blancarte、Raw Deal）；sd-099 上線 23（Red Summer … Smasher，含 Технология、ဇော်ဝင်းထွဋ်）。Mach One、Aurex、Morning Stars、Smasher 等照 delayde 前例薄寫上線。
+- **主線補查**：Zaw Win Htut（英文維基救回早期資料，sound none→thin）；Ottottrio、Mach One、Lou Rawls、King General、Crowns of Glory、Morning Stars、Sidevision、Salena Jones 補查無新料。舊稿錯誤更正：Richard Pine 是松本易夫的企畫名義、Noblemen 不是首作、Ottottrio 是「是方博邦」。審稿改 sd-098 7 處、sd-099 21 處（限量／重發雜項、後設句、單一出處「常被」、補盤名）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-098.json,review-sd-099.json,kv-before-sd-098.json,kv-before-sd-099.json}`、`desc-tools/batches/{cards,research,output}/sd-09[89]*`、onboarding manifest 46 處。
+- **驗證**：`kv-token-check` exit 0；desc2 53 鍵 bulk put Success；回讀 53/53 一致；`front-check` 前台 53/53 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s47：sd-088、sd-089 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-088 上線 30（Slint、Slovenly、Smuv／mt. fujitive、Snapcase 3、Social Tension、SOIL&"PIMP"SESSIONS、Sonia Rosa、Sonny Fortune、Sonny Rollins、Soul-Junk、Soulive、Sounds From the Ground、Spirit of Love、Spirogyra、SME、St. Christopher、Stan Forebee、Sulzmann、Stan Tracey、Cowell、Turrentine 4、State Azure、Di Battista、Stefon Harris、Lacy／Smith）；sd-089 上線 30（Stewart Walker、Stjepko Gut、sToa、Stone、Strapping Fieldhands、Stray Kids 2、Huchard、Subsonic Eye、Suduaya 2、Sugar Loaf Express、Sugar Minott、Sun Electric、Sunburst、Sunny Murray、Suzukiski、Sweeps、SwuM.、Sync24、Tellier、Sīpoli、T.S. Monk 3、Ta-ku 5）。Snapcase 卡帶、Suzukiski、Sweeps、SwuM.、Stjepko Gut 等照 delayde 前例薄寫上線。
+- **主線補查**：Lacy／Smith《Sidelines》（Jorrit Dijkstra〈Existence〉研究文、AllMusic）、Suzukiski《Kamakura》（Zero Gravity 廠牌第一號）。審稿改 sd-088 20 處（單一出處「常被視為」降級、補《盤名》壓字數、Rollins 把 Cranshaw 與 Mtume 混成一人）、sd-089 13 處（補《盤名》、Monk Institute 年份不寫、空格），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-088.json,review-sd-089.json,kv-before-sd-088.json,kv-before-sd-089.json}`、`desc-tools/batches/{cards,research,output}/sd-08[89]*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 88 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s50：sd-094、sd-095 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-094 上線 30（This Heat、Tho-So-Aa、Thomas Köner、Thắng、Thủy Triều Đỏ、Tim Hagans 4、Titiek Puspa、Todd Terry、Tom Rainey、Tommy Smith、Tony Tuff、Tony Williams 2、Tosca、Travelling Day、Triston Palma 3、Trovante、Tuscadero、Twisted Science、Tånk、U-Street All Stars、Ulrich Schnauss 2、Ultima Thule、Uncle Charlie Osborne）；sd-095 上線 30（Voerkel／Frey／Lovens、Us3、Ponomarev、Valet、Shotguns 3、Chichadélicas、Groove Club 2、Music for Dancefloors、Thai Beat、Crying Princess、Trường Sơn 4、Wounds of Love、Zendooni、Vehicle Flips、Venetian Snares、Vince Staples、Vision of Disorder、Vitamiin、Void Stasis、Voivod、Volcano the Bear、Walter Bishop Jr.、Warzone 2、wave to earth、Wayne Davis、Wha-ha-ha）。Titiek Puspa、Thủy Triều Đỏ、Tånk、Trường Sơn 4、Vitamiin 等 12 張照 delayde 前例薄寫上線。
+- **主線補查**（Discogs API 為主，WebSearch 4 次）：Todd Terry《Works》確認是 Torso 化名作品合輯、Ultima Thule 芬蘭發行與歌唱革命註記、Wha-ha-ha 1981 現場與雙轉速、Vitamiin 塔林電台錄音、Ponomarev Van Gelder 錄音等 17 張。派工特注錯 6 處已更正（U-Street All Stars 芬蘭團、Uncle Charlie Osborne 與 Osborne Brothers 無關、Tosca 廠牌、Crying Princess 廠牌、Music for Dancefloors 編者、Groove Club 與 Parallel World 無關）。審稿 sd-094 改 12 處、sd-095 改 55 處（多為第二句補長盤名後壓字數；《Zendooni》裁定只寫主標）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-094.json,review-sd-095.json,kv-before-sd-094.json,kv-before-sd-095.json}`、`desc-tools/batches/{cards,research,output}/sd-09[45]*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
 
 - **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。
@@ -29,6 +73,7 @@
 - **審稿**：sd-082 改 32 處（鉤子取限量版本、出處入文、第二句補《盤名》）、sd-083 改 6 處（La Roca 鉤子取重發事項、Pontiac 鉤子含「我」），見 rulings.md。
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-082.json,review-sd-083.json,kv-before-sd-082.json,kv-before-sd-083.json}`、`desc-tools/batches/{cards,research,output}/sd-08{2,3}*`、onboarding manifest 60 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題（sd-082 兩筆「8 軌錄音機」誤報）、鉤子前四字互異、加權 ≤50。WebSearch 約 98 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s42：sd-078、sd-079 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-078 上線 30（Linval Thompson 2、Lithics、Little John 2、Little Johnny Taylor、Longstone、Lorde、Los Destellos、Los Mirlos、Los Van Van、Los Wembler's、Los Ángeles Negros、Lou Donaldson 11、Louis Smith、Love、Love Tractor、Lowfish、Lucília do Carmo、Lull）；sd-079 上線 30（Lustmord、Lycia、Lyman Enloe、Līvi、Ma Chérie for Painting、Macroblank、Mad Professor 4、Magna Carta、Maher Shalal Hash Baz、Main 2、Sweet Basil 2、MALTA 4、Manhattan Jazz Quintet 2、Manual、Maple、Marc Houle、Marcus Printup、Marijannah、Marjan、Mark Heard、Marlena Shaw）。
@@ -50,12 +95,14 @@
 - **主線補查**：Keith Christmas（The Rising Storm：本人不認首作）、Lacrimosa、Kevin Hays 2、Lauge《Echoes》《Nothingness》、Ritenour《Friendship》直刻、Dizzy Atmosphere、Life's Blood（Nathanson 訪談）、Linval Thompson（Apple Music 評介）。舊稿 Voices in Harmony 把 CCS〈Whole Lotta Love〉張冠李戴，已更正。審稿改 sd-076 4 處（鉤子無出處的「小場地」「出道六年」、Konstruktivists 鉤子不取版本）、sd-077 5 處（Specialty 措辭、上低音薩克斯風、Lindsheaven 鉤子不取重發）。
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-076.json,review-sd-077.json,kv-before-sd-076.json,kv-before-sd-077.json}`、`desc-tools/batches/{cards,research,output}/sd-07[67]*`、onboarding manifest 55 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s38：sd-070、sd-071 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-070 上線 30（Guitoud、GUMI、GZA、Habib Mohebian、Hang Raiji、Hank Mobley 4、Hank Williams 2、Harold Vick、Harry Mudie 2、Harvey Williams、Haze 2、Heaven & Earth、Helén Eriksen 2、Henry Franklin、Hancock、松本英彦、High Tides、Highwoods、後藤浩文、岡野等、Hoody、Hoogway、Hope of Glory）；sd-071 上線 30（Parlan、Horace Silver 6、McGhee、Mundell、Izachaar、Hula、Hurd、I Am David Sparkle、I Awake、Ida、Ike Quebec 4、il:lo、Immanu El、Immanuel Wilkins 3、In Spe、Inade 2、Incapacitants、Inner Dialogue、Integrity）。岡野等《Double Image》（158 字）、後藤浩文照 delayde 前例薄寫上線。
 - **主線補查**（Discogs 公開 API notes／credits 為主）：Vick《Don't Look Back》原盤自寫內頁（story／sound 升 ok）、Heaven & Earth 芝加哥錄音班底、Eriksen《Standards》Tommy Tee 班底、Hang Raiji、松本英彦（児山紀芳監修）、Immanu El 錄音經過、Integrity Victory 初版、Inner Dialogue 人聲、Wilkins Vol. 2。審稿改 sd-070 5 處（版本雜項、補《盤名》、Hope of Glory 鉤子改掉「未數位化」）、sd-071 28 處（多為補《盤名》壓字數；《27th Man》鉤子改掉封面畫面、《Repo》刪壓片數）。
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-070.json,review-sd-071.json,kv-before-sd-070.json,kv-before-sd-071.json}`、`desc-tools/batches/{cards,research,output}/sd-07{0,1}*`、onboarding manifest 60 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 100 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s40：sd-074、sd-075 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-074 上線 30（Jimmy Smith 7、jinsang 3、Kühn、Chambers、Joe Lee Wilson、Lovano 2、Calderazzo 3、Jogging House 2、Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）；sd-075 上線 30（Neptune、Lewis & Jones、John Russell、Scofield 2、Zorn、Toivanen、Kraus、Cortés、Léandre／Grimal、Juaneco、Judge、Silvano、Kadel 2、JUN SKY WALKER(S)、Byles、Delgado、Mance、Murvin、Justice、Hipp、Noetinger 2、Jónsi & Alex、Kangaroo、Kareem Ali、KaS Product、Gentile、Katra Turana）。資料薄的（jinsang、Holt《My Desire》、Kareem Ali、Kangaroo）照 delayde 前例薄寫上線。
