@@ -77,6 +77,7 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-hold-2 | sd-009～014 留置卡重查 | 7 | s8 | ✅ 上線 7（前台 7；7 張全數救回，sd-009～014 留置清空） |
 | sd-hold-3 | sd-016／018 留置卡重查 | 3 | s11 | ✅ 上線 2（前台 2；花生隊長、美空ひばり救回；張露《繁星點點》續留置） |
 | sd-hold-4 | sd-016／019 留置卡重查 | 2 | s14 | ✅ 上線 1（前台 1；黑豹《無是無非》救回；張露《繁星點點》身分不穩續留置） |
+| sd-hold-5 | 張露、delayde 最終重查 | 2 | s18 | ⛔ 上線 0、最終留置 2（張露《繁星點點》實為台灣歌手張璐 1977 環球 LP，卡面藝人錯，**待店主處理**：改藝人或下架；delayde《finding solitude》網路上無任何專輯層級資料） |
 | sd-011 | 中日韓台（高中正義 … 송골매） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-012 | 中日韓台（시인과 촌장 … Mal Waldron & 日野皓正） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-013 | 中日韓台（NANIWA EXPRESS … ゼロ戦） | 30 | s7 | ✅ 上線 27（前台 27；山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》留置） |
@@ -99,14 +100,14 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-028 | 經典度≥4（Casino Versus Japan … Chico Freeman） | 30 | s16 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-029 | 經典度≥4（Chris & Cosey … David Lynch & Alan R. Splet） | 30 | s17 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | s17 | ✅ 上線 29（前台 29；delayde《finding solitude》查無專輯資料留置） |
-| sd-031 | 經典度≥4（Don Pullen … Eliane Elias） | 30 | | |
-| sd-032 | 經典度≥4（Eliane Elias … Ffa Coffi Pawb） | 30 | | |
+| sd-031 | 經典度≥4（Don Pullen … Eliane Elias） | 30 | s18 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
+| sd-032 | 經典度≥4（Eliane Elias … Ffa Coffi Pawb） | 30 | s18 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-033 | 經典度≥4（Fin.K.L … Gabinete Caligari） | 30 | | |
 | sd-034 | 經典度≥4（Galliard … Guido Manusardi） | 30 | | |
 | sd-035 | 經典度≥4（Gunnar Graps ja Magnetic Band … Horace Parlan） | 30 | s20 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-036 | 經典度≥4（Horace Silver … Jackie McLean） | 30 | s20 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
-| sd-037 | 經典度≥4（Jacky Terrasson … jinsang） | 30 | | |
-| sd-038 | 經典度≥4（JMSN … Junior Ross & The Spears） | 30 | | |
+| sd-037 | 經典度≥4（Jacky Terrasson … jinsang） | 30 | s21 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-038 | 經典度≥4（JMSN … Junior Ross & The Spears） | 30 | s21 | ✅ 上線 30（前台 30；無留置；主線補查 2 張；CURATED 0） |
 | sd-039 | 經典度≥4（K. Hand … Larry Young） | 30 | | |
 | sd-040 | 經典度≥4（Laughing Hyenas … Los Mirlos） | 30 | | |
 | sd-041 | 經典度≥4（Los Saicos … Martin Carthy） | 30 | | |
