@@ -2355,3 +2355,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
+
+## sd-086（30 張，其餘：Rita Reys、Robert Calvert 3、Robyn、Rod Modell 3、Ron Carter 4、Ronnie Cuber、Ronnie Foster 4、Rorschach / Neanderthal、Rothko、Roy Davis Jr.、Rudolph Johnson、Rudra、Ruja、RYKARD、池田亮司、Saccharine Trust、Salada de Frutas、Sammy Dread、Sandra Phillips、Sasha & John Digweed）— s46
+
+- 研究：3 支 Sonnet，WebSearch 17＋15＋17＝49 次；none 只有 RYKARD story。
+- **主線補查**（WebSearch 7 次＋WebFetch＋Discogs／MB API，facts 標【主線補查】）：Rita Reys（荷文維基：1985 乳癌後復出、1988 Edison、1991 Bird Award、1992 美國歌本是與 Pim Jacobs 最後錄音；jazzdisco：1990 年中 Monster Studio 44 錄音，單簧管＋鐵琴＋Jacobs 三重奏＋吉他編制）→ story／sound 升 ok；Ron Carter《Jazz & Bossa》（英文維基＋Radio Swiss Jazz：2008-04-21 紐約錄音、Portinho／Monteiro／Morales-Matos 巴西拉丁班底、前作日本 Somethin' Else）→ story ok；《Mr. Bow-Tie》（維基錄音地與編制）；Roy Davis Jr.（Traxsource 簡介：Power Music 的第一張長篇）；Rothko（Scaruffi：三貝斯手、Lo Recordings，盤名 Francis 由來查無不寫）；RYKARD（Bandcamp 無簡介）；Ronnie Cuber（無新樂評，Discogs API 已證 Electric Bird＋David Matthews）。
+- **薄寫上線不留置**（delayde 前例）：RYKARD（無鉤子，以「這是什麼」開頭）、Ronnie Cuber《Pin Point》、Ron Carter《Mr. Bow-Tie》、Rod Modell《Dawn, Dusk, and Darkness》、Foster《Live at Montreux》聲音只寫編制。
+- 事實裁定：Rod Modell《Dawn, Dusk, and Darkness》是 Silentes 13 系列攝影書附 CD（舊稿「ambient／drone CD」錯）；Salada de Frutas 是葡萄牙里斯本團（派工特注寫巴西是協調端誤記）；Sammy Dread 寫 roots reggae 不寫 dancehall；Calvert《Freq》不是一人包辦；Ruja 不斷言是當年原錄音或重錄；Ikeda 聲音寫成「素材是……」；Rorschach／Neanderthal 只寫兩團各自風格；Carter《When Skies Are Grey》只寫妻子葬禮。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 25 處，改動檔 `review-sd-086.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Foster《On the Avenue》 | 鉤子由「換 Benson 當製作人」改為 Electric Lady 錄音室；補《盤名》；壓字數 | 與《Cheshire Cat》撞材料；QA 無《》 |
+| Foster《Live at Montreux》 | 「由管風琴兼顧低音線」→「只有管風琴、吉他與鼓」；刪「同屆廠牌錄五組」 | 研究稿 notes：低音由管風琴屬推論；雜項 |
+| Rorschach／Neanderthal | 刪「7 吋」「夾在地下刊物流通」 | 版本雜項 |
+| Roy Davis Jr. | 「自己廠牌」→ Power Music；刪〈Gabriel〉後續 | 研究稿未證自有廠牌；壓字數 |
+| RYKARD | 刪「聽者形容黑暗卻空靈」「一直有聽眾支持」 | 聽眾留言非評論；無出處 |
+| Foster《Sweet Revival》、Rothko、池田亮司、Sandra Phillips、Ruja | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（歐洲爵士第一夫人、肯特郡罷工礦工、小說歌手、清出遺傳學、盤名玩笑、巴塞隆納十週、倒放人聲、暴風雪地名、東京重聚、bossa nova 五十週年、Somethin' Else 第一張、妻子葬禮、Paul Simon／Billy Joel 樂手、十四歲認識 Benson、無貝斯三重奏、Hammond 配弦樂、東西岸分輯、三貝斯手、教會與 R&B、自由即興、奧義書註釋、禁演、嗶聲排成節奏、SST 黑羊、Lena d'Água、碼頭工人、擱了四十多年、Twilo 駐場）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-086.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
