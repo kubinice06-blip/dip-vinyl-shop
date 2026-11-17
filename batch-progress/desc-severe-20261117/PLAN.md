@@ -125,8 +125,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-053 | 經典度≥4（Vision of Disorder … Zbigniew Preisner） | 30 | s29 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-054 | 經典度≥4＋其餘（Zeni Geva … Al Campbell） | 30 | s29 | ✅ 上線 27（前台 27；A-Sound《Release》、99.99《More of 99.99》、Akal Dub《Life and the Void》查無專輯資料留置；CURATED 0） |
 | sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | | |
-| sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | | |
-| sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | | |
+| sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | s31 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | s31 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-058 | 其餘（Big Satan … Bobbi Humphrey） | 30 | | |
 | sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | | |
 | sd-060 | 其餘（BROCKBEATS … Casiopea） | 30 | | |
