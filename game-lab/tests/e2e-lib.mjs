@@ -338,3 +338,89 @@ export async function walkTutorial(page, w, h, variant = 'plain') {
   const learned = await page.waitForFunction(() => Object.keys(window.__lab.save.learned || {}).length >= 6, null, { timeout: 15000 }).then(() => page.evaluate(() => Object.keys(window.__lab.save.learned).sort()), () => page.evaluate(() => Object.keys(window.__lab.save.learned || {}).sort()));
   return { tier, hands, log, learned, callouts };
 }
+
+// ---- 第 C 波（SPEC-C §11.3）：戰利品列／寶箱、今天的攤位。兩個都真點（touchscreen.tap 打在看得到的那一點） ------------------------
+// 領獎面板的狀態：kind 'loot'｜'chest'｜null（升版前的舊形狀）、三張翻開了沒、木箱掀了沒
+export const lootState = page => page.evaluate(() => {
+  const r = window.__lab && window.__lab.run, p = r && r.pending, L = window.DipLabLoot && window.DipLabLoot.state ? window.DipLabLoot.state() : null;
+  return { screen: window.__lab ? window.__lab.screen() : null, type: p ? p.type : null, kind: p && p.kind || null, cards: p && p.cards ? p.cards.slice() : [], src: p && p.src ? p.src.slice() : [],
+    relics: p && p.relics ? p.relics.slice() : [], money: r ? r.money : null, bag: r ? r.bag.length : null, lt: !!document.querySelector('#panel .lb-sheet.reward.lt-sheet'),
+    sheet: !!document.querySelector('#panel .lb-sheet.reward'), loot: L };
+});
+// 戰利品列／寶箱的三張都翻開了（蓋牌 1.5 秒自己翻、寶箱 1.2 秒自己掀；SPEC-C §4.1、§4.2）。不是戰利品列（舊的挑唱片面板）＝馬上回 true
+export async function lootReady(page, ms = 10000) {
+  return page.waitForFunction(() => {
+    if (!document.querySelector('#panel .lb-sheet.reward.lt-sheet')) return !!document.querySelector('#panel .lb-sheet.reward');
+    const L = window.DipLabLoot && window.DipLabLoot.state(); return !!L && L.open && L.flipped.every(Boolean) && !L.busy;
+  }, null, { timeout: ms }).then(() => true, () => false);
+}
+// 過一張戰利品列／寶箱（打完一位之後呼叫）：等面板 → （戰利品列）等三張翻完、（寶箱）等木箱掀開三張翻完 → 真點
+//   o.take：true＝收第一張（或 o.cardId 那張）；o.relic：true＝改拿第一件配件；都沒給＝「不收（+$400）」
+//   o.until：'night'（預設：升級面板照點第一顆，直到來客／結算；藏家後的攤位不管，交給 clearStall）｜'choice'（點完就回）
+//   o.ms：等面板多久（預設 20 秒）。回 { ok, kind, cards, picked, money0, money1, screen, tries }
+export async function passLoot(page, o = {}) {
+  const ms = o.ms || 20000;
+  const ok0 = await page.waitForFunction(() => window.__lab && window.__lab.screen() === 'reward' &&
+    (!!document.querySelector('#panel .lb-sheet.reward') || !!document.querySelector('#panel .lb-sheet.level [data-lv]')), null, { timeout: ms }).then(() => true, () => false);
+  if (!ok0) return { ok: false, why: 'no reward sheet', screen: await screen(page) };
+  const s0 = await lootState(page);
+  let picked = null, tries = 0;
+  if (s0.type === 'reward') {
+    if (s0.lt) {
+      // 翻完才點（收這張翻開才能按；不收一開始就能按，這裡照真玩家等翻完）
+      await page.waitForFunction(() => { const L = window.DipLabLoot.state(); return !!L && L.open && L.flipped.every(Boolean) && !L.busy; }, null, { timeout: 10000 }).catch(() => {});
+      await sleep(120);
+    } else await sleep(400);
+    const sel = o.take ? (o.cardId ? `.lb-sheet.reward [data-pick="${o.cardId.replace(/"/g, '\\"')}"]` : '.lb-sheet.reward [data-pick]')
+      : o.relic ? '.lb-sheet.reward [data-r]' : '.lb-sheet.reward [data-a=skip]';
+    for (; tries < 3; tries++) {
+      if (!(await page.$(sel))) break;
+      if (o.take) picked = await page.evaluate(s => document.querySelector(s).getAttribute('data-pick'), sel);
+      if (o.relic) picked = await page.evaluate(s => document.querySelector(s).getAttribute('data-r'), sel);
+      await tapAt(page, sel);
+      const moved = await page.waitForFunction(p0 => { const r = window.__lab.run, p = r && r.pending; return !p || p.type !== 'reward' || JSON.stringify(p.cards) !== p0; }, JSON.stringify(s0.cards), { timeout: 2500 }).then(() => true, () => false);
+      if (moved || (await page.evaluate(() => { const p = window.__lab.run && window.__lab.run.pending; return !p || p.type !== 'reward'; }))) break;
+      await sleep(300);
+    }
+  }
+  if (o.until === 'choice') return { ok: true, kind: s0.kind, cards: s0.cards, picked, money0: s0.money, money1: await page.evaluate(() => window.__lab.run && window.__lab.run.money), screen: await screen(page), tries };
+  for (let g = 0; g < 80; g++) {
+    const sc = await screen(page);
+    if (sc === 'night' || sc === 'end' || sc === 'title') break;
+    const lv = await page.evaluate(() => !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming'));
+    if (lv) { await tapAt(page, '.lb-sheet.level [data-lv]'); await sleep(400); continue; }
+    await sleep(250);
+  }
+  return { ok: true, kind: s0.kind, cards: s0.cards, picked, money0: s0.money, money1: await page.evaluate(() => window.__lab.run && window.__lab.run.money), screen: await screen(page), tries };
+}
+// 攤位那塊的狀態（stalls.js state＋pending stall）
+export const stallState = page => page.evaluate(() => {
+  const r = window.__lab && window.__lab.run, p = r && r.pending, st = window.DipLabStalls && window.DipLabStalls.state ? window.DipLabStalls.state() : null;
+  return { screen: window.__lab ? window.__lab.screen() : null, stall: !!(p && p.type === 'stall'), money: r ? r.money : null, st,
+    p: p && p.type === 'stall' ? { after: p.after, cp: p.cp, first: p.first, groups: p.groups, pick: p.pick, q: p.q.slice(), k: p.k, post: p.post, cur: p.cur ? p.cur.kind : null, key: p.cur ? p.cur.key : null, cards: p.cur && p.cur.cards ? p.cur.cards.slice() : null } : null,
+    go: !!document.querySelector('[data-a=go]'), rows: document.querySelectorAll('.st-pick .st-row').length };
+});
+// 今天不逛了（底部面板／站的面板標題列那顆小字鈕 → 確認「不逛了」）；錄音室自己帶過、寄賣領取那站照「先不拿」。
+//   沒有攤位就直接回。回 { ok, cash（這一下多的錢）, taps, screen }
+export async function clearStall(page, o = {}) {
+  const ms = o.ms || 20000, t0 = Date.now();
+  const s0 = await stallState(page);
+  if (!s0.stall) return { ok: true, none: true, cash: 0, taps: 0, screen: s0.screen };
+  let taps = 0;
+  while (Date.now() - t0 < ms) {
+    const s = await stallState(page);
+    if (!s.stall) {
+      const back = await page.waitForSelector('[data-a=go]', { timeout: 4000 }).then(() => true, () => false);
+      return { ok: back, cash: (await page.evaluate(() => window.__lab.run.money)) - s0.money, taps, screen: await screen(page) };
+    }
+    const yes = await page.$('.st-ask [data-a=leaveYes]');
+    if (yes) { await tapAt(page, '.st-ask [data-a=leaveYes]'); taps++; await sleep(500); continue; }
+    if (s.st && s.st.phase === 'station' && s.p && s.p.cur === 'consignGet' && s.p.pick != null) {   // 不逛了之後寄賣領取那站照原貨留著：先不拿
+      if (await page.$('.lb-sheet.stall [data-a=pass]')) { await tapAt(page, '.lb-sheet.stall [data-a=pass]'); taps++; await sleep(500); continue; }
+    }
+    const lv = (await page.$('.lb-sheet.stall [data-a=leave]')) ? '.lb-sheet.stall [data-a=leave]' : (await page.$('.st-pick [data-a=leave]')) ? '.st-pick [data-a=leave]' : null;
+    if (lv && !(s.st && (s.st.phase === 'studio' || s.st.phase === 'walk'))) { await tapAt(page, lv); taps++; await sleep(400); continue; }
+    await sleep(250);
+  }
+  return { ok: false, why: 'timeout', cash: 0, taps, screen: await screen(page), st: await stallState(page) };
+}

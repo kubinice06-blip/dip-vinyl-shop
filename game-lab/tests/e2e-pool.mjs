@@ -51,7 +51,7 @@ import path from 'path';
 import zlib from 'zlib';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
-import { launch, newPage, openTitle, Q, URL0, SIZES, record, results, sleep, jsClick, waitScreen, duelReady, resolveHands, ALLOWED_LS, prologueToDuel, advanceUntil } from './e2e-lib.mjs';
+import { launch, newPage, openTitle, Q, URL0, SIZES, record, results, sleep, jsClick, waitScreen, duelReady, resolveHands, ALLOWED_LS, prologueToDuel, advanceUntil, passLoot } from './e2e-lib.mjs';
 
 const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -148,15 +148,9 @@ async function winGuest(page) {
   await resolveHands(page, 1, 'thoughtful');
   await page.evaluate(() => window.__lab.forceWin());
   const rew = await waitScreen(page, 'reward', 20000);
-  const t0 = Date.now(); let night = false;
-  while (rew && Date.now() - t0 < 25000) {
-    s = await page.evaluate(() => window.__lab.screen());
-    if (s === 'night') { night = true; break; }
-    if (s === 'scene' && await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq');
-    if (await page.$('.lb-sheet.reward [data-pick]')) await jsClick(page, '.lb-sheet.reward [data-pick]');
-    else if (await page.$('.lb-sheet [data-lv]')) await jsClick(page, '.lb-sheet [data-lv]');
-    await sleep(300);
-  }
+  // 第 C 波（SPEC-C §11.3）：戰利品列三張蓋牌翻完才能收 → passLoot 真點收第一張、升級照點第一顆，直到來客
+  const pl = rew ? await passLoot(page, { take: true, ms: 20000 }) : null;
+  const night = !!pl && pl.screen === 'night';
   await sleep(600);
   return ready && rew && night;
 }

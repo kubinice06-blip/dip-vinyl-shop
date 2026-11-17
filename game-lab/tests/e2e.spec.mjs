@@ -80,7 +80,7 @@ import path from 'path';
 import { createRequire } from 'module';
 import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, hitPoint, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
-  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4 } from './e2e-lib.mjs';
+  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4, lootReady, passLoot, clearStall, lootState, stallState } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -116,7 +116,7 @@ async function pastDrop(page, ms = 5000) {
   const t0 = Date.now();
   while (Date.now() - t0 < ms) {
     const st = await page.evaluate(() => ({ dq: !!document.querySelector('.lb-dq.drop .nx.on'), sheet: !!document.querySelector('#panel > .lb-sheet') }));
-    if (st.sheet) return true;
+    if (st.sheet) return lootReady(page, Math.max(1000, ms - (Date.now() - t0)));   // 第 C 波：戰利品列（不念旁白、字幕不用點）三張蓋牌翻完才算過了掉落那段（SPEC-C §4.1）
     if (st.dq) await jsClick(page, '.lb-dq.drop');
     await sleep(120);
   }
@@ -966,6 +966,7 @@ async function run() {
         for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
         const night = (await screen(page)) === 'night';
         await sleep(600);
+        await clearStall(page);          // 第 C 波（SPEC-C §4.3）：打完藏家（換輪）先逛今天的攤位，逛完才是下一輪的來客條；這裡照「今天不逛了」帶過
         const r1 = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, round: R.round, idx: R.idx, order: R.order.slice(), retry: R.retryLeft, over: R.over, ps: [...document.querySelectorAll('[data-tut=night] .nc .ps')].map(x => x.textContent.trim()), trail: window.__lab.trail() }; });
         const fresh = r1.order.slice(0, 3).filter(id => !r0.order.includes(id)).length;
         const trail1 = r1.trail.slice(r1.trail.lastIndexOf('duel'));
@@ -1019,7 +1020,10 @@ async function run() {
         await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
         await sleep(400);
         await page.evaluate(() => window.__lab.forceWin());
-        await waitScreen(page, 'reward', 15000); await sleep(1800);
+        await waitScreen(page, 'reward', 15000);
+        // 第 C 波（SPEC-C §4.1）：戰利品列的錢 1.35 秒才飛進頂上（錢那條這時才出）：照舊等玩家看 1.8 秒，從錢那條出來起算
+        await page.waitForFunction(() => window.__toasts.some(t => t.screen === 'reward' && /^\+\$/.test(t.text)), null, { timeout: 6000 }).catch(() => {});
+        await sleep(1800);
         await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]'); if (b) b.click(); });
         for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
         await sleep(2400);
@@ -1084,18 +1088,24 @@ async function run() {
           deck: window.DipLabEngine.trialDeck(window.DipLabContent, R.duelEnemy, R.pos, { seedKey: R.seedKey, runNo: R.runNo, playerAce: R.ace, bossAce: R.bossAce, tier: R.tier }).deck.map(c => c.id) }; });
         await page.evaluate(() => window.__lab.forceWin());
         await waitScreen(page, 'reward', 15000);
+        // 第 C 波（SPEC-C §4.1、§11.3）：掉落旁白換成戰利品列的字幕（同一句店主原句、0 秒出、不用點、1.8 秒淡掉）；面板同時出來（三張蓋牌）。
+        //   三張＝他整副牌裡抽（至少 1 張這場沒出過，src unplayed）；金邊／補位那格從卡池來；三張都記進 drops
         let narr = null;
-        for (let g = 0; g < 60 && !(narr && narr.text); g++) { narr = await page.evaluate(() => ({ text: (document.querySelector('.lb-dq.drop .tx') || {}).textContent || '', sheet: !!document.querySelector('.lb-sheet.reward') })); if (!narr.text) await sleep(50); }
-        await sleep(300);
-        const n2 = await page.evaluate(() => ({ text: (document.querySelector('.lb-dq.drop .tx') || {}).textContent || '', want: window.DipLabContent.script.drop[0].text, sheet: !!document.querySelector('.lb-sheet.reward'),
-          cards: window.__lab.run.pending.cards.slice(), drops: window.__lab.run.drops.slice() }));
+        for (let g = 0; g < 60 && !(narr && narr.text); g++) { narr = await page.evaluate(() => ({ text: (document.querySelector('.lt-cap') || {}).textContent || '', sheet: !!document.querySelector('.lb-sheet.reward'), dq: !!document.querySelector('.lb-dq.drop') })); if (!narr.text) await sleep(50); }
+        await sleep(60);
+        const n2 = await page.evaluate(() => ({ text: (document.querySelector('.lt-cap') || {}).textContent || '', want: window.DipLabContent.script.drop[0].text, sheet: !!document.querySelector('.lb-sheet.reward.lt-sheet'),
+          cards: window.__lab.run.pending.cards.slice(), src: (window.__lab.run.pending.src || []).slice(), drops: window.__lab.run.drops.slice() }));
+        const capGone = await page.waitForFunction(() => !document.querySelector('.lt-cap'), null, { timeout: 4000 }).then(() => true, () => false);   // 不用點，自己淡掉
+        const sheet49 = await lootReady(page) && !!(await page.$('.lb-sheet.reward [data-pick]'));
+        // 捲動：面板升起、錢袋與蓋牌彈出、翻牌那幾下（CSS 動畫，彈跳時會多出幾 px）都停了才量（舊版量的是旁白那一刻，面板還沒出來）
+        await page.waitForFunction(() => { const s = document.querySelector('.lb-sheet.reward'); return !!s && s.getAnimations({ subtree: true }).every(a => a.playState !== 'running'); }, null, { timeout: 4000 }).catch(() => {});
         const sc49 = await noScroll(page);
-        await jsClick(page, '.lb-dq.drop');
-        const sheet49 = await page.waitForSelector('.lb-sheet.reward [data-pick]', { timeout: 8000 }).then(() => true, () => false);
         const dqGone = await page.evaluate(() => !document.querySelector('.lb-dq.drop'));
-        if (want(49)) record(49, size, narr.text.length > 0 && !narr.sheet && n2.text === n2.want && n2.want === '對方似乎掉落了什麼……' && !n2.sheet && sheet49 && dqGone && n2.cards.length > 0 &&
-          n2.cards.every(id => before.deck.includes(id) && before.thrown.includes(id) && n2.drops.includes(id)) && scrollOk(sc49),
-          `旁白「${n2.text}」（面板還沒出來 ${!n2.sheet}）→ 點一下 → 挑唱片面板 ${sheet49}；掉落 ${JSON.stringify(n2.cards)} ⊂ 他這一場的牌單 ${n2.cards.every(id => before.deck.includes(id))}、記進 drops ${JSON.stringify(n2.drops)}；scroll ${JSON.stringify(sc49)}`);
+        const fromDeck = n2.cards.every((id, i) => n2.src[i] === 'gold' || n2.src[i] === 'fill' || before.deck.includes(id));
+        const srcOk = n2.cards.every((id, i) => n2.src[i] !== 'played' || before.thrown.includes(id)) && n2.cards.every((id, i) => n2.src[i] !== 'unplayed' || !before.thrown.includes(id)) && n2.src.includes('unplayed');
+        if (want(49)) record(49, size, narr.text.length > 0 && !narr.dq && n2.text === n2.want && n2.want === '對方似乎掉落了什麼……' && n2.sheet && capGone && sheet49 && dqGone && n2.cards.length === 3 &&
+          fromDeck && srcOk && n2.cards.every(id => n2.drops.includes(id)) && scrollOk(sc49),
+          `字幕「${n2.text}」（面板同時出來 ${n2.sheet}、舊旁白框 ${narr.dq}）→ 不用點自己淡掉 ${capGone} → 翻完可收 ${sheet49}；掉落 ${JSON.stringify(n2.cards)} src ${JSON.stringify(n2.src)} ⊂ 他這一場的牌單 ${fromDeck}、出過／沒出過對得上 ${srcOk}、記進 drops ${n2.cards.every(id => n2.drops.includes(id))}；scroll ${JSON.stringify(sc49)}`);
         // 收一張（進過包包）→ 升級 → 來客
         await sleep(700);
         const took = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-pick]'); if (!b) return null; b.click(); return b.getAttribute('data-pick'); });
