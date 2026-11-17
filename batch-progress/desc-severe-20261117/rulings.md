@@ -1796,3 +1796,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
+
+## sd-066（30 張，其餘：Elvin Jones、Emerald Web、Emil Beaulieau、Ensemble intercontemporain（Hurel）、Ensemble Recherche 2、Entheogenic、EP-4、Epic45、Erik Truffaz 5、eRikm、ERISTHEPLANET、Erroll Garner 4、Evan Parker & Eddie Prévost、Evil Needle 2、Evoken 2、Exos 2、Experimental Audio Research 3）— s36
+
+- 研究：3 支 Sonnet，WebSearch 15＋13＋14＝42 次；無 none。EP-4 三塊全 thin（日文維基、ototoy 都沒提這張）。
+- **主線補查**（WebSearch 2 次＋WebFetch，facts 標【主線補查】）：EP-4《Multilevel Holarchy》（Discogs API release notes：1980–83 現場錄音、1985 Telegraph／Skating Pears；View Records、All Night Flight 商品頁的聲音描述；CDJournal 團史）→ sound 救回；Erik Truffaz《Mantis》（Encyclopedia.com：簽 Blue Note 後「改變方向」、Ladyland 四重奏、Guardian 評數位美學）。
+- 事實裁定：Ferneyhough 盤寫 Stradivarius、Lachenmann 盤寫 Naïve／WDR 1992 錄音（舊稿 Kairos 錯）；eRikm《Zygosis》不寫「第一張」（1994–95 已有手工錄音帶）；Emil Beaulieau 不斷言用了日本藝人素材；Entheogenic 不寫在多塞特錄音；E.A.R.《Mesmerised》是 Kember 單人作品——派工詞原寫 Shields／Martin／Prévost 屬《Mesmerised》是協調端記錯，研究層更正為《Beyond the Pale》素材、用在《The Köner Experiment》；Overture to Dawn 三卷錄音日期與發行年來源互相矛盾，一律不寫；Garner 1953 同名盤不寫「一天錄完整張」；《Pestrepeller》不寫限量張數；Evoken、Evil Needle、Exos 舊稿查無出處的細節不寫。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-066.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Erroll Garner《Erroll Garner》 | 刪「〈Caravan〉〈Lullaby of Birdland〉都收在這裡」；第二句補《Erroll Garner》 | 研究稿：2/27 那場曲子分散到多張 LP、〈Lullaby〉另有次月短版，本卡收錄哪幾首無法確定；QA 無《》 |
+| Overture to Dawn Vol. 3 | 刪「目錄標示部分曲子可能有後補的長號、豎笛與貝斯」；補盤名 | credit／版本雜項且來源矛盾；QA 無《》 |
+| Overture to Dawn Vol. 2、Vol. 4 | 「這一卷」改《盤名》，刪「那時還沒有磁帶」「用家用機器刻成」等重複背景壓回 240 字 | QA 無《》、字數 |
+| 《Pestrepeller》 | 刪「兩段」 | 段數屬軌數雜項 |
+| Entheogenic《Golden Cap》 | 刪「也有聽眾長年拿它專注放鬆」 | 單一 Bandcamp 聽眾留言不足為評價 |
+| Truffaz《Arkhangelsk》 | 「Christophe」→「法國歌手 Christophe」 | 人名首次出現補身分（AAJ） |
+| ERISTHEPLANET | fix-spacing 補「YouTuber 到」空格 | 格式 |
+
+其餘逐張四問無改：Hurel 的 Siemens 基金會獎（Billaudot）、Ferneyhough 的 BBC Music Magazine 評、Atra Mors「常被視為樂團至此的巔峰」（PopMatters 具名）、Exos《Strength》「少數既能在俱樂部又適合在家聽」（AllMusic Birchmeier、Exclaim!）、Köner「更像 Köner 自己的作品」（Scaruffi）、Truffaz《Out of a Dream》「第一個登上 Blue Note 的法國樂團」（Byblos 音樂節介紹）皆有出處。Garner 1953 保留 78 轉三分鐘限制與 LP，屬故事核心（Avakian、Frémeaux）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-066.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
