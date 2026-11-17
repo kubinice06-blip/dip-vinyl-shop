@@ -2165,3 +2165,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。
+
+## sd-082（30 張，其餘：Natural Snow Buildings 2、neat beats、Necrophorus、Ned Rothenberg、Negasphere、Nerve Net Noise、Nic Jones、Nic Potter、Potter & Evans、Nicknack、Night Lovell、Nisvanis、No Brain、NOGYMX、Northern Picture Library、Nothing Painted Blue、Nurse With Wound、Oblique Occasions、Ochre、Odd Nosdam 2、Ohbliv 2、Olivia Rodrigo、Optic Nerve 2、Organum 3）— s44
+
+- 研究：3 支 Sonnet，WebSearch 約 15＋19＋11＝45 次；none 0，thin 多（story thin 17 張）。AllMusic、Pitchfork、RYM、Progarchives 皆 403，Discogs 走 API。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Organum《Sphyx》（Brainwashed 2002 重發評：錄於 1990–93、〈Aurora〉Prévost 即興鼓、同名曲 drone＋弓擦鈸＋管樂、〈Mutla〉；Tone Glow O'Rourke 訪談：經 Prévost 介紹、倫敦錄音、Jackman 的拼貼式錄法）→ story／sound 升 ok；Ned Rothenberg《Trespass》（NYPL 館藏：1985 年兩天 Radio City 錄音、Zorn 客串一首；Qobuz：八首短曲多為獨奏）；Nic Jones（Mainly Norfolk：Bill Leader 錄製、兩首採 Cecil Sharp 編排）；No Brain（Bugs：車勝優是作曲核心、本張後離團；韓文維基：2001-07-11、主打〈해변으로 가요〉）；Parannoul《Blue Cat》韓文搜尋只得用戶評，不採。Optic Nerve 兩張（Clone 只有「True Detroit techno!!」）、Ohbliv《SLPHNC III》、Oblique Occasions、Nisvanis 補查無新料，**薄寫上線**（delayde 前例），化名／團體整體描述在正文寫明是整體。
+- 事實裁定：Olivia Rodrigo 2026 新作身分確認真實（Geffen 2026-06-12），不寫舊稿「唯一客席」；Organum《Omega》年份兩說不寫；Nothing Painted Blue 廠牌是 Scat（Matador 只經銷）；Northern Picture Library 年份 1993（英維基 1994 誤）；NWW 只寫「靈感來自」《去年在馬倫巴》；Odd Nosdam《LIF》不寫「地下嘻哈」與舊稿 drum & space 一語；Ohbliv 不寫舊稿「Nickelus F 說手工切黑膠」；neat beats 不寫地點；Night Lovell 只寫 2021 年。
+- 薄寫上線不留置：Optic Nerve 2、Ohbliv《SLPHNC III》、Oblique Occasions、Nisvanis、NSB《Shadow Kingdom》、Necrophorus、Nic Potter 2、NOGYMX。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 32 處，改動檔 `review-sd-082.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| NSB《Night Coercion》 | 鉤子「最初的版本只有 22 套、手工編號」→ 噪音升降與低音大鼓／鈴的聲音 | 鉤子取限量版本（雜項） |
+| NSB《Shadow Kingdom》 | 刪「限量 500 套」 | 雜項 |
+| Organum《Sphyx》 | 「錄《Sphyx》的方法就是拼貼」→「Jackman 錄音的方法就是拼貼」；刪「錄一段再疊一段就完成」的專指 | O'Rourke 講的是 Jackman 一貫做法 |
+| Optic Nerve《Optical》 | 鉤子「常被形容成未來感電影配樂」→ Tucker 自述「超越重低音、走進太空」；刪正文「Soma 把……形容」 | 單一來源不寫「常被」；出處不寫進簡介；與同化名另一張前四字相撞 |
+| Ohbliv《SLPHNC III》 | 刪「從〈Klose 2 U〉這類曲名就看得出」 | 曲名體例屬雜項 |
+| 10 張（NSB、NPL、NPB、Ochre、MfR、SLPHNC、Olivia、Children、Amen、Sphyx） | 第二句補專輯名《》，連帶壓字數到 240 內 | 第二句要講出是哪張唱片 |
+
+其餘四問無改：鉤子都對過研究稿（Negasphere 錄完成員相繼離團、Nerve Net Noise 官網「不是戰鬥機也不是牙醫鑽牙」、Nic Jones 替無曲調老歌配新旋律、Long Hello 只剩兩人、Nicknack 未成年就打 DJ 對決、Night Lovell 無客座、No Brain 2001 Fuji Rock（正文只說同年，不連結專輯）、LIF 三個月雨、Organum Sanctus 圖形樂譜、Olivia「不必痛苦也寫得出」）。Nic Potter「八軌機」與 Ochre「輕軌列車」是錄音故事／素材，不算雜項。30 張前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 兩筆「8 軌錄音機」為誤報）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-082.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
