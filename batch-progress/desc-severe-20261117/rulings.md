@@ -1173,3 +1173,48 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-036.json`；30 張 30 鍵（原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 101 次（研究層 sd-035 44、sd-036 43，主線 14）。
+## sd-033（30 張，經典度≥4：Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Wakefield／Country Cooking、Bayle、de Roubaix、Cockerham／Jarrell／Jenkins 2、Hubbard 3、Hubbard & Shaw、Freddie Joachim、Freddie Redd、Freddie Roach、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari）— s19
+
+- 研究：3 支 Sonnet，WebSearch 20＋14＋19＝53 次；無 none。前台預查 60 張（sd-033／034）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Foje《Geltoni krantai》（15min 刊 Mamontovas 日記：同名曲 1987 年服役時寫、Palanga 海邊回憶、鼓機編程、Jaunimo estrada 88 第 11 名、Roko maršas 兩萬人合唱；lt 維基錄音三地與編制）→ story／sound 由 thin 轉 ok；Henderson《Tidal Wave》（jazzviking：1931／1934 陣容、編曲者、同名曲是 Webster 不是 Hawkins）；板橋文夫《濤》（CDJournal、note 樂迷評述的聲音描述）→ sound ok；G-Schmitt（Discogs 陣容、部落格聲音描述，仍薄）；Bayle、de Roubaix《Le Samouraï》、Freddie Joachim 各補查一次無新料，照研究稿薄寫。
+- 身分／事實裁定：Sinatra 不寫榜位、地點只寫墨爾本；Fire Engines 不寫軌數；Fin.K.L 不寫〈Eternal Love〉翻唱說（ko／en 維基矛盾）；Franco 不寫面數、編號；Hubbard《Cookers》兩集不斷言哪晚錄哪集；Le Samouraï 寫 1967 年電影配樂、2018 為重發年；Tidal Wave 寫成 GRP 1994 年合輯；板橋《濤》「出道作」兩說，寫「早期領銜作」；g.o.d《Chapter 1》寫 1999 年發行（卡單 1998）、〈관찰〉為後續主打；Kreisler 兩張不寫發行廠；G-Schmitt 舊稿「Miyabe 與 Genet 1984 創廠」改正為 Auto-Mod 1983 年 12 月創的 Wechselbalg。
+- 研究層一支回報某搜尋結果頁夾帶要它改做別事的文字，未理會、未採用該頁。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-033.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Hubbard《Cookers Vol. 2》 | 鉤子「兩位同在 1938 年出生的小號手…」→「坐在第一排的 Eddie Henderson 說，唱片裡聽得到他自己的叫喊聲。」；刪「打擊樂一路加壓」 | 與 Vol. 1 鉤子同材料；字數 |
+| Foje | 「支持立陶宛獨立的 Roko maršas」→「Roko maršas 巡迴音樂會」 | 研究稿無「支持獨立」出處 |
+| de Roubaix《Le Samouraï》 | 「2018 年是 Decca 的黑膠重發年」→「2018 年是重發年」 | 版本雜項壓到最低 |
+| Freddie Joachim《Study Guide》 | 刪「2015 年才由德國 Vinyl Digital 壓成黑膠」 | 版本雜項 |
+| 板橋文夫《濤》 | 刪「長年只有黑膠，2022 年才出 CD」 | 版本雜項 |
+
+其餘逐張四問無改：逐條對過研究稿（Fire Engines 半小時連奏再剪、Flare 名義因 R&S 獨占、Fin.K.L「妖精」路線確立、Sinatra 由場館工程師錄下與「最狂放」評語、Jarrell 與 Cockerham 用腿與提琴暗號換段、Grisman 師承 Wakefield、Fuchsia 錄音機記譜與《Mojo》Forgotten Classics、Wunderlich 的 Pavarotti 答語、Kreisler 貝多芬裝飾奏、g.o.d 350 天吃泡麵與〈길〉構想、Chapter 4 一個月 144 萬張、「Rock Torero」皆有出處）。30 張鉤子前四字互異、加權 ≤50、第二句皆含《盤名》；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-033.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-034（30 張，經典度≥4：Galliard、Gang of Four、Gato Barbieri、Gene Clark 2、Gene Russell、Gentle Faith、Gerard、Geri Allen 4、Gherkin Jerks、Ghost、Nannini、Ginhouse、Fusco、Rubalcaba 3、Googoosh 2、Graham Collier、Grant Green、Gray Matter、Greg Osby 2、Grobschnitt、Gryphon、Manusardi）— s19
+
+- 研究：3 支 Sonnet，WebSearch 15＋14＋15＝44 次；無 none。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Gerard（King Records 2023 永川敏郎訪談：首作是專案性質、本作是樂團形態唯一完整專輯、四人一體感、節奏組扛變拍子）→ story ok；Ghost（英文維基：1984 成軍、古寺與廢棄地鐵站的游牧生活、Batoh 的影響；Discogs：P.S.F. 1989 年底簽約）→ story ok；Rubalcaba《The Blessing》（多倫多錄音、陣容、Broomer 與 Yanow 評）→ story／sound ok；Manusardi（Electrecord Seria Jazz、布加勒斯特陣容）→ story ok；Collier（Ilkley 文學節委託、Lowry 文本與朗讀、Nettlebed 錄音）→ story ok；Galliard（Birmingham Music Archive 無更多，照研究稿薄寫）；Geri Allen《Maroons》搜尋無訪談，照研究稿寫。
+- 身分／事實裁定：Galliard 年份 1969／1970 寫「1970 年前後」、不寫 John Smith 三種薩克斯風與十二弦魯特琴；Gentle Faith 不寫刺繡封面；Gerard 不寫 Millais 封面、貝斯手名兩種寫法不寫名；Gene Russell 寫「七〇年代初」、不寫 Black Jazz 成立年；Gato Barbieri 不寫發行年與 Grammy；Allen《Maroons》不寫 Mamaroneck 混音與日本盤先出、《Eyes》不寫〈Little Waltz〉與東芝 EMI 出資；Rubalcaba《Solo》不寫錄音室、《The Blessing》不寫「現場」；Fusco 寫 1960 年《情事》配樂、2016 首次單獨壓黑膠，Nastro d'argento 不寫年；Googoosh 兩張寫成單曲與電影歌曲彙整盤，聲音以同時期錄音寫；Osby 錄音寫 1997 年 12 月；Grobschnitt 不寫第幾場巡演、16 軌母帶；Grant Green 不寫錄音日期；Manusardi 寫 1967 錄、1968 發行，不寫「羅馬尼亞第一張自由爵士」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-034.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Rubalcaba《The Blessing》 | 「古巴節奏根源讓最沉思的段落也有細密的脈動」→「他連最沉思的段落也帶著細密複雜的脈動」 | 出處（Broomer）說的是 1960 年代前衛爵士根源，不是古巴節奏 |
+| Ginhouse | 鉤子刪開頭「1970 年」 | 與 Gene Clark《White Light》前四字撞 |
+| Osby《Banned in New York》 | 「Sweet Basil的」補空格 | 間距 |
+
+其餘逐張四問無改：逐條對過研究稿（Gene Clark 與 Byrds 新作同廠同期、White Light 圍圈錄音與荷蘭年度專輯、Gang of Four「最憤怒」與 Allen 離團、Bertolucci 看現場與波赫士「走路的方式」、Gherkin Jerks 匿名後承認、Nannini 年銷量僅次 Vasco Rossi 與 Antonioni MV、Gillespie 在哈瓦那的評語與拒簽、Googoosh〈Mordaab〉19.8 萬張與短髮風潮、Grobschnitt 千場〈Solar Music〉、Osby 的 MiniDisc 與仿盜錄包裝、Hill 與 Hall 從未合作、Gray Matter「不是硬核」皆有出處）。Gene Clark《Gosdin Brothers》鉤子用發行撞期，屬銷量失利的故事，不算版本雜項，照收。30 張鉤子前四字互異、加權 ≤50、第二句皆含《盤名》；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-034.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 111 次（研究層 sd-033 53、sd-034 44，主線 14）。

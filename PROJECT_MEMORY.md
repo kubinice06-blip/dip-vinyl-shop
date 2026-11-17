@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s19：sd-033、sd-034 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-033 上線 30（Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Bayle、de Roubaix、Hubbard 4、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari 等）；sd-034 上線 30（Gang of Four、Gato Barbieri、Gene Clark 2、Gerard、Geri Allen 4、Gherkin Jerks、Ghost、Nannini、Fusco、Rubalcaba 3、Googoosh 2、Collier、Grant Green、Gray Matter、Osby 2、Grobschnitt、Gryphon、Manusardi 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
+- **主線補查**：sd-033 補 Foje（15min 刊 Mamontovas 日記：服役時寫同名曲、Roko maršas）、Henderson《Tidal Wave》陣容、板橋文夫《濤》聲音、G-Schmitt；sd-034 補 Gerard（King Records 永川敏郎訪談）、Ghost、Rubalcaba《The Blessing》、Manusardi、Collier。
+- **審稿**：sd-033 改 6 處（Cookers 兩集鉤子撞「1938」換材料、Foje 刪無出處的「支持獨立」、三處刪黑膠／CD 版本雜項），sd-034 改 4 處（The Blessing 聲音句改回出處說法、Ginhouse 鉤子前四字撞），逐條在 `rulings.md`。WebSearch 工作階段約 111 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-033/034.json,review-sd-033/034.json}`、`desc-tools/batches/{cards,research,output}/sd-033*、sd-034*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s20：sd-035、sd-036 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-035 上線 30（Gunnar Graps、Hampel、Csík、Hallucinogen、Mobley、Harold Budd 2、HAT、Hayedeh、Heavenly、Karajan 2、Mwandishi、High Rise 3、Horace Andy、Parlan 等）；sd-036 上線 30（Horace Silver 5、Tapscott、I Mean Us 2、IAM、Kalniņš、Indochine、Infiniti、Inoyama Land、Integrity、Isis、IU、Jackie McLean 2 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
