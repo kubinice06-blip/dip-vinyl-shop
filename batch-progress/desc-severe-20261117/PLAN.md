@@ -161,8 +161,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-087 | 其餘（Sasha & John Digweed … Skyray） | 30 | | |
 | sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | s47 | ✅ 上線 30（前台 30；無留置；主線補查 Lacy《Sidelines》（Dijkstra〈Existence〉研究）；Snapcase 卡帶、State Azure 等薄寫；CURATED 0） |
 | sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | s47 | ✅ 上線 30（前台 30；無留置；主線補查 Suzukiski（Zero Gravity 第一號）；Sweeps、SwuM.、Stjepko Gut 等薄寫；CURATED 0） |
-| sd-090 | 其餘（Tabu Ley Rochereau … The Clark Sisters） | 30 | | |
-| sd-091 | 其餘（The Comes … The Icemen） | 30 | | |
+| sd-090 | 其餘（Tabu Ley Rochereau … The Clark Sisters） | 30 | s48 | ✅ 上線 30（前台 30；無留置；主線補查 Tabu Ley、Tempalay、Bush Chemists；Tagomago、Tamaru、Telenights、福音團 8 張等薄寫；CURATED 0） |
+| sd-091 | 其餘（The Comes … The Icemen） | 30 | s48 | ✅ 上線 30（前台 30；無留置；主線補查 Enid、Icemen、Congos、Comes、Great Jazz Trio；Grey Wolves、Icemen 等薄寫；CURATED 0） |
 | sd-092 | 其餘（The II Generation … THE SQUARE） | 30 | s49 | ✅ 上線 30（前台 30；無留置；Players《Space Travel》、兩支福音團、Secret Stars 等薄寫；CURATED 0） |
 | sd-093 | 其餘（THE SQUARE … Third Quadrant） | 30 | s49 | ✅ 上線 30（前台 30；無留置；主線補查 Third Quadrant（西北英格蘭，非格拉斯哥）；Tourists、Supreme Angels 等薄寫；CURATED 0） |
 | sd-094 | 其餘（This Heat … Uncle Charlie Osborne） | 30 | s50 | ✅ 上線 30（前台 30；無留置；主線補查 Todd Terry、Ultima Thule、Titiek Puspa 等 8 張（Discogs API）；Titiek Puspa、Tånk 等 7 張薄寫；CURATED 0） |

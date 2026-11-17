@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s48：sd-090、sd-091 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-090 上線 30（Tabu Ley Rochereau 2、Tagomago、Tamaru、Ted Lundy／Bob Paisley、Telenights、Tempalay、Terence Blanchard 3、Terra Rosa、Thad Jones、Aggrovators、American Dollar 3、Angelic Gospel Singers 2、Angelica Sanchez、Argo Singers 2、Awakening、Benny Green、Bob Belden、Brooklyn Allstars 4、Bush Chemists、Clark Sisters）；sd-091 上線 30（The Comes、Congos、Consolers 3、Contemporary Jazz Quintet、Dave Pike Set、Dead Milkmen、Dicks、Disciples、Door and the Window、Enid、Famous Ward Singers、Freed Unit、Gospel Keynotes、Great Jazz Trio 10、Grey Wolves、Groundhogs、Harmonizing Four 2、Icemen）。Tagomago、Tamaru、Telenights、福音團多張、Grey Wolves、Icemen 等照 delayde 前例薄寫上線。
+- **主線補查**：Tabu Ley《Africa Worldwide》（Christgau：重錄早年舊作）、Tempalay（ナタリー／OTOTOY）、Bush Chemists（Forced Exposure）、Congos（Roots Archives 樂手與錄音室）、The Comes、Enid（DPRP 專文：四季寓言＋四個主導動機）、Icemen（維基＋訪談）、Great Jazz Trio（日文維基）。舊稿錯誤更正：Gospel Keynotes 廠牌是 Nashboro、Ward Singers 那張非現場、Congos 舊稿把《Heart of the Congos》的 Perry／Island 糾紛套進來。審稿改 sd-090 13 處、sd-091 31 處（多為補《盤名》與壓字數）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-090.json,review-sd-091.json,kv-before-sd-090.json,kv-before-sd-091.json}`、`desc-tools/batches/{cards,research,output}/sd-09[01]*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s51：sd-096、sd-097 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-096 上線 30（White Heaven 2、Willie Colón、Wizz Jones、Yagya 2、Yaron Herman 2、Namysłowski、Zion Train 2、Zodiac、Zoviet France 3 等）；sd-097 上線 30（Zoviet France、Étienne Daho、Ξαρχάκος、Caravan、Pumpuang、Sai Htee Saing、Lay Phyu 2、BOYNEXTDOOR、Charli xcx、Bukka White、cv313 2、Das Damen 等）。無留置；Wun Two 3、YOUTH 83、Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson 等照 delayde 前例薄寫。

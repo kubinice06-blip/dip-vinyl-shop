@@ -2597,3 +2597,50 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-095.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 86 次（研究層 sd-094 41、sd-095 41，主線 4）。
+## sd-090（30 張，其餘：Tabu Ley Rochereau 2、Tagomago、Tamaru、Ted Lundy／Bob Paisley、Telenights、Tempalay、Terence Blanchard 3、Terra Rosa、Thad Jones、The Aggrovators、The American Dollar 3、The Angelic Gospel Singers 2、Angelica Sanchez、The Argo Singers 2、The Awakening、Benny Green、Bob Belden、The Brooklyn Allstars 4、The Bush Chemists、The Clark Sisters）— s48
+
+- 研究：3 支 Sonnet，WebSearch 14＋12＋10＝36 次；無 none，thin 多（福音團、Zero Gravity 兩張、Telenights、Terra Rosa、Aggrovators）。Discogs API 以 curl 帶規定 UA 可用；AllMusic、Sputnik、RYM、Progarchives、Discogs 網頁 403。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Tabu Ley《Africa Worldwide》（Christgau：帶新吉他手與和聲歌手重錄早年十二首）→ story 核心；Tempalay（ナタリー：第六張、距前作兩年、YOSHIROTTEN 封面；OTOTOY：武道館與 EP 之後、track 製作與聲音設計）；Bush Chemists（Forced Exposure：Conscious Sounds 錄音室第一張、King General 客串、2019 Partial 重發）；Telenights（英文搜尋只撞同名無關盤）、Terra Rosa（日文搜尋只有維基層級）、Tagomago／Tamaru（廠牌站 503、disk union 404）查無新料。
+- **薄寫上線不留置**（delayde 前例）：Tagomago、Tamaru（不編聲音，Tamaru 的貝斯 drone 只寫成現場手法）、Telenights（聲音只用廠方說法與標籤）、Angelic Gospel Singers 2、Argo Singers 2、Brooklyn Allstars 4（聲音寫明是團的一貫路線）、Bush Chemists、Benny Green。
+- 事實裁定：Aggrovators 不斷言以《Kaya》底軌製成、不寫 King Tubby 本人混音（Prince Jammy 在 King Tubby's 混音）；Blanchard《Magnetic》寫「回到 Blue Note」；Argo Singers 是芝加哥團、Vee-Jay 1966 破產；Clark Sisters 不寫「母親人聲」（Discogs 只標作者）；Angelic Gospel Singers 不寫銷量與 Gotham 年份；American Dollar 只寫年份、預告片配樂不綁專輯。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-090.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Tabu Ley《Africa Worldwide》、Ted Lundy、Bob Belden | 第二句「這張」改《盤名》；刪副標說明、Uncle Ned／Acuff 曲目句、「一系列改編起點」壓字數 | QA 無《》、字數 |
+| Tabu Ley《Africa Worldwide》 | 「到美國錄音」→「在路易斯安那錄音」 | 研究稿 Dockside Studios |
+| Terra Rosa | 鉤子「常被拿來和 X Japan 相比」→「有評論說……就像 X Japan 之於關東」；様式美メタル改「樣式美」金屬 | 只有一位評者（山野車輪） |
+| Aggrovators | 「多首是 Marley 曲目的 dub 版」→「曲名多取自 Bob Marley 的歌」 | notes：底軌來源未證實 |
+| American Dollar《Technicolour Sleep》 | 「2006 年夏天」→「2006 年年中」，皇后區移入正文 | 錄音期 5–6 月 |
+| Brooklyn Allstars 2 張 | 盤名大小寫照卡面（Unto The Lord、Water In Hell） | 原文標題一字不改 |
+
+其餘逐張四問無改：鉤子都取自故事／地位／聲音（流亡重錄舊作、福音標題曲、Zero Gravity 班底、貝斯 drone 現場、阿帕拉契移民、不用取樣的 barber beats、武道館之後、電影配樂後轉 hard bop、團員各寫一首、佛教與「吸引」、關西衝擊、Basie 前沒沒無聞、flying cymbals、兩人包辦樂器、sequencer 推到前面、輪流換手、同名曲 1949 單曲、不識樂譜的團長、替人彈了二十年、Vee-Jay 時期、vamp 堆到淡出、Black Jazz 唯一樂團、Powell／Peterson 比較、Sting 大編制改寫、Sullivan Pugh 牽線、連八年第一名、Cleveland 單曲出處、Henry Stone 送露營車、唱片攤與四軌機、Clark 姊妹把爵士帶進福音）。30 張前四字互異；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-090.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-091（30 張，其餘：The Comes、The Congos、The Consolers 3、Contemporary Jazz Quintet、Dave Pike Set、Dead Milkmen、The Dicks、The Disciples、The Door and the Window、The Enid、Famous Ward Singers、The Freed Unit、Gospel Keynotes、The Great Jazz Trio 10、The Grey Wolves、The Groundhogs、Harmonizing Four 2、The Icemen）— s48
+
+- 研究：3 支 Sonnet，WebSearch 11＋15＋10＝36 次；none 只有 Icemen sound。AllMusic、AAJ、Progarchives、jazzmusicarchives 403。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Congos（Roots Archives：自製、Aquarius／Harry J 錄音、Geoffrey Chung 混音、Sly Dunbar、Ernest Ranglin、Tommy McCook；Roy Johnson 之後離團）；The Comes（日文簡介：1986 年 3 月 Captain Records、聲音明顯改變、7 月後自然消滅）；The Enid（DPRP 專文：四季比喻生命循環的「音樂寓言」、華格納式四個主導動機、The Lodge 錄音）→ story／sound 升 ok；The Icemen（英文維基、idioteq、dcxx 訪談：Abularach 創立、1991 Blackout、CBGB 發片演出）；Great Jazz Trio（日文維基：1975 年 Village Vanguard 成團、各期班底與廠牌）；Grey Wolves 搜尋全撞電力電子學論文，無新料；Disciples 只得已知零售文案。
+- **薄寫上線不留置**（delayde 前例）：Consolers《Joy In The Morning》《Let God Be First》、Disciples、Famous Ward Singers、Gospel Keynotes、The Comes、Great Standards 2 張、Monk's Moods、Moreover、N.Y. Sophisticate、Threesome、Grey Wolves（不寫聲音）、Working for the Lord、Icemen（聲音只寫自稱「Hardcore Metal」）。
+- 事實裁定：Congos 不寫 Perry 與 Island 交惡（屬《Heart of the Congos》）；Ward Singers 那張是 1961 年兩場錄音室錄音、不寫「現場」；Gospel Keynotes 廠牌 Nashboro（舊稿 Savoy 錯）；Freed Unit 不寫「孿生兄弟」（Scaruffi 與 Discogs 不符）；Grey Wolves 團員採 Trevor Ward（派工詞 Darren Tate 是協調端誤記）；Icemen 主唱只寫「Carl」（DeMola／Griffin 兩說）；Comes 廠牌母公司寫「寶島社」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 31 處，改動檔 `review-sd-091.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Great Jazz Trio 10 張中 9 張、Grey Wolves、Groundhogs、Harmonizing Four 2、Icemen | 第二／三句「這張」改《盤名》（Milestones、Threesome、KJLH 原本只有別張盤名的《》也補上） | QA 無《》 |
+| 同上 | 隨之刪次要句壓字數：Jones「盡量留在正中間」、「共五集」「後幾集移到哥本哈根與紐約」、Ellington 選曲列舉、〈A Night In Tunisia〉引柴可夫斯基、Tokyo Meeting「越聽越有味道」「1980 起換人」、KJLH〈Doom〉／〈Mood〉曲名冷知識、death industrial 先驅、〈Light Was the Day〉、Shine on Me 敘事拼貼、Harmonizing Four 半退休 | 字數 |
+| Icemen | 刪「有一首沿用 1985 年早期版本再補人聲」 | 版本細節屬雜項 |
+
+第 1 組 15 張逐張對研究稿無改（Comes「第一位成名的硬核龐克女主唱」出自英文維基、Congos「更光滑、更稀疏」出自 AllMusic 與維基、Contemporary JQ 外地錄音兩張、Keynotes 銅管編制與 1981 葛萊美入圍皆有據）。鉤子都取自故事／地位／聲音／概念（女主唱轉向金屬、離開 Perry 首次自製、代表作〈Waiting For My Child〉、男中音配女低音、出道二十年仍在 Nashboro、Blue Note 外地錄兩張、黑森林錄音室西塔琴、專吃嬉皮的怪物、公開出櫃主唱、Jah Shaka 取名、沒受訓練愛噪音、四季寓言、輪流領唱、John Peel 一再播放、Country Boy 的藍調唱法、同場錄音分兩張、標準曲五集起點、Miles 節奏組、Monk 四十年後成題目、Evans 與 Miles 出身接手、弦樂四重奏疊上、直刻母盤、全原創、Cobb 接鼓椅、電台台呼當盤名、「文化恐怖主義」、替藍調寫訃聞、守著老靈歌、從 1927 唱到 1970 年代、成軍近十年才出唱片）。30 張前四字互異；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-091.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 86 次（研究層 sd-090 36、sd-091 36，主線 14）。
