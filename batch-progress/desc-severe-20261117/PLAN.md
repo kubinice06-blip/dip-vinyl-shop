@@ -159,8 +159,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | s45 | ✅ 上線 30（前台 30；無留置；主線補查 Radar 2（愛沙尼亞文維基＋Discogs API）、Quilapayún、raison d'être；Riow Arai 等薄寫；CURATED 0） |
 | sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |
 | sd-087 | 其餘（Sasha & John Digweed … Skyray） | 30 | | |
-| sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | | |
-| sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | | |
+| sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | s47 | ✅ 上線 30（前台 30；無留置；主線補查 Lacy《Sidelines》（Dijkstra〈Existence〉研究）；Snapcase 卡帶、State Azure 等薄寫；CURATED 0） |
+| sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | s47 | ✅ 上線 30（前台 30；無留置；主線補查 Suzukiski（Zero Gravity 第一號）；Sweeps、SwuM.、Stjepko Gut 等薄寫；CURATED 0） |
 | sd-090 | 其餘（Tabu Ley Rochereau … The Clark Sisters） | 30 | | |
 | sd-091 | 其餘（The Comes … The Icemen） | 30 | | |
 | sd-092 | 其餘（The II Generation … THE SQUARE） | 30 | | |
