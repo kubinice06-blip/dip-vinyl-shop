@@ -2355,3 +2355,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
+
+## sd-090（30 張，其餘：Tabu Ley Rochereau 2、Tagomago、Tamaru、Ted Lundy／Bob Paisley、Telenights、Tempalay、Terence Blanchard 3、Terra Rosa、Thad Jones、The Aggrovators、The American Dollar 3、The Angelic Gospel Singers 2、Angelica Sanchez、The Argo Singers 2、The Awakening、Benny Green、Bob Belden、The Brooklyn Allstars 4、The Bush Chemists、The Clark Sisters）— s48
+
+- 研究：3 支 Sonnet，WebSearch 14＋12＋10＝36 次；無 none，thin 多（福音團、Zero Gravity 兩張、Telenights、Terra Rosa、Aggrovators）。Discogs API 以 curl 帶規定 UA 可用；AllMusic、Sputnik、RYM、Progarchives、Discogs 網頁 403。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Tabu Ley《Africa Worldwide》（Christgau：帶新吉他手與和聲歌手重錄早年十二首）→ story 核心；Tempalay（ナタリー：第六張、距前作兩年、YOSHIROTTEN 封面；OTOTOY：武道館與 EP 之後、track 製作與聲音設計）；Bush Chemists（Forced Exposure：Conscious Sounds 錄音室第一張、King General 客串、2019 Partial 重發）；Telenights（英文搜尋只撞同名無關盤）、Terra Rosa（日文搜尋只有維基層級）、Tagomago／Tamaru（廠牌站 503、disk union 404）查無新料。
+- **薄寫上線不留置**（delayde 前例）：Tagomago、Tamaru（不編聲音，Tamaru 的貝斯 drone 只寫成現場手法）、Telenights（聲音只用廠方說法與標籤）、Angelic Gospel Singers 2、Argo Singers 2、Brooklyn Allstars 4（聲音寫明是團的一貫路線）、Bush Chemists、Benny Green。
+- 事實裁定：Aggrovators 不斷言以《Kaya》底軌製成、不寫 King Tubby 本人混音（Prince Jammy 在 King Tubby's 混音）；Blanchard《Magnetic》寫「回到 Blue Note」；Argo Singers 是芝加哥團、Vee-Jay 1966 破產；Clark Sisters 不寫「母親人聲」（Discogs 只標作者）；Angelic Gospel Singers 不寫銷量與 Gotham 年份；American Dollar 只寫年份、預告片配樂不綁專輯。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-090.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Tabu Ley《Africa Worldwide》、Ted Lundy、Bob Belden | 第二句「這張」改《盤名》；刪副標說明、Uncle Ned／Acuff 曲目句、「一系列改編起點」壓字數 | QA 無《》、字數 |
+| Tabu Ley《Africa Worldwide》 | 「到美國錄音」→「在路易斯安那錄音」 | 研究稿 Dockside Studios |
+| Terra Rosa | 鉤子「常被拿來和 X Japan 相比」→「有評論說……就像 X Japan 之於關東」；様式美メタル改「樣式美」金屬 | 只有一位評者（山野車輪） |
+| Aggrovators | 「多首是 Marley 曲目的 dub 版」→「曲名多取自 Bob Marley 的歌」 | notes：底軌來源未證實 |
+| American Dollar《Technicolour Sleep》 | 「2006 年夏天」→「2006 年年中」，皇后區移入正文 | 錄音期 5–6 月 |
+| Brooklyn Allstars 2 張 | 盤名大小寫照卡面（Unto The Lord、Water In Hell） | 原文標題一字不改 |
+
+其餘逐張四問無改：鉤子都取自故事／地位／聲音（流亡重錄舊作、福音標題曲、Zero Gravity 班底、貝斯 drone 現場、阿帕拉契移民、不用取樣的 barber beats、武道館之後、電影配樂後轉 hard bop、團員各寫一首、佛教與「吸引」、關西衝擊、Basie 前沒沒無聞、flying cymbals、兩人包辦樂器、sequencer 推到前面、輪流換手、同名曲 1949 單曲、不識樂譜的團長、替人彈了二十年、Vee-Jay 時期、vamp 堆到淡出、Black Jazz 唯一樂團、Powell／Peterson 比較、Sting 大編制改寫、Sullivan Pugh 牽線、連八年第一名、Cleveland 單曲出處、Henry Stone 送露營車、唱片攤與四軌機、Clark 姊妹把爵士帶進福音）。30 張前四字互異；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-090.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
