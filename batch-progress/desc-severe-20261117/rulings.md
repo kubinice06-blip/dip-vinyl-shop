@@ -1218,3 +1218,53 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-034.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-033 53、sd-034 44，主線 14）。
+
+## sd-040（30 張，經典度≥4：Laughing Hyenas、Led Zeppelin、Lee Konitz 2、Lee Morgan 3、Leeway、Lemon Kittens、Leo Parker、Leo Smith、Les Rita Mitsouko、Ligabue、Lightnin' Slim、Linval Thompson 2、Lip Cream、Lluís Llach、Lomosonic、Long Fin Killie、Lonnie Smith、Lorelei、Los Bravos、Los Brincos、Los Destellos 2、Los Jaivas 2、Los Mirlos 2）— s22
+
+- 研究：3 支 Sonnet，WebSearch 9＋11＋12＝32 次；無 none。秘魯、智利、西班牙卡用西文來源（El Comercio、La República、es 維基、Memoria Chilena）；Ligabue 用 RSI 義文、Llach 用 ca／es 維基、Lip Cream 用 Relapse 重發頁。
+- **主線補查**（WebSearch 8 次＋WebFetch）：Linval《Don't Cut Off Your Dreadlocks》（Rough Trade 重發頁：Aggrovators 伴奏、厚重低沉；其「King Tubby 在 Channel One 混音」與他源不一，不寫混音者）、Rita Mitsouko（維基 credits：Ringer 的 MIDI 銅管手風琴、Visconti 弦樂、〈Nuit d'ivresse〉銅管客席）。《The Last Session》《Alone Together》、Llach、Destellos《En orbita》、Mirlos《Los charapas de oro》、Lorelei 補搜無研究稿以外新料，照研究稿薄寫。
+- 身分／事實裁定：Leeway 不寫發行年（1988／1989）；Lightnin' Slim 寫「1960 年前後」；Lip Cream 寫「1980 年代後半」；Linval 兩張不寫 Robbie／Sly、紐約學錄音；Ligabue 不寫充氣人偶與孟斐斯外套；Lomosonic 不寫建築學院、合約過程與獎項；《The Last Session》只寫 1972 年 2 月遇害；Lonnie Smith 寫 1970 錄、1995 首發；Los Brincos 不寫 Abbey Road；〈Para Elisa〉寫改編貝多芬、不寫阿莫多瓦；Los Mirlos 不寫死主奏吉他手；卡單盤名《En orbita》照原文無重音。
+- 派工失誤：{EXTRA} 把第 16、17、19 張（I Love Marijuana、Lip Cream、Lomosonic）的限制派給第一組，第二組寫作中補發訊息，交稿已照限制寫。
+- 前台：寫稿前預查 60 張（sd-039／040）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-040.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Laughing Hyenas、《The Last Session》、Leeway、Destellos《Constelación》、Mirlos《Los charapas de oro》 | 「常被」→「被」 | 各只有單一具名出處（Debaser、AllMusic Nastos、Lollipop、Murky Recess、The Vinyl Factory） |
+| Rita Mitsouko | 「拉丁節奏混合成搖滾」→「拉丁節奏混進合成器搖滾」 | 漏字；Larousse 原意 |
+| Konitz／Mulligan Quartet | 第二句補《盤名》；刪「那支四重奏正是洛杉磯最紅的爵士團」壓字數 | QA 無《》 |
+| Lorelei | 刪結尾「這張後來被視為後搖滾的藍圖」 | 只見於樂團自己的 Bandcamp 與轉載部落格 |
+| Los Jaivas《Canción del sur》 | Minimoog 句改寫 | 補空格後 241 字超限 |
+
+其餘逐張四問無改：逐條對過研究稿（Harrison 抱怨不寫抒情曲、Konitz 69 歲台上現叫曲目、Morgan 與 Chambers 同屬 Vee-Jay、Blake 讀報三星期拉 Dax 入團、Leo Parker 錄完數月心臟病過世、Smith 三把豎琴模擬箏、Godard 跟拍三週、Ligabue 賭上生涯與百萬銷量、Miller 給點子 Slim 編歌、Lip Cream 同志社火把、Llach 的「革嘔萬歲」、Boy 騎車 60 公里、Long Fin Killie 三張以悲劇人物命名、Benson 剛好有空檔、Parra 賣電風琴湊錢、Mirlos 自製打擊樂皆有出處）。30 張鉤子前四字互異、加權 ≤50、無禁詞與雜項；Laughing Hyenas、Lemon Kittens、《Constelación》、《Canción del sur》第二句以人物或背景接續鉤子，盤名在同句或鉤子內，照收。查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-040.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
+- onboarding manifest 同步 29 處。
+
+## sd-039（30 張，經典度≥4：K. Hand、Kagami、Kaka de Luxe、Kalaparusha、Růžička、Kaseke、Katedra、Ferrier《Alto Rhapsody》、Stobart、Kalhor／Brooklyn Rider、Kellee Patterson、KENSO 2、Saunderson、Khanate、Killdozer、Killing Time、Killswitch Engage、King Tubby、Kiosk、Klaus Mitffoch、Koes Plus、Kourosh Yaghmaei 2、Kupla、Kurt Elling、L. Voag、Lab Rat XL、Larry Marshall、Larry Young）— s22
+
+- 研究：3 支 Sonnet，WebSearch 14＋15＋17＝46 次；none 1（Růžička story／sound）。母語來源：Kaka de Luxe es 維基、Kaseke et 維基、Katedra lt 維基、Klaus Mitffoch pl 維基、Koes Plus（Denny Sakrie、Rolling Stone Indonesia）、Kiosk fa 維基。
+- **主線補查**（WebSearch 約 14 次＋WebFetch，facts 標【主線補查】）：KENSO《III》（King Records「KENSO探求紀行」清水義央自寫解說：創作力耗盡後扒 Ravel／Debussy 自學作曲、佐橋俊彥加入改雙鍵盤、Fostex 家錄、〈ノスタルジア〉雙簧管）、《Sparta》（Crime 發行、錄到一半換貝斯手、fusion 評語）、Killing Time（No Echo 專文：Raw Deal 改名、Normandy Sound／Tom Soares、Abrams 對「不成 crossover」的評語）、Růžička《Ozvěny》（Discogs：三重奏編制與獨奏曲；none 救回、薄寫）、Stobart《Arbeia》（MusicBrainz 陣容）、Katedra（錄完一年後 Melodiya 發行）、Kupla（Lofi Girl Bandcamp 官方介紹：鋼琴、單簧管、口風琴、田野錄音）、Larry Young（1969 年 2 月 Van Gelder、Yanow 評語）、Larry Marshall（Qobuz）、Saunderson（Jitashe）。K. Hand、Faces & Phases 補搜無新料。
+- 身分／事實裁定：K. Hand 寫「1990 年代中」；Kaka de Luxe 寫成 1983 年事後合輯，不寫「未經成員同意」；McIntyre 只寫 1969 年錄音；Růžička 寫 1979 年 Supraphon（卡單 1980，捷克維基與 Discogs 為 1979），不寫 Petrof、四重奏；Stobart 不寫 Tony Williams、Konk、盤名與羅馬堡壘；Ferrier 是 1947 年 12 月 Krauss／LPO 的 Decca 錄音室版；Faces & Phases 是精選輯；KENSO《Sparta》貝斯手名兩說，正文不寫舊貝斯手名；King Tubby 寫 King Tubby & The Aggrovators、Bunny Lee 製作，不寫 Carlton Patterson；Kiosk 不寫成立年；Kourosh《Gol-e Yakh》寫成以 1973 年成名曲命名的專輯；Kurt Elling 不寫葛萊美入圍；Larry Marshall 離開 Studio One 寫「1970 年代中」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 20 處，改動檔 `review-sd-039.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| K. Hand、Stobart、KENSO《Sparta》、Khanate、Kurt Elling、Lab Rat XL | 「常被」→「被」 | 各只有單一具名出處（Kaput、World of Jazz、Progarchives、Quietus、AllMusic Yanow、RA） |
+| Saunderson | 鉤子「盤名裡的 Faces，指的是他換過的一張張化名面孔」→「Reese、E-Dancer、Inner City，其實都是同一個人」；第二句化名清單縮短 | 「Faces 指化名」是研究層推論、無出處 |
+| Larry Marshall | 刪「由 King Tubby 混音」 | 原專輯混音者各源不一，Tubby 確定的是 dub 版 |
+| Larry Young | 鉤子「Lee Morgan 與 Larry Young 相繼過世後…」→「Blue Note 把這場 1969 年的錄音擱了十一年才發行」 | 兩人過世時間研究稿無出處 |
+| Koes Plus | 鉤子「這張證明他押對了」→「這張就是那段時期的產物」 | 寫作層推論 |
+| McIntyre、KENSO《III》、Killdozer、Klaus Mitffoch | 第二句補《盤名》；刪 Leo Smith／Favors 句、「常被視為他最好的一張」、清水自學重述、CCR 翻唱、Vig／Marker 名以壓字數 | QA 無《》 |
+
+其餘逐張四問無改：逐條對過研究稿（UR 邀約被拒、Frogman 兩小時內簽約、腳踏車喇叭、Jiří Sliva 說獨奏逗笑聽眾、1981 塔爾圖音樂日大獎、Ferrier 自認最好、Kalhor 的哈拉布賈輓歌、Patterson 回絕 Motown、Smart Studios 早期錄音、Dutkiewicz 要求精準到團員累垮、Tubby 的高通濾波器、Kiosk 拿不到文化部許可、Remaco 老闆要求少演出多錄音、Kourosh 只拿 22500 土曼、Stockhausen 統治排行榜的虛構世界、Stinson 猝逝未命名皆有出處）。30 張鉤子前四字互異、加權 ≤50、無禁詞與雜項；第一組多以人物或背景句接續鉤子、盤名在第二或第三句，照收。查無軌序、曲長、盤號（King Tubby「多軌母帶逐軌推進推出」是混音手法，照收）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-039.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 100 次（研究層 sd-039 46、sd-040 32，主線約 22）。
