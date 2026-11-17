@@ -92,3 +92,31 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-006.json`；28 張 56 鍵 Success；回讀 **56/56 一致**；`front-check` **前台 28/28 新稿**。
 - onboarding manifest 同步 28 處（18 個檔）。
+
+## sd-005（30 張，CJK：張淺潛、徐小鳳 2、惘聞 2、拍謝少年 2、新寶島康樂隊 7、日野皓正 7、早坂紗知、春艷 2、木馬 2、本多俊之 4）——s3
+
+- 研究：3 支 Sonnet，WebSearch 16＋15＋20＝51 次。新寶島七張都查不到樂評，只有成員變動、語言配置、金曲紀錄；日野皓正 1980 年代三張 story 薄。研究層抓出的舊稿錯誤：《Double Rainbow》Gil Evans 編曲、《Pyramid》篠笛與 Stan Vincent、《Burnin' Waves》Seawind 伴奏、《Hip Seagull》杯麵廣告——寫作層都未沿用。
+- 寫作：2 支 Opus。
+- **留置 3 張**（KV 保留舊稿，`held-sd-005.json`）：春艷《鬧青》（三塊 thin／none，只有藝人生平）、木馬《Yellow Star》（只有外圍資料）、本多俊之《Radio Club》（唱片本身資料全出自 Soundhouse 搜尋摘要、頁面 503 讀不到）。
+- 機器 QA：27 張 160–240；薄寫 1（《Burnin' Waves》160，審稿刪廠牌文案封號後）；無軌序／曲長／盤號。fix-spacing 建議把「阿Van」拆成「阿 Van」——裁定不改：這是藝名（官方寫法阿VAN），專名照原樣。
+
+### 主線審稿（2026-11-17，逐張 27 張，改 9 處，改動檔 `review-sd-005.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| 惘聞\|re:re:re: | 「這是惘聞此後一直走的方向，樂隊在這個階段的取向，和…」→「此後惘聞一直走這個方向，取向和…」 | 贅句 |
+| 拍謝少年\|噪音公寓 | 補聲音段「製作人周以謙協助統一整張的聲響，樂團把 trip-hop 與 synthwave 的元素放進台語搖滾，速度刻意維持輕快、避開冗長的吉他獨奏」；刪錄音起始日期、謝銘祐合唱段 | 寫作層因「單源」沒寫聲音；Niew 專題（niewmedia.com/en/specials/sorry-youth/4/）是團員與製作人自述，屬藝人自述可用 |
+| 拍謝少年\|噪音公寓 | 刪專輯名呼應被鄰居抱怨 | 補聲音後超字，冷知識先刪 |
+| 日野皓正\|double rainbow | 刪 Hancock 在舊金山補錄 | 錄音細節雜項 |
+| 日野皓正\|new york times | 刪〈Key Breeze〉2025 收進《CROSSOVER CITY》 | 合輯收錄雜項 |
+| 本多俊之\|burnin' waves | 刪「常被視為 Electric Bird 目錄裡最有律動感的幾張之一」與 2023 黑膠再版 | 只出自重發廠牌 Holy Basil 文案；再版雜項 |
+| 本多俊之\|opa com deus | 刪標題曲收進《Super Fusion 1900》 | 合輯收錄雜項 |
+| 木馬\|木馬 | 「常被歸為中國哥特搖滾的代表」→「常被歸入中國的哥特搖滾」 | 「代表／第一」只出自 B 站標題與 Last.fm 轉述 |
+| 木馬\|木馬 | 刪封套自己設計 | 冷知識 |
+
+其餘逐張無改：新寶島七張各寫自己的時期（二人、阿VAN 加入、黃連煜離團、歸隊），金曲入圍／得獎分清（《腳開開》得獎，《第樹輯》《第狗張》《第舞輯》入圍）；《Speak To Loneliness》未寫自由爵士；《Boomerang》的 Seawind 參與製作出自 Oh Jean Records 唱片行介紹（冷門盤准用店家介紹）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-005.json`；27 張 54 鍵 Success；回讀 **54/54 一致**；`front-check` **前台 27/27 新稿**。
+- onboarding manifest 同步 27 處。
