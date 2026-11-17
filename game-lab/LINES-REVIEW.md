@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 967（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1077（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -54,6 +54,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・老闆說情 | ……再一場。 | 本規格新寫 | `lines.owner.retry` |
 | 老闆・retryAsk | ……要不要再一場？ | 本規格新寫 | `lines.owner.retryAsk` |
 | 老闆・發燒配件滿了 | 配件最多帶三件。先放一件回去。 | 本規格新寫 | `lines.owner.relicFull` |
+| 老闆・retryPlea | 這是你存的那次說情，用完就沒了。 | 本規格新寫 | `lines.owner.retryPlea` |
+| 老闆・profFirst | 老客人，先蓋兩個章。 | 本規格新寫 | `lines.owner.profFirst` |
 
 ## 舞台泡泡・文青同好
 
@@ -505,9 +507,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・殿堂 | 大家都聽過的名盤 | 本規格新寫 | `aceGloss.hall` |
-| （畫面字）・流亡 | 沒幾個人聽過 | 本規格新寫 | `aceGloss.pearl` |
-| （畫面字）・異端 | 難入耳，越前衛越高 | 本規格新寫 | `aceGloss.heresy` |
+| （畫面字）・經典流 | 大家都聽過的名盤 | 本規格新寫 | `aceGloss.hall` |
+| （畫面字）・冷門流 | 沒幾個人聽過 | 本規格新寫 | `aceGloss.pearl` |
+| （畫面字）・異端流 | 難入耳，越前衛越高 | 本規格新寫 | `aceGloss.heresy` |
 
 ## 對決盤面的字（{x} 由畫面代入）
 
@@ -906,20 +908,20 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・streak | 連勝 +1（{n} 連勝） | 本規格新寫 | `trial.ui.streak` |
 | （畫面字）・closeWin | 險勝！ | 本規格新寫 | `trial.ui.closeWin` |
 | （畫面字）・aceLocked | 打倒傳說藏家解鎖 | 本規格新寫 | `trial.ui.aceLocked` |
-| （畫面字）・aceLockedNote | {title}（{axis}）還鎖著，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.aceLockedNote` |
+| （畫面字）・aceLockedNote | {title}還鎖著，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.aceLockedNote` |
 | （畫面字）・aceSwapNone | 其他流派還鎖著 | 本規格新寫 | `trial.ui.aceSwapNone` |
 | （畫面字）・firstPick | 「先挑一派。其他流派，打倒傳說藏家再解鎖。」 | 本規格新寫 | `trial.ui.firstPick` |
 | （畫面字）・firstPickNote | 挑了就是初始流派。其他兩派，打倒傳說藏家解鎖。 | 本規格新寫 | `trial.ui.firstPickNote` |
-| （畫面字）・lockHint | 其他流派還鎖著：打倒傳說藏家，解鎖{title}（{axis}）。 | 本規格新寫 | `trial.ui.lockHint` |
-| （畫面字）・unlocked | 解鎖了{title}派（{axis}） | 本規格新寫 | `trial.ui.unlocked` |
+| （畫面字）・lockHint | 其他流派還鎖著：打倒傳說藏家，解鎖{title}。 | 本規格新寫 | `trial.ui.lockHint` |
+| （畫面字）・unlocked | 解鎖了{title} | 本規格新寫 | `trial.ui.unlocked` |
 | （畫面字）・unlockedSub | 下一趟開局，點老闆就能換。 | 本規格新寫 | `trial.ui.unlockedSub` |
 | （畫面字）・newOwn | 新收藏 | 本規格新寫 | `trial.ui.newOwn` |
 | （畫面字）・unlockMigrated | 流派改成打倒傳說藏家才解鎖。你現在這派照舊。 | 本規格新寫 | `trial.ui.unlockMigrated` |
 | （畫面字）・unlockProg | 流派 {n}／3 | 本規格新寫 | `trial.ui.unlockProg` |
-| （畫面字）・unlockNext | 下一派：{title}（{axis}） | 本規格新寫 | `trial.ui.unlockNext` |
+| （畫面字）・unlockNext | 下一派：{title} | 本規格新寫 | `trial.ui.unlockNext` |
 | （畫面字）・apexProg | 頂點卡 {n}／{total} | 本規格新寫 | `trial.ui.apexProg` |
 | （畫面字）・bossCarry | 帶的王牌《{album}》 | 本規格新寫 | `trial.ui.bossCarry` |
-| （畫面字）・bossUnlock | 打倒他，解鎖{title}派（{axis}） | 本規格新寫 | `trial.ui.bossUnlock` |
+| （畫面字）・bossUnlock | 打倒他，解鎖{title} | 本規格新寫 | `trial.ui.bossUnlock` |
 | （畫面字）・bossCollect | 打倒他，這張就收進唱片櫃 | 本規格新寫 | `trial.ui.bossCollect` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
@@ -1035,6 +1037,169 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・claimTitle | 挑一張帶回家 | 本規格新寫 | `daily.claimTitle` |
 | （畫面字）・claimed | 收進唱片櫃，下一趟可以帶上場。 | 本規格新寫 | `daily.claimed` |
 | （畫面字）・titleChip | 今日推薦：《{album}》 | 本規格新寫 | `daily.titleChip` |
+
+## 樂歷・樂歷頁（天賦、重配、熟練度）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・page | 樂歷 | 本規格新寫 | `career.ui.page` |
+| （畫面字）・title | 樂歷 Lv {n} | 本規格新寫 | `career.ui.title` |
+| （畫面字）・bar | {a}／{b} | 本規格新寫 | `career.ui.bar` |
+| （畫面字）・points | 天賦點 {n} | 本規格新寫 | `career.ui.points` |
+| （畫面字）・nextLv | 下一級還要 {n} | 本規格新寫 | `career.ui.nextLv` |
+| （畫面字）・groups[0].name | 戰力 | 本規格新寫 | `career.ui.groups[0].name` |
+| （畫面字）・groups[1].name | 錢與經驗 | 本規格新寫 | `career.ui.groups[1].name` |
+| （畫面字）・groups[2].name | 運氣 | 本規格新寫 | `career.ui.groups[2].name` |
+| （畫面字）・groups[3].name | 安全網 | 本規格新寫 | `career.ui.groups[3].name` |
+| （畫面字）・names.atk | 開局品味 | 本規格新寫 | `career.ui.names.atk` |
+| （畫面字）・names.def | 開局底氣 | 本規格新寫 | `career.ui.names.def` |
+| （畫面字）・names.hp | 開局聲望 | 本規格新寫 | `career.ui.names.hp` |
+| （畫面字）・names.xp | 局內經驗 | 本規格新寫 | `career.ui.names.xp` |
+| （畫面字）・names.plea | 備用說情 | 本規格新寫 | `career.ui.names.plea` |
+| （畫面字）・names.money | 開局錢 | 本規格新寫 | `career.ui.names.money` |
+| （畫面字）・names.pay | 酬勞 | 本規格新寫 | `career.ui.names.pay` |
+| （畫面字）・names.rare | 稀有率 | 本規格新寫 | `career.ui.names.rare` |
+| （畫面字）・names.piggy | 存錢筒 | 本規格新寫 | `career.ui.names.piggy` |
+| （畫面字）・names.reroll | 重抽 | 本規格新寫 | `career.ui.names.reroll` |
+| （畫面字）・names.ban | 封掉 | 本規格新寫 | `career.ui.names.ban` |
+| （畫面字）・names.intel | 客人底細 | 本規格新寫 | `career.ui.names.intel` |
+| （畫面字）・names.safety | 新手保底 | 本規格新寫 | `career.ui.names.safety` |
+| （畫面字）・fx.atk | 每級開局品味 +1 | 本規格新寫 | `career.ui.fx.atk` |
+| （畫面字）・fx.def | 每級開局底氣 +1 | 本規格新寫 | `career.ui.fx.def` |
+| （畫面字）・fx.hp | 每級開局聲望上限 +2，現有的也 +2 | 本規格新寫 | `career.ui.fx.hp` |
+| （畫面字）・fx.xp | 每級局內經驗 +10% | 本規格新寫 | `career.ui.fx.xp` |
+| （畫面字）・fx.plea | 每趟一次，這一輪的說情用完才用 | 本規格新寫 | `career.ui.fx.plea` |
+| （畫面字）・fx.money | 每級開局多 ${n} | 本規格新寫 | `career.ui.fx.money` |
+| （畫面字）・fx.pay | 每級打贏的錢 +10% | 本規格新寫 | `career.ui.fx.pay` |
+| （畫面字）・fx.rare | 每級戰利品列金邊 +2 點 | 本規格新寫 | `career.ui.fx.rare` |
+| （畫面字）・fx.piggy | 輸了剩下的錢 10% 帶到下一趟 | 本規格新寫 | `career.ui.fx.piggy` |
+| （畫面字）・fx.reroll | 每趟多一次重抽 | 本規格新寫 | `career.ui.fx.reroll` |
+| （畫面字）・fx.ban | 每趟封掉一件配件或一張盤 | 本規格新寫 | `career.ui.fx.ban` |
+| （畫面字）・fx.intel | 看他牌組三色比例 | 本規格新寫 | `career.ui.fx.intel` |
+| （畫面字）・fx.safety | 上一趟沒到第 10 位，第一位輸了免費再一次 | 本規格新寫 | `career.ui.fx.safety` |
+| （畫面字）・moneyOnly | （只多錢，不會變強） | 本規格新寫 | `career.ui.moneyOnly` |
+| （畫面字）・powerLater | 戰力天賦 Lv{n} 開，點數先存著也可以 | 本規格新寫 | `career.ui.powerLater` |
+| （畫面字）・now | 現在 {n} 級 | 本規格新寫 | `career.ui.now` |
+| （畫面字）・cost | 下一級 {n} 點 | 本規格新寫 | `career.ui.cost` |
+| （畫面字）・maxed | 已滿 | 本規格新寫 | `career.ui.maxed` |
+| （畫面字）・auto | 自動 | 本規格新寫 | `career.ui.auto` |
+| （畫面字）・lock | 樂歷 Lv{n} 開 | 本規格新寫 | `career.ui.lock` |
+| （畫面字）・soon | 之後開放 | 本規格新寫 | `career.ui.soon` |
+| （畫面字）・respec | 全部重配（免費） | 本規格新寫 | `career.ui.respec` |
+| （畫面字）・respecDone | 點數都退回來了。 | 本規格新寫 | `career.ui.respecDone` |
+| （畫面字）・prof | 熟練 Lv{n}・章 {s}／{per} | 本規格新寫 | `career.ui.prof` |
+| （畫面字）・buy | 加一級 | 本規格新寫 | `career.ui.buy` |
+| （畫面字）・sell | 退一級 | 本規格新寫 | `career.ui.sell` |
+| （畫面字）・noPoints | 天賦點不夠 | 本規格新寫 | `career.ui.noPoints` |
+| （畫面字）・profTitle | 熟練度 | 本規格新寫 | `career.ui.profTitle` |
+| （畫面字）・unlockTitle | 流派與攤位 | 本規格新寫 | `career.ui.unlockTitle` |
+| （畫面字）・lastLine | 上一趟 樂歷 +{n} | 本規格新寫 | `career.ui.lastLine` |
+| （畫面字）・nextRun | 改了下一趟開局才算 | 本規格新寫 | `career.ui.nextRun` |
+
+## 樂歷・樂歷頁的解鎖階梯
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・ladderTitle | 解鎖階梯 | 本規格新寫 | `career.ui.ladderTitle` |
+| （畫面字）・ladderRow | Lv{n} {name} | 本規格新寫 | `career.ui.ladderRow` |
+| （畫面字）・ladder.talents | 天賦頁 | 本規格新寫 | `career.ui.ladder.talents` |
+| （畫面字）・ladder.power | 戰力天賦 | 本規格新寫 | `career.ui.ladder.power` |
+| （畫面字）・ladder.relic3 | 菁英、藏家的配件三選一 | 本規格新寫 | `career.ui.ladder.relic3` |
+| （畫面字）・ladder.off | 可以關掉樂歷 | 本規格新寫 | `career.ui.ladder.off` |
+| （畫面字）・ladder.seed4 | 種子格 4 格 | 本規格新寫 | `career.ui.ladder.seed4` |
+| （畫面字）・ladder.gold | 戰利品列金邊 +1 點 | 本規格新寫 | `career.ui.ladder.gold` |
+| （畫面字）・ladder.plea | 備用說情 | 本規格新寫 | `career.ui.ladder.plea` |
+| （畫面字）・ladder.seed5 | 種子格 5 格 | 本規格新寫 | `career.ui.ladder.seed5` |
+| （畫面字）・ladder.relicsNew | 新配件 | 本規格新寫 | `career.ui.ladder.relicsNew` |
+| （畫面字）・ladder.regulars | 新常客 | 本規格新寫 | `career.ui.ladder.regulars` |
+| （畫面字）・ladder.outfit | 捏角色新服裝 | 本規格新寫 | `career.ui.ladder.outfit` |
+| （畫面字）・drawRow | 每升一級：抽一張盤進唱片櫃（Lv10 起每 5 級史詩） | 本規格新寫 | `career.ui.drawRow` |
+
+## 樂歷・關掉樂歷（Lv10 起、只在樂歷頁）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・off | 下一趟關掉樂歷 | 本規格新寫 | `career.ui.off` |
+| （畫面字）・offSub | 天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。 | 本規格新寫 | `career.ui.offSub` |
+| （畫面字）・offOn | 樂歷關 | 本規格新寫 | `career.ui.offOn` |
+| （畫面字）・offBest | 關樂歷 | 本規格新寫 | `career.ui.offBest` |
+
+## 樂歷・標題第二行、唱片櫃頁頭
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・line | 樂歷 Lv {n}・下一個：Lv{m} {name} › | 本規格新寫 | `career.ui.line` |
+| （畫面字）・lineAll | 樂歷 Lv {n} › | 本規格新寫 | `career.ui.lineAll` |
+| （畫面字）・lineShort | 樂歷 Lv {n} › | 本規格新寫 | `career.ui.lineShort` |
+| （畫面字）・shelfBtn | 樂歷 | 本規格新寫 | `career.ui.shelfBtn` |
+| （畫面字）・bestTier | 最遠 {n}（第 {k} 階 {m}） | 本規格新寫 | `career.ui.bestTier` |
+
+## 樂歷・結算頁那一行＋明細
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・endLine | 樂歷 +{n} › | 本規格新寫 | `career.ui.endLine` |
+| （畫面字）・tierPre | 第 {k} 階・ | 本規格新寫 | `career.ui.tierPre` |
+| （畫面字）・partPos | 位數 {n} | 本規格新寫 | `career.ui.partPos` |
+| （畫面字）・partStreak | 連贏 {n} | 本規格新寫 | `career.ui.partStreak` |
+| （畫面字）・partRecord | 破紀錄 {n} | 本規格新寫 | `career.ui.partRecord` |
+| （畫面字）・partRoute | 路線 {n} | 本規格新寫 | `career.ui.partRoute` |
+| （畫面字）・partCut | （已到上限） | 本規格新寫 | `career.ui.partCut` |
+| （畫面字）・partTier | ×{m} 第 {k} 階 | 本規格新寫 | `career.ui.partTier` |
+| （畫面字）・partLow | 還沒走到第 {n} 位：樂歷 ×{m} | 本規格新寫 | `career.ui.partLow` |
+| （畫面字）・partProf | {title} 蓋了 {n} 個章 | 本規格新寫 | `career.ui.partProf` |
+| （畫面字）・partOff | 這一趟關樂歷（樂歷照拿） | 本規格新寫 | `career.ui.partOff` |
+| （畫面字）・routeCap | 路線樂歷已到上限 | 本規格新寫 | `career.ui.routeCap` |
+| （畫面字）・gainTitle | 這一趟的樂歷 +{n} | 本規格新寫 | `career.ui.gainTitle` |
+| （畫面字）・toPage | 看樂歷頁 › | 本規格新寫 | `career.ui.toPage` |
+
+## 樂歷・過場卡（結算主鈕之後、開機入帳之後；一次一張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・lvUp | 樂歷 Lv {n}！天賦點 +1 | 本規格新寫 | `career.ui.lvUp` |
+| （畫面字）・lvMore | 再升 {n} 級 | 本規格新寫 | `career.ui.lvMore` |
+| （畫面字）・drawGot | 抽到一張，收進唱片櫃 | 本規格新寫 | `career.ui.drawGot` |
+| （畫面字）・ladderOpen | 開了：{name} | 本規格新寫 | `career.ui.ladderOpen` |
+| （畫面字）・goTalent | 去點天賦 | 本規格新寫 | `career.ui.goTalent` |
+| （畫面字）・profUp | {title} 熟練 Lv{n} | 本規格新寫 | `career.ui.profUp` |
+| （畫面字）・cardNext | 繼續 | 本規格新寫 | `career.ui.cardNext` |
+| （畫面字）・cardTap | 點一下看下一張 | 本規格新寫 | `career.ui.cardTap` |
+
+## 樂歷・開機入帳的吐司（C 波記的樂歷）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・depositFirst | 老闆：你之前的樂歷我都記著呢。樂歷 +{n}，升到 Lv {to}。 | 本規格新寫 | `career.ui.depositFirst` |
+| 老闆・depositMore | 老闆：上次的樂歷補記給你。樂歷 +{n}。 | 本規格新寫 | `career.ui.depositMore` |
+
+## 樂歷・演唱會買票面板
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・gigRoom | 每張樂歷 +{per}・這一趟還能算 {n} 張（越往後走越多） | 本規格新寫 | `career.ui.gigRoom` |
+| （畫面字）・gigFull | 這一趟的演唱會樂歷已到上限，買票只算聽歌 | 本規格新寫 | `career.ui.gigFull` |
+
+## 樂歷・來客條說情、備用說情
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・pleaLeft | 說情剩 {n} | 本規格新寫 | `career.ui.pleaLeft` |
+| （畫面字）・pleaSpare | ・備用 {n} | 本規格新寫 | `career.ui.pleaSpare` |
+| （畫面字）・pleaMenu | ▶ 再一場（用掉備用說情） | 本規格新寫 | `career.ui.pleaMenu` |
+
+## 樂歷・唱片櫃來源
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・srcLexp | 樂歷抽到的 | 本規格新寫 | `career.ui.srcLexp` |
+
+## 流派・第一次挑派的新手推薦標
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・pearl | 新手推薦 | 本規格新寫 | `aceNewbie.pearl` |
+| （畫面字）・hall | 前期較難 | 本規格新寫 | `aceNewbie.hall` |
 
 ## 無限試煉・結算與標題的紀錄
 

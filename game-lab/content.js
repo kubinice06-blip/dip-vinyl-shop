@@ -144,7 +144,14 @@
   // 王牌、老闆送的四張（§4.2）、特價箱（§4.3）。每一趟包包開局＝老闆四張（第二趟起種子佔掉幾格）；特價箱挑三張後 7 張；包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity），一趟結束才重置
   // ===================================================================
   C.aces = { hall: "radiohead|ok computer", pearl: "barney wilen|zodiac", heresy: "swans|filth" };
-  C.aceTitle = { hall: '殿堂', pearl: '流亡', heresy: '異端' };          // 王牌名（附錄 D）
+  // 第 D 波（SPEC-D §3.1；預設就換，不跟旗標）：流派名＝經典流／冷門流／異端流（店主 11-16 定的新名稱，原本括號帶著的「殿堂（經典）」拿掉）；
+  //   一字圖示 aceIcon（比／借／拆：對決頂欄王牌格旁、開局派系卡）。殿堂／流亡／異端只留給頂點卡等級名（apexTierName：唱片櫃頂點卡標、C.apexTrial 的 grade）
+  C.aceTitle = { hall: '經典流', pearl: '冷門流', heresy: '異端流' };    // 流派名（{title}；挑王牌面板、解鎖、換王牌那行）
+  C.aceIcon = { hall: '比', pearl: '借', heresy: '拆' };
+  C.apexTierName = { hall: '殿堂', pearl: '流亡', heresy: '異端' };      // 頂點卡等級名（唱片櫃、卡角的章；原本借用 aceTitle）
+  // 新手推薦標（SPEC-D §3.9，§14-1 建議 B）：只在序章第一次挑派時標；冷門「新手推薦」、經典「前期較難」，異端不標（不寫機率、百分比；不跟 ?fac=1）
+  C.aceNewbie = { pearl: '新手推薦', hall: '前期較難' };
+  C.aceNewbieTag = '新';
   C.aceGloss = { hall: '大家都聽過的名盤', pearl: '沒幾個人聽過', heresy: '難入耳，越前衛越高' };   // 三軸 7 星的白話（挑王牌那行括號、唱盤前三張的小字；店主 11-12）
   C.aceGlossTag = '新';
   C.aceAxis = { hall: 'c', pearl: 'o', heresy: 'h' };                    // 7 星那軸（王牌只能丟這一軸）
@@ -310,7 +317,13 @@
     retry: 1,                                       // 老闆說情每輪 1 次（同一位、同一副牌、聲望回到開打前）
     youHp: 12, heal: 3,                             // 你 12 聲望；打贏回 3（＝engine CFG.playerHp）
     guestHp: { normal: 12, elite: 12, boss: 14 },
-    guestHpSteps: [[31, 1]],                        // 第 C 波客人補償（SPEC-C §5.5）：第 31 位起一般／菁英 12→13、藏家 14→15，之後不再長（[[第幾位起, +n], …]；[]＝關）
+    // 客人補償（[[第幾位起, +n], …]，可多段、照位數遞增；[]＝關）。第 C 波（SPEC-C §5.5）：第 31 位起一般／菁英 12→13、藏家 14→15。
+    //   第 D 波 V3（SPEC-D §4.3，預設就上）：第 51 位起每 5 位再 +1（一般客人第 50 位 13、第 100 位 23、第 150 位 33；藏家 +2）。
+    //   產生法＝[[31,1]].concat(range(51, 301, 5).map(p => [p, 1]))；新帳號到第 50 位逐字不變。理由：樂歷戰力天賦（SPEC-D §13-1）
+    guestHpSteps: [[31, 1], [51, 1], [56, 1], [61, 1], [66, 1], [71, 1], [76, 1], [81, 1], [86, 1], [91, 1], [96, 1], [101, 1], [106, 1],
+      [111, 1], [116, 1], [121, 1], [126, 1], [131, 1], [136, 1], [141, 1], [146, 1], [151, 1], [156, 1], [161, 1], [166, 1], [171, 1],
+      [176, 1], [181, 1], [186, 1], [191, 1], [196, 1], [201, 1], [206, 1], [211, 1], [216, 1], [221, 1], [226, 1], [231, 1], [236, 1],
+      [241, 1], [246, 1], [251, 1], [256, 1], [261, 1], [266, 1], [271, 1], [276, 1], [281, 1], [286, 1], [291, 1], [296, 1]],
     xp: { normal: 2, elite: 3, boss: 4 }, levelNeed: 3, levelHp: 1,
     picks: { atk: 1, def: 1, hp: 2 },               // 三選一：品味 +1、底氣 +1、聲望上限 +2（現有聲望也 +2）
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
@@ -394,23 +407,23 @@
       titleFmt: '{t}級', titleLine: '稱號：{t}',
       // 第 A 波 4（演出與字）：對決頂欄離最遠紀錄 3 位內（{n}＝再贏幾位才破）；打贏時大章下的連勝（{n}＝打贏這位之後的連勝）；剩 1–2 聲望贏下的大章
       toRecord: '再贏 {n} 位破紀錄', streak: '連勝 +1（{n} 連勝）', closeWin: '險勝！',
-      // 流派解鎖（店主 11-16「流派的頂點卡要透過遊戲蒐集才能解鎖」）：新玩家只有第一次挑的那派（初始流派），其他派打倒傳說藏家才解鎖（被剋鏈：流亡→殿堂→異端→流亡）。
-      //   {title}＝殿堂／流亡／異端、{axis}＝經典／冷門／硬蕊（店主 11-16 定的新名稱「經典流…」先用括號帶著）
+      // 流派解鎖（店主 11-16「流派的頂點卡要透過遊戲蒐集才能解鎖」）：新玩家只有第一次挑的那派（初始流派），其他派打倒傳說藏家才解鎖（被剋鏈：冷門流→經典流→異端流→冷門流）。
+      //   {title}＝經典流／冷門流／異端流（C.aceTitle）、{axis}＝經典／冷門／硬蕊、{icon}＝比／借／拆。第 D 波（SPEC-D §3.1）：名字本身就帶軸，樣板拿掉「派」與「（{axis}）」
       aceLocked: '打倒傳說藏家解鎖',                                  // 挑王牌面板：鎖住那派封面下面那行；點老闆小選單「換一張王牌」換不了時的小字
-      aceLockedNote: '{title}（{axis}）還鎖著，打倒傳說藏家解鎖。',      // 挑王牌面板：點了鎖住的那派，說明那行
+      aceLockedNote: '{title}還鎖著，打倒傳說藏家解鎖。',               // 挑王牌面板：點了鎖住的那派，說明那行
       aceSwapNone: '其他流派還鎖著',                                  // 點老闆小選單：只有一派能挑時，「換一張王牌」改成這句（按不下去）
       firstPick: '「先挑一派。其他流派，打倒傳說藏家再解鎖。」',        // 跳過序章（?apex=1）的新存檔：先三選一挑初始流派（面板標題，老闆說的）
       firstPickNote: '挑了就是初始流派。其他兩派，打倒傳說藏家解鎖。',   // 序章 O9 挑王牌（新玩家第一次挑）：說明那行最後一行（審查 11-16：這一挑會定下初始流派，原本沒講）
-      lockHint: '其他流派還鎖著：打倒傳說藏家，解鎖{title}（{axis}）。',   // 只解鎖一派時，第 1 位開打前的一次性吐司（第一晚等老闆四句看完才出；同一次櫃檯賣給老闆的提示出了就不出、下次再說；save.seen.unlockHint）
-      unlocked: '解鎖了{title}派（{axis}）',                           // 打倒傳說藏家、他那張讓新的一派解鎖（送牌那段的大字、吐司）
+      lockHint: '其他流派還鎖著：打倒傳說藏家，解鎖{title}。',   // 只解鎖一派時，第 1 位開打前的一次性吐司（第一晚等老闆四句看完才出；同一次櫃檯賣給老闆的提示出了就不出、下次再說；save.seen.unlockHint）
+      unlocked: '解鎖了{title}',                                       // 打倒傳說藏家、他那張讓新的一派解鎖（送牌那段的大字、吐司）
       unlockedSub: '下一趟開局，點老闆就能換。',
       newOwn: '新收藏',                                                // 送牌那段封面角的章：這張是新收進「我的收藏」的（原本的章寫「新認識」）
       unlockMigrated: '流派改成打倒傳說藏家才解鎖。你現在這派照舊。',   // 舊存檔第一次載入（解鎖制以前的存檔），標題畫面吐司一次
       unlockProg: '流派 {n}／3',                                       // 標題畫面紀錄那行、唱片櫃：解鎖進度
-      unlockNext: '下一派：{title}（{axis}）',                          // 接在進度後面：下一次打倒傳說藏家會解鎖哪一派
+      unlockNext: '下一派：{title}',                                   // 接在進度後面：下一次打倒傳說藏家會解鎖哪一派
       apexProg: '頂點卡 {n}／{total}',                                 // ?apex=1：收了幾張頂點卡（標題、唱片櫃）
       bossCarry: '帶的王牌《{album}》',                                 // 點傳說藏家的頭像：他這一輪帶哪張（每輪可以不同）
-      bossUnlock: '打倒他，解鎖{title}派（{axis}）',                     //   接在後面：打倒他會解鎖哪一派
+      bossUnlock: '打倒他，解鎖{title}',                               //   接在後面：打倒他會解鎖哪一派
       bossCollect: '打倒他，這張就收進唱片櫃'                           //   ?apex=1、三派都開之後：他帶的是你還沒收到的那張
     },
     // 升級三選一（第一格固定是品味或底氣；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
@@ -693,7 +706,11 @@
     owner: {
       retry: L('……再一場。', '新'),                 // 序章男子輸了（免費、不用選）
       retryAsk: L('……要不要再一場？', '新'),         // 客人輸了：接著是「再一場（這一輪只有一次）／到這裡就好」兩顆（C.trial.ui.retryMenu；COPY-07：不要連說三次「再一場」）
-      relicFull: L('配件最多帶三件。先放一件回去。', '新')
+      relicFull: L('配件最多帶三件。先放一件回去。', '新'),
+      // 第 D 波（SPEC-D §2.7、§2.8-7）：這一輪的說情用完了、用樂歷存的備用說情（pending.plea）時，接在 retryAsk 那段（retryFlow）
+      retryPlea: L('這是你存的那次說情，用完就沒了。', '新'),
+      // 第 D 波（SPEC-D §3.6，R-F6）：第一次解鎖某派，熟練度先蓋兩章（避開今日推薦的「集點卡」）
+      profFirst: L('老客人，先蓋兩個章。', '新')
     },
     // 序章男子：只有原版的句子（D §2：試做版自己加的口頭禪、贏你那句拿掉；COPY-01）。lose＝E2／E3 原句（收尾對白講，盤面不再冒泡泡）
     man: {
@@ -1593,7 +1610,7 @@
       foundSell: '賣給老闆 ${n}（撿來的）',                        // 櫃檯價籤：撿來的一律＝不收的錢（$200）
       foundTag: '撿來的',                                          // 櫃檯「賣給老闆」格子上的小籤（介面 A 加；確認鈕寫 foundSell）
       packetCash: '酬勞再給一次',
-      packetLexp: '樂歷經驗 +{n}（之後開放）',
+      packetLexp: '樂歷 +{n}',                                    // 第 D 波：樂歷入帳了（SPEC-D §2.6-7、§2.8-5），不寫「之後開放」
       // 戰利品列、寶箱的面板（介面 A 加；loot.js）
       lootTitle: '他掉的唱片：挑一張收進包包',
       lootFlip: '點一下翻開',                                       // 蓋著那張的說明（讀屏、小字）
@@ -1617,7 +1634,7 @@
       busy: '先逛完今天的攤位。',                                   // 攤位中點箱子、收音機、櫃檯、對戰台
       done: '逛完了',
       spent: '−${n}',                                               // 攤位花錢時頂上那條（跳錢條，往下數；賺錢照舊 shopUi.earned）
-      lexpLater: '樂歷經驗 +{n}（之後開放）',
+      lexpLater: '樂歷 +{n}',                                     // 攤位（公關片、店裡唱盤、演唱會）的樂歷吐司；鍵名沿用 C 波
       // 各站的鈕與小字
       reroll: '再翻一次（${n}）',
       sellOne: '賣一張給他',
@@ -1646,7 +1663,7 @@
       bagSold: '今天的福袋賣完了',
       bagPick: '福袋開出這幾張，挑一張收進包包。',
       bagFirst: '先從福袋挑一張',                                    // 福袋開了還沒挑：「逛完了」換成這句、按不下去（不然 $2,500 白花）
-      demo: '錄了一段 demo。樂歷經驗 +{n}（之後開放）',            // 錄音室（C 波自動帶過，浮一行）
+      demo: '錄了一段 demo。樂歷 +{n}',                            // 錄音室（C 波自動帶過，浮一行）
       // 各站面板補的鈕（介面 B 加；stalls.js）
       rareTag: '同業珍品',                                          // 同業調貨那格史詩／傳奇的小籤
       sellFor: '賣 +${n}',                                          // 「賣一張給他」每張的鈕（撿來的＝不收的錢、送的／種子寫「交還老闆」）
@@ -1679,6 +1696,91 @@
       grandpa: '阿公的西洋老歌', classicalStudy: '古典樂迷的書房', backpacker: '背包客的世界音樂', closedShop: '收掉的小唱片行' }
   };
   C.waveCTag = '新';
+
+  // ===================================================================
+  // 第 D 波：樂歷（局外成長；SPEC-D §2、§4.1，scratchpad v5/wave-d）——預設就開。engine.js CAREER 是同一份預設，careerCfg 逐層合併（物件逐鍵、陣列整個換）
+  //   一趟拿多少（careerGain）＝round((基本＋破紀錄＋路線) × (1＋0.1×試煉階級) × (這趟沒走到第 10 位 ? 2 : 1))
+  //     基本＝15×實際打過的位數＋8×最多連贏（＝C 波 LEXP_BASE）；破紀錄 +30（最遠紀錄 >0 才給）；路線＝演唱會 ≤ 基本 25%、五項合計 ≤ 基本 40%（執行期截斷）
+  //     lowMul／lowBelow＝新手補貼（SPEC-D §14-2 建議 B：沒走到第 10 位那趟樂歷 ×2；lowMul 1＝關）
+  //   等級（careerLevel）：Lv n→n+1 要 100n（n<10），之後每級 1,000（累計 Lv2 100、Lv5 1,000、Lv10 4,500、Lv20 14,500）；每升一級 +1 天賦點、抽一張盤進唱片櫃
+  //   天賦（talents；cost [a,'k']＝第 k 級 a×k 點、[a,'flat']＝每級 a 點、[a,'k+1']＝第 k 級 a＋k−1 點；max 0＝不封頂；open＝樂歷幾級開；soon＝D 波不做、畫灰）
+  //     戰力（品味、底氣、聲望）6k 點、Lv8 開——規劃書價（1＋⌊(k−1)/5⌋、Lv5 開）一點戰力就讓深度差太多，多趟第 5 趟中位就到第 130 位（SPEC-D §11.4、§11.5）
+  //   解鎖階梯（ladder；照等級自動開、不花點）：relicPick＝菁英／藏家配件三選一、seedMax＝種子格、goldAdd＝戰利品列金邊機率 +n（加在 C.waveC.loot.gold）
+  //   熟練度（prof；每派一條，預設就記）：一章 150、十章一級；落後（<最高那派一半）×2；第一次解鎖先蓋兩章；派點與派樹在 ?fac=1（棒三）
+  // ===================================================================
+  C.career = {
+    lexp: { pos: 15, streak: 8, record: 30, caps: { gig: 0.25, route: 0.40 }, tierMul: 0.10, lowMul: 2, lowBelow: 10 },
+    curve: { tri: 100, triTo: 10, after: 1000 },
+    draw: { every5: 'epic', epicFrom: 10, other: ['rare', 'uncommon'] },   // Lv10、15、20…史詩；其他稀有／獨特各半（Lv5 也是稀有／獨特：戰力相關的一律 Lv8 以後）
+    talentFx: { atk: 1, def: 1, hp: 2, xp: 0.10, plea: 1, money: 500, pay: 0.10, rare: 0.02 },
+    talents: [
+      { id: 'atk', cat: 'power', cost: [6, 'k'], max: 0, open: 8 }, { id: 'def', cat: 'power', cost: [6, 'k'], max: 0, open: 8 },
+      { id: 'hp', cat: 'power', cost: [6, 'k'], max: 0, open: 8 }, { id: 'xp', cat: 'xp', cost: [3, 'k'], max: 2, open: 8 },
+      { id: 'plea', cat: 'safe', cost: [15, 'flat'], max: 1, open: 20 },
+      { id: 'money', cat: 'money', cost: [1, 'flat'], max: 3, open: 2 }, { id: 'pay', cat: 'money', cost: [1, 'flat'], max: 3, open: 2 },
+      { id: 'rare', cat: 'luck', cost: [2, 'flat'], max: 3, open: 8 },
+      { id: 'piggy', cat: 'money', cost: [1, 'flat'], max: 3, open: 2, soon: true }, { id: 'reroll', cat: 'luck', cost: [2, 'flat'], max: 3, open: 2, soon: true },
+      { id: 'ban', cat: 'luck', cost: [2, 'flat'], max: 3, open: 2, soon: true }, { id: 'intel', cat: 'info', cost: [2, 'k+1'], max: 2, open: 5, soon: true }
+    ],
+    ladder: [
+      { lv: 2, key: 'talents' }, { lv: 8, key: 'power' }, { lv: 10, key: 'relic3', relicPick: 3 }, { lv: 10, key: 'off' },
+      { lv: 12, key: 'seed4', seedMax: 4 }, { lv: 15, key: 'gold', goldAdd: 0.01 }, { lv: 20, key: 'plea' },
+      { lv: 0, key: 'seed5', soon: true }, { lv: 0, key: 'relicsNew', soon: true }, { lv: 0, key: 'regulars', soon: true }, { lv: 0, key: 'outfit', soon: true }
+    ],
+    offFrom: 10,                                                  // 樂歷 Lv10 起樂歷頁才有「下一趟關掉樂歷」開關（＝ladder 的 off）
+    prof: { stamp: 150, per: 10, lagMul: 2, lagBelow: 0.5, firstStamps: 2, pointFrom: 2,
+      auto: [{ lv: 3, key: 'sigil', soon: true }, { lv: 5, key: 'tier3' }, { lv: 7, key: 'giftSwap', soon: true }, { lv: 10, key: 'outfit', soon: true }] },
+    // 畫面字（{x} 由畫面代入；錢先 E.moneyText）。groups＝樂歷頁天賦表一類一組（cats＝talents[].cat）
+    ui: {
+      // 樂歷頁（openPage('career')；SPEC-D §2.8-2）
+      page: '樂歷', title: '樂歷 Lv {n}', bar: '{a}／{b}', points: '天賦點 {n}', nextLv: '下一級還要 {n}',
+      groups: [{ key: 'power', name: '戰力', cats: ['power'] }, { key: 'money', name: '錢與經驗', cats: ['money', 'xp'] },
+        { key: 'luck', name: '運氣', cats: ['luck', 'info'] }, { key: 'safe', name: '安全網', cats: ['safe'] }],
+      names: { atk: '開局品味', def: '開局底氣', hp: '開局聲望', xp: '局內經驗', plea: '備用說情', money: '開局錢', pay: '酬勞', rare: '稀有率',
+        piggy: '存錢筒', reroll: '重抽', ban: '封掉', intel: '客人底細', safety: '新手保底' },
+      fx: { atk: '每級開局品味 +1', def: '每級開局底氣 +1', hp: '每級開局聲望上限 +2，現有的也 +2', xp: '每級局內經驗 +10%',
+        plea: '每趟一次，這一輪的說情用完才用', money: '每級開局多 ${n}', pay: '每級打贏的錢 +10%', rare: '每級戰利品列金邊 +2 點',
+        piggy: '輸了剩下的錢 10% 帶到下一趟', reroll: '每趟多一次重抽', ban: '每趟封掉一件配件或一張盤', intel: '看他牌組三色比例',   // ban：配件＝relic
+        safety: '上一趟沒到第 10 位，第一位輸了免費再一次' },
+      moneyOnly: '（只多錢，不會變強）',                             // 開局錢、酬勞兩列效果句後面的灰字（CRITIQUE 4.4）
+      powerLater: '戰力天賦 Lv{n} 開，點數先存著也可以',              // Lv8 前天賦頁頂端
+      now: '現在 {n} 級', cost: '下一級 {n} 點', maxed: '已滿', auto: '自動', lock: '樂歷 Lv{n} 開', soon: '之後開放',
+      respec: '全部重配（免費）', respecDone: '點數都退回來了。',
+      // 解鎖階梯（已開的打勾、下一個亮、之後的灰）
+      ladderTitle: '解鎖階梯', ladderRow: 'Lv{n} {name}',
+      ladder: { talents: '天賦頁', power: '戰力天賦', relic3: '菁英、藏家的配件三選一', off: '可以關掉樂歷', seed4: '種子格 4 格',
+        gold: '戰利品列金邊 +1 點', plea: '備用說情', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
+      drawRow: '每升一級：抽一張盤進唱片櫃（Lv10 起每 5 級史詩）',
+      // 關掉樂歷（Lv10 起、只在樂歷頁；下一趟起生效）
+      off: '下一趟關掉樂歷', offSub: '天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。', offOn: '樂歷關', offBest: '關樂歷',   // 配件三選一＝relicPick
+      // 標題頁第二行（整行可點＝開樂歷頁；高 ≤600px 用 lineShort）
+      line: '樂歷 Lv {n}・下一個：Lv{m} {name} ›', lineAll: '樂歷 Lv {n} ›', lineShort: '樂歷 Lv {n} ›', shelfBtn: '樂歷',
+      bestTier: '最遠 {n}（第 {k} 階 {m}）',                        // 試煉階級開了以後第一行的短版（棒三）
+      // 結算頁一行＋明細抽屜（SPEC-D §2.8-4）
+      endLine: '樂歷 +{n} ›', tierPre: '第 {k} 階・',
+      partPos: '位數 {n}', partStreak: '連贏 {n}', partRecord: '破紀錄 {n}', partRoute: '路線 {n}', partCut: '（已到上限）',
+      partTier: '×{m} 第 {k} 階', partLow: '還沒走到第 {n} 位：樂歷 ×{m}', partProf: '{title} 蓋了 {n} 個章', partOff: '這一趟關樂歷（樂歷照拿）',
+      routeCap: '路線樂歷已到上限',
+      // 主鈕之後的過場卡（一次一張、最多 3 張，其餘合成一句）
+      lvUp: '樂歷 Lv {n}！天賦點 +1', lvMore: '再升 {n} 級', drawGot: '抽到一張，收進唱片櫃', ladderOpen: '開了：{name}', goTalent: '去點天賦',
+      profUp: '{title} 熟練 Lv{n}',
+      // 開機入帳（careerDeposit）的吐司
+      depositFirst: '老闆：你之前的樂歷我都記著呢。樂歷 +{n}，升到 Lv {to}。', depositMore: '老闆：上次的樂歷補記給你。樂歷 +{n}。',
+      // 演唱會買票面板（C 波站牌「每張樂歷 +20」那行；n＝E.gigRoom，照現在的基本樂歷算，是下限）
+      gigRoom: '每張樂歷 +{per}・這一趟還能算 {n} 張（越往後走越多）', gigFull: '這一趟的演唱會樂歷已到上限，買票只算聽歌',
+      // 來客條說情（C.trial.ui.retryLeft 那格；有備用說情時後面接 pleaSpare）
+      pleaLeft: '說情剩 {n}', pleaSpare: '・備用 {n}',
+      // 熟練度（派系卡、樂歷頁）
+      prof: '熟練 Lv{n}・章 {s}／{per}',
+      srcLexp: '樂歷抽到的',                                        // 唱片櫃來源（src 'lexp'）
+      // 第 D 波棒一介面補的字（ui.js）：樂歷頁的鈕與小標、結算明細、過場卡、備用說情那顆
+      buy: '加一級', sell: '退一級', noPoints: '天賦點不夠', profTitle: '熟練度', unlockTitle: '流派與攤位',
+      lastLine: '上一趟 樂歷 +{n}', nextRun: '改了下一趟開局才算',
+      gainTitle: '這一趟的樂歷 +{n}', toPage: '看樂歷頁 ›', cardNext: '繼續', cardTap: '點一下看下一張',
+      pleaMenu: '▶ 再一場（用掉備用說情）'                          // 備用說情那次的第一顆（C.trial.ui.retryMenu[0] 寫「這一輪只有一次」，這次不是）
+    }
+  };
+  C.careerTag = '新';
 
   // ===================================================================
   // 頂點卡純輔助卡試做（店主 11-15「三流派先各挑十～二十張賦予特殊能力試試看；純輔助卡，不是七星卡」；只在網址 ?apex=1 生效）。

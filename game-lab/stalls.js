@@ -245,7 +245,7 @@
     if (S.npc) { stg('hide', 'f', true); stg('hide', 'r1', false); stg('door', 'close'); S.npc = false; }
     if (S.ownerOut) { stgP('walk', 'o', ['counter'], 90).then(function () { stg('pose', 'o', 'busy'); }); S.ownerOut = false; }
   }
-  // 錄音室（C 波）：不出面板，浮一行「錄了一段 demo。樂歷經驗 +15（之後開放）」0.8 秒後自己送 ok（SPEC-C §4.3-4、CRITIQUE 6.3）
+  // 錄音室（C 波）：不出面板，浮一行「錄了一段 demo。樂歷 +15」（第 D 波：入帳了，不寫之後開放）0.8 秒後自己送 ok（SPEC-C §4.3-4、CRITIQUE 6.3）
   function studio(cur) {
     S.phase = 'studio';
     var n = ST().demoLexp || 15;
@@ -272,6 +272,14 @@
   // 市集的福袋開了還沒挑：要挑一張才能走（不然 $2,500 白花）
   function bagOpen(cur) { var r = run(); return !!(cur && cur.kind === 'market' && cur.bag && r && cur.bag.some(function (id) { return card(id) && r.bag.indexOf(id) < 0; })); }
   function lexpLine(n) { return '<p class="note st-lx">' + esc(U('lexpLater', { n: n })) + '</p>'; }
+  // 演唱會（第 D 波 SPEC-D §2.1、§2.8；CONTRACT §3.1-9）：買票當下就寫「這一趟還能算幾張」（照現在的基本樂歷算＝下限，越往後走越多）；0＝已到上限、買票只算聽歌
+  function gigRoomLine() {
+    var U2 = (C().career && C().career.ui) || {}, r = run();
+    if (!r || !E().gigRoom || !U2.gigRoom) return null;
+    var n = 0; try { n = E().gigRoom(r, C()); } catch (_) { return null; }
+    var per = ((ST().gig || {}).lexp) || 20;
+    return '<p class="note st-lx' + (n > 0 ? '' : ' full') + '">' + esc(n > 0 ? fill(U2.gigRoom, { per: per, n: n }) : U2.gigFull) + '</p>';
+  }
   var GAIN_ATTR = { 'data-take': 1, 'data-buy': 1, 'data-bagtake': 1, 'data-dpick': 1 };
   function ownedLabel() { return (C().shopUi && C().shopUi.owned) || '包包裡有了'; }
   function cardBtn(id, attr, label, o) {
@@ -374,12 +382,12 @@
     return '<p class="note">' + esc(fill(((C().trial || {}).ui || {}).hp || '聲望 {n}/{max}', { n: r.hp, max: r.maxHp })) + '</p>' +
       footHTML([btn('data-a="ok"', n > 0 ? U('snackBtn', { n: n }) : U('snackFull'), { pri: true })]);
   }
-  // 演唱會：「買 N 張」步進器、總價；每張樂歷 +20（之後開放）；價錢梯整趟累計；多一顆「買到剩 $4,000」（0 張不畫）
+  // 演唱會：「買 N 張」步進器、總價；第 D 波：「每張樂歷 +20・這一趟還能算 n 張」（gigRoomLine）；價錢梯整趟累計；多一顆「買到剩 $4,000」（0 張不畫）
   function gigBody(market) {
     var r = run(), G = ST().gig || {}, n = Math.max(1, S.gigN || 1), pr = E().gigPrice(r, C(), n), keep = E().gigKeepN(r, C());
     var h = '<div class="st-gig"><button type="button" class="lb-btn st-step" data-a="gigMinus" aria-label="−"' + (n <= 1 ? ' disabled' : '') + '>−</button>' +
       '<button type="button" class="lb-btn pri st-gigbuy" data-a="gigBuy"' + (r.money < pr ? ' disabled' : '') + '>' + esc(U('gigBuy', { k: n, n: mt(pr) })) + '</button>' +
-      '<button type="button" class="lb-btn st-step" data-a="gigPlus" aria-label="+">+</button></div>' + lexpLine((G.lexp || 20) * n);
+      '<button type="button" class="lb-btn st-step" data-a="gigPlus" aria-label="+">+</button></div>' + (gigRoomLine() || lexpLine((G.lexp || 20) * n));
     if (keep > 0) h += '<div class="st-keep">' + btn('data-a="gigKeep"', U('gigKeepN', { n: mt(G.keep || 4000), k: keep })) + '</div>';
     return h + (market ? '' : footHTML([btn('data-a="gigNone"', U('gigNone'))]));
   }
