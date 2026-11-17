@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s6：sd-011、sd-012 上線（60 張，無留置）
+
+- **範圍**：sd-011（高中正義 10、高柳昌行、鷺巣詩郎 EVA 3、黃耀明《信望愛》、黑名單工作室《搖籃曲》、韓國 13 張）、sd-012（韓國 17、929、Beyond、怪顚、COHOL、vaporwave 網路音樂 5、Gauze、Lip Cream、Lizard 等）。
+- **流程**：研究 6 Sonnet（照新版「判 thin 之前必查清單」，韓國卡走 weiv、週刊京鄉、韓文維基、예스24）→ 主線補查 thin 卡（《Ocean Breeze》補出是 POWER PLAY 巡演現場盤、조용필 7집 由 weiv 評論補聲音、김현식 2집 補 사랑과 평화 演奏、《搖籃曲》補博客來與胡德夫）→ 寫作 4 Opus → 主線逐張審稿（改 2＋13 處）。WebSearch 研究層 101＋主線約 15 次。
+- **結果**：**sd-011 上線 30、sd-012 上線 30，留置 0**。
+- **寫入**：KV desc2＋desc4 共 120 鍵，寫前存 `kv-before-sd-01{1,2}.json`；回讀 120/120 一致；`front-check` 前台 60/60 新稿；onboarding manifest 同步 60 處。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-01{1,2}.json,kv-before-sd-01{1,2}.json}`、`desc-tools/batches/{cards,research,output}/sd-01{1,2}*`、onboarding-manifest-*.json。
+- **驗證**：sd.mjs qa 兩批 0 實質問題（Lizard《彼岸の王国》的「国」為原文標題）；fix-spacing 0。
+
 ### 2026-11-17｜dip-vinyl-shop｜林強《驚蟄》簡介補修＋嚴重稿重寫線研究補強
 
 - **店主**：「驚蟄這張專輯故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」sd-006 研究層對這張只搜 3 次就把聲音標 thin。協調端兩次搜尋找到公視與人間福報的 2005 坎城報導（唯一受邀亞洲音樂人、故宮數位影像、媽祖繞境鞭炮與電視雜訊入樂、同名曲為坎城而寫），重寫 237 字上線。
