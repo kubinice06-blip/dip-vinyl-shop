@@ -43,14 +43,19 @@
     "text": "2024 年有 Tiina Jokinen 的團史書《Tähekogu Vitamiin》，是這支樂團近年唯一找到的專書。",
     "src": "https://et.wikipedia.org/wiki/Vitamiin_(ansambel)",
     "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs：曲子是 1981 年塔林電台錄音，1983 年由蘇聯國營 Melodiya 出版；封面印俄文、圓標印愛沙尼亞文，團長是 Peeter Vähi，風格標 Pop Rock；四首歌皆愛沙尼亞文歌名，包括〈Saatus〉（命運）與〈\"Vitamiini\" Rock〉。",
+    "src": "https://api.discogs.com/releases/3640089",
+    "block": "story"
    }
   ],
   "coverage": {
    "what": "ok",
-   "story": "thin",
+   "story": "ok",
    "sound": "none"
   },
-  "notes": "必查清單：(1) 母語：et.wikipedia 團條目、ra.ee 錄音檔案館、WebSearch 愛沙尼亞文一次（Tähekogu Vitamiin／Peeter Vähi／Anne Veski），只查到團史與人事，無專輯樂評；(2) 商品頁：Discogs API（release 3640089、master 搜尋）只有曲名與 Leader，notes 空白；ERR 搜尋頁與 Discogs 網頁 403/未收；(3) 藝人維基（et/en）無 1983 專段；(4) 英文樂評：AllMusic、Pitchfork 無此盤，RYM 不可抓。聲音層只能寫 pop rock，無具體樂器／手法描述，標 none，寫作層薄寫（團史＋巡演強度＋蘇聯 Melodiya 發行）。舊簡介錯處／可疑：舊稿全是曲長盤號，並稱〈Julius Caesar〉第九軌與 Anne Veski ja Muusik-Seif 同錄音——本次未能查證，且 Discogs 曲目表看不到此曲名（可能是不同版本），不要沿用；ra.ee 1981 LP 編號 C60-20631-008 不是 1983 這張。1983 年盤實為 7 吋版（Discogs 3640089 是 7\" repress）與卡帶並存，格式需寫作層迴避不寫。"
+  "notes": "必查清單：(1) 母語：et.wikipedia 團條目、ra.ee 錄音檔案館、WebSearch 愛沙尼亞文一次（Tähekogu Vitamiin／Peeter Vähi／Anne Veski），只查到團史與人事，無專輯樂評；(2) 商品頁：Discogs API（release 3640089、master 搜尋）只有曲名與 Leader，notes 空白；ERR 搜尋頁與 Discogs 網頁 403/未收；(3) 藝人維基（et/en）無 1983 專段；(4) 英文樂評：AllMusic、Pitchfork 無此盤，RYM 不可抓。聲音層只能寫 pop rock，無具體樂器／手法描述，標 none，寫作層薄寫（團史＋巡演強度＋蘇聯 Melodiya 發行）。舊簡介錯處／可疑：舊稿全是曲長盤號，並稱〈Julius Caesar〉第九軌與 Anne Veski ja Muusik-Seif 同錄音——本次未能查證，且 Discogs 曲目表看不到此曲名（可能是不同版本），不要沿用；ra.ee 1981 LP 編號 C60-20631-008 不是 1983 這張。1983 年盤實為 7 吋版（Discogs 3640089 是 7\" repress）與卡帶並存，格式需寫作層迴避不寫。｜主線：四首、白標屬規格雜項不寫；俄文封面／愛沙尼亞文圓標可作為蘇聯時期出版處境一句。"
  },
  {
   "key": "void stasis|specimen 7",
@@ -141,7 +146,7 @@
     "block": "sound"
    },
    {
-    "text": "Sputnikmusic 的樂評說這張由 Motörhead 的龐克／金屬搖滾衝勁與 Venom 的粗糙狂暴一起掌舵；Metal Music Archives 的評者說是粗糙骯髒、無政府味道的 heavy／speed metal，主唱的吼叫帶龐克氣。",
+    "text": "Sputnikmusic 的樂評說這張由 Motörhead 的龐克／金屬搖滾衝勁與 Venom 的粗糙狂暴一起掛帥。",
     "src": "https://www.sputnikmusic.com/album/8785/Voivod-War-and-Pain",
     "block": "sound"
    },
@@ -151,7 +156,7 @@
     "block": "after"
    },
    {
-    "text": "評價分歧：Rock Hard 給 7.5／10，Sputnikmusic 3.5／5，AllMusic 3／5（Wikipedia 引用），Metal Crypt 讀者式評論給 4.5／5；製作粗糙這點有人批評、有人讚為充滿電流。",
+    "text": "評價分歧：Rock Hard 給 7.5／10，Sputnikmusic 3.5／5，AllMusic 3／5（Wikipedia 引用），Metal Crypt 的評論給 4.5／5；製作粗糙這點有人批評、有人讚為充滿電流。",
     "src": "https://en.wikipedia.org/wiki/War_and_Pain",
     "block": "what"
    },
@@ -167,5 +172,406 @@
    "sound": "ok"
   },
   "notes": "舊簡介：錄音地點 Le Terroir Studio、六月、詞曲分工、〈Voivod〉MV 導演 Dédé Fortin 皆與 Wikipedia 一致；「面名」「曲長」等都是雜項不要用。Wikipedia 英文版寫發行 1984 年 9 月，法文版寫 8 月 10 日，兩者不一致，簡介寫 1984 年即可，不寫月份。舊稿說 Banzai Records 的黑膠，本次未查證，Metal Blade 才是首發廠牌，Banzai 是加拿大發行商（未證實），不要用。必查清單：英文維基、法文維基、Metal Crypt、Sputnikmusic／Metal Music Archives（WebSearch 摘要）、Discogs（master 21293 notes 只有 Enigma 重發編號）；母語（法語）維基已查。AllMusic 403 無法直接讀。"
+ },
+ {
+  "key": "volcano the bear|yak folks y'are",
+  "artist": "Volcano the Bear",
+  "album": "Yak Folks Y'Are",
+  "facts": [
+   {
+    "text": "Volcano the Bear 是 1995 年成立於英國 Leicester 的即興／實驗樂團；Nick Mott 與 Aaron Moore 原本在較傳統的搖滾團，厭倦重複歌曲後，開始用任何能發聲的東西做鬆散的即興，先是兩人，其他人很快加入。",
+    "src": "https://terrascope.co.uk/Features/Volcano_The_Bear.htm",
+    "block": "what"
+   },
+   {
+    "text": "團員 Aaron Moore（打擊、人聲）、Nick Mott（吉他、山羊角）、Daniel Padden（鋼琴、人聲）與 Clarence Manuelo（電子與磁帶），演出時常互換樂器；Nick 說自己沒受過任何樂器的正規訓練，這些限制反而逼每個人找出個人聲音。",
+    "src": "https://terrascope.co.uk/Features/Volcano_The_Bear.htm",
+    "block": "what"
+   },
+   {
+    "text": "《Yak Folks Y'Are》是樂團 1999 年的黑膠首張 LP，Pickled Egg Records 發行（編號 Pickled Egg 7），共六首新歌；Discogs 註明壓 1000 張、附一張 210 × 297 mm 的插頁。",
+    "src": "https://api.discogs.com/releases/1357566",
+    "block": "what"
+   },
+   {
+    "text": "Brainwashed 的評論說這張帶著一種古怪的情緒，讓人胃裡下沉；開場曲讓評者想到前一張《The Inhazer Decline》，〈Egg Knowledge〉則像身處鬼魂之中。",
+    "src": "https://brainwashed.com/index.php/reviews-easyblog/volcano-the-bear-qyak-folks-yareq",
+    "block": "sound"
+   },
+   {
+    "text": "Terrascope 專訪中，Nick 與 Daniel 說《Yak Folks Y'Are》與《The Inhazer Decline》兩張早期專輯有不錯的素材，但整張聽起來「碎碎的」、不夠連貫；他們認為樂團的身分要到《Idea of Wood》才真正成形。",
+    "src": "https://terrascope.co.uk/Features/Volcano_The_Bear.htm",
+    "block": "story"
+   },
+   {
+    "text": "錄音方式：常不先定計畫，錄長段即興，再從中挑片段加疊錄，很少重錄第二次，有時素材擱一兩年才完成，舊錄音也常被拿到新脈絡再用；Clarence 說他們的作品既不是純即興也不是純作曲。",
+    "src": "https://terrascope.co.uk/Features/Volcano_The_Bear.htm",
+    "block": "story"
+   },
+   {
+    "text": "樂團自述的影響包括 Krautrock、自由爵士、Captain Beefheart、Zappa、The Residents 與 This Heat；Nick 說他們不是噪音樂團，但有噪音成分，情緒在荒誕、幽默、黑暗與美之間游移。",
+    "src": "https://terrascope.co.uk/Features/Volcano_The_Bear.htm",
+    "block": "sound"
+   },
+   {
+    "text": "後來 Nurse With Wound 的 Steven Stapleton 為了發行 Volcano the Bear 的作品而重啟 United Dairies 廠牌，說自己覺得他們值得被更多人聽見。",
+    "src": "https://bigtakeover.com/interviews/an-interview-with-steven-stapleton-nurse-with-wound-part-two",
+    "block": "after"
+   },
+   {
+    "text": "評論常拿他們與 The Residents、Nurse With Wound、Faust 並比；Discogs 風格標為 Avantgarde、Experimental，工程為 Alan Jenkins 與 Kev Reverb。",
+    "src": "https://en.wikipedia.org/wiki/Volcano_the_Bear",
+    "block": "what"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "必查清單：(1) 母語（英文）搜尋兩次：Brainwashed 評論（網頁 404，只靠搜尋摘要拿到三句內容）、Terrascope 專訪（全文已讀）；(2) 通路：Discogs API release 1357566 notes（壓 1000 張、插頁）；Bandcamp 未有此盤；(3) 維基：en.wikipedia 僅列入 discography、無專段；(4) 英文樂評：AllMusic 403、Progarchives 403，Brainwashed 摘要為主。聲音層只有一篇評論摘要與樂團自述的影響，沒有逐首聲音構成（樂器、素材）描述，寫作層薄寫並避免亂編樂器。舊簡介錯處／可疑：舊稿說工程 Alan Jenkins 負責 B1、B2 與 Kev Reverb 負責其餘、首末軌四位未掛名的搖鈴人聲、曲長 0:33／8:37——全是 credit 與曲長雜項；Discogs 註明曲長「未印在盤上」，舊稿的曲長來源可疑，不要用。舊稿稱 Pickled Egg 是 Nigel Turner 經營，未能查證。盤名正確拼法 Yak Folks Y'are 來自 Discogs；Wikipedia 寫作 Yak Folk's Y'are，兩種都有，簡介用卡單原樣。"
+ },
+ {
+  "key": "walter bishop, jr.'s 4th cycle|keeper of my soul",
+  "artist": "Walter Bishop, Jr.'s 4th Cycle",
+  "album": "Keeper of My Soul",
+  "facts": [
+   {
+    "text": "鋼琴手 Walter Bishop Jr.（1927–1998）出身紐約 bebop 圈，1940 年代末與 Charlie Parker、Art Blakey、Miles Davis 等合作，曾因毒癮入獄、失去紐約表演執照；七〇年代初移居洛杉磯。",
+    "src": "https://en.wikipedia.org/wiki/Walter_Bishop_Jr.",
+    "block": "what"
+   },
+   {
+    "text": "在洛杉磯他向 Lyle \"Spud\" Murphy 學「等音程系統」，發展出自己的「四度理論」（Theory of Fourths），成為他即興與作曲的基礎，並寫書教授；團名 4th Cycle 即取自四度循環。",
+    "src": "https://www.syncopatedjustice.com/p/unsung-jazz-warriors-part-3",
+    "block": "story"
+   },
+   {
+    "text": "《Keeper of My Soul》1973 年於洛杉磯 Hollywood Spectrum 錄音，Black Jazz 發行（BJQD/14），製作人是廠牌創辦人 Gene Russell，是繼《Coral Keys》（1971，廠牌第二張）之後 Bishop 在該廠的第二張。",
+    "src": "https://en.wikipedia.org/wiki/Keeper_of_My_Soul",
+    "block": "what"
+   },
+   {
+    "text": "Black Jazz 1969 年由 Gene Russell 與 Dick Schory 在奧克蘭創立，旗下藝人全是非裔美國人，走比傳統爵士更政治、更靈性的路線，專輯設計是黑底白字；1971 至 1975 年共出二十張。",
+    "src": "https://en.wikipedia.org/wiki/Black_Jazz_Records",
+    "block": "what"
+   },
+   {
+    "text": "Bret Primack 的專文說這張換了新團、新聲音、新目的；音樂電氣化、有野心，跟他之前的作品都不同，聽起來自由、狂野而鬆；Cycle of 4ths 的手法在這張反而不是主角。",
+    "src": "https://www.syncopatedjustice.com/p/unsung-jazz-warriors-part-3",
+    "block": "sound"
+   },
+   {
+    "text": "專輯反映他的佛教修行（透過誦經入門），〈Those Who Chant〉獻給他的佛教朋友；零售商介紹則提到他受 Paramahansa Yogananda 影響，兩種說法並存。",
+    "src": "https://www.syncopatedjustice.com/p/unsung-jazz-warriors-part-3",
+    "block": "story"
+   },
+   {
+    "text": "編制：Bishop 彈鋼琴、電鋼琴與 Hammond 風琴，Ronnie Laws（長笛、薩克斯風）、Woody Murray（顫音琴）、Gerald Brown（貝斯、Fender 電貝斯）、Bahir Hassan（鼓）、Shakur M. Abdulla（康加、邦哥）；Discogs 註明是立體聲／四聲道 LP。",
+    "src": "https://api.discogs.com/masters/590903",
+    "block": "sound"
+   },
+   {
+    "text": "曲目混合自由段落與拉丁節奏：Kenny Dorham〈Blue Bossa〉帶拉丁味，〈Summertime〉被編成一個古怪、帶放克味的版本，其餘為 Bishop 自寫。",
+    "src": "https://www.syncopatedjustice.com/p/unsung-jazz-warriors-part-3",
+    "block": "sound"
+   },
+   {
+    "text": "發行後商業上悄悄消失，Bishop 與廠牌原本都期待更大的成績；AllMusic 後來給 4.5／5（Wikipedia 引用），Jazzwise 評四星並列 Editor's Choice。",
+    "src": "https://en.wikipedia.org/wiki/Keeper_of_My_Soul",
+    "block": "after"
+   },
+   {
+    "text": "Black Jazz 目錄後來由 Snow Dog 授權再發行（2012 年起，附新 liner notes），本作 LP 由 Real Gone Music 於 2021 年 10 月 1 日重發，Pat Thomas 寫 liner notes；日本盤在 P-Vine（2005）等再版。",
+    "src": "https://www.plaidroomrecords.com/products/walter-bishop-jr-s-4th-cycle-keeper-of-my-soul-black-vinyl",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "ok"
+  },
+  "notes": "必查清單全做：Wikipedia（Bishop、專輯、廠牌）、Discogs master 590903、Syncopated Justice（Bret Primack）、Plaid Room 商品頁、Jazzwise／AllMusic（403 無法讀全文，靠 WebSearch 摘要）。可疑／衝突：Plaid Room 商品頁寫「Hubert Laws」，Discogs 與 Wikipedia 都是 Ronnie Laws，採 Ronnie Laws；信仰一事 Primack 寫佛教誦經，Plaid Room 寫 Yogananda，兩種說法衝突，寫作層若提只寫「他的靈性修行」或避開。舊簡介「日本授權盤出過五版」等版號雜項勿用；舊稿編制描述（鍵盤、Fender 貝斯、鼓、康加與邦哥、簧管長笛薩克斯、顫音琴）大致與 Discogs 一致，但「簧管」不確定、Wikipedia 寫 flute、sax。團名 vs 個人名：Discogs master 掛 Walter Bishop, Jr.'s 4th Cycle，Wikipedia 引言掛 Bishop 個人，卡單用團名無誤。"
+ },
+ {
+  "key": "warzone|open your eyes",
+  "artist": "Warzone",
+  "album": "Open Your Eyes",
+  "facts": [
+   {
+    "text": "Warzone 1983 年成立於曼哈頓 Lower East Side（前身 Rat Poison），被視為 NYHC 與 youth crew 的奠基樂團之一；Raymond \"Raybeez\" Barbieri 是唯一貫穿十四年的成員，先任鼓手、後來接下主唱。",
+    "src": "https://en.wikipedia.org/wiki/Warzone_(band)",
+    "block": "what"
+   },
+   {
+    "text": "《Open Your Eyes》是第二張全長專輯，1988 年由 Caroline Records 發行，比首張《Don't Forget the Struggle, Don't Forget the Streets》（1987）晚一年；由 Bad Brains 吉他手 Dr. Know 與 Jerry Williams 共同製作。",
+    "src": "https://en.wikipedia.org/wiki/Open_Your_Eyes_(Warzone_album)",
+    "block": "what"
+   },
+   {
+    "text": "同期陣容：Raybeez 主唱、Paul 與 Crazy \"Jay\" Skin 吉他、John \"Omen\" 貝斯、E.K. 鼓；專輯重錄兩首舊作，〈Always – A Friend for Life〉（原收《Lower East Side Crew》EP，1987）與〈We're the Crew〉。",
+    "src": "https://en.wikipedia.org/wiki/Open_Your_Eyes_(Warzone_album)",
+    "block": "story"
+   },
+   {
+    "text": "歌詞試圖擺脫自樂團成立起就黏著的種族主義光頭黨標籤，談壓迫、團結與歸屬於一個更大的延伸家庭；Raybeez 的詞一貫反對偏見與種族主義，也鼓勵女孩加入男性主導的硬核圈。",
+    "src": "https://en.wikipedia.org/wiki/Open_Your_Eyes_(Warzone_album)",
+    "block": "story"
+   },
+   {
+    "text": "聲音：直接的紐約硬核，留足讓人 mosh 的空間，偶有吉他裝飾透出實驗的苗頭；Mass Movement 的評者說樂手明顯變得更有技巧，但仍保留首張短而好記的 anthem，路線「收斂」而更集中，Raybeez 的歌詞與情感飽滿的嗓音是核心，並說樂團之後沒有再這麼緊密。",
+    "src": "https://massmovement.co.uk/warzone-open-your-eyes-reissue-revelation/",
+    "block": "sound"
+   },
+   {
+    "text": "樂團整體吸收 Oi!、傳統龐克與重金屬，後來的 1989 年同名 LP 才更偏金屬；零售商說這張是樂團最後一張純硬核唱片。",
+    "src": "https://en.wikipedia.org/wiki/Warzone_(band)",
+    "block": "sound"
+   },
+   {
+    "text": "評價：Kerrang!（1988，Mike Gitter）與 AllMusic 各給四顆星（Wikipedia 的星等欄有互相矛盾的版本，此處以內文為準）；Sputnikmusic 使用者評 3.8／5。",
+    "src": "https://en.wikipedia.org/wiki/Open_Your_Eyes_(Warzone_album)",
+    "block": "what"
+   },
+   {
+    "text": "1994 年 Another Planet 把本作與首張合成一片 CD 重發；2018 年 11 月 9 日 Revelation Records 推出彩膠重發，附 16 頁 12 吋見方小冊、Tony Rettman 的 liner notes 與一篇 Raybeez 訪談。",
+    "src": "https://riffrelevant.com/2018/10/07/oldschool-sunday-warzone-open-your-eyes-reissue",
+    "block": "after"
+   },
+   {
+    "text": "Raybeez 1997 年 9 月 11 日死於肺炎併發肝損傷，得年三十五歲，CBGB 外曾掛追悼看板，Victory 後續一年多的出品都獻給他。",
+    "src": "https://en.wikipedia.org/wiki/Warzone_(band)",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "ok"
+  },
+  "notes": "必查清單全做：兩份英文維基、Riff Relevant、Mass Movement 評論、Discogs（見 Live at CBGB 同批）。可疑：Wikipedia 內文寫 AllMusic 與 Kerrang! 各四顆星，但搜尋摘要說星等表為一顆星，兩者矛盾；寫作層不要寫星等。舊簡介說「後來的版本才把首軌名字改回與盤名一致」「CAROL 1361」「十軌 26 分 38 秒」都是版本與曲長雜項，勿用；Wikipedia 說首軌曲名本次未核。簡介題材不要寫「最後一張純硬核」除非當作零售商說法（無具名評論者）。"
+ },
+ {
+  "key": "warzone|live at cbgb",
+  "artist": "Warzone",
+  "album": "Live At CBGB",
+  "facts": [
+   {
+    "text": "1992 年 12 月 20 日在紐約 CBGB 的現場錄音，1993 年由 Victory Records 發行（VR11），是 Warzone 較晚期的一張現場唱片；Discogs 註明附摺頁歌詞，混音在 Little Italy 的 Don Fury Studios、母帶在 Metropolis。",
+    "src": "https://api.discogs.com/releases/643667",
+    "block": "what"
+   },
+   {
+    "text": "製作掛 Raybeez，工程 Rick Roy 與 Don Fury，Warzone Frontier Productions 與 WZF Crew 為協助製作；Don Fury 是當時紐約硬核唱片的常客工程師。",
+    "src": "https://api.discogs.com/releases/643667",
+    "block": "story"
+   },
+   {
+    "text": "Warzone 1983 年成立於曼哈頓 Lower East Side，被視為 NYHC 與 youth crew 的奠基樂團；Raybeez 14 年間是唯一貫穿成員，音樂混合 Oi!、傳統龐克與重金屬，並與 The Business 巡演、翻唱其歌曲。",
+    "src": "https://en.wikipedia.org/wiki/Raybeez",
+    "block": "what"
+   },
+   {
+    "text": "CBGB 是樂團的主場——同一晚的錄音後來也有四首被收進 1994 年 LP《Old School to New School》，標示為 CBGB 1992 年 12 月 20 日現場；Warzone 的樂迷圈跨光頭、straight edge、金屬迷與龐克。",
+    "src": "https://metalmusicarchives.com/album/warzone-ny/live-at-cbgb(ep)",
+    "block": "story"
+   },
+   {
+    "text": "Warzone 的現場以反種族主義、團結與社群為訴求，Raybeez 的歌詞歌頌街頭歸屬感；Vice 稱樂團領導了紐約 1986–87 年硬核的「第二波、更大的一波」。",
+    "src": "https://en.wikipedia.org/wiki/Warzone_(band)",
+    "block": "what"
+   },
+   {
+    "text": "Raybeez 1997 年 9 月 11 日去世，CBGB 外掛過追悼看板，Victory 之後的出品獻給他超過一年，並有義演與兩張合輯為協助青少年的非營利團體募款。",
+    "src": "https://en.wikipedia.org/wiki/Warzone_(band)",
+    "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs：1992 年 12 月 20 日在 CBGB 現場錄音，在 Little Italy 的 Don Fury Studios 混音，主唱 Raybeez 擔任製作，Don Fury 協助；1993 年由 Victory Records 發行，附摺頁歌詞，風格標 Hardcore，曲子全由樂團自寫。",
+    "src": "https://api.discogs.com/releases/1552991",
+    "block": "story"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "none"
+  },
+  "notes": "必查清單：(1) 英文維基 Warzone／Raybeez 兩頁、無該 EP 專段；(2) 通路：Discogs API release 643667（日期、混音錄音室）、Metal Music Archives 列表頁；(3) 母語（英文）搜尋一次：查無樂評；Sputnikmusic、AllMusic 只列目錄；(4) 英文樂評：Metal Music Archives 無任何評論。這張只查得到發行資料與錄音日期，聲音層標 none，寫作層只能薄寫（團史＋CBGB 這場錄音的背景＋聲音只能說硬核現場，不可編造曲目細節）。卡單說五軌，Wikipedia／Metal Music Archives 說是 7 吋 EP；舊稿「隔年一張十一軌的碟把其中四首放進末段」＝1994《Old School to New School》，搜尋摘要有支持，但四首的說法未於維基證實，不要寫數量。Discogs notes 的 1992-12-20 是 Discogs 登錄，樂迷圈可能有別的日期；舊稿廠牌地點 Chicago 與 Victory 雜項不用。｜主線：sound 仍無樂評，只寫紐約硬核現場。"
+ },
+ {
+  "key": "wave to earth|bad pieces",
+  "artist": "wave to earth",
+  "album": "bad pieces",
+  "facts": [
+   {
+    "text": "wave to earth 是首爾三人樂團，Daniel Kim（主唱、吉他）、John Cha（貝斯）、Dong Q（鼓）；Daniel 與 Dong Q 國中時就一起組團，John 為首支單曲〈wave〉（2019 年 8 月）加入，2021 年簽入 Colde 主理的 WAVY。",
+    "src": "https://en.wikipedia.org/wiki/Wave_to_Earth",
+    "block": "what"
+   },
+   {
+    "text": "《bad pieces》2026 年 8 月 7 日經 WAVY 發行，是樂團第二張正規專輯，前作為 2023 年《0.1 flaws and all.》；之後展開 Pieces Tour，9 月 4 日自溫哥華開跑。",
+    "src": "https://sacksco.com/pr/wave_to_earth_061526.html",
+    "block": "what"
+   },
+   {
+    "text": "專輯名取自 1969 年 John Lennon 與 Yoko Ono 躺床抗議（bed-in）背後那面「Bed Peace」標語；官方介紹說這是樂團的新篇章，核心是嘗試新樂器與新聲音。",
+    "src": "https://sacksco.com/pr/wave_to_earth_061526.html",
+    "block": "story"
+   },
+   {
+    "text": "Daniel 說這張是「我們二十幾歲的結束與三十歲的開始」，也說比以往更貼近 wave to earth 的本質；談製作過程他形容「非常忙亂」。",
+    "src": "https://www.melodicmag.com/reviews/album-ep-reviews/wave-to-earth-emerges-into-a-more-mature-era-with-bad-pieces-album-review/",
+    "block": "story"
+   },
+   {
+    "text": "主打〈heaven and hell〉被 The FADER 形容為一陣溫暖的木吉他與民謠味的 pedal steel，暗示樂團新的聲音方向。",
+    "src": "https://sacksco.com/pr/wave_to_earth_061526.html",
+    "block": "sound"
+   },
+   {
+    "text": "Dong Q 說樂團在〈you〉與〈sing it all again〉加了更多原音（acoustic）聲響，他認為是更成熟的原因；〈everything comes and goes〉更偏爵士融合，評者列出的參考包括 Michael Jackson、Ryan Beatty、Paul McCartney、George Benson、Richard Marx；John 的〈skylark〉有可跳舞的律動。",
+    "src": "https://www.melodicmag.com/reviews/album-ep-reviews/wave-to-earth-emerges-into-a-more-mature-era-with-bad-pieces-album-review/",
+    "block": "sound"
+   },
+   {
+    "text": "Melodic Magazine 稱這是融合爵士融合與軟搖滾的「交響」式十一首；The Luna Collective 說整體親密，暖與憂交織但不沉重，歌曲允許逗留、重複、不解決情緒，主題是愛、變老、留不住的記憶與必然的變化。",
+    "src": "https://www.thelunacollective.co/journal/review-wave-to-earth-bad-pieces",
+    "block": "sound"
+   },
+   {
+    "text": "單曲〈babo〉把「傻瓜」一詞還原成對說不出口的愛人的暱稱；現場先演出過（含首爾爵士音樂節），新加坡街頭演出一場吸引約 1500 名樂迷，歌迷先拍影片傳開。",
+    "src": "https://www.thelunacollective.co/journal/review-wave-to-earth-bad-pieces",
+    "block": "story"
+   },
+   {
+    "text": "樂團的聲音一向是柔和的 indie rock 帶爵士影響，Daniel 愛 Radiohead、Oasis、Jeff Buckley，Dong Q 與 Daniel 都視 Sunset Rollercoaster 為藍圖；日本新聞稿稱他們研究過往名盤、導入類比聲音與新樂器。",
+    "src": "https://en.wikipedia.org/wiki/Wave_to_Earth",
+    "block": "sound"
+   },
+   {
+    "text": "2024 年 Korean Music Awards 提名過樂團，2025 年 Seoul Music Awards 得 Band Award；《0.1 flaws and all.》在 Circle 專輯榜最高第 20 名。",
+    "src": "https://en.wikipedia.org/wiki/Wave_to_Earth",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "ok"
+  },
+  "notes": "必查清單：(1) 韓文搜尋一次（'정규 앨범 리뷰 인터뷰'）：結果全是英文與日文，沒找到韓文樂評或訪談；(2) 通路：First City Record Store 商品頁未讀，Sacks & Co 新聞稿、Billboard Japan／DIME 日本稿只在搜尋結果出現；(3) en.wikipedia 樂團條目已讀；(4) Melodic Magazine、Luna Collective 已讀。獎項一條（提名與得獎）屆次未查清，寫作層不寫。舊簡介：曲名全小寫、〈closing.〉的句點、曲長、單曲三個月前先放出——皆為雜項，勿用；舊稿「2019 年起活動、2021 年底簽入 WAVY」維基寫 2021 年簽入（未說年底）。「固定合作的薩克斯風手」＝Jeon Min（Wikipedia 列為 session）。Wikipedia 寫發行 8 月 6 日，官方稿與評論寫 8 月 7 日，寫作層用 2026 年即可。"
+ },
+ {
+  "key": "wayne davis|wayne davis",
+  "artist": "Wayne Davis",
+  "album": "Wayne Davis",
+  "facts": [
+   {
+    "text": "Wayne Davis 是在華盛頓特區受訓的歌手與鍵盤手，曾與 Roberta Flack 合作，她幫他拿到 Atlantic 的合約，首張《A View From Another Place》（1973）中 Flack 在一首歌彈電鋼琴；Atlantic 之後解約。",
+    "src": "https://strut-records.co.uk/products/wayne-davis-wayne-davis",
+    "block": "what"
+   },
+   {
+    "text": "1976 年自名專輯由 Jimmy Gray 的 Black Fire 廠牌（BF 19752）發行，被 Strut 稱為「強而有力的自名福音靈魂專輯」，長期是失落名盤。",
+    "src": "https://strut-records.co.uk/products/wayne-davis-wayne-davis",
+    "block": "what"
+   },
+   {
+    "text": "製作人為 Jimmy Watkins 與 Bias Studios（維吉尼亞州 Falls Church）經理 Bob Dawson，Dawson 也是工程師，後來親自從原始母帶為重發轉檔；Muzi Branch 畫封面。",
+    "src": "https://strut-records.co.uk/products/wayne-davis-wayne-davis",
+    "block": "story"
+   },
+   {
+    "text": "參與樂手包括詩人兼長笛手 Wanda Robinson，以及華盛頓 go-go 先驅 Experience Unlimited 的銅管組；Davis 日後也在 Experience Unlimited 的《Free Yourself》裡獻唱。",
+    "src": "https://globalgroove.co.uk/records/wayne-davis/wayne-davis/",
+    "block": "story"
+   },
+   {
+    "text": "聲音是福音與靈魂混入放克，Davis 主唱並彈鍵盤，加上長笛與銅管；曲目有〈Strive On and Be Strong〉〈Look at the People!〉〈The Garden〉〈Dawn of a New Day〉等，標題多為正向、靈性的勸慰語氣。",
+    "src": "https://globalgroove.co.uk/records/wayne-davis/wayne-davis/",
+    "block": "sound"
+   },
+   {
+    "text": "Discogs 風格標 Gospel、Soul，credits 顯示他一人兼任主唱、鋼琴、合成器、編曲，另有合唱、貝斯（Everett Brooks、James Funches）、鼓（Stephen A. Walker）與弦樂、長笛號角等。",
+    "src": "https://api.discogs.com/masters/2575982",
+    "block": "sound"
+   },
+   {
+    "text": "Strut 於 2022 年 5 月 13 日首度國際重發（STRUT244LP），母帶由 The Carvery 重製，新附樂手訪談的 liner notes 與 Muzi Branch 的插畫。",
+    "src": "https://strut-records.co.uk/products/wayne-davis-wayne-davis",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "身分確認：此盤是 Black Fire 1976 的福音／靈魂 LP，華盛頓地區的獨立／地方廠牌發行，長期為蒐藏圈的失落名盤，Strut 2022 年首度國際重發。必查清單：Strut 商品頁、Global Groove 商品頁、Perlich Post 部落格、Discogs master 2575982（notes 空白）、WebSearch 一次；Sounds of the Universe、Tower、Acoustic Sounds 部分 403。可疑：Perlich Post 稱 1976 專輯是「debut」，與 1973 年 Atlantic 那張矛盾，寫作層以 Strut 為準；Strut 日期有 2021／2022 與 5 月 13、20 日不同說法，寫 2022 年即可。聲音層只有 Strut 與店家簡述，沒有逐曲聲音描述，薄寫。舊稿「作者欄對不上」「Producer 八條 credit」等全是 credit 雜項，不要用；Discogs 登錄 Jimmy Gray 是 Executive Producer，Strut 說製作人是 Watkins 與 Dawson。"
+ },
+ {
+  "key": "wha-ha-ha|live-dub",
+  "artist": "Wha-ha-ha",
+  "album": "Live-Dub",
+  "facts": [
+   {
+    "text": "Wha-ha-ha 是薩克斯風手坂田明在 1980 年前後組的團，成員來自不同領域：吉他／合成器 Kamiya（Shigenori／Shigetoku）、鍵盤千野秀一、人聲小川美潮、鼓手村上ポンタ秀一，還有坂田明自己的薩克斯風與人聲；首張《死ぬときはべつ》（1981）在日本引起轟動。",
+    "src": "https://www.progarchives.com/album.asp?id=13364",
+    "block": "what"
+   },
+   {
+    "text": "坂田明 1972 至 1979 年底在山下洋輔トリオ，退出後不斷組團、解散；1981 年出演大森一樹導演的電影《風の歌を聴け》。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%9D%82%E7%94%B0%E6%98%8E",
+    "block": "what"
+   },
+   {
+    "text": "《Live-Dub》1981 年 4 月現場錄音，Discogs 登錄風格為 Free Jazz、Experimental、Dub，製作、作曲、編曲與混音皆掛 Wha-ha-ha 團名；封面由 Tztom Toda 設計。",
+    "src": "https://api.discogs.com/masters/1372903",
+    "block": "what"
+   },
+   {
+    "text": "這張是 12 吋盤，可 45 轉也可 33 又三分之一轉播放，以 Better Days 廠牌在日本發行，是以 dub 手法處理現場即興的作品；兩面各一段，題為〈Boiled Side〉與〈Scrambled Side〉。",
+    "src": "https://www.billboard-japan.com/goods/detail/575617",
+    "block": "sound"
+   },
+   {
+    "text": "Billboard Japan 說它原本是坂田明在 BETTER DAYS 發行的 45 轉 maxi single，2018 年 1 月 31 日由日本コロムビア與〈TRAUMA／SAKATA SEXTET〉〈テノク・サカナ〉合為一張 CD《AKIRA SAKATA / early 1980's》（COCB-54243）。",
+    "src": "https://www.billboard-japan.com/goods/detail/575617",
+    "block": "after"
+   },
+   {
+    "text": "Progarchives 的評者說這張比首作更偏即興、聲音也更暗，是需要適應的口味；樂團整體被稱為難以歸類、荒誕、超現實的前衛（RIO）風格，英國 ReR 的 Chris Cutler 在 1982 年把他們介紹給西方聽眾。",
+    "src": "https://progarchives.com/review.asp?id=251707",
+    "block": "sound"
+   },
+   {
+    "text": "樂團另一張 1981 年作《げたはいてこなくちゃ》（Getahaitekonakucha，Better Days，YF-7041-N）同年錄製於東京，被評為展現樂團性格的集大成；人聲小川美潮來自先前的樂團 Chakra。",
+    "src": "https://mion.music/en/records/artists/wha-ha-ha/albums/wha-ha-ha-getahaitekonakucha",
+    "block": "story"
+   },
+   {
+    "text": "【主線補查】Discogs：1981 年 4 月現場錄音，Better Days（日本コロムビア）發行；陣容坂田明（薩克斯風、人聲）、千野秀一（鍵盤）、村上秀一（鼓）、神谷重徳（吉他）、小川美潮（人聲），作曲、編曲、混音全掛 Wha-ha-ha，Discogs 風格標 Free Jazz、Experimental、Dub。",
+    "src": "https://api.discogs.com/releases/1575692",
+    "block": "what"
+   },
+   {
+    "text": "【主線補查】唱片標明 45 轉與 33⅓ 轉都可以播放，兩種轉速的長度都印出來——把現場錄音再做 dub 處理、連播放速度都交給聽者決定，是這張的設計。",
+    "src": "https://api.discogs.com/releases/1575692",
+    "block": "story"
+   },
+   {
+    "text": "【主線補查】2003 年 King Records 旗下 Absord 首度出 CD，加收一首，並列貝斯永田どんべい、打擊樂仙波清彦。",
+    "src": "https://api.discogs.com/releases/12080964",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "必查清單：(1) 日文搜尋兩次：只找到 Billboard Japan 商品頁與 Progarchives，Tower／HMV／disk union 403 或查無，ja.wikipedia Wha-ha-ha 條目 404，坂田明條目只列 Live-dub 名稱；(2) 通路：Billboard Japan COCB-54243 頁（已讀）；(3) 維基：ja.wikipedia 坂田明已讀；(4) 英文樂評：Progarchives 403，僅靠搜尋摘要；Discogs master 1372903 notes。可疑：Progarchives 與部分網站寫 1982，Discogs 與舊稿寫 1981（錄音 4 月）；舊稿「千野秀一原為ダウン・タウン・ブギウギ・バンド正式團員」本次未查證；卡單說竹田賢一、渋谷エッグマン、9 月交 Better Days 號碼 YZ-123-AX 皆未能證實（Billboard 頁亦無），勿用。Discogs 登錄的是兩套曲長（45 轉與 33 轉），但曲長屬雜項，只有「兩種轉速都能放」可當一句背景。村上ポンタ秀一（Discogs: Shuichi Murakami）是鼓手；Progarchives 摘要列 Takafumi Fuse 為電腦聲，但 Discogs credits 沒有，勿寫。｜主線：雙轉速是概念核心可寫（不寫長度數字）；不寫竹田賢一、渋谷エッグマン、盤號。「把播放速度交給聽者」為主線詮釋，寫作寫成「可用兩種轉速播放」的事實即可。"
  }
 ]
