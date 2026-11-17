@@ -153,8 +153,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
 | sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
 | sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
-| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | | |
-| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | | |
+| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | s44 | ✅ 上線 30（前台 30；無留置；主線補查 Organum《Sphyx》、Rothenberg、Nic Jones、No Brain；Optic Nerve 2、Ohbliv、Oblique Occasions 等薄寫；CURATED 0） |
+| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | s44 | ✅ 上線 30（前台 30；無留置；主線補查 Perfect、Pontiac Streator、Polaris；Photon、Perpetual Loop 等薄寫；CURATED 0） |
 | sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | | |
 | sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | | |
 | sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |

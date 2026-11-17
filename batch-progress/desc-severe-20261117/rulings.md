@@ -2190,3 +2190,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-082.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
+
+## sd-083（30 張，其餘：Organum、OSCOB、Outer Limits、Owen Gray、Pageant、Pain Jerk、Parannoul 2、Pari Zanganeh、parkbreezy、Partners-N-Crime、Pat Martino、Patricia Barber 2、Paul Clark、Paulo de Carvalho、Peabo Bryson、Perfect、Perpetual Loop、Pete La Roca、Peter Bellamy、Peter Broggs、Brötzmann、Kowald、pheel.、Philanthrope & Devaloop、Photon、PNL、Polaris、Pontiac Streator）— s44
+
+- 研究：3 支 Sonnet，WebSearch 約 15＋11＋14＝40 次；none 只有 Photon story。母語來源：波斯文維基（Zanganeh）、波蘭文（Perfect）、法文維基（PNL）、日文（Outer Limits、Pageant、Polaris）。
+- **主線補查**（WebSearch 4 次＋WebFetch）：Perfect《Unu》（Rock Area：換血＋Hołdys 製作構想讓聲音比首張厚、七〇年代根源的硬搖滾、較輕的歌近 The Police、戒嚴時唱片在櫃檯下賣；Pablo's Reviews：〈Autobiografia〉〈Objazdowe nieme kino〉無副歌）→ sound ok；Pontiac Streator《Triz》（All Night Flight：Vladislav Delay／Pole 式 dub／glitch 抽象、沉重氛圍、重情緒不炫技；World of Echo、Norman）→ sound ok；Polaris《Family》（note 樂評：ZAK 錄音、坂田学鼓、原田郁子與ハカセ客座、柏原譲＋ZAK 的 dub 式貝斯與編曲、比《Home》收斂 dub 感）→ story／sound ok。Parannoul《Blue Cat》韓文搜尋只得用戶評，不採。
+- 事實裁定：Kowald《Open Secrets》是低音提琴獨奏（舊稿 Global Village 錯）；Devaloop 寫維也納；Bellamy 歌詞出處 Kipling《Puck of Pook's Hill》《Rewards and Fairies》；Pontiac Streator 地點兩說不寫；Polaris 不用 Tower 摘要（〈瞬間〉長度、ZAK 共同編曲）；PNL 不直接引 Libération；OSCOB 取樣來源（Discogs 使用者備註、與合輯曲目對不上）降為聽感描述；Organum《Veil of Tears》錄音年份兩說不寫；Pari Zanganeh 失明年份不寫；Barber《Fortnight》不寫 Verlaine；Perfect 不寫「首張走 Muza」「兩主唱交替」。
+- 薄寫上線不留置：Perpetual Loop、Photon、Philanthrope & Devaloop、parkbreezy、OSCOB、Pain Jerk（聲音寫成同期作風）、Peabo Bryson、Peter Broggs、Owen Gray。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-083.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| OSCOB | 「聲音由放慢的老 lounge 與 exotica 取樣構成」→「聽來像放慢的……取樣」 | 取樣來源只有可疑的使用者備註 |
+| Pete La Roca《SwingTime》 | 鉤子「1973 年舊作被掛別人名字重發、出庭勝訴」→「1968 年離開爵士念法學院，隔約 30 年才再交個人新作」；正文補本名 Pete Sims 與六重奏 | 鉤子不得取重發（版本）事項 |
+| Pontiac Streator《Triz》 | 鉤子中譯「我困在洞穴裡……」改引英文原句；刪「這句話就是全部的介紹」壓回 240 | 鉤子禁你我 |
+
+其餘四問無改：鉤子都對過研究稿（Jackman 鬧鐘外殼刮輪圈、OSCOB 太陽神主題、Outer Limits 小提琴＋mellotron、Owen Gray＝Island 第一張發行的歌手、Pageant 長笛與鍵盤、Pain Jerk 內頁「低技術殘酷器材」、Parannoul 魔法自述與藍貓一句、Zanganeh 失明後轉唱民謠、Barber 禁酒令通道與《變形記》、Paul Clark 山間小屋、〈E Depois do Adeus〉康乃馨革命暗號、Perfect 戒嚴前一晚演出、Bellamy 唱 Kipling、Doctor Dread 主動找 Broggs、Kowald 一把低音提琴、pheel. 盤名雙關、PNL 反勞動法遊行、柏原譲＋ZAK）。OSCOB 鉤子以曲名呈現主題，屬概念不屬體例，保留。30 張前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-083.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 98 次（研究層 sd-082 45、sd-083 40，主線 13）。

@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s44：sd-082、sd-083 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-082 上線 30（Natural Snow Buildings 2、neat beats、Necrophorus、Rothenberg、Negasphere、Nerve Net Noise、Nic Jones、Nic Potter 2、Nicknack、Night Lovell、Nisvanis、No Brain、NOGYMX、Northern Picture Library、Nothing Painted Blue、NWW、Oblique Occasions、Ochre、Odd Nosdam 2、Ohbliv 2、Olivia Rodrigo、Optic Nerve 2、Organum 3）；sd-083 上線 30（Organum、OSCOB、Outer Limits、Owen Gray、Pageant、Pain Jerk、Parannoul 2、Pari Zanganeh、parkbreezy、Partners-N-Crime、Pat Martino、Patricia Barber 2、Paul Clark、Paulo de Carvalho、Peabo Bryson、Perfect、Perpetual Loop、Pete La Roca、Bellamy、Broggs、Brötzmann、Kowald、pheel.、Philanthrope & Devaloop、Photon、PNL、Polaris、Pontiac Streator）。
+- **主線補查**：Organum《Sphyx》（Brainwashed、Tone Glow O'Rourke 訪談）、Rothenberg《Trespass》（NYPL、Qobuz）、Nic Jones、No Brain（Bugs）、Perfect《Unu》（Rock Area、Pablo）、Pontiac Streator（All Night Flight）、Polaris（note 樂評）。Optic Nerve 2、Ohbliv、Oblique Occasions、Photon、Perpetual Loop 等查無專輯層級資料者薄寫上線（delayde 前例）。
+- **審稿**：sd-082 改 32 處（鉤子取限量版本、出處入文、第二句補《盤名》）、sd-083 改 6 處（La Roca 鉤子取重發事項、Pontiac 鉤子含「我」），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-082.json,review-sd-083.json,kv-before-sd-082.json,kv-before-sd-083.json}`、`desc-tools/batches/{cards,research,output}/sd-08{2,3}*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題（sd-082 兩筆「8 軌錄音機」誤報）、鉤子前四字互異、加權 ≤50。WebSearch 約 98 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s41：sd-076、sd-077 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-076 上線 30（Keith Christmas、Keith Mansfield 2、Kem、Ken McIntyre、Kenny Barron、Kenny Burrell 5、Kenny Werner、Kevin Hays 2、Knxwledge 2、Koi.、Konstruktivists、Kool & the Gang、菅野邦彦 2、Kyuss、Lacrimosa、Lady Pank、Ladysmith Black Mambazo、Lamb、Larry Heard、Larry Young 2、Laserdance）；sd-077 上線 30（Laserdance、Late!、Lauge 3、Lavarr the Starr、Lee Konitz、Lee Morgan 9、Lee Ritenour、Lee Scott 2、Leila Forouhar、Leroy Smart、Les Ambassadeurs、less.people 2、Lew Soloff、Life's Blood、Light、Linda Smith、Lindsheaven Virtual Plaza、Linval Thompson）。Kem、McIntyre、菅野邦彦 2、Laserdance 2、less.people《respect.her》、Lavarr、Light 等照 delayde 前例薄寫上線。
