@@ -71,8 +71,8 @@
 | sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
 | sd-072 | 其餘（Interferon … James Brown） | 30 | s39 | ✅ 上線 30 |
 | sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | s39 | ✅ 上線 30 |
-| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | | |
-| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | | |
+| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | s40 | ✅ 上線 30 |
+| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | s40 | ✅ 上線 30 |
 | sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |
 | sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | | |
 | sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
