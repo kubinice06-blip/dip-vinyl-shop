@@ -1016,3 +1016,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-026.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 103 次（研究層 sd-025 36、sd-026 41，主線 26）。
+
+## sd-037（30 張，經典度≥4：Jacky Terrasson、Jacob Miller、du Pré 2、Coursil、Jagged Edge、Jah Free、Jah Stitch、Musique Persane、James Blake、James Brown、James Carr、Wróblewski、Japanese Telecom、Jarcha、Heifetz、Jason Moran 4、Jazz Focus 65、Jean Adebambo、Jeremih、Jessica Bailiff、JFA、Jill Scott、Jimmy Dawkins、Jimmy Riley、Jimmy Smith、jinsang）— s21
+
+- 研究：3 支 Sonnet，WebSearch 15＋9＋15＝39 次；none 2（Jarcha sound、Adebambo sound）。
+- **主線補查**（WebSearch 約 12 次＋WebFetch，facts 標【主線補查】）：Jarcha（extended；仍查無整張 LP 的編曲，只補「帶流行味的頌歌、副歌朗朗上口」與 Herrero 到韋爾瓦找樂團；sound 改 thin 薄寫）、Adebambo（悼念專文：自營 Ade J、收舊單曲＋原聲吉他同名曲、她自己寫歌編曲彈鍵盤與吉他）、Jessica Bailiff（Exclaim! Keast、Drawerb：Sparhawk 製作、Mimi Parker 打鼓、管風琴與失真吉他牆）、JFA（MRR #7 Yohannan、Reverb Central：兩首 surf 器樂、彈簧殘響吉他）、Dawkins（Delmark 宣傳文）、du Pré／Barenboim Brahms（Abbey Road 1968、Suvi Raj Grubb、MusicWeb 對兩首奏鳴曲平衡的評語）、Jah Free（Qobuz：首作、收舊單曲）。jinsang、Jacob Miller、Jazz Focus 65 補查無新料，照研究稿薄寫。
+- 身分／事實裁定：Terrasson 只寫 1994 年紐約錄音；Jacob Miller 年份寫「1976 年前後」；du Pré Dvořák 是 1970 年 11 月芝加哥錄音、美國版 1971；Musique Persane 調式情緒寫成一般認知；Heifetz 只寫 1961／Sargent，不寫錄音日與 Walthamstow；Jagged Edge 不寫單曲確切日期；Jeremih 不寫「停在第 42 名」與 BPI；Dawkins 只寫 1971 年錄音；JFA 不寫〈Schroeder's Theme〉；Adebambo 定為英國 lovers rock。
+- 前台：寫稿前預查 60 張（sd-037／038）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 16 處，改動檔 `review-sd-037.json`＋兩張整段重寫）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Terrasson／Jacob Miller／Coursil／Carr／Wróblewski／Jill Scott | 「常被拿來和…相比／常被視為／常被列為／常被解讀為」→「則像／曾被拿來／被視為／被列為／被解讀為」 | 各只有單一具名出處 |
+| Heifetz | 「倫敦樂團」→「New Symphony Orchestra of London」；結尾「顫音快速、滑音帶感情、速度偏快、運弓強勁」→「這份演奏音色純淨、帶感情，Sargent 的伴奏不流於例行公事，又在關鍵處讓給獨奏」；刪「Bruch 事後說他毀了這首曲子」與民謠曲名壓字數 | 原句是 Heifetz 通則，不是這份錄音（研究稿 notes）；改用 MusicWeb Woolf 與 Positive Feedback 的評語 |
+| JFA | 鉤子改為「刺殺雷根未遂的槍手據稱想討好 Jodie Foster，這支樂團就自稱 Jodie Foster's Army。」；第二句刪刺客說明 | 第二句只講這是什麼 |
+| Jimmy Riley | 鉤子「標題曲被視為 Tribulation riddim 上的標竿之作」→「Sly Dunbar 曾把 Jimmy Riley 的歌聲比作 David Ruffin 與 Teddy Pendergrass。」；全段壓到 232 字 | 原鉤子是單一合輯評論的評價；研究稿有 Sly Dunbar 的話 |
+| Jazz Focus 65 | 刪「旋律多交給長笛」 | 研究稿無此描述 |
+| jinsang | 刪與鉤子重複的「頁面上說…新篇章」句（165 字薄寫） | 重複 |
+
+其餘逐張四問無改：逐條對過研究稿（Terrasson 因母親的 Miles Davis 唱片轉向爵士、du Pré／Barenboim 1970 芝加哥首演後一週進錄音室、Coursil「想停止彈音階」、Hot Pants 歐洲巡迴看到熱褲、Carr 的躁鬱症與 Goldwax 最後一張、NPR 十年 50 張、《Ten》DownBeat 樂評人票選年度專輯、Jill Scott 開場噗嘴皆有出處）。30 張鉤子前四字互異、加權 ≤50、第二句皆以《盤名》起句；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-037.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
+- onboarding manifest 同步 25 處。
