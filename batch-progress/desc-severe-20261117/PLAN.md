@@ -139,8 +139,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | | |
 | sd-066 | 其餘（Elvin Jones … Experimental Audio Research） | 30 | | |
 | sd-067 | 其餘（Experimental Audio Research … Freeform） | 30 | | |
-| sd-068 | 其餘（FRICTION … God Bullies） | 30 | | |
-| sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | | |
+| sd-068 | 其餘（FRICTION … God Bullies） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 Gene Harris 2、Russell、Mellé；FRICTION、George Young 等薄寫；CURATED 0） |
+| sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
 | sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | | |
 | sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
 | sd-072 | 其餘（Interferon … James Brown） | 30 | | |

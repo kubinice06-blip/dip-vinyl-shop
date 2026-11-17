@@ -1816,3 +1816,24 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-068.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
+
+## sd-069（30 張，其餘：Gone、Gonzalo Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier Music 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）— s37
+
+- 研究：3 支 Sonnet，WebSearch 18＋16＋14＝48 次；none 0。母語／原文來源：Googoosh 波斯文維基與 Radio Farda 訪談、Rubalcaba 的 DownBeat 1993 年 9 月號報導、Grant Green 原盤內頁（Cuscuna、Goldberg）。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Googoosh《Akharin Khabar》（Amoeba：Caltex 發行、Ghanbari／Zakarian 寫、Cheshmazar 編曲；RadioJavan 2010 年回顧其「清新聲音」）；《Rapsodia》（維基：1995 年葛萊美最佳爵士器樂演奏入圍）；Grant Green《I Want to Hold Your Hand》（Steve Huey 評語、1966 年發行）；Grenadine《Nopalitos》（Michigan Daily 1995 正評、Trouser Press 負評與 Defever 製作）。Images、Dou Mahi、Chaos Laboratory 無新料，照研究稿薄寫。
+- 事實裁定：Gone 盤名照卡單《Let's Get Real, Real Gone for a Change》，Trouser Press 偏負面評語不寫；Avatar 不寫「七首全是他寫的」「後現代」；Imagine 不寫 Dianne Reeves；Googoosh 不寫〈Shak Mikonam〉、《Dou Mahi》不寫作曲人；Grant Green《Remembering》不寫磁頭／相位偏移、《Gooden's Corner》不寫 take 數與標題由來、《Am I Blue》改用 Goldberg 內頁的 mood album；Collier 不寫 Malcolm Lowry；Gosub 不寫「1990 年代初」；Growling Mad Scientists 是阿姆斯特丹二人組（派工詞誤寫以色列，研究層更正），不寫 Yaniv Tal；Goya 1992、不寫「戲仿／概念專輯」；Inner Circle 不寫延後理由、St. Louis Shoes 不寫雙關。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 2 處，改動檔 `review-sd-069.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Greg Osby《Art Forum》 | 刪「曾入選當年《紐約時報》的年度專輯」 | 只見 WRTI 一則轉述、無年份名次 |
+| Grenadine《Goya》 | 「整張刻意寫成老式標準曲」→「仿老派情歌的輕快原創」 | 老式標準曲是封套宣稱，Trouser Press 說它誤導 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Gone 替 Black Flag 開場半年、Haden 在古巴發現 Rubalcaba、國務院到 5 月才發簽證、《Suite 4 y 20》碰上「政權沒那麼糟」風波、Googoosh 禁唱 21 年與 Googooshi 造型、Gorky's 雙語、Govinda 二十年古典小提琴、Grant Green「最愛的三重奏」引語、Osby 的 Inner Circle Music 取名於本張、GMS 從 gabber 時代的阿姆斯特丹去果阿）。Rubalcaba 八張、Osby 七張各取本張概念，生平只一句。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題；鉤子禁詞檢出「迷你裙」的「你」為誤判）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
