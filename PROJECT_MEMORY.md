@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡簡介：抽查、新規則 general-desc-base、新卡停用鉤子公式、嚴重稿重寫線開跑
+
+- **起因**：店主看到林強《驚蟄》整段只講軌序與曲長：「這介紹跟沒介紹一樣……檢查是不是很多都這樣」「為何有天突然走歪了，本來都寫得很好」。
+- **抽查**：全卡池 22,302 張簡介從 KV 讀出；隨機 400 張一般卡照 apex-desc-base 第一節判：severe 17%、rewrite 48%、keep 35%（`batch-progress/desc-audit-20261117/`）。10 月起新上架的卡也 severe 16%。
+- **走歪的時間點**：研究稿 facts 出處是 MusicBrainz／Discogs 的比例，c-48～c-54（08-31）約 5–30%，**c-55 起（09-03）跳到 50–90%**，c-77～c-89（09-10 那波一週上架 1,962 張的深掘批：蘇聯、南斯拉夫、土耳其、波羅的海、日本 hardcore、台灣地下……）最高 75–92%。冷門盤查不到樂評與訪談，研究層就拿曲目表、曲長、盤號交差；鉤子公式又規定第一句要懸念、字數要湊滿，雜項就變成主體；審稿只查事實對錯，沒查「讀完知不知道這是什麼」。
+- **新規則**：`desc-tools/prompts/general-desc-base.md`（研究三塊：這是什麼／故事或概念／聲音；MB／Discogs 只確認身分；不准冷知識開頭；軌序曲長盤號不寫；180–240 字）。店主同意新卡即日起改用：`ALBUM_ONBOARDING.md` §5、`dip-card-create` Phase 3（停用鉤子層）、mood-cells 的 WRITER／HOOK-DISPATCH、`writer-base.md`／`hook-base.md` 檔頭都加註。
+- **重寫線**：店主「修嚴重的先」→ `batch-progress/desc-severe-20261117/PLAN.md`（第 0 步全卡池判定、30 張一批、CJK 先）；第一個工作階段已派（判定＋sd-001／sd-002）。
+- **主要檔案**：上列各檔、`batch-progress/desc-audit-20261117/{README.md,sample-400.json,dump-descs.mjs}`。
+- **驗證**：只改規則文件，未動 KV／seed。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s1：全卡池判定＋sd-001、sd-002 上線
 
 - **店主 11-17**：林強《驚蟄》簡介只講軌序與曲長，「這介紹跟沒介紹一樣……故事在哪？概念在哪？」；抽查 400 張 severe 17%，店主：「修嚴重的先」。
