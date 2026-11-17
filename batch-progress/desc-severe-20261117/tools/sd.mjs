@@ -18,7 +18,8 @@ const cjk = v => /[぀-ヿ㐀-鿿豈-﫿가-힯]/.test(String(v || ''));
 const plan = JSON.parse(fs.readFileSync(`${DIR}/batches.json`, 'utf8'));
 const HOOK = {
   'sd-hook-1': { src: ['sd-001', 'sd-002', 'sd-003', 'sd-004', 'sd-005', 'sd-006', 'sd-007'], skip: ['林強|驚蟄'] },
-  'sd-hook-2': { src: ['sd-008', 'sd-009', 'sd-010', 'sd-011', 'sd-012', 'sd-013', 'sd-014'], skip: [] },
+  'sd-hook-2': { src: ['sd-008', 'sd-009', 'sd-010', 'sd-011', 'sd-012', 'sd-013', 'sd-014'], // sd-hold-2 七張上線時已有鉤子，跳過
+    skip: JSON.parse(fs.readFileSync('desc-tools/batches/output/sd-hold-2-out-1.json', 'utf8')).map(r => r.key) },
 };
 const OUTDIR = 'desc-tools/batches/output';
 const readOut = b => fs.readdirSync(OUTDIR).filter(f => new RegExp('^' + b + '-out-\\d+\\.json$').test(f))

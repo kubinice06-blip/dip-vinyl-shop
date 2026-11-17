@@ -541,6 +541,32 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-hook-1.json`；209 張 418 鍵 `wrangler@4 kv bulk put --remote`；回讀 **418/418 一致**；`front-check` **前台 209/209 新稿**（CURATED 0）。
 - onboarding manifest 同步 209 處。
 
+## sd-hook-2（sd-008～014 已上線卡補鉤子，203 張）— s13
+
+- 範圍：sd-008～014 已上線 203 張（含 sd-hold-1 救回、屬 sd-008 的 3 張）；**sd-hold-2 救回的 7 張上線時已有鉤子，跳過**（`sd.mjs` HOOK.skip 直接讀 `sd-hold-2-out-1.json` 的 key）。不重做研究。
+- 寫作：6 支 Opus 各 33–34 張，照 `prompt-hook.md`。四型約：斷言 62、場景 55、人物定調 55、懸疑 31；只能用地位或聲音當鉤子的約 33 張。鉤子加權 16–45.5，全批前四字互異（`sd.mjs qa`）。
+- 踩到：子代理共用 scratchpad 根目錄，同名暫存腳本互相覆寫（第 2 組誤跑第 1 組的 build 一度把 out-1 寫空，第 1 組自己重建完整）。**之後派工要指定各代理用自己的子目錄。** 另外主線審稿套改動時第 3 組尚未結束，最後一次覆寫蓋掉了陳小霞《老翅膀》的改動；收齊後整份 `review-sd-hook-2.json` 重套一次補回——**審稿改動要等該組交件後再套**。
+
+### 主線審稿（2026-11-17，逐張 203 張，改 10 處，改動檔 `review-sd-hook-2.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| 陳小霞\|老翅膀 | 「上一張是《哈雷媽媽》，獲第 37 屆金曲獎評審團獎」→「上一張是 2005 年的《哈雷媽媽》；這張獲…」 | **補鉤子時把獎誤掛到前作**，facts 是本張得獎 |
+| 不失者\|allegorical misunderstanding | 鉤子「灰野敬二很少這麼收斂」→ 陳述做法（效果器與失真幾乎都收起來） | 比較推論，facts 只有單一評論 |
+| gauze\|限界は何処だ | 鉤子「蘇格蘭場的台下」→「巡演英國時」；正文補回「蘇格蘭那一場」 | 「蘇格蘭場」讀成 Scotland Yard；facts 講的是英國整體 |
+| 黃耀明\|信望愛 | 第二句「這首〈你真偉大〉是《信望愛》的開場」→「那首歌是〈你真偉大〉，出自…《信望愛》」 | 去軌序字眼，第二句講唱片 |
+| 農村武裝青年\|予你的歌 | 正文補「拔河那首是〈漉糊仔田之歌〉」；為壓字數縮「卸下武裝」一句 | 鉤子的爛泥田拔河在正文沒接回 |
+| 生祥樂隊\|江湖卡夫卡 | 鉤子「題目只有三個字：卡夫卡」→「一個題目：卡夫卡，還附上幾本他的小說」 | 「三個字」是潤飾，照 facts |
+| 益田幹夫\|silver shadow | 鉤子「前排兩位樂手同期在同廠牌各有專輯」→「本多俊之的中音薩克斯風和大野俊三的小號，站在益田幹夫的鍵盤前面」；正文刪重複 | 廠牌同儕是雜項，改用編制 |
+
+其餘照收：數字與外文專名逐張比對研究稿 facts＋liveDesc 無越界；鉤子帶進 liveDesc 沒寫的研究稿事實（鍾永豐卡夫卡、《愛・おぼえていますか》劇中關鍵曲、《海の動物園》吉祥寺首演、GAUZE 英國龐克不認識他們等）都核過 facts。kinoue64 鉤子講「曲名寫的多是校園日常」——是曲名內容（概念）不是體例，且 facts 只有曲名可據，照收。QA 誤報：「来／国」是日文盤名、半形「!?」「?!」是盤名／曲名、面孔「我」出自〈給我一點愛〉。薄寫 6 張（159–172，原稿即薄）。ずっと真夜中でいいのに。的「ACAね」照現行稿不加空格。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-hook-2.json`；203 張 406 鍵 `wrangler@4 kv bulk put --remote`；回讀 **406/406 一致**；`front-check` **前台 203/203 新稿**（CURATED 0）。
+- onboarding manifest 同步 203 處。
+- **sd-001～014 已上線卡的鉤子補齊**（sd-hook-1 209＋《驚蟄》＋sd-hook-2 203＋sd-hold-2 7）。
+
 ## sd-hold-2：sd-009～014 留置卡重查（7 張）— s8
 
 研究層 1 支 Sonnet（WebSearch 約 17 次）照必查清單重查，先讀前次研究稿 notes、不重跑同樣查法。**7 張全數救回**，關鍵仍是商品頁與 API：
@@ -732,3 +758,51 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-020.json`；30 張 59 鍵（Agnostic Front 原無 desc4，只寫 desc2）`wrangler@4 kv bulk put --remote` Success；回讀 **59/59 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 180 次（研究層 sd-019 54、sd-020 43、sd-hold-3 7，主線約 30，另有子代理未回報的零頭）。
+
+## sd-021（30 張，經典度≥4：Agnostic Front 2、Bashung 2、Alaska y los Pegamoides、Trzaskowski、Michelangeli 2、Autechre 2、Bastard、Parmegiani、Bikini Kill、Carlos do Carmo、Carlos Paredes、Carsick Cars、Céline Dion、Cortot／Thibaud／Casals、Cro-Mags、Donny Hathaway、Gilels、Fats Domino、De Gregori、Knuckles／Tomiie、G.I.S.M. 2、Gauze 2、少女時代 2）— s12
+
+- 研究：3 支 Sonnet，WebSearch 16＋10＋12＝38 次（偏少，thin 多）。
+- **主線補查 13 張**（WebSearch 15 次＋WebFetch，facts 標【主線補查】）：Seant（JazzPRESS 正典專欄：民謠〈Oj tam u boru〉變奏、十二音列〈Cosinusoida〉、三管編制；Polish-Jazz 部落格與 Komeda《Astigmatic》並列）、Michelangeli 協奏曲（1957 Abbey Road、先演出後 EMI 同意錄、Gramophone「最好的協奏曲唱片之一」）、Michelangeli 獨奏會（Classite：1963 羅馬錄、1965 發行；仍薄寫）、Bleu pétrole（三吉他手編制、節奏組偏爵士、Le Temps）、Bastard（Head Heritage 樂評：聲音與成員、Feral Ward 重發）、Bikini Kill（維基＋PopMatters／Guardian）、Carsick Cars（英文維基、中文評論：〈中南海〉、噪音與回授）、Paredes、D'eux、Gilels（自選 20 首、柏林錄音、Stereo Review 獎）、Tears（Tomiie 試聽帶、Owens 是 Knuckles 室友）、G.I.S.M. 二張（Last Rites：金屬化、Relapse 重發）、Gauze《Equalizing Distort》（MRR 評、Shin 訪談）。
+- 身分裁定：Bastard 年份 1990／1992 兩說不寫；《DETESTATION》發行年兩說不寫；Seant 只寫 1960 年代中期；《D'eux》不寫「全部出自 Goldman」；《Rimmel》不寫編曲者；《Gee》不寫 E-Tribe 個人名與銷量；Gauze《Fuck Heads》不寫 2017 紅膠與 Tam 本名。
+- 前台：`front-check` 先查過，60 張（sd-021／022）都沒被 CURATED_DESCS 蓋住。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 15 處，改動檔 `review-sd-021.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Autechre\|Tri Repetae | 鉤子「共識首選常常就是」→「共識首選，就是」；「常被視為」→「被視為」 | 單一出處（Quietus） |
+| Bikini Kill | 「常被認為」→「被認為」；「三件式樂團」→「吉他、貝斯與鼓」 | 單一出處；樂團四人 |
+| Michelangeli 協奏曲 | 作品名加《》；刪「不趕不躁」 | 格式；字數 |
+| Michelangeli 獨奏會 | op.111 加《》 | 格式 |
+| Parmegiani | 「這張唱片」→《Dedans dehors》；刪「聽到的物件從不完全是預期的那個」 | 第二句要有盤名；字數 |
+| Fats Domino | 「這是他」→盤名、改寫精選集句；刪「二線遊行節奏」 | 第二句要有盤名；字數 |
+| G.I.S.M.\|Military Affairs Neurotic | 「這張」→盤名；刪陣容重述 | 第二句要有盤名；字數 |
+| 少女時代\|Girls' Generation | 「2007 年 發行」去多餘空格 | 格式 |
+
+其餘逐張四問無改：鉤子 30 張前四字互異、加權 ≤50，材料都取自故事（Gainsbourg 主動共同署名、試錄名義錄新專輯、兩吋母帶從東京寄紐約）、概念（Kali Yuga、香菸牌子的歌）、聲音或地位；查無軌序、曲長、盤號。Gauze《Fuck Heads》鉤子「同期日本 hardcore 多半往金屬靠」出自 MRR 1985 評語，照收。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-021.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**。
+- onboarding manifest 同步 27 處。
+
+## sd-022（30 張，經典度≥4：Gorilla Biscuits 2、Hoola Bandoola Band、Irakere 3、José Cid、José Mário Branco、Kult 2、Los Prisioneros 2、Michael Nyman 2、Shajarian、Paco Ibáñez、Parálisis Permanente、Patsy Cline、Pau Riba、Radio Futura、Reese、Rhythim Is Rhythim 2、Rocky Horror、Richie Hawtin 2、Robert Johnson 2、S.D. Burman、Shankar–Jaikishan）— s12
+
+- 研究：3 支 Sonnet，派工詞加「上一批平均每張只搜 1 次、標 thin 前必查四項逐項寫進 notes、實際用到 15 次以上」，WebSearch 15＋16＋23＝54 次，thin 降到 6 張。
+- **主線補查**（WebSearch 4 次）：Shajarian《Astan e Janan》（革命後在德黑蘭義大利大使館私人音樂會、Farhangfar 打 tonbak、Bayat-e Zand）、Irakere《Chekeré son》（JVC 發行、clave＋bebop 管樂、Cuba50 的 timba 說法）、Hoola Bandoola（社會主義訊息、〈Keops pyramid〉）；《Nude Photo》查無具體聲音資料，照研究稿薄寫（只寫氛圍與 Yazoo 笑聲取樣，不拿 May 一般器材湊）。
+- 身分／事實裁定：《Irakere》葛萊美不寫年份；Start Today 不寫廠牌自稱銷量；José Cid 不寫 Billboard 百大；Shajarian 演出年 1982／1983 兩說只寫 1985 發行；Nyman《Draughtsman》寫「早期合作」；Paco Ibáñez 寫 1969 年現場；Patsy Cline 不寫週數、和聲寫 Jordanaires 與 Millie Kirkham；Reese 寫「Casio CZ 系列」；《Closer to the Edit》改正舊稿「全不是他的曲子」；《Aradhana》作曲歸屬兩說照寫「說法不一」；Robert Johnson 全集不寫銷量、日期、take 數；《Sangam》Mukesh 只是提名、不寫。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 28 處，改動檔 `review-sd-022.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Paco Ibáñez、Patsy Cline、Reese、Nude Photo、Rocky Horror、Hawtin 2、Robert Johnson 2、Aradhana | 第二句「這是／這套／Decca 發行這張」→ 以《盤名》起句，連帶刪句壓回 240（Alberti、安可曲、鄉村榜前十、十倍白金、Paradise Garage、失真電吉他、O'Brien 旁白唱法、喀噠聲、DVD 5.1、take 排列、Clapton／滾石翻唱、Khanna 成名重述等） | 第二句要有盤名；字數；版本／銷量雜項 |
+| Paco Ibáñez、Nude Photo、Aradhana | 「常被視為／常被認為」→「被視為／被認為」 | 單一出處 |
+
+其餘逐張四問無改：第 1–15 張逐條對過研究稿（Civ 背對觀眾唱、〈Keops pyramid〉、Branco 的城堡錄音、Kult 柏林圍牆照片、Los Prisioneros 狗吠取樣皆有出處）；30 張鉤子前四字互異、加權 ≤50，材料取自故事、概念、聲音或地位；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-022.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
