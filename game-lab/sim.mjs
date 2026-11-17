@@ -341,7 +341,8 @@ function runOnce(pol, flow, i, A) {
           if (r in LS.rar) LS.rar[r]++;
           if (T && EN.star(c, T) >= 4) { good++; if (open && open.has(key)) goodOpen++; }
         }
-        if (LS) { LS.shelf.push(n); LS.good.push(good); if (lot.no === 1) LS.good1.push(good); if (open) LS.goodOpen.push(goodOpen); }
+        if (LS) { LS.shelf.push(n); LS.good.push(good); if (lot.no === 1) LS.good1.push(good); if (open) LS.goodOpen.push(goodOpen);
+          if (run.pos === 10 || run.pos === 20) LS['bag' + run.pos].push(EN.bagScore(C, run.bag)); }   // 包包強度（bagScore；走到第 10／20 位、買之前）
         if (WS) WS.onShelf += wn;
       }
     }
@@ -414,7 +415,7 @@ function runCell(pol, flow, n) {
   if (APEX) A.ax = { fights: 0, used: 0, nSum: 0, nHist: [0, 0, 0, 0, 0, 0, 0], dSum: 0, healSum: 0, hitHand: 0, hw: 0, hl: 0, ht: 0, netSum: 0, rev: { honest: 0, bluff: 0 },
     hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0 };
   if (LOT_ON && flow === 'smart') {                                      // 一檔貨表（第 B 波；lot 關＝不記、JSON 不多欄位）
-    A.lt = { runs: 0, rounds: [], shelf: [], good: [], good1: [], goodOpen: [], buy: 0, buyF: 0, rar: Object.fromEntries(SHELF_RAR.map(r => [r, 0])) };
+    A.lt = { runs: 0, rounds: [], shelf: [], good: [], good1: [], goodOpen: [], bag10: [], bag20: [], buy: 0, buyF: 0, rar: Object.fromEntries(SHELF_RAR.map(r => [r, 0])) };
     if (WANT_N) A.wt = { runs: 0, l1: { lots: 0, in: 0, elig: 0, inElig: 0 }, l2: { lots: 0, in: 0, elig: 0, inElig: 0 }, onShelf: 0, bought: 0 };
   }
   const recs = [];
@@ -477,7 +478,7 @@ function lotStats(L, n) {
   return { rounds: L.rounds.length, fullRounds: full.length, seen: mean(full.map(r => r.seen)), seen1: mean(f1.map(r => r.seen)), seen2: mean(f2.map(r => r.seen)),
     seenF: mean(full.map(r => r.seenF)), seenF1: mean(f1.map(r => r.seenF)), seenF2: mean(f2.map(r => r.seenF)),
     shelf: mean(L.shelf), good: dist(L.good), good1: dist(L.good1), ...(L.goodOpen.length ? { goodOpen: dist(L.goodOpen) } : {}),
-    buy: L.buy / n, buyF: L.buyF / n, rar: Object.fromEntries(SHELF_RAR.map(r => [r, rt ? L.rar[r] / rt : null])) };
+    bag10: mean(L.bag10), bag20: mean(L.bag20), buy: L.buy / n, buyF: L.buyF / n, rar: Object.fromEntries(SHELF_RAR.map(r => [r, rt ? L.rar[r] / rt : null])) };
 }
 // 想要清單表：第 1 檔（策展池）／第 2 檔起（全卡池）分開；每檔進來幾張、每張每檔進來機率（÷N＝清單全部；÷合規＝那一檔來源裡擲得到的）
 function wantStats(W, n) {
@@ -581,10 +582,10 @@ if (MODE === 'all' || MODE === 'runs') {
   if (rows.some(x => x.lot)) {                                           // 一檔貨（第 B 波；lot 關不印）
     const L0 = EN.lotCfg(C), dz = d => d ? `${d.median}／${d.min}／${pct(d.zero)}` : '—', f1 = x => x == null ? '—' : x.toFixed(1);
     console.log(`\n一檔貨（每輪抽一檔 ${L0.size} 張、FEATURE ${L0.feature}；每位架上每箱 ${L0.show}、FEATURE ${L0.featureShow}${L0.firstShow ? '、第 1 輪每箱 ' + L0.firstShow : ''}；第 1 檔${L0.firstCurated ? '從策展池' : '從全卡池'}；smart、每位第一次走到時的架子）：\n`);
-    console.log('| 策略 | 流程 | 完整一輪看到幾張不同的 全部（第 1 輪／第 2 輪起） | 其中 FEATURE（第 1 輪／第 2 輪起） | 每位架上幾張 | 剋下一位主屬性那軸 ≥4 星 中位／最小／0 張 | 第 1 輪 | ' + (BROWSE < 16 ? `打開的 ${BROWSE} 箱裡 | ` : '') + '每趟從架上買 唱片／其中 FEATURE | 架上稀有度 普通／稀有／獨特／史詩／傳奇（%） |');
-    console.log('|---|---|---|---|---|---|---|' + (BROWSE < 16 ? '---|' : '') + '---|---|');
+    console.log('| 策略 | 流程 | 完整一輪看到幾張不同的 全部（第 1 輪／第 2 輪起） | 其中 FEATURE（第 1 輪／第 2 輪起） | 每位架上幾張 | 剋下一位主屬性那軸 ≥4 星 中位／最小／0 張 | 第 1 輪 | ' + (BROWSE < 16 ? `打開的 ${BROWSE} 箱裡 | ` : '') + '每趟從架上買 唱片／其中 FEATURE | 包包強度 第 10／20 位 | 架上稀有度 普通／稀有／獨特／史詩／傳奇（%） |');
+    console.log('|---|---|---|---|---|---|---|' + (BROWSE < 16 ? '---|' : '') + '---|---|---|');
     for (const x of rows) { const l = x.lot; if (!l) continue;
-      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f1(l.seen)}（${f1(l.seen1)}／${f1(l.seen2)}） | ${f1(l.seenF)}（${f1(l.seenF1)}／${f1(l.seenF2)}） | ${f1(l.shelf)} | ${dz(l.good)} | ${dz(l.good1)} | ${BROWSE < 16 ? dz(l.goodOpen) + ' | ' : ''}${f2(l.buy)}／${f2(l.buyF)} | ${SHELF_RAR.map(r => pt(l.rar[r])).join('／')} |`); }
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f1(l.seen)}（${f1(l.seen1)}／${f1(l.seen2)}） | ${f1(l.seenF)}（${f1(l.seenF1)}／${f1(l.seenF2)}） | ${f1(l.shelf)} | ${dz(l.good)} | ${dz(l.good1)} | ${BROWSE < 16 ? dz(l.goodOpen) + ' | ' : ''}${f2(l.buy)}／${f2(l.buyF)} | ${f2(l.bag10)}／${f2(l.bag20)} | ${SHELF_RAR.map(r => pt(l.rar[r])).join('／')} |`); }
   }
   if (rows.some(x => x.want)) {                                          // 想要清單（--want N）
     console.log(`\n想要清單（--want ${WANT_N}；每檔每張擲 ${EN.lotCfg(C).wantP}、一檔最多 ${EN.lotCfg(C).wantMax} 張；第 1 檔來源是策展池、第 2 檔起全卡池）：\n`);

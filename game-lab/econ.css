@@ -50,6 +50,12 @@
 .ec-radio i{flex:none;width:7px;height:7px;border-radius:50%;background:var(--tn,#ccc);box-shadow:0 0 0 1px var(--ink,#111);}
 .ec-radio b{font-weight:inherit;}
 .ec-narrow .ec-radio{padding:0 4px;}.ec-narrow .ec-radio b{display:none;}   /* 封面窄（<64 px，375×548 特價箱四欄）：電台籤只留色點，不碰右上的選取勾（econ.js fit） */
+/* 想要清單（SPEC-B §5.3）：「你想要的」粉框小籤（深粉字 #a3155c／淡粉底 6.8:1）；特價箱格子放封面左上（收音機那張放在電台籤下面）；箱子縮圖右上粉色角 */
+.ec-want{display:inline-block;margin-left:6px;padding:0 4px;border:1px solid #d6337f;background:#fff0f6;color:#a3155c;font:700 10px/14px var(--zh,sans-serif);letter-spacing:.04em;vertical-align:1px;white-space:nowrap;}
+.ec-tcv .ec-want{position:absolute;left:0;top:0;z-index:2;margin:0;padding:0 3px;border-width:0 1px 1px 0;}
+.ec-tile[data-radio] .ec-tcv .ec-want{top:16px;}
+.ec-narrow .ec-tcv .ec-want{font-size:8px;line-height:12px;padding:0 2px;letter-spacing:0;}
+.ec-th.ec-w .ec-thc::after{content:'';position:absolute;right:0;top:0;z-index:2;border-style:solid;border-width:0 11px 11px 0;border-color:transparent #d6337f transparent transparent;}
 .ec-free{flex:none;padding:0 5px;border:1px solid var(--win,#2e7d52);color:var(--win,#2e7d52);font:700 11px/18px var(--zh,sans-serif);letter-spacing:.04em;white-space:nowrap;}
 
 /* 封面（共用）：斜紋底＋專輯名當後備 */

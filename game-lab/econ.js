@@ -39,7 +39,8 @@
   var ZH1 = { c: '經', o: '冷', h: '硬' }, ATTRS = ['c', 'o', 'h'];
   // C.shopUi 沒有的字（新；已請 B2 補進 C.shopUi，見 dev/notes-B3.md「請求」）
   var FALLBACK = {
-    bag: '包包 {n} 張', binEmpty: '這一箱賣完了，下一輪再補。', owned: '包包裡有了',   // 包包不限張數（店主 11-16）：只寫張數
+    bag: '包包 {n} 張', binEmpty: '這一箱賣完了，下一位客人來之前會換一批。', owned: '包包裡有了',   // 包包不限張數（店主 11-16）：只寫張數
+    binEmptyLot: '這一批的這一箱賣完了，打完傳說藏家整批換新。', binEmptyRound: '這一箱賣完了，下一輪再補。', wantTag: '你想要的',   // 一檔貨、想要清單（SPEC-B §3.7、§5.3）
     relicSell: '賣這件', relicSold: '「{name}」賣掉，+${n}', relicEmpty: '櫃檯的配件賣完了，下一輪再補。',   // relic
     prev: '上一張', next: '下一張', infoAria: '唱片資訊、試聽',
     relicMoneyShort: '錢不夠：先賣一件，半價 ${n}', relicSellFirst: '先賣一件',
@@ -52,6 +53,13 @@
   };
   var RAR_ZH = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };
 
+  // 封面失敗：1.5 秒後重試同一個 src，再失敗才移除、露出專輯名字卡（CAA 偶發斷；SPEC-B C7）。ui.js 也用這支
+  W.DipCoverErr = function (img) {
+    if (!img || !img.getAttribute) return;
+    if (img.getAttribute('data-r') === '1') { img.remove(); return; }
+    img.setAttribute('data-r', '1');
+    setTimeout(function () { if (!img.isConnected) return; var u = img.src; img.removeAttribute('src'); img.src = u; }, 1500);
+  };
   var CFG = null;
   var S = { open: false, kind: null, token: 0, walking: false, el: null, veil: null, res: null, sel: [], sub: null, idx: 0 };
 
@@ -74,6 +82,15 @@
   function rarityOf(c) { try { return E().rarity ? E().rarity(c) : null; } catch (_) { return null; } }
   function rarityZh(k) { var z = C().rarityZh || {}; return z[k] || RAR_ZH[k] || ''; }
   function rarHTML(c, cls) { var k = rarityOf(c); return k ? '<span class="ec-rar r-' + k + (cls ? ' ' + cls : '') + '">' + esc(rarityZh(k)) + '</span>' : ''; }
+  // 想要清單（run.want；SPEC-B §5.3）：稀有度籤旁的小籤「你想要的」（箱子、特價箱、收音機那格）
+  function wanted(r, id) { return !!(r && id && Array.isArray(r.want) && r.want.indexOf(id) >= 0); }
+  function wantHTML() { return '<span class="ec-want">' + esc(ui('wantTag')) + '</span>'; }
+  // 空箱的字（SPEC-B §3.7）：一檔貨這一箱還有沒賣的（engine.lotLeft）＝下一位會換一批；這一檔賣光＝打完藏家整批換；lot 關＝舊字
+  function emptyText(r, key) {
+    if ((C().lot || {}).on === false) return ui('binEmptyRound');
+    try { if (r && r.shop && r.shop.lot && E().lotLeft && !E().lotLeft(r, key)) return ui('binEmptyLot'); } catch (e) { console.error(e); }
+    return ui('binEmpty');
+  }
   // 區名：名牌英文＋中文（C.bins[key]：X／Y 契約）；沒有就用舞台給的中文
   function binTitleHTML(key, fallback) {
     var b = (C().bins || {})[key];
@@ -122,7 +139,7 @@
   function coverImg(c) {
     var src = coverSrc(c);
     return '<span class="ec-alt" aria-hidden="true">' + esc(c ? c.album : '') + '</span>' +
-      (src ? '<img alt="" src="' + esc(src) + '" draggable="false" loading="lazy" onerror="this.remove()">' : '');
+      (src ? '<img alt="" src="' + esc(src) + '" draggable="false" loading="lazy" onerror="DipCoverErr(this)">' : '');
   }
   function peakOf(c) { return Math.max(c.c || 0, c.o || 0, c.h || 0); }
   function starsHTML(c, o) {
@@ -395,7 +412,7 @@
   // 一張大封面翻著看（箱子）
   function binHTML() {
     var ids = binIds(), r = liveRun();
-    if (!ids.length) return headHTML(S.label) + '<p class="ec-empty">' + esc(ui('binEmpty')) + '</p>';
+    if (!ids.length) return headHTML(S.label) + '<p class="ec-empty">' + esc(emptyText(r, S.key)) + '</p>';
     if (S.idx >= ids.length) S.idx = ids.length - 1;
     if (S.idx < 0) S.idx = 0;
     var c = card(ids[S.idx]);
@@ -410,22 +427,22 @@
       var pv = E().priceOf(C(), c);
       if (pv != null) btn = '<span class="ec-pv">' + esc(money(pv)) + '</span>';
     }
-    var feat = S.key === 'feature', rk = rarityOf(c);
+    var feat = S.key === 'feature', rk = rarityOf(c), wt = wanted(r, c.id) ? wantHTML() : '';
     var n = ids.length;
     return headHTML(S.label) +
       '<div class="ec-flip">' +
         '<div class="ec-one">' +
-          '<button type="button" class="ec-cv' + (rk ? ' r-' + rk : '') + '" data-a="info" data-cid="' + esc(c.id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》：' + ui('infoAria')) + '">' + coverImg(c) +
+          '<button type="button" class="ec-cv' + (rk ? ' r-' + rk : '') + '" data-a="info" data-cid="' + esc(c.id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》' + (wt ? '・' + ui('wantTag') : '') + '：' + ui('infoAria')) + '">' + coverImg(c) +
             '<span class="ec-play" aria-hidden="true"></span><span class="ec-pos">' + (S.idx + 1) + '／' + n + '</span>' + (feat ? rarHTML(c, 'ec-rbig') : '') + '</button>' +
-          '<div class="ec-meta"><div class="ec-ar">' + esc(c.artist) + '</div><div class="ec-al">' + esc(c.album) + '</div><div class="ec-yr">' + esc(c.year || '') + (feat ? '' : rarHTML(c)) + '</div>' +
+          '<div class="ec-meta"><div class="ec-ar">' + esc(c.artist) + '</div><div class="ec-al">' + esc(c.album) + '</div><div class="ec-yr">' + esc(c.year || '') + (feat ? '' : rarHTML(c)) + wt + '</div>' +
             starsHTML(c, { peak: S.mode === 'buy' }) + btn + '</div>' +
         '</div>' +
         '<div class="ec-strip">' +
           '<button type="button" class="ec-nav" data-a="prev" aria-label="' + esc(ui('prev')) + '"' + (n < 2 ? ' disabled' : '') + '>‹</button>' +
           '<div class="ec-ths">' + ids.map(function (id, i) {
             var k = card(id);
-            var kr = rarityOf(k);
-            return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + (kr ? ' r-' + kr : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》' + (kr ? '・' + rarityZh(kr) : '')) + '"><span class="ec-thc">' + coverImg(k) + '</span></button>';
+            var kr = rarityOf(k), kw = wanted(r, id);   // 想要的：縮圖右上一個粉色角
+            return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + (kr ? ' r-' + kr : '') + (kw ? ' ec-w' : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》' + (kr ? '・' + rarityZh(kr) : '') + (kw ? '・' + ui('wantTag') : '')) + '"><span class="ec-thc">' + coverImg(k) + '</span></button>';
           }).join('') + '</div>' +
           '<button type="button" class="ec-nav" data-a="next" aria-label="' + esc(ui('next')) + '"' + (n < 2 ? ' disabled' : '') + '>›</button>' +
         '</div>' +
@@ -441,10 +458,10 @@
     var fc = S.focusId && card(S.focusId);
     var rad = radioOf(r);
     var tiles = ids.map(function (id) {
-      var c = card(id), on = S.sel.indexOf(id) >= 0, bp = bargainPrice(id), isRad = !!rad && rad.id === id;
+      var c = card(id), on = S.sel.indexOf(id) >= 0, bp = bargainPrice(id), isRad = !!rad && rad.id === id, w = wanted(r, id);
       var pt = bp == null ? '' : '<span class="ec-pt' + (pick ? ' free' : '') + '">' + (pick ? '<s>' + esc(money(bp)) + '</s>' : esc(fill(ui('bargainEach'), { n: mt(bp) }))) + '</span>';
       return '<button type="button" class="ec-tile' + (on ? ' sel' : '') + '" data-a="' + (view ? 'info' : 'tog') + '" data-cid="' + esc(id) + '"' + (bp == null ? '' : ' data-price="' + bp + '"') + (view ? '' : ' aria-pressed="' + on + '"') +
-        ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (isRad ? '（' + ((C().radio || {}).tag || '') + '）' : '') + (bp == null ? '' : (pick ? '（免費）' : ' ' + money(bp)))) + '"' + (isRad ? ' data-radio="1"' : '') + '><span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + (isRad ? radioTagHTML(rad.cell) : '') + pt + '</span>' + starsHTML(c, { col: true }) + '</button>';
+        ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (isRad ? '（' + ((C().radio || {}).tag || '') + '）' : '') + (w ? '・' + ui('wantTag') : '') + (bp == null ? '' : (pick ? '（免費）' : ' ' + money(bp)))) + '"' + (isRad ? ' data-radio="1"' : '') + '><span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + (isRad ? radioTagHTML(rad.cell) : '') + (w ? wantHTML() : '') + pt + '</span>' + starsHTML(c, { col: true }) + '</button>';
     }).join('');
     var foot = '';
     if (pick) foot = '<button type="button" class="lb-btn pri big wide" data-a="take"' + (S.sel.length === pickN() ? '' : ' disabled') + '>' + esc(ui('bargainTake')) + '</button>';
@@ -741,6 +758,9 @@
       sub: S.sub ? { kind: S.sub.kind, why: S.sub.why || 'full', need: S.sub.need, picks: S.sub.picks.slice() } : null, height: S.el ? S.el.offsetHeight : 0, focusH: S.focusH,
       scroll: !!(S.el && S.el.classList.contains('ec-scroll')), tab: S.kind === 'relic' ? S.tab : null, spick: S.spick || null };
   }
+
+  // 新卡的封面晚到（ui.js 媒體載入器發 dip:media）：抽屜開著就重畫一次
+  D.addEventListener('dip:media', function () { if (S.open && S.el) try { render(); } catch (e) { console.error(e); } });
 
   W.DipLabEcon = {
     configure: function (o) { CFG = Object.assign({}, o || {}); return W.DipLabEcon; },
