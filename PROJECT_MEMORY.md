@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s17：sd-029、sd-030 上線（59 張，留置 1）
+
+- **結果**：sd-029 上線 30（Chris & Cosey、Brotherhood of Breath、Chucho Valdés、Clock DVA、Company、Schnitzler、Crow、Eraserhead 等，無留置）；sd-030 上線 29（Oistrakh、Deafheaven、DEATH SIDE、Dexter Gordon、Dick Gaughan、Die Ärzte、Django、Shostakovich 自奏、Dominique A、Grolnick 等）。**留置 1**：delayde《finding solitude》查無任何專輯層級資料，KV 保留舊稿。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 59/59 新稿，「待店主處理」無新增。
+- **主線補查**：sd-029 補 7 張（Heartbeat、Willisau、Crow、Datblygu、Rot、Company 1、Ché-SHIZU）；sd-030 補 6 張（DEATH SIDE、Don Carlos、DJ Deeon、Gaughan、Reeves、Reece）。審稿 sd-029 改 10 處、sd-030 改 9 處（多為鉤子誇大出處：「常被誤聽」「一向不碰歌手」「從這張開始」），逐條在 `rulings.md`。WebSearch 工作階段約 95 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-029/030.json,review-sd-029/030.json,held-sd-030.json}`、`desc-tools/batches/{cards,research,output}/sd-029*、sd-030*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 59 鍵逐字回讀 59/59；`front-check` 前台 59/59 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆以《盤名》起句。
+
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 第 B 波：精選 5,000 張進遊戲＋卡片 id 改主站 catalogId、一檔貨、今日推薦集點卡、想要清單加權
 
 - **店主 11-16**：「全卡池……可以先精選五千張」「每回合架上可購買的唱片更換一次，但固定一大批……打完傳說藏家後這一大批再更換成新的一批」「每日上線可收到推薦新專輯，蒐集一週給獎勵」。名單 scratchpad `v5/pool5k/`（抽樣頁 artifact NGyuw7362XNGRdt2dbPbZB），規格 `v5/wave-b/SPEC-B.md`、裁定 `v5/wave-b/rulings.md`。

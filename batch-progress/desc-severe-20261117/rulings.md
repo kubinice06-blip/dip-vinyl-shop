@@ -807,6 +807,53 @@
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
 
+## sd-029（30 張，經典度≥4：Chris & Cosey、Chris Connor、Brotherhood of Breath、Christ.、Christopher Larkin、Christopher Willits、Chrisye、Chucho Valdés 2、Chuck Girard、Ché-SHIZU、CIV、Clear Blue Sky、Cleveland Eaton、Clock DVA、Co-Fusion、Collage、Company、Condition Green、Conrad Schnitzler、Country Cooking、Crayon、Creative Arts Ensemble、Cressida、Crow、Dan Curtin、Barenboim、Danielle Dax、Datblygu、Eraserhead）— s17
+
+- 研究：3 支 Sonnet，WebSearch 12＋15＋14＝41 次。
+- **主線補查**（WebSearch 9 次＋WebFetch，facts 標【主線補查】）：《Heartbeat》（Rough Trade 簽約經過、Melody Maker／Sounds 評語、剪貼人聲與失真吉他）、《Live at Willisau》（Ogun 為它成立、十一人編制、樂團同期聲音）、Crow《Last Chaos》（Negative Insight：大阪 Discharge 傳教士、約 200 張自主壓、1995 重錄版對照）、Datblygu《Libertino》（Libertino Records 以它命名、Louder Than War 對歌詞的描述；仍薄寫）、Schnitzler《Rot》（自費私壓、兩段長曲、Freq 聲音描述）、Company《Company 1》（第一場音樂會的四種三重奏）、Ché-SHIZU《A Journey》（Black Editions 訪談：〈A Journey 2〉在福岡美術館鋼琴上隨手彈出、鋼琴沒收音）。Co-Fusion《Co-fu》查無專輯本身的聲音資料，照研究稿寫「他們的聲音」，不把後期單曲說成這張。
+- 身分／事實裁定：Willisau 錄音日期兩說只寫 1974 Ogun 發行；Company 寫 1976 年 5 月音樂會、1977 Incus 發行；Collage 首張 LP 年份兩說寫 1970 年代初；Condition Green 1977／1978 兩說寫 1970 年代後期；Dan Curtin《Deception》1996／1997 兩說寫 1990 年代後期；Briyumba 的 7/4 曼波不點名；Christ. 不寫「首張全長」與錄音室；Barenboim 不寫錄音地點；Eraserhead 不寫「63 天」；Clock DVA 改正舊稿「十五小時」（成員回憶約八小時）。
+- 前台：寫稿前預查 60 張（sd-029／030）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-029.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Co-Fusion | 「兩人當了十多年夜店 DJ」→「從 1980 年代就當夜店 DJ，1990 年代才轉做」；鉤子與聲音句壓字數 | 「十多年」是推算；字數 |
+| Company | 「一位貝斯手」→「貝斯手 Maarten Altena」；刪重複的「Bailey 彈吉他」 | 四人都具名 |
+| Chris & Cosey | 「TG」兩處 → 「前團」／「Throbbing Gristle」；刪「倒放人聲的循環」、「了」 | 縮寫未交代；字數 |
+| Ché-SHIZU | 鉤子「二胡常被誤聽成向井千惠的人聲」→「向井千惠的二胡，聽起來就像她自己的人聲。」；第二句補團名 | 出處只說二胡像她嗓音，「常被誤聽」誇大 |
+
+其餘逐張四問無改：逐條對過研究稿（Condition Green 台上殺蛇、Country Cooking 兩支麥克風與四萬張、CIV 主唱開刺青店、Chrisye 前作失利、Briyumba 的 Gershwin／Ellington 百歲冥誕、Village Vanguard 的政治背景與 Grammy 都有出處）；《Hollow Knight》用台灣通行譯名《空洞騎士》照收。30 張鉤子前四字互異、加權 ≤50、第二句皆以《盤名》起句；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-029.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
+- onboarding manifest 同步 28 處。
+
+## sd-030（30 張，經典度≥4：Oistrakh、Deafheaven、DEATH SIDE 2、delayde、Dennis Brown、Derribos Arias、Derrick May、Dexter Gordon 2、Dianne Reeves 2、Dick Gaughan 2、Dick Griffin、Die Kreuzen、Die Ärzte、Dirty Art Club、Dizzy Reece 2、DJ Deeon、Django Reinhardt、Shostakovich、Dodo Greene、Dominique A 2、Don Carlos 2、Don Grolnick 2）— s17
+
+- 研究：3 支 Sonnet，WebSearch 15＋10＋12＝37 次。
+- **主線補查**（WebSearch 8 次）：delayde（extended）、DEATH SIDE《Wasted Dream》、Don Carlos《Suffering》（唱片行介紹：We The People Band 的 militant roots 伴奏）、DJ Deeon（RA 對 Dance Mania／Deeon 的評語）、Gaughan《Coppers & Brass》（Topic 介紹：從風笛手與提琴手學來、Tom Hickland 鋼琴、1976 倫敦錄音）、Reeves《The Grand Encounter》（錄音地與節奏組）、Reece《Star Bright》（AAJ 評、五重奏陣容）。
+- **留置 1 張**：delayde《finding solitude》——研究層必查四項＋主線 extended 搜尋，只查得到身分、發行日、客席名單與標籤，Bandcamp 簡介是 placeholder，無任何專輯層級故事或聲音描述；KV 保留舊稿（`held-sd-030.json`）。
+- 身分／事實裁定：Oistrakh 錄音日期三說只寫 1959；Dennis Brown 製作人說法不一不寫、舊稿樂手名單不用；《Mix-Up 5》不寫與英國《The Mayday Mix》同一份；Reeves《The Calling》葛萊美不寫年份（維基屆次對不上）；《The Grand Encounter》客席名單來源衝突，只寫節奏組與製作人；Reece《Star Bright》不寫〈The Rebound〉單曲、Billboard、Well's 首演；Django 不寫 Henri Renaud、1947–49 為戰後新編制；Shostakovich 改正舊稿曲目（EMI 版不含大提琴奏鳴曲）；《Remué》改正舊稿製作人（非 Geoff Pesche）；《Plantation》不寫兩人共同製作；《Nighttown》改正舊稿「全是原創」、《Weaver of Dreams》改正「只有一首標準曲」。
+
+### 主線審稿（2026-11-17，逐張 29 張，改 9 處，改動檔 `review-sd-030.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Oistrakh | 鉤子「卻最愛拉它」→「卻把它列為最愛的曲目之一」；刪「立體聲」、「柴可夫斯基」壓字數 | 出處是「最愛之一」；字數 |
+| DEATH SIDE《Wasted Dream》 | 鉤子「TRAGEDY、CONVERGE 都受過影響的日本 hardcore，是從這張首作開始的」→「TRAGEDY、CONVERGE 都受過 DEATH SIDE 影響，這支樂團的起點是 1989 年」；刪「比後來的作品更直接」 | 影響是樂團整體不是這張開創；推論無出處 |
+| Dodo Greene | 鉤子「Blue Note 一向不碰歌手」→「1962 年，Blue Note 簽下第一位專屬女歌手 Dodo Greene」；刪第二句重複且漏「女」的子句 | 誇大；出處是第一位專屬女歌手 |
+| Grolnick《Weaver of Dreams》 | 刪「被視為 Blue Note 復甦期的範例」 | 研究稿無此評價出處 |
+
+其餘逐張四問無改：逐條對過研究稿（Hanslick「青一塊紫一塊」、Die Kreuzen 車身被噴字、Die Ärzte 因極右暴力重組、Blue Note 在倫敦 Decca 休息日錄《Blues in Trinity》、Shostakovich 單聲道錄音的帶刺弦樂、Daft Punk〈Teachers〉點名 Deeon 皆有出處）；《La Fossette》「四軌卡帶錄音機」是故事核心（臥室錄音），照收。29 張鉤子前四字互異、加權 ≤50、第二句皆以《盤名》起句；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-030.json`；29 張 29 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **29/29 一致**；`front-check` **前台 29/29 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
+- onboarding manifest 同步 27 處。
+- 本工作階段 WebSearch 合計約 95 次（研究層 sd-029 41、sd-030 37，主線 17）。
+
 ## sd-hold-4：sd-016／019 留置卡重查（2 張）— s14
 
 主線自查（WebSearch 3 次，其中 extended 2 次；WebFetch 4 次）。**救回 1、續留置 1**：
