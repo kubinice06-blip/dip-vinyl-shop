@@ -8,6 +8,13 @@
 - **審稿**：sd-051 改 18 處（單一出處去「常被」7 張、Sea Urchins 鉤子與正文矛盾、Swankys 刪重發資訊、3 張補《盤名》），sd-052 改 11 處（〈Amal Hayaty〉刪演唱長度、Tradition 不寫精確年差、3 張補《盤名》）；Umm Kulthum 三張盤名即單一長歌，用〈〉照收。
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-051/052.json,review-sd-051/052.json}`、`desc-tools/batches/{cards,research,output}/sd-051*、sd-052*`、onboarding manifest 59 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 只剩 Umm Kulthum 三張「無《》」；鉤子加權 ≤50、同批前四字互異。WebSearch 約 98 次。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s26：sd-047、sd-048 上線（59 張，留置 1）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-047 上線 29（Robert Nighthawk、Roberta Flack、Rod Taylor 2、Ron Carter、Rorschach、S.E.S. 2、S.L.A.C.K.、S.O.B.、Celibidache、Shahram Nazeri 等），藤井貞泰《Prelude to a Kiss》查無專輯資料留置（`held-sd-047.json`）；sd-048 上線 30（SHAKKAZOMBIE、Sick of It All 3、Siekiera、Sima Bina、Slank、Snakefinger、Sphere、Starless、Stefon Harris 等）。
+- **主線補查**：sd-047 8 張（Third Plane 的 Automatt 一日錄音、Rorschach 訪談、Rod Taylor 錄混音、S.L.A.C.K. 出道經過、Northern Exposure 2 概念等），sd-048 6 張（Snakefinger、Sphere、Starless、Sima Bina 等）。
+- **審稿**：sd-047 寫作層一組 13 張第二句未交代盤名，退件改「《盤名》是……」＋Celibidache 1 處；sd-048 改 8 處（SHAKKAZOMBIE 鉤子換本張材料、Sima Bina 補盤名、Solstice／Sons of Truth 地位句、Stan Forebee 刪無出處的 Rhodes）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-047/048.json,review-sd-047/048.json,held-sd-047.json}`、`desc-tools/batches/{cards,research,output}/sd-047*、sd-048*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 59 鍵 bulk put，回讀 59/59 一致；`front-check` 前台 59/59 新稿、CURATED 0；QA 全過；鉤子加權 ≤50、同批前四字互異。WebSearch 約 130 次。
 
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s23：sd-041、sd-042 上線（60 張，無留置）
 

@@ -1456,3 +1456,47 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-051/052.json`；60 張 60 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 60/60 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 59 處（sd-051 29、sd-052 30）。
 - 本工作階段 WebSearch 合計約 98 次（研究層 sd-051 43、sd-052 40，主線約 15）。
+## sd-047（30 張，經典度≥4：Robert Nighthawk、Roberta Flack、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus、S.E.S. 2、S.L.A.C.K.、S.O.B.、藤井貞泰、Sampaguita、Brugnolini、Sarah Tandy、Sasha & Digweed、Scan 7、Scanner、Scrawl、Second Hand、Secret Shine、Celibidache、Shahram Nazeri）— s26
+
+- 研究：3 支 Sonnet，WebSearch 14＋19＋20＝53 次。
+- **主線補查**（WebSearch 約 12 次＋WebFetch，facts 標【主線補查】）：Ron Carter《Third Plane》（英文維基與《Herbie Hancock Trio》頁：1977 年 7 月巡演途中在 The Automatt 錄一天、同日另一批曲子以 Hancock 名義出；Ethan Iverson 評）→ story ok；Rorschach（Rettman 的 Maggio 訪談：成軍、Pipeline、ABC No Rio）；Rod Taylor《If Jah Should Come Now》（United Reggae：Channel One 錄、Harry J 混、B. Simpson 製作）；S.L.A.C.K.（ototoy：手賣 100 張 CD-R、ZEEBRA／KREVA／宇多丸評價、PSG）——聲音面仍無專輯層級描述，薄寫不寫 beat；Sasha & Digweed《Northern Exposure 2》（英文維基：東西岸兩段旅程、英國合輯榜第 15）；Nazeri（無新料）。
+- **留置**：藤井貞泰《Prelude to a Kiss》——研究層三塊 none，主線補查 3 次（日文盤名、英文盤名＋Discogs、AllMusic 403）仍只有標題，KV 保留舊稿（`held-sd-047.json`）。
+- 身分／事實裁定：Nighthawk 只寫 1964 年錄音，不寫 Rounder 發行年（1979／1980 兩說）；Room 不寫 Richard Hartley；Rod Taylor 不寫樂手名、不把〈His Imperial Majesty〉算進《Where Is Your Love Mankind》；Flack 同名曲葛萊美寫 1974 年；Roy & Diz 不寫錄音地點；S.E.S. 首張寫「1997 年底」；Celibidache 寫 1991 年慕尼黑現場、EMI 1997 身後發行；Nazeri 年份照卡單、不寫 dastgah；Scanner 不寫軌數；Scrawl 不寫 Albini 角色細節；Second Hand 不沿用 Mushroom／Maximum Music／團名由來。
+
+### 主線審稿（2026-11-17，逐張 29 張，改動檔 `review-sd-047.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| 寫作層 1 組 13 張（Nighthawk、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus）＋S.E.S. | 退件：第二句「這是……」改「《盤名》是……」，為壓字數刪 Carey Bell、Scientist 混音、Vermiform 等次要細節 | 第二句交代盤名；QA 無《》 |
+| Celibidache | 「這是」→「《Tchaikovsky: Symphony no. 5》是」 | 同上 |
+
+其餘逐張四問無改：鉤子對過研究稿（Nighthawk 泥土院子裡有人跳舞出自 Bloomfield、Rorschach「第一張被冠上 metalcore 標籤」出自維基、Ruja 禁演影響約十年、Roy Eldridge 是 Gillespie 早年偶像、Roots Radics 被評為主導八〇年代前半、Celibidache「音樂不是罐頭」、Nazeri 只有塞塔爾與兩種鼓、Second Hand 電影後來被禁）。Dransfield 末句 rout 字義屬盤名冷知識一句，與民謠採集相關，照收。29 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-047.json`；29 張 29 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **29/29 一致**；`front-check` **前台 29/29 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-048（30 張，經典度≥4：SHAKKAZOMBIE、Shape of Despair、Sheer Terror、Shelter、Sick of It All 3、Side by Side、Siekiera、Silas Hogan、Silent Phase、Silicon Scally、Sima Bina、Simon Joyner、Slank、Smash、Smegma、Snakefinger、Snuffy Jenkins、Solstice、Sonny Fortune、Sonny Red、Sons of Truth、Sphere、Spick & Span、Spirogyra、Stan Forebee、Starless、Steel Mill、Stefon Harris）— s26
+
+- 研究：3 支 Sonnet，WebSearch 21＋16＋18＝55 次；無 none。
+- **主線補查**（WebSearch 約 10 次＋WebFetch）：Snakefinger（Trouser Press：Lithman、Chilli Willi、Residents 共同作曲製作；Tiny Mix Tapes「不是 Residents 做的最好的 Residents 專輯」）；Sphere、Starless、Sonny Red、Spick & Span（再搜無新料，研究稿已有 Strata 背景、Starless 錄音地與陣容、Better Days 首作）；Silicon Scally（Hot Press 只再確認「豐富、交響式」）；Sima Bina（再搜無專輯層級資料，只寫歌手背景與南呼羅珊曲目特性，不寫伴奏編制）；SHAKKAZOMBIE（無新料，薄寫）。
+- 身分／事實裁定：SHAKKAZOMBIE 成員為 OSUMI、IGNITION MAN、TSUTCHIE（派工特注的 Ohshima、DJ HIDE 查無，為協調端誤記，不用）；Siekiera 照實寫 2008 年合輯、錄音取自 1984；Sheer Terror、Silas Hogan 不寫年份，Sick of It All《Blood, Sweat, and No Tears》不寫日期、不寫 Rolling Stone 名次；Silicon Scally 不寫 2020 Vision；Solstice 不寫康瓦爾錄音與六人編制；Sphere 寫底特律 Strata（非 Strata-East）；Steel Mill 不寫浴室錄長笛；Spick & Span 大徳俊幸用日文原字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 8 處，改動檔 `review-sd-048.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Solstice | 「作品並列為……重要唱片」→「樂團常與……並列為……一員」 | 官網說的是樂團被並列，不是唱片地位 |
+| Sons of Truth | 「常被稱為」→「被稱為」；俱樂部一句改順 | 出處只有 Ace／BGP |
+| Stan Forebee | 刪「以 Rhodes 電鋼琴與色彩豐富的和弦進行為底」 | 那是他整體風格，研究稿沒說這張如此 |
+| SHAKKAZOMBIE | 鉤子由泛論「擅長用合作帶新人」改為 Nitro 三位 MC 一起登場；客席句改寫、刪 Cisco 一句 | 鉤子要取本張材料；字數 |
+| Sima Bina | 第二句補《盤名》；刪 9 歲上電台與師承一句、radif 補說明 | 第二句交代盤名；字數 |
+
+其餘逐張四問無改：Sheer Terror 在 CBGB 場內白天錄音、Side by Side 鼓手 14 歲、Siekiera 1984 Jarocin、Silas Hogan 煉油廠、Steel Mill 唱片上市前已解散、Stefon Harris 間奏串成組曲、Spirogyra「失落的傑作」（維基轉述評論，只在正文）皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-048.json`；30 張 30 鍵（皆非 CJK，原無 desc4）bulk put Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 130 次（研究層 108，主線約 22）。

@@ -116,8 +116,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-044 | 經典度≥4（Nieuw Ensemble … Paul Chambers） | 30 | s24 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-045 | 經典度≥4（Paul Jackson … Quartetto Italiano） | 30 | s25 | ✅ 上線 30（前台 30；無留置；主線補查 8 張；CURATED 0） |
 | sd-046 | 經典度≥4（Quicksand … Robb Kunkel） | 30 | s25 | ✅ 上線 30（前台 30；無留置；主線補查 9 張；CURATED 0） |
-| sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | | |
-| sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | | |
+| sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | s26 | ✅ 上線 29（前台 29；藤井貞泰《Prelude to a Kiss》查無專輯資料留置；主線補查 8 張；CURATED 0） |
+| sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | s26 | ✅ 上線 30（前台 30；無留置；主線補查 6 張；CURATED 0） |
 | sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | | |
 | sd-050 | 經典度≥4（The Black Skirts … The Mercy's） | 30 | | |
 | sd-051 | 經典度≥4（The Monochrome Set … Titus Groan） | 30 | s28 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
