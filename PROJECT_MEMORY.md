@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s42：sd-078、sd-079 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-078 上線 30（Linval Thompson 2、Lithics、Little John 2、Little Johnny Taylor、Longstone、Lorde、Los Destellos、Los Mirlos、Los Van Van、Los Wembler's、Los Ángeles Negros、Lou Donaldson 11、Louis Smith、Love、Love Tractor、Lowfish、Lucília do Carmo、Lull）；sd-079 上線 30（Lustmord、Lycia、Lyman Enloe、Līvi、Ma Chérie for Painting、Macroblank、Mad Professor 4、Magna Carta、Maher Shalal Hash Baz、Main 2、Sweet Basil 2、MALTA 4、Manhattan Jazz Quintet 2、Manual、Maple、Marc Houle、Marcus Printup、Marijannah、Marjan、Mark Heard、Marlena Shaw）。
+- **主線補查**：Little John、Linval Thompson、Los Destellos、Los Wembler's（Discogs＋西文維基推翻研究層「只有舊稿說」）、Los Ángeles Negros；MALTA 官網經歷救回《My Hit & Run》《Sapphire》兩張 none；Mad Professor Part 4／10；Marlena Shaw 無新料薄寫。
+- **審稿**：sd-078 改 4 處、sd-079 改 12 處（Sweet Basil 兩卷補長盤名後整段重寫、鉤子錯開；單一出處「常被視為」降級），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-078.json,review-sd-079.json,kv-before-sd-078.json,kv-before-sd-079.json}`、`desc-tools/batches/{cards,research,output}/sd-07[89]*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s45：sd-084、sd-085 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-084 上線 30（Prince Jazzbo、Princess Sharifa、Alex Bradford、Harold Boggs 3、Project Lazarus 2、Prolapse、Providence、Proxyon 2、Prysm 4、Purl、Purrple Cat 9、Quantec、Quasar、quasimode 2）；sd-085 上線 30（Quatuor Diotima、Quilapayún、Rabit、Radar 2、raison d'être 2、Random Rab、Ali／Jenkins、Ravi Coltrane、Ray & Ina Patterson、Refrigerator、Renee Rosnes 4、Ressurection 2、Retsin、Reuben Wilson 3、Bernard Avant、Revolutionary Dub Warriors、Rheinallt H. Rowlands、Groove Holmes 2、Beirach、Margitza、Riow Arai）。Purrple Cat 9 張、Radar 2、Riow Arai 等照 delayde 前例薄寫上線。

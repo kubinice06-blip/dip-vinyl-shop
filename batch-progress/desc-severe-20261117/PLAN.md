@@ -149,8 +149,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | s40 | ✅ 上線 30（前台 30；無留置；主線補查 15 張；Kareem Ali、Kangaroo 薄寫；CURATED 0） |
 | sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Christmas、Lacrimosa、Hays 2 等；CURATED 0） |
 | sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Lauge、Ritenour、Life's Blood、Linval Thompson 等；respect.her 薄寫；CURATED 0） |
-| sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
-| sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
+| sd-078 | 其餘（Linval Thompson … Lull） | 30 | s42 | ✅ 上線 30（前台 30；無留置；主線補查 Little John、Linval Thompson、Destellos、Wembler's、Ángeles Negros；Wembler's、Ángeles Negros 薄寫；CURATED 0） |
+| sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | s42 | ✅ 上線 30（前台 30；無留置；主線補查 MALTA 3（官網經歷救回 none 2）、Mad Professor 2、Marlena Shaw；Maple、MALTA 等薄寫；CURATED 0） |
 | sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
 | sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
 | sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | | |
