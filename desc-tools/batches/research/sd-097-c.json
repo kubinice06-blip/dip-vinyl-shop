@@ -346,5 +346,53 @@
    "sound": "thin"
   },
   "notes": "舊稿全是廠牌日期、曲長、曲數，不沿用；「集中在 2006–2010 年的四家小廠牌」可由 Discogs 年表支持，但 Discogs 還顯示更多（Overflow、Piece Communications、Field Records 等），不止四家。「72 分鐘」未核實。查了（皆沒有內容）：Silent Season Bandcamp（來回 301／303 轉址迴圈，curl 與 WebFetch 都拿不到專輯頁文案）、silentseason.com 首頁（只有廠牌自述，無此藝人）、Discogs release／artist／label（無 notes，僅限量版包裝）、Wikipedia（無）、WebSearch 2 次（第一次被書籍結果淹沒，第二次認錯成另一位 CLAIN）、RA 特輯頁（不是目標）、藝人官網 djorvinmathiasdclain.com（本工作階段網路不通，需放行該網域才能讀）。沒有任何樂評、訪談或這張專輯的聲音描述，no sound facts 具體可寫；story 為 none。寫作層只能薄寫（地位＋廠牌自述＋風格標籤），不要編造聲音細節。主線補查建議：放行 djorvinmathiasdclain.com 後讀官網，或找 Silent Season Bandcamp 文案。"
+ },
+ {
+  "key": "dub ghecko|love to the power of each",
+  "artist": "Dub Ghecko",
+  "album": "Love to the Power of Each",
+  "facts": [
+   {
+    "text": "Dub Ghecko 是 Jack Lundie 的個人名義；Lundie 同時是 Henry & Louis 二人組的一員。",
+    "src": "https://api.discogs.com/artists/91907",
+    "block": "what"
+   },
+   {
+    "text": "Henry & Louis 是布里斯托的 Jack Lundie 與 Andy Scholes，自 1980 年代末起在英格蘭西部做 dub，數年後開了自己的 2 Kings 廠牌；部落格形容他們守著 roots 與 dub，並探索其邊界。",
+    "src": "https://otwradio.blogspot.com/2008/09/",
+    "block": "what"
+   },
+   {
+    "text": "這張 1996 年由英國 Dubhead 廠牌發行（CD）；Dubhead 同年也出過《Dubhead Volume Three》等合輯，他另有曲子在 1997 年《A New Breed Of Dub》、1998 年《Dubhead - Volume Four》等合輯出現。",
+    "src": "https://api.discogs.com/artists/91907/releases?per_page=30",
+    "block": "what"
+   },
+   {
+    "text": "全部在布里斯托的 2 King Studio、Vision Factory 製作。",
+    "src": "https://api.discogs.com/releases/406797",
+    "block": "story"
+   },
+   {
+    "text": "CD 版共 15 軌，除了 13 首原曲，另有兩首他人混音：〈Love To The Power Of Each〉的 Smith & Mighty 混音，以及〈Big Fish〉的 Armagideon Small Fry Rising 混音。Smith & Mighty 是布里斯托的 Rob Smith 與 Ray Mighty，被稱為先驅布里斯托聲音，之後創立 More Rockers 廠牌。",
+    "src": "https://api.discogs.com/releases/406797",
+    "block": "story"
+   },
+   {
+    "text": "Smith & Mighty 的背景：做過 Massive Attack 首張單曲〈Any Love〉（1988）的製作，並以 breakbeat、dub 與 reggae 影響的音樂聞名。",
+    "src": "https://en.wikipedia.org/wiki/Smith_%26_Mighty",
+    "block": "story"
+   },
+   {
+    "text": "Discogs 分類為 Electronic／Reggae，風格 Dub；AllMusic 登記發行日為 1996 年 10 月 17 日，全長約 67 分鐘。",
+    "src": "https://api.discogs.com/releases/1092311",
+    "block": "sound"
+   }
+  ],
+  "coverage": {
+   "what": "thin",
+   "story": "thin",
+   "sound": "none"
+  },
+  "notes": "舊稿「別名 Dub Checko、來自英國」「CD 比黑膠多出三首與兩首混音」全是版本與曲目差異，不沿用；英國、Jack Lundie 來自 Discogs 可信，「別名 Dub Checko」未核實。末軌括號拼法 Armagiedon／Armagideon 屬版本拼寫，不寫。查了：Discogs release／artist／label（無 notes，只有『All tracks produced @ 2 King Studio, Vision Factory, Bristol』）、AllMusic（403，WebSearch 只確認有此專輯）、維基（無 Dub Ghecko 頁）、Smith & Mighty 維基（沒提這次混音）、WebSearch 2 次（無樂評、無 Dubhead 廠牌史）、Discogs 廠牌頁（403）。沒有任何對這張聲音或創作的描述，sound 標 none，story 薄。建議寫作層薄寫：布里斯托 dub 的出身、Dubhead、Smith & Mighty 混音這種身分資訊，不要編聲音。主線若要補查，可試 Dubhead 廠牌回顧、Henry & Louis 訪談（2 Kings 廠牌）。"
  }
 ]
