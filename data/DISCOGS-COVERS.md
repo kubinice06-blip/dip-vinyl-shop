@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **1020** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 778、已退回 1）。
-最後更新：2026-11-15
+共 **1021** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 779、已退回 1）。
+最後更新：2026-11-17
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -1784,3 +1784,9 @@
 | 青山 《青山之歌》 | [#10527061](https://www.discogs.com/release/10527061) | 1969 | 崑崙 K.L.C. | KLC 1028 | 年份 1969、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | 高柳昌行 《銀巴里セッション》 | [#4126389](https://www.discogs.com/release/4126389) | 1977 | Three Blind Mice | TBM-2509 | 廠牌 Three Blind Mice、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
 | 鳳飛飛 《想要彈同調》 | [#32109639](https://www.discogs.com/release/32109639) | 1992 | EMI 百代 | ED-2010 | 年份 1992、Discogs master 的版本、藝人與盤名相符、主線 2026-11-14 兩票目視驗證（設計＋品質） | ok |
+
+## sd-fix-1（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 張璐 《繁星點點》 | [#33707097](https://www.discogs.com/release/33707097) | 1977 | 環球唱片 | ULP-5125 | 年份 1977、廠牌 環球唱片、曲目與串流版十一首相符；主線 2026-11-17 看圖核對（同一張照片，原版封面印張璐、串流封面被改字成張露） | ok |

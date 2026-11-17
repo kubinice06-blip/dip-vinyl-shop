@@ -64,8 +64,10 @@ const get = async (coll, id) => {
 
 const rows = buildMap().map(x => ({
   ...x,
-  oldId: cardIdOf(x.oldArtist, x.album),
-  newId: cardIdOf(x.newArtist, x.album),
+  // 2026-11-17 sd-fix-1：盤名也一起改時，map 可給 oldAlbum／newAlbum（沒給就沿用 album）
+  oldId: cardIdOf(x.oldArtist, x.oldAlbum ?? x.album),
+  newId: cardIdOf(x.newArtist, x.newAlbum ?? x.album),
+  album: x.newAlbum ?? x.album,
 }));
 console.log(`對照表 ${rows.length} 筆｜模式：${WRITE ? (DELETE_OLD ? '寫入並刪除舊文件' : '寫入') : '乾跑'}`);
 
@@ -107,6 +109,7 @@ let ok = 0, fail = 0;
 for (const t of todo) {
   const f = JSON.parse(JSON.stringify(t.doc.fields || {}));
   if (f.artist) f.artist = { stringValue: t.newArtist };
+  if (f.album && t.newAlbum) f.album = { stringValue: t.newAlbum };
   if (f.cardId) f.cardId = { stringValue: t.newId };
   const res = await fetch(`${FIRESTORE}/card_catalog/${encodeURIComponent(t.newId)}?key=${API_KEY}`, {
     method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ fields: f }),
