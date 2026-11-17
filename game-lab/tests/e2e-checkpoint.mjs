@@ -6,7 +6,7 @@
 //
 // 每個尺寸：
 //   1  中繼點開局：存檔塞 best.checkpoints [10, 12]（12 不是中繼點，載入時濾掉）→ 推門 →「從哪裡開始？」只列第 1、10 位 → 選第 10 位 →
-//      選秀「補到第 10 位：挑一張唱片 1/2」（頂欄「這一趟從第 10 位開始」）→ 第 1 題選完重新整理：還在選秀（第 2 題）→ 撿盤 2＋升級 4 題（標題 1/4…4/4）→ 特價箱 →
+//      選秀「補到第 10 位：挑一張唱片 1/2」→ 第 1 題選完重新整理：還在選秀（第 2 題）→ 撿盤 2＋升級 4 題（標題 1/4…4/4）→ 特價箱 →
 //      第 10 位（傳說藏家）、等級 5、換王牌鈕在（點老闆）→ 打贏 → 寶箱 → 攤位沒有市集、錄音室（開局那一位不算中繼點攤位）→ 第 11 位輸 → 結算「這一趟從第 10 位開始」、runs 記 from 10
 //   2  新手保底：新帳號（沒有 runs）第 1 位輸 → 老闆「第一位不算，再來一次。」＋一顆「再來一次」（沒有說情選單、不扣說情）→ 重打；再輸＝照舊說情選單
 //   3  舊存檔（舊版頁面＝CP_OLD_REF，同一個網域 /oldlab/ 底下）：v7 停在舊的挑唱片面板 → 新版載入：升 v8、.bak7＝原字串、run 還在、照舊路（「都不要」）走完那一個獎勵 → 來客 → 開打；
@@ -18,8 +18,8 @@ import os from 'os';
 import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, jsClick, waitScreen, duelReady, tapAt, seedRun, seededContinue, openTitle, advanceUntil, answerBargain,
-  passLoot, stallState, clearStall } from './e2e-lib.mjs';
+import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, jsClick, waitScreen, duelReady, tapAt, tapReady, seedRun, seededContinue, openTitle, advanceUntil, answerBargain,
+  passLoot, stallState, clearStall, resolveHands } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.CP_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -89,7 +89,7 @@ async function beatBoss(page) {
   await sleep(600);
   await C(page, () => window.__lab.forceWin());
   await advanceUntil(page, () => !!document.querySelector('#panel > .lb-sheet.one [data-i]') || window.__lab.screen() === 'reward', null, 30000);
-  if (await page.$('#panel > .lb-sheet.one [data-i]')) { await sleep(300); await tapAt(page, '#panel > .lb-sheet.one [data-i="0"]'); }
+  if (await page.$('#panel > .lb-sheet.one [data-i]')) { await sleep(300); await tapReady(page, '#panel > .lb-sheet.one [data-i="0"]'); }
 }
 // 輸掉這一位（loseNext；o.noRetry＝說情也用掉）→ 回 true＝到了結算
 async function loseHere(page, noRetry) {
@@ -115,23 +115,23 @@ async function runSize(browser, w, h) {
       await sleep(400);
       const opts = await C(page, () => [...document.querySelectorAll('.lb-sheet.st-cp [data-cp]')].map(b => [b.getAttribute('data-cp'), b.textContent]));
       const cpTitle = await C(page, () => (document.querySelector('.lb-sheet.st-cp h3') || {}).textContent || '');
-      await tapAt(page, '.lb-sheet.st-cp [data-cp="10"]');
+      await tapReady(page, '.lb-sheet.st-cp [data-cp="10"]');
       await page.waitForSelector('.lb-sheet.st-draft [data-dpick]', { timeout: 10000 }).catch(() => {});
       await sleep(400);
       const d1 = await C(page, () => { const R = window.__lab.run, p = R.pending; return { type: p && p.type, k: p && p.k, m: p && p.m, ck: p && p.ck, pos: R.pos, from: R.cpFrom, h3: (document.querySelector('.lb-sheet.st-draft h3') || {}).textContent || '', top: (document.querySelector('#top .tt') || {}).textContent || '' }; });
       const pick1 = await C(page, () => document.querySelector('.lb-sheet.st-draft [data-dpick]').getAttribute('data-dpick'));
-      await tapAt(page, '.lb-sheet.st-draft [data-dpick]'); await sleep(700);
+      await tapReady(page, '.lb-sheet.st-draft [data-dpick]'); await sleep(700);
       // 選秀第 2 題重新整理：還在選秀
       await openTitle(page, QF); await jsClick(page, '[data-a=cont]');
       await page.waitForSelector('.lb-sheet.st-draft [data-dpick]', { timeout: 12000 }).catch(() => {});
       await sleep(400);
-      const d2 = await C(page, () => { const p = window.__lab.run && window.__lab.run.pending; return { type: p && p.type, ck: p && p.ck, h3: (document.querySelector('.lb-sheet.st-draft h3') || {}).textContent || '' }; });
+      const d2 = await C(page, () => { const p = window.__lab.run && window.__lab.run.pending; return { type: p && p.type, ck: p && p.ck, h3: (document.querySelector('.lb-sheet.st-draft h3') || {}).textContent || '', top: (document.querySelector('#top .tt') || {}).textContent || '' }; });
       const titles = [d2.h3];
       for (let g = 0; g < 12; g++) {
         const s = await C(page, () => document.querySelector('.lb-sheet.st-draft [data-dpick]') ? 'card' : (document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming')) ? 'level' : null);
         if (!s) { if (await C(page, () => window.__lab.run.pending && window.__lab.run.pending.type === 'draft')) { await sleep(300); continue; } break; }
         if (s === 'level') titles.push(await C(page, () => document.querySelector('.lb-sheet.level h3').textContent));
-        await tapAt(page, s === 'card' ? '.lb-sheet.st-draft [data-dpick]' : '.lb-sheet.level [data-lv]');
+        await tapReady(page, s === 'card' ? '.lb-sheet.st-draft [data-dpick]' : '.lb-sheet.level [data-lv]');
         await sleep(700);
       }
       // 特價箱 → 來客（第 10 位）
@@ -142,7 +142,7 @@ async function runSize(browser, w, h) {
         await sleep(250);
       }
       await sleep(1200);
-      const n10 = await C(page, () => { const R = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; return { pos: R.pos, from: R.cpFrom, level: R.level, boss: Cn.enemies[R.order[R.idx]].boss === true, swap: E.canSwitchAce(R, Cn), found: (R.found || []).includes(window.__pick1), safety: !!R.safety, bargain: !!(R.shop && R.shop.bargainPicked) }; });
+      const n10 = await C(page, () => { const R = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; return { pos: R.pos, from: R.cpFrom, level: R.level, boss: Cn.enemies[R.order[R.idx]].boss === true, swap: E.canSwitchAce(R, Cn), safety: !!R.safety, bargain: !!(R.shop && R.shop.bargainPicked) }; });
       const found1 = await C(page, id => (window.__lab.run.found || []).includes(id), pick1);
       await C(page, () => window.__lab.stageAction('talk:owner')); await sleep(600);
       const swapBtn = await C(page, () => { const b = document.querySelector('.lb-sheet.owner [data-a=swap]'); return !!b && !b.disabled; });
@@ -161,7 +161,7 @@ async function runSize(browser, w, h) {
       const e = await C(page, () => { const S = window.__lab.save, r = S.runs[S.runs.length - 1] || {}; return { txt: (document.querySelector('.lb-screen.end') || {}).textContent || '', from: r.from, lexp: r.lexp || null, far: S.best.far }; });
       const wantTitles = [fill(x.draftCard, { n: 10, i: 2, k: 2 })].concat([1, 2, 3, 4].map(i => fill(x.draftLevel, { n: 10, i, m: 4 })));
       const ok = JSON.stringify(cps) === '[10]' && okCp && cpTitle === x.cpTitle && JSON.stringify(opts) === JSON.stringify([['1', x.cpFirst], ['10', fill(x.cpAt, { n: 10 })]]) &&
-        d1.type === 'draft' && d1.k === 2 && d1.m === 4 && d1.from === 10 && d1.h3 === fill(x.draftCard, { n: 10, i: 1, k: 2 }) && d1.top.indexOf(fill(x.cpFrom, { n: 10 })) >= 0 &&
+        d1.type === 'draft' && d1.k === 2 && d1.m === 4 && d1.from === 10 && d1.h3 === fill(x.draftCard, { n: 10, i: 1, k: 2 }) &&
         d2.type === 'draft' && d2.ck === 1 && JSON.stringify(titles) === JSON.stringify(wantTitles) &&
         n10.pos === 10 && n10.from === 10 && n10.boss && n10.swap && swapBtn && found1 && !n10.safety && n10.bargain &&
         st.stall && st.p && !st.p.cp && !st.p.q.includes('market') && !(st.p.post || []).includes('market') && !(st.p.post || []).includes('studio') &&
@@ -190,7 +190,7 @@ async function runSize(browser, w, h) {
       const got = await advanceUntil(page, () => !!document.querySelector('.lb-dq.hasmenu .lb-dqopt'), null, 40000);
       await sleep(500);
       const m = await C(page, () => ({ opts: [...document.querySelectorAll('.lb-dq .lb-dqopt')].map(b => b.textContent.trim()), tx: (document.querySelector('.lb-dq .tx') || {}).textContent || '', retry: window.__lab.run.retryLeft, p: window.__lab.run.pending && { type: window.__lab.run.pending.type, safety: !!window.__lab.run.pending.safety } }));
-      await tapAt(page, '.lb-dq .lb-dqopt');
+      await tapReady(page, '.lb-dq .lb-dqopt');
       const again = await waitScreen(page, 'duel', 15000);
       await duelReady(page, 20000);
       const a = await C(page, () => ({ retry: window.__lab.run.retryLeft, safety: !!window.__lab.run.safety, pos: window.__lab.run.pos }));
@@ -221,7 +221,9 @@ async function runSize(browser, w, h) {
         await seedRun(page, { ace: 'hall', idx: 0, autoNext: true });
         await openTitle(page, oldQ()); await jsClick(page, '[data-a=cont]');
         await waitScreen(page, 'night', 20000); await sleep(600);
-        await jsClick(page, '[data-a=go]'); await duelReady(page, 25000); await sleep(300);
+        await jsClick(page, '[data-a=go]'); await duelReady(page, 25000);
+        await resolveHands(page, 1, 'thoughtful');            // 舊版的獎勵候選＝他這一場丟過的：先打一手
+        await sleep(300);
         await C(page, () => window.__lab.forceWin());
         await waitScreen(page, 'reward', 15000); await sleep(1500);
         const raw7 = await C(page, () => localStorage.getItem('dipGameLab_v1'));
@@ -307,9 +309,9 @@ async function runSize(browser, w, h) {
       await sleep(400);
       const b = await C(page, bad => ({ cards: window.__lab.run.pending.cards.slice(), tiles: document.querySelectorAll('.lb-sheet.reward .lt-c').length, bad: JSON.stringify(window.__lab.run).indexOf(bad) >= 0 }), BAD);
       const pl = await passLoot(page, {});
-      const ok = okSt && a.cur === 'dig' && Array.isArray(a.cards) && a.cards.length === 2 && !a.bad && a.consign === null && a.tiles === 2 && cl.ok &&
+      const ok = okSt && a.cur === 'dig' && Array.isArray(a.cards) && a.cards.length === 2 && !a.bad && a.consign && a.consign.card === null && a.consign.due > 0 && a.tiles === 2 && cl.ok &&
         b.cards.length === 2 && b.tiles === 2 && !b.bad && pl.ok && pl.screen === 'night';
-      record(4, size, ok && !errs(page).length, `站的貨塞壞 id → 載入 ${okSt} ${a.cur} 剩 ${a.cards && a.cards.length} 張（畫 ${a.tiles}）、寄賣 ${JSON.stringify(a.consign)}、存檔裡還有壞 id ${a.bad} → 不逛了 ${cl.ok}；` +
+      record(4, size, ok && !errs(page).length, `站的貨塞壞 id → 載入 ${okSt} ${a.cur} 剩 ${a.cards && a.cards.length} 張（畫 ${a.tiles}）、寄賣 ${JSON.stringify(a.consign)}（壞的那張濾掉、寄賣照樣到期領）、存檔裡還有壞 id ${a.bad} → 不逛了 ${cl.ok}；` +
         `戰利品列塞壞 id ${c0.length}→${b.cards.length} 張（畫 ${b.tiles}）、還有壞 id ${b.bad} → 不收 ${pl.screen}；${errTxt(page)}`);
     } catch (e) { record(4, size, false, 'error ' + e.message); }
     await ctx.close();

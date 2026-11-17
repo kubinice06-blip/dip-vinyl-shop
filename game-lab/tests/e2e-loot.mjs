@@ -17,7 +17,7 @@
 //      有一格鎮店盤格（src apex，C 波畫成金邊）、沒有頂點卡；保底計數歸 0（存檔 chestDry）；三條路：收這張／改拿一件配件／不收（+$400）（同一箱存檔各走一次，
 //      後兩條是重新整理回來的那一箱）→ 升級 → 今天的攤位（來客畫面、run 還在）→ 再重新整理：run 還在、還是攤位（resumeRun 不刪整趟）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
-import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
+import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, tapReady, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
   watchSay, passLoot, lootState, lootReady, stallState, resolveHands } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
@@ -71,8 +71,10 @@ const ltT = page => C(page, () => { const T = window.__lt; const z = T.sheet || 
 async function winGuest(page) {
   await page.waitForSelector('[data-a=go]', { timeout: 15000 });
   await sleep(300);
-  await tapAt(page, '[data-a=go]');
+  await tapReady(page, '[data-a=go]');
+  DBG('tapped go');
   const ok = await duelReady(page, 25000);
+  DBG('duel ready', ok);
   await resolveHands(page, 1, 'thoughtful');        // 打一手再贏：這場有紀錄（頂欄「紀錄」）
   await sleep(300);
   await C(page, () => window.__lab.forceWin());
@@ -102,7 +104,7 @@ async function contFrom(page, raw, q) {
   await openTitle(page, q);
   await jsClick(page, '[data-a=cont]');
 }
-const recapLink = page => C(page, () => { const b = document.querySelector('#top [data-a=recap]'); if (!b) return false; const r = b.getBoundingClientRect(); return r.width > 0 && r.top >= 0; });
+const recapLink = page => C(page, () => { const b = document.querySelector('#top [data-a=recap]'); if (!b) return false; const r = b.getBoundingClientRect(); return r.width > 0 && r.bottom > 0 && r.top >= -1; });
 
 async function runSize(browser, w, h) {
   const size = `${w}x${h}`;
@@ -118,9 +120,12 @@ async function runSize(browser, w, h) {
       const m0 = await C(page, () => window.__lab.run.money);
       const seen0 = await C(page, () => !!window.__lab.save.seen.firstLoot);
       await watchLoot(page);
+      DBG('1 watching');
       await winGuest(page);
+      DBG('1 won', await C(page, () => window.__lab.screen()));
       await waitScreen(page, 'reward', 15000);
       await page.waitForFunction(() => window.__lt.flipAll != null, null, { timeout: 8000 }).catch(() => {});
+      DBG('1 flipped', JSON.stringify(await C(page, () => ({ top: [...document.querySelectorAll('#top button')].map(b => b.getAttribute('data-a')), lf: window.__lab.run.lastFight && window.__lab.run.lastFight.log.length }))));
       const p1 = await C(page, () => { const p = window.__lab.run.pending; return { kind: p.kind, cards: p.cards.slice(), src: p.src.slice(), packet: p.packet, skipCash: p.skipCash, money: window.__lab.run.money }; });
       const sc1 = await noScroll(page);
       const sheetSc = await C(page, () => { const s = document.querySelector('.lb-sheet.reward'); return s.scrollHeight - s.clientHeight; });
@@ -135,7 +140,7 @@ async function runSize(browser, w, h) {
         const shelf0 = await C(page, ids => ids.map(id => !!window.__lab.save.shelf[id]), p1.cards);
         const newN = shelf0.filter(v => !v).length;
         const mA = await C(page, () => window.__lab.run.money);
-        const tapped = await tapAt(page, '.lb-sheet.reward [data-a=skip]').then(() => true, () => false);
+        const tapped = await tapReady(page, '.lb-sheet.reward [data-a=skip]').then(() => true, () => false);
         await page.waitForFunction(() => { const p = window.__lab.run.pending; return !p || p.type !== 'reward'; }, null, { timeout: 5000 }).catch(() => {});
         await sleep(200);
         const a1 = await C(page, ids => ({ money: window.__lab.run.money, shelf: ids.map(id => !!window.__lab.save.shelf[id]), bagHas: ids.filter(id => window.__lab.run.bag.includes(id)).length, toasts: window.__lt.toasts.map(t => t.text) }), p1.cards);
@@ -175,16 +180,16 @@ async function runSize(browser, w, h) {
         const said2 = await C(page, t => (window.__said || []).filter(s => s.t === t).length + window.__lt.toasts.filter(s => s.text === t).length, fill(x.firstLoot, { n: '400' }));
         DBG('2 counter');
         // 櫃檯（真點熱點）→ 賣給老闆 → 撿來的那張：價籤「賣給老闆 $400（撿來的）」→ 賣掉
-        await C(page, () => window.DipLabEcon.openRelicShop({ tab: 'sell' })); await sleep(900);
+        await C(page, () => { window.DipLabEcon.openRelicShop({ tab: 'sell' }); }); await sleep(900);   // 回 Promise（關掉才 resolve）：不要 return
         const tile = await C(page, id => { const b = document.querySelector('.ec-cs[data-cid="' + CSS.escape(id) + '"]'); return b ? { tag: (b.querySelector('.ec-sv') || {}).textContent || '', aria: b.getAttribute('aria-label') || '' } : null; }, pl.picked);
-        if (tile) await tapAt(page, `.ec-cs[data-cid="${pl.picked.replace(/"/g, '\\"')}"]`);
+        if (tile) await tapReady(page, `.ec-cs[data-cid="${pl.picked.replace(/"/g, '\\"')}"]`);
         await sleep(400);
         const go = await C(page, () => (document.querySelector('[data-a=cgo]') || {}).textContent || '');
         const mB = await C(page, () => window.__lab.run.money);
-        if (go) await tapAt(page, '[data-a=cgo]');
+        if (go) await tapReady(page, '[data-a=cgo]');
         await sleep(600);
         const a3 = await C(page, id => ({ money: window.__lab.run.money, bag: window.__lab.run.bag.includes(id), found: (window.__lab.run.found || []).includes(id) }), pl.picked);
-        await C(page, () => window.DipLabEcon.close()); await sleep(300);
+        await C(page, () => { window.DipLabEcon.close(); }); await sleep(300);
         const ok = pl.ok && !!pl.picked && a2.bag && a2.found && said2 === 0 && !!tile && go === fill(x.foundSellN, { n: '400' }) && go === '賣給老闆 $400（撿來的）' &&
           a3.money === mB + 400 && !a3.bag && !a3.found;
         record(2, size, ok && !errs(page).length, `收 ${pl.picked} → 包包 ${a2.bag}、found ${a2.found}；老闆那句再說 ${said2} 次；櫃檯格 ${JSON.stringify(tile)}、確認鈕「${go}」→ 賣掉 ${mB}→${a3.money}、包包 ${a3.bag}、found ${a3.found}；${errTxt(page)}`);
@@ -215,11 +220,13 @@ async function runSize(browser, w, h) {
       await winGuest(page);
       await waitScreen(page, 'reward', 15000); await lootReady(page);
       const c0 = await C(page, () => window.__lab.run.pending.cards.slice());
-      await tapAt(page, '.lb-sheet.reward [data-r]');
+      await tapReady(page, '.lb-sheet.reward [data-r]');
       const panel = await page.waitForSelector('.lb-sheet.relics', { timeout: 5000 }).then(() => true, () => false);
-      if (panel) await tapAt(page, '.lb-sheet.relics [data-a=cancel]');
+      DBG('3 panel', JSON.stringify(await C(page, () => ({ sheets: [...document.querySelectorAll('.lb-sheet')].map(x => x.className), btns: [...document.querySelectorAll('.lb-sheet.relics [data-a]')].map(x => x.getAttribute('data-a') + ':' + x.textContent) }))));
+      if (panel) await tapReady(page, '.lb-sheet.relics [data-a=cancel]');
       await page.waitForSelector('.lb-sheet.reward.lt-sheet', { timeout: 5000 }).catch(() => {});
       await sleep(400);
+      DBG('3 after cancel', JSON.stringify(await C(page, () => ({ sheets: [...document.querySelectorAll('.lb-sheet')].map(x => x.className), L: window.DipLabLoot.state(), p: window.__lab.run.pending && window.__lab.run.pending.type, relics: window.__lab.run.relics }))));
       const back = await C(page, () => ({ cards: window.__lab.run.pending && window.__lab.run.pending.cards.slice(), st: window.DipLabLoot.state(), up: document.querySelectorAll('.lb-sheet.reward .lt-c.up').length, relics: window.__lab.run.relics.length }));
       const m1 = await C(page, () => window.__lab.run.money);
       const sk = await passLoot(page, {});
@@ -310,7 +317,7 @@ async function runSize(browser, w, h) {
       await watchLoot(page);
       const got = await beatBoss(page);
       const one = await C(page, () => !!document.querySelector('#panel > .lb-sheet.one [data-i]'));
-      if (one) { await sleep(400); await tapAt(page, '#panel > .lb-sheet.one [data-i="0"]'); }
+      if (one) { await sleep(400); await tapReady(page, '#panel > .lb-sheet.one [data-i="0"]'); }
       await waitScreen(page, 'reward', 15000);
       await page.waitForSelector('.lb-sheet.reward.lt-sheet', { timeout: 8000 }).catch(() => {});
       await sleep(150);

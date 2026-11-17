@@ -17,7 +17,7 @@
 //   6  踢館帖（打完第 35 位、固定種子表裡第一個會出踢館帖的）：第 ② 站門口遞帖 → 接「狠角色」→ 這一輪客人品味 +1（點頭像看得到）、來客條頭像有踢館帖記號
 //   7  自動玩一路過戰利品列、寶箱、攤位（第 4 位起到第 7 位）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
-import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
+import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, tapReady, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
   tapHot, passLoot, stallState, clearStall } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
@@ -71,9 +71,9 @@ async function waitNight(page, ms = 15000) {
 async function pickRow(page, g) {
   const sel = `.st-pick .st-row[data-g="${g}"]`;
   await C(page, () => { window.__hl = []; });
-  await tapAt(page, sel); await sleep(350);
+  await tapReady(page, sel); await sleep(350);
   const pv = await C(page, g => { const rows = [...document.querySelectorAll('.st-pick .st-row')]; return { on: rows.map(r => r.classList.contains('on')), dim: rows.map(r => r.classList.contains('dim')), hl: (window.__hl[window.__hl.length - 1] || []).slice(), pick: window.__lab.run.pending.pick }; }, g);
-  await tapAt(page, sel); await sleep(200);
+  await tapReady(page, sel); await sleep(200);
   const picked = await C(page, () => window.__lab.run.pending && window.__lab.run.pending.pick);
   return { preview: pv, picked };
 }
@@ -82,12 +82,12 @@ async function oneTap(page, kind) {
   const sel = '.lb-sheet.stall ' + ONE[kind];
   await page.waitForSelector(sel, { timeout: 5000 });
   await sleep(150);
-  await tapAt(page, sel);
+  await tapReady(page, sel);
   await sleep(300);
 }
 async function winGuest(page) {
   await page.waitForSelector('[data-a=go]', { timeout: 15000 }); await sleep(300);
-  await tapAt(page, '[data-a=go]'); await duelReady(page, 25000); await sleep(300);
+  await tapReady(page, '[data-a=go]'); await duelReady(page, 25000); await sleep(300);
   await C(page, () => window.__lab.forceWin());
 }
 async function beatBoss(page) {
@@ -101,7 +101,7 @@ async function beatBoss(page) {
   await sleep(600);
   await C(page, () => window.__lab.forceWin());
   await advanceUntil(page, () => !!document.querySelector('#panel > .lb-sheet.one [data-i]') || window.__lab.screen() === 'reward', null, 30000);
-  if (await page.$('#panel > .lb-sheet.one [data-i]')) { await sleep(300); await tapAt(page, '#panel > .lb-sheet.one [data-i="0"]'); }
+  if (await page.$('#panel > .lb-sheet.one [data-i]')) { await sleep(300); await tapReady(page, '#panel > .lb-sheet.one [data-i="0"]'); }
 }
 const reloadCont = async (page, q) => { await openTitle(page, q); await jsClick(page, '[data-a=cont]'); await waitScreen(page, 'night', 15000); await sleep(1200); };
 
@@ -128,6 +128,7 @@ async function runSize(browser, w, h) {
       page._clicks = 0; const t0 = Date.now();
       const pk = await pickRow(page, 0);
       const okDig = await waitStation(page, 'dig');
+      await page.waitForFunction(() => { const s = document.querySelector('.lb-sheet.stall'); return !!s && s.getAnimations().every(a => a.playState !== 'running'); }, null, { timeout: 3000 }).catch(() => {});   // 面板升起停了才量
       const at1 = await C(page, () => { const st = window.__lab.stage, p = st.pos('p'), hs = st.hotspots() || [], lit = window.__hl[window.__hl.length - 1] || [];
         const c = lit.map(id => hs.find(h => h.id === id)).filter(Boolean).map(h => [h.rect[0] + h.rect[2] / 2, h.rect[1] + h.rect[3] / 2]);
         const d = c.length ? Math.min(...c.map(q => Math.hypot(q[0] - p.x, q[1] - p.y))) : 999;
@@ -151,7 +152,7 @@ async function runSize(browser, w, h) {
       const ok = okLook && okPick && okWalk && back && a.go && tt.includes(demo) && !!a.fortune && taps <= 4;
       record(1, size, ok && !errs(page).length, `第一趟兩組 ${JSON.stringify(s0.p && s0.p.groups)}＋${JSON.stringify(s0.p && s0.p.post)}；底部「${look.title}」列 ${JSON.stringify(look.rows)}、下一位 ${s0.go}；` +
         `預覽 亮 ${JSON.stringify(pk.preview.on)} 暗 ${JSON.stringify(pk.preview.dim)} 店裡亮 ${JSON.stringify(pk.preview.hl)} → 確定 ${pk.picked}；① ${at1.name}「${at1.line}」小人 ${JSON.stringify(at1.p)} 離亮的角落 ${at1.d} px、蓋牌 ${at1.down}；` +
-        `② 算命 小人 ${JSON.stringify(at2.p)}＝leaving ${JSON.stringify(at2.sp)}、阿姨 ${JSON.stringify(at2.f)}；錄音室「${demo}」${tt.includes(demo)}；回來客 ${back}；P3 必點 ${taps} 下（≤4）、${secs} 秒；${errTxt(page)}`);
+        `面板在畫面裡 ${at1.sheetIn}；② 算命 小人 ${JSON.stringify(at2.p)}＝leaving ${JSON.stringify(at2.sp)}、阿姨 ${JSON.stringify(at2.f)}、run.fortune ${JSON.stringify(a.fortune)}；錄音室「${demo}」${tt.includes(demo)}；回來客 ${back}；P3 必點 ${taps} 下（≤4）、${secs} 秒；${errTxt(page)}`);
     } catch (e) { record(1, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -181,12 +182,12 @@ async function runSize(browser, w, h) {
       const s1 = await stallState(page);
       // 選組前：今天不逛了 → 確認 → 再看看（不動）→ 不逛了（+$2,000）
       const m0 = s1.money;
-      await tapAt(page, '.st-pick [data-a=leave]'); await sleep(350);
+      await tapReady(page, '.st-pick [data-a=leave]'); await sleep(350);
       const ask = await C(page, () => ({ t: (document.querySelector('.st-ask p') || {}).textContent || '', yes: (document.querySelector('.st-ask [data-a=leaveYes]') || {}).textContent, no: (document.querySelector('.st-ask [data-a=leaveNo]') || {}).textContent }));
-      await tapAt(page, '.st-ask [data-a=leaveNo]'); await sleep(350);
+      await tapReady(page, '.st-ask [data-a=leaveNo]'); await sleep(350);
       const s2 = await stallState(page);
-      await tapAt(page, '.st-pick [data-a=leave]'); await sleep(350);
-      await tapAt(page, '.st-ask [data-a=leaveYes]');
+      await tapReady(page, '.st-pick [data-a=leave]'); await sleep(350);
+      await tapReady(page, '.st-ask [data-a=leaveYes]');
       const back = await waitNight(page, 15000);
       const m1 = await C(page, () => window.__lab.run.money);
       const okBusy = hits.crate === 1 && hits.radio === 1 && hits.counter === 1 && hits.duel === 1 && booth === true && s1.stall && s1.p.pick === null;
@@ -218,9 +219,9 @@ async function runSize(browser, w, h) {
       const okA = await waitStation(page, 'promo'); await oneTap(page, 'promo');
       const okB = await waitStation(page, 'trade');
       const m0 = await C(page, () => window.__lab.run.money);
-      await tapAt(page, '.lb-sheet.stall [data-a=leave]'); await sleep(350);
+      await tapReady(page, '.lb-sheet.stall [data-a=leave]'); await sleep(350);
       const ask = await C(page, () => (document.querySelector('.lb-sheet.stall .st-ask p') || {}).textContent || '');
-      await tapAt(page, '.lb-sheet.stall [data-a=leaveYes]');
+      await tapReady(page, '.lb-sheet.stall [data-a=leaveYes]');
       const back = await waitNight(page, 15000);
       const m1 = await C(page, () => window.__lab.run.money);
       record(3, size, okA && okB && ask === fill(x.leaveAsk, { n: '1,000' }) && back && m1 === m0 + 1000 && !errs(page).length, `選組後（第 ② 站同業調貨）不逛了「${ask}」→ ${m0}→${m1}（+1,000）、回來客 ${back}；${errTxt(page)}`);
@@ -258,7 +259,7 @@ async function runSize(browser, w, h) {
       await reloadCont(page, QF);
       const okC1 = await waitStation(page, 'consignGet', 8000);
       const c1 = await stallState(page);
-      await tapAt(page, '.lb-sheet.stall [data-take]');
+      await tapReady(page, '.lb-sheet.stall [data-take]');
       await page.waitForSelector('.st-pick .st-row', { timeout: 10000 }).catch(() => {});
       await sleep(400);
       const c2 = await stallState(page);
@@ -291,12 +292,12 @@ async function runSize(browser, w, h) {
       const tabs = await C(page, () => [...document.querySelectorAll('.lb-sheet.stall .st-tabs [data-tab]')].map(b => b.textContent));
       // 門票分頁（自選的，不算 P3）：價錢梯、買到剩 $4,000
       const c0 = page._clicks;
-      await tapAt(page, '.lb-sheet.stall .st-tabs [data-tab="2"]'); await sleep(300);
+      await tapReady(page, '.lb-sheet.stall .st-tabs [data-tab="2"]'); await sleep(300);
       const g1 = await C(page, () => (document.querySelector('.lb-sheet.stall [data-a=gigBuy]') || {}).textContent || '');
-      await tapAt(page, '.lb-sheet.stall [data-a=gigPlus]'); await sleep(250);
+      await tapReady(page, '.lb-sheet.stall [data-a=gigPlus]'); await sleep(250);
       const g2 = await C(page, () => (document.querySelector('.lb-sheet.stall [data-a=gigBuy]') || {}).textContent || '');
       const keep = await C(page, () => ({ t: (document.querySelector('.lb-sheet.stall [data-a=gigKeep]') || {}).textContent || '', n: window.DipLabEngine.gigKeepN(window.__lab.run, window.DipLabContent), m: window.__lab.run.money, tk: window.__lab.run.tickets | 0 }));
-      await tapAt(page, '.lb-sheet.stall [data-a=gigKeep]'); await sleep(400);
+      await tapReady(page, '.lb-sheet.stall [data-a=gigKeep]'); await sleep(400);
       const k1 = await C(page, () => ({ m: window.__lab.run.money, tk: window.__lab.run.tickets | 0, next: window.DipLabEngine.gigPrice(window.__lab.run, window.DipLabContent, 1) }));
       extra = page._clicks - c0;
       await oneTap(page, 'market');
@@ -339,10 +340,10 @@ async function runSize(browser, w, h) {
       const okD = await waitStation(page, 'dare');
       const d0 = await C(page, () => { const s = document.querySelector('.lb-sheet.stall'), f = window.__lab.stage.pos('f'), p = window.__lab.stage.pos('p'), sp = window.__lab.stage.spot('atdoor');
         return { line: (s.querySelector('.st-line span') || {}).textContent, tough: (s.querySelector('[data-dare=tough]') || {}).textContent, f: !!f && !f.hidden, p: [Math.round(p.x), Math.round(p.y)], sp }; });
-      await tapAt(page, '.lb-sheet.stall [data-dare=tough]');
+      await tapReady(page, '.lb-sheet.stall [data-dare=tough]');
       const back = await waitNight(page, 15000);
       const a = await C(page, () => ({ dare: window.__lab.run.dare, atk: window.DipLabEngine.roundGuests(window.__lab.run, window.DipLabContent).map(q => q.atk | 0), marks: document.querySelectorAll('[data-tut=night] .st-mk.dr').length }));
-      await tapAt(page, '[data-tut=night] .nc[data-i="0"]'); await sleep(500);
+      await tapReady(page, '[data-tut=night] .nc[data-i="0"]'); await sleep(500);
       const gs = await C(page, () => [...document.querySelectorAll('.lb-sheet.guest .bl.st b')].map(b => b.textContent));
       const wantAtk = await C(page, n => window.DipLabContent.trial.ui.atk.replace('{n}', n), a.atk[0]);
       const ok = okA && okD && d0.line === '「' + x.ln.dare + '」' && d0.tough === fill(x.dareTough, { n: 1 }) && d0.f && d0.p[0] === d0.sp[0] && d0.p[1] === d0.sp[1] &&
@@ -357,7 +358,7 @@ async function runSize(browser, w, h) {
   if (want(7)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await seededContinue(page, { ace: 'hall', idx: 3, autoNext: true }, QF);
+      await seededContinue(page, { ace: 'hall', idx: 3, autoNext: true, hp: 80, maxHp: 80, atk: 4, def: 2 }, QF);   // 打得贏（這一項看的是自動玩會不會卡在戰利品列、寶箱、攤位，不是勝率）
       await waitScreen(page, 'night', 20000); await sleep(500);
       await C(page, () => { window.__seen = []; setInterval(() => { const p = window.__lab.run && window.__lab.run.pending; const k = p ? p.type + (p.kind ? ':' + p.kind : '') : ''; if (k && window.__seen[window.__seen.length - 1] !== k) window.__seen.push(k); }, 50); });
       await C(page, () => window.__lab.autoplay('thoughtful', { until: 'never' }));

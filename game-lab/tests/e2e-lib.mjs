@@ -347,6 +347,19 @@ export const lootState = page => page.evaluate(() => {
     relics: p && p.relics ? p.relics.slice() : [], money: r ? r.money : null, bag: r ? r.bag.length : null, lt: !!document.querySelector('#panel .lb-sheet.reward.lt-sheet'),
     sheet: !!document.querySelector('#panel .lb-sheet.reward'), loot: L };
 });
+// 真點一顆剛出來的鈕：面板剛升起（.arming，約 0.3 秒）時真的點擊會被吃掉（防連點）、遮罩還蓋著時會點到遮罩，等它可以按了再點。回 false＝等不到
+export async function tapReady(page, sel, ms = 5000) {
+  // 也等到真的點得到（解鎖那段的遮罩、轉場蓋在上面時點下去會落在遮罩上）
+  const ok = await page.waitForFunction(s => {
+    const e = document.querySelector(s); if (!e || e.disabled || e.closest('.arming')) return false;
+    const b = e.getBoundingClientRect(); if (!b.width || !b.height) return false;
+    for (const fy of [.5, .35, .65, .2, .8]) for (const fx of [.5, .3, .7, .15, .85]) { const t = document.elementFromPoint(b.left + b.width * fx, b.top + b.height * fy); if (t && (t === e || e.contains(t))) return true; }
+    return false;
+  }, sel, { timeout: ms }).then(() => true, () => false);
+  if (!ok) return false;
+  await tapAt(page, sel);
+  return true;
+}
 // 戰利品列／寶箱的三張都翻開了（蓋牌 1.5 秒自己翻、寶箱 1.2 秒自己掀；SPEC-C §4.1、§4.2）。不是戰利品列（舊的挑唱片面板）＝馬上回 true
 export async function lootReady(page, ms = 10000) {
   return page.waitForFunction(() => {
@@ -377,7 +390,7 @@ export async function passLoot(page, o = {}) {
       if (!(await page.$(sel))) break;
       if (o.take) picked = await page.evaluate(s => document.querySelector(s).getAttribute('data-pick'), sel);
       if (o.relic) picked = await page.evaluate(s => document.querySelector(s).getAttribute('data-r'), sel);
-      await tapAt(page, sel);
+      await tapReady(page, sel);
       const moved = await page.waitForFunction(p0 => { const r = window.__lab.run, p = r && r.pending; return !p || p.type !== 'reward' || JSON.stringify(p.cards) !== p0; }, JSON.stringify(s0.cards), { timeout: 2500 }).then(() => true, () => false);
       if (moved || (await page.evaluate(() => { const p = window.__lab.run && window.__lab.run.pending; return !p || p.type !== 'reward'; }))) break;
       await sleep(300);
@@ -388,7 +401,7 @@ export async function passLoot(page, o = {}) {
     const sc = await screen(page);
     if (sc === 'night' || sc === 'end' || sc === 'title') break;
     const lv = await page.evaluate(() => !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming'));
-    if (lv) { await tapAt(page, '.lb-sheet.level [data-lv]'); await sleep(400); continue; }
+    if (lv) { await tapReady(page, '.lb-sheet.level [data-lv]'); await sleep(400); continue; }
     await sleep(250);
   }
   return { ok: true, kind: s0.kind, cards: s0.cards, picked, money0: s0.money, money1: await page.evaluate(() => window.__lab.run && window.__lab.run.money), screen: await screen(page), tries };
@@ -414,12 +427,12 @@ export async function clearStall(page, o = {}) {
       return { ok: back, cash: (await page.evaluate(() => window.__lab.run.money)) - s0.money, taps, screen: await screen(page) };
     }
     const yes = await page.$('.st-ask [data-a=leaveYes]');
-    if (yes) { await tapAt(page, '.st-ask [data-a=leaveYes]'); taps++; await sleep(500); continue; }
+    if (yes) { await tapReady(page, '.st-ask [data-a=leaveYes]'); taps++; await sleep(500); continue; }
     if (s.st && s.st.phase === 'station' && s.p && s.p.cur === 'consignGet' && s.p.pick != null) {   // 不逛了之後寄賣領取那站照原貨留著：先不拿
-      if (await page.$('.lb-sheet.stall [data-a=pass]')) { await tapAt(page, '.lb-sheet.stall [data-a=pass]'); taps++; await sleep(500); continue; }
+      if (await page.$('.lb-sheet.stall [data-a=pass]')) { await tapReady(page, '.lb-sheet.stall [data-a=pass]'); taps++; await sleep(500); continue; }
     }
     const lv = (await page.$('.lb-sheet.stall [data-a=leave]')) ? '.lb-sheet.stall [data-a=leave]' : (await page.$('.st-pick [data-a=leave]')) ? '.st-pick [data-a=leave]' : null;
-    if (lv && !(s.st && (s.st.phase === 'studio' || s.st.phase === 'walk'))) { await tapAt(page, lv); taps++; await sleep(400); continue; }
+    if (lv && !(s.st && (s.st.phase === 'studio' || s.st.phase === 'walk'))) { await tapReady(page, lv); taps++; await sleep(400); continue; }
     await sleep(250);
   }
   return { ok: false, why: 'timeout', cash: 0, taps, screen: await screen(page), st: await stallState(page) };
