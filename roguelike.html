@@ -3762,8 +3762,7 @@ async function hydrateStreamingLinks(container, card){
     fetch(DYN_WORKER+'/bandcamp-search?'+query).then(r=>r.ok?r.json():{})
   ]);
   let spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
-  // /spotify-search 的快取若是 CAA 封面就沒有 spotifyUrl，再問 /spotify-album-link（查不到才灰）
-  if(!spotifyUrl) spotifyUrl=(await fetch(DYN_WORKER+'/spotify-album-link?'+query).then(r=>r.ok?r.json():{}).catch(()=>({}))).url;
+  // 2026-11-17 拿掉 /spotify-album-link 退路：它只比藝人、不比專輯名，取同藝人第一張就回（John Zorn《Cobra》→《Cobra-Tokyo Operations '94》）。只用 /spotify-search，查不到就灰。
   const bandcampUrl=bandcamp.status==='fulfilled'&&bandcamp.value?.bandcampUrl;
   const spotifyBtn=container.querySelector('[data-platform="spotify"]');
   const bandcampBtn=container.querySelector('[data-platform="bandcamp"]');

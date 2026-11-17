@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop＋dip-vinyl-worker｜Spotify 錯張根源：拿掉只比藝人的 /spotify-album-link 退路
+
+- **店主 11-17 截圖**：John Zorn《Cobra》Spotify 鈕連到《Cobra-Tokyo Operations '94》。KV 早已清空（replacedSpotifyAlbum），亮鈕來自前台退路 `/spotify-album-link`——它**只比藝人、不比專輯名**，取同藝人第一張就回。凡 KV 沒連結的卡都可能被配到同藝人別張（違反 11-07「錯張不再犯」）。
+- **前台**：index.html（resolveSpotifyBtn、fetchStreamingLinks 改走 /spotify-search）、battle.html、roguelike.html、shop-all.html、admin.html 全拿掉退路；查不到就灰。
+- **game-lab**：`tools/bake-cards.mjs` 拿掉退路；稽核 `cards.js` 315 條烘進的連結（304 與 KV 一致、4 名稱相符、7 可疑）→ 清掉 5 條錯張（Cobra→Tokyo '94、Glenn Branca《The Ascension》→ The Sequel、Rubinstein 夜曲→合輯、Rautavaara 1972→1997 另錄、Harry Roesli 不確定），保留 2 條同錄音（Goblin《Profondo rosso》Gold Tracks、Gould／Bernstein 1962 Brahms）寫進 LINK_OVERRIDES。
+- **worker**：PR（`claude/album-link-title-check`）`/spotify-album-link` 加藝人相同＋專輯名相同／只差版本後綴、排除現場／EP／續作等、single 不收；快取升 v2。**待店主本機 `npx wrangler deploy`**（前台已不呼叫，屬防呆）。
+- **驗證**：Playwright 載入 index／battle／roguelike／shop-all／admin／game-lab 0 頁面錯誤（改前同）；worker 規則單元測 7 例符合預期。
+- 主要檔案：上述頁面、`game-lab/cards.js`、`game-lab/tools/bake-cards.mjs`、`batch-progress/spotify-fallback-20261117/`、`dip-vinyl-worker/src/index.js`。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 第 A 波六件：客人走到對戰台、放水後期照機率、稱號、演出與字、櫃檯賣給老闆、客人主屬性
 
 - **店主 11-16**：「全部開始做吧。18 則是要去櫃檯賣給老闆才能移出包包，這也是在局中備戰時發生（就是 Monster Train 的方式）」；另「不要出店門……挑戰者進來後直接走去對戰台等玩家」「放水前期保留、後期照機率」「為何對手都打經典卡」。總表 scratchpad `v5/relay/PLAN.md`。

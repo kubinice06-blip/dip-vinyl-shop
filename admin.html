@@ -4105,7 +4105,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     })();
     // 串流：同 shop-all.html——查到直連才啟用 Spotify／Bandcamp，YT 有直連就換掉搜尋連結
     Promise.all([apexCdGet('spotify-search', d), apexCdGet('yt-music-link', d), apexCdGet('bandcamp-search', d)]).then(async ([sp, yt, bc]) => {
-      const spotify = sp?.spotifyUrl || (await apexCdGet('spotify-album-link', d))?.url;
+      const spotify = sp?.spotifyUrl;   // 2026-11-17 拿掉 /spotify-album-link 退路：它只比藝人、不比專輯名，取同藝人第一張就回（John Zorn《Cobra》→《Cobra-Tokyo Operations '94》）。只用 /spotify-search，查不到就灰。
       if (!still()) return;
       const set = (p, u) => { const a = document.querySelector(`#apexCd .streaming-btn[data-platform="${p}"]`); if (a && u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.removeAttribute('disabled'); } };
       set('spotify', spotify); set('yt', yt?.url); set('bandcamp', bc?.bandcampUrl);
