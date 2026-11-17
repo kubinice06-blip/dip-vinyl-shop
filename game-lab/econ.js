@@ -177,6 +177,9 @@
     try { if (E().isGift) return !!E().isGift(r, C(), id); } catch (_) {}
     return id === ((C().aces || {})[r.ace]) || ((C().gifts || {})[r.ace] || []).indexOf(id) >= 0;
   }
+  // 撿來的（第 C 波 SPEC-C §2.2 run.found：戰利品列、寶箱等收下的）：賣回一律 $400（engine.sellCore 回 found）；畫面字在 C.waveC.ui
+  function foundOf(r, id, q) { if (q && q.ok) return !!q.found; return !!(r && Array.isArray(r.found) && r.found.indexOf(id) >= 0); }
+  function wcUi(k) { var u = (C().waveC && C().waveC.ui) || {}; return u[k] != null ? u[k] : ''; }
   // 從唱片櫃帶來的種子（engine.isSeed；沒有就看 run.seeds）
   function isSeed(r, id) {
     if (!r || !id) return false;
@@ -523,8 +526,10 @@
     var tiles = order.map(function (id) {
       var c = card(id); if (!c) return '';
       var q = quote(r, id), gift = isGift(r, id), seed = !gift && isSeed(r, id), back = !!(q.ok && q.reclaim) || gift || seed, on = S.spick === id;
-      var lab = back ? '<span class="ec-sv ' + (gift ? 'ec-gift' : 'ec-seed') + '">' + esc(ui('reclaimTag')) + '</span>' : '<span class="ec-sv">+' + esc(money(q.ok ? q.earn : E().sellValue(C(), c))) + '</span>';
-      var tag = gift ? ui('giftTag') : seed ? ui('seedTag') : '';
+      var fd = !back && foundOf(r, id, q);                 // 撿來的（第 C 波：戰利品列、寶箱收的）一律 $400，格子多一行小籤「撿來的」
+      var lab = back ? '<span class="ec-sv ' + (gift ? 'ec-gift' : 'ec-seed') + '">' + esc(ui('reclaimTag')) + '</span>' :
+        '<span class="ec-sv' + (fd ? ' ec-found' : '') + '">+' + esc(money(q.ok ? q.earn : E().sellValue(C(), c))) + (fd ? '<small>' + esc(wcUi('foundTag')) + '</small>' : '') + '</span>';
+      var tag = gift ? ui('giftTag') : seed ? ui('seedTag') : fd ? wcUi('foundTag') : '';
       return '<button type="button" class="ec-tile ec-spick ec-cs' + (on ? ' sel' : '') + (gift ? ' gift' : '') + (seed ? ' seed' : '') + '" data-a="cpick" data-cid="' + esc(id) + '" aria-pressed="' + on + '"' + (q.ok ? '' : ' disabled') +
         (back ? ' data-back="1"' : '') + ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (tag ? '（' + tag + '）' : '') + '：' + (back ? ui('reclaimTag') : '+' + money(q.ok ? q.earn : 0))) + '">' +
         '<span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + '</span>' + lab + starsHTML(c, { col: true }) + '</button>';
@@ -533,12 +538,12 @@
     // 選了一張：底下那條問一次，旁邊「唱片資訊」（賣之前看得到是哪張、試聽；格子長按也開，審查 A-8）
     var line = pc ? '<span class="tx">' + esc(fill(ui(pback ? 'reclaimAsk' : 'sellAsk'), { album: pc.album })) + '</span>' +
       '<button type="button" class="ec-inf" data-a="info" data-cid="' + esc(pc.id) + '">' + esc(ui('sellInfo') || ui('infoAria')) + '</button>' : '&nbsp;';
-    var go = pc && pq && pq.ok ? (pback ? esc(ui('reclaimGo')) : esc(fill(ui('sellGo'), { n: mt(pq.earn) }))) : esc(ui('sellTitle'));
+    var go = pc && pq && pq.ok ? (pback ? esc(ui('reclaimGo')) : pq.found && wcUi('foundSell') ? esc(fill(wcUi('foundSell'), { n: mt(pq.earn) })) : esc(fill(ui('sellGo'), { n: mt(pq.earn) }))) : esc(ui('sellTitle'));
     return headHTML(S.label) + '<p class="ec-msg ec-cnote' + (atMin ? '' : ' ok') + '">' + esc(atMin ? fill(ui('bagSellMin'), { n: handMin() }) : ui('sellNote')) + '</p>' +
       '<div class="ec-grid ec-g4">' + tiles + '</div>' +
       '<p class="ec-line ec-cl">' + line + '</p>' +
       '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="cno"' + (pc ? '' : ' disabled') + '>' + esc(ui('sellNo')) + '</button>' +
-      '<button type="button" class="lb-btn pri ec-sellb" data-a="cgo"' + (pc && pq && pq.ok ? '' : ' disabled') + '>' + go + '</button></div>';
+      '<button type="button" class="lb-btn pri ec-sellb' + (pq && pq.ok && pq.found && !pback ? ' ec-fgo' : '') + '" data-a="cgo"' + (pc && pq && pq.ok ? '' : ' disabled') + '>' + go + '</button></div>';
   }
   // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
   //   專輯名太長只切專輯名，價錢一定看得到（V5-play-6：「《Come On Die Young》買…」把價錢切掉了）

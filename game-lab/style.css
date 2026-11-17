@@ -890,6 +890,9 @@ body.lb-tune-open{overflow:hidden;}
 .lb-toast.cash .ce{font:700 13px var(--mono);color:var(--win,#2e7d52);}
 .lb-toast.cash .cv{font:700 18px/1 var(--mono);color:var(--gold);letter-spacing:.02em;min-width:5.2em;text-align:right;}
 .lb-toast.cash.done .cv{animation:lbCashPop .32s ease-out;}
+.lb-toast.cash.spend .ce{color:var(--red,#c0392b);}   /* 花錢（攤位買東西）：不金色、紅字「−$3,000」 */
+.lb-toast.cash.spend .cv{color:var(--ink);}
+.lb-toast.cash.spend.done .cv{animation:none;}
 @keyframes lbCashPop{0%{transform:scale(1);}45%{transform:scale(1.18);}100%{transform:scale(1);}}
 @media (prefers-reduced-motion: reduce){ .lb-toast.cash.done .cv{animation:none;} }
 /* 4 再贏 N 位破紀錄（頂欄小字，對決與來客）：金色 */

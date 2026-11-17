@@ -19,7 +19,7 @@
 //     升級三選一由 autoplay 自動挑（picks＝等級−1）、標題紀錄「最遠」→ 13 再挑戰一趟（店主 11-13：不挑王牌，老闆說「老樣子，《王牌》。」沿用 save.lastAce →
 //     走到特價箱挑三張 → 來客、包包 7、runNo 2、王牌＝上一趟那張；上一趟的配件還在；整段沒有挑王牌面板）
 //  10 續玩：打到第 2 手重新整理 → 繼續試煉 → 同一場、同一手
-//  11 存檔只寫 dipGameLab_v1（＋第 B 波的 .bringKey／.daily／.bak6 小鍵）、版本 7；v3 存檔被安全丟掉；v4 存檔遷移（唱片櫃、配件留著，一晚的 run 丟掉，nights → runs）
+//  11 存檔只寫 dipGameLab_v1（＋第 B 波的 .bringKey／.daily／.bak6 小鍵）、版本 8（第 C 波）；v3 存檔被安全丟掉；v4 存檔遷移（唱片櫃、配件留著，一晚的 run 丟掉，nights → runs）
 //  12 網路：沒有 Firebase
 //  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝在那張打開、再點一下＝收回（都不開唱片資訊；v5 手風琴）
 //  16 標題有存檔時點兩下店門＝繼續試煉
@@ -80,7 +80,7 @@ import path from 'path';
 import { createRequire } from 'module';
 import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, hitPoint, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
-  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4 } from './e2e-lib.mjs';
+  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4, lootReady, passLoot, clearStall, lootState, stallState } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -116,7 +116,7 @@ async function pastDrop(page, ms = 5000) {
   const t0 = Date.now();
   while (Date.now() - t0 < ms) {
     const st = await page.evaluate(() => ({ dq: !!document.querySelector('.lb-dq.drop .nx.on'), sheet: !!document.querySelector('#panel > .lb-sheet') }));
-    if (st.sheet) return true;
+    if (st.sheet) return lootReady(page, Math.max(1000, ms - (Date.now() - t0)));   // 第 C 波：戰利品列（不念旁白、字幕不用點）三張蓋牌翻完才算過了掉落那段（SPEC-C §4.1）
     if (st.dq) await jsClick(page, '.lb-dq.drop');
     await sleep(120);
   }
@@ -484,9 +484,9 @@ async function run() {
           mig.lastAce2 = await page.evaluate(() => window.__lab.save.lastAce);
           // v4 → v5 → v6：唱片櫃那張留成「認識」；挑過的王牌（lastAce hall）那組送的四張算擁有（一晚版沒有位數：不算打倒藏家）
           //   解鎖制（店主 11-16）：那張（殿堂預設）就是 lastAce 那派的頂點卡＝載入時補記成擁有（src start），known 改看這個
-          const migOk = mig.v === 7 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
+          const migOk = mig.v === 8 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
             mig.lastAce === 'hall' && mig.runSeq === 1 && mig.lastAce2 === 'hall';   // 審查 #1：lastAce 遷移後、重新整理後都留著；#5：同一天第幾趟的計數器從舊的一晚接著數
-          record(11, size, !bad.length && ks.v === 7 && old.v === 7 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
+          record(11, size, !bad.length && ks.v === 8 && old.v === 8 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
         }
         if (want(12)) {
           const fb = page._requests.filter(u => /firebase|firestore|googleapis\.com\/identitytoolkit/i.test(u));
@@ -966,6 +966,7 @@ async function run() {
         for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
         const night = (await screen(page)) === 'night';
         await sleep(600);
+        await clearStall(page);          // 第 C 波（SPEC-C §4.3）：打完藏家（換輪）先逛今天的攤位，逛完才是下一輪的來客條；這裡照「今天不逛了」帶過
         const r1 = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, round: R.round, idx: R.idx, order: R.order.slice(), retry: R.retryLeft, over: R.over, ps: [...document.querySelectorAll('[data-tut=night] .nc .ps')].map(x => x.textContent.trim()), trail: window.__lab.trail() }; });
         const fresh = r1.order.slice(0, 3).filter(id => !r0.order.includes(id)).length;
         const trail1 = r1.trail.slice(r1.trail.lastIndexOf('duel'));
@@ -1019,7 +1020,10 @@ async function run() {
         await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
         await sleep(400);
         await page.evaluate(() => window.__lab.forceWin());
-        await waitScreen(page, 'reward', 15000); await sleep(1800);
+        await waitScreen(page, 'reward', 15000);
+        // 第 C 波（SPEC-C §4.1）：戰利品列的錢 1.35 秒才飛進頂上（錢那條這時才出）：照舊等玩家看 1.8 秒，從錢那條出來起算
+        await page.waitForFunction(() => window.__toasts.some(t => t.screen === 'reward' && /^\+\$/.test(t.text)), null, { timeout: 6000 }).catch(() => {});
+        await sleep(1800);
         await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-a=skip]'); if (b) b.click(); });
         for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
         await sleep(2400);
@@ -1084,18 +1088,24 @@ async function run() {
           deck: window.DipLabEngine.trialDeck(window.DipLabContent, R.duelEnemy, R.pos, { seedKey: R.seedKey, runNo: R.runNo, playerAce: R.ace, bossAce: R.bossAce, tier: R.tier }).deck.map(c => c.id) }; });
         await page.evaluate(() => window.__lab.forceWin());
         await waitScreen(page, 'reward', 15000);
+        // 第 C 波（SPEC-C §4.1、§11.3）：掉落旁白換成戰利品列的字幕（同一句店主原句、0 秒出、不用點、1.8 秒淡掉）；面板同時出來（三張蓋牌）。
+        //   三張＝他整副牌裡抽（至少 1 張這場沒出過，src unplayed）；金邊／補位那格從卡池來；三張都記進 drops
         let narr = null;
-        for (let g = 0; g < 60 && !(narr && narr.text); g++) { narr = await page.evaluate(() => ({ text: (document.querySelector('.lb-dq.drop .tx') || {}).textContent || '', sheet: !!document.querySelector('.lb-sheet.reward') })); if (!narr.text) await sleep(50); }
-        await sleep(300);
-        const n2 = await page.evaluate(() => ({ text: (document.querySelector('.lb-dq.drop .tx') || {}).textContent || '', want: window.DipLabContent.script.drop[0].text, sheet: !!document.querySelector('.lb-sheet.reward'),
-          cards: window.__lab.run.pending.cards.slice(), drops: window.__lab.run.drops.slice() }));
+        for (let g = 0; g < 60 && !(narr && narr.text); g++) { narr = await page.evaluate(() => ({ text: (document.querySelector('.lt-cap') || {}).textContent || '', sheet: !!document.querySelector('.lb-sheet.reward'), dq: !!document.querySelector('.lb-dq.drop') })); if (!narr.text) await sleep(50); }
+        await sleep(60);
+        const n2 = await page.evaluate(() => ({ text: (document.querySelector('.lt-cap') || {}).textContent || '', want: window.DipLabContent.script.drop[0].text, sheet: !!document.querySelector('.lb-sheet.reward.lt-sheet'),
+          cards: window.__lab.run.pending.cards.slice(), src: (window.__lab.run.pending.src || []).slice(), drops: window.__lab.run.drops.slice() }));
+        const capGone = await page.waitForFunction(() => !document.querySelector('.lt-cap'), null, { timeout: 4000 }).then(() => true, () => false);   // 不用點，自己淡掉
+        const sheet49 = await lootReady(page) && !!(await page.$('.lb-sheet.reward [data-pick]'));
+        // 捲動：面板升起、錢袋與蓋牌彈出、翻牌那幾下（CSS 動畫，彈跳時會多出幾 px）都停了才量（舊版量的是旁白那一刻，面板還沒出來）
+        await page.waitForFunction(() => { const s = document.querySelector('.lb-sheet.reward'); return !!s && s.getAnimations({ subtree: true }).every(a => a.playState !== 'running'); }, null, { timeout: 4000 }).catch(() => {});
         const sc49 = await noScroll(page);
-        await jsClick(page, '.lb-dq.drop');
-        const sheet49 = await page.waitForSelector('.lb-sheet.reward [data-pick]', { timeout: 8000 }).then(() => true, () => false);
         const dqGone = await page.evaluate(() => !document.querySelector('.lb-dq.drop'));
-        if (want(49)) record(49, size, narr.text.length > 0 && !narr.sheet && n2.text === n2.want && n2.want === '對方似乎掉落了什麼……' && !n2.sheet && sheet49 && dqGone && n2.cards.length > 0 &&
-          n2.cards.every(id => before.deck.includes(id) && before.thrown.includes(id) && n2.drops.includes(id)) && scrollOk(sc49),
-          `旁白「${n2.text}」（面板還沒出來 ${!n2.sheet}）→ 點一下 → 挑唱片面板 ${sheet49}；掉落 ${JSON.stringify(n2.cards)} ⊂ 他這一場的牌單 ${n2.cards.every(id => before.deck.includes(id))}、記進 drops ${JSON.stringify(n2.drops)}；scroll ${JSON.stringify(sc49)}`);
+        const fromDeck = n2.cards.every((id, i) => n2.src[i] === 'gold' || n2.src[i] === 'fill' || before.deck.includes(id));
+        const srcOk = n2.cards.every((id, i) => n2.src[i] !== 'played' || before.thrown.includes(id)) && n2.cards.every((id, i) => n2.src[i] !== 'unplayed' || !before.thrown.includes(id)) && n2.src.includes('unplayed');
+        if (want(49)) record(49, size, narr.text.length > 0 && !narr.dq && n2.text === n2.want && n2.want === '對方似乎掉落了什麼……' && n2.sheet && capGone && sheet49 && dqGone && n2.cards.length === 3 &&
+          fromDeck && srcOk && n2.cards.every(id => n2.drops.includes(id)) && scrollOk(sc49),
+          `字幕「${n2.text}」（面板同時出來 ${n2.sheet}、舊旁白框 ${narr.dq}）→ 不用點自己淡掉 ${capGone} → 翻完可收 ${sheet49}；掉落 ${JSON.stringify(n2.cards)} src ${JSON.stringify(n2.src)} ⊂ 他這一場的牌單 ${fromDeck}、出過／沒出過對得上 ${srcOk}、記進 drops ${n2.cards.every(id => n2.drops.includes(id))}；scroll ${JSON.stringify(sc49)}`);
         // 收一張（進過包包）→ 升級 → 來客
         await sleep(700);
         const took = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-pick]'); if (!b) return null; b.click(); return b.getAttribute('data-pick'); });
@@ -1258,7 +1268,7 @@ async function run() {
         const m = await page.evaluate(() => { const S = window.__lab.save, R = S.run; return { v: S.v, shelf: S.shelf, run: !!S.run, runV: S.run && S.run.v, cont: !!document.querySelector('[data-a=cont]'), far: S.best.far, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).v,
           unlock: R && R.unlock ? R.unlock.tiers.slice().sort().join() : null, won: R && Array.isArray(R.acesWon) ? R.acesWon.length : -1 }; });
         const own = id => !!(m.shelf[id] && m.shelf[id].own);
-        const ok = m.v === 7 && m.run && m.cont && m.far === 12 && !own(ref.known) && !!m.shelf[ref.known] &&
+        const ok = m.v === 8 && m.run && m.cont && m.far === 12 && !own(ref.known) && !!m.shelf[ref.known] &&
           ref.gifts.hall.every(id => own(id) && m.shelf[id].src === 'gift') && ref.gifts.heresy.every(id => own(id) && m.shelf[id].src === 'gift') &&
           ref.gifts.pearl.every(id => own(id) && m.shelf[id].src === 'gift') &&        // 一晚版（legacy）那趟也挑過王牌：送的四張一樣算擁有（只是沒有位數，不算打倒藏家）
           own(ref.boss1) && m.shelf[ref.boss1].src === 'boss' && own(ref.bossRun) && m.shelf[ref.bossRun].src === 'boss' &&
@@ -1280,7 +1290,7 @@ async function run() {
           return { v: S.v, heresy: e(C.aces.heresy), pearl: e(C.aces.pearl), hall: e(C.aces.hall),
             unl: window.DipLabEngine.unlockedTiers(C, id => !!(S.shelf[id] && S.shelf[id].own), { start: S.lastAce }).slice().sort().join() }; });
         // 解鎖制：lastAce（hall）那派預設那張補記成擁有（src 'start'）；自己挑過的 pearl（一晚版那趟）照舊只是認識（流派解鎖照 lastAce ∪ 擁有頂點卡的派：hall、heresy）
-        const lgOk = lg.v === 7 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && lg.hall.own === true && lg.hall.src === 'start' && lg.unl === 'hall,heresy';
+        const lgOk = lg.v === 8 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && lg.hall.own === true && lg.hall.src === 'start' && lg.unl === 'hall,heresy';
         record(53, size, ok && lgOk, `解鎖制：lastAce 那張 ${JSON.stringify(m.shelf[ref.start])}、舊 run 補快照 ${m.unlock}（收了 ${m.won} 張）、第二份存檔解鎖 ${lg.unl}；一晚版 clear 那晚的藏家王牌 ${JSON.stringify(lg.heresy)}、自己挑的 ${JSON.stringify(lg.pearl)}、dead 那晚 ${JSON.stringify(lg.hall)}；v${m.v}（localStorage 還是 v${m.stored}：下一次寫入才換）；認識那張 own=${own(ref.known)}；hall／heresy 送的 own；pearl（一晚版那趟）own=${ref.gifts.pearl.every(own)}；藏家王牌 ${ref.boss1} ${JSON.stringify(m.shelf[ref.boss1])}、這一趟打倒的 ${ref.bossRun} ${JSON.stringify(m.shelf[ref.bossRun])}、第 3 位就倒的那趟 ${ref.boss2} own=${own(ref.boss2)}；進行中的 run 留著 ${m.run}`);
       } catch (e) { record(53, size, false, 'error ' + e.message); }
       await ctx.close();

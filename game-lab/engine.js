@@ -179,6 +179,18 @@
 //            dailyPick(content, {day, known, owned, want, tunes}) -> id|null：非頂點、非特價、非王牌、沒擁有、沒認識過（想要清單裡的例外）；權重 想要 ×5、tunes（≤2 格）的頻率 ×3（相乘）；
 //              k＝hash01('daily#'+day+'#'+id)^(1/w) 取最大（同一天同輸入＝同一張）。known／owned＝函式｜陣列｜{id: 值}
 //            dailyReward(content, {n, owned}) -> [3 ids]：史詩／傳奇、非頂點／特價／王牌、沒擁有；經冷硬（topAttr）各取 hash01('dailyReward#'+n+'#'+id) 最小的，缺色從別色補
+// WaveC      第 C 波：獎勵與店內攤位（scratchpad v5/wave-c SPEC-C；給畫面的契約 build/CONTRACT.md）。數字＝content.waveC（沒給的用 WAVEC；全關＝舊行為逐字相同）
+//            run 多 far0、road、lexp{gig,home,promo,packet,demo}、tickets、chestDry、dare{round,mode}|null、dareLast、consign{card,due}|null、fortune、safety、found、cpFrom?、stats.c（計數）
+//              newRun 多收 bestFar、chestDry、safety、from（中繼點開局：pending draft、pos 先 1）；fixWaveC(run, content, {bestFar, chestDry})＝舊 run 補欄位、濾掉不在卡池的 id
+//            打贏一般／菁英 → pending reward kind 'loot'（三張蓋牌 cards／src／gold／packet、skipCash 400）；藏家 → kind 'chest'（踢館帖撐完四張＋$5,000：out.dareCash）；
+//              take 收的＝撿來的（run.found：sellCore 賣回 $400）；skip 有 kind＝+$400（effects {cash}）；finishFight 多回 packetCash（紅包已入帳的那筆）
+//            輸：序章照舊 → run.safety 而且第 1 位 → pending retry {free, safety}（新手保底一次）→ 說情 → 死
+//            advance 換輪（補貨之後）→ pending stall {after, cp, first, groups:[[k,k],[k,k]], pick, q, k, post, cur, done}；choose stallPick {group}、stallAct {act,…}、stallLeave；
+//              stallResume(run, content)（cur 是 null 而且 k<q.length → 重進那一站）；guestDef／roundGuests 帶踢館帖（dare）、roundGuests 藏家格帶算命（fortune）
+//            choose draft {cardId}|{pick}（中繼點開局選秀；做完 pos＝N）；canBargainPick／canSwitchAce 看 run.cpFrom
+//            sellCore(run, content, id)（賣回規則，不看時機）＝sellQuote 去掉 canShop；keepCandidates 扣 stats.bought；客人補償 trialGuest 加 content.trial.guestHpSteps
+//            setCtx({owned, tunes})（畫面 boot 設一次；金邊、公關片先扣擁有的、公關片兩格頻率 ×3；sim 不設）· gigPrice · gigKeepN · lexpBase · stallLadder · stallUnlocked
+//            draftPlan · expLevel · wcCfg · wcTh · wcPool · floorAt · lootRow · chestRow · stallSession · cPolicy（runPolicy 遇到 stall／draft 交給它）
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -1084,7 +1096,9 @@
     const half = HF.from > 0 && d >= HF.from ? hardOf(HF, +HF.normal || 0) : 0;
     const none = NO.from > 0 && d >= NO.from ? Math.min(+NO.max || 0, (+NO.base || 0) + (+NO.step || 0) * (d - NO.from)) : 0;
     const r6 = x => Math.round(x * 1e6) / 1e6;
-    return { hp: T.guestHp[cls], atk: Math.max(0, atk), def: Math.max(0, def), planner, q: r6(q),
+    // 第 C 波客人補償（SPEC-C §5.5；C.trial.guestHpSteps＝[[第幾位起, +n], …]，可多段；沒給或 []＝關）：第 31 位起一般／菁英 12→13、藏家 14→15，之後不再長
+    const hpAdd = (Array.isArray(T.guestHpSteps) ? T.guestHpSteps : []).reduce((t, x) => t + (Array.isArray(x) && d >= (x[0] | 0) ? (x[1] | 0) : 0), 0);
+    return { hp: T.guestHp[cls] + hpAdd, atk: Math.max(0, atk), def: Math.max(0, def), planner, q: r6(q),
       rho: r6(Math.max(0, Math.min(1, rho))), rhoMul: R.streakMul > 0 ? +R.streakMul : 1, rhoCap: R.cap != null ? +R.cap : 0.9, rMercy: R.mercy != null ? +R.mercy : 0.7,
       beta: r6(beta), half: r6(Math.max(0, half)), none: r6(Math.max(0, none)), hit };
   }
@@ -1497,7 +1511,8 @@
     const seedKey = String(o.seedKey || 'lab'), runNo = o.runNo || o.nightNo || 1;
     const ace = TIERS.includes(o.ace) ? o.ace : 'hall';
     const tier = Math.max(0, o.tier | 0), T = trialCfg(content, tier), EC = econ(content);
-    const prologue = o.prologue != null ? !!o.prologue : runNo === 1;
+    const from = Number.isInteger(o.from) && o.from > 1 ? o.from : null;   // 第 C 波中繼點開局（SPEC-C §4.7）：從第 N 位開＝不打序章
+    const prologue = from ? false : o.prologue != null ? !!o.prologue : runNo === 1;
     // 包包＝種子（0–3 張）＋老闆送的補到 4 張（種子跟送的重複：送的往下補下一張）；序章那一趟不挑（裁定 2）
     const G = ((content.gifts || {})[ace] || []).slice();
     const seeds = prologue ? [] : seedsOf(content, o.seeds);
@@ -1527,11 +1542,22 @@
     if (o.aceId != null && apexList(content, ace).some(e => e && e.card === o.aceId) &&
       !(run.unlock && run.unlock.apex && !ownedApexOf(run, content).includes(o.aceId))) run.aceId = o.aceId;   // 頂點卡試做：挑的那張（旗標關時不讀；解鎖制旗標開：要擁有）
     run.taken = run.bag.length;                                   // 收了幾張：老闆送的也算（裁定 9）；種子補的是送的那幾格，一樣算
+    // 第 C 波（SPEC-C §2.2）：功能全關也照樣有這幾欄（舊 run 載入時 fixWaveC 補）；全關時永遠停在初值
+    const W = wcCfg(content);
+    Object.assign(run, { far0: Math.max(0, o.bestFar | 0), road: [], lexp: {}, tickets: 0, chestDry: Math.max(0, o.chestDry | 0), dare: null, dareLast: null,
+      consign: null, fortune: null, safety: !!(W.safety.on && o.safety && !from), found: [] });
+    if (from) {                                                  // 中繼點開局：快速選秀（撿盤 k 次二選一＋升級 m 次三選一）→ 特價箱 → 從第 N 位開打（pos 先留 1，draftDone 才跳）
+      run.cpFrom = from;
+      const D = draftPlan(content, from);
+      run.pending = { type: 'draft', k: D.k, m: D.m, ck: 0, cm: 0, offer: null };
+      run.pending.offer = draftOffer(run, content);
+    }
     const others = TIERS.filter(t => t !== ace);
     run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);   // ＝bossAceFor(seedKey, runNo, ace)（run.rng 的第一個亂數；解鎖制照樣抽，run.rng 序列不變）
     if (run.unlock) run.bossCard = bossCardFor(run, content);    // 這一輪藏家帶的頂點卡（被剋鏈／試做卡／照舊）
     run.want = wantOf(o.want);                                   // 想要清單快照（一檔貨加權；SPEC-B §5.2）：畫面傳 save.want，沒給＝[]
     restock(run, content);
+    if (run.pending && run.pending.type === 'draft' && run.pending.k <= 0 && run.pending.m <= 0) draftDone(run, content);   // 選秀 0 題（content 設 k、m 都 0）：直接跳到第 N 位
     return run;
   }
   // 補貨（newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng）
@@ -1853,7 +1879,7 @@
     return run.prologue === 'pending' ? ((content && content.prologueEnemy) || 'man') : run.order[run.idx];
   }
   function nextStep(run) {
-    if (run.pending) return run.pending.type === 'reward' ? 'reward' : run.pending.type === 'level' ? 'level' : 'retry';
+    if (run.pending) return ['reward', 'level', 'stall', 'draft'].includes(run.pending.type) ? run.pending.type : 'retry';   // 第 C 波多 stall（今天的攤位）、draft（中繼點開局選秀）
     if (run.over) return null;
     if (run.duel) return 'duel';
     return run.prologue === 'pending' ? 'prologue' : 'fight';
@@ -1863,7 +1889,12 @@
   function guestDef(run, content, id, pos) {
     const main = pos >= (run.mainFrom || 1) ? mainAt(run, content, pos) : null;
     const rd = run.retryDeck, deckIds = rd && rd.pos === pos && rd.id === id && Array.isArray(rd.ids) ? rd.ids : null;   // 升版前的舊 run（pinOldDeck）
-    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, main, deckIds });
+    const d = enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, main, deckIds });
+    if (run.dare && run.dare.round === roundOf(pos)) {           // 第 C 波踢館帖（SPEC-C §5.4）：接了的那一輪 5 位，狠角色品味 +1／耐打聲望 +4；d.dare＝來客條、對決頭上的記號
+      const D = wcCfg(content).stall.dare[run.dare.mode] || {};
+      d.atk += D.atk | 0; d.hp += D.hp | 0; d.dare = run.dare.mode;
+    }
+    return d;
   }
   // 第 B 波升版（存檔 v4–6 → v7）：卡池從舊 323 張變 5,000 張、id 換成 catalogId，同一位重組會換牌。停在「待說情」或「打到一半的對決」的舊 run，
   //   說情重打要拿到原本那副牌（45 行「同一位、同一副牌」）→ 載入時（ui.js loadSave，換完 id 之後）用「只有舊卡、鍵改回舊 slug」的 content 視圖
@@ -1949,7 +1980,7 @@
     const met = uniq(duel.e.thrown.map(c => c.id));
     for (const id of met) if (!S.met.includes(id)) S.met.push(id);
     run.duel = null; run.duelEnemy = null;
-    let earn = 0, heal = 0, ups = 0, aceWon = null, aceFirst = false, aceNew = false, aceUnlock = null;
+    let earn = 0, heal = 0, ups = 0, aceWon = null, aceFirst = false, aceNew = false, aceUnlock = null, extra = null;
     if (win) {
       S.wins++;
       earn = Math.max(0, econ(content).win[cls] | 0);
@@ -1985,8 +2016,16 @@
           aceFirst = !run.aceWon;
           if (!run.aceWon) { run.aceWon = true; run.taken++; }
         }
-        const cards = met.filter(id => content.cards[id] && !content.cards[id].tier && !run.bag.includes(id));
+        let cards = met.filter(id => content.cards[id] && !content.cards[id].tier && !run.bag.includes(id));
+        // 第 C 波（SPEC-C §3.3、§3.4）：一般／菁英＝戰利品列（三張蓋牌）、藏家＝寶箱（踢館帖那輪撐完四張＋$5,000）；候選換成翻出來的那幾張。
+        //   藏家頂點卡（上面 bossWonCard／acesWon）一行不動；寶箱、戰利品列都不放頂點卡
+        const W = wcCfg(content), dareWon = cls === 'boss' && !!run.dare && run.dare.round === run.round;
+        if (cls === 'boss' && W.chest.on) {
+          extra = chestRow(run, content, duel, met, pos, dareWon); extra.kind = 'chest'; cards = extra.cards;
+          if (dareWon) { wcEarn(run, 'dare', W.chest.dareCash); wcStats(run).dareWon++; extra.dareCash = W.chest.dareCash; }
+        } else if (cls !== 'boss' && W.loot.on) { extra = lootRow(run, content, duel, met, pos, cls, earn); extra.kind = 'loot'; cards = extra.cards; }
         // 客人掉落（SPEC 從唱片櫃挑牌開局 §1 裁定 6、7）：獎勵候選＝他這一場真的丟過的（trialDeck 換牌、加星後那一副；王牌不掉）；沒拿的也記，給一趟留一張
+        //   第 C 波開著：＝戰利品列／寶箱翻出來的那幾張（SPEC-C §6「從抽到或對方掉落的專輯裡帶走 1 片」）
         if (!Array.isArray(run.drops)) run.drops = [];
         for (const id of cards) if (!run.drops.includes(id)) run.drops.push(id);
         let relics = [];
@@ -1995,19 +2034,25 @@
           if (pool.length) relics = [pickOne(pool, run)];
         }
         run.pending = { type: 'reward', enemyId, prologue: false, pos, cls, cards, relics, need: relics.length ? 'cardOrRelic' : 'card', cardDone: !cards.length, relicDone: !relics.length, aceWon };
+        if (extra) Object.assign(run.pending, { kind: extra.kind, src: extra.src, gold: extra.gold, packet: extra.packet || null, apexSlot: extra.apexSlot || [],
+          skipCash: extra.kind === 'chest' ? W.chest.skipCash : W.loot.skipCash, dare: dareWon });
       }
       settle(run, content);
     } else {
       if (!prologue) run.streak = 0;
       run.hp = run.hpIn;                                      // 輸了不寫回：說情從開打前的聲望重打
       if (prologue) run.pending = { type: 'retry', enemyId, free: true };
+      else if (run.safety && pos === 1) { run.safety = false; wcStats(run).safety++; run.pending = { type: 'retry', enemyId, free: true, safety: true, pos }; }   // 第 C 波新手保底：第 1 位輸了免費重打一次（不吃說情）
       else if (run.retryLeft > 0) run.pending = { type: 'retry', enemyId, free: false, pos };
       else {
         run.over = 'dead';
         S.lostAt = { enemyId, pos, round: run.round, idx: run.idx, cls, n: duel.n, last: duel.last };
       }
     }
-    return { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon, aceFirst, aceNew, aceUnlock };
+    const out = { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon, aceFirst, aceNew, aceUnlock };
+    if (extra) out.packetCash = extra.packet && extra.packet.kind === 'cash' ? extra.packet.n : 0;   // 第 C 波：紅包那筆（已入帳；畫面 cashAfter 起點要扣回、再演第二段）
+    if (extra && extra.kind === 'chest' && extra.dareCash) out.dareCash = extra.dareCash;
+    return out;
   }
   // 獎勵收完：有升級就先選（連升就連選），選完才到下一位
   function settle(run, content) {
@@ -2038,6 +2083,10 @@
       run.retryLeft = trialCfg(content, run.tier).retry;
       if (run.unlock) run.bossCard = bossCardFor(run, content);   // 解鎖制：新一輪的藏家帶哪張（上一輪收到的已經算進 run.acesWon）
       restock(run, content);
+      // 第 C 波（SPEC-C §3.4）：上一輪的踢館帖、算命作廢；攤位在換輪（補貨、一檔貨換檔）之後、這一輪第 1 位之前
+      if (run.dare && run.dare.round < run.round) run.dare = null;
+      if (run.fortune && run.fortune.pos < run.pos) run.fortune = null;
+      if (wcCfg(content).stall.on) stallSession(run, content);
     } else if (run.shop && lotCfg(content).on) {               // 一檔貨：每位客人之間從這一檔換下一批上架（沒有檔／不是這一輪的＝先 fixLot）
       if (!lotOk(run, content)) fixLot(run, content);
       shelve(run, content);
@@ -2065,15 +2114,22 @@
     const first = (run.round - 1) * PER_ROUND + 1;
     return (run.order || []).map((id, i) => {
       const pos = first + i, g = guestDef(run, content, id, pos);
-      return { id, pos, cls: classAt(pos), hp: g.hp, atk: g.atk, def: g.def, hasAce: !!g.ace || (classAt(pos) === 'boss' && !!run.bossAce),
-        done: i < run.idx || (i === run.idx && beat), cur: i === run.idx, title: g.title || null, main: g.main || null };
+      const skip = run.cpFrom > 1 && pos < run.cpFrom;              // 第 C 波：中繼點開局，這一輪在第 N 位之前的那幾位這一趟沒遇到（不算打完）
+      const x = { id, pos, cls: classAt(pos), hp: g.hp, atk: g.atk, def: g.def, hasAce: !!g.ace || (classAt(pos) === 'boss' && !!run.bossAce),
+        done: !skip && (i < run.idx || (i === run.idx && beat)), cur: i === run.idx, title: g.title || null, main: g.main || null };
+      if (skip) x.skip = true;
+      if (g.dare) x.dare = g.dare;                                // 第 C 波：接了踢館帖的這一輪（'tough'｜'tank'）
+      if (run.fortune && run.fortune.pos === pos) x.fortune = run.fortune;   // 第 C 波：算命看過的這一輪藏家（三色比例＋王牌）
+      return x;
     });
   }
   // 結算：走到第幾位、最多連贏幾位、收了幾張
   function runSummary(run) {
     const S = run.stats || {};
     return { reached: run.pos | 0, bestStreak: run.bestStreak | 0, taken: run.taken | 0, wins: S.beaten | 0, level: run.level | 0, checkpoints: (run.checkpoints || []).slice(), kept: run.kept || null,
-      ...(run.unlock ? { aces: (run.acesWon || []).slice() } : {}) };   // 解鎖制：這一趟收的頂點卡（舊 run 不多這個鍵）
+      ...(run.unlock ? { aces: (run.acesWon || []).slice() } : {}),   // 解鎖制：這一趟收的頂點卡（舊 run 不多這個鍵）
+      from: run.cpFrom > 1 ? run.cpFrom : 1,                      // 第 C 波：這一趟從第幾位開始（1 或中繼點；save.runs[k].from）
+      lexp: Object.assign({}, run.lexp || {}, { base: lexpBase(run) }) };   // 第 C 波樂歷記帳（C 波只記；D 波一次入帳）：路線分項＋base
   }
 
   // ---------- 稀有度、價格與時機 ----------
@@ -2161,13 +2217,32 @@
   // 櫃檯賣給老闆（第 A 波 5，店主 11-16「要去櫃檯賣給老闆才能移出包包，也是在局中備戰時發生，就是 Monster Train 的方式」）：
   //   移出包包只有這一條（choose sell）。兩位客人之間（canShop）；包包裡；賣完至少留 5 張（bagFloor，'bagMin'）。
   //   一般唱片半價（sellValue；特價箱的照特價算）；老闆送的（isGift）、從唱片櫃帶來的種子（isSeed）也可以交給老闆：老闆收回、$0（reclaim 'gift'｜'seed'）。
-  //   回 {ok:true, earn, reclaim:null|'gift'|'seed'} | {ok:false, error}（不改 run；畫面列「賣給老闆 $400」「交還老闆」用，choose sell 走同一套）
+  //   回 {ok:true, earn, reclaim:null|'gift'|'seed', found} | {ok:false, error}（不改 run；畫面列「賣給老闆 $400」「交還老闆」用，choose sell 走同一套）
+  //   第 C 波（SPEC-C §3.3 sellCore，CRITIQUE 1.5／2.1）：拆成「時機（canShop）＋sellCore（規則）」；撿來的（run.found）賣回 min(半價, $400)＝跟「不收」一樣，found:true
   function sellQuote(run, content, id) {
     if (!canShop(run)) return { ok: false, error: 'notNow' };
-    if (!Array.isArray(run.bag) || !run.bag.includes(id) || !cardOf(content, id)) return { ok: false, error: 'badSell' };
+    return sellCore(run, content, id);
+  }
+  // 賣回的規則（不看時機）：櫃檯（sellQuote）、同業調貨與黑膠市集的「賣一張給他」（choose stallAct sell）共用
+  function sellCore(run, content, id) {
+    if (!run || !Array.isArray(run.bag) || !run.bag.includes(id) || !cardOf(content, id)) return { ok: false, error: 'badSell' };
     if (run.bag.length - 1 < bagFloor(run)) return { ok: false, error: 'bagMin' };
     const reclaim = isSeed(run, content, id) ? 'seed' : isGift(run, content, id) ? 'gift' : null;
-    return { ok: true, earn: reclaim ? 0 : sellValue(content, cardOf(content, id)), reclaim };
+    const found = !reclaim && Array.isArray(run.found) && run.found.includes(id), half = sellValue(content, cardOf(content, id));
+    return { ok: true, earn: reclaim ? 0 : found ? Math.min(half, wcCfg(content).loot.skipCash) : half, reclaim, found };
+  }
+  // 賣掉（sellCore 驗過的 q）：扣包包、加錢、記 sold；種子從 run.seeds、送的從 run.gifts、撿來的從 run.found 拿掉（之後再買回來＝買的，照半價）
+  function applySell(run, content, id, q, effects) {
+    if (q.reclaim === 'gift') {
+      if (!Array.isArray(run.gifts)) run.gifts = (((content.gifts || {})[run.ace]) || []).filter(x => run.bag.includes(x));   // 舊的 run 沒有這欄：先補上
+      if (run.gifts.includes(id)) run.gifts.splice(run.gifts.indexOf(id), 1);
+    }
+    if (q.reclaim === 'seed' && Array.isArray(run.seeds)) run.seeds.splice(run.seeds.indexOf(id), 1);
+    if (q.found) run.found.splice(run.found.indexOf(id), 1);
+    if (Array.isArray(run.sellNext)) run.sellNext = run.sellNext.filter(x => x !== id);   // cPolicy takeSell（量「收了拿去賣」）
+    run.bag.splice(run.bag.indexOf(id), 1); run.money += q.earn; run.stats.earned += q.earn; run.stats.sold.push(id);
+    if (run.stats.c && q.earn > 0) wcAdd(run.stats.c.income, 'sell', q.earn);   // 第 C 波計數（全關時沒有 stats.c，不建）
+    effects.push(q.reclaim ? { loseCard: id, earn: 0, reclaim: q.reclaim } : q.found ? { loseCard: id, earn: q.earn, found: true } : { loseCard: id, earn: q.earn });
   }
   // 自動遊玩挑種子：照最高星（峰值）挑，同星看總星、再看 id（決定性）
   function seedPolicy(content, ids, n) {
@@ -2184,10 +2259,11 @@
     if (owned && typeof owned === 'object') return id => { const v = owned[id]; return !!(v && (typeof v === 'object' ? v.own : v)); };
     return () => false;
   }
+  //   第 C 波（SPEC-C §3.4，CRITIQUE 2.6）：買的不算（#s34【已定】「只從抽到或對方掉落的帶走 1 片」）＝(entered − stats.bought) ∪ drops；特價箱開局免費挑的不是買的
   function keepCandidates(run, content, owned) {
     if (!run) return [];
-    const has = ownedFn(owned);
-    return uniq([].concat(run.entered || [], run.drops || [])).filter(id => canSeed(content, id) && !has(id));
+    const has = ownedFn(owned), bought = new Set((run.stats && run.stats.bought) || []);
+    return uniq([].concat((run.entered || []).filter(id => !bought.has(id)), run.drops || [])).filter(id => canSeed(content, id) && !has(id));
   }
   function keepOne(run, content, id, owned) {
     if (!run || !run.over) return { ok: false, error: 'notOver' };
@@ -2211,10 +2287,10 @@
   const bagFloor = run => Math.min(CFG.handSize, (run.bag || []).length);
   function canShop(run) { return !!run && !run.over && !run.pending && !run.duel && run.prologue !== 'pending' && !!shopOf(run).bargainPicked; }
   // 特價箱免費挑三張：只在第 1 位之前（裁定 4；之後每輪補貨、要買）
-  function canBargainPick(run) { return !!run && !shopOf(run).bargainPicked && !run.duel && !run.over && run.pos === 1; }
+  function canBargainPick(run) { return !!run && !shopOf(run).bargainPicked && !run.duel && !run.over && run.pos === (run.cpFrom || 1); }   // 中繼點開局：第 N 位之前
   // 換王牌（店主 11-13）：只在這一趟第 1 位開打之前（序章那一趟：序章打完、領完撿到的那張之後）
   function canSwitchAce(run, content) {
-    if (!run || run.over || run.pending || run.duel || run.prologue === 'pending' || run.pos !== 1 || run.fought) return false;
+    if (!run || run.over || run.pending || run.duel || run.prologue === 'pending' || run.pos !== (run.cpFrom || 1) || run.fought) return false;   // 中繼點開局：第 N 位開打前（CRITIQUE 1.6）
     return !(content && Number.isInteger(run.retryLeft) && run.retryLeft < trialCfg(content, run.tier).retry);   // 舊的 run：說情用掉了＝打過第 1 位
   }
   // o.aceId（頂點卡試做）：這一派名單裡的那張；同一派＝只換 run.aceId（送的不動）、換派＝照舊換送的再設 run.aceId。沒給＝照舊（換派時清掉舊的 aceId）
@@ -2259,6 +2335,622 @@
     return { ok: true, effects };
   }
 
+  // ============================================================================================================================
+  // 第 C 波（SPEC-C；scratchpad v5/wave-c）：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底（客人補償在 trialGuest 的 C.trial.guestHpSteps）
+  //   決定性：全部用雜湊 hash01(seedKey#runNo#<標籤>)，標籤只看位數（loot#位、chest#位、stall#打完第幾位、stall#after#站#序、…#roll<j>、draft#c<i>），
+  //   不碰 run.rng → 對決亂數跟現行同一序列（例外：菁英／藏家那一件配件照舊 pickOne，同一個位置）。說情重打換了 met，戰利品列「沒出過」那格就可能不同（CRITIQUE 2.3）
+  //   引擎預設 WAVEC 全關；content.js 的 C.waveC 開（wcCfg 逐層合併：物件逐鍵、陣列整個換）。全關＝跟第 C 波以前逐字相同（sim、engine.test）
+  //   一站一件事、做完就存：站的貨在進站時算好存在 pending.cur（重新整理、被切掉回來都一樣）
+  // ============================================================================================================================
+  const WAVEC = {
+    loot: { on: false, n: 3, gold: 0.15, packet: 0.12, packetCash: 0.7, packetLexp: 15, skipCash: 400 },
+    chest: { on: false, n: 3, apex: 0.08, gold: 0.30, pity: 5, dareN: 4, dareCash: 5000, skipCash: 400 },
+    // 池子（總星門檻＝trialDeck 的下限 fl 加減、夾在 min～cap）：金邊 clamp(fl＋2, 10, 12)、好貨 clamp(fl＋1, 9, 12)、戰力 clamp(fl, 6, 11)；挖寶攤同色不足 colorMin 張就降 1
+    pools: { goldPlus: 2, goldMin: 10, goldCap: 12, goodPlus: 1, goodMin: 9, goodCap: 12, powerMin: 6, powerCap: 11, colorMin: 30 },
+    stall: {
+      on: false,
+      weights: { dig: 3, trade: 2, gear: 2, snack: 2, gig: 2, promo: 2, fortune: 1.5, consign: 1, home: 1 },
+      unlock: { promo: 10, consign: 15, dare: 30 },               // promo／consign 看 max(最遠紀錄, 剛打完第幾位)；dare 只給解鎖階梯顯示（出不出照 dare.from）
+      first: [['dig', 'fortune'], ['warehouse', 'home']],          // 第一趟（每一趟打完第 5 位）固定；後面再接錄音室
+      paid: ['trade', 'gear', 'gig'], blue: ['gig', 'promo', 'home'],   // 花錢站每組最多 1 個；四站至少一個藍框（樂歷站）（CRITIQUE 3.1）
+      leaveCash: 1000, reroll: 500, skipCash: 400, tradeN: 3, gearN: 2, gearPrice: 3000, snackHp: 3,
+      gig: { base: 3000, step: 1000, lexp: 20, keep: 4000 },       // 第 k 張 $3,000＋$1,000×(k−1)，整趟累計；keep＝「買到剩 $4,000」
+      promoN: 3, promoLexp: 10, homeLexp: 30, demoLexp: 15, consignRounds: 2,
+      market: { cards: 6, gear: 3, bag: { price: 2500, n: 3, apex: 0.06, max: 1 } },
+      dare: { from: 30, p: 0.35, tough: { atk: 1 }, tank: { hp: 4 } },   // from 看「這一趟剛打完第幾位」，不看最遠紀錄（CRITIQUE 3.2）
+      digNames: [                                                  // 攤名＝曲風／地區 ×3（不是篩選）；lit＝店裡對到的箱（shops/dip.json prop id）
+        { id: 'jazzTeacher', genres: ['jazz'], lit: ['crate-jazz'] },
+        { id: 'bandRoom', genres: ['rock'], lit: ['isl-0a'] },
+        { id: 'djAbroad', genres: ['electronic', 'hiphop'], lit: ['isl-0b', 'isl-1b'] },
+        { id: 'oldRadio', region: ['tw', 'zh'], lit: ['crate-tw'] },
+        { id: 'grandpa', genres: ['pop', 'soul', 'blues'], lit: ['isl-1a', 'winbin'] },
+        { id: 'classicalStudy', genres: ['classical'], lit: ['isl-2b'] },
+        { id: 'backpacker', genres: ['world'], lit: ['isl-3a'] },
+        { id: 'closedShop', lit: [] }] },                          // 不加權
+    safety: { on: false },
+    draft: { k: null, m: null, mLess: 1, mRate: null },           // null＝照公式（SPEC-C §5.6；驗收修正：m＝round(L−1−mLess)，比期望等級少一級。mRate 給了＝舊公式 round(mRate×(L−1))，sim 對照用）
+  };
+  const LEXP_BASE = { pos: 15, streak: 8 };                        // 基本樂歷＝15×實際打過的位數＋8×最多連贏（D 波入帳時套路線上限用；C 波只記帳）
+  function wcMerge(d, v) {
+    if (v == null) return d;
+    if (typeof v !== 'object' || Array.isArray(v) || !d || typeof d !== 'object' || Array.isArray(d)) return v;
+    const o = Object.assign({}, d);
+    for (const k of Object.keys(v)) o[k] = wcMerge(d[k], v[k]);
+    return o;
+  }
+  function wcCfg(content) {
+    const s = (content && content.waveC) || {}, out = {};
+    for (const k of Object.keys(WAVEC)) out[k] = wcMerge(WAVEC[k], s[k]);
+    return out;
+  }
+  // 畫面給引擎的兩個讀存檔函式（CRITIQUE 1.8）：owned(id)→bool（唱片櫃擁有）、tunes()→[最多的兩個頻率格]；呼叫時才讀存檔、不存進 run。
+  //   金邊盤、寄賣領回、公關片先扣擁有的；公關片那兩格頻率 ×3。沒設（sim、單元測試）＝不扣、不加權。setCtx(null)＝清掉
+  const WC_CTX = { owned: null, tunes: null };
+  function setCtx(o) {
+    WC_CTX.owned = o && o.owned != null ? ownedFn(o.owned) : null;
+    WC_CTX.tunes = o && typeof o.tunes === 'function' ? o.tunes : null;
+  }
+  const ctxOwned = () => { const f = WC_CTX.owned; return f ? (id => { try { return !!f(id); } catch (_) { return false; } }) : null; };
+  function ctxTunes() {
+    if (!WC_CTX.tunes) return [];
+    try { const t = WC_CTX.tunes(); return Array.isArray(t) ? t.filter(x => typeof x === 'string').slice(0, 2) : []; } catch (_) { return []; }
+  }
+  // 客人牌組總星下限（trialDeck 的 fl）：min(floorMax, floorBase＋⌊floorRate×位⌋)（第 15 位起 13）
+  function floorAt(content, pos, tier) { const K = trialCfg(content, tier).curve.deck; return Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * Math.max(1, pos | 0))); }
+  const clampN = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+  function wcTh(content, pos, kind, tier) {
+    const P = wcCfg(content).pools, f = floorAt(content, pos, tier);
+    if (kind === 'gold') return clampN(f + P.goldPlus, P.goldMin, P.goldCap);
+    if (kind === 'good') return clampN(f + P.goodPlus, P.goodMin, P.goodCap);
+    return clampN(f, P.powerMin, P.powerCap);
+  }
+  // 池子：非頂點、非特價箱、非王牌、總星 ≥ th，id 排序；依 th 快取在 content.cards 上
+  const WC_POOL = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function wcPool(content, th) {
+    const cards = content.cards || {};
+    let M = WC_POOL && WC_POOL.get(cards);
+    if (!M) { M = new Map(); if (WC_POOL) WC_POOL.set(cards, M); }
+    if (M.has(th)) return M.get(th);
+    const bg = new Set(bargainIds(content)), aces = new Set(Object.values(content.aces || {}));
+    const p = Object.keys(cards).sort().map(id => cards[id]).filter(c => c && !c.tier && !bg.has(c.id) && !aces.has(c.id) && power(c) >= th);
+    M.set(th, p); return p;
+  }
+  // 加權不重複抽 n 張（Efraimidis–Spirakis：ln(u)/w 最大的；u＝hash01(key#id)；同分 id 小的先）。
+  //   skip（Set）先扣、soft（id→bool：唱片櫃擁有的）再扣；不夠先放回 soft、再放回 skip（一趟裡不重複：先扣包包和這趟路上出現過的）。
+  //   skip.hard（wcSkip 帶的：包包＋這次已抽的）永遠不放回——深處金邊／好貨池（≥12 星 111 張）被 road 用完時，只放回路上出現過的，不給包包已有、同一列重複的
+  function wcPick(pool, key, n, skip, wfn, soft) {
+    if (!(n > 0)) return [];
+    const score = c => Math.log(hash01(key + '#' + c.id) + 1e-12) / (wfn ? Math.max(1e-6, wfn(c)) : 1);
+    const better = (a, b) => a.s > b.s || (a.s === b.s && a.id < b.id);
+    const top = (arr, x) => { let i = arr.length; while (i > 0 && better(x, arr[i - 1])) i--; if (i < n) { arr.splice(i, 0, x); if (arr.length > n) arr.pop(); } };
+    const t0 = [], t1 = [], rest = [];
+    for (const c of pool) {
+      if (skip && skip.has(c.id)) { if (!(skip.hard && skip.hard.has(c.id))) rest.push(c); continue; }
+      const x = { id: c.id, s: score(c) };
+      if (soft && soft(c.id)) top(t1, x); else top(t0, x);
+    }
+    const out = t0.map(x => x.id);
+    for (const x of t1) { if (out.length >= n) break; out.push(x.id); }
+    if (out.length < n) { const t2 = []; for (const c of rest) top(t2, { id: c.id, s: score(c) }); for (const x of t2) { if (out.length >= n) break; out.push(x.id); } }
+    return out;
+  }
+  const wcKey = (run, s) => run.seedKey + '#' + run.runNo + '#' + s;
+  // 一趟裡不重複：包包＋路上出現過的＋extra（這次已抽的）都先扣；.hard＝包包＋extra（wcPick 不夠時也不放回）
+  const wcSkip = (run, extra) => { const s = new Set([].concat(run.bag || [], run.road || [], extra || [])); s.hard = new Set([].concat(run.bag || [], extra || [])); return s; };
+  function wcRoad(run, ids) {
+    if (!Array.isArray(run.road)) run.road = [];
+    const S = wcStats(run);
+    for (const id of ids) {
+      if (!id) continue;
+      if (run.pos >= 15) { S.r15++; if (run.road.includes(id)) S.r15d++; }   // N1：第 15 位起路上的盤重複幾張
+      if (!run.road.includes(id)) run.road.push(id);
+    }
+  }
+  // 計數（sim、結算頁、上線後記 §15；run.stats.c）
+  function wcStats(run) {
+    const S = run.stats || (run.stats = {});
+    if (!S.c) S.c = { loot: 0, lootTake: 0, lootSkip: 0, lootRelic: 0, gold: 0, goldTake: 0, packet: 0, packetCash: 0, packetLexp: 0,
+      chest: 0, chestTake: 0, chestRelic: 0, chestSkip: 0, chestGold: 0, chestApex: 0, chestGoldTake: 0,
+      sess: 0, cpSess: 0, offered: {}, picked: {}, leave: 0, spend: {}, income: {}, snackHp: 0, tickets: 0, digTake: 0, digSkip: 0, rerolls: 0,
+      tradeBuy: 0, gearBuy: 0, marketBuy: 0, bags: 0, consign: 0, consignGot: 0, dareOffer: 0, dareAccept: 0, dareTough: 0, dareTank: 0, dareWon: 0,
+      safety: 0, r15: 0, r15d: 0, src: {} };
+    return S.c;
+  }
+  const wcAdd = (o, k, n) => { o[k] = (o[k] || 0) + n; };
+  function lexpAdd(run, src, n) { if (!run.lexp || typeof run.lexp !== 'object') run.lexp = {}; run.lexp[src] = (run.lexp[src] | 0) + n; }
+  // 撿來的（戰利品列、寶箱、挖寶攤、老闆的倉庫、寄賣領回、選秀撿盤）：櫃檯／攤位賣回一律 $400（CRITIQUE 2.1）
+  function wcFound(run, id) { if (!Array.isArray(run.found)) run.found = []; if (!run.found.includes(id)) run.found.push(id); }
+  // 錢的入出（同時記 stats.earned／spent 與 stats.c.income／spend[src]）
+  function wcEarn(run, src, n) { if (!(n > 0)) return; run.money += n; run.stats.earned += n; wcAdd(wcStats(run).income, src, n); }
+  function wcSpend(run, src, n) { run.money -= n; run.stats.spent += n; wcAdd(wcStats(run).spend, src, n); }
+  // 基本樂歷（SPEC-C §2.4、§4.7）：15×實際打過的位數（reached − from ＋ 1）＋8×最多連贏；中繼點開局只算實際打過的
+  function lexpBase(run) {
+    if (!run) return 0;
+    const from = run.cpFrom > 1 ? run.cpFrom : 1;
+    return LEXP_BASE.pos * Math.max(0, (run.pos | 0) - from + 1) + LEXP_BASE.streak * (run.bestStreak | 0);
+  }
+
+  // ---------- 戰利品列（每打贏一位一般／菁英客人；SPEC-C §3.3）----------
+  //   三張蓋牌：他這一場整副牌（e.deckIds 扣頂點卡、包包已有）先放一張這場沒出過的（雜湊最小），再照雜湊補滿；不夠從戰力池補（src 'fill'）。
+  //   15% 一張換金邊盤（不換「沒出過」那格、優先最後一格）；12% 紅包：七成酬勞再給一次（當下入帳）、三成樂歷 +15（記帳）
+  function lootRow(run, content, duel, met, pos, cls, earn) {
+    const L = wcCfg(content).loot, key = wcKey(run, 'loot#' + pos);
+    met = met || [];
+    const deck = uniq(((duel && duel.e && duel.e.deckIds) || []).filter(id => content.cards[id] && !content.cards[id].tier && !run.bag.includes(id)));
+    const h = id => hash01(key + '#d#' + id);
+    const unplayed = deck.filter(id => !met.includes(id)).sort((a, b) => h(a) - h(b));
+    const cards = [], src = [];
+    if (unplayed.length) { cards.push(unplayed[0]); src.push('unplayed'); }
+    for (const id of deck.slice().sort((a, b) => h(a) - h(b))) { if (cards.length >= L.n) break; if (!cards.includes(id)) { cards.push(id); src.push(met.includes(id) ? 'played' : 'unplayed'); } }
+    if (cards.length < L.n) for (const id of wcPick(wcPool(content, wcTh(content, pos, 'power', run.tier)), key + '#fill', L.n - cards.length, wcSkip(run, cards))) { cards.push(id); src.push('fill'); }
+    const gold = [];
+    if (cards.length && hash01(key + '#gold') < L.gold) {
+      let k = -1; for (let i = cards.length - 1; i >= 0; i--) if (i > 0 || src[i] !== 'unplayed') { k = i; break; }
+      if (k < 0) k = cards.length - 1;
+      const g = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', 1, wcSkip(run, cards), null, ctxOwned())[0];
+      if (g) { cards[k] = g; src[k] = 'gold'; gold.push(g); }
+    }
+    let packet = null;
+    if (hash01(key + '#packet') < L.packet) packet = hash01(key + '#packetKind') < L.packetCash ? { kind: 'cash', n: earn | 0 } : { kind: 'lexp', n: L.packetLexp };
+    const S = wcStats(run); S.loot++; if (gold.length) S.gold++; for (const x of src) wcAdd(S.src, x, 1);
+    if (packet) { S.packet++; if (packet.kind === 'cash') { S.packetCash++; wcEarn(run, 'packet', packet.n); } else { S.packetLexp++; lexpAdd(run, 'packet', packet.n); } }
+    wcRoad(run, cards.filter((id, i) => src[i] === 'gold' || src[i] === 'fill'));
+    return { cards, src, gold, packet };
+  }
+  // ---------- 藏家寶箱（每打贏一位藏家）----------
+  //   每張：<8% 鎮店盤格（C 波從金邊池抽、src 'apex'；九第二波換成 #s9 抽法）、<38% 金邊盤、其他他的牌（沒出過的先）；
+  //   run.chestDry ≥ pity 而且這箱沒擲到 → 第一張改鎮店盤格（跨趟：save.chestDry）；踢館帖那輪撐完：4 張、沒有金邊就最後一張改金邊
+  function chestRow(run, content, duel, met, pos, dare) {
+    const X = wcCfg(content).chest, key = wcKey(run, 'chest#' + pos);
+    met = met || [];
+    const n = dare ? X.dareN : X.n;
+    const deck = uniq(((duel && duel.e && duel.e.deckIds) || []).filter(id => content.cards[id] && !content.cards[id].tier && !run.bag.includes(id)));
+    const h = id => hash01(key + '#d#' + id);
+    const left = deck.slice().sort((a, b) => (met.includes(a) ? 1 : 0) - (met.includes(b) ? 1 : 0) || h(a) - h(b));   // 沒出過的先
+    const kinds = [];
+    for (let k = 0; k < n; k++) { const u = hash01(key + '#' + k); kinds.push(u < X.apex ? 'apex' : u < X.apex + X.gold ? 'gold' : 'deck'); }
+    if (!kinds.includes('apex') && (run.chestDry | 0) >= X.pity) kinds[0] = 'apex';
+    if (dare && !kinds.some(k => k === 'gold' || k === 'apex')) kinds[n - 1] = 'gold';
+    const cards = [], src = [];
+    const golds = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', kinds.filter(k => k !== 'deck').length, wcSkip(run, deck), null, ctxOwned());
+    let gi = 0;
+    for (const k of kinds) {
+      if (k !== 'deck') { const id = golds[gi++]; if (id) { cards.push(id); src.push(k); continue; } }
+      const id = left.find(x => !cards.includes(x));
+      if (id) { cards.push(id); src.push(met.includes(id) ? 'played' : 'unplayed'); continue; }
+      const f = wcPick(wcPool(content, wcTh(content, pos, 'power', run.tier)), key + '#fill#' + cards.length, 1, wcSkip(run, cards))[0];
+      if (f) { cards.push(f); src.push('fill'); }
+    }
+    const apexHit = src.includes('apex');
+    run.chestDry = apexHit ? 0 : (run.chestDry | 0) + 1;
+    const S = wcStats(run); S.chest++; if (src.some(s => s === 'gold' || s === 'apex')) S.chestGold++; if (apexHit) S.chestApex++;
+    wcRoad(run, cards.filter((id, i) => src[i] !== 'played' && src[i] !== 'unplayed'));
+    return { cards, src, gold: cards.filter((id, i) => src[i] === 'gold' || src[i] === 'apex'), apexSlot: cards.filter((id, i) => src[i] === 'apex') };
+  }
+
+  // ---------- 店內攤位二選一（每打完一輪；advance 換輪之後、這一輪第 1 位之前；SPEC-C §3.3、§4.3、§5.3）----------
+  const STALL_KINDS = ['dig', 'trade', 'gear', 'snack', 'gig', 'promo', 'fortune', 'consign', 'home'];
+  // 這種站開了沒：promo／consign 看 max(開局時的最遠紀錄, 剛打完第幾位)；沒列在 unlock 的一開始就開（dare 這格只給解鎖階梯，出不出照 dare.from）
+  function stallUnlocked(run, content, kind, after) {
+    const U = wcCfg(content).stall.unlock, far = Math.max((run && run.far0) | 0, after | 0);
+    return !(kind in U) || far >= U[kind];
+  }
+  // 解鎖階梯（局外、看最遠紀錄；標題頁、結算頁一行「店內攤位 2/6｜再走 5 位開錄音室」）：攤位、店裡唱盤（一開始）→ 錄音室（打完第 5 位）→ 公關片 → 寄賣 → 踢館帖
+  function stallLadder(content, far) {
+    const U = wcCfg(content).stall.unlock, f = Math.max(0, far | 0);
+    const steps = [['stall', 0], ['home', 0], ['studio', PER_ROUND], ['promo', U.promo | 0], ['consign', U.consign | 0], ['dare', U.dare | 0]].map(([id, at]) => ({ id, at, open: f >= at }));
+    const nx = steps.find(x => !x.open);
+    return { n: steps.filter(x => x.open).length, total: steps.length, steps, next: nx ? { id: nx.id, at: nx.at, left: nx.at - f } : null };
+  }
+  function stallSession(run, content) {
+    const ST = wcCfg(content).stall, after = run.pos - 1, key = wcKey(run, 'stall#' + after);
+    const cpStart = run.cpFrom > 1 && after === run.cpFrom;   // 中繼點開局那一位打完的攤位不算中繼點攤位（CRITIQUE 4.5）
+    const cp = isCheckpoint(after, content) && !cpStart, first = after === PER_ROUND && !(run.cpFrom > 1);
+    const PAID = ST.paid || [], BLUE = ST.blue || [];
+    let groups;
+    if (first) groups = ST.first.map(g => g.slice());
+    else {
+      const pool = STALL_KINDS.filter(k => (ST.weights[k] || 0) > 0 && stallUnlocked(run, content, k, after)).map(k => ({ id: k, w: ST.weights[k] }));
+      // 抽 4 種不重複分兩組；要合「花錢站四站裡 ≤2、四站至少一個藍框」，不合就換鍵重抽（t＝0 跟原型同鍵、最多 40 次）
+      let four = null;
+      for (let t = 0; t < 40 && !four; t++) {
+        const f = wcPick(pool, key + '#kinds' + (t ? '#' + t : ''), 4, null, c => c.w);
+        if (f.filter(k => PAID.includes(k)).length <= 2 && (!BLUE.length || f.some(k => BLUE.includes(k)))) four = f;
+      }
+      if (!four) four = wcPick(pool, key + '#kinds', 4, null, c => c.w);
+      groups = [[four[0], four[1]], [four[2], four[3]]].map(g => g.filter(Boolean)).filter(g => g.length);
+      // 兩個花錢站分到同一組 → 跟另一組的非花錢站對調（每組 ≤1）
+      if (groups[1]) for (const [a, b] of [[0, 1], [1, 0]]) if (groups[a].length === 2 && groups[a].every(k => PAID.includes(k))) {
+        const j = groups[b].findIndex(k => !PAID.includes(k));
+        if (j >= 0) { const t = groups[a][1]; groups[a][1] = groups[b][j]; groups[b][j] = t; }
+      }
+      // 踢館帖：一般輪（不是中繼點）、這一趟剛打完 ≥ dare.from、上一次不是上一輪 → 35% 把某一組的第 ② 站換成 dare（被換掉的是唯一的藍框 → 先跟那組第 ① 站對調）
+      const D = ST.dare;
+      if (!cp && after >= (D.from | 0) && run.dareLast !== after - PER_ROUND && hash01(key + '#dare') < D.p) {
+        const g = groups.length > 1 && hash01(key + '#dareSide') >= 0.5 ? 1 : 0;
+        if (groups[g].length === 2) {
+          if (BLUE.includes(groups[g][1]) && [].concat(...groups).filter(k => BLUE.includes(k)).length === 1) { const t = groups[g][0]; groups[g][0] = groups[g][1]; groups[g][1] = t; }
+          groups[g][1] = 'dare'; run.dareLast = after;
+          wcStats(run).dareOffer++;
+        }
+      }
+    }
+    const post = [];
+    if (cp && !first) post.push('market');
+    if (first || cp) post.push('studio');
+    const pre = run.consign && run.consign.due <= run.round ? ['consignGet'] : [];   // 寄賣到期：選組之前先走到櫃檯領
+    const S = wcStats(run); S.sess++; if (cp) S.cpSess++;
+    run.pending = { type: 'stall', after, pos: run.pos, cp, first, groups, pick: null, q: pre.slice(), k: 0, post, cur: null, done: [] };
+    if (pre.length) stallEnter(run, content);
+  }
+  // 配件池（器材行、市集器材、老闆的倉庫）＝rewards.relicPool ∪ relicShop.pool 扣身上的；minusShop＝再扣這一輪櫃檯在賣的（同一輪兩邊不賣同一件；CRITIQUE 1.9c）
+  function wcRelics(run, content, key, n, minusShop) {
+    const shop = minusShop ? (shopOf(run).relics || []) : [];
+    const rp = uniq([].concat(((content.rewards || {}).relicPool) || [], ((content.relicShop || {}).pool) || []))
+      .filter(id => relicOk(content, id) && !run.relics.includes(id) && !shop.includes(id));
+    return rp.map(id => ({ id, s: hash01(key + '#r#' + id) })).sort((a, b) => a.s - b.s || (a.id < b.id ? -1 : 1)).map(x => x.id).slice(0, n);
+  }
+  const digNameOf = (ST, id) => (ST.digNames || []).find(x => x && x.id === id) || null;
+  // 進一站（＝畫面的 stallResume）：照 q[k] 產生這一站的貨存進 pending.cur；q 走完：還沒選組（pick == null，寄賣領完）→ cur＝null、等 stallPick；選過組 → pending＝null
+  function stallEnter(run, content) {
+    const p = run.pending; if (!p || p.type !== 'stall') return;
+    if (p.k >= p.q.length) { p.cur = null; if (p.pick == null) return; run.pending = null; return; }   // 定稿 CRITIQUE 1.2：選組前（寄賣領完）不結束
+    const ST = wcCfg(content).stall, kind = p.q[p.k], key = wcKey(run, 'stall#' + p.after + '#' + kind + '#' + p.k), pos = run.pos, T = run.tier;
+    const cur = { kind, key };
+    if (kind === 'dig') {
+      const names = ST.digNames || [], nm = names.length ? names[Math.floor(hash01(key + '#name') * names.length) % names.length] : null;
+      cur.name = nm ? nm.id : null; cur.lit = nm && Array.isArray(nm.lit) ? nm.lit.slice() : []; cur.rolls = 0;
+      cur.cards = digDeal(run, content, cur, pos);
+    } else if (kind === 'trade') {
+      const pool = wcPool(content, wcTh(content, pos, 'good', T)), skip = wcSkip(run);
+      const rare = pool.filter(c => ['epic', 'legendary'].includes(rarity(c)));
+      const a = wcPick(rare.length ? rare : pool, key + '#rare', 1, skip);   // 「同業珍品」那格：史詩或傳奇
+      cur.rare = a[0] || null;
+      cur.cards = a.concat(wcPick(pool, key + '#good', ST.tradeN - a.length, wcSkip(run, a)));
+    } else if (kind === 'gear') {
+      cur.relics = wcRelics(run, content, key, ST.gearN, true);
+    } else if (kind === 'warehouse') {
+      cur.relics = run.relics.length >= CFG.relicMax ? [] : wcRelics(run, content, key, 2, false);
+      if (!cur.relics.length) cur.cards = wcPick(wcPool(content, wcTh(content, pos, 'good', T)), key + '#wc', 2, wcSkip(run));   // 配件滿 3 件：改唱片二選一（好貨）
+    } else if (kind === 'promo') {
+      const tn = ctxTunes();                                       // 唱片櫃最多的兩個頻率 ×3（畫面 setCtx 給；沒設＝不加權）
+      cur.cards = wcPick(wcPool(content, 0), key + '#promo', ST.promoN, wcSkip(run), tn.length ? (c => tn.includes(c.tune) ? 3 : 1) : null, ctxOwned());
+    } else if (kind === 'fortune') {
+      const bp = (run.round - 1) * PER_ROUND + PER_ROUND, bid = (run.order || [])[PER_ROUND - 1];
+      if (bid) {
+        const g = guestDef(run, content, bid, bp), cnt = { c: 0, o: 0, h: 0 };
+        for (const c of g.deck) cnt[topAttr(c)]++;
+        cur.boss = { pos: bp, id: bid, ratio: cnt, ace: g.ace ? g.ace.id : null };
+        run.fortune = cur.boss;
+      }
+    } else if (kind === 'consignGet') {
+      cur.cards = wcPick(wcPool(content, wcTh(content, pos, 'gold', T)), key + '#cg', 3, wcSkip(run), null, ctxOwned());
+    } else if (kind === 'market') {
+      const M = ST.market;
+      cur.cards = wcPick(wcPool(content, wcTh(content, pos, 'good', T)), key + '#mc', M.cards, wcSkip(run));
+      cur.relics = wcRelics(run, content, key, M.gear, true);
+      cur.bags = 0; cur.bag = null;
+    } else if (kind === 'dare') {
+      cur.lead = (run.order || [])[0] || null;                    // 門口遞帖的＝這一輪帶頭那位
+    }
+    wcRoad(run, cur.cards || []);
+    p.cur = cur;
+  }
+  // 挖寶攤三張：背面露顏色（經／冷／硬各一，topAttr；同色不足 colorMin 張就把門檻降 1）；攤名曲風 ×3；15% 一格換金邊盤
+  function digDeal(run, content, cur, pos) {
+    const W = wcCfg(content), P = W.pools, nm = digNameOf(W.stall, cur.name), key = cur.key + '#roll' + cur.rolls, skip = wcSkip(run);
+    const hit = c => !!nm && ((Array.isArray(nm.genres) && (c.genres || []).some(g => nm.genres.includes(g))) || (Array.isArray(nm.region) && nm.region.includes(c.region)));
+    const out = [];
+    for (const a of ATTRS) {
+      let th = wcTh(content, pos, 'power', run.tier), pool;
+      for (;;) { pool = wcPool(content, th).filter(c => topAttr(c) === a && !skip.has(c.id) && !out.includes(c.id)); if (pool.length >= P.colorMin || th <= 3) break; th--; }
+      const id = wcPick(pool, key + '#' + a, 1, null, c => (hit(c) ? 3 : 1))[0];
+      if (id) out.push(id);
+    }
+    cur.gold = null;
+    if (out.length && hash01(key + '#gold') < W.loot.gold) {
+      const g = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', 1, wcSkip(run, out), null, ctxOwned())[0];
+      if (g) { out[out.length - 1] = g; cur.gold = g; }
+    }
+    return out;
+  }
+  // 演唱會門票：再買 n 張的總價（第 k 張 base＋step×(k−1)，整趟累計 run.tickets）；gigKeepN＝「買到剩 $4,000」買得起的張數
+  function gigPrice(run, content, n) { const G = wcCfg(content).stall.gig; let s = 0; for (let k = 0; k < (n | 0); k++) s += G.base + G.step * ((run.tickets | 0) + k); return s; }
+  function ticketsFor(run, content, reserve) { let n = 0; while (n < 999 && gigPrice(run, content, n + 1) <= run.money - reserve) n++; return n; }
+  function gigKeepN(run, content) { return ticketsFor(run, content, wcCfg(content).stall.gig.keep); }
+  function stallNext(run, content) { const p = run.pending; p.done.push(p.q[p.k]); p.k++; p.cur = null; stallEnter(run, content); return null; }
+  // 各站動作（§4.4 表）：回 null＝成功（做完一站的自動 stallNext），字串＝錯誤（不動 run）
+  function stallAct(run, content, ch, effects) {
+    const p = run.pending, cur = p && p.cur, W = wcCfg(content), ST = W.stall, S = wcStats(run), a = ch.act;
+    if (!cur) return 'noStation';
+    const enter = id => { if (!Array.isArray(run.entered)) run.entered = []; if (!run.entered.includes(id)) run.entered.push(id); };
+    const gain = (id, found) => { run.bag.push(id); run.stats.taken.push(id); run.taken++; enter(id); if (found) wcFound(run, id); effects.push({ gainCard: id }); };
+    switch (cur.kind) {
+      case 'dig':
+        if (a === 'take') { if (!(cur.cards || []).includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered'; gain(ch.cardId, true); S.digTake++; return stallNext(run, content); }
+        if (a === 'reroll') {
+          const c = ST.reroll * (cur.rolls + 1); if (run.money < c) return 'money';
+          wcSpend(run, 'reroll', c); cur.rolls++; S.rerolls++; cur.cards = digDeal(run, content, cur, run.pos); wcRoad(run, cur.cards);
+          effects.push({ reroll: cur.rolls, spend: c }); return null;
+        }
+        if (a === 'skip') { wcEarn(run, 'skip', ST.skipCash); S.digSkip++; effects.push({ cash: ST.skipCash }); return stallNext(run, content); }
+        return 'badAct';
+      case 'consignGet':                                           // 寄賣領回：三張金邊盤挑一（可以不拿，沒有 +$400）
+        if (a === 'take') { if (!(cur.cards || []).includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered'; gain(ch.cardId, true); S.consignGot++; run.consign = null; return stallNext(run, content); }
+        if (a === 'skip') { run.consign = null; return stallNext(run, content); }
+        return 'badAct';
+      case 'trade': case 'market':
+        if (a === 'buy') {
+          if (!(cur.cards || []).includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered';
+          const pr = priceOf(content, ch.cardId); if (pr == null) return 'notOffered'; if (run.money < pr) return 'money';
+          wcSpend(run, cur.kind, pr); gain(ch.cardId); run.stats.bought.push(ch.cardId); if (cur.kind === 'trade') S.tradeBuy++; else S.marketBuy++;
+          effects.push({ spend: pr }); return null;
+        }
+        if (a === 'sell') {                                        // 「賣一張給他」＝櫃檯同一套（sellCore；CRITIQUE 1.5）
+          const q = sellCore(run, content, ch.cardId); if (!q.ok) return q.error;
+          applySell(run, content, ch.cardId, q, effects); return null;
+        }
+        if (cur.kind === 'market' && a === 'buyRelic') return stallRelic(run, content, cur, ch, effects, true);
+        if (cur.kind === 'market' && a === 'tickets') return stallTickets(run, content, ch.n, effects);
+        if (cur.kind === 'market' && a === 'bag') {
+          const B = ST.market.bag; if (cur.bags >= B.max || cur.bag) return 'bagLimit'; if (run.money < B.price) return 'money';
+          wcSpend(run, 'bag', B.price); cur.bags++; S.bags++;
+          const pool = wcPool(content, 0).filter(c => ['epic', 'legendary'].includes(rarity(c))), bk = cur.key + '#bag' + cur.bags;
+          cur.bag = wcPick(pool, bk, B.n, wcSkip(run)); cur.bagApex = null;
+          if (cur.bag.length && hash01(bk + '#apex') < B.apex) {     // 6% 鎮店盤格（C 波＝金邊盤；九第二波換）
+            const g = wcPick(wcPool(content, wcTh(content, run.pos, 'gold', run.tier)), bk + '#g', 1, wcSkip(run, cur.bag), null, ctxOwned())[0];
+            if (g) { cur.bag[cur.bag.length - 1] = g; cur.bagApex = g; }
+          }
+          wcRoad(run, cur.bag); effects.push({ spend: B.price }); return null;
+        }
+        if (cur.kind === 'market' && a === 'bagTake') { if (!cur.bag || !cur.bag.includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered'; gain(ch.cardId); run.stats.bought.push(ch.cardId); cur.bag = null; return null; }
+        // 福袋開了還沒挑（有包包裡沒有的那張）：不能逛完（不然 $2,500 白花；畫面那顆鈕也擋著）
+        if (a === 'done' && cur.kind === 'market' && cur.bag && cur.bag.some(id => content.cards[id] && !run.bag.includes(id))) return 'bagOpen';
+        if (a === 'done') return stallNext(run, content);
+        return 'badAct';
+      case 'gear':
+        if (a === 'buyRelic') { const e = stallRelic(run, content, cur, ch, effects, true); if (e) return e; S.gearBuy++; return stallNext(run, content); }
+        if (a === 'done') return stallNext(run, content);
+        return 'badAct';
+      case 'warehouse':
+        if (a === 'relic') { const e = stallRelic(run, content, cur, ch, effects, false); if (e) return e; return stallNext(run, content); }
+        if (a === 'take') { if (!(cur.cards || []).includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered'; gain(ch.cardId, true); return stallNext(run, content); }
+        if (a === 'skip') return stallNext(run, content);
+        return 'badAct';
+      case 'snack': {
+        if (a !== 'ok') return 'badAct';
+        const h0 = run.hp; run.hp = Math.min(run.maxHp, run.hp + ST.snackHp); S.snackHp += run.hp - h0; effects.push({ hp: run.hp - h0 });
+        return stallNext(run, content);
+      }
+      case 'gig':
+        if (a === 'tickets') { const e = stallTickets(run, content, ch.n, effects); if (e) return e; return stallNext(run, content); }
+        return 'badAct';
+      case 'promo':                                                // 公關片：進唱片櫃「認識」（不是擁有、不能當種子；CRITIQUE 3.5），不進包包
+        if (a !== 'ok') return 'badAct';
+        lexpAdd(run, 'promo', ST.promoLexp); effects.push({ shelf: (cur.cards || []).slice(), lexp: ST.promoLexp }); return stallNext(run, content);
+      case 'fortune':
+        if (a !== 'ok') return 'badAct';
+        return stallNext(run, content);
+      case 'consign':
+        if (a === 'consign') {
+          if (!run.bag.includes(ch.cardId) || run.bag.length - 1 < bagFloor(run) || isGift(run, content, ch.cardId) || isSeed(run, content, ch.cardId)) return 'badConsign';
+          run.bag.splice(run.bag.indexOf(ch.cardId), 1);
+          if (Array.isArray(run.found) && run.found.includes(ch.cardId)) run.found.splice(run.found.indexOf(ch.cardId), 1);
+          run.consign = { card: ch.cardId, due: run.round + ST.consignRounds }; S.consign++; effects.push({ loseCard: ch.cardId, consign: true });
+          return stallNext(run, content);
+        }
+        if (a === 'skip') return stallNext(run, content);
+        return 'badAct';
+      case 'home':                                                 // 店裡唱盤：從這一趟的包包挑一張放上去（可不挑）＋樂歷 +30
+        if (a !== 'ok') return 'badAct';
+        if (ch.cardId != null && !run.bag.includes(ch.cardId)) return 'notOffered';
+        lexpAdd(run, 'home', ST.homeLexp); if (ch.cardId != null) { cur.played = ch.cardId; effects.push({ nowPlaying: ch.cardId }); }
+        effects.push({ lexp: ST.homeLexp }); return stallNext(run, content);
+      case 'studio':                                               // 錄音室（C 波）：錄 demo 樂歷 +15，畫面自動送 ok
+        if (a !== 'ok') return 'badAct';
+        lexpAdd(run, 'demo', ST.demoLexp); effects.push({ lexp: ST.demoLexp }); return stallNext(run, content);
+      case 'dare':
+        if (a === 'accept') {
+          if (!['tough', 'tank'].includes(ch.mode)) return 'badMode';
+          run.dare = { round: run.round, mode: ch.mode }; S.dareAccept++; if (ch.mode === 'tough') S.dareTough++; else S.dareTank++;
+          effects.push({ dare: ch.mode }); return stallNext(run, content);
+        }
+        if (a === 'decline') return stallNext(run, content);
+        return 'badAct';
+    }
+    return 'badAct';
+  }
+  // 器材行（paid）、市集器材（paid）、老闆的倉庫（免費）：配件滿 3 件要指定丟哪件（paid＝半價賣掉；免費＝直接換）
+  function stallRelic(run, content, cur, ch, effects, paid) {
+    if (!(cur.relics || []).includes(ch.relicId) || run.relics.includes(ch.relicId) || !relicOk(content, ch.relicId)) return 'notOffered';
+    const pr = paid ? wcCfg(content).stall.gearPrice : 0;
+    let earn = 0, drop = null;
+    if (run.relics.length >= CFG.relicMax) { if (!ch.dropRelicId || !run.relics.includes(ch.dropRelicId)) return 'relicsFull'; drop = ch.dropRelicId; earn = paid ? sellValue(content, drop) : 0; }
+    if (run.money + earn < pr) return 'money';
+    if (drop) { run.relics.splice(run.relics.indexOf(drop), 1); run.stats.relicsSold.push(drop); wcEarn(run, 'sell', earn); effects.push({ loseRelic: drop, earn }); }
+    if (pr) { wcSpend(run, 'gear', pr); run.stats.relicsBought.push(ch.relicId); }
+    run.relics.push(ch.relicId); run.stats.relicsGot.push(ch.relicId); effects.push(pr ? { gainRelic: ch.relicId, spend: pr } : { gainRelic: ch.relicId });
+    cur.relics = cur.relics.filter(x => x !== ch.relicId);
+    return null;
+  }
+  function stallTickets(run, content, n, effects) {
+    if (!Number.isInteger(n) || n < 0) return 'badN';
+    const pr = gigPrice(run, content, n); if (run.money < pr) return 'money';
+    if (n) {
+      const L = n * wcCfg(content).stall.gig.lexp;
+      wcSpend(run, 'gig', pr); run.tickets = (run.tickets | 0) + n; wcStats(run).tickets += n; lexpAdd(run, 'gig', L);
+      if (effects) effects.push({ tickets: n, spend: pr, lexp: L });
+    }
+    return null;
+  }
+  // 「今天不逛了」（CRITIQUE 1.7）：剩下不是錄音室、不是寄賣領取的站各 +$1,000，直接跳到錄音室或結束。
+  //   選組前也能叫：pick＝−1、當作排了一組（兩站）＋post（一般輪 +$2,000、中繼點 +$3,000 含市集）；寄賣領取那站照留。回這次給的錢
+  function stallLeave(run, content) {
+    const p = run.pending, ST = wcCfg(content).stall;
+    if (!p || p.type !== 'stall') return 0;
+    if (p.pick == null) { p.pick = -1; p.q = p.q.concat(p.groups[0] || [], p.post); }
+    let n = 0;
+    for (let k = p.k; k < p.q.length; k++) if (p.q[k] !== 'studio' && p.q[k] !== 'consignGet') n++;
+    const cash = n * ST.leaveCash;
+    wcEarn(run, 'leave', cash); wcStats(run).leave++;
+    const rest = p.q.slice(p.k).filter(x => x === 'studio' || x === 'consignGet');
+    const keepCur = p.cur && p.cur.kind === 'consignGet' ? p.cur : null;   // 寄賣領取那站正開著：照原貨留著
+    p.q = p.q.slice(0, p.k).concat(rest);
+    if (keepCur) p.cur = keepCur; else { p.cur = null; stallEnter(run, content); }
+    return cash;
+  }
+
+  // ---------- 中繼點開局：快速選秀補到下限（SPEC-C §4.7、§5.6）----------
+  //   期望等級 L(N)＝(−5＋√(49＋20.8N))/2（每輪 13 經驗、升級要「等級＋3」）；升級 m＝round(L−1−mLess)（比期望少 mLess＝1 級）、撿盤 k＝clamp(round(m/2), 2, 5)
+  //   驗收修正（2026-11-17）：原本 m＝round(0.8×(L−1))，越深少越多（第 50 位少 3 級：從第 50 位開的 10 位存活 36.9%，從頭打到那裡的 60.2%）；
+  //   改成固定少一級：第 10／20／30 位跟原本一樣（4／6／8），第 50 位 10→12、75 位 13→16、100 位 16→19
+  function expLevel(N) { return (-5 + Math.sqrt(49 + 20.8 * Math.max(1, N))) / 2; }
+  function draftPlan(content, N) {
+    const D = wcCfg(content).draft, L1 = expLevel(N) - 1;
+    const m = D.m != null ? Math.max(0, D.m | 0) : D.mRate != null ? Math.max(0, Math.round(D.mRate * L1)) : Math.max(0, Math.round(L1 - (D.mLess != null ? +D.mLess : 1)));
+    const k = D.k != null ? Math.max(0, D.k | 0) : Math.min(5, Math.max(2, Math.round(m / 2)));
+    return { k, m };
+  }
+  // 下一題：先撿盤（戰力池兩張二選一，雜湊 draft#c<i>）、再升級（levelOffer 三選一）
+  function draftOffer(run, content) {
+    const p = run.pending, N = run.cpFrom;
+    if (p.ck < p.k) {
+      const cards = wcPick(wcPool(content, wcTh(content, N, 'power', run.tier)), wcKey(run, 'draft#c' + p.ck), 2, wcSkip(run));
+      wcRoad(run, cards);
+      return { kind: 'card', cards };
+    }
+    return { kind: 'level', offer: levelOffer(run, content) };
+  }
+  // 選秀做完：pos＝N、round、idx、order、說情、這一輪藏家的卡、補貨、一檔貨上架到 idx（＝jumpTo 的做法；不記中繼點＝不是走到的）
+  function draftDone(run, content) {
+    const N = run.cpFrom; run.pending = null;
+    run.pos = N; run.round = roundOf(N); run.idx = (N - 1) % PER_ROUND;
+    run.order = roundOrder(content, run.seedKey, run.runNo, run.round, null);
+    run.retryLeft = trialCfg(content, run.tier).retry;
+    if (run.unlock) run.bossCard = bossCardFor(run, content);
+    restock(run, content);
+    if (run.shop && run.shop.lot) for (let i = 0; i < run.idx; i++) shelve(run, content);
+  }
+
+  // ---------- 舊 run 載入（畫面 loadSave 叫；SPEC-C §2.2、§2.4，CRITIQUE 4.3）----------
+  //   o＝{bestFar, chestDry}（存檔的值，補欄位用）。缺欄位補上；不在卡池的卡 id 濾掉（road、found、pending.cards／gold／apexSlot、cur.cards／bag、offer.cards、consign.card），濾空各有退路：
+  //   reward 剩 0 張＝只剩「不收（+$400）」；站的貨沒了＝重進那一站；選秀撿盤題 <2 張＝重出這一題。回 true＝有改
+  function fixWaveC(run, content, o) {
+    if (!run || typeof run !== 'object') return false;
+    o = o || {};
+    const before = JSON.stringify(run), has = id => typeof id === 'string' && !!cardOf(content, id);
+    const def = { far0: Math.max(0, o.bestFar | 0), road: [], lexp: {}, tickets: 0, chestDry: Math.max(0, o.chestDry | 0), dare: null, dareLast: null, consign: null, fortune: null, safety: false, found: [] };
+    for (const k of Object.keys(def)) if (!(k in run)) run[k] = def[k];
+    if (!Array.isArray(run.road)) run.road = []; if (!Array.isArray(run.found)) run.found = [];
+    if (!run.lexp || typeof run.lexp !== 'object' || Array.isArray(run.lexp)) run.lexp = {};
+    run.road = run.road.filter(has); run.found = run.found.filter(has);
+    if (run.consign && !has(run.consign.card)) run.consign.card = null;
+    const p = run.pending;
+    if (p && p.type === 'reward' && p.kind && Array.isArray(p.cards)) {
+      const keep = p.cards.map((id, i) => has(id) ? i : -1).filter(i => i >= 0);
+      if (keep.length !== p.cards.length) { if (Array.isArray(p.src)) p.src = keep.map(i => p.src[i]); p.cards = keep.map(i => p.cards[i]); }
+      if (Array.isArray(p.gold)) p.gold = p.gold.filter(has);
+      if (Array.isArray(p.apexSlot)) p.apexSlot = p.apexSlot.filter(has);
+    }
+    if (p && p.type === 'stall' && Array.isArray(p.q)) {
+      const c = p.cur;
+      if (c && (Array.isArray(c.cards) || Array.isArray(c.bag))) {
+        const had = (c.cards || []).length + (c.bag || []).length;
+        if (Array.isArray(c.cards)) c.cards = c.cards.filter(has);
+        if (Array.isArray(c.bag)) c.bag = c.bag.filter(has);
+        if (had && !(c.cards || []).length && !(c.bag || []).length && !(c.relics || []).length) p.cur = null;
+      }
+      if (!p.cur && Number.isInteger(p.k) && p.k < p.q.length) stallEnter(run, content);
+    }
+    if (p && p.type === 'draft') {
+      if (!p.offer || (p.offer.kind === 'card' && (p.offer.cards || []).filter(has).length < 2)) p.offer = draftOffer(run, content);
+      else if (p.offer.kind === 'card') p.offer.cards = p.offer.cards.filter(has);
+    }
+    return JSON.stringify(run) !== before;
+  }
+
+  // ---------- 模擬／自動遊玩的選擇（runPolicy 接不到的 pending 種類；SPEC-C §7.2）----------
+  //   o：pickFirst（永遠選左邊）、firstSide（第一趟固定選哪邊）、dare 'auto'|'always'|'never'、dareHp（接帖要聲望 ≥ 幾成上限，預設 .7）、reserve（留底，預設 4000）、
+  //      reroll（挖寶攤包包沒滿分時重翻一次）、takeSell（bagScore 不漲的照樣收、下一位前拿去櫃檯賣）、boostFirst（倉庫先拿加成配件）、levelMix
+  function cPolicy(run, content, o) {
+    o = o || {};
+    const p = run.pending; if (!p) return null;
+    const ST = wcCfg(content).stall;
+    if (p.type === 'reward' || p.type === 'level' || p.type === 'retry') {
+      const rp0 = runPolicy(run, content, o);
+      if (o.takeSell && rp0 && rp0.type === 'skip' && p.type === 'reward' && p.kind && (p.cards || []).length && !p.cardDone &&
+        !(p.need === 'cardOrRelic' && (p.relics || []).length && run.relics.length < CFG.relicMax)) {
+        const best = p.cards.filter(id => !run.bag.includes(id)).sort((x, y) => priceOf(content, y) - priceOf(content, x))[0];
+        if (best) { if (!Array.isArray(run.sellNext)) run.sellNext = []; run.sellNext.push(best); return { type: 'take', cardId: best }; }
+      }
+      return rp0;
+    }
+    if (p.type === 'draft') {
+      const of = p.offer; if (!of) return null;
+      if (of.kind === 'card') { const base = bagScore(content, run.bag); let best = null, g0 = -Infinity; for (const id of of.cards) { const g = bagScore(content, run.bag.concat([id])) - base; if (g > g0) { g0 = g; best = id; } } return best ? { type: 'draft', cardId: best } : null; }
+      const mix = o.levelMix || LEVEL_MIX, want = mix[(run.picks || []).length % mix.length];
+      const pk = ((of.offer || []).find(x => x.pick === want) || (of.offer || [])[0] || {}).pick;
+      return pk ? { type: 'draft', pick: pk } : null;
+    }
+    if (p.type !== 'stall') return null;
+    const reserve = o.reserve != null ? o.reserve : ST.gig.keep;
+    if (p.pick == null && p.k >= p.q.length) {
+      if (o.pickFirst) return { type: 'stallPick', group: 0 };
+      if (p.first && o.firstSide != null) return { type: 'stallPick', group: o.firstSide };
+      const val = g => g.reduce((s, k) => s + stallValue(run, content, k, reserve), 0);
+      const v0 = val(p.groups[0]), v1 = p.groups[1] ? val(p.groups[1]) : -1;
+      return { type: 'stallPick', group: v1 > v0 || (v1 === v0 && hash01(wcKey(run, 'pickTie#' + p.after)) < 0.5) ? 1 : 0 };
+    }
+    const cur = p.cur; if (!cur) return null;
+    const base = bagScore(content, run.bag), gainOf = id => bagScore(content, run.bag.concat([id])) - base;
+    const bestOf = ids => { let b = null, g = BAG_EPS; for (const id of ids || []) { if (run.bag.includes(id)) continue; const x = gainOf(id); if (x > g) { g = x; b = id; } } return b; };
+    const act = (a, x) => Object.assign({ type: 'stallAct', act: a }, x || {});
+    switch (cur.kind) {
+      case 'dig': { const b = bestOf(cur.cards); if (b) return act('take', { cardId: b }); if (o.reroll && cur.rolls < 1 && base < 14.9 && run.money - reserve >= ST.reroll * (cur.rolls + 1)) return act('reroll'); return act('skip'); }
+      case 'consignGet': { const b = bestOf(cur.cards) || (cur.cards || []).find(id => !run.bag.includes(id)); return b ? act('take', { cardId: b }) : act('skip'); }
+      case 'trade': case 'market': {
+        const afford = (cur.cards || []).filter(id => !run.bag.includes(id) && run.money - priceOf(content, id) >= reserve);
+        const b = bestOf(afford); if (b) return act('buy', { cardId: b });
+        if (cur.kind === 'market') {
+          if (cur.bag) { const bb = bestOf(cur.bag) || cur.bag.find(id => content.cards[id] && !run.bag.includes(id)); if (bb) return act('bagTake', { cardId: bb }); return act('done'); }
+          const n = ticketsFor(run, content, reserve); if (n > 0) return act('tickets', { n });
+        }
+        return act('done');
+      }
+      case 'gear': { if (run.relics.length < CFG.relicMax && (cur.relics || []).length && run.money - ST.gearPrice >= 0) return act('buyRelic', { relicId: cur.relics[0] }); return act('done'); }
+      case 'warehouse': {
+        if ((cur.relics || []).length && run.relics.length < CFG.relicMax) return act('relic', { relicId: (o.boostFirst && cur.relics.find(x => /^boost_/.test(x))) || cur.relics[0] });
+        const b = bestOf(cur.cards); return b ? act('take', { cardId: b }) : act('skip');
+      }
+      case 'gig': return act('tickets', { n: ticketsFor(run, content, reserve) });
+      case 'consign': { const dw = run.bag.filter(x => !isGift(run, content, x) && !isSeed(run, content, x) && deadWeight(content, run.bag, x)); return dw.length && run.bag.length > CFG.handSize ? act('consign', { cardId: dw[0] }) : act('skip'); }
+      case 'dare': {
+        const mode = o.dare === 'never' ? null : o.dare === 'always' ? 'tough' : (run.hp >= (o.dareHp != null ? o.dareHp : 0.7) * run.maxHp ? (hash01(wcKey(run, 'dareMode#' + p.after)) < 0.65 ? 'tough' : 'tank') : null);
+        return mode ? act('accept', { mode }) : act('decline');
+      }
+      default: return act('ok');
+    }
+  }
+  // 選組估值（合理玩家，不是最佳解；§7.2）
+  function stallValue(run, content, k, reserve) {
+    const ST = wcCfg(content).stall, sat = bagScore(content, run.bag) >= 14.9;
+    switch (k) {
+      case 'snack': return Math.min(ST.snackHp, run.maxHp - run.hp) * 1.0;
+      case 'dig': return sat ? 0.4 : 2;
+      case 'trade': return sat || run.money < reserve + 1000 ? 0.1 : 1.2;
+      case 'gear': return run.relics.length < CFG.relicMax && run.money >= ST.gearPrice ? 1.5 : 0;
+      case 'gig': return gigPrice(run, content, 1) <= run.money - reserve ? 1.0 : 0;
+      case 'promo': return 0.6;
+      case 'home': return 0.9;
+      case 'fortune': return 0.3;
+      case 'consign': return run.bag.length > CFG.handSize + 1 ? 0.5 : 0.1;
+      case 'dare': return 0.2;
+      case 'warehouse': return 1;
+    }
+    return 0;
+  }
+  const stallResume = stallEnter;                                  // 畫面用的名字（重新整理、cur 是 null 而且 k < q.length → 重進那一站）
+
   function choose(run, content, ch) {
     const effects = [];
     const fail = error => ({ ok: false, error, effects: [] });
@@ -2284,6 +2976,11 @@
           if (Array.isArray(run.seeds) && run.seeds.includes(drop)) run.seeds.splice(run.seeds.indexOf(drop), 1);   // 拿掉的種子就不是種子了
         }
         run.bag.push(ch.cardId); S.taken.push(ch.cardId); run.taken++; enter(ch.cardId); effects.push({ gainCard: ch.cardId });
+        if (rew.kind) {                                           // 第 C 波：戰利品列／寶箱收的＝撿來的（櫃檯賣回 $400）
+          wcFound(run, ch.cardId);
+          const X = wcStats(run), g = (rew.gold || []).includes(ch.cardId);
+          if (rew.kind === 'loot') { X.lootTake++; if (g) X.goldTake++; } else { X.chestTake++; if (g) X.chestGoldTake++; }
+        }
         rew.cardDone = true; if (rew.need === 'cardOrRelic') rew.relicDone = true;
         settle(run, content); return { ok: true, effects };
       }
@@ -2296,6 +2993,7 @@
           run.relics.splice(run.relics.indexOf(ch.dropRelicId), 1); effects.push({ loseRelic: ch.dropRelicId });
         }
         run.relics.push(ch.relicId); S.relicsGot.push(ch.relicId); effects.push({ gainRelic: ch.relicId });
+        if (rew.kind) wcStats(run)[rew.kind === 'loot' ? 'lootRelic' : 'chestRelic']++;
         rew.relicDone = true; if (rew.need === 'cardOrRelic') rew.cardDone = true;
         settle(run, content); return { ok: true, effects };
       }
@@ -2303,6 +3001,9 @@
         if (!rew) return fail('nothingToSkip');
         if (rew.need === 'cardOrRelic' || rew.need === 'card') { rew.cardDone = true; rew.relicDone = true; }
         else if (!rew.cardDone) rew.cardDone = true; else rew.relicDone = true;
+        if (rew.kind && rew.skipCash > 0 && (rew.need === 'cardOrRelic' || rew.need === 'card')) {   // 第 C 波：不收（+$400；fixWaveC 濾到沒牌的那一列也照給）
+          wcEarn(run, 'skip', rew.skipCash); wcStats(run)[rew.kind === 'loot' ? 'lootSkip' : 'chestSkip']++; effects.push({ cash: rew.skipCash });
+        }
         effects.push({ skip: true });
         settle(run, content); return { ok: true, effects };
       }
@@ -2310,7 +3011,7 @@
         if (!p || p.type !== 'retry') return fail('noRetry');
         if (!p.free) run.retryLeft--;
         S.retries++; run.pending = null; run.hp = run.hpIn;          // 裁定 8：同一位、同一副牌、聲望回到開打前
-        effects.push({ retry: p.enemyId, free: !!p.free });
+        effects.push(p.safety ? { retry: p.enemyId, free: true, safety: true } : { retry: p.enemyId, free: !!p.free });   // 第 C 波新手保底（retryFlow 分支）
         return { ok: true, effects };
       }
       case 'end': {
@@ -2412,13 +3113,7 @@
       case 'sell': {
         const id = ch.cardId, q = sellQuote(run, content, id);
         if (!q.ok) return fail(q.error);
-        if (q.reclaim === 'gift') {
-          if (!Array.isArray(run.gifts)) run.gifts = (((content.gifts || {})[run.ace]) || []).filter(x => run.bag.includes(x));   // 舊的 run 沒有這欄：先補上
-          if (run.gifts.includes(id)) run.gifts.splice(run.gifts.indexOf(id), 1);
-        }
-        if (q.reclaim === 'seed' && Array.isArray(run.seeds)) run.seeds.splice(run.seeds.indexOf(id), 1);
-        run.bag.splice(run.bag.indexOf(id), 1); run.money += q.earn; S.earned += q.earn; S.sold.push(id);
-        effects.push(q.reclaim ? { loseCard: id, earn: 0, reclaim: q.reclaim } : { loseCard: id, earn: q.earn });
+        applySell(run, content, id, q, effects);                  // 第 C 波：一處做完（攤位的「賣一張給他」也走這裡）；撿來的 $400、effects 多 found
         return { ok: true, effects };
       }
       case 'buyRelic': {
@@ -2436,6 +3131,54 @@
         run.money -= price; S.spent += price;
         run.relics.push(ch.relicId); SH.relics.splice(SH.relics.indexOf(ch.relicId), 1); S.relicsBought.push(ch.relicId);
         effects.push({ gainRelic: ch.relicId, spend: price });
+        return { ok: true, effects };
+      }
+      // ---- 第 C 波（SPEC-C §3.3）：今天的攤位、中繼點開局選秀 ----
+      // 選組（{type:'stallPick', group: 0|1}）：寄賣領取那站（q 還沒走完）先做完才能選
+      case 'stallPick': {
+        if (!p || p.type !== 'stall' || p.pick != null || p.k < p.q.length) return fail('noStallPick');
+        if (!Array.isArray(p.groups[ch.group])) return fail('badGroup');
+        const X = wcStats(run);
+        p.pick = ch.group; wcAdd(X.picked, '_n', 1);
+        for (const g of p.groups) for (const k of g) wcAdd(X.offered, k, 1);
+        for (const k of p.groups[ch.group]) wcAdd(X.picked, k, 1);
+        p.q = p.q.concat(p.groups[ch.group], p.post); p.cur = null;
+        stallEnter(run, content);
+        return { ok: true, effects };
+      }
+      // 這一站的動作（{type:'stallAct', act, …}；§4.4 表）：做完一站自動進下一站（pending.cur 換掉；q 走完 pending＝null）
+      case 'stallAct': {
+        if (!p || p.type !== 'stall' || !p.cur) return fail('noStation');
+        const e = stallAct(run, content, ch, effects); if (e) return fail(e);
+        return { ok: true, effects };
+      }
+      // 今天不逛了（選組前、選組後、市集裡都能按）：剩下的站每站 +$1,000（錄音室照走、寄賣領取照領）
+      case 'stallLeave': {
+        if (!p || p.type !== 'stall') return fail('noStation');
+        const n = stallLeave(run, content);
+        if (n > 0) effects.push({ cash: n });
+        effects.push({ leave: true });
+        return { ok: true, effects };
+      }
+      // 中繼點開局選秀（{type:'draft', cardId}｜{type:'draft', pick}）：撿盤＝撿來的（$400）、進唱片櫃「認識」、可當一趟留一張；升級＝等級 +1、聲望上限 +levelHp、再三選一
+      case 'draft': {
+        if (!p || p.type !== 'draft' || !p.offer) return fail('noDraft');
+        const of = p.offer;
+        if (of.kind === 'card') {
+          if (!(of.cards || []).includes(ch.cardId) || !cardOf(content, ch.cardId)) return fail('notOffered');
+          if (run.bag.includes(ch.cardId)) return fail('owned');
+          run.bag.push(ch.cardId); run.taken++; S.taken.push(ch.cardId); enter(ch.cardId); wcFound(run, ch.cardId);
+          effects.push({ gainCard: ch.cardId }); p.ck++;
+        } else {
+          const o = (of.offer || []).find(x => x && x.pick === ch.pick); if (!o) return fail('notOffered');
+          const T = trialCfg(content, run.tier), n = o.n | 0;
+          run.level++; run.maxHp += T.levelHp; run.hp += T.levelHp;
+          if (o.pick === 'atk') run.atk += n; else if (o.pick === 'def') run.def += n; else { run.maxHp += n; run.hp += n; }
+          run.picks.push(o.pick); p.cm++;
+          effects.push({ level: o.pick, n });
+        }
+        if (p.ck >= p.k && p.cm >= p.m) { draftDone(run, content); effects.push({ draftDone: run.pos }); }
+        else p.offer = draftOffer(run, content);
         return { ok: true, effects };
       }
     }
@@ -2475,6 +3218,7 @@
     const preferRelic = o.preferRelic !== false;
     const p = run.pending;
     if (!p) return null;
+    if (p.type === 'stall' || p.type === 'draft') return cPolicy(run, content, o);   // 第 C 波：攤位、選秀交給 cPolicy
     if (p.type === 'retry') return { type: 'retry' };
     if (p.type === 'level') {                                  // harness MIX：A D A H D A X D A H（X＝引擎沒有「不加」→ 聲望上限）
       const mix = o.levelMix || LEVEL_MIX, want = mix[(run.picks || []).length % mix.length];
@@ -2576,6 +3320,7 @@
     if (!canShop(run)) return [];
     const r = clone(run), out = [];
     const free = x => isGift(r, content, x) || isSeed(r, content, x);
+    for (const id of (r.sellNext || []).slice()) { if (r.bag.includes(id) && choose(r, content, { type: 'sell', cardId: id }).ok) out.push({ type: 'sell', cardId: id }); }   // cPolicy takeSell：收了就拿去櫃檯賣（只有量測選項會設）
     for (let guard = 0; guard < 60 && r.bag.length > CFG.handSize; guard++) {
       const pick = r.bag.filter(x => deadWeight(content, r.bag, x))
         .sort((a, b) => (free(a) ? 1 : 0) - (free(b) ? 1 : 0) || power(cardOf(content, a)) - power(cardOf(content, b)) || (a < b ? -1 : a > b ? 1 : 0))[0];
@@ -2787,7 +3532,9 @@
     runPolicy, shopPolicy, thinPolicy, bargainPolicy, policies,
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce,
     TIER_BEATS, unlockChain, tierOfApex, apexCards, unlockedTiers, ownedApex, nextUnlock, unlockMigrate, unlockTiersOf, ownedApexOf, aceChoices, bossCardFor, fixUnlock,
-    APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex };
+    APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex,
+    WAVEC, wcCfg, floorAt, wcTh, wcPool, lootRow, chestRow, stallSession, stallResume, stallUnlocked, stallLadder, cPolicy, gigPrice, gigKeepN, draftPlan, expLevel,
+    deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

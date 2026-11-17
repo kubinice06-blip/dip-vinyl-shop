@@ -141,7 +141,7 @@ const scanned = [];
 const FILES = [
   // [檔名, 種類, 舊系統字, 對決／教學的字]
   ['content.js', 'js', true, true], ['duel.js', 'js', true, true], ['recap.js', 'js', true, true], ['tutorial.js', 'js', true, true],
-  ['ui.js', 'js', true, false], ['cardinfo.js', 'js', true, false], ['econ.js', 'js', true, false], ['index.html', 'html', true, false],
+  ['ui.js', 'js', true, false], ['cardinfo.js', 'js', true, false], ['econ.js', 'js', true, false], ['loot.js', 'js', true, false], ['stalls.js', 'js', true, false], ['index.html', 'html', true, false],
   ['stage.js', 'js', false, false], ['shop.js', 'js', false, false], ['shop-props.js', 'js', false, false], ['fx.js', 'js', false, false]
 ];
 const SKIP = new Set(String(process.env.LINT_SKIP || '').split(',').map(x => x.trim()).filter(Boolean));

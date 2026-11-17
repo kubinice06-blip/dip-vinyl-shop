@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
+
+- **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。
+- **戰利品列**（新檔 `loot.js`、`loot.css`）：打贏一位，字幕「對方似乎掉落了什麼……」（店主原句），錢與經驗飛進頂欄，三張蓋牌（他整副牌抽、至少一張這場沒出過；15% 金邊盤）點開或 1.5 秒自翻，挑一張或「不收（+$200）」；6% 紅包。菁英可改拿配件。
+- **藏家寶箱**：先演流派解鎖的送牌（#465），再開寶箱三張（金邊 30%、鎮店盤格 C 波畫金邊），連 5 箱沒金邊保底（跨趟）。
+- **店內攤位**（新檔 `stalls.js`、`stalls.css`；不出店門、不擺桌子）：每輪打完，底部「今天的攤位」兩列二選一（每組兩站），小人走到店裡既有角落；13 站：挖寶攤、同業調貨、器材行、宵夜、演唱會、公關片、窗邊算命、寄賣、老闆的倉庫、店裡唱盤、踢館帖、黑膠市集、錄音室；中繼點那輪多市集＋錄音室；「今天不逛了」剩下每攤 +$1,000。抽站：同一種一趟一次、花錢站每組最多 1、四站至少一個藍框（樂歷）。
+- **踢館帖**（第 30 位起約 35% 一般輪）：接了這一輪 5 位對手變強（品味 +1 或聲望 +4 擇一），撐完寶箱四選一保證一張金邊＋$5,000。
+- **中繼點開局**：打到過的中繼點（10、20、30、50…）永久開，開局快速選秀（撿盤＋升級，比期望等級少 1）補到下限；**新手保底**：上一趟沒到第 10 位，第 1 位輸了免費重打。**客人補償**：第 31 位起聲望 +1。
+- **樂歷**：C 波只記帳（`save.lexpBank`、`runs[].lexp`，多記 base），D 波一次入帳。**存檔 v8**（`.bak7`）；`validRun`／`resumeRun` 認 stall／draft／found，重新整理回到同一站同一批貨。
+- **主線裁定**：備份盤不上；撿來的盤賣回 $200；D1／D2 帶新手保底、n4000 判；首屏大小只記錄（店主 11-17「我從沒有限定檔案上限」，e2e-pool P9-1 改參考）。
+- **模擬**：三策略 n1000 17/17；D1 新帳號會讀的到第 50 位 18.9%（現況 16.6）、D2 新手到第 10 位 31.9%（現況 29.8）、D3 老玩家 19.4%（現況 20.6）、T3 2.36；中繼點開局存活落差第 10／20／30／50 位 −0.7／+0.3／−3.1／−3.8 點。
+- **流程**：規劃書與現況盤點 → 規格（含原型 sim）→ 挑錯定稿 → 引擎 → 介面 A（戰利品列）→ 介面 B（攤位、中繼點）∥ 模擬 → 測試（新 e2e-loot／stall／checkpoint）→ 三角度驗收（確認 18 項）→ 全修。
+- **主要檔案**：`game-lab/{engine.js,content.js,ui.js,loot.js,loot.css,stalls.js,stalls.css,style.css,fx.js,shop-props.js,stage.js,sim.mjs,index.html,README.md,LINES-REVIEW.md,shops/dip.json}`、`game-lab/tools/{lint-copy,check-content}.mjs`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-loot,e2e-stall,e2e-checkpoint,e2e-lib,e2e.spec,e2e-pool,e2e-unlock}.mjs`。`?v=82`。
+- **驗證**：check-content／check-covers／check-shops／build-pool-index --check／lint-copy；engine 2,902,233、tutorial、shop、hit、chars 全過；e2e 13 支 390x664／375x548 全過，e2e.spec 兩尺寸 50/50；併入最新 main 後主線複跑 engine --quick。**沒驗**：真 iPhone。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s43：sd-080、sd-081 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-080 上線 30（Marshall Jefferson、菊地雅晃、Masonna、Matt Martians、Max Brennan、Maxo、Meditation Singers、Mehrpouya、Mercury Rev、Merzbow 2、Metabolist、Metrotone、Mfon、Michael Chapman、Petrucciani 3、Mike Osborne 2、Mike Westbrook、Mikko Tarmia、Miles Davis、Millie Jackson、MindSpring Memories、Minxus、Miranda Cuckson 3、Miroslav Vitous）；sd-081 上線 30（Mitty Collier、Modern Jazz Playboys、Mood II Swing、Moodymann、Morgan Babb、森山威男、Mose Allison 3、Moskwa 2、Mother Gong、mt. fujitive 2、Multi-Story 2、Mushroom Now!、Muslimgauze 2、Mylène Farmer、Myrna Summers、N.Y. House'n Authority、Namas、Nancy Wilson、NANIWA EXPRESS、Nanosphere、Native Son 4）。Mfon、《Formula》、Meditation Singers、Native Son《Coast to Coast》、mt. fujitive 等照 delayde 前例薄寫上線。

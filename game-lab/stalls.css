@@ -1,0 +1,119 @@
+/* game-lab/stalls.css：第 C 波 店內攤位二選一＋中繼點開局（stalls.js；SPEC-C §4.3–§4.7）。前綴 st-；面板沿用 .lb-sheet、格子沿用 .lb-rgrid／.lb-ct。
+ * 底部選組兩列每列 ≥48 px、整列可點（CRITIQUE 6.1）；藍框＝樂歷站（演唱會、公關片、店裡唱盤）；減少動態＝不翻不彈。
+ */
+/* ---------- 底部「今天的攤位」（來客畫面那塊；「下一位」不畫） ---------- */
+.st-night{padding-bottom:6px;}
+.st-pick{display:flex;flex-direction:column;gap:6px;}
+.st-hd{display:flex;align-items:baseline;gap:8px;min-width:0;}
+.st-hd b{font-size:14px;letter-spacing:.12em;flex:none;}
+.st-post{font-size:11px;color:var(--gray2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.st-row{position:relative;display:flex;align-items:stretch;gap:6px;width:100%;min-height:52px;padding:4px 6px;background:#fff;border:1px solid var(--ink);
+  font-family:var(--zh);color:var(--ink);text-align:left;cursor:pointer;transition:opacity .15s,box-shadow .15s;}
+.st-row .sd{flex:none;align-self:center;writing-mode:vertical-rl;font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gray2);}
+.st-row.on{box-shadow:3px 3px 0 var(--ink);background:var(--cream);}
+.st-row.on .sd{color:var(--ink);}
+.st-row.dim{opacity:.45;}
+.st-row .go{flex:none;align-self:center;font-size:12px;font-weight:700;padding:6px 8px;background:var(--ink);color:#fff;visibility:hidden;}
+.st-row.on .go{visibility:visible;}
+.st-tile{flex:1 1 0;min-width:0;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:5px;align-content:center;
+  padding:3px 5px;border:1px solid var(--line);background:#fff;}
+.st-tile .st-ic{grid-row:1 / span 2;align-self:center;}
+.st-tile .nm{font-size:13px;font-weight:700;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.st-tile .pr{font-size:10px;line-height:1.2;color:var(--gray2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.st-tile.blue{border:2px solid var(--c);}
+.st-tile.blue .pr{color:var(--c);}
+.st-tile.dare{border:2px solid var(--red);}
+.st-ic{display:block;flex:none;image-rendering:pixelated;}
+.st-ic.tx{width:16px;height:16px;border:1px solid var(--ink);}
+.st-leave{align-self:center;min-height:32px;padding:4px 10px;background:none;border:0;font:12px var(--zh);color:var(--gray2);text-decoration:underline;text-underline-offset:3px;cursor:pointer;position:relative;}
+.st-leave::after{content:'';position:absolute;left:0;right:0;top:-6px;bottom:-6px;}   /* 點擊區撐到 44 */
+.st-prog .st-steps{margin:0;font-size:12px;line-height:1.8;display:flex;flex-wrap:wrap;align-items:center;gap:2px 4px;}
+.st-prog .st-steps span{color:var(--gray);}
+.st-prog .st-steps span.done{color:var(--gray);text-decoration:line-through;}
+.st-prog .st-steps span.cur{color:var(--ink);font-weight:700;border-bottom:2px solid var(--ink);}
+.st-prog .st-steps i{font-style:normal;color:var(--gray);}
+.st-ask{display:flex;flex-direction:column;gap:6px;}
+.st-ask p{margin:0;font-size:13px;line-height:1.6;font-weight:700;}
+.st-ask .foot{position:static;margin:0;padding:0;border:0;display:flex;gap:8px;}   /* 底部選組那塊不在 .lb-sheet 裡：自己排成兩顆等寬 */
+.st-ask .foot .lb-btn{flex:1;}
+/* ---------- 各站面板（lb-sheet，從底部升起） ---------- */
+.lb-sheet.stall{padding-top:8px;}
+.st-shd h3{display:flex;align-items:center;gap:6px;}
+.st-shd h3 small{font-size:11px;font-weight:400;color:var(--gray2);letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;}
+.st-line{margin:2px 0 0;font-size:13px;line-height:1.5;flex:none;display:flex;gap:8px;align-items:baseline;}
+.st-line>span:first-child{flex:1;min-width:0;}
+.st-line .mn{flex:none;font-size:12px;color:var(--gray2);}
+.st-shd .st-leave{flex:none;align-self:center;min-height:24px;padding:2px 0 2px 6px;font-size:11px;}
+.st-shd .st-leave::after{top:-10px;bottom:-10px;left:-4px;}   /* 看起來 24 高的字鈕：點擊區撐到 44 */
+.st-grid.n2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:280px;}
+.st-grid.n3{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px;}
+.st-grid.n4{grid-template-columns:repeat(4,minmax(0,1fr));}
+.st-c .st-tag{position:absolute;left:0;top:0;z-index:3;font-size:10px;font-weight:700;color:#fff;background:var(--ink);line-height:1.3;padding:1px 4px;pointer-events:none;}
+.st-c.gold .lb-cv{box-shadow:0 0 0 3px #f0c75e,0 0 10px 2px rgba(240,199,94,.8);}
+/* 挖寶攤的蓋牌：背面露顏色（經／冷／硬），整張就是「點一下翻開」的鈕 */
+.st-down .st-back{position:relative;display:block;width:100%;aspect-ratio:1/1;padding:0;border:1px solid var(--ink);background:#1b1b1b;cursor:pointer;overflow:hidden;}
+@supports not (aspect-ratio:1/1){.st-down .st-back{height:0;padding-top:100%;}}
+.st-down .st-back .rec{position:absolute;left:12%;top:12%;width:76%;height:76%;border-radius:50%;background:repeating-radial-gradient(circle,#2c2c2c 0 1px,#141414 2px 3px);}
+.st-down .st-back .rec::after{content:'';position:absolute;left:35%;top:35%;width:30%;height:30%;border-radius:50%;background:#fff;}
+.st-down.ax-c .st-back{border-bottom:6px solid var(--c);} .st-down.ax-c .st-back .rec::after{background:var(--c);}
+.st-down.ax-o .st-back{border-bottom:6px solid var(--o);} .st-down.ax-o .st-back .rec::after{background:var(--o);}
+.st-down.ax-h .st-back{border-bottom:6px solid var(--h);} .st-down.ax-h .st-back .rec::after{background:var(--h);}
+.st-down.gold .st-back{box-shadow:0 0 0 3px #f0c75e,0 0 10px 2px rgba(240,199,94,.8);}
+.st-down .ar,.st-down .al,.st-down .stars{visibility:hidden;}
+.st-turn .lb-cv{animation:stOpen .14s ease-out;}
+@keyframes stOpen{0%{transform:scaleX(0);}100%{transform:none;}}
+.st-foot .st-btns{display:flex;gap:8px;}
+.st-foot .st-btns .lb-btn{flex:1;}
+.st-lx{color:var(--c);}
+.st-relics{margin-top:8px;}
+/* 器材行、市集器材：每件一列＋明寫價錢的「買」鈕（跟櫃檯配件櫃同一種做法） */
+.st-rrows{display:flex;flex-direction:column;gap:8px;margin-top:8px;}
+.st-rrow{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:6px 8px;}
+.st-rrow .pix{flex:none;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);background:#faf8f2;}
+.st-rrow .tx{flex:1;min-width:0;display:flex;flex-direction:column;}
+.st-rrow .nm{font-size:14px;font-weight:700;}
+.st-rrow .ds{font-size:11px;color:var(--gray2);letter-spacing:.02em;line-height:1.45;}
+.st-rrow .lb-btn{flex:none;padding:6px 10px;font-size:13px;white-space:nowrap;}
+.st-dnote{margin-top:6px;}
+.st-bag{display:flex;flex-direction:column;gap:8px;margin-top:8px;}
+.st-bag .note{margin:0;}
+.st-bag .lb-btn{width:100%;}
+.st-gig{display:flex;align-items:center;gap:8px;margin-top:10px;}
+.st-gig .st-step{flex:none;width:48px;font-size:18px;padding:0;}
+.st-gig .st-gigbuy{flex:1;}
+.st-keep{margin-top:8px;}
+.st-keep .lb-btn{width:100%;}
+.st-fortune{display:flex;align-items:center;gap:12px;margin-top:8px;}
+.st-fortune .ace{flex:none;width:84px;}
+.st-fortune .ace .lb-cv{width:84px;height:84px;}
+.st-fortune .ace .cap{display:block;font-size:11px;color:var(--gray2);margin-top:2px;text-align:center;}
+.st-fortune .ratio{margin:0;font-size:14px;font-weight:700;line-height:1.6;}
+.st-dare{margin-top:10px;display:flex;flex-direction:column;gap:8px;}
+.st-tabs{margin-top:6px;display:flex;gap:6px;}
+.st-tabs .lb-btn{flex:1;min-height:44px;padding:4px 6px;font-size:13px;}
+.st-cps{margin-top:10px;display:flex;flex-direction:column;gap:8px;}
+@media (prefers-reduced-motion:reduce){.st-row{transition:none;}.st-turn .lb-cv{animation:none;}}
+/* 各站面板的封面收小一號（面板最多讓到可視高 72%：375×548 三張大封面會把「買」鈕擠到底下那條後面） */
+.lb-sheet.stall .st-grid{justify-content:center;}
+.lb-sheet.stall .st-grid.n2{grid-template-columns:repeat(2,minmax(0,108px));}
+.lb-sheet.stall .st-grid.n3{grid-template-columns:repeat(3,minmax(0,104px));}
+.lb-sheet.stall .st-grid.n4{grid-template-columns:repeat(4,minmax(0,84px));}
+@media (max-height:620px){
+  .lb-sheet.stall .st-grid{margin-top:4px;}
+  .lb-sheet.stall .st-grid.n2{grid-template-columns:repeat(2,minmax(0,88px));}
+  .lb-sheet.stall .st-grid.n3{grid-template-columns:repeat(3,minmax(0,76px));gap:6px 12px;}
+  .lb-sheet.stall .foot{padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom,0px));}
+  .lb-sheet.stall .st-grid.n4{grid-template-columns:repeat(4,minmax(0,72px));gap:6px 8px;}
+  .lb-sheet.stall .st-grid .lb-ct .lb-pickb{min-height:40px;position:relative;}
+  .lb-sheet.stall .st-grid .lb-ct .lb-pickb::after{content:'';position:absolute;left:0;right:0;top:-3px;bottom:-3px;}   /* 看起來 40 高：點擊區撐到 46 */
+  /* 矮螢幕（375×548 面板只有約 290 px）：底那條不黏在底（黏著會整排蓋住第一排的「買／收這張／寄賣」）；內容放不下就整個面板往下捲，鈕排在最後 */
+  .lb-sheet.stall .st-foot{position:static;}
+  .lb-sheet.stall .st-bagnote{display:none;}   /* 福袋開了：三顆「收這張」優先（說明那行在福袋分頁買之前已經寫過） */
+  .lb-sheet.stall .st-line{font-size:12px;}
+}
+/* 中繼點開局：這一輪在第 N 位之前那幾位這一趟沒遇到（不打勾、淡掉） */
+.lb-night .nc.skip .hd{opacity:.35;}
+.lb-night .nc.skip .nm,.lb-night .nc.skip .ps{color:var(--gray);}
+/* 來客條頭像角落：算命看過（藏家）、踢館帖那一輪 */
+.lb-night .nc .hd .st-mk{position:absolute;top:1px;right:1px;line-height:0;background:#fff;padding:1px;}
+.lb-night .nc .hd .st-mk.dr{left:1px;right:auto;}

@@ -12,33 +12,39 @@
 <!-- 字型 CSS 不擋第一個畫面：先用系統字，Space Mono／Noto Sans TC 到了再換上 -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="style.css?v=81">
-<link rel="stylesheet" href="shop.css?v=81">
-<link rel="stylesheet" href="duel.css?v=81">
-<link rel="stylesheet" href="tutorial.css?v=81">
-<link rel="stylesheet" href="charedit.css?v=81">
-<link rel="stylesheet" href="econ.css?v=81">
+<link rel="stylesheet" href="style.css?v=82">
+<link rel="stylesheet" href="shop.css?v=82">
+<link rel="stylesheet" href="duel.css?v=82">
+<link rel="stylesheet" href="tutorial.css?v=82">
+<link rel="stylesheet" href="charedit.css?v=82">
+<link rel="stylesheet" href="econ.css?v=82">
+<link rel="stylesheet" href="loot.css?v=82">
+<link rel="stylesheet" href="stalls.css?v=82">
 </head><body class="in-battle">
 <div id="app" aria-live="off"><div class="lb-boot">推門中……</div></div>
-<!-- 載入順序（SPEC-v2 §9.1；v3 不變）：dip-character（像素小人）→ dip-player（只借聲音偏好，不 mount）→ chars（原版 16×16 小人＋姿勢＋零件）→ 資料 → 引擎 → 聲光 → 像素店 → 舞台 → 唱片資訊 → 上一手詳情（recap.js，11-17）→ 對決 → 教學 → 捏角色 → 經濟介面（econ.js，v4 B3；要在外殼之前）→ 外殼 -->
+<!-- 載入順序（SPEC-v2 §9.1；v3 不變）：dip-character（像素小人）→ dip-player（只借聲音偏好，不 mount）→ chars（原版 16×16 小人＋姿勢＋零件）→ 資料 → 引擎 → 聲光 → 像素店 → 舞台 → 唱片資訊 → 上一手詳情（recap.js，11-17）→ 對決 → 教學 → 捏角色 → 經濟介面（econ.js，v4 B3；要在外殼之前）→ 戰利品列（loot.js）→ 攤位（stalls.js，第 C 波）→ 外殼 -->
 <script src="../dip-character.js?v=2"></script>
-<script src="../dip-player.js?v=81"></script>
-<script src="chars.js?v=81"></script>
-<script src="cards.js?v=81"></script>
+<script src="../dip-player.js?v=82"></script>
+<script src="chars.js?v=82"></script>
+<script src="cards.js?v=82"></script>
 <!-- 精選新卡 4,677 張的邏輯＋名字（第 B 波 SPEC-B §1.2；同步、在 cards.js 後 bins.js 前；封面試聽在 cards-media.json，ui.js 標題畫好後才抓） -->
-<script src="cards-pool.js?v=81"></script>
-<script src="bins.js?v=81"></script>
-<script src="content.js?v=81"></script>
-<script src="engine.js?v=81"></script>
-<script src="fx.js?v=81"></script>
-<script src="shop.js?v=81"></script>
-<script src="shop-props.js?v=81"></script>
-<script src="stage.js?v=81"></script>
-<script src="cardinfo.js?v=81"></script>
-<script src="recap.js?v=81"></script>
-<script src="duel.js?v=81"></script>
-<script src="tutorial.js?v=81"></script>
-<script src="charedit.js?v=81"></script>
-<script src="econ.js?v=81"></script>
-<script src="ui.js?v=81"></script>
+<script src="cards-pool.js?v=82"></script>
+<script src="bins.js?v=82"></script>
+<script src="content.js?v=82"></script>
+<script src="engine.js?v=82"></script>
+<script src="fx.js?v=82"></script>
+<script src="shop.js?v=82"></script>
+<script src="shop-props.js?v=82"></script>
+<script src="stage.js?v=82"></script>
+<script src="cardinfo.js?v=82"></script>
+<script src="recap.js?v=82"></script>
+<script src="duel.js?v=82"></script>
+<script src="tutorial.js?v=82"></script>
+<script src="charedit.js?v=82"></script>
+<script src="econ.js?v=82"></script>
+<!-- 戰利品列＋藏家寶箱（第 C 波 SPEC-C §4.1、§4.2；econ.js 之後、ui.js 之前） -->
+<script src="loot.js?v=82"></script>
+<!-- 店內攤位二選一＋中繼點開局（第 C 波 SPEC-C §4.3–§4.7；ui.js 之前） -->
+<script src="stalls.js?v=82"></script>
+<script src="ui.js?v=82"></script>
 </body></html>
