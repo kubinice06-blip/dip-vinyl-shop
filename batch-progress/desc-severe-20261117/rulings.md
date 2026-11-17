@@ -1979,3 +1979,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
+
+## sd-072（30 張，其餘：Interferon、Inti-Illimani、Into Another、Irakere 3、Iron Cross、Isaiah Rashad、Jaak Joala、Jack Walrath、Jack White、Jack Wilson、Jackie McLean 6、McLean & Tina Brooks、Jacky Terrasson 3、Terrasson & Cassandra Wilson、Jagged Edge、Jah Warrior、Jaheim 2、James Blood Ulmer、James Brown 2）— s39
+
+- 研究：3 支 Sonnet，WebSearch 17＋8＋14＝39 次；none 只有 Jaak Joala story／sound。AllMusic、Pitchfork、Discogs 網頁多回 403。
+- **主線補查**（WebSearch 3 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Jaak Joala（Discogs：1975 Melodiya 愛沙尼亞文《Laulab Jaak Joala》與俄文《Поёт Яак Йоала》同歌單雙版、五位指揮、Baltika／Collage／Laine 和聲團、收電影《解放》插曲）→ what ok、story／sound thin；Interferon（Discogs：Hazemoto 一人作曲製作混音、曲名取自催眠與超自然；yoyaku《Sounds of Transonic》介紹：〈Blasting Soul〉受底特律 hi-tech jazz／machine funk 影響）；Jah Warrior（Discogs：Wardrop 與 Mosco 自彈全部樂器、Conscious Sounds 混音、每首以非洲民族命名）；James Brown《I Got the Feelin'》（單曲維基：《Star Time》內頁班底）。Iron Cross《ရာစုသစ်》英文搜尋 1 次＋研究層緬文 2 次皆無本張資料。
+- **薄寫上線不留置**（delayde 前例）：Iron Cross（180 字，只寫樂團地位與編制、盤名意為新世紀）、Jaak Joala、Interferon、Jah Warrior、Walrath《Neohippus》。
+- 事實裁定：Cuba libre 是 1980 東京 Victor 日本限定盤（上田力製作），與 Columbia《Irakere II》不同；《Irakere II》《'Bout Soul》年份兩說，正文不寫或只寫錄音年；《Yemayá》卡單 1997 疑為 1999，正文避開發行年；Iron Cross 四位主唱（舊稿三位錯）；Walrath 盤名出處與葛萊美入圍查無，不寫；Rashad 小卡經過不寫；Joala 舊稿「1972 EP」不寫；Capuchin Swing 舊稿 Billboard 評論查無；Street Singer 是 Blue Note 擱置；Alive 不寫聖詩收尾；Terrasson 未決指控不提；Jack White 發行動機不寫成本人說法；《Rendezvous》爵士榜第 10（舊稿第 4 錯）；《I Got the Feelin'》三座城市（舊稿四座錯）；Jaheim〈Blame Me〉是取樣不是翻唱；Ulmer 寫「Laswell 參與製作」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-072.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Terrasson《Mirror》 | 「七首標準曲配五首自作」→「標準曲之外也收自作」 | 曲數屬軌數雜項 |
+| Jah Warrior、Ulmer、McLean《Quintet》 | 第二句「這是」改《盤名》，隨之刪次要句壓字數（Jah Warrior 曲名橫跨三區與鉤子重複；Ulmer「評價分歧，也有人列為最好之一」無具名；Quintet「擱置原因沒有交代」、〈Blues in a Jiff〉一句） | QA 無《》、字數 |
+| James Brown《Bring It On!》 | 刪「只在 1980 年代末短暫出過 CD，至今仍不在串流平台上」 | 版本／發行形式雜項 |
+| Interferon | 刪「曲名多取自催眠與超自然現象」 | 與鉤子重複 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Inti-Illimani 流亡義大利的全器樂、Into Another 硬核出身彈 Iron Maiden 式吉他、Irakere 日本製作人／美古解凍／獻給 Yemayá、Iron Cross 歌詞送審、Rashad 復發恐懼、Joala 母語唱搖滾、Walrath 在 Mingus 最後一團、No Name 塞進購物袋、Wilson 坐進絃樂團、Simmons 朗誦、寵物猴、耍蛇人 vamp、Tolliver 初登場、擱十五年、Tony Williams 首次錄音、Brooks 擱二十年、Iridium 觀眾笑聲、全獨奏、〈Money〉口琴長笛、Wilson／Terrasson 分工、Jagged Edge 未滿 21、以民族命名、Jaheim 兩張、Ulmer 唯一 Blue Note、三座城市、Brown 慢歌翻唱）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-072.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
