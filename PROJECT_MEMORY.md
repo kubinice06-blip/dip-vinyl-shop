@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s25：sd-045、sd-046 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-045 上線 30（Paul Jackson、Paulinho da Viola、Peer Raben、Pete Seeger、Peter Kowald、Phil Pratt、Photon Inc.、Pierre Henry 2、Plaid、PNL、Polaris、Psyche \ BFC、Purrkur Pillnikk、Quarteto 1111、Quartetto Italiano 等），sd-046 上線 30（Quicksand 2、Quiet Village、Quilapayún、R.D. Burman、Raison d'être 2、Ramesh、Randy Stonehill 2、Rashied Ali & Frank Lowe、Ray Barretto 2、Re-TROS、Renee Rosnes 2、Rhythm & Sound 2、Rio Reiser、Riow Arai、Robb Kunkel 等）；無留置。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 60/60 新稿，「待店主處理」無新增。
+- **主線補查**：sd-045 補 8 張（Plaid、Broggs、Kowald、Photon、Portion Control 發行廠更正為 In Phaze 等），sd-046 補 9 張（Manic Compression 的 Spin 25 週年專文、Duo Exchange 的 Survival 創立、Re-TROS、Quiet Village 的 Dazed 訪談、Razorcuts 等）。
+- **審稿**：sd-045 改 6 處（Raben 指涉不清、Quartetto「最後一首」無出處換成學者評價、Bellamy 補盤名），sd-046 改 8 處（Barretto 誤把結尾曲的 bata 鼓安在〈Tumbao africano〉、Omerta「第二張」未核實、四張補盤名）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-045/046.json,review-sd-045/046.json}`、`desc-tools/batches/{cards,research,output}/sd-045*、sd-046*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s22：sd-039、sd-040 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-039 上線 30（K. Hand、Kagami、Kaka de Luxe、Kalaparusha、Růžička、Kaseke、Katedra、Ferrier、Stobart、Kalhor／Brooklyn Rider、KENSO 2、Saunderson、Khanate、Killdozer、Killing Time、Killswitch、King Tubby、Kiosk、Klaus Mitffoch、Koes Plus、Kourosh Yaghmaei 2、Kupla、Kurt Elling、L. Voag、Lab Rat XL、Larry Marshall、Larry Young），sd-040 上線 30（Laughing Hyenas、Led Zeppelin、Konitz 2、Lee Morgan 3、Leeway、Lemon Kittens、Leo Parker、Leo Smith、Rita Mitsouko、Ligabue、Lightnin' Slim、Linval 2、Lip Cream、Llach、Lomosonic、Long Fin Killie、Lonnie Smith、Lorelei、Los Bravos、Los Brincos、Los Destellos 2、Los Jaivas 2、Los Mirlos 2）。秘魯／智利／西班牙卡用西文來源。

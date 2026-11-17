@@ -42,8 +42,8 @@
 | sd-042 | 經典度≥4（Martin Carthy & Dave Swarbrick … Miles Davis） | 30 | | |
 | sd-043 | 經典度≥4（Miles Davis … New Risen Throne） | 30 | | |
 | sd-044 | 經典度≥4（Nieuw Ensemble … Paul Chambers） | 30 | | |
-| sd-045 | 經典度≥4（Paul Jackson … Quartetto Italiano） | 30 | | |
-| sd-046 | 經典度≥4（Quicksand … Robb Kunkel） | 30 | | |
+| sd-045 | 經典度≥4（Paul Jackson … Quartetto Italiano） | 30 | s25 | ✅ 上線 30（前台 30；無留置） |
+| sd-046 | 經典度≥4（Quicksand … Robb Kunkel） | 30 | s25 | ✅ 上線 30（前台 30；無留置） |
 | sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | | |
 | sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | | |
 | sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | | |
