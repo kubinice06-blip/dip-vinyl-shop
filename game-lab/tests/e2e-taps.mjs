@@ -10,6 +10,7 @@
 //   3. x=118、162 從 y=200 到 212（美術格）每 2 格點一次：落在中島最後一排（isl-3a／isl-3b 的 bin，FIXLIST 4 起＝世界／民謠）可見區的點不得觸發前排 bin:jazz／bin:tw；
 //   4. 每個有外框的站立家具（植物、凳子、矮櫃、高櫃、唱盤台、箱子、櫃檯、試聽桌）可見區中心：觸發它自己的熱點或什麼都沒有，不能觸發別人；
 //   5. 按下 50 ms 時畫面上已經有金色描框（截圖數金色像素）；放開後 300 ms 內出現名牌，箱子的名牌字＝bin.label；
+//   8. （night 才跑；第 B 波）回標題：「今日推薦」小籤在畫面裡、真點得到 → 試聽機面板多一塊（集點卡＋收下），在面板與畫面裡、收下鈕點得到
 //   另外：網址帶 ?strict=1（走不到就丟錯）；主控台 0 錯誤；橫條鏡頭裡男子／你說話時泡泡不碰老闆頭部（老闆 x±16 格，SPEC-v4 §2.3.7）。
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, openTitle, Q, SIZES, record, results, sleep, seedRun, jsClick } from './e2e-lib.mjs';
@@ -225,6 +226,25 @@ async function runScreen(browser, w, h, screenName) {
     });
     const bubOk = bub.f.right <= bub.ownerL + 0.5 && bub.p.left >= bub.ownerR - 0.5;
     record(6, size, bubOk, `橫條（${bub.cam}）泡泡不碰老闆 x±16 格：男子 右緣 ${bub.f.right.toFixed(1)} ≤ ${bub.ownerL.toFixed(1)}；你 左緣 ${bub.p.left.toFixed(1)} ≥ ${bub.ownerR.toFixed(1)}`);
+    }
+
+    // ---- 8. 第 B 波（SPEC-B §4.6）：標題多一行「今日推薦」小籤，真點得到 → 走到試聽機、面板多一塊（集點卡＋收下）在面板裡、畫面裡，收下鈕點得到
+    //   只跑 night：存檔序章做完才有今日推薦（title 那份是新存檔）
+    if (screenName === 'night') {
+      await page.evaluate(() => window.__lab.go('title'));
+      await page.waitForSelector('.dl-chip button', { state: 'visible', timeout: 8000 }).catch(() => {});
+      await sleep(900);
+      const chip = await page.evaluate(() => { const b = document.querySelector('.dl-chip button'); if (!b) return null; const r = b.getBoundingClientRect(), t = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+        return { x: r.left + r.width / 2, y: r.top + r.height / 2, inView: r.top >= 0 && r.bottom <= innerHeight && r.left >= 0 && r.right <= innerWidth, hit: !!t && (t === b || b.contains(t)), txt: b.textContent }; });
+      if (chip && chip.hit) await page.touchscreen.tap(chip.x, chip.y);
+      const opened = await page.waitForSelector('.lb-sheet.float.booth .lb-daily', { timeout: 10000 }).then(() => true, () => false);
+      await sleep(700);
+      const bo = await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float.booth'), d = s && s.querySelector('.lb-daily'), b = d && d.querySelector('[data-a=dtake]'); if (!d) return null;
+        const sr = s.getBoundingClientRect(), dr = d.getBoundingClientRect(), br = b ? b.getBoundingClientRect() : null, t = br ? document.elementFromPoint(br.left + br.width / 2, br.top + br.height / 2) : null;
+        return { inSheet: dr.top >= sr.top - 1 && dr.bottom <= sr.bottom + 1 && dr.left >= sr.left - 1 && dr.right <= sr.right + 1, inView: sr.top >= 0 && sr.bottom <= innerHeight + 1 && sr.left >= 0 && sr.right <= innerWidth + 1,
+          take: !!b, takeH: br ? Math.round(br.height) : 0, takeHit: !!t && !!b && (t === b || b.contains(t)), scrollX: s.scrollWidth - s.clientWidth }; });
+      record(8, size, !!chip && chip.inView && chip.hit && opened && !!bo && bo.inSheet && bo.inView && bo.take && bo.takeHit && bo.takeH >= 32 && bo.scrollX <= 1,
+        `今日推薦小籤「${chip && chip.txt}」在畫面裡 ${chip && chip.inView}、最上層 ${chip && chip.hit} → 真點 → 試聽機面板 ${opened}：那一塊在面板裡 ${bo && bo.inSheet}、面板在畫面裡 ${bo && bo.inView}、收下鈕 ${bo && bo.takeH} 高點得到 ${bo && bo.takeHit}、橫向溢出 ${bo && bo.scrollX}`);
     }
 
     // ---- 主控台 0 錯誤（含嚴格模式的 [shop] no route）

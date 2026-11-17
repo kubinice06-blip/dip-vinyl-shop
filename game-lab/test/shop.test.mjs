@@ -68,7 +68,7 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
   ok(walls.every(p => Array.isArray(p.cards) && p.cards.length === p.n * (p.rows || 1) && !p.hot && !p.section), '門口牆每格都有唱片（n×rows）、不帶 hot／section');
   eq(walls.map(p => [p.x, p.n, p.rows, p.plate]), [[44, 2, 2, 'FEATURE'], [76, 5, 2, 'PICKS']], '門口牆：靠門 2×2＝FEATURE、其餘 5×2＝PICKS');
   ok(propById('wall-feature').x < propById('wall-picks').x && propById('wall-feature').x - (propById('door').x + propById('door').w) < 10, 'FEATURE 在最靠門那一格');
-  eq(propById('isl-2a').front, ['miki-matsubara-pocket-park', '大貫妙子-grey-skies', '吉田美奈子-monochrome'], 'CITY POP 正面＝松原みき、大貫妙子、吉田美奈子');
+  eq(propById('isl-2a').front, ["miki matsubara|pocket park", "大貫妙子|grey skies", "吉田美奈子|monochrome"], 'CITY POP 正面＝松原みき、大貫妙子、吉田美奈子');
   eq([propById('shelving').section, propById('booth').section], ['picks', 'picks'], '高櫃＋試聽桌的封面＝店長推薦');
   const seen = new Set(), dup = [];
   for (const p of dip.props) for (const id of [].concat(p.front || [], p.type === 'ledge' || p.type === 'shelving' ? p.cards : [], p.type === 'listenDesk' ? [p.stack] : [])) { if (seen.has(id)) dup.push(id); seen.add(id); }
@@ -95,7 +95,7 @@ section('schema：本店＝斜俯視 3/4（P2）', () => {
     } else if (!['new', 'feature', 'picks'].includes(k)) ok(b.pool.every(id => CC.catOf(cards[id]) === k), 'bins.js ' + k + ' 每張的分類（第一個曲風／台灣地區）＝' + k, b.pool.filter(id => CC.catOf(cards[id]) !== k));
   }
   // 宇多田《First Love》（D §6：不准出現在搖滾）：POP 改 CITY POP 之後在店長推薦的卡池（不在正面）
-  ok(BJ.picks.pool.includes('宇多田ヒカル-first-love') && !BJ.rock.pool.includes('宇多田ヒカル-first-love') && !BJ.indierock.pool.includes('宇多田ヒカル-first-love'), '宇多田在店長推薦（picks）的卡池、不在搖滾');
+  ok(BJ.picks.pool.includes("宇多田ヒカル|first love") && !BJ.rock.pool.includes("宇多田ヒカル|first love") && !BJ.indierock.pool.includes("宇多田ヒカル|first love"), '宇多田在店長推薦（picks）的卡池、不在搖滾');
   const allPool = KEYS.flatMap(k => BJ[k].pool);
   eq(allPool.length, new Set(allPool).size, '各區卡池互不重疊（全店當天不會重複）');
   eq(JSON.stringify(BJ.feature.front), JSON.stringify(propById('wall-feature').cards), 'feature front＝牆上那 4 格');
@@ -146,7 +146,7 @@ section('熱點：id 唯一、本店該有的都有、牆上的唱片可以點',
   // 故意做壞箱子：bin.key 重複、lean、front 張數、stand 在家具裡、沒有 bin 也沒有 decor、兩台唱盤、牆上空格、壞招牌
   const b2 = JSON.parse(JSON.stringify(dip)), P2 = id => b2.props.find(p => p.id === id);
   P2('isl-0b').bin.key = 'rock';
-  P2('isl-1a').lean = 'the-band-music-from-big-pink';
+  P2('isl-1a').lean = "the band|music from big pink";
   P2('isl-2a').front = P2('isl-2a').front.slice(0, 2);
   P2('isl-2b').bin.stand = [160, 190];
   delete P2('isl-3a').bin;
@@ -477,7 +477,7 @@ section('唱盤區幾何（一台，SPEC-v4 §2.3.1、§2.3.4）', () => {
   eq(g.now[2] + 'x' + g.now[3], '14x14', 'NOW 小窗 14×14');
   // 畫得出來：空台、落下、在轉（王牌）、抬到一半；在轉才冒音符
   const T = { ctx: null, k: 1, cx: 0, cy: 0, meas: [1e9, 1e9, -1e9, -1e9], cover: () => null, pool: [] }, P = DS.OPainter(T);
-  for (const st of [null, { rec: { attr: 'o', card: 'radiohead-ok-computer', kind: null }, state: 'land', by: 'p' }, { rec: { attr: 'c', card: 'swans-filth', kind: 'ace' }, state: 'spin', by: 'e' }, { rec: { attr: 'h', card: null }, state: 'armMid', by: 'p' }]) {
+  for (const st of [null, { rec: { attr: 'o', card: "radiohead|ok computer", kind: null }, state: 'land', by: 'p' }, { rec: { attr: 'c', card: "swans|filth", kind: 'ace' }, state: 'spin', by: 'e' }, { rec: { attr: 'h', card: null }, state: 'armMid', by: 'p' }]) {
     const S = { state: { deck: st }, rt: 1.2, t: 1.2, card: id => cards[id] || null };
     T.meas = [1e9, 1e9, -1e9, -1e9]; OP.draw(P, dk, S); const m = T.meas.slice();
     ok(m[2] > m[0] && m[0] >= dk.x - 3 && m[2] <= dk.x + dk.w + 3, '唱盤畫在自己的範圍：' + (st && st.state), m);
@@ -499,7 +499,7 @@ section('看得到的封面只來自資料（不用 P.poolPick 從全卡池隨�
   const ledge = Object.assign({}, propById('wall-picks'), { cards: propById('wall-picks').cards.slice(0, 5) }), bin = Object.assign({}, propById('isl-0a'), { front: null }), desk = Object.assign({}, propById('booth'), { stack: null });
   for (const o of [ledge, bin, desk]) DS.O34.PROPS[o.type].draw(P, o, S);
   eq(picks, 0, '空格畫素色封套／空架，不抽卡');
-  const seen = [...covers].filter(id => id !== 'caetano-veloso-transa');
+  const seen = [...covers].filter(id => id !== "caetano veloso|transa");
   eq(seen.length, 67, '畫出來的固定封面＝資料裡的 67 張（不含櫃檯 NOW）');
 });
 
@@ -732,15 +732,15 @@ asection('舞台 v4：version、INTERACT、bins()、hold(\'o\')、finish、faceT
   st.put('f', 'duelE', 'e0'); st.put('p', 'duelP'); st.put('o', 'ref');
   st.hold('e', { back: true });
   const held0 = st.clashState().held, n0 = F.log.length;
-  st.hold('o', { sleeve: 'swans-filth' });
-  eq(F.actors.o.hold, { sleeve: 'swans-filth' }, 'hold(\'o\')：shop 的老闆手上有那張');
+  st.hold('o', { sleeve: "swans|filth" });
+  eq(F.actors.o.hold, { sleeve: "swans|filth" }, 'hold(\'o\')：shop 的老闆手上有那張');
   eq(F.actors.o.arm, 'show', 'hold(\'o\')：arm show');
   eq(st.clashState().held, held0, 'hold(\'o\')：TT.held 不變');
   ok(!F.log.slice(n0).some(x => x[0] === 'flip' || (x[0] === 'hold' && x[1] !== 'o')), 'hold(\'o\')：不動 p／f 的翻面與手', F.log.slice(n0));
   eq(F.actors.p.hold, null, 'hold(\'o\') 不會給到玩家（v3 sid() 把 o 當 p 的 bug）');
   st.hold('o', null); ok(F.actors.o.hold === null && F.actors.o.arm === null, 'hold(\'o\', null) 收起');
-  st.hold('p', { sleeve: 'radiohead-ok-computer' });
-  eq(st.clashState().held, { f: { back: true }, p: { sleeve: 'radiohead-ok-computer' } }, 'hold(\'e\'／\'p\') 記進 TT.held');
+  st.hold('p', { sleeve: "radiohead|ok computer" });
+  eq(st.clashState().held, { f: { back: true }, p: { sleeve: "radiohead|ok computer" } }, 'hold(\'e\'／\'p\') 記進 TT.held');
   // finish／finishAll：正在走的那段直接放到終點、resolve 那個 walk、姿勢回 null
   let done = 0; st.walk('o', ['dig1'], 54).then(() => done++);
   st.walk('p', ['browse']).then(() => done++); st.walk('f', ['visit']).then(() => done++);
@@ -757,7 +757,7 @@ asection('舞台 v4：version、INTERACT、bins()、hold(\'o\')、finish、faceT
   st.faceTo('f', 'p'); eq(F.actors.f.flip, false, 'faceTo(f, p)：他在左、面向右');
   st.faceTo('o', [10, 100]); eq(F.actors.o.flip, true, 'faceTo(o, [x,y])');
   // floorRecord：地上平躺的唱片，直到 floorRecord(null)
-  st.floorRecord('duelE', { attr: 'o', card: 'swans-filth' }); await run(40);
+  st.floorRecord('duelE', { attr: 'o', card: "swans|filth" }); await run(40);
   ok((F.api.state.fx.discs || []).some(d => d.flat && d.x === dip.spots.duelE[0] && d.y === dip.spots.duelE[1] && d.attr === 'o'), 'floorRecord(duelE)：地上一張冷門唱片', F.api.state.fx);
   await run(3000);
   ok(F.api.state.fx.discs.some(d => d.flat), 'floorRecord 一直留著（不像 flatDisc 會消失）');
@@ -766,7 +766,7 @@ asection('舞台 v4：version、INTERACT、bins()、hold(\'o\')、finish、faceT
 });
 
 asection('舞台 v4：一手的時間軸 roundItem（剋中、v3 呼叫、平手搖頭、減少動態、四倍速）', async () => {
-  const pc = 'radiohead-ok-computer', ec = 'swans-filth';
+  const pc = "radiohead|ok computer", ec = "swans|filth";
   const setup = async () => { const F = fakeShop(dip), S = await loadStage(F); S.st.put('f', 'duelE', 'e0'); S.st.put('p', 'duelP'); S.st.put('o', 'ref'); S.st.tag('f', '男子', 'e', 'T'); S.st.tag('p', '你', 'p', 'T'); return Object.assign(S, { F }); };
   // ---- 剋中（你冷 4 剋他經 5 → counter 4）
   {

@@ -67,19 +67,19 @@
   // 每一手：你（p，右）與他（e，左）丟的牌（星數照 cards.js；王牌 7 星），結算照 SPEC-v4 §5.1 #5 的規則抽查表
   var R = {
     counter:   { label: '剋中：你冷 4 剋他經 5 → 他 −4', kind: 'counter', by: 'p', blocked: null, toE: 4, toP: 0,
-                 p: { attr: 'o', star: 4, card: '老王樂隊-暮夜徐行' }, e: { attr: 'c', star: 5, card: 'david-bowie-low' } },
+                 p: { attr: 'o', star: 4, card: "老王樂隊|暮夜徐行" }, e: { attr: 'c', star: 5, card: "david bowie|low" } },
     countered: { label: '被剋（他唬人）：你經 5，他冷 4 → 你 −4', kind: 'countered', by: 'e', blocked: null, toE: 0, toP: 4,
-                 p: { attr: 'c', star: 5, card: 'vashti-bunyan-just-another-diamond-day' }, e: { attr: 'o', star: 4, card: '傷心欲絕-我愛您' } },
+                 p: { attr: 'c', star: 5, card: "vashti bunyan|just another diamond day" }, e: { attr: 'o', star: 4, card: "傷心欲絕|我愛您" } },
     gap:       { label: '剋不動：你冷 3 剋他經 5（差 2）→ 比星 你 −2', kind: 'mirrorLose', by: 'p', blocked: 'gap', toE: 0, toP: 2,
-                 p: { attr: 'o', star: 3, card: 'the-kinks-preservation-act-1' }, e: { attr: 'c', star: 5, card: 'bark-psychosis-hex' } },
+                 p: { attr: 'o', star: 3, card: "the kinks|preservation act 1" }, e: { attr: 'c', star: 5, card: "bark psychosis|hex" } },
     aceBlock:  { label: '剋不動：他王牌經 7 被你冷 5 剋（高 2 星）→ 比星 你 −2', kind: 'mirrorLose', by: 'p', blocked: 'gap', toE: 0, toP: 2,
-                 p: { attr: 'o', star: 5, card: 'demetrio-stratos-metrodora' }, e: { attr: 'c', star: 7, card: 'radiohead-ok-computer', ace: true } },
+                 p: { attr: 'o', star: 5, card: "demetrio stratos|metrodora" }, e: { attr: 'c', star: 7, card: "radiohead|ok computer", ace: true } },
     mirrorWin: { label: '同色：你經 5 比他經 3 → 他 −2', kind: 'mirrorWin', by: null, blocked: null, toE: 2, toP: 0,
-                 p: { attr: 'c', star: 5, card: 'beverly-glenn-copeland-keyboard-fantasies' }, e: { attr: 'c', star: 3, card: 'blur-the-great-escape' } },
+                 p: { attr: 'c', star: 5, card: "beverly glenn-copeland|...keyboard fantasies..." }, e: { attr: 'c', star: 3, card: "blur|the great escape" } },
     tie:       { label: '平手：經 4 對經 4 → 空盤、老闆搖頭', kind: 'tie', by: null, blocked: null, toE: 0, toP: 0,
-                 p: { attr: 'c', star: 4, card: 'scott-walker-tilt' }, e: { attr: 'c', star: 4, card: 'pharoah-sanders-tauhid' } },
+                 p: { attr: 'c', star: 4, card: "scott walker|tilt" }, e: { attr: 'c', star: 4, card: "pharoah sanders|tauhid" } },
     ace:       { label: '王牌：你王牌硬 7 被他經 2 剋（高 2 星以上）→ 剋不動、他 −5', kind: 'mirrorWin', by: 'e', blocked: 'gap', toE: 5, toP: 0,
-                 p: { attr: 'h', star: 7, card: 'swans-filth', ace: true }, e: { attr: 'c', star: 2, card: 'coldplay-mylo-xyloto' } }
+                 p: { attr: 'h', star: 7, card: "swans|filth", ace: true }, e: { attr: 'c', star: 2, card: "coldplay|mylo xyloto" } }
   };
   var H = window.H = { stage: null, log: [], ready: false, errors: [] };
   if (QS.shot === '1') document.body.classList.add('shot');   // 截圖模式：只留舞台、這一手的說明、路線圖例
@@ -153,8 +153,8 @@
     st.clearClash(0); st.seek(null); st.put('f', 'mid', 'e0'); st.put('p', 'leaving'); st.put('o', 'counter');
     st.camera('full', { ms: 0, panelMin: 0 }).then(function () { return st.duelIn({ ms: 600 }); }).then(function () { place(); });
   };
-  $('#holdO').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.hold('o', on ? { sleeve: 'caetano-veloso-transa' } : null); this.classList.toggle('on', on); };
-  $('#floor').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.floorRecord(on ? 'duelE' : null, { attr: 'o', card: '老王樂隊-暮夜徐行' }); this.classList.toggle('on', on); };
+  $('#holdO').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.hold('o', on ? { sleeve: "caetano veloso|transa" } : null); this.classList.toggle('on', on); };
+  $('#floor').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.floorRecord(on ? 'duelE' : null, { attr: 'o', card: "老王樂隊|暮夜徐行" }); this.classList.toggle('on', on); };
   // 路線圖（SPEC-v4 §2.3.2）：每條路線用 navRoute 算（跟 shop.walk 同一套），1 倍速＝每秒 72 格；
   // 家具腳下範圍＝DipShop.footprints（FIXLIST 1：道具實際畫出來的那一塊；中島 10 箱一塊；櫃檯、唱盤台只算地面那塊）畫紅框，避障框（加 navMargin）畫淡虛線
   var ROUTES = [

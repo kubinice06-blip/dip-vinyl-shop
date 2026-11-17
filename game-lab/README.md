@@ -33,7 +33,7 @@
 | v5 人物轉身第一步（店主 11-15） | 店裡走路：往上走畫背面、往下正面、橫走照舊（`shop.js` 純函式 `faceDir`：≥55° 算上下、≤35° 橫走、中間保持；<6 格不轉；換向後 0.12 秒內不再換）；走到站 0.2 秒後轉回那站的方向（預設正面，只有試聽桌 `listen` 背面；`FACE_AT`、layout `faceAt`）；拿東西、對決、翻箱、丟牌一律正面。`chars.js` 加 `opts.dir`；修背面瑕疵（馬尾兩條、破洞牛仔褲背面有洞、唱片袋／帆布袋換邊、領結、吊帶褲、頭巾結）。台北地圖的你照捏的樣子畫。側面與捏人「轉一圈」是下一步 |
 | v5 頻率（第六項第二期，店主 11-15） | 每張卡多一個 `tune`（八格頻率之一，烘卡讀主站 `data/mood/card-moods.json`，跟頻率光譜同一格）；**只上色、不進戰鬥規則**：提示籤前一顆「客人常聽頻率」小圓點（`C.enemies[k].tune`；教學裡不出）、唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● …」。店裡高櫃頂上新一台**收音機**：兩位客人之間、每輪一次，選一格頻率抽一張那格的牌放進這一輪特價箱第一格（標「電台」、照原價，沒有套利）；抽不到那格反灰。`C.tunes`、`C.radio`；`engine.choose({type:'radio', cell})` |
 | v5 人物轉身第二步（店主 11-15） | 寶可夢黃版的做法（不照抄任何現成圖）：前、後、側三向，左右互為鏡像，每方向兩格走路。`chars.js` 另寫 `buildSide`（正面那條路一行不動），67 件零件各一張側面＋側臉、側面手、每款下身站／跨步兩格、傳說藏家側面頭；側面只給站和走，其他姿勢退回正面。`shop.js` 橫走換側面（往上背面、往下正面、到站轉回 `FACE_AT`）。捏人預覽「背面」鈕換「轉一圈」。總表頁 `dev/chars-sheet.html` |
-| v5 主站互通（第六項第一期，店主 11-15） | 主站頻率光譜：「只看我的唱片櫃」開關（要登入；記住開關；沒收藏的星壓暗）、開著時 RADIO 變「收藏電台」（撥桿字「收藏」，挑最近沒播過的、播完重繞）、結果頁「已在唱片櫃 ×n」、遊戲卡池的卡多「⚔ 帶去店裡對決」（`game-lab/pool-index.json`，`tools/build-pool-index.mjs --check`；`?shop=1` 不出）。遊戲讀 `?card=<id>` → `save.bring`（跨分頁同步）→ 下一趟挑種子面板排第一、預設勾好（不用擁有、不改引擎）；唱片資訊頻率那行後面「在頻率光譜找它 ↗」（新分頁開 `/tune/?q=`） |
+| v5 主站互通（第六項第一期，店主 11-15） | 主站頻率光譜：「只看我的唱片櫃」開關（要登入；記住開關；沒收藏的星壓暗）、開著時 RADIO 變「收藏電台」（撥桿字「收藏」，挑最近沒播過的、播完重繞）、結果頁「已在唱片櫃 ×n」、遊戲卡池的卡多「⚔ 帶去店裡對決」（`game-lab/pool-index.json`＝帶得進遊戲的：扣掉王牌、頂點卡與傳奇〔第 B 波主線 M2〕，`tools/build-pool-index.mjs --check`；`?shop=1` 不出）。遊戲讀 `?card=<id>` → `save.bring`（跨分頁同步）→ 下一趟挑種子面板排第一、預設勾好（不用擁有、不改引擎）；唱片資訊頻率那行後面「在頻率光譜找它 ↗」（新分頁開 `/tune/?q=`） |
 | v5 聆聽室（第六項第三期第一步，店主 11-15） | 台北地圖「你家」小房子圖釘（頂欄也有「你家」鈕）→ `shops/home.json`（kind:'room'，斜俯視 292×236）：唱片架（我的收藏，分頁面板每頁 12 張，點封面看唱片資訊／放唱盤）、唱盤（試聽，放完接下一張收藏）、小控制台（推近成全螢幕頻率光譜星圖：載主站 `../dip-tune.js`（`BASE` 路徑；`TUNE_V` 要跟主站 index.html 的 `dip-tune.js?v` 同號）、收藏亮其他暗、選到你的放上唱盤、不是你的記進 `save.want` 想要清單（只記、不影響進貨）、開著時店景凍住、載入中有「控制台開機中…」與「回房間」、15 秒逾時）、門回本店。點家具先走過去才開。`tests/e2e-room.mjs` |
 | 頂點卡純輔助卡試做（`?apex=1`，店主 11-15） | **網址加 `?apex=1` 才生效**（標題多一顆「跳過序章，直接開打」：不走旁白、捏人、序章、挑種子，特價箱照策略自動挑三張，直接到第 1 位並跳挑王牌面板；有一趟在打時要按兩下，店主 11-16）（不加＝現行 7 星王牌，當對照組；旗標不存進存檔，同一份存檔兩種都能玩）。三派各 15 張頂點卡（`C.apexTrial`；新卡 42 張在 cards.js 最後，旗標關時唱片櫃分母、主站互通都不算它們）：王牌改成**一場一次的輔助卡、不比星**——每手看過提示、出唱片前點王牌格 → 能力框（能力名・這手／整場／留著、說明、「發動」）；發動不佔這一手，照樣出一張專輯，結果句多一行「王牌：…」；看穿＝提示框蓋章「真話／唬人！」。序章照舊 7 星教學（挑王牌那行、開打吐司寫明）；序章打完、第 1 位開打前老闆說「接下來，王牌不上場比星，改成一場幫你一次。」→ 挑王牌面板（三派分頁 → 那派 15 張 5×3 → 就這張；每份存檔自動跳一次，之後點老闆換；下一趟沿用 `save.lastAceId`）；打贏回 4。藏家、客人的王牌照舊 7 星。規則、能力、介面契約在 scratchpad `v5/apextrial/`（FRAME、ABILITIES、CONTRACT）；`sim.mjs --apex`、`tests/e2e-apex.mjs` |
 | 流派與頂點卡靠遊戲解鎖（店主 11-16） | 「換流派只能每局一開始；流派的頂點卡要透過遊戲蒐集才能解鎖」：新玩家只有**初始流派**（序章挑的那派；`?apex=1` 跳過序章的新存檔先三選一），其他兩派鎖住。**打倒傳說藏家＝收他帶的頂點卡**，藏家帶哪張照**被剋鏈**：初始流派剋的那派先、再下一派（流亡→殿堂→異端→流亡；`engine.TIER_BEATS`、`run.bossCard` 每輪各算）。解鎖＝擁有那派任一張頂點卡（唱片櫃 src `start`／`boss`）。換流派照舊只在這一趟第 1 位開打前（`canSwitchAce`），只能換解鎖的派：挑王牌三選一（序章、點老闆換）鎖住的派封面灰掉＋鎖頭、下面「打倒傳說藏家解鎖」，點了只說明；點老闆小選單沒得換時「換一張王牌」改成「其他流派還鎖著」（按不下去）；「想換王牌，點老闆。」的提示等有得換才出。`?apex=1` 每派 15 張也要收：一開始只有初始流派預設那張，三派都開後藏家每輪帶一張你還沒收到的試做卡（先挑別派）；挑王牌面板分頁第二行「已收 n／15」、鎖住的分頁虛線＋鎖頭、沒收到的封面灰掉＋小鎖（點了寫「還沒收到：打倒傳說藏家收集」，按住照樣看唱片資訊）。打倒藏家送牌那段：新的一派解鎖＝面板上方一塊「解鎖了殿堂派（經典）／下一趟開局，點老闆就能換。」（鎖頭打開的小演出＋音效，領獎畫面再一顆吐司），收到新的一張（沒解鎖新派）＝「收進唱片櫃，下一趟開局可以換」，封面角「新收藏」；點藏家頭像寫「帶的王牌《…》・打倒他，解鎖○○派」。標題紀錄下面、唱片櫃最上面一行「流派 1／3・下一派：殿堂（經典）」（`?apex=1` 加「頂點卡 n／45」）。舊存檔（解鎖制以前）：`save.lastAce` 那派＋唱片櫃擁有頂點卡的派算解鎖，第一次載入標題吐司「流派改成打倒傳說藏家才解鎖。你現在這派照舊。」；存檔版本不升（還是 6）。契約與數字在 scratchpad `v5/unlock/`（BRIEF、CONTRACT）；`sim.mjs --unlock`、engine.test section 22、`tests/e2e-unlock.mjs` |
@@ -187,11 +187,12 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=78` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → cards-pool → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=81`（第 B 波＋併入讀牌加難 #480）；`cards-media.json` 標題畫好後才抓 |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、無限試煉（位數曲線、升級、中繼點）、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
-| `cards.js`、`bins.js` | 卡池（316 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |
-| `ui.js`、`style.css` | 外殼：頂欄＋常駐舞台＋面板、標題、逐句執行器與序章面板、來客（第 n 位、聲望那顆）、進退場、挑唱片（掉落旁白）、升級三選一、打倒藏家、老闆說情、結算（一趟留一張）、挑種子、唱片櫃（我的收藏／認識過）、規則卡、⏸、店內熱點、存檔 v6（v5、v4 遷移） |
+| `cards-pool.js`、`cards-media.json` | 第 B 波精選新卡 4,677 張（照欄存的邏輯＋名字，同步載）與它們的封面／試聽（延後載；`?v=poolVersion`、版本不合不套）；`tools/bake-cards.mjs --pool-only` 產生。卡片 id 一律 catalogId（`藝人|專輯` 小寫）；舊 slug 對照在 `tools/legacy-ids.json`（存檔 v6→v7 遷移、主站舊連結） |
+| `cards.js`、`bins.js` | 核心卡池（368 張；`require('./cards.js')` 永遠只有核心，整池讀 `content.js` 的 `C.cards`＝5,045 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |
+| `ui.js`、`style.css` | 外殼：頂欄＋常駐舞台＋面板、標題、逐句執行器與序章面板、來客（第 n 位、聲望那顆）、進退場、挑唱片（掉落旁白）、升級三選一、打倒藏家、老闆說情、結算（一趟留一張）、挑種子、唱片櫃（我的收藏／認識過）、規則卡、⏸、店內熱點、存檔 v7（第 B 波：v6→v7 卡片 id 換 catalogId、`.bak6` 備份、遷移失敗／卡池沒載到唯讀；v5、v4 遷移）、一檔貨介面、今日推薦集點卡（獨立鍵 `.daily`）、主站帶卡（`?card=`；傳奇帶不進來，主線 M2） |
 | `recap.js` | 上一手詳情／這場紀錄面板（`DipLabRecap`：duel.log 一筆組回 clash 形狀 → `clashText`；對決中掛在盤面上、打完在 modal 裡；11-17） |
 | `duel.js`、`duel.css` | 對決盤面：提示句、蓋著的封套、牌桌兩張（主角）、上一手小列（牌桌最上面）、他名字旁的稱號小名牌、小相剋圖例（字帶左邊）、結果句、手牌（疊成一排、點一張在那張打開＋屬性鈕）、品味／底氣小籤 |
 | `econ.js`、`econ.css` | 經濟介面：箱子抽屜（名牌＋中文、稀有度、價；FEATURE 金名牌與大稀有度標；錢不夠指去櫃檯）、櫃檯兩個分頁（配件／賣給老闆：包包太長時格子那一區自己捲）、特價箱兩種模式（每格標價） |
@@ -204,6 +205,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 | `dev/duel-harness.html`、`dev/econ-harness.html`、`dev/stage-harness.html` | 只掛對決盤面／經濟介面／舞台的測試台 |
 | `dev/decks-v4.md`、`dev/bins-v4.md`、`dev/sim-v4.json` | 牌單、箱子與牆上封面、模擬結果（給店主看） |
 | `LINES-REVIEW.md` | 全部新句（`lint-copy` 產生），待店主過目 |
+| `tests/e2e-*.mjs`、`tests/e2e-lib.mjs` | 端對端測試（純 node＋Playwright Chromium）與共用函式；`e2e-pool.mjs`＝第 B 波（卡池 5,000＋catalogId、存檔 v7 遷移、`?card=`、一檔貨、想要清單、今日推薦、媒體延後、首屏、聆聽室、效能） |
 
 ## 除錯旗標
 
@@ -230,7 +232,7 @@ node game-lab/tools/check-shops.mjs         # 店家配置、熱點（含 bin:* 
 node game-lab/tools/check-covers.mjs        # 每個看得到的封面在 cards.js、全店不重複、符合那一區的曲風
 
 S=390x664,375x548,430x932,360x640
-LAB_SIZES=$S LAB_FULL=1 node game-lab/tests/e2e.spec.mjs     # 端對端情境（#1–#56；#45–#48＝無限試煉的來客、升級、打倒藏家、中繼點與結算；#49–#53＝從唱片櫃挑牌開局：掉落旁白、帶走一張、挑種子、種子不能賣、存檔 v5→v6；#54＝跟老闆換王牌；#13＝再挑戰一趟沒有王牌面板；#56＝包包 8／20 張打贏直接收第 9／21 張；#57＝第 A 波：對戰台、稱號、常出、讀對了、越讀越響、險勝、錢跳、差一點）
+LAB_SIZES=$S LAB_FULL=1 node game-lab/tests/e2e.spec.mjs     # 端對端情境（#1–#56；#45–#48＝無限試煉的來客、升級、打倒藏家、中繼點與結算；#49–#53＝從唱片櫃挑牌開局：掉落旁白、帶走一張、挑種子、種子不能賣、存檔 v5→v7；#55＝主站帶卡（catalogId、舊 slug）；#54＝跟老闆換王牌；#13＝再挑戰一趟沒有王牌面板；#56＝包包 8／20 張打贏直接收第 9／21 張；#57＝第 A 波：對戰台、稱號、常出、讀對了、越讀越響、險勝、錢跳、差一點）
 LAB_SIZES=$S node game-lab/tests/e2e-duel.mjs                # 對決盤面（index.html；LAB_DUEL_PAGE=harness 跑測試台）
 LAB_SIZES=$S node game-lab/tests/e2e-econ.mjs                # 經濟介面（econ-harness＋index.html #21–#31；#7 包包 8／24 張直接買、#15 錢不夠指去櫃檯＋櫃檯「賣給老闆」（24 張格子捲、賣、交還、留 5 張）、#29 包包面板只看＋點老闆賣給老闆、#31 去櫃檯的提示）
 LAB_SIZES=$S LAB_SCREENS=title,night node game-lab/tests/e2e-taps.mjs   # 真點每個熱點與家具（標題、來客）
@@ -238,6 +240,8 @@ node game-lab/tests/e2e-prologue.mjs                         # 序章時間軸 P
 LAB_SIZES=$S node game-lab/tests/e2e-intro.mjs              # 開頭旁白＋玻璃倒影捏人（?debug=1 預設不演，這支加 &intro=1）
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-apex.mjs   # 頂點卡試做（?apex=1）：挑王牌面板、能力框、跳過序章（解鎖制：擁有的卡先放進存檔）
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-unlock.mjs # 流派與頂點卡解鎖：新存檔只有初始派、鎖住的派點不了、打倒藏家掉被剋那派、旗標開沒收到的卡不能挑
+LAB_SIZES=$S LAB_MAIN_BASE=<main 的伺服器根> node game-lab/tests/e2e-pool.mjs   # 第 B 波 P1–P12＋M2：畫面類（P1、P3–P10b）每個尺寸、邏輯 fixture（P1b–P1g、P2、P11、P12、M2）只在 390x664；
+                                                             #   P9 首屏 gzip ≤800 KB（硬門檻；主線 M1 760，併 #480、#491 跟著 main 基底 +20）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-recap.mjs  # 上一手細節（11-17）：揭曉後停住等點、⏸ 自動換手、上一手詳情、這場紀錄、結算畫面的紀錄、半指／不露不洩漏
 ```
 

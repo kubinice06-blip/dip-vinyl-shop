@@ -191,7 +191,7 @@ async function runSize(browser, w, h) {
       await tapSel(page, '#ciClose'); await sleep(350);
       const d4 = await dbg(page), info2 = await page.evaluate(() => window.DipLabCardInfo.isOpen());
       const n = d0.ids.length;
-      const ok = n >= 4 && d1.idx === 1 && d2.idx === 0 && d3.idx === 1 && !infoOpen0 && info.open && info.id === d3.ids[1] && !info2 && d4.open;
+      const ok = n === 3 && d1.idx === 1 && d2.idx === 0 && d3.idx === 1 && !infoOpen0 && info.open && info.id === d3.ids[1] && !info2 && d4.open;
       record(4, size, ok, `${n} 張；› → ${d1.idx}；縮圖 0 → ${d2.idx}；左滑 → ${d3.idx}（滑完的 click 不開資訊：${!infoOpen0}）；點封面開唱片資訊 ${info.open}（${info.id}）；關掉後抽屜還在 ${d4.open}`);
     });
     // ---------------- 5：點外面關掉 ----------------

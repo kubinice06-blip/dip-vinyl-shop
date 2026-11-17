@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 944（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 967（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -761,6 +761,19 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・homeTuneLoading | 控制台開機中… | 本規格新寫 | `shopLines.homeTuneLoading` |
 | （畫面字）・homeTuneBack | 回房間 | 本規格新寫 | `shopLines.homeTuneBack` |
 
+## 一檔貨（兩位客人之間換貨、第 2 輪起全卡池；老闆一句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・lotHint | 每位客人走了，每一箱都換上新的一排；打完傳說藏家，整批貨換新。 | 本規格新寫 | `shopLines.lotHint` |
+| 老闆・lotAll | 新的一批到了，這批是從倉庫深處挖出來的。 | 本規格新寫 | `shopLines.lotAll` |
+
+## 今日推薦集點卡（老闆提醒）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・dailyNew | 今天幫你留了一張，放在試聽機。 | 本規格新寫 | `shopLines.dailyNew` |
+
 ## 店裡熱點・箱子的名牌
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -803,10 +816,15 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・bargainBuy | 買下 ${n} | 本規格新寫 | `shopUi.bargainBuy` |
 | （畫面字）・bargainEach | ${n} | 本規格新寫 | `shopUi.bargainEach` |
 | （畫面字）・bargainEmpty | 特價區賣完了，下一輪再補。 | 本規格新寫 | `shopUi.bargainEmpty` |
+| （畫面字）・binEmptyLot | 這一批的這一箱賣完了，打完傳說藏家整批換新。 | 本規格新寫 | `shopUi.binEmptyLot` |
+| （畫面字）・binEmptyRound | 這一箱賣完了，下一輪再補。 | 本規格新寫 | `shopUi.binEmptyRound` |
+| （畫面字）・wantTag | 你想要的 | 本規格新寫 | `shopUi.wantTag` |
+| （畫面字）・wantOnShelf | 你想要的《{album}》上架了，在{bin}那一箱。 | 本規格新寫 | `shopUi.wantOnShelf` |
+| （畫面字）・wantOnShelfN | 你想要的 {n} 張上架了：{bins}。 | 本規格新寫 | `shopUi.wantOnShelfN` |
 | （畫面字）・close | 關閉 | 本規格新寫 | `shopUi.close` |
 | （畫面字）・earned | +${n} | 本規格新寫 | `shopUi.earned` |
 | （畫面字）・bag | 包包 {n} 張 | 本規格新寫 | `shopUi.bag` |
-| （畫面字）・binEmpty | 這一箱賣完了，下一輪再補。 | 本規格新寫 | `shopUi.binEmpty` |
+| （畫面字）・binEmpty | 這一箱賣完了，下一位客人來之前會換一批。 | 本規格新寫 | `shopUi.binEmpty` |
 | （畫面字）・owned | 包包裡有了 | 本規格新寫 | `shopUi.owned` |
 | （畫面字）・relicSell | 賣這件 | 本規格新寫 | `shopUi.relicSell` |
 | （畫面字）・relicSold | 「{name}」賣掉，+${n} | 本規格新寫 | `shopUi.relicSold` |
@@ -990,6 +1008,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・bringToast | 《{album}》在櫃檯等你：下一趟開局可以帶上場 | 本規格新寫 | `seeds.ui.bringToast` |
 | （畫面字）・bringToastFirst | 《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶上場 | 本規格新寫 | `seeds.ui.bringToastFirst` |
 | （畫面字）・bringMissing | 店裡沒有這張唱片。 | 本規格新寫 | `seeds.ui.bringMissing` |
+| （畫面字）・bringLegend | 《{album}》是傳奇唱片，帶上場太好打，店裡不收；史詩以下都能帶。 | 本規格新寫 | `seeds.ui.bringLegend` |
+| （畫面字）・migrateFail | 存檔升級失敗，這次先不存檔；重新整理再試一次。 | 本規格新寫 | `seeds.ui.migrateFail` |
+| （畫面字）・poolMissing | 唱片沒有全部載到，這次先不存檔；重新整理再試一次。 | 本規格新寫 | `seeds.ui.poolMissing` |
 
 ## 從唱片櫃挑牌開局・沒收的只算「認識」（領獎、包包滿拿出來、序章撿唱片）
 
@@ -997,6 +1018,23 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | （畫面字）・rewardNote | 點封面看唱片資訊、試聽。沒收的也都算認識了。 | 本規格新寫 | `seeds.ui.rewardNote` |
 | （畫面字）・stakeSkipSub | 也算認識了 | 本規格新寫 | `seeds.ui.stakeSkipSub` |
+
+## 今日推薦集點卡（試聽機那塊、標題小籤、換獎勵；{x} 由畫面代入）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・title | 今日推薦 | 本規格新寫 | `daily.title` |
+| 老闆・hint | 每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶上場；蓋滿七格，換一張好盤。 | 本規格新寫 | `daily.hint` |
+| （畫面字）・take | 收下 | 本規格新寫 | `daily.take` |
+| （畫面字）・taken | 收進唱片櫃了 | 本規格新寫 | `daily.taken` |
+| （畫面字）・tomorrow | 明天再來，我再幫你留一張。 | 本規格新寫 | `daily.tomorrow` |
+| （畫面字）・none | 今天店裡沒有你還沒聽過的了。 | 本規格新寫 | `daily.none` |
+| （畫面字）・stamps | 集點卡 {n}／7 | 本規格新寫 | `daily.stamps` |
+| （畫面字）・firstStamp | 見面禮 | 本規格新寫 | `daily.firstStamp` |
+| （畫面字）・claim | 換獎勵 | 本規格新寫 | `daily.claim` |
+| （畫面字）・claimTitle | 挑一張帶回家 | 本規格新寫 | `daily.claimTitle` |
+| （畫面字）・claimed | 收進唱片櫃，下一趟可以帶上場。 | 本規格新寫 | `daily.claimed` |
+| （畫面字）・titleChip | 今日推薦：《{album}》 | 本規格新寫 | `daily.titleChip` |
 
 ## 無限試煉・結算與標題的紀錄
 
@@ -1266,89 +1304,89 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Radiohead《OK Computer》 | 「九七年的焦慮，到現在還沒退流行。」 | 本規格新寫 | `pitch#radiohead-ok-computer` |
+| Radiohead《OK Computer》 | 「九七年的焦慮，到現在還沒退流行。」 | 本規格新寫 | `pitch#radiohead|ok computer` |
 
 ## 推薦語・王牌（流亡）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Barney Wilen《Zodiac》 | 「六六年在巴黎錄的。全台灣大概沒幾張。」 | 本規格新寫 | `pitch#barney-wilen-zodiac` |
+| Barney Wilen《Zodiac》 | 「六六年在巴黎錄的。全台灣大概沒幾張。」 | 本規格新寫 | `pitch#barney wilen|zodiac` |
 
 ## 推薦語・店裡的箱子（FEATURE）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Can《Ege Bamyasi》 | 「鼓手一個人就是一台機器。聽完你會想去學打鼓。」 | 本規格新寫 | `pitch#can-ege-bamyasi` |
-| Einstürzende Neubauten《Halber Mensch》 | 「他們的樂器有一半是工地撿來的。」 | 本規格新寫 | `pitch#einsturzende-neubauten-halber-mensch` |
-| Hermeto Pascoal《Zabumbê-bum-á》 | 「巴西的老頭，連水壺都拿來吹。這張我不太借人。」 | 本規格新寫 | `pitch#hermeto-pascoal-zabumbe-bum-a` |
-| 富樫雅彦《We Now Create - Music for Strings, Winds and Percussions》 | 「那個年代的日本，有人在錄這種東西。我手上就這一張。」 | 本規格新寫 | `pitch#富樫雅彦-we-now-create-music-for-strings-winds-and-percussions` |
+| Can《Ege Bamyasi》 | 「鼓手一個人就是一台機器。聽完你會想去學打鼓。」 | 本規格新寫 | `pitch#can|ege bamyasi` |
+| Einstürzende Neubauten《Halber Mensch》 | 「他們的樂器有一半是工地撿來的。」 | 本規格新寫 | `pitch#einstürzende neubauten|halber mensch` |
+| Hermeto Pascoal《Zabumbê-bum-á》 | 「巴西的老頭，連水壺都拿來吹。這張我不太借人。」 | 本規格新寫 | `pitch#hermeto pascoal|zabumbê-bum-á` |
+| 富樫雅彦《We Now Create - Music for Strings, Winds and Percussions》 | 「那個年代的日本，有人在錄這種東西。我手上就這一張。」 | 本規格新寫 | `pitch#富樫雅彦|we now create - music for strings, winds and percussions` |
 
 ## 推薦語・老闆四張・殿堂
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Beverly Glenn-Copeland《...Keyboard Fantasies...》 | 「八六年他自己出的卡帶。快三十年後，京都一家唱片行寫信來問還有沒有貨。」 | 本規格新寫 | `pitch#beverly-glenn-copeland-keyboard-fantasies` |
-| Daft Punk《Random Access Memories》 | 「兩個機器人這次找真的樂手進錄音室。〈Get Lucky〉那年走到哪都聽得到。」 | 本規格新寫 | `pitch#daft-punk-random-access-memories` |
-| Miles Davis《Cookin' with the Miles Davis Quintet》 | 「第一代五重奏：Coltrane、Red Garland、Paul Chambers、Philly Joe Jones。第一首〈My Funny Valentine〉，小號輕得像在耳邊說話。」 | 本規格新寫 | `pitch#miles-davis-cookin-with-the-miles-davis-quintet` |
-| Brian Eno《Ambient 1: Music for Airports》 | 「他在機場等飛機時想到的。幾段長短不一的錄音帶一直繞，越聽越安靜。」 | 本規格新寫 | `pitch#brian-eno-ambient-1-music-for-airports` |
+| Beverly Glenn-Copeland《...Keyboard Fantasies...》 | 「八六年他自己出的卡帶。快三十年後，京都一家唱片行寫信來問還有沒有貨。」 | 本規格新寫 | `pitch#beverly glenn-copeland|...keyboard fantasies...` |
+| Daft Punk《Random Access Memories》 | 「兩個機器人這次找真的樂手進錄音室。〈Get Lucky〉那年走到哪都聽得到。」 | 本規格新寫 | `pitch#daft punk|random access memories` |
+| Miles Davis《Cookin' with the Miles Davis Quintet》 | 「第一代五重奏：Coltrane、Red Garland、Paul Chambers、Philly Joe Jones。第一首〈My Funny Valentine〉，小號輕得像在耳邊說話。」 | 本規格新寫 | `pitch#miles davis|cookin' with the miles davis quintet` |
+| Brian Eno《Ambient 1: Music for Airports》 | 「他在機場等飛機時想到的。幾段長短不一的錄音帶一直繞，越聽越安靜。」 | 本規格新寫 | `pitch#brian eno|ambient 1: music for airports` |
 
 ## 推薦語・老闆四張・流亡
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Charles Brackeen《Rhythm X》 | 「Ornette 的老班底幾乎都來了，主角卻是一個沒什麼人知道的薩克斯風手。」 | 本規格新寫 | `pitch#charles-brackeen-rhythm-x` |
-| 黃小楨《賞味期限》 | 「九〇年代末的台北，有人這樣唱過。」 | 本規格新寫 | `pitch#黃小楨-賞味期限` |
-| 傷心欲絕《我愛您》 | 「錄音很粗，心很細。」 | 本規格新寫 | `pitch#傷心欲絕-我愛您` |
+| Charles Brackeen《Rhythm X》 | 「Ornette 的老班底幾乎都來了，主角卻是一個沒什麼人知道的薩克斯風手。」 | 本規格新寫 | `pitch#charles brackeen|rhythm x` |
+| 黃小楨《賞味期限》 | 「九〇年代末的台北，有人這樣唱過。」 | 本規格新寫 | `pitch#黃小楨|賞味期限` |
+| 傷心欲絕《我愛您》 | 「錄音很粗，心很細。」 | 本規格新寫 | `pitch#傷心欲絕|我愛您` |
 
 ## 推薦語・老闆四張・異端
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Melt-Banana《Speak Squeak Creak》 | 「東京的地下室，三分鐘裡塞了十首歌。」 | 本規格新寫 | `pitch#melt-banana-speak-squeak-creak` |
-| Pharoah Sanders《Tauhid》 | 「前面很安靜。後面不要被嚇到。」 | 本規格新寫 | `pitch#pharoah-sanders-tauhid` |
-| Magma《Mëkanïk Dëstruktïw Kömmandöh》 | 「法國的鼓手自創了一種語言，整張都用它來唱。」 | 本規格新寫 | `pitch#magma-mekanik-destruktiw-kommandoh` |
+| Melt-Banana《Speak Squeak Creak》 | 「東京的地下室，三分鐘裡塞了十首歌。」 | 本規格新寫 | `pitch#melt-banana|speak squeak creak` |
+| Pharoah Sanders《Tauhid》 | 「前面很安靜。後面不要被嚇到。」 | 本規格新寫 | `pitch#pharoah sanders|tauhid` |
+| Magma《Mëkanïk Dëstruktïw Kömmandöh》 | 「法國的鼓手自創了一種語言，整張都用它來唱。」 | 本規格新寫 | `pitch#magma|mëkanïk dëstruktïw kömmandöh` |
 
 ## 推薦語・舊特價箱（2026-11-16 換下，只剩舊存檔）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Blur《The Great Escape》 | 「那年單曲贏了 Oasis，專輯輸了。」 | 本規格新寫 | `pitch#blur-the-great-escape` |
-| The Velvet Underground《Squeeze》 | 「掛著 Velvet 的名字，裡面一個創團的人都沒有。」 | 本規格新寫 | `pitch#the-velvet-underground-squeeze` |
-| Stevie Wonder《Eivets Rednow》 | 「名字倒過來寫就是他。那年他才十八歲。」 | 本規格新寫 | `pitch#stevie-wonder-eivets-rednow` |
-| The Kinks《Preservation Act 1》 | 「搖滾歌劇的第一幕。第二幕更長。」 | 本規格新寫 | `pitch#the-kinks-preservation-act-1` |
-| Metallica《Reload》 | 「上一張的剩菜，隔年再端出來一次。」 | 本規格新寫 | `pitch#metallica-reload` |
-| Weezer《Van Weezer》 | 「學八〇年代的長髮金屬，學得很認真。」 | 本規格新寫 | `pitch#weezer-van-weezer` |
-| Ramones《Halfway to Sanity》 | 「第十張了，還是那三個和弦。」 | 本規格新寫 | `pitch#ramones-halfway-to-sanity` |
+| Blur《The Great Escape》 | 「那年單曲贏了 Oasis，專輯輸了。」 | 本規格新寫 | `pitch#blur|the great escape` |
+| The Velvet Underground《Squeeze》 | 「掛著 Velvet 的名字，裡面一個創團的人都沒有。」 | 本規格新寫 | `pitch#the velvet underground|squeeze` |
+| Stevie Wonder《Eivets Rednow》 | 「名字倒過來寫就是他。那年他才十八歲。」 | 本規格新寫 | `pitch#stevie wonder|eivets rednow` |
+| The Kinks《Preservation Act 1》 | 「搖滾歌劇的第一幕。第二幕更長。」 | 本規格新寫 | `pitch#the kinks|preservation act 1` |
+| Metallica《Reload》 | 「上一張的剩菜，隔年再端出來一次。」 | 本規格新寫 | `pitch#metallica|reload` |
+| Weezer《Van Weezer》 | 「學八〇年代的長髮金屬，學得很認真。」 | 本規格新寫 | `pitch#weezer|van weezer` |
+| Ramones《Halfway to Sanity》 | 「第十張了，還是那三個和弦。」 | 本規格新寫 | `pitch#ramones|halfway to sanity` |
 
 ## 推薦語・特價箱
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Oasis《Dig Out Your Soul》 | 「他們最後一張。兄弟倆隔年就拆夥了。」 | 本規格新寫 | `pitch#oasis-dig-out-your-soul` |
-| David Bowie《Never Let Me Down》 | 「連鮑伊都有這種時候。」 | 本規格新寫 | `pitch#david-bowie-never-let-me-down` |
-| Lady Gaga《ARTPOP》 | 「發片前說要掀起一場藝術革命。賣得比上一張少了一大截。」 | 本規格新寫 | `pitch#lady-gaga-artpop` |
-| Arcade Fire《Everything Now》 | 「整張在嘲笑消費主義，結果被樂評嘲笑得更兇。」 | 本規格新寫 | `pitch#arcade-fire-everything-now` |
-| The Strokes《Angles》 | 「主唱很少進錄音室，人聲錄好再用 email 寄給團員。」 | 本規格新寫 | `pitch#the-strokes-angles` |
-| Queensrÿche《Take Cover》 | 「一整張都在唱別人的歌。」 | 本規格新寫 | `pitch#queensryche-take-cover` |
-| Megadeth《Risk》 | 「鞭擊金屬改走流行搖滾，專輯名就叫《冒險》。」 | 本規格新寫 | `pitch#megadeth-risk` |
-| KISS《Hot in the Shade》 | 「卸了妝的那幾年。一張塞了十五首。」 | 本規格新寫 | `pitch#kiss-hot-in-the-shade` |
-| Limp Bizkit《Gold Cobra》 | 「吉他手回團，隔了八年的新專輯。聽起來還停在 2000 年。」 | 本規格新寫 | `pitch#limp-bizkit-gold-cobra` |
-| Eminem《Revival》 | 「被罵得太兇，他隔年突襲發了一張專輯罵回去。」 | 本規格新寫 | `pitch#eminem-revival` |
-| Daft Punk《Human After All》 | 「據說六個禮拜就錄完。這些歌到了巡演現場才真正活過來。」 | 本規格新寫 | `pitch#daft-punk-human-after-all` |
-| The Weeknd《Kiss Land》 | 「三張混音帶之後的第一張正式專輯。他說靈感來自恐怖片。」 | 本規格新寫 | `pitch#the-weeknd-kiss-land` |
+| Oasis《Dig Out Your Soul》 | 「他們最後一張。兄弟倆隔年就拆夥了。」 | 本規格新寫 | `pitch#oasis|dig out your soul` |
+| David Bowie《Never Let Me Down》 | 「連鮑伊都有這種時候。」 | 本規格新寫 | `pitch#david bowie|never let me down` |
+| Lady Gaga《ARTPOP》 | 「發片前說要掀起一場藝術革命。賣得比上一張少了一大截。」 | 本規格新寫 | `pitch#lady gaga|artpop` |
+| Arcade Fire《Everything Now》 | 「整張在嘲笑消費主義，結果被樂評嘲笑得更兇。」 | 本規格新寫 | `pitch#arcade fire|everything now` |
+| The Strokes《Angles》 | 「主唱很少進錄音室，人聲錄好再用 email 寄給團員。」 | 本規格新寫 | `pitch#the strokes|angles` |
+| Queensrÿche《Take Cover》 | 「一整張都在唱別人的歌。」 | 本規格新寫 | `pitch#queensrÿche|take cover` |
+| Megadeth《Risk》 | 「鞭擊金屬改走流行搖滾，專輯名就叫《冒險》。」 | 本規格新寫 | `pitch#megadeth|risk` |
+| KISS《Hot in the Shade》 | 「卸了妝的那幾年。一張塞了十五首。」 | 本規格新寫 | `pitch#kiss|hot in the shade` |
+| Limp Bizkit《Gold Cobra》 | 「吉他手回團，隔了八年的新專輯。聽起來還停在 2000 年。」 | 本規格新寫 | `pitch#limp bizkit|gold cobra` |
+| Eminem《Revival》 | 「被罵得太兇，他隔年突襲發了一張專輯罵回去。」 | 本規格新寫 | `pitch#eminem|revival` |
+| Daft Punk《Human After All》 | 「據說六個禮拜就錄完。這些歌到了巡演現場才真正活過來。」 | 本規格新寫 | `pitch#daft punk|human after all` |
+| The Weeknd《Kiss Land》 | 「三張混音帶之後的第一張正式專輯。他說靈感來自恐怖片。」 | 本規格新寫 | `pitch#the weeknd|kiss land` |
 
 ## 推薦語・客人的唱片（二手店老闆）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Barney Wilen《Moshi》 | 「七〇年他跟著拍片的人去了非洲，回來就做了這張。」 | 本規格新寫 | `pitch#barney-wilen-moshi` |
-| Tony Scott & The Indonesian All Stars《Djanger Bali》 | 「印尼的樂手配一支美國單簧管。這張我找了好幾年。」 | 本規格新寫 | `pitch#tony-scott-the-indonesian-all-stars-djanger-bali` |
+| Barney Wilen《Moshi》 | 「七〇年他跟著拍片的人去了非洲，回來就做了這張。」 | 本規格新寫 | `pitch#barney wilen|moshi` |
+| Tony Scott & The Indonesian All Stars《Djanger Bali》 | 「印尼的樂手配一支美國單簧管。這張我找了好幾年。」 | 本規格新寫 | `pitch#tony scott & the indonesian all stars|djanger bali` |
 
 ## 推薦語・客人的唱片（音響發燒友）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| John Zorn《Cobra》 | 「照一套遊戲規則即興出來的。跟你們今晚在做的事，差不多。」 | 本規格新寫 | `pitch#john-zorn-cobra` |
+| John Zorn《Cobra》 | 「照一套遊戲規則即興出來的。跟你們今晚在做的事，差不多。」 | 本規格新寫 | `pitch#john zorn|cobra` |
 
 ## 原句、拍板、店主（已逐字比對，列出供對照）
 
@@ -1464,9 +1502,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 店主 | 6 提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。 | `rules.lines[5]` |
 | 原句 | 跳過教學 | `tutorial.ui.skipTut` |
 | 店主 | 打完再翻。 | `shopLines.binBusy` |
-| 原句 | 「這張放出來客人會跑光……我喜歡。」 | `pitch#swans-filth` |
-| 原句 | 「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」 | `pitch#david-bowie-low` |
-| 原句 | 「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」 | `pitch#vashti-bunyan-just-another-diamond-day` |
-| 原句 | 「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」 | `pitch#scott-walker-tilt` |
-| 原句 | 「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」 | `pitch#bark-psychosis-hex` |
-| 原句 | 「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」 | `pitch#the-velvet-underground-white-light-white-heat` |
+| 原句 | 「這張放出來客人會跑光……我喜歡。」 | `pitch#swans|filth` |
+| 原句 | 「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」 | `pitch#david bowie|low` |
+| 原句 | 「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」 | `pitch#vashti bunyan|just another diamond day` |
+| 原句 | 「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」 | `pitch#scott walker|tilt` |
+| 原句 | 「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」 | `pitch#bark psychosis|hex` |
+| 原句 | 「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」 | `pitch#the velvet underground|white light-white heat` |

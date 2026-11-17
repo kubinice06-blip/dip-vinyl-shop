@@ -1582,7 +1582,7 @@
     var c0 = (L.cameras || {}).full; if (c0) { cam.y = c0.y; cam.h = c0.h; }
     var cardOf = function (id) { return (opts.cards && opts.cards[id]) || (opts.extraCards && opts.extraCards[id]) || null; };
     function spd() { var s = typeof opts.speed === 'function' ? opts.speed() : (opts.speed || 1); return s > 0 ? s : 1; }
-    var pool = (L.coverPool && L.coverPool.length) ? L.coverPool.filter(function (id) { return cardOf(id); }) : Object.keys(opts.cards || {}).filter(function (id) { var c = cardOf(id); return c && (c.localCover || c.coverUrl); }).sort();
+    var pool = (L.coverPool && L.coverPool.length) ? L.coverPool.filter(function (id) { return cardOf(id); }) : Object.keys(opts.cards || {}).filter(function (id) { var c = cardOf(id); return c && !c.pool && (c.localCover || c.coverUrl); }).sort();   // 只取核心卡（第 B 波：精選新卡的封面晚到，混進來牆上會變、不可重現）
 
     // ---------------- 封面（裝置解析度，原圖平滑縮小；不用 CORS：畫布只畫不讀）
     var imgs = {}, cache = null, coverQ = 0;
