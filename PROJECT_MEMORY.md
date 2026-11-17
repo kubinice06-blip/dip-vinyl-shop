@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s9：sd-017、sd-018 上線（58 張，留置 2）
+
+- **結果**：sd-017 上線 30（無留置）；sd-018 上線 28（留置花生隊長《Oh My God》、美空ひばり《ひばりの渡り鳥だよ》，KV 保留舊稿）。開頭照新版用鉤子（材料限故事／概念／聲音／地位），58 張前四字互異。
+- **主線補查**：研究稿 story／sound 標 thin／none 的卡逐張補，sd-017 補 17 張、sd-018 補 19 張（含研究層漏查的金森幸介整張）；Discogs 網頁 403 改用 api.discogs.com。sd-018 派工特注放錯組、誤述糯米糰，已記入 rulings 並改為只照卡單範圍列名。
+- **審稿**：sd-017 改 17 處、sd-018 改 9 處（鉤子去封號／去錄音日數、單一出處去「常被」、刪再版與選輯、第二句補盤名、去曲序），逐條在 `rulings.md`。WebSearch 工作階段約 160 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-017.json,kv-before-sd-018.json,review-sd-017.json,review-sd-018.json}`、`desc-tools/batches/{cards,research,output}/sd-017*、sd-018*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 116 鍵逐字回讀 116/116 一致；`front-check` 前台 58/58 新稿、CURATED 0；QA 無軌序／曲長／盤號（「16 軌」為一人多重錄音故事核心，「国」「会」為專名）。
+
 ### 2026-11-17｜dip-vinyl-shop｜sd-hook-1：sd-001～007 已上線一般卡補開頭鉤子（209 張）
 
 - **店主**：「一樣要開頭給 hook 的方式」。sd-001～007 重寫稿上線時沒有鉤子，這批補上：第一句鉤子（材料限故事／概念／聲音／地位）、第二句講這是什麼，正文沿用現行稿，不新增研究稿以外的事實。
