@@ -2356,6 +2356,54 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
 
+## sd-096（30 張，其餘：White Heaven 2、Willie Colón、Wimp Factor 14、Wizz Jones、Fuchs／Schneider／Huber、worriedaboutsatan、Wun Two 3、Wynton Kelly、Yagya 2、Yaron Herman 2、Yndling、Yoshimi Ueno、Yoshino Yanagihara、YOUTH 83、Namysłowski、Zen Baboon、Zero Cult、Zia、Opus、Zion Train 2、Zodiac、Zoviet France 3）— s51
+
+- 研究：3 支 Sonnet，WebSearch 15＋15＋12＝42 次；none 只有 Wun Two《Cashmere Dreams》story、YOUTH 83 story。White Heaven 日文來源搜尋只回英文結果，改用 Black Editions、Magnet、Psychedelic Baby 石原洋訪談。
+- 主線補查：無新增（研究層 notes 必查清單逐項齊；Wun Two、YOUTH 83 只有 Bandcamp 文案）。
+- 事實裁定：White Heaven《Next to Nothing》不寫黑膠年份與張數（1994 CD EP／250 張黑膠／1996 黑膠說法互斥）；Wizz Jones 錄音地點只寫布里斯托（教堂禮堂與 Bristol Troubadour 兩說）、McTell 樂器寫簧風琴；Wynton Kelly 不寫 Down Beat 分數與日本再發改題；Yagya 的 Small Plastic Animals 是他自設廠牌（舊稿「荷蘭廠牌」錯）；Yoshino Yanagihara、Yoshimi Ueno 用羅馬字，不寫私壓編號；Namysłowski 不寫 Szukalski、Warner Bros.；Zia 是伊朗歌手 Zia Atabay，不斷言本盤是選集；Opus 曲風是抒情／迪斯可／schlager 流行；Zion Train 廠牌 Universal Egg（非 Wiiija），《Great Sporting Moments in Dub!》實為 Tassilli Players 首張；Zoviet France《Assault and Mirage》不寫日期。
+- **薄寫上線不留置**（delayde 前例）：Wun Two 3 張、Momente、YOUTH 83、Zen Baboon、Zero Cult、Zia、Yoshimi Ueno。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-096.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| White Heaven 兩張 | 「常被視為」→「被視為」 | 再發行方、店家文案各單一出處 |
+| Yndling | 第二句補《盤名》；刪 EP 分段發行、「低語撐住安靜段落」、「奧斯陸」壓回 239 | QA 無《》；分段發行屬版本雜項 |
+| Namysłowski | 「這張同名專輯」→「同名專輯《Zbigniew Namysłowski》」 | QA 無《》 |
+| Zion Train《Great Sporting Moments in Dub!》 | 第二句補《盤名》；刪「曲與曲以疊接和淡入淡出連成一氣」「西洋棋」壓回 238 | QA 無《》 |
+
+其餘逐張四問無改：鉤子都對過研究稿（雙吉他首度並肩、台下十幾人、Lavoe 不唱英文、塑膠桶當鼓、McTell 帶簧風琴、無鋼琴吉他的三條線、雙人組剩一人、Baker's Dozen 第三輯、蕈類命名、航海、十九歲首次領銜、立原道造的詩、走出舒適圈、Y＝卡巴拉火花、寫給自己的信、粗糙一點暗一點、大槌町同好會、Berklee 長笛手、個人頁一句話、活動二十年加管絃樂團、多笑一點、熟悉形式不尋常合成、1978 世界盃資格賽、Modo 分出、Beamon 與巴西 1970、無一件現場樂器、拉脫維亞遺產、會說話的動物大會、延遲到認不出、擱兩年的虛構音樂）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-096.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 寫作層第 2 組暫存檔與第 1 組撞名，曾把 sd-097-out-1 讀出原樣寫回；主線核對四個輸出檔各 15 張、key 與卡單一致，內容無損。
+
+## sd-097（30 張，其餘：Zoviet France、Étienne Daho、Önder Focan、Ξαρχάκος、Аясын Салхи、คาราวาน、พุ่มพวง ดวงจันทร์、စိုင်းထီးဆိုင်、လေးဖြူ 2、Aidan Baker、Alteria Percepsyne、Andrew Cox、Axs、BOYNEXTDOOR、Bukka White、Bulldoze、Charles Earland、Charli xcx、Charnett Moffett、Christian Scott、Corporate、cv313 2、Das Damen、Djorvin Clain、Dub Ghecko、Fireworks、Freddie Jackson、Gare du Nord）— s51
+
+- 研究：3 支 Sonnet，WebSearch 11＋11＋13＝35 次；none 有 Önder Focan sound、Djorvin Clain story、Dub Ghecko sound、Freddie Jackson sound。母語來源：法文（Daho）、希臘文、蒙古文維基（Аясын Салхи）、泰文 The Standard（Caravan）、韓文 TF／OSEN（BOYNEXTDOOR）、荷蘭文（Gare du Nord）。
+- **主線補查**（WebSearch 4 次＋Discogs API＋curl）：Önder Focan（土耳其文 substack 只列年度榜名，無新料）；Djorvin Clain（Discogs API：300 張手工編號 CD、本人寫 liner notes；Silent Season Bandcamp 機器人頁擋下，無文案）；Dub Ghecko（Discogs API：布里斯托 2 King Studio 製作）；Freddie Jackson（維基：唯一單曲〈Do You Wanna〉、R&B 專輯榜 81，無聲音描述）→ 四張皆薄寫。
+- 事實裁定：Lay Phyu《Power 54》故事核心照 TIME／NPR（大學路 54 號、過審後回收、數字拿掉）；Focan 不寫布魯克林、不斷言全為自作；Caravan 年份 1983／1984 兩說；Pumpuang 不寫八歲登台與改藝名；Sai Htee Saing 不寫與 The Wild Ones 確切年份；Ξαρχάκος 不寫 bouzouki 與單聲道首壓；Moffett 不寫「首張」（實為 Blue Note 第二張）；Bulldoze 是紐澤西 Irvington；Bukka White 1968 錄音、有樂隊伴奏；Earland 不寫「宇宙主題」；Charli xcx 不寫「只在巴黎錄成」；BOYNEXTDOOR、Charli xcx 2026 新作身分已確認；Christian Scott 年份寫「2000 年代初」；Das Damen 不寫 Wharton Tiers。
+- **薄寫上線不留置**：Önder Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson、Ξαρχάκος、Аясын Салхи、Alteria Percepsyne、Axs、cv313《depths of perception》。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 19 處，改動檔 `review-sd-097.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Zoviet France《Look Into Me》 | 鉤子「是 Zoviet France 一貫的做法」→「據說是……」 | 研究稿為「據稱」的團員做法 |
+| Önder Focan | 「常被稱為第一位」→「被稱為」 | 英文維基單一出處 |
+| Charles Earland | 鉤子「這時把重心移到了合成器上」→「已把……」 | 轉向合成器始於前作《Leaving This Planet》 |
+| Charli xcx | 「常被視為」→「被視為」 | Rolling Stone 單一評語，Independent 負評 |
+| Bukka White、Moffett、cv313《Analogue Oceans》、Das Damen、Dub Ghecko、Fireworks、Gare du Nord | 第二段補《盤名》；隨之刪曲目句、水下質地句、成軍年與「吉他響亮」、roots 句、First Call 後續、「簽在 Blue Note」壓回 240 內 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（替 Stinky Toys 辦演唱會、Blue Note 土耳其第一人、Gatsos 作詞三位歌手、蒙古金屬先驅、伊森山林五年、鄉下歌手、國營電台禁播流行樂、硬搖滾名曲換緬文詞、54 是地址、夏至夜三小時、Lynch／村上／Silent Hill、改裝 JEN 合成器、極地曲名、練習室郵遞區號、樂隊圍著老將、beatdown 之名、The Mighty Burner、自嘲名氣、全家進錄音室、自創廠牌、沒有業界人脈、海洋起落、馬里亞納海溝、Thurston Moore 小廠牌、原始森林廠牌、Henry & Louis、補 2nd Chapter of Acts 空位、換小廠牌重新出發、主唱懷孕）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-097.json`；30 張 30 鍵（泰文、緬文、希臘文、蒙古文盤非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處（一張不在任何 manifest）。
+- 本工作階段 WebSearch 合計約 81 次（研究層 sd-096 42、sd-097 35，主線 4）。
 ## sd-092（30 張，其餘：The II Generation、Jazz Crusaders、King of Luxembourg、The Lines、Loving Sisters、Meditations、Microphones、Mommyheads、Mountain Goats 3、Mountain Ramblers、Oddfellows、Orchids 2、Penguins、Pentagon、Players 2、Raymond Brake、Rootsman vs Muslimgauze、Royals、Sallyangie、Sea and Cake、Secret Stars、Sensational Nightingales、Sensational Williams Brothers、THE SQUARE 3）— s49
 
 - 研究：3 支 Sonnet，WebSearch 16＋14＋9＝39 次；無 none。story／sound thin 多集中在 Mountain Ramblers、Oddfellows、Pentagon、Players《Space Travel》、Raymond Brake、Rootsman、Royals、Secret Stars、兩支福音團。

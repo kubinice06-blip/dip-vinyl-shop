@@ -167,7 +167,7 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-093 | 其餘（THE SQUARE … Third Quadrant） | 30 | s49 | ✅ 上線 30（前台 30；無留置；主線補查 Third Quadrant（西北英格蘭，非格拉斯哥）；Tourists、Supreme Angels 等薄寫；CURATED 0） |
 | sd-094 | 其餘（This Heat … Uncle Charlie Osborne） | 30 | s50 | ✅ 上線 30（前台 30；無留置；主線補查 Todd Terry、Ultima Thule、Titiek Puspa 等 8 張（Discogs API）；Titiek Puspa、Tånk 等 7 張薄寫；CURATED 0） |
 | sd-095 | 其餘（Urs Voerkel, Peter K. Frey, Paul Lovens … Wha-ha-ha） | 30 | s50 | ✅ 上線 30（前台 30；無留置；主線補查 Wha-ha-ha、Vitamiin、Ponomarev 等 9 張（Discogs API）；Trường Sơn 4 等 5 張薄寫；CURATED 0） |
-| sd-096 | 其餘（White Heaven … Zoviet France） | 30 | | |
-| sd-097 | 其餘（Zoviet France … Gare du Nord） | 30 | | |
+| sd-096 | 其餘（White Heaven … Zoviet France） | 30 | s51 | ✅ 上線 30（前台 30；無留置；Wun Two 3、YOUTH 83、Zia 等薄寫；CURATED 0） |
+| sd-097 | 其餘（Zoviet France … Gare du Nord） | 30 | s51 | ✅ 上線 30（前台 30；無留置；主線補查 Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson（Discogs API）皆薄寫；CURATED 0） |
 | sd-098 | 其餘（Geoff Mann … Raw Deal） | 30 | s52 | ✅ 上線 30（前台 30；無留置；Mach One、Aurex、King General 等薄寫；CURATED 0） |
 | sd-099 | 其餘（Red Summer … Smasher） | 23 | s52 | ✅ 上線 23（前台 23；無留置；主線補查 Zaw Win Htut；Morning Stars、Smasher 等薄寫；CURATED 0） |
