@@ -44,10 +44,10 @@
 | sd-044 | 經典度≥4（Nieuw Ensemble … Paul Chambers） | 30 | | |
 | sd-045 | 經典度≥4（Paul Jackson … Quartetto Italiano） | 30 | s25 | ✅ 上線 30（前台 30；無留置） |
 | sd-046 | 經典度≥4（Quicksand … Robb Kunkel） | 30 | s25 | ✅ 上線 30（前台 30；無留置） |
-| sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | | |
-| sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | | |
-| sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | | |
-| sd-050 | 經典度≥4（The Black Skirts … The Mercy's） | 30 | | |
+| sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | s26 | ✅ 上線 29（前台 29；藤井貞泰《Prelude to a Kiss》留置） |
+| sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | s26 | ✅ 上線 30（前台 30；無留置） |
+| sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | s27 | ✅ 上線 30（前台 30；無留置；主線補查 13 張；CURATED 0） |
+| sd-050 | 經典度≥4（The Black Skirts … The Mercy's） | 30 | s27 | ✅ 上線 30（前台 30；無留置；主線補查 12 張；CURATED 0） |
 | sd-051 | 經典度≥4（The Monochrome Set … Titus Groan） | 30 | | |
 | sd-052 | 經典度≥4（Tod Dockstader … Virgo Four） | 30 | | |
 | sd-053 | 經典度≥4（Vision of Disorder … Zbigniew Preisner） | 30 | | |
@@ -65,22 +65,22 @@
 | sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | | |
 | sd-066 | 其餘（Elvin Jones … Experimental Audio Research） | 30 | | |
 | sd-067 | 其餘（Experimental Audio Research … Freeform） | 30 | | |
-| sd-068 | 其餘（FRICTION … God Bullies） | 30 | | |
-| sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | | |
-| sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | | |
-| sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
-| sd-072 | 其餘（Interferon … James Brown） | 30 | | |
-| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | | |
-| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | | |
-| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | | |
+| sd-068 | 其餘（FRICTION … God Bullies） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 Gene Harris 2、Russell、Mellé；FRICTION、George Young 等薄寫；CURATED 0） |
+| sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
+| sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | s38 | ✅ 上線 30（無留置） |
+| sd-071 | 其餘（Horace Parlan … Integrity） | 30 | s38 | ✅ 上線 30（無留置） |
+| sd-072 | 其餘（Interferon … James Brown） | 30 | s39 | ✅ 上線 30 |
+| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | s39 | ✅ 上線 30 |
+| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | s40 | ✅ 上線 30 |
+| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | s40 | ✅ 上線 30 |
 | sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |
 | sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | | |
 | sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
 | sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
 | sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
 | sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
-| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | | |
-| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | | |
+| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | s44 | ✅ 上線 30 |
+| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | s44 | ✅ 上線 30 |
 | sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | | |
 | sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | | |
 | sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |

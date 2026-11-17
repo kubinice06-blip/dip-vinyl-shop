@@ -182,6 +182,7 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-005.json`；27 張 54 鍵 Success；回讀 **54/54 一致**；`front-check` **前台 27/27 新稿**。
 - onboarding manifest 同步 27 處。
+
 ## sd-007（30 張，CJK：深町純 4、淺堤 2、清水靖晃 3、渡辺貞夫 6、滅火器 5、潘麗麗 2、濁水溪公社 3、瀬川洋、無妄合作社 2、熊寶貝樂團 2）— s4
 
 - 研究：3 支 Sonnet，WebSearch 23＋23＋19＝65 次。AllMusic、關鍵評論網、Jazz Music Archives 多 403；日本爵士盤多只拿到日文維基陣容與賣家文案，渡辺貞夫五張與深町純 sound 偏薄。
@@ -971,6 +972,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-024.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 91 次（研究層 sd-023 35、sd-024 45，主線 11）。
+
 ## sd-025（30 張，經典度≥4：Androids of Mu、Badalamenti、Thorvaldsdottir、Braxton、Anthony Rother、Antis 2、Duhamel、Karas、Troilo、Aníbal Velásquez、Archon Satani、Arditti 2、Aretha、Argo、Armia、Blakey 6、Schnabel 2、Arzachel、Attrition、Azitis、Banda do Casaco、Bappi Lahiri）— s15
 
 - 研究：3 支 Sonnet，WebSearch 13＋11＋12＝36 次；thin 17 張。
@@ -1126,6 +1128,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-032.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 78 次（研究層 sd-031 32、sd-032 36，主線 10，含 sd-hold-5 的 4 次）。
+
 ## sd-035（30 張，經典度≥4：Gunnar Graps、Hampel、Csík、Hallucinogen、Bluiett、Mobley、Koller、Harold Budd 2、McKinney、Harvest Flight、HAT、Hayedeh、Hazard、Heavenly、Sarmanto、Henry Franklin、Lowther、Henry's Dress、Karajan 2、Mwandishi、Stop Over、High Rise 3、Shajarian／Ghamsari、Hood、Horace Andy、Horace Parlan）— s20
 
 - 研究：3 支 Sonnet，WebSearch 17＋15＋12＝44 次；無 none，thin 18 張次（Csík story／sound 原為 none）。
@@ -1173,6 +1176,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-036.json`；30 張 30 鍵（原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 101 次（研究層 sd-035 44、sd-036 43，主線 14）。
+
 ## sd-033（30 張，經典度≥4：Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Wakefield／Country Cooking、Bayle、de Roubaix、Cockerham／Jarrell／Jenkins 2、Hubbard 3、Hubbard & Shaw、Freddie Joachim、Freddie Redd、Freddie Roach、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari）— s19
 
 - 研究：3 支 Sonnet，WebSearch 20＋14＋19＝53 次；無 none。前台預查 60 張（sd-033／034）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
@@ -1412,3 +1416,942 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-039.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 100 次（研究層 sd-039 46、sd-040 32，主線約 22）。
+
+## sd-049（30 張，經典度≥4：Steps 2、Sterling Void、Steve Gadd、Steve Poindexter、Steve Spacek、sToa、Stompin' Ground、Supertouch、Sussan Deyhim、Sutekh、Svartsinn、Sven Grünberg 2、Sweeps、Sweet Charity、Sébastien Tellier、Sérgio Godinho、Taj Mahal Travellers、宮坂高史、Tantra、Tar、Terra Rosa、Terrence Parker、Tetrack、Th' Faith Healers、The Astronauts、The B-52's、Benny Green Trio、The Black Skirts）— s27
+
+- 研究：3 支 Sonnet，WebSearch 14＋22＋14＝50 次；none 只有宮坂高史《Soul Tomato》sound。
+- **主線補查**（WebSearch 約 22 次＋WebFetch，facts 標【主線補查】）：Steps《Smokin' In The Pit》（Milkowski 傳記轉述：1979/12/15–16 Pit Inn 兩晚、改名 Steps Ahead 緣由）→ story ok；Steps《Step By Step》（Pit Inn 前後進錄音室，仍薄）；Gadd（Gadd Gang 官方頁「1984 年一張冷門的日本錄音」，仍薄）；Poindexter、sToa、宮坂高史再搜無新料，薄寫；Terrence Parker（AllMusic 錄音地、Harold Heath 評的鋼琴 house＋broken beat＋器樂 hip hop）→ sound ok；Benny Green（Blue Note 三重奏三部曲第二張，仍薄）；Black Skirts《Don't You Worry Baby》（Newsis 2011 訪談：老教堂錄音室與 1920 年代麥克風、地下室錄音、航海日誌標題、原聲清淡、歌詞為重）；B-52's（1978 年起的現場曲、Compass Point、Rhett Davies）→ story ok；Tar（Albini 於 Chicago Recording Company 錄、AmRep 發行）；Terra Rosa（Mandrake Root、唱片行「奠基作」說法、1989 King 重錄）；Faith Healers（Melody Maker 專文，仍薄）；Grünberg《OM》（愛沙尼亞音樂資訊中心並列代表作、1981–87 塔林錄音、FACT 轉向內斂）→ story ok；Sweet Charity（WEA、A. Husaini 製作、〈Hilang Gelap Terbitlah Terang〉）。
+- 身分／事實裁定：Steps 兩張只寫 1981 Better Days，不寫錄音年月、母帶遺失、1999 雙 CD；渡辺香津美客座曲兩源衝突不寫曲名；Sussan Deyhim 這張是第一張個人專輯（舊稿「排第三」錯）；Sweet Charity 是新加坡樂團（派工詞寫印尼，錯）；Grünberg《Hukkunud Alpinisti hotell》是 2001 三片裝配樂精選，不是 1979 原聲帶；Tetrack 年份兩說不寫、Pablo 樂器說法無來源不寫；Terra Rosa 主唱「赤尾和重」（主線補查 fact 一度誤植「赤尾かおり」，已更正）；The Astronauts 薩克斯風手兩說不寫；宮坂高史有專輯層級身分資料（編制、錄音、廠牌、自作曲），**不留置**，薄寫 167 字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-049.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Taj Mahal Travellers | 鉤子「開著福斯小巴一路巡演到泰姬瑪哈陵，這群日本樂手就拿它當了團名」→「沒有領袖、一場可以演上十幾個小時，這群日本樂手把集體即興拉成了 drone」 | 樂團 1969 成立時已有團名，小巴之旅在後，原句因果顛倒 |
+| Taj Mahal Travellers | 刪「曲名就是各段的起訖時間」，補巡演到泰姬瑪哈陵、回國辦演出籌旅費；其後兩處為字數微調 | 曲名體例屬雜項；研究稿團史 |
+| Terrence Parker | 鉤子「成了底特律靈性 house 的代表人物之一」→「把 house 做出了教堂般的虔誠氣息」 | 「代表人物」無出處，改用聲音材料 |
+| Tetrack | 「把他們的單曲編成」→「挑選他們的錄音編成」；「交給」→「由」、「受到讚賞」→「獲讚賞」 | 研究稿未說是單曲；字數 |
+| The B-52's | 刪多餘空格 | 格式 |
+| Sweet Charity | 「為英國水兵」→「為外國水兵」 | 研究稿為外國水兵與英國士兵 |
+
+其餘逐張四問無改：逐條對過研究稿（Sterling Void 與 Pet Shop Boys 翻唱第 5 名、Spacek 與 J Dilla〈Dollar〉、Stompin' Ground 1992 Rollins Band 暖場後禁 slam dance、Sutekh 與 Vital Weekly／Kindamuzik 聲音描述、Svartsinn 三部曲中間那張、Tellier 與 Tony Allen、Godinho 1971 Hérouville 城堡錄音、Tantra 與 Coliseu、Tar 鋁製吉他與無吉他獨奏、Faith Healers 為 Too Pure 第一組簽約團、B-52's Billboard 200 第 18、Black Skirts Gaon 第 3）。Sweeps 列三個曲名交代 Terminal 41 逃亡概念，屬概念核心，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-049.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-050（30 張，經典度≥4：The Black Skirts、Bush Chemists、Chesterfields、The Comes、Consolers、Contemporary Jazz Quintet、Cravats、Deep Freeze Mice 2、Diagram Brothers、Pullen-Adams Quartet 2、East St. Louis Gospelettes、Fabulous Counts、Famous Ward Singers、Feelies、Force of Music、Great Jazz Trio 2、The Hacker、Highway QC's、Impressions、Isley Brothers、John Betsch Society、Kamkars、Legendary Pink Dots 2、Lyman Woodard Organization、The Martian、The Mercy's）— s27
+
+- 研究：3 支 Sonnet，WebSearch 14＋13＋15＝42 次；無 none。
+- **主線補查**（WebSearch 約 15 次＋WebFetch，facts 標【主線補查】）：Chesterfields（Subway 源起、TweeNet 盤名典故）→ story ok；The Comes（Dogma／City Rockers、第一波硬蕊、Chitose 人聲評語）；Deep Freeze Mice（Jenkins 自述年表，sound 仍薄）；Cravats（Overground：八軌、獨立榜前 20）→ story ok；Bush Chemists（Wardrop 四軌起家、三部曲第一部、同名曲進廣告）→ story ok；Consolers（Cross Rhythms 長文，未見本盤名）；Isley Brothers（維基編制：Ernie、Marvin、Jasper 等，DeShannon 翻唱、Jasper 作曲）→ story ok；Highway QC's（無專屬樂評，薄寫）；The Hacker（DiS：首張當年聽眾少）；Gospelettes（Checker、Oliver Sain、Bobby Bland 改編）→ what／sound ok；Great Jazz Trio《Love for Sale》（Buster Williams、AllMusic／Test of Time 評語）→ sound ok；Betsch（納許維爾錄音、陣容、移居紐約後合作者）→ story ok；Kamkars（AllMusic Keefner：九人波斯樂團、清脆錄音；諾貝爾典禮演出）。
+- 身分／事實裁定：Contemporary Jazz Quintet 廠牌是底特律 Strata（不是 Strata-East／Tribe，派工詞與舊稿皆錯）；Consolers 只寫「1961 年 Nashboro 發行的 LP」，不斷言首張、不把《Give Me My Flowers》當本盤名；Cravats 錄音地點三說不一，不寫；Famous Ward Singers 本盤為 1957 年 7 月現場錄音、隔年發行，Kitty Parham 是人聲；Great Jazz Trio《Love for Sale》貝斯是 Buster Williams；Isley 單曲只寫前 40 名、不寫「三兄弟」；The Martian 屬 UR 的 Red Planet（非 Drexciya 系），身分寫「通常被認為是 Mike Banks」，原住民意象不寫成概念；The Mercy's 是印尼棉蘭樂團，本盤是否 Volume 1 未證實，寫「1970 年代初」；Black Skirts 人名一律用原文 조휴일（研究稿的「趙休日」漢字未經證實）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-050.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| The Black Skirts《TEAM BABY》 | 「趙休日」→「조휴일」（三處）、「黑裙（검정치마）」→「검정치마（The Black Skirts）」，韓中之間補空格 | 韓國人名團名照原文；與同團 sd-049 卡一致 |
+| The Comes | 鉤子「常被稱作」→「被樂評形容為」 | 單篇再發行樂評 |
+| Chesterfields | 刪「劇中人總叫彼此去燒水，樂團決定改用跳舞回應。」 | TweeNet 評者自註無法證實，鉤子已用「據說」 |
+| Cravats | 刪「在一家旅館地下室」 | 錄音地點三說不一（177 字，薄寫） |
+| East St. Louis Gospelettes | 「常被視為」→「被樂評稱為」 | 單一出處 Sir Shambling |
+| Legendary Pink Dots《Curse》 | 刪「收尾的」；「全團編制佔了一半以上」→「一半以上的曲子由全團演奏」 | 軌序；語意 |
+| John Betsch Society | 「常被拿來與 Pharoah Sanders 相比」→「有樂評拿它與…相比」 | 單一出處 Sean Trane |
+
+其餘逐張四問無改：逐條對過研究稿（Bush Chemists 與 Camden 攤位、CJQ 與《Bitches Brew》、Diagram Brothers「Discordo」規則與烤麵包機打擊、Breakthrough 七年首度美國廠牌、Song Everlasting 長笛與柔和慢曲、Fabulous Counts 一遍錄成與〈Hey Jude〉、Ward Singers 與 Little Richard、Feelies 拒大廠製作人改找 Peter Buck、Force of Music 獻給 Coxsone、Great Jazz Trio 渡辺貞夫錄音隔天、Impressions R&B 專輯榜冠軍與 Grammy 名人堂、Kamkars 七兄弟加一姊妹、Brighter Now 的 Nick Mason 八軌（官方網站單一來源，作為器材故事照收）、Lyman Woodard 的 Mellotron、Mercy's 與 Koes Plus 對照）。鉤子檢查兩筆「軌」是「四軌機」「八軌」錄音器材，非軌序，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-050.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 129 次（研究層 sd-049 50、sd-050 42，主線約 37）。
+
+## sd-053（30 張，經典度≥4：Vision of Disorder、Vitorino、Voltz、Von Freeman、Voodoo Queens、Kernagis、Wamdue Project、Warzone 2、Wen、White Heaven、Willie Colón、Winston Edwards & Blackbeard、Wizz Jones、Woody Guthrie 2、World Standard、world's end girlfriend、Would-Be-Goods、Writing on the Wall、X-Dream、XPDC、Yann Tiersen、河野康弘 2、YBO²、Mravinsky、Sawasaki、Preisner 2）— s29
+
+- 研究：3 支 Sonnet，WebSearch 16＋14＋15＝45 次；none：Voodoo Queens（sound）、Kernagis（sound）、Warzone EP（sound）、河野《Peace》（sound）、Sawasaki（sound）。前台預查 60 張（sd-053／054）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 約 10 次＋WebFetch，facts 標【主線補查】）：河野《Peace》（Discogs 錄音地點、setagaya／Vento Azul 商品頁：19 歲學琴、矢沢永吉樂團、McCoy Tyner 與 Coltrane 題獻曲）→ 救回；Sawasaki（官網 25 週年頁：YS 名義、Meditation Y.S. 出道、應歐洲要求重發）；Kernagis（kernagis.lt 官方專輯頁：Dainos teatras 概念「人的一生」、戲仿到悲劇）→ story ok；Would-Be-Goods（The Shuffle 樂評、部落格：Monochrome Set 未掛名伴奏、Hardy 式搖擺倫敦、英式標準發音）→ sound ok；Voodoo Queens（MOJO 1994 評語、唯一專輯）；Winston Edwards（Forced Exposure：1980、Well Pack Band、Bovell 混音）；Wamdue（AllMusic、維基、MTV）。X-Dream、XPDC 補搜無新料，照研究稿薄寫。
+- 身分／事實裁定：Kernagis 寫 1986（卡單 1985 誤）；Winston Edwards 寫 1980（卡單 1979）；Guthrie《Struggle》寫 1946 年 Asch 78 轉套組；《Library of Congress Recordings》寫 1940 年 Lomax 錄、1964 年 Elektra；Mravinsky 是 1967 布拉格之春現場、不寫「只演過三首」；Preisner《Rouge》不寫 Szymborska 與 Zamachowski／Murat；World Standard 不寫 Larry Campbell 與 Ayler；Willie Colón 不寫法官是誰；X-Dream 寫「1990 年代中」；Sawasaki 的漢字名無出處，用片假名。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-053.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Writing on the Wall | 鉤子「一些樂評把它算作 Black Sabbath 之前少數幾張重金屬專輯之一」→「Hammond 風琴在混音裡最搶耳，主唱的戲劇腔明顯學自 Arthur Brown」，正文補 R&B／靈魂底子與 Doors、Procol Harum 比較 | 原說法只見 Vox Pop 彙整的「也有人稱」 |
+| Wamdue Project | 鉤子「賣出了兩百萬張」→「成了 Strictly Rhythm 史上最暢銷的單曲」；壓字數 | 銷量兩說（兩百萬／MTV 一百萬） |
+| Vision of Disorder、Mravinsky | 第二句補《盤名》 | QA 無《》 |
+| Guthrie 兩張 | 「常被」→「被」 | 單一出處 |
+| Sawasaki | 「澤崎吉広」→「サワサキヨシヒロ」 | 漢字名無可靠出處 |
+
+其餘逐張四問無改：逐條對過研究稿（VOD 樂團自稱恨這張、Voltz 第二張未發行、Freeman 說沒見過這麼放鬆的製作人、Peel 一場就邀錄、Revelation 起初只為出這張 7 吋、Wen 剪海盜電台 MC 當主持、White Heaven 過半寄往歐美、Colón 站被告席、唐寧街十號曲名玩笑、Renbourn 盤腿彈西塔琴、ototoy 專訪的「先寫流行歌再抽掉人聲」與倒走《神曲》、Avatar 列為 trance 經典、XPDC 錄音時仍叫 Tragedy、Tiersen 被製作助理在車上播 CD、虛構作曲家 Van den Budenmayer、《紅》六項提名唯一得獎皆有出處）。Warzone EP QA「軌序」為 East Side 誤判。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-053.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 30 處。
+
+## sd-054（30 張，經典度≥4＋其餘：Zeni Geva、Zodiac、Zoviet France、Daho 2、Галич、คาราวาน、ထူးအိမ်သင်、Hannibal、108 2、929、99.99 2、9m88 2、_BY.ALEXANDER、A-Sound、Abel Ganz、Above & Beyond、Agnostic Front、Ahmad Jamal、Air 2、Aisha、AKA、Akal Dub、AKIO / OKIHIDE、大森明、Al Campbell）— s29
+
+- 研究：3 支 Sonnet，WebSearch 14＋16＋14＝44 次；none：929（sound）、A-Sound（story／sound）、99.99 兩張（story／sound）、Abel Ganz（sound）、Akal Dub（story）、大森明（story／sound）、Al Campbell（story）。母語來源：Zeni Geva 日文維基、Daho 法文、Галич 俄文、ထူးအိမ်သင် 緬文、9m88／929 台灣報導、AKA 印尼。
+- **主線補查**（WebSearch 約 12 次＋WebFetch，facts 標【主線補查】）：929《3》（Chord4 專訪：重組、第一位正式鼓手羅拔、更搖滾更有重量、「跨過第三張」的命名；Rti 吳志寧自述延宕原因）→ story ok；99.99 同名（ameblo 樂評：Weather Report 路線、成員與兩組編制；guitarrecords：前 Ain Soph 服部ませい、兩張後解散）→ sound ok；大森明（SAX ONLINE 經歷、Tower 簡介、dessinée 商品頁的曲風描述）→ 救回；Caravan（泰文維基 1983 年 6 月 EMI、MGR Online〈ค่ำลง〉主題與น้าแดง）。A-Sound、《More of 99.99》、Akal Dub 補查無專輯層級資料 → **留置 3 張**（`held-sd-054.json`）。
+- 身分／事實裁定：Zeni Geva（1992／1993）、Zoviet France（1990／1991）、108《Songs of Separation》不寫確切年；Abel Ganz 寫「1980 年代前半」；9m88 不寫發行日；《Sent》翻唱寫張雨生、共同創作寫黃宣等人；Daho《Eden》只寫 Astrud Gilberto 參與；AKA 不用 Decibel 對首張的評價；AKIO / OKIHIDE 寫 Sublime、不寫 Ken Ishii 推薦試聽帶；Al Campbell 不寫製作人；99.99 不寫封面插畫者；Caravan 不寫改題〈เดือนเพ็ญ〉。
+
+### 主線審稿（2026-11-17，逐張 27 張，改 8 處，改動檔 `review-sd-054.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Zoviet France | 鉤子「原廠牌壓量小、後來倒閉，讓這張成了較難找到的一張」→ 聲音鉤子「一道柔和的 drone 鋪在底下…」，第二句補《盤名》，刪「厚重回音」 | 壓量與稀有度屬版本雜項；「厚重回音」只見搜尋摘要 |
+| 99.99、Zodiac、_BY.ALEXANDER | 第二句補《盤名》；Zodiac 刪銷量、_BY 刪「以流行製作聞名」壓字數 | QA |
+| 9m88《Sent》 | 第二句補 2023 年 | 交代這是什麼 |
+| Abel Ganz | 「Hew Montgomery 在 1980 年拉起」→「Hew Montgomery 和夥伴…」 | 樂團由他與 Hugh Carter 共同發起 |
+
+其餘逐張四問無改：逐條對過研究稿（《内破》譯意與車禍題材、Zodiac 星城見太空人、Daho 愛滋謠言與假訃聞、《Pop Satori》57 週與第 5 名、Galich 開場白與「我知道該怎麼辦」主旨、Caravan 森林與大赦、Htoo Eain Thin 審查下只寫情歌、Hannibal 直刻錄音（錄音方式屬故事，照收）、Miret 獄中寫詞、Jamal 現場盤 108 週、Air 的 hubkaphone、Ucok 的棺材演出、Sublime 由 Maniac Love 派對催生皆有出處）。27 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-054.json`；27 張 27 鍵（原皆無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **27/27 一致**；`front-check` **前台 27/27 新稿**（CURATED 0）。留置 3 張 KV 保留舊稿。
+- onboarding manifest 同步 25 處。
+- 本工作階段 WebSearch 合計約 111 次（研究層 sd-053 45、sd-054 44，主線約 22）。
+
+## sd-051（30 張，經典度≥4：The Monochrome Set、The Observatory、The Overnight Players、The Platters、The Quiett、Roberta Martin Singers、The Rootsman、The Running Man、The Sea Urchins、The Sonics、Sam Cooke／Soul Stirrers、Southwest Michigan State Choir、THE SQUARE、The Suburbs、Swanee Quintet、The Swankys、Third Eye Foundation、The Three O'Clock、The Three Sounds 2、The Tower Recordings、The Violinaires、The Willard、The Work、Throbbing Gristle、Thắng、Tiao Phün Muang、Tiit Paulus、Tina Brooks、Titus Groan）— s28
+
+- 研究：3 支 Sonnet，WebSearch 13＋14＋16＝43 次；無整張 none（Swankys story none、Tiao Phün Muang sound none）。
+- **主線補查**（facts 標【主線補查】）：The Willard（reminder.top 回顧：Captain Records 第一號作品、新宿東口 8000 人免費演出、海盜妝與恐怖／西部片概念、The Damned 式 beat punk 與衝浪搖滾、約兩萬張、御三家）→ story／sound ok；The Overnight Players（opdk2 轉錄封底 credit：Channel One／Island／TMC、Ansel Collins、Dean Fraser 等；曲名取材泛非人物；Discogs 收藏者「更像器樂版本」）→ 研究層說「Channel One、Ansel Collins 查無來源」被推翻，三塊 ok；The Swankys（Discogs 錄音室、Last.fm 77 punk→hardcore）；Tiao Phün Muang（VDE-Gallo 官方頁 2007 年錄音、曲名法英對照；Yearbook for Traditional Music 書評；英文維基寮國宮廷樂泛論）→ 薄寫。Tower Recordings、Violinaires 未再補。
+- 事實裁定：The Platters 不寫收錄〈Only You〉〈The Great Pretender〉（1956 年 LP 曲目無）；Running Man 不寫「廠牌最後一張」；Roberta Martin 不寫「舊錄音整理集」；Sam Cooke 合輯寫 1991 年 Specialty；Swankys 不寫限量、不寫「日本第一個 hardcore」、不寫 2024 重發；Tiao Phün Muang 聲音只寫宮廷樂泛論、不說本盤樂器；Titus Groan 不寫 Barry Murray；Three Sounds《Black Orchid》寫「1962 錄、1964 發行」（延遲本身是故事，不是曲序日期）；Violinaires 照卡單 1971。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 18 處，改動檔 `review-sd-051.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Monochrome Set、THE SQUARE、Third Eye Foundation、《Moods》、Tower Recordings、Violinaires、Willard | 「常被」→「被」 | 各只有單一具名出處 |
+| Sea Urchins | 鉤子「廠牌卻始終沒替他們出專輯」→「廠牌卻不肯替他們做一張 LP」 | 《Stardust》本身就是 Sarah 出的合集，原句與第二句矛盾 |
+| Swanee Quintet | 第二句補主詞；刪末句「常被形容為鄉土而帶鄉村味」 | 原句缺主詞；「鄉土」無出處、補主詞後超字數 |
+| The Swankys | 鉤子改「「九州龐克」的聲音，被說是由這張唱片定下的。」；刪「2024 年首次正式重發黑膠」 | 出處是零售／再發行廠；版本資訊不寫 |
+| Running Man、Sam Cooke 合輯、Tiao Phün Muang | 第二句補《盤名》；前兩張隨之刪 Rock Workshop 句、〈Lovable〉化名句壓字數 | QA 無《》 |
+| Suburbs、Platters | 刪多餘空格；fix-spacing 補「與 doo-wop」 | 格式 |
+
+其餘逐張對過研究稿無改（Observatory 800 張 demo 與 2000 張正式版售罄、Overnight Players 團名「凌晨三點才開錄」、Q Train 第 4 屆韓國大眾音樂獎、Mattie Moss Clark 三聲部與三張金唱片、THE SQUARE 夏威夷打雷停機、Tina Brooks 四場領銜生前只發一張、TG 褲子工廠地下室一次錄成與獨立榜第 10、Thắng 八角形比喻、Tiit Paulus 無節奏組的〈Moose the Mooche〉、Titus Groan 雙簧管與 Priestland 意外皆有出處）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。Tiao Phün Muang 薄寫 211 字照收。
+
+## sd-052（30 張，經典度≥4：Tod Dockstader、Token Entry、《June Apple》、Tradition、Trembling Blue Stars、Troum & Yen Pox、Tsunami、Tudor Lodge、Tullycraft、Turning Point、Tyree、Téléphone、Tõnis Mägi & Muusik-Seif、U&Me Blue、Ultima Thule、Umm Kulthum 3、Unbroken、Underdog、Universal Congress Of、Uno Naissoo、Urban Tribe、Urusei Yatsura、Ut、Vainica Doble、Versus、Victor Romero Evans、Viktoria Tolstoy、Virgo Four）— s28
+
+- 研究：3 支 Sonnet，WebSearch 11＋19＋10＝40 次；無整張 none（Uno Naissoo story none）。
+- **主線補查**（WebSearch 約 13 次＋WebFetch，facts 標【主線補查】）：Tyree（MusicBrainz／賣家曲目：〈Acid Over〉〈Turn Up the Bass〉確在本張，研究層「未逐首證實」解除）、Uno Naissoo（EMIC 傳記列為 1978 Melodiya 作者專輯、同年人民藝術家；Discogs 演奏者與 jazz-funk 標籤）、Viktoria Tolstoy（Qobuz：瑞典爵士榜第二、德國爵士獎）、Victor Romero Evans（45worlds 摘要：John Collins 製作並幾乎包辦樂器）、Ultima Thule（Discogs 首張陣容與作詞者、hard／prog rock 標籤）、Tõnis Mägi（Melodiya LP 與卡帶、Elmu Värk 作曲）。Tullycraft、Underdog 補搜無專輯層級新料，照研究稿薄寫。
+- 事實裁定：《June Apple》寫 Mountain Records、不寫 County 與 Heritage 多收曲；Tudor Lodge 不寫 Terry Brown、不寫〈Kew Gardens〉是 McTell 的歌；Tyree 不寫 BCM 德版、不把整張寫成 hip house；〈Amal Hayaty〉作曲 Abdel Wahab、詞 Ahmed Shafik Kamel，不寫首演年；〈Ya Msaharny〉不寫首演日；Unbroken 不寫主唱；U&Me Blue 不寫百大名次；Ut 寫 1986；Vainica Doble 寫 1971；Tolstoy 寫 Blue Note、不寫「首張」與「Blue Note 第一張北歐唱片」；Naissoo 不寫父子。
+- Umm Kulthum 三張：盤名即單一長歌，正文以〈曲名〉稱之、不另加《》，QA「無《》」照收（與先前長盤名照收同理）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-052.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| 〈Amal Hayaty〉 | 刪「一首常唱到半小時以上」 | 演唱長度屬曲長類雜項 |
+| Urban Tribe、Urusei Yatsura、Vainica Doble | 第二句補《盤名》；隨之刪〈D-2000〉句、John Peel 句、玩具清單縮短、刪「先替電視與電影寫歌」「需要時吉他很凶」壓字數 | QA 無《》、字數 |
+| Tullycraft | 「常被視為」→「被視為」 | 出處只有維基 |
+| Tradition | 「比 Scientist 的太空 dub 早一年」→「還早」 | 研究稿只說「早了好幾年」（含 Jammy），不寫精確年差 |
+
+其餘逐張對過研究稿無改（Dockstader 白天替卡通做音效、夜裡借錄音室；Davies 婉拒參與錄音；Troum & Yen Pox 的 Lovecraft 比喻與 Brainwashed 年度最佳；Tsunami 為新年派對組團；Tudor Lodge 列 Record Collector 兩百張最稀有；Téléphone 不躲鄉間錄音室；U&Me Blue「被詛咒的傑作」；Unbroken 影響 Touché Amoré、Defeater；Naissoo 1949 年禁爵士時組 Swing Club；Vainica Doble 寄阿根廷的盤被投資人銷毀；Collins 因〈At the Club〉被 Dammers 找去做〈Ghost Town〉；Virgo Four 用 TR-505 與 Juno 2、Sanders 說是草稿皆有出處）。Unbroken 鉤子的「我」是「自我厭惡」一詞，非你我稱謂，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線（sd-051、sd-052）
+
+- 寫稿前預查 60 張 x-cache 全為 KV-HIT。
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-051/052.json`；60 張 60 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 60/60 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 59 處（sd-051 29、sd-052 30）。
+- 本工作階段 WebSearch 合計約 98 次（研究層 sd-051 43、sd-052 40，主線約 15）。
+
+## sd-047（30 張，經典度≥4：Robert Nighthawk、Roberta Flack、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus、S.E.S. 2、S.L.A.C.K.、S.O.B.、藤井貞泰、Sampaguita、Brugnolini、Sarah Tandy、Sasha & Digweed、Scan 7、Scanner、Scrawl、Second Hand、Secret Shine、Celibidache、Shahram Nazeri）— s26
+
+- 研究：3 支 Sonnet，WebSearch 14＋19＋20＝53 次。
+- **主線補查**（WebSearch 約 12 次＋WebFetch，facts 標【主線補查】）：Ron Carter《Third Plane》（英文維基與《Herbie Hancock Trio》頁：1977 年 7 月巡演途中在 The Automatt 錄一天、同日另一批曲子以 Hancock 名義出；Ethan Iverson 評）→ story ok；Rorschach（Rettman 的 Maggio 訪談：成軍、Pipeline、ABC No Rio）；Rod Taylor《If Jah Should Come Now》（United Reggae：Channel One 錄、Harry J 混、B. Simpson 製作）；S.L.A.C.K.（ototoy：手賣 100 張 CD-R、ZEEBRA／KREVA／宇多丸評價、PSG）——聲音面仍無專輯層級描述，薄寫不寫 beat；Sasha & Digweed《Northern Exposure 2》（英文維基：東西岸兩段旅程、英國合輯榜第 15）；Nazeri（無新料）。
+- **留置**：藤井貞泰《Prelude to a Kiss》——研究層三塊 none，主線補查 3 次（日文盤名、英文盤名＋Discogs、AllMusic 403）仍只有標題，KV 保留舊稿（`held-sd-047.json`）。
+- 身分／事實裁定：Nighthawk 只寫 1964 年錄音，不寫 Rounder 發行年（1979／1980 兩說）；Room 不寫 Richard Hartley；Rod Taylor 不寫樂手名、不把〈His Imperial Majesty〉算進《Where Is Your Love Mankind》；Flack 同名曲葛萊美寫 1974 年；Roy & Diz 不寫錄音地點；S.E.S. 首張寫「1997 年底」；Celibidache 寫 1991 年慕尼黑現場、EMI 1997 身後發行；Nazeri 年份照卡單、不寫 dastgah；Scanner 不寫軌數；Scrawl 不寫 Albini 角色細節；Second Hand 不沿用 Mushroom／Maximum Music／團名由來。
+
+### 主線審稿（2026-11-17，逐張 29 張，改動檔 `review-sd-047.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| 寫作層 1 組 13 張（Nighthawk、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus）＋S.E.S. | 退件：第二句「這是……」改「《盤名》是……」，為壓字數刪 Carey Bell、Scientist 混音、Vermiform 等次要細節 | 第二句交代盤名；QA 無《》 |
+| Celibidache | 「這是」→「《Tchaikovsky: Symphony no. 5》是」 | 同上 |
+
+其餘逐張四問無改：鉤子對過研究稿（Nighthawk 泥土院子裡有人跳舞出自 Bloomfield、Rorschach「第一張被冠上 metalcore 標籤」出自維基、Ruja 禁演影響約十年、Roy Eldridge 是 Gillespie 早年偶像、Roots Radics 被評為主導八〇年代前半、Celibidache「音樂不是罐頭」、Nazeri 只有塞塔爾與兩種鼓、Second Hand 電影後來被禁）。Dransfield 末句 rout 字義屬盤名冷知識一句，與民謠採集相關，照收。29 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-047.json`；29 張 29 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **29/29 一致**；`front-check` **前台 29/29 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-048（30 張，經典度≥4：SHAKKAZOMBIE、Shape of Despair、Sheer Terror、Shelter、Sick of It All 3、Side by Side、Siekiera、Silas Hogan、Silent Phase、Silicon Scally、Sima Bina、Simon Joyner、Slank、Smash、Smegma、Snakefinger、Snuffy Jenkins、Solstice、Sonny Fortune、Sonny Red、Sons of Truth、Sphere、Spick & Span、Spirogyra、Stan Forebee、Starless、Steel Mill、Stefon Harris）— s26
+
+- 研究：3 支 Sonnet，WebSearch 21＋16＋18＝55 次；無 none。
+- **主線補查**（WebSearch 約 10 次＋WebFetch）：Snakefinger（Trouser Press：Lithman、Chilli Willi、Residents 共同作曲製作；Tiny Mix Tapes「不是 Residents 做的最好的 Residents 專輯」）；Sphere、Starless、Sonny Red、Spick & Span（再搜無新料，研究稿已有 Strata 背景、Starless 錄音地與陣容、Better Days 首作）；Silicon Scally（Hot Press 只再確認「豐富、交響式」）；Sima Bina（再搜無專輯層級資料，只寫歌手背景與南呼羅珊曲目特性，不寫伴奏編制）；SHAKKAZOMBIE（無新料，薄寫）。
+- 身分／事實裁定：SHAKKAZOMBIE 成員為 OSUMI、IGNITION MAN、TSUTCHIE（派工特注的 Ohshima、DJ HIDE 查無，為協調端誤記，不用）；Siekiera 照實寫 2008 年合輯、錄音取自 1984；Sheer Terror、Silas Hogan 不寫年份，Sick of It All《Blood, Sweat, and No Tears》不寫日期、不寫 Rolling Stone 名次；Silicon Scally 不寫 2020 Vision；Solstice 不寫康瓦爾錄音與六人編制；Sphere 寫底特律 Strata（非 Strata-East）；Steel Mill 不寫浴室錄長笛；Spick & Span 大徳俊幸用日文原字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 8 處，改動檔 `review-sd-048.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Solstice | 「作品並列為……重要唱片」→「樂團常與……並列為……一員」 | 官網說的是樂團被並列，不是唱片地位 |
+| Sons of Truth | 「常被稱為」→「被稱為」；俱樂部一句改順 | 出處只有 Ace／BGP |
+| Stan Forebee | 刪「以 Rhodes 電鋼琴與色彩豐富的和弦進行為底」 | 那是他整體風格，研究稿沒說這張如此 |
+| SHAKKAZOMBIE | 鉤子由泛論「擅長用合作帶新人」改為 Nitro 三位 MC 一起登場；客席句改寫、刪 Cisco 一句 | 鉤子要取本張材料；字數 |
+| Sima Bina | 第二句補《盤名》；刪 9 歲上電台與師承一句、radif 補說明 | 第二句交代盤名；字數 |
+
+其餘逐張四問無改：Sheer Terror 在 CBGB 場內白天錄音、Side by Side 鼓手 14 歲、Siekiera 1984 Jarocin、Silas Hogan 煉油廠、Steel Mill 唱片上市前已解散、Stefon Harris 間奏串成組曲、Spirogyra「失落的傑作」（維基轉述評論，只在正文）皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-048.json`；30 張 30 鍵（皆非 CJK，原無 desc4）bulk put Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 130 次（研究層 108，主線約 22）。
+
+## 協調端裁定：sd-hold-5 兩張最終留置（2026-11-17，店主：「給你決定就好」）
+
+- **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
+- **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
+
+## sd-060（30 張，其餘：BROCKBEATS 4、Brother Joe May 2、Brother JT、BTS、Bunny Wailer 2、Burial Chamber Trio、Burn、Buster Williams Trio、Bức Tường、C.C.C.C.、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball Adderley、Cappablack、Caracal、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea 4）— s33
+
+- 研究：3 支 Sonnet，WebSearch 7＋15＋15＝37 次；none 只有 Candi Staton《Stand Up and Be a Witness》sound。母語來源：BTS 韓文（亞洲經濟、Tenasia）、Bức Tường 越文（Đại Đoàn Kết）、Casiopea 日文維基與官方資料站。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Brother Joe May《The Master's On Our Side》（確認為 1958 年轉投 Nashboro 後的專輯，Acrobat 合集）；Buster Williams《Tokudo》（jazzdisco：1978 年 1 月東京日本コロムビア錄音室、Barron／Riley 三重奏、曲目取向；Sphere 1979 年成立晚於本張）；Candi Staton《Stand Up…》（AllMusic：亞特蘭大 Cheshire Sound、製作人、自己寫歌；仍無聲音描述，薄寫）。BROCKBEATS、Brother Joe May 只有藝人層級資料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Bunny Wailer 不寫「五首拆自 Blackheart Man」「1976 Island」；Burn 不寫「1992 年同名 EP」（〈Last Great Sea〉是 2002 EP，本張重錄）；Carl Bean 原碟寫 Peacock、不寫 Motown 與 Tim Dillinger 評語；Casiopea 不寫〈Marine Blue〉、撲克牌、「一口氣錄完」、十週年巡演、Milestone 改名；Tokudo 不寫 PCM 號段；Channthy 被騙進性交易、Phạm Anh Khoa 2018 風波不寫；BTS 不寫 Billboard 名次與銷量。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 42 處，改動檔 `review-sd-060.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Burial Chamber Trio、Tokudo、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball、Cappablack、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea Live、Perfect Live II、Lunch Time Sleeps | 第二句補《盤名》，並刪次要細節壓回 240 字（Carey Bell 錄音時間抱怨、Carl Thomas 連三張名次、McRae 唱腔、Cannonball 唯一管樂手等） | QA 無《》、字數 |
+| BROCKBEATS 4 張 | 刪軌數（20／15／16 首）、卡帶售罄、曲名日英混用體例；Night Trip、Tranquilizook 鉤子去掉軌數 | 軌數、版本、曲名體例屬雜項 |
+| Burial Chamber Trio、C.C.C.C.、Calvin Keys | 刪「只出黑膠」「限量黑膠」「2023 首度出 CD」「2021 重發黑膠」；Keys 改補內頁文「一大躍進」評價 | 版本資訊不寫 |
+| Bunny Wailer Vol. 1、Brother JT | 刪「七首」「長曲」 | 軌數、曲長類 |
+
+其餘逐張四問無改：Cannonball 鉤子（《Kind of Blue》4 月 22 日收工、本張 4 月 23 日起錄）研究稿有日期依據；Down Upbeat「常被視為數位聲音代表作」出自官方資料站，照收；BROCKBEATS《Soy Milk》《Lunch Time Sleeps》以曲名題材當概念鉤子（日常、午睡），屬概念非體例，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-060.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
+
+## sd-061（30 張，其餘：Casiopea 3、Caspro、Castanarc、Cecil Taylor、Cedar Walton、Celine Dion、Centry、cero、Chanté Moore、Charalambides、Charles Lloyd & the Marvels、Charles Pasi 2、Charlie McAlister、Charlie Moore、Charlie Parker 2、Chicago、Chick Corea 2、Chico Hamilton、Chillies、Chris Minh Doky、Christopher Willits、Chucho Valdés、Chuck Girard、Chế Linh 2）— s33
+
+- 研究：3 支 Sonnet，WebSearch 16＋14＋19＝49 次；none 只有 Centry story。母語來源：Casiopea 日文維基與 weblio、cero 日文（Tokion、Real Sound、ototoy）、Celine Dion 法文、Pasi 法文 Blue Note 頁、Chillies 越文（Bazaar Vietnam、SGGP）、Chế Linh 越文維基。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Charlie Moore《Avery County》（ibiblio 藍草作品表：1977 年 7 月 Lexington Lemco、9 月 Fountain Inn Music Lab 兩場，Old Homestead、製作 John W. Morris、班底與收錄曲；Clinch Mountain Echo 評價與 1979 年去世）→ 救回；《Tone Poem》（Jazzwise／Guardian：首度無客席主唱、多出自 2017《Vanished Gardens》同批錄音）；Chế Linh 兩卷（英文維基：本名、占族、Tứ trụ nhạc vàng、1972 Kim Khánh 獎、筆名 Tú Nhi、1975 後關押與出走；tuannyriver 部落格：首張收〈Bài ca kỷ niệm〉〈Cho vừa lòng em〉、風琴開場的 rumba 編制）。Centry 無新料，薄寫。
+- 事實裁定：Casiopea《Jive Jive》不寫 Steve Travell 填詞；Cecil Taylor 寫 BYG 不寫國別；Celine Dion 詞曲寫「多數」出自 Goldman；Centry 不寫與 Zion Train 的關係；Chick Corea《Is》不寫 Merton 詩、《The Sun》不寫中村照夫製作；Chico Hamilton 不寫廣告配樂與「三年多來頭一張」；Chillies 不寫離開 Warner；Chế Linh 不寫幫傭與載石卡車、不強調年份（維基 1973、部落格 1972、卡單 1974 三說），《Chế Linh 4》照實寫為多歌手綜藝卷帶；《Washington Concerts》不寫 Bill Potts 樂團；Chicago 17 不寫入圍類別；Charalambides 不寫年份（1993／1994 兩說）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-061.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Cedar Walton《First Set》 | 日期鉤子「1977 年 10 月 1 日…一整晚被錄了下來」→ 人物鉤子「25 歲的…Bob Berg…上台」；刪「長而」與次要字壓字數 | 日期不是故事材料；曲長字眼 |
+| Charalambides、Centry | 刪「限量 500 張黑膠」「2020 年 Partial Records 重發」 | 版本資訊 |
+| 《Tone Poem》 | 「83 歲」→「年過八十」 | 研究稿無年齡，2021 年 3 月發行時 82 或 83 不確定 |
+| Chick Corea《The Sun》 | 鉤子「三個月後」→「三個月前還同在 Miles Davis 樂團的四個人」；刪「獨奏狂熱」壓字數 | 照研究稿語意 |
+| Chick Corea《Is》 | 刪多餘空格 | 格式 |
+
+其餘逐張四問無改：Storyville 插播初選開票、McAlister 的島民拒絕派對概念、Chicago 17 六白金、Celine 四百萬張與史上第二暢銷法語專輯、Doky 的 Brecker 病中疊錄、Willits 的 Envelop 與 3D 空間音訊、Valdés 第 46 屆葛萊美入圍、Girard 自稱首張是「安全的唱片」皆有出處。Chế Linh 第一卷的「越南 bolero 代表作」與〈Bài ca kỷ niệm〉出自部落格對其「首張專輯」的描述，系列第一卷即首卷，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-061.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 97 次（研究層 sd-060 37、sd-061 49，主線 11）。
+
+## sd-058（30 張，其餘：Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）— s32
+
+- 研究：3 支 Sonnet，WebSearch 13＋15＋10＝38 次；無整張 none（Birdland story none、Blackbird story none、Blue Wednesday 兩張 story none、Blind Light sound none）。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Birdland（Discogs：1980 年 PGP RTB 發行 LP——研究層說「PGP RTB 查無來源」被推翻；JazzRockSoul：伯恩的南斯拉夫學生、Banković 主導、Mahavishnu 影響）；Blind Light（Discogs 1994 日本 Alida、downtempo／ambient；Scaruffi「偏 dub 的長段即興」）；Blackbird（Bandcamp：梅斯、自介、標籤；Discogs 風格、Solus Mind 客席）；Blue Wednesday（Bandcamp：溫哥華 Gustav Joseph，頁面無介紹、無樂評）；Bim Sherman 兩張（再搜無新料）。
+- 身分／事實裁定：Billie Holiday《Ladylove》寫巴塞爾（舊稿科隆錯）；Bim Sherman《Lovers Leap Showcase》寫 1979（卡單 1978），《In A Rub-A-Dub Style》寫「1980 年代初」，兩張都不寫 Prince Jammy／錄音室／伴奏團；Lagrène《Inferno》1987、《Foreign Affairs》1988；Blind Light 是 Anton Fier 個人名義、不寫 Laswell；Black Tape 不寫洛杉磯錄音；Bobbi Humphrey《Flute-In》不寫發行日；Blue Mitchell《Collision in Black》確認 Blue Note。
+- **薄寫上線不留置**（照 delayde 前例）：Birdland、Blackbird（155 字）、Blue Wednesday《Beat Tape 2》（149 字，低於 150 下限照收）、《Beat Tape 3》（159 字）、Blind Light。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-058.json`＋直接改寫兩張）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lagrène 三人《Standards》 | 原 253 字壓到 240 內；「Pedersen 的貝斯獨奏常被點名」→「也有不少篇幅」 | 字數；單一出處不寫「常被」 |
+| Black Mountain Transmitter | 刪「只做 179 份」 | 限量份數屬版本雜項（棺材塊包裝是廠牌 anti-cassette 概念核心，留） |
+| Blackbird | 刪 2026 年 Doki Doki Beats 首壓黑膠句 | 版本雜項 |
+| Blind Light | 刪 2003 年 Tzadik 合輯重發句 | 版本資訊 |
+| Blue Wednesday《Beat Tape 2》 | 鉤子「連兩年選在跨年那天上線」→以「這是什麼」開頭 | 發行日屬雜項，材料撐不起鉤子（delayde 前例） |
+| Blue Wednesday《Beat Tape 3》 | 刪「距上一集約四個月」 | 發行間隔屬雜項 |
+| Black Tape《This Lush Garden Within》 | 「比其他作品更偏電子與氛圍」→「空靈的 ethereal wave，新古典氣質比前作更重」，全段壓到 202 字 | 原說法只出自聽眾留言；新古典一說出自 Scaruffi |
+
+其餘逐張對過研究稿無改：Big Satan 製作人 Torn 不彈吉他改做電子處理、BIGBANG 紀錄片破百萬點閱與月榜第 3、Holiday 臨時湊的節奏組沒彩排、billy woods 自述起點是買大麻、Black Roots 三人離團後首次在 Ariwa 錄混、Black Tape 的 Herrera 只錄兩首告別、Bantu Village 之後被 Blue Note 放掉、Corea 兩曲在《Boss Horn》的定本、Blueboy 在 Haynes 新廠牌 Shinkansen 的最後一張、Dorough 標題曲原為沒做成的動畫而寫、Humphrey 是 Blue Note 第一位女性器樂手、Montreux 伴奏三人後來組 The Blackbyrds，皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-058.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-059（30 張，其餘：Bobby Hutcherson 10、Bobby Lyle Trio、Bobby Watson & Horizon 2、Body of Light、boerd、Bohren & der Club of Gore 2、Booker Ervin、Bora Roković、Born Against、Bourbonese Qualk、Bozi Boziana、Brand Nubian 2、Brass Construction、Bread, Love and Dreams、Breakdown、Bridget St John、Brigth Engelberts、Brock Berrigan）— s32
+
+- 研究：3 支 Sonnet，WebSearch 10＋13＋10＝33 次；無 none，thin 多（Hutcherson 八張 story 或 sound thin、b 組全數 story thin）。
+- **主線補查**（WebSearch 10 次＋WebFetch，facts 標【主線補查】）：Hutcherson《Knucklebean》（英文維基：錄音日、班底、Bay State Banner 與 Yanow 評；Hubbard 六首吹四首）、《Patterns》（MusicWeb／AllMusic：編制無 Land、Chambers 四首、Spaulding 的金恩曲）、《Inner Glow》（英文維基：1975 洛杉磯錄、1980 日本發、三管前線）；Bohren《Midnight Radio》（Visions 雙評、Babyblaue Seiten 的陣容與聲音描述）；Born Against（No Echo 樂團沿革、Discogs Vermiform 第一號）；boerd（SoundCloud 第二張全長、Comorbid）；Bobby Watson《No Question About It》（AllMusic 摘要：Hargrove、Lacy 客席）；Breakdown（Blogged and Quartered：Mother West 錄音、demo 歌重錄）；Brigth Engelberts（再發行商介紹：拉哥斯 EMI、soul-funk 加非洲和聲）；Bozi Boziana（Discogs／Qobuz：Veve、Anti-Choc Stars、Djo Nolo）。
+- 身分／事實裁定：《Spiral》不寫日本首發（實為 1979 年 LT 系列）、只寫 1968 年 11 月錄；《Knucklebean》不寫〈'Til Then〉出自《Components》；《Patterns》寫 1968、無 Land、〈A Time to Go〉寫「獻給金恩」（錄在遇刺前）；《View From the Inside》不寫發行年；《Medina》《Inner Glow》不寫擱置原因；Bohren《Midnight Radio》寫 1995、不寫 Duisburg 錄音日；Booker Ervin 不寫 Gerald Wilson；Born Against 是 1990 年 Vermiform 的 7 吋 EP、不寫七軌卡帶與透明膠誤壓；boerd 是 Bård Ericson（非 Fredrik Klingwall）；Body of Light 寫 2016；Bridget St John《Jumblequeen》製作人 Leo Lyons（非 Ron Geesin）；Brigth Engelberts 是喀麥隆人；Bread, Love and Dreams 當時兩人組；Brand Nubian《Foundation》不寫 DJ Premier 整張混音；Brock Berrigan 不寫本名。
+- **薄寫上線不留置**：Bobby Watson 兩張、Body of Light、boerd、Bora Roković、Bozi Boziana、Breakdown、Brigth Engelberts、Brock Berrigan（聲音段只能寫樂團／藝人整體風格的，文中照實寫成整體風格）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 1 處，改動檔 `review-sd-059.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Bobby Watson《No Question About It》 | 「是 他的樂團」刪多餘空格 | 格式 |
+
+其餘逐張對過研究稿無改：Hutcherson 十張各取一角（Cochran 策劃、Hubbard 搶戲、Idyllwild 戶外錄音、Butler 帶隊蒙特勒與同日 Byrd 十人電氣團的對照、歐巡後一個月進棚、大麻案失去卡巴萊證、Land–Hutcherson 五重奏僅兩次進棚、《The Kicker》擱 36 年與「不夠代表他」的說法出自 uDiscover、Yanow 說他是 Blue Note 瓦解前最後在廠錄音者之一、與 Land 七張合作的終點）；Hargrove 18 歲、數位雙軌一次錄成、Mustafa 與 Lewis 供曲、Body of Light 童年家庭錄影帶取樣（Dais）、boerd 是皇家歌劇院低音大提琴手、Bohren 由硬蕊金屬團轉向（德文維基）、Born Against 的 Raw Power 自述（1991 RIOT 訪談）、Bourbonese Qualk 佔屋圈、Anti-Choc 三女聲、Bread, Love and Dreams 女飛車黨與猶豫蝸牛、Breakdown tough guy 先驅、Brock Berrigan 凌晨兩點（Stereofox 訪談）皆有出處。Tolambo Funk 的 Hot Casa 重發句保留：它交代的是原盤長年只靠盜版流傳的地位，不是版本差異。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-059.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 27 處。
+- 本工作階段 WebSearch 合計約 88 次（研究層 sd-058 38、sd-059 33，主線 17）。
+
+## sd-056（30 張，其餘：Armando、Arpanet、Art Blakey 9、Art Ensemble of Chicago、Grumiaux、Rubinstein、Arturo O'Farrill、Astral Engineering、Asylum、At the Drive-In、Yupanqui、Ataraxia、Atrium Carceri 2、Attrition、Audio Active、Augustus Pablo、AUX 88 4、B-Side & Philanthrope）— s31
+
+- 研究：3 支 Sonnet，WebSearch 16＋15＋17＝48 次；none：Astral Engineering（story）、AUX 88 同名（story）。寫稿前預查 60 張（sd-056／057）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 約 8 次＋WebFetch，facts 標【主線補查】）：Asylum（SIKEI-MUSIC 樂評：噪音／前衛＋龐克、硬核、positive punk，從纖細黑暗急轉金屬 riff、Gazelle 歇斯底里的細嗓；TRANS RECORDS＝北村昌士）→ sound ok；AUX 88 同名與《Mad Scientist》（MUTEK 藝人頁：1993 年 Hamilton 與 Tucker 成團、Kraftwerk／Cybotron、techno-bass 構成；Exclaim! 808 鼓與神經質合成器；Discogs：《Mad Scientist》Puzzlebox 2009、Tucker 與 Hamilton 共同製作）；Audio Active（On-U Sound Studios、Sherwood 共同製作）。Armando、Hard Champion、New Year's Eve at Sweet Basil、Astral Engineering 補搜無專輯層級新料，照研究稿薄寫。
+- 事實裁定：Armando 年份寫「1990 年代初」、不寫廠牌與目錄號（Muzique 1992／Trax 1993 兩說），聲音寫成「他這時期的製作」；Hard Champion／Dr. Jeckyle／NYE 不寫舊稿的 Paddle Wheel 日期、作曲沿革與版本；Roots & Herbs 六首全為 Shorter 作品（舊稿「五首」錯）；Ataraxia 是日本團（派工特注誤記義大利），不寫團員名；Attrition 是殭屍電影啟發的即興配樂（舊稿「遊戲配樂」錯）；Pablo 那張寫 Prince Jammy 混音、不寫 Rockers International 1978；Audio Active 不寫 Style Scott；AUX 88 同名專輯不寫「第幾張」（MUTEK 清單序數自相矛盾）；Xeo-Genetic 不寫發行日與獎項；O'Farrill 葛萊美（同名曲入圍器樂作曲）略過。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 33 處，改動檔 `review-sd-056.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Astral Engineering | 刪「後來以 chillout 經典之名流傳」 | 只有廠牌自己的宣傳語 |
+| Ataraxia | 刪「原版流通有限，1994 年 CD 再發才傳得較廣」；補《盤名》 | 無出處、屬版本資訊 |
+| Augustus Pablo | 鉤子「封面掛的是」→「掛名的是」；第二句補《盤名》，刪「Pablo 只是班底一員」「音量大」壓字數 | 鉤子避封面字眼；QA |
+| Dr. Jeckyle、NYE、Jazz Corner Vol. 2、Three Blind Mice Vol. 2、Grumiaux、Rubinstein、O'Farrill、At the Drive-In、AUX 88 同名 | 第二句補《盤名》，隨之刪次要句壓字數（NYE「七人編制」、Three Blind Mice「四人後來都自組樂團」與「擴編重發」、Grumiaux「與 Philips 合作二十多年」、O'Farrill「樂手與舞者同台」、ATDI「錄音薄但緊繃」） | QA 無《》、字數；Three Blind Mice 改寫為「1990 年才由 Blue Note 出版」不提擴編版本 |
+| The Witch Doctor | 刪〈Afrique〉vamp 沿用句壓字數，補回 Shorter 一句接 Timmons | 字數、語句完整 |
+
+其餘逐張四問無改：Arpanet 事件視界與「科學過程」自述、First Flight 日本樂迷票選與日比谷公會堂、Hard Champion 駐演最後一晚、Roots & Herbs 擱置九年、Chi-Congo Don Moye 首張、Rubinstein 1910 年「鋼琴像斑鳩琴」、ATDI 九名觀眾與 600 美元三天錄完、Attrition 2-Tone 時代的考文垂、Atrium Carceri 斯德哥爾摩地鐵隧道殘響、AUX 88《Xeo-Genetic》發片派對 jam 皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。Ataraxia 187、Astral 197 薄寫照收。
+
+## sd-057（30 張，其餘：B.T. Express、Baby Keem、Bananarians、Barrington Levy 5、Barry White、Bcalm、Beatrice Rana、Beefeater、Ben Frost 3、Wuorinen、Bennie Wallace 2、Benny Green 2、Parmegiani、Betty Wright、Biff Bang Pow!、Big Bag、Big John Patton 6）— s31
+
+- 研究：3 支 Sonnet，WebSearch 11＋11＋17＝39 次；none：Bcalm（story／sound）、Fortitude III（story）、Big Bag（story）。
+- **主線補查**（WebSearch 約 7 次＋WebFetch）：Bananarians（disk union 商品頁：1982 年唯一作、自主製作、コジマ録音、節奏機 techno punk → industrial pop → reggae、杉林恭雄與楠均後組くじら；posfie 前團員回憶：藤井参助、吉祥寺マイナー與新宿ロフト）→ 由三塊 thin 救回；Bcalm（Lofi Girl 官方 Bandcamp：2024-08-15 發行、六位客席；藝人頁：本名 Callum Sykora、英國）→ 薄寫上線；Fortitude III（filmmusicreporter：2018-12 數位發行、前兩季 Mute）；Bennie Wallace 兩張（Blue Note 官網 Yanow：紐奧良 R&B 與幽默；Dr. John 製作兩張）；Benny Green《Lineage》（A&R Studios 錄音、〈Phoebe's Samba〉寫給妹妹）；Big Bag（extended 一次無新料，年份三說）。
+- 事實裁定：Baby Keem 製作寫「與 Danja 等人」；Barry White 不寫舞曲榜名次（查到的是 R&B 單曲第 25）；《Doh Ray Me》寫 1980、註明另作 1981；《Shaolin Temple》不寫 Junjo 為製作人；《Run Come Ya!》不寫製作人；Betty Wright 不把前作的 Criteria 與班底寫成本張；Benny Green《Lineage》是 Blue Note（非 Criss Cross）；《The Place to Be》管樂六人；Wuorinen 那張不寫年份（1988／1993 兩說）；Big Bag 年份寫「2000 年代後半」、不寫 2015 英國課程；Beefeater 不寫 Gil Scott-Heron 刻紋；Bananarians 不寫 2010 年完整版（版本資訊）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 20 處，改動檔 `review-sd-057.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Baby Keem、Teach Me Culture、Barry White、Bordertown、Accent on the Blues、Blue John、That Certain Feeling | 「常被視為」→「被視為」 | 各只有單一具名出處 |
+| Bcalm | 鉤子「一向走放鬆路線，這張也不例外」→ 以六位同廠客席為鉤子；客席補 Dontcry；刪後作年份壓字數 | 專輯本身無聲音出處，「也不例外」是推論 |
+| Bananarians | 刪「2010 年出了追悼用的完整版」，改寫藤井 1991 年在多明尼加客死 | 版本資訊 |
+| Wuorinen、Biff Bang Pow!、Blue John、Memphis To New York Spirit、The Way I Feel | 第二句補《盤名》，隨之刪次要句（Wuorinen 十二音與 Ohlsson 長期合作、Biff Bang Pow! 團名由來、Blue John「避開假高潮」、The Way I Feel〈Davene〉） | QA 無《》、字數 |
+
+其餘逐張四問無改：B.T. Express R&B 專輯榜冠軍、Rana「帶義大利口音的 Stravinsky」、Beefeater 解散後才出版、Dark 第二季不照剪輯寫、Fortitude III 四集最終季、Levy 五張各自鉤子（自製首作、Linval Thompson、Jah Life、〈Collie Weed〉、回到寫歌）、Parmegiani PSI 小廠牌與「暗面」、Big John Patton 六張（Ulmer、擱置、Footprints＋Cissy Strut、新班底、音栓與音量踏板、無貝斯三重奏）皆有出處。《Blue John》鉤子「封套背面預告了好幾年」是擱置故事本身（Terry Martin 內頁文），不是封套印刷雜項，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線（sd-056、sd-057）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-056/057.json`；60 張 60 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 60/60 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 56 處（sd-056 29、sd-057 27）。
+- 本工作階段 WebSearch 合計約 102 次（研究層 sd-056 48、sd-057 39，主線約 15）。
+
+## sd-hold-6：sd-047／054 留置 4 張最終重查（藤井貞泰、A-Sound、99.99、Akal Dub）— s30
+
+- 研究：1 支 Sonnet，WebSearch 6 次；突破口是 **Discogs 公開 API（curl，不 403）的 release notes／credits** 與 A-Sound 的蒙古文 Last.fm 藝人維基。研究稿 `desc-tools/batches/research/sd-hold-6-a.json`，必查四項逐項寫進 notes。**救回 4、留置 0**（照協調端指示，不再留置）。
+- 寫作：主線自寫（4 張，資料薄）。
+  - 藤井貞泰《Prelude to a Kiss》：鉤子取錄音經過（1976-10-20 今治爵士場地 ab ab 現場錄音，Discogs notes 明記）；寫三重奏編制與標準曲＋〈Black Orpheus〉。不寫演奏風格（無來源）、不寫 2022 紙盒復刻（版本）。
+  - A-Sound《Release》：鉤子「蒙古的 Radiohead」取自 Last.fm 藝人維基的聽眾稱呼（使用者可編輯文字，寫成聽眾的叫法，不當樂評）；舊稿 Keane 之夜日期錯（6/28 非 6/29）、「7 月 1 日上市」無來源，皆不寫；「第一張收英語歌的蒙古搖滾專輯」只見維基鏡像摘要，不寫。
+  - 99.99《More of 99.99》：鉤子取錄音方式（1982 年秋 King Record Studio、三菱 X-80 PCM 直接混成數位母帶，Discogs credits），比照 sd-054 Hannibal 直刻錄音「錄音方式屬故事」先例；Weather Report 式評語明寫是「樂團首作」的評價；不寫曲名玩笑與曲長。
+  - Akal Dub《Life and the Void》：身分更正為美國俄勒岡州單人電子製作人（非法國團），2014 年原發（Bandcamp 2019 是補上架，不寫）；材料撐不起鉤子，以「這是什麼」開頭薄寫 175 字。
+- QA 0 問題；鉤子前四字互異（1976／蒙古聽眾／1982／《Life）。
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-hold-6.json`；4 鍵 `wrangler@4 kv bulk put --remote`；回讀 4/4；`front-check` 前台 4/4（CURATED 0）。manifest 同步 4 處。
+
+## sd-fix-1：張露卡改掛名張璐、delayde 薄寫（協調端裁定的執行）— s30
+
+### 張露《繁星點點 張露》→ 張璐《繁星點點》
+
+- **身分**：Discogs release 33707097（台灣環球唱片 1977 年 1 月 LP，ULP-5125，藝人 6145426 張璐，另有 1978 Prinstar《愛之鎖 第一輯》）。封底標題「1977年巨星 學生偶像」。MB release-group 2070a4d2 是同一批錄音的串流數位版，掛名「張露、1973-10-23」為誤掛（MB 無法由本線修），card_catalog／manifest 的 `rgMbid` 保留以指向錄音。
+- **封面重核**：原 cover6／card_catalog 是 CAA 上的串流封面——與 LP 同一張照片，但字被改成「張露」。改用 Discogs 33707097 的 LP 原版正面（印張璐、環球 ULP-5125），登錄 `data/discogs-cover-registry.json`（reviewed ok）＋`DISCOGS-COVERS.md`；GET 200。
+- **六處**（工具 `tools/fix1-rename.mjs`）：
+  1. seed：`["張璐","繁星點點",3,5,1,["pop"],1977]`——年份 1973→1977（原版 LP 年）、曲風 pop,jazz→pop（jazz 是張露時代曲標籤帶進來的）。三軸不動。
+  2. KV：新鍵寫 desc2／desc4（新稿）、rating4（照搬）、cover6（Discogs）、mapgenre3（**不照搬**張露的 Shidaiqu／Hong Kong／30s 40s 標籤，改 mandopop／c-pop／taiwanese）；回讀 5/5。舊鍵 5 個未刪，列 `sd-fix-1-kv-deletes-pending.json`；改前值 `kv-before-sd-fix-1-rename.json`。
+  3. card_catalog：`migrate-card-catalog-ids.mjs` 擴充 `oldAlbum／newAlbum`（盤名也改時用；沒給照舊用 `album`），搬到新 id 並驗證，再 PATCH coverUrl 為 Discogs 圖；備份 `firestore-backup-sd-fix-1.json`；舊文件保留。album_overrides 新舊皆無。
+  4. `card-preview-status.js`、5. `data/apple-audio-map-v1.json` 換鍵（unavailable 不變）；6. `card-subgenres.json` 原本無此卡，`build-genre-tree.mjs --pull --write` 後新增 `pop/c-pop/mandopop`、`pop/t-pop`（`tw-pop-artists.json` 加張璐）。
+- 簡介：照 general-desc-base 薄寫 195 字，以「這是什麼」開頭（材料只有身分與誤掛經過，撐不起鉤子）；寫誤掛一句，因為它就是這張卡的身分故事。「學生偶像」取自唱片封底標題，只當當年宣傳定位一句。未採：1975 歌唱比賽冠軍（只有影片標題，YouTube 抓不到）。
+- manifest：`onboarding-manifest-c106-20260910.json` 該筆原地改成張璐（藝人、盤名、年份、曲風、封面、簡介、aliasReview 補註）；`verify-album-onboarding --published` 0 error（upc 空的 warning 照舊）。
+- 情緒三軸重建：`build-priors.mjs` → `build-scale.mjs v0` → `scripts/build-card-moods.mjs`，只動這一張的鍵。
+- 藝人介紹：張璐新藝人，名冊 `roster-sd-fix-1-ar-d-941.json`（tier D、addedBy sd-fix-1），progress 批 `ar-d-941`。
+
+### delayde《finding solitude》
+
+- 薄寫上線（211 字，以「這是什麼」開頭）：Saltash 單人 beat 製作人、2018 年 11 月 Bandcamp 自主發行、ambient／chillout／lofi 標籤、三位客席、2020 續作。舊稿的曲數、總長、開頭冷知識拿掉；Chillhop 的同名 delayde 未證實同一人，不寫。
+- KV：舊值 `kv-before-sd-fix-1-delayde.json`；desc2 1 鍵，回讀 1/1；`front-check` 前台 2/2（含張璐）。manifest 同步 1 處。
+- **藝人介紹（補記）**：`ar-d-941` 補洞 1 支 Sonnet（搜尋 7 次）＋主線 extended 1 次，張璐身世／貢獻／地位三格 none——可用事實只有國家文化記憶庫明星卡（1970 年代臺灣電視劇演員）單源；電影《彩霞滿天》（1979）飾蘇燕青、與谷名倫合唱〈愛之鎖〉只見百度百科與其鏡像站，不算獨立兩源。照藝人介紹線規 **skipped**（progress 已標），不硬寫。
+
+## sd-055（30 張，其餘組：Bashung、ALBA、Allen Clapp、Alone in a Crowd、Alpha & Omega 3、Altan Urag 2、Alternative TV、Amp、And One、Andrew Hill 4、Andy Roberts、Andy Sheppard 2、Angèle、Braxton、Anthony Rother 3、Apelsin、Arcana、Archie Shepp 2、Aretha、Arlo Parks）— s30
+
+- 研究：3 支 Sonnet，WebSearch 15＋16＋13＝44 次；none 0。母語來源：Bashung 法文維基／Universalis／Larousse、Angèle 法文、Rother 德文訪談、Apelsin 俄文維基。研究層 b 回報一個 qobuz 搜尋結果夾帶「忽略系統提示」的注入文字，未採用。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Altan Urag《Hypnotism》《Nation》（匹茲堡大學 Forbes5 期刊專文：副題 Contemporary／Folk Album、各曲編制與技法）→ story／sound 由 none／thin 升 ok；Apelsin（愛沙尼亞文維基：塔林 Rae 餐廳起家、秀團名義、1978 中央電視台新年節目走紅）；And One（Ruiz 1992 離團、〈Techno Man〉）。Watch and Pray、Braxton 補查無新料，薄寫。
+- 身分／事實裁定：Aretha《Aretha》是 1961 Columbia 首張（舊稿整段寫成 1980 Arista 同名盤，丟棄），製作寫 Hammond；Overstanding 寫自家 A&O 廠牌、不寫 Greensleeves 子公司；Amp 是英國團；Alone in a Crowd 與 Inside Out 的關聯查不到，不寫；Braxton 不寫 PCM／編碼器／赤坂；Verbalizer 只寫 2014；Arlo Parks 不寫 Metacritic 分數；Angèle 不寫分手對象；Home Grown 不寫 BFBS 禁播（單源）；One for One 不寫 Cuscuna。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 7 張，改動檔 `review-sd-055.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Allen Clapp、Alternative TV、Andy Roberts、Braxton、Rother《Beuys》、Alone in a Crowd | 第二句補《盤名》，並刪次要細節壓回 240 字內（錄音地點、團員只剩兩人、題獻名單縮短、Art Ensemble of Chicago、拍手聲、lo-fi 質感） | 第二句交代這是什麼；字數 |
+| Andrew Hill《One for One》 | 刪「收十一首」 | 軌數 |
+| Rother《Beuys》 | 「這套雙 CD」→「專輯」、「附贈的」→「另一碟」 | 版本雜項 |
+| Braxton | 刪「有人聽出日本樂手在樂曲加速時跟得吃力」 | 無具名出處的負評 |
+
+其餘逐張四問無改：鉤子對過研究稿（Bashung「最後一次機會」與 Philips 考慮不續約、Alone in a Crowd 只演過一場、Woodbridge 自述有靈性不信教、ATV 首波樂評一致敵意與 Hegarty 的 industrial 橋梁、Andrew!!! 擱置近四年、Angèle 盤名＝出生年、Shepp 第二次悼念 Malcolm X、Antibes 美國班底沒跟來）。《Delivery Suite》鉤子是 Ronnie Scott's 現場錄音的時間地點，屬錄音經過（故事），照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條「Side By Side」誤判 A／B 面）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 26 處。
+- 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
+
+## sd-064（30 張，其餘：Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Dizzy Gillespie、Dizzy Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Don Wilkerson、Donald Byrd 8、Doodle、Doris Norton）— s35
+
+- 研究：3 支 Sonnet，WebSearch 12＋14＋16＝42 次；none：Doodle（story）。Doris Norton 用義文維基與《MC microcomputer》1984 年 7–8 月號專文（archive.org 全文）。
+- **主線補查**（WebSearch 4 次＋Discogs 公開 API，facts 標【主線補查】）：Gillespie《Horn of Plenty》（Discogs notes：1952-03-27 Studio Jouvenet、1952-04-11 Schola Cantorum 兩場；credits 美法混編、Humberto Canto 康加）→ story／sound 升 ok；Don Carlos & Gold 兩張（credits：Roy Cousins／Crucial Bunny／Peter Chemist 與 Roots Radics 成員；Niney／Jo Jo Hookim／Scientist／Eradication Squad）→ sound 升 ok；Doky Brothers 兩張（首張 ℗ 1995、Brecker 兄弟、Wakenius、Kongshaug；《2》Jarreau、Reeves、Vannelli、Salomonsen、Watts）；Pullen《Kele Mou Bana》（首版 1992、編制無爵士鼓手、Franco 的 berimbau）、《Live...Again》（1993-07-13）；Don Byas《Tenderly》（Vogue 1986 CD 合輯，巴黎 Vogue 錄音）；Doodle（樂天亞洲音樂商品頁：2015 年規劃、Total Feedback 受邀、2004 成軍、風格與成員；Discogs credits；CDJapan 2018 日本盤）→ story 由 none 升 thin、sound 升 ok；DJ Sneak（Relief ©1996）；Kofi 擱置原因 extended 一次仍無來源。
+- 身分／事實裁定：Fischer-Dieskau 那張只寫 DG–Moore 錄音計畫層級，不寫張數、盒裝、曲序；Disco Inferno 是 1991 首張專輯（舊稿 EP 錯）、不寫星等；Byas《Tenderly》寫成 1950 年代初巴黎 Vogue 抒情標準曲錄音，不寫「1970 年返美」與 1986 CD；DJ Mayonnaise 是緬因州 Portland（舊稿奧勒岡錯）；DJ Sneak 寫 1996；Doky 首張寫 1995（Discogs ℗，官網 1996 為事後憶述）；Don Carlos 不寫本名與出生地；《Mustang!》標題曲是 Sonny Red 作曲（舊稿錯）；《Kofi》不寫擱置原因、不寫〈The Loud Minority〉樂團說；《Kele Mou Bana》寫 1992；《Live...Again》不寫「發行後幾週過世」；Doris Norton 不寫「Apple 第一位音樂代言人」，系統照 1984 專文寫 Apple II 控制 Roland；Doodle 主唱名為廖孟桓（舊稿「廖盟桓」錯）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 27 處，改動檔 `review-sd-064.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Where Is Brooklyn?、Kele Mou Bana、Live...Again、Half Note Vol. 2、Blackjack、Beacon Hill、Byrd in Flight、Kofi、Mustang!、Slow Drag、The Cat Walk、Fischer-Dieskau、Natty Dread Credential | 第二句補《盤名》，隨之刪次要句壓字數（The Thing 團名、Pullen 和聲句、〈Kimyas〉拍號、Ghana 的反差句、〈On the Trail〉俱樂部句、Pearson 伴奏、Moore 對等夥伴、咬字、Junjo 對照） | 第二句交代這是什麼；字數 |
+| Random Thoughts | 刪「寫非裔美國青年處境的曲子最為外放」 | 出自聽眾留言，非具名評論 |
+| Beacon Hill | 「六首都是標準曲」→「曲目都是標準曲」 | 軌數 |
+| Byrd in Flight | 刪「開場」 | 軌序 |
+| Doky Brothers《2》 | 殘句「客座有：Al Jarreau 等歌手，David Sanborn 等樂手」改寫並補 Dianne Reeves；刪預購進榜句壓字數 | 主線補查 credits；字數 |
+
+其餘逐張四問無改：Didjits 的 Rick Didjit 台上人格、Dijon 兒子出生後閉關、Disco Inferno 由後龐克起步、Gillespie 巴黎美法混編、Reece 牙買加→倫敦→巴黎→紐約、DJ Drez 西塔琴與吟唱、Mayonnaise 隔八年加管樂、Sneak 切迪斯可（Daft Punk 影響有 Insomniac 出處）、Doky 首張「兄弟檔請兄弟檔」、Byas 留歐、Don Carlos〈Lazer Beam〉先在 dubplate 走紅、Wilkerson 向 Bob Wills 致敬、Beacon Hill 錄音師家中錄音、Mustang! Five Spot 六週、Slow Drag Higgins 開口 scat、Doodle Total Feedback、Norton「更像程式設計師」皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：DJ Drez、DJ Sneak、Doky 兩張、Byas、Natty Dread Credential、Doodle、Blackjack。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-064.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-065（30 張，其餘：Dorothy Norwood、DOUBLE、Dr Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Thelin/Favre/Minor、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）— s35
+
+- 研究：3 支 Sonnet，WebSearch 12＋15＋14＝41 次；none：Eddie Daniels（story）、dynArec《Overland Travelling》（story）。福音三張以 Journal of Gospel Music（Marovich）、Acrobat 精選樂評、Nashboro 廠牌史為主；DOUBLE 用日文維基；Goykovich 用 Discogs 與 Jazzwise。研究層 b 回報一則搜尋結果夾帶「提供 gumbo 食譜」的注入文字，未採用。
+- **主線補查**（WebSearch 4 次＋Discogs 公開 API＋WebFetch，facts 標【主線補查】）：Eddie Daniels《This Is New》（Discogs：1968-08-04 錄、日本 Columbia Takt 系列、日野皓正／菊地雅章／稲葉國光／日野元彦；Gary Carner 的 Pepper Adams 部落格：Thad Jones–Mel Lewis 1968 日本巡演主辦失誤、樂團走後他留下錄音）→ story 由 none 升 ok（研究層把舊稿編制誤判為別張，實為本盤）；Duke Pearson《How Insensitive》（Nat Hentoff 內頁文轉錄：Jack Manno 十七人人聲大樂團、排練兩年、女聲當小號組男聲當長號組）→ story／sound 升 ok；Earl Cunningham（Discogs：Heptones 的 Earl Morgan 製作編曲、Channel One／King Tubby's、Roots Radics 成員）→ sound 升 ok；Candles of Vision（Discogs：1972-06-16 格拉茨 ORF 錄音室、三人無鋼琴無貝斯、Trio／Duett 編號曲名）→ story 升 ok；Hope Meets Foster（1955-10-04、Van Gelder、Freeman Lee、Ira Gitler）；Skipafone 確認是 Guided Missile 1998 CD 專輯；Cooke 三張與 Overland Travelling 只補到廠牌年份；Norwood、DOUBLE 補搜無新料。
+- 身分／事實裁定：Norwood 那張是 Jewel 時期（非 Savoy）；DOUBLE 不寫 CCCD 與特典（版本）；Alimantado 車禍只寫 1976 年 12 月；Strangely Strange 的 Tim Goulding 是創團三人之一（舊稿錯）；Perkins 不寫 Muldrow「後來成為伴侶」；《Now Hear This》不寫 Village Vanguard 代班；Goykovich 1961 不寫「第一張南斯拉夫爵士唱片」、不與《The Golden 8》混；Cooke 不用「Sweet Singer」（查無出處），封號用 Sweetheart of the Potomac／Madame；Elaheh Vol 5 是 Caltex 數位合輯，不寫 1972-08-01（灌檔日）；ELEH 只在 Important Records（卡單 Touch 是另一條線），不寫限量張數；Hope Meets Foster 是 Foster 兩首、合寫一首（舊稿三首錯）；Elton Dean Quartet 是 Seven Dials 現場（舊稿漏）；Ninesense 只寫兩支長號；Poly-Currents 不寫 Fred Tompkins 長笛位置（三源衝突）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-065.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Heavy Petting | 刪「原版是最搶手的 Vertigo 盤之一」 | 原版收藏價屬版本雜項 |
+| Expressions (2012 A.U.) | 刪「2023 年重發黑膠」 | 版本 |
+| Earl Cunningham | 刪「原版長年絕版，後來才重發黑膠」，改補 Steely 鍵盤 | 版本；主線補查聲音構成 |
+| Slavic Mood | 「七首全是原創」→「曲子全是原創」 | 軌數 |
+| Overland Travelling | 鉤子「轉到義大利廠牌」→「換了廠牌」 | 無出處 |
+| Now Hear This、User Input、He'll Fix It、Poly-Currents | 「常被視為」→「被視為」 | 各只有單一具名出處 |
+| Mr. Jones | 「開場是齊奏號角」→「有齊奏號角……的曲子」 | 軌序 |
+| Poly-Currents | 刪〈Agappe Love〉長笛句 | 長笛歸屬來源互相衝突 |
+
+其餘逐張四問無改：Norwood「說故事的人」、DOUBLE 姊姊過世後一人沿用團名、Alimantado 車禍與〈Born for a Purpose〉、Dr. John 葛萊美入圍（第 47 屆，官方獎項照寫）、Boyd 與 17 歲 Gary Moore、Perkins 改唱、Manno 十七人、Pearson 大樂團與 Liberty 收購、《The Phantom》NET 節目配樂與兩把吉他兩位康加、Dump 四軌 Prince 翻唱、Goykovich 科隆與巴爾幹民謠、Hot Press 評 dynArec、Ectogram 貝斯擴大機壞掉成團、Daniels 留日、Cooke 三張（低估／老聖詩／講道曲）、Candles 無鋼琴無貝斯、El Hombre Trajeado 暖場名單、Elaheh 與 Golha、ELEH 2020 年承認身分、Hope 與 Bud Powell、Dean〈Naima〉、Ninesense Bracknell 委託、Merry-Go-Round 雙鍵盤手、Mr. Jones 1972 夏天進棚、Poly-Currents 由三重奏擴成七人皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：Overland Travelling、Earl Cunningham、Norwood、Dump、Cooke 三張、Skipafone、Elaheh、Hope Meets Foster、Candles of Vision。
+
+### 上線（sd-064、sd-065）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-065.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-064 42、sd-065 41，主線 8）。
+
+## sd-066（30 張，其餘：Elvin Jones、Emerald Web、Emil Beaulieau、Ensemble intercontemporain（Hurel）、Ensemble Recherche 2、Entheogenic、EP-4、Epic45、Erik Truffaz 5、eRikm、ERISTHEPLANET、Erroll Garner 4、Evan Parker & Eddie Prévost、Evil Needle 2、Evoken 2、Exos 2、Experimental Audio Research 3）— s36
+
+- 研究：3 支 Sonnet，WebSearch 15＋13＋14＝42 次；無 none。EP-4 三塊全 thin（日文維基、ototoy 都沒提這張）。
+- **主線補查**（WebSearch 2 次＋WebFetch，facts 標【主線補查】）：EP-4《Multilevel Holarchy》（Discogs API release notes：1980–83 現場錄音、1985 Telegraph／Skating Pears；View Records、All Night Flight 商品頁的聲音描述；CDJournal 團史）→ sound 救回；Erik Truffaz《Mantis》（Encyclopedia.com：簽 Blue Note 後「改變方向」、Ladyland 四重奏、Guardian 評數位美學）。
+- 事實裁定：Ferneyhough 盤寫 Stradivarius、Lachenmann 盤寫 Naïve／WDR 1992 錄音（舊稿 Kairos 錯）；eRikm《Zygosis》不寫「第一張」（1994–95 已有手工錄音帶）；Emil Beaulieau 不斷言用了日本藝人素材；Entheogenic 不寫在多塞特錄音；E.A.R.《Mesmerised》是 Kember 單人作品——派工詞原寫 Shields／Martin／Prévost 屬《Mesmerised》是協調端記錯，研究層更正為《Beyond the Pale》素材、用在《The Köner Experiment》；Overture to Dawn 三卷錄音日期與發行年來源互相矛盾，一律不寫；Garner 1953 同名盤不寫「一天錄完整張」；《Pestrepeller》不寫限量張數；Evoken、Evil Needle、Exos 舊稿查無出處的細節不寫。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-066.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Erroll Garner《Erroll Garner》 | 刪「〈Caravan〉〈Lullaby of Birdland〉都收在這裡」；第二句補《Erroll Garner》 | 研究稿：2/27 那場曲子分散到多張 LP、〈Lullaby〉另有次月短版，本卡收錄哪幾首無法確定；QA 無《》 |
+| Overture to Dawn Vol. 3 | 刪「目錄標示部分曲子可能有後補的長號、豎笛與貝斯」；補盤名 | credit／版本雜項且來源矛盾；QA 無《》 |
+| Overture to Dawn Vol. 2、Vol. 4 | 「這一卷」改《盤名》，刪「那時還沒有磁帶」「用家用機器刻成」等重複背景壓回 240 字 | QA 無《》、字數 |
+| 《Pestrepeller》 | 刪「兩段」 | 段數屬軌數雜項 |
+| Entheogenic《Golden Cap》 | 刪「也有聽眾長年拿它專注放鬆」 | 單一 Bandcamp 聽眾留言不足為評價 |
+| Truffaz《Arkhangelsk》 | 「Christophe」→「法國歌手 Christophe」 | 人名首次出現補身分（AAJ） |
+| ERISTHEPLANET | fix-spacing 補「YouTuber 到」空格 | 格式 |
+
+其餘逐張四問無改：Hurel 的 Siemens 基金會獎（Billaudot）、Ferneyhough 的 BBC Music Magazine 評、Atra Mors「常被視為樂團至此的巔峰」（PopMatters 具名）、Exos《Strength》「少數既能在俱樂部又適合在家聽」（AllMusic Birchmeier、Exclaim!）、Köner「更像 Köner 自己的作品」（Scaruffi）、Truffaz《Out of a Dream》「第一個登上 Blue Note 的法國樂團」（Byblos 音樂節介紹）皆有出處。Garner 1953 保留 78 轉三分鐘限制與 LP，屬故事核心（Avakian、Frémeaux）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-066.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-067（30 張，其餘：Experimental Audio Research、Bosso & Girotto、Fania All-Stars、Fareed Haque、Fausto、Fila Brazillia 3、Filmmaker、Fin.K.L、Final、Final Stage、Fitz Ambro$e & Ohbliv、Fix、Flatt & Scruggs、Flower Travellin' Band 2、Fluxion、Foje、Forests、Franklin Bruno、Lonberg-Holm & Stephens、Freddie Hubbard 4、Freddie King、Freddie Roach 2、Freeform）— s36
+
+- 研究：3 支 Sonnet，WebSearch 14＋20＋13＝47 次；none 只有 Final Stage（story、sound）、Fix（story、sound）。母語來源：Fin.K.L 韓文、Fausto 葡文（Altamont）、Foje 立陶宛文維基、Fix 愛沙尼亞文維基、Final Stage 越文。
+- **主線補查**（WebSearch 3 次＋WebFetch＋Discogs API，facts 標【主線補查】）：Final Stage《Sân khấu cuối cùng》（HEHEMETAL 首張專輯報導：2004 河內成軍、demo／EP 經過、四首歌的題材、power metal 味；Spirit of Metal 風格）→ 救回；Fix《Värviline maailm》（Discogs credits：班底與編制、小提琴、雙打擊、Silvi Vrait 客席）→ sound 補到 thin；Fausto（Time Out Lisboa：1970 年代為 Orfeu 錄兩張；RTP Callixto 頁核對 José Manuel Nunes／〈Madrugada〉屬 1970 首張 LP，排除）。無留置。
+- 事實裁定：《Here to Stay》寫 1962 年 12 月錄、1976 年首度發行（舊稿「二十三年」錯，卡單 1985 為單張重發年，照卡單年份不動）；Freddie King 不寫榜位；Fania 只寫兩首是洋基球場現場；Fila Brazillia《Jump Leads》不寫 Radiohead 混音、Harold Budd 合作盤；Fluxion 不寫 Echocord（派工詞原寫錯）；FTB《Make Up》不點名鍵盤手、《Anywhere》不寫封面；Fin.K.L 不寫發行日與銷量；Freeform 不寫 Skam／Warp（只見搜尋摘要）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-067.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lonberg-Holm & Stephens《Crackle》 | 「這張收錄」→「《Crackle》收錄」 | QA 無《》 |
+| Freeform《Elastic Speakers》 | 刪「正值 IDM 的高峰期」「〈Ect〉〈Junction〉是常被點名的曲子」 | 皆出自 Discogs 使用者留言，非具名評價；薄寫 166 字 |
+| Forests | 第二句補盤名；刪 Hauste 類型註記與 TikTok 取樣細節壓回 240 | QA 無《》、字數 |
+
+其餘逐張四問無改：FTB《Anywhere》「常被視為遠不只是翻唱盤」出自 Julian Cope《Japrocksampler》；《Make Up》「現場與錄音室從一開始就規劃並陳」有研究稿出處；《Mistral》Art Pepper 與 Hubbard 唯一同場、1980 好萊塢錄音（研究稿 Ocean Way）；《Double Take》隔二十年回 Blue Note（1965《Night of the Cookers》）；Flatt & Scruggs 唯一鄉村榜冠軍；Fin.K.L〈To My Boyfriend〉2021 入選百大名曲（Melon／首爾新聞）；Fausto「過渡之作、第一部大作」（Altamont）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-067.json`；30 張 30 鍵（Fin.K.L 雖 CJK 成員名，卡面藝人與盤名皆非 CJK、原無 desc4，只寫 desc2）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 94 次（研究層 sd-066 42、sd-067 47，主線 5）。
+
+## sd-062（30 張，其餘：Cicada、Circle、Claude François、Claude Young、Clifford Jordan 4、Clyde McPhatter、Coil presents Black Light District、Collage 2、Consumer Electronics、Controlled Bleeding、Council of Nine、Count Ossie、Credo、Cro-Mags 2、Crown of Thornz、Crystal Vibe、Culture Freeman meets the Bush Chemists、Curly Ray Cline 2、Cuushe 2、Cygnus、CYNE、Cæcilie Norby 2）— s34
+
+- 研究：3 支 Sonnet，WebSearch 11＋17＋14＝42 次；none 只有 Norby《Queen of Bad Excuses》sound。母語來源：Cicada 日文 CD Journal／flau、Claude François 法文維基、Collage 愛沙尼亞文維基、Credo 拉脫維亞來源、Norby 丹麥文維基。寫稿前預查 60 張（sd-062／063）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 2 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Claude Young（題獻、底特律與倫敦兩地錄音、Elypsia）；Clifford Jordan《Hello, Hank Jones》（Media Sound、Workman／Waits、製作人小沢善雄、東芝 EMI Eastworld）；《Cliff Craft》（Van Gelder Hackensack、Farmer 由 ABC-Paramount 授權）；McPhatter《Love Ballads》（Sequel 再發註記：1955-08～1958-02 三間錄音室的單曲錄音，證明是拼盤）；Norby《My Corner of the Sky》（英文維基：與 Niels Lan Doky 把流行歌改編給爵士編制、填詞 Brecker／Corea／Grolnick／Shorter、美國班底）→ story ok；《Queen of Bad Excuses》（與 Danielsson 合作）；Consumer Electronics（1982 年 4 月福克蘭備戰期間的 C90 首版）；Collage《Käokiri》（Melodiya credit：愛沙尼亞電台錄音、Vahuri 編曲指揮、樂器與七位歌手；1982 再壓盤列 Apelsin，關係不明不寫）。
+- 事實裁定：Cicada《Farewell》不是第一張在日本上架的實體（flau 2015《Ocean》才是）；Circle 不寫伊藤潔生平、石岡瑛子、母帶遺失；Black Light District 不寫 Derek Jarman；Love Ballads 不寫十歲、週薪、〈Lucille〉自寫；Controlled Bleeding 的 Joe Papa 是主唱（舊稿誤作鼓手）；Consumer Electronics 不寫 Best 生年（1966／1968 兩說），聲音照實寫成 power electronics 類型通則；Collage 兩張團史與聲音屬共用事實，年份寫「1970 年代中期／後期」；Count Ossie 那張錄音經過照實寫「至今不清楚」；Council of Nine 母親健康故事單源略過；Cro-Mags《Alpha-Omega》作曲權爭議不採任一方、《Best Wishes》不寫鬧鬼與海洛因；Crown of Thornz 只寫「主唱」；Cuushe《WAKEN》不寫 aus 共同製作、騷擾事件不寫人名；Norby《Queen》不寫藏曲與 Scofield 七軌；CYNE 是四人團、不斷言廠牌；Crystal Vibe 不寫成烏克蘭廠牌（Altar 在蒙特婁）。
+- **薄寫上線不留置**：Claude Young、Love Ballads、Käokiri、Leathersex、Crystal Vibe、Culture Freeman、Cygnus、Credo（聲音）、Crown of Thornz、Norby 兩張（《Queen》183 字、聲音只寫合作分工）、Cuushe《Red Rocket Telepathy》183 字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 3 處，改動檔 `review-sd-062.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Clifford Jordan《Cliff Craft》 | 「加上 咆勃」刪多餘空格 | 格式 |
+| Clyde McPhatter《Love Ballads》 | 「單曲與 B 面」→「單曲正反面」 | 避 A／B 面字眼 |
+| Clifford Jordan《Hello, Hank Jones》 | 刪「Jones 在〈Love for Sale〉的演奏特別受稱讚」 | 出處只有網友留言 |
+
+其餘逐張四問無改：Cicada 離別概念（flau 定位）、Circle 閣樓排練的廚房用具與風箱（Holland 回憶）、François 改寫英美流行歌、Jordan 四張各取一角（八個月三張、18 歲 Lee Morgan 供曲、直刻錄音、中午到午夜的馬拉松場次）、Coil 偷聽情侶對話的取樣、Collage regilaul、Golgotha 被當成基督教專輯、Count Ossie 過世後七年才出、Credo 的廣島原爆聯篇（Raimonds Pauls）、Flanagan 接主唱、Crown of Thornz 為 Killing Time 暖場趕歌、Cline 被 Stanley 比作五弦琴、〈Why Me, Ralph?〉惡搞 Kristofferson 笑場、Cygnus 'Oumuamua 虛構故事、CYNE 取樣 Spinners／Isaac Hayes 皆有出處。《Hello, Hank Jones》鉤子是直刻錄音方式，比照 sd-054 Hannibal 先例屬故事。《Melnais kliedziens》列樂章題名是在交代聯篇概念，不算曲名體例。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-062.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-063（30 張，其餘：Da Vàng、Dando Shaft 2、D'Agaro／Schlippenbach／Bennink、Danielle Howle、Dariush、Dark Comedy、David Holzman、Stackenäs＋Lonberg-Holm、Deafheaven 2、Death of Samantha、Deepchord 2、Del McCoury 2、delayde、Denise Jannah、Derrick Hodge、Devendra Banhart 2、Devo、Dexter Gordon 3、Dezerter 2、Dhamika、Dianne Reeves 2）— s34
+
+- 研究：3 支 Sonnet，WebSearch 15＋12＋15＝42 次；none 只有 Dark Comedy sound、delayde story。母語來源：Da Vàng 越文（VnExpress）、Dezerter 波蘭文、Denise Jannah 荷蘭文維基。
+- **主線補查**（WebSearch 5 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Dianne Reeves《The Nearness of You》（Discogs 日本盤側標與註記：日本先行發售、附 Pepsi 罐裝咖啡廣告曲〈Freedom〉，三場 Van Gelder 錄音日、Mims／Reeves 製作、完整班底）→ story ok，舊稿「罐裝咖啡廣告曲」屬實、「2 到 5 月分四次」改為三場＋2 月洛杉磯廣告曲；Da Vàng（VnExpress 貝斯手 Lê Quang 專訪：第一屆胡志明市 pop-rock 聯歡得獎、觀眾要他們改唱排行榜歌、「搖滾團能活下來就很好」）；Death of Samantha（封套註記：Moonliner 現場六小時錄完、樂團自製、班底含 Doug Gillard）→ story ok；Del McCoury《Our Kind of Grass》（1976 年 4、6 月錄，Freeland 製作，Bill Runkle 五弦琴兼主唱）；Dark Comedy（Larkin 一人包辦、Art of Dance Studios、Elypsia）；Nights at the Keystone 3（Qobuz／AllMusic 摘要：深夜抒情慢歌、中途提勁）；Deepchord《Tonality of Night》、Stackenäs、Howle 補 credit。Hello Hank Jones、Dhamika、Dariush 補查無新料。
+- 事實裁定：Dariush《Cheshme Man》1991 Caltex 版與 1972 同名專輯關係不明，只寫歌名多有重疊、不寫重錄；Holzman 那張是 Troy（Albany 旗下），不寫解說自寫與錄音廳；Howle、Dark Comedy、Death of Samantha 年份兩說，正文不寫或不強調；Death of Samantha 不寫刻紋師 Porky；Del McCoury《Livin' on the Mountain》不斷言原名，只寫 1971 錄、1976 Grassound、1992 Rebel；Hodge 是在自己的工作室、臥室與旅館錄（舊稿「三間錄音室」錯）；Reeves《Nearness》鋼琴獨奏電子雜音不寫；Landslide 不寫八個 take、單曲版；Underground Out of Poland 不寫美英兩版與 12 吋；Dhamika 不寫「水晶般光脈衝」（Bandcamp 無此語）。
+- **薄寫上線不留置**：delayde《finding solitude 2》（189 字、無鉤子，以「這是什麼」開頭，比照 sd-fix-1 前例）、Dhamika、Dariush、Dark Comedy、Del McCoury《Our Kind of Grass》、Keystone 3、Da Vàng、Danielle Howle、Stackenäs。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 21 處，改動檔 `review-sd-063.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| delayde《finding solitude 2》 | 刪「他後來成為 Chillhop 的固定製作人」 | Chillhop 的 delayde 未證實同一人（sd-fix-1 裁定） |
+| Del McCoury《Our Kind of Grass》 | 鉤子改為「掛 Del McCoury 的名字，主唱卻有一半交給了五弦琴手」，正文補 Runkle 分擔主唱，刪 Baltimore 句壓字數 | 原鉤子與同批《Livin' on the Mountain》同取 Monroe 節奏吉他、前四字相撞；主唱分工出自 Discogs credit，是錄音編制不是 credit 雜項 |
+| Stackenäs、Jannah、Banhart《Oh Me Oh My...》、Devo、Landslide、Keystone 3、Underground Out of Poland、That Day…、Nearness of You | 第二句「這是／這張」改為《盤名》，隨之刪次要句壓字數（Stackenäs 皇家音樂院、Jannah〈'Round Midnight〉、Banhart 煙火槍聲、Dezerter「後半仍然粗暴」與「常被列為最重要專輯之一」、That Day「兼容並蓄」、Nearness「側標寫明全球先行發售」與「Pepsi」） | QA 無《》、字數；側標字樣屬印刷雜項；Dezerter 評價單源 |
+| Nights at the Keystone 3 | 刪「錄音把俱樂部的空間感與四重奏的聲音完整留下」 | 無出處的空話 |
+
+其餘逐張四問無改：Da Vàng 被認定為金屬團（樂團自述）、Dando Shaft demo 直接發行、Lantaloon 轉向搖滾後解散、Fingerprints 無貝斯三重奏、Holzman 引 Martino「十指的手蓋住鍵盤」（NewMusicBox 自述）、Larkin 服役錯過 techno 頭幾年、Deafheaven 兩張（家族創傷與〈Winona〉／四首 demo 與 N Judah）、Deepchord 自稱氛圍音效設計者與短波電台、Jannah 第一位簽 Blue Note 的荷蘭爵士音樂人、Hodge 臥室與旅館、Banhart 兩張（同批亞特蘭大錄音／Gira 不重錄四軌帶）、Devo 首張發行一個月就開錄、Clubhouse 擱置十四年、Landslide 三場拼接、Dezerter 審查改盤名與 D.O.A. 主唱帶出錄音帶、Reeves 罐裝咖啡廣告與 Armatrading／Shirelles 選曲皆有出處。30 張鉤子前四字互異、加權 ≤50（delayde 無鉤子）；查無軌序、曲長、盤號。
+
+### 上線（sd-063）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-063.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-062 42、sd-063 42，主線 7）。
+## sd-068（30 張，其餘：FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）— s37
+
+- 研究：3 支 Sonnet，WebSearch 13＋10＋13＝36 次；none 只有 Schönfeld《Jazz》、George Young《Burgundy》、Mellé《Mindscape》的 sound。母語來源：FRICTION 日文維基、渡辺文男日文維基與大口純一郎回憶、Schönfeld／Katzenbeier 德文維基。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 11 次＋WebFetch＋Discogs API release notes，facts 標【主線補查】）：Gene Harris 1972（blp1553 轉載的 Leroy Robinson 原盤內頁：Butler 與 Wade Marcus 要把他推成領班、刻意配上從沒合作過的東岸樂手）、1973（Gene Edwards 內頁：底特律 Club Mozambique 淵源、Gene Harris Sound）→ story／sound 升 ok；George Russell《So What》（All About Jazz：緊接《The African Game》、〈Time Spiral〉是最後的長篇之一）；Mellé《Mindscape》（Discogs notes：題獻 Alfred Lion、馬里布 Diamondhead 一人錄成）。FRICTION 兩張（日文搜尋 2 次、P-Vine 商品頁 404、Discogs notes 只有錄音地點）、渡辺文男、George Young 兩張、Petrella《Kaleido》、Ghost 兩張（Drag City 頁只有一句宣傳）補查無新料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Replicant Walk 不寫 Mosimann 製作與 Zorn 曲數；聲音段借 1989 現場盤《Dumb Numb CD》評論描述「這個時期」的 FRICTION（同期、含同名曲），照收。Superfunk 不寫 Johnny Guitar Watson 彈貝斯；GENDEMA 不寫 chillwave 與 No Problema Tapes；Funki Porcini 錄音室寫 The Uterus Goldmine；Gemini 的 FACT 引文不套本盤；Mellé《New Faces》寫次中音／上低音（舊稿長號錯）；God Bullies 不寫「電台」「Jesus Goes to Hell Singers」；George Young 不寫 Paddle Wheel／King／David Matthews；Russell 不寫「改寫 Miles 獨奏」「Smalltet」；Braith《Soul Stream》不寫「只有一首出自別人」；Clinton 不寫軌序；Petrella、Glenn Underground 的前作聲音描述不寫成本盤。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-068.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| General Magic《Rechenkönig》 | 刪「失真的快拍混著數位啁啾、爆裂聲」，改「以靜電、回授與節奏脈衝構成」 | 前者只出自 Brainwashed 搜尋摘要（原頁 404），寫作層回報說拿掉其實沒拿 |
+| Gary Burton、Gene Harris 2 張、Ghost《Second Time Around》 | 第二句補《盤名》，並刪次要細節壓回 240 字（JVC 數位爵士系列、三重奏解散句、jazz-funk 標籤） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Schönfeld 廣播樂團十年首席中音、渡辺文男原是歌手、Funk Inc. 試聽帶簽約、Gemini 的樂迷名單、Braith 悼 JFK、Clinton 取樣自己、Mellé 引介 Van Gelder 給 Lion、Glenn Underground 的〈I Feel Love〉重編、Global Communication 兩城各做一半、Ghost 唯一全英文演唱、Petrella 連兩年 DownBeat 新人）。渡辺貞夫為渡辺文男實兄、Adams《Old Feeling》「去世前一年」（1991 錄、1992 年 11 月逝）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條《76:14》盤名誤判曲長）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-068.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-069（30 張，其餘：Gone、Gonzalo Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier Music 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）— s37
+
+- 研究：3 支 Sonnet，WebSearch 18＋16＋14＝48 次；none 0。母語／原文來源：Googoosh 波斯文維基與 Radio Farda 訪談、Rubalcaba 的 DownBeat 1993 年 9 月號報導、Grant Green 原盤內頁（Cuscuna、Goldberg）。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Googoosh《Akharin Khabar》（Amoeba：Caltex 發行、Ghanbari／Zakarian 寫、Cheshmazar 編曲；RadioJavan 2010 年回顧其「清新聲音」）；《Rapsodia》（維基：1995 年葛萊美最佳爵士器樂演奏入圍）；Grant Green《I Want to Hold Your Hand》（Steve Huey 評語、1966 年發行）；Grenadine《Nopalitos》（Michigan Daily 1995 正評、Trouser Press 負評與 Defever 製作）。Images、Dou Mahi、Chaos Laboratory 無新料，照研究稿薄寫。
+- 事實裁定：Gone 盤名照卡單《Let's Get Real, Real Gone for a Change》，Trouser Press 偏負面評語不寫；Avatar 不寫「七首全是他寫的」「後現代」；Imagine 不寫 Dianne Reeves；Googoosh 不寫〈Shak Mikonam〉、《Dou Mahi》不寫作曲人；Grant Green《Remembering》不寫磁頭／相位偏移、《Gooden's Corner》不寫 take 數與標題由來、《Am I Blue》改用 Goldberg 內頁的 mood album；Collier 不寫 Malcolm Lowry；Gosub 不寫「1990 年代初」；Growling Mad Scientists 是阿姆斯特丹二人組（派工詞誤寫以色列，研究層更正），不寫 Yaniv Tal；Goya 1992、不寫「戲仿／概念專輯」；Inner Circle 不寫延後理由、St. Louis Shoes 不寫雙關。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 2 處，改動檔 `review-sd-069.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Greg Osby《Art Forum》 | 刪「曾入選當年《紐約時報》的年度專輯」 | 只見 WRTI 一則轉述、無年份名次 |
+| Grenadine《Goya》 | 「整張刻意寫成老式標準曲」→「仿老派情歌的輕快原創」 | 老式標準曲是封套宣稱，Trouser Press 說它誤導 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Gone 替 Black Flag 開場半年、Haden 在古巴發現 Rubalcaba、國務院到 5 月才發簽證、《Suite 4 y 20》碰上「政權沒那麼糟」風波、Googoosh 禁唱 21 年與 Googooshi 造型、Gorky's 雙語、Govinda 二十年古典小提琴、Grant Green「最愛的三重奏」引語、Osby 的 Inner Circle Music 取名於本張、GMS 從 gabber 時代的阿姆斯特丹去果阿）。Rubalcaba 八張、Osby 七張各取本張概念，生平只一句。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題；鉤子禁詞檢出「迷你裙」的「你」為誤判）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
+
+## sd-070（30 張，其餘：Guitoud、GUMI、GZA、Habib Mohebian、Hang Raiji、Hank Mobley 4、Hank Williams 2、Harold Vick、Harry Mudie 2、Harvey Williams、Haze 2、Heaven & Earth、Helén Eriksen 2、Henry Franklin、Herbie Hancock、松本英彦、High Tides、Highwoods String Band、後藤浩文、岡野等、Hoody、Hoogway、Hope of Glory）— s38
+
+- 研究：3 支 Sonnet，WebSearch 17＋15＋20＝52 次；none：岡野等《Double Image》三塊、後藤浩文 story／sound、松本英彦 story、Hang Raiji story／sound、Hoogway story。母語來源：Habib Mohebian 波斯文（Radio Farda、ILNA）、Helén Eriksen 挪威文（Dagbladet 1998 專訪、2000 年《City Dust》評）、Hoody 韓文（AOMG、ELLE Korea）。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 3 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Harold Vick《Don't Look Back》（原盤 Vick 自寫內頁：危機時期收到「愛的禮物」後的新心態、逐曲獻給誰、終曲禱詞、全班底）→ story／sound 升 ok；Heaven & Earth（Mercury 原盤 credits：芝加哥錄音室伴奏班底，舊稿「四位貝斯手」其實是伴奏，但不寫成團員）→ sound 升 ok；Helén Eriksen《Standards》（Tommy Tee 製作、班底與 N-Light-N 客席）→ sound 升 ok；Henry Franklin 班底；Hang Raiji（credits、岩浪洋三內頁、2024 年 Steps Records 再發行）what 升 ok；岡野等（四重奏編制與製作）what none→thin；松本英彦（児山紀芳監修、杉並錄音日）；後藤浩文（全碟一人包辦、Frogman 創辦人任 A&R）。岡野等日文搜尋 2 次全被同名美國團與同名講師污染，無新料；照 delayde 前例薄寫上線（158 字）。
+- 事實裁定：Hang Raiji 團員只用 Discogs 原文拼法（漢字未證）；Mobley《Poppin'》《Thinking of Home》擱置原因不詳不寫；Hank Williams 兩張不寫確切發行年；Hoogway 不寫 Sleep Tales，2018 年舊作聲音寫成「一向」的手法；Hoody 的 2021 年 ELLE 訪談同理；松本英彦的鋼琴與鼓手研究稿漢字錯（Karashima＝辛島文雄、George Ohtsuka＝ジョージ大塚），正文不寫兩人名字；High Tides 不寫「首張」；Haze 不寫末軌、長笛不算到 Deas 頭上。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-070.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Hank Mobley《Hank Mobley》 | 刪「原版首壓如今是 Blue Note 最難找的原盤之一」 | 原盤收藏價值屬版本雜項 |
+| Hank Williams《Luke the Drifter》 | 第二句補《盤名》；刪「內容多是道德勸誡……反史達林的新奇歌」壓回 232 字 | 無《》、字數 |
+| Hope of Glory《Second Look》 | 鉤子「錄音到 2020 年都還沒數位化」→「在教會裡演出……要的是低調的激勵，不是搖滾」 | 數位化與否屬版本雜項 |
+| Harry Mudie《Vol. 3》 | 「接進 12 軌混音台」→「接進他的混音台」 | QA 誤判軌數，順手避開 |
+
+其餘逐張四問無改：鉤子都對過研究稿（GZA 從混濁音場換成清脆鼓、Mohebian 二十七八歲才開唱且只唱自作、Mobley 三位新人首登 Blue Note、Hancock 錄完兩個月與 17 歲的 Tony Williams 加入 Miles、Vick 標題指熬過危機的心態、Mudie 是雷鬼最早大量用弦樂的製作人、Luke the Drifter 化名是怕點唱機業者抗議、Haze 借來的 Portastudio 進地窖、Eriksen 年度新人獎頒給嘻哈製作人操刀的爵士盤）。GZA 榜位（Billboard 200 第 9、R&B／嘻哈冠軍）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-070.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-071（30 張，其餘：Horace Parlan、Horace Silver 6、Howard McGhee、Hugh Mundell、Hughie Izachaar、Hula、Hurd、I Am David Sparkle、I Awake、Ida、Ike Quebec 4、il:lo、Immanu El、Immanuel Wilkins 3、In Spe、Inade 2、Incapacitants、Inner Dialogue、Integrity）— s38
+
+- 研究：3 支 Sonnet，WebSearch 13＋13＋18＝44 次；none 0。母語來源：Hurd 蒙古文（蒙古文維基、ETV 企劃報導）、Incapacitants 日文（美川自述）、In Spe 愛沙尼亞脈絡。Horace Silver 三部曲概念以 Blue Note 官網、Silver 1974 年電台訪談、blp1553 轉錄的 Blumenthal／Cuscuna 文字查清。
+- **主線補查**（WebSearch 1 次＋WebFetch＋Discogs 公開 API，facts 標【主線補查】）：Immanu El《Moen》（Discogs notes：Norrköping Fasanstudion 現場錄樂團、哥特堡家中補錄人聲與弦樂）→ story 升 ok；Integrity（Victory 1990 初版 credits：Mars Recording、Aaron Melnick 製作、班底）；Inner Dialogue《Friend》（credits 證實 Kay Cole／Lynn Dolin 人聲，研究層原說查不到）；Hughie Izachaar（倫敦 Conscious Sounds 錄音、合寫者）；Wilkins Vol. 2（Blue Note 新聞稿、Stereogum：〈Grace and Mercy〉出自《Omega》）。Wilkins Vol. 2／3 無專卷樂評，照整套四重奏描述薄寫。
+- 事實裁定：《Total Response》寫 1970 年底到隔年初錄、1972 年發行；《27th Man》不寫 Brecker 兄弟年齡（舊稿錯）、不寫兩場先後；《Silver 'n Wood》疊錄層是整排木管加長號（舊稿「長笛與低音薩克斯風」不精確）；《Jah Fire》寫清 Mundell 唱三首、Castell 唱五首，不寫軌序；Ike Quebec《Easy Living》是 1962 年 1 月 20 日同場完整版（舊稿「1981 先放三軌」錯，是五首）；il:lo《Myriad》是 EP、不寫「唯一客席」；Incapacitants《Repo》是美川一人時期最後一張（舊稿「美川與小堺第一次壓黑膠」錯）；Inade 兩張不寫舊稿查無出處的「Deep Ambient 自稱」「羅馬數字曲名」「2005 年起再混音」；Integrity 不寫 Dark Empire 先後與「八軌版本」；Wilkins 不編分三卷的理由、不寫〈Composition IX〉屬 Bach 系列（推論）、不寫「三卷全新曲」（〈Warriors〉也出自《Omega》）；Hurd 不混淆團長鼓手與主吉他手。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 28 處，改動檔 `review-sd-071.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Horace Silver《In Pursuit of the 27th Man》 | 鉤子「封面上 26 個人一起望向第 27 人」→「標題裡的第 27 人，Horace Silver 說是人類正在走向的更進步的未來人」；補《盤名》、刪「Silver 想換個音色」 | 鉤子取自封面畫面屬封套；無《》；字數 |
+| Silver 三張（'n Wood、Serenade、Healin' Feelin'）、McGhee、Jah Fire、Izachaar、Quebec 2 張、Wilkins Vol. 3、Inade《Samadhi State》 | 第二句補《盤名》，各刪一句次要細節壓回 240（Wade Marcus 指揮疊錄、Cook 高音域、改彈電鋼琴、McGhee 頂尖小號手、Mundell 幫 Castell 入行、Tubby／Pablo 影響、Blue Note 早期套裝、2026 發行、Takenaga 旋律線） | QA 無《》、字數 |
+| 《Silver 'n Wood》 | 鉤子開頭「標題裡的」→「盤名的 Wood 指木管」 | 同批前四字相撞 |
+| Incapacitants《Repo》 | 刪「原版只壓約 300 張」；「一面……另一面」→「前半……後半」 | 壓片數屬版本雜項；避 A／B 面寫法 |
+| Ike Quebec《With a Song in My Heart》 | 刪「當年只出過兩首 45 轉」 | 字數、發行格式雜項 |
+| Inner Dialogue《Friend》 | 鉤子「Ranwood 把《Friend》送上了輕音樂電台」→「《Friend》的單曲在美國輕音樂電台大量播放，發行它的是 Lawrence Welk 的廠牌 Ranwood」；刪 Gene DiNovi 一句壓字數 | Record World 說的是單曲獲 MOR 電台播放 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Parlan 小兒麻痺與左手、《All》四副嗓子含 Silver 自己、《Total Response》要先說服 Blue Note 高層、McGhee 與 Navarro 1948 同場、Hula 用 melodica 補鍵盤、Hurd 每週在電視播新歌、I Am David Sparkle 在快節奏樂壇以沉穩出名、Ida 起於送朋友的卡帶、In Spe 把打字機當鼓、Integrity 先虛構再成真、Wilkins 三卷各取不同角度）。Incapacitants「約兩年後小堺加入」有美川自述。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-071.json`；30 張 30 鍵（皆非 CJK，Hurd 為西里爾字母；原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 100 次（研究層 sd-070 52、sd-071 44，主線 4）。
+## sd-074（30 張，其餘：Jimmy Smith 7、jinsang 3、Joachim Kühn、Joe Chambers、Joe Lee Wilson、Joe Lovano 2、Joey Calderazzo 3、Jogging House 2、John Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）— s40
+
+- 研究：3 支 Sonnet，WebSearch 15＋15＋18＝48 次；無 none。AllMusic、Discogs 網頁、jazzmusicarchives 多 403；b 組用 DownBeat 1991–93 PDF 全文補 Calderazzo 樂評。
+- **主線補查**（WebSearch 1 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Jimmy Smith《The Master II》（大阪 Kirin Plaza 1993 聖誕現場、Burrell／Jimmie Smith、沖野修也內頁）、《Lonesome Road》（1957-11-20、McFadden／Bailey、Cuscuna 製作人筆記「1500 系列一百張裡十三張是他」）、《Straight Life》（1961-06-22 Van Gelder、Warren／Bailey）→ story 升 ok；Calderazzo 三張（Brecker 製作、DeJohnette 製作、改三重奏雙節奏組）→ story 升 ok；John Davis（Shrimper、FBE Studios 與家錄）→ story 升 ok。jinsang 三張、Jogging House《Softie》、Holt《My Desire》等只有藝人層級或 credits 資料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Joe Lee Wilson 寫 1975 年錄音、不寫廠牌（Bond Street 是場地）；Plain Talk 不寫發行年（1968／1969 兩說），寫「擱了八年」；Kühn 聲音段評語出自同批錄音的續集，寫成「這批獨奏」；Holt《A1 Disco Showcase》班底是 Sly & Robbie 一班人；〈Stick By Me〉寫 1972 年與 Bunny Lee；Carter／Bradford 不寫製作人；Jogging House 不寫 hip hop（卡單類型標錯，實為 ambient／downtempo）；Calderazzo《To Know One》〈Second Thoughts〉是 Holland 的曲。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 21 處，改動檔 `review-sd-074.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| jinsang《in flight》 | 鉤子「頁面上只寫了兩個英文字 we back.／300 張預購」→「帶著一捲以天氣與日常為題的 beat tape 回來」 | 頁面說明字數與預購張數是雜項 |
+| jinsang《confessions》 | 刪「頁面沒有任何說明」「聽眾多半拿它來放鬆」，改寫聲音 | 雜項＋留言非樂評 |
+| Jimmy Smith《The Master II》 | 「以〈Stormy Monday〉收場」→「也有」 | 軌序 |
+| Lovano Nonet | 「開場曲」→〈At the Vanguard〉；鉤子拆句（加權 51） | 軌序；鉤子超長 |
+| Calderazzo《To Know One》 | 「最常被點名的一首」→「最亮眼的一首」 | 只有 DownBeat 一篇 |
+| 7 張（Smith 4、Kühn、Wilson、Lovano Nonet） | 第二句補《盤名》 | QA 無《》 |
+| Kühn、Wilson、Lovano Nonet、Sunny Side | 補盤名後超字數，刪曲數、重發細節、團員淵源 | 字數 |
+
+其餘逐張四問無改：Smith 七張鉤子各取本張（Donaldson、Small's Paradise 五天後、一場錄兩張、原為 Burrell 專輯、1961 唯一錄音、大阪聖誕夜、與 Burrell 平起平坐）；Holt 五張角度各異。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-074.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-075（30 張，其餘：John Kaizan Neptune、Lewis & Jones、John Russell、Scofield 2、Zorn、Joona Toivanen、Kraus、José Luis Cortés、Léandre／Grimal、Juaneco y su Combo、Judge、Judi Silvano、Julia Kadel 2、JUN SKY WALKER(S)、Junior Byles、Junior Delgado、Junior Mance、Junior Murvin、Justice、Jutta Hipp、Noetinger 2、Jónsi & Alex、Kangaroo、Kareem Ali、KaS Product、Kate Gentile、Katra Turana）— s40
+
+- 研究：3 支 Sonnet，WebSearch 15＋14＋17＝46 次；無 none。komuso.com 503、Tower／ナタリー 403。
+- **主線補查**（WebSearch 3 次＋WebFetch Neptune 官網＋Discogs API）：Neptune《Tokyosphere》（官網專輯頁：第一個全由和樂器師範組成的團、成員與樂器、「像東京一樣沒有邊界」、澀與爵士段落；舊稿成員名單其實正確）、Lewis & Jones（1979-05-03 東芝 EMI 直刻、Duvivier／Manne）、Zorn（兩面錄音日、誘鳥哨、以日本藝人為題）、Toivanen《Frost》（瑞典 Nilento 錄音、兄弟＋Louhivuori）、Kraus（確認是 Phoenix Edition 2009 雙 CD，授權自 Capriccio／WDR，Concerto Köln／Ehrhardt，Kempen 1991–92）、Cortés（1997 古巴原盤確認）、Juaneco（Infopesa、Maraví 製作、cumbia／ritmo selvático）、Silvano（Power Station、Lovano 製作、曲目橫跨古典）、JSW（Captain 獨立迷你盤、六本木 Mod Studio）、Byles（Weston 製作、Channel One／Tubby／Harry J、班底）、Delgado（Channel One 班底、Pablo、Dennis Brown）、Mance（1977-06-02／03、Taylor／Riley）、Hipp、Noetinger《Gloire à...》（COREAM 1991 首演）、Katra Turana（credits 證實舊稿的久保田麻琴、原マスミ、Sandii 與十二人合唱）→ 大多 story／sound 升 ok。Kareem Ali《Sound in Motion》網路上查無專輯本身任何頁面（搜尋只回同年《The Color of Sound》），照藝人背景薄寫 191 字上線（delayde 前例）；Kangaroo 只有團史，薄寫。
+- 事實裁定：Kraus 寫 Concerto Köln／Ehrhardt、1991–92 錄、2009 重發；Judge 不寫「被廢棄重錄」（那是 Chung King 1989 錄音），寫 1991 解散後 Revelation 發行的最後一張；Juaneco 不寫 Barbès 重發；Frost 不套後期專輯聲音；Lewis & Jones「盤名沿用 1976 巡演」只是推測，改並陳；Mance 不寫盤號（VIJ／VIBN 兩說）；Jónsi & Alex 的分開是感情關係；KaS Product 年份 1986（英文維基 1987 錯）；Hipp 兩卷同一夜。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 45 處，改動檔 `review-sd-075.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lewis & Jones | 「盤名沿用 1976 年巡演」→「1976 年日本有過一檔同名巡演」 | 研究稿 notes「疑來自」 |
+| Julia Kadel《Im Vertrauen》 | 鉤子「繼 Hipp 之後…被稱為第一位」→「Hipp 1956 年之後…第一位」 | 原句自相矛盾 |
+| 17 張 | 第二句「這是／這套」→《盤名》 | QA 無《》 |
+| 13 張 | 補盤名後超字數：刪 Russell 前作與生平、Delgado 重複的 1975 熱門歌、Mance 伴奏生涯、Hipp 一檔一週、Kate Gentile 封面、Kangaroo 最終作改唱日文等 | 字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Neptune 都山流師範、東京直刻、Russell 客廳三把吉他、Zorn 五輪書、Kraus 送葬交響曲、Cortés 借《波麗露》與 Formell、Juaneco 巫醫外號與墜機、JSW 行人天國、Murvin 反幫派、Justice「白天的音樂」、Hipp 駐場半年、Katra Turana 女裝高唱與原生生物）。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-075.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 98 次（研究層 sd-074 48、sd-075 46，主線 4）。
+
+## sd-072（30 張，其餘：Interferon、Inti-Illimani、Into Another、Irakere 3、Iron Cross、Isaiah Rashad、Jaak Joala、Jack Walrath、Jack White、Jack Wilson、Jackie McLean 6、McLean & Tina Brooks、Jacky Terrasson 3、Terrasson & Cassandra Wilson、Jagged Edge、Jah Warrior、Jaheim 2、James Blood Ulmer、James Brown 2）— s39
+
+- 研究：3 支 Sonnet，WebSearch 17＋8＋14＝39 次；none 只有 Jaak Joala story／sound。AllMusic、Pitchfork、Discogs 網頁多回 403。
+- **主線補查**（WebSearch 3 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Jaak Joala（Discogs：1975 Melodiya 愛沙尼亞文《Laulab Jaak Joala》與俄文《Поёт Яак Йоала》同歌單雙版、五位指揮、Baltika／Collage／Laine 和聲團、收電影《解放》插曲）→ what ok、story／sound thin；Interferon（Discogs：Hazemoto 一人作曲製作混音、曲名取自催眠與超自然；yoyaku《Sounds of Transonic》介紹：〈Blasting Soul〉受底特律 hi-tech jazz／machine funk 影響）；Jah Warrior（Discogs：Wardrop 與 Mosco 自彈全部樂器、Conscious Sounds 混音、每首以非洲民族命名）；James Brown《I Got the Feelin'》（單曲維基：《Star Time》內頁班底）。Iron Cross《ရာစုသစ်》英文搜尋 1 次＋研究層緬文 2 次皆無本張資料。
+- **薄寫上線不留置**（delayde 前例）：Iron Cross（180 字，只寫樂團地位與編制、盤名意為新世紀）、Jaak Joala、Interferon、Jah Warrior、Walrath《Neohippus》。
+- 事實裁定：Cuba libre 是 1980 東京 Victor 日本限定盤（上田力製作），與 Columbia《Irakere II》不同；《Irakere II》《'Bout Soul》年份兩說，正文不寫或只寫錄音年；《Yemayá》卡單 1997 疑為 1999，正文避開發行年；Iron Cross 四位主唱（舊稿三位錯）；Walrath 盤名出處與葛萊美入圍查無，不寫；Rashad 小卡經過不寫；Joala 舊稿「1972 EP」不寫；Capuchin Swing 舊稿 Billboard 評論查無；Street Singer 是 Blue Note 擱置；Alive 不寫聖詩收尾；Terrasson 未決指控不提；Jack White 發行動機不寫成本人說法；《Rendezvous》爵士榜第 10（舊稿第 4 錯）；《I Got the Feelin'》三座城市（舊稿四座錯）；Jaheim〈Blame Me〉是取樣不是翻唱；Ulmer 寫「Laswell 參與製作」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-072.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Terrasson《Mirror》 | 「七首標準曲配五首自作」→「標準曲之外也收自作」 | 曲數屬軌數雜項 |
+| Jah Warrior、Ulmer、McLean《Quintet》 | 第二句「這是」改《盤名》，隨之刪次要句壓字數（Jah Warrior 曲名橫跨三區與鉤子重複；Ulmer「評價分歧，也有人列為最好之一」無具名；Quintet「擱置原因沒有交代」、〈Blues in a Jiff〉一句） | QA 無《》、字數 |
+| James Brown《Bring It On!》 | 刪「只在 1980 年代末短暫出過 CD，至今仍不在串流平台上」 | 版本／發行形式雜項 |
+| Interferon | 刪「曲名多取自催眠與超自然現象」 | 與鉤子重複 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Inti-Illimani 流亡義大利的全器樂、Into Another 硬核出身彈 Iron Maiden 式吉他、Irakere 日本製作人／美古解凍／獻給 Yemayá、Iron Cross 歌詞送審、Rashad 復發恐懼、Joala 母語唱搖滾、Walrath 在 Mingus 最後一團、No Name 塞進購物袋、Wilson 坐進絃樂團、Simmons 朗誦、寵物猴、耍蛇人 vamp、Tolliver 初登場、擱十五年、Tony Williams 首次錄音、Brooks 擱二十年、Iridium 觀眾笑聲、全獨奏、〈Money〉口琴長笛、Wilson／Terrasson 分工、Jagged Edge 未滿 21、以民族命名、Jaheim 兩張、Ulmer 唯一 Blue Note、三座城市、Brown 慢歌翻唱）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-072.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
+
+## sd-073（30 張，其餘：James Hurt、Moody／Wallington、James Newton、James P. Johnson、Jan Dukes de Grey、Rigler & Fernández、Javon Jackson 5、Jazz Playaz、Jazzinuf 2、Jean du Voyage、Ponty、Como、Jeff Mills 2、Jeffrey Swann、Bergonzi、Jerry Butler、Jessica Bailiff、Jessy Dixon、Jill Scott、Jimmy Arnold、McGriff 2、Jimmy Smith 2）— s39
+
+- 研究：3 支 Sonnet，WebSearch 15＋13＋13＝41 次；none 只有 Jazzinuf《Sun Dance》story、McGriff《Something To Listen To》story。
+- **主線補查**（Discogs API release notes／credits＋WebFetch，WebSearch 0 次，facts 標【主線補查】）：Newton（RCA Studio C 1986 年 8 月、全班底、Mingus／Ornette 雙軸）→ story ok；Mandorla（Estudi 84 錄音時程、Rigler 樂器細項證實、九段連續組曲、Wade Matthews 內頁）→ sound ok；Jessy Dixon（Gospel Records、Mendelsohn 監製、Norwood 對唱、聖詩取向）；McGriff 兩張（選曲半數自作、Golden Slipper 現場與錄音師）；Jean du Voyage（一人包辦＋大提琴、單簧管、古巴小號客座）→ sound ok；Como（Lockwood、Sylvain Luc、Paco Sery 等客座、Pastorius 兩首與〈Giant Steps〉）→ sound ok；Mills《From the 21st》（芝加哥 Spider Formation 錄音、1998 Axis 作品由日本 Sony 1999 發行）→ story ok；Javon Jackson《When the Time Is Right》（兩場錄音、Garrett／Reeves 客座）→ sound ok；Jazzinuf 歌劇歌手說法 WebFetch 原頁證實；Jazzinuf Bandcamp 無兩張專輯頁。
+- **薄寫上線不留置**（delayde 前例）：Jazz Playaz（171 字）、Jazzinuf 兩張（174、178 字）、Jessy Dixon、Bergonzi、Butler、McGriff《Something To Listen To》。
+- 事實裁定：Moody／Wallington 不寫「從未發行」、不寫盤名指兩個時間點（研究層推論）；James P. Johnson 不寫場次與曲數；Javon Jackson 不寫 Gainsbourg、Craig Street；Jan Dukes de Grey 寫 Decca；Hurt 不寫錄音日；Ponty 只寫 1969 年 3 月；Mills《From the 21st》芝加哥錄音屬實、與〈Here〉同音訊屬雜項不寫；Cherokee 與 Confirmation 是不同錄音；Bailiff 不寫達拉斯；Romane Beaugrand 樂器兩說，不寫。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 28 處，改動檔 `review-sd-073.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Moody／Wallington | 鉤子與第二句改寫，刪「盤名指的就是這兩個時間點」 | QA 無《》；推論無出處 |
+| Ponty、Como、Mills《From the 21st》、Bergonzi、Butler、Bailiff、Dixon、Jill Scott、Arnold、McGriff 2、Smith 2 | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數（Dixon 生平、Scott 錄音城市與「最激烈」與榜位、McGriff 製作人沿革、Smith〈Laura〉與臨場喊曲目、Bergonzi 與 Santoro 後續、Butler「多方面才華」、Bailiff「最早融合者之一」、Arnold「音色優美」、Moody「爵士與古巴節奏」） | QA 無《》、字數；空泛評語 |
+| Swann | 整段重寫補《》，刪「受控的偶然」引語、Liszt 對比、錄音清晰 | 盤名長、壓字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Hurt 變換拍號、Newton 被大提琴顫音琴長號圍繞、Johnson 中風復出、Bairstow 錄音前幾月才學長笛、Rigler 一人四種聲音、Jackson 五張各自角度、vaporwave 質地、冬日主題、白天做 beat 晚上唱歌劇（republicofjazz 原文證實）、維那琴到古巴小號、Ponty 在美成名的兩晚、Como 西非歌手配 Pastorius、Mills 芝加哥工作室／Sleeper Wakes 主角、Swann 兩條路線、Bergonzi 唯一 Blue Note、Butler 離開 Impressions、Bailiff 托利多吉他嗡鳴、Dixon 與 Paul Simon、Scott 三部曲最後一張、Arnold 15 歲 Galax 冠軍、McGriff 自家俱樂部、半數自作、Smith 只在日本發行、Morgan／Brooks／Blakey 長篇 jam）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線（sd-073）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-073.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 84 次（研究層 sd-072 39、sd-073 41，主線 4）。
+
+## sd-076（30 張，其餘：Keith Christmas、Keith Mansfield 2、Kem、Ken McIntyre、Kenny Barron、Kenny Burrell 5、Kenny Werner、Kevin Hays 2、Knxwledge 2、Koi.、Konstruktivists、Kool & the Gang、菅野邦彦 2、Kyuss、Lacrimosa、Lady Pank、Ladysmith Black Mambazo、Lamb、Larry Heard、Larry Young 2、Laserdance）— s41
+
+- 研究：3 支 Sonnet，WebSearch 14＋17＋14＝45 次；none 只有 Laserdance《Changing Times》story。日文（菅野邦彦）、德文（Lacrimosa）、波蘭文（Lady Pank）、荷蘭文（Laserdance）母語搜尋多無成果；AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 約 9 次＋WebFetch，facts 標【主線補查】）：Keith Christmas（The Rising Storm：本人不認這張首作、嫌製作過度，Mighty Baby 與 Gordon Huntley 伴奏的鄉村搖滾味）→ story／sound 升 ok；Lacrimosa（英維基 Binningen 錄音、Hall of Sermon；Prog Archives 主題；Metal Music Archives 中提琴手）；Kevin Hays 兩張（Systems Two 錄音與五重奏編制、Yanow 評語；Andalucia 1996 年 12 月錄、Lecuona 盤名曲、Qobuz「年輕鋼琴家」）；Lady Pank、Imo Live（日文搜尋只得英維基複本）、McIntyre、Freedom、Kem 補查無新料，照研究稿薄寫（delayde 前例）。
+- 事實裁定：Voices in Harmony 照研究稿更正舊稿——〈Whole Lotta Love〉器樂版與《Top of the Pops》主題是 Cameron 的 CCS，Cameron 寫大半曲目；Contempo 不寫 Skidmore／Watkins；Blue Lights 2 不寫「深溝標沒上架」；Swingin' 不寫「五個晚上」；Barron 不寫 Sphere 成立細節；Freedom 年份寫 1980 日本首發；McIntyre 寫 1962 錄；Seventh Sense 寫 Blue Note 第一張（非首張領班盤）、不寫 Scofield；菅野邦彦不寫 Apollon 1985；Koi. 不寫地名；Werner 女兒、Kool〈Jungle Harmony〉取樣數、Lacrimosa 淡出兩秒、Laserdance 器材清單、Lady Pank 盤號與詞作者、Ladysmith 獻給 Luthuli 與葛萊美、Larry Heard 廠牌（Mecca／Alleviated 不寫）皆不寫。
+- **薄寫上線不留置**：Kem、McIntyre、Imo Live、Freedom、菅野邦彦 2 張、Laserdance《Changing Times》、Lamb III（聲音寫成一貫路線）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-076.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Keith Christmas《Stimulus》 | 「當時他還在大學讀建築」→「他在大學讀建築技術時就跑民謠俱樂部」 | 讀的是 Building Technology；來源沒把錄音時點綁在學生時期 |
+| Kenny Barron《Imo Live》 | 鉤子「一間小場地」→「在東京中野的 IMO House」 | 「小場地」無出處 |
+| Kevin Hays《Andalucia》 | 鉤子「出道六年」→「年輕的」 | 推算，Qobuz 只說年輕鋼琴家 |
+| Konstruktivists《Psykho Genetika》 | 鉤子由「對黑膠太極端、完整版等十年」改為前作俄國內戰→本作星際的概念轉向 | 鉤子不得取版本差異；完整版一事留在正文一句 |
+
+其餘逐張四問無改：鉤子都對過研究稿（KPM 千張只寄業界、Kem 首週 Billboard 200 第三、Billboard special merit、Louis Smith 最搶眼、庫房擱十六年、Cuscuna「Silver 五重奏換吉他」、Blakey 罕見的 3/4、Burrell／Washington 1970 年代芝加哥之約、Lenny Pickett 製作、Knxwledge 耳機與卡帶取樣、The Find Mag 爵士取樣編進節拍、Koi. 做音樂六個月、Kool 爵士夜暖場出身、Homme 接貝斯音箱、Ladysmith 被禁賽、Lamb 彌賽亞猶太音樂先驅、Heard 自 Mr. Fingers 以來首次開口唱、Laserdance 首張近 15 萬張）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（Kool「節奏軌」是重用伴奏的聲音事實）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-076.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
+
+## sd-077（30 張，其餘：Laserdance、Late!、Lauge 3、Lavarr the Starr、Lee Konitz、Lee Morgan 9、Lee Ritenour、Lee Scott 2、Leila Forouhar、Leroy Smart、Les Ambassadeurs、less.people 2、Lew Soloff、Life's Blood、Light、Linda Smith、Lindsheaven Virtual Plaza、Linval Thompson）— s41
+
+- 研究：3 支 Sonnet，WebSearch 13＋11＋16＝40 次；none 只有 less.people《respect.her》story／sound。母語來源：Leila Forouhar 波斯文維基（廠牌採 Pars Video、不採英維基 Caltex）、Les Ambassadeurs 法文（musiques-afrique.net、Sofa Records）。
+- **主線補查**（WebSearch 約 11 次＋WebFetch，facts 標【主線補查】）：Lauge《Echoes》（Sonic Immersion：自然題材、海洋／冰原／森林環境錄音、八首連續混音）→ story／sound 升 ok；《Nothingness》（Bandcamp：Valley View、限量 CD、drone／sleep 標籤）；Lee Ritenour《Friendship》（sessiondays：JVC 直刻三部曲之一、每面連續演奏，錄音室兩說不寫）→ story ok；Lee Morgan《Dizzy Atmosphere》（Fresh Sound：七重奏全抽自 Gillespie 1957 大樂隊）；Life's Blood（Nathanson 訪談：Don Fury 錄音、回到 1983–85 硬核）→ story ok；Linval Thompson（Apple Music 評介、Roots Archives：Channel One、Roots Radics、Soljie 混音）→ story／sound ok；less.people《respect.her》extended 搜尋只得 Apple Music 發行資料。Laserdance《Discovery Trip》、Lavarr the Starr、Light 補查無新料，照研究稿薄寫（delayde 前例）。
+- 事實裁定：Lavarr the Starr 寫成被指出是 Ishmael Butler 分身，不寫舊稿的簽約、結識經過與 Evan Flory-Barnes；Late! 不寫「Sorry, we're Late!」；Langbortistan 七首（舊稿五首、七首自相矛盾）；Lee Morgan 錄音日期各源不一者只寫年份，《Charisma》擱置原因只有單一樂評推測，寫「一說」；Rajah 寫「1966 年」不寫日；Lindsheaven 不寫「里約」、不寫 17 首；Lew Soloff 不寫 1966 年入 Evans 團與標題曲作者；Linval Thompson 混音是 Soljie，不寫 Scientist；Linda Smith 不寫 2024 重發混音者；Life's Blood 不寫吉他手 credit；Light 年份三說，只寫九〇年代中後期；Specialty「只做三張爵士」、Sixth Sense 暑期廣告、Lee Scott 單親與 DJ Sammy B-Side 等舊稿說法皆不寫。
+- **薄寫上線不留置**：less.people《respect.her》（206 字，寫發行與前後脈絡、不列曲數曲名）、Laserdance《Discovery Trip》、Lauge《Nothingness》、Lavarr the Starr、Light、Leila Forouhar（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-077.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lee Morgan《Dizzy Atmosphere》 | 「以福音與搖滾起家的 Specialty」→「以 R&B、福音與搖滾聞名的 Specialty」 | 研究稿只說以這些曲風聞名 |
+| Lee Morgan《Dizzy Atmosphere》 | 「低音薩克斯風」→「上低音薩克斯風」 | Billy Root 吹 baritone |
+| Lindsheaven《NTSC Memories》 | 鉤子由「過世那個月多倫多廠牌重發、收益歸家屬」改為舊電視氣象台與測試畫面的聲音概念；過世與重發收益移入正文、刪致敬合輯壓回 231 字 | 鉤子不得取重發（版本）事項 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Van Vliet 自述不彈合成器、Grohl 當 Nirvana 鼓手時一人錄完、Lauge 環境錄音與無拍 drone、Langbortistan 與 Ultimae／Iboga 並列、Lavarr 分身、Konitz／Haden 二重奏邀約變三重奏、!Caramba! 催眠 vamp、Delightfulee 大樂團錄音被扣、Peckin' Time 27 歲與 19 歲共同掛名、David Newman、Rajah 庫房近二十年、Sixth Sense 樂團縮編、Ritenour 直刻、Lee Scott 自述失去理智、Forouhar 1986 年離開伊朗、Mandjou 換來幾內亞國家勳章、Life's Blood 四個大一新生、Linda Smith 層層疊錄、Linval Thompson 挺女性立場）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。
+
+## sd-080（30 張，其餘：Marshall Jefferson、菊地雅晃、Masonna、Matt Martians、Max Brennan、Maxo、Meditation Singers、Mehrpouya、Mercury Rev、Merzbow 2、Metabolist、Metrotone、Mfon、Michael Chapman、Petrucciani 3、Mike Osborne／Stan Tracey、Mike Osborne Trio、Mike Westbrook、Mikko Tarmia、Miles Davis、Millie Jackson、MindSpring Memories、Minxus、Miranda Cuckson 3、Miroslav Vitous）— s43
+
+- 研究：3 支 Sonnet，WebSearch 17＋17＋15＝49 次；none 只有 Mfon《A Day Trip to Chicago》story／sound。AllMusic、Tower、Discogs 網頁多 403。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Mfon（Frogman 官方訂購頁與日文目錄：東京 Frogman 發行、全曲 Mfon 作曲製作、曲名以芝加哥為題；Discogs：1999 年初移居挪威；Frogman 頁 503，sound 仍 none）、Millie Jackson《Hard Times》（Creem 1983 短評、〈Special Occasion〉R&B 第 50、Shapiro 與 Jackson 共同製作）、菊地雅晃《Formula》（日文維基「純電子音楽集」；研究稿「菊地雅洋（Masabumi）的外甥」錯，更正為菊地雅章之姪）、Meditation Singers（Della Reese 早年在團、《Amen!》）。Shapey 續輯、Martino 補查無新料（Fanfare 索引無本盤樂評）。
+- **薄寫上線不留置**（delayde 前例）：Mfon、菊地雅晃《Formula》、Meditation Singers、MindSpring Memories、Minxus、Martino、Shapey、Millie Jackson（聲音）。
+- 事實裁定：Mehrpouya《Soul Raga》寫成 2013 年選輯、不寫卒年（1992／1993 兩說）、不寫 Ravi Shankar；Maxo 不提 Madlib（來源互斥）；Matt Martians 的 Mac DeMarco 寫參與製作；Chapman 不寫倫敦交響樂團（單一文案）；Masonna 重發廠 Total Black 是柏林廠牌（舊稿「美國廠牌」錯）；Metabolist 不寫「壓了一萬張」；Osborne／Tracey 不寫藝術理事會贊助；Promenade 不點〈One Night in the Hotel〉作者；Petrucciani Live 不寫「把那套編制帶上台」推論；Shapey 續輯不用 Tommasini（評第一輯）；Martino 不寫撥弦賦格三人合作（與「沒見過 Martino」打架）；Vitous 不寫 Herbie Mann 製作（單一部落格）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-080.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Merzbow《Antimonument》 | 刪「原版是限量約 225 張的圖案碟」「之後多次重發」 | 印量、版本雜項 |
+| Metrotone | 「限量 500 張發行」→「發行」 | 印量雜項 |
+| Mercury Rev《Born Horses》 | 「全張以低聲說白」→「以低聲說白」 | 研究稿沒說整張 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Jefferson 法蘭克福一週無計畫、Masonna 本人最愛、Matt Martians 替缺點辦死亡派對、Maxo 上帝的幽默、底特律第一個加伴奏的福音團、Mehrpouya 骨頭與鍋碗、Mercury Rev 九年後不再唱、反紀念碑、21 小時錄音帶剪 14 段、Metabolist 四小時錄音、Metrotone 互寄錄音帶、Mfon 移居挪威、Harvest 零宣傳、Petrucciani 受《Tutu》啟發、四歲看 Ellington、Tracey 差點當郵差、Willisau 三場取兩段、RCA 退件催生 Cadillac、SOMA 海底研究站、Miles 戒毒後找 Prestige、Millie 口白、100% plunderphonica、Minxus 思想的養分、Eckardt 新曲、Cuckson 未見 Martino、激進的傳統主義者、Vitous 在 Weather Report 前）。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-080.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-081（30 張，其餘：Mitty Collier、Modern Jazz Playboys、Mood II Swing、Moodymann、Morgan Babb、森山威男、Mose Allison 3、Moskwa 2、Mother Gong、mt. fujitive 2、Multi-Story 2、Mushroom Now!、Muslimgauze 2、Mylène Farmer、Myrna Summers、N.Y. House'n Authority、Namas、Nancy Wilson、NANIWA EXPRESS、Nanosphere、Native Son 4）— s43
+
+- 研究：3 支 Sonnet，WebSearch 14＋10＋11＝35 次；無 none。AllMusic、Progarchives、jazzmusicarchives 多 403；日文維基 Native Son 頁實為同名電影。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Mylène Farmer（Qobuz：輕快舞曲流行與氣音唱法；Nostalgie：雙金、60 萬張；Purecharts 排名）→ sound 補一條；Modern Jazz Playboys、森山威男《Full Load》、Mose Allison《The Earth Wants You》、Native Son《Coast to Coast》、NANIWA EXPRESS（日文維基只有年 160 場）補查無新料。
+- **薄寫上線不留置**（delayde 前例）：Mitty Collier（聲音寫福音時期一貫路線）、Modern Jazz Playboys、森山威男、Moodymann、mt. fujitive 2、Multi-Story《Chimes》、Myrna Summers、Nanosphere、Native Son《Coast to Coast》、Nancy Wilson、NANIWA EXPRESS。
+- 事實裁定：Namas 是雷恩三人團（舊稿「法國音樂人一人自寫自製」錯）、不寫 Franck Martin；Nanosphere 不寫 BPM、長笛手兩說只寫客座；Native Son《Gumbo》不寫舊曲初錄年份與「旅日美國樂手」、《Savanna Hot-Line》不寫「唯一打進美國大廠」、《Shining》不寫「Victor 最終作」與蘇聯授權盤；Nancy Wilson 不寫「第八次來日」與 Cobb 打過《Kind of Blue》；Myrna Summers 不寫 Biggham 創辦 mass choir；Moskwa《Nigdy!》年份採 1986；Mother Gong 寫 1981 錄製；Muslimgauze 不沿用舊稿七吋說法；Mitty Collier 年份寫 1970 年代末；Mood II Swing 寫成兩家廠牌單曲合輯；Moodymann《ABCD》與 12 軌《ABCD: The Album》分開。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-081.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Mushroom Now!《Traveller's Light》 | 刪「2021 年重發 CD 與黑膠」 | 版本雜項 |
+| Native Son《Savanna Hot-Line》 | 刪「後來 MCA 在美國發行了黑膠」 | 版本雜項 |
+| Native Son《Shining》 | 刪「也有人視為樂團的高點」 | 只有一篇部落格 |
+| Mitty Collier《Hold The Light》 | 「嗓音比 Chess 年代更粗礪沙啞」→「嗓音粗礪沙啞」 | 旁證樂評沒和 Chess 年代比較 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Collier 聲帶息肉、渡辺貞夫留美前、Mood II Swing 嘻哈顆粒感鼓、Moodymann 不宣傳上架、Babb 身兼數職、森山離團那年、Astral Project 班底、管樂口琴康加擠進小編制、Pizza Express 兩晚、Moskwa 被噓丟雞蛋、卡帶地下翻拷、Mother Gong 物化、感受的容器、雷克雅維克加維也納、BBC 錄音換合約、Chimes 是首作雛形、303 卻近 Gong、Muslimgauze 招牌成形與 1982 入侵黎巴嫩、Farmer 性死亡童年宗教、Temple of Deliverance 會眾破兩千、化名代表心情、原聲樂器當電子樂器、雙軌直錄、年 160 場、psy bass 配方、三家俱樂部、重錄舊曲、肌肉感合奏、80 年代初的光滑質感）。《Nigdy!》2014 首度壓黑膠保留：與「原想出 LP 沒做成、只留卡帶」的故事相連。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-081.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 96 次（研究層 sd-080 49、sd-081 35，主線約 12）。
+
+## sd-082（30 張，其餘：Natural Snow Buildings 2、neat beats、Necrophorus、Ned Rothenberg、Negasphere、Nerve Net Noise、Nic Jones、Nic Potter、Potter & Evans、Nicknack、Night Lovell、Nisvanis、No Brain、NOGYMX、Northern Picture Library、Nothing Painted Blue、Nurse With Wound、Oblique Occasions、Ochre、Odd Nosdam 2、Ohbliv 2、Olivia Rodrigo、Optic Nerve 2、Organum 3）— s44
+
+- 研究：3 支 Sonnet，WebSearch 約 15＋19＋11＝45 次；none 0，thin 多（story thin 17 張）。AllMusic、Pitchfork、RYM、Progarchives 皆 403，Discogs 走 API。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Organum《Sphyx》（Brainwashed 2002 重發評：錄於 1990–93、〈Aurora〉Prévost 即興鼓、同名曲 drone＋弓擦鈸＋管樂、〈Mutla〉；Tone Glow O'Rourke 訪談：經 Prévost 介紹、倫敦錄音、Jackman 的拼貼式錄法）→ story／sound 升 ok；Ned Rothenberg《Trespass》（NYPL 館藏：1985 年兩天 Radio City 錄音、Zorn 客串一首；Qobuz：八首短曲多為獨奏）；Nic Jones（Mainly Norfolk：Bill Leader 錄製、兩首採 Cecil Sharp 編排）；No Brain（Bugs：車勝優是作曲核心、本張後離團；韓文維基：2001-07-11、主打〈해변으로 가요〉）；Parannoul《Blue Cat》韓文搜尋只得用戶評，不採。Optic Nerve 兩張（Clone 只有「True Detroit techno!!」）、Ohbliv《SLPHNC III》、Oblique Occasions、Nisvanis 補查無新料，**薄寫上線**（delayde 前例），化名／團體整體描述在正文寫明是整體。
+- 事實裁定：Olivia Rodrigo 2026 新作身分確認真實（Geffen 2026-06-12），不寫舊稿「唯一客席」；Organum《Omega》年份兩說不寫；Nothing Painted Blue 廠牌是 Scat（Matador 只經銷）；Northern Picture Library 年份 1993（英維基 1994 誤）；NWW 只寫「靈感來自」《去年在馬倫巴》；Odd Nosdam《LIF》不寫「地下嘻哈」與舊稿 drum & space 一語；Ohbliv 不寫舊稿「Nickelus F 說手工切黑膠」；neat beats 不寫地點；Night Lovell 只寫 2021 年。
+- 薄寫上線不留置：Optic Nerve 2、Ohbliv《SLPHNC III》、Oblique Occasions、Nisvanis、NSB《Shadow Kingdom》、Necrophorus、Nic Potter 2、NOGYMX。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 32 處，改動檔 `review-sd-082.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| NSB《Night Coercion》 | 鉤子「最初的版本只有 22 套、手工編號」→ 噪音升降與低音大鼓／鈴的聲音 | 鉤子取限量版本（雜項） |
+| NSB《Shadow Kingdom》 | 刪「限量 500 套」 | 雜項 |
+| Organum《Sphyx》 | 「錄《Sphyx》的方法就是拼貼」→「Jackman 錄音的方法就是拼貼」；刪「錄一段再疊一段就完成」的專指 | O'Rourke 講的是 Jackman 一貫做法 |
+| Optic Nerve《Optical》 | 鉤子「常被形容成未來感電影配樂」→ Tucker 自述「超越重低音、走進太空」；刪正文「Soma 把……形容」 | 單一來源不寫「常被」；出處不寫進簡介；與同化名另一張前四字相撞 |
+| Ohbliv《SLPHNC III》 | 刪「從〈Klose 2 U〉這類曲名就看得出」 | 曲名體例屬雜項 |
+| 10 張（NSB、NPL、NPB、Ochre、MfR、SLPHNC、Olivia、Children、Amen、Sphyx） | 第二句補專輯名《》，連帶壓字數到 240 內 | 第二句要講出是哪張唱片 |
+
+其餘四問無改：鉤子都對過研究稿（Negasphere 錄完成員相繼離團、Nerve Net Noise 官網「不是戰鬥機也不是牙醫鑽牙」、Nic Jones 替無曲調老歌配新旋律、Long Hello 只剩兩人、Nicknack 未成年就打 DJ 對決、Night Lovell 無客座、No Brain 2001 Fuji Rock（正文只說同年，不連結專輯）、LIF 三個月雨、Organum Sanctus 圖形樂譜、Olivia「不必痛苦也寫得出」）。Nic Potter「八軌機」與 Ochre「輕軌列車」是錄音故事／素材，不算雜項。30 張前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 兩筆「8 軌錄音機」為誤報）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-082.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-083（30 張，其餘：Organum、OSCOB、Outer Limits、Owen Gray、Pageant、Pain Jerk、Parannoul 2、Pari Zanganeh、parkbreezy、Partners-N-Crime、Pat Martino、Patricia Barber 2、Paul Clark、Paulo de Carvalho、Peabo Bryson、Perfect、Perpetual Loop、Pete La Roca、Peter Bellamy、Peter Broggs、Brötzmann、Kowald、pheel.、Philanthrope & Devaloop、Photon、PNL、Polaris、Pontiac Streator）— s44
+
+- 研究：3 支 Sonnet，WebSearch 約 15＋11＋14＝40 次；none 只有 Photon story。母語來源：波斯文維基（Zanganeh）、波蘭文（Perfect）、法文維基（PNL）、日文（Outer Limits、Pageant、Polaris）。
+- **主線補查**（WebSearch 4 次＋WebFetch）：Perfect《Unu》（Rock Area：換血＋Hołdys 製作構想讓聲音比首張厚、七〇年代根源的硬搖滾、較輕的歌近 The Police、戒嚴時唱片在櫃檯下賣；Pablo's Reviews：〈Autobiografia〉〈Objazdowe nieme kino〉無副歌）→ sound ok；Pontiac Streator《Triz》（All Night Flight：Vladislav Delay／Pole 式 dub／glitch 抽象、沉重氛圍、重情緒不炫技；World of Echo、Norman）→ sound ok；Polaris《Family》（note 樂評：ZAK 錄音、坂田学鼓、原田郁子與ハカセ客座、柏原譲＋ZAK 的 dub 式貝斯與編曲、比《Home》收斂 dub 感）→ story／sound ok。Parannoul《Blue Cat》韓文搜尋只得用戶評，不採。
+- 事實裁定：Kowald《Open Secrets》是低音提琴獨奏（舊稿 Global Village 錯）；Devaloop 寫維也納；Bellamy 歌詞出處 Kipling《Puck of Pook's Hill》《Rewards and Fairies》；Pontiac Streator 地點兩說不寫；Polaris 不用 Tower 摘要（〈瞬間〉長度、ZAK 共同編曲）；PNL 不直接引 Libération；OSCOB 取樣來源（Discogs 使用者備註、與合輯曲目對不上）降為聽感描述；Organum《Veil of Tears》錄音年份兩說不寫；Pari Zanganeh 失明年份不寫；Barber《Fortnight》不寫 Verlaine；Perfect 不寫「首張走 Muza」「兩主唱交替」。
+- 薄寫上線不留置：Perpetual Loop、Photon、Philanthrope & Devaloop、parkbreezy、OSCOB、Pain Jerk（聲音寫成同期作風）、Peabo Bryson、Peter Broggs、Owen Gray。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-083.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| OSCOB | 「聲音由放慢的老 lounge 與 exotica 取樣構成」→「聽來像放慢的……取樣」 | 取樣來源只有可疑的使用者備註 |
+| Pete La Roca《SwingTime》 | 鉤子「1973 年舊作被掛別人名字重發、出庭勝訴」→「1968 年離開爵士念法學院，隔約 30 年才再交個人新作」；正文補本名 Pete Sims 與六重奏 | 鉤子不得取重發（版本）事項 |
+| Pontiac Streator《Triz》 | 鉤子中譯「我困在洞穴裡……」改引英文原句；刪「這句話就是全部的介紹」壓回 240 | 鉤子禁你我 |
+
+其餘四問無改：鉤子都對過研究稿（Jackman 鬧鐘外殼刮輪圈、OSCOB 太陽神主題、Outer Limits 小提琴＋mellotron、Owen Gray＝Island 第一張發行的歌手、Pageant 長笛與鍵盤、Pain Jerk 內頁「低技術殘酷器材」、Parannoul 魔法自述與藍貓一句、Zanganeh 失明後轉唱民謠、Barber 禁酒令通道與《變形記》、Paul Clark 山間小屋、〈E Depois do Adeus〉康乃馨革命暗號、Perfect 戒嚴前一晚演出、Bellamy 唱 Kipling、Doctor Dread 主動找 Broggs、Kowald 一把低音提琴、pheel. 盤名雙關、PNL 反勞動法遊行、柏原譲＋ZAK）。OSCOB 鉤子以曲名呈現主題，屬概念不屬體例，保留。30 張前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-083.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 98 次（研究層 sd-082 45、sd-083 40，主線 13）。
+## sd-078（30 張，其餘：Linval Thompson 2、Lithics、Little John 2、Little Johnny Taylor、Longstone、Lorde、Los Destellos、Los Mirlos、Los Van Van、Los Wembler's de Iquitos、Los Ángeles Negros、Lou Donaldson 11、Louis Smith、Love、Love Tractor、Lowfish、Lucília do Carmo、Lull）— s42
+
+- 研究：3 支 Sonnet，WebSearch 14＋15＋13＝42 次；無 none。AllMusic、Discogs、Qobuz 網頁多 403；本工作階段的 Discogs API 帶 token 查詢被權限擋下，未用。
+- **主線補查**（WebSearch 7 次，facts 標【主線補查】）：Little John《Reggae Dance》（再發行介紹：Channel One 與 King Tubby's 錄混）；Linval Thompson《Look How Me Sexy》（Qobuz 收的 AllMusic 評）；Los Destellos（Discogs 鏡像：Delgado 主奏與錄音指揮、多數自作）；Los Wembler's（Discogs＋西文維基：1977 Sono Radio、第六張錄音室專輯，研究層原判「只有舊稿這麼說」推翻）；Los Ángeles Negros（1974 年 3 月主唱離團、Montes 接任）；Lucília do Carmo extended 無新料。
+- 事實裁定：Linval Thompson 兩張不寫確切年（1981／82、1978／79 兩說）；Los Destellos 不寫廠牌（Odeon／Líder 兩說）；Little John 不寫生年、《Reggae Dance》不寫管樂手；Longstone 不寫壓縮空氣電鑽等舊稿說法；Los Van Van《Sandunguera》寫成 Messidor 1986 歐洲選集；Los Ángeles Negros 不斷言本盤主唱；《Good Gracious!》比《The Natural Soul》晚八個月（舊稿寫反）；《Midnight Sun》不寫貝斯手與 Cuscuna；《Sassy Soul Strut》不寫編曲者；Louis Smith 不寫「1978 年下一張」「二十年全職教師」；Love 不寫倉庫與 NME 名次；Lull 不寫 isolationist、Release Entertainment、伯明罕混音；Lucília do Carmo 廠牌 Valentim de Carvalho（非 Decca）、不寫 Raul Nery 與拆 EP。
+- **薄寫上線不留置**：Los Wembler's《Fiesta en la selva》、Los Ángeles Negros《Aplaude mi final》（以團的定位與整體聲音為主）、Lucília do Carmo（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-078.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Los Ángeles Negros《Aplaude mi final》 | 刪「這張的曲名多半在講道別」 | 研究稿無據，是從盤名推論 |
+| Lou Donaldson《Pretty Things》 | 「常被視為」→「被視為」較次要的作品 | 只有 AllMusic 單一出處 |
+| Lou Donaldson《Sextet, Volume 2》 | 第二句補盤名並改掛名 Donaldson（原「他」會指到鉤子的 Blakey）、刪 10 吋規格；刪「直線 bop」「缺少慢曲」壓回 236 字 | 第二句要講這是什麼；規格屬版本雜項 |
+| Lou Donaldson《A Man With a Horn》 | 「錄下」→「錄」 | fix-spacing 補空格後 241 字 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Thompson 替 McGregor 製作熱門曲、Sly & Robbie 打底、Lithics 雙吉他與旋律貝斯、Junjo 1984 入獄、Little John 九歲登台、水電工郵差肉販的反轉歌詞、Longstone 的 Krautrock／shoegaze 譜系、Lorde 自述、Destellos 電吉他取代銅管、Mirlos 與海岸 cumbia 區隔、〈Por encima del nivel〉、伊基托斯只能靠飛機河運、洋蔥音樂、1999 首度出版、Cosmos 打破五重奏配方、Donaldson 推薦 Green／Patton、Barretto 補小號空位、Midnight Sun 擱二十年、Hardman 中音域小號、與 Mitchell 隔七年重聚、〈Tennessee Waltz〉開口唱、《Sanford and Son》主題曲、Blue Note 最後一張、Clifford Brown 之比、Love for Sale、Love Tractor 首度開口、半故障類比器材、兩張原創唱片、Lull 單曲概念）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-078.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-079（30 張，其餘：Lustmord、Lycia、Lyman Enloe、Līvi、Ma Chérie for Painting、Macroblank、Mad Professor 4、Magna Carta、Maher Shalal Hash Baz、Main 2、Mal Waldron 等 Sweet Basil 2、MALTA 4、Manhattan Jazz Quintet 2、Manual with Jess Kahr、Maple、Marc Houle、Marcus Printup、Marijannah、Marjan、Mark Heard、Marlena Shaw）— s42
+
+- 研究：3 支 Sonnet，WebSearch 15＋14＋15＝44 次；研究層 none 只有 MALTA《My Hit & Run》《Sapphire》story／sound。Dubroom、miriammohr、grippers.tips 等網域在本環境解析不到，相關 facts 只用搜尋摘要並標明。
+- **主線補查**（WebSearch 6 次＋WebFetch，facts 標【主線補查】）：MALTA 官網經歷（《My Hit & Run》自己製作、早年熱門曲重錄成現場風格；《Sapphire》〈Face to Face〉當亞洲太平洋博覽會 '89 影片主題曲、同年成立 Atlam；《Obsession》緊接《High Pressure》的 L.A. 錄音）→ none 升 thin；Mad Professor Part 10（Jah Shaka、Rico Rodriguez、Mafia & Fluxy、Macka B）、Part 4（Dubroom 混音評、素材歌手）；Marlena Shaw 補查無新樂評，薄寫。
+- 事實裁定：Lustmord 不寫 Soleilmoon、Happy Pencil；Lycia 不寫亞利桑那補混音；Lyman Enloe、Macroblank 不寫年份（兩說）；Līvi 不寫「第一張十二吋九軌」，故事核心是 Ķiģelis 1985 年車禍、專輯身後發行；Mad Professor Part 6 不寫「沒有主唱」、Part 4 不寫舊稿鼓手與 melodica；Magna Carta 盤名是 Johnstone 住的那條路（舊稿「公寓」錯）；Main 兩張 story 只用 Hampson 對時期的回顧；MALTA《Obsession》不寫 Mason／Landau／Grusin（那是《High Pressure》對照）、《Sweet Magic》不寫新田一郎與佐藤允彦、《Sapphire》不寫 Ike Nelson 與向谷実；MJQ 不寫 Tom Jung、原聲帶「樂團演奏兩首」（舊稿錯：〈Love For Sale〉原聲帶版由樋口可南子唱）；Marjan 寫成極可能是 Taraneh 把革命前舊錄音編成的 CD，不寫編曲者、不斷言原唱；Marijannah 不寫廠牌；Marlena 不寫「前兩首出自 United Artists 電影」。
+- **薄寫上線不留置**：Maple《Pull》（183 字，只有廠牌說明）、MALTA 四張、Sweet Basil 兩卷（聲音）、Ma Chérie for Painting、Lyman Enloe（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-079.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Sweet Basil 第一卷 | 第二句補 58 字原文盤名，整段壓回 240 內（刪舊曲重奏，過世寫「兩位主角都已在 1960 年代過世」） | 第二句要講這是什麼唱片；Little 1961、Dolphy 1964 |
+| Sweet Basil Vol. II | 補 66 字原文盤名後整段重寫；鉤子由「節奏組原班重聚」改「前排換上剛離開 Jazz Messengers 的兩人」；「低音單簧管上最有自己的聲音」改寫 Blanchard 俐落光滑 | 原鉤子與第一卷同點；原句與研究稿原意不符 |
+| Mad Professor《Evolution of Dub》 | 「常被這樣解讀／常被視為」→「被解讀為／被視為」 | Dubroom 單一出處 |
+| Mad Professor Part 6 | 「常被視為」「常被認為」→「被視為」「被認為」；「Ampex 24 軌」→「Ampex 二十四軌錄音機」 | 單一出處；錄音機升級是故事，避開 QA 軌數誤判 |
+| Manual、Marcus Printup、Marjan | 第二段補盤名，Manual 刪 Munk 早期作品句、Printup 刪「喬治亞州出身」「原創與標準曲並陳」壓字數 | 沒帶盤名 |
+| Maple《Pull》 | 刪第二句「廠牌稱它是」 | 出處不寫進簡介（鉤子的「廠牌說」保留：是廠牌自己的專輯說明） |
+
+其餘逐張四問無改：鉤子都對過研究稿（Lustmord 無節拍低頻、Lycia 1999 開錄 2003 發行、Enloe 22 歲因病拿起小提琴、Ķiģelis 身後發行、Ma Chérie krautrock 拼貼、Macroblank 日文曲名、曼德拉獲釋年、Dubroom 混音評、真鼓加鼓機、Wasties Orchard 那條路、工藤冬里出版條件、Dowson 離團、低頻忽大忽小、《High Pressure》美國上市、替 Mingus 錄音、自製熱門曲重錄、博覽會主題曲、Swing Journal 與 King 企劃、Lee Morgan boogaloo、Munk 拿掉節拍、地板下的老鼠、柏林冬天、飛機上的陌生人、grindcore 與 pop punk 樂手唱吸血鬼、Marjan 被禁唱入獄、Heard 住錄音室兩週、Shaw 離開 Chess）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-079.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 100 次（研究層 sd-078 42、sd-079 44，主線約 13）。
+
+## sd-084（30 張，其餘：Prince Jazzbo、Princess Sharifa、Alex Bradford、Harold Boggs 3、Project Lazarus 2、Prolapse、Providence、Proxyon 2、Prysm 4、Purl、Purrple Cat 9、Quantec、Quasar、quasimode 2）— s45
+
+- 研究：3 支 Sonnet，WebSearch 15＋9＋10＝34 次；none 只有 Princess Sharifa story、Purrple Cat《Sleep Tight》story／sound。
+- **主線補查**（WebSearch 8 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Prince Jazzbo（Discogs API 原版：封底印 King Tubby 錄音室混音、Bunny Lee 與 Jazzbo 製作；reggaerecord 亦列 Bunny Lee）→ 舊稿 Bunny Lee 製作屬實；Harold Boggs 三張（Journal of Gospel Music 長文：全盲、母親創立的教會、Nashboro 十張的第一／四／八張、唱法越來越急切）→《Lord Give Me Strength》story ok；Prysm（多份 de Bethmann 傳記：1998 Django d'Or 年度團體、Blue Note 四張）；Quasar（MLWZ Kev Rowland 樂評：Turner 一人寫全部歌曲、龐克後英國樂評無視前衛搖滾、早於 IQ／Marillion 出片、Genesis 式鍵盤、製作偏薄）→ story／sound 升 ok；quasimode《daybreak》查無訪談（OTOTOY 2009-12-01 頁是 bonobos）；Purrple Cat《Sleep Tight》官網只有外連。
+- **薄寫上線不留置**（delayde 前例）：Princess Sharifa、Alex Bradford、Purrple Cat 九張（166–199 字，各張以 Bandcamp 一句文案的場景錯開，不編樂器、不寫匿名與出身地）、Proxyon《The Return of Tarah》、Project Lazarus《К солнцу, к звездам》。
+- 事實裁定：Providence 是日本 neo-prog 團（派工特注寫荷蘭是協調端誤記），Atoll 吉他手客席寫「據說」；Princess Sharifa 不寫蘇格蘭出生與 1969 生年；Boggs 不寫 Clapton〈Give Me Strength〉（單一轉述）；Proxyon 製作人只寫 van der Kuy 與 Rob van Eijk、〈Space Fly〉致敬 Space 不寫；Prysm 不寫團名由來；quasimode《daybreak》barks.jp 列 2009-12-02 發行（Jazz Music Archives 列 2010），正文不寫年份、客座不寫國籍；《mode of blue》不寫小松正人。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-084.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quantec《Journey of Mind》 | 刪「原版是 100 張手工編號的 CD-R」「回收紙板包裝」 | 版本與封套雜項 |
+| Purrple Cat《Cat Nap》 | 鉤子去掉「Bandcamp 頁面只寫了這一句」的破折號結構 | 鉤子不靠頁面說明 |
+| Prysm《Time》 | 鉤子由管理顧問轉行改為三人分頭寫曲、奇數拍 | 與《Prysm》鉤子撞材料 |
+| Prysm《Prysm》 | 「La Défense 首獎」→「最佳樂團獎」；刪「獲 Django d'Or 提名」；補《Prysm》 | 來源是最佳獨奏與最佳樂團；提名只見搜尋摘要；QA 無《》 |
+| Prysm《On Tour》 | 「激烈的六年過後」→「之後」 | 與「七年」自相矛盾 |
+| Proxyon《Proxyon》 | 補《Proxyon》，刪「常與 Koto 並列」壓回 235 字 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Jazzbo 吟誦不唱、Ariwa 最老的黑人廠牌、Little Richard 學唱腔、1958 同名單曲、停巡演回教會、全盲、第九行星太空人、第一張就往太空、單曲變專輯、女聲與 mellotron、Laserdance 作曲者另開線、換製作人、三百多場、管理顧問、〈Extension〉貝斯開場、Purl 自寫短詩、Purrple Cat 九張各自場景、老合成器、早於 IQ／Marillion、能跳舞的 JAZZ、Blue Note 70 週年）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-084.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-085（30 張，其餘：Quatuor Diotima、Quilapayún、Rabit、Radar 2、raison d'être 2、Random Rab、Ali／Jenkins、Ravi Coltrane、Ray & Ina Patterson、Refrigerator、Renee Rosnes 4、Ressurection 2、Retsin、Reuben Wilson 3、Bernard Avant、Revolutionary Dub Warriors、Rheinallt H. Rowlands、Groove Holmes 2、Beirach、Margitza、Riow Arai）— s45
+
+- 研究：3 支 Sonnet，WebSearch 12＋13＋14＝39 次；none 有 Radar 兩張 story／sound、raison d'être《Stains》sound、Riow Arai story。
+- **主線補查**（WebSearch 約 9 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Radar 兩張（愛沙尼亞文維基：Jaak Joala 伴奏團出身、1982–84 塔爾圖大獎、1985 最佳器樂團、1986 布拉提斯拉瓦、1987 年 10 月布達佩斯最後一場；Discogs API：《Trofee》1984 塔林錄音與編制、無主唱 credit）；Quilapayún 5（西文維基：十三首多半器樂、Carrasco 器樂曲、Bach 改編、探戈——以器樂為主就是這張的概念；官網 q5 頁下線、archive.org 被擋）；raison d'être《Stains》（noisereceptor 樂評：修道院式吟唱、金屬刮擦、零星鋼琴與弦樂銅管）→ sound ok；Riow Arai（Bandcamp 只有標籤與發行日）；Beirach（確認 Tusa／Williams，非 Mraz）；Rabit（Roman Candle 短文無實質）。
+- **薄寫上線不留置**（delayde 前例）：Radar 2 張、Random Rab、Ray & Ina Patterson、Renee Rosnes《Without Words》、Ressurection 同名 EP、Retsin、Bernard Avant、Rheinallt H. Rowlands、Beirach、Riow Arai。
+- 事實裁定：Simaku 是 Thomas Simaku（派工特注寫 Xenakis 師承是協調端誤記），Diapason／Classica 評語只有二手轉述不寫；Ali／Jenkins 寫「1975 年錄音、1976 年發行」；Random Rab 年份 2011／2012 兩說不寫；Ressurection 是新澤西 Edison 硬核團，預算 200 美元寫「據廠牌介紹」；Rosnes 同名作 Hancock 彈鋼琴（舊稿合成器錯）；〈Happy Together〉是 1967 年 The Turtles；Avant「八首自寫、Dave Clark 製作」未查證不寫；Beirach 不寫 Badal Roy、原田和男、稲岡邦弥；Riow Arai 不把《Mind Edit》的描述套到本張；Rowlands 不寫 Oz 車禍。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 26 處，改動檔 `review-sd-085.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quilapayún 5 | quena、zampoña、charango 改寫成「樂團慣用」；刪「Allende 政府文化大使」壓字數 | 樂器出自團史，非特指本張 |
+| Radar《Baltic Coast》 | 「也是最後一年的錄音」→「解散那年發行」 | 錄音年份無來源 |
+| Simaku、Rabit、Stains、Ali／Jenkins、Refrigerator、Rosnes 2、Ressurection、Avant | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數（Simaku 約克錄音與終樂章噪音、Rabit 客座人聲、Stains 計畫通論、Ali Coltrane 經歷與兩句聲音、Refrigerator Shrimper 起家、As We Are Now「大半自作」、Avant 副牌宗旨） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（為 Diotima 量身寫、抗議歌團大半不開口、向 DJ Screw 致敬、布達佩斯最後一場、伴奏團拿最佳器樂團、三十週年與榮格陰影、九年沒有全新專輯、日出日落場次、店打烊後開錄、拆開再重組、醫院相識、郊區概念、旁遮普曲名、請前老闆、出道作客座、三重奏加弦樂、唯一全長、後來各團成員的起點、Rodan 解散後、R&B 流行曲改靈魂爵士、自寄 demo 給 Wolff、豎琴電西塔琴告別作、Pickett 改福音、低音與空間、虛構的歌手、整晚馬拉松、Prestige 與 Blue Note 都錄過、東京現場、羅姆小提琴家族、臥室一人錄完）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。

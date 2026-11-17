@@ -77,7 +77,9 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-hold-2 | sd-009～014 留置卡重查 | 7 | s8 | ✅ 上線 7（前台 7；7 張全數救回，sd-009～014 留置清空） |
 | sd-hold-3 | sd-016／018 留置卡重查 | 3 | s11 | ✅ 上線 2（前台 2；花生隊長、美空ひばり救回；張露《繁星點點》續留置） |
 | sd-hold-4 | sd-016／019 留置卡重查 | 2 | s14 | ✅ 上線 1（前台 1；黑豹《無是無非》救回；張露《繁星點點》身分不穩續留置） |
-| sd-hold-5 | 張露、delayde 最終重查 | 2 | s18 | ⛔ 上線 0、最終留置 2（張露《繁星點點》實為台灣歌手張璐 1977 環球 LP，卡面藝人錯，**待店主處理**：改藝人或下架；delayde《finding solitude》網路上無任何專輯層級資料） |
+| sd-hold-5 | 張露、delayde 最終重查 | 2 | s18 | ⛔ 上線 0、最終留置 2（張露《繁星點點》實為台灣歌手張璐 1977 環球 LP，卡面藝人錯，**待店主處理**：改藝人或下架；delayde《finding solitude》網路上無任何專輯層級資料）；**協調端裁定（店主授權）**：張露卡改掛名張璐、delayde 薄寫，交 s30 `sd-fix-1`，見 rulings 末段） |
+| sd-hold-6 | sd-047／054 留置 4 張最終重查 | 4 | s30 | ✅ 上線 4（前台 4；藤井貞泰、A-Sound、99.99、Akal Dub 全數救回或薄寫，留置清空；突破口 Discogs API release notes） |
+| sd-fix-1 | 協調端裁定執行：張露卡改掛名張璐、delayde 薄寫 | 2 | s30 | ✅ 上線 2（前台 2；張璐《繁星點點》六處改名＋年份 1977＋LP 原版封面、`verify-album-onboarding --published` 0 error、情緒三軸重建；張璐藝人介紹 `ar-d-941` 素材不足 skipped） |
 | sd-011 | 中日韓台（高中正義 … 송골매） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-012 | 中日韓台（시인과 촌장 … Mal Waldron & 日野皓正） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-013 | 中日韓台（NANIWA EXPRESS … ゼロ戦） | 30 | s7 | ✅ 上線 27（前台 27；山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》留置） |
@@ -116,45 +118,45 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-044 | 經典度≥4（Nieuw Ensemble … Paul Chambers） | 30 | s24 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-045 | 經典度≥4（Paul Jackson … Quartetto Italiano） | 30 | s25 | ✅ 上線 30（前台 30；無留置；主線補查 8 張；CURATED 0） |
 | sd-046 | 經典度≥4（Quicksand … Robb Kunkel） | 30 | s25 | ✅ 上線 30（前台 30；無留置；主線補查 9 張；CURATED 0） |
-| sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | | |
-| sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | | |
-| sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | | |
-| sd-050 | 經典度≥4（The Black Skirts … The Mercy's） | 30 | | |
-| sd-051 | 經典度≥4（The Monochrome Set … Titus Groan） | 30 | | |
-| sd-052 | 經典度≥4（Tod Dockstader … Virgo Four） | 30 | | |
-| sd-053 | 經典度≥4（Vision of Disorder … Zbigniew Preisner） | 30 | | |
-| sd-054 | 經典度≥4＋其餘（Zeni Geva … Al Campbell） | 30 | | |
-| sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | | |
-| sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | | |
-| sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | | |
-| sd-058 | 其餘（Big Satan … Bobbi Humphrey） | 30 | | |
-| sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | | |
-| sd-060 | 其餘（BROCKBEATS … Casiopea） | 30 | | |
-| sd-061 | 其餘（Casiopea … Chế Linh） | 30 | | |
-| sd-062 | 其餘（Cicada … Cæcilie Norby） | 30 | | |
-| sd-063 | 其餘（Da Vàng … Dianne Reeves） | 30 | | |
-| sd-064 | 其餘（Didjits … Doris Norton） | 30 | | |
-| sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | | |
-| sd-066 | 其餘（Elvin Jones … Experimental Audio Research） | 30 | | |
-| sd-067 | 其餘（Experimental Audio Research … Freeform） | 30 | | |
-| sd-068 | 其餘（FRICTION … God Bullies） | 30 | | |
-| sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | | |
-| sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | | |
-| sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
-| sd-072 | 其餘（Interferon … James Brown） | 30 | | |
-| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | | |
-| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | | |
-| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | | |
-| sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |
-| sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | | |
-| sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
-| sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
-| sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
-| sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
-| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | | |
-| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | | |
-| sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | | |
-| sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | | |
+| sd-047 | 經典度≥4（Robert Nighthawk … Shahram Nazeri） | 30 | s26 | ✅ 上線 29（前台 29；藤井貞泰《Prelude to a Kiss》查無專輯資料留置；主線補查 8 張；CURATED 0） |
+| sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | s26 | ✅ 上線 30（前台 30；無留置；主線補查 6 張；CURATED 0） |
+| sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | s27 | ✅ 上線 30（前台 30；無留置；主線補查 13 張；CURATED 0） |
+| sd-050 | 經典度≥4（The Black Skirts … The Mercy's） | 30 | s27 | ✅ 上線 30（前台 30；無留置；主線補查 12 張；CURATED 0） |
+| sd-051 | 經典度≥4（The Monochrome Set … Titus Groan） | 30 | s28 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
+| sd-052 | 經典度≥4（Tod Dockstader … Virgo Four） | 30 | s28 | ✅ 上線 30（前台 30；無留置；主線補查 6 張；CURATED 0） |
+| sd-053 | 經典度≥4（Vision of Disorder … Zbigniew Preisner） | 30 | s29 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-054 | 經典度≥4＋其餘（Zeni Geva … Al Campbell） | 30 | s29 | ✅ 上線 27（前台 27；A-Sound《Release》、99.99《More of 99.99》、Akal Dub《Life and the Void》查無專輯資料留置；CURATED 0） |
+| sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | s30 | ✅ 上線 30（前台 30；無留置；主線補查 Altan Urag 2、Apelsin、And One；Aretha 舊稿誤寫 1980 Arista 盤已更正；CURATED 0） |
+| sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | s31 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | s31 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-058 | 其餘（Big Satan … Bobbi Humphrey） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 10 張；CURATED 0） |
+| sd-060 | 其餘（BROCKBEATS … Casiopea） | 30 | s33 | ✅ 上線 30（前台 30；無留置；BROCKBEATS 4、Brother Joe May 2 薄寫；CURATED 0） |
+| sd-061 | 其餘（Casiopea … Chế Linh） | 30 | s33 | ✅ 上線 30（前台 30；無留置；主線補查 Charlie Moore、Chế Linh 2、Tone Poem；CURATED 0） |
+| sd-062 | 其餘（Cicada … Cæcilie Norby） | 30 | s34 | ✅ 上線 30（前台 30；無留置；主線補查 8 張；CURATED 0） |
+| sd-063 | 其餘（Da Vàng … Dianne Reeves） | 30 | s34 | ✅ 上線 30（前台 30；無留置；主線補查 9 張；delayde 續集薄寫；CURATED 0） |
+| sd-064 | 其餘（Didjits … Doris Norton） | 30 | s35 | ✅ 上線 30（前台 30；無留置；主線補查 Gillespie、Don Carlos 2、Doky 2、Pullen 2、Byas、Doodle 等；CURATED 0） |
+| sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | s35 | ✅ 上線 30（前台 30；無留置；主線補查 Eddie Daniels、How Insensitive、Earl Cunningham、Candles of Vision 等；CURATED 0） |
+| sd-066 | 其餘（Elvin Jones … Experimental Audio Research） | 30 | s36 | ✅ 上線 30（前台 30；無留置；主線補查 EP-4、Truffaz《Mantis》；CURATED 0） |
+| sd-067 | 其餘（Experimental Audio Research … Freeform） | 30 | s36 | ✅ 上線 30（前台 30；無留置；主線補查救回 Final Stage、Fix；CURATED 0） |
+| sd-068 | 其餘（FRICTION … God Bullies） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 Gene Harris 2、Russell、Mellé；FRICTION、George Young 等薄寫；CURATED 0） |
+| sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
+| sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | s38 | ✅ 上線 30（前台 30；無留置；主線補查 Vick 內頁、Heaven & Earth、Eriksen 等；岡野等、後藤浩文薄寫；CURATED 0） |
+| sd-071 | 其餘（Horace Parlan … Integrity） | 30 | s38 | ✅ 上線 30（前台 30；無留置；主線補查 Immanu El、Integrity、Inner Dialogue 等；CURATED 0） |
+| sd-072 | 其餘（Interferon … James Brown） | 30 | s39 | ✅ 上線 30（前台 30；無留置；主線補查 Joala、Interferon、Jah Warrior、James Brown；Iron Cross 薄寫；CURATED 0） |
+| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | s39 | ✅ 上線 30（前台 30；無留置；主線補查 11 張（Discogs API）；Jazz Playaz、Jazzinuf 2 薄寫；CURATED 0） |
+| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | s40 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；jinsang、Holt 等薄寫；CURATED 0） |
+| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | s40 | ✅ 上線 30（前台 30；無留置；主線補查 15 張；Kareem Ali、Kangaroo 薄寫；CURATED 0） |
+| sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Christmas、Lacrimosa、Hays 2 等；CURATED 0） |
+| sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Lauge、Ritenour、Life's Blood、Linval Thompson 等；respect.her 薄寫；CURATED 0） |
+| sd-078 | 其餘（Linval Thompson … Lull） | 30 | s42 | ✅ 上線 30（前台 30；無留置；主線補查 Little John、Linval Thompson、Destellos、Wembler's、Ángeles Negros；Wembler's、Ángeles Negros 薄寫；CURATED 0） |
+| sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | s42 | ✅ 上線 30（前台 30；無留置；主線補查 MALTA 3（官網經歷救回 none 2）、Mad Professor 2、Marlena Shaw；Maple、MALTA 等薄寫；CURATED 0） |
+| sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | s43 | ✅ 上線 30（前台 30；無留置；主線補查 Mfon、Millie Jackson、菊地雅晃等；Mfon、Formula 等薄寫；CURATED 0） |
+| sd-081 | 其餘（Mitty Collier … Native Son） | 30 | s43 | ✅ 上線 30（前台 30；無留置；主線補查 Mylène Farmer 等；Native Son、mt. fujitive 等薄寫；CURATED 0） |
+| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | s44 | ✅ 上線 30（前台 30；無留置；主線補查 Organum《Sphyx》、Rothenberg、Nic Jones、No Brain；Optic Nerve 2、Ohbliv、Oblique Occasions 等薄寫；CURATED 0） |
+| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | s44 | ✅ 上線 30（前台 30；無留置；主線補查 Perfect、Pontiac Streator、Polaris；Photon、Perpetual Loop 等薄寫；CURATED 0） |
+| sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | s45 | ✅ 上線 30（前台 30；無留置；主線補查 Jazzbo、Boggs 3、Prysm、Quasar；Purrple Cat 9 張等薄寫；CURATED 0） |
+| sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | s45 | ✅ 上線 30（前台 30；無留置；主線補查 Radar 2（愛沙尼亞文維基＋Discogs API）、Quilapayún、raison d'être；Riow Arai 等薄寫；CURATED 0） |
 | sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |
 | sd-087 | 其餘（Sasha & John Digweed … Skyray） | 30 | | |
 | sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | | |
