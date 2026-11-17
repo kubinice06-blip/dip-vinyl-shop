@@ -8,6 +8,13 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-017.json,kv-before-sd-018.json,review-sd-017.json,review-sd-018.json}`、`desc-tools/batches/{cards,research,output}/sd-017*、sd-018*`、onboarding manifest 58 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2／desc4 116 鍵逐字回讀 116/116 一致；`front-check` 前台 58/58 新稿、CURATED 0；QA 無軌序／曲長／盤號（「16 軌」為一人多重錄音故事核心，「国」「会」為專名）。
 
+### 2026-11-17｜dip-vinyl-shop｜sd-hook-1：sd-001～007 已上線一般卡補開頭鉤子（209 張）
+
+- **店主**：「一樣要開頭給 hook 的方式」。sd-001～007 重寫稿上線時沒有鉤子，這批補上：第一句鉤子（材料限故事／概念／聲音／地位）、第二句講這是什麼，正文沿用現行稿，不新增研究稿以外的事實。
+- **範圍**：sd-001～007 全部 210 張（含 sd-hold-1 救回 10 張）扣林強《驚蟄》＝209 張；6 支 Opus 寫作，主線逐張審，改 16 處（出處／credit／版本雜項當鉤子各一、前四字撞 3 組、《開往天堂的海盜船》金音「獲獎」更正為「入圍」）。
+- **工具**：`batch-progress/desc-severe-20261117/tools/sd.mjs` 支援 `sd-hook-N`（卡單抓 KV 現行稿＋研究檔、qa 查鉤子），`sd-hook-2` 已預填；派工詞 `prompt-hook.md`。
+- **驗證**：kv-token-check exit 0；418 鍵 bulk put，回讀 418/418 一致；front-check 前台 209/209；manifest 同步 209 處；數字與外文專名越界比對 0。紀錄在同目錄 `rulings.md`「sd-hook-1」。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡簡介開頭恢復鉤子（材料限故事／概念／聲音）
 
 - **店主**：「一樣要開頭給 hook 的方式」。上午新規則把鉤子拿掉了；改為**鉤子照舊、材料限故事／概念／聲音／地位**，軌序、曲長、盤號、曲名體例、封套、版本不准當鉤子，第二句講這是什麼。
