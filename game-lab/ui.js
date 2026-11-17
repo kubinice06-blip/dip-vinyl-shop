@@ -686,6 +686,8 @@
   // ======================================================================= 頂欄（32px）、彈窗
   // 換畫面後 380 ms 內的頂欄點擊不算（B-topbar-doubletap-pingpong：台北 ×2 進去又出來）
   function topTapOk(e) { return !(e && e.isTrusted && now() - (UI.screenAt || 0) < 380); }
+  // 只換頂欄左邊那段字（鈕不動）：中繼點開局 createRun 之後，選秀中頂欄就寫「這一趟從第 N 位開始」（場景是 save.run 還是 null 時畫的）
+  function topLabel() { var tt = UI.top && qs('.tt', UI.top); if (tt) tt.innerHTML = posLabel(save.run); }
   function setTop(left, o) {
     o = o || {};
     var bar = UI.top; bar.innerHTML = '';
@@ -1880,10 +1882,13 @@
   //   （約 0.8 秒、5 下錢幣聲一次比一次高），停 1.6 秒再淡出；減少動態＝直接寫新的、只響一聲。.keep：接著換畫面也留著
   var CASH = {};
   function cashAfter(from, to) { afterQ.push([CASH, { from: from, to: to }]); }
+  //   花錢（to < from；第 C 波攤位買東西）：同一條改寫「−$3,000」、數字往下數、不金色、不響錢幣聲（看起來不能像賺錢）
   function cashRise(from, to) {
     from = Math.max(0, from | 0); to = Math.max(0, to | 0);
     qsa('.lb-toast.cash', app()).forEach(function (x) { x.remove(); });
-    var t = el('div', 'lb-toast cash keep gold', '<span class="ce">' + esc(fill((C.shopUi && C.shopUi.earned) || '+${n}', { n: E.moneyText(to - from) })) + '</span>' +
+    var spend = to < from;
+    var lbl = spend ? fill(((C.waveC && C.waveC.ui) || {}).spent || '−${n}', { n: E.moneyText(from - to) }) : fill((C.shopUi && C.shopUi.earned) || '+${n}', { n: E.moneyText(to - from) });
+    var t = el('div', 'lb-toast cash keep ' + (spend ? 'spend' : 'gold'), '<span class="ce">' + esc(lbl) + '</span>' +
       '<b class="cv">' + esc(fill((C.shopUi && C.shopUi.money) || '${n}', { n: E.moneyText(from) })) + '</b>');
     t.setAttribute('role', 'status');
     var prev = qsa('.lb-toast:not(.out):not(.cash)', app());
@@ -1893,7 +1898,7 @@
     var steps = rm() ? 1 : 12, k = 0, dt = 800 / steps;
     var tick = function () {
       k++; show(k >= steps ? to : Math.round(from + (to - from) * (1 - Math.pow(1 - k / steps, 2))));
-      if (k === steps || (k % 3 === 0)) sfx('coin', { k: Math.min(4, Math.floor(k / 3)) });
+      if (!spend && (k === steps || (k % 3 === 0))) sfx('coin', { k: Math.min(4, Math.floor(k / 3)) });
       if (k < steps) setTimeout(tick, dt / speed()); else { t.classList.add('done'); setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 1600 / speed()); }
     };
     setTimeout(tick, 120 / speed());
@@ -1938,11 +1943,15 @@
     });
     return out.join('・');
   }
+  // 上線後記（SPEC-C §15；save.wcLog）：計數 +1（ground 點地上東西、lootRows、leave 今天不逛了、sessions 攤位場數、resumeInStall 攤位中回來續玩）
+  function wcLog(k) { var L = save.wcLog || (save.wcLog = {}); L[k] = (L[k] | 0) + 1; }
   function doChoose(ch) {
     var r = save.run;
     var prologue = r && r.prologue === 'pending';
+    var st0 = !!r && E.nextStep(r) === 'stall';
     var res = E.choose(r, C, ch);
     if (!res.ok) console.warn('choose error', res.error, ch);
+    if (res.ok && !st0 && r && E.nextStep(r) === 'stall') wcLog('sessions');   // 攤位場數：這一下把攤位開出來了才算一場（重畫、重新整理不算）
     if (res.ok && ch && ch.type === 'bargainPick' && prologue) save.lastBargain = ch.ids.slice();   // 重看教學用（§2.5.5）
     (res.effects || []).forEach(function (f) {
       if (f.gainCard) { shelfAdd(f.gainCard); gotCard(r, f.gainCard); }
@@ -1979,6 +1988,7 @@
   function runWhere(r) {
     if (!r) return '';
     if (inPrologue(r)) return TU('prologue');
+    if (r.pending && r.pending.type === 'draft' && r.cpFrom > 1) return TU('pos', { n: r.cpFrom }) + '・' + WU('cpWhere');   // 第 C 波：中繼點開局選秀中（pos 還是 1）
     var id = E.current(r, C), en = C.enemies[id];
     return TU('pos', { n: r.pos }) + (en ? '・' + en.name : '');
   }
@@ -2080,6 +2090,7 @@
         UI.going = true;
         var f = FX(); var want = save.settings.sound === true;
         if (f) { try { if (f.init) f.init(); f.unlockFromGesture(want); } catch (_) {} }
+        if (save.run && !save.run.over && E.nextStep(save.run) === 'stall') wcLog('resumeInStall');   // 上線後記（SPEC-C §15）：在攤位中關掉 App、回來續玩（選組前也算）
         ensurePlayer(); resumeRun();
       }
     });
@@ -2345,7 +2356,7 @@
         // 老闆那句說完、走去特價箱之前：從唱片櫃挑種子（店主 11-13 §1 裁定 2；櫃裡沒有能帶的就跳過）
         //   第 C 波（SPEC-C §4.7）：挑完種子多一步「從哪裡開始？」（第 1 位＋打到過的中繼點；只有第 1 位不出現）
         return seedPickFlow(tier).then(function (seeds) {
-          return cpPickFlow().then(function (from) { createRun({ ace: tier, prologue: false, seeds: seeds, from: from }); });
+          return cpPickFlow().then(function (from) { createRun({ ace: tier, prologue: false, seeds: seeds, from: from }); topLabel(); });
         });
       }).then(function () {
         dlg.clear();
@@ -3329,7 +3340,7 @@
       // 稱號（第 A 波 3；engine guestTitle：每 2 位換一次、藏家／跟名字一樣＝null）：頭像下緣一塊小名牌（壓在頭像上，不多佔一行：375×548 店景不再縮）
       //   「○○級」（titleTx）；放不下的用短寫（C.trial.titlesShort：地下廠牌主理人 → 廠牌主理人；aria-label 照全名）；6 字以上的名牌收一號（.lg），其他 10 px
       var tt = titleTx(g.title), ts = titleTx(g.title && ((C.trial || {}).titlesShort || {})[g.title] || g.title);
-      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '') + (g.fortune ? ' ' + ((C.waveC || {}).stations || {}).fortune : '') + (g.dare ? ' ' + ((C.waveC || {}).stations || {}).dare : '')) + '">' +
+      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.skip ? ' skip' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '') + (g.fortune ? ' ' + ((C.waveC || {}).stations || {}).fortune : '') + (g.dare ? ' ' + ((C.waveC || {}).stations || {}).dare : '')) + '">' +
         '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + stallMarks(g) + '</span>' +
         (ts ? '<span class="tl' + (ts.length >= 6 ? ' lg' : '') + '">' + esc(ts) + '</span>' : '') + '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
@@ -3496,13 +3507,18 @@
       var gain = bt && chs.tiers.indexOf(bt) < 0 ? TU('bossUnlock', tierVars(bt)) : (UI.apex && chs.apex && chs.apex.indexOf(bc.id) < 0 ? TU('bossCollect') : '');
       bl += '<div class="bl st boss-ace"><b>' + esc(TU('bossCarry', { album: bc.album })) + '</b>' + esc(gain) + '</div>';
     }
-    var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+    var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : g.skip ? WU('cpSkip') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
       tags + bl + '</div></div>' +
       (ln ? '<div class="lb-habit"><span class="tx">' + esc([].concat(ln)[0]) + '</span></div>' : '') +
       '<div class="two">' + (cur ? '<button type="button" class="lb-btn pri big key" data-a="go">就他了</button>' : '') + '<button type="button" class="lb-btn big key" data-a="close">' + (cur ? '再看看' : '關閉') + '</button></div>';
     var s = floatSheet(html, 'guest');
-    s.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('[data-a=go]')) { s.remove(); syncFloat(); nextGuest(); } });
+    s.addEventListener('click', function (e) {
+      if (!(e.target.closest && e.target.closest('[data-a=go]'))) return;
+      // 攤位還沒逛完（第 C 波 SPEC-C §4.3-6）：「就他了」跟對戰台、箱子一樣回「先逛完今天的攤位。」，面板留著
+      if (save.run && E.nextStep(save.run) === 'stall') { sfx('tick'); toast(WU('busy')); return; }
+      s.remove(); syncFloat(); nextGuest();
+    });
   }
   // 下一位推門進來：門 swing、他走進來說一句（推門那句），接著無縫推近成對決
   function nextGuest() {
@@ -4623,7 +4639,8 @@
         topRect: function () { var a = app().getBoundingClientRect(); return { left: a.left + a.width / 2 - 40, top: a.top + 40, width: 80, height: 26 }; },
         auto: autoAct, policy: function () { return E.runPolicy(save.run, C); },
         anim: function () { return { fast: !!(save.settings && save.settings.fastAnim), k: FAST ? 4 : 1, rm: rm() }; },
-        floor: function (id) { var c = card(id); if (!c) return; stg('floorRecord', 'duelE', { attr: E.topAttr(c) }); UI.dropFloor = true; }
+        floor: function (id) { var c = card(id); if (!c) return; stg('floorRecord', 'duelE', { attr: E.topAttr(c) }); UI.dropFloor = true; },
+        log: function (k) { wcLog(k); persist(); }
       });
       UI.lootOk = true;
     } catch (e) { console.error(e); }
@@ -4643,6 +4660,7 @@
         auto: autoAct, autoOn: function () { return !!UI.auto; }, policy: function () { return E.cPolicy(save.run, C); },
         coverHTML: function (c, o) { return coverHTML(c, o); }, starsHTML: function (c, o) { return starsHTML(c, o); }, tileHTML: function (c, o) { return tileHTML(c, o); },
         relicButtonsHTML: relicButtonsHTML, relicName: function (id) { return (relicOf(id) || {}).name || ''; }, pix: pix,
+        relicOf: relicOf, relicIcon: function (id, size) { return relicIcon(id, size); },
         relicPanel: relicPanel, levelPanel: levelPanel,
         play: function (c) { var f = FX(); if (c && c.previewUrl && soundOn() && f && f.music && f.music.play) try { f.music.play(c, { fadeMs: 600 }); } catch (e) { console.error(e); } },
         // 錢、包包、配件那條（今天的攤位底部）照最新的 run 重畫
@@ -4650,7 +4668,7 @@
         done: function () { if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } },
         setSpot: function (k) { if (k) UI.lastSpot = k; },
         enemySpr: function (id) { return enemySpr(C.enemies[id]); },
-        log: function (k) { var L = save.wcLog || (save.wcLog = {}); L[k] = (L[k] | 0) + 1; persist(); },
+        log: function (k) { wcLog(k); persist(); },
         checkpoints: function () { return (save.best.checkpoints || []).slice(); },
         renderStrip: function (sc) { if (sc) { sc.stripState = null; renderStrip(sc); } }
       });

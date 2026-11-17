@@ -91,6 +91,7 @@ if (!BINS.feature) { fakeBins = true; BINS = contractBins(); }
 const WC_OFF = { loot: { on: false }, chest: { on: false }, stall: { on: false }, safety: { on: false } };
 const C = Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [] }) });
 const CW = Object.assign({}, C0, { cards: CARDS, bins: BINS });
+const SKIP$ = EN.wcCfg(CW).loot.skipCash, CSKIP$ = EN.wcCfg(CW).chest.skipCash, PACKET = EN.wcCfg(CW).loot.packet;   // 出貨的「不收」錢、紅包機率（驗收修正：$200、6%）
 const COFF = Object.assign({}, C, { lot: Object.assign({}, C.lot, { on: false }) });   // 一檔貨關（第 B 波 SPEC-B §3.2 on:false＝舊補貨原封不動）
 
 // ---------------- helpers ----------------
@@ -3346,7 +3347,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
         if (!ok(p && p.type === 'reward' && p.kind === 'loot', 'loot pending', p)) break;
         rows++;
         ok(p.cards.length === 3 && new Set(p.cards).size === 3 && p.cards.every(id => !run.bag.includes(id) && CW.cards[id] && !CW.cards[id].tier), 'loot: 3 distinct, not in bag, no apex', p.cards);
-        ok(p.src.length === 3 && p.skipCash === 400 && p.need === (pos === 4 ? 'cardOrRelic' : 'card'), 'loot: src, skipCash, need (elite = cardOrRelic)', p);
+        ok(p.src.length === 3 && p.skipCash === SKIP$ && p.need === (pos === 4 ? 'cardOrRelic' : 'card'), 'loot: src, skipCash, need (elite = cardOrRelic)', p);
         if (p.src.includes('unplayed')) withUnplayed++;
         if (p.gold.length) { golds++; const th = EN.wcTh(CW, pos, 'gold'); ok(p.gold.every(id => EN.power(CW.cards[id]) >= th && p.cards.includes(id)), 'gold card from the gold pool', { th, g: p.gold }); }
         ok(p.cards.every(id => run.drops.includes(id)), 'loot cards are the drops (keep-one candidates)');
@@ -3361,7 +3362,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
         // 3：不收 +$400（stats.earned 也加）；收下的進 found
         if (pos % 2) {
           const m1 = run.money, e1 = run.stats.earned, r = EN.choose(run, CW, pos === 4 ? { type: 'skip' } : { type: 'skip' });
-          ok(r.ok && run.money === m1 + 400 && run.stats.earned === e1 + 400 && r.effects.some(x => x.cash === 400), 'skip: +$400 (money and stats.earned)', r);
+          ok(r.ok && run.money === m1 + SKIP$ && run.stats.earned === e1 + SKIP$ && r.effects.some(x => x.cash === SKIP$), 'skip: +skipCash (money and stats.earned)', r);
         } else {
           const id = p.cards[0], r = EN.choose(run, CW, { type: 'take', cardId: id });
           ok(r.ok && run.bag.includes(id) && run.found.includes(id), 'take: into the bag and run.found', r);
@@ -3372,7 +3373,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(rows >= 200, 'enough loot rows', rows);
     ok(withUnplayed / rows >= 0.99, 'loot: ≥99% rows have an unplayed card', withUnplayed + '/' + rows);
     ok(golds > 10 && golds < rows * 0.3, 'loot: some gold rows (15%)', golds + '/' + rows);
-    ok(packets > 5 && packets < rows * 0.25, 'loot: some packets (12%)', packets + '/' + rows);
+    ok(packets > 2 && packets < rows * Math.min(0.25, PACKET * 2.5), 'loot: some packets (' + Math.round(PACKET * 100) + '%)', packets + '/' + rows);
     // 菁英改拿配件：relic → 不給錢、cardDone
     const run = newW('loot-elite'); winToW(run, CW, 4); fwin(run, CW);
     const p = run.pending, m = run.money, r = EN.choose(run, CW, { type: 'relic', relicId: p.relics[0] });
@@ -3387,7 +3388,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
       if (!ok(p && p.kind === 'chest', 'boss → chest', p)) continue;
       n++;
       ok(p.cards.length === 3 && new Set(p.cards).size === 3 && p.cards.every(id => !CW.cards[id].tier), 'chest: 3 cards, no apex card', p.cards);
-      ok(p.relics.length === 1 && p.need === 'cardOrRelic' && p.skipCash === 400, 'chest: one relic, cardOrRelic, +$400', p);
+      ok(p.relics.length === 1 && p.need === 'cardOrRelic' && p.skipCash === CSKIP$, 'chest: one relic, cardOrRelic, +skipCash', p);
       ok(res.aceWon && run.acesWon.includes(res.aceWon) && !p.cards.includes(res.aceWon), 'boss apex card still goes to acesWon (#465), not into the chest', res.aceWon);
       if (p.gold.length) gold++;
       if (s === 1) ok(p.src[0] === 'apex' && p.apexSlot.length >= 1 && run.chestDry === 0, 'pity: chestDry 5 → apex slot, then 0', { src: p.src, dry: run.chestDry });
@@ -3551,7 +3552,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(EN.newRun(C, { seedKey: 's5', runNo: 2, ace: 'hall', prologue: false, safety: true }).safety === false, 'content safety off → none'); }
 
   // ---- 11 中繼點開局 ----
-  { eq([10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(CW, N)), [{ k: 2, m: 4 }, { k: 3, m: 6 }, { k: 4, m: 8 }, { k: 5, m: 10 }, { k: 5, m: 13 }, { k: 5, m: 16 }], 'draftPlan table (§5.6)');
+  { eq([10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(CW, N)), [{ k: 2, m: 4 }, { k: 3, m: 6 }, { k: 4, m: 8 }, { k: 5, m: 12 }, { k: 5, m: 16 }, { k: 5, m: 19 }], 'draftPlan table (§5.6；驗收修正 m＝round(L−2))');
     const run = newW('cp10', { from: 10, relics: ['dustcover'] });
     ok(run.cpFrom === 10 && run.pos === 1 && run.prologue === null && run.pending.type === 'draft' && run.pending.k === 2 && run.pending.m === 4 && EN.nextStep(run) === 'draft', 'from 10 → draft, pos stays 1', run.pending);
     ok(!EN.canBargainPick(run) && !EN.canSwitchAce(run, CW), 'no bargain pick / ace switch during the draft');
@@ -3582,11 +3583,11 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(act(run, 'buy', { cardId: id }).ok && run.money === m - pr && run.stats.bought.includes(id) && !run.found.includes(id), 'trade: buy (bought, not found)');
     m = run.money; ok(act(run, 'sell', { cardId: id }).ok && run.money === m + EN.sellValue(CW, CW.cards[id]), 'trade: sell a bought one = half');
     const f = run.bag.find(x => !run.gifts.includes(x)); run.found.push(f); m = run.money;
-    ok(act(run, 'sell', { cardId: f }).ok && run.money === m + Math.min(EN.sellValue(CW, CW.cards[f]), 400) && !run.found.includes(f), 'trade: a found one = $400, out of found');
+    ok(act(run, 'sell', { cardId: f }).ok && run.money === m + Math.min(EN.sellValue(CW, CW.cards[f]), SKIP$) && !run.found.includes(f), 'trade: a found one = skipCash, out of found');
     run.bag.push(f); eq(EN.sellCore(run, CW, f).earn, EN.sellValue(CW, CW.cards[f]), 'bought back later → half again');
     act(run, 'done'); act(run, 'ok'); ok(!run.pending && EN.canShop(run), 'stall over → counter open');
     const f2 = run.bag.find(x => !run.gifts.includes(x) && x !== f); run.found.push(f2);
-    const q = EN.sellQuote(run, CW, f2); ok(q.ok && q.found === true && q.earn === Math.min(EN.sellValue(CW, CW.cards[f2]), 400), 'counter: found → $400 (q.found)', q);
+    const q = EN.sellQuote(run, CW, f2); ok(q.ok && q.found === true && q.earn === Math.min(EN.sellValue(CW, CW.cards[f2]), SKIP$), 'counter: found → skipCash (q.found)', q);
     m = run.money; r = EN.choose(run, CW, { type: 'sell', cardId: f2 }); ok(r.ok && run.money === m + q.earn && r.effects[0].found === true && !run.found.includes(f2), 'counter sell found', r);
     // 種子
     const sd = newW('sell-sd', { seeds: [EN.seedPolicy(CW, Object.keys(CW.cards), 1)[0]] }); winToW(sd, CW, 2); const s0 = sd.seeds[0];
@@ -3594,7 +3595,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     // 市集
     const mk = newW('sell-mk'); winToW(mk, CW, 11); fakeStall(mk, [['snack', 'home'], ['dig', 'gig']], { cp: true, post: ['market', 'studio'] }); pickG(mk, 0); act(mk, 'ok'); act(mk, 'ok');
     const fm = mk.bag.find(x => !mk.gifts.includes(x)); mk.found.push(fm); m = mk.money;
-    ok(mk.pending.cur.kind === 'market' && act(mk, 'sell', { cardId: fm }).ok && mk.money === m + Math.min(EN.sellValue(CW, CW.cards[fm]), 400), 'market sell = sellCore');
+    ok(mk.pending.cur.kind === 'market' && act(mk, 'sell', { cardId: fm }).ok && mk.money === m + Math.min(EN.sellValue(CW, CW.cards[fm]), SKIP$), 'market sell = sellCore');
     ok(act(mk, 'sell', { cardId: 'nope' }).error === 'badSell', 'market sell: not in the bag'); }
 
   // ---- 13 一趟留一張：不含買的；含撿來的、他掉的 ----
@@ -3657,7 +3658,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     const r = newW('fix2'); winToW(r, CW, 2); fwin(r, CW); r.pending.cards[1] = 'gone|gone'; r.found.push('gone|x'); r.road.push('gone|y');
     EN.fixWaveC(r, CW); ok(r.pending.cards.length === 2 && r.pending.src.length === 2 && !r.found.includes('gone|x') && !r.road.includes('gone|y'), 'unknown ids dropped (cards and src together)', r.pending);
     const z = newW('fix3'); winToW(z, CW, 2); fwin(z, CW); z.pending.cards = ['gone|1']; z.pending.src = ['played']; EN.fixWaveC(z, CW);
-    const m = z.money, k = EN.choose(z, CW, { type: 'skip' }); ok(k.ok && z.money === m + 400, 'all filtered → skip still gives $400');
+    const m = z.money, k = EN.choose(z, CW, { type: 'skip' }); ok(k.ok && z.money === m + SKIP$, 'all filtered → skip still gives skipCash');
     const st = newW('fix4'); winToW(st, CW, 6); fakeStall(st, [['dig', 'snack'], ['home', 'gig']]); pickG(st, 0); const c0 = st.pending.cur.cards.slice();
     st.pending.cur.cards = ['gone|a', 'gone|b', 'gone|c']; EN.fixWaveC(st, CW);
     ok(st.pending.cur && st.pending.cur.kind === 'dig' && st.pending.cur.cards.length === 3 && st.pending.cur.cards.every(id => CW.cards[id] && !c0.includes(id)), 'station goods all gone → re-enter the station (fresh goods)', st.pending.cur);

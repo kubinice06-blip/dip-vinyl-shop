@@ -16,7 +16,8 @@
  *   coverHTML(c, o), starsHTML(c, o), relicButtonsHTML(ids, attr), bagText(n), bagGain(id), rewardNote(),
  *   take(id) → Promise<res|null>, relic(id, autoDrop) → Promise<res|null>, skip() → res,
  *   shelfAdd(id), shelfHas(id), seen(k), markSeen(k), fly(c, fromEl, toRect) → Promise, wallRect(), bagRect(), topRect(),
- *   auto(fn, ms)（自動玩登記）, policy() → choice, anim() → { fast（動畫加速）, k（?fast=1 的倍率）, rm（減少動態） }, floor(card|null)
+ *   auto(fn, ms)（自動玩登記）, policy() → choice, anim() → { fast（動畫加速）, k（?fast=1 的倍率）, rm（減少動態） }, floor(card|null),
+ *   log(k)（save.wcLog 計數；這裡只記 'ground'：這一列玩家自己點了蓋牌／木箱，一列最多算一次）
  *
  * 時間線（SPEC-C §4.1；「動畫加速」開著：自己翻 1.5→0.6 秒、其他減半；?fast=1 再除 4）：
  *   0 秒 他轉身走（ui.js）、字幕「對方似乎掉落了什麼……」（C.script.drop G1，店主句；不用點、1.8 秒淡掉）
@@ -70,10 +71,13 @@
     var id = S.p.cards[i], c = card(id); if (!c) return '';
     var gain = 0;
     try { gain = +H.bagGain(id) || 0; } catch (_) {}
-    var up = gain > 0.005 ? '<span class="lt-up" role="img" aria-label="' + esc(U('upHint')) + '" title="' + esc(U('upHint')) + '">↑</span>' : '';
+    // 包包裡已經有這張（舊存檔的列、引擎退路沒擋到）：鈕寫「包包裡有了」、按不下去（不讓「收這張」變成死鈕）
+    var r = H.run(), have = !!r && Array.isArray(r.bag) && r.bag.indexOf(id) >= 0;
+    var up = !have && gain > 0.005 ? '<span class="lt-up" role="img" aria-label="' + esc(U('upHint')) + '" title="' + esc(U('upHint')) + '">↑</span>' : '';
     return '<span class="lt-face">' + H.coverHTML(c) + up + '</span>' +
       '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + H.starsHTML(c) +
-      '<button type="button" class="lb-pickb key" data-pick="' + esc(id) + '">' + esc(U('take')) + '</button>';
+      (have ? '<button type="button" class="lb-pickb key" disabled>' + esc((C().shopUi && C().shopUi.owned) || '包包裡有了') + '</button>'
+        : '<button type="button" class="lb-pickb key" data-pick="' + esc(id) + '">' + esc(U('take')) + '</button>');
   }
   function tileUp(i) {
     var g = isGoldSrc(S.p.src && S.p.src[i]);
@@ -113,20 +117,24 @@
   function whenAllUp() {
     if (!S || S.kind !== 'loot' || S.saidFirst) return;
     S.saidFirst = true;
-    var wait = S.out && !A().rm ? Math.max(0, (S.t0 || 0) + ms('fly') + Math.round(3000 / A().k) - Date.now()) : 0;
+    //   減少動態也一樣等（錢那條照樣在 1.35 秒出、停約 2 秒；而且一開始鏡頭還沒定，量泡泡出不出界會量錯）
+    var wait = S.out ? Math.max(0, (S.t0 || 0) + ms('fly') + Math.round(3000 / A().k) - Date.now()) : 0;
     after(function () {
       try { if (!H.seen('firstLoot')) { H.markSeen('firstLoot'); ownerLine(U('firstLoot', { n: mt(S.p.skipCash || 400) }), 3800); } } catch (e) { console.error(e); }
     }, wait);
   }
-  // 老闆說一句：店景泡泡；泡泡被舞台邊切掉（375 寬的領獎鏡頭，老闆在右上、泡泡只能往右放）就改成一顆吐司（整句看得到）
+  // 老闆說一句：店景泡泡；泡泡被舞台邊切掉（375 寬的領獎鏡頭，老闆在右上、泡泡只能往右放）就改成一顆吐司（整句看得到）。
+  //   鏡頭可能還在動（重新整理回來、減少動態直接換鏡頭）：泡泡還在就多量幾次，哪一次出界就改吐司
   function ownerLine(text, ms) {
     var b = null; try { b = H.say('o', text, ms); } catch (e) { console.error(e); }
+    var moved = false;
     var chk = function () {
-      if (!b || !b.isConnected) return;
+      if (moved || !b || !b.isConnected) return;
       var r = b.getBoundingClientRect(), st = null; try { st = H.stageRect(); } catch (_) {}
-      if (st && (r.left < st.left - 1 || r.right > st.right + 1 || r.top < st.top - 1)) { try { H.unsay('o'); H.toast(text, 'keep long'); } catch (e) { console.error(e); } }
+      if (st && (r.left < st.left - 1 || r.right > st.right + 1 || r.top < st.top - 1)) { moved = true; try { H.unsay('o'); H.toast(text, 'keep long'); } catch (e) { console.error(e); } }
     };
     if (W.requestAnimationFrame) requestAnimationFrame(function () { requestAnimationFrame(chk); }); else setTimeout(chk, 32);
+    [250, 700, 1400].forEach(function (t) { setTimeout(chk, t); });
   }
 
   // ------------------------------------------------------------------ 面板
@@ -173,14 +181,17 @@
     if ((el = t.closest && t.closest('[data-flip]'))) {
       if (!S.armed) return;
       var i = +el.getAttribute('data-flip');
+      groundTap();
       flip(i); if (allFlipped()) whenAllUp();
       return;
     }
-    if ((el = t.closest && t.closest('[data-a=lid]'))) { openLid(); return; }
+    if ((el = t.closest && t.closest('[data-a=lid]'))) { if (!S.open) groundTap(); openLid(); return; }
     if ((el = t.closest && t.closest('[data-pick]'))) { if (!el.disabled) takeIt(el.getAttribute('data-pick'), el); return; }
     if ((el = t.closest && t.closest('[data-r]'))) { relicIt(el.getAttribute('data-r')); return; }
     if ((el = t.closest && t.closest('[data-a=skip]'))) { skipIt(); return; }
   }
+  // 上線後記（SPEC-C §15「點地上東西的比例」）：這一列玩家自己點了蓋牌／木箱（不是等它自己翻）；一列最多算一次，÷ lootRows 就是比例
+  function groundTap() { if (!S || S.tapped) return; S.tapped = true; try { if (H.log) H.log('ground'); } catch (e) { console.error(e); } }
   // 錢還沒飛（玩家很快就選了）：剩下的幾段併成一段，排到下一個畫面才跳（ui.js cashAfter）
   function flushMoney(extra) {
     if (!S) return;

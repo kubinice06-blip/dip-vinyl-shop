@@ -42,7 +42,10 @@
 //   --wc '<json>'  deep-merge 進 C.waveC（例 --wc '{"stall":{"on":false}}' 拆解）。--wc off＝C 波全關（loot／chest／stall／safety 關＋C.trial.guestHpSteps []）＝現行對照，輸出跟 C 波之前逐字相同
 //              （JSON 只差 report.trial 多 guestHpSteps:[]）。--wc 先套、--patch 再蓋。C 波開著時多印三張表（printWC：錢、各件次數、每種站出現→被選），JSON 每格多 wcx、report 多 waveC
 //   --copt '<json>' cPolicy 選項：pickFirst、firstSide、dare 'auto'|'always'|'never'、dareHp、reserve（1e9＝永遠不買門票）、reroll、takeSell（bagScore 不漲的照收、下一位前拿去櫃檯賣）、boostFirst
-//   --safety   每一趟都有新手保底（第 1 位輸了免費重打；只印對照，門檻照不加量）
+//   --safety   每一趟都有新手保底（第 1 位輸了免費重打）＝新帳號第一趟（ui createRun：沒有上一趟就給）。驗收修正（2026-11-17）：D1／D2 照這個判
+//              （沒加 --safety 只列參考：真人新帳號第一趟一定有保底）；T1 照沒保底量（加了 --safety 只列參考）；其他門檻照舊
+//   --cpbase <json>  中繼點開局（--from N）的「從頭打」對照：新帳號、會讀的、smart 的 --json（要打得到第 N＋10 位，例 n 4000）。印 C1 參考：
+//              從中繼點開的 10 位存活率 − 從頭打到第 N 位的人再撐 10 位，在 −8～+3 點內（驗收修正：加第 50 位、加下限）
 //   --from N   從第 N 位中繼點開局（快速選秀；N 要是中繼點 10／20／30／50／75／100…）；--from-relics a,b,c＝身上配件。多印「中繼點開局」表（只印、不判 C1）
 //   --returning a,b,c  老玩家＝不打序章、帶這三件配件開局（建議 dustcover,stylus,boost_c）；D3 用它判
 //   --dbase <json>  現況對照（同 n、同旗標、--wc off 跑出來的 --json 檔）：D1（新帳號）／D3（--returning）照它判；沒給就只列參考
@@ -84,7 +87,7 @@
 //   S5 序章男子（保留 v4 §5.2）：會讀的 ≥97%、平均 ≤4 手；只出最大星 ≥90%；新手（永遠剋提示）≥90%
 //   M6 最多 6 手（CFG.maxRounds）；HP 聲望單調 C.trial.guestHp 一般 ≤ 菁英 ≤ 藏家（不靠模擬）
 //   第 C 波（SPEC-C §8 定稿；C 波開著才檢查，上面 13 條照舊全看 C 波開著的 smart）：
-//   D1 C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點（--dbase 給同 n、同旗標的現況）　D2 新手 到第 10 位 ≤33%
+//   D1 C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點（--dbase 給同 n、同旗標的現況）　D2 新手 到第 10 位 ≤33%（D1／D2 要 --safety＝新帳號第一趟）
 //   D3 老玩家不變難也不變簡單（--returning）：會讀的 到第 50 位在現況 ±4 點內　——D1–D3 n ≥ 4000 才判，更小只列參考（跟 T3 一樣）
 //   K1 選路有差：會讀的 每種站出現時被選 15–85%（出現 <50 次的站只列）　K2 踢館帖：smart 接帖率（接÷走到那站）20–80%；--copt '{"dare":"always"}' 時接帖那輪首戰勝率比平常少 ≤10 點（第 31 位起）
 //   K4 新手 到第 5 位 ≥75%　N1 會讀的 第 15 位起路上的盤重複 ≤10%、一趟新認識 ≥50 張
@@ -185,6 +188,7 @@ const RET_RELICS = arg('returning', null) ? arg('returning').split(',').filter(B
 for (const id of FROM_RELICS.concat(RET_RELICS || [])) if (!(C.relics || {})[id]) { console.error('沒有配件 ' + id); process.exit(2); }
 if ((FROM || SAFETY || COPT_SET) && !WC_ON) { console.error('--from／--safety／--copt 要 C 波開著（不要 --wc off）'); process.exit(2); }
 const DBASE = arg('dbase', null) ? JSON.parse(fs.readFileSync(arg('dbase'), 'utf8')) : null;
+const CPBASE = arg('cpbase', null) ? JSON.parse(fs.readFileSync(arg('cpbase'), 'utf8')) : null;   // C1：中繼點開局的「從頭打」對照（新帳號 會讀的 smart）
 const LOT_ON = !!EN.lotCfg(C).on;
 const BROWSE = +arg('browse', 16);
 if (!(Number.isInteger(BROWSE) && BROWSE >= 1)) { console.error('--browse k（1–16 的整數；16＝全看）'); process.exit(2); }
@@ -639,7 +643,7 @@ if (FROM) report.from = { n: FROM, relics: FROM_RELICS };
 if (RET_RELICS) report.returning = RET_RELICS;
 if (RET_RELICS) console.log('\n老玩家（--returning）：不打序章、帶 ' + RET_RELICS.join('、') + ' 開局');
 if (FROM) console.log('\n中繼點開局（--from ' + FROM + '）：快速選秀（撿盤 ' + EN.draftPlan(C, FROM).k + ' 次二選一、升級 ' + EN.draftPlan(C, FROM).m + ' 次三選一）→ 特價箱 → 從第 ' + FROM + ' 位開打；配件 ' + (FROM_RELICS.join('、') || '無'));
-if (SAFETY) console.log('\n新手保底（--safety）：每一趟第 1 位輸了免費重打一次（只印對照）');
+if (SAFETY) console.log('\n新手保底（--safety）：每一趟第 1 位輸了免費重打一次（＝新帳號第一趟；D1／D2 照這個判，T1 只列參考）');
 if (DBASE && !(DBASE.N === N && DBASE.CAP === CAP && JSON.stringify(DBASE.returning || null) === JSON.stringify(RET_RELICS || null) && !DBASE.waveC)) {
   console.error('--dbase 要是同 n、同 cap、同 --returning、--wc off 跑出來的 JSON（這份 n ' + DBASE.N + '、cap ' + DBASE.CAP + '、returning ' + JSON.stringify(DBASE.returning || null) + (DBASE.waveC ? '、C 波開著' : '') + '）'); process.exit(2);
 }
@@ -735,11 +739,20 @@ if (MODE === 'all' || MODE === 'runs') {
   }
 
   if (WC_ON) printWC(rows);                                              // 第 C 波（全關不印）
-  if (FROM) {                                                            // 中繼點開局（--from N；只印、不判 C1）
+  if (FROM) {                                                            // 中繼點開局（--from N；只印；C1 列參考，要 --cpbase）
     console.log(`\n中繼點開局（從第 ${FROM} 位開；第一場是藏家）：\n`);
     console.log(`| 策略 | 流程 | 深度 中位（p25–p75）／平均 | 撐過 5 位（到第 ${FROM + 5} 位） | 撐過 10 位（到第 ${FROM + 10} 位） | 第 ${FROM} 位（第一場）死亡率 | 客人場勝率 |`);
     console.log('|---|---|---|---|---|---|---|');
     for (const x of rows) { const c = x.cp; if (!c) continue; console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${c.median}（${c.p25}–${c.p75}）／${c.mean.toFixed(1)} | ${pct(c.reach5)} | ${pct(c.reach10)} | ${pct(c.first)} | ${pct(x.win)} |`); }
+    // C1（參考，SPEC-C §8；驗收修正：第 50 位也比、加下限）：從中繼點開的 10 位存活率 − 從頭打到第 N 位的人再撐 10 位，在 −8～+3 點內（--cpbase）
+    const bp = CPBASE && CPBASE.runs && CPBASE.runs.smart && CPBASE.runs.smart.thoughtful && CPBASE.runs.smart.thoughtful.pos, cpT = cellOf(GATE, 'thoughtful');
+    if (cpT && cpT.cp) {
+      const a = bp && bp[FROM - 1], b = bp && bp[FROM + 9], nm = `［${GATE}］中繼點開局：從第 ${FROM} 位開的 10 位存活率，跟從頭打到那裡的比在 −8～+3 點內（會讀的）`;
+      if (a && b && a.reached >= 100) { const base = b.reached / a.reached, d = cpT.cp.reach10 - base;
+        const okc = d >= -0.08 - 1e-9 && d <= 0.03 + 1e-9;
+        refs.push({ id: 'C1', name: nm, ok: okc, info: `${pct(cpT.cp.reach10)} 對 從頭打 ${pct(base)}（${b.reached}/${a.reached} 趟；${(d >= 0 ? '+' : '') + pt(d)} 點）` + (okc ? '［在範圍內］' : '［不在範圍內］') }); }
+      else refs.push({ id: 'C1', name: nm, ok: null, info: `${pct(cpT.cp.reach10)}；${CPBASE ? '--cpbase 打到第 ' + FROM + ' 位的不到 100 趟（或沒有第 ' + (FROM + 10) + ' 位）' : '沒給 --cpbase（新帳號 會讀的 smart 的 --json）'}，只列` });
+    }
   }
 
   if (UNLOCK) {                                                          // 頂點卡收集（--unlock：每趟新玩家，只解鎖這一派）
@@ -762,7 +775,10 @@ if (MODE === 'all' || MODE === 'runs') {
 
   // ---- 門檻（--gate 流程；--from 中繼點開局不判，只印中繼點開局表，M6、HP 照判）----
   const G = FROM ? {} : cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, HR = G.humanRead, OR = G.oldReader, FM = G.formula, MR = G.mirrorHint, tag = `［${GATE}］`;
-  if (NV) check('T1', `${tag}新手 第 1–3 位死亡 8–15%（前期要有挑戰，見檔頭）`, NV.die13 >= 0.08 - 1e-9 && NV.die13 <= 0.15 + 1e-9, `${pct(NV.die13)}（V3 2%；11-16 前期加難前 smart 1.5%）`);
+  if (NV) {                                                              // T1 照沒保底量（SPEC-C §13-15）：加了 --safety 只列參考
+    const t1 = [`${tag}新手 第 1–3 位死亡 8–15%（前期要有挑戰，見檔頭）`, NV.die13 >= 0.08 - 1e-9 && NV.die13 <= 0.15 + 1e-9, `${pct(NV.die13)}（V3 2%；11-16 前期加難前 smart 1.5%）`];
+    if (SAFETY) refs.push({ id: 'T1', name: t1[0], ok: t1[1], info: t1[2] + '；加了 --safety（新手保底）只列參考，T1 照沒保底量' }); else check('T1', ...t1);
+  }
   if (TH) check('T1b', `${tag}會讀的 第 1–3 位死亡 ≤3%`, TH.die13 <= 0.03 + 1e-9, `${pct(TH.die13)}（V3 0%）`);
   // 11-17 讀牌加難（DESIGN §1.4）：T2a 改看一般玩家、T2c 新手走不遠、T2b 改看到第 50 位；R1–R4 讀牌要有用、舊讀法會被騙、沒有安全牌、會讀的前 10 位不靠運氣
   if (HR) check('T2a', `${tag}一般玩家 深度中位數 15–35（會看提示、知道會被唬的人走到第 10–30 位上下）`, HR.median >= 15 && HR.median <= 35, `中位 ${HR.median}、平均 ${HR.mean.toFixed(1)}`);
@@ -798,12 +814,14 @@ if (MODE === 'all' || MODE === 'runs') {
   check('M6', '最多 6 手', mh <= CFG.maxRounds, mh);
   if (WC_ON) {                                                           // 第 C 波門檻（SPEC-C §8 定稿；見檔頭）
     const refs0 = refs.length, D_N = 4000, gate = (id, name, okv, info) => { if (N >= D_N) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + `；n ${N} < ${D_N} 只列參考（判 ${id} 用 --n ${D_N}）` }); };
+    // 新帳號（D1／D2）：真人第一趟一定有新手保底（ui createRun）→ 要 --safety 才判；沒加只列參考（驗收修正 2026-11-17）
+    const gateS = (id, name, okv, info) => { if (SAFETY) return gate(id, name, okv, info); refs.push({ id, name, ok: okv, info: info + `；沒加 --safety 只列參考（新帳號第一趟一定有新手保底：判 ${id} 加 --safety）` }); };
     const B = DBASE && DBASE.runs && DBASE.runs[GATE] ? DBASE.runs[GATE] : null, BT = B && B.thoughtful, BN = B && B.novice;
     if (TH && !FROM && !RET_RELICS) {
-      if (BT) gate('D1', `${tag}C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點`, TH.reach[3] <= BT.reach[3] + 0.04 + 1e-9, `${pct(TH.reach[3])} 對 現況 ${pct(BT.reach[3])}（${(TH.reach[3] - BT.reach[3] >= 0 ? '+' : '') + pt(TH.reach[3] - BT.reach[3])} 點）`);
+      if (BT) gateS('D1', `${tag}C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點`, TH.reach[3] <= BT.reach[3] + 0.04 + 1e-9, `${pct(TH.reach[3])} 對 現況 ${pct(BT.reach[3])}（${(TH.reach[3] - BT.reach[3] >= 0 ? '+' : '') + pt(TH.reach[3] - BT.reach[3])} 點）`);
       else refs.push({ id: 'D1', name: `${tag}C 波不放水：新帳號 會讀的 到第 50 位 ≤ 現況＋4 點`, ok: null, info: `${pct(TH.reach[3])}；沒給 --dbase（同 n、--wc off 的 JSON）只列參考` });
     }
-    if (NV && !FROM && !RET_RELICS) gate('D2', `${tag}C 波不放水：新手 到第 10 位 ≤33%`, NV.reach[1] <= 0.33 + 1e-9, `${pct(NV.reach[1])}${BN ? `（現況 ${pct(BN.reach[1])}）` : ''}`);
+    if (NV && !FROM && !RET_RELICS) gateS('D2', `${tag}C 波不放水：新手 到第 10 位 ≤33%`, NV.reach[1] <= 0.33 + 1e-9, `${pct(NV.reach[1])}${BN ? `（現況 ${pct(BN.reach[1])}）` : ''}`);
     if (TH && RET_RELICS && !FROM) {
       if (BT) gate('D3', `${tag}老玩家不變難也不變簡單：會讀的 到第 50 位在現況 ±4 點內`, Math.abs(TH.reach[3] - BT.reach[3]) <= 0.04 + 1e-9, `${pct(TH.reach[3])} 對 現況 ${pct(BT.reach[3])}（${(TH.reach[3] - BT.reach[3] >= 0 ? '+' : '') + pt(TH.reach[3] - BT.reach[3])} 點）`);
       else refs.push({ id: 'D3', name: `${tag}老玩家 會讀的 到第 50 位在現況 ±4 點內`, ok: null, info: `${pct(TH.reach[3])}；沒給 --dbase 只列參考` });

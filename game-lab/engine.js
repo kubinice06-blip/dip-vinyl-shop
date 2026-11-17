@@ -2114,8 +2114,10 @@
     const first = (run.round - 1) * PER_ROUND + 1;
     return (run.order || []).map((id, i) => {
       const pos = first + i, g = guestDef(run, content, id, pos);
+      const skip = run.cpFrom > 1 && pos < run.cpFrom;              // 第 C 波：中繼點開局，這一輪在第 N 位之前的那幾位這一趟沒遇到（不算打完）
       const x = { id, pos, cls: classAt(pos), hp: g.hp, atk: g.atk, def: g.def, hasAce: !!g.ace || (classAt(pos) === 'boss' && !!run.bossAce),
-        done: i < run.idx || (i === run.idx && beat), cur: i === run.idx, title: g.title || null, main: g.main || null };
+        done: !skip && (i < run.idx || (i === run.idx && beat)), cur: i === run.idx, title: g.title || null, main: g.main || null };
+      if (skip) x.skip = true;
       if (g.dare) x.dare = g.dare;                                // 第 C 波：接了踢館帖的這一輪（'tough'｜'tank'）
       if (run.fortune && run.fortune.pos === pos) x.fortune = run.fortune;   // 第 C 波：算命看過的這一輪藏家（三色比例＋王牌）
       return x;
@@ -2366,7 +2368,7 @@
         { id: 'backpacker', genres: ['world'], lit: ['isl-3a'] },
         { id: 'closedShop', lit: [] }] },                          // 不加權
     safety: { on: false },
-    draft: { k: null, m: null, mRate: 0.8 },                       // null＝照公式（SPEC-C §5.6）
+    draft: { k: null, m: null, mLess: 1, mRate: null },           // null＝照公式（SPEC-C §5.6；驗收修正：m＝round(L−1−mLess)，比期望等級少一級。mRate 給了＝舊公式 round(mRate×(L−1))，sim 對照用）
   };
   const LEXP_BASE = { pos: 15, streak: 8 };                        // 基本樂歷＝15×實際打過的位數＋8×最多連贏（D 波入帳時套路線上限用；C 波只記帳）
   function wcMerge(d, v) {
@@ -2414,7 +2416,8 @@
     M.set(th, p); return p;
   }
   // 加權不重複抽 n 張（Efraimidis–Spirakis：ln(u)/w 最大的；u＝hash01(key#id)；同分 id 小的先）。
-  //   skip（Set）先扣、soft（id→bool：唱片櫃擁有的）再扣；不夠先放回 soft、再放回 skip（一趟裡不重複：先扣包包和這趟路上出現過的）
+  //   skip（Set）先扣、soft（id→bool：唱片櫃擁有的）再扣；不夠先放回 soft、再放回 skip（一趟裡不重複：先扣包包和這趟路上出現過的）。
+  //   skip.hard（wcSkip 帶的：包包＋這次已抽的）永遠不放回——深處金邊／好貨池（≥12 星 111 張）被 road 用完時，只放回路上出現過的，不給包包已有、同一列重複的
   function wcPick(pool, key, n, skip, wfn, soft) {
     if (!(n > 0)) return [];
     const score = c => Math.log(hash01(key + '#' + c.id) + 1e-12) / (wfn ? Math.max(1e-6, wfn(c)) : 1);
@@ -2422,7 +2425,7 @@
     const top = (arr, x) => { let i = arr.length; while (i > 0 && better(x, arr[i - 1])) i--; if (i < n) { arr.splice(i, 0, x); if (arr.length > n) arr.pop(); } };
     const t0 = [], t1 = [], rest = [];
     for (const c of pool) {
-      if (skip && skip.has(c.id)) { rest.push(c); continue; }
+      if (skip && skip.has(c.id)) { if (!(skip.hard && skip.hard.has(c.id))) rest.push(c); continue; }
       const x = { id: c.id, s: score(c) };
       if (soft && soft(c.id)) top(t1, x); else top(t0, x);
     }
@@ -2432,7 +2435,8 @@
     return out;
   }
   const wcKey = (run, s) => run.seedKey + '#' + run.runNo + '#' + s;
-  const wcSkip = (run, extra) => new Set([].concat(run.bag || [], run.road || [], extra || []));
+  // 一趟裡不重複：包包＋路上出現過的＋extra（這次已抽的）都先扣；.hard＝包包＋extra（wcPick 不夠時也不放回）
+  const wcSkip = (run, extra) => { const s = new Set([].concat(run.bag || [], run.road || [], extra || [])); s.hard = new Set([].concat(run.bag || [], extra || [])); return s; };
   function wcRoad(run, ids) {
     if (!Array.isArray(run.road)) run.road = [];
     const S = wcStats(run);
@@ -2602,7 +2606,7 @@
       const rare = pool.filter(c => ['epic', 'legendary'].includes(rarity(c)));
       const a = wcPick(rare.length ? rare : pool, key + '#rare', 1, skip);   // 「同業珍品」那格：史詩或傳奇
       cur.rare = a[0] || null;
-      cur.cards = a.concat(wcPick(pool, key + '#good', ST.tradeN - a.length, new Set([...skip, ...a])));
+      cur.cards = a.concat(wcPick(pool, key + '#good', ST.tradeN - a.length, wcSkip(run, a)));
     } else if (kind === 'gear') {
       cur.relics = wcRelics(run, content, key, ST.gearN, true);
     } else if (kind === 'warehouse') {
@@ -2645,7 +2649,7 @@
     }
     cur.gold = null;
     if (out.length && hash01(key + '#gold') < W.loot.gold) {
-      const g = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', 1, new Set([...skip, ...out]), null, ctxOwned())[0];
+      const g = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', 1, wcSkip(run, out), null, ctxOwned())[0];
       if (g) { out[out.length - 1] = g; cur.gold = g; }
     }
     return out;
@@ -2700,6 +2704,8 @@
           wcRoad(run, cur.bag); effects.push({ spend: B.price }); return null;
         }
         if (cur.kind === 'market' && a === 'bagTake') { if (!cur.bag || !cur.bag.includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered'; gain(ch.cardId); run.stats.bought.push(ch.cardId); cur.bag = null; return null; }
+        // 福袋開了還沒挑（有包包裡沒有的那張）：不能逛完（不然 $2,500 白花；畫面那顆鈕也擋著）
+        if (a === 'done' && cur.kind === 'market' && cur.bag && cur.bag.some(id => content.cards[id] && !run.bag.includes(id))) return 'bagOpen';
         if (a === 'done') return stallNext(run, content);
         return 'badAct';
       case 'gear':
@@ -2795,10 +2801,13 @@
   }
 
   // ---------- 中繼點開局：快速選秀補到下限（SPEC-C §4.7、§5.6）----------
-  //   期望等級 L(N)＝(−5＋√(49＋20.8N))/2（每輪 13 經驗、升級要「等級＋3」）；升級 m＝round(0.8×(L−1))、撿盤 k＝clamp(round(m/2), 2, 5)
+  //   期望等級 L(N)＝(−5＋√(49＋20.8N))/2（每輪 13 經驗、升級要「等級＋3」）；升級 m＝round(L−1−mLess)（比期望少 mLess＝1 級）、撿盤 k＝clamp(round(m/2), 2, 5)
+  //   驗收修正（2026-11-17）：原本 m＝round(0.8×(L−1))，越深少越多（第 50 位少 3 級：從第 50 位開的 10 位存活 36.9%，從頭打到那裡的 60.2%）；
+  //   改成固定少一級：第 10／20／30 位跟原本一樣（4／6／8），第 50 位 10→12、75 位 13→16、100 位 16→19
   function expLevel(N) { return (-5 + Math.sqrt(49 + 20.8 * Math.max(1, N))) / 2; }
   function draftPlan(content, N) {
-    const D = wcCfg(content).draft, m = D.m != null ? Math.max(0, D.m | 0) : Math.max(0, Math.round(D.mRate * (expLevel(N) - 1)));
+    const D = wcCfg(content).draft, L1 = expLevel(N) - 1;
+    const m = D.m != null ? Math.max(0, D.m | 0) : D.mRate != null ? Math.max(0, Math.round(D.mRate * L1)) : Math.max(0, Math.round(L1 - (D.mLess != null ? +D.mLess : 1)));
     const k = D.k != null ? Math.max(0, D.k | 0) : Math.min(5, Math.max(2, Math.round(m / 2)));
     return { k, m };
   }
@@ -2903,7 +2912,7 @@
         const afford = (cur.cards || []).filter(id => !run.bag.includes(id) && run.money - priceOf(content, id) >= reserve);
         const b = bestOf(afford); if (b) return act('buy', { cardId: b });
         if (cur.kind === 'market') {
-          if (cur.bag) { const bb = bestOf(cur.bag); if (bb) return act('bagTake', { cardId: bb }); return act('done'); }
+          if (cur.bag) { const bb = bestOf(cur.bag) || cur.bag.find(id => content.cards[id] && !run.bag.includes(id)); if (bb) return act('bagTake', { cardId: bb }); return act('done'); }
           const n = ticketsFor(run, content, reserve); if (n > 0) return act('tickets', { n });
         }
         return act('done');

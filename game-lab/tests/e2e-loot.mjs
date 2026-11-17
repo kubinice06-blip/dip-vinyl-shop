@@ -7,19 +7,22 @@
 //   1  打贏第 1 位（種子 lt106：金邊盤＋紅包「酬勞再給一次」）：字幕「對方似乎掉落了什麼……」（店主句一字不改）0 秒出、1.8 秒淡掉不用點；
 //      錢袋、音符、紅包從面板頂邊跳出；三張蓋牌（金邊那張蓋著就有金邊）1.5 秒前不翻、1.5 秒起自己翻完；蓋牌、「不收」≥44×44；頂欄「紀錄」在；
 //      錢的起點對（CRITIQUE 1.9b：酬勞那段從開打前的錢起跳、紅包另一段接著跳，不多算）；第一次出戰利品列老闆說一次「包包越厚…」（save.seen.firstLoot）；
-//      「不收（+$400）」→ 錢 +400、三張都進唱片櫃「認識」、浮字「唱片櫃 +n」（n＝新認識的張數）；面板不捲動
-//   2  接著第 2 位：收一張（翻開才能按）→ 進包包、記進 run.found；老闆那句不再說；櫃檯「賣給老闆」那張價籤「賣給老闆 $400（撿來的）」→ 賣掉 +$400、found 拿掉
+//      「不收（+$200）」→ 錢 +200、三張都進唱片櫃「認識」、浮字「唱片櫃 +n」（n＝新認識的張數）；面板不捲動
+//   2  接著第 2 位：收一張（翻開才能按）→ 進包包、記進 run.found；老闆那句不再說；櫃檯「賣給老闆」那張價籤「賣給老闆 $200（撿來的）」→ 賣掉 +$200、found 拿掉
 //   3  菁英（第 4 位）：多一行「或改拿一件發燒配件」→ 改拿配件（配件 +1、包包不變）；配件滿 3 件：點配件 → 先選一件賣掉的面板 →「算了」→ 回到同一列（同三張、都翻開）→ 不收
 //   4  減少動態（prefers-reduced-motion）：面板一出來三張就翻開、沒有翻牌動畫
 //   5  「動畫加速」開著：0.6 秒起自己翻（1.2 秒內翻完）、字幕 0.9 秒淡掉
-//   6  重新整理：停在同一列同三張（直接翻開、不再演錢）、頂欄「紀錄」還在；不收照樣 +$400、回來客
+//   6  重新整理：停在同一列同三張（直接翻開、不再演錢）、頂欄「紀錄」還在；不收照樣 +$200、回來客
 //   7  打完第 5 位（藏家、保底那箱 chestDry 5）：先演第一次收頂點卡（#465 送牌那段）→ 木箱（底下寫「這箱有好東西。」）1.2 秒自己掀 → 三張每 0.35 秒翻一張；
-//      有一格鎮店盤格（src apex，C 波畫成金邊）、沒有頂點卡；保底計數歸 0（存檔 chestDry）；三條路：收這張／改拿一件配件／不收（+$400）（同一箱存檔各走一次，
+//      有一格鎮店盤格（src apex，C 波畫成金邊）、沒有頂點卡；保底計數歸 0（存檔 chestDry）；三條路：收這張／改拿一件配件／不收（+$200）（同一箱存檔各走一次，
 //      後兩條是重新整理回來的那一箱）→ 升級 → 今天的攤位（來客畫面、run 還在）→ 再重新整理：run 還在、還是攤位（resumeRun 不刪整趟）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, tapReady, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
   watchSay, passLoot, lootState, lootReady, stallState, resolveHands } from './e2e-lib.mjs';
 
+import { createRequire } from 'module';
+const CONTENT = createRequire(import.meta.url)('../content.js');
+const SK = CONTENT.waveC.loot.skipCash, CSK = CONTENT.waveC.chest.skipCash;   // 「不收」的錢（驗收修正 2026-11-17：$400→$200；撿來的賣回同價）
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.LOOT_ONLY || '').split(',').filter(Boolean).map(Number);
 const want = n => !ONLY.length || ONLY.includes(n);
@@ -134,10 +137,10 @@ async function runSize(browser, w, h) {
       await page.waitForFunction(() => window.__lab.save.seen.firstLoot, null, { timeout: 8000 }).catch(() => {});
       await sleep(300);
       // 泡泡被舞台邊切掉（375 寬）時同一句改成吐司：泡泡、吐司各最多一次＝說了一次
-      const said = await C(page, t => { const a = (window.__said || []).filter(s => s.t === t).length, b = window.__lt.toasts.filter(s => s.text === t).length; return a <= 1 && b <= 1 && a + b >= 1 ? 1 : a + b; }, fill(x.firstLoot, { n: '400' }));
+      const said = await C(page, t => { const a = (window.__said || []).filter(s => s.t === t).length, b = window.__lt.toasts.filter(s => s.text === t).length; return a <= 1 && b <= 1 && a + b >= 1 ? 1 : a + b; }, fill(x.firstLoot, { n: String(SK) }));
       const T = await ltT(page);
       if (want(1)) {
-        // 不收（+$400）：真點
+        // 不收（+$200）：真點
         const shelf0 = await C(page, ids => ids.map(id => !!window.__lab.save.shelf[id]), p1.cards);
         const newN = shelf0.filter(v => !v).length;
         const mA = await C(page, () => window.__lab.run.money);
@@ -159,7 +162,7 @@ async function runSize(browser, w, h) {
           T.downN === 3 && T.downGold === gold && gold >= 1 && T.firstUp != null && T.firstUp >= 1400 && T.flipAll != null && T.flipAll <= 2700 &&
           T.items.some(c => /\bbag\b/.test(c)) && T.items.some(c => /\bnote\b/.test(c)) && (!pk || T.items.some(c => /\bpk\b/.test(c))) &&
           cashOk && big && rc1 && scrollOk(sc1) && sheetSc <= 1 && !seen0 && said === 1 &&
-          tapped && a1.money === mA + 400 && a1.shelf.every(Boolean) && a1.bagHas === 0 && (newN === 0 || plus === 1);
+          tapped && a1.money === mA + SK && a1.shelf.every(Boolean) && a1.bagHas === 0 && (newN === 0 || plus === 1);
         record(1, size, ok && !errs(page).length, `字幕「${T.capText}」${T.cap}→淡 ${T.capOut}→收 ${T.capGone} ms（不用點）；蓋牌 ${T.downN}（金邊蓋著 ${T.downGold}／src gold ${gold}）第一張翻 ${T.firstUp}、翻完 ${T.flipAll} ms；` +
           `跳出 ${JSON.stringify(T.items)}；錢 ${m0}→${p1.money}（酬勞 ${earn}、紅包 ${pk}）那條 ${JSON.stringify(T.cash)} ${cashOk}；鈕 ${JSON.stringify(sz)} ≥44 ${big}；紀錄 ${rc1}；捲動 ${JSON.stringify(sc1)}/${sheetSc}；` +
           `老闆那句 ${said} 次；不收 → 錢 ${mA}→${a1.money}、唱片櫃 ${JSON.stringify(a1.shelf)}（新 ${newN}，浮字 ${plus}）；${errTxt(page)}`);
@@ -178,9 +181,9 @@ async function runSize(browser, w, h) {
         const a2 = await C(page, id => ({ bag: window.__lab.run.bag.includes(id), found: (window.__lab.run.found || []).includes(id) }), pl.picked);
         await passLoot(page, {});
         await waitScreen(page, 'night', 15000); await sleep(800);
-        const said2 = await C(page, t => (window.__said || []).filter(s => s.t === t).length + window.__lt.toasts.filter(s => s.text === t).length, fill(x.firstLoot, { n: '400' }));
+        const said2 = await C(page, t => (window.__said || []).filter(s => s.t === t).length + window.__lt.toasts.filter(s => s.text === t).length, fill(x.firstLoot, { n: String(SK) }));
         DBG('2 counter');
-        // 櫃檯（真點熱點）→ 賣給老闆 → 撿來的那張：價籤「賣給老闆 $400（撿來的）」→ 賣掉
+        // 櫃檯（真點熱點）→ 賣給老闆 → 撿來的那張：價籤「賣給老闆 $200（撿來的）」→ 賣掉
         await C(page, () => { window.DipLabEcon.openRelicShop({ tab: 'sell' }); }); await sleep(900);   // 回 Promise（關掉才 resolve）：不要 return
         const tile = await C(page, id => { const b = document.querySelector('.ec-cs[data-cid="' + CSS.escape(id) + '"]'); return b ? { tag: (b.querySelector('.ec-sv') || {}).textContent || '', aria: b.getAttribute('aria-label') || '' } : null; }, pl.picked);
         if (tile) await tapReady(page, `.ec-cs[data-cid="${pl.picked.replace(/"/g, '\\"')}"]`);
@@ -191,8 +194,8 @@ async function runSize(browser, w, h) {
         await sleep(600);
         const a3 = await C(page, id => ({ money: window.__lab.run.money, bag: window.__lab.run.bag.includes(id), found: (window.__lab.run.found || []).includes(id) }), pl.picked);
         await C(page, () => { window.DipLabEcon.close(); }); await sleep(300);
-        const ok = pl.ok && !!pl.picked && a2.bag && a2.found && said2 === 0 && !!tile && go === fill(x.foundSellN, { n: '400' }) && go === '賣給老闆 $400（撿來的）' &&
-          a3.money === mB + 400 && !a3.bag && !a3.found;
+        const ok = pl.ok && !!pl.picked && a2.bag && a2.found && said2 === 0 && !!tile && go === fill(x.foundSellN, { n: String(SK) }) && go === '賣給老闆 $' + SK + '（撿來的）' &&
+          a3.money === mB + SK && !a3.bag && !a3.found;
         record(2, size, ok && !errs(page).length, `收 ${pl.picked} → 包包 ${a2.bag}、found ${a2.found}；老闆那句再說 ${said2} 次；櫃檯格 ${JSON.stringify(tile)}、確認鈕「${go}」→ 賣掉 ${mB}→${a3.money}、包包 ${a3.bag}、found ${a3.found}；${errTxt(page)}`);
       }
     } catch (e) { record(want(1) ? 1 : 2, size, false, 'error ' + e.message); }
@@ -232,7 +235,7 @@ async function runSize(browser, w, h) {
       const m1 = await C(page, () => window.__lab.run.money);
       const sk = await passLoot(page, {});
       const m2 = await C(page, () => window.__lab.run.money);
-      const okB = panel && JSON.stringify(back.cards) === JSON.stringify(c0) && back.up === 3 && back.st && back.st.flipped.every(Boolean) && back.relics === 3 && sk.ok && m2 === m1 + 400;
+      const okB = panel && JSON.stringify(back.cards) === JSON.stringify(c0) && back.up === 3 && back.st && back.st.flipped.every(Boolean) && back.relics === 3 && sk.ok && m2 === m1 + SK;
       record(3, size, okA && okB && !errs(page).length, `第 4 位 ${cls}：「${s0.cap}」配件 ${JSON.stringify(s0.r)} → 改拿 ${pl.picked}：配件 ${s0.relics.length}→${a.relics.length}、包包 ${s0.bag}→${a.bag}、${a.scr}；` +
         `滿 3 件：先賣一件的面板 ${panel} →「算了」回同一列 ${JSON.stringify(back.cards) === JSON.stringify(c0)}（翻開 ${back.up}）→ 不收 ${m1}→${m2}；${errTxt(page)}`);
     } catch (e) { record(3, size, false, 'error ' + e.message); }
@@ -301,7 +304,7 @@ async function runSize(browser, w, h) {
       const m1 = await C(page, () => window.__lab.run.money);
       const sk = await passLoot(page, {});
       const m2 = await C(page, () => window.__lab.run.money);
-      const ok = JSON.stringify(r1.cards) === JSON.stringify(c0) && r1.kind === 'loot' && r1.up === 3 && r1.L && r1.L.flipped.every(Boolean) && r1.drops === 0 && !r1.cap && r1.cash === 0 && rc && sk.ok && sk.screen === 'night' && m2 === m1 + 400;
+      const ok = JSON.stringify(r1.cards) === JSON.stringify(c0) && r1.kind === 'loot' && r1.up === 3 && r1.L && r1.L.flipped.every(Boolean) && r1.drops === 0 && !r1.cap && r1.cash === 0 && rc && sk.ok && sk.screen === 'night' && m2 === m1 + SK;
       record(6, size, ok && !errs(page).length, `重新整理：同三張 ${JSON.stringify(r1.cards) === JSON.stringify(c0)}、直接翻開 ${r1.up}、不再演錢（錢袋 ${r1.drops}、字幕 ${r1.cap}、錢那條 ${r1.cash}）、紀錄 ${rc}；不收 ${m1}→${m2}、${sk.screen}；${errTxt(page)}`);
     } catch (e) { record(6, size, false, 'error ' + e.message); }
     await ctx.close();
@@ -351,7 +354,7 @@ async function runSize(browser, w, h) {
         await waitScreen(page, 'night', 15000); await sleep(900);
         const rr = await stallState(page);
         const okP = pl.ok && a.screen === 'night' && a.stall && a.rows === 2 && !a.go && b1.run &&
-          (how === 'take' ? b1.bag === b0.bag + 1 && b1.found >= 1 : how === 'relic' ? b1.relics === b0.relics + 1 && b1.bag === b0.bag && b0.btn === x.chestRelic : b1.money === b0.money + 400 && b1.bag === b0.bag) &&
+          (how === 'take' ? b1.bag === b0.bag + 1 && b1.found >= 1 : how === 'relic' ? b1.relics === b0.relics + 1 && b1.bag === b0.bag && b0.btn === x.chestRelic : b1.money === b0.money + CSK && b1.bag === b0.bag) &&
           rr.stall && rr.screen === 'night' && rr.rows === 2;
         paths.push(`${how} ${okP}（錢 ${b0.money}→${b1.money}、包包 ${b0.bag}→${b1.bag}、配件 ${b0.relics}→${b1.relics}；之後 ${a.screen} 攤位 ${a.stall}/${a.rows} 列；重新整理 ${rr.screen} 攤位 ${rr.stall}）`);
         if (!okP) paths.ok = false;

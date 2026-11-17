@@ -87,7 +87,8 @@
 @media (max-height:600px){
   .lt-row.n3{gap:6px 14px;padding:0 10px;}
   .lt-sheet .lt-row .lb-ct .ar{display:none;}
-  .lt-sheet .lt-row .lb-ct .lb-pickb{min-height:40px;}
+  .lt-sheet .lt-row .lb-ct .lb-pickb{min-height:40px;position:relative;}
+  .lt-sheet .lt-row .lb-ct .lb-pickb::after{content:'';position:absolute;left:0;right:0;top:-3px;bottom:-3px;}   /* 看起來 40 高：點擊區撐到 46 */
   .lt-sheet .note{display:none;}
 }
 @media (prefers-reduced-motion: reduce){

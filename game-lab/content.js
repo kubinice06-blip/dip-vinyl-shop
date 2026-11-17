@@ -1549,16 +1549,18 @@
 
   // ===================================================================
   // 第 C 波：獎勵與店內攤位（店主 11-16「全部開始做吧」；規格 scratchpad v5/wave-c SPEC-C；engine.js WAVEC 是同一份預設、全關，wcCfg 逐層合併）
-  //   loot  每打贏一位一般／菁英：戰利品列（三張蓋牌挑一、不收 +$400；15% 金邊盤、12% 紅包）
+  //   loot  每打贏一位一般／菁英：戰利品列（三張蓋牌挑一、不收 +$200；15% 金邊盤、6% 紅包）
   //   chest 打贏藏家：寶箱（三張；8% 鎮店盤格〔九第二波前＝金邊盤〕、30% 金邊；連 5 箱沒有鎮店盤格下一箱必有，跨趟）；藏家帶的頂點卡照 #465 直接收下，寶箱不放頂點卡
   //   stall 每打完一輪：今天的攤位二選一（花錢站每組最多 1、四站至少一個藍框；第一趟固定；中繼點多市集＋錄音室；這一趟第 30 位起 35% 踢館帖）
   //   safety 新手保底（上一趟沒到第 10 位：第 1 位輸了免費重打一次）；draft 中繼點開局快速選秀（null＝照公式）
-  //   撿來的盤（戰利品列、寶箱、挖寶攤、倉庫、寄賣領回、選秀收的）櫃檯賣回一律 $400（＝不收）；樂歷 C 波只記帳（save.lexpBank），D 波一次入帳
+  //   撿來的盤（戰利品列、寶箱、挖寶攤、倉庫、寄賣領回、選秀收的）櫃檯賣回一律＝不收的錢（$200）；樂歷 C 波只記帳（save.lexpBank），D 波一次入帳
   //   ui：畫面字（{n} 等由畫面代入；錢先 E.moneyText）
   // ===================================================================
+  // 驗收修正（2026-11-17，D2）：新帳號第一趟一定有新手保底（ui createRun），帶保底量新手到第 10 位 33.5%（≤33% 不過）；
+  //   多的幾點幾乎全來自戰利品列的錢（不收、紅包；全歸 0＝28.2%）→ 不收 $400→$200（寶箱、挖寶攤同；撿來的賣回照「＝不收」也是 $200）、紅包 12%→6%：31.9%
   C.waveC = {
-    loot: { on: true, n: 3, gold: 0.15, packet: 0.12, packetCash: 0.7, packetLexp: 15, skipCash: 400 },
-    chest: { on: true, n: 3, apex: 0.08, gold: 0.30, pity: 5, dareN: 4, dareCash: 5000, skipCash: 400 },
+    loot: { on: true, n: 3, gold: 0.15, packet: 0.06, packetCash: 0.7, packetLexp: 15, skipCash: 200 },
+    chest: { on: true, n: 3, apex: 0.08, gold: 0.30, pity: 5, dareN: 4, dareCash: 5000, skipCash: 200 },
     pools: { goldPlus: 2, goldMin: 10, goldCap: 12, goodPlus: 1, goodMin: 9, goodCap: 12, powerMin: 6, powerCap: 11, colorMin: 30 },
     stall: {
       on: true,
@@ -1566,7 +1568,7 @@
       unlock: { promo: 10, consign: 15, dare: 30 },               // promo／consign 看 max(最遠紀錄, 剛打完第幾位)；dare 只給解鎖階梯顯示（出不出照 dare.from）
       first: [['dig', 'fortune'], ['warehouse', 'home']],          // 第一趟（每一趟打完第 5 位）固定；後面再接錄音室（宵夜換窗邊算命，§14-4）
       paid: ['trade', 'gear', 'gig'], blue: ['gig', 'promo', 'home'],   // 花錢站每組最多 1 個；四站至少一個藍框（樂歷站）
-      leaveCash: 1000, reroll: 500, skipCash: 400, tradeN: 3, gearN: 2, gearPrice: 3000, snackHp: 3,
+      leaveCash: 1000, reroll: 500, skipCash: 200, tradeN: 3, gearN: 2, gearPrice: 3000, snackHp: 3,
       gig: { base: 3000, step: 1000, lexp: 20, keep: 4000 },       // 第 k 張 $3,000＋$1,000×(k−1)，整趟累計；keep＝「買到剩 $4,000」
       promoN: 3, promoLexp: 10, homeLexp: 30, demoLexp: 15, consignRounds: 2,
       market: { cards: 6, gear: 3, bag: { price: 2500, n: 3, apex: 0.06, max: 1 } },
@@ -1581,14 +1583,14 @@
         { id: 'backpacker', genres: ['world'], lit: ['isl-3a'] },
         { id: 'closedShop', lit: [] }] },                          // 不加權
     safety: { on: true },
-    draft: { k: null, m: null, mRate: 0.8 },
+    draft: { k: null, m: null, mLess: 1, mRate: null },          // 中繼點開局選秀：升級 m＝round(期望等級−1−mLess)（比從頭打少一級）；mRate 給數字＝舊公式 round(mRate×(L−1))
     ui: {
       // 戰利品列（掉落字幕沿用 C.script.drop G1，店主句一字不改）
       take: '收這張',
       skip: '不收（+${n}）',
       orRelic: '或改拿一件發燒配件',                              // 菁英（relic）
       firstLoot: '包包越厚，好牌越難抽到。不收也有 ${n}。',         // 老闆，第一次出戰利品列說一次（save.seen）
-      foundSell: '賣給老闆 ${n}（撿來的）',                        // 櫃檯價籤：撿來的一律 $400
+      foundSell: '賣給老闆 ${n}（撿來的）',                        // 櫃檯價籤：撿來的一律＝不收的錢（$200）
       foundTag: '撿來的',                                          // 櫃檯「賣給老闆」格子上的小籤（介面 A 加；確認鈕寫 foundSell）
       packetCash: '酬勞再給一次',
       packetLexp: '樂歷經驗 +{n}（之後開放）',
@@ -1614,28 +1616,40 @@
       leaveYes: '不逛了', leaveNo: '再看看',
       busy: '先逛完今天的攤位。',                                   // 攤位中點箱子、收音機、櫃檯、對戰台
       done: '逛完了',
+      spent: '−${n}',                                               // 攤位花錢時頂上那條（跳錢條，往下數；賺錢照舊 shopUi.earned）
       lexpLater: '樂歷經驗 +{n}（之後開放）',
       // 各站的鈕與小字
       reroll: '再翻一次（${n}）',
       sellOne: '賣一張給他',
       relicFull: '配件滿 3 件，先選一件半價賣掉。',                  // 器材行、市集器材（relic）
       snackBtn: '聲望 +{n}',
+      snackFull: '聲望滿了，吃完就走',                               // 宵夜：聲望已滿時那顆鈕（按了 +0，照實寫）
+      snackFullTag: '免費・聲望已滿',                                // 選組那列的站牌第三行（聲望滿了，選之前就看得出來）
+      snackFullToast: '聲望本來就滿了。',
       gigBuy: '買 {k} 張（${n}）',
       gigKeep: '買到剩 ${n}',
+      gigKeepN: '買到剩 ${n}（{k} 張）',                              // 演唱會：括號＝留 $4,000 之後買得起幾張
       gigNone: '先不買',
       promoNote: '收進唱片櫃，認識一下。',
-      fortuneRatio: '經典 {c}・冷門 {o}・硬蕊 {h}',
+      fortuneRatio: '他牌組裡：經典 {c} 張・冷門 {o} 張・硬蕊 {h} 張',
       fortuneAce: '他帶的王牌',
       consignPick: '挑一張寄賣',
       consignBack: '寄賣到期，三張挑一張。',
       homePick: '挑一張放上去',
-      dareTough: '狠角色（品味 +{n}）', dareTank: '耐打（聲望 +{n}）', dareNo: '不接',
+      // 踢館帖：加的是這一輪 5 位對手（不是你）；面板寫撐完有什麼
+      dareTough: '接：狠角色（這輪 5 位品味各 +{n}）', dareTank: '接：耐打（這輪 5 位聲望各 +{n}）', dareNo: '不接',
+      dareReward: '撐完這一輪：藏家的木箱 {k} 張挑一（保證一張金邊），再加 ${n}。',
+      dareToughOn: '接了踢館帖：這輪客人品味各 +{n}', dareTankOn: '接了踢館帖：這輪客人聲望各 +{n}',
       marketTabs: ['唱片', '器材', '門票', '福袋'],
       bagBuy: '福袋 ${n}',
+      bagNote: '開出 {k} 張史詩以上，挑一張收進包包；每次市集限買 {m} 個。',   // 市集福袋分頁的說明
+      bagSold: '今天的福袋賣完了',
+      bagPick: '福袋開出這幾張，挑一張收進包包。',
+      bagFirst: '先從福袋挑一張',                                    // 福袋開了還沒挑：「逛完了」換成這句、按不下去（不然 $2,500 白花）
       demo: '錄了一段 demo。樂歷經驗 +{n}（之後開放）',            // 錄音室（C 波自動帶過，浮一行）
       // 各站面板補的鈕（介面 B 加；stalls.js）
       rareTag: '同業珍品',                                          // 同業調貨那格史詩／傳奇的小籤
-      sellFor: '賣 +${n}',                                          // 「賣一張給他」每張的鈕（撿來的 $400、送的／種子寫「交還老闆」）
+      sellFor: '賣 +${n}',                                          // 「賣一張給他」每張的鈕（撿來的＝不收的錢、送的／種子寫「交還老闆」）
       pass: '先不拿',                                               // 老闆的倉庫、寄賣領回：不拿（沒有錢）
       promoOk: '收進唱片櫃',
       fortuneOk: '記下了',
@@ -1648,6 +1662,8 @@
       cpTitle: '從哪裡開始？', cpFirst: '第 1 位（從頭）', cpAt: '第 {n} 位（中繼點）',
       draftCard: '補到第 {n} 位：挑一張唱片 {i}/{k}', draftLevel: '補到第 {n} 位：升級 {i}/{m}',
       cpFrom: '這一趟從第 {n} 位開始',                             // 結算頁
+      cpWhere: '中繼點開局',                                        // 標題「繼續試煉 ▸第 N 位・中繼點開局」（選秀途中；pos 還是 1）
+      cpSkip: '這一趟沒遇到',                                       // 中繼點開局：這一輪第 N 位之前那幾位（點頭像）
       // 解鎖階梯（標題頁、結算頁一行；E.stallLadder）
       ladder: '店內攤位 {a}/{b}｜再走 {n} 位開{name}', ladderAll: '店內攤位 {a}/{b}'
     },

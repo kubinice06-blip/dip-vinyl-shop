@@ -13,7 +13,7 @@
  *   content, engine, run(), persist(), choose(ch) → res, alive()（還在來客畫面）, stg(...) / stgP(...)（舞台）, cam(name, screen, ms, panelMin),
  *   sheet(html, cls) → el, closeSheet(el), naturalH(el), vh(), say(id, text, ms), toast(text, cls), sfx(n, o), cashRise(from, to),
  *   after(fn, ms)（換畫面清掉；ms 不再除速度）, anim() → { fast, k, rm }, auto(fn, ms)（自動玩登記）, autoOn(), policy() → choice（engine.cPolicy）,
- *   coverHTML(c, o), starsHTML(c, o), tileHTML(c, o), relicButtonsHTML(ids, attr), relicName(id), pix(rows, size, cls),
+ *   coverHTML(c, o), starsHTML(c, o), tileHTML(c, o), relicButtonsHTML(ids, attr), relicName(id), relicOf(id), relicIcon(id, size), pix(rows, size, cls),
  *   relicPanel(choices, opts) → Promise<id|null>, levelPanel(r, { title, offer }) → Promise<pick>, play(c)（試聽）,
  *   refresh()（錢、包包那條重畫）, done()（逛完：回來客畫面）, setSpot(name)（你站的位置，來客畫面重畫時不走回去）,
  *   enemySpr(id), log(k)（save.wcLog 計數）, checkpoints() → [N…], renderStrip(sc)
@@ -103,6 +103,7 @@
     if (kind === 'gear') return U('priceFrom', { n: mt(st.gearPrice || 3000) });
     if (kind === 'gig') { var r = run(); return U('priceFrom', { n: mt(r && E().gigPrice ? E().gigPrice(r, C(), 1) : ((st.gig || {}).base || 3000)) }); }
     if (kind === 'promo' || kind === 'home') return U('priceLexp');
+    if (kind === 'snack') { var rs = run(); if (rs && rs.hp >= rs.maxHp) return U('snackFullTag'); }   // 聲望滿了：選之前就看得出今天去宵夜沒用
     return U('priceFree');
   }
   function isBlue(kind) { return (ST().blue || []).indexOf(kind) >= 0; }
@@ -265,13 +266,19 @@
     var r = run(), kind = cur.kind, sub = cur.kind === 'dig' && cur.name ? ((WC().digTitles || {})[cur.name] || '') : '';
     // 標題列右邊＝「今天不逛了」小字鈕（面板底那條只放一兩顆大鈕：375×548 面板只有 290 px 高）；錢放在站主那句的右邊
     return '<div class="hd st-shd"><h3>' + icon(kind, 18) + '<span>' + esc(NM(kind)) + '</span>' + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</h3>' +
-      (S.confirm ? '' : leaveBtn()) + '</div>' +
+      (S.confirm || bagOpen(cur) ? '' : leaveBtn()) + '</div>' +
       '<p class="st-line"><span>' + (LN(kind) ? '「' + esc(LN(kind)) + '」' : '') + '</span><span class="mn">' + esc(money(r.money)) + '</span></p>';
   }
+  // 市集的福袋開了還沒挑：要挑一張才能走（不然 $2,500 白花）
+  function bagOpen(cur) { var r = run(); return !!(cur && cur.kind === 'market' && cur.bag && r && cur.bag.some(function (id) { return card(id) && r.bag.indexOf(id) < 0; })); }
   function lexpLine(n) { return '<p class="note st-lx">' + esc(U('lexpLater', { n: n })) + '</p>'; }
+  var GAIN_ATTR = { 'data-take': 1, 'data-buy': 1, 'data-bagtake': 1, 'data-dpick': 1 };
+  function ownedLabel() { return (C().shopUi && C().shopUi.owned) || '包包裡有了'; }
   function cardBtn(id, attr, label, o) {
     var c = card(id); if (!c) return '';
     o = o || {};
+    // 收／買進包包的鈕：包包裡已經有這張（舊存檔的貨、買過了）＝寫「包包裡有了」、按不下去（不讓鈕變成按了沒反應的死鈕）
+    if (GAIN_ATTR[attr]) { var r = run(); if (r && Array.isArray(r.bag) && r.bag.indexOf(id) >= 0) { label = ownedLabel(); o = Object.assign({}, o, { disabled: true }); } }
     return H.tileHTML(c, { cls: 'st-c' + (o.cls ? ' ' + o.cls : ''), extra: (o.tag ? '<span class="st-tag">' + esc(o.tag) + '</span>' : '') +
       '<button type="button" class="lb-pickb key" ' + attr + '="' + esc(id) + '"' + (o.disabled ? ' disabled' : '') + '>' + esc(label) + '</button>' });
   }
@@ -320,7 +327,7 @@
     var r = run();
     return gridHTML(ids.map(function (id) {
       var have = r.bag.indexOf(id) >= 0, pr = E().priceOf(C(), id);
-      return cardBtn(id, 'data-buy', have ? U('done') : buyLabel(id), { tag: cur.rare === id ? U('rareTag') : '', disabled: have || r.money < pr });
+      return cardBtn(id, 'data-buy', have ? ownedLabel() : buyLabel(id), { tag: cur.rare === id ? U('rareTag') : '', disabled: have || r.money < pr });
     }).join(''), ids.length > 4 ? 3 : ids.length);
   }
   function sellGrid() {
@@ -340,9 +347,20 @@
     return buyGrid(cur, cur.cards || []) + footHTML([btn('data-a="sell"', U('sellOne')), btn('data-a="done"', U('done'), { pri: true })]);
   }
   // 器材行：兩件配件 $3,000；配件滿 3 件先選一件半價賣掉（relicPanel）
+  //   price＝買的（器材行、市集器材）：每件一列（圖示、名字、說明）＋一顆明寫價錢的「買 $3,000」鈕，錢不夠變灰（跟櫃檯配件櫃同一種做法）；
+  //   滿 3 件時算上半價賣掉最貴那件的錢（按了先問賣哪件）。沒有 price（老闆的倉庫，免費）＝照舊整張是鈕
   function relicGrid(ids, attr, price) {
     if (!ids.length) return '';
-    return '<div class="lb-opts st-relics">' + H.relicButtonsHTML(ids, attr) + '</div>' + (price ? '<p class="note">' + esc(fill((C().shopUi && C().shopUi.buy) || '買 ${n}', { n: mt(price) })) + '</p>' : '');
+    if (!price) return '<div class="lb-opts st-relics">' + H.relicButtonsHTML(ids, attr) + '</div>';
+    var r = run(), full = r.relics.length >= ((E().CFG && E().CFG.relicMax) || 3), back = 0;
+    if (full) r.relics.forEach(function (x) { var v = E().sellValue ? E().sellValue(C(), x) : 0; if (v > back) back = v; });
+    var can = r.money + back >= price, lbl = fill((C().shopUi && C().shopUi.buy) || '買 ${n}', { n: mt(price) });
+    return '<div class="st-rrows">' + ids.map(function (id) {
+      var x = null; try { x = H.relicOf(id); } catch (_) {} if (!x) return '';
+      var ic = ''; try { ic = H.relicIcon(id, 30); } catch (_) {}
+      return '<div class="st-rrow"><span class="pix">' + ic + '</span><span class="tx"><b class="nm">' + esc(x.name) + '</b><span class="ds">' + esc(x.desc) + '</span></span>' +
+        '<button type="button" class="lb-btn pri" ' + attr + '="' + esc(id) + '"' + (can ? '' : ' disabled') + '>' + esc(lbl) + '</button></div>';
+    }).join('') + '</div>';
   }
   function gearBody(cur) {
     return relicGrid(cur.relics || [], 'data-relic', ST().gearPrice || 3000) + footHTML([btn('data-a="done"', U('done'), { pri: true })]);
@@ -354,7 +372,7 @@
   function snackBody() {
     var r = run(), n = Math.max(0, Math.min(ST().snackHp || 3, r.maxHp - r.hp));
     return '<p class="note">' + esc(fill(((C().trial || {}).ui || {}).hp || '聲望 {n}/{max}', { n: r.hp, max: r.maxHp })) + '</p>' +
-      footHTML([btn('data-a="ok"', U('snackBtn', { n: ST().snackHp || 3 }), { pri: true })]);
+      footHTML([btn('data-a="ok"', n > 0 ? U('snackBtn', { n: n }) : U('snackFull'), { pri: true })]);
   }
   // 演唱會：「買 N 張」步進器、總價；每張樂歷 +20（之後開放）；價錢梯整趟累計；多一顆「買到剩 $4,000」（0 張不畫）
   function gigBody(market) {
@@ -362,7 +380,7 @@
     var h = '<div class="st-gig"><button type="button" class="lb-btn st-step" data-a="gigMinus" aria-label="−"' + (n <= 1 ? ' disabled' : '') + '>−</button>' +
       '<button type="button" class="lb-btn pri st-gigbuy" data-a="gigBuy"' + (r.money < pr ? ' disabled' : '') + '>' + esc(U('gigBuy', { k: n, n: mt(pr) })) + '</button>' +
       '<button type="button" class="lb-btn st-step" data-a="gigPlus" aria-label="+">+</button></div>' + lexpLine((G.lexp || 20) * n);
-    if (keep > 0) h += '<div class="st-keep">' + btn('data-a="gigKeep"', U('gigKeep', { n: mt(G.keep || 4000) }) + '（' + keep + '）') + '</div>';
+    if (keep > 0) h += '<div class="st-keep">' + btn('data-a="gigKeep"', U('gigKeepN', { n: mt(G.keep || 4000), k: keep })) + '</div>';
     return h + (market ? '' : footHTML([btn('data-a="gigNone"', U('gigNone'))]));
   }
   function promoBody(cur) {
@@ -389,12 +407,13 @@
   }
   function homeBody() {
     var r = run();
-    return '<p class="note">' + esc(U('homePick')) + '</p>' + gridHTML(r.bag.map(function (id) { return cardBtn(id, 'data-home', U('homePut')); }).join(''), 4) + lexpLine(ST().homeLexp || 30) +
+    return '<p class="note">' + esc(U('homePick')) + '</p>' + lexpLine(ST().homeLexp || 30) + gridHTML(r.bag.map(function (id) { return cardBtn(id, 'data-home', U('homePut')); }).join(''), 4) +
       footHTML([btn('data-a="ok"', U('homeNone'))]);
   }
   function dareBody() {
-    var D0 = ST().dare || {};
-    return '<div class="lb-opts st-dare">' + btn('data-dare="tough"', U('dareTough', { n: (D0.tough || {}).atk || 1 }), { pri: true, cls: 'big' }) + btn('data-dare="tank"', U('dareTank', { n: (D0.tank || {}).hp || 4 }), { cls: 'big' }) + '</div>' +
+    var D0 = ST().dare || {}, X = CFG().chest || {};
+    return '<p class="note st-dnote">' + esc(U('dareReward', { k: X.dareN || 4, n: mt(X.dareCash || 5000) })) + '</p>' +
+      '<div class="lb-opts st-dare">' + btn('data-dare="tough"', U('dareTough', { n: (D0.tough || {}).atk || 1 }), { pri: true, cls: 'big' }) + btn('data-dare="tank"', U('dareTank', { n: (D0.tank || {}).hp || 4 }), { cls: 'big' }) + '</div>' +
       footHTML([btn('data-a="decline"', U('dareNo'))]);
   }
   // 黑膠市集：一頁四分頁（唱片／器材／門票／福袋）；可出清（賣一張給他）
@@ -406,9 +425,11 @@
     if (t === 0) h += buyGrid(cur, cur.cards || []);
     else if (t === 1) h += relicGrid(cur.relics || [], 'data-relic', ST().gearPrice || 3000) || '<p class="note">—</p>';
     else if (t === 2) h += gigBody(true);
-    else if (cur.bag && cur.bag.length) h += gridHTML(cur.bag.map(function (id) { return cardBtn(id, 'data-bagtake', U('take'), { cls: cur.bagApex === id ? 'gold' : '' }); }).join(''), cur.bag.length);
-    else h += '<div class="foot st-foot">' + btn('data-a="bag"', U('bagBuy', { n: mt(B.price || 2500) }), { pri: true, disabled: (cur.bags | 0) >= (B.max || 1) || !canAfford(B.price || 2500) }) + '</div>';
-    return h + footHTML([btn('data-a="sell"', U('sellOne')), btn('data-a="done"', U('done'), { pri: true })]);
+    else if (cur.bag && cur.bag.length) h += '<p class="note st-bagnote">' + esc(U('bagPick')) + '</p>' + gridHTML(cur.bag.map(function (id) { return cardBtn(id, 'data-bagtake', U('take'), { cls: cur.bagApex === id ? 'gold' : '' }); }).join(''), cur.bag.length);
+    else h += '<div class="st-bag"><p class="note">' + esc(U('bagNote', { k: B.n || 3, m: B.max || 1 })) + '</p>' +
+      btn('data-a="bag"', (cur.bags | 0) >= (B.max || 1) ? U('bagSold') : U('bagBuy', { n: mt(B.price || 2500) }), { pri: true, disabled: (cur.bags | 0) >= (B.max || 1) || !canAfford(B.price || 2500) }) + '</div>';
+    var open = bagOpen(cur);
+    return h + footHTML([btn('data-a="sell"', U('sellOne'), { disabled: open }), btn('data-a="done"', open ? U('bagFirst') : U('done'), { pri: true, disabled: open })]);
   }
   function bodyHTML(cur) {
     switch (cur.kind) {
@@ -520,6 +541,7 @@
       var er = res && res.error;
       if (er === 'money') H.toast(((C().shopUi || {}).noMoney) || '錢不夠。');
       else if (er === 'bagMin') H.toast(fill((C().shopUi || {}).bagSellMin || '', { n: (E().CFG && E().CFG.bagMin) || 5 }));
+      else if (er === 'bagOpen') H.toast(U('bagFirst'));
       else console.warn('[stalls] choose', er, ch);
       return;
     }
@@ -527,9 +549,10 @@
     if (r.money !== m0) { try { H.cashRise(m0, r.money); } catch (e) { console.error(e); } }
     (res.effects || []).forEach(function (f) {
       if (f.hp > 0) H.toast(fill(((C().trial || {}).ui || {}).heal || '聲望 +{n}', { n: f.hp }), 'gold');
+      else if (f.hp === 0 && cur0 && cur0.kind === 'snack') H.toast(U('snackFullToast'));
       if (f.gainRelic) H.toast(fill('拿到「{n}」', { n: H.relicName(f.gainRelic) }));
       if (f.nowPlaying) { try { H.play(card(f.nowPlaying)); } catch (e) { console.error(e); } }
-      if (f.dare) H.toast(NM('dare') + '：' + (f.dare === 'tough' ? U('dareTough', { n: ((ST().dare || {}).tough || {}).atk || 1 }) : U('dareTank', { n: ((ST().dare || {}).tank || {}).hp || 4 })), 'gold');
+      if (f.dare) H.toast(f.dare === 'tough' ? U('dareToughOn', { n: ((ST().dare || {}).tough || {}).atk || 1 }) : U('dareTankOn', { n: ((ST().dare || {}).tank || {}).hp || 4 }), 'gold');
     });
     if (ch.act === 'sell') S.sub = null;
     try { H.refresh(); } catch (_) {}
@@ -583,10 +606,8 @@
   function night(o) {
     if (!ok('night')) return;
     var p = P(); if (!p) { H.done(); return; }
-    var resumed = !(S && S.r === o.r);
     S = { r: o.r, slot: o.slot, box: o.box, sel: null, phase: null, sheet: null, cur: null, curKey: null, flipped: [], camMs: 600, resumed: !!p.cur, walked: false };
-    if (resumed && (p.cur || p.pick != null)) { try { H.log('resumeInStall'); } catch (_) {} }
-    if (p.pick == null && !p.cur && p.k === 0) { try { H.log('sessions'); } catch (_) {} }
+    // wcLog 的 sessions（攤位開出來那一下）、resumeInStall（標題「繼續試煉」回到攤位）在 ui.js 記；這裡重畫幾次都不算
     if (S.slot) S.slot.addEventListener('click', onSlotClick);
     // 重新整理回來、有 cur：人直接站在那一站（不重走）；選組前：站在平常的位置
     if (p.cur) { var pl = placeOf(p.cur.kind, p.cur); if (pl.spot) { stg('put', 'p', pl.spot); stg('hide', 'p', false); } }
