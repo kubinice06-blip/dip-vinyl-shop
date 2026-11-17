@@ -1,5 +1,28 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s8：sd-015、sd-016、sd-hold-2 上線（66 張，留置 1）
+
+- **結果**：sd-015 上線 30（無留置，第一批新版鉤子開頭）；sd-016 上線 29（留置張露《繁星點點 張露》，只查到發行日）；sd-hold-2 重查 sd-009～014 的 7 張留置卡，**7 張全數救回上線**，sd-009～014 留置清空。
+- **主線補查**：向井滋春《A Head Wind》（日本 Columbia 官方作品頁）、小栗均《みどりいろの渓流》（製作人照井顕自己的網站：311 海嘯後在陸前高田泥中挖出這張唱片）、宮沢昭等《Musical Play In Jazz》（Discogs API：整張百老匯歌曲）、森進一《輪廻》（樂迷部落格轉引 LP 解說：川内康範在告訴事件中強行保留開頭歌詞）、比屋定篤子。sd-hold-2 靠 api.discogs.com、復刻文案與商品頁救回。
+- **審稿**：sd-015 改 9 處、sd-016 改 14 處、sd-hold-2 改 6 處（單一出處去「常被」、刪再版／CD 化／合輯收錄、宣傳語），逐條在 `rulings.md`。WebSearch 工作階段約 144 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,kv-before-sd-015/016/hold-2.json,review-sd-015/016/hold-2.json,held-sd-016.json}`、`desc-tools/batches/{cards,research,output}/sd-015*、sd-016*、sd-hold-2*`、onboarding manifest 66 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 132 鍵（60＋58＋14）逐字回讀全數一致；`front-check` 前台 66/66 新稿、CURATED 0；QA 無軌序／曲長／盤號（「4:17」為森園勝敏盤名、「会」為專名）；鉤子加權 ≤50、同批前四字互異。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s9：sd-017、sd-018 上線（58 張，留置 2）
+
+- **結果**：sd-017 上線 30（無留置）；sd-018 上線 28（留置花生隊長《Oh My God》、美空ひばり《ひばりの渡り鳥だよ》，KV 保留舊稿）。開頭照新版用鉤子（材料限故事／概念／聲音／地位），58 張前四字互異。
+- **主線補查**：研究稿 story／sound 標 thin／none 的卡逐張補，sd-017 補 17 張、sd-018 補 19 張（含研究層漏查的金森幸介整張）；Discogs 網頁 403 改用 api.discogs.com。sd-018 派工特注放錯組、誤述糯米糰，已記入 rulings 並改為只照卡單範圍列名。
+- **審稿**：sd-017 改 17 處、sd-018 改 9 處（鉤子去封號／去錄音日數、單一出處去「常被」、刪再版與選輯、第二句補盤名、去曲序），逐條在 `rulings.md`。WebSearch 工作階段約 160 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-017.json,kv-before-sd-018.json,review-sd-017.json,review-sd-018.json}`、`desc-tools/batches/{cards,research,output}/sd-017*、sd-018*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 116 鍵逐字回讀 116/116 一致；`front-check` 前台 58/58 新稿、CURATED 0；QA 無軌序／曲長／盤號（「16 軌」為一人多重錄音故事核心，「国」「会」為專名）。
+
+### 2026-11-17｜dip-vinyl-shop｜sd-hook-1：sd-001～007 已上線一般卡補開頭鉤子（209 張）
+
+- **店主**：「一樣要開頭給 hook 的方式」。sd-001～007 重寫稿上線時沒有鉤子，這批補上：第一句鉤子（材料限故事／概念／聲音／地位）、第二句講這是什麼，正文沿用現行稿，不新增研究稿以外的事實。
+- **範圍**：sd-001～007 全部 210 張（含 sd-hold-1 救回 10 張）扣林強《驚蟄》＝209 張；6 支 Opus 寫作，主線逐張審，改 16 處（出處／credit／版本雜項當鉤子各一、前四字撞 3 組、《開往天堂的海盜船》金音「獲獎」更正為「入圍」）。
+- **工具**：`batch-progress/desc-severe-20261117/tools/sd.mjs` 支援 `sd-hook-N`（卡單抓 KV 現行稿＋研究檔、qa 查鉤子），`sd-hook-2` 已預填；派工詞 `prompt-hook.md`。
+- **驗證**：kv-token-check exit 0；418 鍵 bulk put，回讀 418/418 一致；front-check 前台 209/209；manifest 同步 209 處；數字與外文專名越界比對 0。紀錄在同目錄 `rulings.md`「sd-hook-1」。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡簡介開頭恢復鉤子（材料限故事／概念／聲音）
 
 - **店主**：「一樣要開頭給 hook 的方式」。上午新規則把鉤子拿掉了；改為**鉤子照舊、材料限故事／概念／聲音／地位**，軌序、曲長、盤號、曲名體例、封套、版本不准當鉤子，第二句講這是什麼。
