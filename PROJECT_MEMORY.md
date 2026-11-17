@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s19：sd-033、sd-034 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-033 上線 30（Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Bayle、de Roubaix、Hubbard 4、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari 等）；sd-034 上線 30（Gang of Four、Gato Barbieri、Gene Clark 2、Gerard、Geri Allen 4、Gherkin Jerks、Ghost、Nannini、Fusco、Rubalcaba 3、Googoosh 2、Collier、Grant Green、Gray Matter、Osby 2、Grobschnitt、Gryphon、Manusardi 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
+- **主線補查**：sd-033 補 Foje（15min 刊 Mamontovas 日記：服役時寫同名曲、Roko maršas）、Henderson《Tidal Wave》陣容、板橋文夫《濤》聲音、G-Schmitt；sd-034 補 Gerard（King Records 永川敏郎訪談）、Ghost、Rubalcaba《The Blessing》、Manusardi、Collier。
+- **審稿**：sd-033 改 6 處（Cookers 兩集鉤子撞「1938」換材料、Foje 刪無出處的「支持獨立」、三處刪黑膠／CD 版本雜項），sd-034 改 4 處（The Blessing 聲音句改回出處說法、Ginhouse 鉤子前四字撞），逐條在 `rulings.md`。WebSearch 工作階段約 111 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-033/034.json,review-sd-033/034.json}`、`desc-tools/batches/{cards,research,output}/sd-033*、sd-034*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s20：sd-035、sd-036 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-035 上線 30（Gunnar Graps、Hampel、Csík、Hallucinogen、Mobley、Harold Budd 2、HAT、Hayedeh、Heavenly、Karajan 2、Mwandishi、High Rise 3、Horace Andy、Parlan 等）；sd-036 上線 30（Horace Silver 5、Tapscott、I Mean Us 2、IAM、Kalniņš、Indochine、Infiniti、Inoyama Land、Integrity、Isis、IU、Jackie McLean 2 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
+- **主線補查**：sd-035 補 7 張（Csík 匈牙利維基、High Rise 三張成田宗弘訪談、Heavenly 等），sd-036 補 7 張（I Mean Us《Into Innerverse》Blow 專訪推翻研究層「查無鳳小岳」、New and Old Gospel Hentoff 內頁文、Infiniti、Instinct 等）。
+- **審稿**：sd-035 改 7 處（Horace Andy 鉤子去版本雜項、Parlan 鉤子與 Mobley 撞母題換掉、Hayedeh 刪載體雜項），sd-036 改 6 處（未核實的 Por 出身、Jacknife 同場陣容、單一出處「常被」），逐條在 `rulings.md`。WebSearch 工作階段約 101 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-035/036.json,review-sd-035/036.json}`、`desc-tools/batches/{cards,research,output}/sd-035*、sd-036*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s21：sd-037、sd-038 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-037 上線 30（Jacky Terrasson、du Pré 2、Coursil、James Blake、James Brown、James Carr、Wróblewski、Japanese Telecom、Jarcha、Heifetz、Jason Moran 4、Jeremih、Jessica Bailiff、JFA、Jill Scott、Jimmy Smith、jinsang 等）；sd-038 上線 30（Joe Bataan 2、Joe Lovano 3、Joe McPhee、Joe Tex、Coltrane《Soultrane》、John Scofield 5、José Afonso 2、Juan Gabriel、Juaneco y su Combo、Judge 2、Julian Lage、Jumprava 等）。**兩批都無留置**。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 60/60 新稿，「待店主處理」無新增。
+- **主線補查**：sd-037 補 7 張（Jarcha extended、Adebambo、Bailiff、JFA、Dawkins、du Pré Brahms、Jah Free），sd-038 補 2 張（Scofield《Meant to Be》換掉誤用的前作現場報導、《No Fear》）。審稿 sd-037 改 16 處（單一出處去「常被」、Heifetz 通則句換成這份錄音的評語、JFA／Jimmy Riley 鉤子改寫）、sd-038 改 6 處，逐條在 `rulings.md`。WebSearch 工作階段約 100 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-037/038.json,review-sd-037/038.json}`、`desc-tools/batches/{cards,research,output}/sd-037*、sd-038*`、onboarding manifest 54 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆以《盤名》起句。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s18：sd-031、sd-032 上線（60 張，無留置）＋sd-hold-5 最終留置 2
+
+- **結果**：經典度≥4 非 CJK 卡。sd-031 上線 30（Don Pullen、Donald Byrd 3、Drexciya 2、Dudu Pukwana、Dzeltenie pastnieki、Earth Crisis 3、Ebi 2、Eddie Palmieri 2、Neubauten、Golha 23 等）；sd-032 上線 30（Schwarzkopf、Elvin Jones 2、Enslaved、Truffaz 2、Eyehategod 2、f(x)、F.U.S.E.、Faramarz Aslani、Fermáta 2、Ffa Coffi Pawb 等）。
+- **sd-hold-5**：上線 0、最終留置 2。張露《繁星點點 張露》身分釘死＝台灣歌手**張璐** 1977 年環球唱片 LP（Discogs 33707097、Rti 節目），串流誤掛張露 → **待店主處理**（卡面藝人錯，改藝人或下架屬卡池結構）；delayde《finding solitude》必查四項＋extended 重查仍無任何專輯層級資料，不再重查。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全 KV-HIT；上線後 `front-check` 60/60 新稿，「待店主處理」無新增（CURATED 0）。
+- **主線補查**：E.S.G.、Dudu Pukwana、Don Stover、Fowlkes、f(x)（Ebi《Tapesh》波斯文再查無果薄寫）。審稿 sd-031 改 9 處（多為單一出處的「常被視為」降為「被視為」）、sd-032 改 23 處（補盤名後壓字數、Energit 鉤子因果、Ninesense 主詞錯接、Fast Eddie 曲目歸屬、Farmers Manual 無出處地位句），逐條在 `rulings.md`。WebSearch 約 78 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,kv-before-sd-031/032.json,review-sd-031/032.json,held-sd-hold-5.json}`、`desc-tools/batches/{cards,research,output}/sd-031*、sd-032*、sd-hold-5*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s16：sd-027、sd-028 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-027 上線 30（Bodkin、Bongwater、Boredoms、Born Against、Hmong qeej、Brain Failure、Bread、Brigada Víctor Jara、Budka Suflera、Bunny Wailer、C.O.B.、Canarios、Candido 2、Carl Perkins 等）；sd-028 上線 30（Casiopea 3、Cathedral、Cecil Taylor 2、Cecilia、Celer、Celia Cruz 2、Chacalón 2、Charles Dodge、Mingus、Haden／LMO、Chavela Vargas、Chez Damier／Chez N Trent、Chicane、Chick Corea 等）。**兩批都無留置**。
