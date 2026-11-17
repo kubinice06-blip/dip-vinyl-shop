@@ -6,7 +6,7 @@
 //     POOL_ONLY＝只跑這幾項（例 "P1,P3,P1c,M2"）；
 //     畫面類（P1、P3–P10、P10b）每個尺寸都跑；邏輯 fixture（P1b–P1g、P2、P11、P12、M2）只在 390x664 跑（LAB_SIZES 沒有 390x664 就不跑）；
 //     P9 的計時（Fast 3G，branch／main 交錯）只在 390x664 跑：LAB_MAIN_BASE＝main 的伺服器根（例 http://localhost:8774）；沒給只量 branch。
-//       POOL_P9_RUNS＝每邊幾次（預設 7）。首屏位元組每個尺寸都量（硬門檻：主線 M1 760 → 併 #480 780 KB gz）。
+//       POOL_P9_RUNS＝每邊幾次（預設 7）。首屏位元組每個尺寸都量（硬門檻：主線 M1 760 → 併 #480 780 → 併 #491 800 KB gz）。
 //
 // 舊存檔一律「現在的引擎造一份 v7 形狀 → catalogId 反查回舊 slug（tools/legacy-ids.json）→ 寫成 v6／v5／v4」，所以 fixture 跟著卡池走、不寫死張數。
 //
@@ -27,7 +27,7 @@
 //       兩個分頁：A 收下／換獎勵後，B 不重新整理直接收／換 → 格子數對（改之前先重讀）
 //   P8  媒體延後：cards-media.json 延 12 秒 → 標題照常、抽屜裡的精選新卡先是專輯名字卡、到了封面補上；正常（請求帶 ?v=poolVersion、dip:media 4,677）；
 //       404 → 照玩、5 秒後重試、沒有未捕捉例外；v 不同的 JSON → 不套、沒有例外
-//   P9  首屏：index.html 同步載的 script＋stylesheet 逐檔 gzip -9 合計 ≤ 780 KB（主線 M1 760，併 #480 跟著 main 基底 +20；硬門檻）；計時 Fast 3G 量標題鈕可點（參考，只在 390x664）
+//   P9  首屏：index.html 同步載的 script＋stylesheet 逐檔 gzip -9 合計 ≤ 800 KB（主線 M1 760，併 #480 跟著 main 基底 +20；硬門檻）；計時 Fast 3G 量標題鈕可點（參考，只在 390x664）
 //   P10 聆聽室：星圖關掉收藏開關、挑到一張精選新卡（不是你的）→ save.want 有它（catalogId）、吐司；收藏亮、挑到擁有的（精選新卡）→ 收回、放上唱盤
 //   P10b 媒體晚到：開控制台前的請求都 404、開控制台那一下重抓的扣住（≤19 秒，載入器 20 秒放棄）→ 控制台照 15 秒逾時先開 → 星圖上的精選新卡先沒有封面試聽 →
 //       放行、媒體到 → 同一個物件的封面、試聽補上（試聽可播）
@@ -65,7 +65,7 @@ const want = k => !ONLY || ONLY.has(k);
 const LOGIC_SIZE = '390x664';
 const MAIN_BASE = (process.env.LAB_MAIN_BASE || '').replace(/\/+$/, '');
 const P9_RUNS = +(process.env.POOL_P9_RUNS || 7);
-const FIRST_KB = 780;                                   // 首屏 gzip 硬門檻（SPEC-B C2 740 → 主線 M1 760 → 併 #480 780）
+const FIRST_KB = 800;                                   // 首屏 gzip 硬門檻（SPEC-B C2 740 → 主線 M1 760 → 併 #480 780→ 併 #491 800（main 基底 +14.5 KB：recap.js 等））
 // 門檻管的是第 B 波自己加的量（main 首屏＋約 120 KB）：M1 是 main 合併 A 波後基底 619→639 跟著 +20；#480 讓 main 656.8（+17.7），第 B 波增量沒變
 //   （併前 753.3−639.1＝114.2、併後 771.3−656.8＝114.5）→ 照 M1 再 +20。C.hintLines 延後載只省約 6.8 KB，單獨也過不了 760（scratchpad v5/wave-b/merge/FIX.md）
 const notes = [];

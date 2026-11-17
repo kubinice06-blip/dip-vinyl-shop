@@ -241,7 +241,7 @@ LAB_SIZES=$S node game-lab/tests/e2e-intro.mjs              # 開頭旁白＋玻
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-apex.mjs   # 頂點卡試做（?apex=1）：挑王牌面板、能力框、跳過序章（解鎖制：擁有的卡先放進存檔）
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-unlock.mjs # 流派與頂點卡解鎖：新存檔只有初始派、鎖住的派點不了、打倒藏家掉被剋那派、旗標開沒收到的卡不能挑
 LAB_SIZES=$S LAB_MAIN_BASE=<main 的伺服器根> node game-lab/tests/e2e-pool.mjs   # 第 B 波 P1–P12＋M2：畫面類（P1、P3–P10b）每個尺寸、邏輯 fixture（P1b–P1g、P2、P11、P12、M2）只在 390x664；
-                                                             #   P9 首屏 gzip ≤780 KB（硬門檻；主線 M1 760，併 #480 跟著 main 基底 +20）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
+                                                             #   P9 首屏 gzip ≤800 KB（硬門檻；主線 M1 760，併 #480、#491 跟著 main 基底 +20）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-recap.mjs  # 上一手細節（11-17）：揭曉後停住等點、⏸ 自動換手、上一手詳情、這場紀錄、結算畫面的紀錄、半指／不露不洩漏
 ```
 

@@ -9,11 +9,11 @@
 - **今日推薦集點卡**：獨立鍵 `dipGameLab_v1.daily`；本地日期往前才發；挑沒認識過的（想要清單 ×5、常擁有頻率 ×3），在試聽機收下＝擁有、蓋一格；滿 7 格三選一換一張**史詩**。
 - **想要清單**：抽檔時每張想要的卡擲 35%（每檔重洗順序、一檔最多 3 張），上架標「你想要的」。
 - **主站**：`pool-index.json` v2（fnv1a32 雜湊、扣王牌／頂點／傳奇 4,875 張），主站 `index.html` 兩種形狀都吃；`?card=` 帶 catalogId（特殊字元 encode）、舊 slug 照表換；**遊戲不收傳奇種子**（主線 M2）。
-- **主線裁定**：首屏 gzip 門檻 740→780 KB（現 771 KB）；sim T3 改 n≥4000 硬判（n1000 抽樣誤差 ±0.14）；讀牌曲線維持 #480 原值；唱片櫃分批畫（3,000 張開頁 2.6 s→0.2 s）。
+- **主線裁定**：首屏 gzip 門檻 740→800 KB（併 #480、#491 後 785.5 KB）；sim T3 改 n≥4000 硬判（n1000 抽樣誤差 ±0.14）；讀牌曲線維持 #480 原值；唱片櫃分批畫（3,000 張開頁 2.6 s→0.2 s）。
 - **流程**：pool5k 名單 → 設計（盤點→規格→挑錯→定稿）→ 施工（閘門 0、WP1 資料、WP2-0 快取、WP2 引擎、WP3 介面∥WP4 模擬）→ 驗收（WP5 e2e-pool、WP6 主站、三角度審查確認 12 項全修）→ 併 #480／#467（解 8 檔衝突、審查確認 2 項）→ 併 #491（4 檔衝突）。
 - **模擬（併 #480 後 n1000）**：22/22＋T3 參考 1.92±0.14（n4000 2.19）；新手第 1–3 位死 12.8%、到第 10 位 28.6%；一般玩家中位 27；會讀的到第 50 位 15.9%。
 - **主要檔案**：`game-lab/{cards.js,cards-pool.js,cards-media.json,bins.js,content.js,engine.js,ui.js,econ.js,econ.css,style.css,shop.js,duel.js,sim.mjs,pool-index.json,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{bake-cards,build-pool-index,check-content,check-covers,check-shops,lint-copy,make-pool-list,migrate-ids}.mjs`、`game-lab/tools/{pool-list,legacy-ids}.json`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-pool,e2e-lib,e2e.spec,e2e-econ,e2e-taps,e2e-unlock}.mjs`、主站 `index.html`。`?v=81`。
-- **驗證**：check-content（5,045 張）／check-covers／check-shops／build-pool-index --check／lint-copy；併 #491 後 engine 2,897,590、tutorial 505,169 全過；e2e 見 PR。**沒驗**：真 iPhone、正式站 CDN 壓縮後的首屏時間。
+- **驗證**：check-content（5,045 張）／check-covers／check-shops／build-pool-index --check／lint-copy；併 #491 後 engine 2,897,590、tutorial 505,169 全過；併 #491 後 e2e（390、375）recap 25、pool 84、duel 121、unlock 12、apex 37、econ 54、room 21、taps 14、prologue 52，e2e.spec 390 50/50。**沒驗**：真 iPhone、正式站 CDN 壓縮後的首屏時間。
 
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 上一手細節：揭曉後停住等點、上一手詳情、這場紀錄
 
