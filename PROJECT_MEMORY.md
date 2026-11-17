@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜嚴重簡介線兩張最終留置的裁定（店主授權）
+
+- **店主**：「給你決定就好」。張露《繁星點點 張露》→ 改掛名張璐《繁星點點》（Discogs 33707097、Rti 節目；串流誤掛），照 pool-fix-20261016 六處改法＋封面重核＋藝人介紹；delayde《finding solitude》→ 拿掉曲數曲長冷知識後薄寫上線。兩件交給 s30（`sd-fix-1`）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md}`。
+- **驗證**：純文件，無 KV／seed 變更。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s27：sd-049、sd-050 上線（60 張，無留置）
 
 - **結果**：經典度≥4 卡。sd-049 上線 30（Steps 2、Sterling Void、Steve Gadd、Poindexter、Spacek、sToa、Stompin' Ground、Supertouch、Sussan Deyhim、Sutekh、Svartsinn、Grünberg 2、Sweeps、Sweet Charity、Tellier、Godinho、Taj Mahal Travellers、宮坂高史、Tantra、Tar、Terra Rosa、Terrence Parker、Tetrack、Faith Healers、Astronauts、B-52's、Benny Green、검정치마）；sd-050 上線 30（검정치마《TEAM BABY》、Bush Chemists、Chesterfields、The Comes、Consolers、CJQ、Cravats、Deep Freeze Mice 2、Diagram Brothers、Pullen-Adams 2、Gospelettes、Fabulous Counts、Ward Singers、Feelies、Force of Music、Great Jazz Trio 2、The Hacker、Highway QC's、Impressions、Isley Brothers、Betsch、Kamkars、Legendary Pink Dots 2、Lyman Woodard、The Martian、The Mercy's）；無留置（宮坂高史《Soul Tomato》只有編制與錄音資料，薄寫 167 字上線）。
