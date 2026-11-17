@@ -668,6 +668,97 @@
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 144 次（研究層 sd-015 58、sd-hold-2 17、sd-016 57，主線約 12）。
 
+## sd-hold-3：sd-016／018 留置卡重查（3 張）— s11
+
+研究層 1 支 Sonnet（WebSearch 7 次）照必查清單換路線重查，先讀前次 notes。主線補查 extended 2 次。**救回 2 張、續留置 1 張**：
+
+| 卡 | 前次為何留置 | 這次 |
+|---|---|---|
+| 花生隊長《Oh My God》 | 搜尋撞同名美國樂團；「出一張就解散」與舊稿「前有兩張」矛盾 | Discogs API：矛盾解開（前兩張是《ㄞ國歌曲》《崩代紀事》合輯各一首）；**主線補查** extended 一次找到 Yahoo 拍賣二手 CD 頁轉錄的專輯文案（自稱台灣第一個 bossa nova 搖滾樂團、團名取自零食、龐克→迷幻→bossa nova、釣魚理論、阿比丟構想全團 jam、搖滾爆發力加拉丁、現場感）→ 上線 |
+| 美空ひばり《ひばりの渡り鳥だよ》 | 只有同名單曲與旅物脈絡 | Discogs API 10 吋盤 credits：同名曲西沢爽詞、狛林正一曲＝小林旭〈ギターを持った渡り鳥〉同一對詞曲；船村徹、米山正夫等作曲家，旅物／股旅歌謠加一首童謠，コロムビア・オーケストラ伴奏 → 薄寫上線（鉤子用詞曲搭檔，不寫「返歌」「便乘」推論） |
+| 張露《繁星點點 張露》 | 只有發行日 | **續留置**（`held-sd-hold-3.json`）：1973-10-23 疑為數位上架日；Discogs 有 1977 年環球黑膠、歌手作「張璐」，身分不穩；主線 extended 一次仍無專輯層級資料 |
+
+- 寫作：主線自寫（2 張），花生隊長 215、美空ひばり 201。
+- 主線審稿：美空ひばり「哥倫比亞專屬作曲家」→「作曲家」（米山正夫專屬身分無出處）；花生隊長刪 DJ 客席與 Scum（Scum 指店或團不明）壓字數；「重聚演出」刪（只有部落格一場）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-hold-3.json`；2 張 4 鍵 `wrangler@4 kv bulk put --remote`；回讀 **4/4 一致**；`front-check` **前台 2/2 新稿**。
+- onboarding manifest 同步 2 處。
+
+## sd-019（30 張，CJK：閃靈 3、阿川泰子 4、阿飛西雅 2、陳世興 2、陳明章 2、青山、非常階段 3、音羽信、頂樓的馬戲團、須山公美子、風コーラス団、飯吉馨 & The WIP、高橋達也と東京ユニオン、麋先生 2、麻生レミ、黃小楨、黑豹樂隊 2、델리스파이스）— s11
+
+- 研究：3 支 Sonnet，WebSearch 16＋19＋19＝54 次。派工特注只照卡單範圍列名（sd-018 教訓）。
+- **主線補查**（WebSearch 約 7 次＋Discogs API＋curl）：
+  - 非常階段《Windom》（story none）：Discogs API release notes——1991 年 10 月 Soundmarket 錄音室兩首＋6 月新宿 Antiknock 現場一首，現場有秋田昌美（Merzbow）打鼓、小堺文雄（Incapacitants）→ 鉤子。
+  - 飯吉馨（story none）：Discogs API——Denon 1971、notes 證實 WIP＝War／Intelligence／Peace（舊稿此說原被研究層判不可證）、流行曲器樂改編。
+  - 高橋達也《Got The Spirit》（story／sound none）：Discogs API——1976-05-18 ヤマハホール錄音、Three Blind Mice、藤井武製作、選曲 Brecker 一系〈Grease Piece〉、Frank Foster、三木敏悟、Slide Hampton。
+  - 麻生レミ（sound none）：Discogs API credits——井上堯之、内田裕也製作；井上、速水清司、大野克夫、佐々木隆典、鈴木二朗伴奏。
+  - 麋先生《野生》（story none）：妞新聞專訪（「野」「生」拆解、遊樂園比喻社會、前一年低潮）。
+  - 黑豹《光芒之神》（sound none）：知乎／豆瓣樂迷評論（搜尋摘要，寫成「被認為」）。
+  - 阿飛西雅《夏天的尾巴》：本卡實為鄭文堂電影原聲帶；風潮唱片介紹補 story／sound（KK 請假半年、大提琴 Cheri、淡淡憂傷）。
+  - 陳明章《勿愛問阮的名》、須山公美子、阿川泰子 3 張：再搜無新資料，照研究稿薄寫。
+- **留置 1 張**（KV 保留舊稿）：黑豹樂隊《無是無非》——研究稿與主線都只有樂團史與主唱更替（竇唯→欒樹→秦勇），寫作層稿全是團史，專輯本身無故事與聲音；45 萬張銷量單一來源不寫。稿留在 `sd-019-out-2.json` 的 `draft` 欄。
+- 身分裁定：陳明章《現場音樂 I》＝水晶 1990 年 1 月《Live Work I》首張，與 1991 校園巡迴《現場作品(1)》分開；델리스파이스《D》是第四張；《武德殿》嘉賓只寫公告的林生祥、巴奈（不寫陳綺貞）；須山公美子參與樂手照日文維基；青山生平照維基（不寫夜間部）。
+
+### 主線審稿（2026-11-17，逐張 29 張，改 13 處，改動檔 `review-sd-019.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| 阿川泰子\|ms. mystery | 「常被視為西岸 fusion 名盤」→「被視為」 | Victor 重發簡介單一出處 |
+| 陳明章\|現場音樂 i | 「常被視為台灣最早廣受好評的現場專輯之一」→「被認為是」 | soundtraces 單一出處 |
+| 非常階段\|modern | 「常被稱作日本噪音的聖杯」→「被稱作」；「一段 74 分鐘連續演出」→「一段一小時以上不間斷的連續演出」 | 單一出處；曲長不寫 |
+| 非常階段\|romance | 「常被解讀」→「被解讀」；「常與《Modern》並列」→「被並列」 | 部落格、豆瓣各單一 |
+| 非常階段\|windom | 「吉他在這裡是製造噪音的工具」→「他們一貫把吉他當成…」 | 團體層級描述不寫成本張專屬 |
+| 音羽信\|わすれがたみ | 刪 2022 首度黑膠重發 | 重發雜項 |
+| 須山公美子\|夢のはじまり | 刪 2016 Super Fuji Discs 再發 | 再發雜項 |
+| 風コーラス団\|愛色の季節 | 「常被拿來和山本潤子比較」→「被拿來」；刪 2024 Light in the Attic 再發 | 單一部落格；再發雜項 |
+| 頂樓的馬戲團 | 「常被看成微型音樂劇」→「被看成」 | 張曉舟單一 |
+| 麋先生\|沒名字的人類 | 刪曲目清單 | 雜項 |
+| 黃小楨\|黃小楨2 | 刪 2007 喜馬拉雅買下庫存重新上架 | 版本／通路雜項 |
+
+另 fix-spacing 補「JOJO 廣重」空格。其餘逐張四問無改：29 張鉤子前四字互異、加權皆 ≤50；鉤子材料取自故事（醒靈寺戰場搬到真實場地、武德殿襪套坐墊、陳世興看排練寫〈行雲〉、製作單位要他剪田野錄音）、概念（野與生、歌廳樂隊扮演、夢）、聲音（Merzbow 坐鼓椅、流行曲器樂化）或地位（九年最佳大樂團、和製ジャニス）。薄寫照收：青山 175、陳明章《勿愛問阮的名》（無聲音段）、麋先生《沒名字的人類》、黃小楨2、須山。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-019.json`；29 張 58 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **58/58 一致**；`front-check` **前台 29/29 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-020（30 張：韓國 7、Cicada、Juzzy Orange & GoodieK、MASS OF THE FERMENTING DREGS、ないあがらせっと、サミー＋稲垣次郎、上田力 2、伊東たけし、八代亜紀、兼崎順一、北村英治、宮沢昭 2、松田弘一、横内章次、淺堤、潘秀瓊、篠崎正嗣、迷幻幼稚園、鈴木茂、青江三奈、響野夏子、Agnostic Front）— s11
+
+- 研究：3 支 Sonnet，WebSearch 19＋6＋18＝43 次（b 組多走 curl、Discogs API）。
+- **主線補查**（WebSearch 約 13 次＋curl）：
+  - 시나위《Down and Up》：京鄉新聞〈韓國大眾音樂 100 大名盤〉第 96 名、器樂曲〈연착〉是全張亮點 → 鉤子；namu 樂迷評論（金鍾書高音更明亮）寫成「被認為」。
+  - 델리스파이스《Welcome to the Delihouse》：maniadb 收錄樂評（風笛與西塔琴取樣、delay 吉他、techno／hip-hop）。
+  - 빛과 소금：maniadb 確認第四張。
+  - サミー：curl 讀 CDJournal 2013 新聞（garage soul 隱藏名盤、〈Rock Steady〉）、横浜パラダイス部落格（活動短暫、身世不明、爵士樂手與 new rock 交流）。
+  - 鈴木茂：部落格與 Strada Records 商品頁（請 AOR 歌手朋友寫無詞器樂曲、全數製作編曲、度假村氛圍、和 Balearic 重新評價）。
+  - 篠崎正嗣：CiNii 書誌（小提琴／電小提琴／二胡、Pale Green Studio、曲名以水與遠古生物為題）。
+  - 青江三奈：1969〈池袋の夜〉與連續兩年歌唱賞（地位）。
+  - 淺堤、響野夏子、松田弘一、北村英治、ないあがらせっと、八代亜紀：再搜無新資料，照研究稿薄寫。淺堤「十年社遊」是什麼活動查不到，不寫推測、不寫成十週年。
+- 身分／事實裁定：전인권《파랑새》寫「들국화之後的第一張個人專輯」；소음발광寫入圍；이승윤《0집》是第四張正規專輯；宮沢昭《Sea Horse》＝1989 年 12 月浜松現場、2002 年遺作首發（故事核心）；《On Green Dolphin Street》不寫「隔十三年回同廠」（1981 有《My Piccolo》）；潘秀瓊寫「1960 年代初在香港錄音」，盤名太長不入正文；Agnostic Front 不寫 Rolling Stone 排名與整張長度。
+- 非 CJK 卡（Agnostic Front）：前台 front-check 對上，CURATED 未蓋，無待店主處理。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 16 處，改動檔 `review-sd-020.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| 델리스파이스\|welcome to the delihouse | 「這是從 PC 通訊…」→「《Welcome to the Delihouse》是…」；刪「韓國獨立圈的現代搖滾」、산울림翻唱 | 第二句要有盤名；字數 |
+| juzzy orange & goodiek | 「這張是」→「《沒有靈魂的工程師》是」；刪「成員輪流企劃第二彈」 | 盤名；字數 |
+| サミー & 稲垣次郎… | 「這是」→盤名；刪 2013 首度 CD 化、「稲垣次郎製作」；縮短身世句 | 盤名；版本雜項；字數 |
+| cicada\|一起走吧 | 刪「四首後來收進 2016《Farewell》」 | 後年選輯收錄雜項 |
+| 八代亜紀 | 「B 面候補…改成 A 面大賣」→「候補曲…後來卻大賣」 | A／B 面字眼 |
+| 北村英治 | 刪「與 Trio 版曲目相同」、1980 現場盤 | 版本雜項、無關後續 |
+| 篠崎正嗣 | 刪「下一張原創作要再等 19 年」 | 與本張無關的冷知識 |
+
+其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50；材料取自故事（大麻事件後的隔年、試聽帶像 Aretha、工程師白天做 beat、遺作首發、沒打算做專輯）、概念（0집、L7＝square、度假飯店、水與遠古生物、少女的單向對話）、聲音（三連音撥法、八把長號、木吉他領奏的拉丁）或地位（百大名盤、連續兩年歌唱賞）。QA 例外照收：淺堤盤名原文半形冒號、潘秀瓊無《》（盤名過長）、青江三奈「潮来笠」為曲名原文。薄寫：北村英治 163。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-020.json`；30 張 59 鍵（Agnostic Front 原無 desc4，只寫 desc2）`wrangler@4 kv bulk put --remote` Success；回讀 **59/59 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 180 次（研究層 sd-019 54、sd-020 43、sd-hold-3 7，主線約 30，另有子代理未回報的零頭）。
+
 ## sd-021（30 張，經典度≥4：Agnostic Front 2、Bashung 2、Alaska y los Pegamoides、Trzaskowski、Michelangeli 2、Autechre 2、Bastard、Parmegiani、Bikini Kill、Carlos do Carmo、Carlos Paredes、Carsick Cars、Céline Dion、Cortot／Thibaud／Casals、Cro-Mags、Donny Hathaway、Gilels、Fats Domino、De Gregori、Knuckles／Tomiie、G.I.S.M. 2、Gauze 2、少女時代 2）— s12
 
 - 研究：3 支 Sonnet，WebSearch 16＋10＋12＝38 次（偏少，thin 多）。
