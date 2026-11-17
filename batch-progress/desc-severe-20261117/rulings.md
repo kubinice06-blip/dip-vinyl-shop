@@ -2165,3 +2165,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。
+
+## sd-078（30 張，其餘：Linval Thompson 2、Lithics、Little John 2、Little Johnny Taylor、Longstone、Lorde、Los Destellos、Los Mirlos、Los Van Van、Los Wembler's de Iquitos、Los Ángeles Negros、Lou Donaldson 11、Louis Smith、Love、Love Tractor、Lowfish、Lucília do Carmo、Lull）— s42
+
+- 研究：3 支 Sonnet，WebSearch 14＋15＋13＝42 次；無 none。AllMusic、Discogs、Qobuz 網頁多 403；本工作階段的 Discogs API 帶 token 查詢被權限擋下，未用。
+- **主線補查**（WebSearch 7 次，facts 標【主線補查】）：Little John《Reggae Dance》（再發行介紹：Channel One 與 King Tubby's 錄混）；Linval Thompson《Look How Me Sexy》（Qobuz 收的 AllMusic 評）；Los Destellos（Discogs 鏡像：Delgado 主奏與錄音指揮、多數自作）；Los Wembler's（Discogs＋西文維基：1977 Sono Radio、第六張錄音室專輯，研究層原判「只有舊稿這麼說」推翻）；Los Ángeles Negros（1974 年 3 月主唱離團、Montes 接任）；Lucília do Carmo extended 無新料。
+- 事實裁定：Linval Thompson 兩張不寫確切年（1981／82、1978／79 兩說）；Los Destellos 不寫廠牌（Odeon／Líder 兩說）；Little John 不寫生年、《Reggae Dance》不寫管樂手；Longstone 不寫壓縮空氣電鑽等舊稿說法；Los Van Van《Sandunguera》寫成 Messidor 1986 歐洲選集；Los Ángeles Negros 不斷言本盤主唱；《Good Gracious!》比《The Natural Soul》晚八個月（舊稿寫反）；《Midnight Sun》不寫貝斯手與 Cuscuna；《Sassy Soul Strut》不寫編曲者；Louis Smith 不寫「1978 年下一張」「二十年全職教師」；Love 不寫倉庫與 NME 名次；Lull 不寫 isolationist、Release Entertainment、伯明罕混音；Lucília do Carmo 廠牌 Valentim de Carvalho（非 Decca）、不寫 Raul Nery 與拆 EP。
+- **薄寫上線不留置**：Los Wembler's《Fiesta en la selva》、Los Ángeles Negros《Aplaude mi final》（以團的定位與整體聲音為主）、Lucília do Carmo（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-078.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Los Ángeles Negros《Aplaude mi final》 | 刪「這張的曲名多半在講道別」 | 研究稿無據，是從盤名推論 |
+| Lou Donaldson《Pretty Things》 | 「常被視為」→「被視為」較次要的作品 | 只有 AllMusic 單一出處 |
+| Lou Donaldson《Sextet, Volume 2》 | 第二句補盤名並改掛名 Donaldson（原「他」會指到鉤子的 Blakey）、刪 10 吋規格；刪「直線 bop」「缺少慢曲」壓回 236 字 | 第二句要講這是什麼；規格屬版本雜項 |
+| Lou Donaldson《A Man With a Horn》 | 「錄下」→「錄」 | fix-spacing 補空格後 241 字 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Thompson 替 McGregor 製作熱門曲、Sly & Robbie 打底、Lithics 雙吉他與旋律貝斯、Junjo 1984 入獄、Little John 九歲登台、水電工郵差肉販的反轉歌詞、Longstone 的 Krautrock／shoegaze 譜系、Lorde 自述、Destellos 電吉他取代銅管、Mirlos 與海岸 cumbia 區隔、〈Por encima del nivel〉、伊基托斯只能靠飛機河運、洋蔥音樂、1999 首度出版、Cosmos 打破五重奏配方、Donaldson 推薦 Green／Patton、Barretto 補小號空位、Midnight Sun 擱二十年、Hardman 中音域小號、與 Mitchell 隔七年重聚、〈Tennessee Waltz〉開口唱、《Sanford and Son》主題曲、Blue Note 最後一張、Clifford Brown 之比、Love for Sale、Love Tractor 首度開口、半故障類比器材、兩張原創唱片、Lull 單曲概念）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-078.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
