@@ -1,6 +1,6 @@
 ---
 name: dip-card-create
-description: One-line entry point for adding album cards to dip vinyl — accepts artist(s), album(s), artist+album, or a genre/scene expansion request, then runs the full pipeline: candidate curation, identity checks, covers, three-axis ratings, apex assessment, desc-restyle-grade hook + description (180–240 chars), fixed preview, Firestore/KV writes, gates, and publication. Use for 新增專輯／新增卡片／補卡池／延伸某曲風／上架專輯. Supersedes dip-card-pool-expand as the entry point (its scripts remain the underlying library).
+description: One-line entry point for adding album cards to dip vinyl — accepts artist(s), album(s), artist+album, or a genre/scene expansion request, then runs the full pipeline: candidate curation, identity checks, covers, three-axis ratings, apex assessment, researched description per general-desc-base (what it is / story or concept / sound; no trivia hooks; 180–240 chars), fixed preview, Firestore/KV writes, gates, and publication. Use for 新增專輯／新增卡片／補卡池／延伸某曲風／上架專輯. Supersedes dip-card-pool-expand as the entry point (its scripts remain the underlying library).
 ---
 
 # dip-card-create — 一句話輸入的完整建卡產線
@@ -67,7 +67,14 @@ description: One-line entry point for adding album cards to dip vinyl — accept
   <1,000＋試聽非 ready＝5（確知有正式數位版給 4）、1,000–4,999 ≥3；聽眾數疑似錯配（盤名寫法不同、同系列知名卷次、
   listeners＝0 漏抓）不套下限、照錨點判（2026-11-02 店主指正《Identification》）。
 
-## Phase 3：簡介產線（desc-restyle 成品標準）
+## Phase 3：簡介產線
+
+> **2026-11-17 起改規格（店主定案）**：一般卡照 `desc-tools/prompts/general-desc-base.md`，頂點卡照 `apex-desc-base.md`。
+> **不再跑鉤子（hook）層**：研究層照 general-desc-base 第二節（三塊：這是什麼／故事或概念／聲音；MB／Discogs 只確認身分），
+> 寫作層直接讀研究稿、照第三節寫（第一句講這是什麼，不准冷知識開頭；不寫軌序、曲長、盤號）；主線審稿照第四節。
+> 起因：林強《驚蟄》整段只講軌序與曲長，抽查一般卡 17% 同類（`batch-progress/desc-audit-20261117/`）。
+> 下面舊規格裡的「hook 首句懸念」、hook 層代理、`qa-batch hooks`／`chk-hook-crossgroup` 一律停用；其餘（批名、目錄、QA、逐張審稿）照舊。
+
 
 **規格＝全池現行標準**：hook 首句懸念＋正文 full 180–240 字（`Array.from` 計，硬上限 280、
 下限 140；thin 卡 120–180）、反向禁令兩分法、題材無禁區三限制、無分數星等、音樂人一律拉丁原文、
