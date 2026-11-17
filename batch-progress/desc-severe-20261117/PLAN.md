@@ -76,6 +76,7 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-hold-1 | sd-001～008 留置卡重查 | 13 | s5 | ✅ 上線 13（前台 13；13 張全數救回，sd-001～008 留置清空） |
 | sd-hold-2 | sd-009～014 留置卡重查 | 7 | s8 | ✅ 上線 7（前台 7；7 張全數救回，sd-009～014 留置清空） |
 | sd-hold-3 | sd-016／018 留置卡重查 | 3 | s11 | ✅ 上線 2（前台 2；花生隊長、美空ひばり救回；張露《繁星點點》續留置） |
+| sd-hold-4 | sd-016／019 留置卡重查 | 2 | s14 | ✅ 上線 1（前台 1；黑豹《無是無非》救回；張露《繁星點點》身分不穩續留置） |
 | sd-011 | 中日韓台（高中正義 … 송골매） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-012 | 中日韓台（시인과 촌장 … Mal Waldron & 日野皓正） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-013 | 中日韓台（NANIWA EXPRESS … ゼロ戦） | 30 | s7 | ✅ 上線 27（前台 27；山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》留置） |
@@ -90,14 +91,14 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-020 | 中日韓台＋經典度≥4（델리스파이스 … Agnostic Front） | 30 | s11 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-021 | 經典度≥4（Agnostic Front … Girls' Generation） | 30 | s12 | ✅ 上線 30（前台 30；無留置；主線補查 13 張） |
 | sd-022 | 經典度≥4（Gorilla Biscuits … Shankar Jaikishan） | 30 | s12 | ✅ 上線 30（前台 30；無留置；CURATED 覆蓋 0） |
-| sd-023 | 經典度≥4（Shankar Jaikishan … 14 Iced Bears） | 30 | | |
-| sd-024 | 經典度≥4（2NE1 … Andrew Hill） | 30 | | |
+| sd-023 | 經典度≥4（Shankar Jaikishan … 14 Iced Bears） | 30 | s14 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
+| sd-024 | 經典度≥4（2NE1 … Andrew Hill） | 30 | s14 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-025 | 經典度≥4（Androids of Mu … Bappi Lahiri） | 30 | | |
 | sd-026 | 經典度≥4（Barrington Levy … Bobby McFerrin & Chick Corea） | 30 | | |
 | sd-027 | 經典度≥4（Bodkin … CASHFORGOLD） | 30 | s16 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-028 | 經典度≥4（Casino Versus Japan … Chico Freeman） | 30 | s16 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
-| sd-029 | 經典度≥4（Chris & Cosey … David Lynch & Alan R. Splet） | 30 | | |
-| sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | | |
+| sd-029 | 經典度≥4（Chris & Cosey … David Lynch & Alan R. Splet） | 30 | s17 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
+| sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | s17 | ✅ 上線 29（前台 29；delayde《finding solitude》查無專輯資料留置） |
 | sd-031 | 經典度≥4（Don Pullen … Eliane Elias） | 30 | | |
 | sd-032 | 經典度≥4（Eliane Elias … Ffa Coffi Pawb） | 30 | | |
 | sd-033 | 經典度≥4（Fin.K.L … Gabinete Caligari） | 30 | | |

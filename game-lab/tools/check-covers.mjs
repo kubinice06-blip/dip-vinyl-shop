@@ -2,6 +2,10 @@
 //
 //   node game-lab/tools/check-covers.mjs          # 有問題 exit 1；--quiet 只印結論；--json 印明細
 //
+// 卡只驗核心（第 B 波 SPEC-B §1.4【定稿 A4】）：opts.cards 沒給時讀 cards.js＝核心 368 張（店裡看得到的封面、bins.js 策展池都是核心卡）；
+//   精選新卡（cards-pool.js 4,677 張，第 2 檔起才上架、不畫在道具上）不在這裡驗：封面試聽由 v5/pool5k check 逐張驗過，箱子規則由 bake --pool-only 的 POOL-BIN-RULE 擋。
+//   不要改成讀 content.js 的整池（4,677 張沒有 localCover，會全報錯）。
+//
 // 分區（FIXLIST 4／5，X／Y 契約）：十大類（genre-tree.json 頂層：rock jazz electronic→elec soul hiphop classical folk pop world blues）＋台灣 tw（地區優先）
 //   ＋新進 new（不限分類）＋門口牆 feature（店長推薦精選：史詩＋傳奇）／picks（店長推薦：不限分類）＋特價箱 sale（C.bargain）。
 //   v5 店面改版（店主 11-13）：pop 那一區改 citypop（CITY POP 城市流行）、門口長櫃拆 indierock（INDIE ROCK）／indiepop（INDIE POP），三區用子曲風規則 sub；
@@ -85,7 +89,7 @@ export function runCovers(opts = {}) {
   const P = [], W = [];
   const bad = m => P.push(m), warn = m => W.push(m);
   const L = opts.layout || JSON.parse(fs.readFileSync(path.join(LAB, 'shops/dip.json'), 'utf8'));
-  const cards = opts.cards || require(path.join(LAB, 'cards.js'));
+  const cards = opts.cards || require(path.join(LAB, 'cards.js'));   // 只有核心 368（見檔頭）
   let binsAll = opts.bins; if (!binsAll) { try { binsAll = require(path.join(LAB, 'bins.js')); } catch (e) { bad('bins.js 載不到：' + e.message); binsAll = { shops: {} }; } }
   const lists = opts.lists || JSON.parse(fs.readFileSync(path.join(LAB, 'tools/deck-lists.json'), 'utf8'));
   let content = opts.content; if (content === undefined) { try { content = require(path.join(LAB, 'content.js')); } catch (_) { content = null; } }
@@ -200,7 +204,7 @@ export function runCovers(opts = {}) {
   }
 
   // ---- 6. 宇多田在店長推薦（picks）的卡池、不在搖滾（v5 店面改版：POP 改 CITY POP，它不是城市流行，移到 picks）
-  const UTADA = '宇多田ヒカル-first-love';
+  const UTADA = "宇多田ヒカル|first love";
   if (!((bins.picks || {}).pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》要在店長推薦（picks）的卡池（v5 店面改版：POP 改 CITY POP 之後移過去）');
   for (const k of ['rock', 'indierock']) if (((bins[k] || {}).pool || []).includes(UTADA)) bad('宇多田ヒカル《First Love》在 bins.js ' + k + ' 的 pool（D §6 點名：不准出現在搖滾）');
   const ut = vis.filter(v => v.id === UTADA);

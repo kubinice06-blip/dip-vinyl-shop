@@ -18,7 +18,7 @@
 //      飄字「聲望 +n」、結果句「王牌：回 n 聲望」；看穿（'77 Live）提示框蓋章「真話／唬人！」跟引擎一致
 //   6  旗標下的規則卡、標題、唱片資訊：標題牌角上「頂點卡試做」；規則卡第 6 行換成「王牌不比星：…」、頁尾「打贏回 4」、不捲動；按住王牌格＝唱片資訊有「王牌能力」
 //   7  不開旗標：挑王牌畫面跟現在一樣（老闆 → 換一張王牌＝三張王牌三選一、沒有分頁與 15 張；來客畫面不自動跳；王牌格照舊可以丟、屬性鈕「王牌 硬 7」；
-//      規則卡照舊「王牌 7 星」；唱片資訊沒有「王牌能力」；唱片櫃分母 326＝卡池 368 扣掉試做 42 張；店主 11-16 特價箱換牌加 10 張前是 316）
+//      規則卡照舊「王牌 7 星」；唱片資訊沒有「王牌能力」；唱片櫃分母 5,003＝卡池 5,045（核心 368＋精選新卡 4,677，第 B 波）扣掉試做 42 張；B 波前是 326、特價箱換牌前 316）
 //   8  序章（旗標開）：挑王牌那行寫「頂點卡試做・教學這場王牌照舊 7 星…」、序章那場照舊 7 星（view 沒有 apex、王牌可以丟）、開打吐司寫明；
 //      序章挑王牌那行多「挑了就是初始流派…」（審查 11-16）；序章打完回到來客畫面 → 老闆說那句 →（解鎖制：新玩家只收到這派預設那張＝沒得挑，
 //      不跳挑王牌面板，審查 11-16）→ 第一次來客的教學泡泡等老闆說完才出、那時沒有吐司 → 泡泡看完 → 一次性吐司「其他流派還鎖著：打倒傳說藏家，
@@ -42,7 +42,7 @@ const ONLY = (process.env.APEX_ONLY || '').split(',').filter(Boolean).map(Number
 const want = n => !ONLY.length || ONLY.includes(n);
 const QA = (extra = '') => Q('&fast=1&apex=1' + extra);
 const C = (page, f, a) => page.evaluate(f, a);
-const RALLIZES = 'les-rallizes-denudes-77-live', THRILLER = 'michael-jackson-thriller', TENG = '鄧麗君-teresa-teng-淡淡幽情';
+const RALLIZES = "les rallizes dénudés|'77 live", THRILLER = "michael jackson|thriller", TENG = "鄧麗君 teresa teng|淡淡幽情";
 
 function track(page) { page._errors = page._errors || []; }
 const errs = page => page._errors.filter(e => !/favicon/.test(e));
@@ -109,8 +109,8 @@ async function runSize(browser, w, h) {
       const bag0 = await C(page, () => window.__lab.run.bag.slice());
       await tapAt(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(1300);
       const a1 = await C(page, () => ({ scr: window.__lab.screen(), ace: window.__lab.run.ace, aceId: window.__lab.run.aceId, last: window.__lab.save.lastAceId, lastAce: window.__lab.save.lastAce,
-        seen: !!window.__lab.save.seen.apexPick, bag: window.__lab.run.bag.slice(), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), album: window.DipLabContent.cards['les-rallizes-denudes-77-live'].album,
-        known: !!window.__lab.save.shelf['les-rallizes-denudes-77-live'], panel: !!document.querySelector('.lb-sheet.apxpick') }));
+        seen: !!window.__lab.save.seen.apexPick, bag: window.__lab.run.bag.slice(), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), album: window.DipLabContent.cards["les rallizes dénudés|'77 live"].album,
+        known: !!window.__lab.save.shelf["les rallizes dénudés|'77 live"], panel: !!document.querySelector('.lb-sheet.apxpick') }));
       const ok1 = up && said0.some(t => t === u.intro.replace(/^「|」$/g, '')) && p0 && p0.tag === u.tag && p0.title === u.pickTitle && p0.tabs.join() === 'hall,pearl,heresy*' && p0.n === 15 && p0.sel === def &&
         p0.tm.every(t => ['這手', '整場', '留著'].includes(t)) && p0.det === det0 && p0.okt === u.pickSame && p0.okIn && p0.sheetScroll <= 1 && p0.inView && p0.cw >= 44 && scrollOk(sc0) &&
         inf && infAb.includes(u.infoTitle) && infAb.includes('赤裸裸') && selAfterLp === def &&
@@ -135,7 +135,7 @@ async function runSize(browser, w, h) {
       const q1 = await pickState(page);
       await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
       await tapAt(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(1300);
-      const a2 = await C(page, () => { const R = window.__lab.run, Cn = window.DipLabContent; return { ace: R.ace, aceId: R.aceId, last: window.__lab.save.lastAceId, lastAce: window.__lab.save.lastAce, bag4: R.bag.slice(0, 4), gifts: Cn.gifts.hall.slice(), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), album: Cn.cards['michael-jackson-thriller'].album }; });
+      const a2 = await C(page, () => { const R = window.__lab.run, Cn = window.DipLabContent; return { ace: R.ace, aceId: R.aceId, last: window.__lab.save.lastAceId, lastAce: window.__lab.save.lastAce, bag4: R.bag.slice(0, 4), gifts: Cn.gifts.hall.slice(), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), album: Cn.cards["michael jackson|thriller"].album }; });
       const ok2 = !!hot && menu === u.aceNow.replace('{title}', '異端').replace('{album}', a1.album) && up2 && q0.tabs.join() === 'hall,pearl,heresy*' && q0.sel === RALLIZES && q0.okt === u.pickSame &&
         q1.sel === THRILLER && q1.sw && q1.tabs.join() === 'hall*,pearl,heresy' &&
         a2.ace === 'hall' && a2.aceId === THRILLER && a2.last === THRILLER && a2.lastAce === 'hall' && JSON.stringify(a2.bag4) === JSON.stringify(a2.gifts) && a2.said.includes(u.aceDone) && a2.toasts.includes(u.aceSwapped.replace('{album}', a2.album));
@@ -160,7 +160,7 @@ async function runSize(browser, w, h) {
         return { t: b.textContent, l: r.left, r: r.right, top: r.top, bottom: r.bottom, hTop: hr.top, hBottom: hr.bottom, chips: document.querySelectorAll('.dl .pop .ab').length, popHidden: document.querySelector('.dl .pop').hidden,
           go: go ? { t: go.textContent, h: go.getBoundingClientRect().height } : null, on: document.querySelector('.dl .tile[data-i=ace]').classList.contains('apxon') };
       });
-      const abil = await C(page, () => window.DipLabEngine.abilityOf(window.DipLabContent, 'michael-jackson-thriller'));
+      const abil = await C(page, () => window.DipLabEngine.abilityOf(window.DipLabContent, "michael jackson|thriller"));
       // 點框外（他那一塊）＝收起、沒有發動
       await tapAt(page, '.dl .dl-e .nm'); await sleep(250);
       const closed = await C(page, () => ({ hidden: document.querySelector('.dl .apx-box').hidden, used: !!window.__lab.rawDuel().p.aceUsed, can: window.DipLabEngine.canApex(window.__lab.rawDuel()) }));
@@ -353,12 +353,12 @@ async function runSize(browser, w, h) {
       const ok7 = !auto && up && pk.h3 === aceAsk && pk.n === 3 && pk.tiers === 'hall,pearl,heresy' && pk.apx === 0 && pk.locked === 0 && pk.acex.every(x => / 7/.test(x)) && !pk.apexFlag &&
         !plate && !t.mode && /\bace\b/.test(t.tile) && !/\bapx\b/.test(t.tile) && t.legal && !t.view && chip && /7/.test(chip) && inf && !ci.apx && !ci.ns && l6.includes('王牌 7 星');
       record(7, size, ok7 && !errs(page).length, `沒旗標：來客自動跳 ${auto}；換王牌面板 ${up} ${JSON.stringify(pk)}；標題牌小字 ${plate}；對決 ${JSON.stringify(t)} 屬性鈕「${chip}」；唱片資訊 ${JSON.stringify(ci)}；規則第 6 行「${l6}」`);
-      // 唱片櫃分母＝卡池扣掉試做的 42 張（旗標關時不算）：326（店主 11-16 特價箱換牌加了 10 張：358 → 368 張，分母 316 → 326）
+      // 唱片櫃分母＝卡池扣掉試做的 42 張（旗標關時不算）：5,003（第 B 波卡池 368 → 5,045；之前 326，特價箱換牌前 316）
       await jsClick(page, '.lb-modal [data-x]'); await sleep(200);
       await C(page, () => window.__lab.openPage('shelf')); await sleep(500);
       const sh = await C(page, () => (document.querySelector('.lb-top.page .tt small') || {}).textContent || '');
       const only = await C(page, () => window.DipLabContent.apexTrialOnly.length);
-      record(7.1, size, sh.includes('／' + (shelf - only)) && only === 42 && shelf === 368, `唱片櫃「${sh}」（cards ${shelf}、試做 ${only} 張；分母要是 ${shelf - only}）`);
+      record(7.1, size, sh.includes('／' + (shelf - only)) && only === 42 && shelf === 5045, `唱片櫃「${sh}」（cards ${shelf}、試做 ${only} 張；分母要是 ${shelf - only}）`);
     } catch (e) { record(7, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -413,7 +413,7 @@ async function runSize(browser, w, h) {
       record('9b', size, ok9b && !errs(page).length, `看穿蓋章 16 場：疊字 ${st.filter(x => x.hitText).length}、提示句被切 ${st.filter(x => x.clip).length}、章出框 ${st.filter(x => !x.inBox).length}、沒章 ${st.filter(x => x.none).length}；例 ${JSON.stringify(st[8])}`);
 
       // (c) 發動那行：專輯名很長（Goldberg）只截專輯名，能力名看得到；點唱片就收掉、相剋圖那行出來；層級在結果框下面
-      const GOULD = 'glenn-gould-bach-the-goldberg-variations-1955';
+      const GOULD = "glenn gould|bach: the goldberg variations (1955)";
       await lab({ ace: 'hall', aceId: GOULD, enemy: 'copycat', seed: 21 });
       await sleep(200);
       await tapAt(page, 'dt:card-ace'); await sleep(300); await tapAt(page, '.dl .apx-box .go'); await sleep(200);

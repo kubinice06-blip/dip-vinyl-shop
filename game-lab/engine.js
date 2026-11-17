@@ -46,6 +46,8 @@
 //            順序：贏 → reward（挑唱片／配件）→ level（有升級才有，連升就連選）→ 下一位（第 5 位打完換新一輪：新面孔、說情重設、商店補貨）
 //            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce, bossCard?})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
+//              組牌快取（第 B 波 WP2-0）：選牌按條件分桶、只取前 k 張、同一組輸入記住（卡池＝content.cards 物件；卡的星數／tier／tune 視為不變），結果跟原本逐字相同；
+//              _noCache（API 上的旗標，預設 false）＝true 時 trialDeck／radioPool 走原本的寫法（engine.test #25 對照）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur, title, main}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept, aces?（解鎖制：這一趟收的頂點卡）}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
@@ -77,7 +79,7 @@
 //              thinPolicy(run, content) -> [{type:'sell', cardId}]：賣掉每一軸都排不進包包前 5 名的牌（deadWeight；第 A 波起送的、種子也交還 $0，先賣有錢拿的；包包剩 5 張停）
 //            canShop(run) · canBargainPick(run)
 //            收音機轉頻率（v5 第六項第二期，店主 11-15）：choose {type:'radio', cell}（cell＝八格之一，content.tunes.order）：canShop 才能轉（兩位客人之間）、每輪一次（第二次 → 'used'）；
-//              抽卡池 radioPool(run, content, cell)＝trialPool（非頂點）∩ tune===cell ∩ SHELF_RARITY（普通／稀有／獨特）− 包包 − 這一輪各箱子已上架的 − 特價箱（池子 9 張與現在擺的）；
+//              抽卡池 radioPool(run, content, cell)＝trialPool（非頂點）∩ tune===cell ∩ SHELF_RARITY（普通／稀有／獨特）− 包包 − 現在架上的（一檔貨＝這一位的架子；之後幾位 shelve 跳過收音機那張）− 特價箱（池子 9 張與現在擺的）；
 //              空的 → 'empty'（不算轉過、什麼都不改）。種子＝seedKey#runNo#radio#輪#cell（獨立，不碰 run.rng、不碰補貨）。抽到的放進 run.shop.bargain 第一格、記 run.shop.radio＝{cell, id}；
 //              effects [{radio: cell, card: id}]。canRadio(run)＝canShop 且這輪還沒轉。tune 只用在抽卡池，outcome／星數不讀它（頻率不進戰鬥規則）
 //            bargainPriceIn(run, content, id)：特價箱這一格的價＝電台那張照原價（priceOf：稀有度價；特價箱封頂 $300 會被低買高賣）、其他照 bargainPriceOf；buyBargain 用它
@@ -142,7 +144,7 @@
 //            sellValue(content, card|relicId) ＝ floor(價 × sellRate 0.5) · moneyText(n) ＝ 千分位字串（1200 → '1,200'；C.shopUi 的字串自己帶 '$'）
 //            isGift(run, content, id)：老闆送的（這一趟王牌那組的四張＋王牌本身）。第 A 波起櫃檯 sell 收（老闆收回 $0）；舊規則路 buy sellId／buyBargain sellIds 照舊 'giftNoSell'。
 //              客人丟的、買的、特價箱的照舊半價。take 的 dropId（拿掉一張）只剩 --set bagMax=8 舊規則那條路（包包滿才要）
-//            run.shop（restock：newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng）：
+//            run.shop（restock：newRun 與每輪開頭；種子＝seedKey#runNo#shop#輪，不碰 run.rng；架上唱片 lot 開時見下面 Lot）：
 //              { bins: { [key]: [ids] },     // content.bins（bins.js：每個 key { key, label, zh, pool, front }）的每一區：
 //                                            //   feature 2–3 張（economy.featureStock；只抽史詩／傳奇）；jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues
 //                                            //   new picks 各 4–6 張（economy.stock；只抽普通／稀有／獨特）；照 SHOP_ORDER 上貨、全店同一輪不重複；
@@ -151,7 +153,32 @@
 //                bargain: [ids],             // 特價箱 6 張＝經／冷／硬各 2（bargain.pool 12 張洗牌；「色」＝bargainLane：峰值那軸、並列取後面那軸 硬→冷→經）
 //                bargainPicked: boolean,     // 開局挑三張（免費）做過沒；只在第 1 位之前（canBargainPick：run.pos === 1）
 //                radio: {cell, id} | null,   // 這一輪收音機轉到的（每輪開頭 restock 清成 null；舊存檔沒有這欄＝這輪還沒轉）
-//                firstGuestInside: boolean } // UI 用
+//                firstGuestInside: boolean, // UI 用
+//                lot: {…} }                  // 一檔貨（下面 Lot；content.lot.on 關＝沒有這欄、bins 照上面的舊補貨）
+// Lot        一檔貨（第 B 波 SPEC-B §3、§5；店主 11-16「固定一大批輪流上架，打完傳說藏家整批換新」）。數字＝content.lot（沒給的欄位用 LOT）：
+//              { on: true, size: 100, floor: 5, feature: 6, show: 3, featureShow: 2, firstCurated: true, wantP: 0.35, wantMax: 3, firstShow?: n }
+//            run.shop.lot＝{ no＝抽的那輪, src 'cur'（第 1 輪、策展池 bins[k].pool）|'all'（第 2 輪起、全卡池 bins[k].all＝content.deriveAll 推的）,
+//              bins {k: [ids]}（輪流上架的順序，想要的排最前）, cur {k: 下一位從第幾張接}, gone [ids]（這一檔從架上買走的，不再上架）,
+//              want [ids]（這一檔因為想要清單進來的）, told [ids]（畫面寫：吐司過的；engine 不讀）, fb? [keys]（沒有 all、退回 pool 的箱） }
+//            run.want＝想要清單快照（newRun o.want：字串、去重、留最後 200；沒給＝[]；ui 每次載入重同步）。不升 RUN_V（舊 run 沒有 lot → fixLot）
+//            restock（newRun、每輪開頭、jumpTo）：收音機清空 → stockBins（舊箱子迴圈原封不動；lot 關＝它就是 run.shop.bins，lot 開＝結果丟掉、只消耗 #shop# 亂數）
+//              → 配件 → 特價箱 →（lot 開）drawLot（亂數 seedKey#runNo#lot#輪）→ shelve。→ 配件、特價箱 lot on／off 逐字相同；lot 關＝WP2 以前逐字相同
+//            lotQuota(content) -> {k: 張數}：FEATURE feature；其他每箱 floor＋剩下的照各箱 all 張數比例（最大餘數法，同分照 SHOP_ORDER；沒有 all 的箱用 pool）＝合計 size
+//            drawLot(run, content)：每箱可抽＝來源 uniq − 查不到 − 稀有度不合（FEATURE 史詩／傳奇、其他普通／稀有／獨特；頂點自然不在）− 特價箱（新舊）− 王牌 − 包包
+//              − 前面箱子抽到的（全檔不重複）；第 2 檔起沒有 all（或空）→ 退回 pool、lot.fb、lotWarn[k]＝true（sim 印警告）。想要清單：見 §5（每檔重洗順序、每張擲 wantP、最多 wantMax）
+//            shelve(run, content)：每箱從 cur 往後拿 show（FEATURE featureShow；第 1 輪有 firstShow 用它）張，跳過包包、gone、收音機這輪那張、查不到的；繞一圈為止 → run.shop.bins
+//            advance：輪首 restock；其他每位客人之間 shelve（沒有檔／不是這一輪的檔先 fixLot）。序章那次直接 return（第 1 位＝newRun 那批）；說情重打不換
+//            jumpTo：restock 後再 shelve idx 次（沒買東西時＝正常走到這一位）· choose buy：買走的進 lot.gone（櫃檯賣、特價箱、收音機不動）
+//            fixLot(run, content)（ui.js loadSave：舊 run 沒有 lot、形狀壞、不是這一輪的檔）：同種子重抽，先扣掉這一位架上的；這一位架上的排在各箱最前、cur 指在後面
+//              → 下一位接著上沒擺過的；架上原樣不動。want／told 不是陣列補 []。lot 關不做。回 true＝有改 · lotOk(run, content)
+//            lotLeft(run, key)：這一檔這一箱還沒賣掉的（扣包包、gone、收音機那張；含現在架上的）→ 畫面選空箱字 · stockBins(run, content, st) · LOT · lotCfg · lotWarn
+//            fixBins／fixBargain 的暫時 run 帶 want:[]（想要清單不影響補的那幾張）
+// Ids        mapIds(v, map, merge?)（第 B 波 SPEC-B §2.2；ui.js migrateIds 呼叫）：深走訪，「整個字串剛好是 map 的鍵、不含 |」的值與物件鍵換成 map[字串]；
+//              鍵換完撞在一起 → merge(先的, 後的, 鍵)（沒給＝後蓋前）；不改傳進來的、跑兩次一樣
+// Daily      今日推薦集點卡（第 B 波 SPEC-B §4；純函式，存檔與日期在 ui.js）：
+//            dailyPick(content, {day, known, owned, want, tunes}) -> id|null：非頂點、非特價、非王牌、沒擁有、沒認識過（想要清單裡的例外）；權重 想要 ×5、tunes（≤2 格）的頻率 ×3（相乘）；
+//              k＝hash01('daily#'+day+'#'+id)^(1/w) 取最大（同一天同輸入＝同一張）。known／owned＝函式｜陣列｜{id: 值}
+//            dailyReward(content, {n, owned}) -> [3 ids]：史詩／傳奇、非頂點／特價／王牌、沒擁有；經冷硬（topAttr）各取 hash01('dailyReward#'+n+'#'+id) 最小的，缺色從別色補
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -570,7 +597,7 @@
       sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Eminem，打完掉在地上）
     if (g) {
       const main = ATTRS.includes(o.main) ? o.main : null;
-      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, bossCard: o.bossCard, cls, tier: o.tier, main });
+      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, bossCard: o.bossCard, cls, tier: o.tier, main, deckIds: o.deckIds });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss',
         title: guestTitle(content, pos, id, cls, o.tier), main });
       const MB = trialCfg(content, o.tier).curve.mainBias || {}, mb = pos >= (MB.from | 0) ? +MB.n || 0 : 0;
@@ -1097,17 +1124,117 @@
     if (POOL_CACHE) POOL_CACHE.set(cards, p);
     return p;
   }
-  function trialDeck(content, id, pos, o) {
-    o = o || {};
-    const T = trialCfg(content, o.tier), K = T.curve.deck, d = Math.max(1, pos | 0);
-    const E = content.enemies[id]; if (!E) throw new Error('engine: unknown enemy ' + id);
-    const cls = POS_CLASSES.includes(o.cls) ? o.cls : classAt(d);
-    const base = (E.deck || []).map(x => cardFrom(content, x));
-    const tag = String(o.seedKey || 'lab') + '#' + (o.runNo || 1) + '#' + d;
-    const u = s => hash01(tag + '|' + s);
-    const fl = Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * d));
+  // ---------- 組牌快取（第 B 波 WP2-0；SPEC-B §6.2 第 2 步、定稿 C5）：只改速度、不改結果 ----------
+  //   5,045 張下 trialDeck 每次都對整池篩、算雜湊、全排序（×6），radioPool 每次篩整池（×10）。改成：
+  //   ① 按 trialDeck 用到的條件（下限 fl、主屬性 M、strict、obAll 退路、M 那軸總星排序、另外兩軸的 lane）預先分桶，快取在 content.cards 物件上
+  //      （跟 trialPool 同一個鍵：卡池換物件才重算；卡物件的星數、tier、tune 視為不變——cards-media 只原地寫封面／試聽，不影響）
+  //   ② 每次只對要用的桶算雜湊（tag|客人| 的 fnv 狀態算一次、每張只續算自己的 id；同一次呼叫同一張只算一次）、只取需要的前 k 張
+  //      （部分選擇；順序照原本的排序鍵：雜湊小的先、同分 id 小的先）
+  //   ③ 同一組輸入選出的牌（卡池物件參照）記住：鍵＝客人、tag（seedKey#runNo#位）、M、fl、minPool、mainShare、他原本的牌單；
+  //      來客那排一次畫 5 位、shopPolicy 與 startFight 同一位各叫一次 → 第二次起不重選。加星、王牌、複本照舊每次重做（不共用物件）
+  //   ④ radioPool：每格（tune）∩ 普通／稀有／獨特 記住，每次只扣包包與架上
+  //   API._noCache＝true → 全部走原本的寫法（deckSlow、radioPool 篩整池）；engine.test #26 對照 200 個 seed × 第 1–15 位結果 JSON 相同
+  const POOL_INFO = typeof WeakMap === 'function' ? new WeakMap() : null;
+  const AXIS_BIT = { c: 1, o: 2, h: 4 };
+  const DECK_MEMO_MAX = 512;
+  function poolInfo(content) {
+    const pool = trialPool(content), cards = content.cards || {};
+    let P = POOL_INFO.get(cards);
+    if (P && P.pool === pool) return P;
+    const n = pool.length, pw = new Array(n), mk = new Array(n), sid = new Array(n);
+    for (let i = 0; i < n; i++) {
+      const c = pool[i], m = peak(c);
+      pw[i] = power(c);
+      mk[i] = (star(c, 'c') === m ? 1 : 0) | (star(c, 'o') === m ? 2 : 0) | (star(c, 'h') === m ? 4 : 0);   // 峰值那幾軸（＝isM／lane／topAxes）
+      sid[i] = '' + c.id;
+    }
+    P = { pool, n, pw, mk, sid, bk: new Map(), hv: new Float64Array(n), hg: new Uint32Array(n), gen: 0, memo: new Map() };
+    POOL_INFO.set(cards, P);
+    return P;
+  }
+  function poolBucket(P, key, keep) {
+    let b = P.bk.get(key);
+    if (!b) { b = []; for (let i = 0; i < P.n; i++) if (keep(i)) b.push(i); P.bk.set(key, b); }
+    return b;
+  }
+  function subBucket(P, key, src, keep) {
+    let b = P.bk.get(key);
+    if (!b) { b = src.filter(keep); P.bk.set(key, b); }
+    return b;
+  }
+  function fnvMore(h, str) { for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193); } return h >>> 0; }   // fnv1a32 接著前綴的狀態算
+  function fmix01(h) { h ^= h >>> 16; h = Math.imul(h, 0x85ebca6b); h ^= h >>> 13; h = Math.imul(h, 0xc2b2ae35); h ^= h >>> 16; return (h >>> 0) / 4294967296; }   // ＝hash01 的後半
+  function deckFast(content, K, base, E, id, tag, fl, M) {
+    const P = poolInfo(content), pool = P.pool, pw = P.pw, mk = P.mk;
+    const key = id + '\u0001' + tag + '\u0001' + (M || '') + '\u0001' + fl + '\u0001' + K.minPool + '\u0001' + K.mainShare + '\u0001' + (E.deck || []).join('\u0002');
+    const hit = P.memo.get(key);
+    if (hit) return hit;
+    if (++P.gen > 0x3fffffff) { P.hg.fill(0); P.gen = 1; }
+    const gen = P.gen, hv = P.hv, hg = P.hg, sid = P.sid, h0 = fnvMore(0x811c9dc5, tag + '|' + id + '|');
+    const hOf = i => { if (hg[i] === gen) return hv[i]; const v = fmix01(fnvMore(h0, sid[i])); hv[i] = v; hg[i] = gen; return v; };   // ＝u(id + '|' + c.id)
+    const before = (i, j) => { const a = hOf(i), z = hOf(j); return a < z || (a === z && pool[i].id < pool[j].id); };
+    // ＝byHash(桶, used) 的前 k 張：桶裡不在 used 的，照（雜湊, id）排序取前 k
+    const top = (idx, k, used) => {
+      const out = [];
+      if (!(k > 0)) return out;
+      for (let t = 0; t < idx.length; t++) {
+        const i = idx[t];
+        if (out.length >= k && !before(i, out[out.length - 1])) continue;
+        if (used.has(pool[i].id)) continue;
+        let j = out.length; out.push(i);
+        while (j > 0 && before(i, out[j - 1])) { out[j] = out[j - 1]; j--; }
+        out[j] = i;
+        if (out.length > k) out.pop();
+      }
+      return out;
+    };
+    const deck = [], used = new Set();
+    const put = c => { deck.push(c); used.add(c.id); };
+    const ALL = poolBucket(P, 'A', () => true);
+    if (!M) {
+      let bag = poolBucket(P, 'F' + fl, i => pw[i] >= fl); if (bag.length < K.minPool) bag = ALL;
+      for (const c of base) if (power(c) >= fl) put(c);
+      if (deck.length < base.length) for (const i of top(bag, base.length - deck.length, used)) put(pool[i]);
+    } else {
+      const bit = AXIS_BIT[M], isM = c => star(c, M) === peak(c);
+      const need = Math.min(base.length, Math.max(0, Math.round((+K.mainShare || 0) * base.length)));
+      const keepM = base.filter(c => power(c) >= fl && isM(c)), keepO = base.filter(c => power(c) >= fl && !isM(c));
+      for (const c of keepM) put(c);
+      for (const c of keepO.slice(0, Math.max(0, base.length - Math.max(need, keepM.length)))) put(c);
+      if (keepM.length < need) {
+        let mb = poolBucket(P, 'M' + M + fl, i => (mk[i] & bit) && pw[i] >= fl);
+        const strict = poolBucket(P, 'S' + M + fl, i => mk[i] === bit && pw[i] >= fl);
+        if (strict.length >= K.minPool) mb = strict;
+        if (mb.length < K.minPool) {
+          let z = P.bk.get('Z' + M);
+          if (!z) { z = poolBucket(P, 'm' + M, i => mk[i] & bit).slice().sort((a, b) => pw[b] - pw[a] || (pool[a].id < pool[b].id ? -1 : 1)); P.bk.set('Z' + M, z); }
+          mb = z.slice(0, Math.max(K.minPool, mb.length));
+        }
+        const r = Math.min(need - keepM.length, base.length - deck.length);
+        for (const i of top(mb, r, used)) put(pool[i]);
+      }
+      const others = ATTRS.filter(a => a !== M), first = BEATS[M];
+      const ob = poolBucket(P, 'O' + M + fl, i => !(mk[i] & bit) && pw[i] >= fl);
+      const allKey = ob.length >= K.minPool ? 'O' + M + fl : 'N' + M;
+      const obAll = ob.length >= K.minPool ? ob : poolBucket(P, 'N' + M, i => !(mk[i] & bit));
+      const lane = (c, a) => star(c, a) === peak(c);
+      for (let guard = 0; deck.length < base.length && guard < 40; guard++) {
+        const cnt = a => deck.filter(c => !isM(c) && lane(c, a)).length;
+        const order = others.slice().sort((a, z) => cnt(a) - cnt(z) || (a === first ? -1 : z === first ? 1 : 0));
+        let got = null;
+        for (const a of order) { const i = top(subBucket(P, 'L' + allKey + a, obAll, i => mk[i] & AXIS_BIT[a]), 1, used)[0]; if (i !== undefined) { got = pool[i]; break; } }
+        if (!got) { const i = top(obAll, 1, used)[0]; if (i !== undefined) got = pool[i]; else { const k = top(ALL, 1, used)[0]; if (k !== undefined) got = pool[k]; } }
+        if (!got) break;
+        put(got);
+      }
+    }
+    if (P.memo.size >= DECK_MEMO_MAX) P.memo.clear();
+    P.memo.set(key, deck);
+    return deck;
+  }
+  // 原本的寫法（API._noCache 對照用；一行不改，只從 trialDeck 抽出來）
+  function deckSlow(content, K, base, id, fl, M, u) {
     const pool = trialPool(content);
-    const M0 = ATTRS.includes(o.main) ? o.main : null, M = M0 && +K.mainShare > 0 ? M0 : null;   // mainShare 0＝主屬性只標示、不改牌組（sim 對照用）
     const hv = new Map(), hOf = c => { let v = hv.get(c.id); if (v === undefined) { v = u(id + '|' + c.id); hv.set(c.id, v); } return v; };   // 同一張只算一次雜湊
     const byHash = (arr, used) => arr.filter(c => !used.has(c.id)).map(c => [hOf(c), c]).sort((a, z) => a[0] - z[0] || (a[1].id < z[1].id ? -1 : 1)).map(x => x[1]);
     const deck = [], used = new Set();
@@ -1149,6 +1276,20 @@
         put(got);
       }
     }
+    return deck;
+  }
+  function trialDeck(content, id, pos, o) {
+    o = o || {};
+    const T = trialCfg(content, o.tier), K = T.curve.deck, d = Math.max(1, pos | 0);
+    const E = content.enemies[id]; if (!E) throw new Error('engine: unknown enemy ' + id);
+    const cls = POS_CLASSES.includes(o.cls) ? o.cls : classAt(d);
+    const base = (E.deck || []).map(x => cardFrom(content, x));
+    const tag = String(o.seedKey || 'lab') + '#' + (o.runNo || 1) + '#' + d;
+    const u = s => hash01(tag + '|' + s);
+    const fl = Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * d));
+    const M0 = ATTRS.includes(o.main) ? o.main : null, M = M0 && +K.mainShare > 0 ? M0 : null;   // mainShare 0＝主屬性只標示、不改牌組（sim 對照用）
+    const pin = Array.isArray(o.deckIds) && o.deckIds.length && o.deckIds.every(x => typeof x === 'string' && cardOf(content, x) && !cardOf(content, x).tier) ? o.deckIds.map(x => cardOf(content, x)) : null;   // run.retryDeck（pinOldDeck）
+    const deck = pin || (API._noCache || !POOL_INFO ? deckSlow(content, K, base, id, fl, M, u) : deckFast(content, K, base, E, id, tag, fl, M));
     const b = Math.floor(Math.max(0, d - K.buffFrom) / K.buffEvery);
     // 每張都是他自己的一份（換來的牌可能跟你包包裡的是同一張唱片：對決狀態裡不共用物件）
     //   加星：加在那張最高那軸（topAttr）；有主屬性時，主屬性那軸也是最高（並列）的牌加在主屬性那軸（「加星偏主屬性」）
@@ -1389,6 +1530,7 @@
     const others = TIERS.filter(t => t !== ace);
     run.bossAce = others.includes(o.bossAce) ? o.bossAce : pickOne(others, run);   // ＝bossAceFor(seedKey, runNo, ace)（run.rng 的第一個亂數；解鎖制照樣抽，run.rng 序列不變）
     if (run.unlock) run.bossCard = bossCardFor(run, content);    // 這一輪藏家帶的頂點卡（被剋鏈／試做卡／照舊）
+    run.want = wantOf(o.want);                                   // 想要清單快照（一檔貨加權；SPEC-B §5.2）：畫面傳 save.want，沒給＝[]
     restock(run, content);
     return run;
   }
@@ -1396,24 +1538,17 @@
   //   每一區從 bins.js 的 pool 抽：FEATURE 2–3 張（只抽史詩／傳奇）、其他每區 4–6 張（只抽普通／稀有／獨特；新進與店長推薦本來就不限曲風）；
   //   全店同一輪不重複（照 SHOP_ORDER 先上的先拿）；不上：你的王牌、包包裡的、特價箱的、頂點卡。display:true 的舊牆面區只展示、不賣
   //   櫃檯：relicShop 扣掉身上的；特價箱 6 張＝經／冷／硬各 2（池子扣掉包包裡的，不夠就少擺）
+  //   一檔貨（第 B 波 SPEC-B §3；content.lot.on，預設開）：架上唱片改成「每輪抽一檔（drawLot）、每位客人從檔裡輪流上架（shelve）」。
+  //     順序：收音機清空 → stockBins（舊的箱子迴圈原封不動；lot 關＝寫進 run.shop.bins，lot 開＝結果丟掉、只為了把 #shop# 亂數消耗到同一個位置）
+  //     → 配件 → 特價箱 →（lot 開）drawLot（自己的 #lot# 亂數）→ shelve。→ 配件、特價箱 lot on／off 逐字相同（定稿 E2）
   function restock(run, content) {
     const EC = econ(content), st = { rng: fnv1a32(run.seedKey + '#' + run.runNo + '#shop#' + (run.round || 1)) || 1 };
     const SH = run.shop || (run.shop = { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false, radio: null });
     SH.radio = null;                                   // 收音機每輪一次：新一輪重來（電台那張跟特價箱一起換掉）
-    const taken = new Set([content.aces && content.aces[run.ace], ...run.bag, ...bargainIds(content)].filter(Boolean));
     const span = (lohi, fallback) => { const lo = (lohi && lohi[0]) | 0 || fallback[0], hi = (lohi && lohi[1]) | 0 || fallback[1]; return lo + Math.floor(rng(st) * (Math.max(hi, lo) - lo + 1)); };
-    const B = content.bins || {};
-    const keys = SHOP_ORDER.filter(k => B[k]).concat(Object.keys(B).filter(k => !SHOP_ORDER.includes(k)).sort());
-    SH.bins = {};
-    for (const key of keys) {
-      const b = B[key]; if (!b || b.display) continue;
-      const feat = key === 'feature', ok = feat ? FEATURE_RARITY : SHELF_RARITY;
-      const pool = uniq(b.pool || []).filter(id => !taken.has(id) && cardOf(content, id) && ok.includes(rarity(cardOf(content, id))));
-      shuffle(pool, st);
-      const got = pool.slice(0, Math.min(feat ? span(EC.featureStock, ECON.featureStock) : span(EC.stock, ECON.stock), pool.length));
-      SH.bins[key] = got;
-      for (const id of got) taken.add(id);
-    }
+    const LT = lotCfg(content);
+    const bins = stockBins(run, content, st);
+    if (!LT.on) SH.bins = bins;                        // lot 關：今天的補貨（每輪一次、從 pool 抽）
     const rp = (((content.relicShop || {}).pool) || []).filter(id => relicOk(content, id) && !run.relics.includes(id));
     shuffle(rp, st);
     SH.relics = rp.slice(0, Math.min(span(EC.relicStock, ECON.relicStock), rp.length));
@@ -1425,7 +1560,255 @@
     const out = [];
     for (let k = 0; k < 2; k++) for (const a of ATTRS) if (by[a][k]) out.push(by[a][k]);
     SH.bargain = out;
+    if (LT.on) { SH.lot = drawLot(run, content, LT); shelve(run, content); }
+    else if (SH.lot) delete SH.lot;                    // lot 關（sim --lot off、緊急關閉）：沒有檔
     return SH;
+  }
+  // 今天的箱子迴圈（restock 拆出來，一行不改；定稿 E2）：每一區從 bins.js 的 pool 抽 FEATURE 2–3／其他 4–6 張、全店不重複。回 {key: [ids]}
+  function stockBins(run, content, st) {
+    const EC = econ(content);
+    const taken = new Set([content.aces && content.aces[run.ace], ...run.bag, ...bargainIds(content)].filter(Boolean));
+    const span = (lohi, fallback) => { const lo = (lohi && lohi[0]) | 0 || fallback[0], hi = (lohi && lohi[1]) | 0 || fallback[1]; return lo + Math.floor(rng(st) * (Math.max(hi, lo) - lo + 1)); };
+    const B = content.bins || {};
+    const keys = SHOP_ORDER.filter(k => B[k]).concat(Object.keys(B).filter(k => !SHOP_ORDER.includes(k)).sort());
+    const bins = {};
+    for (const key of keys) {
+      const b = B[key]; if (!b || b.display) continue;
+      const feat = key === 'feature', ok = feat ? FEATURE_RARITY : SHELF_RARITY;
+      const pool = uniq(b.pool || []).filter(id => !taken.has(id) && cardOf(content, id) && ok.includes(rarity(cardOf(content, id))));
+      shuffle(pool, st);
+      const got = pool.slice(0, Math.min(feat ? span(EC.featureStock, ECON.featureStock) : span(EC.stock, ECON.stock), pool.length));
+      bins[key] = got;
+      for (const id of got) taken.add(id);
+    }
+    return bins;
+  }
+
+  // ---------- 一檔貨（第 B 波 SPEC-B §3、§5.2）----------
+  //   run.shop.lot＝{ no, src:'cur'|'all', bins:{k:[ids]}, cur:{k:int}, gone:[ids], want:[ids], told:[ids], fb?:[keys] }（見檔頭契約）
+  //   數字＝content.lot（沒給的欄位用 LOT）。firstShow（沒給＝不用）＝第 1 輪每個非 FEATURE 箱上幾張（SPEC-B §7.4 第 2 步的旋鈕，資料改就好）
+  const LOT = { on: true, size: 100, floor: 5, feature: 6, show: 3, featureShow: 2, firstCurated: true, wantP: 0.35, wantMax: 3 };
+  function lotCfg(content) { return Object.assign({}, LOT, (content && content.lot) || {}); }
+  // 箱子沒有 all（sim --data、engine.test 假箱子、之後換 bins 沒叫 deriveAll）→ 第 2 檔起退回 pool 並記在這裡（sim 結尾印警告；定稿 E1）
+  const lotWarn = {};
+  const shopKeysOf = content => { const B = (content && content.bins) || {}; return SHOP_ORDER.filter(k => B[k]).concat(Object.keys(B).filter(k => !SHOP_ORDER.includes(k)).sort()).filter(k => B[k] && !B[k].display); };
+  const hasAll = b => !!b && Array.isArray(b.all) && b.all.length > 0;
+  // 每箱配額：FEATURE＝feature；其他每箱 floor（不超過那箱張數），剩下的照全卡池各箱張數（all；沒有 all 的箱用 pool）比例、最大餘數法分（同分照 SHOP_ORDER）。
+  //   抽的時候再 min(配額, 那一箱可抽張數)。正式資料＝SPEC-B §3.2 的表（合計 100）
+  function lotQuota(content, L) {
+    L = L || lotCfg(content);
+    const B = (content && content.bins) || {}, keys = shopKeysOf(content);
+    const size = k => hasAll(B[k]) ? B[k].all.length : (B[k].pool || []).length;
+    const q = {}, others = keys.filter(k => k !== 'feature');
+    if (keys.includes('feature')) q.feature = Math.max(0, Math.min(L.feature | 0, size('feature')));
+    let rest = (L.size | 0) - (q.feature || 0);
+    for (const k of others) { q[k] = Math.max(0, Math.min(L.floor | 0, size(k))); rest -= q[k]; }
+    rest = Math.max(0, rest);
+    const tot = others.reduce((a, k) => a + size(k), 0);
+    if (tot > 0 && rest > 0) {
+      const share = others.map((k, i) => ({ k, i, x: rest * size(k) / tot }));
+      let left = rest;
+      for (const s of share) { const f = Math.floor(s.x); q[s.k] += f; left -= f; }
+      share.sort((a, b) => (b.x - Math.floor(b.x)) - (a.x - Math.floor(a.x)) || a.i - b.i);
+      for (const s of share) { if (left <= 0) break; q[s.k]++; left--; }
+    }
+    return q;
+  }
+  // 一箱的來源（靜態部分）：uniq、卡存在、稀有度合規（FEATURE 史詩／傳奇、其他普通／稀有／獨特；頂點自然不在）、不是特價箱（新舊）。
+  //   記在來源陣列上（WeakMap；卡池物件、特價箱、陣列長度變了就重算）；動態的（王牌、包包、前面箱子抽到的）每次扣
+  const LOT_SRC = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function lotSrc(content, arr, feat) {
+    const bg = (content && content.bargain) || {}, cards = content.cards;
+    const hit = LOT_SRC && !API._noCache ? LOT_SRC.get(arr) : null;
+    if (hit && hit.cards === cards && hit.bg === bg && hit.bp === bg.pool && hit.br === bg.retired && hit.n === arr.length && hit.feat === feat) return hit;
+    const ok = feat ? FEATURE_RARITY : SHELF_RARITY, bset = new Set(bargainIds(content));
+    const list = Array.from(new Set(arr)).filter(id => { const c = cardOf(content, id); return !!c && !bset.has(id) && ok.includes(rarity(c)); });
+    const E = { cards, bg, bp: bg.pool, br: bg.retired, n: arr.length, feat, list, set: null };
+    E.has = id => (E.set || (E.set = new Set(list))).has(id);
+    if (LOT_SRC) LOT_SRC.set(arr, E);
+    return E;
+  }
+  // 抽一檔（restock 呼叫；SPEC-B §3.3）：亂數＝seedKey#runNo#lot#輪（跟 run.rng、#shop# 分開）。第 1 輪（firstCurated）從策展池 pool、第 2 輪起從全卡池 all。
+  //   全檔不重複（照 SHOP_ORDER）；不上：王牌（content.aces[run.ace]、run.aceId）、包包裡的、特價箱（新舊）、頂點、稀有度不合的。
+  //   想要清單（run.want；§5.2）：照 hash01(…#wantord#id) 每檔重洗順序，每張在它那一箱可抽、那一箱想要的還不到配額、這一檔還不到 wantMax 時
+  //   擲 hash01(…#want#id) < wantP → 收進來、排在那一箱最前面（下一位就上架）。
+  //   每箱其餘的：在來源（靜態合規的那份）上做部分 Fisher–Yates（只洗到收滿配額為止；不在場的——王牌、包包、前面箱子抽到的——抽到就跳過），
+  //   想要的照樣算「收到」再拿掉 → 想要清單長短不影響任何一箱抽到哪幾張的亂數（消耗跟沒有想要清單一樣）。每箱只花「配額＋跳過的」次亂數，
+  //   不用整箱洗（全卡池 jazz 868 張；整箱洗 0.23 ms／檔、這樣 0.02 ms）。skip（fixLot 用）＝另外不抽的 id（這一位架上已經擺的）
+  function drawLot(run, content, L, skip) {
+    L = L || lotCfg(content);
+    const round = run.round || 1, pre = run.seedKey + '#' + run.runNo + '#lot#' + round;
+    const st = { rng: fnv1a32(pre) || 1 };
+    const B = content.bins || {}, keys = shopKeysOf(content), Q = lotQuota(content, L);
+    const first = round === 1 && !!L.firstCurated;
+    const lot = { no: round, src: first ? 'cur' : 'all', bins: {}, cur: {}, gone: [], want: [], told: [] };
+    const taken = new Set([content.aces && content.aces[run.ace], run.aceId, ...(run.bag || []), ...(skip || [])].filter(Boolean));
+    const fb = [], src = {};
+    for (const key of keys) {
+      const b = B[key];
+      let arr = b.pool || [];
+      if (!first) { if (hasAll(b)) arr = b.all; else { fb.push(key); lotWarn[key] = true; } }
+      src[key] = lotSrc(content, arr, key === 'feature');
+    }
+    // 想要清單：每張找它第一個（SHOP_ORDER）可抽的箱
+    const wantBy = {}, wantP = +L.wantP || 0, wantMax = Math.max(0, L.wantMax | 0);
+    const W = Array.from(new Set((Array.isArray(run.want) ? run.want : []).filter(x => typeof x === 'string' && !taken.has(x))));
+    if (W.length && wantP > 0 && wantMax > 0) {
+      const ord = W.map(id => ({ id, h: hash01(pre + '#wantord#' + id) })).sort((a, b) => a.h - b.h || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+      const where = {};
+      let n = 0;
+      for (const { id } of ord) {
+        if (n >= wantMax) break;
+        const key = keys.find(k => src[k].has(id));
+        if (!key) continue;
+        const got = wantBy[key] || (wantBy[key] = []);
+        if (got.length >= Math.min(Q[key] | 0, src[key].list.length)) continue;
+        if (hash01(pre + '#want#' + id) < wantP) { got.push(id); where[id] = key; n++; }
+      }
+      for (const { id } of ord) if (where[id]) taken.add(id);
+    }
+    for (const key of keys) {
+      const mine = wantBy[key] || [], mset = new Set(mine), arr = src[key].list, n = arr.length, q = Q[key] | 0;
+      const sw = new Map(), out = [];                                // 部分 Fisher–Yates（sw＝被換過的位置，不複製整箱）
+      for (let i = 0; i < n && out.length < q; i++) {
+        const j = i + Math.floor(rng(st) * (n - i)), id = sw.has(j) ? sw.get(j) : arr[j];
+        sw.set(j, sw.has(i) ? sw.get(i) : arr[i]);
+        if (!taken.has(id) || mset.has(id)) out.push(id);
+      }
+      const got = mine.concat(out.filter(id => !mset.has(id)).slice(0, Math.max(0, q - mine.length)));
+      lot.bins[key] = got; lot.cur[key] = 0;
+      for (const id of got) taken.add(id);
+      for (const id of mine) lot.want.push(id);
+    }
+    if (fb.length) lot.fb = fb;
+    return lot;
+  }
+  // 每位上架（SPEC-B §3.4）：從這一檔每箱的游標往後拿，跳過包包裡的、這一檔買走的（gone）、收音機這輪抽到那張、查不到的卡；
+  //   拿滿 show（FEATURE featureShow；第 1 輪有 firstShow 就用它）或繞一圈為止。寫 run.shop.bins（形狀不變）。沒有檔回 false
+  function shelve(run, content) {
+    const SH = run && run.shop, L = SH && SH.lot;
+    if (!L || !L.bins || typeof L.bins !== 'object') return false;
+    const LT = lotCfg(content), bag = new Set(run.bag || []), gone = new Set(Array.isArray(L.gone) ? L.gone : []), radioId = SH.radio && SH.radio.id;
+    if (!L.cur || typeof L.cur !== 'object') L.cur = {};
+    const bins = {};
+    for (const key of shopKeysOf(content)) {
+      const list = Array.isArray(L.bins[key]) ? L.bins[key] : [], n = list.length;
+      const k = Math.max(0, key === 'feature' ? LT.featureShow | 0 : ((L.no === 1 && LT.firstShow) | 0) || LT.show | 0), out = [];
+      let i = n ? (((L.cur[key] | 0) % n) + n) % n : 0, step = 0;
+      while (out.length < k && step < n) { const id = list[i % n]; i++; step++; if (!bag.has(id) && !gone.has(id) && id !== radioId && cardOf(content, id)) out.push(id); }
+      L.cur[key] = n ? i % n : 0;
+      bins[key] = out;
+    }
+    SH.bins = bins;
+    return true;
+  }
+  // 檔的形狀對不對（fixLot、advance 用）：bins／cur 每個現在的箱都有（陣列／非負整數）、gone 字串陣列、是這一輪的檔（no＝run.round）
+  function lotOk(run, content) {
+    const L = run && run.shop && run.shop.lot;
+    if (!L || typeof L !== 'object' || !L.bins || typeof L.bins !== 'object' || Array.isArray(L.bins) || !L.cur || typeof L.cur !== 'object' || !Array.isArray(L.gone)) return false;
+    if (L.no !== (run.round || 1)) return false;
+    if (!L.gone.every(x => typeof x === 'string')) return false;
+    return shopKeysOf(content).every(k => Array.isArray(L.bins[k]) && L.bins[k].every(x => typeof x === 'string') && Number.isInteger(L.cur[k]) && L.cur[k] >= 0);
+  }
+  // 舊存檔（B 波以前存的進行中 run 沒有 lot、形狀壞、不是這一輪的檔；ui.js loadSave 呼叫）：同種子重抽這一輪的檔（每次載入一樣），
+  //   這一位架上的 run.shop.bins 原樣不動；每箱＝這一位架上現有的排最前＋檔裡的、游標指在它們後面 → 下一位接著上不在這一位架上的（定稿 B3）。
+  //   架上已經擺的不算這一檔的名額：抽檔時先扣掉它們（drawLot skip），配額全給沒擺過的——舊 restock 一箱 4–6 張、第 1 輪的策展池一箱只有 11–24 張，
+  //   照「front＋檔裡扣掉 front、切到配額」的話下一位常繞回來重上。lot 關＝不做。回 true＝有改
+  function fixLot(run, content) {
+    const SH = run && run.shop;
+    if (!lotCfg(content).on || !SH || !SH.bins || typeof SH.bins !== 'object' || !Array.isArray(run.bag)) return false;
+    if (lotOk(run, content)) {
+      let ch = false;
+      for (const f of ['want', 'told']) if (!Array.isArray(SH.lot[f]) || !SH.lot[f].every(x => typeof x === 'string')) { SH.lot[f] = []; ch = true; }
+      return ch;
+    }
+    const fronts = {}, onShelf = [];
+    for (const k of shopKeysOf(content)) { fronts[k] = uniq(Array.isArray(SH.bins[k]) ? SH.bins[k].filter(x => typeof x === 'string' && !onShelf.includes(x)) : []); onShelf.push(...fronts[k]); }
+    const lot = drawLot(run, content, null, onShelf);
+    for (const k of Object.keys(lot.bins)) {
+      const list = fronts[k].concat(lot.bins[k]), n = list.length;
+      lot.bins[k] = list; lot.cur[k] = n ? fronts[k].length % n : 0;
+    }
+    SH.lot = lot;
+    return true;
+  }
+  // 這一檔這一箱還沒賣掉的張數（不算包包裡的、買走的、收音機這輪抽到的；含現在架上的）。沒有檔＝0（畫面照 content.lot.on 選字）
+  function lotLeft(run, key) {
+    const SH = run && run.shop, L = SH && SH.lot;
+    if (!L || !L.bins || !Array.isArray(L.bins[key])) return 0;
+    const bag = new Set(run.bag || []), gone = new Set(Array.isArray(L.gone) ? L.gone : []), rid = SH.radio && SH.radio.id;
+    return L.bins[key].filter(id => !bag.has(id) && !gone.has(id) && id !== rid).length;
+  }
+  // 想要清單快照：字串、去重（留第一次出現的位置）、留最後 200 張
+  function wantOf(w) { return Array.isArray(w) ? uniq(w.filter(x => typeof x === 'string')).slice(-200) : []; }
+
+  // ---------- 存檔換 id（第 B 波 SPEC-B §2.2；純函式，ui.js migrateIds 挑欄位後呼叫）----------
+  //   mapIds(v, map, merge?)：深走訪 v（陣列逐個、物件的鍵與值都換），「整個字串剛好是 map 的鍵、而且不含 |」才換成 map[字串]；其他原樣。
+  //   物件的鍵換完撞在一起（同一張的舊、新鍵都在）→ merge(先寫進去的, 這一個, 鍵)；沒給 merge＝後蓋前。回新的值（不改傳進來的）；跑兩次結果一樣
+  function mapIds(v, map, merge) {
+    const own = Object.prototype.hasOwnProperty, M = map && typeof map === 'object' ? map : {};
+    const m = x => (typeof x === 'string' && x.indexOf('|') < 0 && own.call(M, x) && typeof M[x] === 'string') ? M[x] : x;
+    const put = (o, k, x) => { if (k === '__proto__') Object.defineProperty(o, k, { value: x, enumerable: true, writable: true, configurable: true }); else o[k] = x; };
+    function walk(x) {
+      if (Array.isArray(x)) return x.map(walk);
+      if (x && typeof x === 'object') {
+        const o = {};
+        for (const k of Object.keys(x)) { const nk = m(k), w = walk(x[k]); put(o, nk, own.call(o, nk) ? (typeof merge === 'function' ? merge(o[nk], w, nk) : w) : w); }
+        return o;
+      }
+      return m(x);
+    }
+    return walk(v);
+  }
+
+  // ---------- 今日推薦集點卡（第 B 波 SPEC-B §4.3、§4.5；純函式，不碰 run／存檔，ui.js 呼叫）----------
+  const idCmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
+  const aceIdsOf = content => new Set(Object.values((content && content.aces) || {}));
+  // known／owned 的三種形狀：函式 id→bool、陣列、{id: 值}（known：有這格就算；owned：照 ownedFn，值是物件看 .own）
+  function knownFn(x) {
+    if (typeof x === 'function') return x;
+    if (Array.isArray(x)) { const s = new Set(x); return id => s.has(id); }
+    if (x && typeof x === 'object') return id => Object.prototype.hasOwnProperty.call(x, id) && !!x[id];
+    return () => false;
+  }
+  // dailyPick(content, {day, known, owned, want, tunes}) -> id | null
+  //   候選：非頂點、不在特價箱（新舊）、不是王牌、沒認識過（想要清單裡、還沒擁有的例外）。權重：想要清單 ×5、頻率在 tunes（最多 2 格）×3（兩個都中＝×15）、其他 ×1。
+  //   挑法：每張 k＝hash01('daily#'+day+'#'+id)^(1/w)，取 k 最大的（Efraimidis–Spirakis；同分 id 小的）→ 同一天同一份唱片櫃＝同一張
+  function dailyPick(content, o) {
+    o = o || {};
+    const cards = (content && content.cards) || {}, day = String(o.day || ''), known = knownFn(o.known), owned = ownedFn(o.owned);
+    const want = new Set(Array.isArray(o.want) ? o.want : []), tunes = Array.isArray(o.tunes) ? o.tunes.slice(0, 2) : [];
+    const bset = new Set(bargainIds(content)), aces = aceIdsOf(content);
+    let best = null, bk = -1;
+    for (const id of Object.keys(cards).sort()) {
+      const c = cards[id];
+      if (!c || c.tier || bset.has(id) || aces.has(id) || owned(id)) continue;
+      const w0 = want.has(id);
+      if (!w0 && known(id)) continue;                        // 認識過的不推；想要清單裡（還沒擁有）的照推
+      const w = (w0 ? 5 : 1) * (c.tune != null && tunes.includes(c.tune) ? 3 : 1);
+      const k = Math.pow(hash01('daily#' + day + '#' + id), 1 / w);
+      if (k > bk) { bk = k; best = id; }
+    }
+    return best;
+  }
+  // dailyReward(content, {n, owned}) -> [ids]（最多 3 張）：集點卡第 n 次換獎勵的三選一。史詩（驗收：傳奇帶上場太好打、店裡不收＝主線 M2，
+  //   換來的會當種子帶上場，所以不給傳奇）、非頂點、不在特價箱、不是王牌、沒擁有；
+  //   經／冷／硬（topAttr）各一張，每色取 hash01('dailyReward#'+n+'#'+id) 最小的；某色沒有就從其他色剩下的照同一個雜湊補。跟日期無關（不能靠重開洗）
+  function dailyReward(content, o) {
+    o = o || {};
+    const cards = (content && content.cards) || {}, n = o.n | 0, owned = ownedFn(o.owned);
+    const bset = new Set(bargainIds(content)), aces = aceIdsOf(content);
+    const pool = [];
+    for (const id of Object.keys(cards)) {
+      const c = cards[id];
+      if (!c || c.tier || bset.has(id) || aces.has(id) || rarity(c) !== 'epic' || owned(id)) continue;
+      pool.push({ id, a: topAttr(c), h: hash01('dailyReward#' + n + '#' + id) });
+    }
+    pool.sort((x, y) => x.h - y.h || idCmp(x.id, y.id));
+    const out = [];
+    for (const a of ATTRS) { const x = pool.find(p => p.a === a); if (x) out.push(x.id); }
+    for (const x of pool) { if (out.length >= 3) break; if (!out.includes(x.id)) out.push(x.id); }
+    return out.slice(0, 3);
   }
   // 舊存檔的貨對不上現在的箱子（v5 店面改版：改版前存的 run 有 pop、沒有 citypop／indierock／indiepop → 點了說「賣完了」）：
   //   載入時（ui.js loadSave 的 validRun 之後）只補缺的區、丟掉 content.bins 已經沒有（或只展示）的區；其他區原樣不動（這一輪可能已經買走幾張）。
@@ -1441,7 +1824,7 @@
     const bag = Array.isArray(run.bag) ? run.bag : [];
     let fresh = {};
     if (miss.length) {
-      const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: bag.slice(), relics: (run.relics || []).slice() };
+      const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: bag.slice(), relics: (run.relics || []).slice(), want: [] };
       fresh = restock(tmp, content).bins;
     }
     const have = new Set(keys.filter(k => !miss.includes(k)).flatMap(k => SH.bins[k]));
@@ -1460,7 +1843,7 @@
     if (!SH || !Array.isArray(SH.bargain) || !Array.isArray(run.bag) || !canBargainPick(run)) return false;
     const pool = ((content && content.bargain) || {}).pool || [];
     if (SH.bargain.every(id => pool.includes(id))) return false;
-    const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: run.bag.slice(), relics: (run.relics || []).slice() };
+    const tmp = { seedKey: run.seedKey, runNo: run.runNo, round: run.round, ace: run.ace, bag: run.bag.slice(), relics: (run.relics || []).slice(), want: [] };
     SH.bargain = restock(tmp, content).bargain.slice();
     return true;
   }
@@ -1479,7 +1862,39 @@
   //   主屬性（第 A 波 6）：mainAt（這一輪三色都有）→ trialDeck 照它組牌；第 run.mainFrom 位以前不帶（fixMain：升版前那一輪照舊牌組）；稱號：guestTitle（藏家、跟名字一樣＝null）
   function guestDef(run, content, id, pos) {
     const main = pos >= (run.mainFrom || 1) ? mainAt(run, content, pos) : null;
-    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, main });
+    const rd = run.retryDeck, deckIds = rd && rd.pos === pos && rd.id === id && Array.isArray(rd.ids) ? rd.ids : null;   // 升版前的舊 run（pinOldDeck）
+    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, main, deckIds });
+  }
+  // 第 B 波升版（存檔 v4–6 → v7）：卡池從舊 323 張變 5,000 張、id 換成 catalogId，同一位重組會換牌。停在「待說情」或「打到一半的對決」的舊 run，
+  //   說情重打要拿到原本那副牌（45 行「同一位、同一副牌」）→ 載入時（ui.js loadSave，換完 id 之後）用「只有舊卡、鍵改回舊 slug」的 content 視圖
+  //   跑一次 guestDef，把選出的牌單（catalogId）釘在 run.retryDeck {pos, id, ids}；guestDef 同一位、同一人就照它（加星、王牌照舊算）；advance／jumpTo 換位就拿掉
+  //   legacyView(content, L)：L＝{舊 slug: catalogId}（C.legacyIds()）。oldDeckIds(run, content, L, id, pos) -> [catalogId] | null（舊碼的 guestDef 會選出的牌）
+  function legacyView(content, L) {
+    const rev = {}; for (const k of Object.keys(L)) if (typeof L[k] === 'string') rev[L[k]] = k;
+    const back = id => (typeof id === 'string' && Object.prototype.hasOwnProperty.call(rev, id)) ? rev[id] : id;
+    const cards = {}, enemies = {}, aces = {};
+    for (const k of Object.keys(L)) { const c = content.cards && content.cards[L[k]]; if (c) cards[k] = Object.assign({}, c, { id: k }); }
+    for (const k of Object.keys(content.enemies || {})) { const E = content.enemies[k]; enemies[k] = Object.assign({}, E, { deck: (E.deck || []).map(back) }); }
+    for (const t of Object.keys(content.aces || {})) aces[t] = back(content.aces[t]);
+    return { V: Object.assign({}, content, { cards, enemies, aces }), back };
+  }
+  function oldDeckIds(run, content, L, id, pos) {
+    if (!run || !L || typeof L !== 'object' || !content || !content.enemies || !content.enemies[id]) return null;
+    try {
+      const { V, back } = legacyView(content, L);
+      const r = Object.assign({}, run, { bossCard: back(run.bossCard), retryDeck: null });
+      const ids = guestDef(r, V, id, pos).deck.map(c => (Object.prototype.hasOwnProperty.call(L, c.id) ? L[c.id] : c.id));
+      return ids.length && ids.every(x => content.cards[x] && !content.cards[x].tier) ? ids : null;
+    } catch (_) { return null; }
+  }
+  function pinOldDeck(run, content, L) {
+    if (!run || typeof run !== 'object' || run.prologue === 'pending' || !Number.isInteger(run.pos) || run.pos < 1) return false;
+    const p = run.pending;
+    const id = run.duel ? (run.duelEnemy || (run.duel.e && run.duel.e.id)) : (p && p.type === 'retry' && p.pos != null ? p.enemyId : null);
+    const ids = id ? oldDeckIds(run, content, L, id, run.pos) : null;
+    if (!ids) return false;
+    run.retryDeck = { pos: run.pos, id, ids };
+    return true;
   }
   // 主屬性以前（v72／v75 上線版）存的進行中 run 沒有 run.mainFrom（合併審查 11-16）：guestDef 一律帶主屬性的話 trialDeck 會照主屬性重組牌組，
   //   輸了說情重打就不是同一副牌（fixUnlock 只保住藏家那張王牌，其他 6 張照樣換）。載入時（ui.js loadSave）補上：
@@ -1612,6 +2027,7 @@
   function advance(run, p, content) {
     run.pending = null;
     if (p && p.prologue) return;
+    delete run.retryDeck;
     run.pos++;
     if (isCheckpoint(run.pos, content) && !run.checkpoints.includes(run.pos)) run.checkpoints.push(run.pos);
     run.idx = (run.pos - 1) % PER_ROUND;
@@ -1622,12 +2038,15 @@
       run.retryLeft = trialCfg(content, run.tier).retry;
       if (run.unlock) run.bossCard = bossCardFor(run, content);   // 解鎖制：新一輪的藏家帶哪張（上一輪收到的已經算進 run.acesWon）
       restock(run, content);
+    } else if (run.shop && lotCfg(content).on) {               // 一檔貨：每位客人之間從這一檔換下一批上架（沒有檔／不是這一輪的＝先 fixLot）
+      if (!lotOk(run, content)) fixLot(run, content);
+      shelve(run, content);
     }
   }
   // ?debug=1 的 __lab：直接跳到第 n 位（序章算完成、特價箱算挑過；聲望、等級不動；不記中繼點＝不是走到的）
   function jumpTo(run, content, pos) {
     pos = Math.max(1, pos | 0);
-    run.duel = null; run.duelEnemy = null; run.pending = null; run.over = null;
+    run.duel = null; run.duelEnemy = null; run.pending = null; run.over = null; delete run.retryDeck;
     if (run.prologue === 'pending') run.prologue = 'done';
     if (run.shop) run.shop.bargainPicked = true;
     run.pos = pos; run.round = roundOf(pos); run.idx = (pos - 1) % PER_ROUND;
@@ -1636,6 +2055,7 @@
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp;
     if (run.unlock) run.bossCard = bossCardFor(run, content);
     restock(run, content);
+    if (run.shop && run.shop.lot) for (let i = 0; i < run.idx; i++) shelve(run, content);   // 一檔貨：沒買東西時＝正常走到這一位的架子
     return run;
   }
   // 這一輪 5 位（來客那排）：{id, pos, cls, hp, atk, def, hasAce, done, cur, title, main}
@@ -1704,7 +2124,16 @@
     if (!run || !tuneCells(content).includes(cell)) return [];
     const SH = shopOf(run), bag = new Set(run.bag || []);
     const shelf = new Set([].concat(...Object.values(SH.bins || {}).filter(Array.isArray), SH.bargain || [], bargainIds(content)));
-    return trialPool(content).filter(c => c.tune === cell && SHELF_RARITY.includes(rarity(c)) && !bag.has(c.id) && !shelf.has(c.id)).map(c => c.id);
+    return radioBase(content, cell).filter(c => !bag.has(c.id) && !shelf.has(c.id)).map(c => c.id);
+  }
+  // 這一格合規的池子（trialPool ∩ tune ∩ 普通／稀有／獨特，照 trialPool 順序）：快取在 poolInfo（WP2-0）；API._noCache 每次重篩
+  function radioBase(content, cell) {
+    const keep = c => c.tune === cell && SHELF_RARITY.includes(rarity(c));
+    if (API._noCache || !POOL_INFO) return trialPool(content).filter(keep);
+    const P = poolInfo(content), k = 'R' + cell;
+    let b = P.bk.get(k);
+    if (!b) { b = P.pool.filter(keep); P.bk.set(k, b); }
+    return b;
   }
   function canRadio(run) { return canShop(run) && !shopOf(run).radio; }
   function relicPrice(content, id) {
@@ -1933,6 +2362,7 @@
         if (sell) { run.bag.splice(run.bag.indexOf(sell), 1); run.money += earn; S.earned += earn; S.sold.push(sell); effects.push({ loseCard: sell, earn }); }
         run.money -= price; S.spent += price;
         run.bag.push(ch.cardId); stock.splice(stock.indexOf(ch.cardId), 1); S.bought.push(ch.cardId); run.taken++; enter(ch.cardId);
+        if (SH.lot && Array.isArray(SH.lot.gone) && !SH.lot.gone.includes(ch.cardId)) SH.lot.gone.push(ch.cardId);   // 一檔貨：架上買走的這一檔不再上架（D10）
         effects.push({ gainCard: ch.cardId, spend: price });
         return { ok: true, effects };
       }
@@ -2343,18 +2773,21 @@
   }
   const policies = policyFns;
 
-  return { VERSION, RUN_V, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, TRIAL,
+  const API = { VERSION, RUN_V, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, TRIAL,
     RARITY, FEATURE_RARITY, SHELF_RARITY, SHOP_ORDER,
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, mercyPAt, titleAt, guestTitle, roundMains, mainAt, guestDef, sellQuote, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, fixMain, jumpTo, half, hintTableOf,
+    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, mercyPAt, titleAt, guestTitle, roundMains, mainAt, guestDef, legacyView, oldDeckIds, pinOldDeck, sellQuote, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, fixMain, jumpTo, half, hintTableOf,
     relOf, streakOf, guestDist, hintTableFor,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
+    LOT, lotCfg, lotQuota, lotWarn, stockBins, drawLot, shelve, lotOk, fixLot, lotLeft, mapIds, dailyPick, dailyReward,
     bagCap, bagLimited, bagFull, bagScore, bagGain, topAxes, bargainLane,
     runPolicy, shopPolicy, thinPolicy, bargainPolicy, policies,
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce,
     TIER_BEATS, unlockChain, tierOfApex, apexCards, unlockedTiers, ownedApex, nextUnlock, unlockMigrate, unlockTiersOf, ownedApexOf, aceChoices, bossCardFor, fixUnlock,
     APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex };
+  API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
+  return API;
 });

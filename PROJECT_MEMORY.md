@@ -9,6 +9,36 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-027/028.json,review-sd-027/028.json}`、`desc-tools/batches/{cards,research,output}/sd-027*、sd-028*`、onboarding manifest 57 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s17：sd-029、sd-030 上線（59 張，留置 1）
+
+- **結果**：sd-029 上線 30（Chris & Cosey、Brotherhood of Breath、Chucho Valdés、Clock DVA、Company、Schnitzler、Crow、Eraserhead 等，無留置）；sd-030 上線 29（Oistrakh、Deafheaven、DEATH SIDE、Dexter Gordon、Dick Gaughan、Die Ärzte、Django、Shostakovich 自奏、Dominique A、Grolnick 等）。**留置 1**：delayde《finding solitude》查無任何專輯層級資料，KV 保留舊稿。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 59/59 新稿，「待店主處理」無新增。
+- **主線補查**：sd-029 補 7 張（Heartbeat、Willisau、Crow、Datblygu、Rot、Company 1、Ché-SHIZU）；sd-030 補 6 張（DEATH SIDE、Don Carlos、DJ Deeon、Gaughan、Reeves、Reece）。審稿 sd-029 改 10 處、sd-030 改 9 處（多為鉤子誇大出處：「常被誤聽」「一向不碰歌手」「從這張開始」），逐條在 `rulings.md`。WebSearch 工作階段約 95 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-029/030.json,review-sd-029/030.json,held-sd-030.json}`、`desc-tools/batches/{cards,research,output}/sd-029*、sd-030*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 59 鍵逐字回讀 59/59；`front-check` 前台 59/59 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆以《盤名》起句。
+
+### 2026-11-17｜dip-vinyl-shop｜game-lab 第 B 波：精選 5,000 張進遊戲＋卡片 id 改主站 catalogId、一檔貨、今日推薦集點卡、想要清單加權
+
+- **店主 11-16**：「全卡池……可以先精選五千張」「每回合架上可購買的唱片更換一次，但固定一大批……打完傳說藏家後這一大批再更換成新的一批」「每日上線可收到推薦新專輯，蒐集一週給獎勵」。名單 scratchpad `v5/pool5k/`（抽樣頁 artifact NGyuw7362XNGRdt2dbPbZB），規格 `v5/wave-b/SPEC-B.md`、裁定 `v5/wave-b/rulings.md`。
+- **卡池＋id**：遊戲卡 5,045 張＝核心 368（`cards.js`，同步）＋精選新卡 4,677（`cards-pool.js` 照欄存邏輯＋名字，同步；封面試聽 `cards-media.json` 延後 fetch）。卡片 id 直接改主站 catalogId（不留別名）；`content.js` 展開成新的 `C.cards`（`require('./cards.js')` 仍 368）。bake-cards 補 Apple `bf` 規則、`--pool-only`、`LINK_OVERRIDES` 改 catalogId 鍵（含 #467 修正）。組牌快取（WP2-0）：5,045 張下 sim 不變慢、結果逐字相同。
+- **存檔**：SAVE_V 6→7；`mapIds` 深走訪整份存檔（含進行中 run、打到一半的對決、lastFight）把舊 slug 換 catalogId；`bak6` 備份；遷移失敗／卡池沒載到／存檔太新＝整份唯讀但保留人物與序章。舊 run 停在待說情時 `pinOldDeck` 把舊卡池那副牌釘住（說情重打同一副）。
+- **一檔貨**：`run.shop.lot` 每輪抽一檔 100 張（第 1 輪策展池、第 2 輪起全卡池），每位客人之間每箱換一排（每位 47 張），打完藏家整檔換新；買走的不再上架；特價箱、配件照舊每輪（亂數位置不變）。
+- **今日推薦集點卡**：獨立鍵 `dipGameLab_v1.daily`；本地日期往前才發；挑沒認識過的（想要清單 ×5、常擁有頻率 ×3），在試聽機收下＝擁有、蓋一格；滿 7 格三選一換一張**史詩**。
+- **想要清單**：抽檔時每張想要的卡擲 35%（每檔重洗順序、一檔最多 3 張），上架標「你想要的」。
+- **主站**：`pool-index.json` v2（fnv1a32 雜湊、扣王牌／頂點／傳奇 4,875 張），主站 `index.html` 兩種形狀都吃；`?card=` 帶 catalogId（特殊字元 encode）、舊 slug 照表換；**遊戲不收傳奇種子**（主線 M2）。
+- **主線裁定**：首屏 gzip 門檻 740→800 KB（併 #480、#491 後 785.5 KB）；sim T3 改 n≥4000 硬判（n1000 抽樣誤差 ±0.14）；讀牌曲線維持 #480 原值；唱片櫃分批畫（3,000 張開頁 2.6 s→0.2 s）。
+- **流程**：pool5k 名單 → 設計（盤點→規格→挑錯→定稿）→ 施工（閘門 0、WP1 資料、WP2-0 快取、WP2 引擎、WP3 介面∥WP4 模擬）→ 驗收（WP5 e2e-pool、WP6 主站、三角度審查確認 12 項全修）→ 併 #480／#467（解 8 檔衝突、審查確認 2 項）→ 併 #491（4 檔衝突）。
+- **模擬（併 #480 後 n1000）**：22/22＋T3 參考 1.92±0.14（n4000 2.19）；新手第 1–3 位死 12.8%、到第 10 位 28.6%；一般玩家中位 27；會讀的到第 50 位 15.9%。
+- **主要檔案**：`game-lab/{cards.js,cards-pool.js,cards-media.json,bins.js,content.js,engine.js,ui.js,econ.js,econ.css,style.css,shop.js,duel.js,sim.mjs,pool-index.json,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{bake-cards,build-pool-index,check-content,check-covers,check-shops,lint-copy,make-pool-list,migrate-ids}.mjs`、`game-lab/tools/{pool-list,legacy-ids}.json`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-pool,e2e-lib,e2e.spec,e2e-econ,e2e-taps,e2e-unlock}.mjs`、主站 `index.html`。`?v=81`。
+- **驗證**：check-content（5,045 張）／check-covers／check-shops／build-pool-index --check／lint-copy；併 #491 後 engine 2,897,590、tutorial 505,169 全過；併 #491 後 e2e（390、375）recap 25、pool 84、duel 121、unlock 12、apex 37、econ 54、room 21、taps 14、prologue 52，e2e.spec 390 50/50。**沒驗**：真 iPhone、正式站 CDN 壓縮後的首屏時間。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s14：sd-023、sd-024、sd-hold-4 上線（61 張，續留置 1）
+
+- **結果**：sd-023 上線 30（寶萊塢、Monk、伊朗／哥倫比亞／緬甸合輯、Youth of Today、Артемьев、015B 等）；sd-024 上線 30（2NE1、808 State、Ain Soph、Air、Golha、Alva Noto、Amália 等）；sd-hold-4 救回黑豹樂隊《無是無非》（〈放心走吧〉紀念張炬＋豆瓣樂評聲音描述），張露《繁星點點》身分不穩續留置。非 CJK 卡 front-check 全對上，CURATED 0，無待店主處理。
+- **主線補查**：Zabriskie Point、-M-、Triana、AgonyOST、Aguaviva、El Topo 等；審稿 sd-023 改 31 處、sd-024 改 29 處（版本雜項鉤子兩張改寫、第二句補盤名、單一出處去「常被」、刪再發／銷量／傳聞），逐條在 `rulings.md`。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json（加 sd-hold-4）,kv-before-sd-023/024/hold-4.json,review-sd-023/024.json,held-sd-hold-4.json}`、`desc-tools/batches/{cards,research,output}/sd-023*、sd-024*、sd-hold-4*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；KV 62 鍵逐字回讀全數一致；`front-check` 前台 61/61 新稿；QA 無軌序／曲長／盤號，鉤子加權 ≤50、前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 上一手細節：揭曉後停住等點、上一手詳情、這場紀錄
 
 - **店主 11-17**：「我覺得上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了，怎麼辦。」（現況實測：結果框只停約 1.1 秒、「上一手」那行再 0.6 秒，輪到你出牌時整句不見，只剩小列兩張小封面。）
