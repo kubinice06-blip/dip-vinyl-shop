@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s5：sd-009、sd-010 上線＋sd-001～008 留置卡重查（sd-hold-1）
+
+- **結果**：**sd-009 上線 29、sd-010 上線 28；留置重查 13 張全數救回上線**（sd-001～008 留置清空）。本批新留置 3 張：蕭福德《春秋大夢》、陳小霞《化妝師》、零與聲音解放組織《哦！你宛若盛開的花朵的甜美屍體》（補查後仍無專輯層級資料，KV 保留舊稿）。
+- **研究補強落實**：研究層照新版必查清單；主線對 thin 卡再補查（WebSearch 約 38 次）。留置 13 張研究層只救回 4，主線補查救回其餘 9——多半是沒讀到已知的商品頁與報導（博客來文案、Blow 專訪、廠牌官網 .co.jp、新浪 2003 訪談），細節在 rulings「sd-hold-1」表。
+- **審稿**：sd-009 改 12、sd-010 改 15、sd-hold-1 改 5 處（多為再版／合輯／翻唱雜項與單一來源的「常被」；青木孝允《Silicom Two》刪掉從後作反推的聲音描述）。
+- **工具**：`tools/sd.mjs`、`front-check.mjs` 略過寫作層回報的 hold 列，空稿不會進 KV。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,review-sd-0{09,10}.json,review-sd-hold-1.json,kv-before-sd-{009,010,hold-1}.json,tools/}`、`desc-tools/batches/{cards,research,output}/sd-{009,010,hold-1}*`、onboarding manifest 70 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2＋desc4 共 140 鍵 bulk put，回讀 58/58、56/56、26/26 一致；`front-check` 前台 29/29、28/28、13/13 新稿，無 CURATED 蓋住；sd.mjs qa 旗標皆為原文標題。WebSearch 本工作階段約 160 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s7：sd-013、sd-014 上線（56 張，留置 4）
 
 - **結果**：sd-013 上線 27（留置山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》）；sd-014 上線 29（留置丘蒸汽《のすたるじあ》）。
