@@ -35,6 +35,11 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 - 工具可沿用 `batch-progress/apex-desc-20261104/tools/`（`ad.mjs cards|before|bulk|manifest`、`apply-review.mjs`、`front-check.mjs`、`check-curated.mjs`），複製到本目錄 `tools/` 改批名與路徑後用。
   **非 CJK 卡注意 worker 的 CURATED_DESCS 會蓋過 desc2**（apex 線《Kind of Blue》前例）——`front-check` 對不上的列進「待店主處理」。
 
+## 2026-11-17 研究補強（店主指正《驚蟄》）
+
+店主：「驚蟄這張專輯故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」sd-006 研究層對《驚蟄》只搜 3 次就標 sound thin，靠主線補商品頁才勉強成稿；協調端再搜兩次就找到公視與人間福報的 2005 坎城報導（唯一受邀的亞洲音樂人、故宮數位影像、媽祖繞境鞭炮與電視雜訊取樣），已重寫上線（`kv-before-jingzhe-fix.json`）。
+**之後每批照新版 `prompt-research.md`「判 thin／none 之前必查清單」做**：母語報導搜尋、通路商品頁（WebFetch 不吃額度）、維基年表、英文樂評與 Discogs notes，逐項寫進 notes 才准標 thin；研究稿 story／sound 標 thin 的卡，主線一律再補查一次。
+
 ## 工作階段分配
 
 - 第一個工作階段：第 0 步＋sd-001、sd-002。

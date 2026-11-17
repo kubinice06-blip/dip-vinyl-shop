@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜林強《驚蟄》簡介補修＋嚴重稿重寫線研究補強
+
+- **店主**：「驚蟄這張專輯故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」sd-006 研究層對這張只搜 3 次就把聲音標 thin。協調端兩次搜尋找到公視與人間福報的 2005 坎城報導（唯一受邀亞洲音樂人、故宮數位影像、媽祖繞境鞭炮與電視雜訊入樂、同名曲為坎城而寫），重寫 237 字上線。
+- **研究補強**：`desc-tools/prompts/general-desc-base.md` 與 `batch-progress/desc-severe-20261117/prompt-research.md` 加「判 thin／none 之前必查清單」（母語報導搜尋、通路商品頁 WebFetch、維基年表、英文樂評與 Discogs notes，逐項寫進 notes）；主線對 thin 卡一律再補查。PLAN 加註，下一輪起生效。
+- **主要檔案**：上列兩檔、PLAN.md、rulings.md、`kv-before-jingzhe-fix.json`、`desc-tools/batches/{research/sd-006-a.json,output/sd-006-out-1.json}`、`onboarding-manifest-c89-20260910.json`。
+- **驗證**：KV desc2／desc4 逐字回讀一致；worker `/album-desc` 回新稿；fix-spacing 0、無半形標點、237 字。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s2：sd-003、sd-004 上線（58 張，留置 2）
 
 - **範圍**：`batch-progress/desc-severe-20261117/PLAN.md` 的 sd-003（Stravinsky 自指、Leo王、伍佰 11 張、P.K.14、No Brain…）與 sd-004（山下洋輔 5 張、川井憲次、平沢進、張國榮、張學友、張惠妹…）。

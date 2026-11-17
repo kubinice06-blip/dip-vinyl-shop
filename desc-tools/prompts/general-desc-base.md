@@ -34,6 +34,8 @@
 - 母語來源優先：台灣唱片找台灣樂評與訪談，日本唱片找日文。
 - 每張 WebSearch 最多 3 次（整個工作階段共用 200 次）；先 WebFetch 已知頁面。UA 不得含 email，一律 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 - 查不到樂評的冷門盤：用廠牌介紹、唱片行介紹（Bandcamp、Newtone 等）、藝人自述、收藏圈討論；地位照實寫（私壓、地方發行、後來誰重發）。**真的只查得到曲目表的，標 `coverage: thin`，寫作層薄寫，不拿雜項湊。**
+- **判 thin／none 之前必查清單**（2026-11-17 店主：「《驚蟄》故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」）：母語「藝人＋盤名＋報導／訪談」搜尋、唱片行與通路商品頁（博客來、佳佳、五大、誠品、Tower、HMV、disk union、Bandcamp、廠牌與再發行廠介紹，WebFetch 不吃搜尋額度）、藝人維基與年表該年段落、英文樂評與 Discogs release notes。每項都試過並在 notes 逐項寫結果，才准標 thin。
+- **主線**：研究稿 story 或 sound 標 thin／none 的卡，主線自己再做一次 extended 搜尋或補查商品頁，查到就補 facts（標【主線補查】），查不到才留置或薄寫。
 - 輸出每張：`key`、`artist`、`album`、`facts`（`{text, src, block}`，block 為 what／story／sound／after）、`coverage`（三塊各 ok／thin／none）、`notes`（舊簡介錯的地方、可疑處）。
 
 ## 三、寫作層
