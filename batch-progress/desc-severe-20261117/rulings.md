@@ -1218,3 +1218,25 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-034.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-033 53、sd-034 44，主線 14）。
+
+## sd-045（30 張，經典度≥4：Paul Jackson、Paul Roland、Paulinho da Viola、Peer Raben、Pete Seeger、Peter Bellamy、Peter Broggs、Peter Evans、Peter Kowald、Petrus Castrus、Phil Keaggy、Phil Pratt、Phil Ranelin、Photon Inc.、Piano Magic、Pierre Henry 2、Pino Daniele、Plaid、PNL、Polaris、Portion Control、Psyche \ BFC、Purple Image、Purrkur Pillnikk、Pussy、Pērkons、Quadra、Quarteto 1111、Quartetto Italiano）— s25
+
+- 研究：3 支 Sonnet，WebSearch 15＋10＋15＝40 次；無 none。前台預查 60 張（sd-045／046）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+- **主線補查**（WebSearch 約 11 次＋WebFetch，facts 標【主線補查】）：Plaid（Gridface 1999 樂評：嘻哈鼓點＋甜美旋律、刷碟、交響鋪陳；Pitchfork 8.4）；Peer Raben（Moreau 唱 Wilde 詩句、Ambach 共同作曲）；Peter Broggs（King Tubby's、Scientist、Roots Radics、Bingy Bunny 製作）→ story ok；Kowald（Artcore Studio、23 段、Penguin Crown、Müller 內頁文）；Photon Inc.（Wild Pitch 倒刮取樣、Paula Brion）→ sound ok；Portion Control（In Phaze 發行非 Illuminated、TB-303／TR-606、Dark Entries 重發評語）；Psyche \ BFC（Planet E、Techno 2 合輯、Juno 評）；Petrus Castrus（Castro 兄弟、政治歌詞）。Phil Pratt、Henry《Le Voyage》、Quadra、Quartetto Italiano 聲音補查無新料，照研究稿薄寫。
+- 身分／事實裁定：Henry 兩張首演時地互歧，皆不寫；Pino Daniele 不寫廣場人數；Pete Seeger 寫成系列第一卷；Broggs 不寫原發行廠牌；Paul Jackson 不寫移居日本年份；Purple Image 不寫榜位與暖場；Quadra 不寫 Frogman 由來；Quartetto Italiano 寫 Philips 錄音。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-045.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Peer Raben | 「他在片子首映前兩個月過世」→「Fassbinder 在首映前兩個月過世」；「水手港口」→「港口」 | 指涉不清；字數 |
+| Quadra | 刪正文重複的「學低音提琴」 | 與鉤子重複 |
+| Quartetto Italiano | 鉤子「舒伯特最後一首弦樂四重奏」→「常被學者視為舒伯特最好的四重奏」 | 「最後一首」不在研究稿 |
+| Peter Bellamy | 第二句補《Oak, Ash & Thorn》；刪「他坦言有些是有意的仿作」 | 第二句交代盤名；字數 |
+
+其餘逐張四問無改：逐條對過研究稿（Tagesspiegel「芭蕾音樂」、Kowald 五十歲「家中一年」、Pratt 為音響系統做的純 dub、Portion Control 早於 acid house 用 303、Psyche 的「第二波起點」與 Fact ambient 榜、Pussy 午夜時段錄音、Quarteto 1111 一週下架與蛋盒車庫、Purrkur 六十三場與 The Fall 暖場、Polaris 被視為 Fishmans 精神續作皆有出處）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-045.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 29 處。
