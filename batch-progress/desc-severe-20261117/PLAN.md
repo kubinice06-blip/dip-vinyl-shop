@@ -147,8 +147,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | | |
 | sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | | |
 | sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | | |
-| sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |
-| sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | | |
+| sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Christmas、Lacrimosa、Hays 2 等；CURATED 0） |
+| sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Lauge、Ritenour、Life's Blood、Linval Thompson 等；respect.her 薄寫；CURATED 0） |
 | sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
 | sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
 | sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |

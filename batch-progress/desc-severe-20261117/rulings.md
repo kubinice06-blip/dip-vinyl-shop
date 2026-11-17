@@ -2002,3 +2002,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-076.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 27 處。
+
+## sd-077（30 張，其餘：Laserdance、Late!、Lauge 3、Lavarr the Starr、Lee Konitz、Lee Morgan 9、Lee Ritenour、Lee Scott 2、Leila Forouhar、Leroy Smart、Les Ambassadeurs、less.people 2、Lew Soloff、Life's Blood、Light、Linda Smith、Lindsheaven Virtual Plaza、Linval Thompson）— s41
+
+- 研究：3 支 Sonnet，WebSearch 13＋11＋16＝40 次；none 只有 less.people《respect.her》story／sound。母語來源：Leila Forouhar 波斯文維基（廠牌採 Pars Video、不採英維基 Caltex）、Les Ambassadeurs 法文（musiques-afrique.net、Sofa Records）。
+- **主線補查**（WebSearch 約 11 次＋WebFetch，facts 標【主線補查】）：Lauge《Echoes》（Sonic Immersion：自然題材、海洋／冰原／森林環境錄音、八首連續混音）→ story／sound 升 ok；《Nothingness》（Bandcamp：Valley View、限量 CD、drone／sleep 標籤）；Lee Ritenour《Friendship》（sessiondays：JVC 直刻三部曲之一、每面連續演奏，錄音室兩說不寫）→ story ok；Lee Morgan《Dizzy Atmosphere》（Fresh Sound：七重奏全抽自 Gillespie 1957 大樂隊）；Life's Blood（Nathanson 訪談：Don Fury 錄音、回到 1983–85 硬核）→ story ok；Linval Thompson（Apple Music 評介、Roots Archives：Channel One、Roots Radics、Soljie 混音）→ story／sound ok；less.people《respect.her》extended 搜尋只得 Apple Music 發行資料。Laserdance《Discovery Trip》、Lavarr the Starr、Light 補查無新料，照研究稿薄寫（delayde 前例）。
+- 事實裁定：Lavarr the Starr 寫成被指出是 Ishmael Butler 分身，不寫舊稿的簽約、結識經過與 Evan Flory-Barnes；Late! 不寫「Sorry, we're Late!」；Langbortistan 七首（舊稿五首、七首自相矛盾）；Lee Morgan 錄音日期各源不一者只寫年份，《Charisma》擱置原因只有單一樂評推測，寫「一說」；Rajah 寫「1966 年」不寫日；Lindsheaven 不寫「里約」、不寫 17 首；Lew Soloff 不寫 1966 年入 Evans 團與標題曲作者；Linval Thompson 混音是 Soljie，不寫 Scientist；Linda Smith 不寫 2024 重發混音者；Life's Blood 不寫吉他手 credit；Light 年份三說，只寫九〇年代中後期；Specialty「只做三張爵士」、Sixth Sense 暑期廣告、Lee Scott 單親與 DJ Sammy B-Side 等舊稿說法皆不寫。
+- **薄寫上線不留置**：less.people《respect.her》（206 字，寫發行與前後脈絡、不列曲數曲名）、Laserdance《Discovery Trip》、Lauge《Nothingness》、Lavarr the Starr、Light、Leila Forouhar（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-077.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lee Morgan《Dizzy Atmosphere》 | 「以福音與搖滾起家的 Specialty」→「以 R&B、福音與搖滾聞名的 Specialty」 | 研究稿只說以這些曲風聞名 |
+| Lee Morgan《Dizzy Atmosphere》 | 「低音薩克斯風」→「上低音薩克斯風」 | Billy Root 吹 baritone |
+| Lindsheaven《NTSC Memories》 | 鉤子由「過世那個月多倫多廠牌重發、收益歸家屬」改為舊電視氣象台與測試畫面的聲音概念；過世與重發收益移入正文、刪致敬合輯壓回 231 字 | 鉤子不得取重發（版本）事項 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Van Vliet 自述不彈合成器、Grohl 當 Nirvana 鼓手時一人錄完、Lauge 環境錄音與無拍 drone、Langbortistan 與 Ultimae／Iboga 並列、Lavarr 分身、Konitz／Haden 二重奏邀約變三重奏、!Caramba! 催眠 vamp、Delightfulee 大樂團錄音被扣、Peckin' Time 27 歲與 19 歲共同掛名、David Newman、Rajah 庫房近二十年、Sixth Sense 樂團縮編、Ritenour 直刻、Lee Scott 自述失去理智、Forouhar 1986 年離開伊朗、Mandjou 換來幾內亞國家勳章、Life's Blood 四個大一新生、Linda Smith 層層疊錄、Linval Thompson 挺女性立場）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。

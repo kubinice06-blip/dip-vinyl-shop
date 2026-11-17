@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s41：sd-076、sd-077 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-076 上線 30（Keith Christmas、Keith Mansfield 2、Kem、Ken McIntyre、Kenny Barron、Kenny Burrell 5、Kenny Werner、Kevin Hays 2、Knxwledge 2、Koi.、Konstruktivists、Kool & the Gang、菅野邦彦 2、Kyuss、Lacrimosa、Lady Pank、Ladysmith Black Mambazo、Lamb、Larry Heard、Larry Young 2、Laserdance）；sd-077 上線 30（Laserdance、Late!、Lauge 3、Lavarr the Starr、Lee Konitz、Lee Morgan 9、Lee Ritenour、Lee Scott 2、Leila Forouhar、Leroy Smart、Les Ambassadeurs、less.people 2、Lew Soloff、Life's Blood、Light、Linda Smith、Lindsheaven Virtual Plaza、Linval Thompson）。Kem、McIntyre、菅野邦彦 2、Laserdance 2、less.people《respect.her》、Lavarr、Light 等照 delayde 前例薄寫上線。
+- **主線補查**：Keith Christmas（The Rising Storm：本人不認首作）、Lacrimosa、Kevin Hays 2、Lauge《Echoes》《Nothingness》、Ritenour《Friendship》直刻、Dizzy Atmosphere、Life's Blood（Nathanson 訪談）、Linval Thompson（Apple Music 評介）。舊稿 Voices in Harmony 把 CCS〈Whole Lotta Love〉張冠李戴，已更正。審稿改 sd-076 4 處（鉤子無出處的「小場地」「出道六年」、Konstruktivists 鉤子不取版本）、sd-077 5 處（Specialty 措辭、上低音薩克斯風、Lindsheaven 鉤子不取重發）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-076.json,review-sd-077.json,kv-before-sd-076.json,kv-before-sd-077.json}`、`desc-tools/batches/{cards,research,output}/sd-07[67]*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s35：sd-064、sd-065 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-064 上線 30（Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Gillespie、Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Wilkerson、Donald Byrd 8、Doodle、Doris Norton）；sd-065 上線 30（Norwood、DOUBLE、Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Candles of Vision、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）。資料薄的照 delayde 前例薄寫上線。
