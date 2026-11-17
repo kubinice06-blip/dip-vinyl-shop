@@ -2026,3 +2026,96 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-071.json`；30 張 30 鍵（皆非 CJK，Hurd 為西里爾字母；原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 100 次（研究層 sd-070 52、sd-071 44，主線 4）。
+## sd-074（30 張，其餘：Jimmy Smith 7、jinsang 3、Joachim Kühn、Joe Chambers、Joe Lee Wilson、Joe Lovano 2、Joey Calderazzo 3、Jogging House 2、John Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）— s40
+
+- 研究：3 支 Sonnet，WebSearch 15＋15＋18＝48 次；無 none。AllMusic、Discogs 網頁、jazzmusicarchives 多 403；b 組用 DownBeat 1991–93 PDF 全文補 Calderazzo 樂評。
+- **主線補查**（WebSearch 1 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Jimmy Smith《The Master II》（大阪 Kirin Plaza 1993 聖誕現場、Burrell／Jimmie Smith、沖野修也內頁）、《Lonesome Road》（1957-11-20、McFadden／Bailey、Cuscuna 製作人筆記「1500 系列一百張裡十三張是他」）、《Straight Life》（1961-06-22 Van Gelder、Warren／Bailey）→ story 升 ok；Calderazzo 三張（Brecker 製作、DeJohnette 製作、改三重奏雙節奏組）→ story 升 ok；John Davis（Shrimper、FBE Studios 與家錄）→ story 升 ok。jinsang 三張、Jogging House《Softie》、Holt《My Desire》等只有藝人層級或 credits 資料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Joe Lee Wilson 寫 1975 年錄音、不寫廠牌（Bond Street 是場地）；Plain Talk 不寫發行年（1968／1969 兩說），寫「擱了八年」；Kühn 聲音段評語出自同批錄音的續集，寫成「這批獨奏」；Holt《A1 Disco Showcase》班底是 Sly & Robbie 一班人；〈Stick By Me〉寫 1972 年與 Bunny Lee；Carter／Bradford 不寫製作人；Jogging House 不寫 hip hop（卡單類型標錯，實為 ambient／downtempo）；Calderazzo《To Know One》〈Second Thoughts〉是 Holland 的曲。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 21 處，改動檔 `review-sd-074.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| jinsang《in flight》 | 鉤子「頁面上只寫了兩個英文字 we back.／300 張預購」→「帶著一捲以天氣與日常為題的 beat tape 回來」 | 頁面說明字數與預購張數是雜項 |
+| jinsang《confessions》 | 刪「頁面沒有任何說明」「聽眾多半拿它來放鬆」，改寫聲音 | 雜項＋留言非樂評 |
+| Jimmy Smith《The Master II》 | 「以〈Stormy Monday〉收場」→「也有」 | 軌序 |
+| Lovano Nonet | 「開場曲」→〈At the Vanguard〉；鉤子拆句（加權 51） | 軌序；鉤子超長 |
+| Calderazzo《To Know One》 | 「最常被點名的一首」→「最亮眼的一首」 | 只有 DownBeat 一篇 |
+| 7 張（Smith 4、Kühn、Wilson、Lovano Nonet） | 第二句補《盤名》 | QA 無《》 |
+| Kühn、Wilson、Lovano Nonet、Sunny Side | 補盤名後超字數，刪曲數、重發細節、團員淵源 | 字數 |
+
+其餘逐張四問無改：Smith 七張鉤子各取本張（Donaldson、Small's Paradise 五天後、一場錄兩張、原為 Burrell 專輯、1961 唯一錄音、大阪聖誕夜、與 Burrell 平起平坐）；Holt 五張角度各異。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-074.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-075（30 張，其餘：John Kaizan Neptune、Lewis & Jones、John Russell、Scofield 2、Zorn、Joona Toivanen、Kraus、José Luis Cortés、Léandre／Grimal、Juaneco y su Combo、Judge、Judi Silvano、Julia Kadel 2、JUN SKY WALKER(S)、Junior Byles、Junior Delgado、Junior Mance、Junior Murvin、Justice、Jutta Hipp、Noetinger 2、Jónsi & Alex、Kangaroo、Kareem Ali、KaS Product、Kate Gentile、Katra Turana）— s40
+
+- 研究：3 支 Sonnet，WebSearch 15＋14＋17＝46 次；無 none。komuso.com 503、Tower／ナタリー 403。
+- **主線補查**（WebSearch 3 次＋WebFetch Neptune 官網＋Discogs API）：Neptune《Tokyosphere》（官網專輯頁：第一個全由和樂器師範組成的團、成員與樂器、「像東京一樣沒有邊界」、澀與爵士段落；舊稿成員名單其實正確）、Lewis & Jones（1979-05-03 東芝 EMI 直刻、Duvivier／Manne）、Zorn（兩面錄音日、誘鳥哨、以日本藝人為題）、Toivanen《Frost》（瑞典 Nilento 錄音、兄弟＋Louhivuori）、Kraus（確認是 Phoenix Edition 2009 雙 CD，授權自 Capriccio／WDR，Concerto Köln／Ehrhardt，Kempen 1991–92）、Cortés（1997 古巴原盤確認）、Juaneco（Infopesa、Maraví 製作、cumbia／ritmo selvático）、Silvano（Power Station、Lovano 製作、曲目橫跨古典）、JSW（Captain 獨立迷你盤、六本木 Mod Studio）、Byles（Weston 製作、Channel One／Tubby／Harry J、班底）、Delgado（Channel One 班底、Pablo、Dennis Brown）、Mance（1977-06-02／03、Taylor／Riley）、Hipp、Noetinger《Gloire à...》（COREAM 1991 首演）、Katra Turana（credits 證實舊稿的久保田麻琴、原マスミ、Sandii 與十二人合唱）→ 大多 story／sound 升 ok。Kareem Ali《Sound in Motion》網路上查無專輯本身任何頁面（搜尋只回同年《The Color of Sound》），照藝人背景薄寫 191 字上線（delayde 前例）；Kangaroo 只有團史，薄寫。
+- 事實裁定：Kraus 寫 Concerto Köln／Ehrhardt、1991–92 錄、2009 重發；Judge 不寫「被廢棄重錄」（那是 Chung King 1989 錄音），寫 1991 解散後 Revelation 發行的最後一張；Juaneco 不寫 Barbès 重發；Frost 不套後期專輯聲音；Lewis & Jones「盤名沿用 1976 巡演」只是推測，改並陳；Mance 不寫盤號（VIJ／VIBN 兩說）；Jónsi & Alex 的分開是感情關係；KaS Product 年份 1986（英文維基 1987 錯）；Hipp 兩卷同一夜。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 45 處，改動檔 `review-sd-075.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lewis & Jones | 「盤名沿用 1976 年巡演」→「1976 年日本有過一檔同名巡演」 | 研究稿 notes「疑來自」 |
+| Julia Kadel《Im Vertrauen》 | 鉤子「繼 Hipp 之後…被稱為第一位」→「Hipp 1956 年之後…第一位」 | 原句自相矛盾 |
+| 17 張 | 第二句「這是／這套」→《盤名》 | QA 無《》 |
+| 13 張 | 補盤名後超字數：刪 Russell 前作與生平、Delgado 重複的 1975 熱門歌、Mance 伴奏生涯、Hipp 一檔一週、Kate Gentile 封面、Kangaroo 最終作改唱日文等 | 字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Neptune 都山流師範、東京直刻、Russell 客廳三把吉他、Zorn 五輪書、Kraus 送葬交響曲、Cortés 借《波麗露》與 Formell、Juaneco 巫醫外號與墜機、JSW 行人天國、Murvin 反幫派、Justice「白天的音樂」、Hipp 駐場半年、Katra Turana 女裝高唱與原生生物）。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-075.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 98 次（研究層 sd-074 48、sd-075 46，主線 4）。
+
+## sd-072（30 張，其餘：Interferon、Inti-Illimani、Into Another、Irakere 3、Iron Cross、Isaiah Rashad、Jaak Joala、Jack Walrath、Jack White、Jack Wilson、Jackie McLean 6、McLean & Tina Brooks、Jacky Terrasson 3、Terrasson & Cassandra Wilson、Jagged Edge、Jah Warrior、Jaheim 2、James Blood Ulmer、James Brown 2）— s39
+
+- 研究：3 支 Sonnet，WebSearch 17＋8＋14＝39 次；none 只有 Jaak Joala story／sound。AllMusic、Pitchfork、Discogs 網頁多回 403。
+- **主線補查**（WebSearch 3 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Jaak Joala（Discogs：1975 Melodiya 愛沙尼亞文《Laulab Jaak Joala》與俄文《Поёт Яак Йоала》同歌單雙版、五位指揮、Baltika／Collage／Laine 和聲團、收電影《解放》插曲）→ what ok、story／sound thin；Interferon（Discogs：Hazemoto 一人作曲製作混音、曲名取自催眠與超自然；yoyaku《Sounds of Transonic》介紹：〈Blasting Soul〉受底特律 hi-tech jazz／machine funk 影響）；Jah Warrior（Discogs：Wardrop 與 Mosco 自彈全部樂器、Conscious Sounds 混音、每首以非洲民族命名）；James Brown《I Got the Feelin'》（單曲維基：《Star Time》內頁班底）。Iron Cross《ရာစုသစ်》英文搜尋 1 次＋研究層緬文 2 次皆無本張資料。
+- **薄寫上線不留置**（delayde 前例）：Iron Cross（180 字，只寫樂團地位與編制、盤名意為新世紀）、Jaak Joala、Interferon、Jah Warrior、Walrath《Neohippus》。
+- 事實裁定：Cuba libre 是 1980 東京 Victor 日本限定盤（上田力製作），與 Columbia《Irakere II》不同；《Irakere II》《'Bout Soul》年份兩說，正文不寫或只寫錄音年；《Yemayá》卡單 1997 疑為 1999，正文避開發行年；Iron Cross 四位主唱（舊稿三位錯）；Walrath 盤名出處與葛萊美入圍查無，不寫；Rashad 小卡經過不寫；Joala 舊稿「1972 EP」不寫；Capuchin Swing 舊稿 Billboard 評論查無；Street Singer 是 Blue Note 擱置；Alive 不寫聖詩收尾；Terrasson 未決指控不提；Jack White 發行動機不寫成本人說法；《Rendezvous》爵士榜第 10（舊稿第 4 錯）；《I Got the Feelin'》三座城市（舊稿四座錯）；Jaheim〈Blame Me〉是取樣不是翻唱；Ulmer 寫「Laswell 參與製作」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-072.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Terrasson《Mirror》 | 「七首標準曲配五首自作」→「標準曲之外也收自作」 | 曲數屬軌數雜項 |
+| Jah Warrior、Ulmer、McLean《Quintet》 | 第二句「這是」改《盤名》，隨之刪次要句壓字數（Jah Warrior 曲名橫跨三區與鉤子重複；Ulmer「評價分歧，也有人列為最好之一」無具名；Quintet「擱置原因沒有交代」、〈Blues in a Jiff〉一句） | QA 無《》、字數 |
+| James Brown《Bring It On!》 | 刪「只在 1980 年代末短暫出過 CD，至今仍不在串流平台上」 | 版本／發行形式雜項 |
+| Interferon | 刪「曲名多取自催眠與超自然現象」 | 與鉤子重複 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Inti-Illimani 流亡義大利的全器樂、Into Another 硬核出身彈 Iron Maiden 式吉他、Irakere 日本製作人／美古解凍／獻給 Yemayá、Iron Cross 歌詞送審、Rashad 復發恐懼、Joala 母語唱搖滾、Walrath 在 Mingus 最後一團、No Name 塞進購物袋、Wilson 坐進絃樂團、Simmons 朗誦、寵物猴、耍蛇人 vamp、Tolliver 初登場、擱十五年、Tony Williams 首次錄音、Brooks 擱二十年、Iridium 觀眾笑聲、全獨奏、〈Money〉口琴長笛、Wilson／Terrasson 分工、Jagged Edge 未滿 21、以民族命名、Jaheim 兩張、Ulmer 唯一 Blue Note、三座城市、Brown 慢歌翻唱）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-072.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
+
+## sd-073（30 張，其餘：James Hurt、Moody／Wallington、James Newton、James P. Johnson、Jan Dukes de Grey、Rigler & Fernández、Javon Jackson 5、Jazz Playaz、Jazzinuf 2、Jean du Voyage、Ponty、Como、Jeff Mills 2、Jeffrey Swann、Bergonzi、Jerry Butler、Jessica Bailiff、Jessy Dixon、Jill Scott、Jimmy Arnold、McGriff 2、Jimmy Smith 2）— s39
+
+- 研究：3 支 Sonnet，WebSearch 15＋13＋13＝41 次；none 只有 Jazzinuf《Sun Dance》story、McGriff《Something To Listen To》story。
+- **主線補查**（Discogs API release notes／credits＋WebFetch，WebSearch 0 次，facts 標【主線補查】）：Newton（RCA Studio C 1986 年 8 月、全班底、Mingus／Ornette 雙軸）→ story ok；Mandorla（Estudi 84 錄音時程、Rigler 樂器細項證實、九段連續組曲、Wade Matthews 內頁）→ sound ok；Jessy Dixon（Gospel Records、Mendelsohn 監製、Norwood 對唱、聖詩取向）；McGriff 兩張（選曲半數自作、Golden Slipper 現場與錄音師）；Jean du Voyage（一人包辦＋大提琴、單簧管、古巴小號客座）→ sound ok；Como（Lockwood、Sylvain Luc、Paco Sery 等客座、Pastorius 兩首與〈Giant Steps〉）→ sound ok；Mills《From the 21st》（芝加哥 Spider Formation 錄音、1998 Axis 作品由日本 Sony 1999 發行）→ story ok；Javon Jackson《When the Time Is Right》（兩場錄音、Garrett／Reeves 客座）→ sound ok；Jazzinuf 歌劇歌手說法 WebFetch 原頁證實；Jazzinuf Bandcamp 無兩張專輯頁。
+- **薄寫上線不留置**（delayde 前例）：Jazz Playaz（171 字）、Jazzinuf 兩張（174、178 字）、Jessy Dixon、Bergonzi、Butler、McGriff《Something To Listen To》。
+- 事實裁定：Moody／Wallington 不寫「從未發行」、不寫盤名指兩個時間點（研究層推論）；James P. Johnson 不寫場次與曲數；Javon Jackson 不寫 Gainsbourg、Craig Street；Jan Dukes de Grey 寫 Decca；Hurt 不寫錄音日；Ponty 只寫 1969 年 3 月；Mills《From the 21st》芝加哥錄音屬實、與〈Here〉同音訊屬雜項不寫；Cherokee 與 Confirmation 是不同錄音；Bailiff 不寫達拉斯；Romane Beaugrand 樂器兩說，不寫。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 28 處，改動檔 `review-sd-073.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Moody／Wallington | 鉤子與第二句改寫，刪「盤名指的就是這兩個時間點」 | QA 無《》；推論無出處 |
+| Ponty、Como、Mills《From the 21st》、Bergonzi、Butler、Bailiff、Dixon、Jill Scott、Arnold、McGriff 2、Smith 2 | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數（Dixon 生平、Scott 錄音城市與「最激烈」與榜位、McGriff 製作人沿革、Smith〈Laura〉與臨場喊曲目、Bergonzi 與 Santoro 後續、Butler「多方面才華」、Bailiff「最早融合者之一」、Arnold「音色優美」、Moody「爵士與古巴節奏」） | QA 無《》、字數；空泛評語 |
+| Swann | 整段重寫補《》，刪「受控的偶然」引語、Liszt 對比、錄音清晰 | 盤名長、壓字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Hurt 變換拍號、Newton 被大提琴顫音琴長號圍繞、Johnson 中風復出、Bairstow 錄音前幾月才學長笛、Rigler 一人四種聲音、Jackson 五張各自角度、vaporwave 質地、冬日主題、白天做 beat 晚上唱歌劇（republicofjazz 原文證實）、維那琴到古巴小號、Ponty 在美成名的兩晚、Como 西非歌手配 Pastorius、Mills 芝加哥工作室／Sleeper Wakes 主角、Swann 兩條路線、Bergonzi 唯一 Blue Note、Butler 離開 Impressions、Bailiff 托利多吉他嗡鳴、Dixon 與 Paul Simon、Scott 三部曲最後一張、Arnold 15 歲 Galax 冠軍、McGriff 自家俱樂部、半數自作、Smith 只在日本發行、Morgan／Brooks／Blakey 長篇 jam）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線（sd-073）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-073.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 84 次（研究層 sd-072 39、sd-073 41，主線 4）。
