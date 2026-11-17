@@ -806,3 +806,27 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-022.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
+
+## sd-025（30 張，經典度≥4：Androids of Mu、Badalamenti、Thorvaldsdottir、Braxton、Anthony Rother、Antis 2、Duhamel、Karas、Troilo、Aníbal Velásquez、Archon Satani、Arditti 2、Aretha、Argo、Armia、Blakey 6、Schnabel 2、Arzachel、Attrition、Azitis、Banda do Casaco、Bappi Lahiri）— s15
+
+- 研究：3 支 Sonnet，WebSearch 13＋11＋12＝36 次；thin 17 張。
+- **主線補查 14 張**（WebSearch 16 次＋WebFetch，facts 標【主線補查】）：Braxton（AAJ Arista 套裝評：Circle 節奏組＋Wheeler、與 Holland 的 paired walk、Altschul）、Rother（RA 簡介）、Troilo（TodoTango：Filiberto 1918 低音旋律、1944 年錄音確立經典；Piazzolla 1944 離團原因）、Cafe Bohemia 兩卷（Jazz Journal、musicaficionado：Parker 欠酒錢傳說、Blakey 開場白、各曲聲音、〈Sportin' Crowd〉旋律來歷）、Schnabel 貝多芬（MusicWeb：第一套完整錄音、Gaisberg 發起、Courtauld-Sargent、各曲演奏）、Schnabel 舒伯特（Audaud：收錄範圍、奏鳴曲復興、演奏特色）、Attrition（1985《Electronic Soundmaker》專訪：租 8 軌、不 jam、808／MC-202／MS-20、拉弓貝斯、閘門）、Bappi（Amit Khanna 回憶：Burman 與 L-P 退出、先曲後詞、悲傷版）、Argo（兩層結構、Vilnius-5）、Like Someone in Love（Mosaic：九張、8 月 14 日場次）。Aretha、Archon、Berio、Antis 兩張、Duhamel 聲音段補查無新料，照研究稿薄寫。
+- 身分裁定：Antis《Kažkas atsitiko》寫成 2003 年 Zona 整理的 1985–86 年錄音（1986 年同名的是音樂電影）、《Ša!》寫 1988–89 年錄音；Thorvaldsdottir 寫 2023 發行；Duhamel 不寫指揮／樂團；Karas 寫聲軌連對白轉錄；Troilo 不斷言屬 RCA 全集；Banda do Casaco 不寫年份（卡 1974、各源 1975）；Schnabel 貝多芬不寫第四號指揮；Argo 照卡 1981、不寫銷量；Cafe Bohemia 兩卷分工（Vol.1 那一夜與俱樂部、Vol.2 曲子與聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 29 處，改動檔 `review-sd-025.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Badalamenti、Thorvaldsdottir、Braxton、Antis 2、Troilo、Berio、Carter、Birdland Vol.2、Arzachel、Bappi | 第二句「這是／這張」→ 以《盤名》起句，連帶刪句壓回 240（彩繪臉孔、發起小組、黃金期舞者、Berio「以電子音樂聞名」、普立茲、凌晨三點、Brown 車禍、泛音樂章、Canterbury 後續等） | 第二句要有盤名；字數 |
+| Duhamel | 「含 1965 年原始錄音與 2000 年新錄」→「錄音橫跨 1965 到 2000 年」 | 研究稿只有錄音期 |
+| Jazz Corner Vol.1 | 鉤子「司儀報完團名，兩個 set 就被錄了下來」→ Timmons 把狀況不佳的店內鋼琴彈得比它本身更好；正文改補 Morgan／Shorter 獨奏與 Blakey | 「兩個 set」無出處、報團各版不一 |
+| Schnabel 舒伯特 | 「三首晚期奏鳴曲」→「三首奏鳴曲」 | D.850 不是晚期 |
+| Argo | 鉤子「是這個樂團對觀眾的要求」→「能跳的 disco 和要坐下來聽的電子樂，被 Argo 拼成同一張唱片。」 | 「要求」無出處 |
+| Attrition | 鉤子「用租來的 8 軌錄音機錄成」→「從不一起 jam，成員各自把點子錄進租來的多軌機」 | 鉤子去軌數字眼 |
+
+其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50，材料取自故事（Crass 要換鼓手、Lynch 要不安又美、Reed 在酒館聽到齊特琴、Parker 欠酒錢、Egg 獨家約逼出假名、檔期退出換來 Bappi）、概念（AIŌN 的時間、駭客概念、Mosaic 拼貼）、聲音（X 光片 caja 鼓）或地位（第一套完整協奏曲錄音、奏鳴曲復興）。QA 例外照收：Braxton「編號作品」是作品編號非盤號；Cafe Bohemia 兩卷、Jazz Corner、Banda do Casaco 盤名過長不加《》；Cafe Bohemia Vol.2 鉤子講〈Sportin' Crowd〉旋律來歷屬故事、非曲名體例。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-025.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，開工前也預查過 60 張皆 KV-HIT）。
+- onboarding manifest 同步 30 處。
