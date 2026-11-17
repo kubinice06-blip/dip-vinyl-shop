@@ -69,8 +69,8 @@
 | sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
 | sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | | |
 | sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
-| sd-072 | 其餘（Interferon … James Brown） | 30 | | |
-| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | | |
+| sd-072 | 其餘（Interferon … James Brown） | 30 | s39 | ✅ 上線 30 |
+| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | s39 | ✅ 上線 30 |
 | sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | | |
 | sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | | |
 | sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |

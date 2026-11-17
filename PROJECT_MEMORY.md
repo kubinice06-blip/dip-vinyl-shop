@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s39：sd-072、sd-073 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-072 上線 30（Interferon、Inti-Illimani、Into Another、Irakere 3、Iron Cross、Isaiah Rashad、Jaak Joala、Walrath、Jack White、Jack Wilson、Jackie McLean 6＋Tina Brooks、Terrasson 4、Jagged Edge、Jah Warrior、Jaheim 2、Ulmer、James Brown 2）；sd-073 上線 30（James Hurt、Moody／Wallington、Newton、James P. Johnson、Jan Dukes de Grey、Mandorla、Javon Jackson 5、Jazz Playaz、Jazzinuf 2、Jean du Voyage、Ponty、Como、Jeff Mills 2、Swann、Bergonzi、Butler、Bailiff、Jessy Dixon、Jill Scott、Jimmy Arnold、McGriff 2、Jimmy Smith 2）。無留置；Iron Cross、Jazz Playaz、Jazzinuf 2 等照 delayde 前例薄寫。
+- **主線補查**（Discogs 公開 API notes／credits 為主，WebSearch 4 次）：Jaak Joala 1975 愛／俄雙版 LP 與伴奏指揮、Interferon 一人製作與底特律影響、Jah Warrior 以非洲民族命名、Newton 班底與 Mingus／Ornette 雙軸、Mandorla 錄音時程與樂器、Mills《From the 21st》芝加哥錄音、Como／Jean du Voyage／Javon Jackson 客座等。舊稿錯處更正：《Rendezvous》爵士榜第 10、《I Got the Feelin'》三座城市、Iron Cross 四位主唱。
+- **審稿**：sd-072 改 10 處、sd-073 改 28 處（多為第二句補《盤名》與壓字數），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-072.json,review-sd-073.json,kv-before-sd-072.json,kv-before-sd-073.json}`、`desc-tools/batches/{cards,research,output}/sd-07{2,3}*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 全工作階段約 84 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s35：sd-064、sd-065 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-064 上線 30（Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Gillespie、Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Wilkerson、Donald Byrd 8、Doodle、Doris Norton）；sd-065 上線 30（Norwood、DOUBLE、Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Candles of Vision、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）。資料薄的照 delayde 前例薄寫上線。
