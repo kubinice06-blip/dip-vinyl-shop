@@ -7,6 +7,13 @@
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-088.json,review-sd-089.json,kv-before-sd-088.json,kv-before-sd-089.json}`、`desc-tools/batches/{cards,research,output}/sd-08[89]*`、onboarding manifest 56 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 88 次。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s50：sd-094、sd-095 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-094 上線 30（This Heat、Tho-So-Aa、Thomas Köner、Thắng、Thủy Triều Đỏ、Tim Hagans 4、Titiek Puspa、Todd Terry、Tom Rainey、Tommy Smith、Tony Tuff、Tony Williams 2、Tosca、Travelling Day、Triston Palma 3、Trovante、Tuscadero、Twisted Science、Tånk、U-Street All Stars、Ulrich Schnauss 2、Ultima Thule、Uncle Charlie Osborne）；sd-095 上線 30（Voerkel／Frey／Lovens、Us3、Ponomarev、Valet、Shotguns 3、Chichadélicas、Groove Club 2、Music for Dancefloors、Thai Beat、Crying Princess、Trường Sơn 4、Wounds of Love、Zendooni、Vehicle Flips、Venetian Snares、Vince Staples、Vision of Disorder、Vitamiin、Void Stasis、Voivod、Volcano the Bear、Walter Bishop Jr.、Warzone 2、wave to earth、Wayne Davis、Wha-ha-ha）。Titiek Puspa、Thủy Triều Đỏ、Tånk、Trường Sơn 4、Vitamiin 等 12 張照 delayde 前例薄寫上線。
+- **主線補查**（Discogs API 為主，WebSearch 4 次）：Todd Terry《Works》確認是 Torso 化名作品合輯、Ultima Thule 芬蘭發行與歌唱革命註記、Wha-ha-ha 1981 現場與雙轉速、Vitamiin 塔林電台錄音、Ponomarev Van Gelder 錄音等 17 張。派工特注錯 6 處已更正（U-Street All Stars 芬蘭團、Uncle Charlie Osborne 與 Osborne Brothers 無關、Tosca 廠牌、Crying Princess 廠牌、Music for Dancefloors 編者、Groove Club 與 Parallel World 無關）。審稿 sd-094 改 12 處、sd-095 改 55 處（多為第二句補長盤名後壓字數；《Zendooni》裁定只寫主標）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-094.json,review-sd-095.json,kv-before-sd-094.json,kv-before-sd-095.json}`、`desc-tools/batches/{cards,research,output}/sd-09[45]*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
 
 - **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。
