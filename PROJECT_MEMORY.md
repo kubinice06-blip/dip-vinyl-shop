@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s46：sd-086、sd-087 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-086 上線 30（Rita Reys、Robert Calvert 3、Robyn、Rod Modell 3、Ron Carter 4、Ronnie Cuber、Ronnie Foster 4、Rorschach / Neanderthal、Rothko、Roy Davis Jr.、Rudolph Johnson、Rudra、Ruja、RYKARD、池田亮司、Saccharine Trust、Salada de Frutas、Sammy Dread、Sandra Phillips、Sasha & John Digweed）；sd-087 上線 30（Sasha & John Digweed、Scream、Sean Deason、Sean Nicholas Savage、SebastiAn、Sedibus、Selda Bağcan、Sephira、Servant、SEVENTEEN 3、Shahram Shabpareh、Shape of the Rain、Shelter、Sherman Irby 2、Shintaro Quintet、Shirley & Dolly Collins、Shirley Scott、Shudder to Think、Siavash Ghomayshi、Silicon Scally 5、Simon Raymonde、Singers 3、Skyray）。RYKARD、《Pin Point》、《Deyar》、《Machine Bias》等照 delayde 前例薄寫上線。
+- **主線補查**：Rita Reys（荷文維基＋jazzdisco 錄音編制）、Ron Carter《Jazz & Bossa》《Mr. Bow-Tie》、Roy Davis Jr.、Rothko、Scream（End On End 播客）、Sherman Irby《Full Circle》、Shelter、Shudder to Think 等。舊稿與派工特注錯處更正：Rod Modell《Dawn, Dusk, and Darkness》是攝影書附 CD、Salada de Frutas 是葡萄牙團、Sedibus 是 Paterson＋Falconer、Skyray 是 Paul Simpson、《Ten Spot》是 Dischord 第一張。審稿改 sd-086 25 處（多為補《盤名》壓字數、Foster 兩張鉤子撞材料）、sd-087 5 處。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-086.json,review-sd-087.json,kv-before-sd-086.json,kv-before-sd-087.json}`、`desc-tools/batches/{cards,research,output}/sd-08[67]*`、onboarding manifest 54 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 103 次。
+
 ### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
 
 - **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。

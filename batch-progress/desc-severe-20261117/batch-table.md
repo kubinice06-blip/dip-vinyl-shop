@@ -83,8 +83,8 @@
 | sd-083 | 其餘（Organum … Pontiac Streator） | 30 | s44 | ✅ 上線 30 |
 | sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | | |
 | sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | | |
-| sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |
-| sd-087 | 其餘（Sasha & John Digweed … Skyray） | 30 | | |
+| sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | s46 | ✅ 上線 30（前台 30；無留置；主線補查 Rita Reys（荷文維基＋jazzdisco）、Jazz & Bossa、Mr. Bow-Tie 等；RYKARD、Pin Point 等薄寫；CURATED 0） |
+| sd-087 | 其餘（Sasha & John Digweed … Skyray） | 30 | s46 | ✅ 上線 30（前台 30；無留置；主線補查 Scream、Full Circle、Shelter、Ten Spot 等；《Deyar》、《Machine Bias》等薄寫；CURATED 0） |
 | sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | | |
 | sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | | |
 | sd-090 | 其餘（Tabu Ley Rochereau … The Clark Sisters） | 30 | | |

@@ -2380,3 +2380,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-086.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
+
+## sd-087（30 張，其餘：Sasha & John Digweed、Scream、Sean Deason、Sean Nicholas Savage、SebastiAn、Sedibus、Selda Bağcan、Sephira、Servant、SEVENTEEN 3、Shahram Shabpareh、Shape of the Rain、Shelter、Sherman Irby 2、Shintaro Quintet、Shirley & Dolly Collins、Shirley Scott、Shudder to Think、Siavash Ghomayshi、Silicon Scally 5、Simon Raymonde、Singers 3、Skyray）— s46
+
+- 研究：3 支 Sonnet，WebSearch 11＋14＋15＝40 次；none 有 Shahram Shabpareh《Deyar》story、Silicon Scally《Machine Bias》story／sound。
+- **主線補查**（WebSearch 7 次＋WebFetch＋Discogs／MB API，facts 標【主線補查】）：Scream（End On End 播客 Stahl／Stax 集：Harley 加入讓寫歌更上一層）→ story ok；Sean Deason（Discogs master 76269／release 7962 notes 只有版權行、Metro Times 403）；Selda Bağcan（土耳其文搜尋無新料）；Sherman Irby《Full Circle》（維基：1996-05-17 Clinton 錄音、Smalls 被 Blue Note 發現；AAJ Corroto 回顧）→ story ok；Shelter（AllMusic 錄音期 1989-06～1990-03、Back to Godhead）→ story ok；Shudder to Think（The Vinyl District：正式加入 Dischord；Midheaven 陣容）；《Deyar》（波斯文搜尋只得 Pournazeri 同名作）；《Machine Bias》Bandcamp 頁 404。
+- **薄寫上線不留置**（delayde 前例）：Shahram Shabpareh《Deyar》（不寫年份：英文維基 1980、波斯維基 1358、MB Caltex 版 1992 三說）、Silicon Scally《Machine Bias》（無鉤子，以「這是什麼」開頭）、Sean Deason《Razorback》、Scream《This Side Up》（173 字）、Shelter 聲音只寫編制。
+- 事實裁定：Sedibus 是 Alex Paterson＋Andy Falconer（派工特注寫 Bandcamp 作者是協調端誤記），舊稿 Orbscure／Eno 致意不寫；Sephira 不寫「Matthew Crick、英國人」；Savage 不寫卡帶三部曲；Servant 製作 Bob Brooks、Bob Rock 是工程師；SEVENTEEN 舊稿銷量與獎項未證不寫，《Face the Sun》首週用韓媒數字不寫；《Ten Spot》是 Dischord 第一張（派工特注「Dischord 前」誤記）；《Farangis》寫「1970 年代的早期錄音」不寫 1973；Skyray 是 Paul Simpson（派工特注 Simmons 誤記）；Shirley Scott 1958 錄音；Expeditions 不寫英國版獨有〈Silence〉。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-087.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Sasha & Digweed《Expeditions》 | 刪「前兩張以南北、東西切開，這回改排成單一流程」 | 與鉤子重複 |
+| Scream《This Side Up》 | 刪「常被視為 Scream 的巔峰」 | 只出自單一播客主持人 |
+| Shintaro Quintet《Evolution》 | 刪「只壓 1000 張、在當地唱片行與演出現場賣」 | 印量與通路雜項 |
+| Silicon Scally《Crushed》 | 刪「被稱作備受追捧的計畫」 | 店家文案用語 |
+| Silicon Scally《Machine Bias》 | 刪「製作與錄音都由他一人包辦」 | 研究稿未證 |
+
+其餘逐張四問無改：鉤子都對過研究稿（一整夜一路走到底、DC 硬核的搖滾傾向、先設計封面、殘響人聲、毛遂自薦進 Ed Banger、近三十年重逢、拿不到護照、混音起家改放免費下載、音量補技巧、最年幼成員滿二十、把恐懼比作毒、I'm NOT SEVENTEEN anymore、回不了國、替 Led Zeppelin 暖場、Cappo 去印度、阿拉巴馬福音、Smalls 深夜場、排練一天就錄、三十二年沒唱、夜總會缺風琴手、團名由來、第一次記住的歌、收起陰沉、封城自發行、由明轉暗、Daz Quayle 帶入門、離團前夕的個人作、魯邦三世女聲、唯一人聲是旁白）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-087.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 25 處。
+- 本工作階段 WebSearch 合計約 103 次（研究層 sd-086 49、sd-087 40，主線約 14）。
