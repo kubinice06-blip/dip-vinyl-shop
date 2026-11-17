@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s7：sd-013、sd-014 上線（56 張，留置 4）
+
+- **結果**：sd-013 上線 27（留置山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》）；sd-014 上線 29（留置丘蒸汽《のすたるじあ》）。
+- **研究補強首跑**：研究層判 none／thin 的卡主線逐張 extended 補查，救回 12 張（ダッチャ、ヨシンバ、《グロー》、仲村裕美、中島光一、傻子與白痴、八城一夫、初山博、南正人、VANITAS命死、Kahuna 等）；留置的 4 張都跑完必查清單＋主線補查仍無專輯層級資料。身分裁定：リー・ウォンヒーイ＝高木元輝韓國名、鼓手菊池コージ。
+- **審稿**：sd-013 改 5 處、sd-014 改 6 處（刪再版／credit／冷知識、去比附），逐條在 `rulings.md`。WebSearch 工作階段約 158 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-013.json,kv-before-sd-014.json,review-sd-013.json,review-sd-014.json}`、`desc-tools/batches/{cards,research,output}/sd-013*、sd-014*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 112 鍵逐字回讀 112/112 一致；`front-check` 前台 56/56 新稿、CURATED 0；QA 無軌序／曲長／盤號（「来」為盤名日文）。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s6：sd-011、sd-012 上線（60 張，無留置）
+
+- **範圍**：sd-011（高中正義 10、高柳昌行、鷺巣詩郎 EVA 3、黃耀明《信望愛》、黑名單工作室《搖籃曲》、韓國 13 張）、sd-012（韓國 17、929、Beyond、怪顚、COHOL、vaporwave 網路音樂 5、Gauze、Lip Cream、Lizard 等）。
+- **流程**：研究 6 Sonnet（照新版「判 thin 之前必查清單」，韓國卡走 weiv、週刊京鄉、韓文維基、예스24）→ 主線補查 thin 卡（《Ocean Breeze》補出是 POWER PLAY 巡演現場盤、조용필 7집 由 weiv 評論補聲音、김현식 2집 補 사랑과 평화 演奏、《搖籃曲》補博客來與胡德夫）→ 寫作 4 Opus → 主線逐張審稿（改 2＋13 處）。WebSearch 研究層 101＋主線約 15 次。
+- **結果**：**sd-011 上線 30、sd-012 上線 30，留置 0**。
+- **寫入**：KV desc2＋desc4 共 120 鍵，寫前存 `kv-before-sd-01{1,2}.json`；回讀 120/120 一致；`front-check` 前台 60/60 新稿；onboarding manifest 同步 60 處。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-01{1,2}.json,kv-before-sd-01{1,2}.json}`、`desc-tools/batches/{cards,research,output}/sd-01{1,2}*`、onboarding-manifest-*.json。
+- **驗證**：sd.mjs qa 兩批 0 實質問題（Lizard《彼岸の王国》的「国」為原文標題）；fix-spacing 0。
+
 ### 2026-11-17｜dip-vinyl-shop｜林強《驚蟄》簡介補修＋嚴重稿重寫線研究補強
 
 - **店主**：「驚蟄這張專輯故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」sd-006 研究層對這張只搜 3 次就把聲音標 thin。協調端兩次搜尋找到公視與人間福報的 2005 坎城報導（唯一受邀亞洲音樂人、故宮數位影像、媽祖繞境鞭炮與電視雜訊入樂、同名曲為坎城而寫），重寫 237 字上線。
@@ -338,7 +355,7 @@
 - **驗證**：Playwright（iPhone 13）全部 22,302 → 爵士 05712 → ＋殿堂 00060 → 0 張 00000（紅）→ 全部 22302，每顆數字都對準中線（偏移 0.0px）；取樣確認換數字時滾筒有轉、約 0.7 秒停住；無頁面錯誤。
 - **主要檔案**：`dip-tune.js`、`index.html`（v71）、`scripts/tune-panel-v2/panel.py`、`tune/panel-all.png`、`tune/drum-shade-122.png`。
 
-### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 2,353 張（每日批次進行中）
+### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 2,453 張（每日批次進行中）
 
 - **店主 11-06**：「好多 Spotify 連結是灰的，趕快全部掃描修復」（例：Grimes《Geidi Primes》）。
 - **主因（前台）**：`index.html` 的 `fetchSpotifyCover` localStorage 快取（300 張、永不過期）連「有封面沒連結」也存，10 月配額爆掉時的空結果被手機記住，KV 補好也不再問。PR #417：快取升 v5 刪 v4、只存有 `spotifyUrl` 的結果。Geidi Primes KV 本來就有連結，屬此類。
@@ -356,6 +373,7 @@
 - **11-14 每日第 9 批**（395 次）：找到 138、收 136（不收 Legrand 純音樂版、Cats 電影版 Highlights；規則補 instrumentale／highlights，複查已寫入 2,071 條無漏網）。累計 2,207，剩 1,841（未搜 1,091）。
 - **11-15 每日第 10 批**（395 次）：找到 94、寫入 89（5 張華語名盤 KV 已無此鍵、前台會即時查，記 skipped-nokey.json）。累計 2,296，剩 1,752（未搜 863）。
 - **11-16 每日第 11 批**（395 次）：短暫 429（23 秒）改等待重試。找到 57 全收、寫入 57。累計 2,353，剩 1,690（未搜 645）。
+- **11-17 每日第 12 批**（395 次）：找到 101 全收、寫入 100。累計 2,453，剩 1,589（未搜 411）。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
 ### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）

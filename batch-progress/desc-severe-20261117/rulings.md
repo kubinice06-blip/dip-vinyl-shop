@@ -246,6 +246,46 @@
 - 重寫 237 字：第一句定位與金曲跨界獎 → 坎城邀演、故宮影像、MK2、《最好的時光》 → 片名意涵 → 聲音素材。KV desc2／desc4 寫入並逐字回讀，前台 `/album-desc` 已是新稿；舊值 `kv-before-jingzhe-fix.json`；`onboarding-manifest-c89` 與 `output/sd-006-out-1.json` 同步。
 - 研究規則補強：`prompt-research.md` 與 `general-desc-base.md` 加「判 thin／none 之前必查清單」，主線對 thin 卡一律再補查。
 
+## sd-011（30 張：高中正義 10、高柳昌行 2、鷺巣詩郎 3、黃耀明、黑名單工作室、韓國 13）— s6
+
+研究 3 Sonnet（WebSearch 17＋14＋14）→ 寫作 2 Opus → 主線補查與審稿。**30 張全上線，無留置**（照新版必查清單，母語來源：日文維基、weiv、週刊京鄉、韓文維基、예스24）。
+
+### 主線補查（判 thin 的卡，WebSearch 約 9 次）
+- 高中正義《Ocean Breeze》：研究層漏了這是 **POWER PLAY '80／'81 巡演現場專輯**（日文維基、Light in the Attic 2026 重發頁），補 3 條，組曲曲目由 LITA 頁確認。
+- 高中正義《Rendez-Vous》：補唱片行介紹的風格轉向（舞曲流行、饒舌、熱帶抒情，降級為一般描述）。
+- 黑名單工作室《搖籃曲》：tpmw 503、KKBOX 403、中文維基只有曲目；博客來確認原住民元素，KKBOX 搜尋摘要見胡德夫參與創作。仍薄，204 字上線（what／story 足夠，不留置）。
+- 김현식 2집：週刊京鄉確認 사랑과 평화 擔任演奏（寫作層誤刪，審稿補回）。
+- 들국화 2집：搜尋只見成員與〈제발〉的檢閱時代解讀，未增 facts。
+
+### 主線審稿（逐張 30 張，改 2 處，改動檔 `review-sd-011.json`）
+- 김현식 2집：補回 사랑과 평화 演奏。
+- 들국화 2집：「前一張《행진》」→「首張專輯」（《행진》是曲名，首張以團名為題）。
+- 其餘照過：高中正義 10 張開頭各異、各寫錄音地點與合作者；舊稿錯誤（Lee Ritenour 七軌、Jungle Jane 拿騷混音、Hot Pepper 製作人首數、Takanaka 吉他年份）均未再出現；小原礼、佐藤博由羅馬拼音改回漢字，核對無誤。
+- **韓文與漢字間空格**：寫作 2 組加、sd-012 兩組不加；卡池既有稿兩種都有（66：92），無規則，不統一。
+
+### 上線
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-011.json`；30 張 60 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 30/30 新稿**。
+- onboarding manifest 同步 30 處。
+
+## sd-012（30 張：韓國 17、929、Beyond、怪顚、COHOL、vaporwave／網路音樂 5、Gauze、Lip Cream、Lizard、Neptune、Waldron／日野）— s6
+
+研究 3 Sonnet（WebSearch 17＋19＋20）→ 寫作 2 Opus → 主線補查與審稿。**30 張全上線，無留置**；網路音樂 5 張與 Lizard、Neptune 照實薄寫（182–237 字，不湊雜項）。
+
+### 主線補查（WebSearch 約 6 次）
+- 조용필 7집：研究層 sound none。weiv 轉載的 2003 年評論（차유정，9/10）補上：伴奏樂團 위대한 탄생 成員全面更換、前六張「百貨公司式」編排的轉捩點、〈어제, 오늘 그리고〉等以鍵盤與貝斯為重心的搖滾傾向、作詞陣容。sound 升 thin，可寫。
+- 이승철 Part 1：IZM 評論查無；年份 1988／1989 分歧，稿中只寫「八〇年代末」。
+- Lizard《彼岸の王国》、Everfor《空中閣樓》：各再搜一次，無新資料；照研究稿薄寫。
+
+### 主線審稿（逐張 30 張，改 13 處，改動檔 `review-sd-012.json`）
+- 刪雜項：신승훈 電視首秀延後花絮、이문세 5집 定價糾紛、이승철〈안녕이라고 말하지마〉2010 年翻唱、929 團名由來、kinoue64 紙套 CD、desert sand 下「Bandcamp 頁沒有說明」的後設句、Lindsheaven「標籤」改「風格」。
+- 조용필 7집：百大名盤名次維基 76／京鄉 75 不一 → 不寫名次；「曲子多由他作曲」無出處刪。
+- Waldron／日野：「一面／另一面」等於 A／B 面 → 改「兩首長曲」；「有人視為傑作」只有 JMA 一家 → 改寫為評價分歧；Billie Holiday 伴奏刪（超字數且與本盤無關）。
+- 장기하와 얼굴들：寫作層把研究稿「長谷川洋平」改成「長谷川陽平」，核對正確。
+
+### 上線
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-012.json`；30 張 60 鍵 bulk put；回讀 **60/60 一致**；`front-check` **前台 30/30 新稿**。
+- onboarding manifest 同步 30 處。
+
 ## sd-013（30 張，CJK：NANIWA EXPRESS、Posh Inverse、PUZZLEMAN、Reol、Beirach＋富樫、山本精一、Lacy／高橋／小杉、The Players、記號士、THE SQUARE 2、VANITAS命死、Woody Herman＋北村英治、YAS-KAZ、ZAZEN BOYS、くるり、ずっと真夜中でいいのに。、なぎらけんいち、ひがしのひとし 2、カリオカ 4、カーネーション、Wave II、ジョージ大塚、スカイドッグ 2、ゼロ戦）— s7
 
 - 研究：3 支 Sonnet，WebSearch 19＋15＋15＝49 次；主線補查約 12 次（照「研究補強」對 thin／none 卡逐張補）。
