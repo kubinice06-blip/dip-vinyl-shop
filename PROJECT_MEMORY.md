@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s36：sd-066、sd-067 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-066 上線 30（Elvin Jones、Emerald Web、Emil Beaulieau、Hurel／EIC、Ensemble Recherche 2、Entheogenic、EP-4、Epic45、Erik Truffaz 5、eRikm、ERISTHEPLANET、Erroll Garner 4、Parker & Prévost、Evil Needle 2、Evoken 2、Exos 2、E.A.R. 3）；sd-067 上線 30（E.A.R.、Bosso & Girotto、Fania All-Stars、Fareed Haque、Fausto、Fila Brazillia 3、Filmmaker、Fin.K.L、Final、Final Stage、Fitz Ambro$e & Ohbliv、Fix、Flatt & Scruggs、FTB 2、Fluxion、Foje、Forests、Franklin Bruno、Lonberg-Holm & Stephens、Freddie Hubbard 4、Freddie King、Freddie Roach 2、Freeform）。
+- **主線補查**：EP-4《Multilevel Holarchy》（Discogs notes＋商品頁聲音描述）、Truffaz《Mantis》、Final Stage（越文 HEHEMETAL 首張報導，story none→ok）、Fix（Discogs credits 班底）、Fausto（排除誤歸 1970 首張的 Nunes／〈Madrugada〉）。舊稿錯誤更正：《Here to Stay》擱置年數、Lachenmann 盤廠牌、《Mesmerised》合作者（派工詞誤記）。審稿改 sd-066 13 處、sd-067 5 處。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-066.json,review-sd-067.json,kv-before-sd-066.json,kv-before-sd-067.json}`、`desc-tools/batches/{cards,research,output}/sd-06{6,7}*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。WebSearch 約 94 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s37：sd-068、sd-069 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-068 上線 30（FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）；sd-069 上線 30（Gone、Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）。FRICTION、George Young、Petrella、Ghost、Images、Dou Mahi 等資料只到藝人層級，照 delayde 前例薄寫上線。
