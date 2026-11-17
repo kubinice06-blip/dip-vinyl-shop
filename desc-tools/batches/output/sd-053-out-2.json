@@ -1,32 +1,92 @@
 [
-  {
-    "key": "woody guthrie|struggle",
-    "artist": "Woody Guthrie",
-    "album": "Struggle",
-    "desc": "十二首歌裡有八首和死亡有關，Woody Guthrie 唱的是礦工與罷工者。《Struggle》的原型是 1946 年 Asch Records 發行的六首 78 轉套組，錄於 1940 年代中期，常被視為早期的概念專輯；1976 年 Folkways 再加六首擴成 LP。Guthrie 堅持要做一系列描寫勞動者奮鬥的唱片，〈Ludlow Massacre〉就寫 1914 年科羅拉多礦工罷工遭屠殺。編制只有吉他、口琴與 Cisco Houston 的和聲，唱法是報導式的。"
-  },
-  {
-    "key": "world standard|country gazette",
-    "artist": "World Standard",
-    "album": "Country Gazette",
-    "desc": "鈴木惣一朗並不特別喜歡鄉村音樂，卻決定做一張鄉村專輯。《Country Gazette》是他以 World Standard 名義在 1997 年發表、細野晴臣製作的作品，規則是以取樣為主、做出無法在現場重現的虛擬世界，靈感來自 John Fahey 與《Twin Peaks》。他用 AKAI 取樣機處理吉他、班鳩與曼陀林，加上田野錄音與拼貼，把 downtempo 電子和 Delta blues 疊在漂浮的 ambient 上，細野彈藍調風的尼龍弦吉他。"
-  },
-  {
-    "key": "world's end girlfriend|seven idiots",
-    "artist": "world's end girlfriend",
-    "album": "Seven Idiots",
-    "desc": "前田勝彦先寫好一首首流行歌，再把人聲整個抽掉。《Seven Idiots》是他以 world's end girlfriend 名義在 2010 年發表的專輯，也是自創廠牌 Virgin Babylon Records 的第一張發行。他在原本的和弦上疊旋律與樂器，再把歌拆開重組；概念取自但丁《神曲》，但旅程反過來，從天堂下到地獄。聲音以器樂為主，弦樂、木管、薩克斯風、銅管與電吉他輪替，節奏來自取樣與 glitch 效果，笑聲和尖叫也被當成樂器。"
-  },
-  {
-    "key": "would-be-goods|the camera loves me",
-    "artist": "Would-Be-Goods",
-    "album": "The Camera Loves Me",
-    "desc": "1983 年，Mike Alway 在演出後台遇到 18 歲的 Jessica Griffin。《The Camera Loves Me》是她領軍的 Would-Be-Goods 首張專輯，1988 年由 Alway 的 él Records 發行；她沒有自己的樂團，伴奏由未掛名的 The Monochrome Set 團員擔任。音樂輕快、帶六〇年代氣氛，她用精準的英式標準發音唱，調性調皮。這張後來被視為 Sarah Records 一系 twee pop 的重要靈感來源。"
-  },
-  {
-    "key": "writing on the wall|the power of the picts",
-    "artist": "Writing on the Wall",
-    "album": "The Power of the Picts",
-    "desc": "一些樂評把它算作 Black Sabbath 之前少數幾張重金屬專輯之一。《The Power of the Picts》是愛丁堡樂團 Writing on the Wall 唯一的專輯，1969 年發行；樂團轉向前衛搖滾後家鄉反應冷淡，經理把他們帶到倫敦的 Middle Earth 俱樂部演出。聲音是重藍調迷幻接上硬搖滾，Hammond 風琴主導、riff 粗糲，主唱的戲劇化唱法常被拿來比 Arthur Brown。1990 年代初才被重新發現。"
-  }
+ {
+  "key": "woody guthrie|struggle",
+  "artist": "Woody Guthrie",
+  "album": "Struggle",
+  "desc": "十二首歌裡有八首和死亡有關，Woody Guthrie 唱的是礦工與罷工者。《Struggle》的原型是 1946 年 Asch Records 發行的六首 78 轉套組，錄於 1940 年代中期，被視為早期的概念專輯；1976 年 Folkways 再加六首擴成 LP。Guthrie 堅持要做一系列描寫勞動者奮鬥的唱片，〈Ludlow Massacre〉就寫 1914 年科羅拉多礦工罷工遭屠殺。編制只有吉他、口琴與 Cisco Houston 的和聲，唱法是報導式的。"
+ },
+ {
+  "key": "world standard|country gazette",
+  "artist": "World Standard",
+  "album": "Country Gazette",
+  "desc": "鈴木惣一朗並不特別喜歡鄉村音樂，卻決定做一張鄉村專輯。《Country Gazette》是他以 World Standard 名義在 1997 年發表、細野晴臣製作的作品，規則是以取樣為主、做出無法在現場重現的虛擬世界，靈感來自 John Fahey 與《Twin Peaks》。他用 AKAI 取樣機處理吉他、班鳩與曼陀林，加上田野錄音與拼貼，把 downtempo 電子和 Delta blues 疊在漂浮的 ambient 上，細野彈藍調風的尼龍弦吉他。"
+ },
+ {
+  "key": "world's end girlfriend|seven idiots",
+  "artist": "world's end girlfriend",
+  "album": "Seven Idiots",
+  "desc": "前田勝彦先寫好一首首流行歌，再把人聲整個抽掉。《Seven Idiots》是他以 world's end girlfriend 名義在 2010 年發表的專輯，也是自創廠牌 Virgin Babylon Records 的第一張發行。他在原本的和弦上疊旋律與樂器，再把歌拆開重組；概念取自但丁《神曲》，但旅程反過來，從天堂下到地獄。聲音以器樂為主，弦樂、木管、薩克斯風、銅管與電吉他輪替，節奏來自取樣與 glitch 效果，笑聲和尖叫也被當成樂器。"
+ },
+ {
+  "key": "would-be-goods|the camera loves me",
+  "artist": "Would-Be-Goods",
+  "album": "The Camera Loves Me",
+  "desc": "1983 年，Mike Alway 在演出後台遇到 18 歲的 Jessica Griffin。《The Camera Loves Me》是她領軍的 Would-Be-Goods 首張專輯，1988 年由 Alway 的 él Records 發行；她沒有自己的樂團，伴奏由未掛名的 The Monochrome Set 團員擔任。音樂輕快、帶六〇年代氣氛，她用精準的英式標準發音唱，調性調皮。這張後來被視為 Sarah Records 一系 twee pop 的重要靈感來源。"
+ },
+ {
+  "key": "writing on the wall|the power of the picts",
+  "artist": "Writing on the Wall",
+  "album": "The Power of the Picts",
+  "desc": "Hammond 風琴在混音裡最搶耳，主唱的戲劇腔明顯學自 Arthur Brown。《The Power of the Picts》是愛丁堡樂團 Writing on the Wall 唯一的專輯，1969 年發行；樂團轉向前衛搖滾後家鄉反應冷淡，經理把他們帶到倫敦的 Middle Earth 俱樂部演出。聲音是重藍調迷幻接上硬搖滾，riff 粗糲，帶 R&B 與靈魂樂的底子，也被拿來和 The Doors、Procol Harum 相比。1990 年代初才被重新發現。"
+ },
+ {
+  "key": "x-dream|we created our own happiness",
+  "artist": "X-Dream",
+  "album": "We Created Our Own Happiness",
+  "desc": "以色列廠牌 Avatar 把這張漢堡唱片列為 trance 的經典之一。《We Created Our Own Happiness》是雙人組 X-Dream 的第二張專輯，1990 年代中在 Tunnel Records 發行。Marcus C. Maichel 與 Jan Muller 起初做帶 hip-hop 影響的 techno，1990 年代初在漢堡接觸早期 Goa trance 後轉向。這張比先前更貼近迷幻 trance 的原始公式，以滾動的貝斯線與底鼓推進。"
+ },
+ {
+  "key": "xpdc|darjah satu",
+  "artist": "XPDC",
+  "album": "Darjah Satu",
+  "desc": "錄音時樂團還叫 Tragedy，唱片做到一半才改名 XPDC。《Darjah Satu》意為「小學一年級」，是吉隆坡馬來語搖滾團 XPDC 的首張專輯，1990 年發行，製作人 J.S. Kevin 替他們取了這個團名。單曲〈C.I.N.T.A.〉入圍第五屆 Anugerah Juara Lagu。音樂屬於當時主導馬來西亞排行榜的 rock kapak，以 hard rock 為底，有慢速 power ballad、繁複的電吉他獨奏、主唱 Mael 寬廣的音域與馬來語歌詞。"
+ },
+ {
+  "key": "yann tiersen|le fabuleux destin d'amélie poulain",
+  "artist": "Yann Tiersen",
+  "album": "Le Fabuleux Destin d'Amélie Poulain",
+  "desc": "一位製作助理在車上播了 Yann Tiersen 的 CD，導演聽完買下他所有專輯。《Le Fabuleux Destin d'Amélie Poulain》是 Jean-Pierre Jeunet 2001 年電影《艾蜜莉的異想世界》的原聲帶。初剪就用了他的舊作，約一半器樂曲取自《Le Phare》等專輯，他再另寫新曲。聲音以手風琴、顫音琴、曼陀林與口風琴為主，也是他第一次用完整樂團。這張拿下 2002 年 César 最佳電影配樂，Tiersen 後來說重來不會再做一次。"
+ },
+ {
+  "key": "yasuhiro kohno trio + 1|peace",
+  "artist": "Yasuhiro Kohno Trio + 1",
+  "album": "Peace",
+  "desc": "河野康弘 19 歲才開始學鋼琴，先在矢沢永吉樂團當鍵盤手，之後才轉做爵士。《Peace》是他以 Trio + 1 名義發行的第一張專輯，1983 年由 Aketa's Disk 發行，編制是鋼琴、山田晃路的貝斯與藤沢博延的鼓。除了 Horace Silver 的〈Peace〉，曲子都是河野自作，〈Like A McCoy〉以 McCoy Tyner 為靈感，〈J.C. Blues〉獻給 John Coltrane；聲音厚重，偏 spiritual jazz。"
+ },
+ {
+  "key": "yasuhiro kohno trio + 1|song of island",
+  "artist": "Yasuhiro Kohno Trio + 1",
+  "album": "Song Of Island",
+  "desc": "合成器流行當道的 1985 年，東京一家 live house 裡仍有人在錄原聲爵士。《Song Of Island》是河野康弘三重奏的第三張專輯，在 live house「Again」現場錄下，原版由他自設的私人廠牌小量壓製，知道的人很少。編制是鋼琴、Masahiro Kanno 的顫音琴、貝斯與鼓，收四首自作與〈Love For Sale〉；曲子篇幅都長，顫音琴替流動的段落添了優雅，常被歸入 modal 與 spiritual jazz。2022 年 BBE 首次重發。"
+ },
+ {
+  "key": "ybo²|alienation",
+  "artist": "YBO²",
+  "album": "Alienation",
+  "desc": "全碟核心的〈Amerika〉，把幾首西方流行歌和一首迪士尼主題曲拆開重組。《Alienation》是 YBO² 1986 年的首張專輯，出在《FOOL'S MATE》創辦人北村昌士自設的 TRANS RECORDS，被形容為一張陰鬱、暴力、關於戰爭與瘋狂的概念作。北村的拼貼式寫法，配上 K.K. Null 磨擦、偏離常軌的吉他與吉田達也技術繁複的鼓，結構複雜、常用奇數拍，人聲緊繃歇斯底里。樂團當時被視為日本獨立圈的領頭羊。"
+ },
+ {
+  "key": "yevgeny mravinsky|shostakovich: symphony no. 11 the year 1905",
+  "artist": "Yevgeny Mravinsky",
+  "album": "Shostakovich: Symphony no. 11 The Year 1905",
+  "desc": "1967 年布拉格之春音樂節上，列寧格勒愛樂演出一首寫血腥星期日的交響曲。這是 Yevgeny Mravinsky 指揮蕭士塔高維契第十一號《The Year 1905》的現場，由捷克廣播錄下；他首演過蕭氏多首交響曲，這首則不是。這首 1957 年紀念 1905 年革命的作品四個樂章不間斷，引用約九首革命歌曲，第二樂章寫群眾、軍隊推進與槍聲，終樂章以管鐘當警報。他的演奏被形容為緊迫而全場在掌控之下，〈宮殿廣場〉壓低的靜止與大高潮形成對比；錄音最響處略顯緊繃。"
+ },
+ {
+  "key": "yoshihiro sawasaki|perfumed garden",
+  "artist": "Yoshihiro Sawasaki",
+  "album": "Perfumed Garden",
+  "desc": "サワサキヨシヒロ 1993 年在東京與 Ken Ishii 同台，那場活動被視為日本電子音樂新動向的起點。《Perfumed Garden》是他 1994 年以 YS 名義在 Sublime Records 發行的專輯，常被列為九〇年代 ambient techno 的名盤。他是 Sublime 用 Ken Ishii 的銷量投資的新銳製作人之一。聲音在 ambient 與 techno 之間，帶 acid 的成分。2019 年應歐洲要求重發，搭上日本環境音樂重新評價的浪潮。"
+ },
+ {
+  "key": "zbigniew preisner|la double vie de véronique",
+  "artist": "Zbigniew Preisner",
+  "album": "La Double Vie de Véronique",
+  "desc": "唱片上掛名的十八世紀荷蘭作曲家 Van den Budenmayer，其實並不存在。《La Double Vie de Véronique》是 Zbigniew Preisner 為 Krzysztof Kieślowski 1991 年電影寫的配樂，那位作曲家是兩人發明的。Weronika 死前唱的就是他的 E 小調作品。配樂有兩個動機：一個是三拍子、帶 ostinato 的合唱，以但丁《地獄篇》為詞，女高音從中浮出；另一個由雙簧管引出，逐漸長成全管弦樂。"
+ },
+ {
+  "key": "zbigniew preisner|trois couleurs : rouge",
+  "artist": "Zbigniew Preisner",
+  "album": "Trois couleurs : Rouge",
+  "desc": "《紅》在 César 拿到六項提名，唯一得獎的是 Preisner 的配樂。《Trois couleurs : Rouge》是 Zbigniew Preisner 為 Krzysztof Kieślowski 三色三部曲終章寫的配樂，1994 年發行，由 Sinfonia Varsovia 演奏。主題是一段開拍前就寫好的 Bolero，象徵人生中一再重現的事件。配樂有兩個動機：伴隨 Valentine 的慢而細緻，伴隨法官的快而有力，最後前者勝出；整體是稀疏的調性新浪漫風格。"
+ }
 ]
