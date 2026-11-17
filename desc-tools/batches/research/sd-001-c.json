@@ -172,18 +172,6 @@
   "notes": "舊簡介說 Super Famicom 版 7 月 19 日才上市比唱片晚，這是版本日期雜項，未查證也不要寫。N23D-001／N20T-001、PSCN-5014、NTCP-5014、44 軌為雜項。聲音描述只有「SNES PCM 音色、偏管弦樂感」，沒有逐曲描述；寫作層薄寫。"
  },
  {
-  "key": "武田和命|gentle november",
-  "artist": "武田和命",
-  "album": "Gentle November",
-  "facts": [],
-  "coverage": {
-   "what": "none",
-   "story": "none",
-   "sound": "none"
-  },
-  "notes": "待查（本輪尚未研究）"
- },
- {
   "key": "菊田裕樹|聖剣伝説2 original sound version",
   "artist": "菊田裕樹",
   "album": "聖剣伝説2 Original Sound Version",
@@ -245,5 +233,129 @@
    "sound": "ok"
   },
   "notes": "舊簡介全是版本與軌數雜項。年份 1993 與 ja wiki 吻合。伊藤賢治說法出自 en wiki，本站無第二來源，寫作可省。「Secret of Mana」盤名為北美版，不要寫成原盤。"
+ },
+ {
+  "key": "武田和命|gentle november",
+  "artist": "武田和命",
+  "album": "Gentle November",
+  "facts": [
+   {
+    "text": "武田和命是日本的次中音薩克斯風手，1965 年前後與富樫雅彦等人一起活動，屬於日本最早演奏自由爵士的團體之一。",
+    "src": "https://ja.wikipedia.org/wiki/山下洋輔",
+    "block": "what"
+   },
+   {
+    "text": "他先在山下洋輔三重奏的錄音中演出，1981 年（《寿限無〜山下洋輔の世界》）才正式成為該三重奏成員，與小山彰太（鼓）、林栄一（中音薩克斯風）同組到 1983 年解散。",
+    "src": "https://ja.wikipedia.org/wiki/山下洋輔",
+    "block": "what"
+   },
+   {
+    "text": "《Gentle November》是 1979 年在山下洋輔創辦的 Frasco 廠牌推出的專輯；山下洋輔同時擔任鋼琴與製作人，兩人在這年重逢（山下官方年表記為「十年ぶりに再会」）。",
+    "src": "https://jazzmusicarchives.com/album/yosuke-yamashita-山下洋輔/invitation-yosuke-in-the-gallery(live)",
+    "block": "story"
+   },
+   {
+    "text": "Frasco 在 1979 年同時推出山下洋輔的《Invitation: Yosuke In The Gallery》（富士電視台 Gallery 的鋼琴獨奏現場）與《First Time》，屬於山下自家廠牌初期的一批作品。",
+    "src": "https://jazzmusicarchives.com/album/yosuke-yamashita-山下洋輔/invitation-yosuke-in-the-gallery(live)",
+    "block": "what"
+   },
+   {
+    "text": "曲目取自 Tadd Dameron、McCoy Tyner、Rodgers & Hart 等人的曲子加上武田自己的作品，是以標準曲與原創並置的次中音薩克斯風作品，而非自由即興。",
+    "src": "https://jazzmusicarchives.com/album/yosuke-yamashita-山下洋輔/invitation-yosuke-in-the-gallery(live)",
+    "block": "sound"
+   }
+  ],
+  "coverage": {
+   "what": "thin",
+   "story": "thin",
+   "sound": "none"
+  },
+  "notes": "查不到本盤的樂評、解說或聲音描述（ja/en wiki、兩次搜尋皆無）。第 5 條的曲目來源是舊簡介自述（未獨立查證），而且「次中音薩克斯風」是依武田在山下三重奏的位置推定，本盤自身樂器欄未確認——寫作請小心。舊簡介的錄音地（坂戸文化会館）、FS-7030、日期與官方年表字句皆雜項，不寫。誠實標 thin，建議簡介偏短（約 150 字）。"
+ },
+ {
+  "key": "김현철|김현철 vol.1",
+  "artist": "김현철",
+  "album": "김현철 Vol.1",
+  "facts": [
+   {
+    "text": "1989 年 8 月 26 日發行，是김현철（金賢哲）的首張專輯，全曲詞曲與製作都由他一人包辦，在 Seoul Studio 錄音，全長 39 分 32 秒。",
+    "src": "https://ko.wikipedia.org/wiki/김현철_Vol.1",
+    "block": "what"
+   },
+   {
+    "text": "〈아침 향기〉是他就讀英東高中時寫的曲子；〈동네〉寫的是開發之前的狎鷗亭洞一帶的風景。",
+    "src": "https://ko.wikipedia.org/wiki/김현철_Vol.1",
+    "block": "story"
+   },
+   {
+    "text": "出道時被稱為「第二個柳在夏」（제2의 유재하），〈춘천가는 기차〉等曲讓他成為 1990 年代的代表歌手之一。",
+    "src": "https://newstomato.com/ReadNews.aspx?no=1055714",
+    "block": "what"
+   },
+   {
+    "text": "2007 年《京鄉新聞》與 가슴네트워크 選出的「韓國大眾音樂 100 大名盤」中名列第 17 位。",
+    "src": "https://ko.wikipedia.org/wiki/김현철_Vol.1",
+    "block": "what"
+   },
+   {
+    "text": "後來因日本 city pop 熱潮重新被關注，〈동네〉〈오랜만에〉被視為「韓國的 city pop」；有媒體評為 1989 年韓國 city pop 的標準答案，受爵士融合影響、但重心更偏向流行。",
+    "src": "https://newstomato.com/ReadNews.aspx?no=1055714",
+    "block": "after"
+   },
+   {
+    "text": "김현철自己說這張專輯在「city pop」這個詞出現之前就問世，裡面已經有都市、風、香氣這些概念，是他的音樂 DNA；但他也反感被單一歸類成 city pop。",
+    "src": "https://newstomato.com/ReadNews.aspx?no=1055714",
+    "block": "story"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "舊簡介全是曲長統計。「第 2 之 3 軌 5:25」皆雜項，不寫。「最短的〈아침향기〉」的高中時期是正確的（ko wiki）。沒有找到編曲者與具體樂器（ko wiki 與搜尋皆無）；聲音只有「爵士融合影響、偏流行、都會感」的評語，寫作層請薄寫。「第二個柳在夏」稱號出自搜尋摘要的新聞，勿當成官方稱號寫成事實，若寫要用「出道時被比作」。排名 17 位出自 ko wiki 條目（對應 2007 年京鄉新聞報導）。"
+ },
+ {
+  "key": "김현철|32℃ 여름",
+  "artist": "김현철",
+  "album": "32℃ 여름",
+  "facts": [
+   {
+    "text": "1992 年發行的第二張專輯，是김현철在 1989 至 1994 年於東亞唱片（Dong-A）的三張錄音室專輯之一。",
+    "src": "https://paladinvinyl.com/products/kim-hyun-chul-vol-2-vinyl",
+    "block": "what"
+   },
+   {
+    "text": "他在這張之前因突發腦梗塞休養了約兩年，出道盤的熱潮之後這是復出作。",
+    "src": "https://paladinvinyl.com/products/kim-hyun-chul-vol-2-vinyl",
+    "block": "story"
+   },
+   {
+    "text": "整張以爵士融合的樂器編制為底，混合融合爵士、AOR 與韓國歌謠；他受美國融合爵士與 David Foster 式流行的影響。",
+    "src": "https://paladinvinyl.com/products/kim-hyun-chul-vol-2-vinyl",
+    "block": "sound"
+   },
+   {
+    "text": "與曹東益（조동익）、咸春浩、孫振泰的一個器樂計畫有關，其聲響痕跡貫穿全碟。",
+    "src": "https://paladinvinyl.com/products/kim-hyun-chul-vol-2-vinyl",
+    "block": "story"
+   },
+   {
+    "text": "休養期間他學會編程，這在〈More or Less〉一類電子流行曲中看得到；標題曲帶拉丁風，和出道盤方向不同；〈연습실에서〉被做成爵士標準曲的樣子。",
+    "src": "https://paladinvinyl.com/products/kim-hyun-chul-vol-2-vinyl",
+    "block": "sound"
+   },
+   {
+    "text": "器樂曲〈눈싸움하던 아이들〉也收在 BEAT-88 的黑膠上；〈까만 치마를 입고〉〈나나나〉（趙奎燦參與）等曲受到喜愛，但沒有出現像〈춘천가는 기차〉那樣的大熱門。",
+    "src": "https://paladinvinyl.com/products/kim-hyun-chul-vol-2-vinyl",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "ok"
+  },
+  "notes": "出處是黑膠店 Paladin Vinyl 的重發介紹，不是樂評；性質是店家說明，可當事實但語氣宜平實。舊簡介的碟名符號字元、曲長統計皆雜項，不寫。〈More or Less〉等曲名是店家英譯，原韓文曲名未確認，寫作請只用卡單與已知的韓文曲名（〈연습실에서〉〈까만 치마를 입고〉〈나나나〉〈눈싸움하던 아이들〉）。「曹東益等人器樂計畫」一句語意含糊，不建議直接寫。"
  }
 ]
