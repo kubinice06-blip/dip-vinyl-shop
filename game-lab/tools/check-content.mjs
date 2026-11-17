@@ -424,8 +424,15 @@ export function contentProblems(C, E) {
     'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn',   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
     'readRight', 'seeThrough', 'seeThroughNoKey',   // 第 A 波 4：讀對了就說出來（剋中前加「讀對了。」；看穿唬人＝「你看穿了！」）
     'lpAria',   // lpAria：上一手小列的讀屏字（店主 11-16）
-    'honestPlain', 'bluffPlain', 'seeThroughPlain', 'readHit', 'readCounter', 'readMirror', 'readThird'];   // 11-17 讀牌加難：正式對局結果句不念關鍵字、他讀到你
-  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey；上一手小列加 lpAria；11-17 加 honestPlain…readThird）');
+    'honestPlain', 'bluffPlain', 'seeThroughPlain', 'readHit', 'readCounter', 'readMirror', 'readThird',   // 11-17 讀牌加難：正式對局結果句不念關鍵字、他讀到你
+    // 11-17 上一手細節（scratchpad v5/recap）：教學那場小列的讀屏字、上一手詳情／這場紀錄面板的框字（結果字一律是上面的結果句）
+    'lpAriaInfo', 'rcLink', 'rcList', 'rcListDone', 'rcCount', 'rcAll', 'rcEmpty', 'rcHand', 'rcOf', 'rcAfter', 'rcVs', 'rcNone',
+    'rcCounter', 'rcCountered', 'rcGapYou', 'rcGapHim', 'rcMirrorWin', 'rcMirrorLose', 'rcTie', 'rcBluff', 'rcSaw', 'rcRead', 'rcPrev', 'rcNext', 'rcClose', 'rcCover'];
+  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey；上一手小列加 lpAria；11-17 加 honestPlain…readThird、上一手細節 lpAriaInfo／rc*）');
+  // 11-17 上一手細節：recap.js 的備用字（content 沒載到時用）＝content 那一份（同一套字）
+  { const RC = fs.readFileSync(path.join(LAB, 'recap.js'), 'utf8'), m = /const RT0 = \{([\s\S]*?)\n  \};/.exec(RC);
+    const bad = m ? [...m[1].matchAll(/(\w+): '([^']*)'/g)].filter(([, k, v]) => C.duelText[k] != null && C.duelText[k] !== v).map(([, k]) => k) : ['（找不到 RT0）'];
+    ok(!bad.length, 'recap.js RT0 的備用字＝content.duelText：' + bad.join('、')); }
   ok(C.duelText && ['seeThrough'].every(k => ['{key}', '{hint}', '{e}'].every(x => String(C.duelText[k]).includes(x))) && ['{hint}', '{e}'].every(x => String(C.duelText.seeThroughNoKey).includes(x)) && /^你看穿了/.test(C.duelText.seeThrough) && /讀對了/.test(C.duelText.readRight),
     'duelText.readRight「讀對了」、seeThrough／seeThroughNoKey「你看穿了！」＋{key}{hint}{e} 的佔位（第 A 波 4）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');

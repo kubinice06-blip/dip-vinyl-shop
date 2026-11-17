@@ -4,7 +4,7 @@
 //
 // 檢查：
 //   1. 禁用字串（店主用語、支語、破折號、舊三軸名「入」）：content.js 的字串、cards.js 的 pitch、
-//      ui.js／duel.js／tutorial.js／cardinfo.js／econ.js（v4 B3）／stage.js／shop.js／shop-props.js／fx.js／index.html 的字串、shops/*.json 的名牌（缺檔就跳過）。
+//      ui.js／duel.js／recap.js（11-17 上一手詳情）／tutorial.js／cardinfo.js／econ.js（v4 B3）／stage.js／shop.js／shop-props.js／fx.js／index.html 的字串、shops/*.json 的名牌（缺檔就跳過）。
 //      三軸一律經典／冷門／硬蕊；「唱片資訊」不寫「卡片資訊」；「櫃檯」不寫「櫃台」；「派對」不出現；台詞與提示不用破折號。
 //      藝人／專輯含「派對」：核心卡擋、精選新卡（cards-pool.js，真實專輯名）只警告（第 B 波 D19）。
 //   2. v3 拿掉的系統不准回來（SPEC-v3 §2.3、§10.6）：
@@ -140,7 +140,7 @@ HABIT_ZH = new Set(Object.values(C.habits || {}).map(h => h && h.zh).filter(Bool
 const scanned = [];
 const FILES = [
   // [檔名, 種類, 舊系統字, 對決／教學的字]
-  ['content.js', 'js', true, true], ['duel.js', 'js', true, true], ['tutorial.js', 'js', true, true],
+  ['content.js', 'js', true, true], ['duel.js', 'js', true, true], ['recap.js', 'js', true, true], ['tutorial.js', 'js', true, true],
   ['ui.js', 'js', true, false], ['cardinfo.js', 'js', true, false], ['econ.js', 'js', true, false], ['index.html', 'html', true, false],
   ['stage.js', 'js', false, false], ['shop.js', 'js', false, false], ['shop-props.js', 'js', false, false], ['fx.js', 'js', false, false]
 ];

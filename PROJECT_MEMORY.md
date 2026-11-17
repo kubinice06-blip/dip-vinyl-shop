@@ -1,5 +1,100 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜game-lab 第 B 波：精選 5,000 張進遊戲＋卡片 id 改主站 catalogId、一檔貨、今日推薦集點卡、想要清單加權
+
+- **店主 11-16**：「全卡池……可以先精選五千張」「每回合架上可購買的唱片更換一次，但固定一大批……打完傳說藏家後這一大批再更換成新的一批」「每日上線可收到推薦新專輯，蒐集一週給獎勵」。名單 scratchpad `v5/pool5k/`（抽樣頁 artifact NGyuw7362XNGRdt2dbPbZB），規格 `v5/wave-b/SPEC-B.md`、裁定 `v5/wave-b/rulings.md`。
+- **卡池＋id**：遊戲卡 5,045 張＝核心 368（`cards.js`，同步）＋精選新卡 4,677（`cards-pool.js` 照欄存邏輯＋名字，同步；封面試聽 `cards-media.json` 延後 fetch）。卡片 id 直接改主站 catalogId（不留別名）；`content.js` 展開成新的 `C.cards`（`require('./cards.js')` 仍 368）。bake-cards 補 Apple `bf` 規則、`--pool-only`、`LINK_OVERRIDES` 改 catalogId 鍵（含 #467 修正）。組牌快取（WP2-0）：5,045 張下 sim 不變慢、結果逐字相同。
+- **存檔**：SAVE_V 6→7；`mapIds` 深走訪整份存檔（含進行中 run、打到一半的對決、lastFight）把舊 slug 換 catalogId；`bak6` 備份；遷移失敗／卡池沒載到／存檔太新＝整份唯讀但保留人物與序章。舊 run 停在待說情時 `pinOldDeck` 把舊卡池那副牌釘住（說情重打同一副）。
+- **一檔貨**：`run.shop.lot` 每輪抽一檔 100 張（第 1 輪策展池、第 2 輪起全卡池），每位客人之間每箱換一排（每位 47 張），打完藏家整檔換新；買走的不再上架；特價箱、配件照舊每輪（亂數位置不變）。
+- **今日推薦集點卡**：獨立鍵 `dipGameLab_v1.daily`；本地日期往前才發；挑沒認識過的（想要清單 ×5、常擁有頻率 ×3），在試聽機收下＝擁有、蓋一格；滿 7 格三選一換一張**史詩**。
+- **想要清單**：抽檔時每張想要的卡擲 35%（每檔重洗順序、一檔最多 3 張），上架標「你想要的」。
+- **主站**：`pool-index.json` v2（fnv1a32 雜湊、扣王牌／頂點／傳奇 4,875 張），主站 `index.html` 兩種形狀都吃；`?card=` 帶 catalogId（特殊字元 encode）、舊 slug 照表換；**遊戲不收傳奇種子**（主線 M2）。
+- **主線裁定**：首屏 gzip 門檻 740→780 KB（現 771 KB）；sim T3 改 n≥4000 硬判（n1000 抽樣誤差 ±0.14）；讀牌曲線維持 #480 原值；唱片櫃分批畫（3,000 張開頁 2.6 s→0.2 s）。
+- **流程**：pool5k 名單 → 設計（盤點→規格→挑錯→定稿）→ 施工（閘門 0、WP1 資料、WP2-0 快取、WP2 引擎、WP3 介面∥WP4 模擬）→ 驗收（WP5 e2e-pool、WP6 主站、三角度審查確認 12 項全修）→ 併 #480／#467（解 8 檔衝突、審查確認 2 項）→ 併 #491（4 檔衝突）。
+- **模擬（併 #480 後 n1000）**：22/22＋T3 參考 1.92±0.14（n4000 2.19）；新手第 1–3 位死 12.8%、到第 10 位 28.6%；一般玩家中位 27；會讀的到第 50 位 15.9%。
+- **主要檔案**：`game-lab/{cards.js,cards-pool.js,cards-media.json,bins.js,content.js,engine.js,ui.js,econ.js,econ.css,style.css,shop.js,duel.js,sim.mjs,pool-index.json,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{bake-cards,build-pool-index,check-content,check-covers,check-shops,lint-copy,make-pool-list,migrate-ids}.mjs`、`game-lab/tools/{pool-list,legacy-ids}.json`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-pool,e2e-lib,e2e.spec,e2e-econ,e2e-taps,e2e-unlock}.mjs`、主站 `index.html`。`?v=81`。
+- **驗證**：check-content（5,045 張）／check-covers／check-shops／build-pool-index --check／lint-copy；併 #491 後 engine 2,897,590、tutorial 505,169 全過；e2e 見 PR。**沒驗**：真 iPhone、正式站 CDN 壓縮後的首屏時間。
+
+### 2026-11-17｜dip-vinyl-shop｜game-lab 上一手細節：揭曉後停住等點、上一手詳情、這場紀錄
+
+- **店主 11-17**：「我覺得上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了，怎麼辦。」（現況實測：結果框只停約 1.1 秒、「上一手」那行再 0.6 秒，輪到你出牌時整句不見，只剩小列兩張小封面。）
+- **① 揭曉後停住等點**：結果框出現後不倒數，「點一下繼續 ▼」；點盤面任何地方（含牌桌兩張大封面；按住封面＝唱片資訊、發燒配件＝說明）、盤面外的舞台、Enter＝繼續，放行後直接換手（不再停「上一手」那行）；最後一手也停（點了才出大章）。⏸ 加「揭曉後自動換手」（`save.settings.autoNext`，預設關）。`?fast=1`、教學、autoplay、`__lab.duelLab`（沒給 `hold:true`）、dev harness 照原本時序。
+- **② 上一手詳情**：點上一手小列＝蓋住盤面的面板（‹ 第 n 手／6 ›［全部］✕、提示原句、雙方封面 84 px＋屬性星＋專輯藝人、唬你／看穿／讀到那句→規則句＋扣分→第三行→小字逐條、這手打完雙方聲望）；按住小列照舊＝唱片資訊；教學那場點小列照舊＝唱片資訊。
+- **③ 這場紀錄**：頂欄「紀錄」（第 1 手揭曉後才出、教學不出）每手一行（籤：被唬／看穿／被讀到、結果詞、扣分），點一行＝那手詳情；只列已揭曉的手。打完存 `run.lastFight`（序章不存、下一場換掉、重新整理還在），領獎、說情那段、結算畫面頂欄「紀錄」開 modal。
+- **資料**：engine `duel.log` 每手純加 pId eId pStar eStar ace eAce by not rel notes script apex（不取亂數；sim 輸出跟改前一字不差）；新檔 `recap.js`（DipLabRecap）把 log 組回 clash 形狀交給 `clashText`，字全部是當時浮框的字，半指／不露不拿藏起來的計畫色判真假。
+- **審查修正（5 條，scratchpad `v5/recap/FIX.md`）**：停住時點牌桌兩張大封面（或兩張中間的縫，觸控校正會吸到封面）原本開唱片資訊不放行 → 改成放行（按住才開資訊）；全域 `.sw`（⏸ 開關鈕）套到「看穿」→ recap 的 class 改 `saw`；打完的大章 `.kost`（z 25）壓在紀錄面板上 → 面板 z 26；改版前的舊存檔 log 沒有 `by`，「他剋不動」寫成反方向 → `recap.js` 照三相剋推回 by（舊存檔半指那手沒有 `not` 會被判成「他照實出」→ 查句庫推回，查不到就不判）；詳情底列「打完」易讀成整場 → 「這手打完」。
+- **主要檔案**：`game-lab/{engine.js,recap.js（新）,duel.js,duel.css,ui.js,style.css,content.js,tutorial.js,index.html（?v=80）,README.md,LINES-REVIEW.md,dev/duel-harness.html}`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/test/engine.test.mjs`（section 25）、`game-lab/tests/{e2e-recap（新）,e2e-duel,e2e-lib,e2e.spec}.mjs`。設計 scratchpad `v5/recap/DESIGN.md`、施工 `v5/recap/build.md`。
+- **驗證**：check-content／lint-copy／check-shops／check-covers；engine 2,739,747、tutorial 505,169、shop、hit、chars 全過；e2e（390、375）recap 23/23、duel 121、prologue 52×2、intro 25、apex 37、unlock 12、econ 54、taps 28，e2e.spec 390 50/50。審查修正後重跑：check-*／lint-copy、單元測試全過；e2e-recap 390 13/13、375 13/13（R2 改按住、新 R2b：點他封面／縫／你封面＝放行、不開唱片資訊）、e2e-duel 390＋375 121/121、e2e.spec 390 50/50。
+
+### 2026-11-17｜dip-vinyl-shop｜Newtone downtempo 定案 506 張，排在簡介修正之後
+
+- **店主**：「506 張全上，但先解決現在的問題吧。」→ 恍惚 356＋頹靡 150 預估格全收（勾選頁 db `skip` 0 筆），等嚴重簡介重寫線收尾再開，照 `dip-card-create`＋`general-desc-base.md`＋藝人介紹。
+- **改動**：`batch-progress/newtone-dt-20261108/README.md` 加定案節。
+- **驗證**：純文件，無 KV／seed 變更。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s11：sd-019、sd-020、sd-hold-3 上線（61 張，留置 2）
+
+- **結果**：sd-019 上線 29（留置黑豹樂隊《無是無非》：只有團史與主唱更替）；sd-020 上線 30（無留置；含非 CJK 的 Agnostic Front，CURATED 未蓋）；sd-hold-3 重查 sd-016／018 的 3 張留置卡，救回花生隊長《Oh My God》（Yahoo 拍賣頁轉錄的專輯文案）、美空ひばり《ひばりの渡り鳥だよ》（Discogs API credits），張露《繁星點點》續留置（身分不穩：1973 疑為數位上架日、1977 黑膠作「張璐」）。
+- **主線補查**：Discogs API 救回非常階段《Windom》、飯吉馨、高橋達也《Got The Spirit》、麻生レミ的 story／sound；curl 讀 CDJournal 與部落格補サミー；京鄉新聞百大名盤補시나위；妞新聞專訪補麋先生《野生》；CiNii 補篠崎正嗣；Strada 商品頁補鈴木茂。
+- **審稿**：sd-019 改 13 處、sd-020 改 16 處、sd-hold-3 改 2 處（單一出處去「常被」、第二句補盤名、刪再發／CD 化／後年選輯、刪曲長「74 分鐘」），逐條在 `rulings.md`。WebSearch 工作階段約 180 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json（加 sd-hold-3）,kv-before-sd-019/020/hold-3.json,review-sd-019/020.json,held-sd-hold-3.json}`、`desc-tools/batches/{cards,research,output}/sd-019*、sd-020*、sd-hold-3*`、onboarding manifest 61 處。
+- **驗證**：`kv-token-check` exit 0；KV 121 鍵（58＋59＋4）逐字回讀全數一致；`front-check` 前台 61/61 新稿、CURATED 0；QA 無軌序／曲長／盤號（例外：淺堤盤名半形冒號、潘秀瓊盤名過長不入正文、「潮来笠」曲名原文）；鉤子加權 ≤50、同批前四字互異。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s12：sd-021、sd-022 上線（60 張，無留置）
+
+- **結果**：第一批非 CJK、經典度≥4 的卡。sd-021 上線 30（硬核、Bashung、Autechre、Michelangeli、G.I.S.M.／Gauze、少女時代等）；sd-022 上線 30（Irakere、Kult、Los Prisioneros、Nyman、Shajarian、底特律 techno、Robert Johnson、寶萊塢《Aradhana》《Sangam》等）。**兩批都無留置**。
+- **CURATED_DESCS**：60 張開工前與上線後都跑 `front-check`，前台全數供新稿，無被 worker CURATED 蓋住的卡，「待店主處理」無新增。
+- **主線補查**：sd-021 研究層只搜 38 次、thin 多，主線補 13 張（Seant、Michelangeli 2、Bleu pétrole、Bastard、Bikini Kill、Carsick Cars、Paredes、D'eux、Gilels、Tears、G.I.S.M.、Gauze）；sd-022 派工詞加「實際用 15 次以上」後 thin 降到 6，主線補 Shajarian、Irakere《Chekeré son》、Hoola Bandoola。
+- **審稿**：sd-021 改 15 處、sd-022 改 28 處（多為第二句改以《盤名》起句後壓字數、單一出處去「常被」、刪版本／銷量雜項），逐條在 `rulings.md`。WebSearch 工作階段約 111 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-021/022.json,review-sd-021/022.json}`、`desc-tools/batches/{cards,research,output}/sd-021*、sd-022*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
+### 2026-11-17｜dip-vinyl-shop｜sd-hook-2：sd-008～014 已上線一般卡補開頭鉤子（203 張）
+
+- **結果**：sd-008～014 已上線卡 203 張補上鉤子開頭、第二句改講這是什麼唱片，全數上線；sd-hold-2 救回的 7 張上線時已有鉤子，跳過。sd-001～014 的鉤子至此補齊。
+- **做法**：不重做研究；6 支 Opus 照 `prompt-hook.md` 寫，主線逐張審 203 張、改 10 處（最重要：陳小霞《老翅膀》補鉤子時把金曲獎誤掛到前作，已更正；另去推論、去雜項鉤子、補回鉤子沒接上的歌名），逐條在 `rulings.md`。
+- **教訓**：子代理共用 scratchpad 根目錄會互相覆寫暫存腳本，派工要指定子目錄；審稿改動要等該組交件後再套，否則會被最後一次覆寫蓋掉。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,tools/sd.mjs,kv-before-sd-hook-2.json,review-sd-hook-2.json}`、`desc-tools/batches/cards/sd-hook-2-cards.json`、`desc-tools/batches/output/sd-hook-2-out-{1..6}.json`、onboarding manifest 203 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2＋desc4 406 鍵逐字回讀 406/406 一致；`front-check` 前台 203/203 新稿、CURATED 0；`sd.mjs qa` 鉤子加權 ≤50、全批前四字互異、無軌序／曲長／盤號（誤報為日文盤名與曲名）；新增數字與外文專名逐張比對研究稿無越界。
+
+### 2026-11-17｜dip-vinyl-shop｜頂點卡另一套：不用鉤子、講為何能是頂點
+
+- **店主**：「頂點卡是另外一套，要告訴玩家為何他可以是頂點，所以側重於介紹歷史定位、特殊之處。」回答「701 張頂點卡要不要也補鉤子」→ 不補。
+- **三套並存**：一般卡卡牌版（`general-desc-base.md`，開頭鉤子）／頂點卡（`apex-desc-base.md`，不用鉤子，第一句講歷史定位或特殊之處）／門市版（`SHOP_DESC_RULES.md`，不用鉤子）。
+- **改動**：`desc-tools/prompts/apex-desc-base.md` 開頭加店主原話、「一般卡照 writer-base」改指 `general-desc-base.md`；`general-desc-base.md` 適用範圍註明頂點卡另一套。
+- **驗證**：純文件改動，無 KV／seed 變更。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s8：sd-015、sd-016、sd-hold-2 上線（66 張，留置 1）
+
+- **結果**：sd-015 上線 30（無留置，第一批新版鉤子開頭）；sd-016 上線 29（留置張露《繁星點點 張露》，只查到發行日）；sd-hold-2 重查 sd-009～014 的 7 張留置卡，**7 張全數救回上線**，sd-009～014 留置清空。
+- **主線補查**：向井滋春《A Head Wind》（日本 Columbia 官方作品頁）、小栗均《みどりいろの渓流》（製作人照井顕自己的網站：311 海嘯後在陸前高田泥中挖出這張唱片）、宮沢昭等《Musical Play In Jazz》（Discogs API：整張百老匯歌曲）、森進一《輪廻》（樂迷部落格轉引 LP 解說：川内康範在告訴事件中強行保留開頭歌詞）、比屋定篤子。sd-hold-2 靠 api.discogs.com、復刻文案與商品頁救回。
+- **審稿**：sd-015 改 9 處、sd-016 改 14 處、sd-hold-2 改 6 處（單一出處去「常被」、刪再版／CD 化／合輯收錄、宣傳語），逐條在 `rulings.md`。WebSearch 工作階段約 144 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,kv-before-sd-015/016/hold-2.json,review-sd-015/016/hold-2.json,held-sd-016.json}`、`desc-tools/batches/{cards,research,output}/sd-015*、sd-016*、sd-hold-2*`、onboarding manifest 66 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 132 鍵（60＋58＋14）逐字回讀全數一致；`front-check` 前台 66/66 新稿、CURATED 0；QA 無軌序／曲長／盤號（「4:17」為森園勝敏盤名、「会」為專名）；鉤子加權 ≤50、同批前四字互異。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s9：sd-017、sd-018 上線（58 張，留置 2）
+
+- **結果**：sd-017 上線 30（無留置）；sd-018 上線 28（留置花生隊長《Oh My God》、美空ひばり《ひばりの渡り鳥だよ》，KV 保留舊稿）。開頭照新版用鉤子（材料限故事／概念／聲音／地位），58 張前四字互異。
+- **主線補查**：研究稿 story／sound 標 thin／none 的卡逐張補，sd-017 補 17 張、sd-018 補 19 張（含研究層漏查的金森幸介整張）；Discogs 網頁 403 改用 api.discogs.com。sd-018 派工特注放錯組、誤述糯米糰，已記入 rulings 並改為只照卡單範圍列名。
+- **審稿**：sd-017 改 17 處、sd-018 改 9 處（鉤子去封號／去錄音日數、單一出處去「常被」、刪再版與選輯、第二句補盤名、去曲序），逐條在 `rulings.md`。WebSearch 工作階段約 160 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-017.json,kv-before-sd-018.json,review-sd-017.json,review-sd-018.json}`、`desc-tools/batches/{cards,research,output}/sd-017*、sd-018*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 116 鍵逐字回讀 116/116 一致；`front-check` 前台 58/58 新稿、CURATED 0；QA 無軌序／曲長／盤號（「16 軌」為一人多重錄音故事核心，「国」「会」為專名）。
+
+### 2026-11-17｜dip-vinyl-shop｜sd-hook-1：sd-001～007 已上線一般卡補開頭鉤子（209 張）
+
+- **店主**：「一樣要開頭給 hook 的方式」。sd-001～007 重寫稿上線時沒有鉤子，這批補上：第一句鉤子（材料限故事／概念／聲音／地位）、第二句講這是什麼，正文沿用現行稿，不新增研究稿以外的事實。
+- **範圍**：sd-001～007 全部 210 張（含 sd-hold-1 救回 10 張）扣林強《驚蟄》＝209 張；6 支 Opus 寫作，主線逐張審，改 16 處（出處／credit／版本雜項當鉤子各一、前四字撞 3 組、《開往天堂的海盜船》金音「獲獎」更正為「入圍」）。
+- **工具**：`batch-progress/desc-severe-20261117/tools/sd.mjs` 支援 `sd-hook-N`（卡單抓 KV 現行稿＋研究檔、qa 查鉤子），`sd-hook-2` 已預填；派工詞 `prompt-hook.md`。
+- **驗證**：kv-token-check exit 0；418 鍵 bulk put，回讀 418/418 一致；front-check 前台 209/209；manifest 同步 209 處；數字與外文專名越界比對 0。紀錄在同目錄 `rulings.md`「sd-hook-1」。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡簡介開頭恢復鉤子（材料限故事／概念／聲音）
+
+- **店主**：「一樣要開頭給 hook 的方式」。上午新規則把鉤子拿掉了；改為**鉤子照舊、材料限故事／概念／聲音／地位**，軌序、曲長、盤號、曲名體例、封套、版本不准當鉤子，第二句講這是什麼。
+- **改動**：`desc-tools/prompts/general-desc-base.md` 第三節與第四節、`batch-progress/desc-severe-20261117/{prompt-writer.md,PLAN.md,rulings.md}`、`ALBUM_ONBOARDING.md` §5、`dip-card-create` Phase 3（鉤子層照跑）、mood-cells WRITER／HOOK-DISPATCH、`writer-base.md`／`hook-base.md` 檔頭。
+- **《驚蟄》**：改為「2005 年坎城影展只請了四位音樂人，唯一的亞洲人是林強。」開頭，229 字上線（舊值 `kv-before-jingzhe-fix2.json`）。
+- **待辦**：sd-001～014 已上線但沒有鉤子，PLAN 排 `sd-hook-1／2` 補；sd-015 起新批直接照新規。
+- **驗證**：KV desc2／desc4 逐字回讀一致、`/album-desc` 回新稿、fix-spacing 0、鉤子加權 26.5 字。
+
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 讀牌加難（客人會反讀你、唬人兩種、提示分三級）＋提示句 289 句
 
 - **店主 11-17**：「玩起來太簡單了沒挑戰性，目前玩 10 回合，很容易讀到對方的牌，我的舊版相較之下難度比較剛好。然後對方的提示詞很單調無聊，看來看去都這幾句，多一點，自然平順的口吻。」

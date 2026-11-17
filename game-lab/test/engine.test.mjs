@@ -2818,7 +2818,71 @@ section('24 讀牌加難（11-17，scratchpad v5/harder DESIGN §2–§3）：�
     console.log('     H1: to pos 10 ' + n10 + ' hands, repeats ' + rep10 + '; pos 11–30 ' + n30 + ' hands, repeats ' + rep30 + ' (' + (n30 ? (100 * rep30 / n30).toFixed(1) : '—') + '%); runs to pos 10 ' + runs10 + '/' + RUNS); }
 });
 
-section('25 組牌快取（第 B 波 WP2-0；SPEC-B §6.2、定稿 C5）：EN._noCache 開／關 → guestDef／trialDeck／radioPool 結果 JSON 相同（200 個 seed × 第 1–15 位）；記住的不共用物件；換卡池物件、換 trial 設定都對', () => {
+// 11-17 本場紀錄（scratchpad v5/recap DESIGN §D）：duel.log 每手多記的欄位＝那一手 clash 事件（recap.js 把一筆組回 clash 形狀給 clashText），舊欄位不變、不取亂數
+section('25 本場紀錄（11-17）：duel.log 新欄位＝clash 事件（卡、星、王牌、by、not、rel、notes、script、apex）；舊欄位照舊；每手照樣 8 次亂數；存讀檔一樣', () => {
+  const OLD = ['n', 'pAttr', 'eAttr', 'hint', 'hk', 'line', 'bluff', 'why', 'kind', 'toE', 'toP', 'blocked', 'pHp', 'eHp'];
+  const NEW = ['pId', 'eId', 'pStar', 'eStar', 'by', 'not', 'rel', 'notes'];
+  const OPT = ['heal', 'ace', 'eAce', 'script', 'apex'];
+  let hands = 0, withNotes = 0, aces = 0, eAces = 0, halves = 0, rels = 0, rngOk = 0, rngN = 0;
+  const NT = EN.hintTableOf(C);
+  for (let s = 1; s <= (QUICK ? 60 : 240); s++) {
+    const id = ENEMY_IDS[s % ENEMY_IDS.length], tier = TIERS[s % 3], trial = s % 4 !== 0;
+    const eDef = EN.enemyDef(C, id, trial && !C.enemies[id].prologue ? { pos: posFor(id, s) + 5 * (s % 5), seedKey: 'rc-' + s, runNo: 1, playerAce: tier, bossAce: otherTier(tier, s) } : {});
+    const { duel } = EN.startDuel(pDefFor(tier, { relics: relicSet(s) }), eDef, { seed: s * 131, enemyAce: eDef.ace || (eDef.boss ? card(C.aces[otherTier(tier, s)]) : null), hintTable: NT });
+    const R = lcg(s);
+    let g = 0;
+    while (!duel.over && g++ < 12) {
+      const act = EN.policies[['thoughtful', 'random', 'high'][s % 3]](duel, R, {}, C);
+      const r0 = duel.rng;
+      const evs = EN.resolveTurn(duel, act), cl = clashOf(evs), L = duel.log[duel.log.length - 1], dr = evs.find(e => e.t === 'draw');
+      if (!duel.over && !(dr && dr.reshuffled)) { rngN++; if (rngCalls(r0, duel.rng) === 8) rngOk++; }
+      hands++;
+      ok(Object.keys(L).every(k => OLD.includes(k) || NEW.includes(k) || OPT.includes(k)) && OLD.concat(NEW).every(k => k in L), 'log keys = old + new (+ optional)', Object.keys(L));
+      ok(L.pId === cl.pCard.id && L.eId === cl.eCard.id && L.pStar === cl.pStar && L.eStar === cl.eStar && L.by === (cl.by == null ? null : cl.by)
+        && L.not === cl.hint.not && L.rel === cl.rel && !!L.ace === !!cl.ace && !!L.eAce === !!cl.eAce, 'log card / star / by / not / rel = clash', { L, cl: { p: cl.pCard.id, e: cl.eCard.id, ps: cl.pStar, es: cl.eStar, by: cl.by, not: cl.hint.not, rel: cl.rel } });
+      ok(JSON.stringify(L.notes) === JSON.stringify(cl.notes) && L.notes !== cl.notes, 'log notes = clash notes (a copy)', [L.notes, cl.notes]);
+      ok(L.hint === cl.hint.attr && L.hk === cl.hint.kind && L.line === cl.hint.line && L.bluff === cl.bluff && L.why === cl.why && L.kind === cl.kind && L.toE === cl.toE && L.toP === cl.toP
+        && L.blocked === cl.blocked && L.pHp === cl.pHp && L.eHp === cl.eHp, 'old log fields unchanged (= clash)');
+      ok(!('apex' in L) && !('script' in L), 'flag off: no apex / script keys');
+      if (L.notes.length) withNotes++; if (L.ace) aces++; if (L.eAce) eAces++; if (L.hk === 'half') halves++; if (L.rel) rels++;
+    }
+    // 存讀檔：log 照樣 JSON 存得起來，讀回來接著打一樣
+    if (!duel.over) {
+      const a = JSON.parse(JSON.stringify(duel)), b = JSON.parse(JSON.stringify(duel));
+      const R1 = lcg(s + 7), R2 = lcg(s + 7);
+      while (!a.over) EN.resolveTurn(a, EN.policies.random(a, R1));
+      while (!b.over) EN.resolveTurn(b, EN.policies.random(b, R2));
+      eq(a.log, b.log, 'saved duel → same log');
+    }
+  }
+  ok(hands > (QUICK ? 150 : 600) && withNotes > 10 && aces > 5 && halves > 5 && rels > 5, 'covered notes / ace / half / rel', { hands, withNotes, aces, eAces, halves, rels });
+  ok(rngN > 100 && rngOk === rngN, 'still 8 RNG calls per hand', { rngOk, rngN });
+  // 教學那場（script）：log 記 script；頂點卡試做（apex）：log 記 apex（同 clash 的 apex 欄）
+  { const t = startFor('man', 'hall', 7, { tutorial: true, script: C.tutorial.script.hall }).duel;
+    const cl = clashOf(EN.resolveTurn(t, EN.legalActions(t)[0]));
+    ok(t.log[0].script === true && cl.script === true, 'tutorial duel: log.script = clash.script'); }
+  { let apx = 0;
+    for (let s = 1; s <= 30; s++) {
+      const tier = TIERS[s % 3], L0 = EN.apexList ? EN.apexList(C, tier) : [], aceId = L0.length ? L0[s % L0.length].card : null;
+      if (!aceId) break;
+      const pDef = EN.playerDef(C, { bag: [...C.gifts[tier], ...BP3], ace: tier, aceId, relics: [] }, { apex: true });
+      const eDef = EN.enemyDef(C, 'critic', { pos: 4, seedKey: 'rca-' + s, runNo: 1, playerAce: tier });
+      const { duel } = EN.startDuel(pDef, eDef, { seed: s * 17, apex: true, hintTable: NT });
+      if (!duel.apexMode) break;
+      const R = lcg(s);
+      while (!duel.over) {
+        let act = EN.policies.thoughtful(duel, R, {}, C);
+        if (s % 2 && EN.canApex(duel)) act = Object.assign({}, act, { apex: true });
+        if (!EN.isLegal(duel, act)) { const b = Object.assign({}, act); delete b.apex; act = b; }
+        const cl = clashOf(EN.resolveTurn(duel, act)), L = duel.log[duel.log.length - 1];
+        ok('apex' in L && JSON.stringify(L.apex) === JSON.stringify(cl.apex), 'apex flag: log.apex = clash.apex', [L.apex, cl.apex]);
+        if (L.apex) apx++;
+      }
+    }
+    ok(apx > 0 || !C.apexTrial, 'apex hands seen', apx); }
+});
+
+section('26 組牌快取（第 B 波 WP2-0；SPEC-B §6.2、定稿 C5）：EN._noCache 開／關 → guestDef／trialDeck／radioPool 結果 JSON 相同（200 個 seed × 第 1–15 位）；記住的不共用物件；換卡池物件、換 trial 設定都對', () => {
   const S = QUICK ? 40 : 200, CELLS = (C.tunes && C.tunes.order) || [];
   ok(EN._noCache === false, '_noCache defaults to false', EN._noCache);
   // 同一個呼叫：快取關（原本的寫法）、快取開（第一次算、第二次吃記住的）三次結果 JSON 相同
@@ -2862,7 +2926,7 @@ section('25 組牌快取（第 B 波 WP2-0；SPEC-B §6.2、定稿 C5）：EN._n
   }
 });
 
-section('26 第 B 波 WP2（SPEC-B §1、§2.2、§3、§4.3／4.5、§5.2、§6.3）：卡池 5,045 張與 catalogId、mapIds、一檔貨（配額、抽檔、輪流上架、買走、換輪、說情、序章、fixLot、jumpTo、lot on／off 配件特價箱相同、沒有 all 的退路）、想要清單加權、今日推薦 dailyPick／dailyReward', () => {
+section('27 第 B 波 WP2（SPEC-B §1、§2.2、§3、§4.3／4.5、§5.2、§6.3）：卡池 5,045 張與 catalogId、mapIds、一檔貨（配額、抽檔、輪流上架、買走、換輪、說情、序章、fixLot、jumpTo、lot on／off 配件特價箱相同、沒有 all 的退路）、想要清單加權、今日推薦 dailyPick／dailyReward', () => {
   const sortObj = o => Object.keys(o).sort().reduce((m, k) => (m[k] = o[k], m), {});
   const clone = o => JSON.parse(JSON.stringify(o));
   const keysOf = CC => EN.SHOP_ORDER.filter(k => CC.bins[k] && !CC.bins[k].display);
@@ -3167,7 +3231,7 @@ section('26 第 B 波 WP2（SPEC-B §1、§2.2、§3、§4.3／4.5、§5.2、§6
     ok(oh.length === 3 && oh.every(id => EN.topAttr(C0.cards[id]) === 'h'), 'a colour with no cards → filled from the others', oh); }
 });
 
-section('27 第 B 波升版的舊 run（驗收 F1）：待說情／打到一半的對決 → 說情重打＝原本那副牌（legacyView 舊卡池 → oldDeckIds 跟 main 6aafd0e7d 的 guestDef 逐張相同；pinOldDeck 釘 run.retryDeck、換位就拿掉）', () => {
+section('28 第 B 波升版的舊 run（驗收 F1）：待說情／打到一半的對決 → 說情重打＝原本那副牌（legacyView 舊卡池 → oldDeckIds 跟 main 6aafd0e7d 的 guestDef 逐張相同；pinOldDeck 釘 run.retryDeck、換位就拿掉）', () => {
   const L = C0.legacyIds();
   // (a) 20 seed × 3 王牌 × 9 個位數：舊碼（main 6aafd0e7d，323 張、舊 slug）guestDef 選出的牌（換成 catalogId）串起來的 fnv1a32
   let h = '', moved = 0;

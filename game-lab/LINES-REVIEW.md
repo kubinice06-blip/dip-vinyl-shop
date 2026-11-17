@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 941（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 967（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -469,7 +469,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・第一次剋不動（你或他） | 差 2 星以上，剋不動。 | 本規格新寫 | `coachTips.tip_block` |
 | 老闆・第一次丟王牌 | 王牌 7 星，一場用一次。 | 本規格新寫 | `coachTips.tip_ace` |
 | 老闆・第一次打到第 6 手 | 六手沒分勝負，比聲望條剩幾成。 | 本規格新寫 | `coachTips.tip_rounds` |
-| 老闆・第一次出現上一手小列（第 2 手） | 上一手留在上面，點封面看唱片資訊。 | 本規格新寫 | `coachTips.tip_lastplay` |
+| 老闆・第一次出現上一手小列（第 2 手；點開＝上一手詳情） | 上一手留在上面，點開看細節。 | 本規格新寫 | `coachTips.tip_lastplay` |
 | 老闆・第一次被他讀到（他照你上一手的應付方式剋你） | 他會記得你上一手怎麼出。 | 本規格新寫 | `coachTips.tip_read` |
 | 老闆・第一次看到半指的提示（只說他不出哪一種） | 這句只說他不出哪一種。 | 本規格新寫 | `coachTips.tip_half` |
 | 老闆・第一次看到不露的提示（這手沒給提示） | 這手他不露口風。 | 本規格新寫 | `coachTips.tip_none` |
@@ -547,7 +547,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・readRight | 讀對了。 | 本規格新寫 | `duelText.readRight` |
 | （畫面字）・seeThrough | 你看穿了！『{key}』是{hint}，他出的是{e}。 | 本規格新寫 | `duelText.seeThrough` |
 | （畫面字）・seeThroughNoKey | 你看穿了！提示是{hint}，他出的是{e}。 | 本規格新寫 | `duelText.seeThroughNoKey` |
-| （畫面字）・lpAria | 上一手{who}丟的：{t}，點一下看唱片資訊 | 本規格新寫 | `duelText.lpAria` |
+| （畫面字）・lpAria | 上一手{who}丟的：{t}，點一下看這手細節，按住看唱片資訊 | 本規格新寫 | `duelText.lpAria` |
+| （畫面字）・lpAriaInfo | 上一手{who}丟的：{t}，點一下看唱片資訊 | 本規格新寫 | `duelText.lpAriaInfo` |
 | （畫面字）・honestPlain | 他照實出。 | 本規格新寫 | `duelText.honestPlain` |
 | （畫面字）・bluffPlain | 他唬你！他出的是{e}。 | 本規格新寫 | `duelText.bluffPlain` |
 | （畫面字）・seeThroughPlain | 你看穿了！他出的是{e}。 | 本規格新寫 | `duelText.seeThroughPlain` |
@@ -555,6 +556,31 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・readCounter | 你上一手照提示剋，他就在等這招。 | 本規格新寫 | `duelText.readCounter` |
 | （畫面字）・readMirror | 你上一手跟提示同色，他換了一招。 | 本規格新寫 | `duelText.readMirror` |
 | （畫面字）・readThird | 你防他唬人，他偏偏照實來。 | 本規格新寫 | `duelText.readThird` |
+| （畫面字）・rcLink | 紀錄 | 本規格新寫 | `duelText.rcLink` |
+| （畫面字）・rcList | 這場紀錄 | 本規格新寫 | `duelText.rcList` |
+| （畫面字）・rcListDone | 上一場紀錄 | 本規格新寫 | `duelText.rcListDone` |
+| （畫面字）・rcCount | {n} 手 | 本規格新寫 | `duelText.rcCount` |
+| （畫面字）・rcAll | 全部 | 本規格新寫 | `duelText.rcAll` |
+| （畫面字）・rcEmpty | 第 1 手揭曉後才有紀錄。 | 本規格新寫 | `duelText.rcEmpty` |
+| （畫面字）・rcHand | 第 {n} 手 | 本規格新寫 | `duelText.rcHand` |
+| （畫面字）・rcOf | ／{max} | 本規格新寫 | `duelText.rcOf` |
+| （畫面字）・rcAfter | 這手打完　你 {p}／{pm}　他 {e}／{em} | 本規格新寫 | `duelText.rcAfter` |
+| （畫面字）・rcVs | 對 | 本規格新寫 | `duelText.rcVs` |
+| （畫面字）・rcNone | 不扣 | 本規格新寫 | `duelText.rcNone` |
+| （畫面字）・rcCounter | 你剋中 | 本規格新寫 | `duelText.rcCounter` |
+| （畫面字）・rcCountered | 被他剋 | 本規格新寫 | `duelText.rcCountered` |
+| （畫面字）・rcGapYou | 剋不動 | 本規格新寫 | `duelText.rcGapYou` |
+| （畫面字）・rcGapHim | 他剋不動 | 本規格新寫 | `duelText.rcGapHim` |
+| （畫面字）・rcMirrorWin | 比星贏 | 本規格新寫 | `duelText.rcMirrorWin` |
+| （畫面字）・rcMirrorLose | 比星輸 | 本規格新寫 | `duelText.rcMirrorLose` |
+| （畫面字）・rcTie | 平手 | 本規格新寫 | `duelText.rcTie` |
+| （畫面字）・rcBluff | 被唬 | 本規格新寫 | `duelText.rcBluff` |
+| （畫面字）・rcSaw | 看穿 | 本規格新寫 | `duelText.rcSaw` |
+| （畫面字）・rcRead | 被讀到 | 本規格新寫 | `duelText.rcRead` |
+| （畫面字）・rcPrev | 前一手 | 本規格新寫 | `duelText.rcPrev` |
+| （畫面字）・rcNext | 後一手 | 本規格新寫 | `duelText.rcNext` |
+| （畫面字）・rcClose | 關閉 | 本規格新寫 | `duelText.rcClose` |
+| （畫面字）・rcCover | {t}，點一下看唱片資訊 | 本規格新寫 | `duelText.rcCover` |
 
 ## 發燒配件（點圖示看的說明／生效那手結果行補的一句）
 

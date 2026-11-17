@@ -70,6 +70,7 @@ small{font-size:inherit;}
 .lb-top .lnk{position:relative;height:32px;padding:0 8px;font-size:12px;font-weight:700;letter-spacing:.06em;display:inline-flex;align-items:center;font-family:var(--zh);}
 .lb-top .ti{position:relative;min-width:40px;height:32px;display:inline-grid;place-items:center;font:700 14px var(--mono);}
 .lb-top .lnk::after,.lb-top .ti::after{content:'';position:absolute;left:0;right:0;top:-6px;bottom:-6px;}
+.lb-top .lnk[hidden]{display:none;}   /* 11-17：對決中「紀錄」第 1 手揭曉前不出 */
 .lb-top .pz{display:block;width:10px;height:11px;border-left:3px solid var(--ink);border-right:3px solid var(--ink);}
 .lb-top .ff{display:block;width:16px;height:11px;background:linear-gradient(to right,var(--ink),var(--ink)) no-repeat;
   -webkit-clip-path:polygon(0 0,50% 50%,50% 0,100% 50%,50% 100%,50% 50%,0 100%);clip-path:polygon(0 0,50% 50%,50% 0,100% 50%,50% 100%,50% 50%,0 100%);}

@@ -197,7 +197,8 @@ export async function seedRun(page, o = {}) {
     else if (o.idx != null) { r.idx = o.idx; r.pos = (r.round - 1) * 5 + o.idx + 1; }
     for (const k of ['maxHp', 'hp', 'atk', 'def', 'level']) if (o[k] != null) r[k] = o[k];
     if (o.money != null) r.money = o.money;
-    const s = { v: 5, seen: Object.assign({ night: true }, o.seen || {}), learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, runs: [],
+    // autoNext（11-17 揭曉後停住等點）：種好的存檔照舊自動換手（舊測項照現行時序）；o.autoNext === false＝照真玩家預設停住
+    const s = { v: 5, seen: Object.assign({ night: true }, o.seen || {}), learned: {}, settings: { fastAnim: false, sound: false, autoNext: o.autoNext !== false }, player: null, run: r, runs: [],
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: o.tutorialDone !== false, prologueDone: !o.prologue,
       lastAce: o.ace || 'pearl', lastBargain: null };
     [C.aces[r.ace]].concat(r.bag).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });

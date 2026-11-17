@@ -935,7 +935,13 @@
     // log 每手記打完的聲望（pHp／eHp）：結算「第 n 手被翻盤」直接用，不從 toP／toE 往回推（頂點卡回聲望不在 toP 裡，推回來會造假；審查 A-1）。
     //   heal＝這手你實際回了幾聲望（頂點卡發動＋拆穿回血；有才記）：這手開打前＝pHp＋toP−heal
     const hl = P.hp - p0 + r.toP;
-    st.log.push(Object.assign({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, hk: hint.kind, line: hint.line, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, pHp: P.hp, eHp: E.hp }, hl > 0 ? { heal: hl } : {}));
+    // 11-17 本場紀錄（recap.js：上一手詳情、這場紀錄）：純加欄位、不取亂數；跟 clash 事件同值。pId／eId（卡）、pStar（含配件加星＝牌桌那個數）、eStar、by、not（半指他說不出的那色）、
+    //   rel、notes（結果句的小字；複本）、ace／eAce／script（有才記）、apex（頂點卡試做的旗標下才有）。舊欄位一個不動（hint 照舊是計畫色：畫面只能經 clashText 讀，不能拿來判真假）
+    st.log.push(Object.assign({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, hk: hint.kind, line: hint.line, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, pHp: P.hp, eHp: E.hp }, hl > 0 ? { heal: hl } : {},
+      { pId: pPlay.card ? pPlay.card.id : null, eId: eCard ? eCard.id : null, pStar: r.pStar, eStar: ePlay.star, by: r.by == null ? null : r.by, not: hint.not, rel: plan.rel || null,
+        notes: r.notes.map(x => Object.assign({}, x)) },
+      act.ace ? { ace: true } : {}, ePlay.ace ? { eAce: true } : {}, st.script ? { script: true } : {},
+      st.apexMode ? { apex: r.apex ? Object.assign({}, r.apex) : null } : {}));
     events.push(Object.assign({ t: 'clash' }, sum, { pHp: P.hp, eHp: E.hp }));
     P.last = pPlay.attr; E.last = ePlay.attr;
     E.thrown.push(eCard); E.hand.splice(eSide.i, 1); st.plan = null;
@@ -1127,7 +1133,7 @@
   //   ③ 同一組輸入選出的牌（卡池物件參照）記住：鍵＝客人、tag（seedKey#runNo#位）、M、fl、minPool、mainShare、他原本的牌單；
   //      來客那排一次畫 5 位、shopPolicy 與 startFight 同一位各叫一次 → 第二次起不重選。加星、王牌、複本照舊每次重做（不共用物件）
   //   ④ radioPool：每格（tune）∩ 普通／稀有／獨特 記住，每次只扣包包與架上
-  //   API._noCache＝true → 全部走原本的寫法（deckSlow、radioPool 篩整池）；engine.test #25 對照 200 個 seed × 第 1–15 位結果 JSON 相同
+  //   API._noCache＝true → 全部走原本的寫法（deckSlow、radioPool 篩整池）；engine.test #26 對照 200 個 seed × 第 1–15 位結果 JSON 相同
   const POOL_INFO = typeof WeakMap === 'function' ? new WeakMap() : null;
   const AXIS_BIT = { c: 1, o: 2, h: 4 };
   const DECK_MEMO_MAX = 512;
