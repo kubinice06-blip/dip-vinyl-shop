@@ -55,6 +55,7 @@
 //      T2c 新手（只會照提示剋）深度中位數 4–8、到第 10 位 15–35%（原型 5、27%）：舊版照剋死在第 5–9 位；只會照提示剋要走不遠
 //      T2b 會讀的 到第 50 位 8–30%（原型 15%）；到第 100 位只印、不擋（原本 10–70%：拿掉「出提示色永遠不會被剋」那張安全牌後，後段每手都可能被剋，原型 2%）
 //   T3 會讀的 藏家位死亡率是非藏家位的 2–4 倍：第 4–60 位、到過 ≥200 趟的位置合併算（第 1–3 位是前期、另有 T1／T1b 看，不算進來；V3 13–20% 對 5–7%）
+//      n ≥ 4000 才照 2–4 倍判（會讀的 n 1000 標準誤約 ±0.15、n 4000 約 ±0.08）；n 更小只列「參考」不計，偏離 2–4 倍超過 2 個標準誤才算沒過（第 B 波合併 11-17）
 //   T4 相鄰非藏家位首戰勝率掉 ≤20 點（新手、會讀的各一條；V3 新手第 4→6 位 19 點、會讀的 14 點）
 //   T5 一場平均手數：新手 3–4.5（舊版試玩表 3–4 招）；會讀的 2.5–4.5（後段包包變強、一場變短；之後用 C.trial.tiers 難度階梯給高手加難度，店主 11-12 參考 Monster Train）
 //   T6 亂出 到第 5 位 ≤5%：第一次跑出 smart 1.5%、none 0.5%、bare 0.05%（亂出第 1 位首戰只贏 2 成，97% 死在第 1–3 位）；留 3 倍餘裕（舊 S3 也是 ≤5%）
@@ -65,9 +66,11 @@
 //   R4 會讀的前 10 位不要變成拼運氣（11-17）：會讀的 第 1–4、6–9 位首戰 ≥92%；第 5、10 位（藏家）≥82%（原型最低 88）
 //   11-17 施工後（--n 1000，243 秒）：23/23，旋鈕＝DESIGN 選定組沒調。T1 14.5%（--n 2000 只跑新手／會讀的／亂出：12.6%）、T2a 中位 25、T2c 中位 5／到第 10 位 28.6%、
 //      T2b 到第 50 位 14.8%（到第 100 位 2.2%）、R1 66.2 點、R2 72.1%、R3 2.9%／81.4 對 94.8、R4 最低 89（第 10 位）、T3 2.04 倍（貼下緣：掉到 2 以下就 read.rho.boss +.05）
-//   第 B 波合併（11-17，5,045 張＋一檔貨；scratchpad v5/wave-b/merge/sim.md）：T3 n 1000 掉到 1.92（--lot off 1.97）。n 4000 只跑會讀的：main 2.18、合併 2.19＝真值沒變，是 n 1000 那批亂數偏低。
-//      上面「boss +.05」方向反了（會讀的照精確機率變招，讀你越多越好剋：+.05 1.92、+.15 1.82）；只調 boss −.20 T3 2.26 但新手過得了第 5 位（T2c 到第 10 位 39%）。
-//      → read.rho hard .45→.55、max .55→.65、boss 0→−.15（一般客人多讀你、藏家少讀你）：n 1000 全過，T3 2.38（n 4000 2.45；main 內容 n 4000 2.30）
+//   第 B 波合併（11-17，5,045 張＋一檔貨；scratchpad v5/wave-b/merge/sim.md、FIX.md）：T3 n 1000 掉到 1.92（--lot off 1.97）。n 4000 只跑會讀的：main 2.18、合併 2.19
+//      ＝真值沒變（≥2），是 n 1000 那批亂數偏低 → T3 改成 n ≥ 4000 才判（上面 T3），read.rho 不動（.45／.55／0；調 hard／max 上去、boss 下來 T3 會過，
+//      但那是一般位變好過、藏家反而比一般客人少讀你，跟加難相反：n 4000 非藏家死亡率 2.50→2.26%、到第 50 位 16.6→19.3%）。
+//      上面「boss +.05」方向不對（會讀的照精確機率變招，讀你越多越好剋；n 1000 同一批亂數：+.05 1.92 沒動、+.15 1.82、−.10 1.96、−.20 2.26）；
+//      真要拉 T3 是 boss 往下，但只調 boss −.20 新手過得了第 5 位（T2c 到第 10 位 39%），要連一般位一起看＝難度決定，給店主
 //   S5 序章男子（保留 v4 §5.2）：會讀的 ≥97%、平均 ≤4 手；只出最大星 ≥90%；新手（永遠剋提示）≥90%
 //   M6 最多 6 手（CFG.maxRounds）；HP 聲望單調 C.trial.guestHp 一般 ≤ 菁英 ≤ 藏家（不靠模擬）
 // 第一次跑（2026-11-12，--n 2000，171 秒）：smart 13/15，沒過的是 T2 會讀的中位 90（平均 103.9）、T5 會讀的 2.57 手。T1／T3–T7 的 SPEC 數字照用、不放寬。
@@ -532,6 +535,8 @@ function fightCell(fn, n) {
 // ---------------- run ----------------
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
+const refs = [];                                                           // 只列不擋的門檻（樣本不夠判；現在只有 T3，見檔頭）
+const T3_N = 4000;
 const report = { N, CAP, TIER, FLOWS, GATE, CFG: Object.assign({}, CFG), trial: EN.trialCfg(C, TIER), economy: C.economy, patch: arg('patch', null) };
 if (APEX) report.apex = APEX_ACE || 'default';                           // 不開 --apex 時 JSON 跟以前逐字相同（不多 "apex": null）
 if (ACE_T) report.ace = ACE_T;
@@ -669,8 +674,15 @@ if (MODE === 'all' || MODE === 'runs') {
     check('R4', `${tag}會讀的前 10 位不靠運氣：第 1–4、6–9 位首戰 ≥92%；第 5、10 位 ≥82%`, !lo.length && !lb.length && [1, 5, 10].every(d => w1(d) != null),
       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(d => p0(w1(d))).join(' ') + (lo.length || lb.length ? '（沒過：第 ' + lo.concat(lb).join('、') + ' 位）' : ''));
   }
-  if (TH) check('T3', `${tag}會讀的 藏家位死亡率是非藏家位的 2–4 倍（第 4–60 位）`, TH.bossRatio != null && TH.bossRatio >= 2 - 1e-9 && TH.bossRatio <= 4 + 1e-9,
-    `${pct(TH.hazBoss)} ÷ ${pct(TH.hazNon)} = ${TH.bossRatio == null ? '—' : TH.bossRatio.toFixed(2)} 倍（V3 13–20% 對 5–7%）`);
+  if (TH) {                                                              // T3 n ≥ T3_N 才照 2–4 倍判；更小只列參考，偏離 2 個標準誤以上才算沒過（檔頭）
+    let hb = 0, hn = 0; for (const p of TH.pos) if (p.d >= 4 && p.reached >= 200) { if (p.cls === 'boss') hb += Math.round(p.hazard * p.reached); else hn += Math.round(p.hazard * p.reached); }
+    const r = TH.bossRatio, se = r != null && hb && hn ? r * Math.sqrt(1 / hb + 1 / hn) : null;   // 對數比的 Poisson 標準誤
+    const inBand = r != null && r >= 2 - 1e-9 && r <= 4 + 1e-9, far = r == null || se == null || r + 2 * se < 2 || r - 2 * se > 4;
+    const name = `${tag}會讀的 藏家位死亡率是非藏家位的 2–4 倍（第 4–60 位）`;
+    const info = `${pct(TH.hazBoss)} ÷ ${pct(TH.hazNon)} = ${r == null ? '—' : r.toFixed(2)}${se == null ? '' : '±' + se.toFixed(2)} 倍（V3 13–20% 對 5–7%）`;
+    if (TH.n >= T3_N || (!inBand && far)) check('T3', name, inBand, info);
+    else refs.push({ id: 'T3', name, ok: inBand, info: info + `；n ${TH.n} < ${T3_N} 只列參考（${inBand ? '在 2–4 倍內' : '差在 2 個標準誤內＝抽樣'}），判 T3 用 --n ${T3_N} --policies thoughtful --flows smart` });
+  }
   for (const x of [NV, TH]) if (x) check('T4', `${tag}${LABEL[x.pol]} 相鄰非藏家位首戰勝率掉 ≤20 點`, x.cliff.drop <= 0.20 + 1e-9,
     x.cliff.at ? `第 ${x.cliff.from}→${x.cliff.at} 位 ${pt(x.cliff.w0)}→${pt(x.cliff.w1)}（${pt(x.cliff.drop)} 點）` : '沒有下跌');
   for (const x of [NV, TH]) if (x) { const lo = x === TH ? 2.5 : 3; check('T5', `${tag}${LABEL[x.pol]} 一場平均 ${lo}–4.5 手`, x.hands >= lo - 1e-9 && x.hands <= 4.5 + 1e-9, `${f2(x.hands)} 手（V3 ${V3[x.pol].hands}）`); }
@@ -706,8 +718,10 @@ if (MODE === 'all' || MODE === 'man') {
 { const lw = Object.keys(EN.lotWarn || {}); if (lw.length) { report.lotWarn = lw; console.log('\n警告：箱子 ' + lw.join('、') + ' 沒有 all，第 2 檔起退回策展池（--data 的卡沒有 bin？見 C.deriveAll）'); } }
 console.log('\n### 門檻（SPEC 無限試煉 §4 第三棒；數字見檔頭）');
 for (const c of checks) console.log((c.ok ? '  ok   ' : '  FAIL ') + c.id + ' ' + c.name + (c.info !== undefined ? '：' + c.info : ''));
+for (const c of refs) console.log('  參考 ' + c.id + ' ' + c.name + '：' + c.info);
 const failed = checks.filter(c => !c.ok);
-console.log(`\n${checks.length - failed.length}/${checks.length} 通過（${((Date.now() - t0) / 1000).toFixed(1)} 秒）`);
+console.log(`\n${checks.length - failed.length}/${checks.length} 通過${refs.length ? `＋${refs.length} 條參考（${refs.map(c => c.id).join('、')}）` : ''}（${((Date.now() - t0) / 1000).toFixed(1)} 秒）`);
 report.checks = checks;
+if (refs.length) report.refs = refs;
 if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify(report, null, 1));
 if (failed.length) process.exitCode = 1;

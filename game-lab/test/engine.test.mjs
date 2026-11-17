@@ -1125,12 +1125,12 @@ section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、�
   eq([1, 5, 6, 10, 11, 100].map(EN.roundOf), [1, 1, 2, 2, 3, 20], 'roundOf');
   const NOC = Object.assign({}, C, { trial: undefined });
   let bad = 0, early = 0;
-  // 11-17 讀牌加難（DESIGN §2.2 逐位表）：讀你 ρ（第 3–4 位 .30、第 5 位 .55 每位 +.02 封頂 .65；藏家 −.15＝第 B 波合併為 T3 調的，原本 .45／.55／0）、beta .65（第 3 位起）、半指（3–4 位 .15、第 5 位 .20 每位 +.01 封頂 .30）、
+  // 11-17 讀牌加難（DESIGN §2.2 逐位表）：讀你 ρ（第 3–4 位 .30、第 5 位 .45 每位 +.02 封頂 .55）、beta .65（第 3 位起）、半指（3–4 位 .15、第 5 位 .20 每位 +.01 封頂 .30）、
   //   不露（第 6 位 .05 每位 +.02 封頂 .15）、被唬到多扣 1（第 5 位起）；rhoMul 2、rhoCap .9、rMercy .7 一律帶。測試自己寫一份
   const r6 = x => Math.round(x * 1e6) / 1e6;
-  const READ = (d, b) => ({ rho: r6(d < 3 ? 0 : Math.max(0, Math.min(1, (d < 5 ? 0.30 : Math.min(0.65, 0.55 + 0.02 * (d - 5))) + (b ? -0.15 : 0)))), rhoMul: 2, rhoCap: 0.9, rMercy: 0.7, beta: d < 3 ? 1 : 0.65,
+  const READ = d => ({ rho: r6(d < 3 ? 0 : d < 5 ? 0.30 : Math.min(0.55, 0.45 + 0.02 * (d - 5))), rhoMul: 2, rhoCap: 0.9, rMercy: 0.7, beta: d < 3 ? 1 : 0.65,
     half: r6(d < 3 ? 0 : d < 5 ? 0.15 : Math.min(0.30, 0.20 + 0.01 * (d - 5))), none: r6(d < 6 ? 0 : Math.min(0.15, 0.05 + 0.02 * (d - 6))), hit: d >= 5 ? 1 : 0 });
-  const wantOf = (K, d, b) => Object.assign({ hp: b ? 14 : 12, atk: K.atk(d, b), def: K.def(d, b), planner: K.planner(d), q: Math.round(K.q(d) * 1e6) / 1e6 }, K === CUR ? READ(d, b) : {});
+  const wantOf = (K, d, b) => Object.assign({ hp: b ? 14 : 12, atk: K.atk(d, b), def: K.def(d, b), planner: K.planner(d), q: Math.round(K.q(d) * 1e6) / 1e6 }, K === CUR ? READ(d) : {});
   const noQ = g => { const o = Object.assign({}, g); for (const k of ['q', 'rho', 'rhoMul', 'rhoCap', 'rMercy', 'beta', 'half', 'none', 'hit']) delete o[k]; return o; };
   for (let d = 1; d <= 300; d++) for (const cls of ['normal', 'elite', 'boss']) {
     const g = EN.trialGuest(NOC, d, cls), b = cls === 'boss';
@@ -1147,9 +1147,9 @@ section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、�
     '前期加難驗算值（11-16；q.easy 第 A 波合併 .8→.75；11-17 q.normal .75→.72）：第 1 位 q .75 攻 0 底 0、第 2 位 q .75 攻 1、第 3 位 q .72 攻 2 底 1、第 4 位菁英 q .72 攻 2 底 1');
   ok(G(5).atk === 3 && G(5).def === 2 && G(5).q === 0.75 && G(6).atk === 2 && G(6).def === 1 && G(6).q === 0.7 && G(7).q === 0.65 && G(11).atk === 3 && G(20).atk === 5 && G(8).q === 0.6 && G(12).q === 0.6 && G(60).q === 0.6,
     'V3 驗算值（第 5 位起攻／底氣不變）＋11-17 q：第 5 位藏家攻 3 底 2 q .75、第 6 位攻 2 底 1 q .70、第 7 位 .65、第 8 位起封底 .60、第 11 位攻 3、第 20 位藏家攻 5');
-  ok(G(1).rho === 0 && G(2).beta === 1 && G(2).half === 0 && G(3).rho === 0.3 && G(3).beta === 0.65 && G(3).half === 0.15 && G(3).hit === 0 && G(5).rho === 0.4 && G(6).rho === 0.57 && G(9).rho === 0.63 && G(11).rho === 0.65 && G(5).half === 0.2 && G(5).hit === 1 && G(5).none === 0
-    && G(6).none === 0.05 && G(10).rho === 0.5 && G(10).half === 0.25 && G(10).none === 0.13 && G(40).rho === 0.5 && G(41).rho === 0.65 && G(40).half === 0.3 && G(40).none === 0.15,
-    '11-17 讀牌加難驗算值（DESIGN §2.2）：第 1–2 位不讀、一種唬法；第 3 位 ρ .30 beta .65 半指 .15；第 5 位（藏家）ρ .40 半指 .20 多扣 1；第 6 位 ρ .57 不露 .05；第 9 位 ρ .63；第 10 位（藏家）ρ .50 半指 .25 不露 .13；第 11 位 ρ .65；封頂 .65（藏家 .50）／.30／.15');
+  ok(G(1).rho === 0 && G(2).beta === 1 && G(2).half === 0 && G(3).rho === 0.3 && G(3).beta === 0.65 && G(3).half === 0.15 && G(3).hit === 0 && G(5).rho === 0.45 && G(5).half === 0.2 && G(5).hit === 1 && G(5).none === 0
+    && G(6).none === 0.05 && G(10).rho === 0.55 && G(10).half === 0.25 && G(10).none === 0.13 && G(40).rho === 0.55 && G(40).half === 0.3 && G(40).none === 0.15,
+    '11-17 讀牌加難驗算值（DESIGN §2.2）：第 1–2 位不讀、一種唬法；第 3 位 ρ .30 beta .65 半指 .15；第 5 位 ρ .45 半指 .20 多扣 1；第 6 位不露 .05；第 10 位 ρ .55 半指 .25 不露 .13；封頂 .55／.30／.15');
   { const OFF = Object.assign({}, C, { trial: Object.assign({}, C.trial, { curve: Object.assign({}, C.trial.curve, { read: { from: 0 }, hintMix: { half: { from: 0 }, none: { from: 0 } } }) }) });
     const g = EN.trialGuest(OFF, 20, 'boss');
     ok(g.rho === 0 && g.beta === 1 && g.half === 0 && g.none === 0 && g.hit === 0, 'read.from 0／hintMix from 0 → 整條關（＝改版前）', g); }
