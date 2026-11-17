@@ -5,32 +5,42 @@
   "album": "POP CITY",
   "facts": [
    {
-    "text": "ないあがらせっと（英文表記 Naiagara Set）是日本的獨立流行團體；MusicBrainz 登錄《POP CITY》首發日為 2009 年 10 月 10 日。",
-    "src": "https://musicbrainz.org/ws/2/release-group/?query=artist:ないあがらせっと&fmt=json",
+    "text": "ないあがらせっと（NAIAGARA SET）在廠牌 Rose Records 的官方簡介中自稱「70 年代フォークやシティーポップを好む『戸畑系』の夕焼けバンド」（戸畑是北九州市的地名）。",
+    "src": "http://rose-records.jp/artists/naiagara_set/",
     "block": "what"
    },
    {
-    "text": "團的核心詞曲作者是 Hiroshi Nakamura（中村ヒロシ），2022 年 Rose Records 發行同名《ないあがらせっと》選輯 LP（含重新母帶），由曽我部恵一（Keiichi Sokabe）擔任製作、混音／母帶監修，並在其中和聲與彈吉他。",
-    "src": "https://api.discogs.com/releases/24345926",
+    "text": "2002 年初以《NAIAGARA SET》在 Bellwood Records 出道，在東京 Tower Records 全店試聽機上引起話題；同年第 2 張《ホリデヰ》，2003 年停止活動，中心人物中村（中村寛）轉向俳句、冨永轉向 DJ。",
+    "src": "http://rose-records.jp/artists/naiagara_set/",
+    "block": "what"
+   },
+   {
+    "text": "2007 年短暫復出並發行第 3 張《Sound Of Garden》，2008 年重啟、大幅更換成員並積極現場演出；2009 年 4 月《POP CITY》完成母帶，MusicBrainz 登錄首發日 2009 年 10 月 10 日；官網稱 2010 年秋「氣まぐれな解散」。",
+    "src": "http://rose-records.jp/artists/naiagara_set/",
+    "block": "story"
+   },
+   {
+    "text": "團的成員流動很大，官網說過去有 30 人以上進出；目前成員中村寛、平野邦昭、宮城源太、冨永真吾；Discogs 登錄 Hiroshi Nakamura 是詞曲作者與主唱。",
+    "src": "http://rose-records.jp/artists/naiagara_set/",
+    "block": "what"
+   },
+   {
+    "text": "2021 年夏天傳出「なんとなく再結成」，同年以〈グッドサマー〉（限量卡帶與配信，成為 CROSS FM「MUSIC AMP」9 月結尾曲）與〈グッドオータム〉復出；2022 年 6 月 22 日 Rose Records 發行精選集《ないあがらせっと》（CD 與限量 LP，曽我部恵一擔任製作與母帶監修）；2025 年 6 月 25 日發行《Sound Of Garden》LP。",
+    "src": "http://rose-records.jp/artists/naiagara_set/",
     "block": "after"
    },
    {
-    "text": "2022 年選輯收錄〈グッドサマー〉〈君と太陽〉〈サマーニンジャ〉〈『喫茶太陽』〉〈夏の調べ〉等曲，曲名多取夏天、喫茶店、街道的日常題材（《POP CITY》專輯曲目另有〈リゾート〉〈街のスーパーマン〉）。",
+    "text": "精選集收錄〈グッドサマー〉〈君と太陽〉〈サマーニンジャ〉〈『喫茶太陽』〉〈夏の調べ〉等曲，曲名多為夏天、咖啡館、街道的日常題材。",
     "src": "https://api.discogs.com/releases/24345926",
     "block": "sound"
-   },
-   {
-    "text": "團於 2025 年另有 LP《Sound Of Garden》由 Rose Records 發行，顯示該社持續為團重新發行作品。",
-    "src": "https://api.discogs.com/releases/36088546",
-    "block": "after"
    }
   ],
   "coverage": {
-   "what": "thin",
-   "story": "none",
-   "sound": "none"
+   "what": "ok",
+   "story": "thin",
+   "sound": "thin"
   },
-  "notes": "必查清單逐項：(1) 母語搜尋：WebSearch 共 4 次（「ないあがらせっと POP CITY 2009 Studio Soup」「ないあがらせっと バンド ナタリー OR HMV OR Tower」「中村ヒロシ 曽我部恵一 ローズレコーズ」「北九州 OR 福岡 OR 戸畑」）全無相關結果，只回傳無關頁面；ototoy 2009/11 專題頁無此團；(2) 通路：Tower 403、HMV 動態頁空、disk union 搜尋頁空、Bandcamp 需 JS、Rose Records 官網空白；(3) 維基：ja/en 維基 API 對本機擋、ja 頁面 404（無條目）；(4) Discogs 藝人頁 profile 空白（Needs Major Changes），2022 選輯 release 無 notes；MusicBrainz 只有團體與首發日，社群連結只有 Twitter/Facebook。結論：只能確認團名、年份、中村ヒロシ為詞曲作者、曽我部恵一／Rose Records 後續重發；聲音與故事沒有任何可引用來源。舊簡介的「Studio Soup 名義」「10 首／約 42 分」「日英文曲名並排」我無法從任何來源查證（只有 MusicBrainz 的 2009-10-10 日期）；舊簡介全是曲單與時長，不可用。建議寫作層薄寫或留置，不要編造風格描述（曲名〈君と太陽〉等僅是曲名，不能推論成聲音）。主線若要補查可試 Rose Records 商品頁（roserecords.thebase.in 對本機重導）或 Natalie/Mikiki 的 2022 選輯報導。"
+  "notes": "已補查：Rose Records 官方藝人頁（rose-records.jp/artists/naiagara_set/）找到團史，故 what 升 ok；《POP CITY》本身的製作過程與聲音特徵官網沒寫，Natalie／Tower／HMV／Bandcamp 都查不到（Tower 403、HMV/Bandcamp 動態頁空、ja 維基無條目、Discogs 藝人頁空白）。WebSearch 共用 6 次。舊簡介「Studio Soup 名義」「10 首、約 42 分鐘」「日英曲名並排」無來源，勿用；〈リゾート〉〈街のスーパーマン〉為 POP CITY 曲名（舊簡介），未查證。聲音只能依官方自述寫「70 年代民謠與城市流行」的路線，不要編樂器細節；POP CITY 是 2008 年重啟、成員大換血後的時期作品，這點可以寫（官網的時間線）。「戸畑系」＝北九州，可當地方色彩，但勿寫成樂風。"
  },
  {
   "key": "サミー & 稲垣次郎とソウル・メディア|woman, robinson crusoe / rock steady",
@@ -86,6 +96,16 @@
     "text": "UNIVERSOUNDS 廠牌 2013 年的第一張 7 吋，就是把本作的〈Rock Steady〉與サミー和フリーダム・ユニティ 1971 年《朝日のあたる家》的〈Summertime〉配對重發。",
     "src": "https://diskunion.net/artist/72354416",
     "block": "after"
+   },
+   {
+    "text": "【主線補查】CDJournal 2013 新聞：SAMMY 是 1970 年代前半以道地女性靈魂歌手身分在日本樂壇引起騷動的歌手；本張是她與稲垣次郎率領的ソウル・メディア 1972 年合作的專輯，被稱為 garage soul 的隱藏名盤，其中翻唱 Aretha Franklin 的〈Rock Steady〉特別受歡迎。",
+    "src": "https://www.cdjournal.com/main/news/sammy/52678",
+    "block": "what"
+   },
+   {
+    "text": "【主線補查】部落格「横浜パラダイス」：SAMMY 只在 1970 年代初短暫活動後忽然消失，本人資料幾乎沒有；本張是日語／英語原創加翻唱的構成。當時石川晶、稲垣次郎等爵士樂手正嘗試與 new rock 融合，出演日本ロックフェスティバル、日比谷野音，SAMMY 是受這群爵士名手喜愛的歌手。原版唱片要價六位數日圓，2016 年 HMV 曾再發黑膠。",
+    "src": "http://blog.livedoor.jp/tk88jm/archives/45330652.html",
+    "block": "story"
    }
   ],
   "coverage": {
@@ -93,7 +113,7 @@
    "story": "ok",
    "sound": "thin"
   },
-  "notes": "查證：卡單年份 1972 與 Discogs／Columbia 官方（1972 年 10 月 JDX-7007）一致。舊簡介錯／不可證處：(1)「Rock Steady 出自 Aretha Franklin、〈Day Dreaming〉1972 年 4 月靈魂單曲榜連兩週第一」榜單細節我未查證，不要寫；Aretha 兩曲由 Columbia 商品頁確認。(2)「B 面頭兩首都是 Aretha 的曲子」我無法證實曲序，Discogs 曲序顯示 Rock Steady 是第 6 軌、Day Dreaming 第 7 軌（卡單有 A/B 面疑問，不寫）。(3)「歌者サミー 1947 年生於長野、駐日美軍基地演出」找不到任何來源（diskunion、Columbia、Universounds 都說經歷不明、忽然消失），不准寫。(4) 此盤不是「東京半年後翻唱一遍」的說法無依據。sound 只有文案級描述（日文詞、Aretha 翻唱、groove），無樂器細節可查，標 thin；必查清單：母語搜尋（WebSearch 1 次無用；Yahoo Japan 搜尋 WebFetch 改走商品頁）、通路（Columbia、diskunion、Universounds、ticro、Stereo Records 等 ok；Tower／HMV 403）、維基稲垣次郎條目（ok）、Discogs（ok，無 release notes）。cdjournal／livedoor 部落格為 503，可由主線補查（blog.livedoor.jp/tk88jm/archives/45330652.html、cdjournal.com/main/news/sammy/52678）。"
+  "notes": "查證：卡單年份 1972 與 Discogs／Columbia 官方（1972 年 10 月 JDX-7007）一致。舊簡介錯／不可證處：(1)「Rock Steady 出自 Aretha Franklin、〈Day Dreaming〉1972 年 4 月靈魂單曲榜連兩週第一」榜單細節我未查證，不要寫；Aretha 兩曲由 Columbia 商品頁確認。(2)「B 面頭兩首都是 Aretha 的曲子」我無法證實曲序，Discogs 曲序顯示 Rock Steady 是第 6 軌、Day Dreaming 第 7 軌（卡單有 A/B 面疑問，不寫）。(3)「歌者サミー 1947 年生於長野、駐日美軍基地演出」找不到任何來源（diskunion、Columbia、Universounds 都說經歷不明、忽然消失），不准寫。(4) 此盤不是「東京半年後翻唱一遍」的說法無依據。sound 只有文案級描述（日文詞、Aretha 翻唱、groove），無樂器細節可查，標 thin；必查清單：母語搜尋（WebSearch 1 次無用；Yahoo Japan 搜尋 WebFetch 改走商品頁）、通路（Columbia、diskunion、Universounds、ticro、Stereo Records 等 ok；Tower／HMV 403）、維基稲垣次郎條目（ok）、Discogs（ok，無 release notes）。cdjournal／livedoor 部落格為 503，可由主線補查（blog.livedoor.jp/tk88jm/archives/45330652.html、cdjournal.com/main/news/sammy/52678）。 【主線補查】CDJournal、横浜パラダイス 以 curl 取得。"
  },
  {
   "key": "上田力|flying easy",
@@ -359,5 +379,144 @@
    "sound": "ok"
   },
   "notes": "必查逐項：(1) 母語搜尋：Yahoo Japan 搜尋 2 次，找到 livedoor 樂評部落格（CROSSOVER CITY 5 枚）與 Mikiki 報導；(2) 通路：Tower/HMV 403，King 官網未找到這張；(3) ja 維基藝人頁有「首張原創個人專輯」一句；(4) Discogs 有完整 credit、無 notes。舊簡介：「1982 年掛在 King 名下，盤面 K28P 6210，八軌全是原創器樂曲」——「全是原創」與 ja 維基「オリジナル曲で構成」一致，但「器樂曲」與 Discogs 的「女聲合唱 Otowa Mongiri-kai」衝突（至少〈Papaya Source〉有女聲合唱，聲部是否有歌詞不明），不要寫「全器樂」；盤號、綽號屬雜項／軼事（綽號可當一句冷知識，但別當鉤子）。「渡辺茂樹嫌記名字麻煩、替每人取綽號」ja 維基有載。story（為何錄、概念）找不到訪談，thin。沒有找到具名樂評對整張的評價，只有部落格曲目描述（個人部落格，勿寫成權威評價）。"
+ },
+ {
+  "key": "北村英治|happy cooking vol. ii",
+  "artist": "北村英治",
+  "album": "Happy Cooking Vol. II",
+  "facts": [
+   {
+    "text": "北村英治（1929 年 4 月 8 日生於東京）是日本爵士單簧管的先驅，慶應大學就學時學單簧管，1951 年職業出道，1957 年參加來日的 Benny Goodman 即興聚會；被視為日本爵士單簧管的草分。",
+    "src": "https://ja.wikipedia.org/wiki/北村英治",
+    "block": "what"
+   },
+   {
+    "text": "1973 年是他的多產年：同年有《Happy Cooking》（Living Audio）與《Happy Cooking Vol. II》（Chrysler），並與 Teddy Wilson、菅野邦彦、今田勝、中本マリ、松本英彦等合作多張。",
+    "src": "https://ja.wikipedia.org/wiki/北村英治",
+    "block": "what"
+   },
+   {
+    "text": "《Vol. II》與 Trio 的 1973 年版《Happy Cooking》（PAP-9176）曲目相同，Discogs 登錄的錄音資料為 1973 年 7 月 25 日於東京的 Mouri Studio；陣容是北村英治（單簧管）、増田一郎（顫音琴，兼製作與錄音）、八城一夫（鋼琴）、塩崎郁夫（吉他）、原田政長（貝斯）、五十嵐武敏（鼓），原田政長也畫了封面插圖。",
+    "src": "https://api.discogs.com/releases/32710860",
+    "block": "story"
+   },
+   {
+    "text": "編制是單簧管＋顫音琴＋鋼琴＋吉他＋貝斯＋鼓的六重奏，曲目是 Swing 時代標準曲：〈Sweet Sue Just You〉〈How High The Moon〉〈Darn That Dream〉〈Body And Soul〉〈Swingin' On A Camel〉〈You Can Depend On Me〉〈We'll Meet Again〉，加上巴西曲〈Bhaiazinho〉與同名主題曲〈Happy Cooking〉。",
+    "src": "https://api.discogs.com/releases/11542837",
+    "block": "sound"
+   },
+   {
+    "text": "盤中有一段把五首歌（〈What Are You Doing The Rest Of Your Life〉〈How High The Moon〉〈Darn That Dream〉〈Body And Soul〉〈Maybe You'll Be There〉）連成一段的組曲式 Medley。",
+    "src": "https://api.discogs.com/releases/11542837",
+    "block": "sound"
+   },
+   {
+    "text": "1980 年有以「北村英治 & Happy Cooking All Stars」名義發行的《Sapporo Concert》；《Happy Cooking》1986 年由 Apollon 重新發行。",
+    "src": "https://jazzshiryokan.net/jazzDB/musician_detail.php?serialNumber=4301",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "thin"
+  },
+  "notes": "必查逐項：(1) 母語搜尋：Yahoo Japan 搜尋 3 次，只得串流／二手商品頁，沒有樂評或解說；(2) 通路：Tower/HMV 403，Apple Music／Spotify 只列 1986 年版；(3) ja 維基藝人頁 1973 年段只有盤名與廠牌，沒有「Happy Cooking」條目；(4) Discogs Vol.II 無 notes／credit，但 1973 Trio 版 PAP-9176 與 1986 版有 credit，並註明「Same tracklist as Vol.II」——人員與錄音日期據此推定，寫作時請寫「同一場 1973 年 7 月的錄音」之前注意這是 Discogs 同曲目推論，非 Vol.II 本身的 credit。舊簡介「盤名後來變成團名／1980 年與 2003 年各有一支樂團接過這名字」：1980 年 Happy Cooking All Stars 有 Sapporo Concert 為證；2003 一項查不到，不要寫；「五首歌串成、盤面登記八軌實際十二首」屬曲單雜項；「編號 CE-3002 緊接 CE-3001、廠牌登記成兩家」是雜項不用。找不到具名樂評，地位無法寫，建議薄寫：日本單簧管名手的 1973 年六重奏、全是標準曲。"
+ },
+ {
+  "key": "宮沢昭|on green dolphin street",
+  "artist": "宮沢昭",
+  "album": "On Green Dolphin Street",
+  "facts": [
+   {
+    "text": "宮沢昭（1927 年 12 月 6 日長野縣松本市生，2000 年 7 月 6 日急性肺炎逝世）是日本爵士次中音薩克斯風與長笛名手；1944 年入陸軍戶山學校軍樂隊，戰後在駐日美軍俱樂部演奏，後與守安祥太郎、穐吉敏子合作，1954 年參加傳奇的「Mocambo Jam Session」，1962 年發表《山女魚》。",
+    "src": "https://ja.wikipedia.org/wiki/宮沢昭",
+    "block": "what"
+   },
+   {
+    "text": "1970 年代他多半做錄音室工作，為越路吹雪的獨唱會伴奏；1981 年的《My Piccolo》（Polydor）是他隔約 11 年後回到爵士的作品，《On Green Dolphin Street》接在隔年（1982）由 Union Jazz 發行（ULP-7002）。",
+    "src": "https://awcs.exblog.jp/32082315/",
+    "block": "story"
+   },
+   {
+    "text": "錄音日期 1982 年 10 月 17 日，四重奏：宮沢昭（次中音、高音薩克斯風）、佐藤允彦（鋼琴）、井野信義（貝斯）、日野元彦（鼓）；製作橫田武雄，內田修、由井正一、岩浪洋三三人寫解說。",
+    "src": "https://api.discogs.com/releases/3900426",
+    "block": "story"
+   },
+   {
+    "text": "六首全是標準曲：〈On Green Dolphin Street〉〈Vierd Blues〉（Miles Davis）〈Thriving On A Riff〉（Charlie Parker）〈Sweet And Lovely〉〈All The Things You Are〉〈The Shadow Of Your Smile〉；Ace Wax Collectorz 部落格說他在解說裡表示自己這次「狀態很好」。",
+    "src": "https://awcs.exblog.jp/32082315/",
+    "block": "story"
+   },
+   {
+    "text": "Ace Wax Collectorz 部落格點出〈Sweet And Lovely〉接〈All The Things You Are〉那段的調式（modal）延伸，並指出收尾的〈The Shadow Of Your Smile〉帶有昭和年代日本「ムード歌謡」式的抒情影子。",
+    "src": "https://awcs.exblog.jp/32082315/",
+    "block": "sound"
+   },
+   {
+    "text": "宮沢昭愛釣魚，曲名與唱片封面常取釣魚為題。",
+    "src": "https://ja.wikipedia.org/wiki/宮沢昭",
+    "block": "story"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "查證：卡單 1982 正確（錄音 1982-10-17，Union Jazz ULP-7002，Teichiku 系）。舊簡介錯：「隔了十三年再回到同一家廠牌系統」不成立——ja 維基列出 1969 年 Teichiku 作品（Musical Play in Jazz／Four Units），但之後 1970 木曽（Victor）、1981 My Piccolo（Polydor）、1982 本盤，並非隔 13 年同廠的簡單說法，且 Ace Wax 說 My Piccolo 是回歸爵士的作品；請寫「1981 年《My Piccolo》之後隔年的第二張」。「Vierd Blues 出自 Miles Davis」「Thriving On A Riff 出自 Parker」是常識性作曲者，未另查來源，寫作層若寫要有把握。日野元彦是日野皓正之弟為常識，未在本次來源出現，如寫請主線複核。sound 具體只有部落格兩句；佐藤允彦的鋼琴風格、宮沢的音色沒有具名評價，標 thin。必查逐項：Yahoo Japan 搜尋 1 次（得部落格、商品頁）；hiptankrecords 商品頁 503／空；ja 維基只有簡歷與盤目；Discogs 無 notes。"
+ },
+ {
+  "key": "宮沢昭カルテット|sea horse",
+  "artist": "宮沢昭カルテット",
+  "album": "Sea Horse",
+  "facts": [
+   {
+    "text": "《Sea Horse》是宮沢昭逝世（2000 年 7 月）後才發行的現場錄音：1989 年 12 月 21–23 日於静岡縣浜松市グランド・ホテル浜松的大廳演出時收下，2002 年由 M & I 首度發行（MYCJ-30145），2023 年由 Pony Canyon 首度做成 2 枚組黑膠。",
+    "src": "https://www.catfish-records.jp/phone/product/31371",
+    "block": "what"
+   },
+   {
+    "text": "宮沢昭晚年移居浜松；浜松是爵士盛行之地，醫師內田修（Dr. Jazz）住在那裡，浜松的現場錄音出乎意料地多。",
+    "src": "http://jazzaoki.blog.fc2.com/blog-entry-30.html",
+    "block": "story"
+   },
+   {
+    "text": "伴奏是浜松在地的竹内夫妻（鋼琴竹内晴美、貝斯竹内俊介）加鼓手小津昌彦；小津在宮沢樂團出道，後來與 Ornette Coleman、Sarah Vaughan 合作過。",
+    "src": "https://www.catfish-records.jp/phone/product/31371",
+    "block": "story"
+   },
+   {
+    "text": "M & I 首度發行時由內田修與児山紀芳寫雙重解說（2002 年執筆）。",
+    "src": "https://www.catfish-records.jp/phone/product/31371",
+    "block": "after"
+   },
+   {
+    "text": "廠商文案：樂器聲音錄得非常清楚，清楚到可以誤認為錄音室錄音；稱演奏「豪快でクリエイティブ」，並在每種曲風上都能聽到次中音薩克斯風的上等音色。",
+    "src": "https://www.catfish-records.jp/phone/product/31371",
+    "block": "sound"
+   },
+   {
+    "text": "〈Green Dolphin Street〉以無伴奏薩克斯風獨奏開場；曲目有 Duke Ellington〈In A Sentimental Mood〉、音樂劇《Camelot》的〈If Ever I Would Leave You〉，另有一首宮沢自作曲〈Baby Sea Horse〉。",
+    "src": "https://www.catfish-records.jp/phone/product/31371",
+    "block": "sound"
+   },
+   {
+    "text": "日本爵士部落格 JAZZ名盤 徒然草：宮沢昭的現場盤很少，這張把他在喜歡的地點唱喜歡的歌的樣子留下來，歌心與音色都「見事」；稱他把拿手的標準曲與原創曲「歌い上げる」。",
+    "src": "http://jazzaoki.blog.fc2.com/blog-entry-30.html",
+    "block": "sound"
+   },
+   {
+    "text": "宮沢昭是日本爵士次中音名手（1927–2000），1954 年 Mocambo Jam Session 參與者，1962 年《山女魚》，後期移居浜松，約逝世前兩年回到東京三鷹。",
+    "src": "https://ja.wikipedia.org/wiki/宮沢昭",
+    "block": "what"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "ok"
+  },
+  "notes": "查證：卡單 2002 是首度發行年，錄音是 1989 年 12 月（Discogs 註 1989-12-21，Catfish 文案與部落格寫 12/21–23），不是舊簡介寫的單夜 12 月 21 日——寫作請寫「1989 年 12 月」。舊簡介「浜松一家飯店演出、擱了十三年」正確（1989→2002），但 Discogs 與商品頁顯示 2002 年版 M&I MYCJ-30145 是宮沢逝世（2000）兩年後才發行，為遺作（「宮沢昭の没後」jazzaoki 部落格）；舊簡介沒提這點，是故事核心。曲目差異：2002 版第 6 軌是 Tenor Madness（Discogs 註記實為 Billie's Bounce），2023 黑膠版寫 Billie's Bounce；雜項不要寫。「最長 10:15」「八首標準曲加一首自作」雜項不用。竹内晴美／竹内俊介為夫婦（部落格寫「竹内夫妻」）。"
  }
 ]
