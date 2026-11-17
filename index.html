@@ -4599,7 +4599,7 @@ ${seenList}
   // （streamingBtnsHtml 在 bandcampUrl 未知時會先給灰色 placeholder，這裡才去問 Bandcamp。）
   // 背景補上 Spotify 直連。兩支端點都有快取，同一張卡只有第一次會真的打 Spotify API：
   //   /spotify-search（KV 永久快取，能比對日文／韓文名）；但封面改走 CAA 的卡，快取裡不會有 spotifyUrl
-  //   /spotify-album-link（邊緣快取）補上前者沒有的；它只比對拉丁字母藝人名
+  //   （/spotify-album-link 退路已拿掉：它只比藝人、不比專輯名，會給同藝人別張。2026-11-17）
   async function resolveSpotifyBtn(artist, album, containerEl) {
     if (!containerEl) return;
     const btn = containerEl.querySelector('.streaming-btn[data-platform="spotify"]');
@@ -4608,9 +4608,7 @@ ${seenList}
     const get = path => fetch(`${WORKER_URL}/${path}?${q}`).then(x => x.ok ? x.json() : {}).catch(() => ({}));
     const sr = await get('spotify-search');
     let url = sr.spotifyUrl;
-    // 2026-10-21：Spotify 配額很小（每日千次上下）。KV 已標 spotifyChecked 的是修復腳本拿卡名問過 Spotify、
-    // 確定沒有完全吻合的，不要再為它打 /spotify-album-link 多燒一次配額；維持灰。
-    if (!url && !sr.spotifyChecked) url = (await get('spotify-album-link')).url;
+    // 2026-11-17 拿掉 /spotify-album-link 退路：它只比藝人、不比專輯名，取同藝人第一張就回（John Zorn《Cobra》→《Cobra-Tokyo Operations '94》）。只用 /spotify-search，查不到就灰。
     if (url && btn.isConnected) {
       btn.href = url; btn.target = '_blank'; btn.rel = 'noopener'; btn.removeAttribute('disabled');
     }
@@ -4668,7 +4666,8 @@ ${seenList}
   // 抓 Spotify + YouTube Music 直連（背景非同步，結果出來後更新按鈕）
   async function fetchStreamingLinks(artist, album, containerEl) {
     const [spotifyRes, ytRes] = await Promise.allSettled([
-      fetch(`${WORKER_URL}/spotify-album-link?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}),
+      // 只比藝人的 /spotify-album-link 會給同藝人別張（2026-11-17），改問有專輯名比對的 /spotify-search
+      fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}).then(j => ({ url: j.spotifyUrl || '' })),
       fetch(`${WORKER_URL}/yt-music-link?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}),
     ]);
     const spotifyUrl = spotifyRes.status === 'fulfilled' ? spotifyRes.value?.url : null;

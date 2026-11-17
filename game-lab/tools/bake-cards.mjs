@@ -370,6 +370,9 @@ function bandcampMatches(url, artist, album) {
 const LINK_OVERRIDES = {
   // 審查 11-13：/bandcamp-search 回的 themilesdavisquintet.bandcamp.com 是第三方的 50 週年 K2 CD 再版頁，不是原版、也不是唱片公司官方
   'miles-davis-cookin-with-the-miles-davis-quintet': { bandcampUrl: '' },
+  // 11-17 稽核（batch-progress/spotify-fallback-20261117）：KV 沒有、主線判讀為同一錄音的，固定保留
+  'goblin-profondo-rosso': { spotifyUrl: 'https://open.spotify.com/album/2NoDQ9XSGdio43xMKm6rM8' },
+  'glenn-gould-leonard-bernstein-brahms-piano-concerto-no-1-196': { spotifyUrl: 'https://open.spotify.com/album/4SDwjgfk4ZSdDEt9k96thp' },
 };
 function applyLinkOverrides(cards) {
   let n = 0;
@@ -391,8 +394,10 @@ async function bakeLinks(cards, ids) {
   await pool(ids, 4, async id => {
     const c = cards[id];
     const q = 'artist=' + encodeURIComponent(c.artist) + '&album=' + encodeURIComponent(c.album);
-    let sp = (await getJson(WORKER + '/spotify-search?' + q)).spotifyUrl || '';
-    if (!sp) sp = (await getJson(WORKER + '/spotify-album-link?' + q)).url || '';
+    // 只用 /spotify-search（KV、藝人＋專輯名比對、MB 覆核）。2026-11-17 拿掉 /spotify-album-link 退路：
+    // 它只比藝人、不比專輯名，取同藝人第一張就回，烘進了 John Zorn《Cobra》→《Cobra-Tokyo Operations '94》、
+    // Glenn Branca《The Ascension》→《The Sequel》等錯張（店主截圖回報）。查不到就不給鈕，寧缺勿錯。
+    const sp = (await getJson(WORKER + '/spotify-search?' + q)).spotifyUrl || '';
     c.spotifyUrl = /^https:\/\/open\.spotify\.com\/album\//.test(sp) ? sp : '';
     const bc = (await getJson(WORKER + '/bandcamp-search?' + q, 25000)).bandcampUrl || '';
     c.bandcampUrl = bandcampMatches(bc, c.artist, c.album) ? bc : '';
