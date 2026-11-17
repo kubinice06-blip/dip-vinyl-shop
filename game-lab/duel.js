@@ -110,16 +110,23 @@
   const cssEsc = s => (window.CSS && CSS.escape ? CSS.escape(String(s)) : String(s).replace(/["\\]/g, '\\$&'));
 
   // ------------------------------------------------------------------ covers
+  // 對決裡的卡是開打當下的複本（存檔也存複本）：精選新卡的封面要等 cards-media.json，開打時還沒到／404＝複本沒有封面 → 查活的那張（驗收 F3）
+  function coverOf(card) {
+    if (!card || card.localCover || card.coverUrl || !card.id) return card;
+    const live = (typeof window !== 'undefined' && window.DipLabCards) ? window.DipLabCards[card.id] : null;
+    return live && (live.localCover || live.coverUrl) ? live : card;
+  }
   function coverSrc(card) {
+    card = coverOf(card);
     if (!card) return '';
     if (card.localCover) { try { return new URL(card.localCover, BASE).href; } catch (_) {} }
     return card.coverUrl || '';
   }
   function img(card) {
     if (!card) return '<span class="cv noimg"></span>';
-    const src = coverSrc(card);
+    const src = coverSrc(card), cv = coverOf(card);
     if (!src) return `<span class="cv noimg"><span>${esc(card.album)}</span></span>`;
-    const fb = card.localCover && card.coverUrl ? ` data-fb="${esc(card.coverUrl)}"` : '';
+    const fb = cv.localCover && cv.coverUrl ? ` data-fb="${esc(cv.coverUrl)}"` : '';
     return `<img class="cv" src="${esc(src)}"${fb} alt="${esc((card.artist || '') + '《' + (card.album || '') + '》')}" draggable="false" decoding="async">`;
   }
   // 封套背面（他蓋著的那張；跟舞台 holdDraw 的背面同一個樣子：深色紙＋白色內圈標）

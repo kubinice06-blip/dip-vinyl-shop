@@ -422,7 +422,7 @@ section('matches／chipOk：點那張認 id／blocked／ace；點屬性（丟）
   const ctx = R.context();
   const S = TUT.stepsFor(C, 'hall');
   const k1 = S.find(s => s.id === 'k1'), k2 = S.find(s => s.id === 'k2'), m2 = S.find(s => s.id === 'm2'), m3 = S.find(s => s.id === 'm3');
-  const kf = 'miles-davis-cookin-with-the-miles-davis-quintet', low = 'daft-punk-random-access-memories';   // 店主 11-13：殿堂那組換成有名的（第 1 手 Random Access Memories、第 2 手 Cookin）
+  const kf = "miles davis|cookin' with the miles davis quintet", low = "daft punk|random access memories";   // 店主 11-13：殿堂那組換成有名的（第 1 手 Random Access Memories、第 2 手 Cookin）
   const iKF = idxOf(duel, kf), iLow = idxOf(duel, low);
   ok(TUT.matches(m2, cardAct(duel, iLow), ctx), 'm2 點 Random Access Memories 的封面：放行');
   ok(!TUT.matches(m2, cardAct(duel, iKF), ctx), 'm2 點別張：擋');

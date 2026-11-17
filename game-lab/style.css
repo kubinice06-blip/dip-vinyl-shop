@@ -278,6 +278,7 @@ small{font-size:inherit;}
 /* 牆只排一排（審查 #12）：多的收成「+N」那格，點了開唱片櫃 */
 .lb-wall .lb-more{width:100%;aspect-ratio:1/1;display:grid;place-items:center;border:1px dashed var(--ink);background:#f6f3ec;font:700 18px 'Space Mono',var(--zh);color:var(--ink);padding:0;cursor:pointer;}
 @supports not (aspect-ratio:1/1){.lb-wall .lb-more{height:0;padding-top:100%;position:relative;}.lb-wall .lb-more b{position:absolute;inset:0;display:grid;place-items:center;}}
+.lb-wmore{height:1px;}   /* 唱片櫃頁：牆後面的空格，捲到這裡再補下一批（ui.js renderShelf） */
 /* 一趟留一張（結算；店主 11-13）：取代那面牆、一樣高（矮螢幕也不用捲）。還沒帶走＝一顆金邊大鈕（字＋三張小封面），帶走了＝金框那張＋一句 */
 .lb-keep{display:flex;align-items:center;gap:10px;width:100%;min-height:64px;margin:2px 0 4px;padding:8px 10px;border:2px solid var(--gold);background:var(--cream,#fbf6e8);text-align:left;font:inherit;color:var(--ink);cursor:pointer;}
 .lb-keep .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;}
@@ -912,3 +913,37 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sum li .nr.near{background:#fff;color:var(--gold-ink,#8a6508);box-shadow:inset 0 0 0 1px var(--gold);}
 .lb-endhero .sub .close{color:var(--ink);font-weight:700;}
 .lb-night .nc.done .ok{bottom:auto;top:0;}   /* 打完的勾移到右上：右下被稱號名牌壓住（第 A 波 3） */
+
+/* ---------- 今日推薦集點卡（SPEC-B §4.6） ---------- */
+.lb-daily{flex:none;margin-top:8px;padding:8px 10px 6px;border:1px solid var(--ink);background:var(--cream);box-shadow:3px 3px 0 rgba(0,0,0,.12);}
+.dl-hint{margin:0 0 6px;font-size:12px;line-height:1.55;color:var(--cream-ink);}
+.dl-ttl{display:inline-block;padding:0 6px;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.12em;line-height:18px;}
+.dl-row{display:flex;align-items:center;gap:10px;margin-top:6px;}
+.dl-row .lb-cv{width:64px;height:64px;}
+.dl-tx{flex:1;min-width:0;}
+.dl-tx .ar{font-size:10px;color:var(--gray2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.dl-tx .al{font-size:13px;font-weight:700;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.dl-mt{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;margin-top:2px;font-size:11px;}
+.dl-tn{display:inline-flex;align-items:center;gap:4px;color:var(--gray2);white-space:nowrap;}
+.dl-tn i{width:8px;height:8px;border-radius:50%;background:var(--tn);box-shadow:0 0 0 1px var(--ink);}
+.dl-act{flex:none;display:flex;flex-direction:column;gap:6px;width:76px;}
+.dl-play{height:30px;border:1px solid var(--ink);background:#fff;font-size:12px;}
+.dl-play:disabled{opacity:.35;}
+.dl-take{min-height:40px;padding:4px 8px;}
+.dl-done{font-size:10px;line-height:1.4;color:var(--gray2);text-align:center;}
+.dl-none{margin:6px 0 0;font-size:12px;color:var(--gray2);}
+.dl-card{display:flex;align-items:center;gap:8px;margin-top:8px;padding-top:8px;border-top:1px dashed #b7a86a;}
+.dl-n{flex:none;font-size:11px;font-weight:700;letter-spacing:.04em;white-space:nowrap;}
+.dl-n small{margin-left:3px;color:var(--gold-ink);}
+.dl-cells{flex:1;min-width:0;display:flex;gap:4px;padding-bottom:12px;}
+.dl-st{position:relative;flex:1 1 0;max-width:26px;aspect-ratio:1/1;border:1px dashed #b7a86a;background:#fff;}
+@supports not (aspect-ratio:1/1){.dl-st{height:22px;}}
+.dl-st.on{border:1px solid var(--ink);}
+.dl-st.on::before{content:'';position:absolute;left:2px;top:2px;right:2px;bottom:2px;border-radius:50%;background:radial-gradient(circle,#fff 0 9%,var(--red) 11% 32%,#111 34% 100%);}
+.dl-st small{position:absolute;left:0;top:100%;font-size:9px;line-height:12px;color:var(--gold-ink);white-space:nowrap;}
+.dl-st.new::before{animation:dlStamp .38s cubic-bezier(.2,1.6,.4,1) both;}
+@keyframes dlStamp{0%{transform:scale(1.9) rotate(-25deg);opacity:0;}100%{transform:none;opacity:1;}}
+.dl-claim.lb-btn{flex:none;min-height:36px;padding:4px 10px;font-size:12px;background:var(--gold-ink);border-color:var(--gold-ink);}
+.lb-foot.dl-chip{margin-top:6px;}
+.dl-chip button{max-width:100%;min-height:30px;padding:2px 12px;border:1px solid var(--gold);background:var(--cream);color:var(--cream-ink);font:700 12px var(--zh);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+@media (prefers-reduced-motion:reduce){.dl-st.new::before{animation:none;}}

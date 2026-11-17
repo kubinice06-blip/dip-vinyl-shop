@@ -33,7 +33,7 @@ const want = n => !ONLY.length || ONLY.includes(n);
 const SHOTS = process.env.UNLOCK_SHOTS || '';
 const QA = (extra = '') => Q('&fast=1&apex=1' + extra);
 const C = (page, f, a) => page.evaluate(f, a);
-const RALLIZES = 'les-rallizes-denudes-77-live', SCUM = 'napalm-death-scum';
+const RALLIZES = "les rallizes dénudés|'77 live", SCUM = "napalm death|scum";
 
 const errs = page => (page._errors || []).filter(e => !/favicon/.test(e));
 // 吐司：頁面一載入就記（標題畫面的一次性吐司在第一個畫面就出）
@@ -130,7 +130,7 @@ async function runSize(browser, w, h) {
       const line = await C(page, () => (document.querySelector('.lb-page .lb-unl') || {}).textContent || '');
       const wantLine = fill(x.unlockProg, { n: 1 }) + '・' + fill(x.unlockNext, tv('hall', x));
       const lockHint = fill(x.lockHint, tv('hall', x));
-      const ok = t1.includes(x.unlockMigrated) && !t2.includes(x.unlockMigrated) && st.e && st.e.own === true && st.e.src === 'start' && st.stored === 6 &&
+      const ok = t1.includes(x.unlockMigrated) && !t2.includes(x.unlockMigrated) && st.e && st.e.own === true && st.e.src === 'start' && st.stored === 7 &&
         u0.tiers === 'pearl' && u0.run === 'pearl' && !hint.toasts.includes(x.aceHint) && !hint.seen && hint.toasts.filter(t => t === lockHint).length === 1 && hint.lockSeen &&
         menu && !menu.swap && menu.none === x.aceSwapNone + x.aceLocked && menu.dis && menu.inView && menu.a === 'close,talk,osell' && menu.osell && sellTab === 'sell' &&
         scrollOk(scM) && !after.pick && after.eng === 'locked' && line === wantLine;

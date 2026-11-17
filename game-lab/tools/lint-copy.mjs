@@ -6,6 +6,7 @@
 //   1. 禁用字串（店主用語、支語、破折號、舊三軸名「入」）：content.js 的字串、cards.js 的 pitch、
 //      ui.js／duel.js／recap.js（11-17 上一手詳情）／tutorial.js／cardinfo.js／econ.js（v4 B3）／stage.js／shop.js／shop-props.js／fx.js／index.html 的字串、shops/*.json 的名牌（缺檔就跳過）。
 //      三軸一律經典／冷門／硬蕊；「唱片資訊」不寫「卡片資訊」；「櫃檯」不寫「櫃台」；「派對」不出現；台詞與提示不用破折號。
+//      藝人／專輯含「派對」：核心卡擋、精選新卡（cards-pool.js，真實專輯名）只警告（第 B 波 D19）。
 //   2. v3 拿掉的系統不准回來（SPEC-v3 §2.3、§10.6）：
 //      對決、教學、外殼的畫面字不准有「氣勢、輾壓、賭注、相生、割捨、七星回擊、霸權、點播」
 //        （content.js、duel.js、tutorial.js、ui.js、cardinfo.js、index.html）；
@@ -16,6 +17,7 @@
 //      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
 //      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、seedsTag（從唱片櫃挑牌開局 C.seeds.ui）、
+//      dailyTag（今日推薦集點卡 C.daily，第 B 波）、
 //      tunesTag／radioTag（頻率八格的名字與收音機，v5 第六項第二期）、apexTrialTag（頂點卡純輔助卡試做 ?apex=1：能力名 ≤8、說明 ≤25、畫面字、小提示 ≤20、結果句 ≤25）、pitches.json）；
 //      無限試煉沒有打烊、第二夜：C.night、C.secondNight 不准回來；畫面字不准再寫「今晚來客／打烊／再來一夜／今晚賣完」
 //      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
@@ -174,9 +176,14 @@ if (fs.existsSync(shopDir)) {
 const CARDS = C.cards || {};
 const pitches = JSON.parse(read(path.join(HERE, 'pitches.json')) || '{}');
 scanned.push('cards.js（pitch／藝人／專輯）', 'tools/pitches.json');
+// 藝人／專輯含「派對」（第 B 波 SPEC-B §1.4【定稿 A1】、rulings D19）：核心卡（cards.js，我們挑的）擋；精選新卡（cards-pool.js，pool: true）只警告——
+//   真實專輯名不是我們寫的字（目前只有 Beyond《命運派對》，留在卡池）；要拿掉＝pool-list.json 刪一列重烘
 for (const card of Object.values(CARDS)) {
   if (card.pitch) scanStrings('cards.js#' + card.id, [{ s: card.pitch, line: 'pitch' }], { allDash: true });
-  for (const k of ['artist', 'album']) if (/派對/.test(card[k] || '')) err('cards.js#' + card.id, k + ' 含「派對」（會出現在畫面上）');
+  for (const k of ['artist', 'album']) if (/派對/.test(card[k] || '')) {
+    if (card.pool) warns.push('cards-pool.js#' + card.id + '：' + k + ' 含「派對」（精選新卡的真實專輯名，不擋；D19）');
+    else err('cards.js#' + card.id, k + ' 含「派對」（會出現在畫面上）');
+  }
 }
 for (const [id, p] of Object.entries(pitches)) if (!id.startsWith('_')) scanStrings('pitches.json#' + id, [{ s: p.text, line: 'text' }], { allDash: true });
 
@@ -476,7 +483,8 @@ else {
 if (C.shopLines) {
   const SHORT = ['poster', 'cat', 'locked', 'binBusy', 'ownerHint', 'nightIntro', 'taipeiHere', 'backToShop', 'bin', 'booth', 'boothEmpty',
     'homeBtn', 'homeTitle', 'homeSub', 'homeShelf', 'homeDeck', 'homeConsole', 'homePut', 'homeStop', 'homeNow', 'homeIdle', 'homeWantN', 'homeDeckEmpty', 'homeOnDeck', 'homeWant', 'homeWantAgain', 'homeTuneFail', 'homeTuneLoading', 'homeTuneBack'];
-  const sceneOf = key => key === 'nightIntro' ? '今晚來客・第一次（soft 提示）' : /^home/.test(key) ? '你家・聆聽室' : /^taipei|backToShop/.test(key) ? '台北地圖預告' : '店裡熱點（點了說一句）';
+  const sceneOf = key => key === 'nightIntro' ? '今晚來客・第一次（soft 提示）' : /^home/.test(key) ? '你家・聆聽室' : /^taipei|backToShop/.test(key) ? '台北地圖預告' :
+    /^lot/.test(key) ? '一檔貨（兩位客人之間換貨、第 2 輪起全卡池；老闆一句）' : key === 'dailyNew' ? '今日推薦集點卡（老闆提醒）' : '店裡熱點（點了說一句）';
   const walkS = (val, tag, key, where) => {
     if (Array.isArray(val)) return val.forEach((v, k) => walkS(v, Array.isArray(tag) ? tag[k] : tag, key, where + '[' + k + ']'));
     if (val && typeof val === 'object') return Object.entries(val).forEach(([k, v]) => walkS(v, tag && tag[k], key, where + '.' + k));
@@ -492,7 +500,7 @@ for (const [k, b] of Object.entries(C.bins || {})) if (b && b.label) add({ scene
 for (const [k, v] of Object.entries(C.shopUi || {})) {
   if (typeof v !== 'string' || !v) { err('shopUi.' + k, '不是字串'); continue; }
   if (!TAG_OK(C.shopUiTag)) err('shopUi.' + k, '沒有 tag（shopUiTag）');
-  if (len(v) > 24) err('shopUi.' + k, '超過 24 字：' + v);
+  if (len(v.replace(/\{\w+\}/g, '')) > 24) err('shopUi.' + k, '超過 24 字（不算 {x}）：' + v);   // 第 B 波起不算 {x}（wantOnShelf 有 {album}／{bin} 兩個空格），同 trial／seeds
   add({ scene: '經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）', where: 'shopUi.' + k, who: '（畫面字）', key: k, text: v, tag: C.shopUiTag });
 }
 if (C.bargain && C.bargain.label) { if (!TAG_OK(C.bargainTag)) err('bargain.label', '沒有 tag（bargainTag）'); add({ scene: '經濟介面（箱子、櫃檯、特價箱；{x} 由畫面代入）', where: 'bargain.label', who: '（畫面字）', text: C.bargain.label, tag: C.bargainTag }); }
@@ -519,6 +527,15 @@ for (const [k, v] of Object.entries(((C.seeds || {}).ui) || {})) {
   const scene = /^pick/.test(k) ? '從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）' : /^(keep|from)/.test(k) ? '從唱片櫃挑牌開局・結算：這一趟帶走一張' :
     /^(reward|bagOut|stake)/.test(k) ? '從唱片櫃挑牌開局・沒收的只算「認識」（領獎、包包滿拿出來、序章撿唱片）' : '從唱片櫃挑牌開局・唱片櫃頁（我的收藏／認識過）';
   add({ scene, where, who: '（畫面字）', key: k, text: v, tag: C.seedsTag });
+}
+// 今日推薦集點卡（第 B 波 SPEC-B §4.7；C.daily、dailyTag）：說明 hint ≤60、其他每句 ≤24（不算 {x}）
+for (const [k, v] of Object.entries(C.daily || {})) {
+  const where = 'daily.' + k;
+  if (typeof v !== 'string' || !v) { err(where, '不是字串'); continue; }
+  if (!TAG_OK(C.dailyTag)) err(where, '沒有 tag（dailyTag）');
+  const max = k === 'hint' ? 60 : 24;
+  if (len(v.replace(/\{\w+\}/g, '')) > max) err(where, '超過 ' + max + ' 字（不算 {x}）：' + v);
+  add({ scene: '今日推薦集點卡（試聽機那塊、標題小籤、換獎勵；{x} 由畫面代入）', where, who: k === 'hint' ? '老闆' : '（畫面字）', key: k, text: v, tag: C.dailyTag });
 }
 for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');
