@@ -1458,3 +1458,91 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-054.json`；27 張 27 鍵（原皆無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **27/27 一致**；`front-check` **前台 27/27 新稿**（CURATED 0）。留置 3 張 KV 保留舊稿。
 - onboarding manifest 同步 25 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-053 45、sd-054 44，主線約 22）。
+
+## sd-051（30 張，經典度≥4：The Monochrome Set、The Observatory、The Overnight Players、The Platters、The Quiett、Roberta Martin Singers、The Rootsman、The Running Man、The Sea Urchins、The Sonics、Sam Cooke／Soul Stirrers、Southwest Michigan State Choir、THE SQUARE、The Suburbs、Swanee Quintet、The Swankys、Third Eye Foundation、The Three O'Clock、The Three Sounds 2、The Tower Recordings、The Violinaires、The Willard、The Work、Throbbing Gristle、Thắng、Tiao Phün Muang、Tiit Paulus、Tina Brooks、Titus Groan）— s28
+
+- 研究：3 支 Sonnet，WebSearch 13＋14＋16＝43 次；無整張 none（Swankys story none、Tiao Phün Muang sound none）。
+- **主線補查**（facts 標【主線補查】）：The Willard（reminder.top 回顧：Captain Records 第一號作品、新宿東口 8000 人免費演出、海盜妝與恐怖／西部片概念、The Damned 式 beat punk 與衝浪搖滾、約兩萬張、御三家）→ story／sound ok；The Overnight Players（opdk2 轉錄封底 credit：Channel One／Island／TMC、Ansel Collins、Dean Fraser 等；曲名取材泛非人物；Discogs 收藏者「更像器樂版本」）→ 研究層說「Channel One、Ansel Collins 查無來源」被推翻，三塊 ok；The Swankys（Discogs 錄音室、Last.fm 77 punk→hardcore）；Tiao Phün Muang（VDE-Gallo 官方頁 2007 年錄音、曲名法英對照；Yearbook for Traditional Music 書評；英文維基寮國宮廷樂泛論）→ 薄寫。Tower Recordings、Violinaires 未再補。
+- 事實裁定：The Platters 不寫收錄〈Only You〉〈The Great Pretender〉（1956 年 LP 曲目無）；Running Man 不寫「廠牌最後一張」；Roberta Martin 不寫「舊錄音整理集」；Sam Cooke 合輯寫 1991 年 Specialty；Swankys 不寫限量、不寫「日本第一個 hardcore」、不寫 2024 重發；Tiao Phün Muang 聲音只寫宮廷樂泛論、不說本盤樂器；Titus Groan 不寫 Barry Murray；Three Sounds《Black Orchid》寫「1962 錄、1964 發行」（延遲本身是故事，不是曲序日期）；Violinaires 照卡單 1971。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 18 處，改動檔 `review-sd-051.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Monochrome Set、THE SQUARE、Third Eye Foundation、《Moods》、Tower Recordings、Violinaires、Willard | 「常被」→「被」 | 各只有單一具名出處 |
+| Sea Urchins | 鉤子「廠牌卻始終沒替他們出專輯」→「廠牌卻不肯替他們做一張 LP」 | 《Stardust》本身就是 Sarah 出的合集，原句與第二句矛盾 |
+| Swanee Quintet | 第二句補主詞；刪末句「常被形容為鄉土而帶鄉村味」 | 原句缺主詞；「鄉土」無出處、補主詞後超字數 |
+| The Swankys | 鉤子改「「九州龐克」的聲音，被說是由這張唱片定下的。」；刪「2024 年首次正式重發黑膠」 | 出處是零售／再發行廠；版本資訊不寫 |
+| Running Man、Sam Cooke 合輯、Tiao Phün Muang | 第二句補《盤名》；前兩張隨之刪 Rock Workshop 句、〈Lovable〉化名句壓字數 | QA 無《》 |
+| Suburbs、Platters | 刪多餘空格；fix-spacing 補「與 doo-wop」 | 格式 |
+
+其餘逐張對過研究稿無改（Observatory 800 張 demo 與 2000 張正式版售罄、Overnight Players 團名「凌晨三點才開錄」、Q Train 第 4 屆韓國大眾音樂獎、Mattie Moss Clark 三聲部與三張金唱片、THE SQUARE 夏威夷打雷停機、Tina Brooks 四場領銜生前只發一張、TG 褲子工廠地下室一次錄成與獨立榜第 10、Thắng 八角形比喻、Tiit Paulus 無節奏組的〈Moose the Mooche〉、Titus Groan 雙簧管與 Priestland 意外皆有出處）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。Tiao Phün Muang 薄寫 211 字照收。
+
+## sd-052（30 張，經典度≥4：Tod Dockstader、Token Entry、《June Apple》、Tradition、Trembling Blue Stars、Troum & Yen Pox、Tsunami、Tudor Lodge、Tullycraft、Turning Point、Tyree、Téléphone、Tõnis Mägi & Muusik-Seif、U&Me Blue、Ultima Thule、Umm Kulthum 3、Unbroken、Underdog、Universal Congress Of、Uno Naissoo、Urban Tribe、Urusei Yatsura、Ut、Vainica Doble、Versus、Victor Romero Evans、Viktoria Tolstoy、Virgo Four）— s28
+
+- 研究：3 支 Sonnet，WebSearch 11＋19＋10＝40 次；無整張 none（Uno Naissoo story none）。
+- **主線補查**（WebSearch 約 13 次＋WebFetch，facts 標【主線補查】）：Tyree（MusicBrainz／賣家曲目：〈Acid Over〉〈Turn Up the Bass〉確在本張，研究層「未逐首證實」解除）、Uno Naissoo（EMIC 傳記列為 1978 Melodiya 作者專輯、同年人民藝術家；Discogs 演奏者與 jazz-funk 標籤）、Viktoria Tolstoy（Qobuz：瑞典爵士榜第二、德國爵士獎）、Victor Romero Evans（45worlds 摘要：John Collins 製作並幾乎包辦樂器）、Ultima Thule（Discogs 首張陣容與作詞者、hard／prog rock 標籤）、Tõnis Mägi（Melodiya LP 與卡帶、Elmu Värk 作曲）。Tullycraft、Underdog 補搜無專輯層級新料，照研究稿薄寫。
+- 事實裁定：《June Apple》寫 Mountain Records、不寫 County 與 Heritage 多收曲；Tudor Lodge 不寫 Terry Brown、不寫〈Kew Gardens〉是 McTell 的歌；Tyree 不寫 BCM 德版、不把整張寫成 hip house；〈Amal Hayaty〉作曲 Abdel Wahab、詞 Ahmed Shafik Kamel，不寫首演年；〈Ya Msaharny〉不寫首演日；Unbroken 不寫主唱；U&Me Blue 不寫百大名次；Ut 寫 1986；Vainica Doble 寫 1971；Tolstoy 寫 Blue Note、不寫「首張」與「Blue Note 第一張北歐唱片」；Naissoo 不寫父子。
+- Umm Kulthum 三張：盤名即單一長歌，正文以〈曲名〉稱之、不另加《》，QA「無《》」照收（與先前長盤名照收同理）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-052.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| 〈Amal Hayaty〉 | 刪「一首常唱到半小時以上」 | 演唱長度屬曲長類雜項 |
+| Urban Tribe、Urusei Yatsura、Vainica Doble | 第二句補《盤名》；隨之刪〈D-2000〉句、John Peel 句、玩具清單縮短、刪「先替電視與電影寫歌」「需要時吉他很凶」壓字數 | QA 無《》、字數 |
+| Tullycraft | 「常被視為」→「被視為」 | 出處只有維基 |
+| Tradition | 「比 Scientist 的太空 dub 早一年」→「還早」 | 研究稿只說「早了好幾年」（含 Jammy），不寫精確年差 |
+
+其餘逐張對過研究稿無改（Dockstader 白天替卡通做音效、夜裡借錄音室；Davies 婉拒參與錄音；Troum & Yen Pox 的 Lovecraft 比喻與 Brainwashed 年度最佳；Tsunami 為新年派對組團；Tudor Lodge 列 Record Collector 兩百張最稀有；Téléphone 不躲鄉間錄音室；U&Me Blue「被詛咒的傑作」；Unbroken 影響 Touché Amoré、Defeater；Naissoo 1949 年禁爵士時組 Swing Club；Vainica Doble 寄阿根廷的盤被投資人銷毀；Collins 因〈At the Club〉被 Dammers 找去做〈Ghost Town〉；Virgo Four 用 TR-505 與 Juno 2、Sanders 說是草稿皆有出處）。Unbroken 鉤子的「我」是「自我厭惡」一詞，非你我稱謂，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線（sd-051、sd-052）
+
+- 寫稿前預查 60 張 x-cache 全為 KV-HIT。
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-051/052.json`；60 張 60 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 60/60 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 59 處（sd-051 29、sd-052 30）。
+- 本工作階段 WebSearch 合計約 98 次（研究層 sd-051 43、sd-052 40，主線約 15）。
+## sd-047（30 張，經典度≥4：Robert Nighthawk、Roberta Flack、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus、S.E.S. 2、S.L.A.C.K.、S.O.B.、藤井貞泰、Sampaguita、Brugnolini、Sarah Tandy、Sasha & Digweed、Scan 7、Scanner、Scrawl、Second Hand、Secret Shine、Celibidache、Shahram Nazeri）— s26
+
+- 研究：3 支 Sonnet，WebSearch 14＋19＋20＝53 次。
+- **主線補查**（WebSearch 約 12 次＋WebFetch，facts 標【主線補查】）：Ron Carter《Third Plane》（英文維基與《Herbie Hancock Trio》頁：1977 年 7 月巡演途中在 The Automatt 錄一天、同日另一批曲子以 Hancock 名義出；Ethan Iverson 評）→ story ok；Rorschach（Rettman 的 Maggio 訪談：成軍、Pipeline、ABC No Rio）；Rod Taylor《If Jah Should Come Now》（United Reggae：Channel One 錄、Harry J 混、B. Simpson 製作）；S.L.A.C.K.（ototoy：手賣 100 張 CD-R、ZEEBRA／KREVA／宇多丸評價、PSG）——聲音面仍無專輯層級描述，薄寫不寫 beat；Sasha & Digweed《Northern Exposure 2》（英文維基：東西岸兩段旅程、英國合輯榜第 15）；Nazeri（無新料）。
+- **留置**：藤井貞泰《Prelude to a Kiss》——研究層三塊 none，主線補查 3 次（日文盤名、英文盤名＋Discogs、AllMusic 403）仍只有標題，KV 保留舊稿（`held-sd-047.json`）。
+- 身分／事實裁定：Nighthawk 只寫 1964 年錄音，不寫 Rounder 發行年（1979／1980 兩說）；Room 不寫 Richard Hartley；Rod Taylor 不寫樂手名、不把〈His Imperial Majesty〉算進《Where Is Your Love Mankind》；Flack 同名曲葛萊美寫 1974 年；Roy & Diz 不寫錄音地點；S.E.S. 首張寫「1997 年底」；Celibidache 寫 1991 年慕尼黑現場、EMI 1997 身後發行；Nazeri 年份照卡單、不寫 dastgah；Scanner 不寫軌數；Scrawl 不寫 Albini 角色細節；Second Hand 不沿用 Mushroom／Maximum Music／團名由來。
+
+### 主線審稿（2026-11-17，逐張 29 張，改動檔 `review-sd-047.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| 寫作層 1 組 13 張（Nighthawk、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus）＋S.E.S. | 退件：第二句「這是……」改「《盤名》是……」，為壓字數刪 Carey Bell、Scientist 混音、Vermiform 等次要細節 | 第二句交代盤名；QA 無《》 |
+| Celibidache | 「這是」→「《Tchaikovsky: Symphony no. 5》是」 | 同上 |
+
+其餘逐張四問無改：鉤子對過研究稿（Nighthawk 泥土院子裡有人跳舞出自 Bloomfield、Rorschach「第一張被冠上 metalcore 標籤」出自維基、Ruja 禁演影響約十年、Roy Eldridge 是 Gillespie 早年偶像、Roots Radics 被評為主導八〇年代前半、Celibidache「音樂不是罐頭」、Nazeri 只有塞塔爾與兩種鼓、Second Hand 電影後來被禁）。Dransfield 末句 rout 字義屬盤名冷知識一句，與民謠採集相關，照收。29 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-047.json`；29 張 29 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **29/29 一致**；`front-check` **前台 29/29 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-048（30 張，經典度≥4：SHAKKAZOMBIE、Shape of Despair、Sheer Terror、Shelter、Sick of It All 3、Side by Side、Siekiera、Silas Hogan、Silent Phase、Silicon Scally、Sima Bina、Simon Joyner、Slank、Smash、Smegma、Snakefinger、Snuffy Jenkins、Solstice、Sonny Fortune、Sonny Red、Sons of Truth、Sphere、Spick & Span、Spirogyra、Stan Forebee、Starless、Steel Mill、Stefon Harris）— s26
+
+- 研究：3 支 Sonnet，WebSearch 21＋16＋18＝55 次；無 none。
+- **主線補查**（WebSearch 約 10 次＋WebFetch）：Snakefinger（Trouser Press：Lithman、Chilli Willi、Residents 共同作曲製作；Tiny Mix Tapes「不是 Residents 做的最好的 Residents 專輯」）；Sphere、Starless、Sonny Red、Spick & Span（再搜無新料，研究稿已有 Strata 背景、Starless 錄音地與陣容、Better Days 首作）；Silicon Scally（Hot Press 只再確認「豐富、交響式」）；Sima Bina（再搜無專輯層級資料，只寫歌手背景與南呼羅珊曲目特性，不寫伴奏編制）；SHAKKAZOMBIE（無新料，薄寫）。
+- 身分／事實裁定：SHAKKAZOMBIE 成員為 OSUMI、IGNITION MAN、TSUTCHIE（派工特注的 Ohshima、DJ HIDE 查無，為協調端誤記，不用）；Siekiera 照實寫 2008 年合輯、錄音取自 1984；Sheer Terror、Silas Hogan 不寫年份，Sick of It All《Blood, Sweat, and No Tears》不寫日期、不寫 Rolling Stone 名次；Silicon Scally 不寫 2020 Vision；Solstice 不寫康瓦爾錄音與六人編制；Sphere 寫底特律 Strata（非 Strata-East）；Steel Mill 不寫浴室錄長笛；Spick & Span 大徳俊幸用日文原字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 8 處，改動檔 `review-sd-048.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Solstice | 「作品並列為……重要唱片」→「樂團常與……並列為……一員」 | 官網說的是樂團被並列，不是唱片地位 |
+| Sons of Truth | 「常被稱為」→「被稱為」；俱樂部一句改順 | 出處只有 Ace／BGP |
+| Stan Forebee | 刪「以 Rhodes 電鋼琴與色彩豐富的和弦進行為底」 | 那是他整體風格，研究稿沒說這張如此 |
+| SHAKKAZOMBIE | 鉤子由泛論「擅長用合作帶新人」改為 Nitro 三位 MC 一起登場；客席句改寫、刪 Cisco 一句 | 鉤子要取本張材料；字數 |
+| Sima Bina | 第二句補《盤名》；刪 9 歲上電台與師承一句、radif 補說明 | 第二句交代盤名；字數 |
+
+其餘逐張四問無改：Sheer Terror 在 CBGB 場內白天錄音、Side by Side 鼓手 14 歲、Siekiera 1984 Jarocin、Silas Hogan 煉油廠、Steel Mill 唱片上市前已解散、Stefon Harris 間奏串成組曲、Spirogyra「失落的傑作」（維基轉述評論，只在正文）皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-048.json`；30 張 30 鍵（皆非 CJK，原無 desc4）bulk put Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 130 次（研究層 108，主線約 22）。
