@@ -9,6 +9,15 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-045/046.json,review-sd-045/046.json}`、`desc-tools/batches/{cards,research,output}/sd-045*、sd-046*`、onboarding manifest 59 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s22：sd-039、sd-040 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-039 上線 30（K. Hand、Kagami、Kaka de Luxe、Kalaparusha、Růžička、Kaseke、Katedra、Ferrier、Stobart、Kalhor／Brooklyn Rider、KENSO 2、Saunderson、Khanate、Killdozer、Killing Time、Killswitch、King Tubby、Kiosk、Klaus Mitffoch、Koes Plus、Kourosh Yaghmaei 2、Kupla、Kurt Elling、L. Voag、Lab Rat XL、Larry Marshall、Larry Young），sd-040 上線 30（Laughing Hyenas、Led Zeppelin、Konitz 2、Lee Morgan 3、Leeway、Lemon Kittens、Leo Parker、Leo Smith、Rita Mitsouko、Ligabue、Lightnin' Slim、Linval 2、Lip Cream、Llach、Lomosonic、Long Fin Killie、Lonnie Smith、Lorelei、Los Bravos、Los Brincos、Los Destellos 2、Los Jaivas 2、Los Mirlos 2）。秘魯／智利／西班牙卡用西文來源。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 60/60 新稿，「待店主處理」無新增。
+- **主線補查**：sd-039 補 10 張（KENSO《III》King Records 清水義央自寫解說、《Sparta》、Killing Time No Echo 專文、Růžička none 救回、Stobart、Katedra、Kupla、Larry Young、Larry Marshall、Saunderson），sd-040 補 2 張（Linval、Rita Mitsouko）。
+- **審稿**：sd-039 改 20 處（Saunderson 無出處鉤子換掉、Larry Young／Koes Plus 鉤子去推論、Larry Marshall 刪未定混音者、四張第二句補《盤名》、單一出處「常被」降「被」），sd-040 改 10 處（Lorelei 刪樂團自稱的「後搖滾藍圖」、Rita Mitsouko 漏字、Konitz／Mulligan 補盤名）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-039/040.json,review-sd-039/040.json}`、`desc-tools/batches/{cards,research,output}/sd-039*、sd-040*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。WebSearch 約 100 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s19：sd-033、sd-034 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-033 上線 30（Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Bayle、de Roubaix、Hubbard 4、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari 等）；sd-034 上線 30（Gang of Four、Gato Barbieri、Gene Clark 2、Gerard、Geri Allen 4、Gherkin Jerks、Ghost、Nannini、Fusco、Rubalcaba 3、Googoosh 2、Collier、Grant Green、Gray Matter、Osby 2、Grobschnitt、Gryphon、Manusardi 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
