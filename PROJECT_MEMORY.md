@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s23：sd-041、sd-042 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-041 上線 30（Los Saicos、Los Shakers、Los Van Van、Wembler's 2、Los Ángeles Negros 2、Moholo、Louis Philippe、Love Joys、Lowfish、Lucho Bermúdez、Ludus、Lull 2、Maceo Parker、Mad Professor、Madball 3、Magna Carta、Mahmoud Ahmed、寺下誠、Waldron／Lacy、MALTA 2、Marc Houle、Bonet、Martin Carthy 2）；sd-042 上線 30（Carthy & Swarbrick、Marvin Gaye、中島政雄、Masonna、Mattie Moss Clark、Maulawi、Bianchi、Maximum Joy、Tyner 3、MMW 2、Memphis Slim、Menuets、Merauder、Merzbow、Mess、Chapman、Galasso《花樣年華》、Garrison、Petrucciani 3、Sardaby、Mercure、Osborne、Miles Davis 2）。
+- **主線補查**：sd-041 補 5 張（Mad Professor、Ludus、MALTA 兩張含日本ゴールドディスク大賞、Los Ángeles Negros），sd-042 補 7 張（Memphis Slim 確認為 1962 巴黎新錄、Masonna 自家錄音、Sardaby 的 Ellington 督導、Galasso、Chapman、Carthy & Swarbrick、Mattie Moss Clark）。
+- **審稿**：sd-041 改 12 處、sd-042 改 16 處（多為刪曲長／再版雜項、補《盤名》、字數）；Lucho Bermúdez、Masonna 盤名過長不放《》照收。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-041/042.json,review-sd-041/042.json}`、`desc-tools/batches/{cards,research,output}/sd-041*、sd-042*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 只剩兩張長盤名「無《》」；鉤子加權 ≤50、同批前四字互異。WebSearch 約 89 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s19：sd-033、sd-034 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-033 上線 30（Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Bayle、de Roubaix、Hubbard 4、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari 等）；sd-034 上線 30（Gang of Four、Gato Barbieri、Gene Clark 2、Gerard、Geri Allen 4、Gherkin Jerks、Ghost、Nannini、Fusco、Rubalcaba 3、Googoosh 2、Collier、Grant Green、Gray Matter、Osby 2、Grobschnitt、Gryphon、Manusardi 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
