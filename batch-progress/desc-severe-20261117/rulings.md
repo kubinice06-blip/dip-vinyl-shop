@@ -2211,3 +2211,100 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-081.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 96 次（研究層 sd-080 49、sd-081 35，主線約 12）。
+
+## sd-078（30 張，其餘：Linval Thompson 2、Lithics、Little John 2、Little Johnny Taylor、Longstone、Lorde、Los Destellos、Los Mirlos、Los Van Van、Los Wembler's de Iquitos、Los Ángeles Negros、Lou Donaldson 11、Louis Smith、Love、Love Tractor、Lowfish、Lucília do Carmo、Lull）— s42
+
+- 研究：3 支 Sonnet，WebSearch 14＋15＋13＝42 次；無 none。AllMusic、Discogs、Qobuz 網頁多 403；本工作階段的 Discogs API 帶 token 查詢被權限擋下，未用。
+- **主線補查**（WebSearch 7 次，facts 標【主線補查】）：Little John《Reggae Dance》（再發行介紹：Channel One 與 King Tubby's 錄混）；Linval Thompson《Look How Me Sexy》（Qobuz 收的 AllMusic 評）；Los Destellos（Discogs 鏡像：Delgado 主奏與錄音指揮、多數自作）；Los Wembler's（Discogs＋西文維基：1977 Sono Radio、第六張錄音室專輯，研究層原判「只有舊稿這麼說」推翻）；Los Ángeles Negros（1974 年 3 月主唱離團、Montes 接任）；Lucília do Carmo extended 無新料。
+- 事實裁定：Linval Thompson 兩張不寫確切年（1981／82、1978／79 兩說）；Los Destellos 不寫廠牌（Odeon／Líder 兩說）；Little John 不寫生年、《Reggae Dance》不寫管樂手；Longstone 不寫壓縮空氣電鑽等舊稿說法；Los Van Van《Sandunguera》寫成 Messidor 1986 歐洲選集；Los Ángeles Negros 不斷言本盤主唱；《Good Gracious!》比《The Natural Soul》晚八個月（舊稿寫反）；《Midnight Sun》不寫貝斯手與 Cuscuna；《Sassy Soul Strut》不寫編曲者；Louis Smith 不寫「1978 年下一張」「二十年全職教師」；Love 不寫倉庫與 NME 名次；Lull 不寫 isolationist、Release Entertainment、伯明罕混音；Lucília do Carmo 廠牌 Valentim de Carvalho（非 Decca）、不寫 Raul Nery 與拆 EP。
+- **薄寫上線不留置**：Los Wembler's《Fiesta en la selva》、Los Ángeles Negros《Aplaude mi final》（以團的定位與整體聲音為主）、Lucília do Carmo（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-078.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Los Ángeles Negros《Aplaude mi final》 | 刪「這張的曲名多半在講道別」 | 研究稿無據，是從盤名推論 |
+| Lou Donaldson《Pretty Things》 | 「常被視為」→「被視為」較次要的作品 | 只有 AllMusic 單一出處 |
+| Lou Donaldson《Sextet, Volume 2》 | 第二句補盤名並改掛名 Donaldson（原「他」會指到鉤子的 Blakey）、刪 10 吋規格；刪「直線 bop」「缺少慢曲」壓回 236 字 | 第二句要講這是什麼；規格屬版本雜項 |
+| Lou Donaldson《A Man With a Horn》 | 「錄下」→「錄」 | fix-spacing 補空格後 241 字 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Thompson 替 McGregor 製作熱門曲、Sly & Robbie 打底、Lithics 雙吉他與旋律貝斯、Junjo 1984 入獄、Little John 九歲登台、水電工郵差肉販的反轉歌詞、Longstone 的 Krautrock／shoegaze 譜系、Lorde 自述、Destellos 電吉他取代銅管、Mirlos 與海岸 cumbia 區隔、〈Por encima del nivel〉、伊基托斯只能靠飛機河運、洋蔥音樂、1999 首度出版、Cosmos 打破五重奏配方、Donaldson 推薦 Green／Patton、Barretto 補小號空位、Midnight Sun 擱二十年、Hardman 中音域小號、與 Mitchell 隔七年重聚、〈Tennessee Waltz〉開口唱、《Sanford and Son》主題曲、Blue Note 最後一張、Clifford Brown 之比、Love for Sale、Love Tractor 首度開口、半故障類比器材、兩張原創唱片、Lull 單曲概念）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-078.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-079（30 張，其餘：Lustmord、Lycia、Lyman Enloe、Līvi、Ma Chérie for Painting、Macroblank、Mad Professor 4、Magna Carta、Maher Shalal Hash Baz、Main 2、Mal Waldron 等 Sweet Basil 2、MALTA 4、Manhattan Jazz Quintet 2、Manual with Jess Kahr、Maple、Marc Houle、Marcus Printup、Marijannah、Marjan、Mark Heard、Marlena Shaw）— s42
+
+- 研究：3 支 Sonnet，WebSearch 15＋14＋15＝44 次；研究層 none 只有 MALTA《My Hit & Run》《Sapphire》story／sound。Dubroom、miriammohr、grippers.tips 等網域在本環境解析不到，相關 facts 只用搜尋摘要並標明。
+- **主線補查**（WebSearch 6 次＋WebFetch，facts 標【主線補查】）：MALTA 官網經歷（《My Hit & Run》自己製作、早年熱門曲重錄成現場風格；《Sapphire》〈Face to Face〉當亞洲太平洋博覽會 '89 影片主題曲、同年成立 Atlam；《Obsession》緊接《High Pressure》的 L.A. 錄音）→ none 升 thin；Mad Professor Part 10（Jah Shaka、Rico Rodriguez、Mafia & Fluxy、Macka B）、Part 4（Dubroom 混音評、素材歌手）；Marlena Shaw 補查無新樂評，薄寫。
+- 事實裁定：Lustmord 不寫 Soleilmoon、Happy Pencil；Lycia 不寫亞利桑那補混音；Lyman Enloe、Macroblank 不寫年份（兩說）；Līvi 不寫「第一張十二吋九軌」，故事核心是 Ķiģelis 1985 年車禍、專輯身後發行；Mad Professor Part 6 不寫「沒有主唱」、Part 4 不寫舊稿鼓手與 melodica；Magna Carta 盤名是 Johnstone 住的那條路（舊稿「公寓」錯）；Main 兩張 story 只用 Hampson 對時期的回顧；MALTA《Obsession》不寫 Mason／Landau／Grusin（那是《High Pressure》對照）、《Sweet Magic》不寫新田一郎與佐藤允彦、《Sapphire》不寫 Ike Nelson 與向谷実；MJQ 不寫 Tom Jung、原聲帶「樂團演奏兩首」（舊稿錯：〈Love For Sale〉原聲帶版由樋口可南子唱）；Marjan 寫成極可能是 Taraneh 把革命前舊錄音編成的 CD，不寫編曲者、不斷言原唱；Marijannah 不寫廠牌；Marlena 不寫「前兩首出自 United Artists 電影」。
+- **薄寫上線不留置**：Maple《Pull》（183 字，只有廠牌說明）、MALTA 四張、Sweet Basil 兩卷（聲音）、Ma Chérie for Painting、Lyman Enloe（聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-079.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Sweet Basil 第一卷 | 第二句補 58 字原文盤名，整段壓回 240 內（刪舊曲重奏，過世寫「兩位主角都已在 1960 年代過世」） | 第二句要講這是什麼唱片；Little 1961、Dolphy 1964 |
+| Sweet Basil Vol. II | 補 66 字原文盤名後整段重寫；鉤子由「節奏組原班重聚」改「前排換上剛離開 Jazz Messengers 的兩人」；「低音單簧管上最有自己的聲音」改寫 Blanchard 俐落光滑 | 原鉤子與第一卷同點；原句與研究稿原意不符 |
+| Mad Professor《Evolution of Dub》 | 「常被這樣解讀／常被視為」→「被解讀為／被視為」 | Dubroom 單一出處 |
+| Mad Professor Part 6 | 「常被視為」「常被認為」→「被視為」「被認為」；「Ampex 24 軌」→「Ampex 二十四軌錄音機」 | 單一出處；錄音機升級是故事，避開 QA 軌數誤判 |
+| Manual、Marcus Printup、Marjan | 第二段補盤名，Manual 刪 Munk 早期作品句、Printup 刪「喬治亞州出身」「原創與標準曲並陳」壓字數 | 沒帶盤名 |
+| Maple《Pull》 | 刪第二句「廠牌稱它是」 | 出處不寫進簡介（鉤子的「廠牌說」保留：是廠牌自己的專輯說明） |
+
+其餘逐張四問無改：鉤子都對過研究稿（Lustmord 無節拍低頻、Lycia 1999 開錄 2003 發行、Enloe 22 歲因病拿起小提琴、Ķiģelis 身後發行、Ma Chérie krautrock 拼貼、Macroblank 日文曲名、曼德拉獲釋年、Dubroom 混音評、真鼓加鼓機、Wasties Orchard 那條路、工藤冬里出版條件、Dowson 離團、低頻忽大忽小、《High Pressure》美國上市、替 Mingus 錄音、自製熱門曲重錄、博覽會主題曲、Swing Journal 與 King 企劃、Lee Morgan boogaloo、Munk 拿掉節拍、地板下的老鼠、柏林冬天、飛機上的陌生人、grindcore 與 pop punk 樂手唱吸血鬼、Marjan 被禁唱入獄、Heard 住錄音室兩週、Shaw 離開 Chess）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-079.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 100 次（研究層 sd-078 42、sd-079 44，主線約 13）。
+
+## sd-084（30 張，其餘：Prince Jazzbo、Princess Sharifa、Alex Bradford、Harold Boggs 3、Project Lazarus 2、Prolapse、Providence、Proxyon 2、Prysm 4、Purl、Purrple Cat 9、Quantec、Quasar、quasimode 2）— s45
+
+- 研究：3 支 Sonnet，WebSearch 15＋9＋10＝34 次；none 只有 Princess Sharifa story、Purrple Cat《Sleep Tight》story／sound。
+- **主線補查**（WebSearch 8 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Prince Jazzbo（Discogs API 原版：封底印 King Tubby 錄音室混音、Bunny Lee 與 Jazzbo 製作；reggaerecord 亦列 Bunny Lee）→ 舊稿 Bunny Lee 製作屬實；Harold Boggs 三張（Journal of Gospel Music 長文：全盲、母親創立的教會、Nashboro 十張的第一／四／八張、唱法越來越急切）→《Lord Give Me Strength》story ok；Prysm（多份 de Bethmann 傳記：1998 Django d'Or 年度團體、Blue Note 四張）；Quasar（MLWZ Kev Rowland 樂評：Turner 一人寫全部歌曲、龐克後英國樂評無視前衛搖滾、早於 IQ／Marillion 出片、Genesis 式鍵盤、製作偏薄）→ story／sound 升 ok；quasimode《daybreak》查無訪談（OTOTOY 2009-12-01 頁是 bonobos）；Purrple Cat《Sleep Tight》官網只有外連。
+- **薄寫上線不留置**（delayde 前例）：Princess Sharifa、Alex Bradford、Purrple Cat 九張（166–199 字，各張以 Bandcamp 一句文案的場景錯開，不編樂器、不寫匿名與出身地）、Proxyon《The Return of Tarah》、Project Lazarus《К солнцу, к звездам》。
+- 事實裁定：Providence 是日本 neo-prog 團（派工特注寫荷蘭是協調端誤記），Atoll 吉他手客席寫「據說」；Princess Sharifa 不寫蘇格蘭出生與 1969 生年；Boggs 不寫 Clapton〈Give Me Strength〉（單一轉述）；Proxyon 製作人只寫 van der Kuy 與 Rob van Eijk、〈Space Fly〉致敬 Space 不寫；Prysm 不寫團名由來；quasimode《daybreak》barks.jp 列 2009-12-02 發行（Jazz Music Archives 列 2010），正文不寫年份、客座不寫國籍；《mode of blue》不寫小松正人。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-084.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quantec《Journey of Mind》 | 刪「原版是 100 張手工編號的 CD-R」「回收紙板包裝」 | 版本與封套雜項 |
+| Purrple Cat《Cat Nap》 | 鉤子去掉「Bandcamp 頁面只寫了這一句」的破折號結構 | 鉤子不靠頁面說明 |
+| Prysm《Time》 | 鉤子由管理顧問轉行改為三人分頭寫曲、奇數拍 | 與《Prysm》鉤子撞材料 |
+| Prysm《Prysm》 | 「La Défense 首獎」→「最佳樂團獎」；刪「獲 Django d'Or 提名」；補《Prysm》 | 來源是最佳獨奏與最佳樂團；提名只見搜尋摘要；QA 無《》 |
+| Prysm《On Tour》 | 「激烈的六年過後」→「之後」 | 與「七年」自相矛盾 |
+| Proxyon《Proxyon》 | 補《Proxyon》，刪「常與 Koto 並列」壓回 235 字 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Jazzbo 吟誦不唱、Ariwa 最老的黑人廠牌、Little Richard 學唱腔、1958 同名單曲、停巡演回教會、全盲、第九行星太空人、第一張就往太空、單曲變專輯、女聲與 mellotron、Laserdance 作曲者另開線、換製作人、三百多場、管理顧問、〈Extension〉貝斯開場、Purl 自寫短詩、Purrple Cat 九張各自場景、老合成器、早於 IQ／Marillion、能跳舞的 JAZZ、Blue Note 70 週年）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-084.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-085（30 張，其餘：Quatuor Diotima、Quilapayún、Rabit、Radar 2、raison d'être 2、Random Rab、Ali／Jenkins、Ravi Coltrane、Ray & Ina Patterson、Refrigerator、Renee Rosnes 4、Ressurection 2、Retsin、Reuben Wilson 3、Bernard Avant、Revolutionary Dub Warriors、Rheinallt H. Rowlands、Groove Holmes 2、Beirach、Margitza、Riow Arai）— s45
+
+- 研究：3 支 Sonnet，WebSearch 12＋13＋14＝39 次；none 有 Radar 兩張 story／sound、raison d'être《Stains》sound、Riow Arai story。
+- **主線補查**（WebSearch 約 9 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Radar 兩張（愛沙尼亞文維基：Jaak Joala 伴奏團出身、1982–84 塔爾圖大獎、1985 最佳器樂團、1986 布拉提斯拉瓦、1987 年 10 月布達佩斯最後一場；Discogs API：《Trofee》1984 塔林錄音與編制、無主唱 credit）；Quilapayún 5（西文維基：十三首多半器樂、Carrasco 器樂曲、Bach 改編、探戈——以器樂為主就是這張的概念；官網 q5 頁下線、archive.org 被擋）；raison d'être《Stains》（noisereceptor 樂評：修道院式吟唱、金屬刮擦、零星鋼琴與弦樂銅管）→ sound ok；Riow Arai（Bandcamp 只有標籤與發行日）；Beirach（確認 Tusa／Williams，非 Mraz）；Rabit（Roman Candle 短文無實質）。
+- **薄寫上線不留置**（delayde 前例）：Radar 2 張、Random Rab、Ray & Ina Patterson、Renee Rosnes《Without Words》、Ressurection 同名 EP、Retsin、Bernard Avant、Rheinallt H. Rowlands、Beirach、Riow Arai。
+- 事實裁定：Simaku 是 Thomas Simaku（派工特注寫 Xenakis 師承是協調端誤記），Diapason／Classica 評語只有二手轉述不寫；Ali／Jenkins 寫「1975 年錄音、1976 年發行」；Random Rab 年份 2011／2012 兩說不寫；Ressurection 是新澤西 Edison 硬核團，預算 200 美元寫「據廠牌介紹」；Rosnes 同名作 Hancock 彈鋼琴（舊稿合成器錯）；〈Happy Together〉是 1967 年 The Turtles；Avant「八首自寫、Dave Clark 製作」未查證不寫；Beirach 不寫 Badal Roy、原田和男、稲岡邦弥；Riow Arai 不把《Mind Edit》的描述套到本張；Rowlands 不寫 Oz 車禍。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 26 處，改動檔 `review-sd-085.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quilapayún 5 | quena、zampoña、charango 改寫成「樂團慣用」；刪「Allende 政府文化大使」壓字數 | 樂器出自團史，非特指本張 |
+| Radar《Baltic Coast》 | 「也是最後一年的錄音」→「解散那年發行」 | 錄音年份無來源 |
+| Simaku、Rabit、Stains、Ali／Jenkins、Refrigerator、Rosnes 2、Ressurection、Avant | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數（Simaku 約克錄音與終樂章噪音、Rabit 客座人聲、Stains 計畫通論、Ali Coltrane 經歷與兩句聲音、Refrigerator Shrimper 起家、As We Are Now「大半自作」、Avant 副牌宗旨） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（為 Diotima 量身寫、抗議歌團大半不開口、向 DJ Screw 致敬、布達佩斯最後一場、伴奏團拿最佳器樂團、三十週年與榮格陰影、九年沒有全新專輯、日出日落場次、店打烊後開錄、拆開再重組、醫院相識、郊區概念、旁遮普曲名、請前老闆、出道作客座、三重奏加弦樂、唯一全長、後來各團成員的起點、Rodan 解散後、R&B 流行曲改靈魂爵士、自寄 demo 給 Wolff、豎琴電西塔琴告別作、Pickett 改福音、低音與空間、虛構的歌手、整晚馬拉松、Prestige 與 Blue Note 都錄過、東京現場、羅姆小提琴家族、臥室一人錄完）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
