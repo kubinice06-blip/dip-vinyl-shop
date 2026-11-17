@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s29：sd-053、sd-054 上線（57 張，留置 3）
+
+- **結果**：sd-053 上線 30（經典度≥4：Vision of Disorder … Zbigniew Preisner，含 Warzone 2、Woody Guthrie 2、河野康弘 2、Preisner 2）；sd-054 上線 27（Zeni Geva … Al Campbell，含 Daho 2、108 2、9m88 2、Air 2、929、大森明），**留置 3**：A-Sound《Release》、99.99《More of 99.99》、Akal Dub《Life and the Void》（查無專輯層級資料，KV 保留舊稿，`held-sd-054.json`）。
+- **主線補查**：sd-053 補 7 張（河野《Peace》救回、Sawasaki、Kernagis、Would-Be-Goods、Voodoo Queens、Winston Edwards、Wamdue）；sd-054 補 929、99.99、大森明、Caravan 等。
+- **審稿**：sd-053 改 10 處（Writing on the Wall 鉤子換掉單一彙整說法、Wamdue 銷量兩說改地位、Sawasaki 漢字名改片假名）；sd-054 改 8 處（Zoviet France 鉤子原用壓量稀有度，改聲音鉤子）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-053/054.json,review-sd-053/054.json,held-sd-054.json}`、`desc-tools/batches/{cards,research,output}/sd-053*、sd-054*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 57 鍵 bulk put，回讀 57/57 一致；`front-check` 前台 57/57 新稿、CURATED 0；鉤子加權 ≤50、同批前四字互異；查無軌序、曲長、盤號。WebSearch 約 111 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s23：sd-041、sd-042 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-041 上線 30（Los Saicos、Los Shakers、Los Van Van、Wembler's 2、Los Ángeles Negros 2、Moholo、Louis Philippe、Love Joys、Lowfish、Lucho Bermúdez、Ludus、Lull 2、Maceo Parker、Mad Professor、Madball 3、Magna Carta、Mahmoud Ahmed、寺下誠、Waldron／Lacy、MALTA 2、Marc Houle、Bonet、Martin Carthy 2）；sd-042 上線 30（Carthy & Swarbrick、Marvin Gaye、中島政雄、Masonna、Mattie Moss Clark、Maulawi、Bianchi、Maximum Joy、Tyner 3、MMW 2、Memphis Slim、Menuets、Merauder、Merzbow、Mess、Chapman、Galasso《花樣年華》、Garrison、Petrucciani 3、Sardaby、Mercure、Osborne、Miles Davis 2）。
