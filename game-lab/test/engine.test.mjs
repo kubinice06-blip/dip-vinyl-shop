@@ -2903,5 +2903,48 @@ section('25 第 B 波 WP2（SPEC-B §1、§2.2、§3、§4.3／4.5、§5.2、§6
     ok(oh.length === 3 && oh.every(id => EN.topAttr(C0.cards[id]) === 'h'), 'a colour with no cards → filled from the others', oh); }
 });
 
+section('26 第 B 波升版的舊 run（驗收 F1）：待說情／打到一半的對決 → 說情重打＝原本那副牌（legacyView 舊卡池 → oldDeckIds 跟 main 6aafd0e7d 的 guestDef 逐張相同；pinOldDeck 釘 run.retryDeck、換位就拿掉）', () => {
+  const L = C0.legacyIds();
+  // (a) 20 seed × 3 王牌 × 9 個位數：舊碼（main 6aafd0e7d，323 張、舊 slug）guestDef 選出的牌（換成 catalogId）串起來的 fnv1a32
+  let h = '', moved = 0;
+  for (let s = 1; s <= 20; s++) for (const ace of ['hall', 'exile', 'heresy']) for (const pos of [1, 2, 3, 4, 5, 8, 15, 23, 40]) {
+    const r = EN.newRun(C0, { seedKey: '202611' + String(s).padStart(2, '0'), runNo: 2, ace, prologue: false }); EN.jumpTo(r, C0, pos);
+    const id = r.order[r.idx], ids = EN.oldDeckIds(r, C0, L, id, pos) || [];
+    h += id + ':' + ids.join(',') + ';';
+    if (EN.guestDef(r, C0, id, pos).deck.map(c => c.id).join(',') !== ids.join(',')) moved++;
+  }
+  eq(EN.fnv1a32(h), 1220471490, 'oldDeckIds = main guestDef (540 decks, fnv of the joined lists)');
+  ok(moved > 100, 'the new pool really moves decks (else this section proves nothing)', moved);
+  // (b) 驗收實例：20261107 第 2 趟、殿堂、第 4 位 label
+  const OLD = ['harry roesli gang|philosophy gang', '廢五金|廢五金', '明田川荘之|yamazaki blues', 'modest mouse|the moon & antarctica', 'einstürzende neubauten|halber mensch', 'mogwai|come on die young', 'lady gaga|artpop'];
+  const mk = () => { const r = EN.newRun(C0, { seedKey: '20261107', runNo: 2, ace: 'hall', prologue: false }); EN.jumpTo(r, C0, 4); return r; };
+  const r = mk(); eq(r.order[r.idx], 'label', 'pos 4 is label');
+  eq(EN.oldDeckIds(r, C0, L, 'label', 4), OLD, 'old deck of label');
+  // (c) 待說情：輸了 → pinOldDeck → 說情 → 開打的牌單＝原本那副；加星照位數
+  const f = EN.startFight(r, C0, {}); r.duel.p.hp = 0; r.duel.over = { win: false, by: 'hp', pHp: 0, eHp: r.duel.e.hp }; EN.finishFight(r, C0);
+  eq(r.pending && r.pending.type, 'retry', 'lost → pending retry');
+  ok(EN.pinOldDeck(r, C0, L) === true, 'pinOldDeck pins', r.retryDeck);
+  eq(r.retryDeck, { pos: 4, id: 'label', ids: OLD }, 'run.retryDeck');
+  const j = JSON.parse(JSON.stringify(r)); ok(EN.choose(j, C0, { type: 'retry' }).ok, 'retry');
+  const g = EN.startFight(j, C0, {});
+  eq(g.duel.e.deckIds.slice(0, OLD.length), OLD, 'retry fights the old deck (save/load round trip)');
+  const pin = EN.guestDef(j, C0, 'label', 4), slow = EN.trialDeck(C0, 'label', 4, { seedKey: '20261107', runNo: 2, playerAce: 'hall', bossAce: j.bossAce, cls: 'elite', main: pin.main, deckIds: OLD });
+  eq(pin.deck, slow.deck, 'buff applied on the pinned list like any deck');
+  ok(f.duel.e.deckIds.slice(0, 7).join() !== OLD.join(), 'without the pin the new pool gives another deck', f.duel.e.deckIds);
+  // (d) 打到一半的對決也釘；序章、沒在打也沒待說情＝不釘；換位（advance）、jumpTo 拿掉；壞的 retryDeck 不用
+  const m = mk(); EN.startFight(m, C0, {}); ok(EN.pinOldDeck(m, C0, L) && m.retryDeck.id === 'label' && m.retryDeck.pos === 4, 'mid-duel pins', m.retryDeck);
+  const n0 = mk(); ok(EN.pinOldDeck(n0, C0, L) === false && n0.retryDeck === undefined, 'nothing to pin', n0.retryDeck);
+  const pr = EN.newRun(C0, { seedKey: '20261107', runNo: 1, ace: 'hall', prologue: true }); ok(EN.pinOldDeck(pr, C0, L) === false, 'prologue: no pin');
+  const w = mk(); EN.startFight(w, C0, {}); EN.pinOldDeck(w, C0, L);
+  w.duel.e.hp = 0; w.duel.over = { win: true, by: 'hp', pHp: w.duel.p.hp, eHp: 0 }; EN.finishFight(w, C0);
+  for (let k = 0; k < 6 && w.pending; k++) { const ch = w.pending.type === 'level' ? { type: 'level', pick: 'hp' } : { type: 'skip' }; if (!EN.choose(w, C0, ch).ok) break; }
+  ok(w.pos === 5 && w.retryDeck === undefined, 'advance drops retryDeck', { pos: w.pos, rd: w.retryDeck });
+  const jj = mk(); EN.startFight(jj, C0, {}); EN.pinOldDeck(jj, C0, L); EN.jumpTo(jj, C0, 4); ok(jj.retryDeck === undefined, 'jumpTo drops retryDeck');
+  const bad = mk(); bad.retryDeck = { pos: 4, id: 'label', ids: ['nope|nope'] };
+  eq(EN.guestDef(bad, C0, 'label', 4).deck.map(c => c.id), EN.guestDef(mk(), C0, 'label', 4).deck.map(c => c.id), 'unknown ids → ignored (normal deck)');
+  const other = mk(); other.retryDeck = { pos: 3, id: 'label', ids: OLD };
+  eq(EN.guestDef(other, C0, 'label', 4).deck.map(c => c.id), EN.guestDef(mk(), C0, 'label', 4).deck.map(c => c.id), 'another pos → ignored');
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log(fails.join('\n')); process.exit(1); }

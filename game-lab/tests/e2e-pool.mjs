@@ -36,7 +36,7 @@
 //   P1c 遷移失敗（addInitScript 把 DipLabEngine.mapIds 換成丟例外）→ 標題「存檔升級失敗」那行、不是捏人／序章、能開始玩、主鍵逐字不變、bak6 原字串
 //   P1d 混合存檔：同一張舊 slug 與 catalogId 兩格（own run／只 seen）＋想要兩種寫法 → 合成一格（own、src run、at 取早的）、想要不重複；
 //       daily 鍵 log 收過一張、主鍵（v6）沒有那張 → 唱片櫃補成擁有 src daily、主鍵寫回
-//   P1e 待說情（pending retry）的 v6 → 遷完照樣說情重打、同一位、同一批貨；待領獎（pending reward）的 v6 → 獎勵是 catalogId、挑得到、回來客
+//   P1e 待說情（pending retry）的 v6 → 遷完照樣說情重打、同一位、同一批貨、同一副牌（run.retryDeck＝舊卡池 oldDeckIds；fixture 用新引擎造，牌單另照舊卡池算）；待領獎（pending reward）的 v6 → 獎勵是 catalogId、挑得到、回來客
 //   P1f ?apex=1 的 v6：lastAceId、run.aceId、run.unlock.apex、run.acesWon、run.bossCard 都換成 catalogId；?apex=1 照常開、第 5 位藏家照常帶他那張
 //   P1g 序章途中（prologue pending、特價箱還沒挑）的 v6 → fixBargain＋fixLot 都跑、接著挑特價箱、序章打得完（撿 Eminem、挑配件、來客）
 //   P2  v5 存檔 → v7：老闆送的、藏家王牌照 migrate5 記成擁有（id 是 catalogId）
@@ -862,21 +862,23 @@ async function P1e(w, h, size) {
     r.duel.p.hp = 0; r.duel.over = { win: false, by: 'hp', pHp: 0, eHp: r.duel.e.hp };
     E.finishFight(r, C);
     const bins = clone(r.shop.bins), pend = clone(r.pending);
+    const oldIds = E.oldDeckIds(r, C, LEGACY, eid, 3);   // 舊卡池（323 張、舊 slug）會選出的牌（驗收 F1：遷完說情重打＝這副）
     const v6 = toOld(BASE7({ run: r, shelf: { [ACE.hall]: { at: '', seen: true, own: true, src: 'start' } }, lastAce: 'hall' })); v6.v = 6; delete v6.run.shop.lot; delete v6.run.want;
     const { ctx, page } = await fresh(w, h);
     try {
       await seedLS(page, JSON.stringify(v6));
       await openTitle(page, Q());
-      const a = await page.evaluate(() => { const R = window.__lab.run; return { v: window.__lab.save.v, pend: R && R.pending, pos: R && R.pos, bins: R && R.shop.bins, lot: !!(R && R.shop.lot) }; });
+      const a = await page.evaluate(() => { const R = window.__lab.run; return { v: window.__lab.save.v, pend: R && R.pending, pos: R && R.pos, bins: R && R.shop.bins, lot: !!(R && R.shop.lot), rd: R && R.retryDeck }; });
       await jsClick(page, '[data-a=cont]');
       const menu = await advanceUntil(page, () => !!document.querySelector('.lb-dq .lb-dqopt[data-i="0"]'), null, 25000);
       await sleep(400);
       await jsClick(page, '.lb-dq .lb-dqopt[data-i="0"]');
       const duel = await waitScreen(page, 'duel', 20000);
       await sleep(500);
-      const b = await page.evaluate(() => { const R = window.__lab.run; return { eid: R.duelEnemy || (R.duel && R.duel.e.id), pos: R.pos, bins: R.shop.bins }; });
-      record('P1e-1', size, pend.type === 'retry' && a.v === 7 && a.pend && a.pend.type === 'retry' && a.pos === 3 && sameJ(a.bins, bins) && a.lot && menu && duel && b.eid === eid && b.pos === 3 && sameJ(b.bins, bins) && !errs(page).length,
-        `v6 待說情 → v ${a.v}、pending ${a.pend && a.pend.type}、第 ${a.pos} 位、架子＝catalogId 版 ${sameJ(a.bins, bins)}、補一檔貨 ${a.lot}；繼續 → 說情選單 ${menu} → 重打 ${duel}：同一位 ${b.eid === eid}（${b.eid}）、第 ${b.pos} 位、同一批貨 ${sameJ(b.bins, bins)}；${errTxt(page)}`);
+      const b = await page.evaluate(() => { const R = window.__lab.run; return { eid: R.duelEnemy || (R.duel && R.duel.e.id), pos: R.pos, bins: R.shop.bins, deck: R.duel ? R.duel.e.deckIds.slice() : null }; });
+      const pinOk = !!oldIds && !!a.rd && a.rd.pos === 3 && a.rd.id === eid && sameJ(a.rd.ids, oldIds) && !!b.deck && sameJ(b.deck.slice(0, oldIds.length), oldIds);
+      record('P1e-1', size, pend.type === 'retry' && a.v === 7 && a.pend && a.pend.type === 'retry' && a.pos === 3 && sameJ(a.bins, bins) && a.lot && menu && duel && b.eid === eid && b.pos === 3 && sameJ(b.bins, bins) && pinOk && !errs(page).length,
+        `v6 待說情 → v ${a.v}、pending ${a.pend && a.pend.type}、第 ${a.pos} 位、架子＝catalogId 版 ${sameJ(a.bins, bins)}、補一檔貨 ${a.lot}、釘舊牌單 ${!!a.rd}；繼續 → 說情選單 ${menu} → 重打 ${duel}：同一位 ${b.eid === eid}（${b.eid}）、第 ${b.pos} 位、同一批貨 ${sameJ(b.bins, bins)}、牌單＝舊卡池那副 ${pinOk}；${errTxt(page)}`);
     } finally { await ctx.close(); }
   }
   // 待領獎

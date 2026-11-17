@@ -5928,7 +5928,7 @@ ${seenList}
     document.getElementById('tuneResultWrap').hidden = show;
   }
   // 遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json。
-  //   v2＝{ v:2, n, h:[fnv1a32(catalogId)…] }（精選 5,000 張，扣掉王牌與頂點卡）→ 轉成 { has: Set }；遊戲卡 id 就是 catalogId。
+  //   v2＝{ v:2, n, h:[fnv1a32(catalogId)…] }（帶得進遊戲的：扣掉王牌、頂點卡與傳奇）→ 轉成 { has: Set }；遊戲卡 id 就是 catalogId。
   //   v1＝{ 主站 cardId: 遊戲卡 id } 物件（舊快取）照收；遊戲那邊把舊 slug 照表換。
   // 結果頁的卡在裡面才出「帶去店裡對決」；載不到就當沒有、不出鈕（下次進頻率光譜再試）。店內模式（?shop=1）不出，不用載
   let _poolIndexP = null;

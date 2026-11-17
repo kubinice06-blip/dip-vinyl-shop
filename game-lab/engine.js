@@ -564,7 +564,7 @@
       sig: E.sig && E.sig.id && Number.isInteger(E.sig.n) ? { id: E.sig.id, n: E.sig.n } : null };   // 招牌（店主 11-13：序章男子第 2 手出 Eminem，打完掉在地上）
     if (g) {
       const main = ATTRS.includes(o.main) ? o.main : null;
-      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, bossCard: o.bossCard, cls, tier: o.tier, main });
+      const td = trialDeck(content, id, pos, { seedKey: o.seedKey, runNo: o.runNo, playerAce: o.playerAce, bossAce: o.bossAce, bossCard: o.bossCard, cls, tier: o.tier, main, deckIds: o.deckIds });
       Object.assign(d, { hp: g.hp, atk: g.atk, def: g.def, q: g.q, deck: td.deck, ace: td.ace, pos, cls, elite: cls === 'elite', boss: cls === 'boss',
         title: guestTitle(content, pos, id, cls, o.tier), main });
       const MB = trialCfg(content, o.tier).curve.mainBias || {}, mb = pos >= (MB.from | 0) ? +MB.n || 0 : 0;
@@ -1142,7 +1142,8 @@
     const u = s => hash01(tag + '|' + s);
     const fl = Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * d));
     const M0 = ATTRS.includes(o.main) ? o.main : null, M = M0 && +K.mainShare > 0 ? M0 : null;   // mainShare 0＝主屬性只標示、不改牌組（sim 對照用）
-    const deck = API._noCache || !POOL_INFO ? deckSlow(content, K, base, id, fl, M, u) : deckFast(content, K, base, E, id, tag, fl, M);
+    const pin = Array.isArray(o.deckIds) && o.deckIds.length && o.deckIds.every(x => typeof x === 'string' && cardOf(content, x) && !cardOf(content, x).tier) ? o.deckIds.map(x => cardOf(content, x)) : null;   // run.retryDeck（pinOldDeck）
+    const deck = pin || (API._noCache || !POOL_INFO ? deckSlow(content, K, base, id, fl, M, u) : deckFast(content, K, base, E, id, tag, fl, M));
     const b = Math.floor(Math.max(0, d - K.buffFrom) / K.buffEvery);
     // 每張都是他自己的一份（換來的牌可能跟你包包裡的是同一張唱片：對決狀態裡不共用物件）
     //   加星：加在那張最高那軸（topAttr）；有主屬性時，主屬性那軸也是最高（並列）的牌加在主屬性那軸（「加星偏主屬性」）
@@ -1713,7 +1714,39 @@
   //   主屬性（第 A 波 6）：mainAt（這一輪三色都有）→ trialDeck 照它組牌；第 run.mainFrom 位以前不帶（fixMain：升版前那一輪照舊牌組）；稱號：guestTitle（藏家、跟名字一樣＝null）
   function guestDef(run, content, id, pos) {
     const main = pos >= (run.mainFrom || 1) ? mainAt(run, content, pos) : null;
-    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, main });
+    const rd = run.retryDeck, deckIds = rd && rd.pos === pos && rd.id === id && Array.isArray(rd.ids) ? rd.ids : null;   // 升版前的舊 run（pinOldDeck）
+    return enemyDef(content, id, { pos, cls: classAt(pos), seedKey: run.seedKey, runNo: run.runNo, playerAce: run.ace, bossAce: run.bossAce, bossCard: run.bossCard, tier: run.tier, main, deckIds });
+  }
+  // 第 B 波升版（存檔 v4–6 → v7）：卡池從舊 323 張變 5,000 張、id 換成 catalogId，同一位重組會換牌。停在「待說情」或「打到一半的對決」的舊 run，
+  //   說情重打要拿到原本那副牌（45 行「同一位、同一副牌」）→ 載入時（ui.js loadSave，換完 id 之後）用「只有舊卡、鍵改回舊 slug」的 content 視圖
+  //   跑一次 guestDef，把選出的牌單（catalogId）釘在 run.retryDeck {pos, id, ids}；guestDef 同一位、同一人就照它（加星、王牌照舊算）；advance／jumpTo 換位就拿掉
+  //   legacyView(content, L)：L＝{舊 slug: catalogId}（C.legacyIds()）。oldDeckIds(run, content, L, id, pos) -> [catalogId] | null（舊碼的 guestDef 會選出的牌）
+  function legacyView(content, L) {
+    const rev = {}; for (const k of Object.keys(L)) if (typeof L[k] === 'string') rev[L[k]] = k;
+    const back = id => (typeof id === 'string' && Object.prototype.hasOwnProperty.call(rev, id)) ? rev[id] : id;
+    const cards = {}, enemies = {}, aces = {};
+    for (const k of Object.keys(L)) { const c = content.cards && content.cards[L[k]]; if (c) cards[k] = Object.assign({}, c, { id: k }); }
+    for (const k of Object.keys(content.enemies || {})) { const E = content.enemies[k]; enemies[k] = Object.assign({}, E, { deck: (E.deck || []).map(back) }); }
+    for (const t of Object.keys(content.aces || {})) aces[t] = back(content.aces[t]);
+    return { V: Object.assign({}, content, { cards, enemies, aces }), back };
+  }
+  function oldDeckIds(run, content, L, id, pos) {
+    if (!run || !L || typeof L !== 'object' || !content || !content.enemies || !content.enemies[id]) return null;
+    try {
+      const { V, back } = legacyView(content, L);
+      const r = Object.assign({}, run, { bossCard: back(run.bossCard), retryDeck: null });
+      const ids = guestDef(r, V, id, pos).deck.map(c => (Object.prototype.hasOwnProperty.call(L, c.id) ? L[c.id] : c.id));
+      return ids.length && ids.every(x => content.cards[x] && !content.cards[x].tier) ? ids : null;
+    } catch (_) { return null; }
+  }
+  function pinOldDeck(run, content, L) {
+    if (!run || typeof run !== 'object' || run.prologue === 'pending' || !Number.isInteger(run.pos) || run.pos < 1) return false;
+    const p = run.pending;
+    const id = run.duel ? (run.duelEnemy || (run.duel.e && run.duel.e.id)) : (p && p.type === 'retry' && p.pos != null ? p.enemyId : null);
+    const ids = id ? oldDeckIds(run, content, L, id, run.pos) : null;
+    if (!ids) return false;
+    run.retryDeck = { pos: run.pos, id, ids };
+    return true;
   }
   // 主屬性以前（v72／v75 上線版）存的進行中 run 沒有 run.mainFrom（合併審查 11-16）：guestDef 一律帶主屬性的話 trialDeck 會照主屬性重組牌組，
   //   輸了說情重打就不是同一副牌（fixUnlock 只保住藏家那張王牌，其他 6 張照樣換）。載入時（ui.js loadSave）補上：
@@ -1844,6 +1877,7 @@
   function advance(run, p, content) {
     run.pending = null;
     if (p && p.prologue) return;
+    delete run.retryDeck;
     run.pos++;
     if (isCheckpoint(run.pos, content) && !run.checkpoints.includes(run.pos)) run.checkpoints.push(run.pos);
     run.idx = (run.pos - 1) % PER_ROUND;
@@ -1862,7 +1896,7 @@
   // ?debug=1 的 __lab：直接跳到第 n 位（序章算完成、特價箱算挑過；聲望、等級不動；不記中繼點＝不是走到的）
   function jumpTo(run, content, pos) {
     pos = Math.max(1, pos | 0);
-    run.duel = null; run.duelEnemy = null; run.pending = null; run.over = null;
+    run.duel = null; run.duelEnemy = null; run.pending = null; run.over = null; delete run.retryDeck;
     if (run.prologue === 'pending') run.prologue = 'done';
     if (run.shop) run.shop.bargainPicked = true;
     run.pos = pos; run.round = roundOf(pos); run.idx = (pos - 1) % PER_ROUND;
@@ -2548,7 +2582,7 @@
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
-    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, mercyPAt, titleAt, guestTitle, roundMains, mainAt, guestDef, sellQuote, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, fixMain, jumpTo, half, hintTableOf,
+    trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, mercyPAt, titleAt, guestTitle, roundMains, mainAt, guestDef, legacyView, oldDeckIds, pinOldDeck, sellQuote, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, fixMain, jumpTo, half, hintTableOf,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
     LOT, lotCfg, lotQuota, lotWarn, stockBins, drawLot, shelve, lotOk, fixLot, lotLeft, mapIds, dailyPick, dailyReward,

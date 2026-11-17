@@ -24,7 +24,7 @@
 //   卡池（第 B 波 SPEC-B §1.2–§1.5；匯出 poolProblems(C)）：C.cards＝核心 cards.js＋精選新卡 cards-pool.js 展開（C.poolLoaded、張數＝核心＋n）；
 //     require('cards.js') 仍只有核心、C.cards 不是同一個物件；新卡都 pool: true、有 bin／tune、沒有 tier、不撞核心；
 //     每箱 all（C.deriveAll）⊇ pool、各箱互斥；C.attachMedia 套了 cards-media.json（版本＝C.poolVersion、每張新卡有封面試聽）、冪等；C.lot 欄位齊全。
-//   遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards 非頂點卡的 fnv1a32(catalogId) 排序陣列
+//   遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards 非頂點、非傳奇卡（帶得進遊戲的；主線 M2）的 fnv1a32(catalogId) 排序陣列
 //     （tools/build-pool-index.mjs 產生；0 撞號、每張 catalogId 主站卡池找得到）。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十六區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
@@ -935,7 +935,7 @@ const isMain = process.argv[1] && import.meta.url === pathToFileURL(path.resolve
 if (isMain) {
   const C = require(path.join(LAB, 'content.js'));
   const E = require(path.join(LAB, 'engine.js'));
-  // 遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards（明傳；cards.js 只有核心）非頂點卡的雜湊；漂掉主站「帶去店裡對決」會漏出或多出鈕
+  // 遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards（明傳；cards.js 只有核心）非頂點、非傳奇卡的雜湊；漂掉主站「帶去店裡對決」會漏出或多出鈕
   const bad = contentProblems(C, E).concat(poolProblems(C).map(x => '卡池：' + x), poolIndexProblems(C.cards).map(x => '遊戲卡池索引：' + x), legacyProblems(C).map(x => '舊 id 對照表：' + x));
   for (const x of tuneWarnings(C)) console.log('  注意（頻率走鐘，只警告）：' + x);
   if (bad.length) { console.log('content 自檢沒過（' + bad.length + '）：'); bad.forEach(b => console.log('  ✗ ' + b)); process.exitCode = 1; }

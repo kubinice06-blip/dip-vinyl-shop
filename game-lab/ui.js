@@ -136,6 +136,8 @@
       if (r.kept != null && typeof r.kept !== 'string') return false;
       // SPEC-B §2.3 寬鬆：run.want 壞＝清空（loadSave 會重同步）、shop.lot 壞＝拿掉（fixLot 重抽），不判整趟不合法
       if (r.want != null && !(Array.isArray(r.want) && r.want.every(function (x) { return typeof x === 'string'; }))) r.want = [];
+      var rd = r.retryDeck;
+      if (rd != null && !(rd && typeof rd === 'object' && posInt(rd.pos) && typeof rd.id === 'string' && Array.isArray(rd.ids) && rd.ids.length && rd.ids.every(function (x) { return typeof x === 'string' && card(x); }))) delete r.retryDeck;
       var lt = sh.lot;
       if (lt != null && !(lt && typeof lt === 'object' && lt.bins && typeof lt.bins === 'object' && !Array.isArray(lt.bins) &&
           Object.keys(lt.bins).every(function (k) { return Array.isArray(lt.bins[k]) && lt.bins[k].every(function (x) { return typeof x === 'string'; }); }) &&
@@ -249,7 +251,8 @@
     if (!C.poolLoaded) { UI.saveReadOnly = true; UI.poolMissing = true; }
     if (s && typeof s === 'object' && typeof s.v === 'number' && s.v > SAVE_V) { UI.saveReadOnly = true; return keepShell(d, s); }   // 比這版新：不覆寫
     // 換 id 先跑（migrate4／5 拿 catalogId 比存檔裡的 id）
-    if (s && typeof s === 'object' && (s.v === 4 || s.v === 5 || s.v === 6)) {
+    var oldV = s && typeof s === 'object' && (s.v === 4 || s.v === 5 || s.v === 6);
+    if (oldV) {
       backupOnce(raw);
       try { s = migrateIds(s); } catch (e) { console.error(e); UI.saveReadOnly = true; UI.migrateFail = true; return keepShell(d, s); }
     }
@@ -323,6 +326,8 @@
     }
     // 進行中的舊 run（沒有 run.unlock）：補上開局快照（之後換王牌只能換解鎖的、藏家照被剋鏈帶卡）
     if (s.run && E.fixUnlock) { try { E.fixUnlock(s.run, C, unlockArgs(s)); } catch (_) {} }
+    // 升版前停在待說情／打到一半的對決：照舊卡池釘住這位的牌單（說情重打＝同一副牌；engine pinOldDeck）
+    if (s.run && oldV && E.pinOldDeck) { try { E.pinOldDeck(s.run, C, C.legacyIds()); } catch (_) {} }
     // 今日推薦自癒（SPEC-B B2）：daily.log 收過的卡唱片櫃沒擁有（舊碼分頁蓋掉）→ 補成擁有 src daily；要在想要清理之前
     (UI.daily && Array.isArray(UI.daily.log) ? UI.daily.log : []).forEach(function (x) {
       var c = x && card(x.id); if (!c || c.tier) return;
@@ -3979,8 +3984,7 @@
     var lib = tuneLib();
     lib.catch(function () {});   // 載入失敗在推近那 0.38 秒內就回來（預抓已經失敗、這裡重抓）：先接住，不然算沒人處理的錯誤；真的處理在下面
     // 新卡媒體還沒到：現在抓、一起等（同一個 15 秒；逾時照開，星圖讀活的卡）
-    if (!C.mediaReady) { MEDIA.kicked = true; mediaLoad(); }
-    var media = Promise.race([mediaReady(), new Promise(function (res) { setTimeout(res, TUNE_WAIT); })]);
+    var media = Promise.race([mediaTry(), new Promise(function (res) { setTimeout(res, TUNE_WAIT); })]);   // 這一次抓到或失敗就開，最多等 15 秒
     return zoomed.then(function () {
       if (!UI.tune || UI.tune.at !== t0) return;
       sh.classList.remove('lb-zoom-in', 'lb-zoom-fade'); sh.classList.add('lb-zoomed');   // 放大完：藏起來（不留著 2.6 倍的變形，#app 量起來才不會多出一截）
@@ -4036,27 +4040,68 @@
   }
   // 從唱片櫃挑牌開局（§1 裁定 11）：上面「我的收藏 n 張」（擁有，可以帶來開局；店內取得金框；頂點卡只展示），下面「認識過 m／289」（原本那面牆）。點封面照舊開唱片資訊
   //   擁有的排法：店內取得的在前（最近帶走的先），再來藏家的王牌、老闆送的
+  // 唱片櫃頁：兩面牆各先畫 SHELF_BATCH 張，捲到離牆底 600 px 內再補下一批（捲動時每幀看一次；快速滑過、牆底已經在上面＝補上並把捲動位置往下挪同樣的高度）；
+  //   篩選只重畫「認識過」那面牆（驗收：認識 3,000 張整頁一次畫要 2.6 秒）
+  var SHELF_BATCH = 120;
   function renderShelf(pg, filter) {
     pg.innerHTML = '';
     var total = poolIds().length;                       // 旗標關：試做的 42 張不算（分母維持 316）
     var ids = Object.keys(save.shelf).filter(cardVis).reverse();
-    var shown = ids.filter(function (id) { return filter === 'new' ? isNewOnShelf(id) : filter === 'ace' ? !!card(id).tier : true; });
     var SRC_ORDER = { run: 0, boss: 1, start: 1, daily: 2, gift: 3 };
     var own = ids.filter(isOwned).sort(function (a, b) { return (SRC_ORDER[save.shelf[a].src] | 0) - (SRC_ORDER[save.shelf[b].src] | 0); });
     var bar = el('div', 'lb-top page', '<div class="tt">唱片櫃<small>' + esc(SU('shelfOwn', { n: own.length })) + '・' + esc(SU('shelfKnown', { n: ids.length, total: total })) + '</small></div><button type="button" class="lnk" data-a="close">關閉</button>');
     pg.appendChild(bar);
     qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
     var body = el('div', 'lb-scroll');
+    body.style.overflowAnchor = 'none';                // 補牌時捲動位置自己挪（Chrome 的捲動錨點會再挪一次）
     body.innerHTML = '<div class="lb-pad">' +
       (unlockLine() ? '<p class="sub lb-unl">' + lockIcon(10, true) + esc(unlockLine()) + '</p>' : '') +    // 解鎖進度（店主 11-16）
       '<section class="lb-own"><div class="lb-h2">' + esc(SU('shelfOwn', { n: own.length })) + '<small>' + esc(SU('shelfOwnSub')) + '</small></div>' +
-      (own.length ? '<div class="lb-wall own">' + own.map(function (id) { return coverHTML(card(id), { store: isStore(id) }); }).join('') + '</div>' : '<p class="sub">' + esc(SU('shelfOwnEmpty')) + '</p>') + '</section>' +
+      (own.length ? '<div class="lb-wall own"></div><div class="lb-wmore" data-more="own" aria-hidden="true"></div>' : '<p class="sub">' + esc(SU('shelfOwnEmpty')) + '</p>') + '</section>' +
       '<section class="lb-known"><div class="lb-h2">' + esc(SU('shelfKnown', { n: ids.length, total: total })) + '<small>' + esc(SU('shelfKnownSub')) + '</small></div>' +
       '<div class="lb-filters">' + [['all', '全部'], ['new', TU('shelfNew')], ['ace', '王牌']].map(function (f) { return '<button type="button" class="lb-btn' + (filter === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div>' +
-      (shown.length ? '<div class="lb-wall known">' + shown.map(function (id) { return coverHTML(card(id), { isNew: isNewOnShelf(id), store: isStore(id) }); }).join('') + '</div>' : '<p class="sub">' + (ids.length ? '這一格是空的。' : '還沒認識任何一張。推門進去吧。') + '</p>') +
+      '<div class="lb-kw"></div>' +
       '<p class="sub" style="margin-top:14px">點封面＝唱片資訊。</p></section></div>';
     pg.appendChild(body);
-    body.addEventListener('click', function (e) { var f = e.target.closest && e.target.closest('[data-f]'); if (f) { var y = body.scrollTop; renderShelf(pg, f.getAttribute('data-f')); var b2 = qs('.lb-scroll', pg); if (b2) b2.scrollTop = y; } });
+    // walls[kind] = {list, n（畫了幾張）, wall, more（牆後面的空格）, cov（一張的 HTML）}
+    var walls = {}, raf = 0;
+    function fill(w) {
+      var to = Math.min(w.list.length, w.n + SHELF_BATCH);
+      if (to > w.n) { w.wall.insertAdjacentHTML('beforeend', w.list.slice(w.n, to).map(w.cov).join('')); w.n = to; }
+      if (w.n >= w.list.length && w.more) { w.more.remove(); w.more = null; }
+    }
+    function check() {
+      raf = 0;
+      if (!body.isConnected) return;
+      var box = body.getBoundingClientRect(), again = false;
+      ['own', 'known'].forEach(function (k) {
+        var w = walls[k]; if (!w || !w.more) return;
+        var r = w.more.getBoundingClientRect();
+        if (r.top > box.bottom + 600) return;
+        var above = r.bottom < box.top, h0 = body.scrollHeight;
+        fill(w);
+        if (above) body.scrollTop += body.scrollHeight - h0;    // 補在畫面上方：看到的那幾張不跟著跳
+        if (w.more) again = true;
+      });
+      if (again) soon();
+    }
+    function soon() { if (!raf) raf = (W.requestAnimationFrame || function (f) { return setTimeout(f, 16); })(check); }
+    body.addEventListener('scroll', soon, { passive: true });
+    function setWall(kind, list, cov) {
+      var w = walls[kind] = { list: list, n: 0, cov: cov, wall: qs('.lb-wall.' + kind, body), more: qs('[data-more=' + kind + ']', body) };
+      if (w.wall) fill(w);
+    }
+    if (own.length) setWall('own', own, function (id) { return coverHTML(card(id), { store: isStore(id) }); });
+    function setKnown(f) {
+      var shown = ids.filter(function (id) { return f === 'new' ? isNewOnShelf(id) : f === 'ace' ? !!card(id).tier : true; });
+      qs('.lb-kw', body).innerHTML = shown.length ? '<div class="lb-wall known"></div><div class="lb-wmore" data-more="known" aria-hidden="true"></div>' : '<p class="sub">' + (ids.length ? '這一格是空的。' : '還沒認識任何一張。推門進去吧。') + '</p>';
+      walls.known = null;
+      if (shown.length) setWall('known', shown, function (id) { return coverHTML(card(id), { isNew: isNewOnShelf(id), store: isStore(id) }); });
+      [].forEach.call(body.querySelectorAll('.lb-filters [data-f]'), function (b) { b.classList.toggle('on', b.getAttribute('data-f') === f); });
+      soon();
+    }
+    setKnown(filter);
+    body.addEventListener('click', function (e) { var f = e.target.closest && e.target.closest('[data-f]'); if (f) setKnown(f.getAttribute('data-f')); });
   }
 
   // ======================================================================= scene 路由
@@ -4313,9 +4358,13 @@
     setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
   }
   // ======================================================================= 新卡封面／試聽（SPEC-B §1.6、C3/C4）
-  //   標題畫好後閒置 fetch cards-media.json?v=poolVersion → 閒置時 attachMedia → 發 'dip:media'。版本不合不重試；
-  //   網路失敗 5 秒後重試一次，之後每次換畫面再試。mediaReady()：套好 true、不合／沒卡池 false、網路失敗不 resolve
-  var MEDIA = { kicked: false, busy: false, bad: false, fails: 0, p: null, done: null };
+  //   標題畫好後閒置 fetch cards-media.json?v=poolVersion（priority low）→ 閒置時 attachMedia → 發 'dip:media'。版本不合不重試；
+  //   逾時：20 秒內沒拿到回應標頭就放棄；拿到之後 body 再給 90 秒（128 kbps 也抓得完；驗收 F3：原本 20 秒連 body 一起算，慢網路快抓完就被砍）
+  //   網路失敗 5 秒後重試一次；之後換畫面再試，但要隔 15、30、60… 秒，一次開頁最多抓 MEDIA_MAX 次（降速吃到飽不要每換畫面燒 300 KB）
+  //   mediaReady()：套好 true、不合／沒卡池 false、網路失敗不 resolve。mediaTry()：這一次抓的結果（成功 true、失敗 false；聆聽室控制台等它）
+  var MEDIA = { kicked: false, busy: false, bad: false, fails: 0, tries: 0, next: 0, p: null, done: null, cur: null };
+  var MEDIA_MAX = 6;
+  function mono() { return W.performance && performance.now ? performance.now() : now(); }   // 退避計時（e2e 會把 Date 定住）
   function mediaReady() {
     if (!MEDIA.p) MEDIA.p = new Promise(function (res) { MEDIA.done = res; });
     if (C && C.mediaReady) MEDIA.done(true);
@@ -4328,14 +4377,26 @@
   }
   function mediaKick() {
     if (MEDIA.kicked) return; MEDIA.kicked = true;
-    idle(mediaLoad, 300);
+    idle(function () { mediaLoad(); }, 300);
   }
-  function mediaRetry() { if (MEDIA.kicked && MEDIA.fails >= 2) mediaLoad(); }
-  function mediaLoad() {
+  function mediaRetry() { if (MEDIA.kicked && MEDIA.fails >= 2 && MEDIA.tries < MEDIA_MAX && mono() >= MEDIA.next) mediaLoad(); }
+  // 聆聽室控制台：還沒到就現在抓（不等退避；次數照算），等這一次的結果；抓不了（次數用完、版本不合）＝不等
+  function mediaTry() {
+    if (C && C.mediaReady) return Promise.resolve(true);
+    MEDIA.kicked = true;
+    if (!MEDIA.busy && MEDIA.tries < MEDIA_MAX) mediaLoad(true);
+    return MEDIA.busy && MEDIA.cur ? MEDIA.cur : Promise.resolve(!!(C && C.mediaReady));
+  }
+  function mediaLoad(now1) {
     if (!C || !C.poolLoaded || !C.poolVersion || C.mediaReady || MEDIA.busy || MEDIA.bad || !W.fetch) { mediaReady(); return; }
-    MEDIA.busy = true;
-    var ac = W.AbortController ? new AbortController() : null, tm = setTimeout(function () { if (ac) ac.abort(); }, 20000);
-    W.fetch('cards-media.json?v=' + encodeURIComponent(C.poolVersion), ac ? { signal: ac.signal } : undefined).then(function (r) {
+    MEDIA.busy = true; MEDIA.tries++;
+    var fin, ac = W.AbortController ? new AbortController() : null, abort = function () { if (ac) ac.abort(); };
+    MEDIA.cur = new Promise(function (res) { fin = res; });
+    var tm = setTimeout(abort, 20000), opt = {};
+    if (ac) opt.signal = ac.signal;
+    if (!now1) opt.priority = 'low';                   // 背景抓：讓店牆封面、試聽先走（不支援的瀏覽器忽略）
+    W.fetch('cards-media.json?v=' + encodeURIComponent(C.poolVersion), opt).then(function (r) {
+      clearTimeout(tm); tm = setTimeout(abort, 90000);
       if (!r.ok) throw new Error('cards-media.json HTTP ' + r.status);
       return r.json();
     }).then(function (m) {
@@ -4343,13 +4404,15 @@
       return new Promise(function (res) { idle(function () { var n = 0; try { n = C.attachMedia(m); } catch (e) { console.error(e); } res(n); }, 0); });
     }).then(function (n) {
       MEDIA.busy = false;
-      if (!n) { MEDIA.bad = true; console.warn('[media] cards-media.json 版本或列數跟 cards-pool.js 不合，不套（新卡先用專輯名字卡）'); mediaReady(); return; }
-      mediaReady();
+      if (!n) { MEDIA.bad = true; console.warn('[media] cards-media.json 版本或列數跟 cards-pool.js 不合，不套（新卡先用專輯名字卡）'); mediaReady(); fin(false); return; }
+      mediaReady(); fin(true);
       try { D.dispatchEvent(new CustomEvent('dip:media', { detail: { n: n } })); } catch (e) { console.error(e); }
     }).catch(function (e) {
       clearTimeout(tm); MEDIA.busy = false; MEDIA.fails++;
       console.warn('[media]', e && e.message ? e.message : e);
       if (MEDIA.fails === 1) setTimeout(mediaLoad, 5000);
+      else MEDIA.next = mono() + 15000 * Math.pow(2, Math.min(4, MEDIA.fails - 2));
+      fin(false);
     });
   }
   function boot() {

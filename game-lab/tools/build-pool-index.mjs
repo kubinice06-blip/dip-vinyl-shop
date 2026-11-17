@@ -8,7 +8,8 @@
 //   (藝人 + '|' + 專輯).toLowerCase()，斜線換成連字號。不必再對照，只要讓主站知道「這張遊戲裡有」→ 只放雜湊（物件形狀 83 KB gz → 24 KB gz）。
 //   fnv1a32＝engine.js／dip-tune.js 同一條（UTF-16 code unit、0x811c9dc5、0x01000193）。撞號 → 失敗（實測 0）。
 //   舊格式 v1 是 { 主站 cardId: 遊戲卡 id } 物件；主站 index.html 兩種形狀都吃（WP6）。
-// 收：C.cards 裡沒有 tier 的卡（扣掉三張王牌與頂點試做）＝精選 5,000 張；王牌、頂點卡不能當種子（engine.canSeed），帶不進遊戲。
+// 收：C.cards 裡沒有 tier、不是傳奇的卡（扣掉三張王牌與頂點試做、125 張傳奇）；王牌、頂點卡不能當種子（engine.canSeed），傳奇帶上場太好打、
+//   店裡不收（主線 M2；ui.js bringOk）——放進來的話主站照樣出鈕、點了一定被擋。
 // 用途：主站頻率光譜結果頁的卡在這份裡，才出「⚔ 帶去店裡對決」（連到 game-lab/?card=<catalogId>）。
 // 整池一律讀 require('content.js').cards（核心 cards.js＋cards-pool.js 展開）；cards.js 只有核心 368，讀它會寫出 323 筆的索引。
 // 重烘 cards.js／cards-pool.js 之後重跑一次；漏了 check-content 會擋。
@@ -27,7 +28,9 @@ export const catalogId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().r
 export const fnv1a32 = s => { let h = 0x811c9dc5; s = String(s); for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193); } return h >>> 0; };
 
 const allCards = () => require(path.join(LAB, 'content.js')).cards;
-const nonApexIds = cards => Object.keys(cards).filter(id => cards[id] && !cards[id].tier);
+const EN = require(path.join(LAB, 'engine.js'));
+// 帶得進遊戲的：非頂點、不是傳奇（＝ui.js bringOk 的卡池那半；canSeed＝卡在、沒有 tier）
+const nonApexIds = cards => Object.keys(cards).filter(id => cards[id] && !cards[id].tier && EN.rarity(cards[id]) !== 'legendary');
 
 // cards（C.cards：id → 卡）→ { v: 2, n, h }（h 排序、去重；撞號時 h 會比 n 少，poolIndexProblems 擋）
 export function poolIndexOf(cards) {
@@ -41,7 +44,7 @@ export function poolIndexText(cards) {
   return '{"v":2,"n":' + ix.n + ',"h":[\n' + ix.h.join(',\n') + '\n]}\n';
 }
 
-// 比對：檔案在、可以解析、是 v2 形狀、跟整池算出來的一模一樣；張數＝非頂點張數、0 撞號；每張的 id＝catalogId(藝人, 專輯)、主站卡池（seed_cards.json）找得到
+// 比對：檔案在、可以解析、是 v2 形狀、跟整池算出來的一模一樣；張數＝非頂點、非傳奇張數、0 撞號；每張的 id＝catalogId(藝人, 專輯)、主站卡池（seed_cards.json）找得到
 export function poolIndexProblems(cards) {
   cards = cards || allCards();
   const probs = [];
@@ -71,10 +74,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   if (process.argv.includes('--check')) {
     const p = poolIndexProblems(cards);
     if (p.length) { console.error(p.join('\n')); process.exit(1); }
-    console.log(`pool-index.json OK（v2：${poolIndexOf(cards).n} 張，扣掉王牌與頂點卡）`);
+    console.log(`pool-index.json OK（v2：${poolIndexOf(cards).n} 張，扣掉王牌、頂點卡與傳奇）`);
   } else {
     fs.writeFileSync(POOL_INDEX, poolIndexText(cards));
-    console.log(`寫入 ${path.relative(ROOT, POOL_INDEX)}：v2、${poolIndexOf(cards).n} 張（扣掉王牌與頂點卡）`);
+    console.log(`寫入 ${path.relative(ROOT, POOL_INDEX)}：v2、${poolIndexOf(cards).n} 張（扣掉王牌、頂點卡與傳奇）`);
     const p = poolIndexProblems(cards);
     if (p.length) { console.error(p.join('\n')); process.exit(1); }
   }
