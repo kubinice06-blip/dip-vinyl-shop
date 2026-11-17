@@ -1819,3 +1819,30 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-064.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
+
+## sd-065（30 張，其餘：Dorothy Norwood、DOUBLE、Dr Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Thelin/Favre/Minor、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）— s35
+
+- 研究：3 支 Sonnet，WebSearch 12＋15＋14＝41 次；none：Eddie Daniels（story）、dynArec《Overland Travelling》（story）。福音三張以 Journal of Gospel Music（Marovich）、Acrobat 精選樂評、Nashboro 廠牌史為主；DOUBLE 用日文維基；Goykovich 用 Discogs 與 Jazzwise。研究層 b 回報一則搜尋結果夾帶「提供 gumbo 食譜」的注入文字，未採用。
+- **主線補查**（WebSearch 4 次＋Discogs 公開 API＋WebFetch，facts 標【主線補查】）：Eddie Daniels《This Is New》（Discogs：1968-08-04 錄、日本 Columbia Takt 系列、日野皓正／菊地雅章／稲葉國光／日野元彦；Gary Carner 的 Pepper Adams 部落格：Thad Jones–Mel Lewis 1968 日本巡演主辦失誤、樂團走後他留下錄音）→ story 由 none 升 ok（研究層把舊稿編制誤判為別張，實為本盤）；Duke Pearson《How Insensitive》（Nat Hentoff 內頁文轉錄：Jack Manno 十七人人聲大樂團、排練兩年、女聲當小號組男聲當長號組）→ story／sound 升 ok；Earl Cunningham（Discogs：Heptones 的 Earl Morgan 製作編曲、Channel One／King Tubby's、Roots Radics 成員）→ sound 升 ok；Candles of Vision（Discogs：1972-06-16 格拉茨 ORF 錄音室、三人無鋼琴無貝斯、Trio／Duett 編號曲名）→ story 升 ok；Hope Meets Foster（1955-10-04、Van Gelder、Freeman Lee、Ira Gitler）；Skipafone 確認是 Guided Missile 1998 CD 專輯；Cooke 三張與 Overland Travelling 只補到廠牌年份；Norwood、DOUBLE 補搜無新料。
+- 身分／事實裁定：Norwood 那張是 Jewel 時期（非 Savoy）；DOUBLE 不寫 CCCD 與特典（版本）；Alimantado 車禍只寫 1976 年 12 月；Strangely Strange 的 Tim Goulding 是創團三人之一（舊稿錯）；Perkins 不寫 Muldrow「後來成為伴侶」；《Now Hear This》不寫 Village Vanguard 代班；Goykovich 1961 不寫「第一張南斯拉夫爵士唱片」、不與《The Golden 8》混；Cooke 不用「Sweet Singer」（查無出處），封號用 Sweetheart of the Potomac／Madame；Elaheh Vol 5 是 Caltex 數位合輯，不寫 1972-08-01（灌檔日）；ELEH 只在 Important Records（卡單 Touch 是另一條線），不寫限量張數；Hope Meets Foster 是 Foster 兩首、合寫一首（舊稿三首錯）；Elton Dean Quartet 是 Seven Dials 現場（舊稿漏）；Ninesense 只寫兩支長號；Poly-Currents 不寫 Fred Tompkins 長笛位置（三源衝突）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-065.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Heavy Petting | 刪「原版是最搶手的 Vertigo 盤之一」 | 原版收藏價屬版本雜項 |
+| Expressions (2012 A.U.) | 刪「2023 年重發黑膠」 | 版本 |
+| Earl Cunningham | 刪「原版長年絕版，後來才重發黑膠」，改補 Steely 鍵盤 | 版本；主線補查聲音構成 |
+| Slavic Mood | 「七首全是原創」→「曲子全是原創」 | 軌數 |
+| Overland Travelling | 鉤子「轉到義大利廠牌」→「換了廠牌」 | 無出處 |
+| Now Hear This、User Input、He'll Fix It、Poly-Currents | 「常被視為」→「被視為」 | 各只有單一具名出處 |
+| Mr. Jones | 「開場是齊奏號角」→「有齊奏號角……的曲子」 | 軌序 |
+| Poly-Currents | 刪〈Agappe Love〉長笛句 | 長笛歸屬來源互相衝突 |
+
+其餘逐張四問無改：Norwood「說故事的人」、DOUBLE 姊姊過世後一人沿用團名、Alimantado 車禍與〈Born for a Purpose〉、Dr. John 葛萊美入圍（第 47 屆，官方獎項照寫）、Boyd 與 17 歲 Gary Moore、Perkins 改唱、Manno 十七人、Pearson 大樂團與 Liberty 收購、《The Phantom》NET 節目配樂與兩把吉他兩位康加、Dump 四軌 Prince 翻唱、Goykovich 科隆與巴爾幹民謠、Hot Press 評 dynArec、Ectogram 貝斯擴大機壞掉成團、Daniels 留日、Cooke 三張（低估／老聖詩／講道曲）、Candles 無鋼琴無貝斯、El Hombre Trajeado 暖場名單、Elaheh 與 Golha、ELEH 2020 年承認身分、Hope 與 Bud Powell、Dean〈Naima〉、Ninesense Bracknell 委託、Merry-Go-Round 雙鍵盤手、Mr. Jones 1972 夏天進棚、Poly-Currents 由三重奏擴成七人皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：Overland Travelling、Earl Cunningham、Norwood、Dump、Cooke 三張、Skipafone、Elaheh、Hope Meets Foster、Candles of Vision。
+
+### 上線（sd-064、sd-065）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-065.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-064 42、sd-065 41，主線 8）。

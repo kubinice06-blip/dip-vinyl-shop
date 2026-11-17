@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s35：sd-064、sd-065 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-064 上線 30（Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Gillespie、Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Wilkerson、Donald Byrd 8、Doodle、Doris Norton）；sd-065 上線 30（Norwood、DOUBLE、Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Candles of Vision、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）。資料薄的照 delayde 前例薄寫上線。
+- **主線補查**（Discogs 公開 API notes／credits 為主）：Gillespie《Horn of Plenty》巴黎兩場、Don Carlos & Gold 兩張製作班底、Doky 兩張客席、Pullen《Kele Mou Bana》編制、Doodle（樂天商品頁）、Eddie Daniels 留日錄音（Thad Jones–Mel Lewis 巡演失誤）、Pearson《How Insensitive》Jack Manno 人聲大樂團、Earl Cunningham、Candles of Vision 格拉茨錄音。審稿改 sd-064 27 處（補《盤名》、軌數／軌序、聽眾留言非評論）、sd-065 12 處（版本、軌數、單源「常被視為」）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-064.json,review-sd-065.json,kv-before-sd-064.json,kv-before-sd-065.json}`、`desc-tools/batches/{cards,research,output}/sd-06{4,5}*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。WebSearch 約 91 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s33：sd-060、sd-061 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-060 上線 30（BROCKBEATS 4、Brother Joe May 2、Brother JT、BTS、Bunny Wailer 2、Burial Chamber Trio、Burn、Buster Williams、Bức Tường、C.C.C.C.、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball、Cappablack、Caracal、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea 4）；sd-061 上線 30（Casiopea 3、Caspro、Castanarc、Cecil Taylor、Cedar Walton、Celine Dion、Centry、cero、Chanté Moore、Charalambides、Tone Poem、Pasi 2、McAlister、Charlie Moore、Parker 2、Chicago 17、Corea 2、Chico Hamilton、Chillies、Doky、Willits、Valdés、Girard、Chế Linh 2）。BROCKBEATS、Brother Joe May、Centry 資料只到藝人／廠牌層級，照 delayde 前例薄寫上線。

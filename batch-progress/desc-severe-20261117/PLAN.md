@@ -135,8 +135,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-061 | 其餘（Casiopea … Chế Linh） | 30 | s33 | ✅ 上線 30（前台 30；無留置；主線補查 Charlie Moore、Chế Linh 2、Tone Poem；CURATED 0） |
 | sd-062 | 其餘（Cicada … Cæcilie Norby） | 30 | | |
 | sd-063 | 其餘（Da Vàng … Dianne Reeves） | 30 | | |
-| sd-064 | 其餘（Didjits … Doris Norton） | 30 | | |
-| sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | | |
+| sd-064 | 其餘（Didjits … Doris Norton） | 30 | s35 | ✅ 上線 30（前台 30；無留置；主線補查 Gillespie、Don Carlos 2、Doky 2、Pullen 2、Byas、Doodle 等；CURATED 0） |
+| sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | s35 | ✅ 上線 30（前台 30；無留置；主線補查 Eddie Daniels、How Insensitive、Earl Cunningham、Candles of Vision 等；CURATED 0） |
 | sd-066 | 其餘（Elvin Jones … Experimental Audio Research） | 30 | | |
 | sd-067 | 其餘（Experimental Audio Research … Freeform） | 30 | | |
 | sd-068 | 其餘（FRICTION … God Bullies） | 30 | | |
