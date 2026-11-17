@@ -451,3 +451,7 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-014.json`；29 張 58 鍵 Success；回讀 **58/58 一致**；`front-check` **前台 29/29 新稿**。
 - onboarding manifest 同步 29 處。
+
+## 店主：開頭要用鉤子（2026-11-17）
+
+店主：「一樣要開頭給 hook 的方式」。`general-desc-base.md` 第三節與 `prompt-writer.md` 改為第一句鉤子（形式照 hook-base 第 2 點；材料限故事／概念／聲音／地位，雜項不准）、第二句講這是什麼。林強《驚蟄》改以「2005 年坎城影展只請了四位音樂人，唯一的亞洲人是林強。」開頭，229 字，KV desc2／desc4 回讀一致、前台新稿（舊值 `kv-before-jingzhe-fix2.json`）。sd-001～014 排補鉤子（PLAN 新節）。

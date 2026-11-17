@@ -1,6 +1,6 @@
 ---
 name: dip-card-create
-description: One-line entry point for adding album cards to dip vinyl — accepts artist(s), album(s), artist+album, or a genre/scene expansion request, then runs the full pipeline: candidate curation, identity checks, covers, three-axis ratings, apex assessment, researched description per general-desc-base (what it is / story or concept / sound; no trivia hooks; 180–240 chars), fixed preview, Firestore/KV writes, gates, and publication. Use for 新增專輯／新增卡片／補卡池／延伸某曲風／上架專輯. Supersedes dip-card-pool-expand as the entry point (its scripts remain the underlying library).
+description: One-line entry point for adding album cards to dip vinyl — accepts artist(s), album(s), artist+album, or a genre/scene expansion request, then runs the full pipeline: candidate curation, identity checks, covers, three-axis ratings, apex assessment, researched description per general-desc-base (hook from story/concept/sound, never trivia; then what it is / story / sound; 180–240 chars), fixed preview, Firestore/KV writes, gates, and publication. Use for 新增專輯／新增卡片／補卡池／延伸某曲風／上架專輯. Supersedes dip-card-pool-expand as the entry point (its scripts remain the underlying library).
 ---
 
 # dip-card-create — 一句話輸入的完整建卡產線
@@ -70,10 +70,10 @@ description: One-line entry point for adding album cards to dip vinyl — accept
 ## Phase 3：簡介產線
 
 > **2026-11-17 起改規格（店主定案）**：一般卡照 `desc-tools/prompts/general-desc-base.md`，頂點卡照 `apex-desc-base.md`。
-> **不再跑鉤子（hook）層**：研究層照 general-desc-base 第二節（三塊：這是什麼／故事或概念／聲音；MB／Discogs 只確認身分），
-> 寫作層直接讀研究稿、照第三節寫（第一句講這是什麼，不准冷知識開頭；不寫軌序、曲長、盤號）；主線審稿照第四節。
+> **鉤子層照舊跑**（店主 11-17：「一樣要開頭給 hook 的方式」），但鉤子材料限故事／概念／聲音／地位，不准拿軌序、曲長、盤號、曲名體例、封套、版本當鉤子；
+> 研究層照 general-desc-base 第二節（三塊：這是什麼／故事或概念／聲音；MB／Discogs 只確認身分）；寫作層照第三節（鉤子後第二句講這是什麼，不寫軌序、曲長、盤號）；主線審稿照第四節。
 > 起因：林強《驚蟄》整段只講軌序與曲長，抽查一般卡 17% 同類（`batch-progress/desc-audit-20261117/`）。
-> 下面舊規格裡的「hook 首句懸念」、hook 層代理、`qa-batch hooks`／`chk-hook-crossgroup` 一律停用；其餘（批名、目錄、QA、逐張審稿）照舊。
+> 下面舊規格的 hook 層、`qa-batch hooks`／`chk-hook-crossgroup` 照用；hook 層的研究素材改成 general-desc-base 的三塊。
 
 
 **規格＝全池現行標準**：hook 首句懸念＋正文 full 180–240 字（`Array.from` 計，硬上限 280、

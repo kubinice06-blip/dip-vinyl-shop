@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡簡介開頭恢復鉤子（材料限故事／概念／聲音）
+
+- **店主**：「一樣要開頭給 hook 的方式」。上午新規則把鉤子拿掉了；改為**鉤子照舊、材料限故事／概念／聲音／地位**，軌序、曲長、盤號、曲名體例、封套、版本不准當鉤子，第二句講這是什麼。
+- **改動**：`desc-tools/prompts/general-desc-base.md` 第三節與第四節、`batch-progress/desc-severe-20261117/{prompt-writer.md,PLAN.md,rulings.md}`、`ALBUM_ONBOARDING.md` §5、`dip-card-create` Phase 3（鉤子層照跑）、mood-cells WRITER／HOOK-DISPATCH、`writer-base.md`／`hook-base.md` 檔頭。
+- **《驚蟄》**：改為「2005 年坎城影展只請了四位音樂人，唯一的亞洲人是林強。」開頭，229 字上線（舊值 `kv-before-jingzhe-fix2.json`）。
+- **待辦**：sd-001～014 已上線但沒有鉤子，PLAN 排 `sd-hook-1／2` 補；sd-015 起新批直接照新規。
+- **驗證**：KV desc2／desc4 逐字回讀一致、`/album-desc` 回新稿、fix-spacing 0、鉤子加權 26.5 字。
+
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 讀牌加難（客人會反讀你、唬人兩種、提示分三級）＋提示句 289 句
 
 - **店主 11-17**：「玩起來太簡單了沒挑戰性，目前玩 10 回合，很容易讀到對方的牌，我的舊版相較之下難度比較剛好。然後對方的提示詞很單調無聊，看來看去都這幾句，多一點，自然平順的口吻。」
