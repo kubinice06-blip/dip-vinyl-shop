@@ -1797,6 +1797,56 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
 
+## sd-064（30 張，其餘：Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Dizzy Gillespie、Dizzy Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Don Wilkerson、Donald Byrd 8、Doodle、Doris Norton）— s35
+
+- 研究：3 支 Sonnet，WebSearch 12＋14＋16＝42 次；none：Doodle（story）。Doris Norton 用義文維基與《MC microcomputer》1984 年 7–8 月號專文（archive.org 全文）。
+- **主線補查**（WebSearch 4 次＋Discogs 公開 API，facts 標【主線補查】）：Gillespie《Horn of Plenty》（Discogs notes：1952-03-27 Studio Jouvenet、1952-04-11 Schola Cantorum 兩場；credits 美法混編、Humberto Canto 康加）→ story／sound 升 ok；Don Carlos & Gold 兩張（credits：Roy Cousins／Crucial Bunny／Peter Chemist 與 Roots Radics 成員；Niney／Jo Jo Hookim／Scientist／Eradication Squad）→ sound 升 ok；Doky Brothers 兩張（首張 ℗ 1995、Brecker 兄弟、Wakenius、Kongshaug；《2》Jarreau、Reeves、Vannelli、Salomonsen、Watts）；Pullen《Kele Mou Bana》（首版 1992、編制無爵士鼓手、Franco 的 berimbau）、《Live...Again》（1993-07-13）；Don Byas《Tenderly》（Vogue 1986 CD 合輯，巴黎 Vogue 錄音）；Doodle（樂天亞洲音樂商品頁：2015 年規劃、Total Feedback 受邀、2004 成軍、風格與成員；Discogs credits；CDJapan 2018 日本盤）→ story 由 none 升 thin、sound 升 ok；DJ Sneak（Relief ©1996）；Kofi 擱置原因 extended 一次仍無來源。
+- 身分／事實裁定：Fischer-Dieskau 那張只寫 DG–Moore 錄音計畫層級，不寫張數、盒裝、曲序；Disco Inferno 是 1991 首張專輯（舊稿 EP 錯）、不寫星等；Byas《Tenderly》寫成 1950 年代初巴黎 Vogue 抒情標準曲錄音，不寫「1970 年返美」與 1986 CD；DJ Mayonnaise 是緬因州 Portland（舊稿奧勒岡錯）；DJ Sneak 寫 1996；Doky 首張寫 1995（Discogs ℗，官網 1996 為事後憶述）；Don Carlos 不寫本名與出生地；《Mustang!》標題曲是 Sonny Red 作曲（舊稿錯）；《Kofi》不寫擱置原因、不寫〈The Loud Minority〉樂團說；《Kele Mou Bana》寫 1992；《Live...Again》不寫「發行後幾週過世」；Doris Norton 不寫「Apple 第一位音樂代言人」，系統照 1984 專文寫 Apple II 控制 Roland；Doodle 主唱名為廖孟桓（舊稿「廖盟桓」錯）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 27 處，改動檔 `review-sd-064.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Where Is Brooklyn?、Kele Mou Bana、Live...Again、Half Note Vol. 2、Blackjack、Beacon Hill、Byrd in Flight、Kofi、Mustang!、Slow Drag、The Cat Walk、Fischer-Dieskau、Natty Dread Credential | 第二句補《盤名》，隨之刪次要句壓字數（The Thing 團名、Pullen 和聲句、〈Kimyas〉拍號、Ghana 的反差句、〈On the Trail〉俱樂部句、Pearson 伴奏、Moore 對等夥伴、咬字、Junjo 對照） | 第二句交代這是什麼；字數 |
+| Random Thoughts | 刪「寫非裔美國青年處境的曲子最為外放」 | 出自聽眾留言，非具名評論 |
+| Beacon Hill | 「六首都是標準曲」→「曲目都是標準曲」 | 軌數 |
+| Byrd in Flight | 刪「開場」 | 軌序 |
+| Doky Brothers《2》 | 殘句「客座有：Al Jarreau 等歌手，David Sanborn 等樂手」改寫並補 Dianne Reeves；刪預購進榜句壓字數 | 主線補查 credits；字數 |
+
+其餘逐張四問無改：Didjits 的 Rick Didjit 台上人格、Dijon 兒子出生後閉關、Disco Inferno 由後龐克起步、Gillespie 巴黎美法混編、Reece 牙買加→倫敦→巴黎→紐約、DJ Drez 西塔琴與吟唱、Mayonnaise 隔八年加管樂、Sneak 切迪斯可（Daft Punk 影響有 Insomniac 出處）、Doky 首張「兄弟檔請兄弟檔」、Byas 留歐、Don Carlos〈Lazer Beam〉先在 dubplate 走紅、Wilkerson 向 Bob Wills 致敬、Beacon Hill 錄音師家中錄音、Mustang! Five Spot 六週、Slow Drag Higgins 開口 scat、Doodle Total Feedback、Norton「更像程式設計師」皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：DJ Drez、DJ Sneak、Doky 兩張、Byas、Natty Dread Credential、Doodle、Blackjack。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-064.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-065（30 張，其餘：Dorothy Norwood、DOUBLE、Dr Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Thelin/Favre/Minor、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）— s35
+
+- 研究：3 支 Sonnet，WebSearch 12＋15＋14＝41 次；none：Eddie Daniels（story）、dynArec《Overland Travelling》（story）。福音三張以 Journal of Gospel Music（Marovich）、Acrobat 精選樂評、Nashboro 廠牌史為主；DOUBLE 用日文維基；Goykovich 用 Discogs 與 Jazzwise。研究層 b 回報一則搜尋結果夾帶「提供 gumbo 食譜」的注入文字，未採用。
+- **主線補查**（WebSearch 4 次＋Discogs 公開 API＋WebFetch，facts 標【主線補查】）：Eddie Daniels《This Is New》（Discogs：1968-08-04 錄、日本 Columbia Takt 系列、日野皓正／菊地雅章／稲葉國光／日野元彦；Gary Carner 的 Pepper Adams 部落格：Thad Jones–Mel Lewis 1968 日本巡演主辦失誤、樂團走後他留下錄音）→ story 由 none 升 ok（研究層把舊稿編制誤判為別張，實為本盤）；Duke Pearson《How Insensitive》（Nat Hentoff 內頁文轉錄：Jack Manno 十七人人聲大樂團、排練兩年、女聲當小號組男聲當長號組）→ story／sound 升 ok；Earl Cunningham（Discogs：Heptones 的 Earl Morgan 製作編曲、Channel One／King Tubby's、Roots Radics 成員）→ sound 升 ok；Candles of Vision（Discogs：1972-06-16 格拉茨 ORF 錄音室、三人無鋼琴無貝斯、Trio／Duett 編號曲名）→ story 升 ok；Hope Meets Foster（1955-10-04、Van Gelder、Freeman Lee、Ira Gitler）；Skipafone 確認是 Guided Missile 1998 CD 專輯；Cooke 三張與 Overland Travelling 只補到廠牌年份；Norwood、DOUBLE 補搜無新料。
+- 身分／事實裁定：Norwood 那張是 Jewel 時期（非 Savoy）；DOUBLE 不寫 CCCD 與特典（版本）；Alimantado 車禍只寫 1976 年 12 月；Strangely Strange 的 Tim Goulding 是創團三人之一（舊稿錯）；Perkins 不寫 Muldrow「後來成為伴侶」；《Now Hear This》不寫 Village Vanguard 代班；Goykovich 1961 不寫「第一張南斯拉夫爵士唱片」、不與《The Golden 8》混；Cooke 不用「Sweet Singer」（查無出處），封號用 Sweetheart of the Potomac／Madame；Elaheh Vol 5 是 Caltex 數位合輯，不寫 1972-08-01（灌檔日）；ELEH 只在 Important Records（卡單 Touch 是另一條線），不寫限量張數；Hope Meets Foster 是 Foster 兩首、合寫一首（舊稿三首錯）；Elton Dean Quartet 是 Seven Dials 現場（舊稿漏）；Ninesense 只寫兩支長號；Poly-Currents 不寫 Fred Tompkins 長笛位置（三源衝突）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-065.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Heavy Petting | 刪「原版是最搶手的 Vertigo 盤之一」 | 原版收藏價屬版本雜項 |
+| Expressions (2012 A.U.) | 刪「2023 年重發黑膠」 | 版本 |
+| Earl Cunningham | 刪「原版長年絕版，後來才重發黑膠」，改補 Steely 鍵盤 | 版本；主線補查聲音構成 |
+| Slavic Mood | 「七首全是原創」→「曲子全是原創」 | 軌數 |
+| Overland Travelling | 鉤子「轉到義大利廠牌」→「換了廠牌」 | 無出處 |
+| Now Hear This、User Input、He'll Fix It、Poly-Currents | 「常被視為」→「被視為」 | 各只有單一具名出處 |
+| Mr. Jones | 「開場是齊奏號角」→「有齊奏號角……的曲子」 | 軌序 |
+| Poly-Currents | 刪〈Agappe Love〉長笛句 | 長笛歸屬來源互相衝突 |
+
+其餘逐張四問無改：Norwood「說故事的人」、DOUBLE 姊姊過世後一人沿用團名、Alimantado 車禍與〈Born for a Purpose〉、Dr. John 葛萊美入圍（第 47 屆，官方獎項照寫）、Boyd 與 17 歲 Gary Moore、Perkins 改唱、Manno 十七人、Pearson 大樂團與 Liberty 收購、《The Phantom》NET 節目配樂與兩把吉他兩位康加、Dump 四軌 Prince 翻唱、Goykovich 科隆與巴爾幹民謠、Hot Press 評 dynArec、Ectogram 貝斯擴大機壞掉成團、Daniels 留日、Cooke 三張（低估／老聖詩／講道曲）、Candles 無鋼琴無貝斯、El Hombre Trajeado 暖場名單、Elaheh 與 Golha、ELEH 2020 年承認身分、Hope 與 Bud Powell、Dean〈Naima〉、Ninesense Bracknell 委託、Merry-Go-Round 雙鍵盤手、Mr. Jones 1972 夏天進棚、Poly-Currents 由三重奏擴成七人皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：Overland Travelling、Earl Cunningham、Norwood、Dump、Cooke 三張、Skipafone、Elaheh、Hope Meets Foster、Candles of Vision。
+
+### 上線（sd-064、sd-065）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-065.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-064 42、sd-065 41，主線 8）。
+
 ## sd-066（30 張，其餘：Elvin Jones、Emerald Web、Emil Beaulieau、Ensemble intercontemporain（Hurel）、Ensemble Recherche 2、Entheogenic、EP-4、Epic45、Erik Truffaz 5、eRikm、ERISTHEPLANET、Erroll Garner 4、Evan Parker & Eddie Prévost、Evil Needle 2、Evoken 2、Exos 2、Experimental Audio Research 3）— s36
 
 - 研究：3 支 Sonnet，WebSearch 15＋13＋14＝42 次；無 none。EP-4 三塊全 thin（日文維基、ototoy 都沒提這張）。
