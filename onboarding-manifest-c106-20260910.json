@@ -399,29 +399,29 @@
    }
   },
   {
-   "artist": "張露",
-   "album": "繁星點點 張露",
+   "artist": "張璐",
+   "album": "繁星點點",
    "identity": {
     "releaseType": "Album",
     "upc": "",
     "aliasesChecked": true,
-    "aliasReview": "釘 release-group 2070a4d2-ca83-4d0d-940d-52f3f30bec5a。回問確認：title「繁星點點 張露」、artist-credit「張露」、first-release-date 1973-10-23、primary-type Album、secondary-types 空、轄下 1 個 release（Official、廠牌 环球唱片，release 未填國別）。藝人 MBID 08571849-85b7-4a1e-8b65-e857346f0efb，名下 2 個 RG。刻意不釘：e0b3dfaf-1aa0-45fb-9bec-1647b48a9709《給我一個吻》（1992 Album＋Compilation，就是池中已有的名典 13，c-49 已核實其 release 8d1c9b66＝FH81013 2、15 軌）。",
+    "aliasReview": "釘 release-group 2070a4d2-ca83-4d0d-940d-52f3f30bec5a。回問確認：title「繁星點點 張露」、artist-credit「張露」、first-release-date 1973-10-23、primary-type Album、secondary-types 空、轄下 1 個 release（Official、廠牌 环球唱片，release 未填國別）。藝人 MBID 08571849-85b7-4a1e-8b65-e857346f0efb，名下 2 個 RG。刻意不釘：e0b3dfaf-1aa0-45fb-9bec-1647b48a9709《給我一個吻》（1992 Album＋Compilation，就是池中已有的名典 13，c-49 已核實其 release 8d1c9b66＝FH81013 2、15 軌）。 ｜2026-11-17 sd-fix-1 改掛名：Discogs release 33707097＝台灣環球唱片 1977 年 1 月 LP（ULP-5125），歌手張璐，十二首與本 RG 的十一首幾乎全同；MB 的「張露」掛名是串流上架資料誤掛（張露 1975 年已退出歌壇）。卡改為張璐《繁星點點》，rgMbid 仍指同一批錄音。",
     "rgMbid": "2070a4d2-ca83-4d0d-940d-52f3f30bec5a",
     "exceptionEvidenceUrls": []
    },
    "research": {
-    "suggestedYear": 1973,
-    "yearNote": ""
+    "suggestedYear": 1977,
+    "yearNote": "sd-fix-1（2026-11-17）：串流的 1973-10-23 是誤掛，原版 LP 為 1977 年 1 月（Discogs 33707097）"
    },
    "genres": [
-    "pop",
-    "jazz"
+    "pop"
    ],
    "cover": {
-    "url": "https://coverartarchive.org/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a/front",
-    "source": "caa",
+    "url": "https://i.discogs.com/158Uy5HJEKKY3lmXx76ELNOX-ljrFlBkn2KSAjV7DzY/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNzA3/MDk3LTE3NDQ3Mjk1/NDgtMzIyOS5qcGVn.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "33707097",
     "httpStatus": 200,
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-11-17T13:09:14.818Z"
    },
    "ratings": {
     "classic": 3,
@@ -448,14 +448,12 @@
     "evidenceUrls": []
    },
    "description": {
-    "text": "藝名是電台叫出來的：上海話裡「大小姐」的大，讀近露。本名張秀英的她靠〈給我一個吻〉紅遍香港，這張碟出在 1973 年，離她 1975 年退出歌壇不到兩年。十一軌全落在 2 分 15 秒到 3 分 40 秒之間，最長的是第 2 軌〈夢醒不見你〉。曲名自己成組：〈永遠在一起〉〈永遠相依〉〈相親相愛〉一路，〈小城春回〉與〈昨天 今天 明天〉則是時序題。",
+    "text": "《繁星點點》是台灣歌手張璐 1977 年 1 月由環球唱片發行的國語流行 LP，以〈繁星點點〉〈何時相聚〉〈世界真有趣〉三首歌為主打，唱片公司當時把她當成學生偶像來推。張璐在 1970 年代也演電視劇，隔年另在 Prinstar 唱片發行《愛之鎖 第一輯》。這批錄音後來上了串流平台，卻被誤掛在上海時代曲歌星張露名下，年份也標成 1973 年；兩人不是同一人，張露 1975 年已退出歌壇。",
     "sourceUrls": [
-     "https://musicbrainz.org/ws/2/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a?fmt=json&inc=artist-credits+releases",
-     "https://musicbrainz.org/ws/2/release?release-group=2070a4d2-ca83-4d0d-940d-52f3f30bec5a&fmt=json&inc=media+labels+recordings&limit=100",
-     "https://musicbrainz.org/ws/2/release-group?artist=08571849-85b7-4a1e-8b65-e857346f0efb&limit=100&offset=0&fmt=json",
-     "https://itunes.apple.com/search?term=%E5%BC%B5%E9%9C%B2%20%E7%B9%81%E6%98%9F%E9%BB%9E%E9%BB%9E&country=tw&media=music&entity=song&limit=25",
-     "https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%B2",
-     "https://musicbrainz.org/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a"
+     "https://www.discogs.com/release/33707097",
+     "https://api.discogs.com/artists/6145426/releases",
+     "https://tcmb.culture.tw/zh-tw/detail?indexCode=MOCCOLLECTIONS&id=11000110415",
+     "https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%B2"
     ]
    },
    "preview": {

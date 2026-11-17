@@ -78,6 +78,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-hold-3 | sd-016／018 留置卡重查 | 3 | s11 | ✅ 上線 2（前台 2；花生隊長、美空ひばり救回；張露《繁星點點》續留置） |
 | sd-hold-4 | sd-016／019 留置卡重查 | 2 | s14 | ✅ 上線 1（前台 1；黑豹《無是無非》救回；張露《繁星點點》身分不穩續留置） |
 | sd-hold-5 | 張露、delayde 最終重查 | 2 | s18 | ⛔ 上線 0、最終留置 2（張露《繁星點點》實為台灣歌手張璐 1977 環球 LP，卡面藝人錯，**待店主處理**：改藝人或下架；delayde《finding solitude》網路上無任何專輯層級資料）；**協調端裁定（店主授權）**：張露卡改掛名張璐、delayde 薄寫，交 s30 `sd-fix-1`，見 rulings 末段） |
+| sd-hold-6 | sd-047／054 留置 4 張最終重查 | 4 | s30 | ✅ 上線 4（前台 4；藤井貞泰、A-Sound、99.99、Akal Dub 全數救回或薄寫，留置清空；突破口 Discogs API release notes） |
+| sd-fix-1 | 協調端裁定執行：張露卡改掛名張璐、delayde 薄寫 | 2 | s30 | ✅ 上線 2（前台 2；張璐《繁星點點》六處改名＋年份 1977＋LP 原版封面、`verify-album-onboarding --published` 0 error、情緒三軸重建；張璐藝人介紹 `ar-d-941` 素材不足 skipped） |
 | sd-011 | 中日韓台（高中正義 … 송골매） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-012 | 中日韓台（시인과 촌장 … Mal Waldron & 日野皓正） | 30 | s6 | ✅ 上線 30（前台 30；無留置） |
 | sd-013 | 中日韓台（NANIWA EXPRESS … ゼロ戦） | 30 | s7 | ✅ 上線 27（前台 27；山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》留置） |
@@ -124,9 +126,9 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-052 | 經典度≥4（Tod Dockstader … Virgo Four） | 30 | s28 | ✅ 上線 30（前台 30；無留置；主線補查 6 張；CURATED 0） |
 | sd-053 | 經典度≥4（Vision of Disorder … Zbigniew Preisner） | 30 | s29 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-054 | 經典度≥4＋其餘（Zeni Geva … Al Campbell） | 30 | s29 | ✅ 上線 27（前台 27；A-Sound《Release》、99.99《More of 99.99》、Akal Dub《Life and the Void》查無專輯資料留置；CURATED 0） |
-| sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | | |
-| sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | | |
-| sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | | |
+| sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | s30 | ✅ 上線 30（前台 30；無留置；主線補查 Altan Urag 2、Apelsin、And One；Aretha 舊稿誤寫 1980 Arista 盤已更正；CURATED 0） |
+| sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | s31 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | s31 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-058 | 其餘（Big Satan … Bobbi Humphrey） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 10 張；CURATED 0） |
 | sd-060 | 其餘（BROCKBEATS … Casiopea） | 30 | | |
