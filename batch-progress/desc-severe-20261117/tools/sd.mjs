@@ -30,7 +30,8 @@ async function bulkGet(ks) {
   return vals;
 }
 const outRows = () => fs.readdirSync('desc-tools/batches/output').filter(f => new RegExp('^' + batch + '-out-\\d+\\.json$').test(f))
-  .flatMap(f => JSON.parse(fs.readFileSync('desc-tools/batches/output/' + f, 'utf8')));
+  .flatMap(f => JSON.parse(fs.readFileSync('desc-tools/batches/output/' + f, 'utf8')))
+  .filter(r => !r.hold && r.desc); // 寫作層回報的留置列（hold:true、desc 空）不進 QA／KV／manifest
 const parse = v => { if (v == null) return null; try { return JSON.parse(v).desc ?? null } catch { return v } };
 
 if (cmd === 'cards') {
