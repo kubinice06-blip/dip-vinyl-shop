@@ -1602,6 +1602,47 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
 - **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
 
+## sd-056（30 張，其餘：Armando、Arpanet、Art Blakey 9、Art Ensemble of Chicago、Grumiaux、Rubinstein、Arturo O'Farrill、Astral Engineering、Asylum、At the Drive-In、Yupanqui、Ataraxia、Atrium Carceri 2、Attrition、Audio Active、Augustus Pablo、AUX 88 4、B-Side & Philanthrope）— s31
+
+- 研究：3 支 Sonnet，WebSearch 16＋15＋17＝48 次；none：Astral Engineering（story）、AUX 88 同名（story）。寫稿前預查 60 張（sd-056／057）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 約 8 次＋WebFetch，facts 標【主線補查】）：Asylum（SIKEI-MUSIC 樂評：噪音／前衛＋龐克、硬核、positive punk，從纖細黑暗急轉金屬 riff、Gazelle 歇斯底里的細嗓；TRANS RECORDS＝北村昌士）→ sound ok；AUX 88 同名與《Mad Scientist》（MUTEK 藝人頁：1993 年 Hamilton 與 Tucker 成團、Kraftwerk／Cybotron、techno-bass 構成；Exclaim! 808 鼓與神經質合成器；Discogs：《Mad Scientist》Puzzlebox 2009、Tucker 與 Hamilton 共同製作）；Audio Active（On-U Sound Studios、Sherwood 共同製作）。Armando、Hard Champion、New Year's Eve at Sweet Basil、Astral Engineering 補搜無專輯層級新料，照研究稿薄寫。
+- 事實裁定：Armando 年份寫「1990 年代初」、不寫廠牌與目錄號（Muzique 1992／Trax 1993 兩說），聲音寫成「他這時期的製作」；Hard Champion／Dr. Jeckyle／NYE 不寫舊稿的 Paddle Wheel 日期、作曲沿革與版本；Roots & Herbs 六首全為 Shorter 作品（舊稿「五首」錯）；Ataraxia 是日本團（派工特注誤記義大利），不寫團員名；Attrition 是殭屍電影啟發的即興配樂（舊稿「遊戲配樂」錯）；Pablo 那張寫 Prince Jammy 混音、不寫 Rockers International 1978；Audio Active 不寫 Style Scott；AUX 88 同名專輯不寫「第幾張」（MUTEK 清單序數自相矛盾）；Xeo-Genetic 不寫發行日與獎項；O'Farrill 葛萊美（同名曲入圍器樂作曲）略過。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 33 處，改動檔 `review-sd-056.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Astral Engineering | 刪「後來以 chillout 經典之名流傳」 | 只有廠牌自己的宣傳語 |
+| Ataraxia | 刪「原版流通有限，1994 年 CD 再發才傳得較廣」；補《盤名》 | 無出處、屬版本資訊 |
+| Augustus Pablo | 鉤子「封面掛的是」→「掛名的是」；第二句補《盤名》，刪「Pablo 只是班底一員」「音量大」壓字數 | 鉤子避封面字眼；QA |
+| Dr. Jeckyle、NYE、Jazz Corner Vol. 2、Three Blind Mice Vol. 2、Grumiaux、Rubinstein、O'Farrill、At the Drive-In、AUX 88 同名 | 第二句補《盤名》，隨之刪次要句壓字數（NYE「七人編制」、Three Blind Mice「四人後來都自組樂團」與「擴編重發」、Grumiaux「與 Philips 合作二十多年」、O'Farrill「樂手與舞者同台」、ATDI「錄音薄但緊繃」） | QA 無《》、字數；Three Blind Mice 改寫為「1990 年才由 Blue Note 出版」不提擴編版本 |
+| The Witch Doctor | 刪〈Afrique〉vamp 沿用句壓字數，補回 Shorter 一句接 Timmons | 字數、語句完整 |
+
+其餘逐張四問無改：Arpanet 事件視界與「科學過程」自述、First Flight 日本樂迷票選與日比谷公會堂、Hard Champion 駐演最後一晚、Roots & Herbs 擱置九年、Chi-Congo Don Moye 首張、Rubinstein 1910 年「鋼琴像斑鳩琴」、ATDI 九名觀眾與 600 美元三天錄完、Attrition 2-Tone 時代的考文垂、Atrium Carceri 斯德哥爾摩地鐵隧道殘響、AUX 88《Xeo-Genetic》發片派對 jam 皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。Ataraxia 187、Astral 197 薄寫照收。
+
+## sd-057（30 張，其餘：B.T. Express、Baby Keem、Bananarians、Barrington Levy 5、Barry White、Bcalm、Beatrice Rana、Beefeater、Ben Frost 3、Wuorinen、Bennie Wallace 2、Benny Green 2、Parmegiani、Betty Wright、Biff Bang Pow!、Big Bag、Big John Patton 6）— s31
+
+- 研究：3 支 Sonnet，WebSearch 11＋11＋17＝39 次；none：Bcalm（story／sound）、Fortitude III（story）、Big Bag（story）。
+- **主線補查**（WebSearch 約 7 次＋WebFetch）：Bananarians（disk union 商品頁：1982 年唯一作、自主製作、コジマ録音、節奏機 techno punk → industrial pop → reggae、杉林恭雄與楠均後組くじら；posfie 前團員回憶：藤井参助、吉祥寺マイナー與新宿ロフト）→ 由三塊 thin 救回；Bcalm（Lofi Girl 官方 Bandcamp：2024-08-15 發行、六位客席；藝人頁：本名 Callum Sykora、英國）→ 薄寫上線；Fortitude III（filmmusicreporter：2018-12 數位發行、前兩季 Mute）；Bennie Wallace 兩張（Blue Note 官網 Yanow：紐奧良 R&B 與幽默；Dr. John 製作兩張）；Benny Green《Lineage》（A&R Studios 錄音、〈Phoebe's Samba〉寫給妹妹）；Big Bag（extended 一次無新料，年份三說）。
+- 事實裁定：Baby Keem 製作寫「與 Danja 等人」；Barry White 不寫舞曲榜名次（查到的是 R&B 單曲第 25）；《Doh Ray Me》寫 1980、註明另作 1981；《Shaolin Temple》不寫 Junjo 為製作人；《Run Come Ya!》不寫製作人；Betty Wright 不把前作的 Criteria 與班底寫成本張；Benny Green《Lineage》是 Blue Note（非 Criss Cross）；《The Place to Be》管樂六人；Wuorinen 那張不寫年份（1988／1993 兩說）；Big Bag 年份寫「2000 年代後半」、不寫 2015 英國課程；Beefeater 不寫 Gil Scott-Heron 刻紋；Bananarians 不寫 2010 年完整版（版本資訊）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 20 處，改動檔 `review-sd-057.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Baby Keem、Teach Me Culture、Barry White、Bordertown、Accent on the Blues、Blue John、That Certain Feeling | 「常被視為」→「被視為」 | 各只有單一具名出處 |
+| Bcalm | 鉤子「一向走放鬆路線，這張也不例外」→ 以六位同廠客席為鉤子；客席補 Dontcry；刪後作年份壓字數 | 專輯本身無聲音出處，「也不例外」是推論 |
+| Bananarians | 刪「2010 年出了追悼用的完整版」，改寫藤井 1991 年在多明尼加客死 | 版本資訊 |
+| Wuorinen、Biff Bang Pow!、Blue John、Memphis To New York Spirit、The Way I Feel | 第二句補《盤名》，隨之刪次要句（Wuorinen 十二音與 Ohlsson 長期合作、Biff Bang Pow! 團名由來、Blue John「避開假高潮」、The Way I Feel〈Davene〉） | QA 無《》、字數 |
+
+其餘逐張四問無改：B.T. Express R&B 專輯榜冠軍、Rana「帶義大利口音的 Stravinsky」、Beefeater 解散後才出版、Dark 第二季不照剪輯寫、Fortitude III 四集最終季、Levy 五張各自鉤子（自製首作、Linval Thompson、Jah Life、〈Collie Weed〉、回到寫歌）、Parmegiani PSI 小廠牌與「暗面」、Big John Patton 六張（Ulmer、擱置、Footprints＋Cissy Strut、新班底、音栓與音量踏板、無貝斯三重奏）皆有出處。《Blue John》鉤子「封套背面預告了好幾年」是擱置故事本身（Terry Martin 內頁文），不是封套印刷雜項，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線（sd-056、sd-057）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-056/057.json`；60 張 60 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 60/60 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 56 處（sd-056 29、sd-057 27）。
+- 本工作階段 WebSearch 合計約 102 次（研究層 sd-056 48、sd-057 39，主線約 15）。
+
 ## sd-hold-6：sd-047／054 留置 4 張最終重查（藤井貞泰、A-Sound、99.99、Akal Dub）— s30
 
 - 研究：1 支 Sonnet，WebSearch 6 次；突破口是 **Discogs 公開 API（curl，不 403）的 release notes／credits** 與 A-Sound 的蒙古文 Last.fm 藝人維基。研究稿 `desc-tools/batches/research/sd-hold-6-a.json`，必查四項逐項寫進 notes。**救回 4、留置 0**（照協調端指示，不再留置）。

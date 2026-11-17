@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s31：sd-056、sd-057 上線（60 張，無留置）
+
+- **結果**：「其餘」組。sd-056 上線 30（Armando、Arpanet、Art Blakey 9、Art Ensemble of Chicago、Grumiaux、Rubinstein、O'Farrill、Astral Engineering、ASYLUM、At the Drive-In、Yupanqui、Ataraxia、Atrium Carceri 2、Attrition、Audio Active、Augustus Pablo、AUX 88 4、B-Side & Philanthrope）；sd-057 上線 30（B.T. Express、Baby Keem、Bananarians、Barrington Levy 5、Barry White、Bcalm、Beatrice Rana、Beefeater、Ben Frost 3、Wuorinen、Bennie Wallace 2、Benny Green 2、Parmegiani、Betty Wright、Biff Bang Pow!、Big Bag、Big John Patton 6）。
+- **主線補查**：14 張（Bananarians 由三塊 thin 以 disk union 文案與前團員回憶救回；Bcalm 以 Lofi Girl 官方 Bandcamp 薄寫；ASYLUM、AUX 88、Bennie Wallace、Benny Green、Fortitude III 等）；Big Bag、Astral Engineering 照協調端裁定薄寫上線。
+- **審稿**：sd-056 改 33 處（多為第二句補《盤名》與壓字數；Astral 刪廠牌自封「chillout 經典」、Ataraxia 刪無出處的流通說法、Pablo 鉤子避封面字眼），sd-057 改 20 處（單一出處去「常被」7 張、Bcalm 鉤子改用客席、Bananarians 刪 2010 完整版）。研究層糾正舊稿：Roots & Herbs 六首全為 Shorter、Attrition 非遊戲配樂、Ataraxia 是日本團、Lineage 是 Blue Note。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-056/057.json,review-sd-056/057.json}`、`desc-tools/batches/{cards,research,output}/sd-056*、sd-057*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題；鉤子加權 ≤50、同批前四字互異、無軌序／曲長／盤號。WebSearch 約 102 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s30：sd-055 上線 30、sd-hold-6 救回 4、sd-fix-1 張露卡改掛名張璐
 
 - **結果**：sd-055（其餘組 Alain Bashung … Arlo Parks）上線 30、無留置；sd-hold-6（sd-047／054 留置的藤井貞泰、A-Sound、99.99、Akal Dub）4 張全上線，留置清空；sd-fix-1：張露《繁星點點 張露》改掛名**張璐《繁星點點》**（年份 1977、曲風 pop、封面換 Discogs 33707097 LP 原版），delayde《finding solitude》薄寫上線。
