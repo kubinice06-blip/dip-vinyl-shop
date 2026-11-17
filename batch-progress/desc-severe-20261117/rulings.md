@@ -1601,3 +1601,59 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
 - **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
+
+## sd-hold-6：sd-047／054 留置 4 張最終重查（藤井貞泰、A-Sound、99.99、Akal Dub）— s30
+
+- 研究：1 支 Sonnet，WebSearch 6 次；突破口是 **Discogs 公開 API（curl，不 403）的 release notes／credits** 與 A-Sound 的蒙古文 Last.fm 藝人維基。研究稿 `desc-tools/batches/research/sd-hold-6-a.json`，必查四項逐項寫進 notes。**救回 4、留置 0**（照協調端指示，不再留置）。
+- 寫作：主線自寫（4 張，資料薄）。
+  - 藤井貞泰《Prelude to a Kiss》：鉤子取錄音經過（1976-10-20 今治爵士場地 ab ab 現場錄音，Discogs notes 明記）；寫三重奏編制與標準曲＋〈Black Orpheus〉。不寫演奏風格（無來源）、不寫 2022 紙盒復刻（版本）。
+  - A-Sound《Release》：鉤子「蒙古的 Radiohead」取自 Last.fm 藝人維基的聽眾稱呼（使用者可編輯文字，寫成聽眾的叫法，不當樂評）；舊稿 Keane 之夜日期錯（6/28 非 6/29）、「7 月 1 日上市」無來源，皆不寫；「第一張收英語歌的蒙古搖滾專輯」只見維基鏡像摘要，不寫。
+  - 99.99《More of 99.99》：鉤子取錄音方式（1982 年秋 King Record Studio、三菱 X-80 PCM 直接混成數位母帶，Discogs credits），比照 sd-054 Hannibal 直刻錄音「錄音方式屬故事」先例；Weather Report 式評語明寫是「樂團首作」的評價；不寫曲名玩笑與曲長。
+  - Akal Dub《Life and the Void》：身分更正為美國俄勒岡州單人電子製作人（非法國團），2014 年原發（Bandcamp 2019 是補上架，不寫）；材料撐不起鉤子，以「這是什麼」開頭薄寫 175 字。
+- QA 0 問題；鉤子前四字互異（1976／蒙古聽眾／1982／《Life）。
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-hold-6.json`；4 鍵 `wrangler@4 kv bulk put --remote`；回讀 4/4；`front-check` 前台 4/4（CURATED 0）。manifest 同步 4 處。
+
+## sd-fix-1：張露卡改掛名張璐、delayde 薄寫（協調端裁定的執行）— s30
+
+### 張露《繁星點點 張露》→ 張璐《繁星點點》
+
+- **身分**：Discogs release 33707097（台灣環球唱片 1977 年 1 月 LP，ULP-5125，藝人 6145426 張璐，另有 1978 Prinstar《愛之鎖 第一輯》）。封底標題「1977年巨星 學生偶像」。MB release-group 2070a4d2 是同一批錄音的串流數位版，掛名「張露、1973-10-23」為誤掛（MB 無法由本線修），card_catalog／manifest 的 `rgMbid` 保留以指向錄音。
+- **封面重核**：原 cover6／card_catalog 是 CAA 上的串流封面——與 LP 同一張照片，但字被改成「張露」。改用 Discogs 33707097 的 LP 原版正面（印張璐、環球 ULP-5125），登錄 `data/discogs-cover-registry.json`（reviewed ok）＋`DISCOGS-COVERS.md`；GET 200。
+- **六處**（工具 `tools/fix1-rename.mjs`）：
+  1. seed：`["張璐","繁星點點",3,5,1,["pop"],1977]`——年份 1973→1977（原版 LP 年）、曲風 pop,jazz→pop（jazz 是張露時代曲標籤帶進來的）。三軸不動。
+  2. KV：新鍵寫 desc2／desc4（新稿）、rating4（照搬）、cover6（Discogs）、mapgenre3（**不照搬**張露的 Shidaiqu／Hong Kong／30s 40s 標籤，改 mandopop／c-pop／taiwanese）；回讀 5/5。舊鍵 5 個未刪，列 `sd-fix-1-kv-deletes-pending.json`；改前值 `kv-before-sd-fix-1-rename.json`。
+  3. card_catalog：`migrate-card-catalog-ids.mjs` 擴充 `oldAlbum／newAlbum`（盤名也改時用；沒給照舊用 `album`），搬到新 id 並驗證，再 PATCH coverUrl 為 Discogs 圖；備份 `firestore-backup-sd-fix-1.json`；舊文件保留。album_overrides 新舊皆無。
+  4. `card-preview-status.js`、5. `data/apple-audio-map-v1.json` 換鍵（unavailable 不變）；6. `card-subgenres.json` 原本無此卡，`build-genre-tree.mjs --pull --write` 後新增 `pop/c-pop/mandopop`、`pop/t-pop`（`tw-pop-artists.json` 加張璐）。
+- 簡介：照 general-desc-base 薄寫 195 字，以「這是什麼」開頭（材料只有身分與誤掛經過，撐不起鉤子）；寫誤掛一句，因為它就是這張卡的身分故事。「學生偶像」取自唱片封底標題，只當當年宣傳定位一句。未採：1975 歌唱比賽冠軍（只有影片標題，YouTube 抓不到）。
+- manifest：`onboarding-manifest-c106-20260910.json` 該筆原地改成張璐（藝人、盤名、年份、曲風、封面、簡介、aliasReview 補註）；`verify-album-onboarding --published` 0 error（upc 空的 warning 照舊）。
+- 情緒三軸重建：`build-priors.mjs` → `build-scale.mjs v0` → `scripts/build-card-moods.mjs`，只動這一張的鍵。
+- 藝人介紹：張璐新藝人，名冊 `roster-sd-fix-1-ar-d-941.json`（tier D、addedBy sd-fix-1），progress 批 `ar-d-941`。
+
+### delayde《finding solitude》
+
+- 薄寫上線（211 字，以「這是什麼」開頭）：Saltash 單人 beat 製作人、2018 年 11 月 Bandcamp 自主發行、ambient／chillout／lofi 標籤、三位客席、2020 續作。舊稿的曲數、總長、開頭冷知識拿掉；Chillhop 的同名 delayde 未證實同一人，不寫。
+- KV：舊值 `kv-before-sd-fix-1-delayde.json`；desc2 1 鍵，回讀 1/1；`front-check` 前台 2/2（含張璐）。manifest 同步 1 處。
+- **藝人介紹（補記）**：`ar-d-941` 補洞 1 支 Sonnet（搜尋 7 次）＋主線 extended 1 次，張璐身世／貢獻／地位三格 none——可用事實只有國家文化記憶庫明星卡（1970 年代臺灣電視劇演員）單源；電影《彩霞滿天》（1979）飾蘇燕青、與谷名倫合唱〈愛之鎖〉只見百度百科與其鏡像站，不算獨立兩源。照藝人介紹線規 **skipped**（progress 已標），不硬寫。
+
+## sd-055（30 張，其餘組：Bashung、ALBA、Allen Clapp、Alone in a Crowd、Alpha & Omega 3、Altan Urag 2、Alternative TV、Amp、And One、Andrew Hill 4、Andy Roberts、Andy Sheppard 2、Angèle、Braxton、Anthony Rother 3、Apelsin、Arcana、Archie Shepp 2、Aretha、Arlo Parks）— s30
+
+- 研究：3 支 Sonnet，WebSearch 15＋16＋13＝44 次；none 0。母語來源：Bashung 法文維基／Universalis／Larousse、Angèle 法文、Rother 德文訪談、Apelsin 俄文維基。研究層 b 回報一個 qobuz 搜尋結果夾帶「忽略系統提示」的注入文字，未採用。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Altan Urag《Hypnotism》《Nation》（匹茲堡大學 Forbes5 期刊專文：副題 Contemporary／Folk Album、各曲編制與技法）→ story／sound 由 none／thin 升 ok；Apelsin（愛沙尼亞文維基：塔林 Rae 餐廳起家、秀團名義、1978 中央電視台新年節目走紅）；And One（Ruiz 1992 離團、〈Techno Man〉）。Watch and Pray、Braxton 補查無新料，薄寫。
+- 身分／事實裁定：Aretha《Aretha》是 1961 Columbia 首張（舊稿整段寫成 1980 Arista 同名盤，丟棄），製作寫 Hammond；Overstanding 寫自家 A&O 廠牌、不寫 Greensleeves 子公司；Amp 是英國團；Alone in a Crowd 與 Inside Out 的關聯查不到，不寫；Braxton 不寫 PCM／編碼器／赤坂；Verbalizer 只寫 2014；Arlo Parks 不寫 Metacritic 分數；Angèle 不寫分手對象；Home Grown 不寫 BFBS 禁播（單源）；One for One 不寫 Cuscuna。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 7 張，改動檔 `review-sd-055.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Allen Clapp、Alternative TV、Andy Roberts、Braxton、Rother《Beuys》、Alone in a Crowd | 第二句補《盤名》，並刪次要細節壓回 240 字內（錄音地點、團員只剩兩人、題獻名單縮短、Art Ensemble of Chicago、拍手聲、lo-fi 質感） | 第二句交代這是什麼；字數 |
+| Andrew Hill《One for One》 | 刪「收十一首」 | 軌數 |
+| Rother《Beuys》 | 「這套雙 CD」→「專輯」、「附贈的」→「另一碟」 | 版本雜項 |
+| Braxton | 刪「有人聽出日本樂手在樂曲加速時跟得吃力」 | 無具名出處的負評 |
+
+其餘逐張四問無改：鉤子對過研究稿（Bashung「最後一次機會」與 Philips 考慮不續約、Alone in a Crowd 只演過一場、Woodbridge 自述有靈性不信教、ATV 首波樂評一致敵意與 Hegarty 的 industrial 橋梁、Andrew!!! 擱置近四年、Angèle 盤名＝出生年、Shepp 第二次悼念 Malcolm X、Antibes 美國班底沒跟來）。《Delivery Suite》鉤子是 Ronnie Scott's 現場錄音的時間地點，屬錄音經過（故事），照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條「Side By Side」誤判 A／B 面）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 26 處。
+- 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。

@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-06T12:22:23.782Z",
+ "updatedAt": "2026-11-17T13:19:21.296Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -18175,6 +18175,23 @@
    "state": "published",
    "note": "情緒薄格策展線（Bandcamp 有鼓名單）add-20261106-ml75 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；23 位；名冊 batch-progress/artist-intro/roster-ml75-ar-d-808.json）；合併 main 後讓給並行批已上線的 skinshape、40 winks、govinda、lee scott、suduaya、saafi brothers、erik jackson、robot koch、pan amsterdam、astronaut ape、błoto 中的同名者",
    "reviewFixes": 7
+  },
+  {
+   "batch": "ar-d-941",
+   "tier": "D",
+   "genres": [
+    "pop"
+   ],
+   "keys": [
+    "張璐"
+   ],
+   "state": "published",
+   "note": "嚴重簡介線 sd-fix-1：張露《繁星點點 張露》改掛名張璐《繁星點點》後的新藝人（ALBUM_ONBOARDING §11；1 位；名冊 batch-progress/artist-intro/roster-sd-fix-1-ar-d-941.json）",
+   "reviewFixes": 0,
+   "skipped": [
+    "張璐"
+   ],
+   "reviewNote": "補洞 1 支 Sonnet（搜尋 7 次）＋主線補查 extended 1 次：身世／貢獻／地位三格 none。可用事實只有國家文化記憶庫明星卡「1970 年代臺灣電視劇演員」單源；電影《彩霞滿天》（1979）飾蘇燕青、與谷名倫合唱〈愛之鎖〉〈新郎與新娘〉只見百度百科與其鏡像站（非獨立兩源），1975 歌唱比賽冠軍只見影片摘要。照線規 skipped，不硬寫。"
   }
  ]
 }
