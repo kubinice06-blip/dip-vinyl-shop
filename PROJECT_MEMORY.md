@@ -9,6 +9,21 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-021/022.json,review-sd-021/022.json}`、`desc-tools/batches/{cards,research,output}/sd-021*、sd-022*`、onboarding manifest 57 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
 
+### 2026-11-17｜dip-vinyl-shop｜sd-hook-2：sd-008～014 已上線一般卡補開頭鉤子（203 張）
+
+- **結果**：sd-008～014 已上線卡 203 張補上鉤子開頭、第二句改講這是什麼唱片，全數上線；sd-hold-2 救回的 7 張上線時已有鉤子，跳過。sd-001～014 的鉤子至此補齊。
+- **做法**：不重做研究；6 支 Opus 照 `prompt-hook.md` 寫，主線逐張審 203 張、改 10 處（最重要：陳小霞《老翅膀》補鉤子時把金曲獎誤掛到前作，已更正；另去推論、去雜項鉤子、補回鉤子沒接上的歌名），逐條在 `rulings.md`。
+- **教訓**：子代理共用 scratchpad 根目錄會互相覆寫暫存腳本，派工要指定子目錄；審稿改動要等該組交件後再套，否則會被最後一次覆寫蓋掉。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,tools/sd.mjs,kv-before-sd-hook-2.json,review-sd-hook-2.json}`、`desc-tools/batches/cards/sd-hook-2-cards.json`、`desc-tools/batches/output/sd-hook-2-out-{1..6}.json`、onboarding manifest 203 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2＋desc4 406 鍵逐字回讀 406/406 一致；`front-check` 前台 203/203 新稿、CURATED 0；`sd.mjs qa` 鉤子加權 ≤50、全批前四字互異、無軌序／曲長／盤號（誤報為日文盤名與曲名）；新增數字與外文專名逐張比對研究稿無越界。
+
+### 2026-11-17｜dip-vinyl-shop｜頂點卡另一套：不用鉤子、講為何能是頂點
+
+- **店主**：「頂點卡是另外一套，要告訴玩家為何他可以是頂點，所以側重於介紹歷史定位、特殊之處。」回答「701 張頂點卡要不要也補鉤子」→ 不補。
+- **三套並存**：一般卡卡牌版（`general-desc-base.md`，開頭鉤子）／頂點卡（`apex-desc-base.md`，不用鉤子，第一句講歷史定位或特殊之處）／門市版（`SHOP_DESC_RULES.md`，不用鉤子）。
+- **改動**：`desc-tools/prompts/apex-desc-base.md` 開頭加店主原話、「一般卡照 writer-base」改指 `general-desc-base.md`；`general-desc-base.md` 適用範圍註明頂點卡另一套。
+- **驗證**：純文件改動，無 KV／seed 變更。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s8：sd-015、sd-016、sd-hold-2 上線（66 張，留置 1）
 
 - **結果**：sd-015 上線 30（無留置，第一批新版鉤子開頭）；sd-016 上線 29（留置張露《繁星點點 張露》，只查到發行日）；sd-hold-2 重查 sd-009～014 的 7 張留置卡，**7 張全數救回上線**，sd-009～014 留置清空。
