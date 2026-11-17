@@ -3,7 +3,11 @@
 import fs from 'node:fs';
 const D = 'batch-progress/desc-severe-20261117';
 const cjk = v => /[぀-ヿ㐀-鿿豈-﫿가-힯]/.test(String(v || ''));
-const tri = JSON.parse(fs.readFileSync(D + '/triage.json', 'utf8')).filter(x => x.grade === 'severe');
+// locked.json：第 0 步收尾前就先開工的批（sd-001、sd-002 於 066–072 等 CJK 分片判完時鎖定），固定不動，其餘從下一號起切
+const locked = fs.existsSync(D + '/locked.json') ? JSON.parse(fs.readFileSync(D + '/locked.json', 'utf8')) : {};
+const lockedKeys = new Set(Object.values(locked).flat());
+const triAll = JSON.parse(fs.readFileSync(D + '/triage.json', 'utf8'));
+const tri = triAll.filter(x => x.grade === 'severe' && !lockedKeys.has(x.k));
 const cls = x => cjk(x.artist) || cjk(x.album) ? 0 : (x.classic || 0) >= 4 ? 1 : 2;
 const label = ['中日韓台', '經典度≥4', '其餘'];
 const by = new Map();
@@ -11,12 +15,14 @@ for (const x of tri) { const c = cls(x), a = x.artist.toLowerCase(); const g = b
 const groups = [...by.values()].sort((p, q) => p.c - q.c || q.max - p.max || (p.a < q.a ? -1 : 1));
 const order = groups.flatMap(g => g.rows.sort((p, q) => (q.classic || 0) - (p.classic || 0) || (p.album < q.album ? -1 : 1)));
 const out = {}, rows = [];
-for (let i = 0, n = 1; i < order.length; i += 30, n++) {
+const tmap = new Map(triAll.map(x => [x.k, x]));
+for (const [name, ks] of Object.entries(locked)) { out[name] = ks; const part = ks.map(k => tmap.get(k)); rows.push(`| ${name} | ${[...new Set(part.map(cls))].map(c => label[c]).join('＋')}（${part[0].artist} … ${part[part.length - 1].artist}） | ${part.length} | | |`); }
+for (let i = 0, n = Object.keys(locked).length + 1; i < order.length; i += 30, n++) {
   const part = order.slice(i, i + 30), name = 'sd-' + String(n).padStart(3, '0');
   out[name] = part.map(x => x.k);
   const cs = [...new Set(part.map(cls))].map(c => label[c]).join('＋');
   rows.push(`| ${name} | ${cs}（${part[0].artist} … ${part[part.length - 1].artist}） | ${part.length} | | |`);
 }
-console.log(`severe ${order.length} 張 → ${rows.length} 批；中日韓台 ${order.filter(x => cls(x) === 0).length}、經典度≥4 ${order.filter(x => cls(x) === 1).length}、其餘 ${order.filter(x => cls(x) === 2).length}`);
+console.log(`severe ${order.length + lockedKeys.size} 張（含鎖定 ${lockedKeys.size}） → ${rows.length} 批；中日韓台 ${order.filter(x => cls(x) === 0).length}、經典度≥4 ${order.filter(x => cls(x) === 1).length}、其餘 ${order.filter(x => cls(x) === 2).length}`);
 if (process.argv.includes('--write')) { fs.writeFileSync(D + '/batches.json', JSON.stringify(out, null, 1)); fs.writeFileSync(D + '/batch-table.md', rows.join('\n') + '\n'); console.log('已寫 batches.json、batch-table.md'); }
 else console.log(rows.slice(0, 5).join('\n'));
