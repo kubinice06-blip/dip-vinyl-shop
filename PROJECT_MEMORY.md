@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s40：sd-074、sd-075 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-074 上線 30（Jimmy Smith 7、jinsang 3、Kühn、Chambers、Joe Lee Wilson、Lovano 2、Calderazzo 3、Jogging House 2、Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）；sd-075 上線 30（Neptune、Lewis & Jones、John Russell、Scofield 2、Zorn、Toivanen、Kraus、Cortés、Léandre／Grimal、Juaneco、Judge、Silvano、Kadel 2、JUN SKY WALKER(S)、Byles、Delgado、Mance、Murvin、Justice、Hipp、Noetinger 2、Jónsi & Alex、Kangaroo、Kareem Ali、KaS Product、Gentile、Katra Turana）。資料薄的（jinsang、Holt《My Desire》、Kareem Ali、Kangaroo）照 delayde 前例薄寫上線。
+- **主線補查**（Discogs 公開 API notes／credits 為主、Neptune 官網）：Jimmy Smith 3 張錄音經過、Calderazzo 3 張製作與編制、Neptune 和樂器師範團、Lewis & Jones 東芝直刻、Kraus 確認是 Phoenix／Capriccio 的 Concerto Köln 版、Katra Turana credits 證實客串名單等 22 張。審稿改 sd-074 21 處（jinsang 頁面雜項鉤子、軌序、補《盤名》）、sd-075 45 處（補《盤名》後壓字數、Kadel 鉤子語病、Lewis 盤名推測）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-074.json,review-sd-075.json,kv-before-sd-074.json,kv-before-sd-075.json}`、`desc-tools/batches/{cards,research,output}/sd-07{4,5}*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 98 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s35：sd-064、sd-065 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-064 上線 30（Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Gillespie、Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Wilkerson、Donald Byrd 8、Doodle、Doris Norton）；sd-065 上線 30（Norwood、DOUBLE、Alimantado、Dr. John、Dr. Strangely Strange、Dudley Perkins、Duke Pearson 3、Dump、Goykovich 2、dynArec 2、Earl Cunningham、Ectogram、Eddie Daniels、Edna Gallmon Cooke 3、Candles of Vision、El Hombre Trajeado、Elaheh、ELEH、Elmo Hope、Elton Dean 2、Elvin Jones 3）。資料薄的照 delayde 前例薄寫上線。
