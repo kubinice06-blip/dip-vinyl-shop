@@ -1040,3 +1040,27 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-035.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0；開工前預查 sd-035／036 共 60 張皆 KV-HIT）。
 - onboarding manifest 同步 29 處。
+
+## sd-036（30 張，經典度≥4：Horace Silver 5、Tapscott、Alizadeh／Omoumi、Howard Riley、Hugar、Humpback Oak、I Mean Us 2、IAM、Kalniņš、Immanu El、In Spe、Indochine、Infiniti、Inoyama Land、Inside Out、Instinct、Integrity、Inti-Illimani、Irish Coffee、Isis、IU、Jack、Jack Wilson、Jackie McLean 2）— s20
+
+- 研究：3 支 Sonnet，WebSearch 10＋17＋16＝43 次；無 none，Instinct 三塊 thin。
+- **主線補查**（WebSearch 7 次，含 extended 2；WebFetch 6 次，facts 標【主線補查】）：I Mean Us《Into Innerverse》（Blow 專訪：朋友在《OST》發片專場當天失蹤、鳳小岳參與〈Unicode〉、韓立康發燒熬夜混音、〈24 Years Old of You〉波麗露三拍子與第 11 屆金音最佳另類流行歌曲、真人管弦 → story／sound ok；研究層「鳳小岳查無關聯」被推翻）；New and Old Gospel（Hentoff 內頁文：兩人首次合奏、商定 Coleman 專吹小號、〈Lifeline〉從出生到死亡 → story ok）；Infiniti（Tresor／Bleep 介紹、Mixmag 必備底特律 techno）；Inoyama Land（Newtone：TRANSONIC 1998；變形菌展與本盤關係無來源，不寫）；Immanu El（And The Sound 2007 年 8 月）；Instinct（GMM Music 2007、Bloggang 樂評摘要：比 Girl 時期重、快中板為主）。Humpback Oak「父親過世」Last.fm 頁載不出，仍不寫；Alizadeh 不寫年份。
+- 身分／事實裁定：Alizadeh／Omoumi 年份 1987／2001 兩說不寫；Kalniņš 終樂章寫中性的「首演後改成純器樂」；Indochine 製作照法維基、不寫 Hervé Lauzanne；Jack 製作人採 Peter Walsh；Irish Coffee 壓片數兩說不寫；Integrity 不寫「只出 CD」；Silver《Serenade》不寫 Billy Cobham 打哪幾首。
+
+### 主線審稿（逐張 30 張，改 6 處，改動檔 `review-sd-036.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Instinct《อินเนอร์》 | 「Palm 與鍵盤手 Por 都出身 Girl」→「Palm 曾是 Girl 成員，鍵盤由 Por 擔綱」 | Por 出身 Girl 只有搜尋摘要 |
+| Integrity、Tapscott | 「常被」→「被」 | 單一出處 |
+| Jacknife | 「六重奏有 Tolliver 與 Morgan 兩支小號」→「陣容有 Tolliver、Morgan 等人」 | 同場與否未核實 |
+| IAM | 刪「乾脆」 | 去口語 |
+| Inoyama Land | 刪「錄音到 1998 年才陸續出版」 | 無出處 |
+
+其餘逐張四問無改：逐條對過研究稿（Gitler 內頁文的加奏、經典五重奏唯一現場、Blue Note「短命的強力陣容」、Kalniņš 2xBBM 被迫停演與文化經典、Indochine「一半法國人以為完了」與鑽石、Integrity「會毀了硬核」、IU 閒聊是盾牌、Jack 談結束含酒局、Irish Coffee 國外無人注意、AllMusic 五旬節輪唱節奏皆有出處）。30 張鉤子前四字互異、加權 ≤50；Silver 五張鉤子各取不同材料、無一以他名字開頭。薄寫照收：Instinct 185、Alizadeh／Omoumi、Humpback Oak、Immanu El。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-036.json`；30 張 30 鍵（原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 101 次（研究層 sd-035 44、sd-036 43，主線 14）。

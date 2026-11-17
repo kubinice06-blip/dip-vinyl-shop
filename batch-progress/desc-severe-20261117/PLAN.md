@@ -103,8 +103,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-032 | 經典度≥4（Eliane Elias … Ffa Coffi Pawb） | 30 | | |
 | sd-033 | 經典度≥4（Fin.K.L … Gabinete Caligari） | 30 | | |
 | sd-034 | 經典度≥4（Galliard … Guido Manusardi） | 30 | | |
-| sd-035 | 經典度≥4（Gunnar Graps ja Magnetic Band … Horace Parlan） | 30 | | |
-| sd-036 | 經典度≥4（Horace Silver … Jackie McLean） | 30 | | |
+| sd-035 | 經典度≥4（Gunnar Graps ja Magnetic Band … Horace Parlan） | 30 | s20 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-036 | 經典度≥4（Horace Silver … Jackie McLean） | 30 | s20 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
 | sd-037 | 經典度≥4（Jacky Terrasson … jinsang） | 30 | | |
 | sd-038 | 經典度≥4（JMSN … Junior Ross & The Spears） | 30 | | |
 | sd-039 | 經典度≥4（K. Hand … Larry Young） | 30 | | |

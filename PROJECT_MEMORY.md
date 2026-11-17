@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s20：sd-035、sd-036 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-035 上線 30（Gunnar Graps、Hampel、Csík、Hallucinogen、Mobley、Harold Budd 2、HAT、Hayedeh、Heavenly、Karajan 2、Mwandishi、High Rise 3、Horace Andy、Parlan 等）；sd-036 上線 30（Horace Silver 5、Tapscott、I Mean Us 2、IAM、Kalniņš、Indochine、Infiniti、Inoyama Land、Integrity、Isis、IU、Jackie McLean 2 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
+- **主線補查**：sd-035 補 7 張（Csík 匈牙利維基、High Rise 三張成田宗弘訪談、Heavenly 等），sd-036 補 7 張（I Mean Us《Into Innerverse》Blow 專訪推翻研究層「查無鳳小岳」、New and Old Gospel Hentoff 內頁文、Infiniti、Instinct 等）。
+- **審稿**：sd-035 改 7 處（Horace Andy 鉤子去版本雜項、Parlan 鉤子與 Mobley 撞母題換掉、Hayedeh 刪載體雜項），sd-036 改 6 處（未核實的 Por 出身、Jacknife 同場陣容、單一出處「常被」），逐條在 `rulings.md`。WebSearch 工作階段約 101 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-035/036.json,review-sd-035/036.json}`、`desc-tools/batches/{cards,research,output}/sd-035*、sd-036*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s16：sd-027、sd-028 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-027 上線 30（Bodkin、Bongwater、Boredoms、Born Against、Hmong qeej、Brain Failure、Bread、Brigada Víctor Jara、Budka Suflera、Bunny Wailer、C.O.B.、Canarios、Candido 2、Carl Perkins 等）；sd-028 上線 30（Casiopea 3、Cathedral、Cecil Taylor 2、Cecilia、Celer、Celia Cruz 2、Chacalón 2、Charles Dodge、Mingus、Haden／LMO、Chavela Vargas、Chez Damier／Chez N Trent、Chicane、Chick Corea 等）。**兩批都無留置**。
