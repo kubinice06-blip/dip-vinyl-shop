@@ -1821,3 +1821,25 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-066.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
+
+## sd-067（30 張，其餘：Experimental Audio Research、Bosso & Girotto、Fania All-Stars、Fareed Haque、Fausto、Fila Brazillia 3、Filmmaker、Fin.K.L、Final、Final Stage、Fitz Ambro$e & Ohbliv、Fix、Flatt & Scruggs、Flower Travellin' Band 2、Fluxion、Foje、Forests、Franklin Bruno、Lonberg-Holm & Stephens、Freddie Hubbard 4、Freddie King、Freddie Roach 2、Freeform）— s36
+
+- 研究：3 支 Sonnet，WebSearch 14＋20＋13＝47 次；none 只有 Final Stage（story、sound）、Fix（story、sound）。母語來源：Fin.K.L 韓文、Fausto 葡文（Altamont）、Foje 立陶宛文維基、Fix 愛沙尼亞文維基、Final Stage 越文。
+- **主線補查**（WebSearch 3 次＋WebFetch＋Discogs API，facts 標【主線補查】）：Final Stage《Sân khấu cuối cùng》（HEHEMETAL 首張專輯報導：2004 河內成軍、demo／EP 經過、四首歌的題材、power metal 味；Spirit of Metal 風格）→ 救回；Fix《Värviline maailm》（Discogs credits：班底與編制、小提琴、雙打擊、Silvi Vrait 客席）→ sound 補到 thin；Fausto（Time Out Lisboa：1970 年代為 Orfeu 錄兩張；RTP Callixto 頁核對 José Manuel Nunes／〈Madrugada〉屬 1970 首張 LP，排除）。無留置。
+- 事實裁定：《Here to Stay》寫 1962 年 12 月錄、1976 年首度發行（舊稿「二十三年」錯，卡單 1985 為單張重發年，照卡單年份不動）；Freddie King 不寫榜位；Fania 只寫兩首是洋基球場現場；Fila Brazillia《Jump Leads》不寫 Radiohead 混音、Harold Budd 合作盤；Fluxion 不寫 Echocord（派工詞原寫錯）；FTB《Make Up》不點名鍵盤手、《Anywhere》不寫封面；Fin.K.L 不寫發行日與銷量；Freeform 不寫 Skam／Warp（只見搜尋摘要）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-067.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lonberg-Holm & Stephens《Crackle》 | 「這張收錄」→「《Crackle》收錄」 | QA 無《》 |
+| Freeform《Elastic Speakers》 | 刪「正值 IDM 的高峰期」「〈Ect〉〈Junction〉是常被點名的曲子」 | 皆出自 Discogs 使用者留言，非具名評價；薄寫 166 字 |
+| Forests | 第二句補盤名；刪 Hauste 類型註記與 TikTok 取樣細節壓回 240 | QA 無《》、字數 |
+
+其餘逐張四問無改：FTB《Anywhere》「常被視為遠不只是翻唱盤」出自 Julian Cope《Japrocksampler》；《Make Up》「現場與錄音室從一開始就規劃並陳」有研究稿出處；《Mistral》Art Pepper 與 Hubbard 唯一同場、1980 好萊塢錄音（研究稿 Ocean Way）；《Double Take》隔二十年回 Blue Note（1965《Night of the Cookers》）；Flatt & Scruggs 唯一鄉村榜冠軍；Fin.K.L〈To My Boyfriend〉2021 入選百大名曲（Melon／首爾新聞）；Fausto「過渡之作、第一部大作」（Altamont）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-067.json`；30 張 30 鍵（Fin.K.L 雖 CJK 成員名，卡面藝人與盤名皆非 CJK、原無 desc4，只寫 desc2）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 94 次（研究層 sd-066 42、sd-067 47，主線 5）。
