@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s2：sd-003、sd-004 上線（58 張，留置 2）
+
+- **範圍**：`batch-progress/desc-severe-20261117/PLAN.md` 的 sd-003（Stravinsky 自指、Leo王、伍佰 11 張、P.K.14、No Brain…）與 sd-004（山下洋輔 5 張、川井憲次、平沢進、張國榮、張學友、張惠妹…）。
+- **流程**：研究 3 Sonnet×2 批（WebSearch 51＋44＝95 次）→ 寫作 2 Opus×2 批 → `sd.mjs qa` → 主線逐張審稿（sd-003 改 7 處、sd-004 改 11 處，多為刪單一來源撐起的「常被視為」與雜項）→ KV。
+- **結果**：sd-003 上線 30；sd-004 上線 28，**留置 2**（吉沢元治《Inland Fish》身分年份對不上、妮波寺《Sorry》查無專輯資料，KV 保留舊稿）。
+- **主要檔案**：`desc-tools/batches/{cards,research,output}/sd-00{3,4}*`、`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-00{3,4}.json,kv-before-sd-00{3,4}.json}`、onboarding manifest 58 處（`description.text`）。
+- **驗證**：`kv-token-check` exit 0；KV desc2＋desc4 共 116 鍵 bulk put，回讀 60/60、56/56 一致；`front-check` 前台 30/30、28/28 新稿，無 CURATED 蓋住。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s4：sd-007、sd-008 上線
 
 - **範圍**：sd-007（深町純、渡辺貞夫、滅火器、濁水溪公社等 30 張）、sd-008（珂拉琪、生祥樂隊、益田幹夫、美狂乱、美秀集團、羽田健太郎等 30 張）。研究 3 Sonnet＋寫作 2 Opus＋主線逐張審稿（改 9＋8 處）；WebSearch 共約 118 次。
