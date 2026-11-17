@@ -1028,3 +1028,55 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - 搜尋摘要另有影片稱張璐 1975 年 17 歲獲中國時報與台視合辦全國歌唱比賽冠軍（YouTube 頁 429 抓不到原文，未採）。
 - KV 未寫（兩張皆留置，`sd-hold-5-out-1.json` 只有 hold 列）。
+
+## sd-031（30 張，經典度≥4：Don Pullen、Don Stover、Donald Byrd 3、Dr. Z、Drexciya 2、Dudu Pukwana、Duke Pearson、Dulcimer、Dzeltenie pastnieki、Décima Víctima、E.S.G.、E.T. Mensah、Earth & Stone、Earth Crisis 3、East River Pipe、Ebi 2、Fowlkes、Eddie Palmieri 2、Edna Gallmon Cooke、Eggs、Neubauten、Golha 23、Eliane Elias）— s18
+
+- 研究：3 支 Sonnet，WebSearch 12＋9＋11＝32 次；coverage 無 none。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：E.S.G.《Sailin' da South》（英文維基：Perrion／Priority 首張大廠、J2 錄音、製作人、DJ Screw 版、Billboard 名次；Qobuz：重收前作三首）、Dudu Pukwana《In the Townships》（英文維基：The Manor 兩天錄音、完整編制、Penguin「minor classic」、Bells 評語；Earthworks 再發）、Don Stover《Things in Life》（AllMusic：Lilly Brothers 二十年後首張個人作、Grisman、曲目來源與琴法；Danny Barnes 的啟蒙）、Fowlkes《Black Technosoul》（Apple Music：首張個人全長）。Ebi《Tapesh》波斯文再搜一次無新資料，照研究稿薄寫。
+- 身分／事實裁定：Dulcimer 年份兩說寫「1970 至 1971 年間」；Edna Gallmon Cooke 寫「1960 年代初」；Ebi《Tapesh》寫「1970 年代中期」（維基 1353＝1974，卡單 1973）；Royal Flush 寫 Hancock「最早發行」；Electric Byrd 的 Pascoal 長笛只寫〈Xibaba〉；Dr. Z 不寫製作人名（舊稿 Keyes 製作有誤，實為 Campbell-Lyons）；Mensah 與 Armstrong 同台年份兩說不寫；Golha 寫成廣播節目第 23 集的重發；Eggs 兩篇具名樂評褒貶相反，寫成評價兩極。
+- 第二句沒有盤名的 2 張照收：Drexciya《Grava 4》第二句交代懸疑鉤子的神話，盤名在第三句；E.T. Mensah 第二句講樂團地位，選集在第三句。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-031.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Edna Gallmon Cooke、Neubauten、Electric Byrd、Royal Flush、In the Townships、Wahoo!、Mensah | 「常被視為……」→「被視為……」（7 處） | 各只有單一具名出處（Marovich、Raggett、Huey、AllMusic、Olewnick、Erlewine、Songlines） |
+| Décima Víctima | 第二句「這支……的同名首張專輯」→「《Décima Víctima》是這支……」；刪「人聲空洞卻溫暖；」壓字數 | 補盤名；字數 |
+
+其餘逐張四問無改：逐條對過研究稿（Pullen 四重奏鼓手 Richmond 過世與 Adams 生病、Dr. Z 靈魂三分概念與只賣七八十張、Dzeltenie pastnieki 送審只過三首、Fancy Free 爵士榜第 7、Firestorm 被 Propagandhi 等戲仿、Destroy the Machines 列 metalcore 名盤〔Loudwire、NME〕都有出處）。Dzeltenie pastnieki「四軌家用盤式錄音機」是錄音手法、不是軌序，照收；Eggs「自我意識」不是你我禁詞。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-031.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（寫稿前預查 x-cache 全 KV-HIT，CURATED 0，無待店主處理）。
+- onboarding manifest 同步 27 處。
+
+## sd-032（30 張，經典度≥4：Eliane Elias、Elias Hulk、Schwarzkopf《風流寡婦》、Elton Dean's Ninesense、Elvin Jones 2、Energit、English Teacher、Enslaved、Truffaz 2、Esoteric、Esplendor Geométrico、Even as We Speak、Evoken、Exists、Experience Unlimited、Eyehategod 2、f(x)、F.U.S.E.、Family Fodder、Faramarz Aslani、Farmers Manual、Fast Eddie、Fats Navarro 2、Fermáta 2、Ffa Coffi Pawb）— s18
+
+- 研究：3 支 Sonnet，WebSearch 11＋15＋10＝36 次；coverage 無 none。AllMusic、Discogs、Progarchives 多 403，改用維基轉述、RA、商品頁。
+- **主線補查**（WebSearch 1 次＋WebFetch）：f(x)《Pinocchio》（英文維基：Lee Soo-man 掛名製作、SM Studios 錄音、Jillian Meyers 首次為 f(x) 編舞；韓文 IZM／weiv 搜一次無評論）。其餘 thin（Energit、Evoken、Exists、Fast Eddie、Fermáta 首張）照研究稿薄寫，母語搜尋研究層已做過。
+- 身分／事實裁定：Schwarzkopf 寫成 1962 年 Matačić 全套錄音的精選，不寫盤號；Truffaz 不寫 drum and bass（屬後來的《Revisité》）；Huascaran 山難年份來源矛盾不寫；Faramarz〈آهوی وحشی〉詩人兩說只寫「古典詩句」；Ffa Coffi Pawb 寫 1993 年解散；Exists 不寫 Shah 離團年；Eliane Elias《The Three Americas》年份兩說不寫；Even as We Speak 不寫「唯一一張」；Fats Navarro 不寫〈Double Talk〉歸屬哪一集。
+- 第二句沒有盤名的 2 張照收：Energit 第二句交代組團（鉤子講轉向），Esplendor Geométrico 第二句交代樂團（鉤子是團員說法），盤名都在第三句。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 23 處，改動檔 `review-sd-032.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Exists | 「以 Exist 之名推出首張專輯《Exist》」→「以當時的團名 Exist 推出首張專輯《Exist》」；刪「團員多半還在念書。」 | 團名 1997 年才加 s；字數 |
+| Eyehategod《Confederacy》 | 「常被視為《Take as Needed for Pain》的續集」→「聽起來像……的續集」 | 只有英文維基一處 |
+| Eyehategod《In the Name of Suffering》 | 第二句補盤名；「1990 年在路易斯安那州自錄」→「1990 年發行」；刪 Melvins 對照 | 補盤名；鉤子已講自錄；字數 |
+| Farmers Manual | 刪「常被視為 glitch 電子樂的代表作之一」→ 改寫 Boomkat 的「預告日後前衛路線的怪異曲子」 | 只有 Boomkat 單一商品頁 |
+| Fast Eddie | 〈Yo Yo Get Funky〉改稱「他的 hip house 代表曲」；刪「早年當電台 DJ」 | 研究稿未證實該曲收在本盤；字數 |
+| Fermáta《Fermáta》 | 刪「作曲署名兩人並列」 | credit 雜項 |
+| Fermáta《Huascaran》 | 「常被視為」→「被視為」 | 只有 TASR 一處 |
+| Faramarz Aslani | 「擅長 nuevo flamenco 的 Armik」→「後來以 nuevo flamenco 聞名的 Armik」 | 那是他 1981 年移居洛杉磯後的風格 |
+| Ninesense | 「〈Forsoothe〉慢而哀傷，後半像一組哀悼組曲」→「……；唱片後半像一組哀悼組曲」；補盤名；刪南非樂手子句與「原始」 | 主詞錯接（哀悼組曲是 B 面）；字數 |
+| Energit | 鉤子「屢遭演出禁令後……從藍調搖滾轉向爵士搖滾」→「屢遭演出禁令、團員出走之後……轉向了爵士搖滾」 | 禁令致團員出走，轉向在 1974 年 Viklický 加入後 |
+| Elvin Jones《Lighthouse》 | 第二句補盤名；刪「像三個年輕人跟一位大師同台」「後 Coltrane 世代的」；「毫無節制地」→「放開」 | 補盤名；字數 |
+
+其餘逐張四問無改：逐條對過研究稿（English Teacher 盤名來自 Kirkstall Road、Elvin Jones 四十五歲生日與駐場最後一晚、Enslaved 半年內在 Grieghallen 錄第二張、Esoteric 貝斯手錄前離團、Elias Hulk 德國賣得比英國多、Family Fodder 改編《冬之旅》與 The Wire 清單、Farmers Manual 被 Mego 主動找上都有出處）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-032.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 78 次（研究層 sd-031 32、sd-032 36，主線 10，含 sd-hold-5 的 4 次）。
