@@ -87,8 +87,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-018 | 中日韓台（竇唯 … 閃靈） | 30 | s9 | ✅ 上線 28（前台 28；花生隊長《Oh My God》、美空ひばり《ひばりの渡り鳥だよ》留置） |
 | sd-019 | 中日韓台（閃靈 … 델리스파이스） | 30 | | |
 | sd-020 | 中日韓台＋經典度≥4（델리스파이스 … Agnostic Front） | 30 | | |
-| sd-021 | 經典度≥4（Agnostic Front … Girls' Generation） | 30 | | |
-| sd-022 | 經典度≥4（Gorilla Biscuits … Shankar Jaikishan） | 30 | | |
+| sd-021 | 經典度≥4（Agnostic Front … Girls' Generation） | 30 | s12 | ✅ 上線 30（前台 30；無留置；主線補查 13 張） |
+| sd-022 | 經典度≥4（Gorilla Biscuits … Shankar Jaikishan） | 30 | s12 | ✅ 上線 30（前台 30；無留置；CURATED 覆蓋 0） |
 | sd-023 | 經典度≥4（Shankar Jaikishan … 14 Iced Bears） | 30 | | |
 | sd-024 | 經典度≥4（2NE1 … Andrew Hill） | 30 | | |
 | sd-025 | 經典度≥4（Androids of Mu … Bappi Lahiri） | 30 | | |

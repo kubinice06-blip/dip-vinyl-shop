@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s12：sd-021、sd-022 上線（60 張，無留置）
+
+- **結果**：第一批非 CJK、經典度≥4 的卡。sd-021 上線 30（硬核、Bashung、Autechre、Michelangeli、G.I.S.M.／Gauze、少女時代等）；sd-022 上線 30（Irakere、Kult、Los Prisioneros、Nyman、Shajarian、底特律 techno、Robert Johnson、寶萊塢《Aradhana》《Sangam》等）。**兩批都無留置**。
+- **CURATED_DESCS**：60 張開工前與上線後都跑 `front-check`，前台全數供新稿，無被 worker CURATED 蓋住的卡，「待店主處理」無新增。
+- **主線補查**：sd-021 研究層只搜 38 次、thin 多，主線補 13 張（Seant、Michelangeli 2、Bleu pétrole、Bastard、Bikini Kill、Carsick Cars、Paredes、D'eux、Gilels、Tears、G.I.S.M.、Gauze）；sd-022 派工詞加「實際用 15 次以上」後 thin 降到 6，主線補 Shajarian、Irakere《Chekeré son》、Hoola Bandoola。
+- **審稿**：sd-021 改 15 處、sd-022 改 28 處（多為第二句改以《盤名》起句後壓字數、單一出處去「常被」、刪版本／銷量雜項），逐條在 `rulings.md`。WebSearch 工作階段約 111 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-021/022.json,review-sd-021/022.json}`、`desc-tools/batches/{cards,research,output}/sd-021*、sd-022*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜sd-hook-2：sd-008～014 已上線一般卡補開頭鉤子（203 張）
 
 - **結果**：sd-008～014 已上線卡 203 張補上鉤子開頭、第二句改講這是什麼唱片，全數上線；sd-hold-2 救回的 7 張上線時已有鉤子，跳過。sd-001～014 的鉤子至此補齊。
