@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線收尾：2963 張全數上線
+
+- **結果**：severe 2963 張（sd-001～099＋留置重查 sd-hold-1～6＋sd-fix-1）全數重寫上線，front-check 全對、CURATED 覆蓋 0、最終留置 0；sd-001～014 補開頭鉤子 412 張。52 個工作階段，PR 約 #462～#533。
+- **裁定**：查不到資料的卡拿掉雜項薄寫上線；張露卡改掛名張璐（張璐藝人介紹素材不足 skipped）。
+- **改動**：`batch-progress/desc-severe-20261117/PLAN.md` 頂端收尾小結。
+- **待店主**：rewrite 級 13,711 張是否接著做；Newtone 506 張何時開。
+- **驗證**：PLAN 分批表 99＋8 列全 ✅，上線數合計 2963＝triage severe 數。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s46：sd-086、sd-087 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-086 上線 30（Rita Reys、Robert Calvert 3、Robyn、Rod Modell 3、Ron Carter 4、Ronnie Cuber、Ronnie Foster 4、Rorschach / Neanderthal、Rothko、Roy Davis Jr.、Rudolph Johnson、Rudra、Ruja、RYKARD、池田亮司、Saccharine Trust、Salada de Frutas、Sammy Dread、Sandra Phillips、Sasha & John Digweed）；sd-087 上線 30（Sasha & John Digweed、Scream、Sean Deason、Sean Nicholas Savage、SebastiAn、Sedibus、Selda Bağcan、Sephira、Servant、SEVENTEEN 3、Shahram Shabpareh、Shape of the Rain、Shelter、Sherman Irby 2、Shintaro Quintet、Shirley & Dolly Collins、Shirley Scott、Shudder to Think、Siavash Ghomayshi、Silicon Scally 5、Simon Raymonde、Singers 3、Skyray）。RYKARD、《Pin Point》、《Deyar》、《Machine Bias》等照 delayde 前例薄寫上線。
