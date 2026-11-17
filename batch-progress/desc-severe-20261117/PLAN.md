@@ -165,8 +165,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-091 | 其餘（The Comes … The Icemen） | 30 | | |
 | sd-092 | 其餘（The II Generation … THE SQUARE） | 30 | | |
 | sd-093 | 其餘（THE SQUARE … Third Quadrant） | 30 | | |
-| sd-094 | 其餘（This Heat … Uncle Charlie Osborne） | 30 | | |
-| sd-095 | 其餘（Urs Voerkel, Peter K. Frey, Paul Lovens … Wha-ha-ha） | 30 | | |
+| sd-094 | 其餘（This Heat … Uncle Charlie Osborne） | 30 | s50 | ✅ 上線 30（前台 30；無留置；主線補查 Todd Terry、Ultima Thule、Titiek Puspa 等 8 張（Discogs API）；Titiek Puspa、Tånk 等 7 張薄寫；CURATED 0） |
+| sd-095 | 其餘（Urs Voerkel, Peter K. Frey, Paul Lovens … Wha-ha-ha） | 30 | s50 | ✅ 上線 30（前台 30；無留置；主線補查 Wha-ha-ha、Vitamiin、Ponomarev 等 9 張（Discogs API）；Trường Sơn 4 等 5 張薄寫；CURATED 0） |
 | sd-096 | 其餘（White Heaven … Zoviet France） | 30 | | |
 | sd-097 | 其餘（Zoviet France … Gare du Nord） | 30 | | |
 | sd-098 | 其餘（Geoff Mann … Raw Deal） | 30 | s52 | ✅ 上線 30（前台 30；無留置；Mach One、Aurex、King General 等薄寫；CURATED 0） |

@@ -2405,3 +2405,53 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-099.json`；23 張 23 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **23/23 一致**；`front-check` **前台 23/23 新稿**（CURATED 0）。
 - onboarding manifest 同步 20 處。
 - 本工作階段 WebSearch 合計約 109 次（研究層 sd-098 48、sd-099 52，主線 9）。
+
+## sd-094（30 張，其餘：This Heat、Tho-So-Aa、Thomas Köner、Thắng、Thủy Triều Đỏ、Tim Hagans 4、Titiek Puspa、Todd Terry、Tom Rainey、Tommy Smith、Tony Tuff、Tony Williams 2、Tosca、Travelling Day、Triston Palma 3、Trovante、Tuscadero、Twisted Science、Tånk、U-Street All Stars、Ulrich Schnauss 2、Ultima Thule、Uncle Charlie Osborne）— s50
+
+- 研究：3 支 Sonnet，WebSearch 14＋12＋15＝41 次；none 有 Titiek Puspa story、Thủy Triều Đỏ sound、Travelling Day story、Schnauss & Munk《Epic》story。
+- **主線補查**（WebSearch 4 次＋Discogs API，facts 標【主線補查】）：Titiek Puspa（Orkes Puspa Sari 伴奏、Robby Amin 對唱、J&B）；Thủy Triều Đỏ（Dihavina＋自家錄音室、prog／heavy metal，越南文搜尋兩次無報導）；Todd Terry《Works》（Torso 化名作品合輯：Royal House、Todd Terry Project、Swan Lake、Orange Lemon、Jungle Brothers 混音）→ what ok；Travelling Day（法國自主發行、trip hop、翻唱〈Riders in the Sky〉與法國童謠）；Ultima Thule（芬蘭 Love Kustannus 發行、三語歌詞本、盤封註記歌唱革命）→ story ok；Trovante（Pedro Osório 製作、Francisco Viana 詞）；Tånk（Brest 1998 年 3–12 月家用多軌錄音、冰島文曲名）；《Epic》（Somewhere Cold 回顧、Discogs 風格）。
+- **薄寫上線不留置**（delayde 前例）：Titiek Puspa、Thủy Triều Đỏ、Tho-So-Aa、Travelling Day、Tånk、Twisted Science、《Epic》。
+- 事實裁定：派工特注三處錯（U-Street All Stars 是芬蘭團；Uncle Charlie Osborne 與 Osborne Brothers 無關；Tosca 廠牌 Studio !K7 非 G-Stone）；This Heat 不寫廠牌與第幾張（ReR／These 兩說）；Todd Terry 卡面 1988、Discogs 1989，正文不寫年份；Tony Tuff 不寫「四貝斯四鼓」；Triston Palma 不寫 Roots Radics、Tony Chin、Ossie Thomas；Köner 不寫「慢速鑼聲」；Schnauss 不寫獻給 Froese、加收曲；Trovante 不寫廠牌（Diapasão／Sassetti 兩說）；Tånk 不斷言盤名指冰島。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-094.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Tony Williams《Tokyo Live》 | 鉤子「連演一週」→「錄下的這幾場」；「常被視為」→「被視為」 | 寫作層從錄音日期推論；Yanow 單一出處 |
+| Ulrich Schnauss《No Further Ahead Than Tomorrow》 | 第二句「這張是」→ 帶盤名，連帶壓縮技術與盤名由來兩句 | 第二句要講這是什麼唱片 |
+| This Heat、Thủy Triều Đỏ、HubSongs、《Epic》 | 「常被視為／列為」→「被視為／列為」 | 單一出處 |
+| Tho-So-Aa | 刪「萊比錫的」 | 研究稿無廠牌所在地 |
+| Thắng | 鉤子盤名加《》 | 第二句「這是」承接鉤子盤名 |
+| Tony Williams《The Story of Neptune》 | 「卻」→「偏偏」 | 語意轉折 |
+
+其餘逐張四問無改：鉤子都對過研究稿（〈Metal〉的金屬雕塑素材、地底礦物質 ambient、芬蘭語極夜、首作不取名、首屆搖滾大會最佳重金屬、重金屬構想變 drum 'n' bass、往自由走、搬不上舞台、兩把小號吹 Hubbard、國宴歌手、四軌拼 house、即興作曲難分、奧斯陸 ECM 工程師、Minott 邀錄、打鼓輕鬆作曲費力、五重奏最後錄音、人聲變唱詞、步調太快、Marley 追思會、加州才知出專輯、厚實嗓音、Festa do Avante、童年事物、環境轉噪音、Brest 十個月、黑人電影配樂、Froese 的建議、德丹合作、愛沙尼亞的事、左手拉提琴九十多歲出首作）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-094.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-095（30 張，其餘：Voerkel／Frey／Lovens、Us3、Valery Ponomarev、Valet、Shotguns 3、Cumbias Chichadélicas、Groove Club 2、Music for Dancefloors、Thai Beat a Go-Go 2、The Crying Princess、Trường Sơn 4、Wounds of Love、Zendooni、Vehicle Flips、Venetian Snares、Vince Staples、Vision of Disorder、Vitamiin、Void Stasis、Voivod、Volcano the Bear、Walter Bishop Jr.、Warzone 2、wave to earth、Wayne Davis、Wha-ha-ha）— s50
+
+- 研究：3 支 Sonnet，WebSearch 12＋14＋15＝41 次；none 有 Trường Sơn 4 sound、Vitamiin sound、Warzone《Live at CBGB》sound。
+- **主線補查**（Discogs API，未用 WebSearch，facts 標【主線補查】）：Ponomarev（1985-04-14 Van Gelder 錄音、Ralph Moore 等五重奏）→ story／sound ok；Groove Club Vol. 3（Lion／Get On Down、歌手與曲名英譯）；Băng Vàng 72（法國翻製版列出的一線歌手名單）；Vitamiin（1981 塔林電台錄音、Melodiya 1983、Peeter Vähi）→ story ok；Warzone Live（1992-12-20 CBGB、Don Fury 混音、Raybeez 製作）→ what／story ok；Wha-ha-ha（1981 年 4 月現場、陣容、可用兩種轉速播放）→ story ok；Music for Dancefloors（Gibson／Scott 編選、Roger Roger 等法國圖庫樂團）→ sound ok；Vehicle Flips、Vision of Disorder（Discogs credits）。Trường Sơn 4 Discogs 無此捲。
+- **薄寫上線不留置**：Trường Sơn 4（不寫聲音，以 Duy Khánh 與 nhạc vàng 脈絡為主）、Vitamiin、Warzone《Live at CBGB》、Shotguns 13、Khiêu Vũ。
+- 事實裁定：派工特注三處錯（《Crying Princess》廠牌 Sublime Frequencies 非 Canary；Music for Dancefloors 編者非 Kenny Dope；Groove Club 與 Parallel World 無關）；Us3 年份 1996／1997 兩說，正文不寫；Voerkel 三重奏不寫「同年 12 月發行」；Valet 的 Owens 寫「參與過」Jackie-O Motherfucker；Băng Vàng 不套 1970 第 6 捲的編曲與銷量；Shotguns 13 不寫副題；Shotguns 三捲背景只在 13 寫完整；Void Stasis 不寫「獨自完成」；Walter Bishop 寫 Ronnie Laws、不寫信仰；Warzone 不寫星等；Wayne Davis 不寫 debut；Wha-ha-ha 不寫竹田賢一、渋谷エッグマン、盤號。
+- **長盤名裁定**：《Zendooni》副題近百字，正文只寫主標《Zendooni》；其餘合輯照原文全標題寫進第二句，再刪次要句壓回 240 內。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 55 處（含 6 張整段重寫），改動檔 `review-sd-095.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Us3、Ponomarev、Valet、Shotguns 3、Chichadélicas、Groove Club 2、Music for Dancefloors、Thai Beat、Crying Princess、Trường Sơn 4、Wounds of Love、Zendooni、Venetian Snares、Vitamiin、Wayne Davis、Voerkel | 第二句「這是／這張」改帶《盤名》，隨之刪次要句壓回 240 內（Ponomarev 廠牌、Băng Vàng 年份序列、Khiêu Vũ「從盤名看」推論、Shotguns 13 歌手出身、Groove Club 2 場景通論、Thai Beat 結語、Crying Princess 寮國與 1929、Wounds 節奏句、Venetian 錄音年份、Voerkel 生平等） | QA 無《》、字數 |
+| Băng Vàng 72 | 刪「後來被兩家帶廠重製」 | 版本雜項 |
+| Groove Club Vol. 3 | 刪「編制多是電吉他、貝斯、鼓、電子琴與銅管」、「以女聲與男女對唱為主」 | 前者是柬埔寨搖滾通論非本張；後者是主線依曲目歸納 |
+| Vince Staples | 「常被視為」→「被視為」 | The Arts Desk 單一出處 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Frey 作品年表首位、百老匯與 52 街、美國之音學爵士、靈體通道、金帶年度節目、舞廳伴奏起家、第一捲賣不動、翻出母帶、原始混音、女聲主軸、圖庫音樂上舞池、夜總會翻唱、Po Sein 高台、Duy Khánh 系列、早於迷幻搖滾的慢搖滾、革命前的 funk、匹茲堡小廠牌、Planet Mu 之前、獨立後拿失真吉他、長島金屬硬核、一年 250 場、太空求救訊號、Motörhead 加冷戰、厭倦重複歌曲、插電新團、光頭黨標籤、CBGB 主場、Bed Peace 標語、Roberta Flack、現場再做 dub）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-095.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 86 次（研究層 sd-094 41、sd-095 41，主線 4）。
