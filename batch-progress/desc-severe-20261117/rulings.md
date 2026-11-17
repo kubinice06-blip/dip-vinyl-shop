@@ -641,3 +641,30 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-016.json`；29 張 58 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **58/58 一致**；`front-check` **前台 29/29 新稿**。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 144 次（研究層 sd-015 58、sd-hold-2 17、sd-016 57，主線約 12）。
+
+## sd-021（30 張，經典度≥4：Agnostic Front 2、Bashung 2、Alaska y los Pegamoides、Trzaskowski、Michelangeli 2、Autechre 2、Bastard、Parmegiani、Bikini Kill、Carlos do Carmo、Carlos Paredes、Carsick Cars、Céline Dion、Cortot／Thibaud／Casals、Cro-Mags、Donny Hathaway、Gilels、Fats Domino、De Gregori、Knuckles／Tomiie、G.I.S.M. 2、Gauze 2、少女時代 2）— s12
+
+- 研究：3 支 Sonnet，WebSearch 16＋10＋12＝38 次（偏少，thin 多）。
+- **主線補查 13 張**（WebSearch 15 次＋WebFetch，facts 標【主線補查】）：Seant（JazzPRESS 正典專欄：民謠〈Oj tam u boru〉變奏、十二音列〈Cosinusoida〉、三管編制；Polish-Jazz 部落格與 Komeda《Astigmatic》並列）、Michelangeli 協奏曲（1957 Abbey Road、先演出後 EMI 同意錄、Gramophone「最好的協奏曲唱片之一」）、Michelangeli 獨奏會（Classite：1963 羅馬錄、1965 發行；仍薄寫）、Bleu pétrole（三吉他手編制、節奏組偏爵士、Le Temps）、Bastard（Head Heritage 樂評：聲音與成員、Feral Ward 重發）、Bikini Kill（維基＋PopMatters／Guardian）、Carsick Cars（英文維基、中文評論：〈中南海〉、噪音與回授）、Paredes、D'eux、Gilels（自選 20 首、柏林錄音、Stereo Review 獎）、Tears（Tomiie 試聽帶、Owens 是 Knuckles 室友）、G.I.S.M. 二張（Last Rites：金屬化、Relapse 重發）、Gauze《Equalizing Distort》（MRR 評、Shin 訪談）。
+- 身分裁定：Bastard 年份 1990／1992 兩說不寫；《DETESTATION》發行年兩說不寫；Seant 只寫 1960 年代中期；《D'eux》不寫「全部出自 Goldman」；《Rimmel》不寫編曲者；《Gee》不寫 E-Tribe 個人名與銷量；Gauze《Fuck Heads》不寫 2017 紅膠與 Tam 本名。
+- 前台：`front-check` 先查過，60 張（sd-021／022）都沒被 CURATED_DESCS 蓋住。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 15 處，改動檔 `review-sd-021.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Autechre\|Tri Repetae | 鉤子「共識首選常常就是」→「共識首選，就是」；「常被視為」→「被視為」 | 單一出處（Quietus） |
+| Bikini Kill | 「常被認為」→「被認為」；「三件式樂團」→「吉他、貝斯與鼓」 | 單一出處；樂團四人 |
+| Michelangeli 協奏曲 | 作品名加《》；刪「不趕不躁」 | 格式；字數 |
+| Michelangeli 獨奏會 | op.111 加《》 | 格式 |
+| Parmegiani | 「這張唱片」→《Dedans dehors》；刪「聽到的物件從不完全是預期的那個」 | 第二句要有盤名；字數 |
+| Fats Domino | 「這是他」→盤名、改寫精選集句；刪「二線遊行節奏」 | 第二句要有盤名；字數 |
+| G.I.S.M.\|Military Affairs Neurotic | 「這張」→盤名；刪陣容重述 | 第二句要有盤名；字數 |
+| 少女時代\|Girls' Generation | 「2007 年 發行」去多餘空格 | 格式 |
+
+其餘逐張四問無改：鉤子 30 張前四字互異、加權 ≤50，材料都取自故事（Gainsbourg 主動共同署名、試錄名義錄新專輯、兩吋母帶從東京寄紐約）、概念（Kali Yuga、香菸牌子的歌）、聲音或地位；查無軌序、曲長、盤號。Gauze《Fuck Heads》鉤子「同期日本 hardcore 多半往金屬靠」出自 MRR 1985 評語，照收。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-021.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**。
+- onboarding manifest 同步 27 處。
