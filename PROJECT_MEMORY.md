@@ -7,6 +7,13 @@
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-080.json,review-sd-081.json,kv-before-sd-080.json,kv-before-sd-081.json}`、`desc-tools/batches/{cards,research,output}/sd-08[01]*`、onboarding manifest 57 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s44：sd-082、sd-083 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-082 上線 30（Natural Snow Buildings 2、neat beats、Necrophorus、Rothenberg、Negasphere、Nerve Net Noise、Nic Jones、Nic Potter 2、Nicknack、Night Lovell、Nisvanis、No Brain、NOGYMX、Northern Picture Library、Nothing Painted Blue、NWW、Oblique Occasions、Ochre、Odd Nosdam 2、Ohbliv 2、Olivia Rodrigo、Optic Nerve 2、Organum 3）；sd-083 上線 30（Organum、OSCOB、Outer Limits、Owen Gray、Pageant、Pain Jerk、Parannoul 2、Pari Zanganeh、parkbreezy、Partners-N-Crime、Pat Martino、Patricia Barber 2、Paul Clark、Paulo de Carvalho、Peabo Bryson、Perfect、Perpetual Loop、Pete La Roca、Bellamy、Broggs、Brötzmann、Kowald、pheel.、Philanthrope & Devaloop、Photon、PNL、Polaris、Pontiac Streator）。
+- **主線補查**：Organum《Sphyx》（Brainwashed、Tone Glow O'Rourke 訪談）、Rothenberg《Trespass》（NYPL、Qobuz）、Nic Jones、No Brain（Bugs）、Perfect《Unu》（Rock Area、Pablo）、Pontiac Streator（All Night Flight）、Polaris（note 樂評）。Optic Nerve 2、Ohbliv、Oblique Occasions、Photon、Perpetual Loop 等查無專輯層級資料者薄寫上線（delayde 前例）。
+- **審稿**：sd-082 改 32 處（鉤子取限量版本、出處入文、第二句補《盤名》）、sd-083 改 6 處（La Roca 鉤子取重發事項、Pontiac 鉤子含「我」），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-082.json,review-sd-083.json,kv-before-sd-082.json,kv-before-sd-083.json}`、`desc-tools/batches/{cards,research,output}/sd-08{2,3}*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題（sd-082 兩筆「8 軌錄音機」誤報）、鉤子前四字互異、加權 ≤50。WebSearch 約 98 次。
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s42：sd-078、sd-079 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-078 上線 30（Linval Thompson 2、Lithics、Little John 2、Little Johnny Taylor、Longstone、Lorde、Los Destellos、Los Mirlos、Los Van Van、Los Wembler's、Los Ángeles Negros、Lou Donaldson 11、Louis Smith、Love、Love Tractor、Lowfish、Lucília do Carmo、Lull）；sd-079 上線 30（Lustmord、Lycia、Lyman Enloe、Līvi、Ma Chérie for Painting、Macroblank、Mad Professor 4、Magna Carta、Maher Shalal Hash Baz、Main 2、Sweet Basil 2、MALTA 4、Manhattan Jazz Quintet 2、Manual、Maple、Marc Houle、Marcus Printup、Marijannah、Marjan、Mark Heard、Marlena Shaw）。
