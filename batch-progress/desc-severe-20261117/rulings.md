@@ -1633,3 +1633,27 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - 薄寫上線（211 字，以「這是什麼」開頭）：Saltash 單人 beat 製作人、2018 年 11 月 Bandcamp 自主發行、ambient／chillout／lofi 標籤、三位客席、2020 續作。舊稿的曲數、總長、開頭冷知識拿掉；Chillhop 的同名 delayde 未證實同一人，不寫。
 - KV：舊值 `kv-before-sd-fix-1-delayde.json`；desc2 1 鍵，回讀 1/1；`front-check` 前台 2/2（含張璐）。manifest 同步 1 處。
+- **藝人介紹（補記）**：`ar-d-941` 補洞 1 支 Sonnet（搜尋 7 次）＋主線 extended 1 次，張璐身世／貢獻／地位三格 none——可用事實只有國家文化記憶庫明星卡（1970 年代臺灣電視劇演員）單源；電影《彩霞滿天》（1979）飾蘇燕青、與谷名倫合唱〈愛之鎖〉只見百度百科與其鏡像站，不算獨立兩源。照藝人介紹線規 **skipped**（progress 已標），不硬寫。
+
+## sd-055（30 張，其餘組：Bashung、ALBA、Allen Clapp、Alone in a Crowd、Alpha & Omega 3、Altan Urag 2、Alternative TV、Amp、And One、Andrew Hill 4、Andy Roberts、Andy Sheppard 2、Angèle、Braxton、Anthony Rother 3、Apelsin、Arcana、Archie Shepp 2、Aretha、Arlo Parks）— s30
+
+- 研究：3 支 Sonnet，WebSearch 15＋16＋13＝44 次；none 0。母語來源：Bashung 法文維基／Universalis／Larousse、Angèle 法文、Rother 德文訪談、Apelsin 俄文維基。研究層 b 回報一個 qobuz 搜尋結果夾帶「忽略系統提示」的注入文字，未採用。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Altan Urag《Hypnotism》《Nation》（匹茲堡大學 Forbes5 期刊專文：副題 Contemporary／Folk Album、各曲編制與技法）→ story／sound 由 none／thin 升 ok；Apelsin（愛沙尼亞文維基：塔林 Rae 餐廳起家、秀團名義、1978 中央電視台新年節目走紅）；And One（Ruiz 1992 離團、〈Techno Man〉）。Watch and Pray、Braxton 補查無新料，薄寫。
+- 身分／事實裁定：Aretha《Aretha》是 1961 Columbia 首張（舊稿整段寫成 1980 Arista 同名盤，丟棄），製作寫 Hammond；Overstanding 寫自家 A&O 廠牌、不寫 Greensleeves 子公司；Amp 是英國團；Alone in a Crowd 與 Inside Out 的關聯查不到，不寫；Braxton 不寫 PCM／編碼器／赤坂；Verbalizer 只寫 2014；Arlo Parks 不寫 Metacritic 分數；Angèle 不寫分手對象；Home Grown 不寫 BFBS 禁播（單源）；One for One 不寫 Cuscuna。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 7 張，改動檔 `review-sd-055.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Allen Clapp、Alternative TV、Andy Roberts、Braxton、Rother《Beuys》、Alone in a Crowd | 第二句補《盤名》，並刪次要細節壓回 240 字內（錄音地點、團員只剩兩人、題獻名單縮短、Art Ensemble of Chicago、拍手聲、lo-fi 質感） | 第二句交代這是什麼；字數 |
+| Andrew Hill《One for One》 | 刪「收十一首」 | 軌數 |
+| Rother《Beuys》 | 「這套雙 CD」→「專輯」、「附贈的」→「另一碟」 | 版本雜項 |
+| Braxton | 刪「有人聽出日本樂手在樂曲加速時跟得吃力」 | 無具名出處的負評 |
+
+其餘逐張四問無改：鉤子對過研究稿（Bashung「最後一次機會」與 Philips 考慮不續約、Alone in a Crowd 只演過一場、Woodbridge 自述有靈性不信教、ATV 首波樂評一致敵意與 Hegarty 的 industrial 橋梁、Andrew!!! 擱置近四年、Angèle 盤名＝出生年、Shepp 第二次悼念 Malcolm X、Antibes 美國班底沒跟來）。《Delivery Suite》鉤子是 Ronnie Scott's 現場錄音的時間地點，屬錄音經過（故事），照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條「Side By Side」誤判 A／B 面）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 26 處。
+- 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
