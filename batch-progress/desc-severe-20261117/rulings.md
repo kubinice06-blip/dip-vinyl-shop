@@ -1016,3 +1016,27 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-026.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 103 次（研究層 sd-025 36、sd-026 41，主線 26）。
+
+## sd-035（30 張，經典度≥4：Gunnar Graps、Hampel、Csík、Hallucinogen、Bluiett、Mobley、Koller、Harold Budd 2、McKinney、Harvest Flight、HAT、Hayedeh、Hazard、Heavenly、Sarmanto、Henry Franklin、Lowther、Henry's Dress、Karajan 2、Mwandishi、Stop Over、High Rise 3、Shajarian／Ghamsari、Hood、Horace Andy、Horace Parlan）— s20
+
+- 研究：3 支 Sonnet，WebSearch 17＋15＋12＝44 次；無 none，thin 18 張次（Csík story／sound 原為 none）。
+- **主線補查**（WebSearch 7 次，含 extended 1；WebFetch 8 次，facts 標【主線補查】）：Csík（匈牙利維基：Fogarasi／Jávory 班底、同年 Jazz Jamboree 現場盤同曲、RYM 1975 錄音、Rhodes 與合成器、〈Cameleon〉改編 Hancock → story／sound thin）；High Rise 三張（Squealer 成田宗弘訪談：首作排練單點立體聲麥克風直錄卡帶、刻片針被噪音震滑、第二張起吉他音箱直錄與換鼓手變快、《Dispersion》放慢試琶音與 PA 多軌 → 三張 story ok）；Heavenly（維基：Shaw Sound 錄音、Peel session）。Graps（postimees 計聞只談晚年）、Hallucinogen、Bluiett、Koller、HAT、Hayedeh、Shajarian 補查無新料，薄寫。
+- 身分／事實裁定：Graps 年份 1981／1982 兩說只寫「1980 年代初」；Bluiett 寫「1970 年代後期」；Hazard 寫「1990 年代末」；Koller 的 MPS「SABA-MPS 起點」講的是另一張《Jazz Studio – H.G.B.S Number One》，不套用；Csík 出身瑞士 Roundhouse 一說與匈牙利維基生平不合，不寫；Hayedeh 與 Rohani 的合作是 1985 年另一張，不套用；Karajan 兩張不寫錄音月份；Giselle 分譜亂序出自 Osborne 傳記，不掛 Culshaw；P.S.F. 老闆姓名兩寫法衝突，不寫。
+
+### 主線審稿（逐張 30 張，改 7 處，改動檔 `review-sd-035.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Hayedeh《Sogand》 | 刪「也是她最後兩張以卡帶與 CD 正式發行的專輯之一」 | 發行載體是版本雜項 |
+| Karajan《Giselle》 | 「散頁帶來的即興感也聽得出來」→「有樂評認為聽得出散頁帶來的即興感」 | 樂評看法不寫成事實 |
+| HAT | 「有時要人專心聽，但始終好聽」→「有些段落需要專注聆聽，整體仍然悅耳」 | 口語化 |
+| Shajarian／Ghamsari | 「是Mohammad」補空格 | fix-spacing |
+| Horace Andy《Exclusively》 | 鉤子「同一批歌分成了兩張唱片」→「Bullwackie 在紐約布朗克斯錄下的雷鬼，後來影響了 Bristol 的 trip hop」；刪「重疊的歌都是不同混音，沒有 dub 版本」與 Massive Attack 重錄句；去多餘空格 | 鉤子不准用版本雜項；改取地位（Fast 'n' Bulbous）；字數 |
+| Horace Parlan | 鉤子「錄完後被擱了十三年」→ 小兒麻痺、右手部分癱瘓改以左手彈辛辣和弦；補 Johnny Coles、Ervin 名字 | 與同批 Mobley 鉤子同一母題 |
+
+其餘逐張四問無改：逐條對過研究稿（Graps 唯一專輯與 1983 禁演、Jost「歐美自由爵士令人信服的綜合」、Mobley「我做過最好的作品」、Koller 沒到過美國自己找到風格、Lovely Thunder 一首在 Cocteau Twins 錄音室、White Arcades Warner 時期聽眾、Harvest Flight 最早一批耶穌搖滾、Lowther 因 Woodstock 獲 Deram 個人專輯、Henry's Dress 首作出來時樂團已近解散、Shostakovich 激動發抖、Mwandishi 15 拍、Stop Over 約 100 張與 BBE 首次再版、High Rise II Trouser Press 稱巔峰皆有出處）。30 張鉤子前四字互異、加權 ≤50；Hallucinogen 盤名雙關屬概念（瘋狂是主題）、非曲名體例。薄寫照收：Harvest Flight 202、Koller、Csík、HAT、Hayedeh。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-035.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0；開工前預查 sd-035／036 共 60 張皆 KV-HIT）。
+- onboarding manifest 同步 29 處。
