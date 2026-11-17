@@ -1596,3 +1596,8 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-048.json`；30 張 30 鍵（皆非 CJK，原無 desc4）bulk put Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 130 次（研究層 108，主線約 22）。
+
+## 協調端裁定：sd-hold-5 兩張最終留置（2026-11-17，店主：「給你決定就好」）
+
+- **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
+- **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
