@@ -1623,3 +1623,27 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-060.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 27 處。
+
+## sd-061（30 張，其餘：Casiopea 3、Caspro、Castanarc、Cecil Taylor、Cedar Walton、Celine Dion、Centry、cero、Chanté Moore、Charalambides、Charles Lloyd & the Marvels、Charles Pasi 2、Charlie McAlister、Charlie Moore、Charlie Parker 2、Chicago、Chick Corea 2、Chico Hamilton、Chillies、Chris Minh Doky、Christopher Willits、Chucho Valdés、Chuck Girard、Chế Linh 2）— s33
+
+- 研究：3 支 Sonnet，WebSearch 16＋14＋19＝49 次；none 只有 Centry story。母語來源：Casiopea 日文維基與 weblio、cero 日文（Tokion、Real Sound、ototoy）、Celine Dion 法文、Pasi 法文 Blue Note 頁、Chillies 越文（Bazaar Vietnam、SGGP）、Chế Linh 越文維基。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Charlie Moore《Avery County》（ibiblio 藍草作品表：1977 年 7 月 Lexington Lemco、9 月 Fountain Inn Music Lab 兩場，Old Homestead、製作 John W. Morris、班底與收錄曲；Clinch Mountain Echo 評價與 1979 年去世）→ 救回；《Tone Poem》（Jazzwise／Guardian：首度無客席主唱、多出自 2017《Vanished Gardens》同批錄音）；Chế Linh 兩卷（英文維基：本名、占族、Tứ trụ nhạc vàng、1972 Kim Khánh 獎、筆名 Tú Nhi、1975 後關押與出走；tuannyriver 部落格：首張收〈Bài ca kỷ niệm〉〈Cho vừa lòng em〉、風琴開場的 rumba 編制）。Centry 無新料，薄寫。
+- 事實裁定：Casiopea《Jive Jive》不寫 Steve Travell 填詞；Cecil Taylor 寫 BYG 不寫國別；Celine Dion 詞曲寫「多數」出自 Goldman；Centry 不寫與 Zion Train 的關係；Chick Corea《Is》不寫 Merton 詩、《The Sun》不寫中村照夫製作；Chico Hamilton 不寫廣告配樂與「三年多來頭一張」；Chillies 不寫離開 Warner；Chế Linh 不寫幫傭與載石卡車、不強調年份（維基 1973、部落格 1972、卡單 1974 三說），《Chế Linh 4》照實寫為多歌手綜藝卷帶；《Washington Concerts》不寫 Bill Potts 樂團；Chicago 17 不寫入圍類別；Charalambides 不寫年份（1993／1994 兩說）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-061.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Cedar Walton《First Set》 | 日期鉤子「1977 年 10 月 1 日…一整晚被錄了下來」→ 人物鉤子「25 歲的…Bob Berg…上台」；刪「長而」與次要字壓字數 | 日期不是故事材料；曲長字眼 |
+| Charalambides、Centry | 刪「限量 500 張黑膠」「2020 年 Partial Records 重發」 | 版本資訊 |
+| 《Tone Poem》 | 「83 歲」→「年過八十」 | 研究稿無年齡，2021 年 3 月發行時 82 或 83 不確定 |
+| Chick Corea《The Sun》 | 鉤子「三個月後」→「三個月前還同在 Miles Davis 樂團的四個人」；刪「獨奏狂熱」壓字數 | 照研究稿語意 |
+| Chick Corea《Is》 | 刪多餘空格 | 格式 |
+
+其餘逐張四問無改：Storyville 插播初選開票、McAlister 的島民拒絕派對概念、Chicago 17 六白金、Celine 四百萬張與史上第二暢銷法語專輯、Doky 的 Brecker 病中疊錄、Willits 的 Envelop 與 3D 空間音訊、Valdés 第 46 屆葛萊美入圍、Girard 自稱首張是「安全的唱片」皆有出處。Chế Linh 第一卷的「越南 bolero 代表作」與〈Bài ca kỷ niệm〉出自部落格對其「首張專輯」的描述，系列第一卷即首卷，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-061.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 97 次（研究層 sd-060 37、sd-061 49，主線 11）。

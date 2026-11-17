@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s33：sd-060、sd-061 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-060 上線 30（BROCKBEATS 4、Brother Joe May 2、Brother JT、BTS、Bunny Wailer 2、Burial Chamber Trio、Burn、Buster Williams、Bức Tường、C.C.C.C.、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball、Cappablack、Caracal、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea 4）；sd-061 上線 30（Casiopea 3、Caspro、Castanarc、Cecil Taylor、Cedar Walton、Celine Dion、Centry、cero、Chanté Moore、Charalambides、Tone Poem、Pasi 2、McAlister、Charlie Moore、Parker 2、Chicago 17、Corea 2、Chico Hamilton、Chillies、Doky、Willits、Valdés、Girard、Chế Linh 2）。BROCKBEATS、Brother Joe May、Centry 資料只到藝人／廠牌層級，照 delayde 前例薄寫上線。
+- **主線補查**：Tokudo、Candi Staton、Brother Joe May、Charlie Moore（1977 兩場錄音與班底，救回）、Tone Poem、Chế Linh 兩卷（越南 bolero、筆名 Tú Nhi、Kim Khánh 獎）。審稿改 sd-060 42 處（補《盤名》、刪軌數／黑膠版本／重發／曲名體例）、sd-061 11 處。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-060.json,review-sd-061.json,kv-before-sd-060.json,kv-before-sd-061.json}`、`desc-tools/batches/{cards,research,output}/sd-06{0,1}*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。WebSearch 約 97 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜嚴重簡介線兩張最終留置的裁定（店主授權）
 
 - **店主**：「給你決定就好」。張露《繁星點點 張露》→ 改掛名張璐《繁星點點》（Discogs 33707097、Rti 節目；串流誤掛），照 pool-fix-20261016 六處改法＋封面重核＋藝人介紹；delayde《finding solitude》→ 拿掉曲數曲長冷知識後薄寫上線。兩件交給 s30（`sd-fix-1`）。
