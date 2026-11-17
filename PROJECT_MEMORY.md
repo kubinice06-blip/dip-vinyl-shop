@@ -8,6 +8,14 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-056/057.json,review-sd-056/057.json}`、`desc-tools/batches/{cards,research,output}/sd-056*、sd-057*`、onboarding manifest 56 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題；鉤子加權 ≤50、同批前四字互異、無軌序／曲長／盤號。WebSearch 約 102 次。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s30：sd-055 上線 30、sd-hold-6 救回 4、sd-fix-1 張露卡改掛名張璐
+
+- **結果**：sd-055（其餘組 Alain Bashung … Arlo Parks）上線 30、無留置；sd-hold-6（sd-047／054 留置的藤井貞泰、A-Sound、99.99、Akal Dub）4 張全上線，留置清空；sd-fix-1：張露《繁星點點 張露》改掛名**張璐《繁星點點》**（年份 1977、曲風 pop、封面換 Discogs 33707097 LP 原版），delayde《finding solitude》薄寫上線。
+- **張璐改名六處**：seed、KV（desc2／desc4 新稿、rating4 照搬、cover6 Discogs、mapgenre3 新寫不照搬；舊鍵 5 個未刪，列 `sd-fix-1-kv-deletes-pending.json`）、card_catalog（`migrate-card-catalog-ids.mjs` 擴充 `oldAlbum／newAlbum` 後搬 id，再 PATCH coverUrl）、card-preview-status、apple-audio-map、card-subgenres（genre-tree `--pull --write`，`tw-pop-artists.json` 加張璐）；`onboarding-manifest-c106` 該筆原地改；Discogs 封面名冊加一筆；情緒三軸重建。藝人介紹 `ar-d-941` 補洞後三格 none → skipped。
+- **主線補查**：Altan Urag 兩張（Forbes5 期刊專文）、Apelsin（愛沙尼亞文維基）、And One；Aretha《Aretha》舊稿誤寫 1980 Arista 盤已改回 1961 Columbia 首張。審稿改 7 張（補《盤名》、壓字數、刪軌數／雙 CD／無出處負評）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,review-sd-055.json,kv-before-sd-055/sd-hold-6/sd-fix-1-*.json,tools/fix1-rename.mjs,sd-fix-1-*}`、`desc-tools/batches/{cards,research,output}/sd-055*、sd-hold-6*、sd-fix-1*`、`seed_cards.json`、`card-preview-status.js`、`card-subgenres.json`、`genre-tree.json`、`data/apple-audio-map-v1.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`scripts/migrate-card-catalog-ids.mjs`、`tw-pop-artists.json`、onboarding manifest 7 份、`desc-tools/batches/artist/{progress.json,research/ar-d-941-g1.json}`。
+- **驗證**：`kv-token-check` exit 0；sd-055 回讀 30/30、sd-hold-6 4/4、sd-fix-1 6/6（含改名 5 鍵）；`front-check` 前台 36/36 新稿、CURATED 0；`verify-album-onboarding --published`（張璐）0 error；QA 0 問題（剩 Side By Side 誤判 A／B 面 1 條）。
+
 ### 2026-11-17｜dip-vinyl-shop｜嚴重簡介線兩張最終留置的裁定（店主授權）
 
 - **店主**：「給你決定就好」。張露《繁星點點 張露》→ 改掛名張璐《繁星點點》（Discogs 33707097、Rti 節目；串流誤掛），照 pool-fix-20261016 六處改法＋封面重核＋藝人介紹；delayde《finding solitude》→ 拿掉曲數曲長冷知識後薄寫上線。兩件交給 s30（`sd-fix-1`）。
