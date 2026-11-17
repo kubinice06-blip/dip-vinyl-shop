@@ -806,3 +806,66 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-022.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
+
+## sd-hold-4：sd-016／019 留置卡重查（2 張）— s14
+
+主線自查（WebSearch 3 次，其中 extended 2 次；WebFetch 4 次）。**救回 1、續留置 1**：
+
+| 卡 | 前次為何留置 | 這次 |
+|---|---|---|
+| 黑豹樂隊《無是無非》 | 只有團史與主唱更替 | 豆瓣樂評（志颖情节第十回）與短評兩處都說〈放心走吧〉紀念唐朝樂隊貝斯手張炬；中文維基張炬條確認 1995-05-11 車禍過世 → 鉤子。聲音取自同一篇樂評（〈放心走吧〉鋼琴與小提琴起頭再進樂團、〈謊言〉一輕二重、〈為所有愛我們的人〉木吉他、〈黑夜沒有陌生〉無前奏、秦勇清亮與粗獷兩種嗓音）；負評「編曲圓滑、riff 與 solo 不復鋒利」照寫成「也有樂評認為」。主線自寫 236 字上線 |
+| 張露《繁星點點 張露》 | 只有發行日 | **續留置**：extended 一次只得串流平台 1973-10-23（環球唱片股份有限公司）、〈繁星點點〉作曲宋普照；Discogs 1977 台灣環球 LP 歌手作「張璐」，可能是另一位歌手，身分不穩 |
+
+- 裁定：45 萬張銷量、1996 赴日專場皆單一來源不寫；秦勇 1994 年曾重錄《光芒之神》世界版，所以不寫「秦勇第一張」；「〈放心走吧〉紀念張炬」只有樂迷來源，寫成「被樂迷視為」。
+- 上線：`kv-token-check` exit 0；舊值 `kv-before-sd-hold-4.json`；1 張 2 鍵；回讀 **2/2 一致**；`front-check` **前台 1/1**；manifest 同步 1 處。
+
+## sd-023（30 張，經典度≥4：Shankar–Jaikishan 2、Sisa、Texas Is the Reason、Monk 2、Triana、合輯 13、Yo La Tengo、Youth of Today 3、Артемьев、-M-、015B、108、127、14 Iced Bears）— s14
+
+- 研究：3 支 Sonnet，WebSearch 14＋10＋11＝35 次（偏少，thin 15 張次，多是合輯「誰編、為什麼編」查不到）。
+- **主線補查**（WebSearch 4 次＋WebFetch）：Zabriskie Point（維基：Pink Floyd 1969 年底錄音、〈Come In Number 51〉＝〈Careful with That Axe, Eugene〉重錄、Wright 獨奏鋼琴、〈The Violent Sequence〉→〈Us and Them〉、Morrison〈L'America〉被退 → sound 改 ok）；-M-（粉紅吉他為女兒 Billie 特製、Gibert 唱片介紹吉他領奏、Victoires 2005 → sound ok）；Triana（三人組、Kirios 錄音、首發迴響小）；Mera Naam Joker（作詞群）；015B 搜一次無新錄音經過。
+- 身分／事實裁定：Wings of Desire 寫 1987 年電影；Pomegranates、127、Youth of Today 年份分歧不寫；Артемьев 不寫日本盤；Great Punk Hits 寫 Tokuma Japan 發行；Hardcore Unlawful Assembly 寫「掛在 AA 廠牌名下」；Sisa 只寫 1975；Shree 420〈Mera Joota Hai Japani〉作詞 Shailendra。-M- 鉤子「我們兩個」是盤名釋義，不算你我禁詞。
+
+### 主線審稿（逐張 30 張，改 31 處，改動檔 `review-sd-023.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Khana Khana | 鉤子「直到合輯才有 CD 版本」→「1979 年革命前，伊朗的年輕樂手把 fuzz 吉他和西塔琴一起放進放克」 | 鉤子不准用版本雜項 |
+| Zabriskie Point | 「被退件」→「沒被採用」；刪票房與「導演挑曲」壓字數 | 研究稿只說未收錄 |
+| Princess Nicotine | 刪 Sublime Frequencies 重出 | 再發雜項 |
+| 14 Iced Bears | 刪 Thunderball Records 廠牌句 | 字數；雜項 |
+| Pomegranates、Princess Nicotine、Raks、Wings of Desire、Zabriskie、Youth of Today 3、-M-、015B、108、14 Iced Bears | 第二句「這是／這張」→ 以《盤名》起句，連帶刪句壓回 240（015B 刪 KBS 五週第一、-M- 刪「同名曲獻給吉他」等） | 第二句要有盤名 |
+| Yo La Tengo、Texas Is the Reason | 「常被視為／常被列入」→「被」 | 單一出處 |
+
+盤名過長保留「這是」：Yo La Tengo、Артемьев、Longing for the Past 等（潘秀瓊前例）。其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50，材料取自故事（Canet Rock 禁演觀眾合唱、抵押家產拍六年、Tarkovsky 否決兩版配樂、地下室熱浪錄音）、概念（我們兩個、Krishna 獻詞）、聲音（6/8 拍放克銅管、天使的聲音）或地位；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-023.json`；30 張 30 鍵；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
+- onboarding manifest 同步 28 處。
+
+## sd-024（30 張，經典度≥4：2NE1、808 State、A Witness、Aardvark、Abaddon、Absolute Body Control、Absolution、Adriano Correia de Oliveira、AgonyOST、Aguaviva、Ain Soph 2、Air 2、Air Miami、AKA、Golha、Akufen、Alan Braufman、El Topo、Cortot、Marceneiro、Alice Donut、Alva Noto 2、Amalgam、ambientium、Amp、Amália、Andrew Hill）— s14
+
+- 研究：3 支 Sonnet，WebSearch 18＋15＋12＝45 次。
+- **主線補查**（WebSearch 4 次）：AgonyOST（story none：Mad Decent 發行、RYM 標籤、Sewerslvt 2023 推廣）；Aguaviva（EcuRed：Manolo Díaz 創團、Lorca／Alberti／Blas de Otero、〈Poetas andaluces〉→ story ok）；Ain Soph（只得 King 錄音室日期，不改寫）；El Topo（ABKCO：Abbey Road、Nacho Méndez 合寫）。
+- 身分／事實裁定：AKA 只寫「1970 年代」；Golha 不寫 1976 Caltex，集數是節目身分可寫；Amália 寫 1956 年底；Andrew Hill 陣容含 Sproles、Higgins；Absolution 年份兩說寫「1980 年代末」；AgonyOST 與 Sewerslvt 同一人的傳聞不寫；Air 兩張是 Threadgill 三重奏。
+
+### 主線審稿（逐張 30 張，改 29 處，改動檔 `review-sd-024.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| A Witness | 鉤子「一半母帶遺失、在閣樓找到」→「深受 John Peel 力挺的 A Witness，把 jangle 吉他流行推向更憤怒的方向」；刪 2006 修復再版 | 鉤子不准用版本雜項；前四字與 El Topo 撞 |
+| AgonyOST | 刪「外界常傳與 Sewerslvt 同一人」 | 傳聞 |
+| El Topo | 作曲改「與 Nacho Méndez 合寫」；刪午夜電影風潮句 | 研究稿；字數 |
+| Cortot | 刪 Horowitz 請教聖桑練習曲 | 與聲音無關的冷知識；字數 |
+| Akufen | 刪「兩台唱盤加混音器、不是個人專輯的續作」 | 與鉤子重複 |
+| 2NE1 | 刪 22.5 萬張 | 銷量雜項 |
+| 2NE1、Golha、Cortot、Marceneiro、Amália、Absolution | 第二句補《盤名》 | 第二句要有盤名 |
+| AKA、Golha、808 State、Absolution、Adriano、Air Time、Cortot、Transform、Amp | 「常被」→「被」 | 單一出處 |
+
+Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 30 張前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：AgonyOST、Absolute Body Control、ambientium、Marceneiro、A Witness（198）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-024.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 26 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-023 35、sd-024 45，主線 11）。

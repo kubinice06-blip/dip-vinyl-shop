@@ -15,6 +15,13 @@
 - **主要檔案**：`game-lab/{cards.js,cards-pool.js,cards-media.json,bins.js,content.js,engine.js,ui.js,econ.js,econ.css,style.css,shop.js,duel.js,sim.mjs,pool-index.json,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{bake-cards,build-pool-index,check-content,check-covers,check-shops,lint-copy,make-pool-list,migrate-ids}.mjs`、`game-lab/tools/{pool-list,legacy-ids}.json`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-pool,e2e-lib,e2e.spec,e2e-econ,e2e-taps,e2e-unlock}.mjs`、主站 `index.html`。`?v=81`。
 - **驗證**：check-content（5,045 張）／check-covers／check-shops／build-pool-index --check／lint-copy；併 #491 後 engine 2,897,590、tutorial 505,169 全過；併 #491 後 e2e（390、375）recap 25、pool 84、duel 121、unlock 12、apex 37、econ 54、room 21、taps 14、prologue 52，e2e.spec 390 50/50。**沒驗**：真 iPhone、正式站 CDN 壓縮後的首屏時間。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s14：sd-023、sd-024、sd-hold-4 上線（61 張，續留置 1）
+
+- **結果**：sd-023 上線 30（寶萊塢、Monk、伊朗／哥倫比亞／緬甸合輯、Youth of Today、Артемьев、015B 等）；sd-024 上線 30（2NE1、808 State、Ain Soph、Air、Golha、Alva Noto、Amália 等）；sd-hold-4 救回黑豹樂隊《無是無非》（〈放心走吧〉紀念張炬＋豆瓣樂評聲音描述），張露《繁星點點》身分不穩續留置。非 CJK 卡 front-check 全對上，CURATED 0，無待店主處理。
+- **主線補查**：Zabriskie Point、-M-、Triana、AgonyOST、Aguaviva、El Topo 等；審稿 sd-023 改 31 處、sd-024 改 29 處（版本雜項鉤子兩張改寫、第二句補盤名、單一出處去「常被」、刪再發／銷量／傳聞），逐條在 `rulings.md`。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json（加 sd-hold-4）,kv-before-sd-023/024/hold-4.json,review-sd-023/024.json,held-sd-hold-4.json}`、`desc-tools/batches/{cards,research,output}/sd-023*、sd-024*、sd-hold-4*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；KV 62 鍵逐字回讀全數一致；`front-check` 前台 61/61 新稿；QA 無軌序／曲長／盤號，鉤子加權 ≤50、前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 上一手細節：揭曉後停住等點、上一手詳情、這場紀錄
 
 - **店主 11-17**：「我覺得上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了，怎麼辦。」（現況實測：結果框只停約 1.1 秒、「上一手」那行再 0.6 秒，輪到你出牌時整句不見，只剩小列兩張小封面。）
