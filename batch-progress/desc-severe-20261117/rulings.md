@@ -668,3 +668,24 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-021.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**。
 - onboarding manifest 同步 27 處。
+
+## sd-022（30 張，經典度≥4：Gorilla Biscuits 2、Hoola Bandoola Band、Irakere 3、José Cid、José Mário Branco、Kult 2、Los Prisioneros 2、Michael Nyman 2、Shajarian、Paco Ibáñez、Parálisis Permanente、Patsy Cline、Pau Riba、Radio Futura、Reese、Rhythim Is Rhythim 2、Rocky Horror、Richie Hawtin 2、Robert Johnson 2、S.D. Burman、Shankar–Jaikishan）— s12
+
+- 研究：3 支 Sonnet，派工詞加「上一批平均每張只搜 1 次、標 thin 前必查四項逐項寫進 notes、實際用到 15 次以上」，WebSearch 15＋16＋23＝54 次，thin 降到 6 張。
+- **主線補查**（WebSearch 4 次）：Shajarian《Astan e Janan》（革命後在德黑蘭義大利大使館私人音樂會、Farhangfar 打 tonbak、Bayat-e Zand）、Irakere《Chekeré son》（JVC 發行、clave＋bebop 管樂、Cuba50 的 timba 說法）、Hoola Bandoola（社會主義訊息、〈Keops pyramid〉）；《Nude Photo》查無具體聲音資料，照研究稿薄寫（只寫氛圍與 Yazoo 笑聲取樣，不拿 May 一般器材湊）。
+- 身分／事實裁定：《Irakere》葛萊美不寫年份；Start Today 不寫廠牌自稱銷量；José Cid 不寫 Billboard 百大；Shajarian 演出年 1982／1983 兩說只寫 1985 發行；Nyman《Draughtsman》寫「早期合作」；Paco Ibáñez 寫 1969 年現場；Patsy Cline 不寫週數、和聲寫 Jordanaires 與 Millie Kirkham；Reese 寫「Casio CZ 系列」；《Closer to the Edit》改正舊稿「全不是他的曲子」；《Aradhana》作曲歸屬兩說照寫「說法不一」；Robert Johnson 全集不寫銷量、日期、take 數；《Sangam》Mukesh 只是提名、不寫。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 28 處，改動檔 `review-sd-022.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Paco Ibáñez、Patsy Cline、Reese、Nude Photo、Rocky Horror、Hawtin 2、Robert Johnson 2、Aradhana | 第二句「這是／這套／Decca 發行這張」→ 以《盤名》起句，連帶刪句壓回 240（Alberti、安可曲、鄉村榜前十、十倍白金、Paradise Garage、失真電吉他、O'Brien 旁白唱法、喀噠聲、DVD 5.1、take 排列、Clapton／滾石翻唱、Khanna 成名重述等） | 第二句要有盤名；字數；版本／銷量雜項 |
+| Paco Ibáñez、Nude Photo、Aradhana | 「常被視為／常被認為」→「被視為／被認為」 | 單一出處 |
+
+其餘逐張四問無改：第 1–15 張逐條對過研究稿（Civ 背對觀眾唱、〈Keops pyramid〉、Branco 的城堡錄音、Kult 柏林圍牆照片、Los Prisioneros 狗吠取樣皆有出處）；30 張鉤子前四字互異、加權 ≤50，材料取自故事、概念、聲音或地位；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-022.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
