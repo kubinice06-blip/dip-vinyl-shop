@@ -102,7 +102,7 @@
   // ======================================================================= 存檔
   var save = null;
   function defSave() {
-    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, runs: [], runSeq: {},
+    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null, autoNext: false }, player: null, run: null, runs: [], runSeq: {},
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [],
       tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null, bring: null,   // bring：主站「帶去店裡對決」帶來的那張（{id, at}；下一趟開局挑種子排第一、預設勾好，用一次就清）
       want: [] };   // want：想要清單（你家的控制台在星圖上挑到、還沒擁有的；v5 第六項第三期，先只記、不影響進貨；不用升存檔版本：舊存檔缺這個鍵就補空的）
@@ -624,6 +624,7 @@
       (canCharEdit() && UI.screen !== 'duel' && !tutOn ? '<button type="button" class="lb-btn big" data-a="char">捏角色</button>' : '') + '</div>' +
       '<button type="button" class="lb-btn big sp" data-a="snd">聲音 ' + swHTML(soundOn()) + '</button>' +
       '<button type="button" class="lb-btn big sp" data-a="fast">動畫加速 ' + swHTML(S.fastAnim) + '</button>' +
+      '<button type="button" class="lb-btn big sp" data-a="autonext">揭曉後自動換手 ' + swHTML(S.autoNext) + '</button>' +   // 11-17：關＝結果停住等你點一下（預設）；開＝照時間自己換手
       (tutOn ? '<button type="button" class="lb-btn big" data-a="skiptut">' + esc(tutLabel('skipTut', '跳過教學')) + '</button>' : (canTutorial() && UI.screen !== 'duel' ? '<button type="button" class="lb-btn big" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : '')) +
       '<button type="button" class="lb-btn big ghost" data-a="reset">重置試做版存檔</button></div>';
     var m = modal('lb-pause', html, null, { foot: false });
@@ -651,6 +652,9 @@
         b.innerHTML = '動畫加速 ' + swHTML(S.fastAnim);
         var fx2 = FX(); if (fx2 && fx2.setSpeed) fx2.setSpeed(speed());
         if (UI.screen === 'duel' && DUEL() && DUEL().rerender) try { DUEL().rerender(); } catch (err) { console.error(err); }
+      } else if (a === 'autonext') {
+        S.autoNext = !S.autoNext; persist();             // 對決停住中打開：關掉選單就放行（duel.js hold(false) 看 settings().autoNext）
+        b.innerHTML = '揭曉後自動換手 ' + swHTML(S.autoNext);
       } else if (a === 'skiptut') { closeModal(); try { TUT().skip(); } catch (err) { console.error(err); } }
       else if (a === 'replay') { closeModal(); replayTutorial(); }
       else if (a === 'reset') {
@@ -757,7 +761,7 @@
   // ======================================================================= 場景（scene）：舞台 full＋對白窗＋包包條
   function buildScene(p) {
     p = p || {};
-    setTop(posLabel(save.run), { skip: function () { if (UI.dlg) UI.dlg.skip(); }, help: !!p.help, pause: !!p.pause });
+    setTop(posLabel(save.run), { links: p.recap ? rcLinks() : null, skip: function () { if (UI.dlg) UI.dlg.skip(); }, help: !!p.help, pause: !!p.pause });
     var panel = UI.panel; panel.classList.add('scene');
     var dq = el('div', 'lb-dq narr', '<div class="nm"></div><div class="tx" aria-live="polite"></div><div class="nx" aria-hidden="true">▼</div><div class="menu"></div>');
     panel.appendChild(dq);
@@ -2277,7 +2281,8 @@
       stage: UI.stage,
       cardInfo: function (c, o) { return info(c, o); },
       hint: function (id, targets) { if (UI.tutReplay || !T || !T.hintHook) return; try { T.hintHook(id, targets); } catch (e) { console.error(e); } },
-      settings: function () { return { fastAnim: !!save.settings.fastAnim || FAST }; },
+      // autoNext（11-17）：false＝揭曉後停住等點（真玩家預設）；?fast=1、__lab.duelLab 的測試對決（沒給 start({hold:true})）照現行時序
+      settings: function () { var lab = UI.duelLab && p.res && UI.duelLab.duel === p.res.duel && !UI.duelLab.hold; return { fastAnim: !!save.settings.fastAnim || FAST, autoNext: !!save.settings.autoNext || FAST || !!lab }; },
       onEvent: function () {},
       player: { name: '你', avatar: playerAv() },
       relicIcon: function (id, size) { return relicIcon(id, size); },
@@ -2336,7 +2341,10 @@
   }
   SCREENS.duel = function (p) {
     var r = p.fakeRun || save.run, eid = p.enemyId, en = C.enemies[eid] || {};
-    setTop(duelTitle(eid, r), { help: true, pause: true });
+    // 頂欄「紀錄」（11-17 這場紀錄）：第 1 手揭曉後才出（duel.js recapReady）；教學、重看教學不出
+    setTop(duelTitle(eid, r), { help: true, pause: true, links: p.tutorial || p.replay ? [] : [[DTX('rcLink', '紀錄'), function () { var Dl = DUEL(); if (Dl && Dl.recap) Dl.recap('list'); }, 'recap']] });
+    var rcSync = function () { var b = qs('[data-a=recap]', UI.top), Dl = DUEL(), a = Dl && Dl.api && Dl.api(); if (b) b.hidden = !(a && a.recapReady && a.recapReady()); };
+    rcSync();
     var panel = UI.panel; panel.classList.add('duel');
     var wrap = el('div', 'lb-duelwrap'); panel.appendChild(wrap);
     var foeSpr = enemySpr(en);
@@ -2358,6 +2366,7 @@
       var Dl = DUEL();
       if (Dl && typeof Dl.mount === 'function') { try { Dl.mount(wrap, opts); } catch (e) { console.error(e); stubDuel(wrap, opts); } }
       else stubDuel(wrap, opts);
+      if (Dl && Dl.on) { rcSync(); UI.offs.push(Dl.on('resolved', function () { later(rcSync, 0); })); }
       if (p.tutorial && opts.hooks.tut) startLesson(r.ace, !!p.replay);
       if (boss) duelHold(true);                                   // 藏家登場卡收掉之前，盤面不能出牌（B-boss-intro-passthrough）
       if (UI.auto) later(autoDuel, 400);
@@ -2431,6 +2440,8 @@
     UI.ending = duel;
     if (UI.loseDuel === duel) { UI.loseDuel = null; UI.loseNext = Math.max(0, (UI.loseNext | 0) - 1); }
     var wasTut = r.tut === true, firstBoss = !r.aceWon;   // engine 打倒藏家才設 run.aceWon（這一趟第一次）
+    // 這場紀錄（11-17）：打完存一份進 run（結算、領獎、說情那段的頂欄「紀錄」看得到；重新整理也在；下一場打完換掉）。序章／教學不存
+    if (!inPrologue(r) && !wasTut) { try { r.lastFight = fightRecap(duel); } catch (e) { console.error(e); r.lastFight = null; } }
     var out = null;
     try { out = E.finishFight(r, C, duel); } catch (e) { console.error(e); }
     if (!out || out.error) { console.error('finishFight', out && out.error); persist(); return go(r.over ? 'end' : 'night'); }
@@ -2486,6 +2497,43 @@
     }
     return { eHp: Math.max(0, d.e.hp | 0), eMax: eM, flip: flip, at: d.e.id || null };
   }
+  // ---- 這場紀錄（11-17；scratchpad v5/recap DESIGN §C）：打完的那場存進 run.lastFight，結算畫面的頂欄「紀錄」用 recap.js 同一個面板開在 modal 裡。
+  //   log＝引擎 duel.log 的複本（每手的字由 recap.js 經 duel.js clashText 重排，不另外造字）；cards＝這場出過的唱片（封面、藝人、專輯；卡池換了也看得到）
+  function DTX(k, d) { var t = C && C.duelText && C.duelText[k]; return typeof t === 'string' ? t : d; }
+  function fightRecap(d) {
+    if (!d || !d.p || !d.e || !Array.isArray(d.log) || !d.log.length) return null;
+    var pools = [d.p.hand, d.p.draw, d.p.disc, [d.p.ace], d.e.thrown, d.e.hand, d.e.pile], cards = {};
+    var find = function (id) { for (var i = 0; i < pools.length; i++) { var a = pools[i] || []; for (var j = 0; j < a.length; j++) if (a[j] && a[j].id === id) return a[j]; } return card(id); };
+    d.log.forEach(function (L) {
+      [L && L.pId, L && L.eId].forEach(function (id) {
+        if (!id || cards[id]) return; var c = find(id); if (!c) return;
+        cards[id] = { id: c.id, artist: c.artist || '', album: c.album || '' };
+        if (c.localCover) cards[id].localCover = c.localCover; if (c.coverUrl) cards[id].coverUrl = c.coverUrl;
+      });
+    });
+    return { eid: d.e.id || null, name: d.e.name || '', log: JSON.parse(JSON.stringify(d.log)), pMax: d.p.max, eMax: d.e.max, maxRounds: (E.CFG && E.CFG.maxRounds) || 6,
+      over: d.over ? { win: !!d.over.win, by: d.over.by || null } : null, apex: !!d.apexMode, cards: cards };
+  }
+  function rcLinks() {
+    var r = save.run, F = r && r.lastFight;
+    if (!F || !Array.isArray(F.log) || !F.log.length || !W.DipLabRecap || !DUEL() || !DUEL()._fmt) return [];
+    return [[DTX('rcLink', '紀錄'), function () { openFightRecap('list'); }, 'recap']];
+  }
+  function openFightRecap(view, k) {
+    var r = save.run, F = r && r.lastFight, RC = W.DipLabRecap, Dl = DUEL();
+    if (!F || !RC || !Dl || !Dl._fmt) return null;
+    var T = Dl._fmt.text(C);
+    var cardOf = function (id) { return card(id) || (F.cards && F.cards[id]) || null; };
+    var rows = RC.rowsOf(F.log, { T: T, hints: C.hints, hintLines: C.hintLines, cardOf: cardOf, pMax: F.pMax, eMax: F.eMax, U: F.apex ? ((C.apexTrial && C.apexTrial.ui) || {}) : undefined });
+    var m = modal('lb-recap', '', null, { foot: false });
+    var pane = qs('.pane', m);
+    pane.setAttribute('aria-label', T('rcListDone'));
+    RC.mount(pane, { rows: rows, view: view || 'list', k: k, max: F.maxRounds || 6, T: T, title: T('rcListDone'),
+      onCard: function (side, row) { var d = row && row[side]; if (d && d.card) info(card(d.card.id) || d.card, { attr: d.attr, from: 'recap-' + side }); },
+      onClose: function () { if (UI.modal && UI.modal.el === m) closeModal(); } });
+    tlog('recap', 'open', { n: rows.length });
+    return m;
+  }
   // 這一趟結束（倒下、到這裡就好；放棄＝why 'abandon'）：記進 runs，更新最遠／最多連贏／中繼點（標題「最遠：第 23 位」）
   //   序章裡放棄不記（還沒走到第 1 位）
   function recordRun(r, why) {
@@ -2517,7 +2565,7 @@
   // ---- 輸了：序章男子免費再一場；客人每輪一次老闆說情（同一位、同一副牌，聲望回到開打前，裁定 8）
   function retryFlow(out) {
     var r = save.run, eid = out.enemyId, p = r.pending, free = !!(p && p.free);
-    afterDuelScene(eid, {}, function (sc) {
+    afterDuelScene(eid, { recap: true }, function (sc) {
       var dlg = Dialogue(sc, {});
       var winLine = C.lines[eid] && C.lines[eid].win;
       var beats = [];
@@ -2618,7 +2666,7 @@
   }
   // ---- 散場：你坐在地上，老闆一句
   function deadFlow(out) {
-    go('scene', { p: 'duelP', o: 'counter', camMs: 600, start: function (sc) {
+    go('scene', { p: 'duelP', o: 'counter', camMs: 600, recap: true, start: function (sc) {
       stg('pose', 'f', null);
       stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); });
       var dlg = Dialogue(sc, {});
@@ -2661,7 +2709,7 @@
     if (!p || (p.type !== 'reward' && p.type !== 'level')) return resumeRun();
     if (p.prologue) return epilogueFlow(true);
     var en = C.enemies[p.enemyId] || {};
-    setTop(esc(TU('pos', { n: r.pos })) + '<small>' + esc(en.name || '') + '</small>', { help: true, pause: true });
+    setTop(esc(TU('pos', { n: r.pos })) + '<small>' + esc(en.name || '') + '</small>', { links: rcLinks(), help: true, pause: true });
     UI.panel.classList.add('reward');
     stg('interact', 'reward');
     stg('pose', 'f', null); stg('pose', 'p', null);
@@ -3297,7 +3345,7 @@
     if (!r || !r.over) return go('title');
     recordRun(r);
     var S = C.summary || {}, sum = E.runSummary(r), la = r.stats.lostAt;
-    setTop(posLabel(r), { help: true, pause: true });
+    setTop(posLabel(r), { links: rcLinks(), help: true, pause: true });
     var panel = UI.panel; panel.classList.add('end');
     cam('strip', 'end', 600);                               // ART-07：結算用小鏡頭，三件事不用捲
     stg('interact', 'none');
@@ -3917,8 +3965,9 @@
       get beat() { return UI.dlg ? UI.dlg.beat : null; },
       get econ() { return econ(); },
       // 測試對決（e2e-duel 的 index.html 版，C 整合；＝dev/duel-harness.html 的 build()／start()）：
-      //   duelLab.start({enemy, seed, ace, hp, ehp, relics, pos, atk, def, eAtk, eDef})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張；
+      //   duelLab.start({enemy, seed, ace, hp, ehp, relics, pos, atk, def, eAtk, eDef, hold})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張；
       //     沒給 pos＝角色本來的聲望與牌單、出招 normal；pos＝照無限試煉第 pos 位的曲線；atk／def＝你的品味／底氣、eAtk／eDef＝蓋掉他的），打完停在大章不結算；
+      //     hold:true＝照真玩家揭曉後停住等點（11-17；沒給＝照現行時序）
       //   duelLab.setNext({i,attr})：他下一手照這個出；duelLab.ended：打完的結果 {over, win, by, pHp, eHp}
       duelLab: {
         start: function (o) { return duelLabStart(o || {}); },
@@ -3956,7 +4005,7 @@
     else if (eDef.boss) { var others = E.TIERS.filter(function (t) { return t !== ace; }); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
     var res = E.startDuel(pDef, eDef, opts);
     r.duel = res.duel; r.duelEnemy = eid; r.pending = null;
-    UI.duelLab = { duel: res.duel, ended: null };
+    UI.duelLab = { duel: res.duel, ended: null, hold: !!o.hold };   // hold：照真玩家停住等點（e2e 測停住用；預設不停）
     UI.going = false;
     go('duel', { res: { duel: res.duel, events: res.events, enemyId: eid }, enemyId: eid });
     return true;
