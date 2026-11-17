@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s3：sd-005、sd-006 上線（含林強《驚蟄》）
+
+- **sd-005 上線 27、sd-006 上線 28**（研究 6 支 Sonnet＋寫作 4 支 Opus＋主線逐張審稿，改 9＋9 處）；留置 5 張（春艷《鬧青》、木馬《Yellow Star》、本多俊之《Radio Club》、板倉克行トリオ《ハニー・サンバ》、浅川マキ《Some Years Parst》：查無專輯層級資料，KV 保留舊稿，`held-sd-00{5,6}.json`）。
+- **林強《驚蟄》**（店主截圖那張）：研究層聲音查不到，主線補查博客來與佳佳唱片行介紹，補上「立體音畫」、與 MK2 合作、三首用於侯孝賢《最好的時光》、大鑼／歌仔戲／〈西北雨直直落〉電民謠／台語吟詩／夜市叫賣／四語等聲音素材，重寫為 238 字，無軌序曲長。
+- **寫入**：KV desc2＋desc4 共 110 鍵，寫前存 `kv-before-sd-00{5,6}.json`；bulk get 回讀 110/110 一致；`front-check` 前台 55/55 新稿。onboarding manifest 同步 55 處。
+- **踩坑**：研究代理共用暫存腳本檔名互蓋（sd-006-b 的稿一度寫進 sd-005-a.json），已清回並核對 key；之後派工加「暫存腳本用唯一檔名」。
+- **WebSearch**：研究層約 88 次＋主線 1 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-00{5,6}.json,held-sd-00{5,6}.json,kv-before-sd-00{5,6}.json}`、`desc-tools/batches/{cards,research,output}/sd-00{5,6}*`、onboarding manifest 多檔。
+- **驗證**：sd.mjs qa 兩批 0 實質問題（字數 160–240、無軌序／曲長／盤號）；KV 回讀逐字一致；前台逐張一致。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡簡介：抽查、新規則 general-desc-base、新卡停用鉤子公式、嚴重稿重寫線開跑
 
 - **起因**：店主看到林強《驚蟄》整段只講軌序與曲長：「這介紹跟沒介紹一樣……檢查是不是很多都這樣」「為何有天突然走歪了，本來都寫得很好」。
