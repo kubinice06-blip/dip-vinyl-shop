@@ -7,6 +7,7 @@
 - **寫入**：KV desc2＋desc4 共 110 鍵，寫前存 `kv-before-sd-00{7,8}.json`；回讀 110/110 一致；`front-check` 前台 55/55 新稿；onboarding manifest 同步 55 處。
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-00{7,8}.json,kv-before-sd-00{7,8}.json}`、`desc-tools/batches/{cards,research,output}/sd-00{7,8}*`、onboarding-manifest-*.json。
 - **驗證**：sd.mjs qa 兩批 0 實質問題（旗標皆為原文標題）；KV 逐字回讀一致；前台逐張一致。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s3：sd-005、sd-006 上線（含林強《驚蟄》）
 
 - **sd-005 上線 27、sd-006 上線 28**（研究 6 支 Sonnet＋寫作 4 支 Opus＋主線逐張審稿，改 9＋9 處）；留置 5 張（春艷《鬧青》、木馬《Yellow Star》、本多俊之《Radio Club》、板倉克行トリオ《ハニー・サンバ》、浅川マキ《Some Years Parst》：查無專輯層級資料，KV 保留舊稿，`held-sd-00{5,6}.json`）。
