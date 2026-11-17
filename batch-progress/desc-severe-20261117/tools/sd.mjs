@@ -6,6 +6,9 @@
 //   node …/sd.mjs bulk   sd-001          產 publish-stage/kv-sd-001-<stamp>.json（desc2 一律；原有 desc4 或 CJK 卡也寫 desc4）
 //   node …/sd.mjs verify sd-001          bulk get 逐字回讀
 //   node …/sd.mjs manifest sd-001 [--write]  同步 onboarding manifest 的 description.text
+// 補鉤子批（sd-hook-N，2026-11-17）：同樣的子命令都吃。卡單 = 來源批已上線的卡（sd-XXX-out 或 sd-hold-1-out 有稿）扣掉 HOOK.skip，
+//   currentDesc 換成 KV desc2 現行稿、附 research 檔清單；qa 另查鉤子（加權 ≤50、前四字互異、禁詞、雜項字眼）。
+//   新的補鉤子批：在下面 HOOK 加一列即可（sd-hook-2＝sd-008～014 已預先寫好）。
 import fs from 'node:fs';
 const [cmd, batch, ...rest] = process.argv.slice(2);
 const DIR = 'batch-progress/desc-severe-20261117';
@@ -13,7 +16,23 @@ const ACC = '3a23f905e8f31d91c85050f2ed304321', NS = '5f65e74b17d644b68a3f542b08
 const STAMP = '20261117';
 const cjk = v => /[぀-ヿ㐀-鿿豈-﫿가-힯]/.test(String(v || ''));
 const plan = JSON.parse(fs.readFileSync(`${DIR}/batches.json`, 'utf8'));
-const keys = plan[batch]; if (!keys) throw new Error('沒有這一批：' + batch);
+const HOOK = {
+  'sd-hook-1': { src: ['sd-001', 'sd-002', 'sd-003', 'sd-004', 'sd-005', 'sd-006', 'sd-007'], skip: ['林強|驚蟄'] },
+  'sd-hook-2': { src: ['sd-008', 'sd-009', 'sd-010', 'sd-011', 'sd-012', 'sd-013', 'sd-014'], // sd-hold-2 七張上線時已有鉤子，跳過
+    skip: JSON.parse(fs.readFileSync('desc-tools/batches/output/sd-hold-2-out-1.json', 'utf8')).map(r => r.key) },
+};
+const OUTDIR = 'desc-tools/batches/output';
+const readOut = b => fs.readdirSync(OUTDIR).filter(f => new RegExp('^' + b + '-out-\\d+\\.json$').test(f))
+  .flatMap(f => JSON.parse(fs.readFileSync(OUTDIR + '/' + f, 'utf8'))).filter(r => !r.hold && r.desc);
+const HOLD_BATCHES = Object.keys(plan).filter(b => /^sd-hold-\d+$/.test(b));
+const live = new Set([...Object.keys(plan).filter(b => /^sd-\d{3}$/.test(b)), ...HOLD_BATCHES].flatMap(b => readOut(b).map(r => r.key)));
+const isHook = HOOK[batch] != null;
+const keys = isHook ? HOOK[batch].src.flatMap(b => plan[b]).filter(k => live.has(k) && !HOOK[batch].skip.includes(k)) : plan[batch];
+if (!keys) throw new Error('沒有這一批：' + batch);
+const researchFiles = k => { const fs2 = [];
+  for (const b of [...(isHook ? HOOK[batch].src : [batch]), ...HOLD_BATCHES]) if (plan[b].includes(k))
+    for (const g of 'abcdef') { const f = `desc-tools/batches/research/${b}-${g}.json`; if (fs.existsSync(f) && JSON.parse(fs.readFileSync(f, 'utf8')).some(x => x.key === k)) fs2.push('/home/user/dip-vinyl-shop/' + f); }
+  return fs2; };
 // severe-descs.json：全部 severe 卡的現行簡介（第 0 步當下 KV 值；triage/in/ 不進 git）
 const inRows = new Map(JSON.parse(fs.readFileSync(`${DIR}/severe-descs.json`, 'utf8')).map(c => [c.k, c]));
 const tri = new Map(JSON.parse(fs.readFileSync(`${DIR}/triage.json`, 'utf8')).map(c => [c.k, c]));
@@ -34,7 +53,16 @@ const outRows = () => fs.readdirSync('desc-tools/batches/output').filter(f => ne
   .filter(r => !r.hold && r.desc); // 寫作層回報的留置列（hold:true、desc 空）不進 QA／KV／manifest
 const parse = v => { if (v == null) return null; try { return JSON.parse(v).desc ?? null } catch { return v } };
 
-if (cmd === 'cards') {
+if (cmd === 'cards' && isHook) {
+  const v = await bulkGet(keys.map(k => 'desc2:' + k));
+  const cards = keys.map(k => { const c = inRows.get(k), s = seed.get(k) || [];
+    const src = HOOK[batch].src.find(b => plan[b].includes(k));
+    return { key: k, artist: c.artist, album: c.album, year: c.year, genres: s[5] || [], srcBatch: src, research: researchFiles(k), liveDesc: parse(v['desc2:' + k]) }; });
+  const miss = cards.filter(c => !c.liveDesc || !c.research.length); if (miss.length) console.log('缺現行稿或研究稿：', miss.map(c => c.key));
+  fs.writeFileSync(`desc-tools/batches/cards/${batch}-cards.json`, JSON.stringify(cards, null, 1));
+  console.log(`補鉤子卡單 ${cards.length} 張 → desc-tools/batches/cards/${batch}-cards.json`);
+}
+if (cmd === 'cards' && !isHook) {
   const cards = keys.map(k => { const c = inRows.get(k), t = tri.get(k) || {}, s = seed.get(k) || [];
     return { key: k, artist: c.artist, album: c.album, year: c.year, classic: c.classic, genres: s[5] || [], currentDesc: c.desc, triageReason: `${t.grade} ${JSON.stringify(t.codes || [])} ${t.why || ''}` }; });
   fs.writeFileSync(`desc-tools/batches/cards/${batch}-cards.json`, JSON.stringify(cards, null, 1));
@@ -61,6 +89,25 @@ if (cmd === 'qa') {
     if (/盤號|目錄號|編號|款號|catalog/i.test(d)) p.push('盤號');
     if (!/^[^。]*《/.test(d) && !d.includes('《')) p.push('無《》');
     if (p.length) { console.log(r.key, '｜', p.join('、')); if (p.some(x => !x.startsWith('薄寫'))) bad++; }
+  }
+  if (isHook) { // 鉤子檢查：第一句＝鉤子
+    const w = t => [...t].reduce((a, ch) => a + (/[\x00-\x7F]/.test(ch) ? 0.5 : 1), 0);
+    const ban = /傑作|必聽|里程碑|獨樹一格|融合多種元素|具有代表性|層次豐富|你|我/;
+    const misc = /軌|曲長|盤號|目錄號|封套|封面|版本|再版|復刻|重發|曲名|A 面|B 面|\d+:\d\d|分鐘/;
+    const head4 = new Map();
+    for (const r of rows) {
+      const m = r.desc.match(/^[^。！？]*[。！？]/); const h = m ? m[0] : ''; const p = [];
+      if (!h) p.push('找不到鉤子句'); else {
+        if (w(h) > 50) p.push('鉤子加權 ' + w(h));
+        if (/^這張專輯/.test(h)) p.push('這張專輯開頭');
+        if (ban.test(h)) p.push('鉤子禁詞 ' + h.match(ban)[0]);
+        if (misc.test(h)) p.push('鉤子雜項? ' + h.match(misc)[0]);
+        if (/^[「『].*[」』][。！？]$/.test(h)) p.push('引號整句');
+        const f4 = [...h.replace(/\s/g, '')].slice(0, 4).join(''); (head4.get(f4) || head4.set(f4, []).get(f4)).push(r.key);
+      }
+      if (p.length) { console.log(r.key, '｜鉤子｜', p.join('、')); bad++; }
+    }
+    for (const [f4, ks] of head4) if (ks.length > 1) { console.log('前四字撞', f4, ks.join(' ／ ')); bad++; }
   }
   console.log(`QA ${rows.length} 張，有問題 ${bad}`);
   for (const f of fs.readdirSync('desc-tools/batches/output').filter(f => new RegExp('^' + batch + '-out-\\d+\\.json$').test(f)))
