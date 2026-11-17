@@ -1979,3 +1979,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
+
+## sd-076（30 張，其餘：Keith Christmas、Keith Mansfield 2、Kem、Ken McIntyre、Kenny Barron、Kenny Burrell 5、Kenny Werner、Kevin Hays 2、Knxwledge 2、Koi.、Konstruktivists、Kool & the Gang、菅野邦彦 2、Kyuss、Lacrimosa、Lady Pank、Ladysmith Black Mambazo、Lamb、Larry Heard、Larry Young 2、Laserdance）— s41
+
+- 研究：3 支 Sonnet，WebSearch 14＋17＋14＝45 次；none 只有 Laserdance《Changing Times》story。日文（菅野邦彦）、德文（Lacrimosa）、波蘭文（Lady Pank）、荷蘭文（Laserdance）母語搜尋多無成果；AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 約 9 次＋WebFetch，facts 標【主線補查】）：Keith Christmas（The Rising Storm：本人不認這張首作、嫌製作過度，Mighty Baby 與 Gordon Huntley 伴奏的鄉村搖滾味）→ story／sound 升 ok；Lacrimosa（英維基 Binningen 錄音、Hall of Sermon；Prog Archives 主題；Metal Music Archives 中提琴手）；Kevin Hays 兩張（Systems Two 錄音與五重奏編制、Yanow 評語；Andalucia 1996 年 12 月錄、Lecuona 盤名曲、Qobuz「年輕鋼琴家」）；Lady Pank、Imo Live（日文搜尋只得英維基複本）、McIntyre、Freedom、Kem 補查無新料，照研究稿薄寫（delayde 前例）。
+- 事實裁定：Voices in Harmony 照研究稿更正舊稿——〈Whole Lotta Love〉器樂版與《Top of the Pops》主題是 Cameron 的 CCS，Cameron 寫大半曲目；Contempo 不寫 Skidmore／Watkins；Blue Lights 2 不寫「深溝標沒上架」；Swingin' 不寫「五個晚上」；Barron 不寫 Sphere 成立細節；Freedom 年份寫 1980 日本首發；McIntyre 寫 1962 錄；Seventh Sense 寫 Blue Note 第一張（非首張領班盤）、不寫 Scofield；菅野邦彦不寫 Apollon 1985；Koi. 不寫地名；Werner 女兒、Kool〈Jungle Harmony〉取樣數、Lacrimosa 淡出兩秒、Laserdance 器材清單、Lady Pank 盤號與詞作者、Ladysmith 獻給 Luthuli 與葛萊美、Larry Heard 廠牌（Mecca／Alleviated 不寫）皆不寫。
+- **薄寫上線不留置**：Kem、McIntyre、Imo Live、Freedom、菅野邦彦 2 張、Laserdance《Changing Times》、Lamb III（聲音寫成一貫路線）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-076.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Keith Christmas《Stimulus》 | 「當時他還在大學讀建築」→「他在大學讀建築技術時就跑民謠俱樂部」 | 讀的是 Building Technology；來源沒把錄音時點綁在學生時期 |
+| Kenny Barron《Imo Live》 | 鉤子「一間小場地」→「在東京中野的 IMO House」 | 「小場地」無出處 |
+| Kevin Hays《Andalucia》 | 鉤子「出道六年」→「年輕的」 | 推算，Qobuz 只說年輕鋼琴家 |
+| Konstruktivists《Psykho Genetika》 | 鉤子由「對黑膠太極端、完整版等十年」改為前作俄國內戰→本作星際的概念轉向 | 鉤子不得取版本差異；完整版一事留在正文一句 |
+
+其餘逐張四問無改：鉤子都對過研究稿（KPM 千張只寄業界、Kem 首週 Billboard 200 第三、Billboard special merit、Louis Smith 最搶眼、庫房擱十六年、Cuscuna「Silver 五重奏換吉他」、Blakey 罕見的 3/4、Burrell／Washington 1970 年代芝加哥之約、Lenny Pickett 製作、Knxwledge 耳機與卡帶取樣、The Find Mag 爵士取樣編進節拍、Koi. 做音樂六個月、Kool 爵士夜暖場出身、Homme 接貝斯音箱、Ladysmith 被禁賽、Lamb 彌賽亞猶太音樂先驅、Heard 自 Mr. Fingers 以來首次開口唱、Laserdance 首張近 15 萬張）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（Kool「節奏軌」是重用伴奏的聲音事實）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-076.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
