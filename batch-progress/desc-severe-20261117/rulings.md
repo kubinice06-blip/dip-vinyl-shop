@@ -1219,6 +1219,57 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-033 53、sd-034 44，主線 14）。
 
+## sd-041（30 張，經典度≥4：Los Saicos、Los Shakers、Los Van Van、Wembler's 2、Los Ángeles Negros 2、Moholo Octet、Louis Philippe、Love Joys、Lowfish、Lucho Bermúdez、Ludus、Lull 2、Maceo Parker、Mad Professor、Madball 3、Magna Carta、Mahmoud Ahmed、寺下誠、Waldron／Lacy、MALTA 2、Marc Houle、Maria del Mar Bonet、Martin Carthy 2）— s23
+
+- 研究：3 支 Sonnet，WebSearch 11＋14＋14＝39 次；無整張 none，Malta 兩張 story none。
+- **主線補查**（WebSearch 6 次＋WebFetch，facts 標【主線補查】）：Mad Professor（RYM／Discogs 聽眾描述：電子鼓、濃回音、長笛效果，只當聲音描述用）、Ludus（LTM 頁轉引 Glasgow Herald：Devine 的斷奏爵士放克與 highlife 式吉他；Linder 唱法）、MALTA《Sparkling》（日文維基：第 1 回日本ゴールドディスク大賞ジャズ・フュージョン部門年度專輯）、《Summer Dreamin'》（佐藤允彦鋼琴）、Los Ángeles Negros《Esta noche》（1971 年兩張 LP 之一）。Louis Philippe、寺下誠補搜無新料，照研究稿薄寫（聲音寫 él 廠牌路線）。
+- 身分／事實裁定：Ludus、《Y volveré》、Love Joys、寺下誠年份兩說不寫年；Wembler's 首張寫「1970 年代初」；Moholo〈Wedding Hymn〉作曲者、Magna Carta 的 Bowie 評語、Waldron／Lacy 的 Berendt 製作、Malta 面名與樂手表、Marc Houle 發行日一律不寫；Waldron／Lacy 寫成四重奏；Madball《Droppin'》第二吉他手名字存疑不寫；Lucho Bermúdez 盤名過長，正文以「這張 1954 年的 LP」帶過不放《》（QA「無《》」一條照收）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-041.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Madball《Ball of Destruction》 | 刪「整張不到六分鐘」「收尾」、刪陣容句 | 曲長／軌序雜項；字數 251 |
+| Madball《Droppin' Many Suckers》 | 「樂團那時並不討喜」→「Cricien 說樂團那時不受歡迎」 | 研究稿是自述 |
+| MALTA《Sparkling》 | 「由ビクター 發行…ジャズ・フュージョン部門」→「由 JVC 發行…1987 年獲頒該獎的年度專輯」 | 與鉤子重複、空格 |
+| Marc Houle、Lull《Journey》 | 補中英空格 | 格式 |
+| Lull《Journey》 | 刪「2024 年由 Cold Spring 重新處理再版」 | 版本雜項 |
+| Carthy《Sweet Wivelsfield》 | 「兩人」→「他與 Hutchings」；刪「十首」、Hutchings 身分說明 | 指涉不清、曲數雜項、字數 |
+| Los Ángeles Negros《Esta noche》 | 刪與鉤子重複的「正值最紅」 | 重複 |
+| Moholo | 「常被視為」→「被視為」 | 單一出處 |
+
+其餘逐張四問無改。Los Van Van「比原版更長、速度稍慢」是重錄精選的故事核心，照收；Bonet 的 Rockdelux 二十世紀西班牙百大第 25 名寫成「被列為」不點名。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-041.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-042（30 張，經典度≥4：Carthy & Swarbrick、Marvin Gaye、中島政雄、Masonna、Mater Suspiria Vision、Mattie Moss Clark、Maulawi、Maurizio Bianchi、Maximum Joy、McCoy Tyner 3、MMW 2、Memphis Slim、Menuets、Merauder、Merzbow、Mess、Michael Chapman、Galasso《花樣年華》、Michael Garrison、Petrucciani 3、Sardaby、Michele Mercure、Mike Osborne Trio、Miles Davis 2）— s23
+
+- 研究：3 支 Sonnet，WebSearch 13＋14＋11＝38 次；整張 none 無，Masonna story none、Memphis Slim 三塊 thin。
+- **主線補查**（WebSearch 6 次＋WebFetch，facts 標【主線補查】）：Memphis Slim（Discogs／Bandcamp：1962 年 5 月 11 日巴黎新錄、四人編制、Vogue 十週年系列，非舊錄音精選）、Masonna（Soundohm：1992 年 12 月自家一人錄音剪輯、Alchemy 1993；聲音描述）、Sardaby《Night Cap》（1970 年巴黎、Heath／Kay、Ellington 督導、AllMusic 與 Dusty Groove）、Galasso（Soundtrack.net、Afterglow 的弦樂與小提琴動機描述）、Chapman《Rainmaker》（The Quietus、Aquarium Drunkard：人聲加吉他、Dudgeon 製作）、Carthy & Swarbrick（Mainly Norfolk 樂器分工）、Mattie Moss Clark（Westbound、Michigan State Community Choir 掛名）。Mattie Moss Clark 補後仍薄，照研究稿薄寫。
+- 身分／事實裁定：Miles《Volume 1》卡單年 1955，正文寫 1956 年出版（Blue Note 與維基一致），卡單 year 欄不動；《Vol. 2》是 1953 年十吋、只收 1953 年 4 月錄音，兩張分寫；Mess 寫成 1975–76 年錄音、1995 年 CD；Mattie Moss Clark 年份兩說寫「1970 年代初」；Chapman 不寫 Ronson／Buckmaster（屬下一張）；Galasso 不把〈Yumeji's Theme〉算給他；Masonna 盤名過長，正文不放《》（QA「無《》」照收，同 sd-041 Lucho Bermúdez）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 16 處，改動檔 `review-sd-042.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Merzbow《Noisembryo》 | 刪 2018 年 Hospital 重剪重母帶雙黑膠 | 版本雜項（刪後 177 字，薄寫範圍內） |
+| Petrucciani 3、Mess、Carthy & Swarbrick、中島政雄、Maulawi、Memphis Slim、Bianchi | 第二句或正文補《盤名》 | 格式 |
+| Petrucciani《Live at the Village Vanguard》 | 刪「1985 年以雙 LP 發行」與標準曲名 | 版本雜項、字數 |
+| Petrucciani《Michel Plays Petrucciani》 | 刪 Abercrombie 參與部分曲目 | 研究稿注明各說不一、字數 |
+| Mike Osborne Trio | 「在酒館樓上駐場了五年」→「成團五年之後，這個常駐酒館樓上的三重奏」 | 研究稿是成團五年 |
+| Memphis Slim、Bianchi | 刪出生地、「早年作品粗暴刺耳」 | 字數 |
+
+其餘逐張四問無改（Gaye〈Grapevine〉被 Gordy 擋下、Maximum Joy 盤名取自紐約電台、MMW《The Dropper》盤名玩笑、Garrison 航海家號獻詞、Galasso 中文片名取自周璇〈花樣的年華〉皆有出處）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-042.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 89 次（研究層 sd-041 39、sd-042 38，主線 12）。
+
 ## sd-043（30 張，經典度≥4：Miles Davis 3、Milt Jackson 2、Milton Henry、Minotaur Shock、Mk.gee、Mohsen Namjoo、Molam Lao、Moonshake、Movietone、Murphy's Law、Mustard Seed Faith、Mylène Farmer、Mystic Eyes、N.EX.T 2、NANIWA EXPRESS 2、Naná Vasconcelos、Milstein、National Health、Native Son、Natural Snow Buildings、Nausea、Necrophorus、Necros、NELL、New Risen Throne）— s24
 
 - 研究：3 支 Sonnet，WebSearch 11＋11＋14＝36 次；無 none。
