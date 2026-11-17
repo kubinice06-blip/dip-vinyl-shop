@@ -143,8 +143,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
 | sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | | |
 | sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
-| sd-072 | 其餘（Interferon … James Brown） | 30 | | |
-| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | | |
+| sd-072 | 其餘（Interferon … James Brown） | 30 | s39 | ✅ 上線 30（前台 30；無留置；主線補查 Joala、Interferon、Jah Warrior、James Brown；Iron Cross 薄寫；CURATED 0） |
+| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | s39 | ✅ 上線 30（前台 30；無留置；主線補查 11 張（Discogs API）；Jazz Playaz、Jazzinuf 2 薄寫；CURATED 0） |
 | sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | s40 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；jinsang、Holt 等薄寫；CURATED 0） |
 | sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | s40 | ✅ 上線 30（前台 30；無留置；主線補查 15 張；Kareem Ali、Kangaroo 薄寫；CURATED 0） |
 | sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |
