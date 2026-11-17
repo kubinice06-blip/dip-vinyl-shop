@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s47：sd-088、sd-089 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-088 上線 30（Slint、Slovenly、Smuv／mt. fujitive、Snapcase 3、Social Tension、SOIL&"PIMP"SESSIONS、Sonia Rosa、Sonny Fortune、Sonny Rollins、Soul-Junk、Soulive、Sounds From the Ground、Spirit of Love、Spirogyra、SME、St. Christopher、Stan Forebee、Sulzmann、Stan Tracey、Cowell、Turrentine 4、State Azure、Di Battista、Stefon Harris、Lacy／Smith）；sd-089 上線 30（Stewart Walker、Stjepko Gut、sToa、Stone、Strapping Fieldhands、Stray Kids 2、Huchard、Subsonic Eye、Suduaya 2、Sugar Loaf Express、Sugar Minott、Sun Electric、Sunburst、Sunny Murray、Suzukiski、Sweeps、SwuM.、Sync24、Tellier、Sīpoli、T.S. Monk 3、Ta-ku 5）。Snapcase 卡帶、Suzukiski、Sweeps、SwuM.、Stjepko Gut 等照 delayde 前例薄寫上線。
+- **主線補查**：Lacy／Smith《Sidelines》（Jorrit Dijkstra〈Existence〉研究文、AllMusic）、Suzukiski《Kamakura》（Zero Gravity 廠牌第一號）。審稿改 sd-088 20 處（單一出處「常被視為」降級、補《盤名》壓字數、Rollins 把 Cranshaw 與 Mtume 混成一人）、sd-089 13 處（補《盤名》、Monk Institute 年份不寫、空格），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-088.json,review-sd-089.json,kv-before-sd-088.json,kv-before-sd-089.json}`、`desc-tools/batches/{cards,research,output}/sd-08[89]*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 88 次。
+
 ### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
 
 - **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。

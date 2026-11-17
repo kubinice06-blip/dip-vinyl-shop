@@ -2381,3 +2381,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-088.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
+
+## sd-089（30 張，其餘：Stewart Walker、Stjepko Gut、sToa、Stone、Strapping Fieldhands、Stray Kids 2、Huchard、Subsonic Eye、Suduaya 2、Sugar Loaf Express、Sugar Minott、Sun Electric、Sunburst、Sunny Murray、Suzukiski、Sweeps、SwuM.、Sync24、Tellier、Sīpoli、T.S. Monk 3、Ta-ku 5）— s47
+
+- 研究：3 支 Sonnet，WebSearch 18＋18＋12＝48 次；none 有 Suzukiski《Kamakura》story／sound、Sweeps《Life and Light》story、SwuM.《Swimming》story。
+- **主線補查**（WebSearch 2 次＋WebFetch，facts 標【主線補查】）：Suzukiski（extended：Discogs 列 Zero Gravity 廠牌第一號發行、Transonic Studio 母帶；RYM 歸 minimal techno／tech house）→ what 升 ok、sound 升 thin；Stjepko Gut（45worlds 只再確認 1987 RTB LP，無新料）；SwuM. Stereofox 2021 訪談頁 404。
+- **薄寫上線不留置**（delayde 前例）：Suzukiski、Sweeps、SwuM.、Stjepko Gut（186 字）、Ta-ku《Tribute》、sToa、Stewart Walker《Live Extracts》、Sunburst、Sīpoli。
+- 事實裁定：Walker 只寫「美國」，不寫亞特蘭大與「10 月 8 日最後一場」；Huchard 寫出研究層查到的 baglama、班鳩琴、手風琴循環（舊稿「沒有演奏者」不實）；sToa 不寫出身城市（Halle／Düsseldorf 兩說）；Stray Kids《THE SOUND》不寫日語原創曲數；Sunburst 只寫渡辺香津美編〈Circus Time〉，不寫成團員；Sugar Loaf Express 不寫錄音日期；Murray 不寫 Lancaster 1966 五重奏；T.S. Monk 不寫隨父巡演年份、Monk Institute 創辦年；Ta-ku《DUSTY Vol.1》不寫「免費」；《Dowhatyoulove》不引 Needle Drop 原話；Sīpoli 不寫 A 面組曲。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-089.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| sToa《Porta VIII》 | 「構想常被連到」→「這則童話被認為是」 | 俄語維基單一出處 |
+| T.S. Monk《The Charm》 | 「常被視為」→「被評為」 | AllMusic 單一出處 |
+| T.S. Monk《Take One》 | 刪「1986 年」 | Monk Institute 創辦年各來源不一 |
+| Stone、Sunny Murray、Sīpoli、Stjepko Gut | 第二句補《盤名》；Murray 刪 Festival Actuel 組團經過與「快速」「開放」壓回 240 | QA 無《》、字數 |
+| Stjepko Gut、Sugar Minott、Stray Kids | 全形逗號後空格、`在lovers` 補空格、「登上……冠軍」改「拿下」 | 格式 |
+
+其餘逐張四問無改：鉤子都對過研究稿（別人放唱片時先用硬體上台、Hampton 大樂團唯一的歐洲人、梅特林克童話、溫柔是給所愛之人最好的東西、費城團唱英國腔、拿掉粗礪聲音、管弦樂團概念照、Django d'Or 新人獎、躺著想到起身面對、團結而非一致、從 ambient 到低音線、直刻不經磁帶、拒絕大廠轉紐約、柏林二人混 trance 與 ambient、七人團只留一張、最喜歡的樂團、Zero Gravity 第一張、一句自介、受嘻哈啟發的 ambient、故意拼錯的 ominous、點著蠟燭聽、不認同錄音室、成軍兩年、R&B 再回爵士、固定陣容、50 天每天一首、夜裡做音樂、Medibank 業務、〈Fall-N-Love〉、DUSTY 系列）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-089.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 88 次（研究層 sd-088 35、sd-089 48，主線 5）。
