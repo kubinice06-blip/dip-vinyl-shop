@@ -8,6 +8,31 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-041/042.json,review-sd-041/042.json}`、`desc-tools/batches/{cards,research,output}/sd-041*、sd-042*`、onboarding manifest 57 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 只剩兩張長盤名「無《》」；鉤子加權 ≤50、同批前四字互異。WebSearch 約 89 次。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s24：sd-043、sd-044 上線（60 張，無留置）
+
+- **結果**：經典度≥4 卡。sd-043 上線 30（Miles Davis 3、Milt Jackson 2、Milton Henry、Minotaur Shock、Mk.gee、Mohsen Namjoo、Moonshake、Murphy's Law、Mylène Farmer、N.EX.T 2、NANIWA EXPRESS 2、Milstein、National Health、NELL、New Risen Throne 等）；sd-044 上線 30（Ferneyhough／Nieuw Ensemble、Noir Désir 3、Nucleus、Nujabes／Fat Jon、O-Hum、O.P. Nayyar、Oliver Lake、Onuma Singsiri、Pageant 2、Pacou、Parameter、Pat Martino、Patricia Barber、Paul Chambers 等）。
+- **主線補查**：sd-043 補 5 張（NANIWA EXPRESS 兩張日文維基與 Sony 介紹、Miles Blue Note 兩張 HRAudio、Mystic Eyes、New Risen Throne），sd-044 補 7 張（Noir Désir 三張法文維基、Pacou、Onuma、Parameter、Pageant 兩張日文維基與 Rock Sanctuary）。
+- **審稿**：sd-043 40 條（單一出處去「常被」、Steamin' 無出處的「早點」、14 張第二句補《盤名》與隨之刪字），sd-044 54 條（刪無出處的「較好作品」、Parameter 比較降級、Onuma 改骨架、Oliver Lake 前四字撞、17 張補《盤名》），逐條在 `rulings.md`。WebSearch 工作階段約 96 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-043/044.json,review-sd-043/044.json}`、`desc-tools/batches/{cards,research,output}/sd-043*、sd-044*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s25：sd-045、sd-046 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-045 上線 30（Paul Jackson、Paulinho da Viola、Peer Raben、Pete Seeger、Peter Kowald、Phil Pratt、Photon Inc.、Pierre Henry 2、Plaid、PNL、Polaris、Psyche \ BFC、Purrkur Pillnikk、Quarteto 1111、Quartetto Italiano 等），sd-046 上線 30（Quicksand 2、Quiet Village、Quilapayún、R.D. Burman、Raison d'être 2、Ramesh、Randy Stonehill 2、Rashied Ali & Frank Lowe、Ray Barretto 2、Re-TROS、Renee Rosnes 2、Rhythm & Sound 2、Rio Reiser、Riow Arai、Robb Kunkel 等）；無留置。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 60/60 新稿，「待店主處理」無新增。
+- **主線補查**：sd-045 補 8 張（Plaid、Broggs、Kowald、Photon、Portion Control 發行廠更正為 In Phaze 等），sd-046 補 9 張（Manic Compression 的 Spin 25 週年專文、Duo Exchange 的 Survival 創立、Re-TROS、Quiet Village 的 Dazed 訪談、Razorcuts 等）。
+- **審稿**：sd-045 改 6 處（Raben 指涉不清、Quartetto「最後一首」無出處換成學者評價、Bellamy 補盤名），sd-046 改 8 處（Barretto 誤把結尾曲的 bata 鼓安在〈Tumbao africano〉、Omerta「第二張」未核實、四張補盤名）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-045/046.json,review-sd-045/046.json}`、`desc-tools/batches/{cards,research,output}/sd-045*、sd-046*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s22：sd-039、sd-040 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-039 上線 30（K. Hand、Kagami、Kaka de Luxe、Kalaparusha、Růžička、Kaseke、Katedra、Ferrier、Stobart、Kalhor／Brooklyn Rider、KENSO 2、Saunderson、Khanate、Killdozer、Killing Time、Killswitch、King Tubby、Kiosk、Klaus Mitffoch、Koes Plus、Kourosh Yaghmaei 2、Kupla、Kurt Elling、L. Voag、Lab Rat XL、Larry Marshall、Larry Young），sd-040 上線 30（Laughing Hyenas、Led Zeppelin、Konitz 2、Lee Morgan 3、Leeway、Lemon Kittens、Leo Parker、Leo Smith、Rita Mitsouko、Ligabue、Lightnin' Slim、Linval 2、Lip Cream、Llach、Lomosonic、Long Fin Killie、Lonnie Smith、Lorelei、Los Bravos、Los Brincos、Los Destellos 2、Los Jaivas 2、Los Mirlos 2）。秘魯／智利／西班牙卡用西文來源。
+- **CURATED_DESCS**：寫稿前預查 60 張 x-cache 全為 KV-HIT；上線後 `front-check` 前台 60/60 新稿，「待店主處理」無新增。
+- **主線補查**：sd-039 補 10 張（KENSO《III》King Records 清水義央自寫解說、《Sparta》、Killing Time No Echo 專文、Růžička none 救回、Stobart、Katedra、Kupla、Larry Young、Larry Marshall、Saunderson），sd-040 補 2 張（Linval、Rita Mitsouko）。
+- **審稿**：sd-039 改 20 處（Saunderson 無出處鉤子換掉、Larry Young／Koes Plus 鉤子去推論、Larry Marshall 刪未定混音者、四張第二句補《盤名》、單一出處「常被」降「被」），sd-040 改 10 處（Lorelei 刪樂團自稱的「後搖滾藍圖」、Rita Mitsouko 漏字、Konitz／Mulligan 補盤名）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-039/040.json,review-sd-039/040.json}`、`desc-tools/batches/{cards,research,output}/sd-039*、sd-040*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。WebSearch 約 100 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s19：sd-033、sd-034 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-033 上線 30（Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Bayle、de Roubaix、Hubbard 4、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari 等）；sd-034 上線 30（Gang of Four、Gato Barbieri、Gene Clark 2、Gerard、Geri Allen 4、Gherkin Jerks、Ghost、Nannini、Fusco、Rubalcaba 3、Googoosh 2、Collier、Grant Green、Gray Matter、Osby 2、Grobschnitt、Gryphon、Manusardi 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
