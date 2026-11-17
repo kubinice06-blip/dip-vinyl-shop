@@ -1218,3 +1218,51 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-034.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-033 53、sd-034 44，主線 14）。
+
+## sd-043（30 張，經典度≥4：Miles Davis 3、Milt Jackson 2、Milton Henry、Minotaur Shock、Mk.gee、Mohsen Namjoo、Molam Lao、Moonshake、Movietone、Murphy's Law、Mustard Seed Faith、Mylène Farmer、Mystic Eyes、N.EX.T 2、NANIWA EXPRESS 2、Naná Vasconcelos、Milstein、National Health、Native Son、Natural Snow Buildings、Nausea、Necrophorus、Necros、NELL、New Risen Throne）— s24
+
+- 研究：3 支 Sonnet，WebSearch 11＋11＋14＝36 次；無 none。
+- **主線補查**（facts 標【主線補查】）：NANIWA EXPRESS 兩張（日文維基、Sony 再發行介紹、ジャズ資料館：關西現場話題、DUKE 固定班底、年演 160 場、武道館）、Miles Davis《Volume 2》《Young Man With a Horn》（HRAudio：1952–54 低潮、Lion 的信任、海洛因、WOR／Van Gelder 錄音）、Mystic Eyes（Record Collector 摘要：1978 為 Thompson 錄；讀者評論不採）、New Risen Throne（零售文案與 Stiehl 自述，仍薄寫）。
+- 事實裁定：Milton Henry 不寫 Sly Dunbar（挪用節奏的掛名）、年份寫「1980 年代中期」；《Steamin'》不寫「最後一張錄音室專輯」；Minotaur Shock 不寫第幾張、不用舊稿 Abbey Road／在家錄；Milstein 沒有巴哈、只寫 1975 年錄於慕尼黑；Naná 年份 1974／1975 兩說不寫；National Health 不列人聲；Natural Snow Buildings 舊稿 VHS 盒、紅卡帶不寫；New Risen Throne 舊稿「Stielh」拼錯（實為 Stiehl，即 Gabriele Panci）。
+- 併行裁定：sd-043 與 sd-044 寫作層 4 支同時跑（PLAN 寫作 2 支上限是為了 WebSearch 額度，寫作層不上網，不受影響）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改動檔 `review-sd-043.json`，40 條）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| 《Steamin'》 | 「為了早點轉投 Columbia」→「為了轉投 Columbia」 | 「早點」無出處 |
+| Milt Jackson 1956、NANIWA《Modern Beat》、Nausea、Necrophorus | 「常被視為」→「被視為／被認為是」 | 各只有單一出處（Feather、New Grove、英文維基、Outburn） |
+| NANIWA《No Fuse》 | 「目標是重現現場感」→「聽起來像現場般逼真」 | Sony 介紹原意 |
+| 14 張 | 第二句「這是／這張」→ 以《盤名》起句 | QA「無《》」；補完超字的刪次要細節（1500 系列、Stan Getz、lam 分支、奧林匹克體操館、〈Paganiniana〉以第 24 號為本、Ba Da Bing 前的回授句等） |
+
+其餘逐張四問無改：逐條對過研究稿（Farmer 讀 Cioran 與〈Désenchantée〉九週冠軍、Moonshake 不識譜貼圖表、Murphy's Law 女孩與免費啤酒、Mustard Seed Faith 原盤名被 Chuck Smith 勸改、Mk.gee 刪成子彈、N.EX.T 三豐百貨與聖水大橋、Alan Gowen 白血病與籌喪葬費、Necrophorus 放大冰塊、Necros 是 Touch and Go 第一個錄音的團皆有出處）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-043.json`；30 鍵（皆無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 28 處。
+
+## sd-044（30 張，經典度≥4：Nieuw Ensemble／Ferneyhough、Nocturnal Emissions、Noir Désir 3、Nucleus、Nujabes／Fat Jon、O-Hum、O.P. Nayyar、Oliver Lake、One Arc Degree、Oneness of Juju、Onuma Singsiri、Opposition Party、Outburst、Outer Limits 2、Ovidi Montllor、Pacou、Pageant 2、Palomatic、Pan Afrikan Peoples Arkestra、Parameter、Parissa & Ensemble Dastan、Parris Mitchell、pasteboard、Pat Martino、Patricia Barber、Paul Chambers）— s24
+
+- 研究：3 支 Sonnet，WebSearch 13＋20＋17＝50 次；none：Pacou（story／sound）、Onuma（story）、Parameter（story）。
+- **主線補查**：Noir Désir 三張（法文維基：Studio du Manoir、Cantat 聲帶手術、節拍器比賽、Lajkó 與 Akosh；ICP 布魯塞爾、Broudie 與 Barthe 衝突；Manu Chao、Fontaine、九一一同日）、Pacou（AllMusic 與 Intro 樂評摘要）、Onuma（IsanGate 摘要：生年、作曲者 Suthum Phairimbueng、劇團女主角）、Parameter（Deroy 私壓、Barrett 影響、再發行）、Pageant 兩張（日文維基：中嶋一晃起初組 Genesis 翻唱團、永井博子；Rock Sanctuary：中嶋退團後以永井為中心）。Pacou、Onuma、Parameter 補查後仍薄寫，不留置。
+- 事實裁定：Naya Daur 的 Filmfare 是整部配樂、不寫椰殼馬蹄聲；samurai champloo 不寫序號與〈Aruarian Dance〉取樣；O-Hum 不寫獲准年份；Oliver Lake 照維基寫小廠倒閉；Ovidi Montllor 不寫曲數與「沒有再版」（實有 1997 再發行）；Pageant 不寫 King 商品說明與「一百二十小時」，《夢の報酬》照日文維基寫第二張；Pat Martino 只寫整張入圍第 44 屆葛萊美；Barber 錄音年、Chambers 發行月不寫；Onuma 不用 Jumping Jack Flash 那條（別張的歌）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改動檔 `review-sd-044.json`，54 條）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Outer Limits《A Boy Playing…》 | 刪「常被視為樂團較好的作品之一」 | 研究稿無出處 |
+| Nucleus | 「常被視為」→「被視為」 | 單一出處（Be With） |
+| Parameter | 「常被拿來和 Kevin Ayers、早期 Pink Floyd 並提」→「也被拿來和 Kevin Ayers 相比」 | 一則論壇網友＋再發行店文案 |
+| Onuma Singsiri | 開頭兩句都講同名曲、沒交代唱片 → 鉤子＋《สาวอิสานรอรัก》1979 年專輯第二句；「列為 第二代」→「稱為第二代」 | 骨架第二句；多餘空格；單一出處 |
+| Oliver Lake | 開頭「1971」與 Parameter 撞前四字 → 年份移入正文 | 同批前四字互異 |
+| 17 張 | 第二句以《盤名》起句；超字的刪次要細節 | QA |
+
+其餘逐張四問無改：666.667 的節拍器比快與鍵盤（研究稿有）、《Des visages》馬拉喀什等地近兩年「重新學習樂器」、Cantat 詞進錄音室前兩週未完、渡辺第一人選是 Nujabes、One Arc Degree 地底萌發的生命（Bandcamp 簡介）、Plunky Branch 想做 Pharoah 式唱片、Outburst 三集紀錄片、Parissa 革命後女性不能公開演唱、Martino 1980 年腦部手術失憶，皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-044.json`；30 鍵（皆無 desc4）bulk put Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 96 次（研究層 sd-043 36、sd-044 50，主線 10）。
