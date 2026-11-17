@@ -7,6 +7,30 @@
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-060.json,review-sd-061.json,kv-before-sd-060.json,kv-before-sd-061.json}`、`desc-tools/batches/{cards,research,output}/sd-06{0,1}*`、onboarding manifest 55 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。WebSearch 約 97 次。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s32：sd-058、sd-059 上線（60 張，無留置）
+
+- **結果**：「其餘」組。sd-058 上線 30（Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）；sd-059 上線 30（Bobby Hutcherson 10、Bobby Lyle、Bobby Watson & Horizon 2、Body of Light、boerd、Bohren 2、Booker Ervin、Bora Roković、Born Against、Bourbonese Qualk、Bozi Boziana、Brand Nubian 2、Brass Construction、Bread, Love and Dreams、Breakdown、Bridget St John、Brigth Engelberts、Brock Berrigan）。查不到專輯層級資料的照 delayde 前例薄寫上線、不留置（Blue Wednesday《Beat Tape 2》149 字）。
+- **主線補查**：17 次 WebSearch＋WebFetch，補 Birdland（Discogs PGP RTB）、Blind Light、Blackbird、Blue Wednesday、Hutcherson 三張、Bohren《Midnight Radio》（Visions／Babyblaue）、Born Against、boerd、Bobby Watson、Breakdown、Brigth Engelberts、Bozi Boziana。
+- **審稿**：sd-058 改 9 處（版本雜項：限量份數、黑膠初版、Tzadik 重發；Blue Wednesday 發行日鉤子改「這是什麼」開頭；Black Tape 聽眾留言改具名樂評；《Standards》壓字數），sd-059 改 1 處（空格）。研究層更正：Holiday《Ladylove》巴塞爾非科隆、Blind Light 是 Fier 不是 Laswell、《Spiral》非日本首發、Jumblequeen 製作人 Leo Lyons、boerd 是 Bård Ericson。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-058/059.json,review-sd-058/059.json}`、`desc-tools/batches/{cards,research,output}/sd-058*、sd-059*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題；鉤子加權 ≤50、同批前四字互異。WebSearch 約 88 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s31：sd-056、sd-057 上線（60 張，無留置）
+
+- **結果**：「其餘」組。sd-056 上線 30（Armando、Arpanet、Art Blakey 9、Art Ensemble of Chicago、Grumiaux、Rubinstein、O'Farrill、Astral Engineering、ASYLUM、At the Drive-In、Yupanqui、Ataraxia、Atrium Carceri 2、Attrition、Audio Active、Augustus Pablo、AUX 88 4、B-Side & Philanthrope）；sd-057 上線 30（B.T. Express、Baby Keem、Bananarians、Barrington Levy 5、Barry White、Bcalm、Beatrice Rana、Beefeater、Ben Frost 3、Wuorinen、Bennie Wallace 2、Benny Green 2、Parmegiani、Betty Wright、Biff Bang Pow!、Big Bag、Big John Patton 6）。
+- **主線補查**：14 張（Bananarians 由三塊 thin 以 disk union 文案與前團員回憶救回；Bcalm 以 Lofi Girl 官方 Bandcamp 薄寫；ASYLUM、AUX 88、Bennie Wallace、Benny Green、Fortitude III 等）；Big Bag、Astral Engineering 照協調端裁定薄寫上線。
+- **審稿**：sd-056 改 33 處（多為第二句補《盤名》與壓字數；Astral 刪廠牌自封「chillout 經典」、Ataraxia 刪無出處的流通說法、Pablo 鉤子避封面字眼），sd-057 改 20 處（單一出處去「常被」7 張、Bcalm 鉤子改用客席、Bananarians 刪 2010 完整版）。研究層糾正舊稿：Roots & Herbs 六首全為 Shorter、Attrition 非遊戲配樂、Ataraxia 是日本團、Lineage 是 Blue Note。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-056/057.json,review-sd-056/057.json}`、`desc-tools/batches/{cards,research,output}/sd-056*、sd-057*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題；鉤子加權 ≤50、同批前四字互異、無軌序／曲長／盤號。WebSearch 約 102 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s30：sd-055 上線 30、sd-hold-6 救回 4、sd-fix-1 張露卡改掛名張璐
+
+- **結果**：sd-055（其餘組 Alain Bashung … Arlo Parks）上線 30、無留置；sd-hold-6（sd-047／054 留置的藤井貞泰、A-Sound、99.99、Akal Dub）4 張全上線，留置清空；sd-fix-1：張露《繁星點點 張露》改掛名**張璐《繁星點點》**（年份 1977、曲風 pop、封面換 Discogs 33707097 LP 原版），delayde《finding solitude》薄寫上線。
+- **張璐改名六處**：seed、KV（desc2／desc4 新稿、rating4 照搬、cover6 Discogs、mapgenre3 新寫不照搬；舊鍵 5 個未刪，列 `sd-fix-1-kv-deletes-pending.json`）、card_catalog（`migrate-card-catalog-ids.mjs` 擴充 `oldAlbum／newAlbum` 後搬 id，再 PATCH coverUrl）、card-preview-status、apple-audio-map、card-subgenres（genre-tree `--pull --write`，`tw-pop-artists.json` 加張璐）；`onboarding-manifest-c106` 該筆原地改；Discogs 封面名冊加一筆；情緒三軸重建。藝人介紹 `ar-d-941` 補洞後三格 none → skipped。
+- **主線補查**：Altan Urag 兩張（Forbes5 期刊專文）、Apelsin（愛沙尼亞文維基）、And One；Aretha《Aretha》舊稿誤寫 1980 Arista 盤已改回 1961 Columbia 首張。審稿改 7 張（補《盤名》、壓字數、刪軌數／雙 CD／無出處負評）。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,review-sd-055.json,kv-before-sd-055/sd-hold-6/sd-fix-1-*.json,tools/fix1-rename.mjs,sd-fix-1-*}`、`desc-tools/batches/{cards,research,output}/sd-055*、sd-hold-6*、sd-fix-1*`、`seed_cards.json`、`card-preview-status.js`、`card-subgenres.json`、`genre-tree.json`、`data/apple-audio-map-v1.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`scripts/migrate-card-catalog-ids.mjs`、`tw-pop-artists.json`、onboarding manifest 7 份、`desc-tools/batches/artist/{progress.json,research/ar-d-941-g1.json}`。
+- **驗證**：`kv-token-check` exit 0；sd-055 回讀 30/30、sd-hold-6 4/4、sd-fix-1 6/6（含改名 5 鍵）；`front-check` 前台 36/36 新稿、CURATED 0；`verify-album-onboarding --published`（張璐）0 error；QA 0 問題（剩 Side By Side 誤判 A／B 面 1 條）。
+
 ### 2026-11-17｜dip-vinyl-shop｜嚴重簡介線兩張最終留置的裁定（店主授權）
 
 - **店主**：「給你決定就好」。張露《繁星點點 張露》→ 改掛名張璐《繁星點點》（Discogs 33707097、Rti 節目；串流誤掛），照 pool-fix-20261016 六處改法＋封面重核＋藝人介紹；delayde《finding solitude》→ 拿掉曲數曲長冷知識後薄寫上線。兩件交給 s30（`sd-fix-1`）。
@@ -37,6 +61,7 @@
 - **審稿**：sd-051 改 18 處（單一出處去「常被」7 張、Sea Urchins 鉤子與正文矛盾、Swankys 刪重發資訊、3 張補《盤名》），sd-052 改 11 處（〈Amal Hayaty〉刪演唱長度、Tradition 不寫精確年差、3 張補《盤名》）；Umm Kulthum 三張盤名即單一長歌，用〈〉照收。
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-051/052.json,review-sd-051/052.json}`、`desc-tools/batches/{cards,research,output}/sd-051*、sd-052*`、onboarding manifest 59 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 只剩 Umm Kulthum 三張「無《》」；鉤子加權 ≤50、同批前四字互異。WebSearch 約 98 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s26：sd-047、sd-048 上線（59 張，留置 1）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-047 上線 29（Robert Nighthawk、Roberta Flack、Rod Taylor 2、Ron Carter、Rorschach、S.E.S. 2、S.L.A.C.K.、S.O.B.、Celibidache、Shahram Nazeri 等），藤井貞泰《Prelude to a Kiss》查無專輯資料留置（`held-sd-047.json`）；sd-048 上線 30（SHAKKAZOMBIE、Sick of It All 3、Siekiera、Sima Bina、Slank、Snakefinger、Sphere、Starless、Stefon Harris 等）。
@@ -60,6 +85,7 @@
 - **審稿**：sd-043 40 條（單一出處去「常被」、Steamin' 無出處的「早點」、14 張第二句補《盤名》與隨之刪字），sd-044 54 條（刪無出處的「較好作品」、Parameter 比較降級、Onuma 改骨架、Oliver Lake 前四字撞、17 張補《盤名》），逐條在 `rulings.md`。WebSearch 工作階段約 96 次。
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-043/044.json,review-sd-043/044.json}`、`desc-tools/batches/{cards,research,output}/sd-043*、sd-044*`、onboarding manifest 58 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s25：sd-045、sd-046 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-045 上線 30（Paul Jackson、Paulinho da Viola、Peer Raben、Pete Seeger、Peter Kowald、Phil Pratt、Photon Inc.、Pierre Henry 2、Plaid、PNL、Polaris、Psyche \ BFC、Purrkur Pillnikk、Quarteto 1111、Quartetto Italiano 等），sd-046 上線 30（Quicksand 2、Quiet Village、Quilapayún、R.D. Burman、Raison d'être 2、Ramesh、Randy Stonehill 2、Rashied Ali & Frank Lowe、Ray Barretto 2、Re-TROS、Renee Rosnes 2、Rhythm & Sound 2、Rio Reiser、Riow Arai、Robb Kunkel 等）；無留置。
@@ -85,6 +111,7 @@
 - **審稿**：sd-033 改 6 處（Cookers 兩集鉤子撞「1938」換材料、Foje 刪無出處的「支持獨立」、三處刪黑膠／CD 版本雜項），sd-034 改 4 處（The Blessing 聲音句改回出處說法、Ginhouse 鉤子前四字撞），逐條在 `rulings.md`。WebSearch 工作階段約 111 次。
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-033/034.json,review-sd-033/034.json}`、`desc-tools/batches/{cards,research,output}/sd-033*、sd-034*`、onboarding manifest 58 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s20：sd-035、sd-036 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-035 上線 30（Gunnar Graps、Hampel、Csík、Hallucinogen、Mobley、Harold Budd 2、HAT、Hayedeh、Heavenly、Karajan 2、Mwandishi、High Rise 3、Horace Andy、Parlan 等）；sd-036 上線 30（Horace Silver 5、Tapscott、I Mean Us 2、IAM、Kalniņš、Indochine、Infiniti、Inoyama Land、Integrity、Isis、IU、Jackie McLean 2 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
@@ -92,6 +119,7 @@
 - **審稿**：sd-035 改 7 處（Horace Andy 鉤子去版本雜項、Parlan 鉤子與 Mobley 撞母題換掉、Hayedeh 刪載體雜項），sd-036 改 6 處（未核實的 Por 出身、Jacknife 同場陣容、單一出處「常被」），逐條在 `rulings.md`。WebSearch 工作階段約 101 次。
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-035/036.json,review-sd-035/036.json}`、`desc-tools/batches/{cards,research,output}/sd-035*、sd-036*`、onboarding manifest 59 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s21：sd-037、sd-038 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-037 上線 30（Jacky Terrasson、du Pré 2、Coursil、James Blake、James Brown、James Carr、Wróblewski、Japanese Telecom、Jarcha、Heifetz、Jason Moran 4、Jeremih、Jessica Bailiff、JFA、Jill Scott、Jimmy Smith、jinsang 等）；sd-038 上線 30（Joe Bataan 2、Joe Lovano 3、Joe McPhee、Joe Tex、Coltrane《Soultrane》、John Scofield 5、José Afonso 2、Juan Gabriel、Juaneco y su Combo、Judge 2、Julian Lage、Jumprava 等）。**兩批都無留置**。
@@ -633,6 +661,7 @@
 - **11-17 每日第 12 批**（395 次）：找到 101 全收、寫入 100。累計 2,453，剩 1,589（未搜 411）。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
+
 ### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）
 
 - **店主 11-06**：「我的卡牌遊戲從序章開始就不夠好玩，以我的卡牌遊戲為基底做一個試做的更加好玩版」。雲端工作階段，PR #409。
@@ -708,6 +737,7 @@
 - **八格**（合併 md44／45、ml76／77、ml80／81 後重建）：恍惚 1,914、頹靡 1,870；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
 - **主要檔案**：`batch-progress/add-20261106-{ml78,ml79}/`、`onboarding-manifest-add-20261106-ml7[89]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml78,curation-ml79,master-ml78,master-ml79,master-override-ml7[89],curation-from-pick-ml78.mjs,drop-research-ml78.mjs,cut-artist-intros-ml78.mjs,RES-NOTE-drums.md,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[89]*`、`batch-progress/mood-axes/score-{ml78,ml79}/`、`batch-progress/artist-intro/{roster-ml78-ar-d-811,roster-ml79-ar-d-812,ar-d-rulings-ml78.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36、29／29；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml76／ml77：66 張上線（落恍惚 47）＋藝人介紹 44 位
 
 - **店主 11-06**：「有些要死不活的音樂也會有鼓推進」「全都上架吧」→ 前兩輪因有拍推進被汰／被舞池標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml76（`pick-ml76.json` 47，條號 24521）、ml77（`pick-ml77.json` 47，條號 24601）。只汰「鼓＋攻擊性」與「舞池推進」，**判輕判冷不汰**（落其他格照實計）；前輪研究稿 11 張直接沿用、只補鼓型。
@@ -729,6 +759,7 @@
 - **八格**（合併 md44／md45 後重建）：恍惚 1,821、頹靡 1,854；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
 - **主要檔案**：`batch-progress/add-20261106-{ml80,ml81}/`、`onboarding-manifest-add-20261106-ml8[01]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml80,curation-ml81,master-ml80,master-ml81,cut-artist-intros-ml80.mjs,SCENES.md}`、`batch-progress/bandcamp-dt-20261105/RES-ADDENDUM-r3.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml8[01]*`、`batch-progress/mood-axes/score-{ml80,ml81}/`、`batch-progress/artist-intro/{roster-ml80-ar-d-813,roster-ml81-ar-d-814,ar-d-rulings-ml80.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36、38／38；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp「有鼓」名單第三輪 md44／md45：55 張上線（落頹靡 37）＋藝人介紹 31 位
 
 - **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍被汰或被標籤篩掉的 473 張切十批、五個工作階段並行；本工作階段做 md44（`pick-md44.json` 48，條號 25001）與 md45（`pick-md45.json` 47，條號 25081）。卡單即策展；**只汰攻擊性鼓、舞池推進、資格與同人超量，判暖判輕不汰**。前兩輪研究過的 18 張沿用 `dropped-research.json`，只補鼓型。
@@ -758,6 +789,7 @@
 - **藝人介紹**：ar-d-531 寫 8／不寫 1（WMD 無國籍來源）；合併 main 後 ASURA 讓給先上線的 ar-d-527，本批實際上線 7 位；審稿改 2 處（Soapkills 單源後輩影響句、Rabit 本人說法改歸因）。
 - **主要檔案**：`batch-progress/add-20261106-md43/`、`onboarding-manifest-add-20261106-md43-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md43,master-md43,cut-artist-intros-md43.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md43*`、`batch-progress/mood-axes/score-md43/`、`batch-progress/artist-intro/{roster-md43-ar-d-531,ar-d-rulings-md43.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 0 error；`verify-wave-kv` 11／11；`build-card-moods` 錨點 104/104；`qa-artist out` 只剩不寫的 WMD 缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp downtempo 候選第二輪 ml71／ml72：25 張上線（落恍惚 18）＋藝人介紹 8 位
 
 - **店主 11-06「繼續」**：第一輪 289 張上線 104 後，剩下靠近邊界的 612 張先濾掉舞池／嘻哈／dub／soul／pop 標籤 → 232 張分五批、三個工作階段並行；本工作階段做 ml71（`pick-ml71.json` 52）與 ml72（`pick-ml72.json` 52），條號 23961／24041。卡單即策展，主線組 curation → master → 卡單，不補人。
@@ -769,6 +801,7 @@
 - **八格**（合併 ml73／md42 後重建）：恍惚 1,752、頹靡 1,798；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
 - **主要檔案**：`batch-progress/add-20261106-{ml71,ml72}/`、`onboarding-manifest-add-20261106-ml7[12]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml71,curation-ml72,master-ml71,master-ml72,cut-artist-intros-ml71.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[12]*`、`batch-progress/mood-axes/score-{ml71,ml72}/`、`batch-progress/artist-intro/{roster-ml71-ar-d-527,roster-ml72-ar-d-528,ar-d-rulings-ml71.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 18／18、9／9；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp downtempo 候選第二輪 ml73／md42：17 張上線（落格 16）＋藝人介紹 6 位
 
 - **店主 11-06「繼續」**：第二輪 232 張（靠近邊界、已濾舞池節拍標籤）分五批三個工作階段並行；本工作階段做 ml73（恍惚，卡單 51，條號 24121）與 md42（頹靡，卡單 39，條號 24201）。卡單即策展，主線組 `curation-ml73／md42.json` → master → 卡單；同藝人跨並行卡單與池中一起勻（本線每位最多一張、兩批合計不過兩張）。
@@ -779,6 +812,7 @@
 - **藝人介紹**：ar-d-529 寫 3（Delerium、Veryan、Ian Hawgood；不寫 VANITAS命死）、ar-d-530 寫 3（Melanie De Biasio、Miktek、Cell）；審稿改 6 處（刪單源評價句、「據」轉述詞 3、兩源不符的軼事、Miktek 補第二來源後寫國籍）。介紹 10,509 → 10,515。
 - **主要檔案**：`batch-progress/add-20261106-{ml73,md42}/`、`onboarding-manifest-add-20261106-{ml73,md42}-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml73,curation-md42,master-ml73,master-md42,cut-artist-intros-ml73.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-{ml73,md42}*`、`batch-progress/mood-axes/score-{ml73,md42}/`、`batch-progress/artist-intro/{roster-ml73-ar-d-529,roster-md42-ar-d-530,ar-d-rulings-ml73.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 19／19；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp downtempo 候選 ml70／md39：36 張上線（落格 34）＋藝人介紹 18 位
 
 - **店主 11-06**：Bandcamp downtempo 1,901 張候選「先做最遠的」→ 289 張分六批、三個工作階段並行；本工作階段做 ml70（恍惚，卡單 49）與 md39（頹靡，卡單 47）。卡單即策展，主線組 `curation-ml70／md39.json` → master → 卡單。
@@ -789,6 +823,7 @@
 - **藝人介紹**：ar-d-523（寫 8、不寫 5）、ar-d-524（寫 16、不寫 1）；審稿改 13 處（Cujo 名號時序、單源評價句、「據」轉述詞、補第二來源）。合併 main 後 7 位與並行批重複、讓給已上線版本；Lauge 以本線為準（ar-d-525 誤寫二人組，已移除）→ 最終上線 18 位（ar-d-523 7、ar-d-524 11），介紹總數 10,509。
 - **主要檔案**：`batch-progress/add-20261106-{ml70,md39}/`、`onboarding-manifest-add-20261106-{ml70,md39}-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml70,curation-md39,master-ml70,master-md39,cut-artist-intros-ml70.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-*`、`batch-progress/mood-axes/score-{ml70,md39}/`、`batch-progress/artist-intro/{roster-ml70-ar-d-523,roster-md39-ar-d-524,ar-d-rulings-ml70.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp downtempo 候選 md40／md41：37 張上線（落頹靡 31）＋藝人介紹 20 位
 
 - **店主 11-06**：Bandcamp downtempo 1,901 張依 Last.fm 收聽排序、便宜模型粗估落格，「先做最遠的」289 張分六批、三個工作階段並行；本工作階段做 md40＋md41（條號 23801／23881），卡單即策展、不派策展代理。
@@ -800,6 +835,7 @@
 - **八格**：頹靡 1,732 → 1,766（含本批，合併 ml68／ml69 後重建）；錨點 104/104 同格。類型樹、抽卡封面、card-moods 重建。
 - **主要檔案**：`batch-progress/add-20261106-{md40,md41}/`、`onboarding-manifest-add-20261106-md4[01]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md40,md41,master-md40,md41,cut-artist-intros-md40.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md4*`、`batch-progress/mood-axes/score-{md40,md41}/`、`batch-progress/artist-intro/{roster-md40-ar-d-525,roster-md41-ar-d-526,ar-d-rulings-md40.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 37／37；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp downtempo 候選 ml68／ml69：31 張上線（落恍惚 27）＋藝人介紹 18 位
 
 - **店主 11-06**：Bandcamp downtempo 等標籤 1,901 張依 Last.fm 收聽排序、粗估落格，「先做最遠的」289 張分六批三個工作階段並行；本工作階段做 ml68（`pick-ml68.json` 50）、ml69（`pick-ml69.json` 49）。卡單即策展結果，主線逐張過身分、去重、同人上限、聲音初判。
@@ -928,6 +964,7 @@
 - **藝人介紹**：ar-d-279（ml62，8 位）、ar-d-280（ml63，8 位）照 dip-artist-intro 跑完上線；審稿改 11 處（刪「據說／據傳」與單源評價）。補洞層回報搜尋結果夾帶提示注入（要求寫食譜），已忽略。
 - **主要檔案**：`batch-progress/add-20261105-{ml62,ml63}/`、`batch-progress/mood-cells-20261022/{curation-ml62a,ml62b,ml63a,ml63b,master-*,cut-artist-intros-ml62.mjs}`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-ml6*`、`batch-progress/mood-axes/score-{ml62,ml63}/`、`batch-progress/artist-intro/roster-ml6[23]-*.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 39／39 一致；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
+
 ### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚電子二線 ml64／ml65：恍惚電子盤 21 張上線（落恍惚 14）＋藝人介紹 14 位
 
 - **店主 11-04**：「頹靡跟恍惚還是太少了，多一點電子類的，嘻哈跟雷鬼太多了。」本線挖二線電子（只收 genres 首位 electronic）；並行的 ml62／ml63 做非電子暖盤。
@@ -951,6 +988,7 @@
 - **條號**：ml60 22681–22760、ml61 22761–22840（跳過 22521–22680 留給並行的 md35／md36）。SCENES.md 加第 80、81 列並標結果。
 - **主要檔案**：`batch-progress/add-20261104-{ml60,ml61}/`、`batch-progress/mood-cells-20261022/{curation-ml60a,ml60b,ml61a,ml61b,master-ml60aml60b,master-ml61aml61b}.json`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261104-ml6*`、`batch-progress/mood-axes/score-{ml60,ml61}/`、`batch-progress/artist-intro/roster-{ml60,ml61}.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35 一致；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
+
 ### 2026-11-04｜dip-vinyl-shop｜add-20261104-md35／md36：頹靡電子 45 張上架＋藝人介紹 25 位
 - 店主 11-04「頹靡跟恍惚太少，多一點電子類，嘻哈跟雷鬼太多」→ 情緒薄格頹靡線兩批只收電子盤（genres 首位 electronic）。SCENES.md 加第 82／83 順位、條號 22521／22601。
 - md35（深暗 dubstep／post-dubstep、hauntology、witch house）：策展 51 → 主線汰 6 → 研究汰 19（140 BPM 推進、明亮、聲音零來源）→ **上線 26**；落頹靡 24/26＝92%（Ekoplekz、Black Rain 有鼓判躁）。
@@ -994,6 +1032,7 @@
 - **驗證**：published gate 本批兩張只剩 album_overrides.tier（待後台）；c87 既有 2 error（渋谷毅、Sadayasu Fujii 的 KV 與 manifest 不一致）非本批。
 - **留給本機**：`batch-progress/apex-fix-20261104/album-overrides-tier.json`。
 - 主要檔案：`seed_cards.json`、`onboarding-manifest-c87-20260904.json`、`onboarding-manifest-add-20260816.json`、`ALBUM_ONBOARDING.md`、`batch-progress/apex-fix-20261104/*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜add-20261104-zxzz：左小祖咒《左小祖咒在地安門》＋代表作《你知道東方在哪一邊》《走失的主人》上架
 
 - **店主 11-04**：「左小祖咒竟然沒有地安門那張。」正式盤名是《左小祖咒在地安門》（2001）。順查代表作補 2 張；卡池左小祖咒由 2 張變 5 張。
@@ -1088,6 +1127,7 @@
 - **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0。
 - **留給本機**：`album_overrides.tier`（`batch-progress/add-20261104-ax8/album-overrides-tier.json`：設 10、清 1）；Schaeffer listeners 查無。卡池《Pierre Schaeffer｜Musique concrète》疑似 GRM 多人合輯掛 Schaeffer 一人，另排查。
 - 主要檔案：`batch-progress/add-20261104-ax8/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax8{a..f}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax8-*`、`onboarding-manifest-add-20261104-ax8-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/roster-ax8-ar-d-270.json`。
+
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax7：異端升格 8 張（放寬後標準；卡池既有卡）
 
 - **店主 11-04「稍微放寬」**：異端改為「可信來源描述出具體、持續整張的高強度聽感就收」（全程無調、無固定節拍、集體即興密度極高、回授／失真音牆、尖叫式吹奏、超長篇不間斷、極端音量），不再要求樂評下「極端」結論；仍不收結構清楚的前衛、spiritual／modal、一般碾核與技術死金、只有局部激烈的盤。寫進 `ALBUM_ONBOARDING.md` §3 與 apex-new PLAN。ax7 只做卡池既有盤升格，ax8（另一工作階段）做新上架。
@@ -1128,6 +1168,7 @@
 - **驗證**：prepare／published gate 0 error；對 origin 224 分支 seed 去重 0 撞；同級每藝人一張 0 重複。審稿 3 處（`batch-progress/add-20261104-ax5/rulings.md`）。
 - **留給本機**：`album_overrides.tier` 13 張用後台「依卡池同步頂點旗標」（清單 `album-overrides-tier.json`＋manifest）。研究稿記下的未升格卡舊簡介疑點（Lehn/Schmickler《Bart》時長 30:10、曲名〈Du Funktion〉；Oxley《Ichnos》〈Cadilla〉是四重奏）另排修。
 - **主要檔案**：`batch-progress/add-20261104-ax5/`、`onboarding-manifest-add-20261104-ax5-20261104.json`、`seed_cards.json`、`desc-tools/batches/{cards,research,output}/{ax5u,add-20261104-ax5}*`、`batch-progress/mood-axes/score-ax5/`、`data/artist-intros/*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax6：異端新上架 18 張（卡池沒有的藝人；含店主點名 Peter Kowald Quintet、姜泰煥）
 
 - **內容**：店主「異端有很多自由爵士可以收錄吧？」「應該可以加到 200」→ 撤銷「不收能量型自由爵士」。ax6 只上卡池完全沒有卡的藝人（`chk-artist.mjs` 逐位比對），8 組策展提名 50、研究層汰 32，上線 18 張全為 heresy：Peter Kowald Quintet、강태환《Live At Café Amores》、Okkyung Lee《Ghil》、Birchville Cat Motel、Blasphemy、Conqueror、Bestial Warlust、Black Witchery、Ildjarn、Sete Star Sept、Burning Witch、Dragged Into Sunlight、Mauricio Kagel《Acustica》、Zeitkratzer《WHITEHOUSE electronics》、Mike Patton《Adult Themes for Voice》、Sightings《Absolutes》、Stalaggh《Projekt Misanthropia》、Orthrelm《OV》。**異端 109 → 127**（同級每藝人一張，驗過 0 重複）。
@@ -1168,6 +1209,7 @@
 - **待店主**：seed《Kings of Mali》（Chico Freeman）年份 1977 是錄音年，發行為 1978（未動 seed）。
 - **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-15|ad-16` 只剩誤報；fix-spacing 0；字數 212–280。
 - 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-1{5,6}.json,handoff-ad-1{5,6}.json,kv-before-ad-1{5,6}.json,prompt-*-extra-s8.md}`、`desc-tools/batches/{cards,research,output}/ad-1{5,6}-*`、onboarding manifest 20 份。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s9：ad-17、ad-18 上線 60 張（流亡）
 
 - **內容**：ad-17（英國工業／卡帶、美國老調提琴與藍草、日本 1970 年代自主民謠盤、英國新前衛、1990 年代日本 techno／IDM：Syzygy、Transonic、Frogman）、ad-18（Transonic／Zero Gravity CD、英國小廠迷幻、Siltbreeze 噪音、英國 dub、Nimbus West／Strata-East／Survival／Nessa 爵士）。
@@ -1274,6 +1316,7 @@
 - **主要檔案**：`batch-progress/add-20261104-ax3|ax4/`（rulings、covers、apex-override、handoff）、`onboarding-manifest-add-20261104-ax3|ax4-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/apex-new-20261104/PLAN.md`。
 - **驗證**：兩批 prepare／published gate 皆 0 error；`verify-wave-kv` 49/49；`qa-batch research|hooks|out`、`qa-artist gap|out` 通過（out 只剩 skipped 缺位）；`build-card-moods` 錨點 104/104。
 - **留給本機**：`album_overrides.tier` 用後台「依卡池同步頂點旗標」；Spotify／Bandcamp 未能在雲端抽查串流。
+
 ### 2026-11-04｜dip-vinyl-shop｜台客簡介改用店主改定版＋add-20261104 張睿銓《創世記》《出走》上架＋ar-d-265 藝人介紹
 
 - **台客的復仇**：店主親自改定新版固定簡介，一字不改寫進 KV `desc2:`／`desc4:濁水溪公社|台客的復仇`、manifest 兩份 `description.text`、`desc-tools/batches/output/add-20261103-out-1.json`。`kv-token-check` 通過；worker `/album-desc` 讀回逐字一致（KV-HIT-RESTYLED）；published gate 0 error。字數 231，在 240 內，不需放行。出處（馬世芳訪談、Jeph 1999 訪談、聲音軌跡）記進研究檔末三條 facts 與 `batch-progress/add-20261103/rulings.md`「店主改定簡介」。
@@ -1452,6 +1495,7 @@
 - **待本機**：album_overrides.tier 要設 263、要清 704（`album-overrides-tier.json`）；後台頂級牌管理新增「⇄ 依卡池同步頂點旗標」一鍵處理（含 apex_pool）。
 - **主要檔案**：`seed_cards.json`、`onboarding-manifest-*.json`、`batch-progress/add-*/onboarding-manifest.json`、`admin.html`、`battle.html`、`roguelike.html`、`data/shop/print/*`、`batch-progress/audit-20261102/{apply-c.mjs,push-catalog.mjs,REPORT.md,PLAN.md,card-catalog-patches.json,album-overrides-tier.json,touched-manifests.json}`。
 - **驗證**：published gate 243 份，三軸／稀有度／tier／卡池列／card_catalog 評分欄 0 error；殘留皆既有（album-desc 落後 KV、coverUrl、已不在卡池 24 張）。
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W5：s13–s15 verdicts 交齊（750 張）
 
 - **範圍**：9 月前入庫、無評分來源紀錄的早期卡，s13–s15 各 250 張。先跑 `fetch-listeners.mjs` 補 listeners（有效值 241／237／237），15 段 Opus 代理判定，主線每段抽 5 張＋逐張看 1／2／5 分與冷門 1。退回 0 段，主線改 24 筆。只交 verdicts，未動 seed／manifest／card_catalog。
@@ -1520,6 +1564,7 @@
 - **錯配（不套下限）**：古典盤名、省略號／撇號盤名、中文拆名（MC HotDog 四張）、掛他人名下等 42 張，`why` 皆註明，給套用工作階段過 `MISMATCH`。
 - **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s16,s17,s18}-*.json`、`{s16,s17,s18}.summary.md`、`*-mainline.log`、`shards/s1{6,7,8}.json`（listenersKV）、`PLAN.md`。
 - **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W7：s19／s20／s21 verdicts 交齊（750 張）
 
 - **範圍**：9 月前入庫、無評分來源紀錄的卡。先跑 `fetch-listeners.mjs` 補 listenersKV，15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 5 筆（Orlando 冷門度 5→4；Psychic Chasms、Fear of a Blank Planet、Worlds 經典度 5→4；Passenger《All the Little Lights》4→3）。只交 verdicts，沒動 seed／manifest／card_catalog。
@@ -1734,6 +1779,7 @@
 - **主線**：每段抽 5 張覆核，退回 0 段。冷門度下限豁免 78 張，標 `floorExempt: true`：大廠電影原聲 19 張（Last.fm 鍵錯配，Lion King 99 人、Matrix 944 人），以及華語圈主流 59 張（伍佰、滅火器、董事長、閃靈等；依 §0.8「以該語言圈為尺度」）。**套用時機械下限要跳過這個欄位。**
 - **主要檔案**：`batch-progress/rerate-20261102/verdicts/s22–s24-*.json`、`s22/s23/s24.summary.md`、`PLAN.md`。
 - **驗證**：三片 node 合併檢查各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R11：s19–s21 verdicts 750 張
 
 - **範圍**：東歐搖滾、雷鬼／dub、巴西 soul、AACM／歐洲自由爵士、北歐／義大利 prog、希臘藝術歌、Dust-to-Digital 考古、東南亞選輯、圖書館／合成器、印度古典與寶萊塢、日本爵士私壓、英國 Vertigo／Deram Nova、美國私壓民謠、Jesus music、日本新浪潮／交響前衛、英國自由即興、C86／Sarah。15 段各 50 張，派 Opus。
@@ -1915,6 +1961,7 @@
   - 合併 main（eb1／eb2／eb5）：產生檔取 main 版後重跑 write-preview／write-pool／registry／Apple 網址／seed-genres／mood／子曲風／抽卡封面；progress.json、genre-l3 JSON 層合併。
 - **主要檔案**：`batch-progress/add-20261101-eb{3,4}/`、`onboarding-manifest-add-20261101-eb{3,4}-20261101.json`、`desc-tools/batches/*/add-20261101-eb{3,4}*`、`batch-progress/mood-cells-20261022/{curation,master}-eb{3,4}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-*`、`card-subgenres.json`、`draw-covers/*`、`desc-tools/nonlatin-proper-names.json`（新）、`batch-progress/mood-axes/score-eb{3,4}/`、`batch-progress/artist-intro/roster-eb{3,4}.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-24{3,4}.txt}`、PLAN.md。
 - **驗證**：兩批 prepare／published gate 皆 0 error（合併 main 後重驗）；qa-batch research／hooks／out 全過（剩被曲名切斷的西里爾專名誤報 2 則）；封面 78 張 HTTP 200＋Discogs 31 張目視；mood 錨點 104/104。
+
 ### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-245（鐵幕爵士 eb5：MPS／SABA＋東歐移民西方錄音）上線 21 位
 
 - **結果**：21 位全上架（16 full、5 thin），skipped 0。補洞 3 組 Sonnet（搜尋 99 次）、寫作 2 組 Opus、qa-artist gap／out 皆 0 處；pubIssues 0。
@@ -2632,6 +2679,7 @@
 - **新藝人（無介紹，未切）**：12 個掛名，列在兩批 rulings 末尾。
 - **主要檔案**：`batch-progress/add-20261024-{mc46,md33}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261024-{mc46,md33}*`、`batch-progress/mood-axes/score-{mc46,md33}/`、`seed_cards.json`、`batch-progress/mood-cells-20261022/SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`。
 - **驗證**：qa-batch research／hooks／out 全過、qa-check-research 0、prepare／published gate 0 error（UPC warning）、KV 回讀 27/27、封面 27 張 HTTP 200 目視相符、build-card-moods 寫入成功。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（最後一輪）mc47／md34：當代獨奏器樂 15 張、funeral doom 38 張上線，落格 15/15、38/38
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪（全線最後一輪，做完暫停盤點），本工作階段負責 mc47、md34（評分照 10-23 體感標準）。md34（`add-20261024-md34`，頹靡）：Esoteric ×2、Evoken ×4、Mournful Congregation ×2、Skepticism ×3、Thergothon、Shape of Despair ×2、Worship ×2、Ahab、Tyranny ×2、Bell Witch ×4、Catacombs、Colosseum、Aldebaran、Asunder、Nortt ×3、Dolorian ×3、Comatose Vigil、Moss ×2、Asva、Ommadon。mc47（`add-20261024-mc47`，冷冽）：Henck《Barraqué》《Stockhausen I-XI》、Helffer／Biret／陳必先／Ponthus 的 Boulez、Woodward《Barraqué》、Arditti《Recital》、Derome《Solo》、Pace《Tracts》、Wambach《Stockhausen vol. II》、Castro Magas《Shrouded Mirrors》、Pollini《Webern／Boulez》、Chojnacka 大鍵琴 ×2。
@@ -2679,6 +2727,7 @@
 - **第 15 輪**：空位先派 mc46 現代室內樂第三波（mc43 高產）＋md33 冷 post-rock 第三波；ml58／mc45 隨後收工（28／28、2／1，mc45 IDM 場景幾乎全落雀躍／暴躁），補派 mc47 當代獨奏器樂＋md34 funeral doom 第二波；mc44／md32 收工後再補最後一個，三個全部收工即停。
 - **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
 - **驗證**：純佇列文件變更；新條號 22041–22200 不與既有重疊。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 14 輪 ml58／mc45：roots reggae 人聲慢盤 28 張、IDM 2 張上線，落格 28/28、1/2
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 14 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml58、mc45（評分照 10-23 體感標準）。ml58（`add-20261024-ml58`，恍惚）：Rod Taylor、Ras Michael & The Sons of Negus《Love Thy Neighbour》、Prince Alla、Junior Ross & The Spears、Noel Ellis、Seke Molenga & Kalo Kawongolo（Black Ark）、Peter Broggs ×2、Earl Sixteen《Reggae Sound》、Michael Prophet《Certify》、Triston Palma ×2、Jimmy Riley《Showcase》、Junior Keatting、Freddie McKay、Well Pleased & Satisfied、David Jahson、Cultural Roots、Junior Murvin《Muggers in the Street》、Flick Wilson、Wayne Wade、Sammy Dread《Roadblock》、Mwanamke Mwafrika、Aisha《Daughters of Zion》、Princess Sharifa、Shanti Yalah、Tetrack《Trouble》、Anthony Johnson。mc45（`add-20261024-mc45`，冷冽）：Jamie Lidell《Muddlin Gear》、General Magic《Rechenkönig》。
@@ -3464,6 +3513,7 @@
 - **主要檔案**：`dip-vinyl-worker/src/index.js`、`scripts/kv-spotify-link-repair.mjs`
 - **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。
 - **實跑結果（同日）**：配額 11:00 UTC 重置後 Spotify 直查只撐 691 張（補上 531、無完全吻合 160）就再撞 429、`retry-after` 23.7 小時——**這個 app 每日配額約千次，正式站也在用同一份，不能再拿它跑批次**。改走 MusicBrainz（鍵裡的 `rgMbid` → 發行版 url-rels，免配額、1.1 秒一張）：三段共 8,299 張，補上 3,954、MB 沒有 3,851、殘餘 503 錯誤 12。**累計補回 4,485 張**，U2／Billy Joel／Justin Bieber 在正式站驗過按鈕亮。剩 3,851 張 MB 也沒有的（Kacey Musgraves、Donald Byrd 這種明明在 Spotify 的也在內）待店主定：Odesli（Apple collectionId 換 Spotify 連結，每分鐘 10 筆）或第二個 Spotify app。前端 `resolveSpotifyBtn` 看到 KV 已標 `spotifyChecked` 就不再打 `/spotify-album-link` 燒配額。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：ts1–ts11 新卡 342 張補情緒座標、上星圖；§11 藝人介紹排入 6 批
 
 - **內容**：店主「頻率也要做 前面沒做的補上 也放上星圖中」。薄細項策展線上架的 342 張補打情緒三軸（`batch-progress/mood-axes/score-ts/`，6 份、6 支代理），重跑 priors／scale／`build-card-moods`，全池 19,458 張都有座標，頻率選歌與星圖不再略過新卡。conf 低 74%（地區冷門盤）。另依 §11 把 212 位缺介紹的藝人補進 roster、切 `ar-d-129`～`ar-d-134`（state: cut），待新工作階段跑。
@@ -3744,6 +3794,7 @@
 - **主要檔案**：`dip-player.js`、`index.html`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）、`dip-genre-tree.js`、`scripts/build-genre-tree.mjs`、`scripts/build-asia-country-map.mjs`（新）、`rock-asia-country-map.json`（新）、`genre-tree.json`、`card-subgenres.json`、`ALBUM_ONBOARDING.md`
 - **驗證**：本機 Playwright 16/16 通過——`armOnEnable:false` 切開不建 ctx／不起 keep-alive、預設仍武裝；手動播放 4 秒內 suspend 偏好留 `on` 且收到 `kept:true`、4 秒後 suspend 寫 `off`；`#genre` 第二層左上鈕與頂欄返回鈕左緣對齊、底部返回鈕消失、日亞搖滾 13 國、老搖滾 5 個年代、上一層兩次回十大類、遊戲頁開關切開不碰音訊。`node --check` 三支 JS 通過。**真機（iPhone＋串流）待店主實測**。
 - **留給本機／店主**：無 KV／Firestore 寫入；PR 合併即生效。
+
 ### 2026-10-16｜dip-vinyl-shop｜已上線簡介第二輪修正（pub-fix round 2）：1,554 張改寫寫入 KV
 
 - **起因**：店主「排修」。`audits/pub-fix/ROUND2-QUEUE.json`（A 事實更正、B1 退件字樣、B3 資料庫口吻、B4 正文夾諺文、C 人工補記，外加 B2 正文點名出處）逐張改寫。
@@ -3753,6 +3804,7 @@
 - **結果**：edit 1,554 張（不重複鍵）、keep 6（Helen Reddy「三筆捐款」、Neşet Ertaş ×2 與 Sleep Walker 的 mb 是字母子字串等誤判）；全數回讀一致。重掃後 B1／B4 為 0，B2 剩 3、B3 剩 1，全是上述誤判。
 - **主要檔案**：`scripts/pub-fix-round2.mjs`、`audits/pub-fix/round2/{DISPATCH.md,in/,out/,applied/}`、`audits/pub-fix/ROUND2-QUEUE.{json,md}`、`publish-stage/pub-fix-r2/`
 - **驗證**：每批 `check` 0 警示、`verify` 回讀一致（KV 延遲時隔一分鐘重讀）。
+
 ### 2026-10-17｜dip-vinyl-shop｜藝人介紹第十二輪三十批上線（雲端，ar-d-141～142＋thin 升級 ar-u-001～028；介紹 8,564 → 8,634，790 篇 thin→full）
 
 - 結果：新藝人 70 位（55 full、15 thin）；thin 升級 28 批 1,120 位，790 位升 full，330 位補洞後仍 thin、保留原上線版。審稿合計 296 處。
@@ -3811,6 +3863,7 @@
 - **盤點**：卡池 19,117；Apple 試聽 14,531 張（76%，古典 46%）；子曲風 17,598；心情選歌 325 張可換算約 250 張錨點。容器有 ffmpeg、librosa 可 pip、試聽可下載。
 - **主要檔案**：`MOOD_ENERGY_PLAN.md`（新，v0.2）
 - **驗證**：純文件；待店主過目 §10 四件事（Z 用詞、P1 名稱、星圖中央裝飾模型、先掃池或先試作）。PR #100。
+
 ### 2026-10-14｜dip-vinyl-shop｜藝人介紹第九輪二十批上線（雲端，ar-d-084～103；755 位；介紹 6,846 → 7,601）
 
 - 結果：755 位上架（612 full、143 thin），不寫 42 位（thin 聲音句只有曲風標籤、素材全單源等），審稿修 238 處。電子段、嘻哈段寫完；古典段寫到 C 字頭。剩 ar-d-104～116 共 13 批（約 485 卡鍵）。
@@ -11111,6 +11164,7 @@ status 由 thin 升為 full。
 **主要檔案**：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/W3_PLAN.md`、
 `desc-restyle/prompts/writer-base.md`、`desc-restyle/batches/{w3-01,w3-02}-kv.json`、
 `desc-restyle/REMOVE_W3-02.json`。
+
 ### 2026-08-11｜戸谷重子改名＋第二階段（wave3）規劃完成、開跑
 
 - Repo：`dip-vinyl-shop`（seed_cards.json 一筆藝人欄）、`desc-restyle`（W3_PLAN.md、卡單 29 檔、工具兩處修正）。
@@ -11172,6 +11226,7 @@ MB 把演出者記成 Masaru Imada Trio & Shigeko Toya。所以不是資料錯�
 
 **主要檔案**：`desc-restyle/W3_PLAN.md`、`desc-restyle/batches/cards/w3-*-cards.json`、
 `desc-restyle/verify-kv.mjs`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-11｜心情選歌離線化：`mood-quiz/` 產線建立，pilot-01（50 張／142 則）跑完
 
 - **repo**：無。新增工作區資料夾 `mood-quiz/`（與 `desc-restyle/` 平行，非 git），
@@ -11256,6 +11311,7 @@ cjk-05 三檔回歸測試乾淨。
 
 **主要檔案**：`desc-restyle/fix-spacing.mjs`、`desc-restyle/prompts/writer-base.md`、
 `desc-restyle/batches/cjk-06-kv.json`。
+
 ### 2026-08-11｜cjk-05 上線（34 張）＋ 卡池年份更正 3 筆
 
 - Repo：`dip-vinyl-shop`（seed_cards.json 三筆年份）。desc-restyle 非 git 追蹤。
@@ -11313,6 +11369,7 @@ King Giddra、박효신 會被寫成朴孝信，**與卡片標題對不上**—�
 
 **主要檔案**：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/prompts/writer-base.md`、
 `desc-restyle/batches/cjk-05-kv.json`。
+
 ### 2026-08-11｜cjk-04 上線（36 張）＋ wave2 日文人名追溯改漢字（47 張）＋ 東亞藝人改名 8 張
 
 - Repo：`dip-vinyl-shop`（卡池改名 5 張、補年份 1 筆）、`dip-vinyl-worker`（讀序調整，e8b5958）。
@@ -11391,6 +11448,7 @@ Kenmochi Hidefumi（代理查到的是 VOCALOID 開發者剣持秀紀，**撞名
 **主要檔案**：`dip-vinyl-shop/seed_cards.json`、`dip-vinyl-shop/apex_pool.json`、
 `dip-vinyl-worker/src/index.js`、`desc-restyle/wave2-jp-name-map.json`（對照表，115 筆）、
 `desc-restyle/batches/{cjk-04,jp-names}-kv.json`。
+
 ### 2026-08-11｜cjk-03 上線（33 張，日本 90s–00s 流行與電子）＋東亞藝人改名 8 張＋華語卡範圍重估
 
 - Repo：`dip-vinyl-shop`（卡池改名 8 張、補年份 1 筆）。內容產出在 `desc-restyle`（非 git），KV 已推。
@@ -11472,6 +11530,7 @@ Perfume、deca joins、9m88、Tizzy Bac、1976、E SENS、BUDDHA BRAND）、
 **主要檔案**：`dip-vinyl-shop/seed_cards.json`、
 `desc-restyle/{fix-spacing,qa-check-hooks,chk-hook-crossgroup}.mjs`、
 `desc-restyle/batches/cjk-03-kv.json`。
+
 ### 2026-08-11｜心情選歌離線化規劃 ＋ 可玩原型（未動線上程式）
 
 - **repo**：無（原型與工具都在 session scratchpad；線上 `index.html`／worker 皆未修改）。
@@ -11564,6 +11623,7 @@ Perfume、deca joins、9m88、Tizzy Bac、1976、E SENS、BUDDHA BRAND）、
 
 **主要檔案**：`desc-restyle/{fix-spacing,qa-check-hooks,chk-hook-crossgroup}.mjs`、
 `desc-restyle/prompts/writer-base.md`、`desc-restyle/batches/cjk-02-kv.json`。
+
 ### 2026-08-11｜CJK 卡簡介斷層：worker 讀序修正 ＋ cjk-01 日本爵士 55 張上線
 
 - Repo：`dip-vinyl-worker`（讀序修正，commit c6f4064 已 push）、`dip-vinyl-shop`（卡池年份修正五筆）、
@@ -11660,6 +11720,7 @@ Hyper Magnum Sound，非直刻盤；《Greensleeves》的「渡邊弘」應作�
 **主要檔案**：`dip-vinyl-worker/src/index.js`、`dip-vinyl-shop/seed_cards.json`、
 `desc-restyle/prompts/{research,hook,writer}-base.md`、`desc-restyle/{qa-batch,verify-kv}.mjs`、
 `desc-restyle/batches/cards/cjk-0[1-6]-cards.json`。
+
 ### 2026-08-10｜新 skill `dip-card-create`：一句話輸入的完整建卡產線
 
 - Repo：skill 檔在 `dip-vinyl-home/.claude/skills/`（非 git）；工具鏈改造在 `desc-restyle/`（非 git）；
@@ -11692,6 +11753,7 @@ Hyper Magnum Sound，非直刻盤；《Greensleeves》的「渡邊弘」應作�
 
 **驗證結果**：`qa-batch out w2-128` 回歸通過（39 張與卡單相符）；`add-*` 批名走新路徑、
 缺檔時給明確錯誤訊息不再靜默。
+
 ### 2026-08-10｜Firestore 孤兒文件搬移完成（39 筆）；專輯名 U+2010 正規化（7 張）
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json`、`apex_pool.json`、本備忘錄）。承接同日兩筆字串正規化。
@@ -11745,6 +11807,7 @@ Firestore `card_catalog` 新 id 有文件 38/39、舊 id 殘留 **0**
 `dip-vinyl-shop/album_overrides-repaste.json`、`dip-vinyl-shop/scripts/migrate-card-catalog-ids.mjs`、
 `dip-vinyl-shop/PROJECT_MEMORY.md`、`desc-restyle/progress.json`。
 備份：`seed_cards.backup-before-album-hyphen.json`、`firestore-backup-cardids-2026-08-10.json`。
+
 ### 2026-08-10｜卡池藝人字串大小寫與冠詞正規化（21 組）；Firestore 孤兒文件清點
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json`、`apex_pool.json`、本備忘錄）。承接同日前一筆的字元正規化。
@@ -11796,6 +11859,7 @@ Firestore `card_catalog` 新 id 有文件 38/39、舊 id 殘留 **0**
 
 **驗證結果**：seed_cards 與 apex_pool 皆 JSON 合法、單行格式保留、筆數不變；
 同名分裂 0 組；desc-restyle 71 檔 168 處同步；commit `d142803` 已 push。
+
 ### 2026-08-10｜desc-restyle w2-122 至 w2-128 上線（348 張）；**wave2 全部完成**；卡池藝人字串字元正規化
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
@@ -11863,6 +11927,7 @@ Firestore `card_catalog` 新 id 有文件 38/39、舊 id 殘留 **0**
 **驗證結果**：七批 `build-final` 皆在 167–240 字區間內；`wrangler kv bulk put` 七次皆 `Success!`；
 `verify-kv.mjs` 逐批「一致＝張數、不符 0」；`chk-diskvskv.mjs` 逐批零分岔；
 字元正規化的 29 張 KV 遷移逐筆比對內容相符、舊 key 全數確認消失。
+
 ### 2026-08-10｜desc-restyle w2-117 至 w2-121 上線（250 張）；wave2 過 96%；四條常設規則改寫
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
@@ -11996,6 +12061,7 @@ w2-121 的 e 組十張全中、四百餘處。QA 攔下了，沒流到下游。�
 `desc-restyle/batches/w2-1{17,18,19,20,21}-kv.json`、
 `desc-restyle/batches/output/w2-1{17,18,19,20,21}-out-{1,2}.json`、
 `desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-09｜desc-restyle w2-113 至 w2-116 上線（197 張）；electronic 家族開跑；店主兩項裁定
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
@@ -12106,6 +12172,7 @@ Mort Garson 的「西岸第一張全 Moog 專輯」（Beaver & Krause 1970 年�
 `.claude/skills/dip-desc-restyle/SKILL.md`（單曲卡常設裁定）、
 `desc-restyle/batches/w2-11{3,4,5,6}-kv.json`、`desc-restyle/batches/output/w2-11{3,4,5,6}-out-{1,2}.json`、
 `desc-restyle/progress.json`、`desc-restyle/restyle-tasks.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-09｜desc-restyle w2-110 至 w2-112 上線（142 張）；hiphop 家族完成；店主新裁定「一張卡只講一個主故事」
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
@@ -12208,6 +12275,7 @@ Gunna 的 YSL 案（發行早於起訴四個月，時序寫明）、Big L 與 Ol
 `desc-restyle/ELECTRONIC_LEDGER.md`（新建）、`desc-restyle/batches/w2-11{0,1,2}-kv.json`、
 `desc-restyle/batches/output/w2-11{0,1,2}-out-{1,2}.json`、`desc-restyle/progress.json`、
 `desc-restyle/restyle-tasks.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-09｜desc-restyle w2-107 至 w2-109 上線（148 張）；卡池移除兩張、訂正三筆
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
@@ -15159,6 +15227,7 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
   → 0.179 → 0.094 → 0 走滿 1.5 秒。關閉視窗的 `stop({fade:true})` 同樣由「瞬間 0.038」修正為
   0.45 → 0.396 → … → 0。另以 OfflineAudioContext 獨立重現並確認 `cancelAndHoldAtTime` 的行為
   （28.6s 時值 0.0246，與線上量到的 0.026 吻合）。battle 與 roguelike console 皆無錯誤。
+
 ### 2026-07-20｜iOS 首次點開簡介沒聲音：靜音 keep-alive 提早被收掉
 
 - Repo：`dip-vinyl-shop`
@@ -15254,6 +15323,7 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 建議格式：
 
 ```md
+
 ### YYYY-MM-DD｜短標題
 - Repo：`dip-vinyl-shop` / `dip-vinyl-worker`
 - 改動：完成了什麼，以及重要行為或決策。
@@ -16454,6 +16524,7 @@ wrangler kv bulk put 回 Success；verify-kv 49/49 一致；兩張移除卡的 K
 - **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-075-*`、`desc-restyle/batches/w2-075-final.json`、`desc-restyle/batches/w2-075-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`desc-restyle/batches/wave2/w2-076-cards.json`、`desc-restyle/batches/wave2/w2-079-cards.json`。
 - **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-075` 為「驗 49 張｜一致 49｜不符 0」。
 - **工具環境變更**：`npx wrangler` 已失效（會去抓不存在的 4.120.0 tarball），改用 `dip-vinyl-worker/node_modules/.bin/wrangler`（3.114.17），該版不接受 `--remote` 參數。
+
 ### 2026-08-07｜desc-restyle w2-074 上線 50 張（072–074 三批完成）
 
 - Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
