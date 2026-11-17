@@ -830,3 +830,25 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-025.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，開工前也預查過 60 張皆 KV-HIT）。
 - onboarding manifest 同步 30 處。
+
+## sd-026（30 張，經典度≥4：Barrington Levy、Barry White、Basic Channel 2、Beaux Arts Trio、Ben Frost、Benny Green、Benton Flippen、Bernard Fevre、Big Boys、Big Joe Williams、BIGBANG、Bikini Kill／Huggy Bear、Bill Charlap 2、Bill Haley、Bing Crosby、Bix、Black Arthur Blythe、Black Cat Bones、Blake Baxter、Blind Lemon Jefferson、Blood Incantation、Blueboy 2、Bo Carter、Bob Carlin、Bobak Jons Malone、Hutcherson、McFerrin & Corea）— s15
+
+- 研究：3 支 Sonnet，WebSearch 14＋14＋13＝41 次；thin 16 張。
+- **主線補查 8 張**（WebSearch 10 次＋WebFetch）：Motherlight（Rising Storm：從未上台、Malone 分工、聲音、收藏地位）、Bob Carlin（Bluegrass Today：首張個人作、樂手、地位）、《Play》（維基：兩場現場、編制）、Bikini Kill／Huggy Bear（1993 春同巡英國、Huggy Bear 唯一全長作）、Bernard Fevre（Bleep／Bandcamp Daily／XLR8R：1975 年第二張 library 唱片、Moog、居家三部曲、早於 Boards of Canada）、Big Boys（Recoup／Punknews：Biscuit、放克貝斯、地位）。Bix《Akli kariai》立陶宛語補查無專輯層級資料，照樂團層級薄寫；Barry White、Blake Baxter、Bo Carter 補查無新料。
+- 身分裁定：Fevre 寫「1970 年代中期」、再發行是 Sound Obsession；Benton Flippen、Bo Carter 不寫精確年份；Blake Baxter 寫「1990 年代初」；Big Joe Williams 照 Delmark 內頁寫 1958 年錄；Bix 是 Šiauliai 的團、不寫車禍與錄音因果；Blind Lemon Jefferson、Bo Carter 寫成合輯；Bing Crosby 39 週寫「歷年各版本合計」；《Play》不寫葛萊美。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-026.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Basic Channel《BCD-2》 | 鉤子「盤面幾乎不印資訊的那批 12 吋」→「在底特律壓片、被誤當成底特律作品的柏林 12 吋」；刪「從早期中頻緊迫的聲音」 | 鉤子不得用盤面印刷；字數 |
+| Beaux Arts Trio | 「常被視為」→「被視為」 | 單一出處 |
+| Benny Green | 「原創曲向廠牌的過去致意，也被嫌太像前人」→「整張被嫌太依賴 Blue Note 過往的回聲」；刪 Malone／Nat King Cole 句 | 「致意」無出處；字數 |
+
+其餘逐張四問無改，逐條對過研究稿（Barry White 葛萊美最佳新人提名、Blood Incantation 用 Bowie 的鋼琴與排練九天、Unisex 牛津郡農場、Carlin 五歲看 Seeger、Flippen 1948 年 WPAQ 開播日、Cirrus 與 Land 七張 Blue Note 皆有出處）。30 張鉤子前四字互異、加權 ≤50；QA 0 例外（Ben Frost 盤名過長第二句用「這是 Netflix 德國科幻影集《Dark》配樂的第一卷」，照收）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-026.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 103 次（研究層 sd-025 36、sd-026 41，主線 26）。
