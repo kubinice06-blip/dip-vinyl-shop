@@ -58,14 +58,19 @@
     "text": "Jackson 此後在 Blue Note 錄了《For One Who Knows》（1995）、《A Look Within》（1996）、《Good People》（1997）、《Pleasant Valley》（1999）等。",
     "src": "https://en.wikipedia.org/wiki/Javon_Jackson",
     "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs 原盤註記：1993 年 9 月在 Power Station、10 月在 East Hill Studios 分兩場錄成，Betty Carter 製作；班底 Jacky Terrasson 鋼琴，Peter Washington／Christopher Thomas 貝斯，Carl Allen／Clarence Penn 鼓，客座 Kenny Garrett 中音薩克斯風、Dianne Reeves 人聲。選曲多為標準曲（〈Sweet and Lovely〉〈I Waited for You〉〈Love Walked In〉等）加自作。",
+    "src": "https://api.discogs.com/releases/10217375",
+    "block": "sound"
    }
   ],
   "coverage": {
    "what": "ok",
    "story": "thin",
-   "sound": "thin"
+   "sound": "ok"
   },
-  "notes": "舊簡介全是錄音場次與客座名單，雜項。查證：9/7 Power Station、10/13 East Hill 與 Reeves 客座有圖書館目錄佐證；Kenny Garrett、Jacky Terrasson 是否參與本盤，搜尋沒有第二來源確認，勿沿用。Wikipedia 本身有「1993 首作／1994 發行」兩種寫法，以 1993 錄、1994 出版為準。必查清單：母語不適用（美國爵士）；AllMusic／Discogs／JMA 頁 403 被擋；Wikipedia、Blue Note 官網、encyclopedia.com、Burning Ambulance 評論、WebSearch 兩次（評論與 Carter 關係）均無此盤詳細樂評或 Carter 製作動機。找不到具名評論，聲音只有風格定位，寫作層請薄寫，不要編造 Carter 與他的師徒故事。"
+  "notes": "舊簡介全是錄音場次與客座名單，雜項。查證：9/7 Power Station、10/13 East Hill 與 Reeves 客座有圖書館目錄佐證；Kenny Garrett、Jacky Terrasson 是否參與本盤，搜尋沒有第二來源確認，勿沿用。Wikipedia 本身有「1993 首作／1994 發行」兩種寫法，以 1993 錄、1994 出版為準。必查清單：母語不適用（美國爵士）；AllMusic／Discogs／JMA 頁 403 被擋；Wikipedia、Blue Note 官網、encyclopedia.com、Burning Ambulance 評論、WebSearch 兩次（評論與 Carter 關係）均無此盤詳細樂評或 Carter 製作動機。找不到具名評論，聲音只有風格定位，寫作層請薄寫，不要編造 Carter 與他的師徒故事。 【主線補查】Discogs API 補兩場錄音、班底與客座。"
  },
  {
   "key": "jazz playaz|visions of a sic world",
@@ -116,6 +121,11 @@
     "text": "SIC Records 在 NTS 電台有固定節目。",
     "src": "https://www.nts.live/shows/sic-records/episodes/sic-records-2nd-march-2023",
     "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs：2023 年 SIC Records 自主發行，黑膠限量 250 張，另有卡帶版。",
+    "src": "https://api.discogs.com/releases/26100283",
+    "block": "what"
    }
   ],
   "coverage": {
@@ -123,7 +133,7 @@
    "story": "thin",
    "sound": "thin"
   },
-  "notes": "舊簡介稱「全盤 14 首、最長 3:03」，但 Dork 列為 17 首、最長約 4:03；Fat Beats 商品頁列 7 首，數目互相矛盾，寫作層不要寫軌數曲長。『每人各主署 3 首』沒有查到佐證。Bandcamp 原文稱「quartet」而非「PLANET SIC 的四人團」。必查：母語不適用；Bandcamp 專輯頁、Fat Beats 商品頁、Dork 頁、WebSearch 一次；無樂評、訪談、概念自述；Professor Creepshow SoundCloud 未開。聲音只有廠牌文案與標籤，thin。"
+  "notes": "舊簡介稱「全盤 14 首、最長 3:03」，但 Dork 列為 17 首、最長約 4:03；Fat Beats 商品頁列 7 首，數目互相矛盾，寫作層不要寫軌數曲長。『每人各主署 3 首』沒有查到佐證。Bandcamp 原文稱「quartet」而非「PLANET SIC 的四人團」。必查：母語不適用；Bandcamp 專輯頁、Fat Beats 商品頁、Dork 頁、WebSearch 一次；無樂評、訪談、概念自述；Professor Creepshow SoundCloud 未開。聲音只有廠牌文案與標籤，thin。 【主線補查】Discogs 無 credit；維持薄寫。"
  },
  {
   "key": "jazzinuf|snow in my shoe",
@@ -220,5 +230,363 @@
    "sound": "thin"
   },
   "notes": "廠牌為 Etymology Records（Jazzinuf 自創）。舊簡介說 Etymology 是『2019 年成立的創作者集體，想把器樂 hip-hop 接回爵士、迪斯可、藍調與古典』——此句未找到出處，勿沿用。WebSearch 一次（盤名＋廠牌）沒有任何與此盤相關的結果；Bandcamp 專輯頁 404；2022 年發行、約 35 分鐘、14 首均未獨立證實。必查：母語不適用；通路頁、維基（無此藝人維基頁）、樂評均無。這張實質上只有藝人層級資料，故事 none，寫作請極薄寫或標留置。"
+ },
+ {
+  "key": "jean du voyage|ritual",
+  "artist": "Jean du Voyage",
+  "album": "Ritual",
+  "facts": [
+   {
+    "text": "Jean du Voyage 是法國 beatmaker 兼 turntablist，自稱自 1998 年起活動。",
+    "src": "https://jeanduvoyage.bandcamp.com",
+    "block": "what"
+   },
+   {
+    "text": "《Ritual》2024 年 11 月 1 日在 Bandcamp 發行，另有限量 300 張編號雙黑膠；Bandcamp 連到 Banzaï Lab（波爾多廠牌）頁面。",
+    "src": "https://jeanduvoyage.bandcamp.com/album/ritual",
+    "block": "what"
+   },
+   {
+    "text": "前作：2016 年首張專輯《Mantra》（Jarring Effects）、2019 年《Namaskar》EP（Banzaï Lab）。",
+    "src": "https://jeanduvoyage.bandcamp.com",
+    "block": "what"
+   },
+   {
+    "text": "《Namaskar》EP 是他與印度薩拉斯瓦蒂維那琴手 V. Soundara Rajan 駐地創作的成果，把 dubstep、breakbeat、chill jazz 等節拍音樂與印度古典的節奏、調式與靈性主題結合，維那琴與唱盤輪流對話。",
+    "src": "https://banzailab.bandcamp.com/album/namaskar-ep",
+    "block": "story"
+   },
+   {
+    "text": "《Ritual》延續這條路：Bandcamp 標籤為 electronic、bass music、downtempo、electronica、ethnic、trip hop。",
+    "src": "https://jeanduvoyage.bandcamp.com/album/ritual",
+    "block": "sound"
+   },
+   {
+    "text": "專輯邀請多位客座：Romane Beaugrand（五首人聲）、Dawa Salfati、Yasek Manzano、Pierre Harmegnies、Lex Bratcher 與 Miscellaneous 等。",
+    "src": "https://jeanduvoyage.bandcamp.com/album/ritual",
+    "block": "story"
+   },
+   {
+    "text": "曲名帶儀式與自然意象：〈Ritual〉〈Sanctuary〉〈Chrysalis〉〈Full Moon〉〈Sunrise〉〈Ney〉〈Cobra〉〈Aya〉。",
+    "src": "https://jeanduvoyage.bandcamp.com/album/ritual",
+    "block": "story"
+   },
+   {
+    "text": "聽眾評語：『有趣、多變、流動放鬆』（Bandcamp 買家留言）。",
+    "src": "https://jeanduvoyage.bandcamp.com",
+    "block": "sound"
+   },
+   {
+    "text": "【主線補查】Discogs：Jean du Voyage 一人包辦作曲、製作、錄音、混音與封面；客座有大提琴手 Romane Beaugrand（多首）、單簧管手 Pierre Harmegnies、古巴小號手 Yasek Manzano（吹同名曲）、歌手 Dawa Salfati 與 Lex Bratcher；另有一首以中東蘆笛為名的〈Ney〉。黑膠限量 300 張手寫編號，Banzaï Lab 發行。",
+    "src": "https://api.discogs.com/releases/32211552",
+    "block": "sound"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "ok"
+  },
+  "notes": "『標籤掛 trip hop 與 bass music』屬實；客座 Romane Beaugrand 五首（Melisma、The Witch、Atypical、Season、Ecstatic）屬實；11 月 1 日屬實。總長約 49 分鐘未驗證，勿寫曲長。必查：法文搜尋兩次（盤名＋chronique/interview）、Bandcamp 專輯與藝人頁、Banzaï Lab 頁、AlbumBlitz、法文維基（404 無條目）；全無樂評、訪談、藝人自述；本張沒有概念文字。〈Ney〉等聲音元素只能從曲名與『ethnic』標籤推測，寫作請只說「標籤標示 ethnic、帶世界音樂色彩」，不要具體寫某曲用了某樂器。 【主線補查】Discogs API 補客座樂手與樂器；限量張數屬雜項不寫。"
+ },
+ {
+  "key": "jean-luc ponty|live at donte's",
+  "artist": "Jean-Luc Ponty",
+  "album": "Live at Donte's",
+  "facts": [
+   {
+    "text": "Jean-Luc Ponty 1942 年生於法國，巴黎音樂院小提琴首獎（1960），受 Miles Davis、Coltrane 啟發轉向爵士，1967 年獲 Django Reinhardt 獎。",
+    "src": "https://fr.wikipedia.org/wiki/Jean-Luc_Ponty",
+    "block": "what"
+   },
+   {
+    "text": "1969 年他首次長駐美國西岸；唱片錄於 1969 年 3 月北好萊塢 Donte's 俱樂部，直到 1981 年才由 Blue Note（Liberty LT 系列）首度正式發行。",
+    "src": "https://en.wikipedia.org/wiki/Live_at_Donte%27s_(Jean-Luc_Ponty_album)",
+    "block": "what"
+   },
+   {
+    "text": "錄音由 Richard Bock 製作；Bock 在其 World Pacific 廠牌早已發行 Ponty 的歐洲錄音。Pete Welding 寫內頁文字。",
+    "src": "https://blp1553.blogspot.com/2021/04/lt-1102.html",
+    "block": "story"
+   },
+   {
+    "text": "內頁記述：George Duke 主動要求加入，才組成這個三重奏加 Ponty 的四人團；Ponty 為了在鼓聲之上被聽見而把小提琴擴大。",
+    "src": "https://blp1553.blogspot.com/2021/04/lt-1102.html",
+    "block": "story"
+   },
+   {
+    "text": "內頁形容 Ponty 的演奏有「incandescent brilliance, technical virtuosity and urgency」，並把這場視為他打入美國的關鍵時刻，也是日後爵士搖滾的前奏。",
+    "src": "https://blp1553.blogspot.com/2021/04/lt-1102.html",
+    "block": "what"
+   },
+   {
+    "text": "鼓手 Al Cecchi 回憶，兩晚俱樂部都擠滿人，Lalo Schifrin、Stan Kenton 等人在場。",
+    "src": "https://blp1553.blogspot.com/2021/04/lt-1102.html",
+    "block": "story"
+   },
+   {
+    "text": "編制：Ponty 電小提琴與低音 violectra、George Duke 電鋼琴、John Heard 電貝斯、Al Cecchi 鼓（內頁）。",
+    "src": "https://blp1553.blogspot.com/2021/04/lt-1102.html",
+    "block": "sound"
+   },
+   {
+    "text": "原始 LP 僅四首：兩首 Ponty 自作〈Hypomode de Sol〉〈California〉，加 Jule Styne〈People〉與 Ron Carter〈Eighty-One〉；1995 年 Pacific Jazz 以 CD 再發並加四首（含 Herbie Hancock〈Cantaloupe Island〉）。",
+    "src": "https://en.wikipedia.org/wiki/Live_at_Donte%27s_(Jean-Luc_Ponty_album)",
+    "block": "sound"
+   },
+   {
+    "text": "AllMusic 簡介稱這場 Ponty 與 Duke 的現場讓他在美國受到大量關注。",
+    "src": "https://www.allmusic.com/album/live-at-dontes-mw0000183640",
+    "block": "after"
+   },
+   {
+    "text": "Ponty 與 Duke 同年另有《Jean-Luc Ponty Experience with the George Duke Trio》（World Pacific, 1969）；Ponty 也參與 Zappa《Hot Rats》（1969）。",
+    "src": "https://en.wikipedia.org/wiki/Jean-Luc_Ponty",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "舊簡介錯的／可疑：錄音日期各來源不一——Wikipedia 3 月 12–13 日，Liberty 內頁（blp1553）3 月 11–12 日，舊簡介同後者；寫作請只寫『1969 年 3 月』。『唱片標籤印 1978』『Pacific Jazz 原屬母帶、LT 號段』『Richard Bock 一人包辦製作錄音重混』未查到佐證，勿用；Wikipedia 稱 Blue Note 發行、Ponty 小提琴為電小提琴與 violectra（內頁）。『George Duke 電鋼琴』內頁為 electric piano，Wikipedia 寫 piano。必查：英文維基、blp1553 內頁轉載、AllMusic 摘要（搜尋結果見）、WebSearch 一次；法文維基。AllMusic 全頁 403。具名樂評只有內頁文案，無獨立樂評；聲音靠內頁與編制，thin。"
+ },
+ {
+  "key": "jean-pierre como|empreinte",
+  "artist": "Jean-Pierre Como",
+  "album": "Empreinte",
+  "facts": [
+   {
+    "text": "Jean-Pierre Como 1963 年生於巴黎，義大利裔，古典音樂院出身，13 歲起迷上爵士。",
+    "src": "https://fr.wikipedia.org/wiki/Jean-Pierre_Como",
+    "block": "what"
+   },
+   {
+    "text": "他是法國爵士搖滾團 Sixun（1984 年成軍，與打擊樂手 Paco Sery 創立）的鍵盤手，並與 Sylvain Luc、Michael Brecker、Jean-Luc Ponty、Didier Lockwood、Paolo Fresu 等合作；2023 年隨 Sixun 獲 Sacem 爵士大獎。",
+    "src": "https://fr.wikipedia.org/wiki/Jean-Pierre_Como",
+    "block": "what"
+   },
+   {
+    "text": "《Empreinte》是他個人專輯，法國 Blue Note 發行（目錄 209072），JazzMusicArchives 記為 1999 年；AllMusic 記 2000 年 1 月 17 日。",
+    "src": "https://jazzmusicarchives.com/album/jean-pierre-como(france)/empreinte",
+    "block": "what"
+   },
+   {
+    "text": "法維基把 1999 年的《Padre》列為他第一張三重奏專輯；《Empreinte》只在年表中一行帶過。",
+    "src": "https://fr.wikipedia.org/wiki/Jean-Pierre_Como",
+    "block": "what"
+   },
+   {
+    "text": "參與者：薩克斯風 Christophe Panzani、貝斯 Dario Deidda 與 Michel Alibo、鼓與打擊 Paco Sery、吉他與曼陀林 Sylvain Luc、小提琴 Didier Lockwood，加上人聲 Guida Tchiam、Omar Touré、Karim Ziad。",
+    "src": "https://www.bonsaimusic.fr/produit/empreinte",
+    "block": "story"
+   },
+   {
+    "text": "通路標籤：chill out、electro、electro jazz、jazz、pop、vocal，顯示鋼琴爵士之外帶電子與人聲色彩。",
+    "src": "https://www.bonsaimusic.fr/produit/empreinte",
+    "block": "sound"
+   },
+   {
+    "text": "曲目含 John Coltrane 的〈Giant Steps〉與〈Liberty City〉等。",
+    "src": "https://jazzmusicarchives.com/album/jean-pierre-como(france)/empreinte",
+    "block": "sound"
+   },
+   {
+    "text": "後來的評述稱他彈奏重和弦配置細膩、節奏基礎穩定，旋律線常與薩克斯風並行（2026 年 Couleurs Jazz 對《Parfum d'Azur》的描述，藝人層級）。",
+    "src": "https://couleursjazz.fr/jean-pierre-como-javier-girotto-parfum-dazur/",
+    "block": "sound"
+   },
+   {
+    "text": "後來作品有《Boléro》（2013）、《Infinite》（2018，獲 Jazz Magazine CHOC）。",
+    "src": "https://fr.wikipedia.org/wiki/Jean-Pierre_Como",
+    "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs：客座有小提琴手 Didier Lockwood、吉他／曼陀林手 Sylvain Luc、鼓手 Paco Sery、打擊與人聲 Karim Ziad、貝斯 Michel Alibo、鍵盤編曲 Zool Fleischer，以及西非歌手 Guida Tchiam、Omar Touré 等；選曲除 Como 自作外有兩首 Jaco Pastorius（〈Three Views of a Secret〉〈Liberty City〉）與 Coltrane〈Giant Steps〉。1999 年法國 Blue Note 發行。",
+    "src": "https://api.discogs.com/releases/8347710",
+    "block": "sound"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "ok"
+  },
+  "notes": "舊簡介是逐軌 credit 欄，雜項。發行日 1999 年 6 月 2 日未獨立證實，AllMusic 為 2000-01-17，兩源衝突，寫作寫『1999 年前後』或避開。『Zool Fleischer』『Didier Lockwood 在第 8 軌』等 credit 只在舊簡介，這次來源列的是 Lockwood 小提琴與 Sylvain Luc 吉他曼陀林，未見 Fleischer。『盤面印 ℗ Blue Note』『十二軌八軌自寫』不須用。必查：法文搜尋（盤名＋critique）一次、法文維基、Bonsai Music 商品頁、JMA、Couleurs Jazz、Down Beat 1999 PDF（未讀）；找不到專輯樂評或訪談，無創作概念。故事 thin，寫作請薄寫，以人物背景為主，不要編『印記』的詮釋（Empreinte 意為印記、指紋，是法文字義，僅此）。 【主線補查】Discogs API 補客座與選曲；Zool Fleischer 確有參與（舊稿此點成立）。"
+ },
+ {
+  "key": "jeff mills|from the 21st",
+  "artist": "Jeff Mills",
+  "album": "From the 21st",
+  "facts": [
+   {
+    "text": "Jeff Mills 1963 年生於底特律，1980 年代末共同創立 Underground Resistance，1991 年離開走獨立路線，後來住過紐約、柏林與芝加哥；以電台 DJ 名號 The Wizard 聞名。",
+    "src": "https://en.wikipedia.org/wiki/Jeff_Mills",
+    "block": "what"
+   },
+   {
+    "text": "1992 年他與 Robert Hood 創辦 Axis 廠牌，旗下 Purpose Maker 等支線走更極簡的路線。",
+    "src": "https://en.wikipedia.org/wiki/Jeff_Mills",
+    "block": "what"
+   },
+   {
+    "text": "《From the 21st》是他在 Axis 之外交給日本 Sony 的專輯，AllMusic 記發行日為 1999 年 1 月 30 日，日本盤編號 AICT-43，附日本限定的追加曲。",
+    "src": "https://www.sonymusic.co.jp/Music/Info/SonyTechno/news/9902/jeff/index.html",
+    "block": "what"
+   },
+   {
+    "text": "日本 Sony 1999 年的介紹文把 Mills 寫成極簡 techno 的先驅，並強調他現場操作 Roland TR-909 鼓機。",
+    "src": "https://www.sonymusic.co.jp/Music/Info/SonyTechno/news/9902/jeff/index.html",
+    "block": "sound"
+   },
+   {
+    "text": "1999 年 3 月 idm 郵件群組上一則評論稱這是他「最完整、最連貫的長篇專輯」，聲音比他之前更「clinical、stripped-down」，適合 Basic Channel 與極簡 techno 聽眾。",
+    "src": "https://analogue.bytenoise.co.uk/message/459196561d77f4e8eb748ac62214a508197ed63c",
+    "block": "sound"
+   },
+   {
+    "text": "同篇評論指節奏「仍是相當直的 loop」，但相對他過去是明顯的方向轉變，也比《Purpose Maker》合輯更靠近 IDM；其中一首是把 Humana EP 開頭短小的豐厚前奏擴寫。（個人網路評論，不是專業媒體，不宜寫成權威評價。）",
+    "src": "https://analogue.bytenoise.co.uk/message/459196561d77f4e8eb748ac62214a508197ed63c",
+    "block": "sound"
+   },
+   {
+    "text": "Mills 的作品長期與 Roland TR-909 連在一起，Mixmag 稱他是 909 的『master』（維基轉述）。",
+    "src": "https://en.wikipedia.org/wiki/Jeff_Mills",
+    "block": "sound"
+   },
+   {
+    "text": "此後他轉向科幻與配樂主題：《Metropolis》（2000）、《Time Machine》（2001）、《Sleeper Wakes》系列等。",
+    "src": "https://sf-encyclopedia.com/entry/mills_jeff",
+    "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs 日版註記：作品原為 Axis 1998 年製作，錄於 Mills 在芝加哥的 Spider Formation 工作室，Mills 一人編曲、製作、混音；日本 Sony 旗下 SMEJ 1999 年發行，附 Tsutomu Noda 撰寫的日文解說。",
+    "src": "https://api.discogs.com/releases/65466",
+    "block": "story"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "舊簡介『第 4 首與單曲〈Here〉音訊相同』『〈Optima (Reason)〉』『單曲是 Preview』『在芝加哥錄成』『1998 年 Axis 版權』均未查到佐證，且是雜項，勿用。注意：Wikipedia 把這張列成 1998 年 Sony 專輯，AllMusic 記 1999 年 1 月；另有 2004 年同名 Axis EP，勿混。英文維基稱 Mills 後來在芝加哥生活過，但『這張在芝加哥錄』無來源。必查：Wikipedia、AllMusic 摘要（搜尋）、Sony Japan 日文頁（部分亂碼）、bytenoise 評論、WebSearch 一次；Axis 官網（本張無頁面，Axis 頁僅週邊商品）、Discogs 403。沒有 Mills 本人對本張概念的說明，故事 thin。 【主線補查】Discogs API 證實芝加哥錄音（舊稿此點成立）；與〈Here〉音訊相同屬雜項不寫。"
+ },
+ {
+  "key": "jeff mills|the power",
+  "artist": "Jeff Mills",
+  "album": "The Power",
+  "facts": [
+   {
+    "text": "Axis 是 Jeff Mills 1992 年與 Robert Hood 在底特律創辦的廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Jeff_Mills",
+    "block": "what"
+   },
+   {
+    "text": "《The Power》是 Axis 的 CD（AXCD042），附 16 頁彩色小冊子，內有 Mills 自撰的原創故事；14 首曲，含〈The Power (Theme)〉〈Microbe〉〈Drifting Away〉。",
+    "src": "https://axisrecords.com/?p=121",
+    "block": "what"
+   },
+   {
+    "text": "Axis 官網把它放在《Sleeper Wakes》系列中，指為主角『難以融入地球文化』的關鍵階段。",
+    "src": "https://axisrecords.com/?p=121",
+    "block": "story"
+   },
+   {
+    "text": "故事：主角在宇宙旅行四年後精神受損，一次介入付出高昂代價；前一章《The Occurrence》中出現、能控制電力的怪異能力，製造出對世界安全的假威脅；嚴重的疏離把心智推過極限，逐漸失去歸屬感而孤立。",
+    "src": "https://axisrecords.com/?p=121",
+    "block": "story"
+   },
+   {
+    "text": "《Sleeper Wakes》系列由 2009 年的《The Sleeper Wakes》與 2010 年的《The Occurrence》（Third Ear）開始，之後延續到 2012 年《The Messenger》、2013 年《The Jungle Planet》等。",
+    "src": "https://codamusic.me/artists/jeff-mills",
+    "block": "story"
+   },
+   {
+    "text": "Mills 談自己的科幻音樂：作曲時想像一個人凝視巨大的虛空，音樂中的戲劇、懸疑與侵略性是在『調節』聽眾，為生存成為核心的未來做準備（The Quietus 訪談，非專指此張）。",
+    "src": "https://thequietus.com/?p=9661",
+    "block": "story"
+   },
+   {
+    "text": "同期的 12 吋單曲（AX 058，2011 年 5 月 10 日）收〈Microbe〉〈The Exchange〉〈Spiral Therepy〉〈The Diagnosis〉，歸類 techno。",
+    "src": "https://soundshelter.net/vinyl/jeff-mills-the-power",
+    "block": "sound"
+   },
+   {
+    "text": "Mills 的 techno 長期以 Roland TR-909 鼓機為核心，極簡、重複、強調律動（維基）。",
+    "src": "https://en.wikipedia.org/wiki/Jeff_Mills",
+    "block": "sound"
+   },
+   {
+    "text": "Mills 在 2011 年起於 DJ 表演中轉用 CD 播放器取代唱盤（維基）。",
+    "src": "https://en.wikipedia.org/wiki/Jeff_Mills",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "舊簡介『小冊子故事是他親手寫的』屬實（Axis：original story by Jeff Mills）；『2011 年 4 月 19 日開賣』與 12 吋 5 月 10 日有出入，且有來源把 CD 記成 2010，勿寫日期；『14 首約 66 分鐘』14 首屬實。『剪輯混音製作一手包辦』未查到。重點：舊簡介完全沒提它屬於《Sleeper Wakes》敘事系列，這是這張的故事核心。注意 Wikipedia 稱 Mills 於 1992 年與 Robert Hood 創辦 Axis，舊簡介『Mills 1992 年創辦』不算錯。必查：Axis 官網商品頁（成功）、soundshelter、Wikipedia、Quietus（訪談只部分談系列、未提 The Power）、Coda、WebSearch 兩次。完整聲音描述找不到（Axis 頁、Rush Hour 503），聲音只有 techno 與 909 的藝人層級資訊；寫作請把聲音寫成『極簡 techno』，不要編曲式細節。"
+ },
+ {
+  "key": "jeffrey swann|wuorinen / boulez: second sonata / troisième sonate pour piano",
+  "artist": "Jeffrey Swann",
+  "album": "Wuorinen / Boulez: Second Sonata / Troisième Sonate pour piano",
+  "facts": [
+   {
+    "text": "Jeffrey Swann 1951 年生於美國，在達拉斯長大，畢業於 Juilliard，獲 Dino Ciani 大賽首獎、伊莉莎白女王大賽二獎，1974 年贏得 Young Concert Artists 徵選，也是鋼琴家兼音樂學者。",
+    "src": "https://en.wikipedia.org/wiki/Jeffrey_Swann",
+    "block": "what"
+   },
+   {
+    "text": "這張 Music & Arts 專輯（CD-4763，1993 年）收 Charles Wuorinen 的《第二號奏鳴曲》（1976）與 Pierre Boulez 的《第三號鋼琴奏鳴曲》（1958），Boulez 錄了兩種版本，內頁由 Swann 以英法文自寫。",
+    "src": "https://musicandarts.com/product/piano-sonatas-by-wuorinen-and-boulez-jeffrey-swann-piano/",
+    "block": "what"
+   },
+   {
+    "text": "Boulez 第三號奏鳴曲寫於 1955–57 年，1963 年修訂；採開放形式，演奏者可自行選擇路線，其中〈Trope〉甚至可略過某些段落，這是 Boulez『受控的偶然（aléa）』，不同於 Cage，演奏者只能在作曲家寫好的可能之間選擇。",
+    "src": "https://en.wikipedia.org/wiki/Pierre_Boulez",
+    "block": "story"
+   },
+   {
+    "text": "專輯的兩個版本即是同一部奏鳴曲兩次不同走法，兩個版本都分〈Tropes〉與〈Miroir〉兩段（Music & Arts 試聽）。",
+    "src": "https://musicandarts.com/product/piano-sonatas-by-wuorinen-and-boulez-jeffrey-swann-piano/",
+    "block": "story"
+   },
+   {
+    "text": "Wuorinen 第二號奏鳴曲的首演由 Swann 在 Kennedy Center 演出（《Washington Post》評論轉述）。",
+    "src": "https://musicandarts.com/product/piano-sonatas-by-wuorinen-and-boulez-jeffrey-swann-piano/",
+    "block": "story"
+   },
+   {
+    "text": "David Raymond（《American Record Guide》）稱 Wuorinen 的奏鳴曲是長篇、形式原創的作品，並拿它與 Liszt 的 B 小調奏鳴曲相比，錄音『clarity itself』。",
+    "src": "https://musicandarts.com/product/piano-sonatas-by-wuorinen-and-boulez-jeffrey-swann-piano/",
+    "block": "sound"
+   },
+   {
+    "text": "Art Lange（《Fanfare》）說 Wuorinen 的作品值得反覆聆聽，Boulez 的開放形式奏鳴曲更是非反覆聽不可，這張唱片的價值在鋼琴演奏與『不同觀點』。",
+    "src": "https://musicandarts.com/product/piano-sonatas-by-wuorinen-and-boulez-jeffrey-swann-piano/",
+    "block": "what"
+   },
+   {
+    "text": "J. McLellan（《Washington Post》）形容 Wuorinen 的奏鳴曲在形式上當代卻不為現代而現代，情感表達強、用靜默很有創意。",
+    "src": "https://musicandarts.com/product/piano-sonatas-by-wuorinen-and-boulez-jeffrey-swann-piano/",
+    "block": "sound"
+   },
+   {
+    "text": "Wuorinen 是十二音作曲家，受 Schoenberg、晚期 Stravinsky 與 Babbitt 影響，作品技術複雜、要求極高的演奏技巧，1970 年以電子作品《Time's Encomium》拿 Pulitzer 音樂獎。",
+    "src": "https://en.wikipedia.org/wiki/Charles_Wuorinen",
+    "block": "what"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "舊簡介『Boulez 兩版本各由〈Tropes〉與〈Miroir〉兩段』屬實（Music & Arts 試聽曲名）；『亞利桑那 1951 生』維基稱 11 月 24 日生、幼年自亞利桑那搬達拉斯，屬實。『受控的偶然』來自 Boulez 維基，Boulez 〈Trope〉可略過、並非每次都彈同樣段落。舊簡介沒寫 Wuorinen 奏鳴曲首演是 Swann，這是新發現。兩個版本到底怎麼不同（路線選擇）Music & Arts 頁沒說，須讀內頁；不可編。Boulez 第三號的 Mallarmé／Joyce 淵源、formant 名稱（Trope、Constellation、Strophe、Séquence）本次未取得可引用頁面，勿寫。必查：英文維基（Swann、Boulez、Wuorinen）、Music & Arts 商品頁、eClassical、ArkivMusic（搜尋）、WebSearch 一次；Gramophone 兩篇評論未讀、Swann 母語不適用。聲音只有樂評片語，無具體鋼琴技法，thin。"
  }
 ]

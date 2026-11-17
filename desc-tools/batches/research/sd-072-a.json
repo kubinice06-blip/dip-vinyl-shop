@@ -38,6 +38,21 @@
     "text": "Transonic 的早期作品近年在全球再度被重發。",
     "src": "https://ototoy.jp/_/default/p/25160",
     "block": "after"
+   },
+   {
+    "text": "【主線補查】Discogs credit：全部曲目由 Kiyoshi Hazemoto 作曲、製作、混音，一人完成；曲名多取自催眠與超自然現象（Hypnotic Regression、Levitation、Fantasy-Prone、Balls of Light），與盤名「降靈室音樂」呼應。",
+    "src": "https://api.discogs.com/releases/318679",
+    "block": "story"
+   },
+   {
+    "text": "【主線補查】2023 年 ExT Recordings 重發為雙碟豪華版，宣傳稱這是 Interferon 唯一的一張專輯。",
+    "src": "https://ototoy.jp/_/default/p/25160",
+    "block": "after"
+   },
+   {
+    "text": "【主線補查】2026 年 Transonic 回顧合輯《Sounds of Transonic》收了本盤的〈Blasting Soul〉，介紹說這首與 Mind Design 的〈Dream Trance〉明顯受底特律 hi-tech jazz 與 machine funk 影響；合輯整體也連到同期英國 artificial intelligence 電子樂與 trip hop。",
+    "src": "https://yoyaku.io/jp/?p=542341",
+    "block": "sound"
    }
   ],
   "coverage": {
@@ -45,7 +60,7 @@
    "story": "thin",
    "sound": "thin"
   },
-  "notes": "舊簡介全是 credit／曲長。年份 1994 與 tunecore 一致；ototoy 頁面標示 2011 為重發年。必查清單：母語搜尋（羽積清／ハゼモト）只得到 allabout 訪談與 tunecore；allabout 三頁 WebFetch 全 403，無法讀訪談內文；Discogs 403；ja.wikipedia Transonic 404；ototoy、tunecore 已讀。英文樂評搜尋無。sound 只有『club 取向、最偏舞池』一條具體，沒有樂器素材描述，寫作層薄寫，建議主線補查（Bandcamp／Transonic 頁面）。"
+  "notes": "舊簡介全是 credit／曲長。年份 1994 與 tunecore 一致；ototoy 頁面標示 2011 為重發年。必查清單：母語搜尋（羽積清／ハゼモト）只得到 allabout 訪談與 tunecore；allabout 三頁 WebFetch 全 403，無法讀訪談內文；Discogs 403；ja.wikipedia Transonic 404；ototoy、tunecore 已讀。英文樂評搜尋無。sound 只有『club 取向、最偏舞池』一條具體，沒有樂器素材描述，寫作層薄寫，建議主線補查（Bandcamp／Transonic 頁面）。 【主線補查】WebSearch 1 次＋Discogs API＋yoyaku 頁；sound 升為可寫（底特律 hi-tech jazz／machine funk 影響、偏舞池），仍不描述具體音色。"
  },
  {
   "key": "inti-illimani|imaginación",
@@ -157,5 +172,406 @@
    "sound": "ok"
   },
   "notes": "舊簡介全是曲長盤號，且第七軌〈William〉等不需沿用。story 查不到錄音經過與主題：Wildcat 樂評、codamusic、Bandcamp 都沒有；AllMusic、Sputnik（搜尋摘要見過）未 WebFetch；en.wikipedia/Ignaurus 404。注意 wc.arizona.edu 那頁內文把標題寫成『Into Another』，實為評 Ignaurus。一句後續可用 Hollywood 轉簽。"
+ },
+ {
+  "key": "irakere|cuba libre",
+  "artist": "Irakere",
+  "album": "Cuba libre",
+  "facts": [
+   {
+    "text": "《Cuba libre》是 1980 年在日本錄的日本限定 LP，2010 年 Far Out Recordings 重發，是它第一次在日本以外、也是第一次以 CD 面世。",
+    "src": "https://cabezademoog.blogspot.com/2014/11/irakere-cuba-libre-2010.html?m=0",
+    "block": "what"
+   },
+   {
+    "text": "美古關係再度轉壞後，哥倫比亞唱片不再與 Irakere 續約，日本 Victor（JVC）接手簽下樂團。",
+    "src": "https://jazzinthe80s.blogspot.com/2022/01/irakere-el-coco-jvcmilestone-1982.html",
+    "block": "story"
+   },
+   {
+    "text": "作曲、編曲、製作都由日本人上田力（Chikara Ueda）一手包辦；錄音在東京 Sound Inn 與 Victor 錄音室，混音在 Victor 錄音室。",
+    "src": "https://cabezademoog.blogspot.com/2014/11/irakere-cuba-libre-2010.html?m=0",
+    "block": "story"
+   },
+   {
+    "text": "Timba.com 記載 1980 年 8 月在東京錄的是一張含長版〈El coco〉的五曲 LP；部落格則說同一批錄音也產出《El Coco》，兩年後才進入國際市場。",
+    "src": "https://www.timba.com/encyclopedia_pages/history-and-discography-of-irakere",
+    "block": "story"
+   },
+   {
+    "text": "1980 年 5 月，薩克斯風手 Paquito D'Rivera 在西班牙巡演時出走；Germán Velazco（原 Orquesta Revé、La 440）接下中音與高音薩克斯風，Arturo Sandoval 8 月仍在團內。",
+    "src": "https://www.timba.com/encyclopedia_pages/history-and-discography-of-irakere",
+    "block": "story"
+   },
+   {
+    "text": "音樂是拉丁爵士，把爵士與 Afro-Cuban funk 接在一起；樂評說製作帶有明顯的『日本質感』，開場曲為〈Cuba Libre〉，〈Gospelanza〉以左右聲道各一部鋼琴為亮點。",
+    "src": "https://cabezademoog.blogspot.com/2014/11/irakere-cuba-libre-2010.html?m=0",
+    "block": "sound"
+   },
+   {
+    "text": "編制：Chucho Valdés 鍵盤、Arturo Sandoval 與 Jorge Varona 小號、Germán Velazco 中音薩克斯風、Carlos Averhoff 次中音、Carlos del Puerto 貝斯、Enrique Plá 鼓、Carlos Emilio Morales 吉他、Jorge Alfonso 與 Oscar Valdés 打擊。",
+    "src": "https://cabezademoog.blogspot.com/2014/11/irakere-cuba-libre-2010.html?m=0",
+    "block": "sound"
+   },
+   {
+    "text": "Irakere 的一貫配方是古巴與 Afro-Cuban 節奏混爵士、搖滾與古典，另有批鼓、abakuá 鼓、響葫蘆、claves 等大量打擊樂。",
+    "src": "https://es.wikipedia.org/wiki/Irakere",
+    "block": "sound"
+   },
+   {
+    "text": "2010 年的重發被當作『長年絕版、日本以外前所未發』的稀有盤來介紹。",
+    "src": "https://www.faroutrecordings.com/products/irakere-cuba-libre",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "身分已確認：Cuba libre＝1980 年東京 Victor（JVC）日本限定盤，上田力製作，與 Columbia 的《Irakere II》是不同張。舊簡介大致可信（上田力、Sound Inn、Velazco 接替 Paquito 都有佐證），但『生於 1925 年、DAS-90 母帶系統、花三天、前一年同公司在哈瓦那錄』未查證；Far Out 商品頁與 Juno 評論 403。sound 只有 cabezademoog 部落格樂評摘要的『Japanese quality、Gospelanza 雙鋼琴左右聲道』，無逐曲描述，寫作層薄寫。法文來源 allaboutjazz/qobuz 評論提到 Xiomara 屬 Irakere II，不是本盤。"
+ },
+ {
+  "key": "irakere|irakere ii",
+  "artist": "Irakere",
+  "album": "Irakere II",
+  "facts": [
+   {
+    "text": "《Irakere II》是 Irakere 在美國 Columbia/CBS 的第二張，編號 JC 36107，維基標為 1980；哈瓦那另有 Areito 版。",
+    "src": "https://en.wikipedia.org/wiki/Irakere",
+    "block": "what"
+   },
+   {
+    "text": "Timba.com 指其中六首（〈Claudia〉〈Ayer te conocí〉〈Añung añunga〉〈Gira gira〉〈Baila mi ritmo〉〈Ciento años de juventud〉）錄於 1979 年 4 月紐約，這些似乎從未在古巴發行，只能在合輯上找到；Jazz Music Archives 也記錄錄於紐約 CBS 錄音室。",
+    "src": "https://www.timba.com/encyclopedia_pages/1979-studio-sessions",
+    "block": "story"
+   },
+   {
+    "text": "那是 1979 年在紐約的兩次錄音之一，也是 Paquito D'Rivera 1980 年 5 月出走前最後兩次錄音。",
+    "src": "https://www.timba.com/encyclopedia_pages/1979-studio-sessions",
+    "block": "story"
+   },
+   {
+    "text": "1979 年美古關係短暫解凍，Irakere 才得以在 Columbia 出版；1980 年 Columbia 在關係轉壞後不再續約，樂團轉簽日本 Victor。",
+    "src": "https://jazzinthe80s.blogspot.com/2022/01/irakere-el-coco-jvcmilestone-1982.html",
+    "block": "after"
+   },
+   {
+    "text": "Timba.com 對這批紐約錄音評價不高，稱它們是『美國爵士與融合樂的衍生拼貼』，不如同時期更古巴的作品原創。",
+    "src": "https://www.timba.com/encyclopedia_pages/1979-studio-sessions",
+    "block": "what"
+   },
+   {
+    "text": "Qobuz 的介紹挑出融合爵士／舞曲風格的〈Xiomara〉作為這批哥倫比亞專輯的代表。",
+    "src": "https://www.qobuz.com/us-en/interpreter/irakere/44136",
+    "block": "sound"
+   },
+   {
+    "text": "樂團以古巴與 Afro-Cuban 節奏混爵士、搖滾、古典，使用電子樂器之外還有批鼓、abakuá 鼓、claves、maracas、congas、güiro。",
+    "src": "https://es.wikipedia.org/wiki/Irakere",
+    "block": "sound"
+   },
+   {
+    "text": "上一張同名《Irakere》（1979，Columbia）拿下 1980 年 Grammy 最佳拉丁錄音；這是第二張，並無 Grammy 紀錄。",
+    "src": "https://es.wikipedia.org/wiki/Irakere",
+    "block": "after"
+   },
+   {
+    "text": "樂團 1973 年定名 Irakere（約魯巴語『叢林』），Chucho Valdés 為靈魂人物，源自 1967 年古巴現代音樂樂團的成員。",
+    "src": "https://es.wikipedia.org/wiki/Irakere",
+    "block": "what"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "thin"
+  },
+  "notes": "年份矛盾：en.wikipedia 與 Jazz Music Archives 標 1980，Qobuz 與部落格標 1979；錄音確切為 1979 年 4 月紐約（timba）。寫作時用『1980 年出版』較穩，或避開年份細節。Timba 稱六首未在古巴發行，但本盤是八軌，與其他兩首（Xiomara 等）的關係未確認。舊簡介全是曲長，『曲名一半是舞曲指令』是臆測，勿沿用。sound 缺逐曲描述；沒找到具名樂評全文，allaboutjazz 條目僅搜尋結果。Wikipedia 專輯頁 404。Far Out 稱兩張都得獎但無佐證，勿用。"
+ },
+ {
+  "key": "irakere|yemayá",
+  "artist": "Irakere",
+  "album": "Yemayá",
+  "facts": [
+   {
+    "text": "《Yemayá》由 Blue Note 發行，維基與多數目錄標為 1999 年（不是 1997），封面掛名『Irakere featuring Chucho Valdés』。",
+    "src": "https://en.wikipedia.org/wiki/Irakere",
+    "block": "what"
+   },
+   {
+    "text": "Yemayá 是約魯巴信仰中的海洋與母親之神；專輯標題取自這位水之神。",
+    "src": "https://www.qobuz.com/es-es/interpreter/irakere/44136",
+    "block": "story"
+   },
+   {
+    "text": "1997 年 Chucho Valdés 離開樂團，兒子 Chuchito 接手鋼琴與指揮到 1999 年；因此這張算是世代交替期的 Irakere。",
+    "src": "https://en.wikipedia.org/wiki/Irakere",
+    "block": "story"
+   },
+   {
+    "text": "1997 年的 Irakere 專輯是《Babalú Ayé》（錄於哈瓦那 Egrem，1999 年 2 月發行），入圍 Grammy，以 timba 舞曲為主；〈Babalú ayé〉一曲請了桑特里亞大師 Lázaro Ros。",
+    "src": "https://www.timba.com/encyclopedia_pages/history-and-discography-of-irakere",
+    "block": "story"
+   },
+   {
+    "text": "All About Jazz 的 Jim Santella 說，全張靠 Chucho Valdés 的鍵盤撐住焦點，他的演奏『典範』，但電子鍵盤少了原聲鋼琴的打擊感，是主要弱點。",
+    "src": "https://www.allaboutjazz.com/yemay-irakere-blue-note-records-review-by-jim-santella",
+    "block": "what"
+   },
+   {
+    "text": "聲音：計時鼓、康加鼓、鼓組撐起 Afro-Cuban 的打擊底，加上緊湊的銅管組，屬熱辣的拉丁爵士。",
+    "src": "https://www.allaboutjazz.com/yemay-irakere-blue-note-records-review-by-jim-santella",
+    "block": "sound"
+   },
+   {
+    "text": "〈La Explosión〉由小號、電吉他、鍵盤輪流獨奏開場；〈Mr. Bruce〉獻給 Blue Note 總裁 Bruce Lundvall，是 Valdés 的鍵盤秀。",
+    "src": "https://www.allaboutjazz.com/yemay-irakere-blue-note-records-review-by-jim-santella",
+    "block": "sound"
+   },
+   {
+    "text": "評論提到呼應式人聲與合唱是 Irakere 演出的標準手法；Richard Ginell 較不熱烈，認為 Valdés 把九〇年代末最火熱的演奏留給自己的獨奏專輯。",
+    "src": "https://origin-www.alibris.com/Yemaya-Irakere-Chucho-Valdes/music/400387070",
+    "block": "sound"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "ok"
+  },
+  "notes": "舊簡介的『1997 年 Egrem 首發 CD 0226、錄於 Estudios Egrem、兩版軌目不同（Danza de los Ñáñigos 換 Son montuno）』無法查證，疑似與《Babalú Ayé》（1997 錄於 Egrem）混淆；en 與 es 維基都說 Yemayá 是 1999 Blue Note。Alibris 頁 503，Ginell 評語出自搜尋摘要，WebFetch 未取得全文，寫作層若用請保守。Santella 評分在頁面資料不明，勿寫分數。story 沒找到錄音經過；AllMusic 未讀。"
+ },
+ {
+  "key": "iron cross|ရာစုသစ်",
+  "artist": "Iron Cross",
+  "album": "ရာစုသစ်",
+  "facts": [
+   {
+    "text": "Iron Cross 是仰光的搖滾團，由吉他手兼詞曲人 Saw Bwe Hmu 創立（起初叫 Holy Cross，為擴大受眾改名），他 1994 年過世後由 Chit San Maung 接任主奏吉他。",
+    "src": "https://en.wikipedia.org/wiki/Iron_Cross_(Burmese_band)",
+    "block": "what"
+   },
+   {
+    "text": "四位主唱：Lay Phyu 1992 年先加入，接著是他的弟弟 Ah Nge 與 Y Wine，最後 Myo Gyi；四人後來都有個人事業，仍回團演出。",
+    "src": "https://en.wikipedia.org/wiki/Iron_Cross_(Burmese_band)",
+    "block": "what"
+   },
+   {
+    "text": "Lay Phyu 被稱為緬甸搖滾史上商業上最成功的男歌手之一；他早期把英文歌翻成緬文唱，影響來自 Nazareth、Metallica、Van Halen、Scorpions、Bon Jovi。",
+    "src": "https://en.wikipedia.org/wiki/Lay_Phyu",
+    "block": "what"
+   },
+   {
+    "text": "Myo Gyi 1976 年生於仰光，1998 年個人專輯《Lay Byay》大賣，2004 年獲 Yangon City FM 最暢銷男歌手獎。",
+    "src": "https://en.wikipedia.org/wiki/Myo_Gyi",
+    "block": "what"
+   },
+   {
+    "text": "團的鷹與十字徽章長得像納粹鷹，曾引起國際關注；吉他手 Chit San Maung 說他們當時不知道這是禁忌。",
+    "src": "https://en.wikipedia.org/wiki/Iron_Cross_(Burmese_band)",
+    "block": "story"
+   },
+   {
+    "text": "NPR 2006 年的報導稱它是緬甸最受歡迎的樂團，歌詞要先送審查委員會核准。",
+    "src": "https://www.irrawaddy.com/multimedia-burma/photo-essay/iron-cross-burmas-biggest-band-rocks-mae-sot.html",
+    "block": "story"
+   },
+   {
+    "text": "2008 年納吉斯風災後，團在仰光 Thuwunna 體育場辦賑災義演，約五萬人到場，是緬甸史上最大的搖滾演唱會之一；2010 年辦二十週年演唱會。",
+    "src": "https://en.wikipedia.org/wiki/Iron_Cross_(Burmese_band)",
+    "block": "after"
+   },
+   {
+    "text": "樂種是硬搖滾／重金屬：主奏吉他、貝斯、鍵盤、鼓的四人編制，加上三到四位主唱輪流領唱。",
+    "src": "https://en.wikipedia.org/wiki/Lay_Phyu",
+    "block": "sound"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "thin"
+  },
+  "notes": "只查到樂團層級資料；《ရာစုသစ်》（意為『新世紀』）本身的創作背景、曲目聲音完全沒找到，英文維基與 Lay Phyu、Myo Gyi 頁面都沒提 2001 年這張。緬文搜尋兩次（盤名＋團名、緬文團名）結果都是別的同名團；my.wikipedia 404；NPR 503；Irrawaddy 403。舊簡介『團核心編制四位、三位主唱 Myo Gyi／Ah Nge／Lay Phyu』與維基衝突（維基是四位主唱含 Y Wine），且『發行方就是團名、自營』無法查證，勿用。建議此張 story／sound 留 thin，寫作層以團的地位為主，薄寫；若主線願意，可再用緬文網站或 Facebook 專頁補查。 【主線補查】英文搜尋 1 次（New Century／2001）無本張任何資料；照 delayde 前例薄寫，只寫團的地位與編制，不描述本張內容。"
+ },
+ {
+  "key": "isaiah rashad|it’s been awful",
+  "artist": "Isaiah Rashad",
+  "album": "IT’S BEEN AWFUL",
+  "facts": [
+   {
+    "text": "《IT'S BEEN AWFUL》是 Isaiah Rashad 的第三張錄音室專輯，2026 年 5 月 1 日由 Top Dawg Entertainment 與 Warner Records 發行，十六軌、54:17；距上一張《The House Is Burning》（2021）約五年。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful",
+    "block": "what"
+   },
+   {
+    "text": "2024 年 2 月 TDE 發行時程外流、同年 10 月又有簡訊外流；他 2025 年 8 月在 Lollapalooza 預告新專輯，2026 年 3 月印著盤名的小卡流出，4 月 7 日正式公布。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful",
+    "block": "story"
+   },
+   {
+    "text": "《The Sun's Tirade》（2016）之後他曾因成癮問題長期缺席；Beats Per Minute 把這張讀成他仍在找回立足點、神智與快樂的紀錄，主題是堅持而非戲劇性轉型。",
+    "src": "https://beatsperminute.com/album-review-isaiah-rashad-its-been-awful/",
+    "block": "story"
+   },
+   {
+    "text": "主要合作者是製作人 Tim Vance（Keem the Cipher）；製作名單還有 Julian Sintonia、Kal Banx、Hollywood Cole、Jansport J。客席只有 SZA（〈Boy in Red〉）與 Dominic Fike（〈Cameras〉）。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful",
+    "block": "story"
+   },
+   {
+    "text": "歌詞談物質使用與復發的恐懼、必須扮演強者的壓力（姊姊入獄、他自己短暫無家可歸）、〈M.O.M.〉質疑財務穩定能否帶來平靜、〈SUPAFICIAL〉重新看待自傷疤痕，〈SCARED 2 LOOK DOWN〉談外流性愛影片與過去的自殺念頭。",
+    "src": "https://spectrumculture.com/2026/05/28/isaiah-rashad-its-been-awful-review/",
+    "block": "story"
+   },
+   {
+    "text": "開場〈THE NEW SUBLIME〉緩慢朦朧，建在簡單貝斯線、悶悶的大鼓與在混音中忽沉忽浮的小鼓上，加上悶音銅管與遠處的人聲哼唱；〈M.O.M.〉較亮，有天使般的鍵盤與清脆鼓組。",
+    "src": "https://spectrumculture.com/2026/05/28/isaiah-rashad-its-been-awful-review/",
+    "block": "sound"
+   },
+   {
+    "text": "Beats Per Minute：整體溫暖、有『夏日午後門廊音樂』感，邊緣仍留著暗影；他點名 OutKast、Goodie Mob、Organized Noize 為主要影響，但聽起來沒那麼南方濃稠；鉤子是他至今最抓耳的，如〈GTKY〉〈Boy in Red〉〈Same Shit〉。",
+    "src": "https://beatsperminute.com/album-review-isaiah-rashad-its-been-awful/",
+    "block": "sound"
+   },
+   {
+    "text": "Slant 說製作鬆散漂流，有薩克斯風在鼓慢慢晃動時飄入，鼓點『不照程式』；〈Scared 2 Look Down〉是少數孟菲斯風格的例外。〈Ain't Givin' Up〉有讓歌曲沉穩的爵士元素。",
+    "src": "https://fscollegian.com/2026/05/review-isaiah-rashads-its-been-awful-is-his-rawest-statement-yet/",
+    "block": "sound"
+   },
+   {
+    "text": "評價普遍正面：Metacritic 83/100，Pitchfork 7.8、Clash 與 Exclaim! 8、NME 四星；Billboard 200 首週第 18。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "ok",
+   "sound": "ok"
+  },
+  "notes": "舊簡介的『錄音從 2022 到 2026』『製作人欄二十八個名字』『Julian Sintonia 六軌編程』『卡片 4 月 7 日』未查證；維基說小卡 3 月流出、4 月 7 日正式公布，與舊簡介『官網訂單收到小卡、自己轉貼』不全同，勿沿用小卡細節。客席只有兩位與維基一致（但 Julian Sintonia 也在〈Do I Look High?〉出現）。Slant 全文 403、Pitchfork 全文未讀；Slant 引文來自搜尋摘要，寫作層若用請避免直接引用。盤名原樣用大寫，卡單用彎引號。"
+ },
+ {
+  "key": "jaak joala|jaak joala",
+  "artist": "Jaak Joala",
+  "album": "Jaak Joala",
+  "facts": [
+   {
+    "text": "Jaak Joala（1950–2014）生於維爾揚迪，在塔林長大；六〇年代在 Kristallid、Virmalised 兩個節拍團擔任長笛手、貝斯手與主唱。",
+    "src": "https://en.wikipedia.org/wiki/Jaak_Joala",
+    "block": "what"
+   },
+   {
+    "text": "七〇年代他在愛沙尼亞、蘇聯與波蘭 Sopot 的歌唱比賽拿過獎。",
+    "src": "https://et.wikipedia.org/wiki/Jaak_Joala",
+    "block": "what"
+   },
+   {
+    "text": "他被認為是第一批用母語唱西方搖滾風格歌曲、把它帶給愛沙尼亞與蘇聯聽眾的人。",
+    "src": "https://en.wikipedia.org/wiki/Jaak_Joala",
+    "block": "what"
+   },
+   {
+    "text": "為他寫歌的作曲人包括 Arne Oit、Uno Naissoo、Raimonds Pauls；八〇年代他大量以俄語錄音，被稱為『克里姆林宮的夜鶯』。",
+    "src": "https://et.wikipedia.org/wiki/Jaak_Joala",
+    "block": "after"
+   },
+   {
+    "text": "1978 年在蘇聯電視電影《31 июня》中他的四首歌被使用，之後在蘇聯爆紅；1980 年獲愛沙尼亞蘇維埃共和國功勳藝術家稱號。",
+    "src": "https://et.wikipedia.org/wiki/Jaak_Joala",
+    "block": "after"
+   },
+   {
+    "text": "1982 年他因與文化官員衝突被禁演一年。",
+    "src": "https://et.wikipedia.org/wiki/Jaak_Joala",
+    "block": "after"
+   },
+   {
+    "text": "愛沙尼亞維基列有兩張 1975 年 Melodiya LP：《Laulab Jaak Joala》與俄文名《Поёт Яак Йоала》；1971 年另有單曲與卡帶。",
+    "src": "https://et.wikipedia.org/wiki/Jaak_Joala",
+    "block": "what"
+   },
+   {
+    "text": "他音色被形容為隨年資內容與技巧要求越來越高的歌手。",
+    "src": "https://et.wikipedia.org/wiki/Jaak_Joala",
+    "block": "sound"
+   },
+   {
+    "text": "【主線補查】1975 年 Melodiya 發行的 LP 有愛沙尼亞文版《Laulab Jaak Joala》（Riga 廠壓製）與俄文版《Поёт Яак Йоала》，同一份 13 首歌單分別用愛沙尼亞語與俄語標題，是他的第一張個人 LP。",
+    "src": "https://api.discogs.com/releases/4899134",
+    "block": "what"
+   },
+   {
+    "text": "【主線補查】伴奏分由五位指揮帶領：愛沙尼亞的 Raivo Tammik、Peeter Saul，拉脫維亞的 Alnis Zaķis，以及 Aleksander Rjabov、Rostislav Merkulov；和聲由 Baltika、Collage、Laine 三個合唱／聲樂團擔任，錄音師之一是 Enn Tomson。",
+    "src": "https://api.discogs.com/releases/5181729",
+    "block": "sound"
+   },
+   {
+    "text": "【主線補查】歌單收了蘇聯戰爭史詩電影《解放》（Vabastamine／Освобождение）的插曲〈Viimne lahing〉，也收了〈Unustuse jõel〉〈Suveöö〉，這兩首後來成為 2016 年 JJ Music 限量回顧黑膠的盤名。",
+    "src": "https://api.discogs.com/releases/4899134",
+    "block": "story"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "thin"
+  },
+  "notes": "1975 年這張本身的資料找不到：et／en 維基只列在 discography、沒寫製作；muusikaplaneet 那頁講的是 2018 年的俄語歌曲合輯；ra.ee（愛沙尼亞國家檔案）搜尋摘要見到 1975 Melodia LP 但未能確認就是本盤，未 WebFetch 內頁。必查清單未全完成：愛沙尼亞文搜尋兩次（一次俄文、一次愛文）、維基已讀、Discogs 本組未試成功；ra.ee 的 valiseesti 條目是最有機會的下一步（可補曲目作曲者與伴奏團）。舊簡介『首張 Album、1972 年是 EP』與維基（1971 單曲／卡帶）不同，且『盤名幾乎全是俄文』不可靠，勿沿用。聲音面除『歌手、長笛手、貝斯手』外無具體資料，建議寫作層薄寫地位與生涯，或主線補查 ra.ee。 【主線補查】Discogs API 確認 1975 LP 愛／俄雙版與伴奏指揮、和聲團；只能薄寫，聲音只寫管弦伴奏與和聲團編制，不描述歌曲風格。"
+ },
+ {
+  "key": "jack walrath|neohippus",
+  "artist": "Jack Walrath",
+  "album": "Neohippus",
+  "facts": [
+   {
+    "text": "Jack Walrath（1946 年生於佛羅里達）是後波普小號手與編曲者，1974 至 1979 年在 Charles Mingus 的最後一團擔任小號手，也為 Mingus 最後的錄音寫編曲與配器。",
+    "src": "https://www.bluenote.com/artist/jack-walrath/",
+    "block": "what"
+   },
+   {
+    "text": "他在 Blue Note 只出過兩張：《Master of Suspense》（1986）與《Neohippus》；後者 1988 年 8 月 19、21 日錄於紐約 A&R Recording，1989 年發行，製作人是他自己。",
+    "src": "https://en.wikipedia.org/wiki/Neohippus",
+    "block": "what"
+   },
+   {
+    "text": "陣容是六重奏：Walrath 小號、Carter Jefferson 次中音薩克斯風與單簧管、John Abercrombie 吉他、James Williams 鋼琴、Anthony Cox 貝斯、Ronnie Burrage 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Neohippus",
+    "block": "what"
+   },
+   {
+    "text": "六首曲子全是 Walrath 自己寫的：〈Village of the Darned〉〈Watch Your Head〉〈Fright Night〉〈Annie Lee〉〈England〉〈Beer!〉。",
+    "src": "https://en.wikipedia.org/wiki/Neohippus",
+    "block": "story"
+   },
+   {
+    "text": "AllMusic 的 Scott Yanow 給四顆星，說 Walrath 雖然有點被忽視，卻永遠值得一聽；八〇年代中期的他偏好旋律與氣氛勝過例行和弦進行，避開顯而易見的處理，音樂充滿驚喜。",
+    "src": "https://en.wikipedia.org/wiki/Neohippus",
+    "block": "what"
+   },
+   {
+    "text": "Walrath 2012 年受訪說自己離不開藍調與音程，會用北非與希臘音樂的和聲、自創音階，有些和聲避開 II-V-I 與三度堆疊的和弦。",
+    "src": "https://fontmusic.org/2012/10/interview-with-jack-walrath/",
+    "block": "sound"
+   },
+   {
+    "text": "他從 Mingus 學到『延伸作曲』的概念，指超越標準歌曲形式的作品，也偏好固定班底。",
+    "src": "https://fontmusic.org/2012/10/interview-with-jack-walrath/",
+    "block": "story"
+   },
+   {
+    "text": "同期的 Blue Note 錄音邀過 Kenny Garrett、Steve Turre、John Abercrombie、James Williams 等人。",
+    "src": "https://www.bluenote.com/artist/jack-walrath/",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "what": "ok",
+   "story": "thin",
+   "sound": "thin"
+  },
+  "notes": "舊簡介『盤名是〈Pithecanthropus Erectus〉的演化後代』『記者把盤名讀成…』沒有任何來源可證，Neohippus 維基說明沒有解釋盤名；搜尋也找不到。『前一年以這家廠牌的編曲入圍葛萊美』未查證（Blue Note 頁面沒提）。曲目順序我用維基的，勿寫入簡介。Blue Note 頁面稱 Neohippus 為 1988，維基與多數稱 1989，寫作用 1989 較穩或避開。聲音描述只有 Yanow 摘要與 2012 訪談中的作曲偏好，沒有逐曲描述；AllAboutJazz 專輯頁 403、AllMusic 全文未讀、Fresh Air 1991 訪談無逐字稿。必查清單：英文樂評、維基、Blue Note 官網已做，母語（英文）訪談找到的是 2012 FONT 訪談；商品頁（Presto 只在搜尋摘要）未讀。"
  }
 ]
