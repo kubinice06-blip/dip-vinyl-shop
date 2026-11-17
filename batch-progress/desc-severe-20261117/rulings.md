@@ -916,3 +916,48 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-024.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 91 次（研究層 sd-023 35、sd-024 45，主線 11）。
+## sd-025（30 張，經典度≥4：Androids of Mu、Badalamenti、Thorvaldsdottir、Braxton、Anthony Rother、Antis 2、Duhamel、Karas、Troilo、Aníbal Velásquez、Archon Satani、Arditti 2、Aretha、Argo、Armia、Blakey 6、Schnabel 2、Arzachel、Attrition、Azitis、Banda do Casaco、Bappi Lahiri）— s15
+
+- 研究：3 支 Sonnet，WebSearch 13＋11＋12＝36 次；thin 17 張。
+- **主線補查 14 張**（WebSearch 16 次＋WebFetch，facts 標【主線補查】）：Braxton（AAJ Arista 套裝評：Circle 節奏組＋Wheeler、與 Holland 的 paired walk、Altschul）、Rother（RA 簡介）、Troilo（TodoTango：Filiberto 1918 低音旋律、1944 年錄音確立經典；Piazzolla 1944 離團原因）、Cafe Bohemia 兩卷（Jazz Journal、musicaficionado：Parker 欠酒錢傳說、Blakey 開場白、各曲聲音、〈Sportin' Crowd〉旋律來歷）、Schnabel 貝多芬（MusicWeb：第一套完整錄音、Gaisberg 發起、Courtauld-Sargent、各曲演奏）、Schnabel 舒伯特（Audaud：收錄範圍、奏鳴曲復興、演奏特色）、Attrition（1985《Electronic Soundmaker》專訪：租 8 軌、不 jam、808／MC-202／MS-20、拉弓貝斯、閘門）、Bappi（Amit Khanna 回憶：Burman 與 L-P 退出、先曲後詞、悲傷版）、Argo（兩層結構、Vilnius-5）、Like Someone in Love（Mosaic：九張、8 月 14 日場次）。Aretha、Archon、Berio、Antis 兩張、Duhamel 聲音段補查無新料，照研究稿薄寫。
+- 身分裁定：Antis《Kažkas atsitiko》寫成 2003 年 Zona 整理的 1985–86 年錄音（1986 年同名的是音樂電影）、《Ša!》寫 1988–89 年錄音；Thorvaldsdottir 寫 2023 發行；Duhamel 不寫指揮／樂團；Karas 寫聲軌連對白轉錄；Troilo 不斷言屬 RCA 全集；Banda do Casaco 不寫年份（卡 1974、各源 1975）；Schnabel 貝多芬不寫第四號指揮；Argo 照卡 1981、不寫銷量；Cafe Bohemia 兩卷分工（Vol.1 那一夜與俱樂部、Vol.2 曲子與聲音）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 29 處，改動檔 `review-sd-025.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Badalamenti、Thorvaldsdottir、Braxton、Antis 2、Troilo、Berio、Carter、Birdland Vol.2、Arzachel、Bappi | 第二句「這是／這張」→ 以《盤名》起句，連帶刪句壓回 240（彩繪臉孔、發起小組、黃金期舞者、Berio「以電子音樂聞名」、普立茲、凌晨三點、Brown 車禍、泛音樂章、Canterbury 後續等） | 第二句要有盤名；字數 |
+| Duhamel | 「含 1965 年原始錄音與 2000 年新錄」→「錄音橫跨 1965 到 2000 年」 | 研究稿只有錄音期 |
+| Jazz Corner Vol.1 | 鉤子「司儀報完團名，兩個 set 就被錄了下來」→ Timmons 把狀況不佳的店內鋼琴彈得比它本身更好；正文改補 Morgan／Shorter 獨奏與 Blakey | 「兩個 set」無出處、報團各版不一 |
+| Schnabel 舒伯特 | 「三首晚期奏鳴曲」→「三首奏鳴曲」 | D.850 不是晚期 |
+| Argo | 鉤子「是這個樂團對觀眾的要求」→「能跳的 disco 和要坐下來聽的電子樂，被 Argo 拼成同一張唱片。」 | 「要求」無出處 |
+| Attrition | 鉤子「用租來的 8 軌錄音機錄成」→「從不一起 jam，成員各自把點子錄進租來的多軌機」 | 鉤子去軌數字眼 |
+
+其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50，材料取自故事（Crass 要換鼓手、Lynch 要不安又美、Reed 在酒館聽到齊特琴、Parker 欠酒錢、Egg 獨家約逼出假名、檔期退出換來 Bappi）、概念（AIŌN 的時間、駭客概念、Mosaic 拼貼）、聲音（X 光片 caja 鼓）或地位（第一套完整協奏曲錄音、奏鳴曲復興）。QA 例外照收：Braxton「編號作品」是作品編號非盤號；Cafe Bohemia 兩卷、Jazz Corner、Banda do Casaco 盤名過長不加《》；Cafe Bohemia Vol.2 鉤子講〈Sportin' Crowd〉旋律來歷屬故事、非曲名體例。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-025.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，開工前也預查過 60 張皆 KV-HIT）。
+- onboarding manifest 同步 30 處。
+
+## sd-026（30 張，經典度≥4：Barrington Levy、Barry White、Basic Channel 2、Beaux Arts Trio、Ben Frost、Benny Green、Benton Flippen、Bernard Fevre、Big Boys、Big Joe Williams、BIGBANG、Bikini Kill／Huggy Bear、Bill Charlap 2、Bill Haley、Bing Crosby、Bix、Black Arthur Blythe、Black Cat Bones、Blake Baxter、Blind Lemon Jefferson、Blood Incantation、Blueboy 2、Bo Carter、Bob Carlin、Bobak Jons Malone、Hutcherson、McFerrin & Corea）— s15
+
+- 研究：3 支 Sonnet，WebSearch 14＋14＋13＝41 次；thin 16 張。
+- **主線補查 8 張**（WebSearch 10 次＋WebFetch）：Motherlight（Rising Storm：從未上台、Malone 分工、聲音、收藏地位）、Bob Carlin（Bluegrass Today：首張個人作、樂手、地位）、《Play》（維基：兩場現場、編制）、Bikini Kill／Huggy Bear（1993 春同巡英國、Huggy Bear 唯一全長作）、Bernard Fevre（Bleep／Bandcamp Daily／XLR8R：1975 年第二張 library 唱片、Moog、居家三部曲、早於 Boards of Canada）、Big Boys（Recoup／Punknews：Biscuit、放克貝斯、地位）。Bix《Akli kariai》立陶宛語補查無專輯層級資料，照樂團層級薄寫；Barry White、Blake Baxter、Bo Carter 補查無新料。
+- 身分裁定：Fevre 寫「1970 年代中期」、再發行是 Sound Obsession；Benton Flippen、Bo Carter 不寫精確年份；Blake Baxter 寫「1990 年代初」；Big Joe Williams 照 Delmark 內頁寫 1958 年錄；Bix 是 Šiauliai 的團、不寫車禍與錄音因果；Blind Lemon Jefferson、Bo Carter 寫成合輯；Bing Crosby 39 週寫「歷年各版本合計」；《Play》不寫葛萊美。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-026.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Basic Channel《BCD-2》 | 鉤子「盤面幾乎不印資訊的那批 12 吋」→「在底特律壓片、被誤當成底特律作品的柏林 12 吋」；刪「從早期中頻緊迫的聲音」 | 鉤子不得用盤面印刷；字數 |
+| Beaux Arts Trio | 「常被視為」→「被視為」 | 單一出處 |
+| Benny Green | 「原創曲向廠牌的過去致意，也被嫌太像前人」→「整張被嫌太依賴 Blue Note 過往的回聲」；刪 Malone／Nat King Cole 句 | 「致意」無出處；字數 |
+
+其餘逐張四問無改，逐條對過研究稿（Barry White 葛萊美最佳新人提名、Blood Incantation 用 Bowie 的鋼琴與排練九天、Unisex 牛津郡農場、Carlin 五歲看 Seeger、Flippen 1948 年 WPAQ 開播日、Cirrus 與 Land 七張 Blue Note 皆有出處）。30 張鉤子前四字互異、加權 ≤50；QA 0 例外（Ben Frost 盤名過長第二句用「這是 Netflix 德國科幻影集《Dark》配樂的第一卷」，照收）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-026.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 103 次（研究層 sd-025 36、sd-026 41，主線 26）。
