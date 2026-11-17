@@ -96,8 +96,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-026 | 經典度≥4（Barrington Levy … Bobby McFerrin & Chick Corea） | 30 | | |
 | sd-027 | 經典度≥4（Bodkin … CASHFORGOLD） | 30 | | |
 | sd-028 | 經典度≥4（Casino Versus Japan … Chico Freeman） | 30 | | |
-| sd-029 | 經典度≥4（Chris & Cosey … David Lynch & Alan R. Splet） | 30 | | |
-| sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | | |
+| sd-029 | 經典度≥4（Chris & Cosey … David Lynch & Alan R. Splet） | 30 | s17 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
+| sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | s17 | ✅ 上線 29（前台 29；delayde《finding solitude》查無專輯資料留置） |
 | sd-031 | 經典度≥4（Don Pullen … Eliane Elias） | 30 | | |
 | sd-032 | 經典度≥4（Eliane Elias … Ffa Coffi Pawb） | 30 | | |
 | sd-033 | 經典度≥4（Fin.K.L … Gabinete Caligari） | 30 | | |
