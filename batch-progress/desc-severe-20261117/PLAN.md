@@ -133,8 +133,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 10 張；CURATED 0） |
 | sd-060 | 其餘（BROCKBEATS … Casiopea） | 30 | s33 | ✅ 上線 30（前台 30；無留置；BROCKBEATS 4、Brother Joe May 2 薄寫；CURATED 0） |
 | sd-061 | 其餘（Casiopea … Chế Linh） | 30 | s33 | ✅ 上線 30（前台 30；無留置；主線補查 Charlie Moore、Chế Linh 2、Tone Poem；CURATED 0） |
-| sd-062 | 其餘（Cicada … Cæcilie Norby） | 30 | | |
-| sd-063 | 其餘（Da Vàng … Dianne Reeves） | 30 | | |
+| sd-062 | 其餘（Cicada … Cæcilie Norby） | 30 | s34 | ✅ 上線 30（前台 30；無留置；主線補查 8 張；CURATED 0） |
+| sd-063 | 其餘（Da Vàng … Dianne Reeves） | 30 | s34 | ✅ 上線 30（前台 30；無留置；主線補查 9 張；delayde 續集薄寫；CURATED 0） |
 | sd-064 | 其餘（Didjits … Doris Norton） | 30 | | |
 | sd-065 | 其餘（Dorothy Norwood … Elvin Jones） | 30 | | |
 | sd-066 | 其餘（Elvin Jones … Experimental Audio Research） | 30 | | |
