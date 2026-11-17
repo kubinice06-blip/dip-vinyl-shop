@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s8：sd-015、sd-016、sd-hold-2 上線（66 張，留置 1）
+
+- **結果**：sd-015 上線 30（無留置，第一批新版鉤子開頭）；sd-016 上線 29（留置張露《繁星點點 張露》，只查到發行日）；sd-hold-2 重查 sd-009～014 的 7 張留置卡，**7 張全數救回上線**，sd-009～014 留置清空。
+- **主線補查**：向井滋春《A Head Wind》（日本 Columbia 官方作品頁）、小栗均《みどりいろの渓流》（製作人照井顕自己的網站：311 海嘯後在陸前高田泥中挖出這張唱片）、宮沢昭等《Musical Play In Jazz》（Discogs API：整張百老匯歌曲）、森進一《輪廻》（樂迷部落格轉引 LP 解說：川内康範在告訴事件中強行保留開頭歌詞）、比屋定篤子。sd-hold-2 靠 api.discogs.com、復刻文案與商品頁救回。
+- **審稿**：sd-015 改 9 處、sd-016 改 14 處、sd-hold-2 改 6 處（單一出處去「常被」、刪再版／CD 化／合輯收錄、宣傳語），逐條在 `rulings.md`。WebSearch 工作階段約 144 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,kv-before-sd-015/016/hold-2.json,review-sd-015/016/hold-2.json,held-sd-016.json}`、`desc-tools/batches/{cards,research,output}/sd-015*、sd-016*、sd-hold-2*`、onboarding manifest 66 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 132 鍵（60＋58＋14）逐字回讀全數一致；`front-check` 前台 66/66 新稿、CURATED 0；QA 無軌序／曲長／盤號（「4:17」為森園勝敏盤名、「会」為專名）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s9：sd-017、sd-018 上線（58 張，留置 2）
 
 - **結果**：sd-017 上線 30（無留置）；sd-018 上線 28（留置花生隊長《Oh My God》、美空ひばり《ひばりの渡り鳥だよ》，KV 保留舊稿）。開頭照新版用鉤子（材料限故事／概念／聲音／地位），58 張前四字互異。
