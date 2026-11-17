@@ -1041,3 +1041,24 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-037.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
 - onboarding manifest 同步 25 處。
+
+## sd-038（30 張，經典度≥4：JMSN、Joachim Kühn、Joe Bataan 2、Joe Claussell、Joe Lovano 3、Joe McPhee、Joe Tex、Coltrane、John Gordon、John Scofield 5、Stevens／Watts／Guy、Johnny Coles、Johnny Osbourne、José Afonso 2、Juan Gabriel、Juaneco y su Combo、Judge 2、Julian Lage、Julian's Treatment、Jumprava、Junior Ross & The Spears）— s21
+
+- 研究：3 支 Sonnet，WebSearch 12＋15＋13＝40 次；none 1（Junior Ross sound）。
+- **主線補查**（WebSearch 約 8 次＋WebFetch，facts 標【主線補查】）：Scofield《Meant to Be》（維基＋100 Greatest Jazz Albums：無鋼琴、Stewart 不對稱節奏、Ibanez 殘響音色近 McLaughlin；取代研究稿誤用的前作四重奏現場報導）、Stevens／Watts／Guy《No Fear》（Riverside Studios 1977 錄音、Soundohm 介紹）。Kühn《Hip Elegy》、Lovano《Landmarks》、Jarcha 式的薄卡再搜一次無新料；Junior Ross、Jumprava、Judge《New York Crew》、Juan Gabriel 補搜仍只有樂團層級或發行資訊，照研究稿薄寫（Jumprava 聲音寫成「樂團這時期」）。
+- 身分／事實裁定：Joe Tex 盤名照卡單、不寫 Tom Dowd、「FAME 第一擊」、R&B 榜位；Bataan《Saint Latin's Day Massacre》年份兩說寫「1970 年代初」；Lovano《Trio Fascination》是第二張三重奏錄音；McPhee 的 Baraka 啟發是單一網誌，不寫；Johnny Coles 舊稿「此後十年沒領銜」改正（實為約七年，正文不寫）；Erotica Suite 1976 年底錄、1978 發行；Juaneco 年份兩說寫「1970 年代初」、墜機 1977；Afonso 兩張不寫 José Mário Branco 編曲；Judge《New York Crew》是兩人錄的 EP；Junior Ross 不寫 Jammy 混音與出生年；Lage《Squint》不提作曲署名爭議。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-038.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Kühn《Hip Elegy》 | 刪「Kühn 已改彈電子鍵盤」 | 研究稿只說他在 Association P.C. 時期轉用電子鍵盤，這張陣容記的是鋼琴 |
+| Lovano《Universal Language》、Bataan《Saint Latin's Day Massacre》、Juaneco、Afonso 2 | 「常被視為」→「被視為」 | 各只有單一具名出處（AllMusic Erlewine、Rush Hour、Sounds and Colours、Altamont） |
+
+其餘逐張四問無改：逐條對過研究稿（Bataan 父母族裔、Marín 慢 Fania 一步、Elvin Jones 錄音前一週滿七十歲、McPhee 在 Vassar 喊「What time is it?」、Gitler 在《Soultrane》內頁首用 sheets of sound、Joe Tex 凌晨三點的紙袋歌、Afonso 被開除教職與 Rui Pato 遭 PIDE 禁止出境、Judge 的 Chung King 棄用版、Lage 在納許維爾戴口罩錄音皆有出處）；Judge《Bringin' It Down》的 110 張白膠是被棄用錄音的故事核心，照收。30 張鉤子前四字互異、加權 ≤50、第二句皆以《盤名》起句；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-038.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 100 次（研究層 sd-037 39、sd-038 40，主線約 21）。
