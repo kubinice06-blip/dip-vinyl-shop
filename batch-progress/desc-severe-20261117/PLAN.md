@@ -120,8 +120,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-048 | 經典度≥4（SHAKKAZOMBIE … Stefon Harris） | 30 | | |
 | sd-049 | 經典度≥4（Steps … The Black Skirts） | 30 | | |
 | sd-050 | 經典度≥4（The Black Skirts … The Mercy's） | 30 | | |
-| sd-051 | 經典度≥4（The Monochrome Set … Titus Groan） | 30 | | |
-| sd-052 | 經典度≥4（Tod Dockstader … Virgo Four） | 30 | | |
+| sd-051 | 經典度≥4（The Monochrome Set … Titus Groan） | 30 | s28 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
+| sd-052 | 經典度≥4（Tod Dockstader … Virgo Four） | 30 | s28 | ✅ 上線 30（前台 30；無留置；主線補查 6 張；CURATED 0） |
 | sd-053 | 經典度≥4（Vision of Disorder … Zbigniew Preisner） | 30 | | |
 | sd-054 | 經典度≥4＋其餘（Zeni Geva … Al Campbell） | 30 | | |
 | sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | | |
