@@ -19,7 +19,7 @@
 //     升級三選一由 autoplay 自動挑（picks＝等級−1）、標題紀錄「最遠」→ 13 再挑戰一趟（店主 11-13：不挑王牌，老闆說「老樣子，《王牌》。」沿用 save.lastAce →
 //     走到特價箱挑三張 → 來客、包包 7、runNo 2、王牌＝上一趟那張；上一趟的配件還在；整段沒有挑王牌面板）
 //  10 續玩：打到第 2 手重新整理 → 繼續試煉 → 同一場、同一手
-//  11 存檔只寫 dipGameLab_v1、版本 5；v3 存檔被安全丟掉；v4 存檔遷移（唱片櫃、配件留著，一晚的 run 丟掉，nights → runs）
+//  11 存檔只寫 dipGameLab_v1（＋第 B 波的 .bringKey／.daily／.bak6 小鍵）、版本 7；v3 存檔被安全丟掉；v4 存檔遷移（唱片櫃、配件留著，一晚的 run 丟掉，nights → runs）
 //  12 網路：沒有 Firebase
 //  14 長按手牌封面＝唱片資訊（疊著也行）；點一下＝在那張打開、再點一下＝收回（都不開唱片資訊；v5 手風琴）
 //  16 標題有存檔時點兩下店門＝繼續試煉
@@ -58,7 +58,7 @@
 //     包包＝種子＋老闆送的補到 4 張＋特價箱 3 張＝7、run.seeds＝挑的；序章那一趟不挑
 //  52 種子（第 A 波 5：移出包包只走櫃檯「賣給老闆」）：錢不夠時箱子的鈕停用「錢不夠 $n・去櫃檯賣唱片」、沒有先賣子面板；引擎 buy 帶種子 sellId → counterOnly、
 //     單獨 sell 種子 → ok（$0、reclaim seed）；包包面板種子標「櫃裡帶來」、整個包包沒有「賣」鈕；櫃檯「賣給老闆」：種子那格「交還老闆」→ 交還：$0、不再是種子、老闆說一句
-//  53 存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
+//  53 存檔 v5 → v7（第 B 波 SAVE_V 7；v5→v6 的規則照舊）：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張（gift）、打倒藏家拿到的王牌（boss，照 engine.bossAceFor）算擁有；進行中的 run 照留
 //     解鎖制（店主 11-16）：lastAce 那派預設那張補記成擁有（src 'start'）；舊 run 補快照（已解鎖＝lastAce ∪ 擁有頂點卡的派，打倒過藏家＝那張算這一趟收的）
 //  （換王牌，店主 11-13：開局不再三選一、沿用上次那張；想換跟老闆說）
 //  54 第 1 位開打前：來客畫面一次性提示（老闆頭上閃一下＋吐司「想換王牌，點老闆。」，save.seen.aceSwap，只出一次）→ 真點老闆＝小選單「聊聊／換一張王牌」（不捲動）
@@ -73,7 +73,7 @@
 //  （主站互通入口，v5 第六項第一期，店主 11-15）
 //  55 主站「帶去店裡對決」：?card=<遊戲卡 id>（第一次玩）→ 網址的 card 拿掉、save.bring、標題吐司（先走一趟那句）→ 序章算走完、唱片櫃有幾張比它強的 →
 //     再推門＝第二趟挑種子：第一張是它、已勾、封面「帶來的」、1／3、不捲動 → 就這幾張 → 開局包包第一張是它、run.seeds、save.bring 清空、認識不算擁有；
-//     ?card=王牌 →「店裡沒有這張唱片。」、不收；不是第一次玩 → 下一趟那句；
+//     ?card=王牌 →「店裡沒有這張唱片。」、不收；舊 slug（第 B 波以前的連結）照表換成 catalogId 收下；不是第一次玩 → 下一趟那句；
 //     唱片資訊「在頻率光譜找它 ↗」：在頻率那行、/tune/?q=藝人 專輯、新分頁、不是 .streaming-btn、點了開新分頁、回來聲音還在（dip-player 沒關自動試聽）
 import fs from 'fs';
 import path from 'path';
@@ -389,7 +389,7 @@ async function run() {
         const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.duelE; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, duelE: at, r1: s.pos('r1') && !s.pos('r1').hidden }; });
         const near = st.f && !st.f.hidden && Math.hypot(st.f.x - st.duelE[0], st.f.y - st.duelE[1]) <= 3;
         const ok = card && one && !one.title && one.notitle && /Eminem/i.test(one.text) && one.btns === 2 && one.cover && scrollOk(scOne) &&
-          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes('eminem-the-eminem-show') && st.bag.length === 8 && st.heads === 5 && !st.inside && near && st.r1;
+          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes("eminem|the eminem show") && st.bag.length === 8 && st.heads === 5 && !st.inside && near && st.r1;
         record(7, size, ok, `pickup ${JSON.stringify(one && { title: one.title, notitle: one.notitle, btns: one.btns, text: one.text.slice(0, 50) })}; relics offered ${rel}; night ${night}; ${JSON.stringify(st)}`);
       } catch (e) { record(7, size, false, 'error ' + e.message); }
       await ctx.close();
@@ -484,9 +484,9 @@ async function run() {
           mig.lastAce2 = await page.evaluate(() => window.__lab.save.lastAce);
           // v4 → v5 → v6：唱片櫃那張留成「認識」；挑過的王牌（lastAce hall）那組送的四張算擁有（一晚版沒有位數：不算打倒藏家）
           //   解鎖制（店主 11-16）：那張（殿堂預設）就是 lastAce 那派的頂點卡＝載入時補記成擁有（src start），known 改看這個
-          const migOk = mig.v === 6 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
+          const migOk = mig.v === 7 && !mig.run && mig.shelf === 5 && mig.known && mig.giftsOwn && mig.relics.join() === 'stylus' && mig.runs === 1 && mig.runNo === 1 && mig.best.far === 0 && Array.isArray(mig.best.checkpoints) && !mig.nights && !mig.unlocks && mig.learned && mig.fast && !mig.cont && mig.push &&
             mig.lastAce === 'hall' && mig.runSeq === 1 && mig.lastAce2 === 'hall';   // 審查 #1：lastAce 遷移後、重新整理後都留著；#5：同一天第幾趟的計數器從舊的一晚接著數
-          record(11, size, !bad.length && ks.v === 6 && old.v === 6 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
+          record(11, size, !bad.length && ks.v === 7 && old.v === 7 && !old.run && !old.cont && old.push && migOk, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v3 save → ${JSON.stringify(old)}; v4 save → ${JSON.stringify(mig)}`);
         }
         if (want(12)) {
           const fb = page._requests.filter(u => /firebase|firestore|googleapis\.com\/identitytoolkit/i.test(u));
@@ -584,7 +584,7 @@ async function run() {
         await page.evaluate(() => window.DipLabDuel.play(window.DipLabEngine.policies.thoughtful(window.__lab.rawDuel(), window.DipLabEngine.makeRng(1), {}, window.DipLabContent)));
         await page.waitForFunction(() => window.DipLabDuel.debug().n >= 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 }).catch(() => {});
         const r = await page.evaluate(() => ({ tut: typeof window.DipLabTut, mask: !!document.querySelector('#tut svg'), d: window.__lab.duel(), thrown: window.__lab.rawDuel().e.thrown.map(c => c.id), script: !!window.__lab.rawDuel().script }));
-        record('21b', size, menu === 2 && r.tut === 'undefined' && !r.mask && r.d.eMax === 18 && r.script && r.thrown[0] === 'coldplay-mylo-xyloto', `buttons ${menu}; DipLabTut ${r.tut}; mask ${r.mask}; man ${r.d.eHp}/${r.d.eMax}; script ${r.script}; his first ${r.thrown[0]}`);
+        record('21b', size, menu === 2 && r.tut === 'undefined' && !r.mask && r.d.eMax === 18 && r.script && r.thrown[0] === "coldplay|mylo xyloto", `buttons ${menu}; DipLabTut ${r.tut}; mask ${r.mask}; man ${r.d.eHp}/${r.d.eMax}; script ${r.script}; his first ${r.thrown[0]}`);
       } catch (e) { record('21b', size, false, 'error ' + e.message); }
       await p2.ctx.close();
     }
@@ -1118,13 +1118,14 @@ async function run() {
         const sc50b = await noScroll(page);
         const kid = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.keep [data-pick]'); if (!b) return null; b.click(); return b.getAttribute('data-pick'); });
         await sleep(700);
-        const k1 = await page.evaluate(id => { const S = window.__lab.save, R = window.__lab.run; return { kept: R.kept, shelf: S.shelf[id] || null, done: !!document.querySelector('.lb-keep.done .lb-cv.store[data-cid="' + id + '"]'), btn: !!document.querySelector('.lb-keep[data-a=keep]'),
+        const k1 = await page.evaluate(id => { const S = window.__lab.save, R = window.__lab.run; return { kept: R.kept, shelf: S.shelf[id] || null, done: !!document.querySelector('.lb-keep.done .lb-cv.store[data-cid="' + CSS.escape(id) + '"]'), btn: !!document.querySelector('.lb-keep[data-a=keep]'),
           again: window.DipLabEngine.keepOne(R, window.DipLabContent, window.__lab.keepIds()[0] || 'x', S.shelf).error, runKept: (S.runs[S.runs.length - 1] || {}).kept }; }, kid);
         await jsClick(page, '.lb-endbtns [data-a=shelf]'); await sleep(600);
-        const sp = await page.evaluate(id => ({ own: !!document.querySelector('.lb-wall.own .lb-cv.store[data-cid="' + id + '"]'), ownN: document.querySelectorAll('.lb-wall.own .lb-cv').length, owned: window.__lab.owned().length,
-          known: !!document.querySelector('.lb-wall.known .lb-cv[data-cid="' + id + '"]'), h: [...document.querySelectorAll('.lb-page .lb-h2')].map(x => x.textContent) }), kid);
+        const sp = await page.evaluate(id => ({ own: !!document.querySelector('.lb-wall.own .lb-cv.store[data-cid="' + CSS.escape(id) + '"]'), ownN: document.querySelectorAll('.lb-wall.own .lb-cv').length, owned: window.__lab.owned().length,
+          known: !!document.querySelector('.lb-wall.known .lb-cv[data-cid="' + CSS.escape(id) + '"]'), h: [...document.querySelectorAll('.lb-page .lb-h2')].map(x => x.textContent) }), kid);
         await jsClick(page, '.lb-page [data-a=close]'); await sleep(300);
-        const apexOut = e0.ids.every(id => !/^(radiohead-ok-computer|barney-wilen-zodiac|swans-filth)$/.test(id)) && await page.evaluate(ids => ids.every(id => !window.DipLabContent.cards[id].tier), e0.ids);
+        const aceIds = await page.evaluate(() => Object.values(window.DipLabContent.aces));   // 第 B 波：卡片 id 改 catalogId（含 | 與空白），不再寫死王牌 id 的正規式
+        const apexOut = aceIds.length === 3 && e0.ids.every(id => !aceIds.includes(id)) && await page.evaluate(ids => ids.every(id => !window.DipLabContent.cards[id].tier), e0.ids);
         const okKeepIds = JSON.stringify(e0.ids) === JSON.stringify(e0.want) && e0.ids.length > 0 && e0.ids.every(id => !e0.owned.includes(id) && (e0.entered.includes(id) || e0.drops.includes(id))) && (!took || e0.ids.includes(took) || e0.owned.includes(took));
         if (want(50)) record(50, size, e0.keep && e0.again && e0.scr <= 1 && scrollOk(sc50) && okKeepIds && JSON.stringify(ks.tiles) === JSON.stringify(e0.ids) && scrollOk(sc50b) &&
           kid && k1.kept === kid && k1.shelf && k1.shelf.own === true && k1.shelf.src === 'run' && k1.done && !k1.btn && k1.again === 'kept' && k1.runKept === kid && sp.own && sp.known && sp.ownN === sp.owned && apexOut,
@@ -1257,7 +1258,7 @@ async function run() {
         const m = await page.evaluate(() => { const S = window.__lab.save, R = S.run; return { v: S.v, shelf: S.shelf, run: !!S.run, runV: S.run && S.run.v, cont: !!document.querySelector('[data-a=cont]'), far: S.best.far, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).v,
           unlock: R && R.unlock ? R.unlock.tiers.slice().sort().join() : null, won: R && Array.isArray(R.acesWon) ? R.acesWon.length : -1 }; });
         const own = id => !!(m.shelf[id] && m.shelf[id].own);
-        const ok = m.v === 6 && m.run && m.cont && m.far === 12 && !own(ref.known) && !!m.shelf[ref.known] &&
+        const ok = m.v === 7 && m.run && m.cont && m.far === 12 && !own(ref.known) && !!m.shelf[ref.known] &&
           ref.gifts.hall.every(id => own(id) && m.shelf[id].src === 'gift') && ref.gifts.heresy.every(id => own(id) && m.shelf[id].src === 'gift') &&
           ref.gifts.pearl.every(id => own(id) && m.shelf[id].src === 'gift') &&        // 一晚版（legacy）那趟也挑過王牌：送的四張一樣算擁有（只是沒有位數，不算打倒藏家）
           own(ref.boss1) && m.shelf[ref.boss1].src === 'boss' && own(ref.bossRun) && m.shelf[ref.bossRun].src === 'boss' &&
@@ -1279,7 +1280,7 @@ async function run() {
           return { v: S.v, heresy: e(C.aces.heresy), pearl: e(C.aces.pearl), hall: e(C.aces.hall),
             unl: window.DipLabEngine.unlockedTiers(C, id => !!(S.shelf[id] && S.shelf[id].own), { start: S.lastAce }).slice().sort().join() }; });
         // 解鎖制：lastAce（hall）那派預設那張補記成擁有（src 'start'）；自己挑過的 pearl（一晚版那趟）照舊只是認識（流派解鎖照 lastAce ∪ 擁有頂點卡的派：hall、heresy）
-        const lgOk = lg.v === 6 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && lg.hall.own === true && lg.hall.src === 'start' && lg.unl === 'hall,heresy';
+        const lgOk = lg.v === 7 && lg.heresy && lg.heresy.own === true && lg.heresy.src === 'boss' && lg.pearl && !lg.pearl.own && lg.hall && lg.hall.own === true && lg.hall.src === 'start' && lg.unl === 'hall,heresy';
         record(53, size, ok && lgOk, `解鎖制：lastAce 那張 ${JSON.stringify(m.shelf[ref.start])}、舊 run 補快照 ${m.unlock}（收了 ${m.won} 張）、第二份存檔解鎖 ${lg.unl}；一晚版 clear 那晚的藏家王牌 ${JSON.stringify(lg.heresy)}、自己挑的 ${JSON.stringify(lg.pearl)}、dead 那晚 ${JSON.stringify(lg.hall)}；v${m.v}（localStorage 還是 v${m.stored}：下一次寫入才換）；認識那張 own=${own(ref.known)}；hall／heresy 送的 own；pearl（一晚版那趟）own=${ref.gifts.pearl.every(own)}；藏家王牌 ${ref.boss1} ${JSON.stringify(m.shelf[ref.boss1])}、這一趟打倒的 ${ref.bossRun} ${JSON.stringify(m.shelf[ref.bossRun])}、第 3 位就倒的那趟 ${ref.boss2} own=${own(ref.boss2)}；進行中的 run 留著 ${m.run}`);
       } catch (e) { record(53, size, false, 'error ' + e.message); }
       await ctx.close();
@@ -1373,13 +1374,13 @@ async function run() {
     if (want(55)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
-        const BR = 'xtc-skylarking';
+        const BR = "xtc|skylarking";
         // 新分頁到主站頻率光譜：換成空白頁（只驗網址；不在這裡載主站）
         await ctx.route(/\/tune\/\?q=/, rt => rt.fulfill({ contentType: 'text/html', body: '<!doctype html><meta charset="utf-8"><title>tune</title>' }));
         await page.addInitScript(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); })))
           .observe(document, { childList: true, subtree: true }); });
         // 1. 第一次玩（沒有存檔）帶卡進來
-        await openTitle(page, Q('&fast=1&card=' + BR));
+        await openTitle(page, Q('&fast=1&card=' + encodeURIComponent(BR)));
         await sleep(300);
         const a = await page.evaluate(BR => { const U = window.DipLabContent.seeds.ui, al = window.DipLabContent.cards[BR].album, ls = JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null');
           return { search: location.search, href: location.href, bring: window.__lab.save.bring, ls: ls && ls.bring, toasts: window.__toasts.slice(), want: U.bringToastFirst.replace('{album}', al), U }; }, BR);
@@ -1435,15 +1436,19 @@ async function run() {
           !!pop && popUrl.indexOf(ci.want.replace(/^\//, '')) >= 0 && snd0.on === true && snd1.on === true && snd1.pref !== 'off' && snd1.ss !== 'off' && snd1.open;
         // 6. ?card=王牌 → 店裡沒有、不收；?card=（不是第一次玩）→ 下一趟那句
         await page.evaluate(() => { window.__toasts.length = 0; });
-        await openTitle(page, Q('&fast=1&card=radiohead-ok-computer'));
+        await openTitle(page, Q('&fast=1&card=' + encodeURIComponent("radiohead|ok computer")));
         const bad = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringMissing }));
+        // 6b. 舊 slug 連結（第 B 波以前主站產生的）照表換成 catalogId 收下（SPEC-B §2.4；W1a-7 留給 WP5）
         await openTitle(page, Q('&fast=1&card=bob-dylan-john-wesley-harding'));
-        const g2 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringToast.replace('{album}', window.DipLabContent.cards['bob-dylan-john-wesley-harding'].album) }));
-        const badOk = !/card=/.test(bad.search) && bad.bring === null && bad.toasts.includes(bad.want) && !/card=/.test(g2.search) && g2.bring && g2.bring.id === 'bob-dylan-john-wesley-harding' && g2.toasts.includes(g2.want);
+        const g1 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring }));
+        await openTitle(page, Q('&fast=1&card=' + encodeURIComponent("bob dylan|john wesley harding")));
+        const g2 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringToast.replace('{album}', window.DipLabContent.cards["bob dylan|john wesley harding"].album) }));
+        const badOk = !/card=/.test(bad.search) && bad.bring === null && bad.toasts.includes(bad.want) && !/card=/.test(g2.search) && g2.bring && g2.bring.id === "bob dylan|john wesley harding" && g2.toasts.includes(g2.want) &&
+          !/card=/.test(g1.search) && !!g1.bring && g1.bring.id === "bob dylan|john wesley harding";
         // 7. 兩個分頁（審查）：遊戲分頁 A 開著（記憶體裡是剛才那張 Dylan）→ 主站「帶去店裡對決」開出遊戲分頁 C 收下 BR；
         //    C 開著時 A 存一次檔（不准把 C 收的蓋掉）→ 關掉 C → A 推門：挑種子第一張是 BR
         const Cp = await ctx.newPage(); track(Cp);
-        await openTitle(Cp, Q('&fast=1&card=' + BR));
+        await openTitle(Cp, Q('&fast=1&card=' + encodeURIComponent(BR)));
         const c7 = await Cp.evaluate(() => (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null);
         await page.bringToFront();
         const a7 = await page.evaluate(() => { window.__lab.own([], 'run'); return { mem: window.__lab.save.bring, ls: (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null }; });
@@ -1457,7 +1462,7 @@ async function run() {
         record(55, size, aOk && b0.bring && b0.bring.id === BR && !b0.toasts.length && sdOk && runOk && ciOk && badOk && twoOk,
           `收下 ${aOk}（網址 ${a.search}、吐司 ${JSON.stringify(a.toasts)}）、重新整理 ${JSON.stringify(b0)}；挑種子 ${sdOk} ${JSON.stringify(sd && { first: sd.tiles[0], n: sd.tiles.length, sel: sd.sel, badge: sd.badge, badgeIn: sd.badgeIn, cnt: sd.cnt })} ${JSON.stringify(scS)}；` +
           `開局 ${runOk} ${JSON.stringify({ bag0: rr.bag[0], n: rr.bag.length, seeds: rr.seeds, bring: rr.bring, shelf: rr.shelf })}；唱片資訊 ${ciOk} ${JSON.stringify(ci)} 新分頁 ${popUrl} 聲音 ${JSON.stringify(snd0)}→${JSON.stringify(snd1)}；` +
-          `王牌／第二次 ${badOk} ${JSON.stringify(bad.toasts)} ${JSON.stringify(g2.toasts)}；` +
+          `王牌／舊 slug／第二次 ${badOk} ${JSON.stringify(bad.toasts)} ${g1.bring && g1.bring.id} ${JSON.stringify(g2.toasts)}；` +
           `兩個分頁 ${twoOk} ${JSON.stringify({ c: c7 && c7.id, aLs: a7.ls && a7.ls.id, aMem: a7.mem && a7.mem.id, first: sd7.first, sel: sd7.sel, ls: sd7.ls && sd7.ls.id })}`);
       } catch (e) { record(55, size, false, 'error ' + e.message); }
       await ctx.close();

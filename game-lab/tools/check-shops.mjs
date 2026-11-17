@@ -2,6 +2,9 @@
 //
 //   node game-lab/tools/check-shops.mjs          # 有問題 exit 1；--quiet 只印結論
 //
+// 卡只驗核心（第 B 波 SPEC-B §1.4【定稿 A4】）：loadCards() 讀 cards.js＝核心 368 張（店裡道具、熱點、牆上封面只引用核心卡）；
+//   精選新卡（cards-pool.js 4,677 張）不在這裡驗（沒有 localCover、不上道具；封面試聽由 v5/pool5k check 逐張驗過）。不要改成讀 content.js 的整池。
+//
 // 檢查：schema（id、kind、size、safe、cameras、spots、props、hotspots、actors、meta）；熱點 id 唯一、動作合法；
 //       spots／熱點／鏡頭都在畫布內；舊 POS 別名表（stage.js）每個目標在每家店都有；引用的唱片都在 cards.js；
 //       箱子對到 content.js 的卡池；地圖圖釘對到 shops/index.json；每個道具都畫得出來（假畫布）、畫在畫布內；
@@ -128,7 +131,7 @@ function fakeCtx() {
   return ctx;
 }
 
-export function loadCards() { return require(path.join(LAB, 'cards.js')); }
+export function loadCards() { return require(path.join(LAB, 'cards.js')); }   // 只有核心 368（見檔頭）
 // bins.js（A3 烘的：每一區的規則與卡池）；還沒有就回 null
 export function loadBins() { try { return require(path.join(LAB, 'bins.js')); } catch (e) { return null; } }
 export function loadContent() { try { return require(path.join(LAB, 'content.js')); } catch (e) { return null; } }
