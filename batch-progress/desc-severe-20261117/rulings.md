@@ -834,3 +834,30 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-027.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處（23 檔）。
+
+## sd-028（30 張，經典度≥4：Casino Versus Japan、Casiopea 3、Catapilla、Cathedral、Cause for Alarm、Cecil Taylor 2、Cecilia、Celer、Celia Cruz 2、Chabuca Granda、Chacalón 2、Chain of Strength 2、Charles Dodge、Mingus、Charles Sullivan、Haden／LMO、Mariano＋渡辺貞夫、Chavela Vargas、Chez Damier、Chez N Trent、Chicane、Chick Corea、Chicken Shack、Chico Freeman）— s16
+
+- 研究：3 支 Sonnet，WebSearch 14＋17＋19＝50 次；無 none。
+- **主線補查 7 張**（WebSearch 8 次＋WebFetch，facts 標【主線補查】）：Cathedral（英文維基：The Manor Studio、David Bianco、大廠首作；Record-Journal、Birchmeier 的聲音描述；Dorrian 談首次用外部製作人的摩擦）、Casiopea《Cross Point》（英文維基：Mason 第二次合作、GS-1、盤名雙關、〈Domino Line〉等首見）、Haden《Dream Keeper》（Hughes 組曲四段、穿插曲目、Down Beat 1991 年度專輯）、Mingus《Changes Two》（Shepherd Express：延續 Attica 題材）、Casino Versus Japan（維基＋Irish Times：Wobblyhead、slack-key 吉他、《Savages》）、Corea（維基：Circle 四分之三班底）、Chico Freeman（維基：抒情曲與標準曲、NYT 評）。
+- Mariano＋渡辺貞夫主線日文搜尋一次無果（只有 TAKT 數位再發新聞），照研究稿寫（渡辺自述、錄音日期與陣容），聲音段薄寫。Celia Cruz 兩張、Chacalón《El Soberano de la Cumbia》、Chain of Strength 兩張照研究稿薄寫，聲音只寫到樂團風格層級。
+- 身分／事實裁定：Casiopea 錄音室專輯序數 5／6 各說不一，三張都不寫序數；Cause for Alarm 是 1983 年自主 7 吋 EP，不寫壓量；Chacalón 兩張年份兩說，同名盤不寫年、《Soberano》寫「1980 年代初」；Chain of Strength 合輯寫「1990 年代中期」；Chabuca 不寫廠牌、寫「1960 年代末」；Ritmo 葛萊美寫 1990 年第 32 屆；Chavela 不寫廠牌與發行年、只寫 1993 年 4 月馬德里錄音；Freeman 不寫貝斯手名；Mingus〈Free Cell Block F〉只寫延續 Attica 題材。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-028.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Casiopea《Cross Point》《Eyes of the Mind》 | 刪「第 6／第 5 張錄音室專輯」序數 | 來源不一 |
+| Casiopea《Eyes of the Mind》 | 「據稱這位美國鼓手是聽了…」→「這位美國鼓手是在爵士雜誌的試聽企劃裡聽了…」 | 日文維基兩條一致 |
+| Casiopea《Thunder Live》 | 鉤子「新鼓手的獨奏太長，LP 放不下，只好剪掉幾分鐘再接起來。」→「一個無意當職業樂手的大學生，成了 Casiopea 的新鼓手。」 | 原鉤子以 LP 長度剪接為材料，近曲長雜項；改用神保彰入團故事 |
+| Chick Corea | 鉤子「Miles Davis 在另一間錄音室錄《Jack Johnson》那天…」→「Circle 成形之前，四人裡的三個先錄下了這張三重奏。」；第二句補「三人與 Anthony Braxton 後來組成 Circle」 | 原鉤子是同日巧合冷知識；改用地位，正文交代懸念 |
+| Cecil Taylor《Silent Tongues》 | 刪「本作絕版近四十年，後來才重發黑膠。」 | 版本雜項 |
+| Chico Freeman | 刪「這張對他是一次換步調。」 | 與鉤子重複 |
+| Tremendo caché、Changes Two、Genesis、La Llorona、Spirit Sensitive | 「常被視為」→「被視為」 | 單一出處 |
+
+其餘逐張四問無改：第二句皆含《盤名》（派工詞已加這條，本批零退回）；30 張鉤子前四字互異、加權 ≤50，材料取自故事（Cecilia 同名歌的故事、山下洋輔在台下、Celer 的印度旅行錄音、Dodge 把地磁 Kp 指數算成音樂、Chicane 衝浪時的念頭）、概念或地位（〈Cúcala〉、Cruz 的第一座葛萊美、〈True Till Death〉刺青字句）；查無軌序、曲長、盤號、評分。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-028.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 115 次（研究層 sd-027 48、sd-028 50，主線 17）。

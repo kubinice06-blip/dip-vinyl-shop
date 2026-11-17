@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s16：sd-027、sd-028 上線（60 張，無留置）
+
+- **結果**：經典度≥4 非 CJK 卡。sd-027 上線 30（Bodkin、Bongwater、Boredoms、Born Against、Hmong qeej、Brain Failure、Bread、Brigada Víctor Jara、Budka Suflera、Bunny Wailer、C.O.B.、Canarios、Candido 2、Carl Perkins 等）；sd-028 上線 30（Casiopea 3、Cathedral、Cecil Taylor 2、Cecilia、Celer、Celia Cruz 2、Chacalón 2、Charles Dodge、Mingus、Haden／LMO、Chavela Vargas、Chez Damier／Chez N Trent、Chicane、Chick Corea 等）。**兩批都無留置**。
+- **CURATED_DESCS**：開工前與上線後都打過 `/album-desc`，60 張前台全數供新稿，無 CURATED 覆蓋，「待店主處理」無新增。
+- **主線補查**：sd-027 補 6 張（Booker Little、Boredoms、BONES、BROCKBEATS、Brother Ah 等），sd-028 補 7 張（Cathedral、Cross Point、Dream Keeper、Changes Two、Casino Versus Japan、Corea、Chico Freeman）。
+- **審稿**：sd-027 改 31 處（11 張第二句沒有盤名、多張全文沒有盤名，補盤名後壓字數）；sd-028 派工詞加「第二句必含《盤名》」後改 13 處，含兩個雜項鉤子換掉（《Thunder Live》剪接 LP、Corea 同日錄《Jack Johnson》）。逐條在 `rulings.md`。WebSearch 工作階段約 115 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-027/028.json,review-sd-027/028.json}`、`desc-tools/batches/{cards,research,output}/sd-027*、sd-028*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜game-lab 上一手細節：揭曉後停住等點、上一手詳情、這場紀錄
 
 - **店主 11-17**：「我覺得上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了，怎麼辦。」（現況實測：結果框只停約 1.1 秒、「上一手」那行再 0.6 秒，輪到你出牌時整句不見，只剩小列兩張小封面。）
