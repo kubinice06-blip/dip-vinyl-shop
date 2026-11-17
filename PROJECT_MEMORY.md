@@ -7,6 +7,12 @@
 - **審稿**：sd-082 改 32 處（鉤子取限量版本、出處入文、第二句補《盤名》）、sd-083 改 6 處（La Roca 鉤子取重發事項、Pontiac 鉤子含「我」），見 rulings.md。
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-082.json,review-sd-083.json,kv-before-sd-082.json,kv-before-sd-083.json}`、`desc-tools/batches/{cards,research,output}/sd-08{2,3}*`、onboarding manifest 60 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題（sd-082 兩筆「8 軌錄音機」誤報）、鉤子前四字互異、加權 ≤50。WebSearch 約 98 次。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s45：sd-084、sd-085 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-084 上線 30（Prince Jazzbo、Princess Sharifa、Alex Bradford、Harold Boggs 3、Project Lazarus 2、Prolapse、Providence、Proxyon 2、Prysm 4、Purl、Purrple Cat 9、Quantec、Quasar、quasimode 2）；sd-085 上線 30（Quatuor Diotima、Quilapayún、Rabit、Radar 2、raison d'être 2、Random Rab、Ali／Jenkins、Ravi Coltrane、Ray & Ina Patterson、Refrigerator、Renee Rosnes 4、Ressurection 2、Retsin、Reuben Wilson 3、Bernard Avant、Revolutionary Dub Warriors、Rheinallt H. Rowlands、Groove Holmes 2、Beirach、Margitza、Riow Arai）。Purrple Cat 9 張、Radar 2、Riow Arai 等照 delayde 前例薄寫上線。
+- **主線補查**：Prince Jazzbo（Discogs API：King Tubby 混音、Bunny Lee 製作）、Harold Boggs 3（Journal of Gospel Music）、Prysm（Django d'Or 1998）、Quasar（MLWZ 樂評）、Radar 2（愛沙尼亞文維基＋Discogs API）、Quilapayún 5（西文維基：以器樂為主）、raison d'être《Stains》。派工特注兩處身分誤記已更正：Providence 是日本團、Simaku 是 Thomas Simaku。審稿改 sd-084 11 處、sd-085 26 處（多為第二句補《盤名》與壓字數）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-084.json,review-sd-085.json,kv-before-sd-084.json,kv-before-sd-085.json}`、`desc-tools/batches/{cards,research,output}/sd-08[45]*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
 
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s41：sd-076、sd-077 上線（60 張，無留置）
 
