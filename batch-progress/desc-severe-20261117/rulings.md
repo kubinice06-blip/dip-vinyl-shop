@@ -1979,3 +1979,25 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
+
+## sd-070（30 張，其餘：Guitoud、GUMI、GZA、Habib Mohebian、Hang Raiji、Hank Mobley 4、Hank Williams 2、Harold Vick、Harry Mudie 2、Harvey Williams、Haze 2、Heaven & Earth、Helén Eriksen 2、Henry Franklin、Herbie Hancock、松本英彦、High Tides、Highwoods String Band、後藤浩文、岡野等、Hoody、Hoogway、Hope of Glory）— s38
+
+- 研究：3 支 Sonnet，WebSearch 17＋15＋20＝52 次；none：岡野等《Double Image》三塊、後藤浩文 story／sound、松本英彦 story、Hang Raiji story／sound、Hoogway story。母語來源：Habib Mohebian 波斯文（Radio Farda、ILNA）、Helén Eriksen 挪威文（Dagbladet 1998 專訪、2000 年《City Dust》評）、Hoody 韓文（AOMG、ELLE Korea）。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 3 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Harold Vick《Don't Look Back》（原盤 Vick 自寫內頁：危機時期收到「愛的禮物」後的新心態、逐曲獻給誰、終曲禱詞、全班底）→ story／sound 升 ok；Heaven & Earth（Mercury 原盤 credits：芝加哥錄音室伴奏班底，舊稿「四位貝斯手」其實是伴奏，但不寫成團員）→ sound 升 ok；Helén Eriksen《Standards》（Tommy Tee 製作、班底與 N-Light-N 客席）→ sound 升 ok；Henry Franklin 班底；Hang Raiji（credits、岩浪洋三內頁、2024 年 Steps Records 再發行）what 升 ok；岡野等（四重奏編制與製作）what none→thin；松本英彦（児山紀芳監修、杉並錄音日）；後藤浩文（全碟一人包辦、Frogman 創辦人任 A&R）。岡野等日文搜尋 2 次全被同名美國團與同名講師污染，無新料；照 delayde 前例薄寫上線（158 字）。
+- 事實裁定：Hang Raiji 團員只用 Discogs 原文拼法（漢字未證）；Mobley《Poppin'》《Thinking of Home》擱置原因不詳不寫；Hank Williams 兩張不寫確切發行年；Hoogway 不寫 Sleep Tales，2018 年舊作聲音寫成「一向」的手法；Hoody 的 2021 年 ELLE 訪談同理；松本英彦的鋼琴與鼓手研究稿漢字錯（Karashima＝辛島文雄、George Ohtsuka＝ジョージ大塚），正文不寫兩人名字；High Tides 不寫「首張」；Haze 不寫末軌、長笛不算到 Deas 頭上。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 5 處，改動檔 `review-sd-070.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Hank Mobley《Hank Mobley》 | 刪「原版首壓如今是 Blue Note 最難找的原盤之一」 | 原盤收藏價值屬版本雜項 |
+| Hank Williams《Luke the Drifter》 | 第二句補《盤名》；刪「內容多是道德勸誡……反史達林的新奇歌」壓回 232 字 | 無《》、字數 |
+| Hope of Glory《Second Look》 | 鉤子「錄音到 2020 年都還沒數位化」→「在教會裡演出……要的是低調的激勵，不是搖滾」 | 數位化與否屬版本雜項 |
+| Harry Mudie《Vol. 3》 | 「接進 12 軌混音台」→「接進他的混音台」 | QA 誤判軌數，順手避開 |
+
+其餘逐張四問無改：鉤子都對過研究稿（GZA 從混濁音場換成清脆鼓、Mohebian 二十七八歲才開唱且只唱自作、Mobley 三位新人首登 Blue Note、Hancock 錄完兩個月與 17 歲的 Tony Williams 加入 Miles、Vick 標題指熬過危機的心態、Mudie 是雷鬼最早大量用弦樂的製作人、Luke the Drifter 化名是怕點唱機業者抗議、Haze 借來的 Portastudio 進地窖、Eriksen 年度新人獎頒給嘻哈製作人操刀的爵士盤）。GZA 榜位（Billboard 200 第 9、R&B／嘻哈冠軍）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-070.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
