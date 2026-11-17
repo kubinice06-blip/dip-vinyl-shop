@@ -806,3 +806,26 @@
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-022.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋，不需列待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
+
+## sd-029（30 張，經典度≥4：Chris & Cosey、Chris Connor、Brotherhood of Breath、Christ.、Christopher Larkin、Christopher Willits、Chrisye、Chucho Valdés 2、Chuck Girard、Ché-SHIZU、CIV、Clear Blue Sky、Cleveland Eaton、Clock DVA、Co-Fusion、Collage、Company、Condition Green、Conrad Schnitzler、Country Cooking、Crayon、Creative Arts Ensemble、Cressida、Crow、Dan Curtin、Barenboim、Danielle Dax、Datblygu、Eraserhead）— s17
+
+- 研究：3 支 Sonnet，WebSearch 12＋15＋14＝41 次。
+- **主線補查**（WebSearch 9 次＋WebFetch，facts 標【主線補查】）：《Heartbeat》（Rough Trade 簽約經過、Melody Maker／Sounds 評語、剪貼人聲與失真吉他）、《Live at Willisau》（Ogun 為它成立、十一人編制、樂團同期聲音）、Crow《Last Chaos》（Negative Insight：大阪 Discharge 傳教士、約 200 張自主壓、1995 重錄版對照）、Datblygu《Libertino》（Libertino Records 以它命名、Louder Than War 對歌詞的描述；仍薄寫）、Schnitzler《Rot》（自費私壓、兩段長曲、Freq 聲音描述）、Company《Company 1》（第一場音樂會的四種三重奏）、Ché-SHIZU《A Journey》（Black Editions 訪談：〈A Journey 2〉在福岡美術館鋼琴上隨手彈出、鋼琴沒收音）。Co-Fusion《Co-fu》查無專輯本身的聲音資料，照研究稿寫「他們的聲音」，不把後期單曲說成這張。
+- 身分／事實裁定：Willisau 錄音日期兩說只寫 1974 Ogun 發行；Company 寫 1976 年 5 月音樂會、1977 Incus 發行；Collage 首張 LP 年份兩說寫 1970 年代初；Condition Green 1977／1978 兩說寫 1970 年代後期；Dan Curtin《Deception》1996／1997 兩說寫 1990 年代後期；Briyumba 的 7/4 曼波不點名；Christ. 不寫「首張全長」與錄音室；Barenboim 不寫錄音地點；Eraserhead 不寫「63 天」；Clock DVA 改正舊稿「十五小時」（成員回憶約八小時）。
+- 前台：寫稿前預查 60 張（sd-029／030）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-029.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Co-Fusion | 「兩人當了十多年夜店 DJ」→「從 1980 年代就當夜店 DJ，1990 年代才轉做」；鉤子與聲音句壓字數 | 「十多年」是推算；字數 |
+| Company | 「一位貝斯手」→「貝斯手 Maarten Altena」；刪重複的「Bailey 彈吉他」 | 四人都具名 |
+| Chris & Cosey | 「TG」兩處 → 「前團」／「Throbbing Gristle」；刪「倒放人聲的循環」、「了」 | 縮寫未交代；字數 |
+| Ché-SHIZU | 鉤子「二胡常被誤聽成向井千惠的人聲」→「向井千惠的二胡，聽起來就像她自己的人聲。」；第二句補團名 | 出處只說二胡像她嗓音，「常被誤聽」誇大 |
+
+其餘逐張四問無改：逐條對過研究稿（Condition Green 台上殺蛇、Country Cooking 兩支麥克風與四萬張、CIV 主唱開刺青店、Chrisye 前作失利、Briyumba 的 Gershwin／Ellington 百歲冥誕、Village Vanguard 的政治背景與 Grammy 都有出處）；《Hollow Knight》用台灣通行譯名《空洞騎士》照收。30 張鉤子前四字互異、加權 ≤50、第二句皆以《盤名》起句；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-029.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
+- onboarding manifest 同步 28 處。
