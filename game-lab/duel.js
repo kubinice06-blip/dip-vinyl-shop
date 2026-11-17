@@ -22,7 +22,10 @@
 //   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'rounds'|'pile', pHp, eHp, duel }
 // DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) preview(attr) play(act)->Promise
 //           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
-//           _fmt.clashText(clashEvent, T, hints) → { l1, l2, l3, cls, rule, notes }（e2e 比對浮框）
+//           _fmt.clashText(clashEvent, T, hints) → { l1, l2, l3, cls, rule, notes, bluff, read, saw, gotRead }（e2e 比對浮框）
+//             11-17 讀牌加難：正式對局結果句不念關鍵字（honestPlain／bluffPlain／seeThroughPlain、他讀到你 readHit＋readCounter|Mirror|Third）；
+//             事件有 script（教學那場）才照舊「『key』是 X」。提示分級：hint.kind 'one'|'half'|'none'（半指的 not＝他說不出的那色）
+//           _fmt.hintOf(hints, hint, hintLines?)：id → 句子（先 C.hints，再 C.hintLines）
 // gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'card',i,attr,id}（點一張封面＝在那張打開、浮起，attr＝topAttr）
 //   {kind:'throw',i,attr,id}（點屬性鈕＝出手，唯一的出手方式） {kind:'collapse'}（再點打開的那張、或點手牌外面＝收回疊好）
 //   {kind:'chip',i,attr,id}（只有 API select(i, attr) 送：換預覽的屬性，不出手） {kind:'info',where} {kind:'close'}；i＝0..handSize−1 或 'ace'
@@ -139,6 +142,9 @@
     tapOn: '點一下繼續',
     readRight: '讀對了。', seeThrough: '你看穿了！『{key}』是{hint}，他出的是{e}。', seeThroughNoKey: '你看穿了！提示是{hint}，他出的是{e}。',   // 第 A 波 4
     lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊',
+    // 11-17 讀牌加難：結果句不念關鍵字（教學那場照舊用上面幾句）
+    honestPlain: '他照實出。', bluffPlain: '他唬你！他出的是{e}。', seeThroughPlain: '你看穿了！他出的是{e}。', readHit: '他讀到你了！他出的是{e}。',
+    readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。',
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};
@@ -150,13 +156,24 @@
   }
   const T0 = dtOf(null);
   // 提示句：view().hint.line（id）→ C.hints 那句 { id, text, key }（A1 notes 請求：字串＝C.hints[attr] 裡 id === line 那句）
-  function hintOf(hints, h) {
+  //   11-17 句庫：C.hints 找不到再查 C.hintLines（明指 one、半指 half、不露 none；{ id, text, voice?, form }，沒有 key）
+  const LINE_MAP = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function linesById(L) {
+    if (!L || typeof L !== 'object') return null;
+    if (LINE_MAP && LINE_MAP.has(L)) return LINE_MAP.get(L);
+    const m = {}, put = arr => (Array.isArray(arr) ? arr : []).forEach(x => { if (x && x.id) m[x.id] = x; });
+    for (const k of ['one', 'half']) for (const a of ATTRS) put((L[k] || {})[a]);
+    put(L.none);
+    if (LINE_MAP) LINE_MAP.set(L, m);
+    return m;
+  }
+  function hintOf(hints, h, lines) {
     if (!h || !h.line) return null;
     const H = hints || (window.DipLabContent && window.DipLabContent.hints) || null;
-    if (!H) return null;
     const find = arr => Array.isArray(arr) ? arr.find(x => x && (x.id === h.line)) : null;
-    let x = find(H[h.attr]);
-    if (!x) for (const a of ATTRS) { x = find(H[a]); if (x) break; }
+    let x = H ? find(H[h.attr]) : null;
+    if (!x && H) for (const a of ATTRS) { x = find(H[a]); if (x) break; }
+    if (!x) { const m = linesById(lines || (typeof window !== 'undefined' && window.DipLabContent && window.DipLabContent.hintLines) || null); x = m ? m[h.line] || null : null; }
     return x || null;
   }
   // 一手的結果字（SPEC-v4 §2.5.1）。c＝clash 事件（或 view().last）；hints＝C.hints。
@@ -190,21 +207,36 @@
     else if (apx && c.kind === 'mirrorLose') l2 = (U && U.loseFree) || '你輸了，但不扣。';   // 比星輸了、王牌免扣（不是「一樣大」）
     else l2 = T('tie');
     const h = c.hint && ATTRS.includes(c.hint.attr) ? c.hint : null;
+    // 11-17：提示分級（kind one 明指｜half 半指｜none 不露）。看得出來的唬（lie）：明指＝他出的不是提示那色；半指＝他正好出他說不出的那色；不露＝沒說什麼，不算
+    const hk = h ? (h.kind || 'one') : null;
+    const lie = !!h && (hk === 'one' ? !!c.bluff : hk === 'half' ? c.eAttr === h.not : false);
     // 讀對了就說出來（第 A 波 4）：剋中他＝結果句前加「讀對了。」；他唬人、你出的是剋他真正那張的顏色＝「你看穿了！」取代「他唬你！」（字沒有就照舊）。
     //   看穿了但他高你 2 星以上、剋不動（blocked gap）也算看穿（審查 A-4；引擎 stats.caught 也算這手抓到）：l3 照舊寫「…剋不動。」
-    const read = c.kind === 'counter', saw = !!c.bluff && !!h && (read || (c.blocked === 'gap' && BEATS_OF[c.pAttr] === c.eAttr));
+    const read = c.kind === 'counter', saw = lie && (read || (c.blocked === 'gap' && BEATS_OF[c.pAttr] === c.eAttr));
+    // 他讀到你（11-17）：他照你上一手的應付方式出（why read／readHonest）而且剋中你 → l1「他讀到你了！」、l3 講你上一手（rel）
+    const gotRead = !!h && (c.why === 'read' || c.why === 'readHonest') && c.kind === 'countered';
     if (read && !saw && T('readRight')) l1 = T('readRight') + l1;
-    if (h) {
+    if (h && c.script) {                               // 教學那場（有劇本）：照舊念關鍵字「『key』是 X」
       const x = hintOf(hints, h), key = x && x.key ? x.key : null, hz = ZH[h.attr], e = ZH[c.eAttr];
       if (c.bluff) {
         const st = saw && T(key ? 'seeThrough' : 'seeThroughNoKey', { key, hint: hz, e });
         l1 = st || (key ? T('bluff', { key, hint: hz, e }) : T('bluffNoKey', { hint: hz, e }));
         if (c.blocked) l3 = rule.replace(/[，,]\s*$/, '。');
       } else l3 = key ? T('honest', { key, hint: hz }) : T('honestNoKey', { hint: hz });
+    } else if (h) {                                    // 正式對局：不念關鍵字（提示句不再是對照表），只說真假
+      const e = ZH[c.eAttr];
+      if (gotRead) {
+        l1 = T('readHit', { e });
+        const rk = c.rel === 'counter' ? 'readCounter' : c.rel === 'mirror' ? 'readMirror' : c.rel === 'third' ? 'readThird' : null;
+        if (rk) l3 = T(rk);
+      } else if (lie) {
+        l1 = saw ? T('seeThroughPlain', { e }) : T('bluffPlain', { e });
+        if (c.blocked) l3 = rule.replace(/[，,]\s*$/, '。');
+      } else if (hk !== 'none') l3 = T('honestPlain');
     }
     const notes = (c.notes || []).map(n => (typeof n === 'string' ? n : n && n.text) || '').filter(Boolean);
     if (apx && c.eAce && U && U.eAceNote) notes.push(U.eAceNote);   // 旗標下你的王牌不比星，他帶的照舊 7 星：丟出來那手寫明（審查 11-16）
-    return { l1, l2, l3, cls, rule, notes, bluff: !!c.bluff && !saw, read, saw };
+    return { l1, l2, l3, cls, rule, notes, bluff: (c.script ? !!c.bluff : lie || gotRead) && !saw, read, saw, gotRead };
   }
 
   // ------------------------------------------------------------------ module state
@@ -467,7 +499,7 @@
     }
 
     // ---------------- render: 他的一塊 ----------------
-    function hintText(v) { const x = hintOf(hints, v.hint); return x ? x.text : ''; }
+    function hintText(v) { const x = hintOf(hints, v.hint, content.hintLines || null); return x ? x.text : ''; }
     // 品味／底氣小籤（無限試煉；大於 0 才有）：「品 2」「底 1」
     const TU = (content.trial && content.trial.ui) || {};
     //   讀屏念全名（品味 2／底氣 1；審查 #11）
@@ -505,6 +537,7 @@
     function renderStamp(v) {
       const r = v.apexReveal && !v.over ? v.apexReveal : null, U = apxUI();
       let st = els.hint.querySelector('.apxst');
+      els.hint.classList.toggle('stamped', !!r);         // 11-17：蓋章那手章換到「提示」籤的位置（句庫的句子較長，章跟籤並排時 360／375 寬會換三行被切）
       if (!r) { if (st) st.hidden = true; return; }
       if (!st) { st = document.createElement('span'); st.className = 'apxst'; st.setAttribute('role', 'status'); els.hint.appendChild(st); }
       st.className = 'apxst ' + r; st.textContent = r === 'bluff' ? (U.revealBluff || '') : (U.revealHonest || ''); st.hidden = false;
@@ -1325,8 +1358,10 @@
       if (cl.toE > 0) { stg('pose', 'f', 'hurt', 200); stg('float', 'f', '−' + cl.toE); }
       if (cl.toP > 0) { stg('pose', 'p', 'hurt', 200); stg('float', 'p', '−' + cl.toP, 'r'); }
     }
-    function oneTimeTips(cl) {
-      if (cl.bluff) hint('tip_bluff', ['result']);
+    function oneTimeTips(cl, ct) {
+      if (ct ? ct.bluff && !ct.gotRead : cl.bluff) hint('tip_bluff', ['result']);   // 11-17：看得出來的唬才算（半指出另一色、不露都不算）
+      if (ct && ct.gotRead) hint('tip_read', ['result']);                           // 11-17：第一次被他讀到
+      if ((cl.notes || []).some(n => n && n.stat === 'feint')) hint('tip_hit', ['result']);
       if (cl.blocked === 'gap') hint('tip_block', ['result']);
       if (cl.ace) hint('tip_ace', ['result']);          // 第一次丟王牌（FIXLIST 2；hint 一場只送一次）
       if (cl.pAttr === cl.eAttr) hint('tip_mirror', ['result']);
@@ -1392,9 +1427,9 @@
       if (cl.toP > 0) floatAt(els.phpn, '−' + cl.toP, 'r');
       // 結果句裡有配件或品味／底氣那句：那顆閃一下（品味／底氣：你的在你那一列、他的（eAtk／eDef）在他那一列）
       const noteEl = n => !n ? null : n.apex ? (apexTileEl() || {}).firstElementChild || null : n.relic ? els.relics.querySelector(`[data-relic="${cssEsc(n.relic)}"]`)
-        : n.stat ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`) : null;
+        : n.stat && n.stat !== 'feint' ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`) : null;   // feint（被唬到多扣）沒有小籤
       if (ct.notes.length) (cl.notes || []).forEach(n => { const b = noteEl(n); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
-      oneTimeTips(cl);
+      oneTimeTips(cl, ct);
       rec.ui = snapUI();
       if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }
       emit('resolved', evs);
@@ -1438,6 +1473,8 @@
       holdSleeve('p', null);
       if ((v.n | 0) >= (v.maxRounds || 6)) hint('tip_rounds', ['rounds']);
       if (lpHas() && !els.lp.hidden) hint('tip_lastplay', ['lastplay']);   // 一次性：上一手兩張留在上面、點得開（教學中不出，由 tutorial.js queueTip 擋）
+      const hk = v.hint && !v.over ? v.hint.kind : null;                       // 11-17 提示分級：第一次半指／不露
+      if (hk === 'half') hint('tip_half', ['e-hint']); else if (hk === 'none') hint('tip_none', ['e-hint']);
       emit('handStart', v);
     }
     // 六手打完／他牌出完的副標（FIXLIST 3：比聲望條剩幾成）。% 用引擎 over 事件的 pct（＝E.pctPair：整數一樣但勝負不同時改一位小數），

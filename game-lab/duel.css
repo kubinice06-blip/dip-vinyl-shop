@@ -333,6 +333,11 @@
 .dl.short .hint .apxst{font-size:12px;line-height:16px;padding:0 4px;margin-right:5px}
 .dl .hint .apxst.honest{color:var(--win,#2e7d52)}
 .dl .hint .apxst.bluff{color:var(--red,#c11628)}
+/* 11-17 讀牌加難：提示句庫的句子較長（最長 18 字），章跟「提示」籤並排時 375×548／360×640 有二十幾句換三行被切 → 蓋章那手「提示」籤先收起，章蓋在籤的位置（常聽頻率小圓點照舊在最前面） */
+.dl .hint.stamped .lb{display:none}
+.dl .hint.stamped .tn{order:-2}
+.dl .hint.stamped .apxst{order:-1;margin:0 9px 0 4px}
+.dl.short .hint.stamped .apxst{margin:0 6px 0 3px}
 @media (prefers-reduced-motion:reduce){ .dl .apx-box .go:active{transform:none} }
 /* 第 A 波 3：他的稱號（view.eTitle）：名字旁小字；名字列放不下時（tight2）稱號先收 */
 .dl .nmrow>.ttl{font:700 10px/14px var(--dl-zh);color:var(--gray2,#555);background:#fff;border:1px solid var(--line,#ccc);padding:0 3px;letter-spacing:0;white-space:nowrap;margin:0 6px 0 -2px;flex:none;align-self:center}
