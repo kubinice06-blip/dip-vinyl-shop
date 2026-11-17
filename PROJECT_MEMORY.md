@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s37：sd-068、sd-069 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-068 上線 30（FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）；sd-069 上線 30（Gone、Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）。FRICTION、George Young、Petrella、Ghost、Images、Dou Mahi 等資料只到藝人層級，照 delayde 前例薄寫上線。
+- **主線補查**：Gene Harris 1972／1973（blp1553 轉載原盤內頁，story／sound 救成 ok）、Russell《So What》、Mellé《Mindscape》（題獻 Alfred Lion）、Googoosh《Akharin Khabar》、Rapsodia 葛萊美入圍、Grant Green《I Want to Hold Your Hand》、Grenadine《Nopalitos》。審稿改 sd-068 9 處（General Magic 單源形容詞、補《盤名》壓字數）、sd-069 2 處（刪單源《紐約時報》年度專輯、Goya 的「老式標準曲」封套說法）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-068.json,review-sd-069.json,kv-before-sd-068.json,kv-before-sd-069.json}`、`desc-tools/batches/{cards,research,output}/sd-06{8,9}*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 99 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s34：sd-062、sd-063 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-062 上線 30（Cicada、Circle、Claude François、Claude Young、Clifford Jordan 4、McPhatter、Black Light District、Collage 2、Consumer Electronics、Controlled Bleeding、Council of Nine、Count Ossie、Credo、Cro-Mags 2、Crown of Thornz、Crystal Vibe、Culture Freeman、Curly Ray Cline 2、Cuushe 2、Cygnus、CYNE、Norby 2）；sd-063 上線 30（Da Vàng、Dando Shaft 2、Fingerprints、Danielle Howle、Dariush、Dark Comedy、Holzman、Stackenäs、Deafheaven 2、Death of Samantha、Deepchord 2、Del McCoury 2、delayde、Jannah、Hodge、Banhart 2、Devo、Dexter Gordon 3、Dezerter 2、Dhamika、Dianne Reeves 2）。資料只到藝人／廠牌層級的（delayde 續集、Dhamika、Dariush、Norby《Queen》等）照前例薄寫上線。

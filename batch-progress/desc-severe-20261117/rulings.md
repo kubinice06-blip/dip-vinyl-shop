@@ -1842,3 +1842,43 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-063.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 91 次（研究層 sd-062 42、sd-063 42，主線 7）。
+## sd-068（30 張，其餘：FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）— s37
+
+- 研究：3 支 Sonnet，WebSearch 13＋10＋13＝36 次；none 只有 Schönfeld《Jazz》、George Young《Burgundy》、Mellé《Mindscape》的 sound。母語來源：FRICTION 日文維基、渡辺文男日文維基與大口純一郎回憶、Schönfeld／Katzenbeier 德文維基。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 11 次＋WebFetch＋Discogs API release notes，facts 標【主線補查】）：Gene Harris 1972（blp1553 轉載的 Leroy Robinson 原盤內頁：Butler 與 Wade Marcus 要把他推成領班、刻意配上從沒合作過的東岸樂手）、1973（Gene Edwards 內頁：底特律 Club Mozambique 淵源、Gene Harris Sound）→ story／sound 升 ok；George Russell《So What》（All About Jazz：緊接《The African Game》、〈Time Spiral〉是最後的長篇之一）；Mellé《Mindscape》（Discogs notes：題獻 Alfred Lion、馬里布 Diamondhead 一人錄成）。FRICTION 兩張（日文搜尋 2 次、P-Vine 商品頁 404、Discogs notes 只有錄音地點）、渡辺文男、George Young 兩張、Petrella《Kaleido》、Ghost 兩張（Drag City 頁只有一句宣傳）補查無新料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Replicant Walk 不寫 Mosimann 製作與 Zorn 曲數；聲音段借 1989 現場盤《Dumb Numb CD》評論描述「這個時期」的 FRICTION（同期、含同名曲），照收。Superfunk 不寫 Johnny Guitar Watson 彈貝斯；GENDEMA 不寫 chillwave 與 No Problema Tapes；Funki Porcini 錄音室寫 The Uterus Goldmine；Gemini 的 FACT 引文不套本盤；Mellé《New Faces》寫次中音／上低音（舊稿長號錯）；God Bullies 不寫「電台」「Jesus Goes to Hell Singers」；George Young 不寫 Paddle Wheel／King／David Matthews；Russell 不寫「改寫 Miles 獨奏」「Smalltet」；Braith《Soul Stream》不寫「只有一首出自別人」；Clinton 不寫軌序；Petrella、Glenn Underground 的前作聲音描述不寫成本盤。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-068.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| General Magic《Rechenkönig》 | 刪「失真的快拍混著數位啁啾、爆裂聲」，改「以靜電、回授與節奏脈衝構成」 | 前者只出自 Brainwashed 搜尋摘要（原頁 404），寫作層回報說拿掉其實沒拿 |
+| Gary Burton、Gene Harris 2 張、Ghost《Second Time Around》 | 第二句補《盤名》，並刪次要細節壓回 240 字（JVC 數位爵士系列、三重奏解散句、jazz-funk 標籤） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Schönfeld 廣播樂團十年首席中音、渡辺文男原是歌手、Funk Inc. 試聽帶簽約、Gemini 的樂迷名單、Braith 悼 JFK、Clinton 取樣自己、Mellé 引介 Van Gelder 給 Lion、Glenn Underground 的〈I Feel Love〉重編、Global Communication 兩城各做一半、Ghost 唯一全英文演唱、Petrella 連兩年 DownBeat 新人）。渡辺貞夫為渡辺文男實兄、Adams《Old Feeling》「去世前一年」（1991 錄、1992 年 11 月逝）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條《76:14》盤名誤判曲長）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-068.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+
+## sd-069（30 張，其餘：Gone、Gonzalo Rubalcaba 8、Googoosh 2、Gorky's Zygotic Mynci、Gosub、Govinda、Graham Collier Music 2、Grant Green 4、Greg Osby 7、Grenadine 2、Growling Mad Scientists）— s37
+
+- 研究：3 支 Sonnet，WebSearch 18＋16＋14＝48 次；none 0。母語／原文來源：Googoosh 波斯文維基與 Radio Farda 訪談、Rubalcaba 的 DownBeat 1993 年 9 月號報導、Grant Green 原盤內頁（Cuscuna、Goldberg）。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Googoosh《Akharin Khabar》（Amoeba：Caltex 發行、Ghanbari／Zakarian 寫、Cheshmazar 編曲；RadioJavan 2010 年回顧其「清新聲音」）；《Rapsodia》（維基：1995 年葛萊美最佳爵士器樂演奏入圍）；Grant Green《I Want to Hold Your Hand》（Steve Huey 評語、1966 年發行）；Grenadine《Nopalitos》（Michigan Daily 1995 正評、Trouser Press 負評與 Defever 製作）。Images、Dou Mahi、Chaos Laboratory 無新料，照研究稿薄寫。
+- 事實裁定：Gone 盤名照卡單《Let's Get Real, Real Gone for a Change》，Trouser Press 偏負面評語不寫；Avatar 不寫「七首全是他寫的」「後現代」；Imagine 不寫 Dianne Reeves；Googoosh 不寫〈Shak Mikonam〉、《Dou Mahi》不寫作曲人；Grant Green《Remembering》不寫磁頭／相位偏移、《Gooden's Corner》不寫 take 數與標題由來、《Am I Blue》改用 Goldberg 內頁的 mood album；Collier 不寫 Malcolm Lowry；Gosub 不寫「1990 年代初」；Growling Mad Scientists 是阿姆斯特丹二人組（派工詞誤寫以色列，研究層更正），不寫 Yaniv Tal；Goya 1992、不寫「戲仿／概念專輯」；Inner Circle 不寫延後理由、St. Louis Shoes 不寫雙關。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 2 處，改動檔 `review-sd-069.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Greg Osby《Art Forum》 | 刪「曾入選當年《紐約時報》的年度專輯」 | 只見 WRTI 一則轉述、無年份名次 |
+| Grenadine《Goya》 | 「整張刻意寫成老式標準曲」→「仿老派情歌的輕快原創」 | 老式標準曲是封套宣稱，Trouser Press 說它誤導 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Gone 替 Black Flag 開場半年、Haden 在古巴發現 Rubalcaba、國務院到 5 月才發簽證、《Suite 4 y 20》碰上「政權沒那麼糟」風波、Googoosh 禁唱 21 年與 Googooshi 造型、Gorky's 雙語、Govinda 二十年古典小提琴、Grant Green「最愛的三重奏」引語、Osby 的 Inner Circle Music 取名於本張、GMS 從 gabber 時代的阿姆斯特丹去果阿）。Rubalcaba 八張、Osby 七張各取本張概念，生平只一句。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題；鉤子禁詞檢出「迷你裙」的「你」為誤判）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-069.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 99 次（研究層 sd-068 36、sd-069 48，主線 15）。
