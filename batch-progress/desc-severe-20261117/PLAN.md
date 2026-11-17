@@ -101,8 +101,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | s17 | ✅ 上線 29（前台 29；delayde《finding solitude》查無專輯資料留置） |
 | sd-031 | 經典度≥4（Don Pullen … Eliane Elias） | 30 | | |
 | sd-032 | 經典度≥4（Eliane Elias … Ffa Coffi Pawb） | 30 | | |
-| sd-033 | 經典度≥4（Fin.K.L … Gabinete Caligari） | 30 | | |
-| sd-034 | 經典度≥4（Galliard … Guido Manusardi） | 30 | | |
+| sd-033 | 經典度≥4（Fin.K.L … Gabinete Caligari） | 30 | s19 | ✅ 上線 30（前台 30；無留置；主線補查 Foje、板橋文夫等；CURATED 0） |
+| sd-034 | 經典度≥4（Galliard … Guido Manusardi） | 30 | s19 | ✅ 上線 30（前台 30；無留置；主線補查 6 張；CURATED 0） |
 | sd-035 | 經典度≥4（Gunnar Graps ja Magnetic Band … Horace Parlan） | 30 | | |
 | sd-036 | 經典度≥4（Horace Silver … Jackie McLean） | 30 | | |
 | sd-037 | 經典度≥4（Jacky Terrasson … jinsang） | 30 | | |
