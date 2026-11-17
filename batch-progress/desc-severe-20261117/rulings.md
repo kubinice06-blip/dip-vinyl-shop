@@ -697,3 +697,38 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-019.json`；29 張 58 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **58/58 一致**；`front-check` **前台 29/29 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
+
+## sd-020（30 張：韓國 7、Cicada、Juzzy Orange & GoodieK、MASS OF THE FERMENTING DREGS、ないあがらせっと、サミー＋稲垣次郎、上田力 2、伊東たけし、八代亜紀、兼崎順一、北村英治、宮沢昭 2、松田弘一、横内章次、淺堤、潘秀瓊、篠崎正嗣、迷幻幼稚園、鈴木茂、青江三奈、響野夏子、Agnostic Front）— s11
+
+- 研究：3 支 Sonnet，WebSearch 19＋6＋18＝43 次（b 組多走 curl、Discogs API）。
+- **主線補查**（WebSearch 約 13 次＋curl）：
+  - 시나위《Down and Up》：京鄉新聞〈韓國大眾音樂 100 大名盤〉第 96 名、器樂曲〈연착〉是全張亮點 → 鉤子；namu 樂迷評論（金鍾書高音更明亮）寫成「被認為」。
+  - 델리스파이스《Welcome to the Delihouse》：maniadb 收錄樂評（風笛與西塔琴取樣、delay 吉他、techno／hip-hop）。
+  - 빛과 소금：maniadb 確認第四張。
+  - サミー：curl 讀 CDJournal 2013 新聞（garage soul 隱藏名盤、〈Rock Steady〉）、横浜パラダイス部落格（活動短暫、身世不明、爵士樂手與 new rock 交流）。
+  - 鈴木茂：部落格與 Strada Records 商品頁（請 AOR 歌手朋友寫無詞器樂曲、全數製作編曲、度假村氛圍、和 Balearic 重新評價）。
+  - 篠崎正嗣：CiNii 書誌（小提琴／電小提琴／二胡、Pale Green Studio、曲名以水與遠古生物為題）。
+  - 青江三奈：1969〈池袋の夜〉與連續兩年歌唱賞（地位）。
+  - 淺堤、響野夏子、松田弘一、北村英治、ないあがらせっと、八代亜紀：再搜無新資料，照研究稿薄寫。淺堤「十年社遊」是什麼活動查不到，不寫推測、不寫成十週年。
+- 身分／事實裁定：전인권《파랑새》寫「들국화之後的第一張個人專輯」；소음발광寫入圍；이승윤《0집》是第四張正規專輯；宮沢昭《Sea Horse》＝1989 年 12 月浜松現場、2002 年遺作首發（故事核心）；《On Green Dolphin Street》不寫「隔十三年回同廠」（1981 有《My Piccolo》）；潘秀瓊寫「1960 年代初在香港錄音」，盤名太長不入正文；Agnostic Front 不寫 Rolling Stone 排名與整張長度。
+- 非 CJK 卡（Agnostic Front）：前台 front-check 對上，CURATED 未蓋，無待店主處理。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 16 處，改動檔 `review-sd-020.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| 델리스파이스\|welcome to the delihouse | 「這是從 PC 通訊…」→「《Welcome to the Delihouse》是…」；刪「韓國獨立圈的現代搖滾」、산울림翻唱 | 第二句要有盤名；字數 |
+| juzzy orange & goodiek | 「這張是」→「《沒有靈魂的工程師》是」；刪「成員輪流企劃第二彈」 | 盤名；字數 |
+| サミー & 稲垣次郎… | 「這是」→盤名；刪 2013 首度 CD 化、「稲垣次郎製作」；縮短身世句 | 盤名；版本雜項；字數 |
+| cicada\|一起走吧 | 刪「四首後來收進 2016《Farewell》」 | 後年選輯收錄雜項 |
+| 八代亜紀 | 「B 面候補…改成 A 面大賣」→「候補曲…後來卻大賣」 | A／B 面字眼 |
+| 北村英治 | 刪「與 Trio 版曲目相同」、1980 現場盤 | 版本雜項、無關後續 |
+| 篠崎正嗣 | 刪「下一張原創作要再等 19 年」 | 與本張無關的冷知識 |
+
+其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50；材料取自故事（大麻事件後的隔年、試聽帶像 Aretha、工程師白天做 beat、遺作首發、沒打算做專輯）、概念（0집、L7＝square、度假飯店、水與遠古生物、少女的單向對話）、聲音（三連音撥法、八把長號、木吉他領奏的拉丁）或地位（百大名盤、連續兩年歌唱賞）。QA 例外照收：淺堤盤名原文半形冒號、潘秀瓊無《》（盤名過長）、青江三奈「潮来笠」為曲名原文。薄寫：北村英治 163。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-020.json`；30 張 59 鍵（Agnostic Front 原無 desc4，只寫 desc2）`wrangler@4 kv bulk put --remote` Success；回讀 **59/59 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 180 次（研究層 sd-019 54、sd-020 43、sd-hold-3 7，主線約 30，另有子代理未回報的零頭）。

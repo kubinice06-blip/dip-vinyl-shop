@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s11：sd-019、sd-020、sd-hold-3 上線（61 張，留置 2）
+
+- **結果**：sd-019 上線 29（留置黑豹樂隊《無是無非》：只有團史與主唱更替）；sd-020 上線 30（無留置；含非 CJK 的 Agnostic Front，CURATED 未蓋）；sd-hold-3 重查 sd-016／018 的 3 張留置卡，救回花生隊長《Oh My God》（Yahoo 拍賣頁轉錄的專輯文案）、美空ひばり《ひばりの渡り鳥だよ》（Discogs API credits），張露《繁星點點》續留置（身分不穩：1973 疑為數位上架日、1977 黑膠作「張璐」）。
+- **主線補查**：Discogs API 救回非常階段《Windom》、飯吉馨、高橋達也《Got The Spirit》、麻生レミ的 story／sound；curl 讀 CDJournal 與部落格補サミー；京鄉新聞百大名盤補시나위；妞新聞專訪補麋先生《野生》；CiNii 補篠崎正嗣；Strada 商品頁補鈴木茂。
+- **審稿**：sd-019 改 13 處、sd-020 改 16 處、sd-hold-3 改 2 處（單一出處去「常被」、第二句補盤名、刪再發／CD 化／後年選輯、刪曲長「74 分鐘」），逐條在 `rulings.md`。WebSearch 工作階段約 180 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json（加 sd-hold-3）,kv-before-sd-019/020/hold-3.json,review-sd-019/020.json,held-sd-hold-3.json}`、`desc-tools/batches/{cards,research,output}/sd-019*、sd-020*、sd-hold-3*`、onboarding manifest 61 處。
+- **驗證**：`kv-token-check` exit 0；KV 121 鍵（58＋59＋4）逐字回讀全數一致；`front-check` 前台 61/61 新稿、CURATED 0；QA 無軌序／曲長／盤號（例外：淺堤盤名半形冒號、潘秀瓊盤名過長不入正文、「潮来笠」曲名原文）；鉤子加權 ≤50、同批前四字互異。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s8：sd-015、sd-016、sd-hold-2 上線（66 張，留置 1）
 
 - **結果**：sd-015 上線 30（無留置，第一批新版鉤子開頭）；sd-016 上線 29（留置張露《繁星點點 張露》，只查到發行日）；sd-hold-2 重查 sd-009～014 的 7 張留置卡，**7 張全數救回上線**，sd-009～014 留置清空。
