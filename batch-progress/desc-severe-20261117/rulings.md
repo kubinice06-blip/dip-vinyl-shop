@@ -2165,3 +2165,25 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。
+
+## sd-080（30 張，其餘：Marshall Jefferson、菊地雅晃、Masonna、Matt Martians、Max Brennan、Maxo、Meditation Singers、Mehrpouya、Mercury Rev、Merzbow 2、Metabolist、Metrotone、Mfon、Michael Chapman、Petrucciani 3、Mike Osborne／Stan Tracey、Mike Osborne Trio、Mike Westbrook、Mikko Tarmia、Miles Davis、Millie Jackson、MindSpring Memories、Minxus、Miranda Cuckson 3、Miroslav Vitous）— s43
+
+- 研究：3 支 Sonnet，WebSearch 17＋17＋15＝49 次；none 只有 Mfon《A Day Trip to Chicago》story／sound。AllMusic、Tower、Discogs 網頁多 403。
+- **主線補查**（WebSearch 5 次＋WebFetch，facts 標【主線補查】）：Mfon（Frogman 官方訂購頁與日文目錄：東京 Frogman 發行、全曲 Mfon 作曲製作、曲名以芝加哥為題；Discogs：1999 年初移居挪威；Frogman 頁 503，sound 仍 none）、Millie Jackson《Hard Times》（Creem 1983 短評、〈Special Occasion〉R&B 第 50、Shapiro 與 Jackson 共同製作）、菊地雅晃《Formula》（日文維基「純電子音楽集」；研究稿「菊地雅洋（Masabumi）的外甥」錯，更正為菊地雅章之姪）、Meditation Singers（Della Reese 早年在團、《Amen!》）。Shapey 續輯、Martino 補查無新料（Fanfare 索引無本盤樂評）。
+- **薄寫上線不留置**（delayde 前例）：Mfon、菊地雅晃《Formula》、Meditation Singers、MindSpring Memories、Minxus、Martino、Shapey、Millie Jackson（聲音）。
+- 事實裁定：Mehrpouya《Soul Raga》寫成 2013 年選輯、不寫卒年（1992／1993 兩說）、不寫 Ravi Shankar；Maxo 不提 Madlib（來源互斥）；Matt Martians 的 Mac DeMarco 寫參與製作；Chapman 不寫倫敦交響樂團（單一文案）；Masonna 重發廠 Total Black 是柏林廠牌（舊稿「美國廠牌」錯）；Metabolist 不寫「壓了一萬張」；Osborne／Tracey 不寫藝術理事會贊助；Promenade 不點〈One Night in the Hotel〉作者；Petrucciani Live 不寫「把那套編制帶上台」推論；Shapey 續輯不用 Tommasini（評第一輯）；Martino 不寫撥弦賦格三人合作（與「沒見過 Martino」打架）；Vitous 不寫 Herbie Mann 製作（單一部落格）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 4 處，改動檔 `review-sd-080.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Merzbow《Antimonument》 | 刪「原版是限量約 225 張的圖案碟」「之後多次重發」 | 印量、版本雜項 |
+| Metrotone | 「限量 500 張發行」→「發行」 | 印量雜項 |
+| Mercury Rev《Born Horses》 | 「全張以低聲說白」→「以低聲說白」 | 研究稿沒說整張 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Jefferson 法蘭克福一週無計畫、Masonna 本人最愛、Matt Martians 替缺點辦死亡派對、Maxo 上帝的幽默、底特律第一個加伴奏的福音團、Mehrpouya 骨頭與鍋碗、Mercury Rev 九年後不再唱、反紀念碑、21 小時錄音帶剪 14 段、Metabolist 四小時錄音、Metrotone 互寄錄音帶、Mfon 移居挪威、Harvest 零宣傳、Petrucciani 受《Tutu》啟發、四歲看 Ellington、Tracey 差點當郵差、Willisau 三場取兩段、RCA 退件催生 Cadillac、SOMA 海底研究站、Miles 戒毒後找 Prestige、Millie 口白、100% plunderphonica、Minxus 思想的養分、Eckardt 新曲、Cuckson 未見 Martino、激進的傳統主義者、Vitous 在 Weather Report 前）。30 張鉤子前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-080.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
