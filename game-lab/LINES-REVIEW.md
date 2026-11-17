@@ -564,7 +564,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・rcEmpty | 第 1 手揭曉後才有紀錄。 | 本規格新寫 | `duelText.rcEmpty` |
 | （畫面字）・rcHand | 第 {n} 手 | 本規格新寫 | `duelText.rcHand` |
 | （畫面字）・rcOf | ／{max} | 本規格新寫 | `duelText.rcOf` |
-| （畫面字）・rcAfter | 打完　你 {p}／{pm}　他 {e}／{em} | 本規格新寫 | `duelText.rcAfter` |
+| （畫面字）・rcAfter | 這手打完　你 {p}／{pm}　他 {e}／{em} | 本規格新寫 | `duelText.rcAfter` |
 | （畫面字）・rcVs | 對 | 本規格新寫 | `duelText.rcVs` |
 | （畫面字）・rcNone | 不扣 | 本規格新寫 | `duelText.rcNone` |
 | （畫面字）・rcCounter | 你剋中 | 本規格新寫 | `duelText.rcCounter` |

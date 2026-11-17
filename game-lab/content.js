@@ -1058,9 +1058,9 @@
     readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。',
     // 11-17 上一手細節（店主「上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了」；scratchpad v5/recap）：
     //   揭曉後停住等點（tapOn 那行）；點上一手小列＝上一手詳情；頂欄「紀錄」＝這場每一手一行。結果字一律是上面那些結果句（recap.js 經 clashText 重排），這裡只有面板的框字
-    //   rcHand／rcOf＝詳情頂列「第 n 手／6」；rcAfter＝打完雙方的聲望（log 的 pHp／eHp）；rcCounter…rcTie＝紀錄每列的結果詞；rcBluff／rcSaw／rcRead＝籤（＝結果句的唬你／看穿／讀到）
+    //   rcHand／rcOf＝詳情頂列「第 n 手／6」；rcAfter＝這手打完雙方的聲望（log 的 pHp／eHp；不單寫「打完」：遊戲裡多指整場，審查 11-17）；rcCounter…rcTie＝紀錄每列的結果詞；rcBluff／rcSaw／rcRead＝籤（＝結果句的唬你／看穿／讀到）
     rcLink: '紀錄', rcList: '這場紀錄', rcListDone: '上一場紀錄', rcCount: '{n} 手', rcAll: '全部', rcEmpty: '第 1 手揭曉後才有紀錄。',
-    rcHand: '第 {n} 手', rcOf: '／{max}', rcAfter: '打完　你 {p}／{pm}　他 {e}／{em}', rcVs: '對', rcNone: '不扣',
+    rcHand: '第 {n} 手', rcOf: '／{max}', rcAfter: '這手打完　你 {p}／{pm}　他 {e}／{em}', rcVs: '對', rcNone: '不扣',
     rcCounter: '你剋中', rcCountered: '被他剋', rcGapYou: '剋不動', rcGapHim: '他剋不動', rcMirrorWin: '比星贏', rcMirrorLose: '比星輸', rcTie: '平手',
     rcBluff: '被唬', rcSaw: '看穿', rcRead: '被讀到',
     rcPrev: '前一手', rcNext: '後一手', rcClose: '關閉', rcCover: '{t}，點一下看唱片資訊'

@@ -44,7 +44,7 @@
 //
 // 規則：畫面上每個數字都來自引擎的 view()／resolveTurn() 事件；UI 不算傷害、不讀 duel.plan。提示只寫句子，不寫屬性名（D §5）。
 // 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、手牌收回疊好、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
-//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手（牌桌兩張縮小、搬進最上面的上一手小列）。結算中點畫面任一處（牌桌兩張除外：那是唱片資訊；淡掉的上一手小列算牌桌）＝這手 4 倍速（停住等點時＝繼續）；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
+//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手（牌桌兩張縮小、搬進最上面的上一手小列）。結算中點畫面任一處（牌桌兩張除外：那是唱片資訊；淡掉的上一手小列算牌桌）＝這手 4 倍速；停住等點時點任一處（牌桌兩張也算）＝繼續；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
 (function () {
   'use strict';
   if (typeof window === 'undefined') return;
@@ -97,7 +97,7 @@
   const HOLD_GUARD = 500;  // 唬你／剋不動的結果框停住後 500 ms 內的點擊不算（連點不會一閃就過）
   // 11-17 揭曉後停住等點（店主「上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了」；scratchpad v5/recap DESIGN §A）：
   //   hooks.settings().autoNext === false（ui.js 給真玩家；⏸「揭曉後自動換手」預設關）而且不在教學、不是 autoplay、沒有 ?fast=1 → 結果框出現後停住、不倒數，
-  //   點盤面任何地方（大格封面、發燒配件照舊開資訊，不放行）、盤面外的舞台、Enter／空白鍵＝放行；放行後不再停「上一手」那一行，T_GO 後直接換手。
+  //   點盤面任何地方（含牌桌兩張大封面；按住封面＝唱片資訊、發燒配件＝說明，不放行）、盤面外的舞台、Enter／空白鍵＝放行；放行後不再停「上一手」那一行，T_GO 後直接換手。
   //   harness／duelLab 沒給 autoNext（或給 true）＝照現行時序（含唬你／剋不動的 readHold）
   const T_GO = 220;        // 放行後：結果框淡掉（200 ms）就換手
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
@@ -1203,7 +1203,7 @@
       els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
     }
-    // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下；上一手小列長按（11-17 起點一下＝上一手詳情；教學那場點一下照舊）；他蓋著的封套不給看
+    // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下（停住等點時＝繼續，要按住）；上一手小列長按（11-17 起點一下＝上一手詳情；教學那場點一下照舊）；他蓋著的封套不給看
     //   小列：開這顆按鈕畫出來時的那一手（lpData），不是當下的 S.lpd——長按跨過 t=2060 換手時，x 已是被重建掉的舊按鈕，開的仍是手指按下去那張
     function infoOfLast(x) {
       const side = x.dataset.side, d = lpData.get(x);
@@ -1240,7 +1240,9 @@
         if (recapOn()) { const d = lpData.get(x); openRecap('hand', (d && d.n) || (S.lpd && S.lpd.n)); } else infoOfLast(x);
         return;
       }
-      if ((x = t.closest('.slot[data-card]'))) { infoOfSlot(x); return; }
+      // 牌桌兩張（揭曉後）點一下＝唱片資訊；停住等點時例外（審查 11-17：「點一下繼續」最自然點的就是畫面正中那兩張封面）＝跟點牌桌一樣放行，
+      //   唱片資訊改按住（onDown），或放行後點上一手小列在詳情裡點封面
+      if ((x = t.closest('.slot[data-card]')) && !(S.hold && S.hold.tap)) { infoOfSlot(x); return; }
       if ((x = t.closest('.rl'))) { relicTap(x); return; }
       if (S.busy) {   // 結算中點畫面＝這手 4 倍速；結果框停著（停住等點、唬你／剋不動）時＝看完了、繼續
         if (S.hold) { if (performance.now() - S.hold.at > HOLD_GUARD) S.hold.done(); return; }

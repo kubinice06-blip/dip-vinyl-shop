@@ -6,7 +6,7 @@
 //   不拿來判、不寫進畫面——提示只寫原句）。
 //
 // DipLabRecap
-//   clashOf(L) → clash 形狀（只放 clashText 看的欄）
+//   clashOf(L, hintLines) → clash 形狀（只放 clashText 看的欄；舊存檔沒有 by／not 的手：by 照三相剋推回、not 查句庫，見下）
 //   rowsOf(log, ctx) → [{ n, L, ct, hint, e:{card,attr,star,ace}, p:{…}, hp:{p,e,pm,em} }]
 //     ctx：{ T(字), hints, hintLines, cardOf(id), pMax, eMax, shown（只列到第幾手：揭曉前那手不列）, U（頂點卡試做的畫面字，可省） }
 //   handHTML(row, o) · listHTML(rows, o)（o：{ T, max }）
@@ -27,7 +27,7 @@
   const RT0 = {
     he: '他・', you: '你・', aceWord: '王牌', hintLabel: '提示', hitE: '他 −{n}', hitP: '你 −{n}',
     rcHand: '第 {n} 手', rcOf: '／{max}', rcList: '這場紀錄', rcCount: '{n} 手', rcAll: '全部', rcEmpty: '第 1 手揭曉後才有紀錄。',
-    rcAfter: '打完　你 {p}／{pm}　他 {e}／{em}', rcVs: '對', rcNone: '不扣',
+    rcAfter: '這手打完　你 {p}／{pm}　他 {e}／{em}', rcVs: '對', rcNone: '不扣',
     rcCounter: '你剋中', rcCountered: '被他剋', rcGapYou: '剋不動', rcGapHim: '他剋不動', rcMirrorWin: '比星贏', rcMirrorLose: '比星輸', rcTie: '平手',
     rcBluff: '被唬', rcSaw: '看穿', rcRead: '被讀到',
     rcPrev: '前一手', rcNext: '後一手', rcClose: '關閉', rcCover: '{t}，點一下看唱片資訊',
@@ -41,11 +41,25 @@
     };
   }
   // ---------------- 資料 ----------------
+  // 改版前的舊存檔（部署當下正在打的那一場、續玩、打完複製進 r.lastFight 的那份）：log 沒有 by、not 這些新欄位。
+  //   by（誰剋誰）照三相剋從雙方屬性推回來（＝engine clash：同色 null、你剋他 'p'、其餘 'e'）——不推的話「他剋不動」會寫成反方向的「經典剋冷門…剋不動」（審查 11-17）。
+  //   not（半指那句說他不是哪色）＝那句提示在句庫 hintLines.half 裡歸哪一色（提示原句本來就講明了，不是洩漏）；查不到就當不露（不判照實／唬人、不造「他照實出」）
+  const BEATS_OF = { o: 'c', c: 'h', h: 'o' };          // x 剋 BEATS_OF[x]（＝engine BEATS）
+  const byOf = L => ('by' in L ? (L.by == null ? null : L.by) : !L.pAttr || !L.eAttr || L.pAttr === L.eAttr ? null : BEATS_OF[L.pAttr] === L.eAttr ? 'p' : 'e');
+  function notOf(L, lines) {
+    if ('not' in L) return L.not || null;
+    const H = lines && lines.half;
+    if (H) for (const a of ATTRS) if (Array.isArray(H[a]) && H[a].some(x => x && (x.id || x) === L.line)) return a;
+    return undefined;                                     // 查不到
+  }
   // log 一筆 → clashText 吃的形狀。hint.attr＝log.hint：明指時是公開的提示色（clashText 用它判「他照實／唬你」）；半指、不露 clashText 不拿它判真假
-  function clashOf(L) {
+  //   hintLines：舊存檔半指那手查 not 用（rowsOf 會帶 ctx.hintLines）
+  function clashOf(L, hintLines) {
+    let hk = L.hk || 'one', not = null;
+    if (hk === 'half') { const x = notOf(L, hintLines); if (x === undefined) hk = 'none'; else not = x; }
     const c = { n: L.n, pAttr: L.pAttr, eAttr: L.eAttr, pStar: L.pStar, eStar: L.eStar, ace: !!L.ace, eAce: !!L.eAce, kind: L.kind, toE: L.toE | 0, toP: L.toP | 0,
-      blocked: L.blocked || null, by: L.by == null ? null : L.by,
-      hint: L.line ? { attr: L.hint, line: L.line, kind: L.hk || 'one', not: L.not || null } : null, bluff: !!L.bluff, why: L.why, rel: L.rel || null, notes: Array.isArray(L.notes) ? L.notes : [] };
+      blocked: L.blocked || null, by: byOf(L),
+      hint: L.line ? { attr: L.hint, line: L.line, kind: hk, not } : null, bluff: !!L.bluff, why: L.why, rel: L.rel || null, notes: Array.isArray(L.notes) ? L.notes : [] };
     if (L.script) c.script = true;
     if ('apex' in L) c.apex = L.apex;
     return c;
@@ -56,7 +70,7 @@
     if (!F) return [];
     const cardOf = typeof ctx.cardOf === 'function' ? ctx.cardOf : () => null;
     return (Array.isArray(log) ? log : []).filter(L => L && typeof L === 'object' && L.pAttr && L.eAttr && (ctx.shown == null || L.n <= ctx.shown)).map(L => {
-      const c = clashOf(L), ct = F.clashText(c, ctx.T, ctx.hints, 'apex' in c ? ctx.U : undefined);
+      const c = clashOf(L, ctx.hintLines), ct = F.clashText(c, ctx.T, ctx.hints, 'apex' in c ? ctx.U : undefined);
       const hx = c.hint ? F.hintOf(ctx.hints, c.hint, ctx.hintLines) : null;
       return { n: L.n, L, ct, hint: hx && hx.text ? hx.text : '',
         e: { card: L.eId ? cardOf(L.eId) : null, attr: L.eAttr, star: L.eStar, ace: !!L.eAce },
@@ -86,9 +100,10 @@
     if (p > 0) return { t: t('hitP', { n: p }), c: 'r' };
     return { t: t('rcNone'), c: 'z' };
   }
-  function kindWord(L, t) { if (L.blocked === 'gap') return t(L.by === 'e' ? 'rcGapHim' : 'rcGapYou'); return KIND_KEY[L.kind] ? t(KIND_KEY[L.kind]) : ''; }
+  function kindWord(L, t) { if (L.blocked === 'gap') return t(byOf(L) === 'e' ? 'rcGapHim' : 'rcGapYou'); return KIND_KEY[L.kind] ? t(KIND_KEY[L.kind]) : ''; }
   // 籤：被唬（紅）／看穿（綠）／被讀到（紅）——只看 clashText 的判讀（＝當時浮框講了什麼）
-  function tagOf(ct, t) { return ct.saw ? { t: t('rcSaw'), c: 'sw' } : ct.gotRead ? { t: t('rcRead'), c: '' } : ct.bluff ? { t: t('rcBluff'), c: '' } : null; }
+  //   class 用 saw 不用 sw：style.css 有全域 .sw（⏸ 開關鈕：黑框、min-width 36），會套到這裡（審查 11-17）
+  function tagOf(ct, t) { return ct.saw ? { t: t('rcSaw'), c: 'saw' } : ct.gotRead ? { t: t('rcRead'), c: '' } : ct.bluff ? { t: t('rcBluff'), c: '' } : null; }
   // 詳情：v1＝判讀句（唬你／看穿／讀到：l1 不是規則句時）；v2＝規則句＋扣分；v3＝l3（跟規則句重複就不放）；小字＝notes 逐條
   function handHTML(r, o) {
     const t = tOf(o && o.T), ct = r.ct;
@@ -105,13 +120,13 @@
     const hp = r.hp || {};
     return (r.hint ? `<div class="rc-hint"><span class="lb">${esc(t('hintLabel'))}</span><span class="tx">${esc(r.hint)}</span></div>` : '')
       + `<div class="rc-cards">${side('e', r.e)}${side('p', r.p)}</div>`
-      + `<div class="rc-res">${verdict ? `<div class="v1${ct.saw ? ' sw' : ct.bluff ? ' bl' : ''}">${esc(ct.l1)}</div>` : ''}`
+      + `<div class="rc-res">${verdict ? `<div class="v1${ct.saw ? ' saw' : ct.bluff ? ' bl' : ''}">${esc(ct.l1)}</div>` : ''}`
       + `<div class="v2">${esc(ruleLine)}<span class="d ${ct.cls}">${esc(ct.l2)}</span></div>`
       + (l3 ? `<div class="v3">${esc(l3)}</div>` : '')
       + (ct.notes.length ? `<ul class="nts">${ct.notes.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '') + `</div>`
       + (typeof hp.p === 'number' && typeof hp.e === 'number' ? `<div class="rc-hp">${afterHTML(hp, t)}</div>` : '');
   }
-  // 「打完　你 p／pm　他 e／em」：聲望數字加粗（log 的 pHp／eHp；負數照畫面寫 0）
+  // 「這手打完　你 p／pm　他 e／em」（不寫「打完」兩字開頭：遊戲裡「打完」多指整場；審查 11-17）：聲望數字加粗（log 的 pHp／eHp；負數照畫面寫 0）
   function afterHTML(hp, t) {
     const PH = { '\u0001': `<b>${Math.max(0, hp.p)}</b>`, '\u0002': esc(num(hp.pm)), '\u0003': `<b>${Math.max(0, hp.e)}</b>`, '\u0004': esc(num(hp.em)) };
     return esc(t('rcAfter', { p: '\u0001', pm: '\u0002', e: '\u0003', em: '\u0004' })).replace(/[\u0001-\u0004]/g, ch => PH[ch]);

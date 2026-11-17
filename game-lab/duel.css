@@ -357,7 +357,8 @@
 @media (prefers-reduced-motion:reduce){ .dl .callout.wait.hold .l4 i{animation:none} }
 .dl-rc{display:flex;flex-direction:column;background:#fff;font-family:var(--dl-zh,var(--zh,'Noto Sans TC',sans-serif));color:var(--ink,#111);text-align:left;
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
-.dl .dl-rc{position:absolute;left:0;top:0;right:0;bottom:0;z-index:20;border-top:2px solid var(--ink,#111)}
+/* z 26：要壓過打完的大章 .kost（z 25，同一個 .dl 堆疊）——大章停著時頂欄「紀錄」照樣點得開，面板不能被章蓋住（審查 11-17） */
+.dl .dl-rc{position:absolute;left:0;top:0;right:0;bottom:0;z-index:26;border-top:2px solid var(--ink,#111)}
 .dl-rc button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;-webkit-appearance:none;appearance:none}
 .dl-rc .rc-hd{flex:none;height:40px;display:flex;align-items:center;border-bottom:1px solid var(--line,#ddd);padding:0 2px 0 4px}
 .dl-rc .rc-hd .rc-nav{width:40px;height:40px;display:grid;place-items:center;font:700 18px var(--dl-mono,var(--mono,'Space Mono',monospace))}
@@ -389,7 +390,7 @@
 .dl-rc .rc-cd .ar{font-size:11px;line-height:14px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .dl-rc .rc-res{border:1px solid var(--ink,#111);padding:6px 8px 7px;text-align:center}
 .dl-rc .rc-res .v1{font-size:14px;font-weight:900;line-height:19px;text-wrap:balance}
-.dl-rc .rc-res .v1.bl{color:var(--red,#c11628)}.dl-rc .rc-res .v1.sw{color:var(--win,#2e7d52)}
+.dl-rc .rc-res .v1.bl{color:var(--red,#c11628)}.dl-rc .rc-res .v1.saw{color:var(--win,#2e7d52)}
 .dl-rc .rc-res .v2{font-size:13px;font-weight:700;line-height:19px;margin-top:2px;text-wrap:balance}
 .dl-rc .rc-res .v2 .d{font:700 20px var(--dl-mono,var(--mono,'Space Mono',monospace));margin-left:6px;vertical-align:-2px;white-space:nowrap}
 .dl-rc .rc-res .d.g{color:var(--win,#2e7d52)}.dl-rc .rc-res .d.r{color:var(--red,#c11628)}.dl-rc .rc-res .d.z{color:var(--gray,#888);font-size:13px;font-family:inherit}
@@ -411,7 +412,7 @@
 .dl-rc .rc-row .out .d{font:700 13px var(--dl-mono,var(--mono,'Space Mono',monospace));white-space:nowrap}
 .dl-rc .rc-row .out .d.g{color:var(--win,#2e7d52)}.dl-rc .rc-row .out .d.r{color:var(--red,#c11628)}.dl-rc .rc-row .out .d.z{color:var(--gray,#888)}
 .dl-rc .rc-row .tg{display:inline-block;font-size:10px;font-weight:700;line-height:14px;padding:0 3px;margin-right:4px;color:#fff;background:var(--red,#c11628)}
-.dl-rc .rc-row .tg.sw{background:var(--win,#2e7d52)}
+.dl-rc .rc-row .tg.saw{background:var(--win,#2e7d52)}   /* 不叫 .sw：style.css 的全域 .sw（⏸ 開關鈕）會加黑框 */
 .dl-rc .rc-row .chev{flex:none;width:12px;color:#bbb;font-weight:700}
 .dl-rc .rc-ft{margin-top:8px;font-size:12px;color:var(--gray,#888);text-align:center;line-height:16px}
 @media (hover:hover) and (pointer:fine){ .dl-rc .rc-row:hover,.dl-rc .rc-hd button:not(:disabled):hover{background:#f4f4f4} }

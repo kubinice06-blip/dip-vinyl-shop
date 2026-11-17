@@ -5,7 +5,8 @@
 // 每個尺寸（預設 390x664、375x548）：
 //   R1 停住（__lab.duelLab.start({hold:true})、不加 fast）：浮框出現後 .wait.hold、l4「點一下繼續 ▼」；3 秒後還停著（同一手、resolve）；
 //      停住後 500 ms 內的點擊不算；點盤面（他那一塊）→ 換手（T_GO 約 220 ms＋輪詢）、手數 +1、'settled' 在放行後才發
-//   R2 停住中點大格封面＝唱片資訊（slot-e），關掉後照樣停著；點盤面外的舞台＝放行；Enter＝放行
+//   R2 停住中按住大格封面＝唱片資訊（slot-e），關掉後照樣停著；點盤面外的舞台＝放行；Enter＝放行
+//   R2b 停住中點大格封面（他那張、你那張）＝放行、不開唱片資訊；點兩張中間的縫（觸控校正）＝放行（審查 11-17：「點一下繼續」最自然點的就是畫面正中）
 //   R6 上一手詳情：第 4 手點小列他那張＝「第 3 手」面板（蓋住整個盤面）：雙方唱片（aria 的藝人《專輯》＝log 的 eId／pId）、屬性與星＝log、提示原句＝hintOf(log.line)、
 //      結果框的字＝那手 clash 事件的 clashText（debug().hands 的 ct）、打完的聲望＝log pHp／eHp；‹ › 走到頭 disabled；面板裡點封面＝唱片資訊（recap-e）；
 //      ✕ 關掉、Esc 關掉；打開的手牌照樣打開
@@ -20,7 +21,7 @@
 // 只跑一次（390x664）：R7 不洩漏（半指、不露那手：面板只有 clashText 的字，不露那手沒有「唬」「照實」「看穿」、沒有籤；不寫他藏起來的計畫色）
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。LAB_SHOTS＝目錄 → 另存截圖（deviceScaleFactor 2）：揭曉後停住、上一手詳情、這場紀錄、結算畫面的紀錄
 import fs from 'fs';
-import { launch, newPage, record, results, sleep, hitPoint, openTitle, seededContinue, waitScreen, duelReady, jsClick, advanceUntil, URL0 } from './e2e-lib.mjs';
+import { launch, newPage, record, results, sleep, hitPoint, openTitle, seededContinue, waitScreen, duelReady, jsClick, advanceUntil, longPress, URL0 } from './e2e-lib.mjs';
 
 const SIZES = (process.env.LAB_SIZES || '390x664,375x548').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 const SHOTS = process.env.LAB_SHOTS ? process.env.LAB_SHOTS.replace(/\/+$/, '') + '/' : null;
@@ -71,7 +72,7 @@ const expectHand = (page, n) => page.evaluate(n => {
   const hx = F.hintOf(C.hints, { attr: L.hint, line: L.line, kind: L.hk, not: L.not }, C.hintLines);
   const card = id => C.cards[id] || null, ttl = c => c ? `${c.artist || ''}《${c.album || ''}》` : '';
   return { L, ct0, ct: row ? row.ct : null, hint: hx ? hx.text : '', whoE: `他・${ZH[L.eAttr]} ${L.eStar}`, whoP: `你・${ZH[L.pAttr]} ${L.pStar}`,
-    ariaE: `${ttl(card(L.eId))}，點一下看唱片資訊`, ariaP: `${ttl(card(L.pId))}，點一下看唱片資訊`, hp: `打完　你 ${Math.max(0, L.pHp)}／${d.p.max}　他 ${Math.max(0, L.eHp)}／${d.e.max}`.replace(/\s+/g, ' ') };
+    ariaE: `${ttl(card(L.eId))}，點一下看唱片資訊`, ariaP: `${ttl(card(L.pId))}，點一下看唱片資訊`, hp: `這手打完　你 ${Math.max(0, L.pHp)}／${d.p.max}　他 ${Math.max(0, L.eHp)}／${d.e.max}`.replace(/\s+/g, ' ') };
 }, n);
 function checkHand(P, X) {
   const w = [];
@@ -124,14 +125,14 @@ async function runSize(browser, w, h) {
     }
     // ---- R8a 頂欄「紀錄」：第 1 手揭曉前沒有、之後有
     const link1 = await page.evaluate(() => { const b = document.querySelector('#top [data-a=recap]'); return b ? { hidden: b.hidden, vis: !!b.offsetWidth, text: b.textContent } : null; });
-    // ---- R2 停住中點大格封面＝唱片資訊、舞台＝放行、Enter＝放行
+    // ---- R2 停住中按住大格封面＝唱片資訊、舞台＝放行、Enter＝放行（點一下大格封面＝放行：R2b）
     {
       await sleep(300);
       await playOne(page, 7);
       const okW = await waiting(page);
       await sleep(650);
       await page.evaluate(() => { window.__ev.length = 0; });
-      await tapSel(page, '.dl .slot.e .cv');
+      await longPress(page, ctx, '.dl .slot.e .cv');
       const okI = await infoOpen(page);
       await sleep(200);
       await closeInfo(page);
@@ -155,7 +156,7 @@ async function runSize(browser, w, h) {
       const okE = await ready(page, 3000);
       const S3 = await dbg(page);
       const ok = okW && okI && evI.includes('slot-e') && S1.hold === 'tap' && okS && S2.n === 3 && okW3 && okE && S3.n === 4;
-      record('R2', size, ok, `停住中點他那格封面 → 唱片資訊 ${okI}（${evI.join(',')}）、關掉後 ${S1.hold}；點舞台 → 放行 ${okS}（第 ${S2.n} 手）；Enter → 放行 ${okE}（第 ${S3.n} 手）`);
+      record('R2', size, ok, `停住中按住他那格封面 → 唱片資訊 ${okI}（${evI.join(',')}）、關掉後 ${S1.hold}；點舞台 → 放行 ${okS}（第 ${S2.n} 手）；Enter → 放行 ${okE}（第 ${S3.n} 手）`);
     }
     // ---- R6 上一手詳情（第 4 手：小列＝第 3 手）
     {
@@ -284,6 +285,42 @@ async function runSize(browser, w, h) {
   } catch (e) { record('R1', size, false, 'error ' + (e && e.stack || e)); }
   await ctx.close();
 
+  // ---- R2b 停住中點大格封面、兩張中間的縫＝放行（不開唱片資訊）
+  {
+    const { ctx, page } = await newPage(browser, w, h);
+    try {
+      await bootLab(page, { enemy: 'copycat', seed: 11, pos: 9, hold: true });
+      const out = [];
+      // 點的位置：他那張封面中心、兩張中間的縫（elementFromPoint 是牌桌，觸控校正會吸到旁邊的 slot）、你那張封面中心
+      const pts = {
+        e: () => hitPoint(page, '.dl .slot.e .cv'),
+        gap: () => page.evaluate(() => { const a = document.querySelector('.dl .slot.e').getBoundingClientRect(), b = document.querySelector('.dl .slot.p').getBoundingClientRect(); return { x: (a.right + b.left) / 2, y: (a.top + a.bottom) / 2 }; }),
+        p: () => hitPoint(page, '.dl .slot.p .cv'),
+      };
+      let k = 0;
+      for (const [nm, pt] of Object.entries(pts)) {
+        await sleep(300);
+        const n0 = (await dbg(page)).n;
+        await playOne(page, 21 + k++);
+        const okW = await waiting(page);
+        await sleep(650);
+        await page.evaluate(() => { window.__ev.length = 0; });
+        const p = await pt();
+        const tgt = await page.evaluate(([x, y]) => { const t = document.elementFromPoint(x, y); return t ? (t.closest('.slot') ? 'slot.' + (t.closest('.slot').classList.contains('e') ? 'e' : 'p') : t.className || t.tagName) : null; }, [p.x, p.y]);
+        const t0 = Date.now();
+        await page.touchscreen.tap(p.x, p.y);
+        const okR = await ready(page, 3000), ms = Date.now() - t0;
+        const S = await dbg(page);
+        const ev = await page.evaluate(() => window.__ev.filter(e => e[0] === 'info').map(e => e[1]));
+        const info = !!(await page.$('#cardInfoMask'));
+        out.push({ nm, okW, tgt, okR, ms, n: S.n, n0, info, ev: ev.join(',') });
+        if (info) await closeInfo(page);
+      }
+      const ok = out.every(o => o.okW && o.okR && o.n === o.n0 + 1 && !o.info && !o.ev && o.ms <= 900);
+      record('R2b', size, ok, out.map(o => `${o.nm}（點到 ${o.tgt}）：停住 ${o.okW} → ${o.okR ? o.ms + ' ms 換到第 ' + o.n + ' 手' : '沒放行'}、唱片資訊 ${o.info}${o.ev ? '（' + o.ev + '）' : ''}`).join('；'));
+    } catch (e) { record('R2b', size, false, 'error ' + (e && e.stack || e)); }
+    await ctx.close();
+  }
   // ---- R5 最後一手也停
   {
     const { ctx, page } = await newPage(browser, w, h);
