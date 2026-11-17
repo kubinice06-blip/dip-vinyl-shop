@@ -86,6 +86,7 @@ function contractBins() {
 let BINS = C0.bins, fakeBins = false;
 if (!BINS.feature) { fakeBins = true; BINS = contractBins(); }
 const C = Object.assign({}, C0, { cards: CARDS, bins: BINS });
+const COFF = Object.assign({}, C, { lot: Object.assign({}, C.lot, { on: false }) });   // 一檔貨關（第 B 波 SPEC-B §3.2 on:false＝舊補貨原封不動）
 
 // ---------------- helpers ----------------
 const card = id => { const c = C.cards[id]; if (!c) throw new Error('missing card ' + id); return c; };
@@ -584,14 +585,17 @@ section('7 每一件發燒配件（9 件）', () => {
   eq(many.p.relics.length, 3, 'relicMax 3 in a duel');
 });
 
-section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨〔契約：每區 4–6、FEATURE 2–3 史詩／傳奇、全店不重複〕、特價箱、包包、時機、v5 欄位）', () => {
+section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨〔契約：lot 關每區 4–6、FEATURE 2–3；一檔貨每區 3、FEATURE 2——史詩／傳奇、全店不重複〕、特價箱、包包、時機、v5 欄位）', () => {
   const seeds = QUICK ? 100 : 500;
   const seenBargain = { c: new Set(), o: new Set(), h: new Set() };
   const shopKeys = Object.keys(C.bins).filter(k => !C.bins[k].display);
   const seenStock = {}; for (const k of shopKeys) seenStock[k] = new Set();
+  // 第 B 波一檔貨（SPEC-B §3）：C.lot.on（預設）＝第 1 位架上每箱 show 3、FEATURE featureShow 2（從第 1 檔＝策展池）；lot 關＝舊補貨（每區 4–6、FEATURE 2–3）。兩條路都驗
+  for (const CC of [C, COFF]) {
+  const LON = EN.lotCfg(CC).on;
   for (let s = 1; s <= seeds; s++) for (const ace of TIERS) {
     const night = 1 + (s % 3);
-    const run = EN.newRun(C, s % 2 ? { seedKey: 'nr-' + s, runNo: night, ace } : { seedKey: 'nr-' + s, nightNo: night, ace });   // nightNo＝舊名照收
+    const run = EN.newRun(CC, s % 2 ? { seedKey: 'nr-' + s, runNo: night, ace } : { seedKey: 'nr-' + s, nightNo: night, ace });   // nightNo＝舊名照收
     ok(run.v === 5 && run.runNo === night && run.prologue === (night === 1 ? 'pending' : null), 'v5, runNo, prologue only on run 1');
     ok(run.order.length === 5 && new Set(run.order.slice(0, 3)).size === 3 && run.order.slice(0, 3).every(x => C.normals.includes(x)) && C.elites.includes(run.order[3]) && run.order[4] === C.boss, 'order: 3 normals, 1 elite, boss', run.order);
     eq([run.pos, run.round, run.idx, run.hp, run.maxHp, run.hpIn, run.level, run.xp, run.atk, run.def, run.levelUps, run.streak, run.bestStreak, run.checkpoints, run.taken, run.retryLeft],
@@ -604,7 +608,7 @@ section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨�
     const all = [];
     for (const k of shopKeys) {
       const st = run.shop.bins[k], pool = C.bins[k].pool, feat = k === 'feature';
-      const lo = feat ? 2 : 4, hi = feat ? 3 : 6;
+      const lo = LON ? (feat ? 2 : 3) : feat ? 2 : 4, hi = LON ? lo : feat ? 3 : 6;
       if (!(st.length >= lo && st.length <= hi && st.every(id => pool.includes(id)) && new Set(st).size === st.length)) ok(false, 'bin ' + k + ' ' + lo + '–' + hi + ' ⊂ pool', st.length); else pass++;
       if (st.some(id => run.bag.includes(id) || id === C.aces[ace] || C.bargain.pool.includes(id))) ok(false, 'bin ' + k + ' excludes owned／bargain'); else pass++;
       const rs = st.map(id => EN.rarity(card(id)));
@@ -618,11 +622,12 @@ section('8 newRun：500 種子 × 3 王牌（第 1 輪來客、這一輪的貨�
     // 店主 11-16 換牌：「色」＝bargainLane（峰值那軸、並列取後面那軸；舊 9 張沒有並列＝舊的 topAttr 數法）
     const n = { c: 0, o: 0, h: 0 }; run.shop.bargain.forEach(id => { const L = EN.bargainLane(card(id)); n[L]++; seenBargain[L].add(id); });
     ok(run.shop.bargain.length === 6 && n.c === 2 && n.o === 2 && n.h === 2, 'bargain 6 = 2 per color', n);
-    const ch = EN.bargainPolicy(run, C), r = EN.choose(run, C, ch);
+    const ch = EN.bargainPolicy(run, CC), r = EN.choose(run, CC, ch);
     ok(r.ok && run.bag.length === 7 && run.shop.bargain.length === 3 && run.shop.bargainPicked && run.taken === 7, 'bargainPick → bag 7, 3 left, 收了 7', r.error);
     ok(EN.canShop(run) === (night !== 1), 'can shop after the pick (prologue night: after the prologue)');
     ok(!EN.canBargainPick(run), 'pick only once');
     if (night === 1) { run.prologue = 'done'; ok(EN.canShop(run), 'prologue done → can shop'); }
+  }
   }
   for (const a of ATTRS) ok(seenBargain[a].size === C.bargain.pool.filter(id => EN.bargainLane(card(id)) === a).length, 'bargain color ' + a + ' shows every card of that color across seeds (舊 3／新 4)', [...seenBargain[a]]);
   if (fakeBins) {
@@ -2625,6 +2630,277 @@ section('24 組牌快取（第 B 波 WP2-0；SPEC-B §6.2、定稿 C5）：EN._n
     const id = ENEMY_IDS.filter(x => x !== 'man')[(s + pos) % (ENEMY_IDS.length - 1)];
     for (const main of [undefined, 'c', 'o', 'h']) both(() => EN.trialDeck(CV, id, pos, { seedKey: 'nocache-v' + s, runNo: 1, main, tier: name === 'tier 1' ? 1 : 0 }), name + ': trialDeck same with/without cache (seed ' + s + ', pos ' + pos + ', main ' + main + ')');
   }
+});
+
+section('25 第 B 波 WP2（SPEC-B §1、§2.2、§3、§4.3／4.5、§5.2、§6.3）：卡池 5,045 張與 catalogId、mapIds、一檔貨（配額、抽檔、輪流上架、買走、換輪、說情、序章、fixLot、jumpTo、lot on／off 配件特價箱相同、沒有 all 的退路）、想要清單加權、今日推薦 dailyPick／dailyReward', () => {
+  const sortObj = o => Object.keys(o).sort().reduce((m, k) => (m[k] = o[k], m), {});
+  const clone = o => JSON.parse(JSON.stringify(o));
+  const keysOf = CC => EN.SHOP_ORDER.filter(k => CC.bins[k] && !CC.bins[k].display);
+  const KEYS = keysOf(C), LT = EN.lotCfg(C), QT = EN.lotQuota(C), BG = new Set([].concat(C.bargain.pool, C.bargain.retired || []));
+  const showOf = k => k === 'feature' ? LT.featureShow : LT.show;
+  const overlap = (a, b) => a.filter(x => b.includes(x)).length;
+  const forceLose = run => { const f = EN.startFight(run, C, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } }); return EN.finishFight(run, C); };
+  // (a) 卡池（資料面；check-content poolProblems 也守）
+  { const CJ = require(path.join(HERE, '../cards.js')), LEG = require(path.join(HERE, '../tools/legacy-ids.json'));
+    const ids = Object.keys(C0.cards);
+    eq(ids.length, 5045, 'C.cards has 5,045 cards');
+    eq(ids.filter(id => { const c = C0.cards[id]; return !(c && c.id === id && id === C0.catalogId(c.artist, c.album)); }), [], 'every key === card.id === catalogId(artist, album)');
+    const core = ids.filter(id => !C0.cards[id].pool), pool = ids.filter(id => C0.cards[id].pool === true);
+    eq([core.length, pool.length], [368, 4677], 'core 368 + pool:true 4,677');
+    eq(pool.filter(id => { const c = C0.cards[id]; return !(c.bin && C0.bins[c.bin] && c.tune && !c.tier); }), [], 'pool cards: bin (a real bin), tune, no tier');
+    eq(Object.keys(CJ).length, 368, "require('cards.js') is still the core 368 (A4)"); ok(C0.cards !== CJ, 'C.cards is a new object, not the cards.js export');
+    ok(C0.poolLoaded === true, 'C.poolLoaded');
+    eq(sortObj(C0.legacyIds()), sortObj(LEG), 'C.legacyIds() = tools/legacy-ids.json'); eq(Object.keys(LEG).length, 368, 'legacy-ids 368');
+    let sub = [], tot = 0; const seen = new Set(), dup = [];
+    for (const k of Object.keys(C0.bins)) { const b = C0.bins[k]; if (!b.pool.every(id => b.all.includes(id))) sub.push(k); tot += b.all.length; for (const id of b.all) { if (seen.has(id)) dup.push(id); seen.add(id); } }
+    eq(sub, [], 'bins[k].pool ⊂ bins[k].all'); eq(dup, [], 'bins all are disjoint'); eq(tot, 4893, 'bins all total 4,893');
+    const fake = { cards: { 'x|1': { id: 'x|1' } }, bins: { jazz: { key: 'jazz', pool: ['x|1'] } } }; C0.deriveAll(fake);
+    eq(fake.bins.jazz.all, [], 'deriveAll: cards without bin → empty all (drawLot falls back to pool)'); }
+  // (b) mapIds（§2.2）：舊 slug 換掉（鍵與值、深走訪、對決狀態裡的卡複本）、含 | 的不動、查不到原樣、撞鍵用 merge、跑兩次一樣、不改傳進來的
+  { const L = C0.legacyIds(), olds = Object.keys(L), [o1, o2, o3] = olds, n1 = L[o1], n2 = L[o2];
+    const src = { v: 6, shelf: { [o1]: { own: true, src: 'run', at: 5 }, [n1]: { seen: true, at: 3 }, [o2]: { seen: true, at: 9 }, 'gone-card-x': { seen: true } },
+      want: [o2, n1, 'gone-card-x', 'boost_c', o3], bring: o1, lastAceId: o1, runs: [{ seeds: [o1], kept: o2, aces: [] }],
+      run: { bag: [o1, n2, 'fx-1'], shop: { bins: { jazz: [o1], [o2]: [] }, lot: { gone: [o3], cur: { jazz: 2 } } }, duel: { p: { draw: [{ id: o2, c: 1, o: 2, h: 3 }] }, e: { deckIds: [o1], sig: { id: o3 } } }, pos: 7, flag: true, none: null } };
+    const frozen = JSON.stringify(src);
+    const merge = (a, b) => ({ own: !!(a.own || b.own), src: a.own ? a.src : b.src, at: Math.min(a.at == null ? Infinity : a.at, b.at == null ? Infinity : b.at), seen: !!(a.seen || b.seen) });
+    const out = EN.mapIds(src, L, merge);
+    eq(JSON.stringify(src), frozen, 'mapIds does not mutate its input');
+    const str = JSON.stringify(out);
+    eq(olds.filter(o => str.includes('"' + o + '"')), [], 'no old slug left (keys and values, deep: run, duel, lot, runs)');
+    eq(out.shelf[n1], { own: true, src: 'run', at: 3, seen: true }, 'old + new key of the same card → merged (own, src of the owned, earliest at)');
+    eq([out.want, out.bring, out.lastAceId, out.runs[0].seeds, out.runs[0].kept, out.run.bag, out.run.duel.p.draw[0].id, out.run.duel.e.deckIds, out.run.duel.e.sig.id, out.run.shop.lot.gone],
+      [[n2, n1, 'gone-card-x', 'boost_c', L[o3]], n1, n1, [n1], n2, [n1, n2, 'fx-1'], n2, [n1], L[o3], [L[o3]]], 'values replaced everywhere; unknown ids／relic ids left alone');
+    ok(n2 in out.run.shop.bins && out.shelf['gone-card-x'] && out.run.pos === 7 && out.run.flag === true && out.run.none === null && out.v === 6, 'object keys replaced; unknown keys, numbers, booleans, null kept');
+    eq(EN.mapIds(out, L, merge), out, 'running it twice = once (re-entrant)');
+    eq(EN.mapIds({ a: [o1] }, L), { a: [n1] }, 'no merge given: works');
+    eq(EN.mapIds({ [o1]: 1, [n1]: 2 }, L), { [n1]: 2 }, 'no merge given: the later key wins');
+    eq([EN.mapIds('a|b', { 'a|b': 'x' }), EN.mapIds(o1, null), EN.mapIds([o1, 3, null], L)], ['a|b', o1, [n1, 3, null]], 'strings with | never mapped; no map → unchanged');
+    const pj = JSON.parse('{"__proto__": ["' + o1 + '"]}'), pm = EN.mapIds(pj, L);
+    ok(Object.getPrototypeOf(pm) === Object.prototype && JSON.stringify(pm) === '{"__proto__":["' + n1 + '"]}', 'a "__proto__" key stays a plain key'); }
+  // (c) 配額（§3.2 表；D5 用 engine 的 SHOP_ORDER 重算）
+  { const T = { feature: 6, jazz: 9, tw: 6, rock: 8, elec: 7, soul: 6, hiphop: 6, citypop: 5, classical: 6, world: 6, folk: 6, indierock: 6, indiepop: 6, blues: 5, new: 6, picks: 6 };
+    eq(sortObj(QT), sortObj(T), 'lotQuota = SPEC-B §3.2 table');
+    eq(Object.values(QT).reduce((a, b) => a + b, 0), 100, 'quota total 100');
+    const size = k => C.bins[k].all.length, others = KEYS.filter(k => k !== 'feature'), q = { feature: Math.min(LT.feature, size('feature')) };
+    let rest = LT.size - q.feature; for (const k of others) { q[k] = Math.min(LT.floor, size(k)); rest -= q[k]; }
+    const tot = others.reduce((a, k) => a + size(k), 0), sh = others.map((k, i) => ({ k, i, x: rest * size(k) / tot }));
+    let left = rest; for (const x of sh) { q[x.k] += Math.floor(x.x); left -= Math.floor(x.x); }
+    sh.sort((a, b) => (b.x % 1) - (a.x % 1) || a.i - b.i); for (const x of sh) if (left > 0) { q[x.k]++; left--; }
+    eq(sortObj(QT), sortObj(q), 'lotQuota = largest remainder in engine SHOP_ORDER (test recomputes)'); }
+  // (d) 第 1 檔＝策展池、第 2 檔起＝全卡池；全檔不重複；不含包包／王牌／特價（新舊）／頂點；稀有度合規；每位 47 張；相鄰兩位（沒買東西）
+  { const S = QUICK ? 60 : 300; let bad = 0, outside = 0, adjBad = 0, q5Bad = 0, seenAll = 0, firstBad = 0, n47 = 0;
+    for (let s = 1; s <= S; s++) {
+      const ace = TIERS[s % 3], run = EN.newRun(C, { seedKey: 'lot-' + s, runNo: 2, ace }), L1 = run.shop.lot;
+      if (s <= 20) eq(EN.newRun(C, { seedKey: 'lot-' + s, runNo: 2, ace }).shop, run.shop, 'same seed → same lot and shelf');
+      const check = (r, lot, srcK) => {
+        const all = Object.values(lot.bins).flat(), deny = new Set([C.aces[r.ace], ...r.bag]);
+        if (new Set(all).size !== all.length) { bad++; ok(false, 'lot has duplicates', s); }
+        for (const k of KEYS) { const st = lot.bins[k] || [], src = C.bins[k][srcK], feat = k === 'feature';
+          if (st.length !== Math.min(QT[k], st.length) || !st.every(id => src.includes(id) && !deny.has(id) && !BG.has(id) && !card(id).tier && (feat ? EN.FEATURE_RARITY : EN.SHELF_RARITY).includes(EN.rarity(card(id))))) { bad++; ok(false, 'lot bin ' + k + ' ⊂ ' + srcK + ', no bag／ace／bargain／apex, rarity ok', { s, k, st }); } }
+      };
+      ok(L1.no === 1 && L1.src === 'cur' && L1.gone.length === 0 && L1.want.length === 0 && L1.told.length === 0 && !L1.fb, 'round 1 lot: no 1, src cur, empty gone／want／told', { no: L1.no, src: L1.src });
+      check(run, L1, 'pool');
+      if (!KEYS.every(k => L1.bins[k].length === QT[k])) { firstBad++; ok(false, 'first lot fills every quota (curated pool is big enough)', s); }
+      // 第 1 位架上＝每箱前 show 張
+      const shelves = [clone(run.shop.bins)];
+      if (Object.values(run.shop.bins).flat().length === 47) n47++;
+      if (!KEYS.every(k => JSON.stringify(run.shop.bins[k]) === JSON.stringify(L1.bins[k].slice(0, showOf(k))))) ok(false, 'guest 1 shelf = first show cards of each bin', s);
+      for (let g = 2; g <= 5; g++) { EN.shelve(run, C); shelves.push(clone(run.shop.bins)); if (Object.values(run.shop.bins).flat().length === 47) n47++; }
+      for (const k of KEYS) {
+        for (let g = 1; g < 5; g++) { const o = overlap(shelves[g - 1][k], shelves[g][k]); if (QT[k] >= 2 * showOf(k) ? o !== 0 : o > 1) { (QT[k] >= 6 ? adjBad++ : q5Bad++); ok(false, 'adjacent guests overlap (bin ' + k + ', quota ' + QT[k] + ')', { s, g, o }); } }
+        if (new Set(shelves.flatMap(x => x[k])).size === QT[k]) seenAll++;
+      }
+      // 第 2 檔（jumpTo 第 6 位）：全卡池
+      const r2 = EN.jumpTo(clone(run), C, 6), L2 = r2.shop.lot;
+      ok(L2.no === 2 && L2.src === 'all' && L2.cur && L2.gone.length === 0, 'round 2 lot: no 2, src all', { no: L2.no, src: L2.src });
+      check(r2, L2, 'all');
+      if (Object.values(L2.bins).flat().some(id => !Object.values(C.bins).some(b => b.pool.includes(id)))) outside++;
+      ok(JSON.stringify(L2.bins) !== JSON.stringify(L1.bins), 'new round → new lot', s);
+    }
+    eq([bad, firstBad, adjBad, q5Bad], [0, 0, 0, 0], 'lot contents ok; adjacent guests 0 overlap (quota ≥ 6), ≤ 1 (quota 5)');
+    eq(n47, S * 5, 'every guest shelf = 47 records (bins 3, FEATURE 2)');
+    eq(seenAll, S * KEYS.length, 'five guests see the whole lot (every bin)');
+    ok(outside >= S * 0.95, 'round-2 lots carry cards outside the curated pool', outside); }
+  // (e) 買走 → gone、之後幾位都不再上架；lotLeft；advance：非輪首換架、輪首換檔、說情重打不換、序章打完＝newRun 那批
+  { let n = 0;
+    for (let s = 1; s <= (QUICK ? 10 : 40); s++) {
+      const run = EN.newRun(C, { seedKey: 'gone-' + s, runNo: 2, ace: TIERS[s % 3] }); EN.choose(run, C, EN.bargainPolicy(run, C)); run.money = 999999;
+      const key = KEYS[1 + (s % (KEYS.length - 1))], cid = run.shop.bins[key][0], left0 = EN.lotLeft(run, key);
+      const r = EN.choose(run, C, { type: 'buy', key, cardId: cid });
+      ok(r.ok && run.shop.lot.gone.includes(cid) && EN.lotLeft(run, key) === left0 - 1, 'buy → lot.gone, lotLeft −1', { e: r.error, key });
+      for (let g = 0; g < 6; g++) { EN.shelve(run, C); if (Object.values(run.shop.bins).flat().includes(cid)) ok(false, 'bought card never shelved again this lot', { s, g }); else n++; }
+      const before = clone(run.shop.bins), lot0 = clone(run.shop.lot);
+      ok(EN.lotLeft(run, key) === run.shop.lot.bins[key].filter(id => id !== cid && !run.bag.includes(id)).length, 'lotLeft = lot bin minus bag／gone');
+      // 說情重打：同一位、架子不動
+      const fl = forceLose(run);
+      if (run.pending && run.pending.type === 'retry') { EN.choose(run, C, { type: 'retry' }); eq(run.shop.bins, before, 'retry (same guest) → same shelf'); }
+      // 非輪首：換下一批、同一檔
+      const pos0 = run.pos, fw = forceWin(run); settleAll(run);
+      ok(run.pos === pos0 + 1 && run.idx === pos0 % 5 && JSON.stringify(run.shop.bins) !== JSON.stringify(before) && run.shop.lot.no === lot0.no && JSON.stringify(run.shop.lot.bins) === JSON.stringify(lot0.bins) && run.shop.lot.gone.includes(cid), 'next guest (not a new round) → next batch from the same lot', { pos: run.pos, fl: !!fl });
+      // 輪首（打完藏家）：新的一檔
+      EN.jumpTo(run, C, 5); forceWin(run); settleAll(run);
+      ok(run.pos === 6 && run.shop.lot.no === 2 && run.shop.lot.src === 'all' && run.shop.lot.gone.length === 0, 'after the boss → new lot (no 2, all, gone cleared)', { pos: run.pos, no: run.shop.lot.no });
+    }
+    ok(n >= (QUICK ? 60 : 240), 'gone checks', n);
+    // 序章那一趟：男子打完（advance 直接 return）第 1 位的架子＝newRun 那批
+    for (let s = 1; s <= 10; s++) {
+      const run = EN.newRun(C, { seedKey: 'prolot-' + s, runNo: 1, ace: TIERS[s % 3] }), sh0 = clone(run.shop.bins), lot0 = clone(run.shop.lot);
+      EN.choose(run, C, EN.bargainPolicy(run, C)); forceWin(run); settleAll(run);
+      ok(run.prologue !== 'pending' && run.pos === 1, 'prologue done, still guest 1', { p: run.prologue, pos: run.pos });
+      eq([run.shop.bins, run.shop.lot], [sh0, lot0], 'after the prologue: guest 1 shelf and the lot = the newRun batch (advance returns early)');
+    } }
+  // (f) fixLot：舊 run（沒有 lot）同一份重跑兩次一樣、這一位的 bins 不動、下一位不重上（配額 ≥6）；fixBins＋fixLot 同跑（缺 citypop、沒有 lot；B3、F3）
+  { let adj = 0;
+    for (let s = 1; s <= (QUICK ? 20 : 80); s++) {
+      // 舊補貨的 run（lot 關的 restock＝B 波以前的店）、存檔前可能已經買走一張；citypop 缺一半的存檔另外 delete 整箱
+      const old = EN.newRun(COFF, { seedKey: 'fixlot-' + s, runNo: 2 + (s % 2), ace: TIERS[s % 3] }); EN.choose(old, COFF, EN.bargainPolicy(old, COFF));
+      if (s % 3 === 0) EN.jumpTo(old, COFF, 6 + (s % 4));
+      if (s % 2) delete old.shop.bins.citypop;
+      ok(!old.shop.lot, 'lot-off run has no lot');
+      const twin = clone(old), pre = clone(old.shop.bins);
+      const fb = EN.fixBins(old, C), mid = clone(old.shop.bins), fl = EN.fixLot(old, C), now = clone(old.shop.bins);
+      ok(fb === !!(s % 2) && fl === true && old.shop.lot && old.shop.lot.no === old.round, 'fixBins (missing citypop) + fixLot (no lot) → changed', { fb, fl });
+      EN.fixBins(twin, C); EN.fixLot(twin, C); eq(twin, old, 'fixBins + fixLot deterministic (same save → same lot)');
+      ok(EN.fixLot(old, C) === false && EN.lotOk(old, C), 'fixLot on a fixed run → no change');
+      eq(now, mid, 'fixLot leaves this guest\'s shelf alone'); if (s % 2 === 0) eq(now, pre, 'no missing bin → shelf exactly as saved');
+      const lotAll = Object.values(old.shop.lot.bins).flat();
+      ok(new Set(lotAll).size === lotAll.length, 'fixLot: whole lot has no duplicates (shelf included)');
+      for (const k of KEYS) if (!old.shop.lot.bins[k].slice(0, now[k].length).every((id, i) => id === now[k][i]) || old.shop.lot.cur[k] !== now[k].length % Math.max(1, old.shop.lot.bins[k].length)) ok(false, 'fixLot: this guest\'s shelf goes first, cursor right after it', k);
+      EN.shelve(old, C);
+      for (const k of KEYS) { const o = overlap(now[k], old.shop.bins[k]); if (o !== 0 || old.shop.bins[k].length !== Math.min(showOf(k), old.shop.lot.bins[k].length - now[k].length)) ok(false, 'after fixLot the next guest gets records that were not on this guest\'s shelf', { s, k, o, q: QT[k], n: old.shop.bins[k].length }); else adj++; }
+    }
+    ok(adj >= (QUICK ? 300 : 1200), 'fixLot next-guest checks', adj);
+    // 形狀壞／不是這一輪的檔 → 重抽；want／told 不是陣列 → 補 []
+    const r = EN.newRun(C, { seedKey: 'fixlot-bad', runNo: 2, ace: 'hall' });
+    for (const [name, f] of [['no cur', L => { delete L.cur; }], ['gone not array', L => { L.gone = 'x'; }], ['other round', L => { L.no = 9; }], ['bin missing', L => { delete L.bins.jazz; }], ['cur negative', L => { L.cur.rock = -1; }]]) {
+      const x = clone(r); f(x.shop.lot); ok(!EN.lotOk(x, C) && EN.fixLot(x, C) === true && EN.lotOk(x, C), 'fixLot redraws a broken lot: ' + name); }
+    { const x = clone(r); delete x.shop.lot.want; x.shop.lot.told = null; ok(EN.lotOk(x, C) && EN.fixLot(x, C) === true && Array.isArray(x.shop.lot.want) && Array.isArray(x.shop.lot.told) && JSON.stringify(x.shop.lot.bins) === JSON.stringify(r.shop.lot.bins), 'fixLot: missing want／told → [] (lot kept)'); }
+    ok(EN.fixLot(clone(r), COFF) === false, 'fixLot does nothing with the lot off'); }
+  // (g) jumpTo 第 3 位＝正常走到第 3 位的架子（沒買東西時）；firstShow 旋鈕；lot 關＝舊補貨（每輪 62–93 張、平均約 78、沒有 lot）
+  { for (let s = 1; s <= 30; s++) {
+      const a = EN.newRun(C, { seedKey: 'jmp-' + s, runNo: 2, ace: TIERS[s % 3] }); EN.choose(a, C, EN.bargainPolicy(a, C));
+      const b = clone(a); EN.shelve(a, C); EN.shelve(a, C); EN.jumpTo(b, C, 3);
+      eq([b.shop.bins, b.shop.lot.cur], [a.shop.bins, a.shop.lot.cur], 'jumpTo(3) shelf = walked to guest 3');
+      const c = clone(a); EN.jumpTo(c, C, 13); const d = EN.jumpTo(clone(a), C, 11); EN.shelve(d, C); EN.shelve(d, C); eq(c.shop.bins, d.shop.bins, 'jumpTo(13) = jumpTo(11) + 2 guests');
+    }
+    const CFS = Object.assign({}, C, { lot: Object.assign({}, C.lot, { firstShow: 4 }) });
+    const f1 = EN.newRun(CFS, { seedKey: 'fs', runNo: 2, ace: 'hall' });
+    ok(KEYS.every(k => f1.shop.bins[k].length === (k === 'feature' ? 2 : 4)), 'firstShow 4: round 1 shelves 4 per bin (FEATURE 2)', Object.values(f1.shop.bins).map(x => x.length));
+    EN.jumpTo(f1, CFS, 6); ok(KEYS.every(k => f1.shop.bins[k].length === showOf(k)), 'firstShow: round 2 back to show');
+    let sum = 0, lo = 1e9, hi = 0; const S = 300;
+    for (let s = 1; s <= S; s++) { const r = EN.newRun(COFF, { seedKey: 'off-' + s, runNo: 2, ace: TIERS[s % 3] }); EN.jumpTo(r, COFF, 1 + 5 * (s % 3)); const n = Object.values(r.shop.bins).flat().length; sum += n; lo = Math.min(lo, n); hi = Math.max(hi, n); if (r.shop.lot) ok(false, 'lot off → no run.shop.lot'); }
+    ok(lo >= 62 && hi <= 93 && Math.abs(sum / S - 77.5) < 1.5, 'lot off: old restock, 62–93 records a round (mean ≈ 78)', { lo, hi, mean: sum / S });
+    { const r = EN.newRun(COFF, { seedKey: 'off-adv', runNo: 2, ace: 'hall' }); EN.choose(r, COFF, EN.bargainPolicy(r, COFF)); const b0 = clone(r.shop.bins);
+      const f = EN.startFight(r, COFF, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); EN.finishFight(r, COFF);
+      let h = 0; while (r.pending && h++ < 40) { if (!EN.choose(r, COFF, EN.runPolicy(r, COFF)).ok) break; }
+      ok(r.pos === 2, 'lot off: walked to guest 2'); eq(r.shop.bins, b0, 'lot off: same shelf all round (old behaviour)'); } }
+  // (h) 定稿 E2：lot on／off 同 seed 的配件、特價箱逐字相同（200 seed × 第 1–3 輪）；stockBins＝原本的箱子迴圈（測試自己寫一份）
+  { const oldStock = (run, CC) => {
+      const st = { rng: EN.fnv1a32(run.seedKey + '#' + run.runNo + '#shop#' + (run.round || 1)) || 1 }, E0 = CC.economy;
+      const taken = new Set([CC.aces[run.ace], ...run.bag, ...C.bargain.pool, ...(C.bargain.retired || [])].filter(Boolean)), out = {};
+      const span = lohi => lohi[0] + Math.floor(EN.rng(st) * (lohi[1] - lohi[0] + 1));
+      for (const k of keysOf(CC)) { const feat = k === 'feature', okR = feat ? EN.FEATURE_RARITY : EN.SHELF_RARITY;
+        const pool = CC.bins[k].pool.filter((id, i, a) => a.indexOf(id) === i && !taken.has(id) && CC.cards[id] && okR.includes(EN.rarity(CC.cards[id])));
+        EN.shuffle(pool, st); out[k] = pool.slice(0, Math.min(span(feat ? E0.featureStock : E0.stock), pool.length)); out[k].forEach(id => taken.add(id)); }
+      return out; };
+    let same = 0, sb = 0;
+    for (let s = 1; s <= (QUICK ? 50 : 200); s++) for (let rd = 1; rd <= 3; rd++) {
+      const o = { seedKey: 'e2-' + s, runNo: 1 + (s % 3), ace: TIERS[s % 3] };
+      const a = EN.jumpTo(EN.newRun(C, o), C, 5 * rd - 4), b = EN.jumpTo(EN.newRun(COFF, o), COFF, 5 * rd - 4);
+      if (JSON.stringify([a.shop.relics, a.shop.bargain, a.rng]) === JSON.stringify([b.shop.relics, b.shop.bargain, b.rng])) same++; else ok(false, 'lot on／off: same counter relics, bargain crate, run.rng', { s, rd });
+      if (JSON.stringify(b.shop.bins) === JSON.stringify(oldStock(b, COFF))) sb++; else ok(false, 'lot off: shop.bins = the old bins loop', { s, rd });
+      if (rd === 1 && JSON.stringify(EN.stockBins(a, C, { rng: EN.fnv1a32(a.seedKey + '#' + a.runNo + '#shop#1') || 1 })) !== JSON.stringify(b.shop.bins)) ok(false, 'stockBins (exported) = lot-off shelf', s);
+    }
+    eq([same, sb], [(QUICK ? 50 : 200) * 3, (QUICK ? 50 : 200) * 3], 'lot on／off: relics + bargain identical; lot off bins = old loop'); }
+  // (i) 定稿 E1／G3-1：箱子沒有 all → 第 2 檔起退回 pool（不空、lotWarn、lot.fb）；假箱子有重疊時全檔照樣不重複
+  { for (const k of Object.keys(EN.lotWarn)) delete EN.lotWarn[k];
+    const BJ = Object.assign({}, C.bins, { jazz: Object.assign({}, C.bins.jazz) }); delete BJ.jazz.all;
+    const CJ = Object.assign({}, C, { bins: BJ });
+    const r = EN.jumpTo(EN.newRun(CJ, { seedKey: 'nofull', runNo: 2, ace: 'hall' }), CJ, 6), L2 = r.shop.lot;
+    ok(L2.no === 2 && L2.src === 'all' && L2.bins.jazz.length === EN.lotQuota(CJ).jazz && EN.lotQuota(CJ).jazz >= LT.floor && L2.bins.jazz.every(id => C.bins.jazz.pool.includes(id)) && EN.lotWarn.jazz === true && JSON.stringify(L2.fb) === '["jazz"]', 'no jazz.all → round-2 jazz falls back to pool (not empty), lotWarn.jazz, lot.fb', { n: L2.bins.jazz.length, fb: L2.fb, w: EN.lotWarn });
+    ok(r.shop.bins.jazz.length === showOf('jazz') && L2.bins.rock.some(id => !C.bins.rock.pool.includes(id)), 'other bins still draw from all');
+    ok(Object.keys(EN.lotWarn).length === 1, 'only jazz warned', EN.lotWarn);
+    const BF = {}; for (const k of Object.keys(C.bins)) { BF[k] = Object.assign({}, C.bins[k]); delete BF[k].all; }
+    BF.new.pool = BF.new.pool.concat(C.bins.jazz.pool.slice(0, 6), C.bins.rock.pool.slice(0, 6));   // 新進跟分類箱重疊（engine.test 假箱子的形狀）
+    const CF = Object.assign({}, C, { bins: BF }); C0.deriveAll({ cards: {}, bins: BF });
+    ok(KEYS.every(k => Array.isArray(BF[k].all) && BF[k].all.length === 0), 'deriveAll on cards without bin → every all empty');
+    for (let s = 1; s <= 30; s++) { const x = EN.jumpTo(EN.newRun(CF, { seedKey: 'fbk-' + s, runNo: 2, ace: TIERS[s % 3] }), CF, 6), all = Object.values(x.shop.lot.bins).flat();
+      if (!(new Set(all).size === all.length && KEYS.every(k => x.shop.lot.bins[k].length > 0 && x.shop.lot.bins[k].every(id => BF[k].pool.includes(id))) && x.shop.lot.fb.length === KEYS.length)) ok(false, 'all bins without all: fall back to pool, nothing empty, no duplicates across overlapping bins', s); else pass++; }
+    for (const k of Object.keys(EN.lotWarn)) delete EN.lotWarn[k]; }
+  // (j) 想要清單（§5.2；定稿 D6）
+  { const elig = k => C.bins[k].all.filter(id => !BG.has(id) && !card(id).tier && (k === 'feature' ? EN.FEATURE_RARITY : EN.SHELF_RARITY).includes(EN.rarity(card(id))) && !Object.values(C.aces).includes(id));
+    const lotOf = (sk, rn, rd, want, bag) => EN.drawLot({ seedKey: sk, runNo: rn, round: rd, ace: 'hall', bag: bag || [], want }, C);
+    // 單張：每檔進來 ≈ 35%；中了排在那一箱第一張
+    const X = elig('rock')[17], S1 = 2000; let hit = 0, firstOk = 0;   // 抽檔很便宜（部分洗牌），--quick 也照 SPEC 的 2,000／400 檔
+    for (let s = 1; s <= S1; s++) { const L = lotOf('want1-' + s, 1 + (s % 3), 2 + (s % 4), [X]); if (L.want.includes(X)) { hit++; if (L.bins.rock[0] === X) firstOk++; } }
+    ok(Math.abs(hit / S1 - LT.wantP) <= 0.03, 'one wanted card: in the lot ' + (100 * hit / S1).toFixed(1) + '% of lots (wantP 35% ± 3)', hit / S1);
+    eq(firstOk, hit, 'a wanted card that hits goes first in its bin (next guest sees it)');
+    // 清單 30 張（全在來源池、每箱 2 張）、400 檔：每張比例在平均 ±5 點（不偏任何位置）、平均 ≈ 10%、一檔最多 3 張
+    const W30 = KEYS.filter(k => k !== 'feature').flatMap(k => elig(k).filter((id, i) => i % 37 === 5).slice(0, 2));
+    eq(W30.length, 30, '30 wanted cards (2 per bin)');
+    const cnt = Object.fromEntries(W30.map(id => [id, 0])), S2 = 400; let over = 0;
+    for (let s = 1; s <= S2; s++) { const L = lotOf('want30-' + s, 1 + (s % 2), 2 + (s % 5), W30); if (L.want.length > LT.wantMax) over++; for (const id of L.want) cnt[id]++; }
+    const rates = W30.map(id => cnt[id] / S2), mean = rates.reduce((a, b) => a + b, 0) / rates.length;
+    eq(over, 0, 'at most wantMax (3) wanted cards per lot');
+    ok(Math.abs(mean - 0.10) <= 0.012, '30-card list: mean ' + (100 * mean).toFixed(1) + '% per card per lot (≈ 10%)', mean);
+    ok(rates.every(x => Math.abs(x - mean) <= 0.05), '30-card list: every card within mean ± 5 points (order reshuffled every lot; not biased to the newest)', rates.map(x => +(100 * x).toFixed(1)));
+    ok(Math.abs(rates.slice(0, 10).reduce((a, b) => a + b, 0) / 10 - rates.slice(20).reduce((a, b) => a + b, 0) / 10) <= 0.03, 'oldest 10 vs newest 10 of the list get the same share');
+    console.log('     want list: 1 card ' + (100 * hit / S1).toFixed(1) + '% of ' + S1 + ' lots; 30 cards ' + (100 * mean).toFixed(1) + '% each (min ' + (100 * Math.min(...rates)).toFixed(1) + '、max ' + (100 * Math.max(...rates)).toFixed(1) + '%) over ' + S2 + ' lots');
+    // 頂點、包包裡的、特價箱的、不在任何箱的：不擲、不上
+    const APX = Object.keys(C.cards).filter(id => C.cards[id].tier).slice(0, 3), BAGW = elig('jazz').slice(0, 3);
+    for (let s = 1; s <= 200; s++) { const L = lotOf('wantx-' + s, 2, 2, APX.concat(BAGW, C.bargain.pool.slice(0, 3), ['nope|nope']), BAGW);
+      if (L.want.length || Object.values(L.bins).flat().some(id => APX.includes(id) || BAGW.includes(id))) ok(false, 'apex／bag／bargain／unknown in the want list never enter the lot', s); else pass++; }
+    // 想要清單不影響洗牌：有清單的檔＝中了的排前面＋沒清單那檔扣掉它們（每一箱）
+    let shuf = 0;
+    for (let s = 1; s <= 200; s++) { const a = lotOf('wsh-' + s, 2, 3, W30), b = lotOf('wsh-' + s, 2, 3, []);
+      for (const k of KEYS) { const mine = a.bins[k].filter(id => a.want.includes(id)), exp = mine.concat(b.bins[k].filter(id => !mine.includes(id)).slice(0, b.bins[k].length - mine.length));
+        if (JSON.stringify(a.bins[k]) === JSON.stringify(exp)) shuf++; else ok(false, 'want list does not reshuffle the bin', { s, k }); } }
+    eq(shuf, 200 * KEYS.length, 'want list leaves every bin\'s shuffle as it was');
+    // newRun 收 o.want（字串、去重、留最後 200）；中了 → 第 1 位就上架
+    const nr = EN.newRun(C, { seedKey: 'wnr', runNo: 2, ace: 'hall', want: [3, 'a', 'a', null].concat(Array.from({ length: 250 }, (_, i) => 'w' + i)) });
+    ok(nr.want.length === 200 && nr.want[199] === 'w249' && !nr.want.includes(3) && new Set(nr.want).size === 200, 'newRun o.want: strings, dedup, last 200', nr.want.slice(0, 3));
+    eq(EN.newRun(C, { seedKey: 'wnr', runNo: 2, ace: 'hall' }).want, [], 'newRun without want → []');
+    let shown = 0, tot = 0;
+    for (let s = 1; s <= 200; s++) { const r = EN.jumpTo(EN.newRun(C, { seedKey: 'wshow-' + s, runNo: 2, ace: 'hall', want: W30 }), C, 6 + (s % 2) * 0); for (const id of r.shop.lot.want) { tot++; if (Object.values(r.shop.bins).flat().includes(id)) shown++; } }
+    ok(tot > 0 && shown === tot, 'wanted cards that hit are on the very next shelf', { shown, tot }); }
+  // (k) 今日推薦 dailyPick（§4.3）
+  { const ids = Object.keys(C0.cards).sort(), NON = ids.filter(id => !C0.cards[id].tier), ACES = new Set(Object.values(C0.aces));
+    const known = new Set(NON.filter((id, i) => i % 3 === 0)), owned = new Set([...known].filter((id, i) => i % 2 === 0));
+    const base = { known: id => known.has(id), owned: id => owned.has(id), want: [], tunes: [] };
+    const days = Array.from({ length: QUICK ? 60 : 200 }, (_, i) => '2026-' + String(1 + Math.floor(i / 28)).padStart(2, '0') + '-' + String(1 + (i % 28)).padStart(2, '0'));
+    const picks = days.map(day => EN.dailyPick(C0, Object.assign({ day }, base)));
+    eq(days.slice(0, 20).map(day => EN.dailyPick(C0, Object.assign({ day }, base))), picks.slice(0, 20), 'same day, same input → same pick');
+    ok(new Set(picks).size >= days.length * 0.9, 'different days → different picks', new Set(picks).size);
+    eq(picks.filter(id => !id || C0.cards[id].tier || BG.has(id) || ACES.has(id) || known.has(id)), [], 'never apex／bargain／ace／known');
+    ok(EN.dailyPick(C0, { day: '2026-11-16', known: ids, owned: [], want: [] }) === null, 'no candidate → null');
+    const K1 = [...known].find(id => !owned.has(id) && !BG.has(id) && !ACES.has(id)), O1 = [...owned].find(id => !BG.has(id) && !ACES.has(id));
+    eq(EN.dailyPick(C0, { day: '2026-11-16', known: () => true, owned: id => owned.has(id), want: [K1] }), K1, 'a wanted card you know but do not own can be picked');
+    eq(EN.dailyPick(C0, { day: '2026-11-16', known: () => true, owned: id => owned.has(id), want: [O1] }), null, 'a wanted card you own is never picked');
+    eq(EN.dailyPick(C0, { day: '2026-11-16', known: { [NON[0]]: { seen: true } }, owned: {}, want: [] }) !== NON[0], true, 'known／owned also take {id: entry} and arrays');
+    // 權重：想要 ×5、頻率 ×3（統計上明顯偏高）
+    const W50 = NON.filter(id => !known.has(id) && !BG.has(id) && !ACES.has(id)).filter((id, i) => i % 61 === 7).slice(0, 50);
+    const cand = NON.filter(id => !known.has(id) && !BG.has(id) && !ACES.has(id));
+    const wp = days.map(day => EN.dailyPick(C0, Object.assign({}, base, { day, want: W50 }))), wHit = wp.filter(id => W50.includes(id)).length / days.length;
+    const wExp = 5 * W50.length / (cand.length + 4 * W50.length);
+    ok(wHit >= wExp * 0.5 && wHit > 2.5 * W50.length / cand.length, 'want ×5: wanted cards picked ' + (100 * wHit).toFixed(1) + '% of days (×5 ≈ ' + (100 * wExp).toFixed(1) + '%, ×1 ≈ ' + (100 * W50.length / cand.length).toFixed(1) + '%)', wHit);
+    const TU = ['calm', 'boil'], share = cand.filter(id => TU.includes(C0.cards[id].tune)).length / cand.length;
+    const tp = days.map(day => EN.dailyPick(C0, Object.assign({}, base, { day, tunes: TU }))), tHit = tp.filter(id => TU.includes(C0.cards[id].tune)).length / days.length;
+    console.log('     dailyPick: want ×5 ' + (100 * wHit).toFixed(1) + '% (×1 ' + (100 * W50.length / cand.length).toFixed(1) + '%)；tunes ×3 ' + (100 * tHit).toFixed(1) + '% (×1 ' + (100 * share).toFixed(1) + '%) over ' + days.length + ' days');
+    ok(tHit > Math.min(0.95, 1.6 * share), 'tunes ×3: picks in the 2 tunes ' + (100 * tHit).toFixed(1) + '% (×1 ≈ ' + (100 * share).toFixed(1) + '%, ×3 ≈ ' + (100 * 3 * share / (1 + 2 * share)).toFixed(1) + '%)', tHit); }
+  // (l) dailyReward（§4.5）：3 張不同、經冷硬各一（topAttr）、史詩／傳奇、沒擁有、非頂點／特價／王牌、同 n 同結果、跟日期無關
+  { const ACES = new Set(Object.values(C0.aces)); let okN = 0;
+    for (let n = 0; n < (QUICK ? 20 : 100); n++) {
+      const own = new Set(Object.keys(C0.cards).filter((id, i) => i % (3 + (n % 5)) === 0)), out = EN.dailyReward(C0, { n, owned: id => own.has(id) });
+      const a = out.map(id => EN.topAttr(C0.cards[id])).sort().join('');
+      if (out.length === 3 && new Set(out).size === 3 && a === 'cho' && out.every(id => !own.has(id) && !C0.cards[id].tier && !BG.has(id) && !ACES.has(id) && EN.FEATURE_RARITY.includes(EN.rarity(C0.cards[id])))) okN++;
+      else ok(false, 'dailyReward: 3 different, one per colour, epic／legendary, not owned', { n, out, a });
+      eq(EN.dailyReward(C0, { n, owned: [...own] }), out, 'dailyReward: same n → same three (owned as array too)');
+    }
+    ok(okN === (QUICK ? 20 : 100), 'dailyReward ok', okN);
+    ok(JSON.stringify(EN.dailyReward(C0, { n: 0 })) !== JSON.stringify(EN.dailyReward(C0, { n: 1 })), 'different n → different three');
+    const onlyH = Object.assign({}, C0, { cards: Object.fromEntries(Object.entries(C0.cards).filter(([id, c]) => EN.topAttr(c) === 'h')) });
+    const oh = EN.dailyReward(onlyH, { n: 3 });
+    ok(oh.length === 3 && oh.every(id => EN.topAttr(C0.cards[id]) === 'h'), 'a colour with no cards → filled from the others', oh); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

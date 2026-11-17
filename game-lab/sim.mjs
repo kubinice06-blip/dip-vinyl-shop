@@ -2,6 +2,7 @@
 //   每一趟照 run API 跑到輸（newRun → 特價箱挑三張 → 序章男子 → 第 1 位 → … 最多 --cap 位）；規則、曲線、升級、商店、獎勵一行都不在這裡重寫，
 //   選擇全用引擎自己的 bargainPolicy／runPolicy（獎勵、升級＝harness MIX、說情）／shopPolicy('smart')。
 // Usage: node game-lab/sim.mjs [--n 2000] [--mode all|runs|man] [--flows smart,none,bare] [--gate smart] [--cap 300] [--json out.json]
+//                              [--lot off] [--browse 16] [--seeds k:rarity] [--want N]
 //                              [--policies thoughtful,novice,random,high,formula,mirrorHint,oracle] [--tier k]
 //                              [--set mercy=false] [--patch '{"trial":{"curve":{"atk":{"add":1}}}}'] [--data <dir with cards.js and bins.js>]
 //                              [--apex [--apex-ace <頂點卡 id>] [--apex-params '{"<能力 id>":{"n":3}}']] [--ace hall|pearl|heresy]
@@ -18,6 +19,17 @@
 //            --set bagMax=8＝舊規則對照（choose／策略走舊路、收音機包包滿賣最弱的；JSON 跟改版前逐字相同）。不限時 JSON 的 end 多 bagN（最後幾張）、bagMaxN（最多幾張）、sold（賣掉幾張）
 //   第 A 波（店主 11-16）：賣牌只走櫃檯（engine choose sell；收獎勵、買唱片不能順手丟／賣）＝shopPolicy 的 thinPolicy；老闆送的、種子也會交還（$0）。
 //            客人主屬性（engine roundMains／mainAt）：收音機挑格照 guestDef（換牌、加星後、照主屬性組的牌）。多印一張「客人出牌三色、放水、交還老闆」表（JSON 每格多 eplay）
+//   第 B 波（SPEC-B §3.8、§5.4、§7）：架上唱片＝一檔貨（engine drawLot／shelve；C.lot.on，預設開）。開著時多印一張「一檔貨」表（smart 流程：每輪看到幾張不同的、
+//            每位架上幾張、架上剋下一位主屬性那軸 ≥4 星幾張〔中位／最小／0 張的比例〕、每趟從架上買幾張、架上稀有度），JSON 的 smart 格多 lot、report 多 lot（C.lot）
+//   --lot off  ＝--patch '{"lot":{"on":false}}'（今天的每輪補貨＋新卡池；對照組、緊急關閉）。關著時不印一檔貨表、JSON 不多欄位＝跟一檔貨之前的 sim 逐字相同
+//   --browse k 一檔貨每位換貨，真人要每位都打開抽屜：smart 每位客人前只「打開」k 箱（FEATURE＋其他箱裡 hash01(seedKey#runNo#pos#browse#箱) 最小的 k−1 箱）；
+//              shopPolicy 只看得到那幾箱、買的動作照常做在真的 run 上。預設 16＝全看（＝舊定義，輸出不變）；k=4＝一檔貨效益的下緣（SPEC-B §7.3 D25）
+//   --seeds k:rarity  每一趟開局帶 k 張種子（CFG.seedMax 以內）＝稀有度 rarity 的非頂點、非特價、非王牌卡裡 peak 最高、同分 hash01('seeds#'+趟+'#'+id) 最小的 k 張
+//              （主站帶卡／今日推薦獎勵的上限；只量、不是門檻）。種子只在不打序章的那一趟有效（engine 裁定 2）→ 這個旗標下每一趟都不打序章；
+//              對照組＝--seeds 0:<rarity>（同樣不打序章、沒有種子）
+//   --want N   每一趟的想要清單（run.want）＝有箱子的非頂點卡裡 hash01('want#'+趟+'#'+id) 最小的 N 張（固定、跟策略無關）；多印「想要清單」表
+//              （第 1 檔／第 2 檔起分開：每檔進來幾張、每張每檔進來的機率〔÷N、÷那一檔來源裡合規的〕、每趟架上看到幾次、每趟從架上買到幾張）
+//   --data     換完 C.cards／C.bins 後叫 C.deriveAll(C)（箱子的 all）；箱子沒有 all → 第 2 檔起退回策展池，結尾印警告（engine lotWarn）
 //   --n      趟數／格（序章男子 S5 也是 N 場）　--cap 一趟最多打到第幾位（打完還沒輸＝censored，深度記成 cap）
 //   --flows  smart＝真的玩法：獎勵照 runPolicy（挑唱片／配件）、每位客人前照 shopPolicy('smart') 買；
 //            ＋收音機（v5 第六項第二期）：每輪第一次能買東西時轉一次（radioSmart：挑抽卡池裡「剋下一位主屬性那軸」平均星最高的那格），買得起就買（照原價；
@@ -116,10 +128,27 @@ if (arg('data', null)) {
   for (const id of Object.keys(C.cards)) if (!cards[id]) console.error('--data: cards.js 沒有 ' + id + '（沿用本地的）');
   C.cards = Object.assign({}, C.cards, cards);
   C.bins = {}; for (const k of Object.keys(B)) if (B[k] && Array.isArray(B[k].pool)) C.bins[k] = Object.assign({}, B[k]);
+  C.deriveAll(C);                                                         // 箱子的 all（第 2 檔起的來源）照換過的卡重推；推不出來＝engine 退回 pool＋lotWarn（結尾印警告）
   console.log('--data ' + dir + '：卡 ' + Object.keys(C.cards).length + ' 張、箱子 ' + Object.keys(C.bins).join(' '));
 }
 const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) && t[k] && typeof t[k] === 'object') deepMerge(t[k], s[k]); else t[k] = s[k]; } return t; };
+// 第 B 波旗標（見檔頭）：--lot off＝--patch '{"lot":{"on":false}}'（先套，--patch 可以再蓋）
+const LOT_ARG = arg('lot', null);
+if (LOT_ARG != null && !['on', 'off'].includes(LOT_ARG)) { console.error('--lot on|off'); process.exit(2); }
+if (LOT_ARG) deepMerge(C, { lot: { on: LOT_ARG === 'on' } });
 if (arg('patch', null)) deepMerge(C, JSON.parse(arg('patch')));
+const LOT_ON = !!EN.lotCfg(C).on;
+const BROWSE = +arg('browse', 16);
+if (!(Number.isInteger(BROWSE) && BROWSE >= 1)) { console.error('--browse k（1–16 的整數；16＝全看）'); process.exit(2); }
+const SEEDS_ARG = arg('seeds', null);
+let SEEDS = null;
+if (SEEDS_ARG != null) {
+  const m = /^(\d+):([a-z]+)$/.exec(SEEDS_ARG);
+  if (!m || !EN.RARITY.includes(m[2]) || m[2] === 'apex' || +m[1] > CFG.seedMax) { console.error('--seeds k:rarity（k 0–' + CFG.seedMax + '、rarity ' + EN.RARITY.filter(r => r !== 'apex').join('|') + '）'); process.exit(2); }
+  SEEDS = { k: +m[1], rarity: m[2] };
+}
+const WANT_N = +arg('want', 0);
+if (!(Number.isInteger(WANT_N) && WANT_N >= 0)) { console.error('--want N（非負整數）'); process.exit(2); }
 
 const ALL_POLS = ['thoughtful', 'novice', 'random', 'high', 'formula', 'mirrorHint', 'oracle'];
 const POLS = arg('policies', ALL_POLS.join(',')).split(',').filter(Boolean);
@@ -191,13 +220,76 @@ function radioSmart(run, R) {
   ok(EN.choose(run, C, ch), 'radio buy', ch); R.bought++; R.spent += price;
 }
 
+// ---------------- 第 B 波：--want／--seeds／--browse 的輸入（每一趟固定、跟策略與流程無關＝同一批客人） ----------------
+// --want N：有箱子的非頂點卡裡 hash01('want#'+趟+'#'+id) 最小的 N 張（照雜湊由小到大＝清單順序；engine 每檔自己重洗擲的順序）
+const WANT_SRC = WANT_N ? Object.keys(C.cards).filter(id => { const c = C.cards[id]; return c && c.bin && C.bins[c.bin] && !c.tier; }) : [];
+const WANT_MEMO = new Map();
+function wantFor(i) {
+  if (WANT_MEMO.has(i)) return WANT_MEMO.get(i);
+  const w = WANT_SRC.map(id => ({ id, h: EN.hash01('want#' + i + '#' + id) })).sort((a, b) => a.h - b.h || (a.id < b.id ? -1 : 1)).slice(0, WANT_N).map(x => x.id);
+  WANT_MEMO.set(i, w); return w;
+}
+// --seeds k:rarity：稀有度＝rarity 的非頂點、非特價（新舊）、非王牌卡裡 peak 最高、同分 hash01('seeds#'+趟+'#'+id) 最小的 k 張（engine canSeed 也要過）
+const SEED_SRC = SEEDS ? (() => {
+  const bg = new Set([].concat((C.bargain || {}).pool || [], (C.bargain || {}).retired || [])), aces = new Set(Object.values(C.aces || {}));
+  return Object.keys(C.cards).filter(id => { const c = C.cards[id]; return c && !c.tier && !bg.has(id) && !aces.has(id) && EN.rarity(c) === SEEDS.rarity && EN.canSeed(C, id); })
+    .map(id => ({ id, p: EN.peak(C.cards[id]) }));
+})() : [];
+const SEED_MEMO = new Map();
+function seedsFor(i) {
+  if (!SEEDS || !SEEDS.k) return [];
+  if (SEED_MEMO.has(i)) return SEED_MEMO.get(i);
+  const s = SEED_SRC.map(x => ({ id: x.id, p: x.p, h: EN.hash01('seeds#' + i + '#' + x.id) })).sort((a, b) => b.p - a.p || a.h - b.h || (a.id < b.id ? -1 : 1)).slice(0, SEEDS.k).map(x => x.id);
+  SEED_MEMO.set(i, s); return s;
+}
+// --browse k：這一位只「打開」FEATURE＋其他箱裡 hash01(seedKey#runNo#pos#browse#箱) 最小的 k−1 箱。回 run 的淺複本（shop 也淺複製、bins 只留那幾箱、照原本箱子順序）；
+//   shopPolicy 自己會 clone，不改真的 run。打開的箱 ≥ 全部＝回原 run（k=16 不走這裡＝輸出跟沒有這個旗標逐字相同）
+function browseKeys(run) {
+  const keys = Object.keys(run.shop.bins), rest = keys.filter(k => k !== 'feature');
+  const open = new Set(rest.map(k => ({ k, h: EN.hash01(run.seedKey + '#' + run.runNo + '#' + run.pos + '#browse#' + k) })).sort((a, b) => a.h - b.h || (a.k < b.k ? -1 : 1)).slice(0, Math.max(0, BROWSE - 1)).map(x => x.k));
+  if (keys.includes('feature')) open.add('feature');
+  return keys.filter(k => open.has(k));
+}
+function browseView(run) {
+  const keys = browseKeys(run);
+  if (keys.length >= Object.keys(run.shop.bins).length) return run;
+  const bins = {}; for (const k of keys) bins[k] = run.shop.bins[k];
+  return Object.assign({}, run, { shop: Object.assign({}, run.shop, { bins }) });
+}
+// 一檔貨表（smart 流程）：這一位架上的統計。T＝剋下一位主屬性那軸（＝shopPolicy 的算法：換牌、加星後的牌單＋他帶的王牌、deckMain）
+const SHELF_RAR = ['common', 'rare', 'uncommon', 'epic', 'legendary'];
+function shelfAxis(run) {
+  const id = run.order[run.idx], E = C.enemies[id]; if (!E) return null;
+  const g = EN.guestDef(run, C, id, run.pos);
+  const deck = g.deck.slice(); if (g.ace) deck.push(g.ace);
+  return EN.COUNTER_OF[EN.deckMain(deck, E.taste)];
+}
+// 想要清單：這一檔這張想要的卡合不合規（在這一檔的來源、稀有度對、不是特價、不在包包、不是王牌）＝engine drawLot 擲得到的
+const SRC_SET = new WeakMap();
+const srcSet = arr => { let s = SRC_SET.get(arr); if (!s) { s = new Set(arr); SRC_SET.set(arr, s); } return s; };
+const BARGAIN_ALL = new Set([].concat((C.bargain || {}).pool || [], (C.bargain || {}).retired || []));
+function wantEligible(run, lot, id) {
+  const c = C.cards[id]; if (!c || !c.bin || c.tier) return false;
+  const b = C.bins[c.bin]; if (!b || b.display) return false;
+  const arr = lot.src === 'cur' || (lot.fb || []).includes(c.bin) ? (b.pool || []) : (b.all || []);
+  if (!srcSet(arr).has(id)) return false;
+  if (!(c.bin === 'feature' ? EN.FEATURE_RARITY : EN.SHELF_RARITY).includes(EN.rarity(c))) return false;
+  if (BARGAIN_ALL.has(id) || run.bag.includes(id) || id === (C.aces || {})[run.ace] || id === run.aceId) return false;
+  return true;
+}
+
 // ---------------- one whole run through the real run API ----------------
 //   A＝這一格的每一位累計（到過、死、場次、勝、首戰、手數、打到第 6 手、比聲望條、KO）
 function runOnce(pol, flow, i, A) {
   const seedKey = 'sim5-' + i;
   const o0 = Object.assign({ seedKey, runNo: 1, ace: ACE_T || TIERS[i % 3], prologue: flow !== 'bare', tier: TIER }, APEX_ACE ? { ace: C.cards[APEX_ACE].tier, aceId: APEX_ACE } : {});
   if (UNLOCK) Object.assign(o0, { unlocked: [], start: o0.ace }, APEX ? { apexOwned: APEX_ACE ? [APEX_ACE] : [] } : {});   // --unlock：新玩家（只解鎖這一派）
+  if (WANT_N) o0.want = wantFor(i);
+  if (SEEDS) { o0.prologue = false; o0.seeds = seedsFor(i); }           // 種子只在不打序章的那一趟有效
   const run = EN.newRun(C, o0);
+  const LS = A.lt || null, WS = A.wt || null, wantSet = WS ? new Set(run.want) : null;
+  let lotRef = null, lotRec = null, shelfPos = 0;
+  const closeLot = () => { if (LS && lotRec) { LS.rounds.push({ no: lotRec.no, seen: lotRec.seen.size, seenF: lotRec.seenF.size, guests: lotRec.guests }); } lotRec = null; };
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0, bagMaxN = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
@@ -226,9 +318,37 @@ function runOnce(pol, flow, i, A) {
       const ch = EN.runPolicy(run, C); ok(EN.choose(run, C, ch), 'runPolicy', ch); continue;
     }
     if (step !== 'fight' && step !== 'prologue') throw new Error('unexpected step ' + step);
-    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(run, C, 'smart', NO_THIN ? { thin: false } : undefined)) {
+    if ((LS || WS) && step === 'fight' && run.shop && run.shop.lot) {     // 一檔貨表／想要清單表（smart、lot 開）：每一位第一次走到時記架子（說情重打不重記）
+      const lot = run.shop.lot;
+      if (lot !== lotRef) {                                             // 新的一檔（newRun、每輪開頭 restock）
+        closeLot(); lotRef = lot;
+        lotRec = { no: lot.no, seen: new Set(), seenF: new Set(), guests: 0 };
+        if (WS) {
+          const first = lot.no === 1, k = first ? 'l1' : 'l2', got = new Set(lot.want || []);
+          WS[k].lots++; WS[k].in += got.size;
+          for (const id of run.want) { if (wantEligible(run, lot, id)) { WS[k].elig++; if (got.has(id)) WS[k].inElig++; } }
+        }
+      }
+      if (shelfPos !== run.pos) {
+        shelfPos = run.pos; lotRec.guests++;
+        const bins = run.shop.bins, T = LS ? shelfAxis(run) : null, open = LS && BROWSE < 16 ? new Set(browseKeys(run)) : null;
+        let n = 0, good = 0, goodOpen = 0, wn = 0;
+        for (const key of Object.keys(bins)) for (const id of bins[key]) {
+          n++; lotRec.seen.add(id); if (key === 'feature') lotRec.seenF.add(id);
+          if (wantSet && wantSet.has(id)) wn++;
+          if (!LS) continue;
+          const c = C.cards[id], r = EN.rarity(c);
+          if (r in LS.rar) LS.rar[r]++;
+          if (T && EN.star(c, T) >= 4) { good++; if (open && open.has(key)) goodOpen++; }
+        }
+        if (LS) { LS.shelf.push(n); LS.good.push(good); if (lot.no === 1) LS.good1.push(good); if (open) LS.goodOpen.push(goodOpen); }
+        if (WS) WS.onShelf += wn;
+      }
+    }
+    if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(BROWSE < 16 ? browseView(run) : run, C, 'smart', NO_THIN ? { thin: false } : undefined)) {
       const r = EN.choose(run, C, ch); ok(r, 'shopPolicy', ch);
       for (const e of r.effects) if (e.reclaim) EP.reclaim[e.reclaim]++;
+      if (ch.type === 'buy') { if (LS) { LS.buy++; if (ch.key === 'feature') LS.buyF++; } if (WS && wantSet.has(ch.cardId)) WS.bought++; }
     }
     if (flow === 'smart' && EN.canShop(run)) radioSmart(run, RADIO);
     if (run.money < 0) throw new Error('money < 0');
@@ -267,6 +387,9 @@ function runOnce(pol, flow, i, A) {
       else { A.deaths[d]++; fatal = { by, cls: res.cls, hands }; }
     }
   }
+  closeLot();
+  if (LS) LS.runs++;
+  if (WS) WS.runs++;
   const end = lostMan ? 0 : cens ? CAP : run.pos;
   if (firstLoss == null) firstLoss = cens ? CAP + 1 : end;
   const S = run.stats, sum = EN.runSummary(run);
@@ -290,6 +413,10 @@ function runCell(pol, flow, n) {
     ep: { play: { c: 0, o: 0, h: 0 }, hint: { c: 0, o: 0, h: 0 }, hands: 0, mHands: 0, mPlay: 0, mHint: 0, mercyN: 0, mercyOn: 0, reclaim: { gift: 0, seed: 0 } } };
   if (APEX) A.ax = { fights: 0, used: 0, nSum: 0, nHist: [0, 0, 0, 0, 0, 0, 0], dSum: 0, healSum: 0, hitHand: 0, hw: 0, hl: 0, ht: 0, netSum: 0, rev: { honest: 0, bluff: 0 },
     hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0 };
+  if (LOT_ON && flow === 'smart') {                                      // 一檔貨表（第 B 波；lot 關＝不記、JSON 不多欄位）
+    A.lt = { runs: 0, rounds: [], shelf: [], good: [], good1: [], goodOpen: [], buy: 0, buyF: 0, rar: Object.fromEntries(SHELF_RAR.map(r => [r, 0])) };
+    if (WANT_N) A.wt = { runs: 0, l1: { lots: 0, in: 0, elig: 0, inElig: 0 }, l2: { lots: 0, in: 0, elig: 0, inElig: 0 }, onShelf: 0, bought: 0 };
+  }
   const recs = [];
   for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
@@ -331,6 +458,8 @@ function runCell(pol, flow, n) {
       ...(EN.bagLimited() ? {} : { bagN: avg('bagN'), bagMaxN: avg('bagMaxN'), bagMaxMax: Math.max(...recs.map(r => r.bagMaxN)), sold: avg('sold') }) },   // 包包不限才有（--set bagMax=8 時 JSON 跟改版前一樣）
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
+    ...(A.lt ? { lot: lotStats(A.lt, n) } : {}),
+    ...(A.wt ? { want: wantStats(A.wt, n) } : {}),
     ...(UNLOCK ? { unlock: { aces: avg('aces'), unlocks: avg('unlocks'), trialAces: avg('trialAces'),          // --unlock：每趟收幾張、解鎖幾派、收到第 k 張的趟（%）
       atLeast: [1, 2, 3, 4].map(k => share(recs, r => r.aces >= k)), unlock2: share(recs, r => r.unlocks >= 1), unlock3: share(recs, r => r.unlocks >= 2) } } : {}),
     eplay: { play: shareOf(A.ep.play), hint: shareOf(A.ep.hint), hands: A.ep.hands, mainPlay: A.ep.mHands ? A.ep.mPlay / A.ep.mHands : null, mainHint: A.ep.mHands ? A.ep.mHint / A.ep.mHands : null,
@@ -338,6 +467,23 @@ function runCell(pol, flow, n) {
   };
 }
 const shareOf = o => { const t = o.c + o.o + o.h; return t ? { c: o.c / t, o: o.o / t, h: o.h / t } : null; };
+// 一檔貨表的數字：完整一輪（5 位都走到）看到幾張不同的（全部／FEATURE；第 1 輪、第 2 輪起分開）、每位架上幾張、剋下一位主屬性那軸 ≥4 星幾張（中位／最小／0 張的比例；
+//   全部、第 1 輪、--browse 時打開的那幾箱）、每趟從架上買幾張（唱片／其中 FEATURE）、架上稀有度（每格）
+function lotStats(L, n) {
+  const mean = a => a.length ? a.reduce((s, x) => s + x, 0) / a.length : null;
+  const dist = a => a.length ? { median: q(a, 0.5), min: a.reduce((m, x) => Math.min(m, x), Infinity), zero: a.filter(x => x === 0).length / a.length, mean: mean(a), n: a.length } : null;
+  const full = L.rounds.filter(r => r.guests === 5), f1 = full.filter(r => r.no === 1), f2 = full.filter(r => r.no > 1);
+  const rt = SHELF_RAR.reduce((s, r) => s + L.rar[r], 0);
+  return { rounds: L.rounds.length, fullRounds: full.length, seen: mean(full.map(r => r.seen)), seen1: mean(f1.map(r => r.seen)), seen2: mean(f2.map(r => r.seen)),
+    seenF: mean(full.map(r => r.seenF)), seenF1: mean(f1.map(r => r.seenF)), seenF2: mean(f2.map(r => r.seenF)),
+    shelf: mean(L.shelf), good: dist(L.good), good1: dist(L.good1), ...(L.goodOpen.length ? { goodOpen: dist(L.goodOpen) } : {}),
+    buy: L.buy / n, buyF: L.buyF / n, rar: Object.fromEntries(SHELF_RAR.map(r => [r, rt ? L.rar[r] / rt : null])) };
+}
+// 想要清單表：第 1 檔（策展池）／第 2 檔起（全卡池）分開；每檔進來幾張、每張每檔進來機率（÷N＝清單全部；÷合規＝那一檔來源裡擲得到的）
+function wantStats(W, n) {
+  const one = x => ({ lots: x.lots, perLot: x.lots ? x.in / x.lots : null, perCard: x.lots ? x.in / (x.lots * WANT_N) : null, eligPerLot: x.lots ? x.elig / x.lots : null, perElig: x.elig ? x.inElig / x.elig : null });
+  return { N: WANT_N, l1: one(W.l1), l2: one(W.l2), onShelf: W.onShelf / n, bought: W.bought / n };
+}
 
 // ---------------- S5：序章男子（新包包 7 張＝禮物 4＋特價箱三色各一，沒有配件；你 12 聲望） ----------------
 function manFight(pol, i) {
@@ -361,6 +507,12 @@ if (APEX) report.apex = APEX_ACE || 'default';                           // 不�
 if (ACE_T) report.ace = ACE_T;
 if (UNLOCK) report.unlock = true;                                          // 不開 --unlock 時 JSON 跟以前逐字相同
 if (APEX_PARAMS) report.apexParams = APEX_PARAMS;
+if (LOT_ON) report.lot = EN.lotCfg(C);                                   // 第 B 波：一檔貨開著才多這些鍵（--lot off 時 JSON 跟一檔貨之前逐字相同）
+if (BROWSE < 16) report.browse = BROWSE;
+if (SEEDS) report.seeds = Object.assign({}, SEEDS, { example: seedsFor(0) });
+if (WANT_N) report.want = WANT_N;
+if (SEEDS) console.log('\n開局種子（--seeds ' + SEEDS.k + ':' + SEEDS.rarity + '）：每一趟都不打序章（種子只在不打序章的那一趟有效）' + (SEEDS.k ? '；種子＝' + (C.rarityZh || {})[SEEDS.rarity] + '裡 peak 最高的 ' + SEEDS.k + ' 張（同分照趟雜湊），例：第 0 趟 ' + seedsFor(0).map(id => C.cards[id].album).join('、') : '；沒有種子（對照組）'));
+if (WANT_N) console.log('\n想要清單（--want ' + WANT_N + '）：每一趟 ' + WANT_N + ' 張（有箱子的非頂點卡、照趟雜湊取；跟策略無關）');
 if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] || ACE_T) + '（--ace ' + ACE_T + '）');
 if (APEX_PARAMS) console.log('\n試調參數（--apex-params，不改 content.js）：' + JSON.stringify(APEX_PARAMS));
 if (UNLOCK) console.log('\n解鎖制（--unlock）：每一趟都是新玩家，只解鎖這一趟的派' + (APEX ? '；擁有的頂點卡只有那派預設那張' : ''));
@@ -380,6 +532,7 @@ if (MODE === 'all' || MODE === 'runs') {
   const reachStr = x => x.reach.map(p0).join('／');
 
   console.log(`\n### 整趟無限試煉（新帳號；每格 N=${N} 趟、最多打到第 ${CAP} 位；說情每輪一次；mercy ${CFG.mercy ? '開' : '關'}、放水唬人 ${EN.trialCfg(C, TIER).curve.mercyFeint}${TIER ? '、難度階梯 ' + TIER : ''}；門檻看 ${GATE}）\n`);
+  if (BROWSE < 16) console.log(`smart 每位客人前只打開 ${BROWSE} 箱（--browse ${BROWSE}：FEATURE＋其他箱照雜湊挑 ${BROWSE - 1} 箱；門檻照 16 箱定義，這組是一檔貨效益的下緣）\n`);
   console.log('| 策略 | 流程 | 深度 中位／平均 | p25–p75 | 不說情 中位／平均 | 到第 5／10／20／50／100 位（%） | 第 1–3 位死 | 一場幾手 | 打到第 6 手 | 死在比聲望條 | 藏家÷非藏家 死亡率（第 4–60 位） | 懸崖（非藏家首戰勝率最大跌幅） | 最高單位死亡率（非藏家） |');
   console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
   for (const x of rows) console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | **${x.median}**／${x.mean.toFixed(1)}${x.censored ? `（${pct(x.censored)} 打完 ${CAP} 位）` : ''} | ${x.p25}–${x.p75} | ${x.noRetry.median}／${x.noRetry.mean.toFixed(1)} | ${reachStr(x)} | ${pct(x.die13)} | ${f2(x.hands)} | ${pct(x.r6)} | ${pct(x.deaths.byBar)} | ${pct(x.hazBoss)}÷${pct(x.hazNon)}＝${x.bossRatio == null ? '—' : x.bossRatio.toFixed(2) + ' 倍'} | ${x.cliff.at ? `第 ${x.cliff.from}→${x.cliff.at} 位 ${p0(x.cliff.w0)}→${p0(x.cliff.w1)}（${pt(x.cliff.drop)} 點）` : '—'} | ${x.hzMax.at ? `第 ${x.hzMax.at} 位 ${pct(x.hzMax.h)}` : '—'} |`);
@@ -423,6 +576,23 @@ if (MODE === 'all' || MODE === 'runs') {
     console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
     for (const x of rows) { const a = x.apex; if (!a) continue; const u = a.used || 1;
       console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(a.useRate)} | ${f2(a.n)} | ${a.nHist.map(k => p0(k / u)).join('／')} | ${p0(a.handWin)}／${p0(a.handTie)}／${p0(a.handLose)} | ${f2(a.net)} | ${f2(a.d)} | ${pct(a.hitHand)} | ${f2(a.hitsPerFight)} | ${f2(a.heal)} | ${a.rev.honest}／${a.rev.bluff} | ${pct(a.winUsed)}／${pct(a.winUnused)} |`); }
+  }
+
+  if (rows.some(x => x.lot)) {                                           // 一檔貨（第 B 波；lot 關不印）
+    const L0 = EN.lotCfg(C), dz = d => d ? `${d.median}／${d.min}／${pct(d.zero)}` : '—', f1 = x => x == null ? '—' : x.toFixed(1);
+    console.log(`\n一檔貨（每輪抽一檔 ${L0.size} 張、FEATURE ${L0.feature}；每位架上每箱 ${L0.show}、FEATURE ${L0.featureShow}${L0.firstShow ? '、第 1 輪每箱 ' + L0.firstShow : ''}；第 1 檔${L0.firstCurated ? '從策展池' : '從全卡池'}；smart、每位第一次走到時的架子）：\n`);
+    console.log('| 策略 | 流程 | 完整一輪看到幾張不同的 全部（第 1 輪／第 2 輪起） | 其中 FEATURE（第 1 輪／第 2 輪起） | 每位架上幾張 | 剋下一位主屬性那軸 ≥4 星 中位／最小／0 張 | 第 1 輪 | ' + (BROWSE < 16 ? `打開的 ${BROWSE} 箱裡 | ` : '') + '每趟從架上買 唱片／其中 FEATURE | 架上稀有度 普通／稀有／獨特／史詩／傳奇（%） |');
+    console.log('|---|---|---|---|---|---|---|' + (BROWSE < 16 ? '---|' : '') + '---|---|');
+    for (const x of rows) { const l = x.lot; if (!l) continue;
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f1(l.seen)}（${f1(l.seen1)}／${f1(l.seen2)}） | ${f1(l.seenF)}（${f1(l.seenF1)}／${f1(l.seenF2)}） | ${f1(l.shelf)} | ${dz(l.good)} | ${dz(l.good1)} | ${BROWSE < 16 ? dz(l.goodOpen) + ' | ' : ''}${f2(l.buy)}／${f2(l.buyF)} | ${SHELF_RAR.map(r => pt(l.rar[r])).join('／')} |`); }
+  }
+  if (rows.some(x => x.want)) {                                          // 想要清單（--want N）
+    console.log(`\n想要清單（--want ${WANT_N}；每檔每張擲 ${EN.lotCfg(C).wantP}、一檔最多 ${EN.lotCfg(C).wantMax} 張；第 1 檔來源是策展池、第 2 檔起全卡池）：\n`);
+    console.log('| 策略 | 流程 | 第 1 檔：檔數／每檔進來幾張／每張每檔（÷N）／合規幾張／每張每檔（÷合規） | 第 2 檔起：檔數／每檔進來幾張／每張每檔（÷N）／合規幾張／每張每檔（÷合規） | 每趟架上看到幾次 | 每趟從架上買到幾張 |');
+    console.log('|---|---|---|---|---|---|');
+    const w1 = o => `${o.lots}／${f2(o.perLot)}／${pct(o.perCard)}／${f2(o.eligPerLot)}／${pct(o.perElig)}`;
+    for (const x of rows) { const w = x.want; if (!w) continue;
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${w1(w.l1)} | ${w1(w.l2)} | ${f2(w.onShelf)} | ${f2(w.bought)} |`); }
   }
 
   if (UNLOCK) {                                                          // 頂點卡收集（--unlock：每趟新玩家，只解鎖這一派）
@@ -483,6 +653,7 @@ if (MODE === 'all' || MODE === 'man') {
   check('HP', '聲望單調：一般 ≤ 菁英 ≤ 藏家（C.trial.guestHp）', H.normal <= H.elite && H.elite <= H.boss, `一般 ${H.normal}／菁英 ${H.elite}／藏家 ${H.boss}（你 ${EN.trialCfg(C, TIER).youHp}）`);
 }
 
+{ const lw = Object.keys(EN.lotWarn || {}); if (lw.length) { report.lotWarn = lw; console.log('\n警告：箱子 ' + lw.join('、') + ' 沒有 all，第 2 檔起退回策展池（--data 的卡沒有 bin？見 C.deriveAll）'); } }
 console.log('\n### 門檻（SPEC 無限試煉 §4 第三棒；數字見檔頭）');
 for (const c of checks) console.log((c.ok ? '  ok   ' : '  FAIL ') + c.id + ' ' + c.name + (c.info !== undefined ? '：' + c.info : ''));
 const failed = checks.filter(c => !c.ok);

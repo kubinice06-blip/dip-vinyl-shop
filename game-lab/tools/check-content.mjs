@@ -492,7 +492,7 @@ export function contentProblems(C, E) {
 // ================================================================================================
 // 箱子（FIXLIST 4／5／8＋X／Y 契約；bins.js 是契約形狀＝有 feature 那一區時才查）。匯出給 engine.test 查 fixture
 //   十六區 { key, label, zh, pool, front }（v5 店面改版：POP 改 CITY POP、加 INDIE ROCK／INDIE POP）；分類箱的 pool 都是那一類（第一個曲風＝genre-tree 頂層、台灣地區＝tw）；FEATURE 只有史詩／傳奇；
-//   沒有頂點卡；front 的卡都在；30 晚 newRun 每區都上得到 4–6 張（FEATURE 2–3）、全店不重複
+//   沒有頂點卡；front 的卡都在；30 晚 newRun 每區都上得到 4–6 張（FEATURE 2–3）、全店不重複（lot 關）；一檔貨開著時第 1 檔每箱抽得滿配額
 // ================================================================================================
 export const BIN_LABELS = { jazz: ['JAZZ', '爵士'], tw: ['TW', '台灣'], rock: ['ROCK', '搖滾'], elec: ['ELEC', '電子'], soul: ['SOUL', '靈魂放克'],
   hiphop: ['HIP-HOP', '嘻哈 R&B'], citypop: ['CITY POP', '城市流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'],
@@ -521,15 +521,28 @@ export function binsProblems(C, E) {
       if (tops && c.region !== 'tw') ok(tops.includes((c.genres || [])[0]), w + '：' + id + ' 的第一個曲風 ' + (c.genres || [])[0] + ' 不是 genre-tree 頂層');
     }
   }
-  // 30 晚上貨：每區都上得滿下限（全店不重複之後）
-  const short = {};
+  // 30 晚上貨：每區都上得滿下限（全店不重複之後）。舊補貨（每輪 4–6、FEATURE 2–3）用 lot 關驗——一檔貨（第 B 波）關掉時退回的就是這條路
+  const short = {}, Coff = Object.assign({}, C, { lot: Object.assign({}, C.lot || {}, { on: false }) });
   for (let s = 1; s <= 30; s++) {
-    const run = E.newRun(C, { seedKey: 'bins-check-' + s, nightNo: 1 + (s % 3), ace: TIERS[s % 3] });
+    const run = E.newRun(Coff, { seedKey: 'bins-check-' + s, nightNo: 1 + (s % 3), ace: TIERS[s % 3] });
     const all = Object.values(run.shop.bins).flat();
     ok(new Set(all).size === all.length, '第 ' + s + ' 晚：全店有重複的唱片');
     for (const [k, st] of Object.entries(run.shop.bins)) if (st.length < (k === 'feature' ? 2 : 4)) short[k] = Math.min(short[k] == null ? 99 : short[k], st.length);
   }
   for (const [k, n] of Object.entries(short)) bad.push('bins.' + k + '：有幾晚只上得到 ' + n + ' 張（扣掉王牌、包包、特價箱、別區先拿的、稀有度不對的之後不夠；pool 要再多一點）');
+  // 一檔貨（第 B 波 SPEC-B §3；C.lot.on）：30 趟的第 1 檔（策展池）每箱都抽得滿配額（engine.lotQuota）、全檔不重複；第 1 位架上每箱 show 張（FEATURE featureShow）
+  if (E.lotQuota && (C.lot || {}).on !== false) {
+    const L = Object.assign({}, E.LOT || {}, C.lot || {}), Q = E.lotQuota(C), lshort = {};
+    for (let s = 1; s <= 30; s++) {
+      const run = E.newRun(C, { seedKey: 'bins-check-' + s, nightNo: 1 + (s % 3), ace: TIERS[s % 3] }), lot = run.shop.lot;
+      if (!ok(lot && lot.bins, '第 ' + s + ' 趟：一檔貨開著卻沒有 run.shop.lot')) continue;
+      const all = Object.values(lot.bins).flat();
+      ok(new Set(all).size === all.length, '第 ' + s + ' 趟：第 1 檔有重複的唱片');
+      for (const [k, st] of Object.entries(lot.bins)) if (st.length < (Q[k] | 0)) lshort[k] = Math.min(lshort[k] == null ? 99 : lshort[k], st.length);
+      for (const [k, st] of Object.entries(run.shop.bins)) ok(st.length === Math.min(k === 'feature' ? L.featureShow : L.show, (lot.bins[k] || []).length), '第 ' + s + ' 趟：' + k + ' 第 1 位架上 ' + st.length + ' 張');
+    }
+    for (const [k, n] of Object.entries(lshort)) bad.push('bins.' + k + '：第 1 檔（策展池）有幾趟只抽得到 ' + n + ' 張、配額 ' + Q[k] + '（pool 要再多一點，或調 C.lot）');
+  }
   return bad;
 }
 

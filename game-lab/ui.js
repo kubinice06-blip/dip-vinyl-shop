@@ -8,11 +8,12 @@
  * 無限試煉（v5，店主 11-12；SPEC 無限試煉 §0）：標題（像素店）→ 序章劇本（店主定稿句）→ 猜歌／挑王牌 → 教學對決 → 收尾（掉出來的盤、發燒配件三選一）
  *   → 來客（這一輪五顆頭像：第 n 位、一般 3、菁英、傳說藏家）→ 對決（無縫推近；黑條只蓋在舞台上）→ 贏了挑他一張唱片（菁英／藏家：唱片或配件）
  *   → 升級三選一（有升級才有）→ 下一位 → 傳說藏家（打倒＝他的王牌收進唱片櫃）→ 下一輪新面孔 → …打到輸為止 → 結算（走到第幾位、最多連贏、收了幾張）→ 再挑戰一趟。
- *   沒有時間、沒有打烊；頂欄只寫「第 n 位」。聲望帶到下一場、打贏回 3；老闆說情每輪一次（輸了重打同一位）；商店每輪補貨。
+ *   沒有時間、沒有打烊；頂欄只寫「第 n 位」。聲望帶到下一場、打贏回 3；老闆說情每輪一次（輸了重打同一位）；
+ *   架上唱片每位客人之間從這一輪的「一檔貨」換一批、打完藏家整檔換新（第 B 波 SPEC-B §3）；櫃檯配件、特價箱每輪。
  * 對決交給 duel.js（DipLabDuel.mount 在 #panel 裡）；規則全在 engine.js（newRun／startFight／finishFight／choose）。
  * 唱片資訊：cardinfo.js（DipLabCardInfo.open）。畫面上每一張封面點一下就開。
  * 規則：
- *  - 只寫 localStorage 'dipGameLab_v1'（存檔版本 6；v4 存檔照 §1 裁定 12 遷移：留唱片櫃、偏好、小人、配件，丟掉一晚的 run；更舊的安全丟掉）；不用 Firebase；不 DipPlayer.mount。
+ *  - 只寫 localStorage 'dipGameLab_v1'（存檔版本 7；另有小鍵 .bringKey、今日推薦 .daily、升級前備份 .bak6；v4 存檔照 §1 裁定 12 遷移：留唱片櫃、偏好、小人、配件，丟掉一晚的 run；更舊的安全丟掉）；不用 Firebase；不 DipPlayer.mount。
  *  - 從唱片櫃挑牌開局（店主 11-13；SPEC 從唱片櫃挑牌開局）：唱片櫃分「擁有」（save.shelf[id].own＋src：'gift' 老闆送的／'run' 一趟留一張（店內取得金框）／'boss' 藏家王牌）
  *    與「認識」（照舊）；第二趟起老闆那句說完、走去特價箱之前挑種子（最多 3 張）；打贏客人領獎前念掉落旁白（C.script.drop）；結算「這一趟帶走一張」。
  *    存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張、打倒藏家拿到的王牌算擁有（migrate5）。
@@ -25,8 +26,9 @@
   var W = window, D = document;
   var E = null, C = null;
   var KEY = 'dipGameLab_v1';
-  var SAVE_V = 6;                                   // v2 是 1、v3 是 3、v4 是 4（一晚版）；v5＝無限試煉：v4 遷移（丟 run、nights → runs、best → 最遠），更舊的整份丟掉（只留聲音偏好與小人）
+  var SAVE_V = 7;                                   // v2 是 1、v3 是 3、v4 是 4（一晚版）；v5＝無限試煉：v4 遷移（丟 run、nights → runs、best → 最遠），更舊的整份丟掉（只留聲音偏好與小人）
                                                     // v6＝從唱片櫃挑牌開局：唱片櫃多「擁有」（own／src）；v5 → v6 照裁定 10 遷移（migrate5），v4 先遷到 v5 再接著遷
+                                                    // v7＝卡片 id 改主站 catalogId（第 B 波 SPEC-B §2）：v4／v5／v6 先 migrateIds（舊 slug → catalogId），再照舊 migrate4 → migrate5 → v7
   var QS = {};
   try { new URLSearchParams(location.search).forEach(function (v, k) { QS[k] = v; }); } catch (_) {}
   var DEBUG = QS.debug === '1';
@@ -41,6 +43,8 @@
   function TUT() { return W.DipLabTut || null; }
   function DUEL() { return W.DipLabDuel || null; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]; }); }
+  // 屬性選擇器裡的值（catalogId 可能有 "、\：bonnie "prince" billy|…；第 B 波 SPEC-B §1.6，duel.js 同款）
+  function cssEsc(s) { s = String(s == null ? '' : s); return W.CSS && CSS.escape ? CSS.escape(s) : s.replace(/["\\]/g, '\\$&'); }
   function el(tag, cls, html) { var e = D.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function qs(sel, root) { return (root || D).querySelector(sel); }
   function qsa(sel, root) { return Array.prototype.slice.call((root || D).querySelectorAll(sel)); }
@@ -130,6 +134,14 @@
       // 從唱片櫃挑牌開局：種子、這一趟進過包包／客人掉落的記錄（舊的 run 沒有：引擎自己補）
       if (['seeds', 'gifts', 'entered', 'drops'].some(function (k) { return r[k] != null && !Array.isArray(r[k]); })) return false;
       if (r.kept != null && typeof r.kept !== 'string') return false;
+      // 第 B 波（SPEC-B §2.3）寬鬆檢查：想要清單快照不是字串陣列＝清成空的（loadSave 最後照 save.want 重同步）；
+      //   一檔貨（run.shop.lot）形狀不對＝拿掉、讓 fixLot 同種子重抽——都不判整趟不合法
+      if (r.want != null && !(Array.isArray(r.want) && r.want.every(function (x) { return typeof x === 'string'; }))) r.want = [];
+      var lt = sh.lot;
+      if (lt != null && !(lt && typeof lt === 'object' && lt.bins && typeof lt.bins === 'object' && !Array.isArray(lt.bins) &&
+          Object.keys(lt.bins).every(function (k) { return Array.isArray(lt.bins[k]) && lt.bins[k].every(function (x) { return typeof x === 'string'; }); }) &&
+          lt.cur && typeof lt.cur === 'object' && Object.keys(lt.cur).every(function (k) { return Number.isInteger(lt.cur[k]) && lt.cur[k] >= 0; }) &&
+          Array.isArray(lt.gone) && lt.gone.every(function (x) { return typeof x === 'string'; }))) delete sh.lot;
       if (!r.over && !E.nextStep(r)) return false;
       return true;
     } catch (_) { return false; }
@@ -162,7 +174,7 @@
   //   那一晚（at＝seedKey#runNo）第一次認識、又不是自己挑的那張王牌的頂點卡；剛好一張才給（v4 newRun 的亂數順序不同，bossAceFor 算不出來；審查 #2）。
   //   進行中的 run 照留（引擎自己補種子／記錄的欄位）
   function migrate5(s) {
-    var o = {}; Object.keys(s).forEach(function (k) { o[k] = s[k]; }); o.v = SAVE_V;
+    var o = {}; Object.keys(s).forEach(function (k) { o[k] = s[k]; }); o.v = 6;     // 遷到 v6（不是 SAVE_V：v7 那一步在 loadSave 接著做）
     var src = s.shelf && typeof s.shelf === 'object' && !Array.isArray(s.shelf) ? s.shelf : {}, sh = {};
     Object.keys(src).forEach(function (id) { var e = src[id]; sh[id] = { at: e && typeof e.at === 'string' ? e.at : '', seen: !!(e && e.seen) }; });
     var own = function (id, from, at) {
@@ -193,13 +205,60 @@
     UI.migrated6 = true;
     return o;
   }
+  // ---- v7：卡片 id 換主站 catalogId（第 B 波 SPEC-B §2）
+  //   舊 slug → catalogId 的表執行期從核心 368 張的藝人／專輯推（C.legacyIds()，0 byte）；走訪本體是 engine 的純函式 mapIds（Node 測得到）。
+  //   存檔最上層除了 player、settings（捏人、偏好，不會有卡 id）全部走（含進行中的 run 與打到一半的對決：對決狀態裡是卡物件複本，id／deckIds／sig.id 都是字串值）；
+  //   只換「整個字串剛好是 368 個舊 slug 之一、不含 |」的鍵與值 → 可重入（舊碼分頁回寫 v6 再遷一次也對）。唱片櫃的鍵換完撞在一起（同一張舊、新兩格）用 mergeShelf 合
+  function migrateIds(s) {
+    var L = C.legacyIds(), o = {};
+    Object.keys(s).forEach(function (k) {
+      o[k] = (k === 'player' || k === 'settings') ? s[k] : E.mapIds(s[k], L, k === 'shelf' ? mergeShelf : undefined);
+    });
+    return o;
+  }
+  // 唱片櫃的「第幾趟」（seedKey#runNo）比早晚：日期（或 ?seed）照字串、趟數照數字；空的不算
+  function tagCmp(x, y) { var a = String(x).split('#'), b = String(y).split('#'); if (a[0] !== b[0]) return a[0] < b[0] ? -1 : 1; return (parseInt(a[1], 10) || 0) - (parseInt(b[1], 10) || 0); }
+  function earlierTag(x, y) { x = typeof x === 'string' ? x : ''; y = typeof y === 'string' ? y : ''; if (!x) return y; if (!y) return x; return tagCmp(y, x) < 0 ? y : x; }
+  // 同一張的舊、新兩格合成一格（正常不會發生；舊碼分頁回寫等的保險）：own 任一為真就真、src 取有 own 那筆（都有＝擁有得早的）、at／ownAt 取非空且較早的、seen 取 or
+  function mergeShelf(a, b) {
+    var ok = function (e) { return e && typeof e === 'object' && !Array.isArray(e); };
+    if (!ok(a)) return b; if (!ok(b)) return a;
+    var ao = a.own === true, bo = b.own === true, x = { at: earlierTag(a.at, b.at), seen: !!(a.seen || b.seen) };
+    if (ao || bo) {
+      var oa = earlierTag(ao ? a.ownAt : '', bo ? b.ownAt : ''), w = ao && bo ? (oa && oa === b.ownAt && oa !== a.ownAt ? b : a) : ao ? a : b;
+      x.own = true; x.src = w.src; if (oa) x.ownAt = oa;
+    }
+    return x;
+  }
+  // 升級前的原字串留一份（localStorage 'dipGameLab_v1.bak6'；沒有才寫＝永遠是第一次升級前那份）：程式不讀，只給回滾時手動救（SPEC-B §2.5）
+  function backupOnce(raw) {
+    try { if (typeof raw === 'string' && raw && W.localStorage.getItem(KEY + '.bak6') == null) W.localStorage.setItem(KEY + '.bak6', raw); } catch (_) { /* 寫不進去：照樣升級 */ }
+  }
+  // 存檔換不了（升級失敗）、比這版新：整份唯讀，但只帶不含卡 id 的身分欄位（人物、聲音偏好、序章／教學做過沒、上次的王牌）→ 不會被當新玩家丟去捏人、序章（SPEC-B §2.1【定稿 B1】）
+  function keepShell(d, s) {
+    if (!s || typeof s !== 'object' || Array.isArray(s)) return d;
+    try { if (s.player && typeof s.player === 'object' && !Array.isArray(s.player) && s.player.avatar && typeof s.player.avatar === 'object') d.player = Object.assign({}, s.player); } catch (_) {}
+    try { if (s.settings && typeof s.settings.sound === 'boolean') d.settings.sound = s.settings.sound; } catch (_) {}
+    if (s.prologueDone === true) d.prologueDone = true;
+    if (s.tutorialDone === true) d.tutorialDone = true;
+    if (TIERS.indexOf(s.lastAce) >= 0) d.lastAce = s.lastAce;
+    return d;
+  }
   function loadSave() {
-    var s = null;
-    try { var raw = W.localStorage.getItem(KEY); if (raw) s = JSON.parse(raw); } catch (_) { s = null; }
+    var s = null, raw = null;
+    try { raw = W.localStorage.getItem(KEY); if (raw) s = JSON.parse(raw); } catch (_) { s = null; }
     var d = defSave();
-    if (s && typeof s === 'object' && typeof s.v === 'number' && s.v > SAVE_V) { UI.saveReadOnly = true; return d; }   // 比這版新：不覆寫
+    // 精選新卡（cards-pool.js）沒載到：照常讀、照常玩，但一個字都不存——不然下面的驗證會把新卡的唱片櫃格子、想要清單、bring、包包濾掉再寫回去（SPEC-B §2.1【定稿 G3-3】）
+    if (!C.poolLoaded) { UI.saveReadOnly = true; UI.poolMissing = true; }
+    if (s && typeof s === 'object' && typeof s.v === 'number' && s.v > SAVE_V) { UI.saveReadOnly = true; return keepShell(d, s); }   // 比這版新：不覆寫
+    // 換 id 跟版本無關、最先跑：v4／v5／v6 都是舊 slug，migrate4／migrate5 拿 C.gifts／C.aces（已經是 catalogId）比存檔裡的 id，要先換才比得對
+    if (s && typeof s === 'object' && (s.v === 4 || s.v === 5 || s.v === 6)) {
+      backupOnce(raw);
+      try { s = migrateIds(s); } catch (e) { console.error(e); UI.saveReadOnly = true; UI.migrateFail = true; return keepShell(d, s); }   // 換不了：整份唯讀、不覆寫
+    }
     if (s && typeof s === 'object' && s.v === 4) s = migrate4(s);
     if (s && typeof s === 'object' && s.v === 5) s = migrate5(s);
+    if (s && typeof s === 'object' && s.v === 6) { s.v = SAVE_V; UI.migrated7 = true; }   // boot 寫回一次
     if (!s || typeof s !== 'object' || s.v !== SAVE_V) {
       // 舊版（v1／v2 的 v:1、v3）：規則與資料形狀都不一樣，整份丟掉；只帶走聲音偏好與小人（不是遊戲狀態）
       if (s && typeof s === 'object') {
@@ -232,7 +291,12 @@
     if (!Array.isArray(s.runs)) s.runs = [];
     if (!Array.isArray(s.relics)) s.relics = [];
     s.relics = s.relics.filter(function (id) { return C.relics && C.relics[id]; }).slice(0, 3);
-    if (s.run && !validRun(s.run)) s.run = null;
+    if (s.run && !validRun(s.run)) {
+      // 不過＝先試丟掉打到一半的對決（聲望回到開打前），再驗一次；還是不過才丟整趟（SPEC-B §2.2）
+      var r0 = s.run;
+      if (r0 && typeof r0 === 'object' && !Array.isArray(r0) && (r0.duel || r0.duelEnemy)) { r0.duel = null; r0.duelEnemy = null; if (posInt(r0.hpIn)) r0.hp = r0.hpIn; }
+      if (!validRun(r0)) s.run = null;
+    }
     // 主屬性（第 A 波 6）以前存的進行中 run：這一輪開打過＝照舊牌組打完這一輪（說情重打＝同一副牌），下一輪起才照主屬性組牌（engine fixMain；合併審查 11-16）
     if (s.run && E.fixMain) { try { E.fixMain(s.run); } catch (_) {} }
     // 這一輪的貨跟現在的箱子對不上（v5 店面改版前存的：有 pop、沒有 citypop／indierock／indiepop）：只補缺的區、丟掉沒有的區（同種子，每次載入一樣）
@@ -262,25 +326,62 @@
     }
     // 進行中的舊 run（沒有 run.unlock）：補上開局快照（之後換王牌只能換解鎖的、藏家照被剋鏈帶卡）
     if (s.run && E.fixUnlock) { try { E.fixUnlock(s.run, C, unlockArgs(s)); } catch (_) {} }
+    // 今日推薦自癒（SPEC-B §2.3【定稿 B2】）：daily 鍵 log 裡收下／換獎勵的卡還在、不是頂點、唱片櫃沒擁有（新碼分頁收了、舊碼分頁整份寫回 v6 蓋掉）
+    //   → 補成擁有（src 'daily'、ownAt＝log 那天）；有補＝UI.migrated7（boot 寫回一次）。要在想要清單清理之前（補成擁有的會被拿掉）
+    (UI.daily && Array.isArray(UI.daily.log) ? UI.daily.log : []).forEach(function (x) {
+      var c = x && card(x.id); if (!c || c.tier) return;
+      var e = shf[x.id] || (shf[x.id] = { at: x.day || '', seen: true });
+      if (!e.own) { e.own = true; e.src = 'daily'; e.ownAt = x.day || ''; UI.migrated7 = true; }
+    });
     // 想要清單：卡還在、不重複、已經擁有的拿掉（收進唱片櫃了就不用想要了）；最多 200 張
     s.want = s.want.filter(function (id, i, a) { return typeof id === 'string' && card(id) && a.indexOf(id) === i && !(shf[id] && shf[id].own); }).slice(-200);
+    // 進行中的 run（SPEC-B §2.3【定稿 B6】）：想要清單快照照清理過的重同步（舊碼分頁回寫、星圖加了想要）→ 一檔貨沒有或壞了＝同種子重抽（fixLot 會讀 run.want，所以在後面）
+    if (s.run) { s.run.want = s.want.slice(-200); if (E.fixLot) { try { E.fixLot(s.run, C); } catch (_) { /* 抽不了就照舊：下一位照舊補貨 */ } } }
     return s;
+  }
+  // 今日推薦（SPEC-B §4.1【定稿 B2】）：存獨立鍵 'dipGameLab_v1.daily'（不在 save 裡：舊碼分頁整份寫回主鍵碰不到它、兩個新碼分頁也不會因為誰後存整份互蓋集點格）。
+  //   記憶體裡是 UI.daily；每次要改之前先 loadDaily() 重讀一次（幾百 byte）再改、再 saveDaily()
+  var DAILY_KEY = KEY + '.daily', DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
+  function loadDaily() {
+    var o = null;
+    try { var raw = W.localStorage.getItem(DAILY_KEY); if (raw) o = JSON.parse(raw); } catch (_) { o = null; }
+    if (!o || typeof o !== 'object' || Array.isArray(o)) return (UI.daily = null);
+    var nn = function (x) { return typeof x === 'number' && Math.floor(x) === x && x >= 0 ? x : 0; };
+    var c = typeof o.id === 'string' ? card(o.id) : null;
+    return (UI.daily = { day: typeof o.day === 'string' && DAY_RE.test(o.day) ? o.day : '', id: c && !c.tier ? o.id : null, took: !!o.took,
+      stamps: nn(o.stamps), claimed: nn(o.claimed),
+      log: (Array.isArray(o.log) ? o.log : []).filter(function (x) { return x && typeof x === 'object' && typeof x.id === 'string'; }).map(function (x) {
+        return { day: typeof x.day === 'string' && DAY_RE.test(x.day) ? x.day : '', id: x.id, k: x.k === 'claim' ? 'claim' : 'take' };   // k 不認得當收下
+      }).slice(-60) });
+  }
+  function saveDaily() {
+    if (UI.saveReadOnly || UI.noSave || !UI.daily) return;
+    try { W.localStorage.setItem(DAILY_KEY, JSON.stringify(UI.daily)); } catch (_) { /* 寫不進去不影響遊戲 */ }
   }
   function persist() {
     if (UI.saveReadOnly || UI.noSave) return;
     syncBring();
-    try { W.localStorage.setItem(KEY, JSON.stringify(save)); bringSeen = bringKey(save.bring); } catch (_) { /* 寫不進去不影響遊戲 */ }
+    try {
+      W.localStorage.setItem(KEY, JSON.stringify(save)); bringSeen = bringKey(save.bring);
+      W.localStorage.setItem(BRING_KEY, bringSeen);       // 小鍵：別的分頁先比它，一樣就不用 parse 整份（SPEC-B §2.3【定稿 C6】）
+    } catch (_) { /* 寫不進去不影響遊戲 */ }
   }
   // 主站帶來的那張（save.bring）跨分頁同步（審查：遊戲 A →「在頻率光譜找它」→ 光譜分頁 →「帶去店裡對決」開出遊戲分頁 C；
   //   C 收下寫進存檔，A 還開著、記憶體裡是舊的。A 一存檔整份寫回去就把它蓋掉）。bringSeen＝這個分頁上次讀到／寫進去的那張；
   //   存檔裡的跟它不一樣＝別的分頁收了新的（或用掉了）→ 改用存檔裡的。只同步 bring，其他欄位照舊（同一份存檔兩個分頁都在玩，後存的贏）
-  var bringSeen = '';
+  //   小鍵 'dipGameLab_v1.bringKey'＝最後一次 persist 時的 bringKey：跟 bringSeen 一樣＝沒有別的（新碼）分頁動過 → 不讀整份（唱片櫃認識幾千張時一份幾百 KB）。
+  //   舊碼分頁不寫小鍵＝它改的 bring 這邊看不到（舊碼整份寫回本來就會蓋掉；接受）
+  var bringSeen = '', BRING_KEY = KEY + '.bringKey';
   function validBring(b) { return !!(b && typeof b === 'object' && typeof b.id === 'string' && card(b.id) && E.canSeed(C, b.id)); }
   function bringKey(b) { return b ? b.id + '@' + b.at : ''; }
   function syncBring() {
     if (!save || UI.saveReadOnly || UI.noSave) return;
     var s = null;
-    try { var raw = W.localStorage.getItem(KEY); if (!raw) return; s = JSON.parse(raw); } catch (_) { return; }
+    try {
+      var bk = W.localStorage.getItem(BRING_KEY);
+      if (bk !== null && bk === bringSeen) return;
+      var raw = W.localStorage.getItem(KEY); if (!raw) return; s = JSON.parse(raw);
+    } catch (_) { return; }
     if (!s || typeof s !== 'object' || s.v !== SAVE_V) return;
     var b = validBring(s.bring) ? { id: s.bring.id, at: s.bring.at } : null;
     if (bringKey(b) === bringSeen) return;               // 沒有別的分頁動過：這個分頁的（可能剛收下、剛用掉）照舊
@@ -297,7 +398,8 @@
   // 擁有（從唱片櫃挑牌開局 §1 裁定 4）：src 'gift' 老闆送的（挑過那個王牌，那四張）、'run' 一趟留一張（店內取得：金框）、'boss' 打倒藏家拿到的王牌
   //   'start' 初始流派那張頂點卡（解鎖制，店主 11-16：新玩家第一次挑的那派；舊存檔＝save.lastAce 那派，loadSave 補）。
   //   已經擁有的不改來源。回傳這次是不是剛擁有
-  var SHELF_SRC = ['gift', 'run', 'boss', 'start'];
+  //   'daily' 今日推薦收下／集點卡換的（第 B 波 SPEC-B §4；不是金框）
+  var SHELF_SRC = ['gift', 'run', 'boss', 'start', 'daily'];
   function shelfOwn(id, src) {
     if (!id || !card(id)) return false;
     shelfAdd(id);
@@ -456,6 +558,14 @@
 
   // ======================================================================= 封面、三軸、卡片
   function coverSrc(c) { return c ? (c.localCover || c.coverUrl || '') : ''; }
+  // 封面載入失敗重試一次（第 B 波 SPEC-B §1.6【定稿 C7】；Cover Art Archive 三跳轉址，第一次約 3% 會斷）：第一次 1.5 秒後重設同一個 src、
+  //   第二次才移除（跟以前一樣露出底下的專輯名字卡）。econ.js 若先定義了就用它的（同一套）
+  if (typeof W.DipCoverErr !== 'function') W.DipCoverErr = function (img) {
+    if (!img || !img.getAttribute) return;
+    if (img.getAttribute('data-r') === '1') { img.remove(); return; }
+    img.setAttribute('data-r', '1');
+    setTimeout(function () { if (!img.isConnected) return; var u = img.src; img.removeAttribute('src'); img.src = u; }, 1500);
+  };
   function rarityCls(c) {
     if (!c) return '';
     if (c.tier) return 'ace ' + c.tier;
@@ -479,7 +589,7 @@
     var src = coverSrc(c);
     return '<span class="lb-cv ' + (o.frame === false ? '' : rarityCls(c)) + (o.store ? ' store' : '') + (o.sel ? ' sel' : '') + '"' + st + (o.info === false ? '' : ' data-info="1" data-cid="' + esc(c.id) + '"') +
       ' role="img" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="alt" aria-hidden="true">' + esc(c.album) + '</span>' +
-      (src ? '<img alt="" src="' + esc(src) + '" loading="lazy" draggable="false" onerror="this.remove()">' : '') + badge + '</span>';
+      (src ? '<img alt="" src="' + esc(src) + '" loading="lazy" draggable="false" onerror="DipCoverErr(this)">' : '') + badge + '</span>';
   }
   function starsHTML(c, o) {
     o = o || {};
@@ -724,6 +834,8 @@
     var p = UI.panel; p.className = 'lb-panel'; p.removeAttribute('style'); p.innerHTML = '';
     var f = FX(); if (f && f.rainStop && id !== 'title' && id !== 'scene') try { f.rainStop(); } catch (_) {}
     try { SCREENS[id](UI.params); } catch (e) { console.error(e); }
+    if (id === 'title') mediaKick();
+    mediaRetry();   // 精選新卡的封面／試聽：第一次畫好標題後閒置時抓；網路失敗兩次以後，每換一次畫面再試一次（SPEC-B §1.6）
     flushAfter();                                    // 排給「下一個畫面」的吐司：畫面掛好才出（審查 #0）
     floorSoon();
     UI.camQuick = false;
@@ -783,7 +895,7 @@
     var slot = function (id, cls, key) {
       var c = card(id);
       return '<div class="slot' + cls + (c ? ' filled' : '') + '" data-slot="' + key + '"' + (c ? ' data-info="1" data-cid="' + esc(id) + '" role="button" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"' : '') + '>' +
-        (c ? '<img alt="" draggable="false" src="' + esc(coverSrc(c)) + '" onerror="this.remove()">' : '') + '</div>';
+        (c ? '<img alt="" draggable="false" src="' + esc(coverSrc(c)) + '" onerror="DipCoverErr(this)">' : '') + '</div>';
     };
     var h = '<span class="lab">包包</span>' + slot(s.ace, ' ace', 'ace') + '<span class="sep"></span>';
     var seeds = (save.run && save.run.seeds) || [];
@@ -1272,7 +1384,7 @@
         ctx.flags.guessRight = right; ctx.flags.guessWrong = !right; ctx.guessed = tierOfCard(id);
         setTimeout(function () { closeSheet(s); res(right); }, 900 / speed());
       });
-      autoAct(function () { var b = UI.auto && UI.auto.guess ? qs('.lb-ct[data-cid="' + (UI.auto.guess === 'right' ? ctx.tonightId : ids.filter(function (x) { return x !== ctx.tonightId; })[0]) + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); });
+      autoAct(function () { var b = UI.auto && UI.auto.guess ? qs('.lb-ct[data-cid="' + cssEsc(UI.auto.guess === 'right' ? ctx.tonightId : ids.filter(function (x) { return x !== ctx.tonightId; })[0]) + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); });
     });
   }
   // 唱盤前（教學那條路；C.tutorial.intro）：老闆攤開猜歌那三張（三軸各 7 星），一句一句講，一句亮一條箭頭（相剋圖＝盤面那張，DipLabDuel.triSVG）。
@@ -1495,7 +1607,7 @@
       });
       autoAct(function () {
         var want = UI.auto && UI.auto.apexId;
-        if (want && want !== sel) { var wt = TIERS.filter(function (t) { return apexPickOk(t, want); })[0]; if (wt && wt !== tier) { var tb0 = qs('[data-tab="' + wt + '"]', s); if (tb0) tb0.click(); } var b0 = qs('.apx-c[data-cid="' + want + '"]', s); if (b0) b0.click(); }
+        if (want && want !== sel) { var wt = TIERS.filter(function (t) { return apexPickOk(t, want); })[0]; if (wt && wt !== tier) { var tb0 = qs('[data-tab="' + wt + '"]', s); if (tb0) tb0.click(); } var b0 = qs('.apx-c[data-cid="' + cssEsc(want) + '"]', s); if (b0) b0.click(); }
         var b = qs('[data-a=ok]', s); if (b) b.click();
       }, 260);
     });
@@ -1617,7 +1729,7 @@
       });
       autoAct(function () {
         var ch = E.bargainPolicy ? E.bargainPolicy(save.run, C) : null, ids = (ch && ch.ids) || r.shop.bargain.slice(0, n);
-        ids.forEach(function (id) { var b = qs('.lb-ct[data-cid="' + id + '"] [data-pick]', s); if (b) b.click(); });
+        ids.forEach(function (id) { var b = qs('.lb-ct[data-cid="' + cssEsc(id) + '"] [data-pick]', s); if (b) b.click(); });
         ok.click();
       }, 200);
     });
@@ -1800,7 +1912,9 @@
     var unl = unlockLine();                              // 解鎖進度（店主 11-16）：「流派 1／3・下一派：殿堂（經典）」；新玩家不出
     h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
       (unl ? '<p class="lb-foot sm unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') +
-      (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
+      (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '') +
+      // 唯讀（第 B 波 SPEC-B §2.1）：存檔升級失敗／唱片沒有全部載到——這次先不存；兩個都有只出升級失敗
+      (UI.migrateFail || UI.poolMissing ? '<p class="lb-foot sm ro">' + esc(SU(UI.migrateFail ? 'migrateFail' : 'poolMissing')) + '</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     // 舊存檔第一次載入（解鎖制以前的存檔；loadSave 補了 lastAce 那派那張）：吐司說一次規則改了
     if (UI.migratedUnlock) { UI.migratedUnlock = false; toast(TU('unlockMigrated'), 'keep long'); }
@@ -2014,7 +2128,8 @@
     //   有解鎖的派、卻挑了鎖著的（介面該擋；保險）→ 改用上次那派／第一個解鎖的派
     var un = unlockedNow(), first = !un.length;
     if (!first && un.indexOf(o.ace) < 0) o.ace = un.indexOf(save.lastAce) >= 0 ? save.lastAce : un[0];
-    var nro = { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds };
+    var nro = { seedKey: k, runNo: nextRunNo(k), ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3), seeds: seeds,
+      want: (save.want || []).slice(-200) };       // 想要清單快照（第 B 波 SPEC-B §5.2：抽一檔貨時加權，不保證；引擎不碰存檔）
     if (UI.apex && !o.prologue && lastAceIdFor(o.ace)) nro.aceId = lastAceIdFor(o.ace);   // 頂點卡試做：沿用上次挑的那張（旗標關時不加這欄）
     if (E.unlockedTiers) Object.assign(nro, unlockArgs(null, first ? o.ace : null));
     var r = E.newRun(C, nro);
@@ -2132,13 +2247,39 @@
     if (tier && (C.gifts[tier] || []).indexOf(b) >= 0) return null;
     return b;
   }
-  // 開機讀網址 ?card=<遊戲卡 id>（主站頻率光譜結果頁「帶去店裡對決」）：收進 save.bring、把參數從網址拿掉（重新整理不會再收一次）；標題畫面吐司說明
+  // 開機讀網址 ?card=<catalogId>（主站頻率光譜結果頁「帶去店裡對決」）：收進 save.bring、把參數從網址拿掉（重新整理不會再收一次）；標題畫面吐司說明
+  //   第 B 波（SPEC-B §2.4）：卡片 id＝主站 catalogId。含 | ＝catalogId（照主站 cardIdOf 正規化：小寫、/→-、trim；給手打網址的人）；
+  //   不含 ＝舊連結的遊戲 slug（主站舊快取的 pool-index 給的）→ 照表換。唯讀時參數照樣拿掉，但不收、不吐司（存不下還說收下了是矛盾）
   function takeBring() {
     if (QS.card == null) return;
-    var id = String(QS.card); delete QS.card;
+    var v = String(QS.card), raw = rawParam('card'); delete QS.card;
     try { var u = new URL(location.href); u.searchParams.delete('card'); history.replaceState(history.state, '', u.pathname + u.search + u.hash); } catch (_) {}
+    if (UI.saveReadOnly) return;
+    var id = bringIdOf(v, raw);
     if (card(id) && E.canSeed(C, id)) { save.bring = { id: id, at: now() }; UI.bringToast = id; persist(); }
     else UI.bringToast = '';      // 查不到、王牌（帶不進來）：吐司說店裡沒有
+  }
+  function catalogIdNorm(v) { return String(v).toLowerCase().replace(/\//g, '-').trim(); }
+  // 網址參數原字串（只解 %XX、不把 + 當空白）：沒編碼的網址 + 會被 URLSearchParams 變空白；% 後面不是兩位十六進位＝解不開回 null（照 URLSearchParams 的值）
+  function rawParam(name) {
+    try {
+      var ps = location.search.replace(/^\?/, '').split('&');
+      for (var i = 0; i < ps.length; i++) {
+        var j = ps[i].indexOf('='), k = j < 0 ? ps[i] : ps[i].slice(0, j);
+        if (decodeURIComponent(k.replace(/\+/g, ' ')) === name) return decodeURIComponent(j < 0 ? '' : ps[i].slice(j + 1));
+      }
+    } catch (_) {}
+    return null;
+  }
+  // ?card= 的值 → 卡片 id：照 URLSearchParams 的值查；查不到、而且有空白（沒編碼的 + 被變成空白；catalogId 有 + 的 10 張）→ 用原字串（+ 照原樣）再查、再不行把空白換回 + 查（SPEC-B §2.4【定稿 A5】）
+  function bringIdOf(v, raw) {
+    var L = C.legacyIds ? C.legacyIds() : {};
+    var look = function (x) { return x.indexOf('|') >= 0 ? catalogIdNorm(x) : (Object.prototype.hasOwnProperty.call(L, x) ? L[x] : x); };
+    var id = look(v);
+    if (card(id) || v.indexOf(' ') < 0) return id;
+    var alt = [raw, v.replace(/ /g, '+')];
+    for (var i = 0; i < alt.length; i++) { if (typeof alt[i] === 'string' && alt[i] !== v) { var a = look(alt[i]); if (card(a)) return a; } }
+    return id;
   }
   function topAxes(c) { var m = Math.max(c.c || 0, c.o || 0, c.h || 0); return ATTRS.filter(function (a) { return (c[a] || 0) === m; }); }
   function seedPickFlow(tier) {
@@ -3422,7 +3563,7 @@
   var TUNE_WAIT = 15000;                                // 等 dip-tune.js 最多 15 秒（慢的手機網路 65 KB 壓縮後約 2 秒）：等不到就吐司、收回
   // 擁有的唱片，照唱片櫃頁的排法：店內取得 → 藏家王牌 → 老闆送的（同一類最近收的在前）
   function homeOwnedIds() {
-    var ORD = { run: 0, boss: 1, start: 1, gift: 2 };
+    var ORD = { run: 0, boss: 1, start: 1, daily: 2, gift: 3 };   // 今日推薦（daily）排在 run 之後、gift 之前（SPEC-B §2.3）
     return Object.keys(save.shelf).filter(card).reverse().filter(isOwned).sort(function (a, b) { return (ORD[save.shelf[a].src] | 0) - (ORD[save.shelf[b].src] | 0); });
   }
   function homePlayable() { return homeOwnedIds().filter(function (id) { return !!(card(id) || {}).previewUrl; }); }
@@ -3602,14 +3743,9 @@
   function tunePrefetch() {
     try { threeReady(); tuneLib().catch(function () {}); } catch (_) {}
   }
-  function catalogId(c) { return ((c.artist || '') + '|' + (c.album || '')).toLowerCase().replace(/\//g, '-').trim(); }   // 主站 cardIdOf＝bake-cards.mjs:85 同一條
-  function tuneCardOf(o) {   // 星圖那張（{artist, album}）→ 遊戲的卡
-    if (!o) return null;
-    if (o._gid && card(o._gid)) return card(o._gid);
-    var k = catalogId(o);
-    if (!UI.tuneIdx) { UI.tuneIdx = {}; poolIds().forEach(function (id) { UI.tuneIdx[catalogId(C.cards[id])] = id; }); }
-    return card(UI.tuneIdx[k]);
-  }
+  function catalogId(c) { return ((c.artist || '') + '|' + (c.album || '')).toLowerCase().replace(/\//g, '-').trim(); }   // 主站 cardIdOf＝bake-cards.mjs 同一條（＝C.catalogId）
+  // 星圖那張（{artist, album}）→ 遊戲的卡：卡片 id 就是 catalogId（第 B 波），不用再反查
+  function tuneCardOf(o) { return o ? (card(o._gid) || card(catalogId(o))) : null; }
   function coverAbs(c) { var u = coverSrc(c); if (!u) return ''; try { return new URL(u, location.href).href; } catch (_) { return u; } }
   // 播放器轉接（dip-tune 的 cfg.player）：playAlbum → fx.js music.play；不掛主站 DipPlayer（遊戲規則：絕不 DipPlayer.mount，fx.js 也不借它的 AudioContext）
   //   onStateChange 回報 {status:'loading'|'playing'|'stopped'|'error', artist, album}：一首自然放完（music.onEnded）＝stopped，收藏電台靠它換下一張
@@ -3638,16 +3774,21 @@
   function tuneConfigure(DT) {
     if (UI.tuneCfg) return;
     UI.tuneCfg = true;
+    // 封面／試聽讀活的卡（第 B 波 SPEC-B §1.6【定稿 B7】）：精選新卡的媒體晚到（控制台等媒體逾時先開）也會補上——下次重畫有封面、播放當下才讀試聽。
+    //   dip-tune 會把解出來的封面寫回 c.card.coverUrl（只有 getter 的話嚴格模式丟例外）→ setter 另存 _cv／_pv、getter 先回它們
     var pool = { cards: poolIds().map(function (id) { var c = C.cards[id];
-      return { artist: c.artist, album: c.album, classic: c.c, obscurity: c.o, accessibility: c.h, tier: c.tier || undefined, previewUrl: c.previewUrl || '', coverUrl: coverAbs(c), year: c.year || 0, genres: (c.genres || []).slice(), _gid: id }; }), apex: {} };
+      var o = { artist: c.artist, album: c.album, classic: c.c, obscurity: c.o, accessibility: c.h, tier: c.tier || undefined, year: c.year || 0, genres: (c.genres || []).slice(), _gid: id, _cv: '', _pv: '' };
+      Object.defineProperty(o, 'coverUrl', { enumerable: true, configurable: true, get: function () { return this._cv || coverAbs(card(this._gid)); }, set: function (v) { this._cv = v || ''; } });
+      Object.defineProperty(o, 'previewUrl', { enumerable: true, configurable: true, get: function () { return this._pv || (card(this._gid) || {}).previewUrl || ''; }, set: function (v) { this._pv = v || ''; } });
+      return o; }), apex: {} };
     DT.configure({
       host: function () { return UI.tuneHost; },
       threeReady: threeReady,
       loadCardPool: function () { return Promise.resolve(pool); },
       cardIdOf: function (a, b) { return catalogId({ artist: a, album: b }); },
       player: tunePlayer(),
-      resolveCover: function (c) { return Promise.resolve(c.coverUrl || ''); },
-      listCover: function (c) { return Promise.resolve(c.coverUrl || ''); },
+      resolveCover: function (c) { return Promise.resolve(coverAbs(card(c && c._gid)) || (c && c.coverUrl) || ''); },
+      listCover: function (c) { return Promise.resolve(coverAbs(card(c && c._gid)) || (c && c.coverUrl) || ''); },
       audioPref: function () { return save.settings.sound !== false; },
       setAudioPref: function (on) { var f = FX(); if (on) soundUp(); else if (f && f.setSound) { try { f.setSound(false); } catch (_) {} save.settings.sound = false; persist(); } },
       onFirstGesture: function (on) { if (on) soundUp(); },
@@ -3661,7 +3802,7 @@
     if (typeof DT.setMine !== 'function') return;
     var own = homeOwnedIds();
     try {
-      if (own.length) DT.setMine(new Map(own.map(function (id) { return [catalogId(card(id)), 1]; })), { on: true });
+      if (own.length) DT.setMine(new Map(own.map(function (id) { return [id, 1]; })), { on: true });   // 卡片 id＝catalogId（第 B 波）
       else { DT.setMine(null); DT.setMine(new Map()); }
     } catch (e) { console.error(e); }
   }
@@ -3674,7 +3815,7 @@
       return;
     }
     var had = save.want.indexOf(c.id) >= 0;
-    if (!had) { save.want.push(c.id); if (save.want.length > 200) save.want.shift(); persist(); }
+    if (!had) { save.want.push(c.id); if (save.want.length > 200) save.want.shift(); if (save.run) save.run.want = save.want.slice(-200); persist(); }   // 進行中的 run 的快照跟著（下一檔起算；SPEC-B §5.2）
     toast(fill(line(had ? 'homeWantAgain' : 'homeWant'), { album: c.album }), 'keep');
     // 留在星圖上：當成「從結果頁回到星圖」（同一張不重播）
     var DT = W.DipTune; if (DT && UI.tune) setTimeout(function () { if (UI.tune) tuneStart(DT); }, 60);
@@ -3782,7 +3923,7 @@
     var total = poolIds().length;                       // 旗標關：試做的 42 張不算（分母維持 316）
     var ids = Object.keys(save.shelf).filter(cardVis).reverse();
     var shown = ids.filter(function (id) { return filter === 'new' ? isNewOnShelf(id) : filter === 'ace' ? !!card(id).tier : true; });
-    var SRC_ORDER = { run: 0, boss: 1, start: 1, gift: 2 };
+    var SRC_ORDER = { run: 0, boss: 1, start: 1, daily: 2, gift: 3 };   // 今日推薦（daily）排在 run 之後、gift 之前（SPEC-B §2.3）
     var own = ids.filter(isOwned).sort(function (a, b) { return (SRC_ORDER[save.shelf[a].src] | 0) - (SRC_ORDER[save.shelf[b].src] | 0); });
     var bar = el('div', 'lb-top page', '<div class="tt">唱片櫃<small>' + esc(SU('shelfOwn', { n: own.length })) + '・' + esc(SU('shelfKnown', { n: ids.length, total: total })) + '</small></div><button type="button" class="lnk" data-a="close">關閉</button>');
     pg.appendChild(bar);
@@ -4053,6 +4194,48 @@
     if (UI.screen === 'home') { var hp = homePlayable(), hi = hp.indexOf(c.id); if (hp.length) next = card(hp[(hi + 1) % hp.length]) || c; UI.homeNext = next.id; }
     setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
   }
+  // ======================================================================= 精選新卡的封面／試聽（第 B 波 SPEC-B §1.2、§1.6【定稿 C3、C4、G3-2】）
+  //   cards-pool.js（同步）只有邏輯＋名字；封面、試聽在 cards-media.json（302 KB gz），標題第一次畫好後閒置時才 fetch → .json() → 再排一次閒置才 C.attachMedia。
+  //   ?v＝C.poolVersion（內容雜湊）：重烘卡池自動破快取、永遠跟 cards-pool.js 對得上（不另設版本常數）。attachMedia 回 0＝版本不合（快取到舊檔）：
+  //   警告一次、不重試；網路失敗 5 秒後重試一次，再失敗就等下一次換畫面再試。成功發 document 的 'dip:media'（econ 抽屜、今日推薦面板開著就重畫）。
+  //   邏輯不依賴媒體：沒到＝新卡顯示專輯名字卡、試聽鈕不亮。mediaReady()＝一次性 promise（套好 true；版本不合／卡池沒載到 false；網路失敗不 resolve，用的人自己設逾時）
+  var MEDIA = { kicked: false, busy: false, bad: false, fails: 0, p: null, done: null };
+  function mediaReady() {
+    if (!MEDIA.p) MEDIA.p = new Promise(function (res) { MEDIA.done = res; });
+    if (C && C.mediaReady) MEDIA.done(true);
+    else if (!C || !C.poolLoaded || MEDIA.bad) MEDIA.done(false);
+    return MEDIA.p;
+  }
+  function idle(fn, ms) {
+    if (W.requestIdleCallback) { try { W.requestIdleCallback(function () { fn(); }, { timeout: 2000 }); return; } catch (_) {} }
+    setTimeout(fn, ms);
+  }
+  function mediaKick() {
+    if (MEDIA.kicked) return; MEDIA.kicked = true;
+    idle(mediaLoad, 300);
+  }
+  function mediaRetry() { if (MEDIA.kicked && MEDIA.fails >= 2) mediaLoad(); }
+  function mediaLoad() {
+    if (!C || !C.poolLoaded || !C.poolVersion || C.mediaReady || MEDIA.busy || MEDIA.bad || !W.fetch) { mediaReady(); return; }
+    MEDIA.busy = true;
+    var ac = W.AbortController ? new AbortController() : null, tm = setTimeout(function () { if (ac) ac.abort(); }, 20000);
+    W.fetch('cards-media.json?v=' + encodeURIComponent(C.poolVersion), ac ? { signal: ac.signal } : undefined).then(function (r) {
+      if (!r.ok) throw new Error('cards-media.json HTTP ' + r.status);
+      return r.json();
+    }).then(function (m) {
+      clearTimeout(tm);
+      return new Promise(function (res) { idle(function () { var n = 0; try { n = C.attachMedia(m); } catch (e) { console.error(e); } res(n); }, 0); });
+    }).then(function (n) {
+      MEDIA.busy = false;
+      if (!n) { MEDIA.bad = true; console.warn('[media] cards-media.json 版本或列數跟 cards-pool.js 不合，不套（新卡先用專輯名字卡）'); mediaReady(); return; }
+      mediaReady();
+      try { D.dispatchEvent(new CustomEvent('dip:media', { detail: { n: n } })); } catch (e) { console.error(e); }
+    }).catch(function (e) {
+      clearTimeout(tm); MEDIA.busy = false; MEDIA.fails++;
+      console.warn('[media]', e && e.message ? e.message : e);
+      if (MEDIA.fails === 1) setTimeout(mediaLoad, 5000);
+    });
+  }
   function boot() {
     if (UI.booted) return; UI.booted = true;
     E = W.DipLabEngine; C = W.DipLabContent;
@@ -4060,6 +4243,7 @@
     apexBoot();
     D.body.classList.add('in-battle');
     svhFallback();
+    loadDaily();                                       // 今日推薦（獨立鍵）先讀：loadSave 拿它的 log 自癒唱片櫃（SPEC-B §2.3）
     save = loadSave();
     takeBring();
     var f = FX();
@@ -4076,7 +4260,7 @@
     if (DEBUG) installDebug();
     buildShell();
     configTut();
-    if (UI.discardedOld || UI.migratedUnlock) persist();   // 解鎖制遷移（補了 lastAce 那派那張）寫回去：下次載入不再補、不再提示
+    if (UI.discardedOld || UI.migratedUnlock || UI.migrated7) persist();   // 解鎖制遷移（補了 lastAce 那派那張）、v7 換 id（含今日推薦自癒）寫回去：下次載入不再補、不再提示
     // 舞台最多等 1.2 s：標題要在 2 s 內出來；晚到的舞台照樣接上（B-slow-stage-empty-scene：標題的鈕等舞台好了才收點擊）
     var started = false;
     var start = function () { if (started) return; started = true; UI.firstScreen = true; go('title'); UI.firstScreen = false; };
