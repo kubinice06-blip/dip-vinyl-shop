@@ -1016,3 +1016,15 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-026.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 29 處。
 - 本工作階段 WebSearch 合計約 103 次（研究層 sd-025 36、sd-026 41，主線 26）。
+
+## sd-hold-5：張露《繁星點點》、delayde《finding solitude》最終重查（2 張）— s18
+
+主線自查（WebSearch 4 次，其中 extended 2 次；WebFetch／curl 約 15 次）。**救回 0、最終留置 2**（`held-sd-hold-5.json`，研究稿 `desc-tools/batches/research/sd-hold-5-a.json`）：
+
+| 卡 | 這次查到 | 最終裁定 |
+|---|---|---|
+| 張露《繁星點點 張露》 | **身分釘死：不是張露。** Discogs release 33707097＝台灣環球唱片 1977 年 1 月 LP《繁星點點／何時相聚／世界真有趣》（ULP-5125），歌手**張璐**，十二首與本卡串流版曲目幾乎全同；張璐另有 1978 年 Prinstar《愛之鎖 第一輯》；中央廣播電臺 Rti 節目〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉也歸給張璐。串流平台的「張露、1973-10-23」是上架資料誤掛。張露 1975 年已退出歌壇、人在香港 | **最終留置，列待店主處理**：卡面藝人是錯的。照張露寫會張冠李戴，照張璐寫又與卡面不符；改藝人（seed 第 0 欄＋card_catalog＋KV 鍵）或下架屬卡池結構，不在本線 |
+| delayde《finding solitude》 | 必查清單重跑：extended 搜尋只回 Bandcamp 曲頁與播放清單；Bandcamp 專輯頁與五個曲頁 about／credits 全空、Chillhop 藝人頁 bio 是「...」、SoundCloud 只有一句「heading north」、Last.fm 無 wiki；無維基、無官網；AllMusic／Pitchfork／RYM 無，Discogs 403 | **最終留置**：單人 lo-fi beat 自主發行，網路上沒有任何專輯層級的故事或聲音描述；現行舊稿（Saltash、自主發行日、三位客席）已是可得資料上限，只是開頭鉤子與曲數曲長屬雜項。不再重查 |
+
+- 搜尋摘要另有影片稱張璐 1975 年 17 歲獲中國時報與台視合辦全國歌唱比賽冠軍（YouTube 頁 429 抓不到原文，未採）。
+- KV 未寫（兩張皆留置，`sd-hold-5-out-1.json` 只有 hold 列）。
