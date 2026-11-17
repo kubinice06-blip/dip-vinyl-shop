@@ -85,8 +85,8 @@
 | sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | | |
 | sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |
 | sd-087 | 其餘（Sasha & John Digweed … Skyray） | 30 | | |
-| sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | | |
-| sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | | |
+| sd-088 | 其餘（Slint … Steve Lacy & Michael Smith） | 30 | s47 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
+| sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | s47 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-090 | 其餘（Tabu Ley Rochereau … The Clark Sisters） | 30 | | |
 | sd-091 | 其餘（The Comes … The Icemen） | 30 | | |
 | sd-092 | 其餘（The II Generation … THE SQUARE） | 30 | | |
