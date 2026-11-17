@@ -79,8 +79,8 @@
 | sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
 | sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
 | sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
-| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | | |
-| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | | |
+| sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | s44 | ✅ 上線 30 |
+| sd-083 | 其餘（Organum … Pontiac Streator） | 30 | s44 | ✅ 上線 30 |
 | sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | | |
 | sd-085 | 其餘（Quatuor Diotima … Riow Arai） | 30 | | |
 | sd-086 | 其餘（Rita Reys … Sasha & John Digweed） | 30 | | |
