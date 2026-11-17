@@ -404,7 +404,9 @@
   //   存檔裡的跟它不一樣＝別的分頁收了新的（或用掉了）→ 改用存檔裡的。只同步 bring，其他欄位照舊（同一份存檔兩個分頁都在玩，後存的贏）
   //   小鍵 .bringKey＝上次 persist 的 bringKey：等於 bringSeen＝沒人動過，不 parse 整份（SPEC-B C6；舊碼分頁不寫它，接受）
   var bringSeen = '', BRING_KEY = KEY + '.bringKey';
-  function validBring(b) { return !!(b && typeof b === 'object' && typeof b.id === 'string' && card(b.id) && E.canSeed(C, b.id)); }
+  // 帶得進來＝卡在、不是頂點、不是傳奇（主線 M2：帶傳奇讓新手前三位太好打；史詩照帶）
+  function bringOk(id) { var c = card(id); return !!c && E.canSeed(C, id) && E.rarity(c) !== 'legendary'; }
+  function validBring(b) { return !!(b && typeof b === 'object' && typeof b.id === 'string' && bringOk(b.id)); }
   function bringKey(b) { return b ? b.id + '@' + b.at : ''; }
   function syncBring() {
     if (!save || UI.saveReadOnly || UI.noSave) return;
@@ -1957,7 +1959,8 @@
     // 主站「帶去店裡對決」帶進來（開機讀 ?card=）：吐司說明一次（第一次玩的人要先走完序章那一趟）
     if (UI.bringToast != null) {
       var bt = UI.bringToast; UI.bringToast = null;
-      if (bt) toast(SU(firstEver() ? 'bringToastFirst' : 'bringToast', { album: (card(bt) || {}).album || '' }), 'keep long');
+      if (bt.charAt(0) === '!') toast(SU('bringLegend', { album: (card(bt.slice(1)) || {}).album || '' }), 'keep long');
+      else if (bt) toast(SU(firstEver() ? 'bringToastFirst' : 'bringToast', { album: (card(bt) || {}).album || '' }), 'keep long');
       else toast(SU('bringMissing'), 'keep');
     }
     // 面板量出來要多高，舞台就收到放得下（B-title-375-clipped：警告那行永遠在畫面裡）
@@ -2280,7 +2283,7 @@
   // 主站帶來、這一趟可以帶上場的那張：合法（卡在、不是王牌）、而且不在這次王牌那組送的四張裡；沒有回 null
   function bringNow(tier) {
     var b = save && save.bring && save.bring.id;
-    if (!b || !card(b) || !E.canSeed(C, b)) return null;
+    if (!b || !bringOk(b)) return null;
     if (tier && (C.gifts[tier] || []).indexOf(b) >= 0) return null;
     return b;
   }
@@ -2292,7 +2295,8 @@
     try { var u = new URL(location.href); u.searchParams.delete('card'); history.replaceState(history.state, '', u.pathname + u.search + u.hash); } catch (_) {}
     if (UI.saveReadOnly) return;
     var id = bringIdOf(v, raw);
-    if (card(id) && E.canSeed(C, id)) { save.bring = { id: id, at: now() }; UI.bringToast = id; persist(); }
+    if (bringOk(id)) { save.bring = { id: id, at: now() }; UI.bringToast = id; persist(); }
+    else if (card(id) && E.canSeed(C, id)) UI.bringToast = '!' + id;   // 傳奇（M2）：不收，吐司說明
     else UI.bringToast = '';      // 查不到、王牌（帶不進來）：吐司說店裡沒有
   }
   function catalogIdNorm(v) { return String(v).toLowerCase().replace(/\//g, '-').trim(); }

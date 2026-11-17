@@ -1150,6 +1150,7 @@
       bringToast: '《{album}》在櫃檯等你：下一趟開局可以帶上場',          // 標題畫面吐司（網址 ?card= 收下時）
       bringToastFirst: '《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶上場',   // 第一次玩（接著是序章，序章那一趟不挑種子）
       bringMissing: '店裡沒有這張唱片。',                                 // ?card= 查不到或是王牌（帶不進來）
+      bringLegend: '《{album}》是傳奇唱片，帶上場太好打，店裡不收；史詩以下都能帶。',   // ?card= 是傳奇（主線 M2：不收；史詩照帶）
       // 存檔唯讀（第 B 波 SPEC-B §2.1、附錄 A）：標題 lb-foot 一行；兩個都有只出 migrateFail
       migrateFail: '存檔升級失敗，這次先不存檔；重新整理再試一次。',      // 卡片 id 換 catalogId 那一步丟例外（整份唯讀、不覆寫）
       poolMissing: '唱片沒有全部載到，這次先不存檔；重新整理再試一次。'   // cards-pool.js 沒載到（C.poolLoaded false）

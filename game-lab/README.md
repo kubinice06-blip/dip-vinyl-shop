@@ -185,11 +185,12 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=76` |
+| `index.html` | 載入順序：dip-character → dip-player（只借聲音偏好）→ chars → cards → cards-pool → bins → content → engine → fx → shop → shop-props → stage → cardinfo → duel → tutorial → charedit → econ → ui；資源 `?v=77`（第 B 波）；`cards-media.json` 標題畫好後才抓 |
 | `engine.js` | 規則（純函式、可重現）：對決、提示與唬人、六手、無限試煉（位數曲線、升級、中繼點）、經濟（`choose`）、策略（sim／autoplay 用） |
 | `content.js` | 文案與資料：劇本 `C.script`、規則卡、提示句、結果句、客人與牌單、禮物、特價箱、配件、經濟、教學、店內字 |
-| `cards.js`、`bins.js` | 卡池（316 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |
-| `ui.js`、`style.css` | 外殼：頂欄＋常駐舞台＋面板、標題、逐句執行器與序章面板、來客（第 n 位、聲望那顆）、進退場、挑唱片（掉落旁白）、升級三選一、打倒藏家、老闆說情、結算（一趟留一張）、挑種子、唱片櫃（我的收藏／認識過）、規則卡、⏸、店內熱點、存檔 v6（v5、v4 遷移） |
+| `cards-pool.js`、`cards-media.json` | 第 B 波精選新卡 4,677 張（照欄存的邏輯＋名字，同步載）與它們的封面／試聽（延後載；`?v=poolVersion`、版本不合不套）；`tools/bake-cards.mjs --pool-only` 產生。卡片 id 一律 catalogId（`藝人|專輯` 小寫）；舊 slug 對照在 `tools/legacy-ids.json`（存檔 v6→v7 遷移、主站舊連結） |
+| `cards.js`、`bins.js` | 核心卡池（368 張；`require('./cards.js')` 永遠只有核心，整池讀 `content.js` 的 `C.cards`＝5,045 張）與 16 區（十大類的 POP 改 CITY POP＋INDIE ROCK／INDIE POP＋TW＋NEW＋FEATURE＋PICKS）的卡池與店裡畫的封面（`tools/bake-cards.mjs` 產生，不要手改；封面覆寫在 `tools/cover-overrides.json`） |
+| `ui.js`、`style.css` | 外殼：頂欄＋常駐舞台＋面板、標題、逐句執行器與序章面板、來客（第 n 位、聲望那顆）、進退場、挑唱片（掉落旁白）、升級三選一、打倒藏家、老闆說情、結算（一趟留一張）、挑種子、唱片櫃（我的收藏／認識過）、規則卡、⏸、店內熱點、存檔 v7（第 B 波：v6→v7 卡片 id 換 catalogId、`.bak6` 備份、遷移失敗／卡池沒載到唯讀；v5、v4 遷移）、一檔貨介面、今日推薦集點卡（獨立鍵 `.daily`）、主站帶卡（`?card=`；傳奇帶不進來，主線 M2） |
 | `duel.js`、`duel.css` | 對決盤面：提示句、蓋著的封套、牌桌兩張（主角）、上一手小列（牌桌最上面）、他名字旁的稱號小名牌、小相剋圖例（字帶左邊）、結果句、手牌（疊成一排、點一張在那張打開＋屬性鈕）、品味／底氣小籤 |
 | `econ.js`、`econ.css` | 經濟介面：箱子抽屜（名牌＋中文、稀有度、價；FEATURE 金名牌與大稀有度標；錢不夠指去櫃檯）、櫃檯兩個分頁（配件／賣給老闆：包包太長時格子那一區自己捲）、特價箱兩種模式（每格標價） |
 | `tutorial.js`、`tutorial.css` | 教學六手、一次性老闆小提示 |
@@ -201,6 +202,7 @@ H5-1 只動聲望：**你 10 → 9** 壓通關率（約 −7 點），客人聲�
 | `dev/duel-harness.html`、`dev/econ-harness.html`、`dev/stage-harness.html` | 只掛對決盤面／經濟介面／舞台的測試台 |
 | `dev/decks-v4.md`、`dev/bins-v4.md`、`dev/sim-v4.json` | 牌單、箱子與牆上封面、模擬結果（給店主看） |
 | `LINES-REVIEW.md` | 全部新句（`lint-copy` 產生），待店主過目 |
+| `tests/e2e-*.mjs`、`tests/e2e-lib.mjs` | 端對端測試（純 node＋Playwright Chromium）與共用函式；`e2e-pool.mjs`＝第 B 波（卡池 5,000＋catalogId、存檔 v7 遷移、`?card=`、一檔貨、想要清單、今日推薦、媒體延後、首屏、聆聽室、效能） |
 
 ## 除錯旗標
 
@@ -227,7 +229,7 @@ node game-lab/tools/check-shops.mjs         # 店家配置、熱點（含 bin:* 
 node game-lab/tools/check-covers.mjs        # 每個看得到的封面在 cards.js、全店不重複、符合那一區的曲風
 
 S=390x664,375x548,430x932,360x640
-LAB_SIZES=$S LAB_FULL=1 node game-lab/tests/e2e.spec.mjs     # 端對端情境（#1–#56；#45–#48＝無限試煉的來客、升級、打倒藏家、中繼點與結算；#49–#53＝從唱片櫃挑牌開局：掉落旁白、帶走一張、挑種子、種子不能賣、存檔 v5→v6；#54＝跟老闆換王牌；#13＝再挑戰一趟沒有王牌面板；#56＝包包 8／20 張打贏直接收第 9／21 張；#57＝第 A 波：對戰台、稱號、常出、讀對了、越讀越響、險勝、錢跳、差一點）
+LAB_SIZES=$S LAB_FULL=1 node game-lab/tests/e2e.spec.mjs     # 端對端情境（#1–#56；#45–#48＝無限試煉的來客、升級、打倒藏家、中繼點與結算；#49–#53＝從唱片櫃挑牌開局：掉落旁白、帶走一張、挑種子、種子不能賣、存檔 v5→v7；#55＝主站帶卡（catalogId、舊 slug）；#54＝跟老闆換王牌；#13＝再挑戰一趟沒有王牌面板；#56＝包包 8／20 張打贏直接收第 9／21 張；#57＝第 A 波：對戰台、稱號、常出、讀對了、越讀越響、險勝、錢跳、差一點）
 LAB_SIZES=$S node game-lab/tests/e2e-duel.mjs                # 對決盤面（index.html；LAB_DUEL_PAGE=harness 跑測試台）
 LAB_SIZES=$S node game-lab/tests/e2e-econ.mjs                # 經濟介面（econ-harness＋index.html #21–#31；#7 包包 8／24 張直接買、#15 錢不夠指去櫃檯＋櫃檯「賣給老闆」（24 張格子捲、賣、交還、留 5 張）、#29 包包面板只看＋點老闆賣給老闆、#31 去櫃檯的提示）
 LAB_SIZES=$S LAB_SCREENS=title,night node game-lab/tests/e2e-taps.mjs   # 真點每個熱點與家具（標題、來客）
@@ -235,6 +237,8 @@ node game-lab/tests/e2e-prologue.mjs                         # 序章時間軸 P
 LAB_SIZES=$S node game-lab/tests/e2e-intro.mjs              # 開頭旁白＋玻璃倒影捏人（?debug=1 預設不演，這支加 &intro=1）
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-apex.mjs   # 頂點卡試做（?apex=1）：挑王牌面板、能力框、跳過序章（解鎖制：擁有的卡先放進存檔）
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-unlock.mjs # 流派與頂點卡解鎖：新存檔只有初始派、鎖住的派點不了、打倒藏家掉被剋那派、旗標開沒收到的卡不能挑
+LAB_SIZES=$S LAB_MAIN_BASE=<main 的伺服器根> node game-lab/tests/e2e-pool.mjs   # 第 B 波 P1–P12＋M2：畫面類（P1、P3–P10b）每個尺寸、邏輯 fixture（P1b–P1g、P2、P11、P12、M2）只在 390x664；
+                                                             #   P9 首屏 gzip ≤760 KB（硬門檻）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
 ```
 
 e2e 讀 `LAB_BASE`（伺服器根，預設 `http://localhost:8765`）或 `LAB_URL`；開不了本機伺服器時加 `LAB_ROOT=<repo 根目錄>`，Playwright 直接從磁碟回應 `LAB_BASE` 底下的請求（`tests/e2e-lib.mjs`）。Playwright 只有 Chromium。**真 iPhone（Safari 與 Chrome）請各開一次**：店景清楚、聲音、教學遮罩洞裡點得到、抽屜關得掉、唱盤演出不卡。

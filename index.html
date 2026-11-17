@@ -5927,12 +5927,16 @@ ${seenList}
     document.getElementById('tuneApp').hidden = !show;
     document.getElementById('tuneResultWrap').hidden = show;
   }
-  // 遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json＝{ 主站 cardId: 遊戲卡 id }（扣掉三張王牌：遊戲裡帶不進去）。
+  // 遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json。
+  //   v2＝{ v:2, n, h:[fnv1a32(catalogId)…] }（精選 5,000 張，扣掉王牌與頂點卡）→ 轉成 { has: Set }；遊戲卡 id 就是 catalogId。
+  //   v1＝{ 主站 cardId: 遊戲卡 id } 物件（舊快取）照收；遊戲那邊把舊 slug 照表換。
   // 結果頁的卡在裡面才出「帶去店裡對決」；載不到就當沒有、不出鈕（下次進頻率光譜再試）。店內模式（?shop=1）不出，不用載
   let _poolIndexP = null;
+  function fnv1a32(s) { let h = 0x811c9dc5; s = String(s); for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193); } return h >>> 0; }   // ＝game-lab engine.js／build-pool-index、dip-tune 同一條
   function loadPoolIndex() {
     if (SHOP_MODE) return Promise.resolve(null);
-    if (!_poolIndexP) _poolIndexP = fetch('game-lab/pool-index.json').then(r => r.ok ? r.json() : null).then(j => (j && typeof j === 'object' && !Array.isArray(j)) ? j : null)
+    if (!_poolIndexP) _poolIndexP = fetch('game-lab/pool-index.json').then(r => r.ok ? r.json() : null)
+      .then(j => (j && typeof j === 'object' && !Array.isArray(j)) ? ((j.v === 2 && Array.isArray(j.h)) ? { has: new Set(j.h) } : j) : null)
       .catch(() => null).then(j => { if (!j) _poolIndexP = null; return j; });
     return _poolIndexP;
   }
@@ -5989,7 +5993,7 @@ ${seenList}
       // 跟封面一起查：唱片櫃裡有幾張（×n）、在不在遊戲卡池（帶去店裡對決）；都不擋結果頁（1.5 秒內沒回來就當沒有）
       const late = (p, v) => Promise.race([Promise.resolve(p).catch(() => v), new Promise(r => setTimeout(() => r(v), 1500))]);
       const mineP = late(collectionCountOf(card.artist, card.album), 0);
-      const gameP = late(loadPoolIndex().then(ix => (ix && ix[cardIdOf(card.artist, card.album)]) || null), null);
+      const gameP = late(loadPoolIndex().then(ix => { const cid = cardIdOf(card.artist, card.album); return !ix ? null : ix.has ? (ix.has.has(fnv1a32(cid)) ? cid : null) : (ix[cid] || null); }), null);
       let assets;
       try { assets = await resolveCardAssets(card.artist, card.album); }
       catch (e) { assets = { ov: null, coverUrl: '', spotifyUrl: '', bandcampUrl: '', ytUrl: '', previewUrl: '', previewUnavailable: false }; }
