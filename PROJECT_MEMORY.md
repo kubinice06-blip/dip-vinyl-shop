@@ -9,6 +9,14 @@
 - **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-027/028.json,review-sd-027/028.json}`、`desc-tools/batches/{cards,research,output}/sd-027*、sd-028*`、onboarding manifest 57 處。
 - **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵逐字回讀 60/60；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異。
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s15：sd-025、sd-026 上線（60 張，無留置）
+
+- **結果**：sd-025 上線 30（Blakey 六張、Schnabel 二張、Antis、Arditti、Troilo、Karas、Badalamenti、寶萊塢《Chalte Chalte》等）；sd-026 上線 30（Basic Channel、Barrington Levy、BIGBANG、Bill Charlap、Bing Crosby、Blood Incantation、Blueboy、Motherlight 等）。**兩批都無留置、CURATED 覆蓋 0**（開工前預查 60 張皆 KV-HIT）。
+- **主線補查**：sd-025 補 14 張（Cafe Bohemia 兩卷、Schnabel 兩張、Attrition 1985 器材專訪、Bappi 作詞人回憶、Troilo／Piazzolla 等），sd-026 補 8 張（Motherlight、Carlin、《Play》、Fevre、Big Boys 等）。身分修正：Antis 兩張是 2003 年整理 CD、Thorvaldsdottir 2023 年發行、Fevre 重發是 Sound Obsession。
+- **審稿**：sd-025 改 29 處（第二句以《盤名》起句、Jazz Corner 鉤子換有出處的故事、Argo／Attrition 鉤子去無出處與軌數字眼、Schubert「晚期」更正），sd-026 改 6 處（Basic Channel 鉤子不得用盤面印刷），逐條在 `rulings.md`。WebSearch 工作階段約 103 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-025/026.json,review-sd-025/026.json}`、`desc-tools/batches/{cards,research,output}/sd-025*、sd-026*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；KV 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿；QA 字數 180–240、鉤子加權 ≤50、同批前四字互異、無軌序／曲長／盤號。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s17：sd-029、sd-030 上線（59 張，留置 1）
 
 - **結果**：sd-029 上線 30（Chris & Cosey、Brotherhood of Breath、Chucho Valdés、Clock DVA、Company、Schnitzler、Crow、Eraserhead 等，無留置）；sd-030 上線 29（Oistrakh、Deafheaven、DEATH SIDE、Dexter Gordon、Dick Gaughan、Die Ärzte、Django、Shostakovich 自奏、Dominique A、Grolnick 等）。**留置 1**：delayde《finding solitude》查無任何專輯層級資料，KV 保留舊稿。
