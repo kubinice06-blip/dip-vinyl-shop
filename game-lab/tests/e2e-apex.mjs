@@ -260,28 +260,39 @@ async function runSize(browser, w, h) {
       await lab({ ace: 'heresy', aceId: RALLIZES, enemy: 'copycat', seed: 6 });
       await sleep(300);
       await tapAt(page, 'dt:card-ace'); await sleep(400); await tapAt(page, '.dl .apx-box .go'); await sleep(300);
-      const rv = await C(page, () => { const d = window.__lab.rawDuel(), st = document.querySelector('.dl .hint .apxst:not([hidden])'); return { bluff: !!d.plan.bluff, stamp: st ? st.textContent : '', cls: st ? st.className : '', view: window.DipLabDuel.debug().view.apexReveal }; });
+      // 章＝結果句的唬（11-17 審查：看得出來的唬——明指出的不是提示那色、半指正好出他說不出那色、不露不算），不是藏起來的 plan.bluff
+      const rv = await C(page, () => { const d = window.__lab.rawDuel(), h = d.plan.hint, k = h.kind || 'one', st = document.querySelector('.dl .hint .apxst:not([hidden])');
+        const lie = k === 'one' ? d.plan.attr !== h.attr : k === 'half' ? d.plan.attr === h.not : false;
+        return { bluff: lie, kind: k, stamp: st ? st.textContent : '', cls: st ? st.className : '', view: window.DipLabDuel.debug().view.apexReveal }; });
       const uu = await U(page);
       const ok5 = /\bhold\b/.test(hold.cls) && hold.dot && hold.live === 'hold' &&
         d1.st === 'live' && d1.lab === uu.timing.duel && d2.st === 'live' && d2.lab === uu.timing.duel && d2.live === 'on' && d2.n === 2 &&
         !!pl && hp0.hp < hp0.max && want5 > 0 && hp1.hp === hp0.hp + want5 && hp1.num === `${hp1.hp}/${hp0.max}` && hp1.fl.includes(uu.healToast.replace('{n}', want5)) && hn.includes(healNote) &&
         rv.view === (rv.bluff ? 'bluff' : 'honest') && rv.stamp === (rv.bluff ? uu.revealBluff : uu.revealHonest);
       record(5, size, ok5 && !errs(page).length, `留著 ${JSON.stringify(hold)}；整場 ${JSON.stringify(d1)} → 下一手 ${JSON.stringify(d2)}；回聲望 ${JSON.stringify(hp0)} → ${JSON.stringify(hp1)}（預期 +${want5}）結果句 ${JSON.stringify(hn)}；看穿 ${JSON.stringify(rv)}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
-      // 5h（11-17 讀牌加難）：半指那手（只說他不出哪一色）看穿照樣蓋章：真話＝他出他打算那色、唬人＝不是；提示框是句庫那句、view 不給計畫色
-      let hv = null;
-      for (let seed = 1; seed <= 60 && !hv; seed++) {
-        await lab({ ace: 'heresy', aceId: RALLIZES, enemy: 'copycat', seed, pos: 12 });
-        const k = await C(page, () => { const d = window.__lab.rawDuel(); return d && d.plan ? d.plan.hint.kind : null; });
-        if (k !== 'half') continue;
-        await sleep(250);
+      // 5h（11-17 讀牌加難＋審查 11-17）：半指那手（只說他不出哪一色）看穿照樣蓋章；章＝結果句的唬（他正好出他說不出那色＝唬人，其他＝真話）。
+      //   找「藏起來的唬」那手：他唬人（why bluff）但出的不是他說不出那色——舊判準（plan.bluff）會蓋「唬人！」、結果句卻寫「他照實出。」；現在要蓋「真話」，出完結果句不說唬
+      const HO = { ace: 'heresy', aceId: RALLIZES, enemy: 'copycat', pos: 12 };
+      let hv = null, hc = null;
+      for (let seed = 1; seed <= 300 && !hv; seed++) {
+        const hit = await C(page, o => { window.__lab.duelLab.start(o); const d = window.__lab.rawDuel(), p = d && d.plan;
+          return !!p && p.hint.kind === 'half' && p.why === 'bluff' && p.attr !== p.hint.not; }, Object.assign({ seed }, HO));
+        if (!hit) continue;
+        await lab(Object.assign({ seed }, HO)); await sleep(250);
         await tapAt(page, 'dt:card-ace'); await sleep(400); await tapAt(page, '.dl .apx-box .go'); await sleep(300);
         hv = await C(page, s => { const d = window.__lab.rawDuel(), v = window.DipLabDuel.debug().view, C0 = window.DipLabContent, st = document.querySelector('.dl .hint .apxst:not([hidden])');
           const x = window.DipLabDuel._fmt.hintOf(C0.hints, v.hint, C0.hintLines);
-          return { seed: s, kind: v.hint.kind, attr: v.hint.attr, not: v.hint.not, set: v.hint.set, bluff: !!d.plan.bluff, reveal: v.apexReveal, stamp: st ? st.textContent : '', tx: document.querySelector('.dl .hint .tx').textContent, want: x ? x.text : null }; }, seed);
+          return { seed: s, kind: v.hint.kind, attr: v.hint.attr, not: v.hint.not, set: v.hint.set, planBluff: !!d.plan.bluff, he: d.plan.attr, reveal: v.apexReveal, stamp: st ? st.textContent : '', tx: document.querySelector('.dl .hint .tx').textContent, want: x ? x.text : null }; }, seed);
+        await tapAt(page, 'dt:card-0'); await sleep(250);
+        const top5 = await C(page, () => (document.querySelector('.dl .pop .ab.top') || { dataset: {} }).dataset.a);
+        await tapAt(page, `.dl .pop .ab[data-a="${top5}"]`);
+        await page.waitForFunction(() => { const d = window.DipLabDuel.debug(); return d.last && d.last.ui && d.last.ui.call.on; }, null, { timeout: 8000 }).catch(() => {});
+        hc = await C(page, () => { const c = window.DipLabDuel.debug().last.ct, T = window.DipLabContent.duelText; return { l1: c.l1, l3: c.l3, bluff: c.bluff, saw: c.saw, honest: T.honestPlain }; });
       }
       const ok5h = !!hv && hv.kind === 'half' && hv.attr === null && hv.set.length === 2 && !hv.set.includes(hv.not) && !!hv.tx && hv.tx === hv.want &&
-        hv.reveal === (hv.bluff ? 'bluff' : 'honest') && hv.stamp === (hv.bluff ? uu.revealBluff : uu.revealHonest);
-      record('5h', size, ok5h && !errs(page).length, `半指那手看穿 ${JSON.stringify(hv)}`);
+        hv.planBluff && hv.he !== hv.not && hv.reveal === 'honest' && hv.stamp === uu.revealHonest &&
+        !!hc && !hc.bluff && !hc.saw && hc.l3 === hc.honest && !/唬/.test(hc.l1);
+      record('5h', size, ok5h && !errs(page).length, `半指那手看穿（藏起來的唬＝真話） ${JSON.stringify(hv)} 結果句 ${JSON.stringify(hc)}`);
     } catch (e) { record(5, size, false, 'error ' + e.message); }
     await ctx.close();
   }

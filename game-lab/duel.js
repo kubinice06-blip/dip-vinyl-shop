@@ -144,7 +144,7 @@
     lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊',
     // 11-17 讀牌加難：結果句不念關鍵字（教學那場照舊用上面幾句）
     honestPlain: '他照實出。', bluffPlain: '他唬你！他出的是{e}。', seeThroughPlain: '你看穿了！他出的是{e}。', readHit: '他讀到你了！他出的是{e}。',
-    readCounter: '你上一手照提示剋，他等著。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。',
+    readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。',
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};

@@ -110,9 +110,9 @@
 //            resolveTurn(duel, {i, attr, apex:true})＝先 activateApex 再結算（act.apex 但 !canApex → 不合法）；preview(duel, {…, apex:true}, eSide)＝假設這手發動（不寫回）
 //            時機：hand＝發動那手；duel＝發動那手起到這場結束；hold＝還沒發動前每手套 hold 小效果，發動＝放掉它、換這手的 op。一手最多一個王牌效果
 //            outcome 的步驟（FRAME 1.4）：①你 +N 星 ②他 −N 星 ③判相剋（剋得動門檻 pThr、以小搏大）④改寫比星（比星多算、同色同星扣他、比星輸不扣）⑤配件 ⑥品味
-//              ⑦剋中多扣→剋中加倍→拆穿（你出提示那色剋中＝抓到唬人）⑧彈回一半（他品味前）⑨他的底氣 ⑩他的品味 ⑪你的底氣 ⑫被剋少扣／減半（最少扣 1）⑬拆穿回血（扣完聲望後）
+//              ⑦剋中多扣→剋中加倍→拆穿（他這手是看得出來的唬（feintOf）而你剋中＝抓到唬人；11-17 起跟結果句的「你看穿了！」同一個判準）⑧彈回一半（他品味前）⑨他的底氣 ⑩他的品味 ⑪你的底氣 ⑫被剋少扣／減半（最少扣 1）⑬拆穿回血（扣完聲望後）
 //            clash 事件多 apex: null｜{id, op, src:'on'|'hold', first, hit, dE, dP, d, h, caught, pStar, eStar}；notes 多一句 {apex, op, src, d, h, hit, text}（text＝content.apexTrial.notes／holdNotes 代入）
-//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null, full}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'）
+//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null, full}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'；11-17 起照 feintOf＝結果句的唬：明指出的不是提示那色、半指正好出他說不出那色＝bluff，不露一律 honest）
 //            finishFight：duel.apexMode 時打贏回 content.apexTrial.winHeal（沒給＝C.trial.heal）。藏家、客人帶的王牌照舊 7 星、沒有能力
 //            策略：policies 在 duel.apexMode 且 canApex 時自己決定發動（會讀的＝期望增益 ≥ APEX_TAU[第 n 手]；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N；
 //              看穿＝用「知道真假」的資訊價值；新手、只出最大星、兩步公式、跟提示同色＝第 1 手就發動；亂出＝每手 1/6；先知＝有好處就發動）
@@ -409,7 +409,6 @@
     const P = st.p, A = P.ability, T = st.apexText || {};
     const op = AX.ops.length === 1 ? AX.ops[0].op : 'combo';
     const dE = r.toE - b.toE, dP = b.toP - r.toP, h = r.heal | 0;
-    const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
     let d, hit;
     if (op === 'heal') { const n = AX.ops[0].params.n | 0; d = AX.on && AX.on.heal != null ? AX.on.heal : Math.max(0, Math.min(n, P.max - P.hp)); hit = AX.first && d > 0; }
     else if (op === 'reveal') { d = 0; hit = false; }
@@ -425,7 +424,7 @@
     else if (op === 'reveal') tpl = null;                                       // 看穿：提示框蓋章，不進結果句
     else if (hit) tpl = op === 'critLeech' ? (d <= 0 ? N.leech : h > 0 ? N.critLeech : (N.crit || N.critLeech)) : N[op];   // 拆穿回血：沒回到（滿聲望）就不寫「回 0 聲望」
     else if (op === 'critLeech' && caught) { tpl = N.leechFull || null; full = true; }      // 抓到唬人但聲望是滿的（不算「沒碰到條件」）
-    else if (AX.first) tpl = CRIT_OPS.includes(op) && ePlay.attr === hintA ? (N.noneHonest || N.none) : N.none;
+    else if (AX.first) tpl = CRIT_OPS.includes(op) && !feintOf(st, ePlay.attr) ? (N.noneHonest || N.none) : N.none;   // 他這手沒唬你（照結果句的判準）
     const note = tpl ? Object.assign({ apex: A.id, op, src: AX.src, d, h, hit: !!hit, text: String(tpl).replace(/\{d\}/g, d).replace(/\{h\}/g, h).replace(/\{name\}/g, A.name || '') }, full ? { full: true } : {}) : null;
     return { info, note };
   }
@@ -438,7 +437,7 @@
     const ev = { t: 'apex', n: st.n, card: P.ace, id: A.id, name: A.name, op: A.op, timing: A.timing };
     for (const o of apexOps(A.op, A.params)) {
       if (o.op === 'heal') { const h = Math.max(0, Math.min(P.max - P.hp, o.params.n | 0)); P.hp += h; P.apexOn.heal = h; ev.heal = h; }
-      if (o.op === 'reveal') { const v = st.plan.bluff ? 'bluff' : 'honest'; P.apexOn.reveal = v; ev.reveal = v; }
+      if (o.op === 'reveal') { const v = feintOf(st, st.plan.attr) ? 'bluff' : 'honest'; P.apexOn.reveal = v; ev.reveal = v; }   // 11-17：章＝結果句的唬（feintOf），不看藏起來的計畫色
     }
     ev.pHp = P.hp;
     st.stats.apexAt = st.n;
@@ -477,8 +476,7 @@
     if (r.kind === 'counter' && r.toE > 0 && pA) { r.toE += pA; notes.push(statNote(st, 'atk', pA)); }
     let caught = false;
     if (M) {                                                                    // ⑦⑧
-      const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
-      caught = r.kind === 'counter' && r.toE > 0 && !!hintA && pPlay.attr === hintA;   // 你出提示那色還剋中＝他唬你、被你抓到
+      caught = r.kind === 'counter' && r.toE > 0 && feintOf(st, ePlay.attr);   // 他這手是看得出來的唬、被你剋中＝抓到（＝結果句「你看穿了！」；11-17 起不看計畫色：半指出另一色＝照實、不露不算、第二種唬法照樣算）
       if (M.counterPlus && r.kind === 'counter' && r.toE > 0) r.toE += M.counterPlus;
       if (M.mult && r.kind === 'counter' && r.toE > 0) r.toE *= M.mult;
       if (M.crit > 1 && caught) r.toE *= M.crit;
@@ -503,13 +501,15 @@
     }
     return r;
   }
-  // 11-17 被唬到（read.hit）：他這手出的 eAttr 跟提示對不上——明指＝不是提示那色（含讀你那手）；半指＝正好出他說不出的那色；不露＝沒說什麼，不算。
+  // 11-17 看得出來的唬：他這手出的 eAttr 跟提示對不上——明指＝不是提示那色（含讀你那手）；半指＝正好出他說不出的那色；不露＝沒說什麼，不算。
   //   （DESIGN §2.2 原寫「他出的 ≠ 計畫色」；半指時計畫色你看不到，出另一色也沒說謊，結果句寫「他照實出」，所以只算看得出來的那種）
-  function feintOf(st, eAttr) {
-    const h = st.plan && st.plan.hint; if (!h) return false;
+  //   用在：被唬到多扣（read.hit）、頂點卡試做的看穿章與拆穿（＝duel.js clashText 的 lie）。lieOf 吃 plan.hint 或 view().hint（明指有 attr、半指有 not）
+  function lieOf(h, eAttr) {
+    if (!h) return false;
     const k = h.kind || 'one';
     return k === 'one' ? eAttr !== h.attr : k === 'half' ? eAttr === h.not : false;
   }
+  function feintOf(st, eAttr) { return lieOf(st.plan && st.plan.hint, eAttr); }
   // 底氣最多擋一半：被扣 x、底氣 D → max(⌈x/2⌉, x−D)（variants TAKEN.half）
   const half = (x, D) => Math.max(Math.ceil(x / 2), x - D);
   // 結果行補的那句（C.trial.notes 由 playerDef 帶進對決；沒有字時 text 空、畫面不顯示）
@@ -2201,8 +2201,7 @@
   //   prm＝{q 照實、rho 讀你（上一手有應對才算）、beta 唬人走「剋你剋法」的比例、wMain 半指／不露時「常出」那色的先驗}。
   //   他的計畫色 X：明指＝提示那色；半指／不露＝提示 set 裡、常出那色 wMain、其他平分（沒有常出＝平分）
   //   每個 X：讀你 rho→COUNTER_OF[預測]；其他 (1−rho)：照實 q→X、唬人 (1−q)·beta→BEATS[X]、(1−q)(1−beta)→COUNTER_OF[X]
-  //   split：分成 {honest:{…}, bluff:{…}}（出 X＝honest；頂點卡「看穿」用）
-  function guestDist(v, prm, split) {
+  function guestDist(v, prm) {
     const h = v.hint || {}, set = h.set || (ATTRS.includes(h.attr) ? [h.attr] : ATTRS), main = v.eMain, rel = v.honesty ? v.honesty.rel : null;
     const w = {}; let tot = 0;
     for (const a of set) { const p0 = main ? (a === main ? prm.wMain : (1 - prm.wMain) / 2) : 1; w[a] = p0; tot += p0; }
@@ -2212,7 +2211,6 @@
       H[a] += wa * (1 - rho) * q; B[BEATS[a]] += wa * (1 - rho) * (1 - q) * b; B[COUNTER_OF[a]] += wa * (1 - rho) * (1 - q) * (1 - b);
       if (rel) { const pred = rel === 'counter' ? COUNTER_OF[a] : rel === 'mirror' ? a : BEATS[a], k = COUNTER_OF[pred]; (k === a ? H : B)[k] += wa * rho; }
     }
-    if (split) return { honest: H, bluff: B };
     return { c: H.c + B.c, o: H.o + B.o, h: H.h + B.h };
   }
   const distSides = (D, est) => ATTRS.map(a => ({ p: D[a], side: { attr: a, star: est[a], ace: false } }));
@@ -2299,23 +2297,25 @@
     if (name === 'thoughtful' || name === 'oracle') {
       const v = view(st), os = pubOpts(v);
       if (!os.length || !v.hint) return f(st, R, mem, content);
-      let dist, J = null, est = null;
+      let dist, D = null, est = null;
       if (name === 'oracle') dist = [{ p: 1, side: { i: st.plan.idx, attr: st.plan.attr } }];
       else {                                                             // 11-17：三色分布（guestDist；半指／不露沒有提示那色）
-        est = estStars(v, content); J = guestDist(v, PRM.thoughtful(st, v), true);
-        dist = distSides({ c: J.honest.c + J.bluff.c, o: J.honest.o + J.bluff.o, h: J.honest.h + J.bluff.h }, est);
+        est = estStars(v, content); D = guestDist(v, PRM.thoughtful(st, v));
+        dist = distSides(D, est);
       }
       const b0 = evPick(st, v, os, dist, 2);
       let gain, act1;
       if (reveal) {
-        if (!J) return b0.act;
-        // 發動就知道這手是真（出他打算那色）是假：照真／假各自的分布挑最好的
+        if (!D) return b0.act;
+        // 發動就知道這手是真是假（章＝feintOf：明指＝出不出提示那色、半指＝出不出他說不出那色、不露一律真話＝沒有資訊）：照真／假各自的分布挑最好的
+        const part = lie => { const o = {}; for (const a of ATTRS) o[a] = lieOf(v.hint, a) === lie ? D[a] : 0; return o; };
+        const J = { honest: part(false), bluff: part(true) };
         const sum = o => o.c + o.o + o.h, pH = sum(J.honest), pB = sum(J.bluff);
         const norm = (o, t) => ({ c: t > 0 ? o.c / t : 0, o: t > 0 ? o.o / t : 0, h: t > 0 ? o.h / t : 0 });
         const dh = distSides(norm(J.honest, pH), est), db = distSides(norm(J.bluff, pB), est);
         const bh = evPick(st, v, os, dh, 2), bb = evPick(st, v, os, db, 2);
-        gain = (pH > 0 ? pH * (apexEv(st, v, bh.act, dh) - apexEv(st, v, b0.act, dh)) : 0) + (pB > 0 ? pB * (apexEv(st, v, bb.act, db) - apexEv(st, v, b0.act, db)) : 0);
-        act1 = withApex(st.plan.bluff ? bb.act : bh.act);                // 發動就知道這手是真是假
+        gain = pH > 1e-9 && pB > 1e-9 ? pH * (apexEv(st, v, bh.act, dh) - apexEv(st, v, b0.act, dh)) + pB * (apexEv(st, v, bb.act, db) - apexEv(st, v, b0.act, db)) : 0;   // 一邊是 0（不露）＝章沒有資訊
+        act1 = withApex(feintOf(st, st.plan.attr) ? bb.act : bh.act);    // 發動就知道這手是真是假（＝activateApex 的章）
       } else {
         const b1 = evPick(st, v, os.map(o => Object.assign({}, o, { act: withApex(o.act) })), dist, 2);
         act1 = b1.act; gain = apexEv(st, v, act1, dist) - apexEv(st, v, b0.act, dist);

@@ -343,7 +343,7 @@ async function synthetic(browser) {
       pBb: ['他唬你！他出的是經典。', '他 −2', '經典剋硬蕊，但你高他 2 星以上，他剋不動。比星數。', true, false, false, false],
       pSee: ['你看穿了！他出的是冷門。', '他 −3', '', false, true, true, false],
       pSeeGap: ['你看穿了！他出的是冷門。', '你 −2', '硬蕊剋冷門，但他高你 2 星以上，剋不動。比星數。', false, true, false, false],
-      pRead: ['他讀到你了！他出的是硬蕊。', '你 −4', '你上一手照提示剋，他等著。', true, false, false, true],
+      pRead: ['他讀到你了！他出的是硬蕊。', '你 −4', '你上一手照提示剋，他就在等這招。', true, false, false, true],
       pReadMirror: ['他讀到你了！他出的是冷門。', '你 −3', '你上一手跟提示同色，他換了一招。', true, false, false, true],
       pReadThird: ['他讀到你了！他出的是經典。', '你 −5', '你防他唬人，他偏偏照實來。', true, false, false, true],
       pReadSaw: ['你看穿了！他出的是硬蕊。', '他 −3', '', false, true, true, false],

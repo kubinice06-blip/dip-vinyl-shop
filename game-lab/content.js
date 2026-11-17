@@ -603,19 +603,19 @@
       win: L('先把唱臂調平再來。', '新')
     },
     skip: {
-      line: L('這張在我店裡放了十年，沒人問過。', '新'),
+      line: L('來，看看你帶的貨。', '新'),              // 11-17 審查：開場泡泡跟第 1 手提示框同屏，不講唱片冷不冷（原句「這張在我店裡放了十年，沒人問過。」像冷門提示）
       intro: L('你手上那張，我收的時候才五十塊。', '新'),
       lose: [L('……下次這張，我要開高一點。', '新')],
       win: L('這張你出得太早了。', '新')                // COPY-17
     },
     broke: {
-      line: L('這段吉他，我練了一整個暑假。', '新'),
+      line: L('打完我還要趕去練團。', '新'),            // 11-17 審查：同上（原句「這段吉他，我練了一整個暑假。」跟他的經典提示「這段 solo，我國中就會彈了」同一種說法）
       intro: L('剛從練團室出來，耳朵還在嗡嗡叫。', '新'),
       lose: [L('……回去再練一百遍。', '新')],
       win: L('週末來看我們的場，報我名字。', '新')
     },
     buyer: {
-      line: L('這張你聽得完嗎？', '新'),
+      line: L('別急，我們慢慢來。', '新'),                    // 11-17 審查：同上（原句「這張你聽得完嗎？」是硬蕊提示的「聽完／聽不完」說法）
       intro: L('這張四十分鐘只有一個音。很好聽。', '新'),
       lose: [L('……原來你也聽到最後。', '新')],
       win: L('耳朵還沒打開，回去再磨。', '新')
@@ -773,7 +773,7 @@
         { id: 'o25', text: '「原版的價錢，比我的機車還貴。」', form: 'say', tag: '新' },
         { id: 'o26', text: '「拿三張跟人換，才換到這張。」', form: 'say', tag: '新' },
         { id: 'o27', text: '「當年只在南部發過。」', form: 'say', tag: '新' },
-        { id: 'o28', text: '「作者自己都忘記錄過這張。」', form: 'say', tag: '新' },
+        { id: 'o28', text: '「樂手自己都不記得錄過這張。」', form: 'say', tag: '新' },
         { id: 'o29', text: '他翻出一張你在店裡從沒看過的。', form: 'act', tag: '新' },
         { id: 'o30', text: '「排行榜？從來沒上過。」', form: 'say', tag: '新' },
         { id: 'o31', text: '「從資源回收場救回來的。」', form: 'say', tag: '新' },
@@ -880,52 +880,52 @@
       // 半指・他不出經典（22 句）
       c: [
         { id: 'nc01', text: '他把暢銷榜那疊推到一邊。', form: 'act', tag: '新' },
-        { id: 'nc02', text: '「大家都聽過的，先不要。」', form: 'say', tag: '新' },
-        { id: 'nc03', text: '「流行的那種，這手不會出。」', form: 'say', tag: '新' },
-        { id: 'nc04', text: '精選輯那排，他看都沒看。', form: 'act', tag: '新' },
+        { id: 'nc02', text: '「想聽大家都聽過的？下次吧。」', form: 'say', tag: '新' },
+        { id: 'nc03', text: '「這手不走流行路線。」', form: 'say', tag: '新' },
+        { id: 'nc04', text: '他的手從精選輯上面滑過去。', form: 'act', tag: '新' },
         { id: 'nc05', text: '「不會是電台在放的那種。」', form: 'say', tag: '新' },
-        { id: 'nc06', text: '「KTV 點得到的，別猜了。」', form: 'say', tag: '新' },
+        { id: 'nc06', text: '「要唱 KTV 金曲，自己去包廂。」', form: 'say', tag: '新' },
         { id: 'nc07', text: '他跳過了紀念版那一櫃。', form: 'act', tag: '新' },
-        { id: 'nc08', text: '「這手，不會是你會跟著唱的。」', form: 'say', tag: '新' },
-        { id: 'nc09', text: '「人人都有的那幾張，留在家裡。」', form: 'say', tag: '新' },
+        { id: 'nc08', text: '「這手，你跟著唱不了。」', form: 'say', tag: '新' },
+        { id: 'nc09', text: '「你家架上也有的，我幹嘛出？」', form: 'say', tag: '新' },
         { id: 'nc10', text: '他把封面誰都認得的那張收起來。', form: 'act', tag: '新' },
-        { id: 'nc11', text: '「課本上那些，先放一邊。」', form: 'say', tag: '新' },
+        { id: 'nc11', text: '「今天不考音樂課本。」', form: 'say', tag: '新' },
         { id: 'nc12', text: '「不用往大家都知道的那邊猜。」', form: 'say', tag: '新' },
-        { id: 'nc13', text: '「你爸媽那輩的歌，這次不放。」', form: 'say', tag: '新' },
-        { id: 'nc-copycat-1', text: '「大家都有的，我這次不跟。」', voice: 'copycat', form: 'say', tag: '新' },
-        { id: 'nc-already-1', text: '「這種新生聽的，我不放。」', voice: 'already', form: 'say', tag: '新' },
-        { id: 'nc-needle-1', text: '「音響行天天在放的那些，今天不出。」', voice: 'needle', form: 'say', tag: '新' },
-        { id: 'nc-skip-1', text: '「架上最好賣的那些，我不拿。」', voice: 'skip', form: 'say', tag: '新' },
-        { id: 'nc-broke-1', text: '「團練暖身那幾首，太熟了，不彈。」', voice: 'broke', form: 'say', tag: '新' },
-        { id: 'nc-buyer-1', text: '「大家都在聽的，不陪你聽。」', voice: 'buyer', form: 'say', tag: '新' },
-        { id: 'nc-label-1', text: '「賣得好的那種，我們廠牌沒有。」', voice: 'label', form: 'say', tag: '新' },
-        { id: 'nc-critic-1', text: '「榜單上那些，我懶得再評。」', voice: 'critic', form: 'say', tag: '新' },
-        { id: 'nc-boss-1', text: '「當年人手一張的，這次不出。」', voice: 'boss', form: 'say', tag: '新' }
+        { id: 'nc13', text: '「我沒去翻你爸媽的唱片櫃。」', form: 'say', tag: '新' },
+        { id: 'nc-copycat-1', text: '「這次我不跟風。」', voice: 'copycat', form: 'say', tag: '新' },
+        { id: 'nc-already-1', text: '「我早就聽膩新生入門那幾張了。」', voice: 'already', form: 'say', tag: '新' },
+        { id: 'nc-needle-1', text: '「不放音響行拿來試機的那幾張。」', voice: 'needle', form: 'say', tag: '新' },
+        { id: 'nc-skip-1', text: '「好賣的貨，我留著做生意。」', voice: 'skip', form: 'say', tag: '新' },
+        { id: 'nc-broke-1', text: '「團練暖身曲？彈到爛了，跳過。」', voice: 'broke', form: 'say', tag: '新' },
+        { id: 'nc-buyer-1', text: '「我的耳朵會自動跳過主流。」', voice: 'buyer', form: 'say', tag: '新' },
+        { id: 'nc-label-1', text: '「這手不跟大廠拚銷量。」', voice: 'label', form: 'say', tag: '新' },
+        { id: 'nc-critic-1', text: '「排行榜的東西，我寫到不想寫了。」', voice: 'critic', form: 'say', tag: '新' },
+        { id: 'nc-boss-1', text: '「人手一張的？那太好猜了。」', voice: 'boss', form: 'say', tag: '新' }
       ],
       // 半指・他不出冷門（22 句）
       o: [
         { id: 'no01', text: '他連箱底看都沒看。', form: 'act', tag: '新' },
         { id: 'no02', text: '「今天不挖寶。」', form: 'say', tag: '新' },
-        { id: 'no03', text: '「難找的那幾張，沒帶出門。」', form: 'say', tag: '新' },
-        { id: 'no04', text: '限量那盒，他又鎖回去了。', form: 'act', tag: '新' },
-        { id: 'no05', text: '手寫標籤那疊，他碰都沒碰。', form: 'act', tag: '新' },
+        { id: 'no03', text: '「壓箱寶沒帶出門。」', form: 'say', tag: '新' },
+        { id: 'no04', text: '他把限量那盒又鎖了回去。', form: 'act', tag: '新' },
+        { id: 'no05', text: '他碰都沒碰手寫標籤那疊。', form: 'act', tag: '新' },
         { id: 'no06', text: '「這手，不考你冷知識。」', form: 'say', tag: '新' },
-        { id: 'no07', text: '「查不到的那種，這次沒有。」', form: 'say', tag: '新' },
+        { id: 'no07', text: '「網路上一查就有。」', form: 'say', tag: '新' },
         { id: 'no08', text: '他把那本郵購目錄闔上。', form: 'act', tag: '新' },
-        { id: 'no09', text: '「難得一見的那幾張，捨不得拿。」', form: 'say', tag: '新' },
-        { id: 'no10', text: '「試壓盤那種，先收著。」', form: 'say', tag: '新' },
+        { id: 'no09', text: '「稀有盤，我才捨不得拿出來。」', form: 'say', tag: '新' },
+        { id: 'no10', text: '「試壓盤？想都別想。」', form: 'say', tag: '新' },
         { id: 'no11', text: '「不是什麼絕版貨。」', form: 'say', tag: '新' },
         { id: 'no12', text: '他從沒標價的那箱前面走開。', form: 'act', tag: '新' },
         { id: 'no13', text: '「誰挖得比較深，下次再比。」', form: 'say', tag: '新' },
-        { id: 'no-copycat-1', text: '「朋友從國外帶回來的那張，放在家。」', voice: 'copycat', form: 'say', tag: '新' },
-        { id: 'no-already-1', text: '「我高中挖到的那幾張，捨不得拿。」', voice: 'already', form: 'say', tag: '新' },
+        { id: 'no-copycat-1', text: '「國外帶回來的？還在我朋友那。」', voice: 'copycat', form: 'say', tag: '新' },
+        { id: 'no-already-1', text: '「我高中挖到的寶，只放給自己聽。」', voice: 'already', form: 'say', tag: '新' },
         { id: 'no-needle-1', text: '「難找的首版，鎖在防潮箱裡。」', voice: 'needle', form: 'say', tag: '新' },
-        { id: 'no-skip-1', text: '「沒擺上架的那幾張，繼續藏著。」', voice: 'skip', form: 'say', tag: '新' },
-        { id: 'no-broke-1', text: '「現場才買得到的那幾張，借人了。」', voice: 'broke', form: 'say', tag: '新' },
-        { id: 'no-buyer-1', text: '「找了好幾年的那些，還不想拿出來。」', voice: 'buyer', form: 'say', tag: '新' },
-        { id: 'no-label-1', text: '「只壓一百張的那批，還在倉庫。」', voice: 'label', form: 'say', tag: '新' },
-        { id: 'no-critic-1', text: '「專欄挖過的那些，這次不提。」', voice: 'critic', form: 'say', tag: '新' },
-        { id: 'no-boss-1', text: '「木箱最底下那層，今天不打開。」', voice: 'boss', form: 'say', tag: '新' }
+        { id: 'no-skip-1', text: '「櫃檯底下的私藏，今天不見客。」', voice: 'skip', form: 'say', tag: '新' },
+        { id: 'no-broke-1', text: '「現場才買得到的，剛好借給鼓手。」', voice: 'broke', form: 'say', tag: '新' },
+        { id: 'no-buyer-1', text: '「找了七年的那張？還不到時候。」', voice: 'buyer', form: 'say', tag: '新' },
+        { id: 'no-label-1', text: '「限量盤？連我自己都還沒拆。」', voice: 'label', form: 'say', tag: '新' },
+        { id: 'no-critic-1', text: '「冷僻盤我寫夠了，換個話題。」', voice: 'critic', form: 'say', tag: '新' },
+        { id: 'no-boss-1', text: '「今天不動木箱最底下那層。」', voice: 'boss', form: 'say', tag: '新' }
       ],
       // 半指・他不出硬蕊（22 句）
       h: [
@@ -933,24 +933,24 @@
         { id: 'nh02', text: '「今天不吵你。」', form: 'say', tag: '新' },
         { id: 'nh03', text: '他把耳塞收回口袋。', form: 'act', tag: '新' },
         { id: 'nh04', text: '「不會刺耳，別緊張。」', form: 'say', tag: '新' },
-        { id: 'nh05', text: '黑色封套那疊，被他推到一邊。', form: 'act', tag: '新' },
+        { id: 'nh05', text: '他把黑色封套那疊塞回櫃子。', form: 'act', tag: '新' },
         { id: 'nh06', text: '「鄰居不用來敲門。」', form: 'say', tag: '新' },
-        { id: 'nh07', text: '「聽不懂的那種，這次沒有。」', form: 'say', tag: '新' },
-        { id: 'nh08', text: '「實驗的那些，留到下次。」', form: 'say', tag: '新' },
-        { id: 'nh09', text: '「破音的那些，先不放。」', form: 'say', tag: '新' },
+        { id: 'nh07', text: '「放心，這手你聽得懂。」', form: 'say', tag: '新' },
+        { id: 'nh08', text: '「不拿你的耳朵做實驗。」', form: 'say', tag: '新' },
+        { id: 'nh09', text: '「這次喇叭撐得住。」', form: 'say', tag: '新' },
         { id: 'nh10', text: '「耳朵可以放假了。」', form: 'say', tag: '新' },
         { id: 'nh11', text: '「這手，不會嚇到人。」', form: 'say', tag: '新' },
-        { id: 'nh12', text: '「沒有旋律的那種，這手不出。」', form: 'say', tag: '新' },
-        { id: 'nh13', text: '會讓人耳鳴的那張，他收起來了。', form: 'act', tag: '新' },
-        { id: 'nh-copycat-1', text: '「吵的那種我聽不完，不出了。」', voice: 'copycat', form: 'say', tag: '新' },
+        { id: 'nh12', text: '「旋律，這手還是有的。」', form: 'say', tag: '新' },
+        { id: 'nh13', text: '他把會讓人耳鳴的那張收了起來。', form: 'act', tag: '新' },
+        { id: 'nh-copycat-1', text: '「太吵的，我朋友都不聽。」', voice: 'copycat', form: 'say', tag: '新' },
         { id: 'nh-already-1', text: '「學弟妹在，吵的先不放。」', voice: 'already', form: 'say', tag: '新' },
         { id: 'nh-needle-1', text: '「不想讓擴大機受苦。」', voice: 'needle', form: 'say', tag: '新' },
-        { id: 'nh-skip-1', text: '「客人聽了會走的那種，先不放。」', voice: 'skip', form: 'say', tag: '新' },
+        { id: 'nh-skip-1', text: '「吵的放下去，客人會跑光。」', voice: 'skip', form: 'say', tag: '新' },
         { id: 'nh-broke-1', text: '「今天不插電。」', voice: 'broke', form: 'say', tag: '新' },
         { id: 'nh-buyer-1', text: '「好啦，放過你的耳朵。」', voice: 'buyer', form: 'say', tag: '新' },
-        { id: 'nh-label-1', text: '「我們最吵的那張，這次不帶。」', voice: 'label', form: 'say', tag: '新' },
-        { id: 'nh-critic-1', text: '「要寫三千字的那種，先不聽。」', voice: 'critic', form: 'say', tag: '新' },
-        { id: 'nh-boss-1', text: '「砸門的那張，今天不放。」', voice: 'boss', form: 'say', tag: '新' }
+        { id: 'nh-label-1', text: '「怕吵到你，最吵的那張沒帶。」', voice: 'label', form: 'say', tag: '新' },
+        { id: 'nh-critic-1', text: '「不想再寫三千字的樂評了。」', voice: 'critic', form: 'say', tag: '新' },
+        { id: 'nh-boss-1', text: '「砸門那張？改天再砸。」', voice: 'boss', form: 'say', tag: '新' }
       ]
     },
     // 不露（42 句）
@@ -1054,7 +1054,7 @@
     //   readHit＝他照你上一手的應付方式剋你（clash why read／readHonest），l3 依你上一手：readCounter 照提示剋／readMirror 跟提示同色／readThird 防他唬人
     honestPlain: '他照實出。', bluffPlain: '他唬你！他出的是{e}。', seeThroughPlain: '你看穿了！他出的是{e}。',
     readHit: '他讀到你了！他出的是{e}。',
-    readCounter: '你上一手照提示剋，他等著。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。'
+    readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。'
   };
   C.duelTextTag = '新';
   // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄寫全名；duel.js 只把屬性第一個字上色、第二個字黑、剋灰（店主 11-12）

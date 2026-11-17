@@ -1710,6 +1710,20 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
     eq([...kv(r), r.apex.caught, apexNote(r).text], ['counter', 6, 0, false, '王牌：他這手沒唬你，沒作用'], 'crit: honest counter → no ×2, noneHonest');
     r = pv(d, fx(1, 1, 4), 'h', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
     eq([r.kind, apexNote(r).text], ['countered', '王牌：這手沒碰到，沒作用'], 'crit: he bluffed but you were countered → none'); }
+  // 11-17 拆穿＝結果句「你看穿了！」同一個判準（feintOf：看得出來的唬＋剋中），不看藏起來的計畫色
+  { const d = duelWith(ab('crit', { mult: 2 }));
+    d.plan.hint.kind = 'one'; d.plan.hint.not = null;                                    // 明指 o、第二種唬法（出 COUNTER_OF[o]＝h）、你出 BEATS[o]＝c 剋中
+    let r = pv(d, fx(4, 1, 1), 'c', { attr: 'h', star: 3 }, { hint: 'o', apex: true });
+    eq([r.kind, r.apex.caught, apexNote(r).text], ['counter', true, '王牌：拆穿！多扣 4'], 'crit: beta bluff (COUNTER_OF[hint]) caught when you counter it');
+    d.plan.hint.kind = 'half'; d.plan.hint.not = 'h';                                    // 半指（計畫 o、說不出 h）：他出 c、你出 o 剋中＝他沒說謊（結果句「他照實出」）
+    r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
+    eq([r.kind, r.toE, r.apex.caught, apexNote(r).text], ['counter', 4, false, '王牌：他這手沒唬你，沒作用'], 'crit: half, he plays a color he did not rule out → not caught');
+    d.plan.hint.not = 'c';                                                               // 半指（說不出 c）：他正好出 c、你出 o 剋中＝拆穿
+    r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
+    eq([r.kind, r.toE, r.apex.caught, apexNote(r).text], ['counter', 8, true, '王牌：拆穿！多扣 4'], 'crit: half, he plays the color he ruled out → caught');
+    d.plan.hint.kind = 'none'; d.plan.hint.not = null;                                   // 不露：沒說什麼，剋中也不算拆穿
+    r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
+    eq([r.kind, r.toE, r.apex.caught, apexNote(r).text], ['counter', 4, false, '王牌：他這手沒唬你，沒作用'], 'crit: none → never caught'); }
   { const d = duelWith(ab('critLeech', { mult: 2 }), { hp: 6, eHp: 12 });         // ⑦⑬ 拆穿回血
     const r = pv(d, fx(1, 4, 1), 'o', { attr: 'c', star: 3 }, { hint: 'o', apex: true });
     eq([...kv(r), r.heal, apexNote(r).text], ['counter', 8, 0, 4, '王牌：拆穿！多扣 4，回 4 聲望'], 'critLeech ×2: 8, heal ⌈8/2⌉ = 4');
@@ -1782,11 +1796,15 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
     const v0 = EN.view(duelWith(ab('mirrorPlus', { n: 1 }, 'duel'))); ok(v0.apex.can && v0.apex.full === false, 'non-heal ability at full HP: can fire'); }
   { const d = duelWith(ab('combo', { ops: [{ op: 'heal', params: { n: 2 } }, { op: 'mirrorPlus', params: { n: 1 } }] }));
     ok(EN.canApex(d), 'heal + something else at full HP: can fire (not heal-only)'); }
-  for (const bluff of [false, true]) {
-    const d = duelWith(ab('reveal'));
-    d.plan.bluff = bluff; const rng0 = d.rng;
+  // 看穿的章＝結果句的唬（feintOf）：明指＝出的不是提示那色；半指＝正好出他說不出那色（出另一色＝真話）；不露一律真話
+  //   [提示分級, 計畫 o 之外他說不出那色, 他出的色, 章]
+  for (const [kind, not, he, want] of [['one', null, 'o', 'honest'], ['one', null, 'c', 'bluff'], ['one', null, 'h', 'bluff'],
+    ['half', 'c', 'h', 'honest'], ['half', 'c', 'c', 'bluff'], ['half', 'h', 'o', 'honest'], ['none', null, 'c', 'honest'], ['none', null, 'o', 'honest']]) {
+    const d = duelWith(ab('reveal')), pl = d.plan;
+    pl.hint.attr = 'o'; pl.hint.kind = kind; pl.hint.not = not; pl.attr = he; pl.bluff = he !== 'o';
+    pl.idx = d.e.hand.findIndex(Boolean); const rng0 = d.rng;
     const ev = EN.activateApex(d)[0];
-    eq([ev.reveal, EN.view(d).apexReveal, d.rng === rng0], [bluff ? 'bluff' : 'honest', bluff ? 'bluff' : 'honest', true], 'reveal: ' + (bluff ? 'bluff' : 'honest'));
+    eq([ev.reveal, EN.view(d).apexReveal, d.rng === rng0], [want, want, true], `reveal: ${kind}${not ? ' not ' + not : ''}, he plays ${he} → ${want}`);
     const cl = clashOf(EN.resolveTurn(d, { i: 0, attr: 'c' }));
     ok(cl.apex && cl.apex.op === 'reveal' && !apexNote(cl), 'reveal: no result line');
     ok(EN.view(d).apexReveal === null, 'reveal: gone after the hand');
@@ -1970,6 +1988,38 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
     ok(sub && zero > real && real > 0 && inf === 0, 'thoughtful: hand-1 threshold 2.5 actually holds back some firings (τ=2.5 ⊆ τ=0, strictly fewer; τ=∞ never)', [real, zero, inf]);
     ok(dFire === dN, 'thoughtful: duel-type fires on hand 1 regardless of τ', [dFire, dN]);
     ok(JSON.stringify(EN.APEX_TAU) === JSON.stringify(keep), 'APEX_TAU restored'); }
+
+  // (m) 11-17 看穿章、拆穿＝結果句的唬（審查 11-17）：第 12 位真的對決（有半指／不露、兩種唬法、讀你），每手：
+  //   看穿章 'bluff' ⇔ 看得出來的唬（明指出的不是提示那色／半指正好出他說不出那色／不露不算）；拆穿 caught ⇔ 看得出來的唬＋剋中
+  { const lie = (h, e) => (h.kind || 'one') === 'one' ? e !== h.attr : h.kind === 'half' ? e === h.not : false;
+    let bad = 0, rv = { one: 0, half: 0, none: 0 }, ct = { one: 0, half: 0, beta: 0 }, hidden = 0;
+    const RALL = 'les-rallizes-denudes-77-live', SWANS = 'swans-filth', HT = EN.hintTableOf(C);
+    for (let s = 1; s <= (QUICK ? 60 : 240); s++) for (const aceId of [RALL, SWANS]) {
+      const pDef = EN.playerDef(C, { bag: (C.gifts.heresy || []).slice(), ace: 'heresy', aceId, relics: [] }, { apex: true });
+      const eid = ['copycat', 'already', 'needle', 'skip', 'broke', 'buyer'][s % 6];
+      const eDef = EN.enemyDef(C, eid, { pos: 12, seedKey: 'apx-lie', runNo: 1, playerAce: 'heresy' });
+      const d = EN.startDuel(pDef, eDef, { seed: s, hintTable: HT, apex: true, enemyAce: eDef.ace || null }).duel;
+      if (aceId === SWANS && EN.canApex(d)) EN.activateApex(d);
+      const fireAt = 1 + s % 4;
+      while (!d.over) {
+        const pl = d.plan, h = pl.hint, k = h.kind || 'one';
+        if (aceId === RALL && d.n === fireAt && EN.canApex(d)) {
+          const r = (EN.activateApex(d).find(e => e.t === 'apex') || {}).reveal;
+          rv[k]++; if (pl.bluff && !lie(h, pl.attr)) hidden++;
+          if (r !== (lie(h, pl.attr) ? 'bluff' : 'honest') || EN.view(d).apexReveal !== r) { if (bad++ < 5) ok(false, 'reveal stamp = visible bluff', { s, h, he: pl.attr, r }); }
+        }
+        const acts = EN.legalActions(d).filter(a => !a.ace);
+        const act = acts[(s * 7 + d.n * 3) % acts.length] || EN.legalActions(d)[0];
+        const cl = clashOf(EN.resolveTurn(d, act)); if (!cl) break;
+        if (aceId === SWANS && cl.apex) {
+          const want = cl.kind === 'counter' && cl.toE > 0 && lie(cl.hint, cl.eAttr);
+          if (!!cl.apex.caught !== want) { if (bad++ < 5) ok(false, 'crit caught = visible bluff + counter', { s, hint: cl.hint, he: cl.eAttr, you: cl.pAttr, kind: cl.kind, caught: cl.apex.caught }); }
+          if (want) { if (cl.hint.kind === 'half') ct.half++; else ct.one++; if (cl.why === 'bluff' && cl.eAttr === EN.COUNTER_OF[cl.hint.attr]) ct.beta++; }
+        }
+      }
+    }
+    ok(bad === 0, 'apex reveal／crit follow the result line (feintOf)', bad);
+    ok(rv.one > 0 && rv.half > 0 && rv.none > 0 && hidden > 0 && ct.one > 0 && ct.half > 0 && ct.beta > 0, 'apex lie checks covered one／half／none, hidden-plan bluffs, half and beta catches', { rv, ct, hidden }); }
 });
 
 section('21 包包不限張數（店主 11-16）：收第 9／20 張不用丟、買東西不用賣、賣回仍可（sell）、最少留 5 張、不跨趟、舊存檔照玩（開局特價箱還沒挑的重擺）；特價箱（最高 ≤3、加總 ≤5、每色）；策略判斷值不值得收', () => {
