@@ -312,13 +312,57 @@ for (const a of ['c', 'o', 'h']) {
     if (h.draft) { if (!OWNER_SET0.has(h.draft)) err(where, 'draft 要是 owner-lines-v4.json 裡的店主草稿原文：' + h.draft); draftEdits.push({ id: h.id, from: h.draft, to: h.text, key: h.key }); }
   });
 }
+// 提示句庫（11-17 讀牌加難；content C.hintLines，scratchpad v5/harder DESIGN §3）：one 明指（鍵＝他打算那色）／half 半指（鍵＝他不出那色）／none 不露
+//   不寫屬性名、不寫關鍵字對照（C.hintKeywords 與舊 15 句的 key 不准出現在別色的句子裡：半指的鍵＝他不出那色，用那色的字是在否定它，可以；不露一個都不准）、id 全域唯一（也不跟 C.hints 撞）、voice＝C.enemies 的鍵（不是序章男子）、
+//   form 'say'（說出口）要有成對的「」、≤24 字、要有 tag；名盤／絕版／噪音各最多 3 句（同一色要換角度說，不要變成對照表）
+const HL = C.hintLines;
+const HL_KIND = { one: '明指', half: '半指', none: '不露' };
+const HL_FORMS = ['act', 'say', 'look'];
+let hlCount = 0;
+if (HL) {
+  if (!TAG_OK(C.hintLinesTag)) err('hintLinesTag', '沒有 tag（hintLinesTag）');
+  const ids = new Set();
+  for (const a of ['c', 'o', 'h']) for (const h of (C.hints || {})[a] || []) if (h && h.id) ids.add(h.id);
+  const keyOf = {};            // 舊 15 句的 key＋關鍵字族 → 哪一色
+  for (const [a, ws] of Object.entries(C.hintKeywords || {})) for (const w of ws || []) keyOf[w] = a;
+  for (const a of ['c', 'o', 'h']) for (const h of (C.hints || {})[a] || []) if (h && h.key) keyOf[h.key] = a;
+  const capWords = { '名盤': 0, '絕版': 0, '噪音': 0 };
+  const one = (h, where, kind, a) => {
+    if (!h || typeof h.text !== 'string' || !h.text) { err(where, '沒有 text'); return; }
+    hlCount++;
+    if (!h.id || typeof h.id !== 'string') err(where, '沒有 id：' + h.text);
+    else if (ids.has(h.id)) err(where, 'id 重複：' + h.id); else ids.add(h.id);
+    if (!TAG_OK(h.tag)) err(where, '沒有合法 tag：' + h.text);
+    if (/經典|冷門|硬蕊/.test(h.text)) err(where, '提示句不准寫出屬性名：' + h.text);
+    if (len(h.text) > 24) err(where, '提示句超過 24 字（' + len(h.text) + '）：' + h.text);
+    if (h.form != null && !HL_FORMS.includes(h.form)) err(where, 'form 只能是 act／say／look：' + h.form);
+    if (h.form === 'say' && !/「[^」]+」/.test(h.text)) err(where, '說出口的句子（form say）要用「」：' + h.text);
+    if (h.text.includes('「') && !/「[^」]*」/.test(h.text)) err(where, '「」不成對：' + h.text);
+    if (h.voice != null) { const e = (C.enemies || {})[h.voice]; if (!e || e.prologue) err(where, 'voice 要是客人的鍵（不是序章男子）：' + h.voice); }
+    for (const [w, wa] of Object.entries(keyOf)) if (h.text.includes(w) && (kind === 'none' || wa !== a)) err(where, '用到「' + w + '」（' + ATTR_ZH[wa] + '的關鍵字；明指只准用自己那色的、半指只准用他不出那色的、不露都不准）：' + h.text);
+    for (const w of Object.keys(capWords)) if (h.text.includes(w)) capWords[w]++;
+    for (const w of OLD_MECH) if (h.text.includes(w)) err(where, 'v3 拿掉的系統「' + w + '」→ ' + h.text);
+    if (h.text.includes('晃')) err(where, '對決的字不准有「晃」→ ' + h.text);
+    const who = h.voice ? ((C.enemies || {})[h.voice] || {}).name || h.voice : '誰都會講';
+    const key = kind === 'none' ? '不指任何色' : kind === 'half' ? '他不出' + ATTR_ZH[a] : ATTR_ZH[a];
+    add({ scene: '提示句・' + HL_KIND[kind] + '・' + (h.voice ? '個性' : '通用'), where, who, key: key + '・' + h.id, text: h.text, tag: h.tag });
+  };
+  for (const kind of ['one', 'half']) for (const a of ['c', 'o', 'h']) {
+    const arr = (HL[kind] || {})[a];
+    if (!Array.isArray(arr) || !arr.length) { err('hintLines.' + kind + '.' + a, '沒有句子'); continue; }
+    arr.forEach((h, k) => one(h, 'hintLines.' + kind + '.' + a + '[' + k + ']', kind, a));
+  }
+  if (!Array.isArray(HL.none) || !HL.none.length) err('hintLines.none', '沒有句子');
+  else HL.none.forEach((h, k) => one(h, 'hintLines.none[' + k + ']', 'none', null));
+  for (const [w, n] of Object.entries(capWords)) if (n > 3) err('hintLines', '「' + w + '」出現在 ' + n + ' 句（最多 3 句：同一色要換角度說）');
+}
 for (const [a, ws] of Object.entries(C.hintKeywords || {})) (ws || []).forEach((w, k) => {
   if (!TAG_OK(C.hintKeywordsTag)) err('hintKeywords.' + a, '沒有 tag（hintKeywordsTag）');
   add({ scene: '提示的關鍵字族（D §5；參考清單）', where: 'hintKeywords.' + a + '[' + k + ']', who: '（關鍵字）', key: ATTR_ZH[a], text: w, tag: C.hintKeywordsTag });
 });
 
 // 一次性老闆小提示（SPEC-v3 §6）：duel.js hooks.hint 的六個 id（tip_lastplay：上一手小列，店主 11-16）
-const TIP_IDS = ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay'];
+const TIP_IDS = ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay', 'tip_read', 'tip_half', 'tip_none', 'tip_hit'];   // 後四個：11-17 讀牌加難
 const TIPS = C.coachTips || {};
 for (const id of TIP_IDS) if (!TIPS[id]) err('coachTips.' + id, '缺少（duel.js 會送這個 id）');
 for (const [k, v] of Object.entries(TIPS)) {
@@ -561,7 +605,7 @@ for (const it of items) {
   if (it.where.startsWith('pitch#') || it.where.startsWith('shops/')) continue;
   for (const w of OLD_MECH) if (String(it.text).includes(w)) err(it.where, 'v3 拿掉的系統「' + w + '」→ ' + it.text);
   if (String(it.text).includes('不會被剋')) err(it.where, '王牌沒有「不會被剋」了（FIXLIST 2）→ ' + it.text);
-  if (/^(tutorial|coachTips|duelText|hints|honesty|rules\.lines|lines\.)/.test(it.where)) {
+  if (/^(tutorial|coachTips|duelText|hints|hintLines|honesty|rules\.lines|lines\.)/.test(it.where)) {
     if (String(it.text).includes('晃')) err(it.where, '對決／教學的字不准有「晃」→ ' + it.text);
     if (String(it.text).includes('配件') && !/relic/i.test(it.where)) err(it.where, '「配件」只准出現在發燒配件的介面 → ' + it.text);
   }

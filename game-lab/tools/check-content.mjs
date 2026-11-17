@@ -199,6 +199,26 @@ export function shapeProblems(C, E) {
       ok(h && !/經典|冷門|硬蕊/.test(h.text), w + ': 提示句不得寫出屬性名');
     });
   }
+  // 提示句庫（11-17 讀牌加難，scratchpad v5/harder DESIGN §3）：one 明指／half 半指（鍵＝他不出那色）／none 不露；id 全域唯一（不跟 C.hints 撞）、voice＝客人的鍵；
+  //   數量下限照第一波：明指通用每色 ≥35（加上 C.hints 5 句＝40）、半指每色 ≥12、不露 ≥20；每位客人（序章男子除外）明指每色至少 1 句自己的
+  if (C.hintLines) {
+    const HL = C.hintLines, guests = Object.keys(C.enemies || {}).filter(k => !C.enemies[k].prologue);
+    const seenId = new Set(hintIds), each = (arr, w) => (Array.isArray(arr) ? arr : []).forEach((h, k) => {
+      const ww = w + '[' + k + ']';
+      ok(h && typeof h.id === 'string' && h.id && !seenId.has(h.id), ww + ': id 必填、全域唯一（也不跟 C.hints 撞）');
+      if (h && h.id) seenId.add(h.id);
+      ok(h && typeof h.text === 'string' && h.text && !/經典|冷門|硬蕊/.test(h.text), ww + ': text 必填、不寫屬性名');
+      ok(h && h.tag, ww + ': tag');
+      ok(!h || h.voice == null || guests.includes(h.voice), ww + ': voice 要是客人的鍵（不是序章男子）');
+    });
+    for (const kind of ['one', 'half']) for (const a of ATTRS) each((HL[kind] || {})[a], 'hintLines.' + kind + '.' + a);
+    each(HL.none, 'hintLines.none');
+    const gen = arr => (Array.isArray(arr) ? arr : []).filter(h => h && !h.voice).length;
+    ok(ATTRS.every(a => gen((HL.one || {})[a]) >= 35), 'hintLines.one：通用每色 ≥35 句（＋C.hints 5 句＝40）', ATTRS.map(a => gen((HL.one || {})[a])));
+    ok(ATTRS.every(a => Array.isArray((HL.half || {})[a]) && HL.half[a].length >= 12), 'hintLines.half：每色 ≥12 句');
+    ok(Array.isArray(HL.none) && HL.none.length >= 20, 'hintLines.none：≥20 句');
+    for (const g of guests) ok(ATTRS.every(a => ((HL.one || {})[a] || []).some(h => h && h.voice === g)), 'hintLines.one：' + g + ' 每色至少一句自己的口吻');
+  }
 
   // ---- 經濟（FIXLIST 8 台幣行情＋X／Y 契約：價格是店主定的、不校準；只有 start／win 是 sim 校準的旋鈕） ----
   const EC = C.economy || {};
@@ -394,7 +414,8 @@ export function contentProblems(C, E) {
   }
 
   // 小提示、盤面字、店內字、經濟介面字
-  ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds tip_lastplay');
+  ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds', 'tip_lastplay', 'tip_read', 'tip_half', 'tip_none', 'tip_hit']),
+    'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds tip_lastplay＋11-17 讀牌加難 tip_read tip_half tip_none tip_hit');
   for (const k of Object.keys(C.coachTips || {})) ok(C.coachTipTags && C.coachTipTags[k], 'coachTipTags.' + k);
   // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'），
   //   再扣掉 picked／again／throwBtn／waiting／aceUsed（FIXLIST 11：沒有「丟！」列；用過的王牌不留在手牌裡）、pickHint（v5 手風琴：沒有整排攤開的「點一張專輯」框）
@@ -402,8 +423,9 @@ export function contentProblems(C, E) {
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
     'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'roundsOut', 'roundsScore', 'roundsEven', 'tapOn',   // tapOn：唬你／剋不動的結果框停住（店主 11-12）
     'readRight', 'seeThrough', 'seeThroughNoKey',   // 第 A 波 4：讀對了就說出來（剋中前加「讀對了。」；看穿唬人＝「你看穿了！」）
-    'lpAria'];   // lpAria：上一手小列的讀屏字（店主 11-16）
-  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey；上一手小列加 lpAria）');
+    'lpAria',   // lpAria：上一手小列的讀屏字（店主 11-16）
+    'honestPlain', 'bluffPlain', 'seeThroughPlain', 'readHit', 'readCounter', 'readMirror', 'readThird'];   // 11-17 讀牌加難：正式對局結果句不念關鍵字、他讀到你
+  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim；第 A 波加 readRight／seeThrough／seeThroughNoKey；上一手小列加 lpAria；11-17 加 honestPlain…readThird）');
   ok(C.duelText && ['seeThrough'].every(k => ['{key}', '{hint}', '{e}'].every(x => String(C.duelText[k]).includes(x))) && ['{hint}', '{e}'].every(x => String(C.duelText.seeThroughNoKey).includes(x)) && /^你看穿了/.test(C.duelText.seeThrough) && /讀對了/.test(C.duelText.readRight),
     'duelText.readRight「讀對了」、seeThrough／seeThroughNoKey「你看穿了！」＋{key}{hint}{e} 的佔位（第 A 波 4）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');

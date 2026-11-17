@@ -1548,11 +1548,12 @@ async function run() {
         for (let k = 0; k < 3; k++) {
           await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
           await page.waitForFunction(n => { const d = window.DipLabDuel.debug(); return d && d.hands.length > n && d.hands[d.hands.length - 1].ui; }, k, { timeout: 8000 }).catch(() => {});
-          hands.push(await page.evaluate(() => { const d = window.DipLabDuel.debug(), hd = d.hands[d.hands.length - 1]; return { l1: hd.ui.call.l1, bluff: !!(hd.evs.find(e => e.t === 'clash') || {}).bluff, read: d.readRun, snd: d.sounds[d.sounds.length - 1] }; }));
+          hands.push(await page.evaluate(() => { const d = window.DipLabDuel.debug(), hd = d.hands[d.hands.length - 1]; return { l1: hd.ui.call.l1, bluff: !!(hd.evs.find(e => e.t === 'clash') || {}).bluff, saw: !!(hd.ct && hd.ct.saw), read: d.readRun, snd: d.sounds[d.sounds.length - 1] }; }));
           await page.waitForFunction(() => { const d = window.DipLabDuel.debug(); return d && d.phase === 'choose'; }, null, { timeout: 15000 }).catch(() => {});
         }
         const DT = await page.evaluate(() => window.DipLabContent.duelText);
-        const okB = hands.length === 3 && hands.every((x, k) => x.read === k + 1 && (x.bluff ? x.l1.indexOf('你看穿了！') === 0 : x.l1.indexOf(DT.readRight) === 0)) &&
+        // 11-17 提示分級：半指那手他出的不是打算那色、但也不是他說不出那色＝照實（事件 bluff 真、結果句「讀對了。」）→ 看結果句算的「看穿」（ct.saw），不看事件的 bluff
+        const okB = hands.length === 3 && hands.every((x, k) => x.read === k + 1 && (x.saw ? x.l1.indexOf('你看穿了！') === 0 : x.l1.indexOf(DT.readRight) === 0)) &&
           hands[0].snd === 'readHit@1.000' && hands[1].snd === 'readHit@1.122' && hands[2].snd === 'readHit@1.260+stop';
         // (c) 險勝：你剩 2、這一手扣他到 0
         await watchSay(page);

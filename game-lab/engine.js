@@ -47,7 +47,7 @@
 //            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce, bossCard?})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
 //              組牌快取（第 B 波 WP2-0）：選牌按條件分桶、只取前 k 張、同一組輸入記住（卡池＝content.cards 物件；卡的星數／tier／tune 視為不變），結果跟原本逐字相同；
-//              _noCache（API 上的旗標，預設 false）＝true 時 trialDeck／radioPool 走原本的寫法（engine.test #24 對照）
+//              _noCache（API 上的旗標，預設 false）＝true 時 trialDeck／radioPool 走原本的寫法（engine.test #25 對照）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur, title, main}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept, aces?（解鎖制：這一趟收的頂點卡）}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
@@ -112,9 +112,9 @@
 //            resolveTurn(duel, {i, attr, apex:true})＝先 activateApex 再結算（act.apex 但 !canApex → 不合法）；preview(duel, {…, apex:true}, eSide)＝假設這手發動（不寫回）
 //            時機：hand＝發動那手；duel＝發動那手起到這場結束；hold＝還沒發動前每手套 hold 小效果，發動＝放掉它、換這手的 op。一手最多一個王牌效果
 //            outcome 的步驟（FRAME 1.4）：①你 +N 星 ②他 −N 星 ③判相剋（剋得動門檻 pThr、以小搏大）④改寫比星（比星多算、同色同星扣他、比星輸不扣）⑤配件 ⑥品味
-//              ⑦剋中多扣→剋中加倍→拆穿（你出提示那色剋中＝抓到唬人）⑧彈回一半（他品味前）⑨他的底氣 ⑩他的品味 ⑪你的底氣 ⑫被剋少扣／減半（最少扣 1）⑬拆穿回血（扣完聲望後）
+//              ⑦剋中多扣→剋中加倍→拆穿（他這手是看得出來的唬（feintOf）而你剋中＝抓到唬人；11-17 起跟結果句的「你看穿了！」同一個判準）⑧彈回一半（他品味前）⑨他的底氣 ⑩他的品味 ⑪你的底氣 ⑫被剋少扣／減半（最少扣 1）⑬拆穿回血（扣完聲望後）
 //            clash 事件多 apex: null｜{id, op, src:'on'|'hold', first, hit, dE, dP, d, h, caught, pStar, eStar}；notes 多一句 {apex, op, src, d, h, hit, text}（text＝content.apexTrial.notes／holdNotes 代入）
-//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null, full}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'）
+//            view 多 apex {card, id, name, text, timing, op, params, hold, can, used, on, live:'on'|'hold'|null, full}、apexReveal（看穿：發動那手、揭曉前 'honest'|'bluff'；11-17 起照 feintOf＝結果句的唬：明指出的不是提示那色、半指正好出他說不出那色＝bluff，不露一律 honest）
 //            finishFight：duel.apexMode 時打贏回 content.apexTrial.winHeal（沒給＝C.trial.heal）。藏家、客人帶的王牌照舊 7 星、沒有能力
 //            策略：policies 在 duel.apexMode 且 canApex 時自己決定發動（會讀的＝期望增益 ≥ APEX_TAU[第 n 手]；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N；
 //              看穿＝用「知道真假」的資訊價值；新手、只出最大星、兩步公式、跟提示同色＝第 1 手就發動；亂出＝每手 1/6；先知＝有好處就發動）
@@ -224,6 +224,7 @@
   const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.75 }, veteran: { q: 0.75 } };   // FIXLIST 10 平衡 R1（FIXLIST 11 H5-1 照用）
   const PLANNERS = { easy: { w: 0.45, nz: 2.4, mercy: false }, normal: { w: 0.6, nz: 1.4, mercy: true }, hard: { w: 0.7, nz: 0.8, mercy: true } };
   const DEFAULT_HINTS = { c: ['c1', 'c2', 'c3', 'c4', 'c5'], o: ['o1', 'o2', 'o3', 'o4', 'o5'], h: ['h1', 'h2', 'h3', 'h4', 'h5'] };
+  const HINT_SEEN_MAX = 200;                         // run.hintSeen 最多留幾句（舊的先丟；約 1.5 KB）
   // 台幣行情（FIXLIST 8＋X／Y 契約）：唱片照稀有度定價、特價箱每張照最高星、櫃檯配件一件 3000、賣回半價
   const ECON = { start: 1000, win: { prologue: 0, normal: 1500, elite: 2500, boss: 3750 },
     price: { common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 },
@@ -237,7 +238,11 @@
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
     curve: {
       planner: { easyTo: 2, normalTo: 4 },                                         // 第 1–2 位 easy、3–4 normal、5 起 hard
-      q: { easy: 0.75, normal: 0.75, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },   // hard：q＝1−min(.55, .18＋.05·max(0, 位−5))
+      q: { easy: 0.75, normal: 0.72, feintBase: 0.25, feintStep: 0.05, feintFrom: 5, feintMax: 0.40 },   // hard：q＝1−min(.40, .25＋.05·max(0, 位−5))（11-17 讀牌加難：原本 .75／.18／.55）
+      // 11-17 讀牌加難（scratchpad v5/harder DESIGN §2.2；＝content C.trial.curve.read／hintMix）：客人讀你上一手、兩種唬人、被唬到多扣；提示分級（明指／半指／不露）
+      //   from 0（或沒有）＝整條關掉（＝改版前）。content 一定要有這兩個鍵：trialCfg 只合併 TRIAL.curve 有的鍵
+      read: { from: 3, rho: { normal: 0.30, hard: 0.45, step: 0.02, max: 0.55, boss: 0 }, streakMul: 2, cap: 0.90, beta: 0.65, mercy: 0.7, hit: { from: 5, n: 1 }, watch: false },
+      hintMix: { half: { from: 3, normal: 0.15, hard: 0.20, step: 0.01, max: 0.30 }, none: { from: 6, base: 0.05, step: 0.02, max: 0.15 } },
       mercyFeint: 0.8,                                                              // 放水：唬人率 ×(1−0.8×mercy)（roguelike.html:3693-3695；easy 也吃）
       // 放水照位數機率（店主 11-16 選 C）：第 from 位以前每手都放水；之後每手照機率 p＝max(min, p0 − step×⌊(位−from)/every⌋) 才放水（mercyPAt）
       //   放水唬人（mercyFeint）所有出招難度都吃（easy 也算：主線 11-16「放水前期保留」，第 1–2 位 q 0.75 也會唬，你落後時他少唬）；出招變鈍只有 normal／hard（PLANNERS.mercy）
@@ -431,7 +436,6 @@
     const P = st.p, A = P.ability, T = st.apexText || {};
     const op = AX.ops.length === 1 ? AX.ops[0].op : 'combo';
     const dE = r.toE - b.toE, dP = b.toP - r.toP, h = r.heal | 0;
-    const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
     let d, hit;
     if (op === 'heal') { const n = AX.ops[0].params.n | 0; d = AX.on && AX.on.heal != null ? AX.on.heal : Math.max(0, Math.min(n, P.max - P.hp)); hit = AX.first && d > 0; }
     else if (op === 'reveal') { d = 0; hit = false; }
@@ -447,7 +451,7 @@
     else if (op === 'reveal') tpl = null;                                       // 看穿：提示框蓋章，不進結果句
     else if (hit) tpl = op === 'critLeech' ? (d <= 0 ? N.leech : h > 0 ? N.critLeech : (N.crit || N.critLeech)) : N[op];   // 拆穿回血：沒回到（滿聲望）就不寫「回 0 聲望」
     else if (op === 'critLeech' && caught) { tpl = N.leechFull || null; full = true; }      // 抓到唬人但聲望是滿的（不算「沒碰到條件」）
-    else if (AX.first) tpl = CRIT_OPS.includes(op) && ePlay.attr === hintA ? (N.noneHonest || N.none) : N.none;
+    else if (AX.first) tpl = CRIT_OPS.includes(op) && !feintOf(st, ePlay.attr) ? (N.noneHonest || N.none) : N.none;   // 他這手沒唬你（照結果句的判準）
     const note = tpl ? Object.assign({ apex: A.id, op, src: AX.src, d, h, hit: !!hit, text: String(tpl).replace(/\{d\}/g, d).replace(/\{h\}/g, h).replace(/\{name\}/g, A.name || '') }, full ? { full: true } : {}) : null;
     return { info, note };
   }
@@ -460,7 +464,7 @@
     const ev = { t: 'apex', n: st.n, card: P.ace, id: A.id, name: A.name, op: A.op, timing: A.timing };
     for (const o of apexOps(A.op, A.params)) {
       if (o.op === 'heal') { const h = Math.max(0, Math.min(P.max - P.hp, o.params.n | 0)); P.hp += h; P.apexOn.heal = h; ev.heal = h; }
-      if (o.op === 'reveal') { const v = st.plan.bluff ? 'bluff' : 'honest'; P.apexOn.reveal = v; ev.reveal = v; }
+      if (o.op === 'reveal') { const v = feintOf(st, st.plan.attr) ? 'bluff' : 'honest'; P.apexOn.reveal = v; ev.reveal = v; }   // 11-17：章＝結果句的唬（feintOf），不看藏起來的計畫色
     }
     ev.pHp = P.hp;
     st.stats.apexAt = st.n;
@@ -499,8 +503,7 @@
     if (r.kind === 'counter' && r.toE > 0 && pA) { r.toE += pA; notes.push(statNote(st, 'atk', pA)); }
     let caught = false;
     if (M) {                                                                    // ⑦⑧
-      const hintA = st.plan && st.plan.hint ? st.plan.hint.attr : null;
-      caught = r.kind === 'counter' && r.toE > 0 && !!hintA && pPlay.attr === hintA;   // 你出提示那色還剋中＝他唬你、被你抓到
+      caught = r.kind === 'counter' && r.toE > 0 && feintOf(st, ePlay.attr);   // 他這手是看得出來的唬、被你剋中＝抓到（＝結果句「你看穿了！」；11-17 起不看計畫色：半指出另一色＝照實、不露不算、第二種唬法照樣算）
       if (M.counterPlus && r.kind === 'counter' && r.toE > 0) r.toE += M.counterPlus;
       if (M.mult && r.kind === 'counter' && r.toE > 0) r.toE *= M.mult;
       if (M.crit > 1 && caught) r.toE *= M.crit;
@@ -512,6 +515,7 @@
     if (r.toP > 0) {
       let x = r.toP;
       if (eA) { x += eA; notes.push(statNote(st, 'eAtk', eA)); }
+      if (E.hit > 0 && r.kind === 'countered' && feintOf(st, ePlay.attr)) { x += E.hit; notes.push(statNote(st, 'feint', E.hit)); }   // 11-17 被唬到多扣（他的品味之後）
       if (pD) { const v = half(x, pD); if (v < x) { notes.push(statNote(st, 'def', x - v)); x = v; } }
       if (M && r.kind === 'countered') { if (M.shield) x = Math.max(1, x - M.shield); if (M.halfIn) x = Math.ceil(x / 2); }   // ⑫ 最少扣 1
       r.toP = x;
@@ -524,6 +528,15 @@
     }
     return r;
   }
+  // 11-17 看得出來的唬：他這手出的 eAttr 跟提示對不上——明指＝不是提示那色（含讀你那手）；半指＝正好出他說不出的那色；不露＝沒說什麼，不算。
+  //   （DESIGN §2.2 原寫「他出的 ≠ 計畫色」；半指時計畫色你看不到，出另一色也沒說謊，結果句寫「他照實出」，所以只算看得出來的那種）
+  //   用在：被唬到多扣（read.hit）、頂點卡試做的看穿章與拆穿（＝duel.js clashText 的 lie）。lieOf 吃 plan.hint 或 view().hint（明指有 attr、半指有 not）
+  function lieOf(h, eAttr) {
+    if (!h) return false;
+    const k = h.kind || 'one';
+    return k === 'one' ? eAttr !== h.attr : k === 'half' ? eAttr === h.not : false;
+  }
+  function feintOf(st, eAttr) { return lieOf(st.plan && st.plan.hint, eAttr); }
   // 底氣最多擋一半：被扣 x、底氣 D → max(⌈x/2⌉, x−D)（variants TAKEN.half）
   const half = (x, D) => Math.max(Math.ceil(x / 2), x - D);
   // 結果行補的那句（C.trial.notes 由 playerDef 帶進對決；沒有字時 text 空、畫面不顯示）
@@ -534,12 +547,32 @@
 
   // ---------- duel creation ----------
   function cardFrom(content, id) { const c = content && content.cards && content.cards[id]; if (!c) throw new Error('engine: missing card ' + id); return c; }
+  // 提示句表（只有 id）。content 有 hintLines（11-17 句庫）→ { one:{c,o,h}, half:{c,o,h}, none:[], voice:{id → 客人鍵} }：明指每色＝C.hints 那 5 句＋hintLines.one；
+  //   沒有 hintLines（舊 content）→ 舊形狀 {c,o,h}（startDuel 照舊選句，同種子一字不差）
   function hintTableOf(content) {
     const H = content && content.hints;
     if (!H || !ATTRS.every(a => Array.isArray(H[a]) && H[a].length)) return null;
-    const t = {}; for (const a of ATTRS) t[a] = H[a].map(h => (h && typeof h === 'object') ? h.id : h).filter(Boolean);
-    return t;
+    const idOf = h => (h && typeof h === 'object') ? h.id : h;
+    const t = {}; for (const a of ATTRS) t[a] = H[a].map(idOf).filter(Boolean);
+    const L = content.hintLines;
+    if (!L || typeof L !== 'object' || !L.one) return t;
+    const voice = {}, ids = arr => (Array.isArray(arr) ? arr : []).filter(x => x && x.id).map(x => { if (x.voice) voice[x.id] = x.voice; return x.id; });
+    const out = { one: {}, half: {}, none: ids(L.none), voice };
+    for (const a of ATTRS) { out.one[a] = t[a].concat(ids((L.one || {})[a])); out.half[a] = ids((L.half || {})[a]); }
+    return out;
   }
+  // 新形狀的表 → 這位客人那一份（對決只存這份：誰都會講的＋他自己的；別人的個性句不帶進來）
+  function hintTableFor(T, eid) {
+    const v = T.voice || {}, gen = ids => ids.filter(id => !v[id]), own = ids => ids.filter(id => v[id] && v[id] === eid);
+    const arr = x => (Array.isArray(x) ? x : []).filter(id => typeof id === 'string' && id);
+    const out = { one: {}, half: {}, none: gen(arr(T.none)), own: { one: {}, half: {}, none: own(arr(T.none)) } };
+    for (const a of ATTRS) {
+      out.one[a] = gen(arr((T.one || {})[a])); out.own.one[a] = own(arr((T.one || {})[a]));
+      out.half[a] = gen(arr((T.half || {})[a])); out.own.half[a] = own(arr((T.half || {})[a]));
+    }
+    return out;
+  }
+  const newHintTable = T => !!(T && T.one && ATTRS.every(a => Array.isArray(T.one[a]) && T.one[a].length));
   // enemyDef(content, id, {tutorial, pos, cls?, seedKey, runNo, playerAce, bossAce, planner}) — content enemy → eDef（§2.1.4）
   //   pos（無限試煉第幾位）：聲望、品味、底氣、出招難度、說真話機率照位數曲線（trialGuest；不再看角色），牌組照 trialDeck（eDef.ace＝他帶的王牌）；
   //     名字、小人、口頭禪、taste、誠實度的鍵照原角色。cls 沒給＝classAt(pos)
@@ -571,6 +604,12 @@
       if (main && mb > 0) d.mainBias = mb;                       // 出招偏主屬性（startDuel 存進 e.mainBias；beginHand 挑計畫時主屬性那色多算 mainBias 星）
       const mp = mercyPAt(content, pos, o.tier);
       if (mp < 1) d.mercyP = mp;                                // 第 11 位起：每手放水的機率（startDuel 存進 e.mercyP）
+      // 11-17 讀牌加難（trialGuest）：有才帶（startDuel 存進 e；沒有＝0／1＝改版前）
+      if (g.rho > 0) Object.assign(d, { rho: g.rho, rhoMul: g.rhoMul, rhoCap: g.rhoCap, rMercy: g.rMercy });
+      if (g.beta < 1) d.beta = g.beta;
+      if (g.half > 0) d.half = g.half;
+      if (g.none > 0) d.none = g.none;
+      if (g.hit > 0) d.hit = g.hit;
     }
     return d;
   }
@@ -612,7 +651,8 @@
         planner: eDef.planner || 'normal', coef: { w: co.w, nz: co.nz, mercy: !!co.mercy }, taste: tasteStr(eDef.taste),
         hp: eDef.hp, max: eDef.hp, atk: eDef.atk | 0, def: eDef.def | 0, deckIds: [], deckPub: [], pile: [], hand: [], thrown: [], last: null, deckSize: 0,
         main: ATTRS.includes(eDef.main) ? eDef.main : null },   // 客人主屬性（第 A 波 6；view.eMain「常出：冷門」）；沒有＝null
-      hintTable: opts.hintTable && ATTRS.every(a => Array.isArray(opts.hintTable[a]) && opts.hintTable[a].length) ? clone(opts.hintTable) : clone(DEFAULT_HINTS),
+      hintTable: newHintTable(opts.hintTable) ? hintTableFor(opts.hintTable, eDef.id)
+        : opts.hintTable && ATTRS.every(a => Array.isArray(opts.hintTable[a]) && opts.hintTable[a].length) ? clone(opts.hintTable) : clone(DEFAULT_HINTS),
       noteText: pDef.noteText ? Object.assign({}, pDef.noteText) : null,
       script: sc, plan: null, last: null, log: [],
       stats: { hands: 0, counter: 0, countered: 0, mirror: 0, tie: 0, blocked: 0, blockedYou: 0, bluffs: 0, honest: 0, caught: 0, ace: 0, relicNotes: 0 },
@@ -627,6 +667,15 @@
     // 放水照位數機率（第 11 位起；eDef.mercyP < 1 才有這兩欄，其他對決的狀態一字不改）：mercyKey＝對決種子（mercyOn 的雜湊用；不取 duel.rng）
     if (eDef.mercyP != null && +eDef.mercyP < 1) { E.mercyP = Math.max(0, +eDef.mercyP); E.mercyKey = st.rng >>> 0; }
     if (E.main && +eDef.mainBias > 0) E.mainBias = +eDef.mainBias;   // 出招偏主屬性（第 A 波 6 審查；有主屬性的客人才有這欄）
+    // 11-17 讀牌加難（eDef 有才存；舊存檔、序章、直接開打沒有＝0／1＝改版前）。hkey＝對決種子：讀心、唬法、提示分級、半指那色的雜湊用（不取 duel.rng）
+    E.hkey = st.rng >>> 0;
+    if (+eDef.rho > 0) { E.rho = +eDef.rho; E.rhoMul = +eDef.rhoMul > 0 ? +eDef.rhoMul : 1; E.rhoCap = eDef.rhoCap != null ? +eDef.rhoCap : 0.9; E.rMercy = eDef.rMercy != null ? +eDef.rMercy : 0.7; }
+    if (eDef.beta != null && +eDef.beta < 1) E.beta = Math.max(0, +eDef.beta);
+    if (+eDef.half > 0) E.half = +eDef.half;
+    if (+eDef.none > 0) E.none = +eDef.none;
+    if (+eDef.hit > 0) E.hit = eDef.hit | 0;
+    // 一趟內看過的提示句（新形狀的表才有；startFight 傳 run.hintSeen，舊的在前、最近的在後；這場抽到的也接上去，finishFight 寫回 run）
+    if (st.hintTable.own) st.hintSeen = Array.isArray(opts.hintSeen) ? opts.hintSeen.filter(x => typeof x === 'string').slice(-HINT_SEEN_MAX) : [];
     // 你的牌堆：script 的起手＋抽牌在前，剩下的照包包順序（有 script 不洗；教學第 5 手要抽到特價箱那幾張）；沒 script 整包洗
     const bag = (pDef.bag || []).filter(Boolean).slice();
     const takeIds = ids => { const out = []; for (const id of ids || []) { const k = bag.findIndex(c => c.id === id); if (k >= 0) out.push(bag.splice(k, 1)[0]); } return out; };
@@ -699,8 +748,59 @@
     if (on === false) return q;
     return 1 - (1 - q) * (1 - E.qMercy * mercyOf(st) * (on === true ? 1 : mercyPOf(st)));
   }
-  // 開手（§2.1.4）：他補牌 → 計畫屬性（原版 aiPlan 去掉相生／氣勢）→ 提示句 → 照實或唬人 → 出哪張。
+  // 11-17 讀牌加難（DESIGN §2.2）：客人讀你上一手。rel＝你上一手（明指那手）怎麼應付他的提示：counter 照提示剋｜mirror 跟提示同色｜third 防他唬人（出剋他唬法那色）
+  //   本場第 1 手、上一手半指／不露 → null（沒有可以讀的）。streak＝從上一手往回數，連續幾手（明指）是同一種應對（斷在半指／不露）
+  const relType = (pAttr, h) => pAttr === COUNTER_OF[h] ? 'counter' : pAttr === h ? 'mirror' : 'third';
+  function relOf(st) {
+    const L = st && st.last;
+    if (!L || !L.hint || !ATTRS.includes(L.hint.attr) || !ATTRS.includes(L.pAttr) || (L.hint.kind && L.hint.kind !== 'one')) return null;
+    return relType(L.pAttr, L.hint.attr);
+  }
+  function streakOf(st) {
+    const rel = relOf(st); if (!rel) return 0;
+    let k = 0;
+    for (let j = st.log.length - 1; j >= 0; j--) { const l = st.log[j]; if (l.hk && l.hk !== 'one') break; if (relType(l.pAttr, l.hint) !== rel) break; k++; }
+    return k;
+  }
+  // 這手讀你的機率：e.rho（位數曲線）；連兩手同一種應對 ×rhoMul（上限 rhoCap）；放水 ×(1−rMercy×m)（m＝這手放水程度；舊版 roguelike.html:3652）
+  function rhoOf(st, m) {
+    const E = st.e, rel = relOf(st); if (!rel || !(E.rho > 0)) return 0;
+    const base = streakOf(st) >= 2 ? Math.min(E.rhoCap != null ? +E.rhoCap : 0.9, E.rho * (E.rhoMul || 1)) : E.rho;
+    return Math.max(0, base * (1 - (E.rMercy || 0) * (m || 0)));
+  }
+  // 選句（新形狀的表；DESIGN §3.2）：候選＝這種提示（kind＋色；不露沒有色）誰都會講的＋這位客人自己的，扣掉這一趟看過的（st.hintSeen；含這場）。
+  //   自己的還有沒看過的 → u < OWN_P 抽自己的；否則抽通用的（u 拉伸回 [0,1)）。候選照 id 排序取 ⌊u×長度⌋（同種子同結果；不多取亂數）。
+  //   全部看過了 → 從這一趟最久沒出現的一半裡抽，不跟上一手同一句。抽到的接到 st.hintSeen 最後（已有就搬到最後），最多留 HINT_SEEN_MAX
+  const OWN_P = 0.4;
+  function pickLine(st, kind, key, u) {
+    const T = st.hintTable, seen = Array.isArray(st.hintSeen) ? st.hintSeen : (st.hintSeen = []);
+    const poolOf = src => ((kind === 'none' ? src.none : (src[kind] || {})[key]) || []).slice().sort();
+    const gen = poolOf(T), own = poolOf(T.own || {});
+    const seenSet = new Set(seen), g = gen.filter(id => !seenSet.has(id)), o = own.filter(id => !seenSet.has(id));
+    const at = (arr, x) => arr[Math.max(0, Math.min(arr.length - 1, Math.floor(x * arr.length)))];
+    let line = null;
+    if (o.length && (u < OWN_P || !g.length)) line = at(o, g.length ? u / OWN_P : u);
+    else if (g.length) line = at(g, o.length ? (u - OWN_P) / (1 - OWN_P) : u);
+    else {
+      const all = gen.concat(own); if (!all.length) return null;
+      const rank = id => seen.lastIndexOf(id);
+      const old = all.slice().sort((a, b) => rank(a) - rank(b) || (a < b ? -1 : a > b ? 1 : 0)).slice(0, Math.max(1, Math.ceil(all.length / 2)));
+      line = at(old, u);
+      const prev = st.last && st.last.hint ? st.last.hint.line : null;
+      if (old.length > 1 && line === prev) line = old[(old.indexOf(line) + 1) % old.length];
+    }
+    const k = seen.indexOf(line); if (k >= 0) seen.splice(k, 1);
+    seen.push(line); if (seen.length > HINT_SEEN_MAX) seen.splice(0, seen.length - HINT_SEEN_MAX);
+    return line;
+  }
+  // 開手（§2.1.4）：他補牌 → 計畫屬性（原版 aiPlan 去掉相生／氣勢）→ 提示句 → 讀你／照實／唬人 → 出哪張。
   // RNG 每手固定 8 次（計畫 6＋提示 1＋照實 1），script／王牌／耳機都照取，讓 RNG 流不分支。
+  //   11-17 讀牌加難（DESIGN §2.2；e.rho／beta／half／none 有才走，沒有＝改版前一字不差）：讀你、唬法、提示分級、半指那色都用 hash01(標籤#hkey#手數)，不多取 duel.rng。
+  //   ① 王牌手／招牌手／耳機第一手／教學劇本照舊（不讀、不唬）
+  //   ② 你上一手有應對（relOf）而且 hash 'read' < ρ（rhoOf）→ 出剋你「照舊那招」的顏色：預測 counter→COUNTER_OF[X]、mirror→X、third→BEATS[X]；出 COUNTER_OF[預測]（＝X 時 why readHonest）
+  //   ③ 照實機率 qNow → X（honest）
+  //   ④ 唬人：hash 'beta' < beta → BEATS[X]（剋你剋法；現行唬法）；否則 COUNTER_OF[X]（剋提示色本身）（why bluff）
+  //   提示分級（跟上面獨立）：hash 'mix' < none → 不露；< none＋half → 半指（not＝X 以外兩色擇一，hash 'not'）；其他明指。教學劇本、舊形狀的表（沒有半指／不露句）＝一律明指
   function beginHand(st, events) {
     const E = st.e, P = st.p;
     st.n++;
@@ -718,7 +818,8 @@
     }
     const uLine = rng(st), r = rng(st);
     const sc = st.script, sp = sc && sc.plays[st.n - 1];
-    let idx = -1, attr, why;
+    const hu = tag => hash01(tag + '#' + (E.hkey >>> 0) + '#' + st.n);
+    let idx = -1, attr, why, rel = null;
     if (sp) {
       plan = sp.attr; attr = sp.attr; why = 'script';
       idx = E.hand.findIndex(c => c && c.id === sp.id);
@@ -730,18 +831,33 @@
       attr = plan; why = 'ace'; idx = best[plan];
     } else if (st.n === 1 && headphoneOn(st)) {
       attr = plan; why = 'headphone';
-    } else if (r < qNowOf(st, mOn)) {
-      attr = plan; why = 'honest';
     } else {
-      attr = BEATS[plan]; why = 'bluff';
+      rel = E.rho > 0 ? relOf(st) : null;
+      if (rel && hu('read') < rhoOf(st, CFG.mercy ? m : 0)) {
+        const pred = rel === 'counter' ? COUNTER_OF[plan] : rel === 'mirror' ? plan : BEATS[plan];
+        attr = COUNTER_OF[pred]; why = attr === plan ? 'readHonest' : 'read';
+      } else if (r < qNowOf(st, mOn)) {
+        attr = plan; why = 'honest';
+      } else {
+        attr = E.beta != null && E.beta < 1 && hu('beta') >= E.beta ? COUNTER_OF[plan] : BEATS[plan]; why = 'bluff';
+      }
     }
-    if (idx < 0) idx = bestIdx(E.hand, attr, true);       // 唬人絕不出王牌
+    if (idx < 0) idx = bestIdx(E.hand, attr, true);       // 唬人、讀你絕不出王牌
     if (idx < 0) {                                        // 手上只剩王牌（理論上第 2 步已讓 plan＝王牌那軸）：照實出王牌
       idx = E.hand.findIndex(isAce); plan = attr = aceAxis(E.hand[idx]); why = 'ace';
     }
-    // 提示句：照劇本，否則從那色的句子裡抽一句，不跟上一手同一句
+    // 提示分級（新形狀的表才有半指／不露句；教學劇本一律明指）
+    const nt = !!(st.hintTable && st.hintTable.own);
+    let kind = 'one', not = null;
+    if (!sp && nt && (E.half > 0 || E.none > 0)) {
+      const u = hu('mix'), nn = E.none > 0 ? +E.none : 0, hh = E.half > 0 ? +E.half : 0;
+      if (u < nn) kind = 'none';
+      else if (u < nn + hh) { kind = 'half'; const two = ATTRS.filter(a => a !== plan); not = two[hu('not') < 0.5 ? 0 : 1]; }
+    }
+    // 提示句：照劇本；新形狀的表照 pickLine（一趟內盡量不重複）；舊形狀照舊（那色的句子抽一句，不跟上一手同一句）
     let line;
     if (sp && sc.hints[st.n - 1]) line = sc.hints[st.n - 1];
+    else if (nt) line = pickLine(st, kind, kind === 'half' ? not : plan, uLine);
     else {
       const lines = (st.hintTable && st.hintTable[plan]) || DEFAULT_HINTS[plan];
       let k = Math.floor(uLine * lines.length);
@@ -749,8 +865,9 @@
       if (lines.length > 1 && lines[k] === prev) k = (k + 1) % lines.length;
       line = lines[k];
     }
-    st.plan = { hint: { attr: plan, line }, attr, idx, bluff: attr !== plan, why, mercy: mOn };
-    events.push({ t: 'hand', n: st.n, hint: { attr: plan, line }, eHandN: E.hand.length, pile: E.pile.length });
+    st.plan = { hint: { attr: plan, line, kind, not }, attr, idx, bluff: attr !== plan, why, mercy: mOn, rel };
+    // hand 事件跟 view 一樣：半指／不露不給他打算的那色（attr null）
+    events.push({ t: 'hand', n: st.n, hint: { attr: kind === 'one' ? plan : null, line, kind, not }, eHandN: E.hand.length, pile: E.pile.length });
   }
 
   function legalActions(st) {
@@ -802,7 +919,7 @@
     } else r = outcome(st, pPlay, ePlay, true);
     E.hp -= r.toE; P.hp -= r.toP;
     if (r.heal) P.hp = Math.min(P.max, P.hp + r.heal);                // 頂點卡試做：拆穿回血（扣完聲望後）
-    const hint = { attr: plan.hint.attr, line: plan.hint.line }, bluff = ePlay.attr !== hint.attr;
+    const hint = { attr: plan.hint.attr, line: plan.hint.line, kind: plan.hint.kind || 'one', not: plan.hint.not || null }, bluff = ePlay.attr !== hint.attr;
     const S = st.stats;
     S.hands++; if (act.ace) S.ace++; S.relicNotes += r.notes.length;
     if (r.kind === 'counter') S.counter++; else if (r.kind === 'countered') S.countered++; else if (r.kind === 'tie') S.tie++; else S.mirror++;
@@ -810,13 +927,15 @@
     if (bluff) { S.bluffs++; if (r.kind !== 'countered') S.caught++; } else S.honest++;
     const sum = { n: st.n, pCard: pPlay.card, pAttr: pPlay.attr, pStar: r.pStar, pBase: pPlay.star, ace: !!act.ace,
       eCard, eAttr: ePlay.attr, eStar: ePlay.star, eAce: ePlay.ace,
-      kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, hint, bluff, notes: r.notes };
+      kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, hint, bluff, notes: r.notes,
+      why: plan.why, rel: plan.rel || null };                       // 11-17：why（honest｜bluff｜read｜readHonest｜ace…）、rel（他讀你時看的你上一手應對）給結果句
+    if (st.script) sum.script = true;                               // 教學那場：結果句照舊念關鍵字（duel.js clashText）
     if (st.apexMode) { sum.apex = r.apex || null; if (r.apex && r.apex.hit) S.apexHits = (S.apexHits | 0) + 1; }
     st.last = sum;
     // log 每手記打完的聲望（pHp／eHp）：結算「第 n 手被翻盤」直接用，不從 toP／toE 往回推（頂點卡回聲望不在 toP 裡，推回來會造假；審查 A-1）。
     //   heal＝這手你實際回了幾聲望（頂點卡發動＋拆穿回血；有才記）：這手開打前＝pHp＋toP−heal
     const hl = P.hp - p0 + r.toP;
-    st.log.push(Object.assign({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, pHp: P.hp, eHp: E.hp }, hl > 0 ? { heal: hl } : {}));
+    st.log.push(Object.assign({ n: st.n, pAttr: pPlay.attr, eAttr: ePlay.attr, hint: hint.attr, hk: hint.kind, line: hint.line, bluff, why: plan.why, kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, pHp: P.hp, eHp: E.hp }, hl > 0 ? { heal: hl } : {}));
     events.push(Object.assign({ t: 'clash' }, sum, { pHp: P.hp, eHp: E.hp }));
     P.last = pPlay.attr; E.last = ePlay.attr;
     E.thrown.push(eCard); E.hand.splice(eSide.i, 1); st.plan = null;
@@ -859,6 +978,12 @@
     return events;
   }
 
+  function hintView(h) {
+    const k = h.kind || 'one';
+    if (k === 'half') return { attr: null, line: h.line, kind: k, not: h.not, set: ATTRS.filter(a => a !== h.not) };
+    if (k === 'none') return { attr: null, line: h.line, kind: k, not: null, set: ATTRS.slice() };
+    return { attr: h.attr, line: h.line, kind: 'one', not: null, set: [h.attr] };
+  }
   // 公開資訊（§2.1.5）：提示只給屬性（畫面上不得寫出屬性名）與句子 id；揭曉前不給他出哪張、哪色、有沒有唬人
   function view(st) {
     const P = st.p, E = st.e;
@@ -868,8 +993,12 @@
       n: st.n, maxRounds: CFG.maxRounds, over: st.over ? { win: st.over.win, by: st.over.by } : null,
       pHp: P.hp, pMax: P.max, eHp: E.hp, eMax: E.max,
       eId: E.id, eName: E.name, eTitle: E.title, eMain: E.main || null, elite: E.elite, boss: E.boss,
-      honesty: { key: E.honesty, q: E.q, qNow: pl ? qNowOf(st) : null },
-      hint: pl ? { attr: pl.hint.attr, line: pl.hint.line } : null,
+      // honesty：策略用（畫面不寫）。11-17 多 rho（這位的讀心）、rhoNow（這手讀你的機率，放水期望值）、streak、rel（你上一手的應對）、beta、hit
+      honesty: { key: E.honesty, q: E.q, qNow: pl ? qNowOf(st) : null, rho: E.rho > 0 ? +E.rho : 0,
+        rhoNow: pl ? rhoOf(st, CFG.mercy ? mercyOf(st) * mercyPOf(st) : 0) : null, streak: pl ? streakOf(st) : 0, rel: pl ? relOf(st) : null,
+        beta: E.beta != null ? +E.beta : 1, hit: E.hit | 0 },
+      // hint：明指 {attr, line, kind:'one', not:null, set:[attr]}；半指 {attr:null, line, kind:'half', not, set:另外兩色}；不露 {attr:null, line, kind:'none', not:null, set:三色}
+      hint: pl ? hintView(pl.hint) : null,
       eHandN: E.hand.length, pile: E.pile.length, pileMax: E.deckSize,
       eDeckIds: E.deckIds.slice(), eThrownIds: E.thrown.map(c => c.id),
       hand: P.hand.slice(), ace: aceLive, aceCard: P.ace, aceAxis: aceAxis(P.ace), aceUsed: P.aceUsed,
@@ -940,7 +1069,18 @@
     const q = planner === 'easy' ? Q.easy : planner === 'normal' ? Q.normal : 1 - Math.min(Q.feintMax, Q.feintBase + Q.feintStep * Math.max(0, d - Q.feintFrom));
     const atk = Math.min(A.cap, Math.round(A.rate * Math.max(0, d - A.lateFrom))) + Math.floor(Math.max(0, d - A.slopeFrom) / A.slopeEvery) + (boss ? A.boss : 0) + (A.add | 0);
     const def = Math.min(D.cap, Math.round(D.rate * Math.max(0, d - D.lateFrom))) + (boss ? D.boss : 0) + (D.add | 0);
-    return { hp: T.guestHp[cls], atk: Math.max(0, atk), def: Math.max(0, def), planner, q: Math.round(q * 1e6) / 1e6 };
+    // 11-17 讀牌加難（C.trial.curve.read／hintMix；from 0 或沒給＝關）：hard（第 normalTo＋1 位起）照 hard＋step×(位−hardFrom) 封頂 max，之前 normal
+    const R = K.read || {}, RH = R.rho || {}, M = K.hintMix || {}, HF = M.half || {}, NO = M.none || {}, hard0 = (P.normalTo | 0) + 1;
+    const on = R.from > 0 && d >= R.from, hardOf = (o, base) => planner === 'hard' ? Math.min(+o.max || 0, (+o.hard || 0) + (+o.step || 0) * Math.max(0, d - hard0)) : base;
+    const rho = on ? hardOf(RH, +RH.normal || 0) + (boss ? +RH.boss || 0 : 0) : 0;
+    const beta = on && R.beta != null ? Math.max(0, Math.min(1, +R.beta)) : 1;
+    const hit = R.from > 0 && R.hit && R.hit.from > 0 && d >= R.hit.from ? Math.max(0, R.hit.n | 0) : 0;   // read.from 0＝整條關（含被唬到多扣）
+    const half = HF.from > 0 && d >= HF.from ? hardOf(HF, +HF.normal || 0) : 0;
+    const none = NO.from > 0 && d >= NO.from ? Math.min(+NO.max || 0, (+NO.base || 0) + (+NO.step || 0) * (d - NO.from)) : 0;
+    const r6 = x => Math.round(x * 1e6) / 1e6;
+    return { hp: T.guestHp[cls], atk: Math.max(0, atk), def: Math.max(0, def), planner, q: r6(q),
+      rho: r6(Math.max(0, Math.min(1, rho))), rhoMul: R.streakMul > 0 ? +R.streakMul : 1, rhoCap: R.cap != null ? +R.cap : 0.9, rMercy: R.mercy != null ? +R.mercy : 0.7,
+      beta: r6(beta), half: r6(Math.max(0, half)), none: r6(Math.max(0, none)), hit };
   }
   // 放水照位數機率（店主 11-16 選 C；C.trial.curve.mercyP）：第 from 位以前 1（每手都放水）；之後 max(min, p0 − step×⌊(位−from)/every⌋)
   //   預設：第 11–15 位 90%、16–20 位 80%…、第 46 位起 20%。放水唬人（qNowOf：落後時少唬）三種出招難度都吃這個機率（主線 11-16「放水前期保留」起 easy 也算）；
@@ -987,7 +1127,7 @@
   //   ③ 同一組輸入選出的牌（卡池物件參照）記住：鍵＝客人、tag（seedKey#runNo#位）、M、fl、minPool、mainShare、他原本的牌單；
   //      來客那排一次畫 5 位、shopPolicy 與 startFight 同一位各叫一次 → 第二次起不重選。加星、王牌、複本照舊每次重做（不共用物件）
   //   ④ radioPool：每格（tune）∩ 普通／稀有／獨特 記住，每次只扣包包與架上
-  //   API._noCache＝true → 全部走原本的寫法（deckSlow、radioPool 篩整池）；engine.test #24 對照 200 個 seed × 第 1–15 位結果 JSON 相同
+  //   API._noCache＝true → 全部走原本的寫法（deckSlow、radioPool 篩整池）；engine.test #25 對照 200 個 seed × 第 1–15 位結果 JSON 相同
   const POOL_INFO = typeof WeakMap === 'function' ? new WeakMap() : null;
   const AXIS_BIT = { c: 1, o: 2, h: 4 };
   const DECK_MEMO_MAX = 512;
@@ -1365,6 +1505,7 @@
       retryLeft: T.retry, pending: null, duel: null, duelEnemy: null, over: null,
       hp: T.youHp, maxHp: T.youHp, hpIn: T.youHp, level: 1, xp: 0, atk: 0, def: 0, levelUps: 0, picks: [],
       streak: 0, bestStreak: 0, checkpoints: [], taken: 0, aceWon: false,
+      hintSeen: [],                                               // 11-17：這一趟看過的提示句 id（舊的在前；engine pickLine 盡量不重複）
       money: EC.start,
       shop: { bins: {}, relics: [], bargain: [], bargainPicked: false, firstGuestInside: false, radio: null },
       stats: { wins: 0, beaten: 0, fights: 0, hands: 0, retries: 0, taken: [], met: [], relicsGot: [], lostAt: null,
@@ -1770,6 +1911,7 @@
     const tut = !!o.tutorial && prologue && !!content.tutorial;
     const eDef = prologue ? enemyDef(content, enemyId, { tutorial: tut }) : guestDef(run, content, enemyId, run.pos);
     const opts = { seed: (Math.floor(rng(run) * 4294967296) >>> 0) || 1, hintTable: hintTableOf(content) };
+    if (Array.isArray(run.hintSeen)) opts.hintSeen = run.hintSeen;   // 11-17：這一趟看過的提示句（舊存檔沒有＝空）
     const apex = !!o.apex && !prologue && !!apexCfg(content);   // 頂點卡試做：序章那場照舊 7 星教學
     if (apex) opts.apex = true;
     if (eDef.ace) opts.enemyAce = eDef.ace;
@@ -1794,6 +1936,7 @@
     const enemyId = run.duelEnemy || duel.e.id;
     const E = content.enemies[enemyId] || {};
     const S = run.stats, win = duel.over.win, T = trialCfg(content, run.tier);
+    if (Array.isArray(duel.hintSeen)) run.hintSeen = duel.hintSeen.slice(-HINT_SEEN_MAX);   // 11-17：這場抽到的提示句接上去（輸了說情重打也算看過）
     const prologue = run.prologue === 'pending' && enemyId === (content.prologueEnemy || 'man');
     const cls = prologue ? 'prologue' : classAt(run.pos), pos = run.pos;
     S.fights++; S.hands += duel.stats.hands;
@@ -2484,34 +2627,76 @@
     }
     return best;
   }
+  // 11-17 讀牌加難：玩家心裡的客人模型 → 他這手出哪色的分布 {c,o,h}（DESIGN §1.2；scratchpad v5/harder proto/protopols.mjs guestDist）
+  //   prm＝{q 照實、rho 讀你（上一手有應對才算）、beta 唬人走「剋你剋法」的比例、wMain 半指／不露時「常出」那色的先驗}。
+  //   他的計畫色 X：明指＝提示那色；半指／不露＝提示 set 裡、常出那色 wMain、其他平分（沒有常出＝平分）
+  //   每個 X：讀你 rho→COUNTER_OF[預測]；其他 (1−rho)：照實 q→X、唬人 (1−q)·beta→BEATS[X]、(1−q)(1−beta)→COUNTER_OF[X]
+  function guestDist(v, prm) {
+    const h = v.hint || {}, set = h.set || (ATTRS.includes(h.attr) ? [h.attr] : ATTRS), main = v.eMain, rel = v.honesty ? v.honesty.rel : null;
+    const w = {}; let tot = 0;
+    for (const a of set) { const p0 = main ? (a === main ? prm.wMain : (1 - prm.wMain) / 2) : 1; w[a] = p0; tot += p0; }
+    const H = { c: 0, o: 0, h: 0 }, B = { c: 0, o: 0, h: 0 };
+    for (const a of set) {
+      const wa = tot > 0 ? w[a] / tot : 1 / set.length, rho = rel ? prm.rho || 0 : 0, q = prm.q, b = prm.beta != null ? prm.beta : 1;
+      H[a] += wa * (1 - rho) * q; B[BEATS[a]] += wa * (1 - rho) * (1 - q) * b; B[COUNTER_OF[a]] += wa * (1 - rho) * (1 - q) * (1 - b);
+      if (rel) { const pred = rel === 'counter' ? COUNTER_OF[a] : rel === 'mirror' ? a : BEATS[a], k = COUNTER_OF[pred]; (k === a ? H : B)[k] += wa * rho; }
+    }
+    return { c: H.c + B.c, o: H.o + B.o, h: H.h + B.h };
+  }
+  const distSides = (D, est) => ATTRS.map(a => ({ p: D[a], side: { attr: a, star: est[a], ace: false } }));
+  const wMainOf = st => (st.e && st.e.mainBias ? 0.8 : 0.5);               // 常出那色的先驗：出招偏主屬性的位數（第 4 位起）0.8、之前 0.5
+  // 照模型挑：會讀的（精確數字）／一般玩家（抓大概）／舊腦袋（以為只有一種唬人、不知道會被讀）
+  const PRM = {
+    thoughtful: (st, v) => ({ q: v.honesty.qNow != null ? v.honesty.qNow : v.honesty.q, rho: v.honesty.rhoNow || 0, beta: v.honesty.beta, wMain: wMainOf(st) }),
+    humanRead: () => ({ q: 0.7, rho: 0.4, beta: 0.7, wMain: 0.7 }),
+    oldReader: (st, v) => ({ q: v.honesty.qNow != null ? v.honesty.qNow : v.honesty.q, rho: 0, beta: 1, wMain: wMainOf(st) }),
+  };
+  const reader = name => (st, R, mem, content) => {
+    const v = view(st), os = pubOpts(v); if (!os.length) return null;
+    if (!v.hint) return pickMax(os).act;
+    return evPick(st, v, os, distSides(guestDist(v, PRM[name](st, v)), estStars(v, content)), 2).act;
+  };
+  // 新手怎麼看提示：明指＝那色；半指＝常出在裡面就常出、否則兩色挑一個；不露＝常出（沒有常出＝看不懂）
+  function guessAttr(st, v) {
+    const h = v.hint; if (!h) return null;
+    if ((h.kind || 'one') === 'one') return h.attr;
+    const set = h.set || ATTRS, main = v.eMain;
+    if (main && set.includes(main)) return main;
+    if (h.kind === 'none') return null;
+    return set[Math.floor(fallbackR(st)() * set.length)];
+  }
   const policyFns = {
     random: (st, R) => { R = R || fallbackR(st); const acts = legalActions(st); return acts[Math.floor(R() * acts.length)] || null; },
     // 只出最大星：手牌＋王牌裡星最大的那一手（王牌算 7 → 第一手就丟）
     high: st => { const b = pickMax(pubOpts(view(st))); return b ? b.act : null; },
-    // 永遠剋提示：COUNTER_OF[提示] 軸最大的那張；那軸最大 ≤1 星就改 high
+    // 永遠剋提示：只看明指（COUNTER_OF[提示] 軸最大的那張）；半指／不露看不懂＝high；那軸最大 ≤1 星就改 high
     counterHint: st => {
       const v = view(st), os = pubOpts(v); if (!os.length) return null;
-      const o = v.hint ? onAxis(os, COUNTER_OF[v.hint.attr]) : null;
+      const o = v.hint && v.hint.attr ? onAxis(os, COUNTER_OF[v.hint.attr]) : null;
       return (o && o.star > 1 ? o : pickMax(os)).act;
     },
-    // 兩步公式：上一手你出的是 COUNTER_OF[上一手提示] → 這手出提示同色最大的；否則同 counterHint
+    // 新手（11-17）：明指就剋它；半指／不露照 guessAttr 猜一色剋；猜不出、那軸 ≤1 星＝high（背對照表的人＝提示一律看得懂＝同一條）
+    novice: st => {
+      const v = view(st), os = pubOpts(v); if (!os.length) return null;
+      const g = guessAttr(st, v), o = g ? onAxis(os, COUNTER_OF[g]) : null;
+      return (o && o.star > 1 ? o : pickMax(os)).act;
+    },
+    // 兩步公式（舊版懂反讀）：上一手你照提示剋（honesty.rel counter）→ 這手出提示同色最大的；否則剋提示（看不懂的提示照新手猜）
     formula: st => {
       const v = view(st), os = pubOpts(v); if (!os.length) return null;
-      if (!v.hint) return pickMax(os).act;
-      const L = v.last, two = !!(L && L.hint && L.pAttr === COUNTER_OF[L.hint.attr]);
-      const o = onAxis(os, two ? v.hint.attr : COUNTER_OF[v.hint.attr]);
+      const g = guessAttr(st, v); if (!g) return pickMax(os).act;
+      const two = !!(v.honesty && v.honesty.rel === 'counter');
+      const o = onAxis(os, two ? g : COUNTER_OF[g]);
       return (o && o.star > 1 ? o : pickMax(os)).act;
     },
-    // 跟提示同色（對照組）
-    mirrorHint: st => { const v = view(st), os = pubOpts(v); if (!os.length) return null; const o = v.hint ? onAxis(os, v.hint.attr) : null; return (o || pickMax(os)).act; },
-    // 會讀的：他這手 {提示: q, BEATS[提示]: 1−q}（q＝放水後的 qNow：知道他落後時少唬）；他各軸星數用公開牌單估；王牌在非最後一手扣 2
-    thoughtful: (st, R, mem, content) => {
-      const v = view(st), os = pubOpts(v); if (!os.length) return null;
-      if (!v.hint) return pickMax(os).act;
-      const hq = v.honesty || {}, q = hq.qNow != null ? hq.qNow : hq.q != null ? hq.q : 1, h = v.hint.attr, est = estStars(v, content);
-      const dist = [{ p: q, side: { attr: h, star: est[h], ace: false } }, { p: 1 - q, side: { attr: BEATS[h], star: est[BEATS[h]], ace: false } }];
-      return evPick(st, v, os, dist, 2).act;
-    },
+    // 跟提示同色（對照）：只看明指
+    mirrorHint: st => { const v = view(st), os = pubOpts(v); if (!os.length) return null; const o = v.hint && v.hint.attr ? onAxis(os, v.hint.attr) : null; return (o || pickMax(os)).act; },
+    // 會讀的：知道客人模型的精確數字（qNow 放水後、rhoNow、beta、上一手應對、常出先驗），三色分布算期望值；他各軸星數用公開牌單估；王牌在非最後一手扣 2
+    thoughtful: reader('thoughtful'),
+    // 一般玩家（11-17 新）：同上，但數字抓大概（照實 .7、讀心 .4、剋你剋法 .7、常出 .7）
+    humanRead: reader('humanRead'),
+    // 舊腦袋（11-17 新，sim 對照＝店主第一次玩新版）：會算照實機率，但以為只有一種唬人（BEATS[提示]）、不知道會被讀
+    oldReader: reader('oldReader'),
     // 先知：知道他這手出哪張、哪色（王牌成本 0.5）
     oracle: st => {
       const v = view(st), os = pubOpts(v); if (!os.length) return null;
@@ -2519,7 +2704,6 @@
       return evPick(st, v, os, [{ p: 1, side: { i: st.plan.idx, attr: st.plan.attr } }], 0.5).act;
     },
   };
-  policyFns.novice = policyFns.counterHint;
   // ---- 頂點卡試做：旗標下（duel.apexMode）而且這手還能發動，策略自己決定要不要發動（回傳的 act 多 apex:true）；旗標關時一行都不走（亂數也不多取）----
   //   會讀的：期望增益 ≥ APEX_TAU[第 n 手] 才發動（越後面越鬆；FRAME 附錄 A）；整場型第 1 手就發動；回聲望＝聲望 ≤ 上限 − N 才發動（不浪費）；
   //     看穿＝「知道真假」的資訊價值，發動後照真假挑最好的。拆穿回血把預期回的聲望算進增益。
@@ -2543,20 +2727,25 @@
     if (name === 'thoughtful' || name === 'oracle') {
       const v = view(st), os = pubOpts(v);
       if (!os.length || !v.hint) return f(st, R, mem, content);
-      let dist;
+      let dist, D = null, est = null;
       if (name === 'oracle') dist = [{ p: 1, side: { i: st.plan.idx, attr: st.plan.attr } }];
-      else {
-        const hq = v.honesty || {}, q = hq.qNow != null ? hq.qNow : hq.q != null ? hq.q : 1, h = v.hint.attr, est = estStars(v, content);
-        dist = [{ p: q, side: { attr: h, star: est[h], ace: false } }, { p: 1 - q, side: { attr: BEATS[h], star: est[BEATS[h]], ace: false } }];
+      else {                                                             // 11-17：三色分布（guestDist；半指／不露沒有提示那色）
+        est = estStars(v, content); D = guestDist(v, PRM.thoughtful(st, v));
+        dist = distSides(D, est);
       }
       const b0 = evPick(st, v, os, dist, 2);
       let gain, act1;
       if (reveal) {
-        if (dist.length < 2) return b0.act;
-        const dh = [{ p: 1, side: dist[0].side }], db = [{ p: 1, side: dist[1].side }];
+        if (!D) return b0.act;
+        // 發動就知道這手是真是假（章＝feintOf：明指＝出不出提示那色、半指＝出不出他說不出那色、不露一律真話＝沒有資訊）：照真／假各自的分布挑最好的
+        const part = lie => { const o = {}; for (const a of ATTRS) o[a] = lieOf(v.hint, a) === lie ? D[a] : 0; return o; };
+        const J = { honest: part(false), bluff: part(true) };
+        const sum = o => o.c + o.o + o.h, pH = sum(J.honest), pB = sum(J.bluff);
+        const norm = (o, t) => ({ c: t > 0 ? o.c / t : 0, o: t > 0 ? o.o / t : 0, h: t > 0 ? o.h / t : 0 });
+        const dh = distSides(norm(J.honest, pH), est), db = distSides(norm(J.bluff, pB), est);
         const bh = evPick(st, v, os, dh, 2), bb = evPick(st, v, os, db, 2);
-        gain = dist[0].p * (apexEv(st, v, bh.act, dh) - apexEv(st, v, b0.act, dh)) + dist[1].p * (apexEv(st, v, bb.act, db) - apexEv(st, v, b0.act, db));
-        act1 = withApex(st.plan.bluff ? bb.act : bh.act);                // 發動就知道這手是真是假
+        gain = pH > 1e-9 && pB > 1e-9 ? pH * (apexEv(st, v, bh.act, dh) - apexEv(st, v, b0.act, dh)) + pB * (apexEv(st, v, bb.act, db) - apexEv(st, v, b0.act, db)) : 0;   // 一邊是 0（不露）＝章沒有資訊
+        act1 = withApex(feintOf(st, st.plan.attr) ? bb.act : bh.act);    // 發動就知道這手是真是假（＝activateApex 的章）
       } else {
         const b1 = evPick(st, v, os.map(o => Object.assign({}, o, { act: withApex(o.act) })), dist, 2);
         act1 = b1.act; gain = apexEv(st, v, act1, dist) - apexEv(st, v, b0.act, dist);
@@ -2584,6 +2773,7 @@
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
     newRun, current, nextStep, startFight, finishFight, choose, canShop, canBargainPick,
     trialCfg, classAt, roundOf, trialGuest, trialDeck, roundGuests, levelOffer, mercyPAt, titleAt, guestTitle, roundMains, mainAt, guestDef, legacyView, oldDeckIds, pinOldDeck, sellQuote, nextCheckpoint, toCheckpoint, runSummary, restock, fixBins, fixBargain, fixMain, jumpTo, half, hintTableOf,
+    relOf, streakOf, guestDist, hintTableFor,
     rarity, rarityScore, categoryOf, GENRE_BIN, pctPair, priceOf, bargainPriceOf, bargainPriceIn, relicPrice, sellValue, isGift, moneyText,
     radioPool, canRadio,
     LOT, lotCfg, lotQuota, lotWarn, stockBins, drawLot, shelve, lotOk, fixLot, lotLeft, mapIds, dailyPick, dailyReward,

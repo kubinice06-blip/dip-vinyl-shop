@@ -1,5 +1,8 @@
 # 寫作層共用規則（一次到位版）
 
+> **2026-11-17 起本檔不再用於新卡（店主定案）**：一般卡改照 `general-desc-base.md`、頂點卡照 `apex-desc-base.md`。本檔只留作舊批紀錄與格式細則參考；與上述兩檔衝突時一律以它們為準。
+
+
 > **頂點卡（hall／heresy／pearl）不適用本檔，改照 `apex-desc-base.md`（2026-11-04 店主定案）**：不用鉤子公式與字數預算表，第一句講地位、平實寫做法與聲音、200–280 字。
 
 工作目錄一律 `C:\Users\User\dip-vinyl-home\desc-restyle`。**不動任何 git repo、不動 PROJECT_MEMORY.md、不上網。**

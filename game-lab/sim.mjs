@@ -3,7 +3,7 @@
 //   選擇全用引擎自己的 bargainPolicy／runPolicy（獎勵、升級＝harness MIX、說情）／shopPolicy('smart')。
 // Usage: node game-lab/sim.mjs [--n 2000] [--mode all|runs|man] [--flows smart,none,bare] [--gate smart] [--cap 300] [--json out.json]
 //                              [--lot off] [--browse 16] [--seeds k:rarity] [--want N]
-//                              [--policies thoughtful,novice,random,high,formula,mirrorHint,oracle] [--tier k]
+//                              [--policies thoughtful,novice,random,humanRead,oldReader,high,formula,mirrorHint,oracle] [--tier k]
 //                              [--set mercy=false] [--patch '{"trial":{"curve":{"atk":{"add":1}}}}'] [--data <dir with cards.js and bins.js>]
 //                              [--apex [--apex-ace <頂點卡 id>] [--apex-params '{"<能力 id>":{"n":3}}']] [--ace hall|pearl|heresy]
 //   --apex   頂點卡純輔助卡試做（＝遊戲網址 ?apex=1；scratchpad v5/apextrial）：startFight 傳 {apex:true}（序章照舊 7 星）；王牌＝各派預設那張（C.aces），
@@ -37,7 +37,9 @@
 //            bare＝最像 ../curve V3 模擬（curvesim.cjs）：不打序章、包包＝老闆四張＋特價箱三張＋男子那張、整趟不換（不拿獎勵、不買、沒有配件）；
 //            cards／relics＝none 但只拿唱片／只拿配件（拆解用，要自己點）。每個流程都有升級（runPolicy）與每輪一次說情
 //   --gate   門檻看哪個流程（預設 smart＝真的玩法）　--set 改 engine CFG　--patch deep-merge 進 content（例：C.trial.curve 旋鈕）　--tier C.trial.tiers 第 k 階
-// 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（永遠剋提示）、會讀的＝thoughtful、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
+// 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
+//   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
+//   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
 // 名詞（照 ../curve/results.md）：深度＝這一趟輸在第幾位（打完 cap 位還沒輸記 cap）；到第 N 位＝深度 ≥ N；不說情＝同一趟在第一次輸的地方切斷；
 //   單位死亡率＝到了這一位的趟裡有幾成在這一位結束；首戰＝這一位的第一場（說情重打不算）；懸崖＝相鄰兩個非藏家位（都 ≥200 趟到過）首戰勝率掉最多的地方。
 //
@@ -47,13 +49,22 @@
 //      q.easy 0.8→0.75 拉回：smart n=1000／2000／4000＝10.4／8.6／9.4%（scratchpad v5/wave-a/merge/FIX.md）。下限 8% 擋退回送分（q.easy 0.9 只有 4.1%、0.85 也只 5.0%）；
 //      上限 15% 擋把只會照提示剋的新手卡死在前三位（掃描裡有一組 18.7%）。scratchpad v5/early/PICK.md
 //   T1b 會讀的 第 1–3 位死亡 ≤3%（11-16 新增：加的難度要「讀得出唬人就過得去」，不是全面變難；選定組 1.0%）
-//   T2 照規劃書 #s3 的目標（主線 11-12 裁定：SPEC 原本照 V3 bare 寫的 8–20 不含獎勵與商店，改回店主的目標）：
-//      T2a 一般玩家（新手）深度中位數 10–30；T2b 讀得準的高手（會讀的）有機會破 100 位：到第 100 位 10–70%
+//   T2 照規劃書 #s3 的目標（主線 11-12 裁定：SPEC 原本照 V3 bare 寫的 8–20 不含獎勵與商店，改回店主的目標）＋11-17 讀牌加難（店主「玩起來太簡單、
+//      很容易讀到對方的牌，舊版難度剛好」；DESIGN §1.3–§1.4，原型 n 1000 cap 300 實測在括號）：
+//      T2a 一般玩家（humanRead；原本指新手）深度中位數 15–35（原型 25）：「一般玩家走到第 10–30 位」改指會看提示、知道會被唬的人
+//      T2c 新手（只會照提示剋）深度中位數 4–8、到第 10 位 15–35%（原型 5、27%）：舊版照剋死在第 5–9 位；只會照提示剋要走不遠
+//      T2b 會讀的 到第 50 位 8–30%（原型 15%）；到第 100 位只印、不擋（原本 10–70%：拿掉「出提示色永遠不會被剋」那張安全牌後，後段每手都可能被剋，原型 2%）
 //   T3 會讀的 藏家位死亡率是非藏家位的 2–4 倍：第 4–60 位、到過 ≥200 趟的位置合併算（第 1–3 位是前期、另有 T1／T1b 看，不算進來；V3 13–20% 對 5–7%）
 //   T4 相鄰非藏家位首戰勝率掉 ≤20 點（新手、會讀的各一條；V3 新手第 4→6 位 19 點、會讀的 14 點）
 //   T5 一場平均手數：新手 3–4.5（舊版試玩表 3–4 招）；會讀的 2.5–4.5（後段包包變強、一場變短；之後用 C.trial.tiers 難度階梯給高手加難度，店主 11-12 參考 Monster Train）
 //   T6 亂出 到第 5 位 ≤5%：第一次跑出 smart 1.5%、none 0.5%、bare 0.05%（亂出第 1 位首戰只贏 2 成，97% 死在第 1–3 位）；留 3 倍餘裕（舊 S3 也是 ≤5%）
 //   T7 會讀的比亂出走得遠：深度中位數 ≥ 亂出的 2 倍且至少多 5 位（第一次跑出 smart 90 對 1、bare 14 對 1）
+//   R1 讀牌拉開差距（11-17）：會讀的 − 新手 到第 10 位 ≥ 50 點（原型 95 − 27＝68；改版前 97 − 95＝2：讀不讀都一樣）
+//   R2 舊讀法會被騙（11-17）：舊腦袋 到第 10 位 55–80%（原型 72%；改版前會讀的 97%）：店主第一次玩新版要被騙到，但不是打不過
+//   R3 沒有安全牌（11-17）：跟提示同色 到第 10 位 ≤10%（原型 3%；改版前 47%）；兩步公式 到第 10 位 ≤ 會讀的 −8 點（背公式不能等於會讀）
+//   R4 會讀的前 10 位不要變成拼運氣（11-17）：會讀的 第 1–4、6–9 位首戰 ≥92%；第 5、10 位（藏家）≥82%（原型最低 88）
+//   11-17 施工後（--n 1000，243 秒）：23/23，旋鈕＝DESIGN 選定組沒調。T1 14.5%（--n 2000 只跑新手／會讀的／亂出：12.6%）、T2a 中位 25、T2c 中位 5／到第 10 位 28.6%、
+//      T2b 到第 50 位 14.8%（到第 100 位 2.2%）、R1 66.2 點、R2 72.1%、R3 2.9%／81.4 對 94.8、R4 最低 89（第 10 位）、T3 2.04 倍（貼下緣：掉到 2 以下就 read.rho.boss +.05）
 //   S5 序章男子（保留 v4 §5.2）：會讀的 ≥97%、平均 ≤4 手；只出最大星 ≥90%；新手（永遠剋提示）≥90%
 //   M6 最多 6 手（CFG.maxRounds）；HP 聲望單調 C.trial.guestHp 一般 ≤ 菁英 ≤ 藏家（不靠模擬）
 // 第一次跑（2026-11-12，--n 2000，171 秒）：smart 13/15，沒過的是 T2 會讀的中位 90（平均 103.9）、T5 會讀的 2.57 手。T1／T3–T7 的 SPEC 數字照用、不放寬。
@@ -150,12 +161,12 @@ if (SEEDS_ARG != null) {
 const WANT_N = +arg('want', 0);
 if (!(Number.isInteger(WANT_N) && WANT_N >= 0)) { console.error('--want N（非負整數）'); process.exit(2); }
 
-const ALL_POLS = ['thoughtful', 'novice', 'random', 'high', 'formula', 'mirrorHint', 'oracle'];
+const ALL_POLS = ['thoughtful', 'novice', 'random', 'humanRead', 'oldReader', 'high', 'formula', 'mirrorHint', 'oracle'];
 const POLS = arg('policies', ALL_POLS.join(',')).split(',').filter(Boolean);
 for (const p of POLS) if (!EN.policies[p]) { console.error('unknown policy ' + p); process.exit(2); }
 const CORE = ['thoughtful', 'novice', 'random'];                 // 每個流程都跑；其他策略只跑門檻流程
-const LABEL = { thoughtful: '會讀的', novice: '新手（剋提示）', random: '亂出', high: '只出最大星', counterHint: '永遠剋提示', formula: '兩步公式',
-  mirrorHint: '跟提示同色（對照）', oracle: '先知' };
+const LABEL = { thoughtful: '會讀的', novice: '新手（剋提示）', random: '亂出', high: '只出最大星', counterHint: '永遠剋提示', formula: '兩步公式（舊版懂反讀）',
+  mirrorHint: '跟提示同色（對照）', oracle: '先知', humanRead: '一般玩家', oldReader: '舊腦袋（不知道會被讀）' };
 const FLOW_ZH = { smart: 'smart（獎勵＋買）', none: 'none（獎勵、不買）', bare: 'bare（＝V3）', cards: 'cards（只拿唱片）', relics: 'relics（只拿配件）' };
 const MAN = C.prologueEnemy;
 const pct = x => x == null ? '—' : (100 * x).toFixed(1) + '%';
@@ -363,6 +374,15 @@ function runOnce(pol, flow, i, A) {
     if (!prologue) {
       const mn = duel.e.main;
       for (const l of duel.log) { EP.play[l.eAttr]++; EP.hint[l.hint]++; EP.hands++; if (mn) { EP.mHands++; if (l.eAttr === mn) EP.mPlay++; if (l.hint === mn) EP.mHint++; } }
+      // 每手拆解（11-17；DESIGN §1.1 那張表，算法照 proto/perhand.mjs）：第 1–2／3–4／5／6–9／10 位
+      const PH = A.ph[phSeg(d)];
+      if (PH) for (const l of duel.log) {
+        PH.n++; PH.net += l.toE - l.toP;
+        if (l.kind === 'counter') PH.counter++; else if (l.kind === 'countered') PH.countered++;
+        if (l.blocked) PH.blocked++;
+        if (l.why === 'read' || l.why === 'readHonest') PH.read++;
+        if (l.hk === 'half') PH.half++; else if (l.hk === 'none') PH.none++;
+      }
       EP.mercyN += duel._mN | 0; EP.mercyOn += duel._mOn | 0;
     }
     const res = EN.finishFight(run, C);
@@ -403,6 +423,9 @@ function runOnce(pol, flow, i, A) {
     trialAces: (run.acesWon || []).filter(id => !Object.values(C.aces).includes(id)).length } : {}) };
 }
 
+// 每手拆解的位數段（11-17）
+const PH_SEGS = ['1–2', '3–4', '5', '6–9', '10'];
+const phSeg = d => d <= 2 ? '1–2' : d <= 4 ? '3–4' : d === 5 ? '5' : d <= 9 ? '6–9' : d === 10 ? '10' : null;
 // ---------------- one cell (policy × flow) ----------------
 const q = (arr, p) => { const a = arr.slice().sort((x, y) => x - y); return a[Math.min(a.length - 1, Math.max(0, Math.ceil(p * a.length) - 1))]; };
 const BANDS = [[1, 3], [4, 5], [6, 10], [11, 20], [21, 50], [51, 100], [101, 1e9]];
@@ -411,7 +434,8 @@ const REACH = [5, 10, 20, 50, 100];
 function runCell(pol, flow, n) {
   const NP = CAP + 2, z = () => new Float64Array(NP);
   const A = { reached: z(), deaths: z(), att: z(), win: z(), att1: z(), win1: z(), hands: z(), r6: z(), bar: z(), ko: z(),
-    ep: { play: { c: 0, o: 0, h: 0 }, hint: { c: 0, o: 0, h: 0 }, hands: 0, mHands: 0, mPlay: 0, mHint: 0, mercyN: 0, mercyOn: 0, reclaim: { gift: 0, seed: 0 } } };
+    ep: { play: { c: 0, o: 0, h: 0 }, hint: { c: 0, o: 0, h: 0 }, hands: 0, mHands: 0, mPlay: 0, mHint: 0, mercyN: 0, mercyOn: 0, reclaim: { gift: 0, seed: 0 } },
+    ph: Object.fromEntries(PH_SEGS.map(k => [k, { n: 0, counter: 0, countered: 0, blocked: 0, read: 0, half: 0, none: 0, net: 0 }])) };
   if (APEX) A.ax = { fights: 0, used: 0, nSum: 0, nHist: [0, 0, 0, 0, 0, 0, 0], dSum: 0, healSum: 0, hitHand: 0, hw: 0, hl: 0, ht: 0, netSum: 0, rev: { honest: 0, bluff: 0 },
     hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0 };
   if (LOT_ON && flow === 'smart') {                                      // 一檔貨表（第 B 波；lot 關＝不記、JSON 不多欄位）
@@ -463,6 +487,8 @@ function runCell(pol, flow, n) {
     ...(A.wt ? { want: wantStats(A.wt, n) } : {}),
     ...(UNLOCK ? { unlock: { aces: avg('aces'), unlocks: avg('unlocks'), trialAces: avg('trialAces'),          // --unlock：每趟收幾張、解鎖幾派、收到第 k 張的趟（%）
       atLeast: [1, 2, 3, 4].map(k => share(recs, r => r.aces >= k)), unlock2: share(recs, r => r.unlocks >= 1), unlock3: share(recs, r => r.unlocks >= 2) } } : {}),
+    perHand: Object.fromEntries(PH_SEGS.map(k => { const H = A.ph[k], f = x => (H.n ? x / H.n : null); return [k, { n: H.n, counter: f(H.counter), countered: f(H.countered),
+      mirror: H.n ? (H.n - H.counter - H.countered) / H.n : null, blocked: f(H.blocked), read: f(H.read), half: f(H.half), none: f(H.none), net: f(H.net) }]; })),
     eplay: { play: shareOf(A.ep.play), hint: shareOf(A.ep.hint), hands: A.ep.hands, mainPlay: A.ep.mHands ? A.ep.mPlay / A.ep.mHands : null, mainHint: A.ep.mHands ? A.ep.mHint / A.ep.mHands : null,
       mercyOn: A.ep.mercyN ? A.ep.mercyOn / A.ep.mercyN : null, mercyHands: A.ep.mercyN, reclaim: { gift: A.ep.reclaim.gift / n, seed: A.ep.reclaim.seed / n } },
   };
@@ -571,6 +597,13 @@ if (MODE === 'all' || MODE === 'runs') {
     for (const flow of flows) if (cellOf(flow, pol)) console.log(`| ${LABEL[pol]}・${flow} | ${posRow(cellOf(flow, pol))} |`);
   }
 
+  // 每手拆解（11-17；門檻流程每支策略）：第 1–2／3–4／5／6–9／10 位的你剋中／被剋／比星（含剋不動）／剋不動／他讀你那手／半指／不露／每手淨聲望（扣他−扣你）
+  console.log(`\n每手拆解（${GATE}；客人場每手，%；DESIGN §1.1）：剋中／被剋／比星（含剋不動）／剋不動／讀你那手／半指／不露／每手淨聲望\n`);
+  console.log('| 策略 | ' + PH_SEGS.map(k => '第 ' + k + ' 位').join(' | ') + ' |');
+  console.log('|---|' + PH_SEGS.map(() => '---').join('|') + '|');
+  for (const pol of Object.keys(cells[GATE])) { const x = cells[GATE][pol];
+    console.log(`| ${LABEL[pol] || pol} | ` + PH_SEGS.map(k => { const H = x.perHand[k]; return H.n ? [H.counter, H.countered, H.mirror, H.blocked, H.read, H.half, H.none].map(p0).join('／') + '／' + f2(H.net) : '—'; }).join(' | ') + ' |'); }
+
   if (APEX) {                                                            // 頂點卡發動（--apex；只算客人場，序章不開）
     console.log(`\n頂點卡發動（客人場；發動那手的勝負＝那手扣他的 vs 他扣你的，回聲望不算在內）：\n`);
     console.log('| 策略 | 流程 | 發動率（每場） | 平均第幾手 | 第 1／2／3／4／5／6 手（%） | 那手 贏／平／輸 | 那手淨賺（扣他−扣你） | 能力改了幾點 | 那手作用到 | 整場作用手數 | 回聲望 | 看穿 真／唬 | 場勝率 發動／沒發動 |');
@@ -615,11 +648,24 @@ if (MODE === 'all' || MODE === 'runs') {
   }
 
   // ---- 門檻（--gate 流程）----
-  const G = cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, tag = `［${GATE}］`;
+  const G = cells[GATE], TH = G.thoughtful, NV = G.novice, RD = G.random, HR = G.humanRead, OR = G.oldReader, FM = G.formula, MR = G.mirrorHint, tag = `［${GATE}］`;
   if (NV) check('T1', `${tag}新手 第 1–3 位死亡 8–15%（前期要有挑戰，見檔頭）`, NV.die13 >= 0.08 - 1e-9 && NV.die13 <= 0.15 + 1e-9, `${pct(NV.die13)}（V3 2%；11-16 前期加難前 smart 1.5%）`);
   if (TH) check('T1b', `${tag}會讀的 第 1–3 位死亡 ≤3%`, TH.die13 <= 0.03 + 1e-9, `${pct(TH.die13)}（V3 0%）`);
-  if (NV) check('T2a', `${tag}新手 深度中位數 10–30（一般玩家走到第 10–30 位）`, NV.median >= 10 && NV.median <= 30, `中位 ${NV.median}、平均 ${NV.mean.toFixed(1)}`);
-  if (TH) check('T2b', `${tag}會讀的 到第 100 位 10–70%（高手有機會破 100）`, TH.reach[4] >= 0.10 - 1e-9 && TH.reach[4] <= 0.70 + 1e-9, `到第 100 位 ${pct(TH.reach[4])}、中位 ${TH.median}`);
+  // 11-17 讀牌加難（DESIGN §1.4）：T2a 改看一般玩家、T2c 新手走不遠、T2b 改看到第 50 位；R1–R4 讀牌要有用、舊讀法會被騙、沒有安全牌、會讀的前 10 位不靠運氣
+  if (HR) check('T2a', `${tag}一般玩家 深度中位數 15–35（會看提示、知道會被唬的人走到第 10–30 位上下）`, HR.median >= 15 && HR.median <= 35, `中位 ${HR.median}、平均 ${HR.mean.toFixed(1)}`);
+  if (NV) check('T2c', `${tag}新手 深度中位數 4–8、到第 10 位 15–35%（只會照提示剋走不遠）`, NV.median >= 4 && NV.median <= 8 && NV.reach[1] >= 0.15 - 1e-9 && NV.reach[1] <= 0.35 + 1e-9,
+    `中位 ${NV.median}、平均 ${NV.mean.toFixed(1)}、到第 10 位 ${pct(NV.reach[1])}`);
+  if (TH) check('T2b', `${tag}會讀的 到第 50 位 8–30%（到第 100 位只記錄）`, TH.reach[3] >= 0.08 - 1e-9 && TH.reach[3] <= 0.30 + 1e-9, `到第 50 位 ${pct(TH.reach[3])}、到第 100 位 ${pct(TH.reach[4])}、中位 ${TH.median}`);
+  if (TH && NV) check('R1', `${tag}讀牌拉開差距：會讀的 − 新手 到第 10 位 ≥ 50 點`, TH.reach[1] - NV.reach[1] >= 0.50 - 1e-9, `${pt(TH.reach[1])} − ${pt(NV.reach[1])} ＝ ${pt(TH.reach[1] - NV.reach[1])} 點`);
+  if (OR) check('R2', `${tag}舊讀法會被騙：舊腦袋 到第 10 位 55–80%`, OR.reach[1] >= 0.55 - 1e-9 && OR.reach[1] <= 0.80 + 1e-9, `${pct(OR.reach[1])}、中位 ${OR.median}`);
+  if (MR) check('R3', `${tag}沒有安全牌：跟提示同色 到第 10 位 ≤10%`, MR.reach[1] <= 0.10 + 1e-9, pct(MR.reach[1]));
+  if (FM && TH) check('R3', `${tag}背公式不等於會讀：兩步公式 到第 10 位 ≤ 會讀的 −8 點`, FM.reach[1] <= TH.reach[1] - 0.08 + 1e-9, `${pct(FM.reach[1])} 對 ${pct(TH.reach[1])}`);
+  if (TH) {
+    const w1 = d => { const p = TH.pos.find(o => o.d === d); return p ? p.win1 : null; };
+    const lo = [1, 2, 3, 4, 6, 7, 8, 9].filter(d => w1(d) != null && w1(d) < 0.92 - 1e-9), lb = [5, 10].filter(d => w1(d) != null && w1(d) < 0.82 - 1e-9);
+    check('R4', `${tag}會讀的前 10 位不靠運氣：第 1–4、6–9 位首戰 ≥92%；第 5、10 位 ≥82%`, !lo.length && !lb.length && [1, 5, 10].every(d => w1(d) != null),
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(d => p0(w1(d))).join(' ') + (lo.length || lb.length ? '（沒過：第 ' + lo.concat(lb).join('、') + ' 位）' : ''));
+  }
   if (TH) check('T3', `${tag}會讀的 藏家位死亡率是非藏家位的 2–4 倍（第 4–60 位）`, TH.bossRatio != null && TH.bossRatio >= 2 - 1e-9 && TH.bossRatio <= 4 + 1e-9,
     `${pct(TH.hazBoss)} ÷ ${pct(TH.hazNon)} = ${TH.bossRatio == null ? '—' : TH.bossRatio.toFixed(2)} 倍（V3 13–20% 對 5–7%）`);
   for (const x of [NV, TH]) if (x) check('T4', `${tag}${LABEL[x.pol]} 相鄰非藏家位首戰勝率掉 ≤20 點`, x.cliff.drop <= 0.20 + 1e-9,

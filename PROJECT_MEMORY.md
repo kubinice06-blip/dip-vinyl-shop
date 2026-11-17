@@ -1,5 +1,105 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜game-lab 讀牌加難（客人會反讀你、唬人兩種、提示分三級）＋提示句 289 句
+
+- **店主 11-17**：「玩起來太簡單了沒挑戰性，目前玩 10 回合，很容易讀到對方的牌，我的舊版相較之下難度比較剛好。然後對方的提示詞很單調無聊，看來看去都這幾句，多一點，自然平順的口吻。」
+- **為什麼好讀（實測）**：唬人只有一種落點（出計畫色剋得到的那色），「出提示色本身」永遠不會被剋；提示 75–80% 是真的；15 句一句對一色、結果句每手念答案，查表準確率 100%；打到第 10 位看 34 手、重複率 59%。舊版（roguelike.html）難在**客人反讀你**（你照提示剋，下一手他唬你）＋深不可測（不給提示）。
+- **新規則（C.trial.curve.read／hintMix、engine beginHand／outcome）**：①第 3 位起客人讀你上一手（明指那手）怎麼應付，ρ 機率出剋你照舊那招的色（第 3–4 位 .30、第 5 位 .45 起每位 +.02 最高 .55；連兩手同招 ×2 最高 .9；落後放水）；②唬人分兩種（65% 現行、35% 剋提示色本身），沒有安全牌；③第 5 位起被看得出的唬剋中多扣 1；④提示分三級：明指／半指（只說他不出哪色）／不露；⑤q 第 1–2 位 .75、3–4 位 .72、5 位 .75、6 位 .70、7 位 .65、8 位起 .60。新骰子用 hash，不多取 duel.rng；序章、教學、舊存檔不變。
+- **提示句**：`C.hintLines` 新 289 句（明指通用每色 40＋、每位客人每色 2 句個性、半指 66、不露 42），一趟內不重複（run.hintSeen）；結果句不再念「『名盤』是經典」，被讀到時講你上一手怎麼出；四個一次性小提示。審查後半指句型重寫 43 句、三位客人第 1 手開場泡泡改成不講唱片。`?apex=1` 看穿章與拆穿改用同一套「看得出來的唬」判準（`lieOf`）。
+- **sim 門檻改（sim.mjs 檔頭）**：T2a 改一般玩家（新策略 humanRead）中位 15–35；新增 T2c 新手中位 4–8、到第 10 位 15–35%；T2b 改會讀的到第 50 位 8–30%（到第 100 位只記錄）；新增 R1–R4、H1（提示句不重複）。
+- **模擬（n1000，23/23）**：新手到第 10 位 95%→28.6%、深度中位 16→5；一般玩家中位 25；舊腦袋（會算機率、不知道會被讀）到第 10 位 97%→72%；會讀的到第 10 位 94.8%、到第 50 位 14.8%、到第 100 位 2.2%（原 ~20%）；T1 14.5%（n2000 12.6%）、T3 2.04 貼下限。
+- **流程**：舊版／現況研究（含舊版戰鬥核心 sim 複刻）→ 設計（原型實測）→ 寫句 → 施工 → 審查＋驗證（確認 5 項）→ 全修。報告 scratchpad `v5/harder/{U-old,U-now,DESIGN,LINES,build,FIX}.md`。
+- **主要檔案**：`game-lab/{engine.js,content.js,duel.js,ui.js,sim.mjs,index.html,README.md,LINES-REVIEW.md}`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/test/engine.test.mjs`、`game-lab/tests/{e2e-duel,e2e-apex,e2e.spec}.mjs`。`?v=78`。
+- **驗證**：check-content／check-shops／check-covers／lint-copy；engine 2,734,967、tutorial 505,169、chars、shop、hit 全過；e2e（390、375）duel 121、apex 37、prologue 52×2、intro 25、unlock 12、econ 54，e2e.spec 390 50/50；併入最新 main 後主線複跑 engine --quick、e2e-duel 390 78/78。**待店主定**：不露那手發動看穿章一律「真話」（等於白用一次）。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s5：sd-009、sd-010 上線＋sd-001～008 留置卡重查（sd-hold-1）
+
+- **結果**：**sd-009 上線 29、sd-010 上線 28；留置重查 13 張全數救回上線**（sd-001～008 留置清空）。本批新留置 3 張：蕭福德《春秋大夢》、陳小霞《化妝師》、零與聲音解放組織《哦！你宛若盛開的花朵的甜美屍體》（補查後仍無專輯層級資料，KV 保留舊稿）。
+- **研究補強落實**：研究層照新版必查清單；主線對 thin 卡再補查（WebSearch 約 38 次）。留置 13 張研究層只救回 4，主線補查救回其餘 9——多半是沒讀到已知的商品頁與報導（博客來文案、Blow 專訪、廠牌官網 .co.jp、新浪 2003 訪談），細節在 rulings「sd-hold-1」表。
+- **審稿**：sd-009 改 12、sd-010 改 15、sd-hold-1 改 5 處（多為再版／合輯／翻唱雜項與單一來源的「常被」；青木孝允《Silicom Two》刪掉從後作反推的聲音描述）。
+- **工具**：`tools/sd.mjs`、`front-check.mjs` 略過寫作層回報的 hold 列，空稿不會進 KV。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,batches.json,review-sd-0{09,10}.json,review-sd-hold-1.json,kv-before-sd-{009,010,hold-1}.json,tools/}`、`desc-tools/batches/{cards,research,output}/sd-{009,010,hold-1}*`、onboarding manifest 70 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2＋desc4 共 140 鍵 bulk put，回讀 58/58、56/56、26/26 一致；`front-check` 前台 29/29、28/28、13/13 新稿，無 CURATED 蓋住；sd.mjs qa 旗標皆為原文標題。WebSearch 本工作階段約 160 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s7：sd-013、sd-014 上線（56 張，留置 4）
+
+- **結果**：sd-013 上線 27（留置山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》）；sd-014 上線 29（留置丘蒸汽《のすたるじあ》）。
+- **研究補強首跑**：研究層判 none／thin 的卡主線逐張 extended 補查，救回 12 張（ダッチャ、ヨシンバ、《グロー》、仲村裕美、中島光一、傻子與白痴、八城一夫、初山博、南正人、VANITAS命死、Kahuna 等）；留置的 4 張都跑完必查清單＋主線補查仍無專輯層級資料。身分裁定：リー・ウォンヒーイ＝高木元輝韓國名、鼓手菊池コージ。
+- **審稿**：sd-013 改 5 處、sd-014 改 6 處（刪再版／credit／冷知識、去比附），逐條在 `rulings.md`。WebSearch 工作階段約 158 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-013.json,kv-before-sd-014.json,review-sd-013.json,review-sd-014.json}`、`desc-tools/batches/{cards,research,output}/sd-013*、sd-014*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 112 鍵逐字回讀 112/112 一致；`front-check` 前台 56/56 新稿、CURATED 0；QA 無軌序／曲長／盤號（「来」為盤名日文）。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s6：sd-011、sd-012 上線（60 張，無留置）
+
+- **範圍**：sd-011（高中正義 10、高柳昌行、鷺巣詩郎 EVA 3、黃耀明《信望愛》、黑名單工作室《搖籃曲》、韓國 13 張）、sd-012（韓國 17、929、Beyond、怪顚、COHOL、vaporwave 網路音樂 5、Gauze、Lip Cream、Lizard 等）。
+- **流程**：研究 6 Sonnet（照新版「判 thin 之前必查清單」，韓國卡走 weiv、週刊京鄉、韓文維基、예스24）→ 主線補查 thin 卡（《Ocean Breeze》補出是 POWER PLAY 巡演現場盤、조용필 7집 由 weiv 評論補聲音、김현식 2집 補 사랑과 평화 演奏、《搖籃曲》補博客來與胡德夫）→ 寫作 4 Opus → 主線逐張審稿（改 2＋13 處）。WebSearch 研究層 101＋主線約 15 次。
+- **結果**：**sd-011 上線 30、sd-012 上線 30，留置 0**。
+- **寫入**：KV desc2＋desc4 共 120 鍵，寫前存 `kv-before-sd-01{1,2}.json`；回讀 120/120 一致；`front-check` 前台 60/60 新稿；onboarding manifest 同步 60 處。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-01{1,2}.json,kv-before-sd-01{1,2}.json}`、`desc-tools/batches/{cards,research,output}/sd-01{1,2}*`、onboarding-manifest-*.json。
+- **驗證**：sd.mjs qa 兩批 0 實質問題（Lizard《彼岸の王国》的「国」為原文標題）；fix-spacing 0。
+
+### 2026-11-17｜dip-vinyl-shop｜林強《驚蟄》簡介補修＋嚴重稿重寫線研究補強
+
+- **店主**：「驚蟄這張專輯故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」sd-006 研究層對這張只搜 3 次就把聲音標 thin。協調端兩次搜尋找到公視與人間福報的 2005 坎城報導（唯一受邀亞洲音樂人、故宮數位影像、媽祖繞境鞭炮與電視雜訊入樂、同名曲為坎城而寫），重寫 237 字上線。
+- **研究補強**：`desc-tools/prompts/general-desc-base.md` 與 `batch-progress/desc-severe-20261117/prompt-research.md` 加「判 thin／none 之前必查清單」（母語報導搜尋、通路商品頁 WebFetch、維基年表、英文樂評與 Discogs notes，逐項寫進 notes）；主線對 thin 卡一律再補查。PLAN 加註，下一輪起生效。
+- **主要檔案**：上列兩檔、PLAN.md、rulings.md、`kv-before-jingzhe-fix.json`、`desc-tools/batches/{research/sd-006-a.json,output/sd-006-out-1.json}`、`onboarding-manifest-c89-20260910.json`。
+- **驗證**：KV desc2／desc4 逐字回讀一致；worker `/album-desc` 回新稿；fix-spacing 0、無半形標點、237 字。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s2：sd-003、sd-004 上線（58 張，留置 2）
+
+- **範圍**：`batch-progress/desc-severe-20261117/PLAN.md` 的 sd-003（Stravinsky 自指、Leo王、伍佰 11 張、P.K.14、No Brain…）與 sd-004（山下洋輔 5 張、川井憲次、平沢進、張國榮、張學友、張惠妹…）。
+- **流程**：研究 3 Sonnet×2 批（WebSearch 51＋44＝95 次）→ 寫作 2 Opus×2 批 → `sd.mjs qa` → 主線逐張審稿（sd-003 改 7 處、sd-004 改 11 處，多為刪單一來源撐起的「常被視為」與雜項）→ KV。
+- **結果**：sd-003 上線 30；sd-004 上線 28，**留置 2**（吉沢元治《Inland Fish》身分年份對不上、妮波寺《Sorry》查無專輯資料，KV 保留舊稿）。
+- **主要檔案**：`desc-tools/batches/{cards,research,output}/sd-00{3,4}*`、`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-00{3,4}.json,kv-before-sd-00{3,4}.json}`、onboarding manifest 58 處（`description.text`）。
+- **驗證**：`kv-token-check` exit 0；KV desc2＋desc4 共 116 鍵 bulk put，回讀 60/60、56/56 一致；`front-check` 前台 30/30、28/28 新稿，無 CURATED 蓋住。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s4：sd-007、sd-008 上線
+
+- **範圍**：sd-007（深町純、渡辺貞夫、滅火器、濁水溪公社等 30 張）、sd-008（珂拉琪、生祥樂隊、益田幹夫、美狂乱、美秀集團、羽田健太郎等 30 張）。研究 3 Sonnet＋寫作 2 Opus＋主線逐張審稿（改 9＋8 處）；WebSearch 共約 118 次。
+- **結果**：**sd-007 上線 28、sd-008 上線 27**；留置 5 張（清水靖晃《Berlin》、無妄合作社《二十一世紀的破青年》、益田幹夫《Chi Chi》、登川誠仁《スタンド！》、舌頭《這就是你》：查不到專輯層級的故事與聲音，KV 保留舊稿）。生祥樂隊《把自己種回來》主線補查確認為《菊花夜行軍》15 週年演唱會現場錄音精選。
+- **寫入**：KV desc2＋desc4 共 110 鍵，寫前存 `kv-before-sd-00{7,8}.json`；回讀 110/110 一致；`front-check` 前台 55/55 新稿；onboarding manifest 同步 55 處。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-00{7,8}.json,kv-before-sd-00{7,8}.json}`、`desc-tools/batches/{cards,research,output}/sd-00{7,8}*`、onboarding-manifest-*.json。
+- **驗證**：sd.mjs qa 兩批 0 實質問題（旗標皆為原文標題）；KV 逐字回讀一致；前台逐張一致。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s3：sd-005、sd-006 上線（含林強《驚蟄》）
+
+- **sd-005 上線 27、sd-006 上線 28**（研究 6 支 Sonnet＋寫作 4 支 Opus＋主線逐張審稿，改 9＋9 處）；留置 5 張（春艷《鬧青》、木馬《Yellow Star》、本多俊之《Radio Club》、板倉克行トリオ《ハニー・サンバ》、浅川マキ《Some Years Parst》：查無專輯層級資料，KV 保留舊稿，`held-sd-00{5,6}.json`）。
+- **林強《驚蟄》**（店主截圖那張）：研究層聲音查不到，主線補查博客來與佳佳唱片行介紹，補上「立體音畫」、與 MK2 合作、三首用於侯孝賢《最好的時光》、大鑼／歌仔戲／〈西北雨直直落〉電民謠／台語吟詩／夜市叫賣／四語等聲音素材，重寫為 238 字，無軌序曲長。
+- **寫入**：KV desc2＋desc4 共 110 鍵，寫前存 `kv-before-sd-00{5,6}.json`；bulk get 回讀 110/110 一致；`front-check` 前台 55/55 新稿。onboarding manifest 同步 55 處。
+- **踩坑**：研究代理共用暫存腳本檔名互蓋（sd-006-b 的稿一度寫進 sd-005-a.json），已清回並核對 key；之後派工加「暫存腳本用唯一檔名」。
+- **WebSearch**：研究層約 88 次＋主線 1 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,review-sd-00{5,6}.json,held-sd-00{5,6}.json,kv-before-sd-00{5,6}.json}`、`desc-tools/batches/{cards,research,output}/sd-00{5,6}*`、onboarding manifest 多檔。
+- **驗證**：sd.mjs qa 兩批 0 實質問題（字數 160–240、無軌序／曲長／盤號）；KV 回讀逐字一致；前台逐張一致。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡簡介：抽查、新規則 general-desc-base、新卡停用鉤子公式、嚴重稿重寫線開跑
+
+- **起因**：店主看到林強《驚蟄》整段只講軌序與曲長：「這介紹跟沒介紹一樣……檢查是不是很多都這樣」「為何有天突然走歪了，本來都寫得很好」。
+- **抽查**：全卡池 22,302 張簡介從 KV 讀出；隨機 400 張一般卡照 apex-desc-base 第一節判：severe 17%、rewrite 48%、keep 35%（`batch-progress/desc-audit-20261117/`）。10 月起新上架的卡也 severe 16%。
+- **走歪的時間點**：研究稿 facts 出處是 MusicBrainz／Discogs 的比例，c-48～c-54（08-31）約 5–30%，**c-55 起（09-03）跳到 50–90%**，c-77～c-89（09-10 那波一週上架 1,962 張的深掘批：蘇聯、南斯拉夫、土耳其、波羅的海、日本 hardcore、台灣地下……）最高 75–92%。冷門盤查不到樂評與訪談，研究層就拿曲目表、曲長、盤號交差；鉤子公式又規定第一句要懸念、字數要湊滿，雜項就變成主體；審稿只查事實對錯，沒查「讀完知不知道這是什麼」。
+- **新規則**：`desc-tools/prompts/general-desc-base.md`（研究三塊：這是什麼／故事或概念／聲音；MB／Discogs 只確認身分；不准冷知識開頭；軌序曲長盤號不寫；180–240 字）。店主同意新卡即日起改用：`ALBUM_ONBOARDING.md` §5、`dip-card-create` Phase 3（停用鉤子層）、mood-cells 的 WRITER／HOOK-DISPATCH、`writer-base.md`／`hook-base.md` 檔頭都加註。
+- **重寫線**：店主「修嚴重的先」→ `batch-progress/desc-severe-20261117/PLAN.md`（第 0 步全卡池判定、30 張一批、CJK 先）；第一個工作階段已派（判定＋sd-001／sd-002）。
+- **主要檔案**：上列各檔、`batch-progress/desc-audit-20261117/{README.md,sample-400.json,dump-descs.mjs}`。
+- **驗證**：只改規則文件，未動 KV／seed。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s1：全卡池判定＋sd-001、sd-002 上線
+
+- **店主 11-17**：林強《驚蟄》簡介只講軌序與曲長，「這介紹跟沒介紹一樣……故事在哪？概念在哪？」；抽查 400 張 severe 17%，店主：「修嚴重的先」。
+- **第 0 步判定**：KV 讀出全部現行簡介，一般卡 **21,523 張**切 72 份由 Sonnet 照 general-desc-base 判 → **severe 2,963／rewrite 13,711／keep 4,849**。與抽查樣本重疊 42 張 severe 7/7 一致；主線抽查 severe 40／keep 40：severe 判準無誤，keep 偏鬆約兩成（冷知識開頭仍判 keep），rewrite 另案時要再篩。CJK 卡 severe 比例最高（純 CJK 分片 25–35%）。
+- **切批**：severe 切 **99 批**（中日韓台 539 → 經典度≥4 999 → 其餘 1,365，同藝人聚批），`batches.json`、PLAN 分批表；sd-001／sd-002 在 CJK 分片判完時先鎖定（`locked.json`）。
+- **sd-001 上線 30、sd-002 上線 29**（研究 3 Sonnet＋寫作 2 Opus＋主線逐張審稿，改 5＋5 處）；《少年ㄞ國》（角頭 2001 合輯）研究三塊全 none、主線補查也查不到，**留置**、KV 保留舊稿。
+- **寫入**：KV desc2＋desc4 共 118 鍵（全為 CJK 卡），寫前存 `kv-before-sd-00{1,2}.json`；bulk get 回讀 118/118 一致；`front-check` 前台 59/59 新稿。onboarding manifest 同步 59 處。
+- **工具**：`batch-progress/desc-severe-20261117/tools/`（`tri.mjs` 判定、`cut.mjs` 切批、`sd.mjs cards|before|qa|bulk|verify|manifest`、`apply-review.mjs`、`front-check.mjs`）；`severe-descs.json` 存全部 severe 卡第 0 步當下的現行簡介（判定原始分片 `triage/in/` 不進 git）。派工詞 `prompt-triage.md`、`prompt-research.md`、`prompt-writer.md`。WebSearch 本工作階段約 85 次。
+- **驗證**：sd.mjs qa（字數 150–240、簡體、半形標點、軌序／曲長／盤號、fix-spacing）兩批 0 實質問題；KV 回讀逐字一致；前台逐張比對一致。紀錄 `rulings.md`。
+
+### 2026-11-17｜dip-vinyl-shop＋dip-vinyl-worker｜Spotify 錯張根源：拿掉只比藝人的 /spotify-album-link 退路
+
+- **店主 11-17 截圖**：John Zorn《Cobra》Spotify 鈕連到《Cobra-Tokyo Operations '94》。KV 早已清空（replacedSpotifyAlbum），亮鈕來自前台退路 `/spotify-album-link`——它**只比藝人、不比專輯名**，取同藝人第一張就回。凡 KV 沒連結的卡都可能被配到同藝人別張（違反 11-07「錯張不再犯」）。
+- **前台**：index.html（resolveSpotifyBtn、fetchStreamingLinks 改走 /spotify-search）、battle.html、roguelike.html、shop-all.html、admin.html 全拿掉退路；查不到就灰。
+- **game-lab**：`tools/bake-cards.mjs` 拿掉退路；稽核 `cards.js` 315 條烘進的連結（304 與 KV 一致、4 名稱相符、7 可疑）→ 清掉 5 條錯張（Cobra→Tokyo '94、Glenn Branca《The Ascension》→ The Sequel、Rubinstein 夜曲→合輯、Rautavaara 1972→1997 另錄、Harry Roesli 不確定），保留 2 條同錄音（Goblin《Profondo rosso》Gold Tracks、Gould／Bernstein 1962 Brahms）寫進 LINK_OVERRIDES。
+- **worker**：PR（`claude/album-link-title-check`）`/spotify-album-link` 加藝人相同＋專輯名相同／只差版本後綴、排除現場／EP／續作等、single 不收；快取升 v2。**待店主本機 `npx wrangler deploy`**（前台已不呼叫，屬防呆）。
+- **驗證**：Playwright 載入 index／battle／roguelike／shop-all／admin／game-lab 0 頁面錯誤（改前同）；worker 規則單元測 7 例符合預期。
+- 主要檔案：上述頁面、`game-lab/cards.js`、`game-lab/tools/bake-cards.mjs`、`batch-progress/spotify-fallback-20261117/`、`dip-vinyl-worker/src/index.js`。
+
 ### 2026-11-16｜dip-vinyl-shop｜game-lab 第 A 波六件：客人走到對戰台、放水後期照機率、稱號、演出與字、櫃檯賣給老闆、客人主屬性
 
 - **店主 11-16**：「全部開始做吧。18 則是要去櫃檯賣給老闆才能移出包包，這也是在局中備戰時發生（就是 Monster Train 的方式）」；另「不要出店門……挑戰者進來後直接走去對戰台等玩家」「放水前期保留、後期照機率」「為何對手都打經典卡」。總表 scratchpad `v5/relay/PLAN.md`。
@@ -276,7 +376,7 @@
 - **驗證**：Playwright（iPhone 13）全部 22,302 → 爵士 05712 → ＋殿堂 00060 → 0 張 00000（紅）→ 全部 22302，每顆數字都對準中線（偏移 0.0px）；取樣確認換數字時滾筒有轉、約 0.7 秒停住；無頁面錯誤。
 - **主要檔案**：`dip-tune.js`、`index.html`（v71）、`scripts/tune-panel-v2/panel.py`、`tune/panel-all.png`、`tune/drum-shade-122.png`。
 
-### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 2,353 張（每日批次進行中）
+### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 2,453 張（每日批次進行中）
 
 - **店主 11-06**：「好多 Spotify 連結是灰的，趕快全部掃描修復」（例：Grimes《Geidi Primes》）。
 - **主因（前台）**：`index.html` 的 `fetchSpotifyCover` localStorage 快取（300 張、永不過期）連「有封面沒連結」也存，10 月配額爆掉時的空結果被手機記住，KV 補好也不再問。PR #417：快取升 v5 刪 v4、只存有 `spotifyUrl` 的結果。Geidi Primes KV 本來就有連結，屬此類。
@@ -294,6 +394,7 @@
 - **11-14 每日第 9 批**（395 次）：找到 138、收 136（不收 Legrand 純音樂版、Cats 電影版 Highlights；規則補 instrumentale／highlights，複查已寫入 2,071 條無漏網）。累計 2,207，剩 1,841（未搜 1,091）。
 - **11-15 每日第 10 批**（395 次）：找到 94、寫入 89（5 張華語名盤 KV 已無此鍵、前台會即時查，記 skipped-nokey.json）。累計 2,296，剩 1,752（未搜 863）。
 - **11-16 每日第 11 批**（395 次）：短暫 429（23 秒）改等待重試。找到 57 全收、寫入 57。累計 2,353，剩 1,690（未搜 645）。
+- **11-17 每日第 12 批**（395 次）：找到 101 全收、寫入 100。累計 2,453，剩 1,589（未搜 411）。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
 ### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）

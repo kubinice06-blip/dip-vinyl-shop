@@ -54,7 +54,7 @@
 //
 // v2（SPEC-v2 §4.3）：唱片資訊的平台鈕在烘焙時就把連結烘進 cards.js，執行期不打網路。
 //   appleUrl    ← Apple 試聽索引的專輯 id＋slug＋國別（https://music.apple.com/<cc>/album/<slug>/<id>）；沒有就空（畫面上退回搜尋連結）
-//   spotifyUrl  ← dip-vinyl-worker /spotify-search，沒有再問 /spotify-album-link（店裡唱片櫃同一套）
+//   spotifyUrl  ← dip-vinyl-worker /spotify-search（只用它；2026-11-17 #467 拿掉只比藝人的 /spotify-album-link 退路，查不到就不給鈕）
 //   bandcampUrl ← dip-vinyl-worker /bandcamp-search，而且 bandcamp 子網域要對得上藝人名（搜尋常回別人的翻唱／現場頁，對不上就不烘）
 //   LINK_OVERRIDES（下面）：逐張固定某個平台連結（'' ＝不給鈕）；搜尋回的頁子網域對得上、其實是第三方再版頁的就寫在這裡。
 //     三條路都套（完整烘焙、--links-only 抓完連結之後、--covers-only 也照套），重烘不會把它抓回來。
@@ -531,6 +531,16 @@ function bandcampMatches(url, artist, album) {
 const LINK_OVERRIDES = {
   // 審查 11-13：/bandcamp-search 回的 themilesdavisquintet.bandcamp.com 是第三方的 50 週年 K2 CD 再版頁，不是原版、也不是唱片公司官方
   "miles davis|cookin' with the miles davis quintet": { bandcampUrl: '' },
+  // 11-17 稽核（batch-progress/spotify-fallback-20261117；#467）：KV 沒有、主線判讀為同一錄音的，固定保留
+  'goblin|profondo rosso': { spotifyUrl: 'https://open.spotify.com/album/2NoDQ9XSGdio43xMKm6rM8' },
+  'glenn gould & leonard bernstein|brahms: piano concerto no. 1 (1962)': { spotifyUrl: 'https://open.spotify.com/album/4SDwjgfk4ZSdDEt9k96thp' },
+  // 11-17 稽核（#467）：舊 /spotify-album-link 退路烘進的錯張，固定不給鈕。#467 在 cards.js 直接刪；
+  // 這裡也寫死，REUSE 路（--covers-only／--links-only 讀現有 cards.js）從舊檔重烘才不會把錯連結帶回來。
+  'john zorn|cobra': { spotifyUrl: '' },                              // → 《Cobra-Tokyo Operations '94》
+  'glenn branca|the ascension': { spotifyUrl: '' },                   // → 《The Ascension: The Sequel》
+  'arthur rubinstein|chopin: nocturnes': { spotifyUrl: '' },          // → 夜曲＋船歌＋搖籃曲合輯
+  'einojuhani rautavaara|cantus arcticus': { spotifyUrl: '' },        // → 1997 另錄（鋼協 1、交響曲 3）
+  'harry roesli|ken arok': { spotifyUrl: '' },                        // → 《Opera Rock Ken Arok》，不確定同一張
 };
 function applyLinkOverrides(cards) {
   let n = 0;
@@ -552,8 +562,10 @@ async function bakeLinks(cards, ids) {
   await pool(ids, 4, async id => {
     const c = cards[id];
     const q = 'artist=' + encodeURIComponent(c.artist) + '&album=' + encodeURIComponent(c.album);
-    let sp = (await getJson(WORKER + '/spotify-search?' + q)).spotifyUrl || '';
-    if (!sp) sp = (await getJson(WORKER + '/spotify-album-link?' + q)).url || '';
+    // 只用 /spotify-search（KV、藝人＋專輯名比對、MB 覆核）。2026-11-17 拿掉 /spotify-album-link 退路：
+    // 它只比藝人、不比專輯名，取同藝人第一張就回，烘進了 John Zorn《Cobra》→《Cobra-Tokyo Operations '94》、
+    // Glenn Branca《The Ascension》→《The Sequel》等錯張（店主截圖回報）。查不到就不給鈕，寧缺勿錯。
+    const sp = (await getJson(WORKER + '/spotify-search?' + q)).spotifyUrl || '';
     c.spotifyUrl = /^https:\/\/open\.spotify\.com\/album\//.test(sp) ? sp : '';
     const bc = (await getJson(WORKER + '/bandcamp-search?' + q, 25000)).bandcampUrl || '';
     c.bandcampUrl = bandcampMatches(bc, c.artist, c.album) ? bc : '';

@@ -256,7 +256,8 @@
   async function resolveLinks(r, at) {
     const k = r.artist + '|' + r.album;
     if (!linkCache.has(k)) linkCache.set(k, Promise.all([getJ('spotify-search', r), getJ('yt-music-link', r), getJ('bandcamp-search', r)])
-      .then(async ([sp, yt, bc]) => ({ spotify: sp?.spotifyUrl || (await getJ('spotify-album-link', r))?.url, yt: yt?.url, bandcamp: bc?.bandcampUrl })));
+      // 2026-11-17 拿掉 /spotify-album-link 退路：它只比藝人、不比專輯名，取同藝人第一張就回（John Zorn《Cobra》→《Cobra-Tokyo Operations '94》）。只用 /spotify-search，查不到就灰。
+      .then(([sp, yt, bc]) => ({ spotify: sp?.spotifyUrl, yt: yt?.url, bandcamp: bc?.bandcampUrl })));
     const l = await linkCache.get(k);
     if (cur !== at || !overlay.classList.contains('open')) return;   // 使用者已關掉或換了一張
     const set = (p, u) => { const a = cd.querySelector(`.streaming-btn[data-platform="${p}"]`); if (a && u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.removeAttribute('disabled'); } };
