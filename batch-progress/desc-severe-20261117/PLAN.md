@@ -169,5 +169,5 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-095 | 其餘（Urs Voerkel, Peter K. Frey, Paul Lovens … Wha-ha-ha） | 30 | | |
 | sd-096 | 其餘（White Heaven … Zoviet France） | 30 | | |
 | sd-097 | 其餘（Zoviet France … Gare du Nord） | 30 | | |
-| sd-098 | 其餘（Geoff Mann … Raw Deal） | 30 | | |
-| sd-099 | 其餘（Red Summer … Smasher） | 23 | | |
+| sd-098 | 其餘（Geoff Mann … Raw Deal） | 30 | s52 | ✅ 上線 30（前台 30；無留置；Mach One、Aurex、King General 等薄寫；CURATED 0） |
+| sd-099 | 其餘（Red Summer … Smasher） | 23 | s52 | ✅ 上線 23（前台 23；無留置；主線補查 Zaw Win Htut；Morning Stars、Smasher 等薄寫；CURATED 0） |
