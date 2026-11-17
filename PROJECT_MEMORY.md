@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s47：sd-088、sd-089 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-088 上線 30（Slint、Slovenly、Smuv／mt. fujitive、Snapcase 3、Social Tension、SOIL&"PIMP"SESSIONS、Sonia Rosa、Sonny Fortune、Sonny Rollins、Soul-Junk、Soulive、Sounds From the Ground、Spirit of Love、Spirogyra、SME、St. Christopher、Stan Forebee、Sulzmann、Stan Tracey、Cowell、Turrentine 4、State Azure、Di Battista、Stefon Harris、Lacy／Smith）；sd-089 上線 30（Stewart Walker、Stjepko Gut、sToa、Stone、Strapping Fieldhands、Stray Kids 2、Huchard、Subsonic Eye、Suduaya 2、Sugar Loaf Express、Sugar Minott、Sun Electric、Sunburst、Sunny Murray、Suzukiski、Sweeps、SwuM.、Sync24、Tellier、Sīpoli、T.S. Monk 3、Ta-ku 5）。Snapcase 卡帶、Suzukiski、Sweeps、SwuM.、Stjepko Gut 等照 delayde 前例薄寫上線。
+- **主線補查**：Lacy／Smith《Sidelines》（Jorrit Dijkstra〈Existence〉研究文、AllMusic）、Suzukiski《Kamakura》（Zero Gravity 廠牌第一號）。審稿改 sd-088 20 處（單一出處「常被視為」降級、補《盤名》壓字數、Rollins 把 Cranshaw 與 Mtume 混成一人）、sd-089 13 處（補《盤名》、Monk Institute 年份不寫、空格），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-088.json,review-sd-089.json,kv-before-sd-088.json,kv-before-sd-089.json}`、`desc-tools/batches/{cards,research,output}/sd-08[89]*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 88 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s50：sd-094、sd-095 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-094 上線 30（This Heat、Tho-So-Aa、Thomas Köner、Thắng、Thủy Triều Đỏ、Tim Hagans 4、Titiek Puspa、Todd Terry、Tom Rainey、Tommy Smith、Tony Tuff、Tony Williams 2、Tosca、Travelling Day、Triston Palma 3、Trovante、Tuscadero、Twisted Science、Tånk、U-Street All Stars、Ulrich Schnauss 2、Ultima Thule、Uncle Charlie Osborne）；sd-095 上線 30（Voerkel／Frey／Lovens、Us3、Ponomarev、Valet、Shotguns 3、Chichadélicas、Groove Club 2、Music for Dancefloors、Thai Beat、Crying Princess、Trường Sơn 4、Wounds of Love、Zendooni、Vehicle Flips、Venetian Snares、Vince Staples、Vision of Disorder、Vitamiin、Void Stasis、Voivod、Volcano the Bear、Walter Bishop Jr.、Warzone 2、wave to earth、Wayne Davis、Wha-ha-ha）。Titiek Puspa、Thủy Triều Đỏ、Tånk、Trường Sơn 4、Vitamiin 等 12 張照 delayde 前例薄寫上線。
