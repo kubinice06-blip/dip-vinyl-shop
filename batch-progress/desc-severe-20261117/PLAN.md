@@ -151,8 +151,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Lauge、Ritenour、Life's Blood、Linval Thompson 等；respect.her 薄寫；CURATED 0） |
 | sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
 | sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | | |
-| sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
-| sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
+| sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | s43 | ✅ 上線 30（前台 30；無留置；主線補查 Mfon、Millie Jackson、菊地雅晃等；Mfon、Formula 等薄寫；CURATED 0） |
+| sd-081 | 其餘（Mitty Collier … Native Son） | 30 | s43 | ✅ 上線 30（前台 30；無留置；主線補查 Mylène Farmer 等；Native Son、mt. fujitive 等薄寫；CURATED 0） |
 | sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | | |
 | sd-083 | 其餘（Organum … Pontiac Streator） | 30 | | |
 | sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | | |

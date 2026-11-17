@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s43：sd-080、sd-081 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-080 上線 30（Marshall Jefferson、菊地雅晃、Masonna、Matt Martians、Max Brennan、Maxo、Meditation Singers、Mehrpouya、Mercury Rev、Merzbow 2、Metabolist、Metrotone、Mfon、Michael Chapman、Petrucciani 3、Mike Osborne 2、Mike Westbrook、Mikko Tarmia、Miles Davis、Millie Jackson、MindSpring Memories、Minxus、Miranda Cuckson 3、Miroslav Vitous）；sd-081 上線 30（Mitty Collier、Modern Jazz Playboys、Mood II Swing、Moodymann、Morgan Babb、森山威男、Mose Allison 3、Moskwa 2、Mother Gong、mt. fujitive 2、Multi-Story 2、Mushroom Now!、Muslimgauze 2、Mylène Farmer、Myrna Summers、N.Y. House'n Authority、Namas、Nancy Wilson、NANIWA EXPRESS、Nanosphere、Native Son 4）。Mfon、《Formula》、Meditation Singers、Native Son《Coast to Coast》、mt. fujitive 等照 delayde 前例薄寫上線。
+- **主線補查**：Mfon（Frogman 官方目錄）、Millie Jackson《Hard Times》（Creem 1983 短評）、菊地雅晃（日文維基「純電子音楽集」；研究稿把伯叔菊地雅章寫錯，已更正）、Meditation Singers、Mylène Farmer。舊稿錯誤更正：Namas 是三人團不是個人、Masonna 重發廠是柏林 Total Black。審稿改 sd-080 4 處（印量、版本雜項，Mercury Rev「全張說白」）、sd-081 4 處（重發雜項、單一部落格評價、Mitty Collier 旁證比較）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-080.json,review-sd-081.json,kv-before-sd-080.json,kv-before-sd-081.json}`、`desc-tools/batches/{cards,research,output}/sd-08[01]*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s41：sd-076、sd-077 上線（60 張，無留置）
 
 - **結果**：其餘組。sd-076 上線 30（Keith Christmas、Keith Mansfield 2、Kem、Ken McIntyre、Kenny Barron、Kenny Burrell 5、Kenny Werner、Kevin Hays 2、Knxwledge 2、Koi.、Konstruktivists、Kool & the Gang、菅野邦彦 2、Kyuss、Lacrimosa、Lady Pank、Ladysmith Black Mambazo、Lamb、Larry Heard、Larry Young 2、Laserdance）；sd-077 上線 30（Laserdance、Late!、Lauge 3、Lavarr the Starr、Lee Konitz、Lee Morgan 9、Lee Ritenour、Lee Scott 2、Leila Forouhar、Leroy Smart、Les Ambassadeurs、less.people 2、Lew Soloff、Life's Blood、Light、Linda Smith、Lindsheaven Virtual Plaza、Linval Thompson）。Kem、McIntyre、菅野邦彦 2、Laserdance 2、less.people《respect.her》、Lavarr、Light 等照 delayde 前例薄寫上線。
