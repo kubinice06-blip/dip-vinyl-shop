@@ -325,11 +325,13 @@
       q: { easy: 0.75, normal: 0.72, feintBase: 0.25, feintStep: 0.05, feintFrom: 5, feintMax: 0.40 },
       // 客人讀你（11-17；engine beginHand、relOf／streakOf／rhoOf）：第 from 位起，他看你上一手（明指那手）怎麼應付提示
       //   （照提示剋＝counter／跟提示同色＝mirror／防他唬人＝third），這手有 ρ 的機率出「剋你照舊那招」的顏色；連兩手同一種應對 ρ×streakMul（上限 cap）。
-      //   ρ：第 3–4 位 normal 0.30、第 5 位 hard 0.45，每位 +step 0.02、封頂 max 0.55（第 10 位）；藏家再 +boss。放水時 ρ×(1−mercy×放水程度)（舊版 roguelike.html:3652）。
+      //   ρ：第 3–4 位 normal 0.30、第 5 位 hard 0.55，每位 +step 0.02、封頂 max 0.65（第 10 位）；藏家再 +boss（−0.15：第 5 位 0.40、第 10 位起 0.50）。放水時 ρ×(1−mercy×放水程度)（舊版 roguelike.html:3652）。
+      //   第 B 波合併（11-17）為 T3 調的（原本 hard .45／max .55／boss 0；sim.mjs 檔頭）：讀你對會算機率的人反而好剋，藏家少讀＝藏家位比一般位難讀；
+      //   一般位一起 +.10，只會照提示剋的新手在第 5 位藏家照樣被讀（.40）
       //   beta：基本唬人走「剋你剋法」（BEATS[提示]＝現行唬法）的比例，其餘出「剋提示色本身」那色：每手三色都可能，沒有永遠安全的牌（第 from 位起；之前＝1）。
       //   hit：第 from 位起，他沒照提示出、又剋中你＝被唬到，多扣 n（結果小字 notes.feint）。watch：第 1 手讀你上一場（第二波給傳說藏家用，現在關）。
       //   sim smart n 1000（DESIGN §1.3）：會讀的 到第 10 位 95%、新手 27%（現況 97／95）；舊腦袋（會算機率、不知道會被讀）72%
-      read: { from: 3, rho: { normal: 0.30, hard: 0.45, step: 0.02, max: 0.55, boss: 0 }, streakMul: 2, cap: 0.90, beta: 0.65, mercy: 0.7, hit: { from: 5, n: 1 }, watch: false },
+      read: { from: 3, rho: { normal: 0.30, hard: 0.55, step: 0.02, max: 0.65, boss: -0.15 }, streakMul: 2, cap: 0.90, beta: 0.65, mercy: 0.7, hit: { from: 5, n: 1 }, watch: false },
       // 提示分級（11-17）：明指（一句指一色）／半指（只說他不出哪一色）／不露（沒有提示）。半指：第 3–4 位 15%、第 5 位 20%、每位 +1 點、封頂 30%；
       //   不露：第 6 位 5%、每位 +2 點、封頂 15%。半指、不露那手，下一手他不讀你（你沒有可以被讀的應對）
       hintMix: { half: { from: 3, normal: 0.15, hard: 0.20, step: 0.01, max: 0.30 }, none: { from: 6, base: 0.05, step: 0.02, max: 0.15 } },

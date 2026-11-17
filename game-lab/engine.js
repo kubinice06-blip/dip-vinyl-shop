@@ -241,7 +241,8 @@
       q: { easy: 0.75, normal: 0.72, feintBase: 0.25, feintStep: 0.05, feintFrom: 5, feintMax: 0.40 },   // hard：q＝1−min(.40, .25＋.05·max(0, 位−5))（11-17 讀牌加難：原本 .75／.18／.55）
       // 11-17 讀牌加難（scratchpad v5/harder DESIGN §2.2；＝content C.trial.curve.read／hintMix）：客人讀你上一手、兩種唬人、被唬到多扣；提示分級（明指／半指／不露）
       //   from 0（或沒有）＝整條關掉（＝改版前）。content 一定要有這兩個鍵：trialCfg 只合併 TRIAL.curve 有的鍵
-      read: { from: 3, rho: { normal: 0.30, hard: 0.45, step: 0.02, max: 0.55, boss: 0 }, streakMul: 2, cap: 0.90, beta: 0.65, mercy: 0.7, hit: { from: 5, n: 1 }, watch: false },
+      //   rho hard .55／max .65／boss −.15＝第 B 波合併為 T3 調的（原本 .45／.55／0；content.js 那段寫了理由）
+      read: { from: 3, rho: { normal: 0.30, hard: 0.55, step: 0.02, max: 0.65, boss: -0.15 }, streakMul: 2, cap: 0.90, beta: 0.65, mercy: 0.7, hit: { from: 5, n: 1 }, watch: false },
       hintMix: { half: { from: 3, normal: 0.15, hard: 0.20, step: 0.01, max: 0.30 }, none: { from: 6, base: 0.05, step: 0.02, max: 0.15 } },
       mercyFeint: 0.8,                                                              // 放水：唬人率 ×(1−0.8×mercy)（roguelike.html:3693-3695；easy 也吃）
       // 放水照位數機率（店主 11-16 選 C）：第 from 位以前每手都放水；之後每手照機率 p＝max(min, p0 − step×⌊(位−from)/every⌋) 才放水（mercyPAt）
