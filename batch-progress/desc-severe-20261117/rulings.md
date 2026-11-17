@@ -1601,3 +1601,29 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
 - **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
+
+## sd-058（30 張，其餘：Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）— s32
+
+- 研究：3 支 Sonnet，WebSearch 13＋15＋10＝38 次；無整張 none（Birdland story none、Blackbird story none、Blue Wednesday 兩張 story none、Blind Light sound none）。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Birdland（Discogs：1980 年 PGP RTB 發行 LP——研究層說「PGP RTB 查無來源」被推翻；JazzRockSoul：伯恩的南斯拉夫學生、Banković 主導、Mahavishnu 影響）；Blind Light（Discogs 1994 日本 Alida、downtempo／ambient；Scaruffi「偏 dub 的長段即興」）；Blackbird（Bandcamp：梅斯、自介、標籤；Discogs 風格、Solus Mind 客席）；Blue Wednesday（Bandcamp：溫哥華 Gustav Joseph，頁面無介紹、無樂評）；Bim Sherman 兩張（再搜無新料）。
+- 身分／事實裁定：Billie Holiday《Ladylove》寫巴塞爾（舊稿科隆錯）；Bim Sherman《Lovers Leap Showcase》寫 1979（卡單 1978），《In A Rub-A-Dub Style》寫「1980 年代初」，兩張都不寫 Prince Jammy／錄音室／伴奏團；Lagrène《Inferno》1987、《Foreign Affairs》1988；Blind Light 是 Anton Fier 個人名義、不寫 Laswell；Black Tape 不寫洛杉磯錄音；Bobbi Humphrey《Flute-In》不寫發行日；Blue Mitchell《Collision in Black》確認 Blue Note。
+- **薄寫上線不留置**（照 delayde 前例）：Birdland、Blackbird（155 字）、Blue Wednesday《Beat Tape 2》（149 字，低於 150 下限照收）、《Beat Tape 3》（159 字）、Blind Light。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-058.json`＋直接改寫兩張）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lagrène 三人《Standards》 | 原 253 字壓到 240 內；「Pedersen 的貝斯獨奏常被點名」→「也有不少篇幅」 | 字數；單一出處不寫「常被」 |
+| Black Mountain Transmitter | 刪「只做 179 份」 | 限量份數屬版本雜項（棺材塊包裝是廠牌 anti-cassette 概念核心，留） |
+| Blackbird | 刪 2026 年 Doki Doki Beats 首壓黑膠句 | 版本雜項 |
+| Blind Light | 刪 2003 年 Tzadik 合輯重發句 | 版本資訊 |
+| Blue Wednesday《Beat Tape 2》 | 鉤子「連兩年選在跨年那天上線」→以「這是什麼」開頭 | 發行日屬雜項，材料撐不起鉤子（delayde 前例） |
+| Blue Wednesday《Beat Tape 3》 | 刪「距上一集約四個月」 | 發行間隔屬雜項 |
+| Black Tape《This Lush Garden Within》 | 「比其他作品更偏電子與氛圍」→「空靈的 ethereal wave，新古典氣質比前作更重」，全段壓到 202 字 | 原說法只出自聽眾留言；新古典一說出自 Scaruffi |
+
+其餘逐張對過研究稿無改：Big Satan 製作人 Torn 不彈吉他改做電子處理、BIGBANG 紀錄片破百萬點閱與月榜第 3、Holiday 臨時湊的節奏組沒彩排、billy woods 自述起點是買大麻、Black Roots 三人離團後首次在 Ariwa 錄混、Black Tape 的 Herrera 只錄兩首告別、Bantu Village 之後被 Blue Note 放掉、Corea 兩曲在《Boss Horn》的定本、Blueboy 在 Haynes 新廠牌 Shinkansen 的最後一張、Dorough 標題曲原為沒做成的動畫而寫、Humphrey 是 Blue Note 第一位女性器樂手、Montreux 伴奏三人後來組 The Blackbyrds，皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-058.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
