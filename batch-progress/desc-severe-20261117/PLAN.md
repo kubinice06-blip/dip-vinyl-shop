@@ -127,8 +127,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-055 | 其餘（Alain Bashung … Arlo Parks） | 30 | | |
 | sd-056 | 其餘（Armando … B-Side & Philanthrope） | 30 | | |
 | sd-057 | 其餘（B.T. Express … Big John Patton） | 30 | | |
-| sd-058 | 其餘（Big Satan … Bobbi Humphrey） | 30 | | |
-| sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | | |
+| sd-058 | 其餘（Big Satan … Bobbi Humphrey） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 7 張；CURATED 0） |
+| sd-059 | 其餘（Bobby Hutcherson … Brock Berrigan） | 30 | s32 | ✅ 上線 30（前台 30；無留置；主線補查 10 張；CURATED 0） |
 | sd-060 | 其餘（BROCKBEATS … Casiopea） | 30 | | |
 | sd-061 | 其餘（Casiopea … Chế Linh） | 30 | | |
 | sd-062 | 其餘（Cicada … Cæcilie Norby） | 30 | | |

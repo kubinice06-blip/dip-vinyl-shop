@@ -1627,3 +1627,24 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-058.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 29 處。
+
+## sd-059（30 張，其餘：Bobby Hutcherson 10、Bobby Lyle Trio、Bobby Watson & Horizon 2、Body of Light、boerd、Bohren & der Club of Gore 2、Booker Ervin、Bora Roković、Born Against、Bourbonese Qualk、Bozi Boziana、Brand Nubian 2、Brass Construction、Bread, Love and Dreams、Breakdown、Bridget St John、Brigth Engelberts、Brock Berrigan）— s32
+
+- 研究：3 支 Sonnet，WebSearch 10＋13＋10＝33 次；無 none，thin 多（Hutcherson 八張 story 或 sound thin、b 組全數 story thin）。
+- **主線補查**（WebSearch 10 次＋WebFetch，facts 標【主線補查】）：Hutcherson《Knucklebean》（英文維基：錄音日、班底、Bay State Banner 與 Yanow 評；Hubbard 六首吹四首）、《Patterns》（MusicWeb／AllMusic：編制無 Land、Chambers 四首、Spaulding 的金恩曲）、《Inner Glow》（英文維基：1975 洛杉磯錄、1980 日本發、三管前線）；Bohren《Midnight Radio》（Visions 雙評、Babyblaue Seiten 的陣容與聲音描述）；Born Against（No Echo 樂團沿革、Discogs Vermiform 第一號）；boerd（SoundCloud 第二張全長、Comorbid）；Bobby Watson《No Question About It》（AllMusic 摘要：Hargrove、Lacy 客席）；Breakdown（Blogged and Quartered：Mother West 錄音、demo 歌重錄）；Brigth Engelberts（再發行商介紹：拉哥斯 EMI、soul-funk 加非洲和聲）；Bozi Boziana（Discogs／Qobuz：Veve、Anti-Choc Stars、Djo Nolo）。
+- 身分／事實裁定：《Spiral》不寫日本首發（實為 1979 年 LT 系列）、只寫 1968 年 11 月錄；《Knucklebean》不寫〈'Til Then〉出自《Components》；《Patterns》寫 1968、無 Land、〈A Time to Go〉寫「獻給金恩」（錄在遇刺前）；《View From the Inside》不寫發行年；《Medina》《Inner Glow》不寫擱置原因；Bohren《Midnight Radio》寫 1995、不寫 Duisburg 錄音日；Booker Ervin 不寫 Gerald Wilson；Born Against 是 1990 年 Vermiform 的 7 吋 EP、不寫七軌卡帶與透明膠誤壓；boerd 是 Bård Ericson（非 Fredrik Klingwall）；Body of Light 寫 2016；Bridget St John《Jumblequeen》製作人 Leo Lyons（非 Ron Geesin）；Brigth Engelberts 是喀麥隆人；Bread, Love and Dreams 當時兩人組；Brand Nubian《Foundation》不寫 DJ Premier 整張混音；Brock Berrigan 不寫本名。
+- **薄寫上線不留置**：Bobby Watson 兩張、Body of Light、boerd、Bora Roković、Bozi Boziana、Breakdown、Brigth Engelberts、Brock Berrigan（聲音段只能寫樂團／藝人整體風格的，文中照實寫成整體風格）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 1 處，改動檔 `review-sd-059.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Bobby Watson《No Question About It》 | 「是 他的樂團」刪多餘空格 | 格式 |
+
+其餘逐張對過研究稿無改：Hutcherson 十張各取一角（Cochran 策劃、Hubbard 搶戲、Idyllwild 戶外錄音、Butler 帶隊蒙特勒與同日 Byrd 十人電氣團的對照、歐巡後一個月進棚、大麻案失去卡巴萊證、Land–Hutcherson 五重奏僅兩次進棚、《The Kicker》擱 36 年與「不夠代表他」的說法出自 uDiscover、Yanow 說他是 Blue Note 瓦解前最後在廠錄音者之一、與 Land 七張合作的終點）；Hargrove 18 歲、數位雙軌一次錄成、Mustafa 與 Lewis 供曲、Body of Light 童年家庭錄影帶取樣（Dais）、boerd 是皇家歌劇院低音大提琴手、Bohren 由硬蕊金屬團轉向（德文維基）、Born Against 的 Raw Power 自述（1991 RIOT 訪談）、Bourbonese Qualk 佔屋圈、Anti-Choc 三女聲、Bread, Love and Dreams 女飛車黨與猶豫蝸牛、Breakdown tough guy 先驅、Brock Berrigan 凌晨兩點（Stereofox 訪談）皆有出處。Tolambo Funk 的 Hot Casa 重發句保留：它交代的是原盤長年只靠盜版流傳的地位，不是版本差異。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-059.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 27 處。
+- 本工作階段 WebSearch 合計約 88 次（研究層 sd-058 38、sd-059 33，主線 17）。

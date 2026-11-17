@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s32：sd-058、sd-059 上線（60 張，無留置）
+
+- **結果**：「其餘」組。sd-058 上線 30（Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）；sd-059 上線 30（Bobby Hutcherson 10、Bobby Lyle、Bobby Watson & Horizon 2、Body of Light、boerd、Bohren 2、Booker Ervin、Bora Roković、Born Against、Bourbonese Qualk、Bozi Boziana、Brand Nubian 2、Brass Construction、Bread, Love and Dreams、Breakdown、Bridget St John、Brigth Engelberts、Brock Berrigan）。查不到專輯層級資料的照 delayde 前例薄寫上線、不留置（Blue Wednesday《Beat Tape 2》149 字）。
+- **主線補查**：17 次 WebSearch＋WebFetch，補 Birdland（Discogs PGP RTB）、Blind Light、Blackbird、Blue Wednesday、Hutcherson 三張、Bohren《Midnight Radio》（Visions／Babyblaue）、Born Against、boerd、Bobby Watson、Breakdown、Brigth Engelberts、Bozi Boziana。
+- **審稿**：sd-058 改 9 處（版本雜項：限量份數、黑膠初版、Tzadik 重發；Blue Wednesday 發行日鉤子改「這是什麼」開頭；Black Tape 聽眾留言改具名樂評；《Standards》壓字數），sd-059 改 1 處（空格）。研究層更正：Holiday《Ladylove》巴塞爾非科隆、Blind Light 是 Fier 不是 Laswell、《Spiral》非日本首發、Jumblequeen 製作人 Leo Lyons、boerd 是 Bård Ericson。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-058/059.json,review-sd-058/059.json}`、`desc-tools/batches/{cards,research,output}/sd-058*、sd-059*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題；鉤子加權 ≤50、同批前四字互異。WebSearch 約 88 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜嚴重簡介線兩張最終留置的裁定（店主授權）
 
 - **店主**：「給你決定就好」。張露《繁星點點 張露》→ 改掛名張璐《繁星點點》（Discogs 33707097、Rti 節目；串流誤掛），照 pool-fix-20261016 六處改法＋封面重核＋藝人介紹；delayde《finding solitude》→ 拿掉曲數曲長冷知識後薄寫上線。兩件交給 s30（`sd-fix-1`）。
