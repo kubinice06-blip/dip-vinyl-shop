@@ -2165,3 +2165,51 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-077.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 105 次（研究層 sd-076 45、sd-077 40，主線約 20）。
+
+## sd-084（30 張，其餘：Prince Jazzbo、Princess Sharifa、Alex Bradford、Harold Boggs 3、Project Lazarus 2、Prolapse、Providence、Proxyon 2、Prysm 4、Purl、Purrple Cat 9、Quantec、Quasar、quasimode 2）— s45
+
+- 研究：3 支 Sonnet，WebSearch 15＋9＋10＝34 次；none 只有 Princess Sharifa story、Purrple Cat《Sleep Tight》story／sound。
+- **主線補查**（WebSearch 8 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Prince Jazzbo（Discogs API 原版：封底印 King Tubby 錄音室混音、Bunny Lee 與 Jazzbo 製作；reggaerecord 亦列 Bunny Lee）→ 舊稿 Bunny Lee 製作屬實；Harold Boggs 三張（Journal of Gospel Music 長文：全盲、母親創立的教會、Nashboro 十張的第一／四／八張、唱法越來越急切）→《Lord Give Me Strength》story ok；Prysm（多份 de Bethmann 傳記：1998 Django d'Or 年度團體、Blue Note 四張）；Quasar（MLWZ Kev Rowland 樂評：Turner 一人寫全部歌曲、龐克後英國樂評無視前衛搖滾、早於 IQ／Marillion 出片、Genesis 式鍵盤、製作偏薄）→ story／sound 升 ok；quasimode《daybreak》查無訪談（OTOTOY 2009-12-01 頁是 bonobos）；Purrple Cat《Sleep Tight》官網只有外連。
+- **薄寫上線不留置**（delayde 前例）：Princess Sharifa、Alex Bradford、Purrple Cat 九張（166–199 字，各張以 Bandcamp 一句文案的場景錯開，不編樂器、不寫匿名與出身地）、Proxyon《The Return of Tarah》、Project Lazarus《К солнцу, к звездам》。
+- 事實裁定：Providence 是日本 neo-prog 團（派工特注寫荷蘭是協調端誤記），Atoll 吉他手客席寫「據說」；Princess Sharifa 不寫蘇格蘭出生與 1969 生年；Boggs 不寫 Clapton〈Give Me Strength〉（單一轉述）；Proxyon 製作人只寫 van der Kuy 與 Rob van Eijk、〈Space Fly〉致敬 Space 不寫；Prysm 不寫團名由來；quasimode《daybreak》barks.jp 列 2009-12-02 發行（Jazz Music Archives 列 2010），正文不寫年份、客座不寫國籍；《mode of blue》不寫小松正人。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-084.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quantec《Journey of Mind》 | 刪「原版是 100 張手工編號的 CD-R」「回收紙板包裝」 | 版本與封套雜項 |
+| Purrple Cat《Cat Nap》 | 鉤子去掉「Bandcamp 頁面只寫了這一句」的破折號結構 | 鉤子不靠頁面說明 |
+| Prysm《Time》 | 鉤子由管理顧問轉行改為三人分頭寫曲、奇數拍 | 與《Prysm》鉤子撞材料 |
+| Prysm《Prysm》 | 「La Défense 首獎」→「最佳樂團獎」；刪「獲 Django d'Or 提名」；補《Prysm》 | 來源是最佳獨奏與最佳樂團；提名只見搜尋摘要；QA 無《》 |
+| Prysm《On Tour》 | 「激烈的六年過後」→「之後」 | 與「七年」自相矛盾 |
+| Proxyon《Proxyon》 | 補《Proxyon》，刪「常與 Koto 並列」壓回 235 字 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Jazzbo 吟誦不唱、Ariwa 最老的黑人廠牌、Little Richard 學唱腔、1958 同名單曲、停巡演回教會、全盲、第九行星太空人、第一張就往太空、單曲變專輯、女聲與 mellotron、Laserdance 作曲者另開線、換製作人、三百多場、管理顧問、〈Extension〉貝斯開場、Purl 自寫短詩、Purrple Cat 九張各自場景、老合成器、早於 IQ／Marillion、能跳舞的 JAZZ、Blue Note 70 週年）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-084.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-085（30 張，其餘：Quatuor Diotima、Quilapayún、Rabit、Radar 2、raison d'être 2、Random Rab、Ali／Jenkins、Ravi Coltrane、Ray & Ina Patterson、Refrigerator、Renee Rosnes 4、Ressurection 2、Retsin、Reuben Wilson 3、Bernard Avant、Revolutionary Dub Warriors、Rheinallt H. Rowlands、Groove Holmes 2、Beirach、Margitza、Riow Arai）— s45
+
+- 研究：3 支 Sonnet，WebSearch 12＋13＋14＝39 次；none 有 Radar 兩張 story／sound、raison d'être《Stains》sound、Riow Arai story。
+- **主線補查**（WebSearch 約 9 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Radar 兩張（愛沙尼亞文維基：Jaak Joala 伴奏團出身、1982–84 塔爾圖大獎、1985 最佳器樂團、1986 布拉提斯拉瓦、1987 年 10 月布達佩斯最後一場；Discogs API：《Trofee》1984 塔林錄音與編制、無主唱 credit）；Quilapayún 5（西文維基：十三首多半器樂、Carrasco 器樂曲、Bach 改編、探戈——以器樂為主就是這張的概念；官網 q5 頁下線、archive.org 被擋）；raison d'être《Stains》（noisereceptor 樂評：修道院式吟唱、金屬刮擦、零星鋼琴與弦樂銅管）→ sound ok；Riow Arai（Bandcamp 只有標籤與發行日）；Beirach（確認 Tusa／Williams，非 Mraz）；Rabit（Roman Candle 短文無實質）。
+- **薄寫上線不留置**（delayde 前例）：Radar 2 張、Random Rab、Ray & Ina Patterson、Renee Rosnes《Without Words》、Ressurection 同名 EP、Retsin、Bernard Avant、Rheinallt H. Rowlands、Beirach、Riow Arai。
+- 事實裁定：Simaku 是 Thomas Simaku（派工特注寫 Xenakis 師承是協調端誤記），Diapason／Classica 評語只有二手轉述不寫；Ali／Jenkins 寫「1975 年錄音、1976 年發行」；Random Rab 年份 2011／2012 兩說不寫；Ressurection 是新澤西 Edison 硬核團，預算 200 美元寫「據廠牌介紹」；Rosnes 同名作 Hancock 彈鋼琴（舊稿合成器錯）；〈Happy Together〉是 1967 年 The Turtles；Avant「八首自寫、Dave Clark 製作」未查證不寫；Beirach 不寫 Badal Roy、原田和男、稲岡邦弥；Riow Arai 不把《Mind Edit》的描述套到本張；Rowlands 不寫 Oz 車禍。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 26 處，改動檔 `review-sd-085.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quilapayún 5 | quena、zampoña、charango 改寫成「樂團慣用」；刪「Allende 政府文化大使」壓字數 | 樂器出自團史，非特指本張 |
+| Radar《Baltic Coast》 | 「也是最後一年的錄音」→「解散那年發行」 | 錄音年份無來源 |
+| Simaku、Rabit、Stains、Ali／Jenkins、Refrigerator、Rosnes 2、Ressurection、Avant | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數（Simaku 約克錄音與終樂章噪音、Rabit 客座人聲、Stains 計畫通論、Ali Coltrane 經歷與兩句聲音、Refrigerator Shrimper 起家、As We Are Now「大半自作」、Avant 副牌宗旨） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（為 Diotima 量身寫、抗議歌團大半不開口、向 DJ Screw 致敬、布達佩斯最後一場、伴奏團拿最佳器樂團、三十週年與榮格陰影、九年沒有全新專輯、日出日落場次、店打烊後開錄、拆開再重組、醫院相識、郊區概念、旁遮普曲名、請前老闆、出道作客座、三重奏加弦樂、唯一全長、後來各團成員的起點、Rodan 解散後、R&B 流行曲改靈魂爵士、自寄 demo 給 Wolff、豎琴電西塔琴告別作、Pickett 改福音、低音與空間、虛構的歌手、整晚馬拉松、Prestige 與 Blue Note 都錄過、東京現場、羅姆小提琴家族、臥室一人錄完）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
