@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s51：sd-096、sd-097 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-096 上線 30（White Heaven 2、Willie Colón、Wizz Jones、Yagya 2、Yaron Herman 2、Namysłowski、Zion Train 2、Zodiac、Zoviet France 3 等）；sd-097 上線 30（Zoviet France、Étienne Daho、Ξαρχάκος、Caravan、Pumpuang、Sai Htee Saing、Lay Phyu 2、BOYNEXTDOOR、Charli xcx、Bukka White、cv313 2、Das Damen 等）。無留置；Wun Two 3、YOUTH 83、Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson 等照 delayde 前例薄寫。
+- **主線補查**：Focan、Djorvin Clain、Dub Ghecko、Freddie Jackson（Discogs API＋搜尋），無新料。
+- **審稿**：sd-096 改 9 處、sd-097 改 19 處（單一出處的「常被視為」降級、Earland 合成器轉向時點、第二句補《盤名》壓字數），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-096.json,review-sd-097.json,kv-before-sd-096.json,kv-before-sd-097.json}`、`desc-tools/batches/{cards,research,output}/sd-09[67]*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+
 ### 2026-11-18｜dip-vinyl-shop｜game-lab 第 C 波：戰利品列、藏家寶箱、店內攤位二選一、踢館帖、中繼點開局、新手保底
 
 - **店主 11-15／11-16**：「Monster Train 每過一關路邊有很多獎勵能點選收集、升級角色……讓人停不下來」「不要出店門，都在店裡完成」「全部開始做吧」。規格 scratchpad `v5/wave-c/SPEC-C.md`、裁定 `v5/wave-c/rulings.md`。
