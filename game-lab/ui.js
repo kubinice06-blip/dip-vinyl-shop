@@ -372,7 +372,7 @@
     if (dayNum(d.day) - dayNum(day) > 2) d.day = '';
     if (!(day > d.day)) return false;
     try { d.id = E.dailyPick(C, { day: day, known: function (id) { return !!save.shelf[id]; }, owned: ownFn(), want: save.want, tunes: dailyTunes() }); } catch (e) { console.error(e); d.id = null; }
-    d.day = day; d.took = false; UI.dailyNew = true;
+    d.day = day; d.took = false; UI.dailyNew = true; UI.dailyNagged = false;   // 新的一張（含跨午夜沒重新整理）：重新提醒一次
     saveDaily();
     return true;
   }
@@ -1833,7 +1833,7 @@
     // 錢（−$3,000）與短詞（進包包）不拆到兩行（V11：「…，−」／「$3,000」看起來像賺錢）
     //   主站帶來的那張（標題吐司）：「在櫃檯等你：」「先跟老闆走一趟，」「下一趟（開局可以）帶上場」各自不拆（審查：360／375 寬斷成「下一／趟帶上場」）
     var html = esc(text).replace(/[−+-]\$[\d,]+/g, function (m) { return '<span class="nw">' + m + '</span>'; })
-      .replace(/(進包包|賣掉|拿出來了|放回去了|在櫃檯等你：|先跟老闆走一趟，|下一趟(?:開局可以)?帶上場)/g, '<span class="nw">$1</span>');
+      .replace(/(進包包|賣掉|拿出來了|放回去了|在櫃檯等你：|先跟老闆走一趟，|下一趟(?:開局可以)?帶上場|那一箱。)/g, '<span class="nw">$1</span>');
     var t = el('div', 'lb-toast' + (cls ? ' ' + cls : ''), html);
     // 同時好幾個（贏錢＋聲望 +3、中繼點）：往下疊，不蓋在同一個位置
     var prev = qsa('.lb-toast:not(.out)', app());
@@ -1926,6 +1926,11 @@
     if (!d || d.day !== todayKey()) return '';
     return (c ? fill(D7.titleChip, { album: c.album }) : fill(D7.stamps, { n: Math.min(7, d.stamps) })) + ' ▸';
   }
+  // 收下／換完獎勵：標題那顆小籤當場換字（不等下次畫標題；驗收：收了還寫「今日推薦」像沒收到）
+  function dailyChipSync() {
+    var b = UI.screen === 'title' && UI.panel && qs('.dl-chip [data-a=daily]', UI.panel); if (!b) return;
+    var t = dailyChip(); if (t) b.textContent = t; else b.parentNode.remove();
+  }
   SCREENS.title = function () {
     var r = save.run, hasRun = !!(r && !r.over), overRun = !!(r && r.over);
     setTop(esc(TU('game')), { links: (canCharEdit() ? [['捏角色', openCharEdit, 'char']] : []).concat([['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']]), help: true });
@@ -1957,8 +1962,8 @@
       // 唯讀一行（SPEC-B §2.1；兩個都有只出升級失敗）
       (UI.migrateFail || UI.poolMissing ? '<p class="lb-foot sm ro">' + esc(SU(UI.migrateFail ? 'migrateFail' : 'poolMissing')) + '</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
-    // 今天剛發推薦：老闆說一句（說過＝來客那邊這次不再提醒）
-    if (UI.dailyNew && dailyCard()) { UI.dailyNew = false; UI.dailyNagged = true; later(function () { if (UI.screen === 'title' && !UI.intro) stageSay('o', line('dailyNew'), 'owner', 3000); }, 900); }
+    // 今天剛發推薦：老闆說一句（真的說出口才算提醒過＝來客那邊這次不再說；0.9 秒內就離開標題＝來客那邊說）
+    if (UI.dailyNew && dailyCard()) { UI.dailyNew = false; later(function () { if (UI.screen === 'title' && !UI.intro && !UI.dailyNagged && dailyCard()) { UI.dailyNagged = true; stageSay('o', line('dailyNew'), 'owner', 3000); } }, 900); }
     // 舊存檔第一次載入（解鎖制以前的存檔；loadSave 補了 lastAce 那派那張）：吐司說一次規則改了
     if (UI.migratedUnlock) { UI.migratedUnlock = false; toast(TU('unlockMigrated'), 'keep long'); }
     // 主站「帶去店裡對決」帶進來（開機讀 ?card=）：吐司說明一次（第一次玩的人要先走完序章那一趟）
@@ -3172,7 +3177,7 @@
     if (L && L.src === 'all' && !save.seen.lotAll) Q.push(function () { save.seen.lotAll = true; persist(); stageSay('o', line('lotAll'), 'owner', 2800); return true; });
     if (L && r.idx > 0 && !save.seen.lotHint) Q.push(function () { save.seen.lotHint = true; persist(); stg('emote', 'o', 'excl', 2600); toast(line('lotHint'), 'long'); return true; });
     Q.push(function () { return wantNote(r); });
-    Q.push(function () { if (UI.dailyNagged || !dailyCard() || !E.canShop(r)) return false; UI.dailyNagged = true; stageSay('o', line('dailyNew'), 'owner', 2600); return true; });
+    Q.push(function () { if (UI.dailyNagged || !dailyCard() || !E.canShop(r)) return false; UI.dailyNagged = true; UI.dailyNew = false; stageSay('o', line('dailyNew'), 'owner', 2600); return true; });
     var wait = Math.ceil(ms / speed() / 300), iv = setInterval(function () {   // 數拍子（測試會定住 Date）
       if (UI.screen !== 'night' || save.run !== r) return clearInterval(iv);
       var tt = D.getElementById('tut'), ci = CI(), X = econ();
@@ -3190,8 +3195,11 @@
     Object.keys(B).forEach(function (k) { (B[k] || []).forEach(function (id) { if (L.want.indexOf(id) >= 0 && L.told.indexOf(id) < 0 && r.want && r.want.indexOf(id) >= 0 && card(id)) hit.push([id, k]); }); });
     if (!hit.length) return false;
     hit.forEach(function (x) { L.told.push(x[0]); }); persist();
-    var b = (C.bins || {})[hit[0][1]] || {};
-    toast(hit.length > 1 ? SHU('wantOnShelfN', { n: hit.length }) : SHU('wantOnShelf', { album: card(hit[0][0]).album, bin: b.zh || b.label || '' }), 'long');
+    var B2 = C.bins || {}, keys = hit.map(function (x) { return x[1]; }).filter(function (k, i, a) { return a.indexOf(k) === i; });
+    var b = B2[hit[0][1]] || {};
+    // 箱子道具上的名牌是英文（JAZZ）：吐司帶英文、單張再括中文
+    toast(hit.length > 1 ? SHU('wantOnShelfN', { n: hit.length, bins: keys.map(function (k) { return (B2[k] || {}).label || (B2[k] || {}).zh || k; }).join('、') })
+      : SHU('wantOnShelf', { album: card(hit[0][0]).album, bin: b.label && b.zh ? b.label + '（' + b.zh + '）' : (b.zh || b.label || '') }), 'long');
     return true;
   }
   // 聲望那顆（來客的錢那條最左）：「聲望 10/14」，數字粗體、「聲望」兩字小一號
@@ -3397,7 +3405,7 @@
         var k = a.getAttribute('data-a');
         if (k === 'dplay') { boothPlay(card(UI.daily && UI.daily.id)); return; }
         if (k === 'dclaim') { sfx('tick'); openDailyClaim(); return; }
-        if (dailyTake()) { sfx('slam'); redraw(Math.min(7, UI.daily.stamps) - 1); toast((C.daily || {}).taken); } else redraw(-1);
+        if (dailyTake()) { sfx('slam'); redraw(Math.min(7, UI.daily.stamps) - 1); toast((C.daily || {}).taken); dailyChipSync(); } else redraw(-1);
         return;
       }
       var b = e.target.closest && e.target.closest('[data-pick]'); if (!b) return;
@@ -3415,7 +3423,7 @@
     s.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-pick]'); if (!b) return;
       var ok = dailyClaim(b.getAttribute('data-pick'));
-      if (ok) { sfx('slam'); toast(D7.claimed, 'long'); }
+      if (ok) { sfx('slam'); toast(D7.claimed, 'long'); dailyChipSync(); }
       openBooth();
     });
   }
@@ -4358,8 +4366,9 @@
     setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
   }
   // ======================================================================= 新卡封面／試聽（SPEC-B §1.6、C3/C4）
-  //   標題畫好後閒置 fetch cards-media.json?v=poolVersion（priority low）→ 閒置時 attachMedia → 發 'dip:media'。版本不合不重試；
-  //   逾時：20 秒內沒拿到回應標頭就放棄；拿到之後 body 再給 90 秒（128 kbps 也抓得完；驗收 F3：原本 20 秒連 body 一起算，慢網路快抓完就被砍）
+  //   標題畫好後閒置 fetch cards-media.json?v=poolVersion → 閒置時 attachMedia → 發 'dip:media'。版本不合不重試；
+  //   逾時看「卡住」不看「慢」：20 秒內沒拿到回應標頭、或之後 20 秒都沒收到新的一段就放棄；總共最多 5 分鐘
+  //     （驗收：原本 20 秒連 body 一起算，128 kbps 跟店牆封面搶頻寬時快抓完就被砍、再從頭抓）
   //   網路失敗 5 秒後重試一次；之後換畫面再試，但要隔 15、30、60… 秒，一次開頁最多抓 MEDIA_MAX 次（降速吃到飽不要每換畫面燒 300 KB）
   //   mediaReady()：套好 true、不合／沒卡池 false、網路失敗不 resolve。mediaTry()：這一次抓的結果（成功 true、失敗 false；聆聽室控制台等它）
   var MEDIA = { kicked: false, busy: false, bad: false, fails: 0, tries: 0, next: 0, p: null, done: null, cur: null };
@@ -4384,23 +4393,36 @@
   function mediaTry() {
     if (C && C.mediaReady) return Promise.resolve(true);
     MEDIA.kicked = true;
-    if (!MEDIA.busy && MEDIA.tries < MEDIA_MAX) mediaLoad(true);
+    if (!MEDIA.busy && MEDIA.tries < MEDIA_MAX) mediaLoad();
     return MEDIA.busy && MEDIA.cur ? MEDIA.cur : Promise.resolve(!!(C && C.mediaReady));
   }
-  function mediaLoad(now1) {
+  // 一段一段讀 body（每收到一段 kick 重設「卡住」計時）；沒有串流的瀏覽器照 r.json()（只剩總共 5 分鐘那道）
+  function mediaJson(r, kick) {
+    if (!r.body || typeof r.body.getReader !== 'function' || !W.TextDecoder) return r.json();
+    var rd = r.body.getReader(), dec = new TextDecoder(), parts = [];
+    function pump() {
+      return rd.read().then(function (x) {
+        if (x.done) { parts.push(dec.decode()); return JSON.parse(parts.join('')); }
+        kick(); parts.push(dec.decode(x.value, { stream: true }));
+        return pump();
+      });
+    }
+    return pump();
+  }
+  function mediaLoad() {
     if (!C || !C.poolLoaded || !C.poolVersion || C.mediaReady || MEDIA.busy || MEDIA.bad || !W.fetch) { mediaReady(); return; }
     MEDIA.busy = true; MEDIA.tries++;
     var fin, ac = W.AbortController ? new AbortController() : null, abort = function () { if (ac) ac.abort(); };
     MEDIA.cur = new Promise(function (res) { fin = res; });
-    var tm = setTimeout(abort, 20000), opt = {};
+    var tm = setTimeout(abort, 20000), cap = setTimeout(abort, 300000), opt = {};
+    var kick = function () { clearTimeout(tm); tm = setTimeout(abort, 20000); };
     if (ac) opt.signal = ac.signal;
-    if (!now1) opt.priority = 'low';                   // 背景抓：讓店牆封面、試聽先走（不支援的瀏覽器忽略）
     W.fetch('cards-media.json?v=' + encodeURIComponent(C.poolVersion), opt).then(function (r) {
-      clearTimeout(tm); tm = setTimeout(abort, 90000);
+      kick();
       if (!r.ok) throw new Error('cards-media.json HTTP ' + r.status);
-      return r.json();
+      return mediaJson(r, kick);
     }).then(function (m) {
-      clearTimeout(tm);
+      clearTimeout(tm); clearTimeout(cap);
       return new Promise(function (res) { idle(function () { var n = 0; try { n = C.attachMedia(m); } catch (e) { console.error(e); } res(n); }, 0); });
     }).then(function (n) {
       MEDIA.busy = false;
@@ -4408,7 +4430,7 @@
       mediaReady(); fin(true);
       try { D.dispatchEvent(new CustomEvent('dip:media', { detail: { n: n } })); } catch (e) { console.error(e); }
     }).catch(function (e) {
-      clearTimeout(tm); MEDIA.busy = false; MEDIA.fails++;
+      clearTimeout(tm); clearTimeout(cap); MEDIA.busy = false; MEDIA.fails++;
       console.warn('[media]', e && e.message ? e.message : e);
       if (MEDIA.fails === 1) setTimeout(mediaLoad, 5000);
       else MEDIA.next = mono() + 15000 * Math.pow(2, Math.min(4, MEDIA.fails - 2));

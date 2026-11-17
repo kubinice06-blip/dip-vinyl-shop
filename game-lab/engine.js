@@ -1644,7 +1644,8 @@
     }
     return best;
   }
-  // dailyReward(content, {n, owned}) -> [ids]（最多 3 張）：集點卡第 n 次換獎勵的三選一。史詩／傳奇、非頂點、不在特價箱、不是王牌、沒擁有；
+  // dailyReward(content, {n, owned}) -> [ids]（最多 3 張）：集點卡第 n 次換獎勵的三選一。史詩（驗收：傳奇帶上場太好打、店裡不收＝主線 M2，
+  //   換來的會當種子帶上場，所以不給傳奇）、非頂點、不在特價箱、不是王牌、沒擁有；
   //   經／冷／硬（topAttr）各一張，每色取 hash01('dailyReward#'+n+'#'+id) 最小的；某色沒有就從其他色剩下的照同一個雜湊補。跟日期無關（不能靠重開洗）
   function dailyReward(content, o) {
     o = o || {};
@@ -1653,7 +1654,7 @@
     const pool = [];
     for (const id of Object.keys(cards)) {
       const c = cards[id];
-      if (!c || c.tier || bset.has(id) || aces.has(id) || !FEATURE_RARITY.includes(rarity(c)) || owned(id)) continue;
+      if (!c || c.tier || bset.has(id) || aces.has(id) || rarity(c) !== 'epic' || owned(id)) continue;
       pool.push({ id, a: topAttr(c), h: hash01('dailyReward#' + n + '#' + id) });
     }
     pool.sort((x, y) => x.h - y.h || idCmp(x.id, y.id));

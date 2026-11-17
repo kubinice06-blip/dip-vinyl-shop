@@ -23,7 +23,7 @@
 //   P6  想要清單：找一個第 1 檔就中的 seed（Node 端同一支 engine）→ 架上有它、吐司「你想要的《…》上架了」一次（lot.told）、抽屜「你想要的」籤＋縮圖角；reload 不再吐司
 //   P7  今日推薦（page.clock 定在 2026-11-16）：標題小籤＋老闆一句 → 點小籤開試聽機（集點卡 1／7）→ 收下 → 唱片櫃擁有 src daily、格子 2／7、吐司 →
 //       同日 reload 不換 → 11-17 新的一張 → 撥回 11-15 不發不壞 → day '2099-01-01' 當壞值照發 → 跨午夜 visibilitychange 發新的；
-//       stamps 7 → 換獎勵三選一（經冷硬各一、史詩／傳奇、沒擁有）→ 擁有 src daily → 下一趟挑種子列得到它；唯讀（卡池 404）不發、序章前不發；
+//       stamps 7 → 換獎勵三選一（經冷硬各一、史詩〔驗收改：不給傳奇〕、沒擁有）→ 擁有 src daily → 下一趟挑種子列得到它；唯讀（卡池 404）不發、序章前不發；
 //       兩個分頁：A 收下／換獎勵後，B 不重新整理直接收／換 → 格子數對（改之前先重讀）
 //   P8  媒體延後：cards-media.json 延 12 秒 → 標題照常、抽屜裡的精選新卡先是專輯名字卡、到了封面補上；正常（請求帶 ?v=poolVersion、dip:media 4,677）；
 //       404 → 照玩、5 秒後重試、沒有未捕捉例外；v 不同的 JSON → 不套、沒有例外
@@ -43,6 +43,8 @@
 //   P11 效能（CPU 4× 節流）：來客畫面重畫（go('night')，10 次中位）、「認識 3,000 張」存檔的 persist()（10 次中位）；寫進報告，>50 ms 印 NOTE、不失敗
 //   P12 cards-pool.js 404 → 標題 poolMissing 那行、玩得了（推門開局）、主鍵逐字不變
 //   M2  主站帶卡擋傳奇（主線 M2）：?card=傳奇 → 不收、吐司 seeds.ui.bringLegend；?card=史詩 → 收下；存檔裡帶著傳奇的 bring → 載入時丟掉
+//   P13 唱片櫃頁分批畫（驗收）：認識 1,001／擁有 201 → 開頁各 120 張、捲到底全到、切王牌只重畫認識那面、點封面照開
+//   P14 對決複本的封面（驗收）：媒體 404 時開打 → 重新整理媒體到 → 他出的精選新卡畫封面（duel.js 查活的卡），不是名字卡
 // 每一項印 PASS／FAIL（NOTE 不算）；任何 FAIL → exit 1。
 import fs from 'fs';
 import path from 'path';
@@ -451,7 +453,7 @@ async function P6(w, h, size) {
     await seedLS(page, BASE7({ run: f.r, want: f.wl, seen: { night: true, aceSwap: true, counterSell: true, unlockHint: true, lotHint: true } }));
     await openTitle(page, Q());
     await contNight(page);
-    const msg = fill(SH.wantOnShelf, { album: C.cards[f.id].album, bin: C.bins[f.key].zh });
+    const msg = fill(SH.wantOnShelf, { album: C.cards[f.id].album, bin: C.bins[f.key].label + '（' + C.bins[f.key].zh + '）' });   // 店裡名牌英文＋中文（驗收）
     const shown = await page.waitForFunction(m => window.__toasts.includes(m), msg, { timeout: 15000 }).then(() => true, () => false);
     const n1 = await page.evaluate(() => ({ told: window.__lab.run.shop.lot.told.slice() }));
     record('P6-1', size, shown && n1.told.includes(f.id), `seed ${f.r.seedKey}：${f.id}（${f.key}）在第 1 位架上；吐司「${msg}」${shown}；lot.told ${JSON.stringify(n1.told)}`);
@@ -529,7 +531,7 @@ async function P7(w, h, size) {
       await page.evaluate(() => { const b = document.querySelector('.lb-sheet.dclaim [data-pick]'); if (b) b.click(); }); await sleep(700);
       const d = await daily(page), tt = await toasts(page);
       const own = await page.evaluate(id => ({ e: window.__lab.save.shelf[id] || null, seedable: window.__lab.seedable().includes(id) }), ids[0]);
-      record('P7-5', size, st.claim && st.st === 7 && ids.length === 3 && new Set(ids).size === 3 && cov && rar.every(x => x === 'epic' || x === 'legendary') &&
+      record('P7-5', size, st.claim && st.st === 7 && ids.length === 3 && new Set(ids).size === 3 && cov && rar.every(x => x === 'epic') &&
         d.stamps === 0 && d.claimed === 1 && !!own.e && own.e.own && own.e.src === 'daily' && own.seedable && tt.includes(D7.claimed) && !errs(page).length,
         `換獎勵鈕 ${st.claim}、格子 ${st.st}；三選一 ${JSON.stringify(ids)}（經冷硬各一 ${cov}、${rar.join('／')}）→ 挑第一張：stamps ${d.stamps} claimed ${d.claimed}、唱片櫃 ${JSON.stringify(own.e)}、挑種子列得到 ${own.seedable}；${errTxt(page)}`);
     } finally { await ctx.close(); }
@@ -1047,9 +1049,79 @@ async function M2(w, h, size) {
   } finally { await ctx.close(); }
 }
 
+// P13 唱片櫃頁分批畫（驗收）：認識 1,001 張（擁有 201）→ 開頁兩面牆各先 120 張、標題數字照全部算；捲到底 → 兩面牆全到；
+//   切「王牌」只重畫認識那面（我的收藏不動）；點封面照開唱片資訊
+async function P13(w, h, size) {
+  const ids = POOLC.slice(0, 1000), shelf = {};
+  ids.forEach((id, i) => { shelf[id] = i < 200 ? { at: '20261105#1', seen: true, own: true, src: 'run', ownAt: '20261105#1' } : { at: '20261105#1', seen: true }; });
+  shelf[ACE.pearl] = { at: '20261105#1', seen: true, own: true, src: 'start' };
+  const nOwn = 201, nKnown = 1001;
+  const { ctx, page } = await fresh(w, h);
+  try {
+    await seedLS(page, BASE7({ shelf }));
+    await openTitle(page, Q());
+    await page.evaluate(() => window.__lab.openPage('shelf'));
+    await page.waitForSelector('.lb-page.shelf', { timeout: 5000 }).catch(() => {});
+    await sleep(400);
+    const cnt = () => page.evaluate(() => ({ own: document.querySelectorAll('.lb-wall.own .lb-cv').length, known: document.querySelectorAll('.lb-wall.known .lb-cv').length,
+      more: document.querySelectorAll('.lb-wmore').length, h: ((document.querySelector('.lb-known .lb-h2') || {}).textContent || '').match(/(\d+)／/) }));
+    const a = await cnt();
+    for (let k = 0; k < 200; k++) {
+      const done = await page.evaluate(() => { const b = document.querySelector('.lb-page .lb-scroll'); b.scrollTop = b.scrollHeight; return !document.querySelector('.lb-wmore'); });
+      if (done) break;
+      await sleep(80);
+    }
+    const b = await cnt();
+    await jsClick(page, '.lb-page [data-f=ace]'); await sleep(250);
+    const c = await cnt();
+    await jsClick(page, '.lb-page [data-f=all]'); await sleep(250);
+    await page.evaluate(() => { document.querySelector('.lb-page .lb-scroll').scrollTop = 0; });
+    const info = await page.evaluate(() => { const cv = document.querySelector('.lb-wall.known .lb-cv[data-cid]'); if (!cv) return false; cv.click(); return true; }) && await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false);
+    record('P13', size, a.own === 120 && a.known === 120 && !!a.h && +a.h[1] === nKnown && b.own === nOwn && b.known === nKnown && b.more === 0 && c.known === 1 && c.own === nOwn && info && !errs(page).length,
+      `開頁 我的收藏 ${a.own}／認識過 ${a.known} 張（標題 ${a.h && a.h[1]}）→ 捲到底 ${b.own}／${b.known}（要 ${nOwn}／${nKnown}）→ 切王牌 認識 ${c.known}、收藏 ${c.own}；點封面開唱片資訊 ${info}；${errTxt(page)}`);
+  } finally { await ctx.close(); }
+}
+// P14 對決複本的封面（驗收）：媒體 404 時開打（存檔裡他那副牌的精選新卡沒有封面）→ 重新整理、媒體正常 → 繼續打（真點出牌）→ 他出那幾張時畫封面、不是專輯名字卡
+async function P14(w, h, size) {
+  const r = newRun({ seedKey: '20261107', runNo: 2, ace: 'pearl' }); E.jumpTo(r, C, 4);
+  const eid = r.order[r.idx], pool = E.guestDef(r, C, eid, r.pos).deck.filter(c => C.cards[c.id].pool).map(c => c.id);
+  const albums = pool.map(id => C.cards[id].album);
+  const { ctx, page } = await fresh(w, h);
+  try {
+    let block = true;
+    await page.route(/cards-media\.json/, rt => block ? rt.fulfill({ status: 404, body: '' }) : rt.continue());
+    await seedLS(page, BASE7({ run: r, seen: Object.assign(BASE7().seen, { lotHint: true, lotAll: true }) }));
+    await openTitle(page, Q());
+    await contNight(page); await sleep(500);
+    await jsClick(page, '[data-a=go]');
+    await waitScreen(page, 'duel', 20000); await duelReady(page, 20000); await sleep(500);
+    const nul = await page.evaluate(ids => { const st = window.__lab.save.run.duel; return [].concat(st.e.pile || [], st.e.hand || []).filter(c => c && ids.includes(c.id) && !c.coverUrl).length; }, pool);
+    block = false;
+    await reloadTitle(page);
+    const media = await page.waitForFunction(() => !!window.DipLabContent.mediaReady, null, { timeout: 20000 }).then(() => true, () => false);
+    await jsClick(page, '[data-a=cont]');
+    await waitScreen(page, 'duel', 25000); await duelReady(page, 20000); await sleep(600);
+    await page.evaluate(() => { window.__cv = { noimg: [], img: [] }; new MutationObserver(ms => { for (const m of ms) for (const n of m.addedNodes) { if (n.nodeType !== 1) continue; for (const e of [n, ...n.querySelectorAll('*')]) { if (e.matches('.cv.noimg')) window.__cv.noimg.push(e.textContent); if (e.tagName === 'IMG' && e.classList.contains('cv')) window.__cv.img.push(e.alt); } } }).observe(document.body, { childList: true, subtree: true }); });
+    let hands = 0;
+    for (let k = 0; k < 8; k++) {
+      if (await page.evaluate(() => { const d = window.__lab.save.run && window.__lab.save.run.duel; return !d || !!d.over; })) break;
+      const t0 = Date.now(); let ok = false;
+      while (Date.now() - t0 < 8000) { if (await page.$('[data-tut="card-0"]')) { ok = true; break; } await sleep(200); }
+      if (!ok) break;
+      await jsClick(page, '[data-tut="card-0"]'); await sleep(350);
+      if (!(await jsClick(page, '[data-tut^="chip-0-"].top') || await jsClick(page, '[data-tut^="chip-0-"]'))) break;
+      hands++; await sleep(2600);
+    }
+    const cv = await page.evaluate(() => window.__cv);
+    const named = cv.noimg.filter(t => albums.includes(t)), shown = [...new Set(cv.img)].filter(a => albums.some(al => a.includes('《' + al + '》')));
+    record('P14', size, pool.length > 0 && nul === pool.length && media && hands > 0 && shown.length > 0 && !named.length && !errs(page).length,
+      `${eid} 的牌裡精選新卡 ${pool.length} 張、媒體 404 開打時沒封面 ${nul}；重新整理媒體到 ${media}；打 ${hands} 手：他出的精選新卡畫封面 ${shown.length}（${shown.join('、')}）、名字卡 ${named.length}；${errTxt(page)}`);
+  } finally { await ctx.close(); }
+}
+
 // ---- 主程式 --------------------------------------------------------------------------------------------------
 const SCREEN_T = [['P1', P1], ['P3', P3], ['P4', P4], ['P5', P5], ['P6', P6], ['P7', P7], ['P8', P8], ['P9', P9], ['P10', P10], ['P10b', P10b]];
-const LOGIC_T = [['P1b', P1b], ['P1c', P1c], ['P1d', P1d], ['P1e', P1e], ['P1f', P1f], ['P1g', P1g], ['P2', P2], ['P11', P11], ['P12', P12], ['M2', M2]];
+const LOGIC_T = [['P1b', P1b], ['P1c', P1c], ['P1d', P1d], ['P1e', P1e], ['P1f', P1f], ['P1g', P1g], ['P2', P2], ['P11', P11], ['P12', P12], ['M2', M2], ['P13', P13], ['P14', P14]];
 browser = await launch();
 try {
   for (const [w, h] of SIZES) {

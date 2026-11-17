@@ -409,7 +409,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・lotHint | 每位客人走了，我就從這一批裡換幾張上架；打完傳說藏家，整批換新的。 | 本規格新寫 | `shopLines.lotHint` |
+| 老闆・lotHint | 每位客人走了，每一箱都換上新的一排；打完傳說藏家，整批貨換新。 | 本規格新寫 | `shopLines.lotHint` |
 | 老闆・lotAll | 新的一批到了，這批是從倉庫深處挖出來的。 | 本規格新寫 | `shopLines.lotAll` |
 
 ## 今日推薦集點卡（老闆提醒）
@@ -464,7 +464,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・binEmptyRound | 這一箱賣完了，下一輪再補。 | 本規格新寫 | `shopUi.binEmptyRound` |
 | （畫面字）・wantTag | 你想要的 | 本規格新寫 | `shopUi.wantTag` |
 | （畫面字）・wantOnShelf | 你想要的《{album}》上架了，在{bin}那一箱。 | 本規格新寫 | `shopUi.wantOnShelf` |
-| （畫面字）・wantOnShelfN | 你想要的 {n} 張上架了。 | 本規格新寫 | `shopUi.wantOnShelfN` |
+| （畫面字）・wantOnShelfN | 你想要的 {n} 張上架了：{bins}。 | 本規格新寫 | `shopUi.wantOnShelfN` |
 | （畫面字）・close | 關閉 | 本規格新寫 | `shopUi.close` |
 | （畫面字）・earned | +${n} | 本規格新寫 | `shopUi.earned` |
 | （畫面字）・bag | 包包 {n} 張 | 本規格新寫 | `shopUi.bag` |
@@ -670,10 +670,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・hint | 每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶上場；蓋滿七格，換一張好盤。 | 本規格新寫 | `daily.hint` |
 | （畫面字）・take | 收下 | 本規格新寫 | `daily.take` |
 | （畫面字）・taken | 收進唱片櫃了 | 本規格新寫 | `daily.taken` |
-| （畫面字）・tomorrow | 明天再來，老闆會再留一張。 | 本規格新寫 | `daily.tomorrow` |
+| （畫面字）・tomorrow | 明天再來，我再幫你留一張。 | 本規格新寫 | `daily.tomorrow` |
 | （畫面字）・none | 今天店裡沒有你還沒聽過的了。 | 本規格新寫 | `daily.none` |
 | （畫面字）・stamps | 集點卡 {n}／7 | 本規格新寫 | `daily.stamps` |
-| （畫面字）・firstStamp | 老客人 | 本規格新寫 | `daily.firstStamp` |
+| （畫面字）・firstStamp | 見面禮 | 本規格新寫 | `daily.firstStamp` |
 | （畫面字）・claim | 換獎勵 | 本規格新寫 | `daily.claim` |
 | （畫面字）・claimTitle | 挑一張帶回家 | 本規格新寫 | `daily.claimTitle` |
 | （畫面字）・claimed | 收進唱片櫃，下一趟可以帶上場。 | 本規格新寫 | `daily.claimed` |

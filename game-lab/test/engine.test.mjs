@@ -2887,13 +2887,13 @@ section('25 第 B 波 WP2（SPEC-B §1、§2.2、§3、§4.3／4.5、§5.2、§6
     const tp = days.map(day => EN.dailyPick(C0, Object.assign({}, base, { day, tunes: TU }))), tHit = tp.filter(id => TU.includes(C0.cards[id].tune)).length / days.length;
     console.log('     dailyPick: want ×5 ' + (100 * wHit).toFixed(1) + '% (×1 ' + (100 * W50.length / cand.length).toFixed(1) + '%)；tunes ×3 ' + (100 * tHit).toFixed(1) + '% (×1 ' + (100 * share).toFixed(1) + '%) over ' + days.length + ' days');
     ok(tHit > Math.min(0.95, 1.6 * share), 'tunes ×3: picks in the 2 tunes ' + (100 * tHit).toFixed(1) + '% (×1 ≈ ' + (100 * share).toFixed(1) + '%, ×3 ≈ ' + (100 * 3 * share / (1 + 2 * share)).toFixed(1) + '%)', tHit); }
-  // (l) dailyReward（§4.5）：3 張不同、經冷硬各一（topAttr）、史詩／傳奇、沒擁有、非頂點／特價／王牌、同 n 同結果、跟日期無關
+  // (l) dailyReward（§4.5；驗收改：只給史詩——傳奇帶上場太好打，主線 M2）：3 張不同、經冷硬各一（topAttr）、史詩、沒擁有、非頂點／特價／王牌、同 n 同結果、跟日期無關
   { const ACES = new Set(Object.values(C0.aces)); let okN = 0;
     for (let n = 0; n < (QUICK ? 20 : 100); n++) {
       const own = new Set(Object.keys(C0.cards).filter((id, i) => i % (3 + (n % 5)) === 0)), out = EN.dailyReward(C0, { n, owned: id => own.has(id) });
       const a = out.map(id => EN.topAttr(C0.cards[id])).sort().join('');
-      if (out.length === 3 && new Set(out).size === 3 && a === 'cho' && out.every(id => !own.has(id) && !C0.cards[id].tier && !BG.has(id) && !ACES.has(id) && EN.FEATURE_RARITY.includes(EN.rarity(C0.cards[id])))) okN++;
-      else ok(false, 'dailyReward: 3 different, one per colour, epic／legendary, not owned', { n, out, a });
+      if (out.length === 3 && new Set(out).size === 3 && a === 'cho' && out.every(id => !own.has(id) && !C0.cards[id].tier && !BG.has(id) && !ACES.has(id) && EN.rarity(C0.cards[id]) === 'epic')) okN++;
+      else ok(false, 'dailyReward: 3 different, one per colour, epic only, not owned', { n, out, a });
       eq(EN.dailyReward(C0, { n, owned: [...own] }), out, 'dailyReward: same n → same three (owned as array too)');
     }
     ok(okN === (QUICK ? 20 : 100), 'dailyReward ok', okN);
