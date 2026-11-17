@@ -78,7 +78,7 @@
    "story": "thin",
    "sound": "thin"
   },
-  "notes": "舊簡介全是盤號、日期、曲長；其中「三間錄音室」與盤名城市相符屬可用，但盤號日期不用。查證：WebSearch 2 次（英文；日文母語搜尋未做，額度考量）、Wikipedia（Hosono、Schmidt、Inoue，均簡短）、atom-tm.com 取得 DSP Holiday 頁、RA 評論只講 Hosono、Discogs 403。找不到專文樂評與具體聲音描述（只有 AllMusic 一句）。日本商品頁（Tower／disk union）未取得。建議薄寫：身分＋三城跨國合作＋三人各自背景推論的聲音（以有出處的評述為限）。"
+  "notes": "舊簡介全是盤號、日期、曲長；其中「三間錄音室」與盤名城市相符屬可用，但盤號日期不用。查證：WebSearch 2 次（英文；日文母語搜尋未做，額度考量）、Wikipedia（Hosono、Schmidt、Inoue，均簡短）、atom-tm.com 取得 DSP Holiday 頁、RA 評論只講 Hosono、Discogs 403。找不到專文樂評與具體聲音描述（只有 AllMusic 一句）。日本商品頁（Tower／disk union）未取得。建議薄寫：身分＋三城跨國合作＋三人各自背景推論的聲音（以有出處的評述為限）。｜【主線】補查一次：只確認三人身分與 1998 年續作《DSP Holiday》。story／sound 薄寫。"
  },
  {
   "key": "hayedeh|sogand",
@@ -131,7 +131,7 @@
    "story": "thin",
    "sound": "thin"
   },
-  "notes": "舊簡介全是曲長（且把曲名／長度寫成重點）與一句「手足」；不要沿用曲長。「她與 Mahasti 手足、生年差四年」：維基稱 Hayedeh 是姊姊、約早出道五年，生年差未驗證。《Sogand》本張是否由 Nojouki 製作、曲目作曲者、編曲細節皆查不到。查證：WebSearch 2 次（波斯文一次、英文一次，結果零評論）、fa／en 維基（取得）、Iranica（403）、Last.fm、hayedehdocumentary、Quietus（付費牆）。波斯語專文找不到；story／sound 標 thin，寫作時勿斷言製作人，只寫流亡期、人聲特色。"
+  "notes": "舊簡介全是曲長（且把曲名／長度寫成重點）與一句「手足」；不要沿用曲長。「她與 Mahasti 手足、生年差四年」：維基稱 Hayedeh 是姊姊、約早出道五年，生年差未驗證。《Sogand》本張是否由 Nojouki 製作、曲目作曲者、編曲細節皆查不到。查證：WebSearch 2 次（波斯文一次、英文一次，結果零評論）、fa／en 維基（取得）、Iranica（403）、Last.fm、hayedehdocumentary、Quietus（付費牆）。波斯語專文找不到；story／sound 標 thin，寫作時勿斷言製作人，只寫流亡期、人聲特色。｜【主線】補查一次：查不到本盤作曲者與製作；Rohani 與 Hayedeh 的合作是 1985 年另一張，不准套用。薄寫。"
  },
  {
   "key": "hazard|north",
@@ -215,11 +215,26 @@
     "text": "1994 年 6 月樂團為 John Peel 電台節目重錄其中四首；1996 年 Mathew Fletcher 過世，樂團隨後解散，成員後來組成 Marine Research 與 Tender Trap。",
     "src": "https://en.wikipedia.org/wiki/Heavenly_(British_band)",
     "block": "after"
+   },
+   {
+    "text": "【主線補查】1994 年 4 到 6 月在倫敦 Fulham 的 Shaw Sound 錄音，Ian Shaw 製作；同年 6 月其中四首在 John Peel 的電台 session 重錄。",
+    "src": "https://en.wikipedia.org/wiki/The_Decline_and_Fall_of_Heavenly",
+    "block": "story"
+   },
+   {
+    "text": "【主線補查】1994 年 9 月由英國 Sarah Records、美國 K Records 發行，是樂團第三張專輯。",
+    "src": "https://en.wikipedia.org/wiki/The_Decline_and_Fall_of_Heavenly",
+    "block": "what"
+   },
+   {
+    "text": "【主線補查】Entertainment Weekly 描述兩位女聲和聲，唱乾澀諷刺的詞，例如想讓情人離開好一個人醒來；AllMusic 形容是製作乾淨、彈跳的吉他流行歌。",
+    "src": "https://en.wikipedia.org/wiki/The_Decline_and_Fall_of_Heavenly",
+    "block": "sound"
    }
   ],
   "coverage": {
    "what": "ok",
-   "story": "thin",
+   "story": "ok",
    "sound": "ok"
   },
   "notes": "舊簡介是廠牌編號與廣告軼事，Sarah 廠牌第一百號的說法本批未驗證，不要用。Sarah 的編號：維基稱這張目錄號 623（K 版）。不寫曲名順序。查證：WebSearch 1 次、維基（樂團與專輯）、Trouser Press、Pennyblack（403）、AllMusic（403）、Sarah Records 維基。專輯製作的故事（為何選 Ian Shaw）找不到，故事面以樂團處境（P.U.N.K. Girl 之後轉向成人）為主。"
