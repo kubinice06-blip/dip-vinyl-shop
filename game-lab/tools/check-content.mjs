@@ -20,7 +20,12 @@
 //     每張 id 全表唯一、name ≤8、text ≤25、timing hand／duel／hold、op 在 engine APEX_OPS（combo＝2 個以上原語）、params 在範圍內、時機准用、hold 只有 timing hold 才有（而且是准當「留著」的原語）；
 //     禁區字（不會被剋、必中、免疫、無視）；winHeal 整數；notes 每個用到的 op 都有一句（≤25 字）；C.apexTrialOnly＝名單扣 C.aces；
 //     名單裡的新卡（C.apexTrialOnly）可以沒有試聽（主站沒有固定試聽＝「無來源」，烘成 previewUrl ''）。
-//   遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json 跟 cards.js 一致（tools/build-pool-index.mjs 產生；扣三張王牌、每個 cardId 主站卡池找得到）。
+//   卡片 id（第 B 波 SPEC-B §1.1）：每張卡的鍵＝id＝catalogId(藝人, 專輯)；舊 id 對照表（匯出 legacyProblems(C)）：C.legacyIds()＋C.legacyExtra＝tools/legacy-ids.json。
+//   卡池（第 B 波 SPEC-B §1.2–§1.5；匯出 poolProblems(C)）：C.cards＝核心 cards.js＋精選新卡 cards-pool.js 展開（C.poolLoaded、張數＝核心＋n）；
+//     require('cards.js') 仍只有核心、C.cards 不是同一個物件；新卡都 pool: true、有 bin／tune、沒有 tier、不撞核心；
+//     每箱 all（C.deriveAll）⊇ pool、各箱互斥；C.attachMedia 套了 cards-media.json（版本＝C.poolVersion、每張新卡有封面試聽）、冪等；C.lot 欄位齊全。
+//   遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards 非頂點卡的 fnv1a32(catalogId) 排序陣列
+//     （tools/build-pool-index.mjs 產生；0 撞號、每張 catalogId 主站卡池找得到）。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十六區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
@@ -35,7 +40,7 @@ import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
 import { fileURLToPath, pathToFileURL } from 'url';
-import { poolIndexProblems } from './build-pool-index.mjs';
+import { poolIndexProblems, catalogId } from './build-pool-index.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const LAB = path.resolve(HERE, '..');
@@ -342,6 +347,7 @@ export function contentProblems(C, E) {
     const c = CARDS[id];
     ok(c.id === id, id + ': id 不一致');
     for (const k of ['artist', 'album']) ok(typeof c[k] === 'string' && c[k], id + ': 缺 ' + k);
+    ok(id === catalogId(c.artist, c.album), id + ': 卡片 id 要等於主站 catalogId(藝人, 專輯)＝' + catalogId(c.artist, c.album) + '（第 B 波 SPEC-B §1.1；重烘 bake-cards.mjs）');
     for (const k of ATTRS) ok(Number.isInteger(c[k]) && c[k] >= 1 && c[k] <= 7, id + ': 星數 ' + k + '=' + c[k]);
     ok(c.coverUrl || c.localCover, id + ': 沒有封面');
     ok(typeof c.previewUrl === 'string' && (/^https:\/\//.test(c.previewUrl) || (c.previewUrl === '' && APEX_ONLY.has(id))), id + ': 沒有試聽');
@@ -840,17 +846,89 @@ export function apexProblems(C, E) {
 }
 
 // ================================================================================================
+// 舊卡片 id 對照表（第 B 波 SPEC-B §1.1）：content.js C.legacyIds()（執行期從核心卡的藝人／專輯推）＋C.legacyExtra
+//   ＝tools/legacy-ids.json（migrate-ids.mjs 換 id 當下凍結的 368 筆）。不一樣＝某張核心卡改了名，老存檔裡那張遷不過去：
+//   把 { 舊 slug: catalogId } 補進 C.legacyExtra。另驗：舊 slug 都沒有 |、catalogId 都有 |（遷移靠這個分新舊）、每個 catalogId 都在 C.cards。
+export function legacyProblems(C) {
+  const bad = [];
+  let frozen = null;
+  try { frozen = JSON.parse(fs.readFileSync(path.join(HERE, 'legacy-ids.json'), 'utf8')); } catch (e) { return ['tools/legacy-ids.json 讀不到或不是 JSON：' + e.message]; }
+  if (typeof C.legacyIds !== 'function') return ['content.js 沒有 C.legacyIds()'];
+  const live = C.legacyIds();
+  const fk = Object.keys(frozen), lk = Object.keys(live);
+  const miss = fk.filter(k => live[k] !== frozen[k]), extra = lk.filter(k => !(k in frozen));
+  if (miss.length) bad.push('推不出來或對不上 ' + miss.length + ' 筆（核心卡改名了？補進 C.legacyExtra）：' + miss.slice(0, 5).map(k => k + ' → ' + frozen[k] + '（現在 ' + (live[k] || '無') + '）').join('、'));
+  if (extra.length) bad.push('比凍結的多 ' + extra.length + ' 筆（新增核心卡要用 catalogId，不會有舊 slug；或 legacyExtra 寫了凍結表沒有的）：' + extra.slice(0, 5).join('、'));
+  for (const k of fk) {
+    if (k.indexOf('|') >= 0) bad.push('舊 slug 不該有 |：' + k);
+    if (String(frozen[k]).indexOf('|') < 0) bad.push('catalogId 一定有 |：' + frozen[k]);
+    if (!(C.cards || {})[frozen[k]]) bad.push('舊 slug ' + k + ' → ' + frozen[k] + ' 不在 C.cards');
+  }
+  return bad;
+}
+
+// ================================================================================================
+// 卡池（第 B 波 SPEC-B §1.2–§1.5）：核心 368（cards.js）＋精選新卡（cards-pool.js 展開，pool: true）
+export function poolProblems(C) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const CARDS = C.cards || {};
+  const core = require(path.join(LAB, 'cards.js'));
+  let pool = null; try { pool = require(path.join(LAB, 'cards-pool.js')); } catch (e) { return ['cards-pool.js 載不到（node game-lab/tools/bake-cards.mjs --pool-only）：' + e.message]; }
+  ok(core !== CARDS, 'C.cards 要是新物件（不改 cards.js 的匯出）');
+  ok(!Object.values(core).some(c => c && c.pool), 'cards.js（核心）不該有 pool: true 的卡');
+  ok(C.poolLoaded === true, 'C.poolLoaded 要是 true（cards-pool.js 的列數＝n）');
+  ok(C.poolVersion === pool.v, 'C.poolVersion＝cards-pool.js 的 v');
+  const ids = Object.keys(CARDS), pids = ids.filter(id => CARDS[id] && CARDS[id].pool);
+  ok(ids.length === Object.keys(core).length + pool.n && pids.length === pool.n, '張數：C.cards ' + ids.length + '＝核心 ' + Object.keys(core).length + '＋新卡 ' + pool.n + '（pool: true 的 ' + pids.length + '）');
+  for (const id of Object.keys(core)) ok(CARDS[id] && !CARDS[id].pool, '核心卡 ' + id + ' 被新卡蓋掉或不見了');
+  let noMedia = 0;
+  for (const id of pids) {
+    const c = CARDS[id];
+    ok(!c.tier, id + '：新卡不該有 tier');
+    ok(c.bin && C.bins && C.bins[c.bin], id + '：新卡要有 bin（而且是 C.bins 的一區）：' + c.bin);
+    ok(c.tune, id + '：新卡要有 tune');
+    if (!c.coverUrl || !/^https:\/\//.test(c.previewUrl || '')) noMedia++;
+  }
+  ok(!noMedia, noMedia + ' 張新卡沒有封面或試聽（cards-media.json 沒套上：版本不合或檔案壞了；重烘 --pool-only）');
+  // 每箱 all（C.deriveAll）⊇ pool、互斥；合計＝有 bin 的卡
+  const seen = new Map(); let sum = 0;
+  for (const [k, b] of Object.entries(C.bins || {})) {
+    if (!ok(Array.isArray(b.all), 'bins.' + k + '.all 要是陣列（C.deriveAll）')) continue;
+    const all = new Set(b.all); sum += b.all.length;
+    for (const id of b.pool || []) ok(all.has(id), 'bins.' + k + '：策展池 ' + id + ' 不在 all（核心卡的 bin 跟 bins.js 對不上；重烘 cards.js）');
+    for (const id of b.all) { if (seen.has(id)) bad.push('bins.' + k + ' 與 bins.' + seen.get(id) + ' 的 all 重複：' + id); else seen.set(id, k); ok(CARDS[id] && CARDS[id].bin === k, 'bins.' + k + '.all 的 ' + id + ' 的 bin 不是 ' + k); }
+  }
+  ok(sum === ids.filter(id => CARDS[id].bin).length, '各箱 all 合計 ' + sum + '＝有 bin 的卡');
+  // 媒體套用冪等、版本不合不套
+  if (typeof C.attachMedia === 'function') {
+    let media = null; try { media = JSON.parse(fs.readFileSync(path.join(LAB, 'cards-media.json'), 'utf8')); } catch (e) { bad.push('cards-media.json 讀不到：' + e.message); }
+    if (media) {
+      ok(media.v === pool.v, 'cards-media.json 的 v（' + media.v + '）＝cards-pool.js 的 v（' + pool.v + '）');
+      const before = JSON.stringify(pids.map(id => [CARDS[id].coverUrl, CARDS[id].previewUrl]));
+      ok(C.attachMedia(media) === pool.n, 'C.attachMedia(cards-media.json) 要回 ' + pool.n);
+      ok(JSON.stringify(pids.map(id => [CARDS[id].coverUrl, CARDS[id].previewUrl])) === before, 'C.attachMedia 要冪等（套兩次一樣）');
+      ok(C.attachMedia(Object.assign({}, media, { v: 'x' + media.v })) === 0, 'C.attachMedia 版本不合要回 0、不套');
+    }
+  } else bad.push('content.js 沒有 C.attachMedia');
+  const L = C.lot || {};
+  for (const k of ['size', 'floor', 'feature', 'show', 'featureShow', 'wantMax']) ok(Number.isInteger(L[k]) && L[k] > 0, 'C.lot.' + k + ' 要是正整數');
+  ok(typeof L.on === 'boolean' && typeof L.firstCurated === 'boolean' && L.wantP > 0 && L.wantP < 1, 'C.lot.on／firstCurated（布林）、wantP（0–1）');
+  return bad;
+}
+
+// ================================================================================================
 const isMain = process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
 if (isMain) {
   const C = require(path.join(LAB, 'content.js'));
   const E = require(path.join(LAB, 'engine.js'));
-  // 遊戲卡池索引（v5 第六項第一期）：game-lab/pool-index.json＝cards.js 算出來的 { 主站 cardId: 遊戲卡 id }（扣王牌）；漂掉主站「帶去店裡對決」會帶錯張
-  const bad = contentProblems(C, E).concat(poolIndexProblems().map(x => '遊戲卡池索引：' + x));
+  // 遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards（明傳；cards.js 只有核心）非頂點卡的雜湊；漂掉主站「帶去店裡對決」會漏出或多出鈕
+  const bad = contentProblems(C, E).concat(poolProblems(C).map(x => '卡池：' + x), poolIndexProblems(C.cards).map(x => '遊戲卡池索引：' + x), legacyProblems(C).map(x => '舊 id 對照表：' + x));
   for (const x of tuneWarnings(C)) console.log('  注意（頻率走鐘，只警告）：' + x);
   if (bad.length) { console.log('content 自檢沒過（' + bad.length + '）：'); bad.forEach(b => console.log('  ✗ ' + b)); process.exitCode = 1; }
   else {
     const decks = Object.values(C.enemies).map(e => e.id + ' ' + e.deck.length + '／' + e.hp + '／' + E.deckMain(e.deck.map(id => C.cards[id]), e.taste)).join('、');
     if (!(C.bins && C.bins.feature)) console.log('（bins.js 還是舊形狀、沒有 feature 區：契約檢查 binsProblems 等 Y 的 bins.js 進來才跑；engine.test 用 fixture 驗）');
-    console.log('content 自檢通過：卡 ' + Object.keys(C.cards).length + ' 張；客人 10 位（唱片／聲望／主屬性 ' + decks + '）；發燒配件 ' + Object.keys(C.relics).length + ' 件；箱子 ' + Object.keys(C.bins).length + ' 區。');
+    console.log('content 自檢通過：卡 ' + Object.keys(C.cards).length + ' 張（核心 ' + Object.values(C.cards).filter(c => !c.pool).length + '＋精選新卡 ' + Object.values(C.cards).filter(c => c.pool).length + '）；客人 10 位（唱片／聲望／主屬性 ' + decks + '）；發燒配件 ' + Object.keys(C.relics).length + ' 件；箱子 ' + Object.keys(C.bins).length + ' 區。');
   }
 }

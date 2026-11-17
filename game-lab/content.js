@@ -1,7 +1,9 @@
 /* content.js：品味對決 v4 的純資料（SPEC-v4 §2.2、§4；第一波 A1）。
  *
- * 瀏覽器：讀 window.DipLabCards（cards.js 先載入）與 window.DipLabBins（bins.js，可沒有），輸出 window.DipLabContent。
- * Node：require('./cards.js')、try require('./bins.js')，module.exports = 同一份物件。
+ * 瀏覽器：讀 window.DipLabCards（cards.js 先載入）、window.DipLabPool（cards-pool.js，可沒有）與 window.DipLabBins（bins.js，可沒有），輸出 window.DipLabContent，
+ *   並把 window.DipLabCards 換成展開後的整池（C.cards；cardinfo.js、stage.js 呼叫當下才讀它）。
+ * Node：require('./cards.js')、try require('./cards-pool.js')、try require('./bins.js')，module.exports = 同一份物件；展開後再 try 套 ./cards-media.json（封面、試聽）。
+ *   require('./cards.js') 永遠只有核心 368 張（C.cards 是另一個新物件）；要整池一律讀 require('./content.js').cards。
  * 只有資料，沒有邏輯；engine.js 只讀不改。
  *
  * v4：三相剋＋門檻 N=2（被剋方高 2 星以上剋不動，改比星）、對手暗選（提示＋誠實度，會唬人）、王牌 7 星（一場一次；沒有「不會被剋」，FIXLIST 2）、
@@ -25,14 +27,112 @@
   var node = typeof module === 'object' && module.exports;
   var cards = node ? require('./cards.js') : root.DipLabCards;
   var bins = node ? (function () { try { return require('./bins.js'); } catch (_) { return {}; } })() : root.DipLabBins;
-  var content = factory(cards || {}, bins || {});
-  if (node) module.exports = content;
-  else root.DipLabContent = content;
-})(typeof self !== 'undefined' ? self : this, function (CARDS, BINS) {
+  // 精選新卡（第 B 波 SPEC-B §1.3；cards-pool.js，bake-cards.mjs --pool-only 產生）：沒有＝只有核心 368 張（dev harness 不載；正式頁沒載到 C.poolLoaded false → ui.js 整份唯讀）
+  var pool = node ? (function () { try { return require('./cards-pool.js'); } catch (_) { return null; } })() : (root.DipLabPool || null);
+  var content = factory(cards || {}, bins || {}, pool);
+  if (node) {
+    // Node（sim、tests、tools）：封面／試聽也套上（瀏覽器由 ui.js 在標題畫好後 fetch cards-media.json 再套）
+    try { content.attachMedia(require('./cards-media.json')); } catch (_) {}
+    module.exports = content;
+  } else {
+    root.DipLabContent = content;
+    root.DipLabCards = content.cards;     // 整池（新物件）；cards.js 的匯出物件不動
+  }
+})(typeof self !== 'undefined' ? self : this, function (CARDS, BINS, POOL) {
   'use strict';
   var C = {};
   C.version = 'lab-4';
-  C.cards = CARDS;
+  // 卡池（第 B 波 SPEC-B §1.2／§1.3）：核心 368 張（cards.js）＋精選新卡（cards-pool.js 展開，pool: true）。C.cards 是新物件（不改 cards.js 的匯出）。
+  C.cards = Object.assign({}, CARDS);
+  // 卡片 id（第 B 波 SPEC-B §1.1）：一律是主站 catalogId＝(藝人+'|'+專輯).toLowerCase()、斜線換連字號（＝主站 index.html cardIdOf、bake-cards.mjs catalogId、
+  //   dip-tune.js idOf、主站唱片櫃 Firestore 文件 id）。含 | 與空白，可能有 ' " & + % 等字元：進網址要 encodeURIComponent、進 CSS 選擇器要 CSS.escape。
+  C.catalogId = function (a, b) { return ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim(); };
+  // 舊卡片 id（第 B 波之前的 bake slug；舊存檔、舊 ?card= 連結會帶）：藝人-專輯 去重音、小寫、非英數中日文換 -、去頭尾 -、截 60 字（照抄 bake-cards.mjs oldSlug）。
+  //   舊 slug 一定沒有 |、catalogId 一定有 | → 一眼分得出新舊，遷移可重入。
+  C.oldSlug = function (a, b) {
+    return (a + '-' + b).normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC').toLowerCase()
+      .replace(/[^a-z0-9㐀-鿿぀-ヿ]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+  };
+  // 舊 id 對照表 { 舊 slug: catalogId }：執行期從核心卡（!c.pool；王牌、頂點試做都算）的藝人／專輯推（不帶檔、0 byte），第一次呼叫才算、之後快取。
+  //   核心卡日後改名、推不出原本的舊 slug 時，把 { 舊 slug: catalogId } 手寫補在 legacyExtra。
+  //   tools/legacy-ids.json 是 B 波換 id 當下凍結的一份（368 筆）：check-content 比對「推出來的＋legacyExtra」＝它，一筆不同就失敗（防改名讓老存檔遷不過去）。
+  C.legacyExtra = {};
+  var legacyMap = null;
+  C.legacyIds = function () {
+    if (legacyMap) return legacyMap;
+    var m = {};
+    Object.keys(C.cards).forEach(function (id) {
+      var c = C.cards[id];
+      if (c && !c.pool) m[C.oldSlug(c.artist, c.album)] = C.catalogId(c.artist, c.album);
+    });
+    for (var k in C.legacyExtra) if (Object.prototype.hasOwnProperty.call(C.legacyExtra, k)) m[k] = C.legacyExtra[k];
+    legacyMap = m;
+    return m;
+  };
+  // 精選新卡展開（SPEC-B §1.3）：cards-pool.js（照欄存：art 藝人索引差、alb、year、c、o、h、bin、tune、gen、reg；bake-cards.mjs 檔頭）→ C.cards 每張
+  //   { id, artist, album, year, genres, region, c, o, h, tier: null, coverUrl: null, localCover: null, previewUrl: '', tags, pitch: null, tune, bin, pool: true }
+  //   tags 照 bake 公式（g:曲風、y:<1980／y:>=2000、r:地區）。pool: true＝不是核心卡（shop.js 填空封面池、check 用；engine 不讀）。
+  //   撞到核心的鍵 → throw（bake 的 POOL-DUP-CORE 已擋，雙保險）。再叫一次（R3 備案 boot 晚展開、重試）不會重複：已展開的新卡照原物件留著。
+  //   回展開張數；設 C.poolVersion（內容雜湊）、C.poolLoaded（列數＝n）。之後要叫 C.deriveAll(C)（箱子的 all），content.js 載入時自己叫過一次。
+  C.poolVersion = null;
+  C.poolLoaded = false;
+  C.mediaReady = false;
+  var poolOrder = [];        // cards-pool.js 的順序 → 卡 id（cards-media.json 同順序）
+  var POOL_COLS = ['art', 'alb', 'year', 'c', 'o', 'h', 'bin', 'tune', 'gen', 'reg'];
+  C.expandPool = function (pool) {
+    if (!pool || !(pool.n > 0) || !POOL_COLS.every(function (k) { return Array.isArray(pool[k]) && pool[k].length === pool.n; })) return 0;
+    var A = pool.A || [], K = pool.K || [], T = pool.T || [], G = pool.G || [], R = pool.R || [];
+    var order = [], n = 0, ai = 0;
+    for (var i = 0; i < pool.n; i++) {
+      ai += pool.art[i];
+      var artist = A[ai], album = pool.alb[i], id = C.catalogId(artist, album);
+      var old = C.cards[id];
+      if (old && !old.pool) throw new Error('cards-pool.js：' + id + ' 撞到核心卡（重烘 bake-cards.mjs --pool-only）');
+      order.push(id);
+      if (old) continue;
+      var genres = (pool.gen[i] || []).map(function (k) { return G[k]; }), year = pool.year[i], region = R[pool.reg[i]] || 'xx';
+      var tags = genres.map(function (g) { return 'g:' + g; })
+        .concat(year < 1980 ? ['y:<1980'] : year >= 2000 ? ['y:>=2000'] : [])
+        .concat(region !== 'xx' ? ['r:' + region] : []);
+      C.cards[id] = { id: id, artist: artist, album: album, year: year, genres: genres, region: region, c: pool.c[i], o: pool.o[i], h: pool.h[i], tier: null,
+        coverUrl: null, localCover: null, previewUrl: '', tags: tags, pitch: null, tune: T[pool.tune[i]] || null, bin: K[pool.bin[i]], pool: true };
+      n++;
+    }
+    poolOrder = order;
+    C.poolVersion = pool.v || null;
+    C.poolLoaded = true;      // 每一欄都在、長度都＝n（上面驗過；沒過回 0、poolLoaded 留 false）
+    return n;
+  };
+  // 封面／試聽（SPEC-B §1.3；cards-media.json { v, rows:[[封面碼, 試聽碼]] }，順序同 cards-pool.js）：解碼照 bake-cards.mjs coverOf／previewOf。
+  //   版本不合（m.v ≠ C.poolVersion：快取到舊檔）或列數不合 → 不套、回 0；否則原地寫進同一張卡物件（不換物件），回套用張數、設 C.mediaReady。
+  //   冪等：同一份套兩次結果一樣（重試、兩個請求先後到都不會錯）。
+  var CAA = 'https://coverartarchive.org/', PREVIEW_BASE = 'https://audio-ssl.itunes.apple.com/itunes-assets/';
+  function coverOf(k) {
+    k = String(k || ''); var t = k.charAt(0), r = k.slice(1), i;
+    if (t === 'c') return CAA + 'release/' + r + '/front-250';
+    if (t === 'g') return CAA + 'release-group/' + r + '/front-250';
+    if (t === 'C') { i = r.indexOf('/'); return CAA + 'release/' + r.slice(0, i) + '/' + r.slice(i + 1) + '-250.jpg'; }
+    if (t === 'a') return 'https://is' + r.charAt(0) + '-ssl.mzstatic.com/image/thumb/' + r.slice(1) + '/300x300bb.jpg';
+    if (t === 's') return 'https://i.scdn.co/image/ab67616d00001e02' + r;
+    if (t === 'u') return r;
+    return '';
+  }
+  function previewOf(k) { return !k ? '' : /^https:\/\//.test(k) ? k : PREVIEW_BASE + k; }
+  C.attachMedia = function (m) {
+    if (!m || !C.poolVersion || m.v !== C.poolVersion || !Array.isArray(m.rows) || m.rows.length !== poolOrder.length) return 0;
+    var n = 0;
+    for (var i = 0; i < m.rows.length; i++) {
+      var c = C.cards[poolOrder[i]], row = m.rows[i] || [];
+      if (!c || !c.pool) continue;
+      c.coverUrl = coverOf(row[0]) || null;
+      c.previewUrl = previewOf(row[1]);
+      n++;
+    }
+    C.mediaReady = true;
+    return n;
+  };
+  if (POOL) C.expandPool(POOL);
+
   function L(text, tag) { return { _t: text, _g: tag }; }
   function pick(raw, which) {
     if (raw && typeof raw === 'object' && '_t' in raw) return which === 't' ? raw._t : raw._g;
@@ -43,16 +143,16 @@
   // ===================================================================
   // 王牌、老闆送的四張（§4.2）、特價箱（§4.3）。每一趟包包開局＝老闆四張（第二趟起種子佔掉幾格）；特價箱挑三張後 7 張；包包不限張數（店主 11-16；engine CFG.bagMax＝Infinity），一趟結束才重置
   // ===================================================================
-  C.aces = { hall: 'radiohead-ok-computer', pearl: 'barney-wilen-zodiac', heresy: 'swans-filth' };
+  C.aces = { hall: "radiohead|ok computer", pearl: "barney wilen|zodiac", heresy: "swans|filth" };
   C.aceTitle = { hall: '殿堂', pearl: '流亡', heresy: '異端' };          // 王牌名（附錄 D）
   C.aceGloss = { hall: '大家都聽過的名盤', pearl: '沒幾個人聽過', heresy: '難入耳，越前衛越高' };   // 三軸 7 星的白話（挑王牌那行括號、唱盤前三張的小字；店主 11-12）
   C.aceGlossTag = '新';
   C.aceAxis = { hall: 'c', pearl: 'o', heresy: 'h' };                    // 7 星那軸（王牌只能丟這一軸）
   C.gifts = {
     // 店主 11-13：經典那組要有名一點（原本除了 Bowie 都偏冷門）→ Daft Punk、Miles Davis 第一代經典五重奏《Cookin'》、Brian Eno；Bowie 留著
-    hall:   ['david-bowie-low', 'daft-punk-random-access-memories', 'miles-davis-cookin-with-the-miles-davis-quintet', 'brian-eno-ambient-1-music-for-airports'],
-    pearl:  ['charles-brackeen-rhythm-x', 'bark-psychosis-hex', '黃小楨-賞味期限', '傷心欲絕-我愛您'],
-    heresy: ['the-velvet-underground-white-light-white-heat', 'melt-banana-speak-squeak-creak', 'pharoah-sanders-tauhid', 'magma-mekanik-destruktiw-kommandoh']
+    hall:   ["david bowie|low", "daft punk|random access memories", "miles davis|cookin' with the miles davis quintet", "brian eno|ambient 1: music for airports"],
+    pearl:  ["charles brackeen|rhythm x", "bark psychosis|hex", "黃小楨|賞味期限", "傷心欲絕|我愛您"],
+    heresy: ["the velvet underground|white light-white heat", "melt-banana|speak squeak creak", "pharoah sanders|tauhid", "magma|mëkanïk dëstruktïw kömmandöh"]
   };
   // 特價箱（店主 11-16：「三張特價，星星最高三，加起來不高於五」）：12 張，每張最高星 ≤3、三軸加起來 ≤5（check-content 驗）。
   //   「色」＝engine.bargainLane：峰值那軸，並列時取後面那軸（硬→冷→經）。全卡池符合的 402 張照 topAttr 分只有冷 1、硬 3（經 398），
@@ -61,11 +161,11 @@
   //   retired＝換下來的舊特價箱（v4 那 9 張扣掉留下的 2 張）：舊存檔的包包、這一輪的特價箱可能還有 → 照特價算價（priceOf／賣回半價）、不上架、收音機不抽
   C.bargain = {
     label: '特價',
-    pool: ['oasis-dig-out-your-soul', 'lady-gaga-artpop', 'arcade-fire-everything-now', 'the-strokes-angles',
-      'queensryche-take-cover', 'david-bowie-never-let-me-down', 'megadeth-risk', 'kiss-hot-in-the-shade',
-      'limp-bizkit-gold-cobra', 'eminem-revival', 'daft-punk-human-after-all', 'the-weeknd-kiss-land'],
-    retired: ['blur-the-great-escape', 'the-velvet-underground-squeeze', 'stevie-wonder-eivets-rednow', 'the-kinks-preservation-act-1',
-      'metallica-reload', 'weezer-van-weezer', 'ramones-halfway-to-sanity']
+    pool: ["oasis|dig out your soul", "lady gaga|artpop", "arcade fire|everything now", "the strokes|angles",
+      "queensrÿche|take cover", "david bowie|never let me down", "megadeth|risk", "kiss|hot in the shade",
+      "limp bizkit|gold cobra", "eminem|revival", "daft punk|human after all", "the weeknd|kiss land"],
+    retired: ["blur|the great escape", "the velvet underground|squeeze", "stevie wonder|eivets rednow", "the kinks|preservation act 1",
+      "metallica|reload", "weezer|van weezer", "ramones|halfway to sanity"]
   };
   C.bargainTag = '新';
 
@@ -169,7 +269,8 @@
   C.rarityTag = '店主';
   // 店裡的箱子（bins.js，由 tools/bake-cards.mjs 產生；沒有 bins.js 時是空的）。
   //   X／Y 契約：每個 key { key, label, zh, pool, front }：jazz tw rock elec soul hiphop citypop classical world folk indierock indiepop blues new feature picks（v5 店面改版：pop → citypop、加 indierock／indiepop）
-  //   引擎照 pool 上這一輪的貨（engine restock，每輪開頭補貨）；front＝畫在道具上的封面（Y）；名牌英文 label、點了看 zh
+  //   一檔貨（第 B 波 SPEC-B §3）：每輪（打完藏家）抽一檔，第 1 檔從 pool（策展池，bins.js）、第 2 檔起從 all（全卡池：每張卡的 bin＝k，
+  //   核心卡的 bin 來自 bake、精選新卡來自 cards-pool.js；C.deriveAll 推）；每位客人從這一檔輪流上架。front＝畫在道具上的封面（Y，固定門面、不跟貨走）；名牌英文 label、點了看 zh
   C.bins = {};
   (function () {
     var B = (BINS && BINS.shops && BINS.shops.dip) || (BINS && BINS.bins) || {};
@@ -180,11 +281,25 @@
       C.bins[k] = o;
     });
   })();
+  // 每箱的全卡池 all（SPEC-B §1.5【定稿 E1】）：content.bins 每箱 all＝content.cards 裡 bin＝k 的卡 id（排序）。
+  //   content.js 載入時叫一次；sim --data 換掉 C.cards／C.bins 之後、engine.test 的假箱子也要叫（假卡沒有 bin → all 空 → engine 退回 pool）。
+  C.deriveAll = function (content) {
+    content = content || C;
+    var by = {}, cs = content.cards || {}, bs = content.bins || {};
+    Object.keys(cs).forEach(function (id) { var b = cs[id] && cs[id].bin; if (b) (by[b] = by[b] || []).push(id); });
+    Object.keys(bs).forEach(function (k) { if (bs[k] && typeof bs[k] === 'object') bs[k].all = (by[k] || []).slice().sort(); });
+    return content;
+  };
+  C.deriveAll(C);
+  // 一檔貨的數字（SPEC-B §3.2；engine 有同名預設 LOT，沒給時用）：一檔 size 張＝每箱底 floor＋照全卡池各箱張數比例（最大餘數法）、FEATURE feature 張；
+  //   每位客人架上每箱 show 張（FEATURE featureShow）；firstCurated＝第 1 檔從策展池；想要清單每張每檔擲 wantP、一檔最多 wantMax 張（§5）。
+  //   on: false＝回到每輪補貨（economy.stock／featureStock、從 pool 抽；sim 對照與緊急關閉用）
+  C.lot = { on: true, size: 100, floor: 5, feature: 6, show: 3, featureShow: 2, firstCurated: true, wantP: 0.35, wantMax: 3 };
 
   // ===================================================================
   // 無限試煉（店主 11-12 拍板；SPEC 無限試煉 §0，engine.js trialCfg 讀這份，沒寫的欄位用 engine TRIAL 預設）
   //   序章打完＝第 1 位；一輪 5 位：一般 3、第 4 位菁英、第 5 位傳說藏家；打完藏家接下一輪新面孔；打到輸為止。
-  //   你 12 聲望、帶到下一場、打贏回 3（不超過上限）；客人 12、藏家 14。老闆說情每輪 1 次；商店每輪補貨一次。
+  //   你 12 聲望、帶到下一場、打贏回 3（不超過上限）；客人 12、藏家 14。老闆說情每輪 1 次；架上唱片每位客人換一批（一檔貨，C.lot）、配件與特價箱每輪補一次。
   //   局內升級：贏一般 +2 經驗、菁英 +3、藏家 +4；升下一級要「目前等級＋3」；每升一級聲望上限 +1（現有聲望也 +1），再三選一（picks）。
   //   中繼點：打贏第 10、20、30、50、75、100 位，之後每 50 位（票之後再做）。
   //   curve＝難度曲線 V3（../curve/curves.cjs；照店主舊版 roguelike enemyForDepth 的形狀，第 6 位之後客人品味每 5 位 +1）＋11-16 前期加難（只動第 1–4 位）。改難度只改這裡；
@@ -318,76 +433,76 @@
       id: 'man', name: '男子', spr: 'e0', avatar: null,
       honesty: 'honest', hp: 10, taste: 'coh', tune: 'boil',
       // 店主 11-13：掉落的必須是他牌組裡的專輯 → 改成掉 Eminem《The Eminem Show》（原本就在他牌組；Fishmans 不再出現），讓他某一手打出來，打完掉在地上
-      deck: ['coldplay-mylo-xyloto', 'imagine-dragons-night-visions', 'limp-bizkit-results-may-vary', '老王樂隊-暮夜徐行',
-        'eminem-the-eminem-show', 'katy-perry-prism'],
-      drop: 'eminem-the-eminem-show', sig: { id: 'eminem-the-eminem-show', n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
+      deck: ["coldplay|mylo xyloto", "imagine dragons|night visions", "limp bizkit|results may vary", "老王樂隊|暮夜徐行",
+        "eminem|the eminem show", "katy perry|prism"],
+      drop: "eminem|the eminem show", sig: { id: "eminem|the eminem show", n: 2 },   // sig：直接開打那條路第 2 手一定出這張（教學那條路照 TUT_PLAYS 第 5 手）
       prologue: true, voice: { freq: 659, wave: 'square' }
     },
     copycat: {
       id: 'copycat', name: '文青同好', spr: 'e1', avatar: null,
       honesty: 'sometimes', hp: 25, taste: 'och', tune: 'languid',
-      deck: ['beach-house-teen-dream', 'weyes-blood-titanic-rising', 'mitski-be-the-cowboy', 'billie-eilish-when-we-all-fall-asleep-where-do-we-go',
-        'low-double-negative', 'sophie-oil-of-every-pearl-s-un-insides', '大象體操-elephant-gym-角度'],
+      deck: ["beach house|teen dream", "weyes blood|titanic rising", "mitski|be the cowboy", "billie eilish|when we all fall asleep, where do we go?",
+        "low|double negative", "sophie|oil of every pearl's un-insides", "大象體操 elephant gym|角度"],
       voice: { freq: 523, wave: 'square' }
     },
     already: {
       id: 'already', name: '社團學長', spr: 'e2', avatar: null,
       honesty: 'sometimes', hp: 20, taste: 'hco', tune: 'crisp',
-      deck: ['don-slepian-sea-of-bliss', 'harold-budd-abandoned-cities', 'demetrio-stratos-metrodora',
-        'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des', 'nocturnal-emissions-fruiting-body', 'eivind-aarset-electronique-noire',
-        'yezda-urfa-boris'],
+      deck: ["don slepian|sea of bliss", "harold budd|abandoned cities", "demetrio stratos|metrodora",
+        "étron fou leloublan|les trois fou's perdégagnent (au pays des...)", "nocturnal emissions|fruiting body", "eivind aarset|électronique noire",
+        "yezda urfa|boris"],
       voice: { freq: 440, wave: 'square' }
     },
     needle: {
       id: 'needle', name: '音響發燒友', spr: 'e6', avatar: null,
       honesty: 'sometimes', hp: 25, taste: 'coh', tune: 'crisp',
-      deck: ['steely-dan-gaucho', 'art-pepper-art-pepper-meets-the-rhythm-section', 'bill-evans-waltz-for-debby', 'kenny-burrell-midnight-blue',
-        'roscoe-mitchell-sextet-sound', 'john-zorn-cobra', 'andrew-cyrille-what-about'],
+      deck: ["steely dan|gaucho", "art pepper|art pepper meets the rhythm section", "bill evans|waltz for debby", "kenny burrell|midnight blue",
+        "roscoe mitchell sextet|sound", "john zorn|cobra", "andrew cyrille|what about?"],
       voice: { freq: 587, wave: 'triangle' }
     },
     skip: {
       id: 'skip', name: '二手店老闆', spr: 'e4', avatar: null,
       honesty: 'sometimes', hp: 20, taste: 'coh', tune: 'calm',
-      deck: ['roberto-goyeneche-cantor-de-mi-barrio', 'amalia-rodrigues-gostava-de-ser-quem-era', 'king-sunny-ade-aura',
-        'washington-phillips-the-key-to-the-kingdom', 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri',
-        'tony-scott-the-indonesian-all-stars-djanger-bali', 'barney-wilen-moshi'],
+      deck: ["roberto goyeneche|cantor de mi barrio", "amália rodrigues|gostava de ser quem era", "king sunny adé|aura",
+        "washington phillips|the key to the kingdom", "otha turner & the rising star fife & drum band|everybody hollerin' goat",
+        "tony scott & the indonesian all stars|djanger bali", "barney wilen|moshi"],
       voice: { freq: 330, wave: 'square', jitter: 20 }
     },
     broke: {
       id: 'broke', name: '地下樂團吉他手', spr: null,
       avatar: { head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' },
       honesty: 'sometimes', hp: 25, taste: 'och', tune: 'charge',
-      deck: ['血肉果汁機-flesh-juicer-golden太子bro', '血肉果汁機-flesh-juicer-深海童話', '閃靈-失竊千年',
-        '血肉果汁機-flesh-juicer-血肉宮建宮蓋廟演唱會', '閃靈-永劫輪迴', '閃靈-醒靈寺大決戰', '林強-驚蟄'],
+      deck: ["血肉果汁機 flesh juicer|golden太子bro", "血肉果汁機 flesh juicer|深海童話", "閃靈|失竊千年",
+        "血肉果汁機 flesh juicer|血肉宮建宮蓋廟演唱會", "閃靈|永劫輪迴", "閃靈|醒靈寺大決戰", "林強|驚蟄"],
       voice: { freq: 494, wave: 'square' }
     },
     buyer: {
       id: 'buyer', name: '前衛樂迷', spr: null,
       avatar: { head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' },
       honesty: 'sometimes', hp: 25, taste: 'coh', tune: 'decay',
-      deck: ['swans-soundtracks-for-the-blind', 'venetian-snares-making-orange-things', 'nurse-with-wound-homotopy-to-marie',
-        'ryoji-ikeda-mort-aux-vaches', 'sunn-o-white1', 'sigur-ros-von', 'william-basinski-the-disintegration-loops'],
+      deck: ["swans|soundtracks for the blind", "venetian snares|making orange things", "nurse with wound|homotopy to marie",
+        "ryoji ikeda|mort aux vaches", "sunn o)))|white1", "sigur rós|von", "william basinski|the disintegration loops"],
       voice: { freq: 554, wave: 'square' }
     },
     label: {
       id: 'label', name: '地下廠牌主理人', spr: 'e5', avatar: null,
       honesty: 'often', hp: 25, taste: 'ohc', tune: 'boil',
-      deck: ['廢五金-廢五金', '明田川荘之-yamazaki-blues', '菊地雅章-end-for-the-beginning', 'keiji-haino-watashi-dake',
-        'harry-roesli-gang-philosophy-gang', 'c-o-b-moyshe-mcstiff-and-the-tartan-lancers-of-the-sacred-he', 'pholas-dactylus-concerto-delle-menti'],
+      deck: ["廢五金|廢五金", "明田川荘之|yamazaki blues", "菊地雅章|end for the beginning", "keiji haino|watashi dake?",
+        "harry roesli gang|philosophy gang", "c.o.b.|moyshe mcstiff and the tartan lancers of the sacred heart", "pholas dactylus|concerto delle menti"],
       elite: true, voice: { freq: 294, wave: 'sine' }
     },
     critic: {
       id: 'critic', name: '資深樂評', spr: 'e3', avatar: null,
       honesty: 'often', hp: 26, taste: 'ohc', tune: 'charge',
-      deck: ['tim-buckley-starsailor', 'throbbing-gristle-20-jazz-funk-greats', 'black-midi-schlagenheim', 'faust-faust-iv',
-        'neu-neu', 'sun-ra-space-is-the-place', 'the-plastic-people-of-the-universe-egon-bondy-s-happy-hearts'],
+      deck: ["tim buckley|starsailor", "throbbing gristle|20 jazz funk greats", "black midi|schlagenheim", "faust|faust iv",
+        "neu!|neu!", "sun ra|space is the place", "the plastic people of the universe|egon bondy's happy hearts club banned"],
       elite: true, voice: { freq: 392, wave: 'square' }
     },
     boss: {
       id: 'boss', name: '傳說藏家', spr: 'boss', avatar: null,
       honesty: 'veteran', hp: 28, taste: 'coh', tune: 'lift',
-      deck: ['交工樂隊-我等就來唱山歌', 'ganelin-trio-ancora-da-capo', 'luis-russell-the-luis-russell-story-1929-1934',
-        'raw-material-time-is', 'alexander-von-schlippenbach-globe-unity', '裸のラリーズ-the-oz-tapes'],
+      deck: ["交工樂隊|我等就來唱山歌", "ganelin trio|ancora da capo", "luis russell|the luis russell story 1929-1934",
+        "raw material|time is...", "alexander von schlippenbach|globe unity", "裸のラリーズ|the oz tapes"],
       boss: true, voice: { freq: 147, wave: 'sine' }
     }
   };
@@ -753,27 +868,27 @@
   //   expect：每手結果（第 5 手 toP＝5−那張的冷門星，只寫 kind 與 blocked）。前四手他扣 16／14／16 < 18 ≤ 加上第 6 手
   // ===================================================================
   var TUT_PLAYS = [
-    { id: 'coldplay-mylo-xyloto', attr: 'c' }, { id: 'imagine-dragons-night-visions', attr: 'c' }, { id: 'limp-bizkit-results-may-vary', attr: 'h' },
-    { id: '老王樂隊-暮夜徐行', attr: 'o' }, { id: 'eminem-the-eminem-show', attr: 'c' }, { id: 'katy-perry-prism', attr: 'c' }
+    { id: "coldplay|mylo xyloto", attr: 'c' }, { id: "imagine dragons|night visions", attr: 'c' }, { id: "limp bizkit|results may vary", attr: 'h' },
+    { id: "老王樂隊|暮夜徐行", attr: 'o' }, { id: "eminem|the eminem show", attr: 'c' }, { id: "katy perry|prism", attr: 'c' }
   ];
   var TUT_HINTS = ['c5', 'c2', 'h2', 'o2', 'c4', 'c2'];
   var TUT_HANDS = {
     hall: {
       // 店主 11-13 換成有名的：第 1 手 Random Access Memories 經典 5（比星數 −3）、第 2 手 Cookin' 冷門 2（冷剋經 −2）、第 3 手 Low 經典 5（經剋硬 −5）、
       //   第 4 手 Music for Airports 硬蕊 3（硬剋冷 −3；他的冷門 4 沒高 2 星，剋得動）；前四手 13、第 6 手王牌 −5，剛好 18 KO
-      hand: ['daft-punk-random-access-memories', 'miles-davis-cookin-with-the-miles-davis-quintet', 'david-bowie-low', 'brian-eno-ambient-1-music-for-airports'], draw: [],
-      pick: [{ id: 'daft-punk-random-access-memories', attr: 'c' }, { id: 'miles-davis-cookin-with-the-miles-davis-quintet', attr: 'o' }, { id: 'david-bowie-low', attr: 'c' },
-        { id: 'brian-eno-ambient-1-music-for-airports', attr: 'h' }, 'blocked:o', 'ace']
+      hand: ["daft punk|random access memories", "miles davis|cookin' with the miles davis quintet", "david bowie|low", "brian eno|ambient 1: music for airports"], draw: [],
+      pick: [{ id: "daft punk|random access memories", attr: 'c' }, { id: "miles davis|cookin' with the miles davis quintet", attr: 'o' }, { id: "david bowie|low", attr: 'c' },
+        { id: "brian eno|ambient 1: music for airports", attr: 'h' }, 'blocked:o', 'ace']
     },
     pearl: {
-      hand: ['bark-psychosis-hex', '黃小楨-賞味期限', 'charles-brackeen-rhythm-x', '傷心欲絕-我愛您'], draw: [],
-      pick: [{ id: 'bark-psychosis-hex', attr: 'c' }, { id: '黃小楨-賞味期限', attr: 'o' }, { id: 'charles-brackeen-rhythm-x', attr: 'c' },
-        { id: '傷心欲絕-我愛您', attr: 'h' }, 'blocked:o', 'ace']
+      hand: ["bark psychosis|hex", "黃小楨|賞味期限", "charles brackeen|rhythm x", "傷心欲絕|我愛您"], draw: [],
+      pick: [{ id: "bark psychosis|hex", attr: 'c' }, { id: "黃小楨|賞味期限", attr: 'o' }, { id: "charles brackeen|rhythm x", attr: 'c' },
+        { id: "傷心欲絕|我愛您", attr: 'h' }, 'blocked:o', 'ace']
     },
     heresy: {
-      hand: ['the-velvet-underground-white-light-white-heat', 'magma-mekanik-destruktiw-kommandoh', 'pharoah-sanders-tauhid', 'melt-banana-speak-squeak-creak'], draw: [],
-      pick: [{ id: 'the-velvet-underground-white-light-white-heat', attr: 'c' }, { id: 'magma-mekanik-destruktiw-kommandoh', attr: 'o' }, { id: 'pharoah-sanders-tauhid', attr: 'c' },
-        { id: 'melt-banana-speak-squeak-creak', attr: 'h' }, 'blocked:o', 'ace']
+      hand: ["the velvet underground|white light-white heat", "magma|mëkanïk dëstruktïw kömmandöh", "pharoah sanders|tauhid", "melt-banana|speak squeak creak"], draw: [],
+      pick: [{ id: "the velvet underground|white light-white heat", attr: 'c' }, { id: "magma|mëkanïk dëstruktïw kömmandöh", attr: 'o' }, { id: "pharoah sanders|tauhid", attr: 'c' },
+        { id: "melt-banana|speak squeak creak", attr: 'h' }, 'blocked:o', 'ace']
     }
   };
   var GAP5 = { kind: 'mirrorLose', blocked: 'gap' };
@@ -914,7 +1029,12 @@
     homeWantAgain: L('《{album}》已經在想要清單裡。', '新'),
     homeTuneFail: L('控制台開不起來，等一下再試。', '新'),
     homeTuneLoading: L('控制台開機中…', '新'),
-    homeTuneBack: L('回房間', '新')
+    homeTuneBack: L('回房間', '新'),
+    // 一檔貨（第 B 波 SPEC-B §3.7）：第一次在兩位客人之間換過貨（save.seen.lotHint）；第一次碰到全卡池那一檔（save.seen.lotAll，第 2 輪開頭）
+    lotHint: L('每位客人走了，我就從這一批裡換幾張上架；打完傳說藏家，整批換新的。', '新'),
+    lotAll: L('新的一批到了，這批是從倉庫深處挖出來的。', '新'),
+    // 今日推薦（SPEC-B §4.6）：當天第一次到標題、或兩位客人之間還沒收（一趟一次）
+    dailyNew: L('今天幫你留了一張，放在試聽機。', '新')
   };
   C.shopLines = pick(RAW_SHOP, 't');
   C.shopLineTags = pick(RAW_SHOP, 'g');
@@ -924,7 +1044,7 @@
     homeBtn: '（畫面字）', homeTitle: '（畫面字）', homeSub: '（畫面字）', homeNote: '（畫面字）', homeEmpty: '（畫面字）', homeShelf: '（畫面字）', homeDeck: '（畫面字）',
     homeConsole: '（畫面字）', homeShelfSub: '（畫面字）', homeDeckSub: '（畫面字）', homeDeckEmpty: '（畫面字）', homePut: '（畫面字）', homeOnDeck: '（畫面字）', homeStop: '（畫面字）', homeNow: '（畫面字）', homeIdle: '（畫面字）',
     homeWantN: '（畫面字）', homeWant: '（畫面字）', homeWantAgain: '（畫面字）', homeTuneFail: '（畫面字）',
-    homeTuneLoading: '（畫面字）', homeTuneBack: '（畫面字）' };
+    homeTuneLoading: '（畫面字）', homeTuneBack: '（畫面字）', lotHint: '老闆', lotAll: '老闆', dailyNew: '老闆' };
 
   // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號，{n} 一律代入千分位字串 engine.moneyText(n)：$1,200）
   C.shopUi = {
@@ -945,11 +1065,18 @@
     bargainBuy: '買下 ${n}',                                      // {n}＝挑的那幾張特價加起來（engine.bargainPriceOf；每張 $100／200／300）
     bargainEach: '${n}',                                          // 特價箱每張封面下的價（engine.bargainPriceOf）
     bargainEmpty: '特價區賣完了，下一輪再補。',
+    // 一檔貨（第 B 波 SPEC-B §3.7）：抽屜空箱兩種字照 engine.lotLeft 選；C.lot.on false 時用舊字 binEmptyRound
+    binEmptyLot: '這一批的這一箱賣完了，打完傳說藏家整批換新。',
+    binEmptyRound: '這一箱賣完了，下一輪再補。',
+    // 想要清單（SPEC-B §5.3）：抽屜稀有度籤旁的小籤；第一次上架的吐司（{bin}＝那一箱的中文名 zh；多張用 wantOnShelfN）
+    wantTag: '你想要的',
+    wantOnShelf: '你想要的《{album}》上架了，在{bin}那一箱。',
+    wantOnShelfN: '你想要的 {n} 張上架了。',
     close: '關閉',
     earned: '+${n}',
     // B3 econ.js 用到的字（notes-B3 請求 7；econ.js 有同字後備）
     bag: '包包 {n} 張',                 // 包包不限張數（店主 11-16）：只寫張數，不寫上限（抽屜標題、來客包包條、領獎面板）
-    binEmpty: '這一箱賣完了，下一輪再補。',
+    binEmpty: '這一箱賣完了，下一位客人來之前會換一批。',   // 一檔貨（SPEC-B §3.7）：這一檔這一箱還有貨（沒貨了＝binEmptyLot）
     owned: '包包裡有了',
     relicSell: '賣這件',
     relicSold: '「{name}」賣掉，+${n}',
@@ -1022,10 +1149,33 @@
       pickBrought: '帶來的',                                            // 挑種子面板那張封面左上的小籤
       bringToast: '《{album}》在櫃檯等你：下一趟開局可以帶上場',          // 標題畫面吐司（網址 ?card= 收下時）
       bringToastFirst: '《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶上場',   // 第一次玩（接著是序章，序章那一趟不挑種子）
-      bringMissing: '店裡沒有這張唱片。'                                  // ?card= 查不到或是王牌（帶不進來）
+      bringMissing: '店裡沒有這張唱片。',                                 // ?card= 查不到或是王牌（帶不進來）
+      // 存檔唯讀（第 B 波 SPEC-B §2.1、附錄 A）：標題 lb-foot 一行；兩個都有只出 migrateFail
+      migrateFail: '存檔升級失敗，這次先不存檔；重新整理再試一次。',      // 卡片 id 換 catalogId 那一步丟例外（整份唯讀、不覆寫）
+      poolMissing: '唱片沒有全部載到，這次先不存檔；重新整理再試一次。'   // cards-pool.js 沒載到（C.poolLoaded false）
     }
   };
   C.seedsTag = '新';
+
+  // ===================================================================
+  // 今日推薦集點卡（第 B 波 SPEC-B §4；店主 11-16「每日上線可收到推薦新專輯，蒐集一週給獎勵」）：每天第一次來，老闆在試聽機留一張你還沒認識的；
+  //   收下＝擁有（唱片櫃 src daily）、蓋一格；滿七格三選一換一張史詩／傳奇。不必連續、不歸零。{x} 由畫面代入
+  // ===================================================================
+  C.daily = {
+    title: '今日推薦',
+    hint: '每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶上場；蓋滿七格，換一張好盤。',   // 第一次打開（save.seen.dailyHint）
+    take: '收下',
+    taken: '收進唱片櫃了',
+    tomorrow: '明天再來，老闆會再留一張。',          // 收過之後那顆鈕的灰字
+    none: '今天店裡沒有你還沒聽過的了。',             // 沒候選（E.dailyPick 回 null）
+    stamps: '集點卡 {n}／7',
+    firstStamp: '老客人',                          // 第一格角落小字（第一次建立先送一格）
+    claim: '換獎勵',
+    claimTitle: '挑一張帶回家',
+    claimed: '收進唱片櫃，下一趟可以帶上場。',          // 換完的吐司
+    titleChip: '今日推薦：《{album}》'                // 標題 lb-foot 的小籤（沒收時；收過＝stamps）
+  };
+  C.dailyTag = '新';
 
   // 結算（這一趟結束）：「走到第 23 位・最多連贏 12 位・收了 9 張」（店主 11-12）；標題畫面的紀錄「最遠：第 23 位」
   C.summary = { title: '試煉結束', reached: '走到第 {n} 位', streak: '最多連贏 {n} 位', taken: '收了 {n} 張', wins: '贏了 {n} 位', none: '這一趟沒收唱片',
@@ -1051,99 +1201,99 @@
   C.apexTrial = {
     winHeal: 4,
     hall: [
-      { card: 'radiohead-ok-computer', id: 'okc-airbag', name: '安全氣囊', text: '氣囊救了你一命：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+      { card: "radiohead|ok computer", id: 'okc-airbag', name: '安全氣囊', text: '氣囊救了你一命：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
         grade: '主力（預設）', power: 89, fact: '開場曲〈Airbag〉唱的是車禍生還（An airbag saved my life）；回聲望＝保住帶著走的聲望。預設那張：新手第 1 手就用也不浪費。' },
-      { card: 'glenn-gould-bach-the-goldberg-variations-1955', id: 'gould-variations', name: '三十段變奏', text: '一段詠嘆調變三十次：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+      { card: "glenn gould|bach: the goldberg variations (1955)", id: 'gould-variations', name: '三十段變奏', text: '一段詠嘆調變三十次：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
         grade: '主力', power: 87, fact: '《郭德堡變奏曲》＝一段詠嘆調＋30 段變奏，最後詠嘆調再回來；1955 年錄音是顧爾德的第一張唱片。一個主題撐全曲＝一個效果撐整場。' },
-      { card: 'miles-davis-kind-of-blue', id: 'kob-so-what', name: '那又怎樣', text: '比輸了又怎樣：這手比星輸了不扣。', timing: 'hand', op: 'loseZero', params: {}, hold: null,
+      { card: "miles davis|kind of blue", id: 'kob-so-what', name: '那又怎樣', text: '比輸了又怎樣：這手比星輸了不扣。', timing: 'hand', op: 'loseZero', params: {}, hold: null,
         grade: '特色', power: 79, fact: '開場曲〈So What〉＝那又怎樣。敢「疑」、跟他正面比，輸了不扣；「信」那條路照樣會被剋。' },
-      { card: 'the-beatles-abbey-road', id: 'abbey-carry-weight', name: '扛起重擔', text: '這場比星多算 1，被剋少扣 1。', timing: 'duel', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 1 } }, { op: 'shield', params: { n: 1 } }] }, hold: null,
+      { card: "the beatles|abbey road", id: 'abbey-carry-weight', name: '扛起重擔', text: '這場比星多算 1，被剋少扣 1。', timing: 'duel', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 1 } }, { op: 'shield', params: { n: 1 } }] }, hold: null,
         grade: '主力', power: 94, fact: 'B 面組曲裡的〈Carry That Weight〉：比星有份量、被剋也扛得住一點（少扣最少扣 1）。' },
-      { card: 'pink-floyd-the-dark-side-of-the-moon', id: 'dsotm-us-them', name: '我們與他們', text: '正面比個高下：這手比星多算 3。', timing: 'hand', op: 'mirrorPlus', params: { n: 3 }, hold: null,
+      { card: "pink floyd|the dark side of the moon", id: 'dsotm-us-them', name: '我們與他們', text: '正面比個高下：這手比星多算 3。', timing: 'hand', op: 'mirrorPlus', params: { n: 3 }, hold: null,
         grade: '主力', power: 86, fact: '〈Us and Them〉＝我們與他們，正面比。留到正面對決那手才用。' },
-      { card: 'bob-marley-the-wailers-exodus', id: 'exodus-lights-low', name: '調暗燈光', text: '燈光調暗一點：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+      { card: "bob marley & the wailers|exodus", id: 'exodus-lights-low', name: '調暗燈光', text: '燈光調暗一點：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
         grade: '主力', power: 85, fact: '專輯裡的〈Turn Your Lights Down Low〉：把他那張的光調暗一格。' },
-      { card: '大滝詠一-a-long-vacation', id: 'longvac-wall', name: '夏日音牆', text: '音牆疊得厚：這手比星多算 3。', timing: 'hand', op: 'mirrorPlus', params: { n: 3 }, hold: null,
+      { card: "大滝詠一|a long vacation", id: 'longvac-wall', name: '夏日音牆', text: '音牆疊得厚：這手比星多算 3。', timing: 'hand', op: 'mirrorPlus', params: { n: 3 }, hold: null,
         grade: '主力', power: 86, fact: '大瀧詠一學 Phil Spector「音牆」的厚實編曲；封面是永井博的泳池插畫。聲音疊得厚＝正面比多兩星份量。' },
-      { card: 'michael-jackson-thriller', id: 'thriller-bestseller', name: '史上最暢銷', text: '名盤份量最重：這手你的唱片 +1 星。', timing: 'hand', op: 'star', params: { n: 1 }, hold: null,
+      { card: "michael jackson|thriller", id: 'thriller-bestseller', name: '史上最暢銷', text: '名盤份量最重：這手你的唱片 +1 星。', timing: 'hand', op: 'star', params: { n: 1 }, hold: null,
         grade: '明星', power: 100, fact: '金氏世界紀錄列為史上最暢銷的專輯：「名盤講份量」最直接的一張。殿堂唯一的 +1 星（模擬要盯的那張）。' },
-      { card: '鄧麗君-teresa-teng-淡淡幽情', id: 'teng-longlast', name: '但願人長久', text: '留著：被剋少扣 1；發動：這手他少 1 星。', timing: 'hold', op: 'eStar', params: { n: 1 }, hold: { op: 'shield', params: { n: 1 } },
+      { card: "鄧麗君 teresa teng|淡淡幽情", id: 'teng-longlast', name: '但願人長久', text: '留著：被剋少扣 1；發動：這手他少 1 星。', timing: 'hold', op: 'eStar', params: { n: 1 }, hold: { op: 'shield', params: { n: 1 } },
         grade: '特色', power: 83, fact: '整張把古典詩詞譜成歌，〈但願人長久〉唱的是蘇軾〈水調歌頭〉：留得越久越好，捨得放才換一次大的。' },
-      { card: '張雨生-口是心非', id: 'chang-two-faced', name: '口是心非', text: '他說的不算：這手比星多算 3，輸了不扣。', timing: 'hand', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 3 } }, { op: 'loseZero', params: {} }] }, hold: null,
+      { card: "張雨生|口是心非", id: 'chang-two-faced', name: '口是心非', text: '他說的不算：這手比星多算 3，輸了不扣。', timing: 'hand', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 3 } }, { op: 'loseZero', params: {} }] }, hold: null,
         grade: '主力', power: 86, fact: '同名曲〈口是心非〉：嘴上說的跟心裡想的不一樣，正好是唬人。不信提示、直接正面比；「信」那條路照樣會被剋。' },
-      { card: '陳綺貞-cheer-chen-讓我想一想', id: 'cheer-think', name: '讓我想一想', text: '留著：同色同星扣他 1；發動：這手比星多算 3。', timing: 'hold', op: 'mirrorPlus', params: { n: 3 }, hold: { op: 'tieWin', params: { n: 1 } },
+      { card: "陳綺貞 cheer chen|讓我想一想", id: 'cheer-think', name: '讓我想一想', text: '留著：同色同星扣他 1；發動：這手比星多算 3。', timing: 'hold', op: 'mirrorPlus', params: { n: 3 }, hold: { op: 'tieWin', params: { n: 1 } },
         grade: '特色', power: 88, fact: '1998 年出道專輯與同名曲〈讓我想一想〉：先想一想＝留著不用；同一個「比星」家族，小份量一直在、大份量用一次。' },
-      { card: 'daft-punk-discovery', id: 'discovery-stronger', name: '更快更強', text: '更硬更好更快更強：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+      { card: "daft punk|discovery", id: 'discovery-stronger', name: '更快更強', text: '更硬更好更快更強：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
         grade: '主力', power: 87, fact: '〈Harder, Better, Faster, Stronger〉；整張專輯後來配成一整部動畫電影《Interstella 5555》（2003）：一整張＝一整場。' },
-      { card: '周杰倫-范特西', id: 'jay-nunchucks', name: '雙截棍', text: '哼哼哈兮：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+      { card: "周杰倫|范特西", id: 'jay-nunchucks', name: '雙截棍', text: '哼哼哈兮：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
         grade: '主力', power: 85, fact: '〈雙截棍〉的「快使用雙截棍，哼哼哈兮」：一棍敲掉他一顆星。' },
-      { card: 'kendrick-lamar-to-pimp-a-butterfly', id: 'tpab-poem', name: '唸完那首詩', text: '一路唸到最後：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+      { card: "kendrick lamar|to pimp a butterfly", id: 'tpab-poem', name: '唸完那首詩', text: '一路唸到最後：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
         grade: '主力', power: 87, fact: '一首詩拆成好幾段散在整張專輯，到最後一首〈Mortal Man〉才唸完整：一口氣唸到底＝整場有效。' },
-      { card: '羅大佑-之乎者也', id: 'lo-time', name: '光陰的故事', text: '光陰沖淡一顆：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+      { card: "羅大佑|之乎者也", id: 'lo-time', name: '光陰的故事', text: '光陰沖淡一顆：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
         grade: '主力', power: 85, fact: '〈光陰的故事〉，羅大佑 1982 年首張專輯《之乎者也》：時間把他那張的光沖淡一格。Build 棒換下草東《醜奴兒》（團名有 lint-copy 擋的字，卡名會上畫面）；能力照原本那張（這手他少 1 星）。' }
     ],
     pearl: [
-      { card: 'barney-wilen-zodiac', id: 'zodiac-borrow', name: '黃道借星', text: '借他的星：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
+      { card: "barney wilen|zodiac", id: 'zodiac-borrow', name: '黃道借星', text: '借他的星：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
         grade: '明星（預設）', power: 103, fact: '法國次中音薩克斯風手，年輕時吹過 Miles Davis《死刑台與電梯》配樂；1966 年這張轉進自由爵士。黃道＝星座：借他那張的星來扣他。' },
-      { card: 'beyond-再見理想', id: 'beyond-selffund', name: '自掏腰包', text: '硬碰大牌：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
+      { card: "beyond|再見理想", id: 'beyond-selffund', name: '自掏腰包', text: '硬碰大牌：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
         grade: '明星', power: 103, fact: '出道前自己出錢錄、以卡帶發行的第一張：沒有唱片公司撐腰，照樣跟大牌硬碰。' },
-      { card: 'harry-roesli-ken-arok', id: 'kenarok-rise', name: '草莽稱王', text: '草莽挑王：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+      { card: "harry roesli|ken arok", id: 'kenarok-rise', name: '草莽稱王', text: '草莽挑王：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '印尼搖滾歌劇，取材爪哇傳說：Ken Arok 出身草莽、奪位開創新王朝。小人物也剋得動高他一截的對手。' },
-      { card: '夾子電動大樂隊-地下人', id: 'clip-underground', name: '地下人', text: '這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+      { card: "夾子電動大樂隊|地下人", id: 'clip-underground', name: '地下人', text: '這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '盤名就是「地下的人」：檯面下的小牌也剋得動檯面上的大牌。台灣獨立樂團。' },
-      { card: '灰野敬二-滲有無', id: 'haino-seep', name: '滲透', text: '滲過去：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+      { card: "灰野敬二|滲有無", id: 'haino-seep', name: '滲透', text: '滲過去：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '盤名的「滲」：聲音一點一點滲過去，他靠星數築起的「剋不動」那道牆被滲穿。' },
-      { card: '楊祖珺-楊祖珺', id: 'yang-unbanned', name: '禁不掉', text: '禁不掉：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+      { card: "楊祖珺|楊祖珺", id: 'yang-unbanned', name: '禁不掉', text: '禁不掉：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '唱過李雙澤〈美麗島〉的民歌手；那首歌後來成了禁歌，她轉進社運：想擋也擋不住。（只講那首歌，不說這張專輯被禁）' },
-      { card: '嘉手苅林昌-嘉手苅林昌', id: 'kadekaru-shima', name: '島唄之神', text: '老神在在：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+      { card: "嘉手苅林昌|嘉手苅林昌", id: 'kadekaru-shima', name: '島唄之神', text: '老神在在：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '被稱為「島唄之神」的沖繩民謠歌手：老神在在，一把三線也壓得住比他大的對手。（原本的「留著」型字寫不清楚，改成整場剋得動）' },
-      { card: 'blue-notes-blue-notes-for-mongezi', id: 'bluenotes-return', name: '流亡者回敬', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
+      { card: "blue notes|blue notes for mongezi", id: 'bluenotes-return', name: '流亡者回敬', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
         grade: '新手向', power: 66, fact: '派名就叫流亡：種族隔離時期離開南非、留在歐洲的樂團，為 1975 年底在倫敦過世的小號手 Mongezi Feza 錄的送別即興。挨了打，一半還回去。' },
-      { card: '小久保隆-get-at-the-wave', id: 'kokubo-wave', name: '浪打回頭', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
+      { card: "小久保隆|get at the wave", id: 'kokubo-wave', name: '浪打回頭', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
         grade: '新手向', power: 66, fact: '日本環境音樂。盤名的浪：打過來的浪有一半退回去。' },
-      { card: 'derek-bailey-solo-guitar-volume-1', id: 'bailey-solo', name: '一把吉他', text: '一把吉他：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+      { card: "derek bailey|solo guitar volume 1", id: 'bailey-solo', name: '一把吉他', text: '一把吉他：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
         grade: '特色（看時機）', power: 69, fact: '自由即興吉他宗師的第一張獨奏（1971，他參與創辦的 Incus 發行）：一個人一把吉他，正面對上整個傳統。' },
-      { card: 'gorilla-biscuits-demo-1987', id: 'gb-demo', name: '一卷 demo', text: '這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+      { card: "gorilla biscuits|demo 1987", id: 'gb-demo', name: '一卷 demo', text: '這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
         grade: '特色（看時機）', power: 69, fact: '紐約硬蕊樂團出道前的一卷 demo 帶：最小的發行形式，扣的卻是大牌的份量。' },
-      { card: '高柳昌行-eclipse-侵蝕', id: 'takayanagi-erode', name: '侵蝕', text: '以彼之道：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+      { card: "高柳昌行|eclipse-侵蝕", id: 'takayanagi-erode', name: '侵蝕', text: '以彼之道：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
         grade: '特色（看時機）', power: 69, fact: '盤名「侵蝕」：拿他自己那張的份量反過來蝕掉他（以彼之道，還施彼身）。日本自由爵士吉他手。' },
-      { card: '1976-late-summer-of-1976-不插電現場實況', id: '1976-unplugged', name: '不插電', text: '拔掉插頭：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
+      { card: "1976|late summer of 1976 不插電現場實況", id: '1976-unplugged', name: '不插電', text: '拔掉插頭：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
         grade: '特色（看時機）', power: 69, fact: '拔掉插頭、音量最小的一場，照樣扣得到大牌的份量。台灣獨立樂團。' },
-      { card: 'black-renaissance-body-mind-and-spirit', id: 'blackren-heal', name: '身心靈', text: '身心靈都養回來：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+      { card: "black renaissance|body, mind and spirit", id: 'blackren-heal', name: '身心靈', text: '身心靈都養回來：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
         grade: '主力', power: 97, fact: '盤名就是身、心、靈：回聲望＝養回來。Harry Whitaker 帶的一次性錄音，靈性爵士的冷門聖杯。' },
-      { card: 'alton-ellis-a-new-day', id: 'alton-newday', name: '新的一天', text: '新的一天重新站起來：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+      { card: "alton ellis|a new day", id: 'alton-newday', name: '新的一天', text: '新的一天重新站起來：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
         grade: '主力', power: 97, fact: '盤名「新的一天」＝重新站起來、回一口氣。rocksteady 教父。' }
     ],
     heresy: [
-      { card: 'swans-filth', id: 'filth-expose', name: '揭穿髒招', text: '唬人是髒招：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+      { card: "swans|filth", id: 'filth-expose', name: '揭穿髒招', text: '唬人是髒招：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
         grade: '主力（預設）', power: 88, fact: 'Swans 第一張錄音室專輯，以極慢、極重、極大音量出名。Filth＝骯髒：他唬你是髒招，揭穿就加倍奉還。' },
-      { card: 'ornette-coleman-free-jazz-a-collective-improvisation', id: 'freejazz-double', name: '雙四重奏', text: '兩組四重奏齊上：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+      { card: "ornette coleman|free jazz: a collective improvisation", id: 'freejazz-double', name: '雙四重奏', text: '兩組四重奏齊上：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
         grade: '主力', power: 88, fact: '兩組四重奏各佔立體聲左右聲道，一整首集體即興佔滿兩面黑膠（封面開窗是 Jackson Pollock 的畫）。兩組＝加倍，一整首＝整場。' },
-      { card: 'captain-beefheart-his-magic-band-trout-mask-replica', id: 'trout-mask-off', name: '撕下面具', text: '面具撕下來：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+      { card: "captain beefheart & his magic band|trout mask replica", id: 'trout-mask-off', name: '撕下面具', text: '面具撕下來：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
         grade: '主力', power: 88, fact: '專輯名＝鱒魚面具複製品，封面上 Beefheart 戴著一顆魚頭；Frank Zappa 製作。唬人就是戴面具，撕下來。' },
-      { card: 'discharge-hear-nothing-see-nothing-say-nothing', id: 'hnsnsn-hear-nothing', name: '什麼都不聽', text: '他說的都不聽：這場抓到他唬你，扣三倍。', timing: 'duel', op: 'crit', params: { mult: 3 }, hold: null,
+      { card: "discharge|hear nothing see nothing say nothing", id: 'hnsnsn-hear-nothing', name: '什麼都不聽', text: '他說的都不聽：這場抓到他唬你，扣三倍。', timing: 'duel', op: 'crit', params: { mult: 3 }, hold: null,
         grade: '主力', power: 89, fact: 'Discharge 第一張專輯，D-beat 這個名字就來自這個團。專輯名三個 Nothing＝三倍；「不聽」他的提示，正好就是「疑」。' },
-      { card: 'lou-reed-metal-machine-music', id: 'mmm-feedback', name: '四面回授', text: '回授：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
+      { card: "lou reed|metal machine music", id: 'mmm-feedback', name: '四面回授', text: '回授：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
         grade: '主力', power: 93, fact: '雙張黑膠四面全是吉他回授疊出來的噪音。回授＝訊號繞回自己：扣到他的，有一半繞回你身上；四面一口氣放完＝整場。' },
-      { card: 'throbbing-gristle-the-second-annual-report', id: 'tg-annual-report', name: '年度結算', text: '對帳：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
+      { card: "throbbing gristle|the second annual report", id: 'tg-annual-report', name: '年度結算', text: '對帳：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
         grade: '主力', power: 93, fact: 'TG 第一張專輯，由自家 Industrial Records 發行，「工業音樂」這個詞就從這個廠牌來。專輯名＝第二份年度報告：整場記帳，抓到唬人那筆，一半入你口袋。' },
-      { card: 'alvin-lucier-i-am-sitting-in-a-room', id: 'lucier-room', name: '一遍又一遍', text: '一遍遍錄回來：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
+      { card: "alvin lucier|i am sitting in a room", id: 'lucier-room', name: '一遍又一遍', text: '一遍遍錄回來：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
         grade: '主力', power: 93, fact: '念一段話錄下來，放回房間再錄，一遍又一遍，到最後只剩房間的共振。一遍遍「回來」＝整場回聲望。' },
-      { card: 'les-rallizes-denudes-77-live', id: 'rallizes-denuded', name: '赤裸裸', text: '剝個精光：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
+      { card: "les rallizes dénudés|'77 live", id: 'rallizes-denuded', name: '赤裸裸', text: '剝個精光：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
         grade: '明星', power: 117, fact: '1977 年 3 月在東京立川的現場錄音，1991 年才發行；團名的 Dénudés 是法文「剝光、赤裸」。現場盤＝台下看得一清二楚。' },
-      { card: 'ryoji-ikeda', id: 'ikeda-plusminus', name: '正負號', text: '非正即負：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
+      { card: "ryoji ikeda|+--", id: 'ikeda-plusminus', name: '正負號', text: '非正即負：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
         grade: '明星', power: 117, fact: '池田亮司用正弦波、高頻脈衝做的專輯，名字就是「正或負」：看穿只給二選一的答案，真或唬。' },
-      { card: '非常階段-蔵六の奇病', id: 'hijokaidan-exit', name: '逃生梯', text: '先走逃生梯：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
+      { card: "非常階段|蔵六の奇病", id: 'hijokaidan-exit', name: '逃生梯', text: '先走逃生梯：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
         grade: '主力', power: 100, fact: '團名「非常階段」＝日文的緊急逃生梯；《蔵六の奇病》是日本噪音早期經典。打不下去先走逃生梯，保住帶著走的聲望。異端裡新手也有感的一張。' },
-      { card: 'einsturzende-neubauten-kollaps', id: 'neubauten-collapse', name: '一拆就塌', text: '謊話一拆就塌：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
+      { card: "einstürzende neubauten|kollaps", id: 'neubauten-collapse', name: '一拆就塌', text: '謊話一拆就塌：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
         grade: '主力', power: 88, fact: '團名＝倒塌的新建築，第一張專輯 Kollaps＝崩塌，拿廢鐵、電鑽當樂器。他的謊話一拆就塌。' },
-      { card: '零與聲音解放組織-z-s-l-o', id: 'zslo-zero', name: '往零推', text: '往零推一格：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+      { card: "零與聲音解放組織|z.s.l.o.", id: 'zslo-zero', name: '往零推', text: '往零推一格：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
         grade: '主力', power: 94, fact: '林其蔚等人在 1990 年代初組成的台灣噪音先驅。團名的「零」：把他那張往零推一格。異端頂點卡裡唯一的台灣盤。' },
-      { card: 'sunn-o-black-one', id: 'sunn-low-end', name: '低頻壓頂', text: '低頻壓下來：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+      { card: "sunn o)))|black one", id: 'sunn-low-end', name: '低頻壓頂', text: '低頻壓下來：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
         grade: '主力', power: 94, fact: '以極大音量、拉得極長的低頻聞名，台上披連帽長袍、滿台煙霧：噪音蓋過他，壓下去一顆星。' },
-      { card: 'napalm-death-scum', id: 'scum-one-second', name: '一秒鐘', text: '一秒就結束：這手抓到他唬你，扣三倍。', timing: 'hand', op: 'crit', params: { mult: 3 }, hold: null,
+      { card: "napalm death|scum", id: 'scum-one-second', name: '一秒鐘', text: '一秒就結束：這手抓到他唬你，扣三倍。', timing: 'hand', op: 'crit', params: { mult: 3 }, hold: null,
         grade: '特色', power: 72, fact: '常被當成 grindcore 的起點；裡面的〈You Suffer〉只有一秒多，金氏世界紀錄列為最短的歌。一秒＝只有這一手。' },
-      { card: 'peter-brotzmann-machine-gun', id: 'brotzmann-machine-gun', name: '機關槍', text: '留著：剋中多扣 1；發動：這手抓到他唬你扣三倍。', timing: 'hold', op: 'crit', params: { mult: 3 }, hold: { op: 'counterPlus', params: { n: 1 } },
+      { card: "peter brötzmann|machine gun", id: 'brotzmann-machine-gun', name: '機關槍', text: '留著：剋中多扣 1；發動：這手抓到他唬你扣三倍。', timing: 'hold', op: 'crit', params: { mult: 3 }, hold: { op: 'counterPlus', params: { n: 1 } },
         grade: '特色', power: 80, fact: '1968 年的八重奏錄音，歐洲自由爵士代表作，名字就叫機關槍：平常一發一發點放（剋中多扣 1），發動就整排掃出去。' }
     ],
     // 畫面字（FRAME 第 7 節；{x} 由畫面代入）

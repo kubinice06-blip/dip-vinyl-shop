@@ -46,6 +46,8 @@
 //            順序：贏 → reward（挑唱片／配件）→ level（有升級才有，連升就連選）→ 下一位（第 5 位打完換新一輪：新面孔、說情重設、商店補貨）
 //            classAt(pos) · roundOf(pos) · trialGuest(content, pos, cls) -> {hp, atk, def, planner, q} · trialDeck(content, id, pos, {seedKey, runNo, playerAce, bossAce, bossCard?})
 //              -> {deck:[cards], ace, floor, buff, replaced}（換牌、加星、王牌全用 run 的雜湊 seedKey#runNo#pos，不碰對決亂數）
+//              組牌快取（第 B 波 WP2-0）：選牌按條件分桶、只取前 k 張、同一組輸入記住（卡池＝content.cards 物件；卡的星數／tier／tune 視為不變），結果跟原本逐字相同；
+//              _noCache（API 上的旗標，預設 false）＝true 時 trialDeck／radioPool 走原本的寫法（engine.test #24 對照）
 //            roundGuests(run, content) -> [{id, pos, cls, hp, atk, def, hasAce, done, cur, title, main}]（這一輪 5 位）· levelOffer(run, content) -> [{pick:'atk'|'def'|'hp', n}]×3
 //            nextCheckpoint(pos, content?) · toCheckpoint(run, content?)（從目前這位到下一個「在前面」的中繼點還有幾位：第 7 位 → 3、走到第 10 位 → 10）· runSummary(run) -> {reached, bestStreak, taken, wins, level, checkpoints, kept, aces?（解鎖制：這一趟收的頂點卡）}
 //            restock(run, content)（每輪開頭補貨：箱子、櫃檯、特價箱；扣掉包包裡的）· fixBins(run, content)（舊存檔：只補缺的區、丟掉沒有的區；回 true＝有改）· fixBargain(run, content)（舊存檔停在開局特價箱還沒挑、箱子還擺換下來的舊牌：用現在的池子重擺；回 true＝有改）· jumpTo(run, content, pos)（?debug=1 的 __lab：直接跳到第 n 位）
@@ -951,17 +953,117 @@
     if (POOL_CACHE) POOL_CACHE.set(cards, p);
     return p;
   }
-  function trialDeck(content, id, pos, o) {
-    o = o || {};
-    const T = trialCfg(content, o.tier), K = T.curve.deck, d = Math.max(1, pos | 0);
-    const E = content.enemies[id]; if (!E) throw new Error('engine: unknown enemy ' + id);
-    const cls = POS_CLASSES.includes(o.cls) ? o.cls : classAt(d);
-    const base = (E.deck || []).map(x => cardFrom(content, x));
-    const tag = String(o.seedKey || 'lab') + '#' + (o.runNo || 1) + '#' + d;
-    const u = s => hash01(tag + '|' + s);
-    const fl = Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * d));
+  // ---------- 組牌快取（第 B 波 WP2-0；SPEC-B §6.2 第 2 步、定稿 C5）：只改速度、不改結果 ----------
+  //   5,045 張下 trialDeck 每次都對整池篩、算雜湊、全排序（×6），radioPool 每次篩整池（×10）。改成：
+  //   ① 按 trialDeck 用到的條件（下限 fl、主屬性 M、strict、obAll 退路、M 那軸總星排序、另外兩軸的 lane）預先分桶，快取在 content.cards 物件上
+  //      （跟 trialPool 同一個鍵：卡池換物件才重算；卡物件的星數、tier、tune 視為不變——cards-media 只原地寫封面／試聽，不影響）
+  //   ② 每次只對要用的桶算雜湊（tag|客人| 的 fnv 狀態算一次、每張只續算自己的 id；同一次呼叫同一張只算一次）、只取需要的前 k 張
+  //      （部分選擇；順序照原本的排序鍵：雜湊小的先、同分 id 小的先）
+  //   ③ 同一組輸入選出的牌（卡池物件參照）記住：鍵＝客人、tag（seedKey#runNo#位）、M、fl、minPool、mainShare、他原本的牌單；
+  //      來客那排一次畫 5 位、shopPolicy 與 startFight 同一位各叫一次 → 第二次起不重選。加星、王牌、複本照舊每次重做（不共用物件）
+  //   ④ radioPool：每格（tune）∩ 普通／稀有／獨特 記住，每次只扣包包與架上
+  //   API._noCache＝true → 全部走原本的寫法（deckSlow、radioPool 篩整池）；engine.test #24 對照 200 個 seed × 第 1–15 位結果 JSON 相同
+  const POOL_INFO = typeof WeakMap === 'function' ? new WeakMap() : null;
+  const AXIS_BIT = { c: 1, o: 2, h: 4 };
+  const DECK_MEMO_MAX = 512;
+  function poolInfo(content) {
+    const pool = trialPool(content), cards = content.cards || {};
+    let P = POOL_INFO.get(cards);
+    if (P && P.pool === pool) return P;
+    const n = pool.length, pw = new Array(n), mk = new Array(n), sid = new Array(n);
+    for (let i = 0; i < n; i++) {
+      const c = pool[i], m = peak(c);
+      pw[i] = power(c);
+      mk[i] = (star(c, 'c') === m ? 1 : 0) | (star(c, 'o') === m ? 2 : 0) | (star(c, 'h') === m ? 4 : 0);   // 峰值那幾軸（＝isM／lane／topAxes）
+      sid[i] = '' + c.id;
+    }
+    P = { pool, n, pw, mk, sid, bk: new Map(), hv: new Float64Array(n), hg: new Uint32Array(n), gen: 0, memo: new Map() };
+    POOL_INFO.set(cards, P);
+    return P;
+  }
+  function poolBucket(P, key, keep) {
+    let b = P.bk.get(key);
+    if (!b) { b = []; for (let i = 0; i < P.n; i++) if (keep(i)) b.push(i); P.bk.set(key, b); }
+    return b;
+  }
+  function subBucket(P, key, src, keep) {
+    let b = P.bk.get(key);
+    if (!b) { b = src.filter(keep); P.bk.set(key, b); }
+    return b;
+  }
+  function fnvMore(h, str) { for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193); } return h >>> 0; }   // fnv1a32 接著前綴的狀態算
+  function fmix01(h) { h ^= h >>> 16; h = Math.imul(h, 0x85ebca6b); h ^= h >>> 13; h = Math.imul(h, 0xc2b2ae35); h ^= h >>> 16; return (h >>> 0) / 4294967296; }   // ＝hash01 的後半
+  function deckFast(content, K, base, E, id, tag, fl, M) {
+    const P = poolInfo(content), pool = P.pool, pw = P.pw, mk = P.mk;
+    const key = id + '\u0001' + tag + '\u0001' + (M || '') + '\u0001' + fl + '\u0001' + K.minPool + '\u0001' + K.mainShare + '\u0001' + (E.deck || []).join('\u0002');
+    const hit = P.memo.get(key);
+    if (hit) return hit;
+    if (++P.gen > 0x3fffffff) { P.hg.fill(0); P.gen = 1; }
+    const gen = P.gen, hv = P.hv, hg = P.hg, sid = P.sid, h0 = fnvMore(0x811c9dc5, tag + '|' + id + '|');
+    const hOf = i => { if (hg[i] === gen) return hv[i]; const v = fmix01(fnvMore(h0, sid[i])); hv[i] = v; hg[i] = gen; return v; };   // ＝u(id + '|' + c.id)
+    const before = (i, j) => { const a = hOf(i), z = hOf(j); return a < z || (a === z && pool[i].id < pool[j].id); };
+    // ＝byHash(桶, used) 的前 k 張：桶裡不在 used 的，照（雜湊, id）排序取前 k
+    const top = (idx, k, used) => {
+      const out = [];
+      if (!(k > 0)) return out;
+      for (let t = 0; t < idx.length; t++) {
+        const i = idx[t];
+        if (out.length >= k && !before(i, out[out.length - 1])) continue;
+        if (used.has(pool[i].id)) continue;
+        let j = out.length; out.push(i);
+        while (j > 0 && before(i, out[j - 1])) { out[j] = out[j - 1]; j--; }
+        out[j] = i;
+        if (out.length > k) out.pop();
+      }
+      return out;
+    };
+    const deck = [], used = new Set();
+    const put = c => { deck.push(c); used.add(c.id); };
+    const ALL = poolBucket(P, 'A', () => true);
+    if (!M) {
+      let bag = poolBucket(P, 'F' + fl, i => pw[i] >= fl); if (bag.length < K.minPool) bag = ALL;
+      for (const c of base) if (power(c) >= fl) put(c);
+      if (deck.length < base.length) for (const i of top(bag, base.length - deck.length, used)) put(pool[i]);
+    } else {
+      const bit = AXIS_BIT[M], isM = c => star(c, M) === peak(c);
+      const need = Math.min(base.length, Math.max(0, Math.round((+K.mainShare || 0) * base.length)));
+      const keepM = base.filter(c => power(c) >= fl && isM(c)), keepO = base.filter(c => power(c) >= fl && !isM(c));
+      for (const c of keepM) put(c);
+      for (const c of keepO.slice(0, Math.max(0, base.length - Math.max(need, keepM.length)))) put(c);
+      if (keepM.length < need) {
+        let mb = poolBucket(P, 'M' + M + fl, i => (mk[i] & bit) && pw[i] >= fl);
+        const strict = poolBucket(P, 'S' + M + fl, i => mk[i] === bit && pw[i] >= fl);
+        if (strict.length >= K.minPool) mb = strict;
+        if (mb.length < K.minPool) {
+          let z = P.bk.get('Z' + M);
+          if (!z) { z = poolBucket(P, 'm' + M, i => mk[i] & bit).slice().sort((a, b) => pw[b] - pw[a] || (pool[a].id < pool[b].id ? -1 : 1)); P.bk.set('Z' + M, z); }
+          mb = z.slice(0, Math.max(K.minPool, mb.length));
+        }
+        const r = Math.min(need - keepM.length, base.length - deck.length);
+        for (const i of top(mb, r, used)) put(pool[i]);
+      }
+      const others = ATTRS.filter(a => a !== M), first = BEATS[M];
+      const ob = poolBucket(P, 'O' + M + fl, i => !(mk[i] & bit) && pw[i] >= fl);
+      const allKey = ob.length >= K.minPool ? 'O' + M + fl : 'N' + M;
+      const obAll = ob.length >= K.minPool ? ob : poolBucket(P, 'N' + M, i => !(mk[i] & bit));
+      const lane = (c, a) => star(c, a) === peak(c);
+      for (let guard = 0; deck.length < base.length && guard < 40; guard++) {
+        const cnt = a => deck.filter(c => !isM(c) && lane(c, a)).length;
+        const order = others.slice().sort((a, z) => cnt(a) - cnt(z) || (a === first ? -1 : z === first ? 1 : 0));
+        let got = null;
+        for (const a of order) { const i = top(subBucket(P, 'L' + allKey + a, obAll, i => mk[i] & AXIS_BIT[a]), 1, used)[0]; if (i !== undefined) { got = pool[i]; break; } }
+        if (!got) { const i = top(obAll, 1, used)[0]; if (i !== undefined) got = pool[i]; else { const k = top(ALL, 1, used)[0]; if (k !== undefined) got = pool[k]; } }
+        if (!got) break;
+        put(got);
+      }
+    }
+    if (P.memo.size >= DECK_MEMO_MAX) P.memo.clear();
+    P.memo.set(key, deck);
+    return deck;
+  }
+  // 原本的寫法（API._noCache 對照用；一行不改，只從 trialDeck 抽出來）
+  function deckSlow(content, K, base, id, fl, M, u) {
     const pool = trialPool(content);
-    const M0 = ATTRS.includes(o.main) ? o.main : null, M = M0 && +K.mainShare > 0 ? M0 : null;   // mainShare 0＝主屬性只標示、不改牌組（sim 對照用）
     const hv = new Map(), hOf = c => { let v = hv.get(c.id); if (v === undefined) { v = u(id + '|' + c.id); hv.set(c.id, v); } return v; };   // 同一張只算一次雜湊
     const byHash = (arr, used) => arr.filter(c => !used.has(c.id)).map(c => [hOf(c), c]).sort((a, z) => a[0] - z[0] || (a[1].id < z[1].id ? -1 : 1)).map(x => x[1]);
     const deck = [], used = new Set();
@@ -1003,6 +1105,19 @@
         put(got);
       }
     }
+    return deck;
+  }
+  function trialDeck(content, id, pos, o) {
+    o = o || {};
+    const T = trialCfg(content, o.tier), K = T.curve.deck, d = Math.max(1, pos | 0);
+    const E = content.enemies[id]; if (!E) throw new Error('engine: unknown enemy ' + id);
+    const cls = POS_CLASSES.includes(o.cls) ? o.cls : classAt(d);
+    const base = (E.deck || []).map(x => cardFrom(content, x));
+    const tag = String(o.seedKey || 'lab') + '#' + (o.runNo || 1) + '#' + d;
+    const u = s => hash01(tag + '|' + s);
+    const fl = Math.min(K.floorMax, K.floorBase + Math.floor(K.floorRate * d));
+    const M0 = ATTRS.includes(o.main) ? o.main : null, M = M0 && +K.mainShare > 0 ? M0 : null;   // mainShare 0＝主屬性只標示、不改牌組（sim 對照用）
+    const deck = API._noCache || !POOL_INFO ? deckSlow(content, K, base, id, fl, M, u) : deckFast(content, K, base, E, id, tag, fl, M);
     const b = Math.floor(Math.max(0, d - K.buffFrom) / K.buffEvery);
     // 每張都是他自己的一份（換來的牌可能跟你包包裡的是同一張唱片：對決狀態裡不共用物件）
     //   加星：加在那張最高那軸（topAttr）；有主屬性時，主屬性那軸也是最高（並列）的牌加在主屬性那軸（「加星偏主屬性」）
@@ -1555,7 +1670,16 @@
     if (!run || !tuneCells(content).includes(cell)) return [];
     const SH = shopOf(run), bag = new Set(run.bag || []);
     const shelf = new Set([].concat(...Object.values(SH.bins || {}).filter(Array.isArray), SH.bargain || [], bargainIds(content)));
-    return trialPool(content).filter(c => c.tune === cell && SHELF_RARITY.includes(rarity(c)) && !bag.has(c.id) && !shelf.has(c.id)).map(c => c.id);
+    return radioBase(content, cell).filter(c => !bag.has(c.id) && !shelf.has(c.id)).map(c => c.id);
+  }
+  // 這一格合規的池子（trialPool ∩ tune ∩ 普通／稀有／獨特，照 trialPool 順序）：快取在 poolInfo（WP2-0）；API._noCache 每次重篩
+  function radioBase(content, cell) {
+    const keep = c => c.tune === cell && SHELF_RARITY.includes(rarity(c));
+    if (API._noCache || !POOL_INFO) return trialPool(content).filter(keep);
+    const P = poolInfo(content), k = 'R' + cell;
+    let b = P.bk.get(k);
+    if (!b) { b = P.pool.filter(keep); P.bk.set(k, b); }
+    return b;
   }
   function canRadio(run) { return canShop(run) && !shopOf(run).radio; }
   function relicPrice(content, id) {
@@ -2148,7 +2272,7 @@
   }
   const policies = policyFns;
 
-  return { VERSION, RUN_V, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, TRIAL,
+  const API = { VERSION, RUN_V, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, TRIAL,
     RARITY, FEATURE_RARITY, SHELF_RARITY, SHOP_ORDER,
     rng, makeRng, shuffle, fnv1a32, hash01, clone, star, power, aceAxis, topAttr, peak, deckMain, clash, relicObj, playerAhead, hpPct,
     enemyDef, playerDef, startDuel, beginHand, legalActions, isLegal, preview, resolveTurn, view, bestChip, blockedChoice,
@@ -2161,4 +2285,6 @@
     canSeed, isSeed, seedPolicy, bossAceFor, keepCandidates, keepOne, canSwitchAce, switchAce,
     TIER_BEATS, unlockChain, tierOfApex, apexCards, unlockedTiers, ownedApex, nextUnlock, unlockMigrate, unlockTiersOf, ownedApexOf, aceChoices, bossCardFor, fixUnlock,
     APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex };
+  API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
+  return API;
 });

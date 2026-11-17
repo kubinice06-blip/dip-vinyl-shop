@@ -25,22 +25,22 @@ function section(name, fn) { const f0 = fail; const t0 = Date.now(); try { fn();
 
 // ---------------- test content（STUB 星數＝SPEC-v4 §4.1–§4.3 的表；already／skip 各 2 張是 A3-M2 換上的新卡） ----------------
 const STUB = {
-  'limp-bizkit-results-may-vary': [1, 1, 3], 'eminem-the-eminem-show': [5, 1, 2], 'low-double-negative': [5, 3, 4],
-  'sophie-oil-of-every-pearl-s-un-insides': [5, 2, 4], 'don-slepian-sea-of-bliss': [3, 4, 2], 'harold-budd-abandoned-cities': [3, 4, 3],
-  'demetrio-stratos-metrodora': [3, 5, 4], 'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des': [4, 5, 4],
-  'nocturnal-emissions-fruiting-body': [4, 5, 4], 'eivind-aarset-electronique-noire': [4, 5, 3], 'yezda-urfa-boris': [4, 5, 3], 'roberto-goyeneche-cantor-de-mi-barrio': [3, 4, 2],
-  'amalia-rodrigues-gostava-de-ser-quem-era': [4, 5, 2], 'king-sunny-ade-aura': [3, 4, 2],
-  'washington-phillips-the-key-to-the-kingdom': [4, 5, 4], 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri': [4, 5, 3],
-  '血肉果汁機-flesh-juicer-golden太子bro': [3, 3, 4], '血肉果汁機-flesh-juicer-深海童話': [3, 3, 4], '閃靈-失竊千年': [3, 3, 4], '血肉果汁機-flesh-juicer-血肉宮建宮蓋廟演唱會': [2, 3, 4],
-  '閃靈-永劫輪迴': [4, 3, 4], '閃靈-醒靈寺大決戰': [3, 4, 4], '林強-驚蟄': [4, 4, 3], 'venetian-snares-making-orange-things': [4, 4, 5],
-  'nurse-with-wound-homotopy-to-marie': [4, 4, 5], 'ryoji-ikeda-mort-aux-vaches': [3, 4, 5], 'harry-roesli-gang-philosophy-gang': [5, 5, 3],
-  'c-o-b-moyshe-mcstiff-and-the-tartan-lancers-of-the-sacred-he': [4, 5, 3], 'pholas-dactylus-concerto-delle-menti': [4, 5, 4],
-  'the-plastic-people-of-the-universe-egon-bondy-s-happy-hearts': [5, 4, 4], 'ganelin-trio-ancora-da-capo': [5, 4, 4],
-  'luis-russell-the-luis-russell-story-1929-1934': [4, 5, 4], 'raw-material-time-is': [4, 5, 3], 'alexander-von-schlippenbach-globe-unity': [5, 4, 5],
-  '裸のラリーズ-the-oz-tapes': [4, 4, 5], 'beverly-glenn-copeland-keyboard-fantasies': [5, 4, 2], 'charles-brackeen-rhythm-x': [4, 5, 4],
-  'magma-mekanik-destruktiw-kommandoh': [5, 4, 4], 'blur-the-great-escape': [3, 2, 1], 'oasis-dig-out-your-soul': [3, 1, 1],
-  'the-velvet-underground-squeeze': [2, 3, 1], 'stevie-wonder-eivets-rednow': [2, 3, 1], 'the-kinks-preservation-act-1': [2, 3, 1],
-  'metallica-reload': [2, 1, 3], 'weezer-van-weezer': [2, 2, 3], 'ramones-halfway-to-sanity': [2, 2, 3],
+  "limp bizkit|results may vary": [1, 1, 3], "eminem|the eminem show": [5, 1, 2], "low|double negative": [5, 3, 4],
+  "sophie|oil of every pearl's un-insides": [5, 2, 4], "don slepian|sea of bliss": [3, 4, 2], "harold budd|abandoned cities": [3, 4, 3],
+  "demetrio stratos|metrodora": [3, 5, 4], "étron fou leloublan|les trois fou's perdégagnent (au pays des...)": [4, 5, 4],
+  "nocturnal emissions|fruiting body": [4, 5, 4], "eivind aarset|électronique noire": [4, 5, 3], "yezda urfa|boris": [4, 5, 3], "roberto goyeneche|cantor de mi barrio": [3, 4, 2],
+  "amália rodrigues|gostava de ser quem era": [4, 5, 2], "king sunny adé|aura": [3, 4, 2],
+  "washington phillips|the key to the kingdom": [4, 5, 4], "otha turner & the rising star fife & drum band|everybody hollerin' goat": [4, 5, 3],
+  "血肉果汁機 flesh juicer|golden太子bro": [3, 3, 4], "血肉果汁機 flesh juicer|深海童話": [3, 3, 4], "閃靈|失竊千年": [3, 3, 4], "血肉果汁機 flesh juicer|血肉宮建宮蓋廟演唱會": [2, 3, 4],
+  "閃靈|永劫輪迴": [4, 3, 4], "閃靈|醒靈寺大決戰": [3, 4, 4], "林強|驚蟄": [4, 4, 3], "venetian snares|making orange things": [4, 4, 5],
+  "nurse with wound|homotopy to marie": [4, 4, 5], "ryoji ikeda|mort aux vaches": [3, 4, 5], "harry roesli gang|philosophy gang": [5, 5, 3],
+  "c.o.b.|moyshe mcstiff and the tartan lancers of the sacred heart": [4, 5, 3], "pholas dactylus|concerto delle menti": [4, 5, 4],
+  "the plastic people of the universe|egon bondy's happy hearts club banned": [5, 4, 4], "ganelin trio|ancora da capo": [5, 4, 4],
+  "luis russell|the luis russell story 1929-1934": [4, 5, 4], "raw material|time is...": [4, 5, 3], "alexander von schlippenbach|globe unity": [5, 4, 5],
+  "裸のラリーズ|the oz tapes": [4, 4, 5], "beverly glenn-copeland|...keyboard fantasies...": [5, 4, 2], "charles brackeen|rhythm x": [4, 5, 4],
+  "magma|mëkanïk dëstruktïw kömmandöh": [5, 4, 4], "blur|the great escape": [3, 2, 1], "oasis|dig out your soul": [3, 1, 1],
+  "the velvet underground|squeeze": [2, 3, 1], "stevie wonder|eivets rednow": [2, 3, 1], "the kinks|preservation act 1": [2, 3, 1],
+  "metallica|reload": [2, 1, 3], "weezer|van weezer": [2, 2, 3], "ramones|halfway to sanity": [2, 2, 3],
 };
 const CARDS = Object.assign({}, C0.cards);
 let stubbed = 0;
@@ -2581,6 +2581,50 @@ section('23 第 A 波（店主 11-16）：放水照位數機率（可重現、�
       }
     }
     ok(n >= 60, 'fixMain retry cases', n); }
+});
+
+section('24 組牌快取（第 B 波 WP2-0；SPEC-B §6.2、定稿 C5）：EN._noCache 開／關 → guestDef／trialDeck／radioPool 結果 JSON 相同（200 個 seed × 第 1–15 位）；記住的不共用物件；換卡池物件、換 trial 設定都對', () => {
+  const S = QUICK ? 40 : 200, CELLS = (C.tunes && C.tunes.order) || [];
+  ok(EN._noCache === false, '_noCache defaults to false', EN._noCache);
+  // 同一個呼叫：快取關（原本的寫法）、快取開（第一次算、第二次吃記住的）三次結果 JSON 相同
+  const both = (f, name) => {
+    let a, b, c;
+    try { EN._noCache = true; a = JSON.stringify(f()); } finally { EN._noCache = false; }
+    b = JSON.stringify(f()); c = JSON.stringify(f());
+    if (a === b && b === c) pass++; else ok(false, name, { off: a && a.slice(0, 160), on: b && b.slice(0, 160), again: c === b });
+  };
+  let n = 0;
+  for (let s = 0; s < S; s++) {
+    const run = EN.newRun(C, { seedKey: 'nocache-' + s, runNo: 1 + (s % 3), ace: TIERS[s % 3] });
+    for (let rd = 1; rd <= 3; rd++) {
+      EN.jumpTo(run, C, 5 * rd - 4);
+      run.order.forEach((id, i) => {
+        const pos = 5 * (rd - 1) + 1 + i;
+        both(() => EN.guestDef(run, C, id, pos), 'guestDef same with/without cache (seed ' + s + ', pos ' + pos + ')');
+        both(() => EN.trialDeck(C, id, pos, { seedKey: run.seedKey, runNo: run.runNo }), 'trialDeck (no main) same with/without cache (seed ' + s + ', pos ' + pos + ')');
+        n += 2;
+      });
+      if (CELLS.length) { const cell = CELLS[(s + rd) % CELLS.length]; both(() => EN.radioPool(run, C, cell), 'radioPool same with/without cache (seed ' + s + ', ' + cell + ')'); n++; }
+    }
+  }
+  ok(n >= S * 33, 'compared calls', n);
+  // 記住的牌單不外流：改了回傳的牌組（加星的複本、陣列），下一次同一組輸入照樣是原本的結果
+  { const run = EN.jumpTo(EN.newRun(C, { seedKey: 'nocache-mut', runNo: 1, ace: 'hall' }), C, 11);
+    const id = run.order[0], g1 = EN.guestDef(run, C, id, 11), j1 = JSON.stringify(g1);
+    const c0 = g1.deck[0], keep = C.cards[c0.id].c;
+    c0.c = 99; g1.deck.push(c0); g1.deck.reverse();
+    eq(JSON.stringify(EN.guestDef(run, C, id, 11)), j1, 'cached deck: mutating a returned deck does not leak into the next call');
+    ok(C.cards[c0.id].c === keep, 'returned cards are copies (content card untouched)'); }
+  // 換 trial 設定（同一個卡池物件：mainShare 0、minPool 大、難度階梯）、換卡池物件（只有核心＋客人牌單）：開／關一樣
+  const deckOf = (base, patch) => Object.assign({}, base, { trial: Object.assign({}, base.trial, { curve: Object.assign({}, base.trial.curve, { deck: Object.assign({}, base.trial.curve.deck, patch) }) }) });
+  const CORE = {}; for (const id of Object.keys(C.cards)) if (!C.cards[id].pool) CORE[id] = C.cards[id];
+  const VAR = [['mainShare 0', deckOf(C, { mainShare: 0 })], ['minPool 4000', deckOf(C, { minPool: 4000 })], ['minPool 1', deckOf(C, { minPool: 1 })],
+    ['tier 1', Object.assign({}, C, { trial: Object.assign({}, C.trial, { tiers: [{ curve: { deck: { floorBase: 6, mainShare: 1 } } }] }) })],
+    ['core cards only', Object.assign({}, C, { cards: CORE })], ['core cards, minPool 300', deckOf(Object.assign({}, C, { cards: CORE }), { minPool: 300 })]];
+  for (const [name, CV] of VAR) for (let s = 0; s < (QUICK ? 6 : 20); s++) for (const pos of [1, 4, 9, 15, 40, 120]) {
+    const id = ENEMY_IDS.filter(x => x !== 'man')[(s + pos) % (ENEMY_IDS.length - 1)];
+    for (const main of [undefined, 'c', 'o', 'h']) both(() => EN.trialDeck(CV, id, pos, { seedKey: 'nocache-v' + s, runNo: 1, main, tier: name === 'tier 1' ? 1 : 0 }), name + ': trialDeck same with/without cache (seed ' + s + ', pos ' + pos + ', main ' + main + ')');
+  }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

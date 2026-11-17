@@ -378,7 +378,7 @@ async function run() {
         const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.duelE; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, duelE: at, r1: s.pos('r1') && !s.pos('r1').hidden }; });
         const near = st.f && !st.f.hidden && Math.hypot(st.f.x - st.duelE[0], st.f.y - st.duelE[1]) <= 3;
         const ok = card && one && !one.title && one.notitle && /Eminem/i.test(one.text) && one.btns === 2 && one.cover && scrollOk(scOne) &&
-          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes('eminem-the-eminem-show') && st.bag.length === 8 && st.heads === 5 && !st.inside && near && st.r1;
+          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes("eminem|the eminem show") && st.bag.length === 8 && st.heads === 5 && !st.inside && near && st.r1;
         record(7, size, ok, `pickup ${JSON.stringify(one && { title: one.title, notitle: one.notitle, btns: one.btns, text: one.text.slice(0, 50) })}; relics offered ${rel}; night ${night}; ${JSON.stringify(st)}`);
       } catch (e) { record(7, size, false, 'error ' + e.message); }
       await ctx.close();
@@ -573,7 +573,7 @@ async function run() {
         await page.evaluate(() => window.DipLabDuel.play(window.DipLabEngine.policies.thoughtful(window.__lab.rawDuel(), window.DipLabEngine.makeRng(1), {}, window.DipLabContent)));
         await page.waitForFunction(() => window.DipLabDuel.debug().n >= 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 }).catch(() => {});
         const r = await page.evaluate(() => ({ tut: typeof window.DipLabTut, mask: !!document.querySelector('#tut svg'), d: window.__lab.duel(), thrown: window.__lab.rawDuel().e.thrown.map(c => c.id), script: !!window.__lab.rawDuel().script }));
-        record('21b', size, menu === 2 && r.tut === 'undefined' && !r.mask && r.d.eMax === 18 && r.script && r.thrown[0] === 'coldplay-mylo-xyloto', `buttons ${menu}; DipLabTut ${r.tut}; mask ${r.mask}; man ${r.d.eHp}/${r.d.eMax}; script ${r.script}; his first ${r.thrown[0]}`);
+        record('21b', size, menu === 2 && r.tut === 'undefined' && !r.mask && r.d.eMax === 18 && r.script && r.thrown[0] === "coldplay|mylo xyloto", `buttons ${menu}; DipLabTut ${r.tut}; mask ${r.mask}; man ${r.d.eHp}/${r.d.eMax}; script ${r.script}; his first ${r.thrown[0]}`);
       } catch (e) { record('21b', size, false, 'error ' + e.message); }
       await p2.ctx.close();
     }
@@ -1113,7 +1113,8 @@ async function run() {
         const sp = await page.evaluate(id => ({ own: !!document.querySelector('.lb-wall.own .lb-cv.store[data-cid="' + id + '"]'), ownN: document.querySelectorAll('.lb-wall.own .lb-cv').length, owned: window.__lab.owned().length,
           known: !!document.querySelector('.lb-wall.known .lb-cv[data-cid="' + id + '"]'), h: [...document.querySelectorAll('.lb-page .lb-h2')].map(x => x.textContent) }), kid);
         await jsClick(page, '.lb-page [data-a=close]'); await sleep(300);
-        const apexOut = e0.ids.every(id => !/^(radiohead-ok-computer|barney-wilen-zodiac|swans-filth)$/.test(id)) && await page.evaluate(ids => ids.every(id => !window.DipLabContent.cards[id].tier), e0.ids);
+        const aceIds = await page.evaluate(() => Object.values(window.DipLabContent.aces));   // 第 B 波：卡片 id 改 catalogId（含 | 與空白），不再寫死王牌 id 的正規式
+        const apexOut = aceIds.length === 3 && e0.ids.every(id => !aceIds.includes(id)) && await page.evaluate(ids => ids.every(id => !window.DipLabContent.cards[id].tier), e0.ids);
         const okKeepIds = JSON.stringify(e0.ids) === JSON.stringify(e0.want) && e0.ids.length > 0 && e0.ids.every(id => !e0.owned.includes(id) && (e0.entered.includes(id) || e0.drops.includes(id))) && (!took || e0.ids.includes(took) || e0.owned.includes(took));
         if (want(50)) record(50, size, e0.keep && e0.again && e0.scr <= 1 && scrollOk(sc50) && okKeepIds && JSON.stringify(ks.tiles) === JSON.stringify(e0.ids) && scrollOk(sc50b) &&
           kid && k1.kept === kid && k1.shelf && k1.shelf.own === true && k1.shelf.src === 'run' && k1.done && !k1.btn && k1.again === 'kept' && k1.runKept === kid && sp.own && sp.known && sp.ownN === sp.owned && apexOut,
@@ -1362,13 +1363,13 @@ async function run() {
     if (want(55)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
-        const BR = 'xtc-skylarking';
+        const BR = "xtc|skylarking";
         // 新分頁到主站頻率光譜：換成空白頁（只驗網址；不在這裡載主站）
         await ctx.route(/\/tune\/\?q=/, rt => rt.fulfill({ contentType: 'text/html', body: '<!doctype html><meta charset="utf-8"><title>tune</title>' }));
         await page.addInitScript(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); })))
           .observe(document, { childList: true, subtree: true }); });
         // 1. 第一次玩（沒有存檔）帶卡進來
-        await openTitle(page, Q('&fast=1&card=' + BR));
+        await openTitle(page, Q('&fast=1&card=' + encodeURIComponent(BR)));
         await sleep(300);
         const a = await page.evaluate(BR => { const U = window.DipLabContent.seeds.ui, al = window.DipLabContent.cards[BR].album, ls = JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null');
           return { search: location.search, href: location.href, bring: window.__lab.save.bring, ls: ls && ls.bring, toasts: window.__toasts.slice(), want: U.bringToastFirst.replace('{album}', al), U }; }, BR);
@@ -1424,15 +1425,15 @@ async function run() {
           !!pop && popUrl.indexOf(ci.want.replace(/^\//, '')) >= 0 && snd0.on === true && snd1.on === true && snd1.pref !== 'off' && snd1.ss !== 'off' && snd1.open;
         // 6. ?card=王牌 → 店裡沒有、不收；?card=（不是第一次玩）→ 下一趟那句
         await page.evaluate(() => { window.__toasts.length = 0; });
-        await openTitle(page, Q('&fast=1&card=radiohead-ok-computer'));
+        await openTitle(page, Q('&fast=1&card=' + encodeURIComponent("radiohead|ok computer")));
         const bad = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringMissing }));
-        await openTitle(page, Q('&fast=1&card=bob-dylan-john-wesley-harding'));
-        const g2 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringToast.replace('{album}', window.DipLabContent.cards['bob-dylan-john-wesley-harding'].album) }));
-        const badOk = !/card=/.test(bad.search) && bad.bring === null && bad.toasts.includes(bad.want) && !/card=/.test(g2.search) && g2.bring && g2.bring.id === 'bob-dylan-john-wesley-harding' && g2.toasts.includes(g2.want);
+        await openTitle(page, Q('&fast=1&card=' + encodeURIComponent("bob dylan|john wesley harding")));
+        const g2 = await page.evaluate(() => ({ search: location.search, bring: window.__lab.save.bring, toasts: window.__toasts.slice(), want: window.DipLabContent.seeds.ui.bringToast.replace('{album}', window.DipLabContent.cards["bob dylan|john wesley harding"].album) }));
+        const badOk = !/card=/.test(bad.search) && bad.bring === null && bad.toasts.includes(bad.want) && !/card=/.test(g2.search) && g2.bring && g2.bring.id === "bob dylan|john wesley harding" && g2.toasts.includes(g2.want);
         // 7. 兩個分頁（審查）：遊戲分頁 A 開著（記憶體裡是剛才那張 Dylan）→ 主站「帶去店裡對決」開出遊戲分頁 C 收下 BR；
         //    C 開著時 A 存一次檔（不准把 C 收的蓋掉）→ 關掉 C → A 推門：挑種子第一張是 BR
         const Cp = await ctx.newPage(); track(Cp);
-        await openTitle(Cp, Q('&fast=1&card=' + BR));
+        await openTitle(Cp, Q('&fast=1&card=' + encodeURIComponent(BR)));
         const c7 = await Cp.evaluate(() => (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null);
         await page.bringToFront();
         const a7 = await page.evaluate(() => { window.__lab.own([], 'run'); return { mem: window.__lab.save.bring, ls: (JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null') || {}).bring || null }; });

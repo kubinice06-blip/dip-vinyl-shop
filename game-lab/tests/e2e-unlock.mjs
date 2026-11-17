@@ -33,7 +33,7 @@ const want = n => !ONLY.length || ONLY.includes(n);
 const SHOTS = process.env.UNLOCK_SHOTS || '';
 const QA = (extra = '') => Q('&fast=1&apex=1' + extra);
 const C = (page, f, a) => page.evaluate(f, a);
-const RALLIZES = 'les-rallizes-denudes-77-live', SCUM = 'napalm-death-scum';
+const RALLIZES = "les rallizes dénudés|'77 live", SCUM = "napalm death|scum";
 
 const errs = page => (page._errors || []).filter(e => !/favicon/.test(e));
 // 吐司：頁面一載入就記（標題畫面的一次性吐司在第一個畫面就出）

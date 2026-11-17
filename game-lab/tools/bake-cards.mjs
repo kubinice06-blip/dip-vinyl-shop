@@ -1,7 +1,7 @@
 // bake-cards.mjs：把 tools/deck-lists.json 的專輯清單烘成 game-lab/cards.js＋bins.js（SPEC §4.3、§7.2；v4：SPEC-v4 §2.2.1）。
 //
 // v4（SPEC-v4 §2.2.1）：
-//   - deck-lists.json 裡 `_` 開頭的鍵是設定，不是卡組：_region（{cardId: tw|jp|zh|xx} 覆寫）、_bins（每一區的 rule）、_ost（原聲帶旗標）。
+//   - deck-lists.json 裡 `_` 開頭的鍵是設定，不是卡組：_region（{卡片 id: tw|jp|zh|xx} 覆寫）、_bins（每一區的 rule）、_ost（原聲帶旗標）。
 //   - region 值域 tw｜jp｜zh｜xx：先看 _region，再看 TW／JP／ZH 正規式；王菲＝zh。
 //   - 推薦語強制：ace_*、gift_*、bargain、gold。
 //   - apex_trial（頂點卡純輔助卡試做 ?apex=1，2026-11-15）：tier 照 seed（不是頂點卡就失敗）、星數照王牌烘（ACE_STATS：那軸 7、其他 1）、不強制推薦語、
@@ -17,8 +17,33 @@
 //   node game-lab/tools/bake-cards.mjs --links-only # v2：只補四平台連結（appleUrl／spotifyUrl／bandcampUrl），其他欄位原封不動
 //   node game-lab/tools/bake-cards.mjs --covers-only # v2 fix：只套 LOCAL_COVER_SKIP（本機封面是錯的那幾張改用遠端 coverUrl）＋tools/cover-overrides.json＋重算 subs、tune，不打 Firestore、不重抓連結
 //     （--covers-only --no-verify＝完全不打網路；主站重建 data/mood/card-moods.json 之後用這條更新頻率）
+//   node game-lab/tools/bake-cards.mjs --pool-only   # 第 B 波：只烘精選新卡 cards-pool.js＋cards-media.json（不打網路、不碰 cards.js／bins.js；完整烘焙最後也跑這段）
 //
-// 封面覆寫（店主 11-13：「有些封面用成了 cd 版或其他特別版……我只要正常版就好」）：tools/cover-overrides.json {cardId: {coverUrl, source, note}}
+// 精選新卡（第 B 波 SPEC-B §1.2–§1.4，2026-11-16）：tools/pool-list.json（make-pool-list.mjs 從 v5/pool5k 產；4,677 張＝精選 5,000 扣掉核心）→
+//   cards-pool.js（同步；UMD window.DipLabPool／module.exports）＝邏輯＋名字，照欄存（每欄一個陣列、第 i 張＝各欄第 i 個；順序＝pool-list.json）：
+//     { v, n, G:[曲風], K:[箱 key], T:[頻率], R:['jp','tw','xx','zh'], A:[藝人（同藝人只寫一次）],
+//       art:[藝人索引跟上一張的差（第一張跟 0 比）], alb:[專輯], year:[年], c:[經典], o:[冷門], h:[硬蕊], bin:[箱索引], tune:[頻率索引], gen:[[曲風索引…]], reg:[地區索引] }
+//     照欄存不照列存（SPEC-B §1.3 原本是 rows 一列一張）：數字欄跟專輯名分開壓得比較好，gzip 97.7 → 82 KB（首屏硬門檻 740 KB；rulings W1b-1）
+//   cards-media.json（標題畫好後才 fetch）＝{ v, rows:[[封面碼, 試聽碼], …] }，順序同 rows：
+//     封面碼 c<mbid>＝CAA release front-250、g<mbid>＝release-group front-250、C<mbid>/<n>＝release <n>-250.jpg、a<d><path>＝is<d>-ssl.mzstatic.com 300x300bb、
+//     s<hex>＝i.scdn.co ab67616d00001e02<hex>、u<網址>＝原樣；試聽碼＝去掉 https://audio-ssl.itunes.apple.com/itunes-assets/（https:// 開頭＝原樣）。
+//     解碼在 content.js C.attachMedia（兩邊同一套；這裡每張都驗「編了再解＝原網址」）。
+//   v＝兩個檔內容的 sha1 前 8 碼（同一份輸入重烘一字不差；content.js C.poolVersion、媒體網址 ?v= 都用它，版本不合 attachMedia 不套）。
+//   三軸、曲風、年＝seed 原字串那一列（MISSING-IN-SEED）；頻率＝card-moods（NO-TUNE）；地區＝pool-list 的（pool5k 判法；_region 覆寫照套）；
+//   不烘平台連結（唱片資訊退回搜尋）、不打網路驗封面試聽（pool5k check.md 逐張驗過；改名單＝回 pool5k 工具重產、重跑 pool5k/tools/check.mjs）。
+//   擋（任一條 exit 1、不寫檔）：MISSING-IN-SEED、POOL-APEX（seed 有 tier）、POOL-DUP-CORE（撞核心 catalogId）、POOL-DUP、NO-TUNE、POOL-REGION、POOL-STARS、
+//     POOL-BIN（沒有這個箱）、POOL-BIN-RULE（箱子規則；subs 從 card-subgenres 現算）、POOL-RARITY（FEATURE 只能史詩／傳奇、其他只能普通／稀有／獨特）、
+//     POOL-COVER-HOST（rewrite 後 https 且主機是 coverartarchive.org／is1–5-ssl.mzstatic.com／i.scdn.co）、POOL-PREVIEW（https://audio-ssl.itunes.apple.com/）、POOL-MEDIA-CODE。
+//
+// 卡片 id（第 B 波 SPEC-B §1.1，2026-11-16）：一律是主站 catalogId＝(藝人+'|'+專輯).toLowerCase()、斜線換連字號（＝主站 cardIdOf、Firestore 唱片櫃文件 id）。
+//   之前的 id 是舊 slug（oldSlug，下面；只留給 migrate-ids.mjs／content.js C.legacyIds 當舊存檔對照）。下面說的「卡片 id」都是 catalogId：
+//   _region、pitches.json、cover-overrides.json、LOCAL_COVER_SKIP、LINK_OVERRIDES、shops/dip.json 的鍵／值都已換成 catalogId（tools/migrate-ids.mjs）。
+//   --covers-only／--links-only（REUSE 路）讀現有 cards.js 時，鍵一律用藝人／專輯重算成 catalogId（舊 slug 鍵的 cards.js 也吃，順序照舊）。
+// 箱子 bin（第 B 波 SPEC-B §1.4）：在 bin_<key> 組的卡烘 bin: '<key>'（不在箱子的不寫）；content.js 用它推全卡池那一份 C.bins[k].all。三條路都算。
+// 封面縮圖 rewrite（三條路都跑；REUSE 路對每張現有 coverUrl 也跑一次，覆寫的不跑）：CAA front-250、Spotify 300px、Apple 300x300bb（bb／bf／cc／-n 都改；
+//   第 B 波補 bf：Luis Russell 600x600bf、林生祥《野蓮出庄》1000x1000bf 原本沒縮）；archive.org 綁機器的直連（iaNNN.us.archive.org／dnNNN.ca.archive.org）
+//   改 CAA 正式網址 release/<mbid>/<圖 id>-250.jpg（同 v5/pool5k tools/data.mjs thumbOf）。
+// 封面覆寫（店主 11-13：「有些封面用成了 cd 版或其他特別版……我只要正常版就好」）：tools/cover-overrides.json {卡片 id: {coverUrl, source, note}}
 //   三條路（完整烘焙、--covers-only、--links-only）都優先用它，重烘不會把修好的封面蓋回去；有覆寫的卡不給 localCover（畫面優先讀本機圖），
 //   也不做 CAA→Apple 300px 的替換（Apple 那張常是再版／系列圖：Argerich 拉三、石頭記就是這樣換錯的）；覆寫的網址打不開就失敗，不退回 iTunes。
 // 子曲風（v5 店面改版：INDIE ROCK／INDIE POP／CITY POP 三區的上架規則 sub）：../card-subgenres.json 的 "藝人|專輯" → subs（子曲風路徑），烘進每張卡（空的不寫）。
@@ -40,8 +65,8 @@
 //   Firestore card_catalog（公開 REST）     coverUrl（只在烘焙時讀；頁面執行期不碰 Firestore）
 //   iTunes lookup                         Firestore 封面在 CAA／archive.org（慢、偶爾 500）、沒封面或打不開時，用 Apple 索引裡的專輯 id 取 300px 封面
 //   ../art/covers/<slug>.jpg              本機封面（有就給 localCover）
-//   tools/pitches.json                    推薦語 {cardId:{text, tag}}
-//   tools/cover-overrides.json            封面覆寫 {cardId:{coverUrl, source, note}}（見上）
+//   tools/pitches.json                    推薦語 {卡片 id:{text, tag}}
+//   tools/cover-overrides.json            封面覆寫 {卡片 id:{coverUrl, source, note}}（見上）
 //   ../card-subgenres.json                子曲風 {"藝人|專輯": [路徑]}（店主網站的子曲風樹；只在烘焙時讀）
 //   ../data/mood/card-moods.json          頻率座標（_h 雜湊＋cards [x,y,z,把握]＋thresholds；只在烘焙時讀，頁面執行期不載這份 600 KB）
 //
@@ -49,7 +74,8 @@
 // 從 $S/design/ref/build-cards.mjs 擴寫。
 import fs from 'fs';
 import path from 'path';
-import { ruleMisses as ruleMissesCC, sectionFronts } from './check-covers.mjs';
+import crypto from 'crypto';
+import { ruleMisses as ruleMissesCC, sectionFronts, rarityOf } from './check-covers.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -59,10 +85,12 @@ const VERIFY = !ARGV.has('--no-verify');
 const LINKS_ONLY = ARGV.has('--links-only');
 const COVERS_ONLY = ARGV.has('--covers-only');
 const REUSE = LINKS_ONLY || COVERS_ONLY;      // 拿現有的 cards.js 當底
+const POOL_ONLY = ARGV.has('--pool-only');    // 只烘精選新卡（cards-pool.js＋cards-media.json）
+const POOL_LIST = JSON.parse(fs.readFileSync(path.join(HERE, 'pool-list.json'), 'utf8'));
 // 本機封面（art/covers）是別的版本、看不出是哪張專輯的：不給 localCover，改用遠端 coverUrl（店主：封面要看得出專輯）
 //   art/covers 那張檔案本身也要在主站換掉（不在 game-lab 範圍）
 const LOCAL_COVER_SKIP = {
-  'john-coltrane-blue-train': '本機圖是 10 CD 合輯的封面，不是 Blue Note 1577（v2 fix O9）'
+  "john coltrane|blue train": '本機圖是 10 CD 合輯的封面，不是 Blue Note 1577（v2 fix O9）'
 };
 const WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 
@@ -96,11 +124,13 @@ const REGION_OVERRIDE = lists._region || {};
 const BIN_RULES = lists._bins || {};
 const OST_IDS = lists._ost || [];
 const OST_RE = /(original (motion picture )?(soundtrack|score))|soundtrack from|music from the (motion picture|film|original|soundtrack)|サウンドトラック|原聲帶|原聲專輯/i;
-// 卡片 id：拉丁字去重音、保留中日文
-const cardId = (a, b) => (a + '-' + b).normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC').toLowerCase()
+// 舊卡片 id（第 B 波之前）：拉丁字去重音、保留中日文、截 60。bake 不再用它當 id（5,000 張會撞：韓文／俄文／泰文全變空字串、截 60 撞號），
+//   只留著當紀錄：tools/migrate-ids.mjs 與 content.js C.oldSlug 照抄這條推舊存檔的對照表（改這條＝老存檔遷不過去）。
+const oldSlug = (a, b) => (a + '-' + b).normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC').toLowerCase()
   .replace(/[^a-z0-9㐀-鿿぀-ヿ]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 // art/covers 的檔名規則（scripts/fetch-shop-covers.py）：小寫、非英數換 -、截 60
 const coverSlug = (a, b) => (a + '-' + b).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+// 卡片 id＝主站 catalogId（index.html cardIdOf、build-pool-index.mjs、content.js C.catalogId 同一條）
 const catalogId = (a, b) => (a + '|' + b).toLowerCase().replace(/\//g, '-').trim();
 
 const problems = [];
@@ -113,12 +143,12 @@ const seedRow = s => { const [a, b] = s.split('|'); return seed.find(r => r[0] =
 const DISPLAY_GROUPS = new Set([]);
 const APEX_TRIAL = 'apex_trial';   // 頂點卡純輔助卡試做（見檔頭）
 const ACE_OF = {};
-for (const [group, arr] of Object.entries(lists)) if (group.startsWith('ace_')) for (const s of arr) { const r = seedRow(s); if (r) ACE_OF[cardId(r[0], r[1])] = group.slice(4); }
+for (const [group, arr] of Object.entries(lists)) if (group.startsWith('ace_')) for (const s of arr) { const r = seedRow(s); if (r) ACE_OF[catalogId(r[0], r[1])] = group.slice(4); }
 for (const [group, arr] of Object.entries(lists)) if (!group.startsWith('_')) for (const s of arr) {
   const r = seedRow(s);
   if (!r) { problems.push('MISSING-IN-SEED ' + s + ' [' + group + ']'); continue; }
   const [artist, album, c, o, h, genres, year, , tier] = r;
-  const id = cardId(artist, album);
+  const id = catalogId(artist, album);
   const aceTier = group.startsWith('ace_') ? group.slice(4) : group === APEX_TRIAL ? (tier || null) : (DISPLAY_GROUPS.has(group) && tier && ACE_OF[id] === tier) ? tier : null;
   if (group === APEX_TRIAL && !tier) problems.push('APEX-TRIAL-NOT-APEX ' + s + '（seed 沒有 tier）');
   if (tier && !aceTier) problems.push('APEX-AS-NORMAL ' + s + ' (' + tier + ') [' + group + ']');
@@ -150,9 +180,10 @@ for (const [id, p] of Object.entries(pitches)) {
 // v4：junk 改名 bargain（SPEC-v4 §2.2.1）
 const needPitch = g => /^(ace_|gift_)/.test(g) || g === 'bargain' || g === 'gold';
 for (const id of Object.keys(cards)) if (groupsOf[id].some(needPitch) && !cards[id].pitch) problems.push('NO-PITCH ' + id);
+const POOL_IDS = new Set((POOL_LIST.rows || []).map(r => catalogId(r[0], r[1])));   // _region 也可以覆寫精選新卡（--pool-only 套）
 for (const id of Object.keys(REGION_OVERRIDE)) {
   if (!['tw', 'jp', 'zh', 'xx'].includes(REGION_OVERRIDE[id])) problems.push('BAD-REGION-OVERRIDE ' + id + '=' + REGION_OVERRIDE[id]);
-  if (!cards[id]) problems.push('REGION-OVERRIDE-FOR-UNKNOWN-CARD ' + id);
+  if (!cards[id] && !POOL_IDS.has(id)) problems.push('REGION-OVERRIDE-FOR-UNKNOWN-CARD ' + id);
 }
 for (const id of OST_IDS) if (!cards[id]) problems.push('OST-FLAG-FOR-UNKNOWN-CARD ' + id);
 
@@ -164,7 +195,7 @@ const NOT_EXCLUSIVE = new Set(['gold', 'listen', 'stake']);   // v3 唱片櫃／
 const SHOP = JSON.parse(fs.readFileSync(path.join(LAB, 'shops/dip.json'), 'utf8'));
 function buildBins() {
   const probs = [], dip = {};
-  const idOf = s => { const r = seedRow(s); return r ? cardId(r[0], r[1]) : null; };
+  const idOf = s => { const r = seedRow(s); return r ? catalogId(r[0], r[1]) : null; };
   const uses = {};         // id -> [{g, cat}]（只看「排他」組：牌組、禮物、特價箱、王牌、掉牌、箱子）
   for (const [g, arr] of Object.entries(lists)) {
     if (g.startsWith('_') || NOT_EXCLUSIVE.has(g)) continue;
@@ -199,7 +230,7 @@ function buildBins() {
   for (const k of Object.keys(dip)) if (!ordered[k]) ordered[k] = dip[k];
   return { dip: ordered, probs };
 }
-if (!REUSE) {
+if (!REUSE && !POOL_ONLY) {
   problems.push(...buildBins().probs);
   // 卡單或箱子本身就有問題：不必先打網路（封面／試聽要幾分鐘）
   if (problems.length) {
@@ -212,6 +243,9 @@ if (!REUSE) {
 const rewrite = u => {
   if (!u) return '';
   u = String(u).trim();
+  // archive.org 綁機器的直連 → CAA 正式網址（會轉到現在活著的機器；同 v5/pool5k tools/data.mjs thumbOf）
+  const ia = u.match(/^https?:\/\/[^/]*archive\.org\/(?:\d+\/items|download)\/mbid-([0-9a-f-]{36})\/mbid-\1-(\d+)(?:_thumb\d*)?\.(?:jpe?g|png|gif)$/i);
+  if (ia && !/coverartarchive\.org/.test(u)) return 'https://coverartarchive.org/release/' + ia[1] + '/' + ia[2] + '-250.jpg';
   if (/coverartarchive\.org/.test(u)) {
     if (/\/front$/.test(u)) return u + '-250';
     if (/\/front-\d+(\.jpg)?$/.test(u)) return u.replace(/\/front-\d+(\.jpg)?$/, '/front-250');
@@ -219,9 +253,125 @@ const rewrite = u => {
     return u;
   }
   if (/i\.scdn\.co\/image\/ab67616d0000b273/.test(u)) return u.replace('ab67616d0000b273', 'ab67616d00001e02');
-  if (/mzstatic\.com/.test(u)) return u.replace(/\/\d+x\d+(bb|cc|-\d+)?\.(jpg|png|webp)$/, '/300x300bb.$2');
+  if (/mzstatic\.com/.test(u)) return u.replace(/\/\d+x\d+(bb|bf|cc|-\d+)?\.(jpg|png|webp)$/, '/300x300bb.$2');   // bf：第 B 波補（原本漏了，600x600bf／1000x1000bf 沒縮）
   return u;
 };
+
+// ---- 精選新卡（第 B 波 SPEC-B §1.3／§1.4；--pool-only，完整烘焙最後也跑）→ cards-pool.js＋cards-media.json ----
+const CAA = 'https://coverartarchive.org/', MZ = /^https:\/\/is(\d)-ssl\.mzstatic\.com\/image\/thumb\/(.+)\/300x300bb\.jpg$/, SCDN = 'https://i.scdn.co/image/ab67616d00001e02';
+const PREVIEW_BASE = 'https://audio-ssl.itunes.apple.com/itunes-assets/';
+function coverCode(u) {
+  let m;
+  if ((m = /^https:\/\/coverartarchive\.org\/release\/([0-9a-f-]{36})\/front-250$/.exec(u))) return 'c' + m[1];
+  if ((m = /^https:\/\/coverartarchive\.org\/release-group\/([0-9a-f-]{36})\/front-250$/.exec(u))) return 'g' + m[1];
+  if ((m = /^https:\/\/coverartarchive\.org\/release\/([0-9a-f-]{36})\/(\d+)-250\.jpg$/.exec(u))) return 'C' + m[1] + '/' + m[2];
+  if ((m = MZ.exec(u))) return 'a' + m[1] + m[2];
+  if ((m = /^https:\/\/i\.scdn\.co\/image\/ab67616d00001e02([0-9a-f]+)$/.exec(u))) return 's' + m[1];
+  return 'u' + u;
+}
+// 解碼＝content.js C.attachMedia 那一套（改這裡要一起改那裡；下面每張都驗編了再解＝原網址）
+function coverOf(k) {
+  k = String(k || ''); const t = k[0], r = k.slice(1);
+  if (t === 'c') return CAA + 'release/' + r + '/front-250';
+  if (t === 'g') return CAA + 'release-group/' + r + '/front-250';
+  if (t === 'C') { const i = r.indexOf('/'); return CAA + 'release/' + r.slice(0, i) + '/' + r.slice(i + 1) + '-250.jpg'; }
+  if (t === 'a') return 'https://is' + r[0] + '-ssl.mzstatic.com/image/thumb/' + r.slice(1) + '/300x300bb.jpg';
+  if (t === 's') return SCDN + r;
+  if (t === 'u') return r;
+  return '';
+}
+const previewCode = u => String(u || '').indexOf(PREVIEW_BASE) === 0 ? u.slice(PREVIEW_BASE.length) : String(u || '');
+const previewOf = k => !k ? '' : /^https:\/\//.test(k) ? k : PREVIEW_BASE + k;
+const COVER_HOST = /^(coverartarchive\.org|is[1-5]-ssl\.mzstatic\.com|i\.scdn\.co)$/;
+function bakePool() {
+  const probs = [];
+  const rows = Array.isArray(POOL_LIST.rows) ? POOL_LIST.rows : [];
+  if (!rows.length) probs.push('POOL-LIST-EMPTY tools/pool-list.json 沒有 rows');
+  // 核心（deck-lists 推的那一份；跟 cards.js 同一組 catalogId）：新卡不准撞
+  const coreIds = new Set(Object.keys(cards));
+  const seedExact = new Map();
+  for (const r of seed) { const k = r[0] + '\u0000' + r[1]; if (!seedExact.has(k)) seedExact.set(k, r); }
+  const seen = new Set(), out = [];
+  for (const row of rows) {
+    const [a, b, bin, region0, thumb0, preview] = row;
+    const tag = a + '|' + b;
+    const r = seedExact.get(a + '\u0000' + b);
+    if (!r) { probs.push('MISSING-IN-SEED ' + tag + '（pool-list.json 的藝人＋專輯要等於 seed_cards.json 原字串）'); continue; }
+    const [artist, album, c, o, h, genres, year, , tier] = r;
+    const id = catalogId(artist, album);
+    if (tier) probs.push('POOL-APEX ' + tag + '（seed tier=' + tier + '；頂點卡不進精選池）');
+    if (coreIds.has(id)) probs.push('POOL-DUP-CORE ' + id + '（核心 cards.js 已有；pool-list.json 只收核心以外的）');
+    if (seen.has(id)) probs.push('POOL-DUP ' + id); seen.add(id);
+    const tune = tuneOf(artist, album);
+    if (!tune) probs.push('NO-TUNE ' + tag + '（data/mood/card-moods.json 查不到；catalogId=' + id + '）');
+    const region = REGION_OVERRIDE[id] || region0;
+    if (!['tw', 'jp', 'zh', 'xx'].includes(region)) probs.push('POOL-REGION ' + id + ' region=' + region);
+    if (![c, o, h].every(x => Number.isInteger(x) && x >= 1 && x <= 5)) probs.push('POOL-STARS ' + id + ' ' + [c, o, h].join('/') + '（非頂點卡每軸 1–5 星）');
+    const card = { id, artist, album, year, genres: genres || [], region, c, o, h, tier: null, subs: subsOf(artist, album) };
+    const M = BIN_RULES[bin];
+    if (!M || !M.rule) probs.push('POOL-BIN ' + id + ' bin=' + bin + '（deck-lists.json _bins 沒有這個箱）');
+    else { const miss = ruleMisses(M.rule, card); if (miss.length) probs.push('POOL-BIN-RULE ' + bin + ' ' + id + ' ' + miss.join(',')); }
+    const rar = rarityOf(card);
+    if (bin === 'feature' ? !['epic', 'legendary'].includes(rar) : !['common', 'rare', 'uncommon'].includes(rar)) probs.push('POOL-RARITY ' + bin + ' ' + id + ' ' + rar);
+    const thumb = rewrite(thumb0);
+    let host = ''; try { const U = new URL(thumb); host = U.protocol === 'https:' ? U.hostname : ''; } catch (_) { host = ''; }
+    if (!COVER_HOST.test(host)) probs.push('POOL-COVER-HOST ' + id + ' ' + thumb);
+    if (!/^https:\/\/audio-ssl\.itunes\.apple\.com\//.test(String(preview || ''))) probs.push('POOL-PREVIEW ' + id + ' ' + preview);
+    const cc = coverCode(thumb), pc = previewCode(preview);
+    if (coverOf(cc) !== thumb || previewOf(pc) !== preview) probs.push('POOL-MEDIA-CODE ' + id + '（編碼再解碼對不上：' + thumb + '）');
+    out.push({ artist, album, year, c, o, h, bin, tune, genres: genres || [], region, cc, pc });
+  }
+  if (probs.length) {
+    console.log('POOL PROBLEMS (' + probs.length + '):'); probs.slice(0, 200).forEach(p => console.log('  ' + p));
+    if (probs.length > 200) console.log('  …（另 ' + (probs.length - 200) + ' 條）');
+    console.log('cards-pool.js / cards-media.json NOT written.');
+    return false;
+  }
+  // 表：曲風、頻率排序；箱＝_bins 的順序；地區固定；藝人照第一次出現的順序
+  const G = [...new Set(out.flatMap(x => x.genres))].sort();
+  const K = Object.keys(BIN_RULES);
+  const T = [...new Set(out.map(x => x.tune))].sort();
+  const R = ['jp', 'tw', 'xx', 'zh'];
+  const A = [...new Set(out.map(x => x.artist))];
+  const ai = new Map(A.map((a, i) => [a, i]));
+  const mrow = out.map(x => [x.cc, x.pc]);
+  const J = v => JSON.stringify(v);
+  const lines = a => '[\n' + a.map(J).join(',\n') + '\n]';
+  const art = out.map((x, i) => ai.get(x.artist) - (i ? ai.get(out[i - 1].artist) : 0));
+  const body = '"n":' + out.length + ',\n"G":' + J(G) + ',\n"K":' + J(K) + ',\n"T":' + J(T) + ',\n"R":' + J(R) + ',\n"A":' + lines(A) +
+    ',\n"art":' + J(art) + ',\n"alb":' + lines(out.map(x => x.album)) + ',\n"year":' + J(out.map(x => x.year)) +
+    ',\n"c":' + J(out.map(x => x.c)) + ',\n"o":' + J(out.map(x => x.o)) + ',\n"h":' + J(out.map(x => x.h)) +
+    ',\n"bin":' + J(out.map(x => K.indexOf(x.bin))) + ',\n"tune":' + J(out.map(x => T.indexOf(x.tune))) +
+    ',\n"gen":' + J(out.map(x => x.genres.map(g => G.indexOf(g)))) + ',\n"reg":' + J(out.map(x => R.indexOf(x.region)));
+  const mbody = '"rows":[\n' + mrow.map(J).join(',\n') + '\n]';
+  const v = crypto.createHash('sha1').update(body + '\n' + mbody).digest('hex').slice(0, 8);
+  const binN = {}; for (const x of out) binN[x.bin] = (binN[x.bin] || 0) + 1;
+  const kinds = {}; for (const x of out) kinds[x.cc[0]] = (kinds[x.cc[0]] || 0) + 1;
+  const poolJs = `/* cards-pool.js：由 tools/bake-cards.mjs --pool-only 產生，請勿手改（改名單＝回 v5/pool5k 工具重產 tools/pool-list.json，再重烘）。
+ * 精選新卡 ${out.length} 張（精選 5,000 張扣掉核心 cards.js 已有的）的邏輯＋名字；封面／試聽在 cards-media.json（標題畫好後才抓），平台連結不烘。
+ * content.js 展開成 C.cards（鍵＝catalogId；pool: true）：{ id, artist, album, year, genres, region, c, o, h, tier: null, coverUrl: null, localCover: null,
+ *   previewUrl: '', tags, pitch: null, tune, bin, pool: true }。v＝內容雜湊（C.poolVersion；cards-media.json 的 v 要一樣才套）。
+ * 照欄存（第 i 張＝各欄第 i 個；順序＝tools/pool-list.json，照 catalogId）：art＝藝人索引(A) 跟上一張的差、alb 專輯、year、c 經典、o 冷門、h 硬蕊、
+ *   bin 箱索引(K)、tune 頻率索引(T)、gen [曲風索引(G)…]、reg 地區索引(R)。
+ * 箱：${K.map(k => k + ' ' + (binN[k] || 0)).join('、')}
+ */
+(function (root, factory) {
+  var pool = factory();
+  if (typeof module === 'object' && module.exports) module.exports = pool;
+  else root.DipLabPool = pool;
+})(typeof self !== 'undefined' ? self : this, function () {
+  'use strict';
+  return {"v":${J(v)},${body}};
+});
+`;
+  const mediaJson = '{"v":' + J(v) + ',\n' + mbody + '}\n';
+  fs.writeFileSync(path.join(LAB, 'cards-pool.js'), poolJs);
+  fs.writeFileSync(path.join(LAB, 'cards-media.json'), mediaJson);
+  console.log('wrote cards-pool.js:', out.length, 'cards, v=' + v, '(' + (poolJs.length / 1024).toFixed(1) + ' KB raw)');
+  console.log('wrote cards-media.json:', out.length, 'rows (' + (mediaJson.length / 1024).toFixed(1) + ' KB raw); covers', Object.entries(kinds).map(([k, n]) => k + ' ' + n).join('、'));
+  return true;
+}
+if (POOL_ONLY) process.exit(bakePool() ? 0 : 1);
 
 async function batchGetCovers(ids) {
   const FS = 'https://firestore.googleapis.com/v1/projects/price-manager-e8846/databases/(default)/documents';
@@ -272,15 +422,26 @@ async function pool(items, n, fn) {
 }
 
 if (REUSE) {
-  // 只補連結／只修本機封面：拿現有的 cards.js（封面、試聽、推薦語都不動）
+  // 只補連結／只修本機封面：拿現有的 cards.js（試聽、推薦語都不動；封面只重跑縮圖 rewrite）
   const { createRequire } = await import('module');
   const existing = createRequire(import.meta.url)(path.join(LAB, 'cards.js'));
   for (const k of Object.keys(cards)) delete cards[k];
-  for (const [k, v] of Object.entries(existing)) cards[k] = Object.assign({}, v, { subs: subsOf(v.artist, v.album), tune: tuneOf(v.artist, v.album) });
   problems.length = 0;
+  // 鍵一律用藝人／專輯重算成 catalogId（第 B 波：舊 slug 鍵的 cards.js 也吃；順序照舊）；封面照新的 rewrite 再縮一次（覆寫的下面另套，不跑）
+  for (const v of Object.values(existing)) {
+    const id = catalogId(v.artist, v.album);
+    if (cards[id]) { problems.push('REUSE-DUP ' + id + '（cards.js 兩張算出同一個 catalogId）'); continue; }
+    const coverUrl = COVER_OVERRIDES[id] ? v.coverUrl : (rewrite(v.coverUrl) || null);
+    cards[id] = Object.assign({}, v, { id, coverUrl, subs: subsOf(v.artist, v.album), tune: tuneOf(v.artist, v.album) });
+  }
   for (const [k, v] of Object.entries(cards)) if (!v.tune) problems.push('NO-TUNE ' + k + '（data/mood/card-moods.json 查不到；catalogId=' + catalogId(v.artist, v.album) + '）');
 }
 const ids = Object.keys(cards);
+// 箱子 bin（第 B 波 SPEC-B §1.4）：在 bin_<key> 組的卡＝那個 key（各區不重疊歸 buildBins 的 BIN-OVERLAP 擋）；不在箱子的不寫
+for (const id of ids) {
+  const g = (groupsOf[id] || []).find(x => x.startsWith('bin_'));
+  if (g) cards[id].bin = g.slice(4); else delete cards[id].bin;
+}
 const fsCovers = REUSE ? {} : await batchGetCovers(ids);
 if (!REUSE) for (const id of ids) {
   const c = cards[id];
@@ -366,10 +527,10 @@ function bandcampMatches(url, artist, album) {
   if (!al || slug.indexOf(al) < 0) return false;
   return BC_EXTRA.test(slug.replace(al, '').replace(/^the/, ''));
 }
-// 平台連結逐張覆寫：{cardId: {appleUrl?, spotifyUrl?, bandcampUrl?}}；'' ＝不給那個鈕（唱片資訊退回搜尋連結）
+// 平台連結逐張覆寫：{卡片 id: {appleUrl?, spotifyUrl?, bandcampUrl?}}；'' ＝不給那個鈕（唱片資訊退回搜尋連結）
 const LINK_OVERRIDES = {
   // 審查 11-13：/bandcamp-search 回的 themilesdavisquintet.bandcamp.com 是第三方的 50 週年 K2 CD 再版頁，不是原版、也不是唱片公司官方
-  'miles-davis-cookin-with-the-miles-davis-quintet': { bandcampUrl: '' },
+  "miles davis|cookin' with the miles davis quintet": { bandcampUrl: '' },
 };
 function applyLinkOverrides(cards) {
   let n = 0;
@@ -404,8 +565,8 @@ if (!COVERS_ONLY) await bakeLinks(cards, ids);
 console.log('link overrides:', applyLinkOverrides(cards), '(LINK_OVERRIDES)');
 
 // ---- 寫檔 ----
-const FIELDS = ['id', 'artist', 'album', 'year', 'genres', 'region', 'c', 'o', 'h', 'tier', 'coverUrl', 'localCover', 'previewUrl', 'tags', 'pitch', 'gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs', 'tune'];
-const OPTIONAL = new Set(['gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs']);
+const FIELDS = ['id', 'artist', 'album', 'year', 'genres', 'region', 'c', 'o', 'h', 'tier', 'coverUrl', 'localCover', 'previewUrl', 'tags', 'pitch', 'gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs', 'tune', 'bin'];
+const OPTIONAL = new Set(['gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl', 'subs', 'bin']);
 const lines = ids.map(id => {
   const c = cards[id]; const o = {};
   for (const k of FIELDS) if (!OPTIONAL.has(k) || (Array.isArray(c[k]) ? c[k].length : c[k])) o[k] = c[k];
@@ -414,6 +575,7 @@ const lines = ids.map(id => {
 const groupsSummary = Object.entries(lists).filter(([g]) => !g.startsWith('_')).map(([g, arr]) => g + ' ' + arr.length).join('、');
 const js = `/* cards.js：由 tools/bake-cards.mjs 產生，請勿手改（改 tools/deck-lists.json 或 tools/pitches.json 後重跑）。
  *   node game-lab/tools/bake-cards.mjs
+ * 鍵＝卡片 id＝主站 catalogId（藝人|專輯 小寫、斜線換 -；第 B 波起）；bin＝在哪個策展箱（不在箱子的不寫）。
  * ${ids.length} 張；三軸＝seed 原值（王牌改 7/1/1 系列）；封面＝Firestore card_catalog 預烘（CAA front-250／scdn 300px／mzstatic 300x300bb），
  * 本機有的另給 localCover；tools/cover-overrides.json 的卡用覆寫的原版封面（不給 localCover）；previewUrl＝Apple 固定試聽；
  * appleUrl／spotifyUrl／bandcampUrl＝唱片資訊的平台鈕（有就烘）；subs＝card-subgenres.json 的子曲風路徑（箱子規則 sub 用，有就烘）。
@@ -463,6 +625,8 @@ if (problems.length) {
   fs.writeFileSync(path.join(LAB, 'bins.js'), binsJs);
   console.log('wrote cards.js:', ids.length, 'cards');
   console.log('wrote bins.js:', Object.keys(BINS.dip).length, 'sections,', Object.values(BINS.dip).reduce((n, v) => n + v.pool.length, 0), 'slots');
+  // 完整烘焙：最後也烘精選新卡（同一支程式、同一個 v 規則）；--covers-only／--links-only 不碰 pool 檔
+  if (!REUSE && !bakePool()) process.exitCode = 1;
 }
 console.log('covers verified:', VERIFY ? report.coversOk + '/' + ids.length : 'skipped', ' previews verified:', VERIFY ? report.previewOk : 'skipped');
 console.log('local covers:', ids.filter(id => cards[id].localCover).length, ' gold:', ids.filter(id => cards[id].gold).length);
