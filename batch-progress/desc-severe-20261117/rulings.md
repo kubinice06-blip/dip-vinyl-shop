@@ -182,6 +182,7 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-005.json`；27 張 54 鍵 Success；回讀 **54/54 一致**；`front-check` **前台 27/27 新稿**。
 - onboarding manifest 同步 27 處。
+
 ## sd-007（30 張，CJK：深町純 4、淺堤 2、清水靖晃 3、渡辺貞夫 6、滅火器 5、潘麗麗 2、濁水溪公社 3、瀬川洋、無妄合作社 2、熊寶貝樂團 2）— s4
 
 - 研究：3 支 Sonnet，WebSearch 23＋23＋19＝65 次。AllMusic、關鍵評論網、Jazz Music Archives 多 403；日本爵士盤多只拿到日文維基陣容與賣家文案，渡辺貞夫五張與深町純 sound 偏薄。
@@ -971,6 +972,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-024.json`；30 張 30 鍵 `wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 91 次（研究層 sd-023 35、sd-024 45，主線 11）。
+
 ## sd-025（30 張，經典度≥4：Androids of Mu、Badalamenti、Thorvaldsdottir、Braxton、Anthony Rother、Antis 2、Duhamel、Karas、Troilo、Aníbal Velásquez、Archon Satani、Arditti 2、Aretha、Argo、Armia、Blakey 6、Schnabel 2、Arzachel、Attrition、Azitis、Banda do Casaco、Bappi Lahiri）— s15
 
 - 研究：3 支 Sonnet，WebSearch 13＋11＋12＝36 次；thin 17 張。
@@ -1126,6 +1128,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-032.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 78 次（研究層 sd-031 32、sd-032 36，主線 10，含 sd-hold-5 的 4 次）。
+
 ## sd-035（30 張，經典度≥4：Gunnar Graps、Hampel、Csík、Hallucinogen、Bluiett、Mobley、Koller、Harold Budd 2、McKinney、Harvest Flight、HAT、Hayedeh、Hazard、Heavenly、Sarmanto、Henry Franklin、Lowther、Henry's Dress、Karajan 2、Mwandishi、Stop Over、High Rise 3、Shajarian／Ghamsari、Hood、Horace Andy、Horace Parlan）— s20
 
 - 研究：3 支 Sonnet，WebSearch 17＋15＋12＝44 次；無 none，thin 18 張次（Csík story／sound 原為 none）。
@@ -1173,6 +1176,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-036.json`；30 張 30 鍵（原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，無待店主處理）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 101 次（研究層 sd-035 44、sd-036 43，主線 14）。
+
 ## sd-033（30 張，經典度≥4：Fin.K.L、Fire Engines、Flare、Fletcher Henderson、Fläsket Brinner、Foje、Franco、Sinatra／Norvo、Wakefield／Country Cooking、Bayle、de Roubaix、Cockerham／Jarrell／Jenkins 2、Hubbard 3、Hubbard & Shaw、Freddie Joachim、Freddie Redd、Freddie Roach、Kreisler 2、Wunderlich、Fuchsia、板橋文夫、Fuxan os Ventos、G-Schmitt、g.o.d 2、Gabinete Caligari）— s19
 
 - 研究：3 支 Sonnet，WebSearch 20＋14＋19＝53 次；無 none。前台預查 60 張（sd-033／034）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
@@ -1552,6 +1556,7 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-051/052.json`；60 張 60 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **60/60 一致**；`front-check` **前台 60/60 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 59 處（sd-051 29、sd-052 30）。
 - 本工作階段 WebSearch 合計約 98 次（研究層 sd-051 43、sd-052 40，主線約 15）。
+
 ## sd-047（30 張，經典度≥4：Robert Nighthawk、Roberta Flack、Dransfield、Rod Modell、Rod Taylor 2、Roland Haynes、Ron Carter、Room、Rorschach、Roy & Diz、Ruby Andrews、Ruja、Ruphus、S.E.S. 2、S.L.A.C.K.、S.O.B.、藤井貞泰、Sampaguita、Brugnolini、Sarah Tandy、Sasha & Digweed、Scan 7、Scanner、Scrawl、Second Hand、Secret Shine、Celibidache、Shahram Nazeri）— s26
 
 - 研究：3 支 Sonnet，WebSearch 14＋19＋20＝53 次。
@@ -1601,6 +1606,53 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
 - **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
+
+## sd-058（30 張，其餘：Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）— s32
+
+- 研究：3 支 Sonnet，WebSearch 13＋15＋10＝38 次；無整張 none（Birdland story none、Blackbird story none、Blue Wednesday 兩張 story none、Blind Light sound none）。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Birdland（Discogs：1980 年 PGP RTB 發行 LP——研究層說「PGP RTB 查無來源」被推翻；JazzRockSoul：伯恩的南斯拉夫學生、Banković 主導、Mahavishnu 影響）；Blind Light（Discogs 1994 日本 Alida、downtempo／ambient；Scaruffi「偏 dub 的長段即興」）；Blackbird（Bandcamp：梅斯、自介、標籤；Discogs 風格、Solus Mind 客席）；Blue Wednesday（Bandcamp：溫哥華 Gustav Joseph，頁面無介紹、無樂評）；Bim Sherman 兩張（再搜無新料）。
+- 身分／事實裁定：Billie Holiday《Ladylove》寫巴塞爾（舊稿科隆錯）；Bim Sherman《Lovers Leap Showcase》寫 1979（卡單 1978），《In A Rub-A-Dub Style》寫「1980 年代初」，兩張都不寫 Prince Jammy／錄音室／伴奏團；Lagrène《Inferno》1987、《Foreign Affairs》1988；Blind Light 是 Anton Fier 個人名義、不寫 Laswell；Black Tape 不寫洛杉磯錄音；Bobbi Humphrey《Flute-In》不寫發行日；Blue Mitchell《Collision in Black》確認 Blue Note。
+- **薄寫上線不留置**（照 delayde 前例）：Birdland、Blackbird（155 字）、Blue Wednesday《Beat Tape 2》（149 字，低於 150 下限照收）、《Beat Tape 3》（159 字）、Blind Light。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-058.json`＋直接改寫兩張）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Lagrène 三人《Standards》 | 原 253 字壓到 240 內；「Pedersen 的貝斯獨奏常被點名」→「也有不少篇幅」 | 字數；單一出處不寫「常被」 |
+| Black Mountain Transmitter | 刪「只做 179 份」 | 限量份數屬版本雜項（棺材塊包裝是廠牌 anti-cassette 概念核心，留） |
+| Blackbird | 刪 2026 年 Doki Doki Beats 首壓黑膠句 | 版本雜項 |
+| Blind Light | 刪 2003 年 Tzadik 合輯重發句 | 版本資訊 |
+| Blue Wednesday《Beat Tape 2》 | 鉤子「連兩年選在跨年那天上線」→以「這是什麼」開頭 | 發行日屬雜項，材料撐不起鉤子（delayde 前例） |
+| Blue Wednesday《Beat Tape 3》 | 刪「距上一集約四個月」 | 發行間隔屬雜項 |
+| Black Tape《This Lush Garden Within》 | 「比其他作品更偏電子與氛圍」→「空靈的 ethereal wave，新古典氣質比前作更重」，全段壓到 202 字 | 原說法只出自聽眾留言；新古典一說出自 Scaruffi |
+
+其餘逐張對過研究稿無改：Big Satan 製作人 Torn 不彈吉他改做電子處理、BIGBANG 紀錄片破百萬點閱與月榜第 3、Holiday 臨時湊的節奏組沒彩排、billy woods 自述起點是買大麻、Black Roots 三人離團後首次在 Ariwa 錄混、Black Tape 的 Herrera 只錄兩首告別、Bantu Village 之後被 Blue Note 放掉、Corea 兩曲在《Boss Horn》的定本、Blueboy 在 Haynes 新廠牌 Shinkansen 的最後一張、Dorough 標題曲原為沒做成的動畫而寫、Humphrey 是 Blue Note 第一位女性器樂手、Montreux 伴奏三人後來組 The Blackbyrds，皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-058.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-059（30 張，其餘：Bobby Hutcherson 10、Bobby Lyle Trio、Bobby Watson & Horizon 2、Body of Light、boerd、Bohren & der Club of Gore 2、Booker Ervin、Bora Roković、Born Against、Bourbonese Qualk、Bozi Boziana、Brand Nubian 2、Brass Construction、Bread, Love and Dreams、Breakdown、Bridget St John、Brigth Engelberts、Brock Berrigan）— s32
+
+- 研究：3 支 Sonnet，WebSearch 10＋13＋10＝33 次；無 none，thin 多（Hutcherson 八張 story 或 sound thin、b 組全數 story thin）。
+- **主線補查**（WebSearch 10 次＋WebFetch，facts 標【主線補查】）：Hutcherson《Knucklebean》（英文維基：錄音日、班底、Bay State Banner 與 Yanow 評；Hubbard 六首吹四首）、《Patterns》（MusicWeb／AllMusic：編制無 Land、Chambers 四首、Spaulding 的金恩曲）、《Inner Glow》（英文維基：1975 洛杉磯錄、1980 日本發、三管前線）；Bohren《Midnight Radio》（Visions 雙評、Babyblaue Seiten 的陣容與聲音描述）；Born Against（No Echo 樂團沿革、Discogs Vermiform 第一號）；boerd（SoundCloud 第二張全長、Comorbid）；Bobby Watson《No Question About It》（AllMusic 摘要：Hargrove、Lacy 客席）；Breakdown（Blogged and Quartered：Mother West 錄音、demo 歌重錄）；Brigth Engelberts（再發行商介紹：拉哥斯 EMI、soul-funk 加非洲和聲）；Bozi Boziana（Discogs／Qobuz：Veve、Anti-Choc Stars、Djo Nolo）。
+- 身分／事實裁定：《Spiral》不寫日本首發（實為 1979 年 LT 系列）、只寫 1968 年 11 月錄；《Knucklebean》不寫〈'Til Then〉出自《Components》；《Patterns》寫 1968、無 Land、〈A Time to Go〉寫「獻給金恩」（錄在遇刺前）；《View From the Inside》不寫發行年；《Medina》《Inner Glow》不寫擱置原因；Bohren《Midnight Radio》寫 1995、不寫 Duisburg 錄音日；Booker Ervin 不寫 Gerald Wilson；Born Against 是 1990 年 Vermiform 的 7 吋 EP、不寫七軌卡帶與透明膠誤壓；boerd 是 Bård Ericson（非 Fredrik Klingwall）；Body of Light 寫 2016；Bridget St John《Jumblequeen》製作人 Leo Lyons（非 Ron Geesin）；Brigth Engelberts 是喀麥隆人；Bread, Love and Dreams 當時兩人組；Brand Nubian《Foundation》不寫 DJ Premier 整張混音；Brock Berrigan 不寫本名。
+- **薄寫上線不留置**：Bobby Watson 兩張、Body of Light、boerd、Bora Roković、Bozi Boziana、Breakdown、Brigth Engelberts、Brock Berrigan（聲音段只能寫樂團／藝人整體風格的，文中照實寫成整體風格）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 1 處，改動檔 `review-sd-059.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Bobby Watson《No Question About It》 | 「是 他的樂團」刪多餘空格 | 格式 |
+
+其餘逐張對過研究稿無改：Hutcherson 十張各取一角（Cochran 策劃、Hubbard 搶戲、Idyllwild 戶外錄音、Butler 帶隊蒙特勒與同日 Byrd 十人電氣團的對照、歐巡後一個月進棚、大麻案失去卡巴萊證、Land–Hutcherson 五重奏僅兩次進棚、《The Kicker》擱 36 年與「不夠代表他」的說法出自 uDiscover、Yanow 說他是 Blue Note 瓦解前最後在廠錄音者之一、與 Land 七張合作的終點）；Hargrove 18 歲、數位雙軌一次錄成、Mustafa 與 Lewis 供曲、Body of Light 童年家庭錄影帶取樣（Dais）、boerd 是皇家歌劇院低音大提琴手、Bohren 由硬蕊金屬團轉向（德文維基）、Born Against 的 Raw Power 自述（1991 RIOT 訪談）、Bourbonese Qualk 佔屋圈、Anti-Choc 三女聲、Bread, Love and Dreams 女飛車黨與猶豫蝸牛、Breakdown tough guy 先驅、Brock Berrigan 凌晨兩點（Stereofox 訪談）皆有出處。Tolambo Funk 的 Hot Casa 重發句保留：它交代的是原盤長年只靠盜版流傳的地位，不是版本差異。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-059.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 27 處。
+- 本工作階段 WebSearch 合計約 88 次（研究層 sd-058 38、sd-059 33，主線 17）。
 
 ## sd-056（30 張，其餘：Armando、Arpanet、Art Blakey 9、Art Ensemble of Chicago、Grumiaux、Rubinstein、Arturo O'Farrill、Astral Engineering、Asylum、At the Drive-In、Yupanqui、Ataraxia、Atrium Carceri 2、Attrition、Audio Active、Augustus Pablo、AUX 88 4、B-Side & Philanthrope）— s31
 
