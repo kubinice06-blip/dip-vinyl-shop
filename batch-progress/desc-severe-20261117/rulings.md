@@ -2380,3 +2380,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-090.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
+
+## sd-091（30 張，其餘：The Comes、The Congos、The Consolers 3、Contemporary Jazz Quintet、Dave Pike Set、Dead Milkmen、The Dicks、The Disciples、The Door and the Window、The Enid、Famous Ward Singers、The Freed Unit、Gospel Keynotes、The Great Jazz Trio 10、The Grey Wolves、The Groundhogs、Harmonizing Four 2、The Icemen）— s48
+
+- 研究：3 支 Sonnet，WebSearch 11＋15＋10＝36 次；none 只有 Icemen sound。AllMusic、AAJ、Progarchives、jazzmusicarchives 403。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Congos（Roots Archives：自製、Aquarius／Harry J 錄音、Geoffrey Chung 混音、Sly Dunbar、Ernest Ranglin、Tommy McCook；Roy Johnson 之後離團）；The Comes（日文簡介：1986 年 3 月 Captain Records、聲音明顯改變、7 月後自然消滅）；The Enid（DPRP 專文：四季比喻生命循環的「音樂寓言」、華格納式四個主導動機、The Lodge 錄音）→ story／sound 升 ok；The Icemen（英文維基、idioteq、dcxx 訪談：Abularach 創立、1991 Blackout、CBGB 發片演出）；Great Jazz Trio（日文維基：1975 年 Village Vanguard 成團、各期班底與廠牌）；Grey Wolves 搜尋全撞電力電子學論文，無新料；Disciples 只得已知零售文案。
+- **薄寫上線不留置**（delayde 前例）：Consolers《Joy In The Morning》《Let God Be First》、Disciples、Famous Ward Singers、Gospel Keynotes、The Comes、Great Standards 2 張、Monk's Moods、Moreover、N.Y. Sophisticate、Threesome、Grey Wolves（不寫聲音）、Working for the Lord、Icemen（聲音只寫自稱「Hardcore Metal」）。
+- 事實裁定：Congos 不寫 Perry 與 Island 交惡（屬《Heart of the Congos》）；Ward Singers 那張是 1961 年兩場錄音室錄音、不寫「現場」；Gospel Keynotes 廠牌 Nashboro（舊稿 Savoy 錯）；Freed Unit 不寫「孿生兄弟」（Scaruffi 與 Discogs 不符）；Grey Wolves 團員採 Trevor Ward（派工詞 Darren Tate 是協調端誤記）；Icemen 主唱只寫「Carl」（DeMola／Griffin 兩說）；Comes 廠牌母公司寫「寶島社」。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 31 處，改動檔 `review-sd-091.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Great Jazz Trio 10 張中 9 張、Grey Wolves、Groundhogs、Harmonizing Four 2、Icemen | 第二／三句「這張」改《盤名》（Milestones、Threesome、KJLH 原本只有別張盤名的《》也補上） | QA 無《》 |
+| 同上 | 隨之刪次要句壓字數：Jones「盡量留在正中間」、「共五集」「後幾集移到哥本哈根與紐約」、Ellington 選曲列舉、〈A Night In Tunisia〉引柴可夫斯基、Tokyo Meeting「越聽越有味道」「1980 起換人」、KJLH〈Doom〉／〈Mood〉曲名冷知識、death industrial 先驅、〈Light Was the Day〉、Shine on Me 敘事拼貼、Harmonizing Four 半退休 | 字數 |
+| Icemen | 刪「有一首沿用 1985 年早期版本再補人聲」 | 版本細節屬雜項 |
+
+第 1 組 15 張逐張對研究稿無改（Comes「第一位成名的硬核龐克女主唱」出自英文維基、Congos「更光滑、更稀疏」出自 AllMusic 與維基、Contemporary JQ 外地錄音兩張、Keynotes 銅管編制與 1981 葛萊美入圍皆有據）。鉤子都取自故事／地位／聲音／概念（女主唱轉向金屬、離開 Perry 首次自製、代表作〈Waiting For My Child〉、男中音配女低音、出道二十年仍在 Nashboro、Blue Note 外地錄兩張、黑森林錄音室西塔琴、專吃嬉皮的怪物、公開出櫃主唱、Jah Shaka 取名、沒受訓練愛噪音、四季寓言、輪流領唱、John Peel 一再播放、Country Boy 的藍調唱法、同場錄音分兩張、標準曲五集起點、Miles 節奏組、Monk 四十年後成題目、Evans 與 Miles 出身接手、弦樂四重奏疊上、直刻母盤、全原創、Cobb 接鼓椅、電台台呼當盤名、「文化恐怖主義」、替藍調寫訃聞、守著老靈歌、從 1927 唱到 1970 年代、成軍近十年才出唱片）。30 張前四字互異；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-091.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 86 次（研究層 sd-090 36、sd-091 36，主線 14）。
