@@ -1796,3 +1796,49 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
+
+## sd-062（30 張，其餘：Cicada、Circle、Claude François、Claude Young、Clifford Jordan 4、Clyde McPhatter、Coil presents Black Light District、Collage 2、Consumer Electronics、Controlled Bleeding、Council of Nine、Count Ossie、Credo、Cro-Mags 2、Crown of Thornz、Crystal Vibe、Culture Freeman meets the Bush Chemists、Curly Ray Cline 2、Cuushe 2、Cygnus、CYNE、Cæcilie Norby 2）— s34
+
+- 研究：3 支 Sonnet，WebSearch 11＋17＋14＝42 次；none 只有 Norby《Queen of Bad Excuses》sound。母語來源：Cicada 日文 CD Journal／flau、Claude François 法文維基、Collage 愛沙尼亞文維基、Credo 拉脫維亞來源、Norby 丹麥文維基。寫稿前預查 60 張（sd-062／063）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 2 次＋Discogs 公開 API release notes／credits，facts 標【主線補查】）：Claude Young（題獻、底特律與倫敦兩地錄音、Elypsia）；Clifford Jordan《Hello, Hank Jones》（Media Sound、Workman／Waits、製作人小沢善雄、東芝 EMI Eastworld）；《Cliff Craft》（Van Gelder Hackensack、Farmer 由 ABC-Paramount 授權）；McPhatter《Love Ballads》（Sequel 再發註記：1955-08～1958-02 三間錄音室的單曲錄音，證明是拼盤）；Norby《My Corner of the Sky》（英文維基：與 Niels Lan Doky 把流行歌改編給爵士編制、填詞 Brecker／Corea／Grolnick／Shorter、美國班底）→ story ok；《Queen of Bad Excuses》（與 Danielsson 合作）；Consumer Electronics（1982 年 4 月福克蘭備戰期間的 C90 首版）；Collage《Käokiri》（Melodiya credit：愛沙尼亞電台錄音、Vahuri 編曲指揮、樂器與七位歌手；1982 再壓盤列 Apelsin，關係不明不寫）。
+- 事實裁定：Cicada《Farewell》不是第一張在日本上架的實體（flau 2015《Ocean》才是）；Circle 不寫伊藤潔生平、石岡瑛子、母帶遺失；Black Light District 不寫 Derek Jarman；Love Ballads 不寫十歲、週薪、〈Lucille〉自寫；Controlled Bleeding 的 Joe Papa 是主唱（舊稿誤作鼓手）；Consumer Electronics 不寫 Best 生年（1966／1968 兩說），聲音照實寫成 power electronics 類型通則；Collage 兩張團史與聲音屬共用事實，年份寫「1970 年代中期／後期」；Count Ossie 那張錄音經過照實寫「至今不清楚」；Council of Nine 母親健康故事單源略過；Cro-Mags《Alpha-Omega》作曲權爭議不採任一方、《Best Wishes》不寫鬧鬼與海洛因；Crown of Thornz 只寫「主唱」；Cuushe《WAKEN》不寫 aus 共同製作、騷擾事件不寫人名；Norby《Queen》不寫藏曲與 Scofield 七軌；CYNE 是四人團、不斷言廠牌；Crystal Vibe 不寫成烏克蘭廠牌（Altar 在蒙特婁）。
+- **薄寫上線不留置**：Claude Young、Love Ballads、Käokiri、Leathersex、Crystal Vibe、Culture Freeman、Cygnus、Credo（聲音）、Crown of Thornz、Norby 兩張（《Queen》183 字、聲音只寫合作分工）、Cuushe《Red Rocket Telepathy》183 字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 3 處，改動檔 `review-sd-062.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Clifford Jordan《Cliff Craft》 | 「加上 咆勃」刪多餘空格 | 格式 |
+| Clyde McPhatter《Love Ballads》 | 「單曲與 B 面」→「單曲正反面」 | 避 A／B 面字眼 |
+| Clifford Jordan《Hello, Hank Jones》 | 刪「Jones 在〈Love for Sale〉的演奏特別受稱讚」 | 出處只有網友留言 |
+
+其餘逐張四問無改：Cicada 離別概念（flau 定位）、Circle 閣樓排練的廚房用具與風箱（Holland 回憶）、François 改寫英美流行歌、Jordan 四張各取一角（八個月三張、18 歲 Lee Morgan 供曲、直刻錄音、中午到午夜的馬拉松場次）、Coil 偷聽情侶對話的取樣、Collage regilaul、Golgotha 被當成基督教專輯、Count Ossie 過世後七年才出、Credo 的廣島原爆聯篇（Raimonds Pauls）、Flanagan 接主唱、Crown of Thornz 為 Killing Time 暖場趕歌、Cline 被 Stanley 比作五弦琴、〈Why Me, Ralph?〉惡搞 Kristofferson 笑場、Cygnus 'Oumuamua 虛構故事、CYNE 取樣 Spinners／Isaac Hayes 皆有出處。《Hello, Hank Jones》鉤子是直刻錄音方式，比照 sd-054 Hannibal 先例屬故事。《Melnais kliedziens》列樂章題名是在交代聯篇概念，不算曲名體例。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-062.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+
+## sd-063（30 張，其餘：Da Vàng、Dando Shaft 2、D'Agaro／Schlippenbach／Bennink、Danielle Howle、Dariush、Dark Comedy、David Holzman、Stackenäs＋Lonberg-Holm、Deafheaven 2、Death of Samantha、Deepchord 2、Del McCoury 2、delayde、Denise Jannah、Derrick Hodge、Devendra Banhart 2、Devo、Dexter Gordon 3、Dezerter 2、Dhamika、Dianne Reeves 2）— s34
+
+- 研究：3 支 Sonnet，WebSearch 15＋12＋15＝42 次；none 只有 Dark Comedy sound、delayde story。母語來源：Da Vàng 越文（VnExpress）、Dezerter 波蘭文、Denise Jannah 荷蘭文維基。
+- **主線補查**（WebSearch 5 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Dianne Reeves《The Nearness of You》（Discogs 日本盤側標與註記：日本先行發售、附 Pepsi 罐裝咖啡廣告曲〈Freedom〉，三場 Van Gelder 錄音日、Mims／Reeves 製作、完整班底）→ story ok，舊稿「罐裝咖啡廣告曲」屬實、「2 到 5 月分四次」改為三場＋2 月洛杉磯廣告曲；Da Vàng（VnExpress 貝斯手 Lê Quang 專訪：第一屆胡志明市 pop-rock 聯歡得獎、觀眾要他們改唱排行榜歌、「搖滾團能活下來就很好」）；Death of Samantha（封套註記：Moonliner 現場六小時錄完、樂團自製、班底含 Doug Gillard）→ story ok；Del McCoury《Our Kind of Grass》（1976 年 4、6 月錄，Freeland 製作，Bill Runkle 五弦琴兼主唱）；Dark Comedy（Larkin 一人包辦、Art of Dance Studios、Elypsia）；Nights at the Keystone 3（Qobuz／AllMusic 摘要：深夜抒情慢歌、中途提勁）；Deepchord《Tonality of Night》、Stackenäs、Howle 補 credit。Hello Hank Jones、Dhamika、Dariush 補查無新料。
+- 事實裁定：Dariush《Cheshme Man》1991 Caltex 版與 1972 同名專輯關係不明，只寫歌名多有重疊、不寫重錄；Holzman 那張是 Troy（Albany 旗下），不寫解說自寫與錄音廳；Howle、Dark Comedy、Death of Samantha 年份兩說，正文不寫或不強調；Death of Samantha 不寫刻紋師 Porky；Del McCoury《Livin' on the Mountain》不斷言原名，只寫 1971 錄、1976 Grassound、1992 Rebel；Hodge 是在自己的工作室、臥室與旅館錄（舊稿「三間錄音室」錯）；Reeves《Nearness》鋼琴獨奏電子雜音不寫；Landslide 不寫八個 take、單曲版；Underground Out of Poland 不寫美英兩版與 12 吋；Dhamika 不寫「水晶般光脈衝」（Bandcamp 無此語）。
+- **薄寫上線不留置**：delayde《finding solitude 2》（189 字、無鉤子，以「這是什麼」開頭，比照 sd-fix-1 前例）、Dhamika、Dariush、Dark Comedy、Del McCoury《Our Kind of Grass》、Keystone 3、Da Vàng、Danielle Howle、Stackenäs。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 21 處，改動檔 `review-sd-063.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| delayde《finding solitude 2》 | 刪「他後來成為 Chillhop 的固定製作人」 | Chillhop 的 delayde 未證實同一人（sd-fix-1 裁定） |
+| Del McCoury《Our Kind of Grass》 | 鉤子改為「掛 Del McCoury 的名字，主唱卻有一半交給了五弦琴手」，正文補 Runkle 分擔主唱，刪 Baltimore 句壓字數 | 原鉤子與同批《Livin' on the Mountain》同取 Monroe 節奏吉他、前四字相撞；主唱分工出自 Discogs credit，是錄音編制不是 credit 雜項 |
+| Stackenäs、Jannah、Banhart《Oh Me Oh My...》、Devo、Landslide、Keystone 3、Underground Out of Poland、That Day…、Nearness of You | 第二句「這是／這張」改為《盤名》，隨之刪次要句壓字數（Stackenäs 皇家音樂院、Jannah〈'Round Midnight〉、Banhart 煙火槍聲、Dezerter「後半仍然粗暴」與「常被列為最重要專輯之一」、That Day「兼容並蓄」、Nearness「側標寫明全球先行發售」與「Pepsi」） | QA 無《》、字數；側標字樣屬印刷雜項；Dezerter 評價單源 |
+| Nights at the Keystone 3 | 刪「錄音把俱樂部的空間感與四重奏的聲音完整留下」 | 無出處的空話 |
+
+其餘逐張四問無改：Da Vàng 被認定為金屬團（樂團自述）、Dando Shaft demo 直接發行、Lantaloon 轉向搖滾後解散、Fingerprints 無貝斯三重奏、Holzman 引 Martino「十指的手蓋住鍵盤」（NewMusicBox 自述）、Larkin 服役錯過 techno 頭幾年、Deafheaven 兩張（家族創傷與〈Winona〉／四首 demo 與 N Judah）、Deepchord 自稱氛圍音效設計者與短波電台、Jannah 第一位簽 Blue Note 的荷蘭爵士音樂人、Hodge 臥室與旅館、Banhart 兩張（同批亞特蘭大錄音／Gira 不重錄四軌帶）、Devo 首張發行一個月就開錄、Clubhouse 擱置十四年、Landslide 三場拼接、Dezerter 審查改盤名與 D.O.A. 主唱帶出錄音帶、Reeves 罐裝咖啡廣告與 Armatrading／Shirelles 選曲皆有出處。30 張鉤子前四字互異、加權 ≤50（delayde 無鉤子）；查無軌序、曲長、盤號。
+
+### 上線（sd-063）
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-063.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 91 次（研究層 sd-062 42、sd-063 42，主線 7）。
