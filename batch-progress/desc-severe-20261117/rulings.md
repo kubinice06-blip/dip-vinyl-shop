@@ -245,3 +245,29 @@
 - sd-006 版只用了博客來、佳佳商品頁與維基；研究層 3 次搜尋就把 sound 標 thin。協調端兩次搜尋找到公視新聞（坎城邀四位音樂人、林強唯一亞洲人、配故宮數位影像、媽祖繞境鞭炮聲與電視噪音入樂）與 2005 年 5 月人間福報（同名曲為坎城而寫、驚蟄象徵蟄伏後初醒），補進 `research/sd-006-a.json`（標【協調端補查 11-17】）。
 - 重寫 237 字：第一句定位與金曲跨界獎 → 坎城邀演、故宮影像、MK2、《最好的時光》 → 片名意涵 → 聲音素材。KV desc2／desc4 寫入並逐字回讀，前台 `/album-desc` 已是新稿；舊值 `kv-before-jingzhe-fix.json`；`onboarding-manifest-c89` 與 `output/sd-006-out-1.json` 同步。
 - 研究規則補強：`prompt-research.md` 與 `general-desc-base.md` 加「判 thin／none 之前必查清單」，主線對 thin 卡一律再補查。
+
+## sd-013（30 張，CJK：NANIWA EXPRESS、Posh Inverse、PUZZLEMAN、Reol、Beirach＋富樫、山本精一、Lacy／高橋／小杉、The Players、記號士、THE SQUARE 2、VANITAS命死、Woody Herman＋北村英治、YAS-KAZ、ZAZEN BOYS、くるり、ずっと真夜中でいいのに。、なぎらけんいち、ひがしのひとし 2、カリオカ 4、カーネーション、Wave II、ジョージ大塚、スカイドッグ 2、ゼロ戦）— s7
+
+- 研究：3 支 Sonnet，WebSearch 19＋15＋15＝49 次；主線補查約 12 次（照「研究補強」對 thin／none 卡逐張補）。
+- **主線補查有收穫**：VANITAS命死《心の泉》（extended 找到原 Bandcamp 頁 `album/-`：「2019 年初遺失的 slushwave 專輯」、Aquablanca 75 卷卡帶）、Kahuna（jazzmusicarchives：1978-06-27 Victor Studios、一面鋼琴獨奏一面二重奏；舊稿「直刻盤」查無來源不寫）。
+- **留置 3 張**（KV 保留舊稿，必查清單四項＋主線 extended 補查都跑過）：山本精一《NOA》（只查到「NOA2 是第二張吉他獨奏盤」，本張無任何介紹）、Woody Herman, 北村英治《We》（日文維基只有一行年表，英文資料庫查無此名）、なぎらけんいち《街の風になって》（只有曲目與 URC 第二張的定位，聲音、故事皆無）。
+- 薄寫照收：カリオカ《Kartik》197（sound none，只寫四人無客席與轉投 Polydor，不編聲音）。
+- 身分／事實裁定：Gong Show 不寫廠牌（徳間 vs. Wax 矛盾）；Wave II 不寫錄音年月（1986 vs. 1987-05 矛盾）；ゼロ戦不寫「十四位樂手」、不寫タンタン擔任主唱；スカイドッグ同名盤不寫年份與廠牌。
+- QA：「来」出自盤名《北27西4 札幌へ来てから》，非簡體；fix-spacing 對「ACAね」的提示不採用（藝名）。
+
+### 主線審稿（2026-11-17，逐張 27 張，改 5 處，改動檔 `review-sd-013.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| naniwa express\|大宇宙無限力神 | 「樂團被視為」→「樂團常被視為」 | 評價句式 |
+| reol\|美辞学 | 刪 nqrse 再度客座 | 客演履歷雜項 |
+| the square\|うち水にrainbow | 刪「最後一次在原創專輯放翻奏曲」 | 冷知識 |
+| zazen boys\|らんど | 刪「常被視為樂團現體制留名的作品」 | 語意不明的地位句 |
+| ひがしのひとし\|はじめてのシャンソン | 刪 2024 URC 名盤復刻 | 重發雜項 |
+
+其餘逐張四問無改：NANIWA、VANITAS、ひがしの兩張的聲音都已寫明是一貫風格；Distant Voices 樂器清單照收（就是聲音核心）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-013.json`；27 張 54 鍵；回讀 **54/54 一致**；`front-check` **前台 27/27 新稿**。
+- onboarding manifest 同步 27 處（14 個檔）。
