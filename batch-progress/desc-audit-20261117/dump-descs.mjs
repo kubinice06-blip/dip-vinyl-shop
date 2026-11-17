@@ -2,7 +2,8 @@ import fs from 'node:fs';
 const SP=process.argv[2];
 const ACC='3a23f905e8f31d91c85050f2ed304321', NS='5f65e74b17d644b68a3f542b08a5c105';
 const seed=JSON.parse(fs.readFileSync('seed_cards.json','utf8'));
-const OUT=SP+'/da/descs.json';
+fs.mkdirSync(SP+'/da',{recursive:true});
+const OUT=SP+'/da/descs.json';  // 輸出 <目錄>/da/descs.json；中斷後重跑會接續
 const done=fs.existsSync(OUT)?JSON.parse(fs.readFileSync(OUT,'utf8')):{};
 const cards=seed.map(r=>({k:`${r[0].toLowerCase()}|${r[1].toLowerCase()}`,a:r[0],b:r[1],c:r[2],o:r[3],h:r[4],g:r[5],y:r[6],tier:r[8]||''})).filter(c=>!(c.k in done));
 const parse=v=>{if(v==null)return null;try{const o=typeof v==='string'?JSON.parse(v):v;return o.desc??null}catch{return String(v)}};
