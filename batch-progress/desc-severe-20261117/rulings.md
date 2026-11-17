@@ -1796,3 +1796,23 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
+
+## sd-068（30 張，其餘：FRICTION 2、Schönfeld & Katzenbeier、渡辺文男、Funk Inc.、Funki Porcini 2、Gary Burton、Gemini、GENDEMA、Gene Harris 3、General Magic、George Adams 2、George Braith 2、George Clinton、George Russell、George Young 2、Ghost 2、Petrella、Gil Mellé 2、Glenn Underground、Global Communication、God Bullies）— s37
+
+- 研究：3 支 Sonnet，WebSearch 13＋10＋13＝36 次；none 只有 Schönfeld《Jazz》、George Young《Burgundy》、Mellé《Mindscape》的 sound。母語來源：FRICTION 日文維基、渡辺文男日文維基與大口純一郎回憶、Schönfeld／Katzenbeier 德文維基。AllMusic、Discogs 網頁、Tower 多回 403。
+- **主線補查**（WebSearch 11 次＋WebFetch＋Discogs API release notes，facts 標【主線補查】）：Gene Harris 1972（blp1553 轉載的 Leroy Robinson 原盤內頁：Butler 與 Wade Marcus 要把他推成領班、刻意配上從沒合作過的東岸樂手）、1973（Gene Edwards 內頁：底特律 Club Mozambique 淵源、Gene Harris Sound）→ story／sound 升 ok；George Russell《So What》（All About Jazz：緊接《The African Game》、〈Time Spiral〉是最後的長篇之一）；Mellé《Mindscape》（Discogs notes：題獻 Alfred Lion、馬里布 Diamondhead 一人錄成）。FRICTION 兩張（日文搜尋 2 次、P-Vine 商品頁 404、Discogs notes 只有錄音地點）、渡辺文男、George Young 兩張、Petrella《Kaleido》、Ghost 兩張（Drag City 頁只有一句宣傳）補查無新料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Replicant Walk 不寫 Mosimann 製作與 Zorn 曲數；聲音段借 1989 現場盤《Dumb Numb CD》評論描述「這個時期」的 FRICTION（同期、含同名曲），照收。Superfunk 不寫 Johnny Guitar Watson 彈貝斯；GENDEMA 不寫 chillwave 與 No Problema Tapes；Funki Porcini 錄音室寫 The Uterus Goldmine；Gemini 的 FACT 引文不套本盤；Mellé《New Faces》寫次中音／上低音（舊稿長號錯）；God Bullies 不寫「電台」「Jesus Goes to Hell Singers」；George Young 不寫 Paddle Wheel／King／David Matthews；Russell 不寫「改寫 Miles 獨奏」「Smalltet」；Braith《Soul Stream》不寫「只有一首出自別人」；Clinton 不寫軌序；Petrella、Glenn Underground 的前作聲音描述不寫成本盤。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 9 處，改動檔 `review-sd-068.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| General Magic《Rechenkönig》 | 刪「失真的快拍混著數位啁啾、爆裂聲」，改「以靜電、回授與節奏脈衝構成」 | 前者只出自 Brainwashed 搜尋摘要（原頁 404），寫作層回報說拿掉其實沒拿 |
+| Gary Burton、Gene Harris 2 張、Ghost《Second Time Around》 | 第二句補《盤名》，並刪次要細節壓回 240 字（JVC 數位爵士系列、三重奏解散句、jazz-funk 標籤） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（Schönfeld 廣播樂團十年首席中音、渡辺文男原是歌手、Funk Inc. 試聽帶簽約、Gemini 的樂迷名單、Braith 悼 JFK、Clinton 取樣自己、Mellé 引介 Van Gelder 給 Lion、Glenn Underground 的〈I Feel Love〉重編、Global Communication 兩城各做一半、Ghost 唯一全英文演唱、Petrella 連兩年 DownBeat 新人）。渡辺貞夫為渡辺文男實兄、Adams《Old Feeling》「去世前一年」（1991 錄、1992 年 11 月逝）有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 剩 1 條《76:14》盤名誤判曲長）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-068.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
