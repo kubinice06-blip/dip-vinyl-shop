@@ -1218,3 +1218,28 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-034.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 28 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-033 53、sd-034 44，主線 14）。
+
+## sd-040（30 張，經典度≥4：Laughing Hyenas、Led Zeppelin、Lee Konitz 2、Lee Morgan 3、Leeway、Lemon Kittens、Leo Parker、Leo Smith、Les Rita Mitsouko、Ligabue、Lightnin' Slim、Linval Thompson 2、Lip Cream、Lluís Llach、Lomosonic、Long Fin Killie、Lonnie Smith、Lorelei、Los Bravos、Los Brincos、Los Destellos 2、Los Jaivas 2、Los Mirlos 2）— s22
+
+- 研究：3 支 Sonnet，WebSearch 9＋11＋12＝32 次；無 none。秘魯、智利、西班牙卡用西文來源（El Comercio、La República、es 維基、Memoria Chilena）；Ligabue 用 RSI 義文、Llach 用 ca／es 維基、Lip Cream 用 Relapse 重發頁。
+- **主線補查**（WebSearch 8 次＋WebFetch）：Linval《Don't Cut Off Your Dreadlocks》（Rough Trade 重發頁：Aggrovators 伴奏、厚重低沉；其「King Tubby 在 Channel One 混音」與他源不一，不寫混音者）、Rita Mitsouko（維基 credits：Ringer 的 MIDI 銅管手風琴、Visconti 弦樂、〈Nuit d'ivresse〉銅管客席）。《The Last Session》《Alone Together》、Llach、Destellos《En orbita》、Mirlos《Los charapas de oro》、Lorelei 補搜無研究稿以外新料，照研究稿薄寫。
+- 身分／事實裁定：Leeway 不寫發行年（1988／1989）；Lightnin' Slim 寫「1960 年前後」；Lip Cream 寫「1980 年代後半」；Linval 兩張不寫 Robbie／Sly、紐約學錄音；Ligabue 不寫充氣人偶與孟斐斯外套；Lomosonic 不寫建築學院、合約過程與獎項；《The Last Session》只寫 1972 年 2 月遇害；Lonnie Smith 寫 1970 錄、1995 首發；Los Brincos 不寫 Abbey Road；〈Para Elisa〉寫改編貝多芬、不寫阿莫多瓦；Los Mirlos 不寫死主奏吉他手；卡單盤名《En orbita》照原文無重音。
+- 派工失誤：{EXTRA} 把第 16、17、19 張（I Love Marijuana、Lip Cream、Lomosonic）的限制派給第一組，第二組寫作中補發訊息，交稿已照限制寫。
+- 前台：寫稿前預查 60 張（sd-039／040）x-cache 全為 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-040.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Laughing Hyenas、《The Last Session》、Leeway、Destellos《Constelación》、Mirlos《Los charapas de oro》 | 「常被」→「被」 | 各只有單一具名出處（Debaser、AllMusic Nastos、Lollipop、Murky Recess、The Vinyl Factory） |
+| Rita Mitsouko | 「拉丁節奏混合成搖滾」→「拉丁節奏混進合成器搖滾」 | 漏字；Larousse 原意 |
+| Konitz／Mulligan Quartet | 第二句補《盤名》；刪「那支四重奏正是洛杉磯最紅的爵士團」壓字數 | QA 無《》 |
+| Lorelei | 刪結尾「這張後來被視為後搖滾的藍圖」 | 只見於樂團自己的 Bandcamp 與轉載部落格 |
+| Los Jaivas《Canción del sur》 | Minimoog 句改寫 | 補空格後 241 字超限 |
+
+其餘逐張四問無改：逐條對過研究稿（Harrison 抱怨不寫抒情曲、Konitz 69 歲台上現叫曲目、Morgan 與 Chambers 同屬 Vee-Jay、Blake 讀報三星期拉 Dax 入團、Leo Parker 錄完數月心臟病過世、Smith 三把豎琴模擬箏、Godard 跟拍三週、Ligabue 賭上生涯與百萬銷量、Miller 給點子 Slim 編歌、Lip Cream 同志社火把、Llach 的「革嘔萬歲」、Boy 騎車 60 公里、Long Fin Killie 三張以悲劇人物命名、Benson 剛好有空檔、Parra 賣電風琴湊錢、Mirlos 自製打擊樂皆有出處）。30 張鉤子前四字互異、加權 ≤50、無禁詞與雜項；Laughing Hyenas、Lemon Kittens、《Constelación》、《Canción del sur》第二句以人物或背景接續鉤子，盤名在同句或鉤子內，照收。查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-040.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
+- onboarding manifest 同步 29 處。
