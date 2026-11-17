@@ -29,6 +29,8 @@ if (cmd === 'show') {
 if (cmd === 'add') {
   const inp = load(inF(a1)); const out = load(outF(a1), []); const have = new Map(out.map(x => [x.k, x]));
   const v = JSON.parse(fs.readFileSync(0, 'utf8')); let n = 0, bad = 0;
+  const over = v.filter(x => inp[x.i] && have.has(inp[x.i].k)).length;
+  if (over) console.log(`⚠ 其中 ${over} 張原本已判、這次會覆蓋——若不是刻意重判，代表 i 編號錯了：i 要用 show 印出的方括號編號`);
   for (const x of v) {
     const c = inp[x.i]; if (!c || !['severe', 'rewrite', 'keep'].includes(x.g)) { bad++; continue; }
     have.set(c.k, { k: c.k, artist: c.artist, album: c.album, year: c.year, classic: c.classic, grade: x.g, codes: x.c || [], why: x.w || '' }); n++;
