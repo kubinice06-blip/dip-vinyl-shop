@@ -1959,7 +1959,7 @@
     // 主站「帶去店裡對決」帶進來（開機讀 ?card=）：吐司說明一次（第一次玩的人要先走完序章那一趟）
     if (UI.bringToast != null) {
       var bt = UI.bringToast; UI.bringToast = null;
-      if (bt.charAt(0) === '!') toast(SU('bringLegend', { album: (card(bt.slice(1)) || {}).album || '' }), 'keep long');
+      if (bt.charAt(0) === '!' && !card(bt)) toast(SU('bringLegend', { album: (card(bt.slice(1)) || {}).album || '' }), 'keep long');
       else if (bt) toast(SU(firstEver() ? 'bringToastFirst' : 'bringToast', { album: (card(bt) || {}).album || '' }), 'keep long');
       else toast(SU('bringMissing'), 'keep');
     }
@@ -2296,7 +2296,7 @@
     if (UI.saveReadOnly) return;
     var id = bringIdOf(v, raw);
     if (bringOk(id)) { save.bring = { id: id, at: now() }; UI.bringToast = id; persist(); }
-    else if (card(id) && E.canSeed(C, id)) UI.bringToast = '!' + id;   // 傳奇（M2）：不收，吐司說明
+    else if (card(id) && E.canSeed(C, id)) UI.bringToast = '!' + id;   // 傳奇（M2）：不收，吐司說明（'!' 前綴；吐司那邊再驗「不是一張卡」，id 本身以 ! 開頭也不誤判）
     else UI.bringToast = '';      // 查不到、王牌（帶不進來）：吐司說店裡沒有
   }
   function catalogIdNorm(v) { return String(v).toLowerCase().replace(/\//g, '-').trim(); }
