@@ -2356,6 +2356,56 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
 
+## sd-098（30 張，其餘：Geoff Mann 2、GoGo Penguin、Grand Puba、Götz Alsmann 2、HANA、Aurex '80、IVE、J. Valentine、Guitar Workshop in L.A.、Joe Williams、John Lee & Gerry Brown 2、Juice WRLD、Kevin Richard Martin、King General／Bush Chemists、Lou Rawls、Mach One、Mad Professor 2、Maximum Penalty、Mtume、Nightmares on Wax、Noblemen、Norbert Möslang、Ottottrio、Peaking Lights、Evans／Blancarte、Raw Deal）— s52
+
+- 研究：3 支 Sonnet，WebSearch 16＋17＋15＝48 次；無 none，thin 多（story thin 約 18 張）。Discogs API 不帶 token 可讀 releases／masters notes。
+- **主線補查**（WebSearch 5 次＋curl）：Ottottrio（日文搜尋只得維基鏡像與 RAG 演出頁，無新料）、Mach One（標題在任何來源都查不到）、Lou Rawls（只有館藏與商品頁；bobbywatson.com 頁空）、King General（Forced Exposure 2025 年 7 吋重發頁 403）——皆無新料，照研究稿薄寫。
+- **薄寫上線不留置**（delayde 前例）：Geoff Mann 2、Götz Alsmann《Mein Geheimnis (Live)》、Aurex、J. Valentine、Joe Williams、HANA（聲音）、King General、Lou Rawls、Mach One（只寫樂團史，明寫是樂團早期卡帶錄音之一，不編造內容）、Mad Professor 2、Nightmares on Wax（聲音）、Noblemen、Ottottrio、Raw Deal（聲音）。
+- 事實裁定：Geoff Mann《Psalm Enchanted Evening》不寫年份（1985／1986 兩說，研究以 1986）；Aurex 曲目兩來源衝突不寫、不寫 John Koenig；J. Valentine 不寫 Nicki Minaj 與 CDr 版；Noblemen 不是首作；Ottottrio 是「是方博邦」，不寫東京音樂祭大賞與編曲分配；Evans／Blancarte 不寫「曲名皆雷神」（無來源）、北齋封面不當鉤子；Raw Deal 寫「七首中五首成為《Brightside》的歌」（舊稿「再版收四首」不採）；Nightmares on Wax 不直接引 Evelyn；Juice WRLD 不寫延期原因與粉絲投票；Maximum Penalty 聲音出自評 Demo '89＋EP 合輯的樂評，同一批錄音，照用。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 7 處，改動檔 `review-sd-098.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Geoff Mann《Chants》 | 「常被視為」→「被視為」最實驗 | Indievision 單一出處 |
+| Geoff Mann《Psalm》 | 鉤子「兩張黑膠」→「兩張專輯」；「常被視為」→「被形容為」 | 鉤子不帶載體；單一出處 |
+| Aurex '80 | 第二句補 44 字原文盤名，整段重排壓回 239 字（樂手改以動詞列出、刪「東京」「錄音」） | QA 無《》 |
+
+其餘四問無改：鉤子都對過研究稿（國教牧師、兩週錄完、不想對空場地、交出製作專心寫詞、巴黎百老匯羅馬之後、台上說書、「花開在任何地方」、武道館同台、從我到我們、幕後寫歌、直錄雙軌、Basie 之後唱流行歌、三地接力、轉向放克、過世近五年、封城慢音樂、Camden 唱片攤、轉回爵士藍調、西倫敦高中、四十年 lovers rock、〈Hurt So Good〉、CBGB 週日場、諷刺享樂世代、Calm 委託、整團真人演奏、破解電器密碼、三團吉他手、湊錢去德州、無形式即興、離開 Breakdown）。30 張前四字互異、加權 ≤50；QA 0 問題。IVE 鉤子的「我」「我們」是引述概念，非人稱用法，保留。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-098.json`；30 張 30 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 26 處。
+
+## sd-099（23 張，其餘最後一批：Red Summer、Richard Pine & Company、Ronnie Laws、Salena Jones、Sidevision、Snapcase vs Boysetsfire、Solmania、Starcrost、Submersion、SWA、Tdel、The Caretaker、Crowns of Glory、East St. Louis Gospelettes、Hafler Trio、Isley Brothers、J.B.'s Reunion、Morning Stars of Savannah、Treatment、Turning Point／No Escape、Технология、ဇော်ဝင်းထွဋ်、Smasher）— s52
+
+- 研究：3 支 Sonnet，WebSearch 17＋21＋14＝52 次；none 有 Morning Stars sound、Zaw Win Htut sound、Smasher story。俄文、緬甸文來源已試。研究層回報搜尋結果中 cavac.at 夾帶無關指令，未採用、不引用該站。
+- **主線補查**（WebSearch 4 次＋WebFetch）：Zaw Win Htut（英文維基：早年在 Oasis 當鼓手、出道初期唱鄉村與搖滾樂、首張《Mercury Night》1983 不成功、1989 精選才成名、翻唱「像穿別人的襯衫」）→ sound none 升 thin；Morning Stars（KWBU 頁只有一句標語）、Crowns of Glory、Sidevision（日文）、Salena Jones（日文）無新料。
+- **薄寫上線不留置**：Richard Pine、Sidevision、Solmania（寫成當時整體路線）、Starcrost、Submersion、Tdel、Crowns of Glory、Gospelettes、Morning Stars（無聲音描述，225 字）、Zaw Win Htut、Smasher、Treatment（聲音寫樂團一貫做法）。
+- 事實裁定：Richard Pine 是松本易夫的企畫名義（舊稿當成兩人）；Salena Jones（1980／1981）、Starcrost（1975／1976）、Smasher（2017／2020）不寫年份或只寫錄音事實；Crowns of Glory 舊稿 Robert White、Ken Sands、《Hair》三說無出處不寫；Gospelettes 不寫 Nashboro 創辦人；Isley 不寫「轉投 Motown 前最後一張」；J.B.'s 不寫 Ron Tooley／Kush、兩位鼓手；Технология 不寫「晚三年」、詞曲主唱多人分擔；Zaw Win Htut 不寫十五軌與串流日期。
+
+### 主線審稿（2026-11-17，逐張 23 張，改 21 處，改動檔 `review-sd-099.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Starcrost | 刪「原版只壓約一千張」；第二句補《Starcrost》 | 壓片數屬版本雜項；QA 無《》 |
+| Hafler Trio | 刪「黑膠，限量 1000 張」與 2020 數位重發句 | 載體、限量、重發屬雜項 |
+| Solmania、Submersion、Crowns、Treatment、Zaw Win Htut、Smasher | 刪「這是整體作風，不是對這張的描述」「以下是他一貫的手法」等後設句，改直述「整體／一貫／出道初期」 | 語氣平實、不寫後設說明 |
+| Crowns of Glory | 刪「男女團員輪流領唱」 | 研究稿無據 |
+| Gospelettes | 「常被拿來和 Mavis Staples 相比」→「唱腔動態像」；前期編曲寫明是 Birthright 時期；壓字數 | 單一出處（KWBU）；分清前作 |
+| Isley | 「換到新廠牌後的第三張」→「在 United Artists 發行的第三張」 | 原句誤導 |
+| Snapcase vs Boysetsfire | 第二句補盤名、壓字數 | QA 無《》 |
+| Turning Point／No Escape | 第二句改《Split》＋兩團名；刪「在這張 split 上聽起來陰沉」與 Revelation 合輯句壓回 221 | QA 無《》、字數 |
+
+其餘四問無改：鉤子都對過研究稿（迷幻吉他、企畫名義、別送爵士電台、日本年年回訪、角松班底十年、翻唱 The Police、最早一批噪音計畫、長號手自辦廠牌、效果鏈、Dukowski 在 Black Flag 時構想、溫哥華島苔蘚雨林、舊舞廳唱片、三男三女、Mavis Staples 式唱腔、哥特堡電腦音樂室古鋼琴、〈Twist and Shout〉之後、無合成器的重聚、唱片橫跨十七年、Nik Turner 同台、〈Behind This Wall〉與解散、Depeche Mode 之比、緬甸搖滾巨星首張失利、13 歲上海盜電台）。23 張前四字互異、加權 ≤50；QA 0 問題。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-099.json`；23 張 23 鍵（皆非 CJK、原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **23/23 一致**；`front-check` **前台 23/23 新稿**（CURATED 0）。
+- onboarding manifest 同步 20 處。
+- 本工作階段 WebSearch 合計約 109 次（研究層 sd-098 48、sd-099 52，主線 9）。
+
 ## sd-088（30 張，其餘：Slint、Slovenly、Smuv／mt. fujitive、Snapcase 3、Social Tension、SOIL&"PIMP"SESSIONS、Sonia Rosa、Sonny Fortune、Sonny Rollins、Soul-Junk、Soulive、Sounds From the Ground、Spirit of Love、Spirogyra、SME、St. Christopher、Stan Forebee、Stan Sulzmann、Stan Tracey、Stanley Cowell、Stanley Turrentine 4、State Azure、Di Battista、Stefon Harris、Lacy／Smith）— s47
 
 - 研究：3 支 Sonnet，WebSearch 7＋13＋15＝35 次；none 只有 Snapcase 1991 同名卡帶 sound。
