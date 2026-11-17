@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜Newtone downtempo 定案 506 張，排在簡介修正之後
+
+- **店主**：「506 張全上，但先解決現在的問題吧。」→ 恍惚 356＋頹靡 150 預估格全收（勾選頁 db `skip` 0 筆），等嚴重簡介重寫線收尾再開，照 `dip-card-create`＋`general-desc-base.md`＋藝人介紹。
+- **改動**：`batch-progress/newtone-dt-20261108/README.md` 加定案節。
+- **驗證**：純文件，無 KV／seed 變更。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s11：sd-019、sd-020、sd-hold-3 上線（61 張，留置 2）
 
 - **結果**：sd-019 上線 29（留置黑豹樂隊《無是無非》：只有團史與主唱更替）；sd-020 上線 30（無留置；含非 CJK 的 Agnostic Front，CURATED 未蓋）；sd-hold-3 重查 sd-016／018 的 3 張留置卡，救回花生隊長《Oh My God》（Yahoo 拍賣頁轉錄的專輯文案）、美空ひばり《ひばりの渡り鳥だよ》（Discogs API credits），張露《繁星點點》續留置（身分不穩：1973 疑為數位上架日、1977 黑膠作「張璐」）。
