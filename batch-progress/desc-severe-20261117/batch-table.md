@@ -89,8 +89,8 @@
 | sd-089 | 其餘（Stewart Walker … Ta-ku） | 30 | | |
 | sd-090 | 其餘（Tabu Ley Rochereau … The Clark Sisters） | 30 | | |
 | sd-091 | 其餘（The Comes … The Icemen） | 30 | | |
-| sd-092 | 其餘（The II Generation … THE SQUARE） | 30 | | |
-| sd-093 | 其餘（THE SQUARE … Third Quadrant） | 30 | | |
+| sd-092 | 其餘（The II Generation … THE SQUARE） | 30 | s49 | ✅ 上線 30（前台 30；無留置） |
+| sd-093 | 其餘（THE SQUARE … Third Quadrant） | 30 | s49 | ✅ 上線 30（前台 30；無留置） |
 | sd-094 | 其餘（This Heat … Uncle Charlie Osborne） | 30 | | |
 | sd-095 | 其餘（Urs Voerkel, Peter K. Frey, Paul Lovens … Wha-ha-ha） | 30 | | |
 | sd-096 | 其餘（White Heaven … Zoviet France） | 30 | | |
