@@ -1607,6 +1607,52 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
 - **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
 
+## sd-060（30 張，其餘：BROCKBEATS 4、Brother Joe May 2、Brother JT、BTS、Bunny Wailer 2、Burial Chamber Trio、Burn、Buster Williams Trio、Bức Tường、C.C.C.C.、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball Adderley、Cappablack、Caracal、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea 4）— s33
+
+- 研究：3 支 Sonnet，WebSearch 7＋15＋15＝37 次；none 只有 Candi Staton《Stand Up and Be a Witness》sound。母語來源：BTS 韓文（亞洲經濟、Tenasia）、Bức Tường 越文（Đại Đoàn Kết）、Casiopea 日文維基與官方資料站。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Brother Joe May《The Master's On Our Side》（確認為 1958 年轉投 Nashboro 後的專輯，Acrobat 合集）；Buster Williams《Tokudo》（jazzdisco：1978 年 1 月東京日本コロムビア錄音室、Barron／Riley 三重奏、曲目取向；Sphere 1979 年成立晚於本張）；Candi Staton《Stand Up…》（AllMusic：亞特蘭大 Cheshire Sound、製作人、自己寫歌；仍無聲音描述，薄寫）。BROCKBEATS、Brother Joe May 只有藝人層級資料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Bunny Wailer 不寫「五首拆自 Blackheart Man」「1976 Island」；Burn 不寫「1992 年同名 EP」（〈Last Great Sea〉是 2002 EP，本張重錄）；Carl Bean 原碟寫 Peacock、不寫 Motown 與 Tim Dillinger 評語；Casiopea 不寫〈Marine Blue〉、撲克牌、「一口氣錄完」、十週年巡演、Milestone 改名；Tokudo 不寫 PCM 號段；Channthy 被騙進性交易、Phạm Anh Khoa 2018 風波不寫；BTS 不寫 Billboard 名次與銷量。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 42 處，改動檔 `review-sd-060.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Burial Chamber Trio、Tokudo、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball、Cappablack、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea Live、Perfect Live II、Lunch Time Sleeps | 第二句補《盤名》，並刪次要細節壓回 240 字（Carey Bell 錄音時間抱怨、Carl Thomas 連三張名次、McRae 唱腔、Cannonball 唯一管樂手等） | QA 無《》、字數 |
+| BROCKBEATS 4 張 | 刪軌數（20／15／16 首）、卡帶售罄、曲名日英混用體例；Night Trip、Tranquilizook 鉤子去掉軌數 | 軌數、版本、曲名體例屬雜項 |
+| Burial Chamber Trio、C.C.C.C.、Calvin Keys | 刪「只出黑膠」「限量黑膠」「2023 首度出 CD」「2021 重發黑膠」；Keys 改補內頁文「一大躍進」評價 | 版本資訊不寫 |
+| Bunny Wailer Vol. 1、Brother JT | 刪「七首」「長曲」 | 軌數、曲長類 |
+
+其餘逐張四問無改：Cannonball 鉤子（《Kind of Blue》4 月 22 日收工、本張 4 月 23 日起錄）研究稿有日期依據；Down Upbeat「常被視為數位聲音代表作」出自官方資料站，照收；BROCKBEATS《Soy Milk》《Lunch Time Sleeps》以曲名題材當概念鉤子（日常、午睡），屬概念非體例，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-060.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
+
+## sd-061（30 張，其餘：Casiopea 3、Caspro、Castanarc、Cecil Taylor、Cedar Walton、Celine Dion、Centry、cero、Chanté Moore、Charalambides、Charles Lloyd & the Marvels、Charles Pasi 2、Charlie McAlister、Charlie Moore、Charlie Parker 2、Chicago、Chick Corea 2、Chico Hamilton、Chillies、Chris Minh Doky、Christopher Willits、Chucho Valdés、Chuck Girard、Chế Linh 2）— s33
+
+- 研究：3 支 Sonnet，WebSearch 16＋14＋19＝49 次；none 只有 Centry story。母語來源：Casiopea 日文維基與 weblio、cero 日文（Tokion、Real Sound、ototoy）、Celine Dion 法文、Pasi 法文 Blue Note 頁、Chillies 越文（Bazaar Vietnam、SGGP）、Chế Linh 越文維基。
+- **主線補查**（WebSearch 7 次＋WebFetch，facts 標【主線補查】）：Charlie Moore《Avery County》（ibiblio 藍草作品表：1977 年 7 月 Lexington Lemco、9 月 Fountain Inn Music Lab 兩場，Old Homestead、製作 John W. Morris、班底與收錄曲；Clinch Mountain Echo 評價與 1979 年去世）→ 救回；《Tone Poem》（Jazzwise／Guardian：首度無客席主唱、多出自 2017《Vanished Gardens》同批錄音）；Chế Linh 兩卷（英文維基：本名、占族、Tứ trụ nhạc vàng、1972 Kim Khánh 獎、筆名 Tú Nhi、1975 後關押與出走；tuannyriver 部落格：首張收〈Bài ca kỷ niệm〉〈Cho vừa lòng em〉、風琴開場的 rumba 編制）。Centry 無新料，薄寫。
+- 事實裁定：Casiopea《Jive Jive》不寫 Steve Travell 填詞；Cecil Taylor 寫 BYG 不寫國別；Celine Dion 詞曲寫「多數」出自 Goldman；Centry 不寫與 Zion Train 的關係；Chick Corea《Is》不寫 Merton 詩、《The Sun》不寫中村照夫製作；Chico Hamilton 不寫廣告配樂與「三年多來頭一張」；Chillies 不寫離開 Warner；Chế Linh 不寫幫傭與載石卡車、不強調年份（維基 1973、部落格 1972、卡單 1974 三說），《Chế Linh 4》照實寫為多歌手綜藝卷帶；《Washington Concerts》不寫 Bill Potts 樂團；Chicago 17 不寫入圍類別；Charalambides 不寫年份（1993／1994 兩說）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 11 處，改動檔 `review-sd-061.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Cedar Walton《First Set》 | 日期鉤子「1977 年 10 月 1 日…一整晚被錄了下來」→ 人物鉤子「25 歲的…Bob Berg…上台」；刪「長而」與次要字壓字數 | 日期不是故事材料；曲長字眼 |
+| Charalambides、Centry | 刪「限量 500 張黑膠」「2020 年 Partial Records 重發」 | 版本資訊 |
+| 《Tone Poem》 | 「83 歲」→「年過八十」 | 研究稿無年齡，2021 年 3 月發行時 82 或 83 不確定 |
+| Chick Corea《The Sun》 | 鉤子「三個月後」→「三個月前還同在 Miles Davis 樂團的四個人」；刪「獨奏狂熱」壓字數 | 照研究稿語意 |
+| Chick Corea《Is》 | 刪多餘空格 | 格式 |
+
+其餘逐張四問無改：Storyville 插播初選開票、McAlister 的島民拒絕派對概念、Chicago 17 六白金、Celine 四百萬張與史上第二暢銷法語專輯、Doky 的 Brecker 病中疊錄、Willits 的 Envelop 與 3D 空間音訊、Valdés 第 46 屆葛萊美入圍、Girard 自稱首張是「安全的唱片」皆有出處。Chế Linh 第一卷的「越南 bolero 代表作」與〈Bài ca kỷ niệm〉出自部落格對其「首張專輯」的描述，系列第一卷即首卷，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-061.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 97 次（研究層 sd-060 37、sd-061 49，主線 11）。
+
 ## sd-058（30 張，其餘：Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）— s32
 
 - 研究：3 支 Sonnet，WebSearch 13＋15＋10＝38 次；無整張 none（Birdland story none、Blackbird story none、Blue Wednesday 兩張 story none、Blind Light sound none）。

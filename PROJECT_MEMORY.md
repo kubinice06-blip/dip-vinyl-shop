@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s33：sd-060、sd-061 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-060 上線 30（BROCKBEATS 4、Brother Joe May 2、Brother JT、BTS、Bunny Wailer 2、Burial Chamber Trio、Burn、Buster Williams、Bức Tường、C.C.C.C.、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball、Cappablack、Caracal、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea 4）；sd-061 上線 30（Casiopea 3、Caspro、Castanarc、Cecil Taylor、Cedar Walton、Celine Dion、Centry、cero、Chanté Moore、Charalambides、Tone Poem、Pasi 2、McAlister、Charlie Moore、Parker 2、Chicago 17、Corea 2、Chico Hamilton、Chillies、Doky、Willits、Valdés、Girard、Chế Linh 2）。BROCKBEATS、Brother Joe May、Centry 資料只到藝人／廠牌層級，照 delayde 前例薄寫上線。
+- **主線補查**：Tokudo、Candi Staton、Brother Joe May、Charlie Moore（1977 兩場錄音與班底，救回）、Tone Poem、Chế Linh 兩卷（越南 bolero、筆名 Tú Nhi、Kim Khánh 獎）。審稿改 sd-060 42 處（補《盤名》、刪軌數／黑膠版本／重發／曲名體例）、sd-061 11 處。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-060.json,review-sd-061.json,kv-before-sd-060.json,kv-before-sd-061.json}`、`desc-tools/batches/{cards,research,output}/sd-06{0,1}*`、onboarding manifest 55 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異。WebSearch 約 97 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s32：sd-058、sd-059 上線（60 張，無留置）
 
 - **結果**：「其餘」組。sd-058 上線 30（Big Satan、BIGBANG、Billie Holiday、billy woods、Bim Sherman 2、Birdland、Biréli Lagrène 4、Black Moth Super Rainbow、Black Mountain Transmitter、Black Roots、Black Tape for a Blue Girl 2、Blackbird、Blind Light、Blue Mitchell 5、Blue Wednesday 2、Blueboy、Bob Dorough、Bobbi Humphrey 3）；sd-059 上線 30（Bobby Hutcherson 10、Bobby Lyle、Bobby Watson & Horizon 2、Body of Light、boerd、Bohren 2、Booker Ervin、Bora Roković、Born Against、Bourbonese Qualk、Bozi Boziana、Brand Nubian 2、Brass Construction、Bread, Love and Dreams、Breakdown、Bridget St John、Brigth Engelberts、Brock Berrigan）。查不到專輯層級資料的照 delayde 前例薄寫上線、不留置（Blue Wednesday《Beat Tape 2》149 字）。
