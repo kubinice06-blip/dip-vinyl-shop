@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s27：sd-049、sd-050 上線（60 張，無留置）
+
+- **結果**：經典度≥4 卡。sd-049 上線 30（Steps 2、Sterling Void、Steve Gadd、Poindexter、Spacek、sToa、Stompin' Ground、Supertouch、Sussan Deyhim、Sutekh、Svartsinn、Grünberg 2、Sweeps、Sweet Charity、Tellier、Godinho、Taj Mahal Travellers、宮坂高史、Tantra、Tar、Terra Rosa、Terrence Parker、Tetrack、Faith Healers、Astronauts、B-52's、Benny Green、검정치마）；sd-050 上線 30（검정치마《TEAM BABY》、Bush Chemists、Chesterfields、The Comes、Consolers、CJQ、Cravats、Deep Freeze Mice 2、Diagram Brothers、Pullen-Adams 2、Gospelettes、Fabulous Counts、Ward Singers、Feelies、Force of Music、Great Jazz Trio 2、The Hacker、Highway QC's、Impressions、Isley Brothers、Betsch、Kamkars、Legendary Pink Dots 2、Lyman Woodard、The Martian、The Mercy's）；無留置（宮坂高史《Soul Tomato》只有編制與錄音資料，薄寫 167 字上線）。
+- **主線補查**：sd-049 補 13 張（Steps 的 Milkowski 傳記轉述、검정치마 Newsis 2011 訪談、B-52's、Grünberg《OM》、Terrence Parker 等），sd-050 補 12 張（Isley 編制、Betsch 錄音、Gospelettes、Great Jazz Trio《Love for Sale》的 Buster Williams、Bush Chemists、Cravats 等）。
+- **審稿**：sd-049 改 12 處（Taj Mahal Travellers 鉤子因果顛倒與曲名體例、Terrence Parker 無出處封號、Sweet Charity「英國水兵」），sd-050 改 12 處（검정치마 人名改原文、單一出處去「常被」、Cravats 錄音地點三說不寫、Curse 軌序）；派工詞「Sweet Charity 為印尼團」「CJQ 屬 Tribe」皆錯，已更正。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-049/050.json,review-sd-049/050.json}`、`desc-tools/batches/{cards,research,output}/sd-049*、sd-050*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。WebSearch 約 129 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s29：sd-053、sd-054 上線（57 張，留置 3）
 
 - **結果**：sd-053 上線 30（經典度≥4：Vision of Disorder … Zbigniew Preisner，含 Warzone 2、Woody Guthrie 2、河野康弘 2、Preisner 2）；sd-054 上線 27（Zeni Geva … Al Campbell，含 Daho 2、108 2、9m88 2、Air 2、929、大森明），**留置 3**：A-Sound《Release》、99.99《More of 99.99》、Akal Dub《Life and the Void》（查無專輯層級資料，KV 保留舊稿，`held-sd-054.json`）。

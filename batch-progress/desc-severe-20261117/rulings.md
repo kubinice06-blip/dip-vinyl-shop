@@ -1413,6 +1413,56 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 100 次（研究層 sd-039 46、sd-040 32，主線約 22）。
 
+## sd-049（30 張，經典度≥4：Steps 2、Sterling Void、Steve Gadd、Steve Poindexter、Steve Spacek、sToa、Stompin' Ground、Supertouch、Sussan Deyhim、Sutekh、Svartsinn、Sven Grünberg 2、Sweeps、Sweet Charity、Sébastien Tellier、Sérgio Godinho、Taj Mahal Travellers、宮坂高史、Tantra、Tar、Terra Rosa、Terrence Parker、Tetrack、Th' Faith Healers、The Astronauts、The B-52's、Benny Green Trio、The Black Skirts）— s27
+
+- 研究：3 支 Sonnet，WebSearch 14＋22＋14＝50 次；none 只有宮坂高史《Soul Tomato》sound。
+- **主線補查**（WebSearch 約 22 次＋WebFetch，facts 標【主線補查】）：Steps《Smokin' In The Pit》（Milkowski 傳記轉述：1979/12/15–16 Pit Inn 兩晚、改名 Steps Ahead 緣由）→ story ok；Steps《Step By Step》（Pit Inn 前後進錄音室，仍薄）；Gadd（Gadd Gang 官方頁「1984 年一張冷門的日本錄音」，仍薄）；Poindexter、sToa、宮坂高史再搜無新料，薄寫；Terrence Parker（AllMusic 錄音地、Harold Heath 評的鋼琴 house＋broken beat＋器樂 hip hop）→ sound ok；Benny Green（Blue Note 三重奏三部曲第二張，仍薄）；Black Skirts《Don't You Worry Baby》（Newsis 2011 訪談：老教堂錄音室與 1920 年代麥克風、地下室錄音、航海日誌標題、原聲清淡、歌詞為重）；B-52's（1978 年起的現場曲、Compass Point、Rhett Davies）→ story ok；Tar（Albini 於 Chicago Recording Company 錄、AmRep 發行）；Terra Rosa（Mandrake Root、唱片行「奠基作」說法、1989 King 重錄）；Faith Healers（Melody Maker 專文，仍薄）；Grünberg《OM》（愛沙尼亞音樂資訊中心並列代表作、1981–87 塔林錄音、FACT 轉向內斂）→ story ok；Sweet Charity（WEA、A. Husaini 製作、〈Hilang Gelap Terbitlah Terang〉）。
+- 身分／事實裁定：Steps 兩張只寫 1981 Better Days，不寫錄音年月、母帶遺失、1999 雙 CD；渡辺香津美客座曲兩源衝突不寫曲名；Sussan Deyhim 這張是第一張個人專輯（舊稿「排第三」錯）；Sweet Charity 是新加坡樂團（派工詞寫印尼，錯）；Grünberg《Hukkunud Alpinisti hotell》是 2001 三片裝配樂精選，不是 1979 原聲帶；Tetrack 年份兩說不寫、Pablo 樂器說法無來源不寫；Terra Rosa 主唱「赤尾和重」（主線補查 fact 一度誤植「赤尾かおり」，已更正）；The Astronauts 薩克斯風手兩說不寫；宮坂高史有專輯層級身分資料（編制、錄音、廠牌、自作曲），**不留置**，薄寫 167 字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-049.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Taj Mahal Travellers | 鉤子「開著福斯小巴一路巡演到泰姬瑪哈陵，這群日本樂手就拿它當了團名」→「沒有領袖、一場可以演上十幾個小時，這群日本樂手把集體即興拉成了 drone」 | 樂團 1969 成立時已有團名，小巴之旅在後，原句因果顛倒 |
+| Taj Mahal Travellers | 刪「曲名就是各段的起訖時間」，補巡演到泰姬瑪哈陵、回國辦演出籌旅費；其後兩處為字數微調 | 曲名體例屬雜項；研究稿團史 |
+| Terrence Parker | 鉤子「成了底特律靈性 house 的代表人物之一」→「把 house 做出了教堂般的虔誠氣息」 | 「代表人物」無出處，改用聲音材料 |
+| Tetrack | 「把他們的單曲編成」→「挑選他們的錄音編成」；「交給」→「由」、「受到讚賞」→「獲讚賞」 | 研究稿未說是單曲；字數 |
+| The B-52's | 刪多餘空格 | 格式 |
+| Sweet Charity | 「為英國水兵」→「為外國水兵」 | 研究稿為外國水兵與英國士兵 |
+
+其餘逐張四問無改：逐條對過研究稿（Sterling Void 與 Pet Shop Boys 翻唱第 5 名、Spacek 與 J Dilla〈Dollar〉、Stompin' Ground 1992 Rollins Band 暖場後禁 slam dance、Sutekh 與 Vital Weekly／Kindamuzik 聲音描述、Svartsinn 三部曲中間那張、Tellier 與 Tony Allen、Godinho 1971 Hérouville 城堡錄音、Tantra 與 Coliseu、Tar 鋁製吉他與無吉他獨奏、Faith Healers 為 Too Pure 第一組簽約團、B-52's Billboard 200 第 18、Black Skirts Gaon 第 3）。Sweeps 列三個曲名交代 Terminal 41 逃亡概念，屬概念核心，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-049.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+
+## sd-050（30 張，經典度≥4：The Black Skirts、Bush Chemists、Chesterfields、The Comes、Consolers、Contemporary Jazz Quintet、Cravats、Deep Freeze Mice 2、Diagram Brothers、Pullen-Adams Quartet 2、East St. Louis Gospelettes、Fabulous Counts、Famous Ward Singers、Feelies、Force of Music、Great Jazz Trio 2、The Hacker、Highway QC's、Impressions、Isley Brothers、John Betsch Society、Kamkars、Legendary Pink Dots 2、Lyman Woodard Organization、The Martian、The Mercy's）— s27
+
+- 研究：3 支 Sonnet，WebSearch 14＋13＋15＝42 次；無 none。
+- **主線補查**（WebSearch 約 15 次＋WebFetch，facts 標【主線補查】）：Chesterfields（Subway 源起、TweeNet 盤名典故）→ story ok；The Comes（Dogma／City Rockers、第一波硬蕊、Chitose 人聲評語）；Deep Freeze Mice（Jenkins 自述年表，sound 仍薄）；Cravats（Overground：八軌、獨立榜前 20）→ story ok；Bush Chemists（Wardrop 四軌起家、三部曲第一部、同名曲進廣告）→ story ok；Consolers（Cross Rhythms 長文，未見本盤名）；Isley Brothers（維基編制：Ernie、Marvin、Jasper 等，DeShannon 翻唱、Jasper 作曲）→ story ok；Highway QC's（無專屬樂評，薄寫）；The Hacker（DiS：首張當年聽眾少）；Gospelettes（Checker、Oliver Sain、Bobby Bland 改編）→ what／sound ok；Great Jazz Trio《Love for Sale》（Buster Williams、AllMusic／Test of Time 評語）→ sound ok；Betsch（納許維爾錄音、陣容、移居紐約後合作者）→ story ok；Kamkars（AllMusic Keefner：九人波斯樂團、清脆錄音；諾貝爾典禮演出）。
+- 身分／事實裁定：Contemporary Jazz Quintet 廠牌是底特律 Strata（不是 Strata-East／Tribe，派工詞與舊稿皆錯）；Consolers 只寫「1961 年 Nashboro 發行的 LP」，不斷言首張、不把《Give Me My Flowers》當本盤名；Cravats 錄音地點三說不一，不寫；Famous Ward Singers 本盤為 1957 年 7 月現場錄音、隔年發行，Kitty Parham 是人聲；Great Jazz Trio《Love for Sale》貝斯是 Buster Williams；Isley 單曲只寫前 40 名、不寫「三兄弟」；The Martian 屬 UR 的 Red Planet（非 Drexciya 系），身分寫「通常被認為是 Mike Banks」，原住民意象不寫成概念；The Mercy's 是印尼棉蘭樂團，本盤是否 Volume 1 未證實，寫「1970 年代初」；Black Skirts 人名一律用原文 조휴일（研究稿的「趙休日」漢字未經證實）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-050.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| The Black Skirts《TEAM BABY》 | 「趙休日」→「조휴일」（三處）、「黑裙（검정치마）」→「검정치마（The Black Skirts）」，韓中之間補空格 | 韓國人名團名照原文；與同團 sd-049 卡一致 |
+| The Comes | 鉤子「常被稱作」→「被樂評形容為」 | 單篇再發行樂評 |
+| Chesterfields | 刪「劇中人總叫彼此去燒水，樂團決定改用跳舞回應。」 | TweeNet 評者自註無法證實，鉤子已用「據說」 |
+| Cravats | 刪「在一家旅館地下室」 | 錄音地點三說不一（177 字，薄寫） |
+| East St. Louis Gospelettes | 「常被視為」→「被樂評稱為」 | 單一出處 Sir Shambling |
+| Legendary Pink Dots《Curse》 | 刪「收尾的」；「全團編制佔了一半以上」→「一半以上的曲子由全團演奏」 | 軌序；語意 |
+| John Betsch Society | 「常被拿來與 Pharoah Sanders 相比」→「有樂評拿它與…相比」 | 單一出處 Sean Trane |
+
+其餘逐張四問無改：逐條對過研究稿（Bush Chemists 與 Camden 攤位、CJQ 與《Bitches Brew》、Diagram Brothers「Discordo」規則與烤麵包機打擊、Breakthrough 七年首度美國廠牌、Song Everlasting 長笛與柔和慢曲、Fabulous Counts 一遍錄成與〈Hey Jude〉、Ward Singers 與 Little Richard、Feelies 拒大廠製作人改找 Peter Buck、Force of Music 獻給 Coxsone、Great Jazz Trio 渡辺貞夫錄音隔天、Impressions R&B 專輯榜冠軍與 Grammy 名人堂、Kamkars 七兄弟加一姊妹、Brighter Now 的 Nick Mason 八軌（官方網站單一來源，作為器材故事照收）、Lyman Woodard 的 Mellotron、Mercy's 與 Koes Plus 對照）。鉤子檢查兩筆「軌」是「四軌機」「八軌」錄音器材，非軌序，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-050.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 129 次（研究層 sd-049 50、sd-050 42，主線約 37）。
+
 ## sd-053（30 張，經典度≥4：Vision of Disorder、Vitorino、Voltz、Von Freeman、Voodoo Queens、Kernagis、Wamdue Project、Warzone 2、Wen、White Heaven、Willie Colón、Winston Edwards & Blackbeard、Wizz Jones、Woody Guthrie 2、World Standard、world's end girlfriend、Would-Be-Goods、Writing on the Wall、X-Dream、XPDC、Yann Tiersen、河野康弘 2、YBO²、Mravinsky、Sawasaki、Preisner 2）— s29
 
 - 研究：3 支 Sonnet，WebSearch 16＋14＋15＝45 次；none：Voodoo Queens（sound）、Kernagis（sound）、Warzone EP（sound）、河野《Peace》（sound）、Sawasaki（sound）。前台預查 60 張（sd-053／054）x-cache 全為 KV-HIT。
