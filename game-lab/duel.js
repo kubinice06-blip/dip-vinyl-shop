@@ -537,6 +537,7 @@
     function renderStamp(v) {
       const r = v.apexReveal && !v.over ? v.apexReveal : null, U = apxUI();
       let st = els.hint.querySelector('.apxst');
+      els.hint.classList.toggle('stamped', !!r);         // 11-17：蓋章那手章換到「提示」籤的位置（句庫的句子較長，章跟籤並排時 360／375 寬會換三行被切）
       if (!r) { if (st) st.hidden = true; return; }
       if (!st) { st = document.createElement('span'); st.className = 'apxst'; st.setAttribute('role', 'status'); els.hint.appendChild(st); }
       st.className = 'apxst ' + r; st.textContent = r === 'bluff' ? (U.revealBluff || '') : (U.revealHonest || ''); st.hidden = false;

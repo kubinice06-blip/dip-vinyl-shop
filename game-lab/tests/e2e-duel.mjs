@@ -25,7 +25,7 @@
 //  10 __lab.force：counter 之後 1.6 s clashState().deck.by==='p'；tie 時 deck===null
 //  11 長按手牌封面 450 ms＝唱片資訊（不選牌）
 //  12 六手比聲望條剩幾成（FIXLIST 3）：最後一手他贏、你靠聲望贏整場 → 大章 roundsOut／roundsScore（%＝E.pctPair）、勝利曲只叫一次而且是你最後丟的那張；tip_rounds；
-//     每手的提示句：有字、不寫「經典／冷門／硬蕊」、跟上一手不同、＝C.hints 那句
+//     每手的提示句：有字、不寫「經典／冷門／硬蕊」、跟上一手不同、＝C.hints 或句庫 C.hintLines 那句（11-17）
 //  13 最後一手 KO：你 KO 他 → 「品味勝出」、勝利曲＝你那張；他 KO 你 → 「聲望歸零」、勝利曲＝他那張
 //  14 autoplay('thoughtful') 打完一場（走正常點擊流程）
 //  15 主控台 0 錯誤
@@ -161,7 +161,7 @@ function pageTools() {
     hintNow() {
       const C = window.DipLabContent, v = window.DipLabEngine.view(window.__lab.rawDuel());
       const tx = (document.querySelector('.dl [data-tut="e-hint"] .tx') || {}).textContent || '';
-      const want = v.hint ? ((C.hints[v.hint.attr] || []).find(x => x.id === v.hint.line) || {}).text : null;
+      const x = v.hint ? window.DipLabDuel._fmt.hintOf(C.hints, v.hint, C.hintLines) : null, want = x ? x.text : null;   // 11-17：C.hints 找不到再查句庫 C.hintLines
       return { n: v.n, tx, want, rounds: (document.querySelector('.dl [data-tut="rounds"]') || {}).textContent || '' };
     },
   };
@@ -276,15 +276,15 @@ async function synthetic(browser) {
       const out = {};
       out.d1 = line(F.clashText(ev({ pAttr: 'o', eAttr: 'c', kind: 'counter', toE: 4, by: 'p' }), T, C.hints));
       out.d2 = line(F.clashText(ev({ pAttr: 'o', eAttr: 'c', kind: 'mirrorLose', toP: 3, blocked: 'gap', by: 'p' }), T, C.hints));
-      out.d3 = line(F.clashText(ev({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, hint: { attr: 'c', line: 'c2' } }), T, C.hints));
+      out.d3 = line(F.clashText(ev({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, hint: { attr: 'c', line: 'c2' }, script: true }), T, C.hints));
       // key 為 null 的提示句 → bluffNoKey／honestNoKey
       const NK = { c: [{ id: 'cx', text: '（測試）', key: null }], o: [{ id: 'ox', text: '（測試）', key: null }], h: [{ id: 'hx', text: '（測試）', key: null }] };
-      out.nkB = F.clashText(ev({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, hint: { attr: 'c', line: 'cx' } }), T, NK).l1;
-      out.nkH = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'ox' } }), T, NK).l3;
-      // 照實：l3＝關鍵字那句（族詞＝那句的 key）
-      out.hon = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' } }), T, C.hints).l3;
+      out.nkB = F.clashText(ev({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, hint: { attr: 'c', line: 'cx' }, script: true }), T, NK).l1;
+      out.nkH = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'ox' }, script: true }), T, NK).l3;
+      // 照實：l3＝關鍵字那句（族詞＝那句的 key）——11-17 起只有教學那場（事件有 script）念關鍵字
+      out.hon = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' }, script: true }), T, C.hints).l3;
       // 唬人又剋不動：l3＝規則句（句尾改「。」）
-      const bb = F.clashText(ev({ pAttr: 'h', eAttr: 'c', kind: 'mirrorWin', toE: 2, blocked: 'gap', by: 'e', bluff: true, hint: { attr: 'o', line: 'o2' } }), T, C.hints);
+      const bb = F.clashText(ev({ pAttr: 'h', eAttr: 'c', kind: 'mirrorWin', toE: 2, blocked: 'gap', by: 'e', bluff: true, hint: { attr: 'o', line: 'o2' }, script: true }), T, C.hints);
       out.bb = [bb.l1, bb.l2, bb.l3];
       out.him = line(F.clashText(ev({ pAttr: 'c', eAttr: 'o', kind: 'mirrorWin', toE: 2, blocked: 'gap', by: 'e' }), T, C.hints));
       // 王牌沒有「不會被剋」（FIXLIST 2）：被 ≤5 星剋＝差 2 星剋不動（gap）
@@ -296,14 +296,37 @@ async function synthetic(browser) {
       out.countered = line(F.clashText(ev({ pAttr: 'c', eAttr: 'o', kind: 'countered', toP: 5, by: 'e' }), T, C.hints));
       out.rs = [T('roundsOut'), T('roundsScore', { p: '90', e: '70', who: '你' }), T('roundsEven', { p: '50', e: '50' })];
       // 第 A 波 4（讀對了就說出來）：他唬人、你照他真正出的剋中＝「你看穿了！」（不停住、不標唬人）；key 為 null＝NoKey 版；照實剋中＝「讀對了。」＋規則句、l3＝照實那句
-      const see = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' } }), T, C.hints);
+      const see = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' }, script: true }), T, C.hints);
       out.see = [see.l1, see.l2, see.l3, see.bluff, see.saw, see.read];
-      out.seeNk = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'cx' } }), T, NK).l1;
-      const rr = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' } }), T, C.hints);
+      out.seeNk = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'cx' }, script: true }), T, NK).l1;
+      const rr = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' }, script: true }), T, C.hints);
       out.readHon = [rr.l1, rr.l3, rr.read, rr.saw];
       // 審查 A-4：他唬人（提示經典、出冷門 5 星）、你出硬蕊 3 星（硬蕊剋冷門＝看穿了）但差 2 星剋不動 → 一樣是「你看穿了！」、l3＝剋不動那句、不算被唬
-      const sg = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'mirrorLose', toP: 2, blocked: 'gap', by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' } }), T, C.hints);
+      const sg = F.clashText(ev({ pAttr: 'h', eAttr: 'o', kind: 'mirrorLose', toP: 2, blocked: 'gap', by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' }, script: true }), T, C.hints);
       out.seeGap = [sg.l1, sg.l2, sg.l3, sg.bluff, sg.saw, sg.read];
+      // 11-17 讀牌加難：正式對局（事件沒有 script）結果句不念關鍵字（DESIGN §2.3）
+      const pl = (o, k) => { const x = F.clashText(ev(o), T, C.hints); return k ? k.map(n => x[n]) : [x.l1, x.l2, x.l3, x.bluff, x.saw, x.read, x.gotRead]; };
+      out.pD3 = pl({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, hint: { attr: 'c', line: 'c06', kind: 'one' } });
+      out.pHon = pl({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', hint: { attr: 'o', line: 'o2' } });
+      out.pBb = pl({ pAttr: 'h', eAttr: 'c', kind: 'mirrorWin', toE: 2, blocked: 'gap', by: 'e', bluff: true, hint: { attr: 'o', line: 'o06', kind: 'one' } });
+      out.pSee = pl({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'c2' } });
+      out.pSeeGap = pl({ pAttr: 'h', eAttr: 'o', kind: 'mirrorLose', toP: 2, blocked: 'gap', by: 'p', bluff: true, hint: { attr: 'c', line: 'c06', kind: 'one' } });
+      // 他讀到你：上一手照提示剋（rel counter）→ 這手出剋你剋法那色；防他唬人（third）→ 他偏偏照實（why readHonest）
+      out.pRead = pl({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, why: 'read', rel: 'counter', hint: { attr: 'c', line: 'c07', kind: 'one' } });
+      out.pReadMirror = pl({ pAttr: 'c', eAttr: 'o', kind: 'countered', toP: 3, by: 'e', bluff: true, why: 'read', rel: 'mirror', hint: { attr: 'c', line: 'c08', kind: 'one' } });
+      out.pReadThird = pl({ pAttr: 'h', eAttr: 'c', kind: 'countered', toP: 5, by: 'e', bluff: false, why: 'readHonest', rel: 'third', hint: { attr: 'c', line: 'c09', kind: 'one' } });
+      // 讀你那手你反而剋中他：照「看穿了」（他出的不是提示那色）
+      out.pReadSaw = pl({ pAttr: 'c', eAttr: 'h', kind: 'counter', toE: 3, by: 'p', bluff: true, why: 'read', rel: 'counter', hint: { attr: 'c', line: 'c10', kind: 'one' } });
+      // 半指（只說他不出硬蕊）：他出經典或冷門都是照實；出硬蕊＝唬你。不露：不說真假
+      out.pHalfHon = pl({ pAttr: 'h', eAttr: 'o', kind: 'counter', toE: 3, by: 'p', bluff: true, hint: { attr: 'c', line: 'nh01', kind: 'half', not: 'h' } });
+      out.pHalfLie = pl({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 4, by: 'e', bluff: true, hint: { attr: 'c', line: 'nh01', kind: 'half', not: 'h' } });
+      out.pNone = pl({ pAttr: 'c', eAttr: 'o', kind: 'countered', toP: 5, by: 'e', bluff: true, hint: { attr: 'c', line: 'x01', kind: 'none' } });
+      out.pNoneHon = pl({ pAttr: 'o', eAttr: 'c', kind: 'counter', toE: 4, by: 'p', hint: { attr: 'c', line: 'x01', kind: 'none' } });
+      // 被唬到多扣（notes stat feint）：結果小字＝C.trial.notes.feint
+      out.pFeint = F.clashText(ev({ pAttr: 'o', eAttr: 'h', kind: 'countered', toP: 5, by: 'e', bluff: true, hint: { attr: 'c', line: 'c06', kind: 'one' },
+        notes: [{ stat: 'feint', n: 1, text: '被唬到：多扣 1' }] }), T, C.hints).notes;
+      // 句庫的 id 找得到字（hintOf：先 C.hints、再 C.hintLines）
+      out.lineOf = ['c2', 'c06', 'nh01', 'x01', 'c-boss-1'].map(id => { const x = F.hintOf(C.hints, { attr: 'c', line: id }, C.hintLines); return !!(x && x.text); });
       return out;
     });
     const want = {
@@ -315,6 +338,20 @@ async function synthetic(browser) {
       see: ['你看穿了！『紀念版』是經典，他出的是冷門。', '他 −3', '', false, true, true], seeNk: '你看穿了！提示是經典，他出的是冷門。',
       readHon: ['讀對了。硬蕊剋冷門，命中！', '『自主發行』是冷門，他照實出。', true, false],
       seeGap: ['你看穿了！『紀念版』是經典，他出的是冷門。', '你 −2', '硬蕊剋冷門，但他高你 2 星以上，剋不動。比星數。', false, true, false],
+      pD3: ['他唬你！他出的是硬蕊。', '你 −4', '', true, false, false, false],
+      pHon: ['讀對了。硬蕊剋冷門，命中！', '他 −3', '他照實出。', false, false, true, false],
+      pBb: ['他唬你！他出的是經典。', '他 −2', '經典剋硬蕊，但你高他 2 星以上，他剋不動。比星數。', true, false, false, false],
+      pSee: ['你看穿了！他出的是冷門。', '他 −3', '', false, true, true, false],
+      pSeeGap: ['你看穿了！他出的是冷門。', '你 −2', '硬蕊剋冷門，但他高你 2 星以上，剋不動。比星數。', false, true, false, false],
+      pRead: ['他讀到你了！他出的是硬蕊。', '你 −4', '你上一手照提示剋，他等著。', true, false, false, true],
+      pReadMirror: ['他讀到你了！他出的是冷門。', '你 −3', '你上一手跟提示同色，他換了一招。', true, false, false, true],
+      pReadThird: ['他讀到你了！他出的是經典。', '你 −5', '你防他唬人，他偏偏照實來。', true, false, false, true],
+      pReadSaw: ['你看穿了！他出的是硬蕊。', '他 −3', '', false, true, true, false],
+      pHalfHon: ['讀對了。硬蕊剋冷門，命中！', '他 −3', '他照實出。', false, false, true, false],
+      pHalfLie: ['他唬你！他出的是硬蕊。', '你 −4', '', true, false, false, false],
+      pNone: ['冷門剋經典，被剋了。', '你 −5', '', false, false, false, false],
+      pNoneHon: ['讀對了。冷門剋經典，命中！', '他 −4', '', false, false, true, false],
+      pFeint: ['被唬到：多扣 1'], lineOf: [true, true, true, true, true],
       mirror: '同樣是經典，比星數，他 −1', tie: '同樣是經典，比星數，一樣大，不扣。', countered: '冷門剋經典，被剋了。你 −5',
       rs: ['六手打完，比聲望條', '你剩 90%，他剩 70%：你贏', '你剩 50%，他剩 50%：一樣，算你贏'],
     };
@@ -506,7 +543,9 @@ async function runSize(browser, w, h) {
           && g.pop.every(p => p.t >= g.leg.b + 1 || p.r <= g.leg.l || p.l >= g.leg.r);   // 屬性鈕（含最高那顆）不頂進這行字（審查 11-15）
         const g1 = await legOf();
         const orig = await page.evaluate(() => document.querySelector('.dl .hint .tx').textContent);
-        const longest = await page.evaluate(() => { const H = (window.DipLabContent || {}).hints || {}; return Object.values(H).flat().map(x => x.text).sort((a, b) => [...b].length - [...a].length)[0] || ''; });
+        const longest = await page.evaluate(() => { const C = window.DipLabContent || {}, H = C.hints || {}, L = C.hintLines || {};   // 11-17：連句庫一起找最長那句
+          const all = Object.values(H).flat().concat(...['one', 'half'].map(k => Object.values(L[k] || {}).flat()), L.none || []);
+          return all.map(x => x.text).sort((a, b) => [...b].length - [...a].length)[0] || ''; });
         await page.evaluate(t => { document.querySelector('.dl .hint .tx').textContent = t + t.slice(0, 6); }, longest); await sleep(200);
         const g2 = await legOf();
         await page.evaluate(t => { document.querySelector('.dl .hint .tx').textContent = t; }, orig); await sleep(150);
@@ -575,7 +614,7 @@ async function runSize(browser, w, h) {
     // ---- 6–9 其他結果（每種先找一手，必要時換種子）
     for (const [n, want, test, shotName] of [
       [6, 'blocked', u => u.blocked === 'gap' && u.by === 'p' && /剋不動。比星數，$/.test(u.ui.l1) && /照實出/.test(u.ui.l3), `${size}-3-blocked.png`],
-      [7, 'bluff', u => u.bluff && u.kind === 'countered' && /^他唬你！『.+』是.{2}，他出的是.{2}。$/.test(u.ui.l1) && /^你 −\d$/.test(u.ui.l2) && u.ui.l3 === '' && u.tip, `${size}-4-bluff.png`],
+      [7, 'bluff', u => u.bluff && u.kind === 'countered' && /^他唬你！他出的是.{2}。$/.test(u.ui.l1) && /^你 −\d$/.test(u.ui.l2) && u.ui.l3 === '' && u.tip, `${size}-4-bluff.png`],   // 11-17：正式對局不念關鍵字
       [8, 'tie', u => u.kind === 'tie' && u.ui.l2 === '一樣大，不扣。' && u.chime0 && u.deck === null, null],
       [9, 'ace', u => u.blocked === 'gap' && u.by === 'e' && /剋王牌.{2}，但你高他 2 星以上，他剋不動。比星數[，。]$/.test(u.bluff ? u.ui.l3 : u.ui.l1) && !/不會被剋/.test(u.ui.l1 + u.ui.l3) && u.tipAce, `${size}-6-ace.png`],   // 他唬人時規則句在 l3
     ]) {

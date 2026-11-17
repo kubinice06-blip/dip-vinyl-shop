@@ -267,6 +267,21 @@ async function runSize(browser, w, h) {
         !!pl && hp0.hp < hp0.max && want5 > 0 && hp1.hp === hp0.hp + want5 && hp1.num === `${hp1.hp}/${hp0.max}` && hp1.fl.includes(uu.healToast.replace('{n}', want5)) && hn.includes(healNote) &&
         rv.view === (rv.bluff ? 'bluff' : 'honest') && rv.stamp === (rv.bluff ? uu.revealBluff : uu.revealHonest);
       record(5, size, ok5 && !errs(page).length, `留著 ${JSON.stringify(hold)}；整場 ${JSON.stringify(d1)} → 下一手 ${JSON.stringify(d2)}；回聲望 ${JSON.stringify(hp0)} → ${JSON.stringify(hp1)}（預期 +${want5}）結果句 ${JSON.stringify(hn)}；看穿 ${JSON.stringify(rv)}；錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`);
+      // 5h（11-17 讀牌加難）：半指那手（只說他不出哪一色）看穿照樣蓋章：真話＝他出他打算那色、唬人＝不是；提示框是句庫那句、view 不給計畫色
+      let hv = null;
+      for (let seed = 1; seed <= 60 && !hv; seed++) {
+        await lab({ ace: 'heresy', aceId: RALLIZES, enemy: 'copycat', seed, pos: 12 });
+        const k = await C(page, () => { const d = window.__lab.rawDuel(); return d && d.plan ? d.plan.hint.kind : null; });
+        if (k !== 'half') continue;
+        await sleep(250);
+        await tapAt(page, 'dt:card-ace'); await sleep(400); await tapAt(page, '.dl .apx-box .go'); await sleep(300);
+        hv = await C(page, s => { const d = window.__lab.rawDuel(), v = window.DipLabDuel.debug().view, C0 = window.DipLabContent, st = document.querySelector('.dl .hint .apxst:not([hidden])');
+          const x = window.DipLabDuel._fmt.hintOf(C0.hints, v.hint, C0.hintLines);
+          return { seed: s, kind: v.hint.kind, attr: v.hint.attr, not: v.hint.not, set: v.hint.set, bluff: !!d.plan.bluff, reveal: v.apexReveal, stamp: st ? st.textContent : '', tx: document.querySelector('.dl .hint .tx').textContent, want: x ? x.text : null }; }, seed);
+      }
+      const ok5h = !!hv && hv.kind === 'half' && hv.attr === null && hv.set.length === 2 && !hv.set.includes(hv.not) && !!hv.tx && hv.tx === hv.want &&
+        hv.reveal === (hv.bluff ? 'bluff' : 'honest') && hv.stamp === (hv.bluff ? uu.revealBluff : uu.revealHonest);
+      record('5h', size, ok5h && !errs(page).length, `半指那手看穿 ${JSON.stringify(hv)}`);
     } catch (e) { record(5, size, false, 'error ' + e.message); }
     await ctx.close();
   }
