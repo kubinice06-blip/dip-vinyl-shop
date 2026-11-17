@@ -133,7 +133,8 @@ async function runSize(browser, w, h) {
       // 錢、經驗兩條收掉之後老闆說一次（約 1.35＋3 秒）
       await page.waitForFunction(() => window.__lab.save.seen.firstLoot, null, { timeout: 8000 }).catch(() => {});
       await sleep(300);
-      const said = await C(page, t => (window.__said || []).filter(s => s.t === t).length + window.__lt.toasts.filter(s => s.text === t).length, fill(x.firstLoot, { n: '400' }));
+      // 泡泡被舞台邊切掉（375 寬）時同一句改成吐司：泡泡、吐司各最多一次＝說了一次
+      const said = await C(page, t => { const a = (window.__said || []).filter(s => s.t === t).length, b = window.__lt.toasts.filter(s => s.text === t).length; return a <= 1 && b <= 1 && a + b >= 1 ? 1 : a + b; }, fill(x.firstLoot, { n: '400' }));
       const T = await ltT(page);
       if (want(1)) {
         // 不收（+$400）：真點
