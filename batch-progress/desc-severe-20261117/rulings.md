@@ -1240,3 +1240,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-045.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
 - onboarding manifest 同步 29 處。
+
+## sd-046（30 張，經典度≥4：Quicksand 2、Quiet Village、Quilapayún、R.D. Burman、Radare、Raimon、Raison d'être 2、Ramesh、Randy Stonehill 2、Ranking Ann、Ras Michael、Rashied Ali & Frank Lowe、Ray Barretto 2、Razorcuts、Re-TROS、Regina Belle、Rein Rannap、Reload、Renee Rosnes 2、Rhythm & Sound 2、Beirach & Liebman、Rio Reiser、Riow Arai、Robb Kunkel）— s25
+
+- 研究：3 支 Sonnet，WebSearch 13＋8＋14＝35 次；無 none。
+- **主線補查**（WebSearch 約 13 次＋WebFetch，facts 標【主線補查】）：Quicksand《Manic Compression》（Spin 25 週年專文：比《Slip》粗糙、《In Utero》比喻、Vega 貝斯像機器、〈Landmine Spring〉影響）→ story ok；Duo Exchange（Survival 創立緣由、Marzette Watts 錄音室、The Vinyl District 與 AllMusic 評）→ story／sound ok；Re-TROS（Bandcamp 製作人、Kochipan 樂評的貝斯鼓與人聲分工）→ sound ok；Quiet Village（Dazed 訪談：兩人相識、不為俱樂部的取樣唱片、團名來源）→ story ok；Raison d'être《In Sadness》（Scaruffi、Sputnik 聲音描述）；Rein Rannap（Discogs：1982 Мелодия 鋼琴獨奏 LP，仍薄）；Razorcuts（The Arts Desk：Webster 與 Vass 的影響自述）→ story ok；Barretto《Rican/Struction》（Latin N.Y. 年度最佳、車禍復健）；Quilapayún（DICAP、國際主義定位、無 Jara 掛名）。Ranking Ann、Regina Belle、Raimon、Omerta 未再找到新料，照研究稿寫。
+- 身分／事實裁定：Ramesh 寫「革命後淡出」；Radare 不寫無人聲、壓片數；Raimon 不寫 A 面曲數、張數、發行廠；Kati Patang 不寫屆次與電影年份；Re-TROS「刘敏」改「劉敏」、不提 Eno；Rosnes《Life on Earth》寫弦樂組；Rannap 薄寫，不寫「最早發行」；Kunkel 不寫金額與壓片數；Omerta 不寫 Storyville 重發年。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 8 處，改動檔 `review-sd-046.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quicksand《Manic Compression》 | 「同輩樂手常說」→「有同輩樂手這樣比喻」；刪「首度解散前最後一張」 | 單一出處（Brodsky）；與末句重複、字數 |
+| Quicksand 自名 EP、Raimon、Ramesh、Re-TROS | 第二句補《盤名》（Raimon 刪〈Diguem no〉一句、Re-TROS 刪成員名以讓字數） | 第二句交代盤名 |
+| Barretto《Rican/Struction》 | 「〈Tumbao africano〉由 bata 鼓領軍」→「結尾曲由 bata 鼓領軍」 | Fondsound 說的是結尾曲 |
+| Omerta | 刪「第二張」 | 未核實 |
+
+其餘逐張四問無改：逐條對過研究稿（Kati Patang 口哨與補拍、Radare 與《La Jetée》、Ramesh 與 Googoosh 對照、Stonehill 與 Norman 二十多年不合作、Ras Michael 時期 Black Ark 債務與關閉、Rolling Stone「更鬆散、更像對話」、Rio Reiser 兩首單曲還債、Kunkel 明知不賣仍花錢製作、Reload 附冊六篇小說、Rhythm & Sound 自名盤幾近全器樂、See Mi Yah 十個人聲版本皆有出處）。Quiet Village 鉤子用開場的海鷗與浪聲，屬聲音材料、未寫軌序，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-046.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 99 次（研究層 sd-045 40、sd-046 35，主線約 24）。
