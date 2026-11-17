@@ -151,8 +151,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | s41 | ✅ 上線 30（前台 30；無留置；主線補查 Lauge、Ritenour、Life's Blood、Linval Thompson 等；respect.her 薄寫；CURATED 0） |
 | sd-078 | 其餘（Linval Thompson … Lull） | 30 | s42 | ✅ 上線 30（前台 30；無留置；主線補查 Little John、Linval Thompson、Destellos、Wembler's、Ángeles Negros；Wembler's、Ángeles Negros 薄寫；CURATED 0） |
 | sd-079 | 其餘（Lustmord … Marlena Shaw） | 30 | s42 | ✅ 上線 30（前台 30；無留置；主線補查 MALTA 3（官網經歷救回 none 2）、Mad Professor 2、Marlena Shaw；Maple、MALTA 等薄寫；CURATED 0） |
-| sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | | |
-| sd-081 | 其餘（Mitty Collier … Native Son） | 30 | | |
+| sd-080 | 其餘（Marshall Jefferson … Miroslav Vitous） | 30 | s43 | ✅ 上線 30（前台 30；無留置；主線補查 Mfon、Millie Jackson、菊地雅晃等；Mfon、Formula 等薄寫；CURATED 0） |
+| sd-081 | 其餘（Mitty Collier … Native Son） | 30 | s43 | ✅ 上線 30（前台 30；無留置；主線補查 Mylène Farmer 等；Native Son、mt. fujitive 等薄寫；CURATED 0） |
 | sd-082 | 其餘（Natural Snow Buildings … Organum） | 30 | s44 | ✅ 上線 30（前台 30；無留置；主線補查 Organum《Sphyx》、Rothenberg、Nic Jones、No Brain；Optic Nerve 2、Ohbliv、Oblique Occasions 等薄寫；CURATED 0） |
 | sd-083 | 其餘（Organum … Pontiac Streator） | 30 | s44 | ✅ 上線 30（前台 30；無留置；主線補查 Perfect、Pontiac Streator、Polaris；Photon、Perpetual Loop 等薄寫；CURATED 0） |
 | sd-084 | 其餘（Prince Jazzbo … quasimode） | 30 | s45 | ✅ 上線 30（前台 30；無留置；主線補查 Jazzbo、Boggs 3、Prysm、Quasar；Purrple Cat 9 張等薄寫；CURATED 0） |
