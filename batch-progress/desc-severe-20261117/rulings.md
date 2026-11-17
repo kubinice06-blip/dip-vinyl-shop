@@ -2355,3 +2355,29 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
+
+## sd-088（30 張，其餘：Slint、Slovenly、Smuv／mt. fujitive、Snapcase 3、Social Tension、SOIL&"PIMP"SESSIONS、Sonia Rosa、Sonny Fortune、Sonny Rollins、Soul-Junk、Soulive、Sounds From the Ground、Spirit of Love、Spirogyra、SME、St. Christopher、Stan Forebee、Stan Sulzmann、Stan Tracey、Stanley Cowell、Stanley Turrentine 4、State Azure、Di Battista、Stefon Harris、Lacy／Smith）— s47
+
+- 研究：3 支 Sonnet，WebSearch 7＋13＋15＝35 次；none 只有 Snapcase 1991 同名卡帶 sound。
+- **主線補查**（WebSearch 3 次＋WebFetch，facts 標【主線補查】）：Lacy／Smith《Sidelines》（Discogs：1976 年 9 月奧斯陸錄音；AllMusic Yanow「探索、深思、偏乾」；Jorrit Dijkstra〈Existence〉研究文：1976 年與 Smith 的二重奏是各版本最強，並拆解該曲 alap 式開頭、八度 rubato、十一個五聲式音階）→ sound 升 ok；Coda 1979 年 6 月號全文翻過，無本張評論；SOIL《Dapper》日文搜尋只再確認 Shazam 曲評，未入 facts；Rollins《in Japan》日文搜尋無新料。
+- **薄寫上線不留置**（delayde 前例）：Snapcase 1991 卡帶、Smuv／mt. fujitive、Sounds From the Ground、St. Christopher、Stan Forebee、Cowell、Turrentine《Straight Ahead》、State Azure、Di Battista。
+- 事實裁定：Sonny Fortune 不寫自寫曲數（四／五首兩說）、Henderson 替 Hubbard 補位照 Blue Note 介紹寫；Sonia Rosa 不寫 1969 來日與渡辺貞夫代彈；Harris 只寫「獲葛萊美提名」，不寫舊稿第 3 軌入圍與〈Collage〉作者；Turrentine《Mr. Natural》不寫 Morgan 吹哪幾首、《In Memory Of》不寫發行年（1979／1980 兩說）；State Azure 不寫授權（CC 與 all rights reserved 並存）；Di Battista 寫「轉進 Blue Note 後的第二張」不寫廠牌系統；Smuv 一節的聲音只寫 mt. fujitive 一貫做法。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 20 處，改動檔 `review-sd-088.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Slovenly、Sonny Fortune、Soulive、SME、Lacy／Smith | 「常被視為」→「被視為／被認為／被評為」 | 皆單一具名出處（AllMusic、PopMatters、Eyles、Dijkstra） |
+| Soul-Junk《1950》 | 刪「限量」 | 版本雜項 |
+| Sulzmann、Rollins、Tracey、Turrentine《In Memory Of》《Comin' Your Way》 | 第二句補《盤名》，隨之刪次要句壓回 240 內（Rollins 刪 Victor 與 1971、Tracey 刪製作人 Clark Tracey、Sulzmann 刪租金與貝斯滑音） | QA 無《》、字數 |
+| Turrentine《Comin' Your Way》 | 刪「常被視為一張豐潤的六〇年代 soul jazz」 | 「豐潤」無出處 |
+| Turrentine《In Memory Of》 | 刪「用意是展示他不靠管風琴手的另一面」 | 接在「擱置」後語意變成擱置的用意，且與鉤子重複 |
+| Rollins《in Japan》 | 「電貝斯手與康加鼓手 James Mtume」→「康加鼓手 James Mtume」 | 原句把 Cranshaw 與 Mtume 混成一人 |
+| State Azure | 刪 CC 授權句；「題材圍繞」→「曲名圍繞」 | 授權欄矛盾且屬雜項；題材只見於曲名 |
+
+其餘逐張四問無改：鉤子都對過研究稿（火腿與捕手手套、轉 SST 換雙吉他、德冰兩地 beat tape、錄到一半換鼓手、吉他手離團前最後錄音、剛改名的五人卡帶、無吉他三人 ELP 路線、不讓酸爵士原樣復活、ルパン三世樂團伴奏、Henderson 補 Hubbard、復出後的放克、重返信仰唱經文、第一張專為錄音室、團名由來、Plastic People 關店收尾、小提琴手回學校、撤管樂改弦樂、Sarah 的迷你專輯、三歲學琴、Collier 自開 Mosaic、入行五十週年、Strata-East 創辦人、被現場專輯插隊、不靠管風琴、與 Coltrane 節奏組同棚、Blue Note 重啟、天文曲名、Art Pepper、紐約愛樂、〈Existence〉二重奏）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-088.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處。
