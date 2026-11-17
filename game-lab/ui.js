@@ -3863,13 +3863,16 @@
     var zoomed = new Promise(function (res) { setTimeout(res, reduced ? 150 : 380); });
     var lib = tuneLib();
     lib.catch(function () {});   // 載入失敗在推近那 0.38 秒內就回來（預抓已經失敗、這裡重抓）：先接住，不然算沒人處理的錯誤；真的處理在下面
+    // 精選新卡的封面／試聽（第 B 波 SPEC-B §1.6）：還沒到就現在抓、一起等（同一個 15 秒逾時；逾時照樣開——星圖讀活的卡，媒體晚到下次重畫就補上）
+    if (!C.mediaReady) { MEDIA.kicked = true; mediaLoad(); }
+    var media = Promise.race([mediaReady(), new Promise(function (res) { setTimeout(res, TUNE_WAIT); })]);
     return zoomed.then(function () {
       if (!UI.tune || UI.tune.at !== t0) return;
       sh.classList.remove('lb-zoom-in', 'lb-zoom-fade'); sh.classList.add('lb-zoomed');   // 放大完：藏起來（不留著 2.6 倍的變形，#app 量起來才不會多出一截）
       stg('freeze', true);
       host.hidden = false; host.classList.add('in');
       var wb = qs('.lb-tune-wait [data-a=tuneBack]', host); if (wb) try { wb.focus({ preventScroll: true }); } catch (_) {}
-      return lib.then(function (DT) {
+      return lib.then(function (DT) { return media.then(function () { return DT; }); }).then(function (DT) {
         if (!UI.tune || UI.tune.at !== t0) return;
         tuneConfigure(DT);
         return tuneStart(DT).then(function () {
