@@ -12,7 +12,7 @@
  *
  * host（ui.js 給；交易一律走 ui 的 doChoose：take／relic／skip）：
  *   content, engine, run(), alive()（還在領獎畫面）, overlay(node)（掛在 #app、top 釘在舞台下緣；換畫面收掉）, sheet(html, cls) → el, fit(el), after(fn, ms)（換畫面就清掉；ms 不再除速度）,
- *   sfx(n, o), say(id, text, ms), emote(id, k, ms), toast(text, cls), cashRise(from, to), cashAfter(from, to), xpRise(o),
+ *   sfx(n, o), say(id, text, ms) → 泡泡 el, unsay(id), stageRect(), emote(id, k, ms), toast(text, cls), cashRise(from, to), cashAfter(from, to), xpRise(o),
  *   coverHTML(c, o), starsHTML(c, o), relicButtonsHTML(ids, attr), bagText(n), bagGain(id), rewardNote(),
  *   take(id) → Promise<res|null>, relic(id, autoDrop) → Promise<res|null>, skip() → res,
  *   shelfAdd(id), shelfHas(id), seen(k), markSeen(k), fly(c, fromEl, toRect) → Promise, wallRect(), bagRect(), topRect(),
@@ -68,7 +68,7 @@
   }
   function tileUpInner(i) {
     var id = S.p.cards[i], c = card(id); if (!c) return '';
-    var g = isGoldSrc(S.p.src && S.p.src[i]), gain = 0;
+    var gain = 0;
     try { gain = +H.bagGain(id) || 0; } catch (_) {}
     var up = gain > 0.005 ? '<span class="lt-up" role="img" aria-label="' + esc(U('upHint')) + '" title="' + esc(U('upHint')) + '">↑</span>' : '';
     return '<span class="lt-face">' + H.coverHTML(c) + up + '</span>' +
@@ -108,11 +108,25 @@
       after(function () { flip(j); if (allFlipped()) whenAllUp(); }, k++ * gap);
     })(i);
   }
-  // 全部翻開之後：第一次出戰利品列，老闆提醒一次（save.seen.firstLoot）
+  // 全部翻開之後：第一次出戰利品列，老闆提醒一次（save.seen.firstLoot；真的說了才記）。
+  //   錢、經驗那兩條（頂上，約 3 秒）收掉才說：泡泡在店景右上，會被錢那條蓋住
   function whenAllUp() {
     if (!S || S.kind !== 'loot' || S.saidFirst) return;
     S.saidFirst = true;
-    try { if (!H.seen('firstLoot')) { H.markSeen('firstLoot'); H.say('o', U('firstLoot', { n: mt(S.p.skipCash || 400) }), 3800); } } catch (e) { console.error(e); }
+    var wait = S.out && !A().rm ? Math.max(0, (S.t0 || 0) + ms('fly') + Math.round(3000 / A().k) - Date.now()) : 0;
+    after(function () {
+      try { if (!H.seen('firstLoot')) { H.markSeen('firstLoot'); ownerLine(U('firstLoot', { n: mt(S.p.skipCash || 400) }), 3800); } } catch (e) { console.error(e); }
+    }, wait);
+  }
+  // 老闆說一句：店景泡泡；泡泡被舞台邊切掉（375 寬的領獎鏡頭，老闆在右上、泡泡只能往右放）就改成一顆吐司（整句看得到）
+  function ownerLine(text, ms) {
+    var b = null; try { b = H.say('o', text, ms); } catch (e) { console.error(e); }
+    var chk = function () {
+      if (!b || !b.isConnected) return;
+      var r = b.getBoundingClientRect(), st = null; try { st = H.stageRect(); } catch (_) {}
+      if (st && (r.left < st.left - 1 || r.right > st.right + 1 || r.top < st.top - 1)) { try { H.unsay('o'); H.toast(text, 'keep long'); } catch (e) { console.error(e); } }
+    };
+    if (W.requestAnimationFrame) requestAnimationFrame(function () { requestAnimationFrame(chk); }); else setTimeout(chk, 32);
   }
 
   // ------------------------------------------------------------------ 面板
@@ -122,15 +136,18 @@
     return '<div class="lb-rgrid lt-row n' + Math.max(3, Math.min(4, n)) + (S.popped ? '' : ' hold') + '" role="group">' + h + '</div>';
   }
   function footHTML() {
-    var p = S.p, relics = (p.relics || []).filter(function (id) { return (C().relics || {})[id]; }) ;
-    var skip = '<button type="button" class="lb-btn lt-skip" data-a="skip">' + esc(U('skip', { n: mt(p.skipCash || 0) })) + '</button>';
-    if (p.relicDone || !relics.length) return '<div class="foot"><button type="button" class="lb-btn wide lt-skip" data-a="skip">' + esc(U('skip', { n: mt(p.skipCash || 0) })) + '</button></div>';
+    var p = S.p, relics = (p.relics || []).filter(function (id) { return (C().relics || {})[id]; });
+    var skipTx = esc(U('skip', { n: mt(p.skipCash || 0) }));
+    if (p.relicDone || !relics.length) return '<div class="foot"><button type="button" class="lb-btn wide lt-skip" data-a="skip">' + skipTx + '</button></div>';
+    var skip = '<button type="button" class="lb-btn lt-skip" data-a="skip">' + skipTx + '</button>';
     var cap = S.kind === 'chest' ? U('chestRelic') : U('orRelic');
     return '<div class="foot two rel"><div class="orr"><span class="cap">' + esc(cap) + '</span>' + H.relicButtonsHTML(relics, 'data-r') + '</div>' + skip + '</div>';
   }
+  // 木箱（保底那箱：箱子底下也寫老闆那句，店景右上的泡泡常被頂上錢那條蓋住）
   function crateHTML() {
-    return '<button type="button" class="lt-crate" data-a="lid" aria-label="' + esc(U('chestOpen')) + '"><span class="box" aria-hidden="true"><i class="lid"></i><i class="body"></i></span>' +
-      '<span class="cap">' + esc(U('chestOpen')) + '</span></button>';
+    var pity = S.out && S.out.pity;
+    return '<button type="button" class="lt-crate' + (pity ? ' pity' : '') + '" data-a="lid" aria-label="' + esc(U('chestOpen')) + '"><span class="box" aria-hidden="true"><i class="lid"></i><i class="body"></i></span>' +
+      (pity ? '<span class="pt">' + esc(U('chestPity')) + '</span>' : '') + '<span class="cap">' + esc(U('chestOpen')) + '</span></button>';
   }
   function sheetHTML() {
     var p = S.p, r = H.run(), title = S.kind === 'chest' ? U('chestTitle') : U('lootTitle');
@@ -182,7 +199,14 @@
   function done(res) {
     var fin = S.finish;
     S.busy = true;
+    lexpToast();                                  // 紅包是樂歷那種、還沒演到就選了：吐司照出（.keep，換畫面也留著）
     fin(res);
+  }
+  function lexpToast() {
+    var pk = S && S.out && S.p.packet;
+    if (!pk || pk.kind !== 'lexp' || S.lexpShown) return;
+    S.lexpShown = true;
+    try { H.toast(U('packetLexp', { n: pk.n }), 'gold keep'); } catch (e) { console.error(e); }
   }
   function takeIt(id, btn) {
     S.busy = true; sfx('pocket');
@@ -266,7 +290,7 @@
     if (!ok('lootFlow')) return;
     o = o || {};
     var p = o.p, out = o.out || null, a = A();
-    S = { kind: 'loot', p: p, out: out, finish: o.finish || function () {}, el: null, busy: false, armed: false, popped: false, open: true,
+    S = { kind: 'loot', p: p, out: out, finish: o.finish || function () {}, el: null, busy: false, armed: false, popped: false, open: true, t0: Date.now(),
       flipped: (p.cards || []).map(function () { return !out || a.rm; }), money: [] };
     // 錢：先酬勞（起點扣掉紅包那筆，CRITIQUE 1.9b）、再紅包那一段
     if (out) {
@@ -288,7 +312,7 @@
       if (grid) grid.classList.remove('hold');
       S.popped = true;
       its.concat(tiles).forEach(function (node, j) {
-        if (a.rm) { node.classList.add('in'); return; }
+        if (a.rm) { node.classList.remove('pre'); node.classList.add('in'); return; }   // 減少動態：直接淡進（不彈）
         node.classList.add('pre');
         after(function () { node.classList.remove('pre'); node.classList.add('in'); sfx('pop', { k: Math.min(6, k++) }); }, j * ms('popGap'));
       });
@@ -303,10 +327,10 @@
         flyUp(pkEl, function () {
           var s1 = S.money.filter(function (x) { return x.packet; })[0];
           if (s1 && !s1.shown) { s1.shown = true; sfx('coin', { k: 4 }); H.cashRise(s1.from, s1.to); }
-          else if (S.p.packet && S.p.packet.kind === 'lexp') H.toast(U('packetLexp', { n: S.p.packet.n }), 'gold keep');
+          else lexpToast();
         });
       }, 900);
-    }, a.rm ? 0 : ms('fly'));
+    }, ms('fly'));                                   // 減少動態也等到 1.35 秒（錢袋、音符先停在面板頂邊看得到，時間到直接收、不飛）
     // 1.5 秒起：沒翻的自己翻
     if (!a.rm) after(function () { autoFlip(ms('flipGap')); }, ms('autoflip'));
     else whenAllUp();

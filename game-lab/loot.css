@@ -49,6 +49,10 @@
   background-size:100% 3px,100% 3px,100% 100%;background-position:0 18px,0 38px,0 0;background-repeat:no-repeat;}
 .lt-crate .lid{position:absolute;left:-5px;right:-5px;top:4px;height:22px;background:#b0753c;border:3px solid #3b2410;transform-origin:8% 100%;transition:transform .3s ease-in,opacity .3s;}
 .lt-crate .cap{font:700 12px var(--zh);color:var(--gray2);letter-spacing:.06em;}
+.lt-crate .pt{font:700 13px var(--zh);color:var(--gold-ink);letter-spacing:.06em;}
+.lt-crate.pity .box{filter:drop-shadow(0 0 6px rgba(240,199,94,.9));}
+.lt-crate:focus{outline:none;}
+.lt-crate:focus-visible .box{outline:2px dashed var(--gold-ink);outline-offset:6px;}   /* 鍵盤：框在箱子上，不框整塊（面板一開就聚焦在木箱） */
 .lt-crate:active .box{transform:translateY(1px);}
 .lt-crate.open .lid{transform:translateY(-14px) rotate(-24deg);opacity:0;}
 .lt-crate.open{opacity:0;transition:opacity .3s .1s;pointer-events:none;}
@@ -78,7 +82,7 @@
 /* 經驗跳數字（ui.js xpRise；錢那條下面） */
 .lb-toast.xp{display:flex;align-items:baseline;gap:10px;padding:5px 14px;}
 .lb-toast.xp .ce{font:700 13px var(--mono);color:var(--o);}
-.lb-toast.xp .cv{font:700 14px/1 var(--zh);color:var(--ink);letter-spacing:.02em;}
+.lb-toast.xp .cv{font:700 14px/1 var(--zh);color:var(--ink);letter-spacing:.02em;white-space:nowrap;}
 
 @media (max-height:600px){
   .lt-row.n3{gap:6px 14px;padding:0 10px;}

@@ -543,7 +543,7 @@
       '<div class="ec-grid ec-g4">' + tiles + '</div>' +
       '<p class="ec-line ec-cl">' + line + '</p>' +
       '<div class="ec-foot two"><button type="button" class="lb-btn" data-a="cno"' + (pc ? '' : ' disabled') + '>' + esc(ui('sellNo')) + '</button>' +
-      '<button type="button" class="lb-btn pri ec-sellb" data-a="cgo"' + (pc && pq && pq.ok ? '' : ' disabled') + '>' + go + '</button></div>';
+      '<button type="button" class="lb-btn pri ec-sellb' + (pq && pq.ok && pq.found && !pback ? ' ec-fgo' : '') + '" data-a="cgo"' + (pc && pq && pq.ok ? '' : ' disabled') + '>' + go + '</button></div>';
   }
   // 賣這張鈕下面的小字：賣掉之後要買的是什麼（「《Low》買 $400」）
   //   專輯名太長只切專輯名，價錢一定看得到（V5-play-6：「《Come On Die Young》買…」把價錢切掉了）
