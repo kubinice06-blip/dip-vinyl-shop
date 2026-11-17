@@ -40,7 +40,7 @@
   // C.shopUi 沒有的字（新；已請 B2 補進 C.shopUi，見 dev/notes-B3.md「請求」）
   var FALLBACK = {
     bag: '包包 {n} 張', binEmpty: '這一箱賣完了，下一位客人來之前會換一批。', owned: '包包裡有了',   // 包包不限張數（店主 11-16）：只寫張數
-    binEmptyLot: '這一批的這一箱賣完了，打完傳說藏家整批換新。', binEmptyRound: '這一箱賣完了，下一輪再補。', wantTag: '你想要的',   // 一檔貨、想要清單（SPEC-B §3.7、§5.3）
+    binEmptyLot: '這一批的這一箱賣完了，打完傳說藏家整批換新。', binEmptyRound: '這一箱賣完了，下一輪再補。', wantTag: '你想要的',
     relicSell: '賣這件', relicSold: '「{name}」賣掉，+${n}', relicEmpty: '櫃檯的配件賣完了，下一輪再補。',   // relic
     prev: '上一張', next: '下一張', infoAria: '唱片資訊、試聽',
     relicMoneyShort: '錢不夠：先賣一件，半價 ${n}', relicSellFirst: '先賣一件',
@@ -53,11 +53,12 @@
   };
   var RAR_ZH = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };
 
-  // 封面失敗：1.5 秒後重試同一個 src，再失敗才移除、露出專輯名字卡（CAA 偶發斷；SPEC-B C7）。ui.js 也用這支
+  // 封面失敗：1.5 秒後重試一次，再失敗才移除（SPEC-B C7）；ui.js 也用
   W.DipCoverErr = function (img) {
     if (!img || !img.getAttribute) return;
     if (img.getAttribute('data-r') === '1') { img.remove(); return; }
-    img.setAttribute('data-r', '1');
+    img.setAttribute('data-r', '1'); img.style.visibility = 'hidden';
+    img.onload = function () { img.style.visibility = ''; };
     setTimeout(function () { if (!img.isConnected) return; var u = img.src; img.removeAttribute('src'); img.src = u; }, 1500);
   };
   var CFG = null;
@@ -82,10 +83,10 @@
   function rarityOf(c) { try { return E().rarity ? E().rarity(c) : null; } catch (_) { return null; } }
   function rarityZh(k) { var z = C().rarityZh || {}; return z[k] || RAR_ZH[k] || ''; }
   function rarHTML(c, cls) { var k = rarityOf(c); return k ? '<span class="ec-rar r-' + k + (cls ? ' ' + cls : '') + '">' + esc(rarityZh(k)) + '</span>' : ''; }
-  // 想要清單（run.want；SPEC-B §5.3）：稀有度籤旁的小籤「你想要的」（箱子、特價箱、收音機那格）
+  // 「你想要的」小籤（run.want；SPEC-B §5.3）
   function wanted(r, id) { return !!(r && id && Array.isArray(r.want) && r.want.indexOf(id) >= 0); }
   function wantHTML() { return '<span class="ec-want">' + esc(ui('wantTag')) + '</span>'; }
-  // 空箱的字（SPEC-B §3.7）：一檔貨這一箱還有沒賣的（engine.lotLeft）＝下一位會換一批；這一檔賣光＝打完藏家整批換；lot 關＝舊字
+  // 空箱的字（SPEC-B §3.7）：檔裡還有（lotLeft）／這一檔賣光／lot 關
   function emptyText(r, key) {
     if ((C().lot || {}).on === false) return ui('binEmptyRound');
     try { if (r && r.shop && r.shop.lot && E().lotLeft && !E().lotLeft(r, key)) return ui('binEmptyLot'); } catch (e) { console.error(e); }
@@ -441,7 +442,7 @@
           '<button type="button" class="ec-nav" data-a="prev" aria-label="' + esc(ui('prev')) + '"' + (n < 2 ? ' disabled' : '') + '>‹</button>' +
           '<div class="ec-ths">' + ids.map(function (id, i) {
             var k = card(id);
-            var kr = rarityOf(k), kw = wanted(r, id);   // 想要的：縮圖右上一個粉色角
+            var kr = rarityOf(k), kw = wanted(r, id);
             return '<button type="button" class="ec-th' + (i === S.idx ? ' on' : '') + (kr ? ' r-' + kr : '') + (kw ? ' ec-w' : '') + '" data-a="go" data-i="' + i + '" aria-label="' + esc(k.artist + '《' + k.album + '》' + (kr ? '・' + rarityZh(kr) : '') + (kw ? '・' + ui('wantTag') : '')) + '"><span class="ec-thc">' + coverImg(k) + '</span></button>';
           }).join('') + '</div>' +
           '<button type="button" class="ec-nav" data-a="next" aria-label="' + esc(ui('next')) + '"' + (n < 2 ? ' disabled' : '') + '>›</button>' +
@@ -759,7 +760,7 @@
       scroll: !!(S.el && S.el.classList.contains('ec-scroll')), tab: S.kind === 'relic' ? S.tab : null, spick: S.spick || null };
   }
 
-  // 新卡的封面晚到（ui.js 媒體載入器發 dip:media）：抽屜開著就重畫一次
+  // 新卡封面晚到（dip:media）：抽屜開著就重畫
   D.addEventListener('dip:media', function () { if (S.open && S.el) try { render(); } catch (e) { console.error(e); } });
 
   W.DipLabEcon = {

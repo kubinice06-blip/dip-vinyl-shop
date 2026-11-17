@@ -912,7 +912,7 @@ body.lb-tune-open{overflow:hidden;}
 .lb-endhero .sub .close{color:var(--ink);font-weight:700;}
 .lb-night .nc.done .ok{bottom:auto;top:0;}   /* 打完的勾移到右上：右下被稱號名牌壓住（第 A 波 3） */
 
-/* ---------- 今日推薦集點卡（第 B 波 SPEC-B §4.6）：試聽機面板最上面那塊、集點卡 7 格（蓋了是一張小唱片）、標題小籤 ---------- */
+/* ---------- 今日推薦集點卡（SPEC-B §4.6） ---------- */
 .lb-daily{flex:none;margin-top:8px;padding:8px 10px 6px;border:1px solid var(--ink);background:var(--cream);box-shadow:3px 3px 0 rgba(0,0,0,.12);}
 .dl-hint{margin:0 0 6px;font-size:12px;line-height:1.55;color:var(--cream-ink);}
 .dl-ttl{display:inline-block;padding:0 6px;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.12em;line-height:18px;}
@@ -941,7 +941,7 @@ body.lb-tune-open{overflow:hidden;}
 .dl-st small{position:absolute;left:0;top:100%;font-size:9px;line-height:12px;color:var(--gold-ink);white-space:nowrap;}
 .dl-st.new::before{animation:dlStamp .38s cubic-bezier(.2,1.6,.4,1) both;}
 @keyframes dlStamp{0%{transform:scale(1.9) rotate(-25deg);opacity:0;}100%{transform:none;opacity:1;}}
-.dl-claim{flex:none;min-height:36px;padding:4px 10px;font-size:12px;}
+.dl-claim.lb-btn{flex:none;min-height:36px;padding:4px 10px;font-size:12px;background:var(--gold-ink);border-color:var(--gold-ink);}
 .lb-foot.dl-chip{margin-top:6px;}
 .dl-chip button{max-width:100%;min-height:30px;padding:2px 12px;border:1px solid var(--gold);background:var(--cream);color:var(--cream-ink);font:700 12px var(--zh);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 @media (prefers-reduced-motion:reduce){.dl-st.new::before{animation:none;}}

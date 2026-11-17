@@ -353,11 +353,10 @@
     if (UI.saveReadOnly || UI.noSave || !UI.daily) return;
     try { W.localStorage.setItem(DAILY_KEY, JSON.stringify(UI.daily)); } catch (_) { /* 寫不進去不影響遊戲 */ }
   }
-  // 今日推薦集點卡（SPEC-B §4）：序章那一趟走完、不唯讀才有。dailyTick＝本地日期只往前才發新的一張（比今天晚 >2 天＝壞值重設）；
-  //   第一次建立先送一格。收下＝擁有（src daily）＋蓋一格；滿 7 格三選一（engine.dailyReward）。改之前都先 loadDaily() 重讀（多分頁不互蓋）
+  // 今日推薦集點卡（SPEC-B §4）：序章做完、不唯讀才有；日期只往前（晚 >2 天＝壞值）；改之前先 loadDaily() 重讀
   function dailyOn() { return !!(save && save.prologueDone && !UI.saveReadOnly); }
   function dayNum(k) { var m = DAY_RE.test(k || '') && k.split('-'); return m ? Date.UTC(+m[0], m[1] - 1, +m[2]) / 864e5 : NaN; }
-  function dailyTunes() {   // 擁有的非頂點唱片最常見的兩個頻率（擁有不到 5 張＝[]）
+  function dailyTunes() {   // 擁有最常見的兩個頻率（不到 5 張＝[]）
     var n = {}, k = 0;
     ownedIds().forEach(function (id) { var c = card(id); if (!c || c.tier) return; k++; if (c.tune) n[c.tune] = (n[c.tune] | 0) + 1; });
     return k < 5 ? [] : Object.keys(n).sort(function (a, b) { return n[b] - n[a] || (a < b ? -1 : 1); }).slice(0, 2);
@@ -859,7 +858,7 @@
     D.body.setAttribute('data-screen', id);
     var p = UI.panel; p.className = 'lb-panel'; p.removeAttribute('style'); p.innerHTML = '';
     var f = FX(); if (f && f.rainStop && id !== 'title' && id !== 'scene') try { f.rainStop(); } catch (_) {}
-    if (id === 'title' || id === 'night') dailyTick();   // 今日推薦：同一天只是一次字串比較
+    if (id === 'title' || id === 'night') dailyTick();
     try { SCREENS[id](UI.params); } catch (e) { console.error(e); }
     if (id === 'title') mediaKick();
     mediaRetry();
@@ -1914,7 +1913,7 @@
     var id = E.current(r, C), en = C.enemies[id];
     return TU('pos', { n: r.pos }) + (en ? '・' + en.name : '');
   }
-  // 標題的今日推薦小籤：沒收＝「今日推薦：《專輯》▸」、收過（或今天沒得推）＝「集點卡 3／7 ▸」
+  // 標題小籤：沒收＝今日推薦《…》、收過＝集點卡 n／7
   function dailyChip() {
     var d = dailyOn() && UI.daily, D7 = C.daily || {}, c = dailyCard();
     if (!d || d.day !== todayKey()) return '';
@@ -1943,7 +1942,7 @@
     //   新存檔（一派都還沒解鎖）：小字改成「先挑你的初始流派」（這一下會定下初始流派；審查 11-16）
     if (UI.apex) h += '<button type="button" class="lb-btn wide col key" data-a="skip">' + esc(AU('skip')) + '<span class="sub">' + esc(AU(unlockedNow().length ? 'skipSub' : 'skipSubFirst')) + '</span></button>';
     var unl = unlockLine();                              // 解鎖進度（店主 11-16）：「流派 1／3・下一派：殿堂（經典）」；新玩家不出
-    var dc = dailyChip();                                // 今日推薦小籤（SPEC-B §4.6）：點了＝走去試聽機開面板
+    var dc = dailyChip();
     h += '</div>' + (dc ? '<p class="lb-foot dl-chip"><button type="button" data-a="daily">' + esc(dc) + '</button></p>' : '') +
       (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
       (unl ? '<p class="lb-foot sm unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') +
@@ -1951,8 +1950,8 @@
       // 唯讀一行（SPEC-B §2.1；兩個都有只出升級失敗）
       (UI.migrateFail || UI.poolMissing ? '<p class="lb-foot sm ro">' + esc(SU(UI.migrateFail ? 'migrateFail' : 'poolMissing')) + '</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
-    // 今天第一次到標題（剛發今日推薦）：老闆說一句
-    if (UI.dailyNew && dailyCard()) { UI.dailyNew = false; later(function () { if (UI.screen === 'title' && !UI.intro) stageSay('o', line('dailyNew'), 'owner', 3000); }, 900); }
+    // 今天剛發推薦：老闆說一句（說過＝來客那邊這次不再提醒）
+    if (UI.dailyNew && dailyCard()) { UI.dailyNew = false; UI.dailyNagged = true; later(function () { if (UI.screen === 'title' && !UI.intro) stageSay('o', line('dailyNew'), 'owner', 3000); }, 900); }
     // 舊存檔第一次載入（解鎖制以前的存檔；loadSave 補了 lastAce 那派那張）：吐司說一次規則改了
     if (UI.migratedUnlock) { UI.migratedUnlock = false; toast(TU('unlockMigrated'), 'keep long'); }
     // 主站「帶去店裡對決」帶進來（開機讀 ?card=）：吐司說明一次（第一次玩的人要先走完序章那一趟）
@@ -3157,10 +3156,7 @@
     }, 700 + sayMs);
     autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
-  // 來客畫面（每位客人前回到店裡）的店內通知（SPEC-B §3.7、§4.6、§5.3），一次一則、等畫面靜下來（沒有教學、面板、抽屜、吐司、老闆在講話）才出：
-  //   ① 第一次碰到全卡池那一檔（save.seen.lotAll）老闆一句 ② 第一次在兩位客人之間換過貨（seen.lotHint）老闆頭上閃一下＋吐司
-  //   ③ 這一檔因為想要清單進來、這一位架上有、還沒吐司過的（lot.told）→「你想要的《…》上架了」④ 今日推薦還沒收（這次開頁面一次，UI.dailyNagged）。
-  //   測試駕駛（UI.auto）不出
+  // 來客畫面的店內通知（SPEC-B §3.7、§4.6、§5.3）：lotAll、lotHint、想要的上架（lot.told）、今日推薦沒收；一次一則，等沒有教學／面板／吐司才出
   function shopNotes(r, ms) {
     if (UI.auto) return;
     var L = r.shop && r.shop.lot, Q = [];
@@ -3168,12 +3164,12 @@
     if (L && r.idx > 0 && !save.seen.lotHint) Q.push(function () { save.seen.lotHint = true; persist(); stg('emote', 'o', 'excl', 2600); toast(line('lotHint'), 'long'); return true; });
     Q.push(function () { return wantNote(r); });
     Q.push(function () { if (UI.dailyNagged || !dailyCard() || !E.canShop(r)) return false; UI.dailyNagged = true; stageSay('o', line('dailyNew'), 'owner', 2600); return true; });
-    var at = now() + ms / speed(), iv = setInterval(function () {
+    var wait = Math.ceil(ms / speed() / 300), iv = setInterval(function () {   // 數拍子（測試會定住 Date）
       if (UI.screen !== 'night' || save.run !== r) return clearInterval(iv);
       var tt = D.getElementById('tut'), ci = CI(), X = econ();
-      if (now() < at || UI.going || UI.modal || UI.page || (UI.oSayTill || 0) > now() || (tt && /\bon\b/.test(tt.className)) || (ci && ci.isOpen()) || (X && X.isOpen && X.isOpen()) ||
+      if (--wait > 0 || UI.going || UI.modal || UI.page || (tt && /\bon\b/.test(tt.className)) || (ci && ci.isOpen()) || (X && X.isOpen && X.isOpen()) ||
         qs('.lb-sheet', app()) || qs('.lb-toast:not(.out)', app())) return;
-      while (Q.length) if (Q.shift()()) { at = now() + 600; return; }
+      while (Q.length) if (Q.shift()()) { wait = Math.ceil(3000 / speed() / 300); return; }
       clearInterval(iv);
     }, 300);
     UI.offs.push(function () { clearInterval(iv); });
@@ -3358,11 +3354,10 @@
     try { f.music.play(c, { fadeMs: 900 }); } catch (err) { console.error(err); }
     stg('play', true);
   }
-  // 試聽機最上面那塊：今日推薦（封面、藝人《專輯》、三軸、頻率、▶、收下）＋集點卡 7 格（滿 7 格「換獎勵」）。SPEC-B §4.6
-  //   新卡的封面、試聽可能還沒到（媒體延後）：先放專輯名字卡、▶ 停用；dip:media 到了重畫這塊
-  function dailyHTML(stampAt) {
+  // 試聽機上面那塊（SPEC-B §4.6）：今日推薦＋集點卡；媒體沒到＝名字卡、▶ 停用，dip:media 重畫
+  function dailyHTML(stampAt, hint) {
     var d = UI.daily, D7 = C.daily || {}, c = d.id && card(d.id), T = C.tunes || {};
-    var h = '<div class="lb-daily">' + (save.seen.dailyHint ? '' : '<p class="dl-hint">' + esc(D7.hint) + '</p>') + '<b class="dl-ttl">' + esc(D7.title) + '</b>';
+    var h = '<div class="lb-daily">' + (hint ? '<p class="dl-hint">' + esc(D7.hint) + '</p>' : '') + '<b class="dl-ttl">' + esc(D7.title) + '</b>';
     if (c) {
       var col = (T.colors || {})[c.tune];
       h += '<div class="dl-row">' + coverHTML(c, { badge: false }) + '<div class="dl-tx"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' +
@@ -3376,16 +3371,16 @@
       '<span class="dl-cells" aria-hidden="true">' + cells + '</span>' + (n >= 7 ? '<button type="button" class="lb-btn gold dl-claim" data-a="dclaim">' + esc(D7.claim) + '</button>' : '') + '</div></div>';
   }
   function openBooth() {
-    dailyTick();                                       // 頁面開過午夜：先發今天的
-    var ids = boothIds(), dl = dailyOn() && UI.daily && UI.daily.day === todayKey();
+    dailyTick();
+    var ids = boothIds(), dl = dailyOn() && UI.daily && UI.daily.day === todayKey(), hint = dl && !save.seen.dailyHint;
     if (!ids.length && !dl) { stageSay('o', line('boothEmpty') || '唱片櫃還空著。', 'owner', 2400); return; }
-    var html = '<div class="hd"><h3>試聽機</h3><span class="np"></span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' + (dl ? dailyHTML(-1) : '') +
+    var html = '<div class="hd"><h3>試聽機</h3><span class="np"></span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' + (dl ? dailyHTML(-1, hint) : '') +
       (ids.length ? '<p class="sub">' + esc(line('booth') || '挑一張你唱片櫃裡的，放來聽聽。') + '</p><div class="lb-pick booth">' + ids.map(function (id) { return tileHTML(card(id), { text: false, stars: false, pick: '放這張' }); }).join('') + '</div>' : '');
     var s = floatSheet(html, 'booth tall');
-    if (dl && !save.seen.dailyHint) { save.seen.dailyHint = true; persist(); }   // 說明只出第一次
+    if (hint) { save.seen.dailyHint = true; persist(); }
     watchPlaying(qs('.np', s));
     if (UI.screen === 'night' || UI.screen === 'title') stgP('walk', 'p', ['listen'], 110).then(function () { UI.lastSpot = 'listen'; });
-    var redraw = function (at) { var x = qs('.lb-daily', s); if (x && UI.daily) x.outerHTML = dailyHTML(at); };
+    var redraw = function (at) { var x = qs('.lb-daily', s); if (x && UI.daily) x.outerHTML = dailyHTML(at, hint); };
     if (dl) { var onMedia = function () { if (s.isConnected) redraw(-1); }; D.addEventListener('dip:media', onMedia); UI.offs.push(function () { D.removeEventListener('dip:media', onMedia); }); }
     s.addEventListener('click', function (e) {
       var a = e.target.closest && e.target.closest('[data-a=dplay],[data-a=dtake],[data-a=dclaim]');
@@ -3402,7 +3397,7 @@
       boothPlay(c);
     });
   }
-  // 集點卡換獎勵：三選一（史詩／傳奇、經冷硬各一；engine.dailyReward，跟日期無關＝重開同三張）。關掉不挑＝下次再換（格子不扣）
+  // 換獎勵三選一（engine.dailyReward）；關掉不挑＝格子不扣
   function openDailyClaim() {
     var d = dailyOn() && loadDaily(), D7 = C.daily || {};
     if (!d || d.stamps < 7) return openBooth();
@@ -4378,7 +4373,7 @@
     buildShell();
     configTut();
     if (UI.discardedOld || UI.migratedUnlock || UI.migrated7) persist();   // 解鎖制遷移、v7 換 id／自癒寫回去：下次載入不再補、不再提示
-    // 頁面開著過了午夜、回到前景：發今天的推薦（SPEC-B F4）；停在標題、沒開東西就重畫（小籤、老闆那句）
+    // 跨午夜回到前景：發今天的推薦；停在標題沒開東西就重畫
     D.addEventListener('visibilitychange', function () {
       if (D.visibilityState !== 'visible' || !save || !dailyTick()) return;
       if (UI.screen === 'title' && !UI.going && !UI.intro && !UI.modal && !UI.page && !qs('.lb-sheet', app()) && !(econ() && econ().isOpen())) { UI.camQuick = true; go('title'); }
