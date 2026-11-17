@@ -455,3 +455,33 @@
 ## 店主：開頭要用鉤子（2026-11-17）
 
 店主：「一樣要開頭給 hook 的方式」。`general-desc-base.md` 第三節與 `prompt-writer.md` 改為第一句鉤子（形式照 hook-base 第 2 點；材料限故事／概念／聲音／地位，雜項不准）、第二句講這是什麼。林強《驚蟄》改以「2005 年坎城影展只請了四位音樂人，唯一的亞洲人是林強。」開頭，229 字，KV desc2／desc4 回讀一致、前台新稿（舊值 `kv-before-jingzhe-fix2.json`）。sd-001～014 排補鉤子（PLAN 新節）。
+
+## sd-017（30 張，CJK：池田芳夫、沖山秀子、沢田靖司、河野康弘、浅川マキ、清水信之、清水末寿、渡辺香津美 5、灰野敬二 2、犬神サーカス団、猪俣猛、玖壹壹 2、瓢蟲、生活向上委員会、真梨邑ケイ 2、知名定男 2、石川晶、石田勝範、石野卓球、秋吉敏子、《New York》、秋本奈緒美）— s9
+
+- 研究：3 支 Sonnet，WebSearch 17＋17＋18＝52 次。Tower／HMV／AllMusic／Discogs 網頁多 403，Discogs 改用 `api.discogs.com`（UA 照規定），部落格與 disk union 用 curl 解碼。
+- **主線補查 17 張**（研究稿 story／sound 標 thin／none 者逐張補，WebSearch 約 25 次）：Milky Shade（guitarrecords、vox：Coryell 式電吉他、顫音吉他與電鋼琴對答）、石野卓球（Sony 發行日、bounce 樂評摘要：TB-303、DJ mix 式銜接；遊戲評站分 #2／#3）、石田勝範（Discogs API：流行／靈魂翻奏集、松崎しげる客唱）、玖壹壹《周法薷》（自由時報：盤名來自 MV 導演周法薷酒後答應免費拍 100 支 MV）、犬神《神の犬》（HMV 摘要：黑暗教團概念盤、三支單曲 DVD 是解謎線索）、生活向上委員会（JazzTokyo：梅津離團後松風／明田川為核心；Universounds：〈Imba〉）、秋本奈緒美（hoteimode：第三張、二十歲紀念、七位吉他手含布袋寅泰）、渡辺香津美 3 張（adliblog：Kilowatt 換節奏組、無琴格貝斯＋電子鼓；官網：Talk You All Tight 確在 Power Station 錄音；松和：搖滾＋technopop；Mobo Live＝《桜花爛漫》）、池田芳夫（disk union：雙鋼琴、橋本一子 scat）、清水末寿（Aketa 錄音、民俗到 Ornette）、浅川マキ（二重奏第二彈、編制）。
+- **身分裁定**：清水末敏メレンゲ→正文寫「清水末寿」（卡鍵不動）；《Mobo Live》即《桜花爛漫》，正文不寫日文名；秋本奈緒美寫第三張、非出道作；瓢蟲不寫發行者與自資；玖壹壹《玖肆伍參》不寫第幾張。
+- 不寫的舊稿說法：Bunny Brunel 頂替 Jeff Berlin／Bernard 本名、Mobo Live 鼓手分軌、猪俣猛翻 If、生活向上委員会〈斎〉、沖山秀子《電車狂》（正確為《どですかでん》）。
+- QA：「国」（紀ノ国屋バンド）、「会」（生活向上委員会）為專名，非簡體。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 17 處，改動檔 `review-sd-017.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| 池田芳夫\|スケッチ… | 刪 2026 年黑膠再版 | 再版雜項 |
+| 沖山秀子\|summertime | 鉤子「在三個錄音日裡唱完」→「轉身唱起 Billie Holiday 式的爵士」 | 鉤子材料改用故事 |
+| 沢田靖司\|dock of my mind | 「常被視為」→「被視為」 | 單一出處 |
+| 渡辺香津美カルテット\|milky shade | 鉤子「十七歲出道的天才吉他手」→「轉向融合的前一年……」；刪「每首都留給延展即興」 | 去封號；字數 |
+| 灰野敬二\|so, black is myself | 「常被視為」→「被認為是」 | 單一評論 |
+| 真梨邑ケイ\|p.s. i love you | 「這是」→《P.S. I Love You》是；刪「在出道隔年推出」、選曲句縮短 | 第二句要有盤名；字數 |
+| 石川晶\|exciting drums… | 「這是」→盤名；刪宮沢昭／宮間利之經歷、1970 東非學打擊 | 盤名；字數、冷知識 |
+| 秋吉敏子\|toshiko plays… | 「這是」→盤名；刪「當時正帶大樂團」、節奏組名單 | 盤名；字數、credit |
+| 《New York》 | 曲序排列 →「以甘迺迪機場、地鐵、中央公園與曼哈頓日出等地景為題」 | 去曲序，改寫成概念 |
+| 秋本奈緒美 | 刪 2016 首度 CD 化 | 版本雜項 |
+
+其餘逐張四問無改：鉤子 30 張前四字互異、加權 25–42；知名定男兩張、真梨邑兩張、石田勝範照實薄寫（聲音只寫得到編制與選曲）；《Talk You All Tight》鉤子取標題含意（概念），不是曲名體例。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-017.json`；30 張 60 鍵 `wrangler@4 kv bulk put --remote`；回讀 **60/60 一致**；`front-check` **前台 30/30 新稿**。
+- onboarding manifest 同步 30 處。
