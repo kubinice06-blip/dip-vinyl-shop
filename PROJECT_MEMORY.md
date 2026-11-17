@@ -6,6 +6,26 @@
 - **主線補查**：Keith Christmas（The Rising Storm：本人不認首作）、Lacrimosa、Kevin Hays 2、Lauge《Echoes》《Nothingness》、Ritenour《Friendship》直刻、Dizzy Atmosphere、Life's Blood（Nathanson 訪談）、Linval Thompson（Apple Music 評介）。舊稿 Voices in Harmony 把 CCS〈Whole Lotta Love〉張冠李戴，已更正。審稿改 sd-076 4 處（鉤子無出處的「小場地」「出道六年」、Konstruktivists 鉤子不取版本）、sd-077 5 處（Specialty 措辭、上低音薩克斯風、Lindsheaven 鉤子不取重發）。
 - **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-076.json,review-sd-077.json,kv-before-sd-076.json,kv-before-sd-077.json}`、`desc-tools/batches/{cards,research,output}/sd-07[67]*`、onboarding manifest 55 處。
 - **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s38：sd-070、sd-071 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-070 上線 30（Guitoud、GUMI、GZA、Habib Mohebian、Hang Raiji、Hank Mobley 4、Hank Williams 2、Harold Vick、Harry Mudie 2、Harvey Williams、Haze 2、Heaven & Earth、Helén Eriksen 2、Henry Franklin、Hancock、松本英彦、High Tides、Highwoods、後藤浩文、岡野等、Hoody、Hoogway、Hope of Glory）；sd-071 上線 30（Parlan、Horace Silver 6、McGhee、Mundell、Izachaar、Hula、Hurd、I Am David Sparkle、I Awake、Ida、Ike Quebec 4、il:lo、Immanu El、Immanuel Wilkins 3、In Spe、Inade 2、Incapacitants、Inner Dialogue、Integrity）。岡野等《Double Image》（158 字）、後藤浩文照 delayde 前例薄寫上線。
+- **主線補查**（Discogs 公開 API notes／credits 為主）：Vick《Don't Look Back》原盤自寫內頁（story／sound 升 ok）、Heaven & Earth 芝加哥錄音班底、Eriksen《Standards》Tommy Tee 班底、Hang Raiji、松本英彦（児山紀芳監修）、Immanu El 錄音經過、Integrity Victory 初版、Inner Dialogue 人聲、Wilkins Vol. 2。審稿改 sd-070 5 處（版本雜項、補《盤名》、Hope of Glory 鉤子改掉「未數位化」）、sd-071 28 處（多為補《盤名》壓字數；《27th Man》鉤子改掉封面畫面、《Repo》刪壓片數）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-070.json,review-sd-071.json,kv-before-sd-070.json,kv-before-sd-071.json}`、`desc-tools/batches/{cards,research,output}/sd-07{0,1}*`、onboarding manifest 60 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 100 次。
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s40：sd-074、sd-075 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-074 上線 30（Jimmy Smith 7、jinsang 3、Kühn、Chambers、Joe Lee Wilson、Lovano 2、Calderazzo 3、Jogging House 2、Butcher 2、John Cameron、Carter／Bradford、John Davis、John Holt 5）；sd-075 上線 30（Neptune、Lewis & Jones、John Russell、Scofield 2、Zorn、Toivanen、Kraus、Cortés、Léandre／Grimal、Juaneco、Judge、Silvano、Kadel 2、JUN SKY WALKER(S)、Byles、Delgado、Mance、Murvin、Justice、Hipp、Noetinger 2、Jónsi & Alex、Kangaroo、Kareem Ali、KaS Product、Gentile、Katra Turana）。資料薄的（jinsang、Holt《My Desire》、Kareem Ali、Kangaroo）照 delayde 前例薄寫上線。
+- **主線補查**（Discogs 公開 API notes／credits 為主、Neptune 官網）：Jimmy Smith 3 張錄音經過、Calderazzo 3 張製作與編制、Neptune 和樂器師範團、Lewis & Jones 東芝直刻、Kraus 確認是 Phoenix／Capriccio 的 Concerto Köln 版、Katra Turana credits 證實客串名單等 22 張。審稿改 sd-074 21 處（jinsang 頁面雜項鉤子、軌序、補《盤名》）、sd-075 45 處（補《盤名》後壓字數、Kadel 鉤子語病、Lewis 盤名推測）。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,review-sd-074.json,review-sd-075.json,kv-before-sd-074.json,kv-before-sd-075.json}`、`desc-tools/batches/{cards,research,output}/sd-07{4,5}*`、onboarding manifest 59 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 98 次。
+
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s39：sd-072、sd-073 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-072 上線 30（Interferon、Inti-Illimani、Into Another、Irakere 3、Iron Cross、Isaiah Rashad、Jaak Joala、Walrath、Jack White、Jack Wilson、Jackie McLean 6＋Tina Brooks、Terrasson 4、Jagged Edge、Jah Warrior、Jaheim 2、Ulmer、James Brown 2）；sd-073 上線 30（James Hurt、Moody／Wallington、Newton、James P. Johnson、Jan Dukes de Grey、Mandorla、Javon Jackson 5、Jazz Playaz、Jazzinuf 2、Jean du Voyage、Ponty、Como、Jeff Mills 2、Swann、Bergonzi、Butler、Bailiff、Jessy Dixon、Jill Scott、Jimmy Arnold、McGriff 2、Jimmy Smith 2）。無留置；Iron Cross、Jazz Playaz、Jazzinuf 2 等照 delayde 前例薄寫。
+- **主線補查**（Discogs 公開 API notes／credits 為主，WebSearch 4 次）：Jaak Joala 1975 愛／俄雙版 LP 與伴奏指揮、Interferon 一人製作與底特律影響、Jah Warrior 以非洲民族命名、Newton 班底與 Mingus／Ornette 雙軸、Mandorla 錄音時程與樂器、Mills《From the 21st》芝加哥錄音、Como／Jean du Voyage／Javon Jackson 客座等。舊稿錯處更正：《Rendezvous》爵士榜第 10、《I Got the Feelin'》三座城市、Iron Cross 四位主唱。
+- **審稿**：sd-072 改 10 處、sd-073 改 28 處（多為第二句補《盤名》與壓字數），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-072.json,review-sd-073.json,kv-before-sd-072.json,kv-before-sd-073.json}`、`desc-tools/batches/{cards,research,output}/sd-07{2,3}*`、onboarding manifest 57 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 全工作階段約 84 次。
 
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s35：sd-064、sd-065 上線（60 張，無留置）
 

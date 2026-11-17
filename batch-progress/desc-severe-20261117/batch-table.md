@@ -67,12 +67,12 @@
 | sd-067 | 其餘（Experimental Audio Research … Freeform） | 30 | | |
 | sd-068 | 其餘（FRICTION … God Bullies） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 Gene Harris 2、Russell、Mellé；FRICTION、George Young 等薄寫；CURATED 0） |
 | sd-069 | 其餘（Gone … Growling Mad Scientists） | 30 | s37 | ✅ 上線 30（前台 30；無留置；主線補查 4 張；CURATED 0） |
-| sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | | |
-| sd-071 | 其餘（Horace Parlan … Integrity） | 30 | | |
-| sd-072 | 其餘（Interferon … James Brown） | 30 | | |
-| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | | |
-| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | | |
-| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | | |
+| sd-070 | 其餘（Guitoud … Hope of Glory） | 30 | s38 | ✅ 上線 30（無留置） |
+| sd-071 | 其餘（Horace Parlan … Integrity） | 30 | s38 | ✅ 上線 30（無留置） |
+| sd-072 | 其餘（Interferon … James Brown） | 30 | s39 | ✅ 上線 30 |
+| sd-073 | 其餘（James Hurt … Jimmy Smith） | 30 | s39 | ✅ 上線 30 |
+| sd-074 | 其餘（Jimmy Smith … John Holt） | 30 | s40 | ✅ 上線 30 |
+| sd-075 | 其餘（John Kaizan Neptune … Katra Turana） | 30 | s40 | ✅ 上線 30 |
 | sd-076 | 其餘（Keith Christmas … Laserdance） | 30 | | |
 | sd-077 | 其餘（Laserdance … Linval Thompson） | 30 | | |
 | sd-078 | 其餘（Linval Thompson … Lull） | 30 | | |
