@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s1：全卡池判定＋sd-001、sd-002 上線
+
+- **店主 11-17**：林強《驚蟄》簡介只講軌序與曲長，「這介紹跟沒介紹一樣……故事在哪？概念在哪？」；抽查 400 張 severe 17%，店主：「修嚴重的先」。
+- **第 0 步判定**：KV 讀出全部現行簡介，一般卡 **21,523 張**切 72 份由 Sonnet 照 general-desc-base 判 → **severe 2,963／rewrite 13,711／keep 4,849**。與抽查樣本重疊 42 張 severe 7/7 一致；主線抽查 severe 40／keep 40：severe 判準無誤，keep 偏鬆約兩成（冷知識開頭仍判 keep），rewrite 另案時要再篩。CJK 卡 severe 比例最高（純 CJK 分片 25–35%）。
+- **切批**：severe 切 **99 批**（中日韓台 539 → 經典度≥4 999 → 其餘 1,365，同藝人聚批），`batches.json`、PLAN 分批表；sd-001／sd-002 在 CJK 分片判完時先鎖定（`locked.json`）。
+- **sd-001 上線 30、sd-002 上線 29**（研究 3 Sonnet＋寫作 2 Opus＋主線逐張審稿，改 5＋5 處）；《少年ㄞ國》（角頭 2001 合輯）研究三塊全 none、主線補查也查不到，**留置**、KV 保留舊稿。
+- **寫入**：KV desc2＋desc4 共 118 鍵（全為 CJK 卡），寫前存 `kv-before-sd-00{1,2}.json`；bulk get 回讀 118/118 一致；`front-check` 前台 59/59 新稿。onboarding manifest 同步 59 處。
+- **工具**：`batch-progress/desc-severe-20261117/tools/`（`tri.mjs` 判定、`cut.mjs` 切批、`sd.mjs cards|before|qa|bulk|verify|manifest`、`apply-review.mjs`、`front-check.mjs`）；`severe-descs.json` 存全部 severe 卡第 0 步當下的現行簡介（判定原始分片 `triage/in/` 不進 git）。派工詞 `prompt-triage.md`、`prompt-research.md`、`prompt-writer.md`。WebSearch 本工作階段約 85 次。
+- **驗證**：sd.mjs qa（字數 150–240、簡體、半形標點、軌序／曲長／盤號、fix-spacing）兩批 0 實質問題；KV 回讀逐字一致；前台逐張比對一致。紀錄 `rulings.md`。
+
 ### 2026-11-17｜dip-vinyl-shop＋dip-vinyl-worker｜Spotify 錯張根源：拿掉只比藝人的 /spotify-album-link 退路
 
 - **店主 11-17 截圖**：John Zorn《Cobra》Spotify 鈕連到《Cobra-Tokyo Operations '94》。KV 早已清空（replacedSpotifyAlbum），亮鈕來自前台退路 `/spotify-album-link`——它**只比藝人、不比專輯名**，取同藝人第一張就回。凡 KV 沒連結的卡都可能被配到同藝人別張（違反 11-07「錯張不再犯」）。

@@ -37,3 +37,26 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-001.json`；desc2＋desc4 共 60 鍵（全為 CJK 卡）`wrangler@4 kv bulk put --remote` Success；bulk get 回讀 **60/60 逐字一致**；`front-check` **前台 30/30 新稿**。
 - onboarding manifest 同步 30 處（15 個檔）。
+
+## sd-002（30 張，CJK：1976、Crying Nut、deca joins、DSPS、ECD、傅聰、Tizzy Bac、台灣合輯三張、Wha-ha-ha、ゆらゆら帝国、りんけんバンド 5 張、ディラン系、シバ、チコ本田、ノヴェラ、上野好美、中村達也、丸山繁雄）
+
+- 研究：3 支 Sonnet，WebSearch 16＋15＋19＝50 次（工作階段累計含主線約 85 次）。資料普遍薄：台灣獨立樂團多只有團體層級描述，りんけんバンド 三張 story／sound 為 none，シバ sound none。
+- **留置 1 張：Various Artists《少年ㄞ國》**（角頭 2001 合輯）——研究層三塊全 none，主線補查一次 WebSearch 也查不到這張合輯本身的資料，舊簡介的收錄名單無法查證。照 general-desc-base「真的只查得到曲目表的薄寫」都做不到，不寫；KV 保留舊稿，留給之後有人工資料時再補。
+- 寫作：2 支 Opus，29 張。薄寫：りんけんバンド《ゴンゴン》180、《チェレン》187、シバ《青い空の日》（無聲音段）等，主線裁定照收——比舊稿的曲長、盤號強，且沒有拿雜項湊。
+- 機器 QA：「国」「来」為專名（ゆらゆら帝国、風来坊）；《アジマァ》的半形括號是原曲名〈エイサー(月ん夜ぬ下)〉，原文不改。
+
+### 主線審稿（2026-11-17，逐張 29 張，改 5 處，改動檔 `review-sd-002.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| crying nut\|서커스 매직 유랑단 | 「김인수的鍵盤」→「金仁洙的鍵盤」 | 寫作層憑記憶補韓文名；照研究稿（ko.wikipedia） |
+| crying nut\|서커스 매직 유랑단 | 「約 30263 張」→「約三萬張」 | 精確到個位像雜項（en.wikipedia Crying Nut） |
+| deca joins\|在這裡停一下 | 刪「第三張專輯，距離第二張《鳥與倒影》已有六年」 | 研究稿另有 2023《暗流》，張數與間隔互相衝突 |
+| various artists\|反中國併吞 | 第一句補出盤名；刪「由國家搖滾聯盟等主辦」（補名後超字） | 第一句要講出這是什麼唱片 |
+
+其餘逐張無改：傅聰「第一位獲得國際肯定的中國鋼琴家」照研究稿 notes 改用英維基措辭；Wha-ha-ha 兩張沒寫「首張」與「打擊只有一人」；《LOCUS》採 BBE 的現場說法。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-002.json`；29 張 58 鍵 Success；回讀 **58/58 一致**；`front-check` **前台 29/29 新稿**。
+- onboarding manifest 同步 29 處。

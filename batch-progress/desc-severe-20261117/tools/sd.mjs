@@ -14,7 +14,8 @@ const STAMP = '20261117';
 const cjk = v => /[぀-ヿ㐀-鿿豈-﫿가-힯]/.test(String(v || ''));
 const plan = JSON.parse(fs.readFileSync(`${DIR}/batches.json`, 'utf8'));
 const keys = plan[batch]; if (!keys) throw new Error('沒有這一批：' + batch);
-const inRows = new Map(fs.readdirSync(`${DIR}/triage/in`).flatMap(f => JSON.parse(fs.readFileSync(`${DIR}/triage/in/${f}`, 'utf8'))).map(c => [c.k, c]));
+// severe-descs.json：全部 severe 卡的現行簡介（第 0 步當下 KV 值；triage/in/ 不進 git）
+const inRows = new Map(JSON.parse(fs.readFileSync(`${DIR}/severe-descs.json`, 'utf8')).map(c => [c.k, c]));
 const tri = new Map(JSON.parse(fs.readFileSync(`${DIR}/triage.json`, 'utf8')).map(c => [c.k, c]));
 const seed = new Map(JSON.parse(fs.readFileSync('seed_cards.json', 'utf8')).map(r => [`${r[0].toLowerCase()}|${r[1].toLowerCase()}`, r]));
 async function bulkGet(ks) {
