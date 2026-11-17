@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s49：sd-092、sd-093 上線（60 張，無留置）
+
+- **結果**：其餘組。sd-092 上線 30（II Generation、Jazz Crusaders、King of Luxembourg、The Lines、Loving Sisters、Meditations、Microphones、Mommyheads、Mountain Goats 3、Mountain Ramblers、Oddfellows、Orchids 2、Penguins、Pentagon、Players 2、Raymond Brake、Rootsman vs Muslimgauze、Royals、Sallyangie、Sea and Cake、Secret Stars、Nightingales、Williams Brothers、THE SQUARE 3）；sd-093 上線 30（THE SQUARE 3、Staple Singers、Sunset Travelers、Waldron／Lacy、Super Trio、Supreme Angels 4、Swanee Quintet 5、Sweetest Ache、Three Sounds 5、The Tourists (Mongolia)、Viceroys、Yips、Yummy Fur、Monk、Thierry Lang、Third Quadrant 2）。
+- **主線補查**：Third Quadrant（Prog 雜誌 157 期、The Progressive Aspect：西北英格蘭 Cheshire 團，舊稿「格拉斯哥」錯）；Royals、Secret Stars、兩支福音團、Supreme Angels、The Tourists、Players《Space Travel》查無新料，照 delayde 前例薄寫上線。舊稿錯誤更正：Staple Singers《Swing Low》與 1963《Swing Low Sweet Chariot》是兩張。
+- **審稿**：sd-092 改 2 處（Players 現場盤補盤名壓字數，首次上 KV 242 字已修正重寫）、sd-093 改 6 處（Tourists 曲目與「B 面」、Swanee 單曲 credit、Sweet Basil 補盤名），見 rulings.md。
+- **改動**：`batch-progress/desc-severe-20261117/{rulings.md,PLAN.md,batch-table.md,review-sd-092.json,review-sd-093.json,kv-before-sd-092.json,kv-before-sd-093.json}`、`desc-tools/batches/{cards,research,output}/sd-09[23]*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；desc2 60 鍵 bulk put Success；回讀 60/60 一致；`front-check` 前台 60/60 新稿（CURATED 0，無待店主處理）；QA 0 問題、鉤子前四字互異、加權 ≤50。WebSearch 約 75 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s52：sd-098、sd-099 上線（53 張，無留置）
 
 - **結果**：其餘組最後兩批。sd-098 上線 30（Geoff Mann 2、GoGo Penguin、Grand Puba、Götz Alsmann 2、HANA、Aurex '80、IVE、J. Valentine、Guitar Workshop in L.A.、Joe Williams、John Lee & Gerry Brown 2、Juice WRLD、Kevin Richard Martin、King General、Lou Rawls、Mach One、Mad Professor 2、Maximum Penalty、Mtume、Nightmares on Wax、Noblemen、Möslang、Ottottrio、Peaking Lights、Evans／Blancarte、Raw Deal）；sd-099 上線 23（Red Summer … Smasher，含 Технология、ဇော်ဝင်းထွဋ်）。Mach One、Aurex、Morning Stars、Smasher 等照 delayde 前例薄寫上線。

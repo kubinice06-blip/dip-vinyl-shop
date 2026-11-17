@@ -2356,6 +2356,49 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
 
+## sd-092（30 張，其餘：The II Generation、Jazz Crusaders、King of Luxembourg、The Lines、Loving Sisters、Meditations、Microphones、Mommyheads、Mountain Goats 3、Mountain Ramblers、Oddfellows、Orchids 2、Penguins、Pentagon、Players 2、Raymond Brake、Rootsman vs Muslimgauze、Royals、Sallyangie、Sea and Cake、Secret Stars、Sensational Nightingales、Sensational Williams Brothers、THE SQUARE 3）— s49
+
+- 研究：3 支 Sonnet，WebSearch 16＋14＋9＝39 次；無 none。story／sound thin 多集中在 Mountain Ramblers、Oddfellows、Pentagon、Players《Space Travel》、Raymond Brake、Rootsman、Royals、Secret Stars、兩支福音團。
+- **主線補查**（WebSearch 1 次＋Discogs API＋日文維基）：Royals《Israel Be Wise》、Secret Stars《Genealogies》、Nightingales《See You in the Rapture》、Williams Brothers《Mama Prayed for Me》Discogs release notes／credits 只有封套與製作人，無新料；Players《Space Travel》日文搜尋只回 VGMdb credits 與商品頁；《Lucky Summer Lady》日文維基確認出道作、Carpenters 翻唱與 jazz 色彩編曲（研究稿已有）。
+- **薄寫上線不留置**（delayde 前例）：Players《Space Travel》、Sensational Nightingales、Sensational Williams Brothers、Secret Stars、Mountain Ramblers、Oddfellows、II Generation、King of Luxembourg（聲音只寫編制與選曲，福音團聲音寫成團的整體風格）。
+- 事實裁定：Pentagon 不寫「原是 Sam Jones 固定三重奏」（無來源）、補 Ray Mantilla 康加鼓；Jazz Crusaders 不寫 Howard Rumsey 內頁文案；Microphones、II Generation 不寫「首張」；Meditations 不寫「全部原創」；King of Luxembourg 不寫戲服商與 Go-Betweens 成員；Oddfellows 不寫 Kelvin Tan 1991 加入；Players 不寫ボブ斉藤接替山口真文；Nightingales 只寫 Ira Tucker 製作、不寫他是 Dixie Hummingbirds 主唱（未證實）；THE SQUARE 團名由來兩說不寫；1978／1979 兩張用安藤正容、伊東毅漢字名，《Magic》起用平假名。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 2 處，改動檔 `review-sd-092.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Players《Live - At Roppongi Pit Inn》 | 第二句改《盤名》開頭，刪「和製 Stuff」與「同年發行」 | QA 無《》、字數（第一次上 KV 是 242 字，修正後重寫 KV，回讀一致） |
+
+其餘逐張四問無改：鉤子都對過研究稿（藍草團有鼓與中提琴、Lighthouse 上百場、Alway 不准貝斯、Conning 後來的製作、兒子組成的伴奏團、想要 Black Ark 的氛圍、唱片行後間錄音、18 到 20 歲、卡座滾輪聲、boombox 與 Jefferies 電吉他、寫法轉向、1957 Galax 第一名、隔近三十年、Sarah 第一張專輯、加進鍵盤取樣、Earth Angel 後回老東家、East Wind 企畫、最後一張在 Pit Inn、四台合成器、Andy Cabic、不寫歌詞的電子樂手、Cousins 咬舌嗓音、Oldfield 15 歲、樂團自稱流行專輯、團名取自朋友、Fogerty〈Proud Mary〉、後院唱歌、全員新人、slap 貝斯、Trinitron 廣告）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-092.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` 前台 30/30 新稿（CURATED 0；Players 修正稿重寫後短暫快取舊值，複查一致）。
+- onboarding manifest 同步 29 處（另 1 張無 manifest）。
+
+## sd-093（30 張，其餘：THE SQUARE 3、Staple Singers、Sunset Travelers、Waldron／Lacy、Super Trio、Supreme Angels 4、Swanee Quintet 5、Sweetest Ache、Three Sounds 5、The Tourists (Mongolia)、Viceroys、Yips、Yummy Fur、Monk《Paris 1969》、Thierry Lang、Third Quadrant 2）— s49
+
+- 研究：3 支 Sonnet，WebSearch 9＋8＋14＝31 次；none 只有 The Tourists story／sound。
+- **主線補查**（WebSearch 2 次＋WebFetch＋Discogs API／MusicBrainz，facts 標【主線補查】）：Third Quadrant（Prog 雜誌 157 期可見段落：英格蘭西北部鍵盤前衛團、DIY 起於臥室、Chris Hare 說獨立精神來自龐克；The Progressive Aspect：Cheshire 團、《Layered》幾百捲卡帶、2012 復出）→ 更正舊稿「格拉斯哥」；Supreme Angels（AllMusic／Discogs 目錄，無專輯層級資料）；The Tourists（Discogs、MusicBrainz 無條目）。
+- **薄寫上線不留置**（delayde 前例）：The Tourists (Mongolia) 168 字（只寫研究稿三條）、Supreme Angels 四張、Swanee Quintet《Ups And Downs》《Changed Man》《Meetin' Tonight》、Third Quadrant《Voyage to Pluto》。
+- 事實裁定：Staple Singers《Swing Low》（1961 VJLP 5014）與 1963《Swing Low Sweet Chariot》是兩張，舊稿混為一張，不用 1963 那張的評論；Super Trio 年份寫 1987（口述史訪談者說 1982）；Supreme Angels 年份與 Hunt 出生年各來源不一，不寫；〈The Assassination〉內容查不到，不寫；Third Quadrant「格拉斯哥聾人交響樂團演奏柴可夫斯基」是唱片上的玩笑署名，正文明寫是玩笑；Thierry Lang《Guide Me Home》是鋼琴獨奏；Monk 不寫黑白膠片、借鼓棒；Three Sounds《Here We Come》不寫 Billboard／Ornette（無來源）；The Tourists 不寫「硬搖滾」「首作 2016」（首張是 2021《Departure》）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 6 處，改動檔 `review-sd-093.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| The Tourists | 刪曲目清單、「收 12 首歌」；「B 面與試聽帶集」→「未收錄曲與試聽帶合輯」 | 曲目與軌數雜項、QA 軌序字眼 |
+| Swanee Quintet《Changed Man》 | 刪「1980 年代他們仍持續出片」 | 空泛後續句 |
+| Swanee Quintet《Meetin' Tonight》 | 刪「同名歌的單曲版詞作就署名 Willingham」 | credit 雜項，且未證實單曲與專輯同名曲為同一錄音 |
+| Waldron／Lacy《Live at Sweet Basil》 | 第二句補《盤名》，刪二重奏背景句 | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（換鍵盤鼓手轉搖滾、〈宝島〉沒發單曲成必奏曲、美國已有 The Squares、滾石〈The Last Time〉、O.V. Wright 高中進團、Sweet Basil 兩位旅歐樂手、匈牙利最專業爵士小組之一、〈By And By〉代表作、Coates〈You Can't Hurry God〉、〈He'll Understand〉、〈Shame On You〉1974 金唱片、最鄉村的福音團、Willingham 見證者、James Brown 擦鞋少年、Nashboro 易主、1939 成軍到 1980 仍錄音、英國媒體沒評過、Ernest Tubb、不到 28 歲、不為創新而創新、Horace Silver 推薦、擱到 1963、烏蘭巴托、回頭找 Riley、沒有貝斯、更像 1976、十五年前被喝倒采、Freddie Mercury 的歌、兩捲卡帶後壓黑膠、冥王星船長）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-093.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 75 次（研究層 sd-092 39、sd-093 31，主線 4）。
 ## sd-098（30 張，其餘：Geoff Mann 2、GoGo Penguin、Grand Puba、Götz Alsmann 2、HANA、Aurex '80、IVE、J. Valentine、Guitar Workshop in L.A.、Joe Williams、John Lee & Gerry Brown 2、Juice WRLD、Kevin Richard Martin、King General／Bush Chemists、Lou Rawls、Mach One、Mad Professor 2、Maximum Penalty、Mtume、Nightmares on Wax、Noblemen、Norbert Möslang、Ottottrio、Peaking Lights、Evans／Blancarte、Raw Deal）— s52
 
 - 研究：3 支 Sonnet，WebSearch 16＋17＋15＝48 次；無 none，thin 多（story thin 約 18 張）。Discogs API 不帶 token 可讀 releases／masters notes。
