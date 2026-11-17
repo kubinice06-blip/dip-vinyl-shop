@@ -238,3 +238,10 @@
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-008.json`；27 張 54 鍵 Success；回讀 **54/54 一致**；`front-check` **前台 27/27 新稿**。
 - onboarding manifest 同步 27 處（14 個檔）。
+
+## 協調端補修：林強《驚蟄》（2026-11-17，店主指正）
+
+店主：「驚蟄這張專輯故事這麼多，怎麼可能查不到？根本沒用心找資料吧？」
+- sd-006 版只用了博客來、佳佳商品頁與維基；研究層 3 次搜尋就把 sound 標 thin。協調端兩次搜尋找到公視新聞（坎城邀四位音樂人、林強唯一亞洲人、配故宮數位影像、媽祖繞境鞭炮聲與電視噪音入樂）與 2005 年 5 月人間福報（同名曲為坎城而寫、驚蟄象徵蟄伏後初醒），補進 `research/sd-006-a.json`（標【協調端補查 11-17】）。
+- 重寫 237 字：第一句定位與金曲跨界獎 → 坎城邀演、故宮影像、MK2、《最好的時光》 → 片名意涵 → 聲音素材。KV desc2／desc4 寫入並逐字回讀，前台 `/album-desc` 已是新稿；舊值 `kv-before-jingzhe-fix.json`；`onboarding-manifest-c89` 與 `output/sd-006-out-1.json` 同步。
+- 研究規則補強：`prompt-research.md` 與 `general-desc-base.md` 加「判 thin／none 之前必查清單」，主線對 thin 卡一律再補查。
