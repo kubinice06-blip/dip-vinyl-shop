@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s27：sd-049、sd-050 上線（60 張，無留置）
+
+- **結果**：經典度≥4 卡。sd-049 上線 30（Steps 2、Sterling Void、Steve Gadd、Poindexter、Spacek、sToa、Stompin' Ground、Supertouch、Sussan Deyhim、Sutekh、Svartsinn、Grünberg 2、Sweeps、Sweet Charity、Tellier、Godinho、Taj Mahal Travellers、宮坂高史、Tantra、Tar、Terra Rosa、Terrence Parker、Tetrack、Faith Healers、Astronauts、B-52's、Benny Green、검정치마）；sd-050 上線 30（검정치마《TEAM BABY》、Bush Chemists、Chesterfields、The Comes、Consolers、CJQ、Cravats、Deep Freeze Mice 2、Diagram Brothers、Pullen-Adams 2、Gospelettes、Fabulous Counts、Ward Singers、Feelies、Force of Music、Great Jazz Trio 2、The Hacker、Highway QC's、Impressions、Isley Brothers、Betsch、Kamkars、Legendary Pink Dots 2、Lyman Woodard、The Martian、The Mercy's）；無留置（宮坂高史《Soul Tomato》只有編制與錄音資料，薄寫 167 字上線）。
+- **主線補查**：sd-049 補 13 張（Steps 的 Milkowski 傳記轉述、검정치마 Newsis 2011 訪談、B-52's、Grünberg《OM》、Terrence Parker 等），sd-050 補 12 張（Isley 編制、Betsch 錄音、Gospelettes、Great Jazz Trio《Love for Sale》的 Buster Williams、Bush Chemists、Cravats 等）。
+- **審稿**：sd-049 改 12 處（Taj Mahal Travellers 鉤子因果顛倒與曲名體例、Terrence Parker 無出處封號、Sweet Charity「英國水兵」），sd-050 改 12 處（검정치마 人名改原文、單一出處去「常被」、Cravats 錄音地點三說不寫、Curse 軌序）；派工詞「Sweet Charity 為印尼團」「CJQ 屬 Tribe」皆錯，已更正。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,batch-table.md,rulings.md,kv-before-sd-049/050.json,review-sd-049/050.json}`、`desc-tools/batches/{cards,research,output}/sd-049*、sd-050*`、onboarding manifest 58 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2 60 鍵 bulk put，回讀 60/60 一致；`front-check` 前台 60/60 新稿、CURATED 0；QA 0 問題（字數、簡體、標點、無軌序／曲長／盤號）；鉤子加權 ≤50、同批前四字互異、第二句皆含《盤名》。WebSearch 約 129 次。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s23：sd-041、sd-042 上線（60 張，無留置）
 
 - **結果**：經典度≥4 非 CJK 卡。sd-041 上線 30（Los Saicos、Los Shakers、Los Van Van、Wembler's 2、Los Ángeles Negros 2、Moholo、Louis Philippe、Love Joys、Lowfish、Lucho Bermúdez、Ludus、Lull 2、Maceo Parker、Mad Professor、Madball 3、Magna Carta、Mahmoud Ahmed、寺下誠、Waldron／Lacy、MALTA 2、Marc Houle、Bonet、Martin Carthy 2）；sd-042 上線 30（Carthy & Swarbrick、Marvin Gaye、中島政雄、Masonna、Mattie Moss Clark、Maulawi、Bianchi、Maximum Joy、Tyner 3、MMW 2、Memphis Slim、Menuets、Merauder、Merzbow、Mess、Chapman、Galasso《花樣年華》、Garrison、Petrucciani 3、Sardaby、Mercure、Osborne、Miles Davis 2）。

@@ -1436,3 +1436,29 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-049.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
+
+## sd-050（30 張，經典度≥4：The Black Skirts、Bush Chemists、Chesterfields、The Comes、Consolers、Contemporary Jazz Quintet、Cravats、Deep Freeze Mice 2、Diagram Brothers、Pullen-Adams Quartet 2、East St. Louis Gospelettes、Fabulous Counts、Famous Ward Singers、Feelies、Force of Music、Great Jazz Trio 2、The Hacker、Highway QC's、Impressions、Isley Brothers、John Betsch Society、Kamkars、Legendary Pink Dots 2、Lyman Woodard Organization、The Martian、The Mercy's）— s27
+
+- 研究：3 支 Sonnet，WebSearch 14＋13＋15＝42 次；無 none。
+- **主線補查**（WebSearch 約 15 次＋WebFetch，facts 標【主線補查】）：Chesterfields（Subway 源起、TweeNet 盤名典故）→ story ok；The Comes（Dogma／City Rockers、第一波硬蕊、Chitose 人聲評語）；Deep Freeze Mice（Jenkins 自述年表，sound 仍薄）；Cravats（Overground：八軌、獨立榜前 20）→ story ok；Bush Chemists（Wardrop 四軌起家、三部曲第一部、同名曲進廣告）→ story ok；Consolers（Cross Rhythms 長文，未見本盤名）；Isley Brothers（維基編制：Ernie、Marvin、Jasper 等，DeShannon 翻唱、Jasper 作曲）→ story ok；Highway QC's（無專屬樂評，薄寫）；The Hacker（DiS：首張當年聽眾少）；Gospelettes（Checker、Oliver Sain、Bobby Bland 改編）→ what／sound ok；Great Jazz Trio《Love for Sale》（Buster Williams、AllMusic／Test of Time 評語）→ sound ok；Betsch（納許維爾錄音、陣容、移居紐約後合作者）→ story ok；Kamkars（AllMusic Keefner：九人波斯樂團、清脆錄音；諾貝爾典禮演出）。
+- 身分／事實裁定：Contemporary Jazz Quintet 廠牌是底特律 Strata（不是 Strata-East／Tribe，派工詞與舊稿皆錯）；Consolers 只寫「1961 年 Nashboro 發行的 LP」，不斷言首張、不把《Give Me My Flowers》當本盤名；Cravats 錄音地點三說不一，不寫；Famous Ward Singers 本盤為 1957 年 7 月現場錄音、隔年發行，Kitty Parham 是人聲；Great Jazz Trio《Love for Sale》貝斯是 Buster Williams；Isley 單曲只寫前 40 名、不寫「三兄弟」；The Martian 屬 UR 的 Red Planet（非 Drexciya 系），身分寫「通常被認為是 Mike Banks」，原住民意象不寫成概念；The Mercy's 是印尼棉蘭樂團，本盤是否 Volume 1 未證實，寫「1970 年代初」；Black Skirts 人名一律用原文 조휴일（研究稿的「趙休日」漢字未經證實）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-050.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| The Black Skirts《TEAM BABY》 | 「趙休日」→「조휴일」（三處）、「黑裙（검정치마）」→「검정치마（The Black Skirts）」，韓中之間補空格 | 韓國人名團名照原文；與同團 sd-049 卡一致 |
+| The Comes | 鉤子「常被稱作」→「被樂評形容為」 | 單篇再發行樂評 |
+| Chesterfields | 刪「劇中人總叫彼此去燒水，樂團決定改用跳舞回應。」 | TweeNet 評者自註無法證實，鉤子已用「據說」 |
+| Cravats | 刪「在一家旅館地下室」 | 錄音地點三說不一（177 字，薄寫） |
+| East St. Louis Gospelettes | 「常被視為」→「被樂評稱為」 | 單一出處 Sir Shambling |
+| Legendary Pink Dots《Curse》 | 刪「收尾的」；「全團編制佔了一半以上」→「一半以上的曲子由全團演奏」 | 軌序；語意 |
+| John Betsch Society | 「常被拿來與 Pharoah Sanders 相比」→「有樂評拿它與…相比」 | 單一出處 Sean Trane |
+
+其餘逐張四問無改：逐條對過研究稿（Bush Chemists 與 Camden 攤位、CJQ 與《Bitches Brew》、Diagram Brothers「Discordo」規則與烤麵包機打擊、Breakthrough 七年首度美國廠牌、Song Everlasting 長笛與柔和慢曲、Fabulous Counts 一遍錄成與〈Hey Jude〉、Ward Singers 與 Little Richard、Feelies 拒大廠製作人改找 Peter Buck、Force of Music 獻給 Coxsone、Great Jazz Trio 渡辺貞夫錄音隔天、Impressions R&B 專輯榜冠軍與 Grammy 名人堂、Kamkars 七兄弟加一姊妹、Brighter Now 的 Nick Mason 八軌（官方網站單一來源，作為器材故事照收）、Lyman Woodard 的 Mellotron、Mercy's 與 Koes Plus 對照）。鉤子檢查兩筆「軌」是「四軌機」「八軌」錄音器材，非軌序，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-050.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 28 處。
+- 本工作階段 WebSearch 合計約 129 次（研究層 sd-049 50、sd-050 42，主線約 37）。
