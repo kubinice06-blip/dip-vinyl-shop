@@ -17,10 +17,10 @@
 //           'card:<cardId>'＝那張的整格（v3）；'@f'|'@p'|'@o'＝舞台錨點。
 //
 // DipLabDuel.mount(panelEl, { duel, events, run, content, enter, onEnd(result), onSave(duel),
-//   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim}, onEvent(ev,duel), tut, resolveOpts(act),
+//   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim, autoNext}, onEvent(ev,duel), tut, resolveOpts(act),
 //            beforeEnd(result)->Promise, endText(result, 預設 {title,sub,cls})->{title,sub,cls,chip,holdMs}|null（第 A 波：險勝章、連勝小章；holdMs＝大章至少停多久）, relicIcon(id,size)->html } })
 //   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'rounds'|'pile', pHp, eHp, duel }
-// DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) preview(attr) play(act)->Promise
+// DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) preview(attr) play(act)->Promise recap('hand',n|'list'|false)
 //           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
 //           _fmt.clashText(clashEvent, T, hints) → { l1, l2, l3, cls, rule, notes, bluff, read, saw, gotRead }（e2e 比對浮框）
 //             11-17 讀牌加難：正式對局結果句不念關鍵字（honestPlain／bluffPlain／seeThroughPlain、他讀到你 readHit＋readCounter|Mirror|Third）；
@@ -29,6 +29,8 @@
 // gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'card',i,attr,id}（點一張封面＝在那張打開、浮起，attr＝topAttr）
 //   {kind:'throw',i,attr,id}（點屬性鈕＝出手，唯一的出手方式） {kind:'collapse'}（再點打開的那張、或點手牌外面＝收回疊好）
 //   {kind:'chip',i,attr,id}（只有 API select(i, attr) 送：換預覽的屬性，不出手） {kind:'info',where} {kind:'close'}；i＝0..handSize−1 或 'ace'
+// 11-17 上一手細節（scratchpad v5/recap）：hooks.settings().autoNext === false＝揭曉後停住等點（'waitTap' true／false）；點上一手小列＝上一手詳情（recap.js 面板 .dl-rc，
+//   蓋住整個盤面；'recap'({open,view,k})／'recapClosed'）、按住＝唱片資訊；api.recap／recapRows／recapReady／recapOpen／waiting；info 的 where 多 recap-e／recap-p（面板裡點封面）
 // 事件：'phase'(choose|resolve|over) 'selected'({i,attr}|null：打開哪張／收回) 'resolved'(evs：560 ms 浮框剛出現時，同步) 'settled'(evs：1460 浮框收成一行)
 //       'handStart'(view) 'over'(result) 'info'(where) 'infoClosed'(where) 'relic'(id) 'apex'({open}|{t:'apex',…}：頂點卡試做的能力框開關／發動)
 //       info 的 where：hand｜hand-ace｜slot-e｜slot-p｜last-e｜last-p（上一手小列；cardinfo 收到的 from＝'duel:' + where）
@@ -42,7 +44,7 @@
 //
 // 規則：畫面上每個數字都來自引擎的 view()／resolveTurn() 事件；UI 不算傷害、不讀 duel.plan。提示只寫句子，不寫屬性名（D §5）。
 // 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、手牌收回疊好、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
-//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手（牌桌兩張縮小、搬進最上面的上一手小列）。結算中點畫面任一處（牌桌兩張、上一手小列除外：那是唱片資訊）＝這手 4 倍速；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
+//   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手（牌桌兩張縮小、搬進最上面的上一手小列）。結算中點畫面任一處（牌桌兩張除外：那是唱片資訊；淡掉的上一手小列算牌桌）＝這手 4 倍速；停住等點時點任一處（牌桌兩張也算）＝繼續；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
 (function () {
   'use strict';
   if (typeof window === 'undefined') return;
@@ -93,6 +95,11 @@
   // 看字的時間（跟對白同一條：約每秒 6–7 字，最多 6.5 秒；店主 11-12「他唬我 我還沒看清楚被唬了什麼就過去了」）
   const readMs = t => Math.min(6500, 1400 + 140 * String(t || '').length);
   const HOLD_GUARD = 500;  // 唬你／剋不動的結果框停住後 500 ms 內的點擊不算（連點不會一閃就過）
+  // 11-17 揭曉後停住等點（店主「上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了」；scratchpad v5/recap DESIGN §A）：
+  //   hooks.settings().autoNext === false（ui.js 給真玩家；⏸「揭曉後自動換手」預設關）而且不在教學、不是 autoplay、沒有 ?fast=1 → 結果框出現後停住、不倒數，
+  //   點盤面任何地方（含牌桌兩張大封面；按住封面＝唱片資訊、發燒配件＝說明，不放行）、盤面外的舞台、Enter／空白鍵＝放行；放行後不再停「上一手」那一行，T_GO 後直接換手。
+  //   harness／duelLab 沒給 autoNext（或給 true）＝照現行時序（含唬你／剋不動的 readHold）
+  const T_GO = 220;        // 放行後：結果框淡掉（200 ms）就換手
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const Eng = () => window.DipLabEngine;
   const Fx = () => window.DipLabFx || null;
@@ -141,7 +148,7 @@
     roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
     tapOn: '點一下繼續',
     readRight: '讀對了。', seeThrough: '你看穿了！『{key}』是{hint}，他出的是{e}。', seeThroughNoKey: '你看穿了！提示是{hint}，他出的是{e}。',   // 第 A 波 4
-    lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊',
+    lpAria: '上一手{who}丟的：{t}，點一下看這手細節，按住看唱片資訊', lpAriaInfo: '上一手{who}丟的：{t}，點一下看唱片資訊',
     // 11-17 讀牌加難：結果句不念關鍵字（教學那場照舊用上面幾句）
     honestPlain: '他照實出。', bluffPlain: '他唬你！他出的是{e}。', seeThroughPlain: '你看穿了！他出的是{e}。', readHit: '他讀到你了！他出的是{e}。',
     readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。',
@@ -268,8 +275,10 @@
       rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, lastCt: null, debug: { log: [], hands: [] },
       apxOpen: false, apxAt: 0, apxEv: null,
       readRun: 0, sounds: [],
-      lpd: null, lpOn: false, lpFade: false,   // 上一手小列：放的那一手（{e,p} 快照）、有沒有長出來（第一次換手起）、揭曉中變淡
+      lpd: null, lpOn: false, lpFade: false,   // 上一手小列：放的那一手（{e,p,n} 快照）、有沒有長出來（第一次換手起）、揭曉中變淡
+      hold: null, shown: 0, rc: null, rcInfo: false,   // 11-17：停住（{at, done, tap}）、紀錄列到第幾手（揭曉那一刻才算；續玩＝log 有幾手）、上一手詳情／這場紀錄面板、面板裡開了唱片資訊
     };
+    S.shown = ((duel && duel.log) || []).length;
     // 越讀越響（第 A 波 4）：同一場連續讀對（剋中）幾手了——續玩時從引擎的 duel.log 尾巴數回來
     for (let k = ((duel && duel.log) || []).length - 1; k >= 0 && duel.log[k] && duel.log[k].kind === 'counter'; k--) S.readRun++;
     const paused = () => !!(S.infoOpen || S.held);
@@ -283,6 +292,8 @@
       return `<i class="tn" data-tune="${esc(k)}" role="img" style="--tn:${esc(col)}" aria-label="${esc(lab)}" title="${esc(lab)}"></i>`;
     }
     const baseSpeed = () => FAST ? 4 : (settings().fastAnim ? 2 : 1);
+    // 揭曉後停住等點（11-17）：外殼明說 autoNext === false 才停（harness／duelLab 沒給＝照現行時序）；教學、autoplay、?fast=1 一律不停
+    const holdOn = () => settings().autoNext === false && !tut && !S.auto && !FAST;
     S.speed = baseSpeed();
     const rm = () => { const f = Fx(); try { return f && f.reducedMotion ? f.reducedMotion() : rmq(); } catch (_) { return rmq(); } };
     const log = s => { S.debug.log.push(s); if (S.debug.log.length > 400) S.debug.log.shift(); };
@@ -327,7 +338,10 @@
       const was = S.held;
       S.held = Math.max(0, S.held + (onOff ? 1 : -1));
       if (S.held && !was) { finishCallIn(); pauseAnims(); if (S.lp) { clearTimeout(S.lp.h); S.lp = null; } root.classList.add('held'); if (hasStage('pause')) stg('pause', true); }
-      else if (!S.held && was) { root.classList.remove('held'); if (!paused()) resumeAnims(); if (hasStage('pause')) stg('pause', false); }
+      else if (!S.held && was) {
+        root.classList.remove('held'); if (!paused()) resumeAnims(); if (hasStage('pause')) stg('pause', false);
+        if (S.hold && S.hold.tap && !holdOn()) S.hold.done();   // 停住中在 ⏸ 打開「揭曉後自動換手」：關選單就放行
+      }
       return S.held;
     }
 
@@ -402,6 +416,47 @@
       if (tut && typeof tut.gate === 'function') try { tut.gate({ kind: 'close' }); } catch (_) {}
       emit('infoClosed', where);
     }
+
+    // ---------------- 上一手詳情／這場紀錄（11-17；recap.js DipLabRecap；scratchpad v5/recap DESIGN §B §C） ----------------
+    //   資料＝引擎的 duel.log（每手多記卡、星、notes…）→ recap.js 組回 clash 形狀 → 本檔 clashText（＝當時浮框的字）。只列已揭曉的手（S.shown）。
+    //   面板蓋住整個盤面（舞台留著）；開著＝infoOpen 計數（對決停住、動畫停住），關掉回到原狀（手牌開著的照樣開著、停住的照樣停住）。教學那場不開。
+    function recapOn() { return !tut && !!(window.DipLabRecap && typeof window.DipLabRecap.mount === 'function'); }
+    function rcCard(id) {
+      if (!id) return null;
+      const P = (duel && duel.p) || {}, X = (duel && duel.e) || {};
+      for (const a of [P.hand, P.draw, P.disc, [P.ace], X.thrown, X.hand, X.pile]) if (Array.isArray(a)) for (const c of a) if (c && c.id === id) return c;
+      return (content.cards && content.cards[id]) || null;
+    }
+    function recapRows() {
+      const RC = window.DipLabRecap;
+      if (!RC || !duel) return [];
+      return RC.rowsOf(duel.log, { T, hints, hintLines: content.hintLines, cardOf: rcCard, pMax: duel.p.max, eMax: duel.e.max, shown: S.shown, U: apexMode() ? apxUI() : undefined });
+    }
+    // view：'hand'（k＝第幾手）｜'list'
+    function openRecap(view, k) {
+      if (!recapOn() || S.destroyed || S.held) return false;
+      view = view === 'hand' ? 'hand' : 'list';
+      const rows = recapRows();
+      if (view === 'hand' && !rows.some(r => r.n === k)) view = 'list';
+      if (S.rc) { S.rc.update(rows); S.rc.set(view, k); emit('recap', { open: true, view, k: view === 'hand' ? k : null }); return true; }
+      if (S.apxOpen) closeApex();
+      if (!els.pop.hidden) els.pop.hidden = true;
+      if (!els.cheat.hidden) setCheat(false);
+      S.infoOpen++; pauseAnims();
+      S.rc = window.DipLabRecap.mount(root, {
+        rows, view, k, max: (S.v && S.v.maxRounds) || (E.CFG && E.CFG.maxRounds) || 6, T,
+        onCard: (side, r) => {                           // 面板裡點封面＝唱片資訊（where recap-e／recap-p）；關掉回到面板
+          const d = r && r[side]; if (!d || !d.card || S.rcInfo) return;
+          S.rcInfo = true;
+          Promise.resolve(openInfo(d.card, 'recap-' + side, d.attr)).then(() => { S.rcInfo = false; }, () => { S.rcInfo = false; });
+        },
+        onClose: () => { S.rc = null; S.infoOpen = Math.max(0, S.infoOpen - 1); if (!paused()) resumeAnims(); log('recap:close'); emit('recapClosed'); },
+      });
+      log('recap:' + view + (view === 'hand' ? ':' + k : ''));
+      emit('recap', { open: true, view, k: view === 'hand' ? k : null });
+      return true;
+    }
+    function closeRecap() { if (!S.rc) return false; S.rc.close(); return true; }
 
     // ---------------- DOM skeleton（§2.5.1 的樹） ----------------
     const root = document.createElement('div');
@@ -641,7 +696,7 @@
     // 每顆按鈕畫出來時放的那一手：長按跨過換手（innerHTML 整列重建、S.lpd 換成新的一手）時，開的仍是手指按下去那張（審查 11-16）
     const lpData = new WeakMap();
     function lpItem(side, d) {
-      const c = d.card, lab = T('lpAria', { who: side === 'e' ? '他' : '你', t: title(c) });
+      const c = d.card, lab = T(recapOn() ? 'lpAria' : 'lpAriaInfo', { who: side === 'e' ? '他' : '你', t: title(c) });
       return `<button type="button" class="lp ${side}${d.ace ? ' ace' : ''}" data-side="${side}" data-card="${esc(c.id)}" data-tut="lp-${side}" aria-label="${esc(lab)}">`
         + `<span class="lpc">${img(c)}</span><span class="lpt"><span class="lpw"><span class="lpk">${esc(T('lastPrefix'))}</span>${esc(T(side === 'e' ? 'he' : 'you'))}<span class="lpa">${ZH[d.attr]} <span class="num">${d.star}</span></span></span>`
         + `<span class="lpn">${esc(c.album || '')}</span></span></button>`;
@@ -652,7 +707,7 @@
       if (els.lp.dataset.k !== key) {
         els.lp.dataset.k = key;
         els.lp.innerHTML = on ? lpItem('e', d.e) + lpItem('p', d.p) : '';
-        if (on) els.lp.querySelectorAll('.lp').forEach(b => lpData.set(b, d[b.dataset.side]));
+        if (on) els.lp.querySelectorAll('.lp').forEach(b => lpData.set(b, Object.assign({ n: d.n }, d[b.dataset.side])));
       }
       els.lp.hidden = !on;
       els.lp.classList.toggle('fade', on && S.lpFade);
@@ -1148,7 +1203,7 @@
       els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
       clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
     }
-    // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下；上一手小列點一下或長按；他蓋著的封套不給看
+    // 唱片資訊：手牌封面長按（疊著、打開都可以）；牌桌上兩張（揭曉後）點一下（停住等點時＝繼續，要按住）；上一手小列長按（11-17 起點一下＝上一手詳情；教學那場點一下照舊）；他蓋著的封套不給看
     //   小列：開這顆按鈕畫出來時的那一手（lpData），不是當下的 S.lpd——長按跨過 t=2060 換手時，x 已是被重建掉的舊按鈕，開的仍是手指按下去那張
     function infoOfLast(x) {
       const side = x.dataset.side, d = lpData.get(x);
@@ -1179,10 +1234,17 @@
       if (!els.cheat.hidden) { setCheat(false); if (t.closest('.cheat, .tri')) return; }
       else if (t.closest('.tri') && !S.busy) { setCheat(true); return; }
       let x;
-      if ((x = t.closest('.lastplay .lp'))) { infoOfLast(x); return; }   // 上一手小列：手牌開著也不收回、結算中也不加速（跟點牌桌大格一樣）
-      if ((x = t.closest('.slot[data-card]'))) { infoOfSlot(x); return; }
+      // 上一手小列（11-17）：選牌時點一下＝上一手詳情（教學那場照舊＝唱片資訊）；手牌開著也不收回。按住＝唱片資訊（onDown）。
+      //   揭曉中（小列淡掉）點它＝跟點牌桌一樣（停住時＝繼續、結算中＝這手 4 倍速）
+      if ((x = t.closest('.lastplay .lp')) && !S.busy) {
+        if (recapOn()) { const d = lpData.get(x); openRecap('hand', (d && d.n) || (S.lpd && S.lpd.n)); } else infoOfLast(x);
+        return;
+      }
+      // 牌桌兩張（揭曉後）點一下＝唱片資訊；停住等點時例外（審查 11-17：「點一下繼續」最自然點的就是畫面正中那兩張封面）＝跟點牌桌一樣放行，
+      //   唱片資訊改按住（onDown），或放行後點上一手小列在詳情裡點封面
+      if ((x = t.closest('.slot[data-card]')) && !(S.hold && S.hold.tap)) { infoOfSlot(x); return; }
       if ((x = t.closest('.rl'))) { relicTap(x); return; }
-      if (S.busy) {   // 結算中點畫面＝這手 4 倍速；唬你／剋不動的結果框停著時＝看完了、繼續
+      if (S.busy) {   // 結算中點畫面＝這手 4 倍速；結果框停著（停住等點、唬你／剋不動）時＝看完了、繼續
         if (S.hold) { if (performance.now() - S.hold.at > HOLD_GUARD) S.hold.done(); return; }
         if (!S.rush && performance.now() - S.playAt > RUSH_MS) { S.rush = true; setSpeed(Math.max(S.speed, 4)); }
         return;
@@ -1196,6 +1258,12 @@
     }
     // 盤面外面（舞台、頂欄）也算「手牌外面」；唱片資訊、教學遮罩、面板上的點擊不算
     function onDocClick(ev) {
+      // 停住等點（11-17）：盤面外的舞台也算「點一下繼續」（頂欄、彈窗、唱片資訊、教學遮罩不算；盤面裡的由 onClick 管）
+      const t0 = ev.target;
+      if (S.hold && !S.destroyed && !paused() && t0 && t0.closest && !root.contains(t0) && !t0.closest('#top, .lb-modal, #cardInfoMask, #tut, #tutTip, .dl-rc')) {
+        if (performance.now() - S.hold.at > HOLD_GUARD) S.hold.done();
+        return;
+      }
       if (!els.cheat.hidden && ev.target && !(ev.target.closest && root.contains(ev.target))) setCheat(false);
       if (S.apxOpen && !S.infoOpen && ev.target && ev.target.closest && !root.contains(ev.target) && !ev.target.closest('#cardInfoMask, #tut, #tutTip, .lb-modal')) closeApex();
       if (!S.sel || S.destroyed || S.infoOpen) return;
@@ -1232,6 +1300,17 @@
     }
     root.addEventListener('click', onClick);
     document.addEventListener('click', onDocClick);
+    // 鍵盤（焦點不在盤面裡也收）：停住時 Enter／空白鍵＝繼續；面板開著時 Esc＝關面板。焦點在按鈕、輸入框上＝交給它自己（按鈕的 Enter 本來就會點下去）
+    function onDocKey(ev) {
+      if (S.destroyed || ev.defaultPrevented) return;
+      const t = ev.target, inCtl = !!(t && t.closest && t.closest('button, a[href], input, textarea, select, [contenteditable], [role=button]'));
+      if (ev.key === 'Escape' && S.rc && !S.rcInfo && !S.held) { ev.preventDefault(); closeRecap(); return; }
+      if ((ev.key === 'Enter' || ev.key === ' ') && S.hold && !paused() && !inCtl && !(t && t.closest && t.closest('.lb-modal, #cardInfoMask'))) {
+        ev.preventDefault();
+        if (performance.now() - S.hold.at > HOLD_GUARD) S.hold.done();
+      }
+    }
+    document.addEventListener('keydown', onDocKey);
     root.addEventListener('pointerdown', onDown);
     root.addEventListener('pointermove', onMove);
     root.addEventListener('pointerup', onUp);
@@ -1239,6 +1318,8 @@
     root.addEventListener('pointerover', onOver);
     root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.ab,.sleeve,.lp')) ev.preventDefault(); });
     root.addEventListener('keydown', ev => {
+      if (ev.key === 'Escape' && S.rc) { if (!S.rcInfo) { ev.preventDefault(); closeRecap(); } return; }   // 面板開著：Esc 只關面板（手牌照樣開著）
+      if (S.rc) return;
       if ((ev.key === 'Enter' || ev.key === ' ') && ev.target.classList && ev.target.classList.contains('slot')) { ev.preventDefault(); ev.target.click(); }
       if (ev.key === 'Escape' && S.apxOpen) { ev.preventDefault(); closeApex(); return; }
       if (ev.key === 'Escape' && S.sel) { ev.preventDefault(); closeHand(true); }
@@ -1310,6 +1391,20 @@
         S.hold = { at: performance.now(), done };
         const tick = () => { S.timers.delete(h); if (S.destroyed) { S.hold = null; return res(); } const now = performance.now(); if (!paused()) left -= now - last; last = now; if (left <= 0) done(); else { h = setTimeout(tick, 50); S.timers.add(h); } };
         h = setTimeout(tick, 50); S.timers.add(h);
+      });
+    }
+    // 揭曉後停住等點（11-17）：不倒數，點一下（或 Enter）才走。l4「點一下繼續 ▼」整行不閃、▼ 輕跳（.hold）。HOLD_GUARD 內的點擊不算
+    function tapHold() {
+      return new Promise(res => {
+        if (S.destroyed) return res();
+        const c = els.call, l4 = c.querySelector('.l4');
+        if (l4) l4.innerHTML = `${esc(T('tapOn'))} <i aria-hidden="true">▼</i>`;
+        c.classList.add('wait', 'hold'); placeCallout();
+        const h = { at: performance.now(), tap: true, done: null };
+        h.done = () => { if (S.hold !== h) return; S.hold = null; c.classList.remove('wait', 'hold'); log('hold:go'); emit('waitTap', false); res(); };
+        S.hold = h;
+        log('hold:on');
+        emit('waitTap', true);
       });
     }
     function bigStamp(text, cls, sub, chip) {
@@ -1430,21 +1525,25 @@
         : n.stat && n.stat !== 'feint' ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`) : null;   // feint（被唬到多扣）沒有小籤
       if (ct.notes.length) (cl.notes || []).forEach(n => { const b = noteEl(n); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
       oneTimeTips(cl, ct);
+      S.shown = Math.max(S.shown | 0, cl.n | 0);          // 11-17：這手揭曉了，紀錄可以列到這手
       rec.ui = snapUI();
       if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }
       emit('resolved', evs);
-      if (!tut && !S.auto && !FAST && (ct.bluff || cl.blocked)) await readHold(ct);   // 唬你／剋不動：停到點一下（或看夠久自己走）
+      const tapWait = holdOn();
+      if (tapWait) await tapHold();                          // 11-17：停住等你點一下（最後一手也停：點了才出大章）
+      else if (!tut && !S.auto && !FAST && (ct.bluff || cl.blocked)) await readHold(ct);   // 唬你／剋不動：停到點一下（或看夠久自己走）
       else await wait(T_LINE - T_HIT);
       if (S.destroyed) return true;
-      // ---- t=1460：浮框收成「上一手」
+      // ---- t=1460：浮框收成「上一手」（停住過的：已經看完了，結果框淡掉就換手，不再停這一行）
       hideCallout();
       S.lastCt = ct; S.flash = null;
       renderLast(); renderTri();
       if (!rm()) A(els.last, [{ opacity: 0 }, { opacity: 0, offset: .5 }, { opacity: 1 }], { duration: 420 });   // 結果框淡完才出「上一手」，不疊字（R-05a）
       rec.ui.lastline = els.last.textContent.replace(/\s+/g, ' ').trim();
+      if (tapWait) rec.held = true;
       emit('settled', evs);
       if (over) { await finish(over, v1, cl); return true; }
-      await wait(T_NEXT - T_LINE);
+      await wait(tapWait ? T_GO : T_NEXT - T_LINE);
       if (S.destroyed) return true;
       if (stagePr && typeof stagePr.then === 'function' && !S.rush) { /* 舞台演完才換手（最多再等 400 ms） */ await Promise.race([stagePr.catch(() => {}), wait(400)]); }
       // ---- t=2060：下一手（提示句換字、手數加一）
@@ -1452,7 +1551,7 @@
       S.v = v1;
       // 牌桌兩張搬進上一手小列（第一次＝長出來，版面縮一號；之後＝換掉）：先量大封面，換完版面再飛
       const bigE = rectOf(els.se.querySelector('.cv')), bigP = rectOf(els.sp.querySelector('.cv'));
-      if (S.table && S.table.e && S.table.p) { S.lpd = { e: lpSnap(S.table.e), p: lpSnap(S.table.p) }; S.lpOn = !!(S.lpd.e && S.lpd.p); }
+      if (S.table && S.table.e && S.table.p) { S.lpd = { e: lpSnap(S.table.e), p: lpSnap(S.table.p), n: cl.n }; S.lpOn = !!(S.lpd.e && S.lpd.p); }
       S.lpFade = false;
       if (S.table) S.table.dim = true;
       S.speed = baseSpeed(); setSpeed(S.speed); S.rush = false;
@@ -1543,7 +1642,7 @@
       if (!l || S.v.over) return;
       S.lastCt = clashText(l, T, hints, l && 'apex' in l ? apxUI() : undefined);
       S.table = { e: { card: l.eCard, attr: l.eAttr, star: l.eStar, ace: !!l.eAce }, p: { card: l.pCard, attr: l.pAttr, star: l.pStar, ace: !!l.ace }, dim: true };
-      S.lpd = { e: lpSnap(S.table.e), p: lpSnap(S.table.p) }; S.lpOn = !!(S.lpd.e && S.lpd.p);   // 上一手小列一開始就在
+      S.lpd = { e: lpSnap(S.table.e), p: lpSnap(S.table.p), n: l.n }; S.lpOn = !!(S.lpd.e && S.lpd.p);   // 上一手小列一開始就在
     }
     initialTable();
     renderAll();
@@ -1605,6 +1704,9 @@
     function destroy() {
       S.destroyed = true;
       document.removeEventListener('click', onDocClick);
+      document.removeEventListener('keydown', onDocKey);
+      if (S.rc) { const r = S.rc; S.rc = null; try { r.el.remove(); } catch (_) {} }
+      if (S.hold) try { S.hold.done(); } catch (_) {}   // 停住中被拆掉：放掉 play() 那個 await（它看到 destroyed 就收工）
       tags(false);
       S.timers.forEach(h => clearTimeout(h)); S.timers.clear();
       S.anims.forEach(a => { try { a.cancel(); } catch (_) {} }); S.anims.clear();
@@ -1692,6 +1794,14 @@
       },
       hold: onOff => hold(onOff !== false),
       held: () => S.held,
+      // 11-17 上一手詳情／這場紀錄：recap('hand', n)｜recap('list')｜recap(false)＝關；recapReady()＝有東西可列（第 1 手揭曉後、不是教學）；
+      //   recapRows()＝面板用的每一列（n、clashText 的字、提示原句、雙方卡 id／屬性／星、打完的聲望）；waiting()＝停住等點中
+      recap: (v, k) => (v === false ? closeRecap() : openRecap(v || 'list', k)),
+      recapOpen: () => (S.rc ? { view: S.rc.view(), k: S.rc.view() === 'hand' ? S.rc.k() : null } : null),
+      recapReady: () => recapOn() && (S.shown | 0) > 0,
+      recapRows: () => recapRows().map(r => ({ n: r.n, ct: r.ct, hint: r.hint, hp: r.hp,
+        e: { id: r.e.card ? r.e.card.id : null, attr: r.e.attr, star: r.e.star, ace: r.e.ace }, p: { id: r.p.card ? r.p.card.id : null, attr: r.p.attr, star: r.p.star, ace: r.p.ace } })),
+      waiting: () => !!(S.hold && S.hold.tap),
       apex: open => (open === false ? closeApex() : open === true ? (S.apxOpen || openApex()) : apexTap()),   // 頂點卡試做：開／收能力框
       fireApex: () => fireApex(),
       tri: lit => { S.triForce = lit == null ? null : [].concat(lit); renderTri(); },
@@ -1702,7 +1812,8 @@
         phase: S.phase, n: S.v.n, view: S.v, sel: S.sel, open: S.sel ? S.sel.i : null, lay: S.lay, hand: S.handGeom || null, busy: S.busy, held: S.held, speed: S.speed, enterDone: S.enterDone, rush: S.rush,
         ui: snapUI(), hands: S.debug.hands.map(h => ({ n: h.n, sel: h.sel, evs: h.evs, ct: h.ct, ui: h.ui })), last: S.debug.hands[S.debug.hands.length - 1] || null,
         log: S.debug.log.slice(), ms: S.debug.lastMs || null, cls: root.className,
-        readRun: S.readRun, sounds: S.sounds.slice(), endTx: S.endTx || null, stamp: { text: txt(els.kost.querySelector('b')), sub: txt(els.kost.querySelector('small')), chip: txt(els.kost.querySelector('.chip')), cls: els.kost.className },
+        readRun: S.readRun, sounds: S.sounds.slice(), endTx: S.endTx || null,
+        hold: S.hold ? (S.hold.tap ? 'tap' : 'read') : null, holdOn: holdOn(), shown: S.shown | 0, recap: S.rc ? { view: S.rc.view(), k: S.rc.k() } : null, stamp: { text: txt(els.kost.querySelector('b')), sub: txt(els.kost.querySelector('small')), chip: txt(els.kost.querySelector('.chip')), cls: els.kost.className },
       }),
     };
     if (qs.get('debug') === '1') window.__dl = api;
@@ -1719,6 +1830,7 @@
     hold: onOff => (CUR ? CUR.api.hold(onOff) : 0),
     play: act => (CUR ? CUR.api.play(act) : Promise.resolve(false)),
     tri: lit => { if (CUR) CUR.api.tri(lit); },
+    recap: (v, k) => (CUR ? CUR.api.recap(v, k) : false),
     autoplay: policy => (CUR ? CUR.api.autoplay(policy) : false),
     stopAuto: () => { if (CUR) CUR.api.stopAuto(); },
     rerender: () => { if (CUR) CUR.api.rerender(); },

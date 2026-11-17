@@ -1116,6 +1116,7 @@
     var cur = S.tip, r = S.tipRoot; if (!cur || !r) return;
     var ar = appRect(), tb = topBottom(), vh = W.innerHeight;
     var tg = null; for (var i = 0; i < cur.targets.length && !tg; i++) tg = visRect(resolveTarget(cur.targets[i]));
+    if (tg && document.querySelector('.dl .dl-rc')) tg = null;   // 11-17：上一手詳情／這場紀錄蓋住盤面時，提示框不圈被蓋住的東西
     var ring = r._.ring;
     if (tg) { var p = pad(tg, 3); ring.hidden = false; ring.style.left = p.left.toFixed(1) + 'px'; ring.style.top = p.top.toFixed(1) + 'px'; ring.style.width = p.width.toFixed(1) + 'px'; ring.style.height = p.height.toFixed(1) + 'px'; }
     else ring.hidden = true;

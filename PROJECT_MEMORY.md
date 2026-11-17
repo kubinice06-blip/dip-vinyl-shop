@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜game-lab 上一手細節：揭曉後停住等點、上一手詳情、這場紀錄
+
+- **店主 11-17**：「我覺得上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了，怎麼辦。」（現況實測：結果框只停約 1.1 秒、「上一手」那行再 0.6 秒，輪到你出牌時整句不見，只剩小列兩張小封面。）
+- **① 揭曉後停住等點**：結果框出現後不倒數，「點一下繼續 ▼」；點盤面任何地方（含牌桌兩張大封面；按住封面＝唱片資訊、發燒配件＝說明）、盤面外的舞台、Enter＝繼續，放行後直接換手（不再停「上一手」那行）；最後一手也停（點了才出大章）。⏸ 加「揭曉後自動換手」（`save.settings.autoNext`，預設關）。`?fast=1`、教學、autoplay、`__lab.duelLab`（沒給 `hold:true`）、dev harness 照原本時序。
+- **② 上一手詳情**：點上一手小列＝蓋住盤面的面板（‹ 第 n 手／6 ›［全部］✕、提示原句、雙方封面 84 px＋屬性星＋專輯藝人、唬你／看穿／讀到那句→規則句＋扣分→第三行→小字逐條、這手打完雙方聲望）；按住小列照舊＝唱片資訊；教學那場點小列照舊＝唱片資訊。
+- **③ 這場紀錄**：頂欄「紀錄」（第 1 手揭曉後才出、教學不出）每手一行（籤：被唬／看穿／被讀到、結果詞、扣分），點一行＝那手詳情；只列已揭曉的手。打完存 `run.lastFight`（序章不存、下一場換掉、重新整理還在），領獎、說情那段、結算畫面頂欄「紀錄」開 modal。
+- **資料**：engine `duel.log` 每手純加 pId eId pStar eStar ace eAce by not rel notes script apex（不取亂數；sim 輸出跟改前一字不差）；新檔 `recap.js`（DipLabRecap）把 log 組回 clash 形狀交給 `clashText`，字全部是當時浮框的字，半指／不露不拿藏起來的計畫色判真假。
+- **審查修正（5 條，scratchpad `v5/recap/FIX.md`）**：停住時點牌桌兩張大封面（或兩張中間的縫，觸控校正會吸到封面）原本開唱片資訊不放行 → 改成放行（按住才開資訊）；全域 `.sw`（⏸ 開關鈕）套到「看穿」→ recap 的 class 改 `saw`；打完的大章 `.kost`（z 25）壓在紀錄面板上 → 面板 z 26；改版前的舊存檔 log 沒有 `by`，「他剋不動」寫成反方向 → `recap.js` 照三相剋推回 by（舊存檔半指那手沒有 `not` 會被判成「他照實出」→ 查句庫推回，查不到就不判）；詳情底列「打完」易讀成整場 → 「這手打完」。
+- **主要檔案**：`game-lab/{engine.js,recap.js（新）,duel.js,duel.css,ui.js,style.css,content.js,tutorial.js,index.html（?v=80）,README.md,LINES-REVIEW.md,dev/duel-harness.html}`、`game-lab/tools/{check-content,lint-copy}.mjs`、`game-lab/test/engine.test.mjs`（section 25）、`game-lab/tests/{e2e-recap（新）,e2e-duel,e2e-lib,e2e.spec}.mjs`。設計 scratchpad `v5/recap/DESIGN.md`、施工 `v5/recap/build.md`。
+- **驗證**：check-content／lint-copy／check-shops／check-covers；engine 2,739,747、tutorial 505,169、shop、hit、chars 全過；e2e（390、375）recap 23/23、duel 121、prologue 52×2、intro 25、apex 37、unlock 12、econ 54、taps 28，e2e.spec 390 50/50。審查修正後重跑：check-*／lint-copy、單元測試全過；e2e-recap 390 13/13、375 13/13（R2 改按住、新 R2b：點他封面／縫／你封面＝放行、不開唱片資訊）、e2e-duel 390＋375 121/121、e2e.spec 390 50/50。
+
 ### 2026-11-17｜dip-vinyl-shop｜Newtone downtempo 定案 506 張，排在簡介修正之後
 
 - **店主**：「506 張全上，但先解決現在的問題吧。」→ 恍惚 356＋頹靡 150 預估格全收（勾選頁 db `skip` 0 筆），等嚴重簡介重寫線收尾再開，照 `dip-card-create`＋`general-desc-base.md`＋藝人介紹。

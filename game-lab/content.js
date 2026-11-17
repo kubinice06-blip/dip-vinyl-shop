@@ -1010,7 +1010,7 @@
     tip_block: '差 2 星以上，剋不動。',
     tip_ace: '王牌 7 星，一場用一次。',
     tip_rounds: '六手沒分勝負，比聲望條剩幾成。',
-    tip_lastplay: '上一手留在上面，點封面看唱片資訊。',   // 店主 11-16「打完要把上一手的專輯留在檯面上」：小封面很小，教玩家點得開（17 字：375／360 寬泡泡也是一行）
+    tip_lastplay: '上一手留在上面，點開看細節。',   // 店主 11-16「打完要把上一手的專輯留在檯面上」；11-17 點一下改開上一手詳情（按住照舊是唱片資訊）
     // 11-17 讀牌加難（DESIGN §2.3）：客人會讀你上一手、提示分級、被唬到多扣
     tip_read: '他會記得你上一手怎麼出。',
     tip_half: '這句只說他不出哪一種。',
@@ -1019,7 +1019,7 @@
   };
   C.coachTipWhen = {
     tip_mirror: '第一次同色比星（含同色同星）', tip_bluff: '第一次被唬', tip_block: '第一次剋不動（你或他）',
-    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手', tip_lastplay: '第一次出現上一手小列（第 2 手）',
+    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手', tip_lastplay: '第一次出現上一手小列（第 2 手；點開＝上一手詳情）',
     tip_read: '第一次被他讀到（他照你上一手的應付方式剋你）', tip_half: '第一次看到半指的提示（只說他不出哪一種）', tip_none: '第一次看到不露的提示（這手沒給提示）',
     tip_hit: '第一次被唬到多扣'
   };
@@ -1048,13 +1048,22 @@
     tapOn: '點一下繼續',   // 唬你／剋不動的結果框停住時（店主 11-12：看不清楚被唬了什麼）
     // 讀對了就說出來（第 A 波 4，規劃書三＋四 ①）：剋中他（照實出）結果句前加 readRight；他唬人、你照他真正出的剋中＝seeThrough（取代「他唬你！」那句）
     readRight: '讀對了。', seeThrough: '你看穿了！『{key}』是{hint}，他出的是{e}。', seeThroughNoKey: '你看穿了！提示是{hint}，他出的是{e}。',
-    lpAria: '上一手{who}丟的：{t}，點一下看唱片資訊',   // 上一手小列的讀屏字（店主 11-16）；{who}＝他／你，{t}＝藝人《專輯》
+    lpAria: '上一手{who}丟的：{t}，點一下看這手細節，按住看唱片資訊',   // 上一手小列的讀屏字（店主 11-16；11-17 點一下改開上一手詳情）；{who}＝他／你，{t}＝藝人《專輯》
+    lpAriaInfo: '上一手{who}丟的：{t}，點一下看唱片資訊',   // 教學那場：小列點一下照舊開唱片資訊（教學不開上一手詳情）
     // 11-17 讀牌加難（DESIGN §2.3）：結果句不念關鍵字（背對照表沒得背；上面 bluff／honest／seeThrough 那幾句只剩教學那場用）。{e}＝他出的
     //   honestPlain＝他照實（明指；半指＝他沒出他說不出的那色）；bluffPlain＝他唬你；seeThroughPlain＝你剋中他真正那張；
     //   readHit＝他照你上一手的應付方式剋你（clash why read／readHonest），l3 依你上一手：readCounter 照提示剋／readMirror 跟提示同色／readThird 防他唬人
     honestPlain: '他照實出。', bluffPlain: '他唬你！他出的是{e}。', seeThroughPlain: '你看穿了！他出的是{e}。',
     readHit: '他讀到你了！他出的是{e}。',
-    readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。'
+    readCounter: '你上一手照提示剋，他就在等這招。', readMirror: '你上一手跟提示同色，他換了一招。', readThird: '你防他唬人，他偏偏照實來。',
+    // 11-17 上一手細節（店主「上一場發生了什麼事的細節還是來不及看清楚，一閃就沒了」；scratchpad v5/recap）：
+    //   揭曉後停住等點（tapOn 那行）；點上一手小列＝上一手詳情；頂欄「紀錄」＝這場每一手一行。結果字一律是上面那些結果句（recap.js 經 clashText 重排），這裡只有面板的框字
+    //   rcHand／rcOf＝詳情頂列「第 n 手／6」；rcAfter＝這手打完雙方的聲望（log 的 pHp／eHp；不單寫「打完」：遊戲裡多指整場，審查 11-17）；rcCounter…rcTie＝紀錄每列的結果詞；rcBluff／rcSaw／rcRead＝籤（＝結果句的唬你／看穿／讀到）
+    rcLink: '紀錄', rcList: '這場紀錄', rcListDone: '上一場紀錄', rcCount: '{n} 手', rcAll: '全部', rcEmpty: '第 1 手揭曉後才有紀錄。',
+    rcHand: '第 {n} 手', rcOf: '／{max}', rcAfter: '這手打完　你 {p}／{pm}　他 {e}／{em}', rcVs: '對', rcNone: '不扣',
+    rcCounter: '你剋中', rcCountered: '被他剋', rcGapYou: '剋不動', rcGapHim: '他剋不動', rcMirrorWin: '比星贏', rcMirrorLose: '比星輸', rcTie: '平手',
+    rcBluff: '被唬', rcSaw: '看穿', rcRead: '被讀到',
+    rcPrev: '前一手', rcNext: '後一手', rcClose: '關閉', rcCover: '{t}，點一下看唱片資訊'
   };
   C.duelTextTag = '新';
   // 牌桌小抄（點相剋圖打開；店主 11-12）：[左欄, 右欄]，左欄寫全名；duel.js 只把屬性第一個字上色、第二個字黑、剋灰（店主 11-12）
