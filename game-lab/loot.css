@@ -1,0 +1,95 @@
+/* game-lab/loot.css：第 C 波 戰利品列＋藏家寶箱（loot.js；SPEC-C §4.1、§4.2）。前綴 lt-；面板沿用 .lb-sheet.reward、格子沿用 .lb-rgrid／.lb-ct。
+ * WebKit：翻牌只用 2D（scaleX），不用 backface-visibility／3D；浮層一律 pointer-events:none；減少動態＝不飛不彈、直接亮。
+ */
+/* ---------- 三張（寶箱踢館帖撐完四張） ---------- */
+.lt-sheet .lt-area{position:relative;flex:none;}
+.lt-sheet .lt-row{margin-top:8px;}
+.lt-row.n3{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px;}
+.lt-row.n4{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px;}
+.lt-row.hold .lt-c{visibility:hidden;}
+.lt-area.shut .lt-row{visibility:hidden;}
+.lt-c .lt-face{position:relative;display:block;width:100%;aspect-ratio:1/1;padding:0;flex:none;}
+@supports not (aspect-ratio:1/1){.lt-c .lt-face{height:0;padding-top:100%;}}
+.lt-c .lt-face>.lb-cv{position:absolute;left:0;top:0;width:100%;height:100%;aspect-ratio:auto;padding:0;}
+.lt-c .lt-face{transition:transform .11s ease-in;}
+.lt-c.turn .lt-face{transform:scaleX(0);}
+.lt-c.up .lt-face{animation:ltOpen .12s ease-out;}
+@keyframes ltOpen{0%{transform:scaleX(0);}100%{transform:none;}}
+.lt-c.down .ar,.lt-c.down .al,.lt-c.down .lt-st{visibility:hidden;}
+.lt-c .lt-st{display:block;margin-top:3px;font-size:11px;}
+/* 卡背：一張黑膠（蓋著的時候整張就是「點一下翻開」的鈕，≥44×44） */
+.lt-back{background:#1b1b1b;border:1px solid var(--ink);overflow:hidden;cursor:pointer;}
+.lt-back .rec{position:absolute;left:11%;top:11%;width:78%;height:78%;border-radius:50%;background:repeating-radial-gradient(circle,#2c2c2c 0 1px,#141414 2px 3px);box-shadow:0 0 0 1px #3a3a3a;}
+.lt-back .rec::after{content:'';position:absolute;left:35%;top:35%;width:30%;height:30%;border-radius:50%;background:var(--red);box-shadow:inset 0 0 0 3px #e9d9b0;}
+.lt-back:active .rec{transform:scale(.96);}
+/* 金邊盤（鎮店盤格 C 波也畫成金邊）：蓋著就有一圈金邊；翻開多一圈光＋火花 */
+.lt-c.gold .lt-face{box-shadow:0 0 0 3px var(--gold),0 0 12px 2px rgba(240,199,94,.85);}
+.lt-c.gold.down .lt-back{background:#241c08;}
+.lt-c.gold.down .lt-back .rec::after{background:var(--gold);}
+.lt-c.spark .lt-face::before{content:'';position:absolute;left:-10px;top:-10px;right:-10px;bottom:-10px;z-index:7;pointer-events:none;
+  background:radial-gradient(circle at 15% 20%,#fff3c4 0 2px,transparent 3px),radial-gradient(circle at 85% 15%,#ffe08a 0 2px,transparent 3px),
+    radial-gradient(circle at 90% 80%,#fff3c4 0 2px,transparent 3px),radial-gradient(circle at 10% 85%,#ffe08a 0 2px,transparent 3px),radial-gradient(circle at 50% 2%,#fff 0 2px,transparent 3px);
+  animation:ltSpark .8s ease-out forwards;}
+@keyframes ltSpark{0%{opacity:0;transform:scale(.7);}25%{opacity:1;}100%{opacity:0;transform:scale(1.15);}}
+/* 角落「↑」：收了包包會變強（bagScore 會漲）才畫 */
+.lt-up{position:absolute;right:-5px;top:-5px;z-index:8;width:20px;height:20px;border-radius:50%;background:var(--win);color:#fff;font:700 13px/20px var(--mono);text-align:center;box-shadow:0 0 0 2px #fff;pointer-events:none;}
+/* 一樣一樣跳出來（啵） */
+.lt-c.pre,.lt-it.pre{opacity:0;transform:scale(.6) translateY(10px);}
+.lt-c.in,.lt-it.in{animation:ltPop .24s cubic-bezier(.3,1.6,.6,1) both;}
+@keyframes ltPop{0%{opacity:0;transform:scale(.6) translateY(10px);}100%{opacity:1;transform:none;}}
+.lt-sheet .lt-skip{min-height:48px;}
+.lt-sheet .foot.rel>.lt-skip{flex:0 0 34%;align-self:flex-end;padding:8px 6px;}
+.lt-sheet .note{margin-top:4px;}
+
+/* ---------- 藏家寶箱：面板裡一只木箱（點一下或 1.2 秒自己掀） ---------- */
+.lt-crate{position:absolute;left:0;top:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:4;background:#fff;}
+.lt-crate .box{position:relative;width:112px;height:84px;}
+.lt-crate .body{position:absolute;left:0;right:0;bottom:0;height:62px;background:#9a6332;border:3px solid #3b2410;
+  background-image:linear-gradient(#7d4d22,#7d4d22),linear-gradient(#7d4d22,#7d4d22),linear-gradient(90deg,transparent 46%,#c79a3a 46%,#c79a3a 54%,transparent 54%);
+  background-size:100% 3px,100% 3px,100% 100%;background-position:0 18px,0 38px,0 0;background-repeat:no-repeat;}
+.lt-crate .lid{position:absolute;left:-5px;right:-5px;top:4px;height:22px;background:#b0753c;border:3px solid #3b2410;transform-origin:8% 100%;transition:transform .3s ease-in,opacity .3s;}
+.lt-crate .cap{font:700 12px var(--zh);color:var(--gray2);letter-spacing:.06em;}
+.lt-crate:active .box{transform:translateY(1px);}
+.lt-crate.open .lid{transform:translateY(-14px) rotate(-24deg);opacity:0;}
+.lt-crate.open{opacity:0;transition:opacity .3s .1s;pointer-events:none;}
+.lt-sheet.chest .lt-crate .box{animation:ltDrop .34s cubic-bezier(.4,1.5,.6,1) both;}
+@keyframes ltDrop{0%{transform:translateY(-26px);opacity:0;}100%{transform:none;opacity:1;}}
+
+/* ---------- 面板頂邊的演出層（掛在 #app，top＝舞台下緣；ui.js overlay） ---------- */
+.lt-fx{position:absolute;left:0;right:0;height:0;z-index:8;pointer-events:none;}
+.lt-cap{position:absolute;left:50%;bottom:46px;-webkit-transform:translateX(-50%);transform:translateX(-50%);max-width:92%;padding:4px 12px;background:rgba(17,17,17,.84);color:#fff;
+  font:700 13px/1.5 var(--zh);letter-spacing:.06em;white-space:nowrap;transition:opacity .35s;}
+.lt-cap.out{opacity:0;}
+.lt-drops{position:absolute;left:8px;right:8px;bottom:8px;display:flex;justify-content:center;flex-wrap:wrap;gap:6px;}
+.lt-it{display:inline-flex;align-items:center;gap:5px;padding:2px 8px 2px 5px;background:#fff;border:1px solid var(--ink);box-shadow:0 2px 6px rgba(0,0,0,.2);
+  font:700 11px/18px var(--mono);white-space:nowrap;}
+.lt-it.gone{visibility:hidden;}
+.lt-it .ic{position:relative;display:inline-block;flex:none;width:14px;height:14px;}
+.lt-it.bag .ic{border-radius:45% 45% 50% 50%;background:var(--gold);box-shadow:inset 0 -3px 0 #8a6508;}
+.lt-it.bag .ic::before{content:'';position:absolute;left:4px;top:-3px;width:6px;height:4px;background:#8a6508;}
+.lt-it.bag b{color:var(--win);}
+.lt-it.note .ic::before{content:'';position:absolute;left:3px;top:9px;width:6px;height:5px;border-radius:50%;background:var(--o);}
+.lt-it.note .ic::after{content:'';position:absolute;left:7px;top:1px;width:2px;height:10px;background:var(--o);box-shadow:2px 0 0 var(--o);}
+.lt-it.note b{color:var(--o);}
+.lt-it.pk .ic{width:11px;background:var(--red);box-shadow:inset 0 -5px 0 #a00e1e;}
+.lt-it.pk .ic::after{content:'';position:absolute;left:3px;top:5px;width:5px;height:5px;border-radius:50%;background:#f0c75e;}
+.lt-it.pk b{color:var(--red);font-family:var(--zh);}
+
+/* 經驗跳數字（ui.js xpRise；錢那條下面） */
+.lb-toast.xp{display:flex;align-items:baseline;gap:10px;padding:5px 14px;}
+.lb-toast.xp .ce{font:700 13px var(--mono);color:var(--o);}
+.lb-toast.xp .cv{font:700 14px/1 var(--zh);color:var(--ink);letter-spacing:.02em;}
+
+@media (max-height:600px){
+  .lt-row.n3{gap:6px 14px;padding:0 10px;}
+  .lt-sheet .lt-row .lb-ct .ar{display:none;}
+  .lt-sheet .lt-row .lb-ct .lb-pickb{min-height:40px;}
+  .lt-sheet .note{display:none;}
+}
+@media (prefers-reduced-motion: reduce){
+  .lt-c .lt-face{transition:none;}
+  .lt-c.up .lt-face,.lt-c.in,.lt-it.in,.lt-sheet.chest .lt-crate .box{animation:none;}
+  .lt-c.pre,.lt-it.pre{transform:none;}
+  .lt-c.spark .lt-face::before{display:none;}
+  .lt-cap{transition:none;}
+}
