@@ -2190,3 +2190,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-084.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 30 處。
+
+## sd-085（30 張，其餘：Quatuor Diotima、Quilapayún、Rabit、Radar 2、raison d'être 2、Random Rab、Ali／Jenkins、Ravi Coltrane、Ray & Ina Patterson、Refrigerator、Renee Rosnes 4、Ressurection 2、Retsin、Reuben Wilson 3、Bernard Avant、Revolutionary Dub Warriors、Rheinallt H. Rowlands、Groove Holmes 2、Beirach、Margitza、Riow Arai）— s45
+
+- 研究：3 支 Sonnet，WebSearch 12＋13＋14＝39 次；none 有 Radar 兩張 story／sound、raison d'être《Stains》sound、Riow Arai story。
+- **主線補查**（WebSearch 約 9 次＋Discogs API＋WebFetch，facts 標【主線補查】）：Radar 兩張（愛沙尼亞文維基：Jaak Joala 伴奏團出身、1982–84 塔爾圖大獎、1985 最佳器樂團、1986 布拉提斯拉瓦、1987 年 10 月布達佩斯最後一場；Discogs API：《Trofee》1984 塔林錄音與編制、無主唱 credit）；Quilapayún 5（西文維基：十三首多半器樂、Carrasco 器樂曲、Bach 改編、探戈——以器樂為主就是這張的概念；官網 q5 頁下線、archive.org 被擋）；raison d'être《Stains》（noisereceptor 樂評：修道院式吟唱、金屬刮擦、零星鋼琴與弦樂銅管）→ sound ok；Riow Arai（Bandcamp 只有標籤與發行日）；Beirach（確認 Tusa／Williams，非 Mraz）；Rabit（Roman Candle 短文無實質）。
+- **薄寫上線不留置**（delayde 前例）：Radar 2 張、Random Rab、Ray & Ina Patterson、Renee Rosnes《Without Words》、Ressurection 同名 EP、Retsin、Bernard Avant、Rheinallt H. Rowlands、Beirach、Riow Arai。
+- 事實裁定：Simaku 是 Thomas Simaku（派工特注寫 Xenakis 師承是協調端誤記），Diapason／Classica 評語只有二手轉述不寫；Ali／Jenkins 寫「1975 年錄音、1976 年發行」；Random Rab 年份 2011／2012 兩說不寫；Ressurection 是新澤西 Edison 硬核團，預算 200 美元寫「據廠牌介紹」；Rosnes 同名作 Hancock 彈鋼琴（舊稿合成器錯）；〈Happy Together〉是 1967 年 The Turtles；Avant「八首自寫、Dave Clark 製作」未查證不寫；Beirach 不寫 Badal Roy、原田和男、稲岡邦弥；Riow Arai 不把《Mind Edit》的描述套到本張；Rowlands 不寫 Oz 車禍。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 26 處，改動檔 `review-sd-085.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Quilapayún 5 | quena、zampoña、charango 改寫成「樂團慣用」；刪「Allende 政府文化大使」壓字數 | 樂器出自團史，非特指本張 |
+| Radar《Baltic Coast》 | 「也是最後一年的錄音」→「解散那年發行」 | 錄音年份無來源 |
+| Simaku、Rabit、Stains、Ali／Jenkins、Refrigerator、Rosnes 2、Ressurection、Avant | 第二句「這是／這張」改《盤名》，隨之刪次要句壓字數（Simaku 約克錄音與終樂章噪音、Rabit 客座人聲、Stains 計畫通論、Ali Coltrane 經歷與兩句聲音、Refrigerator Shrimper 起家、As We Are Now「大半自作」、Avant 副牌宗旨） | QA 無《》、字數 |
+
+其餘逐張四問無改：鉤子都對過研究稿（為 Diotima 量身寫、抗議歌團大半不開口、向 DJ Screw 致敬、布達佩斯最後一場、伴奏團拿最佳器樂團、三十週年與榮格陰影、九年沒有全新專輯、日出日落場次、店打烊後開錄、拆開再重組、醫院相識、郊區概念、旁遮普曲名、請前老闆、出道作客座、三重奏加弦樂、唯一全長、後來各團成員的起點、Rodan 解散後、R&B 流行曲改靈魂爵士、自寄 demo 給 Wolff、豎琴電西塔琴告別作、Pickett 改福音、低音與空間、虛構的歌手、整晚馬拉松、Prestige 與 Blue Note 都錄過、東京現場、羅姆小提琴家族、臥室一人錄完）。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號（QA 0 問題）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-085.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
+- 本工作階段 WebSearch 合計約 90 次（研究層 sd-084 34、sd-085 39，主線約 17）。
