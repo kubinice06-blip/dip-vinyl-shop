@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s7：sd-013、sd-014 上線（56 張，留置 4）
+
+- **結果**：sd-013 上線 27（留置山本精一《NOA》、Woody Herman＋北村英治《We》、なぎらけんいち《街の風になって》）；sd-014 上線 29（留置丘蒸汽《のすたるじあ》）。
+- **研究補強首跑**：研究層判 none／thin 的卡主線逐張 extended 補查，救回 12 張（ダッチャ、ヨシンバ、《グロー》、仲村裕美、中島光一、傻子與白痴、八城一夫、初山博、南正人、VANITAS命死、Kahuna 等）；留置的 4 張都跑完必查清單＋主線補查仍無專輯層級資料。身分裁定：リー・ウォンヒーイ＝高木元輝韓國名、鼓手菊池コージ。
+- **審稿**：sd-013 改 5 處、sd-014 改 6 處（刪再版／credit／冷知識、去比附），逐條在 `rulings.md`。WebSearch 工作階段約 158 次。
+- **主要檔案**：`batch-progress/desc-severe-20261117/{PLAN.md,rulings.md,kv-before-sd-013.json,kv-before-sd-014.json,review-sd-013.json,review-sd-014.json}`、`desc-tools/batches/{cards,research,output}/sd-013*、sd-014*`、onboarding manifest 56 處。
+- **驗證**：`kv-token-check` exit 0；KV desc2／desc4 112 鍵逐字回讀 112/112 一致；`front-check` 前台 56/56 新稿、CURATED 0；QA 無軌序／曲長／盤號（「来」為盤名日文）。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線 s6：sd-011、sd-012 上線（60 張，無留置）
 
 - **範圍**：sd-011（高中正義 10、高柳昌行、鷺巣詩郎 EVA 3、黃耀明《信望愛》、黑名單工作室《搖籃曲》、韓國 13 張）、sd-012（韓國 17、929、Beyond、怪顚、COHOL、vaporwave 網路音樂 5、Gauze、Lip Cream、Lizard 等）。

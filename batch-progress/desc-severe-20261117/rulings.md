@@ -285,3 +285,56 @@
 ### 上線
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-012.json`；30 張 60 鍵 bulk put；回讀 **60/60 一致**；`front-check` **前台 30/30 新稿**。
 - onboarding manifest 同步 30 處。
+
+## sd-013（30 張，CJK：NANIWA EXPRESS、Posh Inverse、PUZZLEMAN、Reol、Beirach＋富樫、山本精一、Lacy／高橋／小杉、The Players、記號士、THE SQUARE 2、VANITAS命死、Woody Herman＋北村英治、YAS-KAZ、ZAZEN BOYS、くるり、ずっと真夜中でいいのに。、なぎらけんいち、ひがしのひとし 2、カリオカ 4、カーネーション、Wave II、ジョージ大塚、スカイドッグ 2、ゼロ戦）— s7
+
+- 研究：3 支 Sonnet，WebSearch 19＋15＋15＝49 次；主線補查約 12 次（照「研究補強」對 thin／none 卡逐張補）。
+- **主線補查有收穫**：VANITAS命死《心の泉》（extended 找到原 Bandcamp 頁 `album/-`：「2019 年初遺失的 slushwave 專輯」、Aquablanca 75 卷卡帶）、Kahuna（jazzmusicarchives：1978-06-27 Victor Studios、一面鋼琴獨奏一面二重奏；舊稿「直刻盤」查無來源不寫）。
+- **留置 3 張**（KV 保留舊稿，必查清單四項＋主線 extended 補查都跑過）：山本精一《NOA》（只查到「NOA2 是第二張吉他獨奏盤」，本張無任何介紹）、Woody Herman, 北村英治《We》（日文維基只有一行年表，英文資料庫查無此名）、なぎらけんいち《街の風になって》（只有曲目與 URC 第二張的定位，聲音、故事皆無）。
+- 薄寫照收：カリオカ《Kartik》197（sound none，只寫四人無客席與轉投 Polydor，不編聲音）。
+- 身分／事實裁定：Gong Show 不寫廠牌（徳間 vs. Wax 矛盾）；Wave II 不寫錄音年月（1986 vs. 1987-05 矛盾）；ゼロ戦不寫「十四位樂手」、不寫タンタン擔任主唱；スカイドッグ同名盤不寫年份與廠牌。
+- QA：「来」出自盤名《北27西4 札幌へ来てから》，非簡體；fix-spacing 對「ACAね」的提示不採用（藝名）。
+
+### 主線審稿（2026-11-17，逐張 27 張，改 5 處，改動檔 `review-sd-013.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| naniwa express\|大宇宙無限力神 | 「樂團被視為」→「樂團常被視為」 | 評價句式 |
+| reol\|美辞学 | 刪 nqrse 再度客座 | 客演履歷雜項 |
+| the square\|うち水にrainbow | 刪「最後一次在原創專輯放翻奏曲」 | 冷知識 |
+| zazen boys\|らんど | 刪「常被視為樂團現體制留名的作品」 | 語意不明的地位句 |
+| ひがしのひとし\|はじめてのシャンソン | 刪 2024 URC 名盤復刻 | 重發雜項 |
+
+其餘逐張四問無改：NANIWA、VANITAS、ひがしの兩張的聲音都已寫明是一貫風格；Distant Voices 樂器清單照收（就是聲音核心）。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-013.json`；27 張 54 鍵；回讀 **54/54 一致**；`front-check` **前台 27/27 新稿**。
+- onboarding manifest 同步 27 處（14 個檔）。
+
+## sd-014（30 張，CJK：ダッチャ、テルズ・シンフォニア 2、ネーネーズ、ヨシンバ、高木元輝＋菊池コージ、上田力、不失者 3、丘蒸汽、中島光一、中本マリ 3、今井和雄、仲村裕美、伴よしかず、佐藤允彦 MSB、佐藤博、傻子與白痴、光束夜 2、八十八顆芭樂籽、八城一夫、初山博、前川守賢、前田憲男＋Tin Pan Alley、割礼、南正人）— s7
+
+- 研究：3 支 Sonnet，WebSearch 11＋19＋19＝49 次；主線補查約 16 次（工作階段累計約 158 次）。
+- **主線補查救回 10 張研究層判 none／thin 的卡**（照「研究補強」：母語 extended 搜尋＋商品頁／部落格 WebFetch）：ダッチャ《26号線》（樂天部落格與 kesuike6：國道 26 號寫歌經過、ココナツ・バンク伴奏、The Band 式民謠搖滾）、ヨシンバ《042》（WebVANDA：武蔵美同學、喫茶ロック脈絡、042＝多摩局番）、《グロー》（Lee Won Hui＝高木元輝的韓國名，陸前高田ジョニー錄音，Universounds／inconstant sol）、仲村裕美《'S Wonderful》（ジャズ喫茶「松和」部落格：融合式標準曲改編）、中島光一《母と子の詩》（ameblo 長文：各曲的障礙者、戰爭題材）、傻子與白痴《Year of Fate》（Blow 兩篇）、八城一夫《Drivin'》（CDJournal＋松和）、初山博《スマイル》（Discogs＋disk union）、南正人《Lady Let Me Go》（disk union 重發文案）、前川守賢（參與歌手名單）。
+- **身分裁定**：卡單「リー・ウォンヒーイ＋菊他コージ」——リー・ウォンヒーイ是高木元輝的韓國名、鼓手是菊池コージ（Koji Kikuchi），卡單「菊他」疑誤植；簡介正文寫「菊池コージ」，卡名不動（seed 鍵不改）。英文維基標 1986 不採，取 1985（Johnny's Disk 原盤）。
+- **留置 1 張**（KV 保留舊稿）：丘蒸汽《のすたるじあ》——必查四項＋主線 extended 搜尋都無結果，只有 Discogs 版本資料；c121 藝人名冊也曾判不寫。
+- 不寫的舊稿說法：中本マリ「Swing Journal 日本人聲賞」與 Barry Miles／Don Grusin 分工數字、佐藤博《Time》作詞名單、Human Race Party 的 King Records 與「ヒューマニズム」概念、光束夜《1st》年份（1990 vs. 1991）、南正人細野晴臣名單（只取 disk union 名單）。
+- QA：「来」出自盤名《来たる時》，非簡體。
+
+### 主線審稿（2026-11-17，逐張 29 張，改 6 處，改動檔 `review-sd-014.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| テルズ・シンフォニア\|human race party | 刪 2013／2017 再版 | 再版雜項 |
+| 中本マリ\|tv | 刪伴奏樂隊掛名「Spanky」 | credit 雜項 |
+| 中本マリ\|tv | 刪 1987 Melodiya 授權 | 版本雜項 |
+| 光束夜\|1st | 刪 2003 PSF CD 再發加收曲 | 版本雜項 |
+| 光束夜\|ファースト・ライブ1979 … | 「這張是光束夜」→「《ファースト・ライブ1979 吉祥寺マイナー》是光束夜」 | 第一句要有盤名 |
+| 南正人\|lady let me go | 「搖滾色彩濃到可以和 Bob Dylan 相比，2018 年重發時被定位為他的代表作」→「搖滾色彩很重，常被視為他的代表作」 | 去比附、出處不寫進簡介 |
+
+其餘逐張四問無改：不失者三張的段落描述是聲音結構，不是軌序；《Allegorical Misunderstanding》只寫「比其他作品收斂」，不下優劣；ネーネーズ、前川守賢、今井和雄、割礼的聲音都寫明一貫風格；八十八顆芭樂籽金曲、金音只寫入圍。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-014.json`；29 張 58 鍵 Success；回讀 **58/58 一致**；`front-check` **前台 29/29 新稿**。
+- onboarding manifest 同步 29 處。
