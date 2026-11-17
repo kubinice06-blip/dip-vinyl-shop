@@ -244,7 +244,7 @@ async function P1(w, h, size) {
         cont: !!document.querySelector('[data-a=cont]'), ro: !!document.querySelector('.lb-foot.ro') };
     });
     const left = slugHits(a.raw);
-    record('P1-1', size, a.v === 7 && a.vRaw === 7 && left.length === 0 && oldN > 0,
+    record('P1-1', size, a.v === 8 && a.vRaw === 8 && left.length === 0 && oldN > 0,
       `v6 存檔 ${oldN} 個舊 slug → v ${a.v}（存檔字串 v ${a.vRaw}），剩舊 slug ${left.length} 個${left.length ? '：' + left.slice(0, 3).join('、') : ''}`);
     const pg = await shelfPage(page);
     record('P1-2', size, !!pg && pg.own === fx.nOwn && pg.known === fx.nKnown,
@@ -266,11 +266,11 @@ async function P1(w, h, size) {
     const done = await winGuest(page);
     const fin = await page.evaluate(() => { const raw = localStorage.getItem('dipGameLab_v1'); const s = JSON.parse(raw); return { raw, v: s.v, pos: s.run && s.run.pos }; });
     const left2 = slugHits(fin.raw);
-    record('P1-5', size, done && fin.v === 7 && fin.pos === fx.pos + 1 && left2.length === 0 && !errs(page).length,
+    record('P1-5', size, done && fin.v === 8 && fin.pos === fx.pos + 1 && left2.length === 0 && !errs(page).length,
       `繼續 → 打完這一位 ${done}（存檔第 ${fin.pos} 位、v ${fin.v}、舊 slug ${left2.length}）；${errTxt(page)}`);
     await openTitle(page, Q());
     const again = await page.evaluate(() => ({ v: window.__lab.save.v, bak: localStorage.getItem('dipGameLab_v1.bak6') }));
-    record('P1-6', size, again.v === 7 && again.bak === fx.raw6, `再整理：v ${again.v}、bak6 沒被覆寫 ${again.bak === fx.raw6}`);
+    record('P1-6', size, again.v === 8 && again.bak === fx.raw6, `再整理：v ${again.v}、bak6 沒被覆寫 ${again.bak === fx.raw6}`);
   } finally { await ctx.close(); }
 }
 
@@ -666,7 +666,8 @@ async function P9(w, h, size) {
   const base = URL0.replace(/\/game-lab\/[^/]*$/, '');
   const fb = await firstBytes(base);
   const kb = fb.gz / 1024;
-  record('P9-1', size, fb.files > 10 && kb <= FIRST_KB, `首屏 ${fb.files} 檔 gzip -9 合計 ${kb.toFixed(1)} KB（門檻 ${FIRST_KB}）；raw ${(fb.raw / 1024).toFixed(1)} KB；cards-pool.js ${((fb.per['cards-pool.js'] || 0) / 1024).toFixed(1)} KB gz`);
+  record('P9-1', size, fb.files > 10,   // 店主 11-17「我從沒有限定檔案上限」：首屏大小只印參考（門檻那個數只是對照），不算失敗
+    `首屏 ${fb.files} 檔 gzip -9 合計 ${kb.toFixed(1)} KB（參考 ${FIRST_KB}，不擋）；raw ${(fb.raw / 1024).toFixed(1)} KB；cards-pool.js ${((fb.per['cards-pool.js'] || 0) / 1024).toFixed(1)} KB gz`);
   if (size !== LOGIC_SIZE) return;
   const br = [], mn = [];
   for (let i = 0; i < P9_RUNS; i++) {
@@ -811,7 +812,7 @@ async function P1b(w, h, size) {
     await openTitle(page, Q());
     const m = await page.evaluate(() => { const S = window.__lab.save; return { raw: localStorage.getItem('dipGameLab_v1'), v: S.v, keys: Object.keys(S.shelf).sort(), run: !!S.run, runs: S.runs.length, own: Object.keys(S.shelf).filter(k => S.shelf[k].own).sort() }; });
     const wantKeys = [...new Set([ace, k1, k2].concat(C.gifts.hall))].sort();
-    record('P1b', size, oldN >= 3 && m.v === 7 && slugHits(m.raw).length === 0 && sameJ(m.keys, wantKeys) && !m.run && m.runs === 1 && m.own.includes(ace) && C.gifts.hall.every(g => m.own.includes(g)) && !m.own.includes(k1) && !errs(page).length,
+    record('P1b', size, oldN >= 3 && m.v === 8 && slugHits(m.raw).length === 0 && sameJ(m.keys, wantKeys) && !m.run && m.runs === 1 && m.own.includes(ace) && C.gifts.hall.every(g => m.own.includes(g)) && !m.own.includes(k1) && !errs(page).length,
       `v4（${oldN} 個舊 slug）→ v ${m.v}、剩舊 slug ${slugHits(m.raw).length}；唱片櫃 ${m.keys.length} 格＝那三格＋殿堂送的 ${sameJ(m.keys, wantKeys)}；擁有 ${m.own.length}；run 丟掉 ${!m.run}、nights→runs ${m.runs}；${errTxt(page)}`);
   } finally { await ctx.close(); }
 }
@@ -850,7 +851,7 @@ async function P1d(w, h, size) {
     await openTitle(page, Q());
     const r = await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return { v: s.v, low: s.shelf['david bowie|low'], dp: s.shelf['daft punk|random access memories'], d112: s.shelf['112|112'], want: s.want, keys: Object.keys(s.shelf).length,
       old: Object.keys(s.shelf).filter(k => k.indexOf('|') < 0), daily: localStorage.getItem('dipGameLab_v1.daily') }; });
-    const ok = r.v === 7 && !!r.low && r.low.own && r.low.src === 'run' && r.low.at === '20261104#1' && r.low.seen === true && !!r.dp && !r.dp.own && !!r.d112 && r.d112.own && r.d112.src === 'daily' &&
+    const ok = r.v === 8 && !!r.low && r.low.own && r.low.src === 'run' && r.low.at === '20261104#1' && r.low.seen === true && !!r.dp && !r.dp.own && !!r.d112 && r.d112.own && r.d112.src === 'daily' &&
       sameJ(r.want, ['daft punk|random access memories']) && r.keys === 4 && !r.old.length && r.daily === dl && !errs(page).length;
     record('P1d', size, ok, `Low 兩格合一 ${JSON.stringify(r.low)}；Daft Punk ${JSON.stringify(r.dp)}；daily log 補 112 ${JSON.stringify(r.d112)}；want ${JSON.stringify(r.want)}（兩種寫法合一、擁有了拿掉）；唱片櫃 ${r.keys} 格、舊鍵 ${r.old.length}；daily 鍵沒動 ${r.daily === dl}；${errTxt(page)}`);
   } finally { await ctx.close(); }
@@ -881,7 +882,7 @@ async function P1e(w, h, size) {
       await sleep(500);
       const b = await page.evaluate(() => { const R = window.__lab.run; return { eid: R.duelEnemy || (R.duel && R.duel.e.id), pos: R.pos, bins: R.shop.bins, deck: R.duel ? R.duel.e.deckIds.slice() : null }; });
       const pinOk = !!oldIds && !!a.rd && a.rd.pos === 3 && a.rd.id === eid && sameJ(a.rd.ids, oldIds) && !!b.deck && sameJ(b.deck.slice(0, oldIds.length), oldIds);
-      record('P1e-1', size, pend.type === 'retry' && a.v === 7 && a.pend && a.pend.type === 'retry' && a.pos === 3 && sameJ(a.bins, bins) && a.lot && menu && duel && b.eid === eid && b.pos === 3 && sameJ(b.bins, bins) && pinOk && !errs(page).length,
+      record('P1e-1', size, pend.type === 'retry' && a.v === 8 && a.pend && a.pend.type === 'retry' && a.pos === 3 && sameJ(a.bins, bins) && a.lot && menu && duel && b.eid === eid && b.pos === 3 && sameJ(b.bins, bins) && pinOk && !errs(page).length,
         `v6 待說情 → v ${a.v}、pending ${a.pend && a.pend.type}、第 ${a.pos} 位、架子＝catalogId 版 ${sameJ(a.bins, bins)}、補一檔貨 ${a.lot}、釘舊牌單 ${!!a.rd}；繼續 → 說情選單 ${menu} → 重打 ${duel}：同一位 ${b.eid === eid}（${b.eid}）、第 ${b.pos} 位、同一批貨 ${sameJ(b.bins, bins)}、牌單＝舊卡池那副 ${pinOk}；${errTxt(page)}`);
     } finally { await ctx.close(); }
   }
@@ -930,7 +931,7 @@ async function P1f(w, h, size) {
     await page.evaluate(() => window.__lab.jump(5)); await waitScreen(page, 'night'); await sleep(400);
     const b = await page.evaluate(() => { const E = window.DipLabEngine, C = window.DipLabContent, R = JSON.parse(JSON.stringify(window.__lab.run));
       E.startFight(R, C, {}); return { cls: E.classAt(R.pos), card: R.bossCard, tier: E.tierOfApex(C, R.bossCard), deck: R.duel.e.deckIds.includes(R.bossCard) }; });
-    const ok = oldN > 0 && a.v === 7 && slugHits(a.raw).length === 0 && a.apex && a.lastAceId === RALLIZES && a.aceId === RALLIZES && a.cur === RALLIZES && sameJ([...(a.unlock || [])].sort(), [...apex].sort()) && sameJ(a.won, [THRILLER]) &&
+    const ok = oldN > 0 && a.v === 8 && slugHits(a.raw).length === 0 && a.apex && a.lastAceId === RALLIZES && a.aceId === RALLIZES && a.cur === RALLIZES && sameJ([...(a.unlock || [])].sort(), [...apex].sort()) && sameJ(a.won, [THRILLER]) &&
       nn && b.cls === 'boss' && !!b.card && !!b.tier && b.deck && !errs(page).length;
     record('P1f', size, ok, `?apex=1 v6（${oldN} 個舊 slug）→ v ${a.v}、剩 ${slugHits(a.raw).length}；lastAceId ${a.lastAceId}、run.aceId ${a.aceId}（帶的 ${a.cur}）、unlock.apex ${JSON.stringify(a.unlock)}、acesWon ${JSON.stringify(a.won)}；來客 ${nn}；第 5 位藏家帶 ${b.card}（${b.tier}、在牌組 ${b.deck}）；${errTxt(page)}`);
   } finally { await ctx.close(); }
@@ -960,7 +961,7 @@ async function P1g(w, h, size) {
     if (relic) await jsClick(page, '.lb-sheet.relics [data-r]');
     const night = await advanceUntil(page, () => window.__lab.screen() === 'night', null, 60000);
     const z = await page.evaluate(() => ({ pro: window.__lab.run && window.__lab.run.prologue, bag: window.__lab.run ? window.__lab.run.bag.length : 0, raw: localStorage.getItem('dipGameLab_v1') }));
-    record('P1g', size, a.v === 7 && a.pro === 'pending' && a.can && a.ok && a.bargain.length === 6 && a.lot && toDuel && picked && card && relic && night && z.pro === 'done' && slugHits(z.raw).length === 0 && !errs(page).length,
+    record('P1g', size, a.v === 8 && a.pro === 'pending' && a.can && a.ok && a.bargain.length === 6 && a.lot && toDuel && picked && card && relic && night && z.pro === 'done' && slugHits(z.raw).length === 0 && !errs(page).length,
       `v6 序章途中 → v ${a.v}、prologue ${a.pro}、能挑特價箱 ${a.can}（${a.bargain && a.bargain.length} 張都在卡池 ${a.ok}）、一檔貨 ${a.lot}；挑特價箱 ${picked} → 對決 ${toDuel} → 撿唱片 ${card} → 配件 ${relic} → 來客 ${night}（prologue ${z.pro}、包包 ${z.bag}）；${errTxt(page)}`);
   } finally { await ctx.close(); }
 }
@@ -980,7 +981,7 @@ async function P2(w, h, size) {
     await openTitle(page, Q());
     const m = await page.evaluate(() => ({ raw: localStorage.getItem('dipGameLab_v1'), v: window.__lab.save.v, shelf: window.__lab.save.shelf, cont: !!document.querySelector('[data-a=cont]') }));
     const own = (id, src) => !!(m.shelf[id] && m.shelf[id].own && (!src || m.shelf[id].src === src));
-    const ok = oldN > 0 && m.v === 7 && slugHits(m.raw).length === 0 && m.cont && !!m.shelf[known] && !own(known) && C.gifts.hall.every(id => own(id, 'gift')) && C.gifts.heresy.every(id => own(id, 'gift')) &&
+    const ok = oldN > 0 && m.v === 8 && slugHits(m.raw).length === 0 && m.cont && !!m.shelf[known] && !own(known) && C.gifts.hall.every(id => own(id, 'gift')) && C.gifts.heresy.every(id => own(id, 'gift')) &&
       own(boss1, 'boss') && own(bossRun, 'boss') && own(ACE.heresy) && Object.keys(m.shelf).every(k => k.includes('|')) && !errs(page).length;
     record('P2', size, ok, `v5（${oldN} 個舊 slug）→ v ${m.v}、剩 ${slugHits(m.raw).length}；認識 ${known} 沒擁有 ${!own(known)}；殿堂／異端送的 src gift ${C.gifts.hall.every(id => own(id, 'gift')) && C.gifts.heresy.every(id => own(id, 'gift'))}；` +
       `藏家王牌 ${boss1}／${bossRun} src boss ${own(boss1, 'boss') && own(bossRun, 'boss')}；lastAce 那派 ${own(ACE.heresy)}；鍵全是 catalogId ${Object.keys(m.shelf).every(k => k.includes('|'))}；${errTxt(page)}`);

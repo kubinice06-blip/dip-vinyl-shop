@@ -20,7 +20,7 @@ export const URL0 = process.env.LAB_URL || ((process.env.LAB_BASE ? process.env.
 export const SIZES = (process.env.LAB_SIZES || '390x664,375x548,430x932,360x640').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 export const SEED = '20261106';
 export const Q = (extra = '&fast=1', seed = SEED) => `${URL0}?debug=1&seed=${seed}${extra}`;
-export const ALLOWED_LS = new Set(['dipGameLab_v1', 'dipGameLab_v1.bringKey', 'dipGameLab_v1.daily', 'dipGameLab_v1.bak6', 'dip:autoplay', 'dip:autoplay-consent', 'dipAutoplayHintSeen', 'dip:autoplay-hint']);
+export const ALLOWED_LS = new Set(['dipGameLab_v1', 'dipGameLab_v1.bringKey', 'dipGameLab_v1.daily', 'dipGameLab_v1.bak6', 'dipGameLab_v1.bak7', 'dip:autoplay', 'dip:autoplay-consent', 'dipAutoplayHintSeen', 'dip:autoplay-hint']);
 export const results = [];
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
 
