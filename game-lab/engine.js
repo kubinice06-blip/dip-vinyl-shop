@@ -197,6 +197,7 @@
   const HONESTY = { honest: { q: 1 }, sometimes: { q: 0.8 }, often: { q: 0.75 }, veteran: { q: 0.75 } };   // FIXLIST 10 平衡 R1（FIXLIST 11 H5-1 照用）
   const PLANNERS = { easy: { w: 0.45, nz: 2.4, mercy: false }, normal: { w: 0.6, nz: 1.4, mercy: true }, hard: { w: 0.7, nz: 0.8, mercy: true } };
   const DEFAULT_HINTS = { c: ['c1', 'c2', 'c3', 'c4', 'c5'], o: ['o1', 'o2', 'o3', 'o4', 'o5'], h: ['h1', 'h2', 'h3', 'h4', 'h5'] };
+  const HINT_SEEN_MAX = 200;                         // run.hintSeen 最多留幾句（舊的先丟；約 1.5 KB）
   // 台幣行情（FIXLIST 8＋X／Y 契約）：唱片照稀有度定價、特價箱每張照最高星、櫃檯配件一件 3000、賣回半價
   const ECON = { start: 1000, win: { prologue: 0, normal: 1500, elite: 2500, boss: 3750 },
     price: { common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 },
@@ -210,7 +211,11 @@
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
     curve: {
       planner: { easyTo: 2, normalTo: 4 },                                         // 第 1–2 位 easy、3–4 normal、5 起 hard
-      q: { easy: 0.75, normal: 0.75, feintBase: 0.18, feintStep: 0.05, feintFrom: 5, feintMax: 0.55 },   // hard：q＝1−min(.55, .18＋.05·max(0, 位−5))
+      q: { easy: 0.75, normal: 0.72, feintBase: 0.25, feintStep: 0.05, feintFrom: 5, feintMax: 0.40 },   // hard：q＝1−min(.40, .25＋.05·max(0, 位−5))（11-17 讀牌加難：原本 .75／.18／.55）
+      // 11-17 讀牌加難（scratchpad v5/harder DESIGN §2.2；＝content C.trial.curve.read／hintMix）：客人讀你上一手、兩種唬人、被唬到多扣；提示分級（明指／半指／不露）
+      //   from 0（或沒有）＝整條關掉（＝改版前）。content 一定要有這兩個鍵：trialCfg 只合併 TRIAL.curve 有的鍵
+      read: { from: 3, rho: { normal: 0.30, hard: 0.45, step: 0.02, max: 0.55, boss: 0 }, streakMul: 2, cap: 0.90, beta: 0.65, mercy: 0.7, hit: { from: 5, n: 1 }, watch: false },
+      hintMix: { half: { from: 3, normal: 0.15, hard: 0.20, step: 0.01, max: 0.30 }, none: { from: 6, base: 0.05, step: 0.02, max: 0.15 } },
       mercyFeint: 0.8,                                                              // 放水：唬人率 ×(1−0.8×mercy)（roguelike.html:3693-3695；easy 也吃）
       // 放水照位數機率（店主 11-16 選 C）：第 from 位以前每手都放水；之後每手照機率 p＝max(min, p0 − step×⌊(位−from)/every⌋) 才放水（mercyPAt）
       //   放水唬人（mercyFeint）所有出招難度都吃（easy 也算：主線 11-16「放水前期保留」，第 1–2 位 q 0.75 也會唬，你落後時他少唬）；出招變鈍只有 normal／hard（PLANNERS.mercy）
@@ -507,12 +512,32 @@
 
   // ---------- duel creation ----------
   function cardFrom(content, id) { const c = content && content.cards && content.cards[id]; if (!c) throw new Error('engine: missing card ' + id); return c; }
+  // 提示句表（只有 id）。content 有 hintLines（11-17 句庫）→ { one:{c,o,h}, half:{c,o,h}, none:[], voice:{id → 客人鍵} }：明指每色＝C.hints 那 5 句＋hintLines.one；
+  //   沒有 hintLines（舊 content）→ 舊形狀 {c,o,h}（startDuel 照舊選句，同種子一字不差）
   function hintTableOf(content) {
     const H = content && content.hints;
     if (!H || !ATTRS.every(a => Array.isArray(H[a]) && H[a].length)) return null;
-    const t = {}; for (const a of ATTRS) t[a] = H[a].map(h => (h && typeof h === 'object') ? h.id : h).filter(Boolean);
-    return t;
+    const idOf = h => (h && typeof h === 'object') ? h.id : h;
+    const t = {}; for (const a of ATTRS) t[a] = H[a].map(idOf).filter(Boolean);
+    const L = content.hintLines;
+    if (!L || typeof L !== 'object' || !L.one) return t;
+    const voice = {}, ids = arr => (Array.isArray(arr) ? arr : []).filter(x => x && x.id).map(x => { if (x.voice) voice[x.id] = x.voice; return x.id; });
+    const out = { one: {}, half: {}, none: ids(L.none), voice };
+    for (const a of ATTRS) { out.one[a] = t[a].concat(ids((L.one || {})[a])); out.half[a] = ids((L.half || {})[a]); }
+    return out;
   }
+  // 新形狀的表 → 這位客人那一份（對決只存這份：誰都會講的＋他自己的；別人的個性句不帶進來）
+  function hintTableFor(T, eid) {
+    const v = T.voice || {}, gen = ids => ids.filter(id => !v[id]), own = ids => ids.filter(id => v[id] && v[id] === eid);
+    const arr = x => (Array.isArray(x) ? x : []).filter(id => typeof id === 'string' && id);
+    const out = { one: {}, half: {}, none: gen(arr(T.none)), own: { one: {}, half: {}, none: own(arr(T.none)) } };
+    for (const a of ATTRS) {
+      out.one[a] = gen(arr((T.one || {})[a])); out.own.one[a] = own(arr((T.one || {})[a]));
+      out.half[a] = gen(arr((T.half || {})[a])); out.own.half[a] = own(arr((T.half || {})[a]));
+    }
+    return out;
+  }
+  const newHintTable = T => !!(T && T.one && ATTRS.every(a => Array.isArray(T.one[a]) && T.one[a].length));
   // enemyDef(content, id, {tutorial, pos, cls?, seedKey, runNo, playerAce, bossAce, planner}) — content enemy → eDef（§2.1.4）
   //   pos（無限試煉第幾位）：聲望、品味、底氣、出招難度、說真話機率照位數曲線（trialGuest；不再看角色），牌組照 trialDeck（eDef.ace＝他帶的王牌）；
   //     名字、小人、口頭禪、taste、誠實度的鍵照原角色。cls 沒給＝classAt(pos)
@@ -544,6 +569,12 @@
       if (main && mb > 0) d.mainBias = mb;                       // 出招偏主屬性（startDuel 存進 e.mainBias；beginHand 挑計畫時主屬性那色多算 mainBias 星）
       const mp = mercyPAt(content, pos, o.tier);
       if (mp < 1) d.mercyP = mp;                                // 第 11 位起：每手放水的機率（startDuel 存進 e.mercyP）
+      // 11-17 讀牌加難（trialGuest）：有才帶（startDuel 存進 e；沒有＝0／1＝改版前）
+      if (g.rho > 0) Object.assign(d, { rho: g.rho, rhoMul: g.rhoMul, rhoCap: g.rhoCap, rMercy: g.rMercy });
+      if (g.beta < 1) d.beta = g.beta;
+      if (g.half > 0) d.half = g.half;
+      if (g.none > 0) d.none = g.none;
+      if (g.hit > 0) d.hit = g.hit;
     }
     return d;
   }
@@ -585,7 +616,8 @@
         planner: eDef.planner || 'normal', coef: { w: co.w, nz: co.nz, mercy: !!co.mercy }, taste: tasteStr(eDef.taste),
         hp: eDef.hp, max: eDef.hp, atk: eDef.atk | 0, def: eDef.def | 0, deckIds: [], deckPub: [], pile: [], hand: [], thrown: [], last: null, deckSize: 0,
         main: ATTRS.includes(eDef.main) ? eDef.main : null },   // 客人主屬性（第 A 波 6；view.eMain「常出：冷門」）；沒有＝null
-      hintTable: opts.hintTable && ATTRS.every(a => Array.isArray(opts.hintTable[a]) && opts.hintTable[a].length) ? clone(opts.hintTable) : clone(DEFAULT_HINTS),
+      hintTable: newHintTable(opts.hintTable) ? hintTableFor(opts.hintTable, eDef.id)
+        : opts.hintTable && ATTRS.every(a => Array.isArray(opts.hintTable[a]) && opts.hintTable[a].length) ? clone(opts.hintTable) : clone(DEFAULT_HINTS),
       noteText: pDef.noteText ? Object.assign({}, pDef.noteText) : null,
       script: sc, plan: null, last: null, log: [],
       stats: { hands: 0, counter: 0, countered: 0, mirror: 0, tie: 0, blocked: 0, blockedYou: 0, bluffs: 0, honest: 0, caught: 0, ace: 0, relicNotes: 0 },
@@ -600,6 +632,15 @@
     // 放水照位數機率（第 11 位起；eDef.mercyP < 1 才有這兩欄，其他對決的狀態一字不改）：mercyKey＝對決種子（mercyOn 的雜湊用；不取 duel.rng）
     if (eDef.mercyP != null && +eDef.mercyP < 1) { E.mercyP = Math.max(0, +eDef.mercyP); E.mercyKey = st.rng >>> 0; }
     if (E.main && +eDef.mainBias > 0) E.mainBias = +eDef.mainBias;   // 出招偏主屬性（第 A 波 6 審查；有主屬性的客人才有這欄）
+    // 11-17 讀牌加難（eDef 有才存；舊存檔、序章、直接開打沒有＝0／1＝改版前）。hkey＝對決種子：讀心、唬法、提示分級、半指那色的雜湊用（不取 duel.rng）
+    E.hkey = st.rng >>> 0;
+    if (+eDef.rho > 0) { E.rho = +eDef.rho; E.rhoMul = +eDef.rhoMul > 0 ? +eDef.rhoMul : 1; E.rhoCap = eDef.rhoCap != null ? +eDef.rhoCap : 0.9; E.rMercy = eDef.rMercy != null ? +eDef.rMercy : 0.7; }
+    if (eDef.beta != null && +eDef.beta < 1) E.beta = Math.max(0, +eDef.beta);
+    if (+eDef.half > 0) E.half = +eDef.half;
+    if (+eDef.none > 0) E.none = +eDef.none;
+    if (+eDef.hit > 0) E.hit = eDef.hit | 0;
+    // 一趟內看過的提示句（新形狀的表才有；startFight 傳 run.hintSeen，舊的在前、最近的在後；這場抽到的也接上去，finishFight 寫回 run）
+    if (st.hintTable.own) st.hintSeen = Array.isArray(opts.hintSeen) ? opts.hintSeen.filter(x => typeof x === 'string').slice(-HINT_SEEN_MAX) : [];
     // 你的牌堆：script 的起手＋抽牌在前，剩下的照包包順序（有 script 不洗；教學第 5 手要抽到特價箱那幾張）；沒 script 整包洗
     const bag = (pDef.bag || []).filter(Boolean).slice();
     const takeIds = ids => { const out = []; for (const id of ids || []) { const k = bag.findIndex(c => c.id === id); if (k >= 0) out.push(bag.splice(k, 1)[0]); } return out; };
@@ -913,7 +954,18 @@
     const q = planner === 'easy' ? Q.easy : planner === 'normal' ? Q.normal : 1 - Math.min(Q.feintMax, Q.feintBase + Q.feintStep * Math.max(0, d - Q.feintFrom));
     const atk = Math.min(A.cap, Math.round(A.rate * Math.max(0, d - A.lateFrom))) + Math.floor(Math.max(0, d - A.slopeFrom) / A.slopeEvery) + (boss ? A.boss : 0) + (A.add | 0);
     const def = Math.min(D.cap, Math.round(D.rate * Math.max(0, d - D.lateFrom))) + (boss ? D.boss : 0) + (D.add | 0);
-    return { hp: T.guestHp[cls], atk: Math.max(0, atk), def: Math.max(0, def), planner, q: Math.round(q * 1e6) / 1e6 };
+    // 11-17 讀牌加難（C.trial.curve.read／hintMix；from 0 或沒給＝關）：hard（第 normalTo＋1 位起）照 hard＋step×(位−hardFrom) 封頂 max，之前 normal
+    const R = K.read || {}, RH = R.rho || {}, M = K.hintMix || {}, HF = M.half || {}, NO = M.none || {}, hard0 = (P.normalTo | 0) + 1;
+    const on = R.from > 0 && d >= R.from, hardOf = (o, base) => planner === 'hard' ? Math.min(+o.max || 0, (+o.hard || 0) + (+o.step || 0) * Math.max(0, d - hard0)) : base;
+    const rho = on ? hardOf(RH, +RH.normal || 0) + (boss ? +RH.boss || 0 : 0) : 0;
+    const beta = on && R.beta != null ? Math.max(0, Math.min(1, +R.beta)) : 1;
+    const hit = R.hit && R.hit.from > 0 && d >= R.hit.from ? Math.max(0, R.hit.n | 0) : 0;
+    const half = HF.from > 0 && d >= HF.from ? hardOf(HF, +HF.normal || 0) : 0;
+    const none = NO.from > 0 && d >= NO.from ? Math.min(+NO.max || 0, (+NO.base || 0) + (+NO.step || 0) * (d - NO.from)) : 0;
+    const r6 = x => Math.round(x * 1e6) / 1e6;
+    return { hp: T.guestHp[cls], atk: Math.max(0, atk), def: Math.max(0, def), planner, q: r6(q),
+      rho: r6(Math.max(0, Math.min(1, rho))), rhoMul: R.streakMul > 0 ? +R.streakMul : 1, rhoCap: R.cap != null ? +R.cap : 0.9, rMercy: R.mercy != null ? +R.mercy : 0.7,
+      beta: r6(beta), half: r6(Math.max(0, half)), none: r6(Math.max(0, none)), hit };
   }
   // 放水照位數機率（店主 11-16 選 C；C.trial.curve.mercyP）：第 from 位以前 1（每手都放水）；之後 max(min, p0 − step×⌊(位−from)/every⌋)
   //   預設：第 11–15 位 90%、16–20 位 80%…、第 46 位起 20%。放水唬人（qNowOf：落後時少唬）三種出招難度都吃這個機率（主線 11-16「放水前期保留」起 easy 也算）；
