@@ -1413,6 +1413,52 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 100 次（研究層 sd-039 46、sd-040 32，主線約 22）。
 
+## sd-053（30 張，經典度≥4：Vision of Disorder、Vitorino、Voltz、Von Freeman、Voodoo Queens、Kernagis、Wamdue Project、Warzone 2、Wen、White Heaven、Willie Colón、Winston Edwards & Blackbeard、Wizz Jones、Woody Guthrie 2、World Standard、world's end girlfriend、Would-Be-Goods、Writing on the Wall、X-Dream、XPDC、Yann Tiersen、河野康弘 2、YBO²、Mravinsky、Sawasaki、Preisner 2）— s29
+
+- 研究：3 支 Sonnet，WebSearch 16＋14＋15＝45 次；none：Voodoo Queens（sound）、Kernagis（sound）、Warzone EP（sound）、河野《Peace》（sound）、Sawasaki（sound）。前台預查 60 張（sd-053／054）x-cache 全為 KV-HIT。
+- **主線補查**（WebSearch 約 10 次＋WebFetch，facts 標【主線補查】）：河野《Peace》（Discogs 錄音地點、setagaya／Vento Azul 商品頁：19 歲學琴、矢沢永吉樂團、McCoy Tyner 與 Coltrane 題獻曲）→ 救回；Sawasaki（官網 25 週年頁：YS 名義、Meditation Y.S. 出道、應歐洲要求重發）；Kernagis（kernagis.lt 官方專輯頁：Dainos teatras 概念「人的一生」、戲仿到悲劇）→ story ok；Would-Be-Goods（The Shuffle 樂評、部落格：Monochrome Set 未掛名伴奏、Hardy 式搖擺倫敦、英式標準發音）→ sound ok；Voodoo Queens（MOJO 1994 評語、唯一專輯）；Winston Edwards（Forced Exposure：1980、Well Pack Band、Bovell 混音）；Wamdue（AllMusic、維基、MTV）。X-Dream、XPDC 補搜無新料，照研究稿薄寫。
+- 身分／事實裁定：Kernagis 寫 1986（卡單 1985 誤）；Winston Edwards 寫 1980（卡單 1979）；Guthrie《Struggle》寫 1946 年 Asch 78 轉套組；《Library of Congress Recordings》寫 1940 年 Lomax 錄、1964 年 Elektra；Mravinsky 是 1967 布拉格之春現場、不寫「只演過三首」；Preisner《Rouge》不寫 Szymborska 與 Zamachowski／Murat；World Standard 不寫 Larry Campbell 與 Ayler；Willie Colón 不寫法官是誰；X-Dream 寫「1990 年代中」；Sawasaki 的漢字名無出處，用片假名。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 10 處，改動檔 `review-sd-053.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Writing on the Wall | 鉤子「一些樂評把它算作 Black Sabbath 之前少數幾張重金屬專輯之一」→「Hammond 風琴在混音裡最搶耳，主唱的戲劇腔明顯學自 Arthur Brown」，正文補 R&B／靈魂底子與 Doors、Procol Harum 比較 | 原說法只見 Vox Pop 彙整的「也有人稱」 |
+| Wamdue Project | 鉤子「賣出了兩百萬張」→「成了 Strictly Rhythm 史上最暢銷的單曲」；壓字數 | 銷量兩說（兩百萬／MTV 一百萬） |
+| Vision of Disorder、Mravinsky | 第二句補《盤名》 | QA 無《》 |
+| Guthrie 兩張 | 「常被」→「被」 | 單一出處 |
+| Sawasaki | 「澤崎吉広」→「サワサキヨシヒロ」 | 漢字名無可靠出處 |
+
+其餘逐張四問無改：逐條對過研究稿（VOD 樂團自稱恨這張、Voltz 第二張未發行、Freeman 說沒見過這麼放鬆的製作人、Peel 一場就邀錄、Revelation 起初只為出這張 7 吋、Wen 剪海盜電台 MC 當主持、White Heaven 過半寄往歐美、Colón 站被告席、唐寧街十號曲名玩笑、Renbourn 盤腿彈西塔琴、ototoy 專訪的「先寫流行歌再抽掉人聲」與倒走《神曲》、Avatar 列為 trance 經典、XPDC 錄音時仍叫 Tragedy、Tiersen 被製作助理在車上播 CD、虛構作曲家 Van den Budenmayer、《紅》六項提名唯一得獎皆有出處）。Warzone EP QA「軌序」為 East Side 誤判。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-053.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0，不需列待店主處理）。
+- onboarding manifest 同步 30 處。
+
+## sd-054（30 張，經典度≥4＋其餘：Zeni Geva、Zodiac、Zoviet France、Daho 2、Галич、คาราวาน、ထူးအိမ်သင်、Hannibal、108 2、929、99.99 2、9m88 2、_BY.ALEXANDER、A-Sound、Abel Ganz、Above & Beyond、Agnostic Front、Ahmad Jamal、Air 2、Aisha、AKA、Akal Dub、AKIO / OKIHIDE、大森明、Al Campbell）— s29
+
+- 研究：3 支 Sonnet，WebSearch 14＋16＋14＝44 次；none：929（sound）、A-Sound（story／sound）、99.99 兩張（story／sound）、Abel Ganz（sound）、Akal Dub（story）、大森明（story／sound）、Al Campbell（story）。母語來源：Zeni Geva 日文維基、Daho 法文、Галич 俄文、ထူးအိမ်သင် 緬文、9m88／929 台灣報導、AKA 印尼。
+- **主線補查**（WebSearch 約 12 次＋WebFetch，facts 標【主線補查】）：929《3》（Chord4 專訪：重組、第一位正式鼓手羅拔、更搖滾更有重量、「跨過第三張」的命名；Rti 吳志寧自述延宕原因）→ story ok；99.99 同名（ameblo 樂評：Weather Report 路線、成員與兩組編制；guitarrecords：前 Ain Soph 服部ませい、兩張後解散）→ sound ok；大森明（SAX ONLINE 經歷、Tower 簡介、dessinée 商品頁的曲風描述）→ 救回；Caravan（泰文維基 1983 年 6 月 EMI、MGR Online〈ค่ำลง〉主題與น้าแดง）。A-Sound、《More of 99.99》、Akal Dub 補查無專輯層級資料 → **留置 3 張**（`held-sd-054.json`）。
+- 身分／事實裁定：Zeni Geva（1992／1993）、Zoviet France（1990／1991）、108《Songs of Separation》不寫確切年；Abel Ganz 寫「1980 年代前半」；9m88 不寫發行日；《Sent》翻唱寫張雨生、共同創作寫黃宣等人；Daho《Eden》只寫 Astrud Gilberto 參與；AKA 不用 Decibel 對首張的評價；AKIO / OKIHIDE 寫 Sublime、不寫 Ken Ishii 推薦試聽帶；Al Campbell 不寫製作人；99.99 不寫封面插畫者；Caravan 不寫改題〈เดือนเพ็ญ〉。
+
+### 主線審稿（2026-11-17，逐張 27 張，改 8 處，改動檔 `review-sd-054.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Zoviet France | 鉤子「原廠牌壓量小、後來倒閉，讓這張成了較難找到的一張」→ 聲音鉤子「一道柔和的 drone 鋪在底下…」，第二句補《盤名》，刪「厚重回音」 | 壓量與稀有度屬版本雜項；「厚重回音」只見搜尋摘要 |
+| 99.99、Zodiac、_BY.ALEXANDER | 第二句補《盤名》；Zodiac 刪銷量、_BY 刪「以流行製作聞名」壓字數 | QA |
+| 9m88《Sent》 | 第二句補 2023 年 | 交代這是什麼 |
+| Abel Ganz | 「Hew Montgomery 在 1980 年拉起」→「Hew Montgomery 和夥伴…」 | 樂團由他與 Hugh Carter 共同發起 |
+
+其餘逐張四問無改：逐條對過研究稿（《内破》譯意與車禍題材、Zodiac 星城見太空人、Daho 愛滋謠言與假訃聞、《Pop Satori》57 週與第 5 名、Galich 開場白與「我知道該怎麼辦」主旨、Caravan 森林與大赦、Htoo Eain Thin 審查下只寫情歌、Hannibal 直刻錄音（錄音方式屬故事，照收）、Miret 獄中寫詞、Jamal 現場盤 108 週、Air 的 hubkaphone、Ucok 的棺材演出、Sublime 由 Maniac Love 派對催生皆有出處）。27 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-054.json`；27 張 27 鍵（原皆無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **27/27 一致**；`front-check` **前台 27/27 新稿**（CURATED 0）。留置 3 張 KV 保留舊稿。
+- onboarding manifest 同步 25 處。
+- 本工作階段 WebSearch 合計約 111 次（研究層 sd-053 45、sd-054 44，主線約 22）。
+
 ## sd-051（30 張，經典度≥4：The Monochrome Set、The Observatory、The Overnight Players、The Platters、The Quiett、Roberta Martin Singers、The Rootsman、The Running Man、The Sea Urchins、The Sonics、Sam Cooke／Soul Stirrers、Southwest Michigan State Choir、THE SQUARE、The Suburbs、Swanee Quintet、The Swankys、Third Eye Foundation、The Three O'Clock、The Three Sounds 2、The Tower Recordings、The Violinaires、The Willard、The Work、Throbbing Gristle、Thắng、Tiao Phün Muang、Tiit Paulus、Tina Brooks、Titus Groan）— s28
 
 - 研究：3 支 Sonnet，WebSearch 13＋14＋16＝43 次；無整張 none（Swankys story none、Tiao Phün Muang sound none）。
