@@ -1601,3 +1601,25 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 
 - **張露《繁星點點 張露》→ 改掛名為張璐《繁星點點》，不下架。** 依據：s18 釘死的身分（Discogs release 33707097＝台灣環球 1977 年 1 月 LP，歌手張璐；Rti〈那些年我們一起唱的歌 #316｜張璐之歌-繁星點點〉）；串流平台「張露、1973-10-23」是誤掛。盤名去掉誤掛的「張露」，照 LP 主打寫《繁星點點》。改掛名照 `audits/pool-fix-20261016/README.md` 第四節的六處（seed、KV 全部前綴、card_catalog 文件 id、試聽狀態檔、試聽對照表、子曲風表），`mapgenre3` 不照搬（2026-10-04 拆卡教訓）；封面要重核是不是張璐那張 LP；簡介照 general-desc-base 寫（資料薄就薄寫）；張璐是新藝人，照 `ALBUM_ONBOARDING.md` §11 補藝人介紹。交給 s30 做（批名 `sd-fix-1`）。
 - **delayde《finding solitude》→ 薄寫上線，不再留置。** 舊稿的曲數、曲長、開頭冷知識照規則拿掉，只留查得到的事實（單人 lo-fi beat、Saltash、自主發行、客席）；材料撐不起鉤子就以「這是什麼」開頭，短到 100 字也可以，不拿雜項湊。同樣交給 s30。
+
+## sd-060（30 張，其餘：BROCKBEATS 4、Brother Joe May 2、Brother JT、BTS、Bunny Wailer 2、Burial Chamber Trio、Burn、Buster Williams Trio、Bức Tường、C.C.C.C.、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball Adderley、Cappablack、Caracal、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea 4）— s33
+
+- 研究：3 支 Sonnet，WebSearch 7＋15＋15＝37 次；none 只有 Candi Staton《Stand Up and Be a Witness》sound。母語來源：BTS 韓文（亞洲經濟、Tenasia）、Bức Tường 越文（Đại Đoàn Kết）、Casiopea 日文維基與官方資料站。
+- **主線補查**（WebSearch 4 次＋WebFetch，facts 標【主線補查】）：Brother Joe May《The Master's On Our Side》（確認為 1958 年轉投 Nashboro 後的專輯，Acrobat 合集）；Buster Williams《Tokudo》（jazzdisco：1978 年 1 月東京日本コロムビア錄音室、Barron／Riley 三重奏、曲目取向；Sphere 1979 年成立晚於本張）；Candi Staton《Stand Up…》（AllMusic：亞特蘭大 Cheshire Sound、製作人、自己寫歌；仍無聲音描述，薄寫）。BROCKBEATS、Brother Joe May 只有藝人層級資料，照研究稿薄寫上線（delayde 前例）。
+- 事實裁定：Bunny Wailer 不寫「五首拆自 Blackheart Man」「1976 Island」；Burn 不寫「1992 年同名 EP」（〈Last Great Sea〉是 2002 EP，本張重錄）；Carl Bean 原碟寫 Peacock、不寫 Motown 與 Tim Dillinger 評語；Casiopea 不寫〈Marine Blue〉、撲克牌、「一口氣錄完」、十週年巡演、Milestone 改名；Tokudo 不寫 PCM 號段；Channthy 被騙進性交易、Phạm Anh Khoa 2018 風波不寫；BTS 不寫 Billboard 名次與銷量。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 42 處，改動檔 `review-sd-060.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Burial Chamber Trio、Tokudo、Calvin Keys、Cambodian Space Project、Candi Staton 2、Cannonball、Cappablack、Carey Bell、Carl Bean、Carl Thomas、Carmen McRae、Casiopea Live、Perfect Live II、Lunch Time Sleeps | 第二句補《盤名》，並刪次要細節壓回 240 字（Carey Bell 錄音時間抱怨、Carl Thomas 連三張名次、McRae 唱腔、Cannonball 唯一管樂手等） | QA 無《》、字數 |
+| BROCKBEATS 4 張 | 刪軌數（20／15／16 首）、卡帶售罄、曲名日英混用體例；Night Trip、Tranquilizook 鉤子去掉軌數 | 軌數、版本、曲名體例屬雜項 |
+| Burial Chamber Trio、C.C.C.C.、Calvin Keys | 刪「只出黑膠」「限量黑膠」「2023 首度出 CD」「2021 重發黑膠」；Keys 改補內頁文「一大躍進」評價 | 版本資訊不寫 |
+| Bunny Wailer Vol. 1、Brother JT | 刪「七首」「長曲」 | 軌數、曲長類 |
+
+其餘逐張四問無改：Cannonball 鉤子（《Kind of Blue》4 月 22 日收工、本張 4 月 23 日起錄）研究稿有日期依據；Down Upbeat「常被視為數位聲音代表作」出自官方資料站，照收；BROCKBEATS《Soy Milk》《Lunch Time Sleeps》以曲名題材當概念鉤子（日常、午睡），屬概念非體例，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-060.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 27 處。
