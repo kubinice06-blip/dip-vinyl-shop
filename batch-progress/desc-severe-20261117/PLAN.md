@@ -95,8 +95,8 @@ seed 裡**沒有 tier** 的一般卡，第 0 步判為 `severe` 的全部（推�
 | sd-024 | 經典度≥4（2NE1 … Andrew Hill） | 30 | s14 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-025 | 經典度≥4（Androids of Mu … Bappi Lahiri） | 30 | s15 | ✅ 上線 30（前台 30；無留置；主線補查 14 張；CURATED 0） |
 | sd-026 | 經典度≥4（Barrington Levy … Bobby McFerrin & Chick Corea） | 30 | s15 | ✅ 上線 30（前台 30；無留置；主線補查 8 張；CURATED 0） |
-| sd-027 | 經典度≥4（Bodkin … CASHFORGOLD） | 30 | | |
-| sd-028 | 經典度≥4（Casino Versus Japan … Chico Freeman） | 30 | | |
+| sd-027 | 經典度≥4（Bodkin … CASHFORGOLD） | 30 | s16 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
+| sd-028 | 經典度≥4（Casino Versus Japan … Chico Freeman） | 30 | s16 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-029 | 經典度≥4（Chris & Cosey … David Lynch & Alan R. Splet） | 30 | s17 | ✅ 上線 30（前台 30；無留置；CURATED 0） |
 | sd-030 | 經典度≥4（David Oistrakh … Don Grolnick） | 30 | s17 | ✅ 上線 29（前台 29；delayde《finding solitude》查無專輯資料留置） |
 | sd-031 | 經典度≥4（Don Pullen … Eliane Elias） | 30 | | |

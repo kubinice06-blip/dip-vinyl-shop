@@ -807,6 +807,61 @@
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 111 次（研究層 sd-021 38、sd-022 54，主線 19）。
 
+## sd-027（30 張，經典度≥4：Bodkin、Bold、BONES、Bongwater、Boo Williams、Booker Little、Boredoms、Born Against、Boua Xou Mua、Brain Failure、Bread、Brigada Víctor Jara、Brighter、BROCKBEATS、Huberman、Brother Ah、Budapest String Quartet、Budka Suflera、Bulldog Breed、Bunny Wailer、Byron Stingily、C.O.B.、Canarios、Candido 2、Cannon's Jug Stompers、Captain Funk、Carl Perkins、Carmell Jones、CASHFORGOLD）— s16
+
+- 研究：3 支 Sonnet，派工詞預告「整組 15–25 次」，WebSearch 16＋16＋16＝48 次；無 none。
+- **主線補查 6 張**（WebSearch 8 次＋WebFetch，facts 標【主線補查】）：Booker Little（維基：Manassas 高中、1958 年回 Roach 團與曼菲斯老友 George Coleman 重聚）、Boredoms《Pop Tatari》（RBMA：1992 年 Warner Japan 簽約、Katznelson 欲簽 Reprise、「大廠最不商業的專輯之一」）、BONES《Rotten》（The Fader：發片速度、Mediafire 連結、不上 iTunes）、BROCKBEATS（官網：Vinyl-Digital、廣告與電視配樂；The Find Mag 聲音描述）、Brother Ah（Twisted Soul：七段「聲音旅程」講戒毒與出家的掙扎；90 人合唱團、Max Roach、M'Boom）。Brain Failure 主線再搜一次中文仍查無專輯層級資料，照研究稿薄寫（只寫樂團風格，年份寫「2000 年代初」）。Candido《Thousand Finger Man》、Captain Funk 研究稿已有足夠骨幹，未再補。
+- 身分／事實裁定：Bodkin 壓量 100／200／500 各說不一，寫「壓量極少」；Bold 不寫「唯一完整專輯」；Boredoms 是第三張全長作；Booker Little 只寫「三首自作」；Budapest 寫 1940 年錄、1953 年出 LP，刪 78 轉；Brigada 是葡萄牙樂團、不寫樂器配置；Brother Ah 寫 1972、不指定哪一面有 Max Roach；Budka 不寫「隔年組 Lady Pank」；Carl Perkins 兄弟寫名不寫長幼；C.O.B. 1971 年 11 月；CASHFORGOLD 底特律近郊。
+- 前台：開工前先打 `/album-desc` 查過 sd-027／028 共 60 張，全是 KV-HIT，無 CURATED 覆蓋。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 31 處，改動檔 `review-sd-027.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Hmong、Huberman、Budapest、Bulldog Breed、Bunny Wailer、Cannon's、Captain Funk、Carmell Jones、Booker Little、Born Against、Budka Suflera | 第二句「這張／這是／這套」→ 以《盤名》起句（Budka、Bulldog、Bunny、Captain Funk、Budapest、Booker Little、Born Against 原稿全文沒有盤名），連帶刪句壓回 240（Hmong 教學童、Huberman 慢樂章與華彩、Budapest 俄羅斯陣容與暢銷團體、Bulldog 錄音年與「短命」、Bunny 錄音地、Cannon's 末句評價、Captain Funk 上班背景、Perkins 收錄〈Blue Suede Shoes〉、Carmell Jones 搬到洛杉磯等） | 第二句要有盤名；字數 |
+| Bodkin | 「原版只壓了幾百張」→「原版壓量極少」 | 壓量各說不一 |
+| Bold | 「唯一一張完整專輯，常被視為」→「改名後的第一張 LP，被視為」 | 研究稿無「唯一」出處；單一出處（Revelation） |
+| BONES | 「多半只附一個下載連結」→「有時只附」 | Fader 原文 sometimes |
+| Boo Williams、Booker Little、Boredoms、Cannon's | 「常被」→「被」 | 單一出處 |
+| Boredoms | 「正弦波與高頻噪音」→「正弦波與噪音裝置」 | 研究稿無「高頻」 |
+| Budapest | 刪「先出 78 轉」 | 版本雜項 |
+| Budka Suflera | 刪「當時已在籌組 Lady Pank」 | Borysewicz 自述只說 Lady Pank 起步時他已在離團 |
+| Carl Perkins | 「兩個哥哥」→「兄弟 Jay、Clayton」；「集結成冊」→「集結成專輯」 | Clayton 是弟弟 |
+
+其餘逐張四問無改：30 張鉤子前四字互異、加權 ≤50，材料取自故事（Gates 父親葬禮、McTell 抱怨樂團、Perkins 車禍、Torgerson 封城時在母親家錄音）、概念（Canarios 四季換人生四階段、Born Against 盤名反諷）、聲音或地位；查無軌序、曲長、盤號、評分。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-027.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 28 處（23 檔）。
+
+## sd-028（30 張，經典度≥4：Casino Versus Japan、Casiopea 3、Catapilla、Cathedral、Cause for Alarm、Cecil Taylor 2、Cecilia、Celer、Celia Cruz 2、Chabuca Granda、Chacalón 2、Chain of Strength 2、Charles Dodge、Mingus、Charles Sullivan、Haden／LMO、Mariano＋渡辺貞夫、Chavela Vargas、Chez Damier、Chez N Trent、Chicane、Chick Corea、Chicken Shack、Chico Freeman）— s16
+
+- 研究：3 支 Sonnet，WebSearch 14＋17＋19＝50 次；無 none。
+- **主線補查 7 張**（WebSearch 8 次＋WebFetch，facts 標【主線補查】）：Cathedral（英文維基：The Manor Studio、David Bianco、大廠首作；Record-Journal、Birchmeier 的聲音描述；Dorrian 談首次用外部製作人的摩擦）、Casiopea《Cross Point》（英文維基：Mason 第二次合作、GS-1、盤名雙關、〈Domino Line〉等首見）、Haden《Dream Keeper》（Hughes 組曲四段、穿插曲目、Down Beat 1991 年度專輯）、Mingus《Changes Two》（Shepherd Express：延續 Attica 題材）、Casino Versus Japan（維基＋Irish Times：Wobblyhead、slack-key 吉他、《Savages》）、Corea（維基：Circle 四分之三班底）、Chico Freeman（維基：抒情曲與標準曲、NYT 評）。
+- Mariano＋渡辺貞夫主線日文搜尋一次無果（只有 TAKT 數位再發新聞），照研究稿寫（渡辺自述、錄音日期與陣容），聲音段薄寫。Celia Cruz 兩張、Chacalón《El Soberano de la Cumbia》、Chain of Strength 兩張照研究稿薄寫，聲音只寫到樂團風格層級。
+- 身分／事實裁定：Casiopea 錄音室專輯序數 5／6 各說不一，三張都不寫序數；Cause for Alarm 是 1983 年自主 7 吋 EP，不寫壓量；Chacalón 兩張年份兩說，同名盤不寫年、《Soberano》寫「1980 年代初」；Chain of Strength 合輯寫「1990 年代中期」；Chabuca 不寫廠牌、寫「1960 年代末」；Ritmo 葛萊美寫 1990 年第 32 屆；Chavela 不寫廠牌與發行年、只寫 1993 年 4 月馬德里錄音；Freeman 不寫貝斯手名；Mingus〈Free Cell Block F〉只寫延續 Attica 題材。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 13 處，改動檔 `review-sd-028.json`）
+
+| key | 原句 → 新句 | 依據 |
+|---|---|---|
+| Casiopea《Cross Point》《Eyes of the Mind》 | 刪「第 6／第 5 張錄音室專輯」序數 | 來源不一 |
+| Casiopea《Eyes of the Mind》 | 「據稱這位美國鼓手是聽了…」→「這位美國鼓手是在爵士雜誌的試聽企劃裡聽了…」 | 日文維基兩條一致 |
+| Casiopea《Thunder Live》 | 鉤子「新鼓手的獨奏太長，LP 放不下，只好剪掉幾分鐘再接起來。」→「一個無意當職業樂手的大學生，成了 Casiopea 的新鼓手。」 | 原鉤子以 LP 長度剪接為材料，近曲長雜項；改用神保彰入團故事 |
+| Chick Corea | 鉤子「Miles Davis 在另一間錄音室錄《Jack Johnson》那天…」→「Circle 成形之前，四人裡的三個先錄下了這張三重奏。」；第二句補「三人與 Anthony Braxton 後來組成 Circle」 | 原鉤子是同日巧合冷知識；改用地位，正文交代懸念 |
+| Cecil Taylor《Silent Tongues》 | 刪「本作絕版近四十年，後來才重發黑膠。」 | 版本雜項 |
+| Chico Freeman | 刪「這張對他是一次換步調。」 | 與鉤子重複 |
+| Tremendo caché、Changes Two、Genesis、La Llorona、Spirit Sensitive | 「常被視為」→「被視為」 | 單一出處 |
+
+其餘逐張四問無改：第二句皆含《盤名》（派工詞已加這條，本批零退回）；30 張鉤子前四字互異、加權 ≤50，材料取自故事（Cecilia 同名歌的故事、山下洋輔在台下、Celer 的印度旅行錄音、Dodge 把地磁 Kp 指數算成音樂、Chicane 衝浪時的念頭）、概念或地位（〈Cúcala〉、Cruz 的第一座葛萊美、〈True Till Death〉刺青字句）；查無軌序、曲長、盤號、評分。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-028.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
+- 本工作階段 WebSearch 合計約 115 次（研究層 sd-027 48、sd-028 50，主線 17）。
+
 ## sd-029（30 張，經典度≥4：Chris & Cosey、Chris Connor、Brotherhood of Breath、Christ.、Christopher Larkin、Christopher Willits、Chrisye、Chucho Valdés 2、Chuck Girard、Ché-SHIZU、CIV、Clear Blue Sky、Cleveland Eaton、Clock DVA、Co-Fusion、Collage、Company、Condition Green、Conrad Schnitzler、Country Cooking、Crayon、Creative Arts Ensemble、Cressida、Crow、Dan Curtin、Barenboim、Danielle Dax、Datblygu、Eraserhead）— s17
 
 - 研究：3 支 Sonnet，WebSearch 12＋15＋14＝41 次。
