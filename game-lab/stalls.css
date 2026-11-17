@@ -108,6 +108,7 @@
   .lb-sheet.stall .st-grid .lb-ct .lb-pickb::after{content:'';position:absolute;left:0;right:0;top:-3px;bottom:-3px;}   /* 看起來 40 高：點擊區撐到 46 */
   /* 矮螢幕（375×548 面板只有約 290 px）：底那條不黏在底（黏著會整排蓋住第一排的「買／收這張／寄賣」）；內容放不下就整個面板往下捲，鈕排在最後 */
   .lb-sheet.stall .st-foot{position:static;}
+  .lb-sheet.stall .st-bagnote{display:none;}   /* 福袋開了：三顆「收這張」優先（說明那行在福袋分頁買之前已經寫過） */
   .lb-sheet.stall .st-line{font-size:12px;}
 }
 /* 中繼點開局：這一輪在第 N 位之前那幾位這一趟沒遇到（不打勾、淡掉） */
