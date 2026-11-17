@@ -1412,3 +1412,27 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-039.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（無 CURATED 覆蓋）。
 - onboarding manifest 同步 30 處。
 - 本工作階段 WebSearch 合計約 100 次（研究層 sd-039 46、sd-040 32，主線約 22）。
+
+## sd-049（30 張，經典度≥4：Steps 2、Sterling Void、Steve Gadd、Steve Poindexter、Steve Spacek、sToa、Stompin' Ground、Supertouch、Sussan Deyhim、Sutekh、Svartsinn、Sven Grünberg 2、Sweeps、Sweet Charity、Sébastien Tellier、Sérgio Godinho、Taj Mahal Travellers、宮坂高史、Tantra、Tar、Terra Rosa、Terrence Parker、Tetrack、Th' Faith Healers、The Astronauts、The B-52's、Benny Green Trio、The Black Skirts）— s27
+
+- 研究：3 支 Sonnet，WebSearch 14＋22＋14＝50 次；none 只有宮坂高史《Soul Tomato》sound。
+- **主線補查**（WebSearch 約 22 次＋WebFetch，facts 標【主線補查】）：Steps《Smokin' In The Pit》（Milkowski 傳記轉述：1979/12/15–16 Pit Inn 兩晚、改名 Steps Ahead 緣由）→ story ok；Steps《Step By Step》（Pit Inn 前後進錄音室，仍薄）；Gadd（Gadd Gang 官方頁「1984 年一張冷門的日本錄音」，仍薄）；Poindexter、sToa、宮坂高史再搜無新料，薄寫；Terrence Parker（AllMusic 錄音地、Harold Heath 評的鋼琴 house＋broken beat＋器樂 hip hop）→ sound ok；Benny Green（Blue Note 三重奏三部曲第二張，仍薄）；Black Skirts《Don't You Worry Baby》（Newsis 2011 訪談：老教堂錄音室與 1920 年代麥克風、地下室錄音、航海日誌標題、原聲清淡、歌詞為重）；B-52's（1978 年起的現場曲、Compass Point、Rhett Davies）→ story ok；Tar（Albini 於 Chicago Recording Company 錄、AmRep 發行）；Terra Rosa（Mandrake Root、唱片行「奠基作」說法、1989 King 重錄）；Faith Healers（Melody Maker 專文，仍薄）；Grünberg《OM》（愛沙尼亞音樂資訊中心並列代表作、1981–87 塔林錄音、FACT 轉向內斂）→ story ok；Sweet Charity（WEA、A. Husaini 製作、〈Hilang Gelap Terbitlah Terang〉）。
+- 身分／事實裁定：Steps 兩張只寫 1981 Better Days，不寫錄音年月、母帶遺失、1999 雙 CD；渡辺香津美客座曲兩源衝突不寫曲名；Sussan Deyhim 這張是第一張個人專輯（舊稿「排第三」錯）；Sweet Charity 是新加坡樂團（派工詞寫印尼，錯）；Grünberg《Hukkunud Alpinisti hotell》是 2001 三片裝配樂精選，不是 1979 原聲帶；Tetrack 年份兩說不寫、Pablo 樂器說法無來源不寫；Terra Rosa 主唱「赤尾和重」（主線補查 fact 一度誤植「赤尾かおり」，已更正）；The Astronauts 薩克斯風手兩說不寫；宮坂高史有專輯層級身分資料（編制、錄音、廠牌、自作曲），**不留置**，薄寫 167 字。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 12 處，改動檔 `review-sd-049.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Taj Mahal Travellers | 鉤子「開著福斯小巴一路巡演到泰姬瑪哈陵，這群日本樂手就拿它當了團名」→「沒有領袖、一場可以演上十幾個小時，這群日本樂手把集體即興拉成了 drone」 | 樂團 1969 成立時已有團名，小巴之旅在後，原句因果顛倒 |
+| Taj Mahal Travellers | 刪「曲名就是各段的起訖時間」，補巡演到泰姬瑪哈陵、回國辦演出籌旅費；其後兩處為字數微調 | 曲名體例屬雜項；研究稿團史 |
+| Terrence Parker | 鉤子「成了底特律靈性 house 的代表人物之一」→「把 house 做出了教堂般的虔誠氣息」 | 「代表人物」無出處，改用聲音材料 |
+| Tetrack | 「把他們的單曲編成」→「挑選他們的錄音編成」；「交給」→「由」、「受到讚賞」→「獲讚賞」 | 研究稿未說是單曲；字數 |
+| The B-52's | 刪多餘空格 | 格式 |
+| Sweet Charity | 「為英國水兵」→「為外國水兵」 | 研究稿為外國水兵與英國士兵 |
+
+其餘逐張四問無改：逐條對過研究稿（Sterling Void 與 Pet Shop Boys 翻唱第 5 名、Spacek 與 J Dilla〈Dollar〉、Stompin' Ground 1992 Rollins Band 暖場後禁 slam dance、Sutekh 與 Vital Weekly／Kindamuzik 聲音描述、Svartsinn 三部曲中間那張、Tellier 與 Tony Allen、Godinho 1971 Hérouville 城堡錄音、Tantra 與 Coliseu、Tar 鋁製吉他與無吉他獨奏、Faith Healers 為 Too Pure 第一組簽約團、B-52's Billboard 200 第 18、Black Skirts Gaon 第 3）。Sweeps 列三個曲名交代 Terminal 41 逃亡概念，屬概念核心，照收。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-049.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 30 處。
