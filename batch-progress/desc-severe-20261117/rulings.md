@@ -1796,3 +1796,26 @@ Alice Donut 盤名過長保留「這是」。其餘逐張四問無改；鉤子 3
 - KV：`kv-token-check` exit 0；舊值 `kv-before-sd-055.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote` Success；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
 - onboarding manifest 同步 26 處。
 - 本工作階段 WebSearch 合計約 66 次（研究層 sd-055 44、sd-hold-6 6、ar-d-941 7，主線約 9）。
+
+## sd-064（30 張，其餘：Didjits、Fischer-Dieskau、Dijon、Disco Inferno、Dizzy Gillespie、Dizzy Reece、DJ Drez、DJ Mayonnaise、DJ Sneak、Doky Brothers 2、Don Byas、Don Carlos 3、Don Cherry、Don Pullen 3、Don Wilkerson、Donald Byrd 8、Doodle、Doris Norton）— s35
+
+- 研究：3 支 Sonnet，WebSearch 12＋14＋16＝42 次；none：Doodle（story）。Doris Norton 用義文維基與《MC microcomputer》1984 年 7–8 月號專文（archive.org 全文）。
+- **主線補查**（WebSearch 4 次＋Discogs 公開 API，facts 標【主線補查】）：Gillespie《Horn of Plenty》（Discogs notes：1952-03-27 Studio Jouvenet、1952-04-11 Schola Cantorum 兩場；credits 美法混編、Humberto Canto 康加）→ story／sound 升 ok；Don Carlos & Gold 兩張（credits：Roy Cousins／Crucial Bunny／Peter Chemist 與 Roots Radics 成員；Niney／Jo Jo Hookim／Scientist／Eradication Squad）→ sound 升 ok；Doky Brothers 兩張（首張 ℗ 1995、Brecker 兄弟、Wakenius、Kongshaug；《2》Jarreau、Reeves、Vannelli、Salomonsen、Watts）；Pullen《Kele Mou Bana》（首版 1992、編制無爵士鼓手、Franco 的 berimbau）、《Live...Again》（1993-07-13）；Don Byas《Tenderly》（Vogue 1986 CD 合輯，巴黎 Vogue 錄音）；Doodle（樂天亞洲音樂商品頁：2015 年規劃、Total Feedback 受邀、2004 成軍、風格與成員；Discogs credits；CDJapan 2018 日本盤）→ story 由 none 升 thin、sound 升 ok；DJ Sneak（Relief ©1996）；Kofi 擱置原因 extended 一次仍無來源。
+- 身分／事實裁定：Fischer-Dieskau 那張只寫 DG–Moore 錄音計畫層級，不寫張數、盒裝、曲序；Disco Inferno 是 1991 首張專輯（舊稿 EP 錯）、不寫星等；Byas《Tenderly》寫成 1950 年代初巴黎 Vogue 抒情標準曲錄音，不寫「1970 年返美」與 1986 CD；DJ Mayonnaise 是緬因州 Portland（舊稿奧勒岡錯）；DJ Sneak 寫 1996；Doky 首張寫 1995（Discogs ℗，官網 1996 為事後憶述）；Don Carlos 不寫本名與出生地；《Mustang!》標題曲是 Sonny Red 作曲（舊稿錯）；《Kofi》不寫擱置原因、不寫〈The Loud Minority〉樂團說；《Kele Mou Bana》寫 1992；《Live...Again》不寫「發行後幾週過世」；Doris Norton 不寫「Apple 第一位音樂代言人」，系統照 1984 專文寫 Apple II 控制 Roland；Doodle 主唱名為廖孟桓（舊稿「廖盟桓」錯）。
+
+### 主線審稿（2026-11-17，逐張 30 張，改 27 處，改動檔 `review-sd-064.json`）
+
+| key | 改動 | 依據 |
+|---|---|---|
+| Where Is Brooklyn?、Kele Mou Bana、Live...Again、Half Note Vol. 2、Blackjack、Beacon Hill、Byrd in Flight、Kofi、Mustang!、Slow Drag、The Cat Walk、Fischer-Dieskau、Natty Dread Credential | 第二句補《盤名》，隨之刪次要句壓字數（The Thing 團名、Pullen 和聲句、〈Kimyas〉拍號、Ghana 的反差句、〈On the Trail〉俱樂部句、Pearson 伴奏、Moore 對等夥伴、咬字、Junjo 對照） | 第二句交代這是什麼；字數 |
+| Random Thoughts | 刪「寫非裔美國青年處境的曲子最為外放」 | 出自聽眾留言，非具名評論 |
+| Beacon Hill | 「六首都是標準曲」→「曲目都是標準曲」 | 軌數 |
+| Byrd in Flight | 刪「開場」 | 軌序 |
+| Doky Brothers《2》 | 殘句「客座有：Al Jarreau 等歌手，David Sanborn 等樂手」改寫並補 Dianne Reeves；刪預購進榜句壓字數 | 主線補查 credits；字數 |
+
+其餘逐張四問無改：Didjits 的 Rick Didjit 台上人格、Dijon 兒子出生後閉關、Disco Inferno 由後龐克起步、Gillespie 巴黎美法混編、Reece 牙買加→倫敦→巴黎→紐約、DJ Drez 西塔琴與吟唱、Mayonnaise 隔八年加管樂、Sneak 切迪斯可（Daft Punk 影響有 Insomniac 出處）、Doky 首張「兄弟檔請兄弟檔」、Byas 留歐、Don Carlos〈Lazer Beam〉先在 dubplate 走紅、Wilkerson 向 Bob Wills 致敬、Beacon Hill 錄音師家中錄音、Mustang! Five Spot 六週、Slow Drag Higgins 開口 scat、Doodle Total Feedback、Norton「更像程式設計師」皆有出處。30 張鉤子前四字互異、加權 ≤50；查無軌序、曲長、盤號。薄寫照收：DJ Drez、DJ Sneak、Doky 兩張、Byas、Natty Dread Credential、Doodle、Blackjack。
+
+### 上線
+
+- KV：`kv-token-check` exit 0；舊值 `kv-before-sd-064.json`；30 張 30 鍵（皆非 CJK，原無 desc4）`wrangler@4 kv bulk put --remote`；回讀 **30/30 一致**；`front-check` **前台 30/30 新稿**（CURATED 0）。
+- onboarding manifest 同步 29 處。
