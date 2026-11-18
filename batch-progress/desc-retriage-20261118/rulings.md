@@ -19,3 +19,21 @@
 - 第一波 keep 比例份間落差大：004 是 46／300，007 只有 3／300。抽 004 的 keep 10 張：多數站得住（Ben LaMar Gay、betcover!!《卵》、Bedhead、Belong），但 Badbadnotgood《IV》聲音只有「更偏抒情、電子質感更明顯」應是 rewrite，幾張帶發行日到日依「拿不準 polish 還是 keep → polish」應進 polish。
 - **裁定**：不重派整份；全部判完後加一道 **keep 複核**（把所有 keep 交給一支代理，用更嚴的鏡頭只問兩題：聲音是否具體、有無可刪雜項），降級的寫回並記在這裡。理由：keep 是唯一「之後不動」的級，錯放的代價最高；polish／rewrite 之間的誤差之後寫作層會再看到。
 - 024 只出 27 張 polish、0 keep，抽 9 張 rewrite（Magma《Üdü Wüdü》、Maná、Callas《夢遊女》、Massive Attack《Protection》、Max Richter《Infra》等）：全篇確實沒有聲音描述，判對；這一份只是剛好落在弱稿密集的 M 段，不重判。
+
+## 主線抽查（全數判完後）
+
+- **rewrite** 抽 32 張（校準 12＋024 份 9＋全域 11：Tallis Scholars《Tenebrae Responsories》、Kancheli、John Lee Hooker《The Healer》、SHINee《Odd》、Argerich 拉三、Aventura、At the Drive-In《In/Casino/Out》等）：全篇沒有具體聲音或主體在人員／榜位／客座名單，判對，未發現該降 polish 的。
+- **polish** 抽 30 張（校準 10＋全域 20）：多數判對。**發現系統性矛盾**：有 polish 同時標了 code 3（沒聲音）——Jacques Brel《N°2》聲音只有「鋼琴與弦樂為主」，自己的 codes 就寫 3。polish 的定義要求聲音具體，帶 3 的不可能是 polish；帶 7（事實可疑）要上網查證，也不能只改稿。
+- **keep** 抽 35 張（校準 8＋004 份 10＋043–046 全部 5＋複核後 12）：複核後留下的都站得住（Air《Air Lore》、Glenn Gould 間奏曲、Weather Report《Sweetnighter》、Kevin Drumm《Tannenbaum》、Still Corners）。
+- **severe** 看了 045 份全部 14 張（江蕙兩張、楊千嬅《Single》、田中フミヤ兩張、石野卓球、脫拉庫、珂拉琪等）：通篇獎項、曲長、盤號，判對。
+
+## 收尾裁定（`tools/finalize.mjs` 套用）
+
+1. **keep 複核**（`prompt-keepcheck.md`，K01／K02 兩份 533 張，001–042 份的全部 keep）：留 keep 253、降 polish 269、降 rewrite 11。降級的多是發行日到日、榜位銷量或只有曲風標籤（Badbadnotgood《IV》→ rewrite、Alfa Mist《Bring Backs》→ polish）。抽 10 張降 polish 的確認不是過嚴。043–046 份的 5 張 keep 由主線自己看：にせんねんもんだい《Destination Tokyo》（曲長開頭＋發行日到日）、舐達麻《NORTHERNBLUE1.0.4.》（發行日到日）降 polish，其餘 3 張留 keep。
+2. **polish 帶 code 3 或 7 一律改 rewrite**：92 張。理由見上；可逆（retriage.json 留 `via` 欄 `+p2r` 標記，要撤回一行就好）。
+3. polish 帶 code 8（主體偏人員／廠牌，但有聲音）**不改**：抽 8 張（Kikagaku Moyo、Papa Wemba《Le Voyageur》、Tim Maia《Reencontro》、George Jones《The Grand Tour》等）聲音都在，刪掉偏題段落就能成稿，符合 polish。
+4. `retriage.json` 每筆多一個 `via`：`tri`（初判）、`keepcheck`（複核改判）、`tri+keepcheck`（複核維持 keep）、`main`（主線裁定）、`+p2r`（polish 帶 3／7 轉 rewrite）。
+
+## 結果
+
+severe 51／rewrite 9874／polish 3530／keep 256（合計 13711）。分布與代表例見 `summary.md`。
