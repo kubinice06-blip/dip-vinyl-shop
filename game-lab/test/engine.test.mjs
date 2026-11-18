@@ -10,7 +10,7 @@ import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { shapeProblems, binsProblems, apexProblems } from '../tools/check-content.mjs';
+import { shapeProblems, binsProblems, apexProblems, factionProblems } from '../tools/check-content.mjs';
 const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const EN = require(path.join(HERE, '../engine.js'));
@@ -1901,7 +1901,7 @@ section('20 頂點卡純輔助卡試做（?apex=1）：名單與能力、旗標�
 
   // (g) 結果句：notes 照 content 的樣板代入（{d}／{h}／{name}）；每個 op 有一句、≤25 字
   for (const [k, v] of Object.entries(AT.notes)) ok(typeof v === 'string' && [...v.replace(/\{[dhn]\w*\}/g, '12')].length <= 25, 'notes.' + k + ' ≤ 25 chars');
-  for (const op of Object.keys(EN.APEX_OPS)) if (op !== 'reveal') ok(AT.notes[op], 'notes for op ' + op);
+  for (const op of Object.keys(EN.APEX_OPS)) if (op !== 'reveal') ok(EN.APEX_OPS[op].swapOnly ? ((C0.factions || {}).apexSwap || {}).notes[op] && !AT.notes[op] : AT.notes[op], 'notes for op ' + op);   // 第 D 波棒二：swapOnly（critAdd）只給 ?fac=1&apex=1 換一格，結果句在 C.factions.apexSwap.notes、C.apexTrial 不動
 
   // (h) run：startFight 旗標下開 apexMode（序章那場不開）；打贏回 winHeal；舊存檔沒有 aceId＝預設那張；aceId 不在這派＝預設那張；存檔接著打照開打時的旗標
   { const run = EN.newRun(C, { seedKey: 'apx-run', runNo: 1, ace: 'pearl' });
@@ -3913,6 +3913,296 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
     const CU = K.career.ui; ok(X.talents.every(t => CU.names[t.id] && CU.fx[t.id]), 'every talent has a name and an effect line');
     ok(X.ladder.every(L => CU.ladder[L.key]), 'every ladder row has a name'); ok(X.talents.every(t => CU.groups.some(g => g.cats.includes(t.cat))), 'every talent cat is in a group');
     ok(K.lines.owner.retryPlea && K.lines.owner.profFirst, 'owner lines for plea／first stamps'); ok(K.careerTag === '新', 'careerTag'); }
+});
+
+section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 第 1、4、5、8 條）：旗標關＝逐字現況（黃金）、三派 outcome 表、代價、第二招上限、preview＝resolve、序章沒有、R-F9、本派格（第 4 格、佔屬性、連升兩級、選秀 guard、存讀檔）、結果行 {n}、換一格', () => {
+  EN.setCtx(null);
+  const K = C0, F = K.factions;
+  // ---- 1 旗標關＝逐字現況：沒給 fac／fac:false／content 沒有 factions（或 on:false）＝改之前的引擎（smart＋thoughtful 每手決策序列＋run JSON 到第 20 位；黃金＝棒二改之前 HEAD 的 engine／content，
+  //      build2/tools/golden2.cjs）；有 fac 的 run 才多 run.fac ----
+  { const GOLD = [1464705395, 2818197883, 771687597, 3935375095, 1591152419], POS = [21, 21, 21, 15, 21];
+    const CASES = [[{ seedKey: 'dfo1', runNo: 1, ace: 'pearl' }, {}], [{ seedKey: 'dfo2', runNo: 2, ace: 'heresy', prologue: false, talent: { atk: 1, def: 1 } }, {}],
+      [{ seedKey: 'dfo3', runNo: 3, ace: 'hall', prologue: false, from: 20 }, {}], [{ seedKey: 'dfo4', runNo: 2, ace: 'pearl', prologue: false }, { apex: true }],
+      [{ seedKey: 'dfo5', runNo: 2, ace: 'heresy', prologue: false }, { apex: true }]];
+    const drive = (content, o, fo) => {
+      const run = EN.newRun(content, o), R = lcg(EN.fnv1a32(o.seedKey + o.runNo)), mem = {}, seq = [];
+      for (let g = 0; g < 6000; g++) {
+        if (run.over && !run.pending) break;
+        if (EN.canBargainPick(run) && !run.duel && !run.pending) { const ch = EN.bargainPolicy(run, content); seq.push(ch); EN.choose(run, content, ch); continue; }
+        const st = EN.nextStep(run);
+        if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { const ch = EN.runPolicy(run, content); seq.push(ch); EN.choose(run, content, ch); continue; }
+        if (!st || run.pos > 20) break;
+        if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, content, 'smart')) { seq.push(ch); EN.choose(run, content, ch); }
+        const f = EN.startFight(run, content, fo || {});
+        let k = 0; while (!f.duel.over && k++ < 40) { const a = EN.policies.thoughtful(f.duel, R, mem, content); seq.push(a); EN.resolveTurn(f.duel, a); }
+        EN.finishFight(run, content);
+      }
+      return { run, seq };
+    };
+    const VAR = [[K, {}], [K, { fac: false }], [Object.assign({}, K, { factions: undefined }), { fac: true }], [Object.assign({}, K, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]];
+    VAR.forEach(([content, ex], j) => CASES.forEach(([o, fo], i) => {
+      if (QUICK && j > 0 && i > 1) return;
+      const { run, seq } = drive(content, Object.assign({}, o, ex), fo);
+      ok(EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq)) === GOLD[i] && run.pos === POS[i] && !('fac' in run), 'flag off (variant ' + j + ') = engine before 棒二, ' + o.seedKey, { pos: run.pos });
+    }));
+    const r0 = EN.newRun(K, { seedKey: 'nf1', runNo: 2, ace: 'hall', prologue: false }), r1 = EN.newRun(K, { seedKey: 'nf1', runNo: 2, ace: 'hall', prologue: false, fac: true });
+    ok(!/"fac"/.test(JSON.stringify(r0)), 'no fac key without the flag');
+    eq(r1.fac, { picks: {}, tal: {}, trialNodes: {} }, 'newRun fac:true → run.fac {picks, tal, trialNodes}');
+    const r1b = JSON.parse(JSON.stringify(r1)); delete r1b.fac; eq(JSON.stringify(r1b), JSON.stringify(r0), 'run.fac is the only difference (no rng used)');
+    const pd = EN.playerDef(K, r0, { fac: true }); ok(!('fac' in pd) && !('fx' in pd), 'playerDef {fac} on a run without run.fac → nothing');
+    const pd1 = EN.playerDef(K, r1); ok(!('fac' in pd1), 'playerDef without o.fac → nothing (startFight decides)'); }
+
+  // ---- 4 三派 outcome 表（同一手、同一提示；數字精確）----
+  const mk = (c, o, h) => mkCard('fx-' + c + o + h, c, o, h);
+  function facDuel(tier, o = {}) {
+    const src = { bag: K.gifts[tier].concat(BP3), ace: tier, relics: [], fac: { picks: o.picks || {}, tal: {}, trialNodes: {} } };
+    const pDef = EN.playerDef(K, src, Object.assign({ fac: true }, o.apex ? { apex: true } : {}));
+    if (o.ability) pDef.ability = o.ability;
+    const { duel } = EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), Object.assign({ seed: o.seed || 13, hintTable: HINTS }, o.apex ? { apex: true } : {}));
+    duel.p.atk = o.atk | 0; duel.p.def = o.def | 0; duel.e.atk = o.eAtk | 0; duel.e.def = o.eDef | 0; duel.p.relics = []; duel.e.hit = o.hit | 0;
+    duel.p.hp = o.hp != null ? o.hp : 6; duel.e.hp = o.eHp != null ? o.eHp : 99; duel.e.max = Math.max(duel.e.max, duel.e.hp);
+    return duel;
+  }
+  const hint = (d, h) => { d.plan.hint = typeof h === 'string' ? { attr: h, line: d.plan.hint.line, kind: 'one', not: null } : Object.assign({ line: d.plan.hint.line, not: null }, h); };
+  function pv(d, card, attr, e, o = {}) { d.p.hand[0] = card; if (o.hint) hint(d, o.hint); return EN.preview(d, o.ace ? { ace: true } : o.apex ? { i: 0, attr, apex: true } : { i: 0, attr }, e); }
+  const kv = r => [r.kind, r.toE, r.toP, r.heal | 0];
+  const fn = r => (r.notes || []).filter(n => n.fac).map(n => n.kind + ':' + n.n + ':' + n.text);
+  const NT = F.notes, T = (k, n) => k + ':' + n + ':' + NT[k].replace('{n}', n);
+  // 經典：同色大 2 星以上扣整張、大 1 星照差額、同色平手扣 1（不吃底氣、不加他的品味）；不同色的「剋不動改比星」不算
+  { const d = facDuel('hall');
+    eq([kv(pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 }, { hint: 'c' })), fn(pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 }))], [['mirrorWin', 5, 0, 0], [T('full', 5)]], 'hall: same color +2 → full 5');
+    eq([kv(pv(d, mk(4, 1, 1), 'c', { attr: 'c', star: 3 })), fn(pv(d, mk(4, 1, 1), 'c', { attr: 'c', star: 3 }))], [['mirrorWin', 1, 0, 0], []], 'hall: +1 → difference 1');
+    eq([kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), fn(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 }))], [['tie', 0, 1, 0], [T('tieCost', 1)]], 'hall: same color tie → you −1');
+    eq(kv(pv(d, mk(5, 1, 1), 'c', { attr: 'o', star: 2 })), ['mirrorWin', 3, 0, 0], 'hall: blocked counter (different colors) → difference, not full');
+    eq([kv(pv(d, mk(3, 1, 1), 'c', { attr: 'h', star: 2 })), kv(pv(d, mk(3, 1, 1), 'c', { attr: 'o', star: 3 })), kv(pv(d, mk(2, 1, 1), 'c', { attr: 'c', star: 4 }))], [['counter', 3, 0, 0], ['countered', 0, 3, 0], ['mirrorLose', 0, 2, 0]], 'hall: counter／countered／mirrorLose unchanged');
+    d.p.def = 3; d.e.atk = 2; eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 1, 0], 'hall: tie cost ignores your 底氣 and his 品味');
+    d.p.def = 0; d.e.atk = 0; d.e.def = 2; const r = pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 }); eq([kv(r), fn(r)], [['mirrorWin', 3, 0, 0], [T('full', 3)]], 'hall: full then his 底氣 (half(5,2)=3); {n}＝this hand total'); }
+  { const d = facDuel('hall', { picks: { h_first: 1 } }); eq(kv(pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 })), ['mirrorWin', 6, 0, 0], '初版: full +1'); }
+  { const d = facDuel('hall', { picks: { h_eye: 1 } });
+    eq([kv(pv(d, mk(4, 1, 1), 'c', { attr: 'c', star: 3 })), kv(pv(d, mk(1, 4, 1), 'o', { attr: 'o', star: 3 }))], [['mirrorWin', 5, 0, 0], ['mirrorWin', 1, 0, 0]], '識貨: classic +1 star (only c)');
+    d.p.aceUsed = false; eq(kv(pv(d, mk(1, 1, 1), 'c', { attr: 'c', star: 5 }, { ace: true })), ['mirrorWin', 7, 0, 0], '識貨: ace not +1 (7 vs 5 → full 7)'); }
+  { const d = facDuel('hall', { picks: { h_old: 1 } }); eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 0, 0], '老派: first tie free'); d.p.facN.tie = 1; eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 1, 0], '老派: second tie costs 1'); }
+  { const d = facDuel('hall', { picks: { h_seen: 1 } });
+    eq([kv(pv(d, mk(3, 1, 1), 'c', { attr: 'o', star: 4 })), kv(pv(d, mk(3, 1, 1), 'c', { attr: 'o', star: 2 }))], [['countered', 0, 2, 0], ['countered', 0, 1, 0]], '見過世面: first countered −2 (min 1)');
+    d.p.facN.countered = 1; eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'o', star: 4 })), ['countered', 0, 4, 0], '見過世面: only the first'); }
+  { const d = facDuel('hall', { picks: { h_leech: 1 } });
+    const r = pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 }); eq([kv(r), fn(r)], [['mirrorWin', 5, 0, 2], [T('full', 5), T('leech', 2)]], '吸血: half of 5 → 3, capped at 2 per duel');
+    d.p.facN.leech = 1; eq(kv(pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 })), ['mirrorWin', 5, 0, 1], '吸血: 1 left'); d.p.facN.leech = 2; const r2 = pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 }); eq([kv(r2), fn(r2)], [['mirrorWin', 5, 0, 0], [T('full', 5)]], '吸血: used up → no heal, no note');
+    d.p.facN.leech = 0; d.p.hp = d.p.max; eq(fn(pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 })), [T('full', 5)], '吸血: full 聲望 → no heal note'); d.p.hp = 6;
+    d.e.hp = 1; eq(kv(pv(d, mk(5, 1, 1), 'c', { attr: 'c', star: 3 })), ['mirrorWin', 5, 0, 1], '吸血: counts only what he had (1 → 1)');
+    eq(kv(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 })), ['countered', 0, 3, 0], '吸血: not on other hands'); }
+  // 冷門：剋他永遠剋得動、扣他那張的星（丟王牌照扣 7）、以小搏大那手不加品味；被剋多扣 1（他的品味、被唬到多扣之後，你的底氣之前）
+  { const d = facDuel('pearl');
+    let r = pv(d, mk(1, 2, 1), 'o', { attr: 'c', star: 5 }); eq([kv(r), fn(r)], [['counter', 5, 0, 0], [T('underdog', 5)]], 'pearl: o2 vs c5 → counter anyway, 5 (underdog)');
+    r = pv(d, mk(1, 4, 1), 'o', { attr: 'c', star: 3 }); eq([kv(r), fn(r)], [['counter', 3, 0, 0], [T('borrow', 3)]], 'pearl: o4 vs c3 → his 3 (borrow)');
+    eq(kv(pv(d, mk(1, 5, 1), 'o', { attr: 'c', star: 1 })), ['counter', 1, 0, 0], 'pearl: his card even when smaller');
+    d.p.aceUsed = false; eq(kv(pv(d, mk(1, 1, 1), 'o', { attr: 'c', star: 3 }, { ace: true })), ['counter', 7, 0, 0], 'pearl: ace still 7');
+    d.p.atk = 2; r = pv(d, mk(1, 2, 1), 'o', { attr: 'c', star: 5 }); eq([kv(r), r.notes.some(n => n.stat === 'atk')], [['counter', 5, 0, 0], false], 'pearl: underdog hand gets no 品味');
+    r = pv(d, mk(1, 4, 1), 'o', { attr: 'c', star: 3 }); eq([kv(r), fn(r)], [['counter', 5, 0, 0], [T('borrow', 5)]], 'pearl: borrow + 品味 2 = 5 ({n}＝total)'); d.p.atk = 0;
+    r = pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 }); eq([kv(r), fn(r)], [['countered', 0, 4, 0], [T('cCost', 1)]], 'pearl: countered 3 + 1');
+    d.p.def = 2; eq([kv(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 })), fn(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 }))], [['countered', 0, 2, 0], [T('cCost', 1)]], 'pearl: cost before your 底氣 (half(4,2)=2); {n} stays 1'); d.p.def = 0;
+    d.hit = 0; d.e.hit = 1; eq(kv(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 }, { hint: 'c' })), ['countered', 0, 5, 0], 'pearl: fooled (+1) and cost (+1)'); d.e.hit = 0;
+    eq([kv(pv(d, mk(1, 2, 1), 'o', { attr: 'o', star: 4 })), kv(pv(d, mk(1, 3, 1), 'o', { attr: 'o', star: 3 }))], [['mirrorLose', 0, 2, 0], ['tie', 0, 0, 0]], 'pearl: mirror unchanged, no tie cost'); }
+  { const d = facDuel('pearl', { picks: { p_remember: 1 } }); eq([kv(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 })), fn(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 }))], [['countered', 0, 3, 0], []], '有人記得: no cost'); }
+  { const d = facDuel('pearl', { picks: { p_bench: 1 } }); eq(kv(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 })), ['countered', 0, 2, 0], '冷板凳: first countered (3+1)−2'); d.p.facN.countered = 1; eq(kv(pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 })), ['countered', 0, 4, 0], '冷板凳: only the first'); }
+  { const d = facDuel('pearl', { picks: { p_thorn: 1 }, eDef: 3 });
+    let r = pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 }); eq([kv(r), fn(r)], [['countered', 2, 4, 0], [T('cCost', 1), T('thorn', 2)]], '反傷: he −2 too (ignores his 底氣)');
+    d.p.facN.thorn = 2; r = pv(d, mk(1, 3, 1), 'o', { attr: 'h', star: 3 }); eq([kv(r), fn(r)], [['countered', 0, 4, 0], [T('cCost', 1)]], '反傷: max 2 per duel'); }
+  // 異端：拆穿（看得出來的唬＝明指出別色、半指出他說不出那色；不露不算）多扣 1、回 2；看穿那手不算；比星輸多扣 1
+  { const d = facDuel('heresy');
+    let r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: 'c' }); eq([kv(r), fn(r)], [['counter', 4, 0, 2], [T('crit', 1), T('heal', 2)]], 'heresy: caught (one: says c, plays o) → +1, heal 2');
+    eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: 'o' })), ['counter', 3, 0, 0], 'heresy: honest → nothing');
+    eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: { attr: 'h', kind: 'half', not: 'o' } })), ['counter', 4, 0, 2], 'heresy: half, plays the color he could not say → caught');
+    eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: { attr: 'o', kind: 'half', not: 'c' } })), ['counter', 3, 0, 0], 'heresy: half, plays another color → not a lie');
+    eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: { attr: 'c', kind: 'none' } })), ['counter', 3, 0, 0], 'heresy: none → never caught');
+    hint(d, 'c'); d.p.hp = d.p.max; r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 4, 0, 0], [T('crit', 1)]], 'heresy: full 聲望 → crit, no heal note'); d.p.hp = 6;
+    d.p.atk = 2; d.e.def = 2; r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 4, 0, 2], [T('crit', 1), T('heal', 2)]], 'heresy: 3+品味 2+1=6 → his 底氣 half(6,2)=4; crit {n} stays 1'); d.p.atk = 0; d.e.def = 0;
+    r = pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 }); eq([kv(r), fn(r)], [['mirrorLose', 0, 3, 0], [T('loseCost', 1)]], 'heresy: mirror lose +1');
+    d.e.atk = 1; d.p.def = 2; eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 2, 0], 'heresy: lose cost before his 品味 and your 底氣 (2+1+1=4 → half 2)'); d.e.atk = 0; d.p.def = 0;
+    eq(kv(pv(d, mk(1, 1, 1), 'h', { attr: 'o', star: 4 })), ['mirrorLose', 0, 4, 0], 'heresy: blocked counter = mirror lose 3 → +1');
+    eq([kv(pv(d, mk(1, 1, 3), 'h', { attr: 'c', star: 3 })), kv(pv(d, mk(1, 1, 3), 'h', { attr: 'h', star: 3 }))], [['countered', 0, 3, 0], ['tie', 0, 0, 0]], 'heresy: countered／tie unchanged'); }
+  { const d = facDuel('heresy', { picks: { x_crack: 1 } }); eq(fn(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: 'c' })), [T('crit', 2), T('heal', 2)], '破音: +2, {n}=2'); }
+  { const d = facDuel('heresy', { picks: { x_echo: 1 } }); eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: 'c' })), ['counter', 4, 0, 3], '回音: heal 3'); }
+  { const d = facDuel('heresy', { picks: { x_thick: 1 } }); eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 2, 0], '臉皮厚: first lose no cost'); d.p.facN.lose = 1; eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 3, 0], '臉皮厚: only the first'); }
+  { const d = facDuel('heresy', { picks: { x_dist: 1 } }); eq([kv(pv(d, mk(1, 1, 3), 'h', { attr: 'h', star: 3 })), kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 }))], [['mirrorWin', 1, 0, 0], ['tie', 0, 0, 0]], '失真: hardcore +1 only'); }
+  { const d = facDuel('heresy', { picks: { x_crit: 1 } }); let r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: 'c' }); eq([kv(r), fn(r)], [['counter', 5, 0, 2], [T('crit2', 2), T('heal', 2)]], '爆擊: crit +2 (note crit2 {n}=2)');
+    eq([kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), fn(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 }))], [['mirrorLose', 0, 2, 0], []], '爆擊: losing on stars costs nothing extra'); }
+  { const d = facDuel('heresy', { picks: { x_crit: 1, x_crack: 1 } }); eq(fn(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }, { hint: 'c' })), [T('crit2', 3), T('heal', 2)], '爆擊＋破音: +3'); }
+  // ?apex 同開：倍數取大、回聲望取大（不相加）、看穿確認過的那手不多扣不回；換一格的 critAdd 跟異端被動同一步取大
+  { const ab = (op, params, timing) => ({ id: 't-' + op, card: K.aces.heresy, tier: 'heresy', name: '測', text: 'x', timing: timing || 'duel', op, params: params || {}, hold: null });
+    let d = facDuel('heresy', { apex: true, ability: ab('reveal', {}, 'hand') }); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: d.n, reveal: 'bluff' };
+    eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 })), ['counter', 3, 0, 0], 'peeked (看穿) hand: no heresy crit／heal');
+    d = facDuel('heresy', { apex: true, ability: ab('crit', { mult: 2 }) }); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: 1 };
+    eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 })), ['counter', 8, 0, 2], 'crit ×2 with heresy +1: (3+1)×2 = 8 (one multiplier)');
+    d = facDuel('heresy', { apex: true, ability: ab('critLeech', { mult: 1 }), atk: 5 }); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: 1 }; d.p.hp = 2;
+    let r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 9, 0, 5], [T('crit', 1)]], 'critLeech 5 vs heresy 2 → heal 5 (max, not 7), no heresy heal note');
+    d = facDuel('heresy', { apex: true, ability: ab('critAdd', { n: 2 }) }); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: 1 };
+    r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 5, 0, 2], [T('heal', 2)]], 'critAdd 2 vs heresy critPre 1 → +2 (max, not +3); heal still 2'); }
+
+  // ---- preview＝resolveTurn（三派 × 本派選項全拿／一般 × 有沒有 ?apex；每一手每一個合法動作；thoughtful／random 照實打）；計數照上限；序章沒有 fac ----
+  { let hands = 0, fnotes = 0;
+    const ids = ['copycat', 'already', 'critic', 'label', 'boss'];
+    for (const tier of TIERS) for (let s = 1; s <= (QUICK ? 8 : 30); s++) {
+      const allPicks = s % 2 ? Object.fromEntries(F[tier].picks.map(p => [p.id, 1])) : {}, apex = s % 3 === 0;
+      const src = { bag: K.gifts[tier].concat(BP3), ace: tier, relics: s % 4 === 0 ? ['dustcover', 'cleaner', 'boost_' + EN.TIER_AXIS[tier]] : [], atk: s % 5, def: s % 3, hp: 12, maxHp: 15, fac: { picks: allPicks, tal: {}, trialNodes: {} } };
+      if (apex) src.aceId = EN.apexList(K, tier)[s % 15].card;
+      const pos = 3 + (s % 40), id = ids[s % ids.length];
+      const eDef = EN.enemyDef(K, id, { pos, seedKey: 'pv31', runNo: s, playerAce: tier, bossAce: TIERS.filter(t => t !== tier)[0] });
+      const { duel } = EN.startDuel(EN.playerDef(K, src, apex ? { apex: true, fac: true } : { fac: true }), eDef, Object.assign({ seed: 900 + s, hintTable: EN.hintTableOf(K) }, apex ? { apex: true } : {}));
+      const R = lcg(s), mem = {}, pol = s % 2 ? 'thoughtful' : 'random';
+      let g = 0;
+      while (!duel.over && g++ < 12) {
+        const eS = { i: duel.plan.idx, attr: duel.plan.attr }, before = JSON.stringify(duel);
+        const acts = EN.legalActions(duel).concat(EN.canApex(duel) ? EN.legalActions(duel).map(a => Object.assign({ apex: true }, a)) : []);
+        const pvs = acts.map(a => EN.preview(duel, a, eS));
+        ok(JSON.stringify(duel) === before, 'preview does not change the duel');
+        const act = EN.policies[pol](duel, R, mem, K), k = acts.findIndex(a => JSON.stringify(a) === JSON.stringify(act));
+        const cl = EN.resolveTurn(duel, act).find(e => e.t === 'clash'); hands++;
+        if (k >= 0 && cl) { const p = pvs[k]; eq([sig(p), p.heal | 0, p.fac], [sig(cl), cl.heal | 0, cl.fac], tier + ' s' + s + ': preview = resolve'); }
+        if (cl) fnotes += cl.notes.filter(n => n.fac).length;
+        const N = duel.p.facN, fx = duel.p.fx;
+        ok((N.thorn | 0) <= (fx.thornMax | 0) && (N.leech | 0) <= (fx.leechMax | 0), tier + ': second move within its cap', N);
+      }
+      ok(duel.p.fac === tier && duel.stats.fac && typeof duel.stats.fac === 'object', tier + ': duel carries fac');
+    }
+    ok(fnotes >= TIERS.length * (QUICK ? 8 : 30), 'faction notes show up (≥1 per duel on average)', fnotes);
+    // resolve 真的累計：吸血一場最多回 2；反傷第 3 次不扣（同一場、照實打）
+    const facRig = (tier, picks, o = {}) => { const d = facDuel(tier, Object.assign({ picks }, o)); return d; };
+    const swing = (d, pc, pa, ec, ea, h) => { d.p.hand[0] = pc; d.e.hand[0] = ec; if (h) hint(d, h); const p = EN.preview(d, { i: 0, attr: pa }, { i: 0, attr: ea }); const cl = EN.resolveTurn(d, { i: 0, attr: pa }, { forcedPlay: { i: 0, attr: ea } }).find(e => e.t === 'clash'); eq([sig(p), p.heal | 0], [sig(cl), cl.heal | 0], 'forced hand: preview = resolve'); return cl; };
+    { const d = facRig('hall', { h_leech: 1 }, { hp: 3 }); const hs = [];
+      for (let i = 0; i < 3; i++) hs.push(swing(d, mk(5, 1, 1), 'c', mk(3, 1, 1), 'c', 'c').heal | 0);
+      eq([hs, d.p.facN.leech, d.p.hp], [[2, 0, 0], 2, 5], 'leech: 2 then 0 (cap 2 per duel)'); }
+    { const d = facRig('pearl', { p_thorn: 1 }, { hp: 40 }); d.p.max = 40; const ts = [];
+      for (let i = 0; i < 3; i++) ts.push(swing(d, mk(1, 3, 1), 'o', mk(1, 1, 3), 'h', 'h').toE);
+      eq([ts, d.p.facN.thorn, d.p.facN.countered], [[2, 2, 0], 2, 3], 'thorn: 2, 2, then 0 (max 2 times)'); }
+    { const d = facRig('hall', { h_old: 1 }, { hp: 20 }); d.p.max = 20; const tp = [];
+      for (let i = 0; i < 2; i++) tp.push(swing(d, mk(3, 1, 1), 'c', mk(3, 1, 1), 'c', 'c').toP);
+      eq(tp, [0, 1], '老派: first tie free, second costs 1 (resolve counts)'); } }
+
+  // ---- run：序章那場沒有 fac、第 1 位起有；R-F9 沒旗標的頁面續玩照樣生效；換派清空本派選項；view.fac；熟客；地下串連 ----
+  { const run = EN.newRun(K, { seedKey: 'pro31', runNo: 1, ace: 'hall', fac: true });
+    EN.choose(run, K, EN.bargainPolicy(run, K));
+    const f0 = EN.startFight(run, K, { apex: true });
+    ok(run.prologue === 'pending' && !('fac' in f0.duel.p) && !('fx' in f0.duel.p) && !f0.duel.apexMode, 'prologue duel: no fac (and no apex)');
+    let g = 0; while (!f0.duel.over && g++ < 12) EN.resolveTurn(f0.duel, EN.legalActions(f0.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+    EN.finishFight(run, K); let h = 0; while (run.pending && h++ < 10) EN.choose(run, K, EN.runPolicy(run, K));
+    const saved = JSON.parse(JSON.stringify(run));
+    const f1 = EN.startFight(saved, K, {});
+    ok(f1.duel.p.fac === 'hall' && f1.duel.p.fx.mirrorWinFull === 1 && f1.duel.facNotes.full === F.notes.full, 'first guest: fac on; reloaded run without any page flag keeps it (R-F9)');
+    const v = EN.view(f1.duel); eq([v.fac.tier, v.fac.icon, v.fac.left], ['hall', '比', { leech: null, thorn: null }], 'view.fac: tier, icon, second move left (none yet)'); }
+  { const run = EN.newRun(K, { seedKey: 'sw31', runNo: 2, ace: 'hall', prologue: false, fac: true, unlocked: ['hall', 'pearl', 'heresy'] }); run.fac.picks = { h_eye: 1 };
+    const res = EN.switchAce(run, K, 'pearl'); ok(res.ok && run.ace === 'pearl' && JSON.stringify(run.fac.picks) === '{}' && run.fac.trialNodes, 'switchAce clears picks'); }
+  { const mkRun = picks => { const r = EN.newRun(K, { seedKey: 'lh31', runNo: 2, ace: 'pearl', prologue: false, fac: true }); r.fac.picks = picks; EN.choose(r, K, EN.bargainPolicy(r, K)); r.maxHp = 20; r.hp = 20; return r; };
+    const heals = [{}, { p_regular: 1 }].map(picks => { const r = mkRun(picks); const f = EN.startFight(r, K, {}); f.duel.p.hp = 4; let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); const o = EN.finishFight(r, K); return [o.heal, o.lowHeal | 0, (r.stats.fac || {}).fights]; });
+    eq(heals, [[3, 0, 1], [5, 2, 1]], '熟客: under half → +2 after a win (out.lowHeal); run.stats.fac counts fights');
+    const r2 = mkRun({ p_regular: 1 }); const f2 = EN.startFight(r2, K, {}); f2.duel.p.hp = 10; let g = 0; while (!f2.duel.over && g++ < 12) EN.resolveTurn(f2.duel, EN.legalActions(f2.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+    eq(EN.finishFight(r2, K).heal, 3, '熟客: half or more → normal heal'); }
+
+  // ---- 5 本派選項：第 4 格（Lv5／10／15…）、拿過不再出、佔屬性、連升兩級、地下串連、錯的不改 run、選秀 guard、存讀檔、runPolicy ----
+  { const base = () => { const r = EN.newRun(K, { seedKey: 'lv31', runNo: 2, ace: 'hall', prologue: false, fac: true }); EN.choose(r, K, EN.bargainPolicy(r, K)); return r; };
+    const at = (r, level, ups) => { r.level = level; r.levelUps = ups; r.pending = null; return EN.levelOffer(r, K); };
+    const r = base();
+    eq([2, 3, 4, 5, 6, 9, 10, 11, 15, 20].map(L => at(r, L, 1).length), [3, 3, 3, 4, 3, 3, 4, 3, 4, 4], 'fourth slot only at Lv5／10／15／20');
+    const o5 = at(r, 5, 1), ord = F.hall.picks.map(p => p.id).sort((a, b) => EN.hash01('lv31#2#fac5#' + a) - EN.hash01('lv31#2#fac5#' + b));
+    eq(o5[3], { pick: 'fac', id: ord[0] }, 'Lv5 slot = hash-smallest pick');
+    eq(at(r, 6, 2).length, 4, 'two level-ups 4→6: first offer (Lv5) has it');
+    const r0 = base(); delete r0.fac; eq(at(r0, 5, 1).length, 3, 'no run.fac → 3');
+    eq(at(r, 5, 1).slice(0, 3), at(r0, 5, 1), 'first three = the old offer');
+    // 實際走：Lv5 拿本派 → 屬性不動、聲望上限照 +1；下一級照常三格；拿過的不再出
+    const r1 = base(); r1.level = 4; r1.xp = 0; r1.levelUps = 0;
+    const atk0 = r1.atk, def0 = r1.def, mx0 = r1.maxHp;
+    const ups = EN.gainXp(r1, EN.trialCfg(K, 0), 4 + EN.trialCfg(K, 0).levelNeed + 5 + EN.trialCfg(K, 0).levelNeed);   // 4→5→6
+    ok(ups === 2 && r1.level === 6, 'gainXp 4→6', [ups, r1.level]);
+    r1.pending = { type: 'level', enemyId: 'copycat', pos: r1.pos, level: 5, offer: EN.levelOffer(r1, K) };
+    const fo = r1.pending.offer.find(x => x.pick === 'fac');
+    const snap = JSON.stringify(r1);
+    for (const bad of [{ type: 'level', pick: 'fac' }, { type: 'level', pick: 'fac', id: 'h_nope' }, { type: 'level', pick: 'fac', id: F.hall.picks.map(p => p.id).find(id => id !== fo.id) }])
+      ok(EN.choose(r1, K, bad).error === 'notOffered' && JSON.stringify(r1) === snap, 'wrong fac choice rejected, run unchanged: ' + JSON.stringify(bad));
+    const saved = JSON.parse(JSON.stringify(r1));                                 // 存讀檔中途（pending.offer 裡有 fac）照續
+    const res = EN.choose(r1, K, { type: 'level', pick: 'fac', id: fo.id });
+    ok(res.ok && r1.fac.picks[fo.id] === 1 && r1.atk === atk0 && r1.def === def0 && r1.maxHp === mx0 + 2 * EN.trialCfg(K, 0).levelHp && r1.picks.slice(-1)[0] === 'fac:' + fo.id, 'fac pick: no stat, max +1 per level kept');
+    eq(res.effects, [{ level: 'fac', id: fo.id, n: 0 }], 'effects');
+    ok(r1.pending && r1.pending.type === 'level' && r1.pending.level === 6 && r1.pending.offer.length === 3, 'Lv6 next: 3 slots');
+    ok(EN.fixFac(saved, K) === false && EN.choose(saved, K, { type: 'level', pick: 'fac', id: fo.id }).ok && JSON.stringify(saved) === JSON.stringify(r1), 'JSON round trip mid level-up → same');
+    r1.pending = null; ok(at(r1, 10, 1)[3].id !== fo.id, 'taken pick not offered again');
+    const r5 = base(); r5.fac.picks = Object.fromEntries(F.hall.picks.map(p => [p.id, 1])); eq(at(r5, 10, 1).length, 3, 'all five taken → no slot');
+    const rh = EN.newRun(K, { seedKey: 'lv31', runNo: 2, ace: 'pearl', prologue: false, fac: true }); rh.fac.picks = { p_remember: 1, p_bench: 1, p_regular: 1, p_thorn: 1 };
+    rh.level = 5; rh.levelUps = 1; rh.pending = { type: 'level', enemyId: 'copycat', pos: 1, level: 5, offer: EN.levelOffer(rh, K) }; const hp0 = rh.hp, m0 = rh.maxHp;
+    ok(rh.pending.offer[3].id === 'p_hp' && EN.choose(rh, K, { type: 'level', pick: 'fac', id: 'p_hp' }).ok && rh.maxHp === m0 + 3 && rh.hp === hp0 + 3, '地下串連: max +3, hp +3');
+    // runPolicy：本派格出了就拿；facPick false 照 MIX；MIX 不數本派格
+    const r6 = base(); r6.level = 5; r6.levelUps = 1; r6.pending = { type: 'level', enemyId: 'copycat', pos: 1, level: 5, offer: EN.levelOffer(r6, K) };
+    eq(EN.runPolicy(r6, K), { type: 'level', pick: 'fac', id: r6.pending.offer[3].id }, 'runPolicy takes the fac slot');
+    r6.picks = ['atk', 'fac:h_eye']; eq(EN.runPolicy(r6, K, { facPick: false }), { type: 'level', pick: 'def' }, 'runPolicy facPick:false → MIX counts only stat picks (2nd = def)');
+    // 中繼點選秀：沒有本派格、送 fac 被拒（'bad'）、跳過的不補發；Lv20 照出
+    for (const from of [20, 50]) {
+      const rd = EN.newRun(K, { seedKey: 'dr31-' + from, runNo: 2, ace: 'heresy', prologue: false, fac: true, from });
+      let g = 0, lv5 = false;
+      while (rd.pending && rd.pending.type === 'draft' && g++ < 60) {
+        const of = rd.pending.offer;
+        if (of.kind === 'level') {
+          ok(of.offer.length === 3 && of.offer.every(x => x.pick !== 'fac'), 'draft level offer: 3, no fac (Lv' + (rd.level + 1) + ')');
+          if (rd.level === 4) lv5 = true;
+          const s0 = JSON.stringify(rd); const bad = EN.choose(rd, K, { type: 'draft', pick: 'fac', id: 'x_crit' });
+          ok(bad.ok === false && bad.error === 'bad' && JSON.stringify(rd) === s0, 'choose draft fac → bad, run unchanged');
+        }
+        EN.choose(rd, K, EN.cPolicy(rd, K));
+      }
+      ok(lv5 && !rd.pending && rd.pos === from && JSON.stringify(rd.fac.picks) === '{}' && !rd.picks.some(x => String(x).startsWith('fac:')), 'draft done from ' + from + ': went through Lv4→5, no fac picks (not made up later)');
+      const nx = Math.ceil((rd.level + 1) / 5) * 5; rd.level = nx; rd.levelUps = 1;
+      eq(EN.levelOffer(rd, K).length, 4, 'after the draft: Lv' + nx + ' has the slot');
+    }
+    // 整趟（smart＋thoughtful 到第 25 位）：每逢 5 級那一次拿的是本派（runPolicy），其他照 MIX
+    for (const tier of TIERS) {
+      const { run } = driveD(K, { seedKey: 'tr31-' + tier, runNo: 2, ace: tier, prologue: false, fac: true }, QUICK ? 15 : 25);
+      const want = run.picks.map((x, k) => (k + 2) % 5 === 0);
+      ok(run.picks.length >= 4 && run.picks.every((x, k) => String(x).startsWith('fac:') === want[k]), tier + ': fac picks exactly at Lv5／10／15…', run.picks);
+      eq(Object.keys(run.fac.picks).sort(), run.picks.filter(x => String(x).startsWith('fac:')).map(x => x.slice(4)).sort(), tier + ': run.fac.picks = picks');
+      ok(run.stats.fac && run.stats.fac.fights > 0, tier + ': run.stats.fac counted');
+    }
+    // fixFac：不認得的 id、壞形狀、offer 裡不認得或拿過的本派格
+    const rf = base(); rf.fac = { picks: { h_eye: 1, zzz: 1, h_old: 0 } }; rf.pending = { type: 'level', enemyId: 'copycat', pos: 1, level: 5, offer: [{ pick: 'atk', n: 1 }, { pick: 'def', n: 1 }, { pick: 'hp', n: 2 }, { pick: 'fac', id: 'h_eye' }] };
+    ok(EN.fixFac(rf, K) && JSON.stringify(rf.fac) === JSON.stringify({ picks: { h_eye: 1 }, tal: {}, trialNodes: {} }) && rf.pending.offer.length === 3, 'fixFac: drops unknown ids, fills shape, drops taken slot');
+    const rb = base(); rb.fac = 'x'; ok(EN.fixFac(rb, K) && !('fac' in rb), 'fixFac: bad fac removed'); ok(EN.fixFac(base(), K) === false, 'fixFac: no fac → false'); }
+
+  // ---- 8 ?fac=1&apex=1 換一格：只在 run.fac＋apexMode；只開 ?apex=1 時 C.apexTrial 逐字照舊；冷門 theirStar／pThr → critAdd 2、異端 crit／critLeech → mirrorPlus 2、Zodiac → eStar 1 ----
+  { const before = JSON.stringify(K.apexTrial), S = F.apexSwap, R0 = { fac: { picks: {} } };
+    for (const t of TIERS) for (const x of EN.apexList(K, t)) {
+      const A = EN.abilityOf(K, x.card), A0 = EN.apexAbilityOf(K, x.card, null), A1 = EN.apexAbilityOf(K, x.card, { ace: t }), B = EN.apexAbilityOf(K, x.card, R0);
+      eq([A0, A1], [A, A], x.id + ': without run.fac = abilityOf');
+      const sw = (S[t] && ((S[t].cards || {})[x.id] || (S[t].ops || {})[x.op])) || null;
+      if (!sw) { eq(B, A, x.id + ': not swapped'); continue; }
+      ok(B.op === sw.op && JSON.stringify(B.params) === JSON.stringify(sw.params) && B.text === sw.text && B.name === A.name && B.card === A.card && B.id === A.id && B.timing === (A.timing === 'hold' ? 'hold' : sw.timing) && JSON.stringify(B.hold) === JSON.stringify(A.hold), x.id + ': swapped');
+      eq(B.swapped, { op: A.op, params: A.params, timing: A.timing, text: A.text }, x.id + ': swapped keeps the original');
+    }
+    const cnt = t => EN.apexList(K, t).filter(x => EN.apexAbilityOf(K, x.card, R0).swapped).length;
+    eq([cnt('hall'), cnt('pearl'), cnt('heresy')], [0, 11, 10], 'swapped: hall 0, pearl 11 (theirStar 6＋pThr 5), heresy 10 (crit 7＋critLeech 3)');
+    eq([EN.apexAbilityOf(K, K.aces.pearl, R0).op, EN.apexAbilityOf(K, K.aces.pearl, R0).params, EN.apexAbilityOf(K, K.aces.heresy, R0).op, EN.apexAbilityOf(K, K.aces.heresy, R0).params], ['eStar', { n: 1 }, 'mirrorPlus', { n: 2 }], 'Zodiac → eStar 1; Filth → mirrorPlus 2');
+    ok(JSON.stringify(K.apexTrial) === before, 'C.apexTrial untouched');
+    ok(EN.apexAbilityOf(Object.assign({}, K, { factions: Object.assign({}, F, { apexSwap: Object.assign({}, S, { on: false }) }) }), K.aces.pearl, R0).op === 'theirStar', 'apexSwap.on false → only label (no swap)');
+    // startFight：run.fac＋apex → 換；沒有 run.fac＋apex → 照舊；run.fac 沒 apex → 沒有 apexMode
+    const go = (fac, apex) => { const r = EN.newRun(K, { seedKey: 'as31', runNo: 2, ace: 'pearl', prologue: false, fac }); EN.choose(r, K, EN.bargainPolicy(r, K)); return EN.startFight(r, K, { apex }).duel; };
+    const d1 = go(true, true), d2 = go(false, true), d3 = go(true, false);
+    ok(d1.apexMode && d1.p.ability.op === 'eStar' && d1.p.fac === 'pearl' && d1.apexText.notes.critAdd === S.notes.critAdd, '?fac=1&apex=1: swapped in the duel (notes have critAdd)');
+    ok(d2.apexMode && d2.p.ability.op === 'theirStar' && !('fac' in d2.p) && !('critAdd' in d2.apexText.notes), '?apex=1 only: C.apexTrial as is');
+    ok(!d3.apexMode && d3.p.fac === 'pearl', '?fac=1 only: no apexMode');
+    // critAdd：抓到他唬你那手多扣 2（冷門借他的星之後、他的底氣之前）；沒抓到＝沒作用
+    const bailey = EN.apexAbilityOf(K, 'derek bailey|solo guitar volume 1', R0);
+    const d = facDuel('pearl', { apex: true, ability: bailey });
+    let r = pv(d, mk(1, 3, 1), 'o', { attr: 'c', star: 4 }, { apex: true, hint: 'h' });
+    eq([kv(r), r.apex && r.apex.op, r.apex && r.apex.d, (r.notes.find(n => n.apex) || {}).text], [['counter', 6, 0, 0], 'critAdd', 2, S.notes.critAdd.replace('{d}', 2)], 'critAdd: caught → 4 + 2');
+    r = pv(d, mk(1, 3, 1), 'o', { attr: 'c', star: 4 }, { apex: true, hint: 'c' }); eq([kv(r), r.apex.hit], [['counter', 4, 0, 0], false], 'critAdd: honest → no effect');
+    // 他沒唬（第 1 手照實）：沒作用的結果句＝noneHonest（拆穿類）
+    eq((r.notes.find(n => n.apex) || {}).text, K.apexTrial.notes.noneHonest, 'critAdd: honest hand note = noneHonest'); }
+
+  // ---- check-content factionProblems：乾淨；改壞抓得到 ----
+  { eq(factionProblems(K, EN), [], 'check-content factionProblems clean');
+    const mut = f => { const D = JSON.parse(JSON.stringify(F)); f(D); return factionProblems(Object.assign({}, K, { factions: D }), EN).length; };
+    ok(mut(D => { delete D.notes.cCost; }) && mut(D => { D.notes.crit = '拆穿！加倍'; }) && mut(D => { D.hall.picks[0].op = 'zzz'; }) && mut(D => { D.pearl.priority.pop(); }) && mut(D => { D.heresy.picks[4].second = false; })
+      && mut(D => { D.apexSwap.heresy.ops.crit.params.n = 4; }) && mut(D => { D.apexSwap.heresy.cards['brotzmann-machine-gun'].text = '這手比星多算 2。'; }) && mut(D => { delete D.apexSwap.heresy.cards['brotzmann-machine-gun']; })
+      && mut(D => { D.apexSwap.pearl.cards.nope = { op: 'eStar', params: { n: 1 }, timing: 'hand', text: 'x' }; }) && mut(D => { D.hall.name = '殿堂派'; }) && mut(D => { D.occupy = false; }) && mut(D => { delete D.ui.badge; }),
+      'factionProblems catches: missing note, note without {n}, unknown op, priority, second move, swap param range, hold text, hold card not covered, unknown card, name, occupy, ui');
+    eq(Object.keys(F.notes).sort(), EN.FAC_NOTE_ORDER.slice().sort(), 'notes keys = FAC_NOTE_ORDER');
+    ok(!/加倍/.test(JSON.stringify(F.notes)) && F.notes.cCost && F.factionsTag === undefined && K.factionsTag === '新', 'notes final: no 加倍, has cCost; factionsTag 新'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

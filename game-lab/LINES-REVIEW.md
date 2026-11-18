@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 1079（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1146（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1397,6 +1397,128 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・shield | 王牌（留著）：被剋少扣 {d} | 本規格新寫 | `apexTrial.holdNotes.shield` |
 | （畫面字）・tieWin | 王牌（留著）：同色同星，他 −{d} | 本規格新寫 | `apexTrial.holdNotes.tieWin` |
 | （畫面字）・counterPlus | 王牌（留著）：剋中多扣 {d} | 本規格新寫 | `apexTrial.holdNotes.counterPlus` |
+
+## 流派試做・經典流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・tagline | 正面跟他比份量。 | 本規格新寫 | `factions.hall.tagline` |
+| （畫面字）・passive | 同色大他 2 星以上：扣他你這張的整張星數。 | 本規格新寫 | `factions.hall.passive` |
+| （畫面字）・cost | 同色平手：你扣 1。 | 本規格新寫 | `factions.hall.cost` |
+| （畫面字）・read | 先看這色有沒有比他大 2 星。 | 本規格新寫 | `factions.hall.read` |
+| （畫面字）・first | 經典流：同色大他 2 星，扣整張；同色平手，你扣 1。 | 本規格新寫 | `factions.hall.first` |
+
+## 流派試做・經典流的本派選項（升級第 4 格；名字：說明）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 識貨：你的經典 +1 星（王牌不加）。 | 本規格新寫 | `factions.hall.picks[0].text` |
+| （畫面字）・text | 初版：扣整張那手，再多扣 1。 | 本規格新寫 | `factions.hall.picks[1].text` |
+| （畫面字）・text | 老派：每場第一次同色平手，你不扣。 | 本規格新寫 | `factions.hall.picks[2].text` |
+| （畫面字）・text | 見過世面：每場第一次被剋，少扣 2（最少扣 1）。 | 本規格新寫 | `factions.hall.picks[3].text` |
+| （畫面字）・text | 吸血（第二招）：扣整張那手，扣到的一半回聲望，一場最多 2。 | 本規格新寫 | `factions.hall.picks[4].text` |
+
+## 流派試做・冷門流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・tagline | 借他的份量，只讀真假。 | 本規格新寫 | `factions.pearl.tagline` |
+| （畫面字）・passive | 你剋他一定剋得動，扣他那張的星數；他大你 2 星以上那手不加品味。 | 本規格新寫 | `factions.pearl.passive` |
+| （畫面字）・cost | 被剋：多扣 1。 | 本規格新寫 | `factions.pearl.cost` |
+| （畫面字）・read | 只讀真假，信的時候丟最小那張。 | 本規格新寫 | `factions.pearl.read` |
+| （畫面字）・first | 冷門流：剋他一定剋得動，扣他那張；被剋多扣 1。 | 本規格新寫 | `factions.pearl.first` |
+
+## 流派試做・冷門流的本派選項（升級第 4 格；名字：說明）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 有人記得：被剋不再多扣 1。 | 本規格新寫 | `factions.pearl.picks[0].text` |
+| （畫面字）・text | 冷板凳：每場第一次被剋，少扣 2（最少扣 1）。 | 本規格新寫 | `factions.pearl.picks[1].text` |
+| （畫面字）・text | 熟客：聲望不到一半時，打贏多回 2。 | 本規格新寫 | `factions.pearl.picks[2].text` |
+| （畫面字）・text | 地下串連：聲望上限 +3，現有聲望也 +3。 | 本規格新寫 | `factions.pearl.picks[3].text` |
+| （畫面字）・text | 反傷（第二招）：被剋時他也扣 2，一場最多 2 次。 | 本規格新寫 | `factions.pearl.picks[4].text` |
+
+## 流派試做・異端流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・tagline | 賭他在唬，拆穿他。 | 本規格新寫 | `factions.heresy.tagline` |
+| （畫面字）・passive | 他唬你、你剛好剋中（拆穿）：多扣 1，回 2 聲望。 | 本規格新寫 | `factions.heresy.passive` |
+| （畫面字）・cost | 比星輸：多扣 1。 | 本規格新寫 | `factions.heresy.cost` |
+| （畫面字）・read | 賭他在唬；他少唬的時候就信。 | 本規格新寫 | `factions.heresy.read` |
+| （畫面字）・first | 異端流：拆穿多扣 1、回 2 聲望；比星輸多扣 1。 | 本規格新寫 | `factions.heresy.first` |
+
+## 流派試做・異端流的本派選項（升級第 4 格；名字：說明）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 破音：拆穿那手再多扣 1。 | 本規格新寫 | `factions.heresy.picks[0].text` |
+| （畫面字）・text | 回音：拆穿那手再多回 1 聲望。 | 本規格新寫 | `factions.heresy.picks[1].text` |
+| （畫面字）・text | 臉皮厚：每場第一次比星輸，不多扣。 | 本規格新寫 | `factions.heresy.picks[2].text` |
+| （畫面字）・text | 失真：你的硬蕊 +1 星（王牌不加）。 | 本規格新寫 | `factions.heresy.picks[3].text` |
+| （畫面字）・text | 爆擊（第二招）：拆穿再多扣 1，比星輸不再多扣。 | 本規格新寫 | `factions.heresy.picks[4].text` |
+
+## 流派試做・結果行小字（{n}：整張／借／以小搏大＝這手扣他的總數，其他＝多扣／回的那一份）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・full | 正面對決：扣整張 {n} | 本規格新寫 | `factions.notes.full` |
+| （畫面字）・tieCost | 平手算你輸 {n} | 本規格新寫 | `factions.notes.tieCost` |
+| （畫面字）・borrow | 借他的份量：扣他 {n} | 本規格新寫 | `factions.notes.borrow` |
+| （畫面字）・underdog | 以小搏大：扣他 {n} | 本規格新寫 | `factions.notes.underdog` |
+| （畫面字）・cCost | 被剋，多扣 {n} | 本規格新寫 | `factions.notes.cCost` |
+| （畫面字）・crit | 拆穿！多扣 {n} | 本規格新寫 | `factions.notes.crit` |
+| （畫面字）・crit2 | 爆擊！多扣 {n} | 本規格新寫 | `factions.notes.crit2` |
+| （畫面字）・heal | 回 {n} 聲望 | 本規格新寫 | `factions.notes.heal` |
+| （畫面字）・loseCost | 比星輸，多扣 {n} | 本規格新寫 | `factions.notes.loseCost` |
+| （畫面字）・leech | 吸血：回 {n} 聲望 | 本規格新寫 | `factions.notes.leech` |
+| （畫面字）・thorn | 反傷：他也扣 {n} | 本規格新寫 | `factions.notes.thorn` |
+
+## 流派試做・?fac=1&apex=1 同開：頂點卡換一格後的能力說明（這個原語的卡都換）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 這手抓到他唬你，多扣 2。 | 本規格新寫 | `factions.apexSwap.pearl.ops.theirStar.text` |
+| （畫面字）・text | 這手抓到他唬你，多扣 2。 | 本規格新寫 | `factions.apexSwap.pearl.ops.pThr.text` |
+| （畫面字）・text | 這手比星多算 2。 | 本規格新寫 | `factions.apexSwap.heresy.ops.crit.text` |
+| （畫面字）・text | 這手比星多算 2。 | 本規格新寫 | `factions.apexSwap.heresy.ops.critLeech.text` |
+
+## 流派試做・?fac=1&apex=1 同開：頂點卡換一格後的能力說明（指定那張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 黃道借星：這手他的唱片少 1 星。 | 本規格新寫 | `factions.apexSwap.pearl.cards.zodiac-borrow.text` |
+| （畫面字）・text | 機關槍：留著：剋中多扣 1；發動：這手比星多算 2。 | 本規格新寫 | `factions.apexSwap.heresy.cards.brotzmann-machine-gun.text` |
+
+## 流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・critAdd | 王牌：拆穿！多扣 {d} | 本規格新寫 | `factions.apexSwap.notes.critAdd` |
+
+## 流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態；{x} 由畫面代入）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・badge | 流派試做 | 本規格新寫 | `factions.ui.badge` |
+| （畫面字）・badgeBoth | 流派＋頂點卡試做 | 本規格新寫 | `factions.ui.badgeBoth` |
+| （畫面字）・passive | 被動 | 本規格新寫 | `factions.ui.passive` |
+| （畫面字）・cost | 代價 | 本規格新寫 | `factions.ui.cost` |
+| （畫面字）・second | 第二招 | 本規格新寫 | `factions.ui.second` |
+| （畫面字）・pickTag | 本派 | 本規格新寫 | `factions.ui.pickTag` |
+| （畫面字）・pickNote | 不加屬性 | 本規格新寫 | `factions.ui.pickNote` |
+| 老闆・pickFirst | 這一級可以學一招本派的。 | 本規格新寫 | `factions.ui.pickFirst` |
+| （畫面字）・mine | 本派：{list} | 本規格新寫 | `factions.ui.mine` |
+| （畫面字）・mineNone | 本派：還沒學 | 本規格新寫 | `factions.ui.mineNone` |
+| （畫面字）・infoTitle | {name}・{icon} | 本規格新寫 | `factions.ui.infoTitle` |
+| （畫面字）・leftLeech | 吸血這場還能回 {n} | 本規格新寫 | `factions.ui.leftLeech` |
+| （畫面字）・leftThorn | 反傷這場還剩 {n} 次 | 本規格新寫 | `factions.ui.leftThorn` |
+| （畫面字）・firstTip | 第一次觸發，看一下結果行的小字。 | 本規格新寫 | `factions.ui.firstTip` |
+| （畫面字）・pickGo | 就這一派 | 本規格新寫 | `factions.ui.pickGo` |
+| （畫面字）・profFar | 熟練 Lv{n}・最遠第 {far} 位 | 本規格新寫 | `factions.ui.profFar` |
+| （畫面字）・profOnly | 熟練 Lv{n} | 本規格新寫 | `factions.ui.profOnly` |
+| （畫面字）・swapped | 跟流派一起試，這張換過能力 | 本規格新寫 | `factions.ui.swapped` |
+| （畫面字）・apexMixed | 頂點卡跟流派一起試：有幾張還沒換能力 | 本規格新寫 | `factions.ui.apexMixed` |
 
 ## 店內名牌（shops/basement.json）
 

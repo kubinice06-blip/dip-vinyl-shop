@@ -198,6 +198,12 @@
 //            careerCfg · careerGain(content, runSummary(run), {best, tier, quit, open}) · posFought(run)（放棄時站著那一位打完了沒）· careerLevel(content, xp) · careerXpAt · careerPoints(content, career) · talentCost · talentOpen
 //            talentBuy／talentSell／careerRespec（回新的 career）· talentArgs(content, career) · applyTalent · gigRoom(run, content) · ladderList／ladderAt／ladderNext
 //            careerDraw(content, key, level, owned) · profLevel · profGain · profFirst · careerDeposit(content, save) · careerFix(content, career) · seedsOf(content, ids, max)
+// Factions   第 D 波棒二三流派（?fac=1 試做旗標；SPEC-D §3.2–§3.5、§3.10、§4.2、§6-3；給畫面／sim 的契約 build2/CONTRACT.md）。數字＝content.factions（facCfg）
+//            newRun o.fac:true → run.fac {picks:{id:1}, tal:{}, trialNodes:{}}（存在 run 裡；沒旗標的頁面續玩照樣生效）；startFight 照 run.fac 給 playerDef {fac}（序章不給）
+//            → duel.p.fac（派）、p.fx（facFxOf：被動＋本派選項）、p.facN（這場計數）、stats.fac；outcome 的派別路（被動＋代價＋第二招），notes 多 {fac, kind, n, text}
+//            levelOffer：逢 levelEvery 級多第 4 格 {pick:'fac', id}（佔那一級）；{draft:true}（選秀）不出 · choose level {pick:'fac', id} · choose draft 送 fac → 'bad'
+//            facCfg · facPickDef(content, tier, id) · facFxOf(content, run, tier) · facDue · facOffer · fixFac(run, content)（讀檔整理）· FAC_OPS
+//            apexAbilityOf(content, cardId, run)：?fac=1&apex=1 同開（run.fac）＝照 content.factions.apexSwap 換一格；沒有 run.fac＝abilityOf 逐字照舊。新 apex op critAdd（只給換一格用）
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -382,6 +388,7 @@
     counterMult: { params: { mult: [2, 2] }, timing: ['hand'] },
     crit:        { params: { mult: [2, 3] }, timing: ['hand', 'duel'] },
     critLeech:   { params: { mult: [1, 3] }, timing: ['hand', 'duel'] },
+    critAdd:     { params: { n: [1, 3] }, timing: ['hand', 'duel'], swapOnly: true },   // 第 D 波棒二：?fac=1&apex=1 同開「換一格」才用（C.factions.apexSwap；C.apexTrial 沒有這個）：抓到他唬你多扣 n（加法、跟異端被動同一步取大）
     bounce:      { params: { lose: 'bool' }, timing: ['hand', 'duel'] },
     shield:      { params: { n: [1, 3] }, timing: ['hand', 'duel'], small: true, duelMax: { n: 1 }, smallMax: { n: 1 } },
     halfIn:      { params: {}, timing: ['hand'] },
@@ -428,6 +435,7 @@
         case 'counterMult': M.mult = mult; break;
         case 'crit': M.crit = mult; break;
         case 'critLeech': if (mult > 1) M.crit = mult; M.leech = true; break;
+        case 'critAdd': M.critAdd = Math.max(M.critAdd | 0, n); break;          // 第 D 波棒二（換一格）：拆穿那手多扣 n
         case 'bounce': M.bounce = true; M.bounceLose = !!q.lose; break;
         case 'shield': M.shield = (M.shield | 0) + n; break;
         case 'halfIn': M.halfIn = true; break;
@@ -451,7 +459,7 @@
     return null;
   }
   // 結果行那一句與 clash 事件的 apex 欄（b＝同一手不算王牌的結果）
-  const CRIT_OPS = ['crit', 'critLeech'];
+  const CRIT_OPS = ['crit', 'critLeech', 'critAdd'];
   function apexInfo(st, AX, r, b, pPlay, ePlay, caught, ps, es) {
     const P = st.p, A = P.ability, T = st.apexText || {};
     const op = AX.ops.length === 1 ? AX.ops[0].op : 'combo';
@@ -491,18 +499,103 @@
     return [ev];
   }
 
-  // 加成與配件（§2.1.3 outcome）。pPlay/ePlay = {attr, star, ace}。純函式，除非 commit（只會改 dustUsed）
+  // ---------- 第 D 波棒二：三流派（?fac=1 試做旗標；scratchpad v5/wave-d SPEC-D §3.2–§3.5、§4.2、§6-3；契約 build2/CONTRACT.md）----------
+  //   數字＝content.factions（facCfg；沒有或 on:false＝沒有流派）。run.fac＝{picks:{id:1}, tal:{}, trialNodes:{}}（newRun o.fac；存在 run 裡，續玩不看網址：R-F9）。
+  //   旗標關（run 沒有 fac）時這一段一行都不走。序章那場沒有 fac（startFight）。
+  const FAC_NOTE_ORDER = ['full', 'borrow', 'underdog', 'crit', 'crit2', 'heal', 'leech', 'loseCost', 'cCost', 'tieCost', 'thorn'];   // 結果行小字的順序（notes 的鍵）
+  // 本派選項的 op（content.factions[t].picks[].op）→ facFxOf 疊進被動 fx 的鍵；maxHp 在 choose 當下加（地下串連）
+  const FAC_OPS = ['starPlus', 'fullPlus', 'tieFree', 'counteredCut', 'critPrePlus', 'critHealPlus', 'loseFree', 'cCostFree', 'lowHeal', 'maxHp', 'leech', 'thorn', 'critSafe'];
+  function facCfg(content) { const F = content && content.factions; return F && typeof F === 'object' && F.on !== false ? F : null; }
+  function facPickDef(content, tier, id) { const F = facCfg(content), D = F && F[tier]; return D && Array.isArray(D.picks) ? D.picks.find(p => p && p.id === id) || null : null; }
+  // 被動 fx（content.factions[tier].fx 的複本）疊上這一趟拿過的本派選項（src.fac.picks）。starPlus＝{c,o,h} 加星
+  function facFxOf(content, src, tier) {
+    const F = facCfg(content), D = F && F[tier]; if (!D) return null;
+    const fx = Object.assign({}, clone(D.fx || {}));
+    fx.starPlus = { c: 0, o: 0, h: 0 };
+    const picks = (src && src.fac && src.fac.picks) || {};
+    for (const id of Object.keys(picks)) {
+      const p = facPickDef(content, tier, id); if (!p || !(picks[id] > 0)) continue;
+      const n = p.n | 0;
+      switch (p.op) {
+        case 'starPlus': if (ATTRS.includes(p.axis)) fx.starPlus[p.axis] += n; break;   // 識貨（經典 +1）／失真（硬蕊 +1）
+        case 'fullPlus': fx.fullPlus = (fx.fullPlus | 0) + n; break;                 // 初版：整張那手再 +1
+        case 'tieFree': fx.tieFree = 1; break;                                       // 老派：每場第一次同色平手不扣
+        case 'counteredCut': fx.counteredCut = Math.max(fx.counteredCut | 0, n); break;   // 見過世面／冷板凳：每場第一次被剋少扣 n（最少 1）
+        case 'critPrePlus': fx.critPre = (fx.critPre | 0) + n; break;                // 破音：拆穿再多扣 1
+        case 'critHealPlus': fx.critHealPlus = (fx.critHealPlus | 0) + n; break;     // 回音：拆穿再多回 1
+        case 'loseFree': fx.loseFree = 1; break;                                     // 臉皮厚：每場第一次比星輸不多扣
+        case 'cCostFree': fx.counteredCost = 0; break;                               // 有人記得：被剋不多扣（取消代價）
+        case 'lowHeal': fx.lowHeal = (fx.lowHeal | 0) + n; break;                    // 熟客：聲望不到一半時打贏多回 n（finishFight）
+        case 'leech': fx.leech = 1; fx.leechMax = p.max | 0; break;                  // 第二招吸血（經典）：整張那手扣到的一半回聲望，一場最多 max
+        case 'thorn': fx.thorn = n; fx.thornMax = p.max | 0; break;                  // 第二招反傷（冷門）：被剋他也扣 n，一場最多 max 次
+        case 'critSafe': fx.critPre = (fx.critPre | 0) + n; fx.loseCost = 0; fx.critSafe = 1; break;   // 第二招爆擊（異端）：拆穿再多扣 n、比星輸不再多扣
+        default: break;                                                              // maxHp：choose 當下加
+      }
+    }
+    return fx;
+  }
+  // 這一級（lv＝要選的那一級）有沒有本派格：每 levelEvery 級一次（Lv5、10、15…）；run 沒有 fac 或 levelEvery 0＝沒有
+  function facDue(run, content, lv) {
+    const F = facCfg(content); if (!F || !run || !run.fac) return false;
+    const every = F.levelEvery | 0; return every > 0 && lv > 1 && lv % every === 0;
+  }
+  // 本派格：從這一派還沒拿過的裡雜湊挑（hash01(seedKey#runNo#fac<lv>#id) 最小的在前）；回 [{pick:'fac', id}]（levelOffer 只取第 1 個）
+  function facOffer(run, content, lv) {
+    const F = facCfg(content), D = F && run && run.fac ? F[run.ace] : null; if (!D) return [];
+    const got = run.fac.picks || {};
+    return (D.picks || []).filter(p => p && p.id && !(got[p.id] > 0))
+      .map(p => ({ id: p.id, h: hash01(run.seedKey + '#' + run.runNo + '#fac' + lv + '#' + p.id) })).sort((a, b) => a.h - b.h)
+      .map(x => ({ pick: 'fac', id: x.id }));
+  }
+  // ?fac=1&apex=1 同開（SPEC-D §6-3「三家換一格」）：run.fac 有、而且 content.factions.apexSwap 有那張的對照＝換掉 op／params／text（timing 改這一格的；留著型照舊留著），
+  //   name、fact、card 不動；C.apexTrial 本身不改。沒有 run.fac（只開 ?apex=1）＝abilityOf 逐字照舊。多 swapped＝原本的 {op, params, timing, text}（畫面標「換過」）
+  function apexAbilityOf(content, cardId, run) {
+    const A = abilityOf(content, cardId);
+    if (!A || !run || !run.fac || !facCfg(content)) return A;
+    const S = facCfg(content).apexSwap, T = S && S.on !== false ? S[A.tier] : null;
+    if (!T) return A;
+    const sw = (T.cards && T.cards[A.id]) || (A.op !== 'combo' && T.ops && T.ops[A.op]) || null;
+    if (!sw || !sw.op) return A;
+    const was = { op: A.op, params: clone(A.params || {}), timing: A.timing, text: A.text };
+    return Object.assign(A, { op: sw.op, params: clone(sw.params || {}), timing: A.timing === 'hold' ? 'hold' : (sw.timing || A.timing), text: sw.text || A.text, swapped: was });
+  }
+  // 讀檔整理（畫面 loadSave／續玩前叫；回 true＝有改）：run.fac 形狀、picks 只留這一派有的 id、待選的升級 offer 裡不認得的本派格拿掉
+  function fixFac(run, content) {
+    if (!run || typeof run !== 'object' || run.fac == null) return false;
+    const before = JSON.stringify(run);
+    if (typeof run.fac !== 'object' || Array.isArray(run.fac)) { delete run.fac; return true; }
+    const f = run.fac, picks = {};
+    for (const id of Object.keys(f.picks && typeof f.picks === 'object' ? f.picks : {})) if (f.picks[id] > 0 && facPickDef(content, run.ace, id)) picks[id] = 1;
+    run.fac = Object.assign({}, f, { picks, tal: f.tal && typeof f.tal === 'object' && !Array.isArray(f.tal) ? f.tal : {}, trialNodes: f.trialNodes && typeof f.trialNodes === 'object' && !Array.isArray(f.trialNodes) ? f.trialNodes : {} });
+    const p = run.pending;
+    if (p && p.type === 'level' && Array.isArray(p.offer)) p.offer = p.offer.filter(x => !(x && x.pick === 'fac') || (facPickDef(content, run.ace, x.id) && !(picks[x.id] > 0)));
+    return JSON.stringify(run) !== before;
+  }
+
+  // 加成與配件（§2.1.3 outcome）。pPlay/ePlay = {attr, star, ace}。純函式，除非 commit（只會改 dustUsed、第 D 波流派的這場計數 st.p.facN／st.stats.fac）
   //   hyp：'on'＝假設這手發動王牌（preview act.apex）；'off'＝不算王牌（結果句的「差幾點」）；沒給＝照對決現在的狀態
+  //   第 D 波棒二三流派（?fac=1；st.p.fac＝'hall'|'pearl'|'heresy'、st.p.fx＝facFxOf 疊好的被動＋本派選項；SPEC-D §3.3–§3.4）：不靠 apexMode 的派別路，沒有 st.p.fac 時一行都不走（逐字現況）。
+  //     步驟：①本派選項加星（識貨／失真）③冷門門檻 Infinity ④冷門扣他那張的星／經典同色大 2 星扣整張 ⑥品味（冷門以小搏大那手不加）⑦拆穿多扣（異端 critPre；換一格的 critAdd 同一步取大）
+  //     ⑨′異端比星輸多扣 ⑪′冷門被剋多扣（他的品味、被唬到多扣之後，你的底氣之前）⑫′經典同色平手你扣 1（不吃底氣、不加他的品味）⑬回聲望（吸血／拆穿回聲望；跟頂點卡取大、不相加）
   function outcome(st, pPlay, ePlay, commit, hyp) {
     const AX = st.apexMode && hyp !== 'off' ? apexNow(st, hyp === 'on') : null, M = AX ? AX.M : null;
     const base = AX ? outcome(st, pPlay, ePlay, false, 'off') : null;          // 先算（commit 會改 dustUsed）
+    const FX = st.p.fac && st.p.fx ? st.p.fx : null, fac = FX ? st.p.fac : null, FN = FX ? (st.p.facN || {}) : null, fk = FX ? {} : null;
     const notes = [];
     let ps = pPlay.star | 0;
     const boost = 'boost_' + pPlay.attr;
     if (!pPlay.ace && hasRelic(st, boost)) { ps += CFG.boostStar; notes.push(noteOf(st, boost)); }
+    if (FX && !pPlay.ace && FX.starPlus && FX.starPlus[pPlay.attr] > 0) ps += FX.starPlus[pPlay.attr] | 0;   // ① 本派選項：識貨（經典 +1）／失真（硬蕊 +1）；王牌不加
     let es = ePlay.star | 0;
     if (M) { if (M.star) ps += M.star; if (M.eStar) es = Math.max(0, es - M.eStar); }      // ①②
-    const r = clash({ attr: pPlay.attr, star: ps, ace: !!pPlay.ace }, { attr: ePlay.attr, star: es, ace: !!ePlay.ace }, M && M.pThr ? { pThr: M.pThr } : undefined);
+    const thr = FX && FX.counterAlways ? Infinity : M && M.pThr ? M.pThr : 0;          // ③ 冷門：你剋他永遠剋得動（取代頂點卡的門檻）
+    const r = clash({ attr: pPlay.attr, star: ps, ace: !!pPlay.ace }, { attr: ePlay.attr, star: es, ace: !!ePlay.ace }, thr ? { pThr: thr } : undefined);
+    const same = pPlay.attr === ePlay.attr, r0 = r.kind;                       // 經典的整張只認「本來就比贏」的同色（頂點卡比星多算造出來的照差額）
+    if (FX && FX.counterAlways && r.kind === 'counter') {                     // ④ 冷門：扣他那張的星數（你丟王牌照扣 7、他更大照他的）
+      r.toE = pPlay.ace ? Math.max(ps, es) : es;
+      r.underdog = !pPlay.ace && es - ps >= CFG.threshold;
+      fk[r.underdog ? 'underdog' : 'borrow'] = 1;
+    }
     if (M) {                                                                    // ③④
       if (M.theirStar && r.kind === 'counter') r.toE = Math.max(r.toE, es);
       if (M.mirrorPlus && (r.kind === 'mirrorWin' || r.kind === 'mirrorLose' || r.kind === 'tie')) {
@@ -512,6 +605,9 @@
       if (M.tieWin && r.kind === 'tie') r.toE += M.tieWin;
       if (M.loseZero && r.kind === 'mirrorLose') r.toP = 0;
     }
+    if (FX && FX.mirrorWinFull && same && r0 === 'mirrorWin' && r.kind === 'mirrorWin' && ps - es >= (FX.fullMin | 0)) {   // ④ 經典：同色比星大 fullMin 以上＝扣整張（＋初版）；跟頂點卡比星多算取大
+      r.toE = Math.max(r.toE, ps + (FX.fullPlus | 0)); fk.full = 1;
+    }
     if (r.kind === 'counter' && hasRelic(st, COLOR_RELIC[pPlay.attr])) { r.toE += CFG.colorRelicBonus; notes.push(noteOf(st, COLOR_RELIC[pPlay.attr])); }
     if (r.kind === 'countered' && !st.p.dustUsed && hasRelic(st, 'dustcover')) {
       r.toP = Math.max(0, r.toP - CFG.dustcoverCut); notes.push(noteOf(st, 'dustcover'));
@@ -520,31 +616,76 @@
     if (r.kind === 'tie' && hasRelic(st, 'cleaner')) { r.toE += CFG.cleanerTie; notes.push(noteOf(st, 'cleaner')); }
     // 品味／底氣（無限試煉；逐字照 harness core.cjs modded＋TAKEN.half）：配件算完才加減
     const P = st.p, E = st.e, pA = P.atk | 0, pD = P.def | 0, eA = E.atk | 0, eD = E.def | 0;
-    if (r.kind === 'counter' && r.toE > 0 && pA) { r.toE += pA; notes.push(statNote(st, 'atk', pA)); }
+    if (r.kind === 'counter' && r.toE > 0 && pA) {
+      const a = FX && FX.underdogNoAtk && r.underdog ? 0 : pA;                 // ⑥ 冷門：以小搏大（他大你 2 星以上）那手不加品味
+      if (a) { r.toE += a; notes.push(statNote(st, 'atk', a)); }
+    }
     let caught = false;
-    if (M) {                                                                    // ⑦⑧
-      caught = r.kind === 'counter' && r.toE > 0 && feintOf(st, ePlay.attr);   // 他這手是看得出來的唬、被你剋中＝抓到（＝結果句「你看穿了！」；11-17 起不看計畫色：半指出另一色＝照實、不露不算、第二種唬法照樣算）
-      if (M.counterPlus && r.kind === 'counter' && r.toE > 0) r.toE += M.counterPlus;
+    if (M || FX) caught = r.kind === 'counter' && r.toE > 0 && feintOf(st, ePlay.attr);   // 他這手是看得出來的唬、被你剋中＝抓到（＝結果句「你看穿了！」；11-17 起不看計畫色：半指出另一色＝照實、不露不算、第二種唬法照樣算）
+    const peeked = !!(FX && P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n);   // 看穿確認過的那手：異端不多扣、不回聲望
+    const crit = fac === 'heresy' && caught && !peeked && ((FX.critMult || 1) > 1 || FX.critPre > 0 || FX.critHeal > 0);
+    const cAdd = caught && M && M.critAdd > 0 ? M.critAdd | 0 : 0;             // 換一格（?fac=1&apex=1）：拆穿那手多扣 n
+    if (M && M.counterPlus && r.kind === 'counter' && r.toE > 0) r.toE += M.counterPlus;
+    let critN = 0;
+    if (crit || cAdd) {                                                         // ⑦ 拆穿：多扣（加法；異端 critPre 跟頂點卡 critAdd 同一步取大）、倍數跟頂點卡同一步取大、不相乘
+      critN = crit ? FX.critPre | 0 : 0;
+      r.toE += Math.max(critN, cAdd);
+      const m = Math.max(crit ? FX.critMult || 1 : 1, M && M.mult && r.kind === 'counter' ? M.mult : 1, M && M.crit > 1 && caught ? M.crit : 1);
+      if (m > 1) r.toE = Math.ceil(r.toE * m);
+      if (crit && critN > 0 && critN >= cAdd) fk[FX.critSafe ? 'crit2' : 'crit'] = 1;
+    } else if (M) {                                                             // ⑦⑧
       if (M.mult && r.kind === 'counter' && r.toE > 0) r.toE *= M.mult;
       if (M.crit > 1 && caught) r.toE *= M.crit;
+    }
+    if (M) {
       if (M.bounce && (r.kind === 'countered' || (M.bounceLose && r.kind === 'mirrorLose')) && r.toP > 0) {   // 他這手要扣你的（他品味前）一半捨去改扣他
         const k = Math.floor(r.toP / 2); r.toE += k; r.toP -= k; r.bounced = k;
       }
     }
     if (r.toE > 0 && eD) { const v = half(r.toE, eD); if (v < r.toE) { notes.push(statNote(st, 'eDef', r.toE - v)); r.toE = v; } }
+    if (FX && FX.loseCost > 0 && r.kind === 'mirrorLose' && r.toP > 0 && !(FX.loseFree && (FN.lose | 0) === 0)) { r.toP += FX.loseCost | 0; fk.loseCost = 1; }   // ⑨′ 異端代價：比星輸多扣 1（臉皮厚：每場第一次不多扣）
     if (r.toP > 0) {
       let x = r.toP;
       if (eA) { x += eA; notes.push(statNote(st, 'eAtk', eA)); }
       if (E.hit > 0 && r.kind === 'countered' && feintOf(st, ePlay.attr)) { x += E.hit; notes.push(statNote(st, 'feint', E.hit)); }   // 11-17 被唬到多扣（他的品味之後）
+      if (FX && FX.counteredCost > 0 && r.kind === 'countered') { x += FX.counteredCost | 0; fk.cCost = 1; }   // ⑪′ 冷門代價：被剋多扣 1（有人記得＝不多扣）
       if (pD) { const v = half(x, pD); if (v < x) { notes.push(statNote(st, 'def', x - v)); x = v; } }
       if (M && r.kind === 'countered') { if (M.shield) x = Math.max(1, x - M.shield); if (M.halfIn) x = Math.ceil(x / 2); }   // ⑫ 最少扣 1
+      if (FX && FX.counteredCut > 0 && r.kind === 'countered' && (FN.countered | 0) === 0) { x = Math.max(1, x - FX.counteredCut); fk.cut = 1; }   // 見過世面／冷板凳：每場第一次被剋少扣 2（最少 1）
       r.toP = x;
     }
+    if (FX && FX.tieCost > 0 && same && r.kind === 'tie' && !(FX.tieFree && (FN.tie | 0) === 0)) { r.toP += FX.tieCost | 0; fk.tieCost = 1; }   // ⑫′ 經典代價：同色平手你扣 1（老派：每場第一次不算）
+    if (FX && FX.thorn > 0 && r.kind === 'countered' && (FN.thorn | 0) < (FX.thornMax | 0)) { r.toE += FX.thorn | 0; fk.thorn = 1; }   // 第二招反傷（冷門）：被剋他也扣 2（不吃他的底氣），一場最多 thornMax 次
     if (M && M.leech && caught) r.heal = Math.min(Math.max(0, st.p.max - st.p.hp), Math.ceil(Math.min(r.toE, Math.max(0, st.e.hp)) / 2));   // ⑬（resolveTurn 扣完聲望後回）
+    if (FX) {                                                                   // ⑬ 回聲望：第二招吸血（經典：整張那手扣到的一半，一場最多 leechMax）、異端拆穿回 critHeal（＋回音）；跟頂點卡取大、不相加
+      let fh = 0, hk = null;
+      if (FX.leech && fk.full && (FN.leech | 0) < (FX.leechMax | 0)) { fh = Math.min((FX.leechMax | 0) - (FN.leech | 0), Math.ceil(Math.min(r.toE, Math.max(0, E.hp)) / 2)); hk = 'leech'; }
+      if (crit && r.toE >= 1 && FX.critHeal > 0) { const h = (FX.critHeal | 0) + (FX.critHealPlus | 0); if (h > fh) { fh = h; hk = 'heal'; } }
+      const pre = AX && AX.on && AX.on.hyp ? AX.ops.reduce((a, x) => a + (x.op === 'heal' ? x.params.n | 0 : 0), 0) : 0;   // preview 假設這手發動回聲望型王牌：resolve 時已先回了（activateApex）
+      const fv = fh > 0 ? Math.min(Math.max(0, P.max - Math.min(P.max, P.hp + pre)), fh) : 0;
+      if (fv > 0 && fv > (r.heal | 0)) { r.heal = fv; fk[hk] = 1; }
+    }
     r.notes = notes; r.pStar = ps;
     if (AX) {
       const x = apexInfo(st, AX, r, base, pPlay, ePlay, caught, ps, es);
       r.apex = x.info; if (x.note) notes.push(x.note);
+    }
+    if (FX) {                                                                   // 結果行小字 {fac, kind, n, text}（SPEC-D §3.10）；{n}：整張／借／以小搏大＝這手扣他的總數，其他＝多扣／回的那一份
+      const NT = st.facNotes || {};
+      const nOf = { full: r.toE, borrow: r.toE, underdog: r.toE, crit: critN, crit2: critN, heal: r.heal | 0, leech: r.heal | 0, loseCost: FX.loseCost | 0, cCost: FX.counteredCost | 0, tieCost: FX.tieCost | 0, thorn: FX.thorn | 0 };
+      r.fac = Object.assign({}, fk);
+      for (const k of FAC_NOTE_ORDER) if (fk[k] && NT[k]) notes.push({ fac, kind: k, n: nOf[k], text: String(NT[k]).replace(/\{n\}/g, nOf[k]) });
+      if (commit) {
+        const FC = P.facN || (P.facN = {});
+        if (same && r.kind === 'tie') FC.tie = (FC.tie | 0) + 1;
+        if (r.kind === 'countered') FC.countered = (FC.countered | 0) + 1;
+        if (r.kind === 'mirrorLose') FC.lose = (FC.lose | 0) + 1;
+        if (fk.thorn) FC.thorn = (FC.thorn | 0) + 1;
+        if (fk.leech) FC.leech = (FC.leech | 0) + (r.heal | 0);
+        if (r.kind === 'counter' && r.toE > 0 && !caught && st.plan && st.plan.hint && (st.plan.hint.kind || 'one') === 'one' && ePlay.attr === st.plan.hint.attr) FC.honest = (FC.honest | 0) + 1;   // 信對（明指照實、你剋中）：派樹深耕用（棒三）
+        if (caught && !peeked) FC.caught = (FC.caught | 0) + 1;                // 拆穿（剋中他看得出來的唬）
+        const SF = st.stats.fac || (st.stats.fac = {}); for (const k of Object.keys(fk)) SF[k] = (SF[k] | 0) + 1;
+      }
     }
     return r;
   }
@@ -636,6 +777,8 @@
   // playerDef(content, {bag:[ids], ace:tier, aceId?, relics:[ids], hp?, maxHp?, atk?, def?}, {apex?}) — a run (or anything shaped like it) → pDef
   //   run 帶著走的聲望（hp／maxHp）、品味（atk）、底氣（def）；沒有就 CFG.playerHp、0、0（教學重看、直接開打）
   //   o.apex（頂點卡試做）：王牌＝apexAceId(src, content) 那張，多 ability（能力複本）、apexText（結果句樣板）；沒有 content.apexTrial 就照舊
+  //   o.fac（第 D 波棒二三流派；startFight 照 run.fac 給、序章不給）：src.fac 有＋content.factions 有 → 多 fac（派）、fx（facFxOf：被動＋本派選項）、facNotes（結果行樣板）、facIcon；
+  //     跟 o.apex 同開時王牌能力走 apexAbilityOf（換一格），結果句樣板多 apexSwap.notes（critAdd）
   function playerDef(content, src, o) {
     const hp = Number.isInteger(src.hp) && src.hp > 0 ? src.hp : CFG.playerHp;
     const maxHp = Number.isInteger(src.maxHp) && src.maxHp >= hp ? src.maxHp : Math.max(hp, CFG.playerHp);
@@ -643,10 +786,16 @@
     const d = { hp, maxHp, atk: src.atk | 0, def: src.def | 0, noteText: (((content || {}).trial || {}).notes) || null,
       bag: (src.bag || []).map(x => cardFrom(content, x)), ace: src.ace ? cardFrom(content, apex ? apexAceId(src, content) : content.aces[src.ace]) : null,
       relics: (src.relics || []).map(r => relicObj(r, content)).filter(Boolean) };
+    const fac = !!(o && o.fac) && !!src.fac && typeof src.fac === 'object' && TIERS.includes(src.ace) && !!facCfg(content);
     if (apex && d.ace) {
-      d.ability = abilityOf(content, d.ace.id);
+      d.ability = fac ? apexAbilityOf(content, d.ace.id, src) : abilityOf(content, d.ace.id);
       const A = apexCfg(content);
       d.apexText = { notes: clone(A.notes || {}), holdNotes: clone(A.holdNotes || {}) };
+      if (fac) { const S = facCfg(content).apexSwap; if (S && S.notes) Object.assign(d.apexText.notes, clone(S.notes)); }
+    }
+    if (fac) {                                                // 第 D 波棒二：派別被動（outcome 的派別路）
+      const F = facCfg(content);
+      d.fac = src.ace; d.fx = facFxOf(content, src, src.ace); d.facNotes = clone(F.notes || {}); d.facIcon = (F[src.ace] && F[src.ace].icon) || null;
     }
     return d;
   }
@@ -682,6 +831,11 @@
       st.apexMode = true; st.p.ability = clone(pDef.ability); st.p.apexOn = null;
       st.apexText = pDef.apexText ? clone(pDef.apexText) : null;
       st.stats.apexAt = 0; st.stats.apexHits = 0;
+    }
+    // 第 D 波棒二三流派（pDef.fac）：被動 fx、這場的計數 facN（同色平手／被剋／比星輸／反傷次數／吸血回了幾／信對／拆穿）、結果行樣板；沒有就一個欄位都不加
+    if (pDef.fac && pDef.fx) {
+      st.p.fac = pDef.fac; st.p.fx = clone(pDef.fx); st.p.facN = {}; st.p.facIcon = pDef.facIcon || null;
+      st.facNotes = pDef.facNotes ? clone(pDef.facNotes) : null; st.stats.fac = {};
     }
     const P = st.p, E = st.e;
     // 放水照位數機率（第 11 位起；eDef.mercyP < 1 才有這兩欄，其他對決的狀態一字不改）：mercyKey＝對決種子（mercyOn 的雜湊用；不取 duel.rng）
@@ -922,6 +1076,7 @@
     const r = outcome(st, actPlay(st, act), e, false, act.apex ? 'on' : undefined);
     const out = { kind: r.kind, toE: r.toE, toP: r.toP, blocked: r.blocked, by: r.by, notes: r.notes };
     if (st.apexMode) { out.heal = r.heal | 0; out.apex = r.apex || null; }
+    if (st.p.fac) { out.heal = r.heal | 0; out.fac = r.fac || {}; }   // 第 D 波棒二：回聲望（吸血／拆穿）、這手觸發了哪些派別效果（＝clash 事件的 heal、fac）
     return out;
   }
 
@@ -951,6 +1106,7 @@
       why: plan.why, rel: plan.rel || null };                       // 11-17：why（honest｜bluff｜read｜readHonest｜ace…）、rel（他讀你時看的你上一手應對）給結果句
     if (st.script) sum.script = true;                               // 教學那場：結果句照舊念關鍵字（duel.js clashText）
     if (st.apexMode) { sum.apex = r.apex || null; if (r.apex && r.apex.hit) S.apexHits = (S.apexHits | 0) + 1; }
+    if (P.fac) { sum.fac = Object.assign({}, r.fac || {}); sum.heal = r.heal | 0; }   // 第 D 波棒二：這手觸發了哪些派別效果（{full:1…}；結果行小字在 notes）、回了幾聲望
     st.last = sum;
     // log 每手記打完的聲望（pHp／eHp）：結算「第 n 手被翻盤」直接用，不從 toP／toE 往回推（頂點卡回聲望不在 toP 裡，推回來會造假；審查 A-1）。
     //   heal＝這手你實際回了幾聲望（頂點卡發動＋拆穿回血；有才記）：這手開打前＝pHp＋toP−heal
@@ -961,7 +1117,7 @@
       { pId: pPlay.card ? pPlay.card.id : null, eId: eCard ? eCard.id : null, pStar: r.pStar, eStar: ePlay.star, by: r.by == null ? null : r.by, not: hint.not, rel: plan.rel || null,
         notes: r.notes.map(x => Object.assign({}, x)) },
       act.ace ? { ace: true } : {}, ePlay.ace ? { eAce: true } : {}, st.script ? { script: true } : {},
-      st.apexMode ? { apex: r.apex ? Object.assign({}, r.apex) : null } : {}));
+      st.apexMode ? { apex: r.apex ? Object.assign({}, r.apex) : null } : {}, P.fac ? { fac: Object.assign({}, r.fac || {}) } : {}));
     events.push(Object.assign({ t: 'clash' }, sum, { pHp: P.hp, eHp: E.hp }));
     P.last = pPlay.attr; E.last = ePlay.attr;
     E.thrown.push(eCard); E.hand.splice(eSide.i, 1); st.plan = null;
@@ -1038,6 +1194,11 @@
       out.apex = { card: P.ace, id: A.id, name: A.name, text: A.text, timing: A.timing, op: A.op, params: clone(A.params || {}), hold: A.hold ? clone(A.hold) : null,
         can: canApex(st), used: !!P.aceUsed, on: P.apexOn ? P.apexOn.n : null, live: AX ? AX.src : null, full: !P.aceUsed && apexFull(st) };
       out.apexReveal = pl && P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n ? P.apexOn.reveal : null;
+    }
+    if (P.fac && P.fx) {                                  // 第 D 波棒二三流派：頂欄一字圖示、本派說明（被動＋代價＋這場第二招還剩幾）
+      const fx = P.fx, N = P.facN || {};
+      out.fac = { tier: P.fac, icon: P.facIcon || null, fx: clone(fx), n: { tie: N.tie | 0, countered: N.countered | 0, lose: N.lose | 0, leech: N.leech | 0, thorn: N.thorn | 0 },
+        left: { leech: fx.leech ? Math.max(0, (fx.leechMax | 0) - (N.leech | 0)) : null, thorn: fx.thorn > 0 ? Math.max(0, (fx.thornMax | 0) - (N.thorn | 0)) : null } };
     }
     return out;
   }
@@ -1558,6 +1719,7 @@
       consign: null, fortune: null, safety: !!(W.safety.on && o.safety && !from), found: [] });
     // 第 D 波樂歷（SPEC-D §2.7）：talent／relicPick／goldAdd（＝talentArgs 給的）。全沒給或全 0＝run 一個欄位都不多（逐字現況）
     if (o.talent || o.relicPick || o.goldAdd) applyTalent(run, content, o);
+    if (o.fac && facCfg(content)) run.fac = { picks: {}, tal: {}, trialNodes: {} };   // 第 D 波棒二三流派（?fac=1；畫面 createRun 傳 fac:true）：存在 run 裡、續玩照 run（R-F9）。tal／trialNodes 給棒三（派樹、錄音室試錄）
     if (from) {                                                  // 中繼點開局：快速選秀（撿盤 k 次二選一＋升級 m 次三選一）→ 特價箱 → 從第 N 位開打（pos 先留 1，draftDone 才跳）
       run.cpFrom = from;
       const D = draftPlan(content, from);
@@ -1969,7 +2131,9 @@
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp || CFG.playerHp;
     run.hpIn = run.hp;                                        // 說情重打從這裡開始（裁定 8）
     if (!prologue) run.fought = true;                          // 跟客人開打過：之後這一趟不能再換王牌（canSwitchAce）
-    const r = startDuel(playerDef(content, run, apex ? { apex: true } : undefined), eDef, opts);
+    const fac = !!run.fac && !prologue && !!facCfg(content);   // 第 D 波棒二三流派：照 run.fac（不看網址，R-F9）；序章那場沒有，第 1 位客人起生效
+    const po = apex || fac ? Object.assign(apex ? { apex: true } : {}, fac ? { fac: true } : {}) : undefined;
+    const r = startDuel(playerDef(content, run, po), eDef, opts);
     run.duel = r.duel; run.duelEnemy = enemyId;
     return { duel: r.duel, events: r.events, enemyId };
   }
@@ -1994,7 +2158,8 @@
     const met = uniq(duel.e.thrown.map(c => c.id));
     for (const id of met) if (!S.met.includes(id)) S.met.push(id);
     run.duel = null; run.duelEnemy = null;
-    let earn = 0, heal = 0, ups = 0, aceWon = null, aceFirst = false, aceNew = false, aceUnlock = null, extra = null;
+    let earn = 0, heal = 0, ups = 0, aceWon = null, aceFirst = false, aceNew = false, aceUnlock = null, extra = null, lowHeal = 0;
+    if (duel.p.fac && duel.stats.fac) { if (!S.fac || typeof S.fac !== 'object') S.fac = {}; S.fac.fights = (S.fac.fights | 0) + 1; for (const k of Object.keys(duel.stats.fac)) S.fac[k] = (S.fac[k] | 0) + duel.stats.fac[k]; }   // 第 D 波棒二：一趟的派別觸發累計（run.stats.fac；sim、上線後記）
     if (win) {
       S.wins++;
       earn = Math.max(0, econ(content).win[cls] | 0);
@@ -2011,7 +2176,8 @@
         for (const id of cards) if ((E.deck || []).some(c => (c && c.id || c) === id) && !run.drops.includes(id)) run.drops.push(id);
       } else {
         S.beaten++;
-        const winHeal = duel.apexMode && apexCfg(content) && Number.isInteger(apexCfg(content).winHeal) ? apexCfg(content).winHeal : T.heal;   // 頂點卡試做：回 winHeal
+        let winHeal = duel.apexMode && apexCfg(content) && Number.isInteger(apexCfg(content).winHeal) ? apexCfg(content).winHeal : T.heal;   // 頂點卡試做：回 winHeal
+        if (duel.p.fac && duel.p.fx && duel.p.fx.lowHeal > 0 && duel.p.hp * 2 < duel.p.max) { lowHeal = duel.p.fx.lowHeal | 0; winHeal += lowHeal; }   // 第 D 波棒二 冷門「熟客」：聲望不到一半時打贏多回
         run.hp = Math.min(run.maxHp, Math.max(1, duel.p.hp) + winHeal);   // 打贏回 3（不超過上限）
         heal = run.hp - Math.max(1, duel.p.hp);
         ups = gainXp(run, T, T.xp[cls] | 0);
@@ -2069,6 +2235,7 @@
     const out = { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon, aceFirst, aceNew, aceUnlock };
     if (extra) out.packetCash = extra.packet && extra.packet.kind === 'cash' ? extra.packet.n : 0;   // 第 C 波：紅包那筆（已入帳；畫面 cashAfter 起點要扣回、再演第二段）
     if (extra && extra.kind === 'chest' && extra.dareCash) out.dareCash = extra.dareCash;
+    if (lowHeal) out.lowHeal = lowHeal;                      // 第 D 波棒二：熟客多回的那幾點（已含在 heal 裡；畫面可以補一句）
     return out;
   }
   // 獎勵收完：有升級就先選（連升就連選），選完才到下一位
@@ -2079,11 +2246,18 @@
     advance(run, p, content);
   }
   // 三選一：第一格固定是品味或底氣（照 run 的雜湊），其他照 品味→底氣→聲望上限
-  function levelOffer(run, content) {
+  //   第 D 波棒二（run.fac）：要選的那一級（level − levelUps＋1）逢 levelEvery（Lv5、10、15…）多第 4 格本派 {pick:'fac', id}（佔那一級：拿了不加屬性，聲望上限 +1 照加）；
+  //   o.draft（中繼點選秀）不出本派格（SPEC-D §3.5、CRITIQUE 2.1；跳過的不補發：R-F11）
+  function levelOffer(run, content, o) {
     if (run.pending && run.pending.type === 'level' && Array.isArray(run.pending.offer)) return run.pending.offer.map(x => Object.assign({}, x));
     const T = trialCfg(content, run.tier), k = (run.picks || []).length;
     const first = hash01(run.seedKey + '#' + run.runNo + '#lv' + (k + 1)) < 0.5 ? 'atk' : 'def';
-    return [first].concat(['atk', 'def', 'hp'].filter(x => x !== first)).map(pick => ({ pick, n: T.picks[pick] | 0 }));
+    const out = [first].concat(['atk', 'def', 'hp'].filter(x => x !== first)).map(pick => ({ pick, n: T.picks[pick] | 0 }));
+    if (run.fac && !(o && o.draft)) {
+      const F = facCfg(content), lv = (run.level | 0) - (run.levelUps | 0) + 1;
+      if (F && F.occupy !== false && facDue(run, content, lv)) out.push(...facOffer(run, content, lv).slice(0, 1));
+    }
+    return out;
   }
   // 下一位（第 5 位打完：新一輪的 5 位、說情重設、商店補貨）；走到中繼點那一位就記（SPEC §0「走到就記」）
   function advance(run, p, content) {
@@ -2339,6 +2513,7 @@
     run.bag.forEach((id, k) => { if (!slots.includes(k)) bag.push(id); else if (j < next.length) bag.push(next[j++]); });   // 原位換；不夠的格子拿掉
     const fromId = want != null || run.aceId != null ? apexAceId(run, content) : null;
     run.bag = bag; run.ace = tier; run.gifts = next.slice();
+    if (run.fac) run.fac = Object.assign({}, run.fac, { picks: {}, tal: {} });   // 第 D 波棒二：換派＝本派選項清空（第 1 位開打前，本來就空）、派樹換新派的（棒三）
     if (want != null) run.aceId = want; else if (run.aceId != null) delete run.aceId;
     run.taken = Math.max(0, (run.taken | 0) + next.length - lost.length);
     if (run.bossAce === tier || !TIERS.includes(run.bossAce)) run.bossAce = bossAceFor(run.seedKey, run.runNo, tier);
@@ -2838,7 +3013,7 @@
       wcRoad(run, cards);
       return { kind: 'card', cards };
     }
-    return { kind: 'level', offer: levelOffer(run, content) };
+    return { kind: 'level', offer: levelOffer(run, content, { draft: true }) };   // 第 D 波棒二：選秀不出本派格
   }
   // 選秀做完：pos＝N、round、idx、order、說情、這一輪藏家的卡、補貨、一檔貨上架到 idx（＝jumpTo 的做法；不記中繼點＝不是走到的）
   function draftDone(run, content) {
@@ -3043,12 +3218,21 @@
       // 升級三選一（pending level）：品味 +1、底氣 +1、聲望上限 +2（現有聲望也 +2）；連升就再開一次，選完才到下一位
       case 'level': {
         if (!p || p.type !== 'level') return fail('noLevel');
-        const o = (p.offer || []).find(x => x && x.pick === ch.pick);
+        const o = (p.offer || []).find(x => x && x.pick === ch.pick && (ch.pick !== 'fac' || x.id === ch.id));
         if (!o) return fail('notOffered');
-        const n = o.n | 0;
-        if (o.pick === 'atk') run.atk += n; else if (o.pick === 'def') run.def += n; else { run.maxHp += n; run.hp += n; }
-        run.picks.push(o.pick); run.levelUps = Math.max(0, run.levelUps - 1);
-        effects.push({ level: o.pick, n });
+        if (o.pick === 'fac') {                                  // 第 D 波棒二本派選項（第 4 格；佔那一級＝不加屬性，聲望上限 +1 已在升級時加）：{type:'level', pick:'fac', id}
+          const fd = run.fac && facPickDef(content, run.ace, o.id);
+          if (!fd || run.fac.picks[o.id] > 0) return fail('notOffered');
+          run.fac.picks[o.id] = 1;
+          if (fd.op === 'maxHp') { run.maxHp += fd.n | 0; run.hp += fd.n | 0; }   // 冷門「地下串連」：聲望上限 +3（現有聲望也 +3）
+          run.picks.push('fac:' + o.id); run.levelUps = Math.max(0, run.levelUps - 1);
+          effects.push({ level: 'fac', id: o.id, n: fd.op === 'maxHp' ? fd.n | 0 : 0 });
+        } else {
+          const n = o.n | 0;
+          if (o.pick === 'atk') run.atk += n; else if (o.pick === 'def') run.def += n; else { run.maxHp += n; run.hp += n; }
+          run.picks.push(o.pick); run.levelUps = Math.max(0, run.levelUps - 1);
+          effects.push({ level: o.pick, n });
+        }
         run.pending = null;
         if (run.levelUps > 0) run.pending = { type: 'level', enemyId: p.enemyId, pos: p.pos, level: run.level - run.levelUps + 1, offer: levelOffer(run, content) };
         else advance(run, null, content);
@@ -3182,6 +3366,7 @@
       // 中繼點開局選秀（{type:'draft', cardId}｜{type:'draft', pick}）：撿盤＝撿來的（$400）、進唱片櫃「認識」、可當一趟留一張；升級＝等級 +1、聲望上限 +levelHp、再三選一
       case 'draft': {
         if (!p || p.type !== 'draft' || !p.offer) return fail('noDraft');
+        if (ch.pick === 'fac') return fail('bad');                 // 第 D 波棒二：選秀不收本派格（原型 bug：白升一級；CRITIQUE 2.1）
         const of = p.offer;
         if (of.kind === 'card') {
           if (!(of.cards || []).includes(ch.cardId) || !cardOf(content, ch.cardId)) return fail('notOffered');
@@ -3493,8 +3678,10 @@
     if (p.type === 'stall' || p.type === 'draft') return cPolicy(run, content, o);   // 第 C 波：攤位、選秀交給 cPolicy
     if (p.type === 'retry') return { type: 'retry' };
     if (p.type === 'level') {                                  // harness MIX：A D A H D A X D A H（X＝引擎沒有「不加」→ 聲望上限）
-      const mix = o.levelMix || LEVEL_MIX, want = mix[(run.picks || []).length % mix.length];
-      const offer = p.offer || [], pick = (offer.find(x => x.pick === want) || offer[0] || {}).pick;
+      const offer = p.offer || [];
+      if (o.facPick !== false) { const f = offer.find(x => x && x.pick === 'fac'); if (f) return { type: 'level', pick: 'fac', id: f.id }; }   // 第 D 波棒二：本派格出了就拿（SPEC-D §3.5；o.facPick false＝不拿）
+      const mix = o.levelMix || LEVEL_MIX, want = mix[(run.picks || []).filter(x => !String(x).startsWith('fac:')).length % mix.length];   // MIX 只數屬性那幾次（本派格不算）
+      const pick = (offer.find(x => x.pick === want) || offer[0] || {}).pick;
       return pick ? { type: 'level', pick } : null;
     }
     const cOf = id => content.cards[id];
@@ -3808,7 +3995,8 @@
     WAVEC, wcCfg, floorAt, wcTh, wcPool, lootRow, chestRow, stallSession, stallResume, stallUnlocked, stallLadder, cPolicy, gigPrice, gigKeepN, draftPlan, expLevel,
     deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound,
     CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
-    talentArgs, applyTalent, gainXp, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf };
+    talentArgs, applyTalent, gainXp, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
+    FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });
