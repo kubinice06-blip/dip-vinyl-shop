@@ -5,7 +5,7 @@
 //   CAREER_PREV＝「C 版頁面」的 git ref（第 7、8 項；預設 8e1731b9f＝第 C 波合併後的 main，?v=82、SAVE_V 8、只記 lexpBank）：
 //     game-lab-c/ 底下的請求由這支直接用 `git show <ref>:game-lab/<檔>` 回應（跟 game-lab/ 同源＝localStorage 共用，才測得到退版／跨版）
 //
-// 數字照規格寫死（不從 content 讀，免得引擎跟資料一起錯也過）：一趟＝round((15×位數＋8×最多連贏＋破紀錄 30＋路線) × (沒到第 10 位 ? 2 : 1))、
+// 數字照規格寫死（不從 content 讀，免得引擎跟資料一起錯也過）：一趟＝round((15×打過的位數＋8×最多連贏＋破紀錄 30＋路線) × (沒到第 10 位、帳號也還沒走到過、不是放棄 ? 2 : 1))、
 //   路線＝min(min(演唱會, ⌊0.25×基本⌋)＋其他四項, ⌊0.40×基本⌋)；Lv n→n+1 要 100n（n<10）、之後 1,000；點數＝等級−1；戰力天賦第 k 級 6k 點、Lv8 開，備用說情 15 點 Lv20。
 //
 // 每個尺寸：
@@ -13,7 +13,7 @@
 //      career.xp＝1170（照總額截）、熟練度逐趟截、餘數給 lastAce、lexpBank 金額鍵歸零（runs 計數留著）、兩趟標 banked、Lv2–5 各抽一張（src lexp）、
 //      過場卡 3 張（Lv2、Lv3、再升 2 級；最後一張有「去點天賦」）、存回去還是 v8、.bak8＝原字串；重新整理＝不再入帳、不再吐司、沒有過場卡；標題第二行「樂歷 Lv 5・下一個：Lv8 戰力天賦 ›」＋小圓點
 //   2  C2 結算頁：輸掉 → 標題同一列「樂歷 +n ›」n＝careerGain＝規格公式＝runs[k].gain.total＝career.xp 增加的量；再畫一次結算不重記；375×548 不捲；
-//      點開明細（位數・連贏・破紀錄・還沒走到第 10 位 ×2）；「再挑戰一趟」→ 過場卡（Lv5＋抽到的盤＋去點天賦）→ 去點天賦＝樂歷頁、留在結算；
+//      點開明細（走了幾位・最多連贏・破紀錄・還沒走到第 10 位 ×2）；「再挑戰一趟」→ 過場卡（Lv5＋抽到的盤＋去點天賦）→ 去點天賦＝樂歷頁、留在結算；
 //      重新整理後 xp 不變、「看上一趟結算」數字一樣；再按「再挑戰一趟」沒有過場卡、照常開下一趟
 //   2b 結算最擠的組合也不捲（375×548）：輸給誰＋翻盤＋中繼點開局＋兩個中繼點＋帶走一張；「這一趟的唱片都有了」（出那面牆）＋一個中繼點（＝e2e.spec #48 的狀態）
 //   3  C3 樂歷頁（Lv6）：標題第二行點進去；頭「樂歷 Lv 6」「天賦點 5」、頂端「戰力天賦 Lv8 開…」；戰力四項＋稀有率灰（樂歷 Lv8 開）、備用說情（Lv20 開）、
@@ -36,6 +36,7 @@
 //   10 C10 演唱會買票面板：「每張樂歷 +20・這一趟還能算 3 張（越往後走越多）」（n＝gigRoom＝⌊(⌊0.25×基本⌋−已算)/20⌋）；已算到上限 →「這一趟的演唱會樂歷已到上限，買票只算聽歌」
 //   11 新手第一次挑派（SPEC-D §3.9、§14-1 B）：序章猜錯（猜異端那張）→ 挑王牌面板預設停冷門流、冷門「新手推薦」、經典「前期較難」、異端不標、名號「經典流・經 7」；
 //      猜對（今晚是經典那張）→ 停在經典流（標照出）；不是第一次挑（點老闆換）沒有標
+//   12 放棄那一趟（棒一審查）：標題連按兩下「重新推門」→ runs 那筆 abandon、第 1 位 0 場＝樂歷 0；第 4 位還沒打＝只算打過的 3 位、沒有新手 ×2（gain.quit 1）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
 import { execFileSync } from 'child_process';
@@ -57,13 +58,14 @@ const J = x => JSON.stringify(x);
 // ---- 規格公式（SPEC-D §2.1、§2.2、§2.6；寫死） ----
 const capped = L => { const B = L.base | 0, v = k => L[k] | 0; return { base: B, route: Math.min(Math.min(v('gig'), Math.floor(0.25 * B)) + v('home') + v('promo') + v('packet') + v('demo'), Math.floor(0.40 * B)) }; };
 const levelOf = xp => { let lv = 1; for (;;) { const need = lv < 10 ? 100 * lv : 1000; if (xp < need) return lv; xp -= need; lv++; } };
-// 一趟：ent＝runs[k]（reached、bestStreak、from、lexp）、best＝開局前的最遠
-function gainSpec(ent, best) {
+// 一趟：ent＝runs[k]（reached、bestStreak、from、lexp）、best＝開局前的最遠；o.quit＝放棄（沒有 ×2）、o.open＝放棄時站著那一位沒打完（少算那一位）
+//   新手 ×2 只給「這一趟沒到第 10 位、帳號也還沒走到過第 10 位（best < 10）、不是放棄」的那一趟（棒一審查：放棄／故意輸在第 9 位刷樂歷）
+function gainSpec(ent, best, o = {}) {
   const from = ent.from > 1 ? ent.from : 1, reached = ent.reached | 0;
-  const base = 15 * Math.max(0, reached - from + 1) + 8 * (ent.bestStreak | 0);
+  const base = 15 * Math.max(0, reached - from + 1 - (o.open ? 1 : 0)) + 8 * (ent.bestStreak | 0);
   const record = best > 0 && reached > best ? 30 : 0;
   const route = capped(Object.assign({}, ent.lexp || {}, { base })).route;
-  const mul = reached < 10 ? 2 : 1;
+  const mul = reached < 10 && best < 10 && !o.quit ? 2 : 1;
   return { base, record, route, mul, total: Math.round((base + record + route) * mul) };
 }
 
@@ -268,7 +270,8 @@ async function runSize(browser, w, h) {
       const m = await C(page, () => { const g = document.querySelector('.lb-modal .cx-gain'); return g ? { h1: g.querySelector('.lb-h1').textContent, li: [...g.querySelectorAll('.cx-parts li')].map(x => x.textContent), page: !!g.querySelector('[data-a=cxpage]') } : null; });
       await jsClick(page, '.lb-modal [data-x]'); await sleep(400);
       const from = e0.ent.from > 1 ? e0.ent.from : 1;
-      const liWant = [fill(x.partPos, { n: 15 * (e0.ent.reached - from + 1) }), fill(x.partStreak, { n: 8 * e0.ent.bestStreak })].concat(spec.record ? [fill(x.partRecord, { n: spec.record })] : [])
+      const nPos = e0.ent.reached - from + 1;
+      const liWant = [fill(x.partPos, { k: nPos, n: 15 * nPos })].concat(e0.ent.bestStreak > 0 ? [fill(x.partStreak, { k: e0.ent.bestStreak, n: 8 * e0.ent.bestStreak })] : []).concat(spec.record ? [fill(x.partRecord, { n: spec.record })] : [])
         .concat(spec.route ? [fill(x.partRoute, { n: spec.route })] : []).concat([fill(x.partLow, { n: 10, m: 2 })]);
       // 再挑戰一趟 → 過場卡（xp 990＋這一趟 ≥1000＝Lv5）→ 去點天賦
       await jsClick(page, '[data-a=again]');
@@ -523,6 +526,11 @@ async function runSize(browser, w, h) {
       const career = { xp: 6500, spent: { atk: 1, money: 1 }, prof: { hall: 900, pearl: 0, heresy: 0 }, drawn: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] };
       await seedCareer(page, { career, run: { ace: 'hall', idx: 3, talent: true }, runs: [{ seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 14, bestStreak: 6, taken: 5, wins: 13, level: 4, checkpoints: [10], gain: { base: 258, record: 0, route: 0, cut: 0, mul: 1, total: 258 } }],
         best: { far: 14, checkpoints: [10], bestStreak: 6 } });
+      // 樂歷抽到的兩張（src lexp、career.got 記著）：C 版頁面的 SHELF_SRC 沒有 lexp，載入會洗成 gift；回 D 版要照 got 補回來（棒一審查）
+      const lexpIds = await C(page, () => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')), E = window.DipLabEngine, Cn = window.DipLabContent;
+        const ids = Object.keys(Cn.cards).sort().filter(id => E.canSeed(Cn, id) && !Cn.cards[id].tier && !s.shelf[id]).slice(0, 2);
+        ids.forEach(id => { s.shelf[id] = { at: 'e2e#1', seen: true, own: true, src: 'lexp', ownAt: 'e2e#1' }; }); s.career.got = ids.slice();
+        localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); return ids; });
       await openTitle(page, Q()); await sleep(500);
       const d0 = await C(page, () => ({ career: JSON.parse(localStorage.getItem('dipGameLab_v1')).career, talent: window.__lab.run.talent || null, atk: window.__lab.run.atk }));
       // C 版頁面
@@ -534,18 +542,23 @@ async function runSize(browser, w, h) {
       await jsClick(page, '[data-a=go]');
       const endedC = await loseToEnd(page);
       await sleep(800);
-      const c1 = await C(page, () => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return { v: s.v, career: s.career, lb: s.lexpBank, ent: s.runs[s.runs.length - 1] }; });
+      const c1 = await C(page, ids => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); return { v: s.v, career: s.career, lb: s.lexpBank, ent: s.runs[s.runs.length - 1], src: ids.map(id => s.shelf[id] && s.shelf[id].src) }; }, lexpIds);
       // 回 D 版
       await openTitle(page, Q()); await sleep(1500);
       const x = await CU(page), t = await toasts(page);
-      const d1 = await C(page, () => { const S = window.__lab.save; return { xp: S.career.xp, banked: S.runs.map(r => r.banked || 0), lb: S.lexpBank, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.xp }; });
+      const d1 = await C(page, ids => { const S = window.__lab.save; return { xp: S.career.xp, banked: S.runs.map(r => r.banked || 0), lb: S.lexpBank, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.xp,
+        src: ids.map(id => S.shelf[id] && S.shelf[id].src), own: ids.every(id => S.shelf[id] && S.shelf[id].own) }; }, lexpIds);
+      // 「看上一趟結算」：那一趟是 C 版頁面記的（runs 那筆沒有 gain，開機入帳一筆總額收了）→ 結算頁不出「樂歷 +n」（不會跟入帳的數字對不上；棒一審查）
+      let ce = null;
+      if (await page.$('[data-a=end]')) { await jsClick(page, '[data-a=end]'); await waitScreen(page, 'end'); await sleep(900); ce = await C(page, () => ({ scr: window.__lab.screen(), cxp: !!document.querySelector('.lb-cxp'), xp: window.__lab.save.career.xp })); }
       const add = c1.lb ? (b => b.base + b.route)(capped(c1.lb)) : -1;
       const zero = L => ['base', 'gig', 'home', 'promo', 'packet', 'demo'].every(k => L[k] === 0);
       const ok = J(d0.career.spent) === J(career.spent) && J(d0.talent) === J({ atk: 1, money: 1 }) && !c0.ro && c0.cont && c0.career && c0.atk === d0.atk && /game-lab-c\/ui\.js\?v=82/.test(c0.ver) && endedC &&
-        c1.v === 8 && J(c1.career) === J(d0.career) && c1.lb && c1.lb.base > 0 && c1.ent && c1.ent.lexp && !c1.ent.gain &&
-        add > 0 && t.includes(fill(x.depositMore, { n: add })) && d1.xp === 6500 + add && d1.stored === d1.xp && J(d1.banked) === '[0,1]' && zero(d1.lb);
+        c1.v === 8 && J(c1.career) === J(d0.career) && c1.lb && c1.lb.base > 0 && c1.ent && c1.ent.lexp && !c1.ent.gain && lexpIds.length === 2 && J(d0.career.got) === J(lexpIds) && J(c1.src) === '["gift","gift"]' &&
+        add > 0 && t.includes(fill(x.depositMore, { n: add })) && d1.xp === 6500 + add && d1.stored === d1.xp && J(d1.banked) === '[0,1]' && zero(d1.lb) && J(d1.src) === '["lexp","lexp"]' && d1.own &&
+        ce && ce.scr === 'end' && !ce.cxp && ce.xp === d1.xp;
       record(7, size, ok && !errs(page).length, `D 存檔 ${J(d0)}；C 版頁面 ${J(c0)} 打完 ${endedC} → 存檔 ${J({ v: c1.v, careerSame: J(c1.career) === J(d0.career), lb: c1.lb, ent: c1.ent && { lexp: c1.ent.lexp, gain: c1.ent.gain } })}；` +
-        `回 D 版 吐司 ${J(t)}（要「${fill(x.depositMore, { n: add })}」）${J(d1)}；${errTx(page)}`);
+        `回 D 版 吐司 ${J(t)}（要「${fill(x.depositMore, { n: add })}」）${J(d1)}；樂歷盤來源 C 版 ${J(c1.src)} → D 版 ${J(d1.src)}；看上一趟結算 ${J(ce)}（不出樂歷那行）；${errTx(page)}`);
     } catch (e) { record(7, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -664,6 +677,28 @@ async function runSize(browser, w, h) {
     const acexOk = a => a && ['hall', 'pearl', 'heresy'].every(t => a[t].startsWith(x.aceTitle[t] + '・') && / 7$/.test(a[t]) && !/殿堂|流亡|派/.test(a[t]));
     const ok = W.tonight === 'hall' && W.sel === 'pearl' && tagsOk(W.tags) && acexOk(W.acex) && W.okIn && !W.errs && R.sel === 'hall' && tagsOk(R.tags) && R.okIn && !R.errs && later && later.up && later.tags === 0 && later.sel === 'hall' && !later.errs;
     record(11, size, ok, `猜錯（猜異端）${J(W)}；猜對（經典）${J(R)}；點老闆換 ${J(later)}`);
+  }
+
+  // ---------------------------------------------------------------- 12 放棄那一趟（標題連按兩下「重新推門」；棒一審查：放棄刷樂歷）
+  //   第 1 位、0 場：樂歷 0（不是 15×1×2＝30）；第 4 位還沒打（打了 3 位、最多連贏 3）：15×3＋8×3＝69、沒有 ×2；runs 那筆 result abandon、gain.quit 1
+  if (want(12)) {
+    const out = {};
+    for (const [label, idx, streak, want0] of [['pos1', 0, 0, 0], ['pos4', 3, 3, 15 * 3 + 8 * 3]]) {
+      const { ctx, page } = await newPage(browser, w, h);
+      try {
+        await openTitle(page, Q());
+        await seedCareer(page, { career: { xp: 0 }, run: { ace: 'hall', idx, set: { bestStreak: streak, streak } }, runs: [] });
+        await openTitle(page, Q()); await sleep(400);
+        const b0 = await C(page, () => ({ xp: window.__lab.save.career.xp, pos: window.__lab.run.pos, cont: !!document.querySelector('[data-a=cont]') }));
+        await jsClick(page, '[data-a=push]'); await sleep(500); await jsClick(page, '[data-a=push]'); await sleep(1500);
+        const a = await C(page, () => { const S = JSON.parse(localStorage.getItem('dipGameLab_v1')), L = S.runs[S.runs.length - 1] || {}; return { xp: S.career.xp, result: L.result, reached: L.reached, gain: L.gain || null, runs: S.runs.length }; });
+        const spec = gainSpec({ reached: a.reached, bestStreak: streak, lexp: {} }, 0, { quit: true, open: true });
+        out[label] = Object.assign({ b0, want: want0, spec: spec.total }, a, { errs: errs(page).length });
+        out[label].ok = b0.cont && b0.pos === idx + 1 && a.result === 'abandon' && a.runs === 1 && a.gain && a.gain.total === want0 && spec.total === want0 && a.gain.mul === 1 && a.gain.quit === 1 && a.xp === want0 && !errs(page).length;
+      } catch (e) { out[label] = { error: e.message, ok: false }; }
+      await ctx.close();
+    }
+    record(12, size, out.pos1.ok && out.pos4.ok, `第 1 位 0 場放棄 ${J(out.pos1)}；第 4 位還沒打就放棄 ${J(out.pos4)}`);
   }
 }
 

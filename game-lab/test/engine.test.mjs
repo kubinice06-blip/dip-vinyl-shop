@@ -3741,6 +3741,19 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
     const cp = G({ reached: 55, from: 50, bestStreak: 5, lexp: {} }); eq([cp.base, cp.total], [130, 130], 'checkpoint start: only the positions played');
     const nb = G({ lexp: { base: 200, gig: 100 } }); eq([nb.base, nb.route], [200, 50], 'no reached → lexp.base');
     const off = EN.careerGain(Object.assign({}, K, { career: { lexp: { lowMul: 1 } } }), { reached: 3, bestStreak: 0, lexp: {} }); eq([off.low, off.total], [1, 45], 'lowMul 1 = subsidy off');
+    // 棒一審查（放棄刷樂歷）：×2 只給還沒走到過第 10 位的帳號（best < 10）、不是放棄的那一趟；放棄時站著那一位沒打完＝少算那一位
+    const hb = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 10 }); eq([hb.base, hb.low, hb.total], [175, 1, 175], 'best ≥10 (account reached 10 before): no ×2');
+    const h9 = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 9 }); eq([h9.low, h9.total], [2, 350], 'best 9: still ×2');
+    const q = G({ reached: 9, bestStreak: 8, lexp: {} }, { best: 0, quit: true, open: true }); eq([q.fought, q.base, q.low, q.total], [8, 15 * 8 + 64, 1, 184], 'quit at pos 9 before fighting it: 8 positions, no ×2');
+    const qd = G({ reached: 9, bestStreak: 9, lexp: {} }, { best: 0, quit: true }); eq([qd.fought, qd.base, qd.low], [9, 15 * 9 + 72, 1], 'quit after pos 9 was fought (reward pending): 9 positions, still no ×2');
+    const q1 = G({ reached: 1, bestStreak: 0, lexp: { home: 30 } }, { best: 0, quit: true, open: true }); eq([q1.fought, q1.base, q1.route, q1.total], [0, 0, 0, 0], 'quit at pos 1 with 0 fights: 0 (route capped at 40% of 0)');
+    const qc = G({ reached: 50, from: 50, bestStreak: 0, lexp: {} }, { best: 60, quit: true, open: true }); eq([qc.fought, qc.total], [0, 0], 'checkpoint start, quit before the first fight: 0');
+    eq([G({ reached: 12, bestStreak: 5, lexp: {} }).fought, G({ lexp: { base: 200 } }).fought], [12, null], 'fought: positions counted (null when only lexp.base)');
+    // posFought：站著那一位打完了沒（放棄時 o.open＝!posFought）
+    { const r = driveD(K, { seedKey: 'pf1', runNo: 2, ace: 'hall', prologue: false }, 3).run, P = x => EN.posFought(Object.assign(JSON.parse(JSON.stringify(r)), x));
+      eq([P({ pending: null, over: null }), P({ pending: { type: 'reward', pos: r.pos } }), P({ pending: { type: 'level', pos: r.pos } }), P({ pending: { type: 'retry', pos: r.pos } }),
+        P({ pending: { type: 'retry', enemyId: 'man', free: true } }), P({ pending: { type: 'reward', pos: r.pos, prologue: true } }), P({ pending: { type: 'draft', pos: r.pos } }), P({ pending: null, over: 'dead' }), EN.posFought(null)],
+        [false, true, true, true, false, false, false, true, false], 'posFought: reward／level／retry of this pos or over = fought; route／draft／prologue = not'); }
     // 真的一趟：base＝runSummary 的 lexp.base（C 波 lexpBase）
     for (const sk of ['cg1', 'cg2']) { const r = driveD(K, { seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, 14).run, s = EN.runSummary(r); eq(G(s).base, s.lexp.base, 'base = lexpBase ' + sk); } }
 
@@ -3880,7 +3893,9 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
     eq([f.key, f.xp, f.spent, f.off, f.prof, f.tree, f.drawn, f.banked, f.lastGain, f.extra], ['', 0, {}, true, { hall: 0, pearl: 30, heresy: 0 }, { hall: { a: 2 }, pearl: {}, heresy: {} }, [2, 3, 5], false, null, 'kept'], 'careerFix: types; not enough points → spent cleared');
     const g = EN.careerFix(K, { xp: xpAt(22), spent: { atk: 2, money: 9, piggy: 1 } }); eq(g.spent, { atk: 2, money: 3 }, 'careerFix: capped, soon dropped, points ok (21 of 21)');
     eq(EN.careerFix(K, { xp: xpAt(21), spent: { atk: 2, money: 3 } }).spent, {}, 'careerFix: 21 points needed at Lv21 (20) → all back');
-    eq(EN.careerFix(K, null).spent, {}, 'careerFix(null)'); }
+    eq(EN.careerFix(K, null).spent, {}, 'careerFix(null)');
+    const ids = Object.keys(K.cards).sort().slice(0, 2);
+    eq([EN.careerFix(K, { got: [ids[0], ids[0], 'nope', 3, 'constructor', ids[1]] }).got, EN.careerFix(K, {}).got, EN.careerFix(K, { got: 'x' }).got], [ids, [], []], 'careerFix: got = drawn card ids (known, unique)'); }
 
   // ---- 4.3 V3：第 51 位起每 5 位聲望 +1 ----
   { const S = K.trial.guestHpSteps, hp = (p, c) => EN.trialGuest(K, p, c || 'normal').hp;

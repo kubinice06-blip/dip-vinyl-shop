@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 1077（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1079（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1071,7 +1071,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・fx.plea | 每趟一次，這一輪的說情用完才用 | 本規格新寫 | `career.ui.fx.plea` |
 | （畫面字）・fx.money | 每級開局多 ${n} | 本規格新寫 | `career.ui.fx.money` |
 | （畫面字）・fx.pay | 每級打贏的錢 +10% | 本規格新寫 | `career.ui.fx.pay` |
-| （畫面字）・fx.rare | 每級戰利品列金邊 +2 點 | 本規格新寫 | `career.ui.fx.rare` |
+| （畫面字）・fx.rare | 每級戰利品列金邊機率 +2% | 本規格新寫 | `career.ui.fx.rare` |
 | （畫面字）・fx.piggy | 輸了剩下的錢 10% 帶到下一趟 | 本規格新寫 | `career.ui.fx.piggy` |
 | （畫面字）・fx.reroll | 每趟多一次重抽 | 本規格新寫 | `career.ui.fx.reroll` |
 | （畫面字）・fx.ban | 每趟封掉一件配件或一張盤 | 本規格新寫 | `career.ui.fx.ban` |
@@ -1107,7 +1107,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・ladder.relic3 | 菁英、藏家的配件三選一 | 本規格新寫 | `career.ui.ladder.relic3` |
 | （畫面字）・ladder.off | 可以關掉樂歷 | 本規格新寫 | `career.ui.ladder.off` |
 | （畫面字）・ladder.seed4 | 種子格 4 格 | 本規格新寫 | `career.ui.ladder.seed4` |
-| （畫面字）・ladder.gold | 戰利品列金邊 +1 點 | 本規格新寫 | `career.ui.ladder.gold` |
+| （畫面字）・ladder.gold | 戰利品列金邊機率 +1% | 本規格新寫 | `career.ui.ladder.gold` |
 | （畫面字）・ladder.plea | 備用說情 | 本規格新寫 | `career.ui.ladder.plea` |
 | （畫面字）・ladder.seed5 | 種子格 5 格 | 本規格新寫 | `career.ui.ladder.seed5` |
 | （畫面字）・ladder.relicsNew | 新配件 | 本規格新寫 | `career.ui.ladder.relicsNew` |
@@ -1119,10 +1119,12 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・off | 下一趟關掉樂歷 | 本規格新寫 | `career.ui.off` |
-| （畫面字）・offSub | 天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。 | 本規格新寫 | `career.ui.offSub` |
+| （畫面字）・off | 下一趟的樂歷 | 本規格新寫 | `career.ui.off` |
+| （畫面字）・offSub | 關掉＝天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。 | 本規格新寫 | `career.ui.offSub` |
 | （畫面字）・offOn | 樂歷關 | 本規格新寫 | `career.ui.offOn` |
 | （畫面字）・offBest | 關樂歷 | 本規格新寫 | `career.ui.offBest` |
+| （畫面字）・offSw | 照用 | 本規格新寫 | `career.ui.offSw` |
+| （畫面字）・offSwOn | 關掉 | 本規格新寫 | `career.ui.offSwOn` |
 
 ## 樂歷・標題第二行、唱片櫃頁頭
 
@@ -1140,10 +1142,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | （畫面字）・endLine | 樂歷 +{n} › | 本規格新寫 | `career.ui.endLine` |
 | （畫面字）・tierPre | 第 {k} 階・ | 本規格新寫 | `career.ui.tierPre` |
-| （畫面字）・partPos | 位數 {n} | 本規格新寫 | `career.ui.partPos` |
-| （畫面字）・partStreak | 連贏 {n} | 本規格新寫 | `career.ui.partStreak` |
-| （畫面字）・partRecord | 破紀錄 {n} | 本規格新寫 | `career.ui.partRecord` |
-| （畫面字）・partRoute | 路線 {n} | 本規格新寫 | `career.ui.partRoute` |
+| （畫面字）・partPos | 走了 {k} 位 +{n} | 本規格新寫 | `career.ui.partPos` |
+| （畫面字）・partStreak | 最多連贏 {k} 場 +{n} | 本規格新寫 | `career.ui.partStreak` |
+| （畫面字）・partRecord | 破紀錄 +{n} | 本規格新寫 | `career.ui.partRecord` |
+| （畫面字）・partRoute | 路線 +{n} | 本規格新寫 | `career.ui.partRoute` |
 | （畫面字）・partCut | （已到上限） | 本規格新寫 | `career.ui.partCut` |
 | （畫面字）・partTier | ×{m} 第 {k} 階 | 本規格新寫 | `career.ui.partTier` |
 | （畫面字）・partLow | 還沒走到第 {n} 位：樂歷 ×{m} | 本規格新寫 | `career.ui.partLow` |

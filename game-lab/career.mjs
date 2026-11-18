@@ -9,7 +9,7 @@
 //     配件跨趟帶（save.relics＝上一趟最後 3 件）、最遠紀錄（bestFar：攤位解鎖、破紀錄）、寶箱保底計數（chestDry）跨趟帶。
 //     唱片櫃（擁有）＝挑過的流派送的四張（gift）＋每趟結算「帶走一張」（keepCandidates 裡 peak 最高的；--keep off 不帶）＋升級抽到的（careerDraw）。
 //       今日推薦、主站帶來的那張不算（sim 沒有日子）。第 2 趟起帶唱片櫃裡 peak 最高的 seedMax 張當種子（seedPolicy；--seeds off 不帶）。
-//     每趟結束：careerGain(runSummary, {best: 開局前最遠, tier})＝基本＋破紀錄＋路線（截過）×(1＋0.1×階級)×(沒到第 10 位 ×lowMul)；升級抽盤；照花點策略花點。
+//     每趟結束：careerGain(runSummary, {best: 開局前最遠, tier})＝基本＋破紀錄＋路線（截過）×(1＋0.1×階級)×(這一趟沒到第 10 位、開局前最遠也 <10 ×lowMul；sim 不放棄)；升級抽盤；照花點策略花點。
 //     下一趟開局：talentArgs（天賦＋階梯 seedMax／relicPick／goldAdd；Lv8 前只有錢類）。
 //   --gate 999（或 --control）：對照組＝天賦、階梯、升級抽盤全不開（talentArgs 永遠 {}）＝現況的跨趟成長（配件、保底、種子 3 格、帶走一張）。
 //     其他 --gate N＝戰力類（品味／底氣／聲望／局內經驗／稀有率）改成 Lv N 開（試算）

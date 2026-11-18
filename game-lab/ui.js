@@ -124,7 +124,7 @@
       lexpBank: { base: 0, gig: 0, home: 0, promo: 0, packet: 0, demo: 0, runs: 0 }, chestDry: 0,
       wcLog: { ground: 0, lootRows: 0, leave: 0, sessions: 0, resumeInStall: 0 },
       // 第 D 波（SPEC-D §2.5；SAVE_V 不升，維持 8：只多 career、trial 兩個鍵，C 版頁面讀到照留）：樂歷（等級、點數由 xp／spent 算、不存）、試煉階級（棒三才用）
-      career: { key: '', xp: 0, spent: {}, off: false, prof: { hall: 0, pearl: 0, heresy: 0 }, tree: { hall: {}, pearl: {}, heresy: {} }, drawn: [], banked: false, lastGain: null },
+      career: { key: '', xp: 0, spent: {}, off: false, prof: { hall: 0, pearl: 0, heresy: 0 }, tree: { hall: {}, pearl: {}, heresy: {} }, drawn: [], got: [], banked: false, lastGain: null },
       trial: { open: 0, pick: 0, best: {} } };   // want：想要清單（你家的控制台在星圖上挑到、還沒擁有的；v5 第六項第三期，先只記、不影響進貨；不用升存檔版本：舊存檔缺這個鍵就補空的）
   }
   var posInt = function (x) { return typeof x === 'number' && Math.floor(x) === x && x >= 1; };
@@ -382,6 +382,8 @@
     // 第 D 波（SPEC-D §2.5；CONTRACT §3.1-1）：樂歷整理（型別、spent 截上限、點數不夠全退、prof／tree／drawn）；抽盤雜湊的 key 空的就補（＝seedKey()）
     if (E.careerFix) { try { s.career = E.careerFix(C, s.career); } catch (e) { console.error(e); s.career = d.career; } }
     if (!s.career.key) s.career.key = seedKey();
+    // 退版期間（C 版頁面的 SHELF_SRC 沒有 'lexp'）被洗成「老闆送的」的樂歷盤：照 career.got 補回來源（抽的時候一定是還沒擁有，所以原本就是 lexp）
+    (s.career.got || []).forEach(function (id) { var e = shf[id]; if (e && e.own && e.src === 'gift') e.src = 'lexp'; });
     var tr = s.trial && typeof s.trial === 'object' && !Array.isArray(s.trial) ? s.trial : {};
     var tOpen = nn(tr.open), tb = {};
     if (tr.best && typeof tr.best === 'object' && !Array.isArray(tr.best)) Object.keys(tr.best).forEach(function (k2) { if (nn(tr.best[k2])) tb[k2] = nn(tr.best[k2]); });
@@ -562,6 +564,7 @@
         try { id = E.careerDraw(C, c.key, n, ownFn()); } catch (e) { console.error(e); }
         if (!(id && card(id) && shelfOwn(id, 'lexp'))) id = null;
         c.drawn.push(n);
+        if (id) { if (!Array.isArray(c.got)) c.got = []; if (c.got.indexOf(id) < 0) c.got.push(id); }   // 退版到 C 版頁面會把 src 'lexp' 洗成 'gift'：loadSave 照這張單補回
       }
       var lad = []; try { lad = (E.ladderAt(C, n) || []).map(function (L) { return L.key; }).filter(ladderName); } catch (_) {}
       out.push({ lv: n, id: id, lad: lad });
@@ -586,8 +589,11 @@
   // 一趟結束（recordRun）：這一趟的樂歷直接入帳（SPEC-D §2.1、§2.6-6；不再寫 lexpBank），熟練度記那派（落後 ×2），升級抽盤；明細留在 career.lastGain（at＝這一趟）
   function careerRecord(r, sum, ent, why) {
     var c = save.career, g;
-    try { g = E.careerGain(C, sum, { best: r.farBefore | 0, tier: r.tier | 0 }); } catch (e) { console.error(e); return; }
+    // 放棄（重新推門）：沒有新手 ×2；站著的那一位還沒打完就不算那一位（棒一審查：放棄刷樂歷）
+    var quit = why === 'abandon', open = quit && !(E.posFought && E.posFought(r));
+    try { g = E.careerGain(C, sum, { best: r.farBefore | 0, tier: r.tier | 0, quit: quit, open: open }); } catch (e) { console.error(e); return; }
     ent.gain = { base: g.base, record: g.record, route: g.route, cut: g.cut, mul: g.mul, total: g.total };
+    if (quit) ent.gain.quit = 1;
     if (r.tier) ent.tier = r.tier | 0;
     if (r.careerOff) ent.off = 1;
     var lv0 = careerLv().level;
@@ -601,17 +607,24 @@
     if (why === 'abandon') { if (lv1 > lv0) toastAfter(CU('lvUp', { n: lv1 }), 'gold'); return; }   // 放棄（重新推門）：接著就開新的一趟，不演過場卡，吐司說一聲
     UI.careerQ = (UI.careerQ || []).concat(q);
   }
-  // 這一趟的明細：剛結束那趟＝career.lastGain；舊的（重新整理、看上一趟結算）照 runSummary 重算（沒有熟練那行）
+  // 這一趟的明細：剛結束那趟＝career.lastGain；舊的（重新整理、看上一趟結算）照 runSummary 重算（沒有熟練那行）。
+  //   C 版頁面打完、記進 lexpBank 的那一趟（runs 裡那筆有 lexp 沒 gain）：開機入帳是一筆總額（照總額截、沒有破紀錄與 ×2），沒有這一趟自己的數字 → null（結算頁不出那一行）
   function gainOf(r) {
-    var L = save.career && save.career.lastGain;
-    if (L && L.at === runTag(r) && typeof L.total === 'number') return L;
+    var L = save.career && save.career.lastGain, tag = runTag(r);
+    if (L && L.at === tag && typeof L.total === 'number') return L;
+    for (var i = save.runs.length - 1; i >= 0; i--) {
+      var e = save.runs[i];
+      if (e && typeof e === 'object' && e.seedKey + '#' + (e.runNo || 1) === tag) { if (!e.gain) return null; break; }
+    }
     try { return E.careerGain(C, E.runSummary(r), { best: r.farBefore | 0, tier: r.tier | 0 }); } catch (_) { return null; }
   }
-  // 結算明細（點「樂歷 +n ›」）：位數・連贏・破紀錄・路線（已到上限）・×階級・新手 ×2・熟練蓋章・關樂歷；底下這一級進度＋「看樂歷頁」
+  // 結算明細（點「樂歷 +n ›」）：走了幾位・最多連贏（0 不出）・破紀錄・路線（已到上限）・×階級・新手 ×2・熟練蓋章・關樂歷；底下這一級進度＋「看樂歷頁」
   function careerGainSheet(r) {
     var g = gainOf(r); if (!g) return;
     var K = E.careerCfg(C), X = K.lexp, sum = E.runSummary(r), from = sum.from > 1 ? sum.from : 1;
-    var parts = [CU('partPos', { n: X.pos * Math.max(0, (sum.reached | 0) - from + 1) }), CU('partStreak', { n: X.streak * (sum.bestStreak | 0) })];
+    var fought = typeof g.fought === 'number' ? g.fought : Math.max(0, (sum.reached | 0) - from + 1), bs = sum.bestStreak | 0;
+    var parts = [CU('partPos', { k: fought, n: X.pos * fought })];
+    if (bs > 0) parts.push(CU('partStreak', { k: bs, n: X.streak * bs }));
     if (g.record) parts.push(CU('partRecord', { n: g.record }));
     if (g.route || g.cut) parts.push(CU('partRoute', { n: g.route }) + (g.cut > 0 ? CU('partCut') : ''));
     if (g.tier) parts.push(CU('partTier', { m: g.tierMul, k: g.tier }));
@@ -717,7 +730,8 @@
       var p = E.profLevel(C, (c.prof || {})[t]);
       return '<li><b>' + esc((C.aceTitle || {})[t] || '') + '</b><span>' + esc(CU('prof', { n: p.level, s: p.stamps, per: p.per })) + '</span></li>';
     }).join('');
-    var offRow = lv.level >= (K.offFrom | 0) ? '<button type="button" class="cx-off key" data-a="off" aria-pressed="' + (c.off ? 'true' : 'false') + '"><span class="tx"><b>' + esc(CU('off')) + '</b><small>' + esc(CU('offSub')) + '</small></span>' + swHTML(!!c.off) + '</button>' : '';
+    var offRow = lv.level >= (K.offFrom | 0) ? '<button type="button" class="cx-off key" data-a="off" aria-pressed="' + (c.off ? 'true' : 'false') + '"><span class="tx"><b>' + esc(CU('off')) + '</b><small>' + esc(CU('offSub')) + '</small></span>' +
+      '<span class="sw' + (c.off ? ' on' : '') + '">' + esc(CU(c.off ? 'offSwOn' : 'offSw')) + '</span></button>' : '';   // 狀態字「照用／關掉」（不用 swHTML 的開／關：雙重否定）
     var last = c.lastGain && typeof c.lastGain.total === 'number' ? CU('lastLine', { n: c.lastGain.total }) : '';
     var body = el('div', 'lb-scroll');
     body.innerHTML = '<div class="lb-pad cx-page">' +
@@ -2292,7 +2306,7 @@
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '') +
       // 唯讀一行（SPEC-B §2.1；兩個都有只出升級失敗）
       (UI.migrateFail || UI.poolMissing ? '<p class="lb-foot sm ro">' + esc(SU(UI.migrateFail ? 'migrateFail' : 'poolMissing')) + '</p>' : '');
-    var box = el('div', 'lb-screen', h); panel.appendChild(box);
+    var box = el('div', 'lb-screen' + (hasRun && UI.apex ? ' runapex' : ''), h); panel.appendChild(box);   // runapex：矮螢幕收起今日推薦小籤（style.css 棒一審查）
     // 今天剛發推薦：老闆說一句（真的說出口才算提醒過＝來客那邊這次不再說；0.9 秒內就離開標題＝來客那邊說）
     if (UI.dailyNew && dailyCard()) { UI.dailyNew = false; later(function () { if (UI.screen === 'title' && !UI.intro && !UI.dailyNagged && dailyCard()) { UI.dailyNagged = true; stageSay('o', line('dailyNew'), 'owner', 3000); } }, 900); }
     // 舊存檔第一次載入（解鎖制以前的存檔；loadSave 補了 lastAce 那派那張）：吐司說一次規則改了

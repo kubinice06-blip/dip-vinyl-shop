@@ -1727,7 +1727,7 @@
       { lv: 12, key: 'seed4', seedMax: 4 }, { lv: 15, key: 'gold', goldAdd: 0.01 }, { lv: 20, key: 'plea' },
       { lv: 0, key: 'seed5', soon: true }, { lv: 0, key: 'relicsNew', soon: true }, { lv: 0, key: 'regulars', soon: true }, { lv: 0, key: 'outfit', soon: true }
     ],
-    offFrom: 10,                                                  // 樂歷 Lv10 起樂歷頁才有「下一趟關掉樂歷」開關（＝ladder 的 off）
+    offFrom: 10,                                                  // 樂歷 Lv10 起樂歷頁才有「下一趟的樂歷 照用／關掉」開關（＝ladder 的 off）
     prof: { stamp: 150, per: 10, lagMul: 2, lagBelow: 0.5, firstStamps: 2, pointFrom: 2,
       auto: [{ lv: 3, key: 'sigil', soon: true }, { lv: 5, key: 'tier3' }, { lv: 7, key: 'giftSwap', soon: true }, { lv: 10, key: 'outfit', soon: true }] },
     // 畫面字（{x} 由畫面代入；錢先 E.moneyText）。groups＝樂歷頁天賦表一類一組（cats＝talents[].cat）
@@ -1739,7 +1739,7 @@
       names: { atk: '開局品味', def: '開局底氣', hp: '開局聲望', xp: '局內經驗', plea: '備用說情', money: '開局錢', pay: '酬勞', rare: '稀有率',
         piggy: '存錢筒', reroll: '重抽', ban: '封掉', intel: '客人底細', safety: '新手保底' },
       fx: { atk: '每級開局品味 +1', def: '每級開局底氣 +1', hp: '每級開局聲望上限 +2，現有的也 +2', xp: '每級局內經驗 +10%',
-        plea: '每趟一次，這一輪的說情用完才用', money: '每級開局多 ${n}', pay: '每級打贏的錢 +10%', rare: '每級戰利品列金邊 +2 點',
+        plea: '每趟一次，這一輪的說情用完才用', money: '每級開局多 ${n}', pay: '每級打贏的錢 +10%', rare: '每級戰利品列金邊機率 +2%',
         piggy: '輸了剩下的錢 10% 帶到下一趟', reroll: '每趟多一次重抽', ban: '每趟封掉一件配件或一張盤', intel: '看他牌組三色比例',   // ban：配件＝relic
         safety: '上一趟沒到第 10 位，第一位輸了免費再一次' },
       moneyOnly: '（只多錢，不會變強）',                             // 開局錢、酬勞兩列效果句後面的灰字（CRITIQUE 4.4）
@@ -1749,16 +1749,17 @@
       // 解鎖階梯（已開的打勾、下一個亮、之後的灰）
       ladderTitle: '解鎖階梯', ladderRow: 'Lv{n} {name}',
       ladder: { talents: '天賦頁', power: '戰力天賦', relic3: '菁英、藏家的配件三選一', off: '可以關掉樂歷', seed4: '種子格 4 格',
-        gold: '戰利品列金邊 +1 點', plea: '備用說情', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
+        gold: '戰利品列金邊機率 +1%', plea: '備用說情', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
       drawRow: '每升一級：抽一張盤進唱片櫃（Lv10 起每 5 級史詩）',
       // 關掉樂歷（Lv10 起、只在樂歷頁；下一趟起生效）
-      off: '下一趟關掉樂歷', offSub: '天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。', offOn: '樂歷關', offBest: '關樂歷',   // 配件三選一＝relicPick
+      off: '下一趟的樂歷', offSub: '關掉＝天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。', offOn: '樂歷關', offBest: '關樂歷',   // 配件三選一＝relicPick
+      offSw: '照用', offSwOn: '關掉',                              // 開關右邊的狀態字（不用「開／關」：「關掉樂歷：關」會讀成雙重否定）
       // 標題頁第二行（整行可點＝開樂歷頁；高 ≤600px 用 lineShort）
       line: '樂歷 Lv {n}・下一個：Lv{m} {name} ›', lineAll: '樂歷 Lv {n} ›', lineShort: '樂歷 Lv {n} ›', shelfBtn: '樂歷',
       bestTier: '最遠 {n}（第 {k} 階 {m}）',                        // 試煉階級開了以後第一行的短版（棒三）
       // 結算頁一行＋明細抽屜（SPEC-D §2.8-4）
       endLine: '樂歷 +{n} ›', tierPre: '第 {k} 階・',
-      partPos: '位數 {n}', partStreak: '連贏 {n}', partRecord: '破紀錄 {n}', partRoute: '路線 {n}', partCut: '（已到上限）',
+      partPos: '走了 {k} 位 +{n}', partStreak: '最多連贏 {k} 場 +{n}', partRecord: '破紀錄 +{n}', partRoute: '路線 +{n}', partCut: '（已到上限）',
       partTier: '×{m} 第 {k} 階', partLow: '還沒走到第 {n} 位：樂歷 ×{m}', partProf: '{title} 蓋了 {n} 個章', partOff: '這一趟關樂歷（樂歷照拿）',
       routeCap: '路線樂歷已到上限',
       // 主鈕之後的過場卡（一次一張、最多 3 張，其餘合成一句）

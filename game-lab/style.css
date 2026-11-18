@@ -994,6 +994,17 @@ body.lb-tune-open{overflow:hidden;}
 .cx-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin:0 3px 0 2px;vertical-align:2px;}
 .cx-offon{margin-left:6px;padding:0 4px;border:1px solid var(--gray);color:var(--gray2);font-size:9px;line-height:14px;}
 @media (max-height:600px){.lb-foot.cxline .full{display:none;}.lb-foot.cxline .short{display:inline;}}
+/* 矮螢幕（棒一審查：375×548 標題、結算溢出）：
+   標題第二行 44px 點擊區不加高（上下各 −7 疊在最遠那行與面板底的留白上）；?apex=1＋有一趟在打（多一顆「跳過序章」）時今日推薦小籤收起來（店裡試聽機照樣點得到）、
+   跳過序章那顆不出小字
+   結算頁「樂歷 +n ›」鈕照樣 44 高、那一列不撐高（上下 −7）：e2e.spec #48 那面牆＋中繼點的狀態不捲 */
+@media (max-height:600px){
+  .lb-foot.cxline{margin-top:-7px;margin-bottom:-7px;}
+  .lb-panel.title .lb-screen.runapex .lb-foot.dl-chip{display:none;}
+  .lb-panel.title .lb-screen.runapex [data-a=skip] .sub{display:none;}   /* 跳過序章那顆只留一行（按第一下本來就換成一行「再按一次：…」） */
+  .cx-hrow{min-height:0;}
+  .cx-hrow .lb-cxp{margin-top:-7px;margin-bottom:-7px;}
+}
 /* 唱片櫃頁頭的「樂歷」小鈕 */
 .lb-top.page .lnk.cx{margin-left:auto;color:var(--gold-ink);}
 /* 樂歷頁 */
