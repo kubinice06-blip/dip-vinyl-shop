@@ -18,3 +18,4 @@
 
 - 第一波 keep 比例份間落差大：004 是 46／300，007 只有 3／300。抽 004 的 keep 10 張：多數站得住（Ben LaMar Gay、betcover!!《卵》、Bedhead、Belong），但 Badbadnotgood《IV》聲音只有「更偏抒情、電子質感更明顯」應是 rewrite，幾張帶發行日到日依「拿不準 polish 還是 keep → polish」應進 polish。
 - **裁定**：不重派整份；全部判完後加一道 **keep 複核**（把所有 keep 交給一支代理，用更嚴的鏡頭只問兩題：聲音是否具體、有無可刪雜項），降級的寫回並記在這裡。理由：keep 是唯一「之後不動」的級，錯放的代價最高；polish／rewrite 之間的誤差之後寫作層會再看到。
+- 024 只出 27 張 polish、0 keep，抽 9 張 rewrite（Magma《Üdü Wüdü》、Maná、Callas《夢遊女》、Massive Attack《Protection》、Max Richter《Infra》等）：全篇確實沒有聲音描述，判對；這一份只是剛好落在弱稿密集的 M 段，不重判。
