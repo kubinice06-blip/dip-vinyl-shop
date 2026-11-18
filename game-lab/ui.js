@@ -610,13 +610,17 @@
   // 這一趟的明細：剛結束那趟＝career.lastGain；舊的（重新整理、看上一趟結算）照 runSummary 重算（沒有熟練那行）。
   //   C 版頁面打完、記進 lexpBank 的那一趟（runs 裡那筆有 lexp 沒 gain）：開機入帳是一筆總額（照總額截、沒有破紀錄與 ×2），沒有這一趟自己的數字 → null（結算頁不出那一行）
   function gainOf(r) {
-    var L = save.career && save.career.lastGain, tag = runTag(r);
+    var L = save.career && save.career.lastGain, tag = runTag(r), o = { best: r.farBefore | 0, tier: r.tier | 0 };
     if (L && L.at === tag && typeof L.total === 'number') return L;
     for (var i = save.runs.length - 1; i >= 0; i--) {
       var e = save.runs[i];
-      if (e && typeof e === 'object' && e.seedKey + '#' + (e.runNo || 1) === tag) { if (!e.gain) return null; break; }
+      if (e && typeof e === 'object' && e.seedKey + '#' + (e.runNo || 1) === tag) {
+        if (!e.gain) return null;
+        if (e.gain.quit) { o.quit = true; o.open = !(E.posFought && E.posFought(r)); }   // 放棄的那一趟照 careerRecord 的算法重算（沒有 ×2、沒打完的那位不算）
+        break;
+      }
     }
-    try { return E.careerGain(C, E.runSummary(r), { best: r.farBefore | 0, tier: r.tier | 0 }); } catch (_) { return null; }
+    try { return E.careerGain(C, E.runSummary(r), o); } catch (_) { return null; }
   }
   // 結算明細（點「樂歷 +n ›」）：走了幾位・最多連贏（0 不出）・破紀錄・路線（已到上限）・×階級・新手 ×2・熟練蓋章・關樂歷；底下這一級進度＋「看樂歷頁」
   function careerGainSheet(r) {
