@@ -20,6 +20,7 @@
 //       另外逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
 //       腳下範圍（FIXLIST 1，店主「不要跨過中島唱片區」）＝DipShop.footprints：道具實際畫出來的那一塊（量的）∪ foot；
 //       layout.footprints.groups（中島）合成一塊多邊形；behind（櫃檯、唱盤台：老闆站後面）留一個口袋，只有站在口袋裡的人的路線可以進去。避障、這裡、shop.test 同一份。
+//       站著不動的人（老闆以外的 actors，例：熟客 r1）：離任何 bin.stand |dx|≥38 或 |dy|≥44（R-02）、不站在口袋裡（店主 11-18：客人不會跑到櫃檯裡面）。
 //       房間（kind:'room'，v5 第六項第三期：你家＝聆聽室）：斜俯視同一條檢查，但不套店的必備清單（店站位、對決鏡頭、O34_HOTS、唱盤區 duel、牆上 ≥8 張）；
 //       改查 ROOM_HOTS／ROOM_SPOTS、剛好一台唱盤（duelDeck#deck）與一台控制台（tuneConsole）、唱片架 ledge#shelf fill:'owned'（cards 執行時才塞，JSON 可空）、不放翻箱；
 //       index.json rooms[]＝{id, layout, pin}：layout 是 kind:room、圖釘在地圖上、圖釘動作＝房間 id。
