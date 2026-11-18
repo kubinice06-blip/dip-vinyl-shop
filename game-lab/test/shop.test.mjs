@@ -665,6 +665,13 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   ok(r2.some(p => /從 deck 後面的口袋穿過/.test(p)), '唱盤台整個寬都是口袋：別人的路線從唱盤台後面（台上）穿過 → 抓得到', r2.filter(p => /口袋/.test(p)).slice(0, 2));
   ok(r2.some(p => /behind：isl-0b 不能同時在群組裡/.test(p)) && r2.some(p => /behind\.booth：口袋是空的/.test(p)) && r2.some(p => /groups\.island：沒有道具 nope/.test(p)), '抓得到口袋放在箱子上、口袋是空的、群組有不存在的 id', r2.slice(0, 6));
   ok(r2.some(p => /footprints\.margin：沒有這一塊 nope/.test(p)) && r2.some(p => /footprints\.margin\.booth 要是/.test(p)), '抓得到壞的 footprints.margin', r2.slice(0, 8));
+  // 店主 11-18「沒有客人會跑到櫃檯裡面」：熟客站回 11-13 那格（櫃檯後面高櫃前 [272,168]）→ 抓得到她站在櫃檯後面的口袋裡；老闆自己站口袋不算
+  const bad3 = JSON.parse(JSON.stringify(dip)); bad3.spots.regular = [272, 168];
+  const r3 = CS.checkLayout(bad3, 'shops/dip.json', lib, cards, content).problems;
+  ok(r3.some(p => /actors r1（regular \[272,168\]）站在 counter 後面的口袋裡/.test(p)), '熟客站回櫃檯後面（11-13 的 [272,168]）→ 抓得到', r3.slice(0, 3));
+  ok(!r3.some(p => /actors o（/.test(p)), '老闆站在櫃檯後面的口袋裡不算', r3.filter(p => /actors o/.test(p)));
+  { const s = dip.spots[dip.actors.find(a => a.id === 'r1').at], ct = propById('counter');
+    ok(s[1] > ct.y && (s[1] - 40) >= ct.hot.rect[1] + ct.hot.rect[3], '熟客站在櫃檯外（腳在櫃檯前緣 y' + ct.y + ' 之前）、頭頂（y−40）不碰櫃檯熱點下緣 y' + (ct.hot.rect[1] + ct.hot.rect[3]), s); }
   // 中島兩側走道多留 3 格（footprints.margin.island）：避障框比腳下範圍左右各多 8 格
   const oIsl = DS.navObstacles(dip).find(o => o.id === 'island');
   eq([oIsl.box[0], oIsl.box[0] + oIsl.box[2]], [isl.box[0] - 8, isl.box[0] + isl.box[2] + 8], '中島的避障框左右各多 8 格（footprints.margin.island）');

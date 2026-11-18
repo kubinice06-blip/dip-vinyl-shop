@@ -437,11 +437,14 @@ export function checkOblique(L, file, lib, cards, content) {
   // 站著不動的人（老闆以外的 actors，例：熟客 r1）旁邊不能是 bin.stand：你走過去翻箱子會被他整個蓋掉（R-02：FEATURE 的站位在熟客正後面）。
   //   一個小人的身體寬約 38 格、高 44 格以內就會疊到（ui.js makeRoom 用同一組數字請門邊等的客人讓開）
   //   v5 店面改版：窗下矮櫃改成 BLUES 藍調櫃，熟客原本站它前面 [200,104]，名牌和封面被她蓋掉、藍調站位也被這條擠到 INDIE POP 前面——
-  //   所以熟客搬到櫃檯後面的高櫃前（spots.regular），藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
+  //   所以熟客搬到櫃檯後面的高櫃前，藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
+  //   店主 11-18：「照常理沒有客人會跑到櫃檯裡面」→ 熟客搬到櫃檯外、櫃檯右前方（spots.regular）；下面加一條：老闆以外的人不准站在 footprints.behind 的口袋裡。
   for (const a of (L.actors || [])) {
     if (a.id === 'o' || !spots[a.at]) continue;
     const s0 = spots[a.at];
     for (const [k, st, src] of stands) if (Math.abs(st[0] - s0[0]) < STATIC_DX && Math.abs(st[1] - s0[1]) < STATIC_DY) bad(src + '：bin.stand ' + JSON.stringify(st) + ' 跟站著不動的 ' + a.id + '（' + a.at + ' ' + JSON.stringify(s0) + '）疊在一起（|dx|<' + STATIC_DX + '、|dy|<' + STATIC_DY + '）');
+    // 櫃檯、唱盤台後面的口袋是老闆站的地方（店主 11-18：沒有客人會跑到櫃檯裡面）
+    for (const pk of pockets) if (inRect(s0, pk.rect)) bad('actors ' + a.id + '（' + a.at + ' ' + JSON.stringify(s0) + '）站在 ' + pk.id + ' 後面的口袋裡（那是老闆站的地方，客人不會跑到櫃檯裡面）');
   }
   // 任兩個 spot（含每個 bin.stand）之間的路線每一段都不穿過家具（SPEC §5.1；v3 只查 door／counter 出發）
   info.routes = 0;
