@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-18｜dip-vinyl-shop｜game-lab：熟客搬出櫃檯（站到櫃檯前，像在跟老闆聊天）
+
+- **店主 11-18**：「把他從老闆後面移開 照常理 沒有客人會跑到櫃檯裡面」。熟客 r1 原本在櫃檯後面高櫃前 [272,168]，背影蓋住老闆半邊（老闆熱點被蓋 120 格）。
+- **改法**：`spots.regular` → [264,224]（櫃檯外、右半邊正前方，背對鏡頭面向老闆），拿掉 `pose:'dig'`（靜止的 dig 從背面看像兩手舉高站空地）。貼著箱子翻的位置照 R-02（離 bin.stand |dx|≥38 或 |dy|≥44）全店掃過沒有合法格，所以先放櫃檯前；會走動、會翻箱、點了能聊的熟客在「活店」那一波做（設計中：scratchpad `v5/liveshop/`）。同業調貨攤的站主也站 `spots.regular`，跟著搬到櫃檯前。
+- **規則收緊**：`check-shops` 新增「老闆以外的 actors 不准站在 `footprints.behind` 口袋（櫃檯、唱盤台後面）」；`shop.test` 加 3 條（熟客放回舊位置會被抓、老闆不算、熟客腳在櫃檯前緣之前）。
+- **主要檔案**：`game-lab/shops/dip.json`、`game-lab/tools/check-shops.mjs`、`game-lab/test/shop.test.mjs`、`game-lab/index.html`（?v=83）。
+- **驗證**：check-shops OK、shop.test 3,379/0、hit.test 447/0、check-content、lint-copy 通過；e2e-room、taps、stall、duel、prologue（390×664、375×548，taps 加 360×640、430×932）全過；遮擋量測 4 尺寸 0 個熱點被蓋；1,980 條站位間路線沒有進她的範圍。已知：點她頭肩會點到櫃檯（熱點留給活店，熱點要壓過櫃檯的 6 格容差）；畫面高約 730–810 px 的手機對決橫條上緣會切到她。
+
 ### 2026-11-18｜dip-vinyl-shop｜rewrite 級 13711 張四級重判完成：severe 51／rewrite 9874／polish 3530／keep 256
 
 - **結果**：11-17 判成 rewrite 的 13711 張一般卡，用四級重判（只讀現行簡介，未上網、未改稿、未寫 KV）。需研究＋寫作 9925 張（severe＋rewrite）、只改稿 3530 張、不動 256 張。CJK 1287 張裡 rewrite 82.4%、keep 只有 3 張；經典度 ≥4 的 7831 張分布與整體相近。
