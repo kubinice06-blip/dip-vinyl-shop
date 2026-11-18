@@ -13,3 +13,8 @@
 - polish 抽 10：Big Thief《Two Hands》、Café Tacvba、Jobim《Tide》、Bobby McFerrin《Spontaneous Inventions》等，聲音與故事都在、毛病是日期／品番／一兩句雜項或雜項開頭，判對。
 - keep 抽 8：Bill Frisell《Harmony》、Alice Coltrane《Universal Consciousness》、Biglietto per l'Inferno 等，判對；Baby Rose 有一處發行日到日，嚴格說可進 polish，屬可接受範圍。
 - **裁定**：判準無系統性偏差，派工詞不改，照原詞派完 46 份。keep 比例低（約 5%）是因為這批本來就是第 0 步篩下來的 rewrite，不是判得過嚴。
+
+## 份間寬嚴差異（第一波交件後）
+
+- 第一波 keep 比例份間落差大：004 是 46／300，007 只有 3／300。抽 004 的 keep 10 張：多數站得住（Ben LaMar Gay、betcover!!《卵》、Bedhead、Belong），但 Badbadnotgood《IV》聲音只有「更偏抒情、電子質感更明顯」應是 rewrite，幾張帶發行日到日依「拿不準 polish 還是 keep → polish」應進 polish。
+- **裁定**：不重派整份；全部判完後加一道 **keep 複核**（把所有 keep 交給一支代理，用更嚴的鏡頭只問兩題：聲音是否具體、有無可刪雜項），降級的寫回並記在這裡。理由：keep 是唯一「之後不動」的級，錯放的代價最高；polish／rewrite 之間的誤差之後寫作層會再看到。
