@@ -1,5 +1,21 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-18｜dip-vinyl-shop｜rewrite 級 13711 張四級重判完成：severe 51／rewrite 9874／polish 3530／keep 256
+
+- **結果**：11-17 判成 rewrite 的 13711 張一般卡，用四級重判（只讀現行簡介，未上網、未改稿、未寫 KV）。需研究＋寫作 9925 張（severe＋rewrite）、只改稿 3530 張、不動 256 張。CJK 1287 張裡 rewrite 82.4%、keep 只有 3 張；經典度 ≥4 的 7831 張分布與整體相近。
+- **流程**：`dump-descs.mjs` 抓現行簡介 → 46 份 × 300 張，Sonnet 判（同時 8 支）→ keep 複核兩份（533 張只留 253）→ 主線抽查 rewrite 32／polish 30／keep 35／severe 14 → `tools/finalize.mjs` 合併。
+- **裁定**：codes 新增 8（主體不是專輯）、9（超過 240 字）；polish 帶 3（沒聲音）或 7（可疑）一律轉 rewrite（92 張）；keep 是唯一不再有人看的級，加一道複核。詳見 `batch-progress/desc-retriage-20261118/rulings.md`。
+- **改動**：`batch-progress/desc-retriage-20261118/{retriage.json,summary.md,rulings.md,prompt-retriage.md,prompt-keepcheck.md,tools/*,triage/*}`；`da/descs.json`（15 MB 現行簡介）`.gitignore` 排除。
+- **待店主**：rewrite＋severe 9925 張的重寫線何時開、polish 3530 張是否先做（不用上網、成本低）。
+- **驗證**：`kv-token-check` exit 0（只讀）；46 份 13711/13711 判完；retriage.json 13711 筆、每筆一級；summary 代表例級別與 retriage 一致。
+
+### 2026-11-18｜dip-vinyl-shop｜rewrite 級 13711 張重新判定開工；「以專輯為主，不是廠牌」
+
+- **店主**：看了 5 張 rewrite 樣本後「重新評一次」；菊地雅章《East Wind》（廠牌開頭、品番、曲長）「這種需要重寫，以專輯為主，不是廠牌」。
+- **改動**：`desc-tools/prompts/general-desc-base.md` 第一節（鉤子恢復後第 1 條只抓雜項開頭；主體講廠牌／單曲／人員／銷量而非專輯 → 至少 rewrite）與第三節（廠牌品番最多一句）；新目錄 `batch-progress/desc-retriage-20261118/README.md`（四級 severe／rewrite／polish／keep、5 張判例、流程）。
+- **背景**：11-17 第 0 步在「不用鉤子」規則下判的，只因開頭冷知識判 rewrite 的就有 2133 張。
+- **驗證**：純文件；重判交給 s53。
+
 ### 2026-11-17｜dip-vinyl-shop｜一般卡嚴重簡介重寫線收尾：2963 張全數上線
 
 - **結果**：severe 2963 張（sd-001～099＋留置重查 sd-hold-1～6＋sd-fix-1）全數重寫上線，front-check 全對、CURATED 覆蓋 0、最終留置 0；sd-001～014 補開頭鉤子 412 張。52 個工作階段，PR 約 #462～#533。
