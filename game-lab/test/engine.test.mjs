@@ -7,6 +7,7 @@
 //   （十個分類＋三個子曲風區 citypop／indierock／indiepop＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
 //   v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP；這三區看子曲風（卡的 subs，規則 sub），不看第一個曲風。
 import { createRequire } from 'module';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { shapeProblems, binsProblems, apexProblems } from '../tools/check-content.mjs';
@@ -3537,8 +3538,9 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(!('dare' in EN.roundGuests(newW('dare-n'), CW)[0]), 'no dare → no key');
     winToW(run, CW, 41); ok(run.dare === null && !EN.guestDef(run, CW, run.order[run.idx], 41).dare, 'next round: cleared'); }
 
-  // ---- 9 客人補償 guestHpSteps [[31,1]] ----
-  eq([EN.trialGuest(CW, 30, 'normal').hp, EN.trialGuest(CW, 31, 'normal').hp, EN.trialGuest(CW, 30, 'boss').hp, EN.trialGuest(CW, 35, 'boss').hp, EN.trialGuest(CW, 99, 'elite').hp], [12, 13, 14, 15, 13], 'guestHpSteps: 30 → 12, 31 → 13, boss 30 → 14, 35 → 15, then no more');
+  // ---- 9 客人補償 guestHpSteps [[31,1]]（第 D 波 V3 在第 51 位以後再加：見 #30）----
+  eq([EN.trialGuest(CW, 30, 'normal').hp, EN.trialGuest(CW, 31, 'normal').hp, EN.trialGuest(CW, 30, 'boss').hp, EN.trialGuest(CW, 35, 'boss').hp, EN.trialGuest(CW, 50, 'elite').hp], [12, 13, 14, 15, 13], 'guestHpSteps: 30 → 12, 31 → 13, boss 30 → 14, 35 → 15, then no more until 50');
+  { const C31 = Object.assign({}, CW, { trial: Object.assign({}, CW.trial, { guestHpSteps: [[31, 1]] }) }); eq(EN.trialGuest(C31, 99, 'elite').hp, 13, 'wave C step alone: no more after 31'); }
   eq(EN.trialGuest(Object.assign({}, CW, { trial: Object.assign({}, CW.trial, { guestHpSteps: [[11, 1], [31, 2]] }) }), 40, 'normal').hp, 15, 'steps add up');
 
   // ---- 10 新手保底 ----
@@ -3681,6 +3683,236 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(deep >= 3 && seen.has('stall:pick') && seen.has('stall:studio') && seen.has('reward'), 'auto runs went deep and through stalls', [...seen].sort());
     eq(JSON.stringify(play1('auto-1').run), JSON.stringify(play1('auto-1').run), 'same seed → same run (with wave C on)'); }
   EN.setCtx(null);
+});
+
+// ---------------- 第 D 波 棒一：樂歷（SPEC-D §2、§4.1、§4.3、§3.1；§10.1 的 1／2／3／7） ----------------
+// smart 流程打到第 maxPos 位（決策序列也記）；黃金＝改之前的 engine／content 跑的（scratchpad v5/wave-d/build1/golden.cjs，HEAD 9ca4e47bb）
+function driveD(content, o, maxPos) {
+  const run = EN.newRun(content, o), R = lcg(EN.fnv1a32(o.seedKey + o.runNo)), mem = {}, seq = [];
+  for (let g = 0; g < 6000; g++) {
+    if (run.over && !run.pending) break;
+    if (EN.canBargainPick(run) && !run.duel && !run.pending) { const ch = EN.bargainPolicy(run, content); seq.push(ch); EN.choose(run, content, ch); continue; }
+    const st = EN.nextStep(run);
+    if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { const ch = EN.runPolicy(run, content); seq.push(ch); EN.choose(run, content, ch); continue; }
+    if (!st || run.pos > maxPos) break;
+    if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, content, 'smart')) { seq.push(ch); EN.choose(run, content, ch); }
+    const f = EN.startFight(run, content, {});
+    let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, content));
+    EN.finishFight(run, content);
+  }
+  return { run, seq };
+}
+section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐字現況（黃金）、careerGain、等級曲線、天賦價與買賣、talentArgs、進局（品味／底氣／聲望／經驗零頭／說情順序／酬勞／金邊／配件三選一／種子格 4）、gigRoom、階梯、抽盤、熟練度、入帳、讀檔整理、V3、流派改名', () => {
+  EN.setCtx(null);
+  const K = C0, X = EN.careerCfg(K), xpAt = lv => EN.careerXpAt(K, lv), car = (lv, spent, o) => Object.assign({ key: 'k', xp: xpAt(lv), spent: spent || {} }, o || {});
+  // ---- 1 沒給新參數／Lv8 前／關樂歷＝逐字現況（smart 決策序列＋run JSON 到第 20 位；黃金＝改之前的引擎） ----
+  { const GOLD = [3936987495, 671311097, 230554544, 1581489111], POS = [12, 21, 21, 21];
+    const seeds = EN.seedPolicy(K, Object.keys(K.cards).sort().filter(id => EN.canSeed(K, id)).slice(0, 300));
+    const CASES = [{ seedKey: 'dgold1', runNo: 1, ace: 'hall' }, { seedKey: 'dgold2', runNo: 2, ace: 'pearl', prologue: false, seeds, safety: true, bestFar: 12 },
+      { seedKey: 'dgold3', runNo: 3, ace: 'heresy', prologue: false, relics: ['dustcover', 'stylus'] }, { seedKey: 'dgold4', runNo: 4, ace: 'hall', prologue: false, from: 10 }];
+    const lv7 = car(7, { atk: 3, def: 1, rare: 2, xp: 1, plea: 1 });         // 點不到的戰力（讀檔留下的）也不給
+    const extras = [{}, EN.talentArgs(K, car(7)), EN.talentArgs(K, lv7), EN.talentArgs(K, car(30, { atk: 4, money: 2 }, { off: true })),
+      { talent: { atk: 0, def: 0, hp: 0, xp: 0, plea: 0, money: 0, pay: 0, rare: 0 }, relicPick: 1, goldAdd: 0 }, { talent: {}, seedMax: 0 }];
+    eq(extras.slice(1, 4), [{}, {}, {}], 'talentArgs: Lv7 nothing／Lv7 locked power／off → {}');
+    extras.forEach((ex, j) => CASES.forEach((o, i) => {
+      const { run, seq } = driveD(K, Object.assign({}, o, ex), 20);
+      ok(EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq)) === GOLD[i] && run.pos === POS[i], 'no career args (variant ' + j + ') = engine before wave D, case ' + o.seedKey, { pos: run.pos });
+    }));
+    for (const sk of ['dn1', 'dn2', 'dn3']) {
+      const o = { seedKey: sk, runNo: 2, ace: 'pearl', prologue: false };
+      const a = JSON.stringify(EN.newRun(K, o));
+      for (const ex of extras) eq(JSON.stringify(EN.newRun(K, Object.assign({}, o, ex))), a, 'newRun JSON same with ' + JSON.stringify(ex));
+      ok(!/"(talent|plea|xpMul|xpFrac|payMul|goldAdd|relicPick)"/.test(a), 'no wave D run fields without args');
+    }
+    const m2 = EN.talentArgs(K, car(7, { money: 2, pay: 1 })); eq(m2, { talent: { money: 2, pay: 1 } }, 'Lv7: only money talents');
+    const rm = EN.newRun(K, Object.assign({ seedKey: 'dn1', runNo: 2, ace: 'pearl', prologue: false }, m2)), r0 = EN.newRun(K, { seedKey: 'dn1', runNo: 2, ace: 'pearl', prologue: false });
+    ok(rm.money === r0.money + 1000 && rm.payMul === 1.1 && rm.atk === r0.atk && rm.maxHp === r0.maxHp && JSON.stringify(rm.bag) === JSON.stringify(r0.bag), 'money talents only move money'); }
+
+  // ---- 2 careerGain（位數、連贏、破紀錄只在最遠 >0、演唱會／路線截斷、試煉倍率、沒到第 10 位 ×2、中繼點開局） ----
+  { const G = (sum, o) => EN.careerGain(K, sum, o);
+    const a = G({ reached: 12, bestStreak: 5, from: 1, lexp: { gig: 60, home: 30, promo: 10, packet: 15, demo: 15 } }, { best: 10 });
+    eq([a.base, a.record, a.parts.gig, a.route, a.cut, a.mul, a.low, a.total], [220, 30, 60, 88, 42, 1, 1, 338], 'gain: base 15×12+8×5, record 30, gig ≤55, route ≤88');
+    const a2 = G({ reached: 12, bestStreak: 5, lexp: { gig: 20, home: 30 } }, { best: 0 }); eq([a2.record, a2.route, a2.cut, a2.total], [0, 50, 0, 270], 'first run (best 0): no record; under the caps');
+    const g2 = G({ reached: 12, bestStreak: 5, lexp: { gig: 90 } }, { best: 12 }); eq([g2.record, g2.route, g2.cut], [0, 55, 35], 'equal to best: no record; gig cut at 25% of base');
+    const b = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 0 }); eq([b.base, b.low, b.mul, b.total], [175, 2, 2, 350], 'did not reach 10: ×2');
+    const b10 = G({ reached: 10, bestStreak: 0, lexp: {} }); eq([b10.low, b10.total], [1, 150], 'reached 10: no subsidy');
+    const t = G({ reached: 20, bestStreak: 10, lexp: {} }, { best: 25, tier: 3 }); eq([t.base, t.tierMul, t.mul, t.total], [380, 1.3, 1.3, 494], 'tier 3: ×1.3 rounded');
+    const tl = G({ reached: 3, bestStreak: 2, lexp: {} }, { tier: 1 }); eq([tl.mul, tl.total], [2.2, Math.round(61 * 2.2)], 'tier × subsidy multiply');
+    const cp = G({ reached: 55, from: 50, bestStreak: 5, lexp: {} }); eq([cp.base, cp.total], [130, 130], 'checkpoint start: only the positions played');
+    const nb = G({ lexp: { base: 200, gig: 100 } }); eq([nb.base, nb.route], [200, 50], 'no reached → lexp.base');
+    const off = EN.careerGain(Object.assign({}, K, { career: { lexp: { lowMul: 1 } } }), { reached: 3, bestStreak: 0, lexp: {} }); eq([off.low, off.total], [1, 45], 'lowMul 1 = subsidy off');
+    // 棒一審查（放棄刷樂歷）：×2 只給還沒走到過第 10 位的帳號（best < 10）、不是放棄的那一趟；放棄時站著那一位沒打完＝少算那一位
+    const hb = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 10 }); eq([hb.base, hb.low, hb.total], [175, 1, 175], 'best ≥10 (account reached 10 before): no ×2');
+    const h9 = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 9 }); eq([h9.low, h9.total], [2, 350], 'best 9: still ×2');
+    const q = G({ reached: 9, bestStreak: 8, lexp: {} }, { best: 0, quit: true, open: true }); eq([q.fought, q.base, q.low, q.total], [8, 15 * 8 + 64, 1, 184], 'quit at pos 9 before fighting it: 8 positions, no ×2');
+    const qd = G({ reached: 9, bestStreak: 9, lexp: {} }, { best: 0, quit: true }); eq([qd.fought, qd.base, qd.low], [9, 15 * 9 + 72, 1], 'quit after pos 9 was fought (reward pending): 9 positions, still no ×2');
+    const q1 = G({ reached: 1, bestStreak: 0, lexp: { home: 30 } }, { best: 0, quit: true, open: true }); eq([q1.fought, q1.base, q1.route, q1.total], [0, 0, 0, 0], 'quit at pos 1 with 0 fights: 0 (route capped at 40% of 0)');
+    const qc = G({ reached: 50, from: 50, bestStreak: 0, lexp: {} }, { best: 60, quit: true, open: true }); eq([qc.fought, qc.total], [0, 0], 'checkpoint start, quit before the first fight: 0');
+    eq([G({ reached: 12, bestStreak: 5, lexp: {} }).fought, G({ lexp: { base: 200 } }).fought], [12, null], 'fought: positions counted (null when only lexp.base)');
+    // posFought：站著那一位打完了沒（放棄時 o.open＝!posFought）
+    { const r = driveD(K, { seedKey: 'pf1', runNo: 2, ace: 'hall', prologue: false }, 3).run, P = x => EN.posFought(Object.assign(JSON.parse(JSON.stringify(r)), x));
+      eq([P({ pending: null, over: null }), P({ pending: { type: 'reward', pos: r.pos } }), P({ pending: { type: 'level', pos: r.pos } }), P({ pending: { type: 'retry', pos: r.pos } }),
+        P({ pending: { type: 'retry', enemyId: 'man', free: true } }), P({ pending: { type: 'reward', pos: r.pos, prologue: true } }), P({ pending: { type: 'draft', pos: r.pos } }), P({ pending: null, over: 'dead' }), EN.posFought(null)],
+        [false, true, true, true, false, false, false, true, false], 'posFought: reward／level／retry of this pos or over = fought; route／draft／prologue = not'); }
+    // 真的一趟：base＝runSummary 的 lexp.base（C 波 lexpBase）
+    for (const sk of ['cg1', 'cg2']) { const r = driveD(K, { seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, 14).run, s = EN.runSummary(r); eq(G(s).base, s.lexp.base, 'base = lexpBase ' + sk); } }
+
+  // ---- 2b 等級曲線、點數、天賦價、買賣、重配 ----
+  { const L = xp => EN.careerLevel(K, xp).level;
+    eq([0, 99, 100, 299, 300, 999, 1000, 4499, 4500, 5499, 5500, 14499, 14500].map(L), [1, 1, 2, 2, 3, 4, 5, 9, 10, 10, 11, 19, 20], 'careerLevel boundaries');
+    eq([2, 3, 5, 10, 11, 20].map(xpAt), [100, 300, 1000, 4500, 5500, 14500], 'careerXpAt');
+    eq(EN.careerLevel(K, 320), { level: 3, into: 20, need: 300, total: 320 }, 'into／need'); eq(EN.careerLevel(K, 6100), { level: 11, into: 600, need: 1000, total: 6100 }, 'after Lv10: 1,000 per level');
+    eq(EN.careerLevel(K, -5).level, 1, 'bad xp → Lv1');
+    const cost = (id, n) => Array.from({ length: n }, (_, i) => EN.talentCost(K, id, i + 1));
+    eq([cost('atk', 3), cost('def', 2), cost('hp', 2), cost('xp', 2), cost('plea', 1), cost('money', 3), cost('pay', 3), cost('rare', 3), cost('piggy', 1), cost('reroll', 1), cost('ban', 1), cost('intel', 2)],
+      [[6, 12, 18], [6, 12], [6, 12], [3, 6], [15], [1, 1, 1], [1, 1, 1], [2, 2, 2], [1], [2], [2], [2, 3]], 'talentCost table (§2.3a)');
+    ok(EN.talentCost(K, 'nope', 1) === Infinity, 'unknown talent: Infinity');
+    const buy = (c, id) => EN.talentBuy(K, c, id);
+    eq(buy(car(1), 'money').error, 'locked', 'Lv1: money locked (Lv2)');
+    let c = car(2); const c0 = JSON.stringify(c), r1 = buy(c, 'money'); ok(r1.ok && r1.career.spent.money === 1 && JSON.stringify(c) === c0, 'Lv2 money ok; original untouched');
+    eq(buy(r1.career, 'money').error, 'points', 'Lv2: 1 point only');
+    c = car(7); for (const id of ['atk', 'def', 'hp', 'xp', 'rare', 'plea']) eq(buy(c, id).error, 'locked', 'Lv7: ' + id + ' locked');
+    for (let i = 0; i < 3; i++) c = buy(c, 'money').career; eq(buy(c, 'money').error, 'max', 'money max 3');
+    for (const id of ['piggy', 'reroll', 'ban', 'intel', 'zzz']) eq(buy(car(60), id).error, 'locked', 'soon／unknown: locked ' + id);
+    c = car(8); const r8 = buy(c, 'atk'); ok(r8.ok && EN.careerPoints(K, r8.career).left === 1, 'Lv8: atk for 6 of 7 points'); eq(buy(r8.career, 'atk').error, 'points', 'second atk costs 12');
+    eq(buy(car(19), 'plea').error, 'locked', 'plea Lv20'); const rp = buy(car(20), 'plea'); ok(rp.ok, 'Lv20 plea for 15'); eq(buy(rp.career, 'plea').error, 'max', 'plea max 1');
+    eq(EN.careerPoints(K, car(20, { atk: 2, money: 1 })), { level: 20, total: 19, spent: 19, left: 0 }, 'careerPoints');
+    const s1 = EN.talentSell(K, car(20, { atk: 2 }), 'atk'); ok(s1.ok && s1.career.spent.atk === 1, 'sell one level');
+    const s2 = EN.talentSell(K, s1.career, 'atk'); ok(s2.ok && !('atk' in s2.career.spent), 'sell last level removes the key'); eq(EN.talentSell(K, s2.career, 'atk').error, 'none', 'nothing to sell');
+    const rs = car(20, { atk: 2, money: 1 }), rs0 = JSON.stringify(rs), rr = EN.careerRespec(K, rs); ok(rr.ok && JSON.stringify(rr.career.spent) === '{}' && JSON.stringify(rs) === rs0 && EN.careerPoints(K, rr.career).left === 19, 'respec: all points back; original untouched');
+    ok(EN.talentOpen(K, 'atk', 8) && !EN.talentOpen(K, 'atk', 7) && !EN.talentOpen(K, 'piggy', 99), 'talentOpen'); }
+
+  // ---- 2c talentArgs（Lv7＝只有錢類；Lv10 配件三選一；Lv12 種子格 4；Lv15 金邊；上限截；off＝{}） ----
+  { const A = (lv, sp, o) => EN.talentArgs(K, car(lv, sp, o));
+    eq(A(10), { relicPick: 3 }, 'Lv10: relic 3'); eq(A(12), { relicPick: 3, seedMax: 4 }, 'Lv12: seedMax 4'); eq(A(15), { relicPick: 3, seedMax: 4, goldAdd: 0.01 }, 'Lv15: gold +1 point');
+    eq(A(20, { atk: 2, money: 9, plea: 1 }), { talent: { atk: 2, plea: 1, money: 3 }, relicPick: 3, seedMax: 4, goldAdd: 0.01 }, 'Lv20: talents (money capped at 3)');
+    eq(A(20, { atk: 2 }, { off: true }), {}, 'off: nothing'); eq(EN.talentArgs(K, null), {}, 'no career: nothing'); }
+
+  // ---- 3 進局：品味／底氣／聲望／經驗零頭／說情順序／酬勞／金邊／配件三選一／種子格 ----
+  { const o = { seedKey: 'tal1', runNo: 2, ace: 'hall', prologue: false }, r0 = EN.newRun(K, o);
+    const r = EN.newRun(K, Object.assign({}, o, { talent: { atk: 2, def: 1, hp: 3, xp: 2, plea: 1, money: 2, pay: 1, rare: 3 }, relicPick: 3, goldAdd: 0.01 }));
+    eq([r.atk, r.def, r.maxHp - r0.maxHp, r.hp - r0.hp, r.hpIn, r.xpMul, r.plea, r.money - r0.money, r.payMul, r.goldAdd, r.relicPick],
+      [2, 1, 6, 6, r.hp, 1.2, 1, 1000, 1.1, 0.07, 3], 'applyTalent: every talent');
+    eq(r.talent, { atk: 2, def: 1, hp: 3, xp: 2, plea: 1, money: 2, pay: 1, rare: 3 }, 'run.talent = the levels');
+    eq(JSON.stringify(Object.assign({}, r, { atk: 0, def: 0, maxHp: r0.maxHp, hp: r0.hp, hpIn: r0.hpIn, money: r0.money, talent: undefined, xpMul: undefined, plea: undefined, payMul: undefined, goldAdd: undefined, relicPick: undefined })),
+      JSON.stringify(Object.assign({}, r0, { talent: undefined, xpMul: undefined, plea: undefined, payMul: undefined, goldAdd: undefined, relicPick: undefined })), 'nothing else changes (same rng, bag, shop)');
+    // 經驗零頭：10 場 2 經驗 ×1.2＝24
+    const T = EN.trialCfg(K, 0), x = EN.newRun(K, Object.assign({}, o, { talent: { xp: 2 } })); x.level = 1000;
+    for (let i = 0; i < 10; i++) EN.gainXp(x, T, 2); ok(x.xp === 24 && x.xpFrac < 1e-6, 'xp ×1.2: 10 × 2 = 24', { xp: x.xp, f: x.xpFrac });
+    const y = EN.newRun(K, o); y.level = 1000; for (let i = 0; i < 10; i++) EN.gainXp(y, T, 2); ok(y.xp === 20 && !('xpFrac' in y), 'no xp talent: 20, no xpFrac');
+    // 酬勞：打贏的錢 ×1.1
+    const p0 = newW('pay1'), p1 = newW('pay1', { talent: { pay: 1 } }); winToW(p0, CW, 2); winToW(p1, CW, 2);
+    const m0 = p0.money, m1 = p1.money, w0 = fwin(p0, CW), w1 = fwin(p1, CW); ok(w1.earn === Math.round(w0.earn * 1.1) && w0.earn > 0 && p1.money - m1 >= w1.earn && p0.money - m0 >= w0.earn, 'pay +10%', [w0.earn, w1.earn]);
+    // 說情順序：新手保底（第 1 位）→ 這一輪的說情 → 備用說情 → 死；備用說情不每輪補
+    { const run = newW('plea1', { safety: true, talent: { plea: 1 } }); EN.choose(run, CW, EN.bargainPolicy(run, CW));
+      const seq = []; for (let i = 0; i < 4; i++) { flose(run, CW); const p = run.pending; seq.push(p ? (p.safety ? 'safety' : p.plea ? 'plea' : 'retry') : run.over); if (p) { const e = EN.choose(run, CW, { type: 'retry' }); ok(e.ok, 'retry ok'); if (p.plea) ok(e.effects.some(z => z.plea && z.free === false), 'plea effect'); } }
+      eq(seq, ['safety', 'retry', 'plea', 'dead'], 'loss order: safety → retry → plea → dead');
+      const q = newW('plea2', { talent: { plea: 1 } }); winToW(q, CW, 2); flose(q, CW); EN.choose(q, CW, { type: 'retry' }); ok(q.retryLeft === 0 && q.plea === 1, 'round retry first');
+      flose(q, CW); ok(q.pending && q.pending.plea === true, 'then plea'); EN.choose(q, CW, { type: 'retry' }); ok(q.plea === 0 && q.retryLeft === 0, 'plea used');
+      winToW(q, CW, 6); ok(q.retryLeft === 1 && q.plea === 0, 'new round: retry back, plea not');
+      const n0 = newW('plea3'); winToW(n0, CW, 2); flose(n0, CW); EN.choose(n0, CW, { type: 'retry' }); flose(n0, CW); ok(n0.over === 'dead' && !n0.pending, 'no plea: dead as before');
+      const e2 = newW('plea4', { talent: { plea: 1 } }); winToW(e2, CW, 2); flose(e2, CW); EN.choose(e2, CW, { type: 'retry' }); flose(e2, CW); const ee = EN.choose(e2, CW, { type: 'end' }); ok(ee.ok && e2.over === 'dead' && e2.plea === 1, 'decline the plea: dead, plea kept'); }
+    // 配件三選一：同一個 run.rng 位置，第一件＝原本那一件；三件不重複、沒有身上的
+    { let same = 0, three = 0;
+      for (let s = 1; s <= 12; s++) {
+        const a1 = newW('rp' + s), a3 = newW('rp' + s, { relicPick: 3, relics: ['dustcover'] }), a1b = newW('rp' + s, { relics: ['dustcover'] });
+        for (const z of [a1, a3, a1b]) { winToW(z, CW, 4); fwin(z, CW); }
+        const p1 = a1b.pending, p3 = a3.pending;
+        if (p1 && p3 && p1.relics.length === 1) { if (p3.relics[0] === p1.relics[0]) same++; if (p3.relics.length === 3 && new Set(p3.relics).size === 3 && !p3.relics.includes('dustcover')) three++; }
+        if (s === 1) { const ch = EN.runPolicy(a3, CW); ok(ch.type === 'relic' && p3.relics.includes(ch.relicId), 'runPolicy picks one of the three', ch); ok(EN.choose(a3, CW, ch).ok, 'choose one of three'); }
+      }
+      ok(same === 12 && three === 12, 'relicPick 3: first = the single pick, 3 distinct, not owned', { same, three }); }
+    // 金邊：goldAdd 1 → 每一列都有金邊；沒給＝原本機率
+    { let rows = 0, gold = 0; for (let s = 1; s <= 10; s++) { const z = newW('ga' + s, { goldAdd: 1 }); winToW(z, CW, 2); const w = fwin(z, CW); if (z.pending && z.pending.kind === 'loot' && z.pending.cards.length) { rows++; if (z.pending.gold.length) gold++; } }
+      ok(rows >= 8 && gold === rows, 'goldAdd 1: every loot row has a gold card', { rows, gold }); }
+    // 種子格 4：送的全換掉、包包 4 張；seedsOf／seedPolicy 吃 max
+    { const ids = Object.keys(K.cards).sort().filter(id => EN.canSeed(K, id)).slice(0, 80), s4 = EN.seedPolicy(K, ids, null, 4), s3 = EN.seedPolicy(K, ids);
+      ok(s4.length === 4 && s3.length === 3 && JSON.stringify(s4.slice(0, 3)) === JSON.stringify(s3), 'seedPolicy max 4');
+      eq(EN.seedPolicy(K, ids, 9, 4).length, 4, 'seedPolicy n capped by max'); eq(EN.seedsOf(K, s4).length, 3, 'seedsOf default 3'); eq(EN.seedsOf(K, s4, 4).length, 4, 'seedsOf max 4');
+      const a = EN.newRun(K, { seedKey: 'sd4', runNo: 2, ace: 'pearl', prologue: false, seeds: s4, seedMax: 4 }), b = EN.newRun(K, { seedKey: 'sd4', runNo: 2, ace: 'pearl', prologue: false, seeds: s4 });
+      ok(a.bag.length === 4 && a.gifts.length === 0 && JSON.stringify(a.seeds) === JSON.stringify(s4), 'seedMax 4: 4 seeds, no gifts', a.bag);
+      ok(b.seeds.length === 3 && b.gifts.length === 1 && b.bag.length === 4, 'no seedMax: 3 seeds + 1 gift'); } }
+
+  // ---- 3b gigRoom（照現在的基本樂歷；越往後只會變多）、階梯 ----
+  { const g = newW('gig1'); g.pos = 10; g.bestStreak = 4; g.lexp = {};
+    eq(EN.gigRoom(g, CW), 2, 'gigRoom: ⌊0.25×182⌋=45 → 2 tickets'); g.lexp.gig = 20; eq(EN.gigRoom(g, CW), 1, 'after one ticket: 1'); g.lexp.gig = 40; eq(EN.gigRoom(g, CW), 0, 'full: 0');
+    let prev = 0, mono = true; g.lexp.gig = 20; for (let p = 1; p <= 120; p++) { g.pos = p; g.bestStreak = Math.min(p, 9); const n = EN.gigRoom(g, CW); if (n < prev) mono = false; prev = n; }
+    ok(mono, 'gigRoom never shrinks as base grows'); g.cpFrom = 50; g.pos = 52; g.bestStreak = 2; g.lexp = {}; eq(EN.gigRoom(g, CW), 0, 'checkpoint start: base counts played positions only (61 → 15 → 0)');
+    eq(EN.ladderNext(K, 1).key, 'talents', 'next at Lv1: talents'); eq(EN.ladderNext(K, 7).lv, 8, 'next at Lv7: Lv8 power'); eq(EN.ladderNext(K, 8).key, 'relic3', 'next at Lv8: Lv10 relic3');
+    eq(EN.ladderNext(K, 20), null, 'nothing after Lv20 (seed5 etc. soon)'); eq(EN.ladderAt(K, 10).map(x => x.key), ['relic3', 'off'], 'opened at Lv10'); eq(EN.ladderAt(K, 11), [], 'nothing at Lv11');
+    const LL = EN.ladderList(K, 12); ok(LL.find(x => x.key === 'seed4').open && !LL.find(x => x.key === 'gold').open && !LL.find(x => x.key === 'seed5').open, 'ladderList open flags'); }
+
+  // ---- 3c 升級抽盤 ----
+  { const ri = id => EN.rarity(K.cards[id]), bg = new Set([].concat(K.bargain.pool || [], K.bargain.retired || []));
+    let okAll = true; const seen = new Set();
+    for (let lv = 2; lv <= 40; lv++) { const id = EN.careerDraw(K, 'drawkey', lv, null), want = lv >= 10 && lv % 5 === 0 ? 'epic' : null;
+      if (!id || !EN.canSeed(K, id) || bg.has(id) || (want ? ri(id) !== want : !['rare', 'uncommon'].includes(ri(id)))) okAll = false; seen.add(id); }
+    ok(okAll, 'careerDraw: epic at Lv10／15／20…, rare／uncommon otherwise (Lv5 too); non-apex, non-bargain'); ok(seen.size >= 35, 'draws differ by level', seen.size);
+    eq(EN.careerDraw(K, 'drawkey', 7, null), EN.careerDraw(K, 'drawkey', 7, []), 'deterministic');
+    const d5 = EN.careerDraw(K, 'drawkey', 5, null); ok(EN.careerDraw(K, 'drawkey', 5, [d5]) !== d5, 'owned is skipped');
+    ok(EN.careerDrawRarity(K, 'x', 5) !== 'epic' && EN.careerDrawRarity(K, 'x', 10) === 'epic' && EN.careerDrawRarity(K, 'x', 12) !== 'epic', 'rarity by level');
+    const tiny = Object.assign({}, K, { cards: { a: { id: 'a', c: 1, o: 1, h: 1, tier: null } } }); eq(EN.careerDraw(tiny, 'k', 5, null), null, 'nothing to draw → null'); }
+
+  // ---- 7 熟練度：落後 ×2、Lv 邊界、第一次解鎖 +300 ----
+  { const pg = EN.profGain(K, { hall: 1000, pearl: 400, heresy: 0 }, 'pearl', 100); ok(pg.lag && pg.add === 200 && pg.prof.pearl === 600 && pg.prof.hall === 1000, 'lagging (<half of the top) ×2', pg);
+    const ph = EN.profGain(K, { hall: 1000, pearl: 400 }, 'hall', 100); ok(!ph.lag && ph.add === 100 && ph.prof.heresy === 0, 'top: ×1');
+    const pe = EN.profGain(K, { hall: 1000, pearl: 500 }, 'pearl', 100); ok(!pe.lag, 'exactly half: not lagging');
+    ok(!EN.profGain(K, {}, 'heresy', 50).lag, 'all zero: not lagging');
+    const pu = EN.profGain(K, { hall: 1450 }, 'hall', 100); ok(pu.stamps === 1 && pu.levelUps === 1, 'crossing 1,500: one stamp, one level', pu);
+    eq(EN.profGain(K, { hall: 10 }, 'nope', 100).add, 0, 'unknown ace: nothing');
+    eq([EN.profLevel(K, 0), EN.profLevel(K, 1499), EN.profLevel(K, 1500), EN.profLevel(K, 22500)].map(x => [x.level, x.stamps, x.into]), [[1, 0, 0], [1, 9, 149], [2, 0, 0], [16, 0, 0]], 'profLevel boundaries');
+    const pf = EN.profFirst(K, { hall: 300 }, 'pearl'); ok(pf.add === 300 && pf.prof.pearl === 300, 'first unlock: two stamps');
+    eq(EN.profFirst(K, pf.prof, 'pearl').add, 0, 'only once (already has stamps)'); }
+
+  // ---- 2d careerDeposit（三種組合；照總額截的餘數 ≥0、給 lastAce；歸零後再跑＝null；退版期間又有＝再入一次） ----
+  { eq(EN.careerDeposit(K, { lexpBank: { base: 0, gig: 0, home: 0, promo: 0, packet: 0, demo: 0, runs: 3 }, runs: [] }), null, 'empty bank → null (runs count ignored)');
+    eq(EN.careerDeposit(K, {}), null, 'no bank → null');
+    const runs = [{ ace: 'pearl', lexp: { base: 600, gig: 300, home: 30 } }, { ace: 'heresy', lexp: { base: 400, gig: 100, promo: 10, packet: 15, demo: 15 } }, { ace: 'hall', reached: 3 }, null];
+    const sv = { lexpBank: { base: 1000, gig: 400, home: 30, promo: 10, packet: 15, demo: 15, runs: 2 }, runs, lastAce: 'hall', career: { xp: 50, prof: { hall: 7 } } };
+    const d = EN.careerDeposit(K, sv);
+    eq([d.total, d.xp, d.per, d.prof, d.runs, d.from, d.to, d.first], [1320, 1370, { hall: 0, pearl: 780, heresy: 540 }, { hall: 7, pearl: 780, heresy: 540 }, [0, 1], 1, 5, true], 'deposit: total capped, per run by ace');
+    ok(sv.career.xp === 50 && !sv.runs[0].banked, 'deposit does not touch the save');
+    const d2 = EN.careerDeposit(K, Object.assign({}, sv, { lexpBank: { base: 2000, gig: 0 }, lastAce: 'pearl' })); eq([d2.total, d2.per.pearl, d2.per.heresy], [2000, 780 + 680, 540], 'rest goes to lastAce');
+    const d3 = EN.careerDeposit(K, Object.assign({}, sv, { lastAce: null, runs: [] })); eq(d3.per, { hall: 1320, pearl: 0, heresy: 0 }, 'no runs, no lastAce → hall');
+    const later = { lexpBank: { base: 300, gig: 0, home: 30 }, lastAce: 'heresy', career: { xp: 1370, banked: true },
+      runs: [Object.assign({ banked: 1 }, runs[0]), Object.assign({ banked: 1 }, runs[1]), { ace: 'hall', lexp: { base: 150 }, gain: { total: 150 } }, { ace: 'pearl', lexp: { base: 300, home: 30 } }] };
+    const d4 = EN.careerDeposit(K, later); eq([d4.total, d4.runs, d4.per, d4.first, d4.xp], [330, [3], { hall: 0, pearl: 330, heresy: 0 }, false, 1700], 'downgrade period: only the new C runs (banked／gain skipped)');
+    // 性質：lexpBank＝各趟加總（C 版頁面就是這樣記的）→ 逐趟截的合計 ≤ 總額截（餘數 ≥0，不靠夾）
+    let neg = 0; const R = lcg(4242);
+    for (let i = 0; i < 300; i++) {
+      const rs = [], bank = { base: 0, gig: 0, home: 0, promo: 0, packet: 0, demo: 0 };
+      for (let k = 0; k < 1 + Math.floor(R() * 6); k++) { const L = { base: Math.floor(R() * 900) }; for (const x of EN.LEXP_ROUTE) L[x] = R() < 0.5 ? Math.floor(R() * 300) : 0; for (const x of Object.keys(bank)) bank[x] += L[x]; rs.push({ ace: TIERS[k % 3], lexp: L }); }
+      const dd = EN.careerDeposit(K, { lexpBank: bank, runs: rs, career: {} }); if (!dd) continue;
+      const raw = rs.reduce((t, r) => { const B = r.lexp.base, rt = Math.min(Math.min(r.lexp.gig, Math.floor(0.25 * B)) + r.lexp.home + r.lexp.promo + r.lexp.packet + r.lexp.demo, Math.floor(0.4 * B)); return t + B + rt; }, 0);
+      if (raw > dd.total || TIERS.reduce((t, x) => t + dd.per[x], 0) !== dd.total) neg++;
+    }
+    eq(neg, 0, 'per-run caps sum ≤ total cap; shares add up to total'); }
+
+  // ---- 2e careerFix（讀檔整理） ----
+  { const f = EN.careerFix(K, { key: 7, xp: -3, spent: { atk: 2, money: 9, piggy: 1, zzz: 4 }, off: 1, prof: { hall: 'x', pearl: 30.7 }, tree: { hall: { a: 2, b: -1 }, pearl: [] }, drawn: [3, 3, 1, 2.5, 5, 2], extra: 'kept' });
+    eq([f.key, f.xp, f.spent, f.off, f.prof, f.tree, f.drawn, f.banked, f.lastGain, f.extra], ['', 0, {}, true, { hall: 0, pearl: 30, heresy: 0 }, { hall: { a: 2 }, pearl: {}, heresy: {} }, [2, 3, 5], false, null, 'kept'], 'careerFix: types; not enough points → spent cleared');
+    const g = EN.careerFix(K, { xp: xpAt(22), spent: { atk: 2, money: 9, piggy: 1 } }); eq(g.spent, { atk: 2, money: 3 }, 'careerFix: capped, soon dropped, points ok (21 of 21)');
+    eq(EN.careerFix(K, { xp: xpAt(21), spent: { atk: 2, money: 3 } }).spent, {}, 'careerFix: 21 points needed at Lv21 (20) → all back');
+    eq(EN.careerFix(K, null).spent, {}, 'careerFix(null)');
+    const ids = Object.keys(K.cards).sort().slice(0, 2);
+    eq([EN.careerFix(K, { got: [ids[0], ids[0], 'nope', 3, 'constructor', ids[1]] }).got, EN.careerFix(K, {}).got, EN.careerFix(K, { got: 'x' }).got], [ids, [], []], 'careerFix: got = drawn card ids (known, unique)'); }
+
+  // ---- 4.3 V3：第 51 位起每 5 位聲望 +1 ----
+  { const S = K.trial.guestHpSteps, hp = (p, c) => EN.trialGuest(K, p, c || 'normal').hp;
+    eq(S[0], [31, 1], 'first step: 31'); ok(S.length === 51 && S.slice(1).every((x, i) => x[0] === 51 + 5 * i && x[1] === 1), 'then 51, 56, … 296 (+1 each)');
+    ok(S.every((x, i) => i === 0 || x[0] > S[i - 1][0]), 'ascending');
+    eq([hp(30), hp(31), hp(50), hp(51), hp(55), hp(56), hp(100), hp(150), hp(100, 'boss'), hp(300), hp(400)], [12, 13, 13, 14, 14, 15, 23, 33, 25, 63, 63], 'V3 guest hp (last step 296)'); }
+
+  // ---- 3.1 流派改名、C.career 跟引擎預設一致、畫面字齊全 ----
+  { eq(K.aceTitle, { hall: '經典流', pearl: '冷門流', heresy: '異端流' }, 'aceTitle'); eq(K.aceIcon, { hall: '比', pearl: '借', heresy: '拆' }, 'aceIcon');
+    eq(K.apexTierName, { hall: '殿堂', pearl: '流亡', heresy: '異端' }, 'apex tier names kept for apex cards'); eq(K.aceNewbie, { pearl: '新手推薦', hall: '前期較難' }, 'newbie tags');
+    const U = K.trial.ui; for (const k of ['unlocked', 'aceLockedNote', 'lockHint', 'unlockNext', 'bossUnlock']) ok(U[k].includes('{title}') && !U[k].includes('{title}派') && !U[k].includes('{axis}'), 'template ' + k, U[k]);
+    const src = fs.readFileSync(path.join(HERE, '../content.js'), 'utf8'); ok(!['殿堂派', '流亡派', '異端派', '{title}派'].some(w => src.includes(w)), 'no 殿堂派／流亡派／異端派／{title}派 in content.js');
+    ok(!/之後開放/.test(JSON.stringify(K.waveC.ui)), 'wave C lexp strings no longer say 之後開放');
+    const KC = Object.assign({}, K.career); delete KC.ui; eq(EN.careerCfg(Object.assign({}, K, { career: undefined })), KC, 'content.career = engine CAREER (minus ui)');
+    const CU = K.career.ui; ok(X.talents.every(t => CU.names[t.id] && CU.fx[t.id]), 'every talent has a name and an effect line');
+    ok(X.ladder.every(L => CU.ladder[L.key]), 'every ladder row has a name'); ok(X.talents.every(t => CU.groups.some(g => g.cats.includes(t.cat))), 'every talent cat is in a group');
+    ok(K.lines.owner.retryPlea && K.lines.owner.profFirst, 'owner lines for plea／first stamps'); ok(K.careerTag === '新', 'careerTag'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

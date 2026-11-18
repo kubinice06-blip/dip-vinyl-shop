@@ -50,6 +50,13 @@
 //   --returning a,b,c  老玩家＝不打序章、帶這三件配件開局（建議 dustcover,stylus,boost_c）；D3 用它判
 //   --dbase <json>  現況對照（同 n、同旗標、--wc off 跑出來的 --json 檔）：D1（新帳號）／D3（--returning）照它判；沒給就只列參考
 //   深度＝run.pos（備份盤不上，沒有 run.far）
+//   第 D 波棒一（樂歷；scratchpad v5/wave-d SPEC-D §7.1）：
+//   --talent '{"atk":1,"def":1,"hp":1,"plea":1,"xp":2}'  樂歷主幹固定檔位（每一趟都帶；newRun talent，engine applyTalent）。序章那場也帶（sim 照舊每趟打序章；真人第 1 趟沒有天賦）
+//   --ladder L｜'{"seedMax":4,"relicPick":3,"goldAdd":0.01}'  樂歷階梯那幾項：數字＝樂歷 Lv L 開了的（engine talentArgs 去掉天賦）；JSON＝直接給
+//   --seeds k:rarity  k 的上限＝seedMax（--ladder 給的，沒給＝CFG.seedMax 3）
+//   --i0 k  趟的編號從 k 起（seedKey sim5-<k+i>；另一批獨立的客人，跟 --i0 0 的合併＝加大樣本；C1 第 75 位的 cpbase 用）
+//   --posmax N  JSON 每格 pos（每一位的到過／首戰／死亡率）存到第 N 位（預設 60；C1 的 --cpbase 要 --from＋10 位，量第 75／100 位中繼點用 --posmax 120）
+//   給了 --talent／--ladder 或 --tier 時多印「到第 21 位（打倒第 20 位藏家）」表（試煉過關率）＋每趟樂歷（基本／路線）；JSON 每格多 reach21、lexp。沒給時輸出跟以前一字不差
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
 //   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
 //   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
@@ -192,11 +199,27 @@ const CPBASE = arg('cpbase', null) ? JSON.parse(fs.readFileSync(arg('cpbase'), '
 const LOT_ON = !!EN.lotCfg(C).on;
 const BROWSE = +arg('browse', 16);
 if (!(Number.isInteger(BROWSE) && BROWSE >= 1)) { console.error('--browse k（1–16 的整數；16＝全看）'); process.exit(2); }
+// 第 D 波棒一（見檔頭）：--talent 主幹固定檔位、--ladder 階梯（seedMax／relicPick／goldAdd）、--posmax
+const TALENT = arg('talent', null) ? JSON.parse(arg('talent')) : null;
+if (TALENT) for (const k of Object.keys(TALENT)) if (!EN.talentDef(C, k) || !(Number.isInteger(TALENT[k]) && TALENT[k] >= 0)) { console.error('--talent：沒有天賦 ' + k + '（或級數不是非負整數）'); process.exit(2); }
+const LADDER_ARG = arg('ladder', null);
+let LADDER = null;
+if (LADDER_ARG != null) {
+  if (/^\d+$/.test(LADDER_ARG)) { const t = EN.talentArgs(C, { xp: EN.careerXpAt(C, +LADDER_ARG), spent: {} }); LADDER = {}; for (const k of ['seedMax', 'relicPick', 'goldAdd']) if (t[k]) LADDER[k] = t[k]; }
+  else LADDER = JSON.parse(LADDER_ARG);
+  for (const k of Object.keys(LADDER)) if (!['seedMax', 'relicPick', 'goldAdd'].includes(k)) { console.error('--ladder 只收 seedMax／relicPick／goldAdd（或樂歷等級數字）'); process.exit(2); }
+}
+const SEED_MAX = LADDER && LADDER.seedMax > 0 ? LADDER.seedMax | 0 : CFG.seedMax;
+const POSMAX = +arg('posmax', 60);
+const I0 = +arg('i0', 0);                                                 // 第 D 波：趟的編號從 i0 起（另一批獨立的客人；跟 i0 0 的同 n 合併＝加大樣本）
+if (!(Number.isInteger(I0) && I0 >= 0)) { console.error('--i0 k（非負整數）'); process.exit(2); }
+if (!(Number.isInteger(POSMAX) && POSMAX >= 1)) { console.error('--posmax N（正整數）'); process.exit(2); }
+const D1EX = !!(TALENT || LADDER || TIER);                                  // 多印「到第 21 位」＋樂歷表、JSON 多 reach21／lexp
 const SEEDS_ARG = arg('seeds', null);
 let SEEDS = null;
 if (SEEDS_ARG != null) {
   const m = /^(\d+):([a-z]+)$/.exec(SEEDS_ARG);
-  if (!m || !EN.RARITY.includes(m[2]) || m[2] === 'apex' || +m[1] > CFG.seedMax) { console.error('--seeds k:rarity（k 0–' + CFG.seedMax + '、rarity ' + EN.RARITY.filter(r => r !== 'apex').join('|') + '）'); process.exit(2); }
+  if (!m || !EN.RARITY.includes(m[2]) || m[2] === 'apex' || +m[1] > SEED_MAX) { console.error('--seeds k:rarity（k 0–' + SEED_MAX + '（seedMax；--ladder 可放大）、rarity ' + EN.RARITY.filter(r => r !== 'apex').join('|') + '）'); process.exit(2); }
   SEEDS = { k: +m[1], rarity: m[2] };
 }
 const WANT_N = +arg('want', 0);
@@ -338,6 +361,8 @@ function runOnce(pol, flow, i, A) {
   if (UNLOCK) Object.assign(o0, { unlocked: [], start: o0.ace }, APEX ? { apexOwned: APEX_ACE ? [APEX_ACE] : [] } : {});   // --unlock：新玩家（只解鎖這一派）
   if (WANT_N) o0.want = wantFor(i);
   if (SEEDS) { o0.prologue = false; o0.seeds = seedsFor(i); }           // 種子只在不打序章的那一趟有效
+  if (TALENT) o0.talent = Object.assign({}, TALENT);                   // 第 D 波：樂歷主幹固定檔位
+  if (LADDER) Object.assign(o0, LADDER);                                //          階梯（seedMax／relicPick／goldAdd）
   if (SAFETY) o0.safety = true;                                         // 第 C 波：新手保底（只印對照）
   if (FROM) { o0.from = FROM; o0.prologue = false; o0.relics = FROM_RELICS.slice(); }   // 中繼點開局（快速選秀）
   if (RET_RELICS) { o0.prologue = false; o0.relics = RET_RELICS.slice(); }   // 老玩家：不打序章、帶 3 件配件
@@ -466,7 +491,8 @@ function runOnce(pol, flow, i, A) {
   const end = lostMan ? 0 : cens ? CAP : run.pos;
   if (firstLoss == null) firstLoss = cens ? CAP + 1 : end;
   const S = run.stats, sum = EN.runSummary(run);
-  return { end, cens, lostMan, firstLoss, fatal, maxHands, level: run.level, atk: run.atk, def: run.def, maxHp: run.maxHp, relics: run.relics.length,
+  const dx = D1EX ? (() => { const g = EN.careerGain(C, sum, {}), L = sum.lexp || {}; return { lxBase: g.base, lxRoute: g.route, lxRaw: g.route + g.cut, lxGig: L.gig | 0 }; })() : {};   // 第 D 波：這一趟樂歷（沒破紀錄、沒倍率）
+  return { ...dx, end, cens, lostMan, firstLoss, fatal, maxHands, level: run.level, atk: run.atk, def: run.def, maxHp: run.maxHp, relics: run.relics.length,
     taken: sum.taken, rewardCards: S.taken.length, bought: S.bought.length, relicsBought: S.relicsBought.length, relicsGot: S.relicsGot.length,
     earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
     bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent,
@@ -497,7 +523,7 @@ function runCell(pol, flow, n) {
   }
   if (WC_ON) A.cw = { dare: { f: 0, w: 0 }, plain: { f: 0, w: 0 } };   // 第 C 波（全關不記、JSON 不多欄位）
   const recs = [];
-  for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, i, A));
+  for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, I0 + i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
   const share = (arr, p) => (arr.length ? arr.filter(p).length / arr.length : null);
   const avg = k => recs.reduce((s, r) => s + r[k], 0) / n;
@@ -505,7 +531,7 @@ function runCell(pol, flow, n) {
   const tot = k => sum(k, 1, CAP);
   const dead = recs.filter(r => r.fatal);
   const pos = [];
-  for (let d = 1; d <= Math.min(60, CAP); d++) if (A.att[d]) pos.push({ d, cls: EN.classAt(d), reached: A.reached[d], win1: A.att1[d] ? A.win1[d] / A.att1[d] : null,
+  for (let d = 1; d <= Math.min(POSMAX, CAP); d++) if (A.att[d]) pos.push({ d, cls: EN.classAt(d), reached: A.reached[d], win1: A.att1[d] ? A.win1[d] / A.att1[d] : null,
     win: A.win[d] / A.att[d], hazard: A.deaths[d] / A.reached[d], hands: A.hands[d] / A.att[d] });
   let cliff = { drop: 0, at: null, from: null }, prev = null;
   for (const p of pos) { if (p.cls === 'boss' || p.reached < 200) continue; if (prev && prev.win1 - p.win1 > cliff.drop) cliff = { drop: prev.win1 - p.win1, from: prev.d, at: p.d, w0: prev.win1, w1: p.win1 }; prev = p; }
@@ -524,6 +550,7 @@ function runCell(pol, flow, n) {
     median: q(ends, 0.5), mean: avg('end'), p25: q(ends, 0.25), p75: q(ends, 0.75), p90: q(ends, 0.9), censored: share(recs, r => r.cens), lostMan: share(recs, r => r.lostMan),
     noRetry: { median: q(fl, 0.5), mean: fl.reduce((s, x) => s + x, 0) / n },
     reach: REACH.map(d => share(recs, r => r.end >= d)), reach3: share(recs, r => r.end >= 3),
+    ...(D1EX ? { reach21: share(recs, r => r.end >= 21), lexp: { base: avg('lxBase'), route: avg('lxRoute'), raw: avg('lxRaw'), gig: avg('lxGig') } } : {}),
     die13: share(recs, r => !r.cens && r.end <= 3),
     deathBands: BANDS.map(([a, b]) => share(dead, r => r.end >= a && r.end <= b)),
     fights: tot('att'), hands: tot('hands') / Math.max(1, tot('att')), r6: tot('r6') / Math.max(1, tot('att')), barShare: tot('bar') / Math.max(1, tot('att')),
@@ -635,6 +662,10 @@ if (APEX_PARAMS) report.apexParams = APEX_PARAMS;
 if (LOT_ON) report.lot = EN.lotCfg(C);                                   // 第 B 波：一檔貨開著才多這些鍵（--lot off 時 JSON 跟一檔貨之前逐字相同）
 if (BROWSE < 16) report.browse = BROWSE;
 if (SEEDS) report.seeds = Object.assign({}, SEEDS, { example: seedsFor(0) });
+if (TALENT) report.talent = TALENT;                                        // 第 D 波（沒給＝JSON 跟以前一樣）
+if (LADDER) report.ladder = LADDER;
+if (POSMAX !== 60) report.posmax = POSMAX;
+if (I0) report.i0 = I0;
 if (WANT_N) report.want = WANT_N;
 if (WC_ON) report.waveC = WCC;                                             // 第 C 波：開著才多這些鍵（--wc off 時 JSON 跟 C 波之前一樣，只差 trial.guestHpSteps）
 if (COPT_SET) report.copt = COPT;
@@ -642,6 +673,7 @@ if (SAFETY) report.safety = true;
 if (FROM) report.from = { n: FROM, relics: FROM_RELICS };
 if (RET_RELICS) report.returning = RET_RELICS;
 if (RET_RELICS) console.log('\n老玩家（--returning）：不打序章、帶 ' + RET_RELICS.join('、') + ' 開局');
+if (TALENT || LADDER) console.log('\n樂歷（第 D 波）：' + (TALENT ? '主幹 ' + Object.entries(TALENT).map(([k, v]) => k + ' ' + v).join('、') + '（每一趟都帶）' : '') + (TALENT && LADDER ? '；' : '') + (LADDER ? '階梯 ' + JSON.stringify(LADDER) : ''));
 if (FROM) console.log('\n中繼點開局（--from ' + FROM + '）：快速選秀（撿盤 ' + EN.draftPlan(C, FROM).k + ' 次二選一、升級 ' + EN.draftPlan(C, FROM).m + ' 次三選一）→ 特價箱 → 從第 ' + FROM + ' 位開打；配件 ' + (FROM_RELICS.join('、') || '無'));
 if (SAFETY) console.log('\n新手保底（--safety）：每一趟第 1 位輸了免費重打一次（＝新帳號第一趟；D1／D2 照這個判，T1 只列參考）');
 if (DBASE && !(DBASE.N === N && DBASE.CAP === CAP && JSON.stringify(DBASE.returning || null) === JSON.stringify(RET_RELICS || null) && !DBASE.waveC)) {
@@ -739,6 +771,13 @@ if (MODE === 'all' || MODE === 'runs') {
   }
 
   if (WC_ON) printWC(rows);                                              // 第 C 波（全關不印）
+  if (D1EX) {                                                            // 第 D 波：試煉過關率（到第 21 位＝打倒第 20 位藏家）＋每趟樂歷（careerGain：沒破紀錄、沒倍率）
+    console.log(`\n第 D 波：到第 21 位（打倒第 20 位藏家＝試煉過關）、每趟樂歷（基本＝15×位數＋8×最多連贏；路線＝截過的，括號未截）${TIER ? '；試煉第 ' + TIER + ' 階' : ''}：\n`);
+    console.log('| 策略 | 流程 | 到第 21 位 | 開局 品味／底氣／聲望上限 | 樂歷 基本＋路線（未截）／演唱會 |');
+    console.log('|---|---|---|---|---|');
+    for (const x of rows) { if (x.reach21 == null) continue; const L = x.lexp;
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(x.reach21)} | ${TALENT ? [(TALENT.atk | 0), (TALENT.def | 0), EN.trialCfg(C, TIER).youHp + 2 * (TALENT.hp | 0)].join('／') : '0／0／' + EN.trialCfg(C, TIER).youHp} | ${Math.round(L.base)}＋${Math.round(L.route)}（${Math.round(L.raw)}）／${Math.round(L.gig)} |`); }
+  }
   if (FROM) {                                                            // 中繼點開局（--from N；只印；C1 列參考，要 --cpbase）
     console.log(`\n中繼點開局（從第 ${FROM} 位開；第一場是藏家）：\n`);
     console.log(`| 策略 | 流程 | 深度 中位（p25–p75）／平均 | 撐過 5 位（到第 ${FROM + 5} 位） | 撐過 10 位（到第 ${FROM + 10} 位） | 第 ${FROM} 位（第一場）死亡率 | 客人場勝率 |`);
@@ -747,7 +786,7 @@ if (MODE === 'all' || MODE === 'runs') {
     // C1（參考，SPEC-C §8；驗收修正：第 50 位也比、加下限）：從中繼點開的 10 位存活率 − 從頭打到第 N 位的人再撐 10 位，在 −8～+3 點內（--cpbase）
     const bp = CPBASE && CPBASE.runs && CPBASE.runs.smart && CPBASE.runs.smart.thoughtful && CPBASE.runs.smart.thoughtful.pos, cpT = cellOf(GATE, 'thoughtful');
     if (cpT && cpT.cp) {
-      const a = bp && bp[FROM - 1], b = bp && bp[FROM + 9], nm = `［${GATE}］中繼點開局：從第 ${FROM} 位開的 10 位存活率，跟從頭打到那裡的比在 −8～+3 點內（會讀的）`;
+      const a = bp && bp.find(o => o.d === FROM), b = bp && bp.find(o => o.d === FROM + 10), nm = `［${GATE}］中繼點開局：從第 ${FROM} 位開的 10 位存活率，跟從頭打到那裡的比在 −8～+3 點內（會讀的）`;
       if (a && b && a.reached >= 100) { const base = b.reached / a.reached, d = cpT.cp.reach10 - base;
         const okc = d >= -0.08 - 1e-9 && d <= 0.03 + 1e-9;
         refs.push({ id: 'C1', name: nm, ok: okc, info: `${pct(cpT.cp.reach10)} 對 從頭打 ${pct(base)}（${b.reached}/${a.reached} 趟；${(d >= 0 ? '+' : '') + pt(d)} 點）` + (okc ? '［在範圍內］' : '［不在範圍內］') }); }

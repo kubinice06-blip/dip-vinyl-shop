@@ -537,6 +537,26 @@ for (const [k, v] of Object.entries(C.daily || {})) {
   if (len(v.replace(/\{\w+\}/g, '')) > max) err(where, '超過 ' + max + ' 字（不算 {x}）：' + v);
   add({ scene: '今日推薦集點卡（試聽機那塊、標題小籤、換獎勵；{x} 由畫面代入）', where, who: k === 'hint' ? '老闆' : '（畫面字）', key: k, text: v, tag: C.dailyTag });
 }
+// 第 D 波棒一：樂歷畫面字（C.career.ui、careerTag；樂歷頁、標題第二行、結算那行＋明細、過場卡、入帳吐司、演唱會、說情）＋新手推薦標（C.aceNewbie、aceNewbieTag）。每句 ≤40 字（不算 {x}）
+{
+  const CSC = [[/^(lv|drawGot|ladderOpen|goTalent|profUp|card)/, '樂歷・過場卡（結算主鈕之後、開機入帳之後；一次一張）'], [/^deposit/, '樂歷・開機入帳的吐司（C 波記的樂歷）'],
+    [/^(endLine|tierPre|part|routeCap|gainTitle|toPage)/, '樂歷・結算頁那一行＋明細'], [/^(line|shelfBtn|bestTier)/, '樂歷・標題第二行、唱片櫃頁頭'],
+    [/^off/, '樂歷・關掉樂歷（Lv10 起、只在樂歷頁）'], [/^(ladder|drawRow)/, '樂歷・樂歷頁的解鎖階梯'], [/^gig/, '樂歷・演唱會買票面板'], [/^plea/, '樂歷・來客條說情、備用說情'],
+    [/^srcLexp/, '樂歷・唱片櫃來源'], [/./, '樂歷・樂歷頁（天賦、重配、熟練度）']];
+  const walkC = (v, where, k0) => {
+    if (Array.isArray(v)) return v.forEach((x, i) => walkC(x, where + '[' + i + ']', k0));
+    if (v && typeof v === 'object') return Object.entries(v).forEach(([k, x]) => { if (k !== 'key' && k !== 'cats') walkC(x, where + '.' + k, k0); });
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.careerTag)) err(where, '沒有 tag（careerTag）');
+    if (len(v.replace(/\{\w+\}/g, '')) > 40) err(where, '超過 40 字（不算 {x}）：' + v);
+    add({ scene: CSC.find(x => x[0].test(k0))[1], where, who: /^deposit/.test(k0) ? '老闆' : '（畫面字）', key: where.replace(/^career\.ui\./, ''), text: v, tag: C.careerTag });
+  };
+  for (const [k, v] of Object.entries(((C.career || {}).ui) || {})) walkC(v, 'career.ui.' + k, k);
+  for (const [k, v] of Object.entries(C.aceNewbie || {})) {
+    if (!TAG_OK(C.aceNewbieTag)) err('aceNewbie.' + k, '沒有 tag（aceNewbieTag）');
+    add({ scene: '流派・第一次挑派的新手推薦標', where: 'aceNewbie.' + k, who: '（畫面字）', key: k, text: v, tag: C.aceNewbieTag });
+  }
+}
 for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');
   add({ scene: '無限試煉・結算與標題的紀錄', where: 'summary.' + k, who: '（畫面字）', key: k, text: v, tag: C.summaryTag });

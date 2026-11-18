@@ -149,6 +149,9 @@
     if (p.relicDone || !relics.length) return '<div class="foot"><button type="button" class="lb-btn wide lt-skip" data-a="skip">' + skipTx + '</button></div>';
     var skip = '<button type="button" class="lb-btn lt-skip" data-a="skip">' + skipTx + '</button>';
     var cap = S.kind === 'chest' ? U('chestRelic') : U('orRelic');
+    // 第 D 波（SPEC-D §2.8-6）：樂歷 Lv10 起菁英／藏家的配件三選一＝三件排成一列三格，「不收 +$200」移到下一行的小字鈕（站面板照捲，三格在第一屏）
+    if (relics.length > 1) return '<div class="lt-rel3"><span class="cap">' + esc(cap) + '</span><div class="row3">' + H.relicButtonsHTML(relics, 'data-r', { cell: true }) + '</div></div>' +
+      '<div class="foot"><button type="button" class="lb-btn wide lt-skip sm" data-a="skip">' + skipTx + '</button></div>';
     return '<div class="foot two rel"><div class="orr"><span class="cap">' + esc(cap) + '</span>' + H.relicButtonsHTML(relics, 'data-r') + '</div>' + skip + '</div>';
   }
   // 木箱（保底那箱：箱子底下也寫老闆那句，店景右上的泡泡常被頂上錢那條蓋住）

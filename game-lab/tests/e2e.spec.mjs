@@ -80,7 +80,7 @@ import path from 'path';
 import { createRequire } from 'module';
 import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, hitPoint, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
-  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4, lootReady, passLoot, clearStall, lootState, stallState } from './e2e-lib.mjs';
+  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4, lootReady, passLoot, clearStall, lootState, stallState, passCards } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -446,6 +446,7 @@ async function run() {
           const expSeeds = await page.evaluate(() => window.__lab.seedPool(window.__lab.save.lastAce || 'hall').length > 0);
           const last = await page.evaluate(() => { const t = window.__lab.save.lastAce, C = window.DipLabContent; return { tier: t, want: C.script.again[1].text.replace('{ace}', C.cards[C.aces[t]].album) }; });
           await jsClick(page, '[data-a=again]');
+          await passCards(page);                  // 第 D 波：升級過場卡（樂歷 Lv 2…）一張一張點掉
           // 店主 11-13：開局不再挑王牌——老闆一句「老樣子，《王牌》。」（A2）就往下走；整段不該出現挑王牌面板
           let n2 = false, sawSeeds = false, sawAce = false, a2 = ''; const t1 = Date.now();
           while (!n2 && Date.now() - t1 < 25000) {
@@ -1148,6 +1149,7 @@ async function run() {
         // 店主 11-13：開局不再挑王牌，沿用上次那張（save.lastAce）。上一趟（hall）當作跟老闆換成了 pearl → 這一趟就是 pearl（#54 測真的換）
         await page.evaluate(() => { window.__lab.save.lastAce = 'pearl'; });
         await jsClick(page, '[data-a=again]');
+        await passCards(page);                    // 第 D 波：升級過場卡
         const seedsUp = await page.waitForSelector('.lb-sheet.seeds .lb-ct', { timeout: 15000 }).then(() => true, () => false);
         const ace = !(await page.$('.lb-sheet.acepick'));                 // 沒有挑王牌面板
         await sleep(600);

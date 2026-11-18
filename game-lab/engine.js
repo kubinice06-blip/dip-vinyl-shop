@@ -84,7 +84,7 @@
 //              effects [{radio: cell, card: id}]。canRadio(run)＝canShop 且這輪還沒轉。tune 只用在抽卡池，outcome／星數不讀它（頻率不進戰鬥規則）
 //            bargainPriceIn(run, content, id)：特價箱這一格的價＝電台那張照原價（priceOf：稀有度價；特價箱封頂 $300 會被低買高賣）、其他照 bargainPriceOf；buyBargain 用它
 // Seeds      從唱片櫃挑牌開局（SPEC 從唱片櫃挑牌開局 §0–§1；引擎不碰存檔：「擁有」由畫面傳進來，owned＝函式 id→bool｜陣列｜{id: truthy}）
-//            newRun 多收 seeds:[ids]（0–3 張，CFG.seedMax）：序章那一趟不收；頂點卡、不存在的卡、重複的丟掉。包包＝種子＋老闆送的（這次王牌那組）補到 4 張
+//            newRun 多收 seeds:[ids]（0–3 張，CFG.seedMax；第 D 波 o.seedMax 蓋過）：序章那一趟不收；頂點卡、不存在的卡、重複的丟掉。包包＝種子＋老闆送的（這次王牌那組）補到 4 張
 //              （種子跟送的重複：送的往下補下一張）；特價箱 3 張照舊 → 7 張。run.seeds＝包包裡從唱片櫃帶來的（不能賣回換錢；第 A 波起可以在櫃檯交還老闆 $0，
 //              交還就不再是種子；舊規則路 buy／buyBargain → 'seedNoSell'）；run.gifts＝這一趟實際放進包包的老闆送的（isGift 照它）
 //            canSeed(content, id)（卡存在、不是頂點卡）· isSeed(run, content, id) · seedPolicy(content, ids, n?)（自動遊玩：照最高星挑；同星看總星、再看 id）
@@ -191,6 +191,13 @@
 //            sellCore(run, content, id)（賣回規則，不看時機）＝sellQuote 去掉 canShop；keepCandidates 扣 stats.bought；客人補償 trialGuest 加 content.trial.guestHpSteps
 //            setCtx({owned, tunes})（畫面 boot 設一次；金邊、公關片先扣擁有的、公關片兩格頻率 ×3；sim 不設）· gigPrice · gigKeepN · lexpBase · stallLadder · stallUnlocked
 //            draftPlan · expLevel · wcCfg · wcTh · wcPool · floorAt · lootRow · chestRow · stallSession · cPolicy（runPolicy 遇到 stall／draft 交給它）
+// Career     第 D 波樂歷（scratchpad v5/wave-d SPEC-D §2；給畫面的契約 build1/CONTRACT.md）。純函式、不碰存檔；數字＝content.career（沒給的用 CAREER）
+//            newRun 多收 talent {atk, def, hp, xp, plea, money, pay, rare}、seedMax、relicPick、goldAdd（＝talentArgs 給的；全沒給／全 0＝run 一個欄位都不多）
+//              → run 多 talent（非 0 的級數）、xpMul／xpFrac（局內經驗）、plea（備用說情）、payMul（酬勞）、goldAdd（戰利品列金邊 +n）、relicPick（菁英／藏家配件幾選一）
+//            輸：序章 → 新手保底（第 1 位）→ 這一輪的說情（retryLeft）→ 備用說情（run.plea：pending retry {plea:true}；choose retry 扣 run.plea、不每輪補）→ 死
+//            careerCfg · careerGain(content, runSummary(run), {best, tier, quit, open}) · posFought(run)（放棄時站著那一位打完了沒）· careerLevel(content, xp) · careerXpAt · careerPoints(content, career) · talentCost · talentOpen
+//            talentBuy／talentSell／careerRespec（回新的 career）· talentArgs(content, career) · applyTalent · gigRoom(run, content) · ladderList／ladderAt／ladderNext
+//            careerDraw(content, key, level, owned) · profLevel · profGain · profFirst · careerDeposit(content, save) · careerFix(content, career) · seedsOf(content, ids, max)
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -294,6 +301,7 @@
   // 字串 → [0,1)：fnv1a32 再過 murmur3 的 fmix32（fnv 的低位元與高位元對相近的字串不夠亂；run 的雜湊都走這個）
   function hash01(str) { let h = fnv1a32(str); h ^= h >>> 16; h = Math.imul(h, 0x85ebca6b); h ^= h >>> 13; h = Math.imul(h, 0xc2b2ae35); h ^= h >>> 16; return (h >>> 0) / 4294967296; }
   const clone = o => JSON.parse(JSON.stringify(o));
+  const round6 = x => Math.round(x * 1e6) / 1e6;
   const star = (card, a) => (card && card[a]) | 0;
   const power = c => star(c, 'c') + star(c, 'o') + star(c, 'h');
   function tasteStr(t) { let s = Array.isArray(t) ? t.join('') : String(t || ''); s = s.split('').filter((x, k, a) => ATTRS.includes(x) && a.indexOf(x) === k).join(''); for (const a of ATTRS) if (!s.includes(a)) s += a; return s; }
@@ -1401,8 +1409,10 @@
 
   // 種子（SPEC 從唱片櫃挑牌開局 §0、§1 裁定 3）：卡存在、不是頂點卡（頂點卡只能放王牌格）
   function canSeed(content, id) { const c = typeof id === 'string' ? cardOf(content, id) : null; return !!c && !c.tier; }
-  function seedsOf(content, ids) {
-    return (Array.isArray(ids) ? ids : []).filter((id, k, a) => canSeed(content, id) && a.indexOf(id) === k).slice(0, CFG.seedMax);
+  //   max＝這一趟的種子格（第 D 波樂歷 Lv12 起 4；SPEC-D §2.4）；沒給＝CFG.seedMax（3）
+  function seedsOf(content, ids, max) {
+    const m = Number.isInteger(max) && max > 0 ? max : CFG.seedMax;
+    return (Array.isArray(ids) ? ids : []).filter((id, k, a) => canSeed(content, id) && a.indexOf(id) === k).slice(0, m);
   }
   // 這一趟藏家帶哪張王牌（＝newRun 的 run.bossAce：run.rng 的第一個亂數；存檔遷移用它補「打倒藏家拿到的王牌」）
   function bossAceFor(seedKey, runNo, ace) {
@@ -1515,7 +1525,7 @@
     const prologue = from ? false : o.prologue != null ? !!o.prologue : runNo === 1;
     // 包包＝種子（0–3 張）＋老闆送的補到 4 張（種子跟送的重複：送的往下補下一張）；序章那一趟不挑（裁定 2）
     const G = ((content.gifts || {})[ace] || []).slice();
-    const seeds = prologue ? [] : seedsOf(content, o.seeds);
+    const seeds = prologue ? [] : seedsOf(content, o.seeds, o.seedMax);   // 第 D 波：o.seedMax（樂歷 Lv12 起 4 格＝送的全換掉）
     const gifts = G.filter(id => !seeds.includes(id)).slice(0, Math.max(0, G.length - seeds.length));
     const run = {
       v: RUN_V, seedKey, runNo, tier, rng: fnv1a32(seedKey + '#' + runNo) || 1, ace, bossAce: null,
@@ -1546,6 +1556,8 @@
     const W = wcCfg(content);
     Object.assign(run, { far0: Math.max(0, o.bestFar | 0), road: [], lexp: {}, tickets: 0, chestDry: Math.max(0, o.chestDry | 0), dare: null, dareLast: null,
       consign: null, fortune: null, safety: !!(W.safety.on && o.safety && !from), found: [] });
+    // 第 D 波樂歷（SPEC-D §2.7）：talent／relicPick／goldAdd（＝talentArgs 給的）。全沒給或全 0＝run 一個欄位都不多（逐字現況）
+    if (o.talent || o.relicPick || o.goldAdd) applyTalent(run, content, o);
     if (from) {                                                  // 中繼點開局：快速選秀（撿盤 k 次二選一＋升級 m 次三選一）→ 特價箱 → 從第 N 位開打（pos 先留 1，draftDone 才跳）
       run.cpFrom = from;
       const D = draftPlan(content, from);
@@ -1962,7 +1974,9 @@
     return { duel: r.duel, events: r.events, enemyId };
   }
   // 升級：經驗滿「目前等級＋3」升一級；每升一級聲望上限 +1、現有聲望也 +1，再三選一（levelUps 記還沒選的次數）
+  //   第 D 波樂歷「局內經驗」（run.xpMul＝1＋0.1×級）：每次 n×xpMul，零頭累積在 run.xpFrac（10 場 2 經驗 ×1.2＝24）
   function gainXp(run, T, n) {
+    if (run.xpMul > 1) { const x = n * run.xpMul + (+run.xpFrac || 0); n = Math.floor(x + 1e-9); run.xpFrac = Math.max(0, round6(x - n)); }
     run.xp += n; let ups = 0;
     while (run.xp >= run.level + T.levelNeed) { run.xp -= run.level + T.levelNeed; run.level++; run.maxHp += T.levelHp; run.hp += T.levelHp; run.levelUps++; ups++; }
     return ups;
@@ -1984,6 +1998,7 @@
     if (win) {
       S.wins++;
       earn = Math.max(0, econ(content).win[cls] | 0);
+      if (run.payMul > 1) earn = Math.round(earn * run.payMul);   // 第 D 波樂歷「酬勞」：打贏的錢 +10%／級
       run.money += earn; S.earned += earn;
       if (prologue) {
         run.prologue = 'done';
@@ -2031,7 +2046,8 @@
         let relics = [];
         if (cls === 'elite' || cls === 'boss') {
           const pool = (((content.rewards || {}).relicPool) || Object.keys(content.relics || {})).filter(id => relicOk(content, id) && !run.relics.includes(id));
-          if (pool.length) relics = [pickOne(pool, run)];
+          // 第 D 波樂歷 Lv10（run.relicPick 3）：三選一＝照 run.rng 依序抽不重複的幾件；1 件時跟原本同一個亂數、同一件
+          if (pool.length) { const left = pool.slice(), n = Math.min(left.length, run.relicPick > 1 ? run.relicPick | 0 : 1); for (let i = 0; i < n; i++) { const x = pickOne(left, run); relics.push(x); left.splice(left.indexOf(x), 1); } }
         }
         run.pending = { type: 'reward', enemyId, prologue: false, pos, cls, cards, relics, need: relics.length ? 'cardOrRelic' : 'card', cardDone: !cards.length, relicDone: !relics.length, aceWon };
         if (extra) Object.assign(run.pending, { kind: extra.kind, src: extra.src, gold: extra.gold, packet: extra.packet || null, apexSlot: extra.apexSlot || [],
@@ -2044,6 +2060,7 @@
       if (prologue) run.pending = { type: 'retry', enemyId, free: true };
       else if (run.safety && pos === 1) { run.safety = false; wcStats(run).safety++; run.pending = { type: 'retry', enemyId, free: true, safety: true, pos }; }   // 第 C 波新手保底：第 1 位輸了免費重打一次（不吃說情）
       else if (run.retryLeft > 0) run.pending = { type: 'retry', enemyId, free: false, pos };
+      else if (run.plea > 0) run.pending = { type: 'retry', enemyId, free: false, pos, plea: true };   // 第 D 波樂歷「備用說情」：這一輪的說情用完才用、這一趟一次、不每輪補（SPEC-D §2.7）
       else {
         run.over = 'dead';
         S.lostAt = { enemyId, pos, round: run.round, idx: run.idx, cls, n: duel.n, last: duel.last };
@@ -2245,8 +2262,10 @@
     effects.push(q.reclaim ? { loseCard: id, earn: 0, reclaim: q.reclaim } : q.found ? { loseCard: id, earn: q.earn, found: true } : { loseCard: id, earn: q.earn });
   }
   // 自動遊玩挑種子：照最高星（峰值）挑，同星看總星、再看 id（決定性）
-  function seedPolicy(content, ids, n) {
-    const k = n == null ? CFG.seedMax : Math.max(0, Math.min(CFG.seedMax, n | 0));
+  //   max＝這一趟的種子格（第 D 波 talentArgs 的 seedMax；沒給＝CFG.seedMax）
+  function seedPolicy(content, ids, n, max) {
+    const M = Number.isInteger(max) && max > 0 ? max : CFG.seedMax;
+    const k = n == null ? M : Math.max(0, Math.min(M, n | 0));
     return uniq((ids || []).filter(id => canSeed(content, id)))
       .sort((a, b) => peak(cardOf(content, b)) - peak(cardOf(content, a)) || power(cardOf(content, b)) - power(cardOf(content, a)) || (a < b ? -1 : a > b ? 1 : 0))
       .slice(0, k);
@@ -2484,7 +2503,7 @@
     for (const id of deck.slice().sort((a, b) => h(a) - h(b))) { if (cards.length >= L.n) break; if (!cards.includes(id)) { cards.push(id); src.push(met.includes(id) ? 'played' : 'unplayed'); } }
     if (cards.length < L.n) for (const id of wcPick(wcPool(content, wcTh(content, pos, 'power', run.tier)), key + '#fill', L.n - cards.length, wcSkip(run, cards))) { cards.push(id); src.push('fill'); }
     const gold = [];
-    if (cards.length && hash01(key + '#gold') < L.gold) {
+    if (cards.length && hash01(key + '#gold') < L.gold + (+run.goldAdd > 0 ? +run.goldAdd : 0)) {   // 第 D 波樂歷：稀有率天賦＋Lv15 階梯（run.goldAdd；只加戰利品列）
       let k = -1; for (let i = cards.length - 1; i >= 0; i--) if (i > 0 || src[i] !== 'unplayed') { k = i; break; }
       if (k < 0) k = cards.length - 1;
       const g = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', 1, wcSkip(run, cards), null, ctxOwned())[0];
@@ -3009,9 +3028,9 @@
       }
       case 'retry': {
         if (!p || p.type !== 'retry') return fail('noRetry');
-        if (!p.free) run.retryLeft--;
+        if (p.plea) run.plea = Math.max(0, (run.plea | 0) - 1); else if (!p.free) run.retryLeft--;   // 第 D 波備用說情：扣 run.plea、不動這一輪的說情
         S.retries++; run.pending = null; run.hp = run.hpIn;          // 裁定 8：同一位、同一副牌、聲望回到開打前
-        effects.push(p.safety ? { retry: p.enemyId, free: true, safety: true } : { retry: p.enemyId, free: !!p.free });   // 第 C 波新手保底（retryFlow 分支）
+        effects.push(p.safety ? { retry: p.enemyId, free: true, safety: true } : p.plea ? { retry: p.enemyId, free: false, plea: true } : { retry: p.enemyId, free: !!p.free });   // 第 C 波新手保底、第 D 波備用說情（retryFlow 分支）
         return { ok: true, effects };
       }
       case 'end': {
@@ -3185,6 +3204,259 @@
     return fail('badChoice');
   }
 
+  // ============================================================================================================================
+  // 第 D 波：樂歷（局外成長；scratchpad v5/wave-d SPEC-D §2、§4.1；給畫面的契約 build1/CONTRACT.md）。全部純函式、不碰存檔、不碰 run.rng。
+  //   career＝save.career 那包 {key, xp, spent:{id:級}, off, prof:{hall,pearl,heresy}, tree, drawn:[等級], banked, lastGain}；等級、點數都由 xp／spent 算、不存
+  //   數字＝content.career（沒給的用 CAREER；careerCfg 逐層合併：物件逐鍵、陣列整個換）
+  //   進局：newRun 收 talentArgs(content, career) 給的 {talent, seedMax, relicPick, goldAdd}（applyTalent）；Lv8 前、關樂歷＝{}（或只有錢類 talent）＝逐字現況
+  // ============================================================================================================================
+  const CAREER = {
+    lexp: { pos: 15, streak: 8, record: 30, caps: { gig: 0.25, route: 0.40 }, tierMul: 0.10, lowMul: 2, lowBelow: 10 },
+    curve: { tri: 100, triTo: 10, after: 1000 },
+    draw: { every5: 'epic', epicFrom: 10, other: ['rare', 'uncommon'] },
+    talentFx: { atk: 1, def: 1, hp: 2, xp: 0.10, plea: 1, money: 500, pay: 0.10, rare: 0.02 },
+    talents: [
+      { id: 'atk', cat: 'power', cost: [6, 'k'], max: 0, open: 8 }, { id: 'def', cat: 'power', cost: [6, 'k'], max: 0, open: 8 },
+      { id: 'hp', cat: 'power', cost: [6, 'k'], max: 0, open: 8 }, { id: 'xp', cat: 'xp', cost: [3, 'k'], max: 2, open: 8 },
+      { id: 'plea', cat: 'safe', cost: [15, 'flat'], max: 1, open: 20 },
+      { id: 'money', cat: 'money', cost: [1, 'flat'], max: 3, open: 2 }, { id: 'pay', cat: 'money', cost: [1, 'flat'], max: 3, open: 2 },
+      { id: 'rare', cat: 'luck', cost: [2, 'flat'], max: 3, open: 8 },
+      { id: 'piggy', cat: 'money', cost: [1, 'flat'], max: 3, open: 2, soon: true }, { id: 'reroll', cat: 'luck', cost: [2, 'flat'], max: 3, open: 2, soon: true },
+      { id: 'ban', cat: 'luck', cost: [2, 'flat'], max: 3, open: 2, soon: true }, { id: 'intel', cat: 'info', cost: [2, 'k+1'], max: 2, open: 5, soon: true }],
+    ladder: [
+      { lv: 2, key: 'talents' }, { lv: 8, key: 'power' }, { lv: 10, key: 'relic3', relicPick: 3 }, { lv: 10, key: 'off' },
+      { lv: 12, key: 'seed4', seedMax: 4 }, { lv: 15, key: 'gold', goldAdd: 0.01 }, { lv: 20, key: 'plea' },
+      { lv: 0, key: 'seed5', soon: true }, { lv: 0, key: 'relicsNew', soon: true }, { lv: 0, key: 'regulars', soon: true }, { lv: 0, key: 'outfit', soon: true }],
+    offFrom: 10,
+    prof: { stamp: 150, per: 10, lagMul: 2, lagBelow: 0.5, firstStamps: 2, pointFrom: 2,
+      auto: [{ lv: 3, key: 'sigil', soon: true }, { lv: 5, key: 'tier3' }, { lv: 7, key: 'giftSwap', soon: true }, { lv: 10, key: 'outfit', soon: true }] }
+  };
+  const LEXP_ROUTE = ['gig', 'home', 'promo', 'packet', 'demo'];      // 路線五項（C 波 run.lexp 的鍵；base 另算）
+  const nonNeg = x => (typeof x === 'number' && isFinite(x) && x > 0) ? Math.floor(x) : 0;
+  function careerCfg(content) {
+    const s = (content && content.career) || {}, out = {};
+    for (const k of Object.keys(CAREER)) out[k] = wcMerge(CAREER[k], s[k]);
+    return out;
+  }
+  function talentDef(content, id) { return careerCfg(content).talents.find(t => t && t.id === id) || null; }
+  // 第 k 級要幾點：cost [a,'k']＝a×k、[a,'flat']＝a、[a,'k+1']＝a＋k−1（客人底細 2、3）；沒有這個天賦＝Infinity
+  function talentCost(content, id, k) {
+    const T = talentDef(content, id); if (!T || !Array.isArray(T.cost)) return Infinity;
+    const a = +T.cost[0] || 0, n = Math.max(1, k | 0);
+    return T.cost[1] === 'k' ? a * n : T.cost[1] === 'k+1' ? a + n - 1 : a;
+  }
+  const talentSpent = (content, id, n) => { let s = 0; for (let k = 1; k <= n; k++) s += talentCost(content, id, k); return s; };
+  // 等級：Lv n→n+1 要 tri×n（n<triTo），之後每級 after。{level, into＝這一級已經有多少, need＝這一級要多少, total＝累計 xp}
+  function careerNeed(content, n) { const V = careerCfg(content).curve; return n < V.triTo ? V.tri * n : V.after; }
+  function careerLevel(content, xp) {
+    const V = careerCfg(content).curve, total = nonNeg(xp), head = V.tri * Math.max(0, V.triTo - 1) * Math.max(0, V.triTo) / 2;
+    if (V.triTo >= 1 && V.after > 0 && total >= head) { const r = total - head; return { level: Math.max(1, V.triTo) + Math.floor(r / V.after), into: r % V.after, need: V.after, total }; }
+    let rem = total, level = 1;
+    for (let g = 0; g < 10000; g++) { const need = careerNeed(content, level); if (!(need > 0) || rem < need) break; rem -= need; level++; }
+    return { level, into: rem, need: careerNeed(content, level), total };
+  }
+  // 升到 Lv level 的累計 xp（Lv1＝0、Lv2＝100、Lv10＝4,500、Lv20＝14,500）
+  function careerXpAt(content, level) { let s = 0; for (let n = 1; n < Math.max(1, level | 0); n++) s += careerNeed(content, n); return s; }
+  // 點數：等級−1 − Σ（spent 每個天賦第 1…n 級的價）
+  function careerPoints(content, career) {
+    const c = career || {}, sp = c.spent || {}, level = careerLevel(content, c.xp).level;
+    let spent = 0;
+    for (const id of Object.keys(sp)) { const n = nonNeg(sp[id]); if (n && talentDef(content, id)) spent += talentSpent(content, id, n); }
+    const total = Math.max(0, level - 1);
+    return { level, total, spent, left: total - spent };
+  }
+  function talentOpen(content, id, level) { const T = talentDef(content, id); return !!T && !T.soon && (level | 0) >= (T.open | 0); }
+  const careerCopy = c => { c = c && typeof c === 'object' ? c : {}; return Object.assign({}, c, { spent: Object.assign({}, c.spent || {}) }); };
+  // 點一級／退一級／全部重配：回新物件（不改傳進來的）；錯誤 'locked'（還沒開、之後開放、沒有這個天賦）｜'max'｜'points'｜'none'（沒點過）
+  function talentBuy(content, career, id) {
+    const T = talentDef(content, id); if (!T || T.soon) return { ok: false, error: 'locked' };
+    const P = careerPoints(content, career);
+    if (P.level < (T.open | 0)) return { ok: false, error: 'locked' };
+    const k = nonNeg(((career && career.spent) || {})[id]);
+    if (T.max > 0 && k >= T.max) return { ok: false, error: 'max' };
+    if (P.left < talentCost(content, id, k + 1)) return { ok: false, error: 'points' };
+    const c = careerCopy(career); c.spent[id] = k + 1;
+    return { ok: true, career: c };
+  }
+  function talentSell(content, career, id) {
+    const k = nonNeg(((career && career.spent) || {})[id]); if (!k) return { ok: false, error: 'none' };
+    const c = careerCopy(career); if (k > 1) c.spent[id] = k - 1; else delete c.spent[id];
+    return { ok: true, career: c };
+  }
+  function careerRespec(content, career) { const c = careerCopy(career); c.spent = {}; return { ok: true, career: c }; }
+  // newRun 的樂歷參數：{talent:{id:級}（開了的、非 0）, seedMax, relicPick, goldAdd}（沒有的鍵不給）。off＝{}（關掉樂歷＝新帳號的難度）
+  function talentArgs(content, career) {
+    const c = career || {}; if (c.off) return {};
+    const K = careerCfg(content), lv = careerLevel(content, c.xp).level, out = {}, t = {};
+    for (const T of K.talents) {
+      if (!T || T.soon || lv < (T.open | 0)) continue;
+      let k = nonNeg((c.spent || {})[T.id]); if (T.max > 0) k = Math.min(k, T.max);
+      if (k) t[T.id] = k;
+    }
+    if (Object.keys(t).length) out.talent = t;
+    for (const L of K.ladder) {
+      if (!L || L.soon || !(L.lv > 0) || lv < L.lv) continue;
+      if (L.seedMax > 0) out.seedMax = Math.max(out.seedMax | 0, L.seedMax | 0);
+      if (L.relicPick > 1) out.relicPick = Math.max(out.relicPick | 0, L.relicPick | 0);
+      if (L.goldAdd > 0) out.goldAdd = round6((out.goldAdd || 0) + L.goldAdd);
+    }
+    return out;
+  }
+  // 進局（newRun）：品味／底氣直接加；聲望上限＋現有 +2／級；局內經驗 xpMul；備用說情 run.plea；開局錢 +$500／級；酬勞 payMul；稀有率＋階梯 goldAdd；配件 relicPick
+  //   全 0 的不寫欄位（run.talent 只記非 0 的級數）
+  function applyTalent(run, content, o) {
+    const F = careerCfg(content).talentFx, t = o.talent && typeof o.talent === 'object' ? o.talent : {}, k = x => nonNeg(t[x]);
+    const tal = {}; for (const x of Object.keys(F)) if (k(x)) tal[x] = k(x);
+    if (k('atk')) run.atk += k('atk') * F.atk;
+    if (k('def')) run.def += k('def') * F.def;
+    if (k('hp')) { const n = k('hp') * F.hp; run.maxHp += n; run.hp += n; run.hpIn = run.hp; }
+    if (k('xp')) run.xpMul = round6(1 + k('xp') * F.xp);
+    if (k('plea')) run.plea = k('plea') * F.plea;
+    if (k('money')) run.money += k('money') * F.money;
+    if (k('pay')) run.payMul = round6(1 + k('pay') * F.pay);
+    const ga = round6((+o.goldAdd > 0 ? +o.goldAdd : 0) + k('rare') * F.rare);
+    if (ga > 0) run.goldAdd = ga;
+    if (nonNeg(o.relicPick) > 1) run.relicPick = nonNeg(o.relicPick);
+    if (Object.keys(tal).length) run.talent = tal;
+    return run;
+  }
+  // 一趟拿多少樂歷（SPEC-D §2.1）：sum＝runSummary(run)；o.best＝這一趟開局前的最遠紀錄（r.farBefore）、o.tier＝試煉階級
+  //   total＝round((base＋record＋route) × mul)；mul＝(1＋tierMul×tier) × low
+  //   base＝pos×實際打過的位數（fought＝reached − from ＋ 1；o.open＝放棄時站著的那一位還沒打完 → 少算那一位）＋streak×最多連贏
+  //   low＝新手補貼 lowMul：只給「這一趟沒走到第 lowBelow 位、帳號也還沒走到過（o.best < lowBelow）、不是放棄（o.quit）」的那一趟
+  //     （棒一審查：只看這一趟會被拿來刷——打 8 場就放棄、或故意輸在第 9 位，每場樂歷是正常打的 2 倍以上）
+  //   route＝min(min(gig, ⌊caps.gig×base⌋)＋home＋promo＋packet＋demo, ⌊caps.route×base⌋)；cut＝五項原值 − route（「路線樂歷已到上限」）
+  function careerGain(content, sum, o) {
+    sum = sum || {}; o = o || {};
+    const X = careerCfg(content).lexp, L = sum.lexp || {}, from = sum.from > 1 ? sum.from | 0 : 1, reached = sum.reached | 0;
+    const fought = sum.reached != null ? Math.max(0, reached - from + 1 - (o.open ? 1 : 0)) : null;
+    const base = fought != null ? X.pos * fought + X.streak * nonNeg(sum.bestStreak) : nonNeg(L.base);
+    const best = nonNeg(o.best), record = best > 0 && reached > best ? X.record | 0 : 0, below = X.lowBelow | 0;
+    const parts = {}; for (const k of LEXP_ROUTE) parts[k] = nonNeg(L[k]);
+    const raw = LEXP_ROUTE.reduce((t, k) => t + parts[k], 0);
+    const route = Math.min(Math.min(parts.gig, Math.floor(X.caps.gig * base)) + raw - parts.gig, Math.floor(X.caps.route * base));
+    const tier = nonNeg(o.tier), tierMul = round6(1 + X.tierMul * tier), low = X.lowMul > 1 && !o.quit && reached < below && best < below ? +X.lowMul : 1, mul = round6(tierMul * low);
+    return { base, fought, record, route, cut: raw - route, mul, tierMul, low, tier, total: Math.round((base + record + route) * mul), parts };
+  }
+  // 放棄（重新推門）的那一趟，站著的這一位打完了沒（careerGain 的 o.open＝!posFought）：打贏還在領獎／升級、輸了停在說情選單＝打過；
+  //   還沒開打（路線上、中繼點選秀）、對決打到一半＝沒打過
+  function posFought(run) {
+    const p = run && run.pending;
+    return !!(run && (run.over || (p && !p.prologue && p.pos === run.pos && (p.type === 'reward' || p.type === 'level' || p.type === 'retry'))));
+  }
+  // 這一趟演唱會還能算幾張（照現在的基本樂歷；基本只會變大，所以是下限）：max(0, ⌊(⌊caps.gig×base⌋ − 已算的 gig) / 每張⌋)
+  function careerBase(content, run) { const X = careerCfg(content).lexp, from = run.cpFrom > 1 ? run.cpFrom : 1; return X.pos * Math.max(0, (run.pos | 0) - from + 1) + X.streak * nonNeg(run.bestStreak); }
+  function gigRoom(run, content) {
+    if (!run) return 0;
+    const per = wcCfg(content).stall.gig.lexp | 0; if (!(per > 0)) return 0;
+    const cap = Math.floor(careerCfg(content).lexp.caps.gig * careerBase(content, run));
+    return Math.max(0, Math.floor((cap - nonNeg((run.lexp || {}).gig)) / per));
+  }
+  // 解鎖階梯：ladderList＝整條（open＝已開）；ladderAt＝剛好這一級開的（過場卡）；ladderNext＝下一個（標題第二行；沒有＝null）。soon 的不算開、不當下一個
+  function ladderList(content, level) { const lv = level | 0; return careerCfg(content).ladder.filter(Boolean).map(L => Object.assign({}, L, { open: !L.soon && L.lv > 0 && lv >= L.lv })); }
+  function ladderAt(content, level) { return ladderList(content, level).filter(L => !L.soon && L.lv === (level | 0)); }
+  function ladderNext(content, level) { return ladderList(content, level).filter(L => !L.soon && L.lv > (level | 0)).sort((a, b) => a.lv - b.lv)[0] || null; }
+  // 升級抽盤（SPEC-D §2.2）：Lv(≥epicFrom、每 5 級) 史詩，其他 draw.other 擇一（hash01(key#lv<n>#r)）；從「非頂點、非特價、沒擁有」的那個稀有度裡挑
+  //   hash01(key#lv<n>)（key＝save.career.key）；那個稀有度沒有可抽的＝null（跳過、不補）。owned＝函式｜陣列｜{id: 值}
+  const DRAW_POOL = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function careerDrawPool(content, r) {
+    const cards = content.cards || {};
+    let M = DRAW_POOL && DRAW_POOL.get(cards);
+    if (!M) { M = new Map(); if (DRAW_POOL) DRAW_POOL.set(cards, M); }
+    if (M.has(r)) return M.get(r);
+    const bg = new Set(bargainIds(content)), aces = new Set(Object.values(content.aces || {}));
+    const p = Object.keys(cards).sort().filter(id => canSeed(content, id) && !bg.has(id) && !aces.has(id) && rarity(cards[id]) === r);
+    M.set(r, p); return p;
+  }
+  function careerDrawRarity(content, key, level) {
+    const D = careerCfg(content).draw, lv = level | 0;
+    if (D.every5 && lv >= (D.epicFrom | 0) && lv % 5 === 0) return D.every5;
+    const o = Array.isArray(D.other) ? D.other : [];
+    return o.length ? o[Math.floor(hash01(String(key || '') + '#lv' + lv + '#r') * o.length)] : null;
+  }
+  function careerDraw(content, key, level, owned) {
+    const r = careerDrawRarity(content, key, level); if (!r) return null;
+    const has = ownedFn(owned), pool = careerDrawPool(content, r).filter(id => !has(id));
+    return pool.length ? pool[Math.floor(hash01(String(key || '') + '#lv' + (level | 0)) * pool.length)] : null;
+  }
+  // 熟練度（SPEC-D §3.6；預設就記）：一章 stamp、per 章一級；profLevel(xp)＝{level: 1＋⌊xp/1500⌋, stamps: 這一級蓋了幾章 0–9, into: 這一章已經有多少, per, stamp}
+  const profOf = prof => { const p = {}; for (const t of TIERS) p[t] = nonNeg((prof || {})[t]); return p; };
+  function profLevel(content, xp) {
+    const P = careerCfg(content).prof, x = nonNeg(xp), lvXp = P.stamp * P.per;
+    return { level: 1 + Math.floor(x / lvXp), stamps: Math.floor((x % lvXp) / P.stamp), into: x % P.stamp, per: P.per, stamp: P.stamp };
+  }
+  // 一趟記熟練：那派 += gain ×（落後 ? lagMul : 1）；落後＝prof[ace] < lagBelow × 最高那派。回 {prof（新物件）, add, lag, stamps（新蓋的章）, levelUps}
+  function profGain(content, prof, ace, gain) {
+    const P = careerCfg(content).prof, p = profOf(prof);
+    if (!TIERS.includes(ace)) return { prof: p, add: 0, lag: false, stamps: 0, levelUps: 0 };
+    const mx = Math.max.apply(null, TIERS.map(t => p[t])), lag = p[ace] < P.lagBelow * mx, old = p[ace];
+    const add = Math.round(nonNeg(gain) * (lag ? P.lagMul : 1));
+    p[ace] = old + add;
+    return { prof: p, add, lag, stamps: Math.floor(p[ace] / P.stamp) - Math.floor(old / P.stamp), levelUps: profLevel(content, p[ace]).level - profLevel(content, old).level };
+  }
+  // 第一次解鎖某派：先蓋 firstStamps 章（那派熟練還是 0 才給；給過或玩過＝不動）
+  function profFirst(content, prof, ace) {
+    const P = careerCfg(content).prof, p = profOf(prof);
+    if (!TIERS.includes(ace) || p[ace] > 0) return { prof: p, add: 0 };
+    p[ace] = P.firstStamps * P.stamp;
+    return { prof: p, add: p[ace] };
+  }
+  // C 波 lexpBank 入帳（SPEC-D §2.6；每次開機都跑，畫面負責寫回）：lexpBank 金額鍵全 0＝null
+  //   total＝B＋min(min(gig, ⌊0.25B⌋)＋home＋promo＋packet＋demo, ⌊0.40B⌋)（照總額截，比逐趟截寬鬆或一樣 → 下面逐趟分完的餘數 ≥0）
+  //   熟練度：save.runs 裡有 ace、lexp、沒有 gain、沒有 banked 的（＝C 版頁面記的、還沒入過帳）照各自的派記（每趟照 §2.1 截、不算破紀錄與倍率），
+  //   餘數給 save.lastAce（沒有＝hall）；不套落後 ×2。回 {total, xp, prof, per, runs（這次入帳的 save.runs 索引：畫面標 banked:1）, from, to, first}
+  function lexpCapped(content, L) {
+    const X = careerCfg(content).lexp, B = nonNeg(L && L.base), v = k => nonNeg(L && L[k]);
+    const route = Math.min(Math.min(v('gig'), Math.floor(X.caps.gig * B)) + v('home') + v('promo') + v('packet') + v('demo'), Math.floor(X.caps.route * B));
+    return { base: B, route, total: B + route };
+  }
+  function careerDeposit(content, save) {
+    const LB = (save && save.lexpBank) || {};
+    if (!['base'].concat(LEXP_ROUTE).some(k => nonNeg(LB[k]) > 0)) return null;
+    const c = (save && save.career) || {}, xp0 = nonNeg(c.xp), total = lexpCapped(content, LB).total;
+    const per = profOf(null), runs = [];
+    let used = 0;
+    (Array.isArray(save.runs) ? save.runs : []).forEach((r, k) => {
+      if (!r || typeof r !== 'object' || !TIERS.includes(r.ace) || !r.lexp || typeof r.lexp !== 'object' || r.gain || r.banked) return;
+      const g = Math.max(0, Math.min(lexpCapped(content, r.lexp).total, total - used));
+      per[r.ace] += g; used += g; runs.push(k);
+    });
+    per[TIERS.includes(save.lastAce) ? save.lastAce : 'hall'] += total - used;
+    const prof = profOf(c.prof); for (const t of TIERS) prof[t] += per[t];
+    return { total, xp: xp0 + total, prof, per, runs, from: careerLevel(content, xp0).level, to: careerLevel(content, xp0 + total).level, first: !c.banked };
+  }
+  // 讀檔整理 save.career（ui loadSave 用；回新物件）：型別、非負整數；spent 的 id 不在 talents／之後開放的丟掉、超過上限的截掉，點數不夠＝全部退回；
+  //   prof 三派、tree 三派（{node: 級}）、drawn（升過級抽過盤的等級，>1 的整數、不重複、遞增）、got（升級抽到的盤 id：卡池裡有的、不重複；
+  //   退版到 C 版頁面會把唱片櫃 src 'lexp' 洗成 'gift'，回 D 版時 ui 照這張單補回來）；其他鍵照留
+  function careerFix(content, career) {
+    const c = career && typeof career === 'object' && !Array.isArray(career) ? career : {};
+    const K = careerCfg(content), out = Object.assign({}, c, {
+      key: typeof c.key === 'string' ? c.key : '', xp: nonNeg(c.xp), spent: {}, off: !!c.off, prof: profOf(c.prof), tree: {}, drawn: [], banked: !!c.banked,
+      lastGain: c.lastGain && typeof c.lastGain === 'object' && !Array.isArray(c.lastGain) ? c.lastGain : null });
+    for (const T of K.talents) {
+      if (!T || T.soon) continue;
+      let k = nonNeg((c.spent || {})[T.id]); if (T.max > 0) k = Math.min(k, T.max);
+      if (k) out.spent[T.id] = k;
+    }
+    if (careerPoints(content, out).left < 0) out.spent = {};
+    for (const t of TIERS) {
+      const tr = (c.tree || {})[t]; out.tree[t] = {};
+      if (tr && typeof tr === 'object' && !Array.isArray(tr)) for (const k of Object.keys(tr)) { const n = nonNeg(tr[k]); if (n) out.tree[t][k] = n; }
+    }
+    out.drawn = uniq((Array.isArray(c.drawn) ? c.drawn : []).filter(x => Number.isInteger(x) && x > 1)).sort((a, b) => a - b);
+    out.got = uniq((Array.isArray(c.got) ? c.got : []).filter(id => typeof id === 'string' && Object.prototype.hasOwnProperty.call(content.cards || {}, id)));
+    return out;
+  }
+  // 策略（runPolicy）：配件不只一件可挑（樂歷 Lv10 菁英／藏家三選一）時挑哪件——顏色配件看包包那軸 ≥4 星幾張、防塵套 3、洗碟水 1，同分照給的順序
+  function relicPref(run, content, ids) {
+    const axis = {}; for (const a of ATTRS) axis[COLOR_RELIC[a]] = a;
+    const bag = (run.bag || []).map(id => cardOf(content, id)).filter(Boolean);
+    const score = id => axis[id] ? bag.filter(c => star(c, axis[id]) >= 4).length : id === 'dustcover' ? 3 : id === 'cleaner' ? 1 : 0;
+    let best = ids[0], bs = score(best);
+    for (const id of ids.slice(1)) { const s = score(id); if (s > bs) { best = id; bs = s; } }
+    return best;
+  }
+
   // 包包強度（策略用；店主 11-16 包包不限張數之後「這張值不值得放進包包」）：每一手從包包抽 5 張手牌（CFG.handSize），
   //   三軸各算「這 5 張裡那軸最大星」的期望值，三軸加總。精確解（不用模擬）：那軸星數由小到大 v1..vN、h＝min(5, N)，
   //   第 k 小的是這手最大的機率＝C(k−1, h−1)／C(N, h)。強牌越多分越高；加一張比手上常見那幾張都弱的牌 → 抽到強牌的機會變小 → 分數掉（稀釋）。
@@ -3229,7 +3501,7 @@
     const pickRelic = () => {
       const left = p.relics.filter(id => !run.relics.includes(id));
       if (!left.length || run.relics.length >= CFG.relicMax) return null;
-      return { type: 'relic', relicId: p.prologue ? left[fnv1a32(run.seedKey + '#relic#' + run.runNo) % left.length] : left[0] };
+      return { type: 'relic', relicId: p.prologue ? left[fnv1a32(run.seedKey + '#relic#' + run.runNo) % left.length] : left.length > 1 ? relicPref(run, content, left) : left[0] };
     };
     if (p.need === 'cardOrRelic' && preferRelic) { const r = pickRelic(); if (r) return r; }
     if (!p.cardDone) {
@@ -3534,7 +3806,9 @@
     TIER_BEATS, unlockChain, tierOfApex, apexCards, unlockedTiers, ownedApex, nextUnlock, unlockMigrate, unlockTiersOf, ownedApexOf, aceChoices, bossCardFor, fixUnlock,
     APEX_OPS, APEX_TIMINGS, APEX_TAU, apexList, apexAceId, abilityOf, canApex, activateApex,
     WAVEC, wcCfg, floorAt, wcTh, wcPool, lootRow, chestRow, stallSession, stallResume, stallUnlocked, stallLadder, cPolicy, gigPrice, gigKeepN, draftPlan, expLevel,
-    deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound };
+    deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound,
+    CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
+    talentArgs, applyTalent, gainXp, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

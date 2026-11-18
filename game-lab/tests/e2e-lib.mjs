@@ -20,7 +20,7 @@ export const URL0 = process.env.LAB_URL || ((process.env.LAB_BASE ? process.env.
 export const SIZES = (process.env.LAB_SIZES || '390x664,375x548,430x932,360x640').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 export const SEED = '20261106';
 export const Q = (extra = '&fast=1', seed = SEED) => `${URL0}?debug=1&seed=${seed}${extra}`;
-export const ALLOWED_LS = new Set(['dipGameLab_v1', 'dipGameLab_v1.bringKey', 'dipGameLab_v1.daily', 'dipGameLab_v1.bak6', 'dipGameLab_v1.bak7', 'dip:autoplay', 'dip:autoplay-consent', 'dipAutoplayHintSeen', 'dip:autoplay-hint']);
+export const ALLOWED_LS = new Set(['dipGameLab_v1', 'dipGameLab_v1.bringKey', 'dipGameLab_v1.daily', 'dipGameLab_v1.bak6', 'dipGameLab_v1.bak7', 'dipGameLab_v1.bak8', 'dip:autoplay', 'dip:autoplay-consent', 'dipAutoplayHintSeen', 'dip:autoplay-hint']);
 export const results = [];
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -218,6 +218,16 @@ export async function seededContinue(page, o, q) {
   await seedRun(page, o);
   await openTitle(page, q);
   await jsClick(page, '[data-a=cont]');
+}
+// 第 D 波（SPEC-D §2.8-4）：結算按「再挑戰一趟」之後、開機入帳之後的過場卡（升級、抽盤、開階；一次一張）：一張一張點「繼續」到沒有
+export async function passCards(page, ms = 3000) {
+  const t0 = Date.now(); let n = 0;
+  while (Date.now() - t0 < ms) {
+    if (await page.$('.lb-sheet.cxcard')) { await jsClick(page, '.lb-sheet.cxcard .lb-btn[data-a=next]'); n++; await sleep(350); continue; }
+    if (n) break;
+    await sleep(150);
+  }
+  return n;
 }
 // 一直點 ▼（場景裡）直到條件成立
 export async function advanceUntil(page, fn, arg, ms = 30000) {

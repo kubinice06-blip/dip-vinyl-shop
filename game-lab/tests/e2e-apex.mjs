@@ -50,7 +50,7 @@ async function watchToasts(page) {
   await page.evaluate(() => { window.__toasts = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); }))).observe(document.getElementById('app'), { childList: true }); });
 }
 const U = page => C(page, () => Object.assign({}, window.DipLabContent.apexTrial.ui, { aceSwapSub: window.DipLabContent.trial.ui.aceSwapSub, aceSwapped: window.DipLabContent.trial.ui.aceSwapped, aceAsk: window.DipLabContent.trial.ui.aceAsk,
-  aceDone: window.DipLabContent.shopLines.aceDone, aceKeep: window.DipLabContent.shopLines.aceKeep, aceNow: window.DipLabContent.trial.ui.aceNow }));
+  aceDone: window.DipLabContent.shopLines.aceDone, aceKeep: window.DipLabContent.shopLines.aceKeep, aceNow: window.DipLabContent.trial.ui.aceNow, aceTitle: Object.assign({}, window.DipLabContent.aceTitle) }));
 // 挑王牌面板的狀態
 const pickState = page => C(page, () => {
   const s = document.querySelector('.lb-sheet.apxpick'); if (!s) return null;
@@ -136,7 +136,7 @@ async function runSize(browser, w, h) {
       await page.evaluate(() => { window.__said.length = 0; window.__toasts.length = 0; });
       await tapAt(page, '.lb-sheet.apxpick [data-a=ok]'); await sleep(1300);
       const a2 = await C(page, () => { const R = window.__lab.run, Cn = window.DipLabContent; return { ace: R.ace, aceId: R.aceId, last: window.__lab.save.lastAceId, lastAce: window.__lab.save.lastAce, bag4: R.bag.slice(0, 4), gifts: Cn.gifts.hall.slice(), said: window.__said.map(x => x.t), toasts: window.__toasts.slice(), album: Cn.cards["michael jackson|thriller"].album }; });
-      const ok2 = !!hot && menu === u.aceNow.replace('{title}', '異端').replace('{album}', a1.album) && up2 && q0.tabs.join() === 'hall,pearl,heresy*' && q0.sel === RALLIZES && q0.okt === u.pickSame &&
+      const ok2 = !!hot && menu === u.aceNow.replace('{title}', u.aceTitle.heresy).replace('{album}', a1.album) && up2 && q0.tabs.join() === 'hall,pearl,heresy*' && q0.sel === RALLIZES && q0.okt === u.pickSame &&
         q1.sel === THRILLER && q1.sw && q1.tabs.join() === 'hall*,pearl,heresy' &&
         a2.ace === 'hall' && a2.aceId === THRILLER && a2.last === THRILLER && a2.lastAce === 'hall' && JSON.stringify(a2.bag4) === JSON.stringify(a2.gifts) && a2.said.includes(u.aceDone) && a2.toasts.includes(u.aceSwapped.replace('{album}', a2.album));
       if (want(2)) record(2, size, ok2 && !errs(page).length, `點老闆 ${hot && hot.id} → 「${menu}」；面板 ${up2} ${JSON.stringify({ tabs: q0.tabs, sel: q0.sel, okt: q0.okt })} → 殿堂 ${JSON.stringify({ sel: q1.sel, sw: q1.sw })}；換完 ${JSON.stringify(a2)}`);
