@@ -439,7 +439,7 @@ export function checkOblique(L, file, lib, cards, content) {
   //   一個小人的身體寬約 38 格、高 44 格以內就會疊到（ui.js makeRoom 用同一組數字請門邊等的客人讓開）
   //   v5 店面改版：窗下矮櫃改成 BLUES 藍調櫃，熟客原本站它前面 [200,104]，名牌和封面被她蓋掉、藍調站位也被這條擠到 INDIE POP 前面——
   //   所以熟客搬到櫃檯後面的高櫃前，藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
-  //   店主 11-18：「照常理沒有客人會跑到櫃檯裡面」→ 熟客搬到櫃檯外、櫃檯右前方（spots.regular）；下面加一條：老闆以外的人不准站在 footprints.behind 的口袋裡。
+  //   店主 11-18：「照常理沒有客人會跑到櫃檯裡面」→ 熟客搬到櫃檯外、櫃檯右半邊正前面（spots.regular；頭肩在檯面下、腳在對決橫條上緣之上，見 shop.test）；下面加一條：老闆以外的人不准站在 footprints.behind 的口袋裡。
   for (const a of (L.actors || [])) {
     if (a.id === 'o' || !spots[a.at]) continue;
     const s0 = spots[a.at];
