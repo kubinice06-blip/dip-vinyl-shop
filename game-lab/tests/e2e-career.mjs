@@ -14,7 +14,8 @@
 //      過場卡 3 張（Lv2、Lv3、再升 2 級；最後一張有「去點天賦」）、存回去還是 v8、.bak8＝原字串；重新整理＝不再入帳、不再吐司、沒有過場卡；標題第二行「樂歷 Lv 5・下一個：Lv8 戰力天賦 ›」＋小圓點
 //   2  C2 結算頁：輸掉 → 標題同一列「樂歷 +n ›」n＝careerGain＝規格公式＝runs[k].gain.total＝career.xp 增加的量；再畫一次結算不重記；375×548 不捲；
 //      點開明細（位數・連贏・破紀錄・還沒走到第 10 位 ×2）；「再挑戰一趟」→ 過場卡（Lv5＋抽到的盤＋去點天賦）→ 去點天賦＝樂歷頁、留在結算；
-//      重新整理後 xp 不變、「看上一趟結算」數字一樣；再按「再挑戰一趟」沒有過場卡、照常開下一趟；最擠的組合（輸給誰＋翻盤＋中繼點＋帶走一張）也不捲
+//      重新整理後 xp 不變、「看上一趟結算」數字一樣；再按「再挑戰一趟」沒有過場卡、照常開下一趟
+//   2b 結算最擠的組合也不捲（375×548）：輸給誰＋翻盤＋中繼點開局＋兩個中繼點＋帶走一張；「這一趟的唱片都有了」（出那面牆）＋一個中繼點（＝e2e.spec #48 的狀態）
 //   3  C3 樂歷頁（Lv6）：標題第二行點進去；頭「樂歷 Lv 6」「天賦點 5」、頂端「戰力天賦 Lv8 開…」；戰力四項＋稀有率灰（樂歷 Lv8 開）、備用說情（Lv20 開）、
 //      之後開放四項沒有＋／－；開局錢、酬勞「（只多錢，不會變強）」；沒有關樂歷開關（Lv10 起）；每列 ≥44、＋／－ 44×44；真點＋開局錢 3 次 → 已滿、＋灰；
 //      ＋酬勞、－開局錢、全部重配（吐司）→ 點數照算、存進存檔；Lv9：品味能點（6 點）、底氣點數不夠＋灰
@@ -287,8 +288,15 @@ async function runSize(browser, w, h) {
       // 最擠的組合（輸給誰＋翻盤一行＋中繼點＋帶走一張）：375×548 也不捲（版面專用，數字不看）
       await C(page, () => { const r = window.__lab.run; r.lastLoss = { eHp: 2, eMax: 25, flip: { k: 3, kind: 'countered', p: 'c', e: 'h' }, at: r.stats.lostAt && r.stats.lostAt.enemyId }; r.checkpoints = [10, 20]; r.cpFrom = 10; window.__lab.go('end'); });
       await sleep(1200);
-      const worst = await C(page, () => { const s = document.querySelector('.lb-screen.end .lb-scroll'); return { sh: s.scrollHeight, ch: s.clientHeight, xp: window.__lab.save.career.xp, close: !!document.querySelector('.lb-endhero .close'), cps: !!document.querySelector('.lb-cps') }; });
+      const endBox = () => C(page, () => { const s = document.querySelector('.lb-screen.end .lb-scroll'); return { sh: s.scrollHeight, ch: s.clientHeight, xp: window.__lab.save.career.xp, close: !!document.querySelector('.lb-endhero .close'), cps: !!document.querySelector('.lb-cps'),
+        keep: !!document.querySelector('.lb-keep'), wall: !!document.querySelector('.lb-screen.end .lb-wall'), hero: Math.round(document.querySelector('.lb-endhero').getBoundingClientRect().height) }; });
+      const worst = await endBox();
       const scW = await noScroll(page);
+      // 換成「這一趟的唱片都有了」（沒有帶走一張那顆鈕，改出這一趟那面牆）＋一個中繼點（不是中繼點開局）＝e2e.spec #48 的狀態（C 版 375×548 剛好 319/319 不捲）。
+      //   中繼點開局＋兩個中繼點（那行折成兩行）＋那面牆 C 版就溢出 10px，不在這裡判
+      await C(page, () => { const r = window.__lab.run; delete r.cpFrom; r.checkpoints = [10]; window.__lab.own(window.__lab.keepIds(), 'run'); window.__lab.go('end'); }); await sleep(1000);
+      const worst2 = await endBox();
+      const scW2 = await noScroll(page);
       // 再挑戰一趟：過場卡已經演過（重新整理後也不會再演），照常開下一趟
       await jsClick(page, '[data-a=again]'); await sleep(2200);
       const after = await C(page, () => ({ card: !!document.querySelector('.lb-sheet.cxcard'), scr: window.__lab.screen() }));
@@ -297,10 +305,12 @@ async function runSize(browser, w, h) {
         e0.btn && e0.btn.top >= 0 && e0.btn.bottom <= h && e0.btn.h >= 44 && e0.drawn.includes(5) &&
         e1.xp === e0.xp && e1.cxp === e0.cxp && m && m.h1 === fill(x.gainTitle, { n: spec.total }) && J(m.li) === J(liWant) && m.page &&
         up && k0 && k0.hd === fill(x.lvUp, { n: 5 }) && k0.got === x.drawGot && k0.cv === 1 && k0.talent === x.goTalent && k0.n === '' && k1.page && k1.scr === 'end' && !k1.card && k1.shelfLexp.length === 1 &&
-        scr2 === 'end' && e2.xp === e0.xp && e2.end && e3.xp === e0.xp && e3.cxp === e0.cxp && worst.sh - worst.ch <= 1 && worst.xp === e0.xp && worst.close && worst.cps && scrollOk(scW) && !after.card && after.scr !== 'end';
+        scr2 === 'end' && e2.xp === e0.xp && e2.end && e3.xp === e0.xp && e3.cxp === e0.cxp && !after.card && after.scr !== 'end';
+      const okW = worst.sh - worst.ch <= 1 && worst.xp === e0.xp && worst.close && worst.cps && worst.keep && scrollOk(scW) && worst2.sh - worst2.ch <= 1 && worst2.xp === e0.xp && worst2.close && worst2.cps && !worst2.keep && worst2.wall && scrollOk(scW2);
       record(2, size, ok && !errs(page).length, `結算「${e0.cxp}」gain ${J(e0.ent.gain)} 引擎 ${e0.eng}、規格 ${J(spec)}、xp 990→${e0.xp}、捲 ${e0.sh}/${e0.ch} ${J(sc)}、鈕 ${J(e0.btn)}；再畫 ${J(e1)}；明細 ${J(m)}（要 ${J(liWant)}）；` +
-        `過場卡 ${up} ${J(k0)} → 去點天賦 ${J(k1)} → 關頁 ${scr2}；重新整理 ${J(e2)} → 看上一趟 ${J(e3)}；最擠 ${J(worst)} ${J(scW)}；再一趟 ${J(after)}；${errTx(page)}`);
-    } catch (e) { record(2, size, false, 'error ' + e.message); }
+        `過場卡 ${up} ${J(k0)} → 去點天賦 ${J(k1)} → 關頁 ${scr2}；重新整理 ${J(e2)} → 看上一趟 ${J(e3)}；再一趟 ${J(after)}；${errTx(page)}`);
+      record('2b', size, okW, `結算最擠（輸給誰＋翻盤＋中繼點）＋帶走一張 ${J(worst)} ${J(scW)}；＋都有了（那面牆）${J(worst2)} ${J(scW2)}`);
+    } catch (e) { record(2, size, false, 'error ' + e.message); record('2b', size, false, 'error ' + e.message); }
     await ctx.close();
   }
 
