@@ -20,6 +20,7 @@
 //       另外逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
 //       腳下範圍（FIXLIST 1，店主「不要跨過中島唱片區」）＝DipShop.footprints：道具實際畫出來的那一塊（量的）∪ foot；
 //       layout.footprints.groups（中島）合成一塊多邊形；behind（櫃檯、唱盤台：老闆站後面）留一個口袋，只有站在口袋裡的人的路線可以進去。避障、這裡、shop.test 同一份。
+//       站著不動的人（老闆以外的 actors，例：熟客 r1）：離任何 bin.stand |dx|≥38 或 |dy|≥44（R-02）、不站在口袋裡（店主 11-18：客人不會跑到櫃檯裡面）。
 //       房間（kind:'room'，v5 第六項第三期：你家＝聆聽室）：斜俯視同一條檢查，但不套店的必備清單（店站位、對決鏡頭、O34_HOTS、唱盤區 duel、牆上 ≥8 張）；
 //       改查 ROOM_HOTS／ROOM_SPOTS、剛好一台唱盤（duelDeck#deck）與一台控制台（tuneConsole）、唱片架 ledge#shelf fill:'owned'（cards 執行時才塞，JSON 可空）、不放翻箱；
 //       index.json rooms[]＝{id, layout, pin}：layout 是 kind:room、圖釘在地圖上、圖釘動作＝房間 id。
@@ -437,11 +438,14 @@ export function checkOblique(L, file, lib, cards, content) {
   // 站著不動的人（老闆以外的 actors，例：熟客 r1）旁邊不能是 bin.stand：你走過去翻箱子會被他整個蓋掉（R-02：FEATURE 的站位在熟客正後面）。
   //   一個小人的身體寬約 38 格、高 44 格以內就會疊到（ui.js makeRoom 用同一組數字請門邊等的客人讓開）
   //   v5 店面改版：窗下矮櫃改成 BLUES 藍調櫃，熟客原本站它前面 [200,104]，名牌和封面被她蓋掉、藍調站位也被這條擠到 INDIE POP 前面——
-  //   所以熟客搬到櫃檯後面的高櫃前（spots.regular），藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
+  //   所以熟客搬到櫃檯後面的高櫃前，藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
+  //   店主 11-18：「照常理沒有客人會跑到櫃檯裡面」→ 熟客搬到櫃檯外、櫃檯右半邊正前面（spots.regular；頭肩在檯面下、腳在對決橫條上緣之上，見 shop.test）；下面加一條：老闆以外的人不准站在 footprints.behind 的口袋裡。
   for (const a of (L.actors || [])) {
     if (a.id === 'o' || !spots[a.at]) continue;
     const s0 = spots[a.at];
     for (const [k, st, src] of stands) if (Math.abs(st[0] - s0[0]) < STATIC_DX && Math.abs(st[1] - s0[1]) < STATIC_DY) bad(src + '：bin.stand ' + JSON.stringify(st) + ' 跟站著不動的 ' + a.id + '（' + a.at + ' ' + JSON.stringify(s0) + '）疊在一起（|dx|<' + STATIC_DX + '、|dy|<' + STATIC_DY + '）');
+    // 櫃檯、唱盤台後面的口袋是老闆站的地方（店主 11-18：沒有客人會跑到櫃檯裡面）
+    for (const pk of pockets) if (inRect(s0, pk.rect)) bad('actors ' + a.id + '（' + a.at + ' ' + JSON.stringify(s0) + '）站在 ' + pk.id + ' 後面的口袋裡（那是老闆站的地方，客人不會跑到櫃檯裡面）');
   }
   // 任兩個 spot（含每個 bin.stand）之間的路線每一段都不穿過家具（SPEC §5.1；v3 只查 door／counter 出發）
   info.routes = 0;
