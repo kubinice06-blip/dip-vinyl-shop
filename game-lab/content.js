@@ -1960,8 +1960,10 @@
     // ?fac=1&apex=1 同開才用（SPEC-D §6-3「三家換一格」）：engine apexAbilityOf 換掉那張的 op／params／text（name、典故不動；C.apexTrial 本身不改）。
     //   ops＝這個原語的卡都換（冷門 theirStar／pThr＝被動已有；異端 crit／critLeech＝被動已有／七不收）；cards＝指定那張（優先）。timing：留著型照舊留著
     //   數字（拆穿多扣 2、比星多算 2、Zodiac 他少 1 星）＝規格起點，棒二 sim F9 量；不過先調這三個數字，再不過退回只標示（ui.apexMixed）
+    //   棒二 sim（build2/SIM.md）：F9 換一格 會讀的 35／42／32（1.31 ✗；冷門 Zodiac「他少 1 星」一場省 1 點、累積起來 32→42），能調的數字救不回來
+    //   （eStar 參數範圍 [1,1]；異端比星多算 3＝34 仍 1.24）→ 照 §6-3 退回只標示：on false（對照表留著，on 改回 true 就換）。
     apexSwap: {
-      on: true,
+      on: false,
       notes: { critAdd: '王牌：拆穿！多扣 {d}' },
       pearl: {
         ops: { theirStar: { op: 'critAdd', params: { n: 2 }, timing: 'hand', text: '這手抓到他唬你，多扣 2。' },

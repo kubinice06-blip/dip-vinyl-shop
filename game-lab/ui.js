@@ -2516,7 +2516,9 @@
       (UI.fac ? '<span class="fac">' + esc(FU('badge')) + '</span>' : '') + (fac2 ? '<span class="both">' + esc(FU('badgeBoth')) + '</span>' : '') +
       (mixed ? '<small class="mix">' + esc(FU('apexMixed')) + '</small>' : ''));
     app().appendChild(plate); UI.decor.push(plate);
-    var placePlate = function () { if (!plate.isConnected) return; var sh0 = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(); plate.style.top = Math.max(36, Math.round(sh0.bottom - ar.top - 26)) + 'px'; };
+    //   只標示小字（mixed）多一行：整塊往上提那一行的高，牌底照舊停在原處（不壓到下面的推門鈕；棒二 sim 退回只標示）
+    var placePlate = function () { if (!plate.isConnected) return; var sh0 = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(), mx = mixed ? plate.querySelector('small.mix') : null;
+      plate.style.top = Math.max(36, Math.round(sh0.bottom - ar.top - 26 - (mx ? mx.offsetHeight + 2 : 0))) + 'px'; };
     placePlate(); if (W.ResizeObserver) { var ro = new ResizeObserver(placePlate); ro.observe(UI.stageHost); UI.offs.push(function () { ro.disconnect(); }); }
     var armed = null, armedAt = 0;
     box.addEventListener('click', function (e) {

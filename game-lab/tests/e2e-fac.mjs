@@ -25,7 +25,8 @@
 //      不捲、每格 ≥44）、老闆「這一級可以學一招本派的。」→ 點本派格：送 {type:'level', pick:'fac', id}、run.fac.picks[id] 1、品味／底氣／聲望上限都沒動、run.picks 最後 'fac:<id>'、
 //      吐司「本派・<名>」→ 我的狀態「本派：<名>」→ 重新整理還在
 //   6  F6 ?fac=1&apex=1：標題兩個章（>600px 高「頂點卡試做」＋「流派試做」並排不重疊；≤600px 只剩一顆「流派＋頂點卡試做」）、只開 ?fac=1 一顆「流派試做」、標題不捲；
-//      冷門帶派別的 run：挑王牌面板點 theirStar 那張 → 說明＝「這手抓到他唬你，多扣 2。」＋「跟流派一起試，這張換過能力」、角上時機＝這手；按住＝唱片資訊也是換過的；
+//      content 換一格退回只標示（apexSwap.on false）時兩個都開＝章下小字「頂點卡跟流派一起試：有幾張還沒換能力」在畫面裡（只開一個沒有）；
+//      冷門帶派別的 run（對照表：頁面上把 on 打開再測）：挑王牌面板點 theirStar 那張 → 說明＝「這手抓到他唬你，多扣 2。」＋「跟流派一起試，這張換過能力」、角上時機＝這手；按住＝唱片資訊也是換過的；
 //      同一份存檔拿掉 run.fac（沒帶派別的 run）＝原本的能力、沒有換過那行
 //   7  F7 ?fac=1 開的 run 在沒旗標的頁面續玩（R-F9）：標題沒有「流派試做」、__lab.fac() false → 來客 → 開打：duel.p.fac 照樣有、頂欄「借」、
 //      剋他那手「借他的份量：扣他 n」（n＝clash.toE）；我的狀態「本派：反傷」；存回去 run.fac 還在
@@ -110,12 +111,17 @@ async function toAcepick(page, guess) {
   }
   return false;
 }
-// 真的滑一下軌道（觸控捲動手勢；dx<0＝往左滑＝看下一張）
+// 真的滑一下軌道（觸控拖曳：touchStart → 12 次 touchMove → touchEnd，瀏覽器自己捲、scroll-snap 自己停；dx<0＝往左滑＝看下一張）
+//   （CDP Input.synthesizeScrollGesture 在這個 Chromium（isMobile＋hasTouch 情境）完全不捲，換成逐點的觸控事件）
 async function swipeRail(page, ctx, dx) {
   const r = await C(page, () => { const e = document.querySelector('.lb-sheet.acepick .fx-rail'); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + Math.min(b.height / 2, 80), l0: e.scrollLeft }; });
   if (!r) return null;
   const cdp = await ctx.newCDPSession(page);
-  await cdp.send('Input.synthesizeScrollGesture', { x: Math.round(r.x), y: Math.round(r.y), xDistance: dx, yDistance: 0, gestureSourceType: 'touch', speed: 1200 }).catch(() => {});
+  const x0 = Math.round(r.x - dx / 2), y0 = Math.round(r.y), steps = 12;
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y: y0 }] });
+  for (let k = 1; k <= steps; k++) { await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: Math.round(x0 + dx * k / steps), y: y0 }] }); await sleep(16); }
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await cdp.detach().catch(() => {});
   await sleep(900);
   const l1 = await C(page, () => document.querySelector('.lb-sheet.acepick .fx-rail').scrollLeft);
   return { l0: r.l0, l1 };
@@ -571,7 +577,8 @@ async function runSize(browser, w, h) {
         plates[k] = await C(page, () => {
           const pl = document.querySelector('.lb-plate'); const vis = s => { const e = pl && pl.querySelector(s); if (!e) return null; const cs = getComputedStyle(e), r = e.getBoundingClientRect();
             return cs.display === 'none' || cs.visibility === 'hidden' || !r.width ? 'none' : { tx: e.textContent, l: Math.round(r.left), r: Math.round(r.right), t: Math.round(r.top), b: Math.round(r.bottom) }; };
-          return { fac: vis('.fac'), apx: vis('.apx'), both: vis('.both'), flags2: !!(pl && pl.classList.contains('flags2')), flag: window.__lab.fac(), apex: window.__lab.apex() };
+          return { fac: vis('.fac'), apx: vis('.apx'), both: vis('.both'), mix: vis('small.mix'), flags2: !!(pl && pl.classList.contains('flags2')), flag: window.__lab.fac(), apex: window.__lab.apex(),
+            swapOn: (window.DipLabContent.factions.apexSwap || {}).on !== false, mixTx: window.DipLabContent.factions.ui.apexMixed };
         });
         plates[k].scroll = await noScroll(page);
       }
@@ -584,21 +591,26 @@ async function runSize(browser, w, h) {
         else if (!(P.both.fac.r <= P.both.apx.l || P.both.apx.r <= P.both.fac.l || P.both.fac.b <= P.both.apx.t || P.both.apx.b <= P.both.fac.t)) w6.push(`兩顆章重疊 ${J(P.both)}`);
       } else if (!inV(P.both.both) || P.both.both.tx !== SPEC.badgeBoth || P.both.fac !== 'none' || P.both.apx !== 'none') w6.push(`≤600px 要合成一顆 ${J(P.both)}`);
       if (P.apex.flag || P.apex.fac || P.apex.both || !inV(P.apex.apx)) w6.push(`只開 ?apex=1 ${J(P.apex)}`);
+      // 換一格退回只標示（content apexSwap.on false；棒二 sim F9）：兩個都開＝章下小字 apexMixed、在畫面裡；只開一個、或對照表開著＝沒有小字
+      if (P.both.swapOn ? P.both.mix : (!inV(P.both.mix) || P.both.mix.tx !== P.both.mixTx)) w6.push(`只標示小字（apexSwap.on ${!P.both.swapOn ? 'false' : 'true'}）${J(P.both.mix)}`);
+      if (P.fac.mix || P.apex.mix) w6.push(`只開一個旗標不該有只標示小字 ${J([P.fac.mix, P.apex.mix])}`);
       for (const k of Object.keys(P)) if (!scrollOk(P[k].scroll)) w6.push(`${k} 標題捲 ${J(P[k].scroll)}`);
-      record('6a', size, !w6.length && !errs(page).length, `${w6.join('；') || 'ok'}；${J({ fac: P.fac.fac, both: [P.both.fac, P.both.apx, P.both.both] })}；${errTx(page)}`);
+      record('6a', size, !w6.length && !errs(page).length, `${w6.join('；') || 'ok'}；${J({ fac: P.fac.fac, both: [P.both.fac, P.both.apx, P.both.both], mix: P.both.mix })}；${errTx(page)}`);
     } catch (e) { record('6a', size, false, 'error ' + e.message); }
     await ctx.close();
-    // 換一格：冷門帶派別的 run、挑王牌面板＋唱片資訊
+    // 換一格：冷門帶派別的 run、挑王牌面板＋唱片資訊（content 退回只標示＝apexSwap.on false 時，頁面上先把 on 打開再測對照表；改回 on true 也照過）
     const { ctx: ctx2, page: p2 } = await newPage(browser, w, h);
     try {
       const QA = Q('&fast=1&fac=1&apex=1');
       await openTitle(p2, QA);
-      const CID = await C(p2, () => { const E = window.DipLabEngine, Cn = window.DipLabContent; return E.apexList(Cn, 'pearl').map(x => x.card).filter(id => { const A = E.abilityOf(Cn, id); return A && A.op === 'theirStar'; })[0] || null; });
+      // theirStar 那張（Zodiac 是 theirStar 但 apexSwap.cards 指定換成 eStar＝不算；挑「照 ops 換」的那張）
+      const CID = await C(p2, () => { const E = window.DipLabEngine, Cn = window.DipLabContent, S = (Cn.factions.apexSwap.pearl || {}).cards || {};
+        return E.apexList(Cn, 'pearl').map(x => x.card).filter(id => { const A = E.abilityOf(Cn, id); return A && A.op === 'theirStar' && !S[A.id]; })[0] || null; });
       const orig = await C(p2, id => { const A = window.DipLabEngine.abilityOf(window.DipLabContent, id); return A ? { text: A.text, timing: A.timing, name: A.name } : null; }, CID);
       const look = async (withFac) => {
         await seedRun(p2, { ace: 'pearl', idx: 0, ownAces: ['pearl'], ownIds: [CID], seen: { apexPick: true } });
         await C(p2, f => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); if (f) s.run.fac = { picks: {}, tal: {}, trialNodes: {} }; else delete s.run.fac; localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); }, withFac);
-        await openTitle(p2, QA); await jsClick(p2, '[data-a=cont]');
+        await openTitle(p2, QA); await C(p2, () => { window.DipLabContent.factions.apexSwap.on = true; }); await jsClick(p2, '[data-a=cont]');
         await waitScreen(p2, 'night'); await sleep(1300);
         await C(p2, () => window.__lab.stageAction('talk:owner')); await sleep(600);
         await tapReady(p2, '.lb-sheet.owner [data-a=swap]');

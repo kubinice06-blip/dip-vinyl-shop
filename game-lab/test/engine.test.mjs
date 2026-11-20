@@ -4165,28 +4165,32 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
     const rb = base(); rb.fac = 'x'; ok(EN.fixFac(rb, K) && !('fac' in rb), 'fixFac: bad fac removed'); ok(EN.fixFac(base(), K) === false, 'fixFac: no fac → false'); }
 
   // ---- 8 ?fac=1&apex=1 換一格：只在 run.fac＋apexMode；只開 ?apex=1 時 C.apexTrial 逐字照舊；冷門 theirStar／pThr → critAdd 2、異端 crit／critLeech → mirrorPlus 2、Zodiac → eStar 1 ----
-  { const before = JSON.stringify(K.apexTrial), S = F.apexSwap, R0 = { fac: { picks: {} } };
+  //   棒二 sim 退回只標示（content apexSwap.on false）後：對照表本身照舊用 on true 的複本 KS 測（改回 on true 就換）；真 content 照 on 判（false＝一張都不換）
+  { const KS = Object.assign({}, K, { factions: Object.assign({}, F, { apexSwap: Object.assign({}, F.apexSwap, { on: true }) }) });
+    const before = JSON.stringify(K.apexTrial), S = KS.factions.apexSwap, R0 = { fac: { picks: {} } };
     for (const t of TIERS) for (const x of EN.apexList(K, t)) {
-      const A = EN.abilityOf(K, x.card), A0 = EN.apexAbilityOf(K, x.card, null), A1 = EN.apexAbilityOf(K, x.card, { ace: t }), B = EN.apexAbilityOf(K, x.card, R0);
+      const A = EN.abilityOf(K, x.card), A0 = EN.apexAbilityOf(KS, x.card, null), A1 = EN.apexAbilityOf(KS, x.card, { ace: t }), B = EN.apexAbilityOf(KS, x.card, R0), BR = EN.apexAbilityOf(K, x.card, R0);
+      if (F.apexSwap.on === false) eq(BR, A, x.id + ': real content apexSwap.on false → not swapped (only label)');
       eq([A0, A1], [A, A], x.id + ': without run.fac = abilityOf');
       const sw = (S[t] && ((S[t].cards || {})[x.id] || (S[t].ops || {})[x.op])) || null;
       if (!sw) { eq(B, A, x.id + ': not swapped'); continue; }
       ok(B.op === sw.op && JSON.stringify(B.params) === JSON.stringify(sw.params) && B.text === sw.text && B.name === A.name && B.card === A.card && B.id === A.id && B.timing === (A.timing === 'hold' ? 'hold' : sw.timing) && JSON.stringify(B.hold) === JSON.stringify(A.hold), x.id + ': swapped');
       eq(B.swapped, { op: A.op, params: A.params, timing: A.timing, text: A.text }, x.id + ': swapped keeps the original');
     }
-    const cnt = t => EN.apexList(K, t).filter(x => EN.apexAbilityOf(K, x.card, R0).swapped).length;
+    const cnt = t => EN.apexList(K, t).filter(x => EN.apexAbilityOf(KS, x.card, R0).swapped).length;
     eq([cnt('hall'), cnt('pearl'), cnt('heresy')], [0, 11, 10], 'swapped: hall 0, pearl 11 (theirStar 6＋pThr 5), heresy 10 (crit 7＋critLeech 3)');
-    eq([EN.apexAbilityOf(K, K.aces.pearl, R0).op, EN.apexAbilityOf(K, K.aces.pearl, R0).params, EN.apexAbilityOf(K, K.aces.heresy, R0).op, EN.apexAbilityOf(K, K.aces.heresy, R0).params], ['eStar', { n: 1 }, 'mirrorPlus', { n: 2 }], 'Zodiac → eStar 1; Filth → mirrorPlus 2');
+    eq([EN.apexAbilityOf(KS, K.aces.pearl, R0).op, EN.apexAbilityOf(KS, K.aces.pearl, R0).params, EN.apexAbilityOf(KS, K.aces.heresy, R0).op, EN.apexAbilityOf(KS, K.aces.heresy, R0).params], ['eStar', { n: 1 }, 'mirrorPlus', { n: 2 }], 'Zodiac → eStar 1; Filth → mirrorPlus 2');
     ok(JSON.stringify(K.apexTrial) === before, 'C.apexTrial untouched');
     ok(EN.apexAbilityOf(Object.assign({}, K, { factions: Object.assign({}, F, { apexSwap: Object.assign({}, S, { on: false }) }) }), K.aces.pearl, R0).op === 'theirStar', 'apexSwap.on false → only label (no swap)');
     // startFight：run.fac＋apex → 換；沒有 run.fac＋apex → 照舊；run.fac 沒 apex → 沒有 apexMode
-    const go = (fac, apex) => { const r = EN.newRun(K, { seedKey: 'as31', runNo: 2, ace: 'pearl', prologue: false, fac }); EN.choose(r, K, EN.bargainPolicy(r, K)); return EN.startFight(r, K, { apex }).duel; };
+    const go = (fac, apex, KK) => { KK = KK || KS; const r = EN.newRun(KK, { seedKey: 'as31', runNo: 2, ace: 'pearl', prologue: false, fac }); EN.choose(r, KK, EN.bargainPolicy(r, KK)); return EN.startFight(r, KK, { apex }).duel; };
     const d1 = go(true, true), d2 = go(false, true), d3 = go(true, false);
+    { const dR = go(true, true, K); ok(dR.apexMode && dR.p.fac === 'pearl' && dR.p.ability.op === (F.apexSwap.on === false ? 'theirStar' : 'eStar') && !!dR.p.ability.swapped === (F.apexSwap.on !== false), '?fac=1&apex=1 real content: apexSwap.on ' + F.apexSwap.on + ' → ' + (F.apexSwap.on === false ? 'only label (Zodiac stays theirStar)' : 'swapped')); }
     ok(d1.apexMode && d1.p.ability.op === 'eStar' && d1.p.fac === 'pearl' && d1.apexText.notes.critAdd === S.notes.critAdd, '?fac=1&apex=1: swapped in the duel (notes have critAdd)');
     ok(d2.apexMode && d2.p.ability.op === 'theirStar' && !('fac' in d2.p) && !('critAdd' in d2.apexText.notes), '?apex=1 only: C.apexTrial as is');
     ok(!d3.apexMode && d3.p.fac === 'pearl', '?fac=1 only: no apexMode');
     // critAdd：抓到他唬你那手多扣 2（冷門借他的星之後、他的底氣之前）；沒抓到＝沒作用
-    const bailey = EN.apexAbilityOf(K, 'derek bailey|solo guitar volume 1', R0);
+    const bailey = EN.apexAbilityOf(KS, 'derek bailey|solo guitar volume 1', R0);
     const d = facDuel('pearl', { apex: true, ability: bailey });
     let r = pv(d, mk(1, 3, 1), 'o', { attr: 'c', star: 4 }, { apex: true, hint: 'h' });
     eq([kv(r), r.apex && r.apex.op, r.apex && r.apex.d, (r.notes.find(n => n.apex) || {}).text], [['counter', 6, 0, 0], 'critAdd', 2, S.notes.critAdd.replace('{d}', 2)], 'critAdd: caught → 4 + 2');

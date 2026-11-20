@@ -2,7 +2,8 @@
 //   同一個對決局面（同一手牌、同一個提示、同一個亂數種子），把 duel.p.fac／fx 換成三派各算一次策略（只開被動＝本派選項不算），看三派出的牌一不一樣。
 //   局面怎麼來：每一趟照 smart 流程（newRun fac:true、不打序章、三派輪流 TIERS[i % 3]；獎勵／攤位／選秀＝cPolicy、升級＝runPolicy、每位前 shopPolicy('smart')），
 //   實際出牌照那一趟自己的派（含拿到的本派選項；--nofacpick＝整趟只有被動）。
-// Usage: node game-lab/diffplay.mjs [--n 300] [--pols thoughtful,humanRead] [--cap 120] [--nofacpick] [--json out.json]
+// Usage: node game-lab/diffplay.mjs [--n 300] [--pols thoughtful,humanRead] [--cap 120] [--nofacpick] [--facfx '{"heresy":{"critPre":2}}'] [--json out.json]
+//   --facfx：跟 sim.mjs 同一個（Object.assign 疊進那派的被動 fx；調數字時三派打法差異跟著重量、或跟原型第一版數字對照）
 // 印：三派出的不全一樣的手占幾成（門檻 F7 ≥25%）、兩兩不同、依位數段（第 1–4／5–10／11–30／31 位起）。「出的牌」＝色＋是不是丟王牌（A 前綴）
 import { createRequire } from 'module';
 import fs from 'fs';
@@ -21,6 +22,11 @@ if (!EN.facCfg(C)) { console.error('content 沒有 C.factions（或 on:false）'
 for (const p of POLS) if (!EN.policies[p]) { console.error('unknown policy ' + p); process.exit(2); }
 if (!(Number.isInteger(N) && N > 0 && CAP >= 5)) { console.error('--n 正整數、--cap ≥5'); process.exit(2); }
 if (NOFACPICK) C.factions.levelEvery = 0;
+const FACFX = arg('facfx', null) ? JSON.parse(arg('facfx')) : null;
+if (FACFX) for (const t of Object.keys(FACFX)) {
+  if (!TIERS.includes(t) || !FACFX[t] || typeof FACFX[t] !== 'object') { console.error('--facfx 的鍵要是 ' + TIERS.join('|') + '，值是物件'); process.exit(2); }
+  C.factions[t].fx = Object.assign({}, C.factions[t].fx, FACFX[t]);
+}
 const LABEL = { thoughtful: '會讀的', humanRead: '一般玩家', novice: '新手（剋提示）', oldReader: '舊腦袋', high: '只出最大星', mirrorHint: '跟提示同色', formula: '兩步公式', random: '亂出' };
 const ok = (r, w) => { if (!r || !r.ok) throw new Error(w + ' ' + (r && r.error)); };
 const FX0 = Object.fromEntries(TIERS.map(t => [t, EN.facFxOf(C, { fac: { picks: {} } }, t)]));   // 只開被動（picks 空）
@@ -68,8 +74,8 @@ function measure(pol) {
 }
 
 const pc = (a, b) => b ? (100 * a / b).toFixed(1) + '%' : '—';
-const out = { N, CAP, nofacpick: NOFACPICK, pols: {} };
-console.log(`### 打法差異（diffplay；n ${N} 趟／策略、最多打到第 ${CAP} 位、三派輪流、smart；同一局面三派各算一次，只開被動${NOFACPICK ? '；整趟本派選項不出' : '；實際出牌照那一趟的派（含本派選項）'}）\n`);
+const out = { N, CAP, nofacpick: NOFACPICK, ...(FACFX ? { facfx: FACFX } : {}), pols: {} };
+console.log(`### 打法差異（diffplay；n ${N} 趟／策略、最多打到第 ${CAP} 位、三派輪流、smart；同一局面三派各算一次，只開被動${NOFACPICK ? '；整趟本派選項不出' : '；實際出牌照那一趟的派（含本派選項）'}${FACFX ? '；--facfx ' + JSON.stringify(FACFX) : ''}）\n`);
 console.log('| 策略 | 手數 | 三派出的不全一樣（F7 ≥25%） | 兩兩不同 經典｜冷門、經典｜異端、冷門｜異端 | 依位數 ' + SEGS.join('／') + ' | 依那一趟的派 經典／冷門／異端 |');
 console.log('|---|---|---|---|---|---|');
 for (const pol of POLS) {
