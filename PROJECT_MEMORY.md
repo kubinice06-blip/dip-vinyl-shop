@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-20｜dip-vinyl-shop｜game-lab 第 I 波 I-1：王牌「翻面」條件加成＋頂點輔助卡換裝（店主挑的 45 張）＋之乎者也退出頂點
+
+- **背景**：店主 11-20「每個王牌 發動條件加成 比如 補血的ok computer可以多家條件 如果看穿對手 可以再次發動」；同日改名：「不要叫安可 改名字」→ 玩家看得到的字一律叫「翻面」（程式識別字 encore 照舊；lint-copy 擋「安可」）。規格 scratchpad `v5/wave-i/SPEC-I.md` §1、報告 `wave-i/build1/FINAL.md`、`SIM.md`、裁定 `build1/RULING.md`。
+- **翻面規則**：每張王牌與頂點卡多一條「讀對了才有的條件 → 加成」，一場一次，成立時這場剛好打完就留到下一位。預設模式：三張 7 星王牌丟出後看穿他（異端 ?fac=1 時同色比贏）→ 王牌回到手上再丟一次（那次 5 星）。`?apex=1` 頂點卡家族表：看穿→下一手剋中多扣 1（24 張）、看穿→再發動一次（9）、同色比贏→多扣 1（10）、同色比贏→再發動（2）；「連剋兩手」不用（新手照提示也做得到，不是讀牌獎勵）。
+- **OK Computer**：店主原例「看穿→再補一次血」在 `?apex=1` 讓會讀的到第 50 位多 +6 點（變簡單）；「第二次只回 1」仍 +1.7 → 照主線裁定退到「看穿 → 下一手剋中多扣 1」；「再發動一次」留給 DSOTM、Kind of Blue、Jazzmatazz 等 11 張。預設模式的 OK Computer（7 星王牌）照樣是看穿就回手再丟。
+- **頂點輔助卡換裝**（店主名單頁 15／15／15）：新增 Art Blakey《Moanin'》、Guru《Jazzmatazz Vol. 1》、Slum Village《Fan-Tas-Tic Vol. 1》、濁水溪公社《台客的復仇》、モア《モア》、生活向上委員会《ニューヨーク支部》（沿用被換下那張的原語與數值，典故有出處）；拿掉之乎者也、TPAB、范特西、讓我想一想、Blue Notes for Mongezi、地下人（`C.apexRetired`）。
+- **之乎者也退出頂點**：seed_cards.json 去 hall（殿堂 303→302）、Firestore card_catalog 刪 tier／apex（回讀確認）。**待店主**：admin「頂級牌管理」按「⇄ 依卡池同步頂點旗標」（album_overrides、apex_pool 是管理員集合，雲端寫不了）；11-04 以來抽到它的玩家卡上 hall 旗標跟 11-03 降級同一題未決。
+- **畫面**：王牌格下緣翻面籤（灰＝等、金＝成立）、成立那手結果框「翻面！…」＋頭上小章、留到下一位提示、唱片資訊與挑王牌面板的翻面句、規則卡「翻面（例外）」一段（375×548 不捲）。
+- **主要檔案**：`game-lab/{engine.js,content.js,cards.js,ui.js,duel.js,duel.css,cardinfo.js,recap.js,style.css,index.html,sim.mjs,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`（#32）、`game-lab/tests/e2e-encore.mjs`（新）、`game-lab/tools/{check-content,lint-copy,deck-lists.json}`、`seed_cards.json`。`?v=87`。
+- **驗證**：sim 預設模式 AN1 n4000 會讀的到第 50 位 18.9 對 18.9%、新手不變、成立 16.6%／場；AN2–AN4 頂點卡 45 張逐張（21 組）過；AN5 ?fac=1&apex=1 1.09；sim 檔頭 18/18。engine.test 2,951,300／0；chars、hit、shop、tutorial 全過；e2e 兩尺寸全套（encore 15、apex 37、fac 22、career 30…）＋e2e.spec 兩尺寸；合併活店後再跑 encore／crowd／apex／fac／career／duel 兩尺寸、prologue、e2e.spec 375。
+
 ### 2026-11-20｜dip-vinyl-shop｜頻率光譜分享縮圖換成現行面板（og-tune-v2.png）
 
 - **店主 11-20**：「縮圖好奇怪喔」——`og-tune.png` 還是最早那版面板（四顆軸滾筒、溫暖 / WARMTH、橫的就這張）。
