@@ -60,7 +60,9 @@ function samplePool() {
   for (let i = 1; i <= 10; i++) add('zhoujie', 'loreIn', i, '{artist}啊' + i);
   for (let i = 1; i <= 4; i++) add('zhoujie', 'loreOut', i, '點封面看唱片資訊' + i);
   const FACT = [null, null, null, { onShelf: true }, { onShelf: true }, { o: 4 }, { o: '>=4' }, { h: 4 }, { h: 4 }, { c: 4 }, { c: [4, 5] }, null, null, null, null, null, null, null, null, null];
-  for (let i = 1; i <= 20; i++) add('zhoujie', 'fact', i, i === 4 ? '那張就在{bin}那箱' : i === 12 ? '{artist}是{region}的' : i === 13 ? '這張偏{axis}' : '《{album}》是{year}年發行的' + i, FACT[i - 1]);
+  // 一般樣板輪流講不同的事（年份／曲風／氛圍／年代），跟真的 C.chat 一樣分散：同一段兩泡不講同一件事（topicsOf），全講年份的樣本池會只剩單泡段
+  const FTXT = ['《{album}》是{year}年發行的', '{artist}這張曲風標{genre}', '《{album}》標{tune}', '{artist}這張是{decade}年代的'];
+  for (let i = 1; i <= 20; i++) add('zhoujie', 'fact', i, i === 4 ? '那張就在{bin}那箱' : i === 12 ? '{artist}是{region}的' : i === 13 ? '這張偏{axis}' : FTXT[i % 4] + i, FACT[i - 1]);
   for (let i = 1; i <= 30; i++) add('passer', 'chat', i, '路人' + i);
   return P;
 }

@@ -40,13 +40,20 @@
   var SPARK_MS = 4000;                 // 第一次提示：那位熟客頭上閃星 4 秒（§3.2）
   var GUAR_DEADLINE = 10000;           // 門事件保證：回到來客畫面 10 秒內（遊戲時間）一定看得到推門進或出
   var GUAR_GIVEUP = 30000;
+  // 路線避人（build2 審查：走道只有一人寬，舊路線直接從翻箱的人身上穿過去、兩個走路的人在後走道與門口對穿）
+  var BODY = [20, 14];                 // 身體疊在一起：|dx|<20 且 |dy|<14（§4.3）
+  var LOW_Y = 252;                     // 走動的人 y≤250（LC2）：路線不准繞到中島下面（唱盤區）
+  var WAIT_NUDGE = 4000;               // 等路等了 4 秒（遊戲 ms）還被停著的人擋住：請擋路的熟客收尾（停留縮到 0.5 秒）
+  var WAIT_MAX = 20000;                // 等路最多 20 秒，過了照走（保險；正常不會發生，除非你一直站在右排走道上）
+  var SIDE_X = { left: 62, right: 226 };   // 借過：左排往走道外側讓一步（x62，試聽桌、NEW 箱前的地板）；右排下面兩格往櫃檯前讓（x226：離你走的路 ≥20、離 c-pay ≥38）
 
   var H = {};                          // host
   var S = fresh();
   function fresh() {
     return { mode: 'off', t: 0, last: 0, iv: 0, slots: {}, k: 0, tag: '', door: { swing: -1e9, guestAt: -1e9 }, nextEntry: null, waitRoom: false,
       guarantee: null, screenAt: 0, left: {}, leftLook: {}, log: [], blocks: [], reserve: {}, blockXY: [], pDest: null, pLast: null, emoteUntil: 0,
-      manualPause: false, kept: false, stopsCache: null, hideAt: 0, cut: null, warm: null, warmAt: 0, fresh: true };
+      manualPause: false, kept: false, stopsCache: null, hideAt: 0, cut: null, warm: null, warmAt: 0, fresh: true,
+      navL: null, navObs: null, navNodes: null, rcache: {}, rcacheN: 0, last3: {}, moving: {} };
   }
 
   // ------------------------------------------------------------------ 小工具
@@ -115,7 +122,7 @@
     var P = cfg().passers || []; return P[li] || P[0] || 'girl';
   }
   function posOf(sl) { var t = st(), a = t && t.pos(sl.id); return a && !a.hidden ? [a.x, a.y] : null; }
-  // 他現在「佔」的位置：站著＝那一格；走路中＝要去的那一格（到了就站在那裡）
+  // 他現在「佔」的位置：站著＝那一格；走路中＝要去的那一格（到了就站在那裡）；被點住聊天（halted）＝現在站的地方（要去的那格另外算，occupiedFor）
   function holdXY(sl) { return sl.walking && sl.dest ? sl.dest : (posOf(sl) || sl.dest); }
 
   function hotOn() { return typeof H.chat === 'function'; }   // ui.js 有給聊天（host.chat）才加跟著人走的熱點（沒有 talk 的熱點只會吃掉封面那一下）
@@ -129,14 +136,18 @@
   function dropHot(sl) { var t = st(); if (t && t.removeHot) t.removeHot('cw-' + sl.id); }
 
   // 走：token 擋掉舊的 resolve（put／新的 walk 都會 resolve 前一個 walk Promise）
-  function walk(sl, keys, spd, onDone) {
+  //   pts＝這一趟的點列（planRoute 算的；別人挑路時拿來算「會不會跟他對穿」）；沒給就照舞台的路線
+  function walk(sl, keys, spd, onDone, pts) {
     var t = st(); if (!t) return;
     var tok = ++sl.tok, last = keys[keys.length - 1];
     if (S.chat && S.chat.sl === sl) chatEnd(S.chat);           // 被叫去走（讓位、清路、換站）：聊天收掉，不讓泡泡跟著人跑
-    sl.talking = false; sl.halted = false; sl.resumeAt = null;
+    sl.talking = false; sl.halted = false; sl.resumeAt = null; sl.side = null; sl.waitT = 0;
     sl.walking = true; sl.dest = xyOf(last); sl.pass = null;
+    if (!pts) { try { pts = t.route(sl.id, keys); } catch (_) { pts = null; } }
+    sl.path = pts && pts.length ? pts : null;
     t.pose(sl.id, null);
     var pr = null; try { pr = t.walk(sl.id, keys, spd); } catch (e) { console.error(e); }
+    face0(sl, sl.path);
     var fin = function () {
       if (sl.tok !== tok || !sl.on) return;
       var p = posOf(sl);
@@ -147,10 +158,32 @@
     if (pr && typeof pr.then === 'function') pr.then(fin, function () { if (sl.tok === tok && sl.dest) { t.put(sl.id, sl.dest); fin(); } });
     else fin();
   }
+  // 出發那一步的朝向（build2 審查：往左上／右上斜著走那段倒退著走）：pose(null) 會把人轉回正面，shop.js faceDir 在 35°–55° 的斜線區間沿用原方向
+  //   → 第一段往上（>35°）就先轉背面；往下維持正面；橫走交給 faceDir（側面）
+  function face0(sl, pts) {
+    var t = st(), sh = t && t.shop, p = posOf(sl); if (!sh || typeof sh.dir !== 'function' || !p || !pts) return;
+    for (var i = 0; i < pts.length; i++) {
+      var dx = pts[i][0] - p[0], dy = pts[i][1] - p[1];
+      if (Math.abs(dx) + Math.abs(dy) < 6) continue;
+      if (Math.atan2(Math.abs(dy), Math.abs(dx)) * 180 / Math.PI > 35) { try { sh.dir(sl.id, dy < 0 ? 'back' : 'front'); } catch (_) {} }
+      return;
+    }
+  }
+  // 走到一半轉錯面（前一段往下、這一段斜著往上）：每 tick 看實際位移，往上走卻是正面（或往下走卻是背面）就轉過來
+  function faceFix(sl) {
+    var t = st(), sh = t && t.shop; if (!sh || typeof sh.dir !== 'function') return;
+    var a = t.pos(sl.id); if (!a || a.hidden) { S.last3[sl.id] = null; return; }
+    var q = S.last3[sl.id]; S.last3[sl.id] = [a.x, a.y];
+    if (!q || !sl.walking || sl.halted) return;
+    var dx = a.x - q[0], dy = a.y - q[1];
+    if (Math.abs(dy) < 2 || Math.abs(dy) < Math.abs(dx) * 0.7) return;
+    if (dy < 0 && a.dir === 'front') { try { sh.dir(sl.id, 'back'); } catch (_) {} }
+    else if (dy > 0 && a.dir === 'back') { try { sh.dir(sl.id, 'front'); } catch (_) {} }
+  }
   function hideSlot(sl) {
     var t = st(); sl.tok++;
     if (S.chat && S.chat.sl === sl) chatEnd(S.chat);
-    sl.talking = false; sl.halted = false; sl.resumeAt = null;
+    sl.talking = false; sl.halted = false; sl.resumeAt = null; sl.side = null; sl.walking = false; sl.path = null;
     if (t) { try { t.say(sl.id, null); t.emote(sl.id, null); t.hold(sl.id, null); t.back(sl.id, false); t.pose(sl.id, null); t.hide(sl.id, true); } catch (e) { console.error(e); } }
     dropHot(sl);
   }
@@ -159,7 +192,9 @@
       phase: 'walk', at: null, stop: null, dest: null, walking: false, plan: 0, stayLeft: 0, stayTot: 0, stayAt: 0, emAt: null, emDone: false,
       pay: false, holding: null, tok: 0, frozen: false, pass: null, hiddenDuel: false, seed: '', visits: 0,
       // 聊天（§5）：這次來（進門到出門）聊了幾段、講過哪些分類、busy 講過沒；talking＝正在講；halted＝講之前在走路（講完接著走）；resumeAt＝收泡泡後幾時回原本動作
-      talkN: 0, cats: [], busySaid: false, talking: false, halted: false, resumeAt: null };
+      talkN: 0, cats: [], busySaid: false, talking: false, halted: false, resumeAt: null,
+      // 路線（避人）：path＝這一趟的點列；been＝這次來翻過的格（不回頭翻）；side＝借過讓一步中 { stop:[x,y], at, pr }；waitT＝等路等了多久
+      path: null, been: [], side: null, waitT: 0 };
   }
   // 正在講、或剛講完還在等 2 秒回原本動作：停留計時、借過、門事件提前出門都不碰他
   function chatting(sl) { return !!(sl && (sl.talking || sl.resumeAt != null)); }
@@ -167,7 +202,14 @@
   // ------------------------------------------------------------------ 佔位（§4.3）
   function occupiedFor(sl, extra) {
     var t = st(), out = [];
-    slotOn().forEach(function (o) { if (o === sl || o.hiddenDuel && !o.dest) return; var a = holdXY(o); if (a) out.push(a); if (o.walking && o.dest) out.push(o.dest); });
+    slotOn().forEach(function (o) {
+      if (o === sl || o.hiddenDuel && !o.dest) return;
+      var a = holdXY(o); if (a) out.push(a);
+      if (o.walking && o.dest) out.push(o.dest);
+      // 被點住聊天的走路客人：他要去的那一格也算佔著（審查 review2 A：聊天時別人挑走同一格，聊完兩人站同一格）
+      if (o.halted && o.stop) { var hs = stopById(o.stop); if (hs) out.push([hs.x, hs.y]); }
+      if (o.side && o.side.stop) out.push(o.side.stop);                      // 借過讓一步的人：等一下走回原位
+    });
     ['p', 'o', 'f'].forEach(function (id) { var a = t && t.pos(id); if (a && !a.hidden && !a.outside && t.has(id)) out.push([a.x, a.y]); });
     if (S.pDest && S.pDest.xy) out.push(S.pDest.xy);
     S.blockXY.forEach(function (b) { out.push(b); });
@@ -179,11 +221,14 @@
     if (sl && sl.at) r.push(sl.at);
     return r;
   }
-  // 挑一格。o：{ side（只挑這一排）, prefer（優先這一排）, avoid(stop)→true 不要, calm, likes, u, extra（多閃開的點）, noShort, noPay, noListen, onlyDig }
+  // 挑一格。o：{ side（只挑這一排）, prefer（優先這一排）, avoid(stop)→true 不要, calm, likes, u, extra（多閃開的點）, noShort, noPay, noListen, onlyDig,
+  //   fromDoor（剛推門：路線從門口算）, notBeen（這次來翻過的不再回頭翻）, noRoute（不看路上有沒有人：讓位找不到走得通的格才用） }
+  //   預設只挑「現在走得過去」的格：路上沒有停著的人、不跟正在走的人對穿（permit）
   function pick(sl, o) {
     o = o || {};
     var K = core(); if (!K) return null;
     var minY = num(cf2('title', 'minY'), 189);
+    var from = o.fromDoor ? doorKey() : null;
     var list = stops().filter(function (s) {
       if (o.side && s.side !== o.side) return false;
       if (o.noShort && s.short) return false;
@@ -193,7 +238,11 @@
       if (o.calm && (s.y < minY || s.short)) return false;
       return true;
     });
-    var avoid = function (s) { return blocked(s) || (o.avoid ? o.avoid(s) : false); };
+    var avoid = function (s) {
+      if (blocked(s) || (o.avoid && o.avoid(s))) return true;
+      if (o.notBeen && sl && sl.been && sl.been.indexOf(s.id) >= 0) return true;
+      return !o.noRoute && !permit(sl, legsTo(sl, s, o.fromDoor), from);
+    };
     var R = C().regulars || {}, likes = { ids: o.likes || (sl && sl.who && R[sl.who] ? R[sl.who].likes : []) || [], likeW: num(cf('likeW'), 3), sideW: num(cf('otherSide'), 2) };
     if (o.prefer) likes.side = o.prefer;
     var id = K.pickStop(list, occupiedFor(sl, o.extra), reservedFor(sl), avoid, likes, o.u == null ? 0.5 : o.u);
@@ -216,6 +265,152 @@
   }
   function exitLegs(sl) { var V = via(), p = posOf(sl) || sl.dest || [0, 0]; return [sideX(p[0]) === 'left' ? V.left : V.right, doorKey()]; }
 
+  // ------------------------------------------------------------------ 路線避人（build2 審查：每分鐘約一次「鬼穿人」）
+  //   左右走道各只有一人寬（右排 x193–212，右邊是櫃檯口袋；左排 x≈54–89），停留點就在走道中線上，舊版換站、結帳、出門照靜態最短路走，
+  //   直接從翻箱的人身上穿過；兩個走路的人也會在後走道、門口對穿。現在：
+  //   1. 路線的障礙＝家具（navObstacles）＋老闆的口袋（footprints.behind，客人不准進）＋中島下面（y>252）＋每個停著的人的身體框（20×14：
+  //      其他停著／被點住聊天的客人、借過讓一步回頭要站回去的那格、沒在走的你／老闆／主線客人、你正要走去的地方）。
+  //      先試靜態路線（快取），碰到人才用「家具＋人」重算（nav 點＋人身體框四角當路點；左排會貼著外側 x≈64 繞過去）；
+  //   2. 跟正在走的人（其他客人剩下的那段、主線客人／老闆的固定路線剩下那段）身體框會碰到＝現在不走；
+  //   3. 走不過去＝等一下（多翻半秒再看）；不穿人。等太久請擋路的熟客收尾（WAIT_NUDGE），再久才照走（WAIT_MAX，保險）。
+  function navBase() {
+    var t = st(), L = t && t.layout, DS = W.DipShop;
+    if (!L || !DS || typeof DS.navObstacles !== 'function' || typeof DS.navClear !== 'function') return null;
+    if (S.navL === L && S.navObs) return S.navObs;
+    var obs = [];
+    try { obs = DS.navObstacles(L).slice(); } catch (_) { return null; }
+    try { if (typeof DS.footprints === 'function') DS.footprints(L).forEach(function (f) { if (f.pocket) obs.push(f.pocket.slice()); }); } catch (_) {}
+    obs.push([-400, LOW_Y + 1, 1200, 600]);
+    S.navL = L; S.navObs = obs; S.rcache = {}; S.rcacheN = 0;
+    S.navNodes = (L.nav || []).map(function (n) { return [n[0], n[1]]; }).filter(function (n) { return !inAny(obs, n); });
+    return obs;
+  }
+  function inAny(obs, p) { var DS = W.DipShop; for (var i = 0; i < obs.length; i++) if (DS.inObs(p, obs[i])) return true; return false; }
+  function bodyHit(a, b) { return Math.abs(a[0] - b[0]) < BODY[0] && Math.abs(a[1] - b[1]) < BODY[1]; }
+  function bodyRect(b) { return [b[0] - BODY[0], b[1] - BODY[1], BODY[0] * 2, BODY[1] * 2]; }
+  // 停著的人（路線要繞開的身體）：其他客人（停著、被點住聊天）、借過讓一步要站回去的那格、沒在走的 p／o／f、你正要走去的地方
+  function bodiesFor(sl) {
+    var t = st(), out = [];
+    slotOn().forEach(function (o) {
+      if (o === sl || o.hiddenDuel) return;
+      if (o.side && o.side.stop) out.push(o.side.stop);
+      if (o.walking && !o.halted) return;                         // 走路中的另外算（walkerClash）
+      var p = posOf(o); if (p) out.push(p);
+    });
+    if (t) ['p', 'o', 'f'].forEach(function (id) {
+      if (S.moving[id]) return;
+      var a = t.pos(id); if (!a || a.hidden || a.outside || !t.has(id)) return;
+      out.push([a.x, a.y]);
+    });
+    if (S.pDest && S.pDest.xy) out.push(S.pDest.xy);
+    return out;
+  }
+  function hitsBodies(pts, bodies) { for (var i = 0; i < bodies.length; i++) if (onRoute(pts, bodies[i])) return true; return false; }
+  // 家具＋人：nav 點＋每個人身體框四角（往外 1.5 格）當路點的最短路；走不過去＝null
+  function dynRoute(a, b, bodies, base) {
+    var DS = W.DipShop, obs = base.concat(bodies.map(bodyRect));
+    if (DS.navClear(obs, a, b)) return [b];
+    var nodes = (S.navNodes || []).slice(), e = 1.5;
+    bodies.forEach(function (q) { var r = bodyRect(q); nodes.push([r[0] - e, r[1] - e], [r[0] + r[2] + e, r[1] - e], [r[0] - e, r[1] + r[3] + e], [r[0] + r[2] + e, r[1] + r[3] + e]); });
+    var N = [a].concat(nodes.filter(function (n) { return !inAny(obs, n); }), [b]), n = N.length, dist = [], prev = [], done = [];
+    for (var i = 0; i < n; i++) { dist.push(Infinity); prev.push(-1); done.push(false); }
+    dist[0] = 0;
+    for (;;) {
+      var u = -1; for (var j = 0; j < n; j++) if (!done[j] && dist[j] < Infinity && (u < 0 || dist[j] < dist[u])) u = j;
+      if (u < 0 || u === n - 1) break; done[u] = true;
+      for (var v = 0; v < n; v++) {
+        if (done[v] || v === u) continue;
+        var d = Math.hypot(N[v][0] - N[u][0], N[v][1] - N[u][1]);
+        if (dist[u] + d < dist[v] && DS.navClear(obs, N[u], N[v])) { dist[v] = dist[u] + d; prev[v] = u; }
+      }
+    }
+    if (prev[n - 1] < 0) return null;
+    var path = [], c = n - 1; while (c > 0) { path.unshift(N[c]); c = prev[c]; }
+    return path;
+  }
+  function legRoute(a, b, bodies, base) {
+    var DS = W.DipShop, t = st(), key = Math.round(a[0]) + ',' + Math.round(a[1]) + '>' + Math.round(b[0]) + ',' + Math.round(b[1]);
+    var r = S.rcache[key];
+    if (r === undefined) {
+      if (++S.rcacheN > 400) { S.rcache = {}; S.rcacheN = 1; }      // 起點多半是停留點；走到一半被叫住的那種點很少，滿了就整個重來
+      r = DS.navRoute(t.layout, a, b, base); S.rcache[key] = r;
+    }
+    if (r && (!bodies.length || !hitsBodies([a].concat(r), bodies))) return r;
+    return bodies.length ? dynRoute(a, b, bodies, base) : null;
+  }
+  // 算一趟路：legs＝[spot 名｜[x,y]…]（照 legsTo／exitLegs 的 via）→ { keys（給 Stage.walk：中間是點、每一段最後一個照原本的名字，到站朝向才對）, pts } | null
+  function planRoute(sl, legs, from) {
+    var t = st(), base = navBase(); if (!t || !base) return null;
+    var cur = from != null ? xyOf(from) : (posOf(sl) || sl.dest); if (!cur) return null;
+    cur = [cur[0], cur[1]];
+    var bodies = bodiesFor(sl).filter(function (b) { return !bodyHit(b, cur); });   // 已經貼著自己的（剛被擺到旁邊）不算：讓他走得開
+    var keys = [], pts = [cur.slice()];
+    for (var i = 0; i < legs.length; i++) {
+      var k = legs[i], B = xyOf(k); if (!B) return null;
+      var r = legRoute(cur, B, bodies, base); if (!r) return null;
+      for (var j = 0; j < r.length; j++) { var q = r[j]; keys.push(j === r.length - 1 ? k : [q[0], q[1]]); pts.push([q[0], q[1]]); }
+      cur = [B[0], B[1]];
+    }
+    return { keys: keys, pts: pts };
+  }
+  function samplePts(pts, step) {
+    var out = [];
+    for (var i = 1; i < pts.length; i++) {
+      var a = pts[i - 1], b = pts[i], d = Math.hypot(b[0] - a[0], b[1] - a[1]), n = Math.max(1, Math.ceil(d / step));
+      for (var k = (i === 1 ? 0 : 1); k <= n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]);
+    }
+    return out;
+  }
+  // 從現在位置起，這條點列還沒走的那段
+  function restOf(P, p) {
+    if (!P || P.length < 2) return p ? [p] : [];
+    var bi = 1, bd = Infinity;
+    for (var i = 1; i < P.length; i++) { var d = segDist(p, P[i - 1], P[i]); if (d < bd - 0.01) { bd = d; bi = i; } }
+    return [p].concat(P.slice(bi));
+  }
+  // 正在走的人（其他客人；主線客人、老闆、你的固定路線）剩下那段：我這趟的身體框碰得到＝現在不走
+  function walkerClash(sl, pts) {
+    var t = st(), others = [];
+    slotOn().forEach(function (o) {
+      if (o === sl || !o.walking || o.halted || o.hiddenDuel) return;
+      var p = posOf(o); if (!p) return;
+      others.push(restOf(o.path || [p, o.dest || p], p));
+    });
+    S.blocks.forEach(function (b) { var a = t && t.pos(b.who); if (a && !a.hidden && !a.outside) others.push(restOf(b.pts, [a.x, a.y])); });
+    if (!others.length) return false;
+    var sm = samplePts(pts, 4);
+    for (var i = 0; i < others.length; i++) for (var j = 0; j < sm.length; j++) if (onRoute(others[i], sm[j])) return true;
+    return false;
+  }
+  // 這一趟現在能不能走：路上沒有停著的人、不跟正在走的人對穿 → { keys, pts } | null
+  function permit(sl, legs, from) {
+    if (!sl) return null;
+    var r = planRoute(sl, legs, from); if (!r) return null;
+    return walkerClash(sl, r.pts) ? null : r;
+  }
+  // 走不通時照舊（讓位要快：寧可擦身；或等太久的保險）
+  function rawPlan(sl, legs, from) {
+    var t = st(), pts = null;
+    try { pts = from != null ? t.route(from, legs) : t.route(sl.id, legs); } catch (_) { pts = null; }
+    return { keys: legs, pts: pts && pts.length ? pts : null };
+  }
+  // 等路：多翻半秒再看；等了 WAIT_NUDGE 請擋路的熟客收尾；等滿 WAIT_MAX 回 true（呼叫端照走）
+  function waitRoute(sl, legs) {
+    sl.stayLeft = 500;
+    sl.waitT = (sl.waitT || 0) + 500;
+    if (sl.waitT >= WAIT_NUDGE && legs) nudge(sl, legs);
+    return sl.waitT >= WAIT_MAX;
+  }
+  function nudge(sl, legs) {
+    var pl = planRoute(sl, legs, null);
+    var r = rawPlan(sl, legs).pts; if (!r) return;
+    slotOn().forEach(function (o) {
+      if (o === sl || o.phase !== 'stay' || o.walking || o.frozen || o.hiddenDuel || chatting(o) || o.side) return;
+      var p = posOf(o); if (!p || !onRoute(r, p)) return;
+      if (!pl) o.stayLeft = Math.min(o.stayLeft, 500);
+    });
+  }
+
   // ------------------------------------------------------------------ 到站、停留
   function durOf(stop, u) {
     var T = cf('stops') || DEF.stops;
@@ -224,8 +419,11 @@
   function stand(sl) {
     var t = st(), s = stopById(sl.at); if (!t || !s) return;
     if (sl.talking) { addHot(sl); return; }                    // 正在講：維持說話的樣子（講完 2 秒後 resume 再擺回去）
+    if (sl.side) { t.pose(sl.id, null); addHot(sl); return; }  // 借過讓一步中：站在旁邊等你過去（passCheck 帶他走回原位）
     t.pose(sl.id, null);
-    if (s.kind === 'pay') {
+    if (s.kind === 'listen') {
+      t.back(sl.id, true);                                     // 試聽桌：背對鏡頭、戴桌上的耳機（§4.1；pose/back(false) 會把 shop 到站排好的背面清掉，這裡直接設背面）
+    } else if (s.kind === 'pay') {
       t.back(sl.id, true);
       if (sl.holding) t.hold(sl.id, { sleeve: sl.holding });
       if (!sl.frozen && ownerFree()) t.pose('o', 'busy', Math.max(1200, sl.stayLeft || 1200));
@@ -236,27 +434,45 @@
     addHot(sl);
   }
   function arrive(sl, setStay) {
-    var s = stopById(sl.stop); if (!s) return leave(sl);
-    sl.at = s.id; sl.phase = 'stay'; sl.stayAt = S.t; sl.emDone = false; sl.visits++;
+    var s = stopById(sl.stop); if (!s) return leave(sl, null, true);
+    sl.at = s.id; sl.phase = 'stay'; sl.stayAt = S.t; sl.emDone = false; sl.visits++; sl.waitT = 0;
+    if (sl.been.indexOf(s.id) < 0) sl.been.push(s.id);
     if (setStay !== false) { sl.stayTot = durOf(s, h01(sl.seed + '#dur#' + sl.visits)); sl.stayLeft = sl.stayTot; }
     sl.emAt = range(cf2('emote', 'after') || DEF.emote.after, h01(sl.seed + '#em#' + sl.visits));
     stand(sl);
+    sideCheck(sl);
   }
+  // 剛走到的這格就在你正在走的路上（被請讓位、你走路時他剛好到站）：馬上讓一步
+  function sideCheck(sl) {
+    var d = S.pDest, t = st(); if (!d || !d.pr || !t || sl.side) return;
+    var a = t.pos('p'); if (!a || a.hidden) return;
+    var me = posOf(sl); if (!me || clash(me, d.xy)) return;
+    if (onRoute(restOf(d.pr, [a.x, a.y]), me)) sideStep(sl, d.pr, d.xy);
+  }
+  // 走去一格 → true；路上有人擋著（permit 不過）→ false、人不動（o.force：照走；o.plan：已經算好的路）
   function goStop(sl, stop, o) {
     o = o || {};
-    var t = st(); if (!t) return;
-    if (sl.at === 'c-pay' || sl.holding && !o.keepHold) { t.back(sl.id, false); }
+    var t = st(); if (!t) return false;
+    var legs = legsTo(sl, stop, o.fromDoor), from = o.fromDoor ? doorKey() : null;
+    var plan = o.plan || permit(sl, legs, from);
+    if (!plan) { if (!o.force) return false; plan = rawPlan(sl, legs, from); }
+    t.back(sl.id, false);
     if (!o.keepHold && sl.holding && stop.kind !== 'pay') { t.hold(sl.id, null); sl.holding = null; }
-    var legs = legsTo(sl, stop, o.fromDoor);
+    if (sl.holding && stop.kind === 'pay') t.hold(sl.id, { sleeve: sl.holding, carry: true });   // 隨手拿著走（不強迫正面，走路照轉向）
     sl.at = null; sl.stop = stop.id; sl.phase = 'walk';
-    walk(sl, legs, o.spd || num(cf('speed'), 30), function () { arrive(sl, o.keepStay ? false : true); if (o.keepStay) { sl.stayTot = Math.max(sl.stayTot, sl.stayLeft); } });
+    walk(sl, plan.keys, o.spd || num(cf('speed'), 30), function () { arrive(sl, o.keepStay ? false : true); if (o.keepStay) { sl.stayTot = Math.max(sl.stayTot, sl.stayLeft); } }, plan.pts);
+    return true;
   }
-  function leave(sl, spd) {
-    var t = st(); if (!t || !sl.on) return;
-    if (S.mode === 'calm') { hideSlot(sl); sl.on = false; return; }   // 標題回訪不用門（不會走到這裡；保險）
+  // 出門 → true；路上有人擋著、或跟正在走的人對穿 → false、人不動（force：照走）
+  function leave(sl, spd, force) {
+    var t = st(); if (!t || !sl.on) return false;
+    if (S.mode === 'calm') { hideSlot(sl); sl.on = false; return true; }   // 標題回訪不用門（不會走到這裡；保險）
+    var legs = exitLegs(sl), plan = permit(sl, legs);
+    if (!plan) { if (!force) return false; plan = rawPlan(sl, legs); }
     t.back(sl.id, false); if (sl.holding) { t.hold(sl.id, null); sl.holding = null; }
     sl.at = null; sl.stop = null; sl.phase = 'out'; sl.plan = 0;
-    walk(sl, exitLegs(sl), spd || num(cf('speed'), 30), function () { doorOut(sl); });
+    walk(sl, plan.keys, spd || num(cf('speed'), 30), function () { doorOut(sl); }, plan.pts);
+    return true;
   }
   function doorOut(sl) {
     var t = st(); if (!t) return;
@@ -280,6 +496,8 @@
     var L = cf('doorLock') || DEF.doorLock;
     if (S.t < S.door.swing + num(L.swing, 1100) + num(L.afterSwing, 3000)) return true;
     if (S.t < S.door.guestAt + num(L.afterGuest, 1200)) return true;
+    // 有人正走在出門的路上：門等他用完（build2 審查：一人推門進來、一人正好走到門口出去，在門口對穿）
+    if (slotOn().some(function (o) { return o.phase === 'out' && o.walking && !o.hiddenDuel; })) return true;
     return S.blocks.some(function (b) { return b.door; });
   }
   // 誰推門進來（§2.5、§4.2）：熟客 65%／路人 35%；已在店裡的、60 秒內離開的不抽
@@ -301,8 +519,9 @@
     S.k++;
     var sl = newSlot(id, seq.kind === 'regular' ? seq.who : null, seq.kind === 'regular' ? null : seq.li, k);
     sl.seed = S.tag + '#crowd#' + k;
-    var stop = pick(sl, { prefer: preferSide(sl), noPay: true, u: h01(sl.seed + '#stop') });
+    var stop = pick(sl, { prefer: preferSide(sl), noPay: true, fromDoor: true, u: h01(sl.seed + '#stop') });   // 從門口走得過去的格（路上沒人、不跟出門的人對穿）
     if (!stop) return false;
+    var plan = permit(sl, legsTo(sl, stop, true), doorKey()); if (!plan) return false;
     S.slots[id] = sl;
     var n = core().pickTable((cf('stops') || DEF.stops).n || DEF.stops.n, h01(sl.seed + '#n')) || 2;
     sl.plan = Math.max(0, n - 1); sl.pay = h01(sl.seed + '#pay') < num(cf('payP'), 0.4);
@@ -311,7 +530,7 @@
     S.door.swing = S.t;
     logDoor('in', sl);
     addHot(sl);
-    goStop(sl, stop, { fromDoor: true });
+    goStop(sl, stop, { fromDoor: true, plan: plan });
     S.nextEntry = S.t + range(cf('gap'), h01(S.tag + '#gap#' + k));
     return true;
   }
@@ -326,7 +545,7 @@
       var seq = K.crowdSeq(tag + '#start', C(), i, seqCtx(boost)); if (!seq) break;
       var sl = newSlot(id, seq.kind === 'regular' ? seq.who : null, seq.kind === 'regular' ? null : seq.li, -1 - i);
       sl.seed = tag + '#start#' + i;
-      var stop = pick(sl, { prefer: preferSide(sl), noListen: true, calm: calm, onlyDig: calm, u: h01(sl.seed + '#stop') });
+      var stop = pick(sl, { prefer: preferSide(sl), noListen: true, calm: calm, onlyDig: calm, noRoute: true, u: h01(sl.seed + '#stop') });   // 直接放在那格（不走路）
       if (!stop) break;
       S.slots[id] = sl;
       var nn = K.pickTable((cf('stops') || DEF.stops).n || DEF.stops.n, h01(sl.seed + '#n')) || 2;
@@ -349,32 +568,32 @@
   function nextMove(sl) {
     if (S.mode === 'calm') return calmMove(sl);
     var cur = sl.at && stopById(sl.at);
-    if (cur && cur.kind === 'pay') { if (!doorLocked()) leave(sl); else sl.stayLeft = 500; return; }
+    if (cur && cur.kind === 'pay') { if (doorLocked() || !leave(sl)) { if (waitRoute(sl, exitLegs(sl)) && !doorLocked()) leave(sl, null, true); } return; }
     if (sl.plan > 0) {
-      var nx = pick(sl, { u: h01(sl.seed + '#next#' + sl.visits), noPay: true });
-      if (nx) { sl.plan--; goStop(sl, nx); return; }
-      sl.plan = 0;
+      // 換一箱：這次來翻過的不再回頭翻（build2 審查：右排兩格來回翻像程式在繞）；路上有人擋著的不挑
+      var nx = pick(sl, { u: h01(sl.seed + '#next#' + sl.visits), noPay: true, notBeen: true });
+      if (nx && goStop(sl, nx)) { sl.plan--; return; }
+      if (!nx) sl.plan = 0;
     }
-    if (sl.pay && canPay(sl)) {
+    var pp = sl.pay && canPay(sl);
+    if (pp) {
       var pay = stopById('c-pay');
-      if (pay) {
-        sl.pay = false;
-        sl.holding = shelfCard(cur, sl.seed);
-        var t = st();
-        if (sl.holding && t) t.hold(sl.id, { sleeve: sl.holding });
-        emote(sl, 'record', 1500);
-        goStop(sl, pay, { keepHold: true });
-        return;
-      }
+      sl.pay = false;
+      sl.holding = shelfCard(cur, sl.seed);
+      emote(sl, 'record', 1500);
+      goStop(sl, pay, { keepHold: true, plan: pp });
+      return;
     }
-    if (doorLocked()) { sl.stayLeft = 500; return; }   // 門鎖著：多翻一下再走（不跟主線客人搶門）
-    leave(sl);
+    // 門鎖著（不跟主線客人搶門、有人正在出門）或出門的路被人擋著：多翻一下再走
+    if (doorLocked() || !leave(sl)) { if (waitRoute(sl, exitLegs(sl)) && !doorLocked()) leave(sl, null, true); }
   }
+  // 能不能去結帳 → 走得過去的那趟路（{keys, pts}）| null
   function canPay(sl) {
-    if (S.mode !== 'live' || !ownerFree()) return false;
-    var pay = stopById('c-pay'); if (!pay || S.reserve['c-pay'] || blocked(pay)) return false;
+    if (S.mode !== 'live' || !ownerFree()) return null;
+    var pay = stopById('c-pay'); if (!pay || S.reserve['c-pay'] || blocked(pay)) return null;
     var occ = occupiedFor(sl);
-    return !occ.some(function (a) { return clash(a, [pay.x, pay.y]); });
+    if (occ.some(function (a) { return clash(a, [pay.x, pay.y]); })) return null;
+    return permit(sl, legsTo(sl, pay, false), null);
   }
   function calmMove(sl) {
     var cur = sl.at && stopById(sl.at);
@@ -382,7 +601,7 @@
     var nx = (cur && pick(sl, { calm: true, onlyDig: true, side: cur.side, u: u })) || pick(sl, { calm: true, onlyDig: true, u: u });   // 偶爾換一箱：先挑同一排
     sl.stayTot = sl.stayLeft = range(cf2('title', 'move') || DEF.title.move, h01(sl.seed + '#cmove#' + sl.visits));
     if (!nx) return;
-    goStop(sl, nx, { keepStay: true });
+    goStop(sl, nx, { keepStay: true, force: true });
   }
   function emote(sl, kind, ms) {
     if (reduced() || S.t < S.emoteUntil) return false;       // 全店同時最多一個圖示；reduced-motion 不冒
@@ -392,7 +611,7 @@
     return true;
   }
   function stayTick(sl, dt) {
-    if (sl.phase !== 'stay' || sl.frozen || sl.hiddenDuel || sl.pass || chatting(sl)) return;   // 聊天期間停留計時暫停（§5.2）
+    if (sl.phase !== 'stay' || sl.walking || sl.frozen || sl.hiddenDuel || sl.pass || sl.side || chatting(sl)) return;   // 聊天、借過期間停留計時暫停（§5.2）
     sl.stayLeft -= dt;
     var s = stopById(sl.at);
     if (s && !sl.emDone && S.mode === 'live' && S.t - sl.stayAt >= sl.emAt) {
@@ -408,39 +627,129 @@
   // 換一格（不碰 avoid、不撞任何人）；沒有就出門（標題回訪：藏起來）
   function relocate(sl, o) {
     o = o || {};
-    if (!sl.on || sl.hiddenDuel || sl.phase === 'out') return;   // 已經在出門的路上：讓他走完
-    var cur = posOf(sl) || sl.dest || [0, 0];
-    var po = { prefer: sideX(cur[0]), avoid: o.avoid, extra: o.extra, noPay: true, calm: S.mode === 'calm', onlyDig: S.mode === 'calm', u: h01(sl.seed + '#yield#' + (++sl.visits)) };
-    var nx = o.sameSide ? pick(sl, Object.assign({ side: sideX(cur[0]) }, po)) : null;
-    // 主線裁定（可逆）：同一排沒空格就從上面繞到另一排，再沒有才出門（剛進門就被你請出去不像店）
-    if (!nx) nx = pick(sl, po);
+    if (!sl.on || sl.hiddenDuel) return;
     var spd = num(cf('yieldSpeed'), 48);
-    if (nx) {
-      var keep = Math.max(sl.stayLeft || 0, 4000);
-      goStop(sl, nx, { spd: spd, keepStay: true });
-      sl.stayLeft = keep;
+    if (sl.phase === 'out') {
+      // 已經在出門的路上：讓他走完。被點住聊天停在路上的（review2 B）：收掉聊天、接著出門
+      if (sl.halted) leave(sl, spd, true);
       return;
     }
+    var cur = posOf(sl) || sl.dest || [0, 0];
+    var po = { prefer: sideX(cur[0]), avoid: o.avoid, extra: o.extra, noPay: true, calm: S.mode === 'calm', onlyDig: S.mode === 'calm', u: h01(sl.seed + '#yield#' + (++sl.visits)) };
+    var keep = Math.max(sl.stayLeft || 0, 4000);
+    // 先挑走得過去的格（路上沒人、不跟走路的人對穿）；主線裁定（可逆）：同一排沒空格就從上面繞到另一排，再沒有才出門（剛進門就被你請出去不像店）
+    var nx = (o.sameSide ? pick(sl, Object.assign({ side: sideX(cur[0]) }, po)) : null) || pick(sl, po);
+    if (nx && goStop(sl, nx, { spd: spd, keepStay: true })) { sl.stayLeft = keep; return; }
+    // 你路上的格（yieldTo 的 fallback）：路走得通就去，到了再讓一步（比被請出門像店）
+    if (o.fallback) {
+      var fp = Object.assign({}, po, { avoid: o.fallback });
+      nx = (o.sameSide ? pick(sl, Object.assign({ side: sideX(cur[0]) }, fp)) : null) || pick(sl, fp);
+      if (nx && goStop(sl, nx, { spd: spd, keepStay: true })) { sl.stayLeft = keep; return; }
+      po = fp;
+    }
+    if (S.mode !== 'calm' && leave(sl, spd)) return;
+    // 被夾在走道裡（往哪走都要穿過停著的人）：先往旁邊讓一步，等擋路的人走開再換格（trapStep；build2 驗：右排 CLASSICAL 被你點 FOLK 請走時穿過 ELEC 的人）
+    if (S.mode !== 'calm' && !o.noTrap && trapStep(sl)) return;
+    // 走得通的都沒有（窄走道上被人擋著）：讓位要快，照舊挑格（寧可擦身，不擋老闆、主線客人、你的路）
+    var np = Object.assign({}, po, { noRoute: true });
+    nx = (o.sameSide ? pick(sl, Object.assign({ side: sideX(cur[0]) }, np)) : null) || pick(sl, np);
+    if (nx) { goStop(sl, nx, { spd: spd, keepStay: true, force: true }); sl.stayLeft = keep; return; }
     if (S.mode === 'calm') { hideSlot(sl); sl.on = false; return; }
-    leave(sl, spd);
+    leave(sl, spd, true);
   }
   function needMove(sl, test) {
-    if (!sl.on || sl.hiddenDuel || sl.phase === 'out') return false;
-    var a = holdXY(sl); return !!(a && test(a));
+    // 正在走出門的讓他走完；被點住聊天停在出門路上的要動（review2 B：老闆 counter→ref 從停著的他身上穿過）
+    if (!sl.on || sl.hiddenDuel || (sl.phase === 'out' && !sl.halted)) return false;
+    var a = holdXY(sl); if (a && test(a)) return true;
+    return !!(sl.side && sl.side.stop && test(sl.side.stop));
   }
   // 你要走去的地方（econ approach、試聽機、收音機、櫃檯、攤位）：停在那裡 38×44 內的人放掉那格，走到同一排另一個空格，沒有就出門
   function yieldTo(to) {
     var xy = xyOf(to); if (!xy || !enabled()) return;
-    S.pDest = { xy: xy, until: Date.now() + 8000 };
     var t = st(), pr = t && t.route ? t.route('p', xy) : [];
+    S.pDest = { xy: xy, until: Date.now() + 8000, pr: pr.length > 1 ? pr : null };
     slotOn().forEach(function (sl) {
       if (!needMove(sl, function (a) { return clash(a, xy); })) return;
-      // 讓到同一排另一格；先挑不在你這段路上的（不然你一路走過去又要跟他借過），沒有才挑路上的；都沒有＝出門
+      // 讓到另一格：不在你這段路上的（同一排優先、再另一排），沒有就出門；都不行才挑你路上的（到了再讓一步，arrive 的 sideCheck）
       var off = function (s) { return clash([s.x, s.y], xy); };
-      var cur = posOf(sl) || sl.dest || xy;
-      var alt = pr.length > 1 ? pick(sl, { side: sideX(cur[0]), noPay: true, extra: [xy], avoid: function (s) { return off(s) || onRoute(pr, [s.x, s.y]); }, u: h01(sl.seed + '#y0#' + sl.visits) }) : null;
-      relocate(sl, { sameSide: true, extra: [xy], avoid: alt ? function (s) { return off(s) || onRoute(pr, [s.x, s.y]); } : off });
+      var offRoute = function (s) { return off(s) || (pr.length > 1 && onRoute(pr, [s.x, s.y])); };
+      relocate(sl, { sameSide: true, extra: [xy], avoid: offRoute, fallback: off });
     });
+    // 你這段路會經過的、停著翻箱的人：側身讓一步（借過，§4.3；build2 審查：舊版只原地轉向你，你從他身體正中間穿過去）
+    if (pr.length > 1) slotOn().forEach(function (sl) {
+      if (sl.phase !== 'stay' || sl.walking || sl.hiddenDuel || sl.side || chatting(sl)) return;
+      var me = posOf(sl); if (!me || clash(me, xy) || !onRoute(pr, me)) return;
+      sideStep(sl, pr, xy);
+    });
+  }
+  // 借過：左排往走道外側（x62）、右排下面兩格（CLASSICAL、FOLK）往櫃檯前（x226）讓一步，面向你；你過去 0.8 秒後走回原位接著翻（passCheck）。
+  //   右排上面兩格（ELEC、HIP-HOP）旁邊是櫃檯口袋、沒地方讓：換到不在你這段路上的格（同 yield），沒有就出門。
+  //   讓一步那格在你路上、或被人／家具擋著：照舊原地轉向你（passCheck）
+  function sideStep(sl, pr, dest) {
+    var t = st(), s = stopById(sl.at); if (!t || !s || s.kind !== 'dig') return;
+    var x = s.side === 'left' ? SIDE_X.left : (s.y >= 216 ? SIDE_X.right : null);
+    if (x == null) {
+      if (sl.frozen) return;
+      relocate(sl, { extra: [dest], avoid: function (q) { return onRoute(pr, [q.x, q.y]) || clash([q.x, q.y], dest); } });
+      return;
+    }
+    var spot = [x, s.y], base = navBase();
+    if (onRoute(pr, spot) || (base && inAny(base, spot)) || bodiesFor(sl).some(function (b) { return bodyHit(b, spot); })) return;
+    var plan = permit(sl, [spot], null); if (!plan) return;
+    var stopXY = [s.x, s.y], at = sl.at;
+    walk(sl, plan.keys, num(cf('yieldSpeed'), 48), function () { try { t.faceTo(sl.id, 'p'); } catch (_) {} }, plan.pts);
+    sl.side = { stop: stopXY, at: at, pr: pr, t0: Date.now() };
+    sl.pass = { end: 0 };
+  }
+  // 讓一步的人：你過去了（不在走、或你剩下的路不再經過他原本那格）0.8 秒後走回原位；10 秒還回不去（你停在他那格旁邊）就換一格
+  function sideBack(sl, now, pMoving, pcur) {
+    var sd = sl.side; if (!sd || sl.walking) return;
+    var s = stopById(sd.at); if (!s) { sl.side = null; sl.pass = null; return; }
+    if (sd.trap) {
+      // 被夾住讓一步的：原位不再跟你（你站的、你要去的）撞就走回去；還撞就換一格（走得通才走），出門也行；都不行就站著等（擋路的人收尾後就通了）
+      var hot = clash(sd.stop, pcur) || (S.pDest && clash(sd.stop, S.pDest.xy));
+      if (!hot && !pMoving) { sd.trap = false; sd.ok = 0; sd.pr = sd.pr || [pcur, pcur]; }
+      else {
+        if (sd.tryAt && now < sd.tryAt) return;
+        sd.tryAt = now + 500 / speed();
+        var av = function (q) { return clash([q.x, q.y], pcur) || (S.pDest && clash([q.x, q.y], S.pDest.xy)); };
+        var nx = pick(sl, { noPay: true, avoid: av, u: h01(sl.seed + '#trap#' + sl.visits) });
+        if (nx && goStop(sl, nx, { spd: num(cf('yieldSpeed'), 48), keepStay: true })) return;
+        if (leave(sl, num(cf('yieldSpeed'), 48))) return;
+        if (now - sd.t0 > 30000 / speed()) { sl.side = null; sl.pass = null; relocate(sl, { noTrap: true, avoid: av }); }
+        return;
+      }
+    }
+    var passed = !bodyHit(pcur, sd.stop) && (!pMoving || !onRoute(restOf(sd.pr, pcur), sd.stop));
+    if (!passed) { sd.ok = 0; if (now - sd.t0 > 10000 / speed() && !pMoving) relocateSide(sl); return; }
+    if (!sd.ok) { sd.ok = now + num((cf('pass') || DEF.pass).resume, 800) / speed(); return; }
+    if (now < sd.ok) return;
+    var plan = permit(sl, [keyOf(s)], null);
+    if (!plan) { if (now - sd.t0 > 10000 / speed()) relocateSide(sl); return; }
+    walk(sl, plan.keys, num(cf('yieldSpeed'), 48), function () { sl.pass = null; stand(sl); }, plan.pts);
+    sl.side = null; sl.pass = { end: 0 };
+  }
+  function relocateSide(sl) { sl.side = null; sl.pass = null; relocate(sl, { noTrap: true }); }
+  // 讓一步的那格（左排 x62、右排下面兩格 x226）；沒有（右排上面兩格旁邊是櫃檯口袋）→ null
+  function sideSpot(sl, s) {
+    if (!s || s.kind !== 'dig') return null;
+    var x = s.side === 'left' ? SIDE_X.left : (s.y >= 216 ? SIDE_X.right : null);
+    if (x == null) return null;
+    var spot = [x, s.y], base = navBase();
+    if ((base && inAny(base, spot)) || bodiesFor(sl).some(function (b) { return bodyHit(b, spot); })) return null;
+    return spot;
+  }
+  function trapStep(sl) {
+    if (sl.phase !== 'stay' || sl.walking || sl.side) return false;
+    var s = stopById(sl.at), spot = sideSpot(sl, s); if (!spot) return false;
+    var me = posOf(sl); if (me && near(me, spot, 3)) return false;
+    var plan = permit(sl, [spot], null); if (!plan) return false;
+    var t = st(), stopXY = [s.x, s.y], at = sl.at;
+    walk(sl, plan.keys, num(cf('yieldSpeed'), 48), function () { try { t.faceTo(sl.id, 'p'); } catch (_) {} }, plan.pts);
+    sl.side = { stop: stopXY, at: at, pr: null, t0: Date.now(), trap: true };
+    sl.pass = { end: 0 };
+    nudge(sl, exitLegs(sl));                                   // 擋住出路的熟客請他收尾
+    return true;
   }
   function clearSpot(at, o) {
     o = o || {};
@@ -500,7 +809,8 @@
     R.forEach(function (r) { addBlock(r.pts, r.id, false); });     // 走到之前這幾條路上不准有人停
     var bad = function (xy) { return cutBy(T, xy[1]) || R.some(function (r) { return onRoute(r.pts, xy); }); };
     slotOn().forEach(function (sl) {
-      if (needMove(sl, bad)) { moved.push(sl); relocate(sl, { avoid: function (s) { return bad([s.x, s.y]); } }); }
+      // 換去的格也不挑試聽桌：打完主線客人輸了要從那裡出門（guestClear），領獎畫面又得讓一次
+      if (needMove(sl, bad)) { moved.push(sl); relocate(sl, { avoid: function (s) { return bad([s.x, s.y]) || !!s.guestClear; } }); }
     });
     S.cut = T;
     return settled(moved, function (p) { return !bad(p); });
@@ -528,7 +838,7 @@
       var s = stopById(sl.stop || sl.at);
       if (!s) { sl.on = false; return; }
       t.put(sl.id, keyOf(s), sl.look); t.hide(sl.id, false); t.sil(sl.id, false);
-      sl.walking = false; sl.dest = [s.x, s.y]; sl.at = s.id; sl.stop = s.id; sl.phase = 'stay';
+      sl.walking = false; sl.halted = false; sl.side = null; sl.pass = null; sl.path = null; sl.dest = [s.x, s.y]; sl.at = s.id; sl.stop = s.id; sl.phase = 'stay';
       if (!(sl.stayLeft > 0)) sl.stayLeft = 4000;
       stand(sl);
     });
@@ -541,10 +851,12 @@
     if (!p || p.hidden || p.outside || !t.has('p')) { S.pLast = null; return; }
     var cur = [p.x, p.y], last = S.pLast || cur;
     var moving = Math.abs(cur[0] - last[0]) > 0.5 || Math.abs(cur[1] - last[1]) > 0.5;
+    S.moving.p = moving;
     var P = cf('pass') || DEF.pass, nr = num(P.near, 30), now = Date.now();
     if (S.pDest && (near(cur, S.pDest.xy, 2) || now > S.pDest.until)) S.pDest = null;
     slotOn().forEach(function (sl) {
-      if (sl.phase !== 'stay' || sl.hiddenDuel || sl.at === 'c-pay' || chatting(sl)) { sl.pass = null; return; }   // 正在跟你講話的人本來就面向你
+      if (sl.side) { if (!sl.hiddenDuel && !chatting(sl)) sideBack(sl, now, moving, cur); return; }   // 讓一步的人：你過去了再走回原位
+      if (sl.phase !== 'stay' || sl.walking || sl.hiddenDuel || sl.at === 'c-pay' || chatting(sl)) { sl.pass = null; return; }   // 正在跟你講話的人本來就面向你
       var me = posOf(sl); if (!me) return;
       var d = segDist(me, last, cur);
       if (moving && d < nr) {
@@ -558,7 +870,7 @@
     S.pLast = cur;
     // 你站定的地方跟停著的人撞（被擺到 browse、settle 走回來的那一格，不是點箱子走過去的）：他讓開（同 yield）
     if (!moving) slotOn().forEach(function (sl) {
-      if (sl.phase !== 'stay' || sl.walking || sl.hiddenDuel || sl.pass || chatting(sl)) return;
+      if (sl.phase !== 'stay' || sl.walking || sl.hiddenDuel || sl.pass || sl.side || chatting(sl)) return;
       var me = posOf(sl); if (me && clash(me, cur)) yieldTo(cur);
     });
   }
@@ -644,11 +956,11 @@
     var early = num((cf('doorEvent') || DEF.doorEvent).earlyLeave, 0.6);
     // 主線裁定（可逆）：店裡只剩一位時不叫他提前走（不然門事件一做完店就空了 20 秒）；先讓人進來
     var ok = count() >= 2 ? cands.filter(function (c) { return c.done >= early && c.eta <= budget; }).sort(function (a, b) { return a.eta - b.eta; }) : [];
-    if (ok.length) { G.done = true; leave(ok[0].sl); return; }
+    for (var i = 0; i < ok.length; i++) if (leave(ok[i].sl)) { G.done = true; return; }     // 出門的路被人擋著就換下一位
     if (count() < maxN() && enter()) { G.done = true; return; }
     if (count() >= maxN() && cands.length) {
       cands.sort(function (a, b) { return (a.eta <= budget) === (b.eta <= budget) ? a.sl.stayLeft - b.sl.stayLeft : (a.eta <= budget ? -1 : 1); });
-      G.done = true; leave(cands[0].sl); return;
+      for (var j = 0; j < cands.length; j++) if (leave(cands[j].sl)) { G.done = true; return; }
     }
     G.due = S.t + 1000;                                        // 什麼都做不了（外觀還在暖、沒空格）：一秒後再試
   }
@@ -661,6 +973,8 @@
     if (!paused) S.t += dt;
     remount();
     updateBlocks();
+    movingPOF();
+    slotOn().forEach(faceFix);
     if (paused && S.chat) chatEnd(S.chat);     // 開抽屜、面板、頁面＝聊天收掉（§5.3）
     if (!paused) slotOn().forEach(function (sl) { if (sl.resumeAt != null && S.t >= sl.resumeAt) resumeTalk(sl); });   // 收泡泡 2 秒後回原本動作
     passCheck();
@@ -668,6 +982,15 @@
     if (paused || S.mode === 'still') return;                  // 暫停＝不排新的進門、停留計時停；正在走的那段 shop 自己走完就站著
     slotOn().forEach(function (sl) { stayTick(sl, dt); });
     if (S.mode === 'live') doorFlow();
+  }
+  // 老闆、主線客人這一 tick 有沒有在走（停著的才算路上的障礙；你的在 passCheck 算）
+  function movingPOF() {
+    var t = st(); if (!t) return;
+    ['o', 'f'].forEach(function (id) {
+      var a = t.pos(id), q = S.last3['_' + id], c = a && !a.hidden ? [a.x, a.y] : null;
+      S.moving[id] = !!(c && q && (Math.abs(c[0] - q[0]) > 0.5 || Math.abs(c[1] - q[1]) > 0.5));
+      S.last3['_' + id] = c;
+    });
   }
   // 舞台被重掛（Stage.load 去台北、你家再回來，actors 清空）：照記憶把還在的人直接 put 回停留點，不演推門
   function remount() {
@@ -678,7 +1001,7 @@
       var s = stopById(sl.stop || sl.at);
       if (!s || sl.phase === 'out') { hideSlot(sl); sl.on = false; return; }
       t.put(sl.id, keyOf(s), sl.look); t.hide(sl.id, false); t.sil(sl.id, false);
-      sl.walking = false; sl.dest = [s.x, s.y]; sl.at = s.id; sl.stop = s.id; sl.phase = 'stay';
+      sl.walking = false; sl.halted = false; sl.side = null; sl.pass = null; sl.path = null; sl.dest = [s.x, s.y]; sl.at = s.id; sl.stop = s.id; sl.phase = 'stay';
       stand(sl);
     });
   }
@@ -733,7 +1056,7 @@
       S.mode = 'calm';
     } else {
       S.mode = 'still';
-      slotOn().forEach(function (sl) { if (S.reserve[sl.at] || (sl.walking && sl.stop && S.reserve[sl.stop])) relocate(sl, { avoid: function (s) { return !!S.reserve[s.id]; } }); });
+      slotOn().forEach(function (sl) { if (S.reserve[sl.at] || ((sl.walking || sl.halted) && sl.stop && S.reserve[sl.stop])) relocate(sl, { avoid: function (s) { return !!S.reserve[s.id]; } }); });
       if (o.duel) {
         clearDuel();
         clearTimeout(S.hideAt);
@@ -752,7 +1075,8 @@
       slotOn().forEach(function (sl) {
         var t = st(); sl.tok++;
         if (sl.phase === 'out') { hideSlot(sl); sl.on = false; return; }
-        if (sl.walking && sl.stop) { sl.walking = false; sl.at = sl.stop; sl.phase = 'stay'; var s = stopById(sl.stop); if (s) sl.dest = [s.x, s.y]; }
+        if (sl.side) { var s0 = stopById(sl.side.at); sl.side = null; sl.pass = null; if (s0) { sl.walking = false; sl.at = s0.id; sl.stop = s0.id; sl.dest = [s0.x, s0.y]; } }
+        if ((sl.walking || sl.halted) && sl.stop) { sl.walking = false; sl.halted = false; sl.at = sl.stop; sl.phase = 'stay'; var s = stopById(sl.stop); if (s) sl.dest = [s.x, s.y]; }
         if (t) { try { t.say(sl.id, null); t.emote(sl.id, null); t.hide(sl.id, true); } catch (_) {} }
         dropHot(sl);
         sl.hiddenDuel = false;
@@ -853,14 +1177,25 @@
     var t = st(); if (t && sl.on && !sl.hiddenDuel) { try { t.pose(sl.id, null); } catch (_) {} }
   }
   // 收泡泡 2 秒後：本來在翻箱的接著翻、本來在走的接著走（去下一格、去結帳、出門）
+  //   被點住的走路客人（halted）：本來要去的那格還空著、路走得通才接著去；被別人佔了（review2 A）就換一格／去結帳／出門；路被擋著就等半秒再看
   function resumeTalk(sl) {
     sl.resumeAt = null;
     if (!sl.on || sl.hiddenDuel || sl.talking) return;
     if (sl.halted) {
-      sl.halted = false;
-      if (sl.phase === 'out') { sl.phase = 'stay'; leave(sl); return; }
+      var force = (sl.waitT || 0) >= WAIT_MAX;
+      if (sl.phase === 'out') {
+        if (!doorLocked() && leave(sl, null, force)) return;
+        sl.waitT = (sl.waitT || 0) + 500; sl.resumeAt = S.t + 500; return;
+      }
       var s = sl.stop && stopById(sl.stop);
-      if (s) { goStop(sl, s, { keepHold: s.kind === 'pay' }); return; }
+      var free = s && !blocked(s) && !S.reserve[s.id] && !occupiedFor(sl).some(function (a) { return clash(a, [s.x, s.y]); });
+      if (free && goStop(sl, s, { keepHold: s.kind === 'pay' })) return;
+      if (s && s.kind === 'pay' && sl.holding) { var t = st(); if (t) t.hold(sl.id, null); sl.holding = null; }
+      var nx = pick(sl, { u: h01(sl.seed + '#re#' + sl.visits), noPay: true, notBeen: true });
+      if (nx && goStop(sl, nx)) return;
+      if (!doorLocked() && leave(sl, null, force)) return;
+      sl.waitT = (sl.waitT || 0) + 500; sl.resumeAt = S.t + 500;
+      return;
     }
     if (sl.phase === 'stay') stand(sl);
   }

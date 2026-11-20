@@ -2131,7 +2131,8 @@
     function fillChat(el, text, o) {
       el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite');
       if (o.who) { var w = document.createElement('span'); w.className = 'who'; w.textContent = o.who; el.appendChild(w); }
-      var tx = document.createElement('span'); tx.className = 'tx'; tx.textContent = o.quote ? '「' + text + '」' : text; el.appendChild(tx);
+      // 摘句外加「」；原句裡的「」改成『』（台灣排版：引號裡的引號用雙引號；build2 審查：30 句變成「…「…」…」）
+      var tx = document.createElement('span'); tx.className = 'tx'; tx.textContent = o.quote ? '「' + String(text).replace(/「/g, '『').replace(/」/g, '』') + '」' : text; el.appendChild(tx);
       if (o.quote) { el.classList.add('quote'); if (o.src) { var sr = document.createElement('span'); sr.className = 'src'; sr.textContent = o.src; el.appendChild(sr); } }
       if (!o.more) return;
       el.classList.add('more'); el.setAttribute('tabindex', '0');
@@ -2201,6 +2202,17 @@
             var cT = coverOf([p.x + sh - bw / 2, p.y - 7 - bh2, bw, bh2]);
             if (cT.frac > (o.sideIfCover != null ? o.sideIfCover : 0.5) && bestC && lessCover(bestC, cT)) { side = true; pick = best; }
           } else pick = best;
+        }
+        if (side && o.chat && !fitR && !fitL && chatW > 150) {
+          // 寬泡泡（行家摘句 220）兩邊都放不下：縮回一般聊天的 150 寬（變高）再放身體旁（build2 審查：375×548 周姐站上排，220 寬的摘句夾回舞台框後整個蓋住她）
+          el.style.maxWidth = '150px';
+          bw = el.offsetWidth; bh2 = el.offsetHeight || 24; w = bw;
+          top = clamp(right.y, bh2 / 2 + 2, oh - bh2 / 2 - 2);
+          fitR = right.x + 6 + w <= ow - 2; fitL = left.x - 6 - w >= 2;
+          if (fitR || fitL) {
+            var cR2 = fitR ? coverOf([right.x + 6, top - bh2 / 2, w, bh2]) : null, cL2 = fitL ? coverOf([left.x - 6 - w, top - bh2 / 2, w, bh2]) : null;
+            pick = cR2 && (!cL2 || !lessCover(cL2, cR2)) ? 'R' : 'L';
+          }
         }
         if (side) {
           var useRight = pick ? pick === 'R' : (fitR || !fitL);

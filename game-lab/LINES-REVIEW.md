@@ -1486,7 +1486,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 小魚・xiaoyu-busy-01 | 我再翻一下，等等聊。 | 本規格新寫 | `chat.xiaoyu-busy-01` |
+| 小魚・xiaoyu-busy-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 我再翻一下，等等聊。 | 本規格新寫 | `chat.xiaoyu-busy-01` |
 | 小魚・xiaoyu-busy-02 | 等我一下下，這張我還在猶豫！ | 本規格新寫 | `chat.xiaoyu-busy-02` |
 
 ## 活店・阿凱・打招呼（第一次見面，一輩子一次）
@@ -1527,7 +1527,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 阿凱・akai-dig-01 | 上禮拜在這箱挖到一張，回家聽到睡著。／是好的那種睡著。 | 本規格新寫 | `chat.akai-dig-01` |
+| 阿凱・akai-dig-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 上禮拜在這箱挖到一張，回家聽到睡著。／是好的那種睡著。 | 本規格新寫 | `chat.akai-dig-01` |
 | 阿凱・akai-dig-02 | 翻箱子會上癮，明明說好只翻一箱。 | 本規格新寫 | `chat.akai-dig-02` |
 | 阿凱・akai-dig-03 | 挖到一張想要的，整天的鳥事就算了。 | 本規格新寫 | `chat.akai-dig-03` |
 | 阿凱・akai-dig-04 | 我翻很快，封面閃過去一眼就知道要不要。 | 本規格新寫 | `chat.akai-dig-04` |
@@ -1576,7 +1576,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 阿凱・akai-busy-01 | 等一下，我這箱還沒翻完。 | 本規格新寫 | `chat.akai-busy-01` |
+| 阿凱・akai-busy-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 等一下，我這箱還沒翻完。 | 本規格新寫 | `chat.akai-busy-01` |
 | 阿凱・akai-busy-02 | 現在不行，我在找東西。 | 本規格新寫 | `chat.akai-busy-02` |
 
 ## 活店・大頭・打招呼（第一次見面，一輩子一次）
@@ -1667,7 +1667,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | 大頭・datou-busy-01 | 等我一下，我在想下一首接什麼。 | 本規格新寫 | `chat.datou-busy-01` |
-| 大頭・datou-busy-02 | 欸等等等，我快翻到了，給我十秒！ | 本規格新寫 | `chat.datou-busy-02` |
+| 大頭・datou-busy-02・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 欸等等等，我快翻到了，給我十秒！ | 本規格新寫 | `chat.datou-busy-02` |
 
 ## 活店・阿芳・打招呼（第一次見面，一輩子一次）
 
@@ -1907,7 +1907,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 周姐・zhoujie-busy-01 | 這箱我還沒看完，你先去翻別的。 | 本規格新寫 | `chat.zhoujie-busy-01` |
+| 周姐・zhoujie-busy-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 這箱我還沒看完，你先去翻別的。 | 本規格新寫 | `chat.zhoujie-busy-01` |
 | 周姐・zhoujie-busy-02 | 等一下，這張我得看仔細。 | 本規格新寫 | `chat.zhoujie-busy-02` |
 
 ## 活店・周姐・知識引子（接藝人介紹摘句）
@@ -1996,7 +1996,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 路人・passer-chat-27 | 這門好重，我還以為沒開。 | 本規格新寫 | `chat.passer-chat-27` |
 | 路人・passer-chat-28 | 在這裡講話都會不自覺小聲。 | 本規格新寫 | `chat.passer-chat-28` |
 | 路人・passer-chat-29 | 我經過好幾次，今天終於進來了。 | 本規格新寫 | `chat.passer-chat-29` |
-| 路人・passer-chat-30 | 這邊的箱子是照什麼排的啊？ | 本規格新寫 | `chat.passer-chat-30` |
+| 路人・passer-chat-30・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 這邊的箱子是照什麼排的啊？ | 本規格新寫 | `chat.passer-chat-30` |
 
 ## 活店・老闆閒聊
 
@@ -2229,7 +2229,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 ## 活店・周姐的藝人介紹摘句（抽樣 30 句；原文照抄主站已審的藝人介紹，不逐句審）
 
-> 畫面上：周姐說「{藝人}啊，我記得介紹上寫：」→ 摘句泡泡（下緣灰字「藝人介紹・{藝人}」）。全部 615 位、682 句在 `game-lab/lore.json`（`node game-lab/tools/build-lore.mjs` 產生；每句都是主站藝人介紹的原文子字串）。讀起來怪的，告訴主線加進 build-lore 的排除表。
+> 畫面上：周姐說「{藝人}啊，我記得介紹上寫：」→ 摘句泡泡（下緣灰字「藝人介紹・{藝人}」）。全部 581 位、642 句在 `game-lab/lore.json`（`node game-lab/tools/build-lore.mjs` 產生；每句都是主站藝人介紹的原文子字串）。讀起來怪的，告訴主線加進 build-lore 的排除表。
 
 | 藝人 | 摘句 |
 |---|---|
@@ -2255,7 +2255,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Simone | 奧地利爵士歌手，全名 Simone Kopmajer，1981 年生於施蒂利亞邦的施拉德明。 |
 | Songs: Ohia | Jason Molina 以 Songs: Ohia 為名創作。 |
 | Steve Reich | 1960 年代他讓錄音帶迴圈逐漸錯開，以這種相位位移聽出交錯的節奏。 |
-| Tori Amos | 1994 年她協助創立美國反性暴力組織 RAINN，並擔任首任全國代言人。 |
+| Sébastien Tellier | 2008 年他代表法國參加歐洲歌唱大賽，2025 年獲頒法國藝術與文學騎士勳章。 |
 | Xscape | 1990 年在亞特蘭大一帶成軍，成員從教會唱起，Scott 姊妹從小被當成福音歌手栽培。 |
 | Yoko Ono | 1969 年她與 John Lennon 結婚，共組 Plastic Ono Band。 |
 | ちあきなおみ | ちあきなおみ 本名瀬川三恵子，1969 年以〈雨に濡れた慕情〉出道。 |

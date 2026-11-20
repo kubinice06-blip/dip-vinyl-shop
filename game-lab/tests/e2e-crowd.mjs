@@ -17,7 +17,7 @@
 //   LC4  點人：泡泡、名字、在舞台框內、不碰面板；fast=0：▼ 15 秒還在、最後一句 ≥5.9 秒；點 ▼＝下一句不開抽屜；最後一句時真點底下那張＝照常生效、泡泡收；點別的箱子＝泡泡收、照常走去翻
 //   LC5  點走動中的人：停下、轉向、出泡泡、之後接著走；腳底 y<150 點下去不開聊天
 //   LC6  輪替：連點 3 段不同、第 4 下 busy、第 5 下只冒汗；save.regulars.n 累加；重新整理 seen 還在；同一趟第二次遇到不再講 again
-//   LC7  讓位（freezeAt c-soul 點 SOUL）與借過（freezeAt c-world 點 ROCK）
+//   LC7  讓位（freezeAt c-soul 點 SOUL）與借過（freezeAt c-world 點 ROCK：往走道外側讓一步、你過去後走回原位，身體框不疊）
 //   LC8  對決與領獎：開打先清切頭的、擋路的；老闆兩段路沒人；430×932 整個在橫條裡的人還在；領獎站著不動；回來客繼續走
 //   LC9  攤位：原地照翻、沒人用門；宵夜老闆那段與 stSnack 沒人；同業站主放到 regular 時那格沒人；站主出場時沒人跟他身體框疊
 //   LC10 周姐：摘句＝lore.json 原句＋出處行；擋 lore.json 改樣板、0 錯；第一次進門老闆說一次 expertIntro
@@ -486,7 +486,7 @@ async function lc7(browser, w, h, size) {
     const opened = await page.waitForSelector('.ec-drawer', { timeout: 10000 }).then(() => true, () => false);
     const p = await C(page, () => { const a = window.__lab.stage.pos('p'); return [Math.round(a.x), Math.round(a.y)]; });
     const x = (await crowdSt(page)).slots.find(q => q.on);
-    await sleep(1500);
+    await sleep(2500);   // 借過：你停下 0.8 秒後他走回原位（約 1.1 秒）
     const S = await cs(page), cl = await calls(page);
     const xEnd = (await crowdSt(page)).slots.find(q => q.on);
     await C(page, () => { window.__csMs = 200; });
@@ -501,14 +501,19 @@ async function lc7(browser, w, h, size) {
     const soul = [STOP['c-soul'].x, STOP['c-soul'].y];
     const yOk = y.hot && y.opened && y.x && !clash(y.p, [y.x.x, y.x.y]) && dist([y.x.x, y.x.y], soul) >= 38;
     const wpos = [STOP['c-world'].x, STOP['c-world'].y];
-    const stayed = ps.S.every(s => s.sl.filter(q => q.s === 'w1').every(q => q.x === wpos[0] && q.y === wpos[1]));
+    // 借過（build2 審查改）：c-world 那位不換停留點（at 一直是 c-world），往走道外側讓一步、你過去後走回原位接著翻；你走過去的每一格身體框都不疊
+    const w1s = ps.S.map(s => ({ q: s.sl.find(q => q.s === 'w1'), p: s.p })).filter(x => x.q);
+    const kept = w1s.every(x => x.q.at === 'c-world');
+    const stepped = w1s.some(x => x.q.x != null && Math.abs(x.q.x - wpos[0]) >= 15);
+    const noBody = w1s.every(x => !(x.p && x.q.x != null && Math.abs(x.p[0] - x.q.x) < BX && Math.abs(x.p[1] - x.q.y) < BY));
+    const back = !!(ps.xEnd && ps.xEnd.x === wpos[0] && ps.xEnd.y === wpos[1] && ps.xEnd.at === 'c-world');
     const passSeen = ps.S.some(s => s.sl.some(q => q.s === 'w1' && q.pass));
     const faced = ps.cl.some(c => c.m === 'faceTo' && c.a[0] === 'w1' && c.a[1] === 'p');
     const resumed = ps.xEnd && !ps.xEnd.pass && ps.cl.filter(c => c.m === 'pose' && c.a[0] === 'w1').map(c => c.a[1]).pop() === 'dig';
     const e = errs(page);
-    record('LC7', size, yOk && ps.hot && ps.opened && stayed && passSeen && faced && resumed && !e.length,
+    record('LC7', size, yOk && ps.hot && ps.opened && kept && stepped && noBody && back && passSeen && faced && resumed && !e.length,
       `讓位：點 SOUL，你到站 ${y.p} 時客人在 ${y.x && [y.x.x, y.x.y]}（${y.x && y.x.at}，離 c-soul ${y.x ? dist([y.x.x, y.x.y], soul).toFixed(0) : '?'}）；` +
-      `借過：點 ROCK，c-world 那位沒換位置 ${stayed}、借過 ${passSeen}、轉向你 ${faced}、之後接著翻 ${resumed}` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
+      `借過：點 ROCK，c-world 那位沒換停留點 ${kept}、讓一步 ${stepped}、身體框沒疊 ${noBody}、走回原位 ${back}、借過 ${passSeen}、轉向你 ${faced}、之後接著翻 ${resumed}` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
   } catch (err) { record('LC7', size, false, 'error ' + err.message); }
   await ctx.close();
 }

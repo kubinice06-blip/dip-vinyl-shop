@@ -276,6 +276,20 @@
     };
   }
 
+  // 周姐樣板講的是哪件事（同一段兩泡不講同一件）：{year}{decade}＝發行時間、{genre}{region}{tune}{axis}、{bin}＝在架上；need 的三軸各算一件
+  const TOPIC_HOLES = { year: 'time', decade: 'time', genre: 'genre', region: 'region', tune: 'tune', axis: 'axis', bin: 'shelf' };
+  function topicsOf(line) {
+    const out = [];
+    textsOf(line).join('').replace(/\{(\w+)\}/g, (m, k) => { if (TOPIC_HOLES[k] && out.indexOf(TOPIC_HOLES[k]) < 0) out.push(TOPIC_HOLES[k]); return m; });
+    const nd = (line && line.need) || {};
+    ['o', 'h', 'c'].forEach(k => { if (nd[k] != null && out.indexOf(k) < 0) out.push(k); });
+    if (nd.onShelf && out.indexOf('shelf') < 0) out.push('shelf');
+    if (out.indexOf('axis') >= 0) ['o', 'h', 'c'].forEach(k => { if (out.indexOf(k) < 0) out.push(k); });   // {axis}＝最高的那一軸：跟任何一軸的評價都算同一件
+    return out;
+  }
+  // 這一句有沒有說出是哪張（{album} 或 {artist}）
+  function namesCard(line) { return /\{(album|artist)\}/.test(textsOf(line).join('')); }
+
   function chatPick(o) {
     o = o || {};
     const who = String(o.who == null ? '' : o.who);
@@ -357,16 +371,21 @@
       if (lore) {
         const a = take('loreIn', cands('loreIn', level));
         let b = null;
-        if (card.onShelf) { const f = candsAny('fact').filter(l => l.need && l.need.onShelf); if (f.length) b = take('fact', f, 'close'); }
-        if (!b) { const c = candsAny('loreOut'); if (c.length) b = take('loreOut', c); }
+        // 收尾可有可無：只挑最近沒講過的（cands level 0）；都講過了就讓摘句當最後一泡（同一位連續 10 段沒有同一句）
+        if (card.onShelf) { const f = cands('fact', 0).filter(l => l.need && l.need.onShelf); if (f.length) b = take('fact', f, 'close'); }
+        if (!b) { const c = cands('loreOut', 0); if (c.length) b = take('loreOut', c); }
         return finish('know', [a, b], { mode: 'lore', quoteAt: 1 });
       }
       const c = cands('fact', level, true).length ? cands('fact', level) : candsAny('fact');
       if (!c.length) return null;
-      const first = take('fact', c.filter(l => !(l.need && l.need.onShelf)).length ? c.filter(l => !(l.need && l.need.onShelf)) : c);
+      // 第一泡一定點名（帶 {album} 或 {artist}；build2 審查：「我看這張標冷冽…」整段沒說是哪張），沒有點名的樣板只當第二泡
+      const off = c.filter(l => !(l.need && l.need.onShelf)), pool1 = off.length ? off : c, named1 = pool1.filter(namesCard);
+      if (!named1.length) return null;
+      const first = take('fact', named1);
       const want2 = num(ctx.count) ? ctx.count >= 2 : hash01(n + '#' + who + '#fact2') < 0.5;
       let second = null;
-      if (want2) { const c2 = candsAny('fact'); if (c2.length) second = take('fact', c2, '2'); }
+      // 第二泡不跟第一泡講同一件事（年份／年代算同一件、同一個軸算同一件；build2 審查：12.5% 的兩泡段講兩次年份）
+      if (want2) { const t1 = topicsOf(first), c2 = cands('fact', 0).filter(l => !topicsOf(l).some(x => t1.indexOf(x) >= 0)); if (c2.length) second = take('fact', c2, '2'); }
       return finish('know', [first, second], { mode: 'fact' });
     }
 
@@ -389,8 +408,9 @@
         return finish('hello', got);
       }
     }
-    // 這一趟第一次遇到他的第一段 → again
-    if (regular && ctx.met && ctx.runTag != null && String(ctx.againAt == null ? '' : ctx.againAt) !== String(ctx.runTag)) {
+    // 這一趟第一次遇到他的第一段 → again。同一次來（進門到出門）已經打過招呼的不再講（標題認識了他、按繼續他還在店裡＝同一次來；build2 審查）
+    const greeted = isArr(ctx.visit) && (ctx.visit.indexOf('hello') >= 0 || ctx.visit.indexOf('again') >= 0);
+    if (regular && ctx.met && !greeted && ctx.runTag != null && String(ctx.againAt == null ? '' : ctx.againAt) !== String(ctx.runTag)) {
       const r = oneOf('again');
       if (r) return r;
     }
@@ -425,6 +445,6 @@
     seqTag, titleTag, tripTag, titleDayTag,
     clash, exclusive, onRoute, pickStop,
     crowdSeq,
-    needOk, usable, ringLen, noteChat, chatPick
+    needOk, usable, ringLen, noteChat, chatPick, topicsOf, namesCard
   };
 });

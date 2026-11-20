@@ -2128,7 +2128,7 @@
     { id: 'xiaoyu-mem-01', who: 'xiaoyu', cat: 'mem', text: '你上一趟停在第 {last} 位對吧？我有記住喔。', tag: '新' },
     { id: 'xiaoyu-mem-02', who: 'xiaoyu', cat: 'mem', text: '你最遠打到第 {far} 位耶，我還跟同學炫耀過。', tag: '新' },
     { id: 'xiaoyu-mem-03', who: 'xiaoyu', cat: 'mem', text: '上次跟你聊完，我回家把唱片全部重新排了一遍。', tag: '新' },
-    { id: 'xiaoyu-busy-01', who: 'xiaoyu', cat: 'busy', text: '我再翻一下，等等聊。', tag: '新' },
+    { id: 'xiaoyu-busy-01', who: 'xiaoyu', cat: 'busy', text: '我再翻一下，等等聊。', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
     { id: 'xiaoyu-busy-02', who: 'xiaoyu', cat: 'busy', text: '等我一下下，這張我還在猶豫！', tag: '新' },
     // 阿凱
     { id: 'akai-hello-01', who: 'akai', cat: 'hello', text: ['阿凱。下班順路，進來看看而已。', '……好啦，其實每天都順路。'], tag: '新' },
@@ -2150,7 +2150,7 @@
     { id: 'akai-chat-10', who: 'akai', cat: 'chat', text: '我買唱片不聽別人推薦，自己踩雷比較甘心。', tag: '新' },
     { id: 'akai-chat-11', who: 'akai', cat: 'chat', text: '我搭捷運都在想下一張要買什麼，比想工作認真。', tag: '新' },
     { id: 'akai-chat-12', who: 'akai', cat: 'chat', text: '老闆那隻貓每次都瞪我，我又沒怎樣。', tag: '新' },
-    { id: 'akai-dig-01', who: 'akai', cat: 'dig', text: ['上禮拜在這箱挖到一張，回家聽到睡著。', '是好的那種睡著。'], tag: '新' },
+    { id: 'akai-dig-01', who: 'akai', cat: 'dig', text: ['上禮拜在這箱挖到一張，回家聽到睡著。', '是好的那種睡著。'], need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
     { id: 'akai-dig-02', who: 'akai', cat: 'dig', text: '翻箱子會上癮，明明說好只翻一箱。', tag: '新' },
     { id: 'akai-dig-03', who: 'akai', cat: 'dig', text: '挖到一張想要的，整天的鳥事就算了。', tag: '新' },
     { id: 'akai-dig-04', who: 'akai', cat: 'dig', text: '我翻很快，封面閃過去一眼就知道要不要。', tag: '新' },
@@ -2174,7 +2174,7 @@
     { id: 'akai-mem-01', who: 'akai', cat: 'mem', text: '上一趟你停在第 {last} 位，這次給我撐久一點。', tag: '新' },
     { id: 'akai-mem-02', who: 'akai', cat: 'mem', text: '你最遠到第 {far} 位喔，我記性好而已，別多想。', tag: '新' },
     { id: 'akai-mem-03', who: 'akai', cat: 'mem', text: ['上次你走了之後，老闆一直在講你。', '……我沒在聽。'], tag: '新' },
-    { id: 'akai-busy-01', who: 'akai', cat: 'busy', text: '等一下，我這箱還沒翻完。', tag: '新' },
+    { id: 'akai-busy-01', who: 'akai', cat: 'busy', text: '等一下，我這箱還沒翻完。', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
     { id: 'akai-busy-02', who: 'akai', cat: 'busy', text: '現在不行，我在找東西。', tag: '新' },
     // 大頭
     { id: 'datou-hello-01', who: 'datou', cat: 'hello', text: ['欸你好你好，我大頭，週末在酒吧放歌！', '你也來挖寶齁？挖到好接的跟我說！'], tag: '新' },
@@ -2221,7 +2221,7 @@
     { id: 'datou-mem-02', who: 'datou', cat: 'mem', text: '你最遠到第 {far} 位對吧？我都記在手機裡。', tag: '新' },
     { id: 'datou-mem-03', who: 'datou', cat: 'mem', text: '上次跟你講的那個接法，我週末真的用了，有效！', tag: '新' },
     { id: 'datou-busy-01', who: 'datou', cat: 'busy', text: '等我一下，我在想下一首接什麼。', tag: '新' },
-    { id: 'datou-busy-02', who: 'datou', cat: 'busy', text: '欸等等等，我快翻到了，給我十秒！', tag: '新' },
+    { id: 'datou-busy-02', who: 'datou', cat: 'busy', text: '欸等等等，我快翻到了，給我十秒！', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
     // 阿芳
     { id: 'afang-hello-01', who: 'afang', cat: 'hello', text: ['你好，我在附近開咖啡店，叫我阿芳就好。', '我常來幫店裡找歌，以後應該常碰面。'], tag: '新' },
     { id: 'afang-again-01', who: 'afang', cat: 'again', text: '哈囉，今天也來挖寶啊？我也是。', tag: '新' },
@@ -2339,7 +2339,7 @@
     { id: 'zhoujie-mem-01', who: 'zhoujie', cat: 'mem', text: '上一趟你走到第 {last} 位，老闆跟我說了。', tag: '新' },
     { id: 'zhoujie-mem-02', who: 'zhoujie', cat: 'mem', text: '最遠到過第 {far} 位？那我得重新看你一眼。', tag: '新' },
     { id: 'zhoujie-mem-03', who: 'zhoujie', cat: 'mem', text: '上次停在第 {last} 位，這次別急，一位一位來。', tag: '新' },
-    { id: 'zhoujie-busy-01', who: 'zhoujie', cat: 'busy', text: '這箱我還沒看完，你先去翻別的。', tag: '新' },
+    { id: 'zhoujie-busy-01', who: 'zhoujie', cat: 'busy', text: '這箱我還沒看完，你先去翻別的。', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
     { id: 'zhoujie-busy-02', who: 'zhoujie', cat: 'busy', text: '等一下，這張我得看仔細。', tag: '新' },
     { id: 'zhoujie-loreIn-01', who: 'zhoujie', cat: 'loreIn', text: '{artist}啊，我記得介紹上寫：', tag: '新' },
     { id: 'zhoujie-loreIn-02', who: 'zhoujie', cat: 'loreIn', text: '說到{artist}，介紹裡有一句我很喜歡：', tag: '新' },
@@ -2409,7 +2409,7 @@
     { id: 'passer-chat-27', who: 'passer', cat: 'chat', text: '這門好重，我還以為沒開。', tag: '新' },
     { id: 'passer-chat-28', who: 'passer', cat: 'chat', text: '在這裡講話都會不自覺小聲。', tag: '新' },
     { id: 'passer-chat-29', who: 'passer', cat: 'chat', text: '我經過好幾次，今天終於進來了。', tag: '新' },
-    { id: 'passer-chat-30', who: 'passer', cat: 'chat', text: '這邊的箱子是照什麼排的啊？', tag: '新' }
+    { id: 'passer-chat-30', who: 'passer', cat: 'chat', text: '這邊的箱子是照什麼排的啊？', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' }
   ];
   C.ownerChat = [
     // 閒聊（沒有 need）

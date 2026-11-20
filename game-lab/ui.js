@@ -5258,7 +5258,11 @@
       reg.n++;
       if (who === 'owner') reg.seen.owner = res.seen && !Array.isArray(res.seen) ? res.seen : reg.seen.owner;
       else if (who === 'passer') reg.seen.passer = Array.isArray(res.seen) ? res.seen : reg.seen.passer;
-      else reg.met[who] = K.noteChat(reg.met[who], res, runTag);
+      else {
+        reg.met[who] = K.noteChat(reg.met[who], res, runTag);
+        // 同一次來已經打過招呼（標題認識了他、按繼續他還在店裡）：這一趟算遇過了，之後再來也不講開場那句
+        if ((info.cats || []).some(function (c) { return c === 'hello' || c === 'again'; })) reg.met[who].againAt = String(runTag);
+      }
       UI.chatRecent[who] = res.recent || [];
       UI.chatDirty = true;
       var v = Object.assign({}, kc ? kc.vars : {}, vars), out = [];

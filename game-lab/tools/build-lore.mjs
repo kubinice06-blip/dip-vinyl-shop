@@ -25,6 +25,10 @@
 //   每位最多 2 句：先挑第一句有年份的、再挑第一句有《》的（不同句），不足再照原文順序補；輸出照原文順序。
 //   5. 多人卡（鍵含「,」「＋」「&」「與」等）的摘句，句中要有其中一人的名字（主線裁定；見 MULTI_SEP）。
 //   讀起來怪的藝人（主線抽讀後裁定）寫進 EXCLUDE（整位不收），單句寫進 EXCLUDE_QUOTE（鍵＋句子開頭）。
+//   補充（build2 審查，2026-11-20；跟主線排掉張惠妹「陳水扁總統就職典禮」同一型，只會比規格嚴、可逆）：
+//   4''. 題材另擋 HEAVY_TOPIC（政治、選舉、抗議、毒品與勒戒、被捕判刑、毆打暴力、受傷住院、官司醜聞、戰爭……）：店裡閒聊要輕鬆（§6.3 規則 4）；
+//   6. 承接上下文另擋 DEICTIC（「這張專輯／這首歌／這個企劃／該樂團」這種指前文的；blink-182「這張專輯」指的是 Enema of the State，遊戲卡是別張）、
+//      以及句中有「樂團／團體／重奏……」卻沒寫出藝人名的（BAND：McCoy Tyner「1965 年樂團走向無調」的樂團是 Coltrane 四重奏）。
 //
 // 輸出（§6.3）：{ v:1, src:{ updatedAt, shards:{ NN: sha1 } }, n, a:{ <藝人鍵>:[句…] } }
 //   updatedAt＝data/artist-intros/manifest.json 的 updatedAt；shards＝當下每個分片檔的 sha1（只列存在的分片）；n＝a 的藝人數；
@@ -75,6 +79,16 @@ export const VERDICT = /被譽為|公認|最偉大|最重要|史上/;
 export const START_MORE = /^(隨後|隨即|當時|此時|那時|翌年|第二年|同一年|不久|稍後|其後|爾後|期間|此前|先前|直到|然後|前者|後者|對此|如此|就|便|才|更|又|再|還|仍|卻|([0-9]+|[一二三四五六七八九十兩數幾多半]+) ?(年|個月|週|天)(後|前|間|之後|以後))/;
 export const LEAD_LINK = /^[^，；：,]*(則|卻|也|同樣)/;
 export const HEAVY_MORE = /亡|殺|辭世|離世|去世|喪|遇害|遇刺|輕生|自盡|墜機|墜毀|空難|得年|享年|失蹤|成癮|戒治|酗酒|吸食|罹|病|葬|悼|追思|告別式|遺作|遺孀|遺體|遺願|中風|癱瘓|腫瘤|愛滋|截肢|昏迷|受傷|重傷|送醫|納粹|集中營|屠殺|政變|白色恐怖|恐攻|轟炸/;
+// 補充（build2 審查）：政治、毒品、被捕判刑、暴力、傷病住院、官司醜聞、戰爭題材
+export const HEAVY_TOPIC = /海洛因|大麻|古柯鹼|安非他命|迷幻藥|藥物|毒品|勒戒|戒毒|被捕|逮捕|拘捕|拘留|關押|監禁|入監|坐牢|有罪|無罪|判刑|判決|緩刑|起訴|審判|定罪|罰款|毆打|打傷|撞傷|鬥毆|暴力|暴動|住院|開刀|手術|就職|總統|首相|總理|選舉|初選|競選|站台|政黨|民主黨|共和黨|國民黨|民進黨|共產黨|工黨|保守黨|政府|政權|政治|政客|議員|抗議|示威|反戰|警方|警察|軍方|軍政府|獨裁|戒嚴|柴契爾|雷根|川普|性侵|強暴|騷擾|醜聞|訴訟|官司|破產|離婚|戰爭|越戰|內戰|砸毀|燒了|縱火/;
+// 承接上下文（build2 審查）：指前文的「這張專輯／這首歌／這個企劃／該樂團…」；句中有「樂團」類字卻沒寫出藝人名
+export const DEICTIC = /(這|該|此|(?<![\u3040-\u30ff\u4e00-\u9fff])本)(張|首|支|部|套|位|間|家|團|組|曲|專輯|唱片|企劃|計畫|計劃|作品|樂團|團體|組合|廠牌|個(企劃|計畫|計劃|團|樂團|組合|廠牌|作品|系列|節目))/;
+// 「樂團／團體／團員」光禿禿地指前文那一團（句首、逗號後、「…年」「…後」後面）；「John Coltrane 的樂團」「搖滾樂團 Happy End」這種有寫是哪團的不算
+export const BAND = /(^|[，；、：]|[0-9]+ ?年代?[初末底中]?|後|起)(樂團|團體|團員|樂隊)/;
+// 這位藝人本身是不是團（介紹前兩句講「組成／組團／成立／成軍／團員／他們…」、而且沒有「生於／出生」）：是團的「樂團」就是他們自己，照收；
+//   個人卡（前兩句有生於）的「樂團」指別團（McCoy Tyner 的「樂團」是 Coltrane 四重奏），不收
+export const BAND_SELF = /樂團|團體|合唱團|樂隊|組合|重奏|成軍|組成|組團|成立|成員|團員|團名|二人組|三人組|雙人組|他們/;
+export function isBandIntro(intro) { const h = splitSentences(String(intro || '')).slice(0, 2).join(''); return !/生於|出生|出身於/.test(h) && BAND_SELF.test(h); }
 // 四位數年份：1500–2029，前後不黏數字、千分位或小數點
 export const YEAR = /(?<![0-9０-９,.，])(1[5-9][0-9]{2}|20[0-2][0-9])(?![0-9０-９]|[,.][0-9])/;
 export const ALBUM = /《[^《》]+》/;
@@ -166,7 +180,7 @@ export function namesOf(entryName, cardNames) {
 }
 
 // 一句過不過；過＝null，不過＝理由（--check 與抽樣用）
-export function whyNot(s, names, rules = RULES, multi = null) {
+export function whyNot(s, names, rules = RULES, multi = null, opt = null) {
   const n = len(s);
   if (n < MIN_LEN) return '太短';
   if (n > MAX_LEN) return '太長';
@@ -179,7 +193,10 @@ export function whyNot(s, names, rules = RULES, multi = null) {
   if (START_MORE.test(head) || LEAD_LINK.test(s)) return '承接（補充規則）';
   if (HEAVY.test(s)) return '沉重字';
   if (HEAVY_MORE.test(s)) return '沉重字（補充規則）';
+  if (HEAVY_TOPIC.test(s)) return '沉重題材（政治、毒品、被捕、暴力、傷病）';
   if (VERDICT.test(s)) return '定論字';
+  if (DEICTIC.test(s)) return '承接上下文（這張專輯、這首歌…）';
+  if (BAND.test(s) && !(opt && opt.band) && !names.some(re => re.test(low))) return '承接上下文（個人卡的「樂團」沒寫是哪團）';
   return null;
 }
 
@@ -190,7 +207,8 @@ export function quotesOf(key, entry, cardNames, rules = RULES) {
   const names = namesOf(entry.name, cardNames);
   const multi = partNamesOf(key, entry.name, cardNames);
   const skip = EXCLUDE_QUOTE.get(key) || [];
-  const ok = splitSentences(intro, rules.ends).filter(s => !whyNot(s, names, rules, multi) && !skip.some(([head]) => s.startsWith(head)));
+  const opt = { band: isBandIntro(intro) };
+  const ok = splitSentences(intro, rules.ends).filter(s => !whyNot(s, names, rules, multi, opt) && !skip.some(([head]) => s.startsWith(head)));
   const pick = [];
   const yearS = ok.find(s => YEAR.test(s));
   if (yearS) pick.push(yearS);
@@ -313,7 +331,8 @@ export function checkLore({ file = LORE, intros = readIntros(), pool = readPool(
       const e = intros.entries.get(k);
       const names = namesOf(e && e.name, pool.has(k) ? pool.get(k).names : []);
       const multi = partNamesOf(k, e && e.name, pool.has(k) ? pool.get(k).names : []);
-      for (const q of qs) { const why = whyNot(q, names, RULES, multi); if (why) errors.push(`${k}：「${q}」不守切句規則（${why}）`); }
+      const opt = { band: isBandIntro(e && e.intro) };
+      for (const q of qs) { const why = whyNot(q, names, RULES, multi, opt); if (why) errors.push(`${k}：「${q}」不守切句規則（${why}）`); }
       if (!pool.has(k)) notes.push(`${k}：卡池已經沒有這位的卡（重算會拿掉）`);
     }
     const stale = staleOf(lore, intros);
