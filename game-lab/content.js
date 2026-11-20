@@ -1790,13 +1790,13 @@
       gainTitle: '這一趟的樂歷 +{n}', toPage: '看樂歷頁 ›', cardNext: '繼續', cardTap: '點一下看下一張',
       pleaMenu: '▶ 再一場（用掉備用說情）',                         // 備用說情那次的第一顆（C.trial.ui.retryMenu[0] 寫「這一輪只有一次」，這次不是）
       // 第 I 波 I-0（SPEC-I §7.3、§7.5；契約 wave-i/build0/CONTRACT.md）
-      partFirst: '第一趟：樂歷保底到 Lv{n}',                        // 結算明細（careerGain 的 first >0 才出；{n}＝lexp.firstLv）
+      partFirst: '第一趟：樂歷保底到 Lv {n}',                       // 結算明細（careerGain 的 first >0 才出；{n}＝lexp.firstLv）
       live: '樂歷 這一趟 至少 +{n}',                                // 攤位頂列細條（engine careerLive；只顯示、一趟結束才入帳）
-      liveUp: 'Lv{n}！這一趟結束就能點天賦',                        //   跨過一級的那一刻（金色閃、停 3 秒、點了收；不另跳老闆泡泡）
+      liveUp: '樂歷 Lv {n}！這一趟結束就能點天賦',                  //   跨過一級的那一刻（金色閃、停 3 秒、點了收；不另跳老闆泡泡）。審查：寫「樂歷」，別跟局內等級（升級！Lv{n}）打架
       recurve: '樂歷算法改了，補你 {n} 級。',                        // 開機吐司（engine careerRecurve 的 missing 有東西：補抽那幾級）
-      lvList: '升到 Lv{n}！', lvNew: '新開：{list}',                // 一次升好幾級合成的那張清單卡（標題、新開的階梯用「、」接）
+      lvList: '樂歷 Lv {n}！', lvNew: '開了：{list}',               // 一次升好幾級合成的那張清單卡（標題、新開的階梯用「、」接）。審查：跟一級一張的 lvUp／ladderOpen 同寫法
       lvPts: '天賦點 +{n}', drawGotN: '抽到 {n} 張，收進唱片櫃',     //   清單卡標題右邊（升了幾級＝多幾點）、抽到的盤那行（一張照舊 drawGot）
-      liveLv: 'Lv{n}'                                               // 攤位頂列細條的進度條前面（careerLive 的 level：這一趟結束會到的等級）
+      liveLv: 'Lv {n}'                                              // 攤位頂列細條的進度條前面（careerLive 的 level：這一趟結束會到的等級；跟「樂歷 Lv {n}」同寫法）
     }
   };
   C.careerTag = '新';

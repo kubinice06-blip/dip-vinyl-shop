@@ -3557,9 +3557,11 @@
   // 一趟裡就看得到（SPEC-I §7.3 b；只顯示、不入帳，入帳照舊在一趟結束）：o＝{best（r.farBefore）, tier（沒給＝run.tier）, xp（save.career.xp，開局時的）}
   //   n＝這一趟到現在至少拿多少（careerGain、lowMul 1＝不乘新手 ×2、沒有第一趟保底 → 只會越來越多）；level／into／need＝careerLevel(xp＋n)（細條的進度條）；
   //   from＝開局等級、up＝跨了幾級（畫面：比上次畫的等級大＝細條金色閃「Lv{n}！」）
+  //   I-0 審查：站著的這一位還沒打（攤位時 run.pos 已經是下一位）就不算那一位（open＝!posFought，＝ui careerRecord 放棄的算法）→ n＝現在放棄也拿得到的下限，
+  //   「至少」與跨級的「這一趟結束就能點天賦」放棄也成立；攤位與攤位之間照樣只增不減（打完那一位才多算）
   function careerLive(content, run, o) {
     o = o || {};
-    const xp = nonNeg(o.xp), n = careerGain(content, runSummary(run || {}), { best: o.best, tier: o.tier != null ? o.tier : (run && run.tier), lowMul: 1 }).total;
+    const xp = nonNeg(o.xp), n = careerGain(content, runSummary(run || {}), { best: o.best, tier: o.tier != null ? o.tier : (run && run.tier), lowMul: 1, open: !posFought(run) }).total;
     const L = careerLevel(content, xp + n), from = careerLevel(content, xp).level;
     return { n, from, level: L.level, into: L.into, need: L.need, up: L.level - from };
   }

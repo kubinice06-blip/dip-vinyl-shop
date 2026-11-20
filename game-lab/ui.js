@@ -579,19 +579,21 @@
   }
   // 開機入帳（SPEC-D §2.6；CONTRACT §3.1-2）：C 波 lexpBank 有非 0＝C 版頁面記的（升級前、退版期間）→ 照總額截、熟練度分派、lexpBank 金額鍵歸零（runs 計數照留）。
   //   先寫 career、再清 lexpBank、最後 persist 一次（中途當機＝下次再入）；入過帳的 runs[k] 標 banked（退版期間又記的下次只算沒標的）。吐司＋升級過場在標題畫面
+  //   第 I 波 I-0 審查：曲線補級（careerRecurveBoot）在入帳之前跑——用入帳前的 xp 算舊曲線等級（＝drawn 抽到的那級）；入帳之後才算的話，
+  //   入帳的 from 是新曲線等級、補級的 from 是入帳後的舊曲線等級，「舊曲線等級＋1…新曲線等級」那幾級兩邊都算進 from、永遠不抽
   function careerBoot() {
     if (!careerOk() || !E.careerDeposit || UI.saveReadOnly) return;
+    careerRecurveBoot();
     var d = null; try { d = E.careerDeposit(C, save); } catch (e) { console.error(e); }
-    if (!d) return careerRecurveBoot();
+    if (!d) return;
     var c = save.career;
     c.xp = d.xp; c.prof = d.prof;
     (d.runs || []).forEach(function (k) { if (save.runs[k] && typeof save.runs[k] === 'object') save.runs[k].banked = 1; });
     ['base'].concat(E.LEXP_ROUTE || ['gig', 'home', 'promo', 'packet', 'demo']).forEach(function (k) { save.lexpBank[k] = 0; });
     UI.careerDeposit = { n: d.total, from: d.from, to: d.to, first: !!d.first };
     c.banked = true;
-    UI.careerQ = careerUps(d.from, d.to);
+    UI.careerQ = (UI.careerQ || []).concat(careerUps(d.from, d.to));   // 補級的過場卡（低的那幾級）排在前面
     persist();
-    careerRecurveBoot();
   }
   // 曲線改了（第 I 波 I-0；SPEC-I §7.5）：同樣的 xp 在新曲線可能高一級（2,000 從 Lv6 變 Lv7）——跨過、還沒抽過盤的那幾級補抽（careerUps 照 drawn 跳過抽過的），
   //   標題吐司「樂歷算法改了，補你 n 級。」＋過場卡。補完 drawn 就有 → 下次開機 missing 空、不再吐司（不用旗標）。點數由 xp 算、自動多
@@ -709,7 +711,7 @@
     });
   }
   // 一趟裡就看得到樂歷（第 I 波 I-0；SPEC-I §7.3 b、CONTRACT §4）：攤位面板標題列底下一條細條「樂歷 這一趟 至少 +n」＋這一趟結束會到的等級與進度條（I-3a 起搬到市集頂列）。
-  //   n＝engine careerLive（不乘新手 ×2、沒有第一趟保底＝只會越來越多）；只顯示，入帳照舊在一趟結束（recordRun）。
+  //   n＝engine careerLive（不乘新手 ×2、沒有第一趟保底、還沒打的這一位不算＝現在放棄也拿得到；攤位之間只會越來越多）；只顯示，入帳照舊在一趟結束（recordRun）。
   //   跨過一級的那一刻（算出的等級比上次畫的大）：細條金色閃、寫「Lv n！這一趟結束就能點天賦」，停 ≥3 秒、之後點一下收回原本那行；不另跳老闆泡泡。
   //   上次畫的等級記在記憶體（UI.liveLv[runTag]；這一趟在這一頁開的＝開局等級）：重新整理後第一次只畫、不閃
   var LIVE_HOLD = 3000;
@@ -3767,6 +3769,19 @@
       '<span class="tx"><span class="nm key">' + esc(P.name) + '<small>' + esc(FU('pickTag')) + '</small>' + (P.second ? '<small class="sc">' + esc(FU('second')) + '</small>' : '') + '</span>' +
       '<span class="ds">' + facNw(P.text) + '</span></span><span class="nv">' + esc(FU('pickNote')) + '</span></button>';
   }
+  // 第一次升級那句（第 I 波 I-0 審查）：打贏第 1 位就升級之後，升級面板緊接在戰利品列後面——戰利品列第一次那句（firstLoot；375 寬改成吐司）、
+  //   「唱片櫃 +2」、錢那條這些吐司還在，或老闆／熟客還在講 → 每 0.25 秒看一次，都收掉才說（最多等 8 秒）。
+  //   面板先收掉（已經挑了）＝不說、不記 seen（下次升級再說）；說了才記 save.seen.lv1
+  function firstLvSay(s, text, open) {
+    var t0 = Date.now(), cap = 8000 / speed();
+    (function tick() {
+      if (!s || !s.isConnected || (open && !open()) || save.seen.lv1) return;
+      var busy = sayTill() > Date.now() || qsa('.lb-toast:not(.out)', app()).length > 0;
+      if (busy && Date.now() - t0 < cap) { later(tick, 250); return; }
+      save.seen.lv1 = true; persist(); stageSay('o', text, 'owner', sayMs(text));
+    })();
+  }
+  function noRunYet() { return !(save.runs || []).some(function (e) { return e && typeof e === 'object'; }); }   // 新帳號第一趟（這一趟還沒記進 runs）
   function levelPanel(r, o2) {
     var p = r.pending, L = (C.trial && C.trial.levelUp) || {};
     var now = { atk: r.atk | 0, def: r.def | 0, hp: r.maxHp | 0 };
@@ -3784,8 +3799,9 @@
       roomForSheet(s);
       // 第 D 波棒二：第一次出現本派格（Lv5）老闆說一句（每份存檔一次）
       if (!o2 && offer.some(function (o) { return o && o.pick === 'fac'; }) && !save.seen.facPick && FU('pickFirst')) { save.seen.facPick = true; persist(); stageSay('o', FU('pickFirst'), 'owner', 2600); }
-      // 第 I 波 I-0（SPEC-I §7.2）：第一次升級（每份存檔一次，save.seen.lv1）老闆說一句「打贏就會升級，挑一項，這一趟都有效。」；選秀不算
-      else if (!o2 && !save.seen.lv1 && L.first) { save.seen.lv1 = true; persist(); stageSay('o', L.first, 'owner', sayMs(L.first)); }
+      // 第 I 波 I-0（SPEC-I §7.2）：第一次升級（每份存檔一次，save.seen.lv1）老闆說一句「打贏就會升級，挑一項，這一趟都有效。」；選秀不算。
+      //   審查：只給第一趟（save.runs 還沒有任何一趟；老存檔沒有 seen.lv1 也不說）；戰利品列第一次那句、吐司還在就等它們收掉才說（firstLvSay）
+      else if (!o2 && !save.seen.lv1 && L.first && noRunYet()) firstLvSay(s, L.first, function () { return !done; });   // done：已經挑了（面板收的動畫還連著也不說）
       var done = false;
       s.addEventListener('click', function (e) {
         var b = e.target.closest && e.target.closest('[data-lv]'); if (!b || done) return;

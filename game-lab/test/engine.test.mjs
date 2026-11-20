@@ -4358,16 +4358,20 @@ section('32 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 
     const lm = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 0, lowMul: 1 }); eq([lm.low, lm.total], [1, 175], 'lowMul 1 overrides the subsidy (display)');
     eq(G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 0 }).total, 350, 'without lowMul: ×2 as before'); }
 
-  // ---- 7 一趟裡的細條（careerLive）：只會越來越多、＝careerGain(lowMul 1)、等級照 xp＋n ----
+  // ---- 7 一趟裡的細條（careerLive）：攤位之間只會越來越多、＝現在放棄拿得到的（careerGain quit、open＝!posFought）、等級照 xp＋n ----
+  //   I-0 審查：站著的這一位還沒打（攤位時 run.pos 已經是下一位）不算那一位 →「至少 +n」放棄也成立；n ≤ 下一位就輸會拿到的
   { const run = EN.newRun(CW, { seedKey: 'i0live', runNo: 1, ace: 'hall', prologue: false }), R = lcg(7), mem = {};
-    let prev = -1, mono = true, n6 = null, steps = 0;
+    let prev = -1, mono = true, n6 = null, steps = 0, stalls = 0, below = true;
     for (let g = 0; g < 3000; g++) {
       if (run.over) break;
-      const L = EN.careerLive(CW, run, { best: 0, xp: 0 });
-      if (L.n < prev) mono = false; prev = L.n; steps++;
-      const want = EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier, lowMul: 1 }).total;
-      if (!ok(L.n === want && L.level === EN.careerLevel(CW, L.n).level && L.from === 1 && L.up === L.level - 1, 'careerLive = careerGain(lowMul 1) & careerLevel(xp + n)', { L, want })) break;
-      if (run.pending && run.pending.type === 'stall' && run.pos === 6 && n6 == null) n6 = L;
+      const L = EN.careerLive(CW, run, { best: 0, xp: 0 }), atStall = !!(run.pending && run.pending.type === 'stall');
+      if (atStall) { if (L.n < prev) mono = false; prev = L.n; stalls++; }
+      steps++;
+      const quitNow = EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier, quit: true, open: !EN.posFought(run) }).total;
+      const want = EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier, lowMul: 1, open: !EN.posFought(run) }).total;
+      if (L.n > EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier }).total) below = false;
+      if (!ok(L.n === want && L.n === quitNow && L.level === EN.careerLevel(CW, L.n).level && L.from === 1 && L.up === L.level - 1, 'careerLive = abandon-now gain (quit, open = !posFought) & careerLevel(xp + n)', { L, want, quitNow })) break;
+      if (atStall && run.pos === 6 && n6 == null) n6 = { L, fought: EN.posFought(run), as5: EN.careerGain(CW, Object.assign(EN.runSummary(run), { reached: 5 }), { best: 0, tier: run.tier, lowMul: 1 }).total };
       if (EN.canBargainPick(run) && !run.duel && !run.pending) { EN.choose(run, CW, EN.bargainPolicy(run, CW)); continue; }
       const st = EN.nextStep(run);
       if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { EN.choose(run, CW, EN.runPolicy(run, CW)); continue; }
@@ -4376,10 +4380,11 @@ section('32 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 
       const f = EN.startFight(run, CW, {}); let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CW));
       EN.finishFight(run, CW);
     }
-    ok(mono && steps > 20, 'careerLive.n never goes down during a run', { steps });
-    ok(n6 && n6.n >= 90 && n6.level >= 1, 'first stall (pos 6): at least 6 positions counted', n6);
+    ok(mono && steps > 20 && stalls >= 3, 'careerLive.n never goes down from one stall to the next', { steps, stalls });
+    ok(below, 'careerLive.n <= what losing right now would pay');
+    ok(n6 && !n6.fought && n6.L.n === n6.as5 && n6.L.n >= 75 && n6.L.level >= 1, 'first stall (pos 6, not fought yet): 5 positions counted (= reached 5)', n6);
     const L2 = EN.careerLive(CW, run, { best: 0, xp: 2700 }); ok(L2.from === 7 && L2.level === EN.careerLevel(CW, 2700 + L2.n).level, 'careerLive with xp: from = level at xp');
-    const r0 = EN.newRun(CW, { seedKey: 'i0live0', runNo: 2, ace: 'hall', prologue: false }); eq(EN.careerLive(CW, r0, {}).n, EN.careerGain(CW, EN.runSummary(r0), { lowMul: 1 }).total, 'careerLive at pos 1 (not fought): same formula');
+    const r0 = EN.newRun(CW, { seedKey: 'i0live0', runNo: 2, ace: 'hall', prologue: false }); eq([EN.careerLive(CW, r0, {}).n, EN.careerGain(CW, EN.runSummary(r0), { quit: true, open: true }).total], [0, 0], 'careerLive at pos 1 (not fought): 0 = abandoning now');
     const rcp = newW('i0livecp', { from: 20 }); eq(EN.careerLive(CW, rcp, { xp: 0 }).n, 0, 'checkpoint draft: 0'); }
 
   // ---- 8 曲線改了補抽（careerRecurve；§7.5） ----

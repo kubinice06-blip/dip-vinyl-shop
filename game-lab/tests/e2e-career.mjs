@@ -40,17 +40,21 @@
 //      （第 I 波 I-0：種一趟之前的紀錄＝不是新帳號第一趟）
 //   第 I 波 I-0（scratchpad v5/wave-i SPEC-I §7.2、§7.3、§7.5、§7.7；build0/CONTRACT.md）。樂歷曲線照新表（前 7 級 100／150／250／350／500／650／800）：
 //   13 第一趟保底：新帳號（runs 空）第一趟第 1 位就輸 → 樂歷 +100（＝升到 Lv2）、runs[k].gain.first、明細最後一行「第一趟：樂歷保底到 Lv2」、「再挑戰一趟」→ Lv2 那張；
-//      13b 第一趟走很遠（一次升兩級以上）→ 一張清單卡「升到 Lv n！」＋「天賦點 +k」＋抽到的 k 張縮圖（「抽到 k 張，收進唱片櫃」）＋去點天賦
-//   14 攤位頂列樂歷細條（不快轉）：第一次畫（重新整理後的 run）只畫不閃「樂歷 這一趟 至少 +n」＋Lv1＋進度條；推進到跨一級 → 金色「Lv2！這一趟結束就能點天賦」、
+//      13b 第一趟走很遠（一次升兩級以上）→ 一張清單卡「樂歷 Lv n！」＋「天賦點 +k」＋抽到的 k 張縮圖（「抽到 k 張，收進唱片櫃」）＋去點天賦
+//   14 攤位頂列樂歷細條（不快轉）：第一次畫（重新整理後的 run）只畫不閃「樂歷 這一趟 至少 +n」＋Lv 1＋進度條（n＝現在放棄也拿得到的：站著的這一位還沒打不算；I-0 審查）；
+//      推進到跨一級 → 金色「樂歷 Lv 2！這一趟結束就能點天賦」、
 //      停 ≥3 秒（3 秒內點不收、之後點了收回原本那行）、沒有另跳老闆泡泡、career.xp 不動（只顯示）；攤位的列都在畫面裡、不捲
 //   15 升級章（不快轉、autoNext 關＝真玩家）：第 1 位打贏 →「升級！Lv2」章停在盤面上（≥3 秒、畫面還是對決）→ 點了 → 戰利品列 → 升級面板「升到 Lv2：挑一項，這一趟都有效」、
-//      沒有「聲望上限 +1（自動）」、三格 品味→底氣→聲望上限、老闆說一次「打贏就會升級…」（save.seen.lv1）；挑品味 → 聲望上限不變；第 2 位打贏（2/5 經驗）沒有章
+//      沒有「聲望上限 +1（自動）」、三格 品味→底氣→聲望上限、老闆說一次「打贏就會升級…」（save.seen.lv1）；挑品味 → 聲望上限不變；第 2 位打贏（2/5 經驗）沒有章。
+//      I-0 審查：戰利品列等到老闆第一次那句（firstLoot；375 寬是吐司）出來再過 1 秒才按「不收」→ 升級面板那句等吐司、泡泡都收掉才說（說的那一刻沒有吐司、沒有 firstLoot 泡泡）
 //   16 曲線改了補級：棒一帳號 xp 2,000（舊曲線 Lv6、drawn 2–6）→ 開機吐司「樂歷算法改了，補你 1 級。」、Lv7 補抽一張（drawn 有 7）、過場卡 Lv7；
-//      重新整理不再吐司、沒有卡；樂歷頁 Lv7、天賦點 6、階梯只有做好的格（沒有「之後開放」）
+//      重新整理不再吐司、沒有卡；樂歷頁 Lv7、天賦點 6、階梯只有做好的格（沒有「之後開放」）；
+//      16b（I-0 審查）同一次開機又入帳又補級：xp 250（舊 Lv2、新 Lv3、drawn [2]）＋lexpBank 50 → 兩個吐司、Lv3 補抽（drawn [2,3]）、xp 300；重新整理不再補
 //   17 升級面板三格固定（§7.1、§7.7）：兩個種子、Lv1→3 與 Lv6→8 各連升兩級（forceWin）→ 每次面板 品味→底氣→聲望上限＝pending.offer、標題「升到 Lv n」、
 //      升到 Lv2 那次沒有「聲望上限 +1（自動）」；挑了聲望上限之後第二次順序不變（?fac=1 第 4 格本派：e2e-fac F3／F8；選秀：e2e-checkpoint #1、e2e-fac F8）
 //   18 新帳號真的走第一趟（不種存檔、快轉）：序章那場真的打贏＝沒有章、沒有升級面板、runs 空 → 第 1 位真的打贏：章（對決畫面）→ 戰利品列 → 升級面板（Lv2、三格固定、
-//      沒有自動 +1、老闆第一次那句、seen.lv1）→ 挑品味聲望上限不變 → 第 2–5 位 → 第一個攤位頂列細條金色「Lv2！」、沒有另跳泡泡、xp 還是 0 → 第 6 位輸：gain＝規格（新手 ×2、沒有保底那筆）
+//      沒有自動 +1、老闆第一次那句、seen.lv1）→ 挑品味聲望上限不變 → 第 2–5 位 → 第一個攤位頂列細條金色「樂歷 Lv 2！」、沒有另跳泡泡、xp 還是 0 → 第 6 位輸：gain＝規格（新手 ×2、沒有保底那筆）
+//   19 老存檔（runs 有一趟、seen 沒有 lv1）第 1 位打贏升級：面板照出、老闆不說第一次那句、seen.lv1 不記（I-0 審查）
 //   CAREER_SHOTS＝截圖資料夾（dpr 2；給店主：第 1 位打完的升級章、第一趟結算升級、樂歷頁）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
@@ -242,7 +246,7 @@ async function runSize(browser, w, h) {
         lexpCards: Object.keys(S.shelf).filter(id => S.shelf[id].own && S.shelf[id].src === 'lexp').length, bak8: localStorage.getItem('dipGameLab_v1.bak8'), v: JSON.parse(localStorage.getItem('dipGameLab_v1')).v,
         storedXp: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.xp }; });
       const t1 = await toasts(page);
-      // 過場卡：一張一張點，記每張的標題、張數標、最後一張的鈕（第 I 波 I-0：一次升兩級以上合成一張清單卡「升到 Lv5！」）
+      // 過場卡：一張一張點，記每張的標題、張數標、最後一張的鈕（第 I 波 I-0：一次升兩級以上合成一張清單卡「樂歷 Lv 5！」）
       const cards = [];
       for (let i = 0; i < 6 && await page.waitForSelector('.lb-sheet.cxcard', { timeout: i ? 1500 : 4000 }).then(() => true, () => false); i++) {
         cards.push(await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'); return { hd: (s.querySelector('.cx-hd b') || {}).textContent || '', n: (s.querySelector('.cx-n') || {}).textContent || '', got: !!s.querySelector('.cx-got'),
@@ -761,6 +765,7 @@ async function runSize(browser, w, h) {
         await jsClick(page, '.lb-modal [data-x]'); await sleep(400);
         await jsClick(page, '[data-a=again]');
         const up = await page.waitForSelector('.lb-sheet.cxcard', { timeout: 4000 }).then(() => true, () => false);
+        if (up) { await sleep(400); await shot(page, size, label === '13' ? '7b-first-card' : '9-list-card'); }   // 過場卡（13b＝一次升好幾級的清單卡「樂歷 Lv n！」）
         await sleep(500);
         const k0 = await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'); if (!s) return null; const b = s.querySelector('.lb-btn[data-a=next]').getBoundingClientRect();
           return { hd: (s.querySelector('.cx-hd b') || {}).textContent, sub: (s.querySelector('.cx-hd .sub') || {}).textContent || '', got: (s.querySelector('.cx-got b') || {}).textContent || '', cv: s.querySelectorAll('.cx-got .lb-cv').length,
@@ -798,8 +803,10 @@ async function runSize(browser, w, h) {
       };
       const strip = () => C(page, () => { const s = document.querySelector('.cx-live'); if (!s) return null; const r = s.getBoundingClientRect(), run = window.__lab.run, S = window.__lab.save;
         const L = window.DipLabEngine.careerLive(window.DipLabContent, run, { best: run.farBefore | 0, tier: run.tier | 0, xp: S.career.xp });
+        // I-0 審查：細條＝現在放棄（重新推門）也拿得到的（ui careerRecord：quit、站著的這一位還沒打不算）
+        const E = window.DipLabEngine, quit = E.careerGain(window.DipLabContent, E.runSummary(run), { best: run.farBefore | 0, tier: run.tier | 0, quit: true, open: !E.posFought(run) }).total;
         const rows = [...document.querySelectorAll('.st-pick .st-row, .st-pick [data-a=leave]')].map(e => e.getBoundingClientRect().bottom), bl = document.querySelector('.lb-bagline').getBoundingClientRect();
-        return { up: s.classList.contains('up'), t: s.querySelector('.t').textContent, lv: +s.dataset.lv, L, top: Math.round(r.top), bottom: Math.round(r.bottom), w: Math.round(r.width), sw: s.scrollWidth - s.clientWidth,
+        return { up: s.classList.contains('up'), t: s.querySelector('.t').textContent, lv: +s.dataset.lv, L, quit, n: +s.dataset.n, top: Math.round(r.top), bottom: Math.round(r.bottom), w: Math.round(r.width), sw: s.scrollWidth - s.clientWidth,
           rowsIn: rows.length > 0 && Math.max(...rows) <= bl.top + 1, xp: S.career.xp }; });
       await stallAt(6, 5, 0);
       const s1 = await strip(), sc1 = await noScroll(page);
@@ -820,6 +827,7 @@ async function runSize(browser, w, h) {
       await sleep(600);
       const s5 = await strip();
       const ok = s1 && !s1.up && s1.lv === 1 && s1.L.level === 1 && s1.L.n > 0 && s1.t === fill(x.live, { n: s1.L.n }) && s1.sw <= 0 && s1.rowsIn && scrollOk(sc1) &&
+        s1.n === s1.quit && s1.L.n === s1.n && s2 && s2.n === s2.quit && s2.L.n === s2.n &&
         s2 && s2.up && s2.lv === 2 && s2.t === fill(x.liveUp, { n: 2 }) && s2.rowsIn && s3 && s3.up && s4 && !s4.up && s4.t === fill(x.live, { n: s2.L.n }) &&
         !said.some(t => /Lv|樂歷/.test(t)) && s4.xp === 0 && s5 && !s5.up && s5.lv === 2;
       record(14, size, ok && !errs(page).length, `第一次 ${J(s1)} ${J(sc1)}；跨級 ${J(s2)}；1.2 秒點 ${J(s3 && { up: s3.up, t: s3.t })}；3.3 秒點 ${J(s4 && { up: s4.up, t: s4.t })}；老闆 ${J(said)}；重新整理 ${J(s5 && { up: s5.up, lv: s5.lv })}；${errTx(page)}`);
@@ -830,13 +838,16 @@ async function runSize(browser, w, h) {
   // ---------------------------------------------------------------- 15 升級章＋第一次升級（SPEC-I §7.2；不快轉、autoNext 關）
   if (want(15)) {
     const QN = Q('');
-    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 }); await watchToasts(page);
     try {
       await openTitle(page, QN);
       await seedRun(page, { ace: 'pearl', idx: 0, autoNext: false });
       await openTitle(page, QN); await jsClick(page, '[data-a=cont]'); await nightReady(page); await sleep(500);
       const L = await C(page, () => Object.assign({}, window.DipLabContent.trial.levelUp));
-      await C(page, () => { window.__said = []; const st = window.__lab.stage; if (!st.__sayW) { const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t) }); return o.apply(this, arguments); }; st.__sayW = true; } });
+      // 每句記下說的那一刻畫面上還有哪些吐司、哪些泡泡（I-0 審查：第一次升級那句不能被戰利品列第一次那句的吐司蓋住、也不能把那句的泡泡收掉）
+      await C(page, () => { window.__said = []; const st = window.__lab.stage; if (!st.__sayW) { const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t), at: Date.now(),
+        toasts: [...document.querySelectorAll('.lb-toast:not(.out)')].map(e => e.textContent), bub: [...document.querySelectorAll('.ds-say')].map(e => e.textContent) }); return o.apply(this, arguments); }; st.__sayW = true; } });
+      const firstLoot = await C(page, () => window.DipLabContent.waveC.ui.firstLoot.split('$')[0].split('{')[0]);   // 「包包越厚，好牌越難抽到。不收也有 」
       const r0 = await C(page, () => { const r = window.__lab.run; return { level: r.level, xp: r.xp, maxHp: r.maxHp, hp: r.hp }; });
       // 打一場（這一手一定剋中、扣到 0）；揭曉停住就點他的名牌
       const win = async () => {
@@ -863,13 +874,21 @@ async function runSize(browser, w, h) {
       const loot = await page.waitForSelector('.lb-sheet.reward', { timeout: 8000 }).then(() => true, () => false);
       await page.waitForFunction(() => { const L = window.DipLabLoot && window.DipLabLoot.state(); return !L || (L.open && L.flipped.every(Boolean) && !L.busy); }, null, { timeout: 10000 }).catch(() => {});
       await sleep(400); await shot(page, size, '2-levelup-loot');
+      // 像真玩家看一下戰利品列：等老闆第一次那句（firstLoot；375 寬是吐司）出來、再過 1 秒才按「不收」→ 升級面板開的時候那句還在
+      const lootSaid = await page.waitForFunction(() => window.__lab.save.seen.firstLoot, null, { timeout: 8000 }).then(() => true, () => false);
+      await sleep(1000);
       await tapReady(page, '.lb-sheet.reward [data-a=skip]');
       const lvUp = await page.waitForSelector('.lb-sheet.level [data-lv]', { timeout: 8000 }).then(() => true, () => false);
-      await sleep(1300); await shot(page, size, '3-levelup-panel');
+      const tLv = Date.now(), seen0 = await C(page, () => !!window.__lab.save.seen.lv1);
+      const lvSaid = await page.waitForFunction(() => window.__lab.save.seen.lv1, null, { timeout: 10000, polling: 100 }).then(() => true, () => false);
+      const waited = Date.now() - tLv;
+      await sleep(1200); await shot(page, size, '3-levelup-panel');
       const p = await C(page, () => { const s = document.querySelector('.lb-sheet.level'); if (!s) return null; const b = [...s.querySelectorAll('[data-lv]')].map(x => x.getBoundingClientRect());
         return { h3: s.querySelector('.hd h3').textContent, sub: s.querySelector('.hd .sub').textContent, order: [...s.querySelectorAll('[data-lv]')].map(x => x.dataset.lv), inView: b.every(r => r.top >= 0 && r.bottom <= innerHeight && r.height >= 44),
           seen: !!window.__lab.save.seen.lv1, stored: !!JSON.parse(localStorage.getItem('dipGameLab_v1')).seen.lv1 }; });
       const said1 = await C(page, () => window.__said.filter(o => o.id === 'o').map(o => o.t));
+      const at1 = await C(page, t => window.__said.filter(o => o.t === t), L.first);
+      const loot1 = await C(page, t => window.__said.filter(o => o.t.indexOf(t) === 0).length + (window.__toasts || []).filter(x => x.indexOf(t) === 0).length, firstLoot);
       await tapReady(page, '.lb-sheet.level [data-lv="atk"]');
       await nightReady(page); await sleep(600);
       const r1 = await C(page, () => { const r = window.__lab.run; return { level: r.level, xp: r.xp, maxHp: r.maxHp, atk: r.atk }; });
@@ -880,8 +899,10 @@ async function runSize(browser, w, h) {
       const said = fill(L.first, {});
       const ok = w1.ch && w1.ch.t === fill(L.chapter, { n: 2 }) && w1.ch.scr === 'duel' && held.ch && held.scr === 'duel' && toReward && loot && lvUp &&
         p && p.h3 === fill(L.title, { n: 2 }) && p.sub.indexOf(L.sub) < 0 && J(p.order) === '["atk","def","hp"]' && p.inView && p.seen && p.stored && said1.filter(t => t === said).length === 1 &&
+        lootSaid && loot1 >= 1 && !seen0 && lvSaid && at1.length === 1 && !at1[0].toasts.length && !at1[0].bub.some(t => t.indexOf(firstLoot) === 0) &&
         r0.level === 1 && r1.level === 2 && r1.xp === 0 && r1.maxHp === r0.maxHp && r1.atk === 1 && !w2.ch && toReward2 && r2.level === 2 && r2.xp === 2;
-      record(15, size, ok && !errs(page).length, `第 1 位 章 ${J(w1.ch)}、3.2 秒 ${J(held)} → 戰利品列 ${toReward}/${loot} → 升級面板 ${lvUp} ${J(p)}；老闆 ${J(said1)}；開打前 ${J(r0)} → 挑品味 ${J(r1)}；第 2 位 章 ${J(w2.ch)} ${J(r2)}；${errTx(page)}`);
+      record(15, size, ok && !errs(page).length, `第 1 位 章 ${J(w1.ch)}、3.2 秒 ${J(held)} → 戰利品列 ${toReward}/${loot}（firstLoot ${lootSaid}×${loot1}）→ 升級面板 ${lvUp} ${J(p)}；` +
+        `第一次那句 面板開時 seen ${seen0}、等 ${waited} ms 才說、說的那一刻 ${J(at1.map(o => ({ toasts: o.toasts, bub: o.bub })))}；老闆 ${J(said1)}；開打前 ${J(r0)} → 挑品味 ${J(r1)}；第 2 位 章 ${J(w2.ch)} ${J(r2)}；${errTx(page)}`);
     } catch (e) { record(15, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -906,9 +927,25 @@ async function runSize(browser, w, h) {
       await shot(page, size, '10-career-page');
       await C(page, () => { const s = document.querySelector('.lb-page .lb-scroll'), l = document.querySelector('.lb-page .cx-ladder'); if (s && l) s.scrollTop = l.getBoundingClientRect().top - s.getBoundingClientRect().top + s.scrollTop - 60; }); await sleep(300);
       await shot(page, size, '11-career-ladder');
+      // 16b（I-0 審查）：同一次開機又入帳（lexpBank 有 C 版頁面記的 50）又補級：xp 250（舊曲線 Lv2、新曲線 Lv3、drawn [2]）→ 補級先跑（照入帳前的 xp）→ Lv3 補抽一張；
+      //   入帳 +50 → 300 還是 Lv3（不再抽）；兩個吐司都出、過場卡 Lv3；重新整理不再補
+      await C(page, () => { window.__toasts.length = 0; });
+      await seedCareer(page, { career: { xp: 250, drawn: [2] }, runs: [RUN0], best: { far: 1, checkpoints: [], bestStreak: 0 }, lexpBank: { base: 50, gig: 0, home: 0, promo: 0, packet: 0, demo: 0, runs: 1 } });
+      await openTitle(page, Q()); await sleep(1900);
+      const t3 = await toasts(page);
+      const card3 = await page.waitForSelector('.lb-sheet.cxcard', { timeout: 4000 }).then(() => true, () => false);
+      const k3 = card3 ? await C(page, () => (document.querySelector('.lb-sheet.cxcard .cx-hd b') || {}).textContent) : null;
+      if (card3) { await jsClick(page, '.lb-sheet.cxcard .lb-btn[data-a=next]'); await sleep(500); }
+      const d3 = await C(page, () => { const S = window.__lab.save; return { xp: S.career.xp, drawn: S.career.drawn.slice(), bank: S.lexpBank.base, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.drawn }; });
+      await C(page, () => { window.__toasts.length = 0; });
+      await openTitle(page, Q()); await sleep(1500);
+      const t4 = await toasts(page), card4 = !!(await page.$('.lb-sheet.cxcard'));
+      const ok16b = t3.includes(fill(x.recurve, { n: 1 })) && t3.includes(fill(x.depositMore, { n: 50 })) && card3 && k3 === fill(x.lvUp, { n: 3 }) &&
+        d3.xp === 300 && J(d3.drawn) === '[2,3]' && J(d3.stored) === '[2,3]' && d3.bank === 0 && !t4.length && !card4;
       const ok = t1.includes(fill(x.recurve, { n: 1 })) && card && k0 && k0.hd === fill(x.lvUp, { n: 7 }) && J(d1.drawn) === '[2,3,4,5,6,7]' && J(d1.stored) === J(d1.drawn) && d1.lexp <= 1 &&
-        !t2.some(t => t === fill(x.recurve, { n: 1 })) && !card2 && pg && pg.lv === fill(x.title, { n: 7 }) && pg.pts === fill(x.points, { n: 6 }) && pg.soon === 0 && pg.lad.length === 7 && !pg.lad.some(t => /之後開放/.test(t));
-      record(16, size, ok && !errs(page).length, `吐司 ${J(t1)}；卡 ${card} ${J(k0)}；${J(d1)}；重新整理 吐司 ${J(t2)} 卡 ${card2}；樂歷頁 ${J(pg)}；${errTx(page)}`);
+        !t2.some(t => t === fill(x.recurve, { n: 1 })) && !card2 && pg && pg.lv === fill(x.title, { n: 7 }) && pg.pts === fill(x.points, { n: 6 }) && pg.soon === 0 && pg.lad.length === 7 && !pg.lad.some(t => /之後開放/.test(t)) && ok16b;
+      record(16, size, ok && !errs(page).length, `吐司 ${J(t1)}；卡 ${card} ${J(k0)}；${J(d1)}；重新整理 吐司 ${J(t2)} 卡 ${card2}；樂歷頁 ${J(pg)}；` +
+        `16b 入帳＋補級 吐司 ${J(t3)} 卡 ${card3} ${J(k3)} ${J(d3)}；重新整理 吐司 ${J(t4)} 卡 ${card4}；${errTx(page)}`);
     } catch (e) { record(16, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -957,10 +994,37 @@ async function runSize(browser, w, h) {
     record(17, size, out.every(o => o.ok), out.map(o => `種子 ${o.seedKey} Lv${o.lv0}（xp ${o.xp}）面板 ${J(o.panels.map(p => p.ok ? p.dom.join('/') + '→Lv' + p.to : Object.assign({}, p, { ok: undefined })))} → ${J(o.end)}${o.error ? ' error ' + o.error : ''}；錯誤 ${o.errs}`).join('｜'));
   }
 
+  // ---------------------------------------------------------------- 19 老存檔第一次升級不說新手那句（I-0 審查；SPEC-I §7.2「第一次（第一趟）」）
+  //   I-0 以前的存檔：runs 已經有一趟、seen 沒有 lv1 → 第 1 位打贏升到 Lv2：升級面板照出、老闆不說「打贏就會升級…」、seen.lv1 不記
+  if (want(19)) {
+    const { ctx, page } = await newPage(browser, w, h);
+    try {
+      await openTitle(page, Q());
+      await seedRun(page, { ace: 'pearl', idx: 0 });
+      await C(page, R0 => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); s.runs = [R0]; localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); }, RUN0);
+      await openTitle(page, Q()); await jsClick(page, '[data-a=cont]'); await nightReady(page);
+      const L = await C(page, () => Object.assign({}, window.DipLabContent.trial.levelUp));
+      await C(page, () => { window.__said = []; const st = window.__lab.stage; if (!st.__sayW) { const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t) }); return o.apply(this, arguments); }; st.__sayW = true; } });
+      await tapReady(page, '[data-a=go]');
+      await duelReady(page, 25000);
+      await C(page, () => window.__lab.forceWin());
+      await waitScreen(page, 'reward', 15000);
+      await passLoot(page, { until: 'choice', ms: 10000 });
+      const up = await page.waitForSelector('.lb-sheet.level [data-lv]', { timeout: 12000 }).then(() => true, () => false);
+      await sleep(6000);
+      const o = await C(page, t => ({ said: window.__said.filter(x => x.t === t).length, seen: !!window.__lab.save.seen.lv1, runs: window.__lab.save.runs.length, level: window.__lab.run.pending && window.__lab.run.pending.level }), L.first);
+      if (up) await tapReady(page, '.lb-sheet.level [data-lv="atk"]');
+      await nightReady(page, 15000);
+      const ok = up && o.said === 0 && !o.seen && o.runs === 1 && o.level === 2;
+      record(19, size, ok && !errs(page).length, `升級面板 ${up}；6 秒內 ${J(o)}；${errTx(page)}`);
+    } catch (e) { record(19, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+
   // ---------------------------------------------------------------- 18 新帳號真的走第一趟（SPEC-I §7.2、§7.3 b、§7.7；不種存檔、快轉）
   //   序章（直接打）那場真的出牌打贏：沒有「升級！」章、沒有升級面板、到第 1 位時 runs 還是空的；
   //   第 1 位真的出牌打贏 →「升級！Lv2」章（對決畫面、在戰利品列之前；快轉照讀秒自己收）→ 戰利品列 → 升級面板（升到 Lv2、品味→底氣→聲望上限、沒有自動 +1 那行）、
-  //   老闆第一次那句、save.seen.lv1 → 挑品味：聲望上限、聲望不變；第 2–5 位打完（forceWin＝不出章）→ 第一個攤位頂列細條金色「Lv2！這一趟結束就能點天賦」（＝careerLive、開局 Lv1）、
+  //   老闆第一次那句、save.seen.lv1 → 挑品味：聲望上限、聲望不變；第 2–5 位打完（forceWin＝不出章）→ 第一個攤位頂列細條金色「樂歷 Lv 2！這一趟結束就能點天賦」（＝careerLive、開局 Lv1）、
   //   沒有另跳老闆泡泡、career.xp 還是 0 → 第 6 位輸到結算 → runs 一筆、gain＝規格公式（新手 ×2；≥100 沒有保底那筆）、career.xp＝total
   if (want(18)) {
     const { ctx, page } = await newPage(browser, w, h);
@@ -1031,7 +1095,9 @@ async function runSize(browser, w, h) {
       const rw = await waitScreen(page, 'reward', 15000);
       await passLoot(page, { until: 'choice', ms: 10000 });
       const lvUp = await page.waitForFunction(() => !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming'), null, { timeout: 12000 }).then(() => true, () => false);
-      await sleep(500);
+      // I-0 審查：第一次升級那句等吐司（錢那條、戰利品列那句）收掉才說 → 等它說了（快轉最多約 2 秒）
+      await page.waitForFunction(() => window.__lab.save.seen.lv1, null, { timeout: 6000, polling: 100 }).catch(() => {});
+      await sleep(300);
       const P = lvUp ? await C(page, () => { const s = document.querySelector('.lb-sheet.level'), r = window.__lab.run;
         return { h3: s.querySelector('.hd h3').textContent, sub: s.querySelector('.hd .sub').textContent, dom: [...s.querySelectorAll('[data-lv]')].map(b => b.dataset.lv), level: r.level, maxHp: r.maxHp, hp: r.hp,
           seen: !!window.__lab.save.seen.lv1, stored: !!(JSON.parse(localStorage.getItem('dipGameLab_v1')).seen || {}).lv1 }; }) : null;

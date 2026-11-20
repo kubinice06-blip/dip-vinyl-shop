@@ -1157,7 +1157,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・routeCap | 路線樂歷已到上限 | 本規格新寫 | `career.ui.routeCap` |
 | （畫面字）・gainTitle | 這一趟的樂歷 +{n} | 本規格新寫 | `career.ui.gainTitle` |
 | （畫面字）・toPage | 看樂歷頁 › | 本規格新寫 | `career.ui.toPage` |
-| （畫面字）・partFirst | 第一趟：樂歷保底到 Lv{n} | 本規格新寫 | `career.ui.partFirst` |
+| （畫面字）・partFirst | 第一趟：樂歷保底到 Lv {n} | 本規格新寫 | `career.ui.partFirst` |
 
 ## 樂歷・過場卡（結算主鈕之後、開機入帳之後；一次一張，一次升兩級以上合成一張清單卡）
 
@@ -1170,8 +1170,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・profUp | {title} 熟練 Lv{n} | 本規格新寫 | `career.ui.profUp` |
 | （畫面字）・cardNext | 繼續 | 本規格新寫 | `career.ui.cardNext` |
 | （畫面字）・cardTap | 點一下看下一張 | 本規格新寫 | `career.ui.cardTap` |
-| （畫面字）・lvList | 升到 Lv{n}！ | 本規格新寫 | `career.ui.lvList` |
-| （畫面字）・lvNew | 新開：{list} | 本規格新寫 | `career.ui.lvNew` |
+| （畫面字）・lvList | 樂歷 Lv {n}！ | 本規格新寫 | `career.ui.lvList` |
+| （畫面字）・lvNew | 開了：{list} | 本規格新寫 | `career.ui.lvNew` |
 | （畫面字）・lvPts | 天賦點 +{n} | 本規格新寫 | `career.ui.lvPts` |
 | （畫面字）・drawGotN | 抽到 {n} 張，收進唱片櫃 | 本規格新寫 | `career.ui.drawGotN` |
 
@@ -1208,8 +1208,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字）・live | 樂歷 這一趟 至少 +{n} | 本規格新寫 | `career.ui.live` |
-| （畫面字）・liveUp | Lv{n}！這一趟結束就能點天賦 | 本規格新寫 | `career.ui.liveUp` |
-| （畫面字）・liveLv | Lv{n} | 本規格新寫 | `career.ui.liveLv` |
+| （畫面字）・liveUp | 樂歷 Lv {n}！這一趟結束就能點天賦 | 本規格新寫 | `career.ui.liveUp` |
+| （畫面字）・liveLv | Lv {n} | 本規格新寫 | `career.ui.liveLv` |
 
 ## 樂歷・開機補級吐司（曲線改了；第 I 波 I-0）
 
