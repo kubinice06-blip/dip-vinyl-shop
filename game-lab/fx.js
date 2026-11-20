@@ -216,9 +216,16 @@
     S.toggles.add(h);
     return h;
   }
+  // 接回唱盤上那張（🔊 打開、點我放歌、回前景點一下）：照原本的 session、原本的抓檔等待時間（背景音樂 12 秒；第 I 波 post 審查 K），
+  //   並通知 music.onResume（ui 背景音樂接管這一次：抓不到照樣跳下一首、離開輪播畫面作廢）
   function resumeMusic() {
     const c = S.resumeCard; S.resumeCard = null;
-    if (c && !M.cur && soundOn()) music.play(c, { fadeMs: 800, session: S.resumeSess || undefined }).catch(() => {});
+    if (!c || M.cur || !soundOn()) return;
+    const why = {}, sess = S.resumeSess === 'ambient' ? 'ambient' : undefined;
+    const p = music.play(c, { fadeMs: 800, session: sess, giveUpMs: S.resumeGiveUp || undefined, why });
+    p.catch(() => {});
+    const info = { card: c, session: sess ? 'ambient' : 'playback', tok: why.tok || 0, p, why };
+    M.resumeCbs.forEach(cb => { try { cb(info); } catch (e) { console.error(e); } });
   }
   function onSound(cb) { S.soundCbs.add(cb); return () => S.soundCbs.delete(cb); }
 
@@ -374,7 +381,11 @@
   // ---------------------------------------------------------------- music（試聽）
   // cache：url → 抓下來的原始檔（ArrayBuffer，約 1 MB／首，留 lruMax 首：預設 6、背景音樂佇列長就跟著到 12）；dec：url → 解碼後的 AudioBuffer（約 10 MB／首，只留 2 首）
   //   vol：音樂音量（⏸「音樂音量 小／中／大」0.3／0.5／0.7；setVolume）；idleCbs：放完（自然放完或 maxMs 淡出）1.5 秒沒有新歌（onIdle）
-  const M = { cache: new Map(), dec: new Map(), cur: null, card: null, token: 0, cbs: new Set(), endCbs: new Set(), idleCbs: new Set(), idleT: 0, vol: MUSIC_VOL, lruMax: LRU_MAX, loading: 0 };
+  //   pend：tok → 還在抓的那幾次 play（{card, ambient, giveUpMs, kill}）；token 一換（換歌、stop、mute、cancel）被蓋過的那幾次馬上收場（回 false 'stale'），
+  //     loading() 只看最新那一次（第 I 波 post 審查 A：被取消的那次不能一直算「在抓」，輪播會整條停住）；cardAmb：唱盤上那張是不是背景音樂放的（mute 記接回哪一種）
+  const M = { cache: new Map(), dec: new Map(), cur: null, card: null, cardAmb: false, token: 0, cbs: new Set(), endCbs: new Set(), idleCbs: new Set(), resumeCbs: new Set(), idleT: 0, vol: MUSIC_VOL, lruMax: LRU_MAX, loading: 0, pend: new Map() };
+  // 換 token：之前還在抓的那幾次（不是最新的了）馬上收場（'stale'）
+  function newTok() { const t = ++M.token; M.pend.forEach((p, k) => { if (k !== t) p.kill('stale'); }); return t; }
   // e2e 替身（tests/e2e-bgm.mjs 才設 window.__dipFakeAudio；正式頁面沒有這個全域）：照真的抓檔（算次數、可設定抓不到）、不解碼、假 source（music._end()＝自然放完）
   const FAKE = () => window.__dipFakeAudio || null;
   function lru(map, key, entry, max) { map.delete(key); map.set(key, entry); while (map.size > max) { const k = map.keys().next().value; map.delete(k); } }
@@ -430,12 +441,12 @@
       opts = opts || {};
       const fadeMs = opts.fadeMs != null ? opts.fadeMs : 1500, why = opts.why && typeof opts.why === 'object' ? opts.why : {};
       const ambient = opts.session === 'ambient';
-      const tok = ++M.token; why.tok = tok;
+      const tok = newTok(); why.tok = tok;
       const F = FAKE(); if (F && Array.isArray(F.calls)) F.calls.push({ id: card ? card.id : null, t: Date.now(), fadeMs, maxMs: opts.maxMs || 0, exclusive: !!opts.exclusive, session: ambient ? 'ambient' : 'playback', sound: soundOn() });
       if (!card) { why.r = 'nosrc'; return Promise.resolve(false); }
       if (!soundOn() || !card.previewUrl || S.hidden) {
         if (!card.previewUrl) { why.r = 'nosrc'; return Promise.resolve(false); }
-        M.card = card; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; why.r = S.hidden && soundOn() ? 'hidden' : 'silent'; emitMusic(); return Promise.resolve(false);
+        M.card = card; M.cardAmb = ambient; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; S.resumeGiveUp = opts.giveUpMs || 0; why.r = S.hidden && soundOn() ? 'hidden' : 'silent'; emitMusic(); return Promise.resolve(false);
       }
       if (M.card && M.card.id === card.id && M.cur && !opts.maxMs) return Promise.resolve(true);
       // 舊 iOS 的循環靜音 <audio> 只能在手勢裡開：玩家點的那一下（play 呼叫當下）就開
@@ -444,12 +455,13 @@
       M.loading++;
       return new Promise(resolve => {
         let done = false;
-        const fin = (ok, r) => { M.loading = Math.max(0, M.loading - 1); if (!ok) why.r = r; resolve(ok); };
+        const fin = (ok, r) => { M.loading = Math.max(0, M.loading - 1); M.pend.delete(tok); if (!ok) why.r = r; resolve(ok); };
         const giveUp = setTimeout(() => { if (!done) { done = true; fin(false, tok !== M.token ? 'stale' : 'fetch'); } }, opts.giveUpMs > 0 ? opts.giveUpMs : GIVE_UP_MS);
+        M.pend.set(tok, { card, ambient, giveUpMs: opts.giveUpMs || 0, kill: r => { if (!done) { done = true; clearTimeout(giveUp); fin(false, r); } } });
         load(card.previewUrl).then(buf => {
           if (done || tok !== M.token || !soundOn()) { if (!done) { done = true; clearTimeout(giveUp); fin(false, tok !== M.token ? 'stale' : 'silent'); } return; }
           // 抓檔途中切到背景（第 I 波修正，審查 H1）：不在背景出聲、不把 suspend 掉的 context 拉回來；記下這張，回前景點一下從頭放（B13）
-          if (S.hidden) { done = true; clearTimeout(giveUp); M.card = card; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; emitMusic(); fin(false, 'hidden'); return; }
+          if (S.hidden) { done = true; clearTimeout(giveUp); M.card = card; M.cardAmb = ambient; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; S.resumeGiveUp = opts.giveUpMs || 0; emitMusic(); fin(false, 'hidden'); return; }
           done = true; clearTimeout(giveUp);
           const c = ctx(); if (!c) { fin(false, 'error'); return; }
           try {
@@ -461,20 +473,29 @@
             const g = c.createGain(); const t = c.currentTime, d = Math.max(0.02, fadeMs / 1000);
             g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(Math.max(0.0001, M.vol), t + d);
             src.connect(g); g.connect(c.destination); src.start(t);
-            const me = { ctx: c, src, g, card, maxT: 0, ambient };
+            const me = { ctx: c, src, g, card, maxT: 0, ambient, giveUpMs: opts.giveUpMs || 0 };
             // 自然放完（不是被換掉、不是被 maxMs 收掉）才通知：讓對決畫面接著放下一張，不留 20 秒的空白
             src.onended = () => { if (M.cur === me) { M.cur = null; armIdle(0); M.endCbs.forEach(cb => { try { cb(card); } catch (e) { console.error(e); } }); } };
             if (opts.maxMs) me.maxT = setTimeout(() => { if (M.cur === me) { fadeOutCur(1200); armIdle(1200); } }, Math.max(0, opts.maxMs - 1200));
-            M.cur = me; M.card = card;
+            M.cur = me; M.card = card; M.cardAmb = ambient;
             sfx('scratch');
             emitMusic(); fin(true);
           } catch (e) { fin(false, 'error'); }
         }).catch(() => { if (!done) { done = true; clearTimeout(giveUp); fin(false, tok !== M.token ? 'stale' : 'fetch'); } });
       });
     },
-    stop(opts) { M.token++; fadeOutCur((opts && opts.fadeMs != null) ? opts.fadeMs : 1500); S.resumeCard = null; if (M.card) { M.card = null; emitMusic(); } },
+    stop(opts) { newTok(); fadeOutCur((opts && opts.fadeMs != null) ? opts.fadeMs : 1500); S.resumeCard = null; if (M.card) { M.card = null; emitMusic(); } },
     // 🔇：聲音收掉，但唱盤上那張（圈標）留著；🔊 打開時從這張接著放
-    mute() { M.token++; if (M.card) { S.resumeCard = M.card; S.resumeSess = M.cur && M.cur.ambient ? 'ambient' : null; } fadeOutCur(0); },
+    //   接回哪一張（第 I 波 post 審查 C）：還在抓的那首（換歌空檔裡關掉＝打開時放它，照它的 session）＞正在響的那首＞玩家點的那首放完了（唱盤上那張照舊）；
+    //   背景音樂那首放完、下一首還沒開始抓＝不記（打開聲音時 ui 接輪播的下一首；不會把剛放完那首用 'playback' 從頭再放）
+    mute() {
+      const want = M.pend.get(M.token);
+      if (want) { S.resumeCard = want.card; S.resumeSess = want.ambient ? 'ambient' : null; S.resumeGiveUp = want.giveUpMs; }
+      else if (M.cur) { S.resumeCard = M.card; S.resumeSess = M.cur.ambient ? 'ambient' : null; S.resumeGiveUp = M.cur.giveUpMs || 0; }
+      else if (M.card && !M.cardAmb) { S.resumeCard = M.card; S.resumeSess = null; S.resumeGiveUp = 0; }
+      else if (M.card) S.resumeCard = null;
+      newTok(); fadeOutCur(0);
+    },
     // 預抓（最多 3 首；只在有聲時抓，避免靜音玩家白下載）：只抓原始檔，換歌時再解碼（約 0.1 s）
     preload(cards) {
       if (!soundOn()) return;
@@ -504,9 +525,12 @@
     // 這個網址的原始檔已經在快取（抓完了）：佇列排序、行動網路只放快取的
     cached(url) { const e = url ? M.cache.get(url) : null; return !!(e && e.ok); },
     // 有一首正在抓／解碼（還沒開始響）
-    loading() { return M.loading > 0; },
+    loading() { return M.pend.has(M.token); },
     // 取消還在抓的那一次 play（tok＝play 時 why.tok；已經被別的換掉＝不做事）：那次 play 回 false（'stale'），正在放的那首不動（第 I 波修正，審查 H2／M3）
-    cancel(tok) { if (!tok || tok !== M.token) return false; M.token++; return true; },
+    //   被取消的那次馬上收場（回 false 'stale'、不再算 loading；第 I 波 post 審查 A）
+    cancel(tok) { if (!tok || tok !== M.token) return false; const p = M.pend.get(tok); newTok(); if (p) p.kill('stale'); return true; },
+    // 接回唱盤上那張的那一次 play（🔊 打開、點我放歌、回前景點一下）：cb({card, session, tok, p, why})（ui 背景音樂接管；第 I 波 post 審查 K）
+    onResume(cb) { M.resumeCbs.add(cb); return () => M.resumeCbs.delete(cb); },
     // 這個網址在快取裡（抓完了或正在抓）＝再要一次不會多一次下載（背景音樂「一次造訪新抓上限」照下載開始算；審查 M6）
     inCache(url) { return !!(url && M.cache.get(url)); },
     // 切背景、🔇、還沒點過畫面時記下的那張（回前景點一下／聲音打開會從頭放）：{ card, session }｜null（ui ⏸ 關背景音樂時把輪播記下的那張也清掉）
@@ -521,7 +545,7 @@
   function onVisibility() {
     if (document.hidden) {
       S.hidden = true;
-      if (M.cur) { S.resumeCard = M.card; S.resumeSess = M.cur.ambient ? 'ambient' : null; M.token++; fadeOutCur(0); }
+      if (M.cur) { S.resumeCard = M.card; S.resumeSess = M.cur.ambient ? 'ambient' : null; S.resumeGiveUp = M.cur.giveUpMs || 0; newTok(); fadeOutCur(0); }
       rainStop();
       const c = S.own; if (c && c.state === 'running') { try { const p = c.suspend(); if (p && p.catch) p.catch(() => {}); } catch (_) {} }
       emitMusic(); emitSound();

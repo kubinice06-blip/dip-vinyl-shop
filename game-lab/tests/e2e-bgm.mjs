@@ -836,9 +836,10 @@ async function runSize(browser, w, h) {
     } catch (e) { record(28, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
   }
-  // #29 活店（?crowd=1）點 ♪ 一定有泡泡（審查 M7）、泡泡不擋任何熱點的點擊點（審查 L11）、聊天中點 ♪ 不閃（審查 M8）；第一首擺不下＝不吃掉「第一首」的額度
+  // #29 活店（?crowd=1）點 ♪ 一定有泡泡（審查 M7）、泡泡不擋任何熱點的點擊點（審查 L11）；第一首擺不下＝不吃掉「第一首」的額度；
+//   聊天中點 ♪（post 審查：原本只跳一下、等不到聊天結束就放棄）＝避開聊天泡泡展開、不閃（那段聊天不收它）、不蓋聊天泡泡／名牌
   if (want(29)) {
-    const { ctx, page } = await boot(browser, w, h, { crowd: true });
+    const { ctx, page } = await boot(browser, w, h, { crowd: true, dpr: 2 });
     try {
       await sleep(800);
       const first = await st(page);
@@ -854,18 +855,170 @@ async function runSize(browser, w, h) {
           return (st.shop.hotPoints() || []).every(q => { const e = document.elementFromPoint(hb.left + q.x, hb.top + q.y); return !e || (e !== p && !p.contains(e)); }); })) thru++;
         await page.clock.fastForward(6100); await sleep(400 + 300 * (i % 3));
       }
-      // 聊天中點 ♪：泡泡一下都不出（popLog 不增加）
+      // 聊天中點 ♪：避開聊天泡泡展開、1.5 秒後還開著（不閃）、聊天泡泡還在
       if ((await st(page)).pop) { await page.clock.fastForward(6100); await sleep(300); }
       const tp = await tapHot(page, h => /^cw-w/.test(h.id));
       const chat = await page.waitForSelector('.ds-say.chat', { timeout: 3000 }).then(() => true, () => false);
       await sleep(300);
-      const pl0 = (await st(page)).popLog.length;
       await tapEl(page, '.np-ic'); await sleep(700);
-      const sC = await st(page);
-      record(29, size, firstOk && ok === 8 && thru === 8 && !!tp && chat && sC.popLog.length === pl0 && !sC.pop,
+      const gC = await geoNp(page), sC = await st(page);
+      await shot(page, 'np-chat', w, h);
+      await sleep(800);
+      const gC2 = await geoNp(page), chat2 = await C(page, () => !!document.querySelector('.ds-say.chat'));
+      const clashC = gC.pop ? npClash(gC) : 'no-pop';
+      const chatOk = !!gC.pop && gC.says.length >= 1 && !/^(tag|say|out-of|panel)/.test(clashC) && gC.thru === true && !!gC2.pop && r4(gC2.pop) === r4(gC.pop) && chat2;
+      record(29, size, firstOk && ok === 8 && thru === 8 && !!tp && chat && chatOk,
         `第一首 ${first.popLog.length ? '展開過' : '擺不下＝額度留著 ' + first.B.first}；活店點 ♪ 8 次：有泡泡 ${ok} 次${miss.length ? '（沒有：' + miss.join(',') + '）' : ''}、每個熱點點擊點最上層都不是泡泡 ${thru} 次；` +
-        `聊天中（${chat}）點 ♪：泡泡出現 ${sC.popLog.length - pl0} 次`);
+        `聊天中（${chat}）點 ♪：泡泡 ${gC.pop ? gC.at + '@' + r4(gC.pop) + '（第 ' + gC.lvl + ' 層）' + (clashC ? ' 撞到 ' + clashC : ' 不蓋人／泡泡／名牌／面板') : '沒出'}、1.5 秒後 ${gC2.pop ? (r4(gC2.pop) === r4(gC.pop) ? '還在原位' : '換位 ' + r4(gC2.pop)) : '收了'}、聊天還在 ${chat2}；${sC.B.popTap ? '點 ♪ 開的' : ''}`);
     } catch (e) { record(29, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // =========================================================== 第 I 波 post 審查（合併 I-0 之後）
+  // #31 抓檔中被取消（⏸ 背景音樂 關→開、回標題再繼續）之後輪播接得回來（post 審查 A：fx cancel 後 loading() 一直是 true，bgmResume 到點不再排＝整條停到下一次換畫面）
+  if (want(31)) {
+    const { ctx, page } = await boot(browser, w, h, {});
+    try {
+      await waitCalls(page, 1, 4000); await sleep(300);
+      const [nw, nw2] = await spareIds(page, 2);
+      const n0 = await nCalls(page);
+      await C(page, id => { window.__lab.run.bag.push(id); window.__delay = 9000; window.DipLabFx.music._end(); }, nw);
+      await waitCalls(page, n0 + 1, 2000); await sleep(200);
+      const s0 = await st(page), fl0 = await C(page, () => window.DipLabFx.music.loading());
+      await jsClick(page, '#top [data-a=pause]'); await page.waitForSelector('.lb-modal [data-a=bgm]', { timeout: 3000 });
+      await jsClick(page, '.lb-modal [data-a=bgm]'); await sleep(200);
+      const fl1 = await C(page, () => window.DipLabFx.music.loading());
+      await jsClick(page, '.lb-modal [data-a=bgm]'); await sleep(200);
+      await jsClick(page, '.lb-modal [data-a=resume]'); await sleep(300);
+      const s1 = await st(page), c1 = s1.calls[n0 + 1];
+      await page.clock.fastForward(9500); await sleep(500);
+      const s2 = await st(page);
+      // 回標題（抓檔中）→ 繼續
+      const n2 = s2.calls.length;
+      await C(page, id => { window.__lab.run.bag.push(id); window.__delay = 9000; window.DipLabFx.music._end(); }, nw2);
+      await waitCalls(page, n2 + 1, 2000); await sleep(200);
+      await jsClick(page, '#top [data-a=pause]'); await page.waitForSelector('.lb-modal [data-a=title]', { timeout: 3000 });
+      await jsClick(page, '.lb-modal [data-a=title]'); await waitScreen(page, 'title'); await sleep(300);
+      await jsClick(page, '[data-a=cont]'); await waitScreen(page, 'night'); await sleep(800);
+      const s3 = await st(page), c3 = s3.calls[n2 + 1];
+      await page.clock.fastForward(9500); await sleep(500);
+      const s4 = await st(page);
+      record(31, size, s0.B.loading && fl0 && !fl1 && !!c1 && c1.id === nw && c1.s === 'ambient' && s2.playing && s2.cur === nw && s2.B.mine && !!c3 && c3.id === nw2 && s4.playing && s4.cur === nw2,
+        `抓 ${nw}（9 秒）中 ⏸ 背景音樂 關 → fx loading ${fl0}→${fl1}；再開 → 重抓 ${c1 ? c1.id + '／' + c1.s : '沒有'}、9.5 秒後在響 ${s2.playing}（${s2.cur}）；` +
+        `抓 ${nw2} 中回標題再繼續 → ${c3 ? c3.id : '沒有新 play'}、9.5 秒後在響 ${s4.playing}（${s4.cur}）`);
+    } catch (e) { record(31, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // #32 這次造訪還沒點過畫面、慢網路（每首 4 秒）點「點我放歌」：照背景音樂的 12 秒等、輪播接管（post 審查 K：fx 接回那首用 2.5 秒就放棄、之後沒人接）；抓不到＝跳下一首
+  if (want(32)) {
+    const { ctx, page } = await boot(browser, w, h, { gesture: false });
+    try {
+      await sleep(1500);
+      const s0 = await st(page), id0 = s0.cur;
+      await C(page, () => { window.__delay = 4000; });
+      const t = s0.ic && /\btap\b/.test(s0.ic.cls) ? await tapEl(page, '.np-ic') : null;
+      await sleep(400);
+      const s1 = await st(page), c1 = s1.calls[s0.calls.length];
+      await page.clock.fastForward(3000); await sleep(300);
+      const s2 = await st(page);
+      await page.clock.fastForward(1500); await sleep(500);
+      const s3 = await st(page);
+      // 抓不到的那首（輪播接管＝跳下一首）：下一首設成抓不到 → 放完
+      const n3 = s3.calls.length;
+      await C(page, () => { window.__delay = 0; window.__failAll = true; window.DipLabFx.music._end(); });
+      await waitCalls(page, n3 + 3, 4000); await sleep(400);
+      const s4 = await st(page);
+      await C(page, () => { window.__failAll = false; });
+      record(32, size, !!t && t.top && !!c1 && c1.id === id0 && c1.s === 'ambient' && s1.B.loading && s1.B.cur === id0 && !s2.playing && s2.B.loading && s3.playing && s3.cur === id0 && s3.B.mine && s3.sess === 'ambient' && s4.B.retry,
+        `點「點我放歌」→ ${c1 ? c1.id + '／' + c1.s : '沒有 play'}、輪播接管 ${s1.B.loading && s1.B.cur === id0}；3 秒還在抓 ${s2.B.loading}（沒放棄）；4.5 秒在響 ${s3.playing}（${s3.cur}、${s3.sess}）；` +
+        `之後連三首抓不到 → 等 60 秒 ${s4.B.retry}`);
+    } catch (e) { record(32, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // #33 換歌空檔（上一首放完、下一首在抓）⏸ 聲音 關→開（post 審查 C）：接回在抓的那首、照 'ambient'（不是把放完那首用 'playback' 從頭再放）；⏸ 背景音樂 關停得掉
+  if (want(33)) {
+    const { ctx, page } = await boot(browser, w, h, {});
+    try {
+      await waitCalls(page, 1, 4000); await sleep(300);
+      const s0 = await st(page), old = s0.cur;
+      const [nw] = await spareIds(page, 1);
+      const n0 = await nCalls(page);
+      await C(page, id => { window.__lab.run.bag.push(id); window.__delay = 3000; window.DipLabFx.music._end(); }, nw);
+      await waitCalls(page, n0 + 1, 2000); await sleep(200);
+      await jsClick(page, '#top [data-a=pause]'); await page.waitForSelector('.lb-modal [data-a=snd]', { timeout: 3000 });
+      await jsClick(page, '.lb-modal [data-a=snd]'); await sleep(200);
+      await jsClick(page, '.lb-modal [data-a=snd]'); await sleep(300);
+      await jsClick(page, '.lb-modal [data-a=resume]');
+      const s1 = await st(page), c1 = s1.calls.slice(n0 + 1);
+      await page.clock.fastForward(3500); await sleep(500);
+      const s2 = await st(page);
+      await jsClick(page, '#top [data-a=pause]'); await page.waitForSelector('.lb-modal [data-a=bgm]', { timeout: 3000 });
+      await jsClick(page, '.lb-modal [data-a=bgm]'); await jsClick(page, '.lb-modal [data-a=resume]'); await sleep(1500);
+      const s3 = await st(page);
+      record(33, size, c1.length === 1 && c1[0].id === nw && c1[0].s === 'ambient' && !c1.some(c => c.id === old) && s2.playing && s2.cur === nw && s2.sess === 'ambient' && s2.B.mine && s2.B.cur === nw && !s3.playing,
+        `${old} 放完、${nw} 在抓時 聲音 關→開：play ${c1.map(c => c.id + '／' + c.s).join('、') || '沒有'}；抓完在響 ${s2.playing}（${s2.cur}、audioSession ${s2.sess}、輪播認得 ${s2.B.mine}）；⏸ 背景音樂 關 → 停 ${!s3.playing}`);
+    } catch (e) { record(33, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // #34 展開中被吐司疊到＝淡掉、吐司走了再出來（post 審查：吐司字疊在泡泡字上）；活店熟客走進展開中的泡泡＝不收（post 審查：1.5～3.6 秒就被擠掉）；
+  //     熟客聊天把自動展開的擠掉（還沒停滿）＝額度退回（2 分鐘不用再等）；第二行放不下＝慢慢捲到尾巴（post 審查：專輯名被截掉）
+  if (want(34)) {
+    const { ctx, page } = await boot(browser, w, h, { crowd: true, dpr: 2 });
+    try {
+      await C(page, () => window.__lab.crowd.freezeAt([]));
+      await sleep(800); await page.clock.fastForward(6100); await sleep(300);
+      // 換一首長名字的（插到最前面）、等 2 分鐘再換＝自動展開
+      const long = await C(page, () => { const C = window.DipLabContent.cards, r = window.__lab.run, aces = Object.values(window.DipLabContent.aces);
+        return Object.keys(C).filter(id => C[id].previewUrl && !C[id].pool && !C[id].tier && r.bag.indexOf(id) < 0 && aces.indexOf(id) < 0).sort((a, b) => (C[b].artist + C[b].album).length - (C[a].artist + C[a].album).length)[0]; });
+      await C(page, id => window.__lab.run.bag.push(id), long);
+      await page.clock.fastForward(120500);
+      const idL = await next(page); await sleep(300);
+      const g0 = await geoNp(page), s0 = await st(page);
+      // 熟客站上去（沒人時那個位置現在蓋到人）：還開著、沒換位置
+      const SETS = w >= 390 ? ['c-elec', 'c-hiphop', 'c-pay'] : ['c-elec'];
+      await C(page, s => window.__lab.crowd.freezeAt(s), SETS); await sleep(900);
+      const g1 = await geoNp(page);
+      const overPpl = !!g1.pop && g1.people.some(b => hit(g1.pop, b));
+      await shot(page, 'np-crowd-keep', w, h);
+      // 吐司疊上去：淡掉、計時停住（假時鐘再走 4 秒還開著）→ 吐司走了：出來、之後照樣收
+      await C(page, () => { const p = document.querySelector('.np-pop.on').getBoundingClientRect(), t = document.createElement('div'); t.className = 'lb-toast e2e-toast'; t.textContent = '唱片櫃 +2';
+        const ab = document.getElementById('app').getBoundingClientRect(); t.style.cssText = `left:${p.left - ab.left}px;top:${p.top - ab.top}px;transform:none;`; document.getElementById('app').appendChild(t); });
+      await sleep(700);
+      await shot(page, 'np-toast-duck', w, h);
+      const pk = () => C(page, () => { const p = document.querySelector('.np-pop'); return { on: p.classList.contains('on'), duck: p.classList.contains('duck'), op: +getComputedStyle(p).opacity }; });
+      const d1 = await pk();
+      await page.clock.fastForward(4000); await sleep(200);
+      const d2 = await pk();
+      await C(page, () => document.querySelector('.e2e-toast').remove()); await sleep(700);
+      const d3 = await pk();
+      await page.clock.fastForward(6500); await sleep(400);
+      const d4 = (await pk()).on;
+      // 第二行捲動（點 ♪ 再開）：1.1 秒後開始（假時鐘）、CSS 動畫走真時間
+      await C(page, () => window.__lab.crowd.freezeAt([])); await sleep(500);
+      await tapEl(page, '.np-ic'); await sleep(400);
+      const sT = await st(page);
+      await page.clock.fastForward(1200); await sleep(3600);
+      const mq = await C(page, () => { const b = document.querySelector('.np-pop.on b'); if (!b) return null; const cs = getComputedStyle(b), t = b.firstChild, rg = document.createRange();
+        rg.setStart(t, Math.max(0, t.length - 1)); rg.setEnd(t, t.length); const lr = rg.getBoundingClientRect(), br = b.getBoundingClientRect();
+        return { ov: b.scrollWidth - b.clientWidth, ind: parseFloat(cs.textIndent), tailIn: lr.right <= br.right + 0.5 && lr.left >= br.left - 0.5, nowrap: cs.whiteSpace === 'nowrap', ell: cs.textOverflow === 'ellipsis' }; });
+      await shot(page, 'np-marquee-end', w, h);
+      // 熟客聊天擠掉自動展開的（還沒停滿）：額度退回
+      await page.clock.fastForward(6100); await sleep(300);
+      await page.clock.fastForward(120500);
+      await next(page); await sleep(300);
+      const s5 = await st(page), at5 = s5.B.popAt, prev5 = sT.B.popAt;
+      await C(page, () => window.__lab.crowd.freezeAt(['c-listen'])); await sleep(900);
+      const tp = await tapHot(page, h => /^cw-w/.test(h.id));
+      const chat = await page.waitForSelector('.ds-say.chat', { timeout: 3000 }).then(() => true, () => false);
+      await sleep(500);
+      const s6 = await st(page);
+      record(34, size, !!g0.pop && !!s0.pop && s0.pop.cid === idL && !!g1.pop && r4(g1.pop) === r4(g0.pop) && d1.on && d1.duck && d1.op < 0.05 && d2.on && d2.duck && d3.on && !d3.duck && d3.op > 0.95 && !d4 &&
+          !!sT.pop && !!mq && mq.ov > 1 && mq.ind <= -mq.ov && mq.tailIn && mq.nowrap && mq.ell &&
+          !!s5.pop && chat && !!tp && !s6.pop && s6.B.popAt === prev5 && s6.B.popAt !== at5,
+        `長名字 ${idL} 自動展開；熟客 ${g1.people.length} 位站上去（蓋到人 ${overPpl}）：${g1.pop ? (r4(g1.pop) === r4(g0.pop) ? '還在原位' : '換到 ' + r4(g1.pop)) : '收了'}；` +
+        `吐司疊上去：淡掉 ${d1.duck}（${d1.op}）、4 秒後還開著 ${d2.on}；吐司走了：出來 ${!d3.duck}（${d3.op}）、之後收 ${!d4}；` +
+        `點 ♪ 再開：第二行超出 ${mq && mq.ov} px → 捲到 ${mq && mq.ind}（最後一個字在框裡 ${mq && mq.tailIn}、一行截斷樣式照舊 ${mq && mq.nowrap && mq.ell}）；` +
+        `聊天（${chat}）擠掉 2 分鐘後那次：收 ${!s6.pop}、額度退回 ${s6.B.popAt === prev5}`);
+    } catch (e) { record(34, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
   }
   // #30 鏡頭移動中 ♪ 跟著收音機、泡泡等鏡頭停了才展開（審查 L13）；「點我放歌」膠囊整個在鏡頭裡（審查 L10）；⏸ 選單 Lv1、Lv5 都不用捲（審查 L12）

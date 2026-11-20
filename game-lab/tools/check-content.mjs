@@ -1186,6 +1186,8 @@ export function bgmProblems(C) {
   num('popMs', 6000, 10000); num('popGap', 120000, 600000); num('tries', 1, 3); num('retryMs', 30000, 300000); num('idleMs', 300000, 1800000);
   num('fetchMax', 1, 30); num('resumeMs', 500, 3000); num('fadeIn', 0, 3000);
   num('giveUpMs', 2500, 30000); num('popWait', 2000, 15000); num('popTapWait', 2000, 15000);   // 第 I 波修正：輪播抓檔等多久、泡泡等鏡頭停／聊天完多久
+  num('mqDelay', 300, 2500); num('mqPxS', 20, 120); num('mqMaxS', 1, 4);                         // 第 I 波 post：第二行捲動（開始＋最久捲完要在 popMs 裡，停在尾巴給人看）
+  ok(B.mqDelay + B.mqMaxS * 1000 <= B.popMs - 1000, 'bgm.mqDelay＋mqMaxS 要比 popMs 少 1 秒以上（捲完要停在尾巴給人看）');
   const V = B.vols;
   ok(Array.isArray(V) && V.length === 3 && V.every(v => typeof v === 'number' && v > 0 && v <= 1) && V[0] < V[1] && V[1] < V[2] && V[1] === 0.5, 'bgm.vols 要三段遞增、中＝0.5（fx MUSIC_VOL）');
   const U = B.ui || {};
