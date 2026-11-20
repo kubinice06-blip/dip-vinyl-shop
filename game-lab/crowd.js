@@ -569,6 +569,16 @@
     if (S.mode === 'calm') return calmMove(sl);
     var cur = sl.at && stopById(sl.at);
     if (cur && cur.kind === 'pay') { if (doorLocked() || !leave(sl)) { if (waitRoute(sl, exitLegs(sl)) && !doorLocked()) leave(sl, null, true); } return; }
+    // 剛回到來客畫面、門事件還沒出現（guarantee 還沒做到）：停留到了、10 秒內走得到門的人就出門，不換箱
+    //   （換箱要穿過後走道，會把推門進來、出門的路都擋住；build2 驗：一位換箱、一位在櫃檯前等路，第一次門事件拖到 15 秒）
+    var G = S.guarantee;
+    if (G && !G.done && S.mode === 'live' && count() >= 2 && !sl.frozen) {
+      var gp = permit(sl, exitLegs(sl)), gb = guarBudget();
+      if (gp && etaMs(gp.pts, num(cf('speed'), 30)) <= gb) {
+        if (doorLocked()) { sl.stayLeft = 500; return; }     // 門一開就走
+        if (leave(sl, null, false)) { G.done = true; return; }
+      }
+    }
     if (sl.plan > 0) {
       // 換一箱：這次來翻過的不再回頭翻（build2 審查：右排兩格來回翻像程式在繞）；路上有人擋著的不挑
       var nx = pick(sl, { u: h01(sl.seed + '#next#' + sl.visits), noPay: true, notBeen: true });
@@ -948,21 +958,31 @@
     if (count() >= maxN()) { S.waitRoom = true; return; }
     if (!enter()) S.nextEntry = S.t + 2000;                    // 沒有空格、外觀還在暖：2 秒後再試
   }
+  // 離 10 秒期限還有多少（遊戲 ms）；留 300 ms＋一個 tick（遊戲時鐘一 tick 跳 250 ms×倍速，?fast=1 一跳 1 秒）
+  function guarBudget() { return S.screenAt + GUAR_DEADLINE - S.t - 300 - TICK * speed(); }
   function guarantee(G) {
-    var budget = S.screenAt + GUAR_DEADLINE - S.t - 300, spd = num(cf('speed'), 30), t = st();
-    var cands = slotOn().filter(function (sl) { return sl.phase === 'stay' && !sl.frozen && !sl.hiddenDuel && !chatting(sl); }).map(function (sl) {
-      var r = t.route(sl.id, exitLegs(sl)); return { sl: sl, eta: etaMs(r, spd), done: sl.stayTot > 0 ? 1 - sl.stayLeft / sl.stayTot : 0 };
+    var budget = guarBudget(), spd = num(cf('speed'), 30);
+    // 走到門要多久照「現在走得通的那條路」算（避人繞路會比靜態路線長）；走不通的（窄走道被人擋著、會跟走路的人對穿）不算候選
+    var cands = slotOn().filter(function (sl) { return sl.phase === 'stay' && !sl.frozen && !sl.hiddenDuel && !chatting(sl) && !sl.side; }).map(function (sl) {
+      var plan = permit(sl, exitLegs(sl));
+      return { sl: sl, plan: plan, eta: plan ? etaMs(plan.pts, spd) : Infinity, done: sl.stayTot > 0 ? 1 - sl.stayLeft / sl.stayTot : 0 };
     });
     var early = num((cf('doorEvent') || DEF.doorEvent).earlyLeave, 0.6);
+    var byEta = function (a, b) { return a.eta - b.eta; };
     // 主線裁定（可逆）：店裡只剩一位時不叫他提前走（不然門事件一做完店就空了 20 秒）；先讓人進來
-    var ok = count() >= 2 ? cands.filter(function (c) { return c.done >= early && c.eta <= budget; }).sort(function (a, b) { return a.eta - b.eta; }) : [];
-    for (var i = 0; i < ok.length; i++) if (leave(ok[i].sl)) { G.done = true; return; }     // 出門的路被人擋著就換下一位
+    var ok = count() >= 2 ? cands.filter(function (c) { return c.plan && c.done >= early && c.eta <= budget; }).sort(byEta) : [];
+    for (var i = 0; i < ok.length; i++) if (leave(ok[i].sl)) { G.done = true; return; }
     if (count() < maxN() && enter()) { G.done = true; return; }
     if (count() >= maxN() && cands.length) {
-      cands.sort(function (a, b) { return (a.eta <= budget) === (b.eta <= budget) ? a.sl.stayLeft - b.sl.stayLeft : (a.eta <= budget ? -1 : 1); });
-      for (var j = 0; j < cands.length; j++) if (leave(cands[j].sl)) { G.done = true; return; }
+      // 滿了：10 秒內走得到門的，停留剩最短的先走；都來不及就再等半秒（路可能等一下就通了）；最後 2 秒還沒有才讓最快到門的走
+      var fit = cands.filter(function (c) { return c.plan && c.eta <= budget; }).sort(function (a, b) { return a.sl.stayLeft - b.sl.stayLeft; });
+      for (var j = 0; j < fit.length; j++) if (leave(fit[j].sl)) { G.done = true; return; }
+      if (S.t - S.screenAt > GUAR_DEADLINE - 2000) {
+        var any = cands.filter(function (c) { return c.plan; }).sort(byEta);
+        for (var k = 0; k < any.length; k++) if (leave(any[k].sl)) { G.done = true; return; }
+      }
     }
-    G.due = S.t + 1000;                                        // 什麼都做不了（外觀還在暖、沒空格）：一秒後再試
+    G.due = S.t + 500;                                         // 什麼都做不了（外觀還在暖、沒空格、路被擋著）：半秒後再試
   }
   function tick() {
     if (S.mode === 'off' || !enabled()) return;
