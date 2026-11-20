@@ -278,6 +278,12 @@
 .tune-odo{position:absolute;top:9.097%;height:81.817%;width:16.128%;overflow:hidden}
 .tune-odo:nth-child(1){left:5.483%}.tune-odo:nth-child(2){left:23.226%}.tune-odo:nth-child(3){left:41.29%;width:15.81%}.tune-odo:nth-child(4){left:59.031%}.tune-odo:nth-child(5){left:76.774%}
 .tune-odo::after{content:"";position:absolute;inset:0;background:url(${BASE}tune/drum-shade-99.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+/* 彩蛋拉霸（2026-11-20 店主）：轉到台北順起來，三組顯示器各蓋一條拉霸字條快轉，依序停在「回家 ▶ 投票／11/28／▶ 戒慎恐懼 ◀」；明暗罩（::after）照樣蓋在上面 */
+.slotting>.strip{visibility:hidden}
+.tune-slot{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.tune-slot .ss{position:absolute;left:0;right:0;top:50%;margin-top:calc(var(--rh) / -2)}
+.tune-console .tune-slot .ss>span{display:block;height:var(--rh);line-height:var(--rh);text-align:center;white-space:nowrap;font-family:var(--pix);font-size:inherit;color:inherit;letter-spacing:inherit;padding:0 0 0 var(--pl,0)}
+.tune-console .tune-slot .ss>span{opacity:.7}.tune-console .tune-slot .ss>span:nth-last-child(2){opacity:1}
 .tune-odo .strip{will-change:transform}
 .tune-odo span{display:block;height:5.2cqw;line-height:5.2cqw;text-align:center;font-family:var(--pix);font-size:4.4cqw;color:#e9e2c8}
 .tune-lcd.zero span{color:#ff7a6b}
@@ -792,8 +798,42 @@ html.tune-inapp-lock body{padding-top:120px}
     el.sugg.addEventListener('click', e => { const b = e.target.closest('.tune-sg'); if (b) chooseSugg(+b.dataset.i); });
     el.searchGo.addEventListener('click', () => { const q = el.search.value.trim(); if (!q || q.includes(' — ')) { el.search.value = ''; el.search.focus(); return; } sugg = findCards(q); suggAt = sugg.length ? 0 : -1; if (sugg.length) chooseSugg(0); else { el.search.focus(); renderSugg(true); } });
   }
+  // ── 彩蛋拉霸（2026-11-20 店主：「轉到台北順起來的時候，下面的顯示器快速旋轉，像拉霸台一樣，然後停下來顯示：11/28 回家投票 戒慎恐懼」；排法店主選 D）──
+  // 每顆滾筒（頻率四顆、水表五顆、篩選三顆）蓋一條字條：前面一串隨機字、最後一格是目標字，由左而右依序減速停住、每停一顆喀一聲。
+  // 原本的字條只是藏起來（照常更新），轉離彩蛋就把拉霸條拿掉、露出原本的顯示。
+  let slotOn = false, slotT = [];
+  function slotStart() {
+    if (slotOn || !el.console) return; slotOn = true;
+    const OR = EGG.color, CR = '#fbf7f0', AXC = ['靜', '躁', '輕', '重', '冷', '暖'], CELLS = ORDER.map(k => NAMES[k]), DIG = '0123456789'.split('');
+    const reels = [];
+    [el.dx, el.dy, el.dz, el.dcell].forEach((d, i) => reels.push({ d, t: ['回', '家', '▶', '投票'][i], pool: i === 3 ? CELLS : AXC, rh: '6.259cqw',
+      st: `font-size:${i === 2 ? 3 : 4.2}cqw;color:${OR};${i === 3 ? 'letter-spacing:.1em;--pl:.1em' : ''}`, stop: 700 + i * 260 }));
+    el.lcd.querySelectorAll('.tune-odo').forEach((d, i) => reels.push({ d, t: '11/28'[i], pool: DIG, rh: '5.2cqw', st: `font-size:4.4cqw;color:${OR}`, stop: 1800 + i * 150 }));
+    el.console.querySelectorAll('.tune-flt .fdrum').forEach((d, i) => { const k = d.parentElement.dataset.k;
+      reels.push({ d, t: ['▶', '戒慎恐懼', '◀'][i], pool: FILTER_OPTS[k].map(o => o[1]), rh: '4.8cqw', st: `font-size:${i === 1 ? 3.27 : 2.6}cqw;color:${CR}`, stop: 2700 + i * 300 }); });
+    for (const r of reels) {
+      const n = Math.round(r.stop / 45) + 6, items = [];
+      for (let k = 0; k < n; k++) items.push(r.pool[Math.floor(Math.random() * r.pool.length)]);
+      items.push(r.t, r.pool[Math.floor(Math.random() * r.pool.length)]);   // 目標字下面再墊一格，停住時上下都看得到鄰格（跟平常的滾筒一樣）
+      const box = document.createElement('div'); box.className = 'tune-slot'; box.style.cssText = `--rh:${r.rh};${r.st}`;
+      box.innerHTML = `<div class="ss">${items.map(x => `<span>${esc(x).replace(/★/g, STAR)}</span>`).join('')}</div>`;
+      r.d.appendChild(box); r.d.classList.add('slotting');
+      const ss = box.firstElementChild; ss.style.transform = 'translateY(0)'; ss.getBoundingClientRect();
+      ss.style.transition = `transform ${r.stop}ms cubic-bezier(.3,.55,.35,1.05)`; ss.style.transform = `translateY(calc(var(--rh) * ${-n}))`;
+      slotT.push(setTimeout(() => sfxClick(), r.stop));
+    }
+    const end = Math.max(...reels.map(r => r.stop)); let t0 = performance.now();
+    slotT.push(setTimeout(() => el.console.querySelectorAll('.tune-fled').forEach(l => l.classList.add('on')), end + 60));   // 全部停住：三顆篩選燈一起亮
+    const tick = () => { if (!slotOn || performance.now() - t0 > end - 120) return; sfxTick(); slotT.push(setTimeout(tick, 75)); }; tick();
+  }
+  function slotStop() {
+    if (!slotOn) return; slotOn = false; slotT.forEach(clearTimeout); slotT = [];
+    el.console.querySelectorAll('.tune-slot').forEach(n => n.remove()); el.console.querySelectorAll('.slotting').forEach(n => n.classList.remove('slotting'));
+    syncFilterUI?.(false);   // 篩選燈回到實際狀態
+  }
   function scan(c) {
     if (c === previewCard) return; previewCard = c; light(c); armPreview(); hideHolo();
+    if (c.egg) slotStart(); else slotStop();
     const card = c.card; const cover = card.coverUrl || '';
     el.now.hidden = false;
     el.now.innerHTML = `${cover ? `<img src="${esc(cover)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph">♪</div>`}<div class="t"><div class="a">${esc(card.artist)}</div><div class="b">${esc(card.album)}</div><span class="c" style="--cc:${CELL_COLOR[c.cell]}"><i></i>${NAMES[c.cell]}<span class="np" id="tuneNp"></span></span></div><i class="dot"></i>`;
@@ -1765,7 +1805,7 @@ html.tune-inapp-lock body{padding-top:120px}
     else { setAudioUI(); el.draw.disabled = !previewCard; hideHolo(); resumeAfterResult();   // 從結果頁回來：全像板重新開機（放大時藏起來了）；同一張不重播
       if (pendFilt) { const o = pendFilt; pendFilt = null; filterChanged(o); } }   // 不在畫面時唱片櫃變了（例如在唱片櫃頁刪了這張）；搜尋找來的那張照 stay 留著
   }
-  function stop() { clearTimeout(radioT); backFrom = null; state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
+  function stop() { clearTimeout(radioT); backFrom = null; slotStop(); state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
   global.DipTune = { configure, start, stop, pickAgain, keepsPlaying, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, setMine, refreshMine, mineCount,
     get filter() { return { ...FILT, mine: mineOn() ? 1 : 0, matched: passN }; }, get mine() { return { on: mineOn(), want: mineWant, busy: mineBusy, size: MINE ? MINE.size : 0, onMap: mineInMap() }; },
