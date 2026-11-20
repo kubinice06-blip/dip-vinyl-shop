@@ -18,7 +18,8 @@
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
 //      rarityTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、trialTag（無限試煉 C.trial.ui／levelUp／notes）、seedsTag（從唱片櫃挑牌開局 C.seeds.ui）、
 //      dailyTag（今日推薦集點卡 C.daily，第 B 波）、
-//      tunesTag／radioTag（頻率八格的名字與收音機，v5 第六項第二期）、apexTrialTag（頂點卡純輔助卡試做 ?apex=1：能力名 ≤8、說明 ≤25、畫面字、小提示 ≤20、結果句 ≤25）、pitches.json）；
+//      tunesTag／radioTag（頻率八格的名字與收音機，v5 第六項第二期）、apexTrialTag（頂點卡純輔助卡試做 ?apex=1：能力名 ≤8、說明 ≤25、畫面字、小提示 ≤20、結果句 ≤25）、
+//      factionsTag（第 D 波棒二三流派 ?fac=1：派系卡 ≤34、本派選項 名 ≤6 說明 ≤24、結果行小字 ≤16、換一格 ≤25、畫面字 ≤25）、pitches.json）；
 //      無限試煉沒有打烊、第二夜：C.night、C.secondNight 不准回來；畫面字不准再寫「今晚來客／打烊／再來一夜／今晚賣完」
 //      FIXLIST 6：畫面不寫誠實度（C.honesty 只有 q、沒有 zh；不准有 honestyTag）、客人沒有副標（enemies[*].title）；
 //      FIXLIST 2：王牌沒有「不會被剋」（content 的字不准出現「不會被剋」）
@@ -596,6 +597,37 @@ if (C.apexTrial) {
   for (const [k, v] of Object.entries(A.tips || {})) one('apexTrial.tips.' + k, v, '頂點卡試做・一次性老闆小提示（第一次看到能力框／第一次「沒作用」）', 20, '老闆');
   for (const [k, v] of Object.entries(A.notes || {})) one('apexTrial.notes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
   for (const [k, v] of Object.entries(A.holdNotes || {})) one('apexTrial.holdNotes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
+}
+// 第 D 波棒二：三流派（?fac=1；C.factions、factionsTag）：派系卡（定位、被動、代價、讀法、第一次觸發那句）≤34、本派選項（名 ≤6、說明 ≤24）、結果行小字 ≤16、
+//   ?fac=1&apex=1 換一格的能力說明 ≤25、結果句 ≤25、畫面字 ≤25（不算 {x}）
+if (C.factions) {
+  const F = C.factions;
+  const one = (where, v, scene, max, who, text) => {
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.factionsTag)) err(where, '沒有 tag（factionsTag）');
+    if (max && len(v.replace(/\{\w+\}/g, '')) > max) err(where, '超過 ' + max + ' 字（不算 {x}）：' + v);
+    add({ scene, where, who: who || '（畫面字）', key: where.split('.').pop(), text: text || v, tag: C.factionsTag });
+  };
+  for (const t of ['hall', 'pearl', 'heresy']) {
+    const D = F[t] || {}, nm = D.name || t;
+    for (const k of ['tagline', 'passive', 'cost', 'read', 'first']) one('factions.' + t + '.' + k, D[k], '流派試做・' + nm + '的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）', 34);
+    (D.picks || []).forEach((x, k) => {
+      if (typeof x.name !== 'string' || !x.name || len(x.name) > 6) err('factions.' + t + '.picks[' + k + '].name', '名字要 1–6 字：' + x.name);
+      one('factions.' + t + '.picks[' + k + '].text', x.text, '流派試做・' + nm + '的本派選項（升級第 4 格；名字：說明' + '）', 24, null, x.name + (x.second ? '（第二招）' : '') + '：' + x.text);
+    });
+  }
+  for (const [k, v] of Object.entries(F.notes || {})) one('factions.notes.' + k, v, '流派試做・結果行小字（{n}：整張／借／以小搏大＝這手扣他的總數，其他＝多扣／回的那一份）', 16);
+  const S = F.apexSwap || {}, AT = C.apexTrial || {};
+  for (const t of ['hall', 'pearl', 'heresy']) {
+    const T = S[t] || {};
+    for (const [op, x] of Object.entries(T.ops || {})) one('factions.apexSwap.' + t + '.ops.' + op + '.text', x.text, '流派試做・?fac=1&apex=1 同開：頂點卡換一格後的能力說明（這個原語的卡都換）', 25);
+    for (const [id, x] of Object.entries(T.cards || {})) {
+      const e = (AT[t] || []).find(z => z && z.id === id) || {};
+      one('factions.apexSwap.' + t + '.cards.' + id + '.text', x.text, '流派試做・?fac=1&apex=1 同開：頂點卡換一格後的能力說明（指定那張）', 25, null, (e.name || id) + '：' + x.text);
+    }
+  }
+  for (const [k, v] of Object.entries(S.notes || {})) one('factions.apexSwap.notes.' + k, v, k === 'leechFac' ? '流派試做・?fac=1&apex=1 同開：拆穿回血的頂點卡那手，回的聲望被流派被動蓋過（取大）＝這張沒另外回' : '流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）', 25);
+  for (const [k, v] of Object.entries(F.ui || {})) one('factions.ui.' + k, v, '流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態；{x} 由畫面代入）', 25, k === 'pickFirst' ? '老闆' : null);
 }
 // 一晚版的字不准回到畫面字（店主 11-12：沒有時間、沒有打烊）；序章「今晚那張」（猜歌那張盤）照用
 const NIGHT_WORDS = [/今晚來客/, /打烊/, /再來一夜/, /今晚賣完/, /今晚就到這/, /今晚到這/, /第二夜/];

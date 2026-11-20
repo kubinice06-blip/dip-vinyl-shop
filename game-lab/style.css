@@ -1061,3 +1061,103 @@ body.lb-tune-open{overflow:hidden;}
 .lb-relic.cell .nm{font-size:12px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .lb-relic.cell .ds{font-size:10px;line-height:1.3;color:var(--gray2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
 .lt-skip.sm{min-height:44px;font-size:12px;font-weight:400;color:var(--gray2);border-color:var(--line);}
+/* ---------- 第 D 波棒二：三流派（?fac=1；ui.js 標題旗標章、facPickPanel、levelPanel 第 4 格、facInfo、頂欄一字圖示；旗標關時這些 class 都不出現） ---------- */
+/* 標題旗標章：只開 ?fac=1＝右上一顆「流派試做」；兩個旗標都開＝左上「流派試做」＋右上「頂點卡試做」並排；
+   矮螢幕（≤600px 高；棒一 FINAL §3-3：375×548 標題區零餘裕）合成一顆「流派＋頂點卡試做」。章都是絕對定位，不佔標題牌、面板的高 */
+.lb-plate .fac,.lb-plate .both{position:absolute;right:-10px;top:-11px;font:700 10px/16px var(--zh);letter-spacing:.1em;padding:0 6px;color:#fff;background:var(--ink);border:1.5px solid var(--ink);transform:rotate(4deg);white-space:nowrap;}
+.lb-plate.flags2 .fac{right:auto;left:-10px;transform:rotate(-4deg);}
+.lb-plate .both{display:none;color:var(--cream-ink);background:var(--cream);border-color:var(--gold);box-shadow:inset 3px 0 0 var(--ink);padding-left:8px;}
+@media (max-height:600px){
+  .lb-plate.flags2 .apx,.lb-plate.flags2 .fac{display:none;}
+  .lb-plate.flags2 .both{display:block;}
+}
+.lb-plate small.mix{font:400 10px/1.3 var(--zh);letter-spacing:.02em;color:var(--gold-ink,#7a5a00);margin-top:2px;}
+/* 開局派系卡：≥390 寬三欄縮小版（點哪張選哪張）；≤389 一次一張、左右滑＋三個點（scroll-snap；滑到哪張選哪張） */
+.lb-sheet.acepick.fac .fx-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:8px;flex:none;}
+.lb-sheet.acepick.fac .fxc{border:1px solid var(--line);padding:5px 5px 4px;background:#fff;}
+.lb-sheet.acepick.fac .fxc.sel{border:2px solid var(--ink);padding:4px 4px 3px;}
+.lb-sheet.acepick.fac .fxc.peek{border:2px dashed var(--ink);padding:4px 4px 3px;}
+.lb-sheet.acepick.fac .lb-ct.sel .lb-cv{outline:none;}
+.lb-sheet.acepick.fac .fx-cv{position:relative;}
+.lb-sheet.acepick.fac .fxc .acex{display:flex;align-items:baseline;justify-content:space-between;gap:4px;min-height:0;margin-top:4px;padding:0;border-bottom:none;white-space:nowrap;}
+.lb-sheet.acepick.fac .fx-nm{font:700 13px/18px var(--zh);letter-spacing:.02em;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+.lb-sheet.acepick.fac .fx-ax{flex:none;font:700 10px/14px var(--zh);}
+.lb-sheet.acepick.fac .fx-lk{display:flex;align-items:center;font-size:10px;font-weight:700;line-height:1.3;margin-top:2px;}
+.lb-sheet.acepick.fac .fx-tag{margin:2px 0 0;font-size:11px;font-weight:700;line-height:1.35;color:#333;}
+.lb-sheet.acepick.fac .fx-pas,.lb-sheet.acepick.fac .fx-cost{margin:3px 0 0;font-size:10.5px;line-height:1.4;letter-spacing:0;}
+.lb-sheet.acepick.fac .fx-pas{color:var(--ink);}
+.lb-sheet.acepick.fac .fx-cost{color:var(--gray2);}
+.lb-sheet.acepick.fac .fx-pas b,.lb-sheet.acepick.fac .fx-cost b,.lb-modal .pane.facinfo .fx-pas b,.lb-modal .pane.facinfo .fx-cost b{display:inline-block;margin-right:3px;padding:0 3px;font-size:9px;line-height:13px;border:1px solid currentColor;vertical-align:1px;}
+.lb-sheet.acepick.fac .fxc.locked .fx-tx p{color:var(--gray);}
+.lb-sheet.acepick.fac .fx-ft{margin-top:auto;padding-top:5px;}
+.lb-sheet.acepick.fac .fx-gift{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;}
+.lb-sheet.acepick.fac .fx-gift .lb-cv{width:100%;height:auto;aspect-ratio:1/1;border-width:1px;}
+.lb-sheet.acepick.fac .fxc.locked .fx-gift .lb-cv{-webkit-filter:grayscale(1);filter:grayscale(1);opacity:.5;}
+.lb-sheet.acepick.fac .fx-prof{display:block;margin-top:3px;font-size:10px;line-height:1.3;color:var(--gray2);}
+.lb-sheet.acepick.fac .fx-prof .nw,.lb-sheet.acepick.fac .fx-tx .nw,.lb-lvl.fac .ds .nw,.lb-modal .pane.facinfo .nw{white-space:nowrap;}   /* 「熟練 Lv1・」「最遠第 34 位」各自不折（390 三欄原本把「位」擠到第二行：審查 棒二） */
+/* 斷行（審查 棒二：「回 2 聲／望」「一場最多／2。」「只讀真／假。」）：有數字的句子靠 ui.js facNw 把「兩個字＋數字＋單位＋標點」包成不折行；
+   一句定位（沒有數字）用 pretty 免得最後一個字自己掉下去。pretty 不套在有 facNw 的段落：中文會為了拉長末行，把「一場」「多扣」拆開 */
+.lb-sheet.acepick.fac .fx-tag,.lb-modal .pane.facinfo .fx-tag{text-wrap:pretty;}
+.lb-sheet.acepick.fac .fx-dots{display:none;justify-content:center;flex:none;}
+.lb-sheet.acepick.fac .fx-dots button{position:relative;width:44px;height:40px;display:grid;place-items:center;}
+.lb-sheet.acepick.fac .fx-dots button::after{content:'';position:absolute;left:0;right:0;top:0;bottom:-6px;}   /* 點擊區 44×44：只往下撐（撐進大鈕上面那 6px 空白；往上會蓋到卡片底、點卡跳去別派：審查 棒二） */
+.lb-sheet.acepick.fac .fx-dots i{display:block;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink);}
+.lb-sheet.acepick.fac .fx-dots .on i{background:var(--ink);}
+.lb-sheet.acepick.fac .fx-dots .lk i{border-style:dashed;border-color:var(--gray);}
+.lb-sheet.acepick.fac .lb-btn.off{opacity:.45;}
+@media (max-width:389px){
+  .lb-sheet.acepick.fac .fx-rail{display:flex;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:none;}
+  .lb-sheet.acepick.fac .fx-rail::-webkit-scrollbar{display:none;}
+  .lb-sheet.acepick.fac .fxc{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;display:grid;grid-template-columns:92px minmax(0,1fr);grid-template-areas:"cv tx" "ft ft";column-gap:10px;padding:7px 8px 6px;}
+  .lb-sheet.acepick.fac .fxc.sel,.lb-sheet.acepick.fac .fxc.peek{padding:6px 7px 5px;}
+  .lb-sheet.acepick.fac .fx-cv{grid-area:cv;align-self:start;}
+  .lb-sheet.acepick.fac .fx-tx{grid-area:tx;min-width:0;}
+  .lb-sheet.acepick.fac .fxc .acex{margin-top:0;justify-content:flex-start;gap:8px;}
+  .lb-sheet.acepick.fac .fx-nm{font-size:15px;line-height:20px;}
+  .lb-sheet.acepick.fac .fx-ax{font-size:11px;}
+  .lb-sheet.acepick.fac .fx-tag{font-size:12px;}
+  .lb-sheet.acepick.fac .fx-pas,.lb-sheet.acepick.fac .fx-cost{font-size:11px;line-height:1.45;}
+  .lb-sheet.acepick.fac .fx-ft{grid-area:ft;display:flex;align-items:center;gap:10px;padding-top:6px;}
+  .lb-sheet.acepick.fac .fx-gift{flex:none;grid-template-columns:repeat(4,26px);}
+  .lb-sheet.acepick.fac .fx-prof{margin-top:0;font-size:11px;}
+  .lb-sheet.acepick.fac .fx-dots{display:flex;}
+}
+/* 升級面板第 4 格（本派；Lv5／10／15…）：一字圖示＋名字（小標「本派」、第二招）＋一句；右邊灰字「不加屬性」 */
+.lb-lvl.fac{justify-content:flex-start;gap:10px;border-style:dashed;}
+.lb-lvl.fac .fi{flex:none;width:28px;height:28px;display:grid;place-items:center;font:700 16px var(--zh);color:#fff;background:var(--ink);}
+.lb-lvl.fac .fi.c{background:var(--c);} .lb-lvl.fac .fi.o{background:var(--o);} .lb-lvl.fac .fi.h{background:var(--h);}
+.lb-lvl.fac .tx{flex:1;}
+.lb-lvl.fac .nm small{display:inline-block;margin-left:6px;padding:0 4px;font-size:10px;font-weight:700;line-height:15px;letter-spacing:.06em;color:var(--gray2);border:1px solid var(--line);vertical-align:2px;}
+.lb-lvl.fac .nm small.sc{color:var(--gold-ink,#7a5a00);border-color:var(--gold);background:var(--cream);}
+.lb-lvl.fac .nv{font:400 11px var(--zh);letter-spacing:.02em;}
+/* 對決頂欄的一字圖示（比／借／拆）：點了＝本派說明。點擊區 44×44：寬 44、只往下撐 13（頂欄貼 y=0，往上撐的那 6px 在畫面外：審查 棒二；? 與暫停照舊） */
+.lb-top .ti.fac{min-width:44px;}
+.lb-top .ti.fac::after{top:0;bottom:-13px;}
+.lb-top .ti.fac .fi{display:grid;place-items:center;width:22px;height:22px;font:700 13px/1 var(--zh);color:#fff;background:var(--ink);}
+.lb-top .ti.fac.c .fi{background:var(--c);} .lb-top .ti.fac.o .fi{background:var(--o);} .lb-top .ti.fac.h .fi{background:var(--h);}
+/* 本派說明（彈窗） */
+.lb-modal .pane.facinfo{padding:16px 16px 0;border:1px solid var(--ink);}
+.lb-modal .pane.facinfo h2{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--ink);letter-spacing:.12em;}
+.lb-modal .pane.facinfo h2 .fi{display:grid;place-items:center;width:24px;height:24px;font:700 14px/1 var(--zh);letter-spacing:0;color:#fff;background:var(--ink);}
+.lb-modal .pane.facinfo h2 .fi.c{background:var(--c);} .lb-modal .pane.facinfo h2 .fi.o{background:var(--o);} .lb-modal .pane.facinfo h2 .fi.h{background:var(--h);}
+.lb-modal .pane.facinfo p{margin:6px 0 0;font-size:13px;line-height:1.6;}
+.lb-modal .pane.facinfo .fx-tag{font-weight:700;text-align:center;margin-top:0;}
+.lb-modal .pane.facinfo .fx-cost{color:var(--gray2);}
+.lb-modal .pane.facinfo .fx-mine{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:12px;}
+.lb-modal .pane.facinfo div.fx-mine{display:flex;align-items:flex-start;gap:3px;line-height:1.55;}
+.lb-modal .pane.facinfo div.fx-mine>b{flex:none;margin-top:2px;padding:0 3px;font-size:9px;line-height:13px;border:1px solid currentColor;}
+.lb-modal .pane.facinfo .fx-mine ul{margin:0;padding:0;list-style:none;min-width:0;}
+.lb-modal .pane.facinfo .fx-mine li i{font-style:normal;font-weight:700;margin-right:4px;}
+.lb-modal .pane.facinfo .fx-cost.off s{text-decoration-thickness:1px;}
+.lb-modal .pane.facinfo .fx-cost.off em{font-style:normal;font-weight:700;margin-left:4px;color:var(--ink);}
+.lb-modal .pane.facinfo .fx-left{font-size:12px;color:var(--gold-ink,#7a5a00);font-weight:700;}
+/* 結果框：這一派第一次觸發那句（duel.js ct.first；另起一行、可以折行、黑字） */
+.dl .callout .l2 .nt .ns.f1{display:block;white-space:normal;margin-top:1px;font-weight:700;color:var(--ink,#111);text-wrap:balance;}
+/* ?fac=1&apex=1：換過能力的頂點卡（挑王牌面板說明、唱片資訊） */
+.lb-sheet.apxpick .apx-det .fx-swp{display:block;font-size:10px;line-height:1.4;color:var(--gold-ink,#7a5a00);}
+.drawcard .apx .sw{margin-top:2px;font-size:11px;line-height:1.5;color:var(--gold-ink,#7a5a00);}
+/* 升級面板多了本派格（4 顆）：矮螢幕（≤600px 高）每顆收到 50、間距 6——375×548 四顆＋標題放得下、不用捲 */
+@media (max-height:600px){
+  .lb-sheet.level .lb-opts.n4{gap:6px;}
+  .lb-sheet.level .lb-opts.n4 .lb-lvl{min-height:50px;padding-top:4px;padding-bottom:4px;}
+}

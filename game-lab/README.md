@@ -226,6 +226,8 @@ node game-lab/test/shop.test.mjs            # 店家 JSON、唱盤、路線不�
 node game-lab/test/hit.test.mjs             # 命中：形狀＋深度、容錯、遮擋
 node game-lab/test/chars.test.mjs           # 小人
 node game-lab/sim.mjs --n 3000              # 平衡門檻 S1–S9＋HP 聲望單調（任何一條沒過 exit 1）
+node game-lab/sim.mjs --n 4000 --flows smart --fac --ace hall   # 第 D 波三流派（?fac=1）：三派各一支（--ace hall|pearl|heresy）；--nofacpick 只開被動、--facfx 調被動、--apex 同開（換一格）；多印流派被動表
+node game-lab/diffplay.mjs --n 300          # 打法差異（SPEC-D F7）：同一局面三派各算一次，出的不全一樣 ≥25%
 node game-lab/tools/lint-copy.mjs           # 文案：禁用字、原句／店主句逐字、劇本 25 句順序（第一句 11-10 改成開頭旁白）；重產 LINES-REVIEW.md
 node game-lab/tools/check-content.mjs       # 資料形狀、牌組限制、教學步驟、劇本
 node game-lab/tools/check-shops.mjs         # 店家配置、熱點（含 bin:* 與 buildHotList 交叉比對）、任兩站位的路線不穿家具
@@ -244,6 +246,7 @@ LAB_SIZES=$S LAB_MAIN_BASE=<main 的伺服器根> node game-lab/tests/e2e-pool.m
                                                              #   P9 首屏 gzip ≤800 KB（硬門檻；主線 M1 760，併 #480、#491 跟著 main 基底 +20）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-recap.mjs  # 上一手細節（11-17）：揭曉後停住等點、⏸ 自動換手、上一手詳情、這場紀錄、結算畫面的紀錄、半指／不露不洩漏
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-career.mjs # 第 D 波樂歷：開機入帳冪等（v8 不升、.bak8）、結算一行＋明細＋過場卡、樂歷頁、下一趟天賦、關樂歷、標題兩行、退版／跨版（CAREER_PREV＝C 版 git ref，git show 回應 game-lab-c/）、備用說情、演唱會上限字、第一次挑派預設冷門
+LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-fac.mjs    # 第 D 波三流派（?fac=1）F1–F8：開局派系卡（新手標、鎖住的派、375 一次一張可滑）、換派、序章那場沒有被動、結果行小字＋第一次那句、頂欄一字圖示、第二招上限（吸血 2／反傷 2 次）、Lv5 本派格、?fac=1&apex=1 章與換一格、沒旗標的頁面續玩、中繼點選秀沒有本派格；FAC_ONLY=2,4 只跑幾項
 ```
 
 e2e 讀 `LAB_BASE`（伺服器根，預設 `http://localhost:8765`）或 `LAB_URL`；開不了本機伺服器時加 `LAB_ROOT=<repo 根目錄>`，Playwright 直接從磁碟回應 `LAB_BASE` 底下的請求（`tests/e2e-lib.mjs`）。Playwright 只有 Chromium。**真 iPhone（Safari 與 Chrome）請各開一次**：店景清楚、聲音、教學遮罩洞裡點得到、抽屜關得掉、唱盤演出不卡。

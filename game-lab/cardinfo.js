@@ -25,7 +25,7 @@
   var ACE_ZH = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
   // worker 只對正式站、Pages 預覽與 localhost:5179 開 CORS；其他來源（例如本機 8765）不打，主控台不噴錯（B07）
   var DESC_OK = (function () { try { var h = location.hostname; return /(^|\.)dipvinyl\.tw$/.test(h) || /\.pages\.dev$/.test(h) || location.port === '5179'; } catch (_) { return false; } })();
-  var CFG = { onSoundUnlock: null, cardOf: null, apex: false };   // apex：頂點卡純輔助卡試做（?apex=1；ui.js 設）
+  var CFG = { onSoundUnlock: null, cardOf: null, apex: false, run: null };   // apex：頂點卡純輔助卡試做（?apex=1；ui.js 設）；run：() → 這一趟（第 D 波棒二 ?fac=1&apex=1 換一格；ui.js 設）
   var S = { mask: null, card: null, resolve: null, offMusic: null, offSound: null, prev: null, started: false, keyH: null, lastFocus: null, cbs: { open: [], close: [] } };
 
   function FX() { return W.DipLabFx || null; }
@@ -85,12 +85,17 @@
   function apexOf(o, opts) {
     if (!CFG.apex || !o.ace || (opts && /^duel:(slot|last)-e$/.test(String(opts.from || '')))) return null;
     var E = W.DipLabEngine, C = W.DipLabContent;
-    try { return E && E.abilityOf && C && C.apexTrial ? E.abilityOf(C, o.id) : null; } catch (_) { return null; }
+    try {
+      var run = CFG.run ? CFG.run() : null;          // 第 D 波棒二（?fac=1&apex=1）：帶派別的 run＝換一格之後的能力（engine.apexAbilityOf；沒有 run.fac＝跟 abilityOf 一樣）
+      if (run && run.fac && E && E.apexAbilityOf && C && C.apexTrial) return E.apexAbilityOf(C, o.id, run);
+      return E && E.abilityOf && C && C.apexTrial ? E.abilityOf(C, o.id) : null;
+    } catch (_) { return null; }
   }
   function apexHTML(A) {
     var U = (W.DipLabContent.apexTrial || {}).ui || {}, tm = (U.timing || {})[A.timing] || '';
     return '<div class="apx" data-ab="' + esc(A.id) + '"><div class="k">' + esc(U.infoTitle || '') + '</div><div class="nm"><b>' + esc(A.name) + '</b>' + (tm ? '<span class="tm">' + esc(tm) + '</span>' : '') + '</div>' +
-      '<div class="tx">' + esc(A.text) + '</div></div>';
+      '<div class="tx">' + esc(A.text) + '</div>' +
+      (A.swapped && W.DipLabContent.factions && W.DipLabContent.factions.ui ? '<div class="sw">' + esc(W.DipLabContent.factions.ui.swapped || '') + '</div>' : '') + '</div>';   // 第 D 波棒二：換過能力
   }
   // ---- 簡介（ui.js 舊 fetchDesc 搬過來；兩邊共用這一份）
   var descCache = {};

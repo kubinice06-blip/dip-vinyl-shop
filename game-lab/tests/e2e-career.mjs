@@ -28,7 +28,7 @@
 //      品味＝新帳號 → 打完 runs[k].off＝1、樂歷照拿、明細「這一趟關樂歷（樂歷照拿）」→ 重新整理：最遠旁「關樂歷」
 //   6  C6 標題兩行（最長那組：有一趟在打＋關樂歷＋最遠是關樂歷那趟＋有沒點的點數；6b 再加 ?apex=1 跳過序章那顆鈕）：整個標題不捲、第二行在畫面裡、≥44 高、
 //      ≤600px 高是短版「樂歷 Lv 12 ›」、其他是「樂歷 Lv 12・下一個：Lv15 …」；真點第二行＝樂歷頁；唱片櫃頁頭「樂歷」也進得去；Lv1 的帳號沒有第二行
-//      （規格 C6 的「試煉最遠」是棒三、「流派試做」章是棒二，這一棒還沒有）
+//      （規格 C6 的「試煉最遠」是棒三）；6c（棒二）再加 ?fac=1：兩個旗標章（>600px 高兩顆不重疊、≤600px 合成一顆「流派＋頂點卡試做」），章在面板上緣以上
 //   7  C7 退版：D 存檔（career、天賦開的 run）用 C 版頁面載入 → 不唯讀、照玩、輸掉 → 存回去還是 v8、career 原封不動、lexpBank 有新記帳、runs[k] 有 lexp 沒 gain →
 //      回 D 版：吐司「上次的樂歷補記給你。樂歷 +n。」、xp 只加這一次、只有那一趟標 banked、lexpBank 歸零
 //   8  C8 跨版那一趟：C 版頁面開的 run（記了路線 home 30）→ D 版載入（建 career、寫 .bak8、lexpBank 全 0＝不入帳）→ 打完：runs[k].gain＝規格公式（路線截在 ⌊0.4×基本⌋、cut 記差額）、
@@ -470,7 +470,7 @@ async function runSize(browser, w, h) {
     await ctx.close();
   }
 
-  // ---------------------------------------------------------------- 6 C6 標題兩行（最長那組）；6b 再加 ?apex=1（跳過序章那顆鈕）
+  // ---------------------------------------------------------------- 6 C6 標題兩行（最長那組）；6b 再加 ?apex=1（跳過序章那顆鈕）；6c 再加 ?fac=1（兩個旗標章）
   if (want(6)) {
     const seed6 = page => seedCareer(page, { career: { xp: 6600, off: true }, run: { ace: 'hall', idx: 3 },
       runs: [{ seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 14, bestStreak: 6, taken: 5, wins: 13, level: 4, checkpoints: [10], off: 1 }], best: { far: 14, checkpoints: [10], bestStreak: 6 } });
@@ -480,8 +480,10 @@ async function runSize(browser, w, h) {
         top: r && Math.round(r.top), bottom: r && Math.round(r.bottom), h: r && Math.round(r.height), info: (document.querySelector('.lb-foot.info') || {}).textContent || '', offon: !!document.querySelector('.lb-foot.info .cx-offon'),
         unl: !!document.querySelector('.lb-foot.unl'), lad: !!document.querySelector('.lb-foot.ladder') };
     });
-    for (const apex of [false, true]) {
-      const n = apex ? '6b' : 6, QA = Q(apex ? '&fast=1&apex=1' : '&fast=1');
+    // 6c（棒二）：再加 ?fac=1＝兩個旗標章（SPEC-D §10.2 C6「兩個旗標章」；棒一 375×548 標題區 292/292 零餘裕，章不能把標題擠高）：
+    //   >600px 高「流派試做」「頂點卡試做」兩顆、不重疊；≤600px 只剩一顆「流派＋頂點卡試做」；章都在面板上緣以上（不蓋標題那塊）
+    for (const [apex, fac] of [[false, false], [true, false], [true, true]]) {
+      const n = fac ? '6c' : apex ? '6b' : 6, QA = Q('&fast=1' + (apex ? '&apex=1' : '') + (fac ? '&fac=1' : ''));
       const { ctx, page } = await newPage(browser, w, h);
       try {
         await openTitle(page, QA);
@@ -509,9 +511,18 @@ async function runSize(browser, w, h) {
           okMore = sb === x.shelfBtn && viaShelf && !lv1.cx && lv1.lad;
           more = `；唱片櫃頁頭「${sb}」→ 樂歷頁 ${viaShelf}；Lv1 ${J(lv1)}`;
         }
+        let okFlag = true;
+        if (fac) {
+          const pl = await C(page, () => { const R = s => { const e = document.querySelector('.lb-plate ' + s); if (!e) return null; const r = e.getBoundingClientRect(); return getComputedStyle(e).display === 'none' || !r.width ? 'none' : { tx: e.textContent, l: r.left, r: r.right, t: r.top, b: r.bottom }; };
+            const p = document.querySelector('#panel').getBoundingClientRect(); return { fac: R('.fac'), apx: R('.apx'), both: R('.both'), pTop: p.top, flag: window.__lab.fac() }; });
+          const inV = c => c && c !== 'none' && c.l >= 0 && c.r <= w + 0.5 && c.t >= 0 && c.b <= pl.pTop + 0.5;
+          okFlag = pl.flag && (h > 600 ? inV(pl.fac) && inV(pl.apx) && pl.both === 'none' && (pl.fac.r <= pl.apx.l || pl.apx.r <= pl.fac.l)
+            : inV(pl.both) && pl.fac === 'none' && pl.apx === 'none');
+          more += `；旗標章 ${J(pl)}`;
+        }
         const ok = t.cont && t.skip === apex && t.sh - t.ch <= 1 && scrollOk(sc) && t.line === lineWant && t.dot && t.top >= 0 && t.bottom <= h && t.h >= 44 &&
-          t.info.includes(x.offBest) && t.offon && !t.unl && !t.lad && opened && okMore;
-        record(n, size, ok && !errs(page).length, `標題${apex ? '（?apex=1）' : ''} ${J(t)} ${J(sc)}（第二行要「${lineWant}」）；真點第二行 → 樂歷頁 ${opened}${more}；${errTx(page)}`);
+          t.info.includes(x.offBest) && t.offon && !t.unl && !t.lad && opened && okMore && okFlag;
+        record(n, size, ok && !errs(page).length, `標題${apex ? '（?apex=1' + (fac ? '&fac=1' : '') + '）' : ''} ${J(t)} ${J(sc)}（第二行要「${lineWant}」）；真點第二行 → 樂歷頁 ${opened}${more}；${errTx(page)}`);
       } catch (e) { record(n, size, false, 'error ' + e.message); }
       await ctx.close();
     }
