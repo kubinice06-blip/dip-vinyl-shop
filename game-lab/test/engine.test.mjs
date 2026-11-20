@@ -4249,8 +4249,8 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     eq(Object.keys(IN).map(op), ['mirrorPlus/duel/{"n":1}/null', 'mirrorPlus/hold/{"n":3}/{"op":"tieWin","params":{"n":1}}', 'eStar/hand/{"n":1}/null', 'eStar/hand/{"n":1}/null', 'bounce/duel/{"lose":false}/null', 'pThr/duel/{"n":3}/null'], 'new 6 abilities = the replaced primitives');
     // 附錄 Y：條件分佈（45 張；家族預設）
     const cnt = {}; for (const t of TIERS) for (const x of EN.apexList(K, t)) { const e = EN.encoreOf(K, x, t); cnt[e.when + '/' + e.give] = (cnt[e.when + '/' + e.give] || 0) + 1; }
-    // 11-20 修正輪（build1/FIX.md R1）：連剋全換掉（冷門、經典看穿；異端同色比贏，照出真假與回聲望看穿）；整場型與回聲望手型＝看穿（異端借血同色比贏）→ 下一手剋中多扣 2
-    eq(cnt, { 'caught/hit': 22, 'caught/again': 11, 'sameWin/again': 9, 'sameWin/hit': 3 }, 'encore distribution over 45 cards');
+    // 11-20 修正輪（build1/FIX.md R1）：連剋全換掉（冷門、經典看穿；異端同色比贏，照出真假與回聲望看穿）；整場型、回聲望手型、他少 1 星／你 +1 星／照出真假＝→ 下一手剋中多扣 2；比星多算、比星輸不扣、這手剋得動、拆穿三倍照留再發動
+    eq(cnt, { 'caught/hit': 24, 'caught/again': 9, 'sameWin/hit': 10, 'sameWin/again': 2 }, 'encore distribution over 45 cards');
     eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'hit' }, '翻面：看穿他一次，下一手剋中多扣 2。'], 'OK Computer = 看穿 → 下一手剋中多扣 2（修正輪：再發動 +6 點太簡單）');
     eq([EN.encoreOf(K, EN.apexList(K, 'hall').find(x => x.card === 'pink floyd|the dark side of the moon'), 'hall'), EN.encoreOf(K, EN.apexList(K, 'heresy').find(x => x.card === 'napalm death|scum'), 'heresy')],
       [{ when: 'caught', give: 'again' }, { when: 'sameWin', give: 'again' }], 'hand cards keep 再發動 (DSOTM 看穿；Napalm 同色比贏)');
@@ -4422,13 +4422,14 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     // 回來時聲望是滿的：發動鈕照舊不能按（full）
     const d2 = apexDuel('radiohead|ok computer', { hp: 10, ability: AG }); hand(d2, W(CAUGHT, { apex: true })); hand(d2, CAUGHT);
     ok(st(d2) === 'hit' && d2.p.hp === 12 && !EN.canApex(d2) && EN.view(d2).apex.full, 'heal-only at full hp: back but cannot fire (full)'); }
-  { // 同色比贏 → 再發動（Thriller）；發動那手同色比贏不算
-    const d = apexDuel('michael jackson|thriller');
+  { // 同色比贏 → 再發動（Thriller 指定：家族預設已改多扣 2）；發動那手同色比贏不算
+    const TS = withEnc('michael jackson|thriller', { when: 'sameWin', give: 'again' });
+    const d = apexDuel('michael jackson|thriller', { ability: TS });
     let h = hand(d, W(SAME, { apex: true })); ok(!h.enc, 'sameWin on the activation hand does not count');
     h = hand(d, W(SAME, { pc: mk(1, 4, 1), ec: mk(1, 4, 1) })); ok(!h.enc, 'same color tie ≠ win');
     h = hand(d, SAME); ok(h.enc && h.enc.when === 'sameWin' && EN.canApex(d), 'sameWin → ability back');
     // 不同色的「剋不動改比星」比贏不算同色比贏
-    const d2 = apexDuel('michael jackson|thriller'); hand(d2, W(SAME, { apex: true }));
+    const d2 = apexDuel('michael jackson|thriller', { ability: TS }); hand(d2, W(SAME, { apex: true }));
     h = hand(d2, { h: 'c', pc: mk(5, 1, 1), pa: 'c', ec: mk(1, 2, 1), ea: 'o' }); ok(h.cl.kind === 'mirrorWin' && h.cl.blocked === 'gap' && !h.enc, 'gap mirrorWin (different colors) is not sameWin'); }
   { // 背水 → 再發動（非常階段：回 2）：這手結算完聲望 ≤ 三成
     const LW = withEnc('非常階段|蔵六の奇病', { when: 'lowhp', give: 'again' });
@@ -4493,7 +4494,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     hand(dF, W(HONEST, { apex: true })); hand(dF, HONEST);
     eq(hand(dF, CAUGHT).cl.toE, (5 + 1) * 2 + 2, 'fac heresy: (5+1)×2 then +2'); }
   { // 留著型（鄧麗君）：安可＝回到「留著」（小效果又生效，直到第二次發動）
-    const d = apexDuel('鄧麗君 teresa teng|淡淡幽情');
+    const d = apexDuel('鄧麗君 teresa teng|淡淡幽情', { ability: withEnc('鄧麗君 teresa teng|淡淡幽情', { when: 'sameWin', give: 'again' }) });
     ok(EN.view(d).apex.live === 'hold', 'holding before activation');
     hand(d, W(SAME, { apex: true })); ok(EN.view(d).apex.live === null && st(d) === 'wait', 'activated: hold off');
     const h = hand(d, SAME); ok(h.enc && EN.view(d).apex.live === 'hold' && EN.canApex(d), 'encore → back to holding');
