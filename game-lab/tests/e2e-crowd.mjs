@@ -51,6 +51,8 @@ const NCYC = +(process.env.LAB_N || 10);
 const K = 4;                              // ?fast=1 的倍速（ui.js speed()）：遊戲時間＝真時間×4
 const DX = 38, DY = 44, BX = 20, BY = 14; // 兩個站著的人撞（§4.3）／身體疊在一起
 const REG = new Set(Object.keys(CT.regulars));
+// 給店主的截圖：老闆的一次性小提示（#tutTip、#tut）都算看過，不蓋在畫面上
+const TIPS_SEEN = Object.fromEntries(Object.keys(CT.coachTips || {}).concat(Object.keys(CT.hints || {}), ['lotHint']).map(k => [k, true]));
 const want = (id, size) => ONLY ? ONLY.has(String(id).toUpperCase()) : (FULL.has(size) ? id !== 'SHOTS' || size === '390x664' : (id === 8 || id === 'SHOTS'));
 fs.mkdirSync(SHOTS, { recursive: true });
 
@@ -567,11 +569,18 @@ async function lc8(browser, w, h, size) {
 
 // ===================================================================================== LC9 攤位（真速度）
 async function lc9(browser, w, h, size) {
+  // 一般：c-rock（宵夜老闆那條路上）＋c-pay（同業站主那格；攤位一開就讓）→ 讓得開，攤位期間沒有人用門
+  await stallCase(browser, w, h, size, 'LC9', [['akai', 'c-rock'], ['afang', 'c-pay']], true);
+  // 擠（棒 4 自驗那組）：c-rock、c-pay、c-folk（你站 browse 擋 c-folk，他先讓到 c-elec＝又在老闆那條路上）。§3.1「讓的人換到空格，沒有就出門」：
+  //   沒有人推門進來；出門的只准是被叫去讓路、店裡已經沒空格的人（攤位開始時站在老闆那條路上、stSnack、regular 旁邊的）
+  await stallCase(browser, w, h, size, 'LC9 擠', [['akai', 'c-rock'], ['afang', 'c-pay'], ['laochen', 'c-folk']], false);
+}
+async function stallCase(browser, w, h, size, label, spawns, strict) {
   const { ctx, page } = await openNight(browser, w, h, { fast: false, seed: { money: 9000 }, settle: 1500 });
   const SNACK = SP.stSnack, REGU = SP.regular;
   try {
     await quiet(page);
-    await C(page, () => { const c = window.__lab.crowd; c.spawn('akai', 'c-rock', { ms: 120000 }); c.spawn('afang', 'c-pay', { ms: 120000 }); c.spawn('laochen', 'c-folk', { ms: 120000 }); });
+    await C(page, list => { const c = window.__lab.crowd; list.forEach(([who, at]) => c.spawn(who, at, { ms: 120000 })); }, spawns);
     await C(page, () => {
       const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent;
       E.stallSession(r, Cn); r.pending.groups = [['snack', 'trade'], ['gig', 'dig']];
@@ -580,14 +589,17 @@ async function lc9(browser, w, h, size) {
     await page.waitForFunction(() => window.DipLabStalls.state() && document.querySelector('.st-pick .st-row'), null, { timeout: 10000 }).catch(() => {});
     await sleep(1500);
     const log0 = (await C(page, () => window.__lab.crowd.doorLog())).length;
+    const who0 = await C(page, () => window.__lab.crowd.state().slots.filter(x => x.on).map(x => x.who + '@' + (x.at || x.stop) + (x.walking ? '(走)' : '')).join('、'));
     const m0 = await C(page, () => window.__lab.crowd.mode());
     await C(page, () => { window.__cs = []; window.__csMs = 100; });
     const sel = '.st-pick .st-row[data-g="0"]';
     await tapReady(page, sel); await sleep(350); await tapReady(page, sel);
     const t0 = Date.now(), issues = [], seen = {};
-    let routeO = null;
-    while (Date.now() - t0 < 18000) {
-      const s = await C(page, () => { const S = window.DipLabStalls.state(); return { kind: S && S.kind, phase: S && S.phase }; });
+    let routeO = null, endAt = null, lastOn = null;
+    while (Date.now() - t0 < 18000 && !endAt) {
+      const s = await C(page, () => { const S = window.DipLabStalls.state(), r = window.__lab.run; return { kind: S && S.kind, phase: S && S.phase, on: !!(r && r.pending && r.pending.type === 'stall') }; });
+      if (!s.on) { endAt = lastOn || Date.now(); break; }   // 攤位收了（回到來客＝live，之後照常進出門，不算）：只算到最後一次看到攤位還在的那一刻
+      lastOn = Date.now();
       if (s.kind === 'snack' && !routeO) routeO = await C(page, () => window.__lab.stage.route('counter', 'stSnack'));
       if (s.phase === 'station' && s.kind) seen[s.kind] = 1;
       if (s.phase === 'station' && s.kind && !seen['shot' + s.kind]) { seen['shot' + s.kind] = 1; await shot(page, `lc9-${s.kind}-${size}.png`); }
@@ -596,8 +608,7 @@ async function lc9(browser, w, h, size) {
       }
       await sleep(200);
     }
-    const S = moving(await cs(page));
-    let kindAt = null;
+    const S = moving(await cs(page)).filter(s => !endAt || s.t < endAt);
     for (const s of S) {
       for (const x of vis(s)) {
         if (x.wk) continue;
@@ -611,12 +622,18 @@ async function lc9(browser, w, h, size) {
     }
     const modes = [...new Set(S.map(s => s.mode))];
     const log = await C(page, () => window.__lab.crowd.doorLog());
-    const doors = log.slice(log0).filter(x => x.kind === 'in' || x.kind === 'out');
+    const doors = log.slice(log0).filter(x => (x.kind === 'in' || x.kind === 'out') && (!endAt || x.t < endAt));
+    // 出門的人：攤位開始那一刻（第一個取樣）站在老闆那條路上、stSnack／regular 旁邊＝被叫去讓路
+    const startPos = {}; (S[0] ? vis(S[0]) : []).forEach(x => { startPos[x.s] = [x.x, x.y]; });
+    const route0 = routeO || await C(page, () => window.__lab.stage.route('counter', 'stSnack'));
+    const forced = x => { const p = startPos[x.slot]; return !!p && (onRoute(route0, p) || clash(p, SNACK) || clash(p, REGU)); };
+    const badDoors = strict ? doors : doors.filter(x => x.kind === 'in' || !forced(x));
     const e = errs(page);
-    record('LC9', size, m0 === 'still' && modes.join() === 'still' && seen.snack && seen.trade && !doors.length && !issues.length && !e.length,
-      `攤位（${modes.join()}）：宵夜 ${!!seen.snack}、同業調貨 ${!!seen.trade}；用門 ${doors.length}；${S.length} 個取樣問題 ${issues.length}` + (issues.length ? JSON.stringify(issues.slice(0, 6)) : '（老闆那段、stSnack、regular、站主身體框全 0）') +
+    record(label, size, m0 === 'still' && modes.join() === 'still' && seen.snack && seen.trade && !badDoors.length && !issues.length && !e.length,
+      `攤位前 ${who0}；攤位（${modes.join()}，${endAt ? ((endAt - t0) / 1000).toFixed(1) + ' 秒收攤' : '18 秒還沒收'}）：宵夜 ${!!seen.snack}、同業調貨 ${!!seen.trade}；用門 ${doors.map(x => x.kind + ' ' + x.who).join('、') || '0'}` +
+      (strict ? '' : `（被叫去讓路、店裡沒空格才出門的 ${doors.length - badDoors.length}）`) + `；${S.length} 個取樣問題 ${issues.length}` + (issues.length ? JSON.stringify(issues.slice(0, 6)) : '（老闆那段、stSnack、regular、站主身體框全 0）') +
       (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
-  } catch (err) { record('LC9', size, false, 'error ' + err.message); }
+  } catch (err) { record(label, size, false, 'error ' + err.message); }
   await ctx.close();
 }
 
@@ -782,7 +799,7 @@ async function lc18(browser, w, h, size, o = {}) {
     await page.addInitScript(INSTR);
     try {
       const q = Q('&crowd=1&fast=1', seed);
-      await openTitle(page, q); await seedRun(page, { idx: 1, seedKey: seed, seen: { crowdIntro: true, expertIntro: true } }); await openTitle(page, q);
+      await openTitle(page, q); await seedRun(page, Object.assign({ idx: 1, seedKey: seed, seen: Object.assign({ crowdIntro: true, expertIntro: true }, o.shot ? TIPS_SEEN : {}) }, o.shot ? { ownAces: ['pearl'] } : {})); await openTitle(page, q);
       await sleep(8000);
       const S = (await cs(page)).filter(s => s.scr === 'title');
       const max = Math.max(0, ...S.map(s => vis(s).length));
@@ -813,7 +830,7 @@ async function lc18(browser, w, h, size, o = {}) {
 
 // ===================================================================================== LC19 點老闆（第 3 位）
 async function lc19(browser, w, h, size, o = {}) {
-  const { ctx, page } = await openNight(browser, w, h, { seed: { idx: 2 }, settle: 3500, dpr: o.dpr || 1 });
+  const { ctx, page } = await openNight(browser, w, h, { seed: Object.assign({ idx: 2, seen: o.shot ? TIPS_SEEN : {} }, o.shot ? { ownAces: ['pearl'] } : {}), settle: 3500, dpr: o.dpr || 1 });
   try {
     await quiet(page);
     const sw = await C(page, () => window.DipLabEngine.canSwitchAce(window.__lab.run, window.DipLabContent));
@@ -929,13 +946,13 @@ async function shots(browser, w, h, size) {
   const made = [];
   // 1. 來客畫面：2–3 位熟客在走在翻＋一個聊天泡泡
   {
-    const { ctx, page } = await openNight(browser, w, h, { dpr: 2, fast: false, settle: 5000 });
+    const { ctx, page } = await openNight(browser, w, h, { dpr: 2, fast: false, settle: 5000, seed: { seen: TIPS_SEEN, ownAces: ['pearl'] } });
     try {
       await quiet(page);
-      await C(page, () => { const c = window.__lab.crowd; c.spawn('xiaoyu', 'c-citypop', { ms: 60000 }); c.spawn('akai', 'c-elec', { ms: 60000 }); c.spawn('datou', 'c-folk', { ms: 600 }); });
+      await C(page, () => { const c = window.__lab.crowd; c.spawn('xiaoyu', 'c-citypop', { ms: 60000 }); c.spawn('akai', 'c-elec', { ms: 60000 }); c.spawn('datou', 'c-world', { ms: 600 }); });
       await sleep(900);
       await C(page, () => window.__lab.crowd.chat('xiaoyu'));
-      for (let i = 0; i < 30; i++) { const s = (await crowdSt(page)).slots.find(x => x.on && x.who === 'datou'); if (s && s.walking && s.y > 120) break; await sleep(100); }
+      for (let i = 0; i < 80; i++) { const s = (await crowdSt(page)).slots.find(x => x.on && x.who === 'datou'); if (s && s.walking && s.y > 120 && Math.hypot(s.x - 86, s.y - 216) > 34) break; await sleep(100); }   // 大頭走在路上、不疊在小魚身上
       await sleep(300);
       await shot(page, `crowd-night-${size}.png`); made.push(`crowd-night-${size}.png`);
       // 2. 結帳（c-pay：背對、拿著一張、老闆 busy）
@@ -948,7 +965,7 @@ async function shots(browser, w, h, size) {
   }
   // 3. 周姐摘句（含出處行）
   {
-    const { ctx, page } = await openNight(browser, w, h, { dpr: 2 });
+    const { ctx, page } = await openNight(browser, w, h, { dpr: 2, seed: { seen: TIPS_SEEN, ownAces: ['pearl'] } });
     try {
       let done = false;
       await zhouSegs(page, { onQuote: async () => { if (!done) { done = true; await sleep(250); await shot(page, `crowd-zhou-${size}.png`); made.push(`crowd-zhou-${size}.png`); } }, stop: () => done });
@@ -965,7 +982,7 @@ async function shots(browser, w, h, size) {
     // 存檔先在另一個 context 種好（storageState 帶過去），錄影那頁一開就按繼續：片頭只有一下標題
     const q = Q('&crowd=1');
     const pre = await newPage(browser, w, h);
-    await openTitle(pre.page, q); await seedRun(pre.page, { idx: 1, seen: { crowdIntro: true, expertIntro: true } });
+    await openTitle(pre.page, q); await seedRun(pre.page, { idx: 1, seen: Object.assign({ crowdIntro: true, expertIntro: true }, TIPS_SEEN), ownAces: ['pearl'] });
     const state = await pre.ctx.storageState(); await pre.ctx.close();
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1, hasTouch: true, isMobile: true, storageState: state, recordVideo: { dir: vdir, size: { width: w, height: h } } });
     const page = await ctx.newPage(); page._errors = [];
