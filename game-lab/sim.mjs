@@ -61,6 +61,12 @@
 //   --fac  newRun fac:true：派別被動＋代價、本派選項（升級每 5 級第 4 格；runPolicy 出了就拿）。序章那場照舊沒有。三派一定分開量（--ace 各一支，同一批客人）
 //   --nofacpick  本派選項不出（C.factions.levelEvery 0＝只量被動；F6 的對照組）
 //   --facfx '{"heresy":{"critPre":2}}'  疊進那派的被動 fx（Object.assign C.factions[t].fx；調數字、量第二招從開局就有：{"hall":{"leech":1,"leechMax":2}}）
+//   第 I 波 I-1 翻面（程式識別字 encore；scratchpad v5/wave-i SPEC-I §1.8 AN1–AN6）：content C.encore.on 預設開＝預設 7 星王牌、--apex 頂點卡都有翻面
+//   --encore off  ＝C.encore.on false（對照組：兩半都關、對決／run 一個欄位都不多）。關著時不印翻面表、JSON 不多 enc／report.encore
+//   --encpol      每支策略外面包 engine encorePolicy（會湊條件、6 星翻面盤一定丟、頂點卡能力回來就再發動＝AN6 上界；預設策略照舊＝下限）
+//   開著時多印「翻面」兩張表（客人場：每場成立〔含剛好打完、留到下一位〕＝當場＋留到下一位、吃到上一位留下來的、真的用到〔再丟／再發動／吃到下一手加成／回聲望〕、
+//            丟出或發動過的場裡成立〔AN3；留下來的那場不另外等條件，不算〕、每趟幾次；逐條件 mode:when、逐派）；JSON 每格多 enc、report 多 encore。
+//            --apex 的發動表照舊只看每場第一次發動（翻面再發動那次另記：發動表多一欄「再發動」）
 //   --fac --apex  兩個旗標同開：engine apexAbilityOf 照 C.factions.apexSwap「三家換一格」（F9；調三個數字用 --patch '{"factions":{"apexSwap":{…}}}'，
 //            退回只標示＝--patch '{"factions":{"apexSwap":{"on":false}}}'）
 //   開 --fac 時多印「流派被動」表（每場平均觸發幾手：整張／借／以小搏大／拆穿／爆擊／回聲望／吸血／比星輸／被剋／平手／反傷／少扣；本派那幾手合計＝F4；
@@ -205,6 +211,23 @@ if (FACFX) for (const t of Object.keys(FACFX)) {
   C.factions[t].fx = Object.assign({}, C.factions[t].fx, FACFX[t]);
 }
 if (NOFACPICK) C.factions.levelEvery = 0;
+// 第 I 波 I-1 翻面（見檔頭）：--encore on|off（--patch 之後套）、--encpol 量上界
+const ENC_ARG = arg('encore', null);
+if (ENC_ARG != null && !['on', 'off'].includes(ENC_ARG)) { console.error('--encore on|off'); process.exit(2); }
+if (ENC_ARG && C.encore && typeof C.encore === 'object') C.encore.on = ENC_ARG === 'on';
+const ENC_ON = !!(EN.encCfg && EN.encCfg(C));
+const ENCPOL = argv.includes('--encpol');
+if (ENCPOL && !ENC_ON) { console.error('--encpol 要翻面開著（不要 --encore off）'); process.exit(2); }
+// --encset '{"<能力 id>":{"when":"caught","give":"heal"}}'＝試調頂點卡的翻面（只在這次模擬裡蓋 C.apexTrial 那幾張的 encore；@檔名＝從 JSON 檔讀；不改 content.js）
+const ENCSET = arg('encset', null) ? JSON.parse(arg('encset').startsWith('@') ? fs.readFileSync(arg('encset').slice(1), 'utf8') : arg('encset')) : null;
+if (ENCSET && !ENC_ON) { console.error('--encset 要翻面開著'); process.exit(2); }
+if (ENCSET) for (const id of Object.keys(ENCSET)) {
+  const e = TIERS.flatMap(t => EN.apexList(C, t)).find(x => x.id === id), v = ENCSET[id];
+  if (!e) { console.error('--encset：沒有能力 ' + id); process.exit(2); }
+  if (!v || !EN.ENC_WHEN.includes(v.when) || !EN.ENC_GIVE.includes(v.give)) { console.error('--encset：' + id + ' 的 when 要是 ' + EN.ENC_WHEN.join('|') + '、give 要是 ' + EN.ENC_GIVE.join('|')); process.exit(2); }
+  e.encore = { when: v.when, give: v.give };
+}
+const ENC_KEYS = ['ace:caught', 'ace:combo2', 'apex:caught', 'apex:combo2', 'apex:sameWin', 'apex:lowhp'];   // 翻面逐條件表的欄位順序（其他照出現順序接在後面）
 const FAC_KEYS = EN.FAC_NOTE_ORDER.concat(['cut']);                      // duel.stats.fac 的鍵（結果行小字＋本派選項「每場第一次被剋少扣」）
 const FAC_OWN = { hall: ['full', 'tieCost'], pearl: ['borrow', 'underdog', 'cCost'], heresy: ['crit', 'crit2', 'loseCost'] };   // F4：被動或代價觸發的手（三派互斥）
 const WCC = EN.wcCfg(C), WC_ON = !!(WCC.loot.on || WCC.chest.on || WCC.stall.on || WCC.safety.on);
@@ -273,7 +296,7 @@ const V3 = {
 
 // ---------------- play one duel to the end ----------------
 function play(duel, pol, R, mem) {
-  const fn = EN.policies[pol]; let g = 0;
+  const fn = ENCPOL ? EN.encorePolicy(pol) : EN.policies[pol]; let g = 0;   // 第 I 波：--encpol＝會湊翻面條件的上界策略
   duel._mN = 0; duel._mOn = 0;
   while (!duel.over) {
     if (++g > 20) throw new Error('runaway duel');
@@ -281,9 +304,12 @@ function play(duel, pol, R, mem) {
     const act = fn(duel, R, mem, C);
     if (!EN.isLegal(duel, act)) throw new Error('illegal act from ' + pol + ': ' + JSON.stringify(act));
     const ev = EN.resolveTurn(duel, act);
-    if (act.apex) {                                                     // 頂點卡試做：記發動那手（只有 --apex 會走到）
-      const a = ev.find(e => e.t === 'apex'), c = ev.find(e => e.t === 'clash');
-      duel._apexHand = { n: c.n, toE: c.toE, toP: c.toP, kind: c.kind, heal: (a && a.heal) | 0, reveal: a ? a.reveal || null : null, d: c.apex ? c.apex.d : 0, hit: !!(c.apex && c.apex.hit) };
+    if (act.apex) {                                                     // 頂點卡試做：記第一次發動那手（只有 --apex 會走到）；翻面再發動那次只計次數（_apexN）
+      duel._apexN = (duel._apexN | 0) + 1;
+      if (!duel._apexHand) {
+        const a = ev.find(e => e.t === 'apex'), c = ev.find(e => e.t === 'clash');
+        duel._apexHand = { n: c.n, toE: c.toE, toP: c.toP, kind: c.kind, heal: (a && a.heal) | 0, reveal: a ? a.reveal || null : null, d: c.apex ? c.apex.d : 0, hit: !!(c.apex && c.apex.hit) };
+      }
     }
   }
   return duel;
@@ -482,6 +508,7 @@ function runOnce(pol, flow, i, A) {
         if (l.hk === 'half') PH.half++; else if (l.hk === 'none') PH.none++;
       }
       EP.mercyN += duel._mN | 0; EP.mercyOn += duel._mOn | 0;
+      if (A.en && duel.p.enc) encRec(A.en, duel, run);                  // 第 I 波翻面（客人場；說情重打也算一場）
     }
     const dareNow = !prologue && !!(run.dare && run.dare.round === run.round);
     const res = EN.finishFight(run, C);
@@ -495,7 +522,7 @@ function runOnce(pol, flow, i, A) {
     if (A.fx) { A.fx.fights++; A.fx.hands += hands; const SF = duel.stats.fac || {}; for (const k of Object.keys(SF)) A.fx.k[k] = (A.fx.k[k] || 0) + SF[k]; }   // 第 D 波棒二：每場派別觸發（客人場，說情重打也算）
     if (A.ax) {                                                         // 頂點卡發動統計（--apex）
       const X = A.ax, h = duel._apexHand, hits = duel.stats.apexHits | 0;
-      X.fights++; X.hits += hits;
+      X.fights++; X.hits += hits; if ((duel._apexN | 0) >= 2) X.again++;   // 第 I 波：翻面再發動（同一場第二次）
       if (h) {
         X.used++; X.nSum += h.n; X.nHist[Math.min(6, h.n)]++; X.dSum += h.d; X.healSum += h.heal; if (h.hit) X.hitHand++;
         if (h.toE > h.toP) X.hw++; else if (h.toE < h.toP) X.hl++; else X.ht++;
@@ -541,13 +568,14 @@ function runCell(pol, flow, n) {
     ep: { play: { c: 0, o: 0, h: 0 }, hint: { c: 0, o: 0, h: 0 }, hands: 0, mHands: 0, mPlay: 0, mHint: 0, mercyN: 0, mercyOn: 0, reclaim: { gift: 0, seed: 0 } },
     ph: Object.fromEntries(PH_SEGS.map(k => [k, { n: 0, counter: 0, countered: 0, blocked: 0, read: 0, half: 0, none: 0, net: 0 }])) };
   if (APEX) A.ax = { fights: 0, used: 0, nSum: 0, nHist: [0, 0, 0, 0, 0, 0, 0], dSum: 0, healSum: 0, hitHand: 0, hw: 0, hl: 0, ht: 0, netSum: 0, rev: { honest: 0, bluff: 0 },
-    hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0 };
+    hits: 0, fUsed: 0, wUsed: 0, fUnused: 0, wUnused: 0, again: 0 };
   if (LOT_ON && flow === 'smart') {                                      // 一檔貨表（第 B 波；lot 關＝不記、JSON 不多欄位）
     A.lt = { runs: 0, rounds: [], shelf: [], good: [], good1: [], goodOpen: [], bag10: [], bag20: [], buy: 0, buyF: 0, rar: Object.fromEntries(SHELF_RAR.map(r => [r, 0])) };
     if (WANT_N) A.wt = { runs: 0, l1: { lots: 0, in: 0, elig: 0, inElig: 0 }, l2: { lots: 0, in: 0, elig: 0, inElig: 0 }, onShelf: 0, bought: 0 };
   }
   if (WC_ON) A.cw = { dare: { f: 0, w: 0 }, plain: { f: 0, w: 0 } };   // 第 C 波（全關不記、JSON 不多欄位）
   if (FAC) A.fx = { runs: 0, fights: 0, hands: 0, k: {}, picks: {} };   // 第 D 波棒二（--fac 才記）
+  if (ENC_ON) A.en = encZero();                                          // 第 I 波翻面（--encore off 不記、JSON 不多欄位）
   const recs = [];
   for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, I0 + i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
@@ -570,7 +598,7 @@ function runCell(pol, flow, n) {
   const X = A.ax, apexStats = X ? { fights: X.fights, used: X.used, useRate: X.fights ? X.used / X.fights : null, perRun: X.used / n, n: X.used ? X.nSum / X.used : null,
     nHist: X.nHist.slice(1), handWin: X.used ? X.hw / X.used : null, handLose: X.used ? X.hl / X.used : null, handTie: X.used ? X.ht / X.used : null,
     net: X.used ? X.netSum / X.used : null, d: X.used ? X.dSum / X.used : null, heal: X.used ? X.healSum / X.used : null, hitHand: X.used ? X.hitHand / X.used : null,
-    hitsPerFight: X.fights ? X.hits / X.fights : null, rev: X.rev, winUsed: X.fUsed ? X.wUsed / X.fUsed : null, winUnused: X.fUnused ? X.wUnused / X.fUnused : null } : null;
+    hitsPerFight: X.fights ? X.hits / X.fights : null, rev: X.rev, winUsed: X.fUsed ? X.wUsed / X.fUsed : null, winUnused: X.fUnused ? X.wUnused / X.fUnused : null, ...(ENC_ON ? { again: X.fights ? X.again / X.fights : null } : {}) } : null;
   return {
     pol, flow, n, cap: CAP,
     median: q(ends, 0.5), mean: avg('end'), p25: q(ends, 0.25), p75: q(ends, 0.75), p90: q(ends, 0.9), censored: share(recs, r => r.cens), lostMan: share(recs, r => r.lostMan),
@@ -590,6 +618,7 @@ function runCell(pol, flow, n) {
       ...(EN.bagLimited() ? {} : { bagN: avg('bagN'), bagMaxN: avg('bagMaxN'), bagMaxMax: Math.max(...recs.map(r => r.bagMaxN)), sold: avg('sold') }) },   // 包包不限才有（--set bagMax=8 時 JSON 跟改版前一樣）
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
+    ...(A.en ? { enc: encStats(A.en, n) } : {}),
     ...(A.fx ? { fac: { fights: A.fx.fights, hands: A.fx.hands / Math.max(1, A.fx.fights), perFight: Object.fromEntries(FAC_KEYS.filter(k => A.fx.k[k]).map(k => [k, A.fx.k[k] / Math.max(1, A.fx.fights)])),
       picks: Object.fromEntries(Object.entries(A.fx.picks).map(([k, v]) => [k, v / n])) } } : {}),
     ...(A.lt ? { lot: lotStats(A.lt, n) } : {}),
@@ -606,6 +635,48 @@ function runCell(pol, flow, n) {
   };
 }
 const shareOf = o => { const t = o.c + o.o + o.h; return t ? { c: o.c / t, o: o.o / t, h: o.h / t } : null; };
+// 第 I 波翻面統計（客人場）：f 場數、lit 這場條件成立（含剛好打完、留到下一位）、cOut 留到下一位、cIn 吃到上一位留下來的、used 真的用到、
+//   fired 丟出／發動過（不含留下來的那場：那場不另外等條件）、litF 其中成立、heal 翻面回了幾、litN 成立在第幾手、usedIn 留下來的那場真的用到
+const encB = () => ({ f: 0, lit: 0, cOut: 0, cIn: 0, used: 0, usedIn: 0, fired: 0, litF: 0, heal: 0, win: 0, winLit: 0, litN: [0, 0, 0, 0, 0, 0, 0] });
+const encZero = () => ({ all: encB(), by: {}, tier: {} });
+function encRec(E, duel, run) {
+  const Q = duel.p.enc, S = duel.stats.enc || {}, key = Q.mode + ':' + Q.when;
+  const tier = APEX ? (C.cards[duel.p.ace] && C.cards[duel.p.ace].tier) || run.ace : run.ace;
+  const cin = !!S.carryIn, fired = Q.start != null, win = !!(duel.over && duel.over.win);
+  for (const B of [E.all, E.by[key] || (E.by[key] = encB()), E.tier[tier] || (E.tier[tier] = encB())]) {
+    B.f++; if (S.lit) { B.lit++; B.litN[Math.min(6, Q.lit | 0)]++; if (win) B.winLit++; } if (S.carryOut) B.cOut++; if (win) B.win++;
+    if (cin) { B.cIn++; if (S.used) B.usedIn++; }
+    if (S.used) B.used++; B.heal += S.heal | 0;
+    if (fired && !cin) { B.fired++; if (S.lit) B.litF++; }
+  }
+}
+function encOne(B, n) {
+  const r = (a, b) => (b ? a / b : null);
+  return { f: B.f, lit: r(B.lit, B.f), now: r(B.lit - B.cOut, B.f), carry: r(B.cOut, B.f), carryIn: r(B.cIn, B.f), used: r(B.used, B.f), usedIn: r(B.usedIn, B.cIn),
+    fired: r(B.fired, B.f), litFired: r(B.litF, B.fired), perRun: n ? B.lit / n : null, heal: r(B.heal, B.f), win: r(B.win, B.f), winLit: r(B.winLit, B.lit),
+    litN: B.litN.slice(1).map(k => r(k, B.lit)) };
+}
+function encStats(E, n) {
+  const keys = ENC_KEYS.filter(k => E.by[k]).concat(Object.keys(E.by).filter(k => !ENC_KEYS.includes(k)));
+  return Object.assign(encOne(E.all, n), { by: Object.fromEntries(keys.map(k => [k, encOne(E.by[k], n)])),
+    tier: Object.fromEntries(TIERS.filter(t => E.tier[t]).map(t => [t, encOne(E.tier[t], n)])) });
+}
+function printEnc(rows) {
+  const WZ = { caught: '看穿', combo2: '連剋', sameWin: '同色比贏', lowhp: '背水' }, MZ = { ace: '7 星王牌', apex: '頂點卡' };
+  const kz = k => { const [m, w] = k.split(':'); return MZ[m] + '・' + (WZ[w] || w); };
+  console.log(`\n翻面（第 I 波 I-1；客人場${ENCPOL ? '；--encpol 會湊條件的上界策略' : ''}；6 星翻面盤 ${EN.encCfg(C).aceStar} 星；成立＝這場條件成立，含剛好打完、留到下一位；用到＝再丟／再發動／吃到下一手加成／回聲望）：\n`);
+  console.log('| 策略 | 流程 | 場數 | 成立／場（當場＋留到下一位） | 每趟成立 | 吃到上一位留的／場（那場用到） | 真的用到／場 | 丟出或發動過的場 | 其中成立（AN3） | 成立在第 1／2／3／4／5／6 手（%） | 場勝率 全部／成立的場 | 翻面回聲望／場 |');
+  console.log('|---|---|---|---|---|---|---|---|---|---|---|---|');
+  for (const x of rows) { const e = x.enc; if (!e) continue;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${e.f} | **${pct(e.lit)}**（${pct(e.now)}＋${pct(e.carry)}） | ${f2(e.perRun)} | ${pct(e.carryIn)}（${pct(e.usedIn)}） | ${pct(e.used)} | ${pct(e.fired)} | **${pct(e.litFired)}** | ${e.litN.map(p0).join('／')} | ${pct(e.win)}／${pct(e.winLit)} | ${f2(e.heal)} |`); }
+  const ks = []; for (const x of rows) if (x.enc) for (const k of Object.keys(x.enc.by)) if (!ks.includes(k)) ks.push(k);
+  console.log('\n逐條件（成立／場；丟出或發動過的場裡成立）與逐派（成立／場、留到下一位／場、用到／場）：\n');
+  console.log('| 策略 | 流程 | ' + ks.map(kz).join(' | ') + ' | ' + TIERS.map(t => (C.aceTitle && C.aceTitle[t]) || t).join(' | ') + ' |');
+  console.log('|---|---|' + ks.map(() => '---').join('|') + '|' + TIERS.map(() => '---').join('|') + '|');
+  for (const x of rows) { const e = x.enc; if (!e) continue;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ` + ks.map(k => { const b = e.by[k]; return b ? `${pct(b.lit)}；${pct(b.litFired)}（${b.f} 場）` : '—'; }).join(' | ') + ' | '
+      + TIERS.map(t => { const b = e.tier[t]; return b ? `${pct(b.lit)}／${pct(b.carry)}／${pct(b.used)}` : '—'; }).join(' | ') + ' |'); }
+}
 // 一檔貨表的數字：完整一輪（5 位都走到）看到幾張不同的（全部／FEATURE；第 1 輪、第 2 輪起分開）、每位架上幾張、剋下一位主屬性那軸 ≥4 星幾張（中位／最小／0 張的比例；
 //   全部、第 1 輪、--browse 時打開的那幾箱）、每趟從架上買幾張（唱片／其中 FEATURE）、架上稀有度（每格）
 function lotStats(L, n) {
@@ -698,6 +769,7 @@ if (I0) report.i0 = I0;
 if (WANT_N) report.want = WANT_N;
 if (WC_ON) report.waveC = WCC;                                             // 第 C 波：開著才多這些鍵（--wc off 時 JSON 跟 C 波之前一樣，只差 trial.guestHpSteps）
 if (COPT_SET) report.copt = COPT;
+if (ENC_ON) report.encore = { aceStar: EN.encCfg(C).aceStar, carry: EN.encCfg(C).carry !== false, aces: EN.encCfg(C).aces, facHeresy: EN.encCfg(C).facHeresy, ...(ENCPOL ? { encpol: true } : {}) };   // 第 I 波（--encore off＝不多這個鍵）
 if (SAFETY) report.safety = true;
 if (FROM) report.from = { n: FROM, relics: FROM_RELICS };
 if (RET_RELICS) report.returning = RET_RELICS;
@@ -714,6 +786,7 @@ if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] ||
 if (FAC) console.log('\n三流派（--fac＝?fac=1）：被動 ' + TIERS.map(t => C.factions[t].name + ' ' + JSON.stringify(C.factions[t].fx)).join('；') + '；本派選項' + (NOFACPICK ? '不出（--nofacpick）' : '每 ' + C.factions.levelEvery + ' 級（runPolicy 出了就拿）') + (APEX ? '；跟 --apex 同開：換一格 ' + (C.factions.apexSwap && C.factions.apexSwap.on !== false ? '開' : '關（只標示）') : ''));
 if (APEX_PARAMS) console.log('\n試調參數（--apex-params，不改 content.js）：' + JSON.stringify(APEX_PARAMS));
 if (UNLOCK) console.log('\n解鎖制（--unlock）：每一趟都是新玩家，只解鎖這一趟的派' + (APEX ? '；擁有的頂點卡只有那派預設那張' : ''));
+if (ENC_ON) console.log('\n翻面（第 I 波；--encore off 關）：7 星王牌 丟出之後' + TIERS.map(t => (C.aceTitle && C.aceTitle[t] || t) + ' ' + EN.aceEncoreOf(C, t, FAC).when).join('、') + ' → 王牌回到手上（' + EN.encCfg(C).aceStar + ' 星）；頂點卡照家族預設' + (ENCPOL ? '；策略包 encorePolicy（--encpol 上界）' : ''));
 if (APEX) console.log('\n頂點卡純輔助卡試做（--apex）：王牌 ' + (APEX_ACE ? C.cards[APEX_ACE].album + '（' + EN.abilityOf(C, APEX_ACE).name + '）' : '各派預設那張') + '；打贏回 ' + ((C.apexTrial && C.apexTrial.winHeal) || EN.trialCfg(C, TIER).heal));
 const cells = {};
 const cellOf = (flow, pol) => (cells[flow] || {})[pol];
@@ -777,11 +850,12 @@ if (MODE === 'all' || MODE === 'runs') {
 
   if (APEX) {                                                            // 頂點卡發動（--apex；只算客人場，序章不開）
     console.log(`\n頂點卡發動（客人場；發動那手的勝負＝那手扣他的 vs 他扣你的，回聲望不算在內）：\n`);
-    console.log('| 策略 | 流程 | 發動率（每場） | 平均第幾手 | 第 1／2／3／4／5／6 手（%） | 那手 贏／平／輸 | 那手淨賺（扣他−扣你） | 能力改了幾點 | 那手作用到 | 整場作用手數 | 回聲望 | 看穿 真／唬 | 場勝率 發動／沒發動 |');
-    console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
+    console.log('| 策略 | 流程 | 發動率（每場） | 平均第幾手 | 第 1／2／3／4／5／6 手（%） | 那手 贏／平／輸 | 那手淨賺（扣他−扣你） | 能力改了幾點 | 那手作用到 | 整場作用手數 | 回聲望 | 看穿 真／唬 | 場勝率 發動／沒發動 |' + (ENC_ON ? ' 翻面再發動（每場） |' : ''));
+    console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|' + (ENC_ON ? '---|' : ''));
     for (const x of rows) { const a = x.apex; if (!a) continue; const u = a.used || 1;
-      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(a.useRate)} | ${f2(a.n)} | ${a.nHist.map(k => p0(k / u)).join('／')} | ${p0(a.handWin)}／${p0(a.handTie)}／${p0(a.handLose)} | ${f2(a.net)} | ${f2(a.d)} | ${pct(a.hitHand)} | ${f2(a.hitsPerFight)} | ${f2(a.heal)} | ${a.rev.honest}／${a.rev.bluff} | ${pct(a.winUsed)}／${pct(a.winUnused)} |`); }
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(a.useRate)} | ${f2(a.n)} | ${a.nHist.map(k => p0(k / u)).join('／')} | ${p0(a.handWin)}／${p0(a.handTie)}／${p0(a.handLose)} | ${f2(a.net)} | ${f2(a.d)} | ${pct(a.hitHand)} | ${f2(a.hitsPerFight)} | ${f2(a.heal)} | ${a.rev.honest}／${a.rev.bluff} | ${pct(a.winUsed)}／${pct(a.winUnused)} |` + (ENC_ON ? ` ${pct(a.again)} |` : '')); }
   }
+  if (ENC_ON) printEnc(rows);                                            // 第 I 波翻面（--encore off 不印）
 
   if (FAC) {                                                             // 第 D 波棒二：流派被動（--fac；客人場，序章沒有）
     const FZ = { full: '整張', borrow: '借', underdog: '以小搏大', crit: '拆穿', crit2: '爆擊', heal: '回聲望', leech: '吸血', loseCost: '比星輸', cCost: '被剋', tieCost: '平手', thorn: '反傷', cut: '少扣' };

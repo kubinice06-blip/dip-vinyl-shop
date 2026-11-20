@@ -19,12 +19,21 @@
 //   5  ?apex=1 Lou Reed《Metal Machine Music》（異端整場型 critLeech：連剋 → 下一手剋中多扣 2）：發動、連剋兩手（debugOutcome counter）→
 //      籤「下一手剋中多扣 2」→ 那手他唬你、你剋中（setNext）：扣的＝同一份對決去掉翻面的 preview（已含倍數）＋2（＝「(原本×倍數)＋2」）、結果句有「翻面：剋中多扣 2」
 //   6  版面（每個尺寸）：王牌格的籤在王牌格裡、不壓到提示框；吐司在舞台那條（不蓋盤面）；結果框那行在結果框裡；變淡王牌格的說明框在畫面裡
+//   1  （續）這場紀錄：第 1 手「翻面」章、你那張 7 星；第 2 手 6 星沒章。1b 第一次翻面：頭上飄「翻面！」、老闆那句（ui.first）說 1 次、save.seen.encore 記上；下一場再翻面不再說
+//   2  （續）第 2 手剋中沒看穿＝還在等，「第 3 手」看穿才打贏（SPEC §1.9）；lastFight 成立那手＝3；領獎畫面重新整理（存檔來回）小字還在
+//   3  （續）這場紀錄只有第 2 手有「翻面」章、上一手詳情第 2 手有「翻面！再發動一次」
+//   4  （續）吃加成那手 clash pStar＝牌面＋1（上一手沒加）、這場紀錄寫的星數＝它
+//   6c–6e 版面：金籤「翻面×1」、「下一手 +1 星」、「下一手剋中多扣 2」在王牌格裡、最上層是籤、字沒被切、不壓提示框
+//   8  ?apex=1 Swans《Filth》（crit 整場：連剋 → 回 2 聲望）：聲望 6 → 8、結果框「翻面！回 2 聲望」、飄「翻面：聲望 +2」、沒吐司、籤收起；滿聲望回 0＝不寫不飄；
+//      測試卡（頁面裡把 Filth 改成「連剋 → 下一手剋中多扣 2」）：拆穿 ×2 那手扣「(原本×2)＋2」（＝去掉翻面的 preview＋2，不是＋4）
+//   9  ?fac=1 異端 7 星王牌：籤「連剋→再丟」；王牌丟出之前那手剋中不算、丟王牌那手看穿不算 → 下一手剋中＝連剋兩手 → 王牌回到手上 6 星；經典照舊「看穿→再丟」
+//   10 存檔（真的一趟）：翻面了重新整理 → 金、6 星照丟；run.encCarry 壞掉（{give:'heal'}、字串）→ null、照玩，好的留著 → 金籤；舊版對決（沒有 p.enc）照舊打完、沒有籤、不留
 //   7  說明：唱片資訊（7 星王牌「王牌翻面：丟出之後…」；?apex=1 頂點卡「王牌翻面：看穿他一次…」）、規則卡一段「翻面：…」（不捲）、
 //      ?apex=1 挑王牌面板三派 45 張逐一點（收到的＝選、沒收到的＝看說明）：「翻面：…」一行＝engine encoreLine、一行放得下（面板不捲、「就這張」在畫面裡）；點那行＝看全文
 //   每項最後看主控台 0 錯誤、畫面上的字沒有「安可」。任何 FAIL → exit 1。
 import fs from 'fs';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, openTitle, Q, duelReady, tapAt, hitPoint, jsClick, waitScreen, seededContinue, seedRun, passLoot,
-  longPress, infoOpen, closeInfo, noScroll, scrollOk } from './e2e-lib.mjs';
+  longPress, infoOpen, closeInfo, noScroll, scrollOk, watchSay } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.ENC_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -32,7 +41,7 @@ const want = n => !ONLY.length || ONLY.includes(n);
 const SHOTS = process.env.LAB_SHOTS ? process.env.LAB_SHOTS.replace(/\/+$/, '') + '/' : null;
 if (SHOTS) fs.mkdirSync(SHOTS, { recursive: true });
 const C = (page, f, a) => page.evaluate(f, a);
-const OKC = 'radiohead|ok computer', GOULD = 'glenn gould|bach: the goldberg variations (1955)', MMM = 'lou reed|metal machine music';
+const OKC = 'radiohead|ok computer', GOULD = 'glenn gould|bach: the goldberg variations (1955)', MMM = 'lou reed|metal machine music', FILTH = 'swans|filth';
 const short = x => JSON.stringify(x).slice(0, 400);
 const errs = page => page._errors.filter(e => !/favicon/.test(e));
 async function shot(page, name) { if (SHOTS) await page.screenshot({ path: SHOTS + name }); }
@@ -112,6 +121,58 @@ async function catchHand(page) {
 const inside = (a, b, pad = 1) => !!a && !!b && a[0] >= b[0] - pad && a[1] >= b[1] - pad && a[2] <= b[2] + pad && a[3] <= b[3] + pad;
 const meets = (a, b) => !!a && !!b && a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3];
 const rectOf = (page, sel) => C(page, s => { const e = document.querySelector(s); if (!e) return null; const r = e.getBoundingClientRect(); return r.width ? [r.left, r.top, r.right, r.bottom] : null; }, sel);
+// 王牌格的籤（灰籤、金籤「翻面×1」、「下一手 +1 星」「下一手剋中多扣 2」）版面：在王牌格裡（王牌格疊在手牌最上面＝不蓋到別張露出來的那塊）、
+//   籤中間那點最上層是籤自己（沒被別的東西蓋住）、字沒被切（scrollWidth ≤ clientWidth）、不壓提示框、在畫面裡
+const tagLay = page => C(page, () => {
+  const R = e => { if (!e) return null; const r = e.getBoundingClientRect(); return r.width ? [r.left, r.top, r.right, r.bottom] : null; };
+  const t = document.querySelector('.dl .tiles .tile[data-i="ace"]'), g = t && t.querySelector('.enctag'), gr = R(g);
+  // 籤是 pointer-events:none（點下去＝點王牌格）：量最上層時暫時打開，量完還原
+  let top = null; if (gr) { const pe = g.style.pointerEvents; g.style.pointerEvents = 'auto'; top = document.elementFromPoint((gr[0] + gr[2]) / 2, (gr[1] + gr[3]) / 2); g.style.pointerEvents = pe; }
+  return { tx: g ? g.textContent : null, tag: gr, tile: R(t), hint: R(document.querySelector('.dl .hint')), clip: g ? g.scrollWidth - g.clientWidth : null,
+    onTop: !!(top && g && (top === g || g.contains(top))), vw: innerWidth, vh: innerHeight };
+});
+const tagLayOk = L => !!L.tag && inside(L.tag, L.tile) && !meets(L.tag, L.hint) && L.onTop && L.clip <= 1 && L.tag[0] >= 0 && L.tag[2] <= L.vw && L.tag[3] <= L.vh;
+// 這場紀錄（頂欄「紀錄」＝recap('list')）每一行：手數、翻面章（.tg.enc）、你那張的星數
+async function recapRows(page) {
+  await C(page, () => window.DipLabDuel.api().recap('list')); await sleep(400);
+  const rows = await C(page, () => [...document.querySelectorAll('.dl .dl-rc .rc-row')].map(b => ({ n: +b.dataset.rcN, enc: (b.querySelector('.tg.enc') || {}).textContent || null,
+    p: (b.querySelector('.sd.p .num') || {}).textContent || null })));
+  await C(page, () => window.DipLabDuel.api().recap(false)); await sleep(200);
+  return rows;
+}
+// 他唬你、你剋中（看得出來的唬）那一手的計畫：手牌第 i 張的最高那色 X，他出被 X 剋的那色 Y（≠ 提示色）、他手牌裡有那色的牌；
+//   toE0＝同一份對決把翻面關掉（state done）的 preview（已含倍數）、p0＝那份 preview 本身（apex.dE＝倍數多扣的）
+const bluffPlan = page => C(page, () => {
+  const d = window.__lab.rawDuel(), E = window.DipLabEngine, BE = { o: 'c', c: 'h', h: 'o' }, h = d.plan.hint;
+  for (let i = 0; i < d.p.hand.length; i++) {
+    const c = d.p.hand[i]; if (!c) continue;
+    const X = E.topAttr(c), Y = BE[X];
+    if (h.kind === 'one' ? Y === h.attr : h.kind === 'half' ? Y !== h.not : true) continue;
+    for (let j = 0; j < d.e.hand.length; j++) {
+      const cl = JSON.parse(JSON.stringify(d)); cl.p.enc.state = 'done';
+      const p0 = E.preview(cl, { i, attr: X }, { i: j, attr: Y }), p1 = E.preview(d, { i, attr: X }, { i: j, attr: Y });
+      if (p0 && p0.kind === 'counter' && p0.toE > 0) return { i, j, X, Y, toE0: p0.toE, toE1: p1.toE, apex0: p0.apex || null, n1: (p1.notes || []).map(n => n.text || n) };
+    }
+  }
+  return null;
+});
+async function playPlan(page, plan) {
+  await C(page, p => window.__lab.duelLab.setNext({ i: p.j, attr: p.Y }), plan);
+  await tapAt(page, `dt:card-${plan.i}`); await sleep(220);
+  await tapAt(page, `.dl [data-tut="chip-${plan.i}-${plan.X}"]`);
+  return settle(page);
+}
+// 浮字（duel.js floatAt：.fl）與舞台上頭頂飄的字（stage.float）：記下來
+async function watchFloats(page) {
+  await C(page, () => {
+    window.__fl = []; window.__sf = [];
+    new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('fl')) window.__fl.push(n.textContent); })))
+      .observe(document.getElementById('app'), { childList: true, subtree: true });
+    const st = window.__lab.stage; if (st && !st.__flW) { const o = st.float; st.float = function (id, t) { window.__sf.push({ id, t: String(t) }); return o.apply(this, arguments); }; st.__flW = true; }
+  });
+}
+const firstOf = page => C(page, () => String(window.DipLabContent.encore.ui.first || '').replace(/^「|」$/g, ''));
+const saidN = (page, line) => C(page, l => (window.__said || []).filter(x => x.t.replace(/^「|」$/g, '') === l).length, line);
 
 async function runSize(browser, w, h) {
   const size = `${w}x${h}`;
@@ -120,9 +181,11 @@ async function runSize(browser, w, h) {
     const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
     try {
       await openTitle(page, Q('&fast=1'));
-      await watchToasts(page);
+      await watchToasts(page); await watchSay(page);
       await lab(page, { ace: 'hall', enemy: 'copycat', seed: 2, encore: true });
+      await watchFloats(page);
       const U = await C(page, () => window.DipLabContent.encore.ui);
+      const seen0 = await C(page, () => !!(window.__lab.save.seen || {}).encore);
       const t0 = await aceTile(page), v0 = await V(page);
       await shot(page, `${size}-1a-idle.png`);
       await force(page, { kind: 'counter', toE: 2, toP: 0, caught: true });
@@ -143,6 +206,9 @@ async function runSize(browser, w, h) {
       await C(page, () => window.DipLabDuel.select(null));
       await sleep(3600);
       const ts = await toasts(page);
+      // 第一次翻面：老闆那句（吐司收掉之後；說出口才記 save.seen.encore）；你頭上飄「翻面！」
+      const first = await firstOf(page), said1 = await saidN(page, first), seen1 = await C(page, () => !!window.__lab.save.seen.encore);
+      const sf1 = await C(page, () => (window.__sf || []).filter(x => x.id === 'p').map(x => x.t));
       // 再丟（6 星，不看穿）→ 收起
       await force(page, { kind: 'counter', toE: 1, toP: 0, caught: false });
       const a2 = await throwAce(page);
@@ -153,6 +219,19 @@ async function runSize(browser, w, h) {
       await throwCard(page, 0);
       await force(page, null);
       const h3 = await lastHand(page), t3 = await aceTile(page), v3 = await V(page);
+      // 這場紀錄：第 1 手（丟王牌、看穿）有「翻面」章、你那張 7 星；第 2 手（安可那次）6 星、沒有章；第 3 手沒有章
+      const rows = await recapRows(page);
+      const recapTx = await C(page, () => window.DipLabContent.encore.ui.recap);
+      // 同一份存檔再一場、再翻面：老闆那句不再說
+      await lab(page, { ace: 'hall', enemy: 'copycat', seed: 7, encore: true });
+      await watchSay(page);
+      const k0 = await C(page, () => (window.__encT || []).length);
+      await force(page, { kind: 'counter', toE: 2, toP: 0, caught: true });
+      await throwAce(page);
+      await force(page, null);
+      const gotT2 = await waitToast(page, k0);
+      await sleep(3800);
+      const said2 = await saidN(page, first), v4 = await V(page);
       const fails = [];
       if (!(t0.has && t0.tag === '看穿→再丟' && /\bwait\b/.test(t0.tagCls) && v0.enc && v0.enc.state === 'idle')) fails.push('開打 ' + short([t0, v0 && v0.enc]));
       if (!(a1.chip && a1.chip.n === '7')) fails.push('第一次丟 7 星 ' + short(a1));
@@ -162,8 +241,14 @@ async function runSize(browser, w, h) {
       if (!(gotT && ts.length === 1 && ts[0].t === '翻面！《OK Computer》可以再丟一次' && ts[0].ms >= 2950)) fails.push('吐司 ' + short(ts));
       if (!(a2.chip && a2.chip.n === '6' && !t2.has && v2.enc.state === 'done' && v2.aceUsed)) fails.push('再丟收起 ' + short([a2, t2, v2 && v2.enc]));
       if (!(h3 && !h3.evs.some(e => e.t === 'encore') && !h3.ct.encLine && !t3.has && v3.enc.state === 'done')) fails.push('再看穿不再翻面 ' + short([h3 && h3.evs, t3]));
+      if (!(rows.length === 3 && rows[0].n === 1 && rows[0].enc === recapTx && rows[0].p === '7' && rows[1].enc == null && rows[1].p === '6' && rows[2].enc == null)) fails.push('這場紀錄 ' + short(rows));
+      const f1b = [];
+      if (!(!seen0 && first && said1 === 1 && seen1)) f1b.push('第一次老闆那句 ' + short({ seen0, said1, seen1, first }));
+      if (!(sf1.filter(t => t === U.stamp).length === 1)) f1b.push('頭上飄「翻面！」 ' + short(sf1));
+      if (!(gotT2 && v4.enc.state === 'hit' && said2 === 0)) f1b.push('第二次不再說 ' + short({ gotT2, said2, enc: v4 && v4.enc }));
       const anko = await noAnko(page), er = errs(page);
-      if (want(1)) record(1, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `灰籤「${t0.tag}」→ 看穿「${h1.ct.encLine}」金、經 6、吐司 ${ts[0].ms} ms → 再丟收起、再看穿不翻面${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+      if (want(1)) record(1, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `灰籤「${t0.tag}」→ 看穿「${h1.ct.encLine}」金、經 6、吐司 ${ts[0].ms} ms → 再丟收起、再看穿不翻面；這場紀錄 ${rows.map(r => r.n + ':' + r.p + (r.enc ? '・' + r.enc : '')).join(' ')}${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+      if (want(1)) record('1b', size, !f1b.length && !er.length, f1b.length ? f1b.join('；') : `第一次翻面：頭上飄「${U.stamp}」、老闆「${first}」說 1 次、save.seen.encore 記上；下一場再翻面不再說`);
       if (want(6)) {
         const f6 = [];
         if (!(inside(lay.tag, lay.tile) && !meets(lay.tag, lay.hint))) f6.push('籤 ' + short([lay.tag, lay.tile, lay.hint]));
@@ -198,14 +283,27 @@ async function runSize(browser, w, h) {
       if (!(tg.has && /\bghost\b/.test(tg.cls) && tg.tag === '看穿→再丟' && /\bwait\b/.test(tg.tagCls) && vg.enc.state === 'wait' && vg.aceUsed)) fails.push('丟了在等 ' + short([tg, vg && vg.enc]));
       if (!(tip.tx === line && !tip.chip)) fails.push('點變淡王牌格 ' + short([tip, line]));
       if (want(6)) record('6b', size, !!tip.rect && tip.rect[0] >= 0 && tip.rect[2] <= tip.vw && tip.rect[1] >= 0, `說明框 ${short(tip.rect)}（畫面 ${tip.vw}×${tip.vh}）`);
-      // 下一手看穿而且打贏 → 留到下一位
+      // 第 2 手沒看穿（剋中但他沒唬）→ 還在等；第 3 手看穿而且打贏 → 留到下一位（SPEC §1.9「丟王牌之後第 3 手看穿」）
+      await force(page, { kind: 'counter', toE: 1, toP: 0, caught: false });
+      await throwCard(page, 0);
+      await force(page, null);
+      const v2w = await V(page);
+      if (!(v2w && v2w.n === 3 && v2w.enc.state === 'wait' && !v2w.over)) fails.push('第 2 手沒看穿還在等 ' + short(v2w && [v2w.n, v2w.enc]));
       await force(page, { kind: 'counter', toE: 99, toP: 0, caught: true });
       await throwCard(page, 0);
       await force(page, null);
       await waitScreen(page, 'reward', 20000); await sleep(1500);
-      const rw = await C(page, () => { const p = document.querySelector('#panel .lb-sheet.reward .lb-enccarry'); return { tx: p ? p.textContent : null, carry: window.__lab.run.encCarry, vis: !!p && p.getBoundingClientRect().height > 0 }; });
+      const rwOf = () => C(page, () => { const p = document.querySelector('#panel .lb-sheet.reward .lb-enccarry'); const r = p && p.getBoundingClientRect(); return { tx: p ? p.textContent : null, carry: window.__lab.run.encCarry, vis: !!r && r.height > 0 && r.top >= 0 && r.bottom <= innerHeight,
+        litAt: (((window.__lab.run.lastFight || {}).log) || []).filter(L => L.enc).map(L => L.n + ':' + L.enc.when + ':' + L.enc.give) }; });
+      const rw = await rwOf();
       await shot(page, `${size}-2b-carry.png`);
-      if (!(rw.tx === '翻面留到下一位' && rw.vis && rw.carry && rw.carry.give === 'again')) fails.push('領獎小字 ' + short(rw));
+      if (!(rw.tx === '翻面留到下一位' && rw.vis && rw.carry && rw.carry.give === 'again' && rw.litAt.join() === '3:caught:again')) fails.push('領獎小字 ' + short(rw));
+      // 領獎畫面重新整理（存檔來回：run.encCarry 過 validRun 留著）→ 小字還在
+      await openTitle(page, Q('&fast=1'));
+      await jsClick(page, '[data-a=cont]');
+      await waitScreen(page, 'reward', 20000); await sleep(1500);
+      const rwR = await rwOf();
+      if (!(rwR.tx === '翻面留到下一位' && rwR.carry && rwR.carry.give === 'again')) fails.push('重新整理後領獎小字 ' + short(rwR));
       await passLoot(page);
       await waitScreen(page, 'night', 20000); await sleep(500);
       await jsClick(page, '[data-a=go]');
@@ -213,6 +311,8 @@ async function runSize(browser, w, h) {
       await page.waitForFunction(() => !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
       await sleep(300);
       const tc = await aceTile(page), vc = await V(page), pos1 = await C(page, () => window.__lab.run.pos);
+      const layC = await tagLay(page);
+      if (want(6)) record('6c', size, tagLayOk(layC), `金籤「${layC.tx}」${short([layC.tag, layC.tile])}：在王牌格裡、最上層 ${layC.onTop}、字切掉 ${layC.clip}、不壓提示框 ${!meets(layC.tag, layC.hint)}`);
       await shot(page, `${size}-2c-carrytag.png`);
       await force(page, { kind: 'counter', toE: 1, toP: 0, caught: false });
       const ac1 = await throwAce(page);
@@ -271,8 +371,11 @@ async function runSize(browser, w, h) {
       const raw = await C(page, () => { const d = window.__lab.rawDuel(); return { hist: d.p.apexHist.map(x => x.heal), on: d.p.apexOn && d.p.apexOn.heal, apexAt2: d.stats.apexAt2 }; });
       // 上一手詳情：第 1 手、第 3 手（兩次發動那手）都有回 2 那句（發動在出牌前、另外按的：回聲望記在 apexOn／apexHist 與那手的結果句）
       const rcAt = async k => { await C(page, k => window.DipLabDuel.api().recap('hand', k), k); await sleep(350); const t = await C(page, () => { const p = document.querySelector('.dl .dl-rc'); return p ? p.textContent : null; }); await C(page, () => window.DipLabDuel.api().recap(false)); await sleep(200); return t; };
-      const rc1 = await rcAt(1), rc = await rcAt(3);
+      const rc1 = await rcAt(1), rc = await rcAt(3), rc2 = await rcAt(2);
       const healNote = await C(page, () => (window.DipLabContent.apexTrial.notes.heal || '').replace('{d}', 2).replace('{h}', 2));
+      // 這場紀錄：只有第 2 手（翻面成立那手）有「翻面」章；上一手詳情第 2 手有「翻面！再發動一次」那行
+      const rows3 = await recapRows(page), recapTx = await C(page, () => window.DipLabContent.encore.ui.recap);
+      if (!(rows3.length >= 3 && rows3.filter(r => r.enc).map(r => r.n + ':' + r.enc).join() === '2:' + recapTx && rc2 && rc2.includes('翻面！再發動一次'))) fails.push('這場紀錄章 ' + short([rows3, rc2]));
       if (!(t0.tag === '看穿→再一次' && /\bwait\b/.test(t0.tagCls) && b1 && b1.go && b1.enc === '翻面：看穿他一次，再發動一次。')) fails.push('開打 ' + short([t0, b1]));
       if (!(h1 && !h1.evs.some(e => e.t === 'encore') && t1.apex === 'used' && /\bwait\b/.test(t1.tagCls || '') && v1.enc.state === 'wait')) fails.push('發動那手不算 ' + short([h1 && h1.evs, t1, v1 && v1.enc]));
       if (!(h2 && h2.ct.encLine === '翻面！再發動一次' && t2.apex === 'can' && /\blit\b/.test(t2.tagCls || '') && v2.apex.can && !v2.apex.used)) fails.push('下一手看穿 → 能力回來 ' + short([h2 && h2.ct.encLine, t2, v2 && v2.apex]));
@@ -312,8 +415,14 @@ async function runSize(browser, w, h) {
       const h2 = await lastHand(page), t2 = await aceTile(page), v2 = await V(page);
       await shot(page, `${size}-4a-next.png`);
       const pv = await C(page, () => { const d = window.__lab.rawDuel(), E = window.DipLabEngine, a = E.legalActions(d).find(x => !x.ace && !x.apex); const p = E.preview(d, a, { i: d.plan.idx, attr: d.plan.attr }) || {}; return { a, notes: (p.notes || []).map(n => n.text || n) }; });
+      const lay4 = await tagLay(page);
+      if (want(6)) record('6d', size, tagLayOk(lay4), `「${lay4.tx}」${short([lay4.tag, lay4.tile])}：在王牌格裡、最上層 ${lay4.onTop}、字切掉 ${lay4.clip}、不壓提示框 ${!meets(lay4.tag, lay4.hint)}`);
       await throwCard(page, 0);
       const h3 = await lastHand(page), t3 = await aceTile(page), v3 = await V(page);
+      // 那手你那張的星數：clash 的 pStar＝牌面（pBase）＋1；牌桌／這場紀錄寫的就是這個數；上一手（第 2 手）沒加
+      const st4 = await C(page, () => { const g = window.DipLabDuel.debug(), hs = g.hands.slice(-2).map(h => (h.evs.find(e => e.t === 'clash') || {})); return hs.map(c => [c.pBase, c.pStar]); });
+      const rows4 = await recapRows(page);
+      if (!(st4.length === 2 && st4[0][1] === st4[0][0] && st4[1][1] === st4[1][0] + 1 && rows4.length === 3 && rows4[2].p === String(st4[1][1]))) fails.push('那手 +1 星 ' + short([st4, rows4]));
       if (!(h2 && h2.ct.encLine === '翻面！下一手 +1 星' && t2.tag === '下一手 +1 星' && /\blit\b/.test(t2.tagCls || '') && v2.enc.next === 'star')) fails.push('看穿 → 下一手 ' + short([h2 && h2.ct.encLine, t2, v2 && v2.enc]));
       if (!pv.notes.includes('翻面：+1 星')) fails.push('preview ' + short(pv));
       const cn = h3 && (h3.evs.find(e => e.t === 'clash') || {}).notes || [];
@@ -338,6 +447,8 @@ async function runSize(browser, w, h) {
       await force(page, null);
       const h2 = await lastHand(page), t2 = await aceTile(page), v2 = await V(page);
       await shot(page, `${size}-5a-hit.png`);
+      const lay5 = await tagLay(page);
+      if (want(6)) record('6e', size, tagLayOk(lay5), `「${lay5.tx}」${short([lay5.tag, lay5.tile])}：在王牌格裡、最上層 ${lay5.onTop}、字切掉 ${lay5.clip}、不壓提示框 ${!meets(lay5.tag, lay5.hint)}`);
       // 他唬你、你剋中：挑手牌第 i 張的最高那色 X，他出被 X 剋的那色 Y（≠ 提示色＝看得出來的唬）、他手牌裡有那色的牌
       const plan = await C(page, () => {
         const d = window.__lab.rawDuel(), E = window.DipLabEngine, BE = { o: 'c', c: 'h', h: 'o' }, h = d.plan.hint;
@@ -371,6 +482,175 @@ async function runSize(browser, w, h) {
       const anko = await noAnko(page), er = errs(page);
       record(5, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `MMM：連剋 → 籤「${t2.tag}」→ 拆穿那手扣 ${plan.toE}＝去掉翻面的 ${plan.toE0}（含倍數）＋2${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
     } catch (e) { record(5, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+  // ---------------------------------------------------------------- 8：?apex=1 Swans《Filth》（異端整場型 crit：連剋 → 回 2 聲望）
+  //   (a) 聲望 6／12：發動、連剋兩手 → 那手回 2（log enc.heal 2、聲望 8）、結果框「翻面！回 2 聲望」、聲望旁飄「翻面：聲望 +2」、沒有吐司、籤收起
+  //   (b) 滿聲望：連剋兩手 → 回 0＝不寫那行、不飄字（跟頂點卡「不寫回 0」同一個規矩）、籤收起
+  //   (c) 測試卡（頁面裡把 Filth 的翻面改成「連剋 → 下一手剋中多扣 2」；真名單沒有「×2＋多扣」的卡，CONTRACT §7）：拆穿那手（×2）扣「(原本×2)＋2」不是「(原本＋2)×2」
+  if (want(8)) {
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+    try {
+      const fails = [];
+      await openTitle(page, Q('&fast=1&apex=1'));
+      await watchToasts(page);
+      await lab(page, { ace: 'heresy', aceId: FILTH, enemy: 'copycat', seed: 8, encore: true, hpNow: 6 });
+      await watchFloats(page);
+      const t0 = await aceTile(page);
+      await fireApex(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0 });
+      await throwCard(page, 0);
+      const vA = await V(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0 });
+      await throwCard(page, 0);
+      await force(page, null);
+      const h2 = await lastHand(page), t2 = await aceTile(page), v2 = await V(page);
+      await sleep(1500);
+      const fl = await C(page, () => window.__fl.slice()), ts = await toasts(page), sf = await C(page, () => (window.__sf || []).filter(x => x.id === 'p').map(x => x.t));
+      const L2 = await C(page, () => { const d = window.__lab.rawDuel(); const L = d.log[1]; return { enc: L.enc || null, pHp: L.pHp, heal: L.heal || 0, st: d.stats.enc }; });
+      await shot(page, `${size}-8a-heal.png`);
+      const U = await C(page, () => window.DipLabContent.encore.ui);
+      if (!(t0.tag === '連剋→回 2' && /\bwait\b/.test(t0.tagCls || ''))) fails.push('開打籤 ' + short(t0));
+      if (!(vA.enc.state === 'wait' && vA.pHp === 6)) fails.push('發動那手（第 1 手）不算 ' + short(vA && [vA.enc, vA.pHp]));
+      if (!(h2 && h2.ct.encLine === '翻面！回 2 聲望' && h2.evs.some(e => e.t === 'encore' && e.give === 'heal' && e.heal === 2) && v2.pHp === 8 && L2.enc && L2.enc.heal === 2 && L2.pHp === 8 && L2.st.heal === 2))
+        fails.push('回 2 ' + short([h2 && h2.ct.encLine, h2 && h2.evs, v2 && v2.pHp, L2]));
+      if (!(fl.includes('翻面：聲望 +2') && sf.includes(U.stamp))) fails.push('飄字 ' + short([fl, sf]));
+      if (!(ts.length === 0 && !t2.tag && v2.enc.state === 'done')) fails.push('沒有吐司、籤收起 ' + short([ts, t2, v2 && v2.enc]));
+      // (b) 滿聲望
+      await lab(page, { ace: 'heresy', aceId: FILTH, enemy: 'copycat', seed: 8, encore: true });
+      await watchFloats(page);
+      const hp0 = (await V(page)).pHp;
+      await fireApex(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0 });
+      await throwCard(page, 0);
+      await force(page, { kind: 'counter', toE: 1, toP: 0 });
+      await throwCard(page, 0);
+      await force(page, null);
+      const hb = await lastHand(page), tb = await aceTile(page), vb = await V(page);
+      await sleep(800);
+      const flb = await C(page, () => window.__fl.slice());
+      if (!(hb && !hb.ct.encLine && hb.evs.some(e => e.t === 'encore' && e.heal === 0) && vb.pHp === hp0 && !flb.some(t => /翻面/.test(t)) && !tb.tag && vb.enc.state === 'done'))
+        fails.push('滿聲望回 0 不寫 ' + short([hb && hb.ct, hb && hb.evs, hp0, vb && vb.pHp, flb, tb]));
+      // (c) 測試卡：Filth 改成連剋 → 下一手剋中多扣 2
+      await openTitle(page, Q('&fast=1&apex=1'));
+      await C(page, id => { const x = window.DipLabContent.apexTrial.heresy.find(e => e.card === id); x.encore = { when: 'combo2', give: 'hit' }; }, FILTH);
+      await lab(page, { ace: 'heresy', aceId: FILTH, enemy: 'copycat', seed: 9, encore: true });
+      const tc = await aceTile(page);
+      await fireApex(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0 });
+      await throwCard(page, 0);
+      await force(page, { kind: 'counter', toE: 1, toP: 0 });
+      await throwCard(page, 0);
+      await force(page, null);
+      const vc = await V(page), plan = await bluffPlan(page);
+      let toE = null, h3 = null;
+      if (!plan) fails.push('找不到他唬你、你剋中的那手');
+      else {
+        await playPlan(page, plan);
+        h3 = await lastHand(page);
+        toE = await C(page, () => { const d = window.__lab.rawDuel(); return d.log[d.log.length - 1].toE; });
+        const A0 = plan.apex0 || {};
+        // toE0＝把翻面關掉的同一手（含 ×2）：apex.caught、倍數多扣的 dE＝原本（toE0＝2×原本）；實際＝toE0＋2（不是 (原本＋2)×2＝toE0＋4）
+        if (!(A0.caught && A0.dE > 0 && A0.dE * 2 === plan.toE0 && toE === plan.toE0 + 2 && plan.toE1 === toE && h3 && h3.ct.notes.includes('翻面：剋中多扣 2')))
+          fails.push('(×2)＋2 ' + short({ toE, plan, notes: h3 && h3.ct.notes }));
+      }
+      if (!(tc.tag === '連剋→多扣 2' && vc.enc.next === 'hit')) fails.push('測試卡籤 ' + short([tc, vc && vc.enc]));
+      const anko = await noAnko(page), er = errs(page);
+      record(8, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `Filth：連剋 → 「${h2.ct.encLine}」聲望 6→${v2.pHp}、飄「翻面：聲望 +2」、沒吐司；滿聲望回 0 不寫；測試卡 ×2：扣 ${toE}＝${plan.toE0}（原本 ${plan.apex0.dE}×2）＋2${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+    } catch (e) { record(8, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+  // ---------------------------------------------------------------- 9：?fac=1 異端 7 星王牌（翻面改「連剋兩手」；經典照舊看穿）
+  //   第 1 手手牌剋中（王牌還沒丟）→ 第 2 手丟王牌剋中＋看穿：前一手在丟王牌之前、異端不吃看穿 → 不翻面 → 第 3 手剋中＝丟出之後連剋兩手 → 王牌回到手上 6 星
+  if (want(9)) {
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+    try {
+      const fails = [];
+      await openTitle(page, Q('&fast=1&fac=1'));
+      await lab(page, { ace: 'heresy', enemy: 'copycat', seed: 10, encore: true });
+      const t0 = await aceTile(page), v0 = await V(page), facOn = await C(page, () => window.__lab.rawDuel().p.fac || null);
+      const ref = await C(page, () => { const E = window.DipLabEngine, Cn = window.DipLabContent; return { her: E.encoreLine(Cn, E.aceEncoreOf(Cn, 'heresy', true), { ace: true }), hall: E.encoreTag(Cn, E.aceEncoreOf(Cn, 'hall', true), { ace: true }) }; });
+      await force(page, { kind: 'counter', toE: 1, toP: 0, caught: true });
+      await throwCard(page, 0);
+      await force(page, { kind: 'counter', toE: 1, toP: 0, caught: true });
+      const a1 = await throwAce(page);
+      const h2 = await lastHand(page), v2 = await V(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0, caught: false });
+      await throwCard(page, 0);
+      await force(page, null);
+      const h3 = await lastHand(page), t3 = await aceTile(page), v3 = await V(page);
+      if (facOn !== 'heresy') fails.push('沒帶派別 ' + short(facOn));
+      if (!(t0.tag === '連剋→再丟' && v0.enc.when === 'combo2' && ref.her === '翻面：丟出之後連剋兩手，王牌回到手上（6 星）。' && ref.hall === '看穿→再丟')) fails.push('開打 ' + short([t0, v0 && v0.enc, ref]));
+      if (!(a1.chip && a1.chip.n === '7' && h2 && !h2.evs.some(e => e.t === 'encore') && v2.enc.state === 'wait')) fails.push('丟王牌那手（前一手在丟之前）不翻面 ' + short([a1, h2 && h2.evs, v2 && v2.enc]));
+      if (!(h3 && h3.ct.encLine === '翻面！王牌回到手上（6 星）' && v3.enc.state === 'hit' && v3.aceStar === 6 && /\blit\b/.test(t3.tagCls || ''))) fails.push('連剋兩手 → 王牌回來 ' + short([h3 && h3.ct.encLine, v3 && v3.enc, t3]));
+      const anko = await noAnko(page), er = errs(page);
+      record(9, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `?fac=1 異端：籤「${t0.tag}」→ 丟王牌那手看穿不算 → 下一手連剋「${h3.ct.encLine}」6 星；經典照舊「${ref.hall}」${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+    } catch (e) { record(9, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+  // ---------------------------------------------------------------- 10：存檔（真的一趟；SPEC §1.10、§10）
+  //   (a) 對決中翻面成立（王牌回到手上 6 星）→ 重新整理、繼續 → 王牌格還是金、6 星、丟得出去
+  //   (b) run.encCarry 壞掉（{give:'heal'}、字串）→ 載入設成 null、這一趟照玩（validRun 不判整趟不合法）；好的 {give:'again'} → 留著、下一位開打金籤「翻面×1」
+  //   (c) 舊版對決（存檔裡的對決沒有 p.enc：第 I 波以前的頁面存的）→ 照舊打完：王牌格沒有籤、王牌 7 星、0 錯誤
+  if (want(10)) {
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+    const LS = (page, f, a) => C(page, ([f, a]) => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); new Function('s', 'a', f)(s, a); localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); }, [f, a]);
+    const reload = async (page, scr) => { await openTitle(page, Q('&fast=1')); await jsClick(page, '[data-a=cont]'); await waitScreen(page, scr, 20000); await sleep(600); };
+    const goDuel = async page => { await jsClick(page, '[data-a=go]'); await duelReady(page, 25000); await page.waitForFunction(() => !window.__lab.going(), null, { timeout: 15000 }).catch(() => {}); await sleep(300); };
+    try {
+      const fails = [];
+      // (a)
+      await seededContinue(page, { ace: 'hall', idx: 0 }, Q('&fast=1'));
+      await waitScreen(page, 'night'); await sleep(500);
+      await goDuel(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0, caught: true });
+      await throwAce(page);
+      await force(page, null);
+      const va = await V(page), n0 = va.n;
+      await sleep(400);
+      const stored = await C(page, () => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); const d = s.run && s.run.duel; return d && d.p && d.p.enc ? { st: d.p.enc.state, encAce: d.p.encAce, n: d.n } : null; });
+      await reload(page, 'duel'); await duelReady(page, 20000); await sleep(400);
+      const tr = await aceTile(page), vr = await V(page);
+      const ar = await throwAce(page);
+      if (!(va.enc.state === 'hit' && stored && stored.st === 'hit' && stored.encAce === true && vr && vr.n === n0 && vr.enc.state === 'hit' && vr.aceStar === 6 && /\blit\b/.test(tr.cls) && ar.chip && ar.chip.n === '6'))
+        fails.push('(a) 重新整理 ' + short({ va: va && va.enc, stored, vr: vr && [vr.n, vr.enc, vr.aceStar], tr, ar }));
+      // (b) 壞的 encCarry → null；好的留著
+      await seededContinue(page, { ace: 'hall', idx: 1 }, Q('&fast=1'));
+      await waitScreen(page, 'night'); await sleep(400);
+      const pos0 = await C(page, () => window.__lab.run.pos);
+      await LS(page, 's.run.encCarry = { give: "heal" };');
+      await reload(page, 'night');
+      const rb1 = await C(page, () => ({ carry: window.__lab.run.encCarry, pos: window.__lab.run.pos, over: !!window.__lab.run.over }));
+      await LS(page, 's.run.encCarry = "again";');
+      await reload(page, 'night');
+      const rb2 = await C(page, () => ({ carry: window.__lab.run.encCarry, pos: window.__lab.run.pos }));
+      await LS(page, 's.run.encCarry = { give: "again" };');
+      await reload(page, 'night');
+      const rb3 = await C(page, () => ({ carry: window.__lab.run.encCarry }));
+      await goDuel(page);
+      const tb = await aceTile(page), vb = await V(page), rb4 = await C(page, () => ({ carry: window.__lab.run.encCarry }));
+      if (!(rb1.carry === null && rb1.pos === pos0 && !rb1.over && rb2.carry === null && rb2.pos === pos0)) fails.push('(b) 壞的 encCarry ' + short([pos0, rb1, rb2]));
+      if (!(rb3.carry && rb3.carry.give === 'again' && tb.tag === '翻面×1' && vb.enc.state === 'carry' && rb4.carry === null)) fails.push('(b) 好的留著 ' + short([rb3, tb, vb && vb.enc, rb4]));
+      // (c) 舊版對決（沒有 p.enc）
+      await seededContinue(page, { ace: 'hall', idx: 2 }, Q('&fast=1'));
+      await waitScreen(page, 'night'); await sleep(400);
+      await goDuel(page);
+      await sleep(300);
+      await LS(page, 'const d = s.run.duel; delete d.p.enc; delete d.p.encPrev; delete d.p.encAce; delete d.encNum; delete d.encText; if (d.stats) delete d.stats.enc; delete s.run.encCarry; delete s.seen.encore;');
+      await reload(page, 'duel'); await duelReady(page, 20000); await sleep(400);
+      const tcx = await aceTile(page), vcx = await V(page);
+      await force(page, { kind: 'counter', toE: 1, toP: 0, caught: true });
+      const acx = await throwAce(page);
+      await force(page, null);
+      const hcx = await lastHand(page), vcx2 = await V(page);
+      await C(page, () => window.__lab.forceWin());
+      await waitScreen(page, 'reward', 20000); await sleep(1200);
+      const rcx = await C(page, () => ({ p: !!document.querySelector('#panel .lb-enccarry'), carry: window.__lab.run.encCarry }));
+      if (!(tcx.has && !tcx.tag && !vcx.enc && acx.chip && acx.chip.n === '7' && hcx && !hcx.evs.some(e => e.t === 'encore') && vcx2.aceUsed && !rcx.p && !rcx.carry))
+        fails.push('(c) 舊版對決 ' + short({ tcx, enc: vcx && vcx.enc, acx, evs: hcx && hcx.evs, rcx }));
+      const anko = await noAnko(page), er = errs(page);
+      record(10, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `(a) 翻面了重新整理：第 ${n0} 手、金、6 星照丟；(b) 壞的 encCarry → null、第 ${pos0} 位照玩、好的 → 金籤「${tb.tag}」；(c) 舊版對決沒有籤、7 星、打完沒有留${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+    } catch (e) { record(10, size, false, 'error ' + e.message); }
     await ctx.close();
   }
   // ---------------------------------------------------------------- 7：說明（唱片資訊、規則卡、頂點卡挑王牌面板）
