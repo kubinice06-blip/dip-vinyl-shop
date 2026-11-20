@@ -22,6 +22,18 @@
  *                 DipLabChars.DIRS 沒有 'side'（?chars=0、舊 chars.js）時橫走照第一步：正面左右翻。只有站、走有背面／側面，其他姿勢一律正面。
  *                 到站 0.2 秒後轉回正面（試聽桌 listen 例外：背面；layout.faceAt 可改，見 arriveDir）；
  *                 停著時叫 flip／pose／arm／hold 轉回正面、put 一律正面；shop.pos(id).dir／flip 給測試看；shop.dir(id, 'back') 劇本手動指定
+ *   活店（SPEC-H §5、§11.3，斜俯視才有）：
+ *     shop.addHot({ id, follow, rel, action, label, pri, noSparkle, minY, noLabel }) / removeHot(id)：執行期加跟著人走的熱點（不進 layout.hotspots）；
+ *       minY＝那個人的腳底 y < minY 時 gone；noLabel＝點到、滑過、reveal 都不浮名牌；hotspots()／hotPoints()／pick()／tap() 照樣看得到
+ *     shop.say(id, text, { chat:true, who, more, quote, src, ms, onTap, onClose })：聊天泡泡（.ds-say.chat）。第一行小字＝who；
+ *       只有 more（還有下一句，右下角 ▼）的泡泡吃點擊（點＝onTap；Enter／空白鍵在它有焦點時也是），其他 pointer-events:none（點下去落到底下的封面）；
+ *       舞台寬 ≤400 CSS px 時 max-width 150（quote 220），否則 260；quote＝字外加「」、下緣一行 src；夾在舞台框內；
+ *       頭頂那塊蓋到 bin:*／rack:*／poster:*／feature／sale 任一熱點過半、而且身體旁（放得下的那一邊）擋得比較少 → 改放身體旁（.side）；
+ *       o.sideIfCover 改門檻（預設 0.5）。chat 的 ms 不除動畫速度；沒給 ms＝不自動收；o.onClose(el)＝被收掉時（到時、換句、say(id, null)）
+ *     opts.onTapAny(x, y, hit)：舞台任何一下點擊（有沒有點中熱點都算）先通知，那一下照常生效
+ *     shop.back(id, on)：執行期背對鏡頭（跟 layout.actors 的 back 一樣；走路、拿東西也維持背面）
+ *     shop.hold(id, { sleeve, carry:true })：carry＝隨手拿著（不舉起、不強迫正面、走路照轉向；背對鏡頭時畫在身體後面）
+ *     pose 'talk'：DipLabChars 的說話比手勢（2 格）
  *
  * 道具在 shop-props.js 用 DipShop.defProp(type, spec) 註冊；店的配置是純 JSON（shops/*.json）。
  * 只掛 window.DipShop；不宣告 dip-character.js 的同名全域。
@@ -1428,9 +1440,10 @@
   function inShape(h, x, y) { var s = h.shape; for (var i = 0; i < s.length; i++) { var r = s[i]; if (x >= r[0] && y >= r[1] && x < r[0] + r[2] && y < r[1] + r[3]) return true; } return false; }
   function shapeArea(h) { var a = 0; h.shape.forEach(function (r) { a += r[2] * r[3]; }); return a; }
   // 跟著人走的熱點：rect／shape／depth 跟著那個人（a＝{x,y,hidden,outside,look}；沒有人＝gone）
+  //   h.minY（活店 SPEC-H §5.1）：那個人的腳底 y < minY 時也算 gone（走在門口、後走道、進門走廊那幾秒點不到人，不把點封面／特價箱誤開成聊天）
   function followHot(h, a, KS) {
     var rel = h.rel || [-5 * (KS || 3), -15 * (KS || 3), 10 * (KS || 3), 10 * (KS || 3)];
-    h.gone = !a || !!a.hidden || !!a.outside || a.look === false;
+    h.gone = !a || !!a.hidden || !!a.outside || a.look === false || (h.minY != null && a.y < h.minY);
     if (h.gone) return h;
     h.rect = [Math.round(a.x) + rel[0], Math.round(a.y) + rel[1], rel[2], rel[3]]; h.shape = [h.rect.slice()];
     h.depth = a.y + 0.5; h.cx = h.rect[0] + rel[2] / 2; h.cy = h.rect[1] + rel[3] / 2;
@@ -1738,14 +1751,17 @@
       if (pose === 'dig' && ok('dig')) return ['dig', Math.floor(t * 3) % 2];   // 翻箱：每秒換 3 格（店裡的熟客一直在翻，太快會像在發抖）
       if (pose === 'sit' && ok('sit')) return ['sit', 0];
       if (a.moving && ok('walk')) return ['walk', Math.floor(state.t * 8) % 2];   // 2 格、每 125 ms 換（chars.js 的 walk 就 2 格；%4 會把同一張圖存兩份）
+      if (pose === 'talk' && ok('talk')) return ['talk', Math.floor(t * 2) % 2];   // 活店聊天：說話比手勢（2 格、每 0.5 秒換）；走路中照走路畫（導演先叫他停下來再講）
       if (pose === 'atk' && ok('throw')) return ['throw', 1];
       return ['idle', Math.floor(t * 1.5) % 2];
     }
     // 這一格畫哪一面（v5 第五項）：layout 強制背面（熟客 r1 背對鏡頭翻箱）排第一；手上有東西、對決、翻箱、丟牌、受擊…一律正面；
     // 只有站（idle）跟走（walk）照走路算出來的 a.dir
+    //   hold.carry（活店：客人隨手拿著翻到的那張走去結帳）不算「手上有東西」：照走路的朝向畫
+    function holding(a) { return !!(a.hold && !a.hold.carry); }
     function dirFor(a, pose) {
       if (a.back) return 'back';
-      if (a.arm || a.hold || (pose !== 'idle' && pose !== 'walk')) return 'front';
+      if (a.arm || holding(a) || (pose !== 'idle' && pose !== 'walk')) return 'front';
       return a.dir || 'front';
     }
     function shownDir(a) { var cp = a.spec && charsApi() ? charPose(a, poseOf(a)) : [a.moving ? 'walk' : 'idle']; return dirFor(a, cp[0]); }
@@ -1785,6 +1801,7 @@
       var hp = HANDAT[kind] || HANDAT.none, col = a.flip ? 15 - hp[0] : hp[0];
       return [base[0] - 8 * KS + col * KS + (KS >> 1), base[1] - 15 * KS + hp[1] * KS + (KS >> 1)];
     }
+    function drawHeld(a, dx, dy) { var hd = opts.holdDraw || O34.HOOKS.holdDraw, hp = handAt(a.id); if (typeof hd === 'function' && hp) hd(P, a, hp[0] + dx, hp[1] + dy, S); }
     function drawActor(a, inOutside) {
       if (!hasLook(a)) return;
       var pose = inOutside ? null : poseOf(a), K = KS, ox = 0, oy = 0;
@@ -1799,13 +1816,16 @@
       var b = lookOf(a, pose, silV); if (!b) return;
       var by = fy + oy - walkBob;
       if (pose === 'warn' && !silV && Math.floor(state.t * 4) % 2 === 0) { var g = lookOf(a, pose, 'gold'); if (g) [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { blitLook(g, fx + d[0], by + d[1]); }); }
+      // 背對鏡頭時手上拿的東西（活店：站在櫃檯前結帳、把翻到的那張遞給老闆）在身體前面＝被身體擋住：先畫，只露出兩側的邊
+      var heldBehind = !!(a.hold && !silV && a.spec && shownDir(a) === 'back');
+      if (heldBehind) drawHeld(a, ox, oy - walkBob);
       blitLook(b, fx, by);
       if (pose === 'hurt' && !silV && Math.floor((state.rt - (a.poseAt || 0)) * 10) % 2 === 0) { var rd = lookOf(a, pose, 'red'); if (rd) blitLook(rd, fx, by); }
       // 站著偶爾眨眼（只有 16×16 小人；DipLabChars 自己有 idle 兩格）
       if (!a.spec && !a.moving && !silV && !pose && a.rows && a.rows[4] && Math.floor(state.t * 10 + a.phase * 7) % 34 === 0) {
         var r4 = a.rows[4], r3 = a.rows[3] || ''; for (var i = 0; i < r4.length; i++) if (r4.charAt(i) === 'k' && r3.charAt(i) !== 'k') P.r(fx - 8 * K + (a.flip ? r4.length - 1 - i : i) * K, by - 15 * K + 4 * K, K, K, spritePal.s || '#e8b48c');
       }
-      if (a.hold && !silV) { var hd = opts.holdDraw || O34.HOOKS.holdDraw, hp = handAt(a.id); if (typeof hd === 'function' && hp) hd(P, a, hp[0] + ox, hp[1] + oy - walkBob, S); }
+      if (a.hold && !silV && !heldBehind) drawHeld(a, ox, oy - walkBob);
       if (a.emote && (!a.emoteUntil || state.rt < a.emoteUntil)) {
         var kk = a.emote; if (kk === 'anger' && Math.floor(state.t * 4) % 2) kk = 'angerB';
         var er = EMOTE[kk];
@@ -1823,9 +1843,28 @@
     var hitList = [];
     function propBoxO(o) { var sp = OP[o.type]; return (sp && sp.box) ? sp.box(o) : [o.x || 0, (o.y || 0) - (o.h || 8), o.w || 8, o.h || 8]; }
     function actorView(id) { var a = actors[id]; return a ? { x: a.x, y: a.y, hidden: a.hidden, outside: a.outside, look: hasLook(a), dir: shownDir(a), flip: !!a.flip } : null; }
+    // 活店（SPEC-H §5.1）：執行期加的跟著人走的熱點（addHot），layout 重建命中表時接在後面；order 2000 起（同深度時排在 layout 熱點前面）
+    var dynHots = [], dynSeq = 0;
+    function makeDyn(h0) {
+      var c = Object.assign({ order: 2000 + (h0._seq || 0) }, h0);
+      c.rect = (h0.rect || [0, 0, 1, 1]).slice(); c.shape = [c.rect.slice()]; c.depth = -1; c.dyn = true; c.enabled = true;
+      if (c.follow) followHot(c, actorView(c.follow), KS);
+      c.cx = c.rect[0] + c.rect[2] / 2; c.cy = c.rect[1] + c.rect[3] / 2;
+      return c;
+    }
     function buildHots() {
       hitList = buildHotList(L, OP, Object.assign(Object.create(S), { actor: actorView }));
+      dynHots.forEach(function (h0) { hitList.push(makeDyn(h0)); });
+      hitList.forEach(function (h, i) { h.idx = i; });
       hots = hitList.filter(function (h) { return !h.occluder; });
+    }
+    function dropDyn(id) {
+      dynHots = dynHots.filter(function (h0) { return h0.id !== id; });
+      hitList = hitList.filter(function (h) { return !(h.dyn && h.id === id); });
+      hots = hots.filter(function (h) { return !(h.dyn && h.id === id); });
+      if (state.hover && state.hover.id === id) state.hover = null;
+      if (state.press && state.press.h && state.press.h.id === id) state.press = null;
+      if (state.flash && state.flash.h && state.flash.h.id === id) state.flash = null;
     }
     function syncFollow() {
       hots.forEach(function (h) { if (h.follow) followHot(h, actorView(h.follow), KS); });
@@ -2070,7 +2109,12 @@
     // ---------------- DOM 疊層（文字一律 DOM）
     var marks = [];
     function addMark(m) { marks.push(m); overlay.appendChild(m.el); m.place(); return m; }
-    function dropMarks(f) { marks = marks.filter(function (m) { if (f(m)) { m.el.remove(); return false; } return true; }); }
+    // m.onDrop：收掉時通知（聊天泡泡的 onClose）；等整個清單換好才叫，回呼裡再 say() 不會被吃掉
+    function dropMarks(f) {
+      var gone = [];
+      marks = marks.filter(function (m) { if (f(m)) { m.el.remove(); if (m.onDrop) gone.push(m); return false; } return true; });
+      gone.forEach(function (m) { try { m.onDrop(m.el); } catch (e) { console.error(e); } });
+    }
     function layoutOverlay() { marks.forEach(function (m) { try { m.place(); } catch (_) {} }); }
     function tagOn(id) { for (var i = 0; i < marks.length; i++) if (marks[i].kind === 'tag' && marks[i].id === id && marks[i].lr === 'T') return true; return false; }
     function sideShift(el, px) { var w = el.offsetWidth, ow = overlay.clientWidth || W * scale, left = px - w / 2; return left < 2 ? 2 - left : left + w > ow - 2 ? (ow - 2) - (left + w) : 0; }
@@ -2083,39 +2127,107 @@
         d.style.setProperty('--shift', sideShift(d, p.x) + 'px');
       } });
     }
+    // 聊天泡泡（活店 SPEC-H §5.2）的內容：第一行小字＝誰在講；quote＝字外加「」、下緣一行出處；more＝右下角 ▼、整個泡泡吃點擊（點＝o.onTap）
+    function fillChat(el, text, o) {
+      el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite');
+      if (o.who) { var w = document.createElement('span'); w.className = 'who'; w.textContent = o.who; el.appendChild(w); }
+      // 摘句外加「」；原句裡的「」改成『』（台灣排版：引號裡的引號用雙引號；build2 審查：30 句變成「…「…」…」）
+      var tx = document.createElement('span'); tx.className = 'tx'; tx.textContent = o.quote ? '「' + String(text).replace(/「/g, '『').replace(/」/g, '』') + '」' : text; el.appendChild(tx);
+      if (o.quote) { el.classList.add('quote'); if (o.src) { var sr = document.createElement('span'); sr.className = 'src'; sr.textContent = o.src; el.appendChild(sr); } }
+      if (!o.more) return;
+      el.classList.add('more'); el.setAttribute('tabindex', '0');
+      var nx = document.createElement('span'); nx.className = 'nx'; nx.setAttribute('aria-hidden', 'true'); nx.textContent = '▼'; el.appendChild(nx);
+      var fire = function (ev) {
+        if (ev) { if (ev.stopPropagation) ev.stopPropagation(); if (ev.preventDefault) ev.preventDefault(); }
+        if (typeof o.onTap === 'function') { try { o.onTap(); } catch (e) { console.error(e); } }
+      };
+      el.addEventListener('click', fire);
+      el.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Spacebar') fire(ev); });
+      el.addEventListener('pointerdown', function (ev) { if (ev.stopPropagation) ev.stopPropagation(); });   // 外殼看不到這一下（點▼泡泡＝下一句，不是點舞台）
+    }
+    // 聊天泡泡會不會擋住能點的封面與箱子：r＝泡泡的 CSS 外框（疊層座標 [x, y, w, h]）
+    //   → { frac：被蓋最多的那個熱點被蓋住的比例（0–1），n：被蓋過半的熱點有幾個，area：蓋到這些熱點的總面積（CSS px²） }
+    var COVER_RE = /^(bin:|rack:|poster:)/;
+    function coverOf(r) {
+      var worst = 0, n = 0, area = 0;
+      hots.forEach(function (h) {
+        if (h.gone || !h.rect || !(COVER_RE.test(h.id) || h.id === 'feature' || h.id === 'sale')) return;
+        var q = h.rect, p0 = toCss(q[0], q[1]), hw = q[2] * scale, hh = q[3] * scale;
+        var ix = Math.max(0, Math.min(r[0] + r[2], p0.x + hw) - Math.max(r[0], p0.x)), iy = Math.max(0, Math.min(r[1] + r[3], p0.y + hh) - Math.max(r[1], p0.y));
+        var f = ix * iy / Math.max(1, hw * hh); if (f > worst) worst = f; if (f > 0.5) n++; area += ix * iy;
+      });
+      return { frac: worst, n: n, area: area };
+    }
+    function lessCover(a, b) { return a.n !== b.n ? a.n < b.n : a.area < b.area; }   // a 擋得比 b 少：先比蓋過半的個數（一張張封面），再比總面積
     function bubbleFor(id, text, o) {
-      var el = document.createElement('div'); el.className = 'ds-say' + (o.tone ? ' ' + o.tone : ''); el.textContent = text;
-      return addMark({ el: el, kind: 'say', id: id, place: function () {
+      var el = document.createElement('div'); el.className = 'ds-say' + (o.tone ? ' ' + o.tone : '') + (o.chat ? ' chat' : '');
+      if (o.chat) fillChat(el, text, o); else el.textContent = text;
+      return addMark({ el: el, kind: 'say', id: id, chat: !!o.chat, place: function () {
         var a = actors[id]; if (!a) return;
-        var head = a.y - a.head - (o.lift || 0) - (tagOn(id) ? 20 / scale : 0), p = toCss(a.x, head), bh2 = el.offsetHeight || 24;
+        var head = a.y - a.head - (o.lift || 0) - (tagOn(id) ? 20 / scale : 0), p = toCss(a.x, head);
         if (a.hidden) { el.style.display = 'none'; return; } el.style.display = '';
+        var ow = overlay.clientWidth || W * scale, oh = vh * scale;
+        // 聊天泡泡的寬（§5.2）：舞台寬 ≤400 CSS px 時 150（行家摘句 220），其他照現行 260
+        var chatW = o.chat ? (ow <= 400 ? (o.quote ? 220 : 150) : 260) : 0;
         if (vh <= 120 || stripOn) {
           // 唱盤區橫條（strip／stripS，SPEC-v4 §2.3.7）：泡泡避開中間（唱盤與站在台後的老闆，老闆 x±16 格）。
           // 說話的人在哪半邊，泡泡中心就夾在那半邊：左 [4+w/2, mid−ownerHalf−6−w/2]、右 [mid+ownerHalf+6+w/2, ow−4−w/2]；寬 ≤ mid−ownerHalf−10。
           // 頭頂放得下就放頭頂，放不下就貼在橫條頂上、尾巴朝下指他。老闆（站中間）照舊置中。會蓋到自己的名牌，沒關係（尾巴已經說是誰）
-          var ow0 = overlay.clientWidth || W * scale, mid = ow0 / 2, ax0 = a.x * scale, ctr = Math.abs(ax0 - mid) < ow0 * 0.12, oh = 16 * scale;
+          var ow0 = ow, mid = ow0 / 2, ax0 = a.x * scale, ctr = Math.abs(ax0 - mid) < ow0 * 0.12, oh0 = 16 * scale;
           el.classList.remove('side', 'sl', 'sr');
-          el.style.maxWidth = Math.floor(ctr ? ow0 * 0.62 : mid - oh - 10) + 'px';
+          var mw0 = Math.floor(ctr ? ow0 * 0.62 : mid - oh0 - 10);
+          el.style.maxWidth = (chatW ? Math.min(chatW, mw0) : mw0) + 'px';
           var w0 = el.offsetWidth, h0 = el.offsetHeight || 24;
-          var lo = ctr ? 4 + w0 / 2 : (ax0 < mid ? 4 + w0 / 2 : mid + oh + 6 + w0 / 2), hi = ctr ? ow0 - 4 - w0 / 2 : (ax0 < mid ? mid - oh - 6 - w0 / 2 : ow0 - 4 - w0 / 2);
+          var lo = ctr ? 4 + w0 / 2 : (ax0 < mid ? 4 + w0 / 2 : mid + oh0 + 6 + w0 / 2), hi = ctr ? ow0 - 4 - w0 / 2 : (ax0 < mid ? mid - oh0 - 6 - w0 / 2 : ow0 - 4 - w0 / 2);
           var sh0 = clamp(p.x, lo, Math.max(lo, hi)) - p.x;
           el.style.left = p.x + 'px'; el.style.top = (p.y - h0 - 8 < 0 ? h0 + 4 + 7 : p.y) + 'px';
           el.style.setProperty('--shift', sh0 + 'px'); el.style.setProperty('--tail', (-sh0) + 'px');
           return;
         }
-        el.style.maxWidth = '';
-        if (p.y - bh2 - 8 < 0) {   // 頭頂放不下 → 放在身體旁邊
-          var right = toCss(a.x + 8 * KS, a.y - 10 * KS), left = toCss(a.x - 8 * KS, a.y - 10 * KS), ow = overlay.clientWidth || W * scale, w = el.offsetWidth;
-          var useRight = right.x + 6 + w <= ow - 2 || left.x - 6 - w < 2;
+        el.style.maxWidth = chatW ? chatW + 'px' : '';
+        var bw = el.offsetWidth, bh2 = el.offsetHeight || 24, sh = 0;
+        var side = p.y - bh2 - 8 < (o.chat ? 2 : 0);   // 頭頂放不下（聊天泡泡：上緣不出舞台框）→ 放在身體旁邊
+        var right = toCss(a.x + 8 * KS, a.y - 10 * KS), left = toCss(a.x - 8 * KS, a.y - 10 * KS), w = bw;
+        var top = clamp(right.y, bh2 / 2 + 2, oh - bh2 / 2 - 2);
+        var fitR = right.x + 6 + w <= ow - 2, fitL = left.x - 6 - w >= 2, pick = null;
+        if (o.chat) {
+          // 頭頂那塊蓋到 bin:*／rack:*／poster:*／feature／sale 任一熱點過半（批判 3.4）→ 改放身體旁；
+          //   但旁邊（放得下的那一邊）擋得不比頭頂少就留在頭頂（店裡箱子很密：中島旁的人頭頂和旁邊常常都蓋過半，換位置不能反而擋更多）。
+          //   「擋得少」＝蓋過半的熱點個數少（後牆矮櫃一整排封面 vs 旁邊兩三箱），一樣多再比總面積；兩邊都放得下挑擋得少的
+          var cR = fitR ? coverOf([right.x + 6, top - bh2 / 2, w, bh2]) : null, cL = fitL ? coverOf([left.x - 6 - w, top - bh2 / 2, w, bh2]) : null;
+          var best = cR && (!cL || !lessCover(cL, cR)) ? 'R' : cL ? 'L' : null, bestC = best === 'R' ? cR : best === 'L' ? cL : null;
+          if (!side) {
+            el.classList.remove('side', 'sl', 'sr');
+            sh = sideShift(el, p.x);
+            var cT = coverOf([p.x + sh - bw / 2, p.y - 7 - bh2, bw, bh2]);
+            if (cT.frac > (o.sideIfCover != null ? o.sideIfCover : 0.5) && bestC && lessCover(bestC, cT)) { side = true; pick = best; }
+          } else pick = best;
+        }
+        if (side && o.chat && !fitR && !fitL && chatW > 150) {
+          // 寬泡泡（行家摘句 220）兩邊都放不下：縮回一般聊天的 150 寬（變高）再放身體旁（build2 審查：375×548 周姐站上排，220 寬的摘句夾回舞台框後整個蓋住她）
+          el.style.maxWidth = '150px';
+          bw = el.offsetWidth; bh2 = el.offsetHeight || 24; w = bw;
+          top = clamp(right.y, bh2 / 2 + 2, oh - bh2 / 2 - 2);
+          fitR = right.x + 6 + w <= ow - 2; fitL = left.x - 6 - w >= 2;
+          if (fitR || fitL) {
+            var cR2 = fitR ? coverOf([right.x + 6, top - bh2 / 2, w, bh2]) : null, cL2 = fitL ? coverOf([left.x - 6 - w, top - bh2 / 2, w, bh2]) : null;
+            pick = cR2 && (!cL2 || !lessCover(cL2, cR2)) ? 'R' : 'L';
+          }
+        }
+        if (side) {
+          var useRight = pick ? pick === 'R' : (fitR || !fitL);
+          var lx = useRight ? right.x + 6 : left.x - 6;
+          if (o.chat && !fitR && !fitL) {   // 兩邊都放不下（極窄）：夾在舞台框內，寧可蓋到自己的肩膀
+            useRight = true; lx = clamp(right.x + 6, 2, Math.max(2, ow - 2 - w));
+          }
           el.classList.add('side'); el.classList.toggle('sl', !useRight); el.classList.toggle('sr', useRight);
-          var top = clamp(right.y, bh2 / 2 + 2, (vh * scale) - bh2 / 2 - 2);
-          el.style.left = (useRight ? right.x + 6 : left.x - 6) + 'px'; el.style.top = top + 'px';
+          el.style.left = lx + 'px'; el.style.top = top + 'px';
           el.style.setProperty('--shift', '0px'); el.style.setProperty('--tail', '0px');
           return;
         }
         el.classList.remove('side', 'sl', 'sr');
         el.style.left = p.x + 'px'; el.style.top = p.y + 'px';
-        var sh = sideShift(el, p.x);
+        if (!o.chat) sh = sideShift(el, p.x);
         el.style.setProperty('--shift', sh + 'px'); el.style.setProperty('--tail', (-sh) + 'px');
       } });
     }
@@ -2133,15 +2245,17 @@
     function onUp(ev) {
       if (!down) return; var p = fromEvent(ev), h = hitTest(p.x, p.y), d0 = down; down = null;
       unpress();
-      var tol = L.tapTol || 10;
-      if (!h || h !== d0.h || Math.abs(p.x - d0.x) > tol || Math.abs(p.y - d0.y) > tol) return;
+      var tol = L.tapTol || 10, isTap = Math.abs(p.x - d0.x) <= tol && Math.abs(p.y - d0.y) <= tol;
+      // 活店（SPEC-H §5.2）：舞台任何一下點擊先通知（導演收掉聊天泡泡）；那一下照常生效
+      if (isTap && typeof opts.onTapAny === 'function') { try { opts.onTapAny(p.x, p.y, h && h === d0.h ? h : null); } catch (e) { console.error(e); } }
+      if (!h || h !== d0.h || !isTap) return;
       if (state.spot && state.spot.h !== h) { bump(); return; }
       tapHot(h);
     }
     function onMove(ev) {
       if (ev.pointerType !== 'mouse') return;
       var p = fromEvent(ev), h = hitTest(p.x, p.y);
-      if (h !== state.hover) { state.hover = h; dropMarks(function (m) { return m.hover; }); if (h) labelFor(h, 'hover').hover = true; view.style.cursor = h ? 'pointer' : 'default'; }
+      if (h !== state.hover) { state.hover = h; dropMarks(function (m) { return m.hover; }); if (h && !h.noLabel) labelFor(h, 'hover').hover = true; view.style.cursor = h ? 'pointer' : 'default'; }
     }
     function onLeave() { state.hover = null; dropMarks(function (m) { return m.hover; }); }
     function bump() { host.classList.remove('ds-bump'); void host.offsetWidth; host.classList.add('ds-bump'); }
@@ -2149,7 +2263,7 @@
       state.flash = { h: h, until: state.rt + 0.9 };
       if (h.prop && h.prop.id) state.poke[h.prop.id] = state.rt + 1.6;
       if (h.id) state.poke[h.id] = state.rt + 1.6;
-      dropMarks(function (m) { return m.tapLbl; }); labelFor(h, 'tap', 1100).tapLbl = true;
+      dropMarks(function (m) { return m.tapLbl; }); if (!h.noLabel) labelFor(h, 'tap', 1100).tapLbl = true;   // noLabel（活店的人）：名字寫在聊天泡泡第一行，不另外浮名牌
       if (state.spot && state.spot.h === h) { var cb = state.spot.done; api.spotlight(null); if (cb) cb(h); }
       if (opts.onAction) { try { opts.onAction(h.action, h); } catch (e) { console.error(e); } }
     }
@@ -2238,7 +2352,7 @@
         var tgt = a.path[0], dx = tgt.x - a.x, dy = tgt.y - a.y, dist = Math.sqrt(dx * dx + dy * dy), sp = (a.speed || 36) * (L.walkK || 2) * dt * kk;
         if (a.segTo !== tgt) { a.segTo = tgt; a.segLen = dist; }   // 這一段起點時的長度（短段不轉身）
         a.moving = true; a.arrive = null;   // 又開始走：上一站的待轉作廢
-        if (!a.hold && !a.arm) {   // 手上拿著東西（對決的封套）就不轉身
+        if (!holding(a) && !a.arm) {   // 手上拿著東西（對決的封套）就不轉身；隨手拿著（hold.carry）照轉
           var fd = faceDir({ dir: a.dir, flip: a.flip, at: a.dirAt }, dx, dy, faceOpts(a));
           a.dir = fd.dir; a.flip = fd.flip; a.dirAt = fd.at;
         }
@@ -2288,7 +2402,9 @@
       route: function (from, to) { var A = spotXY(from), B = spotXY(to); if (!A || !B) return []; if (!OBS) OBS = navObstacles(L); return navRoute(L, [A.x, A.y], [B.x, B.y], OBS) || []; },
       face: function (id, fwd) { actor(id).fwd = fwd; return api; },
       arm: function (id, kind) { var a = actor(id); a.arm = kind || null; faceFront(a); return api; },
-      hold: function (id, what) { var a = actor(id); a.hold = what || null; faceFront(a); return api; },
+      hold: function (id, what) { var a = actor(id); a.hold = what || null; if (!(what && what.carry)) faceFront(a); return api; },
+      // 活店（SPEC-H §11.3）：執行期背對鏡頭（layout.actors 的 back 一樣的效果：走路、拿東西都維持背面）；on=false 回到照走路算
+      back: function (id, on) { var a = actor(id); a.back = on !== false; if (!a.back) faceFront(a); return api; },
       nudge: function (id, dx) { actor(id).ox = dx || 0; return api; },
       flip: function (id, on) { var a = actor(id); a.flip = !!on; faceFront(a); return api; },
       // 劇本要某人背對鏡頭站著（例：老闆面向唱片牆）：dir(id, 'back')；之後走路、flip、pose…照規則再換。不給 d＝回現在畫的那一面
@@ -2301,12 +2417,14 @@
       now: function () { return (now() - t0 - tPaused) / 1000; },
       pose: function (id, name, ms) { var a = actor(id); a.pose = name || null; a.poseAt = state.rt; a.poseUntil = (name && ms) ? state.rt + ms / 1000 / spd() : 0; faceFront(a); return api; },
       emote: function (id, kind, ms) { var a = actor(id); a.emote = kind || null; a.emoteUntil = (kind && ms) ? state.rt + ms / 1000 : 0; return api; },
+      // o.chat（活店聊天泡泡，SPEC-H §5.2）：ms 沒給＝不自動收、給了也不除動畫速度（導演自己算 ?fast=1）；o.onClose(el)＝這個泡泡被收掉時（到時、被下一句換掉、say(id, null)）
       say: function (id, text, o) {
         o = o || {};
         dropMarks(function (m) { return m.kind === 'say' && m.id === id; });
         if (!text) return null;
-        var m = bubbleFor(id, text, o), ms = o.ms == null ? 2600 : o.ms;
-        if (ms) setTimeout(function () { dropMarks(function (x) { return x === m; }); }, ms / spd());
+        var m = bubbleFor(id, text, o), ms = o.ms == null ? (o.chat ? 0 : 2600) : o.ms;
+        if (typeof o.onClose === 'function') m.onDrop = o.onClose;
+        if (ms) setTimeout(function () { dropMarks(function (x) { return x === m; }); }, o.chat ? ms : ms / spd());
         return m.el;
       },
       tag: function (id, text, side, lr) {
@@ -2378,7 +2496,7 @@
       reveal: function (ms) {
         ms = ms || 2600; state.reveal = state.rt + ms / 1000; dropMarks(function (m) { return m.revealLbl; });
         syncFollow();
-        hots.forEach(function (h) { if (!h.sub && h.label && enabled(h)) labelFor(h, 'reveal', ms).revealLbl = true; });
+        hots.forEach(function (h) { if (!h.sub && h.label && !h.noLabel && enabled(h)) labelFor(h, 'reveal', ms).revealLbl = true; });
         (L.props || []).forEach(function (o) {   // 裡面每張都能點的道具（牆上的唱片）：給一個總名牌
           if (!o.revealLabel || o.hidden) return;
           var subs = hots.filter(function (h) { return h.sub && h.prop && (h.prop === o || (o.id && h.prop.reveal === o.id)) && enabled(h); }); if (!subs.length) return;
@@ -2419,7 +2537,11 @@
         syncFollow();
         var vis = function (h) { var r = h.rect, a = Math.max(0, Math.min(r[1] + r[3], vy + vh) - Math.max(r[1], vy)); return a >= r[3] ? 0 : a > 0 ? 1 : 2; };
         return hots.map(function (h, i) { return { h: h, i: i, v: vis(h) }; }).sort(function (a, b) { return a.v - b.v || a.i - b.i; })
-          .map(function (x) { var h = x.h; return { id: h.id, label: h.label, action: h.action, rect: h.rect.slice(), shape: h.shape.map(function (r) { return r.slice(); }), depth: h.depth, sub: !!h.sub, parent: h.parent || null, visible: x.v < 2 }; });
+          .map(function (x) {
+            var h = x.h, o = { id: h.id, label: h.label, action: h.action, rect: h.rect.slice(), shape: h.shape.map(function (r) { return r.slice(); }), depth: h.depth, sub: !!h.sub, parent: h.parent || null, visible: x.v < 2 };
+            if (h.dyn) { o.dyn = true; o.follow = h.follow || null; o.gone = !!h.gone; }   // 活店 addHot 加的（跟著人走；gone＝人不在、在門外或腳底 y<minY）
+            return o;
+          });
       },
       // SPEC-v4 §2.4.3：每個啟用的熱點一個一定點得到的點（CSS px，相對 #stage host）：形狀內、不在任何更前面的形狀裡、取那塊可見區域最裡面的一格。e2e 用它真點
       hotPoints: function () {
@@ -2434,6 +2556,17 @@
       },
       // 測試／工具用：命中清單（含遮擋物；live 物件，別改）、某一格的命中（美術格）、某熱點看得到的那一塊
       hotList: function () { syncHots(); return hitList; },
+      // 活店（SPEC-H §5.1、§11.3）：執行期加／拿掉跟著人走的熱點。h＝{ id, follow, rel, action, label, pri, noSparkle, minY, noLabel }；同 id 再加＝換掉
+      addHot: function (h) {
+        if (!h || typeof h.id !== 'string' || !h.id) return api;
+        dropDyn(h.id);
+        if (hots.some(function (x) { return x.id === h.id; })) { console.warn('[shop] addHot: id 跟 layout 的熱點重複 ' + h.id); return api; }
+        var h0 = Object.assign({}, h); if (h0.rel) h0.rel = h0.rel.slice(); h0._seq = dynSeq++;
+        dynHots.push(h0);
+        var c = makeDyn(h0); c.idx = hitList.length; hitList.push(c); hots.push(c);
+        return api;
+      },
+      removeHot: function (id) { dropDyn(id); return api; },
       pick: function (x, y, o) { syncHots(); return hitPick(hitList, x, y, Object.assign({ r: slopR() }, o || {})); },
       hotRegion: function (hid) { syncHots(); var h = hotById(hid); return h ? visRegion(h) : null; },
       hotRect: function (hid) { syncFollow(); var h = hotById(hid); return h ? rectToScreen(h.rect) : null; },

@@ -578,7 +578,7 @@
   //   Step = { do:'walk', id, to:[spot|[x,y]…], speed? } | { do:'pose', id, name, ms? } | { do:'emote', id, kind, ms? } | { do:'wait', ms }
   //        | { do:'door', mode } | { do:'face', id, to } | { do:'hold', id, what } | { do:'hide', id, on } | { do:'give', from, gap }
   //        | { do:'floor', at } | { do:'sfx', name } | { do:'par', steps } | { do:'seq', steps }
-  //   人物：p＝你、o＝老闆、f＝門口進來的那位、r1＝熟客（序章與收尾藏起來）。
+  //   人物：p＝你、o＝老闆、f＝門口進來的那位。原本站樁的熟客 r1 退役（SPEC-H §2.4）：活店的熟客與路人用走動槽 w1–w3，由導演 crowd.js 管，不進劇本。
   //   '@' 開頭的值由執行器代入：'@man' 序章男子的小人、'@guest' 今晚第一位客人的小人、'@gift' 老闆送的第一張（依你挑的王牌）
   //   走路：序章與收尾預設速度 C.blocking.speed（54＝1.5 倍）；O20「緩步」36。一律用走的（不瞬移）；翻箱（dig）一定在走到之後
   // ===================================================================
@@ -618,7 +618,7 @@
     prologue: [
       // 原本的 O1「下著雨。你推開……鈴鐺，響了一聲。」拿掉：內容已經在開頭旁白（C.intro，店主 11-10）；它的站位搬到 O2
       { id: 'O2', who: '', text: '櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', tag: '原句',
-        set: { put: { p: 'door', o: 'counter' }, hide: { f: true, r1: true }, door: 'swing', pose: { o: 'busy' } },
+        set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing', pose: { o: 'busy' } },
         act: [pose('o', null), wait(600), pose('o', 'busy')] },
       { id: 'O3', who: '', text: '你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', tag: '原句', act: [walk('p', 'browse')] },
       { id: 'O4', who: '', text: '這時候，店裡的音響傳出一段旋律。', tag: '原句', set: { notes: true }, music: 'tonight' },
@@ -657,7 +657,7 @@
     // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
     //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Eminem）→ 掉落旁白（C.script.drop，ui.js 在撿起面板前念）→ 撿起面板（沒有敘述標題）
     epilogueWin: [
-      { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句', set: { hide: { r1: true } } },
+      { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句' },
       { id: 'E2', who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', tag: '原句', act: [face('f', 'p')] },
       { id: 'E3', who: '男子', text: '「搵休督欸丟！」', tag: '原句' },
       { id: 'E4', who: '', text: '門上的鈴鐺又響了一聲。他走了。', tag: '原句',
@@ -1946,6 +1946,529 @@
   ['hall', 'pearl', 'heresy'].forEach(function (t) { C.apexTrial[t].forEach(function (x) { if (x.card !== C.aces[t]) C.apexTrialOnly.push(x.card); }); });
 
   // ===================================================================
+  // 活店（SPEC-H：熟客進進出出、點人聊天、行家、切磋）——棒 3a 資料。店主 11-18：「熟客平常會走來走去 翻翻挖挖 然後走出門 就像真的活人」
+  //   畫面上沒有「熟客／常客」類別字（點人只浮名字或「客人」）；台詞照店主口語說「熟客」；程式命名空間 regulars（§2.1）。
+  //   舞台：走動槽 w1 w2 w3（熟客、路人共用，外觀每次進門換；不准 p／o／f／q 開頭）；停留點在 shops/dip.json crowd.stops（棒 1）。
+  // ===================================================================
+  // C.regulars[id] = { name, look, voice:{freq,wave}, likes:[停留點 id ×3 權重], weight（推門抽人的權重）, encW（切磋「嗆」的權重）,
+  //                    enc:{ off（棋力：等效位數＝run.pos＋off）, main（主屬性）, deck:[7 張], taste, honesty, tune } }   SPEC-H §2.2、§7.2、§7.4、附錄 A
+  //   look：chars.js 的 npc id 字串，或 spec 物件（chars.js 一行不改，不碰 chars.test 逐格比對）。
+  //   撞造型（check-content LD2）：帽子分族比，不准跟任何挑戰者同族——耳機族 phones／bigphones／neckphones、毛帽族 beanie／pompom、
+  //     鴨舌帽族 cap／capback／trucker、beret、紳士帽族 fedora／tophat、crown（現況全用到 → 只剩 none／bucket／bandana）；上衣不准 apron／suit。
+  //   設定（只給寫手看，畫面不出）：
+  //     小魚 xiaoyu：大學生，玩黑膠第一年，下課常來，什麼都想問。原本站樁的 r1（同一套 girl）；權重最高，店裡空著開場時優先她（§3.3）
+  //     阿凱 akai：上班族，下班先來翻一輪才回家，嘴硬。cust2 但不戴帽（鴨舌帽族跟社團學長撞），多一個炭灰後背包（不然跟玩家預設的藍 T 太像；背面翻箱也認得出）
+  //     大頭 datou：週末在酒吧放歌、在練接歌，講話快。dude 但炭灰毛帽換漁夫帽（毛帽族跟文青同好撞）
+  //     阿芳 afang：開咖啡店，來找店裡要放的歌
+  //     老陳 laochen：退休老師，年輕時買不起、現在慢慢補，有耐心
+  //     周姐 zhoujie（行家）：以前在別間唱片行顧過櫃檯，跟老闆是老朋友。講的知識只照抄藝人介紹原句或填卡片欄位，不編（§6）
+  //   牌組（§7.4）：只從核心卡（cards.js，有介紹、封面、試聽）選，不跟 10 位主線客人、老闆四張、特價箱、王牌重複，不選頂點卡；
+  //     主屬性那軸嚴格峰值 ≥4 張（deckMain＝main）、曲風對得上愛停的箱。棋力與聲望照主線同一條 V3 曲線（engine trialGuest at posEff），
+  //     honesty 一律一般客人的 sometimes（說真話機率由曲線蓋過）。tune：底牌星數加權多數決，撞格往下一名分散、每格最多 2 位（同 C.enemies 的作法）：
+  //       小魚 放鬆 45／阿芳 放鬆 56（滿 2 位）｜大頭 放鬆 25 撞格 → 第二名 暴躁 11｜老陳 放鬆 24 撞格 → 第二名 雀躍 11｜阿凱 暴躁 51｜周姐 恍惚 21
+  C.regulars = {
+    xiaoyu: {
+      name: '小魚', look: 'girl', voice: { freq: 740, wave: 'triangle' },
+      likes: ['c-citypop', 'c-folk', 'c-listen'], weight: 1.4, encW: 2,
+      enc: { off: -2, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'calm',
+        deck: ["miki matsubara|pocket park", "大貫妙子|grey skies", "anri|timely!!", "間宮貴子|love trip",
+          "judee sill|judee sill", "nick drake|bryter layter", "vashti bunyan|just another diamond day"] }
+    },
+    akai: {
+      name: '阿凱',
+      look: { skin: 's', hair: 'neat', hairColor: 'choco', hat: 'none', top: 'tee', topColor: 'navy', bottom: 'pants', bottomColor: 'khaki', shoesColor: 'k', bag: 'backpack', bagColor: 'char' },
+      voice: { freq: 370, wave: 'square' },
+      likes: ['c-rock', 'c-hiphop', 'c-elec'], weight: 1.0, encW: 3,
+      enc: { off: 0, main: 'h', taste: 'hco', honesty: 'sometimes', tune: 'charge',
+        deck: ["opeth|morningrise", "billy woods|church", "venetian snares|detrimentalist", "merzbow|noisembryo",
+          "dälek|negro necro nekros", "gza|liquid swords", "sonic youth|dirty"] }
+    },
+    datou: {
+      name: '大頭',
+      look: { skin: 'honey', hair: 'neat', hairColor: 'k', hat: 'bucket', hatColor: 'char', top: 'flannel', topColor: 'brick', top2Color: 'k', bottom: 'pants', bottomColor: 'denim', shoesColor: 'w' },
+      voice: { freq: 466, wave: 'square', jitter: 12 },
+      likes: ['c-elec', 'c-soul', 'c-hiphop'], weight: 1.0, encW: 3,
+      enc: { off: 0, main: 'o', taste: 'och', honesty: 'sometimes', tune: 'charge',
+        deck: ["bonobo|dial ‘m' for monkey", "millie jackson|hard times", "ohio players|tenderness", "stevie wonder|eivets rednow",
+          "shackleton|primal forms", "a tribe called quest|midnight marauders", "global communication|76:14"] }
+    },
+    afang: {
+      name: '阿芳',
+      look: { skin: 'rose', hair: 'bob', hairColor: 'auburn', top: 'sweater', topColor: 'mustard', bottom: 'longskirt', bottomColor: 'forest', bag: 'crossbag', bagColor: 'cream' },
+      voice: { freq: 622, wave: 'triangle' },
+      likes: ['c-citypop', 'c-world', 'c-listen'], weight: 1.0, encW: 2,
+      enc: { off: -1, main: 'o', taste: 'och', honesty: 'sometimes', tune: 'calm',
+        deck: ["佐藤博|awakening", "南佳孝|摩天楼のヒロイン", "りんけんバンド|なんくる", "cesária évora|miss perfumado",
+          "mississippi john hurt|last sessions", "江蕙|紅線", "蔡琴|蔡琴老歌"] }
+    },
+    laochen: {
+      name: '老陳',
+      look: { skin: 't', hair: 'sidepart', hairColor: 'plat', glasses: 'browline', facial: 'mustache', top: 'jacket', topColor: 'khaki', bottom: 'slim', bottomColor: 'char' },
+      voice: { freq: 247, wave: 'triangle' },
+      likes: ['c-classical', 'c-soul', 'c-folk'], weight: 1.0, encW: 2,
+      enc: { off: 1, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'lift',
+        deck: ["herbert von karajan|beethoven: 9 symphonies (1963)", "arthur rubinstein|chopin: nocturnes", "glenn gould & leonard bernstein|brahms: piano concerto no. 1 (1962)",
+          "curtis mayfield|there's no place like america today", "isaac hayes|shaft: music from the soundtrack", "bob dylan|john wesley harding", "leonard cohen|songs from a room"] }
+    },
+    zhoujie: {
+      name: '周姐', look: 'regular', voice: { freq: 349, wave: 'sine' }, expert: true,
+      likes: ['c-world', 'c-classical', 'c-folk'], weight: 0.8, encW: 1,
+      enc: { off: 2, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'languid',
+        deck: ["einojuhani rautavaara|cantus arcticus", "erik satie|vexations", "nass el ghiwane|nass el ghiwane", "the congos|heart of the congos",
+          "toumani diabaté|kaira", "brigitte fontaine & areski belkacem|vous et nous", "richard & linda thompson|shoot out the lights"] }
+    }
+  };
+
+  // 節奏與規則數字（附錄 A 照抄；ms 一律再 ÷ speed()（?fast=1 是 4）；聊天泡泡例外：不吃動畫加速，只除 ?fast=1）
+  C.crowd = {
+    on: true,
+    max: 3,                         // 同時走動的人；reduced-motion 時 1
+    firstRunFrom: 2,                // 第一次玩的那一趟從第 2 位起才開
+    startInside: [[0, 0.15], [1, 0.60], [2, 0.25]],   // 店裡空的時候，一開畫面就在翻的人數（不放 c-listen）
+    doorEvent: { after: [0, 1500], earlyLeave: 0.6 }, // 門鎖一解後多久排一次門事件；停留已過 60% 的人可以提前出門（§3.3 門事件保證）
+    gap: [18000, 30000],            // 之後每次推門（未滿才進）。棒 5 照 §3.3 實量調過：16–28 秒時 6 個種子各 5 分鐘平均 1.96（最高 2.19，超出 1.5–2.1）→ 18–30 秒平均 1.84（1.62–2.04）
+    refill: [6000, 12000],          // 滿了、有人出門後再等多久
+    doorLock: { afterGuest: 1200, afterSwing: 3000, swing: 1100 },
+    kinds: { regular: 0.65, passer: 0.35 },
+    recent: 60000,                  // 離開不到 60 秒的人不再抽
+    stops: { n: [[1, 15], [2, 50], [3, 35]], dig: [9000, 16000], listen: [12000, 20000], pay: [3000, 5000] },
+    likeW: 3, otherSide: 2,         // 愛停的點權重、第二三位挑另一排的權重
+    payP: 0.4,
+    speed: 30, yieldSpeed: 48,      // ×walkK 2 ＝ 60／96 美術格／秒
+    pass: { near: 30, resume: 800 },// 借過：你走到 30 格內停手轉向你，過去 0.8 秒後接著翻
+    emote: { after: [4000, 8000], record: 0.18, note: 0.08, listenNote: 0.3 },
+    talk: { beatsPerVisit: 3, passerBeats: 1, busyMute: 12000, extend: 4000, resume: 2000, ringK: 0.75, trip: 0.35,
+            w: { chat: 40, dig: 25, shelf: 15, close: 10, mem: 10 }, expert: { know: 55, chat: 25, trip: 10, mem: 10 },
+            closeAt: 8, memAt: 12, loreP: 0.8 },
+    bubble: { base: 3000, perChar: 200, min: 6000, max: 12000, holdMore: 20000, narrowW: 150, quoteW: 220, sideIfCover: 0.5 },
+    hot: { rel: [-12, -46, 24, 28], minY: 150 },
+    title: { max: 1, minY: 189, move: [20000, 40000] },
+    warm: { batchMs: 8, maxWait: 3000 },
+    // 路人 4 套凍結外觀（§2.3）：DipLabChars.random('dip-passer-<n>') n＝1…200 照撞造型規則濾掉剩 98 套，看圖挑 4 個、照原樣凍結（只寫跟預設不同的欄位，出圖逐格相同）。
+    //   不用漁夫帽（留給大頭）。執行期不隨機捏人（快取只付一次、截圖可重現、審得到）。外觀池總數＝熟客 6＋路人 4＝10 套。
+    passers: [
+      { skin: 't', hair: 'bob', hairColor: 'u', top: 'graphic', topColor: 'cream', bottom: 'jeans', shoesColor: 'r' },                                         // #149 年輕女生：棕色妹妹頭、米白印花 T、黑色破洞褲
+      { skin: 'deep', hair: 'sidepart', glasses: 'round', top: 'hoodie', topColor: 'y', bottom: 'jeans', bottomColor: 'brick', shoesColor: 'r' },            // #168 年輕男生：黑旁分、細框眼鏡、黃帽 T
+      { skin: 'u', hair: 'curtain', hairColor: 'd', top: 'jacket', topColor: 'w', bottom: 'shorts', bottomColor: 'brick' },                                   // #22 阿伯：灰中分、白外套、磚紅短褲
+      { skin: 'v', hair: 'afro', hairColor: 'w', top: 'sweater', topColor: 'forest', top2Color: 'e', bottomColor: 'moss', neck: 'scarf', bag: 'tote' }     // #91 阿嬤：白色燙捲、綠毛衣、圍巾、帆布袋
+    ]
+  };
+
+  // 切磋（＝店主說的遭遇戰；§7）。第一階段關：第二階段 LS0–LS9 過了、§15 拍板後才開
+  C.encounter = {
+    on: false,
+    reward: 'shelf',                // 'shelf' 收進唱片櫃（預設）｜'bag' 進這一趟包包（§15 拍板）
+    from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2],   // 一般客人位（idx）
+    lapse: 30000,                   // 邀請沒理他多久就走（抽屜、面板、頁面開著不算）
+    short: 0.6,                     // 短局：雙方聲望與上限比例
+    // 不收唱片改拿的錢＝C.waveC.loot.skipCash（$200，跟主線戰利品列同一個數，不另設）
+    noDareRound: true, noStall: true
+  };
+
+  // 介面字（第一階段 3 句；第二階段切磋面板那些另加）。intro／expertIntro 是老闆說的一次性提示（§3.2）、src＝行家摘句泡泡下緣的出處（§5.2、§6.3）
+  C.crowdUi = {
+    intro: '熟客都會來翻，想聊就點他們。',
+    expertIntro: '周姐來了，她懂很多，想聽就去問她。',
+    src: '藝人介紹・{artist}',
+    passer: '客人'                  // 路人泡泡第一行（不算句子）
+  };
+  C.crowdUiTag = '新';
+
+  // 台詞（§5.7；全標「新」進 LINES-REVIEW；棒 3b 搬句，2026-11-18：lines/A.json（小魚、阿凱、大頭、路人、老闆、介面）＋B.json（阿芳、老陳、周姐），主線逐句審過、全收、不改字）。
+  //   C.chat：熟客（who＝C.regulars 的鍵）與路人（who＝'passer'）；C.ownerChat：老闆（who＝'owner'）。
+  //   line＝{ id（全域唯一）, who, cat, text:'…'|['…','…']（一個字串＝一個泡泡）, need?, tag:'新' }
+  //   cat：hello／again／chat／dig／shelf／trip／close／mem／busy（熟客）；周姐另有 loreIn（摘句引子）／loreOut（收尾）／fact（欄位樣板），沒有 dig／shelf；
+  //        路人只有 chat（隨口 12、找唱片 10、對店 8 共用一個環）；老闆 chat（閒聊 01–12＋店裡的事 13–22，後者帶 need.met）／trip。
+  //        第二階段才有 encDare／encYes／encNo／encLapse／encLose／encWin／encVoid 與 trip 的 encWon／encLost（棒 3d）。
+  //   第一階段句數（check-content LD3 門檻、crowd.test LE11）：熟客每位 hello 2（泡）、again 6、chat 12、dig 8、shelf 4、trip 6、close 3、mem 3、busy 2＝46；
+  //     周姐 hello 2、again 6、chat 8、trip 3、close 3、mem 3、busy 2、loreIn 10、loreOut 8（規格 4；LE11「連續 10 段不重複」4 句過不了，照 §5.5 補句）、fact 20＝65；路人 chat 30；老闆 chat 22、trip 8＝30。
+  //   空格：手寫句只准 {title}{pos}{last}{far}{name}；樣板（shelf／fact／loreIn／loreOut）另准卡片欄位，怎麼填見下面 C.crowdFact（填不出來＝null，chatPick 的 usable 判掉那句）。
+  C.chat = [
+    // 小魚
+    { id: 'xiaoyu-hello-01', who: 'xiaoyu', cat: 'hello', text: ['你也常來？我叫小魚。', '我下課就來這裡報到。'], tag: '新' },
+    { id: 'xiaoyu-again-01', who: 'xiaoyu', cat: 'again', text: '又遇到你了！今天也是下課就跑來。', tag: '新' },
+    { id: 'xiaoyu-again-02', who: 'xiaoyu', cat: 'again', text: ['欸，是你！我剛好有事想問你。', '……算了，我忘記要問什麼了。'], tag: '新' },
+    { id: 'xiaoyu-again-03', who: 'xiaoyu', cat: 'again', text: '你來啦，我今天一進門就先衝試聽桌。', tag: '新' },
+    { id: 'xiaoyu-again-04', who: 'xiaoyu', cat: 'again', text: '嗨！我上完早八就來了，眼睛還沒醒。', tag: '新' },
+    { id: 'xiaoyu-again-05', who: 'xiaoyu', cat: 'again', text: '你也在！那我翻慢一點，等等找你講話。', tag: '新' },
+    { id: 'xiaoyu-again-06', who: 'xiaoyu', cat: 'again', text: '哈囉，今天沒課，我可以待久一點。', tag: '新' },
+    { id: 'xiaoyu-chat-01', who: 'xiaoyu', cat: 'chat', text: '我跟自己說今天只看不買，結果手上已經兩張了。', tag: '新' },
+    { id: 'xiaoyu-chat-02', who: 'xiaoyu', cat: 'chat', text: '我的唱盤是學長畢業留給我的，聲音小小的但很可愛。', tag: '新' },
+    { id: 'xiaoyu-chat-03', who: 'xiaoyu', cat: 'chat', text: '室友說黑膠很麻煩，可是放唱針那一下我好喜歡。', tag: '新' },
+    { id: 'xiaoyu-chat-04', who: 'xiaoyu', cat: 'chat', text: '打工的錢一半都花在這裡，我媽不知道。', tag: '新' },
+    { id: 'xiaoyu-chat-05', who: 'xiaoyu', cat: 'chat', text: '你第一次買黑膠是買哪一張？我好好奇。', tag: '新' },
+    { id: 'xiaoyu-chat-06', who: 'xiaoyu', cat: 'chat', text: '我宿舍桌上只放得下唱盤，書都堆到地上了。', tag: '新' },
+    { id: 'xiaoyu-chat-07', who: 'xiaoyu', cat: 'chat', text: '封面好看的我都會先拿起來，不管聽不聽得懂。', tag: '新' },
+    { id: 'xiaoyu-chat-08', who: 'xiaoyu', cat: 'chat', text: '聽黑膠要起來翻面，我覺得這樣反而比較專心。', tag: '新' },
+    { id: 'xiaoyu-chat-09', who: 'xiaoyu', cat: 'chat', text: '我最近愛上那種聽起來像夏天傍晚的歌。', tag: '新' },
+    { id: 'xiaoyu-chat-10', who: 'xiaoyu', cat: 'chat', text: '上課聽不下去的時候，我就在腦中排等等要翻哪幾箱。', tag: '新' },
+    { id: 'xiaoyu-chat-11', who: 'xiaoyu', cat: 'chat', text: '同學都用手機聽歌，只有我抱著唱片搭捷運。', tag: '新' },
+    { id: 'xiaoyu-chat-12', who: 'xiaoyu', cat: 'chat', text: '我還分不太出來好壞，只知道聽了會不會想哭。', tag: '新' },
+    { id: 'xiaoyu-dig-01', who: 'xiaoyu', cat: 'dig', text: '翻到第三輪才看到想要的，那種最爽。', tag: '新' },
+    { id: 'xiaoyu-dig-02', who: 'xiaoyu', cat: 'dig', text: '我翻箱子好慢，因為每張封面都想看。', tag: '新' },
+    { id: 'xiaoyu-dig-03', who: 'xiaoyu', cat: 'dig', text: '剛剛翻到一張封面是貓的，差點就買了。', tag: '新' },
+    { id: 'xiaoyu-dig-04', who: 'xiaoyu', cat: 'dig', text: '每次翻到手指黑黑的，就覺得自己有認真挖。', tag: '新' },
+    { id: 'xiaoyu-dig-05', who: 'xiaoyu', cat: 'dig', text: '我有個習慣，每一箱都要翻到底才甘願。', tag: '新' },
+    { id: 'xiaoyu-dig-06', who: 'xiaoyu', cat: 'dig', text: '找到想要的那張時，我會先抱著它在店裡繞一圈。', tag: '新' },
+    { id: 'xiaoyu-dig-07', who: 'xiaoyu', cat: 'dig', text: '有時候翻到沒看過的，光看歌名就好想聽。', tag: '新' },
+    { id: 'xiaoyu-dig-08', who: 'xiaoyu', cat: 'dig', text: '挖到喜歡的我會先夾在手臂下，怕被別人拿走。', tag: '新' },
+    { id: 'xiaoyu-shelf-01', who: 'xiaoyu', cat: 'shelf', text: '這箱有張《{album}》，封面我盯好久了。', tag: '新' },
+    { id: 'xiaoyu-shelf-02', who: 'xiaoyu', cat: 'shelf', text: '你看過《{album}》嗎？我好想帶回家。', tag: '新' },
+    { id: 'xiaoyu-shelf-03', who: 'xiaoyu', cat: 'shelf', text: '{artist}的《{album}》在這箱耶，我要先存錢。', tag: '新' },
+    { id: 'xiaoyu-shelf-04', who: 'xiaoyu', cat: 'shelf', text: '這張《{album}》我每次來都會拿起來看一下。', tag: '新' },
+    { id: 'xiaoyu-trip-01', who: 'xiaoyu', cat: 'trip', text: '你今天手好順，連贏幾個了？', need: { streakGte: 3 }, tag: '新' },
+    { id: 'xiaoyu-trip-02', who: 'xiaoyu', cat: 'trip', text: '你臉色不太好，要不要先去試聽一張？', need: { hpHalf: true }, tag: '新' },
+    { id: 'xiaoyu-trip-03', who: 'xiaoyu', cat: 'trip', text: '你剛開始打對吧？我也是剛開始玩黑膠，一起加油！', need: { firstRun: true }, tag: '新' },
+    { id: 'xiaoyu-trip-04', who: 'xiaoyu', cat: 'trip', text: '你走{title}喔？好帥，我都還不知道自己是哪一派。', need: { ace: 'hall' }, tag: '新' },
+    { id: 'xiaoyu-trip-05', who: 'xiaoyu', cat: 'trip', text: '你包包好鼓喔，裡面到底裝了幾張啊？', need: { bagGte: 10 }, tag: '新' },
+    { id: 'xiaoyu-trip-06', who: 'xiaoyu', cat: 'trip', text: '你今天打得比以前都遠耶，我在旁邊看得好緊張。', need: { newFar: true }, tag: '新' },
+    { id: 'xiaoyu-close-01', who: 'xiaoyu', cat: 'close', text: '跟你聊過之後，我比較敢問老闆問題了。', tag: '新' },
+    { id: 'xiaoyu-close-02', who: 'xiaoyu', cat: 'close', text: '室友問我店裡有沒有認識的人，我說有一個。', tag: '新' },
+    { id: 'xiaoyu-close-03', who: 'xiaoyu', cat: 'close', text: '以後你挖到好聽的，也跟我說好不好？', tag: '新' },
+    { id: 'xiaoyu-mem-01', who: 'xiaoyu', cat: 'mem', text: '你上一趟停在第 {last} 位對吧？我有記住喔。', tag: '新' },
+    { id: 'xiaoyu-mem-02', who: 'xiaoyu', cat: 'mem', text: '你最遠打到第 {far} 位耶，我還跟同學炫耀過。', tag: '新' },
+    { id: 'xiaoyu-mem-03', who: 'xiaoyu', cat: 'mem', text: '上次跟你聊完，我回家把唱片全部重新排了一遍。', tag: '新' },
+    { id: 'xiaoyu-busy-01', who: 'xiaoyu', cat: 'busy', text: '我再翻一下，等等聊。', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
+    { id: 'xiaoyu-busy-02', who: 'xiaoyu', cat: 'busy', text: '等我一下下，這張我還在猶豫！', tag: '新' },
+    // 阿凱
+    { id: 'akai-hello-01', who: 'akai', cat: 'hello', text: ['阿凱。下班順路，進來看看而已。', '……好啦，其實每天都順路。'], tag: '新' },
+    { id: 'akai-again-01', who: 'akai', cat: 'again', text: '喔，又是你。', tag: '新' },
+    { id: 'akai-again-02', who: 'akai', cat: 'again', text: '你也在喔。我只是路過，翻一下就走。', tag: '新' },
+    { id: 'akai-again-03', who: 'akai', cat: 'again', text: '又來？你比我還常來吧。', tag: '新' },
+    { id: 'akai-again-04', who: 'akai', cat: 'again', text: '嗯。今天加班，晚了一點。', tag: '新' },
+    { id: 'akai-again-05', who: 'akai', cat: 'again', text: '你比較早喔，我還以為我第一個到。', tag: '新' },
+    { id: 'akai-again-06', who: 'akai', cat: 'again', text: '別看我，我今天沒有要買。', tag: '新' },
+    { id: 'akai-chat-01', who: 'akai', cat: 'chat', text: '下班不想直接回家，先來這裡翻一輪。', tag: '新' },
+    { id: 'akai-chat-02', who: 'akai', cat: 'chat', text: '主管今天又改需求，我需要很吵的東西洗耳朵。', tag: '新' },
+    { id: 'akai-chat-03', who: 'akai', cat: 'chat', text: '我不是喜歡吵，是安靜的歌會讓我想太多。', tag: '新' },
+    { id: 'akai-chat-04', who: 'akai', cat: 'chat', text: '同事問我平常聽什麼，我說隨便聽聽。', tag: '新' },
+    { id: 'akai-chat-05', who: 'akai', cat: 'chat', text: '耳機戴一整天，回家還是想放唱片，很怪吧。', tag: '新' },
+    { id: 'akai-chat-06', who: 'akai', cat: 'chat', text: '也沒有很愛啦，就是一個禮拜來五天而已。', tag: '新' },
+    { id: 'akai-chat-07', who: 'akai', cat: 'chat', text: '我房間放不下了，現在只買真的很想要的。', tag: '新' },
+    { id: 'akai-chat-08', who: 'akai', cat: 'chat', text: '週五晚上不用趕，翻到老闆開始看手錶我才走。', tag: '新' },
+    { id: 'akai-chat-09', who: 'akai', cat: 'chat', text: '聽重的東西會累？不會，那是在放鬆。', tag: '新' },
+    { id: 'akai-chat-10', who: 'akai', cat: 'chat', text: '我買唱片不聽別人推薦，自己踩雷比較甘心。', tag: '新' },
+    { id: 'akai-chat-11', who: 'akai', cat: 'chat', text: '我搭捷運都在想下一張要買什麼，比想工作認真。', tag: '新' },
+    { id: 'akai-chat-12', who: 'akai', cat: 'chat', text: '老闆那隻貓每次都瞪我，我又沒怎樣。', tag: '新' },
+    { id: 'akai-dig-01', who: 'akai', cat: 'dig', text: ['上禮拜在這箱挖到一張，回家聽到睡著。', '是好的那種睡著。'], need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
+    { id: 'akai-dig-02', who: 'akai', cat: 'dig', text: '翻箱子會上癮，明明說好只翻一箱。', tag: '新' },
+    { id: 'akai-dig-03', who: 'akai', cat: 'dig', text: '挖到一張想要的，整天的鳥事就算了。', tag: '新' },
+    { id: 'akai-dig-04', who: 'akai', cat: 'dig', text: '我翻很快，封面閃過去一眼就知道要不要。', tag: '新' },
+    { id: 'akai-dig-05', who: 'akai', cat: 'dig', text: '有一次翻到想很久的那張，我假裝很冷靜拿去結帳。', tag: '新' },
+    { id: 'akai-dig-06', who: 'akai', cat: 'dig', text: ['空手回家也沒差啦，翻的過程比較重要。', '……騙你的，有差。'], tag: '新' },
+    { id: 'akai-dig-07', who: 'akai', cat: 'dig', text: '封面越醜的我越想拿起來看，通常都不會錯。', tag: '新' },
+    { id: 'akai-dig-08', who: 'akai', cat: 'dig', text: '我都從最後面往前翻，別人翻過的我不信。', tag: '新' },
+    { id: 'akai-shelf-01', who: 'akai', cat: 'shelf', text: '這箱那張《{album}》，我看了三次還沒買。', tag: '新' },
+    { id: 'akai-shelf-02', who: 'akai', cat: 'shelf', text: '《{album}》？還好啦，我只是剛好拿起來。', tag: '新' },
+    { id: 'akai-shelf-03', who: 'akai', cat: 'shelf', text: '誰把《{album}》塞在這箱最後面，想藏起來喔？', tag: '新' },
+    { id: 'akai-shelf-04', who: 'akai', cat: 'shelf', text: '《{album}》你要嗎？不要我就拿走了。', tag: '新' },
+    { id: 'akai-trip-01', who: 'akai', cat: 'trip', text: '都打到第 {pos} 位了，算你有兩下。', need: { posGte: 10 }, tag: '新' },
+    { id: 'akai-trip-02', who: 'akai', cat: 'trip', text: '你氣色很差欸。……我沒有在擔心，只是說說。', need: { hpHalf: true }, tag: '新' },
+    { id: 'akai-trip-03', who: 'akai', cat: 'trip', text: '你這趟有拜託老闆再一場吧？我看到了，不會講出去。', need: { retried: true }, tag: '新' },
+    { id: 'akai-trip-04', who: 'akai', cat: 'trip', text: '連贏那麼多喔。普通啦，換我也可以。', need: { streakGte: 4 }, tag: '新' },
+    { id: 'akai-trip-05', who: 'akai', cat: 'trip', text: '你這輪接了踢館帖？有種，我欣賞。', need: { dare: true }, tag: '新' },
+    { id: 'akai-trip-06', who: 'akai', cat: 'trip', text: '才第 {pos} 位而已，別緊張，手放輕鬆。', need: { posLte: 3 }, tag: '新' },
+    { id: 'akai-close-01', who: 'akai', cat: 'close', text: '老實說，你挑盤的眼光還不錯啦。', tag: '新' },
+    { id: 'akai-close-02', who: 'akai', cat: 'close', text: ['這間店是我下班唯一會想去的地方。', '……不要跟老闆說。'], tag: '新' },
+    { id: 'akai-close-03', who: 'akai', cat: 'close', text: '下次你翻到吵的，留一張給我，我請你喝飲料。', tag: '新' },
+    { id: 'akai-mem-01', who: 'akai', cat: 'mem', text: '上一趟你停在第 {last} 位，這次給我撐久一點。', tag: '新' },
+    { id: 'akai-mem-02', who: 'akai', cat: 'mem', text: '你最遠到第 {far} 位喔，我記性好而已，別多想。', tag: '新' },
+    { id: 'akai-mem-03', who: 'akai', cat: 'mem', text: ['上次你走了之後，老闆一直在講你。', '……我沒在聽。'], tag: '新' },
+    { id: 'akai-busy-01', who: 'akai', cat: 'busy', text: '等一下，我這箱還沒翻完。', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
+    { id: 'akai-busy-02', who: 'akai', cat: 'busy', text: '現在不行，我在找東西。', tag: '新' },
+    // 大頭
+    { id: 'datou-hello-01', who: 'datou', cat: 'hello', text: ['欸你好你好，我大頭，週末在酒吧放歌！', '你也來挖寶齁？挖到好接的跟我說！'], tag: '新' },
+    { id: 'datou-again-01', who: 'datou', cat: 'again', text: '欸你來了！剛好，我在找下一首要接的歌。', tag: '新' },
+    { id: 'datou-again-02', who: 'datou', cat: 'again', text: '又見面啦！我跟你說，昨天客人留到很晚都不走。', tag: '新' },
+    { id: 'datou-again-03', who: 'datou', cat: 'again', text: '嘿！你今天也來挖喔，搶不贏我啦。', tag: '新' },
+    { id: 'datou-again-04', who: 'datou', cat: 'again', text: '你來啦你來啦，我剛好想找人講話。', tag: '新' },
+    { id: 'datou-again-05', who: 'datou', cat: 'again', text: '欸欸，是你！我只有半小時，等等要去試音。', tag: '新' },
+    { id: 'datou-again-06', who: 'datou', cat: 'again', text: '喔喔，熟面孔！要不要比誰先翻到好貨？', tag: '新' },
+    { id: 'datou-chat-01', who: 'datou', cat: 'chat', text: '週末那場要放兩個小時，我還在湊歌單。', tag: '新' },
+    { id: 'datou-chat-02', who: 'datou', cat: 'chat', text: '我在練接歌，這箱的鼓都很好接。', need: { at: ['c-elec', 'c-hiphop', 'c-soul'] }, tag: '新' },
+    { id: 'datou-chat-03', who: 'datou', cat: 'chat', text: '上禮拜放到一半唱針跳掉，全場在看我，超尷尬。', tag: '新' },
+    { id: 'datou-chat-04', who: 'datou', cat: 'chat', text: '客人一跳起來，我就知道這首接對了。', tag: '新' },
+    { id: 'datou-chat-05', who: 'datou', cat: 'chat', text: '我手機記事本裡全是歌單，有幾百條。', tag: '新' },
+    { id: 'datou-chat-06', who: 'datou', cat: 'chat', text: '接歌最怕兩首速度差太多，硬接會很好笑。', tag: '新' },
+    { id: 'datou-chat-07', who: 'datou', cat: 'chat', text: '我在家練到半夜，樓下阿伯跑上來敲門。', tag: '新' },
+    { id: 'datou-chat-08', who: 'datou', cat: 'chat', text: '有時候最安靜的那首，反而讓全場停下來聽。', tag: '新' },
+    { id: 'datou-chat-09', who: 'datou', cat: 'chat', text: '酒吧老闆說我放的歌太冷門，可是客人都留下來啊。', tag: '新' },
+    { id: 'datou-chat-10', who: 'datou', cat: 'chat', text: '我耳朵現在聽什麼都在算拍子，職業病啦。', tag: '新' },
+    { id: 'datou-chat-11', who: 'datou', cat: 'chat', text: '老歌接新歌的時候，台下會有人突然大叫，超爽。', tag: '新' },
+    { id: 'datou-chat-12', who: 'datou', cat: 'chat', text: '平日翻唱片，週末放唱片，我的人生就這兩件事。', tag: '新' },
+    { id: 'datou-dig-01', who: 'datou', cat: 'dig', text: '箱底常有好東西，就看你翻不翻得到。', tag: '新' },
+    { id: 'datou-dig-02', who: 'datou', cat: 'dig', text: '我翻箱一定戴耳機，聽著歌翻比較有手感。', tag: '新' },
+    { id: 'datou-dig-03', who: 'datou', cat: 'dig', text: '挖到一張別人都沒聽過的，放出來大家都跑來問我。', tag: '新' },
+    { id: 'datou-dig-04', who: 'datou', cat: 'dig', text: '有一次挖到一張，放第一首我就決定拿來開場。', tag: '新' },
+    { id: 'datou-dig-05', who: 'datou', cat: 'dig', text: '翻箱就是要快狠準，猶豫一下就被別人拿走了。', tag: '新' },
+    { id: 'datou-dig-06', who: 'datou', cat: 'dig', text: '我會一次抱五六張去試聽桌，老闆都翻白眼。', tag: '新' },
+    { id: 'datou-dig-07', who: 'datou', cat: 'dig', text: '今天翻了三箱，挖到兩張，賺了賺了。', tag: '新' },
+    { id: 'datou-dig-08', who: 'datou', cat: 'dig', text: '我最愛撿別人剛翻完的箱子，常有好貨被跳過。', tag: '新' },
+    { id: 'datou-shelf-01', who: 'datou', cat: 'shelf', text: '《{album}》這張，我在想排進歌單會不會太跳。', tag: '新' },
+    { id: 'datou-shelf-02', who: 'datou', cat: 'shelf', text: '欸這箱有《{album}》！先讓我卡位一下。', tag: '新' },
+    { id: 'datou-shelf-03', who: 'datou', cat: 'shelf', text: '{artist}的《{album}》，你聽過嗎？我還沒。', tag: '新' },
+    { id: 'datou-shelf-04', who: 'datou', cat: 'shelf', text: '這張《{album}》封面好讚，我想拿回去裱起來。', tag: '新' },
+    { id: 'datou-trip-01', who: 'datou', cat: 'trip', text: '欸你連贏欸！今天手氣好旺，衝一波！', need: { streakGte: 3 }, tag: '新' },
+    { id: 'datou-trip-02', who: 'datou', cat: 'trip', text: '欸你還好嗎？剛剛那場看得我都替你緊張。', need: { hpHalf: true }, tag: '新' },
+    { id: 'datou-trip-03', who: 'datou', cat: 'trip', text: '原來你是{title}的，跟我放歌的路數一樣嘛！', need: { ace: 'pearl' }, tag: '新' },
+    { id: 'datou-trip-04', who: 'datou', cat: 'trip', text: '你包包裡那麼多張，借我幾張去放啦。', need: { bagGte: 10 }, tag: '新' },
+    { id: 'datou-trip-05', who: 'datou', cat: 'trip', text: '你破紀錄了吧？這要放首歌慶祝一下！', need: { newFar: true }, tag: '新' },
+    { id: 'datou-trip-06', who: 'datou', cat: 'trip', text: '第 {pos} 位了欸！你到底要打到哪裡？', need: { posGte: 20 }, tag: '新' },
+    { id: 'datou-close-01', who: 'datou', cat: 'close', text: '下次來酒吧聽我放歌啊，我請你喝一杯。', tag: '新' },
+    { id: 'datou-close-02', who: 'datou', cat: 'close', text: '跟你聊完我都會冒出新的歌單點子，你是我的靈感啦。', tag: '新' },
+    { id: 'datou-close-03', who: 'datou', cat: 'close', text: '你是少數聽我講接歌不會恍神的人，感謝喔。', tag: '新' },
+    { id: 'datou-mem-01', who: 'datou', cat: 'mem', text: '上一趟你到第 {last} 位，這次衝更遠啦！', tag: '新' },
+    { id: 'datou-mem-02', who: 'datou', cat: 'mem', text: '你最遠到第 {far} 位對吧？我都記在手機裡。', tag: '新' },
+    { id: 'datou-mem-03', who: 'datou', cat: 'mem', text: '上次跟你講的那個接法，我週末真的用了，有效！', tag: '新' },
+    { id: 'datou-busy-01', who: 'datou', cat: 'busy', text: '等我一下，我在想下一首接什麼。', tag: '新' },
+    { id: 'datou-busy-02', who: 'datou', cat: 'busy', text: '欸等等等，我快翻到了，給我十秒！', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
+    // 阿芳
+    { id: 'afang-hello-01', who: 'afang', cat: 'hello', text: ['你好，我在附近開咖啡店，叫我阿芳就好。', '我常來幫店裡找歌，以後應該常碰面。'], tag: '新' },
+    { id: 'afang-again-01', who: 'afang', cat: 'again', text: '哈囉，今天也來挖寶啊？我也是。', tag: '新' },
+    { id: 'afang-again-02', who: 'afang', cat: 'again', text: '欸，是你！我剛好來補店裡的歌。', tag: '新' },
+    { id: 'afang-again-03', who: 'afang', cat: 'again', text: '今天店裡公休，我打算在這耗一整天。', tag: '新' },
+    { id: 'afang-again-04', who: 'afang', cat: 'again', text: '嗨，我只能待一下下，咖啡店只有工讀生在顧。', tag: '新' },
+    { id: 'afang-again-05', who: 'afang', cat: 'again', text: '又見面了，最近咖啡店客人多，歌都不夠換。', tag: '新' },
+    { id: 'afang-again-06', who: 'afang', cat: 'again', text: '你也在啊，我剛送完一批外帶就跑過來。', tag: '新' },
+    { id: 'afang-chat-01', who: 'afang', cat: 'chat', text: '店裡要放的歌我都來這邊找，客人很挑。', tag: '新' },
+    { id: 'afang-chat-02', who: 'afang', cat: 'chat', text: '早上開店放輕快的，下午就換慢一點的。', tag: '新' },
+    { id: 'afang-chat-03', who: 'afang', cat: 'chat', text: ['上次有客人喝完咖啡跑來問歌名。', '我開心到多送他一塊蛋糕。'], tag: '新' },
+    { id: 'afang-chat-04', who: 'afang', cat: 'chat', text: '磨豆機一開，什麼歌都聽不到，好氣。', tag: '新' },
+    { id: 'afang-chat-05', who: 'afang', cat: 'chat', text: '下雨天咖啡店人少，我就偷放自己想聽的。', tag: '新' },
+    { id: 'afang-chat-06', who: 'afang', cat: 'chat', text: '我店裡那台唱盤是二手的，轉起來有點喘。', tag: '新' },
+    { id: 'afang-chat-07', who: 'afang', cat: 'chat', text: '有客人坐一整個下午，就為了聽完一整面。', tag: '新' },
+    { id: 'afang-chat-08', who: 'afang', cat: 'chat', text: '這箱的人聲都軟軟的，好適合店裡的下午。', need: { at: ['c-citypop'] }, tag: '新' },
+    { id: 'afang-chat-09', who: 'afang', cat: 'chat', text: '這區的節奏好特別，客人聽了會跟著點頭。', need: { at: ['c-world'] }, tag: '新' },
+    { id: 'afang-chat-10', who: 'afang', cat: 'chat', text: '聽不懂歌詞的歌放店裡剛好，不會吵到人聊天。', tag: '新' },
+    { id: 'afang-chat-11', who: 'afang', cat: 'chat', text: '我家那位說，我買唱片比買咖啡豆還兇。', tag: '新' },
+    { id: 'afang-chat-12', who: 'afang', cat: 'chat', text: '關店後一個人擦杯子聽歌，是一天最爽的時候。', tag: '新' },
+    { id: 'afang-dig-01', who: 'afang', cat: 'dig', text: '找到一張適合下午放的，心情就好一整天。', tag: '新' },
+    { id: 'afang-dig-02', who: 'afang', cat: 'dig', text: '封面好看的我都先抽出來，再一張一張試聽。', tag: '新' },
+    { id: 'afang-dig-03', who: 'afang', cat: 'dig', text: '我翻得很慢，一邊翻一邊想放在店裡會怎樣。', tag: '新' },
+    { id: 'afang-dig-04', who: 'afang', cat: 'dig', text: '翻到一張，馬上就想到我店裡哪個熟客會喜歡。', tag: '新' },
+    { id: 'afang-dig-05', who: 'afang', cat: 'dig', text: '有些封面上的字一個都看不懂，反而更想聽。', tag: '新' },
+    { id: 'afang-dig-06', who: 'afang', cat: 'dig', text: ['挖到好東西不能叫太大聲。', '被旁邊的人聽到，就換他先拿走了。'], tag: '新' },
+    { id: 'afang-dig-07', who: 'afang', cat: 'dig', text: '翻到手指都黑了，回去洗杯子前要先洗手。', tag: '新' },
+    { id: 'afang-dig-08', who: 'afang', cat: 'dig', text: '在試聽機前多站一下，才知道放店裡合不合。', need: { at: ['c-listen'] }, tag: '新' },
+    { id: 'afang-shelf-01', who: 'afang', cat: 'shelf', text: '這箱那張《{album}》，放在店裡應該很搭。', tag: '新' },
+    { id: 'afang-shelf-02', who: 'afang', cat: 'shelf', text: '《{album}》我想買回去，早上開店的時候放。', tag: '新' },
+    { id: 'afang-shelf-03', who: 'afang', cat: 'shelf', text: '這箱有張{artist}的，我想先拿去試聽看看。', tag: '新' },
+    { id: 'afang-shelf-04', who: 'afang', cat: 'shelf', text: '《{album}》的封面好漂亮，好想裱起來掛在店裡。', tag: '新' },
+    { id: 'afang-trip-01', who: 'afang', cat: 'trip', text: '你也走{title}的路子？難怪會翻這種箱。', need: { ace: 'pearl' }, tag: '新' },
+    { id: 'afang-trip-02', who: 'afang', cat: 'trip', text: '你看起來好累，我包包裡有糖，分你一顆。', need: { hpHalf: true }, tag: '新' },
+    { id: 'afang-trip-03', who: 'afang', cat: 'trip', text: '連贏好幾個了耶，我在旁邊看得手心都是汗。', need: { streakGte: 3 }, tag: '新' },
+    { id: 'afang-trip-04', who: 'afang', cat: 'trip', text: '你包包也太滿了吧，跟我店裡的豆子櫃一樣。', need: { bagGte: 8 }, tag: '新' },
+    { id: 'afang-trip-05', who: 'afang', cat: 'trip', text: '你是新來的吧？別緊張，這間店又不會跑掉。', need: { firstRun: true }, tag: '新' },
+    { id: 'afang-trip-06', who: 'afang', cat: 'trip', text: '你今天走得比上次還遠耶，回去要跟客人講。', need: { newFar: true }, tag: '新' },
+    { id: 'afang-close-01', who: 'afang', cat: 'close', text: '有空來店裡坐，咖啡算我的。', tag: '新' },
+    { id: 'afang-close-02', who: 'afang', cat: 'close', text: '上次看你拿的那張，我後來也買回店裡放了。', tag: '新' },
+    { id: 'afang-close-03', who: 'afang', cat: 'close', text: '哪天你挑一張來店裡放，我想聽聽你的口味。', tag: '新' },
+    { id: 'afang-mem-01', who: 'afang', cat: 'mem', text: '你上一趟走到第 {last} 位，我還跟客人說過呢。', tag: '新' },
+    { id: 'afang-mem-02', who: 'afang', cat: 'mem', text: '我在點單本背面記著，你最遠到過第 {far} 位。', tag: '新' },
+    { id: 'afang-mem-03', who: 'afang', cat: 'mem', text: '上次看你打到第 {last} 位，回店裡拉花都拉歪了。', tag: '新' },
+    { id: 'afang-busy-01', who: 'afang', cat: 'busy', text: '我先挑完這幾張，等等再聊。', tag: '新' },
+    { id: 'afang-busy-02', who: 'afang', cat: 'busy', text: '等我一下，我在想這張放店裡會不會太吵。', tag: '新' },
+    // 老陳
+    { id: 'laochen-hello-01', who: 'laochen', cat: 'hello', text: ['這位同學，第一次見面，我姓陳。', '以前教書的，叫我老陳就好。'], tag: '新' },
+    { id: 'laochen-again-01', who: 'laochen', cat: 'again', text: '你也來啦，我才剛到，箱子都還沒碰。', tag: '新' },
+    { id: 'laochen-again-02', who: 'laochen', cat: 'again', text: '又遇到你了，同學今天精神不錯喔。', tag: '新' },
+    { id: 'laochen-again-03', who: 'laochen', cat: 'again', text: '呵呵，我們還真有緣，又碰到了。', tag: '新' },
+    { id: 'laochen-again-04', who: 'laochen', cat: 'again', text: '來啦？我今天腰比較不痠，可以多翻幾箱。', tag: '新' },
+    { id: 'laochen-again-05', who: 'laochen', cat: 'again', text: '你來得正好，我剛翻到一張找了好久的。', tag: '新' },
+    { id: 'laochen-again-06', who: 'laochen', cat: 'again', text: '又見面了。今天我太太准我買兩張。', tag: '新' },
+    { id: 'laochen-chat-01', who: 'laochen', cat: 'chat', text: '年輕時買不起，現在買得起了，耳朵也老了。', tag: '新' },
+    { id: 'laochen-chat-02', who: 'laochen', cat: 'chat', text: '以前教書，下課鐘一響就想往唱片行跑。', tag: '新' },
+    { id: 'laochen-chat-03', who: 'laochen', cat: 'chat', text: '我太太說，家裡的牆快被唱片吃掉了。', tag: '新' },
+    { id: 'laochen-chat-04', who: 'laochen', cat: 'chat', text: '晚上泡一壺茶，聽一面就好，不貪心。', tag: '新' },
+    { id: 'laochen-chat-05', who: 'laochen', cat: 'chat', text: '老花眼看封底的小字，要拿得好遠才看得到。', tag: '新' },
+    { id: 'laochen-chat-06', who: 'laochen', cat: 'chat', text: '以前學生畢業送我一張唱片，到現在還捨不得拆。', tag: '新' },
+    { id: 'laochen-chat-07', who: 'laochen', cat: 'chat', text: '有些歌年輕時聽不懂，現在一聽就鼻酸。', tag: '新' },
+    { id: 'laochen-chat-08', who: 'laochen', cat: 'chat', text: '退休以後時間多了，就是錢少了，呵呵。', tag: '新' },
+    { id: 'laochen-chat-09', who: 'laochen', cat: 'chat', text: '我家那台唱盤跟了我很久，到現在還很勇。', tag: '新' },
+    { id: 'laochen-chat-10', who: 'laochen', cat: 'chat', text: '以前守著收音機等那首歌，現在終於買到唱片了。', tag: '新' },
+    { id: 'laochen-chat-11', who: 'laochen', cat: 'chat', text: '這箱的弦樂，晚上關了燈聽最有味道。', need: { at: ['c-classical'] }, tag: '新' },
+    { id: 'laochen-chat-12', who: 'laochen', cat: 'chat', text: '這箱的和聲一疊上來，我的腳就跟著打拍子。', need: { at: ['c-soul'] }, tag: '新' },
+    { id: 'laochen-dig-01', who: 'laochen', cat: 'dig', text: '翻箱子跟釣魚一樣，急不來的。', tag: '新' },
+    { id: 'laochen-dig-02', who: 'laochen', cat: 'dig', text: '翻久了腰會痠，翻完一箱就伸個懶腰。', tag: '新' },
+    { id: 'laochen-dig-03', who: 'laochen', cat: 'dig', text: '以前想要的那張，有時翻著翻著就冒出來了。', tag: '新' },
+    { id: 'laochen-dig-04', who: 'laochen', cat: 'dig', text: '我口袋裡有張清單，找了好久還劃不掉幾個。', tag: '新' },
+    { id: 'laochen-dig-05', who: 'laochen', cat: 'dig', text: '翻到一半眼鏡一直滑下來，推了又推。', tag: '新' },
+    { id: 'laochen-dig-06', who: 'laochen', cat: 'dig', text: '每次翻到想要的，都想跟年輕的自己說一聲。', tag: '新' },
+    { id: 'laochen-dig-07', who: 'laochen', cat: 'dig', text: '一箱翻完再從頭翻一次，常常第二次才看到。', tag: '新' },
+    { id: 'laochen-dig-08', who: 'laochen', cat: 'dig', text: '在試聽機前站一下，腳就捨不得走了。', need: { at: ['c-listen'] }, tag: '新' },
+    { id: 'laochen-shelf-01', who: 'laochen', cat: 'shelf', text: '這箱有張《{album}》，我看看清單上有沒有。', tag: '新' },
+    { id: 'laochen-shelf-02', who: 'laochen', cat: 'shelf', text: '《{album}》這張，我得回家查查是不是買過了。', tag: '新' },
+    { id: 'laochen-shelf-03', who: 'laochen', cat: 'shelf', text: '{artist}的唱片我太太也愛聽，帶一張回去好了。', tag: '新' },
+    { id: 'laochen-shelf-04', who: 'laochen', cat: 'shelf', text: '《{album}》先放著，翻完一輪還在就帶走。', tag: '新' },
+    { id: 'laochen-trip-01', who: 'laochen', cat: 'trip', text: '說情過啦？我當學生時也補考過，呵呵。', need: { retried: true }, tag: '新' },
+    { id: 'laochen-trip-02', who: 'laochen', cat: 'trip', text: '看你有點累，先坐一下，不急。', need: { hpHalf: true }, tag: '新' },
+    { id: 'laochen-trip-03', who: 'laochen', cat: 'trip', text: '連贏好幾場，同學手氣正旺啊。', need: { streakGte: 3 }, tag: '新' },
+    { id: 'laochen-trip-04', who: 'laochen', cat: 'trip', text: '第 {pos} 位了？我年輕時可沒這種膽量。', need: { posGte: 20 }, tag: '新' },
+    { id: 'laochen-trip-05', who: 'laochen', cat: 'trip', text: '接了踢館帖啊？這一輪我陪你一起緊張。', need: { dare: true }, tag: '新' },
+    { id: 'laochen-trip-06', who: 'laochen', cat: 'trip', text: '比上一趟走得還遠了，穩穩走，別急。', need: { newFar: true }, tag: '新' },
+    { id: 'laochen-close-01', who: 'laochen', cat: 'close', text: '跟你聊天，好像回到以前教書的時候。', tag: '新' },
+    { id: 'laochen-close-02', who: 'laochen', cat: 'close', text: '我那張清單，你看到哪張就幫我留意一下。', tag: '新' },
+    { id: 'laochen-close-03', who: 'laochen', cat: 'close', text: '哪天來我家聽唱片，我太太泡的茶很好喝。', tag: '新' },
+    { id: 'laochen-mem-01', who: 'laochen', cat: 'mem', text: '第 {last} 位，是你上一趟停下來的地方吧？這次穩一點。', tag: '新' },
+    { id: 'laochen-mem-02', who: 'laochen', cat: 'mem', text: '你最遠走到第 {far} 位吧？老師記性還不錯。', tag: '新' },
+    { id: 'laochen-mem-03', who: 'laochen', cat: 'mem', text: '上一趟第 {last} 位，以前我會在考卷上寫：可再加油。', tag: '新' },
+    { id: 'laochen-busy-01', who: 'laochen', cat: 'busy', text: '讓我先看完這幾張，老人家手腳慢。', tag: '新' },
+    { id: 'laochen-busy-02', who: 'laochen', cat: 'busy', text: '同學稍等，老人家一次只能專心一件事。', tag: '新' },
+    // 周姐（行家；知識只有欄位樣板與藝人介紹摘句，寫手不寫事實、引子不帶事實，§6）
+    { id: 'zhoujie-hello-01', who: 'zhoujie', cat: 'hello', text: ['新面孔？我跟你們老闆認識很久了。', '叫我周姐，以前我們在同一間店上班。'], tag: '新' },
+    { id: 'zhoujie-again-01', who: 'zhoujie', cat: 'again', text: '來啦，今天想聽點什麼？', tag: '新' },
+    { id: 'zhoujie-again-02', who: 'zhoujie', cat: 'again', text: '又是你。你們老闆最近有沒有偷懶？', tag: '新' },
+    { id: 'zhoujie-again-03', who: 'zhoujie', cat: 'again', text: '我剛跟老闆喝完茶，換你陪我翻。', tag: '新' },
+    { id: 'zhoujie-again-04', who: 'zhoujie', cat: 'again', text: '唷，你也在。這幾箱我先幫你看過一輪了。', tag: '新' },
+    { id: 'zhoujie-again-05', who: 'zhoujie', cat: 'again', text: '來得正好，我剛好想找個人說說話。', tag: '新' },
+    { id: 'zhoujie-again-06', who: 'zhoujie', cat: 'again', text: '嗨，今天手氣如何？我先說，我的不錯。', tag: '新' },
+    { id: 'zhoujie-chat-01', who: 'zhoujie', cat: 'chat', text: '年輕人，翻慢一點，好盤會等你。', tag: '新' },
+    { id: 'zhoujie-chat-02', who: 'zhoujie', cat: 'chat', text: '以前顧櫃檯，客人哼兩句我就知道要哪張。', tag: '新' },
+    { id: 'zhoujie-chat-03', who: 'zhoujie', cat: 'chat', text: '你們老闆年輕時，比你還會殺價。', tag: '新' },
+    { id: 'zhoujie-chat-04', who: 'zhoujie', cat: 'chat', text: '顧店那幾年，最怕客人說隨便推薦一張。', tag: '新' },
+    { id: 'zhoujie-chat-05', who: 'zhoujie', cat: 'chat', text: '唱片行好玩的地方，是每天都有人帶故事進來。', tag: '新' },
+    { id: 'zhoujie-chat-06', who: 'zhoujie', cat: 'chat', text: '現在不顧店了，換我當客人，輕鬆多了。', tag: '新' },
+    { id: 'zhoujie-chat-07', who: 'zhoujie', cat: 'chat', text: '看到有人整隻手按在封面上，我還是會皺眉。', tag: '新' },
+    { id: 'zhoujie-chat-08', who: 'zhoujie', cat: 'chat', text: '我推過的唱片，有人回來罵，也有人回來道謝。', tag: '新' },
+    { id: 'zhoujie-trip-01', who: 'zhoujie', cat: 'trip', text: '今天打得不錯，看得出來有在聽。', need: { streakGte: 3 }, tag: '新' },
+    { id: 'zhoujie-trip-02', who: 'zhoujie', cat: 'trip', text: '走{title}的啊？我年輕時也愛跟人唱反調。', need: { ace: 'heresy' }, tag: '新' },
+    { id: 'zhoujie-trip-03', who: 'zhoujie', cat: 'trip', text: '輸一場不算什麼，我顧店時也常被客人考倒。', need: { retried: true }, tag: '新' },
+    { id: 'zhoujie-close-01', who: 'zhoujie', cat: 'close', text: '跟你聊天，比跟你們老闆聊有意思。', tag: '新' },
+    { id: 'zhoujie-close-02', who: 'zhoujie', cat: 'close', text: '下次有好東西進來，我叫老闆先留給你看。', tag: '新' },
+    { id: 'zhoujie-close-03', who: 'zhoujie', cat: 'close', text: '你這樣翻下去，哪天換你來教我。', tag: '新' },
+    { id: 'zhoujie-mem-01', who: 'zhoujie', cat: 'mem', text: '上一趟你走到第 {last} 位，老闆跟我說了。', tag: '新' },
+    { id: 'zhoujie-mem-02', who: 'zhoujie', cat: 'mem', text: '最遠到過第 {far} 位？那我得重新看你一眼。', tag: '新' },
+    { id: 'zhoujie-mem-03', who: 'zhoujie', cat: 'mem', text: '上次停在第 {last} 位，這次別急，一位一位來。', tag: '新' },
+    { id: 'zhoujie-busy-01', who: 'zhoujie', cat: 'busy', text: '這箱我還沒看完，你先去翻別的。', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' },
+    { id: 'zhoujie-busy-02', who: 'zhoujie', cat: 'busy', text: '等一下，這張我得看仔細。', tag: '新' },
+    { id: 'zhoujie-loreIn-01', who: 'zhoujie', cat: 'loreIn', text: '{artist}啊，我記得介紹上寫：', tag: '新' },
+    { id: 'zhoujie-loreIn-02', who: 'zhoujie', cat: 'loreIn', text: '說到{artist}，介紹裡有一句我很喜歡：', tag: '新' },
+    { id: 'zhoujie-loreIn-03', who: 'zhoujie', cat: 'loreIn', text: '{artist}啊，我照介紹念給你聽：', tag: '新' },
+    { id: 'zhoujie-loreIn-04', who: 'zhoujie', cat: 'loreIn', text: '我不亂講，介紹上是這樣寫{artist}的：', tag: '新' },
+    { id: 'zhoujie-loreIn-05', who: 'zhoujie', cat: 'loreIn', text: '這張是{artist}的。介紹上有一段：', tag: '新' },
+    { id: 'zhoujie-loreIn-06', who: 'zhoujie', cat: 'loreIn', text: '{artist}的事我不憑印象講，照介紹來：', tag: '新' },
+    { id: 'zhoujie-loreIn-07', who: 'zhoujie', cat: 'loreIn', text: '{artist}？等我想想，介紹上寫過：', tag: '新' },
+    { id: 'zhoujie-loreIn-08', who: 'zhoujie', cat: 'loreIn', text: '跟你講個{artist}的事，介紹上看來的：', tag: '新' },
+    { id: 'zhoujie-loreIn-09', who: 'zhoujie', cat: 'loreIn', text: '《{album}》是{artist}的，介紹裡提到：', tag: '新' },
+    { id: 'zhoujie-loreIn-10', who: 'zhoujie', cat: 'loreIn', text: '{artist}這名字你記一下，介紹上說：', tag: '新' },
+    { id: 'zhoujie-loreOut-01', who: 'zhoujie', cat: 'loreOut', text: '想知道更多，點封面看唱片資訊。', tag: '新' },
+    { id: 'zhoujie-loreOut-02', who: 'zhoujie', cat: 'loreOut', text: '我就記得這些，其他的你自己聽。', tag: '新' },
+    { id: 'zhoujie-loreOut-03', who: 'zhoujie', cat: 'loreOut', text: '好了，講太多就不好玩了，自己去聽吧。', tag: '新' },
+    { id: 'zhoujie-loreOut-04', who: 'zhoujie', cat: 'loreOut', text: '聽完再來跟我說，你覺得怎樣。', tag: '新' },
+    { id: 'zhoujie-fact-01', who: 'zhoujie', cat: 'fact', text: '《{album}》是{year}年發行的。', tag: '新' },
+    { id: 'zhoujie-fact-02', who: 'zhoujie', cat: 'fact', text: '{artist}這張是{decade}年代發行的。', tag: '新' },
+    { id: 'zhoujie-fact-03', who: 'zhoujie', cat: 'fact', text: '{artist}這張曲風標{genre}，不過你自己聽了算。', tag: '新' },
+    { id: 'zhoujie-fact-04', who: 'zhoujie', cat: 'fact', text: '這張是{region}的唱片，翻到我都會多看一眼。', tag: '新' },
+    { id: 'zhoujie-fact-05', who: 'zhoujie', cat: 'fact', text: '我看這張標{tune}，挑對心情再放。', tag: '新' },
+    { id: 'zhoujie-fact-06', who: 'zhoujie', cat: 'fact', text: '照店裡的分法，《{album}》偏{axis}。', tag: '新' },
+    { id: 'zhoujie-fact-07', who: 'zhoujie', cat: 'fact', text: '{artist}這張，知道的人不多。', need: { o: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-08', who: 'zhoujie', cat: 'fact', text: '《{album}》是少人知道的那種，遇到就是緣分。', need: { o: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-09', who: 'zhoujie', cat: 'fact', text: '{artist}這張不少人知道，翻到不稀奇。', need: { o: '<=2' }, tag: '新' },
+    { id: 'zhoujie-fact-10', who: 'zhoujie', cat: 'fact', text: '《{album}》入耳有點門檻，要慢慢聽。', need: { h: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-11', who: 'zhoujie', cat: 'fact', text: '{artist}這張不好入耳，多給它幾次機會。', need: { h: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-12', who: 'zhoujie', cat: 'fact', text: '《{album}》很好入耳，什麼時候放都行。', need: { h: '<=2' }, tag: '新' },
+    { id: 'zhoujie-fact-13', who: 'zhoujie', cat: 'fact', text: '{artist}這張，在它那一圈算經典。', need: { c: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-14', who: 'zhoujie', cat: 'fact', text: '想認識{artist}，先從《{album}》這種經典聽起。', need: { c: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-15', who: 'zhoujie', cat: 'fact', text: '《{album}》又少人知道又不好入耳，敢聽算你有種。', need: { o: 4, h: 4 }, tag: '新' },
+    { id: 'zhoujie-fact-16', who: 'zhoujie', cat: 'fact', text: '那張就在{bin}那箱，自己去聽聽。', need: { onShelf: true }, tag: '新' },
+    { id: 'zhoujie-fact-17', who: 'zhoujie', cat: 'fact', text: '《{album}》就插在{bin}那箱，被買走就沒了。', need: { onShelf: true }, tag: '新' },
+    { id: 'zhoujie-fact-18', who: 'zhoujie', cat: 'fact', text: '《{album}》還在{bin}那箱，想聽就去翻。', need: { onShelf: true }, tag: '新' },
+    { id: 'zhoujie-fact-19', who: 'zhoujie', cat: 'fact', text: '{artist}這張就在{bin}那箱，點封面就能試聽。', need: { onShelf: true }, tag: '新' },
+    { id: 'zhoujie-fact-20', who: 'zhoujie', cat: 'fact', text: '算算日子，{artist}出這張是{year}年的事。', tag: '新' },
+    { id: 'zhoujie-loreOut-05', who: 'zhoujie', cat: 'loreOut', text: '其他的你自己去翻，比我講的有趣。', tag: '新' },
+    { id: 'zhoujie-loreOut-06', who: 'zhoujie', cat: 'loreOut', text: '差不多就這樣，剩下的交給你的耳朵。', tag: '新' },
+    { id: 'zhoujie-loreOut-07', who: 'zhoujie', cat: 'loreOut', text: '記不住沒關係，點封面都查得到。', tag: '新' },
+    { id: 'zhoujie-loreOut-08', who: 'zhoujie', cat: 'loreOut', text: '我就講到這，喜不喜歡你自己決定。', tag: '新' },
+    // 路人（共用一個環；每次來只講一句：隨口 01–12、找唱片 13–22、對店 23–30）
+    { id: 'passer-chat-01', who: 'passer', cat: 'chat', text: '本來只是進來躲雨的。', tag: '新' },
+    { id: 'passer-chat-02', who: 'passer', cat: 'chat', text: '這裡好安靜，跟外面像兩個世界。', tag: '新' },
+    { id: 'passer-chat-03', who: 'passer', cat: 'chat', text: '我只是看看，不用招呼我。', tag: '新' },
+    { id: 'passer-chat-04', who: 'passer', cat: 'chat', text: '原來現在還有人在買黑膠。', tag: '新' },
+    { id: 'passer-chat-05', who: 'passer', cat: 'chat', text: '這裡的味道好像我小時候的家。', tag: '新' },
+    { id: 'passer-chat-06', who: 'passer', cat: 'chat', text: '逛累了，進來休息一下。', tag: '新' },
+    { id: 'passer-chat-07', who: 'passer', cat: 'chat', text: '封面都好漂亮，可以拿起來看嗎？', tag: '新' },
+    { id: 'passer-chat-08', who: 'passer', cat: 'chat', text: '等人等太久，乾脆進來逛逛。', tag: '新' },
+    { id: 'passer-chat-09', who: 'passer', cat: 'chat', text: '我看不太懂，但覺得很厲害。', tag: '新' },
+    { id: 'passer-chat-10', who: 'passer', cat: 'chat', text: '下雨天逛唱片行，好有感覺。', tag: '新' },
+    { id: 'passer-chat-11', who: 'passer', cat: 'chat', text: '我家也有一台唱盤，好久沒開了。', tag: '新' },
+    { id: 'passer-chat-12', who: 'passer', cat: 'chat', text: '下次帶朋友來，他一定會瘋掉。', tag: '新' },
+    { id: 'passer-chat-13', who: 'passer', cat: 'chat', text: '幫朋友找一張，名字忘了。', tag: '新' },
+    { id: 'passer-chat-14', who: 'passer', cat: 'chat', text: '有沒有適合送人的？我不太懂。', tag: '新' },
+    { id: 'passer-chat-15', who: 'passer', cat: 'chat', text: '我在找小時候家裡常放的那張。', tag: '新' },
+    { id: 'passer-chat-16', who: 'passer', cat: 'chat', text: '想找一張下雨天聽的。', tag: '新' },
+    { id: 'passer-chat-17', who: 'passer', cat: 'chat', text: '有首歌我只會哼，不知道叫什麼。', tag: '新' },
+    { id: 'passer-chat-18', who: 'passer', cat: 'chat', text: '想找一張讀書時可以放的。', tag: '新' },
+    { id: 'passer-chat-19', who: 'passer', cat: 'chat', text: '我要找封面是藍色的，就這樣。', tag: '新' },
+    { id: 'passer-chat-20', who: 'passer', cat: 'chat', text: '聽說這裡挖得到別的地方沒有的。', tag: '新' },
+    { id: 'passer-chat-21', who: 'passer', cat: 'chat', text: '想找一張送爸爸當生日禮物。', tag: '新' },
+    { id: 'passer-chat-22', who: 'passer', cat: 'chat', text: '請問這種要從哪一箱開始翻？', tag: '新' },
+    { id: 'passer-chat-23', who: 'passer', cat: 'chat', text: '這間店好難找，繞了兩圈。', tag: '新' },
+    { id: 'passer-chat-24', who: 'passer', cat: 'chat', text: '那隻貓是店貓嗎？好可愛。', tag: '新' },
+    { id: 'passer-chat-25', who: 'passer', cat: 'chat', text: '這裡的老闆好像不太講話。', tag: '新' },
+    { id: 'passer-chat-26', who: 'passer', cat: 'chat', text: '店好小，東西好多。', tag: '新' },
+    { id: 'passer-chat-27', who: 'passer', cat: 'chat', text: '這門好重，我還以為沒開。', tag: '新' },
+    { id: 'passer-chat-28', who: 'passer', cat: 'chat', text: '在這裡講話都會不自覺小聲。', tag: '新' },
+    { id: 'passer-chat-29', who: 'passer', cat: 'chat', text: '我經過好幾次，今天終於進來了。', tag: '新' },
+    { id: 'passer-chat-30', who: 'passer', cat: 'chat', text: '這邊的箱子是照什麼排的啊？', need: { at: ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk'] }, tag: '新' }
+  ];
+  C.ownerChat = [
+    // 閒聊（沒有 need）
+    { id: 'owner-chat-01', who: 'owner', cat: 'chat', text: '唱片放久了會有自己的脾氣，跟人一樣。', tag: '新' },
+    { id: 'owner-chat-02', who: 'owner', cat: 'chat', text: '貓不給摸，你不用試了。', tag: '新' },
+    { id: 'owner-chat-03', who: 'owner', cat: 'chat', text: '生意好不好，看貓睡在哪裡就知道。', tag: '新' },
+    { id: 'owner-chat-04', who: 'owner', cat: 'chat', text: '封套舊沒關係，裡面乾淨就好。', tag: '新' },
+    { id: 'owner-chat-05', who: 'owner', cat: 'chat', text: '我年輕時也是這樣，一箱一箱翻到腰痛。', tag: '新' },
+    { id: 'owner-chat-06', who: 'owner', cat: 'chat', text: '茶在那邊，自己倒。', tag: '新' },
+    { id: 'owner-chat-07', who: 'owner', cat: 'chat', text: '那台收音機壞過三次，都是我自己修的。', tag: '新' },
+    { id: 'owner-chat-08', who: 'owner', cat: 'chat', text: '有人一進門就知道要什麼，有人翻一下午，都好。', tag: '新' },
+    { id: 'owner-chat-09', who: 'owner', cat: 'chat', text: '唱片賣出去那一刻，我都會多看它一眼。', tag: '新' },
+    { id: 'owner-chat-10', who: 'owner', cat: 'chat', text: '開店這些年，最常聽到的一句是「我只是看看」。', tag: '新' },
+    { id: 'owner-chat-11', who: 'owner', cat: 'chat', text: '下雨天放唱片，聲音好像特別近。', tag: '新' },
+    { id: 'owner-chat-12', who: 'owner', cat: 'chat', text: '店裡的歌我隨便放，聽到喜歡的再來問我。', tag: '新' },
+    // 店裡的事（會講到熟客：need.met＝見過那位才講）
+    { id: 'owner-chat-13', who: 'owner', cat: 'chat', text: '小魚第一次來，連唱針都不敢放。', need: { met: 'xiaoyu' }, tag: '新' },
+    { id: 'owner-chat-14', who: 'owner', cat: 'chat', text: '小魚每次結帳都先數零錢，數很久。', need: { met: 'xiaoyu' }, tag: '新' },
+    { id: 'owner-chat-15', who: 'owner', cat: 'chat', text: '阿凱嘴巴說隨便看看，每次都買最多。', need: { met: 'akai' }, tag: '新' },
+    { id: 'owner-chat-16', who: 'owner', cat: 'chat', text: '阿凱說他只是順路，可是他家在反方向。', need: { met: 'akai' }, tag: '新' },
+    { id: 'owner-chat-17', who: 'owner', cat: 'chat', text: '大頭在這裡練過接歌，被我趕出去。', need: { met: 'datou' }, tag: '新' },
+    { id: 'owner-chat-18', who: 'owner', cat: 'chat', text: '大頭講話很快，你聽不懂就點頭，他不會發現。', need: { met: 'datou' }, tag: '新' },
+    { id: 'owner-chat-19', who: 'owner', cat: 'chat', text: '阿芳店裡放的歌，一半是從這裡帶走的。', need: { met: 'afang' }, tag: '新' },
+    { id: 'owner-chat-20', who: 'owner', cat: 'chat', text: '老陳以前是老師，問他問題要有心理準備。', need: { met: 'laochen' }, tag: '新' },
+    { id: 'owner-chat-21', who: 'owner', cat: 'chat', text: '周姐以前跟我在別間店一起顧櫃檯。', need: { met: 'zhoujie' }, tag: '新' },
+    { id: 'owner-chat-22', who: 'owner', cat: 'chat', text: '周姐的耳朵比我還利，我進貨都會先問她。', need: { met: 'zhoujie' }, tag: '新' },
+    // 看你這一趟
+    { id: 'owner-trip-01', who: 'owner', cat: 'trip', text: '撐著點，先喝口茶再上。', need: { hpHalf: true }, tag: '新' },
+    { id: 'owner-trip-02', who: 'owner', cat: 'trip', text: '連贏了啊。別笑太開，客人會記仇。', need: { streakGte: 3 }, tag: '新' },
+    { id: 'owner-trip-03', who: 'owner', cat: 'trip', text: '那次說情算你的，下次自己撐住。', need: { retried: true }, tag: '新' },
+    { id: 'owner-trip-04', who: 'owner', cat: 'trip', text: '接了踢館帖，就打到底。', need: { dare: true }, tag: '新' },
+    { id: 'owner-trip-05', who: 'owner', cat: 'trip', text: '第一趟，輸贏都是學費。', need: { firstRun: true }, tag: '新' },
+    { id: 'owner-trip-06', who: 'owner', cat: 'trip', text: '走這麼遠了？我都快不認得你了。', need: { newFar: true }, tag: '新' },
+    { id: 'owner-trip-07', who: 'owner', cat: 'trip', text: '包包那麼重，肩膀別壓壞了。', need: { bagGte: 12 }, tag: '新' },
+    { id: 'owner-trip-08', who: 'owner', cat: 'trip', text: '第 {pos} 位了，你比我年輕時能撐。', need: { posGte: 15 }, tag: '新' }
+  ];
+
+  // 卡片空格怎麼填（周姐的 fact／loreIn、熟客的 shelf；§6.2；棒 3b 逐個對過卡片資料，2026-11-18）。
+  //   導演（棒 4）照這張表組 chatPick 的 ctx.card.vars（shelf 的 {album}{artist} 放 ctx.vars）：**填不出來一律給 null**，crowd-core usable() 會把
+  //   用到那個空格的句子判掉；不准拿預設字補（「某年」「其他地區」「這一類」都不行）。check-content LD3 驗這張表跟卡池、主站 genre-tree.json 對得上。
+  //   {artist} ← card.artist（5,045 張都有）　{album} ← card.album（都有）
+  //   {year}   ← card.year（專輯發行年，主站 seed、release-years 校對過）；**year < minYear → null**：卡池 12 張 1950 年以前的多半是錄音年或作曲年
+  //              （Erik Satie《Vexations》1893＝作曲年，說成「1893年發行」就是編造；周姐牌組就有這張）
+  //   {decade} ← floor(year/10)×10（year 是 null 它就是 null）
+  //   {genre}  ← genre[card.genres[0]]（十類都有中文＝主站 genre-tree.json 頂層的 zh）
+  //   {bin}    ← C.bins[那張現在在的箱].label（箱子名牌，店裡看得到的字）；**那張真的在 run.shop.bins 裡才填**（同時 card.onShelf＝true），不然 null
+  //   {region} ← region[card.region]（只有 tw／jp／zh；xx＝其他地區 → null，4,454 張）
+  //   {tune}   ← C.tunes.names[card.tune]（八格都有）
+  //   {axis}   ← axis[那一軸]：三軸 ≥ axisMin 而且嚴格高過另外兩軸的那一軸（經典 5、冷門 4 → 經典）；並列（經典 4、冷門 4）或都 < axisMin → null
+  //              （「偏{axis}」不能只說一半；717 張並列、889 張都 <4）
+  //   填完超過 maxFilled 字的樣板換一句（都超過就改閒聊），§5.4。
+  C.crowdFact = {
+    minYear: 1950,
+    genre: { rock: '搖滾', jazz: '爵士', electronic: '電子', soul: '靈魂放克', hiphop: '嘻哈 R&B', classical: '古典', folk: '民謠', pop: '流行', world: '世界', blues: '藍調' },
+    region: { tw: '台灣', jp: '日本', zh: '華語' },
+    axis: { c: '經典', o: '冷門', h: '硬蕊' }, axisMin: 4,
+    maxFilled: 40
+  };
+
   // 第 D 波棒二：三流派（網址 ?fac=1 試做旗標；scratchpad v5/wave-d SPEC-D §3.2–§3.5、§3.9–§3.10、§4.2、§6-3；給畫面／sim 的契約 build2/CONTRACT.md）。
   //   旗標關（run 沒有 fac）時沒有任何程式讀這一節。名稱、一字圖示照 C.aceTitle／C.aceIcon（預設就換，不跟旗標）。
   //   fx＝核心被動＋代價（engine outcome 的派別路；鍵名見 engine facFxOf）；picks＝本派選項（升級第 4 格：每 levelEvery 級一次、佔那一級的屬性；

@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-20｜dip-vinyl-shop｜game-lab 活店第一階段：熟客走來走去、點人聊天、行家周姐（店主 11-18）
+
+- **背景**：店主 11-08 規劃書「序章後的活店」三項（客人進進出出、點人聊天含行家、遭遇戰）漏排，11-18 店主追問：「熟客平常會走來走去 翻翻挖挖 然後走出門 就像真的活人」。規格 scratchpad `v5/liveshop/SPEC-H.md`、裁定 `rulings.md`、報告 `build2/FINAL.md`。這是第一階段（遭遇戰＝切磋在第二階段，開關關著）。
+- **人**：6 位有名字的熟客（小魚、阿凱、大頭、阿芳、老陳、周姐）＋路人四套外觀；原本站樁的 r1 退役。同時最多 3 位（平均約 1.6–1.8）：推門進來 → 換箱翻挖（試聽桌、結帳）→ 推門出去；回到來客畫面 10 秒內一定有人進出。不進櫃檯、不擋名牌封面、不穿人（路線避人、你經過時讓一步、窄走道等人）；序章不出現；對決時被橫條切到的人先藏。
+- **聊天**：點熟客、路人、老闆都能聊；泡泡停在人頭上，有 ▼ 點了才換句，最後一句照字數停 3–12 秒。台詞 349 句（主線逐句審過全收；熟客會記得聊過幾次、這一趟的事、你上次走多遠）。老闆打過第 1 位後點他出小選單「聊聊／賣給老闆」，點櫃檯照舊直接賣。
+- **行家周姐**：只講可查證的——`lore.json`（建置期從 `data/artist-intros/` 已上線介紹切原文子字串，`build-lore --check` 驗過期；642 句／581 位；排除政治、毒品、暴力等沉重題材與指代不明句）或卡片欄位樣板（年份、曲風、地區、三軸、在哪一箱）；摘句泡泡下有「藝人介紹・藝人」出處。
+- **開關**：正式站預設開；自動化瀏覽器（webdriver）預設關（既有 e2e 不用改網址）；`?crowd=0／1`。存檔不升 SAVE_V（`save.regulars`）。
+- **主要檔案**：新 `game-lab/{crowd.js,crowd-core.js,lore.json}`、`game-lab/tools/build-lore.mjs`、`game-lab/test/crowd.test.mjs`、`game-lab/tests/e2e-crowd.mjs`；改 `game-lab/{ui.js,shop.js,shop.css,stage.js,stalls.js,content.js,style.css,index.html,shops/dip.json,LINES-REVIEW.md}`、`game-lab/tools/{check-content,check-shops,lint-copy}.mjs`、`game-lab/test/shop.test.mjs`、`game-lab/tests/{e2e.spec,e2e-prologue}.mjs`。`?v=86`。
+- **驗證**：審查 16 條全修；真速度觀察 4 段（共 840 秒）身體框疊 0、倒退走 0、穿家具／瞬移 0。單元 crowd 53,237、shop 3,649、hit、chars、tutorial、engine 全過；check-*、build-lore --check、lint-copy 過。e2e-crowd 390 23/23、375 22/22、430／360 4/4、WebKit 門事件 1/1；其他 e2e 兩尺寸全過；e2e.spec 兩尺寸 50/50。合併第 D 波棒二後再跑 engine quick、crowd、shop、e2e crowd／fac／career／duel／prologue／e2e.spec 390。
+- **留著的**：第二階段切磋（`C.encounter.on` 關著）要等 sim LS0–LS9＋店主拍板「切磋贏的唱片放唱片櫃還是包包」（建議唱片櫃）；效能 heap 一項在 4× 降速下沒過門檻（沒有活店也一樣，環境限制），上線後可在實機再量。
+
 ### 2026-11-20｜dip-vinyl-shop｜game-lab 第 D 波棒二：三流派 ?fac=1（被動＋代價、第二招、本派選項、派系卡）＋升級三格固定順序
 
 - **背景**：第 D 波三棒的第二棒（規格 scratchpad `v5/wave-d/SPEC-D.md` §3.2–§3.5、§3.9–§3.10、§6-3；報告 `wave-d/build2/FINAL.md`、`SIM.md`）。全部在 `?fac=1` 試做旗標後面，旗標關時 sim 跟改前位元相同。11-18 週額度用完停擺，11-20 續跑完成。

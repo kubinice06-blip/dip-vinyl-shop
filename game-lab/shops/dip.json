@@ -33,6 +33,7 @@
  },
  "cameras": {"full": {"y": 0, "h": 322, "minH": 250, "anchor": "bottom"}, "scene": {"y": 0, "h": 322, "minH": 240, "anchor": "bottom"}, "map": {"y": 0, "h": 322, "minH": 250, "anchor": "bottom"}, "reward": {"y": 40, "h": 282, "minH": 230, "anchor": "bottom"}, "strip": {"y": 228, "h": 90, "grow": {"panel": 584}}, "stripS": {"y": 256, "h": 62}, "night": {"y": 0, "h": 322, "minH": 290, "anchor": "bottom"}},
  "spots": {"out": [24, 78, true], "q1": [17, 77, true], "q2": [31, 76, true], "door": [24, 90], "leave": [24, 88], "atdoor": [40, 100], "in": [64, 170], "counter": [244, 176], "regular": [264, 224], "ref": [146, 304], "pay": [222, 224], "aisle": [72, 140], "near": [112, 292], "visit": [180, 292], "browse": [198, 240], "crateP": [120, 274], "dig1": [112, 274], "dig2": [168, 274], "dig3": [26, 276], "listen": [54, 186], "between": [146, 304], "frontleft": [60, 296], "map": [150, 300], "duelE": [90, 316], "duelP": [202, 316], "leaving": [170, 95], "mid": [96, 100], "sale": [44, 128], "wait": [28, 200], "radio": [214, 140], "stSnack": [62, 180], "stFortune": [199, 100]},
+ "regularNote": "r1 退役（SPEC-H）：這格現在是活店結帳點 c-pay 與同業調貨攤站主的位置（熟客不再站樁，由 crowd 段的走動熟客取代；r1 從 actors 拿掉，名字 regular 不改）。以下是 r1 站這格時的搬位紀錄：熟客：站在櫃檯外、櫃檯右半邊正前面，背對鏡頭、手放下，在跟櫃檯後面的老闆聊天（店主 11-18：照常理沒有客人會跑到櫃檯裡面。11-13 店面改版時搬到櫃檯後面高櫃前 [272,168]，背影蓋住老闆半邊，像有人跑進櫃檯）。為什麼是這裡：每個箱子正前方都是它自己的 bin.stand，站著不動的人離任何 stand 要 |dx|≥38 或 |dy|≥44，所以貼著箱子翻的位置一個都沒有（BLUES 右段會蓋收音機和封面、擋 radio／stFortune；試聽桌前擋 listen；中島兩側與前排、後走道全是 stand）；店裡乾淨的地板只剩櫃檯右前方到右下角、左下角兩塊，站到櫃檯跟前最像店裡的熟客。為什麼腳在 y224（跟 pay 同一排、dx42）：(1) 第一版 [262,248] 離櫃檯一公尺半、姿勢 dig 背面兩手舉在頭邊，前面沒東西可翻，像站在走道上舉手，所以改站到櫃檯跟前、不擺 dig（pose 空＝站著，背面兩手垂下）；(2) 對決橫條 strip 是 y228–318（矮螢幕 stripS 256–318），腳 ≤226 才整個人在橫條上面，不會在每場對決右上角露出沒有頭的下半身（248 那格在 390×664／360×640 每場都會）；高螢幕橫條往上長，上緣剛好落在 184–224 之間的那段高度（約可視高 730–810，看寬度）還是會切到她，跟櫃檯、盆栽一樣是鏡頭裁切，人走來走去以後（活店）要一條通用規則。頭頂畫到 y184，在櫃檯檯面（熱點上緣 178）之下：不蓋老闆、NOW、收銀機、貓；蓋住櫃檯正面 dip 標誌的右半＝站在櫃檯前面的前後關係。x264：再右包包會碰到右牆。離 pay 42 格（你在櫃檯付錢時兩人並排不疊）、離 browse／duelP／各箱 stand 都夠遠，門→對戰台、門→櫃檯、攤位站位的路線都不經過她。點她：頭肩在櫃檯熱點裡＝點到櫃檯（搬之前點她是老闆／櫃檯，同一類）；活店那棒給她自己的熱點時要壓過櫃檯（含 6 格容錯）。同業調貨攤的老闆（stalls.js trade）也站這一格（熟客先藏）。更早：R-02／V06 站門口牆 FEATURE 前會把你整個蓋掉、窗下矮櫃 [200,104] 改成 BLUES 後會蓋名牌和封面。舞台 API 不動她",
  "nav": [
   [30, 100],
   [72, 110],
@@ -72,6 +73,21 @@
  "footprints": {"groups": {"island": ["isl-0a", "isl-0b", "isl-1a", "isl-1b", "isl-2a", "isl-2b", "isl-3a", "isl-3b", "crate-jazz", "crate-tw"]}, "behind": {"counter": [212, 284], "deck": [134, 158]}, "margin": {"island": [8, 2]}, "note": "腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；behind＝{道具: [xa, xb]} 老闆站在它後面的口袋（地面那塊後面、x 在 xa–xb 的那一條；櫃檯整個寬＝spots.counter，唱盤台＝轉盤那一段 134–158＝ref），口袋兩側照畫出來的擋（別人不會從唱盤台上走過去）。避障＝這一份加 navMargin（margin 可以逐塊指定：中島兩側走道多留 3 格，人的手臂比腳寬，走在走道上不會被箱子邊切掉一塊）；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡）"},
  "duel": {"deck": [146, 293], "step": 10, "note": "唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片"},
  "meta": {"owner": "owner", "boss": "boss", "crates": null, "roster": null, "unlock": null, "difficulty": 1},
+ "crowd": {
+  "stops": [
+   {"id": "c-rock", "bin": "rock", "pose": "dig"}, {"id": "c-soul", "bin": "soul", "pose": "dig"},
+   {"id": "c-citypop", "bin": "citypop", "pose": "dig"}, {"id": "c-world", "bin": "world", "pose": "dig"},
+   {"id": "c-elec", "bin": "elec", "pose": "dig"}, {"id": "c-hiphop", "bin": "hiphop", "pose": "dig"},
+   {"id": "c-classical", "bin": "classical", "pose": "dig"}, {"id": "c-folk", "bin": "folk", "pose": "dig"},
+   {"id": "c-listen", "at": "listen", "kind": "listen", "short": true, "guestClear": true},
+   {"id": "c-pay", "at": "regular", "kind": "pay", "back": true, "short": true, "hotPri": 3}
+  ],
+  "via": {"left": "in", "right": "leaving", "cross": ["mid", "leaving"]},
+  "guest": {"in": ["in", "frontleft", "duelE"], "out": ["frontleft", "in", "door", "leave"]},
+  "door": "door",
+  "hot": {"rel": [-12, -46, 24, 28], "minY": 150},
+  "note": "活店停留點（SPEC-H §4.1）：只收中島兩側走道八箱＋試聽桌＋櫃檯前結帳（spots.regular）；不收後走道、aisle、門口、前排三箱、唱盤區、口袋、特價箱、收音機、browse、pay、in、攤位角落。左排走 in、右排走後走道 leaving、跨排走上面，絕不從唱盤區繞。guest＝主線客人進出路線（ui.js guestToTable 與輸了出門都讀這裡），走 frontleft 才不會穿過島邊左排翻箱的人"
+ },
  "props": [
   {"type": "floor", "layer": "bg"},
   {"type": "backWall", "layer": "bg"},
@@ -115,7 +131,6 @@
   {"id": "owner", "rect": [232, 131, 24, 24], "follow": "o", "rel": [-12, -45, 24, 24], "label": "老闆", "action": "talk:owner", "pri": 2, "noSparkle": true}
  ],
  "actors": [
-  {"id": "o", "at": "counter", "sprite": "owner"},
-  {"id": "r1", "at": "regular", "sprite": "girl", "back": true, "note": "熟客：站在櫃檯外、櫃檯右半邊正前面，背對鏡頭、手放下，在跟櫃檯後面的老闆聊天（店主 11-18：照常理沒有客人會跑到櫃檯裡面。11-13 店面改版時搬到櫃檯後面高櫃前 [272,168]，背影蓋住老闆半邊，像有人跑進櫃檯）。為什麼是這裡：每個箱子正前方都是它自己的 bin.stand，站著不動的人離任何 stand 要 |dx|≥38 或 |dy|≥44，所以貼著箱子翻的位置一個都沒有（BLUES 右段會蓋收音機和封面、擋 radio／stFortune；試聽桌前擋 listen；中島兩側與前排、後走道全是 stand）；店裡乾淨的地板只剩櫃檯右前方到右下角、左下角兩塊，站到櫃檯跟前最像店裡的熟客。為什麼腳在 y224（跟 pay 同一排、dx42）：(1) 第一版 [262,248] 離櫃檯一公尺半、姿勢 dig 背面兩手舉在頭邊，前面沒東西可翻，像站在走道上舉手，所以改站到櫃檯跟前、不擺 dig（pose 空＝站著，背面兩手垂下）；(2) 對決橫條 strip 是 y228–318（矮螢幕 stripS 256–318），腳 ≤226 才整個人在橫條上面，不會在每場對決右上角露出沒有頭的下半身（248 那格在 390×664／360×640 每場都會）；高螢幕橫條往上長，上緣剛好落在 184–224 之間的那段高度（約可視高 730–810，看寬度）還是會切到她，跟櫃檯、盆栽一樣是鏡頭裁切，人走來走去以後（活店）要一條通用規則。頭頂畫到 y184，在櫃檯檯面（熱點上緣 178）之下：不蓋老闆、NOW、收銀機、貓；蓋住櫃檯正面 dip 標誌的右半＝站在櫃檯前面的前後關係。x264：再右包包會碰到右牆。離 pay 42 格（你在櫃檯付錢時兩人並排不疊）、離 browse／duelP／各箱 stand 都夠遠，門→對戰台、門→櫃檯、攤位站位的路線都不經過她。點她：頭肩在櫃檯熱點裡＝點到櫃檯（搬之前點她是老闆／櫃檯，同一類）；活店那棒給她自己的熱點時要壓過櫃檯（含 6 格容錯）。同業調貨攤的老闆（stalls.js trade）也站這一格（熟客先藏）。更早：R-02／V06 站門口牆 FEATURE 前會把你整個蓋掉、窗下矮櫃 [200,104] 改成 BLUES 後會蓋名牌和封面。舞台 API 不動她"}
+  {"id": "o", "at": "counter", "sprite": "owner"}
  ]
 }

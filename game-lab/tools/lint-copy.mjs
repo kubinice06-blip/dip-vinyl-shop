@@ -29,6 +29,8 @@
 //   6. 長度：教學老闆的泡泡 ≤25 字、按鈕 ≤18；一次性小提示 ≤20；規則卡六行、每行 ≤56（D 第 6 行 54 字）、第 3 行是三相剋（冷剋經／經剋硬／硬剋冷）、
 //      六行逐字＝owner-lines 的規則卡；提示句不寫屬性名、key 是句子的子字串；
 //      發燒配件說明 ≤16、生效那句 ≤12；說話的 Beat 要用「」；台詞鍵齊全（line／intro／lose／win；v4 沒有 switch）
+//   7. 活店（SPEC-H §5.8、§6.2；C.chat／C.ownerChat／C.crowdUi／C.crowdFact）：防編造（手寫句沒有拉丁字母、數字、《》、事實字；樣板只准白名單空格、評價字配 need 的軸）、
+//      「這箱」＋聲音綁站位、切磋與踢館帖字面分開、收藏通則字要主線裁定（CROWD_RULED）；lore.json 的 src 跟藝人介紹現況不同只警告。LINES-REVIEW 分節「活店・…」＋摘句抽樣 30 句
 // 產出：game-lab/LINES-REVIEW.md（所有「新」句依場景列出，給店主過目）
 //   LINT_SKIP=ui.js node game-lab/tools/lint-copy.mjs   # 暫時不掃某幾個程式檔（逗號分隔；平行改檔時用），其他照查
 import fs from 'fs';
@@ -598,6 +600,153 @@ if (C.apexTrial) {
   for (const [k, v] of Object.entries(A.notes || {})) one('apexTrial.notes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
   for (const [k, v] of Object.entries(A.holdNotes || {})) one('apexTrial.holdNotes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
 }
+// 活店（SPEC-H §5.7、§5.8、§6.2；棒 3b，2026-11-18）：C.chat（熟客、路人）、C.ownerChat（老闆）、C.crowdUi（介面字）、C.crowdFact 的填空字。
+//   每句 add({ scene:'活店・<名字>・<分類中文>', where:'chat.<id>', who:<名字>, key:<id>（＋出場條件）, text, tag })——LINES-REVIEW 的分節就是 scene。
+//   錯誤：tag 不是「新」、id 重複、who 不在名冊、「」不成對、空格不在白名單；手寫句有拉丁字母／阿拉伯數字／《》／兩個以上中文數字＋年／事實字／寫死流派名；
+//         「這箱」＋聲音描述沒綁 need.at；樣板（shelf／fact／loreIn／loreOut）拿掉空格後有數字或拉丁字母、《》不是包 {album}、{year}／{decade} 後 3 字內有盤／壓、
+//         評價字跟 need 的軸對不上、說哪一箱的知識樣板沒 onShelf；提到讀牌提示或遊戲數值（聲望幾點、$）；切磋句與介面字有踢館／帖／番外、介面字有「這一輪」；
+//         字數（手寫每泡 ≤28、路人 ≤20、樣板拿掉空格 ≤28）。現有規則（FORBID、一晚的字、D §2 拿掉的句子、三軸舊名）照樣掃到這些句子。
+//   收藏通則字（首版、日版、音質、錄音、樂手、最好、史上…，批判 4.4）：要在 CROWD_RULED 寫上主線裁定（rulings.md）才算過，沒裁定＝錯誤；有裁定的印成警告清單。
+//   lore.json 的 src（分片雜湊、manifest updatedAt）跟 data/artist-intros 現況不同：只警告（要重算 build-lore；過期與否由 build-lore --check 判）。
+const CROWD_RULED = {};   // { 句子 id: '主線裁定（rulings.md 哪一條）' }——收藏通則字逐句裁定後才准放；第一批 0 句命中
+const COLLECT = /首版|初版|原版|日版|美版|英版|德版|再版|復刻|壓片|母帶|音質|錄音|混音|樂手|名盤|神盤|經典之作|史上|最好|最強|最偉大|公認|被譽為/;
+const CROWD_FACT_HAND = /年代|得獎|葛萊美|金曲|銷量|賣了.*張|排行|榜|出道|解散|團員|製作人|廠牌|首張|最後一張|遺作|影響了/;
+const CROWD_FACT_TPL = /首張|最後一張|得獎|葛萊美|金曲|銷量|賣了.*張|排行|榜|出道|解散|團員|製作人|廠牌|遺作|影響了|名盤|首版|原版|壓片|音質/;
+const CROWD_FLOW = /經典流|冷門流|異端流|殿堂|流亡/;
+const CROWD_ZH_YEAR = /[〇零一二三四五六七八九十]{2,}年/;
+const CROWD_THIS_BIN = /這箱|這區|這排|這邊的/;
+const CROWD_SOUND = /鼓|貝斯|吉他|人聲|唱腔|節奏|旋律|編曲|合成器|弦樂|取樣|鋼琴|管樂|和聲/;
+const CROWD_EVAL = { o: /冷門|知道的人不多|少人知道/, h: /硬蕊|入耳|門檻|難入口|慢慢聽/, c: /經典|很多人|大家都/ };
+const CROWD_HINT = /讀牌|提示|他這手|下一手會|出哪一色|出哪色/;
+const CROWD_NUMBERS = /[$＄]|聲望.{0,3}([0-9０-９一二三四五六七八九十兩幾]+|\{[a-z]+\})\s*點/;
+const CROWD_DARE = /踢館|帖|番外/;
+const CROWD_HAND_HOLES = ['title', 'pos', 'last', 'far', 'name'];
+const CROWD_CARD_HOLES = ['artist', 'album', 'year', 'decade', 'genre', 'bin', 'region', 'tune', 'axis'];
+const CROWD_TPL = ['shelf', 'fact', 'loreIn', 'loreOut'];
+const CROWD_ENC = ['encDare', 'encYes', 'encNo', 'encLapse', 'encLose', 'encWin', 'encVoid'];
+const CROWD_CAT_ZH = { hello: '打招呼（第一次見面，一輩子一次）', again: '這一趟第一次遇到', chat: '閒聊', dig: '挖寶', shelf: '架上樣板（{album} 是他停的那箱架上某張）',
+  trip: '看你這一趟', close: '熟了以後', mem: '記得你上一趟', busy: '忙著翻（一次來聊滿三段）', loreIn: '知識引子（接藝人介紹摘句）', loreOut: '知識收尾',
+  fact: '知識樣板（{x} 照卡片欄位填，填不出來那句不出）', encDare: '切磋・嗆', encYes: '切磋・接了', encNo: '切磋・改天', encLapse: '切磋・沒理他', encLose: '切磋・他輸了',
+  encWin: '切磋・他贏了', encVoid: '切磋・作廢' };
+const crowdNeedZh = (need, R) => {
+  if (!need) return '';
+  const T = C.aceTitle || {}, out = [];
+  for (const [k, v] of Object.entries(need)) {
+    if (k === 'at') out.push('停在 ' + [].concat(v).map(s => s.replace(/^c-/, '')).join('／') + ' 才講');
+    else if (k === 'onShelf') out.push('那張在架上');
+    else if (k === 'o' || k === 'h' || k === 'c') out.push(ZH_AX[k] + ' ' + (typeof v === 'number' ? '≥' + v : String(v).replace('<=', '≤').replace('>=', '≥')));
+    else if (k === 'met') out.push('見過' + [].concat(v).map(id => ((R[id] || {}).name) || id).join('、'));
+    else if (k === 'posGte') out.push('第 ' + v + ' 位以後');
+    else if (k === 'posLte') out.push('第 ' + v + ' 位以前');
+    else if (k === 'streakGte') out.push('連贏 ≥' + v);
+    else if (k === 'bagGte') out.push('包包 ≥' + v + ' 張');
+    else if (k === 'hpHalf') out.push('聲望剩一半以下');
+    else if (k === 'retried') out.push('說情重打過');
+    else if (k === 'dare') out.push('接了踢館帖');
+    else if (k === 'firstRun') out.push('第一趟');
+    else if (k === 'newFar') out.push('這一趟破最遠紀錄');
+    else if (k === 'ace') out.push('王牌走' + [].concat(v).map(t => T[t] || t).join('／'));
+    else if (k === 'encWon') out.push('切磋贏過他');
+    else if (k === 'encLost') out.push('切磋輸給他');
+    else out.push(k + '=' + JSON.stringify(v));
+  }
+  return out.join('、');
+};
+const ZH_AX = { c: '經典', o: '冷門', h: '硬蕊' };
+const quotesPaired = s => { let d = 0; for (const ch of s) { if (ch === '「') d++; else if (ch === '」') { d--; if (d < 0) return false; } } return d === 0; };
+{
+  const R = C.regulars || {}, ids = new Set();
+  const nameOf = who => who === 'passer' ? '路人' : who === 'owner' ? '老闆' : ((R[who] || {}).name || who);
+  const sceneOf = (l, isOwner) => {
+    if (isOwner) return l.cat === 'trip' ? '活店・老闆・看你這一趟' : (l.need && l.need.met ? '活店・老闆・店裡的事（見過那位熟客才講）' : '活店・老闆閒聊');
+    if (l.who === 'passer') return '活店・路人（四套外觀共用一個環；隨口、找唱片、對店）';
+    if (CROWD_ENC.includes(l.cat)) return '活店・切磋・' + nameOf(l.who);
+    return '活店・' + nameOf(l.who) + '・' + (CROWD_CAT_ZH[l.cat] || l.cat);
+  };
+  const ruled = [];
+  const one = (l, k, isOwner) => {
+    const where = (isOwner ? 'ownerChat.' : 'chat.') + ((l && l.id) || '[' + k + ']');
+    if (!l || typeof l !== 'object') { err(where, '不是物件'); return; }
+    if (!l.id || ids.has(l.id)) err(where, 'id 要有、全域唯一：' + l.id); ids.add(l.id);
+    if (!TAG_OK(l.tag) || l.tag !== '新') err(where, 'tag 要是「新」（活店台詞全部進 LINES-REVIEW）');
+    if (isOwner ? l.who !== 'owner' : !(l.who === 'passer' || R[l.who])) err(where, 'who 要是 C.regulars 的鍵、passer 或（ownerChat）owner：' + l.who);
+    const texts = [].concat(l.text == null ? [] : l.text);
+    if (!texts.length || !texts.every(t => typeof t === 'string' && t)) { err(where, 'text 要是字串或字串陣列'); return; }
+    const tpl = !isOwner && CROWD_TPL.includes(l.cat), N = l.need || {}, enc = CROWD_ENC.includes(l.cat);
+    for (const t of texts) {
+      const bare = t.replace(/\{[a-zA-Z]+\}/g, ''), n = len(bare);
+      const holes = [...t.matchAll(/\{([a-zA-Z]+)\}/g)].map(m => m[1]);
+      for (const h of holes) if (!(tpl ? CROWD_HAND_HOLES.concat(CROWD_CARD_HOLES) : CROWD_HAND_HOLES).includes(h)) err(where, '空格 {' + h + '} 不在白名單（' + (tpl ? '樣板' : '手寫句') + '）：' + t);
+      if (!quotesPaired(t)) err(where, '「」不成對：' + t);
+      if (CROWD_FLOW.test(t)) err(where, '不准寫死流派名（用 {title}）：' + t);
+      if (CROWD_HINT.test(t)) err(where, '不准提讀牌提示（那是 C.hintLines 的事）：' + t);
+      if (CROWD_NUMBERS.test(t)) err(where, '不准出現遊戲數值（聲望幾點、$多少）：' + t);
+      if (enc && CROWD_DARE.test(t)) err(where, '切磋句不准有「踢館」「帖」「番外」（跟踢館帖分開）：' + t);
+      if (CROWD_THIS_BIN.test(t) && CROWD_SOUND.test(t) && !(Array.isArray(N.at) ? N.at.length : N.at)) err(where, '「這箱」＋聲音描述要綁站位 need.at（換箱就假）：' + t);
+      if (tpl) {
+        if (/[A-Za-z0-9０-９Ａ-Ｚａ-ｚ]/.test(bare)) err(where, '樣板拿掉空格後不准有數字、拉丁字母：' + t);
+        if (/[《》]/.test(t.replace(/《\{album\}》/g, ''))) err(where, '樣板的《》只准包 {album}：' + t);
+        if (CROWD_FACT_TPL.test(t)) err(where, '樣板不准有事實字／收藏通則（首張、得獎、銷量、團員、製作人、廠牌、排行、影響了、名盤、首版、原版、壓片、音質…）：' + t);
+        if (/\{(year|decade)\}.{0,3}[盤壓]/.test(t)) err(where, '{year}／{decade} 後面 3 字內不准有「盤」「壓」（只准說發行）：' + t);
+        const has = ['c', 'o', 'h'].filter(a => CROWD_EVAL[a].test(t)), axes = ['c', 'o', 'h'].filter(a => a in N);
+        if (!has.every(a => axes.includes(a))) err(where, '評價字（' + has.map(a => ZH_AX[a]).join('、') + '）要配同一軸的 need：' + t);
+        if (l.cat === 'fact' && (/\{bin\}/.test(t) || CROWD_THIS_BIN.test(t)) && N.onShelf !== true) err(where, '說「在哪一箱」的知識樣板要 need.onShelf：' + t);
+        if (n > 28) err(where, '樣板拿掉空格後 ≤28 字，現在 ' + n + '：' + t);
+      } else {
+        if (/[A-Za-z0-9０-９Ａ-Ｚａ-ｚ]/.test(bare)) err(where, '手寫句不准有拉丁字母、阿拉伯數字（真的藝人、專輯、年份只能從樣板空格來）：' + t);
+        if (/[《》]/.test(t)) err(where, '手寫句不准有《》：' + t);
+        if (CROWD_ZH_YEAR.test(t)) err(where, '手寫句不准兩個以上中文數字接「年」：' + t);
+        if (CROWD_FACT_HAND.test(t)) err(where, '手寫句不准有事實字（年代、得獎、銷量、排行、出道、團員、製作人、廠牌、首張、遺作、影響了…）：' + t);
+        const max = l.who === 'passer' ? 20 : 28;
+        if (n > max) err(where, '每泡 ≤' + max + ' 字，現在 ' + n + '：' + t);
+      }
+      if (COLLECT.test(t)) {
+        if (CROWD_RULED[l.id]) ruled.push(l.id + '「' + t + '」→ ' + CROWD_RULED[l.id]);
+        else err(where, '收藏通則字「' + t.match(COLLECT)[0] + '」要主線逐句裁定（寫進 rulings.md，再登記到 lint-copy 的 CROWD_RULED）：' + t);
+      }
+    }
+    const nz = crowdNeedZh(l.need, R);
+    add({ scene: sceneOf(l, isOwner), where, who: nameOf(l.who), key: l.id + (nz ? '・' + nz : ''), text: texts.join('／'), tag: l.tag });
+  };
+  (Array.isArray(C.chat) ? C.chat : []).forEach((l, k) => one(l, k, false));
+  (Array.isArray(C.ownerChat) ? C.ownerChat : []).forEach((l, k) => one(l, k, true));
+  for (const x of ruled) warns.push('活店收藏通則字（有主線裁定）：' + x);
+  // 介面字（第一階段：老闆的一次性提示兩句、摘句出處、路人泡泡第一行；第二階段：切磋邀請面板…）
+  const CU = C.crowdUi || {};
+  if (!TAG_OK(C.crowdUiTag)) err('crowdUi', '沒有 tag（crowdUiTag）');
+  for (const [k, v] of Object.entries(CU)) {
+    const where = 'crowdUi.' + k;
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); continue; }
+    if (CROWD_DARE.test(v)) err(where, '活店介面字不准有「踢館」「帖」「番外」（跟踢館帖分開）：' + v);
+    if (/這一輪/.test(v)) err(where, '活店介面字（切磋邀請面板）不准有「這一輪」（踢館帖的核心字）：' + v);
+    if (len(v.replace(/\{\w+\}/g, '')) > 28) err(where, '超過 28 字（不算 {x}）：' + v);
+    add({ scene: '活店・介面字（老闆的一次性提示、摘句下緣的出處、路人泡泡第一行）', where, who: /intro/i.test(k) ? '老闆' : '（畫面字）', key: k, text: v, tag: C.crowdUiTag });
+  }
+  // 填空字（{genre}{region}；照抄主站 genre-tree.json 的十類中文、規格 §6.2 的地區名）
+  const F = C.crowdFact || {};
+  for (const grp of ['genre', 'region']) for (const [k, v] of Object.entries(F[grp] || {}))
+    add({ scene: '活店・周姐知識樣板的填空字（{genre} 照主站十類、{region} 只有台灣／日本／華語）', where: 'crowdFact.' + grp + '.' + k, who: '（填空）', key: '{' + grp + '}・' + k, text: v, tag: C.crowdUiTag });
+  // lore.json 的 src 跟藝人介紹現況（只警告）
+  try {
+    const lore = JSON.parse(read(path.join(LAB, 'lore.json')) || 'null');
+    const dir = path.join(ROOT, 'data', 'artist-intros');
+    const man = JSON.parse(read(path.join(dir, 'manifest.json')) || 'null');
+    if (lore && man) {
+      const crypto = require('crypto');
+      if (lore.src && lore.src.updatedAt !== (man.updatedAt || null)) warns.push('lore.json 記的藝人介紹 updatedAt（' + (lore.src && lore.src.updatedAt) + '）跟現在的 manifest（' + man.updatedAt + '）不同：重跑 node game-lab/tools/build-lore.mjs（過期與否看 --check）');
+      else {
+        const changed = [];
+        for (let s = 0; s < (man.shards || 64); s++) {
+          const nn = String(s).padStart(2, '0'), f = path.join(dir, nn + '.json');
+          const h = fs.existsSync(f) ? crypto.createHash('sha1').update(fs.readFileSync(f)).digest('hex') : undefined;
+          if (h !== ((lore.src || {}).shards || {})[nn]) changed.push(nn);
+        }
+        if (changed.length) warns.push('lore.json 記的分片雜湊有 ' + changed.length + ' 片跟現在不同（' + changed.join(' ') + '）：重跑 build-lore（過期與否看 --check）');
+      }
+      scanned.push('lore.json（src 比對 ' + (man.shards || 64) + ' 片）');
+    } else if (!lore) warns.push('略過（尚無 lore.json）');
+  } catch (e) { warns.push('lore.json 讀不了：' + e.message); }
+}
 // 第 D 波棒二：三流派（?fac=1；C.factions、factionsTag）：派系卡（定位、被動、代價、讀法、第一次觸發那句）≤34、本派選項（名 ≤6、說明 ≤24）、結果行小字 ≤16、
 //   ?fac=1&apex=1 換一格的能力說明 ≤25、結果句 ≤25、畫面字 ≤25（不算 {x}）
 if (C.factions) {
@@ -743,6 +892,7 @@ let md = `# 台詞審稿：品味對決 v4（LINES-REVIEW）
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 \`roguelike.html\` 逐字比對（${origChecked} 句）；標成「店主」的字已與 \`tools/owner-lines-v4.json\`（DECISIONS-v4 店主寫／核可的字）逐字比對（${ownerChecked} 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
+> 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 
 統計：原句 ${counts['原句']}、拍板 ${counts['拍板']}、店主 ${counts['店主']}、新 ${counts['新']}（同一句在有聲／安靜兩版序章只算一次）。
 
@@ -756,6 +906,19 @@ for (const [scene, list] of byScene) {
   md += `## ${scene}\n\n| 說話者 | 句子 | 出處 | 位置 |\n|---|---|---|---|\n`;
   for (const it of list) md += `| ${esc(it.who)}${it.key ? '・' + esc(it.key) : ''} | ${esc(it.text)} | ${SRC[it.tag] || it.tag} | \`${it.where}\` |\n`;
   md += '\n';
+}
+// 活店：周姐的藝人介紹摘句抽樣 30 句（SPEC-H §6.3：主站已審的原文、不逐句送審；附在這裡給店主看語感）。穩定抽樣：FNV-1a(藝人鍵＋句子) 最小的 30 句
+{
+  let lore = null; try { lore = JSON.parse(read(path.join(LAB, 'lore.json')) || 'null'); } catch (_) {}
+  if (lore && lore.a) {
+    const fnv = str => { let h = 0x811c9dc5; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h; };
+    const disp = {}; for (const c of Object.values(CARDS)) { const k = String(c.artist || '').normalize('NFC').trim().toLowerCase(); if (k && !disp[k]) disp[k] = c.artist; }
+    const all = []; for (const [k, qs] of Object.entries(lore.a)) for (const q of qs) all.push([k, q, fnv('lore-sample#' + k + '#' + q)]);
+    const pick = all.slice().sort((x, y) => x[2] - y[2] || (x[0] < y[0] ? -1 : 1)).slice(0, 30).sort((x, y) => (x[0] < y[0] ? -1 : x[0] > y[0] ? 1 : 0));
+    md += `## 活店・周姐的藝人介紹摘句（抽樣 30 句；原文照抄主站已審的藝人介紹，不逐句審）\n\n> 畫面上：周姐說「{藝人}啊，我記得介紹上寫：」→ 摘句泡泡（下緣灰字「藝人介紹・{藝人}」）。全部 ${lore.n} 位、${all.length} 句在 \`game-lab/lore.json\`（\`node game-lab/tools/build-lore.mjs\` 產生；每句都是主站藝人介紹的原文子字串）。讀起來怪的，告訴主線加進 build-lore 的排除表。\n\n| 藝人 | 摘句 |\n|---|---|\n`;
+    for (const [k, q] of pick) md += `| ${esc(disp[k] || k)} | ${esc(q)} |\n`;
+    md += '\n';
+  }
 }
 md += `## 原句、拍板、店主（已逐字比對，列出供對照）\n\n| 標記 | 句子 | 位置 |\n|---|---|---|\n`;
 for (const it of items) if (!isNew(it.tag)) md += `| ${it.tag} | ${esc(it.text)} | \`${it.where}\` |\n`;
