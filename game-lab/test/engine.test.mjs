@@ -4250,8 +4250,8 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     // 附錄 Y：條件分佈（45 張；家族預設）
     const cnt = {}; for (const t of TIERS) for (const x of EN.apexList(K, t)) { const e = EN.encoreOf(K, x, t); cnt[e.when + '/' + e.give] = (cnt[e.when + '/' + e.give] || 0) + 1; }
     eq(cnt, { 'caught/again': 8, 'caught/star': 4, 'sameWin/again': 5, 'combo2/hit': 10, 'caught/heal': 2, 'combo2/again': 10, 'combo2/heal': 5, 'lowhp/again': 1 }, 'encore distribution over 45 cards');
-    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'again' }, '安可：看穿他一次，再發動一次。'], 'OK Computer = 看穿 → 再發動（店主原例）');
-    eq(TIERS.map(t => EN.encoreLine(K, EN.aceEncoreOf(K, t), { ace: true })), TIERS.map(() => '安可：丟出之後看穿他一次，王牌回到手上（6 星）。'), '7-star aces line');
+    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'again' }, '翻面：看穿他一次，再發動一次。'], 'OK Computer = 看穿 → 再發動（店主原例）');
+    eq(TIERS.map(t => EN.encoreLine(K, EN.aceEncoreOf(K, t), { ace: true })), TIERS.map(() => '翻面：丟出之後看穿他一次，王牌回到手上（6 星）。'), '7-star aces line');
     eq([EN.aceEncoreOf(K, 'heresy', true), EN.aceEncoreOf(K, 'hall', true), EN.encoreTag(K, EN.aceEncoreOf(K, 'hall'), { ace: true })], [{ when: 'combo2', give: 'again' }, { when: 'caught', give: 'again' }, '看穿→再丟'], '?fac=1 heresy ace → 連剋；tag');
     eq(EN.abilityOf(K, 'swans|filth').encore, { when: 'combo2', give: 'heal' }, 'abilityOf carries encore');
     ok(!('encore' in EN.abilityOf(KN, 'swans|filth')) && EN.encoreOf(KN, EN.apexList(K, 'hall')[0], 'hall') === null && EN.aceEncoreOf(KN, 'hall') === null, 'encore.on false → no encore anywhere');

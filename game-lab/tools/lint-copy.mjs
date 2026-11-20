@@ -107,7 +107,8 @@ function htmlStrings(src) {
 // ---------------------------------------------------------------------------
 // 1. 禁用字串（店主用語）；2. v3 拿掉的系統
 // ---------------------------------------------------------------------------
-const FORBID = ['——', '櫃台', '遺物', '卡片資訊', '派對', '全場大合唱', '心聲', '反咬',
+// 「安可」：店主 11-20 改名「翻面」（王牌條件加成；店主：這兩個字被弄髒了）——玩家看得到的字一律不准出現（程式識別字 encore 照舊）
+const FORBID = ['——', '櫃台', '遺物', '卡片資訊', '派對', '全場大合唱', '心聲', '反咬', '安可',
   '視頻', '質量', '信息', '網絡', '軟件', '默認', '用戶', '屏幕', '登錄', '鼠標', '硬盤', '打印', '緩存', '加載'];
 // SPEC-v3 §10.6：v3 拿掉的系統（對決、教學、外殼的畫面字都不准有）
 const OLD_MECH = ['氣勢', '輾壓', '賭注', '相生', '割捨', '七星回擊', '霸權', '點播'];
@@ -598,7 +599,7 @@ if (C.apexTrial) {
   for (const [k, v] of Object.entries(A.notes || {})) one('apexTrial.notes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
   for (const [k, v] of Object.entries(A.holdNotes || {})) one('apexTrial.holdNotes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
 }
-// 第 I 波 I-1 安可（C.encore.ui、encoreTag）：條件句／加成句 ≤12、籤的兩半 ≤4、樣板與畫面字 ≤25、規則卡那段 ≤40、老闆第一次那句 ≤25（不算 {x}）；
+// 第 I 波 I-1 翻面（C.encore；店主 11-20 從「安可」改名；C.encore.ui、encoreTag）：條件句／加成句 ≤12、籤的兩半 ≤4、樣板與畫面字 ≤25、規則卡那段 ≤40、老闆第一次那句 ≤25（不算 {x}）；
 //   另列每張頂點卡與三張 7 星王牌組出來的說明句（engine encoreLine，給店主過目；≤30）
 if (C.encore && C.encore.ui) {
   const U = C.encore.ui;
@@ -608,7 +609,7 @@ if (C.encore && C.encore.ui) {
     if (max && len(v.replace(/\{\w+\}/g, '')) > max) err(where, '超過 ' + max + ' 字（不算 {x}）：' + v);
     add({ scene, where, who: who || '（畫面字）', key: where.split('.').pop(), text: text || v, tag: C.encoreTag });
   };
-  const SC = '安可・畫面字（王牌格的籤、結果句小字、吐司、領獎小字、規則卡；{x} 由畫面代入）';
+  const SC = '翻面・畫面字（王牌格的籤、結果句小字、頭上小章、吐司、領獎小字、規則卡、紀錄的章；{x} 由畫面代入）';
   for (const [k, v] of Object.entries(U)) {
     if (v && typeof v === 'object') { for (const [k2, x] of Object.entries(v)) one('encore.ui.' + k + '.' + k2, x, SC, /^tag/.test(k) ? 4 : 12); continue; }
     one('encore.ui.' + k, v, SC, k === 'rule' ? 40 : 25, k === 'first' ? '老闆' : null);
@@ -618,12 +619,12 @@ if (C.encore && C.encore.ui) {
     for (const t of ['hall', 'pearl', 'heresy']) {
       const e = EN.aceEncoreOf(C, t, false), l = EN.encoreLine(C, e, { ace: true });
       if (len(l) > 30) err('encore.aces.' + t, '說明句超過 30 字：' + l);
-      add({ scene: '安可・三張 7 星王牌的說明句（唱片資訊、規則卡）', where: 'encore.aces.' + t, who: '（畫面字）', text: l, tag: C.encoreTag });
+      add({ scene: '翻面・三張 7 星王牌的說明句（挑王牌面板、唱片資訊）', where: 'encore.aces.' + t, who: '（畫面字）', text: l, tag: C.encoreTag });
       ((C.apexTrial || {})[t] || []).forEach((x, k) => {
         const l2 = EN.encoreLine(C, EN.encoreOf(C, x, t));
         if (len(l2) > 30) err('encore.apexTrial.' + t + '[' + k + ']', '說明句超過 30 字：' + l2);
         const c = CARDS[x.card] || {};
-        add({ scene: '安可・頂點卡的說明句（挑王牌面板第二行、唱片資訊；家族預設或自己寫的 encore）', where: 'encore.apexTrial.' + t + '[' + k + ']', who: c.artist ? c.artist + '《' + c.album + '》' : x.card, text: l2, tag: C.encoreTag });
+        add({ scene: '翻面・頂點卡的說明句（挑王牌面板、唱片資訊；家族預設或自己寫的 encore）', where: 'encore.apexTrial.' + t + '[' + k + ']', who: c.artist ? c.artist + '《' + c.album + '》' : x.card, text: l2, tag: C.encoreTag });
       });
     }
   }

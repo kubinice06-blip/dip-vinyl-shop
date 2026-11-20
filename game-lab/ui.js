@@ -160,6 +160,8 @@
       if (r.plea != null && !(Number.isInteger(r.plea) && r.plea >= 0)) return false;
       if (['xpMul', 'xpFrac', 'payMul', 'goldAdd'].some(function (k) { return r[k] != null && !(typeof r[k] === 'number' && isFinite(r[k])); })) return false;
       if (r.relicPick != null && !Number.isInteger(r.relicPick)) return false;
+      // 第 I 波 I-1 翻面（CONTRACT §5、§7）：留到下一位的 run.encCarry 只收 null 或 {give: again|star|hit}；壞的設 null（不判整趟不合法、不升 RUN_V）
+      if ('encCarry' in r && !(r.encCarry === null || (r.encCarry && typeof r.encCarry === 'object' && ['again', 'star', 'hit'].indexOf(r.encCarry.give) >= 0))) r.encCarry = null;
       // SPEC-B §2.3 寬鬆：run.want 壞＝清空（loadSave 會重同步）、shop.lot 壞＝拿掉（fixLot 重抽），不判整趟不合法
       if (r.want != null && !(Array.isArray(r.want) && r.want.every(function (x) { return typeof x === 'string'; }))) r.want = [];
       var rd = r.retryDeck;
@@ -1025,6 +1027,7 @@
       '<ol class="rl">' + lines + '</ol>' +
       (R.why ? '<p class="rwhy">' + whyHTML(R.why) + '</p>' : '') +      // 六行下面另起一段「為什麼這樣剋」（店主 11-12；六行一字不動）
       (R.relics ? '<p class="rrel">' + esc(R.relics) + '</p>' : '') +
+      (encOn() && EU('rule') ? '<p class="rrel renc">' + whyHTML(EU('rule')) + '</p>' : '') +   // 第 I 波翻面（規則卡一段；「翻面」兩字加粗）
       '<div class="rfoot">' + foot.map(function (t) { return esc(fill(t, R.hpText || {})); }).join('<br>') + '</div></div>';
   }
   function whyHTML(t) { var i = String(t).indexOf('：'); return i > 0 ? '<b>' + esc(t.slice(0, i)) + '</b>' + esc(t.slice(i)) : esc(t); }
@@ -1800,7 +1803,8 @@
         var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
         det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。' +
           (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '') +   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
-          (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '');   // 這一挑定下初始流派，其他兩派要打倒傳說藏家（審查 11-16）
+          (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '') +   // 這一挑定下初始流派，其他兩派要打倒傳說藏家（審查 11-16）
+          (!first && aceEncLine(sel) ? '<span class="enc" data-tut="enc-pick">' + esc(aceEncLine(sel)) + '</span>' : '');   // 第 I 波翻面（新玩家第一次挑不寫）
       }
       mark();
       roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）。說明那行先填好再量（矮螢幕它沒有最小高，空著量＝0；V5-play-7）
@@ -1956,6 +1960,60 @@
     var far = 0; (save.runs || []).forEach(function (x) { if (x && x.ace === t && (x.reached | 0) > far) far = x.reached | 0; });
     return FU(far ? 'profFar' : 'profOnly', { n: lv, far: far });
   }
+  // ======================================================================= 第 I 波 I-1「翻面」（王牌條件加成；SPEC-I §1.6；契約 wave-i/build1/CONTRACT.md）
+  //   字一律 C.encore.ui（店主 11-20 改名：玩家看得到的不寫「安可」）。對決裡的籤、金框、結果句那行在 duel.js；這裡管吐司、老闆第一次那句、領獎小字、說明句
+  function EU(k, o) { var U = (C.encore && C.encore.ui) || {}; return fill(U[k] || '', o); }
+  function encOn() { return !!(C.encore && C.encore.on !== false && typeof E.encoreLine === 'function'); }
+  // 7 星王牌的說明句（挑王牌面板、唱片資訊）：「翻面：丟出之後看穿他一次，王牌回到手上（6 星）。」；fac＝這一趟開 ?fac=1（異端換連剋）
+  function aceEncLine(tier, fac) { if (!encOn()) return ''; try { return E.encoreLine(C, E.aceEncoreOf(C, tier, !!fac), { ace: true }); } catch (_) { return ''; } }
+  // 頂點卡的說明句（挑王牌面板）：abilityOf／apexAbilityOf 的複本帶 encore
+  function apexEncLine(A) { if (!encOn() || !A || !A.encore) return ''; try { return E.encoreLine(C, A.encore); } catch (_) { return ''; } }
+  // 吐司「翻面！《OK Computer》可以再丟一次」：停 3 秒（真實時間，不吃加速：字要停得夠久）、點了就收；同一時間只有一顆
+  function encToast(text) {
+    if (!text) return null;
+    qsa('.lb-toast.enc', app()).forEach(function (x) { x.remove(); });
+    var t = el('div', 'lb-toast enc', esc(text).replace(/(《[^》]*》)/, '<span class="nw">$1</span>'));
+    t.setAttribute('role', 'status'); t.dataset.tut = 'enc-toast';
+    var gone = false, out = function () { if (gone) return; gone = true; t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); };
+    t.addEventListener('click', function (e) { stopEv(e); out(); });
+    app().appendChild(t);
+    setTimeout(out, 3000);
+    return t;
+  }
+  // 翻面成立那手揭曉收起之後（duel.js hooks.encore）：王牌／能力回來了＝吐司；這場已經打完（留到下一位）＝不出（領獎畫面寫）。
+  //   第一次（save.seen.encore）老闆說一句。教學重看、假的 run 不管
+  //   老闆小提示（#tutTip；第一次丟王牌那句常常就在同一手）也在舞台那條：等它收掉才出吐司，不疊字；老闆第一次那句排在吐司收掉之後
+  function encoreAfter(p, ev, o) {
+    if (!ev || p.fakeRun || UI.tutReplay) return;
+    var d = p.res && p.res.duel, toast0 = !o.over && ev.give === 'again' ? EU('toast', { album: o.album || '', verb: o.verb || '' }) : '';
+    var first = save.seen && !save.seen.encore && EU('first') ? EU('first') : '';   // 說出口了才記（這場剛好打完、換畫面了＝下次再說）
+    var t0 = Date.now(), alive = function () { return UI.screen === 'duel' && save.run && (!d || save.run.duel === d || (UI.duelLab && UI.duelLab.duel === d)); };
+    var tipOn = function () { var b = D.querySelector('#tutTip .tut-tip'); return !!(b && !b.hidden); };
+    var phase = function () { try { var X = DUEL(), g = X && X.debug && X.debug(); return g ? g.phase : null; } catch (_) { return null; } };
+    //   小提示會一則接一則（收掉 400 ms 後下一則）：要安靜 600 ms 以上才算沒了；最多等 16 秒。等到的時候王牌／能力已經又用掉了＝吐司不出（字會是錯的）
+    var chose = 0, quietAt = 0;                      // 換到挑牌（小提示只在挑牌時出：tutorial.js pumpTips）之後再等，看它有沒有排上來
+    var still = function () { var q = d && d.p && d.p.enc; return !d || !q || q.state === 'hit'; };
+    var go = function () {
+      if (!alive()) return;
+      var ph = phase(), now = Date.now(), late = now - t0 > 16000;
+      if (!late && ph && ph !== 'choose' && ph !== 'over') { UI.timers.push(setTimeout(go, 150)); return; }
+      if (!late && ph === 'choose' && !chose) { chose = now; quietAt = now; UI.timers.push(setTimeout(go, 350)); return; }
+      if (tipOn()) quietAt = 0; else if (!quietAt) quietAt = now;
+      if (!late && (!quietAt || now - quietAt < 600)) { UI.timers.push(setTimeout(go, 200)); return; }
+      if (toast0 && still()) encToast(toast0);
+      if (first) UI.timers.push(setTimeout(function () { if (!alive() || save.seen.encore) return; save.seen.encore = true; persist(); stageSay('o', first, 'owner', 2800); }, toast0 ? 3200 : 0));
+    };
+    UI.timers.push(setTimeout(go, 200));
+  }
+  // 領獎畫面（戰利品列、舊的領獎面板）標題列下面一行金色小字「翻面留到下一位」：這一趟有留下來的翻面（run.encCarry）才有；停著、不另跳
+  function encCarryHd(html) {
+    var r = save.run;
+    if (!r || !r.encCarry || !encOn() || !EU('carry')) return html;
+    var tag = '<p class="lb-enccarry" data-tut="enc-carry">' + esc(EU('carry')) + '</p>';
+    var k = html.indexOf('</div>');               // 第一個 </div>＝標題列 .hd 收尾
+    return k >= 0 && /^<div class="hd">/.test(html) ? html.slice(0, k + 6) + tag + html.slice(k + 6) : tag + html;
+  }
+
   // 結果行第一次觸發那句（SPEC-D §3.2；CONTRACT §2）：這一派第一次有被動或代價觸發的那手＝C.factions[派].first（記 save.seen.facFirst[派]）
   function facFirstLine(p, cl) {
     var d = p && p.res && p.res.duel, t = d && d.p && d.p.fac, D0 = facDef(t);
@@ -2039,10 +2097,10 @@
           var cnt = owned && !lk ? '<span class="tc">' + esc(AU('got', { n: all.filter(function (x) { return has(x.card); }).length, total: all.length })) + '</span>' : '';   // 這派收了幾張
           return '<button type="button" class="key' + (lk ? ' locked' : '') + (cnt ? ' cnt2' : '') + '" role="tab" data-tab="' + t + '"' + (lk ? ' aria-disabled="true"' : '') + '><span class="tn">' + (lk ? lockIcon(11) : '') + esc(C.aceTitle[t]) + '</span>' + cnt + '</button>';
         }).join('') + '</div>' +
-        '<div class="apx-grid" role="listbox"></div><p class="note detail apx-det"></p><p class="note apx-sw" hidden>' + esc(TU('aceSwapSub')) + '</p>' +
+        '<div class="apx-grid" role="listbox"></div><p class="note detail apx-det"></p>' + (encOn() ? '<p class="note apx-enc" data-tut="enc-pick" role="button" tabindex="0"></p>' : '') + '<p class="note apx-sw" hidden>' + esc(TU('aceSwapSub')) + '</p>' +
         '<div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok"></button></div>';
       var s = sheet(html, 'apxpick' + (owned ? ' unl' : ''));
-      var grid = qs('.apx-grid', s), det = qs('.apx-det', s), sw = qs('.apx-sw', s), okb = qs('[data-a=ok]', s);
+      var grid = qs('.apx-grid', s), det = qs('.apx-det', s), sw = qs('.apx-sw', s), okb = qs('[data-a=ok]', s), encP = qs('.apx-enc', s);   // encP：第 I 波翻面那行
       // 第 D 波棒二（?fac=1&apex=1 同開；SPEC-D §6-3）：帶派別的 run＝照「三家換一格」換過的能力（時機、說明）；沒有 run.fac＝abilityOf 逐字照舊
       var abOf = function (cid) { var r0 = save.run; return (r0 && r0.fac && E.apexAbilityOf ? E.apexAbilityOf(C, cid, r0) : E.abilityOf(C, cid)) || null; };
       if (okb) try { okb.focus({ preventScroll: true }); } catch (_) {}
@@ -2066,6 +2124,7 @@
         det.innerHTML = '<span class="ar">' + esc((c.artist || '') + '《' + (c.album || '') + '》') + '</span>' +
           '<span class="ab">' + esc(AU('pickLine', { name: '\u0001', timing: TM[A.timing] || '', text: A.text || '' })).replace('\u0001', '<b>' + esc(A.name || '') + '</b>') +
           (A.swapped ? '<small class="fx-swp">' + esc(FU('swapped')) + '</small>' : '') + '</span>';   // 第 D 波棒二：換過能力的那張補一行小字
+        if (encP) { encP.textContent = apexEncLine(A); encP.classList.remove('full'); }   // 第 I 波翻面：一行（太長截斷，點了看全文）
         if (peek) { sw.innerHTML = lockIcon(11) + esc(pk ? TU('aceLockedNote', tierVars(pk)) : AU('notYet') + '：' + AU('lockCard')); sw.classList.add('lockt'); sw.classList.remove('soft'); sw.hidden = false; }
         else if (tier === t0 && anyLocked()) { sw.innerHTML = lockIcon(11) + esc(AU('lockNote')); sw.classList.add('lockt'); sw.classList.add('soft'); sw.hidden = false; }
         else { sw.textContent = TU('aceSwapSub'); sw.classList.remove('lockt'); sw.classList.remove('soft'); sw.hidden = tier === t0; }
@@ -2110,6 +2169,7 @@
           if (id === sel && !peek) return;
           sel = id; peek = null; sfx('select'); mark(); refit(); return;
         }
+        if (encP && e.target.closest && e.target.closest('.apx-enc')) { encP.classList.toggle('full'); refit(); return; }   // 第 I 波翻面那行：截斷的點了看全文
         if (e.target.closest && e.target.closest('[data-a=ok]')) { done = true; lpOff(); sfx('select'); closeSheet(s); res({ tier: tier, aceId: sel }); }
       });
       autoAct(function () {
@@ -3092,7 +3152,8 @@
       tut: tut,
       beforeEnd: tut && T.settled ? function () { try { return T.settled(); } catch (_) { return null; } } : null,
       endText: function (result, def) { return endStamp(p, result, def); },
-      facFirst: function (cl) { return facFirstLine(p, cl); }    // 第 D 波棒二：這一派第一次觸發那手，結果行補一句（duel.js 只在 clash 有 fac 時問）
+      facFirst: function (cl) { return facFirstLine(p, cl); },   // 第 D 波棒二：這一派第一次觸發那手，結果行補一句（duel.js 只在 clash 有 fac 時問）
+      encore: function (ev, o) { encoreAfter(p, ev, o || {}); }  // 第 I 波翻面：成立那手揭曉收起之後（duel.js encAfter）
     };
   }
   // 打完的大章（第 A 波 4）：剩 1–2 聲望贏下＝「險勝！」（金章；副標照舊）、老闆補一句；打贏而且連勝 ≥2＝大章下面跳「連勝 n」。
@@ -3586,7 +3647,7 @@
           : footRelic ? '<div class="foot two rel"><div class="orr"><span class="cap">或改拿一件發燒配件</span>' + relicButtonsHTML(relics, 'data-r') + '</div>' +
           '<button type="button" class="lb-btn" data-a="skip">都不要</button></div>'
           : '<div class="foot"><button type="button" class="lb-btn wide" data-a="skip">' + (cards.length || relics.length ? '都不要' : '繼續') + '</button></div>');
-      var s = sheet(html, 'reward');
+      var s = sheet(encCarryHd(html), 'reward');      // 第 I 波翻面：「翻面留到下一位」小字
       fitRewardSheet(s);
       s.addEventListener('click', function (e) {
         if (busy) return;
@@ -5026,7 +5087,7 @@
       get beat() { return UI.dlg ? UI.dlg.beat : null; },
       get econ() { return econ(); },
       // 測試對決（e2e-duel 的 index.html 版，C 整合；＝dev/duel-harness.html 的 build()／start()）：
-      //   duelLab.start({enemy, seed, ace, hp, ehp, relics, pos, atk, def, eAtk, eDef, hold})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張；
+      //   duelLab.start({enemy, seed, ace, hp, hpNow, ehp, relics, pos, atk, def, eAtk, eDef, hold, encore, encCarry})：直接在 index.html 的對決畫面開一場（包包＝禮物＋特價箱每色第一張；
       //     沒給 pos＝角色本來的聲望與牌單、出招 normal；pos＝照無限試煉第 pos 位的曲線；atk／def＝你的品味／底氣、eAtk／eDef＝蓋掉他的），打完停在大章不結算；
       //     hold:true＝照真玩家揭曉後停住等點（11-17；沒給＝照現行時序）
       //   duelLab.setNext({i,attr})：他下一手照這個出；duelLab.ended：打完的結果 {over, win, by, pHp, eHp}
@@ -5060,10 +5121,15 @@
     var po = apex ? { apex: true } : null;
     // 第 D 波棒二（?fac=1）：測試對決也帶派別（o.fac false＝不帶；o.facPicks＝{id:1} 這幾項本派選項算拿過，e2e 量第二招上限用）
     if (UI.fac && o.fac !== false && TIERS.indexOf(ace) >= 0) { pSrc.fac = { picks: o.facPicks && typeof o.facPicks === 'object' ? Object.assign({}, o.facPicks) : {} }; po = Object.assign(po || {}, { fac: true }); }
+    // 第 I 波 I-1 翻面（e2e-encore）：o.encore true＝跟主線對決一樣帶翻面（startFight 的 opts.encore）；o.encCarry＝上一場留下來的 give（'again'|'star'|'hit'）
+    var enc = o.encore === true && typeof E.encoreOf === 'function' && !!C.encore && C.encore.on !== false;
+    if (enc) po = Object.assign(po || {}, { encore: true });
     var pDef = po ? E.playerDef(C, pSrc, po) : E.playerDef(C, pSrc);
     if (o.hp != null) pDef.hp = pDef.maxHp = +o.hp;
+    if (o.hpNow != null) pDef.hp = Math.max(1, Math.min(pDef.maxHp || pDef.hp, +o.hpNow));   // 開打時聲望沒滿（回聲望型的測試）
     var seed = (+o.seed >>> 0) || 1, opts = { seed: seed, hintTable: E.hintTableOf ? E.hintTableOf(C) : undefined };
     if (apex) opts.apex = true;
+    if (enc) { opts.encore = true; if (typeof o.encCarry === 'string') opts.encCarry = { give: o.encCarry }; }
     if (!opts.hintTable) { var ht = {}; ['c', 'o', 'h'].forEach(function (a) { ht[a] = ((C.hints || {})[a] || []).map(function (h) { return h.id; }); }); opts.hintTable = ht; }
     if (eDef.ace) opts.enemyAce = eDef.ace;
     else if (eDef.boss) { var others = E.TIERS.filter(function (t) { return t !== ace; }); opts.enemyAce = C.cards[C.aces[others[seed % 2]]]; }
@@ -5142,7 +5208,7 @@
           put(); if (W.ResizeObserver) { var ro = new ResizeObserver(put); ro.observe(UI.stageHost); UI.offs.push(function () { ro.disconnect(); }); }
           return node;
         },
-        sheet: function (html, cls) { return sheet(html, cls); },
+        sheet: function (html, cls) { return sheet(encCarryHd(html), cls); },   // 第 I 波翻面：「翻面留到下一位」小字
         fit: fitRewardSheet,
         after: function (fn, ms) { var t = setTimeout(fn, Math.max(0, ms | 0)); UI.timers.push(t); return t; },   // 換畫面 cleanup 清掉；ms 由 loot.js 自己照速度算
         sfx: function (n, o) { sfx(n, o); },

@@ -204,6 +204,14 @@
 //            levelOffer：逢 levelEvery 級多第 4 格 {pick:'fac', id}（佔那一級）；{draft:true}（選秀）不出 · choose level {pick:'fac', id} · choose draft 送 fac → 'bad'
 //            facCfg · facPickDef(content, tier, id) · facFxOf(content, run, tier) · facDue · facOffer · fixFac(run, content)（讀檔整理）· FAC_OPS
 //            apexAbilityOf(content, cardId, run)：?fac=1&apex=1 同開（run.fac）＝照 content.factions.apexSwap 換一格；沒有 run.fac＝abilityOf 逐字照舊。新 apex op critAdd（只給換一格用）
+// Encore     第 I 波 I-1「安可」（scratchpad v5/wave-i SPEC-I §1、附錄 Y；給畫面／sim 的契約 build1/CONTRACT.md）。數字與字＝content.encore（encCfg；on false＝兩半都關、逐字現況）
+//            每張王牌多一條「條件 → 加成」：條件 caught 看穿｜combo2 連剋兩手｜sameWin 同色比贏｜lowhp 聲望 ≤ lowPct%（只配回聲望型）；加成 again 再發動／王牌回到手上｜star 下一手 +1 星｜
+//              hit 下一手剋中多扣 2（倍數之後、他的底氣之前）｜heal 回 2（當場、跟同一手其他回聲望取大）。一場一次；頂點卡發動那手不算（下一手起）、7 星王牌丟的那手就算；
+//              成立了還沒用到、這場就結束 → duel.over.encCarry {give}、finishFight 寫 run.encCarry、下一次 startFight 吃掉（說情重打也算；只留一場；一趟結束清掉）
+//            encoreOf(content, entry, tier)（頂點卡：自己寫的 encore 優先、沒寫照 byFamily）· aceEncoreOf(content, tier, fac)（7 星王牌；fac 異端＝facHeresy）· encoreLine／encoreTag（說明句、籤）
+//            abilityOf／apexAbilityOf 多 encore（換一格照換後的家族）· playerDef o.encore → encNum、encText、aceEnc · startDuel opts.encore／encCarry → duel.p.enc、encPrev、encAce|apexHist、stats.enc
+//            startFight：主線對決（非序章、o.encore !== false）自動開；resolveTurn：encFire（丟王牌）→ outcome（encBonus）→ … → encoreStep（aceUsed、補牌之後、finish 之前）→ {t:'encore'} 事件
+//            pAceStar(duel)（安可回來的王牌 6 星：actPlay、bestChip、view.aceStar、pubOpts）· view.enc · encorePolicy(name)（sim 量上界：會湊條件、安可盤一定丟）· debugOutcome.caught（e2e）
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）

@@ -7,6 +7,8 @@
  *   fetchDesc(card) → Promise<string>                      // /album-desc（只在 DESC_OK 網域打；2.5 s 逾時、快取）
  *   config({ onSoundUnlock(), cardOf(id), apex })          // ui.js：唱機第一次開聲音時寫存檔；id → 帶改造（洗過）的卡；apex＝頂點卡試做（?apex=1）
  *     apex 開著時，頂點卡（試做名單裡的）三軸改成灰字＋「王牌不比星。」，下面多一塊「王牌能力」：能力名・時機＋說明（他丟的那張不出：客人的王牌照舊 7 星）
+ *     第 I 波 I-1「翻面」（content.encore 開著）：「王牌能力」那塊多一行「王牌翻面：看穿他一次，再發動一次。」；
+ *       沒開 apex 時三張 7 星王牌也多這一行（「王牌翻面：丟出之後看穿他一次，王牌回到手上（6 星）。」；這一趟 ?fac=1 的異端＝連剋）。他丟的那張不出
  * }
  *
  * 版面（由上到下，置中、最寬 360）：唱片資訊 → 封面 200px → 藝人 → 專輯 → 年份 → 王牌徽章 → 三軸色格（這一手的那軸標籤金色）
@@ -91,10 +93,27 @@
       return E && E.abilityOf && C && C.apexTrial ? E.abilityOf(C, o.id) : null;
     } catch (_) { return null; }
   }
+  // 第 I 波翻面：「王牌翻面：{條件}，{加成}。」一行（engine encoreLine 的「翻面：」換成 infoTitle「王牌翻面：」）。enc＝{when, give}；ace＝7 星王牌那句
+  function encHTML(enc, ace) {
+    var E = W.DipLabEngine, C = W.DipLabContent, X = C && C.encore;
+    if (!enc || !X || X.on === false || !E || typeof E.encoreLine !== 'function') return '';
+    var l = ''; try { l = E.encoreLine(C, enc, ace ? { ace: true } : null); } catch (_) {}
+    if (!l) return '';
+    var k = l.indexOf('：'), U = X.ui || {};
+    return '<div class="enc" data-tut="info-enc"><b>' + esc(U.infoTitle || '') + '</b>' + esc(k >= 0 ? l.slice(k) : '：' + l) + '</div>';
+  }
+  // 沒開 apex 時的 7 星王牌（三張預設王牌；他丟的那張不出）
+  function aceEncOf(o, opts) {
+    if (CFG.apex || !o.ace || (opts && /^duel:(slot|last|recap)-e$/.test(String(opts.from || '')))) return '';
+    var E = W.DipLabEngine, C = W.DipLabContent;
+    if (!E || typeof E.aceEncoreOf !== 'function' || !C || !C.aces || C.aces[o.ace] !== o.id) return '';
+    var run = null; try { run = CFG.run ? CFG.run() : null; } catch (_) {}
+    try { return encHTML(E.aceEncoreOf(C, o.ace, !!(run && run.fac)), true); } catch (_) { return ''; }
+  }
   function apexHTML(A) {
     var U = (W.DipLabContent.apexTrial || {}).ui || {}, tm = (U.timing || {})[A.timing] || '';
     return '<div class="apx" data-ab="' + esc(A.id) + '"><div class="k">' + esc(U.infoTitle || '') + '</div><div class="nm"><b>' + esc(A.name) + '</b>' + (tm ? '<span class="tm">' + esc(tm) + '</span>' : '') + '</div>' +
-      '<div class="tx">' + esc(A.text) + '</div>' +
+      '<div class="tx">' + esc(A.text) + '</div>' + encHTML(A.encore) +
       (A.swapped && W.DipLabContent.factions && W.DipLabContent.factions.ui ? '<div class="sw">' + esc(W.DipLabContent.factions.ui.swapped || '') + '</div>' : '') + '</div>';   // 第 D 波棒二：換過能力
   }
   // ---- 簡介（ui.js 舊 fetchDesc 搬過來；兩邊共用這一份）
@@ -202,7 +221,7 @@
       '<div class="yr">' + esc(o.year) + mods + '</div>' + tuneHTML(o) +
       (aceTag ? '<div class="acerow">' + aceTag + '</div>' : '') +
       (o.painted ? '' : '<div class="stats' + (apx ? ' apxdim' : '') + '">' + starsHTML(o, act) + '</div>') +
-      (apx ? '<div class="apxns">' + esc(apxU.noStar || '') + '</div>' + apexHTML(apx) : '') +
+      (apx ? '<div class="apxns">' + esc(apxU.noStar || '') + '</div>' + apexHTML(apx) : aceEncOf(o, opts)) +
       (o.previewUrl ? '<button class="lb-mini-player muted" type="button" aria-pressed="false" aria-label="播放試聽"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>' : '<div class="lb-mini-none">（這張沒有試聽）</div>') +
       (o.pitch ? '<div class="pitch">' + esc(o.pitch) + '</div>' : '') +
       '<div class="intro wait">介紹載入中…</div>' +

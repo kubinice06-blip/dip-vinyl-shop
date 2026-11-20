@@ -864,7 +864,7 @@
         { id: 'c39', text: '「入門第一張，就是它。」', form: 'say', tag: '新' },
         { id: 'c40', text: '「滿街的 T 恤，都印過這張封面。」', form: 'say', tag: '新' },
         { id: 'c41', text: '他翻出一張唱片行永遠不缺貨的。', form: 'act', tag: '新' },
-        { id: 'c42', text: '「安可的時候，全場都在等這首。」', form: 'say', tag: '新' },
+        { id: 'c42', text: '「演唱會最後一首，全場都在等它。」', form: 'say', tag: '新' },
         { id: 'c43', text: '「不認識這張，會被笑喔。」', form: 'say', tag: '新' },
         { id: 'c44', text: '「那個封面，被模仿過無數次。」', form: 'say', tag: '新' },
         { id: 'c45', text: '側標上印著「銷售破百萬」。', form: 'act', tag: '新' },
@@ -1991,26 +1991,29 @@
       'critLeech:duel': { when: 'combo2', give: 'hit' },
       '*:duel': { when: 'combo2', give: 'hit' }
     },
-    // 畫面字（{n}＝加成的數字、{star}＝安可盤幾星、{album}＝王牌專輯名、{verb}＝發動｜丟；engine encoreLine／encoreTag 會代入條件句與加成句）
+    // 畫面字（{n}＝加成的數字、{star}＝翻面那張王牌幾星、{album}＝王牌專輯名、{verb}＝發動｜丟；engine encoreLine／encoreTag 會代入條件句與加成句）
+    //   店主 11-20 改名：玩家看得到的字一律叫「翻面」（唱片翻到 B 面再來一次），不叫「安可」（lint-copy 擋）；程式識別字（encore）照舊
     ui: {
-      name: '安可',
+      name: '翻面',
       when: { caught: '看穿他一次', combo2: '連剋兩手', sameWin: '同色比贏一次', lowhp: '聲望剩三成以下' },
       give: { again: '再發動一次', ace: '王牌回到手上（{star} 星）', star: '下一手 +{n} 星', hit: '下一手剋中多扣 {n}', heal: '回 {n} 聲望' },
-      tpl: '安可：{when}，{give}。',                 // 頂點卡：「安可：看穿他一次，再發動一次。」
-      aceTpl: '安可：丟出之後{when}，{give}。',      // 7 星王牌：「安可：丟出之後看穿他一次，王牌回到手上（6 星）。」
+      tpl: '翻面：{when}，{give}。',                 // 頂點卡：「翻面：看穿他一次，再發動一次。」
+      aceTpl: '翻面：丟出之後{when}，{give}。',      // 7 星王牌：「翻面：丟出之後看穿他一次，王牌回到手上（6 星）。」
       tagWhen: { caught: '看穿', combo2: '連剋', sameWin: '同色贏', lowhp: '背水' },
       tagGive: { again: '再一次', ace: '再丟', star: '+{n} 星', hit: '多扣 {n}', heal: '回 {n}' },
-      tag: '{when}→{give}',                          // 王牌格下方的籤（灰＝還在等、金＝安可了）
-      lit: '安可！{give}',                            // 成立那手：結果句多一行小字
-      toast: '安可！《{album}》可以再{verb}一次', verbApex: '發動', verbAce: '丟',
+      tag: '{when}→{give}',                          // 王牌格下方的籤（灰＝還在等、金＝翻面了）
+      lit: '翻面！{give}',                            // 成立那手：結果句多一行小字
+      toast: '翻面！《{album}》可以再{verb}一次', verbApex: '發動', verbAce: '丟',
       next: { star: '下一手 +{n} 星', hit: '下一手剋中多扣 {n}' },   // 王牌格下方小字（加成等著用的時候）
-      note: { star: '安可：+{n} 星', hit: '安可：剋中多扣 {n}' },    // 吃加成那手的結果句小字（engine outcome 的 notes）
-      healToast: '安可：聲望 +{n}',
-      carry: '安可留到下一位',                         // 領獎畫面小字（這場剛好打完）
-      carryTag: '安可×1',                              // 下一場王牌格的金籤
-      infoTitle: '王牌安可',                           // 唱片資訊「王牌能力」區多一行的標題
-      first: '「看到沒？讀對了，王牌就再給你一次。」',   // 第一次遇到安可（save.seen.encore），老闆說
-      rule: '安可：王牌多一條讀對了才有的加成，一場一次；這場剛好打完就留到下一位。'
+      note: { star: '翻面：+{n} 星', hit: '翻面：剋中多扣 {n}' },    // 吃加成那手的結果句小字（engine outcome 的 notes）
+      healToast: '翻面：聲望 +{n}',
+      carry: '翻面留到下一位',                         // 領獎畫面小字（這場剛好打完）
+      carryTag: '翻面×1',                              // 下一場王牌格的金籤
+      infoTitle: '王牌翻面',                           // 唱片資訊「王牌能力」區多一行的標題
+      first: '「看到沒？讀對了，唱片翻到 B 面再來一次。」',   // 第一次翻面成立（save.seen.encore），老闆說
+      rule: '翻面：王牌多一條讀對了才有的加成，一場一次；這場剛好打完就留到下一位。',
+      stamp: '翻面！',                                  // 成立那手：你頭上飄的小章
+      recap: '翻面'                                     // 上一手詳情／這場紀錄：成立那手的章
     }
   };
   C.encoreTag = '新';
