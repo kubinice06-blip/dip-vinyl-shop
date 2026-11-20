@@ -214,6 +214,7 @@
       openStation(cur);
     };
     var p = stg('pos', 'p'), sp = typeof pl.spot === 'string' ? stg('spot', pl.spot) : pl.spot;
+    if (sp) crowd('yield', sp);                                 // 活店（SPEC-H §4.3）：停在那一站的客人先讓開
     if (!walk || A().rm || !p || p.hidden || p.outside || !sp || H.autoOn()) {
       if (sp) stg('put', 'p', pl.spot); stg('hide', 'p', false);
       return after(arrive, walk ? 120 : 0);
@@ -229,21 +230,26 @@
     return null;
   }
   function faceTo(hid) { var c = hid && centerOf(hid); if (c) stg('faceTo', 'p', c); }
-  // 站主（f；這時客人還在門外）：同業老闆站常客位（熟客先藏起來）、算命阿姨站窗邊、遞帖的（這一輪帶頭那位）站門口；宵夜＝老闆端麵線過來
+  // 站主（f；這時客人還在門外）：同業老闆站櫃檯前（spots.regular＝活店結帳點 c-pay）、算命阿姨站窗邊、遞帖的（這一輪帶頭那位）站門口；宵夜＝老闆端麵線過來
+  //   活店（SPEC-H §3.1）：店裡的客人原地照翻（導演 still）；站主要站的那格、老闆要走的路先讓開（Crowd.clearSpot／clearRoute）
+  function crowd(m) {
+    var K = W.DipLabCrowd; if (!K || typeof K[m] !== 'function') return null;
+    try { return K[m].apply(K, Array.prototype.slice.call(arguments, 1)); } catch (e) { console.error(e); return null; }
+  }
   var FORTUNE_AV = { head: 'long', hair: 'p', shirt: 'p', pants: 'k', skin: 'v' };
   function npcFor(cur) {
     var k = cur.kind;
     restoreNpc();
-    if (k === 'trade') { stg('hide', 'r1', true); stg('put', 'f', 'regular', 'e4'); show('f'); S.npc = true; }
+    if (k === 'trade') { crowd('clearSpot', 'regular'); stg('put', 'f', 'regular', 'e4'); show('f'); S.npc = true; }
     else if (k === 'fortune') { stg('put', 'f', 'stFortune', FORTUNE_AV); show('f'); stg('faceTo', 'f', 'p'); S.npc = true; }
     else if (k === 'dare' && cur.lead) { var sp = null; try { sp = H.enemySpr(cur.lead); } catch (_) {} stg('door', 'open', { quiet: true }); stg('put', 'f', 'door', sp || 'e0'); show('f'); stg('faceTo', 'f', 'p'); S.npc = true; }
-    else if (k === 'snack') { stgP('walk', 'o', ['stSnack'], 90).then(function () { stg('faceTo', 'o', 'p'); }); S.ownerOut = true; }
+    else if (k === 'snack') { crowd('clearRoute', stg('route', 'o', 'stSnack'), { who: 'o' }); crowd('clearSpot', 'stSnack'); stgP('walk', 'o', ['stSnack'], 90).then(function () { stg('faceTo', 'o', 'p'); }); S.ownerOut = true; }
   }
   function show(id) { stg('hide', id, false); stg('sil', id, false); }
   function restoreNpc() {
     if (!S) return;
-    if (S.npc) { stg('hide', 'f', true); stg('hide', 'r1', false); stg('door', 'close'); S.npc = false; }
-    if (S.ownerOut) { stgP('walk', 'o', ['counter'], 90).then(function () { stg('pose', 'o', 'busy'); }); S.ownerOut = false; }
+    if (S.npc) { stg('hide', 'f', true); stg('door', 'close'); S.npc = false; }
+    if (S.ownerOut) { crowd('clearRoute', stg('route', 'o', 'counter'), { who: 'o' }); stgP('walk', 'o', ['counter'], 90).then(function () { stg('pose', 'o', 'busy'); }); S.ownerOut = false; }
   }
   // 錄音室（C 波）：不出面板，浮一行「錄了一段 demo。樂歷 +15」（第 D 波：入帳了，不寫之後開放）0.8 秒後自己送 ok（SPEC-C §4.3-4、CRITIQUE 6.3）
   function studio(cur) {

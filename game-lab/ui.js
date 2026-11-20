@@ -1160,6 +1160,7 @@
     var f = FX(); if (f && f.rainStop && id !== 'title' && id !== 'scene') try { f.rainStop(); } catch (_) {}
     if (id === 'title' || id === 'night') dailyTick();
     try { SCREENS[id](UI.params); } catch (e) { console.error(e); }
+    if (UI.screen === id) crowdSync(id, UI.params);   // 活店（SPEC-H §3.1）：畫面掛好才切導演模式（巢狀 go 已經切過就不再切）
     if (id === 'title') mediaKick();
     mediaRetry();
     flushAfter();                                    // 排給「下一個畫面」的吐司：畫面掛好才出（審查 #0）
@@ -1208,7 +1209,6 @@
     if (p.f === 'hide') hideActor('f'); else if (p.f) { place('f', p.f, p.fSpr || null); stg('sil', 'f', p.f === 'out'); }
     if (p.o) place('o', p.o, 'owner');
     if (p.door) stg('door', p.door);
-    if (p.hideR1) hideActor('r1');
     var sc = { panel: panel, box: dq, dq: dq, strip: strip, stripState: p.stripState || null };
     if (strip) renderStrip(sc);
     var f = FX(); if (soundOn() && f && f.rainStart) try { f.rainStart(); } catch (_) {}
@@ -2337,7 +2337,7 @@
     stg('interact', 'title');
     place('o', 'counter', 'owner'); stg('pose', 'o', 'busy');
     hideActor('f'); hideActor('q1'); hideActor('q2');
-    if (firstEver()) hideActor('r1'); else stg('hide', 'r1', false);     // 第一次（接著是序章）：店裡只有老闆（D §2 序章藏起熟客）
+    // 店裡的熟客（活店，SPEC-H §3.1）：第一次（接著是序章）店裡只有老闆；回訪 0–1 位站著翻＝crowdSync（go 跑完畫面才切）
     place('p', 'out', 'player'); stg('sil', 'p', true);
     stg('door', 'close'); stg('play', true); stg('dim', 1);
     var plate = el('div', 'lb-plate', '<b>品味對決<i>・</i>試做</b><small>dip vinyl game lab</small>' + (UI.apex ? '<span class="apx">' + esc(AU('tag')) + '</span>' : ''));
@@ -2582,7 +2582,7 @@
     var tonight = tonightId();
     var ctx = { flags: {}, quiet: !soundOn(), tonightId: tonight, tonightTier: tierOfCard(tonight), defaultTier: tierOfCard(tonight), quietDoor: !!o.fromIntro };
     abandonRun(save.run); save.run = null; persist();
-    go('scene', { p: 'door', f: 'hide', o: 'counter', hideR1: true, stripState: { ace: null, bag: [] }, start: function (sc) {
+    go('scene', { p: 'door', f: 'hide', o: 'counter', noCrowd: true, stripState: { ace: null, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
       var run = function () { dlg.run(C.script.prologue, function (ui, b) { return prologueUi(ui, b, sc, dlg, ctx); }); };
       if (o.fromIntro && !rm() && !UI.auto) later(run, INTRO_FADE * speed()); else run();
@@ -2599,7 +2599,7 @@
     var ctx = { flags: {}, quiet: !soundOn(), tonightId: tonight, tonightTier: tierOfCard(tonight), defaultTier: tierOfCard(tonight), acePicked: true };
     var seen = false;
     ctx.skipBeat = function (b) { if (b.id === 'O14') seen = true; return !seen; };
-    go('scene', { p: 'sale', f: 'hide', o: 'counter', hideR1: true, stripState: { ace: null, bag: [] }, start: function (sc) {
+    go('scene', { p: 'sale', f: 'hide', o: 'counter', noCrowd: true, stripState: { ace: null, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
       dlg.run(C.script.prologue, function (ui, b) { return prologueUi(ui, b, sc, dlg, ctx); });
     } });
@@ -3189,7 +3189,8 @@
   function afterDuelScene(eid, o, start) {
     var en = C.enemies[eid] || {};
     var r = save.run;
-    go('scene', Object.assign({ p: 'duelP', f: 'duelE', fSpr: enemySpr(en), o: 'ref', camMs: 600, hideR1: !!(r && r.prologue === 'pending'), start: function (sc) {
+    // 店裡的人（活店 §3.1）：序章那場＝藏（noCrowd）；其他＝還在店裡的站著翻、不進不出（still）
+    go('scene', Object.assign({ p: 'duelP', f: 'duelE', fSpr: enemySpr(en), o: 'ref', camMs: 600, noCrowd: !!(r && r.prologue === 'pending'), crowd: 'still', start: function (sc) {
       stg('pose', 'p', null); stg('pose', 'f', null);
       start(sc);
     } }, o || {}));
@@ -3240,7 +3241,7 @@
   function epilogueFlow(resumed) {
     var r = save.run;
     save.prologueDone = true; persist();             // 序章打贏了：之後放棄這一趟也不會再從序章開始
-    afterDuelScene('man', { fSpr: enemySpr(C.enemies[C.prologueEnemy || 'man']), hideR1: true }, function (sc) {
+    afterDuelScene('man', { fSpr: enemySpr(C.enemies[C.prologueEnemy || 'man']), noCrowd: true }, function (sc) {
       var pend0 = r.pending;
       var dropId = pend0 && pend0.cards && pend0.cards[0];
       var ctx = { flags: {}, stakeId: dropId };
@@ -3322,16 +3323,16 @@
   }
   // ---- 散場：你坐在地上，老闆一句
   function deadFlow(out) {
-    go('scene', { p: 'duelP', o: 'counter', camMs: 600, recap: true, start: function (sc) {
+    go('scene', { p: 'duelP', o: 'counter', camMs: 600, recap: true, crowd: 'still', start: function (sc) {
       stg('pose', 'f', null);
-      stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); });
+      guestOut().then(function () { hideActor('f'); });
       var dlg = Dialogue(sc, {});
       dlg.run(C.script.dead).then(function () { go('end'); });
     } });
   }
   // ---- 傳說藏家進門（每輪第 5 位）
   function bossEnterFlow() {
-    go('scene', { p: 'duelP', f: 'out', fSpr: 'boss', o: 'counter', start: function (sc) {
+    go('scene', { p: 'duelP', f: 'out', fSpr: 'boss', o: 'counter', crowd: 'still', start: function (sc) {
       var dlg = Dialogue(sc, {});
       dlg.run(C.script.bossEnter, function (ui, b) {
         if (ui === 'duel') return dlg.menu([b.prompt || '▶ 品味對決']).then(function () { stg('clearStamps'); beginFight({ enter: true }); return new Promise(function () {}); });
@@ -3381,7 +3382,7 @@
     // 第 C 波（SPEC-C §4.1、§4.2）：pending 有 kind＝戰利品列（loot）／寶箱（chest），交給 loot.js 演；沒有 kind＝升版前存的舊形狀，照舊路
     var LT = p.type === 'reward' && p.kind && W.DipLabLoot && UI.lootOk ? W.DipLabLoot : null;
     var dropping = !LT && p.type === 'reward' && cards.length && !p.cardDone;      // 掉落旁白：他早一點轉身走，地上那張盤才看得到
-    later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, LT ? 300 : dropping ? 900 : 1700);   // 戰利品列：0 秒他就轉身走（字幕同時出）
+    later(function () { stg('door', 'open'); guestOut().then(function () { hideActor('f'); stg('door', 'close'); }); }, LT ? 300 : dropping ? 900 : 1700);   // 戰利品列：0 秒他就轉身走（字幕同時出）
     var busy = false;
     // 面板（配件滿按「算了」回來時重畫這一張：sheet() 開新面板會把它拿掉；RT-1）
     function showSheet() {
@@ -3522,6 +3523,7 @@
   var ROOM_DX = 38, ROOM_DY = 44;
   // （第 A 波 1 之前：第一位客人站門邊 atdoor／試聽桌前 wait 等你＝waitSpot；現在客人一律走到對戰台 duelE 等，見 guestToTable）
   function makeRoom(to) {
+    crowdCall('yield', to);                                   // 活店（SPEC-H §4.3）：停在你要去的那格的客人先讓開（同一排另一格，沒有就出門）
     if (UI.screen !== 'night' || !to || !stg('has', 'f')) return;
     if (save.run && UI.atTable === tableKey(save.run)) return;   // 在對戰台等你的客人（第 A 波 1）：那是他的位置，不讓開
     var f = stg('pos', 'f'); if (!f || f.hidden || f.outside) return;
@@ -3544,15 +3546,33 @@
       var seen = UI.atTable === key; UI.atTable = key;
       if (!seen && inside && at && !at.hidden && !at.outside && stg('has', 'f')) {
         stg('sprite', 'f', spr); stg('sil', 'f', false);
-        stgP('walk', 'f', ['duelE'], TABLE_WALK).then(function () { arriveTable(key, id); });
+        var gin0 = guestRoute('in');
+        crowdCall('clearRoute', stg('route', 'f', gin0), { who: 'f' });
+        stgP('walk', 'f', gin0, TABLE_WALK).then(function () { arriveTable(key, id); });
         return;
       }
       settle('f', 'duelE', spr); stg('sil', 'f', false); stg('door', 'close');
       return;
     }
     UI.atTable = key;
+    // 主線客人的路（SPEC-H §4.2）：in → frontleft → duelE（走 frontleft 才不會穿過島邊左排翻箱的人）；活店關著也照這條走。
+    //   活店：先清路（只會碰到試聽桌那格）、到站＋1.2 秒前門不給路人用
+    var gin = guestRoute('in');
     stg('door', 'swing'); place('f', 'door', spr); stg('sil', 'f', false);
-    stgP('walk', 'f', ['in', 'duelE'], TABLE_WALK).then(function () { arriveTable(key, id); });
+    crowdCall('clearRoute', stg('route', 'door', gin), { who: 'f', door: true });
+    stgP('walk', 'f', gin, TABLE_WALK).then(function () { arriveTable(key, id); });
+  }
+  // 主線客人進出的路（dip.json crowd.guest；沒有就用規格的那兩條）
+  function guestRoute(k) {
+    var g = stg('crowdGuest');
+    if (g && Array.isArray(g[k]) && g[k].length) return g[k].slice();
+    return k === 'in' ? ['in', 'frontleft', 'duelE'] : ['frontleft', 'in', 'door', 'leave'];
+  }
+  // 主線客人打完出門（輸了的他、或你倒下後他走）：frontleft → in → door → leave（反過來走進場那條），先清路
+  function guestOut() {
+    var go2 = guestRoute('out');
+    crowdCall('clearRoute', stg('route', 'f', go2), { who: 'f' });
+    return stgP('walk', 'f', go2);
   }
   var TABLE_WALK = 90;                                         // 客人走到對戰台的速度（shop 預設 36；推門到對戰台約 2 秒）
   function arriveTable(key, id) {
@@ -3593,7 +3613,6 @@
     var panel = UI.panel; panel.classList.add('night', 'stall');
     stg('interact', 'map');
     resetPoses(); stg('sil', 'p', false);
-    stg('hide', 'r1', false);
     settle('o', 'counter', 'owner');
     if (UI.keepP && stg('has', 'p')) UI.keepP = false; else { UI.keepP = false; settle('p', UI.lastSpot || 'browse', 'player'); }   // 續玩（標題「繼續」）：你在門外 → 站回店裡；有 cur 的話 stalls.js 直接放到那一站
     hideActor('f'); stg('door', 'close'); UI.atTable = null;   // f 這時給站主用：之前排的客人開場白不要說到站主頭上
@@ -3627,7 +3646,6 @@
     var panel = UI.panel; panel.classList.add('night');
     stg('interact', 'map');
     resetPoses(); stg('sil', 'p', false);
-    stg('hide', 'r1', false);                                  // 熟客：序章與收尾藏著，來客才出現（D §2）
     settle('o', 'counter', 'owner');
     if (UI.keepP && stg('has', 'p')) UI.keepP = false; else { UI.keepP = false; settle('p', UI.lastSpot || 'browse', 'player'); }
     // 挑戰者進門直接走到對戰台等你（第 A 波 1；店主 11-16）：這一位推門進來、走到對戰台（duelE）站著；門外排的是再下一位。
@@ -3836,6 +3854,7 @@
     // 他在對戰台等（第 A 波 1）：你走到對戰台（duelP）就開打；他還在路上就一起過去（duelIn 把兩個人放到位）
     if (UI.atTable !== tableKey(r)) { UI.atTable = tableKey(r); settle('f', 'duelE', enemySpr(en)); stg('sil', 'f', false); }
     var start = function () { if (UI.screen === 'night' && save.run === r) beginFight({ enter: true }); };
+    crowdCall('clearDuel');                                   // 活店（SPEC-H §3.1）：開打清對戰區（被橫條切頭的、擋老闆去裁判與你走去對戰台的先走開）
     var p = stg('pos', 'p'), sp = stg('spot', 'duelP');
     if (UI.auto || !p || p.hidden || p.outside || !sp || (Math.round(p.x) === sp[0] && Math.round(p.y) === sp[1])) { later(start, UI.auto ? 120 : 200); return; }
     stg('pose', 'p', null);
@@ -3969,7 +3988,7 @@
     var s = floatSheet(html, 'booth tall');
     if (hint) { save.seen.dailyHint = true; persist(); }
     watchPlaying(qs('.np', s));
-    if (UI.screen === 'night' || UI.screen === 'title') stgP('walk', 'p', ['listen'], 110).then(function () { UI.lastSpot = 'listen'; });
+    if (UI.screen === 'night' || UI.screen === 'title') { crowdCall('yield', 'listen'); stgP('walk', 'p', ['listen'], 110).then(function () { UI.lastSpot = 'listen'; }); }
     var redraw = function (at) { var x = qs('.lb-daily', s); if (x && UI.daily) x.outerHTML = dailyHTML(at, hint); };
     if (dl) { var onMedia = function () { if (s.isConnected) redraw(-1); }; D.addEventListener('dip:media', onMedia); UI.offs.push(function () { D.removeEventListener('dip:media', onMedia); }); }
     s.addEventListener('click', function (e) {
@@ -4026,7 +4045,7 @@
         '<div class="lb-radio" role="group" aria-label="' + esc(T.label || '') + '">' + cells + '</div>' + got;
     };
     render(false);
-    if (UI.screen === 'night') stgP('walk', 'p', ['radio'], 110).then(function () { UI.lastSpot = 'radio'; });
+    if (UI.screen === 'night') { crowdCall('yield', 'radio'); stgP('walk', 'p', ['radio'], 110).then(function () { UI.lastSpot = 'radio'; }); }
     s.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-cell],[data-a=toBargain]'); if (!b || b.disabled) return;
       if (b.getAttribute('data-a') === 'toBargain') { s.remove(); syncFloat(); sfx('tick'); econCall('openBargain'); return; }
@@ -4759,6 +4778,16 @@
       get run() { return save.run; },
       get save() { return save; },
       get stage() { return UI.stage; },
+      // 活店（SPEC-H §11.3）：state、spawn(who, stop, o)、freezeAt([stop])、doorLog()、clear()、mode()
+      crowd: {
+        state: function () { return crowdCall('state'); },
+        spawn: function (who, stop, o) { return crowdCall('spawn', who, stop, o); },
+        freezeAt: function (ids) { return crowdCall('freezeAt', ids); },
+        doorLog: function () { return crowdCall('doorLog') || []; },
+        clear: function () { return crowdCall('clear'); },
+        mode: function () { return crowdCall('mode'); },
+        on: function () { return !!UI.crowdOk && crowdOn(); }
+      },
       duel: function () { return save.run && save.run.duel ? E.view(save.run.duel) : null; },
       rawDuel: function () { return save.run && save.run.duel; },
       screen: function () { return UI.screen; },
@@ -4916,7 +4945,7 @@
     return W.DipLabStage.mount(UI.stageHost, {
       shop: 'dip', cards: C.cards, coverBase: './', sprites: labSpr(), player: function () { return save && save.player ? playerAv() : { head: 'neat' }; },
       camera: 'full', screen: 'title', speed: speed, onAction: onStageAction
-    }).then(function (st) { UI.stage = st; st.onAction = onStageAction; configTut(); configEcon(); configLoot(); configStalls(); return st; }, function (e) { console.error(e); UI.stageHost.classList.add('nostage'); configEcon(); configLoot(); configStalls(); return null; });
+    }).then(function (st) { UI.stage = st; st.onAction = onStageAction; configTut(); configEcon(); configLoot(); configStalls(); configCrowd(); return st; }, function (e) { console.error(e); UI.stageHost.classList.add('nostage'); configEcon(); configLoot(); configStalls(); return null; });
   }
   // 戰利品列＋寶箱（loot.js，第 C 波 SPEC-C §4.1、§4.2）：交易一律走 doChoose（take／relic／skip），面板、鏡頭、錢跳數字用這裡的
   function configLoot() {
@@ -5001,6 +5030,75 @@
         // 櫃檯「賣給老闆」分頁打開過：「拿去櫃檯賣給老闆」的一次性提示不用再出（第 A 波 5）
         onSellOpen: function () { UI.sellNudge = null; if (!save.seen.counterSell) { save.seen.counterSell = true; persist(); } } });
     } catch (e) { console.error(e); }
+  }
+  // ======================================================================= 活店（SPEC-H 棒 4：導演在 crowd.js；這裡只接開關、模式、暫停與幾個讓位點）
+  //   開關（§11.1）：正式站預設開；自動化瀏覽器（navigator.webdriver＝Playwright e2e、截圖腳本）預設關；?crowd=0 全關、?crowd=1 強制開
+  function crowdOn() {
+    if (QS.crowd === '0') return false;
+    if (QS.crowd === '1') return true;
+    if (C && C.crowd && C.crowd.on === false) return false;
+    try { if (W.navigator && W.navigator.webdriver) return false; } catch (_) {}
+    return true;
+  }
+  function crowdCall(m) {
+    var K = UI.crowdOk ? W.DipLabCrowd : null; if (!K || typeof K[m] !== 'function') return null;
+    try { return K[m].apply(K, Array.prototype.slice.call(arguments, 1)); } catch (e) { console.error(e); return null; }
+  }
+  function configCrowd() {
+    var K = W.DipLabCrowd; if (!K || typeof K.configure !== 'function' || UI.crowdOk) return;
+    UI.crowdOk = true;
+    try {
+      K.configure({ on: crowdOn(), content: C, stage: function () { return UI.stage; }, speed: speed, reduced: rm, paused: crowdPaused,
+        seqTag: function () { var CC = W.DipCrowdCore; return save && save.run && CC ? CC.seqTag(save.run) : null; },
+        titleTag: function () { var CC = W.DipCrowdCore; return CC ? CC.titleTag((save.runs || []).length, seedKey()) : 'title'; },
+        ownerFree: crowdOwnerFree, shelfCard: crowdShelfCard });
+    } catch (e) { console.error(e); }
+  }
+  // 暫停（§3.1）：抽屜、浮動面板（切磋邀請面板除外）、頁面、〔D〕過場卡（也是浮動面板）、教學泡泡、唱片資訊、你正在走去開打（UI.going）、分頁藏到背景
+  function crowdPaused() {
+    if (D.hidden || UI.going || UI.page || UI.modal || UI.intro || UI.tune) return true;
+    var a = app(); if (!a) return false;
+    if (qs('.ec-drawer', a)) return true;
+    var X = econ(); try { if (X && X.isOpen && X.isOpen()) return true; } catch (_) {}
+    if (qsa('.lb-sheet.float', a).some(function (s) { return !s.classList.contains('enc'); })) return true;
+    var tt = D.getElementById('tut'); if (tt && /\bon\b/.test(tt.className)) return true;
+    var ci = CI(); try { if (ci && ci.isOpen()) return true; } catch (_) {}
+    return false;
+  }
+  // 客人拿著翻到的那張去櫃檯前結帳（§4.2）：老闆在講話、老闆選單或櫃檯面板開著、老闆不在櫃檯（宵夜、裁判）＝這次不結帳
+  function crowdOwnerFree() {
+    if ((UI.oSayTill || 0) > Date.now()) return false;
+    var a = app(); if (a && qs('.lb-sheet.float.owner', a)) return false;
+    var X = econ(); try { if (X && X.isOpen && X.isOpen()) return false; } catch (_) {}
+    var o = stg('pos', 'o'), sp = stg('spot', 'counter');
+    return !!(o && sp && !o.hidden && Math.abs(o.x - sp[0]) < 2 && Math.abs(o.y - sp[1]) < 2);
+  }
+  // 那箱架上的一張（run.shop.bins[那箱]；沒有＝不拿）
+  function crowdShelfCard(bin, u) {
+    var r = save && save.run, a = r && r.shop && r.shop.bins && r.shop.bins[bin];
+    if (!Array.isArray(a) || !a.length) return null;
+    var id = a[Math.min(a.length - 1, Math.floor((u || 0) * a.length))];
+    return card(id) ? id : null;
+  }
+  // 畫面 → 導演模式（§3.1 畫面表）：go() 跑完畫面才切
+  function crowdSync(id, p) {
+    if (!UI.crowdOk || !W.DipLabCrowd) return;
+    p = p || {};
+    var r = save && save.run, mode = 'off', o = {};
+    if (id === 'title') mode = firstEver() ? 'off' : 'calm';                     // 第一次＝冷清（接著是序章）；回訪＝0–1 位站著翻
+    else if (id === 'night') {
+      // 第一次玩的那一趟從第 2 位才開（第 1 位前面是教學提示、特價箱、王牌提示）；之後每一趟從第 1 位就開
+      var first = !(save.runs && save.runs.length), from = (C.crowd && C.crowd.firstRunFrom) || 2, stp = r ? E.nextStep(r) : null;
+      if (r && save.prologueDone && !(first && r.pos < from)) {
+        if (stp === 'fight') mode = 'live';
+        else if (stp === 'stall') { mode = 'still'; o.reserve = ['c-pay']; }   // 今天的攤位：原地照翻、不進不出；c-pay 給同業調貨的站主
+      }
+    }
+    else if (id === 'duel') { mode = 'still'; o.duel = true; o.camMs = 760; }   // 開打清對戰區、鏡頭收完還被切頭的先藏
+    else if (id === 'reward') mode = 'still';
+    else if (id === 'scene') mode = p.noCrowd ? 'off' : (p.crowd || 'off');     // 序章、收尾、再挑戰開場＝藏；對決後場景（非序章）＝still
+    else if (id === 'home' || id === 'taipei') { crowdCall('stop', { keep: true }); return; }   // 換店：藏起來、記著誰在哪，回來照放
+    if (mode === 'off') crowdCall('stop'); else crowdCall('start', mode, o);
   }
   // iOS < 15.4 沒有 svh：100vh 會比可視區高。改用可視高。
   function svhFallback() {
