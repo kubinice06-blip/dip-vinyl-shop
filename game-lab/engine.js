@@ -219,7 +219,7 @@
 //            熟客第 6 位起、一般客人位、每輪最多一次（hash01，不吃 run.rng）走到對戰台嗆你；短局（雙方聲望＝上限＝六成）；贏了三張蓋牌挑一張（唱片櫃／包包模式）或 $200；輸了不扣
 //            欄位一律叫 spar（規格寫 enc；run.stats.enc 是翻面的）：run.spar {round, pos, who, state, mode?, loot?, taken?, skipped?}、run.stats.spar、run.stats.c.income.spar
 //            encOffer(run, content) · encView(content, who) · encDef(run, content, who) · encStart(run, content, {apex}) · encFinish(run, content, duel, {reward, owned}) · encVoid(run)
-//            encLoot(run, content, duel, {reward, owned}) · fixEnc(run, content?) · encPolicy(run, content, {policy, reward, owned}) · sparCfg · sparMode
+//            encLoot(run, content, duel, {reward, owned}) · fixEnc(run, content?) · encPolicy(run, content, {policy, reward, owned}) · encPending(run) · sparCfg · sparMode
 //            choose：encOpen／encAccept／encDecline {lapse}／encTake {id}／encSkip。fightSetup(run, content, o)＝主線 startFight 與切磋 encStart 共用的開局參數（你這一邊）
 // Policies  policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
@@ -3300,7 +3300,7 @@
   const SPAR_KEYS = ['offered', 'accepted', 'won', 'lost', 'took', 'cash'];
   const SPAR_MODES = ['shelf', 'bag'];
   const SPAR_POLICIES = ['always', 'never', 'smart', 'cash'];
-  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true };
+  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true, ace: false };
   // content.encounter（沒給的欄位用 SPAR）；slots 只收一般客人位（菁英、藏家位不出：藏家那輪的寶箱不會跟切磋戰利品列連出）
   function sparCfg(content) {
     const s = (content && content.encounter) || {}, X = Object.assign({}, SPAR, s);
@@ -3391,7 +3391,8 @@
     const d = enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: run.seedKey + '#enc', runNo: run.runNo, playerAce: run.ace, tier: run.tier,
       main: ATTRS.includes(R.enc.main) ? R.enc.main : null });
     d.hp = Math.max(1, ceil6(X.short * d.hp));
-    d.ace = null; d.title = null;
+    if (X.ace !== true) d.ace = null;                         // 規格：不帶王牌（encounter.ace true＝照一般客人的機率帶，只給試調強度用；出貨不開）
+    d.title = null;
     return d;
   }
   // encStart(run, content, {apex}) -> {duel, events, enemyId:who, view} | null：run.spar 是這一位的 'fighting'（choose encAccept 之後）才開。
@@ -3502,6 +3503,17 @@
     }
     if (S && S.pos === run.pos && S.round === roundOf(run.pos)) return null;   // 這一位的切磋已經開過（改天、打完、作廢）
     return encOffer(run, content) ? { type: 'encOpen' } : null;
+  }
+  // encPending(run) -> 'offer'|'fighting'|'loot'|null：畫面要處理的切磋（給 4b 少寫一份判斷）。
+  //   'offer'＝這一位的邀請還在等（重新整理照樣在對戰台等）；'fighting'＝打到一半（重新整理＝encVoid 作廢）；'loot'＝打贏還沒收／拿錢（擋「下一位」、重開戰利品列）；
+  //   null＝沒有要處理的（沒開過、改天、沒理他、輸了、作廢、收完）＝照常演主線客人
+  function encPending(run) {
+    const S = run && run.spar;
+    if (!S || typeof S !== 'object') return null;
+    if (S.state === 'offer') return S.pos === run.pos ? 'offer' : null;
+    if (S.state === 'fighting') return 'fighting';
+    if (S.state === 'won' && S.taken == null && !S.skipped) return 'loot';
+    return null;
   }
   // choose 的五種（在 choose 裡 switch；這裡是共用的檢查）：run.spar 是這一位的 offer（接受／改天）
   const sparOfferNow = run => { const S = run.spar; return !!S && S.state === 'offer' && S.pos === run.pos; };
@@ -4546,7 +4558,7 @@
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar,
-    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparMode, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
+    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparMode, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

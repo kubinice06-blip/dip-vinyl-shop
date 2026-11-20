@@ -7,6 +7,7 @@
 //   （十個分類＋三個子曲風區 citypop／indierock／indiepop＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
 //   v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP；這三區看子曲風（卡的 subs，規則 sub），不看第一個曲風。
 //   第 I 波 I-0（SPEC-I §7）：舊段落的 C 關掉第一位升級（firstNeed 0），黃金照舊；#29–#31 的黃金改在 I0OFF(content) 上比、出貨 content 上比變體彼此一致；新規則在 #32。
+//   活店第二階段切磋（SPEC-H §12.1 LE1–LE10、LE12）：#34；出貨 content 的 C.encounter.on false → #34 用 on:true 的拷貝；欄位一律 run.spar（規格的 run.enc）。
 import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
@@ -5067,11 +5068,11 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
 
   // ---- encPolicy ----
   { const r = findOffer('pol-'); let bad = 0;
-    if (J(EN.encPolicy(r, CE, {})) !== J({ type: 'encOpen' })) bad++;
-    EN.choose(r, CE, { type: 'encOpen' });
+    if (J(EN.encPolicy(r, CE, {})) !== J({ type: 'encOpen' }) || EN.encPending(r) !== null) bad++;
+    EN.choose(r, CE, { type: 'encOpen' }); if (EN.encPending(r) !== 'offer') bad++;
     if (EN.encPolicy(r, CE, { policy: 'never' }).type !== 'encDecline' || EN.encPolicy(r, CE, { policy: 'smart' }).type !== 'encAccept') bad++;
     EN.choose(r, CE, { type: 'encAccept' });
-    if (EN.encPolicy(r, CE, {}) !== null) bad++;                          // fighting：呼叫的人去打
+    if (EN.encPolicy(r, CE, {}) !== null || EN.encPending(r) !== 'fighting') bad++;   // fighting：呼叫的人去打
     const s = EN.encStart(r, CE); playOut(s.duel, WIN); EN.encFinish(r, CE, s.duel);
     const L = r.spar.loot.cards, all = id => L.includes(id);
     if (EN.encPolicy(r, CE, { policy: 'smart' }).type !== 'encTake' || EN.encPolicy(r, CE, { policy: 'smart', owned: all }).type !== 'encSkip'
@@ -5081,8 +5082,9 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     const base = EN.bagScore(CE, rb.bag), gains = L.map(id => EN.bagScore(CE, rb.bag.concat([id])) - base), pb = EN.encPolicy(rb, CE, { policy: 'smart' });
     if (Math.max(...gains) > 0.005 ? pb.type !== 'encTake' || gains[L.indexOf(pb.id)] !== Math.max(...gains) : pb.type !== 'encSkip') bad++;
     rb.bag = rb.bag.concat(L); if (EN.encPolicy(rb, CE, { policy: 'smart' }).type !== 'encSkip') bad++;
-    EN.choose(r, CE, { type: 'encSkip' }); if (EN.encPolicy(r, CE, {}) !== null) bad++;
-    ok(bad === 0, 'encPolicy: open → accept／decline → (fighting null) → shelf take not-owned／skip all-owned／always／cash; bag takes the best bagScore gain or skips', bad); }
+    if (EN.encPending(r) !== 'loot') bad++;
+    EN.choose(r, CE, { type: 'encSkip' }); if (EN.encPolicy(r, CE, {}) !== null || EN.encPending(r) !== null) bad++;
+    ok(bad === 0, 'encPolicy＋encPending: open → accept／decline → (fighting null) → shelf take not-owned／skip all-owned／always／cash; bag takes the best bagScore gain or skips', bad); }
   console.log('     LE2 ' + J(SUM.le2) + '；LE5 ' + J(SUM.le5) + '；LE12 ' + J(SUM.le12) + '；keep ' + J(SUM.keep));
 });
 
