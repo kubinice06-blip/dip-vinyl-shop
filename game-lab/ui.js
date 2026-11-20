@@ -6027,7 +6027,8 @@
     if (!R || !V || R.b < V.t + 4 || R.t > V.b - 4) { ic.style.display = 'none'; return; }
     ic.style.display = '';
     var w = ic.offsetWidth || 20;
-    ic.style.left = Math.round(Math.max(V.l + 2, Math.min(V.r - 2, R.r + 14) - w)) + 'px';
+    // 不蓋收音機熱點的中心（真點收音機＝點那一下；375×548 收音機只有 24 px 寬，靠右對齊會蓋到中心 0.2 px → e2e-econ #28 點不到收音機）：左緣至少在中心右邊 4 px
+    ic.style.left = Math.round(Math.max(V.l + 2, R.l + R.w / 2 + 4, Math.min(V.r - 2, R.r + 14) - w)) + 'px';
     ic.style.top = Math.round(Math.max(V.t + 2, R.t - 4)) + 'px';
     if (!mode || mode === 'off' || mode === 'tap') npClose(true);
   }

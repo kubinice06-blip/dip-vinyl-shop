@@ -182,11 +182,11 @@
       var cur = f.music.current && f.music.current();
       if (cur && cur.id === c.id) {
         var prev = S.prev;
-        if (prev && prev.id !== c.id && f.soundOn()) f.music.play(prev, { fadeMs: 1200 });
+        if (prev && prev.id !== c.id && f.soundOn()) f.music.play(prev, { fadeMs: 1200, session: S.prevSess === 'ambient' ? 'ambient' : undefined });
         else if (!prev || prev.id !== c.id) f.music.stop({ fadeMs: 1500 });
       }
     }
-    S.prev = null; S.started = false;
+    S.prev = null; S.prevSess = null; S.started = false;
     try { if (S.lastFocus && S.lastFocus.focus && S.lastFocus.isConnected) S.lastFocus.focus({ preventScroll: true }); } catch (_) {}
     S.lastFocus = null;
     var r = S.resolve; S.resolve = null;
@@ -258,6 +258,7 @@
     S.mask = m; S.card = card; S.started = false;
     var f = FX();
     S.prev = (f && f.music && f.music.current && f.music.playing && f.music.playing()) ? f.music.current() : null;
+    S.prevSess = S.prev && f.music.session ? f.music.session() : null;   // 第 I 波：原本那首是背景音樂（'ambient'）＝關掉時照 'ambient' 接回（跟著 iPhone 靜音鍵）
     D.body.appendChild(m);
     D.body.classList.add('ci-open');
     S.keyH = function (e) { if (e.key === 'Escape' && S.mask) { e.preventDefault(); e.stopPropagation(); close(); } };

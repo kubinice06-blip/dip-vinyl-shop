@@ -479,6 +479,8 @@
       return v;
     },
     volume() { return M.vol; },
+    // 正在放的那首是哪一種 session：'ambient'（背景音樂）｜'playback'（玩家點的、勝利曲、劇本）｜null（沒在放）。唱片資訊關掉時接回原本那首要照原本的 session（第 I 波 §4.2-7）
+    session() { return M.cur ? (M.cur.ambient ? 'ambient' : 'playback') : null; },
     // 原始檔快取留幾首：max(6, min(12, n))（n＝背景音樂佇列長度）
     cacheFor(n) { M.lruMax = Math.max(LRU_MAX, Math.min(LRU_TOP, n | 0)); while (M.cache.size > M.lruMax) M.cache.delete(M.cache.keys().next().value); return M.lruMax; },
     // 這個網址的原始檔已經在快取（抓完了）：佇列排序、行動網路只放快取的
