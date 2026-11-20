@@ -226,6 +226,8 @@ node game-lab/test/shop.test.mjs            # 店家 JSON、唱盤、路線不�
 node game-lab/test/hit.test.mjs             # 命中：形狀＋深度、容錯、遮擋
 node game-lab/test/chars.test.mjs           # 小人
 node game-lab/sim.mjs --n 3000              # 平衡門檻 S1–S9＋HP 聲望單調（任何一條沒過 exit 1）
+node game-lab/sim.mjs --n 4000 --flows smart --fac --ace hall   # 第 D 波三流派（?fac=1）：三派各一支（--ace hall|pearl|heresy）；--nofacpick 只開被動、--facfx 調被動、--apex 同開（換一格）；多印流派被動表
+node game-lab/diffplay.mjs --n 300          # 打法差異（SPEC-D F7）：同一局面三派各算一次，出的不全一樣 ≥25%
 node game-lab/tools/lint-copy.mjs           # 文案：禁用字、原句／店主句逐字、劇本 25 句順序（第一句 11-10 改成開頭旁白）；重產 LINES-REVIEW.md
 node game-lab/tools/check-content.mjs       # 資料形狀、牌組限制、教學步驟、劇本
 node game-lab/tools/check-shops.mjs         # 店家配置、熱點（含 bin:* 與 buildHotList 交叉比對）、任兩站位的路線不穿家具

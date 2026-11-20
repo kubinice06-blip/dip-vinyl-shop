@@ -1887,14 +1887,21 @@
         okb.classList.toggle('off', !!peekT && nw);              // 一次一張、滑到鎖住的那派：大鈕按不下去（按了只響一下）
         okb.setAttribute('aria-disabled', okb.classList.contains('off') ? 'true' : 'false');
       }
+      // 讓高（棒二測試 e2e-fac #1b）：roomForSheet 的 reward／full 鏡頭舞台最矮約 230–234 px，面板要 vh−32−234～vh−32−210 那一段（390×664 換派、熟練那行沒折行＝415）
+      //   讓不出來、面板捲 13 px＝跟 apexPickPanel 的 fit() 一樣收成對決那條（面板照內容高）
+      function fit() {
+        roomForSheet(s);
+        var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight, nat = Math.ceil(naturalH(s) + 4);
+        if (UI.camName !== 'strip' && vh - 32 - nat < 240) cam('strip', 'reward', 380, null, nat);
+      }
       function pick(t, quiet) {
-        if (open.indexOf(t) < 0) { if (peekT !== t) { peekT = t; if (!quiet) sfx('tick'); mark(); if (s.scrollHeight > s.clientHeight + 1) roomForSheet(s); } return; }   // 鎖住的派：不選，說明怎麼解鎖（說明那行長出來放不下＝再讓一次高）
+        if (open.indexOf(t) < 0) { if (peekT !== t) { peekT = t; if (!quiet) sfx('tick'); mark(); if (s.scrollHeight > s.clientHeight + 1) fit(); } return; }   // 鎖住的派：不選，說明怎麼解鎖（說明那行長出來放不下＝再讓一次高）
         var was = sel; peekT = null; sel = t;
         if (was !== t && !quiet) sfx('select');
         mark();
       }
       mark();
-      roomForSheet(s);                      // 三欄（或一張）＋說明＋大鈕：舞台讓出放得下的高（同 acePickPanel）
+      fit();                                // 三欄（或一張）＋說明＋大鈕：舞台讓出放得下的高（同 acePickPanel）
       later(function () { if (s.isConnected) { showCard(sel, false); mark(); } }, 0);
       var scT = 0;
       rail.addEventListener('scroll', function () {
