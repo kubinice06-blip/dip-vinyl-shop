@@ -1794,7 +1794,9 @@
       live: '樂歷 這一趟 至少 +{n}',                                // 攤位頂列細條（engine careerLive；只顯示、一趟結束才入帳）
       liveUp: 'Lv{n}！這一趟結束就能點天賦',                        //   跨過一級的那一刻（金色閃、停 3 秒、點了收；不另跳老闆泡泡）
       recurve: '樂歷算法改了，補你 {n} 級。',                        // 開機吐司（engine careerRecurve 的 missing 有東西：補抽那幾級）
-      lvList: '升到 Lv{n}！', lvNew: '新開：{list}'                 // 一次升好幾級合成的那張清單卡（標題、新開的階梯用「、」接）
+      lvList: '升到 Lv{n}！', lvNew: '新開：{list}',                // 一次升好幾級合成的那張清單卡（標題、新開的階梯用「、」接）
+      lvPts: '天賦點 +{n}', drawGotN: '抽到 {n} 張，收進唱片櫃',     //   清單卡標題右邊（升了幾級＝多幾點）、抽到的盤那行（一張照舊 drawGot）
+      liveLv: 'Lv{n}'                                               // 攤位頂列細條的進度條前面（careerLive 的 level：這一趟結束會到的等級）
     }
   };
   C.careerTag = '新';
