@@ -1772,8 +1772,8 @@
       partPos: '走了 {k} 位 +{n}', partStreak: '最多連贏 {k} 場 +{n}', partRecord: '破紀錄 +{n}', partRoute: '路線 +{n}', partCut: '（已到上限）',
       partTier: '×{m} 第 {k} 階', partLow: '還沒走到第 {n} 位：樂歷 ×{m}', partProf: '{title} 蓋了 {n} 個章', partOff: '這一趟關樂歷（樂歷照拿）',
       routeCap: '路線樂歷已到上限',
-      // 主鈕之後的過場卡（一次一張、最多 3 張，其餘合成一句）
-      lvUp: '樂歷 Lv {n}！天賦點 +1', lvMore: '再升 {n} 級', drawGot: '抽到一張，收進唱片櫃', ladderOpen: '開了：{name}', goTalent: '去點天賦',
+      // 主鈕之後的過場卡（一次升一級＝一張；升兩級以上合成一張清單卡 lvList，第 I 波 I-0）
+      lvUp: '樂歷 Lv {n}！天賦點 +1', drawGot: '抽到一張，收進唱片櫃', ladderOpen: '開了：{name}', goTalent: '去點天賦',
       profUp: '{title} 熟練 Lv{n}',
       // 開機入帳（careerDeposit）的吐司
       depositFirst: '老闆：你之前的樂歷我都記著呢。樂歷 +{n}，升到 Lv {to}。', depositMore: '老闆：上次的樂歷補記給你。樂歷 +{n}。',

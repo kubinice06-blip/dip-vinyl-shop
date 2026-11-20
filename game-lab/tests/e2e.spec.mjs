@@ -901,7 +901,7 @@ async function run() {
       try {
         await seededContinue4(page, { ace: 'pearl', idx: 1 });
         await waitScreen(page, 'night'); await sleep(500);
-        // 等級 1 要 4、等級 2 要 5：經驗 8＋打贏一般 2＝10 → 連升兩級
+        // 第 I 波 I-0（SPEC-I §7.2）：等級 1 要 2（firstNeed）、等級 2 要 5：經驗 8＋打贏一般 2＝10 → 連升兩級（剩 3）。升到 Lv2 那次不自動加聲望上限（小字不出）、Lv3 那次照舊出
         await page.evaluate(() => { window.__lab.run.xp = 8; });
         await jsClick(page, '[data-a=go]');
         await duelReady(page);
@@ -924,15 +924,15 @@ async function run() {
         await jsClick(page, '.lb-sheet.level [data-lv="hp"]');
         const p2 = await page.waitForFunction(() => { const s = document.querySelector('.lb-sheet.level [data-lv]'); return s && window.__lab.run.levelUps === 1 && window.__lab.run.picks.length === 1; }, null, { timeout: 10000 }).then(() => true, () => false);
         await sleep(800);
-        const L2 = await page.evaluate(() => ({ title: document.querySelector('.lb-sheet.level h3').textContent, maxHp: window.__lab.run.maxHp, hp: window.__lab.run.hp }));
+        const L2 = await page.evaluate(() => ({ title: document.querySelector('.lb-sheet.level h3').textContent, sub: document.querySelector('.lb-sheet.level .hd .sub').textContent, maxHp: window.__lab.run.maxHp, hp: window.__lab.run.hp }));
         await jsClick(page, '.lb-sheet.level [data-lv="atk"]');
         const night = await waitScreen(page, 'night', 10000);
         await sleep(500);
         const fin = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, level: R.level, picks: R.picks.slice(), atk: R.atk, ups: R.levelUps }; });
         const ok = p1 && L1.title === L1.want && L1.lv.length === 3 && /^(atk|def)$/.test(L1.lv[0]) && L1.lv.slice().sort().join() === 'atk,def,hp' && L1.nm.every(n => L1.names.includes(n)) && !L1.cancel &&
-          L1.sub.indexOf(L1.autoSub) === 0 && L1.level === 3 && L1.ups === 2 && L1.btnBottom <= L1.vh && scrollOk(sc1) && back && p2 && L2.maxHp === before.maxHp + 2 && L2.hp === before.hp + 2 &&
+          L1.sub.indexOf(L1.autoSub) < 0 && L2.sub.indexOf(L1.autoSub) === 0 && L1.level === 3 && L1.ups === 2 && L1.btnBottom <= L1.vh && scrollOk(sc1) && back && p2 && L2.maxHp === before.maxHp + 2 && L2.hp === before.hp + 2 &&
           night && fin.pos === 3 && fin.level === 3 && fin.picks.join() === 'hp,atk' && fin.atk === 1 && fin.ups === 0;
-        record(46, size, ok, `1st「${L1.title}」${L1.lv} ${JSON.stringify(L1.nm)} sub「${L1.sub}」 Lv ${L1.level} ups ${L1.ups}; bottom ${Math.round(L1.btnBottom)} ≤ ${L1.vh}; scroll ${JSON.stringify(sc1)}; reload → panel ${back}; hp pick ${before.maxHp}→${L2.maxHp}; 2nd「${L2.title}」; → night ${night} ${JSON.stringify(fin)}`);
+        record(46, size, ok, `1st「${L1.title}」${L1.lv} ${JSON.stringify(L1.nm)} sub「${L1.sub}」 2nd sub「${L2.sub}」 Lv ${L1.level} ups ${L1.ups}; bottom ${Math.round(L1.btnBottom)} ≤ ${L1.vh}; scroll ${JSON.stringify(sc1)}; reload → panel ${back}; hp pick ${before.maxHp}→${L2.maxHp}; 2nd「${L2.title}」; → night ${night} ${JSON.stringify(fin)}`);
       } catch (e) { record(46, size, false, 'error ' + e.message); }
       await ctx.close();
     }

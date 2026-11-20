@@ -542,7 +542,8 @@ for (const [k, v] of Object.entries(C.daily || {})) {
 }
 // 第 D 波棒一：樂歷畫面字（C.career.ui、careerTag；樂歷頁、標題第二行、結算那行＋明細、過場卡、入帳吐司、演唱會、說情）＋新手推薦標（C.aceNewbie、aceNewbieTag）。每句 ≤40 字（不算 {x}）
 {
-  const CSC = [[/^(lv|drawGot|ladderOpen|goTalent|profUp|card)/, '樂歷・過場卡（結算主鈕之後、開機入帳之後；一次一張）'], [/^deposit/, '樂歷・開機入帳的吐司（C 波記的樂歷）'],
+  const CSC = [[/^live/, '樂歷・攤位頂列細條（一趟裡就看得到樂歷漲；第 I 波 I-0）'], [/^recurve/, '樂歷・開機補級吐司（曲線改了；第 I 波 I-0）'],
+    [/^(lv|drawGot|ladderOpen|goTalent|profUp|card)/, '樂歷・過場卡（結算主鈕之後、開機入帳之後；一次一張，一次升兩級以上合成一張清單卡）'], [/^deposit/, '樂歷・開機入帳的吐司（C 波記的樂歷）'],
     [/^(endLine|tierPre|part|routeCap|gainTitle|toPage)/, '樂歷・結算頁那一行＋明細'], [/^(line|shelfBtn|bestTier)/, '樂歷・標題第二行、唱片櫃頁頭'],
     [/^off/, '樂歷・關掉樂歷（Lv10 起、只在樂歷頁）'], [/^(ladder|drawRow)/, '樂歷・樂歷頁的解鎖階梯'], [/^gig/, '樂歷・演唱會買票面板'], [/^plea/, '樂歷・來客條說情、備用說情'],
     [/^srcLexp/, '樂歷・唱片櫃來源'], [/./, '樂歷・樂歷頁（天賦、重配、熟練度）']];

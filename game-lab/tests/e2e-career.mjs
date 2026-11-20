@@ -37,11 +37,22 @@
 //   11 新手第一次挑派（SPEC-D §3.9、§14-1 B）：序章猜錯（猜異端那張）→ 挑王牌面板預設停冷門流、冷門「新手推薦」、經典「前期較難」、異端不標、名號「經典流・經 7」；
 //      猜對（今晚是經典那張）→ 停在經典流（標照出）；不是第一次挑（點老闆換）沒有標
 //   12 放棄那一趟（棒一審查）：標題連按兩下「重新推門」→ runs 那筆 abandon、第 1 位 0 場＝樂歷 0；第 4 位還沒打＝只算打過的 3 位、沒有新手 ×2（gain.quit 1）
+//      （第 I 波 I-0：種一趟之前的紀錄＝不是新帳號第一趟）
+//   第 I 波 I-0（scratchpad v5/wave-i SPEC-I §7.2、§7.3、§7.5、§7.7；build0/CONTRACT.md）。樂歷曲線照新表（前 7 級 100／150／250／350／500／650／800）：
+//   13 第一趟保底：新帳號（runs 空）第一趟第 1 位就輸 → 樂歷 +100（＝升到 Lv2）、runs[k].gain.first、明細最後一行「第一趟：樂歷保底到 Lv2」、「再挑戰一趟」→ Lv2 那張；
+//      13b 第一趟走很遠（一次升兩級以上）→ 一張清單卡「升到 Lv n！」＋「天賦點 +k」＋抽到的 k 張縮圖（「抽到 k 張，收進唱片櫃」）＋去點天賦
+//   14 攤位頂列樂歷細條（不快轉）：第一次畫（重新整理後的 run）只畫不閃「樂歷 這一趟 至少 +n」＋Lv1＋進度條；推進到跨一級 → 金色「Lv2！這一趟結束就能點天賦」、
+//      停 ≥3 秒（3 秒內點不收、之後點了收回原本那行）、沒有另跳老闆泡泡、career.xp 不動（只顯示）；攤位的列都在畫面裡、不捲
+//   15 升級章（不快轉、autoNext 關＝真玩家）：第 1 位打贏 →「升級！Lv2」章停在盤面上（≥3 秒、畫面還是對決）→ 點了 → 戰利品列 → 升級面板「升到 Lv2：挑一項，這一趟都有效」、
+//      沒有「聲望上限 +1（自動）」、三格 品味→底氣→聲望上限、老闆說一次「打贏就會升級…」（save.seen.lv1）；挑品味 → 聲望上限不變；第 2 位打贏（2/5 經驗）沒有章
+//   16 曲線改了補級：棒一帳號 xp 2,000（舊曲線 Lv6、drawn 2–6）→ 開機吐司「樂歷算法改了，補你 1 級。」、Lv7 補抽一張（drawn 有 7）、過場卡 Lv7；
+//      重新整理不再吐司、沒有卡；樂歷頁 Lv7、天賦點 6、階梯只有做好的格（沒有「之後開放」）
+//   CAREER_SHOTS＝截圖資料夾（dpr 2；給店主：第 1 位打完的升級章、第一趟結算升級、樂歷頁）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, SEED, jsClick, tapAt, waitScreen, noScroll, scrollOk, openTitle, seedRun,
-  answerBargain, watchSay, tapReady } from './e2e-lib.mjs';
+  answerBargain, watchSay, tapReady, duelReady } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const REPO = path.resolve(HERE, '../..');
@@ -54,10 +65,18 @@ const fill = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ?
 const errs = page => (page._errors || []).filter(e => !/favicon/.test(e));
 const errTx = page => `錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ') : ''}`;
 const J = x => JSON.stringify(x);
+const XP2 = 1340;                                                                       // #2 的起點（新曲線 Lv5；Lv6 要 1,350）
+const SHOTS = process.env.CAREER_SHOTS || '';
+async function shot(page, size, name) { if (SHOTS) { try { await page.screenshot({ path: path.join(SHOTS, `${size}-${name}.png`) }); } catch (_) {} } }
+const RUN0 = { seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 1, bestStreak: 0, taken: 0, wins: 0, level: 1, checkpoints: [] };   // 「之前打過一趟」
 
 // ---- 規格公式（SPEC-D §2.1、§2.2、§2.6；寫死） ----
 const capped = L => { const B = L.base | 0, v = k => L[k] | 0; return { base: B, route: Math.min(Math.min(v('gig'), Math.floor(0.25 * B)) + v('home') + v('promo') + v('packet') + v('demo'), Math.floor(0.40 * B)) }; };
-const levelOf = xp => { let lv = 1; for (;;) { const need = lv < 10 ? 100 * lv : 1000; if (xp < need) return lv; xp -= need; lv++; } };
+// 第 I 波 I-0（SPEC-I §7.3 c）：前 7 級照表 100／150／250／350／500／650／800（累計 Lv2 100、Lv5 850、Lv7 2,000、Lv8 2,800 不變），之後照舊 100n（n<10）、1,000
+const CURVE = [100, 150, 250, 350, 500, 650, 800];
+const needOf = lv => lv <= CURVE.length ? CURVE[lv - 1] : lv < 10 ? 100 * lv : 1000;
+const levelOf = xp => { let lv = 1; for (;;) { const need = needOf(lv); if (xp < need) return lv; xp -= need; lv++; } };
+const xpAt = lv => { let s = 0; for (let n = 1; n < lv; n++) s += needOf(n); return s; };
 // 一趟：ent＝runs[k]（reached、bestStreak、from、lexp）、best＝開局前的最遠；o.quit＝放棄（沒有 ×2）、o.open＝放棄時站著那一位沒打完（少算那一位）
 //   新手 ×2 只給「這一趟沒到第 10 位、帳號也還沒走到過第 10 位（best < 10）、不是放棄」的那一趟（棒一審查：放棄／故意輸在第 9 位刷樂歷）
 function gainSpec(ent, best, o = {}) {
@@ -110,6 +129,8 @@ async function seedCareer(page, o) {
   await page.evaluate(o => {
     const E = window.DipLabEngine, Cn = window.DipLabContent;
     const career = o.career === null ? null : Object.assign({ key: 'e2e-career', xp: 0, spent: {}, off: false, prof: { hall: 0, pearl: 0, heresy: 0 }, tree: { hall: {}, pearl: {}, heresy: {} }, drawn: [], banked: true, lastGain: null }, o.career || {});
+    // 第 I 波 I-0：沒指定 drawn＝到現在這一級都抽過（新曲線；不然開機會跑「樂歷算法改了，補你 n 級」那段，#16 另測）
+    if (career && !(o.career && 'drawn' in o.career)) { const lv = E.careerLevel(Cn, career.xp).level; career.drawn = []; for (let n = 2; n <= lv; n++) career.drawn.push(n); }
     let r = null;
     const ace = (o.run && o.run.ace) || o.lastAce || 'hall';
     if (o.run) {
@@ -217,7 +238,7 @@ async function runSize(browser, w, h) {
         lexpCards: Object.keys(S.shelf).filter(id => S.shelf[id].own && S.shelf[id].src === 'lexp').length, bak8: localStorage.getItem('dipGameLab_v1.bak8'), v: JSON.parse(localStorage.getItem('dipGameLab_v1')).v,
         storedXp: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.xp }; });
       const t1 = await toasts(page);
-      // 過場卡：一張一張點，記每張的標題、張數標、最後一張的鈕
+      // 過場卡：一張一張點，記每張的標題、張數標、最後一張的鈕（第 I 波 I-0：一次升兩級以上合成一張清單卡「升到 Lv5！」）
       const cards = [];
       for (let i = 0; i < 6 && await page.waitForSelector('.lb-sheet.cxcard', { timeout: i ? 1500 : 4000 }).then(() => true, () => false); i++) {
         cards.push(await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'); return { hd: (s.querySelector('.cx-hd b') || {}).textContent || '', n: (s.querySelector('.cx-n') || {}).textContent || '', got: !!s.querySelector('.cx-got'),
@@ -234,8 +255,7 @@ async function runSize(browser, w, h) {
       const zero = L => ['base', 'gig', 'home', 'promo', 'packet', 'demo'].every(k => L[k] === 0) && L.runs === 2;
       const ok = t1.includes(fill(x.depositFirst, { n: total, to: toLv })) && d.xp === total && d.storedXp === total && J(d.prof) === J(prof) && d.banked === true && zero(d.lb) && J(d.runsB) === '[1,1]' &&
         J(d.drawn) === J([2, 3, 4, 5].filter(n => n <= toLv)) && d.lexpCards === 4 && d.v === 8 && d.bak8 === raw0 &&
-        cards.length === 3 && cards[0].hd === fill(x.lvUp, { n: 2 }) && cards[1].hd === fill(x.lvUp, { n: 3 }) && cards[2].hd === fill(x.lvMore, { n: 2 }) && cards.every((c, i) => c.n === (i + 1) + '／3' && c.got && c.inView) &&
-        cards[2].talent && !cards[0].talent && line && line.t === lineWant && line.dot &&
+        cards.length === 1 && cards[0].hd === fill(x.lvList, { n: toLv }) && cards[0].n === '' && cards[0].got && cards[0].inView && cards[0].talent && line && line.t === lineWant && line.dot &&
         !t2.some(t => t === fill(x.depositFirst, { n: total, to: toLv }) || t.startsWith(fill(x.depositMore, { n: '' }).slice(0, 8))) && d2.xp === total && !d2.card && zero(d2.lb) && d2.v === 8;
       record(1, size, ok && !errs(page).length, `入帳 ${J(Object.assign({}, d, { bak8: d.bak8 === raw0 }))}（要 xp ${total}、Lv${toLv}、熟練 ${J(prof)}）；吐司 ${J(t1)}；過場卡 ${J(cards)}；第二行 ${J(line)}（要「${lineWant}」）；重新整理 ${J(d2)} 吐司 ${J(t2)}；${errTx(page)}`);
     } catch (e) { record(1, size, false, 'error ' + e.message); }
@@ -247,7 +267,7 @@ async function runSize(browser, w, h) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
       await openTitle(page, Q());
-      await seedCareer(page, { career: { xp: 990 }, run: { ace: 'hall', idx: 3 }, runs: [{ seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 2, bestStreak: 1, taken: 0, wins: 1, level: 1, checkpoints: [] }],
+      await seedCareer(page, { career: { xp: XP2 }, run: { ace: 'hall', idx: 3 }, runs: [{ seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 2, bestStreak: 1, taken: 0, wins: 1, level: 1, checkpoints: [] }],
         best: { far: 2, checkpoints: [], bestStreak: 1 } });
       await openTitle(page, Q()); await jsClick(page, '[data-a=cont]');
       await nightReady(page);
@@ -273,7 +293,7 @@ async function runSize(browser, w, h) {
       const nPos = e0.ent.reached - from + 1;
       const liWant = [fill(x.partPos, { k: nPos, n: 15 * nPos })].concat(e0.ent.bestStreak > 0 ? [fill(x.partStreak, { k: e0.ent.bestStreak, n: 8 * e0.ent.bestStreak })] : []).concat(spec.record ? [fill(x.partRecord, { n: spec.record })] : [])
         .concat(spec.route ? [fill(x.partRoute, { n: spec.route })] : []).concat([fill(x.partLow, { n: 10, m: 2 })]);
-      // 再挑戰一趟 → 過場卡（xp 990＋這一趟 ≥1000＝Lv5）→ 去點天賦
+      // 再挑戰一趟 → 過場卡（xp 1340＋這一趟 ≥1350＝Lv6；第 I 波 I-0 新曲線）→ 去點天賦
       await jsClick(page, '[data-a=again]');
       const up = await page.waitForSelector('.lb-sheet.cxcard', { timeout: 4000 }).then(() => true, () => false);
       await sleep(400);
@@ -304,13 +324,13 @@ async function runSize(browser, w, h) {
       await jsClick(page, '[data-a=again]'); await sleep(2200);
       const after = await C(page, () => ({ card: !!document.querySelector('.lb-sheet.cxcard'), scr: window.__lab.screen() }));
       const total = e0.ent.gain && e0.ent.gain.total;
-      const ok = ended && e0.cxp === fill(x.endLine, { n: spec.total }) && e0.bar && total === spec.total && e0.eng === spec.total && e0.xp === 990 + spec.total && e0.sh - e0.ch <= 1 && scrollOk(sc) &&
-        e0.btn && e0.btn.top >= 0 && e0.btn.bottom <= h && e0.btn.h >= 44 && e0.drawn.includes(5) &&
+      const ok = ended && e0.cxp === fill(x.endLine, { n: spec.total }) && e0.bar && total === spec.total && e0.eng === spec.total && e0.xp === XP2 + spec.total && e0.sh - e0.ch <= 1 && scrollOk(sc) &&
+        e0.btn && e0.btn.top >= 0 && e0.btn.bottom <= h && e0.btn.h >= 44 && e0.drawn.includes(6) && levelOf(e0.xp) === 6 &&
         e1.xp === e0.xp && e1.cxp === e0.cxp && m && m.h1 === fill(x.gainTitle, { n: spec.total }) && J(m.li) === J(liWant) && m.page &&
-        up && k0 && k0.hd === fill(x.lvUp, { n: 5 }) && k0.got === x.drawGot && k0.cv === 1 && k0.talent === x.goTalent && k0.n === '' && k1.page && k1.scr === 'end' && !k1.card && k1.shelfLexp.length === 1 &&
+        up && k0 && k0.hd === fill(x.lvUp, { n: 6 }) && k0.got === x.drawGot && k0.cv === 1 && k0.talent === x.goTalent && k0.n === '' && k1.page && k1.scr === 'end' && !k1.card && k1.shelfLexp.length === 1 &&
         scr2 === 'end' && e2.xp === e0.xp && e2.end && e3.xp === e0.xp && e3.cxp === e0.cxp && !after.card && after.scr !== 'end';
       const okW = worst.sh - worst.ch <= 1 && worst.xp === e0.xp && worst.close && worst.cps && worst.keep && scrollOk(scW) && worst2.sh - worst2.ch <= 1 && worst2.xp === e0.xp && worst2.close && worst2.cps && !worst2.keep && worst2.wall && scrollOk(scW2);
-      record(2, size, ok && !errs(page).length, `結算「${e0.cxp}」gain ${J(e0.ent.gain)} 引擎 ${e0.eng}、規格 ${J(spec)}、xp 990→${e0.xp}、捲 ${e0.sh}/${e0.ch} ${J(sc)}、鈕 ${J(e0.btn)}；再畫 ${J(e1)}；明細 ${J(m)}（要 ${J(liWant)}）；` +
+      record(2, size, ok && !errs(page).length, `結算「${e0.cxp}」gain ${J(e0.ent.gain)} 引擎 ${e0.eng}、規格 ${J(spec)}、xp ${XP2}→${e0.xp}、捲 ${e0.sh}/${e0.ch} ${J(sc)}、鈕 ${J(e0.btn)}；再畫 ${J(e1)}；明細 ${J(m)}（要 ${J(liWant)}）；` +
         `過場卡 ${up} ${J(k0)} → 去點天賦 ${J(k1)} → 關頁 ${scr2}；重新整理 ${J(e2)} → 看上一趟 ${J(e3)}；再一趟 ${J(after)}；${errTx(page)}`);
       record('2b', size, okW, `結算最擠（輸給誰＋翻盤＋中繼點）＋帶走一張 ${J(worst)} ${J(scW)}；＋都有了（那面牆）${J(worst2)} ${J(scW2)}`);
     } catch (e) { record(2, size, false, 'error ' + e.message); record('2b', size, false, 'error ' + e.message); }
@@ -333,7 +353,8 @@ async function runSize(browser, w, h) {
         const ids = ['atk', 'def', 'hp', 'xp', 'plea', 'money', 'pay', 'rare', 'piggy', 'reroll', 'ban', 'intel'];
         const rows = {}; ids.forEach(id => { rows[id] = row(id); });
         return { lv: (pg.querySelector('.cx-head .lv') || {}).textContent, pts: (pg.querySelector('.cx-head .pts') || {}).textContent, later: (pg.querySelector('.cx-later') || {}).textContent || '', off: !!pg.querySelector('[data-a=off]'),
-          respec: !(pg.querySelector('[data-a=respec]') || {}).disabled, rows, safety: !!pg.querySelector('.cx-row.auto'), ladder: pg.querySelectorAll('.cx-ladder li').length };
+          respec: !(pg.querySelector('[data-a=respec]') || {}).disabled, rows, safety: !!pg.querySelector('.cx-row.auto'), ladder: pg.querySelectorAll('.cx-ladder li').length,
+          ladSoon: pg.querySelectorAll('.cx-ladder li.soon').length + [...pg.querySelectorAll('.cx-ladder li')].filter(li => /之後開放/.test(li.textContent)).length };
       });
       const sc0 = await noScroll(page);
       // 真點＋開局錢（捲到看得到再點）×3
@@ -362,14 +383,14 @@ async function runSize(browser, w, h) {
       const b1 = await C(page, () => ({ spent: Object.assign({}, window.__lab.save.career.spent), pts: document.querySelector('.lb-page .cx-head .pts').textContent, def: !document.querySelector('.lb-page [data-buy="def"]').disabled,
         atkCost: document.querySelector('.lb-page .cx-row[data-id="atk"] .st').textContent }));
       const R = p0 && p0.rows, lock8 = ['atk', 'def', 'hp', 'xp', 'rare'];
-      const ok = p0 && p0.lv === fill(x.title, { n: 6 }) && p0.pts === fill(x.points, { n: 5 }) && p0.later === fill(x.powerLater, { n: 8 }) && !p0.off && !p0.respec && p0.safety && p0.ladder >= 7 &&
+      const ok = p0 && p0.lv === fill(x.title, { n: 7 }) && p0.pts === fill(x.points, { n: 6 }) && p0.later === fill(x.powerLater, { n: 8 }) && !p0.off && !p0.respec && p0.safety && p0.ladder === 7 && p0.ladSoon === 0 &&
         lock8.every(id => R[id] && /lock/.test(R[id].cls) && R[id].buy === false && R[id].st === fill(x.lock, { n: 8 })) && R.plea && /lock/.test(R.plea.cls) && R.plea.st === fill(x.lock, { n: 20 }) && R.plea.buy === false &&
         ['money', 'pay'].every(id => R[id] && R[id].cls === '' && R[id].mo === x.moneyOnly && R[id].buy === true && R[id].st === fill(x.cost, { n: 1 })) &&
         ['piggy', 'reroll', 'ban', 'intel'].every(id => R[id] && /soon/.test(R[id].cls) && R[id].buy === null && R[id].st === x.soon) &&
         Object.values(R).every(r => r && r.h >= 44 && (!r.bw || (r.bw[0] >= 44 && r.bw[1] >= 44))) && scrollOk(sc0) &&
-        a1.spent.money === 3 && J(a1.stored) === J(a1.spent) && a1.pts === fill(x.points, { n: 2 }) && !a1.money.buy && a1.money.st === x.maxed &&
-        a2.spent.pay === 1 && a2.pts === fill(x.points, { n: 1 }) && a3.spent.money === 2 && a3.pts === fill(x.points, { n: 2 }) && a3.money.buy &&
-        J(a4.spent) === '{}' && J(a4.stored) === '{}' && a4.pts === fill(x.points, { n: 5 }) && t4.includes(x.respecDone) && lockEng === 'locked,locked,locked,locked,locked,locked' &&
+        a1.spent.money === 3 && J(a1.stored) === J(a1.spent) && a1.pts === fill(x.points, { n: 3 }) && !a1.money.buy && a1.money.st === x.maxed &&
+        a2.spent.pay === 1 && a2.pts === fill(x.points, { n: 2 }) && a3.spent.money === 2 && a3.pts === fill(x.points, { n: 3 }) && a3.money.buy &&
+        J(a4.spent) === '{}' && J(a4.stored) === '{}' && a4.pts === fill(x.points, { n: 6 }) && t4.includes(x.respecDone) && lockEng === 'locked,locked,locked,locked,locked,locked' &&
         tl.scr === 'title' && !tl.page && tl.dot && b0.lv === fill(x.title, { n: 9 }) && !b0.later && !/lock/.test(b0.atkCls) && b0.atk && !b0.plea &&
         b1.spent.atk === 1 && b1.pts === fill(x.points, { n: 2 }) && !b1.def && b1.atkCost === fill(x.cost, { n: 12 });
       record(3, size, ok && !errs(page).length, `樂歷頁 ${J(p0)} ${J(sc0)}；開局錢 ×3 ${J(a1)}；酬勞 ${J(a2)}；退一級 ${J(a3)}；重配 ${J(a4)} 吐司 ${J(t4)}；引擎買鎖住的 ${lockEng}；關頁 ${J(tl)}；Lv9 ${J(b0)} → 品味 ${J(b1)}；${errTx(page)}`);
@@ -698,18 +719,194 @@ async function runSize(browser, w, h) {
       const { ctx, page } = await newPage(browser, w, h);
       try {
         await openTitle(page, Q());
-        await seedCareer(page, { career: { xp: 0 }, run: { ace: 'hall', idx, set: { bestStreak: streak, streak } }, runs: [] });
+        await seedCareer(page, { career: { xp: 0 }, run: { ace: 'hall', idx, set: { bestStreak: streak, streak } }, runs: [RUN0] });   // 第 I 波 I-0：有一趟之前的（新帳號第一趟保底 #13 另測）
         await openTitle(page, Q()); await sleep(400);
         const b0 = await C(page, () => ({ xp: window.__lab.save.career.xp, pos: window.__lab.run.pos, cont: !!document.querySelector('[data-a=cont]') }));
         await jsClick(page, '[data-a=push]'); await sleep(500); await jsClick(page, '[data-a=push]'); await sleep(1500);
         const a = await C(page, () => { const S = JSON.parse(localStorage.getItem('dipGameLab_v1')), L = S.runs[S.runs.length - 1] || {}; return { xp: S.career.xp, result: L.result, reached: L.reached, gain: L.gain || null, runs: S.runs.length }; });
         const spec = gainSpec({ reached: a.reached, bestStreak: streak, lexp: {} }, 0, { quit: true, open: true });
         out[label] = Object.assign({ b0, want: want0, spec: spec.total }, a, { errs: errs(page).length });
-        out[label].ok = b0.cont && b0.pos === idx + 1 && a.result === 'abandon' && a.runs === 1 && a.gain && a.gain.total === want0 && spec.total === want0 && a.gain.mul === 1 && a.gain.quit === 1 && a.xp === want0 && !errs(page).length;
+        out[label].ok = b0.cont && b0.pos === idx + 1 && a.result === 'abandon' && a.runs === 2 && a.gain && a.gain.total === want0 && spec.total === want0 && a.gain.mul === 1 && a.gain.quit === 1 && !a.gain.first && a.xp === want0 && !errs(page).length;
       } catch (e) { out[label] = { error: e.message, ok: false }; }
       await ctx.close();
     }
     record(12, size, out.pos1.ok && out.pos4.ok, `第 1 位 0 場放棄 ${J(out.pos1)}；第 4 位還沒打就放棄 ${J(out.pos4)}`);
+  }
+
+  // ---------------------------------------------------------------- 13 第一趟保底（SPEC-I §7.3 a）＋13b 清單卡（§7.3 d）
+  if (want(13)) {
+    for (const [label, jump, streak] of [['13', 0, 0], ['13b', 46, 20]]) {
+      const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+      try {
+        await openTitle(page, Q());
+        await seedCareer(page, { career: { xp: 0 }, run: { ace: 'hall', idx: 0 }, runs: [] });
+        await openTitle(page, Q()); await jsClick(page, '[data-a=cont]'); await nightReady(page);
+        const x = await CU(page);
+        if (jump) await C(page, ([j, k]) => { window.__lab.jump(j); const r = window.__lab.run; r.bestStreak = k; r.streak = k; window.__lab.money(r.money); window.__lab.go('night'); }, [jump, streak]);
+        if (jump) await nightReady(page);
+        await C(page, () => window.__lab.loseNext(1, { noRetry: true }));
+        await jsClick(page, '[data-a=go]');
+        const ended = await loseToEnd(page);
+        await sleep(600);
+        const e0 = await C(page, () => { const S = window.__lab.save, b = document.querySelector('.lb-cxp'); return { cxp: b ? b.querySelector('.t').textContent : null, xp: S.career.xp, ent: S.runs[S.runs.length - 1], runs: S.runs.length }; });
+        await shot(page, size, label === '13' ? '6-first-end' : '8-first-far-end');
+        const spec = gainSpec(e0.ent, 0), total = Math.max(spec.total, xpAt(2)), lv = levelOf(total);
+        await jsClick(page, '[data-a=cxp]'); await sleep(500);
+        const m = await C(page, () => { const g = document.querySelector('.lb-modal .cx-gain'); return g ? { h1: g.querySelector('.lb-h1').textContent, li: [...g.querySelectorAll('.cx-parts li')].map(t => t.textContent) } : null; });
+        if (label === '13') await shot(page, size, '7-first-detail');
+        await jsClick(page, '.lb-modal [data-x]'); await sleep(400);
+        await jsClick(page, '[data-a=again]');
+        const up = await page.waitForSelector('.lb-sheet.cxcard', { timeout: 4000 }).then(() => true, () => false);
+        await sleep(500);
+        const k0 = await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'); if (!s) return null; const b = s.querySelector('.lb-btn[data-a=next]').getBoundingClientRect();
+          return { hd: (s.querySelector('.cx-hd b') || {}).textContent, sub: (s.querySelector('.cx-hd .sub') || {}).textContent || '', got: (s.querySelector('.cx-got b') || {}).textContent || '', cv: s.querySelectorAll('.cx-got .lb-cv').length,
+            talent: !!s.querySelector('[data-a=talent]'), n: (s.querySelector('.cx-n') || {}).textContent || '', inView: b.top >= 0 && b.bottom <= innerHeight && b.height >= 44 }; });
+        await shot(page, size, label === '13' ? '7b-first-card' : '9-first-listcard');
+        const drawn = await C(page, () => window.__lab.save.career.drawn.slice());
+        const firstLine = fill(x.partFirst, { n: 2 });
+        let ok;
+        if (label === '13') ok = ended && e0.ent.gain && e0.ent.gain.total === 100 && e0.ent.gain.first === 100 - spec.total && spec.total < 100 && e0.xp === 100 && e0.runs === 1 && e0.cxp === fill(x.endLine, { n: 100 }) &&
+          m && m.h1 === fill(x.gainTitle, { n: 100 }) && m.li[m.li.length - 1] === firstLine &&
+          up && k0 && k0.hd === fill(x.lvUp, { n: 2 }) && k0.got === x.drawGot && k0.cv === 1 && k0.n === '' && k0.talent && k0.inView && J(drawn) === '[2]';
+        else ok = ended && e0.ent.gain && e0.ent.gain.total === spec.total && !e0.ent.gain.first && spec.total >= xpAt(3) && e0.xp === spec.total && lv >= 3 && !m.li.includes(firstLine) &&
+          up && k0 && k0.hd === fill(x.lvList, { n: lv }) && k0.sub === fill(x.lvPts, { n: lv - 1 }) && k0.cv >= 2 && k0.cv <= lv - 1 && k0.got === fill(x.drawGotN, { n: k0.cv }) && k0.n === '' && k0.talent && k0.inView &&
+          J(drawn) === J(Array.from({ length: lv - 1 }, (_, i) => i + 2));
+        record(label, size, ok && !errs(page).length, `打完 ${ended} 結算「${e0.cxp}」gain ${J(e0.ent.gain)}（規格未保底 ${spec.total}、要 ${total}＝Lv${lv}）xp ${e0.xp}；明細 ${J(m)}；過場卡 ${up} ${J(k0)}；drawn ${J(drawn)}；${errTx(page)}`);
+      } catch (e) { record(label, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+  }
+
+  // ---------------------------------------------------------------- 14 攤位頂列樂歷細條（SPEC-I §7.3 b；不快轉＝停 3 秒照真的時間）
+  if (want(14)) {
+    const QN = Q('');
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+    try {
+      await openTitle(page, QN);
+      await seedCareer(page, { career: { xp: 0 }, run: { ace: 'hall', idx: 0 }, runs: [RUN0] });
+      await openTitle(page, QN); await jsClick(page, '[data-a=cont]'); await nightReady(page);
+      const x = await CU(page);
+      await C(page, () => { window.__said = []; const st = window.__lab.stage; if (!st.__sayW) { const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t) }); return o.apply(this, arguments); }; st.__sayW = true; } });
+      const stallAt = async (pos, wins, streak) => {
+        await C(page, ([p, wv, k]) => { window.__lab.jump(p); const r = window.__lab.run; r.stats.wins = wv; r.bestStreak = k; r.streak = k; window.DipLabEngine.stallSession(r, window.DipLabContent); window.__lab.money(r.money); window.__lab.go('night'); }, [pos, wins, streak]);
+        await page.waitForFunction(() => window.DipLabStalls.state() && (document.querySelector('.st-pick .st-row') || document.querySelector('.lb-sheet.stall')), null, { timeout: 10000 }).catch(() => {});
+        await sleep(900);
+      };
+      const strip = () => C(page, () => { const s = document.querySelector('.cx-live'); if (!s) return null; const r = s.getBoundingClientRect(), run = window.__lab.run, S = window.__lab.save;
+        const L = window.DipLabEngine.careerLive(window.DipLabContent, run, { best: run.farBefore | 0, tier: run.tier | 0, xp: S.career.xp });
+        const rows = [...document.querySelectorAll('.st-pick .st-row, .st-pick [data-a=leave]')].map(e => e.getBoundingClientRect().bottom), bl = document.querySelector('.lb-bagline').getBoundingClientRect();
+        return { up: s.classList.contains('up'), t: s.querySelector('.t').textContent, lv: +s.dataset.lv, L, top: Math.round(r.top), bottom: Math.round(r.bottom), w: Math.round(r.width), sw: s.scrollWidth - s.clientWidth,
+          rowsIn: rows.length > 0 && Math.max(...rows) <= bl.top + 1, xp: S.career.xp }; });
+      await stallAt(6, 5, 0);
+      const s1 = await strip(), sc1 = await noScroll(page);
+      await shot(page, size, '4-stall-live');
+      await stallAt(11, 10, 6);
+      const t0 = Date.now(), s2 = await strip();
+      await shot(page, size, '5-stall-liveup');
+      await sleep(Math.max(0, 1200 - (Date.now() - t0)));
+      await tapAt(page, '.cx-live'); await sleep(200);
+      const s3 = await strip();
+      await sleep(Math.max(0, 3300 - (Date.now() - t0)));
+      await tapAt(page, '.cx-live'); await sleep(250);
+      const s4 = await strip();
+      const said = await C(page, () => window.__said.filter(o => o.id === 'o').map(o => o.t));
+      // 重新整理（攤位還在）：第一次畫＝不閃
+      await openTitle(page, QN); await jsClick(page, '[data-a=cont]');
+      await page.waitForFunction(() => document.querySelector('.cx-live'), null, { timeout: 15000 }).catch(() => {});
+      await sleep(600);
+      const s5 = await strip();
+      const ok = s1 && !s1.up && s1.lv === 1 && s1.L.level === 1 && s1.L.n > 0 && s1.t === fill(x.live, { n: s1.L.n }) && s1.sw <= 0 && s1.rowsIn && scrollOk(sc1) &&
+        s2 && s2.up && s2.lv === 2 && s2.t === fill(x.liveUp, { n: 2 }) && s2.rowsIn && s3 && s3.up && s4 && !s4.up && s4.t === fill(x.live, { n: s2.L.n }) &&
+        !said.some(t => /Lv|樂歷/.test(t)) && s4.xp === 0 && s5 && !s5.up && s5.lv === 2;
+      record(14, size, ok && !errs(page).length, `第一次 ${J(s1)} ${J(sc1)}；跨級 ${J(s2)}；1.2 秒點 ${J(s3 && { up: s3.up, t: s3.t })}；3.3 秒點 ${J(s4 && { up: s4.up, t: s4.t })}；老闆 ${J(said)}；重新整理 ${J(s5 && { up: s5.up, lv: s5.lv })}；${errTx(page)}`);
+    } catch (e) { record(14, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 15 升級章＋第一次升級（SPEC-I §7.2；不快轉、autoNext 關）
+  if (want(15)) {
+    const QN = Q('');
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
+    try {
+      await openTitle(page, QN);
+      await seedRun(page, { ace: 'pearl', idx: 0, autoNext: false });
+      await openTitle(page, QN); await jsClick(page, '[data-a=cont]'); await nightReady(page); await sleep(500);
+      const L = await C(page, () => Object.assign({}, window.DipLabContent.trial.levelUp));
+      await C(page, () => { window.__said = []; const st = window.__lab.stage; if (!st.__sayW) { const o = st.say; st.say = function (id, t) { if (t) window.__said.push({ id, t: String(t) }); return o.apply(this, arguments); }; st.__sayW = true; } });
+      const r0 = await C(page, () => { const r = window.__lab.run; return { level: r.level, xp: r.xp, maxHp: r.maxHp, hp: r.hp }; });
+      // 打一場（這一手一定剋中、扣到 0）；揭曉停住就點他的名牌
+      const win = async () => {
+        await tapReady(page, '[data-a=go]');
+        await duelReady(page, 25000);
+        await page.waitForFunction(() => !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+        await sleep(400);
+        await C(page, () => { window.__lab.force({ kind: 'counter', toE: 99, toP: 0 }); const E = window.DipLabEngine, Cn = window.DipLabContent, d = window.__lab.rawDuel(); window.DipLabDuel.api().play(E.policies.thoughtful(d, E.makeRng(9), {}, Cn)); });
+        let ch = null, t1 = 0;
+        for (let g = 0; g < 100; g++) {
+          if (await page.$('.dl .lb-lvch')) { t1 = Date.now(); ch = await C(page, () => ({ t: document.querySelector('.dl .lb-lvch .st').textContent, scr: window.__lab.screen(), screen: window.__lab.screen() })); break; }
+          if (await C(page, () => window.__lab.screen() === 'reward')) break;
+          if (await C(page, () => window.DipLabDuel.api() && window.DipLabDuel.api().waiting())) await tapAt(page, '.dl .dl-e .nmrow').catch(() => {});
+          await sleep(200);
+        }
+        return { ch, t1 };
+      };
+      const w1 = await win();
+      await sleep(600); await shot(page, size, '1-levelup-chapter');
+      await sleep(Math.max(0, 3200 - (Date.now() - w1.t1)));
+      const held = await C(page, () => ({ ch: !!document.querySelector('.dl .lb-lvch'), scr: window.__lab.screen(), lvl: window.__lab.run.level }));
+      if (w1.ch) await tapAt(page, '.dl .lb-lvch');
+      const toReward = await waitScreen(page, 'reward', 10000);
+      const loot = await page.waitForSelector('.lb-sheet.reward', { timeout: 8000 }).then(() => true, () => false);
+      await page.waitForFunction(() => { const L = window.DipLabLoot && window.DipLabLoot.state(); return !L || (L.open && L.flipped.every(Boolean) && !L.busy); }, null, { timeout: 10000 }).catch(() => {});
+      await sleep(400); await shot(page, size, '2-levelup-loot');
+      await tapReady(page, '.lb-sheet.reward [data-a=skip]');
+      const lvUp = await page.waitForSelector('.lb-sheet.level [data-lv]', { timeout: 8000 }).then(() => true, () => false);
+      await sleep(1300); await shot(page, size, '3-levelup-panel');
+      const p = await C(page, () => { const s = document.querySelector('.lb-sheet.level'); if (!s) return null; const b = [...s.querySelectorAll('[data-lv]')].map(x => x.getBoundingClientRect());
+        return { h3: s.querySelector('.hd h3').textContent, sub: s.querySelector('.hd .sub').textContent, order: [...s.querySelectorAll('[data-lv]')].map(x => x.dataset.lv), inView: b.every(r => r.top >= 0 && r.bottom <= innerHeight && r.height >= 44),
+          seen: !!window.__lab.save.seen.lv1, stored: !!JSON.parse(localStorage.getItem('dipGameLab_v1')).seen.lv1 }; });
+      const said1 = await C(page, () => window.__said.filter(o => o.id === 'o').map(o => o.t));
+      await tapReady(page, '.lb-sheet.level [data-lv="atk"]');
+      await nightReady(page); await sleep(600);
+      const r1 = await C(page, () => { const r = window.__lab.run; return { level: r.level, xp: r.xp, maxHp: r.maxHp, atk: r.atk }; });
+      // 第 2 位：2/5 經驗，不升級＝沒有章
+      const w2 = await win();
+      const toReward2 = await waitScreen(page, 'reward', 12000);
+      const r2 = await C(page, () => { const r = window.__lab.run; return { level: r.level, xp: r.xp }; });
+      const said = fill(L.first, {});
+      const ok = w1.ch && w1.ch.t === fill(L.chapter, { n: 2 }) && w1.ch.scr === 'duel' && held.ch && held.scr === 'duel' && toReward && loot && lvUp &&
+        p && p.h3 === fill(L.title, { n: 2 }) && p.sub.indexOf(L.sub) < 0 && J(p.order) === '["atk","def","hp"]' && p.inView && p.seen && p.stored && said1.filter(t => t === said).length === 1 &&
+        r0.level === 1 && r1.level === 2 && r1.xp === 0 && r1.maxHp === r0.maxHp && r1.atk === 1 && !w2.ch && toReward2 && r2.level === 2 && r2.xp === 2;
+      record(15, size, ok && !errs(page).length, `第 1 位 章 ${J(w1.ch)}、3.2 秒 ${J(held)} → 戰利品列 ${toReward}/${loot} → 升級面板 ${lvUp} ${J(p)}；老闆 ${J(said1)}；開打前 ${J(r0)} → 挑品味 ${J(r1)}；第 2 位 章 ${J(w2.ch)} ${J(r2)}；${errTx(page)}`);
+    } catch (e) { record(15, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 16 曲線改了補級（SPEC-I §7.5）＋樂歷頁
+  if (want(16)) {
+    const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 }); await watchToasts(page);
+    try {
+      await openTitle(page, Q());
+      await seedCareer(page, { career: { xp: 2000, drawn: [2, 3, 4, 5, 6] }, runs: [RUN0], best: { far: 1, checkpoints: [], bestStreak: 0 } });
+      await openTitle(page, Q()); await sleep(1900);
+      const x = await CU(page), t1 = await toasts(page);
+      const card = await page.waitForSelector('.lb-sheet.cxcard', { timeout: 4000 }).then(() => true, () => false);
+      const k0 = card ? await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'); return { hd: (s.querySelector('.cx-hd b') || {}).textContent, cv: s.querySelectorAll('.cx-got .lb-cv').length }; }) : null;
+      if (card) { await jsClick(page, '.lb-sheet.cxcard .lb-btn[data-a=next]'); await sleep(500); }
+      const d1 = await C(page, () => { const S = window.__lab.save; return { drawn: S.career.drawn.slice(), lexp: Object.keys(S.shelf).filter(id => S.shelf[id].src === 'lexp').length, stored: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.drawn }; });
+      await C(page, () => { window.__toasts.length = 0; });
+      await openTitle(page, Q()); await sleep(2000);
+      const t2 = await toasts(page), card2 = !!(await page.$('.lb-sheet.cxcard'));
+      await C(page, () => window.__lab.openPage('career')); await sleep(700);
+      const pg = await C(page, () => { const P = document.querySelector('.lb-page'); return P ? { lv: (P.querySelector('.cx-head .lv') || {}).textContent, pts: (P.querySelector('.cx-head .pts') || {}).textContent, lad: [...P.querySelectorAll('.cx-ladder li')].map(li => li.textContent), soon: P.querySelectorAll('.cx-ladder li.soon').length } : null; });
+      await shot(page, size, '10-career-page');
+      await C(page, () => { const s = document.querySelector('.lb-page .lb-scroll'), l = document.querySelector('.lb-page .cx-ladder'); if (s && l) s.scrollTop = l.getBoundingClientRect().top - s.getBoundingClientRect().top + s.scrollTop - 60; }); await sleep(300);
+      await shot(page, size, '11-career-ladder');
+      const ok = t1.includes(fill(x.recurve, { n: 1 })) && card && k0 && k0.hd === fill(x.lvUp, { n: 7 }) && J(d1.drawn) === '[2,3,4,5,6,7]' && J(d1.stored) === J(d1.drawn) && d1.lexp <= 1 &&
+        !t2.some(t => t === fill(x.recurve, { n: 1 })) && !card2 && pg && pg.lv === fill(x.title, { n: 7 }) && pg.pts === fill(x.points, { n: 6 }) && pg.soon === 0 && pg.lad.length === 7 && !pg.lad.some(t => /之後開放/.test(t));
+      record(16, size, ok && !errs(page).length, `吐司 ${J(t1)}；卡 ${card} ${J(k0)}；${J(d1)}；重新整理 吐司 ${J(t2)} 卡 ${card2}；樂歷頁 ${J(pg)}；${errTx(page)}`);
+    } catch (e) { record(16, size, false, 'error ' + e.message); }
+    await ctx.close();
   }
 }
 

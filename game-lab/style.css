@@ -1179,6 +1179,7 @@ body.lb-tune-open{overflow:hidden;}
 .dl .lb-lvch .tap{margin:0;font:700 12px/16px var(--zh);letter-spacing:.08em;color:var(--gray2);}
 .dl .lb-lvch .tap i{display:inline-block;font-style:normal;animation:lbBob 1s ease-in-out infinite;}
 .dl .lb-lvch.out{opacity:0;transition:opacity .18s;}
+.dl:has(> .lb-lvch:not(.out)) .kost{visibility:hidden;}               /* 章蓋著的時候，底下的大章不要從邊邊透出來（不支援 :has 的照舊疊著） */
 @keyframes lbChapIn{0%{transform:rotate(-4deg) scale(1.8);opacity:0;}55%{transform:rotate(-4deg) scale(.96);opacity:1;}100%{transform:rotate(-4deg) scale(1);opacity:1;}}
 @keyframes lbBob{0%,100%{transform:translateY(0);}50%{transform:translateY(2px);}}
 /* 升級面板標題放大（「升到 Lv n：挑一項，這一趟都有效」）；聲望那行接在下面 */
@@ -1191,6 +1192,7 @@ body.lb-tune-open{overflow:hidden;}
 .cx-live .lv{flex:none;font:700 11px/16px var(--mono);color:var(--gold-ink);}
 .cx-live .cx-bar.sm{flex:none;width:60px;height:6px;border:1px solid var(--gold);background:#fff;}
 .cx-live.up{margin-left:-4px;margin-right:-4px;padding:1px 4px;color:var(--gold-ink);font-weight:700;background:var(--cream);box-shadow:inset 0 0 0 1px var(--gold);cursor:pointer;animation:cxLiveFlash .8s ease-out 3;}
+.cx-live.up .lv{display:none;}                                       /* 字裡已經寫了 Lv n */
 @keyframes cxLiveFlash{0%{background:#f0c75e;}100%{background:var(--cream);}}
 /* 清單卡（一次升兩級以上）：縮圖一列、多張時縮小 */
 .cx-got.many{flex-direction:column;align-items:flex-start;gap:6px;}
