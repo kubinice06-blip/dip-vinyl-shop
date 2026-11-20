@@ -4861,6 +4861,18 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       n++;
     }
     ok(bad === 0 && n === 24, 'LE4 encStart: run untouched, short game hp＝max＝ceil(.6×), enemy＝enemyDef at posEff, deck＝his 7 via trialDeck, no ace, hash seed, no encore, player side＝startFight (plain／fac／apex／fac+apex)', info.slice(0, 4)); }
+  // encounter.ace（試調旗標，出貨 false＝規格「不帶王牌」）：true＝照一般客人在 posEff 的機率帶王牌（＝enemyDef 給的那張）
+  { const CEA = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { ace: true }) }); let bad = 0, withAce = 0;
+    for (let s = 0; s < 40; s++) {
+      const r = fightRun('ace-' + s, CEA, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, CEA, 11 + (s % 6) * 5 + (s % 3));
+      for (const who of RIDS) {
+        const posEff = Math.max(1, r.pos + REG[who].enc.off), e0 = EN.enemyDef(EN.encView(CEA, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+        const a1 = EN.encDef(r, CEA, who).ace, a0 = EN.encDef(r, CE, who).ace;
+        if ((a1 && a1.id) !== (e0.ace && e0.ace.id) || a0 !== null) bad++;
+        if (a1) withAce++;
+      }
+    }
+    ok(bad === 0 && withAce > 20, 'encounter.ace: false (shipping) → no ace; true → the same ace a normal guest at posEff carries', { bad, withAce }); }
   // fightSetup＝startFight 的單一入口：手動 guestDef＋rng＋fightSetup＋startDuel 跟 startFight 的對決逐字相同（含 encCarry、apex、fac）
   { let bad = 0;
     for (let s = 0; s < 30; s++) {

@@ -221,6 +221,7 @@
 //            encOffer(run, content) · encView(content, who) · encDef(run, content, who) · encStart(run, content, {apex}) · encFinish(run, content, duel, {reward, owned}) · encVoid(run)
 //            encLoot(run, content, duel, {reward, owned}) · fixEnc(run, content?) · encPolicy(run, content, {policy, reward, owned}) · encPending(run) · sparCfg · sparMode
 //            choose：encOpen／encAccept／encDecline {lapse}／encTake {id}／encSkip。fightSetup(run, content, o)＝主線 startFight 與切磋 encStart 共用的開局參數（你這一邊）
+//            強度試調（棒 2b 量測，p2/CONTRACT.md §10）：照規格（不帶王牌、off −2..+2）會讀的勝率 97%＞LS5 上限 95%；content.encounter.ace true（照一般客人機率帶王牌）＋off 全員 +6 → 94%／新手 79%（n4000 LS 全過）
 // Policies  policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
