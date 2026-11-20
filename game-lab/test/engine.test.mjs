@@ -4251,7 +4251,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     const cnt = {}; for (const t of TIERS) for (const x of EN.apexList(K, t)) { const e = EN.encoreOf(K, x, t); cnt[e.when + '/' + e.give] = (cnt[e.when + '/' + e.give] || 0) + 1; }
     // 11-20 修正輪（build1/FIX.md R1）：連剋全換掉（冷門、經典看穿；異端同色比贏，照出真假與回聲望看穿）；整場型、回聲望手型、他少 1 星／你 +1 星／照出真假＝→ 下一手剋中多扣 2；比星多算、比星輸不扣、這手剋得動、拆穿三倍照留再發動
     eq(cnt, { 'caught/hit': 24, 'caught/again': 9, 'sameWin/hit': 10, 'sameWin/again': 2 }, 'encore distribution over 45 cards');
-    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'hit' }, '翻面：看穿他一次，下一手剋中多扣 2。'], 'OK Computer = 看穿 → 下一手剋中多扣 2（修正輪：再發動 +6 點太簡單）');
+    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'hit' }, '翻面：看穿他一次，下一手剋中多扣 ' + X.hit + '。'], 'OK Computer = 看穿 → 下一手剋中多扣 hit（修正輪：再發動 +6 點太簡單；hit 1）');
     eq([EN.encoreOf(K, EN.apexList(K, 'hall').find(x => x.card === 'pink floyd|the dark side of the moon'), 'hall'), EN.encoreOf(K, EN.apexList(K, 'heresy').find(x => x.card === 'napalm death|scum'), 'heresy')],
       [{ when: 'caught', give: 'again' }, { when: 'sameWin', give: 'again' }], 'hand cards keep 再發動 (DSOTM 看穿；Napalm 同色比贏)');
     eq(TIERS.map(t => EN.encoreLine(K, EN.aceEncoreOf(K, t), { ace: true })), TIERS.map(() => '翻面：丟出之後看穿他一次，王牌回到手上（5 星）。'), '7-star aces line (5★)');
@@ -4449,7 +4449,8 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     d.e.def = 2;
     const pv = EN.preview(d, { i: 0, attr: 'o' }, { attr: 'c', star: 4 });
     h = hand(d, P1);
-    ok(h.cl.toE === Math.max(Math.ceil(6 / 2), 6 - 2) && h.cl.notes.some(n => n.enc === 'hit' && n.n === 2) && st(d) === 'done' && d.log[2].encBonus === 'hit', 'bonus hand: (4 borrowed + 2) then his 底氣 → ' + h.cl.toE);
+    const t6 = 4 + X.hit;   // 修正輪：hit 1
+    ok(h.cl.toE === Math.max(Math.ceil(t6 / 2), t6 - 2) && h.cl.notes.some(n => n.enc === 'hit' && n.n === X.hit) && st(d) === 'done' && d.log[2].encBonus === 'hit', 'bonus hand: (4 borrowed + hit) then his 底氣 → ' + h.cl.toE);
     ok(pv.notes.some(n => n.enc === 'hit'), 'preview shows the bonus note');
     const d2 = apexDuel('barney wilen|zodiac', { ability: ZC }); hand(d2, W(P1, { apex: true })); hand(d2, P1);
     h = hand(d2, TIE); ok(!h.cl.notes.some(n => n.enc) && st(d2) === 'done', 'bonus hand not a counter → lost');
@@ -4489,10 +4490,10 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     const ab = { id: 't-crit', card: K.aces.heresy, tier: 'heresy', name: '測', text: 'x', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null, encore: { when: 'combo2', give: 'hit' } };
     const d = apexDuel('swans|filth', { ability: ab });
     hand(d, W(HONEST, { apex: true })); hand(d, HONEST);
-    const h = hand(d, CAUGHT); eq(h.cl.toE, 5 * 2 + 2, 'crit ×2 then +2 = 12');
+    const h = hand(d, CAUGHT); eq(h.cl.toE, 5 * 2 + X.hit, 'crit ×2 then +hit');
     const dF = apexDuel('swans|filth', { ability: ab, fac: true });   // ?fac=1 異端：拆穿多扣 1（加法）、倍數取大（×2）、再 +2
     hand(dF, W(HONEST, { apex: true })); hand(dF, HONEST);
-    eq(hand(dF, CAUGHT).cl.toE, (5 + 1) * 2 + 2, 'fac heresy: (5+1)×2 then +2'); }
+    eq(hand(dF, CAUGHT).cl.toE, (5 + 1) * 2 + X.hit, 'fac heresy: (5+1)×2 then +hit'); }
   { // 留著型（鄧麗君）：安可＝回到「留著」（小效果又生效，直到第二次發動）
     const d = apexDuel('鄧麗君 teresa teng|淡淡幽情', { ability: withEnc('鄧麗君 teresa teng|淡淡幽情', { when: 'sameWin', give: 'again' }) });
     ok(EN.view(d).apex.live === 'hold', 'holding before activation');
@@ -4508,7 +4509,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     const d2 = apexDuel('barney wilen|zodiac', { carry: { give: 'hit' } });
     eq([st(d2), d2.p.enc.at, EN.view(d2).enc.next, EN.view(d2).enc.carry], ['next', 1, 'hit', true], 'carried hit → hand 1');
     const h2 = hand(d2, { h: 'h', pc: mk(1, 4, 1), pa: 'o', ec: mk(2, 1, 1), ea: 'c' });   // 冷 4 剋經 2（沒發動：照星）＋2
-    eq([h2.cl.toE, st(d2)], [6, 'done'], 'carried bonus applies without firing (4+2)');
+    eq([h2.cl.toE, st(d2)], [4 + X.hit, 'done'], 'carried bonus applies without firing (4+hit)');
     const d3 = apexDuel('radiohead|ok computer', { hp: 5, carry: { give: 'again' }, ability: withEnc('radiohead|ok computer', { when: 'caught', give: 'again' }) });
     let x = hand(d3, W(TIE, { apex: true }));
     ok(x.enc && x.enc.src === 'carry' && EN.canApex(d3) && d3.p.apexHist.length === 1, 'carried again: back after the first firing');

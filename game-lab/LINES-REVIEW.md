@@ -1459,49 +1459,49 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| Radiohead《OK Computer》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.hall[0]` |
-| Glenn Gould《Bach: The Goldberg Variations (1955)》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.hall[1]` |
+| Radiohead《OK Computer》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[0]` |
+| Glenn Gould《Bach: The Goldberg Variations (1955)》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[1]` |
 | Miles Davis《Kind of Blue》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[2]` |
-| The Beatles《Abbey Road》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.hall[3]` |
+| The Beatles《Abbey Road》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[3]` |
 | Pink Floyd《The Dark Side of the Moon》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[4]` |
-| Bob Marley & The Wailers《Exodus》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[5]` |
+| Bob Marley & The Wailers《Exodus》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[5]` |
 | 大滝詠一《A Long Vacation》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[6]` |
-| Michael Jackson《Thriller》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[7]` |
-| 鄧麗君 Teresa Teng《淡淡幽情》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[8]` |
+| Michael Jackson《Thriller》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[7]` |
+| 鄧麗君 Teresa Teng《淡淡幽情》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[8]` |
 | 張雨生《口是心非》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[9]` |
 | Guru《Jazzmatazz, Vol. 1》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[10]` |
-| Daft Punk《Discovery》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.hall[11]` |
-| Slum Village《Fan-Tas-Tic, Volume 1》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[12]` |
-| Art Blakey and the Jazz Messengers《Moanin'》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.hall[13]` |
-| 濁水溪公社《台客的復仇》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[14]` |
-| Barney Wilen《Zodiac》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[0]` |
-| Beyond《再見理想》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[1]` |
-| Harry Roesli《Ken Arok》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[2]` |
-| 生活向上委員会《生活向上委員会ニューヨーク支部》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[3]` |
-| 灰野敬二《滲有無》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[4]` |
-| 楊祖珺《楊祖珺》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[5]` |
-| 嘉手苅林昌《嘉手苅林昌》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[6]` |
-| モア《モア》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[7]` |
-| 小久保隆《Get at the Wave》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[8]` |
+| Daft Punk《Discovery》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[11]` |
+| Slum Village《Fan-Tas-Tic, Volume 1》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[12]` |
+| Art Blakey and the Jazz Messengers《Moanin'》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[13]` |
+| 濁水溪公社《台客的復仇》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.hall[14]` |
+| Barney Wilen《Zodiac》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[0]` |
+| Beyond《再見理想》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[1]` |
+| Harry Roesli《Ken Arok》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[2]` |
+| 生活向上委員会《生活向上委員会ニューヨーク支部》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[3]` |
+| 灰野敬二《滲有無》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[4]` |
+| 楊祖珺《楊祖珺》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[5]` |
+| 嘉手苅林昌《嘉手苅林昌》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[6]` |
+| モア《モア》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[7]` |
+| 小久保隆《Get at the Wave》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[8]` |
 | Derek Bailey《Solo Guitar Volume 1》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[9]` |
 | Gorilla Biscuits《demo 1987》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[10]` |
 | 高柳昌行《Eclipse/侵蝕》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[11]` |
 | 1976《Late Summer of 1976 不插電現場實況》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[12]` |
-| Black Renaissance《Body, Mind and Spirit》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[13]` |
-| Alton Ellis《A New Day》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[14]` |
-| Swans《Filth》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[0]` |
-| Ornette Coleman《Free Jazz: A Collective Improvisation》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[1]` |
-| Captain Beefheart & His Magic Band《Trout Mask Replica》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[2]` |
-| Discharge《Hear Nothing See Nothing Say Nothing》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[3]` |
-| Lou Reed《Metal Machine Music》 | 翻面：同色比贏一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[4]` |
-| Throbbing Gristle《The Second Annual Report》 | 翻面：同色比贏一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[5]` |
-| Alvin Lucier《I Am Sitting in a Room》 | 翻面：同色比贏一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[6]` |
-| Les Rallizes Dénudés《'77 Live》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[7]` |
-| Ryoji Ikeda《+/-》 | 翻面：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[8]` |
-| 非常階段《蔵六の奇病》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[9]` |
-| Einstürzende Neubauten《Kollaps》 | 翻面：看穿他一次，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[10]` |
-| 零與聲音解放組織《Z.S.L.O.》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[11]` |
-| Sunn O)))《Black One》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[12]` |
+| Black Renaissance《Body, Mind and Spirit》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[13]` |
+| Alton Ellis《A New Day》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.pearl[14]` |
+| Swans《Filth》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[0]` |
+| Ornette Coleman《Free Jazz: A Collective Improvisation》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[1]` |
+| Captain Beefheart & His Magic Band《Trout Mask Replica》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[2]` |
+| Discharge《Hear Nothing See Nothing Say Nothing》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[3]` |
+| Lou Reed《Metal Machine Music》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[4]` |
+| Throbbing Gristle《The Second Annual Report》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[5]` |
+| Alvin Lucier《I Am Sitting in a Room》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[6]` |
+| Les Rallizes Dénudés《'77 Live》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[7]` |
+| Ryoji Ikeda《+/-》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[8]` |
+| 非常階段《蔵六の奇病》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[9]` |
+| Einstürzende Neubauten《Kollaps》 | 翻面：看穿他一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[10]` |
+| 零與聲音解放組織《Z.S.L.O.》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[11]` |
+| Sunn O)))《Black One》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[12]` |
 | Napalm Death《Scum》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[13]` |
 | Peter Brötzmann《Machine Gun》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[14]` |
 

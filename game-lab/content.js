@@ -1967,13 +1967,14 @@
   //   加成 give：again 再發動一次（手型、留著型；7 星王牌＝王牌回到手上）｜star 下一手 +1 星｜hit 下一手剋中多扣 2（在倍數之後、他的底氣之前）｜heal 回 2 聲望（當場、跟同一手其他回聲望取大）。
   // ===================================================================
   C.encore = {
-    on: true, aceStar: 5, carry: true, star: 1, hit: 2, heal: 2, lowPct: 30,
+    on: true, aceStar: 5, carry: true, star: 1, hit: 1, heal: 2, lowPct: 30,
     aces: { hall: { when: 'caught', give: 'again' }, pearl: { when: 'caught', give: 'again' }, heresy: { when: 'caught', give: 'again' } },
     facHeresy: 'sameWin',
     // 11-20 修正輪（build1/FIX.md R1–R3；量測 build1/fix/）：連剋兩手量起來不是讀牌獎勵（新手照提示剋就成立 52–57%）→ 全換掉：冷門、經典看穿，異端同色比贏（照出真假、回聲望例外：看穿）；
     //   會回聲望的翻面（回聲望型再發動、回 2）與整場 +1 星，--apex 逐張量起來會讀的到第 50 位 +5～+11 點（OK Computer +6.0、モア +10.9）→ 整場型與回聲望手型一律「下一手剋中多扣 2」（OKC +0.8）；
     //   手型再發動逐張量：他少 1 星／你 +1 星／照出真假再來一次也太強（Exodus 一般玩家中位 +4、鄧麗君 +4.1、Thriller 一般 +4、Z.S.L.O. +3.4、Rallizes +8.9）→ 同樣改「下一手剋中多扣 2」；
-    //   比星多算（DSOTM、大滝、口是心非、Jazzmatazz）、比星輸不扣（Kind of Blue）、這手剋得動（冷門四張）、拆穿三倍（Napalm、Machine Gun）照留「再發動一次」（−1.6～+0.2）
+    //   比星多算（DSOTM、大滝、口是心非、Jazzmatazz）、比星輸不扣（Kind of Blue）、這手剋得動（冷門四張）、拆穿三倍（Napalm、Machine Gun）照留「再發動一次」（−1.6～+0.2）；
+    //   hit 2→1（多扣 2 時 Exodus、Lou Reed、Gould、Rallizes 仍 +1～+3 點；回聲望型也一樣是 +1 就夠「讀對了有獎」）
     byFamily: {
       'heal:hand': { when: 'caught', give: 'hit' },
       'star:hand': { when: 'sameWin', give: 'hit' },

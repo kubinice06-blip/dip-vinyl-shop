@@ -26,13 +26,15 @@
 //   4  （續）吃加成那手 clash pStar＝牌面＋1（上一手沒加）、這場紀錄寫的星數＝它
 //   6c–6e 版面：金籤「翻面×1」、「下一手 +1 星」、「下一手剋中多扣 2」在王牌格裡、最上層是籤、字沒被切、不壓提示框
 //   8  ?apex=1 Swans《Filth》（crit 整場：連剋 → 回 2 聲望）：聲望 6 → 8、結果框「翻面！回 2 聲望」、飄「翻面：聲望 +2」、沒吐司、籤收起；滿聲望回 0＝不寫不飄；
-//      測試卡（頁面裡把 Filth 改成「連剋 → 下一手剋中多扣 2」）：拆穿 ×2 那手扣「(原本×2)＋2」（＝去掉翻面的 preview＋2，不是＋4）
+//      測試卡（頁面裡把 Filth 改成「連剋 → 下一手剋中多扣 2」）：拆穿 ×2 那手扣「(原本×2)＋多扣」（＝去掉翻面的 preview＋hit，不是 (原本＋hit)×2）
 //   9  ?fac=1 異端 7 星王牌：籤「同色贏→再丟」、按住王牌唱片資訊同那句；王牌丟出之前同色比贏不算、丟王牌那手看穿不算 → 丟之後同色比贏 → 王牌回到手上 5 星；經典照舊「看穿→再丟」
 //   10 存檔（真的一趟）：翻面了重新整理 → 金、5 星照丟；run.encCarry 壞掉（{give:'heal'}、字串）→ null、照玩，好的留著 → 金籤；舊版對決（沒有 p.enc）照舊打完、沒有籤、不留
 //   7  說明：唱片資訊（7 星王牌「王牌翻面：丟出之後…」；?apex=1 頂點卡「王牌翻面：看穿他一次…」）、規則卡一段「翻面：…」（不捲；學會六張小卡＝最長的樣子也不捲，同 e2e.spec #39）、
 //      ?apex=1 挑王牌面板三派 45 張逐一點（收到的＝選、沒收到的＝看說明）：「翻面：…」一行＝engine encoreLine、一行放得下（面板不捲、「就這張」在畫面裡）；點那行＝看全文
 //   每項最後看主控台 0 錯誤、畫面上的字沒有「安可」。任何 FAIL → exit 1。
 import fs from 'fs';
+import { createRequire } from 'module';
+const HIT = createRequire(import.meta.url)('../content.js').encore.hit;   // 修正輪：多扣 hit（1）
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, openTitle, Q, duelReady, tapAt, hitPoint, jsClick, waitScreen, seededContinue, seedRun, passLoot,
   longPress, infoOpen, closeInfo, noScroll, scrollOk, watchSay } from './e2e-lib.mjs';
 
@@ -497,15 +499,15 @@ async function runSize(browser, w, h) {
         await settle(page);
         const h3 = await lastHand(page), t3 = await aceTile(page);
         const cl = h3 && h3.evs.find(e => e.t === 'clash');
-        if (!(cl && cl.notes && cl.notes.some(n => (n.text || n) === '翻面：剋中多扣 2') && h3.ct.notes.includes('翻面：剋中多扣 2'))) fails.push('結果句 ' + short(h3 && h3.ct.notes));
+        if (!(cl && cl.notes && cl.notes.some(n => (n.text || n) === '翻面：剋中多扣 ' + HIT) && h3.ct.notes.includes('翻面：剋中多扣 ' + HIT))) fails.push('結果句 ' + short(h3 && h3.ct.notes));
         const toE = await C(page, () => { const d = window.__lab.rawDuel(); return d.log[d.log.length - 1].toE; });
-        if (!(toE === plan.toE0 + 2 && plan.toE1 === toE)) fails.push('扣分 ' + short({ toE, plan }));
+        if (!(toE === plan.toE0 + HIT && plan.toE1 === toE)) fails.push('扣分 ' + short({ toE, plan }));
         if (t3.tag) fails.push('那手打完籤沒收 ' + short(t3));
         if (!fails.length) plan.toE = toE;
       }
-      if (!(h2 && h2.ct.encLine === '翻面！下一手剋中多扣 2' && t2.tag === '下一手剋中多扣 2' && /\blit\b/.test(t2.tagCls || '') && v2.enc.next === 'hit')) fails.push('連剋 → 籤 ' + short([h2 && h2.ct.encLine, t2, v2 && v2.enc]));
+      if (!(h2 && h2.ct.encLine === '翻面！下一手剋中多扣 ' + HIT && t2.tag === '下一手剋中多扣 ' + HIT && /\blit\b/.test(t2.tagCls || '') && v2.enc.next === 'hit')) fails.push('連剋 → 籤 ' + short([h2 && h2.ct.encLine, t2, v2 && v2.enc]));
       const anko = await noAnko(page), er = errs(page);
-      record(5, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `MMM：連剋 → 籤「${t2.tag}」→ 拆穿那手扣 ${plan.toE}＝去掉翻面的 ${plan.toE0}（含倍數）＋2${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+      record(5, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `MMM：連剋 → 籤「${t2.tag}」→ 拆穿那手扣 ${plan.toE}＝去掉翻面的 ${plan.toE0}（含倍數）＋${HIT}${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
     } catch (e) { record(5, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -577,12 +579,12 @@ async function runSize(browser, w, h) {
         toE = await C(page, () => { const d = window.__lab.rawDuel(); return d.log[d.log.length - 1].toE; });
         const A0 = plan.apex0 || {};
         // toE0＝把翻面關掉的同一手（含 ×2）：apex.caught、倍數多扣的 dE＝原本（toE0＝2×原本）；實際＝toE0＋2（不是 (原本＋2)×2＝toE0＋4）
-        if (!(A0.caught && A0.dE > 0 && A0.dE * 2 === plan.toE0 && toE === plan.toE0 + 2 && plan.toE1 === toE && h3 && h3.ct.notes.includes('翻面：剋中多扣 2')))
-          fails.push('(×2)＋2 ' + short({ toE, plan, notes: h3 && h3.ct.notes }));
+        if (!(A0.caught && A0.dE > 0 && A0.dE * 2 === plan.toE0 && toE === plan.toE0 + HIT && plan.toE1 === toE && h3 && h3.ct.notes.includes('翻面：剋中多扣 ' + HIT)))
+          fails.push('(×2)＋hit ' + short({ toE, plan, notes: h3 && h3.ct.notes }));
       }
-      if (!(tc.tag === '連剋→多扣 2' && vc.enc.next === 'hit')) fails.push('測試卡籤 ' + short([tc, vc && vc.enc]));
+      if (!(tc.tag === '連剋→多扣 ' + HIT && vc.enc.next === 'hit')) fails.push('測試卡籤 ' + short([tc, vc && vc.enc]));
       const anko = await noAnko(page), er = errs(page);
-      record(8, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `Filth：連剋 → 「${h2.ct.encLine}」聲望 6→${v2.pHp}、飄「翻面：聲望 +2」、沒吐司；滿聲望回 0 不寫；測試卡 ×2：扣 ${toE}＝${plan.toE0}（原本 ${plan.apex0.dE}×2）＋2${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
+      record(8, size, !fails.length && anko && !er.length, fails.length ? fails.join('；') : `Filth：連剋 → 「${h2.ct.encLine}」聲望 6→${v2.pHp}、飄「翻面：聲望 +2」、沒吐司；滿聲望回 0 不寫；測試卡 ×2：扣 ${toE}＝${plan.toE0}（原本 ${plan.apex0.dE}×2）＋${HIT}${anko ? '' : '；有「安可」'}${er.length ? '；主控台 ' + er.join(' | ') : ''}`);
     } catch (e) { record(8, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -717,7 +719,7 @@ async function runSize(browser, w, h) {
       await longPress(page, ctx, 'dt:card-ace', 700);
       const i2 = await infoOpen(page) ? await C(page, () => { const e = document.querySelector('#cardInfoMask .apx .enc'); return e ? e.textContent : null; }) : 'no-info';
       await closeInfo(page);
-      if (i2 !== '王牌翻面：看穿他一次，下一手剋中多扣 2。') fails.push('頂點卡唱片資訊 ' + short(i2));
+      if (i2 !== '王牌翻面：看穿他一次，下一手剋中多扣 ' + HIT + '。') fails.push('頂點卡唱片資訊 ' + short(i2));
       await openTitle(page, Q('&fast=1&apex=1'));
       await seedRun(page, { ace: 'heresy', idx: 0, ownAces: ['hall', 'pearl'], ownIds: [] });
       await openTitle(page, Q('&fast=1&apex=1'));
