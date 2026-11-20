@@ -62,6 +62,7 @@
       hint: L.line ? { attr: L.hint, line: L.line, kind: hk, not } : null, bluff: !!L.bluff, why: L.why, rel: L.rel || null, notes: Array.isArray(L.notes) ? L.notes : [] };
     if (L.script) c.script = true;
     if ('apex' in L) c.apex = L.apex;
+    if (L.enc && typeof L.enc === 'object') c.enc = { give: L.enc.give, mode: L.enc.mode || (L.apex !== undefined ? 'apex' : 'ace'), src: L.enc.src, heal: L.enc.heal, carry: !!L.enc.carry };   // 第 I 波翻面：成立那手（clashText 多一行「翻面！…」）
     return c;
   }
   function rowsOf(log, ctx) {
@@ -104,6 +105,11 @@
   // 籤：被唬（紅）／看穿（綠）／被讀到（紅）——只看 clashText 的判讀（＝當時浮框講了什麼）
   //   class 用 saw 不用 sw：style.css 有全域 .sw（⏸ 開關鈕：黑框、min-width 36），會套到這裡（審查 11-17）
   function tagOf(ct, t) { return ct.saw ? { t: t('rcSaw'), c: 'saw' } : ct.gotRead ? { t: t('rcRead'), c: '' } : ct.bluff ? { t: t('rcBluff'), c: '' } : null; }
+  // 第 I 波翻面：成立那手多一個金章「翻面」（字＝content.encore.ui.recap；沒有就不畫）
+  function encTag(L) {
+    const Cn = window.DipLabContent, w = Cn && Cn.encore && Cn.encore.ui && Cn.encore.ui.recap;
+    return L && L.enc && w ? `<span class="tg enc">${esc(w)}</span>` : '';
+  }
   // 詳情：v1＝判讀句（唬你／看穿／讀到：l1 不是規則句時）；v2＝規則句＋扣分；v3＝l3（跟規則句重複就不放）；小字＝notes 逐條
   function handHTML(r, o) {
     const t = tOf(o && o.T), ct = r.ct;
@@ -138,7 +144,7 @@
       const d = dOf(r.L, t), tg = tagOf(r.ct, t);
       const sd = (s, x) => `<span class="sd ${s}">${cover(x.card)}<span><span class="${x.attr}">${ZH1[x.attr] || ''}</span> <span class="num">${esc(num(x.star))}</span></span></span>`;
       return `<li><button type="button" class="rc-row" data-rc-n="${r.n}"><span class="n">${r.n}</span>${sd('e', r.e)}<span class="vs">${esc(t('rcVs'))}</span>${sd('p', r.p)}`
-        + `<span class="out"><span class="k">${tg ? `<span class="tg ${tg.c}">${esc(tg.t)}</span>` : ''}${esc(kindWord(r.L, t))}</span><span class="d ${d.c}">${esc(d.t)}</span></span><span class="chev" aria-hidden="true">›</span></button></li>`;
+        + `<span class="out"><span class="k">${encTag(r.L)}${tg ? `<span class="tg ${tg.c}">${esc(tg.t)}</span>` : ''}${esc(kindWord(r.L, t))}</span><span class="d ${d.c}">${esc(d.t)}</span></span><span class="chev" aria-hidden="true">›</span></button></li>`;
     }).join('')}</ul>`;
   }
   // ---------------- 面板 ----------------

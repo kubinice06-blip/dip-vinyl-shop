@@ -10,13 +10,15 @@ import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { shapeProblems, binsProblems, apexProblems, factionProblems } from '../tools/check-content.mjs';
+import { shapeProblems, binsProblems, apexProblems, factionProblems, encoreProblems } from '../tools/check-content.mjs';
 const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const EN = require(path.join(HERE, '../engine.js'));
 const C0 = require(path.join(HERE, '../content.js'));
 const { ATTRS, BEATS, COUNTER_OF, CFG, TIERS } = EN;
 const QUICK = process.argv.includes('--quick');
+// 第 I 波安可（content.encore.on）關掉的 content 複本：改版前的黃金（run JSON／決策序列）都是沒有安可的引擎跑的，比對時用這份（安可的逐字現況另在 #32 驗）
+const noEnc = c => Object.assign({}, c, { encore: Object.assign({}, (c && c.encore) || {}, { on: false }) });
 
 // ---------------- tiny harness ----------------
 let pass = 0, fail = 0; const fails = [];
@@ -3326,9 +3328,9 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
   EN.setCtx(null);
   // ---- 1 功能全關：一趟 50 位 run JSON（扣第 C 波欄位）跟現行逐字相同；第 C 波欄位停在初值、沒有 stats.c ----
   { let s = ''; const reached = [];
-    const CNONE = Object.assign({}, C); delete CNONE.waveC;           // content 沒有 waveC＝引擎預設（也是全關）
+    const CNONE = noEnc(Object.assign({}, C)); delete CNONE.waveC;   // content 沒有 waveC＝引擎預設（也是全關）；第 I 波安可也關（黃金是改版前跑的）
     for (const [sk, rn, ace] of [['wcoff1', 1, 'hall'], ['wcoff2', 2, 'pearl'], ['wcoff3', 3, 'heresy'], ['wcoff4', 2, 'hall'], ['wcoff5', 4, 'pearl'], ['wcoff6', 5, 'heresy']]) {
-      const run = driveOff(C, sk, rn, ace, 50), o = JSON.parse(JSON.stringify(run));
+      const run = driveOff(noEnc(C), sk, rn, ace, 50), o = JSON.parse(JSON.stringify(run));
       ok(o.road.length === 0 && o.found.length === 0 && o.tickets === 0 && o.dare === null && o.consign === null && o.fortune === null && o.safety === false && JSON.stringify(o.lexp) === '{}' && !o.stats.c && o.chestDry === 0, 'off: wave C fields stay at their initial values', sk);
       eq(JSON.stringify(driveOff(CNONE, sk, rn, ace, 50)), JSON.stringify(run), 'off (content waveC on:false) = engine defaults (no content.waveC) ' + sk);
       for (const k of WCK) delete o[k];
@@ -3715,7 +3717,7 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
       { talent: { atk: 0, def: 0, hp: 0, xp: 0, plea: 0, money: 0, pay: 0, rare: 0 }, relicPick: 1, goldAdd: 0 }, { talent: {}, seedMax: 0 }];
     eq(extras.slice(1, 4), [{}, {}, {}], 'talentArgs: Lv7 nothing／Lv7 locked power／off → {}');
     extras.forEach((ex, j) => CASES.forEach((o, i) => {
-      const { run, seq } = driveD(K, Object.assign({}, o, ex), 20);
+      const { run, seq } = driveD(noEnc(K), Object.assign({}, o, ex), 20);   // 第 I 波安可關（黃金是改版前跑的）
       ok(EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq)) === GOLD[i] && run.pos === POS[i], 'no career args (variant ' + j + ') = engine before wave D, case ' + o.seedKey, { pos: run.pos });
     }));
     for (const sk of ['dn1', 'dn2', 'dn3']) {
@@ -3939,7 +3941,8 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
       }
       return { run, seq };
     };
-    const VAR = [[K, {}], [K, { fac: false }], [Object.assign({}, K, { factions: undefined }), { fac: true }], [Object.assign({}, K, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]];
+    const KN = noEnc(K);   // 第 I 波安可關（黃金是改版前跑的）
+    const VAR = [[KN, {}], [KN, { fac: false }], [Object.assign({}, KN, { factions: undefined }), { fac: true }], [Object.assign({}, KN, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]];
     VAR.forEach(([content, ex], j) => CASES.forEach(([o, fo], i) => {
       if (QUICK && j > 0 && i > 1) return;
       const { run, seq } = drive(content, Object.assign({}, o, ex), fo);
@@ -4226,6 +4229,335 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
       'factionProblems catches: missing note, note without {n}, unknown op, priority, second move, swap param range, hold text, hold card not covered, unknown card, name, occupy, ui');
     eq(Object.keys(F.notes).sort(), EN.FAC_NOTE_ORDER.slice().sort(), 'notes keys = FAC_NOTE_ORDER');
     ok(!/加倍/.test(JSON.stringify(F.notes)) && F.notes.cCost && F.factionsTag === undefined && K.factionsTag === '新', 'notes final: no 加倍, has cCost; factionsTag 新'); }
+});
+
+// =====================================================================================================
+section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/CONTRACT.md）：頂點卡換裝 15／15／15、關掉＝逐字現況、四種條件、四種加成、一場一次、發動那手不算、留到下一位（只留一場、說情、一趟結束清掉）、7 星→5 星（修正輪）、preview＝resolve、取大、存讀檔、策略', () => {
+  EN.setCtx(null);
+  const K = C0, X = K.encore, KN = noEnc(K);
+  // ---- 1 名單（店主 11-20 挑定）：三派各 15、第 1 張＝C.aces、換下 6 張不在卡池、換上 6 張在而且 tier 對；check-content 乾淨 ----
+  { const OUT = ['羅大佑|之乎者也', 'kendrick lamar|to pimp a butterfly', '周杰倫|范特西', '陳綺貞 cheer chen|讓我想一想', 'blue notes|blue notes for mongezi', '夾子電動大樂隊|地下人'];
+    const IN = { "art blakey and the jazz messengers|moanin'": 'hall', 'guru|jazzmatazz, vol. 1': 'hall', 'slum village|fan-tas-tic, volume 1': 'hall', '濁水溪公社|台客的復仇': 'hall',
+      'モア|モア': 'pearl', '生活向上委員会|生活向上委員会ニューヨーク支部': 'pearl' };
+    for (const t of TIERS) { const L = EN.apexList(K, t); eq([L.length, L[0].card], [15, K.aces[t]], t + ': 15 cards, first = C.aces'); }
+    ok(OUT.every(id => !K.cards[id] && TIERS.every(t => !EN.apexList(K, t).some(x => x.card === id))) && JSON.stringify(K.apexRetired.slice().sort()) === JSON.stringify(OUT.slice().sort()), 'retired 6 are out of the pool and the lists (C.apexRetired)');
+    ok(Object.entries(IN).every(([id, t]) => K.cards[id] && K.cards[id].tier === t && EN.apexList(K, t).some(x => x.card === id) && EN.tierOfApex(K, id) === t), 'new 6 are in the pool with the right tier');
+    eq(K.apexTrialOnly.length, 42, 'apexTrialOnly still 42');
+    eq([apexProblems(K, EN), encoreProblems(K, EN)], [[], []], 'check-content apexProblems／encoreProblems clean');
+    // 新 6 張＝換下那張同原語（三派強度分佈不變）
+    const op = id => { const A = EN.abilityOf(K, id); return A.op + '/' + A.timing + '/' + JSON.stringify(A.params) + '/' + JSON.stringify(A.hold); };
+    eq(Object.keys(IN).map(op), ['mirrorPlus/duel/{"n":1}/null', 'mirrorPlus/hold/{"n":3}/{"op":"tieWin","params":{"n":1}}', 'eStar/hand/{"n":1}/null', 'eStar/hand/{"n":1}/null', 'bounce/duel/{"lose":false}/null', 'pThr/duel/{"n":3}/null'], 'new 6 abilities = the replaced primitives');
+    // 附錄 Y：條件分佈（45 張；家族預設）
+    const cnt = {}; for (const t of TIERS) for (const x of EN.apexList(K, t)) { const e = EN.encoreOf(K, x, t); cnt[e.when + '/' + e.give] = (cnt[e.when + '/' + e.give] || 0) + 1; }
+    // 11-20 修正輪（build1/FIX.md R1）：連剋全換掉（冷門、經典看穿；異端同色比贏，照出真假與回聲望看穿）；整場型、回聲望手型、他少 1 星／你 +1 星／照出真假＝→ 下一手剋中多扣 2；比星多算、比星輸不扣、這手剋得動、拆穿三倍照留再發動
+    eq(cnt, { 'caught/hit': 24, 'caught/again': 9, 'sameWin/hit': 10, 'sameWin/again': 2 }, 'encore distribution over 45 cards');
+    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'hit' }, '翻面：看穿他一次，下一手剋中多扣 ' + X.hit + '。'], 'OK Computer = 看穿 → 下一手剋中多扣 hit（修正輪：再發動 +6 點太簡單；hit 1）');
+    eq([EN.encoreOf(K, EN.apexList(K, 'hall').find(x => x.card === 'pink floyd|the dark side of the moon'), 'hall'), EN.encoreOf(K, EN.apexList(K, 'heresy').find(x => x.card === 'napalm death|scum'), 'heresy')],
+      [{ when: 'caught', give: 'again' }, { when: 'sameWin', give: 'again' }], 'hand cards keep 再發動 (DSOTM 看穿；Napalm 同色比贏)');
+    eq(TIERS.map(t => EN.encoreLine(K, EN.aceEncoreOf(K, t), { ace: true })), TIERS.map(() => '翻面：丟出之後看穿他一次，王牌回到手上（5 星）。'), '7-star aces line (5★)');
+    eq([EN.aceEncoreOf(K, 'heresy', true), EN.aceEncoreOf(K, 'hall', true), EN.encoreTag(K, EN.aceEncoreOf(K, 'hall'), { ace: true })], [{ when: 'sameWin', give: 'again' }, { when: 'caught', give: 'again' }, '看穿→再丟'], '?fac=1 heresy ace → 同色比贏；tag');
+    eq(EN.abilityOf(K, 'swans|filth').encore, { when: 'caught', give: 'hit' }, 'abilityOf carries encore');
+    ok(!('encore' in EN.abilityOf(KN, 'swans|filth')) && EN.encoreOf(KN, EN.apexList(K, 'hall')[0], 'hall') === null && EN.aceEncoreOf(KN, 'hall') === null, 'encore.on false → no encore anywhere');
+    // ?fac=1&apex=1 換一格：照換後的家族；swapped 不多欄位
+    const R0 = { fac: { picks: {} } };
+    eq([EN.apexAbilityOf(K, K.aces.pearl, R0).encore, EN.apexAbilityOf(K, K.aces.heresy, R0).encore, Object.keys(EN.apexAbilityOf(K, K.aces.pearl, R0).swapped)],
+      [{ when: 'caught', give: 'again' }, { when: 'caught', give: 'again' }, ['op', 'params', 'timing', 'text']], 'apexSwap: encore follows the swapped family (critAdd hand／mirrorPlus hand → 看穿・再發動)'); }
+
+  // ---- helpers：一手（你出 pc 的 pa 色或丟王牌、他出 ec 的 ea 色、提示 h）；preview＝resolve 每手都驗 ----
+  const mk = (c, o, h) => mkCard('fx-en' + c + o + h, c, o, h);
+  const setHint = (d, h) => { d.plan.hint = { attr: h, line: d.plan.hint.line, kind: 'one', not: null }; };
+  function hand(d, o) {
+    setHint(d, o.h); d.e.hand[0] = o.ec;
+    let act;
+    if (o.ace) act = { ace: true }; else { d.p.hand[0] = o.pc; act = { i: 0, attr: o.pa }; if (o.apex) act.apex = true; }
+    const before = JSON.stringify(d), pv = EN.preview(d, act, { i: 0, attr: o.ea });
+    ok(JSON.stringify(d) === before, 'preview pure (encore)');
+    const evs = EN.resolveTurn(d, act, Object.assign({ forcedPlay: { i: 0, attr: o.ea } }, o.dbg ? { debugOutcome: o.dbg } : {}));
+    const cl = evs.find(e => e.t === 'clash');
+    if (!o.dbg) eq(sig(pv), sig(cl), 'preview = resolve (encore hand ' + (cl && cl.n) + ')');
+    return { evs, cl, enc: evs.find(e => e.t === 'encore') || null, over: evs.find(e => e.t === 'over') || null };
+  }
+  // 看穿（提示經、他出硬＝唬、你出經剋中）／照實剋（提示硬、他出硬、你出經）／同色比贏（冷 5 對冷 2）／被剋（你經 1、他冷 3）／平手
+  const CAUGHT = { h: 'c', pc: mk(5, 1, 1), pa: 'c', ec: mk(1, 1, 3), ea: 'h' }, HONEST = { h: 'h', pc: mk(4, 1, 1), pa: 'c', ec: mk(1, 1, 3), ea: 'h' };
+  const SAME = { h: 'o', pc: mk(1, 5, 1), pa: 'o', ec: mk(1, 2, 1), ea: 'o' }, COUNTERED = { h: 'o', pc: mk(1, 1, 1), pa: 'c', ec: mk(1, 3, 1), ea: 'o' }, TIE = { h: 'h', pc: mk(1, 1, 2), pa: 'h', ec: mk(1, 1, 2), ea: 'h' };
+  const W = (o, x) => Object.assign({}, o, x || {});
+  function norm(d, o) { d.p.relics = []; d.p.atk = d.p.def = 0; d.e.atk = d.e.def = 0; d.e.hit = 0; d.p.hp = o.hp != null ? o.hp : 8; d.e.hp = o.eHp != null ? o.eHp : 99; d.e.max = Math.max(d.e.max, d.e.hp); return d; }
+  function aceDuel(tier, o = {}) {
+    const src = { bag: K.gifts[tier].concat(BP3), ace: tier, relics: [] };
+    if (o.fac) src.fac = { picks: o.picks || {}, tal: {}, trialNodes: {} };
+    const pDef = EN.playerDef(K, src, Object.assign({ encore: true }, o.fac ? { fac: true } : {}));
+    return norm(EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), { seed: o.seed || 17, hintTable: HINTS, encore: true, encCarry: o.carry || null }).duel, o);
+  }
+  function apexDuel(cardId, o = {}) {
+    const t = EN.tierOfApex(K, cardId), src = { bag: K.gifts[t].concat(BP3), ace: t, aceId: cardId, relics: [] };
+    if (o.fac) src.fac = { picks: o.picks || {}, tal: {}, trialNodes: {} };
+    const pDef = EN.playerDef(K, src, Object.assign({ apex: true, encore: true }, o.fac ? { fac: true } : {}));
+    if (o.ability) pDef.ability = o.ability;
+    return norm(EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), { seed: o.seed || 19, hintTable: HINTS, apex: true, encore: true, encCarry: o.carry || null }).duel, o);
+  }
+  const ACE = (x) => W(x, { ace: true });
+  const st = d => d.p.enc.state;
+  const withEnc = (id, enc) => Object.assign({}, EN.abilityOf(K, id), { encore: enc });   // 修正輪：家族預設換了，四種條件×四種加成的機制用指定的翻面照舊驗
+
+  // ---- 2 關掉＝逐字現況：沒給 opts.encore／content.encore.on false／序章 → 對決、run 一個欄位都不多 ----
+  { const pDef = EN.playerDef(K, { bag: K.gifts.hall.concat(BP3), ace: 'hall', relics: [] });
+    ok(!('aceEnc' in pDef) && !('encNum' in pDef), 'playerDef without o.encore → no encore fields');
+    const a = EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), { seed: 5, hintTable: HINTS }).duel;
+    const b = EN.startDuel(EN.playerDef(K, { bag: K.gifts.hall.concat(BP3), ace: 'hall', relics: [] }, { encore: true }), EN.enemyDef(K, 'copycat', {}), { seed: 5, hintTable: HINTS }).duel;
+    ok(JSON.stringify(a) === JSON.stringify(b) && !/"enc|apexHist/.test(JSON.stringify(a)), 'startDuel without opts.encore = no encore (state identical)');
+    const keys = d => /"(enc|encAce|encPrev|apexHist|encNum|encText|encCarry)"/.test(JSON.stringify(d));
+    for (const [K2, nm] of [[KN, 'on:false']]) {
+      const r = EN.newRun(K2, { seedKey: 'e32off', runNo: 2, ace: 'heresy', prologue: false }); EN.choose(r, K2, EN.bargainPolicy(r, K2));
+      const f = EN.startFight(r, K2, {}); let g = 0; while (!f.duel.over && g++ < 20) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, null, {}, K2));
+      ok(!keys(f.duel) && !f.duel.over.encCarry, nm + ': duel has no encore keys');
+      const res = EN.finishFight(r, K2); ok(!('encCarry' in res) && !('encCarry' in r) && !(r.stats && r.stats.enc), nm + ': run has no encCarry／stats.enc');
+    }
+    // 同一批動作：encore.on false 的對決事件＝沒給 opts.encore 的直接開打（黃金等價；整趟黃金在 #29–#31 用 noEnc 驗）
+    const r1 = EN.newRun(K, { seedKey: 'e32pro', runNo: 1, ace: 'hall' });
+    const f1 = EN.startFight(r1, K, {}); ok(r1.prologue === 'pending' && !keys(f1.duel), 'prologue: no encore');
+    const r2 = EN.newRun(K, { seedKey: 'e32sp', runNo: 2, ace: 'hall', prologue: false }); EN.choose(r2, K, EN.bargainPolicy(r2, K)); r2.encCarry = { give: 'again' };
+    const f2 = EN.startFight(r2, K, { encore: false }); ok(!keys(f2.duel) && JSON.stringify(r2.encCarry) === '{"give":"again"}', 'startFight {encore:false} (切磋): no encore, carry left for the next main duel');
+    const r3 = EN.newRun(K, { seedKey: 'e32sp', runNo: 2, ace: 'hall', prologue: false }); EN.choose(r3, K, EN.bargainPolicy(r3, K));
+    const f3 = EN.startFight(r3, K, {});
+    eq([f3.duel.p.enc, f3.duel.p.encAce, f3.duel.encNum.aceStar, 'encCarry' in r3], [{ when: 'caught', give: 'again', mode: 'ace', state: 'idle', start: null, from: null, at: null, src: null, lit: null }, false, 5, false], 'main duel: default-mode encore armed (no run.encCarry key yet)');
+    const v = EN.view(f3.duel); eq([v.enc.state, v.enc.next, v.aceStar, v.enc.carry], ['idle', null, 7, false], 'view.enc／aceStar 7 before'); }
+
+  // ---- 3 預設 7 星王牌：丟出去那手剛好看穿 → 王牌回到手上（6 星）→ 再丟 → 用掉；同一場不再亮 ----
+  { const d = aceDuel('hall');
+    let h = hand(d, ACE(CAUGHT));
+    eq([h.cl.pStar, h.enc && h.enc.src, h.enc && h.enc.give, h.enc && h.enc.mode, st(d), d.p.aceUsed, d.p.encAce, d.p.enc.lit], [7, 'hit', 'again', 'ace', 'hit', false, true, 1], 'ace thrown on a caught hand → encore: ace back');
+    const v = EN.view(d);
+    ok(v.ace && v.aceStar === 5 && v.enc.state === 'hit' && EN.legalActions(d).some(a => a.ace), 'view: ace back as 5★, legal');
+    eq(EN.preview(d, { ace: true }, { attr: 'h', star: 3 }).toE, 5, 'preview of the encore ace = 5★');
+    eq(EN.bestChip(d, 'c', { ace: true }), { ace: true, attr: 'c' }, 'bestChip sees the 5★ ace');
+    h = hand(d, ACE(HONEST));
+    eq([h.cl.pStar, h.cl.pBase, h.enc, st(d), d.p.aceUsed, d.stats.enc.used], [5, 5, null, 'done', true, 1], 'second throw = 5★, then done');
+    h = hand(d, CAUGHT); h = hand(d, CAUGHT);
+    ok(!h.enc && st(d) === 'done' && d.p.aceUsed && !EN.legalActions(d).some(a => a.ace), 'one per duel: no second encore'); }
+  { // 丟出去那手沒看穿、第 3 手看穿 → 回來（從丟的那手起算）；丟之前看穿不算
+    const d = aceDuel('pearl');
+    let h = hand(d, CAUGHT);                                         // 還沒丟：看穿也不算
+    ok(!h.enc && st(d) === 'idle', 'before the throw: nothing');
+    h = hand(d, ACE(W(HONEST, { h: 'c', ec: mk(3, 1, 1), ea: 'c' })));   // 冷門王牌（冷 7）剋經、照實
+    ok(!h.enc && st(d) === 'wait' && d.p.enc.from === 2 && d.p.aceUsed, 'thrown at hand 2 (honest) → waiting from hand 2');
+    h = hand(d, CAUGHT);
+    ok(h.enc && h.enc.src === 'hit' && d.p.enc.lit === 3 && !d.p.aceUsed && d.p.encAce && EN.view(d).aceStar === 5, 'caught at hand 3 → ace back');
+    h = hand(d, CAUGHT); ok(!h.enc && st(d) === 'hit', 'already lit: no second event'); }
+  { // 7 星王牌條件以外的不算：被剋、平手、照實剋都不亮
+    const d = aceDuel('heresy');
+    hand(d, ACE(W(HONEST, { h: 'o', ec: mk(1, 3, 1), ea: 'o' })));   // 硬 7 剋冷、照實
+    for (const x of [COUNTERED, TIE, HONEST, SAME]) { const h = hand(d, x); ok(!h.enc, 'no encore on ' + JSON.stringify(x.h + x.pa + x.ea)); }
+    ok(st(d) === 'wait', 'still waiting'); }
+  { // debugOutcome.caught：e2e 造「看穿」（照實那手也算）；false＝真的唬也不算
+    const d = aceDuel('hall'), h = hand(d, ACE(W(HONEST, { dbg: { kind: 'counter', toE: 7, toP: 0, caught: true } })));
+    ok(h.enc && h.enc.src === 'hit', 'debugOutcome.caught true → caught');
+    const d2 = aceDuel('hall'), h2 = hand(d2, ACE(W(CAUGHT, { dbg: { kind: 'counter', toE: 7, toP: 0, caught: false } })));
+    ok(!h2.enc, 'debugOutcome.caught false → not caught'); }
+  { // ?fac=1 異端 7 星王牌＝同色比贏一次（修正輪：連剋新手照提示剋就成立）；丟之前的同色比贏不算
+    const d = aceDuel('heresy', { fac: true });
+    eq(d.p.enc.when, 'sameWin', 'fac heresy ace: sameWin');
+    let h = hand(d, SAME); ok(!h.enc, 'sameWin before the throw');
+    h = hand(d, ACE(W(HONEST, { h: 'o', ec: mk(1, 3, 1), ea: 'o' }))); ok(!h.enc && st(d) === 'wait', 'throw (硬 7 剋冷)');
+    h = hand(d, TIE); ok(!h.enc, 'tie is not a win');
+    h = hand(d, SAME); ok(h.enc && h.enc.when === 'sameWin' && d.p.enc.lit === 4 && d.p.encAce, 'sameWin after the throw → ace back');
+    // 連剋的機制（家族表裡已經沒有卡用，引擎照舊）：指定 combo2 的 7 星王牌
+    const K3 = Object.assign({}, K, { encore: Object.assign({}, X, { facHeresy: 'combo2' }) });
+    const pDef = EN.playerDef(K3, { bag: K.gifts.heresy.concat(BP3), ace: 'heresy', relics: [], fac: { picks: {}, tal: {}, trialNodes: {} } }, { encore: true, fac: true });
+    const d2 = norm(EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), { seed: 17, hintTable: HINTS, encore: true }).duel, {});
+    eq(d2.p.enc.when, 'combo2', 'combo2 still works when configured');
+    const H = { h: 'o', pc: mk(1, 1, 4), pa: 'h', ec: mk(1, 2, 1), ea: 'o' };   // 硬剋冷、照實
+    h = hand(d2, H); ok(!h.enc, 'counter before the throw');
+    h = hand(d2, ACE(H)); ok(!h.enc && st(d2) === 'wait', 'throw (counter) — the counter before it does not pair');
+    h = hand(d2, H); ok(h.enc && h.enc.when === 'combo2' && d2.p.enc.lit === 3, 'two counters from the throw → encore'); }
+
+  // ---- 4 留到下一位：條件成立那手這場就結束 → over.encCarry；下一場金籤、丟第一次 → 6 星安可盤；只留一場；give 對不上不吃 ----
+  { const d = aceDuel('hall', { eHp: 5 }), h = hand(d, ACE(CAUGHT));
+    ok(h.enc && h.over && h.over.win && JSON.stringify(h.over.encCarry) === '{"give":"again"}' && JSON.stringify(d.over.encCarry) === '{"give":"again"}' && d.stats.enc.carryOut === 1, 'last hand lit → carried');
+    ok(h.enc.carry === true && d.log[d.log.length - 1].enc.carry === true, 'lit on the last hand → encore event／log marked carry (結果句「翻面！留到下一位」)');
+    const d2 = aceDuel('hall', { carry: { give: 'again' } });
+    eq([st(d2), d2.p.enc.src, d2.stats.enc.carryIn, EN.view(d2).enc.carry, EN.view(d2).aceStar], ['carry', 'carry', 1, true, 7], 'next duel: carry armed (gold tag), first throw is the real 7★');
+    let x = hand(d2, ACE(HONEST));
+    eq([x.cl.pStar, x.enc && x.enc.src, st(d2), d2.p.encAce, d2.p.aceUsed], [7, 'carry', 'hit', true, false], 'after the first throw → 5★ encore disc');
+    x = hand(d2, CAUGHT); ok(!x.enc, 'carried duel does not watch the condition again');
+    d2.e.hp = 1; x = hand(d2, CAUGHT);
+    ok(x.over && !x.over.encCarry && !d2.over.encCarry && st(d2) === 'hit', 'unused carried encore is not carried again');
+    const d3 = aceDuel('hall', { carry: { give: 'star' } }); eq([st(d3), d3.p.enc.src, d3.stats.enc.carryIn], ['idle', null, 0], 'carry give mismatch → dropped');
+    const d4 = aceDuel('hall', { carry: { give: 'heal' } }); eq(st(d4), 'idle', 'heal never carries');
+    const K2 = Object.assign({}, K, { encore: Object.assign({}, X, { carry: false }) });
+    const pDef = EN.playerDef(K2, { bag: K.gifts.hall.concat(BP3), ace: 'hall', relics: [] }, { encore: true });
+    const d5 = norm(EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), { seed: 17, hintTable: HINTS, encore: true }).duel, { eHp: 5 });
+    const h5 = hand(d5, ACE(CAUGHT)); ok(h5.enc && h5.over && !h5.over.encCarry, 'encore.carry false → not carried'); }
+  { // run：finishFight 寫 run.encCarry、下一場 startFight 吃掉清成 null；輸了說情重打＝下一場；一趟結束清掉
+    const go = sk => { const r = EN.newRun(K, { seedKey: sk, runNo: 2, ace: 'hall', prologue: false }); EN.choose(r, K, EN.bargainPolicy(r, K)); return r; };
+    const next = (r) => { for (let g = 0; g < 40 && r.pending; g++) { const s0 = EN.nextStep(r); const ch = ['stall', 'draft', 'reward'].includes(s0) ? EN.cPolicy(r, K, {}) : EN.runPolicy(r, K); if (!EN.choose(r, K, ch).ok) break; } };
+    const r = go('e32run'); let f = EN.startFight(r, K, {}); norm(f.duel, { eHp: 5 });
+    hand(f.duel, ACE(CAUGHT)); let res = EN.finishFight(r, K);
+    eq([res.win, res.encCarry, r.encCarry, r.stats.enc.fights, r.stats.enc.lit, r.stats.enc.carryOut], [true, { give: 'again' }, { give: 'again' }, 1, 1, 1], 'finishFight: run.encCarry written');
+    next(r); f = EN.startFight(r, K, {});
+    eq([f.duel.p.enc.state, f.duel.p.enc.src, r.encCarry], ['carry', 'carry', null], 'next main duel eats the carry');
+    // 這一場：丟一次（安可盤回來）、下一手被剋到死 → 輸；沒用到的留下來的不再往下留
+    norm(f.duel, { hp: 1 }); hand(f.duel, ACE(HONEST)); hand(f.duel, COUNTERED); res = EN.finishFight(r, K);
+    eq([res.win, res.encCarry, r.encCarry, r.pending && r.pending.type], [false, null, null, 'retry'], 'carried one unused → lost → nothing carried');
+    // 說情重打＝下一場：輸掉那場自己亮了（還沒用）→ 留給重打那場
+    const r2 = go('e32retry'); f = EN.startFight(r2, K, {}); norm(f.duel, { hp: 1 });
+    hand(f.duel, ACE(CAUGHT)); hand(f.duel, COUNTERED); res = EN.finishFight(r2, K);
+    eq([res.win, r2.pending && r2.pending.type, r2.encCarry], [false, 'retry', { give: 'again' }], 'lost with a lit encore → carried to the retry');
+    EN.choose(r2, K, { type: 'retry' }); f = EN.startFight(r2, K, {}); eq([f.duel.p.enc.state, r2.encCarry], ['carry', null], 'retry = next duel: carry eaten');
+    // 一趟結束清掉：沒有說情可用、輸了 → run.over、run.encCarry null
+    const r3 = go('e32dead'); r3.retryLeft = 0; r3.plea = 0; r3.safety = false; f = EN.startFight(r3, K, {}); norm(f.duel, { hp: 1 });
+    hand(f.duel, ACE(CAUGHT)); hand(f.duel, COUNTERED); res = EN.finishFight(r3, K);
+    eq([r3.over, res.encCarry, r3.encCarry], ['dead', null, null], 'run over → carry cleared'); }
+
+  // ---- 5 頂點卡（?apex=1）：發動那手不算、下一手起；四種條件 × 再發動／下一手 +1 星／剋中多扣 2／回 2 聲望 ----
+  { // 看穿 → 再發動（OK Computer：回 2）；apexHist 留第一次；第二次發動＝用掉；之後不再亮
+    const AG = withEnc('radiohead|ok computer', { when: 'caught', give: 'again' });
+    const d = apexDuel('radiohead|ok computer', { hp: 6, ability: AG });
+    let h = hand(d, W(CAUGHT, { apex: true }));
+    ok(!h.enc && st(d) === 'wait' && d.p.enc.from === 2 && d.p.hp === 8, 'activation hand caught → does not count (from hand 2)');
+    h = hand(d, CAUGHT);
+    eq([h.enc && h.enc.src, h.enc && h.enc.give, d.p.aceUsed, d.p.apexOn, d.p.apexHist, EN.canApex(d), EN.view(d).apex.can], ['hit', 'again', false, null, [{ n: 1, heal: 2 }], true, true], 'caught next hand → ability back');
+    h = hand(d, W(HONEST, { apex: true }));
+    eq([h.evs[0].t, h.evs[0].heal, d.p.hp, st(d), d.stats.apexAt2, d.stats.enc.used, EN.canApex(d)], ['apex', 2, 10, 'done', 3, 1, false], 'second firing heals again → done');
+    h = hand(d, CAUGHT); ok(!h.enc && st(d) === 'done', 'no more');
+    // 回來時聲望是滿的：發動鈕照舊不能按（full）
+    const d2 = apexDuel('radiohead|ok computer', { hp: 10, ability: AG }); hand(d2, W(CAUGHT, { apex: true })); hand(d2, CAUGHT);
+    ok(st(d2) === 'hit' && d2.p.hp === 12 && !EN.canApex(d2) && EN.view(d2).apex.full, 'heal-only at full hp: back but cannot fire (full)'); }
+  { // 同色比贏 → 再發動（Thriller 指定：家族預設已改多扣 2）；發動那手同色比贏不算
+    const TS = withEnc('michael jackson|thriller', { when: 'sameWin', give: 'again' });
+    const d = apexDuel('michael jackson|thriller', { ability: TS });
+    let h = hand(d, W(SAME, { apex: true })); ok(!h.enc, 'sameWin on the activation hand does not count');
+    h = hand(d, W(SAME, { pc: mk(1, 4, 1), ec: mk(1, 4, 1) })); ok(!h.enc, 'same color tie ≠ win');
+    h = hand(d, SAME); ok(h.enc && h.enc.when === 'sameWin' && EN.canApex(d), 'sameWin → ability back');
+    // 不同色的「剋不動改比星」比贏不算同色比贏
+    const d2 = apexDuel('michael jackson|thriller', { ability: TS }); hand(d2, W(SAME, { apex: true }));
+    h = hand(d2, { h: 'c', pc: mk(5, 1, 1), pa: 'c', ec: mk(1, 2, 1), ea: 'o' }); ok(h.cl.kind === 'mirrorWin' && h.cl.blocked === 'gap' && !h.enc, 'gap mirrorWin (different colors) is not sameWin'); }
+  { // 背水 → 再發動（非常階段：回 2）：這手結算完聲望 ≤ 三成
+    const LW = withEnc('非常階段|蔵六の奇病', { when: 'lowhp', give: 'again' });
+    const d = apexDuel('非常階段|蔵六の奇病', { hp: 9, ability: LW });
+    hand(d, W(TIE, { apex: true })); ok(d.p.hp === 11 && st(d) === 'wait', 'heal 2 → 11');
+    d.p.hp = 5; let h = hand(d, W(COUNTERED, { ec: mk(1, 1, 1), pc: mk(1, 1, 1) })); ok(!h.enc && d.p.hp === 4, '4／12 > 30%: no');
+    h = hand(d, W(COUNTERED, { ec: mk(1, 1, 1), pc: mk(1, 1, 1) })); ok(h.enc && h.enc.when === 'lowhp' && d.p.hp === 3 && EN.canApex(d), '3／12 ≤ 30% → back');
+    const d2 = apexDuel('非常階段|蔵六の奇病', { hp: 3, ability: LW }); hand(d2, W(TIE, { apex: true })); ok(d2.p.hp === 5, 'activation');
+    d2.p.hp = 1; d2.e.hp = 99; h = hand(d2, W(COUNTERED, { ec: mk(1, 3, 1) })); ok(d2.over && !h.enc, 'dead (hp ≤ 0) is not 背水'); }
+  { // 連剋 → 下一手剋中多扣 2（Zodiac：整場一律剋得動、扣較大的）：發動那手可以是連剋的第一手；多扣在倍數之後、他的底氣之前；那手不剋中就沒了
+    const ZC = withEnc('barney wilen|zodiac', { when: 'combo2', give: 'hit' });
+    const d = apexDuel('barney wilen|zodiac', { ability: ZC });
+    const P1 = { h: 'c', pc: mk(1, 2, 1), pa: 'o', ec: mk(4, 1, 1), ea: 'c' };   // 冷 2 剋經 4（借星：扣 4）、照實
+    let h = hand(d, W(P1, { apex: true })); ok(!h.enc && h.cl.kind === 'counter' && h.cl.toE === 4, 'activation hand counter (borrow 4)');
+    h = hand(d, P1); ok(h.enc && h.enc.give === 'hit' && st(d) === 'next' && d.p.enc.at === 3, 'combo2 (activation hand pairs) → next hand +2');
+    eq(EN.view(d).enc.next, 'hit', 'view.enc.next on the bonus hand (already hand 3)');
+    d.e.def = 2;
+    const pv = EN.preview(d, { i: 0, attr: 'o' }, { attr: 'c', star: 4 });
+    h = hand(d, P1);
+    const t6 = 4 + X.hit;   // 修正輪：hit 1
+    ok(h.cl.toE === Math.max(Math.ceil(t6 / 2), t6 - 2) && h.cl.notes.some(n => n.enc === 'hit' && n.n === X.hit) && st(d) === 'done' && d.log[2].encBonus === 'hit', 'bonus hand: (4 borrowed + hit) then his 底氣 → ' + h.cl.toE);
+    ok(pv.notes.some(n => n.enc === 'hit'), 'preview shows the bonus note');
+    const d2 = apexDuel('barney wilen|zodiac', { ability: ZC }); hand(d2, W(P1, { apex: true })); hand(d2, P1);
+    h = hand(d2, TIE); ok(!h.cl.notes.some(n => n.enc) && st(d2) === 'done', 'bonus hand not a counter → lost');
+    // 斷掉的連剋不算：剋、平手、剋
+    const d3 = apexDuel('barney wilen|zodiac', { ability: ZC }); hand(d3, W(TIE, { apex: true })); hand(d3, P1); h = hand(d3, TIE); h = hand(d3, P1); ok(!h.enc, 'broken combo'); h = hand(d3, P1); ok(h.enc, 'two in a row → lit'); }
+  { // 看穿 → 下一手 +1 星（Gould：這場比星多算 1）；+1 星跟流派加星相加（同一步直接加）
+    const GS = withEnc('glenn gould|bach: the goldberg variations (1955)', { when: 'caught', give: 'star' });
+    const d = apexDuel('glenn gould|bach: the goldberg variations (1955)', { ability: GS });
+    hand(d, W(TIE, { apex: true })); let h = hand(d, CAUGHT); ok(h.enc && h.enc.give === 'star' && st(d) === 'next', 'caught → next hand +1★');
+    h = hand(d, W(SAME, { pc: mk(1, 3, 1), ec: mk(1, 4, 1) }));   // 冷 3＋1 對冷 4，比星多算 1 → 贏 1
+    eq([h.cl.pStar, h.cl.kind, h.cl.toE, h.cl.notes.filter(n => n.enc).map(n => n.text)], [4, 'mirrorWin', 1, [X.ui.note.star.replace('{n}', 1)]], '+1★ (pStar 4) stacks with mirrorPlus');
+    const dF = apexDuel('glenn gould|bach: the goldberg variations (1955)', { fac: true, picks: { h_eye: 1 }, ability: GS });
+    hand(dF, W(TIE, { apex: true })); hand(dF, CAUGHT);
+    h = hand(dF, { h: 'h', pc: mk(3, 1, 1), pa: 'c', ec: mk(1, 1, 3), ea: 'h' }); eq(h.cl.pStar, 5, 'fac 識貨 +1 and encore +1 both add (3+1+1)'); }
+  { // 連剋 → 回 2 聲望（Filth）：當場回；log 那手 pHp／heal 跟著改；滿聲望回 0
+    const FH = withEnc('swans|filth', { when: 'combo2', give: 'heal' });
+    const d = apexDuel('swans|filth', { hp: 6, ability: FH });
+    const H = { h: 'o', pc: mk(1, 1, 4), pa: 'h', ec: mk(1, 2, 1), ea: 'o' };
+    hand(d, W(H, { apex: true })); const h = hand(d, H);
+    eq([h.enc && h.enc.heal, h.enc && h.enc.pHp, d.p.hp, h.cl.pHp, d.log[1].pHp, d.log[1].heal, d.log[1].enc, st(d), d.stats.enc.heal], [2, 8, 8, 6, 8, 2, { when: 'combo2', give: 'heal', src: 'hit', heal: 2 }, 'done', 2], 'heal 2 on the spot');
+    const d2 = apexDuel('swans|filth', { hp: 12, ability: FH }); hand(d2, W(H, { apex: true })); const h2 = hand(d2, H); eq([h2.enc.heal, d2.p.hp], [0, 12], 'full hp: heals 0'); }
+  { // 回聲望取大不相加：同一手拆穿回血（critLeech）已回 ≥2 → 安可不再加；回 1 → 補到 2；?fac=1 異端拆穿回 2 → 安可 0
+    const ab = enc => ({ id: 't-leech', card: K.aces.heresy, tier: 'heresy', name: '測', text: 'x', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null, encore: enc });
+    const d = apexDuel('swans|filth', { hp: 4, ability: ab({ when: 'caught', give: 'heal' }) });
+    hand(d, W(TIE, { apex: true }));
+    let h = hand(d, CAUGHT);   // 經 5 剋硬：扣 5，吸 3
+    eq([h.cl.toE, d.log[1].heal, h.enc.heal, d.p.hp], [5, 3, 0, 7], 'leech 3 ≥ 2 → encore adds 0');
+    const d2 = apexDuel('swans|filth', { hp: 4, ability: ab({ when: 'caught', give: 'heal' }) });
+    hand(d2, W(TIE, { apex: true }));
+    h = hand(d2, W(CAUGHT, { pc: mk(2, 1, 1) }));   // 扣 2，吸 1 → 安可補 1
+    eq([h.cl.toE, h.enc.heal, d2.p.hp], [2, 1, 6], 'leech 1 → encore tops up to 2');
+    const abB = { id: 't-bounce', card: K.aces.heresy, tier: 'heresy', name: '測', text: 'x', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null, encore: { when: 'caught', give: 'heal' } };
+    const d3 = apexDuel('swans|filth', { hp: 4, fac: true, ability: abB });
+    hand(d3, W(TIE, { apex: true })); h = hand(d3, CAUGHT);
+    eq([h.cl.heal, h.enc.heal, d3.p.hp], [2, 0, 6], 'fac heresy crit heal 2 → encore 0 (max, not sum)'); }
+  { // 多扣 2 在倍數之後：(原本 ×2)＋2，不是 (原本＋2)×2
+    const ab = { id: 't-crit', card: K.aces.heresy, tier: 'heresy', name: '測', text: 'x', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null, encore: { when: 'combo2', give: 'hit' } };
+    const d = apexDuel('swans|filth', { ability: ab });
+    hand(d, W(HONEST, { apex: true })); hand(d, HONEST);
+    const h = hand(d, CAUGHT); eq(h.cl.toE, 5 * 2 + X.hit, 'crit ×2 then +hit');
+    const dF = apexDuel('swans|filth', { ability: ab, fac: true });   // ?fac=1 異端：拆穿多扣 1（加法）、倍數取大（×2）、再 +2
+    hand(dF, W(HONEST, { apex: true })); hand(dF, HONEST);
+    eq(hand(dF, CAUGHT).cl.toE, (5 + 1) * 2 + X.hit, 'fac heresy: (5+1)×2 then +hit'); }
+  { // 留著型（鄧麗君）：安可＝回到「留著」（小效果又生效，直到第二次發動）
+    const d = apexDuel('鄧麗君 teresa teng|淡淡幽情', { ability: withEnc('鄧麗君 teresa teng|淡淡幽情', { when: 'sameWin', give: 'again' }) });
+    ok(EN.view(d).apex.live === 'hold', 'holding before activation');
+    hand(d, W(SAME, { apex: true })); ok(EN.view(d).apex.live === null && st(d) === 'wait', 'activated: hold off');
+    const h = hand(d, SAME); ok(h.enc && EN.view(d).apex.live === 'hold' && EN.canApex(d), 'encore → back to holding');
+    const pv = EN.preview(d, { i: 0, attr: 'c' }, { attr: 'o', star: 3 }); hand(d, COUNTERED);
+    ok(pv.apex && pv.apex.src === 'hold', 'hold effect previews again'); }
+  { // 頂點卡留到下一位：下一手型 → 下一場第一手吃（不用先發動）；再發動型 → 第一次發動後回來
+    const d = apexDuel('barney wilen|zodiac', { eHp: 6, ability: withEnc('barney wilen|zodiac', { when: 'combo2', give: 'hit' }) });
+    const P1 = { h: 'c', pc: mk(1, 2, 1), pa: 'o', ec: mk(4, 1, 1), ea: 'c' };
+    hand(d, W(P1, { apex: true })); const h = hand(d, P1);
+    ok(h.over && JSON.stringify(h.over.encCarry) === '{"give":"hit"}', 'zodiac lit on the last hand → carried {hit}');
+    const d2 = apexDuel('barney wilen|zodiac', { carry: { give: 'hit' } });
+    eq([st(d2), d2.p.enc.at, EN.view(d2).enc.next, EN.view(d2).enc.carry], ['next', 1, 'hit', true], 'carried hit → hand 1');
+    const h2 = hand(d2, { h: 'h', pc: mk(1, 4, 1), pa: 'o', ec: mk(2, 1, 1), ea: 'c' });   // 冷 4 剋經 2（沒發動：照星）＋2
+    eq([h2.cl.toE, st(d2)], [4 + X.hit, 'done'], 'carried bonus applies without firing (4+hit)');
+    const d3 = apexDuel('radiohead|ok computer', { hp: 5, carry: { give: 'again' }, ability: withEnc('radiohead|ok computer', { when: 'caught', give: 'again' }) });
+    let x = hand(d3, W(TIE, { apex: true }));
+    ok(x.enc && x.enc.src === 'carry' && EN.canApex(d3) && d3.p.apexHist.length === 1, 'carried again: back after the first firing');
+    x = hand(d3, W(TIE, { apex: true })); ok(st(d3) === 'done' && d3.p.hp === 9, 'second firing'); }
+
+  // ---- 6 存讀檔：亮過之後 JSON 來回接著打，事件一樣 ----
+  { const d = apexDuel('glenn gould|bach: the goldberg variations (1955)');
+    hand(d, W(TIE, { apex: true })); hand(d, CAUGHT);
+    const saved = JSON.parse(JSON.stringify(d)), acts = [];
+    const tail = []; for (let g = 0; g < 4 && !d.over; g++) { const a = EN.legalActions(d)[g % 3]; acts.push(a); tail.push(...EN.resolveTurn(d, a)); }
+    const t2 = []; for (const a of acts) t2.push(...EN.resolveTurn(saved, a));
+    ok(JSON.stringify(t2) === JSON.stringify(tail), 'JSON round trip mid-duel (bonus pending) → same events'); }
+
+  // ---- 7 整場：startFight 主線（預設＋?apex=1 每張）× 策略（thoughtful／novice／random／encorePolicy）：每手每個合法動作 preview＝resolve、策略合法、發動不取亂數 ----
+  { let checked = 0, lit = 0, carried = 0, used = 0;
+    const cases = [];
+    for (const t of TIERS) for (let s = 1; s <= (QUICK ? 3 : 10); s++) cases.push({ t, s, apex: false, aceId: null });
+    for (const t of TIERS) for (const x of EN.apexList(K, t)) for (let s = 1; s <= (QUICK ? 1 : 2); s++) cases.push({ t, s, apex: true, aceId: x.card });
+    for (const c of cases) {
+      const r = EN.newRun(K, Object.assign({ seedKey: 'e32all-' + c.t + c.s + (c.aceId || ''), runNo: 2, ace: c.t, prologue: false }, c.aceId ? { aceId: c.aceId } : {}));
+      EN.choose(r, K, EN.bargainPolicy(r, K));
+      const pols = ['thoughtful', 'novice', 'random', 'enc'];
+      for (let k = 0; k < 4 && !r.over; k++) {
+        if (r.pending) { for (let g = 0; g < 40 && r.pending; g++) { const s0 = EN.nextStep(r); const ch = ['stall', 'draft', 'reward'].includes(s0) ? EN.cPolicy(r, K, {}) : EN.runPolicy(r, K); if (!EN.choose(r, K, ch).ok) break; } }
+        if (r.over || EN.nextStep(r) !== 'fight') break;
+        const f = EN.startFight(r, K, c.apex ? { apex: true } : {}), d = f.duel, pn = pols[(c.s + k) % 4];
+        const P = pn === 'enc' ? EN.encorePolicy('thoughtful') : EN.policies[pn], R = lcg(c.s * 97 + k);
+        let g = 0;
+        while (!d.over && g++ < 12) {
+          const side = { i: d.plan.idx, attr: d.plan.attr };
+          const acts = EN.legalActions(d).concat(EN.canApex(d) ? EN.legalActions(d).map(a => Object.assign({}, a, { apex: true })) : []);
+          const before = JSON.stringify(d);
+          for (const a of (QUICK ? acts.slice(0, 6) : acts)) {
+            const pv = EN.preview(d, a, side), cl = clashOf(EN.resolveTurn(JSON.parse(before), a));
+            if (JSON.stringify(sig(pv)) !== JSON.stringify(sig(cl))) ok(false, 'encore preview === clash', { c, n: d.n, a, pv: sig(pv), cl: sig(cl) }); else pass++;
+            checked++;
+          }
+          ok(JSON.stringify(d) === before, 'preview pure');
+          const act = P(d, R, {}, K);
+          if (!ok(EN.isLegal(d, act), 'policy legal ' + pn, act)) break;
+          EN.resolveTurn(d, act);
+        }
+        const se = d.stats.enc || {}; lit += se.lit | 0; carried += se.carryOut | 0; used += se.used | 0;
+        EN.finishFight(r, K);
+      }
+    }
+    console.log('     encore: ' + checked + ' action previews checked; lit ' + lit + ', carried ' + carried + ', used ' + used + ' over ' + cases.length + ' runs');
+    ok(lit > (QUICK ? 10 : 40) && carried > 3 && used > 5, 'encore lights, carries and gets used in real duels', [lit, carried, used]); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

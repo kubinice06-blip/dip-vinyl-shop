@@ -42,6 +42,14 @@
 //   王牌格狀態：可發動＝金框；發動中＝發亮＋「這手／整場」；用過＝變淡＋「用過」；留著型還沒發動＝封面角小金點。
 //   API：apex(open?)＝開／收能力框；fireApex()＝發動（同按鈕）。data-tut：apex-box、apex-go。
 //
+// 第 I 波 I-1「翻面」（王牌條件加成；view().enc 有才走，content.encore 關／序章／直接開打沒有＝一個元素都不建；scratchpad v5/wave-i SPEC-I §1.6、build1/CONTRACT §3、§7）：
+//   王牌格封面下緣一條籤 .enctag（data-tut enc-tag）：「看穿→再丟」「連剋→再一次」灰＝還在等、金＝翻面了／這手吃加成（字換成「下一手 +1 星」）／上一場留下來的「翻面×1」；用掉就收起。
+//   預設 7 星王牌：丟出去之後在等條件＝王牌格留著（.ghost 變淡、不能丟；點一下＝上面一行說明「翻面：丟出之後看穿他一次…」）；
+//     成立＝王牌回到手上，星數照 view.aceStar（6），金框脈動到再丟出去；再丟完就不在手牌裡（跟以前用過的王牌一樣）。
+//   頂點卡（?apex=1）：成立＝能力格回到可以發動（金框），能力框多一行說明；整場型吃「下一手」加成時籤寫「下一手 +1 星」。
+//   成立那手：結果句小字多一行「翻面！{加成句}」（clashText 吃 clash 形狀的 enc；recap.js 同一套）、你頭上飄「翻面！」、回聲望型的聲望條長回來＋飄字；
+//     換手（揭曉收起）之後 hooks.encore(ev, {album, verb}) → ui.js 吐司「翻面！《專輯》可以再丟一次」（停 3 秒、點了收）、第一次老闆那句。事件 'encore'(ev)。
+//
 // 規則：畫面上每個數字都來自引擎的 view()／resolveTurn() 事件；UI 不算傷害、不讀 duel.plan。提示只寫句子，不寫屬性名（D §5）。
 // 一手（T_FLIP 280／T_HIT 560／T_LINE 1460／T_NEXT 2060）：0 你的牌飛上牌桌、手牌收回疊好、他那格「蓋著」、舞台一台唱盤開演 → 280 他那格翻面
 //   → 560 浮框三行、聲望 → 1460 收成「上一手」→ 2060 下一手（牌桌兩張縮小、搬進最上面的上一手小列）。結算中點畫面任一處（牌桌兩張除外：那是唱片資訊；淡掉的上一手小列算牌桌）＝這手 4 倍速；停住等點時點任一處（牌桌兩張也算）＝繼續；?fast=1 全程 4 倍速；?debug=1 → window.__dl。
@@ -205,6 +213,20 @@
   // 頂點卡試做（?apex=1）的畫面字：content.apexTrial.ui（e2e 直接呼叫 _fmt.clashText 時沒給 U → 讀頁面上的 DipLabContent）
   const BEATS_OF = { o: 'c', c: 'h', h: 'o' };          // x 剋 BEATS_OF[x]（＝engine BEATS）
   const apexUIOf = () => { const Cn = (typeof window !== 'undefined' && window.DipLabContent) || null; return (Cn && Cn.apexTrial && Cn.apexTrial.ui) || {}; };
+  // 第 I 波翻面：content.encore（e2e 直接呼叫 _fmt.clashText 時讀頁面上的 DipLabContent）。成立那手的小字「翻面！{加成句}」：
+  //   enc＝{give, mode, src, heal?}（clash 事件本身沒有：play() 從同一手的 {t:'encore'} 事件補上；recap.js 從 duel.log 那手的 enc 補上）。
+  //   enc.carry＝成立在這場最後一手（engine finish 標的）：寫「翻面！留到下一位」。7 星王牌的「再發動」寫「王牌回到手上（{aceStar} 星）」；回聲望寫真的回了幾（回 0＝滿聲望，不寫這句：跟頂點卡「不寫回 0 聲望」同一個規矩）
+  const encCfgOf = () => { const Cn = (typeof window !== 'undefined' && window.DipLabContent) || null; return (Cn && Cn.encore) || null; };
+  function encLitText(e) {
+    const X = encCfgOf(), U = (X && X.ui) || {}; if (!e || !U.lit) return '';
+    const G = U.give || {}, num = k => (X && Number.isInteger(X[k]) ? X[k] : ({ star: 1, hit: 2, heal: 2, aceStar: 6 })[k]);
+    if (e.carry && U.litCarry) return U.litCarry;      // 修正輪：成立在這場最後一手＝留到下一位（王牌這時候不會回來，領獎畫面也寫「翻面留到下一位」）
+    let g;
+    if (e.give === 'again') g = e.mode === 'ace' ? fillU(G.ace, { star: num('aceStar') }) : G.again;
+    else if (e.give === 'heal') { if (!((e.heal | 0) > 0)) return ''; g = fillU(G.heal, { n: e.heal | 0 }); }
+    else g = fillU(G[e.give], { n: num(e.give) });
+    return g ? fillU(U.lit, { give: g }) : '';
+  }
   const fillU = (t, o) => String(t || '').replace(/\{(\w+)\}/g, (m, k) => (o && o[k] != null ? o[k] : m));
   function clashText(c, T, hints, U) {
     T = T || T0;
@@ -250,7 +272,9 @@
     }
     const notes = (c.notes || []).map(n => (typeof n === 'string' ? n : n && n.text) || '').filter(Boolean);
     if (apx && c.eAce && U && U.eAceNote) notes.push(U.eAceNote);   // 旗標下你的王牌不比星，他帶的照舊 7 星：丟出來那手寫明（審查 11-16）
-    return { l1, l2, l3, cls, rule, notes, bluff: (c.script ? !!c.bluff : lie || gotRead) && !saw, read, saw, gotRead };
+    const encLine = c.enc ? encLitText(c.enc) : '';                // 第 I 波翻面：成立那手多一行（結果框金字、上一手那行、紀錄都看得到）
+    if (encLine) notes.push(encLine);
+    return { l1, l2, l3, cls, rule, notes, bluff: (c.script ? !!c.bluff : lie || gotRead) && !saw, read, saw, gotRead, encLine };
   }
 
   // ------------------------------------------------------------------ module state
@@ -629,7 +653,7 @@
         if (!c) { el.className = 'slot p empty'; el.innerHTML = `<span class="ph">${esc(T('slotP'))}</span>`; return; }
         const a = S.sel.attr, ace = S.sel.i === 'ace';
         el.className = 'slot p pre' + (ace ? ' ace' : '');
-        el.innerHTML = `<span class="cvw">${img(c)}${ace ? `<span class="acetag">${esc(T('aceWord'))}</span>` : ''}</span><div class="who">${who}<span class="${a}">${ZH[a]} <span class="num">${starOf(c, a)}</span></span></div>`;
+        el.innerHTML = `<span class="cvw">${img(c)}${ace ? `<span class="acetag">${esc(T('aceWord'))}</span>` : ''}</span><div class="who">${who}<span class="${a}">${ZH[a]} <span class="num">${ace ? aceStarOf(v, c, a) : starOf(c, a)}</span></span></div>`;
         return;
       }
       const d = Tb && Tb[side];
@@ -688,8 +712,9 @@
     }
     function renderRounds(v) { els.rounds.textContent = T('rounds', { n: Math.max(1, v.n | 0), max: v.maxRounds || (E.CFG && E.CFG.maxRounds) || 6 }); }
     function lastLineHTML(ct) {
+      const nt = ct.encLine ? ct.notes.filter(x => x !== ct.encLine) : ct.notes;   // 第 I 波翻面：那句另外上金色
       return `<span class="lb">${esc(T('lastPrefix'))}</span><b>${esc(ct.l1)}<span class="${ct.cls}">${esc(ct.l2)}</span></b>`
-        + (ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : '');
+        + (nt.length || ct.encLine ? `<span class="nt">${esc(nt.join('・'))}${ct.encLine ? `${nt.length ? '・' : ''}<span class="enc">${esc(ct.encLine)}</span>` : ''}</span>` : '');
     }
     function renderLast() { els.last.innerHTML = S.lastCt ? lastLineHTML(S.lastCt) : ''; }
     // ---- 上一手小列（店主 11-16「打完要把上一手的專輯留在檯面上，不然玩家無法看清楚對方打的專輯，就無法認識新專輯」）----
@@ -746,8 +771,43 @@
     function handIds(v) {
       const ids = [];
       (v.hand || []).forEach((c, i) => { if (c) ids.push(i); });
-      if (v.apex ? !!v.aceCard : aceLive(v)) ids.push('ace');   // 頂點卡試做：輔助卡格一直在（用過變淡），不是可以丟的唱片
+      if (v.apex ? !!v.aceCard : aceLive(v) || encGhost(v)) ids.push('ace');   // 頂點卡試做：輔助卡格一直在（用過變淡），不是可以丟的唱片；第 I 波翻面：丟出去之後在等條件＝留著變淡
       return ids;
+    }
+    // ---------------- 第 I 波 I-1 翻面（view().enc；沒有＝一個元素都不建、一個 class 都不加） ----------------
+    const encUI = () => (content.encore && content.encore.ui) || {};
+    const encNum = k => { const X = content.encore || {}; return Number.isInteger(X[k]) ? X[k] : ({ star: 1, hit: 2, heal: 2 })[k]; };
+    // 預設 7 星王牌丟出去了、在等條件（王牌格留著、不能丟）
+    const encGhost = v => !!(v && v.enc && v.enc.mode === 'ace' && v.enc.state === 'wait' && v.aceCard && !aceLive(v));
+    // 籤的顏色：金＝翻面了（王牌／能力回來了、這手吃加成、上一場留下來的）；灰＝還在等；用掉＝收起
+    const encTone = Q => !Q ? '' : Q.next || Q.state === 'hit' || Q.state === 'next' || Q.state === 'carry' ? 'lit' : Q.state === 'done' ? 'done' : 'wait';
+    function encTagText(Q) {
+      const U = encUI();
+      if (Q.next) return fillT((U.next || {})[Q.next], { n: encNum(Q.next) });   // 這手吃加成：「下一手 +1 星」
+      if (Q.state === 'carry') return U.carryTag || '';                          // 上一場留下來的：「翻面×1」
+      return typeof E.encoreTag === 'function' ? E.encoreTag(content, Q, { ace: Q.mode === 'ace' }) : '';
+    }
+    function encTagHTML(v) {
+      const Q = v && v.enc; if (!Q || Q.state === 'done') return '';
+      const t = encTagText(Q); if (!t) return '';
+      return `<span class="enctag ${encTone(Q)}${[...t].length > 7 ? ' long' : ''}" data-tut="enc-tag" data-enc="${esc(Q.state)}">${esc(t)}</span>`;
+    }
+    const encCls = v => v && v.enc ? ' enc ' + encTone(v.enc) + (encGhost(v) ? ' ghost' : '') : '';
+    // 說明句（王牌格點一下／能力框）：「翻面：丟出之後看穿他一次，王牌回到手上（6 星）。」
+    const encLineOf = v => v && v.enc && typeof E.encoreLine === 'function' ? E.encoreLine(content, v.enc, { ace: v.enc.mode === 'ace' }) : '';
+    // 7 星王牌這次丟出去是幾星（翻面回來的＝view.aceStar 6；沒有翻面＝封面那軸的星）
+    const aceStarOf = (v, c, a) => v && v.aceStar != null && a === aceAx(v) ? v.aceStar : starOf(c, a);
+    // 變淡的王牌格點一下：上面一行說明（跟按住發燒配件同一個小框；2.6 秒收）
+    function encTip(tl) {
+      const t = encLineOf(S.v); if (!t || !tl) return false;
+      els.pop.innerHTML = esc(t);
+      els.pop.hidden = false;
+      const br = tl.getBoundingClientRect(), rr = root.getBoundingClientRect();
+      els.pop.style.left = Math.max(8, Math.min(rr.width - els.pop.offsetWidth - 8, br.left - rr.left + br.width / 2 - els.pop.offsetWidth / 2)) + 'px';
+      els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
+      clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
+      emit('encTip', t);
+      return true;
     }
     // ---------------- 頂點卡試做（view().apex；旗標關時不走） ----------------
     const apxUI = () => (content.apexTrial && content.apexTrial.ui) || {};
@@ -757,8 +817,9 @@
     function apexTileHTML(v, c) {
       const X = v.apex, U = apxUI(), st = apexState(X), tm = (U.timing || {})[X.timing] || '';
       const lab = st === 'live' ? `<span class="apxs on">${esc(tm)}</span>` : st === 'used' ? `<span class="apxs">${esc(U.used || '')}</span>` : '';
-      return `<div class="tile ace apx ${st}${X.live === 'hold' ? ' hold' : ''}${S.apxOpen ? ' apxon' : ''}" data-tut="hand-ace" data-card="${esc(c.id)}" data-i="ace" data-apex="${st}">`
-        + `<button type="button" class="cvw" data-tut="card-ace" data-act="pick" aria-label="${esc(T('aceSlot') + '：' + title(c) + '・' + X.name + '（' + tm + '）')}">${img(c)}<span class="acetag">${esc(U.slot || T('aceSlot'))}</span>${lab}${X.live === 'hold' ? '<i class="apxdot" aria-hidden="true"></i>' : ''}</button></div>`;
+      const et = encTagHTML(v), ea = et ? '・' + encTagText(v.enc) : '';   // 第 I 波翻面：封面下緣的籤（能力那行「這手／整場／用過」往上挪一格）
+      return `<div class="tile ace apx ${st}${X.live === 'hold' ? ' hold' : ''}${S.apxOpen ? ' apxon' : ''}${encCls(v)}${et ? ' etag' : ''}" data-tut="hand-ace" data-card="${esc(c.id)}" data-i="ace" data-apex="${st}">`
+        + `<button type="button" class="cvw" data-tut="card-ace" data-act="pick" aria-label="${esc(T('aceSlot') + '：' + title(c) + '・' + X.name + '（' + tm + '）' + ea)}">${img(c)}<span class="acetag">${esc(U.slot || T('aceSlot'))}</span>${lab}${X.live === 'hold' ? '<i class="apxdot" aria-hidden="true"></i>' : ''}${et}</button></div>`;
     }
     function apexTileEl() { return els.tiles.querySelector('.tile[data-i="ace"]'); }
     function ensureApexEls() {
@@ -770,9 +831,10 @@
     }
     function apexBoxHTML(X) {
       const U = apxUI(), tm = (U.timing || {})[X.timing] || '';
+      const el = encLineOf(S.v), en = el && S.v.enc.state !== 'done' ? `<p class="enc ${encTone(S.v.enc)}">${esc(el)}</p>` : '';   // 第 I 波翻面：這張的條件與加成（用掉了就不寫）
       return `<div class="hd"><b>${esc(X.name)}</b><span class="tm">${esc(tm)}</span></div>`
-        + (X.used ? `<p class="tx used">${esc(U.usedNote || '')}</p>`
-          : `<p class="tx">${esc(X.text)}</p><div class="ft">${X.full ? `<small class="full">${esc(U.full || '')}</small>` : `<small>${esc(U.noStar || '')}</small>`}<button type="button" class="go key" data-tut="apex-go"${X.can ? '' : ' disabled'}>${esc(U.use || '')}</button></div>`);   // 只會回聲望的王牌、聲望滿＝不能發動，寫原因
+        + (X.used ? `<p class="tx used">${esc(U.usedNote || '')}</p>${en}`
+          : `<p class="tx">${esc(X.text)}</p>${en}<div class="ft">${X.full ? `<small class="full">${esc(U.full || '')}</small>` : `<small>${esc(U.noStar || '')}</small>`}<button type="button" class="go key" data-tut="apex-go"${X.can ? '' : ' disabled'}>${esc(U.use || '')}</button></div>`);   // 只會回聲望的王牌、聲望滿＝不能發動，寫原因
     }
     // 能力框：右緣對齊王牌格（夾在左右 16 px 裡）；放在提示框上面（蓋牌桌那兩格：出牌前只有蓋著的封套與空格）——要發動之前還看得到提示那句。
     //   提示框上面放不下（很矮的盤面）才放王牌格正上方
@@ -849,8 +911,9 @@
     function tileHTML(v, i) {
       const isAce = i === 'ace', c = cardOf(v, i); if (!c) return '';
       if (isAce && v.apex) return apexTileHTML(v, c);
-      return `<div class="tile${isAce ? ' ace' : ''}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
-        + `<button type="button" class="cvw" data-tut="${isAce ? 'card-ace' : 'card-' + i}" data-act="pick" aria-label="${esc((isAce ? '王牌：' : '') + title(c))}（按住看唱片資訊）">${img(c)}${isAce ? `<span class="acetag">${esc(T('aceSlot'))}</span>` : ''}</button></div>`;
+      const et = isAce ? encTagHTML(v) : '', ea = et ? '・' + encTagText(v.enc) : '';   // 第 I 波翻面：封面下緣的籤
+      return `<div class="tile${isAce ? ' ace' + encCls(v) : ''}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
+        + `<button type="button" class="cvw" data-tut="${isAce ? 'card-ace' : 'card-' + i}" data-act="pick" aria-label="${esc((isAce ? '王牌：' : '') + title(c) + ea)}（按住看唱片資訊）">${img(c)}${isAce ? `<span class="acetag">${esc(T('aceSlot'))}</span>` : ''}${et}</button></div>`;
     }
     function renderHand(v, opt) {
       opt = opt || {};
@@ -884,7 +947,8 @@
       const c = cardOf(v, sel.i); if (!c) return '';
       if (sel.i === 'ace') {
         const a = aceAx(v);
-        return `<button type="button" class="ab ace top ${a}" data-tut="chip-ace" data-i="ace" data-a="${a}" aria-label="${esc('王牌 ' + ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><span class="aw">${esc(T('aceWord'))}</span><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`;
+        const n = aceStarOf(v, c, a);                     // 第 I 波翻面：回到手上的那張 6 星
+        return `<button type="button" class="ab ace top ${a}${v.aceStar != null && n !== starOf(c, a) ? ' enc' : ''}" data-tut="chip-ace" data-i="ace" data-a="${a}" aria-label="${esc('王牌 ' + ZH[a] + ' ' + n + ' 星：丟出')}"><span class="aw">${esc(T('aceWord'))}</span><i>${ZH1[a]}</i><b class="key">${n}</b></button>`;
       }
       const top = topOf(c);
       // 鈕與鈕之間的縫（.abgap）什麼都不做：手指落在縫上被觸控校正吸到隔壁那顆時，用按下那一刻的原始座標認出來（inChipGap；RV11-2、V5 F5）
@@ -1152,6 +1216,7 @@
       if (!tl) return;            // 手牌區的空白（那一排左右、上下，打開那張旁邊的縫）：什麼都不做——收回只在再點打開那張、或點手牌外面（RV11-3）
       const i = idxOfTile(tl);
       if (i === 'ace' && apexMode()) { if (!apexTap()) bumpEl(cv); return; }   // 頂點卡試做：輔助卡格＝開／收能力框（不跳屬性鈕、不能拿來比星）
+      if (i === 'ace' && encGhost(S.v)) { if (S.sel) closeHand(true); encTip(tl); bumpEl(cv); return; }   // 第 I 波翻面：丟出去在等條件的王牌格＝說明那句（不能丟）
       if (S.sel && S.sel.i === i) {
         const o = S.openTap;      // 雙擊的第二下（同一點 320 ms 內）：剛打開就又收回不算（RV11-5 的同一件事）
         if (o && o.i === i && ev && ev.detail && performance.now() - o.t < DBL_MS && Math.hypot(ev.clientX - o.x, ev.clientY - o.y) < DBL_PX) return;
@@ -1178,7 +1243,7 @@
       if (!canAct() || !btn.isConnected) return false;
       const i = btn.dataset.i === 'ace' ? 'ace' : +btn.dataset.i, c = cardOf(S.v, i), a = btn.dataset.a;
       if (!c || !ATTRS.includes(a)) return false;
-      els.pop.innerHTML = `<b>${esc((i === 'ace' ? T('aceWord') + ' ' : '') + ZH[a] + ' ' + starOf(c, a) + ' 星')}</b>`;
+      els.pop.innerHTML = `<b>${esc((i === 'ace' ? T('aceWord') + ' ' : '') + ZH[a] + ' ' + (i === 'ace' ? aceStarOf(S.v, c, a) : starOf(c, a)) + ' 星')}</b>`;
       els.pop.hidden = false;
       const br = btn.getBoundingClientRect(), rr = root.getBoundingClientRect();
       els.pop.style.left = Math.max(8, Math.min(rr.width - els.pop.offsetWidth - 8, br.left - rr.left + br.width / 2 - els.pop.offsetWidth / 2)) + 'px';
@@ -1359,13 +1424,15 @@
       const l2 = c.querySelector('.l2');
       l2.className = 'l2 ' + ct.cls;
       const f1 = ct.first ? `<span class="ns f1">${esc(ct.first)}</span>` : '';   // 第 D 波棒二：第一次觸發那句（另起一行；沒有＝一字不變）
-      l2.innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length || f1 ? `<span class="nt">${ct.notes.map((x, k) => `<span class="ns">${esc(x)}${k < ct.notes.length - 1 ? '・' : ''}</span>`).join('')}${f1}</span>` : ''}`;
+      // 第 I 波翻面：成立那手的「翻面！…」（notes 最後一句）另起一行、金字
+      const nt = ct.encLine ? ct.notes.filter(x => x !== ct.encLine) : ct.notes, f2 = ct.encLine ? `<span class="ns f1 enc" data-tut="enc-lit">${esc(ct.encLine)}</span>` : '';
+      l2.innerHTML = `<span class="v key">${esc(ct.l2)}</span>${nt.length || f1 || f2 ? `<span class="nt">${nt.map((x, k) => `<span class="ns">${esc(x)}${k < nt.length - 1 ? '・' : ''}</span>`).join('')}${f1}${f2}</span>` : ''}`;
       c.querySelector('.l3').innerHTML = segHTML(ct.l3);
       c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
       // 補充句（配件、品味、底氣）跟數字同一行放不下：自己另起一行、可以折行（一句不拆開；審查 #9）
-      if (f1 || l2.scrollWidth > l2.clientWidth + 1) l2.classList.add('wrap');
+      if (f1 || f2 || l2.scrollWidth > l2.clientWidth + 1) l2.classList.add('wrap');
       placeCallout();
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
       else A(c, [{ transform: 'scale(.3)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: .6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
@@ -1491,7 +1558,9 @@
       const over = evs.find(e => e.t === 'over'), hs = evs.find(e => e.t === 'hand'), dr = evs.find(e => e.t === 'draw');
       if (!cl) { console.error('DipLabDuel: no clash event', evs); S.busy = false; S.v = v1; renderAll(); return false; }
       const t0 = performance.now();
-      const ct = clashText(cl, T, hints, apexMode() ? apxUI() : undefined);
+      // 第 I 波翻面：這手成立（或上一場留下來的這手生效）＝{t:'encore'}；結果句吃 enc（clashText 多一行）
+      const ee = evs.find(e => e.t === 'encore') || null;
+      const ct = clashText(ee ? Object.assign({}, cl, { enc: { give: ee.give, mode: ee.mode, src: ee.src, heal: ee.heal, carry: !!ee.carry } }) : cl, T, hints, apexMode() ? apxUI() : undefined);
       // 第 D 波棒二（?fac=1）：這一派第一次觸發被動或代價那手，結果框補一句（ui.js 決定、記 save.seen.facFirst；只顯示，不改結算）
       if (cl.fac && Object.keys(cl.fac).length && typeof hooks.facFirst === 'function') { try { const f1 = hooks.facFirst(cl); if (f1) ct.first = String(f1); } catch (e) { console.error(e); } }
       const rec = { n: v0.n, act, sel, evs, ct };
@@ -1532,6 +1601,7 @@
       setHp(els.php, els.phpn, v1.pHp, v1.pMax, true);
       if (cl.toE > 0) floatAt(els.ehpn, '−' + cl.toE, 'g');
       if (cl.toP > 0) floatAt(els.phpn, '−' + cl.toP, 'r');
+      if (ee && ct.encLine) encLit(ee, cl);
       // 結果句裡有配件或品味／底氣那句：那顆閃一下（品味／底氣：你的在你那一列、他的（eAtk／eDef）在他那一列）
       const noteEl = n => !n ? null : n.apex ? (apexTileEl() || {}).firstElementChild || null : n.relic ? els.relics.querySelector(`[data-relic="${cssEsc(n.relic)}"]`)
         : n.stat && n.stat !== 'feint' ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`) : null;   // feint（被唬到多扣）沒有小籤
@@ -1554,6 +1624,7 @@
       rec.ui.lastline = els.last.textContent.replace(/\s+/g, ' ').trim();
       if (tapWait) rec.held = true;
       emit('settled', evs);
+      if (ee) encAfter(ee, !!over);
       if (over) { await finish(over, v1, cl); return true; }
       await wait(tapWait ? T_GO : T_NEXT - T_LINE);
       if (S.destroyed) return true;
@@ -1578,6 +1649,21 @@
       handStart(v1);
       setPhase('choose');
       return true;
+    }
+    // 第 I 波翻面・成立那一刻（t=560，結果框跳出來）：你頭上飄「翻面！」（他扣血的飄字先飄，晚一點）、王牌格那條籤先亮金；回聲望的飄字
+    function encLit(ee, cl) {
+      const U = encUI();
+      if (U.stamp) later(() => stg('float', 'p', U.stamp, 'gold sm'), (cl.toE > 0 || cl.toP > 0 ? 260 : 0) / S.speed);
+      if ((ee.heal | 0) > 0) later(() => floatAt(els.phpn, fillT(U.healToast, { n: ee.heal }), 'g'), 420 / S.speed);
+      log('enc:lit:' + ee.give + ':' + ee.src);
+      emit('encore', ee);
+    }
+    // 換手前（揭曉收起、「上一手」那行出來）：王牌／能力回來了＝吐司「翻面！《專輯》可以再丟一次」（ui.js 停 3 秒、點了收）＋第一次老闆那句；
+    //   這場已經打完（留到下一位）＝不出吐司（領獎畫面寫「翻面留到下一位」）
+    function encAfter(ee, over) {
+      if (typeof hooks.encore !== 'function') return;
+      const ac = duel && duel.p && duel.p.ace, U = encUI();
+      try { hooks.encore(ee, { over, album: (ac && ac.album) || '', verb: ee.mode === 'apex' ? U.verbApex : U.verbAce }); } catch (e) { console.error(e); }
     }
     function handStart(v) {
       holdBack();
