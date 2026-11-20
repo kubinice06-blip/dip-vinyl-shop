@@ -599,7 +599,7 @@ if (C.apexTrial) {
   for (const [k, v] of Object.entries(A.notes || {})) one('apexTrial.notes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
   for (const [k, v] of Object.entries(A.holdNotes || {})) one('apexTrial.holdNotes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
 }
-// 第 I 波 I-1 翻面（C.encore；店主 11-20 從「安可」改名；C.encore.ui、encoreTag）：條件句／加成句 ≤12、籤的兩半 ≤4、樣板與畫面字 ≤25、規則卡那段 ≤40、老闆第一次那句 ≤25（不算 {x}）；
+// 第 I 波 I-1 翻面（C.encore；店主 11-20 從「安可」改名；C.encore.ui、encoreTag）：條件句／加成句 ≤12、籤的兩半 ≤4、樣板與畫面字 ≤25、規則卡那段 ≤40、老闆第一次那句 ≤25、老闆小提示（翻面例外那兩則）≤20（不算 {x}）；
 //   另列每張頂點卡與三張 7 星王牌組出來的說明句（engine encoreLine，給店主過目；≤30）
 if (C.encore && C.encore.ui) {
   const U = C.encore.ui;
@@ -612,7 +612,7 @@ if (C.encore && C.encore.ui) {
   const SC = '翻面・畫面字（王牌格的籤、結果句小字、頭上小章、吐司、領獎小字、規則卡、紀錄的章；{x} 由畫面代入）';
   for (const [k, v] of Object.entries(U)) {
     if (v && typeof v === 'object') { for (const [k2, x] of Object.entries(v)) one('encore.ui.' + k + '.' + k2, x, SC, /^tag/.test(k) ? 4 : 12); continue; }
-    one('encore.ui.' + k, v, SC, k === 'rule' ? 40 : 25, k === 'first' ? '老闆' : null);
+    one('encore.ui.' + k, v, SC, k === 'ruleApex' ? 40 : /^tip/.test(k) ? 20 : 25, k === 'first' || /^tip/.test(k) ? '老闆' : null);
   }
   const EN = require(path.join(LAB, 'engine.js'));
   if (typeof EN.encoreLine === 'function') {

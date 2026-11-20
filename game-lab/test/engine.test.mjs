@@ -4232,7 +4232,7 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
 });
 
 // =====================================================================================================
-section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/CONTRACT.md）：頂點卡換裝 15／15／15、關掉＝逐字現況、四種條件、四種加成、一場一次、發動那手不算、留到下一位（只留一場、說情、一趟結束清掉）、7 星→6 星、preview＝resolve、取大、存讀檔、策略', () => {
+section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/CONTRACT.md）：頂點卡換裝 15／15／15、關掉＝逐字現況、四種條件、四種加成、一場一次、發動那手不算、留到下一位（只留一場、說情、一趟結束清掉）、7 星→5 星（修正輪）、preview＝resolve、取大、存讀檔、策略', () => {
   EN.setCtx(null);
   const K = C0, X = K.encore, KN = noEnc(K);
   // ---- 1 名單（店主 11-20 挑定）：三派各 15、第 1 張＝C.aces、換下 6 張不在卡池、換上 6 張在而且 tier 對；check-content 乾淨 ----
@@ -4249,16 +4249,19 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     eq(Object.keys(IN).map(op), ['mirrorPlus/duel/{"n":1}/null', 'mirrorPlus/hold/{"n":3}/{"op":"tieWin","params":{"n":1}}', 'eStar/hand/{"n":1}/null', 'eStar/hand/{"n":1}/null', 'bounce/duel/{"lose":false}/null', 'pThr/duel/{"n":3}/null'], 'new 6 abilities = the replaced primitives');
     // 附錄 Y：條件分佈（45 張；家族預設）
     const cnt = {}; for (const t of TIERS) for (const x of EN.apexList(K, t)) { const e = EN.encoreOf(K, x, t); cnt[e.when + '/' + e.give] = (cnt[e.when + '/' + e.give] || 0) + 1; }
-    eq(cnt, { 'caught/again': 8, 'caught/star': 4, 'sameWin/again': 5, 'combo2/hit': 10, 'caught/heal': 2, 'combo2/again': 10, 'combo2/heal': 5, 'lowhp/again': 1 }, 'encore distribution over 45 cards');
-    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'again' }, '翻面：看穿他一次，再發動一次。'], 'OK Computer = 看穿 → 再發動（店主原例）');
-    eq(TIERS.map(t => EN.encoreLine(K, EN.aceEncoreOf(K, t), { ace: true })), TIERS.map(() => '翻面：丟出之後看穿他一次，王牌回到手上（6 星）。'), '7-star aces line');
-    eq([EN.aceEncoreOf(K, 'heresy', true), EN.aceEncoreOf(K, 'hall', true), EN.encoreTag(K, EN.aceEncoreOf(K, 'hall'), { ace: true })], [{ when: 'combo2', give: 'again' }, { when: 'caught', give: 'again' }, '看穿→再丟'], '?fac=1 heresy ace → 連剋；tag');
-    eq(EN.abilityOf(K, 'swans|filth').encore, { when: 'combo2', give: 'heal' }, 'abilityOf carries encore');
+    // 11-20 修正輪（build1/FIX.md R1）：連剋全換掉（冷門、經典看穿；異端同色比贏，照出真假與回聲望看穿）；整場型與回聲望手型＝看穿（異端借血同色比贏）→ 下一手剋中多扣 2
+    eq(cnt, { 'caught/hit': 22, 'caught/again': 11, 'sameWin/again': 9, 'sameWin/hit': 3 }, 'encore distribution over 45 cards');
+    eq([EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'), EN.encoreLine(K, EN.encoreOf(K, EN.apexList(K, 'hall')[0], 'hall'))], [{ when: 'caught', give: 'hit' }, '翻面：看穿他一次，下一手剋中多扣 2。'], 'OK Computer = 看穿 → 下一手剋中多扣 2（修正輪：再發動 +6 點太簡單）');
+    eq([EN.encoreOf(K, EN.apexList(K, 'hall').find(x => x.card === 'pink floyd|the dark side of the moon'), 'hall'), EN.encoreOf(K, EN.apexList(K, 'heresy').find(x => x.card === 'napalm death|scum'), 'heresy')],
+      [{ when: 'caught', give: 'again' }, { when: 'sameWin', give: 'again' }], 'hand cards keep 再發動 (DSOTM 看穿；Napalm 同色比贏)');
+    eq(TIERS.map(t => EN.encoreLine(K, EN.aceEncoreOf(K, t), { ace: true })), TIERS.map(() => '翻面：丟出之後看穿他一次，王牌回到手上（5 星）。'), '7-star aces line (5★)');
+    eq([EN.aceEncoreOf(K, 'heresy', true), EN.aceEncoreOf(K, 'hall', true), EN.encoreTag(K, EN.aceEncoreOf(K, 'hall'), { ace: true })], [{ when: 'sameWin', give: 'again' }, { when: 'caught', give: 'again' }, '看穿→再丟'], '?fac=1 heresy ace → 同色比贏；tag');
+    eq(EN.abilityOf(K, 'swans|filth').encore, { when: 'caught', give: 'hit' }, 'abilityOf carries encore');
     ok(!('encore' in EN.abilityOf(KN, 'swans|filth')) && EN.encoreOf(KN, EN.apexList(K, 'hall')[0], 'hall') === null && EN.aceEncoreOf(KN, 'hall') === null, 'encore.on false → no encore anywhere');
-    // ?fac=1&apex=1 換一格：照換後的家族（Zodiac → critAdd hand → 連剋・再發動；Filth → mirrorPlus hand → 連剋・再發動）；swapped 不多欄位
+    // ?fac=1&apex=1 換一格：照換後的家族；swapped 不多欄位
     const R0 = { fac: { picks: {} } };
     eq([EN.apexAbilityOf(K, K.aces.pearl, R0).encore, EN.apexAbilityOf(K, K.aces.heresy, R0).encore, Object.keys(EN.apexAbilityOf(K, K.aces.pearl, R0).swapped)],
-      [{ when: 'combo2', give: 'again' }, { when: 'combo2', give: 'again' }, ['op', 'params', 'timing', 'text']], 'apexSwap: encore follows the swapped family'); }
+      [{ when: 'caught', give: 'again' }, { when: 'caught', give: 'again' }, ['op', 'params', 'timing', 'text']], 'apexSwap: encore follows the swapped family (critAdd hand／mirrorPlus hand → 看穿・再發動)'); }
 
   // ---- helpers：一手（你出 pc 的 pa 色或丟王牌、他出 ec 的 ea 色、提示 h）；preview＝resolve 每手都驗 ----
   const mk = (c, o, h) => mkCard('fx-en' + c + o + h, c, o, h);
@@ -4294,6 +4297,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
   }
   const ACE = (x) => W(x, { ace: true });
   const st = d => d.p.enc.state;
+  const withEnc = (id, enc) => Object.assign({}, EN.abilityOf(K, id), { encore: enc });   // 修正輪：家族預設換了，四種條件×四種加成的機制用指定的翻面照舊驗
 
   // ---- 2 關掉＝逐字現況：沒給 opts.encore／content.encore.on false／序章 → 對決、run 一個欄位都不多 ----
   { const pDef = EN.playerDef(K, { bag: K.gifts.hall.concat(BP3), ace: 'hall', relics: [] });
@@ -4315,7 +4319,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     const f2 = EN.startFight(r2, K, { encore: false }); ok(!keys(f2.duel) && JSON.stringify(r2.encCarry) === '{"give":"again"}', 'startFight {encore:false} (切磋): no encore, carry left for the next main duel');
     const r3 = EN.newRun(K, { seedKey: 'e32sp', runNo: 2, ace: 'hall', prologue: false }); EN.choose(r3, K, EN.bargainPolicy(r3, K));
     const f3 = EN.startFight(r3, K, {});
-    eq([f3.duel.p.enc, f3.duel.p.encAce, f3.duel.encNum.aceStar, 'encCarry' in r3], [{ when: 'caught', give: 'again', mode: 'ace', state: 'idle', start: null, from: null, at: null, src: null, lit: null }, false, 6, false], 'main duel: default-mode encore armed (no run.encCarry key yet)');
+    eq([f3.duel.p.enc, f3.duel.p.encAce, f3.duel.encNum.aceStar, 'encCarry' in r3], [{ when: 'caught', give: 'again', mode: 'ace', state: 'idle', start: null, from: null, at: null, src: null, lit: null }, false, 5, false], 'main duel: default-mode encore armed (no run.encCarry key yet)');
     const v = EN.view(f3.duel); eq([v.enc.state, v.enc.next, v.aceStar, v.enc.carry], ['idle', null, 7, false], 'view.enc／aceStar 7 before'); }
 
   // ---- 3 預設 7 星王牌：丟出去那手剛好看穿 → 王牌回到手上（6 星）→ 再丟 → 用掉；同一場不再亮 ----
@@ -4323,11 +4327,11 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     let h = hand(d, ACE(CAUGHT));
     eq([h.cl.pStar, h.enc && h.enc.src, h.enc && h.enc.give, h.enc && h.enc.mode, st(d), d.p.aceUsed, d.p.encAce, d.p.enc.lit], [7, 'hit', 'again', 'ace', 'hit', false, true, 1], 'ace thrown on a caught hand → encore: ace back');
     const v = EN.view(d);
-    ok(v.ace && v.aceStar === 6 && v.enc.state === 'hit' && EN.legalActions(d).some(a => a.ace), 'view: ace back as 6★, legal');
-    eq(EN.preview(d, { ace: true }, { attr: 'h', star: 3 }).toE, 6, 'preview of the encore ace = 6★');
-    eq(EN.bestChip(d, 'c', { ace: true }), { ace: true, attr: 'c' }, 'bestChip sees the 6★ ace');
+    ok(v.ace && v.aceStar === 5 && v.enc.state === 'hit' && EN.legalActions(d).some(a => a.ace), 'view: ace back as 5★, legal');
+    eq(EN.preview(d, { ace: true }, { attr: 'h', star: 3 }).toE, 5, 'preview of the encore ace = 5★');
+    eq(EN.bestChip(d, 'c', { ace: true }), { ace: true, attr: 'c' }, 'bestChip sees the 5★ ace');
     h = hand(d, ACE(HONEST));
-    eq([h.cl.pStar, h.cl.pBase, h.enc, st(d), d.p.aceUsed, d.stats.enc.used], [6, 6, null, 'done', true, 1], 'second throw = 6★, then done');
+    eq([h.cl.pStar, h.cl.pBase, h.enc, st(d), d.p.aceUsed, d.stats.enc.used], [5, 5, null, 'done', true, 1], 'second throw = 5★, then done');
     h = hand(d, CAUGHT); h = hand(d, CAUGHT);
     ok(!h.enc && st(d) === 'done' && d.p.aceUsed && !EN.legalActions(d).some(a => a.ace), 'one per duel: no second encore'); }
   { // 丟出去那手沒看穿、第 3 手看穿 → 回來（從丟的那手起算）；丟之前看穿不算
@@ -4337,7 +4341,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     h = hand(d, ACE(W(HONEST, { h: 'c', ec: mk(3, 1, 1), ea: 'c' })));   // 冷門王牌（冷 7）剋經、照實
     ok(!h.enc && st(d) === 'wait' && d.p.enc.from === 2 && d.p.aceUsed, 'thrown at hand 2 (honest) → waiting from hand 2');
     h = hand(d, CAUGHT);
-    ok(h.enc && h.enc.src === 'hit' && d.p.enc.lit === 3 && !d.p.aceUsed && d.p.encAce && EN.view(d).aceStar === 6, 'caught at hand 3 → ace back');
+    ok(h.enc && h.enc.src === 'hit' && d.p.enc.lit === 3 && !d.p.aceUsed && d.p.encAce && EN.view(d).aceStar === 5, 'caught at hand 3 → ace back');
     h = hand(d, CAUGHT); ok(!h.enc && st(d) === 'hit', 'already lit: no second event'); }
   { // 7 星王牌條件以外的不算：被剋、平手、照實剋都不亮
     const d = aceDuel('heresy');
@@ -4349,21 +4353,31 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     ok(h.enc && h.enc.src === 'hit', 'debugOutcome.caught true → caught');
     const d2 = aceDuel('hall'), h2 = hand(d2, ACE(W(CAUGHT, { dbg: { kind: 'counter', toE: 7, toP: 0, caught: false } })));
     ok(!h2.enc, 'debugOutcome.caught false → not caught'); }
-  { // ?fac=1 異端 7 星王牌＝連剋兩手（丟的那手起：前一手要是丟的那手或之後）
+  { // ?fac=1 異端 7 星王牌＝同色比贏一次（修正輪：連剋新手照提示剋就成立）；丟之前的同色比贏不算
     const d = aceDuel('heresy', { fac: true });
-    eq(d.p.enc.when, 'combo2', 'fac heresy ace: combo2');
+    eq(d.p.enc.when, 'sameWin', 'fac heresy ace: sameWin');
+    let h = hand(d, SAME); ok(!h.enc, 'sameWin before the throw');
+    h = hand(d, ACE(W(HONEST, { h: 'o', ec: mk(1, 3, 1), ea: 'o' }))); ok(!h.enc && st(d) === 'wait', 'throw (硬 7 剋冷)');
+    h = hand(d, TIE); ok(!h.enc, 'tie is not a win');
+    h = hand(d, SAME); ok(h.enc && h.enc.when === 'sameWin' && d.p.enc.lit === 4 && d.p.encAce, 'sameWin after the throw → ace back');
+    // 連剋的機制（家族表裡已經沒有卡用，引擎照舊）：指定 combo2 的 7 星王牌
+    const K3 = Object.assign({}, K, { encore: Object.assign({}, X, { facHeresy: 'combo2' }) });
+    const pDef = EN.playerDef(K3, { bag: K.gifts.heresy.concat(BP3), ace: 'heresy', relics: [], fac: { picks: {}, tal: {}, trialNodes: {} } }, { encore: true, fac: true });
+    const d2 = norm(EN.startDuel(pDef, EN.enemyDef(K, 'copycat', {}), { seed: 17, hintTable: HINTS, encore: true }).duel, {});
+    eq(d2.p.enc.when, 'combo2', 'combo2 still works when configured');
     const H = { h: 'o', pc: mk(1, 1, 4), pa: 'h', ec: mk(1, 2, 1), ea: 'o' };   // 硬剋冷、照實
-    let h = hand(d, H); ok(!h.enc, 'counter before the throw');
-    h = hand(d, ACE(H)); ok(!h.enc && st(d) === 'wait', 'throw (counter) — the counter before it does not pair');
-    h = hand(d, H); ok(h.enc && h.enc.when === 'combo2' && d.p.enc.lit === 3, 'two counters from the throw → encore'); }
+    h = hand(d2, H); ok(!h.enc, 'counter before the throw');
+    h = hand(d2, ACE(H)); ok(!h.enc && st(d2) === 'wait', 'throw (counter) — the counter before it does not pair');
+    h = hand(d2, H); ok(h.enc && h.enc.when === 'combo2' && d2.p.enc.lit === 3, 'two counters from the throw → encore'); }
 
   // ---- 4 留到下一位：條件成立那手這場就結束 → over.encCarry；下一場金籤、丟第一次 → 6 星安可盤；只留一場；give 對不上不吃 ----
   { const d = aceDuel('hall', { eHp: 5 }), h = hand(d, ACE(CAUGHT));
     ok(h.enc && h.over && h.over.win && JSON.stringify(h.over.encCarry) === '{"give":"again"}' && JSON.stringify(d.over.encCarry) === '{"give":"again"}' && d.stats.enc.carryOut === 1, 'last hand lit → carried');
+    ok(h.enc.carry === true && d.log[d.log.length - 1].enc.carry === true, 'lit on the last hand → encore event／log marked carry (結果句「翻面！留到下一位」)');
     const d2 = aceDuel('hall', { carry: { give: 'again' } });
     eq([st(d2), d2.p.enc.src, d2.stats.enc.carryIn, EN.view(d2).enc.carry, EN.view(d2).aceStar], ['carry', 'carry', 1, true, 7], 'next duel: carry armed (gold tag), first throw is the real 7★');
     let x = hand(d2, ACE(HONEST));
-    eq([x.cl.pStar, x.enc && x.enc.src, st(d2), d2.p.encAce, d2.p.aceUsed], [7, 'carry', 'hit', true, false], 'after the first throw → 6★ encore disc');
+    eq([x.cl.pStar, x.enc && x.enc.src, st(d2), d2.p.encAce, d2.p.aceUsed], [7, 'carry', 'hit', true, false], 'after the first throw → 5★ encore disc');
     x = hand(d2, CAUGHT); ok(!x.enc, 'carried duel does not watch the condition again');
     d2.e.hp = 1; x = hand(d2, CAUGHT);
     ok(x.over && !x.over.encCarry && !d2.over.encCarry && st(d2) === 'hit', 'unused carried encore is not carried again');
@@ -4396,7 +4410,8 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
 
   // ---- 5 頂點卡（?apex=1）：發動那手不算、下一手起；四種條件 × 再發動／下一手 +1 星／剋中多扣 2／回 2 聲望 ----
   { // 看穿 → 再發動（OK Computer：回 2）；apexHist 留第一次；第二次發動＝用掉；之後不再亮
-    const d = apexDuel('radiohead|ok computer', { hp: 6 });
+    const AG = withEnc('radiohead|ok computer', { when: 'caught', give: 'again' });
+    const d = apexDuel('radiohead|ok computer', { hp: 6, ability: AG });
     let h = hand(d, W(CAUGHT, { apex: true }));
     ok(!h.enc && st(d) === 'wait' && d.p.enc.from === 2 && d.p.hp === 8, 'activation hand caught → does not count (from hand 2)');
     h = hand(d, CAUGHT);
@@ -4405,7 +4420,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     eq([h.evs[0].t, h.evs[0].heal, d.p.hp, st(d), d.stats.apexAt2, d.stats.enc.used, EN.canApex(d)], ['apex', 2, 10, 'done', 3, 1, false], 'second firing heals again → done');
     h = hand(d, CAUGHT); ok(!h.enc && st(d) === 'done', 'no more');
     // 回來時聲望是滿的：發動鈕照舊不能按（full）
-    const d2 = apexDuel('radiohead|ok computer', { hp: 10 }); hand(d2, W(CAUGHT, { apex: true })); hand(d2, CAUGHT);
+    const d2 = apexDuel('radiohead|ok computer', { hp: 10, ability: AG }); hand(d2, W(CAUGHT, { apex: true })); hand(d2, CAUGHT);
     ok(st(d2) === 'hit' && d2.p.hp === 12 && !EN.canApex(d2) && EN.view(d2).apex.full, 'heal-only at full hp: back but cannot fire (full)'); }
   { // 同色比贏 → 再發動（Thriller）；發動那手同色比贏不算
     const d = apexDuel('michael jackson|thriller');
@@ -4416,14 +4431,16 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     const d2 = apexDuel('michael jackson|thriller'); hand(d2, W(SAME, { apex: true }));
     h = hand(d2, { h: 'c', pc: mk(5, 1, 1), pa: 'c', ec: mk(1, 2, 1), ea: 'o' }); ok(h.cl.kind === 'mirrorWin' && h.cl.blocked === 'gap' && !h.enc, 'gap mirrorWin (different colors) is not sameWin'); }
   { // 背水 → 再發動（非常階段：回 2）：這手結算完聲望 ≤ 三成
-    const d = apexDuel('非常階段|蔵六の奇病', { hp: 9 });
+    const LW = withEnc('非常階段|蔵六の奇病', { when: 'lowhp', give: 'again' });
+    const d = apexDuel('非常階段|蔵六の奇病', { hp: 9, ability: LW });
     hand(d, W(TIE, { apex: true })); ok(d.p.hp === 11 && st(d) === 'wait', 'heal 2 → 11');
     d.p.hp = 5; let h = hand(d, W(COUNTERED, { ec: mk(1, 1, 1), pc: mk(1, 1, 1) })); ok(!h.enc && d.p.hp === 4, '4／12 > 30%: no');
     h = hand(d, W(COUNTERED, { ec: mk(1, 1, 1), pc: mk(1, 1, 1) })); ok(h.enc && h.enc.when === 'lowhp' && d.p.hp === 3 && EN.canApex(d), '3／12 ≤ 30% → back');
-    const d2 = apexDuel('非常階段|蔵六の奇病', { hp: 3 }); hand(d2, W(TIE, { apex: true })); ok(d2.p.hp === 5, 'activation');
+    const d2 = apexDuel('非常階段|蔵六の奇病', { hp: 3, ability: LW }); hand(d2, W(TIE, { apex: true })); ok(d2.p.hp === 5, 'activation');
     d2.p.hp = 1; d2.e.hp = 99; h = hand(d2, W(COUNTERED, { ec: mk(1, 3, 1) })); ok(d2.over && !h.enc, 'dead (hp ≤ 0) is not 背水'); }
   { // 連剋 → 下一手剋中多扣 2（Zodiac：整場一律剋得動、扣較大的）：發動那手可以是連剋的第一手；多扣在倍數之後、他的底氣之前；那手不剋中就沒了
-    const d = apexDuel('barney wilen|zodiac');
+    const ZC = withEnc('barney wilen|zodiac', { when: 'combo2', give: 'hit' });
+    const d = apexDuel('barney wilen|zodiac', { ability: ZC });
     const P1 = { h: 'c', pc: mk(1, 2, 1), pa: 'o', ec: mk(4, 1, 1), ea: 'c' };   // 冷 2 剋經 4（借星：扣 4）、照實
     let h = hand(d, W(P1, { apex: true })); ok(!h.enc && h.cl.kind === 'counter' && h.cl.toE === 4, 'activation hand counter (borrow 4)');
     h = hand(d, P1); ok(h.enc && h.enc.give === 'hit' && st(d) === 'next' && d.p.enc.at === 3, 'combo2 (activation hand pairs) → next hand +2');
@@ -4433,24 +4450,26 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     h = hand(d, P1);
     ok(h.cl.toE === Math.max(Math.ceil(6 / 2), 6 - 2) && h.cl.notes.some(n => n.enc === 'hit' && n.n === 2) && st(d) === 'done' && d.log[2].encBonus === 'hit', 'bonus hand: (4 borrowed + 2) then his 底氣 → ' + h.cl.toE);
     ok(pv.notes.some(n => n.enc === 'hit'), 'preview shows the bonus note');
-    const d2 = apexDuel('barney wilen|zodiac'); hand(d2, W(P1, { apex: true })); hand(d2, P1);
+    const d2 = apexDuel('barney wilen|zodiac', { ability: ZC }); hand(d2, W(P1, { apex: true })); hand(d2, P1);
     h = hand(d2, TIE); ok(!h.cl.notes.some(n => n.enc) && st(d2) === 'done', 'bonus hand not a counter → lost');
     // 斷掉的連剋不算：剋、平手、剋
-    const d3 = apexDuel('barney wilen|zodiac'); hand(d3, W(TIE, { apex: true })); hand(d3, P1); h = hand(d3, TIE); h = hand(d3, P1); ok(!h.enc, 'broken combo'); h = hand(d3, P1); ok(h.enc, 'two in a row → lit'); }
+    const d3 = apexDuel('barney wilen|zodiac', { ability: ZC }); hand(d3, W(TIE, { apex: true })); hand(d3, P1); h = hand(d3, TIE); h = hand(d3, P1); ok(!h.enc, 'broken combo'); h = hand(d3, P1); ok(h.enc, 'two in a row → lit'); }
   { // 看穿 → 下一手 +1 星（Gould：這場比星多算 1）；+1 星跟流派加星相加（同一步直接加）
-    const d = apexDuel('glenn gould|bach: the goldberg variations (1955)');
+    const GS = withEnc('glenn gould|bach: the goldberg variations (1955)', { when: 'caught', give: 'star' });
+    const d = apexDuel('glenn gould|bach: the goldberg variations (1955)', { ability: GS });
     hand(d, W(TIE, { apex: true })); let h = hand(d, CAUGHT); ok(h.enc && h.enc.give === 'star' && st(d) === 'next', 'caught → next hand +1★');
     h = hand(d, W(SAME, { pc: mk(1, 3, 1), ec: mk(1, 4, 1) }));   // 冷 3＋1 對冷 4，比星多算 1 → 贏 1
     eq([h.cl.pStar, h.cl.kind, h.cl.toE, h.cl.notes.filter(n => n.enc).map(n => n.text)], [4, 'mirrorWin', 1, [X.ui.note.star.replace('{n}', 1)]], '+1★ (pStar 4) stacks with mirrorPlus');
-    const dF = apexDuel('glenn gould|bach: the goldberg variations (1955)', { fac: true, picks: { h_eye: 1 } });
+    const dF = apexDuel('glenn gould|bach: the goldberg variations (1955)', { fac: true, picks: { h_eye: 1 }, ability: GS });
     hand(dF, W(TIE, { apex: true })); hand(dF, CAUGHT);
     h = hand(dF, { h: 'h', pc: mk(3, 1, 1), pa: 'c', ec: mk(1, 1, 3), ea: 'h' }); eq(h.cl.pStar, 5, 'fac 識貨 +1 and encore +1 both add (3+1+1)'); }
   { // 連剋 → 回 2 聲望（Filth）：當場回；log 那手 pHp／heal 跟著改；滿聲望回 0
-    const d = apexDuel('swans|filth', { hp: 6 });
+    const FH = withEnc('swans|filth', { when: 'combo2', give: 'heal' });
+    const d = apexDuel('swans|filth', { hp: 6, ability: FH });
     const H = { h: 'o', pc: mk(1, 1, 4), pa: 'h', ec: mk(1, 2, 1), ea: 'o' };
     hand(d, W(H, { apex: true })); const h = hand(d, H);
     eq([h.enc && h.enc.heal, h.enc && h.enc.pHp, d.p.hp, h.cl.pHp, d.log[1].pHp, d.log[1].heal, d.log[1].enc, st(d), d.stats.enc.heal], [2, 8, 8, 6, 8, 2, { when: 'combo2', give: 'heal', src: 'hit', heal: 2 }, 'done', 2], 'heal 2 on the spot');
-    const d2 = apexDuel('swans|filth', { hp: 12 }); hand(d2, W(H, { apex: true })); const h2 = hand(d2, H); eq([h2.enc.heal, d2.p.hp], [0, 12], 'full hp: heals 0'); }
+    const d2 = apexDuel('swans|filth', { hp: 12, ability: FH }); hand(d2, W(H, { apex: true })); const h2 = hand(d2, H); eq([h2.enc.heal, d2.p.hp], [0, 12], 'full hp: heals 0'); }
   { // 回聲望取大不相加：同一手拆穿回血（critLeech）已回 ≥2 → 安可不再加；回 1 → 補到 2；?fac=1 異端拆穿回 2 → 安可 0
     const ab = enc => ({ id: 't-leech', card: K.aces.heresy, tier: 'heresy', name: '測', text: 'x', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null, encore: enc });
     const d = apexDuel('swans|filth', { hp: 4, ability: ab({ when: 'caught', give: 'heal' }) });
@@ -4481,7 +4500,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     const pv = EN.preview(d, { i: 0, attr: 'c' }, { attr: 'o', star: 3 }); hand(d, COUNTERED);
     ok(pv.apex && pv.apex.src === 'hold', 'hold effect previews again'); }
   { // 頂點卡留到下一位：下一手型 → 下一場第一手吃（不用先發動）；再發動型 → 第一次發動後回來
-    const d = apexDuel('barney wilen|zodiac', { eHp: 6 });
+    const d = apexDuel('barney wilen|zodiac', { eHp: 6, ability: withEnc('barney wilen|zodiac', { when: 'combo2', give: 'hit' }) });
     const P1 = { h: 'c', pc: mk(1, 2, 1), pa: 'o', ec: mk(4, 1, 1), ea: 'c' };
     hand(d, W(P1, { apex: true })); const h = hand(d, P1);
     ok(h.over && JSON.stringify(h.over.encCarry) === '{"give":"hit"}', 'zodiac lit on the last hand → carried {hit}');
@@ -4489,7 +4508,7 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     eq([st(d2), d2.p.enc.at, EN.view(d2).enc.next, EN.view(d2).enc.carry], ['next', 1, 'hit', true], 'carried hit → hand 1');
     const h2 = hand(d2, { h: 'h', pc: mk(1, 4, 1), pa: 'o', ec: mk(2, 1, 1), ea: 'c' });   // 冷 4 剋經 2（沒發動：照星）＋2
     eq([h2.cl.toE, st(d2)], [6, 'done'], 'carried bonus applies without firing (4+2)');
-    const d3 = apexDuel('radiohead|ok computer', { hp: 5, carry: { give: 'again' } });
+    const d3 = apexDuel('radiohead|ok computer', { hp: 5, carry: { give: 'again' }, ability: withEnc('radiohead|ok computer', { when: 'caught', give: 'again' }) });
     let x = hand(d3, W(TIE, { apex: true }));
     ok(x.enc && x.enc.src === 'carry' && EN.canApex(d3) && d3.p.apexHist.length === 1, 'carried again: back after the first firing');
     x = hand(d3, W(TIE, { apex: true })); ok(st(d3) === 'done' && d3.p.hp === 9, 'second firing'); }

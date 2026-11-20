@@ -215,11 +215,12 @@
   const apexUIOf = () => { const Cn = (typeof window !== 'undefined' && window.DipLabContent) || null; return (Cn && Cn.apexTrial && Cn.apexTrial.ui) || {}; };
   // 第 I 波翻面：content.encore（e2e 直接呼叫 _fmt.clashText 時讀頁面上的 DipLabContent）。成立那手的小字「翻面！{加成句}」：
   //   enc＝{give, mode, src, heal?}（clash 事件本身沒有：play() 從同一手的 {t:'encore'} 事件補上；recap.js 從 duel.log 那手的 enc 補上）。
-  //   7 星王牌的「再發動」寫「王牌回到手上（6 星）」；回聲望寫真的回了幾（回 0＝滿聲望，不寫這句：跟頂點卡「不寫回 0 聲望」同一個規矩）
+  //   enc.carry＝成立在這場最後一手（engine finish 標的）：寫「翻面！留到下一位」。7 星王牌的「再發動」寫「王牌回到手上（{aceStar} 星）」；回聲望寫真的回了幾（回 0＝滿聲望，不寫這句：跟頂點卡「不寫回 0 聲望」同一個規矩）
   const encCfgOf = () => { const Cn = (typeof window !== 'undefined' && window.DipLabContent) || null; return (Cn && Cn.encore) || null; };
   function encLitText(e) {
     const X = encCfgOf(), U = (X && X.ui) || {}; if (!e || !U.lit) return '';
     const G = U.give || {}, num = k => (X && Number.isInteger(X[k]) ? X[k] : ({ star: 1, hit: 2, heal: 2, aceStar: 6 })[k]);
+    if (e.carry && U.litCarry) return U.litCarry;      // 修正輪：成立在這場最後一手＝留到下一位（王牌這時候不會回來，領獎畫面也寫「翻面留到下一位」）
     let g;
     if (e.give === 'again') g = e.mode === 'ace' ? fillU(G.ace, { star: num('aceStar') }) : G.again;
     else if (e.give === 'heal') { if (!((e.heal | 0) > 0)) return ''; g = fillU(G.heal, { n: e.heal | 0 }); }
@@ -1559,7 +1560,7 @@
       const t0 = performance.now();
       // 第 I 波翻面：這手成立（或上一場留下來的這手生效）＝{t:'encore'}；結果句吃 enc（clashText 多一行）
       const ee = evs.find(e => e.t === 'encore') || null;
-      const ct = clashText(ee ? Object.assign({}, cl, { enc: { give: ee.give, mode: ee.mode, src: ee.src, heal: ee.heal } }) : cl, T, hints, apexMode() ? apxUI() : undefined);
+      const ct = clashText(ee ? Object.assign({}, cl, { enc: { give: ee.give, mode: ee.mode, src: ee.src, heal: ee.heal, carry: !!ee.carry } }) : cl, T, hints, apexMode() ? apxUI() : undefined);
       // 第 D 波棒二（?fac=1）：這一派第一次觸發被動或代價那手，結果框補一句（ui.js 決定、記 save.seen.facFirst；只顯示，不改結算）
       if (cl.fac && Object.keys(cl.fac).length && typeof hooks.facFirst === 'function') { try { const f1 = hooks.facFirst(cl); if (f1) ct.first = String(f1); } catch (e) { console.error(e); } }
       const rec = { n: v0.n, act, sel, evs, ct };

@@ -951,10 +951,11 @@ export function encoreProblems(C, E) {
   for (const t of TIERS) { const e = E.aceEncoreOf(C, t, false), l = E.encoreLine(C, e, { ace: true }), g = E.encoreTag(C, e, { ace: true }); ok(l && clen(l) <= 30 && g && clen(g) <= 8, '7 星王牌 ' + t + ' 的說明句 ≤30、籤 ≤8：' + l + '／' + g); }
   // 畫面字
   const U = X.ui || {};
-  for (const k of ['name', 'tpl', 'aceTpl', 'tag', 'lit', 'toast', 'verbApex', 'verbAce', 'healToast', 'carry', 'carryTag', 'infoTitle', 'first', 'rule']) ok(typeof U[k] === 'string' && U[k], 'C.encore.ui.' + k);
+  for (const k of ['name', 'tpl', 'aceTpl', 'tag', 'lit', 'toast', 'verbApex', 'verbAce', 'healToast', 'carry', 'carryTag', 'infoTitle', 'first', 'litCarry', 'ruleApex', 'ruleCarry', 'ruleHead', 'exc', 'tipAce', 'tipApex']) ok(typeof U[k] === 'string' && U[k], 'C.encore.ui.' + k);
   for (const k of W) ok(typeof (U.when || {})[k] === 'string' && typeof (U.tagWhen || {})[k] === 'string', 'C.encore.ui.when／tagWhen 少了 ' + k);
   for (const k of G.concat(['ace'])) ok(typeof (U.give || {})[k] === 'string' && typeof (U.tagGive || {})[k] === 'string', 'C.encore.ui.give／tagGive 少了 ' + k);
   for (const k of ['star', 'hit']) ok(typeof (U.next || {})[k] === 'string' && typeof (U.note || {})[k] === 'string', 'C.encore.ui.next／note 少了 ' + k);
+  for (const k of ['tipAce', 'tipApex']) ok(clen(U[k] || '') <= 20, 'C.encore.ui.' + k + '：老闆小提示 ≤20 字');
   ok(C.encoreTag === '新', 'C.encoreTag');
   return bad;
 }

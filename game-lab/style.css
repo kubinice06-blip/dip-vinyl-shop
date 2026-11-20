@@ -1170,7 +1170,12 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.apxpick .apx-enc{flex:none;margin:2px 0 0;font-size:11px;line-height:1.5;font-weight:700;color:#8a6100;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;}
 .lb-sheet.apxpick .apx-enc.full{white-space:normal;}
 .lb-sheet.apxpick .apx-enc:empty{display:none;}
-.lb-rules .rrel.renc b{color:#8a6100;}
+.lb-rules .rrel .renc b{color:#8a6100;}
+.lb-rules .rrel.wenc{text-align:left;line-height:1.5;}   /* 發燒配件一句＋翻面那句同一段（第 I 波修正輪）：靠左接著寫 */
+/* 規則卡最長的樣子（學會六張）加了翻面那句：四個尺寸都不捲（修正輪量過 375×548 底 544、360×640 620、390×664 604、430×932 927；build1/fix/probe/rules.mjs） */
+.lb-help .lb-rules .rrel.wenc{font-size:11px;line-height:1.4;margin-top:5px;}
+.lb-help .lb-rules .rfoot{margin-top:4px;}
+@media (max-height:600px){ .lb-help .lb-rules .tri{width:88px;max-width:88px;} }
 .drawcard .apx .enc{margin-top:3px;font-size:11.5px;line-height:1.55;color:#5a4200;}
 .drawcard .apx .enc b{color:#8a6100;}
 .drawcard > .enc{margin:-4px auto 10px;max-width:300px;padding:5px 10px;border:1px solid var(--gold,#b8860b);background:var(--cream,#fffbe9);font-size:11.5px;line-height:1.55;color:#5a4200;text-align:left;}

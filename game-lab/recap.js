@@ -62,7 +62,7 @@
       hint: L.line ? { attr: L.hint, line: L.line, kind: hk, not } : null, bluff: !!L.bluff, why: L.why, rel: L.rel || null, notes: Array.isArray(L.notes) ? L.notes : [] };
     if (L.script) c.script = true;
     if ('apex' in L) c.apex = L.apex;
-    if (L.enc && typeof L.enc === 'object') c.enc = { give: L.enc.give, mode: L.enc.mode || (L.apex !== undefined ? 'apex' : 'ace'), src: L.enc.src, heal: L.enc.heal };   // 第 I 波翻面：成立那手（clashText 多一行「翻面！…」）
+    if (L.enc && typeof L.enc === 'object') c.enc = { give: L.enc.give, mode: L.enc.mode || (L.apex !== undefined ? 'apex' : 'ace'), src: L.enc.src, heal: L.enc.heal, carry: !!L.enc.carry };   // 第 I 波翻面：成立那手（clashText 多一行「翻面！…」）
     return c;
   }
   function rowsOf(log, ctx) {

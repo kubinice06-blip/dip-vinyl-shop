@@ -1315,6 +1315,8 @@
     const Q = P.enc;
     if (Q && Q.src !== 'carry' && (Q.state === 'hit' || Q.state === 'next') && (!st.encNum || st.encNum.carry !== false)) {
       st.over.encCarry = { give: Q.give }; ov.encCarry = { give: Q.give }; st.stats.enc.carryOut = 1;
+      // 修正輪：條件就成立在這最後一手＝這手的 {t:'encore'} 事件與 log 那手多 carry:true（結果句寫「翻面！留到下一位」，不寫「王牌回到手上」）
+      if (Q.lit === st.n) { const L = st.log[st.log.length - 1]; if (L && L.enc) L.enc.carry = true; for (const e of events) if (e && e.t === 'encore' && e.n === st.n) e.carry = true; }
     }
     events.push(ov);
     return events;

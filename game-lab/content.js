@@ -1831,8 +1831,8 @@
         grade: '特色', power: 88, fact: 'Guru 說 Jazzmatazz 的構想是把原本被取樣的那些樂手真的請進錄音室（Donald Byrd、Roy Ayers 等現場演奏，他在上面饒舌；data/artist-intros guru）。留著＝取樣那份小份量，發動＝正主進棚。I-1 換下《讓我想一想》，能力照同一個原語（power 沿用，未重量）。' },
       { card: "daft punk|discovery", id: 'discovery-stronger', name: '更快更強', text: '更硬更好更快更強：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
         grade: '主力', power: 87, fact: '〈Harder, Better, Faster, Stronger〉；整張專輯後來配成一整部動畫電影《Interstella 5555》（2003）：一整張＝一整場。' },
-      { card: "slum village|fan-tas-tic, volume 1", id: 'slum-offbeat', name: '錯開的拍子', text: '拍子錯開半格：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
-        grade: '主力', power: 85, fact: 'Slum Village 的聲音核心是 Jay Dee（J Dilla）在 MPC 上手動敲擊、讓元素錯位，做出非直拍也非搖擺的「第三種時間感」（data/artist-intros slum village、j dilla）。拍子錯開，他那張就對不準一格。I-1 換下《范特西》，能力照同一個原語。' },
+      { card: "slum village|fan-tas-tic, volume 1", id: 'slum-offbeat', name: '錯開的拍子', text: '拍子故意錯開：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 85, fact: 'Slum Village 的聲音核心是 Jay Dee（J Dilla）在 MPC 上手動敲擊、讓元素錯位，做出非直拍也非搖擺的「第三種時間感」（data/artist-intros slum village、j dilla）。拍子不踩在格子上，他那張就對不準。I-1 換下《范特西》，能力照同一個原語。' },
       { card: "art blakey and the jazz messengers|moanin'", id: 'moanin-press-roll', name: '雷鳴滾奏', text: '鼓聲一路推到底：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
         grade: '主力', power: 87, fact: 'Art Blakey 的鼓以雷鳴般的 press roll 著稱，協助確立 hard bop、把鼓推上獨奏位置（data/artist-intros art blakey and the jazz messengers）。鼓在後面撐一整晚＝整場有效。I-1 換下《To Pimp a Butterfly》，能力照同一個原語。' },
       { card: "濁水溪公社|台客的復仇", id: 'loh-taike', name: '台客的復仇', text: '台客回來討公道：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
@@ -2000,11 +2000,12 @@
       when: { caught: '看穿他一次', combo2: '連剋兩手', sameWin: '同色比贏一次', lowhp: '聲望剩三成以下' },
       give: { again: '再發動一次', ace: '王牌回到手上（{star} 星）', star: '下一手 +{n} 星', hit: '下一手剋中多扣 {n}', heal: '回 {n} 聲望' },
       tpl: '翻面：{when}，{give}。',                 // 頂點卡：「翻面：看穿他一次，再發動一次。」
-      aceTpl: '翻面：丟出之後{when}，{give}。',      // 7 星王牌：「翻面：丟出之後看穿他一次，王牌回到手上（6 星）。」
+      aceTpl: '翻面：丟出之後{when}，{give}。',      // 7 星王牌：「翻面：丟出之後看穿他一次，王牌回到手上（5 星）。」
       tagWhen: { caught: '看穿', combo2: '連剋', sameWin: '同色贏', lowhp: '背水' },
       tagGive: { again: '再一次', ace: '再丟', star: '+{n} 星', hit: '多扣 {n}', heal: '回 {n}' },
       tag: '{when}→{give}',                          // 王牌格下方的籤（灰＝還在等、金＝翻面了）
       lit: '翻面！{give}',                            // 成立那手：結果句多一行小字
+      litCarry: '翻面！留到下一位',                    // 成立那手剛好打完這場（王牌這時不回來；修正輪）
       toast: '翻面！《{album}》可以再{verb}一次', verbApex: '發動', verbAce: '丟',
       next: { star: '下一手 +{n} 星', hit: '下一手剋中多扣 {n}' },   // 王牌格下方小字（加成等著用的時候）
       note: { star: '翻面：+{n} 星', hit: '翻面：剋中多扣 {n}' },    // 吃加成那手的結果句小字（engine outcome 的 notes）
@@ -2013,7 +2014,13 @@
       carryTag: '翻面×1',                              // 下一場王牌格的金籤
       infoTitle: '王牌翻面',                           // 唱片資訊「王牌能力」區多一行的標題
       first: '「看到沒？讀對了，唱片翻到 B 面再來一次。」',   // 第一次翻面成立（save.seen.encore），老闆說
-      rule: '翻面：王牌多一條讀對了才有的加成，一場一次；這場剛好打完就留到下一位。',
+      // 規則卡翻面那段（11-20 修正輪：寫具體的）＝這一趟王牌的翻面句（engine encoreLine）＋ruleCarry；?apex=1 還沒有這一趟＝ruleApex
+      ruleApex: '翻面：做到王牌下方籤上寫的條件，就有加成。',
+      ruleCarry: '剛好打完就留到下一位。',                   // 規則卡翻面句後面接這句
+      ruleHead: '翻面（例外）',                              // 規則卡翻面那段開頭（「翻面：」換成這個）：第 6 行「王牌 7 星，一場用一次」的例外（六行店主拍板、不改字）
+      exc: '（翻面例外）',                                  // 「王牌…一場用一次」後面補（規則卡第 6 行、挑王牌面板、老闆小提示）
+      tipAce: '王牌 7 星，一場用一次（翻面例外）。',         // 老闆小提示 tip_ace（翻面開著時換掉 C.coachTips 那句；≤20 字）
+      tipApex: '王牌一場發動一次（翻面例外），不佔這手。',   // ?apex=1 老闆小提示 tip_apex（同上）
       stamp: '翻面！',                                  // 成立那手：你頭上飄的小章
       recap: '翻面'                                     // 上一手詳情／這場紀錄：成立那手的章
     }

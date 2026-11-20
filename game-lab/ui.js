@@ -1019,16 +1019,33 @@
   function rulesHTML() {
     var R = C.rules || {};
     // 頂點卡試做（?apex=1）：第 6 行的「王牌 7 星，一場用一次。」換成輔助卡那句、頁尾第 2 行換成打贏回 winHeal（C.rules 本身一字不動；旗標關照舊）
-    var apx = function (s, i) { return !UI.apex ? (encOn() && EU('onceExc') ? String(s).replace('，一場用一次。', EU('onceExc')) : s) : String(s).replace('王牌 7 星，一場用一次。', AU('rule') + (encOn() ? EU('apexExc') : '')); };   // 第 I 波修正輪：翻面例外
+    var apx = function (s, i) { return !UI.apex ? s : String(s).replace('王牌 7 星，一場用一次。', AU('rule')); };   // 六行逐字（店主拍板）：翻面例外寫在翻面那段的開頭（encRuleHTML）
     var lines = (R.lines || []).map(function (s, i) { s = apx(s, i); return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : i === 2 ? tintBeats(s) : esc(s)) + '</div></li>'; }).join('');
     var foot = (R.foot || []).slice();
     if (UI.apex && foot.length > 1) foot[1] = AU('rulesFoot', { hp: (C.trial && C.trial.youHp) || '', heal: AX().winHeal, normal: '{normal}', boss: '{boss}' });
     return '<div class="lb-rules"><h1>' + esc(R.title || '品味對決・規則') + '</h1>' + triSVG() +
       '<ol class="rl">' + lines + '</ol>' +
       (R.why ? '<p class="rwhy">' + whyHTML(R.why) + '</p>' : '') +      // 六行下面另起一段「為什麼這樣剋」（店主 11-12；六行一字不動）
-      (R.relics ? '<p class="rrel">' + esc(R.relics) + '</p>' : '') +
-      (encOn() && EU(UI.apex ? 'ruleApex' : 'rule') ? '<p class="rrel renc">' + whyHTML(EU(UI.apex ? 'ruleApex' : 'rule', { star: (C.encore || {}).aceStar || '' })) + '</p>' : '') +   // 第 I 波翻面（規則卡一段；「翻面」兩字加粗；修正輪：預設＝7 星王牌那句、?apex=1＝頂點卡那句）
+      relEncHTML(R.relics) +   // 發燒配件一句＋第 I 波翻面（修正輪：併成同一段接著寫，規則卡四個尺寸不捲；「翻面」兩字加粗）
       '<div class="rfoot">' + foot.map(function (t) { return esc(fill(t, R.hpText || {})); }).join('<br>') + '</div></div>';
+  }
+  // 第 I 波修正輪：規則卡的翻面段寫具體的：這一趟那張王牌的翻面句（沒有 run＝經典流那句／頂點卡寫通用句）＋「剛好打完就留到下一位。」
+  function encRuleHTML() {
+    if (!encOn()) return '';
+    var r = save && save.run, t = '';
+    try {
+      if (UI.apex) { var id = r && TIERS.indexOf(r.ace) >= 0 ? aceIdOf(r) : null; t = id ? apexEncLine((r.fac && E.apexAbilityOf ? E.apexAbilityOf(C, id, r) : E.abilityOf(C, id)) || null) : ''; }
+      else t = aceEncLine(r && TIERS.indexOf(r.ace) >= 0 ? r.ace : 'hall', !!(r && r.fac));
+    } catch (_) { t = ''; }
+    if (!t) t = EU('ruleApex');
+    var nm = EU('name') + '：';                          // 開頭「翻面：」→「翻面（例外）：」：第 6 行「王牌…一場用一次」的例外（六行店主拍板、一字不改，例外寫在這段）
+    if (t && EU('ruleHead') && t.indexOf(nm) === 0) t = EU('ruleHead') + '：' + t.slice(nm.length);
+    return t ? whyHTML(t + EU('ruleCarry')) : '';
+  }
+  function relEncHTML(rel) {
+    var enc = encRuleHTML();
+    if (!rel && !enc) return '';
+    return '<p class="rrel' + (enc ? ' wenc' : '') + '">' + (rel ? esc(rel) : '') + (enc ? (rel ? '<span class="sp" aria-hidden="true">　</span>' : '') + '<span class="renc">' + enc + '</span>' : '') + '</p>';
   }
   function whyHTML(t) { var i = String(t).indexOf('：'); return i > 0 ? '<b>' + esc(t.slice(0, i)) + '</b>' + esc(t.slice(i)) : esc(t); }
   function tutLabel(k, d) { var u = C && C.tutorial && C.tutorial.ui; return (u && typeof u[k] === 'string' && u[k]) || d; }
@@ -1801,7 +1818,7 @@
         if (peek) { det.innerHTML = '<span class="lockt">' + lockIcon(12) + esc(TU('aceLockedNote', tierVars(peek))) + '</span>'; return; }   // 點了鎖住的那派：只說明
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
         var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
-        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + (!first && aceEncLine(sel) ? esc(EU('onceExc')) : '，一場用一次。') +   // 第 I 波修正輪：下面接翻面那行時寫「（翻面例外）」
+        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次' + (!first && aceEncLine(sel) ? esc(EU('exc')) : '') + '。' +   // 第 I 波修正輪：下面接翻面那行時寫「（翻面例外）」
           (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '') +   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
           (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '') +   // 這一挑定下初始流派，其他兩派要打倒傳說藏家（審查 11-16）
           (!first && aceEncLine(sel) ? '<span class="enc" data-tut="enc-pick">' + esc(aceEncLine(sel)) + '</span>' : '');   // 第 I 波翻面（新玩家第一次挑不寫）
