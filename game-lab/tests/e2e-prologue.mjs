@@ -397,13 +397,28 @@ async function crowdRun(browser) {
   const pos1 = await page.evaluate(() => window.__lab.run.pos);
   check('P11 ' + label + ' 序章與收尾', on && title.length && pro.length && n1.length && pos1 === 1 && [...title, ...pro, ...n1].every(s => !s.w),
     '活店開著（' + on + '）：標題 ' + title.length + '、序章與收尾 ' + pro.length + '、第 ' + pos1 + ' 位來客 ' + n1.length + ' 個取樣，w1–w3 露出來的 ' + [...title, ...pro, ...n1].filter(s => s.w).length);
-  // 打完第 1 位（forceWin）→ 戰利品列不收 → 第 2 位的來客畫面：10 秒內（fast）至少一位熟客出現
+  // 打完第 1 位（forceWin）→ 戰利品列不收 → 第 2 位的來客畫面：10 秒內（fast）至少一位熟客出現。
+  //   來客畫面的老闆小提示（#tut.m-soft，第一次玩才有）照真玩家點掉（每句停 1.3 秒再點）：提示開著時導演照 §3.1 暫停，10 秒從畫面可以玩了起算
+  const softOff = async () => {
+    for (let g = 0; g < 20; g++) {
+      const on = await page.evaluate(() => { const t = document.getElementById('tut'); return !!t && /\bon\b/.test(t.className) && /\bm-soft\b/.test(t.className); });
+      if (!on) return g;
+      await sleep(1300);
+      const xy = await page.evaluate(() => { const b = [...document.querySelectorAll('#tut .tut-bub')].find(e => !e.hidden && e.getBoundingClientRect().width); if (!b) return null; const r = b.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+      if (xy) await page.touchscreen.tap(xy.x, xy.y); else await page.touchscreen.tap(10, 10);
+      await sleep(250);
+    }
+    return 20;
+  };
+  await softOff();
   await page.evaluate(() => { const b = document.querySelector('[data-a=go]'); if (b) b.click(); });
   await page.waitForFunction(() => window.__lab.screen() === 'duel' && window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 20000 }).catch(() => {});
   await sleep(600);
   await page.evaluate(() => window.__lab.forceWin());
   const lr = await passLoot(page, {});
-  const at = await page.waitForFunction(() => window.__lab.screen() === 'night', null, { timeout: 20000 }).then(() => Date.now(), () => 0);
+  let at = await page.waitForFunction(() => window.__lab.screen() === 'night', null, { timeout: 20000 }).then(() => Date.now(), () => 0);
+  const soft2 = at ? await softOff() : 0;
+  if (at && soft2) at = Date.now();
   let seen = null, pos2 = await page.evaluate(() => window.__lab.run.pos);
   while (at && Date.now() - at < 10000) {
     seen = await page.evaluate(() => { const R = window.DipLabContent.regulars || {}; const x = window.__lab.crowd.state().slots.find(q => q.on && !q.hidden && R[q.who]); return x ? { who: x.who, at: x.at || x.stop, ms: 0 } : null; });
@@ -411,7 +426,7 @@ async function crowdRun(browser) {
     await sleep(200);
   }
   if (!seen || process.env.LAB_DEBUG) console.log('  crowd', JSON.stringify(await page.evaluate(() => ({ st: window.__lab.crowd.state(), log: window.__lab.crowd.doorLog(), runs: window.__lab.save.runs.length, scr: window.__lab.screen(), going: window.__lab.going(), sheets: [...document.querySelectorAll('.lb-sheet')].map(e => e.className), tut: (document.getElementById('tut') || {}).className, drawer: !!document.querySelector('.ec-drawer'), page: !!document.querySelector('.lb-page'), modal: [...document.querySelectorAll('.lb-modal,.modal,[role=dialog]')].map(e => e.className) }))));
-  check('P11 ' + label + ' 第 2 位', lr.ok && at && pos2 === 2 && !!seen, '第 ' + pos2 + ' 位的來客畫面' + (seen ? ' ' + seen.ms + ' ms 看到熟客 ' + seen.who + '（' + seen.at + '）' : ' 10 秒內沒有熟客'));
+  check('P11 ' + label + ' 第 2 位', lr.ok && at && pos2 === 2 && !!seen, '第 ' + pos2 + ' 位的來客畫面（老闆小提示點掉 ' + soft2 + ' 次）' + (seen ? ' ' + seen.ms + ' ms 看到熟客 ' + seen.who + '（' + seen.at + '）' : ' 10 秒內沒有熟客'));
   const errs = errorsOf(page);
   check(label + ' 主控台', !errs.length, errs.length ? errs.slice(0, 5).join(' | ') : '0 錯誤');
   await ctx.close();
