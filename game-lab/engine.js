@@ -198,6 +198,9 @@
 //            careerCfg · careerGain(content, runSummary(run), {best, tier, quit, open}) · posFought(run)（放棄時站著那一位打完了沒）· careerLevel(content, xp) · careerXpAt · careerPoints(content, career) · talentCost · talentOpen
 //            talentBuy／talentSell／careerRespec（回新的 career）· talentArgs(content, career) · applyTalent · gigRoom(run, content) · ladderList／ladderAt／ladderNext
 //            careerDraw(content, key, level, owned) · profLevel · profGain · profFirst · careerDeposit(content, save) · careerFix(content, career) · seedsOf(content, ids, max)
+//            第 I 波 I-0（SPEC-I §7；契約 wave-i/build0/CONTRACT.md）：curve.table（100／150／250／350／500／650／800）· careerGain 多收 first（第一趟保底到 lexp.firstLv、回 first＝補了幾點）、
+//              lowMul（覆寫新手倍率；顯示用）· careerLive(content, run, {best, tier, xp})（一趟裡的樂歷細條）· careerRecurve(content, career)（曲線改了補抽的等級）
+//            局內：xpNeed(T, level)（Lv1→2＝trial.firstNeed）· levelHpAt(T, level)（Lv1→2＝trial.firstHp）；gainXp、選秀照它們；expLevel(N, content)＝逐位累計（量測用；draftPlan 照舊封閉式）
 // Factions   第 D 波棒二三流派（?fac=1 試做旗標；SPEC-D §3.2–§3.5、§3.10、§4.2、§6-3；給畫面／sim 的契約 build2/CONTRACT.md）。數字＝content.factions（facCfg）
 //            newRun o.fac:true → run.fac {picks:{id:1}, tal:{}, trialNodes:{}}（存在 run 裡；沒旗標的頁面續玩照樣生效）；startFight 照 run.fac 給 playerDef {fac}（序章不給）
 //            → duel.p.fac（派）、p.fx（facFxOf：被動＋本派選項）、p.facN（這場計數）、stats.fac；outcome 的派別路（被動＋代價＋第二招），notes 多 {fac, kind, n, text}
@@ -268,6 +271,7 @@
     classes: ['normal', 'normal', 'normal', 'elite', 'boss'],   // 一輪 5 位：一般 3、菁英、傳說藏家
     retry: 1, youHp: 12, heal: 3, guestHp: { normal: 12, elite: 12, boss: 14 },
     xp: { normal: 2, elite: 3, boss: 4 }, levelNeed: 3, levelHp: 1, picks: { atk: 1, def: 1, hp: 2 },
+    firstNeed: 2, firstHp: 0,                                   // 第 I 波 I-0（SPEC-I §7.2）：Lv1→2 只要 2 經驗（打贏第 1 位就升）、那一級不自動加聲望上限（xpNeed／levelHpAt）
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
     curve: {
       planner: { easyTo: 2, normalTo: 4 },                                         // 第 1–2 位 easy、3–4 normal、5 起 hard
@@ -2310,10 +2314,15 @@
   }
   // 升級：經驗滿「目前等級＋3」升一級；每升一級聲望上限 +1、現有聲望也 +1，再三選一（levelUps 記還沒選的次數）
   //   第 D 波樂歷「局內經驗」（run.xpMul＝1＋0.1×級）：每次 n×xpMul，零頭累積在 run.xpFrac（10 場 2 經驗 ×1.2＝24）
+  //   第 I 波 I-0（SPEC-I §7.2；店主 11-20「第一輪就要讓玩家升級 局內升級也是」）：Lv1→2 只要 firstNeed（2＝打贏第 1 位就升；全贏 Lv2 第 1 位、Lv3 第 4 位、Lv4 第 5 位），
+  //   之後照舊「等級＋levelNeed」；第一級不自動加聲望上限（firstHp 0）＝抵銷第一位升級讓前期變簡單（SPEC-I 附錄 Z5；q.easy 不動）。
+  //   firstNeed 0／沒給＝舊規則；firstHp 不是非負整數＝照 levelHp。畫面的經驗條、選秀（choose draft）都用這兩個
+  function xpNeed(T, level) { return (level | 0) <= 1 && T.firstNeed > 0 ? T.firstNeed | 0 : (level | 0) + T.levelNeed; }
+  function levelHpAt(T, level) { return (level | 0) <= 1 && Number.isInteger(T.firstHp) && T.firstHp >= 0 ? T.firstHp : T.levelHp; }
   function gainXp(run, T, n) {
     if (run.xpMul > 1) { const x = n * run.xpMul + (+run.xpFrac || 0); n = Math.floor(x + 1e-9); run.xpFrac = Math.max(0, round6(x - n)); }
     run.xp += n; let ups = 0;
-    while (run.xp >= run.level + T.levelNeed) { run.xp -= run.level + T.levelNeed; run.level++; run.maxHp += T.levelHp; run.hp += T.levelHp; run.levelUps++; ups++; }
+    while (run.xp >= xpNeed(T, run.level)) { const h = levelHpAt(T, run.level); run.xp -= xpNeed(T, run.level); run.level++; run.maxHp += h; run.hp += h; run.levelUps++; ups++; }
     return ups;
   }
   function finishFight(run, content, duel) {
@@ -3176,7 +3185,16 @@
   //   期望等級 L(N)＝(−5＋√(49＋20.8N))/2（每輪 13 經驗、升級要「等級＋3」）；升級 m＝round(L−1−mLess)（比期望少 mLess＝1 級）、撿盤 k＝clamp(round(m/2), 2, 5)
   //   驗收修正（2026-11-17）：原本 m＝round(0.8×(L−1))，越深少越多（第 50 位少 3 級：從第 50 位開的 10 位存活 36.9%，從頭打到那裡的 60.2%）；
   //   改成固定少一級：第 10／20／30 位跟原本一樣（4／6／8），第 50 位 10→12、75 位 13→16、100 位 16→19
-  function expLevel(N) { return (-5 + Math.sqrt(49 + 20.8 * Math.max(1, N))) / 2; }
+  //   第 I 波 I-0（SPEC-I §7.2 末條）：規格要改成照 gainXp 逐位累計（第一級只要 2 經驗＝約 +0.15 級）——量過不採：第 30 位 m 8→9、k 4→5，
+  //   C1（從第 30 位開的 10 位存活 − 從頭打）−3.1 → +3.7 點（出 −8～+3；wave-i/build0/sim CP30／CP30off）。選秀的第一級照樣不加聲望上限（levelHpAt）＝跟從頭打同一條，
+  //   所以 m／k 維持封閉式。expLevel(N, content)＝逐位累計版（只給量測、測試用）
+  function expLevel(N, content, tier) {
+    if (!content) return (-5 + Math.sqrt(49 + 20.8 * Math.max(1, N))) / 2;
+    const T = trialCfg(content, tier);
+    let L = 1, x = 0;
+    for (let p = 1; p <= Math.max(1, N | 0); p++) { x += T.xp[classAt(p)] | 0; for (let g = 0; g < 1000 && x >= xpNeed(T, L); g++) { x -= xpNeed(T, L); L++; } }
+    return L + x / xpNeed(T, L);
+  }
   function draftPlan(content, N) {
     const D = wcCfg(content).draft, L1 = expLevel(N) - 1;
     const m = D.m != null ? Math.max(0, D.m | 0) : D.mRate != null ? Math.max(0, Math.round(D.mRate * L1)) : Math.max(0, Math.round(L1 - (D.mLess != null ? +D.mLess : 1)));
@@ -3553,8 +3571,8 @@
           effects.push({ gainCard: ch.cardId }); p.ck++;
         } else {
           const o = (of.offer || []).find(x => x && x.pick === ch.pick); if (!o) return fail('notOffered');
-          const T = trialCfg(content, run.tier), n = o.n | 0;
-          run.level++; run.maxHp += T.levelHp; run.hp += T.levelHp;
+          const T = trialCfg(content, run.tier), n = o.n | 0, h = levelHpAt(T, run.level);   // 第 I 波 I-0：Lv1→2 那次照 firstHp（＝gainXp）
+          run.level++; run.maxHp += h; run.hp += h;
           if (o.pick === 'atk') run.atk += n; else if (o.pick === 'def') run.def += n; else { run.maxHp += n; run.hp += n; }
           run.picks.push(o.pick); p.cm++;
           effects.push({ level: o.pick, n });
@@ -3574,8 +3592,8 @@
   //   進局：newRun 收 talentArgs(content, career) 給的 {talent, seedMax, relicPick, goldAdd}（applyTalent）；Lv8 前、關樂歷＝{}（或只有錢類 talent）＝逐字現況
   // ============================================================================================================================
   const CAREER = {
-    lexp: { pos: 15, streak: 8, record: 30, caps: { gig: 0.25, route: 0.40 }, tierMul: 0.10, lowMul: 2, lowBelow: 10 },
-    curve: { tri: 100, triTo: 10, after: 1000 },
+    lexp: { pos: 15, streak: 8, record: 30, caps: { gig: 0.25, route: 0.40 }, tierMul: 0.10, lowMul: 2, lowBelow: 10, firstLv: 2 },
+    curve: { table: [100, 150, 250, 350, 500, 650, 800], tri: 100, triTo: 10, after: 1000 },
     draw: { every5: 'epic', epicFrom: 10, other: ['rare', 'uncommon'] },
     talentFx: { atk: 1, def: 1, hp: 2, xp: 0.10, plea: 1, money: 500, pay: 0.10, rare: 0.02 },
     talents: [
@@ -3610,14 +3628,19 @@
   }
   const talentSpent = (content, id, n) => { let s = 0; for (let k = 1; k <= n; k++) s += talentCost(content, id, k); return s; };
   // 等級：Lv n→n+1 要 tri×n（n<triTo），之後每級 after。{level, into＝這一級已經有多少, need＝這一級要多少, total＝累計 xp}
-  function careerNeed(content, n) { const V = careerCfg(content).curve; return n < V.triTo ? V.tri * n : V.after; }
-  function careerLevel(content, xp) {
-    const V = careerCfg(content).curve, total = nonNeg(xp), head = V.tri * Math.max(0, V.triTo - 1) * Math.max(0, V.triTo) / 2;
-    if (V.triTo >= 1 && V.after > 0 && total >= head) { const r = total - head; return { level: Math.max(1, V.triTo) + Math.floor(r / V.after), into: r % V.after, need: V.after, total }; }
+  //   第 I 波 I-0（SPEC-I §7.3 c；店主 11-20「樂歷的成長曲線也要做好 第一輪就要讓玩家升級」）：table＝Lv1…Lv(表長) 每級要的量，表外照舊。
+  //   100／150／250／350／500／650／800（每級只增不減、沒有斷崖；合計 2,800＝舊曲線 Lv1–7 → Lv8 戰力天賦開放的 xp 與點數不變，之後 900、1,000…照舊）
+  const curveNeed = (V, n) => { const t = V.table; return Array.isArray(t) && n >= 1 && n <= t.length && t[n - 1] > 0 ? +t[n - 1] : n < V.triTo ? V.tri * n : V.after; };
+  function careerNeed(content, n) { return curveNeed(careerCfg(content).curve, n | 0); }
+  function curveLevel(V, xp) {
+    const total = nonNeg(xp), start = Math.max(1, V.triTo | 0, (Array.isArray(V.table) ? V.table.length : 0) + 1);   // start 起每級都是 after（快速路徑）
+    let head = 0; for (let n = 1; n < start; n++) head += curveNeed(V, n);
+    if (V.after > 0 && total >= head) { const r = total - head; return { level: start + Math.floor(r / V.after), into: r % V.after, need: V.after, total }; }
     let rem = total, level = 1;
-    for (let g = 0; g < 10000; g++) { const need = careerNeed(content, level); if (!(need > 0) || rem < need) break; rem -= need; level++; }
-    return { level, into: rem, need: careerNeed(content, level), total };
+    for (let g = 0; g < 10000; g++) { const need = curveNeed(V, level); if (!(need > 0) || rem < need) break; rem -= need; level++; }
+    return { level, into: rem, need: curveNeed(V, level), total };
   }
+  function careerLevel(content, xp) { return curveLevel(careerCfg(content).curve, xp); }
   // 升到 Lv level 的累計 xp（Lv1＝0、Lv2＝100、Lv10＝4,500、Lv20＝14,500）
   function careerXpAt(content, level) { let s = 0; for (let n = 1; n < Math.max(1, level | 0); n++) s += careerNeed(content, n); return s; }
   // 點數：等級−1 − Σ（spent 每個天賦第 1…n 級的價）
@@ -3684,6 +3707,8 @@
     return run;
   }
   // 一趟拿多少樂歷（SPEC-D §2.1）：sum＝runSummary(run)；o.best＝這一趟開局前的最遠紀錄（r.farBefore）、o.tier＝試煉階級
+  //   第 I 波 I-0（SPEC-I §7.3 a）：o.first＝新帳號第一趟（save.runs 還沒有任何一趟）→ total＝max(原本, 升到 Lv firstLv 的累計)，回 first＝補了幾點（0＝沒補）；
+  //   o.lowMul（數字 ≥1）＝覆寫新手倍率（careerLive 傳 1：細條不乘 ×2）
   //   total＝round((base＋record＋route) × mul)；mul＝(1＋tierMul×tier) × low
   //   base＝pos×實際打過的位數（fought＝reached − from ＋ 1；o.open＝放棄時站著的那一位還沒打完 → 少算那一位）＋streak×最多連贏
   //   low＝新手補貼 lowMul：只給「這一趟沒走到第 lowBelow 位、帳號也還沒走到過（o.best < lowBelow）、不是放棄（o.quit）」的那一趟
@@ -3698,8 +3723,30 @@
     const parts = {}; for (const k of LEXP_ROUTE) parts[k] = nonNeg(L[k]);
     const raw = LEXP_ROUTE.reduce((t, k) => t + parts[k], 0);
     const route = Math.min(Math.min(parts.gig, Math.floor(X.caps.gig * base)) + raw - parts.gig, Math.floor(X.caps.route * base));
-    const tier = nonNeg(o.tier), tierMul = round6(1 + X.tierMul * tier), low = X.lowMul > 1 && !o.quit && reached < below && best < below ? +X.lowMul : 1, mul = round6(tierMul * low);
-    return { base, fought, record, route, cut: raw - route, mul, tierMul, low, tier, total: Math.round((base + record + route) * mul), parts };
+    const tier = nonNeg(o.tier), tierMul = round6(1 + X.tierMul * tier);
+    const low = typeof o.lowMul === 'number' && o.lowMul >= 1 ? +o.lowMul : X.lowMul > 1 && !o.quit && reached < below && best < below ? +X.lowMul : 1, mul = round6(tierMul * low);
+    const raw0 = Math.round((base + record + route) * mul), first = o.first && X.firstLv > 1 ? Math.max(0, careerXpAt(content, X.firstLv) - raw0) : 0;
+    return { base, fought, record, route, cut: raw - route, mul, tierMul, low, tier, total: raw0 + first, first, parts };
+  }
+  // 一趟裡就看得到（SPEC-I §7.3 b；只顯示、不入帳，入帳照舊在一趟結束）：o＝{best（r.farBefore）, tier（沒給＝run.tier）, xp（save.career.xp，開局時的）}
+  //   n＝這一趟到現在至少拿多少（careerGain、lowMul 1＝不乘新手 ×2、沒有第一趟保底 → 只會越來越多）；level／into／need＝careerLevel(xp＋n)（細條的進度條）；
+  //   from＝開局等級、up＝跨了幾級（畫面：比上次畫的等級大＝細條金色閃「Lv{n}！」）
+  //   I-0 審查：站著的這一位還沒打（攤位時 run.pos 已經是下一位）就不算那一位（open＝!posFought，＝ui careerRecord 放棄的算法）→ n＝現在放棄也拿得到的下限，
+  //   「至少」與跨級的「這一趟結束就能點天賦」放棄也成立；攤位與攤位之間照樣只增不減（打完那一位才多算）
+  function careerLive(content, run, o) {
+    o = o || {};
+    const xp = nonNeg(o.xp), n = careerGain(content, runSummary(run || {}), { best: o.best, tier: o.tier != null ? o.tier : (run && run.tier), lowMul: 1, open: !posFought(run) }).total;
+    const L = careerLevel(content, xp + n), from = careerLevel(content, xp).level;
+    return { n, from, level: L.level, into: L.into, need: L.need, up: L.level - from };
+  }
+  // 曲線改了（SPEC-I §7.5；開機跑）：from＝舊曲線（沒有 table）的等級、to＝現在的、missing＝from+1…to 裡 career.drawn 沒有的等級（畫面補抽、吐司「補你 n 級」）。
+  //   補抽完 drawn 就有了 → 下次 missing 空（不用旗標）。新曲線每級累計都 ≤ 舊的 → 等級只升不降、點數只多不少
+  function careerRecurve(content, career) {
+    const c = career || {}, V = careerCfg(content).curve, to = curveLevel(V, c.xp).level;
+    const from = Array.isArray(V.table) ? Math.min(to, curveLevel(Object.assign({}, V, { table: null }), c.xp).level) : to;
+    const drawn = Array.isArray(c.drawn) ? c.drawn : [], missing = [];
+    for (let n = Math.max(2, from + 1); n <= to; n++) if (!drawn.includes(n)) missing.push(n);
+    return { from, to, missing };
   }
   // 放棄（重新推門）的那一趟，站著的這一位打完了沒（careerGain 的 o.open＝!posFought）：打贏還在領獎／升級、輸了停在說情選單＝打過；
   //   還沒開打（路線上、中繼點選秀）、對決打到一半＝沒打過
@@ -4194,7 +4241,7 @@
     WAVEC, wcCfg, floorAt, wcTh, wcPool, lootRow, chestRow, stallSession, stallResume, stallUnlocked, stallLadder, cPolicy, gigPrice, gigKeepN, draftPlan, expLevel,
     deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound,
     CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
-    talentArgs, applyTalent, gainXp, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
+    talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）

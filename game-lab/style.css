@@ -1171,6 +1171,40 @@ body.lb-tune-open{overflow:hidden;}
   .lb-sheet.level .lb-opts.n4{gap:6px;}
   .lb-sheet.level .lb-opts.n4 .lb-lvl{min-height:50px;padding-top:4px;padding-bottom:4px;}
 }
+/* ===================== 第 I 波 I-0：升級章、樂歷細條、清單卡（SPEC-I §7.2、§7.3；ui.js levelChapter／careerLiveOf／careerCards） ===================== */
+/* 升級章：打贏的大章（.kost，z 25）之後蓋在盤面上「升級！Lv n」，停住、點了收。同一個 z、排在大章後面＝蓋過大章；紀錄面板（z 26）照樣在上面 */
+.dl .lb-lvch{position:absolute;left:0;top:0;right:0;bottom:0;z-index:25;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:rgba(255,251,233,.86);cursor:pointer;-webkit-tap-highlight-color:transparent;outline:none;animation:lbFadeIn .18s ease-out both;}
+.dl .lb-lvch .st{transform:rotate(-4deg);padding:12px 22px 11px;border:4px double var(--gold);background:#fff;color:var(--gold-ink);box-shadow:0 8px 30px rgba(0,0,0,.2);animation:lbChapIn .42s ease-out both;}
+.dl .lb-lvch .st b{display:block;font:900 30px/1.1 var(--zh);letter-spacing:.14em;white-space:nowrap;}
+.dl .lb-lvch .tap{margin:0;font:700 12px/16px var(--zh);letter-spacing:.08em;color:var(--gray2);}
+.dl .lb-lvch .tap i{display:inline-block;font-style:normal;animation:lbBob 1s ease-in-out infinite;}
+.dl .lb-lvch.out{opacity:0;transition:opacity .18s;}
+.dl:has(> .lb-lvch:not(.out)) .kost{visibility:hidden;}               /* 章蓋著的時候，底下的大章不要從邊邊透出來（不支援 :has 的照舊疊著） */
+@keyframes lbChapIn{0%{transform:rotate(-4deg) scale(1.8);opacity:0;}55%{transform:rotate(-4deg) scale(.96);opacity:1;}100%{transform:rotate(-4deg) scale(1);opacity:1;}}
+@keyframes lbBob{0%,100%{transform:translateY(0);}50%{transform:translateY(2px);}}
+/* 升級面板標題放大（「升到 Lv n：挑一項，這一趟都有效」）；聲望那行接在下面 */
+.lb-sheet.level .hd.lvup{flex-wrap:wrap;row-gap:0;}
+.lb-sheet.level .hd.lvup h3{flex:1 1 100%;font-size:16px;letter-spacing:.04em;}
+.lb-sheet.level .hd.lvup .sub{margin-left:0;}
+/* 矮螢幕（≤600px 高）＋本派格（4 顆）：標題放大、聲望那行換到第二行＝標題列多 15px，四顆再收一點（間距 4、每顆 48，仍 ≥44），
+   不然 375×548 本派格說明兩行時面板要捲（e2e-fac F8 Lv20 吸血第二招：捲 299/292；main 是 290/290 剛好） */
+@media (max-height:600px){
+  .lb-sheet.level .lb-opts.n4{gap:4px;}
+  .lb-sheet.level .lb-opts.n4 .lb-lvl{min-height:48px;}
+}
+/* 攤位面板標題列底下的樂歷細條（一趟裡就看得到；I-3a 起搬到市集頂列）：一行字＋這一趟結束會到的等級＋進度條；跨一級＝金底閃、停 ≥3 秒、點了收 */
+.cx-live{display:flex;align-items:center;gap:6px;min-height:18px;margin:-2px 0 4px;font:11px/16px var(--zh);color:var(--gray2);}
+.cx-live .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.cx-live .lv{flex:none;font:700 11px/16px var(--mono);color:var(--gold-ink);}
+.cx-live .cx-bar.sm{flex:none;width:60px;height:6px;border:1px solid var(--gold);background:#fff;}
+.cx-live.up{margin-left:-4px;margin-right:-4px;padding:1px 4px;color:var(--gold-ink);font-weight:700;background:var(--cream);box-shadow:inset 0 0 0 1px var(--gold);cursor:pointer;animation:cxLiveFlash .8s ease-out 3;}
+.cx-live.up .lv{display:none;}                                       /* 字裡已經寫了 Lv n */
+@keyframes cxLiveFlash{0%{background:#f0c75e;}100%{background:var(--cream);}}
+/* 清單卡（一次升兩級以上）：縮圖一列、多張時縮小 */
+.cx-got.many{flex-direction:column;align-items:flex-start;gap:6px;}
+.cx-got.many .cvs{flex-wrap:wrap;}
+.cx-got.many .lb-cv{width:44px;height:44px;}
+@media (prefers-reduced-motion:reduce){ .dl .lb-lvch,.dl .lb-lvch .st,.dl .lb-lvch .tap i,.cx-live.up{animation:none;} }
 
 /* 第 I 波 I-1「翻面」（王牌條件加成；ui.js EU／encToast／encCarryHd；對決裡的籤與金框在 duel.css）：
    吐司（停 3 秒、點了收：要吃點擊）、領獎標題列下一行金色小字、挑王牌面板的說明句、頂點卡面板一行（截斷、點了看全文）、規則卡一段 */

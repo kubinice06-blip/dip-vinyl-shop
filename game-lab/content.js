@@ -357,6 +357,10 @@
       [176, 1], [181, 1], [186, 1], [191, 1], [196, 1], [201, 1], [206, 1], [211, 1], [216, 1], [221, 1], [226, 1], [231, 1], [236, 1],
       [241, 1], [246, 1], [251, 1], [256, 1], [261, 1], [266, 1], [271, 1], [276, 1], [281, 1], [286, 1], [291, 1], [296, 1]],
     xp: { normal: 2, elite: 3, boss: 4 }, levelNeed: 3, levelHp: 1,
+    // 第 I 波 I-0（SPEC-I §7.2；店主 11-20「第一輪就要讓玩家升級 局內升級也是」）：Lv1→2 只要 firstNeed 經驗＝打贏第 1 位就升（之後照舊 等級＋levelNeed）；
+    //   全贏 Lv2 第 1 位、Lv3 第 4 位、Lv4 第 5 位（第一輪升 3 次；原本第 2、4、6 位）。抵銷：第一級不自動加聲望上限（firstHp 0；之後每級 +levelHp、三選一的 +2 照舊）。
+    //   q.easy 不動（守 11-16「前期保留放水」）；SPEC-I 附錄 Z5（n 2000）：新手第 1–3 位死 14.4→14.5%、會讀的到第 50 位 19.1→18.6%。engine xpNeed／levelHpAt
+    firstNeed: 2, firstHp: 0,
     picks: { atk: 1, def: 1, hp: 2 },               // 三選一：品味 +1、底氣 +1、聲望上限 +2（現有聲望也 +2）
     checkpoints: [10, 20, 30, 50, 75, 100], checkpointEvery: 50,
     curve: {
@@ -458,9 +462,12 @@
       bossUnlock: '打倒他，解鎖{title}',                               //   接在後面：打倒他會解鎖哪一派
       bossCollect: '打倒他，這張就收進唱片櫃'                           //   ?apex=1、三派都開之後：他帶的是你還沒收到的那張
     },
-    // 升級三選一（第一格固定是品味或底氣；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
-    //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）
-    levelUp: { title: '升級：Lv {n}', sub: '聲望上限 +1（自動）', atk: '品味 +1', def: '底氣 +1', hp: '聲望上限 +2', atkSub: '剋中時多扣他 {n}', defSub: '被扣時少扣 {n}（最多擋一半）', hpSub: '現在的聲望也 +{n}' },
+    // 升級三選一（固定 品味→底氣→聲望上限；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
+    //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）。sub（自動加的聲望上限）：升到 Lv2 那次不出（engine levelHpAt 0）
+    //   第 I 波 I-0（SPEC-I §7.2）：title 放大成一句話；chapter＝打贏那一手結果句之後先跳的「升級！」章（停住、點了收，再接戰利品列）；
+    //   first＝第一次升級（save.seen.lv1）升級面板出來時老闆的泡泡
+    levelUp: { title: '升到 Lv{n}：挑一項，這一趟都有效', sub: '聲望上限 +1（自動）', atk: '品味 +1', def: '底氣 +1', hp: '聲望上限 +2', atkSub: '剋中時多扣他 {n}', defSub: '被扣時少扣 {n}（最多擋一半）', hpSub: '現在的聲望也 +{n}',
+      chapter: '升級！Lv{n}', first: '打贏就會升級，挑一項，這一趟都有效。' },
     // 結果行補的一句（engine outcome 的 notes；{n}＝多扣／少扣幾點）
     notes: { atk: '品味：多扣 {n}', def: '底氣：少扣 {n}', eAtk: '他的品味：多扣 {n}', eDef: '他的底氣：少扣 {n}', feint: '被唬到：多扣 {n}' }   // feint：11-17 被唬到多扣（C.trial.curve.read.hit）
   };
@@ -1735,14 +1742,17 @@
   //     基本＝15×實際打過的位數＋8×最多連贏（＝C 波 LEXP_BASE）；破紀錄 +30（最遠紀錄 >0 才給）；路線＝演唱會 ≤ 基本 25%、五項合計 ≤ 基本 40%（執行期截斷）
   //     lowMul／lowBelow＝新手補貼（SPEC-D §14-2 建議 B：沒走到第 10 位那趟樂歷 ×2；lowMul 1＝關）
   //   等級（careerLevel）：Lv n→n+1 要 100n（n<10），之後每級 1,000（累計 Lv2 100、Lv5 1,000、Lv10 4,500、Lv20 14,500）；每升一級 +1 天賦點、抽一張盤進唱片櫃
+  //     第 I 波 I-0（SPEC-I §7.3 c；店主 11-20「樂歷的成長曲線也要做好 第一輪就要讓玩家升級」）：curve.table＝前 7 級 100／150／250／350／500／650／800
+  //     （累計 Lv2 100、Lv3 250、Lv4 500、Lv5 850、Lv6 1,350、Lv7 2,000、Lv8 2,800 不變；每級只增不減）。Lv8 戰力天賦的 xp 與點數不變，前面多出來的點只能點錢類
+  //   第一趟保底（lexp.firstLv，SPEC-I §7.3 a）：新帳號第一趟（save.runs 還沒有任何一趟）結算至少到 Lv firstLv（careerGain o.first）；0＝關
   //   天賦（talents；cost [a,'k']＝第 k 級 a×k 點、[a,'flat']＝每級 a 點、[a,'k+1']＝第 k 級 a＋k−1 點；max 0＝不封頂；open＝樂歷幾級開；soon＝D 波不做、畫灰）
   //     戰力（品味、底氣、聲望）6k 點、Lv8 開——規劃書價（1＋⌊(k−1)/5⌋、Lv5 開）一點戰力就讓深度差太多，多趟第 5 趟中位就到第 130 位（SPEC-D §11.4、§11.5）
   //   解鎖階梯（ladder；照等級自動開、不花點）：relicPick＝菁英／藏家配件三選一、seedMax＝種子格、goldAdd＝戰利品列金邊機率 +n（加在 C.waveC.loot.gold）
   //   熟練度（prof；每派一條，預設就記）：一章 150、十章一級；落後（<最高那派一半）×2；第一次解鎖先蓋兩章；派點與派樹在 ?fac=1（棒三）
   // ===================================================================
   C.career = {
-    lexp: { pos: 15, streak: 8, record: 30, caps: { gig: 0.25, route: 0.40 }, tierMul: 0.10, lowMul: 2, lowBelow: 10 },
-    curve: { tri: 100, triTo: 10, after: 1000 },
+    lexp: { pos: 15, streak: 8, record: 30, caps: { gig: 0.25, route: 0.40 }, tierMul: 0.10, lowMul: 2, lowBelow: 10, firstLv: 2 },
+    curve: { table: [100, 150, 250, 350, 500, 650, 800], tri: 100, triTo: 10, after: 1000 },
     draw: { every5: 'epic', epicFrom: 10, other: ['rare', 'uncommon'] },   // Lv10、15、20…史詩；其他稀有／獨特各半（Lv5 也是稀有／獨特：戰力相關的一律 Lv8 以後）
     talentFx: { atk: 1, def: 1, hp: 2, xp: 0.10, plea: 1, money: 500, pay: 0.10, rare: 0.02 },
     talents: [
@@ -1796,8 +1806,8 @@
       partPos: '走了 {k} 位 +{n}', partStreak: '最多連贏 {k} 場 +{n}', partRecord: '破紀錄 +{n}', partRoute: '路線 +{n}', partCut: '（已到上限）',
       partTier: '×{m} 第 {k} 階', partLow: '還沒走到第 {n} 位：樂歷 ×{m}', partProf: '{title} 蓋了 {n} 個章', partOff: '這一趟關樂歷（樂歷照拿）',
       routeCap: '路線樂歷已到上限',
-      // 主鈕之後的過場卡（一次一張、最多 3 張，其餘合成一句）
-      lvUp: '樂歷 Lv {n}！天賦點 +1', lvMore: '再升 {n} 級', drawGot: '抽到一張，收進唱片櫃', ladderOpen: '開了：{name}', goTalent: '去點天賦',
+      // 主鈕之後的過場卡（一次升一級＝一張；升兩級以上合成一張清單卡 lvList，第 I 波 I-0）
+      lvUp: '樂歷 Lv {n}！天賦點 +1', drawGot: '抽到一張，收進唱片櫃', ladderOpen: '開了：{name}', goTalent: '去點天賦',
       profUp: '{title} 熟練 Lv{n}',
       // 開機入帳（careerDeposit）的吐司
       depositFirst: '老闆：你之前的樂歷我都記著呢。樂歷 +{n}，升到 Lv {to}。', depositMore: '老闆：上次的樂歷補記給你。樂歷 +{n}。',
@@ -1812,7 +1822,15 @@
       buy: '加一級', sell: '退一級', noPoints: '天賦點不夠', profTitle: '熟練度', unlockTitle: '流派與攤位',
       lastLine: '上一趟 樂歷 +{n}', nextRun: '改了下一趟開局才算',
       gainTitle: '這一趟的樂歷 +{n}', toPage: '看樂歷頁 ›', cardNext: '繼續', cardTap: '點一下看下一張',
-      pleaMenu: '▶ 再一場（用掉備用說情）'                          // 備用說情那次的第一顆（C.trial.ui.retryMenu[0] 寫「這一輪只有一次」，這次不是）
+      pleaMenu: '▶ 再一場（用掉備用說情）',                         // 備用說情那次的第一顆（C.trial.ui.retryMenu[0] 寫「這一輪只有一次」，這次不是）
+      // 第 I 波 I-0（SPEC-I §7.3、§7.5；契約 wave-i/build0/CONTRACT.md）
+      partFirst: '第一趟：樂歷保底到 Lv {n}',                       // 結算明細（careerGain 的 first >0 才出；{n}＝lexp.firstLv）
+      live: '樂歷 這一趟 至少 +{n}',                                // 攤位頂列細條（engine careerLive；只顯示、一趟結束才入帳）
+      liveUp: '樂歷 Lv {n}！這一趟結束就能點天賦',                  //   跨過一級的那一刻（金色閃、停 3 秒、點了收；不另跳老闆泡泡）。審查：寫「樂歷」，別跟局內等級（升級！Lv{n}）打架
+      recurve: '樂歷算法改了，補你 {n} 級。',                        // 開機吐司（engine careerRecurve 的 missing 有東西：補抽那幾級）
+      lvList: '樂歷 Lv {n}！', lvNew: '開了：{list}',               // 一次升好幾級合成的那張清單卡（標題、新開的階梯用「、」接）。審查：跟一級一張的 lvUp／ladderOpen 同寫法
+      lvPts: '天賦點 +{n}', drawGotN: '抽到 {n} 張，收進唱片櫃',     //   清單卡標題右邊（升了幾級＝多幾點）、抽到的盤那行（一張照舊 drawGot）
+      liveLv: 'Lv {n}'                                              // 攤位頂列細條的進度條前面（careerLive 的 level：這一趟結束會到的等級；跟「樂歷 Lv {n}」同寫法）
     }
   };
   C.careerTag = '新';
