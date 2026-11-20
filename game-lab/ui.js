@@ -125,7 +125,10 @@
       wcLog: { ground: 0, lootRows: 0, leave: 0, sessions: 0, resumeInStall: 0 },
       // 第 D 波（SPEC-D §2.5；SAVE_V 不升，維持 8：只多 career、trial 兩個鍵，C 版頁面讀到照留）：樂歷（等級、點數由 xp／spent 算、不存）、試煉階級（棒三才用）
       career: { key: '', xp: 0, spent: {}, off: false, prof: { hall: 0, pearl: 0, heresy: 0 }, tree: { hall: {}, pearl: {}, heresy: {} }, drawn: [], got: [], banked: false, lastGain: null },
-      trial: { open: 0, pick: 0, best: {} } };   // want：想要清單（你家的控制台在星圖上挑到、還沒擁有的；v5 第六項第三期，先只記、不影響進貨；不用升存檔版本：舊存檔缺這個鍵就補空的）
+      trial: { open: 0, pick: 0, best: {} },
+      // 活店（SPEC-H §8；SAVE_V 不升：只多 regulars 一個頂層鍵）：n＝總共聊過幾段（輪替雜湊）、met＝見過的熟客（talks、againAt、每一類最近講過的句子）、
+      //   seen＝路人共用環與老闆按類、enc＝一輩子切磋戰績（第二階段；只給台詞條件用）
+      regulars: { v: 1, n: 0, met: {}, seen: { passer: [], owner: {} }, enc: { offered: 0, fought: 0, won: 0, lost: 0 } } };   // want：想要清單（你家的控制台在星圖上挑到、還沒擁有的；v5 第六項第三期，先只記、不影響進貨；不用升存檔版本：舊存檔缺這個鍵就補空的）
   }
   var posInt = function (x) { return typeof x === 'number' && Math.floor(x) === x && x >= 1; };
   function validRun(r) {
@@ -388,6 +391,7 @@
     var tOpen = nn(tr.open), tb = {};
     if (tr.best && typeof tr.best === 'object' && !Array.isArray(tr.best)) Object.keys(tr.best).forEach(function (k2) { if (nn(tr.best[k2])) tb[k2] = nn(tr.best[k2]); });
     s.trial = { open: tOpen, pick: Math.min(nn(tr.pick), tOpen), best: tb };
+    s.regulars = fixRegulars(s.regulars);                     // 活店（SPEC-H §8）：形狀不對的欄位換回預設
     return s;
   }
   // 今日推薦存獨立鍵 .daily（舊碼整份寫回碰不到；SPEC-B §4.1）。UI.daily；改之前先 loadDaily() 重讀
@@ -3589,8 +3593,9 @@
     if (UI.screen !== 'night' || UI.atTable !== key || UI.going) return;
     var intro = C.lines[id] && C.lines[id].intro;
     if (!intro || qs('.ec-drawer', app())) return;
-    var wait = (UI.oSayTill || 0) - Date.now();
-    if (wait > 0) { later(function () { tableIntro(key, id); }, (wait + 250) * speed()); return; }
+    var wait = sayTill() - Date.now();                          // 活店（SPEC-H §5.2）：老闆或店裡有人正在跟你聊，等他講完
+    var chatW = (+crowdCall('chatTill') || 0) - Date.now();    // 聊天（有 ▼ 的泡泡點了才換）可能提早收：每秒再看一次，不白等 20 秒
+    if (wait > 0) { later(function () { tableIntro(key, id); }, ((chatW > (UI.oSayTill || 0) - Date.now() ? Math.min(wait, 1000) : wait) + 250) * speed()); return; }
     stageSay('f', [].concat(intro)[0], null, 1800);
   }
   // 來客條頭像角落的小記號（第 C 波）：算命看過的這一輪藏家（run.fortune）、接了踢館帖的那一輪（run.dare）
@@ -3768,7 +3773,7 @@
       if (UI.screen !== 'night' || save.run !== r) return clearInterval(iv);
       var tt = D.getElementById('tut'), ci = CI(), X = econ();
       if (--wait > 0 || UI.going || UI.modal || UI.page || (tt && /\bon\b/.test(tt.className)) || (ci && ci.isOpen()) || (X && X.isOpen && X.isOpen()) ||
-        qs('.lb-sheet', app()) || qs('.lb-toast:not(.out)', app())) return;
+        qs('.lb-sheet', app()) || qs('.lb-toast:not(.out)', app()) || (+crowdCall('chatTill') || 0) > Date.now()) return;   // 活店：店裡有人正在跟你聊，等他講完
       while (Q.length) if (Q.shift()()) { wait = Math.ceil(3000 / speed() / 300); return; }
       clearInterval(iv);
     }, 300);
@@ -3891,9 +3896,25 @@
   //   打過第 1 位之後照舊只說一句（輪流提醒「下一趟開門前再說」）
   //   第 A 波 5：兩位客人之間點老闆＝櫃檯「賣給老闆」（移出包包只走這裡）；第 1 位開打前的小選單多一顆「賣給老闆」
   function counterSell() { sfx('tick'); econCall('openCounterSell'); }
-  function ownerTalk() {
+  //   活店（SPEC-H §5.4；viaOwner＝點的是老闆、不是櫃檯，而且活店開著）：打過第 1 位之後點老闆也開小選單「聊聊／賣給老闆」（換一張王牌那顆不畫）；
+  //   「聊聊」＝C.ownerChat 一段（ownerChatBeat）。活店關著（?crowd=0、自動化瀏覽器）或點櫃檯＝照現行
+  function ownerTalk(viaOwner) {
     var r = save.run; if (!r) return;
     var sellOk = E.canShop(r) && !!econ() && typeof econ().openCounterSell === 'function';
+    var live = !!viaOwner && crowdChatOn();
+    if (!E.canSwitchAce(r, C) && live) {
+      sfx('tick');
+      var hm = '<div class="hd"><h3>' + esc(TU('owner')) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+        '<button type="button" class="lb-btn big wide key lb-ownertalk" data-a="talk">' + esc(TU('aceTalk')) + '</button>' +
+        (sellOk ? '<button type="button" class="lb-btn big wide key lb-ownersell" data-a="osell">' + esc(SHU('sellTab')) + '</button>' : '');
+      var s2 = floatSheet(hm, 'owner');
+      s2.addEventListener('click', function (e) {
+        var b = e.target.closest && e.target.closest('[data-a=talk],[data-a=osell]'); if (!b) return;
+        s2.remove(); syncFloat();
+        if (b.getAttribute('data-a') === 'osell') counterSell(); else ownerChatBeat();
+      });
+      return;
+    }
     if (!E.canSwitchAce(r, C)) {
       if (sellOk) { counterSell(); return; }
       UI.ownerN = (UI.ownerN | 0) + 1;
@@ -3918,7 +3939,7 @@
       var b = e.target.closest && e.target.closest('[data-a=talk],[data-a=swap],[data-a=osell]'); if (!b) return;
       s.remove(); syncFloat();
       if (b.getAttribute('data-a') === 'osell') counterSell();
-      else if (b.getAttribute('data-a') === 'talk') stageSay('o', line('ownerHint', 'night'), 'owner', 2600);
+      else if (b.getAttribute('data-a') === 'talk') { if (live) ownerChatBeat(); else stageSay('o', line('ownerHint', 'night'), 'owner', 2600); }
       else if (UI.apex) apexSwapFlow(false);           // 頂點卡試做：三派 → 那派 15 張挑一張
       else aceSwapFlow();
     });
@@ -4087,6 +4108,9 @@
     if (scr === 'home') { homeAction(action); return; }
     if (action === 'home' && scr === 'taipei') { goHome(UI.taipeiBack || 'title'); return; }
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
+    // 活店（SPEC-H §5.1）：點熟客、路人＝聊天（talk:<熟客 id>｜talk:passer；跟著人走的熱點只在來客、標題回訪、攤位點得到）
+    if ((m = /^talk:(?!owner$)([a-z0-9]+)$/.exec(action))) { crowdCall('talk', m[1], hot); return; }
+    if (action === 'talk:owner' || action === 'owner') crowdCall('chatClose');   // 點老闆＝收掉客人的泡泡（同時只有一個人在講）
     // 今天的攤位（第 C 波 SPEC-C §4.3-6）：箱子、收音機、櫃檯、對戰台＝「先逛完今天的攤位。」；試聽機照開今日推薦、門口照看客人、老闆照聊
     if (scr === 'night' && save.run && E.nextStep(save.run) === 'stall' && /^(?:(?:crate|bin):.+|radio|counter|duel)$/.test(action)) {
       if (W.DipLabStalls && W.DipLabStalls.busy && W.DipLabStalls.busy(action)) return;
@@ -4098,7 +4122,8 @@
     //   「拿去櫃檯賣給老闆」的提示剛出過（還沒打開過賣給老闆）：點櫃檯直接開「賣給老闆」分頁
     if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop', UI.sellNudge === save.run ? { tab: 'sell' } : undefined); return; }
     // 來客畫面點老闆：第 1 位開打前＝「聊聊／換一張王牌」（店主 11-13）
-    if ((action === 'talk:owner' || action === 'owner' || action === 'counter') && scr === 'night' && save.run) { if (E.nextStep(save.run) === 'stall') { stageSay('o', WU('stallHint'), 'owner', 2400); return; } ownerTalk(); return; }
+    //   活店（SPEC-H §5.4）：點老闆＝一律開小選單（聊聊／賣給老闆；第 1 位開打前多換一張王牌）；點櫃檯照舊（ownerTalk 不帶參數＝現行）
+    if ((action === 'talk:owner' || action === 'owner' || action === 'counter') && scr === 'night' && save.run) { if (E.nextStep(save.run) === 'stall') { stageSay('o', WU('stallHint'), 'owner', 2400); return; } ownerTalk(action !== 'counter'); return; }
     if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
     if (action === 'cat') { var ct = line('cat'); if (ct) stageSay('o', ct, 'owner', 1600); return; }
     if ((m = /^shop:(.+)$/.exec(action))) { if (scr === 'taipei' && m[1] === 'dip') backFromTaipei(); return; }
@@ -4786,7 +4811,22 @@
         doorLog: function () { return crowdCall('doorLog') || []; },
         clear: function () { return crowdCall('clear'); },
         mode: function () { return crowdCall('mode'); },
-        on: function () { return !!UI.crowdOk && crowdOn(); }
+        on: function () { return !!UI.crowdOk && crowdOn(); },
+        // 聊天（§5）：chat(slot 或熟客 id)＝點那個人（跟真點同一條路）；talk＝現在誰在講、第幾泡；next＝下一句（點 ▼）；close＝收掉；
+        //   owner()＝老闆聊聊一段；regulars()＝save.regulars 複本；enc＝第二階段（切磋）才有
+        chat: function (id) {
+          var S0 = crowdCall('state'), sl = S0 && (S0.slots || []).filter(function (x) { return x.on && (x.slot === id || x.who === id); })[0];
+          if (!sl) return null;
+          onStageAction('talk:' + (/^passer/.test(sl.who) ? 'passer' : sl.who), { id: 'cw-' + sl.slot, follow: sl.slot });
+          return crowdCall('chatState');
+        },
+        talk: function () { return crowdCall('chatState'); },
+        next: function () { return crowdCall('chatNext'); },
+        close: function () { crowdCall('chatClose'); return null; },
+        owner: function () { ownerChatBeat(); return crowdCall('chatState'); },
+        sayTill: function () { return sayTill(); },
+        regulars: function () { return JSON.parse(JSON.stringify(save.regulars || null)); },
+        enc: function () { return null; }
       },
       duel: function () { return save.run && save.run.duel ? E.view(save.run.duel) : null; },
       rawDuel: function () { return save.run && save.run.duel; },
@@ -5051,7 +5091,9 @@
       K.configure({ on: crowdOn(), content: C, stage: function () { return UI.stage; }, speed: speed, reduced: rm, paused: crowdPaused,
         seqTag: function () { var CC = W.DipCrowdCore; return save && save.run && CC ? CC.seqTag(save.run) : null; },
         titleTag: function () { var CC = W.DipCrowdCore; return CC ? CC.titleTag((save.runs || []).length, seedKey()) : 'title'; },
-        ownerFree: crowdOwnerFree, shelfCard: crowdShelfCard });
+        ownerFree: crowdOwnerFree, shelfCard: crowdShelfCard,
+        // 聊天（§5）：挑句與存檔在這裡（crowdChat）；泡泡、停多久、一次幾段在 crowd.js。fastK＝只有 ?fast=1 的 ÷4（動畫加速不吃，§5.3）
+        chat: crowdChat, chatEnd: crowdChatEnd, fastK: function () { return FAST ? 4 : 1; }, hint: crowdHint, quiet: crowdQuiet });
     } catch (e) { console.error(e); }
   }
   // 暫停（§3.1）：抽屜、浮動面板（切磋邀請面板除外）、頁面、〔D〕過場卡（也是浮動面板）、教學泡泡、唱片資訊、你正在走去開打（UI.going）、分頁藏到背景
@@ -5067,7 +5109,7 @@
   }
   // 客人拿著翻到的那張去櫃檯前結帳（§4.2）：老闆在講話、老闆選單或櫃檯面板開著、老闆不在櫃檯（宵夜、裁判）＝這次不結帳
   function crowdOwnerFree() {
-    if ((UI.oSayTill || 0) > Date.now()) return false;
+    if (sayTill() > Date.now()) return false;
     var a = app(); if (a && qs('.lb-sheet.float.owner', a)) return false;
     var X = econ(); try { if (X && X.isOpen && X.isOpen()) return false; } catch (_) {}
     var o = stg('pos', 'o'), sp = stg('spot', 'counter');
@@ -5084,6 +5126,8 @@
   function crowdSync(id, p) {
     if (!UI.crowdOk || !W.DipLabCrowd) return;
     p = p || {};
+    crowdCall('chatClose');                                    // 換畫面（含來客畫面重畫）＝聊天泡泡收掉（§3.1、§5.3）；人和位置照留
+    crowdChatEnd();
     var r = save && save.run, mode = 'off', o = {};
     if (id === 'title') mode = firstEver() ? 'off' : 'calm';                     // 第一次＝冷清（接著是序章）；回訪＝0–1 位站著翻
     else if (id === 'night') {
@@ -5099,6 +5143,193 @@
     else if (id === 'scene') mode = p.noCrowd ? 'off' : (p.crowd || 'off');     // 序章、收尾、再挑戰開場＝藏；對決後場景（非序章）＝still
     else if (id === 'home' || id === 'taipei') { crowdCall('stop', { keep: true }); return; }   // 換店：藏起來、記著誰在哪，回來照放
     if (mode === 'off') crowdCall('stop'); else crowdCall('start', mode, o);
+  }
+  // ---- 活店聊天（SPEC-H §5、§6.4、§8）：導演（crowd.js）點人時叫 crowdChat(who, info) → { bubbles:[{text, quote?, src?}], cat }（周姐要讀 lore.json 時回 Promise）。
+  //   挑句＝DipCrowdCore.chatPick（輪替、need、空格）；這裡組 ctx（這一趟的事、記得你、架上那張、周姐那張卡）、填空格、記 save.regulars（只標 dirty，收泡泡或換畫面才存）。
+  //   空格填不出來一律 null（chatPick 判掉那句），不准拿預設字補（C.crowdFact）；樣板填完超過 maxFilled 字的那句這次不用（§5.4）
+  function crowdChatOn() { return !!(UI.crowdOk && W.DipLabCrowd && crowdOn()); }
+  function chatLen(s) { return (Array.from ? Array.from(String(s)) : String(s).split('')).length; }
+  function chatTexts(l) { return Array.isArray(l.text) ? l.text : [l.text]; }
+  function chatFill(t, v) { return String(t).replace(/\{([a-zA-Z]+)\}/g, function (m0, k) { return v && v[k] != null ? String(v[k]) : m0; }); }
+  var CHAT_TPL = { shelf: 1, fact: 1, loreIn: 1, loreOut: 1 };
+  function chatPool(pool, v) {
+    var max = (C.crowdFact && C.crowdFact.maxFilled) || 40;
+    return pool.filter(function (l) {
+      if (!CHAT_TPL[l.cat]) return true;
+      return chatTexts(l).every(function (t) { var f = chatFill(t, v); return /\{[a-zA-Z]+\}/.test(f) || chatLen(f) <= max; });
+    });
+  }
+  // 這一趟的事（trip 類台詞的 need；標題回訪沒有 run＝null → trip 不出）
+  function chatTrip(r) {
+    var far = r.farBefore | 0;
+    return { pos: r.pos, streak: r.streak | 0, hpHalf: r.hp * 2 <= r.maxHp, retried: !!(r.stats && (r.stats.retries | 0) > 0),
+      dare: !!(r.dare && E.roundOf && r.dare.round === E.roundOf(r.pos)), bag: (r.bag || []).length, ace: r.ace,
+      firstRun: !(save.runs && save.runs.length), newFar: far > 0 && r.pos > far };
+  }
+  // 卡片空格（C.crowdFact）：年份 1950 以前（多半是錄音、作曲年）、其他地區、三軸並列或都 <4 → null
+  function factVars(c, binLabel) {
+    var F = C.crowdFact || {}, ok = typeof c.year === 'number' && c.year >= (F.minYear || 1950);
+    var ax = ['c', 'o', 'h'].map(function (k) { return [k, +c[k] || 0]; }).sort(function (a, b) { return b[1] - a[1]; });
+    return { artist: c.artist || null, album: c.album || null, year: ok ? c.year : null, decade: ok ? Math.floor(c.year / 10) * 10 : null,
+      genre: (F.genre || {})[(c.genres || [])[0]] || null, bin: binLabel || null, region: (F.region || {})[c.region] || null,
+      tune: ((C.tunes && C.tunes.names) || {})[c.tune] || null,
+      axis: ax[0][1] >= (F.axisMin || 4) && ax[0][1] > ax[1][1] ? (F.axis || {})[ax[0][0]] || null : null };
+  }
+  // 行家摘句（game-lab/lore.json，§6.3）：周姐第一次要講知識段才載；2.5 秒逾時、失敗不快取（下次再試），這一段改用欄位樣板
+  var ASSET_V = (function () { try { var s = D.querySelector('script[src*="ui.js"]'), m = s && /[?&]v=([^&]+)/.exec(s.getAttribute('src') || ''); return m ? m[1] : ''; } catch (_) { return ''; } })();
+  function loreKey(a) { var s = String(a == null ? '' : a); try { s = s.normalize('NFC'); } catch (_) {} return s.trim().toLowerCase(); }
+  function loreOf(c) { var L = UI.lore; return L && L.a && c ? (Array.isArray(L.a[loreKey(c.artist)]) && L.a[loreKey(c.artist)].length ? L.a[loreKey(c.artist)] : null) : null; }
+  function loadLore() {
+    if (UI.lore) return Promise.resolve(UI.lore);
+    if (UI.loreP) return UI.loreP;
+    if (typeof W.fetch !== 'function' || Date.now() - (UI.loreFailAt || 0) < 30000) return Promise.resolve(null);   // 剛失敗過：30 秒內這幾段直接用樣板，不一直重打
+    var ctl = null; try { ctl = W.AbortController ? new AbortController() : null; } catch (_) { ctl = null; }
+    var tm = 0;
+    var to = new Promise(function (res) { tm = setTimeout(function () { if (ctl) try { ctl.abort(); } catch (_) {} res(null); }, 2500); });
+    var get = W.fetch('lore.json' + (ASSET_V ? '?v=' + encodeURIComponent(ASSET_V) : ''), ctl ? { signal: ctl.signal } : {})
+      .then(function (r) { return r && r.ok ? r.json() : null; }).catch(function () { return null; });
+    UI.loreP = Promise.race([get, to]).then(function (j) {
+      clearTimeout(tm); UI.loreP = null;
+      if (j && typeof j === 'object' && j.a && typeof j.a === 'object') UI.lore = j; else UI.loreFailAt = Date.now();
+      return UI.lore || null;
+    });
+    return UI.loreP;
+  }
+  // 同一張卡這一趟只講一次（記憶體，不存檔）
+  function loreSaid() {
+    var K = W.DipCrowdCore, tag = save.run && K ? K.tripTag(save.run) : 'title';
+    if (!UI.loreSaid || UI.loreSaid.tag !== tag) UI.loreSaid = { tag: tag, ids: {} };
+    return UI.loreSaid.ids;
+  }
+  // 周姐挑哪張卡（§6.4，依序挑到第一個有東西的）：① 她停的那箱架上的 ② NOW 正在放的 ③ 你包包裡的（非王牌、非頂點卡）
+  function zhouGroups(r, bin) {
+    var said = loreSaid(), G = [];
+    var bins = r && r.shop && r.shop.bins, lab = bin && C.bins && C.bins[bin] ? C.bins[bin].label : null;
+    G.push((bin && bins && Array.isArray(bins[bin]) ? bins[bin] : []).map(function (id) { return { id: id, onShelf: !!lab, bin: lab }; }));
+    var f = FX(), cur = null; try { cur = f && f.music && f.music.current && f.music.current(); } catch (_) {}
+    G.push(cur && cur.id ? [{ id: cur.id }] : []);
+    var ace = r ? aceIdOf(r) : null;
+    G.push((r && Array.isArray(r.bag) ? r.bag : []).filter(function (id) { var c = card(id); return id !== ace && c && !c.tier; }).map(function (id) { return { id: id }; }));
+    return G.map(function (g) { return g.filter(function (x) { return card(x.id) && !said[x.id]; }); });
+  }
+  function zhouPick(G, n, pred) {
+    var K = W.DipCrowdCore;
+    for (var i = 0; i < G.length; i++) {
+      var a = pred ? G[i].filter(pred) : G[i];
+      if (a.length) return a[Math.min(a.length - 1, Math.floor(K.hash01(n + '#zhoujie#card#' + i + (pred ? '#lore' : '')) * a.length))];
+    }
+    return null;
+  }
+  function zhouCard(x, quotes) {
+    var c = card(x.id);
+    return { id: x.id, o: c.o, h: c.h, c: c.c, onShelf: !!x.onShelf, lore: !!quotes, quotes: quotes || null, vars: factVars(c, x.onShelf ? x.bin : null), artist: c.artist };
+  }
+  function regsOf() { if (!save.regulars || typeof save.regulars !== 'object' || !save.regulars.met) save.regulars = fixRegulars(save.regulars); return save.regulars; }
+  function crowdChat(who, info) {
+    info = info || {};
+    var K = W.DipCrowdCore; if (!K || typeof K.chatPick !== 'function' || !save) return null;
+    var R = C.regulars || {}, reg = regsOf(), r = save.run, night = !!r && UI.screen === 'night';
+    if (who !== 'owner' && who !== 'passer' && !R[who]) return null;
+    var trip = night ? chatTrip(r) : null;
+    var runTag = night ? K.tripTag(r) : K.titleDayTag(seedKey());   // 標題回訪：同一天第一次才講開場那句
+    var runs = save.runs || [], last = runs.length ? (runs[runs.length - 1] || {}).reached | 0 : 0, far = save.best ? save.best.far | 0 : 0;
+    var vars = { title: trip ? (C.aceTitle || {})[r.ace] || null : null, pos: trip ? r.pos : null, last: last > 0 ? last : null, far: far > 0 ? far : null };
+    UI.chatRecent = UI.chatRecent || {};
+    var ctx = { talk: C.crowd && C.crowd.talk, runs: runs.length, trip: trip, metIds: Object.keys(reg.met), visit: info.cats || [], at: info.at || null,
+      vars: vars, recent: UI.chatRecent[who] || [] };
+    var pool = who === 'owner' ? (C.ownerChat || []) : (C.chat || []), seen, m = null;
+    if (who === 'owner') seen = reg.seen.owner;
+    else if (who === 'passer') seen = reg.seen.passer;
+    else { m = reg.met[who] || null; seen = m ? m.seen : {}; ctx.met = !!m; ctx.talks = m ? m.talks : 0; ctx.againAt = m ? m.againAt : ''; ctx.runTag = runTag; }
+    if (info.busy) ctx.cat = 'busy';
+    var expert = !!(R[who] && R[who].expert);
+    // 架上（shelf）：他停那箱架上的一張；只講那張的專輯名、藝人（不說稀有度、星數、剋誰；§5.6）
+    var bins = r && r.shop && r.shop.bins, shelf = info.bin && bins && Array.isArray(bins[info.bin]) ? bins[info.bin].filter(function (id) { return !!card(id); }) : [];
+    if (shelf.length) {
+      ctx.shelf = shelf;
+      if (!expert && who !== 'owner') { var sc = card(shelf[Math.min(shelf.length - 1, Math.floor(K.hash01(reg.n + '#' + who + '#shelf') * shelf.length))]); vars.album = sc.album; vars.artist = sc.artist; }
+    }
+    var pick = function (kc) {
+      var v = Object.assign({}, kc ? kc.vars : {}, vars);
+      return K.chatPick({ who: who, pool: chatPool(pool, v), seen: seen, n: reg.n, ctx: Object.assign({}, ctx, kc ? { card: kc } : {}) });
+    };
+    var done = function (res, kc) {
+      if (!res || !res.lines || !res.lines.length) return null;
+      reg.n++;
+      if (who === 'owner') reg.seen.owner = res.seen && !Array.isArray(res.seen) ? res.seen : reg.seen.owner;
+      else if (who === 'passer') reg.seen.passer = Array.isArray(res.seen) ? res.seen : reg.seen.passer;
+      else reg.met[who] = K.noteChat(reg.met[who], res, runTag);
+      UI.chatRecent[who] = res.recent || [];
+      UI.chatDirty = true;
+      var v = Object.assign({}, kc ? kc.vars : {}, vars), out = [];
+      var quote = null;
+      if (res.mode === 'lore' && kc && kc.quotes) {
+        quote = { text: kc.quotes[Math.min(kc.quotes.length - 1, Math.floor(K.hash01(reg.n + '#zhoujie#q') * kc.quotes.length))], quote: true,
+          src: chatFill((C.crowdUi && C.crowdUi.src) || '{artist}', { artist: kc.artist }) };
+      }
+      res.lines.forEach(function (l, i) {
+        if (quote && i === res.quoteAt) { out.push(quote); quote = null; }
+        chatTexts(l).forEach(function (t) { out.push({ text: chatFill(t, v) }); });
+      });
+      if (quote) out.push(quote);
+      if (kc && res.cat === 'know') loreSaid()[kc.id] = true;
+      return { bubbles: out, cat: res.cat };
+    };
+    if (!expert || info.busy) return done(pick(null), null);
+    // 周姐：先用欄位樣板的卡乾挑一次；挑到知識段才去讀 lore.json（不先載、不拖慢開店），讀到了改從「有摘句的藝人」挑卡（摘句 80／樣板 20）
+    var G = zhouGroups(r, info.bin), fx = zhouPick(G, reg.n), plain = fx ? zhouCard(fx, null) : null;
+    var res0 = pick(plain);
+    if (!res0 || res0.cat !== 'know') return done(res0, plain);
+    return loadLore().then(function () {
+      var lx = UI.lore ? zhouPick(G, reg.n, function (x) { return !!loreOf(card(x.id)); }) : null;
+      if (!lx) return done(res0, plain);
+      var kc = zhouCard(lx, loreOf(card(lx.id))), rk = pick(kc);
+      return rk ? done(rk, kc) : done(res0, plain);
+    });
+  }
+  // 收泡泡、換畫面時才存（聊天計數只標 dirty；§8）
+  function crowdChatEnd() { if (UI.chatDirty) { UI.chatDirty = false; persist(); } }
+  // 第一次的提示（§3.2）：dry＝只問要不要講；不然記 save.seen、存檔、回那句（老闆用聊天泡泡講）
+  function crowdHint(kind, dry) {
+    var key = kind === 'intro' ? 'crowdIntro' : kind === 'expertIntro' ? 'expertIntro' : null;
+    var text = key && C.crowdUi && C.crowdUi[kind];
+    if (!key || !text || !save || !save.seen || save.seen[key]) return dry ? false : null;
+    if (dry) return true;
+    save.seen[key] = true; persist();
+    return text;
+  }
+  // 老闆其他話講完、沒有別人在講（挑戰者開場白、教學泡泡）
+  function crowdQuiet() {
+    if ((UI.oSayTill || 0) > Date.now()) return false;
+    var a = app(); return !(a && (qs('.ds-say:not(.chat)', a) || qs('.lb-toast:not(.out)', a) || qs('.lb-sheet', a)));   // 店內通知（吐司）、面板也算在講
+  }
+  // UI.sayTill（§5.2）：老闆或任何聊天中的人講到幾時（挑戰者走到對戰台的開場白等它、客人去結帳看它）
+  function sayTill() { return Math.max(UI.oSayTill || 0, +crowdCall('chatTill') || 0); }
+  // 老闆「聊聊」：C.ownerChat 一段；一個空檔最多 3 段（同熟客），之後回到 ownerHint
+  function ownerChatBeat() {
+    var K = W.DipCrowdCore, tag = save.run && K ? K.seqTag(save.run) : '';
+    if (!UI.ownerChatN || UI.ownerChatN.tag !== tag) UI.ownerChatN = { tag: tag, n: 0 };
+    var max = (C.crowd && C.crowd.talk && C.crowd.talk.beatsPerVisit) || 3;
+    if (UI.ownerChatN.n < max && crowdChatOn() && crowdCall('ownerTalk')) { UI.ownerChatN.n++; return; }
+    stageSay('o', line('ownerHint', 'night'), 'owner', 2600);
+  }
+  // 存檔 save.regulars（§8；不升 SAVE_V）：不是物件 → 預設；數字不是非負整數 → 0；againAt 不是字串或超過 40 字 → ''；
+  //   seen 每一類只留字串、最多 64 筆（執行期再照池子大小砍、不認得的 id chatPick 自己丟）；met 只留 C.regulars 的鍵
+  function fixRegulars(x) {
+    var R = C.regulars || {}, o = x && typeof x === 'object' && !Array.isArray(x) ? x : {};
+    var nn = function (v) { return typeof v === 'number' && isFinite(v) && v >= 0 && Math.floor(v) === v ? v : 0; };
+    var obj = function (v) { return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; };
+    var ids = function (a) { return (Array.isArray(a) ? a : []).filter(function (s) { return typeof s === 'string'; }).slice(-64); };
+    var cats = function (v) { var out = {}; v = obj(v); Object.keys(v).forEach(function (k) { if (Array.isArray(v[k])) out[k] = ids(v[k]); }); return out; };
+    var met = {}, M = obj(o.met);
+    Object.keys(M).forEach(function (id) {
+      if (!R[id] || !M[id] || typeof M[id] !== 'object' || Array.isArray(M[id])) return;
+      var e = M[id];
+      met[id] = { talks: nn(e.talks), againAt: typeof e.againAt === 'string' && e.againAt.length <= 40 ? e.againAt : '', seen: cats(e.seen) };
+    });
+    var sn = obj(o.seen), en = obj(o.enc);
+    return { v: 1, n: nn(o.n), met: met, seen: { passer: ids(sn.passer), owner: cats(sn.owner) },
+      enc: { offered: nn(en.offered), fought: nn(en.fought), won: nn(en.won), lost: nn(en.lost) } };
   }
   // iOS < 15.4 沒有 svh：100vh 會比可視區高。改用可視高。
   function svhFallback() {

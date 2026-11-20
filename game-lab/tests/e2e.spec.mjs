@@ -386,10 +386,10 @@ async function run() {
         // 第 A 波 1：推門進來的第 1 位從門邊直接走到對戰台（duelE）等你（不再停在門邊 atdoor）
         await page.waitForFunction(() => { const s = window.__lab.stage, f = s.pos('f'), d = s.layout.spots.duelE; return f && !f.hidden && Math.hypot(f.x - d[0], f.y - d[1]) <= 3; }, null, { timeout: 8000 }).catch(() => {});
         await sleep(300);
-        const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.duelE; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, duelE: at, r1: s.pos('r1') && !s.pos('r1').hidden }; });
+        const st = await page.evaluate(() => { const r = window.__lab.run, s = window.__lab.stage, f = s.pos('f'), at = s.layout.spots.duelE; return { relics: r.relics, bag: r.bag, inside: r.shop.firstGuestInside, heads: document.querySelectorAll('[data-tut=night] .nc').length, f: f && { x: Math.round(f.x), y: Math.round(f.y), hidden: !!f.hidden }, duelE: at }; });
         const near = st.f && !st.f.hidden && Math.hypot(st.f.x - st.duelE[0], st.f.y - st.duelE[1]) <= 3;
         const ok = card && one && !one.title && one.notitle && /Eminem/i.test(one.text) && one.btns === 2 && one.cover && scrollOk(scOne) &&
-          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes("eminem|the eminem show") && st.bag.length === 8 && st.heads === 5 && !st.inside && near && st.r1;
+          rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.includes("eminem|the eminem show") && st.bag.length === 8 && st.heads === 5 && !st.inside && near;   // r1 退役（SPEC-H §2.4）：店裡固定的熟客拿掉，webdriver 預設關活店，來客畫面不再有站樁的人
         record(7, size, ok, `pickup ${JSON.stringify(one && { title: one.title, notitle: one.notitle, btns: one.btns, text: one.text.slice(0, 50) })}; relics offered ${rel}; night ${night}; ${JSON.stringify(st)}`);
       } catch (e) { record(7, size, false, 'error ' + e.message); }
       await ctx.close();

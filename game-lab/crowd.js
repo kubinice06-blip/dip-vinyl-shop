@@ -1,16 +1,19 @@
 /* game-lab/crowd.js — 活店的導演（SPEC-H 棒 4；§3 出現時機、§4 路線、§10 效能）：熟客與路人推門進來、在不同停留點翻挖（換箱、停下來挖、偶爾試聽、
  *   拿著翻到的那張去櫃檯前結帳）、推門離開；佔位與讓位、門事件保證、借過。純函式（誰進門、停哪一格、路上擋到誰）在 crowd-core.js（DipCrowdCore）。
- *   這一棒（前半）不做聊天：跟著人走的熱點與 talk() 等後半接上（configure 的 host.talk 有給才加熱點；沒有 talk 的熱點只會吃掉封面那一下）。
+ *   點人聊天（§5，棒 4 後半）：configure 的 host.chat 有給才加跟著人走的熱點（沒有聊天的熱點只會吃掉封面那一下）；泡泡、停多久、一次幾段、說話的人停下來在這裡，
+ *   挑哪一句與存檔（save.regulars）在 ui.js（host.chat）。第一次的提示（§3.2）也在這裡排時機（host.hint／quiet）。
  *
  * 用法（ui.js）：
  *   DipLabCrowd.configure({ stage()→Stage, content:C, speed()→倍速, paused()→bool, seqTag()→'seedKey#runNo#pos'|null, titleTag()→'title#…',
- *                           ownerFree()→bool, shelfCard(binKey, u)→卡 id|null, reduced()→bool, on:bool, talk?(who, hot) })
+ *                           ownerFree()→bool, shelfCard(binKey, u)→卡 id|null, reduced()→bool, on:bool,
+ *                           chat?(who, info)→{bubbles:[{text,quote?,src?}], cat}|Promise, chatEnd?(who), fastK()→?fast=1 的 4｜1, hint?(kind, dry), quiet?()→bool })
  *   start('live'|'calm'|'still', o?)   o.duel：對決畫面（開打清對戰區＋鏡頭收完還被切頭的先藏）；o.reserve：[stop id]（攤位：c-pay 給站主）
  *   stop(o?)                           o.keep：藏起來、記住誰在哪（去你家／台北，舞台重掛回來照記憶放回去）；沒給＝店裡清空
  *   redraw() ; pause(on) ; yield([x,y]|spot) ; clearSpot([x,y]|spot, o?) ; clearRoute(points, o?) ; clearDuel() → Promise
  *   state() ; clear() ; doorLog()
  *   clearRoute 的 o：{ who:'f'|'o'|'p'（這個人走到路線終點前，這條路上不准有人停）, door:true（主線客人推門：門晃一下＋到站＋1.2 秒前門不給路人用）}
- *   第二階段（切磋）與後半（聊天）的介面先留空殼：talk、handOff、takeBack、encActive、encDecline（見 build2/CROWD-API.md）
+ *   聊天：talk(who, hot)＝點人 ; ownerTalk(bubbles?)＝老闆講一段 ; chatClose() ; chatTill()→Date.now 基準 ; chatState() ; chatNext()
+ *   第二階段（切磋）的介面先留空殼：handOff、takeBack、encActive、encDecline（見 build2/CROWD-API.md）
  *
  * 規則（§10）：自己一個 setInterval 250 ms＋遊戲時鐘（真時間×speed()，暫停不走）；不用 UI.timers／later()（ui.js 換畫面會清掉）；不另開 rAF；
  *   document.hidden 時整個停；走動槽 w1 w2 w3（不准 p／o／f／q 開頭，stage spotName 會當別名組）；⏩ 不快轉走動槽（stage finishAll 只收 p o f q1 q2）。
@@ -115,7 +118,7 @@
   // 他現在「佔」的位置：站著＝那一格；走路中＝要去的那一格（到了就站在那裡）
   function holdXY(sl) { return sl.walking && sl.dest ? sl.dest : (posOf(sl) || sl.dest); }
 
-  function hotOn() { return typeof H.talk === 'function'; }
+  function hotOn() { return typeof H.chat === 'function'; }   // ui.js 有給聊天（host.chat）才加跟著人走的熱點（沒有 talk 的熱點只會吃掉封面那一下）
   function addHot(sl) {
     if (!hotOn()) return;
     var t = st(); if (!t || !t.addHot) return;
@@ -770,6 +773,206 @@
     S.slots = {};
   }
 
+  // ------------------------------------------------------------------ 聊天（SPEC-H §5）：點人＝一段（1–2 泡；行家 2–3 泡）；有下一句（▼）的泡泡點了才換，
+  //   最後一句不吃點擊、停 clamp(3000＋200×字數, 6000, 12000) ms；?fast=1 ÷4（動畫加速不吃）；一次來最多 3 段（路人 1），第 4 下 busy 一句、之後只冒汗。
+  //   挑哪一句、記存檔在 ui.js（host.chat(who, info) → Promise<{ bubbles:[{text, quote?, src?}], cat }>）；這裡只管泡泡、時間、說話的人停下來。
+  //   同時只有一個人在講：開新的聊天會收掉別人的（含老闆）；舞台任何一下點擊收掉聊天（點同一個人＝下一句或下一段），那一下照常生效。
+  function talkCf(k) { var T = cfg().talk || {}; return num(T[k], DEF.talk[k]); }
+  function bubCf(k) { var B = cfg().bubble || {}; return num(B[k], DEF.bubble[k]); }
+  function fastK() { try { var k = typeof H.fastK === 'function' ? H.fastK() : 1; return k > 0 ? k : 1; } catch (_) { return 1; } }
+  function lastMs(b) {
+    var n = (Array.from ? Array.from(String(b.text || '')) : String(b.text || '').split('')).length + (b.quote ? 2 : 0);
+    return Math.min(bubCf('max'), Math.max(bubCf('min'), bubCf('base') + bubCf('perChar') * n)) / fastK();
+  }
+  function nameOf(who) {
+    var R = C().regulars || {}, U = C().crowdUi || {};
+    if (who === 'owner') return U.owner || '老闆';
+    return who && R[who] ? R[who].name : (U.passer || '客人');
+  }
+  function voiceOf(who) {
+    var R = C().regulars || {};
+    if (who === 'owner') return (C().voices || {}).owner || null;
+    return who && R[who] && R[who].voice ? R[who].voice : PASSER_VOICE;
+  }
+  // 每個泡泡響 3 聲（照音效設定；fx.blip 自己看聲音開關）
+  function blips(v) {
+    var F = W.DipLabFx; if (!v || !F || typeof F.blip !== 'function') return;
+    for (var i = 0; i < 3; i++) setTimeout(function () { try { F.blip(v.freq, v.wave, v.jitter); } catch (_) {} }, i * 70);
+  }
+  function hook() { var t = st(); if (t && t.onTapAny !== onTapAny) t.onTapAny = onTapAny; }
+  // 舞台任何一下點擊（▼ 泡泡自己吃掉、不會到這裡）：點的不是正在講的那個人＝收掉聊天，那一下照常生效（點封面開唱片資訊、點箱子走去翻）
+  function onTapAny(x, y, hit) {
+    var c = S.chat; if (!c) return;
+    if (hit && c.sl && hit.id === 'cw-' + c.sl.id) return;   // 點同一個人：talk() 換下一句／下一段
+    chatEnd(c);
+  }
+  function chatShow(c) {
+    var t = st(); if (!t || S.chat !== c) return;
+    var b = c.bubbles[c.i], more = c.i < c.bubbles.length - 1;
+    var ms = more ? bubCf('holdMore') / fastK() : lastMs(b);   // 有 ▼：不自己換句，20 秒沒點整段收；最後一句停 6–12 秒
+    c.more = more; c.until = Date.now() + ms; c.el = null;
+    var el = null;
+    try {
+      el = t.say(c.id, String(b.text), { chat: true, who: c.name, more: more, quote: !!b.quote, src: b.src || '', tone: c.id === 'o' ? 'owner' : null, ms: Math.max(1, Math.round(ms)),
+        onTap: function () { if (S.chat === c && c.el === el) chatNext(c); },
+        onClose: function (e) { if (S.chat === c && c.el === e) chatEnd(c, true); } });
+    } catch (e) { console.error(e); }
+    if (!el) { chatEnd(c); return; }
+    c.el = el;
+    blips(c.voice);
+  }
+  function chatNext(c) {
+    if (S.chat !== c || c.pending) return;
+    if (c.i < c.bubbles.length - 1) { c.i++; chatShow(c); } else chatEnd(c);
+  }
+  function chatEnd(c, dropped) {
+    if (!c || S.chat !== c) return;
+    S.chat = null;
+    var t = st();
+    if (!dropped && t) { try { t.say(c.id, null); } catch (_) {} }
+    if (c.sl) talkDone(c.sl);
+    try { if (typeof H.chatEnd === 'function') H.chatEnd(c.who); } catch (e) { console.error(e); }
+  }
+  function chatClose() { if (S.chat) chatEnd(S.chat); }
+  // 說話的人：正在走就停在原地、面向你、說話的手勢；停留 +4 秒（不會話講到一半走出門）
+  function talkBegin(sl) {
+    var t = st(); if (!t) return;
+    if (sl.walking) {
+      sl.tok++; sl.walking = false; sl.halted = true;
+      var p = posOf(sl);
+      if (p) { try { t.walk(sl.id, [p]); } catch (_) {} sl.dest = p; }
+    }
+    if (!sl.talking && sl.resumeAt == null && sl.phase === 'stay') sl.stayLeft = (sl.stayLeft || 0) + talkCf('extend');
+    sl.talking = true; sl.resumeAt = null; sl.pass = null;
+    try { t.emote(sl.id, null); t.back(sl.id, false); t.faceTo(sl.id, 'p'); t.pose(sl.id, 'talk'); } catch (e) { console.error(e); }
+  }
+  function talkDone(sl) {
+    if (!sl.talking) return;
+    sl.talking = false;
+    sl.resumeAt = S.t + talkCf('resume');
+    var t = st(); if (t && sl.on && !sl.hiddenDuel) { try { t.pose(sl.id, null); } catch (_) {} }
+  }
+  // 收泡泡 2 秒後：本來在翻箱的接著翻、本來在走的接著走（去下一格、去結帳、出門）
+  function resumeTalk(sl) {
+    sl.resumeAt = null;
+    if (!sl.on || sl.hiddenDuel || sl.talking) return;
+    if (sl.halted) {
+      sl.halted = false;
+      if (sl.phase === 'out') { sl.phase = 'stay'; leave(sl); return; }
+      var s = sl.stop && stopById(sl.stop);
+      if (s) { goStop(sl, s, { keepHold: s.kind === 'pay' }); return; }
+    }
+    if (sl.phase === 'stay') stand(sl);
+  }
+  function slotFor(who, hot) {
+    var id = hot && (hot.follow || (/^cw-(w\d)$/.exec(hot.id || '') || [])[1]);
+    var sl = id && S.slots[id];
+    if (sl && sl.on) return sl;
+    return slotOn().filter(function (o) { return (o.who || 'passer') === who; })[0] || null;
+  }
+  // 點人（ui.js onStageAction 的 talk:<who>）
+  function talk(who, hot) {
+    if (!enabled() || S.mode === 'off' || typeof H.chat !== 'function') return null;
+    hook();
+    var sl = slotFor(who, hot); if (!sl || sl.hiddenDuel || sl.phase === 'gone') return null;
+    var c = S.chat;
+    if (c && c.sl === sl) {
+      if (c.pending) return true;
+      if (c.more) { chatNext(c); return true; }               // 點同一個人＝下一句
+    }
+    chatClose();
+    var max = sl.kind === 'regular' ? talkCf('beatsPerVisit') : talkCf('passerBeats');
+    if ((sl.talkN | 0) >= max) {
+      if (sl.kind === 'regular' && !sl.busySaid) { sl.busySaid = true; return chatRun(sl, { busy: true }); }   // 第 4 下：「我再翻一下，等等聊。」
+      var t = st(); if (t) t.emote(sl.id, 'sweat', talkCf('busyMute') / speed());   // 再點只冒汗、不出字
+      return false;
+    }
+    return chatRun(sl, {});
+  }
+  function chatRun(sl, o) {
+    talkBegin(sl);
+    var s = sl.phase === 'stay' && sl.at ? stopById(sl.at) : null;
+    var c = { id: sl.id, sl: sl, who: sl.who || 'passer', name: nameOf(sl.who), voice: voiceOf(sl.who), bubbles: [], i: 0, pending: true, until: Date.now() + 2500 };
+    S.chat = c;
+    var info = { slot: sl.id, at: s ? s.id : null, bin: s && s.bin ? s.bin : null, cats: sl.cats.slice(), busy: !!o.busy, beat: sl.talkN | 0, li: sl.li };
+    Promise.resolve().then(function () { return H.chat(c.who, info); }).then(function (res) {
+      if (S.chat !== c) return;
+      c.pending = false;
+      if (!res || !res.bubbles || !res.bubbles.length) { chatEnd(c); return; }
+      if (!o.busy) { sl.talkN = (sl.talkN | 0) + 1; if (res.cat) sl.cats.push(res.cat); }
+      c.bubbles = res.bubbles; c.cat = res.cat || null;
+      chatShow(c);
+    }, function (e) { console.error(e); if (S.chat === c) chatEnd(c); });
+    return true;
+  }
+  // 老闆講話（聊聊、第一次提示）：同一套泡泡；bubbles 沒給＝問 host.chat('owner') 挑一段
+  function ownerTalk(bubbles) {
+    var t = st(); if (!t || !H.on) return null;
+    hook();
+    chatClose();
+    var c = { id: 'o', sl: null, who: 'owner', name: nameOf('owner'), voice: voiceOf('owner'), bubbles: [], i: 0, pending: true, until: Date.now() + 2500 };
+    S.chat = c;
+    if (bubbles && bubbles.length) { c.pending = false; c.bubbles = bubbles; chatShow(c); return true; }
+    if (typeof H.chat !== 'function') { S.chat = null; return null; }
+    Promise.resolve().then(function () { return H.chat('owner', {}); }).then(function (res) {
+      if (S.chat !== c) return;
+      c.pending = false;
+      if (!res || !res.bubbles || !res.bubbles.length) { chatEnd(c); return; }
+      c.bubbles = res.bubbles; c.cat = res.cat || null;
+      chatShow(c);
+    }, function (e) { console.error(e); if (S.chat === c) chatEnd(c); });
+    return true;
+  }
+  // 誰在講、講到幾時（ui.js UI.sayTill：挑戰者的開場白等它；有 ▼ 的泡泡＝點了才換，用 20 秒上限算）
+  function chatTill() { var c = S.chat; return c ? c.until || 0 : 0; }
+  function chatState() {
+    var c = S.chat; if (!c) return null;
+    return { id: c.id, who: c.who, name: c.name, i: c.i, n: c.bubbles.length, more: !!c.more, pending: !!c.pending, cat: c.cat || null,
+      text: c.bubbles[c.i] ? String(c.bubbles[c.i].text) : null, quote: !!(c.bubbles[c.i] && c.bubbles[c.i].quote), until: c.until };
+  }
+  // 鍵盤 Enter／空白鍵＝下一句（抽屜、面板開著不吃；焦點在按鈕、輸入框上照原本的行為）
+  function onKey(ev) {
+    var c = S.chat; if (!c || !c.more || c.pending) return;
+    if (ev.key !== 'Enter' && ev.key !== ' ' && ev.key !== 'Spacebar') return;
+    if (hostPaused()) return;
+    var tg = ev.target;
+    if (tg && tg !== D.body && tg !== D.documentElement && (/^(INPUT|TEXTAREA|SELECT|BUTTON|A)$/.test(tg.tagName || '') || tg.isContentEditable || (tg.closest && tg.closest('[role=button],[tabindex]') && tg !== c.el))) return;
+    if (ev.preventDefault) ev.preventDefault();
+    chatNext(c);
+  }
+
+  // ------------------------------------------------------------------ 第一次的提示（§3.2，一次性）：熟客都會來翻／周姐來了。老闆其他話講完、沒人在聊天才說；那位熟客頭上閃星 4 秒
+  function sparkle(sl) {
+    var t = st(); if (!t || !t.anchor) return;                 // reduced-motion：照樣標，只是不閃（style.css）
+    var a = null; try { a = t.anchor(sl.id); } catch (_) {}
+    if (!a) return;
+    var old = a.querySelector && a.querySelector('.cw-spark'); if (old) old.remove();
+    var s = D.createElement('i'); s.className = 'cw-spark'; s.setAttribute('aria-hidden', 'true');
+    a.appendChild(s);
+    setTimeout(function () { if (s.parentNode) s.remove(); }, SPARK_MS / fastK());
+  }
+  function hintCheck() {
+    if (typeof H.hint !== 'function') return;
+    // 安靜夠久才講：沒有人在聊天、老闆與挑戰者都沒在講、主線客人與老闆沒在固定路線上走（客人推門走到對戰台、說完開場白之後）
+    var q = !S.chat && !S.blocks.length;
+    try { if (q && typeof H.quiet === 'function' && !H.quiet()) q = false; } catch (_) { q = false; }
+    if (!q) { S.quietAt = null; return; }
+    if (S.quietAt == null) S.quietAt = S.t;
+    if (S.t - S.quietAt < 1200) return;
+    var ready = slotOn().filter(function (sl) {
+      if (!sl.who || sl.phase !== 'stay' || sl.walking || sl.hiddenDuel || chatting(sl)) return false;
+      var p = posOf(sl); return !!p && p[1] >= num((cf('hot') || DEF.hot).minY, 150);
+    });
+    var zj = ready.filter(function (sl) { return (C().regulars[sl.who] || {}).expert; })[0];
+    var reg = ready[0];
+    var kind = reg && H.hint('intro', true) ? 'intro' : (zj && H.hint('expertIntro', true) ? 'expertIntro' : null);
+    if (!kind) return;
+    var text = H.hint(kind);                                   // ui.js：記 save.seen、存檔、回那句
+    if (!text) return;
+    ownerTalk([{ text: text }]);
+    sparkle(kind === 'intro' ? reg : zj);
+  }
+
   // ------------------------------------------------------------------ 除錯（__lab.crowd，?debug=1）
   function spawn(who, stopId, o) {
     o = o || {};
@@ -807,10 +1010,14 @@
 
   var api = {
     version: 'crowd-1',
-    configure: function (host) { H = host || {}; return api; },
+    configure: function (host) {
+      H = host || {};
+      if (!S.keyOn) { S.keyOn = true; try { D.addEventListener('keydown', onKey); } catch (_) {} }
+      return api;
+    },
     start: start,
     stop: stop,
-    redraw: function () { slotOn().forEach(function (sl) { var t = st(); if (t) t.say(sl.id, null); }); return api; },   // 來客畫面重畫：人與位置照留、聊天泡泡收掉（後半）
+    redraw: function () { chatClose(); slotOn().forEach(function (sl) { var t = st(); if (t) t.say(sl.id, null); }); return api; },   // 來客畫面重畫：人與位置照留、聊天泡泡收掉
     pause: function (on) { S.manualPause = on !== false; return api; },
     yield: yieldTo,
     clearSpot: clearSpot,
@@ -828,8 +1035,14 @@
       S.nextEntry = S.t + 1e12; if (S.guarantee) S.guarantee.done = true;   // 凍結：不再排推門（e2e 指定站位用）
       return stateOf();
     },
-    // 後半（聊天）／第二階段（切磋）：先留空殼，介面照 SPEC-H §11.3
-    talk: function (who, hot) { if (typeof H.talk === 'function') return H.talk(who, hot); return null; },
+    // 聊天（§5）：talk＝點人；ownerTalk(bubbles?)＝老闆講一段（聊聊、第一次提示）；chatClose＝收掉；chatTill＝講到幾時（Date.now 基準）；chatState＝現在誰在講
+    talk: talk,
+    ownerTalk: ownerTalk,
+    chatClose: function () { chatClose(); return api; },
+    chatTill: chatTill,
+    chatState: chatState,
+    chatNext: function () { if (S.chat) chatNext(S.chat); return chatState(); },
+    // 第二階段（切磋）：先留空殼，介面照 SPEC-H §11.3
     handOff: function () { return null; },
     takeBack: function () { return null; },
     encActive: function () { return false; },

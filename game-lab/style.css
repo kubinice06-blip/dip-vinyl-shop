@@ -1061,3 +1061,13 @@ body.lb-tune-open{overflow:hidden;}
 .lb-relic.cell .nm{font-size:12px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .lb-relic.cell .ds{font-size:10px;line-height:1.3;color:var(--gray2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
 .lt-skip.sm{min-height:44px;font-size:12px;font-weight:400;color:var(--gray2);border-color:var(--line);}
+/* 活店（SPEC-H §5.4）：打過第 1 位之後點老闆的小選單——「聊聊」一顆整排、「賣給老闆」在下面 */
+.lb-sheet.owner .lb-ownertalk{margin-top:8px;}
+/* 活店第一次的提示（SPEC-H §3.2）：那位熟客頭上閃星 4 秒（掛在舞台的 anchor 上，跟著人走；像素十字星、不吃點擊） */
+.ds-anc .cw-spark{position:absolute;right:-10px;top:-16px;width:15px;height:15px;pointer-events:none;-webkit-filter:drop-shadow(0 0 1px #3a2a12);filter:drop-shadow(0 0 1px #3a2a12);-webkit-animation:cwSpark .8s steps(1,end) infinite;animation:cwSpark .8s steps(1,end) infinite;}
+.ds-anc .cw-spark::before,.ds-anc .cw-spark::after{content:"";position:absolute;background:#f0c75e;}
+.ds-anc .cw-spark::before{left:6px;top:0;width:3px;height:15px;}
+.ds-anc .cw-spark::after{left:0;top:6px;width:15px;height:3px;background:linear-gradient(90deg,#f0c75e 0,#f0c75e 6px,#fff 6px,#fff 9px,#f0c75e 9px);}
+@-webkit-keyframes cwSpark{0%{opacity:1;-webkit-transform:scale(1);}50%{opacity:.55;-webkit-transform:scale(.55);}}
+@keyframes cwSpark{0%{opacity:1;transform:scale(1);}50%{opacity:.55;transform:scale(.55);}}
+@media (prefers-reduced-motion:reduce){ .ds-anc .cw-spark{-webkit-animation:none;animation:none;} }

@@ -6,13 +6,14 @@
 //   C「點一下／⏩」：O11 老闆走去 dig1 的途中點一下 → 50 ms 內那一步到終點、下一步（翻箱）才開始；⏩ 依序快轉、停在 O12（P5）
 //   A「一直點」：有聲音、每 100 ms 點一下對話框、猜中；推門 → O21 選單 ≤35 秒（P10）、音樂（P12）
 //   B「完全不點」：安靜推門、只在選擇的 ▼ 亮時點一下打開面板、猜錯；位移不瞬移（P7）
+//   K「活店開著」（SPEC-H §2.4）：?crowd=1&fast=1 照 A 的點法跑到今晚來客：標題、序章、收尾、第一趟第 1 位 w1–w3 全藏；打完第 1 位、第 2 位來客 10 秒內有熟客（P11）
 // A、B 都：每 40 ms 取樣（對話框字數、▼、三人位置、.lb-fly、包包條格數、門、遇敵特效、老闆姿勢）＋逐句執行器的 UI.timeline＋舞台呼叫紀錄；
-//   打到男子那場就 __lab.forceWin()，接著演收尾 E1–E11，到今晚來客為止。斷言 P1–P4、P6–P9、P11、P13（§5.4 表）。
+//   打到男子那場就 __lab.forceWin()，接著演收尾 E1–E11，到今晚來客為止。斷言 P1–P4、P6–P9、P11、P13（§5.4 表）。LAB_RUNS 選輪（預設 C,A,B,K）。
 // 經濟介面用真的 econ.js（特價區抽屜：駕駛挑前三張、收下）；LAB_ECON=stub 才用替身（tests/econ-stub.js）。試聽一律換成 20 秒的無聲 WAV（不靠網路，P12 才測得準）。
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
-import { launch, newPage, sleep, URL0 } from './e2e-lib.mjs';
+import { launch, newPage, sleep, URL0, passLoot } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -29,7 +30,7 @@ const TIERS = ['hall', 'pearl', 'heresy'];
 const TONIGHT_TIER = TIERS[E.fnv1a32(SEED + '#tonight') % 3];
 const TONIGHT = C.aces[TONIGHT_TIER];
 const SP = L.spots;
-const ONLY = (process.env.LAB_RUNS || 'C,A,B').split(',');
+const ONLY = (process.env.LAB_RUNS || 'C,A,B,K').split(',');   // K＝活店開著（?crowd=1）再跑一次序章（P11，SPEC-H §2.4）
 
 let fails = 0, passes = 0;
 const check = (id, ok, detail) => { if (ok) passes++; else fails++; console.log((ok ? 'PASS' : 'FAIL') + '  ' + id + '  ' + detail); return ok; };
@@ -84,7 +85,7 @@ function instrument() {
     window.__S.push({
       t: t0(), scr: window.__lab.screen(), beat: window.__lab.beat, txt: tx ? tx.textContent.length : -1,
       nx: !!(nx && nx.classList.contains('on')), choice: !!(nx && nx.classList.contains('choice')),
-      p: pos('p'), o: pos('o'), f: pos('f'), r1: pos('r1'),
+      p: pos('p'), o: pos('o'), f: pos('f'), w: ['w1', 'w2', 'w3'].map(pos).filter(q => q && !q.h).length,   // 活店走動槽露出來幾位（SPEC-H §2.4：r1 退役）
       fly: document.querySelectorAll('.lb-fly').length, strip: document.querySelectorAll('.lb-strip .slot.filled').length,
       door: shop && shop.state ? shop.state.door : null, enc: !!document.querySelector('.enc2,.enc-ov,.rpg-excl'),
       sheet: sheet ? sheet.className : null, menu: document.querySelectorAll('.lb-dq .lb-dqopt').length,
@@ -282,9 +283,9 @@ async function fullRun(browser, mode) {
   check('P9 ' + label + ' 他走了', afterE4.length && afterE4.every(s => !s.f || s.f.h), '撿起面板打開後到 E9，他一直是藏著的');
   const stakeHd = await Promise.resolve(S.find(s => s.sheet && /\bone\b/.test(s.sheet)));
   check('P9 ' + label + ' 面板沒有標題', stakeHd && /\bnotitle\b/.test(stakeHd.sheet), '撿起面板沒有敘述標題（' + (stakeHd && stakeHd.sheet) + '）');
-  // P11：熟客 r1 在序章與收尾一直是隱藏；今晚來客畫面出現
+  // P11（SPEC-H §2.4 改寫）：r1 退役；序章與收尾（含第一趟第 1 位的來客畫面）走動槽 w1–w3 全部藏著。活店開著的那一輪另外跑（K）
   const pro = S.filter(s => s.scr === 'scene' || s.scr === 'duel'), night = S.filter(s => s.scr === 'night');
-  check('P11 ' + label, pro.length && pro.every(s => !s.r1 || s.r1.h) && night.length && night[night.length - 1].r1 && !night[night.length - 1].r1.h, '序章與收尾藏著（' + pro.filter(s => s.r1 && !s.r1.h).length + ' 個取樣露出來）、今晚來客出現');
+  check('P11 ' + label, pro.length && pro.every(s => !s.w) && night.length && night.every(s => !s.w), '序章與收尾 w1–w3 藏著（' + pro.filter(s => s.w).length + ' 個取樣露出來）、第一趟第 1 位來客畫面也沒有（' + night.filter(s => s.w).length + '）');
   // 今晚來客：第一位客人已經在店裡、從門邊直接走到對戰台（duelE）等你（第 A 波 1；不剪影、firstGuestInside 用掉）、包包 8 張
   const last = night[night.length - 1];
   check(label + ' 今晚來客', data.run && !data.run.inside && last.f && !last.f.h && dist(last.f, SP.duelE) <= 1 && data.run.bag === 8, '第一位在對戰台 duelE（離 ' + (last.f ? dist(last.f, SP.duelE).toFixed(1) : '—') + ' 格）、包包 ' + (data.run && data.run.bag) + ' 張');
@@ -379,8 +380,46 @@ async function tapRun(browser) {
   await ctx.close();
 }
 
+// ---------------------------------------------------------------------------------------------- 一輪 K：活店開著（?crowd=1）
+//   P11（SPEC-H §2.4）：序章、收尾、第一趟第 1 位（§3.1：第一次玩的那一趟從第 2 位才開）w1–w3 全藏；打完第 1 位回到第 2 位的來客畫面（fast）10 秒內至少一位熟客出現
+async function crowdRun(browser) {
+  const label = 'K 活店開著';
+  const { ctx, page } = await openPage(browser, '&crowd=1&fast=1');
+  const opt = { tapEvery: 100, answerMs: 350, guess: 'right', tonight: TONIGHT, duelBtn: 1 };
+  await page.evaluate(driver, opt);
+  await page.click('[data-a=push]');
+  const ok = await page.waitForFunction(() => window.__drv && window.__drv.done, null, { timeout: 120000, polling: 250 }).then(() => true, () => false);
+  check(label + ' 跑完', ok, '推門 → 序章 → 男子 → 收尾 → 今晚來客（?crowd=1&fast=1）');
+  if (!ok) { await ctx.close(); return; }
+  const S = await page.evaluate(() => window.__S);
+  const on = await page.evaluate(() => window.__lab.crowd.on());
+  const title = S.filter(s => s.scr === 'title'), pro = S.filter(s => s.scr === 'scene' || s.scr === 'duel'), n1 = S.filter(s => s.scr === 'night');
+  const pos1 = await page.evaluate(() => window.__lab.run.pos);
+  check('P11 ' + label + ' 序章與收尾', on && title.length && pro.length && n1.length && pos1 === 1 && [...title, ...pro, ...n1].every(s => !s.w),
+    '活店開著（' + on + '）：標題 ' + title.length + '、序章與收尾 ' + pro.length + '、第 ' + pos1 + ' 位來客 ' + n1.length + ' 個取樣，w1–w3 露出來的 ' + [...title, ...pro, ...n1].filter(s => s.w).length);
+  // 打完第 1 位（forceWin）→ 戰利品列不收 → 第 2 位的來客畫面：10 秒內（fast）至少一位熟客出現
+  await page.evaluate(() => { const b = document.querySelector('[data-a=go]'); if (b) b.click(); });
+  await page.waitForFunction(() => window.__lab.screen() === 'duel' && window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 20000 }).catch(() => {});
+  await sleep(600);
+  await page.evaluate(() => window.__lab.forceWin());
+  const lr = await passLoot(page, {});
+  const at = await page.waitForFunction(() => window.__lab.screen() === 'night', null, { timeout: 20000 }).then(() => Date.now(), () => 0);
+  let seen = null, pos2 = await page.evaluate(() => window.__lab.run.pos);
+  while (at && Date.now() - at < 10000) {
+    seen = await page.evaluate(() => { const R = window.DipLabContent.regulars || {}; const x = window.__lab.crowd.state().slots.find(q => q.on && !q.hidden && R[q.who]); return x ? { who: x.who, at: x.at || x.stop, ms: 0 } : null; });
+    if (seen) { seen.ms = Date.now() - at; break; }
+    await sleep(200);
+  }
+  if (!seen || process.env.LAB_DEBUG) console.log('  crowd', JSON.stringify(await page.evaluate(() => ({ st: window.__lab.crowd.state(), log: window.__lab.crowd.doorLog(), runs: window.__lab.save.runs.length, scr: window.__lab.screen(), going: window.__lab.going(), sheets: [...document.querySelectorAll('.lb-sheet')].map(e => e.className), tut: (document.getElementById('tut') || {}).className, drawer: !!document.querySelector('.ec-drawer'), page: !!document.querySelector('.lb-page'), modal: [...document.querySelectorAll('.lb-modal,.modal,[role=dialog]')].map(e => e.className) }))));
+  check('P11 ' + label + ' 第 2 位', lr.ok && at && pos2 === 2 && !!seen, '第 ' + pos2 + ' 位的來客畫面' + (seen ? ' ' + seen.ms + ' ms 看到熟客 ' + seen.who + '（' + seen.at + '）' : ' 10 秒內沒有熟客'));
+  const errs = errorsOf(page);
+  check(label + ' 主控台', !errs.length, errs.length ? errs.slice(0, 5).join(' | ') : '0 錯誤');
+  await ctx.close();
+}
+
 const browser = await launch();
 try {
+  if (ONLY.includes('K')) await crowdRun(browser);
   if (ONLY.includes('C')) await tapRun(browser);
   if (ONLY.includes('A')) await fullRun(browser, 'A');
   if (ONLY.includes('B')) await fullRun(browser, 'B');
