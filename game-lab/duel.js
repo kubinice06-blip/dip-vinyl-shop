@@ -1470,7 +1470,7 @@
       if (cl.ace) hint('tip_ace', ['result']);          // 第一次丟王牌（FIXLIST 2；hint 一場只送一次）
       if (cl.pAttr === cl.eAttr) hint('tip_mirror', ['result']);
       if ((cl.notes || []).some(n => n && n.apex && n.hit === false && !n.full)) hint('tip_apexMiss', ['result']);   // 頂點卡試做：第一次出現「沒作用」那句（看穿、回聲望沒有這句）
-      if (cl.fac && Object.keys(cl.fac).length) hint('tip_fac', ['lastline']);   // 第 D 波棒二：第一次觸發被動或代價（老闆小提示「看一下結果行的小字」；揭曉演完、收成上一手那行才出）
+      if (cl.fac && Object.keys(cl.fac).length) hint('tip_fac', ['fac']);   // 第 D 波棒二：第一次觸發被動或代價（老闆小提示指頂欄一字圖示「點這個字看本派被動和代價」；提示在選牌時才出，那時結果框已收：審查 棒二）
     }
     async function play(act, sel) {
       if (!canAct() || !legal(sel)) return false;

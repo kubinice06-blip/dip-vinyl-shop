@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 1146（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1147（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1466,11 +1466,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・tieCost | 平手算你輸 {n} | 本規格新寫 | `factions.notes.tieCost` |
 | （畫面字）・borrow | 借他的份量：扣他 {n} | 本規格新寫 | `factions.notes.borrow` |
 | （畫面字）・underdog | 以小搏大：扣他 {n} | 本規格新寫 | `factions.notes.underdog` |
-| （畫面字）・cCost | 被剋，多扣 {n} | 本規格新寫 | `factions.notes.cCost` |
+| （畫面字）・cCost | 被剋：多扣 {n} | 本規格新寫 | `factions.notes.cCost` |
 | （畫面字）・crit | 拆穿！多扣 {n} | 本規格新寫 | `factions.notes.crit` |
 | （畫面字）・crit2 | 爆擊！多扣 {n} | 本規格新寫 | `factions.notes.crit2` |
 | （畫面字）・heal | 回 {n} 聲望 | 本規格新寫 | `factions.notes.heal` |
-| （畫面字）・loseCost | 比星輸，多扣 {n} | 本規格新寫 | `factions.notes.loseCost` |
+| （畫面字）・loseCost | 比星輸：多扣 {n} | 本規格新寫 | `factions.notes.loseCost` |
 | （畫面字）・leech | 吸血：回 {n} 聲望 | 本規格新寫 | `factions.notes.leech` |
 | （畫面字）・thorn | 反傷：他也扣 {n} | 本規格新寫 | `factions.notes.thorn` |
 
@@ -1487,7 +1487,6 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・text | 黃道借星：這手他的唱片少 1 星。 | 本規格新寫 | `factions.apexSwap.pearl.cards.zodiac-borrow.text` |
 | （畫面字）・text | 機關槍：留著：剋中多扣 1；發動：這手比星多算 2。 | 本規格新寫 | `factions.apexSwap.heresy.cards.brotzmann-machine-gun.text` |
 
 ## 流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）
@@ -1495,6 +1494,12 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字）・critAdd | 王牌：拆穿！多扣 {d} | 本規格新寫 | `factions.apexSwap.notes.critAdd` |
+
+## 流派試做・?fac=1&apex=1 同開：拆穿回血的頂點卡那手，回的聲望被流派被動蓋過（取大）＝這張沒另外回
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・leechFac | 王牌：拆穿！回聲望跟流派取大，不另加 | 本規格新寫 | `factions.apexSwap.notes.leechFac` |
 
 ## 流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態；{x} 由畫面代入）
 
@@ -1510,10 +1515,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 老闆・pickFirst | 這一級可以學一招本派的。 | 本規格新寫 | `factions.ui.pickFirst` |
 | （畫面字）・mine | 本派：{list} | 本規格新寫 | `factions.ui.mine` |
 | （畫面字）・mineNone | 本派：還沒學 | 本規格新寫 | `factions.ui.mineNone` |
+| （畫面字）・costOff | 已取消 | 本規格新寫 | `factions.ui.costOff` |
 | （畫面字）・infoTitle | {name}・{icon} | 本規格新寫 | `factions.ui.infoTitle` |
-| （畫面字）・leftLeech | 吸血這場還能回 {n} | 本規格新寫 | `factions.ui.leftLeech` |
+| （畫面字）・leftLeech | 吸血這場還能回 {n} 聲望 | 本規格新寫 | `factions.ui.leftLeech` |
 | （畫面字）・leftThorn | 反傷這場還剩 {n} 次 | 本規格新寫 | `factions.ui.leftThorn` |
-| （畫面字）・firstTip | 第一次觸發，看一下結果行的小字。 | 本規格新寫 | `factions.ui.firstTip` |
+| （畫面字）・firstTip | 點頂欄這個字，看本派的被動和代價。 | 本規格新寫 | `factions.ui.firstTip` |
 | （畫面字）・pickGo | 就這一派 | 本規格新寫 | `factions.ui.pickGo` |
 | （畫面字）・profFar | 熟練 Lv{n}・最遠第 {far} 位 | 本規格新寫 | `factions.ui.profFar` |
 | （畫面字）・profOnly | 熟練 Lv{n} | 本規格新寫 | `factions.ui.profOnly` |

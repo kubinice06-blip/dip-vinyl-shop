@@ -4037,7 +4037,25 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
     d = facDuel('heresy', { apex: true, ability: ab('critLeech', { mult: 1 }), atk: 5 }); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: 1 }; d.p.hp = 2;
     let r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 9, 0, 5], [T('crit', 1)]], 'critLeech 5 vs heresy 2 → heal 5 (max, not 7), no heresy heal note');
     d = facDuel('heresy', { apex: true, ability: ab('critAdd', { n: 2 }) }); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: 1 };
-    r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 5, 0, 2], [T('heal', 2)]], 'critAdd 2 vs heresy critPre 1 → +2 (max, not +3); heal still 2'); }
+    r = pv(d, mk(1, 1, 3), 'h', { attr: 'o', star: 2 }); eq([kv(r), fn(r)], [['counter', 5, 0, 2], [T('heal', 2)]], 'critAdd 2 vs heresy critPre 1 → +2 (max, not +3); heal still 2');
+    // 審查 棒二：preview 假設這手發動看穿（act.apex、P.apexOn 還沒寫）＝resolve（activateApex 先寫 P.apexOn.reveal）：異端不多扣、不回；真卡兩張＋測試卡
+    const reveals = [ab('reveal', {}, 'hand')].concat(EN.apexList(K, 'heresy').map(x => EN.abilityOf(K, x.card)).filter(A => A.op === 'reveal'));
+    ok(reveals.length === 3, 'heresy has two real reveal cards (rallizes, ikeda)', reveals.map(A => A.id));
+    for (const A of reveals) {
+      d = facDuel('heresy', { apex: true, ability: A }); hint(d, 'c'); d.p.hand[0] = mk(1, 1, 3); d.e.hand[0] = mk(1, 2, 1);
+      ok(EN.canApex(d), A.id + ': can activate');
+      const p = EN.preview(d, { i: 0, attr: 'h', apex: true }, { i: 0, attr: 'o' });
+      const cl = EN.resolveTurn(d, { i: 0, attr: 'h', apex: true }, { forcedPlay: { i: 0, attr: 'o' } }).find(e => e.t === 'clash');
+      eq([kv(p), p.fac, JSON.stringify(p.apex)], [['counter', 3, 0, 0], {}, JSON.stringify(cl.apex)], A.id + ': preview with activation = resolve (no heresy crit／heal on the revealed hand)');
+      eq([kv(cl), cl.fac], [['counter', 3, 0, 0], {}], A.id + ': resolve no heresy crit／heal');
+    }
+    // 審查 棒二：拆穿回血（critLeech）×異端被動回 2：取大；流派那份比較多＝這張沒回到（h 0、不算 hit、結果句 leechFac，不再兩邊各寫一次回 2）；這張比較多＝照舊
+    { const SN = F.apexSwap.notes;
+      d = facDuel('heresy', { apex: true, ability: ab('critLeech', { mult: 1 }) }); d.apexText.notes = Object.assign({}, d.apexText.notes, SN); hint(d, 'c'); d.p.aceUsed = true; d.p.apexOn = { n: 1 }; d.p.hp = 6;
+      r = pv(d, mk(1, 1, 1), 'h', { attr: 'o', star: 2 });
+      eq([kv(r), fn(r), r.apex.hit, r.apex.h, (r.notes.find(n => n.apex) || {}).text], [['counter', 2, 0, 2], [T('crit', 1), T('heal', 2)], false, 0, SN.leechFac], 'critLeech 1 < heresy heal 2 → heal 2 is the passive\'s; card: no hit, h 0, note leechFac');
+      d.p.hp = 11; r = pv(d, mk(1, 1, 1), 'h', { attr: 'o', star: 2 });
+      eq([kv(r), fn(r), r.apex.hit, r.apex.h], [['counter', 2, 0, 1], [T('crit', 1)], true, 1], 'room 1: card heal 1 wins the tie (max, card first) → card hit, no passive heal note'); } }
 
   // ---- preview＝resolveTurn（三派 × 本派選項全拿／一般 × 有沒有 ?apex；每一手每一個合法動作；thoughtful／random 照實打）；計數照上限；序章沒有 fac ----
   { let hands = 0, fnotes = 0;
@@ -4045,7 +4063,7 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
     for (const tier of TIERS) for (let s = 1; s <= (QUICK ? 8 : 30); s++) {
       const allPicks = s % 2 ? Object.fromEntries(F[tier].picks.map(p => [p.id, 1])) : {}, apex = s % 3 === 0;
       const src = { bag: K.gifts[tier].concat(BP3), ace: tier, relics: s % 4 === 0 ? ['dustcover', 'cleaner', 'boost_' + EN.TIER_AXIS[tier]] : [], atk: s % 5, def: s % 3, hp: 12, maxHp: 15, fac: { picks: allPicks, tal: {}, trialNodes: {} } };
-      if (apex) src.aceId = EN.apexList(K, tier)[s % 15].card;
+      if (apex) src.aceId = EN.apexList(K, tier)[((s / 3) * 4 + 3) % 15].card;   // 審查 棒二：原本 s % 15（s 是 3 的倍數）永遠挑不到第 7、8 張（異端兩張看穿）；QUICK 7、11，全量 7、11、0、4、8…
       const pos = 3 + (s % 40), id = ids[s % ids.length];
       const eDef = EN.enemyDef(K, id, { pos, seedKey: 'pv31', runNo: s, playerAce: tier, bossAce: TIERS.filter(t => t !== tier)[0] });
       const { duel } = EN.startDuel(EN.playerDef(K, src, apex ? { apex: true, fac: true } : { fac: true }), eDef, Object.assign({ seed: 900 + s, hintTable: EN.hintTableOf(K) }, apex ? { apex: true } : {}));
@@ -4164,13 +4182,14 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
     ok(EN.fixFac(rf, K) && JSON.stringify(rf.fac) === JSON.stringify({ picks: { h_eye: 1 }, tal: {}, trialNodes: {} }) && rf.pending.offer.length === 3, 'fixFac: drops unknown ids, fills shape, drops taken slot');
     const rb = base(); rb.fac = 'x'; ok(EN.fixFac(rb, K) && !('fac' in rb), 'fixFac: bad fac removed'); ok(EN.fixFac(base(), K) === false, 'fixFac: no fac → false'); }
 
-  // ---- 8 ?fac=1&apex=1 換一格：只在 run.fac＋apexMode；只開 ?apex=1 時 C.apexTrial 逐字照舊；冷門 theirStar／pThr → critAdd 2、異端 crit／critLeech → mirrorPlus 2、Zodiac → eStar 1 ----
-  //   棒二 sim 退回只標示（content apexSwap.on false）後：對照表本身照舊用 on true 的複本 KS 測（改回 on true 就換）；真 content 照 on 判（false＝一張都不換）
+  // ---- 8 ?fac=1&apex=1 換一格：只在 run.fac＋apexMode；只開 ?apex=1 時 C.apexTrial 逐字照舊；冷門 theirStar／pThr（含預設那張 Zodiac）→ critAdd 2、異端 crit／critLeech → mirrorPlus 2 ----
+  //   棒二審查定案：on true、Zodiac 不另外指定（照家族）。對照表用 on true 的複本 KS 測；真 content 照 on 判（false＝一張都不換＝只標示）
   { const KS = Object.assign({}, K, { factions: Object.assign({}, F, { apexSwap: Object.assign({}, F.apexSwap, { on: true }) }) });
     const before = JSON.stringify(K.apexTrial), S = KS.factions.apexSwap, R0 = { fac: { picks: {} } };
     for (const t of TIERS) for (const x of EN.apexList(K, t)) {
       const A = EN.abilityOf(K, x.card), A0 = EN.apexAbilityOf(KS, x.card, null), A1 = EN.apexAbilityOf(KS, x.card, { ace: t }), B = EN.apexAbilityOf(KS, x.card, R0), BR = EN.apexAbilityOf(K, x.card, R0);
       if (F.apexSwap.on === false) eq(BR, A, x.id + ': real content apexSwap.on false → not swapped (only label)');
+      else eq(BR, B, x.id + ': real content apexSwap.on → same as the table');
       eq([A0, A1], [A, A], x.id + ': without run.fac = abilityOf');
       const sw = (S[t] && ((S[t].cards || {})[x.id] || (S[t].ops || {})[x.op])) || null;
       if (!sw) { eq(B, A, x.id + ': not swapped'); continue; }
@@ -4179,14 +4198,14 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
     }
     const cnt = t => EN.apexList(K, t).filter(x => EN.apexAbilityOf(KS, x.card, R0).swapped).length;
     eq([cnt('hall'), cnt('pearl'), cnt('heresy')], [0, 11, 10], 'swapped: hall 0, pearl 11 (theirStar 6＋pThr 5), heresy 10 (crit 7＋critLeech 3)');
-    eq([EN.apexAbilityOf(KS, K.aces.pearl, R0).op, EN.apexAbilityOf(KS, K.aces.pearl, R0).params, EN.apexAbilityOf(KS, K.aces.heresy, R0).op, EN.apexAbilityOf(KS, K.aces.heresy, R0).params], ['eStar', { n: 1 }, 'mirrorPlus', { n: 2 }], 'Zodiac → eStar 1; Filth → mirrorPlus 2');
+    eq([EN.apexAbilityOf(KS, K.aces.pearl, R0).op, EN.apexAbilityOf(KS, K.aces.pearl, R0).params, EN.apexAbilityOf(KS, K.aces.heresy, R0).op, EN.apexAbilityOf(KS, K.aces.heresy, R0).params], ['critAdd', { n: 2 }, 'mirrorPlus', { n: 2 }], 'Zodiac → critAdd 2 (its family, no card override); Filth → mirrorPlus 2');
     ok(JSON.stringify(K.apexTrial) === before, 'C.apexTrial untouched');
     ok(EN.apexAbilityOf(Object.assign({}, K, { factions: Object.assign({}, F, { apexSwap: Object.assign({}, S, { on: false }) }) }), K.aces.pearl, R0).op === 'theirStar', 'apexSwap.on false → only label (no swap)');
     // startFight：run.fac＋apex → 換；沒有 run.fac＋apex → 照舊；run.fac 沒 apex → 沒有 apexMode
     const go = (fac, apex, KK) => { KK = KK || KS; const r = EN.newRun(KK, { seedKey: 'as31', runNo: 2, ace: 'pearl', prologue: false, fac }); EN.choose(r, KK, EN.bargainPolicy(r, KK)); return EN.startFight(r, KK, { apex }).duel; };
     const d1 = go(true, true), d2 = go(false, true), d3 = go(true, false);
-    { const dR = go(true, true, K); ok(dR.apexMode && dR.p.fac === 'pearl' && dR.p.ability.op === (F.apexSwap.on === false ? 'theirStar' : 'eStar') && !!dR.p.ability.swapped === (F.apexSwap.on !== false), '?fac=1&apex=1 real content: apexSwap.on ' + F.apexSwap.on + ' → ' + (F.apexSwap.on === false ? 'only label (Zodiac stays theirStar)' : 'swapped')); }
-    ok(d1.apexMode && d1.p.ability.op === 'eStar' && d1.p.fac === 'pearl' && d1.apexText.notes.critAdd === S.notes.critAdd, '?fac=1&apex=1: swapped in the duel (notes have critAdd)');
+    { const dR = go(true, true, K); ok(dR.apexMode && dR.p.fac === 'pearl' && dR.p.ability.op === (F.apexSwap.on === false ? 'theirStar' : 'critAdd') && !!dR.p.ability.swapped === (F.apexSwap.on !== false), '?fac=1&apex=1 real content: apexSwap.on ' + F.apexSwap.on + ' → ' + (F.apexSwap.on === false ? 'only label (Zodiac stays theirStar)' : 'swapped')); }
+    ok(d1.apexMode && d1.p.ability.op === 'critAdd' && d1.p.fac === 'pearl' && d1.apexText.notes.critAdd === S.notes.critAdd, '?fac=1&apex=1: swapped in the duel (notes have critAdd)');
     ok(d2.apexMode && d2.p.ability.op === 'theirStar' && !('fac' in d2.p) && !('critAdd' in d2.apexText.notes), '?apex=1 only: C.apexTrial as is');
     ok(!d3.apexMode && d3.p.fac === 'pearl', '?fac=1 only: no apexMode');
     // critAdd：抓到他唬你那手多扣 2（冷門借他的星之後、他的底氣之前）；沒抓到＝沒作用
@@ -4203,7 +4222,7 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
     const mut = f => { const D = JSON.parse(JSON.stringify(F)); f(D); return factionProblems(Object.assign({}, K, { factions: D }), EN).length; };
     ok(mut(D => { delete D.notes.cCost; }) && mut(D => { D.notes.crit = '拆穿！加倍'; }) && mut(D => { D.hall.picks[0].op = 'zzz'; }) && mut(D => { D.pearl.priority.pop(); }) && mut(D => { D.heresy.picks[4].second = false; })
       && mut(D => { D.apexSwap.heresy.ops.crit.params.n = 4; }) && mut(D => { D.apexSwap.heresy.cards['brotzmann-machine-gun'].text = '這手比星多算 2。'; }) && mut(D => { delete D.apexSwap.heresy.cards['brotzmann-machine-gun']; })
-      && mut(D => { D.apexSwap.pearl.cards.nope = { op: 'eStar', params: { n: 1 }, timing: 'hand', text: 'x' }; }) && mut(D => { D.hall.name = '殿堂派'; }) && mut(D => { D.occupy = false; }) && mut(D => { delete D.ui.badge; }),
+      && mut(D => { (D.apexSwap.pearl.cards = D.apexSwap.pearl.cards || {}).nope = { op: 'eStar', params: { n: 1 }, timing: 'hand', text: 'x' }; }) && mut(D => { D.hall.name = '殿堂派'; }) && mut(D => { D.occupy = false; }) && mut(D => { delete D.ui.badge; }),
       'factionProblems catches: missing note, note without {n}, unknown op, priority, second move, swap param range, hold text, hold card not covered, unknown card, name, occupy, ui');
     eq(Object.keys(F.notes).sort(), EN.FAC_NOTE_ORDER.slice().sort(), 'notes keys = FAC_NOTE_ORDER');
     ok(!/加倍/.test(JSON.stringify(F.notes)) && F.notes.cCost && F.factionsTag === undefined && K.factionsTag === '新', 'notes final: no 加倍, has cCost; factionsTag 新'); }

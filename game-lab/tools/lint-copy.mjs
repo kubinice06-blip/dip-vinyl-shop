@@ -626,7 +626,7 @@ if (C.factions) {
       one('factions.apexSwap.' + t + '.cards.' + id + '.text', x.text, '流派試做・?fac=1&apex=1 同開：頂點卡換一格後的能力說明（指定那張）', 25, null, (e.name || id) + '：' + x.text);
     }
   }
-  for (const [k, v] of Object.entries(S.notes || {})) one('factions.apexSwap.notes.' + k, v, '流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）', 25);
+  for (const [k, v] of Object.entries(S.notes || {})) one('factions.apexSwap.notes.' + k, v, k === 'leechFac' ? '流派試做・?fac=1&apex=1 同開：拆穿回血的頂點卡那手，回的聲望被流派被動蓋過（取大）＝這張沒另外回' : '流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）', 25);
   for (const [k, v] of Object.entries(F.ui || {})) one('factions.ui.' + k, v, '流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態；{x} 由畫面代入）', 25, k === 'pickFirst' ? '老闆' : null);
 }
 // 一晚版的字不准回到畫面字（店主 11-12：沒有時間、沒有打烊）；序章「今晚那張」（猜歌那張盤）照用

@@ -965,7 +965,7 @@ export function factionProblems(C, E) {
     for (const [k, v] of Object.entries(SN)) ok(typeof v === 'string' && clen(v.replace(/\{(d|h)\}/g, '12')) <= 25 && !(k in AN), 'factions.apexSwap.notes.' + k + '：≤25 字、不跟 apexTrial.notes 重複');
   }
   const U = F.ui || {};
-  for (const k of ['badge', 'badgeBoth', 'passive', 'cost', 'second', 'pickTag', 'pickNote', 'pickFirst', 'mine', 'mineNone', 'infoTitle', 'leftLeech', 'leftThorn', 'firstTip', 'swapped', 'apexMixed']) ok(typeof U[k] === 'string' && U[k], 'factions.ui.' + k);
+  for (const k of ['badge', 'badgeBoth', 'passive', 'cost', 'second', 'pickTag', 'pickNote', 'pickFirst', 'mine', 'mineNone', 'infoTitle', 'leftLeech', 'leftThorn', 'firstTip', 'swapped', 'apexMixed', 'costOff']) ok(typeof U[k] === 'string' && U[k], 'factions.ui.' + k);
   ok(C.factionsTag === '新', 'C.factionsTag');
   return bad;
 }

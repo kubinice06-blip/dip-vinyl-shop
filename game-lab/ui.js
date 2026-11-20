@@ -1845,10 +1845,10 @@
           '<div class="fx-tx"><button type="button" class="acex"' + (lk ? ' aria-disabled="true"' : '') + '><span class="fx-nm ' + ax + '">' + esc((C.aceTitle[t] || '') + '・' + ((C.aceIcon || {})[t] || '')) + '</span>' +
               '<span class="fx-ax ' + ax + '">' + ZH1[ax] + ' 7</span></button>' +
             (lk ? '<span class="fx-lk lockt">' + lockIcon(11) + esc(TU('aceLocked')) + '</span>' : '') +
-            '<p class="fx-tag">' + esc(D0.tagline || '') + '</p>' +
-            '<p class="fx-pas"><b>' + esc(FU('passive')) + '</b>' + esc(D0.passive || '') + '</p>' +
-            '<p class="fx-cost"><b>' + esc(FU('cost')) + '</b>' + esc(D0.cost || '') + '</p></div>' +
-          '<div class="fx-ft"><span class="fx-gift" aria-hidden="true">' + gifts + '</span><span class="fx-prof">' + esc(facProfLine(t)) + '</span></div>' +
+            '<p class="fx-tag">' + facNw(D0.tagline) + '</p>' +
+            '<p class="fx-pas"><b>' + esc(FU('passive')) + '</b>' + facNw(D0.passive) + '</p>' +
+            '<p class="fx-cost"><b>' + esc(FU('cost')) + '</b>' + facNw(D0.cost) + '</p></div>' +
+          '<div class="fx-ft"><span class="fx-gift" aria-hidden="true">' + gifts + '</span><span class="fx-prof">' + esc(facProfLine(t)).split('・').map(function (x, i, a) { return '<span class="nw">' + x + (i < a.length - 1 ? '・' : '') + '</span>'; }).join('') + '</span></div>' +
         '</div>';
       };
       var html = '<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3><span class="np"></span>' +
@@ -1947,6 +1947,8 @@
     var D0 = r && r.fac && facDef(r.ace), got = (r && r.fac && r.fac.picks) || {};
     return D0 ? (D0.picks || []).filter(function (x) { return x && got[x.id] > 0; }).map(function (x) { return x.name; }) : [];
   }
+  // 流派說明字（派系卡、本派說明、升級第 4 格）：數字連前面兩個字、單位、句尾標點包成不折行（「回 2 聲望。」「多扣 1，」「最多 2。」「經典 +1 星」；審查 棒二 斷行）
+  function facNw(s) { return esc(s || '').replace(/([\u4e00-\u9fff]{1,2} ?)?[+−]?\d+( ?(聲望|星數|星|位|次))?[。，、；]?/g, function (m) { return '<span class="nw">' + m + '</span>'; }); }
   function facMineLine(r) { var m = facMine(r); return m.length ? FU('mine', { list: m.join('、') }) : FU('mineNone'); }
   // 派系卡最下面那行：「熟練 Lv3・最遠第 34 位」（最遠＝這一派打過最遠的那一趟；還沒打過＝只寫熟練）
   function facProfLine(t) {
@@ -1977,11 +1979,16 @@
     if (left.leech != null) rows.push(FU('leftLeech', { n: left.leech }));
     if (left.thorn != null) rows.push(FU('leftThorn', { n: left.thorn }));
     var ax = (C.aceAxis || {})[f.tier] || '';
+    // 審查 棒二：本派選項改掉代價（有人記得＝被剋不多扣、爆擊＝比星輸不多扣）→ 代價那行劃掉、標「已取消」（看這場的 fx，不是派別原文）；
+    //   拿過的本派選項逐項列「名字：說明」（加多扣、回更多、每場第一次不扣…照實寫，不再只列名字）
+    var fx = f.fx || {}, fx0 = D0.fx || {}, costOff = ['tieCost', 'counteredCost', 'loseCost'].some(function (k) { return fx0[k] > 0 && !(fx[k] > 0); });
+    var mine = r && r.fac && r.duel === d ? (D0.picks || []).filter(function (x) { return x && ((r.fac.picks || {})[x.id] > 0); }) : null;
     var html = '<h2><span class="fi ' + esc(ax) + '">' + esc(D0.icon || '') + '</span>' + esc(FU('infoTitle', { name: D0.name || '', icon: D0.icon || '' })) + '</h2>' +
-      (D0.tagline ? '<p class="fx-tag">' + esc(D0.tagline) + '</p>' : '') +
-      '<p class="fx-pas"><b>' + esc(FU('passive')) + '</b>' + esc(D0.passive || '') + '</p>' +
-      '<p class="fx-cost"><b>' + esc(FU('cost')) + '</b>' + esc(D0.cost || '') + '</p>' +
-      (r && r.fac && r.duel === d ? '<p class="fx-mine">' + esc(facMineLine(r)) + '</p>' : '') +
+      (D0.tagline ? '<p class="fx-tag">' + facNw(D0.tagline) + '</p>' : '') +
+      '<p class="fx-pas"><b>' + esc(FU('passive')) + '</b>' + facNw(D0.passive) + '</p>' +
+      '<p class="fx-cost' + (costOff ? ' off' : '') + '"><b>' + esc(FU('cost')) + '</b>' + (costOff ? '<s>' + facNw(D0.cost) + '</s><em>' + esc(FU('costOff')) + '</em>' : facNw(D0.cost)) + '</p>' +
+      (mine ? (mine.length ? '<div class="fx-mine"><b>' + esc(FU('pickTag')) + '</b><ul>' + mine.map(function (x) { return '<li><i>' + esc(x.name) + '</i>' + facNw(x.text) + '</li>'; }).join('') + '</ul></div>'
+        : '<p class="fx-mine">' + esc(FU('mineNone')) + '</p>') : '') +
       rows.map(function (x) { return '<p class="fx-left">' + esc(x) + '</p>'; }).join('');
     sfx('tick');
     modal('facinfo', html);
@@ -3667,7 +3674,7 @@
     var ax = (C.aceAxis || {})[r.ace] || '';
     return '<button type="button" class="lb-btn big lb-lvl fac" data-lv="fac" data-id="' + esc(P.id) + '"><span class="fi ' + esc(ax) + '" aria-hidden="true">' + esc(D0.icon || '') + '</span>' +
       '<span class="tx"><span class="nm key">' + esc(P.name) + '<small>' + esc(FU('pickTag')) + '</small>' + (P.second ? '<small class="sc">' + esc(FU('second')) + '</small>' : '') + '</span>' +
-      '<span class="ds">' + esc(P.text || '') + '</span></span><span class="nv">' + esc(FU('pickNote')) + '</span></button>';
+      '<span class="ds">' + facNw(P.text) + '</span></span><span class="nv">' + esc(FU('pickNote')) + '</span></button>';
   }
   function levelPanel(r, o2) {
     var p = r.pending, L = (C.trial && C.trial.levelUp) || {};

@@ -20,12 +20,12 @@
 //      save.seen.facFirst.hall；頂欄一字圖示「比」（≥40×32）→ 點了本派說明（名號、被動、代價）；下一次觸發沒有第一次那句
 //   4  F4 第二招上限：
 //      a 經典＋吸血（聲望先扣到有空間）：整張那手回聲望（「吸血：回 n 聲望」）、累計回滿 2 之後再整張＝沒有吸血、facN.leech ≤ 2、view.fac.left.leech 0、本派說明「吸血這場還能回 0」
-//      b 冷門＋反傷：被剋三手 → 前兩手「反傷：他也扣 2」、他聲望各 −2；第 3 手 clash.fac 沒有 thorn、他聲望不動、facN.thorn 2；每手「被剋，多扣 1」；第一次那句是冷門那句
+//      b 冷門＋反傷：被剋三手 → 前兩手「反傷：他也扣 2」、他聲望各 −2；第 3 手 clash.fac 沒有 thorn、他聲望不動、facN.thorn 2；每手「被剋：多扣 1」；第一次那句是冷門那句
 //   3  F3 升到 Lv5（真的一趟、?fac=1、經典）：打贏 → 升級面板 4 格（最後一格 [data-lv=fac][data-id]、圖示「比」、名字、「本派」、一句、「不加屬性」、沒有 undefined／NaN、
 //      不捲、每格 ≥44）、老闆「這一級可以學一招本派的。」→ 點本派格：送 {type:'level', pick:'fac', id}、run.fac.picks[id] 1、品味／底氣／聲望上限都沒動、run.picks 最後 'fac:<id>'、
 //      吐司「本派・<名>」→ 我的狀態「本派：<名>」→ 重新整理還在
 //   6  F6 ?fac=1&apex=1：標題兩個章（>600px 高「頂點卡試做」＋「流派試做」並排不重疊；≤600px 只剩一顆「流派＋頂點卡試做」）、只開 ?fac=1 一顆「流派試做」、標題不捲；
-//      content 換一格退回只標示（apexSwap.on false）時兩個都開＝章下小字「頂點卡跟流派一起試：有幾張還沒換能力」在畫面裡（只開一個沒有）；
+//      content 換一格退回只標示（apexSwap.on false）時兩個都開＝章下小字「頂點卡跟流派一起試：有幾張還沒換能力」在畫面裡（只開一個沒有；現在 on true＝沒有小字）；
 //      冷門帶派別的 run（對照表：頁面上把 on 打開再測）：挑王牌面板點 theirStar 那張 → 說明＝「這手抓到他唬你，多扣 2。」＋「跟流派一起試，這張換過能力」、角上時機＝這手；按住＝唱片資訊也是換過的；
 //      同一份存檔拿掉 run.fac（沒帶派別的 run）＝原本的能力、沒有換過那行
 //   7  F7 ?fac=1 開的 run 在沒旗標的頁面續玩（R-F9）：標題沒有「流派試做」、__lab.fac() false → 來客 → 開打：duel.p.fac 照樣有、頂欄「借」、
@@ -51,8 +51,8 @@ const TIERS = ['hall', 'pearl', 'heresy'];
 const SPEC = {
   title: { hall: '經典流', pearl: '冷門流', heresy: '異端流' }, icon: { hall: '比', pearl: '借', heresy: '拆' },
   newbie: { pearl: '新手推薦', hall: '前期較難' },
-  notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋，多扣 {n}',
-    crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸，多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}' },
+  notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋：多扣 {n}',
+    crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸：多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}' },
   badge: '流派試做', badgeBoth: '流派＋頂點卡試做', pickTag: '本派', pickNote: '不加屬性', pickFirst: '這一級可以學一招本派的。',
   swapTheirStar: '這手抓到他唬你，多扣 2。'
 };
@@ -603,9 +603,9 @@ async function runSize(browser, w, h) {
     try {
       const QA = Q('&fast=1&fac=1&apex=1');
       await openTitle(p2, QA);
-      // theirStar 那張（Zodiac 是 theirStar 但 apexSwap.cards 指定換成 eStar＝不算；挑「照 ops 換」的那張）
+      // theirStar 那張（照 ops 換的；不挑 apexSwap.cards 另外指定的，也不挑預設那張 Zodiac：只收到預設那張時點老闆沒得換、挑王牌面板不會開）
       const CID = await C(p2, () => { const E = window.DipLabEngine, Cn = window.DipLabContent, S = (Cn.factions.apexSwap.pearl || {}).cards || {};
-        return E.apexList(Cn, 'pearl').map(x => x.card).filter(id => { const A = E.abilityOf(Cn, id); return A && A.op === 'theirStar' && !S[A.id]; })[0] || null; });
+        return E.apexList(Cn, 'pearl').map(x => x.card).filter(id => { const A = E.abilityOf(Cn, id); return A && A.op === 'theirStar' && !S[A.id] && id !== Cn.aces.pearl; })[0] || null; });
       const orig = await C(p2, id => { const A = window.DipLabEngine.abilityOf(window.DipLabContent, id); return A ? { text: A.text, timing: A.timing, name: A.name } : null; }, CID);
       const look = async (withFac) => {
         await seedRun(p2, { ace: 'pearl', idx: 0, ownAces: ['pearl'], ownIds: [CID], seen: { apexPick: true } });

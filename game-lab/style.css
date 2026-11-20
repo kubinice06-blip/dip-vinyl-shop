@@ -1094,9 +1094,13 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.acepick.fac .fx-gift .lb-cv{width:100%;height:auto;aspect-ratio:1/1;border-width:1px;}
 .lb-sheet.acepick.fac .fxc.locked .fx-gift .lb-cv{-webkit-filter:grayscale(1);filter:grayscale(1);opacity:.5;}
 .lb-sheet.acepick.fac .fx-prof{display:block;margin-top:3px;font-size:10px;line-height:1.3;color:var(--gray2);}
+.lb-sheet.acepick.fac .fx-prof .nw,.lb-sheet.acepick.fac .fx-tx .nw,.lb-lvl.fac .ds .nw,.lb-modal .pane.facinfo .nw{white-space:nowrap;}   /* 「熟練 Lv1・」「最遠第 34 位」各自不折（390 三欄原本把「位」擠到第二行：審查 棒二） */
+/* 斷行（審查 棒二：「回 2 聲／望」「一場最多／2。」「只讀真／假。」）：有數字的句子靠 ui.js facNw 把「兩個字＋數字＋單位＋標點」包成不折行；
+   一句定位（沒有數字）用 pretty 免得最後一個字自己掉下去。pretty 不套在有 facNw 的段落：中文會為了拉長末行，把「一場」「多扣」拆開 */
+.lb-sheet.acepick.fac .fx-tag,.lb-modal .pane.facinfo .fx-tag{text-wrap:pretty;}
 .lb-sheet.acepick.fac .fx-dots{display:none;justify-content:center;flex:none;}
-.lb-sheet.acepick.fac .fx-dots button{position:relative;width:34px;height:20px;display:grid;place-items:center;}
-.lb-sheet.acepick.fac .fx-dots button::after{content:'';position:absolute;left:0;right:0;top:-12px;bottom:-12px;}   /* 點擊區撐到 44 */
+.lb-sheet.acepick.fac .fx-dots button{position:relative;width:44px;height:40px;display:grid;place-items:center;}
+.lb-sheet.acepick.fac .fx-dots button::after{content:'';position:absolute;left:0;right:0;top:0;bottom:-6px;}   /* 點擊區 44×44：只往下撐（撐進大鈕上面那 6px 空白；往上會蓋到卡片底、點卡跳去別派：審查 棒二） */
 .lb-sheet.acepick.fac .fx-dots i{display:block;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink);}
 .lb-sheet.acepick.fac .fx-dots .on i{background:var(--ink);}
 .lb-sheet.acepick.fac .fx-dots .lk i{border-style:dashed;border-color:var(--gray);}
@@ -1126,7 +1130,9 @@ body.lb-tune-open{overflow:hidden;}
 .lb-lvl.fac .nm small{display:inline-block;margin-left:6px;padding:0 4px;font-size:10px;font-weight:700;line-height:15px;letter-spacing:.06em;color:var(--gray2);border:1px solid var(--line);vertical-align:2px;}
 .lb-lvl.fac .nm small.sc{color:var(--gold-ink,#7a5a00);border-color:var(--gold);background:var(--cream);}
 .lb-lvl.fac .nv{font:400 11px var(--zh);letter-spacing:.02em;}
-/* 對決頂欄的一字圖示（比／借／拆）：點了＝本派說明 */
+/* 對決頂欄的一字圖示（比／借／拆）：點了＝本派說明。點擊區 44×44：寬 44、只往下撐 13（頂欄貼 y=0，往上撐的那 6px 在畫面外：審查 棒二；? 與暫停照舊） */
+.lb-top .ti.fac{min-width:44px;}
+.lb-top .ti.fac::after{top:0;bottom:-13px;}
 .lb-top .ti.fac .fi{display:grid;place-items:center;width:22px;height:22px;font:700 13px/1 var(--zh);color:#fff;background:var(--ink);}
 .lb-top .ti.fac.c .fi{background:var(--c);} .lb-top .ti.fac.o .fi{background:var(--o);} .lb-top .ti.fac.h .fi{background:var(--h);}
 /* 本派說明（彈窗） */
@@ -1138,6 +1144,12 @@ body.lb-tune-open{overflow:hidden;}
 .lb-modal .pane.facinfo .fx-tag{font-weight:700;text-align:center;margin-top:0;}
 .lb-modal .pane.facinfo .fx-cost{color:var(--gray2);}
 .lb-modal .pane.facinfo .fx-mine{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:12px;}
+.lb-modal .pane.facinfo div.fx-mine{display:flex;align-items:flex-start;gap:3px;line-height:1.55;}
+.lb-modal .pane.facinfo div.fx-mine>b{flex:none;margin-top:2px;padding:0 3px;font-size:9px;line-height:13px;border:1px solid currentColor;}
+.lb-modal .pane.facinfo .fx-mine ul{margin:0;padding:0;list-style:none;min-width:0;}
+.lb-modal .pane.facinfo .fx-mine li i{font-style:normal;font-weight:700;margin-right:4px;}
+.lb-modal .pane.facinfo .fx-cost.off s{text-decoration-thickness:1px;}
+.lb-modal .pane.facinfo .fx-cost.off em{font-style:normal;font-weight:700;margin-left:4px;color:var(--ink);}
 .lb-modal .pane.facinfo .fx-left{font-size:12px;color:var(--gold-ink,#7a5a00);font-weight:700;}
 /* 結果框：這一派第一次觸發那句（duel.js ct.first；另起一行、可以折行、黑字） */
 .dl .callout .l2 .nt .ns.f1{display:block;white-space:normal;margin-top:1px;font-weight:700;color:var(--ink,#111);text-wrap:balance;}

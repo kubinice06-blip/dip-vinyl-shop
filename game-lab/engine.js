@@ -460,10 +460,11 @@
   }
   // 結果行那一句與 clash 事件的 apex 欄（b＝同一手不算王牌的結果）
   const CRIT_OPS = ['crit', 'critLeech', 'critAdd'];
-  function apexInfo(st, AX, r, b, pPlay, ePlay, caught, ps, es) {
+  //   facOver＝這手的回聲望被流派（?fac=1）蓋過（取大、不相加）：r.heal 是流派回的，不算這張卡回的（審查 棒二：原本兩邊各寫一次「回 2 聲望」、apexHits 也多算）
+  function apexInfo(st, AX, r, b, pPlay, ePlay, caught, ps, es, facOver) {
     const P = st.p, A = P.ability, T = st.apexText || {};
     const op = AX.ops.length === 1 ? AX.ops[0].op : 'combo';
-    const dE = r.toE - b.toE, dP = b.toP - r.toP, h = r.heal | 0;
+    const dE = r.toE - b.toE, dP = b.toP - r.toP, h = facOver ? 0 : r.heal | 0;
     let d, hit;
     if (op === 'heal') { const n = AX.ops[0].params.n | 0; d = AX.on && AX.on.heal != null ? AX.on.heal : Math.max(0, Math.min(n, P.max - P.hp)); hit = AX.first && d > 0; }
     else if (op === 'reveal') { d = 0; hit = false; }
@@ -478,6 +479,7 @@
     if (AX.src === 'hold') tpl = hit ? (T.holdNotes || {})[op] : null;
     else if (op === 'reveal') tpl = null;                                       // 看穿：提示框蓋章，不進結果句
     else if (hit) tpl = op === 'critLeech' ? (d <= 0 ? N.leech : h > 0 ? N.critLeech : (N.crit || N.critLeech)) : N[op];   // 拆穿回血：沒回到（滿聲望）就不寫「回 0 聲望」
+    else if (op === 'critLeech' && caught && facOver) tpl = N.leechFac || null;             // 抓到唬人、也有回，但回的是流派那份（取大）：這張沒另外加
     else if (op === 'critLeech' && caught) { tpl = N.leechFull || null; full = true; }      // 抓到唬人但聲望是滿的（不算「沒碰到條件」）
     else if (AX.first) tpl = CRIT_OPS.includes(op) && !feintOf(st, ePlay.attr) ? (N.noneHonest || N.none) : N.none;   // 他這手沒唬你（照結果句的判準）
     const note = tpl ? Object.assign({ apex: A.id, op, src: AX.src, d, h, hit: !!hit, text: String(tpl).replace(/\{d\}/g, d).replace(/\{h\}/g, h).replace(/\{name\}/g, A.name || '') }, full ? { full: true } : {}) : null;
@@ -577,9 +579,11 @@
   //   第 D 波棒二三流派（?fac=1；st.p.fac＝'hall'|'pearl'|'heresy'、st.p.fx＝facFxOf 疊好的被動＋本派選項；SPEC-D §3.3–§3.4）：不靠 apexMode 的派別路，沒有 st.p.fac 時一行都不走（逐字現況）。
   //     步驟：①本派選項加星（識貨／失真）③冷門門檻 Infinity ④冷門扣他那張的星／經典同色大 2 星扣整張 ⑥品味（冷門以小搏大那手不加）⑦拆穿多扣（異端 critPre；換一格的 critAdd 同一步取大）
   //     ⑨′異端比星輸多扣 ⑪′冷門被剋多扣（他的品味、被唬到多扣之後，你的底氣之前）⑫′經典同色平手你扣 1（不吃底氣、不加他的品味）⑬回聲望（吸血／拆穿回聲望；跟頂點卡取大、不相加）
-  function outcome(st, pPlay, ePlay, commit, hyp) {
+  //   hypPeek（只給 base 那次內部呼叫）：假設這手發動的是看穿（reveal）＝跟 resolve 一樣當作「看穿確認過的那手」（審查 棒二：preview 原本只看 P.apexOn，resolve 才有）
+  function outcome(st, pPlay, ePlay, commit, hyp, hypPeek) {
     const AX = st.apexMode && hyp !== 'off' ? apexNow(st, hyp === 'on') : null, M = AX ? AX.M : null;
-    const base = AX ? outcome(st, pPlay, ePlay, false, 'off') : null;          // 先算（commit 會改 dustUsed）
+    const hPeek = !!hypPeek || !!(AX && AX.on && AX.on.hyp && AX.ops.some(x => x.op === 'reveal'));   // preview 假設這手發動看穿：resolve 時 activateApex 已寫好 P.apexOn.reveal
+    const base = AX ? outcome(st, pPlay, ePlay, false, 'off', hPeek) : null;   // 先算（commit 會改 dustUsed）
     const FX = st.p.fac && st.p.fx ? st.p.fx : null, fac = FX ? st.p.fac : null, FN = FX ? (st.p.facN || {}) : null, fk = FX ? {} : null;
     const notes = [];
     let ps = pPlay.star | 0;
@@ -622,7 +626,7 @@
     }
     let caught = false;
     if (M || FX) caught = r.kind === 'counter' && r.toE > 0 && feintOf(st, ePlay.attr);   // 他這手是看得出來的唬、被你剋中＝抓到（＝結果句「你看穿了！」；11-17 起不看計畫色：半指出另一色＝照實、不露不算、第二種唬法照樣算）
-    const peeked = !!(FX && P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n);   // 看穿確認過的那手：異端不多扣、不回聲望
+    const peeked = !!(FX && ((P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n) || hPeek));   // 看穿確認過的那手：異端不多扣、不回聲望（preview 假設發動看穿＝hPeek）
     const crit = fac === 'heresy' && caught && !peeked && ((FX.critMult || 1) > 1 || FX.critPre > 0 || FX.critHeal > 0);
     const cAdd = caught && M && M.critAdd > 0 ? M.critAdd | 0 : 0;             // 換一格（?fac=1&apex=1）：拆穿那手多扣 n
     if (M && M.counterPlus && r.kind === 'counter' && r.toE > 0) r.toE += M.counterPlus;
@@ -657,17 +661,18 @@
     if (FX && FX.tieCost > 0 && same && r.kind === 'tie' && !(FX.tieFree && (FN.tie | 0) === 0)) { r.toP += FX.tieCost | 0; fk.tieCost = 1; }   // ⑫′ 經典代價：同色平手你扣 1（老派：每場第一次不算）
     if (FX && FX.thorn > 0 && r.kind === 'countered' && (FN.thorn | 0) < (FX.thornMax | 0)) { r.toE += FX.thorn | 0; fk.thorn = 1; }   // 第二招反傷（冷門）：被剋他也扣 2（不吃他的底氣），一場最多 thornMax 次
     if (M && M.leech && caught) r.heal = Math.min(Math.max(0, st.p.max - st.p.hp), Math.ceil(Math.min(r.toE, Math.max(0, st.e.hp)) / 2));   // ⑬（resolveTurn 扣完聲望後回）
+    let facHealOver = false;
     if (FX) {                                                                   // ⑬ 回聲望：第二招吸血（經典：整張那手扣到的一半，一場最多 leechMax）、異端拆穿回 critHeal（＋回音）；跟頂點卡取大、不相加
       let fh = 0, hk = null;
       if (FX.leech && fk.full && (FN.leech | 0) < (FX.leechMax | 0)) { fh = Math.min((FX.leechMax | 0) - (FN.leech | 0), Math.ceil(Math.min(r.toE, Math.max(0, E.hp)) / 2)); hk = 'leech'; }
       if (crit && r.toE >= 1 && FX.critHeal > 0) { const h = (FX.critHeal | 0) + (FX.critHealPlus | 0); if (h > fh) { fh = h; hk = 'heal'; } }
       const pre = AX && AX.on && AX.on.hyp ? AX.ops.reduce((a, x) => a + (x.op === 'heal' ? x.params.n | 0 : 0), 0) : 0;   // preview 假設這手發動回聲望型王牌：resolve 時已先回了（activateApex）
       const fv = fh > 0 ? Math.min(Math.max(0, P.max - Math.min(P.max, P.hp + pre)), fh) : 0;
-      if (fv > 0 && fv > (r.heal | 0)) { r.heal = fv; fk[hk] = 1; }
+      if (fv > 0 && fv > (r.heal | 0)) { if (M && M.leech && caught) facHealOver = true; r.heal = fv; fk[hk] = 1; }   // 頂點卡回的被流派蓋過（取大）：r.heal 不是那張卡的（apexInfo 不算它回的）
     }
     r.notes = notes; r.pStar = ps;
     if (AX) {
-      const x = apexInfo(st, AX, r, base, pPlay, ePlay, caught, ps, es);
+      const x = apexInfo(st, AX, r, base, pPlay, ePlay, caught, ps, es, facHealOver);
       r.apex = x.info; if (x.note) notes.push(x.note);
     }
     if (FX) {                                                                   // 結果行小字 {fac, kind, n, text}（SPEC-D §3.10）；{n}：整張／借／以小搏大＝這手扣他的總數，其他＝多扣／回的那一份

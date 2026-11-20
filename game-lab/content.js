@@ -1955,21 +1955,20 @@
   // ===================================================================
   C.factions = {
     on: true, levelEvery: 5, occupy: true,
-    notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋，多扣 {n}',
-      crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸，多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}' },
+    notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋：多扣 {n}',
+      crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸：多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}' },
     // ?fac=1&apex=1 同開才用（SPEC-D §6-3「三家換一格」）：engine apexAbilityOf 換掉那張的 op／params／text（name、典故不動；C.apexTrial 本身不改）。
     //   ops＝這個原語的卡都換（冷門 theirStar／pThr＝被動已有；異端 crit／critLeech＝被動已有／七不收）；cards＝指定那張（優先）。timing：留著型照舊留著
-    //   數字（拆穿多扣 2、比星多算 2、Zodiac 他少 1 星）＝規格起點，棒二 sim F9 量；不過先調這三個數字，再不過退回只標示（ui.apexMixed）
-    //   棒二 sim（build2/SIM.md）：F9 換一格 會讀的 35／42／32（1.31 ✗；冷門 Zodiac「他少 1 星」一場省 1 點、累積起來 32→42），能調的數字救不回來
-    //   （eStar 參數範圍 [1,1]；異端比星多算 3＝34 仍 1.24）→ 照 §6-3 退回只標示：on false（對照表留著，on 改回 true 就換）。
-    //   退回＝直接同開（n4000：35／32／20）。另案（給主線選）：刪 cards 的 zodiac-borrow 讓 Zodiac 照家族換「拆穿多扣 2」＋on true＝35／31／32（1.13 ✓）
+    //   數字（拆穿多扣 2、比星多算 2）＝規格起點，棒二 sim F9 量；on false＝退回只標示（ui.apexMixed；對照表留著，on 改回 true 就換）
+    //   棒二 sim（build2/SIM.md）：規格起點的 Zodiac「這手他少 1 星」一場省 1 點、累積起來冷門 32→42（F9 1.31 ✗；eStar 範圍 [1,1] 調不動）；
+    //   退回只標示＝直接同開 35／32／20（1.75，異端跟提示同色 13.2%）比換一格更不平 → 棒二審查定案：Zodiac 不另外指定、照家族換「拆穿多扣 2」，
+    //   異端照換「比星多算 2」：n4000 會讀的 35／31／32（1.13 ✓）、異端跟提示同色 8.1%（build2/FINAL.md）
     apexSwap: {
-      on: false,
-      notes: { critAdd: '王牌：拆穿！多扣 {d}' },
+      on: true,
+      notes: { critAdd: '王牌：拆穿！多扣 {d}', leechFac: '王牌：拆穿！回聲望跟流派取大，不另加' },   // leechFac：拆穿回血那手回的被流派蓋過（取大）＝這張沒另外回（只開 on false 時碰得到）
       pearl: {
         ops: { theirStar: { op: 'critAdd', params: { n: 2 }, timing: 'hand', text: '這手抓到他唬你，多扣 2。' },
-               pThr: { op: 'critAdd', params: { n: 2 }, timing: 'hand', text: '這手抓到他唬你，多扣 2。' } },
-        cards: { 'zodiac-borrow': { op: 'eStar', params: { n: 1 }, timing: 'hand', text: '這手他的唱片少 1 星。' } }
+               pThr: { op: 'critAdd', params: { n: 2 }, timing: 'hand', text: '這手抓到他唬你，多扣 2。' } }
       },
       heresy: {
         ops: { crit: { op: 'mirrorPlus', params: { n: 2 }, timing: 'hand', text: '這手比星多算 2。' },
@@ -2017,9 +2016,10 @@
       pickTag: '本派', pickNote: '不加屬性',                             // 升級第 4 格：小標、灰字小註（拿了這一級不加屬性）
       pickFirst: '這一級可以學一招本派的。',                             // Lv5 第一次出現第 4 格時老闆說
       mine: '本派：{list}', mineNone: '本派：還沒學',                    // 我的狀態那一行（{list}＝拿過的本派選項名，用「、」接）
+      costOff: '已取消',                                                 // 本派說明：本派選項取消了代價（有人記得、爆擊）時，代價那行劃掉、後面標這兩字（審查 棒二）
       infoTitle: '{name}・{icon}',                                       // 頂欄一字圖示點開的標題
-      leftLeech: '吸血這場還能回 {n}', leftThorn: '反傷這場還剩 {n} 次',   // 本派說明：這場第二招還剩幾
-      firstTip: '第一次觸發，看一下結果行的小字。',                      // 第一次觸發被動或代價那手（save.seen.facFirst[派]）的老闆小提示
+      leftLeech: '吸血這場還能回 {n} 聲望', leftThorn: '反傷這場還剩 {n} 次',   // 本派說明：這場第二招還剩幾
+      firstTip: '點頂欄這個字，看本派的被動和代價。',                    // 第一次觸發被動或代價那手的老闆小提示（指頂欄一字圖示 data-tut=fac；提示出來時結果框已收，審查 棒二：原本叫人看結果行小字，那時看不到）
       pickGo: '就這一派',                                                // 開局派系卡的大鈕（棒二介面）
       profFar: '熟練 Lv{n}・最遠第 {far} 位', profOnly: '熟練 Lv{n}',    // 派系卡最下面那行（這一派打過最遠的那一趟；還沒打過＝只寫熟練）
       swapped: '跟流派一起試，這張換過能力',                             // ?fac=1&apex=1：換過能力的頂點卡（挑王牌面板、唱片資訊）
