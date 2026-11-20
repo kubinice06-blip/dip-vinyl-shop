@@ -6,7 +6,7 @@
 //     game-lab-c/ 底下的請求由這支直接用 `git show <ref>:game-lab/<檔>` 回應（跟 game-lab/ 同源＝localStorage 共用，才測得到退版／跨版）
 //
 // 數字照規格寫死（不從 content 讀，免得引擎跟資料一起錯也過）：一趟＝round((15×打過的位數＋8×最多連贏＋破紀錄 30＋路線) × (沒到第 10 位、帳號也還沒走到過、不是放棄 ? 2 : 1))、
-//   路線＝min(min(演唱會, ⌊0.25×基本⌋)＋其他四項, ⌊0.40×基本⌋)；Lv n→n+1 要 100n（n<10）、之後 1,000；點數＝等級−1；戰力天賦第 k 級 6k 點、Lv8 開，備用說情 15 點 Lv20。
+//   路線＝min(min(演唱會, ⌊0.25×基本⌋)＋其他四項, ⌊0.40×基本⌋)；Lv n→n+1 要 100n（n<10）、之後 1,000（第 I 波 I-0：前 7 級改照表 100／150／250／350／500／650／800，見下 CURVE）；點數＝等級−1；戰力天賦第 k 級 6k 點、Lv8 開，備用說情 15 點 Lv20。
 //
 // 每個尺寸：
 //   1  C1 開機入帳冪等＋存檔不升版：C 波 v8 存檔（沒有 career、lexpBank 有記帳、runs 兩趟記了 lexp）→ 標題吐司「你之前的樂歷我都記著呢。樂歷 +1170，升到 Lv 5。」、
@@ -47,12 +47,16 @@
 //      沒有「聲望上限 +1（自動）」、三格 品味→底氣→聲望上限、老闆說一次「打贏就會升級…」（save.seen.lv1）；挑品味 → 聲望上限不變；第 2 位打贏（2/5 經驗）沒有章
 //   16 曲線改了補級：棒一帳號 xp 2,000（舊曲線 Lv6、drawn 2–6）→ 開機吐司「樂歷算法改了，補你 1 級。」、Lv7 補抽一張（drawn 有 7）、過場卡 Lv7；
 //      重新整理不再吐司、沒有卡；樂歷頁 Lv7、天賦點 6、階梯只有做好的格（沒有「之後開放」）
+//   17 升級面板三格固定（§7.1、§7.7）：兩個種子、Lv1→3 與 Lv6→8 各連升兩級（forceWin）→ 每次面板 品味→底氣→聲望上限＝pending.offer、標題「升到 Lv n」、
+//      升到 Lv2 那次沒有「聲望上限 +1（自動）」；挑了聲望上限之後第二次順序不變（?fac=1 第 4 格本派：e2e-fac F3／F8；選秀：e2e-checkpoint #1、e2e-fac F8）
+//   18 新帳號真的走第一趟（不種存檔、快轉）：序章那場真的打贏＝沒有章、沒有升級面板、runs 空 → 第 1 位真的打贏：章（對決畫面）→ 戰利品列 → 升級面板（Lv2、三格固定、
+//      沒有自動 +1、老闆第一次那句、seen.lv1）→ 挑品味聲望上限不變 → 第 2–5 位 → 第一個攤位頂列細條金色「Lv2！」、沒有另跳泡泡、xp 還是 0 → 第 6 位輸：gain＝規格（新手 ×2、沒有保底那筆）
 //   CAREER_SHOTS＝截圖資料夾（dpr 2；給店主：第 1 位打完的升級章、第一趟結算升級、樂歷頁）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, SEED, jsClick, tapAt, waitScreen, noScroll, scrollOk, openTitle, seedRun,
-  answerBargain, watchSay, tapReady, duelReady } from './e2e-lib.mjs';
+  answerBargain, watchSay, tapReady, duelReady, passLoot, clearStall, prologueToDuel } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const REPO = path.resolve(HERE, '../..');
@@ -906,6 +910,184 @@ async function runSize(browser, w, h) {
         !t2.some(t => t === fill(x.recurve, { n: 1 })) && !card2 && pg && pg.lv === fill(x.title, { n: 7 }) && pg.pts === fill(x.points, { n: 6 }) && pg.soon === 0 && pg.lad.length === 7 && !pg.lad.some(t => /之後開放/.test(t));
       record(16, size, ok && !errs(page).length, `吐司 ${J(t1)}；卡 ${card} ${J(k0)}；${J(d1)}；重新整理 吐司 ${J(t2)} 卡 ${card2}；樂歷頁 ${J(pg)}；${errTx(page)}`);
     } catch (e) { record(16, size, false, 'error ' + e.message); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 17 升級面板三格固定（SPEC-I §7.1、§7.7「新」；快轉、forceWin＝不出章）
+  //   兩個種子、兩段等級（Lv1→3、Lv6→8）各打贏一位連升兩級：每一次面板 DOM＝[品味, 底氣, 聲望上限]＝pending.offer 的順序、名字照 content、標題「升到 Lv n」；
+  //   第一次挑聲望上限、第二次挑底氣 → 第二次面板順序不變；升到 Lv2 那次沒有「聲望上限 +1（自動）」，其他有
+  if (want(17)) {
+    const out = [];
+    for (const [seedKey, lv0] of [['20261106', 1], ['20261121', 6]]) {
+      const { ctx, page } = await newPage(browser, w, h);
+      const o = { seedKey, lv0, panels: [] };
+      try {
+        await openTitle(page, Q());
+        await seedRun(page, { seedKey, ace: 'pearl', idx: 1, level: lv0 });
+        // 經驗＝這兩級要的－打贏這一位給的（剛好連升兩級、剩 0）
+        o.xp = await C(page, L => { const E = window.DipLabEngine, Cn = window.DipLabContent, s = JSON.parse(localStorage.getItem('dipGameLab_v1')), r = s.run, T = E.trialCfg(Cn, r.tier);
+          r.xp = E.xpNeed(T, L) + E.xpNeed(T, L + 1) - ((T.xp || {})[E.classAt(r.pos)] | 0); localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); return r.xp; }, lv0);
+        await openTitle(page, Q()); await jsClick(page, '[data-a=cont]'); await nightReady(page);
+        const L = await C(page, () => Object.assign({}, window.DipLabContent.trial.levelUp));
+        await tapReady(page, '[data-a=go]');
+        await duelReady(page, 25000);
+        await C(page, () => window.__lab.forceWin());
+        await waitScreen(page, 'reward', 15000);
+        await passLoot(page, { until: 'choice', ms: 10000 });
+        for (const [i, pick] of [[0, 'hp'], [1, 'def']]) {
+          const up = await page.waitForFunction(k => !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming') &&
+            window.__lab.run.pending && window.__lab.run.pending.type === 'level' && window.__lab.run.picks.length === k, i, { timeout: 12000 }).then(() => true, () => false);
+          await sleep(500);
+          const P = up ? await C(page, () => { const s = document.querySelector('.lb-sheet.level'), r = window.__lab.run, p = r.pending;
+            return { h3: s.querySelector('.hd h3').textContent, sub: s.querySelector('.hd .sub').textContent, dom: [...s.querySelectorAll('[data-lv]')].map(b => b.dataset.lv),
+              nm: [...s.querySelectorAll('[data-lv] .nm')].map(b => b.textContent), offer: (p.offer || []).map(x => x.pick), to: p.level, level: r.level }; }) : null;
+          const want0 = lv0 + 1 + i;
+          o.panels.push(Object.assign({ up, ok: !!P && J(P.dom) === '["atk","def","hp"]' && J(P.offer) === J(P.dom) && J(P.nm) === J([L.atk, L.def, L.hp]) && P.to === want0 &&
+            P.h3 === fill(L.title, { n: want0 }) && (want0 === 2 ? P.sub.indexOf(L.sub) < 0 : P.sub.indexOf(L.sub) === 0) && P.level === lv0 + 2 }, P));
+          if (up) await tapReady(page, `.lb-sheet.level [data-lv="${pick}"]`);
+        }
+        await nightReady(page, 15000);
+        o.end = await C(page, () => { const r = window.__lab.run; return { level: r.level, xp: r.xp, picks: r.picks.slice(-2), pending: r.pending ? r.pending.type : null }; });
+        o.ok = o.panels.length === 2 && o.panels.every(p => p.ok) && o.end.level === lv0 + 2 && o.end.xp === 0 && J(o.end.picks) === '["hp","def"]' && !errs(page).length;
+      } catch (e) { o.error = e.message; o.ok = false; }
+      o.errs = errs(page).length;
+      out.push(o);
+      await ctx.close();
+    }
+    record(17, size, out.every(o => o.ok), out.map(o => `種子 ${o.seedKey} Lv${o.lv0}（xp ${o.xp}）面板 ${J(o.panels.map(p => p.ok ? p.dom.join('/') + '→Lv' + p.to : Object.assign({}, p, { ok: undefined })))} → ${J(o.end)}${o.error ? ' error ' + o.error : ''}；錯誤 ${o.errs}`).join('｜'));
+  }
+
+  // ---------------------------------------------------------------- 18 新帳號真的走第一趟（SPEC-I §7.2、§7.3 b、§7.7；不種存檔、快轉）
+  //   序章（直接打）那場真的出牌打贏：沒有「升級！」章、沒有升級面板、到第 1 位時 runs 還是空的；
+  //   第 1 位真的出牌打贏 →「升級！Lv2」章（對決畫面、在戰利品列之前；快轉照讀秒自己收）→ 戰利品列 → 升級面板（升到 Lv2、品味→底氣→聲望上限、沒有自動 +1 那行）、
+  //   老闆第一次那句、save.seen.lv1 → 挑品味：聲望上限、聲望不變；第 2–5 位打完（forceWin＝不出章）→ 第一個攤位頂列細條金色「Lv2！這一趟結束就能點天賦」（＝careerLive、開局 Lv1）、
+  //   沒有另跳老闆泡泡、career.xp 還是 0 → 第 6 位輸到結算 → runs 一筆、gain＝規格公式（新手 ×2；≥100 沒有保底那筆）、career.xp＝total
+  if (want(18)) {
+    const { ctx, page } = await newPage(browser, w, h);
+    await page.addInitScript(() => {
+      window.__ev = [];
+      const look = n => {
+        if (!n || n.nodeType !== 1) return;
+        const r = window.__lab && window.__lab.run, base = { scr: window.__lab ? window.__lab.screen() : null, pos: r ? r.pos : null, pro: r ? r.prologue || null : null, at: Date.now() };
+        const all = [n].concat([...n.querySelectorAll('.lb-lvch, .lb-sheet.reward, .lb-sheet.level')]);
+        all.forEach(e => {
+          if (!e.classList) return;
+          if (e.classList.contains('lb-lvch')) window.__ev.push(Object.assign({ k: 'ch', t: (e.querySelector('.st') || e).textContent }, base));
+          else if (e.classList.contains('lb-sheet') && e.classList.contains('reward')) window.__ev.push(Object.assign({ k: 'loot' }, base));
+          else if (e.classList.contains('lb-sheet') && e.classList.contains('level')) window.__ev.push(Object.assign({ k: 'lv' }, base));
+        });
+      };
+      const start = () => new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(look))).observe(document.documentElement, { childList: true, subtree: true });
+      if (document.documentElement) start(); else document.addEventListener('DOMContentLoaded', start);
+    });
+    // 點到下一個停點（stop(s) 為真就回 s）：戰利品列「不收」、升級面板第一格、撿唱片第一張、配件第一件、過場卡繼續、對白往下
+    const drain = async (stop, ms = 60000) => {
+      const t0 = Date.now();
+      while (Date.now() - t0 < ms) {
+        const s = await C(page, () => { const r = window.__lab.run, p = r && r.pending; return { scr: window.__lab.screen(), one: !!document.querySelector('#panel > .lb-sheet.one [data-i]'),
+          rel: !!document.querySelector('.lb-sheet.relics [data-r]'), rw: !!document.querySelector('#panel .lb-sheet.reward'), cx: !!document.querySelector('.lb-sheet.cxcard'),
+          lv: !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming'), nx: !!document.querySelector('.lb-dq .nx.on'),
+          stall: !!(p && p.type === 'stall'), live: !!document.querySelector('.cx-live'), go: !!document.querySelector('.lb-night [data-a=go]') && !window.__lab.going(), pos: r ? r.pos : null }; });
+        if (stop(s)) return s;
+        if (s.rw) { await passLoot(page, { until: 'choice', ms: 8000 }); continue; }
+        if (s.one) await jsClick(page, '#panel > .lb-sheet.one [data-i="0"]');
+        else if (s.rel) await jsClick(page, '.lb-sheet.relics [data-r]');
+        else if (s.cx) await jsClick(page, '.lb-sheet.cxcard .lb-btn[data-a=next]');
+        else if (s.lv) await tapReady(page, '.lb-sheet.level [data-lv]');
+        else if (s.nx) await jsClick(page, '.lb-dq');
+        await sleep(s.one || s.rel || s.cx || s.lv ? 450 : 150);
+      }
+      return null;
+    };
+    // 真的出一手（這一手一定剋中、扣到 0），等離開對決畫面；揭曉停住就點他的名牌
+    const playWin = async () => {
+      const ready = await duelReady(page, 25000);
+      await C(page, () => { window.__lab.force({ kind: 'counter', toE: 99, toP: 0 }); const E = window.DipLabEngine, Cn = window.DipLabContent, d = window.__lab.rawDuel();
+        window.DipLabDuel.api().play(E.policies.thoughtful(d, E.makeRng(9), {}, Cn)); });
+      let left = false;
+      for (let g = 0; g < 200 && !left; g++) {
+        left = await C(page, () => window.__lab.screen() !== 'duel');
+        if (!left && await C(page, () => !!(window.DipLabDuel.api() && window.DipLabDuel.api().waiting()))) await tapAt(page, '.dl .dl-e .nmrow').catch(() => {});
+        if (!left) await sleep(200);
+      }
+      await C(page, () => window.__lab.force(null));
+      return ready && left;
+    };
+    try {
+      await openTitle(page, Q());
+      const fresh = await C(page, () => ({ runs: window.__lab.save.runs.length, xp: window.__lab.save.career.xp, lv1: !!window.__lab.save.seen.lv1 }));
+      await page.click('[data-a=quiet]');
+      const toDuel = await prologueToDuel(page, 'direct');
+      await watchSay(page);
+      const proWin = await playWin();
+      const n1 = await drain(s => s.scr === 'night' && s.go, 90000);
+      const p1 = await C(page, () => { const S = window.__lab.save, r = S.run; return { pos: r.pos, pro: r.prologue, level: r.level, xp: r.xp, maxHp: r.maxHp, hp: r.hp, runs: S.runs.length, live: !!document.querySelector('.cx-live') }; });
+      const evPro = await C(page, () => window.__ev.slice());
+      // 第 1 位：真的打贏
+      const L = await C(page, () => Object.assign({}, window.DipLabContent.trial.levelUp));
+      const x = await CU(page);
+      await tapReady(page, '[data-a=go]');
+      const w1 = await playWin();
+      const rw = await waitScreen(page, 'reward', 15000);
+      await passLoot(page, { until: 'choice', ms: 10000 });
+      const lvUp = await page.waitForFunction(() => !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming'), null, { timeout: 12000 }).then(() => true, () => false);
+      await sleep(500);
+      const P = lvUp ? await C(page, () => { const s = document.querySelector('.lb-sheet.level'), r = window.__lab.run;
+        return { h3: s.querySelector('.hd h3').textContent, sub: s.querySelector('.hd .sub').textContent, dom: [...s.querySelectorAll('[data-lv]')].map(b => b.dataset.lv), level: r.level, maxHp: r.maxHp, hp: r.hp,
+          seen: !!window.__lab.save.seen.lv1, stored: !!(JSON.parse(localStorage.getItem('dipGameLab_v1')).seen || {}).lv1 }; }) : null;
+      if (lvUp) await tapReady(page, '.lb-sheet.level [data-lv="atk"]');
+      await nightReady(page, 15000);
+      const r1 = await C(page, () => { const r = window.__lab.run; return { pos: r.pos, level: r.level, xp: r.xp, maxHp: r.maxHp, hp: r.hp, atk: r.atk }; });
+      const ev1 = await C(page, () => window.__ev.slice());
+      const said1 = await C(page, () => window.__said.filter(o => o.id === 'o').map(o => o.t));
+      // 第 2–5 位：forceWin（不出章），點過戰利品列、升級面板、藏家那位的掉落，到第一個攤位
+      const wins = [];
+      let st = null;
+      for (let k = 2; k <= 5 && !st; k++) {
+        // 藏家那位（第 5 位）先有一段開場對白＋選單：點第一顆
+        const g0 = await tapReady(page, '[data-a=go]', 8000);
+        for (let g = 0; g < 200; g++) {
+          if (await C(page, () => window.__lab.screen() === 'duel' && !!window.__lab.rawDuel())) break;
+          if (await page.$('.lb-dq.hasmenu .lb-dqopt')) { await sleep(400); await jsClick(page, '.lb-dq .lb-dqopt[data-i="0"]'); await sleep(300); continue; }
+          if (await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq');
+          await sleep(200);
+        }
+        const dr = await duelReady(page, 25000);
+        const fw = await C(page, () => window.__lab.forceWin());
+        wins.push(g0 && dr && fw);
+        const s = await drain(s => s.scr === 'night' && (s.live || (s.go && !s.stall)), 90000);
+        if (k === 5) st = s;
+      }
+      await sleep(600);
+      const said0 = await C(page, () => window.__said.length);
+      const strip = await C(page, () => { const s = document.querySelector('.cx-live'); if (!s) return null; const run = window.__lab.run, S = window.__lab.save;
+        const Lv = window.DipLabEngine.careerLive(window.DipLabContent, run, { best: run.farBefore | 0, tier: run.tier | 0, xp: S.career.xp });
+        return { up: s.classList.contains('up'), t: s.querySelector('.t').textContent, lv: +s.dataset.lv, L: Lv, pos: run.pos, xp: S.career.xp, stall: !!(run.pending && run.pending.type === 'stall') }; });
+      await sleep(1500);
+      const saidSt = await C(page, n => window.__said.slice(n).filter(o => o.id === 'o').map(o => o.t), said0);
+      // 第 6 位輸到結算
+      await clearStall(page);
+      await nightReady(page, 15000);
+      await C(page, () => window.__lab.loseNext(1, { noRetry: true }));
+      await jsClick(page, '[data-a=go]');
+      const ended = await loseToEnd(page);
+      const e0 = await C(page, () => { const S = window.__lab.save; return { xp: S.career.xp, runs: S.runs.length, ent: S.runs[S.runs.length - 1] }; });
+      const spec = e0.ent ? gainSpec(e0.ent, 0) : { total: -1 };
+      // 事件順序：序章沒有章／升級面板；第 1 位那場：章（對決畫面）→ 戰利品列 → 升級面板
+      const chPro = evPro.filter(e => e.k === 'ch' || e.k === 'lv');
+      const ev1New = ev1.slice(evPro.length), iCh = ev1New.findIndex(e => e.k === 'ch'), iLoot = ev1New.findIndex(e => e.k === 'loot'), iLv = ev1New.findIndex(e => e.k === 'lv');
+      const ch = iCh >= 0 ? ev1New[iCh] : null;
+      const ok = fresh.runs === 0 && fresh.xp === 0 && !fresh.lv1 && toDuel && proWin && n1 && !chPro.length && p1.pos === 1 && p1.pro === 'done' && p1.level === 1 && p1.xp === 0 && p1.runs === 0 && !p1.live &&
+        w1 && rw && ch && ch.t === fill(L.chapter, { n: 2 }) && ch.scr === 'duel' && ev1New.filter(e => e.k === 'ch').length === 1 && iLoot > iCh && iLv > iLoot &&
+        lvUp && P && P.h3 === fill(L.title, { n: 2 }) && P.sub.indexOf(L.sub) < 0 && J(P.dom) === '["atk","def","hp"]' && P.level === 2 && P.maxHp === p1.maxHp && P.seen && P.stored &&
+        said1.filter(t => t === L.first).length === 1 && r1.pos === 2 && r1.level === 2 && r1.xp === 0 && r1.maxHp === p1.maxHp && r1.atk === 1 &&
+        wins.length === 4 && wins.every(Boolean) && st && st.stall && strip && strip.stall && strip.pos === 6 && strip.up && strip.L.from === 1 && strip.L.level === 2 && strip.lv === 2 &&
+        strip.t === fill(x.liveUp, { n: 2 }) && strip.xp === 0 && !saidSt.some(t => /Lv|樂歷/.test(t)) &&
+        ended && e0.runs === 1 && e0.ent && e0.ent.gain && e0.ent.gain.total === spec.total && spec.total >= xpAt(2) && !e0.ent.gain.first && e0.xp === spec.total;
+      record(18, size, ok && !errs(page).length, `新帳號 ${J(fresh)}；序章 對決 ${toDuel} 打贏 ${proWin} → 第 1 位 ${n1 && true} ${J(p1)}、序章事件 ${J(chPro)}；` +
+        `第 1 位 打贏 ${w1} 章 ${J(ch)}（順序 章 ${iCh}／戰利品 ${iLoot}／升級 ${iLv}）面板 ${J(P)} 老闆 ${J(said1)} → ${J(r1)}；第 2–5 位 ${J(wins)} → 攤位細條 ${J(strip)} 老闆 ${J(saidSt)}；` +
+        `第 6 位輸 ${ended} ${J({ xp: e0.xp, runs: e0.runs, gain: e0.ent && e0.ent.gain })}（規格 ${spec.total}）；${errTx(page)}`);
+    } catch (e) { record(18, size, false, 'error ' + e.message); }
     await ctx.close();
   }
 }

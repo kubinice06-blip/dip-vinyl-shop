@@ -1186,6 +1186,12 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.level .hd.lvup{flex-wrap:wrap;row-gap:0;}
 .lb-sheet.level .hd.lvup h3{flex:1 1 100%;font-size:16px;letter-spacing:.04em;}
 .lb-sheet.level .hd.lvup .sub{margin-left:0;}
+/* 矮螢幕（≤600px 高）＋本派格（4 顆）：標題放大、聲望那行換到第二行＝標題列多 15px，四顆再收一點（間距 4、每顆 48，仍 ≥44），
+   不然 375×548 本派格說明兩行時面板要捲（e2e-fac F8 Lv20 吸血第二招：捲 299/292；main 是 290/290 剛好） */
+@media (max-height:600px){
+  .lb-sheet.level .lb-opts.n4{gap:4px;}
+  .lb-sheet.level .lb-opts.n4 .lb-lvl{min-height:48px;}
+}
 /* 攤位面板標題列底下的樂歷細條（一趟裡就看得到；I-3a 起搬到市集頂列）：一行字＋這一趟結束會到的等級＋進度條；跨一級＝金底閃、停 ≥3 秒、點了收 */
 .cx-live{display:flex;align-items:center;gap:6px;min-height:18px;margin:-2px 0 4px;font:11px/16px var(--zh);color:var(--gray2);}
 .cx-live .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}

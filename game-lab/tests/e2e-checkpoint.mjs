@@ -6,7 +6,7 @@
 //
 // 每個尺寸：
 //   1  中繼點開局：存檔塞 best.checkpoints [10, 12]（12 不是中繼點，載入時濾掉）→ 推門 →「從哪裡開始？」只列第 1、10 位 → 選第 10 位 →
-//      選秀「補到第 10 位：挑一張唱片 1/2」→ 第 1 題選完重新整理：還在選秀（第 2 題）→ 撿盤 2＋升級 4 題（標題 1/4…4/4）→ 特價箱 →
+//      選秀「補到第 10 位：挑一張唱片 1/2」→ 第 1 題選完重新整理：還在選秀（第 2 題）→ 撿盤 2＋升級 4 題（標題 1/4…4/4；每題三格固定 品味→底氣→聲望上限，第 I 波 SPEC-I §7.1）→ 特價箱 →
 //      第 10 位（傳說藏家）、等級 5、換王牌鈕在（點老闆）→ 打贏 → 寶箱 → 攤位沒有市集、錄音室（開局那一位不算中繼點攤位）→ 第 11 位輸 → 結算「這一趟從第 10 位開始」、runs 記 from 10
 //   2  新手保底：新帳號（沒有 runs）第 1 位輸 → 老闆「第一位不算，再來一次。」＋一顆「再來一次」（沒有說情選單、不扣說情）→ 重打；再輸＝照舊說情選單
 //   3  舊存檔（舊版頁面＝CP_OLD_REF，同一個網域 /oldlab/ 底下）：v7 停在舊的挑唱片面板 → 新版載入：升 v8、.bak7＝原字串、run 還在、照舊路（「都不要」）走完那一個獎勵 → 來客 → 開打；
@@ -126,11 +126,12 @@ async function runSize(browser, w, h) {
       await page.waitForSelector('.lb-sheet.st-draft [data-dpick]', { timeout: 12000 }).catch(() => {});
       await sleep(400);
       const d2 = await C(page, () => { const p = window.__lab.run && window.__lab.run.pending; return { type: p && p.type, ck: p && p.ck, h3: (document.querySelector('.lb-sheet.st-draft h3') || {}).textContent || '', top: (document.querySelector('#top .tt') || {}).textContent || '' }; });
-      const titles = [d2.h3];
+      const titles = [d2.h3], orders = [];
       for (let g = 0; g < 12; g++) {
         const s = await C(page, () => document.querySelector('.lb-sheet.st-draft [data-dpick]') ? 'card' : (document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming')) ? 'level' : null);
         if (!s) { if (await C(page, () => window.__lab.run.pending && window.__lab.run.pending.type === 'draft')) { await sleep(300); continue; } break; }
         if (s === 'level') titles.push(await C(page, () => document.querySelector('.lb-sheet.level h3').textContent));
+        if (s === 'level') orders.push(await C(page, () => [...document.querySelectorAll('.lb-sheet.level [data-lv]')].map(b => b.dataset.lv).join()));   // 第 I 波 SPEC-I §7.1：選秀的升級題也固定 品味→底氣→聲望上限
         await tapReady(page, s === 'card' ? '.lb-sheet.st-draft [data-dpick]' : '.lb-sheet.level [data-lv]');
         await sleep(700);
       }
@@ -162,11 +163,11 @@ async function runSize(browser, w, h) {
       const wantTitles = [fill(x.draftCard, { n: 10, i: 2, k: 2 })].concat([1, 2, 3, 4].map(i => fill(x.draftLevel, { n: 10, i, m: 4 })));
       const ok = JSON.stringify(cps) === '[10]' && okCp && cpTitle === x.cpTitle && JSON.stringify(opts) === JSON.stringify([['1', x.cpFirst], ['10', fill(x.cpAt, { n: 10 })]]) &&
         d1.type === 'draft' && d1.k === 2 && d1.m === 4 && d1.from === 10 && d1.h3 === fill(x.draftCard, { n: 10, i: 1, k: 2 }) &&
-        d2.type === 'draft' && d2.ck === 1 && JSON.stringify(titles) === JSON.stringify(wantTitles) &&
+        d2.type === 'draft' && d2.ck === 1 && JSON.stringify(titles) === JSON.stringify(wantTitles) && orders.length === 4 && orders.every(o => o === 'atk,def,hp') &&
         n10.pos === 10 && n10.from === 10 && n10.boss && n10.swap && swapBtn && found1 && !n10.safety && n10.bargain &&
         st.stall && st.p && !st.p.cp && !st.p.q.includes('market') && !(st.p.post || []).includes('market') && !(st.p.post || []).includes('studio') &&
         end && e.txt.indexOf(fill(x.cpFrom, { n: 10 })) >= 0 && e.from === 10 && e.lexp && e.lexp.base > 0;
-      record(1, size, ok && !errs(page).length, `checkpoints ${JSON.stringify(cps)}；「${cpTitle}」${JSON.stringify(opts)}；選秀 ${JSON.stringify(d1)}；重新整理 ${JSON.stringify(d2)}；題目 ${JSON.stringify(titles)}；` +
+      record(1, size, ok && !errs(page).length, `checkpoints ${JSON.stringify(cps)}；「${cpTitle}」${JSON.stringify(opts)}；選秀 ${JSON.stringify(d1)}；重新整理 ${JSON.stringify(d2)}；題目 ${JSON.stringify(titles)}；升級題順序 ${JSON.stringify(orders)}；` +
         `第 10 位 ${JSON.stringify(n10)} 撿的算撿來的 ${found1}、換王牌鈕 ${swapBtn}；之後攤位 cp ${st.p && st.p.cp} post ${JSON.stringify(st.p && st.p.post)}；結算 ${end} from ${e.from} lexp ${JSON.stringify(e.lexp)}；${errTxt(page)}`);
     } catch (e) { record(1, size, false, 'error ' + e.message); }
     await ctx.close();

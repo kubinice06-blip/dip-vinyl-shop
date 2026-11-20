@@ -21,7 +21,7 @@
 //   4  F4 第二招上限：
 //      a 經典＋吸血（聲望先扣到有空間）：整張那手回聲望（「吸血：回 n 聲望」）、累計回滿 2 之後再整張＝沒有吸血、facN.leech ≤ 2、view.fac.left.leech 0、本派說明「吸血這場還能回 0」
 //      b 冷門＋反傷：被剋三手 → 前兩手「反傷：他也扣 2」、他聲望各 −2；第 3 手 clash.fac 沒有 thorn、他聲望不動、facN.thorn 2；每手「被剋：多扣 1」；第一次那句是冷門那句
-//   3  F3 升到 Lv5（真的一趟、?fac=1、經典）：打贏 → 升級面板 4 格（最後一格 [data-lv=fac][data-id]、圖示「比」、名字、「本派」、一句、「不加屬性」、沒有 undefined／NaN、
+//   3  F3 升到 Lv5（真的一趟、?fac=1、經典）：打贏 → 升級面板 4 格（前三格固定 品味→底氣→聲望上限（第 I 波 SPEC-I §7.1）、最後一格 [data-lv=fac][data-id]、圖示「比」、名字、「本派」、一句、「不加屬性」、沒有 undefined／NaN、
 //      不捲、每格 ≥44）、老闆「這一級可以學一招本派的。」→ 點本派格：送 {type:'level', pick:'fac', id}、run.fac.picks[id] 1、品味／底氣／聲望上限都沒動、run.picks 最後 'fac:<id>'、
 //      吐司「本派・<名>」→ 我的狀態「本派：<名>」→ 重新整理還在
 //   6  F6 ?fac=1&apex=1：標題兩個章（>600px 高「頂點卡試做」＋「流派試做」並排不重疊；≤600px 只剩一顆「流派＋頂點卡試做」）、只開 ?fac=1 一顆「流派試做」、標題不捲；
@@ -30,7 +30,7 @@
 //      同一份存檔拿掉 run.fac（沒帶派別的 run）＝原本的能力、沒有換過那行
 //   7  F7 ?fac=1 開的 run 在沒旗標的頁面續玩（R-F9）：標題沒有「流派試做」、__lab.fac() false → 來客 → 開打：duel.p.fac 照樣有、頂欄「借」、
 //      剋他那手「借他的份量：扣他 n」（n＝clash.toE）；我的狀態「本派：反傷」；存回去 run.fac 還在
-//   8  F8 中繼點開局＋?fac=1：選秀每一題升級都只有三格（沒有 [data-lv=fac]、pending.offer 沒有 fac，含 Lv4→5 那題）、選秀送 {pick:'fac'} 被拒（'bad'）；
+//   8  F8 中繼點開局＋?fac=1：選秀每一題升級都只有三格、順序固定 品味→底氣→聲望上限（沒有 [data-lv=fac]、pending.offer 沒有 fac，含 Lv4→5 那題）、選秀送 {pick:'fac'} 被拒（'bad'）；
 //      到第 10 位後 Lv19 打贏 → Lv20 升級面板第 4 格本派照出
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, SEED, jsClick, tapAt, tapReady, waitScreen, noScroll, scrollOk, openTitle, seedRun,
@@ -544,6 +544,7 @@ async function runSize(browser, w, h) {
       else {
         if (L.level !== 5 || L.title.indexOf('5') < 0) w3.push(`升到 Lv${L.level}「${L.title}」`);
         if (L.n !== 4 || L.lv[3] !== 'fac:' + fid || L.fac.length !== 1 || !L.n4) w3.push(`格子 ${J(L.lv)} n4 ${L.n4}`);
+        if (J(L.lv.slice(0, 3)) !== '["atk","def","hp"]') w3.push(`前三格順序 ${J(L.lv)}（要 品味→底氣→聲望上限，第 I 波 SPEC-I §7.1）`);
         if (!L.offer || L.offer.length !== 4 || J(L.offer[3]) !== J({ pick: 'fac', id: fid }) || L.offer.slice(0, 3).some(o => o.pick === 'fac')) w3.push(`offer ${J(L.offer)}`);
         if (!P) w3.push(`本派格 id ${fid} 不是經典的`);
         else {
@@ -740,12 +741,14 @@ async function runSize(browser, w, h) {
       const L20 = await levelSheet(page);
       if (!lv.length) w8.push('選秀沒有升級題');
       if (lv.some(x => x.n !== 3 || x.lv.some(v => /^fac/.test(v)) || (x.offer && x.offer.includes('fac')))) w8.push(`選秀有本派格 ${J(lv)}`);
+      if (lv.some(x => J(x.lv) !== '["atk","def","hp"]' || J(x.offer) !== J(x.lv))) w8.push(`選秀升級順序 ${J(lv.map(x => x.lv))}（要每題 品味→底氣→聲望上限，第 I 波 SPEC-I §7.1）`);
       if (!lv.some(x => x.toLv === 5)) w8.push(`選秀沒有 Lv4→5 那題 ${J(lv.map(x => x.toLv))}`);
       if (lv.some(x => !x.fac)) w8.push('選秀時 run.fac 不在');
       if (!rej || rej.draft.ok !== false || rej.draft.error !== 'bad') w8.push(`選秀送 fac ${J(rej && rej.draft)}`);
       if (n10.pos !== 10 || n10.from !== 10 || !n10.fac || J(n10.fac.picks) !== '{}' || n10.picks.some(p => /^fac/.test(p))) w8.push(`第 10 位 ${J(n10)}`);
       if (!fought || !up || !L20) w8.push(`Lv20 升級面板沒出來（開打 ${fought}、面板 ${up}）`);
-      else if (L20.level !== 20 || L20.n !== 4 || !/^fac:/.test(L20.lv[3]) || J(L20.offer[3]) !== J({ pick: 'fac', id: L20.lv[3].slice(4) }) || L20.undef || L20.sh > L20.ch + 1) w8.push(`Lv20 面板 ${J(L20)}`);
+      else if (L20.level !== 20 || L20.n !== 4 || !/^fac:/.test(L20.lv[3]) || J(L20.offer[3]) !== J({ pick: 'fac', id: L20.lv[3].slice(4) }) || L20.undef || L20.sh > L20.ch + 1 ||
+        J(L20.lv.slice(0, 3)) !== '["atk","def","hp"]') w8.push(`Lv20 面板 ${J(L20)}`);
       record(8, size, !w8.length && !errs(page).length, `${w8.join('；') || 'ok'}；選秀升級 ${J(lv.map(x => ({ to: x.toLv, n: x.n, offer: x.offer })))}；拒 ${J(rej)}；第 10 位 ${J({ pos: n10.pos, level: n10.level })}；Lv20 ${J(L20 && { level: L20.level, lv: L20.lv, sh: [L20.sh, L20.ch] })}；${errTx(page)}`);
     } catch (e) { record(8, size, false, 'error ' + e.message); }
     await ctx.close();
