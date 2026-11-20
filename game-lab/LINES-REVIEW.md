@@ -4,8 +4,9 @@
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（45 句）；標成「店主」的字已與 `tools/owner-lines-v4.json`（DECISIONS-v4 店主寫／核可的字）逐字比對（71 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
+> 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 
-統計：原句 45、拍板 0、店主 71、新 1239（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1605（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1505,6 +1506,677 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Napalm Death《Scum》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[13]` |
 | Peter Brötzmann《Machine Gun》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[14]` |
 
+## 活店・小魚・打招呼（第一次見面，一輩子一次）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-hello-01 | 你也常來？我叫小魚。／我下課就來這裡報到。 | 本規格新寫 | `chat.xiaoyu-hello-01` |
+
+## 活店・小魚・這一趟第一次遇到
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-again-01 | 又遇到你了！今天也是下課就跑來。 | 本規格新寫 | `chat.xiaoyu-again-01` |
+| 小魚・xiaoyu-again-02 | 欸，是你！我剛好有事想問你。／……算了，我忘記要問什麼了。 | 本規格新寫 | `chat.xiaoyu-again-02` |
+| 小魚・xiaoyu-again-03 | 你來啦，我今天一進門就先衝試聽桌。 | 本規格新寫 | `chat.xiaoyu-again-03` |
+| 小魚・xiaoyu-again-04 | 嗨！我上完早八就來了，眼睛還沒醒。 | 本規格新寫 | `chat.xiaoyu-again-04` |
+| 小魚・xiaoyu-again-05 | 你也在！那我翻慢一點，等等找你講話。 | 本規格新寫 | `chat.xiaoyu-again-05` |
+| 小魚・xiaoyu-again-06 | 哈囉，今天沒課，我可以待久一點。 | 本規格新寫 | `chat.xiaoyu-again-06` |
+
+## 活店・小魚・閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-chat-01 | 我跟自己說今天只看不買，結果手上已經兩張了。 | 本規格新寫 | `chat.xiaoyu-chat-01` |
+| 小魚・xiaoyu-chat-02 | 我的唱盤是學長畢業留給我的，聲音小小的但很可愛。 | 本規格新寫 | `chat.xiaoyu-chat-02` |
+| 小魚・xiaoyu-chat-03 | 室友說黑膠很麻煩，可是放唱針那一下我好喜歡。 | 本規格新寫 | `chat.xiaoyu-chat-03` |
+| 小魚・xiaoyu-chat-04 | 打工的錢一半都花在這裡，我媽不知道。 | 本規格新寫 | `chat.xiaoyu-chat-04` |
+| 小魚・xiaoyu-chat-05 | 你第一次買黑膠是買哪一張？我好好奇。 | 本規格新寫 | `chat.xiaoyu-chat-05` |
+| 小魚・xiaoyu-chat-06 | 我宿舍桌上只放得下唱盤，書都堆到地上了。 | 本規格新寫 | `chat.xiaoyu-chat-06` |
+| 小魚・xiaoyu-chat-07 | 封面好看的我都會先拿起來，不管聽不聽得懂。 | 本規格新寫 | `chat.xiaoyu-chat-07` |
+| 小魚・xiaoyu-chat-08 | 聽黑膠要起來翻面，我覺得這樣反而比較專心。 | 本規格新寫 | `chat.xiaoyu-chat-08` |
+| 小魚・xiaoyu-chat-09 | 我最近愛上那種聽起來像夏天傍晚的歌。 | 本規格新寫 | `chat.xiaoyu-chat-09` |
+| 小魚・xiaoyu-chat-10 | 上課聽不下去的時候，我就在腦中排等等要翻哪幾箱。 | 本規格新寫 | `chat.xiaoyu-chat-10` |
+| 小魚・xiaoyu-chat-11 | 同學都用手機聽歌，只有我抱著唱片搭捷運。 | 本規格新寫 | `chat.xiaoyu-chat-11` |
+| 小魚・xiaoyu-chat-12 | 我還分不太出來好壞，只知道聽了會不會想哭。 | 本規格新寫 | `chat.xiaoyu-chat-12` |
+
+## 活店・小魚・挖寶
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-dig-01 | 翻到第三輪才看到想要的，那種最爽。 | 本規格新寫 | `chat.xiaoyu-dig-01` |
+| 小魚・xiaoyu-dig-02 | 我翻箱子好慢，因為每張封面都想看。 | 本規格新寫 | `chat.xiaoyu-dig-02` |
+| 小魚・xiaoyu-dig-03 | 剛剛翻到一張封面是貓的，差點就買了。 | 本規格新寫 | `chat.xiaoyu-dig-03` |
+| 小魚・xiaoyu-dig-04 | 每次翻到手指黑黑的，就覺得自己有認真挖。 | 本規格新寫 | `chat.xiaoyu-dig-04` |
+| 小魚・xiaoyu-dig-05 | 我有個習慣，每一箱都要翻到底才甘願。 | 本規格新寫 | `chat.xiaoyu-dig-05` |
+| 小魚・xiaoyu-dig-06 | 找到想要的那張時，我會先抱著它在店裡繞一圈。 | 本規格新寫 | `chat.xiaoyu-dig-06` |
+| 小魚・xiaoyu-dig-07 | 有時候翻到沒看過的，光看歌名就好想聽。 | 本規格新寫 | `chat.xiaoyu-dig-07` |
+| 小魚・xiaoyu-dig-08 | 挖到喜歡的我會先夾在手臂下，怕被別人拿走。 | 本規格新寫 | `chat.xiaoyu-dig-08` |
+
+## 活店・小魚・架上樣板（{album} 是他停的那箱架上某張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-shelf-01 | 這箱有張《{album}》，封面我盯好久了。 | 本規格新寫 | `chat.xiaoyu-shelf-01` |
+| 小魚・xiaoyu-shelf-02 | 你看過《{album}》嗎？我好想帶回家。 | 本規格新寫 | `chat.xiaoyu-shelf-02` |
+| 小魚・xiaoyu-shelf-03 | {artist}的《{album}》在這箱耶，我要先存錢。 | 本規格新寫 | `chat.xiaoyu-shelf-03` |
+| 小魚・xiaoyu-shelf-04 | 這張《{album}》我每次來都會拿起來看一下。 | 本規格新寫 | `chat.xiaoyu-shelf-04` |
+
+## 活店・小魚・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-trip-01・連贏 ≥3 | 你今天手好順，連贏幾個了？ | 本規格新寫 | `chat.xiaoyu-trip-01` |
+| 小魚・xiaoyu-trip-02・聲望剩一半以下 | 你臉色不太好，要不要先去試聽一張？ | 本規格新寫 | `chat.xiaoyu-trip-02` |
+| 小魚・xiaoyu-trip-03・第一趟 | 你剛開始打對吧？我也是剛開始玩黑膠，一起加油！ | 本規格新寫 | `chat.xiaoyu-trip-03` |
+| 小魚・xiaoyu-trip-04・王牌走經典流 | 你走{title}喔？好帥，我都還不知道自己是哪一派。 | 本規格新寫 | `chat.xiaoyu-trip-04` |
+| 小魚・xiaoyu-trip-05・包包 ≥10 張 | 你包包好鼓喔，裡面到底裝了幾張啊？ | 本規格新寫 | `chat.xiaoyu-trip-05` |
+| 小魚・xiaoyu-trip-06・這一趟破最遠紀錄 | 你今天打得比以前都遠耶，我在旁邊看得好緊張。 | 本規格新寫 | `chat.xiaoyu-trip-06` |
+
+## 活店・小魚・熟了以後
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-close-01 | 跟你聊過之後，我比較敢問老闆問題了。 | 本規格新寫 | `chat.xiaoyu-close-01` |
+| 小魚・xiaoyu-close-02 | 室友問我店裡有沒有認識的人，我說有一個。 | 本規格新寫 | `chat.xiaoyu-close-02` |
+| 小魚・xiaoyu-close-03 | 以後你挖到好聽的，也跟我說好不好？ | 本規格新寫 | `chat.xiaoyu-close-03` |
+
+## 活店・小魚・記得你上一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-mem-01 | 你上一趟停在第 {last} 位對吧？我有記住喔。 | 本規格新寫 | `chat.xiaoyu-mem-01` |
+| 小魚・xiaoyu-mem-02 | 你最遠打到第 {far} 位耶，我還跟同學炫耀過。 | 本規格新寫 | `chat.xiaoyu-mem-02` |
+| 小魚・xiaoyu-mem-03 | 上次跟你聊完，我回家把唱片全部重新排了一遍。 | 本規格新寫 | `chat.xiaoyu-mem-03` |
+
+## 活店・小魚・忙著翻（一次來聊滿三段）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 小魚・xiaoyu-busy-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 我再翻一下，等等聊。 | 本規格新寫 | `chat.xiaoyu-busy-01` |
+| 小魚・xiaoyu-busy-02 | 等我一下下，這張我還在猶豫！ | 本規格新寫 | `chat.xiaoyu-busy-02` |
+
+## 活店・阿凱・打招呼（第一次見面，一輩子一次）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-hello-01 | 阿凱。下班順路，進來看看而已。／……好啦，其實每天都順路。 | 本規格新寫 | `chat.akai-hello-01` |
+
+## 活店・阿凱・這一趟第一次遇到
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-again-01 | 喔，又是你。 | 本規格新寫 | `chat.akai-again-01` |
+| 阿凱・akai-again-02 | 你也在喔。我只是路過，翻一下就走。 | 本規格新寫 | `chat.akai-again-02` |
+| 阿凱・akai-again-03 | 又來？你比我還常來吧。 | 本規格新寫 | `chat.akai-again-03` |
+| 阿凱・akai-again-04 | 嗯。今天加班，晚了一點。 | 本規格新寫 | `chat.akai-again-04` |
+| 阿凱・akai-again-05 | 你比較早喔，我還以為我第一個到。 | 本規格新寫 | `chat.akai-again-05` |
+| 阿凱・akai-again-06 | 別看我，我今天沒有要買。 | 本規格新寫 | `chat.akai-again-06` |
+
+## 活店・阿凱・閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-chat-01 | 下班不想直接回家，先來這裡翻一輪。 | 本規格新寫 | `chat.akai-chat-01` |
+| 阿凱・akai-chat-02 | 主管今天又改需求，我需要很吵的東西洗耳朵。 | 本規格新寫 | `chat.akai-chat-02` |
+| 阿凱・akai-chat-03 | 我不是喜歡吵，是安靜的歌會讓我想太多。 | 本規格新寫 | `chat.akai-chat-03` |
+| 阿凱・akai-chat-04 | 同事問我平常聽什麼，我說隨便聽聽。 | 本規格新寫 | `chat.akai-chat-04` |
+| 阿凱・akai-chat-05 | 耳機戴一整天，回家還是想放唱片，很怪吧。 | 本規格新寫 | `chat.akai-chat-05` |
+| 阿凱・akai-chat-06 | 也沒有很愛啦，就是一個禮拜來五天而已。 | 本規格新寫 | `chat.akai-chat-06` |
+| 阿凱・akai-chat-07 | 我房間放不下了，現在只買真的很想要的。 | 本規格新寫 | `chat.akai-chat-07` |
+| 阿凱・akai-chat-08 | 週五晚上不用趕，翻到老闆開始看手錶我才走。 | 本規格新寫 | `chat.akai-chat-08` |
+| 阿凱・akai-chat-09 | 聽重的東西會累？不會，那是在放鬆。 | 本規格新寫 | `chat.akai-chat-09` |
+| 阿凱・akai-chat-10 | 我買唱片不聽別人推薦，自己踩雷比較甘心。 | 本規格新寫 | `chat.akai-chat-10` |
+| 阿凱・akai-chat-11 | 我搭捷運都在想下一張要買什麼，比想工作認真。 | 本規格新寫 | `chat.akai-chat-11` |
+| 阿凱・akai-chat-12 | 老闆那隻貓每次都瞪我，我又沒怎樣。 | 本規格新寫 | `chat.akai-chat-12` |
+
+## 活店・阿凱・挖寶
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-dig-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 上禮拜在這箱挖到一張，回家聽到睡著。／是好的那種睡著。 | 本規格新寫 | `chat.akai-dig-01` |
+| 阿凱・akai-dig-02 | 翻箱子會上癮，明明說好只翻一箱。 | 本規格新寫 | `chat.akai-dig-02` |
+| 阿凱・akai-dig-03 | 挖到一張想要的，整天的鳥事就算了。 | 本規格新寫 | `chat.akai-dig-03` |
+| 阿凱・akai-dig-04 | 我翻很快，封面閃過去一眼就知道要不要。 | 本規格新寫 | `chat.akai-dig-04` |
+| 阿凱・akai-dig-05 | 有一次翻到想很久的那張，我假裝很冷靜拿去結帳。 | 本規格新寫 | `chat.akai-dig-05` |
+| 阿凱・akai-dig-06 | 空手回家也沒差啦，翻的過程比較重要。／……騙你的，有差。 | 本規格新寫 | `chat.akai-dig-06` |
+| 阿凱・akai-dig-07 | 封面越醜的我越想拿起來看，通常都不會錯。 | 本規格新寫 | `chat.akai-dig-07` |
+| 阿凱・akai-dig-08 | 我都從最後面往前翻，別人翻過的我不信。 | 本規格新寫 | `chat.akai-dig-08` |
+
+## 活店・阿凱・架上樣板（{album} 是他停的那箱架上某張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-shelf-01 | 這箱那張《{album}》，我看了三次還沒買。 | 本規格新寫 | `chat.akai-shelf-01` |
+| 阿凱・akai-shelf-02 | 《{album}》？還好啦，我只是剛好拿起來。 | 本規格新寫 | `chat.akai-shelf-02` |
+| 阿凱・akai-shelf-03 | 誰把《{album}》塞在這箱最後面，想藏起來喔？ | 本規格新寫 | `chat.akai-shelf-03` |
+| 阿凱・akai-shelf-04 | 《{album}》你要嗎？不要我就拿走了。 | 本規格新寫 | `chat.akai-shelf-04` |
+
+## 活店・阿凱・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-trip-01・第 10 位以後 | 都打到第 {pos} 位了，算你有兩下。 | 本規格新寫 | `chat.akai-trip-01` |
+| 阿凱・akai-trip-02・聲望剩一半以下 | 你氣色很差欸。……我沒有在擔心，只是說說。 | 本規格新寫 | `chat.akai-trip-02` |
+| 阿凱・akai-trip-03・說情重打過 | 你這趟有拜託老闆再一場吧？我看到了，不會講出去。 | 本規格新寫 | `chat.akai-trip-03` |
+| 阿凱・akai-trip-04・連贏 ≥4 | 連贏那麼多喔。普通啦，換我也可以。 | 本規格新寫 | `chat.akai-trip-04` |
+| 阿凱・akai-trip-05・接了踢館帖 | 你這輪接了踢館帖？有種，我欣賞。 | 本規格新寫 | `chat.akai-trip-05` |
+| 阿凱・akai-trip-06・第 3 位以前 | 才第 {pos} 位而已，別緊張，手放輕鬆。 | 本規格新寫 | `chat.akai-trip-06` |
+
+## 活店・阿凱・熟了以後
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-close-01 | 老實說，你挑盤的眼光還不錯啦。 | 本規格新寫 | `chat.akai-close-01` |
+| 阿凱・akai-close-02 | 這間店是我下班唯一會想去的地方。／……不要跟老闆說。 | 本規格新寫 | `chat.akai-close-02` |
+| 阿凱・akai-close-03 | 下次你翻到吵的，留一張給我，我請你喝飲料。 | 本規格新寫 | `chat.akai-close-03` |
+
+## 活店・阿凱・記得你上一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-mem-01 | 上一趟你停在第 {last} 位，這次給我撐久一點。 | 本規格新寫 | `chat.akai-mem-01` |
+| 阿凱・akai-mem-02 | 你最遠到第 {far} 位喔，我記性好而已，別多想。 | 本規格新寫 | `chat.akai-mem-02` |
+| 阿凱・akai-mem-03 | 上次你走了之後，老闆一直在講你。／……我沒在聽。 | 本規格新寫 | `chat.akai-mem-03` |
+
+## 活店・阿凱・忙著翻（一次來聊滿三段）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿凱・akai-busy-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 等一下，我這箱還沒翻完。 | 本規格新寫 | `chat.akai-busy-01` |
+| 阿凱・akai-busy-02 | 現在不行，我在找東西。 | 本規格新寫 | `chat.akai-busy-02` |
+
+## 活店・大頭・打招呼（第一次見面，一輩子一次）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-hello-01 | 欸你好你好，我大頭，週末在酒吧放歌！／你也來挖寶齁？挖到好接的跟我說！ | 本規格新寫 | `chat.datou-hello-01` |
+
+## 活店・大頭・這一趟第一次遇到
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-again-01 | 欸你來了！剛好，我在找下一首要接的歌。 | 本規格新寫 | `chat.datou-again-01` |
+| 大頭・datou-again-02 | 又見面啦！我跟你說，昨天客人留到很晚都不走。 | 本規格新寫 | `chat.datou-again-02` |
+| 大頭・datou-again-03 | 嘿！你今天也來挖喔，搶不贏我啦。 | 本規格新寫 | `chat.datou-again-03` |
+| 大頭・datou-again-04 | 你來啦你來啦，我剛好想找人講話。 | 本規格新寫 | `chat.datou-again-04` |
+| 大頭・datou-again-05 | 欸欸，是你！我只有半小時，等等要去試音。 | 本規格新寫 | `chat.datou-again-05` |
+| 大頭・datou-again-06 | 喔喔，熟面孔！要不要比誰先翻到好貨？ | 本規格新寫 | `chat.datou-again-06` |
+
+## 活店・大頭・閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-chat-01 | 週末那場要放兩個小時，我還在湊歌單。 | 本規格新寫 | `chat.datou-chat-01` |
+| 大頭・datou-chat-02・停在 elec／hiphop／soul 才講 | 我在練接歌，這箱的鼓都很好接。 | 本規格新寫 | `chat.datou-chat-02` |
+| 大頭・datou-chat-03 | 上禮拜放到一半唱針跳掉，全場在看我，超尷尬。 | 本規格新寫 | `chat.datou-chat-03` |
+| 大頭・datou-chat-04 | 客人一跳起來，我就知道這首接對了。 | 本規格新寫 | `chat.datou-chat-04` |
+| 大頭・datou-chat-05 | 我手機記事本裡全是歌單，有幾百條。 | 本規格新寫 | `chat.datou-chat-05` |
+| 大頭・datou-chat-06 | 接歌最怕兩首速度差太多，硬接會很好笑。 | 本規格新寫 | `chat.datou-chat-06` |
+| 大頭・datou-chat-07 | 我在家練到半夜，樓下阿伯跑上來敲門。 | 本規格新寫 | `chat.datou-chat-07` |
+| 大頭・datou-chat-08 | 有時候最安靜的那首，反而讓全場停下來聽。 | 本規格新寫 | `chat.datou-chat-08` |
+| 大頭・datou-chat-09 | 酒吧老闆說我放的歌太冷門，可是客人都留下來啊。 | 本規格新寫 | `chat.datou-chat-09` |
+| 大頭・datou-chat-10 | 我耳朵現在聽什麼都在算拍子，職業病啦。 | 本規格新寫 | `chat.datou-chat-10` |
+| 大頭・datou-chat-11 | 老歌接新歌的時候，台下會有人突然大叫，超爽。 | 本規格新寫 | `chat.datou-chat-11` |
+| 大頭・datou-chat-12 | 平日翻唱片，週末放唱片，我的人生就這兩件事。 | 本規格新寫 | `chat.datou-chat-12` |
+
+## 活店・大頭・挖寶
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-dig-01 | 箱底常有好東西，就看你翻不翻得到。 | 本規格新寫 | `chat.datou-dig-01` |
+| 大頭・datou-dig-02 | 我翻箱一定戴耳機，聽著歌翻比較有手感。 | 本規格新寫 | `chat.datou-dig-02` |
+| 大頭・datou-dig-03 | 挖到一張別人都沒聽過的，放出來大家都跑來問我。 | 本規格新寫 | `chat.datou-dig-03` |
+| 大頭・datou-dig-04 | 有一次挖到一張，放第一首我就決定拿來開場。 | 本規格新寫 | `chat.datou-dig-04` |
+| 大頭・datou-dig-05 | 翻箱就是要快狠準，猶豫一下就被別人拿走了。 | 本規格新寫 | `chat.datou-dig-05` |
+| 大頭・datou-dig-06 | 我會一次抱五六張去試聽桌，老闆都翻白眼。 | 本規格新寫 | `chat.datou-dig-06` |
+| 大頭・datou-dig-07 | 今天翻了三箱，挖到兩張，賺了賺了。 | 本規格新寫 | `chat.datou-dig-07` |
+| 大頭・datou-dig-08 | 我最愛撿別人剛翻完的箱子，常有好貨被跳過。 | 本規格新寫 | `chat.datou-dig-08` |
+
+## 活店・大頭・架上樣板（{album} 是他停的那箱架上某張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-shelf-01 | 《{album}》這張，我在想排進歌單會不會太跳。 | 本規格新寫 | `chat.datou-shelf-01` |
+| 大頭・datou-shelf-02 | 欸這箱有《{album}》！先讓我卡位一下。 | 本規格新寫 | `chat.datou-shelf-02` |
+| 大頭・datou-shelf-03 | {artist}的《{album}》，你聽過嗎？我還沒。 | 本規格新寫 | `chat.datou-shelf-03` |
+| 大頭・datou-shelf-04 | 這張《{album}》封面好讚，我想拿回去裱起來。 | 本規格新寫 | `chat.datou-shelf-04` |
+
+## 活店・大頭・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-trip-01・連贏 ≥3 | 欸你連贏欸！今天手氣好旺，衝一波！ | 本規格新寫 | `chat.datou-trip-01` |
+| 大頭・datou-trip-02・聲望剩一半以下 | 欸你還好嗎？剛剛那場看得我都替你緊張。 | 本規格新寫 | `chat.datou-trip-02` |
+| 大頭・datou-trip-03・王牌走冷門流 | 原來你是{title}的，跟我放歌的路數一樣嘛！ | 本規格新寫 | `chat.datou-trip-03` |
+| 大頭・datou-trip-04・包包 ≥10 張 | 你包包裡那麼多張，借我幾張去放啦。 | 本規格新寫 | `chat.datou-trip-04` |
+| 大頭・datou-trip-05・這一趟破最遠紀錄 | 你破紀錄了吧？這要放首歌慶祝一下！ | 本規格新寫 | `chat.datou-trip-05` |
+| 大頭・datou-trip-06・第 20 位以後 | 第 {pos} 位了欸！你到底要打到哪裡？ | 本規格新寫 | `chat.datou-trip-06` |
+
+## 活店・大頭・熟了以後
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-close-01 | 下次來酒吧聽我放歌啊，我請你喝一杯。 | 本規格新寫 | `chat.datou-close-01` |
+| 大頭・datou-close-02 | 跟你聊完我都會冒出新的歌單點子，你是我的靈感啦。 | 本規格新寫 | `chat.datou-close-02` |
+| 大頭・datou-close-03 | 你是少數聽我講接歌不會恍神的人，感謝喔。 | 本規格新寫 | `chat.datou-close-03` |
+
+## 活店・大頭・記得你上一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-mem-01 | 上一趟你到第 {last} 位，這次衝更遠啦！ | 本規格新寫 | `chat.datou-mem-01` |
+| 大頭・datou-mem-02 | 你最遠到第 {far} 位對吧？我都記在手機裡。 | 本規格新寫 | `chat.datou-mem-02` |
+| 大頭・datou-mem-03 | 上次跟你講的那個接法，我週末真的用了，有效！ | 本規格新寫 | `chat.datou-mem-03` |
+
+## 活店・大頭・忙著翻（一次來聊滿三段）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 大頭・datou-busy-01 | 等我一下，我在想下一首接什麼。 | 本規格新寫 | `chat.datou-busy-01` |
+| 大頭・datou-busy-02・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 欸等等等，我快翻到了，給我十秒！ | 本規格新寫 | `chat.datou-busy-02` |
+
+## 活店・阿芳・打招呼（第一次見面，一輩子一次）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-hello-01 | 你好，我在附近開咖啡店，叫我阿芳就好。／我常來幫店裡找歌，以後應該常碰面。 | 本規格新寫 | `chat.afang-hello-01` |
+
+## 活店・阿芳・這一趟第一次遇到
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-again-01 | 哈囉，今天也來挖寶啊？我也是。 | 本規格新寫 | `chat.afang-again-01` |
+| 阿芳・afang-again-02 | 欸，是你！我剛好來補店裡的歌。 | 本規格新寫 | `chat.afang-again-02` |
+| 阿芳・afang-again-03 | 今天店裡公休，我打算在這耗一整天。 | 本規格新寫 | `chat.afang-again-03` |
+| 阿芳・afang-again-04 | 嗨，我只能待一下下，咖啡店只有工讀生在顧。 | 本規格新寫 | `chat.afang-again-04` |
+| 阿芳・afang-again-05 | 又見面了，最近咖啡店客人多，歌都不夠換。 | 本規格新寫 | `chat.afang-again-05` |
+| 阿芳・afang-again-06 | 你也在啊，我剛送完一批外帶就跑過來。 | 本規格新寫 | `chat.afang-again-06` |
+
+## 活店・阿芳・閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-chat-01 | 店裡要放的歌我都來這邊找，客人很挑。 | 本規格新寫 | `chat.afang-chat-01` |
+| 阿芳・afang-chat-02 | 早上開店放輕快的，下午就換慢一點的。 | 本規格新寫 | `chat.afang-chat-02` |
+| 阿芳・afang-chat-03 | 上次有客人喝完咖啡跑來問歌名。／我開心到多送他一塊蛋糕。 | 本規格新寫 | `chat.afang-chat-03` |
+| 阿芳・afang-chat-04 | 磨豆機一開，什麼歌都聽不到，好氣。 | 本規格新寫 | `chat.afang-chat-04` |
+| 阿芳・afang-chat-05 | 下雨天咖啡店人少，我就偷放自己想聽的。 | 本規格新寫 | `chat.afang-chat-05` |
+| 阿芳・afang-chat-06 | 我店裡那台唱盤是二手的，轉起來有點喘。 | 本規格新寫 | `chat.afang-chat-06` |
+| 阿芳・afang-chat-07 | 有客人坐一整個下午，就為了聽完一整面。 | 本規格新寫 | `chat.afang-chat-07` |
+| 阿芳・afang-chat-08・停在 citypop 才講 | 這箱的人聲都軟軟的，好適合店裡的下午。 | 本規格新寫 | `chat.afang-chat-08` |
+| 阿芳・afang-chat-09・停在 world 才講 | 這區的節奏好特別，客人聽了會跟著點頭。 | 本規格新寫 | `chat.afang-chat-09` |
+| 阿芳・afang-chat-10 | 聽不懂歌詞的歌放店裡剛好，不會吵到人聊天。 | 本規格新寫 | `chat.afang-chat-10` |
+| 阿芳・afang-chat-11 | 我家那位說，我買唱片比買咖啡豆還兇。 | 本規格新寫 | `chat.afang-chat-11` |
+| 阿芳・afang-chat-12 | 關店後一個人擦杯子聽歌，是一天最爽的時候。 | 本規格新寫 | `chat.afang-chat-12` |
+
+## 活店・阿芳・挖寶
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-dig-01 | 找到一張適合下午放的，心情就好一整天。 | 本規格新寫 | `chat.afang-dig-01` |
+| 阿芳・afang-dig-02 | 封面好看的我都先抽出來，再一張一張試聽。 | 本規格新寫 | `chat.afang-dig-02` |
+| 阿芳・afang-dig-03 | 我翻得很慢，一邊翻一邊想放在店裡會怎樣。 | 本規格新寫 | `chat.afang-dig-03` |
+| 阿芳・afang-dig-04 | 翻到一張，馬上就想到我店裡哪個熟客會喜歡。 | 本規格新寫 | `chat.afang-dig-04` |
+| 阿芳・afang-dig-05 | 有些封面上的字一個都看不懂，反而更想聽。 | 本規格新寫 | `chat.afang-dig-05` |
+| 阿芳・afang-dig-06 | 挖到好東西不能叫太大聲。／被旁邊的人聽到，就換他先拿走了。 | 本規格新寫 | `chat.afang-dig-06` |
+| 阿芳・afang-dig-07 | 翻到手指都黑了，回去洗杯子前要先洗手。 | 本規格新寫 | `chat.afang-dig-07` |
+| 阿芳・afang-dig-08・停在 listen 才講 | 在試聽機前多站一下，才知道放店裡合不合。 | 本規格新寫 | `chat.afang-dig-08` |
+
+## 活店・阿芳・架上樣板（{album} 是他停的那箱架上某張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-shelf-01 | 這箱那張《{album}》，放在店裡應該很搭。 | 本規格新寫 | `chat.afang-shelf-01` |
+| 阿芳・afang-shelf-02 | 《{album}》我想買回去，早上開店的時候放。 | 本規格新寫 | `chat.afang-shelf-02` |
+| 阿芳・afang-shelf-03 | 這箱有張{artist}的，我想先拿去試聽看看。 | 本規格新寫 | `chat.afang-shelf-03` |
+| 阿芳・afang-shelf-04 | 《{album}》的封面好漂亮，好想裱起來掛在店裡。 | 本規格新寫 | `chat.afang-shelf-04` |
+
+## 活店・阿芳・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-trip-01・王牌走冷門流 | 你也走{title}的路子？難怪會翻這種箱。 | 本規格新寫 | `chat.afang-trip-01` |
+| 阿芳・afang-trip-02・聲望剩一半以下 | 你看起來好累，我包包裡有糖，分你一顆。 | 本規格新寫 | `chat.afang-trip-02` |
+| 阿芳・afang-trip-03・連贏 ≥3 | 連贏好幾個了耶，我在旁邊看得手心都是汗。 | 本規格新寫 | `chat.afang-trip-03` |
+| 阿芳・afang-trip-04・包包 ≥8 張 | 你包包也太滿了吧，跟我店裡的豆子櫃一樣。 | 本規格新寫 | `chat.afang-trip-04` |
+| 阿芳・afang-trip-05・第一趟 | 你是新來的吧？別緊張，這間店又不會跑掉。 | 本規格新寫 | `chat.afang-trip-05` |
+| 阿芳・afang-trip-06・這一趟破最遠紀錄 | 你今天走得比上次還遠耶，回去要跟客人講。 | 本規格新寫 | `chat.afang-trip-06` |
+
+## 活店・阿芳・熟了以後
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-close-01 | 有空來店裡坐，咖啡算我的。 | 本規格新寫 | `chat.afang-close-01` |
+| 阿芳・afang-close-02 | 上次看你拿的那張，我後來也買回店裡放了。 | 本規格新寫 | `chat.afang-close-02` |
+| 阿芳・afang-close-03 | 哪天你挑一張來店裡放，我想聽聽你的口味。 | 本規格新寫 | `chat.afang-close-03` |
+
+## 活店・阿芳・記得你上一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-mem-01 | 你上一趟走到第 {last} 位，我還跟客人說過呢。 | 本規格新寫 | `chat.afang-mem-01` |
+| 阿芳・afang-mem-02 | 我在點單本背面記著，你最遠到過第 {far} 位。 | 本規格新寫 | `chat.afang-mem-02` |
+| 阿芳・afang-mem-03 | 上次看你打到第 {last} 位，回店裡拉花都拉歪了。 | 本規格新寫 | `chat.afang-mem-03` |
+
+## 活店・阿芳・忙著翻（一次來聊滿三段）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 阿芳・afang-busy-01 | 我先挑完這幾張，等等再聊。 | 本規格新寫 | `chat.afang-busy-01` |
+| 阿芳・afang-busy-02 | 等我一下，我在想這張放店裡會不會太吵。 | 本規格新寫 | `chat.afang-busy-02` |
+
+## 活店・老陳・打招呼（第一次見面，一輩子一次）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-hello-01 | 這位同學，第一次見面，我姓陳。／以前教書的，叫我老陳就好。 | 本規格新寫 | `chat.laochen-hello-01` |
+
+## 活店・老陳・這一趟第一次遇到
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-again-01 | 你也來啦，我才剛到，箱子都還沒碰。 | 本規格新寫 | `chat.laochen-again-01` |
+| 老陳・laochen-again-02 | 又遇到你了，同學今天精神不錯喔。 | 本規格新寫 | `chat.laochen-again-02` |
+| 老陳・laochen-again-03 | 呵呵，我們還真有緣，又碰到了。 | 本規格新寫 | `chat.laochen-again-03` |
+| 老陳・laochen-again-04 | 來啦？我今天腰比較不痠，可以多翻幾箱。 | 本規格新寫 | `chat.laochen-again-04` |
+| 老陳・laochen-again-05 | 你來得正好，我剛翻到一張找了好久的。 | 本規格新寫 | `chat.laochen-again-05` |
+| 老陳・laochen-again-06 | 又見面了。今天我太太准我買兩張。 | 本規格新寫 | `chat.laochen-again-06` |
+
+## 活店・老陳・閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-chat-01 | 年輕時買不起，現在買得起了，耳朵也老了。 | 本規格新寫 | `chat.laochen-chat-01` |
+| 老陳・laochen-chat-02 | 以前教書，下課鐘一響就想往唱片行跑。 | 本規格新寫 | `chat.laochen-chat-02` |
+| 老陳・laochen-chat-03 | 我太太說，家裡的牆快被唱片吃掉了。 | 本規格新寫 | `chat.laochen-chat-03` |
+| 老陳・laochen-chat-04 | 晚上泡一壺茶，聽一面就好，不貪心。 | 本規格新寫 | `chat.laochen-chat-04` |
+| 老陳・laochen-chat-05 | 老花眼看封底的小字，要拿得好遠才看得到。 | 本規格新寫 | `chat.laochen-chat-05` |
+| 老陳・laochen-chat-06 | 以前學生畢業送我一張唱片，到現在還捨不得拆。 | 本規格新寫 | `chat.laochen-chat-06` |
+| 老陳・laochen-chat-07 | 有些歌年輕時聽不懂，現在一聽就鼻酸。 | 本規格新寫 | `chat.laochen-chat-07` |
+| 老陳・laochen-chat-08 | 退休以後時間多了，就是錢少了，呵呵。 | 本規格新寫 | `chat.laochen-chat-08` |
+| 老陳・laochen-chat-09 | 我家那台唱盤跟了我很久，到現在還很勇。 | 本規格新寫 | `chat.laochen-chat-09` |
+| 老陳・laochen-chat-10 | 以前守著收音機等那首歌，現在終於買到唱片了。 | 本規格新寫 | `chat.laochen-chat-10` |
+| 老陳・laochen-chat-11・停在 classical 才講 | 這箱的弦樂，晚上關了燈聽最有味道。 | 本規格新寫 | `chat.laochen-chat-11` |
+| 老陳・laochen-chat-12・停在 soul 才講 | 這箱的和聲一疊上來，我的腳就跟著打拍子。 | 本規格新寫 | `chat.laochen-chat-12` |
+
+## 活店・老陳・挖寶
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-dig-01 | 翻箱子跟釣魚一樣，急不來的。 | 本規格新寫 | `chat.laochen-dig-01` |
+| 老陳・laochen-dig-02 | 翻久了腰會痠，翻完一箱就伸個懶腰。 | 本規格新寫 | `chat.laochen-dig-02` |
+| 老陳・laochen-dig-03 | 以前想要的那張，有時翻著翻著就冒出來了。 | 本規格新寫 | `chat.laochen-dig-03` |
+| 老陳・laochen-dig-04 | 我口袋裡有張清單，找了好久還劃不掉幾個。 | 本規格新寫 | `chat.laochen-dig-04` |
+| 老陳・laochen-dig-05 | 翻到一半眼鏡一直滑下來，推了又推。 | 本規格新寫 | `chat.laochen-dig-05` |
+| 老陳・laochen-dig-06 | 每次翻到想要的，都想跟年輕的自己說一聲。 | 本規格新寫 | `chat.laochen-dig-06` |
+| 老陳・laochen-dig-07 | 一箱翻完再從頭翻一次，常常第二次才看到。 | 本規格新寫 | `chat.laochen-dig-07` |
+| 老陳・laochen-dig-08・停在 listen 才講 | 在試聽機前站一下，腳就捨不得走了。 | 本規格新寫 | `chat.laochen-dig-08` |
+
+## 活店・老陳・架上樣板（{album} 是他停的那箱架上某張）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-shelf-01 | 這箱有張《{album}》，我看看清單上有沒有。 | 本規格新寫 | `chat.laochen-shelf-01` |
+| 老陳・laochen-shelf-02 | 《{album}》這張，我得回家查查是不是買過了。 | 本規格新寫 | `chat.laochen-shelf-02` |
+| 老陳・laochen-shelf-03 | {artist}的唱片我太太也愛聽，帶一張回去好了。 | 本規格新寫 | `chat.laochen-shelf-03` |
+| 老陳・laochen-shelf-04 | 《{album}》先放著，翻完一輪還在就帶走。 | 本規格新寫 | `chat.laochen-shelf-04` |
+
+## 活店・老陳・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-trip-01・說情重打過 | 說情過啦？我當學生時也補考過，呵呵。 | 本規格新寫 | `chat.laochen-trip-01` |
+| 老陳・laochen-trip-02・聲望剩一半以下 | 看你有點累，先坐一下，不急。 | 本規格新寫 | `chat.laochen-trip-02` |
+| 老陳・laochen-trip-03・連贏 ≥3 | 連贏好幾場，同學手氣正旺啊。 | 本規格新寫 | `chat.laochen-trip-03` |
+| 老陳・laochen-trip-04・第 20 位以後 | 第 {pos} 位了？我年輕時可沒這種膽量。 | 本規格新寫 | `chat.laochen-trip-04` |
+| 老陳・laochen-trip-05・接了踢館帖 | 接了踢館帖啊？這一輪我陪你一起緊張。 | 本規格新寫 | `chat.laochen-trip-05` |
+| 老陳・laochen-trip-06・這一趟破最遠紀錄 | 比上一趟走得還遠了，穩穩走，別急。 | 本規格新寫 | `chat.laochen-trip-06` |
+
+## 活店・老陳・熟了以後
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-close-01 | 跟你聊天，好像回到以前教書的時候。 | 本規格新寫 | `chat.laochen-close-01` |
+| 老陳・laochen-close-02 | 我那張清單，你看到哪張就幫我留意一下。 | 本規格新寫 | `chat.laochen-close-02` |
+| 老陳・laochen-close-03 | 哪天來我家聽唱片，我太太泡的茶很好喝。 | 本規格新寫 | `chat.laochen-close-03` |
+
+## 活店・老陳・記得你上一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-mem-01 | 第 {last} 位，是你上一趟停下來的地方吧？這次穩一點。 | 本規格新寫 | `chat.laochen-mem-01` |
+| 老陳・laochen-mem-02 | 你最遠走到第 {far} 位吧？老師記性還不錯。 | 本規格新寫 | `chat.laochen-mem-02` |
+| 老陳・laochen-mem-03 | 上一趟第 {last} 位，以前我會在考卷上寫：可再加油。 | 本規格新寫 | `chat.laochen-mem-03` |
+
+## 活店・老陳・忙著翻（一次來聊滿三段）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老陳・laochen-busy-01 | 讓我先看完這幾張，老人家手腳慢。 | 本規格新寫 | `chat.laochen-busy-01` |
+| 老陳・laochen-busy-02 | 同學稍等，老人家一次只能專心一件事。 | 本規格新寫 | `chat.laochen-busy-02` |
+
+## 活店・周姐・打招呼（第一次見面，一輩子一次）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-hello-01 | 新面孔？我跟你們老闆認識很久了。／叫我周姐，以前我們在同一間店上班。 | 本規格新寫 | `chat.zhoujie-hello-01` |
+
+## 活店・周姐・這一趟第一次遇到
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-again-01 | 來啦，今天想聽點什麼？ | 本規格新寫 | `chat.zhoujie-again-01` |
+| 周姐・zhoujie-again-02 | 又是你。你們老闆最近有沒有偷懶？ | 本規格新寫 | `chat.zhoujie-again-02` |
+| 周姐・zhoujie-again-03 | 我剛跟老闆喝完茶，換你陪我翻。 | 本規格新寫 | `chat.zhoujie-again-03` |
+| 周姐・zhoujie-again-04 | 唷，你也在。這幾箱我先幫你看過一輪了。 | 本規格新寫 | `chat.zhoujie-again-04` |
+| 周姐・zhoujie-again-05 | 來得正好，我剛好想找個人說說話。 | 本規格新寫 | `chat.zhoujie-again-05` |
+| 周姐・zhoujie-again-06 | 嗨，今天手氣如何？我先說，我的不錯。 | 本規格新寫 | `chat.zhoujie-again-06` |
+
+## 活店・周姐・閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-chat-01 | 年輕人，翻慢一點，好盤會等你。 | 本規格新寫 | `chat.zhoujie-chat-01` |
+| 周姐・zhoujie-chat-02 | 以前顧櫃檯，客人哼兩句我就知道要哪張。 | 本規格新寫 | `chat.zhoujie-chat-02` |
+| 周姐・zhoujie-chat-03 | 你們老闆年輕時，比你還會殺價。 | 本規格新寫 | `chat.zhoujie-chat-03` |
+| 周姐・zhoujie-chat-04 | 顧店那幾年，最怕客人說隨便推薦一張。 | 本規格新寫 | `chat.zhoujie-chat-04` |
+| 周姐・zhoujie-chat-05 | 唱片行好玩的地方，是每天都有人帶故事進來。 | 本規格新寫 | `chat.zhoujie-chat-05` |
+| 周姐・zhoujie-chat-06 | 現在不顧店了，換我當客人，輕鬆多了。 | 本規格新寫 | `chat.zhoujie-chat-06` |
+| 周姐・zhoujie-chat-07 | 看到有人整隻手按在封面上，我還是會皺眉。 | 本規格新寫 | `chat.zhoujie-chat-07` |
+| 周姐・zhoujie-chat-08 | 我推過的唱片，有人回來罵，也有人回來道謝。 | 本規格新寫 | `chat.zhoujie-chat-08` |
+
+## 活店・周姐・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-trip-01・連贏 ≥3 | 今天打得不錯，看得出來有在聽。 | 本規格新寫 | `chat.zhoujie-trip-01` |
+| 周姐・zhoujie-trip-02・王牌走異端流 | 走{title}的啊？我年輕時也愛跟人唱反調。 | 本規格新寫 | `chat.zhoujie-trip-02` |
+| 周姐・zhoujie-trip-03・說情重打過 | 輸一場不算什麼，我顧店時也常被客人考倒。 | 本規格新寫 | `chat.zhoujie-trip-03` |
+
+## 活店・周姐・熟了以後
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-close-01 | 跟你聊天，比跟你們老闆聊有意思。 | 本規格新寫 | `chat.zhoujie-close-01` |
+| 周姐・zhoujie-close-02 | 下次有好東西進來，我叫老闆先留給你看。 | 本規格新寫 | `chat.zhoujie-close-02` |
+| 周姐・zhoujie-close-03 | 你這樣翻下去，哪天換你來教我。 | 本規格新寫 | `chat.zhoujie-close-03` |
+
+## 活店・周姐・記得你上一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-mem-01 | 上一趟你走到第 {last} 位，老闆跟我說了。 | 本規格新寫 | `chat.zhoujie-mem-01` |
+| 周姐・zhoujie-mem-02 | 最遠到過第 {far} 位？那我得重新看你一眼。 | 本規格新寫 | `chat.zhoujie-mem-02` |
+| 周姐・zhoujie-mem-03 | 上次停在第 {last} 位，這次別急，一位一位來。 | 本規格新寫 | `chat.zhoujie-mem-03` |
+
+## 活店・周姐・忙著翻（一次來聊滿三段）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-busy-01・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 這箱我還沒看完，你先去翻別的。 | 本規格新寫 | `chat.zhoujie-busy-01` |
+| 周姐・zhoujie-busy-02 | 等一下，這張我得看仔細。 | 本規格新寫 | `chat.zhoujie-busy-02` |
+
+## 活店・周姐・知識引子（接藝人介紹摘句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-loreIn-01 | {artist}啊，我記得介紹上寫： | 本規格新寫 | `chat.zhoujie-loreIn-01` |
+| 周姐・zhoujie-loreIn-02 | 說到{artist}，介紹裡有一句我很喜歡： | 本規格新寫 | `chat.zhoujie-loreIn-02` |
+| 周姐・zhoujie-loreIn-03 | {artist}啊，我照介紹念給你聽： | 本規格新寫 | `chat.zhoujie-loreIn-03` |
+| 周姐・zhoujie-loreIn-04 | 我不亂講，介紹上是這樣寫{artist}的： | 本規格新寫 | `chat.zhoujie-loreIn-04` |
+| 周姐・zhoujie-loreIn-05 | 這張是{artist}的。介紹上有一段： | 本規格新寫 | `chat.zhoujie-loreIn-05` |
+| 周姐・zhoujie-loreIn-06 | {artist}的事我不憑印象講，照介紹來： | 本規格新寫 | `chat.zhoujie-loreIn-06` |
+| 周姐・zhoujie-loreIn-07 | {artist}？等我想想，介紹上寫過： | 本規格新寫 | `chat.zhoujie-loreIn-07` |
+| 周姐・zhoujie-loreIn-08 | 跟你講個{artist}的事，介紹上看來的： | 本規格新寫 | `chat.zhoujie-loreIn-08` |
+| 周姐・zhoujie-loreIn-09 | 《{album}》是{artist}的，介紹裡提到： | 本規格新寫 | `chat.zhoujie-loreIn-09` |
+| 周姐・zhoujie-loreIn-10 | {artist}這名字你記一下，介紹上說： | 本規格新寫 | `chat.zhoujie-loreIn-10` |
+
+## 活店・周姐・知識收尾
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-loreOut-01 | 想知道更多，點封面看唱片資訊。 | 本規格新寫 | `chat.zhoujie-loreOut-01` |
+| 周姐・zhoujie-loreOut-02 | 我就記得這些，其他的你自己聽。 | 本規格新寫 | `chat.zhoujie-loreOut-02` |
+| 周姐・zhoujie-loreOut-03 | 好了，講太多就不好玩了，自己去聽吧。 | 本規格新寫 | `chat.zhoujie-loreOut-03` |
+| 周姐・zhoujie-loreOut-04 | 聽完再來跟我說，你覺得怎樣。 | 本規格新寫 | `chat.zhoujie-loreOut-04` |
+| 周姐・zhoujie-loreOut-05 | 其他的你自己去翻，比我講的有趣。 | 本規格新寫 | `chat.zhoujie-loreOut-05` |
+| 周姐・zhoujie-loreOut-06 | 差不多就這樣，剩下的交給你的耳朵。 | 本規格新寫 | `chat.zhoujie-loreOut-06` |
+| 周姐・zhoujie-loreOut-07 | 記不住沒關係，點封面都查得到。 | 本規格新寫 | `chat.zhoujie-loreOut-07` |
+| 周姐・zhoujie-loreOut-08 | 我就講到這，喜不喜歡你自己決定。 | 本規格新寫 | `chat.zhoujie-loreOut-08` |
+
+## 活店・周姐・知識樣板（{x} 照卡片欄位填，填不出來那句不出）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 周姐・zhoujie-fact-01 | 《{album}》是{year}年發行的。 | 本規格新寫 | `chat.zhoujie-fact-01` |
+| 周姐・zhoujie-fact-02 | {artist}這張是{decade}年代發行的。 | 本規格新寫 | `chat.zhoujie-fact-02` |
+| 周姐・zhoujie-fact-03 | {artist}這張曲風標{genre}，不過你自己聽了算。 | 本規格新寫 | `chat.zhoujie-fact-03` |
+| 周姐・zhoujie-fact-04 | 這張是{region}的唱片，翻到我都會多看一眼。 | 本規格新寫 | `chat.zhoujie-fact-04` |
+| 周姐・zhoujie-fact-05 | 我看這張標{tune}，挑對心情再放。 | 本規格新寫 | `chat.zhoujie-fact-05` |
+| 周姐・zhoujie-fact-06 | 照店裡的分法，《{album}》偏{axis}。 | 本規格新寫 | `chat.zhoujie-fact-06` |
+| 周姐・zhoujie-fact-07・冷門 ≥4 | {artist}這張，知道的人不多。 | 本規格新寫 | `chat.zhoujie-fact-07` |
+| 周姐・zhoujie-fact-08・冷門 ≥4 | 《{album}》是少人知道的那種，遇到就是緣分。 | 本規格新寫 | `chat.zhoujie-fact-08` |
+| 周姐・zhoujie-fact-09・冷門 ≤2 | {artist}這張不少人知道，翻到不稀奇。 | 本規格新寫 | `chat.zhoujie-fact-09` |
+| 周姐・zhoujie-fact-10・硬蕊 ≥4 | 《{album}》入耳有點門檻，要慢慢聽。 | 本規格新寫 | `chat.zhoujie-fact-10` |
+| 周姐・zhoujie-fact-11・硬蕊 ≥4 | {artist}這張不好入耳，多給它幾次機會。 | 本規格新寫 | `chat.zhoujie-fact-11` |
+| 周姐・zhoujie-fact-12・硬蕊 ≤2 | 《{album}》很好入耳，什麼時候放都行。 | 本規格新寫 | `chat.zhoujie-fact-12` |
+| 周姐・zhoujie-fact-13・經典 ≥4 | {artist}這張，在它那一圈算經典。 | 本規格新寫 | `chat.zhoujie-fact-13` |
+| 周姐・zhoujie-fact-14・經典 ≥4 | 想認識{artist}，先從《{album}》這種經典聽起。 | 本規格新寫 | `chat.zhoujie-fact-14` |
+| 周姐・zhoujie-fact-15・冷門 ≥4、硬蕊 ≥4 | 《{album}》又少人知道又不好入耳，敢聽算你有種。 | 本規格新寫 | `chat.zhoujie-fact-15` |
+| 周姐・zhoujie-fact-16・那張在架上 | 那張就在{bin}那箱，自己去聽聽。 | 本規格新寫 | `chat.zhoujie-fact-16` |
+| 周姐・zhoujie-fact-17・那張在架上 | 《{album}》就插在{bin}那箱，被買走就沒了。 | 本規格新寫 | `chat.zhoujie-fact-17` |
+| 周姐・zhoujie-fact-18・那張在架上 | 《{album}》還在{bin}那箱，想聽就去翻。 | 本規格新寫 | `chat.zhoujie-fact-18` |
+| 周姐・zhoujie-fact-19・那張在架上 | {artist}這張就在{bin}那箱，點封面就能試聽。 | 本規格新寫 | `chat.zhoujie-fact-19` |
+| 周姐・zhoujie-fact-20 | 算算日子，{artist}出這張是{year}年的事。 | 本規格新寫 | `chat.zhoujie-fact-20` |
+
+## 活店・路人（四套外觀共用一個環；隨口、找唱片、對店）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 路人・passer-chat-01 | 本來只是進來躲雨的。 | 本規格新寫 | `chat.passer-chat-01` |
+| 路人・passer-chat-02 | 這裡好安靜，跟外面像兩個世界。 | 本規格新寫 | `chat.passer-chat-02` |
+| 路人・passer-chat-03 | 我只是看看，不用招呼我。 | 本規格新寫 | `chat.passer-chat-03` |
+| 路人・passer-chat-04 | 原來現在還有人在買黑膠。 | 本規格新寫 | `chat.passer-chat-04` |
+| 路人・passer-chat-05 | 這裡的味道好像我小時候的家。 | 本規格新寫 | `chat.passer-chat-05` |
+| 路人・passer-chat-06 | 逛累了，進來休息一下。 | 本規格新寫 | `chat.passer-chat-06` |
+| 路人・passer-chat-07 | 封面都好漂亮，可以拿起來看嗎？ | 本規格新寫 | `chat.passer-chat-07` |
+| 路人・passer-chat-08 | 等人等太久，乾脆進來逛逛。 | 本規格新寫 | `chat.passer-chat-08` |
+| 路人・passer-chat-09 | 我看不太懂，但覺得很厲害。 | 本規格新寫 | `chat.passer-chat-09` |
+| 路人・passer-chat-10 | 下雨天逛唱片行，好有感覺。 | 本規格新寫 | `chat.passer-chat-10` |
+| 路人・passer-chat-11 | 我家也有一台唱盤，好久沒開了。 | 本規格新寫 | `chat.passer-chat-11` |
+| 路人・passer-chat-12 | 下次帶朋友來，他一定會瘋掉。 | 本規格新寫 | `chat.passer-chat-12` |
+| 路人・passer-chat-13 | 幫朋友找一張，名字忘了。 | 本規格新寫 | `chat.passer-chat-13` |
+| 路人・passer-chat-14 | 有沒有適合送人的？我不太懂。 | 本規格新寫 | `chat.passer-chat-14` |
+| 路人・passer-chat-15 | 我在找小時候家裡常放的那張。 | 本規格新寫 | `chat.passer-chat-15` |
+| 路人・passer-chat-16 | 想找一張下雨天聽的。 | 本規格新寫 | `chat.passer-chat-16` |
+| 路人・passer-chat-17 | 有首歌我只會哼，不知道叫什麼。 | 本規格新寫 | `chat.passer-chat-17` |
+| 路人・passer-chat-18 | 想找一張讀書時可以放的。 | 本規格新寫 | `chat.passer-chat-18` |
+| 路人・passer-chat-19 | 我要找封面是藍色的，就這樣。 | 本規格新寫 | `chat.passer-chat-19` |
+| 路人・passer-chat-20 | 聽說這裡挖得到別的地方沒有的。 | 本規格新寫 | `chat.passer-chat-20` |
+| 路人・passer-chat-21 | 想找一張送爸爸當生日禮物。 | 本規格新寫 | `chat.passer-chat-21` |
+| 路人・passer-chat-22 | 請問這種要從哪一箱開始翻？ | 本規格新寫 | `chat.passer-chat-22` |
+| 路人・passer-chat-23 | 這間店好難找，繞了兩圈。 | 本規格新寫 | `chat.passer-chat-23` |
+| 路人・passer-chat-24 | 那隻貓是店貓嗎？好可愛。 | 本規格新寫 | `chat.passer-chat-24` |
+| 路人・passer-chat-25 | 這裡的老闆好像不太講話。 | 本規格新寫 | `chat.passer-chat-25` |
+| 路人・passer-chat-26 | 店好小，東西好多。 | 本規格新寫 | `chat.passer-chat-26` |
+| 路人・passer-chat-27 | 這門好重，我還以為沒開。 | 本規格新寫 | `chat.passer-chat-27` |
+| 路人・passer-chat-28 | 在這裡講話都會不自覺小聲。 | 本規格新寫 | `chat.passer-chat-28` |
+| 路人・passer-chat-29 | 我經過好幾次，今天終於進來了。 | 本規格新寫 | `chat.passer-chat-29` |
+| 路人・passer-chat-30・停在 rock／soul／citypop／world／elec／hiphop／classical／folk 才講 | 這邊的箱子是照什麼排的啊？ | 本規格新寫 | `chat.passer-chat-30` |
+
+## 活店・老闆閒聊
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・owner-chat-01 | 唱片放久了會有自己的脾氣，跟人一樣。 | 本規格新寫 | `ownerChat.owner-chat-01` |
+| 老闆・owner-chat-02 | 貓不給摸，你不用試了。 | 本規格新寫 | `ownerChat.owner-chat-02` |
+| 老闆・owner-chat-03 | 生意好不好，看貓睡在哪裡就知道。 | 本規格新寫 | `ownerChat.owner-chat-03` |
+| 老闆・owner-chat-04 | 封套舊沒關係，裡面乾淨就好。 | 本規格新寫 | `ownerChat.owner-chat-04` |
+| 老闆・owner-chat-05 | 我年輕時也是這樣，一箱一箱翻到腰痛。 | 本規格新寫 | `ownerChat.owner-chat-05` |
+| 老闆・owner-chat-06 | 茶在那邊，自己倒。 | 本規格新寫 | `ownerChat.owner-chat-06` |
+| 老闆・owner-chat-07 | 那台收音機壞過三次，都是我自己修的。 | 本規格新寫 | `ownerChat.owner-chat-07` |
+| 老闆・owner-chat-08 | 有人一進門就知道要什麼，有人翻一下午，都好。 | 本規格新寫 | `ownerChat.owner-chat-08` |
+| 老闆・owner-chat-09 | 唱片賣出去那一刻，我都會多看它一眼。 | 本規格新寫 | `ownerChat.owner-chat-09` |
+| 老闆・owner-chat-10 | 開店這些年，最常聽到的一句是「我只是看看」。 | 本規格新寫 | `ownerChat.owner-chat-10` |
+| 老闆・owner-chat-11 | 下雨天放唱片，聲音好像特別近。 | 本規格新寫 | `ownerChat.owner-chat-11` |
+| 老闆・owner-chat-12 | 店裡的歌我隨便放，聽到喜歡的再來問我。 | 本規格新寫 | `ownerChat.owner-chat-12` |
+
+## 活店・老闆・店裡的事（見過那位熟客才講）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・owner-chat-13・見過小魚 | 小魚第一次來，連唱針都不敢放。 | 本規格新寫 | `ownerChat.owner-chat-13` |
+| 老闆・owner-chat-14・見過小魚 | 小魚每次結帳都先數零錢，數很久。 | 本規格新寫 | `ownerChat.owner-chat-14` |
+| 老闆・owner-chat-15・見過阿凱 | 阿凱嘴巴說隨便看看，每次都買最多。 | 本規格新寫 | `ownerChat.owner-chat-15` |
+| 老闆・owner-chat-16・見過阿凱 | 阿凱說他只是順路，可是他家在反方向。 | 本規格新寫 | `ownerChat.owner-chat-16` |
+| 老闆・owner-chat-17・見過大頭 | 大頭在這裡練過接歌，被我趕出去。 | 本規格新寫 | `ownerChat.owner-chat-17` |
+| 老闆・owner-chat-18・見過大頭 | 大頭講話很快，你聽不懂就點頭，他不會發現。 | 本規格新寫 | `ownerChat.owner-chat-18` |
+| 老闆・owner-chat-19・見過阿芳 | 阿芳店裡放的歌，一半是從這裡帶走的。 | 本規格新寫 | `ownerChat.owner-chat-19` |
+| 老闆・owner-chat-20・見過老陳 | 老陳以前是老師，問他問題要有心理準備。 | 本規格新寫 | `ownerChat.owner-chat-20` |
+| 老闆・owner-chat-21・見過周姐 | 周姐以前跟我在別間店一起顧櫃檯。 | 本規格新寫 | `ownerChat.owner-chat-21` |
+| 老闆・owner-chat-22・見過周姐 | 周姐的耳朵比我還利，我進貨都會先問她。 | 本規格新寫 | `ownerChat.owner-chat-22` |
+
+## 活店・老闆・看你這一趟
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・owner-trip-01・聲望剩一半以下 | 撐著點，先喝口茶再上。 | 本規格新寫 | `ownerChat.owner-trip-01` |
+| 老闆・owner-trip-02・連贏 ≥3 | 連贏了啊。別笑太開，客人會記仇。 | 本規格新寫 | `ownerChat.owner-trip-02` |
+| 老闆・owner-trip-03・說情重打過 | 那次說情算你的，下次自己撐住。 | 本規格新寫 | `ownerChat.owner-trip-03` |
+| 老闆・owner-trip-04・接了踢館帖 | 接了踢館帖，就打到底。 | 本規格新寫 | `ownerChat.owner-trip-04` |
+| 老闆・owner-trip-05・第一趟 | 第一趟，輸贏都是學費。 | 本規格新寫 | `ownerChat.owner-trip-05` |
+| 老闆・owner-trip-06・這一趟破最遠紀錄 | 走這麼遠了？我都快不認得你了。 | 本規格新寫 | `ownerChat.owner-trip-06` |
+| 老闆・owner-trip-07・包包 ≥12 張 | 包包那麼重，肩膀別壓壞了。 | 本規格新寫 | `ownerChat.owner-trip-07` |
+| 老闆・owner-trip-08・第 15 位以後 | 第 {pos} 位了，你比我年輕時能撐。 | 本規格新寫 | `ownerChat.owner-trip-08` |
+
+## 活店・介面字（老闆的一次性提示、摘句下緣的出處、路人泡泡第一行）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・intro | 熟客都會來翻，想聊就點他們。 | 本規格新寫 | `crowdUi.intro` |
+| 老闆・expertIntro | 周姐來了，她懂很多，想聽就去問她。 | 本規格新寫 | `crowdUi.expertIntro` |
+| （畫面字）・src | 藝人介紹・{artist} | 本規格新寫 | `crowdUi.src` |
+| （畫面字）・passer | 客人 | 本規格新寫 | `crowdUi.passer` |
+
+## 活店・周姐知識樣板的填空字（{genre} 照主站十類、{region} 只有台灣／日本／華語）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （填空）・{genre}・rock | 搖滾 | 本規格新寫 | `crowdFact.genre.rock` |
+| （填空）・{genre}・jazz | 爵士 | 本規格新寫 | `crowdFact.genre.jazz` |
+| （填空）・{genre}・electronic | 電子 | 本規格新寫 | `crowdFact.genre.electronic` |
+| （填空）・{genre}・soul | 靈魂放克 | 本規格新寫 | `crowdFact.genre.soul` |
+| （填空）・{genre}・hiphop | 嘻哈 R&B | 本規格新寫 | `crowdFact.genre.hiphop` |
+| （填空）・{genre}・classical | 古典 | 本規格新寫 | `crowdFact.genre.classical` |
+| （填空）・{genre}・folk | 民謠 | 本規格新寫 | `crowdFact.genre.folk` |
+| （填空）・{genre}・pop | 流行 | 本規格新寫 | `crowdFact.genre.pop` |
+| （填空）・{genre}・world | 世界 | 本規格新寫 | `crowdFact.genre.world` |
+| （填空）・{genre}・blues | 藍調 | 本規格新寫 | `crowdFact.genre.blues` |
+| （填空）・{region}・tw | 台灣 | 本規格新寫 | `crowdFact.region.tw` |
+| （填空）・{region}・jp | 日本 | 本規格新寫 | `crowdFact.region.jp` |
+| （填空）・{region}・zh | 華語 | 本規格新寫 | `crowdFact.region.zh` |
+
 ## 流派試做・經典流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -1789,6 +2461,43 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | John Zorn《Cobra》 | 「照一套遊戲規則即興出來的。跟你們今晚在做的事，差不多。」 | 本規格新寫 | `pitch#john zorn|cobra` |
+
+## 活店・周姐的藝人介紹摘句（抽樣 30 句；原文照抄主站已審的藝人介紹，不逐句審）
+
+> 畫面上：周姐說「{藝人}啊，我記得介紹上寫：」→ 摘句泡泡（下緣灰字「藝人介紹・{藝人}」）。全部 581 位、642 句在 `game-lab/lore.json`（`node game-lab/tools/build-lore.mjs` 產生；每句都是主站藝人介紹的原文子字串）。讀起來怪的，告訴主線加進 build-lore 的排除表。
+
+| 藝人 | 摘句 |
+|---|---|
+| Adele | Adele 生於倫敦北部的 Tottenham，由年輕的單親媽媽在勞工階級社區養大。 |
+| Arturo Benedetti Michelangeli | 1920 年生於義大利布雷夏一帶，由父親啟蒙，後進米蘭音樂院，約 14 歲修完學業。 |
+| Blueboy | 2024 年樂團重聚，錄下新單曲〈One〉。 |
+| Brigitte Fontaine | 1939 年生於布列塔尼，從小愛讀書與戲劇，到巴黎學戲後，改在酒館與劇場唱自己寫的歌。 |
+| Davy Graham | 1960 年代初他推廣 DADGAD 調弦，據說是在摩洛哥為了彈出烏德琴的音色摸索出來的。 |
+| Falco | 〈Rock Me Amadeus〉1986 年登上美國冠軍，被稱為唯一登頂的德語歌曲。 |
+| Feist | Leslie Feist 生於新斯科細亞省，隨母親一路往西搬，落腳 Calgary。 |
+| Jambinai | 首張專輯《차연》拿下韓國大眾音樂獎最佳跨界專輯，他們也在平昌冬奧閉幕式與玄琴樂團同台。 |
+| John Barbirolli | 1899 年生於倫敦，父親是義大利人、母親是法國人，家裡都是職業樂手。 |
+| Karlheinz Stockhausen | 2001 年獲北極星音樂獎，頒獎詞稱他五十年來一直站在音樂發展的最前線。 |
+| Kelela | Kelela 1983 年生於華盛頓特區，是二代衣索比亞裔美國人，從小學小提琴、唱合唱團。 |
+| Minnie Riperton | Mariah Carey 曾說，沒有 Minnie Riperton 就沒有今天的她。 |
+| Moor Mother | 2023 年她獲頒德國爵士獎的國際年度藝術家。 |
+| Mylène Farmer | 1961 年生於加拿大魁北克的蒙特婁近郊，父母是法國人，約 8 歲隨家人回到巴黎近郊。 |
+| PJ Harvey | PJ Harvey 起初是個三人團，《Rid of Me》巡演後解散，她以這個名字獨自繼續。 |
+| Roberto Goyeneche | 1980 年代起嗓音變得沙啞，被形容成「沙子堵在喉嚨裡」，人氣卻不減。 |
+| Saccharine Trust | 1981 年以 EP《Paganicons》在 SST 出道。 |
+| Scientist | 1980 年代初，他把 Roots Radics 的底軌混成一系列以電玩與科幻為題的專輯。 |
+| Sean Paul | 1973 年生於金斯敦，家族混有非裔牙買加、英國、華人與葡萄牙裔猶太人血統。 |
+| Simone | 奧地利爵士歌手，全名 Simone Kopmajer，1981 年生於施蒂利亞邦的施拉德明。 |
+| Songs: Ohia | Jason Molina 以 Songs: Ohia 為名創作。 |
+| Steve Reich | 1960 年代他讓錄音帶迴圈逐漸錯開，以這種相位位移聽出交錯的節奏。 |
+| Sébastien Tellier | 2008 年他代表法國參加歐洲歌唱大賽，2025 年獲頒法國藝術與文學騎士勳章。 |
+| Xscape | 1990 年在亞特蘭大一帶成軍，成員從教會唱起，Scott 姊妹從小被當成福音歌手栽培。 |
+| Yoko Ono | 1969 年她與 John Lennon 結婚，共組 Plastic Ono Band。 |
+| ちあきなおみ | ちあきなおみ 本名瀬川三恵子，1969 年以〈雨に濡れた慕情〉出道。 |
+| 嘉手苅林昌 | 1920 年生於沖繩越來村，村子舊址如今位在嘉手納基地內。 |
+| 森進一 | 從 1968 年起，他連年登上 NHK 紅白歌合戰，直到 2015 年才告別，也獲頒旭日小綬章。 |
+| 老王樂隊 | 2025 年底，樂團在簡單生活節上宣布暫時休團。 |
+| 那我懂你意思了 | 解散近十年後，原班四人在 2025 年宣布回歸，復出首場在台北的野人祭登場，台下擠滿樂迷。 |
 
 ## 原句、拍板、店主（已逐字比對，列出供對照）
 

@@ -34,6 +34,14 @@
  *   Stage.pause(on) ; speed(k) ; seek(t|null) ; clashState() → { items, deck, held, badges, paused, speed, fast }
  *   Stage.freeze(on)：店景迴圈整個停／恢復（v5 第六項第三期：聆聽室的控制台全螢幕星圖開著時）；Stage.load(layout 物件) 也收（你家：ui.js 塞好唱片架再載）
  *   舊 Stage 相容：anger notes busy dig show foe setSprite actor cls stamp clearStamps unmount
+ *   活店（SPEC-H §11.3，棒 1；導演 crowd.js 用）：
+ *   Stage.addHot({ id, follow, rel, action, label, pri, noSparkle, minY, noLabel }) ; removeHot(id)   執行期跟著人走的熱點（hotspots() 列得到；Stage.load 換店後回到有 crowd 的店會自動補回）
+ *   Stage.say(id, text, { chat:true, who, more, quote, src, ms, onTap, onClose })   聊天泡泡（shop.js 的 chat 模式）；say(id, null) 收
+ *   Stage.pose(id, 'talk') ; back(id, on) ; hold(id, {sleeve}|null)＝任何人（e/f/p/o 以外＝隨手拿著 carry）
+ *   Stage.camRect(name, o?) → {x,y,w,h}（這支螢幕這個鏡頭看得到的美術座標框；strip 高螢幕會往上長）
+ *   Stage.route(from, to|keys) → [[x,y]…]（含起點；shop.js route 逐段接起來，跟 walk 走的同一條）
+ *   Stage.crowdStops() → [{ id, x, y, side, pose, kind, back, short, guestClear, hotPri, bin, at }] ; crowdVia() ; crowdGuest() → {in, out} ; crowdConf()
+ *   mount 選項 onTapAny(x, y, hit)（或之後設 stage.onTapAny）：舞台任何一下點擊先通知，那一下照常生效
  *
  * 規則：整支包在 IIFE；只掛 window.DipLabStage；讀 dip-character.js 的 avatarRows／PIX_PAL，不宣告同名全域；不碰 localStorage。
  */
@@ -180,6 +188,7 @@
     function mountShop(layout) {
       L = layout;
       shop = W.DipShop.mount(host, L, {
+        onTapAny: function (x, y, hit) { var f = stage.onTapAny; if (typeof f === 'function') f(x, y, hit); },
         cards: opts.cards || W.DipLabCards || {},
         coverBase: opts.coverBase || './',
         sprites: opts.sprites,
@@ -193,9 +202,11 @@
       });
       shop.face('f', 1).face('p', -1);
       shop.sprite('p', 'player');   // 你的小人（還沒 put 之前不畫）
+      if (L.crowd && typeof shop.addHot === 'function') Object.keys(DYN).forEach(function (k) { shop.addHot(DYN[k]); });   // 活店：回到有 crowd 的店，補回執行期熱點
       applyInteract();
       return shop;
     }
+    var DYN = {};   // 活店：addHot 加過、還沒 removeHot 的（Stage.load 換店會整個重掛 shop）
 
     // ---------------- 鏡頭
     //   o.growPanel（CSS px）：面板要這麼高、剩下的高讓這個鏡頭往上長（沒有 grow 的 stripS 也行；ui.js 開面板收成橫條時，橫條長到剛好放得下面板，V5-play-8）
@@ -578,6 +589,11 @@
       // 'o'＝老闆（序章 O11 拿著唱片走回櫃檯）：直接 shop.hold＋arm，不動對決的翻面、不記進 TT.held
       hold: function (side, what) {
         if (side === 'o') { shop.hold('o', what || null); shop.arm('o', what ? 'show' : null); return stage; }
+        // 活店（SPEC-H §4.2）：e／f／p／o 以外的人（走動槽 w1–w3）＝隨手拿著（carry：不舉起、不強迫正面、走路照轉向；背對鏡頭時畫在身體後面）
+        if (side !== 'e' && side !== 'f' && side !== 'p') {
+          var cw = what ? Object.assign({ carry: true }, typeof what === 'object' ? what : (what === 'ace' ? { ace: true } : { sleeve: what })) : null;
+          shop.hold(side, cw); shop.arm(side, null); return stage;
+        }
         var id = sid(side); TT.held[id] = what || null;
         setFlips(); shop.hold(id, what || null); shop.arm(id, what ? 'show' : null);
         return stage;
@@ -642,6 +658,49 @@
       if (TT.floor) ttStart();   // 地上的唱片留到 floorRecord(null)
     }
 
+    // ---------------- 活店的幾何（SPEC-H §3.1、§4.1、§4.3）
+    // 這支螢幕這個鏡頭看得到的美術座標框（camera() 同一套矮螢幕規則；strip 在可視高 <600 換 stripS、高螢幕往上長）。o＝{ screen, panelMin, growPanel, noAuto }
+    function camRect(name, o) {
+      o = o || {};
+      var cams = L.cameras || {}, nm = o.noAuto ? name : pickCamera(name, cams, visH()), c = cams[nm] || cams.full || { y: 0, h: L.size[1] };
+      if (o.growPanel != null) c = Object.assign({}, c, { grow: Object.assign({}, c.grow || {}, { panel: o.growPanel }) });
+      var t = shop ? fitCam(nm, c, o) : { y: c.y, h: c.h };
+      return { x: 0, y: t.y, w: L.size[0], h: t.h, name: nm };
+    }
+    // 一個地方 → [x, y]：[x,y]、spot 名（含舊別名）、或人（'o'、'p'、'w1'…，取現在的位置）
+    function placeXY(k) {
+      if (Array.isArray(k)) return [k[0], k[1], !!k[2]];
+      if (k && typeof k === 'object' && k.x != null) return [k.x, k.y, !!k.outside];
+      var sp = L.spots || {}, nm = spotName('p', k);
+      if (typeof nm === 'string' && sp[nm]) return [sp[nm][0], sp[nm][1], !!sp[nm][2]];
+      var a = shop && shop.pos(k);
+      return a ? [Math.round(a.x), Math.round(a.y), !!a.outside] : null;
+    }
+    // 路線點列（含起點）：to＝一個地方，或一串地方（keys）；每段照 shop.route（跟 walk 一樣繞家具；門外那段直走；走不到＝直線）
+    function routeOf(from, to) {
+      var A = placeXY(from); if (!A) return [];
+      var keys = (Array.isArray(to) && !(to.length >= 2 && typeof to[0] === 'number')) ? to : [to];
+      var pts = [[A[0], A[1]]], cur = A;
+      keys.forEach(function (k) {
+        var B = placeXY(k); if (!B) return;
+        var r = (!B[2] && !cur[2] && L.nav && shop && typeof shop.route === 'function') ? shop.route([cur[0], cur[1]], [B[0], B[1]]) : null;
+        if (!r || !r.length) r = [[B[0], B[1]]];
+        r.forEach(function (q) { pts.push([q[0], q[1]]); });
+        cur = B;
+      });
+      return pts;
+    }
+    // 停留點（dip.json crowd.stops）：bin＝那一箱的 bin.stand；at＝spots 的一格（座標只有一份，不抄）；side＝左排（x<140）／右排
+    function crowdStops() {
+      var C = L.crowd; if (!C || !Array.isArray(C.stops)) return [];
+      var stands = {}; (L.props || []).forEach(function (o) { if (o.bin && o.bin.key && o.bin.stand) stands[o.bin.key] = o.bin.stand; });
+      return C.stops.map(function (s) {
+        var xy = s.bin ? stands[s.bin] : (L.spots || {})[s.at]; if (!xy) return null;
+        return { id: s.id, x: xy[0], y: xy[1], side: xy[0] < 140 ? 'left' : 'right', pose: s.pose || null, kind: s.kind || (s.bin ? 'dig' : null),
+          back: !!s.back, short: !!s.short, guestClear: !!s.guestClear, hotPri: s.hotPri || 2, bin: s.bin || null, at: s.at || null };
+      }).filter(Boolean);
+    }
+
     // ---------------- 公開 API
     var WALK = {};   // id → { to, done }：最後一次 walk 的終點（finish 用）
     var stage = {
@@ -652,6 +711,7 @@
       get shop() { return shop; },
       host: host,
       onAction: opts.onAction || null,
+      onTapAny: opts.onTapAny || null,
       ALIAS: ALIAS,
       load: function (id, o) {
         o = o || {};
@@ -685,6 +745,7 @@
         w.done = true; shop.put(id, w.to); shop.pose(id, null);
         return stage;
       },
+      // 只收 p、o、f、q1、q2：活店走動槽（w1–w3，閒逛的熟客與路人）不快轉——他們照自己的步調走，⏩ 不會把人瞬移到停留點（SPEC-H §4.3）
       finishAll: function () { ['p', 'o', 'f', 'q1', 'q2'].forEach(function (id) { stage.finish(id); }); return stage; },
       // 讓 id 面向 other（人、spot 名或 [x,y]）
       faceTo: function (id, other) {
@@ -747,6 +808,21 @@
       floorExt: function (px) { return shop && typeof shop.floorExt === 'function' ? shop.floorExt(px) : 0; },
       cssOf: function (x, y) { return shop.hostCss(x, y); },
       bump: function () { shop.bump(); return stage; },
+      // ---- 活店（SPEC-H §11.3）
+      addHot: function (h) {
+        if (!h || typeof h.id !== 'string') return stage;
+        DYN[h.id] = Object.assign({}, h);
+        if (shop && typeof shop.addHot === 'function') shop.addHot(DYN[h.id]);
+        return stage;
+      },
+      removeHot: function (id) { delete DYN[id]; if (shop && typeof shop.removeHot === 'function') shop.removeHot(id); return stage; },
+      back: function (id, on) { if (shop && typeof shop.back === 'function') shop.back(id, on); else if (shop && typeof shop.dir === 'function') shop.dir(id, on === false ? 'front' : 'back'); return stage; },
+      camRect: function (name, o) { return camRect(name, o); },
+      route: function (from, to) { return routeOf(from, to); },
+      crowdStops: crowdStops,
+      crowdVia: function () { var c = L.crowd && L.crowd.via; return c ? JSON.parse(JSON.stringify(c)) : null; },
+      crowdGuest: function () { var g = L.crowd && L.crowd.guest; return g ? { in: (g.in || []).slice(), out: (g.out || []).slice() } : null; },
+      crowdConf: function () { return L.crowd ? JSON.parse(JSON.stringify(L.crowd)) : null; },
       // ---- 進／出對決的舞台部分（SPEC-v2 §3.7，選用；「！」與黑條由 fx.encounterFx 負責，這裡只管走位與鏡頭，兩者同時跑）
       // o: { foe: sprite, ms = 600, walkSpeed = 96 }。他走到 duelE、你走到 duelP、老闆回櫃檯，同時鏡頭推近成橫條。
       duelIn: function (o) {
@@ -801,6 +877,7 @@
       unmount: function () {   // 舊介面：v2 舞台常駐，不拆；只收掉暫時的東西
         stage.clearStamps(); shop.untag(); shop.highlight([]);
         ['p', 'f', 'o'].forEach(function (id) { shop.say(id, null); shop.pose(id, null); shop.emote(id, null); });
+        ['w1', 'w2', 'w3'].forEach(function (id) { shop.say(id, null); shop.emote(id, null); });   // 活店走動槽：收泡泡與頭上圖示（姿勢不動，翻箱的照翻）
         return stage;
       },
       destroy: function () {

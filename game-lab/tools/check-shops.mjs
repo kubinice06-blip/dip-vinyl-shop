@@ -20,7 +20,12 @@
 //       另外逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）再查一次（D §3），站立道具一定要有 foot。
 //       腳下範圍（FIXLIST 1，店主「不要跨過中島唱片區」）＝DipShop.footprints：道具實際畫出來的那一塊（量的）∪ foot；
 //       layout.footprints.groups（中島）合成一塊多邊形；behind（櫃檯、唱盤台：老闆站後面）留一個口袋，只有站在口袋裡的人的路線可以進去。避障、這裡、shop.test 同一份。
-//       站著不動的人（老闆以外的 actors，例：熟客 r1）：離任何 bin.stand |dx|≥38 或 |dy|≥44（R-02）、不站在口袋裡（店主 11-18：客人不會跑到櫃檯裡面）。
+//       站著不動的人（老闆以外的 actors；r1 已退役，這條留著擋之後再有站樁的人）：離任何 bin.stand |dx|≥38 或 |dy|≥44（R-02）、不站在口袋裡（店主 11-18：客人不會跑到櫃檯裡面）。
+//       活店（SPEC-H §4.1、§12.2 LP2／LP3／LP7）：crowd.stops 每格（bin＝那一箱的 stand、at＝spot）不在家具裡、不在任何 footprints.behind 口袋
+//       （「crowd.stops <id>（<at 或 bin> [x,y]）站在 <口袋> 後面的口袋裡…」）、離 duelE／duelP／ref／between／map／counter ≥38×44；
+//       非短停的格頭上 24×28 熱點吃掉任何既有熱點的可見區 ≤20 格（短停 c-listen、c-pay 只列出來）；crowd.stops 本來就站在 bin.stand 上，不套「不准貼 stand」；
+//       路線：門 →（左排 via.left／右排 via.right）→ 每格、每格 → 門、同排直走、跨排走 via.cross、右排 → duelE（leaving、mid、in、frontleft）每一點 y ≤250
+//       （走到對戰台那段 in 之後除外）、不進口袋；主線客人 crowd.guest.in／out 的身體框（20×14）只碰 guestClear 的格。
 //       房間（kind:'room'，v5 第六項第三期：你家＝聆聽室）：斜俯視同一條檢查，但不套店的必備清單（店站位、對決鏡頭、O34_HOTS、唱盤區 duel、牆上 ≥8 張）；
 //       改查 ROOM_HOTS／ROOM_SPOTS、剛好一台唱盤（duelDeck#deck）與一台控制台（tuneConsole）、唱片架 ledge#shelf fill:'owned'（cards 執行時才塞，JSON 可空）、不放翻箱；
 //       index.json rooms[]＝{id, layout, pin}：layout 是 kind:room、圖釘在地圖上、圖釘動作＝房間 id。
@@ -435,7 +440,7 @@ export function checkOblique(L, file, lib, cards, content) {
     if (r) bad('spots.' + k + ' 站在家具裡 ' + obsName(r));
   }
   for (const [k, st, src] of stands) { const r = obsAt(st); if (r) bad(src + '：bin.stand ' + JSON.stringify(st) + ' 站在家具裡 ' + obsName(r)); }
-  // 站著不動的人（老闆以外的 actors，例：熟客 r1）旁邊不能是 bin.stand：你走過去翻箱子會被他整個蓋掉（R-02：FEATURE 的站位在熟客正後面）。
+  // 站著不動的人（老闆以外的 actors；熟客 r1 已退役＝SPEC-H，活店的人走 crowd 段、下面 checkCrowd 另外查）旁邊不能是 bin.stand：你走過去翻箱子會被他整個蓋掉（R-02：FEATURE 的站位在熟客正後面）。
   //   一個小人的身體寬約 38 格、高 44 格以內就會疊到（ui.js makeRoom 用同一組數字請門邊等的客人讓開）
   //   v5 店面改版：窗下矮櫃改成 BLUES 藍調櫃，熟客原本站它前面 [200,104]，名牌和封面被她蓋掉、藍調站位也被這條擠到 INDIE POP 前面——
   //   所以熟客搬到櫃檯後面的高櫃前，藍調站位回到藍調櫃正前面。要站人就挑旁邊沒有任何箱子站位、也不擋名牌的地方。
@@ -468,8 +473,151 @@ export function checkOblique(L, file, lib, cards, content) {
       if (k > 0) bad(ka + '→' + kb + ' 的路線 ' + JSON.stringify(r.pts[k - 1]) + '→' + JSON.stringify(r.pts[k]) + ' 從 ' + pk.id + ' 後面的口袋穿過（那是老闆站的地方）');
     }
   }
+  // 活店（SPEC-H §4.1、§4.3、§12.2 LP2–LP4、LP7）：crowd 段＝走動的熟客與路人停的格、走的路
+  if (!room) checkCrowd(L, { DS, OP, spots, stands, pockets, obs, obsAt, bad, warn, info, cards, inside });
   info.charH = CH; info.kinds = kinds;
   return { problems: P, warnings: Wn, hotIds: [...ids.keys()], info };
+}
+
+// ---------- 活店 crowd 段（SPEC-H §4.1）
+export const CROWD_KEEP_OFF = ['duelE', 'duelP', 'ref', 'between', 'map', 'counter'];   // 停留點離這些都要 ≥38×44（對決者、裁判、櫃檯後的老闆）
+export const CROWD_STEAL_MAX = 20;    // 非短停的格：跟著人走的熱點（24×28）吃掉任何一個既有熱點的可見區 ≤20 格
+export const CROWD_MAX_Y = 250;       // 走動的人路上每一點 y ≤250（不從中島下面的唱盤區繞；唯一例外：走進對戰台 duelE 那段）
+export const BODY_DX = 20, BODY_DY = 14;   // 身體框（兩個人身體疊在一起；SPEC-H §4.3）
+// 停留點 → 座標：bin＝那一箱的 bin.stand、at＝spots 的一格（座標只有一份）
+export function crowdStopXY(L, s) {
+  if (!s) return null;
+  if (s.bin) { const pr = (L.props || []).find(o => o.bin && o.bin.key === s.bin); return pr && Array.isArray(pr.bin.stand) ? pr.bin.stand.slice(0, 2) : null; }
+  const sp = (L.spots || {})[s.at]; return sp ? sp.slice(0, 2) : null;
+}
+export function crowdStops(L) {
+  const C = L.crowd; if (!C || !Array.isArray(C.stops)) return [];
+  return C.stops.map(s => { const xy = crowdStopXY(L, s); return xy ? Object.assign({}, s, { x: xy[0], y: xy[1], side: xy[0] < 140 ? 'left' : 'right' }) : null; }).filter(Boolean);
+}
+// 一串地方（spot 名、停留點 id、[x,y]）逐段接成路線（跟 shop.walk／Stage.route 同一條：每段 navRoute）。回 { pts, marks:{key: 點的位置} } 或 null（走不到）
+export function crowdChain(DS, L, from, keys, obs) {
+  const stops = crowdStops(L), xyOf = k => Array.isArray(k) ? k.slice(0, 2) : (stops.find(s => s.id === k) ? [stops.find(s => s.id === k).x, stops.find(s => s.id === k).y] : (L.spots[k] ? L.spots[k].slice(0, 2) : null));
+  let cur = xyOf(from); if (!cur) return null;
+  const pts = [cur], marks = {};
+  for (const k of keys) {
+    const to = xyOf(k); if (!to) return null;
+    const r = routeOf(DS, L, cur, to, obs); if (!r || !r.clear) return null;
+    for (let i = 1; i < r.pts.length; i++) pts.push(r.pts[i]);
+    marks[typeof k === 'string' ? k : JSON.stringify(k)] = pts.length - 1; cur = to;
+  }
+  return { pts, marks };
+}
+// 路線每 step 格取一點（身體框比對用）
+export function samplePts(pts, step = 2) {
+  const out = [];
+  for (let i = 1; i < pts.length; i++) { const a = pts[i - 1], b = pts[i], d = Math.hypot(b[0] - a[0], b[1] - a[1]), n = Math.max(1, Math.ceil(d / step)); for (let k = 0; k <= n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]); }
+  return out.length ? out : pts.slice();
+}
+// 路線的身體框（20×14）碰到哪些停留點 → [id…]
+export function routeTouches(pts, stops, skip) {
+  const sm = samplePts(pts), out = [];
+  for (const s of stops) { if (skip && skip.includes(s.id)) continue; if (sm.some(p => Math.abs(p[0] - s.x) < BODY_DX && Math.abs(p[1] - s.y) < BODY_DY)) out.push(s.id); }
+  return out;
+}
+// 一個人站在 xy、頭到腰一塊跟著人走的熱點（rel）：既有熱點的可見區各被吃掉幾格 → { hotId: n }（scratchpad tools/steal.mjs 的算法）
+export function crowdSteal(DS, L, xy, rel, extra) {
+  const PR = DS.O34.PROPS, base = DS.buildHotList(JSON.parse(JSON.stringify(L)), PR, {});
+  const L2 = JSON.parse(JSON.stringify(L));
+  L2.spots.__crowd = [xy[0], xy[1]];
+  L2.actors = (L2.actors || []).concat([{ id: '__crowd', at: '__crowd', sprite: 'girl' }]);
+  L2.hotspots = (L2.hotspots || []).concat([Object.assign({ id: '__crowd', follow: '__crowd', rel: rel.slice(), rect: [xy[0] + rel[0], xy[1] + rel[1], rel[2], rel[3]], label: '客人', action: 'talk:x' }, extra || {})]);
+  const hl = DS.buildHotList(L2, PR, {}), me = hl.find(h => h.id === '__crowd'), mr = me.rect, clip = [0, 0, L.size[0], L.size[1]];
+  const hitsMe = h => h.shape && h.shape.some(r => r[0] < mr[0] + mr[2] && r[0] + r[2] > mr[0] && r[1] < mr[1] + mr[3] && r[1] + r[3] > mr[1]);
+  const out = {};
+  for (const h of hl) {
+    if (h.occluder || h.id === '__crowd' || !hitsMe(h)) continue;
+    const b0 = base.find(x => x.id === h.id); if (!b0) continue;
+    const A0 = DS.hotRegion(base, b0, clip), A1 = DS.hotRegion(hl, h, clip), n0 = A0 ? A0.n : 0, n1 = A1 ? A1.n : 0;
+    if (n1 < n0) out[h.id] = n0 - n1;
+  }
+  return out;
+}
+function checkCrowd(L, X) {
+  const { DS, spots, pockets, obsAt, bad, info, inside } = X;
+  const C = L.crowd;
+  if (C == null) { if (L.id === 'dip') bad('缺 crowd（活店停留點，SPEC-H §4.1）'); return; }
+  if (typeof C !== 'object' || Array.isArray(C)) { bad('crowd 要是物件'); return; }
+  const isSpot = k => typeof k === 'string' && Array.isArray(spots[k]);
+  if (!Array.isArray(C.stops) || !C.stops.length) { bad('crowd.stops 要是非空陣列'); return; }
+  const seen = new Set(), binKeys = new Set((L.props || []).filter(o => o.bin && o.bin.key && o.bin.stand).map(o => o.bin.key));
+  C.stops.forEach((s, i) => {
+    const src = 'crowd.stops[' + i + ']';
+    if (!s || typeof s.id !== 'string' || !/^c-[a-z0-9]+$/.test(s.id)) { bad(src + '：id 要是 c-<小寫英數>'); return; }
+    if (seen.has(s.id)) bad('crowd.stops：id 重複 ' + s.id); seen.add(s.id);
+    if (!!s.bin === !!s.at) bad('crowd.stops ' + s.id + '：bin（站那一箱的 bin.stand）與 at（spots 的一格）只能寫一個');
+    if (s.bin && !binKeys.has(s.bin)) bad('crowd.stops ' + s.id + '：沒有 bin.key ' + s.bin + '（要有 stand 的箱子）');
+    if (s.at && (!isSpot(s.at) || spots[s.at][2])) bad('crowd.stops ' + s.id + '：at 要是店裡的 spot（不在門外）：' + s.at);
+    if (s.pose != null && s.pose !== 'dig') bad('crowd.stops ' + s.id + '：pose 只認 dig（翻箱）：' + s.pose);
+    if (s.kind != null && !['listen', 'pay'].includes(s.kind)) bad('crowd.stops ' + s.id + '：kind 只認 listen／pay：' + s.kind);
+    if (s.kind && s.pose === 'dig') bad('crowd.stops ' + s.id + '：' + s.kind + ' 的格不擺 dig（前面沒有箱子可翻）');
+    for (const f of ['back', 'short', 'guestClear']) if (s[f] != null && typeof s[f] !== 'boolean') bad('crowd.stops ' + s.id + '：' + f + ' 要是 true/false');
+    if (s.hotPri != null && !(Number.isInteger(s.hotPri) && s.hotPri >= 1 && s.hotPri <= 9)) bad('crowd.stops ' + s.id + '：hotPri 要是 1–9 的整數');
+  });
+  const stops = crowdStops(L);
+  const hot = C.hot || {};
+  if (!Array.isArray(hot.rel) || hot.rel.length !== 4 || !hot.rel.every(Number.isInteger) || !(hot.rel[2] > 0 && hot.rel[3] > 0)) bad('crowd.hot.rel 要是 [dx,dy,w,h] 整數');
+  if (hot.minY != null && !Number.isInteger(hot.minY)) bad('crowd.hot.minY 要是整數');
+  const via = C.via || {};
+  for (const k of ['left', 'right']) if (!isSpot(via[k])) bad('crowd.via.' + k + ' 要是 spot：' + via[k]);
+  if (!Array.isArray(via.cross) || via.cross.length < 1 || !via.cross.every(isSpot)) bad('crowd.via.cross 要是一串 spot');
+  const G = C.guest || {};
+  for (const k of ['in', 'out']) if (!Array.isArray(G[k]) || !G[k].length || !G[k].every(isSpot)) bad('crowd.guest.' + k + ' 要是一串 spot');
+  if (!isSpot(C.door)) bad('crowd.door 要是 spot：' + C.door);
+  info.crowd = { stops: stops.length, steal: {}, short: {} };
+  const rel = Array.isArray(hot.rel) && hot.rel.length === 4 ? hot.rel : [-12, -46, 24, 28];
+  for (const s of stops) {
+    const xy = [s.x, s.y], name = (s.at || s.bin) + ' ' + JSON.stringify(xy);
+    if (!inside(s.x, s.y)) { bad('crowd.stops ' + s.id + ' 在畫布外'); continue; }
+    const ob = obsAt(xy); if (ob) bad('crowd.stops ' + s.id + '（' + name + '）站在家具裡 ' + (ob.id || ''));
+    // 店主 11-18：客人不會跑到櫃檯裡面
+    for (const pk of pockets) if (inRect(xy, pk.rect)) bad('crowd.stops ' + s.id + '（' + name + '）站在 ' + pk.id + ' 後面的口袋裡（那是老闆站的地方，客人不會跑到櫃檯裡面）');
+    for (const k of CROWD_KEEP_OFF) { const q = spots[k]; if (q && Math.abs(q[0] - s.x) < STATIC_DX && Math.abs(q[1] - s.y) < STATIC_DY) bad('crowd.stops ' + s.id + '（' + name + '）離 ' + k + ' ' + JSON.stringify(q) + ' 太近（|dx|<' + STATIC_DX + ' 且 |dy|<' + STATIC_DY + '）'); }
+    // 跟著人走的熱點吃掉既有熱點：非短停 ≤20 格；短停（試聽桌、櫃檯前結帳 3–20 秒）只列出來
+    const st = crowdSteal(DS, L, xy, rel, s.hotPri ? { pri: s.hotPri } : null);
+    info.crowd[s.short ? 'short' : 'steal'][s.id] = st;
+    if (!s.short) for (const [hid, n] of Object.entries(st)) if (n > CROWD_STEAL_MAX) bad('crowd.stops ' + s.id + '：站在這裡，頭上的熱點吃掉 ' + hid + ' ' + n + ' 格（>' + CROWD_STEAL_MAX + '；非短停的格不能擋名牌封面）');
+  }
+  // 路線（LP3）：門 →（左排走 via.left、右排走 via.right）→ 每格、每格 → 門、同排直走、跨排走 via.cross（反過來也是）：每一點 y ≤250、不進口袋
+  const obs = X.obs, door = C.door;
+  const pocketHit = (pts) => { for (const pk of pockets) { const k = pts.findIndex((q, i) => inRect(q, pk.rect) || (i > 0 && DS.segHitsRect(pts[i - 1], q, pk.rect))); if (k >= 0) return pk.id + ' ' + JSON.stringify(pts[k]); } return null; };
+  const checkLeg = (label, from, keys, opt = {}) => {
+    const r = crowdChain(DS, L, from, keys, obs);
+    if (!r) { bad('crowd 路線 ' + label + ' 走不到（或穿過家具）'); return null; }
+    const lim = opt.freeFrom != null ? r.marks[opt.freeFrom] : r.pts.length - 1;
+    const hiY = r.pts.slice(0, lim + 1).find(q => q[1] > CROWD_MAX_Y);
+    if (hiY) bad('crowd 路線 ' + label + ' 走到 y' + Math.round(hiY[1]) + '（>' + CROWD_MAX_Y + '：從中島下面的唱盤區繞；via 不能拿掉）' + JSON.stringify(r.pts.map(q => q.map(Math.round))));
+    const pk = pocketHit(r.pts); if (pk) bad('crowd 路線 ' + label + ' 經過 ' + pk + ' 後面的口袋（那是老闆站的地方）');
+    return r;
+  };
+  const sideVia = s => s.side === 'left' ? via.left : via.right;
+  if (isSpot(door) && isSpot(via.left) && isSpot(via.right)) for (const s of stops) {
+    checkLeg('門→' + s.id, door, [sideVia(s), s.id]);
+    checkLeg(s.id + '→門', s.id, [sideVia(s), door]);
+  }
+  const cross = Array.isArray(via.cross) && via.cross.every(isSpot) ? via.cross : null;
+  for (const a of stops) for (const b of stops) {
+    if (a === b) continue;
+    if (a.side === b.side) checkLeg(a.id + '→' + b.id, a.id, [b.id]);
+    else if (cross) checkLeg(a.id + '→' + b.id + '（跨排）', a.id, (a.side === 'left' ? cross : cross.slice().reverse()).concat([b.id]));
+  }
+  // 右排的人走到對戰台（切磋邀請者）：leaving → mid → in → frontleft → duelE，走到 in 之前 y ≤250（之後是主線客人那條進場路）
+  if (isSpot(via.right) && cross && isSpot('in') && G.in) for (const s of stops.filter(x => x.side === 'right')) checkLeg(s.id + '→duelE', s.id, [via.right].concat(cross.slice().reverse().filter(k => k !== via.right)).concat(G.in), { freeFrom: G.in[0] });
+  // 主線客人進出（ui.js guestToTable／輸了出門讀 crowd.guest）：身體框（20×14）只准碰 guestClear 的格（＝c-listen：他走路那幾秒保留）
+  if (Array.isArray(G.in) && G.in.every(isSpot) && Array.isArray(G.out) && G.out.every(isSpot) && isSpot(door)) {
+    for (const [lab, from, keys] of [['guest.in', door, G.in], ['guest.out', G.in[G.in.length - 1], G.out]]) {
+      const r = crowdChain(DS, L, from, keys, obs);
+      if (!r) { bad('crowd.' + lab + ' 走不到'); continue; }
+      const pk = pocketHit(r.pts); if (pk) bad('crowd.' + lab + ' 經過 ' + pk + ' 後面的口袋');
+      const t = routeTouches(r.pts, stops), wrong = t.filter(id => !(stops.find(s => s.id === id) || {}).guestClear);
+      info.crowd[lab] = t;
+      if (wrong.length) bad('crowd.' + lab + '（主線客人的路）身體框碰到停留點 ' + wrong.join('、') + '（只准碰 guestClear 的格；不然挑戰者進門會穿過翻箱的人）');
+    }
+  }
 }
 
 // 單一 layout 的檢查；回傳 { problems, warnings, hotIds, info }
@@ -617,7 +765,7 @@ export function runChecks() {
     layouts[L.id || f] = L;
     const r = checkLayout(L, 'shops/' + f, lib, cards, content);
     problems.push(...r.problems); warnings.push(...r.warnings);
-    stats[f] = { hots: r.info.hots, props: r.info.props, crates: r.info.scale, hotIds: r.hotIds, charH: r.info.charH };
+    stats[f] = { hots: r.info.hots, props: r.info.props, crates: r.info.scale, hotIds: r.hotIds, charH: r.info.charH, crowd: r.info.crowd || null };
   }
   // index.json
   let idx = null;
@@ -665,6 +813,10 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   const { problems, warnings, stats } = runChecks();
   if (!quiet) {
     for (const [f, s] of Object.entries(stats)) console.log(f + '：道具 ' + s.props + '、熱點 ' + s.hots + (s.crates.length ? '、唱片箱高 ' + s.crates.map(c => c.id + ' ' + c.h).join(' / ') + '（小人 ' + s.charH + '）' : ''));
+    for (const [f, s] of Object.entries(stats)) if (s.crowd) {
+      const fmt = o => Object.entries(o).map(([id, m]) => id + (Object.keys(m).length ? ' 吃 ' + Object.entries(m).map(([h, n]) => h + ' ' + n).join('、') : ' 0')).join('；');
+      console.log(f + '：活店停留點 ' + s.crowd.stops + ' 格；' + fmt(s.crowd.steal) + '｜短停（不擋）：' + fmt(s.crowd.short) + '｜主線客人進出碰到：' + [].concat(s.crowd['guest.in'] || [], s.crowd['guest.out'] || []).filter((v, i, A) => A.indexOf(v) === i).join('、'));
+    }
     warnings.forEach(w => console.log('  注意：' + w));
   }
   if (problems.length) { problems.forEach(p => console.log('✗ ' + p)); console.log('check-shops：' + problems.length + ' 個問題'); process.exit(1); }

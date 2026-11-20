@@ -1,5 +1,30 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-20｜dip-vinyl-shop｜頻率光譜分享縮圖換成現行面板（og-tune-v2.png）
+
+- **店主 11-20**：「縮圖好奇怪喔」——`og-tune.png` 還是最早那版面板（四顆軸滾筒、溫暖 / WARMTH、橫的就這張）。
+- **改動**：左半文字沿用原圖；右半換成正式站現行面板截圖（Playwright 2 倍、篩選爵士、水表 05711），高 644 等比、右側與上下略出血。檔名改 `og-tune-v2.png`（`git mv`），`scripts/build-tune-page.mjs` 與 `tune/index.html` 的 og:image／twitter:image 跟著換，讓 LINE／FB 不吃舊快取。
+- **主要檔案**：`og-tune-v2.png`、`scripts/build-tune-page.mjs`、`tune/index.html`。
+
+### 2026-11-20｜dip-vinyl-shop｜頻率光譜彩蛋拉霸：轉到台北順起來時，下面的顯示器快轉後停在「回家 ▶ 投票／11/28／▶ 戒慎恐懼 ◀」（v75）
+
+- **店主 11-20**：「轉到台北順起來的時候，下面的顯示器快速旋轉，像拉霸台一樣，然後停下來顯示：11/28 回家投票 戒慎恐懼。」截圖比過 A–E 五種排法，店主選 **D**：頻率四顆「回｜家｜▶｜投票」（寬滾筒放兩個字，避免單一個「票」比例過大）、水表「11/28」、篩選三顆「▶｜戒慎恐懼｜◀」。
+- **做法**：`dip-tune.js` 新增 `slotStart()`／`slotStop()`，`scan()` 落在彩蛋就開、離開就關（`stop()` 也關）。每顆滾筒蓋一條 `.tune-slot` 字條（前面一串該滾筒自己的隨機字、目標字、再墊一格），CSS transition 減速停住（cubic-bezier 尾端微回彈）；頻率 0.7–1.5 秒、水表 1.8–2.4 秒、篩選 2.7–3.3 秒依序停，轉動中每 75ms 一聲 tick、每停一顆喀一聲，全部停住後三顆篩選燈亮。原本的字條只藏起來（`.slotting>.strip`），照常更新，轉離彩蛋就拿掉拉霸條。位置全用 cqw，旋轉螢幕不會錯位。
+- **注意**：彩蛋 2026-11-27 00:00（台北）起自動下架（`EGG.until`），比 11/28 投票日早一天。
+- **驗證**：Playwright（iPhone 13）`?egg=1`：12 顆都停在目標字、偏離中線 ≤0.9px；拖輪子轉離後拉霸條全部移除、顯示恢復；再搜「台北順起來」會重轉；無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v75）。
+
+### 2026-11-20｜dip-vinyl-shop｜game-lab 活店第一階段：熟客走來走去、點人聊天、行家周姐（店主 11-18）
+
+- **背景**：店主 11-08 規劃書「序章後的活店」三項（客人進進出出、點人聊天含行家、遭遇戰）漏排，11-18 店主追問：「熟客平常會走來走去 翻翻挖挖 然後走出門 就像真的活人」。規格 scratchpad `v5/liveshop/SPEC-H.md`、裁定 `rulings.md`、報告 `build2/FINAL.md`。這是第一階段（遭遇戰＝切磋在第二階段，開關關著）。
+- **人**：6 位有名字的熟客（小魚、阿凱、大頭、阿芳、老陳、周姐）＋路人四套外觀；原本站樁的 r1 退役。同時最多 3 位（平均約 1.6–1.8）：推門進來 → 換箱翻挖（試聽桌、結帳）→ 推門出去；回到來客畫面 10 秒內一定有人進出。不進櫃檯、不擋名牌封面、不穿人（路線避人、你經過時讓一步、窄走道等人）；序章不出現；對決時被橫條切到的人先藏。
+- **聊天**：點熟客、路人、老闆都能聊；泡泡停在人頭上，有 ▼ 點了才換句，最後一句照字數停 3–12 秒。台詞 349 句（主線逐句審過全收；熟客會記得聊過幾次、這一趟的事、你上次走多遠）。老闆打過第 1 位後點他出小選單「聊聊／賣給老闆」，點櫃檯照舊直接賣。
+- **行家周姐**：只講可查證的——`lore.json`（建置期從 `data/artist-intros/` 已上線介紹切原文子字串，`build-lore --check` 驗過期；642 句／581 位；排除政治、毒品、暴力等沉重題材與指代不明句）或卡片欄位樣板（年份、曲風、地區、三軸、在哪一箱）；摘句泡泡下有「藝人介紹・藝人」出處。
+- **開關**：正式站預設開；自動化瀏覽器（webdriver）預設關（既有 e2e 不用改網址）；`?crowd=0／1`。存檔不升 SAVE_V（`save.regulars`）。
+- **主要檔案**：新 `game-lab/{crowd.js,crowd-core.js,lore.json}`、`game-lab/tools/build-lore.mjs`、`game-lab/test/crowd.test.mjs`、`game-lab/tests/e2e-crowd.mjs`；改 `game-lab/{ui.js,shop.js,shop.css,stage.js,stalls.js,content.js,style.css,index.html,shops/dip.json,LINES-REVIEW.md}`、`game-lab/tools/{check-content,check-shops,lint-copy}.mjs`、`game-lab/test/shop.test.mjs`、`game-lab/tests/{e2e.spec,e2e-prologue}.mjs`。`?v=86`。
+- **驗證**：審查 16 條全修；真速度觀察 4 段（共 840 秒）身體框疊 0、倒退走 0、穿家具／瞬移 0。單元 crowd 53,237、shop 3,649、hit、chars、tutorial、engine 全過；check-*、build-lore --check、lint-copy 過。e2e-crowd 390 23/23、375 22/22、430／360 4/4、WebKit 門事件 1/1；其他 e2e 兩尺寸全過；e2e.spec 兩尺寸 50/50。合併第 D 波棒二後再跑 engine quick、crowd、shop、e2e crowd／fac／career／duel／prologue／e2e.spec 390。
+- **留著的**：第二階段切磋（`C.encounter.on` 關著）要等 sim LS0–LS9＋店主拍板「切磋贏的唱片放唱片櫃還是包包」（建議唱片櫃）；效能 heap 一項在 4× 降速下沒過門檻（沒有活店也一樣，環境限制），上線後可在實機再量。
+
 ### 2026-11-20｜dip-vinyl-shop｜game-lab 第 D 波棒二：三流派 ?fac=1（被動＋代價、第二招、本派選項、派系卡）＋升級三格固定順序
 
 - **背景**：第 D 波三棒的第二棒（規格 scratchpad `v5/wave-d/SPEC-D.md` §3.2–§3.5、§3.9–§3.10、§6-3；報告 `wave-d/build2/FINAL.md`、`SIM.md`）。全部在 `?fac=1` 試做旗標後面，旗標關時 sim 跟改前位元相同。11-18 週額度用完停擺，11-20 續跑完成。

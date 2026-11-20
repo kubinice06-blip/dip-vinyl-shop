@@ -8,6 +8,11 @@
 //     比例（人明顯比箱子桌、櫃檯、唱盤台高；耳機在桌面高度）、唱盤區幾何、櫃檯 logo、index.json 與台北地圖；
 //     D §3 沒有任何路線穿過家具腳下範圍（foot，不加邊）；舞台 v4（假 shop、手動推時間）：version、INTERACT、bins()、hold('o')、finish／finishAll、
 //     faceTo、floorRecord、一手的時間軸（剋中／v3 呼叫／剋不動／平手搖頭／王牌／減少動態／四倍速）、duelIn 接 route []／null。
+// 活店（SPEC-H §12.2，棒 1）：LP7 r1 退役（actors 只剩 o、regularNote、spots.regular＝c-pay、bad3 抓 crowd.stops c-pay 站口袋）；LP2 停留點（家具、口袋、離對決者 ≥38×44、熱點吃既有熱點 ≤20）；
+//     LP3 路線（via、跨排走上面、y ≤250、主線客人只碰 c-listen、老闆 counter→ref 穿右排三格、不加 via 會掉到 y≈270）；LP4 互斥表；
+//     LP6 舞台（假 shop：hold 任何人＝carry、back、addHot、camRect、route、crowdStops／Via／Guest、finishAll 不收走動槽、unmount 清 w1–w3、onTapAny）；
+//     LP1／LP5／LP6（真 shop.js 掛假 DOM）：addHot／removeHot／minY／noLabel／結帳壓過櫃檯、聊天泡泡（more、名字行、150／220／260、quote、框內、蓋過半改旁邊、onTapAny、chat ms）、talk 格、carry 朝向、背對時畫在身體後。
+//     node game-lab/test/shop.test.mjs --bubbles   # 另外印每個停留點的泡泡放頭頂還是旁邊
 import path from 'path';
 import fs from 'fs';
 import vm from 'vm';
@@ -665,19 +670,21 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   ok(r2.some(p => /從 deck 後面的口袋穿過/.test(p)), '唱盤台整個寬都是口袋：別人的路線從唱盤台後面（台上）穿過 → 抓得到', r2.filter(p => /口袋/.test(p)).slice(0, 2));
   ok(r2.some(p => /behind：isl-0b 不能同時在群組裡/.test(p)) && r2.some(p => /behind\.booth：口袋是空的/.test(p)) && r2.some(p => /groups\.island：沒有道具 nope/.test(p)), '抓得到口袋放在箱子上、口袋是空的、群組有不存在的 id', r2.slice(0, 6));
   ok(r2.some(p => /footprints\.margin：沒有這一塊 nope/.test(p)) && r2.some(p => /footprints\.margin\.booth 要是/.test(p)), '抓得到壞的 footprints.margin', r2.slice(0, 8));
-  // 店主 11-18「沒有客人會跑到櫃檯裡面」：熟客站回 11-13 那格（櫃檯後面高櫃前 [272,168]）→ 抓得到她站在櫃檯後面的口袋裡；老闆自己站口袋不算
+  // 店主 11-18「沒有客人會跑到櫃檯裡面」：spots.regular（r1 退役後＝活店結帳點 c-pay）放回 11-13 那格（櫃檯後面高櫃前 [272,168]）
+  //   → 抓得到 crowd.stops c-pay 站在櫃檯後面的口袋裡（SPEC-H §2.4、LP7）；老闆自己站口袋不算
   const bad3 = JSON.parse(JSON.stringify(dip)); bad3.spots.regular = [272, 168];
   const r3 = CS.checkLayout(bad3, 'shops/dip.json', lib, cards, content).problems;
-  ok(r3.some(p => /actors r1（regular \[272,168\]）站在 counter 後面的口袋裡/.test(p)), '熟客站回櫃檯後面（11-13 的 [272,168]）→ 抓得到', r3.slice(0, 3));
+  ok(r3.some(p => /crowd\.stops c-pay（regular \[272,168\]）站在 counter 後面的口袋裡/.test(p)), '結帳點（spots.regular）放回櫃檯後面（11-13 的 [272,168]）→ 抓得到', r3.slice(0, 3));
   ok(!r3.some(p => /actors o（/.test(p)), '老闆站在櫃檯後面的口袋裡不算', r3.filter(p => /actors o/.test(p)));
-  // 熟客站在櫃檯跟前（審查 11-18）：腳在櫃檯前緣之前、頭頂（y−40）在櫃檯檯面（熱點上緣）之下＝不蓋老闆和檯面上的 NOW、收銀機、貓；
+  // 櫃檯前那一格 spots.regular（regular-spot 第二棒定的熟客位；r1 退役後＝活店結帳點 c-pay＋同業調貨攤站主，SPEC-H §2.4、LP7）：
+  //   腳在櫃檯前緣之前、頭頂（y−40）在櫃檯檯面（熱點上緣）之下＝不蓋老闆和檯面上的 NOW、收銀機、貓；
   //   腳＋影子（+2）在對決橫條 strip／stripS 上緣之上＝不會在每場對決右上角露出沒有頭的下半身（第一版 [262,248] 在 390×664 每場都會）；
-  //   跟 pay（你在櫃檯付錢站的地方）並排不疊（|dx|≥38，R-02 那組數字）；沒擺 dig（背面翻箱兩手舉在頭邊，前面沒有箱子＝像在舉手）
-  { const ra = dip.actors.find(a => a.id === 'r1'), s = dip.spots[ra.at], ct = propById('counter'), cam = dip.cameras, pay = dip.spots.pay;
-    ok(s[1] > ct.y && (s[1] - 40) >= ct.hot.rect[1], '熟客站在櫃檯外（腳在櫃檯前緣 y' + ct.y + ' 之前）、頭頂（y−40）不高過櫃檯檯面 y' + ct.hot.rect[1], s);
-    ok(s[1] + 2 <= cam.strip.y && s[1] + 2 <= cam.stripS.y, '熟客整個人在對決橫條上緣之上（strip y' + cam.strip.y + '、stripS y' + cam.stripS.y + '）', s);
-    ok(Math.abs(s[0] - pay[0]) >= 38 || Math.abs(s[1] - pay[1]) >= 44, '熟客跟 pay 並排不疊（|dx|≥38）', [s, pay]);
-    ok(ra.pose !== 'dig', '熟客站櫃檯前不擺 dig', ra.pose); }
+  //   跟 pay（你在櫃檯付錢站的地方）並排不疊（|dx|≥38，R-02 那組數字）；結帳的人不擺 dig（背面翻箱兩手舉在頭邊，前面沒有箱子＝像在舉手）
+  { const s = dip.spots.regular, ct = propById('counter'), cam = dip.cameras, pay = dip.spots.pay, cp = (dip.crowd.stops || []).find(x => x.id === 'c-pay') || {};
+    ok(s[1] > ct.y && (s[1] - 40) >= ct.hot.rect[1], 'spots.regular 在櫃檯外（腳在櫃檯前緣 y' + ct.y + ' 之前）、頭頂（y−40）不高過櫃檯檯面 y' + ct.hot.rect[1], s);
+    ok(s[1] + 2 <= cam.strip.y && s[1] + 2 <= cam.stripS.y, 'spots.regular 整個人在對決橫條上緣之上（strip y' + cam.strip.y + '、stripS y' + cam.stripS.y + '）', s);
+    ok(Math.abs(s[0] - pay[0]) >= 38 || Math.abs(s[1] - pay[1]) >= 44, 'spots.regular 跟 pay 並排不疊（|dx|≥38）', [s, pay]);
+    ok(cp.at === 'regular' && cp.kind === 'pay' && cp.pose !== 'dig', 'c-pay 站 spots.regular、kind pay、不擺 dig', cp); }
   // 中島兩側走道多留 3 格（footprints.margin.island）：避障框比腳下範圍左右各多 8 格
   const oIsl = DS.navObstacles(dip).find(o => o.id === 'island');
   eq([oIsl.box[0], oIsl.box[0] + oIsl.box[2]], [isl.box[0] - 8, isl.box[0] + isl.box[2] + 8], '中島的避障框左右各多 8 格（footprints.margin.island）');
@@ -710,7 +717,8 @@ function fakeShop(L) {
     onTick(fn) { ticks.push(fn); return () => { ticks = ticks.filter(f => f !== fn); }; },
     now() { return rt; },
     fast() { return api; }, untag(id) { log.push(['untag', id]); return api; }, tag(id, t) { log.push(['tag', id, t]); return {}; },
-    say() { return null; }, emote() { return api; }, render() {}, hotspots() { return []; }, highlight() { return api; }, destroy() {}, dim() { return api; }, play() { return api; },
+    say(id, t) { log.push(['say', id, t == null ? null : t]); return null; }, emote(id, k) { log.push(['emote', id, k || null]); return api; }, render() {},
+    back(id, on) { log.push(['back', id, on !== false]); return api; }, addHot(h) { log.push(['addHot', h]); return api; }, removeHot(id) { log.push(['removeHot', id]); return api; }, hotspots() { return []; }, highlight() { return api; }, destroy() {}, dim() { return api; }, play() { return api; },
     step(ms) { rt += ms / 1000; ticks.slice().forEach(f => f(rt)); }
   };
   return { api, actors, log };
@@ -718,7 +726,7 @@ function fakeShop(L) {
 async function loadStage(F) {
   const flush = () => new Promise(r => setImmediate(r));
   const sw = { location: { search: '', href: 'http://localhost/game-lab/' }, innerHeight: 664, addEventListener() {}, removeEventListener() {}, matchMedia: () => ({ matches: false }),
-    DipShop: { mount: () => F.api, O34: DS.O34 }, DipLabCards: cards };
+    DipShop: { mount: (h, L, o) => { F.opts = o; return F.api; }, O34: DS.O34 }, DipLabCards: cards };
   const sb = { window: sw, document: {}, location: sw.location, URLSearchParams, console, Promise, JSON, Object, Array, String, RegExp, Math, setTimeout, clearTimeout };
   vm.createContext(sb);
   vm.runInContext(fs.readFileSync(path.join(LAB, 'stage.js'), 'utf8'), sb, { filename: 'stage.js' });
@@ -942,6 +950,366 @@ section('index.json 與台北地圖預告', () => {
   ok(Array.isArray(taipei.spots.home), '地圖 spots.home');
   ok(pins.filter(p => p.locked).every(p => p.hot.label === '？？？（還沒開）' && p.hot.action === 'locked'), '其他圖釘：？？？（還沒開）');
   ok(taipei.fictional === true, '地圖是示意');
+});
+
+// ---------- 活店（SPEC-H §12.2：LP1–LP7；棒 1 舞台）
+const CROWD_IDS = ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk', 'c-listen', 'c-pay'];
+section('LP7 r1 退役：actors 只剩老闆；spots.regular 留給活店結帳點 c-pay 與同業調貨攤站主', () => {
+  eq(dip.actors.map(a => a.id), ['o'], 'actors 只有 o（熟客不站樁，SPEC-H §2.4）');
+  eq(dip.spots.regular, [264, 224], 'spots.regular [264,224] 保留、名字不改');
+  ok(typeof dip.regularNote === 'string' && /^r1 退役（SPEC-H）：這格現在是活店結帳點 c-pay 與同業調貨攤站主的位置/.test(dip.regularNote) && /照常理沒有客人會跑到櫃檯裡面/.test(dip.regularNote), 'regularNote：開頭寫 r1 退役，後面接原本的搬位紀錄', (dip.regularNote || '').slice(0, 60));
+  ok(dip.hotspots.every(h => !h.follow || h.follow === 'o'), 'layout 的 follow 熱點只跟老闆（活店的人用執行期 addHot，不碰 check-shops「follow 的人要在 actors」）');
+  const cp = dip.crowd.stops.find(x => x.id === 'c-pay');
+  eq([cp.at, cp.kind, cp.back, cp.short, cp.hotPri, cp.pose], ['regular', 'pay', true, true, 3, undefined], 'c-pay：spots.regular、kind pay、背對、短停、熱點 pri 3、不擺 dig');
+  // bad3（在 FIXLIST 1 那段）：spots.regular 放回 [272,168] → crowd.stops c-pay 站在 counter 後面的口袋裡；這裡再驗：r1 回來站口袋也照樣抓（actors 那條規則留著）
+  const bad = JSON.parse(JSON.stringify(dip)); bad.spots.regular = [272, 168]; bad.actors.push({ id: 'r1', at: 'regular', sprite: 'girl', back: true });
+  const r = CS.checkLayout(bad, 'shops/dip.json', lib, cards, content).problems;
+  ok(r.some(p => /actors r1（regular \[272,168\]）站在 counter 後面的口袋裡/.test(p)) && r.some(p => /crowd\.stops c-pay（regular \[272,168\]）站在 counter 後面的口袋裡/.test(p)), '之後再有站樁的人站進口袋照樣抓（actors 規則留著）', r.filter(p => /口袋裡/.test(p)).slice(0, 3));
+});
+
+section('LP2 停留點（§4.1）：10 格、不在家具與口袋裡、離對決者／裁判／櫃檯後 ≥38×44、熱點不擋名牌封面', () => {
+  const st = CS.crowdStops(dip), S = dip.spots, stand = k => propById(dip.props.find(o => o.bin && o.bin.key === k).id).bin.stand;
+  eq(st.map(x => x.id), CROWD_IDS, '十格：中島兩側八箱＋試聽桌＋櫃檯前結帳');
+  eq(st.map(x => [x.x, x.y]), [stand('rock'), stand('soul'), stand('citypop'), stand('world'), stand('elec'), stand('hiphop'), stand('classical'), stand('folk'), S.listen, S.regular], '座標全借 bin.stand 與 spots（不新增地板座標）');
+  eq(st.map(x => x.side), ['left', 'left', 'left', 'left', 'right', 'right', 'right', 'right', 'left', 'right'], '左排 x<140、右排');
+  eq(st.filter(x => x.short).map(x => x.id), ['c-listen', 'c-pay'], '短停：試聽桌、結帳');
+  eq(st.filter(x => x.guestClear).map(x => x.id), ['c-listen'], '主線客人走路時保留：試聽桌');
+  ok(st.filter(x => x.bin).every(x => x.pose === 'dig' && !x.kind), '八箱擺 dig');
+  const obs = DS.navObstacles(dip), pk = DS.footprints(dip).filter(f => f.pocket).map(f => [f.id, f.pocket]);
+  eq(pk.map(x => x[0]).sort(), ['counter', 'deck'], '口袋：櫃檯、唱盤台');
+  for (const x of st) {
+    ok(!obs.some(o => DS.inObs([x.x, x.y], o)), x.id + ' 不在家具裡（含避障邊）');
+    ok(!pk.some(([, r]) => x.x > r[0] && x.x < r[0] + r[2] && x.y > r[1] && x.y < r[1] + r[3]), x.id + ' 不在任何口袋（客人不會跑到櫃檯裡面）');
+    for (const k of CS.CROWD_KEEP_OFF) ok(Math.abs(S[k][0] - x.x) >= 38 || Math.abs(S[k][1] - x.y) >= 44, x.id + ' 離 ' + k + ' ≥38×44', [x.x, x.y, S[k]]);
+  }
+  for (const k of ['aisle', 'sale', 'radio', 'browse', 'pay', 'in', 'stSnack', 'stFortune', 'mid', 'leaving', 'door']) ok(!st.some(x => x.x === S[k][0] && x.y === S[k][1]), '不收 ' + k);
+  // 跟著人走的熱點（24×28）吃掉既有熱點：非短停 ≤20 格（左排只吃自己那一箱一點點、右排 0）；短停列出來（試聽桌吃試聽機、結帳吃櫃檯，那 3–20 秒點那裡＝跟他聊）
+  const rel = dip.crowd.hot.rel;
+  eq(rel, [-12, -46, 24, 28], '熱點 rel（頭到腰）'); eq(dip.crowd.hot.minY, 150, 'minY 150');
+  for (const x of st) {
+    const m = CS.crowdSteal(DS, dip, [x.x, x.y], rel, x.hotPri ? { pri: x.hotPri } : null), worst = Math.max(0, ...Object.values(m));
+    if (!x.short) ok(worst <= CS.CROWD_STEAL_MAX && Object.keys(m).every(h => x.bin && h === 'bin:' + x.bin), x.id + '：只吃自己那一箱、≤20 格', m);
+    else if (x.id === 'c-listen') eq(Object.keys(m), ['booth'], 'c-listen 只吃試聽機（短停）');
+    else eq(Object.keys(m), ['counter'], 'c-pay 只吃櫃檯（短停；NOW、貓照點得到）');
+  }
+  // 抓得到：收 aisle（主線客人與左排路人的進門走廊）、前排 JAZZ（離裁判太近、吃掉整箱熱點）、門口牆 PICKS（吃名牌封面）
+  const add = (stop) => { const L = JSON.parse(JSON.stringify(dip)); L.crowd.stops.push(stop); return CS.checkLayout(L, 'shops/dip.json', lib, cards, content).problems; };
+  ok(add({ id: 'c-aisle', at: 'aisle' }).some(p => /crowd\.guest\.in（主線客人的路）身體框碰到停留點 c-aisle/.test(p)), '收 aisle → 抓得到（主線客人進門會穿過他）');
+  const pj = add({ id: 'c-jazz', bin: 'jazz', pose: 'dig' });
+  ok(pj.some(p => /c-jazz（jazz \[119,272\]）離 ref/.test(p)) && pj.some(p => /c-jazz：站在這裡，頭上的熱點吃掉 bin:jazz/.test(p)), '收前排 JAZZ → 抓得到（離裁判太近、吃掉整箱）', pj.slice(0, 3));
+  ok(add({ id: 'c-picks', bin: 'picks', pose: 'dig' }).some(p => /c-picks：站在這裡，頭上的熱點吃掉 rack:/.test(p)), '收門口牆 PICKS → 抓得到（吃牆上封面）');
+  const bk = JSON.parse(JSON.stringify(dip)); bk.crowd.stops[0] = { id: 'c-rock', bin: 'rock', at: 'in' }; bk.crowd.stops.push({ id: 'c-rock', bin: 'soul' });
+  const pb = CS.checkLayout(bk, 'shops/dip.json', lib, cards, content).problems;
+  ok(pb.some(p => /c-rock：bin（站那一箱的 bin\.stand）與 at（spots 的一格）只能寫一個/.test(p)) && pb.some(p => /crowd\.stops：id 重複 c-rock/.test(p)), '抓得到 bin／at 都寫、id 重複', pb.slice(0, 3));
+});
+
+section('LP3 路線（§4.2、§4.3）：左排走 in、右排走後走道、跨排走上面；主線客人只碰試聽桌；老闆去裁判穿右排', () => {
+  const st = CS.crowdStops(dip), obs = DS.navObstacles(dip), C = dip.crowd;
+  const chain = (from, keys) => CS.crowdChain(DS, dip, from, keys, obs);
+  const maxY = r => Math.max(...r.pts.map(q => q[1]));
+  eq(C.via, { left: 'in', right: 'leaving', cross: ['mid', 'leaving'] }, 'via：左排 in、右排 leaving、跨排 mid→leaving');
+  eq(C.guest, { in: ['in', 'frontleft', 'duelE'], out: ['frontleft', 'in', 'door', 'leave'] }, '主線客人：in→frontleft→duelE、出門反過來');
+  for (const x of st) {
+    const v = x.side === 'left' ? C.via.left : C.via.right, a = chain(C.door, [v, x.id]), b = chain(x.id, [v, C.door]);
+    ok(a && maxY(a) <= CS.CROWD_MAX_Y && b && maxY(b) <= CS.CROWD_MAX_Y, '門↔' + x.id + '（經 ' + v + '）每一點 y ≤250', [a && maxY(a), b && maxY(b)]);
+  }
+  let worstCross = 0;
+  for (const a of st) for (const b of st) if (a.side !== b.side) { const r = chain(a.id, (a.side === 'left' ? C.via.cross : C.via.cross.slice().reverse()).concat([b.id])); worstCross = Math.max(worstCross, r ? maxY(r) : 999); }
+  ok(worstCross <= CS.CROWD_MAX_Y, '跨排一律走上面（mid／leaving）：每條 y ≤250', worstCross);
+  // via 不能拿掉：不加 via 直走會從中島下面（唱盤區，主線客人站 duelE、你站 browse）繞到 y≈270
+  for (const [a, b] of [['c-pay', 'in'], ['c-hiphop', 'c-soul']]) { const r = chain(a, [b]); ok(r && maxY(r) >= 260, a + '→' + b + ' 不加 via 直走會掉到 y≈270（提醒 via 不能拿掉）', r && r.pts.map(q => q.map(Math.round))); }
+  // 右排的人走到對戰台（切磋邀請者）：leaving→mid→in→frontleft→duelE，走到 in 之前 y ≤250
+  for (const x of st.filter(q => q.side === 'right')) { const r = chain(x.id, ['leaving', 'mid', 'in', 'frontleft', 'duelE']); ok(r && Math.max(...r.pts.slice(0, r.marks.in + 1).map(q => q[1])) <= CS.CROWD_MAX_Y, x.id + '→對戰台：走到 in 之前不從中島下面繞', r && r.pts.map(q => q.map(Math.round))); }
+  // 主線客人（ui.js guestToTable、輸了出門讀 crowd.guest）身體框只碰 guestClear 的格（＝c-listen）；舊路（in→duelE）穿左排三格
+  eq(CS.routeTouches(chain(C.door, C.guest.in).pts, st), ['c-listen'], '主線客人進門 door→in→frontleft→duelE：只碰 c-listen');
+  eq(CS.routeTouches(chain('duelE', C.guest.out).pts, st), ['c-listen'], '主線客人輸了出門 duelE→frontleft→in→door→leave：只碰 c-listen');
+  eq(CS.routeTouches(chain(C.door, ['in', 'duelE']).pts, st), ['c-soul', 'c-citypop', 'c-world', 'c-listen'], '（對照：舊路 in→duelE 會穿過左排三格）');
+  // 老闆 counter→ref（每場開打、打完回櫃檯）身體框碰到的格（寫死：店面改了這條會紅，提醒去看 crowd.js clearDuel）
+  eq(CS.routeTouches(chain('counter', ['ref']).pts, st), ['c-hiphop', 'c-classical', 'c-folk'], '老闆 counter→ref 穿 c-hiphop、c-classical、c-folk（clearDuel 要清）');
+  eq(CS.routeTouches(chain('ref', ['counter']).pts, st), ['c-hiphop', 'c-classical', 'c-folk'], '老闆 ref→counter 同上');
+  eq(CS.routeTouches(chain('counter', ['stSnack']).pts, st), ['c-rock', 'c-elec', 'c-listen'], '老闆去宵夜攤 counter→stSnack 穿 c-rock、c-elec、c-listen（攤位讓站主要清）');
+  // 抓得到：跨排改走前面（frontleft）、主線客人走回舊路
+  const p1 = (() => { const L = JSON.parse(JSON.stringify(dip)); L.crowd.via.cross = ['frontleft']; return CS.checkLayout(L, 'shops/dip.json', lib, cards, content).problems; })();
+  ok(p1.some(p => /crowd 路線 c-rock→c-elec（跨排） 走到 y296/.test(p)), '跨排改從前面繞 → 抓得到 y>250', p1.slice(0, 2));
+  const p2 = (() => { const L = JSON.parse(JSON.stringify(dip)); L.crowd.guest.in = ['in', 'duelE']; return CS.checkLayout(L, 'shops/dip.json', lib, cards, content).problems; })();
+  ok(p2.some(p => /crowd\.guest\.in（主線客人的路）身體框碰到停留點 c-soul、c-citypop、c-world/.test(p)), '主線客人走回舊路 → 抓得到', p2);
+});
+
+section('LP4 停留點互斥表（§4.3：|dx|<38 且 |dy|<44 算撞）＝照座標算出來', () => {
+  const st = CS.crowdStops(dip), hit = (a, b) => Math.abs(a[0] - b[0]) < 38 && Math.abs(a[1] - b[1]) < 44;
+  const T = {}; for (const a of st) T[a.id] = st.filter(b => b !== a && hit([a.x, a.y], [b.x, b.y])).map(b => b.id);
+  eq(T, { 'c-rock': ['c-soul', 'c-listen'], 'c-soul': ['c-rock', 'c-citypop', 'c-listen'], 'c-citypop': ['c-soul', 'c-world', 'c-listen'], 'c-world': ['c-citypop'],
+    'c-elec': ['c-hiphop'], 'c-hiphop': ['c-elec', 'c-classical'], 'c-classical': ['c-hiphop', 'c-folk'], 'c-folk': ['c-classical'],
+    'c-listen': ['c-rock', 'c-soul', 'c-citypop'], 'c-pay': [] }, '互斥表：同排相鄰 dy27 撞、試聽桌撞左排上三格、結帳不撞任何格');
+  // 一排最多兩人（四格隔一格才不撞）
+  for (const side of ['left', 'right']) {
+    const ids = st.filter(x => x.side === side && x.bin).map(x => x.id); let best = 0;
+    for (let m = 1; m < (1 << ids.length); m++) { const pick = ids.filter((_, i) => m & (1 << i)); if (pick.every(a => pick.every(b => a === b || !T[a].includes(b)))) best = Math.max(best, pick.length); }
+    eq(best, 2, (side === 'left' ? '左' : '右') + '排四箱同時最多兩人');
+  }
+  const S = dip.spots;
+  eq(st.filter(x => hit([x.x, x.y], S.browse)).map(x => x.id), ['c-classical', 'c-folk'], '你站 browse 擋掉 c-classical／c-folk');
+  eq(st.filter(x => hit([x.x, x.y], S.pay)).map(x => x.id), ['c-hiphop', 'c-classical', 'c-folk'], '你站 pay 擋掉 c-hiphop／c-classical／c-folk');
+  eq(st.filter(x => hit([x.x, x.y], S.radio)).map(x => x.id), ['c-elec'], '收音機 radio 擋掉 c-elec（openRadio 也要讓位）');
+});
+
+asection('LP6 舞台（stage.js）：hold 任何人、back、addHot、camRect、route、crowdStops／Via／Guest、finishAll 不收走動槽、unmount 清 w1–w3、onTapAny', async () => {
+  const F = fakeShop(dip), { st, sw, flush } = await loadStage(F), obs = DS.navObstacles(dip);
+  const xy = k => Array.isArray(k) ? k : dip.spots[k];
+  F.api.routeImpl = (a, b) => DS.navRoute(dip, xy(a).slice(0, 2), xy(b).slice(0, 2), obs) || [];
+  // crowdStops／Via／Guest：照 dip.json；是複本
+  const cs = st.crowdStops();
+  eq(cs.map(x => x.id), CROWD_IDS, 'crowdStops() 十格');
+  eq(cs.find(x => x.id === 'c-pay'), { id: 'c-pay', x: 264, y: 224, side: 'right', pose: null, kind: 'pay', back: true, short: true, guestClear: false, hotPri: 3, bin: null, at: 'regular' }, 'c-pay：櫃檯前、背對、短停、pri 3');
+  eq(cs.find(x => x.id === 'c-listen'), { id: 'c-listen', x: 54, y: 186, side: 'left', pose: null, kind: 'listen', back: false, short: true, guestClear: true, hotPri: 2, bin: null, at: 'listen' }, 'c-listen：試聽桌、短停、主線客人走路時保留');
+  eq(cs.find(x => x.id === 'c-world'), { id: 'c-world', x: 86, y: 243, side: 'left', pose: 'dig', kind: 'dig', back: false, short: false, guestClear: false, hotPri: 2, bin: 'world', at: null }, 'c-world：WORLD 那箱的 stand、翻箱');
+  eq(cs.map(x => [x.x, x.y]), CS.crowdStops(dip).map(x => [x.x, x.y]), '座標跟 check-shops 算的同一份');
+  eq(st.crowdVia(), dip.crowd.via, 'crowdVia()'); eq(st.crowdGuest(), dip.crowd.guest, 'crowdGuest()');
+  st.crowdGuest().in.push('zz'); st.crowdVia().cross.push('zz'); eq(st.crowdGuest().in, ['in', 'frontleft', 'duelE'], '回的是複本（改了不影響 layout）');
+  eq(st.crowdConf().hot, { rel: [-12, -46, 24, 28], minY: 150 }, 'crowdConf().hot');
+  // camRect：這支螢幕的鏡頭框（美術座標）；可視高 <600 自動換 stripS
+  eq(st.camRect('strip'), { x: 0, y: 228, w: 292, h: 90, name: 'strip' }, 'camRect(strip)＠664 高');
+  eq(st.camRect('full'), { x: 0, y: 0, w: 292, h: 322, name: 'full' }, 'camRect(full)');
+  sw.innerHeight = 548; eq(st.camRect('strip'), { x: 0, y: 256, w: 292, h: 62, name: 'stripS' }, 'camRect(strip)＠548 高＝stripS');
+  sw.innerHeight = 664;
+  // route：含起點、逐段 navRoute（跟 walk 同一條）、可以給一串 keys、起點可以是人
+  const S = dip.spots, CC = (from, keys) => CS.crowdChain(DS, dip, from, keys, obs).pts.map(q => q.slice(0, 2));
+  eq(st.route('counter', 'ref'), CC('counter', ['ref']), 'route(counter, ref)＝[counter, …navRoute]');
+  eq(st.route('door', ['in', 'frontleft', 'duelE']), CC('door', ['in', 'frontleft', 'duelE']), 'route(door, [in, frontleft, duelE])＝主線客人那條');
+  st.put('o', 'counter', 'owner');
+  eq(st.route('o', 'ref'), CC('counter', ['ref']), 'route(人, …)：從那個人現在的位置');
+  eq(st.route([197, 243], [264, 224]), CC([197, 243], [[264, 224]]), 'route([x,y], [x,y])');
+  eq(st.route('out', 'door'), [[S.out[0], S.out[1]], [S.door[0], S.door[1]]], '門外那段直走（跟 walk 一樣）');
+  eq(st.route('nope', 'ref'), [], '起點不認得 → []');
+  // hold：e／f／p／o 以外＝隨手拿著（carry）、不舉起、不記進 TT.held；p 照舊
+  st.put('w1', [86, 243], { skin: 't' });
+  const held0 = JSON.stringify(st.clashState().held);
+  st.hold('w1', { sleeve: 'swans|filth' });
+  eq([F.actors.w1.hold, F.actors.w1.arm], [{ carry: true, sleeve: 'swans|filth' }, null], "hold('w1', {sleeve})：carry、不舉起");
+  eq(JSON.stringify(st.clashState().held), held0, 'hold(w1) 不記進唱盤區的 TT.held');
+  st.hold('w2', 'ace'); eq(F.actors.w2.hold, { carry: true, ace: true }, "hold(w2, 'ace')");
+  st.hold('w1', null); eq(F.actors.w1.hold, null, 'hold(w1, null) 放下');
+  st.hold('p', { sleeve: 'radiohead|ok computer' }); eq(F.actors.p.arm, 'show', "hold('p') 照舊舉起（對決）");
+  // back、addHot／removeHot 轉給 shop
+  st.back('w1', true); st.back('w1', false);
+  eq(F.log.filter(x => x[0] === 'back'), [['back', 'w1', true], ['back', 'w1', false]], 'back(id, on) 轉給 shop.back');
+  const hot = { id: 'cw-w1', follow: 'w1', rel: [-12, -46, 24, 28], action: 'talk:xiaoyu', label: '小魚', pri: 2, noSparkle: true, minY: 150, noLabel: true };
+  st.addHot(hot); st.removeHot('cw-w1');
+  eq(F.log.filter(x => x[0] === 'addHot' || x[0] === 'removeHot'), [['addHot', hot], ['removeHot', 'cw-w1']], 'addHot／removeHot 轉給 shop');
+  // finishAll 只收 p o f q1 q2：走動槽不快轉
+  let wd = 0; st.walk('w1', ['browse']).then(() => wd++); st.walk('p', ['pay']);
+  const n0 = F.log.length; st.finishAll(); await flush();
+  ok(!F.log.slice(n0).some(x => x[0] === 'put' && x[1] === 'w1') && wd === 0, 'finishAll 不把走動槽 w1 放到終點（閒逛的人不快轉）', F.log.slice(n0));
+  ok(F.log.slice(n0).some(x => x[0] === 'put' && x[1] === 'p'), 'finishAll 照收 p');
+  // unmount：w1–w3 收泡泡與頭上圖示（姿勢不動，翻箱的照翻）
+  const n1 = F.log.length; st.unmount();
+  const um = F.log.slice(n1);
+  for (const id of ['w1', 'w2', 'w3']) ok(um.some(x => x[0] === 'say' && x[1] === id && x[2] == null) && um.some(x => x[0] === 'emote' && x[1] === id && x[2] == null), 'unmount 收 ' + id + ' 的泡泡與圖示');
+  ok(!um.some(x => x[0] === 'pose' && /^w/.test(x[1])), 'unmount 不動走動槽的姿勢');
+  // onTapAny：shop 的每一下點擊轉給 stage.onTapAny（可以 mount 後再設）
+  const got = []; st.onTapAny = (x, y, h) => got.push([x, y, h && h.id]);
+  F.opts.onTapAny(10, 20, null); F.opts.onTapAny(30, 40, { id: 'bin:rock' });
+  eq(got, [[10, 20, null], [30, 40, 'bin:rock']], 'onTapAny 照轉');
+  st.onTapAny = null; F.opts.onTapAny(1, 1, null); eq(got.length, 2, '沒設就不叫');
+});
+// 真的 shop.js 掛在很小的假 DOM 上（canvas 只記不畫；跟 hit.test 同一招）：LP1 熱點、LP5 聊天泡泡、LP6 talk 與隨手拿著
+const DOMLOG = [];
+function fakeCtx2d() {
+  const base = { measureText: t => ({ width: String(t).length * 7 }), createRadialGradient: () => ({ addColorStop() {} }), createLinearGradient: () => ({ addColorStop() {} }),
+    getImageData() { throw new Error('no pixels'); }, isPointInPath: () => false, drawImage(cv) { if (cv && cv.tag) DOMLOG.push(['img', cv.tag]); } };
+  return new Proxy(base, { get: (t, k) => (k in t ? t[k] : (typeof k === 'string' && /^[a-z]/.test(k) ? (t[k] = function () {}) : undefined)), set: (t, k, v) => { t[k] = v; return true; } });
+}
+function fakeEl(tag, W0) {
+  const kids = [], cls = new Set(), lis = {}, attrs = {};
+  const style = { setProperty(k, v) { style[k] = v; }, removeProperty(k) { delete style[k]; } };
+  const el = {
+    tagName: String(tag).toUpperCase(), style, dataset: {}, children: kids, parent: null, width: 0, height: 0, id: '', attrs, _text: '',
+    classList: { add: (...a) => a.forEach(c => cls.add(c)), remove: (...a) => a.forEach(c => cls.delete(c)), toggle: (c, on) => { if (on === undefined ? !cls.has(c) : on) cls.add(c); else cls.delete(c); }, contains: c => cls.has(c) },
+    set className(v) { cls.clear(); String(v).split(/\s+/).filter(Boolean).forEach(c => cls.add(c)); }, get className() { return [...cls].join(' '); },
+    set innerHTML(v) { kids.length = 0; }, get innerHTML() { return ''; },
+    set textContent(v) { kids.length = 0; el._text = String(v); }, get textContent() { return el._text + kids.map(k => k.textContent).join(''); },
+    appendChild(c) { kids.push(c); c.parent = el; return c; }, insertBefore(c) { kids.push(c); c.parent = el; return c; },
+    remove() { if (el.parent) { const i = el.parent.children.indexOf(el); if (i >= 0) el.parent.children.splice(i, 1); el.parent = null; } },
+    setAttribute(k, v) { attrs[k] = String(v); }, getAttribute(k) { return attrs[k]; }, getContext: () => fakeCtx2d(),
+    addEventListener(t, f) { (lis[t] = lis[t] || []).push(f); }, removeEventListener() {}, dispatch(t, ev) { (lis[t] || []).forEach(f => f(ev || {})); },
+    getBoundingClientRect: () => ({ left: 0, top: 0, x: 0, y: 0, width: W0 || 0, height: 0, right: W0 || 0, bottom: 0 }),
+    get clientWidth() { return W0 || 0; },
+    // 泡泡的大小：聊天泡泡＝max-width 那麼寬、64 高（3 行＋名字行），其他 40×20
+    get offsetWidth() { return cls.has('chat') ? (parseFloat(style.maxWidth) || 150) : 40; }, get offsetHeight() { return cls.has('chat') ? 64 : 20; },
+    animate: () => ({ cancel() {} })
+  };
+  return el;
+}
+const ROWS = Array.from({ length: 16 }, (_, j) => (j < 2 ? '.'.repeat(16) : '....kkkkkkkk....'));
+let rafQ = [], TS = 0;
+function frames(n, ms = 100) { for (let i = 0; i < n; i++) { TS += ms; const q = rafQ; rafQ = []; q.forEach(f => f(TS)); } }
+function installDom() {
+  globalThis.document = { createElement: t => fakeEl(t), addEventListener() {}, removeEventListener() {}, hidden: false };
+  globalThis.window = globalThis.window || {};
+  globalThis.Image = function () { this.onload = null; this.onerror = null; this.src = ''; };
+  globalThis.requestAnimationFrame = f => { rafQ.push(f); return rafQ.length; };
+  globalThis.cancelAnimationFrame = () => {};
+  globalThis.devicePixelRatio = 1;
+  globalThis.location = globalThis.location || { search: '', href: 'http://localhost/game-lab/' };
+}
+function mountReal(opts, W0) { const host = fakeEl('div', W0 || 390); return DS.mount(host, JSON.parse(JSON.stringify(dip)), Object.assign({ cards, sprites: { owner: ROWS, girl: ROWS }, sparkle: false }, opts || {})); }
+const HOT = (who, slot, pri) => ({ id: 'cw-' + slot, follow: slot, rel: dip.crowd.hot.rel.slice(), action: 'talk:' + who, label: who === 'passer' ? '客人' : who, pri: pri || 2, noSparkle: true, minY: dip.crowd.hot.minY, noLabel: true });
+const tapAt = (shop, x, y) => { const v = shop.view(), ev = { clientX: (x + 0.5) * v.scale, clientY: (y - v.y + 0.5) * v.scale, pointerType: 'touch' }; shop.canvas.dispatch('pointerdown', ev); shop.canvas.dispatch('pointerup', ev); };
+
+asection('LP1 addHot／removeHot（真 shop.js）：進出 hotspots()、跟著人走、腳底 y<150 時 gone、noLabel、結帳時壓過櫃檯', async () => {
+  installDom();
+  const acts = [];
+  const shop = mountReal({ onAction: (a, h) => acts.push([a, h.id]) });
+  const idOf = h => (h ? h.id : null);
+  shop.put('o', 'counter', 'owner');
+  shop.put('w1', [86, 243], 'girl');
+  shop.addHot(HOT('xiaoyu', 'w1'));
+  let h = shop.hotspots().find(x => x.id === 'cw-w1');
+  ok(h && h.dyn && h.follow === 'w1' && !h.gone && h.action === 'talk:xiaoyu' && h.label === 'xiaoyu', 'addHot：hotspots() 列得到（dyn、follow、gone）', h);
+  eq(h && h.rect, [74, 197, 24, 28], '熱點＝腳底 [86,243]＋rel [-12,-46,24,28]');
+  eq(h && h.depth, 243.5, '深度＝那個人的 y＋0.5');
+  eq(idOf(shop.pick(86, 210)), 'cw-w1', '點他的胸口＝聊天熱點');
+  ok(shop.hotPoints().some(p => p.id === 'cw-w1'), 'hotPoints 有他（e2e 真點得到）');
+  shop.put('w1', [197, 189]);
+  eq(shop.hotspots().find(x => x.id === 'cw-w1').rect, [185, 143, 24, 28], '換站：熱點跟著走');
+  shop.put('w1', [62, 127]);   // 進門走廊（特價箱、INDIE ROCK 前）
+  h = shop.hotspots().find(x => x.id === 'cw-w1');
+  ok(h.gone && idOf(shop.pick(62, 100)) !== 'cw-w1' && !shop.hotPoints().some(p => p.id === 'cw-w1'), '腳底 y127 < minY 150 → gone（點不到、hotPoints 沒有）', h);
+  shop.put('w1', [86, 150]); ok(!shop.hotspots().find(x => x.id === 'cw-w1').gone, '腳底 y150 → 點得到（停留點最高 y162）');
+  shop.hide('w1', true); ok(shop.hotspots().find(x => x.id === 'cw-w1').gone, '藏起來 → gone');
+  shop.put('w1', [86, 243]);
+  // 真點：放開＝onAction(talk:xiaoyu)；noLabel：不浮名牌（名字寫在泡泡第一行）
+  const before = shop.overlay.children.length; tapAt(shop, 86, 210);
+  eq(acts.pop(), ['talk:xiaoyu', 'cw-w1'], '真點他＝onAction(talk:xiaoyu)');
+  ok(!shop.overlay.children.some(c => c.className.includes('ds-label')), 'noLabel：點到不浮名牌', shop.overlay.children.map(c => c.className));
+  shop.reveal(800); ok(!shop.overlay.children.some(c => c.className.includes('ds-label') && c.textContent === 'xiaoyu'), 'noLabel：reveal 也不浮他的名牌');
+  ok(shop.overlay.children.some(c => c.className.includes('ds-label') && c.textContent === '搖滾'), '（對照：reveal 照樣浮箱子的名牌）');
+  // 同 id 再加＝換掉；跟 layout 熱點同 id → 不加
+  shop.addHot(Object.assign(HOT('akai', 'w1'), {}));
+  eq(shop.hotspots().filter(x => x.id === 'cw-w1').map(x => x.action), ['talk:akai'], '同 id 再加＝換掉（不重複）');
+  const warns = [], cw = console.warn; console.warn = (...a) => warns.push(a.join(' '));
+  shop.addHot({ id: 'owner', follow: 'w1', rel: [0, 0, 4, 4], action: 'talk:x', label: 'x' }); console.warn = cw;
+  eq(shop.hotspots().filter(x => x.id === 'owner').length, 1, '跟 layout 熱點同 id → 不加（console.warn）');
+  ok(warns.some(w => /addHot: id 跟 layout 的熱點重複 owner/.test(w)), 'warn 有寫是哪個 id', warns);
+  shop.removeHot('cw-w1');
+  ok(!shop.hotspots().some(x => x.id === 'cw-w1') && idOf(shop.pick(86, 210)) !== 'cw-w1', 'removeHot：hotspots() 沒有、點不到');
+  // 結帳（c-pay＝spots.regular、pri 3）：熱點整塊在櫃檯熱點裡，點他＝聊；腿（櫃檯熱點下面、容錯）也是他；櫃檯左半照樣是櫃檯
+  shop.put('w2', 'regular', 'girl'); shop.back('w2', true); shop.addHot(HOT('afang', 'w2', 3));
+  eq(shop.hotspots().find(x => x.id === 'cw-w2').rect, [252, 178, 24, 28], 'c-pay 的熱點 [252,178,24,28]（在櫃檯 [212,178,72,28] 裡）');
+  for (const [x, y] of [[264, 192], [253, 180], [275, 204], [264, 212], [258, 222]]) eq(idOf(shop.pick(x, y)), 'cw-w2', '站櫃檯前結帳：點 (' + x + ',' + y + ')＝跟他聊（壓過櫃檯，含容錯）');
+  for (const [x, y] of [[220, 192], [236, 200], [246, 185]]) eq(idOf(shop.pick(x, y)), 'counter', '櫃檯左半 (' + x + ',' + y + ')＝櫃檯');
+  shop.removeHot('cw-w2'); eq(idOf(shop.pick(264, 192)), 'counter', '他走了：那裡又是櫃檯');
+  shop.destroy();
+});
+
+asection('LP5 聊天泡泡（真 shop.js）：只有 more 吃點擊、名字行、窄螢幕 150／摘句 220、quote＋出處、夾在舞台框內、蓋到封面過半改放旁邊、onTapAny 每一下', async () => {
+  installDom();
+  const any = [], acts = [];
+  const shop = mountReal({ onAction: (a, h) => acts.push(a), onTapAny: (x, y, h) => any.push([x, y, h ? h.id : null]) });
+  shop.put('w1', [86, 243], 'girl');
+  const kids = el => el.children.map(c => [c.className, c.textContent]);
+  let n = 0;
+  const el = shop.say('w1', '這箱有張封面我盯好久了', { chat: true, who: '小魚', more: true, onTap: () => n++ });
+  ok(el.classList.contains('ds-say') && el.classList.contains('chat') && el.classList.contains('more'), '有下一句：.ds-say.chat.more（CSS 只讓 .more 吃點擊）', el.className);
+  eq(kids(el), [['who', '小魚'], ['tx', '這箱有張封面我盯好久了'], ['nx', '▼']], '第一行名字、字、右下角 ▼');
+  eq([el.getAttribute('role'), el.getAttribute('aria-live'), el.getAttribute('tabindex')], ['status', 'polite', '0'], 'role=status、aria-live=polite、可以 Tab 到');
+  el.dispatch('click', { stopPropagation() {}, preventDefault() {} }); eq(n, 1, '點泡泡＝onTap（下一句）');
+  el.dispatch('keydown', { key: 'Enter', stopPropagation() {}, preventDefault() {} }); el.dispatch('keydown', { key: ' ', stopPropagation() {}, preventDefault() {} }); el.dispatch('keydown', { key: 'a' });
+  eq(n, 3, 'Enter／空白鍵＝下一句；其他鍵不算');
+  eq(el.style.maxWidth, '150px', '舞台寬 ≤400（390）：max-width 150');
+  let closed = 0;
+  const el2 = shop.say('w1', '下次見。', { chat: true, who: '小魚', onClose: () => closed++ });
+  ok(!shop.overlay.children.includes(el), '同一個人的新泡泡換掉舊的');
+  ok(!el2.classList.contains('more') && !el2.children.some(c => c.className === 'nx') && el2.getAttribute('tabindex') === undefined, '最後一句：沒有 more、沒有 ▼、不吃點擊（點下去落到底下的封面）', el2.className);
+  shop.say('w1', null); eq(closed, 1, 'say(id, null) 收掉 → onClose 一次');
+  const el3 = shop.say('w1', '那張專輯是她在家裡自己錄的', { chat: true, who: '周姐', quote: true, src: '藝人介紹・某某', more: true, onTap() {} });
+  eq(kids(el3), [['who', '周姐'], ['tx', '「那張專輯是她在家裡自己錄的」'], ['src', '藝人介紹・某某'], ['nx', '▼']], '行家摘句：字外加「」、下緣一行出處');
+  ok(el3.classList.contains('quote') && el3.style.maxWidth === '220px', '摘句 max-width 220', el3.style.maxWidth);
+  const plain = shop.say('o', '歡迎。');
+  ok(!plain.classList.contains('chat') && !plain.classList.contains('more') && plain.textContent === '歡迎。' && !plain.style.maxWidth, '一般泡泡照舊（沒有 chat／more、不吃點擊、寬照現行）', plain.className);
+  // 位置：每個停留點的頭頂泡泡，算它蓋到 bin:*／rack:*／poster:*／feature／sale 熱點的最大比例；>0.5 而且放得下的那一邊擋得比較少
+  //   （蓋過半的熱點個數少，一樣多比總面積）→ .side，否則頭頂（店裡箱子很密：中島旁的人頭頂和旁邊常常都蓋過半，換到旁邊不能反而擋更多）；而且整個在舞台框內
+  const v = shop.view(), OW = 292 * v.scale, OH = v.h * v.scale, hs = shop.hotspots().filter(x => /^(bin:|rack:|poster:)/.test(x.id) || x.id === 'feature' || x.id === 'sale');
+  const cov = r => { let fr = 0, ar = 0, n = 0; for (const x of hs) { const q = x.rect, X = q[0] * v.scale, Y = (q[1] - v.y) * v.scale, w = q[2] * v.scale, hh = q[3] * v.scale, a = Math.max(0, Math.min(r[0] + r[2], X + w) - Math.max(r[0], X)) * Math.max(0, Math.min(r[1] + r[3], Y + hh) - Math.max(r[1], Y)); fr = Math.max(fr, a / (w * hh)); if (a / (w * hh) > 0.5) n++; ar += a; } return { fr, ar, n }; };
+  const less = (a, b) => a.n !== b.n ? a.n < b.n : a.ar < b.ar, NONE = { n: Infinity, ar: Infinity };
+  let sides = 0, tops = 0; const table = [];
+  for (const x of CS.crowdStops(dip)) {
+    shop.put('w1', [x.x, x.y]);
+    const b = shop.say('w1', '一二三四五六七八九十一二三四五六七八九十一二三四五六七八', { chat: true, who: '阿凱' });
+    const W = 150, H = 64, left = parseFloat(b.style.left), top = parseFloat(b.style.top), sh = parseFloat(b.style['--shift'] || '0');
+    const headY = (x.y - 39 - v.y) * v.scale, cx = x.x * v.scale, sh0 = (() => { const l = cx - W / 2; return l < 2 ? 2 - l : l + W > OW - 2 ? (OW - 2) - (l + W) : 0; })();
+    const rX = (x.x + 24) * v.scale + 6, lX = (x.x - 24) * v.scale - 6, mY = Math.min(Math.max((x.y - 30 - v.y) * v.scale, H / 2 + 2), OH - H / 2 - 2);
+    const cR = rX + W <= OW - 2 ? cov([rX, mY - H / 2, W, H]) : NONE, cL = lX - W >= 2 ? cov([lX - W, mY - H / 2, W, H]) : NONE, bestS = less(cL, cR) ? cL : cR;
+    const topRect = [cx + sh0 - W / 2, headY - 7 - H, W, H], cT = cov(topRect), want = headY - H - 8 < 2 || (cT.fr > 0.5 && less(bestS, cT));
+    table.push(x.id + ' 頭頂蓋過半 ' + cT.n + ' 個' + (b.classList.contains('side') ? '→旁邊 ' + bestS.n + ' 個' : ''));
+    eq(b.classList.contains('side'), want, x.id + '：頭頂蓋過半 ' + cT.n + ' 個（最多 ' + Math.round(cT.fr * 100) + '%）、旁邊 ' + [cR.n, cL.n].join('／') + ' 個' + (want ? ' → 放身體旁' : ' → 頭頂'));
+    const R = b.classList.contains('side') ? (b.classList.contains('sl') ? [left - W, top - H / 2, W, H] : [left, top - H / 2, W, H]) : [left + sh - W / 2, top - 7 - H, W, H];
+    ok(R[0] >= 0 && R[1] >= 0 && R[0] + R[2] <= OW + 0.5 && R[1] + R[3] <= OH + 0.5, x.id + '：泡泡整個在舞台框內', R.map(Math.round));
+    if (b.classList.contains('side')) { sides++; if (headY - H - 8 >= 2) ok(less(cov(R), cT), x.id + '：放旁邊擋得比頭頂少', [cov(R), cT]); } else tops++;
+  }
+  ok(sides > 0 && tops > 0, '兩種都有出現（頭頂 ' + tops + '、旁邊 ' + sides + '）', table);
+  if (process.argv.includes('--bubbles')) console.log('  ' + table.join('；'));
+  shop.put('w1', [86, 162]);
+  ok(!shop.say('w1', '二二', { chat: true, who: '阿凱', sideIfCover: 2 }).classList.contains('side'), 'sideIfCover 2（永不）→ 頭頂（機制可以關）');
+  // onTapAny：每一下點擊都通知（沒點中熱點也算），點中的照常 onAction；拖曳不算
+  shop.say('w1', null); any.length = 0; acts.length = 0;
+  let empty = null; for (const [x, y] of [[150, 140], [140, 128], [120, 145], [260, 300], [10, 320]]) if (!shop.pick(x, y)) { empty = [x, y]; break; }
+  ok(empty, '找到一個沒熱點的地方', empty);
+  if (empty) { tapAt(shop, empty[0], empty[1]); eq(any.map(a => a[2]), [null], '點空地：onTapAny(x, y, null)'); eq(acts, [], '點空地：沒有 onAction'); }
+  const bp = shop.hotPoints().find(p => p.id === 'bin:hiphop');
+  shop.canvas.dispatch('pointerdown', { clientX: bp.x, clientY: bp.y, pointerType: 'touch' }); shop.canvas.dispatch('pointerup', { clientX: bp.x, clientY: bp.y, pointerType: 'touch' });
+  eq(any.map(a => a[2]), [null, 'bin:hiphop'], '點箱子：onTapAny 先通知（hit＝那個熱點）'); eq(acts, ['crate:hiphop'], '那一下照常生效（走去翻）');
+  shop.canvas.dispatch('pointerdown', { clientX: bp.x, clientY: bp.y, pointerType: 'touch' }); shop.canvas.dispatch('pointerup', { clientX: bp.x + 40, clientY: bp.y, pointerType: 'touch' });
+  eq(any.length, 2, '拖曳（移動超過 tapTol）不算一下點擊');
+  // 寬螢幕（舞台 >400）：260（摘句也 260）
+  shop.destroy();
+  const wide = mountReal({}, 500); wide.put('w1', [86, 243], 'girl'); wide.put('w2', [197, 243], 'girl');
+  eq([wide.say('w1', '一句話', { chat: true, who: '阿凱' }).style.maxWidth, wide.say('w2', '摘句', { chat: true, who: '周姐', quote: true, src: '藝人介紹・某某' }).style.maxWidth], ['260px', '260px'], '舞台寬 >400：聊天泡泡 260（摘句也 260）');
+  // chat 的 ms：到時自動收、不除動畫速度；沒給 ms＝不自動收
+  const sp = mountReal({ speed: () => 4 }); sp.put('w1', [86, 243], 'girl'); sp.put('w2', [197, 243], 'girl'); sp.put('o', 'counter', 'owner');
+  sp.say('w1', '停久一點', { chat: true, who: '阿凱', ms: 120 }); sp.say('w2', '不收', { chat: true, who: '大頭' }); sp.say('o', '老闆的話', { ms: 120 });
+  await new Promise(r => setTimeout(r, 60));
+  const sayIds = () => sp.overlay.children.filter(c => c.className.includes('ds-say')).map(c => c.textContent);
+  ok(sayIds().some(t => /停久一點/.test(t)) && !sayIds().includes('老闆的話'), '動畫 ×4：一般泡泡 120÷4 已收、聊天泡泡還在（不吃動畫加速）', sayIds());
+  await new Promise(r => setTimeout(r, 120));
+  ok(!sayIds().some(t => /停久一點/.test(t)) && sayIds().some(t => /不收/.test(t)), 'chat ms 120 到時收；沒給 ms 的不自動收', sayIds());
+  sp.destroy(); wide.destroy();
+});
+
+asection('LP6 talk 與隨手拿著（真 shop.js＋DipLabChars 樁）：pose talk 對到 talk 格、carry 不強迫正面、背對時畫在身體後面、back(id,on)', async () => {
+  installDom();
+  const drawn = [];
+  const CH = { POSES: { idle: 2, walk: 2, throw: 2, hurt: 2, ko: 1, cheer: 2, dig: 2, hold: 1, point: 1, sit: 1, talk: 2 }, DIRS: ['front', 'back', 'side'], ARM: { show: ['hold', 0], wind: ['throw', 0] },
+    render: () => ({ h: 17, y: 0 }), npc: () => ({}), normalize: s => s, anchor: () => [6, -20],
+    toCanvas: (spec, pose, frame, o) => { drawn.push([pose, frame, o.dir]); return { width: 30, height: 52, ax: 15, ay: 48, tag: (spec.tag || '?') + ':' + pose + ':' + o.dir } } };
+  const W0 = globalThis.window; globalThis.window = Object.assign({}, W0, { DipLabChars: CH });
+  try {
+    const holds = [];
+    const shop = mountReal({ holdDraw: (P, a) => { holds.push(a.id); DOMLOG.push(['hold', a.id]); } });
+    shop.put('w1', [86, 243], { tag: 'w1', skin: 't' });
+    shop.pose('w1', 'talk'); drawn.length = 0; shop.setTime(10); shop.setTime(10.5); shop.setTime(11); shop.setTime(11.5);
+    ok(drawn.some(d => d[0] === 'talk' && d[2] === 'front'), "pose('talk') → DipLabChars 的 talk 格（正面）", drawn);
+    eq([...new Set(drawn.filter(d => d[0] === 'talk').map(d => d[1]))].sort(), [0, 1], 'talk 兩格輪著換（每 0.5 秒）');
+    shop.setTime(null); shop.pose('w1', null);
+    // carry：走路照轉向（往上走＝背面），不像對決拿封套一律正面
+    shop.hold('w1', { sleeve: 'swans|filth', carry: true });
+    frames(1); shop.walk('w1', [[86, 162]]); frames(3);
+    eq(shop.pos('w1').dir, 'back', '隨手拿著往上走：背面（照走路轉向）');
+    shop.put('w1', [86, 243]); shop.hold('w1', { sleeve: 'swans|filth' }); shop.walk('w1', [[86, 162]]); frames(3);
+    eq(shop.pos('w1').dir, 'front', '（對照：對決那種拿法一律正面）');
+    shop.put('w1', [86, 243]); shop.hold('w1', null);
+    // back(id, on)：站著也背對；拿著東西也維持背面；on=false 回正面
+    shop.back('w1', true); frames(2); eq(shop.pos('w1').dir, 'back', 'back(w1, true)：背對鏡頭');
+    shop.hold('w1', { sleeve: 'swans|filth', carry: true }); eq(shop.pos('w1').dir, 'back', '背對時拿著東西也維持背面（結帳把唱片遞給老闆）');
+    DOMLOG.length = 0; shop.render();
+    const iImg = DOMLOG.findIndex(d => d[0] === 'img' && /^w1:/.test(d[1])), iHold = DOMLOG.findIndex(d => d[0] === 'hold' && d[1] === 'w1');
+    ok(iHold >= 0 && iImg >= 0 && iHold < iImg, '背對時手上那張畫在身體後面（先畫唱片、再畫人）', DOMLOG.slice(0, 8));
+    shop.back('w1', false); frames(1); DOMLOG.length = 0; shop.render();
+    const jImg = DOMLOG.findIndex(d => d[0] === 'img' && /^w1:/.test(d[1])), jHold = DOMLOG.findIndex(d => d[0] === 'hold' && d[1] === 'w1');
+    ok(jHold > jImg && jImg >= 0, 'back(w1, false)：正面時唱片畫在身體前面', DOMLOG.slice(0, 8));
+    eq(shop.pos('w1').dir, 'front', 'back(w1, false)：回正面');
+    shop.destroy();
+  } finally { globalThis.window = W0; }
 });
 
 for (const [name, fn] of asections) { const f0 = fail; try { await fn(); } catch (e) { fail++; fails.push(name + ' threw: ' + (e.stack || e)); } console.log((fail === f0 ? 'ok  ' : 'FAIL') + ' ' + name); }

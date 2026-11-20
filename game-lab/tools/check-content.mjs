@@ -20,6 +20,8 @@
 //     每張 id 全表唯一、name ≤8、text ≤25、timing hand／duel／hold、op 在 engine APEX_OPS（combo＝2 個以上原語）、params 在範圍內、時機准用、hold 只有 timing hold 才有（而且是准當「留著」的原語）；
 //     禁區字（不會被剋、必中、免疫、無視）；winHeal 整數；notes 每個用到的 op 都有一句（≤25 字）；C.apexTrialOnly＝名單扣 C.aces；
 //     名單裡的新卡（C.apexTrialOnly）可以沒有試聽（主站沒有固定試聽＝「無來源」，烘成 previewUrl ''）。
+//   活店（SPEC-H；匯出 crowdProblems(C, E)、crowdNotes(C)）：LD1 熟客名冊與 C.crowd／C.encounter／C.crowdUi、LD2 撞造型（帽子分族）、LD3 台詞 C.chat／C.ownerChat（形狀、防編造、句數）、
+//     LD4 熟客牌組；LD5 劇本與 ACTORS 不再有 r1（scriptProblems）。
 //   第 D 波棒二三流派（?fac=1；匯出 factionProblems(C, E)）：C.factions 三派 name／icon＝C.aceTitle／C.aceIcon、fx 鍵、picks 5 項（id 唯一、op 在 engine FAC_OPS、第 5 項 second）、
 //     priority＝picks 的排列、notes 每個鍵都有 {n}、apexSwap（op 在 APEX_OPS、params 範圍、時機、卡在那派名單、留著型字樣、結果句）、畫面字齊全、factionsTag。
 //   卡片 id（第 B 波 SPEC-B §1.1）：每張卡的鍵＝id＝catalogId(藝人, 專輯)；舊 id 對照表（匯出 legacyProblems(C)）：C.legacyIds()＋C.legacyExtra＝tools/legacy-ids.json。
@@ -33,7 +35,7 @@
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
 //     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
 //   v4 劇本（§2.5.3、§2.5.4，B2；匯出 scriptProblems(C, layout)）：序章 O1–O21、收尾 E1–E11 的 id 與順序；D §2 店主改的句子逐字；
-//     步驟（do／人物／站位都在 shops/dip.json）；翻箱（pose dig）之前同一串步驟裡一定先走路；序章與收尾藏熟客；O11 停音樂、O14 才入袋；
+//     步驟（do／人物／站位都在 shops/dip.json）；翻箱（pose dig）之前同一串步驟裡一定先走路；r1 退役、劇本不再提熟客（SPEC-H LD5）；O11 停音樂、O14 才入袋；
 //     兩顆接受對決；E4 他走到門口才晃門、地上留一張盤、撿起面板；選完才走到唱盤（C.blocking.toDuel 三人終點）；v3 墊片都刪了；
 //     無限試煉沒有打烊：script 的鍵是 prologue／epilogueWin／bossEnter／bossDown（每輪打倒藏家）／dead／again／drop（掉落旁白，店主 11-13），沒有 clear 與第二夜預告。
 //
@@ -383,6 +385,7 @@ export function contentProblems(C, E) {
   bad.push(...tuneProblems(C));
   bad.push(...apexProblems(C, E));
   bad.push(...encoreProblems(C, E));
+  bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
   bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
   for (const id of [...Object.values(C.aces), ...Object.values(C.gifts).flat(), ...C.bargain.pool]) if (CARDS[id]) ok(CARDS[id].pitch, id + ': 缺推薦語（王牌、老闆四張、特價箱）');
@@ -580,10 +583,358 @@ export function binsProblems(C, E) {
 }
 
 // ================================================================================================
+// 活店（SPEC-H §2、§5.7、§5.8、§6.2、§7.4、附錄 A；匯出 crowdProblems(C, E)、crowdNotes(C)）：LD1–LD4（LD5＝scriptProblems 的 r1 退役）
+//   LD1 名冊：C.regulars 6 位、名字、外觀合法、聲音、likes 是 dip.json crowd.stops 的 id、weight／encW 合法、行家只有周姐；C.crowd（附錄 A 的形狀、路人 4 套、
+//       熱點＝dip.json crowd.hot）、C.encounter（第一階段 on:false、reward shelf｜bag、不另設拿錢數字）、C.crowdUi 第一階段三句。
+//   LD2 撞造型：帽子分族比（挑戰者用到哪幾族由 C.enemies 的外觀算出來，皇冠族一律禁），上衣不准 apron／suit，不跟任何挑戰者、老闆、玩家預設外觀完全相同；
+//       熟客 6＋路人 4 彼此也不准完全相同。
+//   LD3 台詞 C.chat／C.ownerChat：id 全域唯一、who／cat／need 合法、空格白名單、防編造（手寫句沒有拉丁字母、阿拉伯數字、《》、兩個以上中文數字＋年、事實字、
+//       寫死流派名；「這箱＋聲音描述」要 need.at；樣板拿掉空格後沒有數字與拉丁字母、《》只包 {album}、{year}／{decade} 後 3 字內沒有盤／壓、
+//       評價字跟 need 的軸對得上、說「在哪一箱」的知識樣板要 onShelf）、每泡字數；每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗；draft 佔位只准第二階段的切磋類）；
+//       C.crowdFact（卡片空格怎麼填）：十類曲風中文＝主站 genre-tree.json 頂層 zh、卡池每張的 genres[0]／region／tune 都對得到、樣板只用表上有的空格、
+//       發行年下限、三軸字＝經典／冷門／硬蕊（填不出來＝null 由導演給、chatPick usable 判掉，不准預設字）。
+//       收藏通則字（首版、音質、最好…）的警告清單歸 lint-copy（棒 3b），這裡不重複。
+//   LD4 熟客牌組：7 張不重複、都是核心卡（有封面、試聽、藝人介紹）、非頂點卡、不跟主線客人／老闆四張／特價箱／王牌／其他熟客重複；
+//       主屬性 deckMain＝main、嚴格峰值落在主屬性 ≥4 張、≥4 張在他愛停那幾箱；taste／honesty／tune／off 合法。
+// ================================================================================================
+const REG_IDS = ['xiaoyu', 'akai', 'datou', 'afang', 'laochen', 'zhoujie'];
+const EXPERT_ID = 'zhoujie';
+const CROWD_STOPS = ['c-rock', 'c-soul', 'c-citypop', 'c-world', 'c-elec', 'c-hiphop', 'c-classical', 'c-folk', 'c-listen', 'c-pay'];   // dip.json 沒有 crowd 段時的退路（§4.1）
+const HAT_FAMILY = { phones: '耳機族', bigphones: '耳機族', neckphones: '耳機族', beanie: '毛帽族', pompom: '毛帽族', cap: '鴨舌帽族', capback: '鴨舌帽族', trucker: '鴨舌帽族',
+  beret: '貝雷帽', fedora: '紳士帽族', tophat: '紳士帽族', crown: '皇冠' };
+const HAT_ALWAYS_BANNED = ['皇冠'];      // e7 品味之神保留（random 也不出）
+const TOP_BANNED = ['apron', 'suit'];    // 老闆、二手店老闆／傳說藏家
+const WAVES = ['sine', 'square', 'sawtooth', 'triangle'];
+const CHAT_CATS = {
+  regular: ['hello', 'again', 'chat', 'dig', 'shelf', 'trip', 'close', 'mem', 'busy'],
+  expert: ['hello', 'again', 'chat', 'trip', 'close', 'mem', 'busy', 'loreIn', 'loreOut', 'fact'],
+  enc: ['encDare', 'encYes', 'encNo', 'encLapse', 'encLose', 'encWin', 'encVoid'],   // 第二階段（棒 3d）
+  passer: ['chat'], owner: ['chat', 'trip']
+};
+// §5.7 第一階段句數（hello 算泡泡數，其他算句數）；老闆 chat 22＝閒聊 12（沒有 need.met）＋店裡的事 10（need.met）
+export const CHAT_TARGET = {
+  regular: { hello: 2, again: 6, chat: 12, dig: 8, shelf: 4, trip: 6, close: 3, mem: 3, busy: 2 },
+  expert: { hello: 2, again: 6, chat: 8, trip: 3, close: 3, mem: 3, busy: 2, loreIn: 10, loreOut: 4, fact: 20 },
+  passer: { chat: 30 }, owner: { chat: 22, trip: 8 }, ownerMet: 10
+};
+const TRIP_NEED = { posGte: 'int', posLte: 'int', streakGte: 'int', bagGte: 'int', hpHalf: 'bool', retried: 'bool', dare: 'bool', firstRun: 'bool', newFar: 'bool', encWon: 'bool', encLost: 'bool', ace: 'ace' };
+const HOLES_HAND = ['title', 'pos', 'last', 'far', 'name'];
+const HOLES_CARD = ['artist', 'album', 'year', 'decade', 'genre', 'bin', 'region', 'tune', 'axis'];
+const TEMPLATE_CATS = ['shelf', 'fact', 'loreIn', 'loreOut'];
+const FACT_HAND = /年代|得獎|葛萊美|金曲|銷量|賣了.*張|排行|榜|出道|解散|團員|製作人|廠牌|首張|最後一張|遺作|影響了/;
+const FACT_TEMPLATE = /首張|最後一張|得獎|葛萊美|金曲|銷量|賣了.*張|排行|榜|出道|解散|團員|製作人|廠牌|遺作|影響了|名盤|首版|原版|壓片|音質/;
+const FLOW_NAMES = /經典流|冷門流|異端流|殿堂|流亡/;
+const ZH_YEAR = /[〇零一二三四五六七八九十]{2,}年/;
+const THIS_BIN = /這箱|這區|這排|這邊的/;
+const SOUND = /鼓|貝斯|吉他|人聲|唱腔|節奏|旋律|編曲|合成器|弦樂|取樣|鋼琴|管樂|和聲/;
+const EVAL = { o: /冷門|知道的人不多|少人知道/, h: /硬蕊|入耳|門檻|難入口|慢慢聽/, c: /經典|很多人|大家都/ };
+const clen2 = s => [...String(s)].length;
+const holesOf = s => [...String(s).matchAll(/\{([a-zA-Z]+)\}/g)].map(m => m[1]);
+const noHoles = s => String(s).replace(/\{[a-zA-Z]+\}/g, '');
+const normKey = s => String(s || '').normalize('NFC').trim().toLowerCase();
+function introShardOf(key) { let h = 0x811c9dc5; for (let i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h % 64; }   // ＝dip-artist-intro.js shardOf
+function artistIntro() {
+  const dir = path.join(ROOT, 'data', 'artist-intros'), cache = {};
+  if (!fs.existsSync(path.join(dir, 'manifest.json'))) return null;
+  return artist => {
+    const k = normKey(artist), s = introShardOf(k);
+    if (!(s in cache)) { try { cache[s] = JSON.parse(fs.readFileSync(path.join(dir, String(s).padStart(2, '0') + '.json'), 'utf8')).entries || {}; } catch (_) { cache[s] = {}; } }
+    return !!cache[s][k];
+  };
+}
+function crowdLayout() { try { return JSON.parse(fs.readFileSync(path.join(LAB, 'shops', 'dip.json'), 'utf8')).crowd || null; } catch (_) { return null; } }
+
+export function crowdProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const R = C.regulars, CARDS = C.cards || {};
+  if (!ok(R && typeof R === 'object', 'LD1：C.regulars（活店熟客名冊）沒有')) return bad;
+  const Ch = require(path.join(LAB, 'chars.js'));
+  const LC = crowdLayout();
+  const stops = LC && Array.isArray(LC.stops) ? LC.stops : null;
+  const stopIds = stops ? stops.map(s => s && s.id) : CROWD_STOPS;
+  const stopBin = {}; (stops || []).forEach(s => { if (s && s.bin) stopBin[s.id] = s.bin; });
+
+  // ---- LD1 名冊 ----
+  ok(JSON.stringify(Object.keys(R)) === JSON.stringify(REG_IDS), 'LD1：C.regulars 要剛好是 ' + REG_IDS.join(' ') + '（照這個順序），現在 ' + Object.keys(R).join(' '));
+  const names = new Set();
+  const lookOk = (look, w) => {
+    if (typeof look === 'string') return ok(Ch.cast().includes(look), w + '：look「' + look + '」不是 chars.js 的 npc id');
+    if (!ok(look && typeof look === 'object' && !Array.isArray(look), w + '：look 要是 npc id 或 spec 物件')) return false;
+    ok(!('head' in look) && !('shirt' in look) && !('pants' in look), w + '：look 要寫新 spec（不是舊捏角色的 head／shirt／pants）');
+    const n = Ch.normalize(look), FIELDS = Object.keys(Ch.DEFAULT).filter(k => k !== 'v');
+    let good = true;
+    for (const [k, v] of Object.entries(look)) {
+      if (!ok(FIELDS.includes(k), w + '：look.' + k + ' 不是 chars.js 的欄位')) { good = false; continue; }
+      if (!ok(n[k] === v, w + '：look.' + k + '＝' + v + ' chars.js 不認得（normalize 換成 ' + n[k] + '）')) good = false;
+    }
+    return good;
+  };
+  const voiceOk = (v, w) => ok(v && Number.isFinite(v.freq) && v.freq >= 80 && v.freq <= 2000 && WAVES.includes(v.wave) && (v.jitter == null || (Number.isFinite(v.jitter) && v.jitter >= 0)),
+    w + '：voice 要 { freq 80–2000, wave ' + WAVES.join('／') + '（jitter 可省） }');
+  for (const id of REG_IDS) {
+    const r = R[id], w = 'LD1 regulars.' + id;
+    if (!ok(r, w + '：沒有')) continue;
+    ok(typeof r.name === 'string' && clen2(r.name) >= 1 && clen2(r.name) <= 4 && !names.has(r.name) && !/[A-Za-z0-9]/.test(r.name), w + '：name（1–4 字、不重複）');
+    names.add(r.name);
+    lookOk(r.look, w);
+    voiceOk(r.voice, w);
+    ok(Array.isArray(r.likes) && r.likes.length >= 1 && r.likes.length <= 4 && new Set(r.likes).size === r.likes.length && r.likes.every(s => stopIds.includes(s)),
+      w + '：likes 要是 1–4 個不重複的 crowd.stops id（' + stopIds.join(' ') + '），現在 ' + JSON.stringify(r.likes));
+    ok(Number.isFinite(r.weight) && r.weight > 0 && r.weight <= 3, w + '：weight（推門抽人的權重）要 >0、≤3');
+    ok(Number.isInteger(r.encW) && r.encW >= 1 && r.encW <= 5, w + '：encW（切磋「嗆」的權重）要是 1–5 的整數');
+    ok(!('expert' in r) || (id === EXPERT_ID && r.expert === true), w + '：expert 只准周姐（crowd-core EXPERT＝' + EXPERT_ID + '）');
+    const en = r.enc || {};
+    if (!ok(r.enc && typeof r.enc === 'object', w + '：enc 沒有')) continue;
+    ok(Number.isInteger(en.off) && en.off >= -3 && en.off <= 3, w + '：enc.off（棋力）要是 −3～+3 的整數');
+    ok(ATTRS.includes(en.main), w + '：enc.main 要是 c／o／h');
+    ok(/^[coh]{3}$/.test(en.taste || '') && new Set(en.taste).size === 3 && en.taste[0] === en.main, w + '：enc.taste 要是 coh 的排列、主屬性開頭');
+    ok(C.honesty && Object.prototype.hasOwnProperty.call(C.honesty, en.honesty), w + '：enc.honesty 要是 C.honesty 的鍵');
+    ok(TUNE_CELLS.includes(en.tune), w + '：enc.tune 要是 C.tunes 八格之一');
+  }
+  ok(R[EXPERT_ID] && R[EXPERT_ID].expert === true, 'LD1：周姐要標 expert:true（行家）');
+  // C.crowd（附錄 A）
+  const CR = C.crowd || {};
+  const rng = (a, lo) => Array.isArray(a) && a.length === 2 && a.every(Number.isFinite) && a[0] <= a[1] && a[0] >= (lo == null ? 0 : lo);
+  ok(typeof CR.on === 'boolean', 'LD1：C.crowd.on 要是 true／false');
+  ok(Number.isInteger(CR.max) && CR.max >= 1 && CR.max <= 3, 'LD1：C.crowd.max（同時走動）1–3');
+  ok(Number.isInteger(CR.firstRunFrom) && CR.firstRunFrom >= 1, 'LD1：C.crowd.firstRunFrom');
+  ok(Array.isArray(CR.startInside) && CR.startInside.every(x => Array.isArray(x) && Number.isInteger(x[0]) && x[0] >= 0 && x[0] <= (CR.max || 3) && x[1] >= 0)
+    && Math.abs(CR.startInside.reduce((t, x) => t + x[1], 0) - 1) < 1e-9, 'LD1：C.crowd.startInside 機率加起來要 1、人數 ≤ max');
+  ok(CR.doorEvent && rng(CR.doorEvent.after) && CR.doorEvent.earlyLeave > 0 && CR.doorEvent.earlyLeave < 1, 'LD1：C.crowd.doorEvent');
+  ok(rng(CR.gap, 1) && rng(CR.refill, 1), 'LD1：C.crowd.gap／refill 是 [min,max] 毫秒');
+  ok(CR.doorLock && ['afterGuest', 'afterSwing', 'swing'].every(k => Number.isFinite(CR.doorLock[k]) && CR.doorLock[k] > 0), 'LD1：C.crowd.doorLock');
+  ok(CR.kinds && CR.kinds.regular > 0 && CR.kinds.passer > 0, 'LD1：C.crowd.kinds（熟客／路人）');
+  ok(Number.isFinite(CR.recent) && CR.recent >= 0, 'LD1：C.crowd.recent');
+  const ST = CR.stops || {};
+  ok(Array.isArray(ST.n) && ST.n.every(x => Number.isInteger(x[0]) && x[0] >= 1 && x[0] <= 3 && x[1] > 0) && rng(ST.dig, 1) && rng(ST.listen, 1) && rng(ST.pay, 1), 'LD1：C.crowd.stops（站數權重、各種停留毫秒）');
+  ok(CR.likeW > 0 && CR.otherSide > 0 && CR.payP >= 0 && CR.payP <= 1 && CR.speed > 0 && CR.yieldSpeed >= CR.speed, 'LD1：C.crowd.likeW／otherSide／payP／speed／yieldSpeed');
+  const TK = CR.talk || {};
+  ok(Number.isInteger(TK.beatsPerVisit) && TK.beatsPerVisit >= 1 && Number.isInteger(TK.passerBeats) && TK.ringK > 0 && TK.ringK <= 1 && TK.trip >= 0 && TK.trip <= 1 && TK.loreP >= 0 && TK.loreP <= 1
+    && Number.isInteger(TK.closeAt) && Number.isInteger(TK.memAt), 'LD1：C.crowd.talk 的數字');
+  ok(TK.w && Object.keys(TK.w).every(k => CHAT_CATS.regular.includes(k)) && TK.expert && Object.keys(TK.expert).every(k => k === 'know' || CHAT_CATS.expert.includes(k)), 'LD1：C.crowd.talk.w／expert 的鍵要是台詞分類（周姐另有 know）');
+  const BB = CR.bubble || {};
+  ok(BB.min > 0 && BB.max >= BB.min && BB.holdMore > 0 && BB.narrowW > 0 && BB.quoteW >= BB.narrowW && BB.sideIfCover > 0 && BB.sideIfCover <= 1, 'LD1：C.crowd.bubble');
+  ok(CR.hot && Array.isArray(CR.hot.rel) && CR.hot.rel.length === 4 && Number.isFinite(CR.hot.minY), 'LD1：C.crowd.hot');
+  if (LC && LC.hot) ok(JSON.stringify(LC.hot) === JSON.stringify(CR.hot), 'LD1：C.crowd.hot 要＝shops/dip.json crowd.hot（一份數字兩處寫，改一邊要改另一邊）：' + JSON.stringify(LC.hot) + ' vs ' + JSON.stringify(CR.hot));
+  ok(CR.title && CR.title.max >= 0 && CR.title.max <= 1 && Number.isFinite(CR.title.minY) && rng(CR.title.move, 1), 'LD1：C.crowd.title（標題回訪最多 1 位）');
+  ok(CR.warm && CR.warm.batchMs > 0 && CR.warm.maxWait > 0, 'LD1：C.crowd.warm');
+  ok(Array.isArray(CR.passers) && CR.passers.length === 4, 'LD1：C.crowd.passers 要 4 套凍結外觀（§2.3）');
+  (CR.passers || []).forEach((p, k) => ok(p && typeof p === 'object', 'LD1：C.crowd.passers[' + k + '] 要是 spec 物件（凍結，不在執行期隨機）') && lookOk(p, 'LD1 crowd.passers[' + k + ']'));
+  // C.encounter（附錄 A；第二階段才開）
+  const EN = C.encounter || {};
+  ok(typeof EN.on === 'boolean', 'LD1：C.encounter.on 要是 true／false（第一階段 false）');
+  ok(['shelf', 'bag'].includes(EN.reward), 'LD1：C.encounter.reward 要是 shelf｜bag（§15 拍板題）');
+  ok(Number.isInteger(EN.from) && EN.from >= 1 && EN.p > 0 && EN.p <= 1 && Number.isInteger(EN.perRound) && EN.perRound >= 1, 'LD1：C.encounter.from／p／perRound');
+  ok(Array.isArray(EN.slots) && EN.slots.length && EN.slots.every(i => [0, 1, 2].includes(i)), 'LD1：C.encounter.slots 只准一般客人位 0–2（菁英、藏家位不出）');
+  ok(EN.lapse > 0 && EN.short > 0 && EN.short <= 1, 'LD1：C.encounter.lapse／short');
+  ok(!('cash' in EN) && !('skipCash' in EN) && ((C.waveC || {}).loot || {}).skipCash > 0, 'LD1：切磋不收改拿的錢＝C.waveC.loot.skipCash（不另設）');
+  // C.crowdUi 第一階段三句
+  const CU = C.crowdUi || {};
+  ok(['intro', 'expertIntro', 'src'].every(k => typeof CU[k] === 'string' && CU[k]), 'LD1：C.crowdUi.intro／expertIntro／src');
+  ok(/熟客/.test(CU.intro || '') && /周姐/.test(CU.expertIntro || '') && /\{artist\}/.test(CU.src || ''), 'LD1：crowdUi.intro 講「熟客」、expertIntro 講周姐、src 有 {artist}');
+  ok(typeof CU.passer === 'string' && CU.passer, 'LD1：C.crowdUi.passer（路人泡泡第一行）');
+  ok(['新', '店主', '原句'].includes(C.crowdUiTag), 'LD1：crowdUiTag');
+
+  // ---- LD2 撞造型 ----
+  const specOf = x => typeof x === 'string' ? Ch.npc(x) : x && typeof x === 'object' && ('head' in x || 'shirt' in x) ? Ch.fromDipChar(x) : Ch.normalize(x || {});
+  const key = s => JSON.stringify(Ch.normalize(s));
+  const chal = Object.entries(C.enemies || {}).map(([id, e]) => [id, specOf(e.avatar || e.spr || 'e0')]);
+  const fams = new Set(HAT_ALWAYS_BANNED);
+  chal.forEach(([, s]) => { if (HAT_FAMILY[s.hat]) fams.add(HAT_FAMILY[s.hat]); });
+  const others = [['老闆', Ch.npc('owner')], ['玩家預設', Ch.DEFAULT]].concat((C.avatarsFallback || []).map((a, k) => ['玩家備用造型 ' + k, Ch.fromDipChar(a)]));
+  const looks = REG_IDS.filter(id => R[id]).map(id => ['熟客 ' + id, R[id].look]).concat((CR.passers || []).map((p, k) => ['路人 ' + k, p]));
+  const seenLook = new Map();
+  for (const [w, look] of looks) {
+    const s = specOf(look), f = HAT_FAMILY[s.hat];
+    ok(!f || !fams.has(f), 'LD2 ' + w + '：帽子 ' + s.hat + '（' + f + '）跟挑戰者同族（挑戰者用到：' + [...fams].join('、') + '；只剩不在這幾族的帽子）');
+    ok(!TOP_BANNED.includes(s.top), 'LD2 ' + w + '：上衣不准 ' + TOP_BANNED.join('／') + '（老闆、二手店老闆、藏家）');
+    for (const [eid, cs] of chal) ok(key(cs) !== key(s), 'LD2 ' + w + '：外觀跟挑戰者 ' + eid + ' 完全相同');
+    for (const [ow, os] of others) ok(key(os) !== key(s), 'LD2 ' + w + '：外觀跟' + ow + '完全相同');
+    ok(!seenLook.has(key(s)), 'LD2 ' + w + '：外觀跟' + seenLook.get(key(s)) + ' 完全相同');
+    seenLook.set(key(s), w);
+  }
+
+  // ---- LD3 台詞 ----
+  const chat = C.chat, own = C.ownerChat;
+  if (ok(Array.isArray(chat), 'LD3：C.chat 要是陣列') & ok(Array.isArray(own), 'LD3：C.ownerChat 要是陣列')) {
+    const ids = new Set(), count = {};
+    const lineOk = (l, w, isOwner) => {
+      if (!ok(l && typeof l === 'object', w + '：不是物件')) return;
+      ok(typeof l.id === 'string' && /^[A-Za-z0-9_-]+$/.test(l.id) && !ids.has(l.id), w + '：id 必填、只用英數 - _、全域唯一（' + l.id + '）');
+      ids.add(l.id);
+      const who = l.who, regular = REG_IDS.includes(who), expert = who === EXPERT_ID;
+      ok(isOwner ? who === 'owner' : (regular || who === 'passer'), w + '：who 要是' + (isOwner ? ' owner' : ' C.regulars 的鍵或 passer') + '，現在 ' + who);
+      const cats = isOwner ? CHAT_CATS.owner : who === 'passer' ? CHAT_CATS.passer : (expert ? CHAT_CATS.expert : CHAT_CATS.regular).concat(CHAT_CATS.enc);
+      ok(cats.includes(l.cat), w + '：' + who + ' 的 cat 只准 ' + cats.join('／') + '，現在 ' + l.cat);
+      ok(l.tag === '新', w + '：tag 要是「新」（全部進 LINES-REVIEW）');
+      ok(l.draft == null || (l.draft === true && CHAT_CATS.enc.includes(l.cat)), w + '：draft 佔位只准第二階段的切磋類（' + CHAT_CATS.enc.join('／') + '）；第一階段的句子棒 3b 已搬齊');
+      const texts = typeof l.text === 'string' ? [l.text] : l.text;
+      if (!ok(Array.isArray(texts) && texts.length >= 1 && texts.length <= 3 && texts.every(t => typeof t === 'string' && t.trim()), w + '：text 要是字串或 1–3 個字串（一個＝一個泡泡）')) return;
+      const k = (isOwner ? 'owner' : who) + '.' + l.cat;
+      count[k] = (count[k] || 0) + (l.cat === 'hello' ? texts.length : 1);
+      if (isOwner && l.cat === 'chat' && l.need && l.need.met) count['owner.met'] = (count['owner.met'] || 0) + 1;
+      // need
+      const need = l.need, tpl = !isOwner && TEMPLATE_CATS.includes(l.cat);   // 樣板＝架上樣板 shelf、周姐的 fact／loreIn／loreOut（卡片欄位空格只准用在這幾類）
+      if (need != null && ok(need && typeof need === 'object' && !Array.isArray(need) && Object.keys(need).length, w + '：need 要是非空物件')) {
+        for (const [nk, nv] of Object.entries(need)) {
+          if (nk === 'at') { const at = Array.isArray(nv) ? nv : [nv]; ok(at.length && at.every(s => stopIds.includes(s)), w + '：need.at 要是 crowd.stops 的 id'); continue; }
+          if (nk === 'onShelf') { ok(nv === true && l.cat === 'fact', w + '：need.onShelf 只准 true、只用在周姐的知識樣板（fact）'); continue; }
+          if (ATTRS.includes(nk)) {
+            ok(l.cat === 'fact', w + '：need.' + nk + '（三軸）只用在知識樣板（fact）');
+            ok((Number.isInteger(nv) && nv >= 1 && nv <= 7) || /^\s*(>=|<=|>|<|=|==)?\s*[1-7]\s*$/.test(String(nv)) || (Array.isArray(nv) && nv.length === 2), w + '：need.' + nk + ' 要是 1–7、「>=4」或 [lo,hi]');
+            continue;
+          }
+          if (nk === 'met') {
+            ok(isOwner, w + '：need.met 只用在老闆句（見過某位熟客）');
+            ok(nv === true || (typeof nv === 'string' && REG_IDS.includes(nv)) || (Array.isArray(nv) && nv.length && nv.every(x => REG_IDS.includes(x))), w + '：need.met 要是熟客 id、id 陣列或 true');
+            continue;
+          }
+          const tk = TRIP_NEED[nk];
+          if (!ok(tk, w + '：need.' + nk + ' 不認得（只准 ' + Object.keys(TRIP_NEED).concat(['at', 'onShelf', 'o', 'h', 'c', 'met']).join('、') + '）')) continue;
+          if (tk === 'int') ok(Number.isInteger(nv) && nv >= 1, w + '：need.' + nk + ' 要是正整數');
+          if (tk === 'bool') ok(typeof nv === 'boolean', w + '：need.' + nk + ' 要是 true／false');
+          if (tk === 'ace') ok((Array.isArray(nv) ? nv : [nv]).every(t => TIERS.includes(t)), w + '：need.ace 要是 hall／pearl／heresy');
+        }
+      }
+      const N = need || {};
+      // 空格白名單
+      const allowed = isOwner || !tpl ? HOLES_HAND : HOLES_HAND.concat(HOLES_CARD);
+      for (const t of texts) for (const h of holesOf(t)) {
+        ok(allowed.includes(h), w + '：空格 {' + h + '} 不准（' + (tpl ? '樣板' : '手寫句') + '只准 ' + allowed.map(x => '{' + x + '}').join('') + '）');
+        if (h === 'name') ok(typeof N.met === 'string', w + '：{name} 要配 need.met（指定哪一位熟客）');
+      }
+      ok(!/\{(?![a-zA-Z]+\})|(?<!\{[a-zA-Z]*)\}/.test(texts.join('')), w + '：大括號沒配對');
+      // 防編造
+      for (const t of texts) {
+        const bare = noHoles(t), n = clen2(bare);
+        ok(!FLOW_NAMES.test(t), w + '：不准寫死流派名（用 {title}）：' + t);
+        ok(!/——/.test(t), w + '：不准破折號：' + t);
+        if (tpl) {
+          ok(!/[A-Za-z0-9０-９Ａ-Ｚａ-ｚ]/.test(bare), w + '：樣板拿掉空格後不准有數字、拉丁字母：' + t);
+          ok(!/[《》]/.test(String(t).replace(/《\{album\}》/g, '')), w + '：樣板的《》只准包 {album}：' + t);
+          ok(!FACT_TEMPLATE.test(t), w + '：樣板不准有事實字／收藏通則（首張、得獎、銷量、團員、製作人、廠牌、排行、影響了、名盤、首版、原版、壓片、音質…）：' + t);
+          ok(!/\{(year|decade)\}.{0,3}[盤壓]/.test(t), w + '：{year}／{decade} 後面 3 字內不准有「盤」「壓」（卡池沒有壓片年份，只准說發行）：' + t);
+          const has = ATTRS.filter(a => EVAL[a].test(t)), axes = ATTRS.filter(a => a in N);
+          ok(has.every(a => axes.includes(a)), w + '：評價字（' + has.map(a => ZH[a]).join('、') + '）要配同一軸的 need（冷門＝o、硬蕊＝h、經典＝c）：' + t);
+          if (l.cat === 'fact' && (/\{bin\}/.test(t) || THIS_BIN.test(t))) ok(N.onShelf === true, w + '：說「在哪一箱」的知識樣板要 need.onShelf（那張真的在架上）：' + t);
+          ok(n <= 28, w + '：樣板拿掉空格後 ≤28 字，現在 ' + n + '：' + t);
+        } else {
+          ok(!/[A-Za-z0-9０-９Ａ-Ｚａ-ｚ]/.test(bare), w + '：手寫句不准有拉丁字母、阿拉伯數字（真的藝人、專輯、年份只能從樣板空格來）：' + t);
+          ok(!/[《》]/.test(t), w + '：手寫句不准有《》：' + t);
+          ok(!ZH_YEAR.test(t), w + '：手寫句不准兩個以上中文數字接「年」（七二年、八〇年代…）：' + t);
+          ok(!FACT_HAND.test(t), w + '：手寫句不准有事實字（年代、得獎、銷量、排行、出道、團員、製作人、廠牌、首張、遺作、影響了…）：' + t);
+          ok(n <= (who === 'passer' ? 20 : 28), w + '：每泡 ≤' + (who === 'passer' ? 20 : 28) + ' 字，現在 ' + n + '：' + t);
+        }
+        if (THIS_BIN.test(t) && SOUND.test(t)) ok(Array.isArray(N.at) ? N.at.length : !!N.at, w + '：「這箱」＋聲音描述要綁站位 need.at（換箱就假）：' + t);
+      }
+    };
+    chat.forEach((l, k) => lineOk(l, 'LD3 chat[' + k + '] ' + (l && l.id), false));
+    own.forEach((l, k) => lineOk(l, 'LD3 ownerChat[' + k + '] ' + (l && l.id), true));
+    // 每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗；hello 算泡泡數）。老闆講到的熟客要每位都有（need.met 的 id 涵蓋 6 位）
+    for (const id of REG_IDS) for (const [cat, want] of Object.entries(id === EXPERT_ID ? CHAT_TARGET.expert : CHAT_TARGET.regular))
+      ok((count[id + '.' + cat] | 0) >= want, 'LD3：' + id + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[id + '.' + cat] | 0));
+    for (const [who, T] of [['passer', CHAT_TARGET.passer], ['owner', CHAT_TARGET.owner]]) for (const [cat, want] of Object.entries(T))
+      ok((count[who + '.' + cat] | 0) >= want, 'LD3：' + who + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[who + '.' + cat] | 0));
+    ok((count['owner.met'] | 0) >= CHAT_TARGET.ownerMet, 'LD3：老闆「店裡的事」（chat＋need.met）要 ≥' + CHAT_TARGET.ownerMet + ' 句，現在 ' + (count['owner.met'] | 0));
+    const metWho = new Set(own.filter(l => l && l.need && l.need.met).flatMap(l => [].concat(l.need.met)));
+    ok(REG_IDS.every(id => metWho.has(id)), 'LD3：老闆「店裡的事」要每位熟客都有（need.met），缺 ' + REG_IDS.filter(id => !metWho.has(id)).join(' '));
+    // 老闆句講到某位熟客的名字，就要 need.met 那位（沒見過的人不能先被講）
+    for (const l of own) for (const t of [].concat(l && l.text || [])) for (const id of REG_IDS) {
+      const nm = (R[id] || {}).name;
+      if (nm && String(t).includes(nm)) ok(l.need && [].concat(l.need.met).includes(id), 'LD3 ownerChat ' + l.id + '：講到「' + nm + '」要 need.met 含 ' + id + '：' + t);
+    }
+    // 樣板用到的卡片空格都要在 C.crowdFact 的填法表裡（填法見 content.js 註解）
+    const usedHoles = new Set(chat.filter(l => l && TEMPLATE_CATS.includes(l.cat)).flatMap(l => [].concat(l.text || []).flatMap(holesOf)).filter(h => HOLES_CARD.includes(h)));
+    crowdFactProblems(C, usedHoles).forEach(m => bad.push(m));
+  }
+
+  // ---- LD4 熟客牌組 ----
+  const hasIntro = artistIntro();
+  const taken = new Map();
+  Object.entries(C.enemies || {}).forEach(([eid, e]) => (e.deck || []).forEach(id => taken.set(id, '客人 ' + eid)));
+  Object.entries(C.gifts || {}).forEach(([t, g]) => (g || []).forEach(id => taken.set(id, '老闆四張 ' + t)));
+  ((C.bargain || {}).pool || []).forEach(id => taken.set(id, '特價箱'));
+  Object.entries(C.aces || {}).forEach(([t, id]) => taken.set(id, '王牌 ' + t));
+  const binAll = k => new Set(((C.bins || {})[k] || {}).all || []);
+  for (const id of REG_IDS) {
+    const en = (R[id] || {}).enc || {}, w = 'LD4 regulars.' + id + '.enc.deck';
+    const deck = en.deck;
+    if (!ok(Array.isArray(deck) && deck.length === 7 && new Set(deck).size === 7, w + '：要 7 張不重複，現在 ' + (deck || []).length)) continue;
+    const cs = [];
+    for (const cid of deck) {
+      const c = CARDS[cid];
+      if (!ok(c, w + '：找不到卡 ' + cid)) continue;
+      cs.push(c);
+      ok(!c.pool, w + '：' + cid + ' 要是核心卡（cards.js；有介紹、封面、試聽），不是精選新卡');
+      ok(!c.tier, w + '：' + cid + ' 是王牌／頂點卡');
+      ok(!taken.has(cid), w + '：' + cid + ' 跟' + taken.get(cid) + '重複');
+      if (hasIntro) ok(hasIntro(c.artist), w + '：' + cid + ' 的藝人（' + c.artist + '）在 data/artist-intros 沒有介紹');
+      taken.set(cid, '熟客 ' + id);
+    }
+    if (cs.length !== 7 || !ATTRS.includes(en.main)) continue;
+    ok(E.deckMain(cs, en.taste) === en.main, w + '：主屬性（deckMain）要＝enc.main ' + en.main + '，現在 ' + E.deckMain(cs, en.taste));
+    const sp = cs.filter(c => strictPeak(c) === en.main).length;
+    ok(sp >= 4, w + '：嚴格峰值落在主屬性（' + ZH[en.main] + '）的要 ≥4 張，現在 ' + sp);
+    const likeBins = ((R[id] || {}).likes || []).map(s => stopBin[s]).filter(Boolean);
+    if (likeBins.length) { const n = cs.filter(c => likeBins.some(b => binAll(b).has(c.id))).length; ok(n >= 4, w + '：≥4 張要在他愛停那幾箱（' + likeBins.join('／') + '），現在 ' + n); }
+  }
+  return bad;
+}
+// C.crowdFact（卡片空格怎麼填；§6.2，棒 3b）：導演照這張表組 ctx.card.vars，填不出來給 null（chatPick usable 判掉那句）。這裡驗表本身跟卡池、主站對得上
+const FACT_GENRES = ['rock', 'jazz', 'electronic', 'soul', 'hiphop', 'classical', 'folk', 'pop', 'world', 'blues'];
+export function crowdFactProblems(C, usedHoles) {
+  const bad = [], F = C.crowdFact;
+  const ok = (cond, msg) => { if (!cond) bad.push('LD3 crowdFact：' + msg); return !!cond; };
+  if (!ok(F && typeof F === 'object', 'C.crowdFact（卡片空格的填法表）沒有')) return bad;
+  ok(Number.isInteger(F.minYear) && F.minYear >= 1900 && F.minYear <= 1960, 'minYear（比它早的 year／decade 給 null）要是 1900–1960 的整數');
+  ok(Number.isInteger(F.axisMin) && F.axisMin >= 3 && F.axisMin <= 5, 'axisMin 要是 3–5');
+  ok(Number.isInteger(F.maxFilled) && F.maxFilled >= 28 && F.maxFilled <= 48, 'maxFilled（樣板填完的字數上限，§5.4 是 40）');
+  ok(JSON.stringify(F.axis) === JSON.stringify(ZH), 'axis 要剛好是 ' + JSON.stringify(ZH) + '（三軸只准經典／冷門／硬蕊）');
+  ok(F.region && JSON.stringify(Object.keys(F.region).sort()) === JSON.stringify(['jp', 'tw', 'zh']) && Object.values(F.region).every(v => typeof v === 'string' && v && !/[A-Za-z0-9]/.test(v)),
+    'region 只准 tw／jp／zh 三個中文名（xx 其他地區不填，§6.2）');
+  ok(F.genre && JSON.stringify(Object.keys(F.genre).sort()) === JSON.stringify(FACT_GENRES.slice().sort()), 'genre 要剛好是十類（' + FACT_GENRES.join(' ') + '）');
+  // 十類中文＝主站 genre-tree.json 頂層的 zh（主站改名要一起改）
+  let tree = null; try { tree = JSON.parse(fs.readFileSync(path.join(ROOT, 'genre-tree.json'), 'utf8')); } catch (_) {}
+  if (tree && Array.isArray(tree.genres)) for (const g of tree.genres) if (FACT_GENRES.includes(g.id)) ok(F.genre && F.genre[g.id] === g.zh, 'genre.' + g.id + '＝「' + (F.genre || {})[g.id] + '」，主站 genre-tree.json 是「' + g.zh + '」');
+  // 卡池每張都對得到（曲風、頻率）；地區只出現 tw／jp／zh／xx
+  const CARDS = C.cards || {}, names = (C.tunes || {}).names || {};
+  let gBad = 0, tBad = 0, rBad = 0;
+  for (const c of Object.values(CARDS)) {
+    if (!(F.genre || {})[((c.genres || [])[0]) || '']) gBad++;
+    if (!names[c.tune]) tBad++;
+    if (!['tw', 'jp', 'zh', 'xx'].includes(c.region)) rBad++;
+  }
+  ok(!gBad, gBad + ' 張卡的 genres[0] 在 genre 表找不到中文');
+  ok(!tBad, tBad + ' 張卡的 tune 在 C.tunes.names 找不到');
+  ok(!rBad, rBad + ' 張卡的 region 不是 tw／jp／zh／xx（表要補，或改成 null）');
+  for (const h of usedHoles || []) ok(HOLES_CARD.includes(h), '樣板用到 {' + h + '}，填法表沒有這個空格');
+  return bad;
+}
+// 提醒（不擋）：第二階段的切磋類佔位；C.crowdFact 每個空格在卡池填得到幾張（填不到＝那句對那張不出）
+export function crowdNotes(C) {
+  const all = [].concat(Array.isArray(C.chat) ? C.chat : [], Array.isArray(C.ownerChat) ? C.ownerChat : []);
+  const d = all.filter(l => l && l.draft).length;
+  const out = d ? ['切磋類還有 ' + d + ' 句佔位（draft；第二階段棒 3d 搬句）'] : [];
+  const F = C.crowdFact, cards = Object.values(C.cards || {});
+  if (F && cards.length) {
+    const n = { year: 0, region: 0, axis: 0 };
+    for (const c of cards) {
+      if (c.year >= F.minYear) n.year++;
+      if ((F.region || {})[c.region]) n.region++;
+      const ax = ATTRS.map(a => c[a]).sort((x, y) => y - x);
+      if (ax[0] >= F.axisMin && ax[0] > ax[1]) n.axis++;
+    }
+    out.push('卡片空格填得到的張數（全池 ' + cards.length + '）：{year}{decade} ' + n.year + '、{region} ' + n.region + '、{axis} ' + n.axis + '；{artist}{album}{genre}{tune} 全部；{bin} 只在那張真的在架上');
+  }
+  return out;
+}
+
+// ================================================================================================
 // v4 劇本（SPEC-v4 §2.5.3、§2.5.4；D §2、§3）
 // ================================================================================================
 const STEP_DO = ['walk', 'pose', 'emote', 'wait', 'door', 'face', 'hold', 'hide', 'give', 'floor', 'sfx', 'par', 'seq'];
-const ACTORS = ['p', 'o', 'f', 'r1', 'q1', 'q2'];
+const ACTORS = ['p', 'o', 'f', 'q1', 'q2'];   // r1（站樁熟客）退役（SPEC-H §2.4、LD5）：活店的人用走動槽 w1–w3，導演 crowd.js 管，不進劇本
 const SET_KEYS = ['put', 'door', 'notes', 'sprite', 'hide', 'sil', 'pose', 'emote', 'stamp'];
 const UIS = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
 export function scriptProblems(C, L) {
@@ -666,8 +1017,10 @@ export function scriptProblems(C, L) {
   ok(by('E10').who === '？？？' && by('E11').ui === 'map' && by('E4').ui === 'stake' && by('E7').ui === 'relic', 'E4 撿起面板、E7 配件、E10 ？？？、E11 今晚來客');
   // 音樂：O4 開始播今晚那張、O10 說完才停（O11 淡出 1.5 秒）
   ok(by('O4').music === 'tonight' && !by('O10').music && by('O11').music && by('O11').music.stop === 1500 && by('O11').set && by('O11').set.notes === false, '音樂：O4 開始、O11 才淡出 1500 ms（私人收藏那句說完之後）');
-  // 熟客：序章與收尾藏起來
-  ok(by('O2').set && by('O2').set.hide && by('O2').set.hide.r1 === true && by('O2').set.door === 'swing' && by('O2').set.put && by('O2').set.put.p === 'door' && by('E1').set && by('E1').set.hide && by('E1').set.hide.r1 === true, '熟客 r1：O2、E1 藏起來；O2 接手原本 O1 的站位（你在門口、門晃）');
+  // O2 接手原本 O1 的站位（你在門口、門晃、門口那位先藏）；r1 退役（SPEC-H LD5）：劇本裡任何地方都不准再出現 r1（序章與收尾藏人改由導演 crowd.js 的 off 模式管）
+  ok(by('O2').set && by('O2').set.hide && by('O2').set.hide.f === true && by('O2').set.door === 'swing' && by('O2').set.put && by('O2').set.put.p === 'door', 'O2：你在門口、門晃、f 藏起來（接手原本 O1 的站位）');
+  ok(!JSON.stringify(S).includes('"r1"') && !JSON.stringify((C.blocking || {})).includes('"r1"'), 'LD5：劇本與 C.blocking 不准再有 r1（站樁熟客退役，SPEC-H §2.4）');
+  ok(!ACTORS.includes('r1'), 'LD5：ACTORS 不准有 r1');
   // 走位（D §3）
   const fl = id => flat((by(id).pre || []).concat(by(id).act || []));
   const o11 = fl('O11').map(x => x.do + ':' + (x.id || '') + ':' + (x.name || (x.to || []).join('>')));
@@ -1119,6 +1472,7 @@ if (isMain) {
   // 遊戲卡池索引（v5 第六項第一期；第 B 波 v2）：game-lab/pool-index.json＝整池 C.cards（明傳；cards.js 只有核心）非頂點、非傳奇卡的雜湊；漂掉主站「帶去店裡對決」會漏出或多出鈕
   const bad = contentProblems(C, E).concat(poolProblems(C).map(x => '卡池：' + x), poolIndexProblems(C.cards).map(x => '遊戲卡池索引：' + x), legacyProblems(C).map(x => '舊 id 對照表：' + x));
   for (const x of tuneWarnings(C)) console.log('  注意（頻率走鐘，只警告）：' + x);
+  for (const x of crowdNotes(C)) console.log('  注意（活店）：' + x);
   if (bad.length) { console.log('content 自檢沒過（' + bad.length + '）：'); bad.forEach(b => console.log('  ✗ ' + b)); process.exitCode = 1; }
   else {
     const decks = Object.values(C.enemies).map(e => e.id + ' ' + e.deck.length + '／' + e.hp + '／' + E.deckMain(e.deck.map(id => C.cards[id]), e.taste)).join('、');
