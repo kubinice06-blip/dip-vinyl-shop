@@ -5,7 +5,7 @@
 //          [--gate 999] [--spend even|atk] [--money on|off] [--seeds on|off] [--keep on|off] [--lowmul m] [--lowbelow 10] [--tier k]
 //          [--fac] [--patch '{"career":{…}}'] [--cap 300] [--json out.json] [--ctl ctl.json] [--first on|off]
 //   第 I 波 I-0（SPEC-I §7.3、§7.6 GI1–GI3）：第 1 趟 careerGain 帶 first（新帳號第一趟保底到 lexp.firstLv；--first off＝不帶）；曲線照 content（curve.table）。
-//     多印 GI 那幾行：第 1 趟結束 Lv ≥2、第 2 趟結束 Lv ≥3 的帳號比例（每個策略）。I-0 以前的對照：--first off --patch '{"trial":{"firstNeed":0,"firstHp":1},"career":{"curve":{"table":[]}}}'
+//     --c0 k＝帳號編號從 k 起（car-k…；跟 --c0 0 的合併＝加大樣本）。多印 GI 那幾行：第 1 趟結束 Lv ≥2、第 2 趟結束 Lv ≥3 的帳號比例（每個策略）。I-0 以前的對照：--first off --patch '{"trial":{"firstNeed":0,"firstHp":1},"career":{"curve":{"table":[]}}}'
 //   --fac（第 D 波棒二；SPEC-D §7.2）：每一趟 newRun 多 fac:true（?fac=1 三流派：被動＋代價＋本派選項，runPolicy 出了就拿）。G3 帶流派重判用；
 //     沒給 --fac 時一字不差（newRun 不收 fac 鍵）
 //   一個 career＝一個新帳號（ui createRun／recordRun 的跨趟規則）：
@@ -35,7 +35,7 @@ const { TIERS, CFG } = EN;
 const argv = process.argv.slice(2);
 const arg = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 && argv[i + 1] != null ? argv[i + 1] : d; };
 const onOff = (k, d) => { const v = arg(k, d); if (!['on', 'off'].includes(v)) { console.error('--' + k + ' on|off'); process.exit(2); } return v === 'on'; };
-const NC = +arg('careers', 200), NR = +arg('runs', 30), CAP = +arg('cap', 300), TIER = +arg('tier', 0);
+const NC = +arg('careers', 200), NR = +arg('runs', 30), CAP = +arg('cap', 300), TIER = +arg('tier', 0), C0I = +arg('c0', 0);   // --c0 k：帳號編號從 k 起（另一批獨立帳號，合併加大樣本；第 I 波 I-0 GI3）
 const POLS = arg('policies', 'thoughtful,humanRead,novice,high').split(',').filter(Boolean);
 for (const p of POLS) if (!EN.policies[p]) { console.error('unknown policy ' + p); process.exit(2); }
 const ACE = arg('ace', null);
@@ -162,7 +162,7 @@ const pf = arg('progress', null);                                       // 進�
 for (const pol of POLS) {
   const W = Array.from({ length: NR }, () => ({ end: [], gain: [], base: [], route: [], raw: [], low: [], lv: [], lvEnd: [], first: [], spent: [], power: [], t: {}, smax: [], rp: [], seeds: [], drawn: [], owned: [], lv8: [] }));
   const tal = ['atk', 'def', 'hp', 'plea', 'xp', 'rare', 'money', 'pay'];
-  for (let c = 0; c < NC; c++) {
+  for (let c = C0I; c < C0I + NC; c++) {
     const cr = { key: 'car-' + c, xp: 0, spent: {}, off: false, drawn: [], owned: new Set(), relics: [], best: 0, prevEnd: 99, chestDry: 0, respecced: false };
     for (let r = 1; r <= NR; r++) {
       const w = W[r - 1], lv0 = lvOf(cr), args = r === 1 || CONTROL ? {} : EN.talentArgs(C, cr);
