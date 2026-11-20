@@ -1019,7 +1019,7 @@
   function rulesHTML() {
     var R = C.rules || {};
     // 頂點卡試做（?apex=1）：第 6 行的「王牌 7 星，一場用一次。」換成輔助卡那句、頁尾第 2 行換成打贏回 winHeal（C.rules 本身一字不動；旗標關照舊）
-    var apx = function (s, i) { return !UI.apex ? s : String(s).replace('王牌 7 星，一場用一次。', AU('rule')); };
+    var apx = function (s, i) { return !UI.apex ? (encOn() && EU('onceExc') ? String(s).replace('，一場用一次。', EU('onceExc')) : s) : String(s).replace('王牌 7 星，一場用一次。', AU('rule') + (encOn() ? EU('apexExc') : '')); };   // 第 I 波修正輪：翻面例外
     var lines = (R.lines || []).map(function (s, i) { s = apx(s, i); return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : i === 2 ? tintBeats(s) : esc(s)) + '</div></li>'; }).join('');
     var foot = (R.foot || []).slice();
     if (UI.apex && foot.length > 1) foot[1] = AU('rulesFoot', { hp: (C.trial && C.trial.youHp) || '', heal: AX().winHeal, normal: '{normal}', boss: '{boss}' });
@@ -1027,7 +1027,7 @@
       '<ol class="rl">' + lines + '</ol>' +
       (R.why ? '<p class="rwhy">' + whyHTML(R.why) + '</p>' : '') +      // 六行下面另起一段「為什麼這樣剋」（店主 11-12；六行一字不動）
       (R.relics ? '<p class="rrel">' + esc(R.relics) + '</p>' : '') +
-      (encOn() && EU('rule') ? '<p class="rrel renc">' + whyHTML(EU('rule')) + '</p>' : '') +   // 第 I 波翻面（規則卡一段；「翻面」兩字加粗）
+      (encOn() && EU(UI.apex ? 'ruleApex' : 'rule') ? '<p class="rrel renc">' + whyHTML(EU(UI.apex ? 'ruleApex' : 'rule', { star: (C.encore || {}).aceStar || '' })) + '</p>' : '') +   // 第 I 波翻面（規則卡一段；「翻面」兩字加粗；修正輪：預設＝7 星王牌那句、?apex=1＝頂點卡那句）
       '<div class="rfoot">' + foot.map(function (t) { return esc(fill(t, R.hpText || {})); }).join('<br>') + '</div></div>';
   }
   function whyHTML(t) { var i = String(t).indexOf('：'); return i > 0 ? '<b>' + esc(t.slice(0, i)) + '</b>' + esc(t.slice(i)) : esc(t); }
@@ -1801,7 +1801,7 @@
         if (peek) { det.innerHTML = '<span class="lockt">' + lockIcon(12) + esc(TU('aceLockedNote', tierVars(peek))) + '</span>'; return; }   // 點了鎖住的那派：只說明
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
         var gl = (C.aceGloss || {})[sel];   // 括號裡白話講這軸 7 星是什麼（店主 11-12）
-        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + '，一場用一次。' +
+        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>' + (gl ? esc('（' + gl + '）') : '') + (!first && aceEncLine(sel) ? esc(EU('onceExc')) : '，一場用一次。') +   // 第 I 波修正輪：下面接翻面那行時寫「（翻面例外）」
           (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '') +   // 頂點卡試做：教學那場照舊 7 星（FRAME 1.6），寫明
           (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '') +   // 這一挑定下初始流派，其他兩派要打倒傳說藏家（審查 11-16）
           (!first && aceEncLine(sel) ? '<span class="enc" data-tut="enc-pick">' + esc(aceEncLine(sel)) + '</span>' : '');   // 第 I 波翻面（新玩家第一次挑不寫）
@@ -1886,7 +1886,8 @@
         // 點了鎖住的那派：說明怎麼解鎖（一次一張時卡上已經寫了「打倒傳說藏家解鎖」、大鈕按不下去，說明那行不再長出來＝面板不變高）
         var tx = peekT ? (nw ? '' : '<span class="lockt">' + lockIcon(12) + esc(TU('aceLockedNote', tierVars(peekT))) + '</span>')
           : (UI.apex && !ctx.noTut ? '<span class="apx-tut">' + esc(AU('tag')) + '・' + esc(AU('tutNote')) + '</span>' : '') +
-            (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '');
+            (fresh ? '<span class="lockt fp">' + lockIcon(11) + esc(TU('firstPickNote')) + '</span>' : '') +
+            (!first && !UI.apex && aceEncLine(sel, true) ? '<span class="enc" data-tut="enc-pick">' + esc(aceEncLine(sel, true)) + '</span>' : '');   // 第 I 波修正輪：翻面那行（異端 ?fac=1 換條件；新玩家第一次挑不寫）
         det.innerHTML = tx; det.hidden = !tx;
         okb.classList.toggle('off', !!peekT && nw);              // 一次一張、滑到鎖住的那派：大鈕按不下去（按了只響一下）
         okb.setAttribute('aria-disabled', okb.classList.contains('off') ? 'true' : 'false');
@@ -2062,10 +2063,13 @@
     UI.apexOnly = {};
     (C.apexTrialOnly || []).forEach(function (id) { UI.apexOnly[id] = true; });
     UI.apex = QS.apex === '1' && !!AX() && typeof E.apexList === 'function' && typeof E.activateApex === 'function';
+    // 第 I 波修正輪：翻面開著時「王牌一場用一次」那兩則小提示換成寫了翻面例外的（C.encore.ui.tipAce／tipApex）
+    if (encOn() && C.coachTips) { if (EU('tipAce')) C.coachTips.tip_ace = EU('tipAce'); }
     if (!UI.apex) return;
     // 一次性老闆小提示（tutorial.js 照 C.coachTips 找字）：旗標下多兩則（tip_apex、tip_apexMiss）
     var tips = AX().tips || {}; if (!C.coachTips) C.coachTips = {};
     Object.keys(tips).forEach(function (k) { if (!C.coachTips[k]) C.coachTips[k] = tips[k]; });
+    if (encOn() && EU('tipApex')) C.coachTips.tip_apex = EU('tipApex');
   }
   // 這一趟帶的王牌（卡 id）：旗標下＝挑的那張（engine.apexAceId：沒挑過、舊存檔＝那派預設）；旗標關＝那派預設
   function aceIdOf(r) { return !r ? null : UI.apex ? E.apexAceId(r, C) : C.aces[r.ace]; }
@@ -2115,6 +2119,8 @@
       }
       // 這派有沒收到的、或有鎖住的派（灰字那行的「有鎖的還沒收到」）；大鈕裡的專輯名太長就截（鈕一行放得下）
       function anyLocked() { return !!owned && (tabs.some(function (t) { return open.indexOf(t) < 0; }) || E.apexList(C, tier).some(function (x) { return x && card(x.card) && !has(x.card); })); }
+      // 留著型：說明本來就以「留著：」開頭，pickLine 又帶時機「留著」→ 去掉說明開頭那個（第 I 波修正輪）
+      function holdText(A) { var t = String(A.text || ''), h = (TM.hold || '') + '：'; return A.timing === 'hold' && h.length > 1 && t.indexOf(h) === 0 ? t.slice(h.length) : t; }
       function shortAlbum(a) { a = String(a || ''); return a.length > 14 ? a.slice(0, 13) + '…' : a; }
       function mark() {
         qsa('.apx-tabs [data-tab]', s).forEach(function (b) { var on = b.getAttribute('data-tab') === tier; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
@@ -2122,7 +2128,7 @@
         // 說明＝選中的那張；點了沒收到的那張＝那張（能力照寫，知道在收什麼）。怎麼拿／怎麼解鎖寫在換派灰字那一行（位置本來就留著，面板不長高）
         var pk = peek && peek.indexOf('tab:') === 0 ? peek.slice(4) : null, cid = peek && !pk ? peek : sel, c = card(cid) || {}, A = abOf(cid) || {};
         det.innerHTML = '<span class="ar">' + esc((c.artist || '') + '《' + (c.album || '') + '》') + '</span>' +
-          '<span class="ab">' + esc(AU('pickLine', { name: '\u0001', timing: TM[A.timing] || '', text: A.text || '' })).replace('\u0001', '<b>' + esc(A.name || '') + '</b>') +
+          '<span class="ab">' + esc(AU('pickLine', { name: '\u0001', timing: TM[A.timing] || '', text: holdText(A) })).replace('\u0001', '<b>' + esc(A.name || '') + '</b>') +
           (A.swapped ? '<small class="fx-swp">' + esc(FU('swapped')) + '</small>' : '') + '</span>';   // 第 D 波棒二：換過能力的那張補一行小字
         if (encP) { encP.textContent = apexEncLine(A); encP.classList.remove('full'); }   // 第 I 波翻面：一行（太長截斷，點了看全文）
         if (peek) { sw.innerHTML = lockIcon(11) + esc(pk ? TU('aceLockedNote', tierVars(pk)) : AU('notYet') + '：' + AU('lockCard')); sw.classList.add('lockt'); sw.classList.remove('soft'); sw.hidden = false; }
@@ -5396,7 +5402,7 @@
     if (ci) {
       ci.config({ onSoundUnlock: function () { save.settings.sound = true; persist(); }, cardOf: function (id) { return card(id); } });
       if (UI.apex) ci.config({ apex: true });          // 頂點卡試做：頂點卡的唱片資訊多一塊「王牌能力」（旗標關時不設，一字不變）
-      if (UI.apex && FAC()) ci.config({ run: function () { return save.run; } });   // 第 D 波棒二：帶派別的 run＝王牌能力照換一格（cardinfo apexOf 走 apexAbilityOf）
+      ci.config({ run: function () { return save.run; } });   // 第 D 波棒二：帶派別的 run＝王牌能力照換一格（cardinfo apexOf 走 apexAbilityOf）；第 I 波修正輪：一律設（?fac=1 單開、續玩沒帶旗標時 7 星王牌翻面句照 run.fac 換條件）
       ci.on('close', function () { flushToasts(); });
     }
     labSpr();

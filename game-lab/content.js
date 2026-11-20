@@ -1958,8 +1958,8 @@
   //   規格 scratchpad v5/wave-i SPEC-I §1、附錄 Y；給畫面／sim 的契約 wave-i/build1/CONTRACT.md）。
   //   每張王牌＝原本的效果＋一條安可「{條件}，{加成}」：讀對了才有、一場一次、條件成立時這場剛好打完就留到下一位（只留一場）。
   //   on＝總開關（sim --encore off＝false：兩半都關＝現況逐字）。預設 7 星王牌那半：主線對決自動有（序章、切磋沒有）；頂點卡那半跟 ?apex=1。
-  //   aceStar＝7 星王牌安可那一次是幾星（7 星會變簡單：SPEC-I 附錄 Z4 會讀的到第 50 位 +2.6 點、6 星 +0.4）；star／hit／heal＝三種加成的數字；lowPct＝背水的門檻（聲望剩幾 %）。
-  //   aces＝三張預設 7 星王牌：丟出之後看穿他一次 → 王牌回到手上（6 星）；facHeresy＝?fac=1 時異端改連剋兩手（異端被動本來就吃拆穿，看穿不給三份）。
+  //   aceStar＝7 星王牌安可那一次是幾星（7 星會變簡單：SPEC-I 附錄 Z4 會讀的到第 50 位 +2.6 點、6 星 +0.4；11-20 修正輪 6→5：會湊條件的策略 6 星 一般玩家 +1.75，build1/FIX.md R2）；star／hit／heal＝三種加成的數字；lowPct＝背水的門檻（聲望剩幾 %）。
+  //   aces＝三張預設 7 星王牌：丟出之後看穿他一次 → 王牌回到手上（5 星）；facHeresy＝?fac=1 時異端改同色比贏（異端被動本來就吃拆穿，看穿不給三份；連剋新手照提示剋就成立，不是讀牌獎勵）。
   //   byFamily＝頂點卡的家族預設（鍵＝'原語:時機'；combo 看第一個原語、留著型照發動那個原語的 hand；'*:hand'／'*:duel'＝沒列到的）：
   //     when＝經典、冷門的條件，heresy＝異端的（沒寫＝同 when），give＝加成。C.apexTrial 某張要跟家族不同才寫 encore:{when, give}（AN3 逐張量過再改，只改資料）。
   //   條件 when：caught 看穿他一次（＝結果句「你看穿了！」：他這手是看得出來的唬、你剋中）｜combo2 連剋兩手｜sameWin 同色比贏一次｜lowhp 聲望剩三成以下（只配回聲望型）。
@@ -1967,29 +1967,31 @@
   //   加成 give：again 再發動一次（手型、留著型；7 星王牌＝王牌回到手上）｜star 下一手 +1 星｜hit 下一手剋中多扣 2（在倍數之後、他的底氣之前）｜heal 回 2 聲望（當場、跟同一手其他回聲望取大）。
   // ===================================================================
   C.encore = {
-    on: true, aceStar: 6, carry: true, star: 1, hit: 2, heal: 2, lowPct: 30,
+    on: true, aceStar: 5, carry: true, star: 1, hit: 2, heal: 2, lowPct: 30,
     aces: { hall: { when: 'caught', give: 'again' }, pearl: { when: 'caught', give: 'again' }, heresy: { when: 'caught', give: 'again' } },
-    facHeresy: 'combo2',
+    facHeresy: 'sameWin',
+    // 11-20 修正輪（build1/FIX.md R1–R3；量測 build1/fix/）：連剋兩手量起來不是讀牌獎勵（新手照提示剋就成立 52–57%）→ 全換掉：冷門、經典看穿，異端同色比贏（照出真假、回聲望例外：看穿）；
+    //   會回聲望的翻面（回聲望型再發動、回 2）與整場 +1 星，--apex 逐張量起來會讀的到第 50 位 +5～+11 點（OK Computer +6.0、モア +10.9）→ 整場型與回聲望手型一律「下一手剋中多扣 2」（OKC +0.8）
     byFamily: {
-      'heal:hand': { when: 'caught', heresy: 'lowhp', give: 'again' },
-      'star:hand': { when: 'sameWin', heresy: 'combo2', give: 'again' },
-      'eStar:hand': { when: 'sameWin', heresy: 'combo2', give: 'again' },
-      'mirrorPlus:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
-      'tieWin:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
-      'loseZero:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
-      'theirStar:hand': { when: 'combo2', give: 'again' },
-      'reveal:hand': { when: 'combo2', give: 'again' },
-      'crit:hand': { when: 'combo2', give: 'again' },
-      'critAdd:hand': { when: 'combo2', give: 'again' },
-      '*:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
-      'mirrorPlus:duel': { when: 'caught', heresy: 'combo2', give: 'star' },
-      'theirStar:duel': { when: 'combo2', give: 'hit' },
-      'pThr:duel': { when: 'combo2', give: 'hit' },
-      'bounce:duel': { when: 'caught', heresy: 'combo2', give: 'heal' },
-      'crit:duel': { when: 'combo2', give: 'heal' },
-      'critAdd:duel': { when: 'combo2', give: 'heal' },
-      'critLeech:duel': { when: 'combo2', give: 'hit' },
-      '*:duel': { when: 'combo2', give: 'hit' }
+      'heal:hand': { when: 'caught', give: 'hit' },
+      'star:hand': { when: 'sameWin', give: 'again' },
+      'eStar:hand': { when: 'sameWin', give: 'again' },
+      'mirrorPlus:hand': { when: 'caught', give: 'again' },
+      'tieWin:hand': { when: 'caught', give: 'again' },
+      'loseZero:hand': { when: 'caught', give: 'again' },
+      'theirStar:hand': { when: 'caught', heresy: 'sameWin', give: 'again' },
+      'reveal:hand': { when: 'caught', give: 'again' },
+      'crit:hand': { when: 'sameWin', give: 'again' },
+      'critAdd:hand': { when: 'caught', heresy: 'sameWin', give: 'again' },
+      '*:hand': { when: 'caught', heresy: 'sameWin', give: 'again' },
+      'mirrorPlus:duel': { when: 'caught', give: 'hit' },
+      'theirStar:duel': { when: 'caught', heresy: 'sameWin', give: 'hit' },
+      'pThr:duel': { when: 'caught', heresy: 'sameWin', give: 'hit' },
+      'bounce:duel': { when: 'caught', give: 'hit' },
+      'crit:duel': { when: 'caught', give: 'hit' },
+      'critAdd:duel': { when: 'caught', heresy: 'sameWin', give: 'hit' },
+      'critLeech:duel': { when: 'sameWin', give: 'hit' },
+      '*:duel': { when: 'caught', heresy: 'sameWin', give: 'hit' }
     },
     // 畫面字（{n}＝加成的數字、{star}＝翻面那張王牌幾星、{album}＝王牌專輯名、{verb}＝發動｜丟；engine encoreLine／encoreTag 會代入條件句與加成句）
     //   店主 11-20 改名：玩家看得到的字一律叫「翻面」（唱片翻到 B 面再來一次），不叫「安可」（lint-copy 擋）；程式識別字（encore）照舊
