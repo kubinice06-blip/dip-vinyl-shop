@@ -335,6 +335,8 @@ async function run() {
         const info = await infoOpen(page);
         if (info) await closeInfo(page);
         await jsClick(page, '.lb-sheet.reward [data-pick]');
+        // 第 I 波 I-0（SPEC-I §7.2）：第 1 位打贏就升到 Lv2＝收完唱片接升級面板（挑第一格），才回來客
+        for (let g = 0; g < 40 && (await screen(page)) !== 'night'; g++) { await page.evaluate(() => { const b = document.querySelector('.lb-sheet.level [data-lv]'); if (b && !document.querySelector('.lb-sheet.level.arming')) b.click(); }); await sleep(300); }
         await waitScreen(page, 'night');
         await sleep(600);
         const same = await page.evaluate(() => document.querySelector('#stage canvas') === window.__cv0 && !!window.__cv0 && window.__cv0.isConnected);
@@ -895,13 +897,13 @@ async function run() {
       await ctx.close();
     }
 
-    // #46 升級三選一（v5）：連升兩級＝面板開兩次（第一格品味或底氣、沒有「算了」、不捲動）；重新整理回到升級面板；選完到下一位
+    // #46 升級三選一（v5）：連升兩級＝面板開兩次（兩次都是 品味→底氣→聲望上限（第 I 波固定順序）、沒有「算了」、不捲動）；重新整理回到升級面板；選完到下一位
     if (want(46)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
         await seededContinue4(page, { ace: 'pearl', idx: 1 });
         await waitScreen(page, 'night'); await sleep(500);
-        // 等級 1 要 4、等級 2 要 5：經驗 8＋打贏一般 2＝10 → 連升兩級
+        // 第 I 波 I-0（SPEC-I §7.2）：等級 1 要 2（firstNeed）、等級 2 要 5：經驗 8＋打贏一般 2＝10 → 連升兩級（剩 3）。升到 Lv2 那次不自動加聲望上限（小字不出）、Lv3 那次照舊出
         await page.evaluate(() => { window.__lab.run.xp = 8; });
         await jsClick(page, '[data-a=go]');
         await duelReady(page);
@@ -924,15 +926,17 @@ async function run() {
         await jsClick(page, '.lb-sheet.level [data-lv="hp"]');
         const p2 = await page.waitForFunction(() => { const s = document.querySelector('.lb-sheet.level [data-lv]'); return s && window.__lab.run.levelUps === 1 && window.__lab.run.picks.length === 1; }, null, { timeout: 10000 }).then(() => true, () => false);
         await sleep(800);
-        const L2 = await page.evaluate(() => ({ title: document.querySelector('.lb-sheet.level h3').textContent, maxHp: window.__lab.run.maxHp, hp: window.__lab.run.hp }));
+        const L2 = await page.evaluate(() => ({ title: document.querySelector('.lb-sheet.level h3').textContent, sub: document.querySelector('.lb-sheet.level .hd .sub').textContent, maxHp: window.__lab.run.maxHp, hp: window.__lab.run.hp,
+          lv: [...document.querySelectorAll('.lb-sheet.level [data-lv]')].map(b => b.dataset.lv) }));
         await jsClick(page, '.lb-sheet.level [data-lv="atk"]');
         const night = await waitScreen(page, 'night', 10000);
         await sleep(500);
         const fin = await page.evaluate(() => { const R = window.__lab.run; return { pos: R.pos, level: R.level, picks: R.picks.slice(), atk: R.atk, ups: R.levelUps }; });
-        const ok = p1 && L1.title === L1.want && L1.lv.length === 3 && /^(atk|def)$/.test(L1.lv[0]) && L1.lv.slice().sort().join() === 'atk,def,hp' && L1.nm.every(n => L1.names.includes(n)) && !L1.cancel &&
-          L1.sub.indexOf(L1.autoSub) === 0 && L1.level === 3 && L1.ups === 2 && L1.btnBottom <= L1.vh && scrollOk(sc1) && back && p2 && L2.maxHp === before.maxHp + 2 && L2.hp === before.hp + 2 &&
+        // 第 I 波（SPEC-I §7.1、§7.7）：三格固定 品味→底氣→聲望上限（原本前兩格每次 50% 對調），連升兩級第二次面板順序一樣
+        const ok = p1 && L1.title === L1.want && L1.lv.join() === 'atk,def,hp' && L2.lv.join() === 'atk,def,hp' && L1.nm.join() === L1.names.join() && !L1.cancel &&
+          L1.sub.indexOf(L1.autoSub) < 0 && L2.sub.indexOf(L1.autoSub) === 0 && L1.level === 3 && L1.ups === 2 && L1.btnBottom <= L1.vh && scrollOk(sc1) && back && p2 && L2.maxHp === before.maxHp + 2 && L2.hp === before.hp + 2 &&
           night && fin.pos === 3 && fin.level === 3 && fin.picks.join() === 'hp,atk' && fin.atk === 1 && fin.ups === 0;
-        record(46, size, ok, `1st「${L1.title}」${L1.lv} ${JSON.stringify(L1.nm)} sub「${L1.sub}」 Lv ${L1.level} ups ${L1.ups}; bottom ${Math.round(L1.btnBottom)} ≤ ${L1.vh}; scroll ${JSON.stringify(sc1)}; reload → panel ${back}; hp pick ${before.maxHp}→${L2.maxHp}; 2nd「${L2.title}」; → night ${night} ${JSON.stringify(fin)}`);
+        record(46, size, ok, `1st「${L1.title}」${L1.lv}／2nd ${L2.lv} ${JSON.stringify(L1.nm)} sub「${L1.sub}」 2nd sub「${L2.sub}」 Lv ${L1.level} ups ${L1.ups}; bottom ${Math.round(L1.btnBottom)} ≤ ${L1.vh}; scroll ${JSON.stringify(sc1)}; reload → panel ${back}; hp pick ${before.maxHp}→${L2.maxHp}; 2nd「${L2.title}」; → night ${night} ${JSON.stringify(fin)}`);
       } catch (e) { record(46, size, false, 'error ' + e.message); }
       await ctx.close();
     }

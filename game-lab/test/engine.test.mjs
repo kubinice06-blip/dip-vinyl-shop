@@ -6,6 +6,7 @@
 //   箱子（FIXLIST 4／5／8＋X／Y 契約）：bins.js 還不是契約形狀（沒有 feature 那一區；Y 還沒交）時，用 contractBins() 做一份契約形狀的假箱子
 //   （十個分類＋三個子曲風區 citypop／indierock／indiepop＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
 //   v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP；這三區看子曲風（卡的 subs，規則 sub），不看第一個曲風。
+//   第 I 波 I-0（SPEC-I §7）：舊段落的 C 關掉第一位升級（firstNeed 0），黃金照舊；#29–#31 的黃金改在 I0OFF(content) 上比、出貨 content 上比變體彼此一致；新規則在 #32。
 import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
@@ -92,8 +93,11 @@ if (!BINS.feature) { fakeBins = true; BINS = contractBins(); }
 // 第 C 波（SPEC-C §11.0，CRITIQUE 1.3）：舊段落用全關的 content（C.waveC 每件 on:false、客人補償 guestHpSteps []）＝第 C 波以前的行為，舊斷言一條都不改；
 //   新段落（§11.1）用 CW＝出貨設定（content.js 的 C.waveC 全開、guestHpSteps [[31,1]]）
 const WC_OFF = { loot: { on: false }, chest: { on: false }, stall: { on: false }, safety: { on: false } };
-const C = Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [] }) });
+//   第 I 波 I-0（SPEC-I §7.2）同一個做法：舊段落的 C 關掉「第一位升級」（firstNeed 0、firstHp＝levelHp＝升級要 等級＋3、每級 +1）；新規則在 CW 與 #32 驗
+const C = Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [], firstNeed: 0, firstHp: C0.trial.levelHp }) });
 const CW = Object.assign({}, C0, { cards: CARDS, bins: BINS });
+// 第 I 波 I-0：關掉第一位升級（firstNeed 0、firstHp＝levelHp）＝I-0 以前的局內升級（黃金比對用）
+const I0OFF = c => Object.assign({}, c, { trial: Object.assign({}, c.trial || {}, { firstNeed: 0, firstHp: c.trial && Number.isInteger(c.trial.levelHp) ? c.trial.levelHp : 1 }) });
 const SKIP$ = EN.wcCfg(CW).loot.skipCash, CSKIP$ = EN.wcCfg(CW).chest.skipCash, PACKET = EN.wcCfg(CW).loot.packet;   // 出貨的「不收」錢、紅包機率（驗收修正：$200、6%）
 const COFF = Object.assign({}, C, { lot: Object.assign({}, C.lot, { on: false }) });   // 一檔貨關（第 B 波 SPEC-B §3.2 on:false＝舊補貨原封不動）
 
@@ -757,10 +761,13 @@ section('9 整趟（thoughtful／high／random × shopPolicy none／smart，打�
         if (prologue) { if (res.win) ok(run.hp === run.maxHp && run.pos === 1, 'prologue won → 聲望 back to full, still pos 1'); continue; }
         if (res.win) {
           xpTot += T.xp[b.cls]; lastWinPos = b.pos; retryAt = null;
-          let L = 1, x = xpTot; while (x >= L + T.levelNeed) { x -= L + T.levelNeed; L++; }
+          // 第 I 波 I-0（SPEC-I §7.2）：Lv1→2 要 firstNeed（2）、那一級自動加 firstHp（0）；之後照舊 等級＋levelNeed、+levelHp（獨立寫一份，不呼叫 EN.xpNeed）
+          const needAt = l => l === 1 && T.firstNeed > 0 ? T.firstNeed : l + T.levelNeed, hpAt = l => l === 1 ? T.firstHp : T.levelHp;
+          let L = 1, x = xpTot; while (x >= needAt(L)) { x -= needAt(L); L++; }
           ok(run.level === L && run.xp === x, 'level／xp = cumulative XP (' + xpTot + ')', { level: run.level, xp: run.xp, L, x });
-          const ups = L - b.level, healed = Math.min(b.maxHp, Math.max(1, pEnd) + T.heal);
-          ok(res.levelUps === ups && run.maxHp === b.maxHp + ups * T.levelHp && run.hp === healed + ups * T.levelHp, '回 3（不超過上限）＋每升一級 上限／聲望 +1', { hp: run.hp, healed, ups });
+          const ups = L - b.level, healed = Math.min(b.maxHp, Math.max(1, pEnd) + T.heal); let upHp = 0; for (let l = b.level; l < L; l++) upHp += hpAt(l);
+          ok(res.levelUps === ups && run.maxHp === b.maxHp + upHp && run.hp === healed + upHp, '回 3（不超過上限）＋每升一級 上限／聲望 +1（Lv1→2 +firstHp）', { hp: run.hp, healed, ups, upHp });
+          if (b.level === 1 && T.firstNeed > 0 && T.firstNeed <= T.xp.normal) ok(L === 2 && b.pos === 1, 'I-0：打贏第 1 位就升 Lv2', { pos: b.pos, L });
           ok(res.heal === healed - Math.max(1, pEnd), 'finishFight.heal');
           ok(run.streak === b.streak + 1 && run.bestStreak >= run.streak, 'streak +1');
           ok(!('checkpoint' in res) && !run.checkpoints.includes(b.pos + 1), 'checkpoint not recorded on beating (only on arriving)', { pos: b.pos, cps: run.checkpoints });
@@ -893,7 +900,7 @@ function section10() {
     EN.choose(r2, C, EN.bargainPolicy(r2, C));
     const fx = EN.startFight(r2, C, {}); let g = 0;
     while (!fx.duel.over && g++ < 12) EN.resolveTurn(fx.duel, EN.legalActions(fx.duel)[0], { debugOutcome: { kind: 'counter', toE: 30, toP: 0 } });
-    r2.xp = 3;                                                          // 第 1 位一般 +2 → 5 ≥ 1＋3：升 Lv 2
+    r2.xp = 3;                                                          // 第 1 位一般 +2 → 5 ≥ 1＋3：升 Lv 2（C＝舊段落 content，第一位升級關；新規則見 #32）
     const res = EN.finishFight(r2, C);
     ok(res.win && res.levelUps === 1 && r2.level === 2 && r2.xp === 1 && r2.maxHp === C.trial.youHp + 1, 'xp 3 + 2 → Lv 2 (need level + 3), 上限 +1', { level: r2.level, xp: r2.xp, max: r2.maxHp });
     while (EN.nextStep(r2) === 'reward') EN.choose(r2, C, { type: 'skip' });
@@ -1124,7 +1131,8 @@ const CUR = Object.assign({}, V3, {
   def: (d, boss) => Math.min(1, Math.round(0.45 * late1(d))) + (boss ? 1 : 0),
   q: d => curQ(d),                                   // 11-17 讀牌加難：第 3–4 位 0.72、第 5 位起 newQ（封底 0.60）
 });
-const levelAtT = (d, XP, need) => { let xp = 0; for (let k = 1; k < d; k++) xp += XP[EN.classAt(k)]; let L = 1; while (xp >= L + need) { xp -= L + need; L++; } return { L, xp }; };
+// 第 I 波 I-0（SPEC-I §7.2）：first＝Lv1→2 要幾經驗（trial.firstNeed；沒給／0＝照 1＋need）
+const levelAtT = (d, XP, need, first) => { let xp = 0; for (let k = 1; k < d; k++) xp += XP[EN.classAt(k)]; let L = 1; const nd = l => l === 1 && first > 0 ? first : l + need; while (xp >= nd(L)) { xp -= nd(L); L++; } return { L, xp }; };
 const forceWin = (run) => { const f = EN.startFight(run, C, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, C); };
 const settleAll = run => { let g = 0; while (run.pending && g++ < 40) { const ch = EN.runPolicy(run, C); if (!EN.choose(run, C, ch).ok) break; } };
 
@@ -1218,9 +1226,9 @@ section('16 無限試煉：V3 曲線（攻／底氣／難度／q／聲望）、�
   { const run = EN.newRun(C, { seedKey: 'lv-path', runNo: 2, ace: 'heresy' }); EN.choose(run, C, EN.bargainPolicy(run, C));
     let hpPicks = 0;
     for (let d = 1; d <= 40; d++) {
-      const w = levelAtT(d, C.trial.xp, C.trial.levelNeed);
+      const w = levelAtT(d, C.trial.xp, C.trial.levelNeed, C.trial.firstNeed);
       ok(run.pos === d && run.level === w.L && run.xp === w.xp, 'level at pos ' + d + ' = harness levelAt', { pos: run.pos, level: run.level, xp: run.xp, w });
-      ok(run.maxHp === C.trial.youHp + (run.level - 1) * C.trial.levelHp + hpPicks * C.trial.picks.hp, '上限 = 12 + (Lv−1) + 2×選聲望上限');
+      ok(run.maxHp === C.trial.youHp + (run.level > 1 ? C.trial.firstHp + (run.level - 2) * C.trial.levelHp : 0) + hpPicks * C.trial.picks.hp, '上限 = 12 + firstHp（Lv2）+ (Lv−2) + 2×選聲望上限');
       const m0 = run.money, res = forceWin(run);
       ok(res.earn === C.economy.win[EN.classAt(d)] && run.money === m0 + res.earn, 'earn by class at ' + d);
       settleAll(run);
@@ -3556,7 +3564,10 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(EN.newRun(C, { seedKey: 's5', runNo: 2, ace: 'hall', prologue: false, safety: true }).safety === false, 'content safety off → none'); }
 
   // ---- 11 中繼點開局 ----
-  { eq([10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(CW, N)), [{ k: 2, m: 4 }, { k: 3, m: 6 }, { k: 4, m: 8 }, { k: 5, m: 12 }, { k: 5, m: 16 }, { k: 5, m: 19 }], 'draftPlan table (§5.6；驗收修正 m＝round(L−2))');
+  { // 第 I 波 I-0：選秀 m／k 維持封閉式（逐位累計量過 C1 第 30 位出界，見 engine expLevel 註解）；出貨 content 跟舊段落 content 一樣
+    eq([10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(CW, N)), [{ k: 2, m: 4 }, { k: 3, m: 6 }, { k: 4, m: 8 }, { k: 5, m: 12 }, { k: 5, m: 16 }, { k: 5, m: 19 }], 'draftPlan table (§5.6；驗收修正 m＝round(L−2))');
+    eq([10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(C, N)), [10, 20, 30, 50, 75, 100].map(N => EN.draftPlan(CW, N)), 'draftPlan does not depend on firstNeed');
+    ok([10, 20, 30, 50, 75, 100].every(N => Math.round(EN.expLevel(N, C) - 2) === Math.round(EN.expLevel(N) - 2)), 'expLevel(N, firstNeed 0) rounds like the closed form');
     const run = newW('cp10', { from: 10, relics: ['dustcover'] });
     ok(run.cpFrom === 10 && run.pos === 1 && run.prologue === null && run.pending.type === 'draft' && run.pending.k === 2 && run.pending.m === 4 && EN.nextStep(run) === 'draft', 'from 10 → draft, pos stays 1', run.pending);
     ok(!EN.canBargainPick(run) && !EN.canSwitchAce(run, CW), 'no bargain pick / ace switch during the draft');
@@ -3708,7 +3719,8 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
   EN.setCtx(null);
   const K = C0, X = EN.careerCfg(K), xpAt = lv => EN.careerXpAt(K, lv), car = (lv, spent, o) => Object.assign({ key: 'k', xp: xpAt(lv), spent: spent || {} }, o || {});
   // ---- 1 沒給新參數／Lv8 前／關樂歷＝逐字現況（smart 決策序列＋run JSON 到第 20 位；黃金＝改之前的引擎） ----
-  { const GOLD = [3936987495, 671311097, 230554544, 1581489111], POS = [12, 21, 21, 21];
+  //   第 I 波 I-0：黃金在 K0（關掉第一位升級＝I-0 以前）上比；K（出貨）上每個變體都＝沒給參數那一份
+  { const GOLD = [3936987495, 671311097, 230554544, 1581489111], POS = [12, 21, 21, 21], K0 = I0OFF(K), ON = [];
     const seeds = EN.seedPolicy(K, Object.keys(K.cards).sort().filter(id => EN.canSeed(K, id)).slice(0, 300));
     const CASES = [{ seedKey: 'dgold1', runNo: 1, ace: 'hall' }, { seedKey: 'dgold2', runNo: 2, ace: 'pearl', prologue: false, seeds, safety: true, bestFar: 12 },
       { seedKey: 'dgold3', runNo: 3, ace: 'heresy', prologue: false, relics: ['dustcover', 'stylus'] }, { seedKey: 'dgold4', runNo: 4, ace: 'hall', prologue: false, from: 10 }];
@@ -3717,8 +3729,10 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
       { talent: { atk: 0, def: 0, hp: 0, xp: 0, plea: 0, money: 0, pay: 0, rare: 0 }, relicPick: 1, goldAdd: 0 }, { talent: {}, seedMax: 0 }];
     eq(extras.slice(1, 4), [{}, {}, {}], 'talentArgs: Lv7 nothing／Lv7 locked power／off → {}');
     extras.forEach((ex, j) => CASES.forEach((o, i) => {
-      const { run, seq } = driveD(noEnc(K), Object.assign({}, o, ex), 20);   // 第 I 波安可關（黃金是改版前跑的）
+      const { run, seq } = driveD(noEnc(K0), Object.assign({}, o, ex), 20);   // 第 I 波：I-0 第一位升級關＋翻面關（黃金是改版前跑的）
       ok(EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq)) === GOLD[i] && run.pos === POS[i], 'no career args (variant ' + j + ') = engine before wave D, case ' + o.seedKey, { pos: run.pos });
+      const on = driveD(K, Object.assign({}, o, ex), 20), h = EN.fnv1a32(JSON.stringify(on.run) + '|' + JSON.stringify(on.seq));
+      if (!j) ON[i] = h; else ok(h === ON[i], 'I-0 on: no career args (variant ' + j + ') = variant 0, case ' + o.seedKey);
     }));
     for (const sk of ['dn1', 'dn2', 'dn3']) {
       const o = { seedKey: sk, runNo: 2, ace: 'pearl', prologue: false };
@@ -3761,9 +3775,19 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
 
   // ---- 2b 等級曲線、點數、天賦價、買賣、重配 ----
   { const L = xp => EN.careerLevel(K, xp).level;
-    eq([0, 99, 100, 299, 300, 999, 1000, 4499, 4500, 5499, 5500, 14499, 14500].map(L), [1, 1, 2, 2, 3, 4, 5, 9, 10, 10, 11, 19, 20], 'careerLevel boundaries');
-    eq([2, 3, 5, 10, 11, 20].map(xpAt), [100, 300, 1000, 4500, 5500, 14500], 'careerXpAt');
-    eq(EN.careerLevel(K, 320), { level: 3, into: 20, need: 300, total: 320 }, 'into／need'); eq(EN.careerLevel(K, 6100), { level: 11, into: 600, need: 1000, total: 6100 }, 'after Lv10: 1,000 per level');
+    // 第 I 波 I-0（SPEC-I §7.3 c）：前 7 級 100／150／250／350／500／650／800（累計 Lv3 250、Lv5 850、Lv7 2,000）；Lv8 2,800、Lv10 4,500 起不變。舊曲線（table: null）照舊
+    eq([0, 99, 100, 249, 250, 499, 500, 849, 850, 1349, 1350, 1999, 2000, 2799, 2800, 3599, 3600, 4499, 4500, 5499, 5500, 14499, 14500].map(L),
+      [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 19, 20], 'careerLevel boundaries (I-0 curve)');
+    eq([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20].map(xpAt), [100, 250, 500, 850, 1350, 2000, 2800, 3600, 4500, 5500, 14500], 'careerXpAt (I-0 curve)');
+    const needs = Array.from({ length: 14 }, (_, i) => EN.careerNeed(K, i + 1));
+    eq(needs, [100, 150, 250, 350, 500, 650, 800, 800, 900, 1000, 1000, 1000, 1000, 1000], 'careerNeed per level');
+    ok(needs.every((x, i) => !i || x >= needs[i - 1]), 'each level needs at least as much as the one before (no cliff)');
+    eq(EN.careerLevel(K, 320), { level: 3, into: 70, need: 250, total: 320 }, 'into／need'); eq(EN.careerLevel(K, 6100), { level: 11, into: 600, need: 1000, total: 6100 }, 'after Lv10: 1,000 per level');
+    { const KO = Object.assign({}, K, { career: Object.assign({}, K.career, { curve: Object.assign({}, K.career.curve, { table: [] }) }) }), LO = xp => EN.careerLevel(KO, xp).level;   // []＝沒有表（null 會被 careerCfg 合併回預設）
+      eq([0, 99, 100, 299, 300, 999, 1000, 4499, 4500, 5499, 5500, 14499, 14500].map(LO), [1, 1, 2, 2, 3, 4, 5, 9, 10, 10, 11, 19, 20], 'old curve (table []): careerLevel boundaries');
+      eq([2, 3, 5, 10, 11, 20].map(lv => EN.careerXpAt(KO, lv)), [100, 300, 1000, 4500, 5500, 14500], 'old curve: careerXpAt');
+      eq(EN.careerLevel(KO, 320), { level: 3, into: 20, need: 300, total: 320 }, 'old curve: into／need');
+      for (let x = 0; x <= 30000; x += 37) ok(L(x) >= LO(x) && L(x) <= LO(x) + 1, 'new curve: same xp → same level or one higher (' + x + ')'); }
     eq(EN.careerLevel(K, -5).level, 1, 'bad xp → Lv1');
     const cost = (id, n) => Array.from({ length: n }, (_, i) => EN.talentCost(K, id, i + 1));
     eq([cost('atk', 3), cost('def', 2), cost('hp', 2), cost('xp', 2), cost('plea', 1), cost('money', 3), cost('pay', 3), cost('rare', 3), cost('piggy', 1), cost('reroll', 1), cost('ban', 1), cost('intel', 2)],
@@ -3872,7 +3896,7 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
     const runs = [{ ace: 'pearl', lexp: { base: 600, gig: 300, home: 30 } }, { ace: 'heresy', lexp: { base: 400, gig: 100, promo: 10, packet: 15, demo: 15 } }, { ace: 'hall', reached: 3 }, null];
     const sv = { lexpBank: { base: 1000, gig: 400, home: 30, promo: 10, packet: 15, demo: 15, runs: 2 }, runs, lastAce: 'hall', career: { xp: 50, prof: { hall: 7 } } };
     const d = EN.careerDeposit(K, sv);
-    eq([d.total, d.xp, d.per, d.prof, d.runs, d.from, d.to, d.first], [1320, 1370, { hall: 0, pearl: 780, heresy: 540 }, { hall: 7, pearl: 780, heresy: 540 }, [0, 1], 1, 5, true], 'deposit: total capped, per run by ace');
+    eq([d.total, d.xp, d.per, d.prof, d.runs, d.from, d.to, d.first], [1320, 1370, { hall: 0, pearl: 780, heresy: 540 }, { hall: 7, pearl: 780, heresy: 540 }, [0, 1], 1, 6, true], 'deposit: total capped, per run by ace (1,370 xp → Lv6 on the I-0 curve)');
     ok(sv.career.xp === 50 && !sv.runs[0].banked, 'deposit does not touch the save');
     const d2 = EN.careerDeposit(K, Object.assign({}, sv, { lexpBank: { base: 2000, gig: 0 }, lastAce: 'pearl' })); eq([d2.total, d2.per.pearl, d2.per.heresy], [2000, 780 + 680, 540], 'rest goes to lastAce');
     const d3 = EN.careerDeposit(K, Object.assign({}, sv, { lastAce: null, runs: [] })); eq(d3.per, { hall: 1320, pearl: 0, heresy: 0 }, 'no runs, no lastAce → hall');
@@ -3941,12 +3965,15 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
       }
       return { run, seq };
     };
-    const KN = noEnc(K);   // 第 I 波安可關（黃金是改版前跑的）
-    const VAR = [[KN, {}], [KN, { fac: false }], [Object.assign({}, KN, { factions: undefined }), { fac: true }], [Object.assign({}, KN, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]];
+    // 第 I 波 I-0：黃金在關掉第一位升級的 content 上比（I0OFF）；出貨的 content 上每個變體都＝變體 0
+    const KN = noEnc(K);   // 第 I 波翻面關（黃金是改版前跑的）
+    const VAR = [[KN, {}], [KN, { fac: false }], [Object.assign({}, KN, { factions: undefined }), { fac: true }], [Object.assign({}, KN, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]], ON = [];
     VAR.forEach(([content, ex], j) => CASES.forEach(([o, fo], i) => {
       if (QUICK && j > 0 && i > 1) return;
-      const { run, seq } = drive(content, Object.assign({}, o, ex), fo);
+      const { run, seq } = drive(I0OFF(content), Object.assign({}, o, ex), fo);
       ok(EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq)) === GOLD[i] && run.pos === POS[i] && !('fac' in run), 'flag off (variant ' + j + ') = engine before 棒二, ' + o.seedKey, { pos: run.pos });
+      const on = drive(content, Object.assign({}, o, ex), fo), h = EN.fnv1a32(JSON.stringify(on.run) + '|' + JSON.stringify(on.seq));
+      if (!j) ON[i] = h; else ok(h === ON[i] && !('fac' in on.run), 'I-0 on: flag off (variant ' + j + ') = variant 0, ' + o.seedKey);
     }));
     const r0 = EN.newRun(K, { seedKey: 'nf1', runNo: 2, ace: 'hall', prologue: false }), r1 = EN.newRun(K, { seedKey: 'nf1', runNo: 2, ace: 'hall', prologue: false, fac: true });
     ok(!/"fac"/.test(JSON.stringify(r0)), 'no fac key without the flag');
@@ -4558,6 +4585,168 @@ section('32 第 I 波 I-1 安可（SPEC-I §1、附錄 Y；契約 wave-i/build1/
     }
     console.log('     encore: ' + checked + ' action previews checked; lit ' + lit + ', carried ' + carried + ', used ' + used + ' over ' + cases.length + ' runs');
     ok(lit > (QUICK ? 10 : 40) && carried > 3 && used > 5, 'encore lights, carries and gets used in real duels', [lit, carried, used]); }
+});
+
+// ---------------- #33 第 I 波 I-0（scratchpad v5/wave-i SPEC-I §7.2、§7.3、§7.5；契約 wave-i/build0/CONTRACT.md） ----------------
+section('33 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 次、第一級不加聲望上限）、選秀照 firstHp（m／k 照舊封閉式）、樂歷曲線 100／150／250…、第一趟保底、一趟裡的細條、曲線改了補抽、G1′', () => {
+  EN.setCtx(null);
+  const TW = EN.trialCfg(CW, 0), T0 = EN.trialCfg(C, 0);
+  // CI＝舊段落 content（C 波全關、沒有攤位）但第一位升級照出貨（CW 的 firstNeed／firstHp）
+  const CI = Object.assign({}, C, { trial: Object.assign({}, C.trial, { firstNeed: C0.trial.firstNeed, firstHp: C0.trial.firstHp }) });
+  const TI = EN.trialCfg(CI, 0);
+  const winC = (run, K) => { const f = EN.startFight(run, K, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, K); };
+  const settleC = (run, K) => { let g = 0; while (run.pending && g++ < 60) { const ch = EN.runPolicy(run, K); if (!EN.choose(run, K, ch).ok) break; } };
+
+  // ---- 1 xpNeed／levelHpAt ----
+  eq([TW.firstNeed, TW.firstHp, C0.trial.firstNeed, C0.trial.firstHp, EN.TRIAL.firstNeed, EN.TRIAL.firstHp], [2, 0, 2, 0, 2, 0], 'firstNeed 2／firstHp 0 (content = engine TRIAL)');
+  eq([1, 2, 3, 4, 10].map(l => EN.xpNeed(TW, l)), [2, 5, 6, 7, 13], 'xpNeed: Lv1→2 = 2, then level + 3');
+  eq([1, 2, 3, 10].map(l => EN.levelHpAt(TW, l)), [0, 1, 1, 1], 'levelHpAt: Lv1→2 +0, then +1');
+  eq([1, 2].map(l => EN.xpNeed(T0, l)).concat([1, 2].map(l => EN.levelHpAt(T0, l))), [4, 5, 1, 1], 'firstNeed 0／firstHp = levelHp → the old rule');
+  { const T = Object.assign({}, TW); delete T.firstNeed; delete T.firstHp; eq([EN.xpNeed(T, 1), EN.levelHpAt(T, 1)], [4, 1], 'no firstNeed／firstHp keys → old rule');
+    eq(EN.levelHpAt(Object.assign({}, TW, { firstHp: -1 }), 1), 1, 'bad firstHp → levelHp'); }
+
+  // ---- 2 全贏時間表：Lv2 第 1 位、Lv3 第 4 位、Lv4 第 5 位（第一輪升 3 次）、Lv5 第 8 位；第一級聲望上限不加；三格固定 ----
+  { const run = EN.newRun(CI, { seedKey: 'i0-path', runNo: 2, ace: 'hall' }); EN.choose(run, CI, EN.bargainPolicy(run, CI));
+    const hp0 = run.hp, max0 = run.maxHp;
+    const res = winC(run, CI);
+    ok(res.win && res.levelUps === 1 && run.level === 2 && run.xp === 0 && run.maxHp === max0 && run.hp === Math.min(max0, hp0 + TI.heal), 'beat pos 1 → Lv2, max 聲望 unchanged (firstHp 0)', { lv: run.level, xp: run.xp, max: run.maxHp, hp: run.hp });
+    while (EN.nextStep(run) === 'reward') EN.choose(run, CI, { type: 'skip' });
+    ok(EN.nextStep(run) === 'level' && run.pending.level === 2 && run.pos === 1, 'reward → level pending (Lv2) at pos 1');
+    eq(run.pending.offer.map(o => o.pick), ['atk', 'def', 'hp'], 'Lv2 offer: 品味、底氣、聲望 (fixed order)');
+    const at = {}; at[1] = run.level; let hpPicks = 0;
+    EN.choose(run, CI, { type: 'level', pick: 'atk' });
+    for (let d = 2; d <= 40; d++) {
+      const w = levelAtT(d, TI.xp, TI.levelNeed, TI.firstNeed);
+      ok(run.pos === d && run.level === w.L && run.xp === w.xp, 'I-0 level at pos ' + d + ' = harness', { pos: run.pos, level: run.level, xp: run.xp, w });
+      ok(run.maxHp === TI.youHp + (run.level > 1 ? TI.firstHp + (run.level - 2) * TI.levelHp : 0) + hpPicks * TI.picks.hp, 'I-0 上限 = 12 + 0（Lv2）+ (Lv−2) + 2×聲望上限 at ' + d);
+      winC(run, CI); at[d] = run.level; settleC(run, CI); hpPicks = run.picks.filter(x => x === 'hp').length;
+    }
+    // SPEC-I §7.2 寫「Lv5 第 8 位」：第 8 位累計 19 經驗、Lv5 要 2＋5＋6＋7＝20 → 第 9 位（舊規則第 10 位）
+    eq([at[1], at[3], at[4], at[5], at[8], at[9]], [2, 2, 3, 4, 4, 5], 'all wins: Lv2 after pos 1, Lv3 after 4, Lv4 after 5 (3 level-ups in round 1), Lv5 after 9'); }
+  // 序章 0 經驗：序章打完還是 Lv1
+  { const run = EN.newRun(CI, { seedKey: 'i0-pro', runNo: 1, ace: 'pearl' }); ok(run.prologue === 'pending', 'prologue run');
+    let g = 0; while (run.prologue === 'pending' && g++ < 10) { if (EN.canBargainPick(run) && !run.pending) { EN.choose(run, CI, EN.bargainPolicy(run, CI)); continue; } if (run.pending) { settleC(run, CI); continue; } winC(run, CI); }
+    ok(run.level === 1 && run.xp === 0 && run.pos === 1, 'prologue gives no xp (still Lv1 at pos 1)', { lv: run.level, xp: run.xp, pos: run.pos }); }
+
+  // ---- 3 整趟（出貨 CW、smart＋thoughtful）：每場結束 等級／經驗＝累計經驗照新規則；聲望上限只在 Lv3 起自動 +1 ----
+  { let checked = 0, firstUps = 0;
+    for (const [sk, rn, ace] of [['i0r1', 2, 'hall'], ['i0r2', 3, 'pearl'], ['i0r3', 4, 'heresy'], ['i0r4', 5, 'hall']]) {
+      const run = EN.newRun(CW, { seedKey: sk, runNo: rn, ace, prologue: false }), R = lcg(EN.fnv1a32(sk)), mem = {};
+      let xpTot = 0;
+      for (let g = 0; g < 3000; g++) {
+        if (run.over) break;
+        if (EN.canBargainPick(run) && !run.duel && !run.pending) { EN.choose(run, CW, EN.bargainPolicy(run, CW)); continue; }
+        const st = EN.nextStep(run);
+        if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { EN.choose(run, CW, EN.runPolicy(run, CW)); continue; }
+        if (!st || run.pos > 30) break;
+        if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, CW, 'smart')) EN.choose(run, CW, ch);
+        const b = { level: run.level, maxHp: run.maxHp, pos: run.pos, cls: EN.classAt(run.pos) }, f = EN.startFight(run, CW, {});
+        let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CW));
+        const res = EN.finishFight(run, CW);
+        if (!res.win) continue;
+        xpTot += TW.xp[b.cls];
+        let L = 1, x = xpTot; while (x >= EN.xpNeed(TW, L)) { x -= EN.xpNeed(TW, L); L++; }
+        ok(run.level === L && run.xp === x && res.levelUps === L - b.level, 'CW run: level／xp = cumulative ' + sk + '@' + b.pos, { level: run.level, xp: run.xp, L, x });
+        if (b.level === 1) { firstUps++; ok(b.pos === 1 && L === 2, 'CW run: first level-up on beating pos 1 ' + sk); }
+        checked++;
+      }
+    }
+    ok(checked > 40 && firstUps === 4, 'CW runs checked', { checked, firstUps }); }
+
+  // ---- 4 中繼點選秀：Lv1→2 那次照 firstHp；期望等級逐位累計 ----
+  { const run = newW('i0cp', { from: 10 }); ok(run.pending.type === 'draft' && run.pending.m === 4, 'from 10: 4 level picks');
+    const mx0 = run.maxHp; let g = 0, n1 = null;
+    while (run.pending && run.pending.type === 'draft' && g++ < 20) {
+      const of = run.pending.offer;
+      if (of.kind === 'card') { EN.choose(run, CW, { type: 'draft', cardId: of.cards[0] }); continue; }
+      const lv = run.level, m = run.maxHp; EN.choose(run, CW, { type: 'draft', pick: 'atk' });
+      if (lv === 1) n1 = run.maxHp - m; else ok(run.maxHp - m === TW.levelHp, 'draft Lv' + lv + '→' + (lv + 1) + ': +levelHp');
+    }
+    ok(n1 === TW.firstHp && run.level === 5 && run.maxHp === mx0 + TW.firstHp + 3 * TW.levelHp && run.atk === 4, 'draft from 10: Lv1→2 +firstHp (0), Lv5, 4 atk picks', { n1, lv: run.level, max: run.maxHp }); }
+  { const cum = (N, T) => { let L = 1, x = 0; for (let p = 1; p <= N; p++) { x += T.xp[EN.classAt(p)]; while (x >= EN.xpNeed(T, L)) { x -= EN.xpNeed(T, L); L++; } } return L + x / EN.xpNeed(T, L); };
+    for (const N of [1, 5, 10, 17, 30, 50, 100]) { ok(Math.abs(EN.expLevel(N, CW) - cum(N, TW)) < 1e-9, 'expLevel(N, content) = cumulative gainXp at ' + N); ok(Math.abs(EN.expLevel(N, C) - EN.expLevel(N)) < 0.25, 'firstNeed 0: close to the closed form at ' + N); }
+    eq(EN.expLevel(10, CW), 5.75, 'expLevel(10): 26 xp → Lv5 + 6/8');
+    ok(EN.expLevel(10, CW) - EN.expLevel(10, C) > 0.2 && EN.expLevel(100, CW) - EN.expLevel(100, C) < 0.1, 'first level needs 2 less: about +0.1–0.25 level (measurement only)');
+    eq(EN.draftPlan(CW, 30), { k: 4, m: 8 }, 'draftPlan keeps the closed form (cumulative would give m 9 at 30: C1 +3.7)'); }
+
+  // ---- 5 樂歷曲線 ----
+  { const K = C0, xpAt = lv => EN.careerXpAt(K, lv);
+    eq([2, 3, 4, 5, 6, 7, 8].map(lv => xpAt(lv) - xpAt(lv - 1)), [100, 150, 250, 350, 500, 650, 800], 'curve: 100／150／250／350／500／650／800');
+    ok(xpAt(8) === 2800 && EN.careerPoints(K, { xp: 2800, spent: {} }).total === 7 && EN.talentOpen(K, 'atk', EN.careerLevel(K, 2800).level) && !EN.talentOpen(K, 'atk', EN.careerLevel(K, 2799).level),
+      'Lv8 (power talents) still at 2,800 xp with 7 points');
+    eq([600, 1000, 2000].map(x => EN.careerLevel(K, x).level), [4, 5, 7], 'old accounts: 600 → Lv4, 1,000 → Lv5, 2,000 → Lv7 (§7.5)');
+    eq(EN.careerCfg(K).curve, EN.CAREER.curve, 'content curve = engine CAREER'); }
+
+  // ---- 6 第一趟保底（careerGain o.first）＋lowMul 覆寫 ----
+  { const K = C0, G = (sum, o) => EN.careerGain(K, sum, o), floor = EN.careerXpAt(K, EN.careerCfg(K).lexp.firstLv);
+    eq(floor, 100, 'firstLv 2 → floor 100');
+    const a = G({ reached: 1, bestStreak: 0, lexp: {} }, { best: 0, first: true }); eq([a.base, a.low, a.total, a.first], [15, 2, 100, 70], 'first run lost at pos 1: 15×2＝30 → floor 100 (first +70)');
+    const a0 = G({ reached: 1, bestStreak: 0, lexp: {} }, { best: 0 }); eq([a0.total, a0.first], [30, 0], 'not first: no floor');
+    const b = G({ reached: 12, bestStreak: 5, lexp: {} }, { best: 0, first: true }); eq([b.total, b.first], [220, 0], 'first run above the floor: unchanged');
+    const q = G({ reached: 1, bestStreak: 0, lexp: {} }, { best: 0, first: true, quit: true, open: true }); eq([q.total, q.first], [100, 100], 'first run abandoned before fighting: still floor (once per account)');
+    const t = G({ reached: 2, bestStreak: 1, lexp: {} }, { best: 0, first: true, tier: 2 }); eq([t.total, t.first], [100, 100 - Math.round(38 * 1.2 * 2)], 'tier × subsidy first, then the floor');
+    ok(EN.careerLevel(K, a.total).level >= 2 && EN.careerLevel(K, q.total).level >= 2, 'first run always reaches Lv2 (GI1)');
+    const off = EN.careerGain(Object.assign({}, K, { career: { lexp: { firstLv: 0 } } }), { reached: 1, bestStreak: 0, lexp: {} }, { first: true }); eq([off.total, off.first], [30, 0], 'firstLv 0 = no floor');
+    const lm = G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 0, lowMul: 1 }); eq([lm.low, lm.total], [1, 175], 'lowMul 1 overrides the subsidy (display)');
+    eq(G({ reached: 9, bestStreak: 5, lexp: {} }, { best: 0 }).total, 350, 'without lowMul: ×2 as before'); }
+
+  // ---- 7 一趟裡的細條（careerLive）：攤位之間只會越來越多、＝現在放棄拿得到的（careerGain quit、open＝!posFought）、等級照 xp＋n ----
+  //   I-0 審查：站著的這一位還沒打（攤位時 run.pos 已經是下一位）不算那一位 →「至少 +n」放棄也成立；n ≤ 下一位就輸會拿到的
+  { const run = EN.newRun(CW, { seedKey: 'i0live', runNo: 1, ace: 'hall', prologue: false }), R = lcg(7), mem = {};
+    let prev = -1, mono = true, n6 = null, steps = 0, stalls = 0, below = true;
+    for (let g = 0; g < 3000; g++) {
+      if (run.over) break;
+      const L = EN.careerLive(CW, run, { best: 0, xp: 0 }), atStall = !!(run.pending && run.pending.type === 'stall');
+      if (atStall) { if (L.n < prev) mono = false; prev = L.n; stalls++; }
+      steps++;
+      const quitNow = EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier, quit: true, open: !EN.posFought(run) }).total;
+      const want = EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier, lowMul: 1, open: !EN.posFought(run) }).total;
+      if (L.n > EN.careerGain(CW, EN.runSummary(run), { best: 0, tier: run.tier }).total) below = false;
+      if (!ok(L.n === want && L.n === quitNow && L.level === EN.careerLevel(CW, L.n).level && L.from === 1 && L.up === L.level - 1, 'careerLive = abandon-now gain (quit, open = !posFought) & careerLevel(xp + n)', { L, want, quitNow })) break;
+      if (atStall && run.pos === 6 && n6 == null) n6 = { L, fought: EN.posFought(run), as5: EN.careerGain(CW, Object.assign(EN.runSummary(run), { reached: 5 }), { best: 0, tier: run.tier, lowMul: 1 }).total };
+      if (EN.canBargainPick(run) && !run.duel && !run.pending) { EN.choose(run, CW, EN.bargainPolicy(run, CW)); continue; }
+      const st = EN.nextStep(run);
+      if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { EN.choose(run, CW, EN.runPolicy(run, CW)); continue; }
+      if (!st || run.pos > 25) break;
+      if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, CW, 'smart')) EN.choose(run, CW, ch);
+      const f = EN.startFight(run, CW, {}); let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CW));
+      EN.finishFight(run, CW);
+    }
+    ok(mono && steps > 20 && stalls >= 3, 'careerLive.n never goes down from one stall to the next', { steps, stalls });
+    ok(below, 'careerLive.n <= what losing right now would pay');
+    ok(n6 && !n6.fought && n6.L.n === n6.as5 && n6.L.n >= 75 && n6.L.level >= 1, 'first stall (pos 6, not fought yet): 5 positions counted (= reached 5)', n6);
+    const L2 = EN.careerLive(CW, run, { best: 0, xp: 2700 }); ok(L2.from === 7 && L2.level === EN.careerLevel(CW, 2700 + L2.n).level, 'careerLive with xp: from = level at xp');
+    const r0 = EN.newRun(CW, { seedKey: 'i0live0', runNo: 2, ace: 'hall', prologue: false }); eq([EN.careerLive(CW, r0, {}).n, EN.careerGain(CW, EN.runSummary(r0), { quit: true, open: true }).total], [0, 0], 'careerLive at pos 1 (not fought): 0 = abandoning now');
+    const rcp = newW('i0livecp', { from: 20 }); eq(EN.careerLive(CW, rcp, { xp: 0 }).n, 0, 'checkpoint draft: 0'); }
+
+  // ---- 8 曲線改了補抽（careerRecurve；§7.5） ----
+  { const K = C0, RC = (xp, drawn) => EN.careerRecurve(K, { xp, drawn });
+    eq(RC(2000, [2, 3, 4, 5, 6]), { from: 6, to: 7, missing: [7] }, '2,000 xp: old Lv6 → Lv7, draw Lv7');
+    eq(RC(850, [2, 3, 4]), { from: 4, to: 5, missing: [5] }, '850: old Lv4 → Lv5');
+    eq(RC(850, [2, 3, 4, 5]), { from: 4, to: 5, missing: [] }, 'already drawn (new account on the new curve): nothing');
+    eq(RC(600, [2, 3, 4]), { from: 4, to: 4, missing: [] }, '600: Lv4 both');
+    eq(RC(0, []), { from: 1, to: 1, missing: [] }, 'new account: nothing');
+    eq(EN.careerRecurve(K, null), { from: 1, to: 1, missing: [] }, 'no career: nothing');
+    let ok1 = true; for (let x = 0; x <= 20000; x += 25) { const r = RC(x, []); if (!(r.from <= r.to && r.to - r.from <= 1)) ok1 = false; } ok(ok1, 'recurve: at most one level higher, never lower');
+    const KO = Object.assign({}, K, { career: Object.assign({}, K.career, { curve: Object.assign({}, K.career.curve, { table: [] }) }) });
+    eq(EN.careerRecurve(KO, { xp: 2000, drawn: [2, 3, 4, 5, 6] }), { from: 6, to: 6, missing: [] }, 'no table: nothing to make up');
+    // 補抽之後再跑一次＝沒有（不用旗標）
+    const c = { key: 'k', xp: 2000, drawn: [2, 3, 4, 5, 6] }, m = EN.careerRecurve(K, c).missing; c.drawn = c.drawn.concat(m); eq(EN.careerRecurve(K, c).missing, [], 'after drawing: idempotent');
+    // careerFix：新曲線點數只多不少 → 點過的不會被退回
+    const cf = EN.careerFix(K, { key: 'k', xp: 2000, spent: { money: 3, pay: 3 }, drawn: [2, 3, 4, 5, 6] }); eq([cf.spent, EN.careerPoints(K, cf).left], [{ money: 3, pay: 3 }, 0], 'careerFix keeps spent (Lv7 = 6 points)'); }
+
+  // ---- 9 G1′：Lv8 以前 newRun 收到的 等於沒給（品味／底氣／聲望／經驗倍率／說情／稀有率／種子格／配件三選一／金邊；錢類只動錢）；階梯 Lv3–7 沒有戰力鍵 ----
+  { const K = C0, sp = { atk: 3, def: 2, hp: 2, xp: 2, plea: 1, rare: 3, money: 3, pay: 3 }, o = { seedKey: 'g1p', runNo: 2, ace: 'pearl', prologue: false };
+    const r0 = EN.newRun(K, o);
+    for (let lv = 1; lv <= 7; lv++) {
+      const args = EN.talentArgs(K, { key: 'k', xp: EN.careerXpAt(K, lv), spent: sp });
+      ok(!('seedMax' in args) && !('relicPick' in args) && !('goldAdd' in args) && Object.keys(args.talent || {}).every(k => k === 'money' || k === 'pay'), 'G1′ Lv' + lv + ': only money talents', args);
+      const r = EN.newRun(K, Object.assign({}, o, args));
+      ok(r.atk === r0.atk && r.def === r0.def && r.maxHp === r0.maxHp && r.hp === r0.hp && !r.xpMul && !r.plea && !r.goldAdd && !r.relicPick && JSON.stringify(r.bag) === JSON.stringify(r0.bag), 'G1′ Lv' + lv + ': run stats = no args');
+    }
+    const POWERK = ['talent', 'seedMax', 'relicPick', 'goldAdd', 'atk', 'def', 'hp', 'xp', 'xpMul'];
+    ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7).every(L => !POWERK.some(k => k in L)), 'G1′: ladder Lv3–7 gives no power keys');
+    ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7).length === 0, 'I-0: no new ladder cells for Lv3–7 yet (each ships with its own baton; SPEC-I §7.3 d)'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

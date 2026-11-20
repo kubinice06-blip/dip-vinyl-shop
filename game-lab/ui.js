@@ -581,8 +581,11 @@
   }
   // 開機入帳（SPEC-D §2.6；CONTRACT §3.1-2）：C 波 lexpBank 有非 0＝C 版頁面記的（升級前、退版期間）→ 照總額截、熟練度分派、lexpBank 金額鍵歸零（runs 計數照留）。
   //   先寫 career、再清 lexpBank、最後 persist 一次（中途當機＝下次再入）；入過帳的 runs[k] 標 banked（退版期間又記的下次只算沒標的）。吐司＋升級過場在標題畫面
+  //   第 I 波 I-0 審查：曲線補級（careerRecurveBoot）在入帳之前跑——用入帳前的 xp 算舊曲線等級（＝drawn 抽到的那級）；入帳之後才算的話，
+  //   入帳的 from 是新曲線等級、補級的 from 是入帳後的舊曲線等級，「舊曲線等級＋1…新曲線等級」那幾級兩邊都算進 from、永遠不抽
   function careerBoot() {
     if (!careerOk() || !E.careerDeposit || UI.saveReadOnly) return;
+    careerRecurveBoot();
     var d = null; try { d = E.careerDeposit(C, save); } catch (e) { console.error(e); }
     if (!d) return;
     var c = save.career;
@@ -591,7 +594,18 @@
     ['base'].concat(E.LEXP_ROUTE || ['gig', 'home', 'promo', 'packet', 'demo']).forEach(function (k) { save.lexpBank[k] = 0; });
     UI.careerDeposit = { n: d.total, from: d.from, to: d.to, first: !!d.first };
     c.banked = true;
-    UI.careerQ = careerUps(d.from, d.to);
+    UI.careerQ = (UI.careerQ || []).concat(careerUps(d.from, d.to));   // 補級的過場卡（低的那幾級）排在前面
+    persist();
+  }
+  // 曲線改了（第 I 波 I-0；SPEC-I §7.5）：同樣的 xp 在新曲線可能高一級（2,000 從 Lv6 變 Lv7）——跨過、還沒抽過盤的那幾級補抽（careerUps 照 drawn 跳過抽過的），
+  //   標題吐司「樂歷算法改了，補你 n 級。」＋過場卡。補完 drawn 就有 → 下次開機 missing 空、不再吐司（不用旗標）。點數由 xp 算、自動多
+  function careerRecurveBoot() {
+    if (!careerOk() || !E.careerRecurve || UI.saveReadOnly) return;
+    var rc = null; try { rc = E.careerRecurve(C, save.career); } catch (e) { console.error(e); }
+    if (!rc || !rc.missing || !rc.missing.length) return;
+    var ups = careerUps(rc.from, rc.to).filter(function (x) { return rc.missing.indexOf(x.lv) >= 0; });
+    UI.careerRecurve = { n: rc.missing.length };
+    UI.careerQ = (UI.careerQ || []).concat(ups);
     persist();
   }
   // 一趟結束（recordRun）：這一趟的樂歷直接入帳（SPEC-D §2.1、§2.6-6；不再寫 lexpBank），熟練度記那派（落後 ×2），升級抽盤；明細留在 career.lastGain（at＝這一趟）
@@ -599,9 +613,12 @@
     var c = save.career, g;
     // 放棄（重新推門）：沒有新手 ×2；站著的那一位還沒打完就不算那一位（棒一審查：放棄刷樂歷）
     var quit = why === 'abandon', open = quit && !(E.posFought && E.posFought(r));
-    try { g = E.careerGain(C, sum, { best: r.farBefore | 0, tier: r.tier | 0, quit: quit, open: open }); } catch (e) { console.error(e); return; }
+    // 第 I 波 I-0（SPEC-I §7.3 a）：新帳號第一趟（save.runs 還沒有任何一趟；這一趟 push 進去之前判）樂歷保底到 lexp.firstLv（放棄也給：一個帳號只有一次）
+    var first = !(save.runs || []).some(function (e) { return e && typeof e === 'object'; });
+    try { g = E.careerGain(C, sum, { best: r.farBefore | 0, tier: r.tier | 0, quit: quit, open: open, first: first }); } catch (e) { console.error(e); return; }
     ent.gain = { base: g.base, record: g.record, route: g.route, cut: g.cut, mul: g.mul, total: g.total };
     if (quit) ent.gain.quit = 1;
+    if (g.first > 0) ent.gain.first = g.first;
     if (r.tier) ent.tier = r.tier | 0;
     if (r.careerOff) ent.off = 1;
     var lv0 = careerLv().level;
@@ -625,6 +642,7 @@
       if (e && typeof e === 'object' && e.seedKey + '#' + (e.runNo || 1) === tag) {
         if (!e.gain) return null;
         if (e.gain.quit) { o.quit = true; o.open = !(E.posFought && E.posFought(r)); }   // 放棄的那一趟照 careerRecord 的算法重算（沒有 ×2、沒打完的那位不算）
+        if (e.gain.first) o.first = true;                                                  // 第 I 波 I-0：第一趟保底（careerRecord 記的 gain.first）
         break;
       }
     }
@@ -641,6 +659,7 @@
     if (g.route || g.cut) parts.push(CU('partRoute', { n: g.route }) + (g.cut > 0 ? CU('partCut') : ''));
     if (g.tier) parts.push(CU('partTier', { m: g.tierMul, k: g.tier }));
     if (g.low > 1) parts.push(CU('partLow', { n: X.lowBelow, m: g.low }));
+    if (g.first > 0) parts.push(CU('partFirst', { n: X.firstLv }));                       // 第 I 波 I-0：「第一趟：樂歷保底到 Lv2」
     var pr = g.prof && g.prof.stamps > 0 ? CU('partProf', { title: (C.aceTitle || {})[g.ace] || '', n: g.prof.stamps }) : '';
     var lv = careerLv();
     var html = '<div class="cx-gain"><div class="lb-h1">' + esc(CU('gainTitle', { n: g.total })) + '</div>' +
@@ -652,14 +671,14 @@
     var m = modal('cxgain', html);
     var b = qs('[data-a=cxpage]', m); if (b) b.addEventListener('click', function (e) { stopEv(e); sfx('tick'); closeModal(); openPage('career'); });
   }
-  // 過場卡（SPEC-D §2.8-4）：一次一張、點一下下一張、最多 3 張（多的合成「再升 n 級」）；熟練升級接在最後一張。
+  // 過場卡（SPEC-D §2.8-4）：一次一張、點一下下一張；熟練升級接在最後一張。
+  //   第 I 波 I-0（SPEC-I §7.3 d）：一次升兩級以上（第一趟可能 4 級）合成一張清單卡「升到 Lv5！」＋天賦點 +n＋抽到的盤縮圖一列＋「新開：…」（有新開的階梯才出），停住等點。
   //   最後一張有「去點天賦」（有沒點的點數才出）＋「繼續」。回 Promise：'talent'｜'done'
   function careerCards(q) {
     q = (q || []).slice(); UI.careerQ = [];
     var lvs = q.filter(function (x) { return x && x.lv; }), profs = q.filter(function (x) { return x && x.prof; });
-    var cards = lvs.length > 3 ? lvs.slice(0, 2).concat([(function (rest) {
-      return { more: rest.length, lv: rest[rest.length - 1].lv, ids: rest.map(function (x) { return x.id; }).filter(Boolean), lad: [].concat.apply([], rest.map(function (x) { return x.lad; })) };
-    })(lvs.slice(2))]) : lvs.slice();
+    var cards = lvs.length > 1 ? [{ list: lvs.length, lv: lvs[lvs.length - 1].lv, ids: lvs.map(function (x) { return x.id; }).filter(Boolean),
+      lad: [].concat.apply([], lvs.map(function (x) { return x.lad || []; })) }] : lvs.slice();
     if (profs.length && !cards.length) cards.push({ profOnly: true });
     if (!cards.length) return Promise.resolve('done');
     return new Promise(function (res) {
@@ -667,12 +686,13 @@
       function profHTML() { return profs.map(function (x) { return '<p class="cx-open prof">' + esc(CU('profUp', { title: (C.aceTitle || {})[x.prof] || '', n: x.n })) + '</p>'; }).join(''); }
       function draw() {
         var k = cards[i], last = i === cards.length - 1, P = careerPts();
-        var ids = k.more ? k.ids : (k.id ? [k.id] : []);
-        var h = '<div class="cx-card" data-a="next">' +
-          (k.profOnly ? '' : '<div class="cx-hd"><b>' + esc(k.more ? CU('lvMore', { n: k.more }) : CU('lvUp', { n: k.lv })) + '</b>' + (k.more ? '<span class="sub">' + esc(CU('title', { n: k.lv })) + '</span>' : '') + '</div>') +
-          (ids.length ? '<div class="cx-got"><span class="cvs">' + ids.slice(0, 4).map(function (id) { return coverHTML(card(id), { info: false, badge: false }); }).join('') + '</span>' +
-            '<span class="tx"><b>' + esc(CU('drawGot')) + '</b>' + (ids.length === 1 && card(ids[0]) ? '<small>' + esc(card(ids[0]).artist + '《' + card(ids[0]).album + '》') + '</small>' : '') + '</span></div>' : '') +
-          (k.lad || []).map(function (key) { return '<p class="cx-open">' + esc(CU('ladderOpen', { name: ladderName(key) })) + '</p>'; }).join('') +
+        var ids = k.list ? k.ids : (k.id ? [k.id] : []), many = ids.length > 1;
+        var h = '<div class="cx-card' + (k.list ? ' list' : '') + '" data-a="next">' +
+          (k.profOnly ? '' : '<div class="cx-hd"><b>' + esc(k.list ? CU('lvList', { n: k.lv }) : CU('lvUp', { n: k.lv })) + '</b>' + (k.list ? '<span class="sub">' + esc(CU('lvPts', { n: k.list })) + '</span>' : '') + '</div>') +
+          (ids.length ? '<div class="cx-got' + (many ? ' many' : '') + '"><span class="cvs">' + ids.slice(0, 6).map(function (id) { return coverHTML(card(id), { info: false, badge: false }); }).join('') + '</span>' +
+            '<span class="tx"><b>' + esc(many ? CU('drawGotN', { n: ids.length }) : CU('drawGot')) + '</b>' + (!many && card(ids[0]) ? '<small>' + esc(card(ids[0]).artist + '《' + card(ids[0]).album + '》') + '</small>' : '') + '</span></div>' : '') +
+          (k.list ? (k.lad.length ? '<p class="cx-open">' + esc(CU('lvNew', { list: k.lad.map(ladderName).filter(Boolean).join('、') })) + '</p>' : '')
+            : (k.lad || []).map(function (key) { return '<p class="cx-open">' + esc(CU('ladderOpen', { name: ladderName(key) })) + '</p>'; }).join('')) +
           (last ? profHTML() : '') +
           '<div class="foot' + (last && P.left > 0 ? ' two' : '') + '">' + (last && P.left > 0 ? '<button type="button" class="lb-btn key" data-a="talent">' + esc(CU('goTalent')) + '</button>' : '') +
           '<button type="button" class="lb-btn pri key" data-a="next">' + esc(CU('cardNext')) + '</button></div>' +
@@ -690,6 +710,34 @@
         if (i < cards.length - 1) { i++; draw(); } else close('done');
       }
       draw();
+    });
+  }
+  // 一趟裡就看得到樂歷（第 I 波 I-0；SPEC-I §7.3 b、CONTRACT §4）：攤位面板標題列底下一條細條「樂歷 這一趟 至少 +n」＋這一趟結束會到的等級與進度條（I-3a 起搬到市集頂列）。
+  //   n＝engine careerLive（不乘新手 ×2、沒有第一趟保底、還沒打的這一位不算＝現在放棄也拿得到；攤位之間只會越來越多）；只顯示，入帳照舊在一趟結束（recordRun）。
+  //   跨過一級的那一刻（算出的等級比上次畫的大）：細條金色閃、寫「Lv n！這一趟結束就能點天賦」，停 ≥3 秒、之後點一下收回原本那行；不另跳老闆泡泡。
+  //   上次畫的等級記在記憶體（UI.liveLv[runTag]；這一趟在這一頁開的＝開局等級）：重新整理後第一次只畫、不閃
+  var LIVE_HOLD = 3000;
+  function careerLiveOf(r) {
+    if (!r || !careerOk() || !E.careerLive || inPrologue(r) || !CU('live')) return null;
+    var L = null; try { L = E.careerLive(C, r, { best: r.farBefore | 0, tier: r.tier | 0, xp: save.career.xp }); } catch (e) { console.error(e); return null; }
+    if (!L || !(L.n > 0)) return null;
+    var mem = UI.liveLv || (UI.liveLv = {}), tag = runTag(r), prev = mem[tag], up = typeof prev === 'number' && L.level > prev;
+    mem[tag] = Math.max(L.level, typeof prev === 'number' ? prev : 0);
+    var p = L.need > 0 ? Math.max(0, Math.min(100, Math.round(L.into * 100 / L.need))) : 100;
+    var norm = CU('live', { n: L.n }), upTx = CU('liveUp', { n: L.level });
+    var html = '<div class="cx-live' + (up ? ' up' : '') + '" data-a="cxlive" role="status" data-lv="' + L.level + '" data-n="' + L.n + '">' +
+      '<span class="t">' + esc(up ? upTx : norm) + '</span><span class="lv">' + esc(CU('liveLv', { n: L.level })) + '</span>' +
+      '<span class="cx-bar sm" aria-hidden="true"><i style="width:' + p + '%"></i></span></div>';
+    return { html: html, up: up, live: L, norm: norm };
+  }
+  function careerLiveBind(node, o) {
+    if (!node || !o.up) return;
+    var t0 = now();
+    sfx('ding');
+    node.addEventListener('click', function (e) {
+      stopEv(e);
+      if (!node.classList.contains('up') || now() - t0 < LIVE_HOLD / (FAST ? 4 : 1)) return;   // 停 ≥3 秒（?fast=1 照速度縮）才收
+      node.classList.remove('up'); var t = qs('.t', node); if (t) t.textContent = o.norm;
     });
   }
   // 標題第二行（SPEC-D §2.8-3；Lv2 起）：「樂歷 Lv 7・下一個：Lv8 戰力天賦 ›」（矮螢幕＝「樂歷 Lv 7 ›」；整行可點＝開樂歷頁）；有沒點的點數＝Lv 後面小圓點
@@ -731,8 +779,8 @@
       if (G.key === 'safe') rows += '<div class="cx-row auto"><div class="tx"><div class="nm"><b>' + esc(nm('safety')) + '</b><span class="now">' + esc(CU('auto')) + '</span></div><div class="fx">' + esc((U.fx || {}).safety || '') + '</div></div></div>';
       return rows ? '<section class="cx-grp"><div class="lb-h2">' + esc(G.name) + '</div>' + rows + '</section>' : '';
     }).join('');
-    // 解鎖階梯：已開的打勾、下一個亮、之後的灰（soon＝之後開放）
-    var nx = E.ladderNext(C, lv.level), lad = E.ladderList(C, lv.level).filter(function (L) { return ladderName(L.key); }).map(function (L) {
+    // 解鎖階梯：已開的打勾、下一個亮、之後的灰。第 I 波 I-0（SPEC-I §7.3 d、CRITIQUE 9-2）：只畫做好的格——soon（「之後開放」、還沒有等級的）不畫
+    var nx = E.ladderNext(C, lv.level), lad = E.ladderList(C, lv.level).filter(function (L) { return ladderName(L.key) && !L.soon && L.lv > 0; }).map(function (L) {
       var cls = L.open ? 'on' : (nx && L.lv === nx.lv) ? 'next' : 'off';
       return '<li class="' + cls + (L.soon ? ' soon' : '') + '"><span class="ck" aria-hidden="true">' + (L.open ? '✓' : '') + '</span><span class="t">' +
         esc(L.soon ? ladderName(L.key) : CU('ladderRow', { n: L.lv, name: ladderName(L.key) })) + '</span>' + (L.soon ? '<span class="s">' + esc(CU('soon')) + '</span>' : '') + '</li>';
@@ -882,6 +930,8 @@
     stg('say', id, text, { tone: tone || (id === 'o' ? 'owner' : null), ms: ms });
     if (id === 'o') UI.oSayTill = ms ? Date.now() + ms / speed() : 0;
   }
+  // 一句話要停多久（＝duel.js readMs：1.4 秒＋每字 0.14 秒，最多 6.5 秒）
+  function sayMs(t) { return Math.min(6500, 1400 + 140 * String(t || '').length); }
   function place(id, spot, spr) {
     if (spr === 'player') spr = playerAv();
     stg('put', id, spot, spr); stg('hide', id, false); stg('sil', id, false);
@@ -2457,13 +2507,16 @@
     return t;
   }
   // 這場的經驗（finishFight 之後）：{gain, from, to, need, up}；升級的那場＝從升級前的數跳到滿（接著升級面板）
+  //   第 I 波 I-0（SPEC-I §7.2）：每一級要多少照 engine xpNeed（Lv1→2＝trial.firstNeed 2；之後 等級＋levelNeed）
+  function trialT(r) { return (E.trialCfg ? E.trialCfg(C, r && r.tier) : C.trial) || {}; }
+  function xpNeedOf(T, level) { return E.xpNeed ? E.xpNeed(T, level) : (level | 0) + (T.levelNeed | 0); }
   function xpInfo(r, out) {
-    var T = (E.trialCfg ? E.trialCfg(C, r.tier) : C.trial) || {}, g = ((T.xp || {})[out.cls]) | 0, need = T.levelNeed | 0, ups = out.levelUps | 0;
+    var T = trialT(r), g = ((T.xp || {})[out.cls]) | 0, ups = out.levelUps | 0;
     if (!(g > 0)) return null;
-    if (!ups) return { gain: g, from: Math.max(0, (r.xp | 0) - g), to: r.xp | 0, need: (r.level | 0) + need };
+    if (!ups) return { gain: g, from: Math.max(0, (r.xp | 0) - g), to: r.xp | 0, need: xpNeedOf(T, r.level | 0) };
     var L0 = (r.level | 0) - ups, tot = r.xp | 0;
-    for (var l = L0; l < (r.level | 0); l++) tot += l + need;
-    return { gain: g, from: Math.max(0, tot - g), to: L0 + need, need: L0 + need, up: true };
+    for (var l = L0; l < (r.level | 0); l++) tot += xpNeedOf(T, l);
+    return { gain: g, from: Math.max(0, tot - g), to: xpNeedOf(T, L0), need: xpNeedOf(T, L0), up: true };
   }
   function effectsText(effects) {
     var out = [];
@@ -2579,9 +2632,10 @@
     // 舊存檔第一次載入（解鎖制以前的存檔；loadSave 補了 lastAce 那派那張）：吐司說一次規則改了
     if (UI.migratedUnlock) { UI.migratedUnlock = false; toast(TU('unlockMigrated'), 'keep long'); }
     // 第 D 波（SPEC-D §2.6-5）：開機入帳的吐司（第一次「你之前的樂歷我都記著呢…」、之後「上次的樂歷補記給你…」），升級接過場卡
-    if (UI.careerDeposit) {
-      var cd = UI.careerDeposit; UI.careerDeposit = null;
-      toast(CU(cd.first ? 'depositFirst' : 'depositMore', { n: cd.n, to: cd.to }), 'keep long');
+    if (UI.careerDeposit || UI.careerRecurve) {
+      var cd = UI.careerDeposit, crv = UI.careerRecurve; UI.careerDeposit = null; UI.careerRecurve = null;
+      if (cd) toast(CU(cd.first ? 'depositFirst' : 'depositMore', { n: cd.n, to: cd.to }), 'keep long');
+      if (crv) toast(CU('recurve', { n: crv.n }), 'keep long gold');                    // 第 I 波 I-0：曲線改了補級
       if ((UI.careerQ || []).length) later(function () {
         if (UI.screen !== 'title' || UI.going || UI.intro || UI.modal || UI.page) return;
         careerCards(UI.careerQ).then(function (v) { if (v === 'talent' && UI.screen === 'title' && !UI.going) openPage('career'); });
@@ -2830,6 +2884,7 @@
     UI.careerQ = [];                                   // 新的一趟開了：上一趟沒演完的過場卡不再演（抽到的盤早就收進唱片櫃）
     if (E.unlockedTiers) Object.assign(nro, unlockArgs(null, first ? o.ace : null));
     var r = E.newRun(C, nro);
+    if (careerOk()) (UI.liveLv || (UI.liveLv = {}))[runTag(r)] = careerLv().level;   // 第 I 波 I-0：攤位頂列樂歷細條的起點（這一趟跨過一級才閃）
     r.tut = null;                                     // tut：null＝還沒選、true＝老闆帶的那場（教學）、false＝直接打／教學結束
     r.farBefore = save.best.far | 0;                  // 結算的「新紀錄」：跟開這一趟之前的最遠比
     if (!o.prologue && careerOk() && save.career.off) r.careerOff = true;   // 關樂歷那一趟（recordRun 記 runs[k].off；樂歷照拿）
@@ -3177,7 +3232,11 @@
         return o;
       },
       tut: tut,
-      beforeEnd: tut && T.settled ? function () { try { return T.settled(); } catch (_) { return null; } } : null,
+      // 盤面淡出之前：教學那場等老闆講完（tut.settled）；打贏而且這場會升級＝先跳「升級！Lv n」章（第 I 波 I-0，levelChapter）
+      beforeEnd: function (result) {
+        var a = null; if (tut && T.settled) { try { a = T.settled(); } catch (_) { a = null; } }
+        return Promise.resolve(a).then(function () { return levelChapter(p, result); });
+      },
       endText: function (result, def) { return endStamp(p, result, def); },
       facFirst: function (cl) { return facFirstLine(p, cl); },   // 第 D 波棒二：這一派第一次觸發那手，結果行補一句（duel.js 只在 clash 有 fac 時問）
       encore: function (ev, o) { encoreAfter(p, ev, o || {}); }  // 第 I 波翻面：成立那手揭曉收起之後（duel.js encAfter）
@@ -3202,6 +3261,35 @@
     var st = (r.streak | 0) + 1;                       // 引擎 finishFight 之後才 +1：這一場打贏後的連勝
     if (st >= 2) out.chip = TU('streak', { n: st });   // 「連勝 +1（4 連勝）」（原本「連勝 4 +1」會讀成 4 加 1，審查 A-13）
     return close || out.chip ? out : null;
+  }
+  // 升級章（第 I 波 I-0；SPEC-I §7.2、CRITIQUE 9-5「升級面板接在戰利品列後面、看起來像獎勵的一部分」）：打贏那一手的大章之後、盤面淡出之前，
+  //   這場會升級（照 engine gainXp 在複本上先算：經驗、等級、xpMul 都照 run）就蓋一張金章「升級！Lv n」（連升幾級寫最後那級），停住、點了收（▼ 輕跳＝duel.js 揭曉停住那行）；
+  //   接著才是戰利品列 → 升級面板。存檔 autoNext 開、?fast=1：照讀秒自己走（點了照樣收）。序章、教學、重看教學、__lab.duelLab、輸了＝不出
+  //   直接結算（__lab.forceWin、重新整理在結尾那 2 秒）不經過這裡＝不出章
+  function levelChapter(p, result) {
+    var r = save.run, duel = result && result.duel;
+    if (!r || p.fakeRun || p.tutorial || UI.tutReplay || inPrologue(r) || (UI.duelLab && duel === UI.duelLab.duel) || !result || !result.win || !E.gainXp) return null;
+    var T = trialT(r), c = { xp: r.xp | 0, level: r.level | 0, xpMul: r.xpMul, xpFrac: r.xpFrac, maxHp: 0, hp: 0, levelUps: 0 }, ups = 0;
+    try { ups = E.gainXp(c, T, ((T.xp || {})[E.classAt(r.pos)]) | 0); } catch (e) { console.error(e); return null; }
+    var L = (C.trial && C.trial.levelUp) || {}, host = qs('.dl', UI.panel);
+    if (!(ups > 0) || !L.chapter || !host) return null;
+    return new Promise(function (res) {
+      var ch = el('div', 'lb-lvch', '<div class="st"><b>' + esc(fill(L.chapter, { n: c.level })) + '</b></div>' +
+        '<p class="tap"><span>' + esc(DTX('tapOn', '')) + '</span> <i aria-hidden="true">▼</i></p>');
+      ch.setAttribute('role', 'button'); ch.setAttribute('tabindex', '0'); ch.setAttribute('data-a', 'lvch');
+      ch.setAttribute('aria-label', fill(L.chapter, { n: c.level }));
+      host.appendChild(ch);
+      UI.lvch = { level: c.level, ups: ups, at: now() };
+      sfx('ding');
+      var auto = !!(save.settings && save.settings.autoNext) || FAST, done = false, t0 = now(), guard = FAST ? 160 : 450;
+      var go2 = function () { if (done) return; done = true; D.removeEventListener('keydown', onKey, true); ch.classList.add('out'); setTimeout(function () { ch.remove(); }, 200); res(); };
+      var onKey = function (e) { if (!ch.isConnected) { D.removeEventListener('keydown', onKey, true); return go2(); } if ((e.key === 'Enter' || e.key === ' ') && now() - t0 > guard) { stopEv(e); e.preventDefault(); go2(); } };
+      ch.addEventListener('click', function (e) { stopEv(e); if (now() - t0 > guard) go2(); });
+      D.addEventListener('keydown', onKey, true);
+      try { ch.focus({ preventScroll: true }); } catch (_) {}
+      if (auto) setTimeout(go2, (FAST ? 500 : 1800));
+      autoAct(function () { go2(); }, 300);
+    });
   }
   // 對決的頂欄：「第 n 位<small>第 R 輪・菁英／傳說藏家</small>」；序章男子（含重看教學的 fakeRun）＝「序章」
   function duelTitle(eid, r) {
@@ -3765,12 +3853,27 @@
       '<span class="tx"><span class="nm key">' + esc(P.name) + '<small>' + esc(FU('pickTag')) + '</small>' + (P.second ? '<small class="sc">' + esc(FU('second')) + '</small>' : '') + '</span>' +
       '<span class="ds">' + facNw(P.text) + '</span></span><span class="nv">' + esc(FU('pickNote')) + '</span></button>';
   }
+  // 第一次升級那句（第 I 波 I-0 審查）：打贏第 1 位就升級之後，升級面板緊接在戰利品列後面——戰利品列第一次那句（firstLoot；375 寬改成吐司）、
+  //   「唱片櫃 +2」、錢那條這些吐司還在，或老闆／熟客還在講 → 每 0.25 秒看一次，都收掉才說（最多等 8 秒）。
+  //   面板先收掉（已經挑了）＝不說、不記 seen（下次升級再說）；說了才記 save.seen.lv1
+  function firstLvSay(s, text, open) {
+    var t0 = Date.now(), cap = 8000 / speed();
+    (function tick() {
+      if (!s || !s.isConnected || (open && !open()) || save.seen.lv1) return;
+      var busy = sayTill() > Date.now() || qsa('.lb-toast:not(.out)', app()).length > 0;
+      if (busy && Date.now() - t0 < cap) { later(tick, 250); return; }
+      save.seen.lv1 = true; persist(); stageSay('o', text, 'owner', sayMs(text));
+    })();
+  }
+  function noRunYet() { return !(save.runs || []).some(function (e) { return e && typeof e === 'object'; }); }   // 新帳號第一趟（這一趟還沒記進 runs）
   function levelPanel(r, o2) {
     var p = r.pending, L = (C.trial && C.trial.levelUp) || {};
     var now = { atk: r.atk | 0, def: r.def | 0, hp: r.maxHp | 0 };
     var offer = (o2 && o2.offer) || p.offer || [], ttl = (o2 && o2.title) || fill(L.title, { n: p.level });
+    // 第 I 波 I-0（SPEC-I §7.2）：自動加的聲望上限照 engine levelHpAt——升到 Lv2 那次是 0（firstHp），那一行「聲望上限 +1（自動）」不出
+    var lvFrom = o2 ? (r.level | 0) : (p.level | 0) - 1, autoHp = E.levelHpAt ? E.levelHpAt(trialT(r), lvFrom) : 1;
     return new Promise(function (res) {
-      var html = '<div class="hd"><h3>' + esc(ttl) + '</h3><span class="sub">' + esc([L.sub, TU('hp', { n: r.hp, max: r.maxHp })].filter(Boolean).join('・')) + '</span></div>' +
+      var html = '<div class="hd' + (o2 ? '' : ' lvup') + '"><h3>' + esc(ttl) + '</h3><span class="sub">' + esc([autoHp > 0 ? L.sub : '', TU('hp', { n: r.hp, max: r.maxHp })].filter(Boolean).join('・')) + '</span></div>' +
         '<div class="lb-opts' + (offer.some(function (o) { return o && o.pick === 'fac'; }) ? ' n4' : '') + '">' + offer.map(function (o) {   // n4：多了本派格（矮螢幕收緊一點，style.css）
           if (o && o.pick === 'fac') return facLvlHTML(r, o);         // 第 D 波棒二：本派格（第 4 格；不進屬性那段：now／L[pick+'Sub'] 對 fac 是 undefined）
           return '<button type="button" class="lb-btn big lb-lvl" data-lv="' + esc(o.pick) + '"><span class="tx"><span class="nm key">' + esc(L[o.pick] || o.pick) + '</span><span class="ds">' + esc(fill(L[o.pick + 'Sub'] || '', { n: o.n | 0 })) + '</span></span>' +
@@ -3780,6 +3883,9 @@
       roomForSheet(s);
       // 第 D 波棒二：第一次出現本派格（Lv5）老闆說一句（每份存檔一次）
       if (!o2 && offer.some(function (o) { return o && o.pick === 'fac'; }) && !save.seen.facPick && FU('pickFirst')) { save.seen.facPick = true; persist(); stageSay('o', FU('pickFirst'), 'owner', 2600); }
+      // 第 I 波 I-0（SPEC-I §7.2）：第一次升級（每份存檔一次，save.seen.lv1）老闆說一句「打贏就會升級，挑一項，這一趟都有效。」；選秀不算。
+      //   審查：只給第一趟（save.runs 還沒有任何一趟；老存檔沒有 seen.lv1 也不說）；戰利品列第一次那句、吐司還在就等它們收掉才說（firstLvSay）
+      else if (!o2 && !save.seen.lv1 && L.first && noRunYet()) firstLvSay(s, L.first, function () { return !done; });   // done：已經挑了（面板收的動畫還連著也不說）
       var done = false;
       s.addEventListener('click', function (e) {
         var b = e.target.closest && e.target.closest('[data-lv]'); if (!b || done) return;
@@ -3912,12 +4018,13 @@
     var q = [r.order[r.idx], r.order[r.idx + 1]];
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
-    var toCp = E.toCheckpoint(r, C);
+    var toCp = E.toCheckpoint(r, C), live = careerLiveOf(r);
     var h = '<div class="lb-night st-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b><span class="sub">' +
-        esc([toCp != null ? TU('toCheckpoint', { n: toCp }) : '', pleaText(r)].filter(Boolean).join('・')) + '</span></div>' +
+        esc([toCp != null ? TU('toCheckpoint', { n: toCp }) : '', pleaText(r)].filter(Boolean).join('・')) + '</span></div>' + (live ? live.html : '') +
       '<div class="st-slot"></div></div>' + bagLineHTML(r);
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     guardClicks(box);
+    if (live) careerLiveBind(qs('.cx-live', box), live);
     box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('.lb-bagline [data-a]'); if (!b || UI.going) return;
       var a = b.getAttribute('data-a');
@@ -4085,7 +4192,7 @@
   function hpChipHTML(r) { return esc(TU('hp', { n: r.hp, max: r.maxHp })).replace(/^([^\d]*?)\s*(\d+\/\d+)/, function (m, k, n) { return (k ? '<span class="k">' + k + '</span>' : '') + '<b>' + n + '</b>'; }); }
   // 點聲望那顆：等級、經驗、聲望、品味、底氣、聲望上限（品味／底氣：店主暫定的名字；旁邊一句說它在做什麼，審查 #11）
   function meSheet(r) {
-    var need = r.level + ((C.trial && C.trial.levelNeed) || 3);
+    var need = xpNeedOf(trialT(r), r.level | 0);                     // 第 I 波 I-0：Lv1→2 只要 firstNeed
     var row = function (t, sub) { return '<li><b>' + esc(t) + '</b>' + (sub ? '<span class="sub">' + esc(sub) + '</span>' : '') + '</li>'; };
     var html = '<div class="hd"><h3>' + esc(TU('level', { n: r.level })) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<ul class="lb-me">' + row(TU('hp', { n: r.hp, max: r.maxHp })) + row(TU('xp', { n: r.xp, need: need })) +

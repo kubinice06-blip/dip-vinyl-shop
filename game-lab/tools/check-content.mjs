@@ -13,6 +13,8 @@
 //   無限試煉 C.trial（SPEC 無限試煉 §0：一輪 5 位的類別＝engine、你 12＝CFG.playerHp、回 3、客人 12／藏家 14、經驗與升級、三選一的字跟數字一致、中繼點、曲線旋鈕齊全）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字（你 12、回 3、客人＝C.trial.guestHp）、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字、
 //   無限試煉的畫面字（C.trial.ui／levelUp／notes、C.summary 結算）。
+//   第 I 波 I-0（SPEC-I §7.2、§7.3）：trial.firstNeed／firstHp（＝engine TRIAL、xpNeed）、升級章與第一次升級的字；樂歷 career.curve.table（只增不減、Lv8 位置不變）、
+//     lexp.firstLv、新畫面字（＝engine CAREER）。
 //   頻率（v5 第六項第二期）：C.tunes 八格齊全（order／names／colors／label）、每張卡都有 tune 而且在八格內、10 位客人各一個 tune（八格內、每格最多 2 位）、C.radio 的字；
 //     跟主站比（tuneWarnings，走鐘只警告、不擋）：C.tunes 的名字＝data/mood/card-moods.json names、顏色＝dip-tune.js CELL_COLOR、順序＝dip-tune.js ORDER；
 //     每張卡的 tune＝現在的 card-moods.json 判的格（主站每批上架都會重建這份，遊戲是烘焙快照；不一樣就用 bake-cards.mjs --covers-only --no-verify 重烘）。
@@ -318,6 +320,7 @@ const TRIAL_CURVE = {
   deck: ['floorBase', 'floorRate', 'floorMax', 'minPool', 'buffFrom', 'buffEvery', 'buffCap', 'aceFrom', 'aceRate', 'aceMax', 'mainShare'],
   mercyP: ['from', 'p0', 'step', 'every', 'min']                    // 第 A 波 2：放水前期保留、第 11 位起照機率
 };
+const len = s => [...String(s)].length;
 function shapeTrial(C, E, ok) {
   const T = C.trial;
   if (!ok(T && typeof T === 'object', 'C.trial（無限試煉）沒有')) return;
@@ -338,6 +341,11 @@ function shapeTrial(C, E, ok) {
   ok(['title', 'sub', 'atk', 'def', 'hp', 'atkSub', 'defSub', 'hpSub'].every(k => typeof LU[k] === 'string' && LU[k]), 'trial.levelUp 的字（標題、小字、三個選項＋說明）');
   ok(LU.atk === '品味 +' + PK.atk && LU.def === '底氣 +' + PK.def && LU.hp === '聲望上限 +' + PK.hp, 'trial.levelUp 三個選項的數字要＝trial.picks（' + [LU.atk, LU.def, LU.hp].join('／') + '）');
   ok(String(LU.sub || '').includes('+' + T.levelHp), 'trial.levelUp.sub 的數字要＝trial.levelHp');
+  // 第 I 波 I-0（SPEC-I §7.2）：Lv1→2 只要 firstNeed（0＝舊規則）、那一級自動加 firstHp（抵銷用：≤ levelHp）；engine TRIAL 同值；升級章、第一次升級老闆句
+  ok(int(T.firstNeed, 0) && T.firstNeed <= 1 + T.levelNeed && int(T.firstHp, 0) && T.firstHp <= T.levelHp,
+    'trial.firstNeed（Lv1→2 要幾經驗，≤ 1＋levelNeed；0＝照舊）、firstHp（那一級自動加的聲望上限，≤ levelHp）');
+  ok(String(LU.title || '').includes('{n}') && String(LU.chapter || '').includes('{n}'), 'trial.levelUp.title／chapter 要有 {n}（升到幾級）');
+  ok(typeof LU.first === 'string' && LU.first && len(LU.first) <= 25, 'trial.levelUp.first（第一次升級老闆的泡泡）≤25 字');
   ok(Array.isArray(T.checkpoints) && T.checkpoints.length && T.checkpoints.every((x, k) => int(x, 1) && (!k || x > T.checkpoints[k - 1])) && int(T.checkpointEvery, 1), 'trial.checkpoints 遞增、checkpointEvery ≥1');
   const CV = T.curve || {};
   for (const [g, ks] of Object.entries(TRIAL_CURVE)) ok(CV[g] && ks.every(k => typeof CV[g][k] === 'number' && isFinite(CV[g][k])), 'trial.curve.' + g + ' 要有 ' + ks.join(' '));
@@ -356,6 +364,29 @@ function shapeTrial(C, E, ok) {
   ok(Array.isArray(T.titles) && T.titles.length >= 2 && T.titles.every(x => typeof x === 'string' && x && [...x].length <= 8) && new Set(T.titles).size === T.titles.length && int(T.titleEvery, 1),
     'trial.titles：稱號（字串、≤8 字、不重複）＋titleEvery（每幾位換一次）');
   ok(Array.isArray(T.tiers), 'trial.tiers（之後的難度階梯）要是陣列');
+  shapeCareer(C, E, ok);
+}
+// 樂歷（第 D 波棒一；第 I 波 I-0 SPEC-I §7.3）：曲線 table（正整數、每級只增不減、接得上表外那段、Lv8 戰力位置不變＝表的合計＝舊曲線同幾級）、
+//   第一趟保底 firstLv、新畫面字。engine CAREER 同值
+function shapeCareer(C, E, ok) {
+  const K = C.career; if (!K) return;
+  const int = (x, lo) => Number.isInteger(x) && x >= (lo == null ? 0 : lo);
+  const V = K.curve || {}, t = V.table, X = K.lexp || {};
+  ok(int(V.tri, 1) && int(V.triTo, 1) && int(V.after, 1), 'career.curve：tri、triTo、after 正整數');
+  if (t != null) {
+    ok(Array.isArray(t) && t.length < V.triTo && t.every(x => int(x, 1)), 'career.curve.table：正整數陣列（[]＝沒有表）、長度 < triTo（表外照 tri×n）');
+    if (Array.isArray(t) && t.length) {
+      const nx = t.length + 1 < V.triTo ? V.tri * (t.length + 1) : V.after;
+      ok(t.every((x, k) => !k || x >= t[k - 1]) && t[t.length - 1] <= nx, 'career.curve.table 每級要的量只增不減（接表外那一級 ' + nx + '）：' + t.join('／'));
+      const sum = t.reduce((a, b) => a + b, 0), old = V.tri * t.length * (t.length + 1) / 2;
+      ok(sum === old, 'career.curve.table 合計＝舊曲線同幾級（' + old + '；Lv' + (t.length + 1) + ' 的位置不變＝戰力天賦開放時間不變）：' + sum);
+    }
+  }
+  ok(int(X.firstLv, 0), 'career.lexp.firstLv（新帳號第一趟保底到幾級；0＝關）');
+  if (E.CAREER) ok(JSON.stringify(E.CAREER.curve) === JSON.stringify(V) && E.CAREER.lexp.firstLv === X.firstLv, 'career.curve／lexp.firstLv 要＝engine CAREER');
+  const U = K.ui || {};
+  ok(['partFirst', 'live', 'liveUp', 'recurve', 'lvList', 'lvNew'].every(k => typeof U[k] === 'string' && U[k]), 'career.ui 第 I 波 I-0 的字（partFirst live liveUp recurve lvList lvNew）');
+  ok(['partFirst', 'live', 'liveUp', 'recurve', 'lvList'].every(k => String(U[k] || '').includes('{n}')) && String(U.lvNew || '').includes('{list}'), 'career.ui：partFirst live liveUp recurve lvList 有 {n}、lvNew 有 {list}');
 }
 
 // ================================================================================================
@@ -382,6 +413,10 @@ export function contentProblems(C, E) {
     else ok(Math.max(c.c, c.o, c.h) <= 5, id + ': 一般卡最高 5 星');
   }
   bad.push(...shapeProblems(C, E));
+  // 第 I 波 I-0（SPEC-I §7.2）：出貨的 trial.firstNeed／firstHp＝engine TRIAL（形狀檢查不比：engine.test 舊段落的 content 故意關掉第一位升級）
+  ok(!E.TRIAL || (E.TRIAL.firstNeed === C.trial.firstNeed && E.TRIAL.firstHp === C.trial.firstHp), 'trial.firstNeed／firstHp 要＝engine TRIAL');
+  ok(typeof E.xpNeed !== 'function' || (E.xpNeed(E.trialCfg(C, 0), 1) === (C.trial.firstNeed > 0 ? C.trial.firstNeed : 1 + C.trial.levelNeed) && E.xpNeed(E.trialCfg(C, 0), 2) === 2 + C.trial.levelNeed),
+    'engine xpNeed：Lv1→2＝firstNeed、Lv2→3＝2＋levelNeed');
   bad.push(...tuneProblems(C));
   bad.push(...apexProblems(C, E));
   bad.push(...encoreProblems(C, E));
