@@ -1150,6 +1150,7 @@ export function bgmProblems(C) {
   const num = (k, lo, hi) => ok(typeof B[k] === 'number' && B[k] >= lo && B[k] <= hi, 'bgm.' + k + ' 要在 ' + lo + '–' + hi + '（現在 ' + B[k] + '）');
   num('popMs', 6000, 10000); num('popGap', 120000, 600000); num('tries', 1, 3); num('retryMs', 30000, 300000); num('idleMs', 300000, 1800000);
   num('fetchMax', 1, 30); num('resumeMs', 500, 3000); num('fadeIn', 0, 3000);
+  num('giveUpMs', 2500, 30000); num('popWait', 2000, 15000); num('popTapWait', 2000, 15000);   // 第 I 波修正：輪播抓檔等多久、泡泡等鏡頭停／聊天完多久
   const V = B.vols;
   ok(Array.isArray(V) && V.length === 3 && V.every(v => typeof v === 'number' && v > 0 && v <= 1) && V[0] < V[1] && V[1] < V[2] && V[1] === 0.5, 'bgm.vols 要三段遞增、中＝0.5（fx MUSIC_VOL）');
   const U = B.ui || {};
