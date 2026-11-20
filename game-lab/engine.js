@@ -2250,14 +2250,13 @@
     if (!p.prologue && run.levelUps > 0) { run.pending = null; run.pending = { type: 'level', enemyId: p.enemyId, pos: p.pos, level: run.level - run.levelUps + 1, offer: levelOffer(run, content) }; return; }
     advance(run, p, content);
   }
-  // 三選一：第一格固定是品味或底氣（照 run 的雜湊），其他照 品味→底氣→聲望上限
+  // 三選一：固定照 品味→底氣→聲望上限 的順序（店主 11-20：「三項升級不要選項一直跳動 就照品味底氣聲望這個順序固定」；原本第一格照雜湊在品味、底氣之間換）
   //   第 D 波棒二（run.fac）：要選的那一級（level − levelUps＋1）逢 levelEvery（Lv5、10、15…）多第 4 格本派 {pick:'fac', id}（佔那一級：拿了不加屬性，聲望上限 +1 照加）；
   //   o.draft（中繼點選秀）不出本派格（SPEC-D §3.5、CRITIQUE 2.1；跳過的不補發：R-F11）
   function levelOffer(run, content, o) {
     if (run.pending && run.pending.type === 'level' && Array.isArray(run.pending.offer)) return run.pending.offer.map(x => Object.assign({}, x));
-    const T = trialCfg(content, run.tier), k = (run.picks || []).length;
-    const first = hash01(run.seedKey + '#' + run.runNo + '#lv' + (k + 1)) < 0.5 ? 'atk' : 'def';
-    const out = [first].concat(['atk', 'def', 'hp'].filter(x => x !== first)).map(pick => ({ pick, n: T.picks[pick] | 0 }));
+    const T = trialCfg(content, run.tier);
+    const out = ['atk', 'def', 'hp'].map(pick => ({ pick, n: T.picks[pick] | 0 }));
     if (run.fac && !(o && o.draft)) {
       const F = facCfg(content), lv = (run.level | 0) - (run.levelUps | 0) + 1;
       if (F && F.occupy !== false && facDue(run, content, lv)) out.push(...facOffer(run, content, lv).slice(0, 1));

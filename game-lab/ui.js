@@ -3666,7 +3666,7 @@
     });
   }
   function clearDrop() { if (UI.dropFloor) { UI.dropFloor = false; stg('floorRecord', null); } }
-  // 升級面板（SPEC 無限試煉 §0）：「升級：Lv 4」＋「聲望上限 +1（自動）」；三顆大鈕（engine.levelOffer：第一格固定是品味或底氣），沒有「算了」
+  // 升級面板（SPEC 無限試煉 §0）：「升級：Lv 4」＋「聲望上限 +1（自動）」；三顆大鈕（engine.levelOffer：固定 品味→底氣→聲望 順序，店主 11-20），沒有「算了」
   //   o（第 C 波中繼點開局選秀）：{ title, offer }＝標題換成「補到第 N 位：升級 i/m」、選項用選秀那一題的
   // 升級面板的本派格（第 D 波棒二；SPEC-D §3.5、CONTRACT §3）：本派一字圖示＋名字（小標「本派」、第二招）＋一句＋右邊灰字「不加屬性」；data-lv="fac" data-id
   function facLvlHTML(r, o) {

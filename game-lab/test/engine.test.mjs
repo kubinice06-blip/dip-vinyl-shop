@@ -704,7 +704,7 @@ section('9 整趟（thoughtful／high／random × shopPolicy none／smart，打�
         const step = EN.nextStep(run);
         if (step === 'level') {
           const p = run.pending, offer = p.offer || [];
-          ok(offer.length === 3 && ['atk', 'def'].includes(offer[0].pick) && sameSet(offer.map(x => x.pick), ['atk', 'def', 'hp']) && offer.every(x => x.n === T.picks[x.pick]), 'level offer: 3, first is 品味 or 底氣', offer);
+          ok(offer.length === 3 && offer.map(x => x.pick).join() === 'atk,def,hp' && offer.every(x => x.n === T.picks[x.pick]), 'level offer: 3, fixed order 品味→底氣→聲望 (owner 11-20)', offer);
           eq(EN.levelOffer(run, C), offer, 'levelOffer(run) = pending offer');
           const b = { atk: run.atk, def: run.def, hp: run.hp, maxHp: run.maxHp, ups: run.levelUps, pos: run.pos };
           const ch = EN.runPolicy(run, C); const r = EN.choose(run, C, ch);
