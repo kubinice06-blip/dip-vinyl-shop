@@ -574,7 +574,7 @@
     var G = S.guarantee;
     if (G && !G.done && S.mode === 'live' && count() >= 2 && !sl.frozen) {
       var gp = permit(sl, exitLegs(sl)), gb = guarBudget();
-      if (gp && etaMs(gp.pts, num(cf('speed'), 30)) <= gb) {
+      if (gp && guarEta(gp.pts) <= gb) {
         if (doorLocked()) { sl.stayLeft = 500; return; }     // 門一開就走
         if (leave(sl, null, false)) { G.done = true; return; }
       }
@@ -960,12 +960,14 @@
   }
   // 離 10 秒期限還有多少（遊戲 ms）；留 300 ms＋一個 tick（遊戲時鐘一 tick 跳 250 ms×倍速，?fast=1 一跳 1 秒）
   function guarBudget() { return S.screenAt + GUAR_DEADLINE - S.t - 300 - TICK * speed(); }
+  // 走到門要多久：路線長÷速度，再加兩成（手機或忙的時候畫面掉格，走路動畫的時鐘會比導演的時鐘慢）
+  function guarEta(pts) { return etaMs(pts, num(cf('speed'), 30)) * 1.2; }
   function guarantee(G) {
-    var budget = guarBudget(), spd = num(cf('speed'), 30);
+    var budget = guarBudget();
     // 走到門要多久照「現在走得通的那條路」算（避人繞路會比靜態路線長）；走不通的（窄走道被人擋著、會跟走路的人對穿）不算候選
     var cands = slotOn().filter(function (sl) { return sl.phase === 'stay' && !sl.frozen && !sl.hiddenDuel && !chatting(sl) && !sl.side; }).map(function (sl) {
       var plan = permit(sl, exitLegs(sl));
-      return { sl: sl, plan: plan, eta: plan ? etaMs(plan.pts, spd) : Infinity, done: sl.stayTot > 0 ? 1 - sl.stayLeft / sl.stayTot : 0 };
+      return { sl: sl, plan: plan, eta: plan ? guarEta(plan.pts) : Infinity, done: sl.stayTot > 0 ? 1 - sl.stayLeft / sl.stayTot : 0 };
     });
     var early = num((cf('doorEvent') || DEF.doorEvent).earlyLeave, 0.6);
     var byEta = function (a, b) { return a.eta - b.eta; };
