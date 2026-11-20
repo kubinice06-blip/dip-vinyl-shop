@@ -28,7 +28,7 @@
 //      測試卡（頁面裡把 Filth 改成「連剋 → 下一手剋中多扣 2」）：拆穿 ×2 那手扣「(原本×2)＋2」（＝去掉翻面的 preview＋2，不是＋4）
 //   9  ?fac=1 異端 7 星王牌：籤「連剋→再丟」；王牌丟出之前那手剋中不算、丟王牌那手看穿不算 → 下一手剋中＝連剋兩手 → 王牌回到手上 6 星；經典照舊「看穿→再丟」
 //   10 存檔（真的一趟）：翻面了重新整理 → 金、6 星照丟；run.encCarry 壞掉（{give:'heal'}、字串）→ null、照玩，好的留著 → 金籤；舊版對決（沒有 p.enc）照舊打完、沒有籤、不留
-//   7  說明：唱片資訊（7 星王牌「王牌翻面：丟出之後…」；?apex=1 頂點卡「王牌翻面：看穿他一次…」）、規則卡一段「翻面：…」（不捲）、
+//   7  說明：唱片資訊（7 星王牌「王牌翻面：丟出之後…」；?apex=1 頂點卡「王牌翻面：看穿他一次…」）、規則卡一段「翻面：…」（不捲；學會六張小卡＝最長的樣子也不捲，同 e2e.spec #39）、
 //      ?apex=1 挑王牌面板三派 45 張逐一點（收到的＝選、沒收到的＝看說明）：「翻面：…」一行＝engine encoreLine、一行放得下（面板不捲、「就這張」在畫面裡）；點那行＝看全文
 //   每項最後看主控台 0 錯誤、畫面上的字沒有「安可」。任何 FAIL → exit 1。
 import fs from 'fs';
@@ -671,6 +671,12 @@ async function runSize(browser, w, h) {
       await shot(page, `${size}-7b-rules.png`);
       await C(page, () => { const b = document.querySelector('.lb-modal [data-x]'); if (b) b.click(); }); await sleep(300);
       if (!(rl.tx === rule && (rl.sc == null || rl.sc <= 1) && (rl.msc == null || rl.msc <= 1))) fails.push('規則卡 ' + short(rl));
+      // 規則卡最長的樣子（學會六張小卡；e2e.spec #39 同一個量法）：加了翻面那段也不捲、整塊在畫面裡
+      await C(page, () => { window.__lab.save.learned = { L1: true, L2: true, L3: true, L4: true, L5: true, L6: true }; window.__lab.rules(); }); await sleep(500);
+      const rlL = await C(page, () => { const m = document.querySelector('.lb-modal'), p = m && m.querySelector('.pane'), e = m && m.querySelector('.renc'); return { tx: e ? e.textContent : null, learned: m ? m.querySelectorAll('.lb-learned span').length : 0, msc: m ? m.scrollHeight - m.clientHeight : null, bottom: p ? Math.round(p.getBoundingClientRect().bottom) : null, vh: innerHeight }; });
+      await shot(page, `${size}-7b2-rules-long.png`);
+      await C(page, () => { const b = document.querySelector('.lb-modal [data-x]'); if (b) b.click(); }); await sleep(300);
+      if (!(rlL.tx === rule && rlL.learned === 6 && rlL.msc != null && rlL.msc <= 1 && rlL.bottom <= rlL.vh)) fails.push('規則卡最長（學會六張）會捲 ' + short(rlL));
       // ?apex=1：頂點卡唱片資訊、挑王牌面板
       await openTitle(page, Q('&fast=1&apex=1'));
       await lab(page, { ace: 'hall', aceId: OKC, enemy: 'copycat', seed: 2, encore: true });
