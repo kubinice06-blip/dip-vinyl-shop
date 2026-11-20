@@ -18,9 +18,9 @@ swap('<title>dip vinyl shop</title>', [
   '  <meta property="og:description" content="不分類型，以光譜的方式探索音樂。">',
   '  <meta property="og:url" content="https://dipvinyl.tw/tune/">',
   '  <meta property="og:type" content="website">',
-  '  <meta property="og:image" content="https://dipvinyl.tw/og-tune.png">',
+  '  <meta property="og:image" content="https://dipvinyl.tw/og-tune-v2.png">',
   '  <meta name="twitter:card" content="summary_large_image">',
-  '  <meta name="twitter:image" content="https://dipvinyl.tw/og-tune.png">',
+  '  <meta name="twitter:image" content="https://dipvinyl.tw/og-tune-v2.png">',
   '  <link rel="canonical" href="https://dipvinyl.tw/tune/">',
 ].join('\n'));
 swap('<link rel="manifest" href="/manifest.json">', '<link rel="manifest" href="/manifest-tune.json">');
