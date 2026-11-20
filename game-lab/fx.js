@@ -9,6 +9,7 @@
 //  - 「有聲音」的手勢（unlockFromGesture(true)、setSound(true)）：navigator.audioSession.type='playback'，舊 iOS 用循環靜音 <audio> 後備（B05）。
 //  - 第 I 波 §4.2-7：背景音樂（play 的 session:'ambient'）換首時把 session 切成 'ambient'（跟著 iPhone 靜音鍵；舊 iOS 收掉循環靜音 <audio>）；
 //    其他（玩家點的試聽、勝利曲、劇本）換首時切回 'playback'。只在換首那一下切，正在放的那首不切（避免系統打斷）。
+//    離開背景音樂的畫面時 ui 叫 sessionPlayback() 切回 'playback'（對決音效不跟著靜音鍵）。切背景時 play() 不出聲、只記下那張（回前景點一下從頭放）。
 //  - 這次造訪呼叫過 unlockFromGesture(true)（或在 🔊 開關上打開）且偏好為 'on' 才出聲。
 //  - 動畫永遠不等音樂；抓檔 2.5 s 內沒好就放棄這次換歌。
 //  - 所有浮層 pointer-events:none。prefers-reduced-motion：不震、不閃白，改 150 ms 淡入。
@@ -115,6 +116,7 @@
   function soundState() { return pref() !== 'on' ? 'off' : S.unlocked ? 'on' : 'locked'; }
   // B05：iOS 靜音切換。Web Audio 預設是「環境音」，靜音模式下整個沒聲音；在有聲音的手勢裡把 session 拉成 playback。
   function audioSessionPlayback() {
+    S.ambientOn = false;
     try { if (navigator.audioSession) { navigator.audioSession.type = 'playback'; return; } } catch (_) {}
     // 舊 iOS 後備：同一個手勢裡放一個循環、playsinline 的極短靜音 WAV
     try {
@@ -133,13 +135,25 @@
     } catch (_) {}
   }
   // 第 I 波 §4.2-7：背景音樂換首時用 'ambient'（跟著靜音鍵）；舊 iOS 沒有 audioSession：收掉循環靜音 <audio>（靜音模式就不放）
+  //   S.ambientOn：上一次切的是 'ambient'（離開背景音樂的畫面時 sessionPlayback() 才知道要切回來）
   function audioSessionAmbient() {
+    S.ambientOn = true;
     try { if (navigator.audioSession) { if (navigator.audioSession.type !== 'ambient') navigator.audioSession.type = 'ambient'; return; } } catch (_) {}
     try { if (S.silentEl && !S.silentEl.paused) S.silentEl.pause(); } catch (_) {}
   }
   // 玩家點的換首那一下：有 audioSession 就切回 'playback'（舊 iOS 的循環靜音 <audio> 要在手勢裡開，play() 呼叫當下做）
   function sessionPlaybackType() {
+    S.ambientOn = false;
     try { if (navigator.audioSession && navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback'; } catch (_) {}
+  }
+  // 第 I 波修正（審查 M4）：離開背景音樂的畫面（對決、標題…）＝切回開店那一下設的 'playback'（對決的落針、命中音效不跟著靜音鍵；B05）。
+  //   背景音樂那首還在響（'ambient'）＝先不切（正在放的那首不切）；舊 iOS：循環靜音 <audio> 再開（要在手勢裡：ui 在點畫面的捕獲階段也叫一次）。回 true＝切了
+  function sessionPlayback() {
+    if (!S.ambientOn || (M.cur && M.cur.ambient) || !soundOn()) return false;
+    S.ambientOn = false;
+    try { if (navigator.audioSession) { if (navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback'; return true; } } catch (_) {}
+    try { if (S.silentEl && S.silentEl.paused) { const p = S.silentEl.play(); if (p && p.catch) p.catch(() => { if (!(M.cur && M.cur.ambient)) S.ambientOn = true; }); } } catch (_) {}   // 不在手勢裡被擋＝下一次點畫面再試
+    return true;
   }
   function resumeNow() {
     const c = ctx(); if (!c) return null;
@@ -409,17 +423,19 @@
     // play(card,{fadeMs, maxMs, exclusive, session, why}) → Promise<boolean>：真的出聲才 true。靜音時只換「唱盤上那張」（視覺），不出聲。
     //   maxMs：放這麼久就淡出（試聽機 15 秒）；exclusive：一呼叫就先把正在放的那首收掉（抓檔慢時，不會讓上一首墊在底下被當成題目）
     //   session（第 I 波 §4.2-7）：'ambient'＝背景音樂（換首時跟著靜音鍵）；沒給＝玩家點的、勝利曲、劇本（換首時切回 'playback'）
-    //   why（選填物件）：回 false 時寫 why.r＝'silent'（沒出聲、只換唱盤上那張）｜'nosrc'（沒有試聽）｜'stale'（被下一首換掉）｜'fetch'（抓不到／逾時）｜'error'
+    //   why（選填物件）：回 false 時寫 why.r＝'silent'（沒出聲、只換唱盤上那張）｜'nosrc'（沒有試聽）｜'stale'（被下一首換掉／cancel）｜'fetch'（抓不到／逾時）｜'hidden'（切到背景了：記下這張，回前景點一下從頭放；B13）｜'error'；
+    //     why.tok＝這一次的號碼（music.cancel(tok) 只取消自己這一次：背景音樂離開輪播畫面、關掉時用）
+    //   giveUpMs（選填）：抓檔等多久就放棄（預設 2.5 秒＝動畫不等音樂；背景音樂沒有動畫要對拍，給長一點，慢網路不會每首都逾時）
     play(card, opts) {
       opts = opts || {};
       const fadeMs = opts.fadeMs != null ? opts.fadeMs : 1500, why = opts.why && typeof opts.why === 'object' ? opts.why : {};
       const ambient = opts.session === 'ambient';
-      const tok = ++M.token;
+      const tok = ++M.token; why.tok = tok;
       const F = FAKE(); if (F && Array.isArray(F.calls)) F.calls.push({ id: card ? card.id : null, t: Date.now(), fadeMs, maxMs: opts.maxMs || 0, exclusive: !!opts.exclusive, session: ambient ? 'ambient' : 'playback', sound: soundOn() });
       if (!card) { why.r = 'nosrc'; return Promise.resolve(false); }
-      if (!soundOn() || !card.previewUrl) {
+      if (!soundOn() || !card.previewUrl || S.hidden) {
         if (!card.previewUrl) { why.r = 'nosrc'; return Promise.resolve(false); }
-        M.card = card; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; why.r = 'silent'; emitMusic(); return Promise.resolve(false);
+        M.card = card; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; why.r = S.hidden && soundOn() ? 'hidden' : 'silent'; emitMusic(); return Promise.resolve(false);
       }
       if (M.card && M.card.id === card.id && M.cur && !opts.maxMs) return Promise.resolve(true);
       // 舊 iOS 的循環靜音 <audio> 只能在手勢裡開：玩家點的那一下（play 呼叫當下）就開
@@ -429,9 +445,11 @@
       return new Promise(resolve => {
         let done = false;
         const fin = (ok, r) => { M.loading = Math.max(0, M.loading - 1); if (!ok) why.r = r; resolve(ok); };
-        const giveUp = setTimeout(() => { if (!done) { done = true; fin(false, tok !== M.token ? 'stale' : 'fetch'); } }, GIVE_UP_MS);
+        const giveUp = setTimeout(() => { if (!done) { done = true; fin(false, tok !== M.token ? 'stale' : 'fetch'); } }, opts.giveUpMs > 0 ? opts.giveUpMs : GIVE_UP_MS);
         load(card.previewUrl).then(buf => {
           if (done || tok !== M.token || !soundOn()) { if (!done) { done = true; clearTimeout(giveUp); fin(false, tok !== M.token ? 'stale' : 'silent'); } return; }
+          // 抓檔途中切到背景（第 I 波修正，審查 H1）：不在背景出聲、不把 suspend 掉的 context 拉回來；記下這張，回前景點一下從頭放（B13）
+          if (S.hidden) { done = true; clearTimeout(giveUp); M.card = card; S.resumeCard = card; S.resumeSess = ambient ? 'ambient' : null; emitMusic(); fin(false, 'hidden'); return; }
           done = true; clearTimeout(giveUp);
           const c = ctx(); if (!c) { fin(false, 'error'); return; }
           try {
@@ -487,6 +505,12 @@
     cached(url) { const e = url ? M.cache.get(url) : null; return !!(e && e.ok); },
     // 有一首正在抓／解碼（還沒開始響）
     loading() { return M.loading > 0; },
+    // 取消還在抓的那一次 play（tok＝play 時 why.tok；已經被別的換掉＝不做事）：那次 play 回 false（'stale'），正在放的那首不動（第 I 波修正，審查 H2／M3）
+    cancel(tok) { if (!tok || tok !== M.token) return false; M.token++; return true; },
+    // 這個網址在快取裡（抓完了或正在抓）＝再要一次不會多一次下載（背景音樂「一次造訪新抓上限」照下載開始算；審查 M6）
+    inCache(url) { return !!(url && M.cache.get(url)); },
+    // 切背景、🔇、還沒點過畫面時記下的那張（回前景點一下／聲音打開會從頭放）：{ card, session }｜null（ui ⏸ 關背景音樂時把輪播記下的那張也清掉）
+    pending() { return S.resumeCard ? { card: S.resumeCard, session: S.resumeSess === 'ambient' ? 'ambient' : 'playback' } : null; },
     // e2e 替身：這首「自然放完」（window.__dipFakeAudio 才有作用）；快取狀態
     _end() { if (!FAKE()) return false; const cur = M.cur; if (!cur || !cur.src || typeof cur.src.onended !== 'function') return false; cur.src.onended(); return true; },
     _lru() { return { max: M.lruMax, size: M.cache.size, keys: Array.from(M.cache.keys()) }; },
@@ -782,7 +806,7 @@
   function vibrate(ms) { try { if (navigator.vibrate) navigator.vibrate(ms || 15); } catch (_) {} }
 
   const api = {
-    init, unlockFromGesture, soundOn, soundState, mountToggle, onSound, sfx, sfxNames: () => Object.keys(SFX), blip, rainStart, rainStop, music,
+    init, unlockFromGesture, soundOn, soundState, sessionPlayback, mountToggle, onSound, sfx, sfxNames: () => Object.keys(SFX), blip, rainStart, rainStop, music,
     // 自己的 AudioContext（v5 第六項第三期：聆聽室的控制台載主站 dip-tune.js，它的轉台音效借這個，不另開一個）
     audioContext() { try { return ctx(); } catch (_) { return null; } },
     shake, hitStop, flash, floatText, stamp, sparks, encounter, encounter2, bossIntro, reducedMotion, setSpeed, vibrate, setSound,
