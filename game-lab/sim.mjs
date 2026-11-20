@@ -79,6 +79,16 @@
 //   開 --fac 時多印「流派被動」表（每場平均觸發幾手：整張／借／以小搏大／拆穿／爆擊／回聲望／吸血／比星輸／被剋／平手／反傷／少扣；本派那幾手合計＝F4；
 //            每趟拿到各本派選項的比例）＋「到第 21 位」表；JSON 每格多 fac {fights, perFight, picks}、reach21、lexp。不開 --fac 時輸出跟以前一字不差
 //   打法差異（F7）另一支：game-lab/diffplay.mjs
+//   活店第二階段「切磋」（＝店主說的遭遇戰；scratchpad v5/liveshop SPEC-H §7、§13；engine 的 run.spar；契約 p2/CONTRACT.md）：
+//   --enc on|off  切磋開關（＝C.encounter.on；預設 off＝輸出跟沒有這個旗標逐字相同：LS0(a)）。開著時每位主線客人推門之前照 engine encOffer 出邀請（第 6 位起、一般客人位、
+//            每輪 ≤1、50%；攤位、領獎、說情、接帖那輪不出），照 --enc-policy 接／不接、打（主線同一個出牌腦，策略亂數另一條＝同一個 i 主線決策照舊）、收／不收；bare 流程不打
+//   --enc-policy always|never|smart|cash（預設 smart＝最會撿便宜的：零風險一律接；唱片櫃模式沒擁有就收、否則拿錢；包包模式照主線戰利品列的挑法、會變強就收、否則拿錢。
+//            always＝都接、一律收；never＝都改天（LS0(b)：JSON 拿掉 spar／encounter 跟 off 逐字相同）；cash＝都接、一律拿錢（唱片櫃模式對這一趟最有利的上界，只印））
+//   --enc-reward shelf|bag  獎勵模式（預設 content C.encounter.reward＝shelf 收進唱片櫃；bag 進這一趟包包）
+//   --encbase <json>  同 n、同 cap、同 tier／--fac／--apex／--safety、--enc off 的 --json：LS1–LS4 配對比較（同一批種子）；n ≥ 4000 才判 LS1–LS3
+//   --trace <file>  每一趟主線每場開打種子（duel.e.hkey）＋每次配件獎勵寫成 JSON（LS0(c)：on／off 在共同前綴逐筆相同；tools 比對）
+//   開著時多印「切磋」表（每趟邀請、每 10 位邀請、接受率、勝率、手數、收牌／拿錢、錢與占總收入、被讀／手 vs 主線同位數、切磋手數÷主線手數、出錯位的計數、連玩 20 趟收進唱片櫃）、
+//            LS1–LS8 門檻（LS9＝既有門檻在 --enc on 下照樣全過）；JSON 每格多 spar、report 多 encounter
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
 //   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
 //   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
@@ -234,7 +244,19 @@ if (ENCSET) for (const id of Object.keys(ENCSET)) {
   if (!v || !EN.ENC_WHEN.includes(v.when) || !EN.ENC_GIVE.includes(v.give)) { console.error('--encset：' + id + ' 的 when 要是 ' + EN.ENC_WHEN.join('|') + '、give 要是 ' + EN.ENC_GIVE.join('|')); process.exit(2); }
   e.encore = { when: v.when, give: v.give };
 }
-const ENC_KEYS = ['ace:caught', 'ace:combo2', 'apex:caught', 'apex:combo2', 'apex:sameWin', 'apex:lowhp'];   // 翻面逐條件表的欄位順序（其他照出現順序接在後面）
+// 活店第二階段切磋（見檔頭；--patch 之後套）：--enc on|off（預設 off＝輸出跟沒有這個旗標逐字相同）、--enc-policy、--enc-reward、--encbase、--trace
+const SPAR_ARG = arg('enc', null);
+if (SPAR_ARG != null && !['on', 'off'].includes(SPAR_ARG)) { console.error('--enc on|off'); process.exit(2); }
+const SPAR_ON = SPAR_ARG === 'on';
+const SPAR_POL = arg('enc-policy', 'smart'), SPAR_REW_ARG = arg('enc-reward', null);
+if (!EN.SPAR_POLICIES.includes(SPAR_POL)) { console.error('--enc-policy ' + EN.SPAR_POLICIES.join('|')); process.exit(2); }
+if (SPAR_REW_ARG != null && !EN.SPAR_MODES.includes(SPAR_REW_ARG)) { console.error('--enc-reward ' + EN.SPAR_MODES.join('|')); process.exit(2); }
+if (!SPAR_ON && (argv.includes('--enc-policy') || SPAR_REW_ARG != null || arg('encbase', null))) { console.error('--enc-policy／--enc-reward／--encbase 要跟 --enc on 一起用'); process.exit(2); }
+if (SPAR_ON) C.encounter = Object.assign({}, C.encounter || {}, { on: true }, SPAR_REW_ARG ? { reward: SPAR_REW_ARG } : {});
+const SPAR_REW = SPAR_ON ? EN.sparMode(C) : null;
+const ENCBASE = arg('encbase', null) ? JSON.parse(fs.readFileSync(arg('encbase'), 'utf8')) : null;
+const TRACE = arg('trace', null), TRACE_OUT = TRACE ? {} : null;          // LS0(c)：每一趟主線每場開打種子（duel.e.hkey）＋每次配件獎勵（pending.relics）
+const ENC_KEYS = ['ace:caught','ace:combo2', 'apex:caught', 'apex:combo2', 'apex:sameWin', 'apex:lowhp'];   // 翻面逐條件表的欄位順序（其他照出現順序接在後面）
 const FAC_KEYS = EN.FAC_NOTE_ORDER.concat(['cut']);                      // duel.stats.fac 的鍵（結果行小字＋本派選項「每場第一次被剋少扣」）
 const FAC_OWN = { hall: ['full', 'tieCost'], pearl: ['borrow', 'underdog', 'cCost'], heresy: ['crit', 'crit2', 'loseCost'] };   // F4：被動或代價觸發的手（三派互斥）
 const WCC = EN.wcCfg(C), WC_ON = !!(WCC.loot.on || WCC.chest.on || WCC.stall.on || WCC.safety.on);
@@ -302,13 +324,14 @@ const V3 = {
 };
 
 // ---------------- play one duel to the end ----------------
-function play(duel, pol, R, mem) {
+function play(duel, pol, R, mem, K) {
   const fn = ENCPOL ? EN.encorePolicy(pol) : EN.policies[pol]; let g = 0;   // 第 I 波：--encpol＝會湊翻面條件的上界策略
+  K = K || C;                                                             // 切磋：content 視圖（encView；只有 estStars 讀 cards，跟 C 同一份）
   duel._mN = 0; duel._mOn = 0;
   while (!duel.over) {
     if (++g > 20) throw new Error('runaway duel');
     if (duel.e.mercyP != null && duel.plan) { duel._mN++; if (duel.plan.mercy) duel._mOn++; }   // 第 11 位起：這手有沒有放水（plan.mercy；只記不讀）
-    const act = fn(duel, R, mem, C);
+    const act = fn(duel, R, mem, K);
     if (!EN.isLegal(duel, act)) throw new Error('illegal act from ' + pol + ': ' + JSON.stringify(act));
     const ev = EN.resolveTurn(duel, act);
     if (act.apex) {                                                     // 頂點卡試做：記第一次發動那手（只有 --apex 會走到）；翻面再發動那次只計次數（_apexN）
@@ -430,6 +453,9 @@ function runOnce(pol, flow, i, A) {
   const R = EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow)), mem = {};
   let manTries = 0, lostMan = false, cens = false, lastReached = 0, retryAt = 0, firstLoss = null, fatal = null, bag0 = null, maxHands = 0, bagMaxN = 0;
   const RADIO = { spins: 0, bought: 0, spent: 0 };
+  const SPX = A.sp ? { R: EN.makeRng(EN.fnv1a32(seedKey + '|' + pol + '|' + flow + '|spar')), mem: {}, owned: new Set(), took: [], byRound: {} } : null;   // 切磋：另一條策略亂數（不吃主線的 R）、這一趟收進唱片櫃的
+  if (SPX) SPX.ownedFn = id => SPX.owned.has(id);
+  const TR = TRACE_OUT ? (TRACE_OUT[flow + '|' + pol + '|' + i] = []) : null;   // --trace（LS0(c)）
   const EP = A.ep;                                                      // 客人出牌三色、提示三色、出主屬性那色的手、放水、交還老闆（第 A 波）
   for (let guard = 0; ; guard++) {
     if (guard > 40 * CAP + 400) throw new Error('runaway run ' + seedKey + ' ' + pol + ' ' + flow);
@@ -488,6 +514,7 @@ function runOnce(pol, flow, i, A) {
         if (WS) WS.onShelf += wn;
       }
     }
+    if (SPX && step === 'fight' && flow !== 'bare') sparStep(run, pol, A.sp, SPX);   // 切磋（--enc on）：主線客人推門之前；bare＝V3 對照不打
     if (flow === 'smart' && EN.canShop(run)) for (const ch of EN.shopPolicy(BROWSE < 16 ? browseView(run) : run, C, 'smart', NO_THIN ? { thin: false } : undefined)) {
       const r = EN.choose(run, C, ch); ok(r, 'shopPolicy', ch);
       for (const e of r.effects) if (e.reclaim) EP.reclaim[e.reclaim]++;
@@ -500,6 +527,7 @@ function runOnce(pol, flow, i, A) {
     if (run.bag.length > bagMaxN) bagMaxN = run.bag.length;
     if (!prologue && lastReached < d) { A.reached[d]++; lastReached = d; }
     const f = EN.startFight(run, C, APEX ? { apex: true } : {});
+    if (TR && f) TR.push(['f', d, f.duel.e.hkey >>> 0]);
     if (!f) throw new Error('startFight null at ' + d);
     const duel = play(f.duel, pol, R, mem), hands = duel.stats.hands, by = duel.over.by;
     if (!prologue) {
@@ -515,10 +543,12 @@ function runOnce(pol, flow, i, A) {
         if (l.hk === 'half') PH.half++; else if (l.hk === 'none') PH.none++;
       }
       EP.mercyN += duel._mN | 0; EP.mercyOn += duel._mOn | 0;
+      if (A.sp) for (const l of duel.log) if (l.why === 'read' || l.why === 'readHonest') A.sp.mr[d]++;   // 切磋 LS5：主線同位數被讀次數
       if (A.en && duel.p.enc) encRec(A.en, duel, run);                  // 第 I 波翻面（客人場；說情重打也算一場）
     }
     const dareNow = !prologue && !!(run.dare && run.dare.round === run.round);
     const res = EN.finishFight(run, C);
+    if (TR && res.offer && Array.isArray(res.offer.relics) && res.offer.relics.length) TR.push(['r', d, res.offer.relics.join(',')]);
     if (prologue) { manTries++; continue; }
     if (CW && att === 0 && d >= 31) { const k = dareNow ? 'dare' : 'plain'; CW[k].f++; if (res.win) CW[k].w++; }   // K2：接帖那輪首戰 vs 平常（踢館帖第 30 位後才出）
     maxHands = Math.max(maxHands, hands);
@@ -556,6 +586,7 @@ function runOnce(pol, flow, i, A) {
     earned: S.earned, spent: S.spent, money: run.money, checkpoints: sum.checkpoints.length, bestStreak: sum.bestStreak,
     bag0: bag0 == null ? bagPower(run) : bag0, bag1: bagPower(run), radioSpins: RADIO.spins, radioBought: RADIO.bought, radioSpent: RADIO.spent,
     bagN: run.bag.length, bagMaxN: Math.max(bagMaxN, run.bag.length), sold: S.sold.length,
+    ...(SPX ? { sparTook: SPX.took, sparCash: (S.spar && S.spar.cash) | 0 } : {}),
     ...(CW ? { wc: S.c || {}, lexp: sum.lexp || {}, rm: RM, road: (run.road || []).length, drops: (run.drops || []).length, from: sum.from || 1 } : {}),
     ...(UNLOCK ? { aces: (run.acesWon || []).length, unlocks: (run.acesWon || []).filter(id => !(run.unlock.tiers || []).includes(EN.tierOfApex(C, id))).length,
     trialAces: (run.acesWon || []).filter(id => !Object.values(C.aces).includes(id)).length } : {}) };
@@ -583,6 +614,7 @@ function runCell(pol, flow, n) {
   if (WC_ON) A.cw = { dare: { f: 0, w: 0 }, plain: { f: 0, w: 0 } };   // 第 C 波（全關不記、JSON 不多欄位）
   if (FAC) A.fx = { runs: 0, fights: 0, hands: 0, k: {}, picks: {} };   // 第 D 波棒二（--fac 才記）
   if (ENC_ON) A.en = encZero();                                          // 第 I 波翻面（--encore off 不記、JSON 不多欄位）
+  if (SPAR_ON) A.sp = sparZero(NP);                                      // 活店切磋（--enc on 才記、JSON 才多 spar）
   const recs = [];
   for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, I0 + i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
@@ -626,6 +658,7 @@ function runCell(pol, flow, n) {
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
     ...(A.en ? { enc: encStats(A.en, n) } : {}),
+    ...(A.sp ? { spar: sparStatsOf(A.sp, A, recs, n) } : {}),
     ...(A.fx ? { fac: { fights: A.fx.fights, hands: A.fx.hands / Math.max(1, A.fx.fights), perFight: Object.fromEntries(FAC_KEYS.filter(k => A.fx.k[k]).map(k => [k, A.fx.k[k] / Math.max(1, A.fx.fights)])),
       picks: Object.fromEntries(Object.entries(A.fx.picks).map(([k, v]) => [k, v / n])) } } : {}),
     ...(A.lt ? { lot: lotStats(A.lt, n) } : {}),
@@ -684,6 +717,98 @@ function printEnc(rows) {
     console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ` + ks.map(k => { const b = e.by[k]; return b ? `${pct(b.lit)}；${pct(b.litFired)}（${b.f} 場）` : '—'; }).join(' | ') + ' | '
       + TIERS.map(t => { const b = e.tier[t]; return b ? `${pct(b.lit)}／${pct(b.carry)}／${pct(b.used)}` : '—'; }).join(' | ') + ' |'); }
 }
+// ---------------- 活店第二階段：切磋（--enc on；SPEC-H §7、§13；engine encOffer／encPolicy／encStart／encFinish） ----------------
+//   每一位主線客人推門之前（engine encOffer 判：第 6 位起、一般客人位、每輪最多一次、攤位／領獎／說情／接帖那輪不出）照 --enc-policy 走完一整段：
+//   開邀請 → 接（或改天）→ 打（主線同一個出牌腦 play，但策略亂數另一條：同一個 i 主線的決策照舊）→ 收／不收。主線欄位 engine 保證不動（engine.test #34）
+//   唱片櫃模式的「已擁有」＝這一趟收進唱片櫃的（新帳號；連玩 20 趟另印參考）
+const sparZero = NP => ({ offered: 0, accepted: 0, fights: 0, won: 0, lost: 0, took: 0, cashN: 0, cash: 0, hands: 0, reads: 0, hp: new Float64Array(NP), rp: new Float64Array(NP),
+  mr: new Float64Array(NP), first5: 0, eliteBoss: 0, multi: 0, byIdx: [0, 0, 0, 0, 0], who: {}, by: { hp: 0, rounds: 0, pile: 0 } });
+function sparStep(run, pol, SP, X) {
+  for (let g = 0; g < 8; g++) {
+    const ch = EN.encPolicy(run, C, { policy: SPAR_POL, owned: X.ownedFn });
+    if (!ch) return;
+    const r = EN.choose(run, C, ch); ok(r, 'encPolicy', ch);
+    const S = run.spar;
+    if (ch.type === 'encOpen') {
+      SP.offered++; SP.byIdx[(S.pos - 1) % 5]++; SP.who[S.who] = (SP.who[S.who] | 0) + 1;
+      if (S.pos <= 5) SP.first5++;
+      if (EN.classAt(S.pos) !== 'normal') SP.eliteBoss++;
+      X.byRound[S.round] = (X.byRound[S.round] | 0) + 1; if (X.byRound[S.round] > 1) SP.multi++;
+    } else if (ch.type === 'encAccept') {
+      SP.accepted++;
+      const s = EN.encStart(run, C, APEX ? { apex: true } : {});
+      if (!s) throw new Error('encStart null at ' + run.pos);
+      const duel = play(s.duel, pol, X.R, X.mem, s.view), fin = EN.encFinish(run, C, duel, { owned: X.ownedFn });
+      if (fin.error) throw new Error('encFinish ' + fin.error);
+      const h = duel.stats.hands, rd = duel.log.filter(l => l.why === 'read' || l.why === 'readHonest').length;
+      SP.fights++; SP.hands += h; SP.reads += rd; SP.hp[run.pos] += h; SP.rp[run.pos] += rd; SP.by[duel.over.by] = (SP.by[duel.over.by] | 0) + 1;
+      if (fin.win) SP.won++; else SP.lost++;
+    } else if (ch.type === 'encTake') { SP.took++; X.took.push(ch.id); X.owned.add(ch.id); }
+    else if (ch.type === 'encSkip') { SP.cashN++; SP.cash += (r.effects.find(e => e.cash) || {}).cash | 0; }
+  }
+  throw new Error('sparStep runaway at ' + run.pos);
+}
+const REG_CARDS = new Set(Object.values(C.regulars || {}).flatMap(R => (R && R.enc && R.enc.deck) || []));
+function sparStatsOf(SP, A, recs, n) {
+  let pos6 = 0, mainH = 0, expRead = 0;
+  for (let d = 1; d < A.reached.length; d++) { if (d >= 6) pos6 += A.reached[d]; mainH += A.hands[d]; if (SP.hp[d] && A.hands[d]) expRead += SP.hp[d] * SP.mr[d] / A.hands[d]; }
+  const r = (a, b) => (b ? a / b : null), earned = recs.reduce((s, x) => s + x.earned, 0);
+  // 連玩 20 趟（只印）：同一格相鄰 20 趟收進唱片櫃的聯集（不同的幾張、其中熟客牌）——唱片櫃模式下一趟「從唱片櫃挑種子」多幾個選擇
+  const blocks = []; for (let k = 0; k + 20 <= recs.length; k += 20) { const u = new Set(); for (const x of recs.slice(k, k + 20)) for (const id of x.sparTook || []) u.add(id); blocks.push(u); }
+  const mean = a => a.length ? a.reduce((s, x) => s + x, 0) / a.length : null;
+  return { offered: SP.offered / n, offers: SP.offered, pos6, per10: pos6 ? 10 * SP.offered / pos6 : null, accept: r(SP.accepted, SP.offered), fights: SP.fights, win: r(SP.won, SP.fights),
+    hands: r(SP.hands, SP.fights), took: SP.took / n, cashN: SP.cashN / n, cash: SP.cash / n, readHand: r(SP.reads, SP.hands), mainReadHand: r(expRead, SP.hands),
+    readRatio: expRead > 0 ? (SP.reads / SP.hands) / (expRead / SP.hands) : null, handShare: r(SP.hands, mainH), incomeShare: r(SP.cash, earned),
+    first5: SP.first5, eliteBoss: SP.eliteBoss, multi: SP.multi, byIdx: SP.byIdx.slice(), who: Object.fromEntries(Object.keys(SP.who).map(k => [k, SP.who[k] / Math.max(1, SP.offered)])),
+    by: { hp: r(SP.by.hp, SP.fights), rounds: r(SP.by.rounds, SP.fights), pile: r(SP.by.pile, SP.fights) },
+    trips20: blocks.length ? { blocks: blocks.length, cards: mean(blocks.map(u => u.size)), regular: mean(blocks.map(u => [...u].filter(id => REG_CARDS.has(id)).length)) } : null };
+}
+function printSpar(rows) {
+  const X = EN.sparCfg(C), f1 = x => x == null ? '—' : x.toFixed(1), f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en');
+  console.log(`\n### 切磋（活店第二階段；--enc on、--enc-policy ${SPAR_POL}、${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式；第 ${X.from} 位起、每輪 ${X.p}、一般客人位、短局 ${X.short}；每趟平均）\n`);
+  console.log('| 策略 | 流程 | 邀請／趟（每 10 位，第 6 位起） | 接受率 | 打 | 勝率 | 一場幾手（KO／比聲望條） | 收牌／拿錢（每趟） | 錢／趟（占總收入） | 被讀／手（主線同位數；比） | 切磋手數÷主線手數 | 第 1–5 位／菁英藏家／一輪兩次 | 連玩 20 趟收進唱片櫃（熟客牌） |');
+  console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
+  for (const x of rows) { const s = x.spar; if (!s) continue;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f2(s.offered)}（${f2(s.per10)}） | ${pct(s.accept)} | ${s.fights} | **${pct(s.win)}** | ${f2(s.hands)}（${p0(s.by.hp)}／${p0(s.by.rounds)}） | ${f2(s.took)}／${f2(s.cashN)} | $${f0(s.cash)}（${pct(s.incomeShare)}） | ${f2(s.readHand)}（${f2(s.mainReadHand)}；${f2(s.readRatio)}） | ${pct(s.handShare)} | ${s.first5}／${s.eliteBoss}／${s.multi} | ${s.trips20 ? f1(s.trips20.cards) + '（' + f1(s.trips20.regular) + '）' : '—'} |`); }
+  const g = rows.find(x => x.spar && x.pol === 'thoughtful') || rows.find(x => x.spar);
+  if (g) console.log(`\n出在一般客人位 第 1／2／3 位（idx 0／1／2）：${g.spar.byIdx.slice(0, 3).join('／')}；誰來（${LABEL[g.pol] || g.pol}・${g.flow}）：` +
+    Object.keys(C.regulars || {}).map(k => (C.regulars[k].name || k) + ' ' + pct(g.spar.who[k] || 0)).join('、'));
+}
+// LS 門檻（SPEC-H §13；用 --enc-policy smart 判＝對主線最有利的那支；always／never 只印）。LS1–LS3 要 --encbase（同 n、同旗標、--enc off 的 JSON：配對比較，同一批種子），
+//   n ≥ 4000 才判、更小只列參考；LS4 錢中位要 --encbase；LS5／LS6 該策略打 ≥200 場才判；LS7 只在 always 判；LS8 計數
+function sparChecks(G, tag) {
+  if (!G) return;
+  const L_N = 4000, judge = SPAR_POL === 'smart', who = `${tag}切磋（${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式、${SPAR_POL}）`;
+  const put = (id, name, okv, info, big) => { if (judge && (!big || N >= L_N)) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + (judge ? `；n ${N} < ${L_N} 只列參考（判 ${id} 用 --n ${L_N}）` : `；--enc-policy ${SPAR_POL} 只列（門檻用 smart 判）`) + (okv ? '［在門檻內］' : '［不在門檻內］') }); };
+  const B = ENCBASE && ENCBASE.runs && ENCBASE.runs[GATE], TH = G.thoughtful, HR = G.humanRead, NV = G.novice, sg = x => (x >= 0 ? '+' : '') + x;
+  const noBase = (id, name, info) => refs.push({ id, name, ok: null, info: info + '；沒給 --encbase（同 n、同旗標、--enc off 的 --json）只列' });
+  if (TH) { const n1 = `${who} LS1 不放水：會讀的 到第 50 位 on − off ≤ +1 點`; if (B && B.thoughtful) { const d = TH.reach[3] - B.thoughtful.reach[3]; put('LS1', n1, d <= 0.01 + 1e-9, `${pct(TH.reach[3])} 對 ${pct(B.thoughtful.reach[3])}（${sg(pt(d))} 點）`, true); } else noBase('LS1', n1, pct(TH.reach[3])); }
+  if (HR) { const n2 = `${who} LS2 一般玩家 深度中位 on − off ≤ +1 位`; if (B && B.humanRead) { const d = HR.median - B.humanRead.median; put('LS2', n2, d <= 1, `${HR.median} 對 ${B.humanRead.median}（${sg(d)} 位）`, true); } else noBase('LS2', n2, '中位 ' + HR.median); }
+  if (NV) { const n3 = `${who} LS3 新手 到第 10 位 on − off ≤ +1 點`; if (B && B.novice) { const d = NV.reach[1] - B.novice.reach[1]; put('LS3', n3, d <= 0.01 + 1e-9, `${pct(NV.reach[1])} 對 ${pct(B.novice.reach[1])}（${sg(pt(d))} 點）`, true); } else noBase('LS3', n3, pct(NV.reach[1])); }
+  if (TH && TH.wcx) { const n4 = `${who} LS4 錢：會讀的 每輪開頭的錢中位 on ≤ off × 1.05`; const bm = B && B.thoughtful && B.thoughtful.wcx ? B.thoughtful.wcx.rmMed : null;
+    if (bm != null) put('LS4', n4, TH.wcx.rmMed <= bm * 1.05 + 1e-9, `$${Math.round(TH.wcx.rmMed).toLocaleString('en')} 對 $${Math.round(bm).toLocaleString('en')}（×${(TH.wcx.rmMed / bm).toFixed(3)}）`); else noBase('LS4', n4, '$' + Math.round(TH.wcx.rmMed).toLocaleString('en')); }
+  { const xs = Object.values(G).filter(x => x.spar && x.spar.incomeShare != null), mx = xs.reduce((m, x) => x.spar.incomeShare > m.v ? { v: x.spar.incomeShare, p: x.pol } : m, { v: 0, p: null });
+    if (xs.length) put('LS4', `${who} LS4 切磋收入 ≤ 總收入 5%（每支策略）`, mx.v <= 0.05 + 1e-9, `最多 ${pct(mx.v)}（${LABEL[mx.p] || mx.p || '—'}）`); }
+  const enough = x => x && x.spar && x.spar.fights >= 200;
+  if (enough(TH)) put('LS5', `${who} LS5 是真的對決：會讀的 勝率 75–95%`, TH.spar.win >= 0.75 - 1e-9 && TH.spar.win <= 0.95 + 1e-9, `${pct(TH.spar.win)}（${TH.spar.fights} 場）`);
+  else if (TH) refs.push({ id: 'LS5', name: `${who} LS5 會讀的 勝率 75–95%`, ok: null, info: `只打 ${TH.spar ? TH.spar.fights : 0} 場（<200），不判` });
+  if (enough(NV)) put('LS5', `${who} LS5 是真的對決：新手 勝率 45–80%`, NV.spar.win >= 0.45 - 1e-9 && NV.spar.win <= 0.80 + 1e-9, `${pct(NV.spar.win)}（${NV.spar.fights} 場）`);
+  else if (NV) refs.push({ id: 'LS5', name: `${who} LS5 新手 勝率 45–80%`, ok: null, info: `只打 ${NV.spar ? NV.spar.fights : 0} 場（<200），不判` });
+  if (SPAR_REW === 'bag' && enough(TH)) {
+    put('LS5', `${who} LS5 包包模式：會讀的 勝率 ≤90%`, TH.spar.win <= 0.90 + 1e-9, pct(TH.spar.win));
+    put('LS5', `${who} LS5 包包模式：會讀的 被讀次數／手 ≥ 主線同位數的 70%`, TH.spar.readRatio != null && TH.spar.readRatio >= 0.70 - 1e-9, `${f2(TH.spar.readHand)} 對 ${f2(TH.spar.mainReadHand)}（${f2(TH.spar.readRatio)} 倍）`);
+  }
+  for (const x of [TH, NV, HR]) if (enough(x)) put('LS6', `${who} LS6 短局：${LABEL[x.pol]} 切磋平均 1.8–3.5 手`, x.spar.hands >= 1.8 - 1e-9 && x.spar.hands <= 3.5 + 1e-9, `${f2(x.spar.hands)} 手（主線 ${f2(x.hands)}）`);
+  { const xs = Object.values(G).filter(x => x.spar && x.spar.handShare != null), mx = xs.reduce((m, x) => Math.max(m, x.spar.handShare), 0);
+    const n7 = `${who} LS7 時間：切磋手數 ÷ 主線手數 ≤ 10%（always）`;
+    if (xs.length) { if (SPAR_POL === 'always') check('LS7', n7, mx <= 0.10 + 1e-9, `最多 ${pct(mx)}`); else refs.push({ id: 'LS7', name: n7, ok: mx <= 0.10 + 1e-9, info: `最多 ${pct(mx)}；--enc-policy ${SPAR_POL} 只列（判 LS7 用 always）` }); } }
+  { const xs = Object.values(G).filter(x => x.spar), off = xs.reduce((s, x) => s + x.spar.offers, 0), p6 = xs.reduce((s, x) => s + x.spar.pos6, 0);
+    const per10 = p6 ? 10 * off / p6 : null, bad = xs.reduce((s, x) => s + x.spar.first5 + x.spar.eliteBoss + x.spar.multi, 0);
+    if (xs.length) check('LS8', `${who} LS8 次數：每 10 位邀請 0.8–1.1（第 6 位起）；第 1–5 位、菁英、藏家位 0；每輪 ≤1`, per10 != null && per10 >= 0.8 - 1e-9 && per10 <= 1.1 + 1e-9 && bad === 0,
+      `${f2(per10)}（${off} 次／${Math.round(p6)} 位）；第 1–5 位 ${xs.reduce((s, x) => s + x.spar.first5, 0)}、菁英藏家 ${xs.reduce((s, x) => s + x.spar.eliteBoss, 0)}、一輪兩次 ${xs.reduce((s, x) => s + x.spar.multi, 0)}`); }
+  if (HR && HR.spar) refs.push({ id: '切磋', name: `${who} 一般玩家每趟邀請平均（應 ≥1.5，玩家才看得到這個功能）`, ok: HR.spar.offered >= 1.5 - 1e-9, info: f2(HR.spar.offered) });
+}
+
 // 一檔貨表的數字：完整一輪（5 位都走到）看到幾張不同的（全部／FEATURE；第 1 輪、第 2 輪起分開）、每位架上幾張、剋下一位主屬性那軸 ≥4 星幾張（中位／最小／0 張的比例；
 //   全部、第 1 輪、--browse 時打開的那幾箱）、每趟從架上買幾張（唱片／其中 FEATURE）、架上稀有度（每格）
 function lotStats(L, n) {
@@ -778,6 +903,10 @@ if (WC_ON) report.waveC = WCC;                                             // �
 if (COPT_SET) report.copt = COPT;
 if (ENC_ON) report.encore = { aceStar: EN.encCfg(C).aceStar, carry: EN.encCfg(C).carry !== false, aces: EN.encCfg(C).aces, facHeresy: EN.encCfg(C).facHeresy, ...(ENCPOL ? { encpol: true } : {}) };   // 第 I 波（--encore off＝不多這個鍵）
 if (SAFETY) report.safety = true;
+if (SPAR_ON) report.encounter = { cfg: EN.sparCfg(C), policy: SPAR_POL, reward: SPAR_REW };   // 切磋（--enc off＝不多這個鍵）
+if (ENCBASE && !(ENCBASE.N === N && ENCBASE.CAP === CAP && (ENCBASE.TIER | 0) === TIER && !ENCBASE.encounter && !!ENCBASE.fac === FAC && (ENCBASE.apex || null) === (report.apex || null) && !!ENCBASE.safety === SAFETY)) {
+  console.error('--encbase 要是同 n、同 cap、同 tier／--fac／--apex／--safety、--enc off 跑出來的 JSON'); process.exit(2);
+}
 if (FROM) report.from = { n: FROM, relics: FROM_RELICS };
 if (RET_RELICS) report.returning = RET_RELICS;
 if (RET_RELICS) console.log('\n老玩家（--returning）：不打序章、帶 ' + RET_RELICS.join('、') + ' 開局');
@@ -892,6 +1021,7 @@ if (MODE === 'all' || MODE === 'runs') {
   }
 
   if (WC_ON) printWC(rows);                                              // 第 C 波（全關不印）
+  if (SPAR_ON) printSpar(rows);                                          // 活店切磋（--enc off 不印）
   if (D1EX) {                                                            // 第 D 波：試煉過關率（到第 21 位＝打倒第 20 位藏家）＋每趟樂歷（careerGain：沒破紀錄、沒倍率）
     console.log(`\n第 D 波：到第 21 位（打倒第 20 位藏家＝試煉過關）、每趟樂歷（基本＝15×位數＋8×最多連贏；路線＝截過的，括號未截）${TIER ? '；試煉第 ' + TIER + ' 階' : ''}：\n`);
     console.log('| 策略 | 流程 | 到第 21 位 | 開局 品味／底氣／聲望上限 | 樂歷 基本＋路線（未截）／演唱會 |');
@@ -1014,6 +1144,7 @@ if (MODE === 'all' || MODE === 'runs') {
     }
     for (const c of refs.slice(refs0)) if (typeof c.ok === 'boolean') c.info += c.ok ? '［在門檻內］' : '［不在門檻內］';
   }
+  if (SPAR_ON && !FROM) sparChecks(cells[GATE], `［${GATE}］`);           // 活店切磋 LS1–LS8（LS9＝上面的既有門檻照樣全過；LS0 另跑，見檔頭）
   if (cells.smart && cells.none && cells.smart.thoughtful && cells.none.thoughtful)
     console.log(`\n會讀的：smart − none 深度中位 ${cells.smart.thoughtful.median - cells.none.thoughtful.median} 位、平均 ${(cells.smart.thoughtful.mean - cells.none.thoughtful.mean).toFixed(1)} 位（買東西有沒有用；只列不檢查）`);
 }
@@ -1047,4 +1178,5 @@ console.log(`\n${checks.length - failed.length}/${checks.length} 通過${refs.le
 report.checks = checks;
 if (refs.length) report.refs = refs;
 if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify(report, null, 1));
+if (TRACE) fs.writeFileSync(TRACE, JSON.stringify(TRACE_OUT));
 if (failed.length) process.exitCode = 1;
