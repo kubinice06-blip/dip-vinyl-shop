@@ -5,7 +5,7 @@
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 
-統計：原句 45、拍板 0、店主 71、新 1147（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1231（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1275,11 +1275,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Michael Jackson《Thriller》・text | 史上最暢銷・這手：名盤份量最重：這手你的唱片 +1 星。 | 本規格新寫 | `apexTrial.hall[7].text` |
 | 鄧麗君 Teresa Teng《淡淡幽情》・text | 但願人長久・留著：留著：被剋少扣 1；發動：這手他少 1 星。 | 本規格新寫 | `apexTrial.hall[8].text` |
 | 張雨生《口是心非》・text | 口是心非・這手：他說的不算：這手比星多算 3，輸了不扣。 | 本規格新寫 | `apexTrial.hall[9].text` |
-| 陳綺貞 Cheer Chen《讓我想一想》・text | 讓我想一想・留著：留著：同色同星扣他 1；發動：這手比星多算 3。 | 本規格新寫 | `apexTrial.hall[10].text` |
+| Guru《Jazzmatazz, Vol. 1》・text | 真人進棚・留著：留著：同色同星扣他 1；發動：這手比星多算 3。 | 本規格新寫 | `apexTrial.hall[10].text` |
 | Daft Punk《Discovery》・text | 更快更強・整場：更硬更好更快更強：這場比星多算 1。 | 本規格新寫 | `apexTrial.hall[11].text` |
-| 周杰倫《范特西》・text | 雙截棍・這手：哼哼哈兮：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[12].text` |
-| Kendrick Lamar《To Pimp a Butterfly》・text | 唸完那首詩・整場：一路唸到最後：這場比星多算 1。 | 本規格新寫 | `apexTrial.hall[13].text` |
-| 羅大佑《之乎者也》・text | 光陰的故事・這手：光陰沖淡一顆：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[14].text` |
+| Slum Village《Fan-Tas-Tic, Volume 1》・text | 錯開的拍子・這手：拍子錯開半格：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[12].text` |
+| Art Blakey and the Jazz Messengers《Moanin'》・text | 雷鳴滾奏・整場：鼓聲一路推到底：這場比星多算 1。 | 本規格新寫 | `apexTrial.hall[13].text` |
+| 濁水溪公社《台客的復仇》・text | 台客的復仇・這手：台客回來討公道：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.hall[14].text` |
 
 ## 頂點卡試做・流亡的王牌能力（能力名・時機：說明；挑王牌面板 5×3 的順序；?apex=1）
 
@@ -1288,11 +1288,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Barney Wilen《Zodiac》・text | 黃道借星・整場：借他的星：這場你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[0].text` |
 | Beyond《再見理想》・text | 自掏腰包・整場：硬碰大牌：這場你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[1].text` |
 | Harry Roesli《Ken Arok》・text | 草莽稱王・整場：草莽挑王：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[2].text` |
-| 夾子電動大樂隊《地下人》・text | 地下人・整場：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[3].text` |
+| 生活向上委員会《生活向上委員会ニューヨーク支部》・text | 紐約支部・整場：闖蕩紐約：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[3].text` |
 | 灰野敬二《滲有無》・text | 滲透・整場：滲過去：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[4].text` |
 | 楊祖珺《楊祖珺》・text | 禁不掉・整場：禁不掉：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[5].text` |
 | 嘉手苅林昌《嘉手苅林昌》・text | 島唄之神・整場：老神在在：這場你剋他，他高你 3 星以上才剋不動。 | 本規格新寫 | `apexTrial.pearl[6].text` |
-| Blue Notes《Blue Notes for Mongezi》・text | 流亡者回敬・整場：這場被剋時，扣你的星有一半彈回去扣他。 | 本規格新寫 | `apexTrial.pearl[7].text` |
+| モア《モア》・text | 祭典之歌・整場：這場被剋時，扣你的星有一半彈回去扣他。 | 本規格新寫 | `apexTrial.pearl[7].text` |
 | 小久保隆《Get at the Wave》・text | 浪打回頭・整場：這場被剋時，扣你的星有一半彈回去扣他。 | 本規格新寫 | `apexTrial.pearl[8].text` |
 | Derek Bailey《Solo Guitar Volume 1》・text | 一把吉他・這手：一把吉他：這手你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[9].text` |
 | Gorilla Biscuits《demo 1987》・text | 一卷 demo・這手：這手你剋他一律剋得動，扣你我較大的星數。 | 本規格新寫 | `apexTrial.pearl[10].text` |
@@ -1312,8 +1312,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Lou Reed《Metal Machine Music》・text | 四面回授・整場：回授：這場抓到他唬你，扣到的一半回你聲望。 | 本規格新寫 | `apexTrial.heresy[4].text` |
 | Throbbing Gristle《The Second Annual Report》・text | 年度結算・整場：對帳：這場抓到他唬你，扣到的一半回你聲望。 | 本規格新寫 | `apexTrial.heresy[5].text` |
 | Alvin Lucier《I Am Sitting in a Room》・text | 一遍又一遍・整場：一遍遍錄回來：這場抓到他唬你，扣到的一半回你聲望。 | 本規格新寫 | `apexTrial.heresy[6].text` |
-| Les Rallizes Dénudés《'77 Live》・text | 赤裸裸・這手：剝個精光：看穿這手提示是真話還是唬人。 | 本規格新寫 | `apexTrial.heresy[7].text` |
-| Ryoji Ikeda《+/-》・text | 正負號・這手：非正即負：看穿這手提示是真話還是唬人。 | 本規格新寫 | `apexTrial.heresy[8].text` |
+| Les Rallizes Dénudés《'77 Live》・text | 赤裸裸・這手：剝個精光：照出這手提示是真話還是唬人。 | 本規格新寫 | `apexTrial.heresy[7].text` |
+| Ryoji Ikeda《+/-》・text | 正負號・這手：非正即負：照出這手提示是真話還是唬人。 | 本規格新寫 | `apexTrial.heresy[8].text` |
 | 非常階段《蔵六の奇病》・text | 逃生梯・這手：先走逃生梯：回 2 聲望。 | 本規格新寫 | `apexTrial.heresy[9].text` |
 | Einstürzende Neubauten《Kollaps》・text | 一拆就塌・整場：謊話一拆就塌：這場抓到他唬你，扣加倍。 | 本規格新寫 | `apexTrial.heresy[10].text` |
 | 零與聲音解放組織《Z.S.L.O.》・text | 往零推・這手：往零推一格：這手他的唱片少 1 星。 | 本規格新寫 | `apexTrial.heresy[11].text` |
@@ -1397,6 +1397,105 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・shield | 王牌（留著）：被剋少扣 {d} | 本規格新寫 | `apexTrial.holdNotes.shield` |
 | （畫面字）・tieWin | 王牌（留著）：同色同星，他 −{d} | 本規格新寫 | `apexTrial.holdNotes.tieWin` |
 | （畫面字）・counterPlus | 王牌（留著）：剋中多扣 {d} | 本規格新寫 | `apexTrial.holdNotes.counterPlus` |
+
+## 安可・畫面字（王牌格的籤、結果句小字、吐司、領獎小字、規則卡；{x} 由畫面代入）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・name | 安可 | 本規格新寫 | `encore.ui.name` |
+| （畫面字）・caught | 看穿他一次 | 本規格新寫 | `encore.ui.when.caught` |
+| （畫面字）・combo2 | 連剋兩手 | 本規格新寫 | `encore.ui.when.combo2` |
+| （畫面字）・sameWin | 同色比贏一次 | 本規格新寫 | `encore.ui.when.sameWin` |
+| （畫面字）・lowhp | 聲望剩三成以下 | 本規格新寫 | `encore.ui.when.lowhp` |
+| （畫面字）・again | 再發動一次 | 本規格新寫 | `encore.ui.give.again` |
+| （畫面字）・ace | 王牌回到手上（{star} 星） | 本規格新寫 | `encore.ui.give.ace` |
+| （畫面字）・star | 下一手 +{n} 星 | 本規格新寫 | `encore.ui.give.star` |
+| （畫面字）・hit | 下一手剋中多扣 {n} | 本規格新寫 | `encore.ui.give.hit` |
+| （畫面字）・heal | 回 {n} 聲望 | 本規格新寫 | `encore.ui.give.heal` |
+| （畫面字）・tpl | 安可：{when}，{give}。 | 本規格新寫 | `encore.ui.tpl` |
+| （畫面字）・aceTpl | 安可：丟出之後{when}，{give}。 | 本規格新寫 | `encore.ui.aceTpl` |
+| （畫面字）・caught | 看穿 | 本規格新寫 | `encore.ui.tagWhen.caught` |
+| （畫面字）・combo2 | 連剋 | 本規格新寫 | `encore.ui.tagWhen.combo2` |
+| （畫面字）・sameWin | 同色贏 | 本規格新寫 | `encore.ui.tagWhen.sameWin` |
+| （畫面字）・lowhp | 背水 | 本規格新寫 | `encore.ui.tagWhen.lowhp` |
+| （畫面字）・again | 再一次 | 本規格新寫 | `encore.ui.tagGive.again` |
+| （畫面字）・ace | 再丟 | 本規格新寫 | `encore.ui.tagGive.ace` |
+| （畫面字）・star | +{n} 星 | 本規格新寫 | `encore.ui.tagGive.star` |
+| （畫面字）・hit | 多扣 {n} | 本規格新寫 | `encore.ui.tagGive.hit` |
+| （畫面字）・heal | 回 {n} | 本規格新寫 | `encore.ui.tagGive.heal` |
+| （畫面字）・tag | {when}→{give} | 本規格新寫 | `encore.ui.tag` |
+| （畫面字）・lit | 安可！{give} | 本規格新寫 | `encore.ui.lit` |
+| （畫面字）・toast | 安可！《{album}》可以再{verb}一次 | 本規格新寫 | `encore.ui.toast` |
+| （畫面字）・verbApex | 發動 | 本規格新寫 | `encore.ui.verbApex` |
+| （畫面字）・verbAce | 丟 | 本規格新寫 | `encore.ui.verbAce` |
+| （畫面字）・star | 下一手 +{n} 星 | 本規格新寫 | `encore.ui.next.star` |
+| （畫面字）・hit | 下一手剋中多扣 {n} | 本規格新寫 | `encore.ui.next.hit` |
+| （畫面字）・star | 安可：+{n} 星 | 本規格新寫 | `encore.ui.note.star` |
+| （畫面字）・hit | 安可：剋中多扣 {n} | 本規格新寫 | `encore.ui.note.hit` |
+| （畫面字）・healToast | 安可：聲望 +{n} | 本規格新寫 | `encore.ui.healToast` |
+| （畫面字）・carry | 安可留到下一位 | 本規格新寫 | `encore.ui.carry` |
+| （畫面字）・carryTag | 安可×1 | 本規格新寫 | `encore.ui.carryTag` |
+| （畫面字）・infoTitle | 王牌安可 | 本規格新寫 | `encore.ui.infoTitle` |
+| 老闆・first | 「看到沒？讀對了，王牌就再給你一次。」 | 本規格新寫 | `encore.ui.first` |
+| （畫面字）・rule | 安可：王牌多一條讀對了才有的加成，一場一次；這場剛好打完就留到下一位。 | 本規格新寫 | `encore.ui.rule` |
+
+## 安可・三張 7 星王牌的說明句（唱片資訊、規則卡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 安可：丟出之後看穿他一次，王牌回到手上（6 星）。 | 本規格新寫 | `encore.aces.hall` |
+| （畫面字） | 安可：丟出之後看穿他一次，王牌回到手上（6 星）。 | 本規格新寫 | `encore.aces.pearl` |
+| （畫面字） | 安可：丟出之後看穿他一次，王牌回到手上（6 星）。 | 本規格新寫 | `encore.aces.heresy` |
+
+## 安可・頂點卡的說明句（挑王牌面板第二行、唱片資訊；家族預設或自己寫的 encore）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| Radiohead《OK Computer》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[0]` |
+| Glenn Gould《Bach: The Goldberg Variations (1955)》 | 安可：看穿他一次，下一手 +1 星。 | 本規格新寫 | `encore.apexTrial.hall[1]` |
+| Miles Davis《Kind of Blue》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[2]` |
+| The Beatles《Abbey Road》 | 安可：看穿他一次，下一手 +1 星。 | 本規格新寫 | `encore.apexTrial.hall[3]` |
+| Pink Floyd《The Dark Side of the Moon》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[4]` |
+| Bob Marley & The Wailers《Exodus》 | 安可：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[5]` |
+| 大滝詠一《A Long Vacation》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[6]` |
+| Michael Jackson《Thriller》 | 安可：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[7]` |
+| 鄧麗君 Teresa Teng《淡淡幽情》 | 安可：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[8]` |
+| 張雨生《口是心非》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[9]` |
+| Guru《Jazzmatazz, Vol. 1》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[10]` |
+| Daft Punk《Discovery》 | 安可：看穿他一次，下一手 +1 星。 | 本規格新寫 | `encore.apexTrial.hall[11]` |
+| Slum Village《Fan-Tas-Tic, Volume 1》 | 安可：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[12]` |
+| Art Blakey and the Jazz Messengers《Moanin'》 | 安可：看穿他一次，下一手 +1 星。 | 本規格新寫 | `encore.apexTrial.hall[13]` |
+| 濁水溪公社《台客的復仇》 | 安可：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.hall[14]` |
+| Barney Wilen《Zodiac》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[0]` |
+| Beyond《再見理想》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[1]` |
+| Harry Roesli《Ken Arok》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[2]` |
+| 生活向上委員会《生活向上委員会ニューヨーク支部》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[3]` |
+| 灰野敬二《滲有無》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[4]` |
+| 楊祖珺《楊祖珺》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[5]` |
+| 嘉手苅林昌《嘉手苅林昌》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.pearl[6]` |
+| モア《モア》 | 安可：看穿他一次，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.pearl[7]` |
+| 小久保隆《Get at the Wave》 | 安可：看穿他一次，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.pearl[8]` |
+| Derek Bailey《Solo Guitar Volume 1》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[9]` |
+| Gorilla Biscuits《demo 1987》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[10]` |
+| 高柳昌行《Eclipse/侵蝕》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[11]` |
+| 1976《Late Summer of 1976 不插電現場實況》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[12]` |
+| Black Renaissance《Body, Mind and Spirit》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[13]` |
+| Alton Ellis《A New Day》 | 安可：看穿他一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.pearl[14]` |
+| Swans《Filth》 | 安可：連剋兩手，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.heresy[0]` |
+| Ornette Coleman《Free Jazz: A Collective Improvisation》 | 安可：連剋兩手，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.heresy[1]` |
+| Captain Beefheart & His Magic Band《Trout Mask Replica》 | 安可：連剋兩手，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.heresy[2]` |
+| Discharge《Hear Nothing See Nothing Say Nothing》 | 安可：連剋兩手，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.heresy[3]` |
+| Lou Reed《Metal Machine Music》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[4]` |
+| Throbbing Gristle《The Second Annual Report》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[5]` |
+| Alvin Lucier《I Am Sitting in a Room》 | 安可：連剋兩手，下一手剋中多扣 2。 | 本規格新寫 | `encore.apexTrial.heresy[6]` |
+| Les Rallizes Dénudés《'77 Live》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[7]` |
+| Ryoji Ikeda《+/-》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[8]` |
+| 非常階段《蔵六の奇病》 | 安可：聲望剩三成以下，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[9]` |
+| Einstürzende Neubauten《Kollaps》 | 安可：連剋兩手，回 2 聲望。 | 本規格新寫 | `encore.apexTrial.heresy[10]` |
+| 零與聲音解放組織《Z.S.L.O.》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[11]` |
+| Sunn O)))《Black One》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[12]` |
+| Napalm Death《Scum》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[13]` |
+| Peter Brötzmann《Machine Gun》 | 安可：連剋兩手，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[14]` |
 
 ## 流派試做・經典流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
 

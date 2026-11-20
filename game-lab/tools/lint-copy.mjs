@@ -598,6 +598,36 @@ if (C.apexTrial) {
   for (const [k, v] of Object.entries(A.notes || {})) one('apexTrial.notes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
   for (const [k, v] of Object.entries(A.holdNotes || {})) one('apexTrial.holdNotes.' + k, v, '頂點卡試做・結果行補的一句（{d}＝這手王牌替你多賺／少扣幾點、{h}＝回幾聲望、{name}＝能力名）', 25);
 }
+// 第 I 波 I-1 安可（C.encore.ui、encoreTag）：條件句／加成句 ≤12、籤的兩半 ≤4、樣板與畫面字 ≤25、規則卡那段 ≤40、老闆第一次那句 ≤25（不算 {x}）；
+//   另列每張頂點卡與三張 7 星王牌組出來的說明句（engine encoreLine，給店主過目；≤30）
+if (C.encore && C.encore.ui) {
+  const U = C.encore.ui;
+  const one = (where, v, scene, max, who, text) => {
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.encoreTag)) err(where, '沒有 tag（encoreTag）');
+    if (max && len(v.replace(/\{\w+\}/g, '')) > max) err(where, '超過 ' + max + ' 字（不算 {x}）：' + v);
+    add({ scene, where, who: who || '（畫面字）', key: where.split('.').pop(), text: text || v, tag: C.encoreTag });
+  };
+  const SC = '安可・畫面字（王牌格的籤、結果句小字、吐司、領獎小字、規則卡；{x} 由畫面代入）';
+  for (const [k, v] of Object.entries(U)) {
+    if (v && typeof v === 'object') { for (const [k2, x] of Object.entries(v)) one('encore.ui.' + k + '.' + k2, x, SC, /^tag/.test(k) ? 4 : 12); continue; }
+    one('encore.ui.' + k, v, SC, k === 'rule' ? 40 : 25, k === 'first' ? '老闆' : null);
+  }
+  const EN = require(path.join(LAB, 'engine.js'));
+  if (typeof EN.encoreLine === 'function') {
+    for (const t of ['hall', 'pearl', 'heresy']) {
+      const e = EN.aceEncoreOf(C, t, false), l = EN.encoreLine(C, e, { ace: true });
+      if (len(l) > 30) err('encore.aces.' + t, '說明句超過 30 字：' + l);
+      add({ scene: '安可・三張 7 星王牌的說明句（唱片資訊、規則卡）', where: 'encore.aces.' + t, who: '（畫面字）', text: l, tag: C.encoreTag });
+      ((C.apexTrial || {})[t] || []).forEach((x, k) => {
+        const l2 = EN.encoreLine(C, EN.encoreOf(C, x, t));
+        if (len(l2) > 30) err('encore.apexTrial.' + t + '[' + k + ']', '說明句超過 30 字：' + l2);
+        const c = CARDS[x.card] || {};
+        add({ scene: '安可・頂點卡的說明句（挑王牌面板第二行、唱片資訊；家族預設或自己寫的 encore）', where: 'encore.apexTrial.' + t + '[' + k + ']', who: c.artist ? c.artist + '《' + c.album + '》' : x.card, text: l2, tag: C.encoreTag });
+      });
+    }
+  }
+}
 // 第 D 波棒二：三流派（?fac=1；C.factions、factionsTag）：派系卡（定位、被動、代價、讀法、第一次觸發那句）≤34、本派選項（名 ≤6、說明 ≤24）、結果行小字 ≤16、
 //   ?fac=1&apex=1 換一格的能力說明 ≤25、結果句 ≤25、畫面字 ≤25（不算 {x}）
 if (C.factions) {

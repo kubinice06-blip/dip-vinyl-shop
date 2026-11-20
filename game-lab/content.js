@@ -56,14 +56,22 @@
   // 舊 id 對照表 { 舊 slug: catalogId }：執行期從核心卡（!c.pool；王牌、頂點試做都算）的藝人／專輯推（不帶檔、0 byte），第一次呼叫才算、之後快取。
   //   核心卡日後改名、推不出原本的舊 slug 時，把 { 舊 slug: catalogId } 手寫補在 legacyExtra。
   //   tools/legacy-ids.json 是 B 波換 id 當下凍結的一份（368 筆）：check-content 比對「推出來的＋legacyExtra」＝它，一筆不同就失敗（防改名讓老存檔遷不過去）。
-  C.legacyExtra = {};
+  //   I-1（11-20 店主挑頂點輔助卡）：換下的 6 張離開遊戲（cards.js 沒有了）→ 舊 slug 照樣對到主站 catalogId（legacyExtra；C.apexRetired＝這幾張，check-content 不要求在 C.cards）；
+  //   換上的 6 張是 B 波以後才進核心的卡，沒有舊 slug（C.legacyNone：不推）。
+  C.legacyExtra = {
+    '陳綺貞-cheer-chen-讓我想一想': '陳綺貞 cheer chen|讓我想一想', '周杰倫-范特西': '周杰倫|范特西', 'kendrick-lamar-to-pimp-a-butterfly': 'kendrick lamar|to pimp a butterfly',
+    '羅大佑-之乎者也': '羅大佑|之乎者也', '夾子電動大樂隊-地下人': '夾子電動大樂隊|地下人', 'blue-notes-blue-notes-for-mongezi': 'blue notes|blue notes for mongezi'
+  };
+  C.apexRetired = ['陳綺貞 cheer chen|讓我想一想', '周杰倫|范特西', 'kendrick lamar|to pimp a butterfly', '羅大佑|之乎者也', '夾子電動大樂隊|地下人', 'blue notes|blue notes for mongezi'];
+  C.legacyNone = { 'guru|jazzmatazz, vol. 1': 1, 'slum village|fan-tas-tic, volume 1': 1, "art blakey and the jazz messengers|moanin'": 1,
+    '濁水溪公社|台客的復仇': 1, '生活向上委員会|生活向上委員会ニューヨーク支部': 1, 'モア|モア': 1 };
   var legacyMap = null;
   C.legacyIds = function () {
     if (legacyMap) return legacyMap;
     var m = {};
     Object.keys(C.cards).forEach(function (id) {
       var c = C.cards[id];
-      if (c && !c.pool) m[C.oldSlug(c.artist, c.album)] = C.catalogId(c.artist, c.album);
+      if (c && !c.pool && !C.legacyNone[id]) m[C.oldSlug(c.artist, c.album)] = C.catalogId(c.artist, c.album);
     });
     for (var k in C.legacyExtra) if (Object.prototype.hasOwnProperty.call(C.legacyExtra, k)) m[k] = C.legacyExtra[k];
     legacyMap = m;
@@ -1819,16 +1827,16 @@
         grade: '特色', power: 83, fact: '整張把古典詩詞譜成歌，〈但願人長久〉唱的是蘇軾〈水調歌頭〉：留得越久越好，捨得放才換一次大的。' },
       { card: "張雨生|口是心非", id: 'chang-two-faced', name: '口是心非', text: '他說的不算：這手比星多算 3，輸了不扣。', timing: 'hand', op: 'combo', params: { ops: [{ op: 'mirrorPlus', params: { n: 3 } }, { op: 'loseZero', params: {} }] }, hold: null,
         grade: '主力', power: 86, fact: '同名曲〈口是心非〉：嘴上說的跟心裡想的不一樣，正好是唬人。不信提示、直接正面比；「信」那條路照樣會被剋。' },
-      { card: "陳綺貞 cheer chen|讓我想一想", id: 'cheer-think', name: '讓我想一想', text: '留著：同色同星扣他 1；發動：這手比星多算 3。', timing: 'hold', op: 'mirrorPlus', params: { n: 3 }, hold: { op: 'tieWin', params: { n: 1 } },
-        grade: '特色', power: 88, fact: '1998 年出道專輯與同名曲〈讓我想一想〉：先想一想＝留著不用；同一個「比星」家族，小份量一直在、大份量用一次。' },
+      { card: "guru|jazzmatazz, vol. 1", id: 'jazzmatazz-live', name: '真人進棚', text: '留著：同色同星扣他 1；發動：這手比星多算 3。', timing: 'hold', op: 'mirrorPlus', params: { n: 3 }, hold: { op: 'tieWin', params: { n: 1 } },
+        grade: '特色', power: 88, fact: 'Guru 說 Jazzmatazz 的構想是把原本被取樣的那些樂手真的請進錄音室（Donald Byrd、Roy Ayers 等現場演奏，他在上面饒舌；data/artist-intros guru）。留著＝取樣那份小份量，發動＝正主進棚。I-1 換下《讓我想一想》，能力照同一個原語（power 沿用，未重量）。' },
       { card: "daft punk|discovery", id: 'discovery-stronger', name: '更快更強', text: '更硬更好更快更強：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
         grade: '主力', power: 87, fact: '〈Harder, Better, Faster, Stronger〉；整張專輯後來配成一整部動畫電影《Interstella 5555》（2003）：一整張＝一整場。' },
-      { card: "周杰倫|范特西", id: 'jay-nunchucks', name: '雙截棍', text: '哼哼哈兮：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
-        grade: '主力', power: 85, fact: '〈雙截棍〉的「快使用雙截棍，哼哼哈兮」：一棍敲掉他一顆星。' },
-      { card: "kendrick lamar|to pimp a butterfly", id: 'tpab-poem', name: '唸完那首詩', text: '一路唸到最後：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
-        grade: '主力', power: 87, fact: '一首詩拆成好幾段散在整張專輯，到最後一首〈Mortal Man〉才唸完整：一口氣唸到底＝整場有效。' },
-      { card: "羅大佑|之乎者也", id: 'lo-time', name: '光陰的故事', text: '光陰沖淡一顆：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
-        grade: '主力', power: 85, fact: '〈光陰的故事〉，羅大佑 1982 年首張專輯《之乎者也》：時間把他那張的光沖淡一格。Build 棒換下草東《醜奴兒》（團名有 lint-copy 擋的字，卡名會上畫面）；能力照原本那張（這手他少 1 星）。' }
+      { card: "slum village|fan-tas-tic, volume 1", id: 'slum-offbeat', name: '錯開的拍子', text: '拍子錯開半格：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 85, fact: 'Slum Village 的聲音核心是 Jay Dee（J Dilla）在 MPC 上手動敲擊、讓元素錯位，做出非直拍也非搖擺的「第三種時間感」（data/artist-intros slum village、j dilla）。拍子錯開，他那張就對不準一格。I-1 換下《范特西》，能力照同一個原語。' },
+      { card: "art blakey and the jazz messengers|moanin'", id: 'moanin-press-roll', name: '雷鳴滾奏', text: '鼓聲一路推到底：這場比星多算 1。', timing: 'duel', op: 'mirrorPlus', params: { n: 1 }, hold: null,
+        grade: '主力', power: 87, fact: 'Art Blakey 的鼓以雷鳴般的 press roll 著稱，協助確立 hard bop、把鼓推上獨奏位置（data/artist-intros art blakey and the jazz messengers）。鼓在後面撐一整晚＝整場有效。I-1 換下《To Pimp a Butterfly》，能力照同一個原語。' },
+      { card: "濁水溪公社|台客的復仇", id: 'loh-taike', name: '台客的復仇', text: '台客回來討公道：這手他的唱片少 1 星。', timing: 'hand', op: 'eStar', params: { n: 1 }, hold: null,
+        grade: '主力', power: 85, fact: '濁水溪公社自稱走「台客」路線，把龐克、噪音、民謠與那卡西揉在一起，以台語寫社會亂象與基層生活（data/artist-intros 濁水溪公社）；盤名就是台客的復仇。I-1 換下《之乎者也》（店主 11-20 退出頂點卡），能力照同一個原語。' }
     ],
     pearl: [
       { card: "barney wilen|zodiac", id: 'zodiac-borrow', name: '黃道借星', text: '借他的星：這場你剋他一律剋得動，扣你我較大的星數。', timing: 'duel', op: 'theirStar', params: {}, hold: null,
@@ -1837,16 +1845,16 @@
         grade: '明星', power: 103, fact: '出道前自己出錢錄、以卡帶發行的第一張：沒有唱片公司撐腰，照樣跟大牌硬碰。' },
       { card: "harry roesli|ken arok", id: 'kenarok-rise', name: '草莽稱王', text: '草莽挑王：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '印尼搖滾歌劇，取材爪哇傳說：Ken Arok 出身草莽、奪位開創新王朝。小人物也剋得動高他一截的對手。' },
-      { card: "夾子電動大樂隊|地下人", id: 'clip-underground', name: '地下人', text: '這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
-        grade: '主力', power: 90, fact: '盤名就是「地下的人」：檯面下的小牌也剋得動檯面上的大牌。台灣獨立樂團。' },
+      { card: "生活向上委員会|生活向上委員会ニューヨーク支部", id: 'seikatsu-ny', name: '紐約支部', text: '闖蕩紐約：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
+        grade: '主力', power: 90, fact: '梅津和時隻身前往紐約，投入下東城的 loft 爵士圈；1975 年他與原田依幸在那裡結識 Ahmed Abdullah、William Parker 等人，錄下這張（data/artist-intros 梅津和時、生活向上委員会）。外地來的小團也剋得動大場面。I-1 換下《地下人》，能力照同一個原語。' },
       { card: "灰野敬二|滲有無", id: 'haino-seep', name: '滲透', text: '滲過去：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '盤名的「滲」：聲音一點一點滲過去，他靠星數築起的「剋不動」那道牆被滲穿。' },
       { card: "楊祖珺|楊祖珺", id: 'yang-unbanned', name: '禁不掉', text: '禁不掉：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '唱過李雙澤〈美麗島〉的民歌手；那首歌後來成了禁歌，她轉進社運：想擋也擋不住。（只講那首歌，不說這張專輯被禁）' },
       { card: "嘉手苅林昌|嘉手苅林昌", id: 'kadekaru-shima', name: '島唄之神', text: '老神在在：這場你剋他，他高你 3 星以上才剋不動。', timing: 'duel', op: 'pThr', params: { n: 3 }, hold: null,
         grade: '主力', power: 90, fact: '被稱為「島唄之神」的沖繩民謠歌手：老神在在，一把三線也壓得住比他大的對手。（原本的「留著」型字寫不清楚，改成整場剋得動）' },
-      { card: "blue notes|blue notes for mongezi", id: 'bluenotes-return', name: '流亡者回敬', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
-        grade: '新手向', power: 66, fact: '派名就叫流亡：種族隔離時期離開南非、留在歐洲的樂團，為 1975 年底在倫敦過世的小號手 Mongezi Feza 錄的送別即興。挨了打，一半還回去。' },
+      { card: "モア|モア", id: 'moa-matsuri', name: '祭典之歌', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
+        grade: '新手向', power: 66, fact: '1983 年日本私製盤，〈まつりの歌〉分成 Part 1、Part 2 放在 A、B 兩面（Discogs https://www.discogs.com/release/20594359）：打過來的，有一半在另一面還回去。I-1 換下《Blue Notes for Mongezi》，能力照同一個原語。' },
       { card: "小久保隆|get at the wave", id: 'kokubo-wave', name: '浪打回頭', text: '這場被剋時，扣你的星有一半彈回去扣他。', timing: 'duel', op: 'bounce', params: { lose: false }, hold: null,
         grade: '新手向', power: 66, fact: '日本環境音樂。盤名的浪：打過來的浪有一半退回去。' },
       { card: "derek bailey|solo guitar volume 1", id: 'bailey-solo', name: '一把吉他', text: '一把吉他：這手你剋他一律剋得動，扣你我較大的星數。', timing: 'hand', op: 'theirStar', params: {}, hold: null,
@@ -1877,10 +1885,10 @@
         grade: '主力', power: 93, fact: 'TG 第一張專輯，由自家 Industrial Records 發行，「工業音樂」這個詞就從這個廠牌來。專輯名＝第二份年度報告：整場記帳，抓到唬人那筆，一半入你口袋。' },
       { card: "alvin lucier|i am sitting in a room", id: 'lucier-room', name: '一遍又一遍', text: '一遍遍錄回來：這場抓到他唬你，扣到的一半回你聲望。', timing: 'duel', op: 'critLeech', params: { mult: 1 }, hold: null,
         grade: '主力', power: 93, fact: '念一段話錄下來，放回房間再錄，一遍又一遍，到最後只剩房間的共振。一遍遍「回來」＝整場回聲望。' },
-      { card: "les rallizes dénudés|'77 live", id: 'rallizes-denuded', name: '赤裸裸', text: '剝個精光：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
+      { card: "les rallizes dénudés|'77 live", id: 'rallizes-denuded', name: '赤裸裸', text: '剝個精光：照出這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
         grade: '明星', power: 117, fact: '1977 年 3 月在東京立川的現場錄音，1991 年才發行；團名的 Dénudés 是法文「剝光、赤裸」。現場盤＝台下看得一清二楚。' },
-      { card: "ryoji ikeda|+--", id: 'ikeda-plusminus', name: '正負號', text: '非正即負：看穿這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
-        grade: '明星', power: 117, fact: '池田亮司用正弦波、高頻脈衝做的專輯，名字就是「正或負」：看穿只給二選一的答案，真或唬。' },
+      { card: "ryoji ikeda|+--", id: 'ikeda-plusminus', name: '正負號', text: '非正即負：照出這手提示是真話還是唬人。', timing: 'hand', op: 'reveal', params: {}, hold: null,
+        grade: '明星', power: 117, fact: '池田亮司用正弦波、高頻脈衝做的專輯，名字就是「正或負」：照出來只給二選一的答案，真或唬。' },
       { card: "非常階段|蔵六の奇病", id: 'hijokaidan-exit', name: '逃生梯', text: '先走逃生梯：回 2 聲望。', timing: 'hand', op: 'heal', params: { n: 2 }, hold: null,
         grade: '主力', power: 100, fact: '團名「非常階段」＝日文的緊急逃生梯；《蔵六の奇病》是日本噪音早期經典。打不下去先走逃生梯，保住帶著走的聲望。異端裡新手也有感的一張。' },
       { card: "einstürzende neubauten|kollaps", id: 'neubauten-collapse', name: '一拆就塌', text: '謊話一拆就塌：這場抓到他唬你，扣加倍。', timing: 'duel', op: 'crit', params: { mult: 2 }, hold: null,
@@ -1944,6 +1952,68 @@
   // 只有試做才用到的 42 張（三派 15 張扣掉 C.aces）：旗標關時畫面當作不存在（唱片櫃「認識過 m／N」的 N、搜尋、匯出給主站的卡池…）
   C.apexTrialOnly = [];
   ['hall', 'pearl', 'heresy'].forEach(function (t) { C.apexTrial[t].forEach(function (x) { if (x.card !== C.aces[t]) C.apexTrialOnly.push(x.card); }); });
+
+  // ===================================================================
+  // 第 I 波 I-1「安可」（店主 11-20「每個王牌 發動條件加成 比如 補血的ok computer可以多家條件 如果看穿對手 可以再次發動」；
+  //   規格 scratchpad v5/wave-i SPEC-I §1、附錄 Y；給畫面／sim 的契約 wave-i/build1/CONTRACT.md）。
+  //   每張王牌＝原本的效果＋一條安可「{條件}，{加成}」：讀對了才有、一場一次、條件成立時這場剛好打完就留到下一位（只留一場）。
+  //   on＝總開關（sim --encore off＝false：兩半都關＝現況逐字）。預設 7 星王牌那半：主線對決自動有（序章、切磋沒有）；頂點卡那半跟 ?apex=1。
+  //   aceStar＝7 星王牌安可那一次是幾星（7 星會變簡單：SPEC-I 附錄 Z4 會讀的到第 50 位 +2.6 點、6 星 +0.4）；star／hit／heal＝三種加成的數字；lowPct＝背水的門檻（聲望剩幾 %）。
+  //   aces＝三張預設 7 星王牌：丟出之後看穿他一次 → 王牌回到手上（6 星）；facHeresy＝?fac=1 時異端改連剋兩手（異端被動本來就吃拆穿，看穿不給三份）。
+  //   byFamily＝頂點卡的家族預設（鍵＝'原語:時機'；combo 看第一個原語、留著型照發動那個原語的 hand；'*:hand'／'*:duel'＝沒列到的）：
+  //     when＝經典、冷門的條件，heresy＝異端的（沒寫＝同 when），give＝加成。C.apexTrial 某張要跟家族不同才寫 encore:{when, give}（AN3 逐張量過再改，只改資料）。
+  //   條件 when：caught 看穿他一次（＝結果句「你看穿了！」：他這手是看得出來的唬、你剋中）｜combo2 連剋兩手｜sameWin 同色比贏一次｜lowhp 聲望剩三成以下（只配回聲望型）。
+  //     頂點卡發動那手不算（從下一手起）；7 星王牌丟出去那手就算。
+  //   加成 give：again 再發動一次（手型、留著型；7 星王牌＝王牌回到手上）｜star 下一手 +1 星｜hit 下一手剋中多扣 2（在倍數之後、他的底氣之前）｜heal 回 2 聲望（當場、跟同一手其他回聲望取大）。
+  // ===================================================================
+  C.encore = {
+    on: true, aceStar: 6, carry: true, star: 1, hit: 2, heal: 2, lowPct: 30,
+    aces: { hall: { when: 'caught', give: 'again' }, pearl: { when: 'caught', give: 'again' }, heresy: { when: 'caught', give: 'again' } },
+    facHeresy: 'combo2',
+    byFamily: {
+      'heal:hand': { when: 'caught', heresy: 'lowhp', give: 'again' },
+      'star:hand': { when: 'sameWin', heresy: 'combo2', give: 'again' },
+      'eStar:hand': { when: 'sameWin', heresy: 'combo2', give: 'again' },
+      'mirrorPlus:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
+      'tieWin:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
+      'loseZero:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
+      'theirStar:hand': { when: 'combo2', give: 'again' },
+      'reveal:hand': { when: 'combo2', give: 'again' },
+      'crit:hand': { when: 'combo2', give: 'again' },
+      'critAdd:hand': { when: 'combo2', give: 'again' },
+      '*:hand': { when: 'caught', heresy: 'combo2', give: 'again' },
+      'mirrorPlus:duel': { when: 'caught', heresy: 'combo2', give: 'star' },
+      'theirStar:duel': { when: 'combo2', give: 'hit' },
+      'pThr:duel': { when: 'combo2', give: 'hit' },
+      'bounce:duel': { when: 'caught', heresy: 'combo2', give: 'heal' },
+      'crit:duel': { when: 'combo2', give: 'heal' },
+      'critAdd:duel': { when: 'combo2', give: 'heal' },
+      'critLeech:duel': { when: 'combo2', give: 'hit' },
+      '*:duel': { when: 'combo2', give: 'hit' }
+    },
+    // 畫面字（{n}＝加成的數字、{star}＝安可盤幾星、{album}＝王牌專輯名、{verb}＝發動｜丟；engine encoreLine／encoreTag 會代入條件句與加成句）
+    ui: {
+      name: '安可',
+      when: { caught: '看穿他一次', combo2: '連剋兩手', sameWin: '同色比贏一次', lowhp: '聲望剩三成以下' },
+      give: { again: '再發動一次', ace: '王牌回到手上（{star} 星）', star: '下一手 +{n} 星', hit: '下一手剋中多扣 {n}', heal: '回 {n} 聲望' },
+      tpl: '安可：{when}，{give}。',                 // 頂點卡：「安可：看穿他一次，再發動一次。」
+      aceTpl: '安可：丟出之後{when}，{give}。',      // 7 星王牌：「安可：丟出之後看穿他一次，王牌回到手上（6 星）。」
+      tagWhen: { caught: '看穿', combo2: '連剋', sameWin: '同色贏', lowhp: '背水' },
+      tagGive: { again: '再一次', ace: '再丟', star: '+{n} 星', hit: '多扣 {n}', heal: '回 {n}' },
+      tag: '{when}→{give}',                          // 王牌格下方的籤（灰＝還在等、金＝安可了）
+      lit: '安可！{give}',                            // 成立那手：結果句多一行小字
+      toast: '安可！《{album}》可以再{verb}一次', verbApex: '發動', verbAce: '丟',
+      next: { star: '下一手 +{n} 星', hit: '下一手剋中多扣 {n}' },   // 王牌格下方小字（加成等著用的時候）
+      note: { star: '安可：+{n} 星', hit: '安可：剋中多扣 {n}' },    // 吃加成那手的結果句小字（engine outcome 的 notes）
+      healToast: '安可：聲望 +{n}',
+      carry: '安可留到下一位',                         // 領獎畫面小字（這場剛好打完）
+      carryTag: '安可×1',                              // 下一場王牌格的金籤
+      infoTitle: '王牌安可',                           // 唱片資訊「王牌能力」區多一行的標題
+      first: '「看到沒？讀對了，王牌就再給你一次。」',   // 第一次遇到安可（save.seen.encore），老闆說
+      rule: '安可：王牌多一條讀對了才有的加成，一場一次；這場剛好打完就留到下一位。'
+    }
+  };
+  C.encoreTag = '新';
 
   // ===================================================================
   // 第 D 波棒二：三流派（網址 ?fac=1 試做旗標；scratchpad v5/wave-d SPEC-D §3.2–§3.5、§3.9–§3.10、§4.2、§6-3；給畫面／sim 的契約 build2/CONTRACT.md）。

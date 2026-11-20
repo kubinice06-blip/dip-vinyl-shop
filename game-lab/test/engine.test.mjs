@@ -17,6 +17,8 @@ const EN = require(path.join(HERE, '../engine.js'));
 const C0 = require(path.join(HERE, '../content.js'));
 const { ATTRS, BEATS, COUNTER_OF, CFG, TIERS } = EN;
 const QUICK = process.argv.includes('--quick');
+// 第 I 波安可（content.encore.on）關掉的 content 複本：改版前的黃金（run JSON／決策序列）都是沒有安可的引擎跑的，比對時用這份（安可的逐字現況另在 #32 驗）
+const noEnc = c => Object.assign({}, c, { encore: Object.assign({}, (c && c.encore) || {}, { on: false }) });
 
 // ---------------- tiny harness ----------------
 let pass = 0, fail = 0; const fails = [];
@@ -3326,9 +3328,9 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
   EN.setCtx(null);
   // ---- 1 功能全關：一趟 50 位 run JSON（扣第 C 波欄位）跟現行逐字相同；第 C 波欄位停在初值、沒有 stats.c ----
   { let s = ''; const reached = [];
-    const CNONE = Object.assign({}, C); delete CNONE.waveC;           // content 沒有 waveC＝引擎預設（也是全關）
+    const CNONE = noEnc(Object.assign({}, C)); delete CNONE.waveC;   // content 沒有 waveC＝引擎預設（也是全關）；第 I 波安可也關（黃金是改版前跑的）
     for (const [sk, rn, ace] of [['wcoff1', 1, 'hall'], ['wcoff2', 2, 'pearl'], ['wcoff3', 3, 'heresy'], ['wcoff4', 2, 'hall'], ['wcoff5', 4, 'pearl'], ['wcoff6', 5, 'heresy']]) {
-      const run = driveOff(C, sk, rn, ace, 50), o = JSON.parse(JSON.stringify(run));
+      const run = driveOff(noEnc(C), sk, rn, ace, 50), o = JSON.parse(JSON.stringify(run));
       ok(o.road.length === 0 && o.found.length === 0 && o.tickets === 0 && o.dare === null && o.consign === null && o.fortune === null && o.safety === false && JSON.stringify(o.lexp) === '{}' && !o.stats.c && o.chestDry === 0, 'off: wave C fields stay at their initial values', sk);
       eq(JSON.stringify(driveOff(CNONE, sk, rn, ace, 50)), JSON.stringify(run), 'off (content waveC on:false) = engine defaults (no content.waveC) ' + sk);
       for (const k of WCK) delete o[k];
@@ -3715,7 +3717,7 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
       { talent: { atk: 0, def: 0, hp: 0, xp: 0, plea: 0, money: 0, pay: 0, rare: 0 }, relicPick: 1, goldAdd: 0 }, { talent: {}, seedMax: 0 }];
     eq(extras.slice(1, 4), [{}, {}, {}], 'talentArgs: Lv7 nothing／Lv7 locked power／off → {}');
     extras.forEach((ex, j) => CASES.forEach((o, i) => {
-      const { run, seq } = driveD(K, Object.assign({}, o, ex), 20);
+      const { run, seq } = driveD(noEnc(K), Object.assign({}, o, ex), 20);   // 第 I 波安可關（黃金是改版前跑的）
       ok(EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq)) === GOLD[i] && run.pos === POS[i], 'no career args (variant ' + j + ') = engine before wave D, case ' + o.seedKey, { pos: run.pos });
     }));
     for (const sk of ['dn1', 'dn2', 'dn3']) {
@@ -3939,7 +3941,8 @@ section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 �
       }
       return { run, seq };
     };
-    const VAR = [[K, {}], [K, { fac: false }], [Object.assign({}, K, { factions: undefined }), { fac: true }], [Object.assign({}, K, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]];
+    const KN = noEnc(K);   // 第 I 波安可關（黃金是改版前跑的）
+    const VAR = [[KN, {}], [KN, { fac: false }], [Object.assign({}, KN, { factions: undefined }), { fac: true }], [Object.assign({}, KN, { factions: Object.assign({}, F, { on: false }) }), { fac: true }]];
     VAR.forEach(([content, ex], j) => CASES.forEach(([o, fo], i) => {
       if (QUICK && j > 0 && i > 1) return;
       const { run, seq } = drive(content, Object.assign({}, o, ex), fo);
