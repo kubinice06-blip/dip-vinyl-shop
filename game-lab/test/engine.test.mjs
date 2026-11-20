@@ -3911,7 +3911,10 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
     const U = K.trial.ui; for (const k of ['unlocked', 'aceLockedNote', 'lockHint', 'unlockNext', 'bossUnlock']) ok(U[k].includes('{title}') && !U[k].includes('{title}派') && !U[k].includes('{axis}'), 'template ' + k, U[k]);
     const src = fs.readFileSync(path.join(HERE, '../content.js'), 'utf8'); ok(!['殿堂派', '流亡派', '異端派', '{title}派'].some(w => src.includes(w)), 'no 殿堂派／流亡派／異端派／{title}派 in content.js');
     ok(!/之後開放/.test(JSON.stringify(K.waveC.ui)), 'wave C lexp strings no longer say 之後開放');
-    const KC = Object.assign({}, K.career); delete KC.ui; eq(EN.careerCfg(Object.assign({}, K, { career: undefined })), KC, 'content.career = engine CAREER (minus ui)');
+    // 第 I 波：階梯上 ui:true 的格（Lv5 bgmShelf＝背景音樂也放唱片櫃的歌）只給畫面、不帶引擎效果，引擎的 CAREER 預設不抄
+    const KC = Object.assign({}, K.career); delete KC.ui; KC.ladder = KC.ladder.filter(L => !L.ui); eq(EN.careerCfg(Object.assign({}, K, { career: undefined })), KC, 'content.career = engine CAREER (minus ui, minus ui-only ladder rows)');
+    ok(K.career.ladder.filter(L => L.ui).every(L => !('relicPick' in L) && !('seedMax' in L) && !('goldAdd' in L)), 'ui-only ladder rows carry no engine effect');
+    eq(EN.ladderAt(K, 5).map(L => L.key), ['bgmShelf'], 'Lv5 opens bgmShelf (I-4)');
     const CU = K.career.ui; ok(X.talents.every(t => CU.names[t.id] && CU.fx[t.id]), 'every talent has a name and an effect line');
     ok(X.ladder.every(L => CU.ladder[L.key]), 'every ladder row has a name'); ok(X.talents.every(t => CU.groups.some(g => g.cats.includes(t.cat))), 'every talent cat is in a group');
     ok(K.lines.owner.retryPlea && K.lines.owner.profFirst, 'owner lines for plea／first stamps'); ok(K.careerTag === '新', 'careerTag'); }

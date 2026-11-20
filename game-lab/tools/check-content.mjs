@@ -383,6 +383,7 @@ export function contentProblems(C, E) {
   }
   bad.push(...shapeProblems(C, E));
   bad.push(...tuneProblems(C));
+  bad.push(...bgmProblems(C));        // 第 I 波 §4 背景音樂
   bad.push(...apexProblems(C, E));
   bad.push(...encoreProblems(C, E));
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
@@ -1137,6 +1138,28 @@ export function tuneProblems(C) {
   for (const [k, ph] of Object.entries(need)) ok(typeof R[k] === 'string' && R[k] && ph.every(x => R[k].includes('{' + x + '}')), 'radio.' + k + (ph.length ? '（要有 ' + ph.map(x => '{' + x + '}').join('') + '）' : ''));
   ok(C.radioTag === '新', 'C.radioTag');
   ok(!/今晚/.test(Object.values(R).join('')), 'radio 的字寫「這一輪」，不寫「今晚」（11-12 拿掉時間）');
+  return bad;
+}
+// 第 I 波 §4 背景音樂（C.bgm）：數字在合理範圍（泡泡至少停 6 秒＝活店 §5.3、隔 ≥2 分鐘才再展開、連試 ≤3 首、新抓上限 ≤30）、音量三段遞增、字齊全、bgmTag；
+//   樂歷階梯 Lv5 那一格 bgmShelf 有名字（ui.js bgmShelfOpen 靠 key 找）
+export function bgmProblems(C) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const B = C.bgm || {};
+  if (!ok(C.bgm && typeof C.bgm === 'object', '沒有 C.bgm')) return bad;
+  const num = (k, lo, hi) => ok(typeof B[k] === 'number' && B[k] >= lo && B[k] <= hi, 'bgm.' + k + ' 要在 ' + lo + '–' + hi + '（現在 ' + B[k] + '）');
+  num('popMs', 6000, 10000); num('popGap', 120000, 600000); num('tries', 1, 3); num('retryMs', 30000, 300000); num('idleMs', 300000, 1800000);
+  num('fetchMax', 1, 30); num('resumeMs', 500, 3000); num('fadeIn', 0, 3000);
+  const V = B.vols;
+  ok(Array.isArray(V) && V.length === 3 && V.every(v => typeof v === 'number' && v > 0 && v <= 1) && V[0] < V[1] && V[1] < V[2] && V[1] === 0.5, 'bgm.vols 要三段遞增、中＝0.5（fx MUSIC_VOL）');
+  const U = B.ui || {};
+  for (const k of ['np', 'tapPlay', 'icon', 'bgm', 'vol', 'src', 'srcBag', 'srcBoth', 'note']) ok(typeof U[k] === 'string' && U[k], 'bgm.ui.' + k);
+  ok(Array.isArray(U.volNames) && U.volNames.length === 3 && U.volNames.every(x => typeof x === 'string' && x), 'bgm.ui.volNames 三個');
+  ok(!/曲|歌名/.test([U.np, U.tapPlay].join('')), 'bgm.ui 收音機旁的字不提曲名（沒有資料）');
+  ok(C.bgmTag === '新', 'C.bgmTag');
+  const K = C.career || {}, lad = (K.ladder || []).find(L => L && L.key === 'bgmShelf');
+  ok(lad && lad.lv === 5 && !lad.soon, 'career.ladder 要有 Lv5 bgmShelf（第 I 波 §7.3 d）');
+  ok(((K.ui || {}).ladder || {}).bgmShelf, 'career.ui.ladder.bgmShelf 名字');
   return bad;
 }
 // 跟主站比（走鐘只警告）：回傳警告字串陣列；讀不到主站檔也只警告

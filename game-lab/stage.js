@@ -14,7 +14,7 @@
  *   Stage.say(id, text, { tone:'owner'|null, ms = 2600 })   ms 0＝不自動收；text 空＝收掉
  *   Stage.pose(id, 'atk'|'hurt'|'ko'|'warn'|'dig'|'busy'|'sit'|null, ms?)
  *   Stage.emote(id, 'anger'|'record'|'note'|'excl'|'sweat'|'tea'|null, ms?)   頭上像素小圖示（不用 emoji）
- *   Stage.door('open'|'swing'|'close') ; Stage.play(on) ; Stage.flash(color='#fff', ms=160)（只閃舞台；減少動態不閃） ; Stage.dim(k)
+ *   Stage.door('open'|'swing'|'close') ; Stage.play(on) ; Stage.setNow(cardId|null) ; nowKey()（第 I 波：櫃檯唱盤封面＝正在放的那張） ; Stage.flash(color='#fff', ms=160)（只閃舞台；減少動態不閃） ; Stage.dim(k)
  *   Stage.tag(id, text, 'e'|'p', 'L'|'R') ; Stage.untag(id?) ; Stage.float(id, text|{text,sub}, cls?)
  *   Stage.anchor(id) → HTMLElement (#anc-<id>) ; Stage.hotRect(hotId) → DOMRect
  *   Stage.highlight([{ ids:[hotId…], label }]) ; highlight([]) 清掉
@@ -769,6 +769,18 @@
       emote: function (id, kind, ms) { shop.emote(id, kind, ms); return stage; },
       door: function (mode, o) { if ((mode === 'open' || mode === 'swing') && !(o && o.quiet)) sfx('bell'); shop.door(mode); return stage; },   // o.quiet：門照晃、不響鈴（開頭旁白已經響過）
       play: function (on) { shop.play(on); return stage; },
+      // 第 I 波 §4.3：櫃檯唱盤的封面＝正在放的那張（key＝卡 id；null／不認得＝回 layout 寫死的那張）；熱點「正在放：《專輯》」跟著換。沒有櫃檯（你家）＝不做
+      setNow: function (key) {
+        if (!shop) return stage;
+        var pr = (L.props || []).filter(function (o) { return o.type === 'counter' && o.now; })[0]; if (!pr) return stage;
+        var cards = opts.cards || W.DipLabCards || {}, k = key && cards[key] ? key : null;
+        if ((shop.state.now || null) === k) return stage;
+        shop.state.now = k;
+        var id = k || pr.now, cd = cards[id], hl = typeof shop.hotList === 'function' ? shop.hotList() : [];
+        hl.forEach(function (h) { if (h.id === 'now') { h.action = 'wall-record:' + id; h.label = '正在放：' + (cd ? cd.album : ''); } });
+        return stage;
+      },
+      nowKey: function () { return (shop && shop.state.now) || null; },
       dim: function (k) { shop.dim(k); return stage; },
       flash: function (color, ms) { shop.flash(color, ms); return stage; },
       // 名牌：記下來（頭頂屬性方塊出現時暫時收起、收方塊時還原）
