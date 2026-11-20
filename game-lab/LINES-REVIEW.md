@@ -6,7 +6,7 @@
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 
-統計：原句 45、拍板 0、店主 71、新 1513（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1521（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -929,7 +929,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・title | 升級：Lv {n} | 本規格新寫 | `trial.levelUp.title` |
+| （畫面字）・title | 升到 Lv{n}：挑一項，這一趟都有效 | 本規格新寫 | `trial.levelUp.title` |
 | （畫面字）・sub | 聲望上限 +1（自動） | 本規格新寫 | `trial.levelUp.sub` |
 | （畫面字）・atk | 品味 +1 | 本規格新寫 | `trial.levelUp.atk` |
 | （畫面字）・def | 底氣 +1 | 本規格新寫 | `trial.levelUp.def` |
@@ -937,6 +937,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・atkSub | 剋中時多扣他 {n} | 本規格新寫 | `trial.levelUp.atkSub` |
 | （畫面字）・defSub | 被扣時少扣 {n}（最多擋一半） | 本規格新寫 | `trial.levelUp.defSub` |
 | （畫面字）・hpSub | 現在的聲望也 +{n} | 本規格新寫 | `trial.levelUp.hpSub` |
+| （畫面字）・chapter | 升級！Lv{n} | 本規格新寫 | `trial.levelUp.chapter` |
+| （畫面字）・first | 打贏就會升級，挑一項，這一趟都有效。 | 本規格新寫 | `trial.levelUp.first` |
 
 ## 無限試煉・結果行補的一句（品味／底氣多扣、少扣）
 
@@ -1096,6 +1098,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・unlockTitle | 流派與攤位 | 本規格新寫 | `career.ui.unlockTitle` |
 | （畫面字）・lastLine | 上一趟 樂歷 +{n} | 本規格新寫 | `career.ui.lastLine` |
 | （畫面字）・nextRun | 改了下一趟開局才算 | 本規格新寫 | `career.ui.nextRun` |
+| （畫面字）・live | 樂歷 這一趟 至少 +{n} | 本規格新寫 | `career.ui.live` |
+| （畫面字）・liveUp | Lv{n}！這一趟結束就能點天賦 | 本規格新寫 | `career.ui.liveUp` |
+| （畫面字）・recurve | 樂歷算法改了，補你 {n} 級。 | 本規格新寫 | `career.ui.recurve` |
 
 ## 樂歷・樂歷頁的解鎖階梯
 
@@ -1155,6 +1160,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・routeCap | 路線樂歷已到上限 | 本規格新寫 | `career.ui.routeCap` |
 | （畫面字）・gainTitle | 這一趟的樂歷 +{n} | 本規格新寫 | `career.ui.gainTitle` |
 | （畫面字）・toPage | 看樂歷頁 › | 本規格新寫 | `career.ui.toPage` |
+| （畫面字）・partFirst | 第一趟：樂歷保底到 Lv{n} | 本規格新寫 | `career.ui.partFirst` |
 
 ## 樂歷・過場卡（結算主鈕之後、開機入帳之後；一次一張）
 
@@ -1168,6 +1174,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・profUp | {title} 熟練 Lv{n} | 本規格新寫 | `career.ui.profUp` |
 | （畫面字）・cardNext | 繼續 | 本規格新寫 | `career.ui.cardNext` |
 | （畫面字）・cardTap | 點一下看下一張 | 本規格新寫 | `career.ui.cardTap` |
+| （畫面字）・lvList | 升到 Lv{n}！ | 本規格新寫 | `career.ui.lvList` |
+| （畫面字）・lvNew | 新開：{list} | 本規格新寫 | `career.ui.lvNew` |
 
 ## 樂歷・開機入帳的吐司（C 波記的樂歷）
 

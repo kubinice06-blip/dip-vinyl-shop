@@ -3,7 +3,9 @@
 //   （特價箱 bargainPolicy、獎勵／攤位／選秀 cPolicy、升級 runPolicy、每位客人前 shopPolicy('smart')＋收音機 radioSmart、說情）。規則一行都不在這裡重寫。
 // Usage: node game-lab/career.mjs [--careers 200] [--runs 30] [--policies thoughtful,humanRead,novice,high] [--ace hall|pearl|heresy]
 //          [--gate 999] [--spend even|atk] [--money on|off] [--seeds on|off] [--keep on|off] [--lowmul m] [--lowbelow 10] [--tier k]
-//          [--fac] [--patch '{"career":{…}}'] [--cap 300] [--json out.json] [--ctl ctl.json]
+//          [--fac] [--patch '{"career":{…}}'] [--cap 300] [--json out.json] [--ctl ctl.json] [--first on|off]
+//   第 I 波 I-0（SPEC-I §7.3、§7.6 GI1–GI3）：第 1 趟 careerGain 帶 first（新帳號第一趟保底到 lexp.firstLv；--first off＝不帶）；曲線照 content（curve.table）。
+//     多印 GI 那幾行：第 1 趟結束 Lv ≥2、第 2 趟結束 Lv ≥3 的帳號比例（每個策略）。I-0 以前的對照：--first off --patch '{"trial":{"firstNeed":0,"firstHp":1},"career":{"curve":{"table":[]}}}'
 //   --fac（第 D 波棒二；SPEC-D §7.2）：每一趟 newRun 多 fac:true（?fac=1 三流派：被動＋代價＋本派選項，runPolicy 出了就拿）。G3 帶流派重判用；
 //     沒給 --fac 時一字不差（newRun 不收 fac 鍵）
 //   一個 career＝一個新帳號（ui createRun／recordRun 的跨趟規則）：
@@ -42,7 +44,7 @@ const CONTROL = argv.includes('--control') || +arg('gate', 0) >= 999;
 const GATE = !CONTROL && arg('gate', null) != null ? +arg('gate') : null;
 const SPEND = arg('spend', 'even');
 if (!['even', 'atk'].includes(SPEND)) { console.error('--spend even|atk'); process.exit(2); }
-const MONEY = onOff('money', 'on'), SEEDS = onOff('seeds', 'on'), KEEP = onOff('keep', 'on');
+const MONEY = onOff('money', 'on'), SEEDS = onOff('seeds', 'on'), KEEP = onOff('keep', 'on'), FIRST = onOff('first', 'on');
 const FAC = argv.includes('--fac');
 if (FAC && !(C.factions && C.factions.on !== false)) { console.error('--fac：content 沒有 factions'); process.exit(2); }
 if (argv.includes('--tierpol')) { console.error('--tierpol 是棒三（試煉階級）的事；棒一只有固定 --tier k'); process.exit(2); }
@@ -141,7 +143,7 @@ function oneRun(pol, c, r, cr) {
     if (step === 'prologue') man++;
   }
   const end = run.over ? run.pos : Math.min(run.pos, CAP);
-  const sum = EN.runSummary(run), g = EN.careerGain(C, sum, { best: cr.best, tier: TIER });
+  const sum = EN.runSummary(run), g = EN.careerGain(C, sum, Object.assign({ best: cr.best, tier: TIER }, FIRST && r === 1 ? { first: true } : {}));   // ui careerRecord：save.runs 還沒有任何一趟＝first
   if (KEEP && run.over) {                                               // 結算「帶走一張」：候選裡 peak 最高的（同 seedPolicy 的排法）
     const kc = EN.keepCandidates(run, C, id => cr.owned.has(id)), pick = EN.seedPolicy(C, kc, 1, 1)[0];
     if (pick) cr.owned.add(pick);
@@ -154,11 +156,11 @@ const q = (a, p) => { const s = a.slice().sort((x, y) => x - y); return s[Math.m
 const mean = a => a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
 const SHOW = [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50];
 const t0 = Date.now();
-const report = { args: argv, NC, NR, CAP, control: CONTROL, gate: GATE, spend: SPEND, money: MONEY, seeds: SEEDS, keep: KEEP, tier: TIER, ace: ACE, fac: FAC,
+const report = { args: argv, NC, NR, CAP, control: CONTROL, gate: GATE, spend: SPEND, money: MONEY, seeds: SEEDS, keep: KEEP, tier: TIER, ace: ACE, fac: FAC, first: FIRST,
   career: { lexp: K.lexp, curve: K.curve, talents: K.talents.filter(t => !t.soon), ladder: K.ladder.filter(l => !l.soon) }, guestHpSteps: C.trial.guestHpSteps, pols: {} };
 const pf = arg('progress', null);                                       // 進度：每個策略跑完寫一行（容器重啟時看跑到哪）
 for (const pol of POLS) {
-  const W = Array.from({ length: NR }, () => ({ end: [], gain: [], base: [], route: [], raw: [], low: [], lv: [], spent: [], power: [], t: {}, smax: [], rp: [], seeds: [], drawn: [], owned: [], lv8: [] }));
+  const W = Array.from({ length: NR }, () => ({ end: [], gain: [], base: [], route: [], raw: [], low: [], lv: [], lvEnd: [], first: [], spent: [], power: [], t: {}, smax: [], rp: [], seeds: [], drawn: [], owned: [], lv8: [] }));
   const tal = ['atk', 'def', 'hp', 'plea', 'xp', 'rare', 'money', 'pay'];
   for (let c = 0; c < NC; c++) {
     const cr = { key: 'car-' + c, xp: 0, spent: {}, off: false, drawn: [], owned: new Set(), relics: [], best: 0, prevEnd: 99, chestDry: 0, respecced: false };
@@ -173,7 +175,7 @@ for (const pol of POLS) {
       w.smax.push(args.seedMax || CFG.seedMax); w.rp.push(args.relicPick > 1 ? 1 : 0); w.seeds.push(x.seeds); w.owned.push(cr.owned.size);
       cr.relics = x.relics; cr.chestDry = x.chestDry; cr.prevEnd = x.end; cr.best = Math.max(cr.best, x.end);
       cr.xp += x.g.total;
-      const lv1 = lvOf(cr);
+      const lv1 = lvOf(cr); w.lvEnd.push(lv1); w.first.push(x.g.first > 0 ? 1 : 0);
       if (!CONTROL) for (let n = Math.max(2, lv0 + 1); n <= lv1; n++) {   // 升級抽盤（ui careerUps：每個新等級抽一次，沒得抽也記）
         if (cr.drawn.includes(n)) continue;
         const id = EN.careerDraw(C, cr.key, n, id2 => cr.owned.has(id2)); if (id) cr.owned.add(id);
@@ -190,7 +192,8 @@ for (const pol of POLS) {
       lv: +mean(w.lv).toFixed(2), spent: +mean(w.spent).toFixed(2), power: mean(w.power), lv8: mean(w.lv8),
       t: Object.fromEntries(Object.entries(w.t).map(([k, a]) => [k, +mean(a).toFixed(3)])), smax: +mean(w.smax).toFixed(2), relicPick: mean(w.rp), seeds: +mean(w.seeds).toFixed(2),
       owned: +mean(w.owned).toFixed(1), drawn: +mean(w.drawn).toFixed(1),
-      gain: Math.round(mean(w.gain)), base: Math.round(mean(w.base)), route: Math.round(mean(w.route)), raw: Math.round(mean(w.raw)), low: mean(w.low), ends: w.end };
+      gain: Math.round(mean(w.gain)), base: Math.round(mean(w.base)), route: Math.round(mean(w.route)), raw: Math.round(mean(w.raw)), low: mean(w.low), ends: w.end,
+      lvEnd: +mean(w.lvEnd).toFixed(2), lvEnd2: share(w.lvEnd, l => l >= 2), lvEnd3: share(w.lvEnd, l => l >= 3), first: mean(w.first), gains: w.gain };
   });
   report.pols[pol] = out;
   console.log(`\n## ${pol}（${NC} 個帳號 × ${NR} 趟；${ACE || '三派輪流（每個帳號固定一派）'}；${CONTROL ? '對照組：天賦、階梯、抽盤永遠不開' : (GATE != null ? '戰力 Lv' + GATE + ' 開、' : '') + '花點 ' + SPEND + (MONEY ? '（Lv8 前點錢類）' : '')}；種子 ${SEEDS ? '帶' : '不帶'}、帶走一張 ${KEEP ? '有' : '沒有'}${TIER ? '、試煉第 ' + TIER + ' 階' : ''}${FAC ? '、流派 ?fac=1' : ''}）\n`);
@@ -200,6 +203,7 @@ for (const pol of POLS) {
     const t = x.t, p = v => (100 * v).toFixed(0);
     console.log(`| ${x.run} | ${x.median}／${x.mean.toFixed(1)}（${x.p25}–${x.p75}） | ${p(x.r10)}／${p(x.r20)}／${(100 * x.r50).toFixed(1)}／${(100 * x.r100).toFixed(1)} | ${x.lv.toFixed(1)}（${p(x.lv8)}%） | ${x.spent.toFixed(1)} | ${['atk', 'def', 'hp', 'plea', 'xp', 'rare'].map(k => (t[k] || 0).toFixed(2)).join('／')}（${(t.money || 0).toFixed(1)}／${(t.pay || 0).toFixed(1)}） | ${p(x.power)}% | ${x.smax.toFixed(2)}／${p(x.relicPick)}%／${x.seeds.toFixed(2)} | ${x.owned.toFixed(0)}（抽 ${x.drawn.toFixed(1)}） | ${x.gain}（${x.base}＋${x.route}；${x.raw}；${p(x.low)}%） |`);
   }
+  if (NR >= 2) console.log(`\nGI（第 I 波 I-0）${pol}：第 1 趟結束 Lv≥2 ${(100 * out[0].lvEnd2).toFixed(1)}%（平均 Lv${out[0].lvEnd.toFixed(2)}；樂歷中位 ${q(out[0].gains, 0.5)}；保底補的趟 ${(100 * out[0].first).toFixed(1)}%）・第 2 趟結束 Lv≥3 ${(100 * out[1].lvEnd3).toFixed(1)}%（平均 Lv${out[1].lvEnd.toFixed(2)}；兩趟累計中位 ${q(out[0].gains.map((g, i) => g + out[1].gains[i]), 0.5)}）`);
   if (pf) fs.appendFileSync(pf, `${pol} ${((Date.now() - t0) / 1000).toFixed(0)}s\n`);
 }
 
