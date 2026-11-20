@@ -257,7 +257,7 @@ async function doorCycle(page, n, hold) {
   const per = [];
   for (let g = 0; g < 400 && per.length < n; g++) {
     const s = await C(page, () => ({ scr: window.__lab.screen(), step: window.__lab.run ? window.DipLabEngine.nextStep(window.__lab.run) : null, go: !!document.querySelector('[data-a=go]'), going: window.__lab.going(),
-      nx: !!document.querySelector('.lb-dq .nx.on'), cx: !!document.querySelector('.lb-sheet.cxcard'), lv: !!document.querySelector('.lb-sheet.level [data-lv]') }));
+      nx: !!document.querySelector('.lb-dq .nx.on'), opt: !!document.querySelector('.lb-dq .lb-dqopt'), one: !!document.querySelector('#panel > .lb-sheet.one [data-i]'), cx: !!document.querySelector('.lb-sheet.cxcard'), lv: !!document.querySelector('.lb-sheet.level [data-lv]') }));
     if (s.scr === 'night' && s.step === 'stall') { await clearStall(page, { ms: 30000 }); continue; }
     if (s.scr === 'night' && s.go && s.step === 'fight' && !s.going) {
       const pos = await C(page, () => window.__lab.run.pos);
@@ -277,9 +277,11 @@ async function doorCycle(page, n, hold) {
     if (s.scr === 'reward') { await passLoot(page, {}); continue; }
     if (s.cx) { await jsClick(page, '.lb-sheet.cxcard .lb-btn[data-a=next]'); await sleep(400); continue; }
     if (s.lv) { await jsClick(page, '.lb-sheet.level [data-lv]'); await sleep(400); continue; }
+    if (s.one) { await sleep(400); await jsClick(page, '#panel > .lb-sheet.one [data-i="0"]'); await sleep(400); continue; }   // 藏家送的那張（解鎖）：收下
+    if (s.scr === 'scene' && s.opt) { await sleep(350); await jsClick(page, '.lb-dq .lb-dqopt[data-i="0"]'); await sleep(300); continue; }   // 藏家進場「品味對決」
     if (s.scr === 'scene' && s.nx) { await jsClick(page, '.lb-dq'); await sleep(200); continue; }
     if (s.scr === 'end' || s.scr === 'title') break;
-    if (process.env.LAB_DEBUG && g % 8 === 0) console.log('  cycle', JSON.stringify(s), JSON.stringify(await C(page, () => ({ sheets: [...document.querySelectorAll('.lb-sheet')].map(e => e.className), pending: window.__lab.run && window.__lab.run.pending && window.__lab.run.pending.type, tut: (document.getElementById('tut') || {}).className }))));
+    if (process.env.LAB_DEBUG && g % 8 === 0) console.log('  cycle', JSON.stringify(s), JSON.stringify(await C(page, () => ({ sheets: [...document.querySelectorAll('.lb-sheet')].map(e => e.className), pending: window.__lab.run && window.__lab.run.pending && window.__lab.run.pending.type, tut: (document.getElementById('tut') || {}).className, dq: (document.querySelector('.lb-dq') || {}).outerHTML, pos: window.__lab.run && window.__lab.run.pos }))));
     await sleep(250);
   }
   return per;
@@ -604,7 +606,7 @@ async function lc9(browser, w, h, size) {
         if (s.f && body(xy, s.f)) issues.push(['f-body', x.s, x.at, s.f]);
         if (s.o && dist(s.o, SNACK) <= 2 && clash(xy, SNACK)) issues.push(['stSnack', x.s, x.at]);
         if (s.f && dist(s.f, REGU) <= 2 && clash(xy, REGU)) issues.push(['regular', x.s, x.at]);
-        if (routeO && s.oM && dist(s.o, SP.counter) > 2 && onRoute(routeO, xy) && s.o[0] < 240) issues.push(['o-route', x.s, x.at]);
+        if (routeO && s.oM && dist(s.o, SP.counter) > 2 && onRoute(routeO, xy)) issues.push(['o-route', x.s, x.at]);   // 老闆在 counter↔stSnack 路上走的時候，路上沒有停著的人
       }
     }
     const modes = [...new Set(S.map(s => s.mode))];
@@ -784,7 +786,7 @@ async function lc18(browser, w, h, size, o = {}) {
       await sleep(8000);
       const S = (await cs(page)).filter(s => s.scr === 'title');
       const max = Math.max(0, ...S.map(s => vis(s).length));
-      const lowY = S.flatMap(s => vis(s).filter(x => x.y < (CT.crowd.title || {}).minY || !atStop([x.x, x.y]) && !x.wk));
+      const lowY = S.flatMap(s => vis(s).filter(x => !x.wk && (x.y < (CT.crowd.title || {}).minY || !atStop([x.x, x.y]))));   // 站著的人：y≥189 的停留點
       const modes = [...new Set(S.map(s => s.mode))];
       const r = { seed, max, low: lowY.length, modes: modes.join(), n: S.length };
       if (!tapped && max === 1) {
@@ -960,12 +962,17 @@ async function shots(browser, w, h, size) {
   // 6. 影片（390×664、真速度 12 秒：推門、換箱、點人聊天）
   if (process.env.LAB_VIDEO === '1') {
     const vdir = path.join(SHOTS, 'video-tmp'); fs.mkdirSync(vdir, { recursive: true });
-    const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1, hasTouch: true, isMobile: true, recordVideo: { dir: vdir, size: { width: w, height: h } } });
+    // 存檔先在另一個 context 種好（storageState 帶過去），錄影那頁一開就按繼續：片頭只有一下標題
+    const q = Q('&crowd=1');
+    const pre = await newPage(browser, w, h);
+    await openTitle(pre.page, q); await seedRun(pre.page, { idx: 1, seen: { crowdIntro: true, expertIntro: true } });
+    const state = await pre.ctx.storageState(); await pre.ctx.close();
+    const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1, hasTouch: true, isMobile: true, storageState: state, recordVideo: { dir: vdir, size: { width: w, height: h } } });
     const page = await ctx.newPage(); page._errors = [];
     await page.addInitScript(INSTR);
     try {
-      const q = Q('&crowd=1');
-      await openTitle(page, q); await seedRun(page, { idx: 1, seen: { crowdIntro: true, expertIntro: true } }); await openTitle(page, q);
+      await page.goto(q, { waitUntil: 'domcontentloaded' });
+      await page.waitForSelector('[data-a=cont]', { state: 'visible', timeout: 10000 });
       await jsClick(page, '[data-a=cont]'); await waitScreen(page, 'night', 20000);
       await sleep(6500);
       const v = (await crowdSt(page)).slots.find(x => x.on && !x.hidden && !x.walking && x.y >= 160);
