@@ -1,5 +1,39 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-20｜dip-vinyl-shop｜game-lab 第 I 波 I-0：成長曲線（第一輪就升級、樂歷前段變快、品味／底氣／聲望固定順序）
+
+- **背景**：店主 11-20 第 7 點「樂歷的成長曲線也要做好 第一輪就要讓玩家升級 局內升級也是 然後品味 底氣 聲望三項升級不要選項一直跳動 就照品味底氣聲望這個順序固定」。固定順序已在 #540 上線；這筆是曲線。規格 scratchpad `v5/wave-i/SPEC-I.md` §7、報告 `wave-i/build0/FINAL.md`、`SIM.md`、`RULINGS.md`。
+- **局內**：打贏第 1 位就升 Lv2（`C.trial.firstNeed 2`；全贏時第一輪升 3 次：第 1、4、5 位），第一級不自動加聲望上限（`firstHp 0`）抵銷；打贏那手先蓋「升級！Lv2」章（停住、點了收）再進戰利品；第一次升級老闆那句等戰利品吐司收掉才講。
+- **樂歷**：前 7 級曲線 100／150／250／350／500／650／800（Lv8 戰力天賦照舊 2,800）；新帳號第一趟保底到 Lv2；攤位頂列細條「樂歷 這一趟 至少 +n」、跨級金閃「樂歷 Lv n！這一趟結束就能點天賦」；一次升兩級以上出清單卡；曲線改了，舊帳號開機先補抽再入帳（`careerRecurveBoot`）。
+- **已知**：退版到舊頁面，已點的天賦會被舊頁面重置（只有 main 退版才會；RULINGS 12）。G3 一般玩家第 30 趟 ×1.822（main 本來就 ×1.807，I-0 只 +0.014）：主線裁定先收，I-3b 一併處理（例：戰力價 6k→8k）。
+- **主要檔案**：`game-lab/{engine.js,content.js,ui.js,style.css,career.mjs,index.html,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`（#33）、`game-lab/tests/{e2e-career,e2e-checkpoint,e2e-fac,e2e.spec}.mjs`、`game-lab/tools/{check-content,lint-copy}.mjs`。`?v=88`。
+- **驗證**：sim LV1 n4000 會讀的到第 50 位 18.88→18.55%、新手前三死 −0.13 點、一般玩家中位不變；GI1 第一趟結束 Lv≥2 四策略 100%、GI2 新手第二趟 Lv≥3 99.0%；現行門檻 17/17、26/26；`?fac=1` F1–F6、F8 過。合併 I-1 翻面後：engine.test 2,951,444／0（翻面關＋第一位升級關的黃金照舊）、chars、crowd、hit、shop、tutorial 全過；e2e 兩尺寸見 PR。
+
+### 2026-11-20｜dip-vinyl-shop｜game-lab 第 I 波 I-1：王牌「翻面」條件加成＋頂點輔助卡換裝（店主挑的 45 張）＋之乎者也退出頂點
+
+- **背景**：店主 11-20「每個王牌 發動條件加成 比如 補血的ok computer可以多家條件 如果看穿對手 可以再次發動」；同日改名：「不要叫安可 改名字」→ 玩家看得到的字一律叫「翻面」（程式識別字 encore 照舊；lint-copy 擋「安可」）。規格 scratchpad `v5/wave-i/SPEC-I.md` §1、報告 `wave-i/build1/FINAL.md`、`SIM.md`、裁定 `build1/RULING.md`。
+- **翻面規則**：每張王牌與頂點卡多一條「讀對了才有的條件 → 加成」，一場一次，成立時這場剛好打完就留到下一位。預設模式：三張 7 星王牌丟出後看穿他（異端 ?fac=1 時同色比贏）→ 王牌回到手上再丟一次（那次 5 星）。`?apex=1` 頂點卡家族表：看穿→下一手剋中多扣 1（24 張）、看穿→再發動一次（9）、同色比贏→多扣 1（10）、同色比贏→再發動（2）；「連剋兩手」不用（新手照提示也做得到，不是讀牌獎勵）。
+- **OK Computer**：店主原例「看穿→再補一次血」在 `?apex=1` 讓會讀的到第 50 位多 +6 點（變簡單）；「第二次只回 1」仍 +1.7 → 照主線裁定退到「看穿 → 下一手剋中多扣 1」；「再發動一次」留給 DSOTM、Kind of Blue、Jazzmatazz 等 11 張。預設模式的 OK Computer（7 星王牌）照樣是看穿就回手再丟。
+- **頂點輔助卡換裝**（店主名單頁 15／15／15）：新增 Art Blakey《Moanin'》、Guru《Jazzmatazz Vol. 1》、Slum Village《Fan-Tas-Tic Vol. 1》、濁水溪公社《台客的復仇》、モア《モア》、生活向上委員会《ニューヨーク支部》（沿用被換下那張的原語與數值，典故有出處）；拿掉之乎者也、TPAB、范特西、讓我想一想、Blue Notes for Mongezi、地下人（`C.apexRetired`）。
+- **之乎者也退出頂點**：seed_cards.json 去 hall（殿堂 303→302）、Firestore card_catalog 刪 tier／apex（回讀確認）。**待店主**：admin「頂級牌管理」按「⇄ 依卡池同步頂點旗標」（album_overrides、apex_pool 是管理員集合，雲端寫不了）；11-04 以來抽到它的玩家卡上 hall 旗標跟 11-03 降級同一題未決。
+- **畫面**：王牌格下緣翻面籤（灰＝等、金＝成立）、成立那手結果框「翻面！…」＋頭上小章、留到下一位提示、唱片資訊與挑王牌面板的翻面句、規則卡「翻面（例外）」一段（375×548 不捲）。
+- **主要檔案**：`game-lab/{engine.js,content.js,cards.js,ui.js,duel.js,duel.css,cardinfo.js,recap.js,style.css,index.html,sim.mjs,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`（#32）、`game-lab/tests/e2e-encore.mjs`（新）、`game-lab/tools/{check-content,lint-copy,deck-lists.json}`、`seed_cards.json`。`?v=87`。
+- **驗證**：sim 預設模式 AN1 n4000 會讀的到第 50 位 18.9 對 18.9%、新手不變、成立 16.6%／場；AN2–AN4 頂點卡 45 張逐張（21 組）過；AN5 ?fac=1&apex=1 1.09；sim 檔頭 18/18。engine.test 2,951,300／0；chars、hit、shop、tutorial 全過；e2e 兩尺寸全套（encore 15、apex 37、fac 22、career 30…）＋e2e.spec 兩尺寸；合併活店後再跑 encore／crowd／apex／fac／career／duel 兩尺寸、prologue、e2e.spec 375。
+
+### 2026-11-20｜dip-vinyl-shop｜頻率光譜分享縮圖換成現行面板（og-tune-v2.png）
+
+- **店主 11-20**：「縮圖好奇怪喔」——`og-tune.png` 還是最早那版面板（四顆軸滾筒、溫暖 / WARMTH、橫的就這張）。
+- **改動**：左半文字沿用原圖；右半換成正式站現行面板截圖（Playwright 2 倍、篩選爵士、水表 05711），高 644 等比、右側與上下略出血。檔名改 `og-tune-v2.png`（`git mv`），`scripts/build-tune-page.mjs` 與 `tune/index.html` 的 og:image／twitter:image 跟著換，讓 LINE／FB 不吃舊快取。
+- **主要檔案**：`og-tune-v2.png`、`scripts/build-tune-page.mjs`、`tune/index.html`。
+
+### 2026-11-20｜dip-vinyl-shop｜頻率光譜彩蛋拉霸：轉到台北順起來時，下面的顯示器快轉後停在「回家 ▶ 投票／11/28／▶ 戒慎恐懼 ◀」（v75）
+
+- **店主 11-20**：「轉到台北順起來的時候，下面的顯示器快速旋轉，像拉霸台一樣，然後停下來顯示：11/28 回家投票 戒慎恐懼。」截圖比過 A–E 五種排法，店主選 **D**：頻率四顆「回｜家｜▶｜投票」（寬滾筒放兩個字，避免單一個「票」比例過大）、水表「11/28」、篩選三顆「▶｜戒慎恐懼｜◀」。
+- **做法**：`dip-tune.js` 新增 `slotStart()`／`slotStop()`，`scan()` 落在彩蛋就開、離開就關（`stop()` 也關）。每顆滾筒蓋一條 `.tune-slot` 字條（前面一串該滾筒自己的隨機字、目標字、再墊一格），CSS transition 減速停住（cubic-bezier 尾端微回彈）；頻率 0.7–1.5 秒、水表 1.8–2.4 秒、篩選 2.7–3.3 秒依序停，轉動中每 75ms 一聲 tick、每停一顆喀一聲，全部停住後三顆篩選燈亮。原本的字條只藏起來（`.slotting>.strip`），照常更新，轉離彩蛋就拿掉拉霸條。位置全用 cqw，旋轉螢幕不會錯位。
+- **注意**：彩蛋 2026-11-27 00:00（台北）起自動下架（`EGG.until`），比 11/28 投票日早一天。
+- **驗證**：Playwright（iPhone 13）`?egg=1`：12 顆都停在目標字、偏離中線 ≤0.9px；拖輪子轉離後拉霸條全部移除、顯示恢復；再搜「台北順起來」會重轉；無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v75）。
+
 ### 2026-11-20｜dip-vinyl-shop｜game-lab 活店第一階段：熟客走來走去、點人聊天、行家周姐（店主 11-18）
 
 - **背景**：店主 11-08 規劃書「序章後的活店」三項（客人進進出出、點人聊天含行家、遭遇戰）漏排，11-18 店主追問：「熟客平常會走來走去 翻翻挖挖 然後走出門 就像真的活人」。規格 scratchpad `v5/liveshop/SPEC-H.md`、裁定 `rulings.md`、報告 `build2/FINAL.md`。這是第一階段（遭遇戰＝切磋在第二階段，開關關著）。

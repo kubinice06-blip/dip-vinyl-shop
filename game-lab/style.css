@@ -1205,3 +1205,22 @@ body.lb-tune-open{overflow:hidden;}
 .cx-got.many .cvs{flex-wrap:wrap;}
 .cx-got.many .lb-cv{width:44px;height:44px;}
 @media (prefers-reduced-motion:reduce){ .dl .lb-lvch,.dl .lb-lvch .st,.dl .lb-lvch .tap i,.cx-live.up{animation:none;} }
+
+/* 第 I 波 I-1「翻面」（王牌條件加成；ui.js EU／encToast／encCarryHd；對決裡的籤與金框在 duel.css）：
+   吐司（停 3 秒、點了收：要吃點擊）、領獎標題列下一行金色小字、挑王牌面板的說明句、頂點卡面板一行（截斷、點了看全文）、規則卡一段 */
+.lb-toast.enc{pointer-events:auto;cursor:pointer;border-color:var(--gold,#b8860b);box-shadow:0 0 0 1px var(--gold,#b8860b),0 4px 14px rgba(0,0,0,.18);color:#5a4200;}
+.lb-sheet .lb-enccarry{flex:none;margin:2px 0 0;font:700 11px/1.45 var(--zh);color:#8a6100;letter-spacing:.04em;}
+.lb-sheet .note.detail .enc{display:block;margin-top:2px;font-size:11px;line-height:1.5;font-weight:700;color:#8a6100;}
+.lb-sheet.apxpick .apx-enc{flex:none;margin:2px 0 0;font-size:11px;line-height:1.5;font-weight:700;color:#8a6100;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;}
+.lb-sheet.apxpick .apx-enc.full{white-space:normal;}
+.lb-sheet.apxpick .apx-enc:empty{display:none;}
+.lb-rules .rrel .renc b{color:#8a6100;}
+.lb-rules .rrel.wenc{text-align:left;line-height:1.5;}   /* 發燒配件一句＋翻面那句同一段（第 I 波修正輪）：靠左接著寫 */
+/* 規則卡最長的樣子（學會六張）加了翻面那句：四個尺寸都不捲（修正輪量過 375×548 底 544、360×640 620、390×664 604、430×932 927；build1/fix/probe/rules.mjs） */
+.lb-help .lb-rules .rrel.wenc{font-size:11px;line-height:1.4;margin-top:5px;}
+.lb-help .lb-rules .rfoot{margin-top:4px;}
+@media (max-height:600px){ .lb-help .lb-rules .tri{width:88px;max-width:88px;} }
+.drawcard .apx .enc{margin-top:3px;font-size:11.5px;line-height:1.55;color:#5a4200;}
+.drawcard .apx .enc b{color:#8a6100;}
+.drawcard > .enc{margin:-4px auto 10px;max-width:300px;padding:5px 10px;border:1px solid var(--gold,#b8860b);background:var(--cream,#fffbe9);font-size:11.5px;line-height:1.55;color:#5a4200;text-align:left;}
+.drawcard > .enc b{color:#8a6100;}

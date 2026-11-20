@@ -419,6 +419,7 @@ export function contentProblems(C, E) {
     'engine xpNeed：Lv1→2＝firstNeed、Lv2→3＝2＋levelNeed');
   bad.push(...tuneProblems(C));
   bad.push(...apexProblems(C, E));
+  bad.push(...encoreProblems(C, E));
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
   bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
@@ -1234,7 +1235,7 @@ export function apexProblems(C, E) {
   };
   for (const t of TIERS) {
     const L = A[t], w0 = 'apexTrial.' + t;
-    if (!ok(Array.isArray(L) && L.length >= 10 && L.length <= 20, w0 + '：要 10–20 張（試做 15）')) continue;
+    if (!ok(Array.isArray(L) && L.length === 15, w0 + '：要 15 張（店主 11-20 挑定：三派各 15）')) continue;
     ok(L[0] && L[0].card === C.aces[t], w0 + '[0] 要是 C.aces.' + t + '（預設那張）');
     L.forEach((x, k) => {
       const w = w0 + '[' + k + ']（' + (x && x.card) + '）';
@@ -1276,6 +1277,74 @@ export function apexProblems(C, E) {
   ok(U.timing && ['hand', 'duel', 'hold'].every(k => typeof U.timing[k] === 'string' && U.timing[k]), 'apexTrial.ui.timing 三種');
   for (const [k, v] of Object.entries(A.tips || {})) ok(typeof v === 'string' && clen(v) <= 20, 'apexTrial.tips.' + k + ' ≤20 字');
   ok(C.apexTrialTag === '新', 'C.apexTrialTag');
+  return bad;
+}
+
+// ================================================================================================
+// 第 I 波 I-1 安可（C.encore；SPEC-I §1.5 五條檢查＋數字、字串）：
+//   ①每張頂點卡（三派 15 張、含 ?fac=1&apex=1 換一格後的）算得出安可（自己寫的或家族預設）；②again 只配手型／留著型；③條件只有四種、lowhp 只配只會回聲望的；
+//   ④條件跟能力作用的結果種類不能相同（比星多算／同色同星扣他／比星輸不扣／combo 不配同色比贏）；⑤三張 7 星王牌都有安可（含 ?fac=1 異端）。
+//   另驗：換下的頂點卡（C.apexRetired）不在 C.cards、不在名單；畫面字齊、說明句 ≤30 字、籤 ≤8 字；C.encoreTag 新
+// ================================================================================================
+export function encoreProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  for (const id of C.apexRetired || []) {
+    ok(!(C.cards || {})[id], 'C.apexRetired ' + id + '：換下的頂點卡不該還在 C.cards');
+    ok(TIERS.every(t => !(((C.apexTrial || {})[t]) || []).some(x => x && x.card === id)), 'C.apexRetired ' + id + '：還在 C.apexTrial');
+  }
+  const X = C.encore;
+  if (X == null) return bad;                                    // 安可拿掉了：不檢查
+  if (!ok(X && typeof X === 'object' && typeof E.encoreOf === 'function', 'C.encore 要是物件、engine 要有 encoreOf')) return bad;
+  const W = E.ENC_WHEN || [], G = E.ENC_GIVE || [];
+  ok(typeof X.on === 'boolean' && typeof X.carry === 'boolean', 'C.encore.on／carry 要是布林');
+  ok(Number.isInteger(X.aceStar) && X.aceStar >= 4 && X.aceStar < 7, 'C.encore.aceStar 要是 4–6 的整數（安可盤比 7 星短）');
+  for (const k of ['star', 'hit', 'heal']) ok(Number.isInteger(X[k]) && X[k] >= 1 && X[k] <= 3, 'C.encore.' + k + ' 要是 1–3 的整數');
+  ok(Number.isInteger(X.lowPct) && X.lowPct >= 10 && X.lowPct <= 50, 'C.encore.lowPct 要是 10–50 的整數');
+  ok(W.includes(X.facHeresy) && X.facHeresy !== 'caught', 'C.encore.facHeresy 要是條件之一、不是看穿（異端被動本來就吃拆穿）');
+  for (const [k, r] of Object.entries(X.byFamily || {})) {
+    ok(/^(\*|[a-zA-Z]+):(hand|duel)$/.test(k), 'C.encore.byFamily 的鍵要是「原語:hand|duel」：' + k);
+    ok(r && W.includes(r.when) && (r.heresy == null || W.includes(r.heresy)) && G.includes(r.give), 'C.encore.byFamily.' + k + '：when／heresy／give 不對');
+    ok(!(r && r.give === 'again' && /:duel$/.test(k)), 'C.encore.byFamily.' + k + '：整場型不能「再發動」（②）');
+  }
+  ok(X.byFamily && X.byFamily['*:hand'] && X.byFamily['*:duel'], 'C.encore.byFamily 要有 *:hand、*:duel（沒列到的原語）');
+  // ⑤ 三張 7 星王牌
+  for (const t of TIERS) for (const fac of [false, true]) {
+    const e = E.aceEncoreOf(C, t, fac);
+    if (ok(e && W.includes(e.when) && e.give === 'again', '⑤ 7 星王牌 ' + t + (fac ? '（?fac=1）' : '') + ' 沒有安可')) ok(e.when !== 'lowhp', '⑤ 7 星王牌 ' + t + '：背水只給回聲望型');
+  }
+  ok(E.aceEncoreOf(C, 'heresy', true).when === X.facHeresy, '⑤ ?fac=1 異端 7 星王牌換 facHeresy');
+  // ①–④ 每張頂點卡（名單原樣＋換一格後）
+  const OPS = A => A.op === 'combo' ? (((A.params || {}).ops) || []).map(o => o.op) : [A.op];
+  const MIRROR = ['mirrorPlus', 'tieWin', 'loseZero'];
+  const check = (A, t, where) => {
+    const e = A.encore || E.encoreOf(C, A, t);
+    if (!ok(e && W.includes(e.when) && G.includes(e.give), '① ' + where + '：算不出安可')) return;
+    if (A.encore != null) ok(W.includes(A.encore.when) && G.includes(A.encore.give), where + '：自己寫的 encore 要是 {when, give} 四種之一');
+    ok(e.give !== 'again' || A.timing === 'hand' || A.timing === 'hold', '② ' + where + '：再發動只配手型／留著型（' + A.timing + '）');
+    const ops = OPS(A).concat(A.timing === 'hold' && A.hold ? [A.hold.op] : []);
+    ok(e.when !== 'lowhp' || OPS(A).every(o => o === 'heal'), '③ ' + where + '：背水只配回聲望型');
+    ok(!(e.when === 'sameWin' && (A.op === 'combo' || ops.some(o => MIRROR.includes(o)))), '④ ' + where + '：比星系的能力不配同色比贏');
+    const line = E.encoreLine(C, e), tag = E.encoreTag(C, e);
+    ok(line && clen(line) <= 30, where + '：說明句 ≤30 字：' + line);
+    ok(tag && clen(tag) <= 8, where + '：籤 ≤8 字：' + tag);
+  };
+  for (const t of TIERS) for (const x of ((C.apexTrial || {})[t] || [])) {
+    if (!x || !x.card) continue;
+    check(x, t, 'apexTrial.' + t + '.' + x.id);
+    const A = E.abilityOf(C, x.card);
+    ok(A && A.encore && JSON.stringify(A.encore) === JSON.stringify(E.encoreOf(C, x, t)), 'apexTrial.' + t + '.' + x.id + '：abilityOf 要帶 encore');
+    if (C.factions && C.factions.apexSwap) { const B = E.apexAbilityOf(C, x.card, { ace: t, fac: { picks: {} } }); if (B && B.swapped) check(B, t, 'apexSwap ' + x.id); }
+  }
+  for (const t of TIERS) { const e = E.aceEncoreOf(C, t, false), l = E.encoreLine(C, e, { ace: true }), g = E.encoreTag(C, e, { ace: true }); ok(l && clen(l) <= 30 && g && clen(g) <= 8, '7 星王牌 ' + t + ' 的說明句 ≤30、籤 ≤8：' + l + '／' + g); }
+  // 畫面字
+  const U = X.ui || {};
+  for (const k of ['name', 'tpl', 'aceTpl', 'tag', 'lit', 'toast', 'verbApex', 'verbAce', 'healToast', 'carry', 'carryTag', 'infoTitle', 'first', 'litCarry', 'ruleApex', 'ruleCarry', 'ruleHead', 'exc', 'tipAce', 'tipApex']) ok(typeof U[k] === 'string' && U[k], 'C.encore.ui.' + k);
+  for (const k of W) ok(typeof (U.when || {})[k] === 'string' && typeof (U.tagWhen || {})[k] === 'string', 'C.encore.ui.when／tagWhen 少了 ' + k);
+  for (const k of G.concat(['ace'])) ok(typeof (U.give || {})[k] === 'string' && typeof (U.tagGive || {})[k] === 'string', 'C.encore.ui.give／tagGive 少了 ' + k);
+  for (const k of ['star', 'hit']) ok(typeof (U.next || {})[k] === 'string' && typeof (U.note || {})[k] === 'string', 'C.encore.ui.next／note 少了 ' + k);
+  for (const k of ['tipAce', 'tipApex']) ok(clen(U[k] || '') <= 20, 'C.encore.ui.' + k + '：老闆小提示 ≤20 字');
+  ok(C.encoreTag === '新', 'C.encoreTag');
   return bad;
 }
 
@@ -1375,7 +1444,7 @@ export function legacyProblems(C) {
   for (const k of fk) {
     if (k.indexOf('|') >= 0) bad.push('舊 slug 不該有 |：' + k);
     if (String(frozen[k]).indexOf('|') < 0) bad.push('catalogId 一定有 |：' + frozen[k]);
-    if (!(C.cards || {})[frozen[k]]) bad.push('舊 slug ' + k + ' → ' + frozen[k] + ' 不在 C.cards');
+    if (!(C.cards || {})[frozen[k]] && !(C.apexRetired || []).includes(frozen[k])) bad.push('舊 slug ' + k + ' → ' + frozen[k] + ' 不在 C.cards（離開遊戲的卡要列進 C.apexRetired）');
   }
   return bad;
 }

@@ -207,6 +207,14 @@
 //            levelOffer：逢 levelEvery 級多第 4 格 {pick:'fac', id}（佔那一級）；{draft:true}（選秀）不出 · choose level {pick:'fac', id} · choose draft 送 fac → 'bad'
 //            facCfg · facPickDef(content, tier, id) · facFxOf(content, run, tier) · facDue · facOffer · fixFac(run, content)（讀檔整理）· FAC_OPS
 //            apexAbilityOf(content, cardId, run)：?fac=1&apex=1 同開（run.fac）＝照 content.factions.apexSwap 換一格；沒有 run.fac＝abilityOf 逐字照舊。新 apex op critAdd（只給換一格用）
+// Encore     第 I 波 I-1「安可」（scratchpad v5/wave-i SPEC-I §1、附錄 Y；給畫面／sim 的契約 build1/CONTRACT.md）。數字與字＝content.encore（encCfg；on false＝兩半都關、逐字現況）
+//            每張王牌多一條「條件 → 加成」：條件 caught 看穿｜combo2 連剋兩手｜sameWin 同色比贏｜lowhp 聲望 ≤ lowPct%（只配回聲望型）；加成 again 再發動／王牌回到手上｜star 下一手 +1 星｜
+//              hit 下一手剋中多扣 2（倍數之後、他的底氣之前）｜heal 回 2（當場、跟同一手其他回聲望取大）。一場一次；頂點卡發動那手不算（下一手起）、7 星王牌丟的那手就算；
+//              成立了還沒用到、這場就結束 → duel.over.encCarry {give}、finishFight 寫 run.encCarry、下一次 startFight 吃掉（說情重打也算；只留一場；一趟結束清掉）
+//            encoreOf(content, entry, tier)（頂點卡：自己寫的 encore 優先、沒寫照 byFamily）· aceEncoreOf(content, tier, fac)（7 星王牌；fac 異端＝facHeresy）· encoreLine／encoreTag（說明句、籤）
+//            abilityOf／apexAbilityOf 多 encore（換一格照換後的家族）· playerDef o.encore → encNum、encText、aceEnc · startDuel opts.encore／encCarry → duel.p.enc、encPrev、encAce|apexHist、stats.enc
+//            startFight：主線對決（非序章、o.encore !== false）自動開；resolveTurn：encFire（丟王牌）→ outcome（encBonus）→ … → encoreStep（aceUsed、補牌之後、finish 之前）→ {t:'encore'} 事件
+//            pAceStar(duel)（安可回來的王牌 6 星：actPlay、bestChip、view.aceStar、pubOpts）· view.enc · encorePolicy(name)（sim 量上界：會湊條件、安可盤一定丟）· debugOutcome.caught（e2e）
 // Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -415,7 +423,10 @@
   function abilityOf(content, cardId) {
     const e = apexEntry(content, cardId);
     if (!e) return null;
-    return { id: e.id, card: e.card, tier: e.tier, name: e.name, text: e.text, timing: e.timing, op: e.op, params: clone(e.params || {}), hold: e.hold ? clone(e.hold) : null };
+    const out = { id: e.id, card: e.card, tier: e.tier, name: e.name, text: e.text, timing: e.timing, op: e.op, params: clone(e.params || {}), hold: e.hold ? clone(e.hold) : null };
+    const enc = encoreOf(content, e, e.tier);                           // 第 I 波安可（content.encore 開著才有；自己寫的 encore 優先、沒寫照家族）
+    if (enc) out.encore = enc;
+    return out;
   }
   const apexOps = (op, params) => op === 'combo' ? ((params && params.ops) || []).map(o => ({ op: o.op, params: o.params || {} })) : [{ op, params: params || {} }];
   const apexHas = (A, op) => !!A && apexOps(A.op, A.params).some(x => x.op === op);
@@ -502,7 +513,115 @@
     }
     ev.pHp = P.hp;
     st.stats.apexAt = st.n;
+    if (P.enc) encFire(st, 'apex');                    // 第 I 波安可：第一次發動＝開始等條件（下一手起）；留下來的＝這手打完能力回來；安可那次＝用掉
     return [ev];
+  }
+
+  // ---------- 第 I 波 I-1「安可」（SPEC-I §1、附錄 Y；契約 wave-i/build1/CONTRACT.md；數字與字在 content.encore）----------
+  //   每張王牌多一條「條件 → 加成」：讀對了才有、一場一次、條件成立時這場剛好打完就留到下一位（只留一場；說情重打也算下一場）。
+  //   開關：content.encore.on（總開關；false＝兩半都關、對決／run 一個欄位都不多）＋startDuel opts.encore（startFight 主線對決才給；序章、直接開打、切磋沒有）。
+  //   預設 7 星王牌（mode 'ace'）：丟出去那手起看條件；成立＝王牌回到手上（aceStar 6 星，P.encAce）。頂點卡（mode 'apex'）：發動那手不算，從下一手起；
+  //     again＝能力回來（apexOn 先存進 apexHist、清掉；留著型回到「留著」），star／hit＝下一手（outcome 吃 encBonus），heal＝當場回（跟同一手其他回聲望取大）。
+  //   P.enc＝{when, give, mode, state:'idle'|'wait'|'carry'|'hit'|'next'|'done', start, from, at, src:null|'carry', lit}（契約 §2）；P.encPrev＝上一手 {n, kind}（連剋用）
+  const ENC_WHEN = ['caught', 'combo2', 'sameWin', 'lowhp'];
+  const ENC_GIVE = ['again', 'star', 'hit', 'heal'];
+  const ENC_NUM = { aceStar: 6, star: 1, hit: 2, heal: 2, lowPct: 30, carry: true };
+  function encCfg(content) { const X = content && content.encore; return X && typeof X === 'object' && X.on !== false ? X : null; }
+  const encOk = e => !!e && ENC_WHEN.includes(e.when) && ENC_GIVE.includes(e.give);
+  // 家族鍵＝'原語:時機'（combo 看第一個原語；留著型＝發動那個原語的 hand）
+  function encFamilyKey(A) {
+    if (!A) return null;
+    const op = A.op === 'combo' ? ((((A.params && A.params.ops) || [])[0]) || {}).op : A.op;
+    return op + ':' + (A.timing === 'duel' ? 'duel' : 'hand');
+  }
+  // 一張頂點卡（C.apexTrial 那一筆或 ability 複本）的安可：自己寫的 encore 優先，沒有照 content.encore.byFamily（異端用 heresy 那欄）。content 沒開＝null
+  function encoreOf(content, A, tier) {
+    const X = encCfg(content); if (!X || !A) return null;
+    if (encOk(A.encore)) return { when: A.encore.when, give: A.encore.give };
+    const F = X.byFamily || {}, row = F[encFamilyKey(A)] || F['*:' + (A.timing === 'duel' ? 'duel' : 'hand')];
+    if (!row) return null;
+    const out = { when: (tier || A.tier) === 'heresy' && row.heresy ? row.heresy : row.when, give: row.give };
+    return encOk(out) ? out : null;
+  }
+  // 預設 7 星王牌的安可（give 一定是 again＝王牌回到手上）；fac＝這一趟開 ?fac=1（異端改 facHeresy）
+  function aceEncoreOf(content, tier, fac) {
+    const X = encCfg(content), a = X && TIERS.includes(tier) ? (X.aces || {})[tier] : null;
+    if (!a || !ENC_WHEN.includes(a.when)) return null;
+    return { when: fac && tier === 'heresy' && ENC_WHEN.includes(X.facHeresy) ? X.facHeresy : a.when, give: 'again' };
+  }
+  function encNumOf(content) {
+    const X = encCfg(content) || {}, out = {};
+    for (const k of Object.keys(ENC_NUM)) out[k] = typeof ENC_NUM[k] === 'boolean' ? X[k] !== false : (Number.isInteger(X[k]) && X[k] > 0 ? X[k] : ENC_NUM[k]);
+    return out;
+  }
+  const encFill = (t, o) => String(t || '').replace(/\{(\w+)\}/g, (m, k) => o[k] != null ? o[k] : m);
+  // 說明句：「安可：看穿他一次，再發動一次。」；o.ace＝7 星王牌那句（「安可：丟出之後看穿他一次，王牌回到手上（6 星）。」）
+  function encoreLine(content, enc, o) {
+    const X = encCfg(content); if (!X || !encOk(enc)) return '';
+    const U = X.ui || {}, N = encNumOf(content), ace = !!(o && o.ace), G = U.give || {};
+    const give = encFill(ace && enc.give === 'again' ? G.ace : G[enc.give], { n: N[enc.give], star: N.aceStar });
+    return encFill(ace ? U.aceTpl : U.tpl, { when: (U.when || {})[enc.when] || enc.when, give });
+  }
+  // 王牌格下方的籤：「看穿→再丟」「連剋→再一次」「同色贏→+1 星」
+  function encoreTag(content, enc, o) {
+    const X = encCfg(content); if (!X || !encOk(enc)) return '';
+    const U = X.ui || {}, N = encNumOf(content), G = U.tagGive || {};
+    const give = encFill(o && o.ace && enc.give === 'again' ? G.ace : G[enc.give], { n: N[enc.give], star: N.aceStar });
+    return encFill(U.tag || '{when}→{give}', { when: (U.tagWhen || {})[enc.when] || enc.when, give });
+  }
+  // 7 星王牌這次丟出去是幾星：安可回來的那張＝aceStar（6），其他＝CFG.aceStar（客人那邊 eStarOf 不動）
+  const pAceStar = st => st && st.p && st.p.encAce && st.encNum ? st.encNum.aceStar : CFG.aceStar;
+  // 這一手吃的加成（下一手型）：{give, n} | null
+  function encBonus(st) {
+    const Q = st && st.p && st.p.enc;
+    if (!Q || Q.state !== 'next' || Q.at !== st.n || st.over) return null;
+    return { give: Q.give, n: (st.encNum || ENC_NUM)[Q.give] | 0 };
+  }
+  function encNote(st, give, n) { const t = ((st.encText || {}).note || {})[give]; return { enc: give, n, text: t ? encFill(t, { n }) : '' }; }
+  // 王牌丟出去／頂點卡發動那一刻（resolveTurn act.ace、activateApex）：idle → 開始等（7 星王牌那手就算、頂點卡下一手起）；carry → 這手打完回來；hit → 安可那次用掉
+  function encFire(st, how) {
+    const Q = st.p.enc; if (!Q) return;
+    if (Q.state === 'idle') { Q.state = 'wait'; Q.start = st.n; Q.from = how === 'apex' ? st.n + 1 : st.n; }
+    else if (Q.state === 'carry') Q.go = st.n;
+    else if (Q.state === 'hit') { Q.state = 'done'; st.stats.enc.used = 1; if (how === 'apex') st.stats.apexAt2 = st.n; }
+  }
+  // 條件（那一手結算完；用 resolveTurn 的區域 hint，不用 st.plan：1123 起已經是 null）。dbg＝debugOutcome（e2e 用 caught:true|false 造看穿）
+  function encWhen(st, Q, r, pPlay, ePlay, hint, dbg) {
+    const P = st.p;
+    switch (Q.when) {
+      case 'caught': return r.kind === 'counter' && r.toE > 0 && (dbg && typeof dbg.caught === 'boolean' ? dbg.caught : lieOf(hint, ePlay.attr));
+      case 'combo2': { const pv = P.encPrev; return r.kind === 'counter' && !!pv && pv.kind === 'counter' && pv.n === st.n - 1 && pv.n >= Q.start; }
+      case 'sameWin': return pPlay.attr === ePlay.attr && r.kind === 'mirrorWin';
+      case 'lowhp': return P.hp > 0 && P.hp * 100 <= P.max * ((st.encNum || ENC_NUM).lowPct | 0);
+      default: return false;
+    }
+  }
+  // 每一手結算完（aceUsed／補牌之後、finish 判斷之前）：吃掉這手的加成、留下來的那份生效、或看條件成立沒有 → {t:'encore'} 事件；log 那手多 enc
+  //   healed＝這手已經回的聲望（發動回聲望＋拆穿回血＋流派；安可的回 2 跟它取大）
+  function encoreStep(st, r, pPlay, ePlay, hint, events, dbg, healed) {
+    const P = st.p, Q = P.enc; if (!Q) return;
+    const n = st.n, S = st.stats.enc, L = st.log[st.log.length - 1];
+    let src = null;
+    if (Q.state === 'next' && Q.at === n) { Q.state = 'done'; S.used = 1; if (L) L.encBonus = Q.give; }
+    else if (Q.state === 'carry' && Q.go === n) src = 'carry';
+    else if (Q.state === 'wait' && Q.from != null && n >= Q.from && encWhen(st, Q, r, pPlay, ePlay, hint, dbg)) { src = 'hit'; Q.lit = n; S.lit = 1; }
+    P.encPrev = { n, kind: r.kind };
+    delete Q.go;
+    if (!src) return;
+    const ev = { t: 'encore', n, when: Q.when, give: Q.give, mode: Q.mode, src };
+    if (Q.give === 'again') {
+      if (Q.mode === 'apex') { if (P.apexOn) P.apexHist.push(clone(P.apexOn)); P.apexOn = null; }
+      else P.encAce = true;
+      P.aceUsed = false; Q.state = 'hit';
+    } else if (Q.give === 'star' || Q.give === 'hit') { Q.state = 'next'; Q.at = n + 1; }
+    else {                                                             // heal：當場回、跟同一手其他回聲望取大（不相加）；這場結束也照回
+      const N = st.encNum || ENC_NUM, h = P.hp > 0 ? Math.max(0, Math.min((N.heal | 0) - Math.max(0, healed | 0), P.max - P.hp)) : 0;
+      P.hp += h; ev.heal = h; S.heal = h; S.used = 1; Q.state = 'done';
+      if (L) { L.pHp = P.hp; if (h > 0) L.heal = (L.heal | 0) + h; }
+    }
+    ev.pHp = P.hp;
+    if (L) L.enc = Object.assign({ when: Q.when, give: Q.give, src }, ev.heal != null ? { heal: ev.heal } : {});
+    events.push(ev);
   }
 
   // ---------- 第 D 波棒二：三流派（?fac=1 試做旗標；scratchpad v5/wave-d SPEC-D §3.2–§3.5、§4.2、§6-3；契約 build2/CONTRACT.md）----------
@@ -563,7 +682,9 @@
     const sw = (T.cards && T.cards[A.id]) || (A.op !== 'combo' && T.ops && T.ops[A.op]) || null;
     if (!sw || !sw.op) return A;
     const was = { op: A.op, params: clone(A.params || {}), timing: A.timing, text: A.text };
-    return Object.assign(A, { op: sw.op, params: clone(sw.params || {}), timing: A.timing === 'hold' ? 'hold' : (sw.timing || A.timing), text: sw.text || A.text, swapped: was });
+    const B = Object.assign(A, { op: sw.op, params: clone(sw.params || {}), timing: A.timing === 'hold' ? 'hold' : (sw.timing || A.timing), text: sw.text || A.text, swapped: was });
+    if (B.encore) { const e = encOk(sw.encore) ? { when: sw.encore.when, give: sw.encore.give } : encoreOf(content, { op: B.op, params: B.params, timing: B.timing, hold: B.hold }, B.tier); if (e) B.encore = e; else delete B.encore; }   // 第 I 波：換過的照換後的家族（或換一格自己寫的 encore）
+    return B;
   }
   // 讀檔整理（畫面 loadSave／續玩前叫；回 true＝有改）：run.fac 形狀、picks 只留這一派有的 id、待選的升級 offer 裡不認得的本派格拿掉
   function fixFac(run, content) {
@@ -596,6 +717,8 @@
     if (FX && !pPlay.ace && FX.starPlus && FX.starPlus[pPlay.attr] > 0) ps += FX.starPlus[pPlay.attr] | 0;   // ① 本派選項：識貨（經典 +1）／失真（硬蕊 +1）；王牌不加
     let es = ePlay.star | 0;
     if (M) { if (M.star) ps += M.star; if (M.eStar) es = Math.max(0, es - M.eStar); }      // ①②
+    const EB = encBonus(st);                                                   // 第 I 波安可「下一手」：+1 星（王牌不加，跟頂點卡加星相加）／剋中多扣（倍數之後）
+    if (EB && EB.give === 'star' && !pPlay.ace && EB.n > 0) { ps += EB.n; notes.push(encNote(st, 'star', EB.n)); }
     const thr = FX && FX.counterAlways ? Infinity : M && M.pThr ? M.pThr : 0;          // ③ 冷門：你剋他永遠剋得動（取代頂點卡的門檻）
     const r = clash({ attr: pPlay.attr, star: ps, ace: !!pPlay.ace }, { attr: ePlay.attr, star: es, ace: !!ePlay.ace }, thr ? { pThr: thr } : undefined);
     const same = pPlay.attr === ePlay.attr, r0 = r.kind;                       // 經典的整張只認「本來就比贏」的同色（頂點卡比星多算造出來的照差額）
@@ -645,6 +768,7 @@
       if (M.mult && r.kind === 'counter' && r.toE > 0) r.toE *= M.mult;
       if (M.crit > 1 && caught) r.toE *= M.crit;
     }
+    if (EB && EB.give === 'hit' && EB.n > 0 && r.kind === 'counter' && r.toE > 0) { r.toE += EB.n; notes.push(encNote(st, 'hit', EB.n)); }   // 安可多扣：倍數之後、他的底氣之前（SPEC-I §1.1-8）
     if (M) {
       if (M.bounce && (r.kind === 'countered' || (M.bounceLose && r.kind === 'mirrorLose')) && r.toP > 0) {   // 他這手要扣你的（他品味前）一半捨去改扣他
         const k = Math.floor(r.toP / 2); r.toE += k; r.toP -= k; r.bounced = k;
@@ -806,6 +930,12 @@
       const F = facCfg(content);
       d.fac = src.ace; d.fx = facFxOf(content, src, src.ace); d.facNotes = clone(F.notes || {}); d.facIcon = (F[src.ace] && F[src.ace].icon) || null;
     }
+    // 第 I 波安可（o.encore：startFight 主線對決才給）：數字、結果句樣板；7 星王牌那半多 aceEnc（頂點卡那半在 ability.encore）
+    if (o && o.encore && d.ace && encCfg(content)) {
+      const X = encCfg(content);
+      d.encNum = encNumOf(content); d.encText = { note: clone((X.ui || {}).note || {}) };
+      if (!apex) { const e = aceEncoreOf(content, src.ace, fac); if (e) d.aceEnc = e; }
+    }
     return d;
   }
   function normScript(sc) {
@@ -840,6 +970,22 @@
       st.apexMode = true; st.p.ability = clone(pDef.ability); st.p.apexOn = null;
       st.apexText = pDef.apexText ? clone(pDef.apexText) : null;
       st.stats.apexAt = 0; st.stats.apexHits = 0;
+    }
+    // 第 I 波安可（opts.encore＋pDef 有安可：7 星王牌 aceEnc／頂點卡 ability.encore）；opts.encCarry＝上一場留下來的 {give}（give 對得上才吃）。沒有就一個欄位都不加
+    if (opts.encore && pDef.ace && pDef.encNum) {
+      const ec = st.apexMode ? st.p.ability && st.p.ability.encore : pDef.aceEnc;
+      if (encOk(ec) && (st.apexMode || ec.give === 'again')) {
+        const P0 = st.p, cy = opts.encCarry;
+        P0.enc = { when: ec.when, give: ec.give, mode: st.apexMode ? 'apex' : 'ace', state: 'idle', start: null, from: null, at: null, src: null, lit: null };
+        P0.encPrev = null;
+        if (st.apexMode) P0.apexHist = []; else P0.encAce = false;
+        st.encNum = Object.assign({}, pDef.encNum); st.encText = clone(pDef.encText || { note: {} });
+        st.stats.enc = { lit: 0, carryIn: 0, carryOut: 0, used: 0, heal: 0 };
+        if (cy && typeof cy === 'object' && cy.give === ec.give && ec.give !== 'heal') {
+          P0.enc.src = 'carry'; st.stats.enc.carryIn = 1;
+          if (ec.give === 'again') P0.enc.state = 'carry'; else { P0.enc.state = 'next'; P0.enc.at = 1; }
+        }
+      }
     }
     // 第 D 波棒二三流派（pDef.fac）：被動 fx、這場的計數 facN（同色平手／被剋／比星輸／反傷次數／吸血回了幾／信對／拆穿）、結果行樣板；沒有就一個欄位都不加
     if (pDef.fac && pDef.fx) {
@@ -1067,7 +1213,7 @@
     return Number.isInteger(act.i) && act.i >= 0 && act.i < st.p.hand.length && !!st.p.hand[act.i] && ATTRS.includes(act.attr);
   }
   function actPlay(st, act) {
-    if (act.ace) { const a = aceAxis(st.p.ace); return { card: st.p.ace, attr: a, star: CFG.aceStar, ace: true }; }
+    if (act.ace) { const a = aceAxis(st.p.ace); return { card: st.p.ace, attr: a, star: pAceStar(st), ace: true }; }   // 第 I 波：安可回來的那張＝6 星
     const card = st.p.hand[act.i];
     return { card, attr: act.attr, star: star(card, act.attr), ace: false };
   }
@@ -1096,6 +1242,7 @@
     const fp = opts.forcedPlay;
     const eSide = (fp && Number.isInteger(fp.i) && E.hand[fp.i] && ATTRS.includes(fp.attr)) ? { i: fp.i, attr: fp.attr } : { i: plan.idx, attr: plan.attr };
     const pPlay = actPlay(st, act), ePlay = ePlayOf(st, eSide), eCard = ePlay.card;
+    if (act.ace && P.enc) encFire(st, 'ace');                           // 第 I 波安可：7 星王牌丟出去（那手就算）／留下來的這手打完回來／6 星安可盤用掉
     let r;
     if (opts.debugOutcome) {
       const d = opts.debugOutcome;
@@ -1136,6 +1283,8 @@
       const d = pull(st); P.hand[act.i] = d.card;
       events.push({ t: 'draw', i: act.i, card: d.card, reshuffled: d.reshuffled });
     }
+    // 第 I 波安可：放在 aceUsed＝true 之後（不然會被蓋回去）、finish 之前（最後一手成立也算＝留到下一場）；hint＝上面的區域變數（st.plan 已清成 null）
+    if (P.enc) encoreStep(st, r, pPlay, ePlay, hint, events, opts.debugOutcome || null, hl);
     if (P.hp <= 0 || E.hp <= 0) return finish(st, 'hp', events);
     if (st.n >= CFG.maxRounds) return finish(st, 'rounds', events);
     if (!E.hand.length && !E.pile.length) return finish(st, 'pile', events);
@@ -1165,7 +1314,15 @@
     const cmp = playerAhead(P.hp, P.max, E.hp, E.max);
     const win = by === 'hp' ? ((P.hp <= 0 && E.hp <= 0) ? cmp : E.hp <= 0) : cmp;
     st.over = { win, by }; st.plan = null;
-    events.push({ t: 'over', win, by, pHp: P.hp, eHp: E.hp, pMax: P.max, eMax: E.max, pPct: hpPct(P.hp, P.max), ePct: hpPct(E.hp, E.max), pct: pctPair(P.hp, P.max, E.hp, E.max) });
+    const ov = { t: 'over', win, by, pHp: P.hp, eHp: E.hp, pMax: P.max, eMax: E.max, pPct: hpPct(P.hp, P.max), ePct: hpPct(E.hp, E.max), pct: pctPair(P.hp, P.max, E.hp, E.max) };
+    // 第 I 波安可：成立了還沒用到（王牌回來沒再丟／能力回來沒再發動／下一手加成還沒吃）→ 留到下一場（只留一場：留下來的那份不再往下留）
+    const Q = P.enc;
+    if (Q && Q.src !== 'carry' && (Q.state === 'hit' || Q.state === 'next') && (!st.encNum || st.encNum.carry !== false)) {
+      st.over.encCarry = { give: Q.give }; ov.encCarry = { give: Q.give }; st.stats.enc.carryOut = 1;
+      // 修正輪：條件就成立在這最後一手＝這手的 {t:'encore'} 事件與 log 那手多 carry:true（結果句寫「翻面！留到下一位」，不寫「王牌回到手上」）
+      if (Q.lit === st.n) { const L = st.log[st.log.length - 1]; if (L && L.enc) L.enc.carry = true; for (const e of events) if (e && e.t === 'encore' && e.n === st.n) e.carry = true; }
+    }
+    events.push(ov);
     return events;
   }
 
@@ -1204,6 +1361,12 @@
         can: canApex(st), used: !!P.aceUsed, on: P.apexOn ? P.apexOn.n : null, live: AX ? AX.src : null, full: !P.aceUsed && apexFull(st) };
       out.apexReveal = pl && P.apexOn && P.apexOn.reveal && P.apexOn.n === st.n ? P.apexOn.reveal : null;
     }
+    if (P.enc) {                                          // 第 I 波安可（契約 §3）：籤的狀態、這手吃的加成（next）、王牌格寫幾星（aceStar）
+      const Q = P.enc;
+      out.enc = { when: Q.when, give: Q.give, mode: Q.mode, state: Q.state, from: Q.from, at: Q.at, carry: Q.src === 'carry', lit: Q.lit,
+        next: !st.over && Q.state === 'next' && Q.at === st.n ? Q.give : null, aceStar: pAceStar(st) };
+      out.aceStar = pAceStar(st);
+    }
     if (P.fac && P.fx) {                                  // 第 D 波棒二三流派：頂欄一字圖示、本派說明（被動＋代價＋這場第二招還剩幾）
       const fx = P.fx, N = P.facN || {};
       out.fac = { tier: P.fac, icon: P.facIcon || null, fx: clone(fx), n: { tie: N.tie | 0, countered: N.countered | 0, lose: N.lose | 0, leech: N.leech | 0, thorn: N.thorn | 0 },
@@ -1214,7 +1377,7 @@
 
   function bestChip(st, attr, o) {
     let best = null, bs = -1;
-    if (o && o.ace && !st.apexMode && st.p.ace && !st.p.aceUsed && aceAxis(st.p.ace) === attr) { best = { ace: true, attr }; bs = CFG.aceStar; }
+    if (o && o.ace && !st.apexMode && st.p.ace && !st.p.aceUsed && aceAxis(st.p.ace) === attr) { best = { ace: true, attr }; bs = pAceStar(st); }
     st.p.hand.forEach((c, i) => { if (c && star(c, attr) > bs) { bs = star(c, attr); best = { i, attr }; } });
     return best;
   }
@@ -2141,7 +2304,10 @@
     run.hpIn = run.hp;                                        // 說情重打從這裡開始（裁定 8）
     if (!prologue) run.fought = true;                          // 跟客人開打過：之後這一趟不能再換王牌（canSwitchAce）
     const fac = !!run.fac && !prologue && !!facCfg(content);   // 第 D 波棒二三流派：照 run.fac（不看網址，R-F9）；序章那場沒有，第 1 位客人起生效
-    const po = apex || fac ? Object.assign(apex ? { apex: true } : {}, fac ? { fac: true } : {}) : undefined;
+    // 第 I 波安可：主線對決自動有（序章、o.encore false＝切磋沒有；content.encore.on false＝沒有）；吃掉上一場留下來的 run.encCarry（說情重打也算下一場）
+    const enc = !prologue && o.encore !== false && !!encCfg(content);
+    if (enc) { opts.encore = true; if (run.encCarry && typeof run.encCarry === 'object') opts.encCarry = { give: run.encCarry.give }; if ('encCarry' in run) run.encCarry = null; }
+    const po = apex || fac || enc ? Object.assign(apex ? { apex: true } : {}, fac ? { fac: true } : {}, enc ? { encore: true } : {}) : undefined;
     const r = startDuel(playerDef(content, run, po), eDef, opts);
     run.duel = r.duel; run.duelEnemy = enemyId;
     return { duel: r.duel, events: r.events, enemyId };
@@ -2246,7 +2412,15 @@
         S.lostAt = { enemyId, pos, round: run.round, idx: run.idx, cls, n: duel.n, last: duel.last };
       }
     }
+    let encCarry = null;
+    if (duel.p.enc) {                                         // 第 I 波安可：這場留下來的（只有打過有安可的對決才寫 run.encCarry；一趟結束清掉）＋一趟的計數（sim 讀）
+      encCarry = !prologue && !run.over && duel.over.encCarry && ENC_GIVE.includes(duel.over.encCarry.give) ? { give: duel.over.encCarry.give } : null;
+      run.encCarry = encCarry;
+      const SE = S.enc && typeof S.enc === 'object' ? S.enc : (S.enc = { fights: 0, lit: 0, carryIn: 0, carryOut: 0, used: 0 }), de = duel.stats.enc || {};
+      SE.fights++; for (const k of ['lit', 'carryIn', 'carryOut', 'used']) SE[k] = (SE[k] | 0) + (de[k] | 0);
+    }
     const out = { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon, aceFirst, aceNew, aceUnlock };
+    if (duel.p.enc) out.encCarry = encCarry;
     if (extra) out.packetCash = extra.packet && extra.packet.kind === 'cash' ? extra.packet.n : 0;   // 第 C 波：紅包那筆（已入帳；畫面 cashAfter 起點要扣回、再演第二段）
     if (extra && extra.kind === 'chest' && extra.dareCash) out.dareCash = extra.dareCash;
     if (lowHeal) out.lowHeal = lowHeal;                      // 第 D 波棒二：熟客多回的那幾點（已含在 heal 裡；畫面可以補一句）
@@ -3848,7 +4022,7 @@
   function pubOpts(v) {
     const os = [];
     v.hand.forEach((c, i) => { if (c) for (const a of ATTRS) os.push({ act: { i, attr: a }, card: c, attr: a, star: star(c, a), ace: false }); });
-    if (v.ace) os.push({ act: { ace: true }, card: v.ace, attr: v.aceAxis, star: CFG.aceStar, ace: true });
+    if (v.ace) os.push({ act: { ace: true }, card: v.ace, attr: v.aceAxis, star: v.aceStar != null ? v.aceStar : CFG.aceStar, ace: true });   // 第 I 波：安可回來的 6 星
     return os;
   }
   function pickMax(os) { let b = null; for (const o of os) if (!b || o.star > b.star) b = o; return b; }
@@ -4027,6 +4201,27 @@
     policyFns[k] = (st, R, mem, content) => (st && st.apexMode && canApex(st)) ? apexPolicy(k, f, st, R, mem, content) : f(st, R, mem, content);
   }
   const policies = policyFns;
+  // ---- 第 I 波安可：會湊條件的策略（只給 sim 量上界，SPEC-I §1.7、AN6；畫面、預設策略不用）。encorePolicy(name) → 包一層 policies[name] ----
+  //   7 星安可盤一定丟；頂點卡安可成立（能力回來）就再發動；還在等條件：同色比贏＝明指時出提示那色最大星、連剋＝上一手剋中就照提示剋（剋提示那色最大星）；其他照原策略
+  function encorePolicy(name) {
+    const f = policies[name] || policies.thoughtful;
+    return (st, R, mem, content) => {
+      const P = st && st.p, Q = P && P.enc;
+      if (!Q || st.over || !st.plan) return f(st, R, mem, content);
+      if (Q.mode === 'ace' && P.encAce && !P.aceUsed && isLegal(st, { ace: true })) return { ace: true, attr: aceAxis(P.ace) };
+      const base = f(st, R, mem, content);
+      if (Q.mode === 'apex' && Q.state === 'hit' && canApex(st) && base && !base.ace) return Object.assign({}, base, { apex: true });
+      if (Q.state !== 'wait' || base == null || base.ace) return base;
+      const h = view(st).hint;
+      if (!h || h.kind !== 'one' || !h.attr) return base;
+      let want = null;
+      if (Q.when === 'sameWin') want = h.attr;
+      else if (Q.when === 'combo2' && P.encPrev && P.encPrev.n === st.n - 1 && P.encPrev.kind === 'counter') want = COUNTER_OF[h.attr];
+      if (!want) return base;
+      const o = bestChip(st, want);
+      return o ? Object.assign({}, o, base.apex ? { apex: true } : {}) : base;
+    };
+  }
 
   const API = { VERSION, RUN_V, ATTRS, ZH, ZH1, BEATS, COUNTER_OF, beats, TIERS, TIER_AXIS, COLOR_RELIC, CFG, HONESTY, PLANNERS, TRIAL,
     RARITY, FEATURE_RARITY, SHELF_RARITY, SHOP_ORDER,
@@ -4047,7 +4242,8 @@
     deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound,
     CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
-    FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac };
+    FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
+    ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });
