@@ -765,7 +765,6 @@ async function runSize(browser, w, h) {
         await jsClick(page, '.lb-modal [data-x]'); await sleep(400);
         await jsClick(page, '[data-a=again]');
         const up = await page.waitForSelector('.lb-sheet.cxcard', { timeout: 4000 }).then(() => true, () => false);
-        if (up) { await sleep(400); await shot(page, size, label === '13' ? '7b-first-card' : '9-list-card'); }   // 過場卡（13b＝一次升好幾級的清單卡「樂歷 Lv n！」）
         await sleep(500);
         const k0 = await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'); if (!s) return null; const b = s.querySelector('.lb-btn[data-a=next]').getBoundingClientRect();
           return { hd: (s.querySelector('.cx-hd b') || {}).textContent, sub: (s.querySelector('.cx-hd .sub') || {}).textContent || '', got: (s.querySelector('.cx-got b') || {}).textContent || '', cv: s.querySelectorAll('.cx-got .lb-cv').length,
