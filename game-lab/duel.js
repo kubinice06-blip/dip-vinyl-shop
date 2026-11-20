@@ -1358,13 +1358,14 @@
       c.querySelector('.l1').innerHTML = segHTML(ct.l1);
       const l2 = c.querySelector('.l2');
       l2.className = 'l2 ' + ct.cls;
-      l2.innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="nt">${ct.notes.map((x, k) => `<span class="ns">${esc(x)}${k < ct.notes.length - 1 ? '・' : ''}</span>`).join('')}</span>` : ''}`;
+      const f1 = ct.first ? `<span class="ns f1">${esc(ct.first)}</span>` : '';   // 第 D 波棒二：第一次觸發那句（另起一行；沒有＝一字不變）
+      l2.innerHTML = `<span class="v key">${esc(ct.l2)}</span>${ct.notes.length || f1 ? `<span class="nt">${ct.notes.map((x, k) => `<span class="ns">${esc(x)}${k < ct.notes.length - 1 ? '・' : ''}</span>`).join('')}${f1}</span>` : ''}`;
       c.querySelector('.l3').innerHTML = segHTML(ct.l3);
       c.querySelector('.l3').hidden = !ct.l3;
       c.classList.add('on');
       els.table.classList.add('res');
       // 補充句（配件、品味、底氣）跟數字同一行放不下：自己另起一行、可以折行（一句不拆開；審查 #9）
-      if (l2.scrollWidth > l2.clientWidth + 1) l2.classList.add('wrap');
+      if (f1 || l2.scrollWidth > l2.clientWidth + 1) l2.classList.add('wrap');
       placeCallout();
       if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
       else A(c, [{ transform: 'scale(.3)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: .6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
@@ -1430,10 +1431,11 @@
       if (cl.kind !== 'counter') { S.readRun = 0; S.sounds.push(hitSfx(cl)); sfx(hitSfx(cl)); return; }
       S.readRun++;
       const k = Math.min(S.readRun, 5) - 1, oct = Math.pow(2, (2 * k) / 12);
-      S.sounds.push('readHit@' + oct.toFixed(3) + (S.readRun >= 3 ? '+stop' : ''));
+      const crit = !!(cl.fac && (cl.fac.crit || cl.fac.crit2));   // 第 D 波棒二（SPEC-D §3.10）：異端拆穿那手直接接停格＋震動（不用連讀到第 3 次）
+      S.sounds.push('readHit@' + oct.toFixed(3) + (S.readRun >= 3 || crit ? '+stop' : ''));
       if (S.sounds.length > 40) S.sounds.shift();
       sfx('readHit', { oct });
-      if (S.readRun >= 3 && !rm()) {
+      if ((S.readRun >= 3 || crit) && !rm()) {
         const f = Fx();
         try { if (f && f.hitStop) f.hitStop(70); if (f && f.shake) f.shake(els.table, 3, 160); if (f && f.vibrate) f.vibrate(18); } catch (_) {}
       }
@@ -1468,6 +1470,7 @@
       if (cl.ace) hint('tip_ace', ['result']);          // 第一次丟王牌（FIXLIST 2；hint 一場只送一次）
       if (cl.pAttr === cl.eAttr) hint('tip_mirror', ['result']);
       if ((cl.notes || []).some(n => n && n.apex && n.hit === false && !n.full)) hint('tip_apexMiss', ['result']);   // 頂點卡試做：第一次出現「沒作用」那句（看穿、回聲望沒有這句）
+      if (cl.fac && Object.keys(cl.fac).length) hint('tip_fac', ['fac']);   // 第 D 波棒二：第一次觸發被動或代價（老闆小提示指頂欄一字圖示「點這個字看本派被動和代價」；提示在選牌時才出，那時結果框已收：審查 棒二）
     }
     async function play(act, sel) {
       if (!canAct() || !legal(sel)) return false;
@@ -1489,6 +1492,8 @@
       if (!cl) { console.error('DipLabDuel: no clash event', evs); S.busy = false; S.v = v1; renderAll(); return false; }
       const t0 = performance.now();
       const ct = clashText(cl, T, hints, apexMode() ? apxUI() : undefined);
+      // 第 D 波棒二（?fac=1）：這一派第一次觸發被動或代價那手，結果框補一句（ui.js 決定、記 save.seen.facFirst；只顯示，不改結算）
+      if (cl.fac && Object.keys(cl.fac).length && typeof hooks.facFirst === 'function') { try { const f1 = hooks.facFirst(cl); if (f1) ct.first = String(f1); } catch (e) { console.error(e); } }
       const rec = { n: v0.n, act, sel, evs, ct };
       S.debug.hands.push(rec); if (S.debug.hands.length > 300) S.debug.hands.shift();
       S.sel = null; S.openTap = null;                    // 丟出去：手牌收回疊好（下一手從疊著開始）

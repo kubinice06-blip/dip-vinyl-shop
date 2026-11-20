@@ -3,7 +3,9 @@
 //   （特價箱 bargainPolicy、獎勵／攤位／選秀 cPolicy、升級 runPolicy、每位客人前 shopPolicy('smart')＋收音機 radioSmart、說情）。規則一行都不在這裡重寫。
 // Usage: node game-lab/career.mjs [--careers 200] [--runs 30] [--policies thoughtful,humanRead,novice,high] [--ace hall|pearl|heresy]
 //          [--gate 999] [--spend even|atk] [--money on|off] [--seeds on|off] [--keep on|off] [--lowmul m] [--lowbelow 10] [--tier k]
-//          [--patch '{"career":{…}}'] [--cap 300] [--json out.json] [--ctl ctl.json]
+//          [--fac] [--patch '{"career":{…}}'] [--cap 300] [--json out.json] [--ctl ctl.json]
+//   --fac（第 D 波棒二；SPEC-D §7.2）：每一趟 newRun 多 fac:true（?fac=1 三流派：被動＋代價＋本派選項，runPolicy 出了就拿）。G3 帶流派重判用；
+//     沒給 --fac 時一字不差（newRun 不收 fac 鍵）
 //   一個 career＝一個新帳號（ui createRun／recordRun 的跨趟規則）：
 //     第 1 趟打序章（沒有天賦、沒有種子、沒有配件）；之後不打。上一趟沒到第 10 位（含第 1 趟）＝新手保底（safety）。
 //     配件跨趟帶（save.relics＝上一趟最後 3 件）、最遠紀錄（bestFar：攤位解鎖、破紀錄）、寶箱保底計數（chestDry）跨趟帶。
@@ -41,6 +43,8 @@ const GATE = !CONTROL && arg('gate', null) != null ? +arg('gate') : null;
 const SPEND = arg('spend', 'even');
 if (!['even', 'atk'].includes(SPEND)) { console.error('--spend even|atk'); process.exit(2); }
 const MONEY = onOff('money', 'on'), SEEDS = onOff('seeds', 'on'), KEEP = onOff('keep', 'on');
+const FAC = argv.includes('--fac');
+if (FAC && !(C.factions && C.factions.on !== false)) { console.error('--fac：content 沒有 factions'); process.exit(2); }
 if (argv.includes('--tierpol')) { console.error('--tierpol 是棒三（試煉階級）的事；棒一只有固定 --tier k'); process.exit(2); }
 const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) && t[k] && typeof t[k] === 'object') deepMerge(t[k], s[k]); else t[k] = s[k]; } return t; };
 C.career = C.career || {};
@@ -109,6 +113,7 @@ function oneRun(pol, c, r, cr) {
   const ace = ACE || TIERS[c % 3], prologue = r === 1;
   const o = { seedKey: 'car-' + c, runNo: r, ace, prologue, tier: TIER, relics: prologue ? [] : cr.relics.slice(0, 3),
     bestFar: cr.best, chestDry: cr.chestDry, safety: r === 1 || cr.prevEnd < 10 };
+  if (FAC) o.fac = true;                                                // ?fac=1（序章那場引擎自己不給）
   const args = prologue || CONTROL ? {} : EN.talentArgs(C, cr);       // ui createRun：序章那一趟不給
   Object.assign(o, args);
   const smax = args.seedMax || CFG.seedMax;
@@ -149,7 +154,7 @@ const q = (a, p) => { const s = a.slice().sort((x, y) => x - y); return s[Math.m
 const mean = a => a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
 const SHOW = [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50];
 const t0 = Date.now();
-const report = { args: argv, NC, NR, CAP, control: CONTROL, gate: GATE, spend: SPEND, money: MONEY, seeds: SEEDS, keep: KEEP, tier: TIER, ace: ACE,
+const report = { args: argv, NC, NR, CAP, control: CONTROL, gate: GATE, spend: SPEND, money: MONEY, seeds: SEEDS, keep: KEEP, tier: TIER, ace: ACE, fac: FAC,
   career: { lexp: K.lexp, curve: K.curve, talents: K.talents.filter(t => !t.soon), ladder: K.ladder.filter(l => !l.soon) }, guestHpSteps: C.trial.guestHpSteps, pols: {} };
 const pf = arg('progress', null);                                       // 進度：每個策略跑完寫一行（容器重啟時看跑到哪）
 for (const pol of POLS) {
@@ -188,7 +193,7 @@ for (const pol of POLS) {
       gain: Math.round(mean(w.gain)), base: Math.round(mean(w.base)), route: Math.round(mean(w.route)), raw: Math.round(mean(w.raw)), low: mean(w.low), ends: w.end };
   });
   report.pols[pol] = out;
-  console.log(`\n## ${pol}（${NC} 個帳號 × ${NR} 趟；${ACE || '三派輪流（每個帳號固定一派）'}；${CONTROL ? '對照組：天賦、階梯、抽盤永遠不開' : (GATE != null ? '戰力 Lv' + GATE + ' 開、' : '') + '花點 ' + SPEND + (MONEY ? '（Lv8 前點錢類）' : '')}；種子 ${SEEDS ? '帶' : '不帶'}、帶走一張 ${KEEP ? '有' : '沒有'}${TIER ? '、試煉第 ' + TIER + ' 階' : ''}）\n`);
+  console.log(`\n## ${pol}（${NC} 個帳號 × ${NR} 趟；${ACE || '三派輪流（每個帳號固定一派）'}；${CONTROL ? '對照組：天賦、階梯、抽盤永遠不開' : (GATE != null ? '戰力 Lv' + GATE + ' 開、' : '') + '花點 ' + SPEND + (MONEY ? '（Lv8 前點錢類）' : '')}；種子 ${SEEDS ? '帶' : '不帶'}、帶走一張 ${KEEP ? '有' : '沒有'}${TIER ? '、試煉第 ' + TIER + ' 階' : ''}${FAC ? '、流派 ?fac=1' : ''}）\n`);
   console.log('| 趟 | 深度 中位／平均（p25–p75） | 到第 10／20／50／100 位（%） | 開局 Lv（≥8） | 已花點 | 品／底／聲／說情／經驗／稀有（錢／酬） | 有戰力 | 種子格／三選一／帶了幾張種子 | 唱片櫃 | 這趟樂歷（基本＋路線；未截；×2 的趟） |');
   console.log('|---|---|---|---|---|---|---|---|---|---|');
   for (const x of out) if (SHOW.includes(x.run) || x.run === NR) {

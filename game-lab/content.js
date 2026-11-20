@@ -2469,6 +2469,88 @@
     maxFilled: 40
   };
 
+  // 第 D 波棒二：三流派（網址 ?fac=1 試做旗標；scratchpad v5/wave-d SPEC-D §3.2–§3.5、§3.9–§3.10、§4.2、§6-3；給畫面／sim 的契約 build2/CONTRACT.md）。
+  //   旗標關（run 沒有 fac）時沒有任何程式讀這一節。名稱、一字圖示照 C.aceTitle／C.aceIcon（預設就換，不跟旗標）。
+  //   fx＝核心被動＋代價（engine outcome 的派別路；鍵名見 engine facFxOf）；picks＝本派選項（升級第 4 格：每 levelEvery 級一次、佔那一級的屬性；
+  //   哪一項先出＝雜湊，每項一趟最多 1 次；第 5 項 second＝第二招）；priority 只給棒三錄音室試錄的策略用（本派格不看它）。
+  //   notes＝結果行小字（{n}：full／borrow／underdog＝這手扣他的總數；crit／crit2／loseCost／cCost／tieCost＝多扣的那一份；heal／leech＝回幾聲望；thorn＝他也扣幾）。
+  //   數字：SPEC-D §4.2 定稿（異端拆穿多扣 1、回 2，比星輸多扣 1：§14-3 主線照建議）。棒二 sim n 4000 重量（F1–F9），沒過只調這裡的數字。
+  // ===================================================================
+  C.factions = {
+    on: true, levelEvery: 5, occupy: true,
+    notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋：多扣 {n}',
+      crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸：多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}' },
+    // ?fac=1&apex=1 同開才用（SPEC-D §6-3「三家換一格」）：engine apexAbilityOf 換掉那張的 op／params／text（name、典故不動；C.apexTrial 本身不改）。
+    //   ops＝這個原語的卡都換（冷門 theirStar／pThr＝被動已有；異端 crit／critLeech＝被動已有／七不收）；cards＝指定那張（優先）。timing：留著型照舊留著
+    //   數字（拆穿多扣 2、比星多算 2）＝規格起點，棒二 sim F9 量；on false＝退回只標示（ui.apexMixed；對照表留著，on 改回 true 就換）
+    //   棒二 sim（build2/SIM.md）：規格起點的 Zodiac「這手他少 1 星」一場省 1 點、累積起來冷門 32→42（F9 1.31 ✗；eStar 範圍 [1,1] 調不動）；
+    //   退回只標示＝直接同開 35／32／20（1.75，異端跟提示同色 13.2%）比換一格更不平 → 棒二審查定案：Zodiac 不另外指定、照家族換「拆穿多扣 2」，
+    //   異端照換「比星多算 2」：n4000 會讀的 35／31／32（1.13 ✓）、異端跟提示同色 8.1%（build2/FINAL.md）
+    apexSwap: {
+      on: true,
+      notes: { critAdd: '王牌：拆穿！多扣 {d}', leechFac: '王牌：拆穿！回聲望跟流派取大，不另加' },   // leechFac：拆穿回血那手回的被流派蓋過（取大）＝這張沒另外回（只開 on false 時碰得到）
+      pearl: {
+        ops: { theirStar: { op: 'critAdd', params: { n: 2 }, timing: 'hand', text: '這手抓到他唬你，多扣 2。' },
+               pThr: { op: 'critAdd', params: { n: 2 }, timing: 'hand', text: '這手抓到他唬你，多扣 2。' } }
+      },
+      heresy: {
+        ops: { crit: { op: 'mirrorPlus', params: { n: 2 }, timing: 'hand', text: '這手比星多算 2。' },
+               critLeech: { op: 'mirrorPlus', params: { n: 2 }, timing: 'hand', text: '這手比星多算 2。' } },
+        cards: { 'brotzmann-machine-gun': { op: 'mirrorPlus', params: { n: 2 }, timing: 'hold', text: '留著：剋中多扣 1；發動：這手比星多算 2。' } }
+      }
+    },
+    hall: { name: '經典流', icon: '比', deepCell: 'honest',
+      tagline: '正面跟他比份量。', passive: '同色大他 2 星以上：扣他你這張的整張星數。', cost: '同色平手：你扣 1。',
+      read: '先看這色有沒有比他大 2 星。', first: '經典流：同色大他 2 星，扣整張；同色平手，你扣 1。',
+      fx: { mirrorWinFull: 1, fullMin: 2, tieCost: 1 },
+      picks: [
+        { id: 'h_eye', name: '識貨', op: 'starPlus', axis: 'c', n: 1, text: '你的經典 +1 星（王牌不加）。' },
+        { id: 'h_first', name: '初版', op: 'fullPlus', n: 1, text: '扣整張那手，再多扣 1。' },
+        { id: 'h_old', name: '老派', op: 'tieFree', text: '每場第一次同色平手，你不扣。' },
+        { id: 'h_seen', name: '見過世面', op: 'counteredCut', n: 2, text: '每場第一次被剋，少扣 2（最少扣 1）。' },
+        { id: 'h_leech', name: '吸血', op: 'leech', max: 2, second: true, text: '扣整張那手，扣到的一半回聲望，一場最多 2。' } ],
+      priority: ['h_leech', 'h_eye', 'h_first', 'h_seen', 'h_old'] },
+    pearl: { name: '冷門流', icon: '借', deepCell: 'caught',
+      tagline: '借他的份量，只讀真假。', passive: '你剋他一定剋得動，扣他那張的星數；他大你 2 星以上那手不加品味。', cost: '被剋：多扣 1。',
+      read: '只讀真假，信的時候丟最小那張。', first: '冷門流：剋他一定剋得動，扣他那張；被剋多扣 1。',
+      fx: { counterAlways: 1, underdogNoAtk: 1, counteredCost: 1 },
+      picks: [
+        { id: 'p_remember', name: '有人記得', op: 'cCostFree', text: '被剋不再多扣 1。' },
+        { id: 'p_bench', name: '冷板凳', op: 'counteredCut', n: 2, text: '每場第一次被剋，少扣 2（最少扣 1）。' },
+        { id: 'p_regular', name: '熟客', op: 'lowHeal', n: 2, text: '聲望不到一半時，打贏多回 2。' },
+        { id: 'p_hp', name: '地下串連', op: 'maxHp', n: 3, text: '聲望上限 +3，現有聲望也 +3。' },
+        { id: 'p_thorn', name: '反傷', op: 'thorn', n: 2, max: 2, second: true, text: '被剋時他也扣 2，一場最多 2 次。' } ],
+      priority: ['p_thorn', 'p_remember', 'p_bench', 'p_regular', 'p_hp'] },
+    heresy: { name: '異端流', icon: '拆', deepCell: 'honest',
+      tagline: '賭他在唬，拆穿他。', passive: '他唬你、你剛好剋中（拆穿）：多扣 1，回 2 聲望。', cost: '比星輸：多扣 1。',
+      read: '賭他在唬；他少唬的時候就信。', first: '異端流：拆穿多扣 1、回 2 聲望；比星輸多扣 1。',
+      fx: { critMult: 1, critPre: 1, critHeal: 2, loseCost: 1 },
+      picks: [
+        { id: 'x_crack', name: '破音', op: 'critPrePlus', n: 1, text: '拆穿那手再多扣 1。' },
+        { id: 'x_echo', name: '回音', op: 'critHealPlus', n: 1, text: '拆穿那手再多回 1 聲望。' },
+        { id: 'x_thick', name: '臉皮厚', op: 'loseFree', text: '每場第一次比星輸，不多扣。' },
+        { id: 'x_dist', name: '失真', op: 'starPlus', axis: 'h', n: 1, text: '你的硬蕊 +1 星（王牌不加）。' },
+        { id: 'x_crit', name: '爆擊', op: 'critSafe', n: 1, second: true, text: '拆穿再多扣 1，比星輸不再多扣。' } ],
+      priority: ['x_crit', 'x_dist', 'x_crack', 'x_echo', 'x_thick'] },
+    // 畫面字（ui.js：標題旗標章、開局派系卡、升級面板第 4 格、頂欄圖示的本派說明、我的狀態；{x} 由畫面代入）
+    ui: {
+      badge: '流派試做', badgeBoth: '流派＋頂點卡試做',                 // 標題旗標章（?fac=1）；≤600px 跟 ?apex=1 合成一顆
+      passive: '被動', cost: '代價', second: '第二招',                   // 派系卡、本派說明的小標
+      pickTag: '本派', pickNote: '不加屬性',                             // 升級第 4 格：小標、灰字小註（拿了這一級不加屬性）
+      pickFirst: '這一級可以學一招本派的。',                             // Lv5 第一次出現第 4 格時老闆說
+      mine: '本派：{list}', mineNone: '本派：還沒學',                    // 我的狀態那一行（{list}＝拿過的本派選項名，用「、」接）
+      costOff: '已取消',                                                 // 本派說明：本派選項取消了代價（有人記得、爆擊）時，代價那行劃掉、後面標這兩字（審查 棒二）
+      infoTitle: '{name}・{icon}',                                       // 頂欄一字圖示點開的標題
+      leftLeech: '吸血這場還能回 {n} 聲望', leftThorn: '反傷這場還剩 {n} 次',   // 本派說明：這場第二招還剩幾
+      firstTip: '點頂欄這個字，看本派的被動和代價。',                    // 第一次觸發被動或代價那手的老闆小提示（指頂欄一字圖示 data-tut=fac；提示出來時結果框已收，審查 棒二：原本叫人看結果行小字，那時看不到）
+      pickGo: '就這一派',                                                // 開局派系卡的大鈕（棒二介面）
+      profFar: '熟練 Lv{n}・最遠第 {far} 位', profOnly: '熟練 Lv{n}',    // 派系卡最下面那行（這一派打過最遠的那一趟；還沒打過＝只寫熟練）
+      swapped: '跟流派一起試，這張換過能力',                             // ?fac=1&apex=1：換過能力的頂點卡（挑王牌面板、唱片資訊）
+      apexMixed: '頂點卡跟流派一起試：有幾張還沒換能力'                 // 退回「只標示」時（apexSwap.on false）標題旗標章下的小字
+    }
+  };
+  C.factionsTag = '新';
+
   // ===================================================================
   // 新玩家沒有 DipChar 時的名字與造型（roguelike.html RANDOM_NAMES 去掉敵人用掉的 8 個）
   // ===================================================================

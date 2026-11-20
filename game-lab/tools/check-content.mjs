@@ -22,6 +22,8 @@
 //     名單裡的新卡（C.apexTrialOnly）可以沒有試聽（主站沒有固定試聽＝「無來源」，烘成 previewUrl ''）。
 //   活店（SPEC-H；匯出 crowdProblems(C, E)、crowdNotes(C)）：LD1 熟客名冊與 C.crowd／C.encounter／C.crowdUi、LD2 撞造型（帽子分族）、LD3 台詞 C.chat／C.ownerChat（形狀、防編造、句數）、
 //     LD4 熟客牌組；LD5 劇本與 ACTORS 不再有 r1（scriptProblems）。
+//   第 D 波棒二三流派（?fac=1；匯出 factionProblems(C, E)）：C.factions 三派 name／icon＝C.aceTitle／C.aceIcon、fx 鍵、picks 5 項（id 唯一、op 在 engine FAC_OPS、第 5 項 second）、
+//     priority＝picks 的排列、notes 每個鍵都有 {n}、apexSwap（op 在 APEX_OPS、params 範圍、時機、卡在那派名單、留著型字樣、結果句）、畫面字齊全、factionsTag。
 //   卡片 id（第 B 波 SPEC-B §1.1）：每張卡的鍵＝id＝catalogId(藝人, 專輯)；舊 id 對照表（匯出 legacyProblems(C)）：C.legacyIds()＋C.legacyExtra＝tools/legacy-ids.json。
 //   卡池（第 B 波 SPEC-B §1.2–§1.5；匯出 poolProblems(C)）：C.cards＝核心 cards.js＋精選新卡 cards-pool.js 展開（C.poolLoaded、張數＝核心＋n）；
 //     require('cards.js') 仍只有核心、C.cards 不是同一個物件；新卡都 pool: true、有 bin／tune、沒有 tier、不撞核心；
@@ -383,6 +385,7 @@ export function contentProblems(C, E) {
   bad.push(...tuneProblems(C));
   bad.push(...apexProblems(C, E));
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
+  bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
   for (const id of [...Object.values(C.aces), ...Object.values(C.gifts).flat(), ...C.bargain.pool]) if (CARDS[id]) ok(CARDS[id].pitch, id + ': 缺推薦語（王牌、老闆四張、特價箱）');
   has(C.enemies.man.drop, 'enemies.man.drop');
@@ -1217,6 +1220,7 @@ export function apexProblems(C, E) {
         usedOps.add('combo');
       } else {
         ok(OPS[x.op] && OPS[x.op].timing.includes(tm), w + '：' + x.op + ' 不能用在 ' + x.timing);
+        ok(!(OPS[x.op] || {}).swapOnly, w + '：' + x.op + ' 只給 ?fac=1&apex=1 換一格用（C.factions.apexSwap），不放 C.apexTrial');
         paramsOk(x.op, x.params, w, tm === 'duel' ? (OPS[x.op] || {}).duelMax : null);
       }
       if (x.timing === 'hold') {
@@ -1237,6 +1241,85 @@ export function apexProblems(C, E) {
   ok(U.timing && ['hand', 'duel', 'hold'].every(k => typeof U.timing[k] === 'string' && U.timing[k]), 'apexTrial.ui.timing 三種');
   for (const [k, v] of Object.entries(A.tips || {})) ok(typeof v === 'string' && clen(v) <= 20, 'apexTrial.tips.' + k + ' ≤20 字');
   ok(C.apexTrialTag === '新', 'C.apexTrialTag');
+  return bad;
+}
+
+// ================================================================================================
+// 第 D 波棒二：三流派（?fac=1；C.factions，SPEC-D §4.2、§6-3）
+// ================================================================================================
+const FAC_NOTE_KEYS = ['full', 'tieCost', 'borrow', 'underdog', 'cCost', 'crit', 'crit2', 'heal', 'loseCost', 'leech', 'thorn'];
+const FAC_FX_KEYS = { hall: ['mirrorWinFull', 'fullMin', 'tieCost'], pearl: ['counterAlways', 'underdogNoAtk', 'counteredCost'], heresy: ['critMult', 'critPre', 'critHeal', 'loseCost'] };
+export function factionProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const F = C.factions;
+  if (F == null) return bad;                                    // 試做拿掉了：不檢查
+  if (!ok(F && typeof F === 'object', 'factions 要是物件')) return bad;
+  const OPS = E.APEX_OPS || {}, FOPS = E.FAC_OPS || [];
+  ok(Number.isInteger(F.levelEvery) && F.levelEvery >= 0 && F.levelEvery <= 20, 'factions.levelEvery 要是 0–20 的整數（0＝本派格不出）');
+  ok(F.occupy === true, 'factions.occupy 要是 true（定稿只有佔那一級這條路：SPEC-D §3.5）');
+  const N = F.notes || {};
+  for (const k of FAC_NOTE_KEYS) ok(typeof N[k] === 'string' && N[k].includes('{n}') && clen(N[k].replace('{n}', '12')) <= 16, 'factions.notes.' + k + ' 要有 {n}、代入後 ≤16 字');
+  ok(Object.keys(N).every(k => FAC_NOTE_KEYS.includes(k)), 'factions.notes 有不認得的鍵');
+  ok(FAC_NOTE_KEYS.every(k => (E.FAC_NOTE_ORDER || []).includes(k)), 'factions.notes 的鍵要都在 engine FAC_NOTE_ORDER');
+  for (const t of TIERS) {
+    const D = F[t], w = 'factions.' + t;
+    if (!ok(D && typeof D === 'object', w + ' 要是物件')) continue;
+    ok(D.name === (C.aceTitle || {})[t], w + '.name＝C.aceTitle.' + t);
+    ok(D.icon === (C.aceIcon || {})[t], w + '.icon＝C.aceIcon.' + t);
+    ok(['honest', 'caught'].includes(D.deepCell), w + '.deepCell 要是 honest／caught');
+    for (const k of ['tagline', 'passive', 'cost', 'read', 'first']) ok(typeof D[k] === 'string' && D[k] && clen(D[k]) <= 34, w + '.' + k + ' 要有字（≤34）');
+    ok(D.fx && typeof D.fx === 'object' && FAC_FX_KEYS[t].every(k => Number.isFinite(D.fx[k]) && D.fx[k] >= 0), w + '.fx 要有 ' + FAC_FX_KEYS[t].join('／') + '（非負數字）');
+    const P = Array.isArray(D.picks) ? D.picks : [];
+    ok(P.length === 5, w + '.picks 要 5 項（第 5 項＝第二招）');
+    const ids = new Set();
+    P.forEach((p, k) => {
+      const wp = w + '.picks[' + k + ']';
+      if (!ok(p && typeof p === 'object', wp + ' 不是物件')) return;
+      ok(typeof p.id === 'string' && /^[a-z]_[a-z]+$/.test(p.id) && !ids.has(p.id), wp + '.id 要 x_xxx、這派唯一：' + p.id); ids.add(p.id);
+      ok(typeof p.name === 'string' && p.name && clen(p.name) <= 6, wp + '.name ≤6 字');
+      ok(typeof p.text === 'string' && p.text && clen(p.text) <= 24, wp + '.text ≤24 字：' + p.text);
+      ok(FOPS.includes(p.op), wp + '.op ' + p.op + ' 不在 engine FAC_OPS');
+      if (p.op === 'starPlus') ok(ATTRS.includes(p.axis), wp + '：starPlus 要 axis');
+      if (['starPlus', 'fullPlus', 'counteredCut', 'critPrePlus', 'critHealPlus', 'lowHeal', 'maxHp', 'thorn', 'critSafe'].includes(p.op)) ok(Number.isInteger(p.n) && p.n >= 1 && p.n <= 3, wp + '：n 要 1–3');
+      if (['leech', 'thorn'].includes(p.op)) ok(Number.isInteger(p.max) && p.max >= 1 && p.max <= 3, wp + '：第二招要有上限 max 1–3（SPEC-D §3.4：三招都有上限）');
+      ok(!!p.second === (k === 4), wp + '：只有第 5 項是第二招（second）');
+    });
+    ok(Array.isArray(D.priority) && D.priority.length === ids.size && sameSet(D.priority, [...ids]), w + '.priority 要是 picks id 的排列');
+  }
+  const S = F.apexSwap;
+  if (S != null && ok(S && typeof S === 'object', 'factions.apexSwap 要是物件')) {
+    const SN = S.notes || {}, AN = (C.apexTrial || {}).notes || {};
+    for (const t of ['pearl', 'heresy', 'hall']) {
+      const T = S[t]; if (T == null) continue;
+      const list = (C.apexTrial || {})[t] || [];
+      const one = (x, where, origTiming) => {
+        if (!ok(x && typeof x === 'object' && OPS[x.op], where + '：op ' + (x && x.op) + ' 不在 engine APEX_OPS')) return;
+        const tm = (x.timing === 'hold' || origTiming === 'hold') ? 'hand' : (x.timing || origTiming) === 'duel' ? 'duel' : 'hand';
+        ok(OPS[x.op].timing.includes(tm), where + '：' + x.op + ' 不能用在 ' + tm);
+        for (const [k, rg] of Object.entries(OPS[x.op].params)) { const v = (x.params || {})[k]; if (rg !== 'bool') ok(Number.isInteger(v) && v >= rg[0] && v <= rg[1] && (tm !== 'duel' || !(OPS[x.op].duelMax || {})[k] || v <= OPS[x.op].duelMax[k]), where + '：' + x.op + '.' + k + '＝' + v + ' 不在範圍'); }
+        ok(typeof x.text === 'string' && x.text && clen(x.text) <= 25, where + '：text ≤25 字');
+        if (origTiming === 'hold') ok(/^留著：.+；發動：/.test(x.text), where + '：留著型的說明要「留著：…；發動：…」');
+        for (const b of APEX_BANNED) ok(!String(x.text).includes(b), where + '：禁區字「' + b + '」');
+        ok(x.op === 'reveal' || typeof (SN[x.op] || AN[x.op]) === 'string', where + '：' + x.op + ' 沒有結果句（apexSwap.notes 或 apexTrial.notes）');
+      };
+      for (const [op, x] of Object.entries(T.ops || {})) {
+        ok(list.some(e => e && e.op === op), 'factions.apexSwap.' + t + '.ops.' + op + '：這派名單沒有這個原語的卡');
+        const holds = list.filter(e => e && e.op === op && e.timing === 'hold' && !((T.cards || {})[e.id]));
+        ok(!holds.length, 'factions.apexSwap.' + t + '.ops.' + op + '：留著型的卡（' + holds.map(e => e.id).join('、') + '）要在 cards 另寫說明');
+        one(x, 'factions.apexSwap.' + t + '.ops.' + op, x.timing);
+      }
+      for (const [id, x] of Object.entries(T.cards || {})) {
+        const e = list.find(z => z && z.id === id);
+        if (!ok(e, 'factions.apexSwap.' + t + '.cards.' + id + '：不在 C.apexTrial.' + t)) continue;
+        one(x, 'factions.apexSwap.' + t + '.cards.' + id, e.timing === 'hold' ? 'hold' : x.timing);
+      }
+    }
+    for (const [k, v] of Object.entries(SN)) ok(typeof v === 'string' && clen(v.replace(/\{(d|h)\}/g, '12')) <= 25 && !(k in AN), 'factions.apexSwap.notes.' + k + '：≤25 字、不跟 apexTrial.notes 重複');
+  }
+  const U = F.ui || {};
+  for (const k of ['badge', 'badgeBoth', 'passive', 'cost', 'second', 'pickTag', 'pickNote', 'pickFirst', 'mine', 'mineNone', 'infoTitle', 'leftLeech', 'leftThorn', 'firstTip', 'swapped', 'apexMixed', 'costOff']) ok(typeof U[k] === 'string' && U[k], 'factions.ui.' + k);
+  ok(C.factionsTag === '新', 'C.factionsTag');
   return bad;
 }
 

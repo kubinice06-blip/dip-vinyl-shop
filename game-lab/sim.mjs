@@ -57,6 +57,15 @@
 //   --i0 k  趟的編號從 k 起（seedKey sim5-<k+i>；另一批獨立的客人，跟 --i0 0 的合併＝加大樣本；C1 第 75 位的 cpbase 用）
 //   --posmax N  JSON 每格 pos（每一位的到過／首戰／死亡率）存到第 N 位（預設 60；C1 的 --cpbase 要 --from＋10 位，量第 75／100 位中繼點用 --posmax 120）
 //   給了 --talent／--ladder 或 --tier 時多印「到第 21 位（打倒第 20 位藏家）」表（試煉過關率）＋每趟樂歷（基本／路線）；JSON 每格多 reach21、lexp。沒給時輸出跟以前一字不差
+//   第 D 波棒二（三流派＝遊戲網址 ?fac=1；SPEC-D §7.1、§8.1）：
+//   --fac  newRun fac:true：派別被動＋代價、本派選項（升級每 5 級第 4 格；runPolicy 出了就拿）。序章那場照舊沒有。三派一定分開量（--ace 各一支，同一批客人）
+//   --nofacpick  本派選項不出（C.factions.levelEvery 0＝只量被動；F6 的對照組）
+//   --facfx '{"heresy":{"critPre":2}}'  疊進那派的被動 fx（Object.assign C.factions[t].fx；調數字、量第二招從開局就有：{"hall":{"leech":1,"leechMax":2}}）
+//   --fac --apex  兩個旗標同開：engine apexAbilityOf 照 C.factions.apexSwap「三家換一格」（F9；調三個數字用 --patch '{"factions":{"apexSwap":{…}}}'，
+//            退回只標示＝--patch '{"factions":{"apexSwap":{"on":false}}}'）
+//   開 --fac 時多印「流派被動」表（每場平均觸發幾手：整張／借／以小搏大／拆穿／爆擊／回聲望／吸血／比星輸／被剋／平手／反傷／少扣；本派那幾手合計＝F4；
+//            每趟拿到各本派選項的比例）＋「到第 21 位」表；JSON 每格多 fac {fights, perFight, picks}、reach21、lexp。不開 --fac 時輸出跟以前一字不差
+//   打法差異（F7）另一支：game-lab/diffplay.mjs
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
 //   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
 //   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
@@ -185,6 +194,19 @@ const WC_ARG = arg('wc', null);
 if (WC_ARG === 'off') deepMerge(C, { waveC: { loot: { on: false }, chest: { on: false }, stall: { on: false }, safety: { on: false } }, trial: { guestHpSteps: [] } });
 else if (WC_ARG) { C.waveC = C.waveC || {}; deepMerge(C.waveC, JSON.parse(WC_ARG)); }
 if (arg('patch', null)) deepMerge(C, JSON.parse(arg('patch')));
+// 第 D 波棒二（見檔頭）：--fac 三流派、--nofacpick 本派選項不出、--facfx 疊進被動 fx（--patch 之後套）
+const FAC = argv.includes('--fac');
+const NOFACPICK = argv.includes('--nofacpick');
+const FACFX = arg('facfx', null) ? JSON.parse(arg('facfx')) : null;
+if ((NOFACPICK || FACFX) && !FAC) { console.error('--nofacpick／--facfx 要跟 --fac 一起用'); process.exit(2); }
+if (FAC && !EN.facCfg(C)) { console.error('--fac：content 沒有 C.factions（或 on:false）'); process.exit(2); }
+if (FACFX) for (const t of Object.keys(FACFX)) {
+  if (!TIERS.includes(t) || !FACFX[t] || typeof FACFX[t] !== 'object') { console.error('--facfx 的鍵要是 ' + TIERS.join('|') + '，值是物件'); process.exit(2); }
+  C.factions[t].fx = Object.assign({}, C.factions[t].fx, FACFX[t]);
+}
+if (NOFACPICK) C.factions.levelEvery = 0;
+const FAC_KEYS = EN.FAC_NOTE_ORDER.concat(['cut']);                      // duel.stats.fac 的鍵（結果行小字＋本派選項「每場第一次被剋少扣」）
+const FAC_OWN = { hall: ['full', 'tieCost'], pearl: ['borrow', 'underdog', 'cCost'], heresy: ['crit', 'crit2', 'loseCost'] };   // F4：被動或代價觸發的手（三派互斥）
 const WCC = EN.wcCfg(C), WC_ON = !!(WCC.loot.on || WCC.chest.on || WCC.stall.on || WCC.safety.on);
 const COPT = JSON.parse(arg('copt', '{}')), COPT_SET = Object.keys(COPT).length > 0;
 const SAFETY = argv.includes('--safety');
@@ -214,7 +236,7 @@ const POSMAX = +arg('posmax', 60);
 const I0 = +arg('i0', 0);                                                 // 第 D 波：趟的編號從 i0 起（另一批獨立的客人；跟 i0 0 的同 n 合併＝加大樣本）
 if (!(Number.isInteger(I0) && I0 >= 0)) { console.error('--i0 k（非負整數）'); process.exit(2); }
 if (!(Number.isInteger(POSMAX) && POSMAX >= 1)) { console.error('--posmax N（正整數）'); process.exit(2); }
-const D1EX = !!(TALENT || LADDER || TIER);                                  // 多印「到第 21 位」＋樂歷表、JSON 多 reach21／lexp
+const D1EX = !!(TALENT || LADDER || TIER || FAC);                           // 多印「到第 21 位」＋樂歷表、JSON 多 reach21／lexp（棒二：--fac 也印）
 const SEEDS_ARG = arg('seeds', null);
 let SEEDS = null;
 if (SEEDS_ARG != null) {
@@ -364,6 +386,7 @@ function runOnce(pol, flow, i, A) {
   if (TALENT) o0.talent = Object.assign({}, TALENT);                   // 第 D 波：樂歷主幹固定檔位
   if (LADDER) Object.assign(o0, LADDER);                                //          階梯（seedMax／relicPick／goldAdd）
   if (SAFETY) o0.safety = true;                                         // 第 C 波：新手保底（只印對照）
+  if (FAC) o0.fac = true;                                               // 第 D 波棒二：三流派（?fac=1）
   if (FROM) { o0.from = FROM; o0.prologue = false; o0.relics = FROM_RELICS.slice(); }   // 中繼點開局（快速選秀）
   if (RET_RELICS) { o0.prologue = false; o0.relics = RET_RELICS.slice(); }   // 老玩家：不打序章、帶 3 件配件
   const run = EN.newRun(C, o0);
@@ -469,6 +492,7 @@ function runOnce(pol, flow, i, A) {
     if (by === 'rounds') A.bar[d]++; else if (by === 'hp') A.ko[d]++;
     if (res.win) A.win[d]++;
     if (att === 0) { A.att1[d]++; if (res.win) A.win1[d]++; }
+    if (A.fx) { A.fx.fights++; A.fx.hands += hands; const SF = duel.stats.fac || {}; for (const k of Object.keys(SF)) A.fx.k[k] = (A.fx.k[k] || 0) + SF[k]; }   // 第 D 波棒二：每場派別觸發（客人場，說情重打也算）
     if (A.ax) {                                                         // 頂點卡發動統計（--apex）
       const X = A.ax, h = duel._apexHand, hits = duel.stats.apexHits | 0;
       X.fights++; X.hits += hits;
@@ -491,6 +515,7 @@ function runOnce(pol, flow, i, A) {
   const end = lostMan ? 0 : cens ? CAP : run.pos;
   if (firstLoss == null) firstLoss = cens ? CAP + 1 : end;
   const S = run.stats, sum = EN.runSummary(run);
+  if (A.fx && run.fac) { A.fx.runs++; for (const id of Object.keys(run.fac.picks || {})) A.fx.picks[id] = (A.fx.picks[id] || 0) + 1; }   // 每趟拿到哪些本派選項
   const dx = D1EX ? (() => { const g = EN.careerGain(C, sum, {}), L = sum.lexp || {}; return { lxBase: g.base, lxRoute: g.route, lxRaw: g.route + g.cut, lxGig: L.gig | 0 }; })() : {};   // 第 D 波：這一趟樂歷（沒破紀錄、沒倍率）
   return { ...dx, end, cens, lostMan, firstLoss, fatal, maxHands, level: run.level, atk: run.atk, def: run.def, maxHp: run.maxHp, relics: run.relics.length,
     taken: sum.taken, rewardCards: S.taken.length, bought: S.bought.length, relicsBought: S.relicsBought.length, relicsGot: S.relicsGot.length,
@@ -522,6 +547,7 @@ function runCell(pol, flow, n) {
     if (WANT_N) A.wt = { runs: 0, l1: { lots: 0, in: 0, elig: 0, inElig: 0 }, l2: { lots: 0, in: 0, elig: 0, inElig: 0 }, onShelf: 0, bought: 0 };
   }
   if (WC_ON) A.cw = { dare: { f: 0, w: 0 }, plain: { f: 0, w: 0 } };   // 第 C 波（全關不記、JSON 不多欄位）
+  if (FAC) A.fx = { runs: 0, fights: 0, hands: 0, k: {}, picks: {} };   // 第 D 波棒二（--fac 才記）
   const recs = [];
   for (let i = 0; i < n; i++) recs.push(runOnce(pol, flow, I0 + i, A));
   const ends = recs.map(r => r.end), fl = recs.map(r => Math.min(r.firstLoss, CAP));
@@ -564,6 +590,8 @@ function runCell(pol, flow, n) {
       ...(EN.bagLimited() ? {} : { bagN: avg('bagN'), bagMaxN: avg('bagMaxN'), bagMaxMax: Math.max(...recs.map(r => r.bagMaxN)), sold: avg('sold') }) },   // 包包不限才有（--set bagMax=8 時 JSON 跟改版前一樣）
     pos: pos.map(p => ({ d: p.d, cls: p.cls, reached: p.reached, win1: r3(p.win1), hazard: r3(p.hazard), hands: r3(p.hands) })),
     ...(apexStats ? { apex: apexStats } : {}),
+    ...(A.fx ? { fac: { fights: A.fx.fights, hands: A.fx.hands / Math.max(1, A.fx.fights), perFight: Object.fromEntries(FAC_KEYS.filter(k => A.fx.k[k]).map(k => [k, A.fx.k[k] / Math.max(1, A.fx.fights)])),
+      picks: Object.fromEntries(Object.entries(A.fx.picks).map(([k, v]) => [k, v / n])) } } : {}),
     ...(A.lt ? { lot: lotStats(A.lt, n) } : {}),
     ...(A.wt ? { want: wantStats(A.wt, n) } : {}),
     ...(A.cw ? { wcx: wcStatsOf(recs, A.cw, n) } : {}),
@@ -663,6 +691,7 @@ if (LOT_ON) report.lot = EN.lotCfg(C);                                   // 第 
 if (BROWSE < 16) report.browse = BROWSE;
 if (SEEDS) report.seeds = Object.assign({}, SEEDS, { example: seedsFor(0) });
 if (TALENT) report.talent = TALENT;                                        // 第 D 波（沒給＝JSON 跟以前一樣）
+if (FAC) report.fac = { levelEvery: C.factions.levelEvery, fx: Object.fromEntries(TIERS.map(t => [t, C.factions[t].fx])), ...(FACFX ? { facfx: FACFX } : {}), ...(APEX ? { apexSwap: C.factions.apexSwap } : {}) };   // 第 D 波棒二
 if (LADDER) report.ladder = LADDER;
 if (POSMAX !== 60) report.posmax = POSMAX;
 if (I0) report.i0 = I0;
@@ -682,6 +711,7 @@ if (DBASE && !(DBASE.N === N && DBASE.CAP === CAP && JSON.stringify(DBASE.return
 if (SEEDS) console.log('\n開局種子（--seeds ' + SEEDS.k + ':' + SEEDS.rarity + '）：每一趟都不打序章（種子只在不打序章的那一趟有效）' + (SEEDS.k ? '；種子＝' + (C.rarityZh || {})[SEEDS.rarity] + '裡 peak 最高的 ' + SEEDS.k + ' 張（同分照趟雜湊），例：第 0 趟 ' + seedsFor(0).map(id => C.cards[id].album).join('、') : '；沒有種子（對照組）'));
 if (WANT_N) console.log('\n想要清單（--want ' + WANT_N + '）：每一趟 ' + WANT_N + ' 張（有箱子的非頂點卡、照趟雜湊取；跟策略無關）');
 if (ACE_T) console.log('\n每一趟都用' + (C.aceTitle && C.aceTitle[ACE_T] || ACE_T) + '（--ace ' + ACE_T + '）');
+if (FAC) console.log('\n三流派（--fac＝?fac=1）：被動 ' + TIERS.map(t => C.factions[t].name + ' ' + JSON.stringify(C.factions[t].fx)).join('；') + '；本派選項' + (NOFACPICK ? '不出（--nofacpick）' : '每 ' + C.factions.levelEvery + ' 級（runPolicy 出了就拿）') + (APEX ? '；跟 --apex 同開：換一格 ' + (C.factions.apexSwap && C.factions.apexSwap.on !== false ? '開' : '關（只標示）') : ''));
 if (APEX_PARAMS) console.log('\n試調參數（--apex-params，不改 content.js）：' + JSON.stringify(APEX_PARAMS));
 if (UNLOCK) console.log('\n解鎖制（--unlock）：每一趟都是新玩家，只解鎖這一趟的派' + (APEX ? '；擁有的頂點卡只有那派預設那張' : ''));
 if (APEX) console.log('\n頂點卡純輔助卡試做（--apex）：王牌 ' + (APEX_ACE ? C.cards[APEX_ACE].album + '（' + EN.abilityOf(C, APEX_ACE).name + '）' : '各派預設那張') + '；打贏回 ' + ((C.apexTrial && C.apexTrial.winHeal) || EN.trialCfg(C, TIER).heal));
@@ -753,6 +783,16 @@ if (MODE === 'all' || MODE === 'runs') {
       console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${pct(a.useRate)} | ${f2(a.n)} | ${a.nHist.map(k => p0(k / u)).join('／')} | ${p0(a.handWin)}／${p0(a.handTie)}／${p0(a.handLose)} | ${f2(a.net)} | ${f2(a.d)} | ${pct(a.hitHand)} | ${f2(a.hitsPerFight)} | ${f2(a.heal)} | ${a.rev.honest}／${a.rev.bluff} | ${pct(a.winUsed)}／${pct(a.winUnused)} |`); }
   }
 
+  if (FAC) {                                                             // 第 D 波棒二：流派被動（--fac；客人場，序章沒有）
+    const FZ = { full: '整張', borrow: '借', underdog: '以小搏大', crit: '拆穿', crit2: '爆擊', heal: '回聲望', leech: '吸血', loseCost: '比星輸', cCost: '被剋', tieCost: '平手', thorn: '反傷', cut: '少扣' };
+    const own = ACE_T ? FAC_OWN[ACE_T] : [].concat(...Object.values(FAC_OWN)), pk = {};
+    for (const t of TIERS) for (const p of (C.factions[t] && C.factions[t].picks) || []) pk[p.id] = p.name;
+    console.log(`\n流派被動（${ACE_T ? C.factions[ACE_T].name : '三派輪流'}${NOFACPICK ? '；--nofacpick 本派選項不出' : '；本派選項每 ' + C.factions.levelEvery + ' 級'}${FACFX ? '；--facfx ' + JSON.stringify(FACFX) : ''}${APEX ? '；--apex 同開：換一格 ' + (C.factions.apexSwap && C.factions.apexSwap.on !== false ? '開' : '關（只標示）') : ''}；客人場每場平均觸發幾手；本派選項＝每趟拿到的比例）：\n`);
+    console.log('| 策略 | 流程 | 場數 | 每場觸發 ' + FAC_KEYS.map(k => FZ[k]).join('／') + ' | 被動或代價（F4） | 本派選項 |');
+    console.log('|---|---|---|---|---|---|');
+    for (const x of rows) { const F = x.fac; if (!F) continue; const pf = F.perFight;
+      console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${F.fights} | ${FAC_KEYS.map(k => f2(pf[k] || 0)).join('／')} | ${f2(own.reduce((s, k) => s + (pf[k] || 0), 0))} | ${Object.entries(F.picks).sort((a, b) => b[1] - a[1]).map(([k, v]) => (pk[k] || k) + ' ' + p0(v) + '%').join('、') || '—'} |`); }
+  }
   if (rows.some(x => x.lot)) {                                           // 一檔貨（第 B 波；lot 關不印）
     const L0 = EN.lotCfg(C), dz = d => d ? `${d.median}／${d.min}／${pct(d.zero)}` : '—', f1 = x => x == null ? '—' : x.toFixed(1);
     console.log(`\n一檔貨（每輪抽一檔 ${L0.size} 張、FEATURE ${L0.feature}；每位架上每箱 ${L0.show}、FEATURE ${L0.featureShow}${L0.firstShow ? '、第 1 輪每箱 ' + L0.firstShow : ''}；第 1 檔${L0.firstCurated ? '從策展池' : '從全卡池'}；smart、每位第一次走到時的架子）：\n`);
