@@ -23,6 +23,7 @@
 //   4'. 沉重字另擋 HEAVY_MORE（身亡、辭世、輕生、墜機、得年、失蹤、成癮、病……：規格那串的同義詞）；
 //   2'. 拉丁字母開頭／結尾的藝人名要整字比（Can 不能算中 American）。
 //   每位最多 2 句：先挑第一句有年份的、再挑第一句有《》的（不同句），不足再照原文順序補；輸出照原文順序。
+//   5. 多人卡（鍵含「,」「＋」「&」「與」等）的摘句，句中要有其中一人的名字（主線裁定；見 MULTI_SEP）。
 //   讀起來怪的藝人（主線抽讀後裁定）寫進 EXCLUDE（整位不收），單句寫進 EXCLUDE_QUOTE（鍵＋句子開頭）。
 //
 // 輸出（§6.3）：{ v:1, src:{ updatedAt, shards:{ NN: sha1 } }, n, a:{ <藝人鍵>:[句…] } }
@@ -84,7 +85,37 @@ export const EXCLUDE = new Map([
 export const EXCLUDE_QUOTE = new Map([
   ['andrew lloyd webber', [['兩人的成名作', '「兩人」指前一句的 Tim Rice，單獨拿出來不知道是誰（棒 3c 抽讀）']]],
   ['the modern jazz quartet', [['1974 年兩人決裂', '四重奏的「兩人」指前文的兩位成員，單獨拿出來不知道是誰（棒 3c 抽讀）']]],
+  // 主線抽讀 60 句（rulings.md「行家摘句抽讀」，2026-11-18）
+  ['張惠妹', [['2000 年她在陳水扁總統就職典禮', '屬實，但店裡閒聊音樂的場合不放政治題材（主站介紹照舊不動；主線裁定）']]],
+  ['北村昌士＋phonogenix', [['1984 年他組成迷幻的力量三重奏', '「隔年離開編輯工作」要前文才知道他當過編輯（主線裁定）']]],
+  ['富樫雅彦, 加古隆', [['透明的音色讓他被形容為', '雙人卡的「他」指誰看不出來（主線裁定）']]],
 ]);
+
+// 多人卡（主線裁定 2026-11-18）：藝人鍵含「,」「＋」「&」「與」（同形的「，」「+」「＆」「/」「／」「vs」一併算）的摘句，
+//   句中要出現其中一人的名字（或整個藝人名）才收；只用「他／她／他們／兩人／團體」指人的不收（雙人卡的「他」指誰看不出來）。
+//   名字＝鍵、介紹的 name、卡上藝人欄，各自照分隔字拆開的每一段（拉丁名去掉開頭 The）；
+//   兩個字以上的拉丁人名另收姓（最後一個字，≥4 字母、不是 trio／band 這類通稱；「由 Robinson 親自引介」照收，同 Homme、Marr 先例）。
+export const MULTI_SEP = /\s*(?:[,，＋+&＆與/／]|\bvs\.?(?=\s))\s*/;
+const GENERIC = new Set(['trio', 'quartet', 'quintet', 'sextet', 'septet', 'octet', 'band', 'orchestra', 'group', 'ensemble', 'brothers', 'sisters',
+  'family', 'boyz', 'boys', 'girls', 'gang', 'crew', 'project', 'experience', 'collective', 'singers', 'players', 'stars', 'all-stars', 'company', 'unit',
+  'friends', 'machine', 'sound', 'sounds', 'phonogenix']);
+export const isMulti = key => MULTI_SEP.test(norm(key));
+export function partNamesOf(key, entryName, cardNames) {
+  if (!isMulti(key)) return null;
+  const parts = new Set();
+  for (const n of [key, entryName, ...(cardNames || [])]) {
+    if (len(norm(n)) >= 2) parts.add(norm(n));                      // 整個藝人名也算
+    for (const raw of norm(n).split(MULTI_SEP)) {
+      const p = raw.trim().replace(/^the\s+/, '');
+      if (len(p) < 2) continue;
+      parts.add(p);
+      const w = p.split(/\s+/);
+      const last = w[w.length - 1];
+      if (w.length >= 2 && /^[a-zà-ÿ'-]+$/.test(last) && last.length >= 4 && !GENERIC.has(last)) parts.add(last);
+    }
+  }
+  return namesOf(null, [...parts]);
+}
 
 const len = s => Array.from(s).length;
 
@@ -135,13 +166,14 @@ export function namesOf(entryName, cardNames) {
 }
 
 // 一句過不過；過＝null，不過＝理由（--check 與抽樣用）
-export function whyNot(s, names, rules = RULES) {
+export function whyNot(s, names, rules = RULES, multi = null) {
   const n = len(s);
   if (n < MIN_LEN) return '太短';
   if (n > MAX_LEN) return '太長';
   if (!paired(s)) return '括號不成對';
   const low = s.toLowerCase();
   if (rules.anchor !== false && !(names.some(re => re.test(low)) || YEAR.test(s) || ALBUM.test(s))) return '沒有藝人名、年份或《》';
+  if (multi && !multi.some(re => re.test(low))) return '多人卡沒寫出其中一人的名字';
   const head = s.replace(/^[「『《〈（(\s]+/, '');
   if (START.test(head)) return '承接詞／時間詞／代名詞開頭';
   if (START_MORE.test(head) || LEAD_LINK.test(s)) return '承接（補充規則）';
@@ -156,8 +188,9 @@ export function quotesOf(key, entry, cardNames, rules = RULES) {
   if (!entry || !entry.intro || EXCLUDE.has(key)) return [];
   const intro = entry.intro;
   const names = namesOf(entry.name, cardNames);
+  const multi = partNamesOf(key, entry.name, cardNames);
   const skip = EXCLUDE_QUOTE.get(key) || [];
-  const ok = splitSentences(intro, rules.ends).filter(s => !whyNot(s, names, rules) && !skip.some(([head]) => s.startsWith(head)));
+  const ok = splitSentences(intro, rules.ends).filter(s => !whyNot(s, names, rules, multi) && !skip.some(([head]) => s.startsWith(head)));
   const pick = [];
   const yearS = ok.find(s => YEAR.test(s));
   if (yearS) pick.push(yearS);
@@ -279,7 +312,8 @@ export function checkLore({ file = LORE, intros = readIntros(), pool = readPool(
       for (const [head, why] of EXCLUDE_QUOTE.get(k) || []) if (qs.some(q => q.startsWith(head))) errors.push(`${k}：「${head}…」在單句排除表（${why}）卻還在 lore.json`);
       const e = intros.entries.get(k);
       const names = namesOf(e && e.name, pool.has(k) ? pool.get(k).names : []);
-      for (const q of qs) { const why = whyNot(q, names); if (why) errors.push(`${k}：「${q}」不守切句規則（${why}）`); }
+      const multi = partNamesOf(k, e && e.name, pool.has(k) ? pool.get(k).names : []);
+      for (const q of qs) { const why = whyNot(q, names, RULES, multi); if (why) errors.push(`${k}：「${q}」不守切句規則（${why}）`); }
       if (!pool.has(k)) notes.push(`${k}：卡池已經沒有這位的卡（重算會拿掉）`);
     }
     const stale = staleOf(lore, intros);

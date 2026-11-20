@@ -586,7 +586,9 @@ export function binsProblems(C, E) {
 //       熟客 6＋路人 4 彼此也不准完全相同。
 //   LD3 台詞 C.chat／C.ownerChat：id 全域唯一、who／cat／need 合法、空格白名單、防編造（手寫句沒有拉丁字母、阿拉伯數字、《》、兩個以上中文數字＋年、事實字、
 //       寫死流派名；「這箱＋聲音描述」要 need.at；樣板拿掉空格後沒有數字與拉丁字母、《》只包 {album}、{year}／{decade} 後 3 字內沒有盤／壓、
-//       評價字跟 need 的軸對得上、說「在哪一箱」的知識樣板要 onShelf）、每泡字數；每類句數 ≥ §5.7 第一階段表（還有 draft 佔位句時只印提醒，不驗句數）。
+//       評價字跟 need 的軸對得上、說「在哪一箱」的知識樣板要 onShelf）、每泡字數；每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗；draft 佔位只准第二階段的切磋類）；
+//       C.crowdFact（卡片空格怎麼填）：十類曲風中文＝主站 genre-tree.json 頂層 zh、卡池每張的 genres[0]／region／tune 都對得到、樣板只用表上有的空格、
+//       發行年下限、三軸字＝經典／冷門／硬蕊（填不出來＝null 由導演給、chatPick usable 判掉，不准預設字）。
 //       收藏通則字（首版、音質、最好…）的警告清單歸 lint-copy（棒 3b），這裡不重複。
 //   LD4 熟客牌組：7 張不重複、都是核心卡（有封面、試聽、藝人介紹）、非頂點卡、不跟主線客人／老闆四張／特價箱／王牌／其他熟客重複；
 //       主屬性 deckMain＝main、嚴格峰值落在主屬性 ≥4 張、≥4 張在他愛停那幾箱；taste／honesty／tune／off 合法。
@@ -762,7 +764,7 @@ export function crowdProblems(C, E) {
       const cats = isOwner ? CHAT_CATS.owner : who === 'passer' ? CHAT_CATS.passer : (expert ? CHAT_CATS.expert : CHAT_CATS.regular).concat(CHAT_CATS.enc);
       ok(cats.includes(l.cat), w + '：' + who + ' 的 cat 只准 ' + cats.join('／') + '，現在 ' + l.cat);
       ok(l.tag === '新', w + '：tag 要是「新」（全部進 LINES-REVIEW）');
-      ok(l.draft == null || l.draft === true, w + '：draft 只准 true（佔位）');
+      ok(l.draft == null || (l.draft === true && CHAT_CATS.enc.includes(l.cat)), w + '：draft 佔位只准第二階段的切磋類（' + CHAT_CATS.enc.join('／') + '）；第一階段的句子棒 3b 已搬齊');
       const texts = typeof l.text === 'string' ? [l.text] : l.text;
       if (!ok(Array.isArray(texts) && texts.length >= 1 && texts.length <= 3 && texts.every(t => typeof t === 'string' && t.trim()), w + '：text 要是字串或 1–3 個字串（一個＝一個泡泡）')) return;
       const k = (isOwner ? 'owner' : who) + '.' + l.cat;
@@ -825,14 +827,22 @@ export function crowdProblems(C, E) {
     };
     chat.forEach((l, k) => lineOk(l, 'LD3 chat[' + k + '] ' + (l && l.id), false));
     own.forEach((l, k) => lineOk(l, 'LD3 ownerChat[' + k + '] ' + (l && l.id), true));
-    // 每類句數（draft 佔位還在＝棒 3b 還沒搬句：只印提醒，見 crowdNotes）
-    if (![...chat, ...own].some(l => l && l.draft)) {
-      for (const id of REG_IDS) for (const [cat, want] of Object.entries(id === EXPERT_ID ? CHAT_TARGET.expert : CHAT_TARGET.regular))
-        ok((count[id + '.' + cat] | 0) >= want, 'LD3：' + id + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[id + '.' + cat] | 0));
-      for (const [who, T] of [['passer', CHAT_TARGET.passer], ['owner', CHAT_TARGET.owner]]) for (const [cat, want] of Object.entries(T))
-        ok((count[who + '.' + cat] | 0) >= want, 'LD3：' + who + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[who + '.' + cat] | 0));
-      ok((count['owner.met'] | 0) >= CHAT_TARGET.ownerMet, 'LD3：老闆「店裡的事」（chat＋need.met）要 ≥' + CHAT_TARGET.ownerMet + ' 句，現在 ' + (count['owner.met'] | 0));
+    // 每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗；hello 算泡泡數）。老闆講到的熟客要每位都有（need.met 的 id 涵蓋 6 位）
+    for (const id of REG_IDS) for (const [cat, want] of Object.entries(id === EXPERT_ID ? CHAT_TARGET.expert : CHAT_TARGET.regular))
+      ok((count[id + '.' + cat] | 0) >= want, 'LD3：' + id + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[id + '.' + cat] | 0));
+    for (const [who, T] of [['passer', CHAT_TARGET.passer], ['owner', CHAT_TARGET.owner]]) for (const [cat, want] of Object.entries(T))
+      ok((count[who + '.' + cat] | 0) >= want, 'LD3：' + who + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[who + '.' + cat] | 0));
+    ok((count['owner.met'] | 0) >= CHAT_TARGET.ownerMet, 'LD3：老闆「店裡的事」（chat＋need.met）要 ≥' + CHAT_TARGET.ownerMet + ' 句，現在 ' + (count['owner.met'] | 0));
+    const metWho = new Set(own.filter(l => l && l.need && l.need.met).flatMap(l => [].concat(l.need.met)));
+    ok(REG_IDS.every(id => metWho.has(id)), 'LD3：老闆「店裡的事」要每位熟客都有（need.met），缺 ' + REG_IDS.filter(id => !metWho.has(id)).join(' '));
+    // 老闆句講到某位熟客的名字，就要 need.met 那位（沒見過的人不能先被講）
+    for (const l of own) for (const t of [].concat(l && l.text || [])) for (const id of REG_IDS) {
+      const nm = (R[id] || {}).name;
+      if (nm && String(t).includes(nm)) ok(l.need && [].concat(l.need.met).includes(id), 'LD3 ownerChat ' + l.id + '：講到「' + nm + '」要 need.met 含 ' + id + '：' + t);
     }
+    // 樣板用到的卡片空格都要在 C.crowdFact 的填法表裡（填法見 content.js 註解）
+    const usedHoles = new Set(chat.filter(l => l && TEMPLATE_CATS.includes(l.cat)).flatMap(l => [].concat(l.text || []).flatMap(holesOf)).filter(h => HOLES_CARD.includes(h)));
+    crowdFactProblems(C, usedHoles).forEach(m => bad.push(m));
   }
 
   // ---- LD4 熟客牌組 ----
@@ -867,11 +877,53 @@ export function crowdProblems(C, E) {
   }
   return bad;
 }
-// 提醒（不擋）：佔位句還在＝句數沒驗
+// C.crowdFact（卡片空格怎麼填；§6.2，棒 3b）：導演照這張表組 ctx.card.vars，填不出來給 null（chatPick usable 判掉那句）。這裡驗表本身跟卡池、主站對得上
+const FACT_GENRES = ['rock', 'jazz', 'electronic', 'soul', 'hiphop', 'classical', 'folk', 'pop', 'world', 'blues'];
+export function crowdFactProblems(C, usedHoles) {
+  const bad = [], F = C.crowdFact;
+  const ok = (cond, msg) => { if (!cond) bad.push('LD3 crowdFact：' + msg); return !!cond; };
+  if (!ok(F && typeof F === 'object', 'C.crowdFact（卡片空格的填法表）沒有')) return bad;
+  ok(Number.isInteger(F.minYear) && F.minYear >= 1900 && F.minYear <= 1960, 'minYear（比它早的 year／decade 給 null）要是 1900–1960 的整數');
+  ok(Number.isInteger(F.axisMin) && F.axisMin >= 3 && F.axisMin <= 5, 'axisMin 要是 3–5');
+  ok(Number.isInteger(F.maxFilled) && F.maxFilled >= 28 && F.maxFilled <= 48, 'maxFilled（樣板填完的字數上限，§5.4 是 40）');
+  ok(JSON.stringify(F.axis) === JSON.stringify(ZH), 'axis 要剛好是 ' + JSON.stringify(ZH) + '（三軸只准經典／冷門／硬蕊）');
+  ok(F.region && JSON.stringify(Object.keys(F.region).sort()) === JSON.stringify(['jp', 'tw', 'zh']) && Object.values(F.region).every(v => typeof v === 'string' && v && !/[A-Za-z0-9]/.test(v)),
+    'region 只准 tw／jp／zh 三個中文名（xx 其他地區不填，§6.2）');
+  ok(F.genre && JSON.stringify(Object.keys(F.genre).sort()) === JSON.stringify(FACT_GENRES.slice().sort()), 'genre 要剛好是十類（' + FACT_GENRES.join(' ') + '）');
+  // 十類中文＝主站 genre-tree.json 頂層的 zh（主站改名要一起改）
+  let tree = null; try { tree = JSON.parse(fs.readFileSync(path.join(ROOT, 'genre-tree.json'), 'utf8')); } catch (_) {}
+  if (tree && Array.isArray(tree.genres)) for (const g of tree.genres) if (FACT_GENRES.includes(g.id)) ok(F.genre && F.genre[g.id] === g.zh, 'genre.' + g.id + '＝「' + (F.genre || {})[g.id] + '」，主站 genre-tree.json 是「' + g.zh + '」');
+  // 卡池每張都對得到（曲風、頻率）；地區只出現 tw／jp／zh／xx
+  const CARDS = C.cards || {}, names = (C.tunes || {}).names || {};
+  let gBad = 0, tBad = 0, rBad = 0;
+  for (const c of Object.values(CARDS)) {
+    if (!(F.genre || {})[((c.genres || [])[0]) || '']) gBad++;
+    if (!names[c.tune]) tBad++;
+    if (!['tw', 'jp', 'zh', 'xx'].includes(c.region)) rBad++;
+  }
+  ok(!gBad, gBad + ' 張卡的 genres[0] 在 genre 表找不到中文');
+  ok(!tBad, tBad + ' 張卡的 tune 在 C.tunes.names 找不到');
+  ok(!rBad, rBad + ' 張卡的 region 不是 tw／jp／zh／xx（表要補，或改成 null）');
+  for (const h of usedHoles || []) ok(HOLES_CARD.includes(h), '樣板用到 {' + h + '}，填法表沒有這個空格');
+  return bad;
+}
+// 提醒（不擋）：第二階段的切磋類佔位；C.crowdFact 每個空格在卡池填得到幾張（填不到＝那句對那張不出）
 export function crowdNotes(C) {
   const all = [].concat(Array.isArray(C.chat) ? C.chat : [], Array.isArray(C.ownerChat) ? C.ownerChat : []);
   const d = all.filter(l => l && l.draft).length;
-  return d ? ['活店台詞還有 ' + d + ' 句佔位（draft）：§5.7 第一階段句數（熟客每位 46、周姐 61、路人 30、老闆 30）等棒 3b 搬句後才驗'] : [];
+  const out = d ? ['切磋類還有 ' + d + ' 句佔位（draft；第二階段棒 3d 搬句）'] : [];
+  const F = C.crowdFact, cards = Object.values(C.cards || {});
+  if (F && cards.length) {
+    const n = { year: 0, region: 0, axis: 0 };
+    for (const c of cards) {
+      if (c.year >= F.minYear) n.year++;
+      if ((F.region || {})[c.region]) n.region++;
+      const ax = ATTRS.map(a => c[a]).sort((x, y) => y - x);
+      if (ax[0] >= F.axisMin && ax[0] > ax[1]) n.axis++;
+    }
+    out.push('卡片空格填得到的張數（全池 ' + cards.length + '）：{year}{decade} ' + n.year + '、{region} ' + n.region + '、{axis} ' + n.axis + '；{artist}{album}{genre}{tune} 全部；{bin} 只在那張真的在架上');
+  }
+  return out;
 }
 
 // ================================================================================================
