@@ -687,6 +687,7 @@
     const acc = nonNeg(fx.deepAcc) + hands, got = Math.floor(acc / per);
     return { carry, k, cell, per, hands, acc, got, left: acc - got * per };
   }
+  const deepKeep = (run, n) => { if (!run.fac) return; if (n > 0) run.fac.deepAcc = n | 0; else delete run.fac.deepAcc; };   // 存回 run.fac.deepAcc（0＝不留鍵）
   // 這一級（lv＝要選的那一級）有沒有本派格：每 levelEvery 級一次（Lv5、10、15…）；run 沒有 fac 或 levelEvery 0＝沒有
   function facDue(run, content, lv) {
     const F = facCfg(content); if (!F || !run || !run.fac) return false;
@@ -722,6 +723,7 @@
     const f = run.fac, picks = {};
     for (const id of Object.keys(f.picks && typeof f.picks === 'object' ? f.picks : {})) if (f.picks[id] > 0 && facPickDef(content, run.ace, id)) picks[id] = 1;
     run.fac = Object.assign({}, f, { picks, tal: facTalOf(content, run.ace, f.tal), trialNodes: f.trialNodes && typeof f.trialNodes === 'object' && !Array.isArray(f.trialNodes) ? f.trialNodes : {} });   // 棒三：tal 只留這派活的節點（facTalOf）
+    if ('deepAcc' in f) { if (Number.isInteger(f.deepAcc) && f.deepAcc > 0) run.fac.deepAcc = f.deepAcc; else delete run.fac.deepAcc; }   // 棒三審查：深耕跨場累積的手數（非負整數；0／壞值＝拿掉）
     const p = run.pending;
     if (p && p.type === 'level' && Array.isArray(p.offer)) p.offer = p.offer.filter(x => !(x && x.pick === 'fac') || (facPickDef(content, run.ace, x.id) && !(picks[x.id] > 0)));
     return JSON.stringify(run) !== before;
@@ -2567,7 +2569,7 @@
         if (duel.p.fac && duel.p.fx && duel.p.fx.deep > 0) {      // 第 D 波棒三派樹「深耕」（口碑／識破／破例）
           const D = deepNow(duel.p);                               //   carry＝跨場累積：記滿 per 手、打贏那場多回 1（棒三審查：一場最多 3 手，舊的「一場記到 2k 手」第 2、3 級永遠用不到）；沒 carry＝舊規則（這一場 min(級, ⌊手數÷per⌋)）
           deepHeal = D.got;
-          if (D.carry) run.fac.deepAcc = D.left;
+          if (D.carry) deepKeep(run, D.left);
           if (deepHeal > 0) { winHeal += deepHeal; if (S.fac && typeof S.fac === 'object') S.fac.deep = (S.fac.deep | 0) + deepHeal; }
         }
         run.hp = Math.min(run.maxHp, Math.max(1, duel.p.hp) + winHeal);   // 打贏回 3（不超過上限）
@@ -2615,7 +2617,7 @@
     } else {
       if (!prologue) run.streak = 0;
       run.hp = pleaUp ? Math.max(1, run.hpIn - pleaUp) : run.hpIn;   // 輸了不寫回：說情從開打前的聲望重打（棒三審查：說情重打那場加的「老客人的面子」不算進開打前，再說情才不會疊）
-      if (duel.p.fac && duel.p.fx && duel.p.fx.deepCarry && run.fac) run.fac.deepAcc = deepNow(duel.p).acc;   // 深耕跨場累積：輸的那場記到的手也算（下一場打贏才回）
+      if (duel.p.fac && duel.p.fx && duel.p.fx.deepCarry) deepKeep(run, deepNow(duel.p).acc);   // 深耕跨場累積：輸的那場記到的手也算（下一場打贏才回）
       if (prologue) run.pending = { type: 'retry', enemyId, free: true };
       else if (run.safety && pos === 1) { run.safety = false; wcStats(run).safety++; run.pending = { type: 'retry', enemyId, free: true, safety: true, pos }; }   // 第 C 波新手保底：第 1 位輸了免費重打一次（不吃說情）
       else if (run.retryLeft > 0) run.pending = { type: 'retry', enemyId, free: false, pos };
