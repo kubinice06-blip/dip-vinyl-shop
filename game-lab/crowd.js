@@ -571,7 +571,11 @@
   function nextMove(sl) {
     if (S.mode === 'calm') return calmMove(sl);
     var cur = sl.at && stopById(sl.at);
-    if (cur && cur.kind === 'pay') { if (doorLocked() || !leave(sl)) { if (waitRoute(sl, exitLegs(sl)) && !doorLocked()) leave(sl, null, true); } return; }
+    if (cur && cur.kind === 'pay') {
+      if (guarHold(sl)) { sl.stayLeft = 500; return; }        // 門事件保證還沒做到、他怎麼走都趕不上 10 秒：先在櫃檯多待一下（見 guarHold）
+      if (doorLocked() || !leave(sl)) { if (waitRoute(sl, exitLegs(sl)) && !doorLocked()) leave(sl, null, true); }
+      return;
+    }
     // 剛回到來客畫面、門事件還沒出現（guarantee 還沒做到）：停留到了、10 秒內走得到門的人就出門，不換箱
     //   （換箱要穿過後走道，會把推門進來、出門的路都擋住；build2 驗：一位換箱、一位在櫃檯前等路，第一次門事件拖到 15 秒）
     var G = S.guarantee;
@@ -597,8 +601,18 @@
       goStop(sl, pay, { keepHold: true, plan: pp });
       return;
     }
+    if (guarHold(sl)) { sl.stayLeft = 500; return; }          // 門事件保證還沒做到、他怎麼走都趕不上 10 秒：多翻一下（見 guarHold）
     // 門鎖著（不跟主線客人搶門、有人正在出門）或出門的路被人擋著：多翻一下再走
     if (doorLocked() || !leave(sl)) { if (waitRoute(sl, exitLegs(sl)) && !doorLocked()) leave(sl, null, true); }
+  }
+  // 門事件保證還沒做到（剛回到來客畫面）時，怎麼走都趕不上 10 秒期限的人（照實際走路時間算，不加餘裕）先別出門：他一走，門就鎖到他走出去（有人正在出門），
+  //   保證排不了別人進門或出門（棒 5b 驗，CPU 滿載重現：結帳的人第 5 秒門一開就走、櫃檯到門走 6 秒，第一次門事件 11 秒）。
+  //   只等保證試一次（G.tried：保證那一下什麼都做不成就放行，照原本的走法）；走得到的、路不通的照舊
+  function guarHold(sl) {
+    var G = S.guarantee;
+    if (!G || G.done || G.tried || S.mode !== 'live' || sl.frozen) return false;
+    var p = permit(sl, exitLegs(sl));
+    return !!p && etaMs(p.pts, num(cf('speed'), 30)) > S.screenAt + GUAR_DEADLINE - S.t;
   }
   // 能不能去結帳 → 走得過去的那趟路（{keys, pts}）| null
   function canPay(sl) {
@@ -988,6 +1002,7 @@
       }
     }
     G.due = S.t + 500;                                         // 什麼都做不了（外觀還在暖、沒空格、路被擋著）：半秒後再試
+    G.tried = true;                                            // guarHold 放行：保證做不成，等著出門的人照原本走
   }
   function tick() {
     if (S.mode === 'off' || !enabled()) return;
