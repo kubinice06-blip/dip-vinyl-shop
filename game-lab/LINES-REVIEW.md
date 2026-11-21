@@ -2353,7 +2353,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・encRewardShelfAny | 贏了挑一張唱片收進唱片櫃，或改拿 ${cash}。 | 本規格新寫 | `crowdUi.encRewardShelfAny` |
 | （畫面字）・encRewardBagAny | 贏了挑一張唱片收進包包，或改拿 ${cash}。 | 本規格新寫 | `crowdUi.encRewardBagAny` |
 | （畫面字）・encShort | 這盤是短局：雙方聲望都只拿三分之二出來打。 | 本規格新寫 | `crowdUi.encShort` |
-| （畫面字）・encHint | {name}在找你切磋：點他決定打不打，直接叫下一位就是改天。 | 本規格新寫 | `crowdUi.encHint` |
+| （畫面字）・encHint | {name}在找你切磋：點人決定打不打，直接叫下一位就是改天。 | 本規格新寫 | `crowdUi.encHint` |
 | （畫面字）・encTopSub | 短局 | 本規格新寫 | `crowdUi.encTopSub` |
 | （畫面字）・encBtnYes | 來一盤 | 本規格新寫 | `crowdUi.encBtnYes` |
 | （畫面字）・encBtnNo | 改天 | 本規格新寫 | `crowdUi.encBtnNo` |

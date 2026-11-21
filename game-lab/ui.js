@@ -4188,7 +4188,7 @@
       if ((sayTill() > Date.now() || qs('.lb-sheet.float', app())) && tries++ < 40) { later(go3, 500 * speed()); return; }   // 他還在講、面板開著：等
       save.seen.encHint = true; persist();
       stg('emote', 'o', 'excl', 1200);
-      stageSay('o', tx, 'owner', Math.max(3200, sayMs(tx)));
+      stageSay('o', tx, 'owner', sparHoldMs(tx) * speed());   // 停多久照聊天最後一句（§5.3；stageSay 會 ÷speed，sparHoldMs 已是真實毫秒）
     };
     later(go3, 800);
   }
