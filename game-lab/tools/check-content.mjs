@@ -385,14 +385,14 @@ function trialTierShape(C, E, ok) {
     if (x.curve) { ok(isObj(x.curve) && Object.keys(x.curve).every(k => CK.includes(k)), w + '.curve 的鍵要是 engine TRIAL.curve 有的'); for (const k of Object.keys(x.curve || {})) relOnly(x.curve[k], w + '.curve.' + k); }
     if (x.guestHp) { ok(Object.keys(x.guestHp).every(k => ['normal', 'elite', 'boss'].includes(k)), w + '.guestHp 只有 normal／elite／boss'); relOnly(x.guestHp, w + '.guestHp'); }
     if (x.guestHpSteps) ok(Array.isArray(x.guestHpSteps) && x.guestHpSteps.every(p => Array.isArray(p) && Number.isInteger(p[0]) && p[0] >= 1 && Number.isInteger(p[1]) && p[1] >= 1), w + '.guestHpSteps＝[[第幾位起, +n]…]');
-    if (x.add) ok(isObj(x.add) && Object.keys(x.add).every(k => k === 'healAdd') && Number.isInteger(x.add.healAdd) && x.add.healAdd < 0, w + '.add 只准 healAdd（負整數：打贏少回）');
+    if (x.add) ok(isObj(x.add) && Object.keys(x.add).length >= 1 && Object.keys(x.add).every(k => ['healAdd', 'healAddNormal'].includes(k) && Number.isInteger(x.add[k]) && x.add[k] < 0), w + '.add 只准 healAdd／healAddNormal（負整數：打贏少回；Normal＝只有一般客人，§14-5 備案）');
   });
-  ok(!('healAdd' in base), 'trialCfg(C, 0) 不能有 healAdd（第 0 階＝逐字現況）');
+  ok(!('healAdd' in base) && !('healAddNormal' in base), 'trialCfg(C, 0) 不能有 healAdd／healAddNormal（第 0 階＝逐字現況）');
   for (let k = 1; k <= L.length; k++) {
     const T = E.trialCfg(C, k), G = T.guestHp, K = T.curve, pr = v => Number.isFinite(v) && v >= 0 && v <= 1;
     ok(G.normal <= G.elite && G.normal <= G.boss, '第 ' + k + ' 階疊完 客人聲望 一般 ≤ 菁英、一般 ≤ 藏家（' + [G.normal, G.elite, G.boss].join('／') + '；第 4 階菁英先 +3、第 5 階藏家才 +3，中間那階菁英比藏家高是照定稿順序）');
     ok([K.hintMix.none.base, K.hintMix.none.max, K.hintMix.half.normal, K.hintMix.half.hard, K.hintMix.half.max, K.q.feintBase, K.q.feintMax].every(pr), '第 ' + k + ' 階疊完 機率要在 0–1');
-    ok(K.deck.buffEvery >= 1 && T.heal + (T.healAdd | 0) >= 1, '第 ' + k + ' 階疊完 加星間隔 ≥1、打贏至少回 1');
+    ok(K.deck.buffEvery >= 1 && T.heal + (T.healAdd | 0) + (T.healAddNormal | 0) >= 1, '第 ' + k + ' 階疊完 加星間隔 ≥1、打贏至少回 1');
   }
   const U = (C.trial || {}).ui || {};
   for (const k of ['tierRow', 'tierN', 'tierZero', 'tierNew', 'tierMore', 'tierTag', 'tierOpen', 'tierLadder', 'tierHow', 'tierReward']) ok(typeof U[k] === 'string' && U[k], 'trial.ui.' + k + '（試煉階級的畫面字）');
@@ -1481,6 +1481,9 @@ export function factionProblems(C, E) {
     treeShape(D, w, P, E, ok);
   }
   ok(F.treeStart == null || ['first', 'start'].includes(F.treeStart), 'factions.treeStart 要是 first（本派格先出）／start（開局就送，規格原意）');
+  const G = F.guest;   // 棒三：?fac=1 那一趟的客人（只在 run.fac）：[[第幾位起, +n], …] 位數遞增、n 1–3
+  if (G != null && ok(G && typeof G === 'object' && Object.keys(G).every(k => ['hpSteps', 'atkSteps'].includes(k)), 'factions.guest 只有 hpSteps／atkSteps'))
+    for (const k of ['hpSteps', 'atkSteps']) if (G[k] != null) ok(Array.isArray(G[k]) && G[k].every((x, i, a) => Array.isArray(x) && Number.isInteger(x[0]) && x[0] >= 2 && Number.isInteger(x[1]) && x[1] >= 1 && x[1] <= 3 && (!i || x[0] > a[i - 1][0])), 'factions.guest.' + k + '＝[[第幾位起（≥2、遞增）, +n（1–3）]…]');
   const TC = F.treeCost || {};
   ok(Array.isArray(TC.layer) && TC.layer.length === 3 && TC.layer.every(x => Number.isInteger(x) && x >= 1 && x <= 5) && Number.isInteger(TC.more) && TC.more >= 1 && TC.more <= 5, 'factions.treeCost：layer 三層各 1–5 點、more（深耕第 2 級起每級）1–5');
   const S = F.apexSwap;

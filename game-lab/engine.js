@@ -663,7 +663,7 @@
       }
     }
     // 第 D 波棒三派樹（src.fac.tal；空的＝一個鍵都不多）：深耕 deep／deepCell／deepPer（finishFight）、刺蝟 spine（他的品味少算幾點）、圈內人 tieHeal（outcome）、挑著學 pick2（levelOffer）。
-    //   start 節點在 newRun 已經記進 picks（上面那段照算）；pleaHp 在 choose retry 讀 run.fac.tal
+    //   start 節點：'start' 模式 newRun 已經記進 picks（上面那段照算）、'first' 模式在 facOffer 排前面；pleaHp 在 choose retry 讀 run.fac.tal
     const tal = src && src.fac && isPlain(src.fac.tal) ? src.fac.tal : null;
     if (tal) for (const id of Object.keys(tal)) {
       const N = treeNode(content, tier, id), k = nonNeg(tal[id]); if (!treeLive(N) || !k) continue;
@@ -716,9 +716,9 @@
 
   // ---------- 第 D 波棒三：派樹（?fac=1；scratchpad v5/wave-d SPEC-D §3.6–§3.7；契約 build3/CONTRACT.md）----------
   //   節點＝content.factions[派].tree：id＝路線＋層（a 本派／b 代價／c 收藏 × 1–3）；op：
-  //     start（開局就有那項本派選項 pick；地下串連照樣聲望上限 +3）｜pick2（挑著學：本派格一次出兩個挑一，次數不變）｜
-  //     deep（深耕：這場 cell〔honest 信對／caught 拆穿〕幾手，打贏多回 min(級, 手數)；max＝封頂級數）｜pleaHp（說情重打那場開打聲望 +n）｜
-  //     spine（刺蝟：每場第一次比星輸，他的品味不加）｜tieHeal（圈內人：同色平手回 n，每場一次）；soon（'later'｜'apex'｜'market'）＝之後開放（畫鎖、不能點、進局不算）。
+  //     start（那項本派選項 pick：treeStart 'first'＝本派格先出它、'start'＝開局就有）｜pick2（挑著學：本派格一次出兩個挑一，次數不變）｜
+  //     deep（深耕：這場 cell〔honest 信對／caught 拆穿〕幾手，打贏多回 min(級, ⌊手數÷per⌋)；max＝封頂級數）｜pleaHp（說情重打那場開打聲望 +n）｜
+  //     spine（刺蝟：每場第一次比星輸，他的品味少算 n；沒寫 n＝整個不加）｜tieHeal（圈內人：同色平手回 n，每場一次）；soon（'later'｜'apex'｜'market'）＝之後開放（畫鎖、不能點、進局不算）。
   //   價（content.factions.treeCost）：第 1／2／3 層 layer[0..2] 點，第 3 層另要熟練 Lv5（careerCfg.prof.auto tier3）；深耕第 2 級起每級 more 點。
   //     第 2 層要先點同路線第 1 層、第 3 層要先點第 2 層。派點＝熟練等級 − (pointFrom − 1)（Lv2 起每級 1 點）。兩趟之間免費重配。
   //   存檔 save.career.tree[派]＝{節點 id: 級}（careerFix 驗）；進局 newRun({fac:true, facTal: treeArgs(content, career, ace)}) → run.fac.tal（facTalOf 驗）
@@ -808,13 +808,13 @@
     for (const N of treeNodes(content, ace)) { if (!treeLive(N)) continue; const k = Math.min(treeMaxOf(N), nonNeg(tal[N.id])); if (k) out[N.id] = k; }
     return out;
   }
-  // 樹的 start 節點：開局就有那項本派選項（sign +1：記進 run.fac.picks；地下串連 maxHp 照加）；sign −1（換派前）：把地下串連加的聲望上限拿回來
   // 派樹 start 節點的意思（content.factions.treeStart；棒三裁定 'first'，build3/SIM.md）：'first'＝本派格先出這項（照節點順序排在雜湊前面；照樣佔那一級、不白送）；
   //   'start'＝規格原意「開局就有」（白送：一項≈一級屬性，全樹 F6 +90–124% → 不採，留著當對照；沒寫＝'start'）
   const treeMode = content => { const m = (facCfg(content) || {}).treeStart; return m === 'first' ? m : 'start'; };
   // 派樹 'first'：本派格先出的那幾項（start 節點的 pick，照節點順序）
   const treeFirst = (run, content) => { if (treeMode(content) !== 'first') return []; const tal = (run.fac && run.fac.tal) || {}, out = [];
     for (const N of treeNodes(content, run.ace)) if (treeLive(N) && N.op === 'start' && tal[N.id] > 0 && N.pick && !out.includes(N.pick)) out.push(N.pick); return out; };
+  // 'start' 模式的 start 節點：開局就有那項本派選項（sign +1：記進 run.fac.picks；地下串連 maxHp 照加）；sign −1（換派前）：把地下串連加的聲望上限拿回來。'first' 模式什麼都不做
   function facStart(run, content, sign) {
     const tal = (run.fac && run.fac.tal) || {};
     if (treeMode(content) === 'first') return;
@@ -1588,6 +1588,7 @@
     return Object.assign({}, t, { open, pick, best });
   }
   function trialPick(content, trial) { return trialFix(content, trial).pick; }
+  function trialMul(content, k) { return round6(1 + careerCfg(content).lexp.tierMul * nonNeg(k)); }   // 推門那列「樂歷 ×{m}」（＝careerGain 的 tierMul）
   function trialRecord(content, trial, sum) {
     const t = trialFix(content, trial), s = sum || {}, max = trialTiers(content).length;
     const tier = Math.min(max, nonNeg(s.tier)), reached = nonNeg(s.reached), from = s.from > 1 ? s.from | 0 : 1;
@@ -1607,7 +1608,8 @@
     const boss = cls === 'boss', P = K.planner, Q = K.q, A = K.atk, D = K.def;
     const planner = d <= P.easyTo ? 'easy' : d <= P.normalTo ? 'normal' : 'hard';
     const q = planner === 'easy' ? Q.easy : planner === 'normal' ? Q.normal : 1 - Math.min(Q.feintMax, Q.feintBase + Q.feintStep * Math.max(0, d - Q.feintFrom));
-    const atk = Math.min(A.cap, Math.round(A.rate * Math.max(0, d - A.lateFrom))) + Math.floor(Math.max(0, d - A.slopeFrom) / A.slopeEvery) + (boss ? A.boss : 0) + (A.add | 0);
+    const atk = Math.min(A.cap, Math.round(A.rate * Math.max(0, d - A.lateFrom))) + Math.floor(Math.max(0, d - A.slopeFrom) / A.slopeEvery) + (boss ? A.boss : 0) + (A.add | 0)
+      + (cls === 'elite' && A.elite ? A.elite | 0 : 0);   // 第 D 波棒三試煉「挑剔」：curve.atk.elite（菁英另加；TRIAL 沒這個鍵＝0）
     const def = Math.min(D.cap, Math.round(D.rate * Math.max(0, d - D.lateFrom))) + (boss ? D.boss : 0) + (D.add | 0);
     // 11-17 讀牌加難（C.trial.curve.read／hintMix；from 0 或沒給＝關）：hard（第 normalTo＋1 位起）照 hard＋step×(位−hardFrom) 封頂 max，之前 normal
     const R = K.read || {}, RH = R.rho || {}, M = K.hintMix || {}, HF = M.half || {}, NO = M.none || {}, hard0 = (P.normalTo | 0) + 1;
@@ -2074,7 +2076,7 @@
     if (o.talent || o.relicPick || o.goldAdd) applyTalent(run, content, o);
     if (o.fac && facCfg(content)) {                              // 第 D 波棒二三流派（?fac=1；畫面 createRun 傳 fac:true）：存在 run 裡、續玩照 run（R-F9）。trialNodes 給錄音室試錄（第 I 波 I-3a）
       run.fac = { picks: {}, tal: {}, trialNodes: {} };
-      const tal = facTalOf(content, ace, o.facTal);              // 第 D 波棒三派樹（o.facTal＝treeArgs）：start 節點＝開局就有那項本派選項
+      const tal = facTalOf(content, ace, o.facTal);              // 第 D 波棒三派樹（o.facTal＝treeArgs）：'start' 模式 start 節點開局就送；'first' 模式這裡不送（facOffer 排前面）
       if (Object.keys(tal).length) { run.fac.tal = tal; facStart(run, content, 1); }
     }
     if (from) {                                                  // 中繼點開局：快速選秀（撿盤 k 次二選一＋升級 m 次三選一）→ 特價箱 → 從第 N 位開打（pos 先留 1，draftDone 才跳）
@@ -2544,9 +2546,9 @@
       } else {
         S.beaten++;
         let winHeal = duel.apexMode && apexCfg(content) && Number.isInteger(apexCfg(content).winHeal) ? apexCfg(content).winHeal : T.heal;   // 頂點卡試做：回 winHeal
-        if (T.healAdd) winHeal = Math.max(0, winHeal + (T.healAdd | 0));   // 第 D 波棒三試煉階級「小氣」（add:{healAdd:−1}）：兩種模式都少回（SPEC-D §5.2、CRITIQUE 2.2）
+        if (T.healAdd || (T.healAddNormal && cls === 'normal')) winHeal = Math.max(0, winHeal + (T.healAdd | 0) + (cls === 'normal' ? T.healAddNormal | 0 : 0));   // 第 D 波棒三試煉階級「小氣」（add:{healAdd:−1}；§14-5 備案 healAddNormal＝只有一般客人）：兩種模式都少回（SPEC-D §5.2、CRITIQUE 2.2）
         if (duel.p.fac && duel.p.fx && duel.p.fx.lowHeal > 0 && duel.p.hp * 2 < duel.p.max) { lowHeal = duel.p.fx.lowHeal | 0; winHeal += lowHeal; }   // 第 D 波棒二 冷門「熟客」：聲望不到一半時打贏多回
-        if (duel.p.fac && duel.p.fx && duel.p.fx.deep > 0) {      // 第 D 波棒三派樹「深耕」（口碑／識破／破例）：這場信對（或拆穿）幾手，打贏多回 min(級, 手數)
+        if (duel.p.fac && duel.p.fx && duel.p.fx.deep > 0) {      // 第 D 波棒三派樹「深耕」（口碑／識破／破例）：這場信對（或拆穿）幾手，打贏多回 min(級, ⌊手數÷per⌋)
           deepHeal = Math.min(duel.p.fx.deep | 0, Math.floor((((duel.p.facN || {})[duel.p.fx.deepCell === 'caught' ? 'caught' : 'honest']) | 0) / Math.max(1, duel.p.fx.deepPer | 0)));
           if (deepHeal > 0) { winHeal += deepHeal; if (S.fac && typeof S.fac === 'object') S.fac.deep = (S.fac.deep | 0) + deepHeal; }
         }
@@ -4445,7 +4447,7 @@
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
     TREE_OPS, treeNodes, treeNode, treeCost, treePoints, treeWhy, treeBuy, treeSell, treeRespec, treeArgs, treeList, treeFixOne, facTalOf, treeLv3,
-    TRIAL_PASS, addMerge, trialTiers, trialFix, trialPick, trialRecord,
+    TRIAL_PASS, addMerge, trialTiers, trialFix, trialPick, trialMul, trialRecord,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;

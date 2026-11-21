@@ -4801,7 +4801,7 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
       if (i < 2) { const t = drive(PRE3(K), Object.assign({}, o, { fac: true, facTal: {} }), 30, fo); ok(H(t.run, t.seq) === FGOLD[i], 'facTal {} = no facTal, ' + o.seedKey); }
     });
     eq(EN.trialCfg(K, 0), EN.trialCfg(K), 'trialCfg(K, 0) = trialCfg(K)');
-    ok(!('healAdd' in EN.trialCfg(K, 0)) && !('healAdd' in EN.trialCfg(K, 7)), 'tier 0 and tier 7: no healAdd key');
+    ok(['healAdd', 'healAddNormal'].every(k => !(k in EN.trialCfg(K, 0)) && !(k in EN.trialCfg(K, 7))), 'tier 0 and tier 7: no healAdd／healAddNormal key');
     const r0 = EN.newRun(K, { seedKey: 't0', runNo: 2, ace: 'hall', prologue: false });
     ok(!('tier' in EN.runSummary(r0)) && r0.tier === 0, 'runSummary: no tier key at tier 0'); }
 
@@ -4815,8 +4815,9 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     eq([T(3).curve.hintMix.half.normal, T(3).curve.hintMix.half.hard, T(3).curve.hintMix.half.max], [r6(HF.normal + 0.1), r6(HF.hard + 0.1), r6(HF.max + 0.1)], 'tier 3 話少: half +10%');
     eq([T(4).guestHp, T(5).guestHp], [{ normal: B.guestHp.normal, elite: B.guestHp.elite + 3, boss: B.guestHp.boss }, { normal: B.guestHp.normal, elite: B.guestHp.elite + 3, boss: B.guestHp.boss + 3 }], 'tier 4／5: elite／boss +3 (numbers)');
     eq([T(6).curve.q.feintBase, T(6).curve.q.feintMax], [r6(Q.feintBase + 0.05), r6(Q.feintMax + 0.05)], 'tier 6 會唬: feint +5%');
-    eq([T(7).curve.def.add, T(9).curve.def.add, T(9).curve.atk.add, T(8).curve.atk.add], [B.curve.def.add + 1, B.curve.def.add + 1, B.curve.atk.add + 1, B.curve.atk.add], 'tier 7 def +1, tier 9 atk +1 (def still +1)');
-    eq([T(8).healAdd, T(10).healAdd], [-1, -1], 'tier 8 小氣: healAdd −1 (stays on above)');
+    eq([T(7).curve.def.add, T(9).curve.def.add, T(9).curve.atk.add, T(9).curve.atk.elite, T(9).curve.atk.boss, T(8).curve.atk.boss], [B.curve.def.add + 1, B.curve.def.add + 1, B.curve.atk.add, 1, B.curve.atk.boss + 1, B.curve.atk.boss], 'tier 7 def +1; tier 9 挑剔 = elite／boss atk +1 (§14-5 同理), def still +1');
+    eq([EN.trialGuest(K, 19, 'elite', 9).atk - EN.trialGuest(K, 19, 'elite', 8).atk, EN.trialGuest(K, 18, 'normal', 9).atk - EN.trialGuest(K, 18, 'normal', 8).atk], [1, 0], 'tier 9: elite +1, normal +0');
+    eq([T(8).healAddNormal, T(10).healAddNormal, 'healAdd' in T(10)], [-1, -1, false], 'tier 8 小氣: healAddNormal −1 (only normal guests; §14-5 n4000 −13.6 → 一般客人才少回), stays on above');
     eq(T(10).guestHp, { normal: B.guestHp.normal, elite: B.guestHp.elite + 6, boss: B.guestHp.boss + 6 }, 'tier 10 大場面: elite／boss = tier 4／5 +3 and +3 again (+6)');
     eq(T(11), T(10), 'tier past the end = all tiers');
     ok(!('name' in T(10)) && !('text' in T(10)), 'name／text are not merged into the config');
@@ -4844,8 +4845,16 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
       EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
       return EN.finishFight(run, K).heal;
     };
-    eq([winHealAt(0, false), winHealAt(7, false), winHealAt(8, false), winHealAt(10, false)], [3, 3, 2, 2], 'win heal: tier 0／7 = 3, tier 8／10 = 2');
-    eq([winHealAt(0, true), winHealAt(8, true)], [4, 3], 'apex mode: 4 → 3 at tier 8 (CRITIQUE 2.2)'); }
+    eq([winHealAt(0, false), winHealAt(7, false), winHealAt(8, false), winHealAt(10, false)], [3, 3, 2, 2], 'win heal (normal guest #2): tier 0／7 = 3, tier 8／10 = 2');
+    { const atPos = (tier, pos) => { const run = EN.newRun(K, { seedKey: 'hp' + pos, runNo: 2, ace: 'hall', prologue: false, tier }); EN.choose(run, K, EN.bargainPolicy(run, K)); EN.jumpTo(run, K, pos); run.hp = 4;
+        const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, K).heal; };
+      eq([atPos(8, 4), atPos(8, 5)], [3, 3], 'tier 8: elite／boss still heal 3'); }
+    eq([winHealAt(0, true), winHealAt(8, true)], [4, 3], 'apex mode: 4 → 3 at tier 8 (CRITIQUE 2.2)');
+    // §14-5 備案：add:{healAddNormal:−1}＝只有一般客人少回（菁英、藏家照舊）
+    const CN = Object.assign({}, K, { trial: Object.assign({}, K.trial, { tiers: [{ name: 'x', text: 'x', add: { healAddNormal: -1 } }] }) });
+    const at = (pos, apex) => { const run = EN.newRun(CN, { seedKey: 'hn' + pos, runNo: 2, ace: 'hall', prologue: false, tier: 1 }); EN.choose(run, CN, EN.bargainPolicy(run, CN)); EN.jumpTo(run, CN, pos); run.hp = 4;
+      const f = EN.startFight(run, CN, apex ? { apex: true } : {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, CN).heal; };
+    eq([at(2), at(4), at(5), at(2, true)], [2, 3, 3, 3], 'healAddNormal: normal 3→2, elite／boss 3, apex normal 4→3'); }
 
   // ---- 4 過關＝第 21 位（打倒第 20 位藏家）、開下一階、每階最遠（trialRecord／trialFix／trialPick；§5.1、§5.3、R-T1、R-T4） ----
   { const R = (t, s) => EN.trialRecord(K, t, s), t0 = { open: 0, pick: 0, best: {} }, MAX = K.trial.tiers.length;
@@ -4862,6 +4871,7 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     eq(EN.trialFix(K, null), { open: 0, pick: 0, best: {} }, 'trialFix(null)');
     eq(EN.trialFix(K, { open: 99, pick: 120, best: { 0: 33, 3: -1, 4: 2.7, 11: 9, x: 5 }, extra: 1 }), { open: MAX, pick: MAX, best: { 0: 33, 4: 2 }, extra: 1 }, 'trialFix: clamps open／pick, drops bad best keys, keeps others');
     eq([EN.trialPick(K, { open: 2, pick: 5 }), EN.trialPick(K, { open: 4, pick: 3 }), EN.trialPick(K, {})], [2, 3, 0], 'trialPick ∈ 0…open');
+    eq([EN.trialMul(K, 0), EN.trialMul(K, 3), EN.trialMul(K, 10), EN.careerGain(K, { reached: 11, from: 1, bestStreak: 0, lexp: {} }, { tier: 3, best: 20 }).tierMul], [1, 1.3, 2, 1.3], 'trialMul = careerGain tierMul (1 + 0.1k)');
     // 真的一趟：第 0 階打到第 21 位（jumpTo 20 → 打贏藏家 → 領完獎走到 21）
     const run = EN.newRun(K, { seedKey: 'tr21', runNo: 2, ace: 'pearl', prologue: false, tier: 2 }); EN.choose(run, K, EN.bargainPolicy(run, K)); EN.jumpTo(run, K, 20);
     const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); EN.finishFight(run, K);
