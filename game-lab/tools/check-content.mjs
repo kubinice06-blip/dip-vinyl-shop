@@ -621,12 +621,15 @@ export function binsProblems(C, E) {
 // ================================================================================================
 // 活店（SPEC-H §2、§5.7、§5.8、§6.2、§7.4、附錄 A；匯出 crowdProblems(C, E)、crowdNotes(C)）：LD1–LD4（LD5＝scriptProblems 的 r1 退役）
 //   LD1 名冊：C.regulars 6 位、名字、外觀合法、聲音、likes 是 dip.json crowd.stops 的 id、weight／encW 合法、行家只有周姐；C.crowd（附錄 A 的形狀、路人 4 套、
-//       熱點＝dip.json crowd.hot）、C.encounter（第一階段 on:false、reward shelf｜bag、不另設拿錢數字）、C.crowdUi 第一階段三句。
+//       熱點＝dip.json crowd.hot）、C.encounter（第一階段 on:false、reward shelf｜bag、不另設拿錢數字）、C.crowdUi 第一階段三句＋第二階段切磋 14 句（enc*：空格、唱片櫃／包包兩版）。
 //   LD2 撞造型：帽子分族比（挑戰者用到哪幾族由 C.enemies 的外觀算出來，皇冠族一律禁），上衣不准 apron／suit，不跟任何挑戰者、老闆、玩家預設外觀完全相同；
 //       熟客 6＋路人 4 彼此也不准完全相同。
 //   LD3 台詞 C.chat／C.ownerChat：id 全域唯一、who／cat／need 合法、空格白名單、防編造（手寫句沒有拉丁字母、阿拉伯數字、《》、兩個以上中文數字＋年、事實字、
 //       寫死流派名；「這箱＋聲音描述」要 need.at；樣板拿掉空格後沒有數字與拉丁字母、《》只包 {album}、{year}／{decade} 後 3 字內沒有盤／壓、
-//       評價字跟 need 的軸對得上、說「在哪一箱」的知識樣板要 onShelf）、每泡字數；每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗；draft 佔位只准第二階段的切磋類）；
+//       評價字跟 need 的軸對得上、說「在哪一箱」的知識樣板要 onShelf）、每泡字數；每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗）；
+//       第二階段切磋（棒 3d）：每位 嗆 encDare 3、接了 encYes 1、改天 encNo 2、沒理他 encLapse 1、他輸了 encLose 2、他贏了 encWin 2、作廢 encVoid 1（§5.7）；
+//       切磋類單泡、沒有空格、不帶 need（導演硬指定 ctx.cat；encView 把字原樣交給 duel.js，空格不會被填）；trip 的 need.encWon／encLost 只准 true、只用在熟客的 trip、
+//       一句只帶一個，五位各 encWon 1＋encLost 1、周姐合計 ≥1（§5.7「6＋2」「3＋1」），這兩類不算進第一階段 trip 的 6／3 句；draft 佔位不准了（棒 3d 已搬齊）。
 //       C.crowdFact（卡片空格怎麼填）：十類曲風中文＝主站 genre-tree.json 頂層 zh、卡池每張的 genres[0]／region／tune 都對得到、樣板只用表上有的空格、
 //       發行年下限、三軸字＝經典／冷門／硬蕊（填不出來＝null 由導演給、chatPick usable 判掉，不准預設字）。
 //       收藏通則字（首版、音質、最好…）的警告清單歸 lint-copy（棒 3b），這裡不重複。
@@ -648,11 +651,18 @@ const CHAT_CATS = {
   passer: ['chat'], owner: ['chat', 'trip']
 };
 // §5.7 第一階段句數（hello 算泡泡數，其他算句數）；老闆 chat 22＝閒聊 12（沒有 need.met）＋店裡的事 10（need.met）
+//   第二階段（棒 3d）：enc＝每位熟客（含周姐）切磋七類；tripEnc＝trip 的切磋輸贏（regular 各 1＋1；expert 兩類合計 ≥1，鍵 any）
 export const CHAT_TARGET = {
   regular: { hello: 2, again: 6, chat: 12, dig: 8, shelf: 4, trip: 6, close: 3, mem: 3, busy: 2 },
   expert: { hello: 2, again: 6, chat: 8, trip: 3, close: 3, mem: 3, busy: 2, loreIn: 10, loreOut: 4, fact: 20 },
-  passer: { chat: 30 }, owner: { chat: 22, trip: 8 }, ownerMet: 10
+  passer: { chat: 30 }, owner: { chat: 22, trip: 8 }, ownerMet: 10,
+  enc: { encDare: 3, encYes: 1, encNo: 2, encLapse: 1, encLose: 2, encWin: 2, encVoid: 1 },
+  tripEnc: { regular: { encWon: 1, encLost: 1 }, expert: { any: 1 } }
 };
+const SPAR_NEED = ['encWon', 'encLost'];   // trip 的切磋輸贏（第二階段）
+// C.crowdUi 第二階段切磋字：鍵 → 要有的空格（其他空格不准；邀請面板、對決頂欄、戰利品列、唱片櫃小籤）
+const SPAR_UI = { encTitle: ['name'], encRisk: [], encRewardShelf: ['name', 'cash'], encRewardBag: ['name', 'cash'], encBtnYes: [], encBtnNo: [], encTop: ['name'],
+  encSkip: ['cash'], encLootShelf: ['name'], encLootBag: ['name'], encShelfToast: [], encVoidNote: [], encWait: [], encSrc: [] };
 const TRIP_NEED = { posGte: 'int', posLte: 'int', streakGte: 'int', bagGte: 'int', hpHalf: 'bool', retried: 'bool', dare: 'bool', firstRun: 'bool', newFar: 'bool', encWon: 'bool', encLost: 'bool', ace: 'ace' };
 const HOLES_HAND = ['title', 'pos', 'last', 'far', 'name'];
 const HOLES_CARD = ['artist', 'album', 'year', 'decade', 'genre', 'bin', 'region', 'tune', 'axis'];
@@ -764,6 +774,12 @@ export function crowdProblems(C, E) {
   ok(Number.isInteger(EN.from) && EN.from >= 1 && EN.p > 0 && EN.p <= 1 && Number.isInteger(EN.perRound) && EN.perRound >= 1, 'LD1：C.encounter.from／p／perRound');
   ok(Array.isArray(EN.slots) && EN.slots.length && EN.slots.every(i => [0, 1, 2].includes(i)), 'LD1：C.encounter.slots 只准一般客人位 0–2（菁英、藏家位不出）');
   ok(EN.lapse > 0 && EN.short > 0 && EN.short <= 1, 'LD1：C.encounter.lapse／short');
+  // 下半（主線 11-21 裁定：牌組身分跟強度分開）：強度＝等效位數（pos＋熟客 off＋posAdd）的客人參數＋短局；熟客一律出自己那 7 張（engine sparDeck 只補星）
+  ok(!('posAdd' in EN) || (Number.isInteger(EN.posAdd) && EN.posAdd >= 0 && EN.posAdd <= 40), 'LD1：C.encounter.posAdd（切磋強度的全域位移）要是 0–40 的整數：' + EN.posAdd);
+  ok(EN.short >= 0.5 && EN.short <= 0.9, 'LD1：C.encounter.short（短局比例）要在 0.5–0.9（太短一兩手就打完、1＝不是短局）：' + EN.short);
+  ok(!('ace' in EN) || typeof EN.ace === 'boolean', 'LD1：C.encounter.ace（試調旗標：照一般客人機率帶王牌）要是 true／false');
+  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'ace'];
+  ok(Object.keys(EN).every(k => ENC_KEYS.includes(k)), 'LD1：C.encounter 有不認得的鍵（engine sparCfg 不讀）：' + Object.keys(EN).filter(k => !ENC_KEYS.includes(k)).join(' '));
   ok(!('cash' in EN) && !('skipCash' in EN) && ((C.waveC || {}).loot || {}).skipCash > 0, 'LD1：切磋不收改拿的錢＝C.waveC.loot.skipCash（不另設）');
   // C.crowdUi 第一階段三句
   const CU = C.crowdUi || {};
@@ -771,6 +787,17 @@ export function crowdProblems(C, E) {
   ok(/熟客/.test(CU.intro || '') && /周姐/.test(CU.expertIntro || '') && /\{artist\}/.test(CU.src || ''), 'LD1：crowdUi.intro 講「熟客」、expertIntro 講周姐、src 有 {artist}');
   ok(typeof CU.passer === 'string' && CU.passer, 'LD1：C.crowdUi.passer（路人泡泡第一行）');
   ok(['新', '店主', '原句'].includes(C.crowdUiTag), 'LD1：crowdUiTag');
+  // C.crowdUi 第二階段切磋 14 句（棒 3d）：齊全、空格剛好是表上那幾個、唱片櫃／包包兩版各講各的去處
+  for (const [k, want] of Object.entries(SPAR_UI)) {
+    const v = CU[k], w = 'LD1：C.crowdUi.' + k + '（切磋）';
+    if (!ok(typeof v === 'string' && v.trim(), w + ' 要是字串')) continue;
+    const hs = holesOf(v);
+    ok(hs.length === want.length && want.every(h => hs.includes(h)), w + ' 的空格要剛好是 ' + (want.map(h => '{' + h + '}').join('') || '（沒有）') + '，現在 ' + (hs.map(h => '{' + h + '}').join('') || '（沒有）') + '：' + v);
+    if (want.includes('cash')) ok(/\$\{cash\}/.test(v), w + '：錢寫成「${cash}」（「$」字面＋{cash}，照「${n}」的寫法）：' + v);
+  }
+  ok(/唱片櫃/.test(CU.encRewardShelf || '') && /唱片櫃/.test(CU.encLootShelf || '') && /包包/.test(CU.encRewardBag || '') && /包包/.test(CU.encLootBag || ''),
+    'LD1：crowdUi 切磋獎勵字：Shelf 版講唱片櫃、Bag 版講包包（C.encounter.reward 兩種模式）');
+  ok(Object.keys(CU).filter(k => /^enc[A-Z]/.test(k)).every(k => k in SPAR_UI), 'LD1：C.crowdUi 有不認得的切磋鍵：' + Object.keys(CU).filter(k => /^enc[A-Z]/.test(k) && !(k in SPAR_UI)).join(' '));
 
   // ---- LD2 撞造型 ----
   const specOf = x => typeof x === 'string' ? Ch.npc(x) : x && typeof x === 'object' && ('head' in x || 'shirt' in x) ? Ch.fromDipChar(x) : Ch.normalize(x || {});
@@ -804,10 +831,17 @@ export function crowdProblems(C, E) {
       const cats = isOwner ? CHAT_CATS.owner : who === 'passer' ? CHAT_CATS.passer : (expert ? CHAT_CATS.expert : CHAT_CATS.regular).concat(CHAT_CATS.enc);
       ok(cats.includes(l.cat), w + '：' + who + ' 的 cat 只准 ' + cats.join('／') + '，現在 ' + l.cat);
       ok(l.tag === '新', w + '：tag 要是「新」（全部進 LINES-REVIEW）');
-      ok(l.draft == null || (l.draft === true && CHAT_CATS.enc.includes(l.cat)), w + '：draft 佔位只准第二階段的切磋類（' + CHAT_CATS.enc.join('／') + '）；第一階段的句子棒 3b 已搬齊');
+      ok(l.draft == null, w + '：draft 佔位不准了（第一階段棒 3b、第二階段切磋棒 3d 都已搬齊）');
       const texts = typeof l.text === 'string' ? [l.text] : l.text;
       if (!ok(Array.isArray(texts) && texts.length >= 1 && texts.length <= 3 && texts.every(t => typeof t === 'string' && t.trim()), w + '：text 要是字串或 1–3 個字串（一個＝一個泡泡）')) return;
-      const k = (isOwner ? 'owner' : who) + '.' + l.cat;
+      const encCat = CHAT_CATS.enc.includes(l.cat);
+      const sparTrip = l.cat === 'trip' && l.need && typeof l.need === 'object' && SPAR_NEED.filter(x => x in l.need);   // trip 的切磋輸贏
+      if (encCat) {   // 切磋七類：導演硬指定 ctx.cat、encView 把字原樣給 duel.js（line／intro／lose／win）
+        ok(typeof l.text === 'string', w + '：切磋句要單泡（text 是一個字串；對決畫面的 line／intro／lose／win 是單一字串）');
+        ok(l.need == null, w + '：切磋句不帶 need（導演硬指定分類；need 不成立就挑不到句子）');
+        ok(!holesOf(texts.join('')).length, w + '：切磋句不准有空格（encView 原樣交給 duel.js，不會填）：' + texts.join('／'));
+      }
+      const k = (isOwner ? 'owner' : who) + '.' + l.cat + (sparTrip && sparTrip.length ? '.' + sparTrip.join('+') : '');
       count[k] = (count[k] || 0) + (l.cat === 'hello' ? texts.length : 1);
       if (isOwner && l.cat === 'chat' && l.need && l.need.met) count['owner.met'] = (count['owner.met'] || 0) + 1;
       // need
@@ -824,6 +858,12 @@ export function crowdProblems(C, E) {
           if (nk === 'met') {
             ok(isOwner, w + '：need.met 只用在老闆句（見過某位熟客）');
             ok(nv === true || (typeof nv === 'string' && REG_IDS.includes(nv)) || (Array.isArray(nv) && nv.length && nv.every(x => REG_IDS.includes(x))), w + '：need.met 要是熟客 id、id 陣列或 true');
+            continue;
+          }
+          if (SPAR_NEED.includes(nk)) {   // 第二階段：trip 的切磋輸贏
+            ok(!isOwner && regular && l.cat === 'trip', w + '：need.' + nk + ' 只用在熟客的 trip（切磋輸贏）');
+            ok(nv === true, w + '：need.' + nk + ' 只准 true（句子寫成「切磋贏了／輸了」）');
+            ok(!(SPAR_NEED.every(x => x in need)), w + '：need.encWon／encLost 一句只帶一個');
             continue;
           }
           const tk = TRIP_NEED[nk];
@@ -869,7 +909,16 @@ export function crowdProblems(C, E) {
     own.forEach((l, k) => lineOk(l, 'LD3 ownerChat[' + k + '] ' + (l && l.id), true));
     // 每類句數 ≥ §5.7 第一階段表（棒 3b 搬句後一律驗；hello 算泡泡數）。老闆講到的熟客要每位都有（need.met 的 id 涵蓋 6 位）
     for (const id of REG_IDS) for (const [cat, want] of Object.entries(id === EXPERT_ID ? CHAT_TARGET.expert : CHAT_TARGET.regular))
-      ok((count[id + '.' + cat] | 0) >= want, 'LD3：' + id + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[id + '.' + cat] | 0));
+      ok((count[id + '.' + cat] | 0) >= want, 'LD3：' + id + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段' + (cat === 'trip' ? '；不算切磋輸贏那兩類' : '') + '），現在 ' + (count[id + '.' + cat] | 0));
+    // 第二階段切磋（§5.7：每位 12 句＝嗆 3、接了 1、改天 2、沒理他 1、他輸了 2、他贏了 2、作廢 1；trip 切磋輸贏 五位 1＋1、周姐 1）
+    for (const id of REG_IDS) {
+      for (const [cat, want] of Object.entries(CHAT_TARGET.enc))
+        ok((count[id + '.' + cat] | 0) >= want, 'LD3：' + id + ' 的切磋 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第二階段），現在 ' + (count[id + '.' + cat] | 0));
+      const won = count[id + '.trip.encWon'] | 0, lost = count[id + '.trip.encLost'] | 0;
+      if (id === EXPERT_ID) ok(won + lost >= CHAT_TARGET.tripEnc.expert.any, 'LD3：' + id + ' 的 trip 切磋輸贏（need.encWon／encLost）合計要 ≥' + CHAT_TARGET.tripEnc.expert.any + ' 句（§5.7「3＋1」），現在 ' + (won + lost));
+      else for (const [nk, want] of Object.entries(CHAT_TARGET.tripEnc.regular))
+        ok((count[id + '.trip.' + nk] | 0) >= want, 'LD3：' + id + ' 的 trip need.' + nk + ' 要 ≥' + want + ' 句（§5.7「6＋2」），現在 ' + (count[id + '.trip.' + nk] | 0));
+    }
     for (const [who, T] of [['passer', CHAT_TARGET.passer], ['owner', CHAT_TARGET.owner]]) for (const [cat, want] of Object.entries(T))
       ok((count[who + '.' + cat] | 0) >= want, 'LD3：' + who + ' 的 ' + cat + ' 要 ≥' + want + ' 句（§5.7 第一階段），現在 ' + (count[who + '.' + cat] | 0));
     ok((count['owner.met'] | 0) >= CHAT_TARGET.ownerMet, 'LD3：老闆「店裡的事」（chat＋need.met）要 ≥' + CHAT_TARGET.ownerMet + ' 句，現在 ' + (count['owner.met'] | 0));

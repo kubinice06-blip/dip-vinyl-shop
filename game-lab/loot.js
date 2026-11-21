@@ -7,6 +7,9 @@
  *   chestFlow(o)      // 打贏藏家：pending reward kind 'chest'。o = { p, out, finish(res) }；out：{ dareCash, money, pity }
  *   redraw()          // 配件滿了按「算了」回來：同一列照目前翻開的樣子重畫
  *   flipAll()         // 還蓋著的直接翻開（自動玩、測試）
+ *   （切磋，活店第二階段 SPEC-H §7.3-8、§7.5）lootFlow(o) 的 o.enc＝{ mode:'shelf'|'bag', title, skip（不收的鈕字「改拿 $200」）, take(id)→Promise<res|null>, skipFn()→res, owned(id) }：
+ *                     同一個戰利品列面板，收／不收改走 host 的 encTake／encSkip（ui.js）；字幕「對方似乎掉落了什麼」、錢袋與經驗兩格、地上那張、第一次那句、自動玩都不做；
+ *                     唱片櫃模式不畫「↑」（不進包包）、不判「包包裡有了」、收下飛向唱片櫃；包包模式照主線（飛向包包）。面板 class 多一個 enc
  *   state() → { kind, flipped:[bool…], open, busy } | null   // 測試用
  * }
  *
@@ -72,8 +75,8 @@
     var gain = 0;
     try { gain = +H.bagGain(id) || 0; } catch (_) {}
     // 包包裡已經有這張（舊存檔的列、引擎退路沒擋到）：鈕寫「包包裡有了」、按不下去（不讓「收這張」變成死鈕）
-    var r = H.run(), have = !!r && Array.isArray(r.bag) && r.bag.indexOf(id) >= 0;
-    var up = !have && gain > 0.005 ? '<span class="lt-up" role="img" aria-label="' + esc(U('upHint')) + '" title="' + esc(U('upHint')) + '">↑</span>' : '';
+    var r = H.run(), shelf = !!(S.enc && S.enc.mode !== 'bag'), have = !shelf && !!r && Array.isArray(r.bag) && r.bag.indexOf(id) >= 0;   // 切磋唱片櫃模式：不進包包（不判包包裡有了、不畫 ↑）
+    var up = !have && !shelf && gain > 0.005 ? '<span class="lt-up" role="img" aria-label="' + esc(U('upHint')) + '" title="' + esc(U('upHint')) + '">↑</span>' : '';
     return '<span class="lt-face">' + H.coverHTML(c) + up + '</span>' +
       '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + H.starsHTML(c) +
       (have ? '<button type="button" class="lb-pickb key" disabled>' + esc((C().shopUi && C().shopUi.owned) || '包包裡有了') + '</button>'
@@ -115,7 +118,7 @@
   // 全部翻開之後：第一次出戰利品列，老闆提醒一次（save.seen.firstLoot；真的說了才記）。
   //   錢、經驗那兩條（頂上，約 3 秒）收掉才說：泡泡在店景右上，會被錢那條蓋住
   function whenAllUp() {
-    if (!S || S.kind !== 'loot' || S.saidFirst) return;
+    if (!S || S.kind !== 'loot' || S.saidFirst || S.enc) return;   // 切磋那列不講第一次那句（那句講的是主線的「不收」）
     S.saidFirst = true;
     //   減少動態也一樣等（錢那條照樣在 1.35 秒出、停約 2 秒；而且一開始鏡頭還沒定，量泡泡出不出界會量錯）
     var wait = S.out ? Math.max(0, (S.t0 || 0) + ms('fly') + Math.round(3000 / A().k) - Date.now()) : 0;
@@ -145,7 +148,7 @@
   }
   function footHTML() {
     var p = S.p, relics = (p.relics || []).filter(function (id) { return (C().relics || {})[id]; });
-    var skipTx = esc(U('skip', { n: mt(p.skipCash || 0) }));
+    var skipTx = esc(S.enc ? S.enc.skip : U('skip', { n: mt(p.skipCash || 0) }));   // 切磋：「改拿 $200」
     if (p.relicDone || !relics.length) return '<div class="foot"><button type="button" class="lb-btn wide lt-skip" data-a="skip">' + skipTx + '</button></div>';
     var skip = '<button type="button" class="lb-btn lt-skip" data-a="skip">' + skipTx + '</button>';
     var cap = S.kind === 'chest' ? U('chestRelic') : U('orRelic');
@@ -161,8 +164,8 @@
       (pity ? '<span class="pt">' + esc(U('chestPity')) + '</span>' : '') + '<span class="cap">' + esc(U('chestOpen')) + '</span></button>';
   }
   function sheetHTML() {
-    var p = S.p, r = H.run(), title = S.kind === 'chest' ? U('chestTitle') : U('lootTitle');
-    var bag = r && Array.isArray(r.bag) ? H.bagText(r.bag.length) : '';
+    var p = S.p, r = H.run(), title = S.enc ? S.enc.title : S.kind === 'chest' ? U('chestTitle') : U('lootTitle');
+    var bag = r && Array.isArray(r.bag) && !(S.enc && S.enc.mode !== 'bag') ? H.bagText(r.bag.length) : '';   // 切磋唱片櫃模式：包包不變，不寫張數
     var cards = p.cards && p.cards.length;
     return '<div class="hd"><h3>' + esc(title) + '</h3><span class="sub">' + esc(bag) + '</span></div>' +
       (cards ? '<div class="lt-area' + (S.kind === 'chest' && !S.open ? ' shut' : '') + '">' + gridHTML() + (S.kind === 'chest' && !S.open ? crateHTML() : '') + '</div>' +
@@ -170,7 +173,7 @@
       footHTML();
   }
   function render() {
-    var s = H.sheet(sheetHTML(), 'reward lt-sheet ' + S.kind);
+    var s = H.sheet(sheetHTML(), 'reward lt-sheet ' + S.kind + (S.enc ? ' enc' : ''));
     S.el = s;
     s.addEventListener('click', onClick);
     H.fit(s);
@@ -226,8 +229,8 @@
     S.busy = true; sfx('pocket');
     var tile = btn && btn.closest('.lt-c'), cv = tile && qs('.lb-cv', tile), c = card(id);
     shelveAll();
-    try { if (cv && c) H.fly(c, cv, H.bagRect()); } catch (e) { console.error(e); }
-    H.take(id).then(function (res) {
+    try { if (cv && c) H.fly(c, cv, S.enc && S.enc.mode !== 'bag' ? H.wallRect() : H.bagRect()); } catch (e) { console.error(e); }   // 切磋唱片櫃模式：飛向唱片櫃
+    (S.enc ? S.enc.take(id) : H.take(id)).then(function (res) {
       if (!res) { S.busy = false; return; }
       flushMoney(0);
       done(res);
@@ -247,7 +250,7 @@
     S.busy = true;
     flipAll(true);
     var n = shelveAll();
-    var res = H.skip();
+    var res = S.enc ? S.enc.skipFn() : H.skip();
     var cash = 0; ((res && res.effects) || []).forEach(function (f) { if (f.cash) cash += f.cash; });
     if (n > 0) {
       sfx('select');
@@ -305,7 +308,7 @@
     o = o || {};
     var p = o.p, out = o.out || null, a = A();
     S = { kind: 'loot', p: p, out: out, finish: o.finish || function () {}, el: null, busy: false, armed: false, popped: false, open: true, t0: Date.now(),
-      flipped: (p.cards || []).map(function () { return !out || a.rm; }), money: [] };
+      flipped: (p.cards || []).map(function () { return !out || a.rm; }), money: [], enc: o.enc || null };
     // 錢：先酬勞（起點扣掉紅包那筆，CRITIQUE 1.9b）、再紅包那一段
     if (out) {
       var m = out.money | 0, pk = out.packetCash | 0;
@@ -314,11 +317,11 @@
     }
     if (!out || a.rm) { S.popped = true; S.armed = true; }
     render();
-    if (p.cards && p.cards.length) try { H.floor(p.cards[0]); } catch (e) { console.error(e); }
-    policyHook();
+    if (p.cards && p.cards.length && !S.enc) try { H.floor(p.cards[0]); } catch (e) { console.error(e); }   // 切磋：他還站在對戰台，地上不放那張
+    if (!S.enc) policyHook();                        // 切磋不給自動玩（UI.auto 不開邀請）
     if (!out) { if (allFlipped()) whenAllUp(); return; }
-    var fx = fxLayer();
-    caption(fx);
+    var fx = S.enc ? null : fxLayer();               // 切磋：沒有字幕「對方似乎掉落了什麼」、沒有錢袋與經驗那兩格（只有三張蓋牌跳出來）
+    if (fx) caption(fx);
     var its = drops(fx, out);
     // 0.3 秒：錢袋、音符、紅包、三張蓋牌一樣一樣跳出來（每樣一聲啵，一次比一次高）
     after(function () {
@@ -333,7 +336,7 @@
     }, a.rm ? 0 : ms('pop'));
     after(function () { S.armed = true; }, a.rm ? 0 : ms('arm'));
     // 1.35 秒：錢、經驗飛進頂上那條
-    after(function () {
+    if (fx) after(function () {
       var bag = qs('.lt-it.bag', fx), note = qs('.lt-it.note', fx), pkEl = qs('.lt-it.pk', fx);
       flyUp(bag, function () { var s0 = S.money[0]; if (s0 && !s0.shown && !s0.packet) { s0.shown = true; H.cashRise(s0.from, s0.to); } });
       if (note) after(function () { flyUp(note, function () { try { H.xpRise(out.xp); } catch (e) { console.error(e); } }); }, 120);
@@ -405,7 +408,7 @@
     if (S.kind === 'chest' && !S.open) S.open = true;
     for (var i = 0; i < S.flipped.length; i++) S.flipped[i] = true;
     render();
-    policyHook();
+    if (!S.enc) policyHook();
   }
 
   W.DipLabLoot = {

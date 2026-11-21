@@ -4847,12 +4847,17 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       const who = r.spar.who, j0 = J(r);
       const st = EN.encStart(r, K, so), d = st.duel;
       if (J(r) !== j0 || r.duel !== null) { bad++; info.push([nm, 'run changed']); }
-      const posEff = Math.max(1, r.pos + REG[who].enc.off), view = EN.encView(K, who);
+      // 等效位數＝pos＋熟客自己的 off＋content.encounter.posAdd（下半）；短局比例照 content 讀（不寫死 0.6）
+      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + XS.posAdd), view = EN.encView(K, who);
+      if (EN.sparPos(r, K, who) !== posEff || EN.sparPos(r, K, who, true) !== Math.max(1, r.pos + REG[who].enc.off)) { bad++; info.push([nm, 'sparPos']); }
       const e0 = EN.enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
-      const td = EN.trialDeck(view, who, posEff, { seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, cls: 'normal', tier: r.tier, main: REG[who].enc.main });
-      const g = EN.trialGuest(K, posEff, 'normal', r.tier), c6 = x => Math.ceil(Math.round(0.6 * x * 1e6) / 1e6);
-      if (!(d.e.taste === e0.taste && d.e.q === e0.q && d.e.atk === e0.atk && d.e.def === e0.def && d.e.planner === e0.planner && d.e.main === REG[who].enc.main)) { bad++; info.push([nm, 'enemy', d.e.taste, e0.taste, d.e.q, e0.q]); }
-      if (J(d.e.deckIds) !== J(td.deck.map(c => c.id)) || d.e.deckSize !== REG[who].enc.deck.length) { bad++; info.push([nm, 'deck']); }
+      const sd = EN.sparDeck(view, who, posEff, { main: REG[who].enc.main, tier: r.tier });
+      const g = EN.trialGuest(K, posEff, 'normal', r.tier), c6 = x => Math.ceil(Math.round(XS.short * x * 1e6) / 1e6);
+      if (!(d.e.taste === e0.taste && d.e.q === e0.q && d.e.atk === e0.atk && d.e.def === e0.def && d.e.planner === e0.planner && d.e.main === REG[who].enc.main
+        && d.e.mercyP === e0.mercyP && d.e.rho === e0.rho && d.e.half === e0.half && d.e.none === e0.none && d.e.hit === e0.hit)) { bad++; info.push([nm, 'enemy', d.e.taste, e0.taste, d.e.q, e0.q]); }
+      // 牌組＝他自己的 7 張（不換牌）、星數＝sparDeck 補過的（公開牌單 deckPub 的星數一張一張對）
+      if (J(d.e.deckIds) !== J(REG[who].enc.deck) || d.e.deckSize !== REG[who].enc.deck.length
+        || J(d.e.deckPub.map(x => [x.id, x.c, x.o, x.h])) !== J(sd.map(c => [c.id, c.c, c.o, c.h]))) { bad++; info.push([nm, 'deck']); }
       if (!(d.p.hp === d.p.max && d.p.hp === c6(r.maxHp) && d.e.hp === d.e.max && d.e.max === c6(g.hp))) { bad++; info.push([nm, 'hp', d.p.hp, d.p.max, r.maxHp, d.e.hp, d.e.max, g.hp]); }
       if (d.e.hkey !== ((EN.fnv1a32(r.seedKey + '#' + r.runNo + '#enc#' + r.pos + '#' + who) >>> 0) || 1)) { bad++; info.push([nm, 'seed']); }
       if (d.p.enc || d.stats.enc || st.enemyId !== who || !d.spar || d.spar.pos !== r.pos || d.e.name !== REG[who].name || d.e.title !== null) { bad++; info.push([nm, 'misc']); }
@@ -4865,13 +4870,77 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       if (!m.p.enc && EN.encCfg(K)) { bad++; info.push([nm, 'main has encore']); }
       n++;
     }
-    ok(bad === 0 && n === 24, 'LE4 encStart: run untouched, short game hp＝max＝ceil(.6×), enemy＝enemyDef at posEff, deck＝his 7 via trialDeck, no ace, hash seed, no encore, player side＝startFight (plain／fac／apex／fac+apex)', info.slice(0, 4)); }
+    ok(bad === 0 && n === 24, 'LE4 encStart: run untouched, short game hp＝max＝ceil(short×), enemy＝enemyDef at posEff (pos＋off＋posAdd), deck＝his own 7 (sparDeck stars), no ace, hash seed, no encore, player side＝startFight (plain／fac／apex／fac+apex)', info.slice(0, 4)); }
+  // 熟客出的 7 張＝他自己的 7 張（主線 11-21 裁定：牌組身分跟強度分開；不管 posAdd 多大都不換牌，只照等效位數補星）
+  { let bad = 0, n = 0, filled = 0, same = 0; const info = [];
+    const Kc = C0.trial.curve.deck, cap = Kc.buffCap, flAt = d => Math.min(Kc.floorMax, Kc.floorBase + Math.floor(Kc.floorRate * d)), bAt = d => Math.floor(Math.max(0, d - Kc.buffFrom) / Kc.buffEvery);
+    // 一張牌補得對不對：g＝content 原卡、c＝sparDeck 出的、d＝等效位數、M＝主屬性
+    const cardOk = (g, c, d, M) => {
+      const fl = flAt(d), b = bAt(d), m = EN.star(g, M) === EN.peak(g) ? M : EN.topAttr(g);
+      const up = EN.ATTRS.every(a => c[a] >= g[a] && c[a] <= Math.max(cap, g[a]));                        // 只補星、每軸封頂
+      const pk = c[m] === EN.peak(c);                                                                      // 加星軸（主屬性／峰值）還是峰值
+      const p1 = EN.power(g) - g[m] + Math.min(cap, Math.max(g[m], g[m] + b)), pw = EN.power(c) === Math.max(fl, p1);   // 加星後還不到下限＝剛好補到下限（不多補）
+      const pl = (c[m] !== g[m]) === !!c.plus && (!c.plus || (c.plus.attr === m && c.plus.n === c[m] - g[m]));
+      const fi = EN.ATTRS.every(a => a === m || (c[a] - g[a]) === ((c.fill && c.fill[a]) | 0));
+      const bf = c[m] >= Math.min(cap, g[m] + b);
+      const A = EN.ATTRS.filter(a => a !== m), lo = A.every(a => !((c.fill && c.fill[a]) > 0) || A.every(z => z === a || c[a] <= c[z] + 1) && (c[m] === cap || !c.fill));   // 補的是最低那軸、m 軸先補滿
+      return up && pk && pw && pl && fi && bf && lo && c.id === g.id;
+    };
+    // 直接掃 sparDeck：每位熟客 × 等效位數 1–70（含 m 軸還沒滿就不到下限的那幾格，例：大頭 2／3／1 在第 8 位）
+    let direct = 0, mFirst = 0;
+    for (const who of RIDS) for (let d = 1; d <= 70; d++) {
+      const M = REG[who].enc.main, dk = EN.sparDeck(CE, who, d, { main: M });
+      if (J(dk.map(c => c.id)) !== J(REG[who].enc.deck)) bad++;
+      dk.forEach((c, k) => { const g = C0.cards[REG[who].enc.deck[k]], m = EN.star(g, M) === EN.peak(g) ? M : EN.topAttr(g);
+        if (!cardOk(g, c, d, M)) { bad++; if (info.length < 4) info.push(['direct', who, d, [g.c, g.o, g.h], [c.c, c.o, c.h], c.plus, c.fill]); }
+        if (c.plus && c.plus.n > bAt(d)) mFirst++;                                                         // 補下限時 m 軸多補（超過加星 b）的
+        direct++; });
+    }
+    for (const pa of [0, 8, 20, 40]) {
+      const K = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: pa }) });
+      for (let s = 0; s < (QUICK ? 6 : 16); s++) {
+        const r = fightRun('own7-' + pa + '-' + s, K, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, K, 6 + (s * 3) % 40);
+        for (const who of RIDS) {
+          const R = REG[who], posEff = EN.sparPos(r, K, who), e = EN.encDef(r, K, who), M = R.enc.main;
+          n++;
+          if (J(e.deck.map(c => c.id)) !== J(R.enc.deck)) { bad++; info.push([pa, who, 'ids']); continue; }
+          e.deck.forEach((c, k) => {
+            const g = C0.cards[R.enc.deck[k]];
+            if (!cardOk(g, c, posEff, M)) { bad++; if (info.length < 4) info.push([pa, who, posEff, [g.c, g.o, g.h], [c.c, c.o, c.h], c.plus, c.fill]); }
+            if (c.fill) filled++;
+            if (c === g || C0.cards[g.id].c !== g.c) bad++;                                                  // 自己的一份；content.cards 沒被改
+          });
+          // 下限還沒到他的牌的位數：跟 trialDeck（釘住他的 7 張＝只加星）逐張相同
+          if (R.enc.deck.every(id => EN.power(C0.cards[id]) >= flAt(posEff))) {
+            const td = EN.trialDeck(EN.encView(K, who), who, posEff, { seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, cls: 'normal', tier: r.tier, main: M, deckIds: R.enc.deck });
+            if (J(td.deck.map(c => [c.id, c.c, c.o, c.h])) !== J(e.deck.map(c => [c.id, c.c, c.o, c.h]))) { bad++; info.push([pa, who, 'vs trialDeck']); } else same++;
+          }
+        }
+      }
+    }
+    // 打贏的戰利品列（唱片櫃什麼都沒有）＝他這場的 7 張裡挑 3 張（沒有補牌）
+    let loot = 0;
+    for (const pa of [0, 20, 40]) {
+      const K = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: pa }) });
+      for (let s = 0; s < 6; s++) { const r = findOffer('own7l-' + pa + '-' + s + '-', K); cycle(r, K, WIN, null, { owned: () => false });
+        const L = r.spar.loot; if (!L || L.src.includes('fill') || !L.cards.every(id => REG[r.spar.who].enc.deck.includes(id))) bad++; loot++; }
+    }
+    // 補牌池不跟強度旋鈕走：他 7 張都擁有（全補牌）時，posAdd 0 跟 40 的戰利品列逐張相同（補牌池＝wcTh(pos＋off)）
+    let fills = 0;
+    for (let s = 0; s < 6; s++) {
+      const K0 = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: 0 }) }), K4 = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: 40 }) });
+      const r = findOffer('own7f-' + s + '-', K0), r4 = JSON.parse(J(r));
+      const who = EN.encOffer(r, K0).who, all = id => REG[who].enc.deck.includes(id);
+      cycle(r, K0, WIN, null, { owned: all }); cycle(r4, K4, WIN, null, { owned: all });
+      if (!r.spar.loot || J(r.spar.loot) !== J(r4.spar.loot) || r.spar.loot.src.some(x => x !== 'fill')) bad++; else fills++;
+    }
+    ok(bad === 0 && n > 100 && filled > 50 && same > 5 && loot === 18 && fills === 6 && direct === RIDS.length * 70 * 7 && mFirst > 0, "regular's deck＝his own 7 (any posAdd 0／8／20／40): ids unchanged, stars only go up (buff on main／peak axis, then fill to the floor: that axis first, then the lowest), ≤cap, peak kept, plus／fill = the diff; below the floor = trialDeck pinned; loot from his 7", { bad, n, filled, same, direct, mFirst, info }); }
   // encounter.ace（試調旗標，出貨 false＝規格「不帶王牌」）：true＝照一般客人在 posEff 的機率帶王牌（＝enemyDef 給的那張）
   { const CEA = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { ace: true }) }); let bad = 0, withAce = 0;
     for (let s = 0; s < 40; s++) {
       const r = fightRun('ace-' + s, CEA, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, CEA, 11 + (s % 6) * 5 + (s % 3));
       for (const who of RIDS) {
-        const posEff = Math.max(1, r.pos + REG[who].enc.off), e0 = EN.enemyDef(EN.encView(CEA, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+        const posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparCfg(CEA).posAdd), e0 = EN.enemyDef(EN.encView(CEA, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
         const a1 = EN.encDef(r, CEA, who).ace, a0 = EN.encDef(r, CE, who).ace;
         if ((a1 && a1.id) !== (e0.ace && e0.ace.id) || a0 !== null) bad++;
         if (a1) withAce++;
@@ -5015,6 +5084,17 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     const KS = Object.assign({}, CE, { chat: (C0.chat || []).filter(x => !/^enc/.test(x.cat)).concat(stub) }), vs = EN.encView(KS, 'akai');
     eq(vs.lines.akai, { line: '來一盤？', intro: '好，來。', lose: ['可惡。', '下次。'], win: ['承讓。'] }, 'LE10 lines: encDare／encYes／encLose／encWin → line／intro／lose／win');
     eq(vs.enemies.akai.line, '來一盤？', 'LE10 enemies[who].line = encDare');
+    // 真的台詞（棒 3d 交件，下半）：line＝<who>-encDare-03、intro＝encYes-01、lose＝[encLose-02]、win＝[encWin-01]（嗆那兩句、「唱片你挑」那句、安慰那句留給來客畫面）
+    { const txt = id => { const x = C0.chat.find(y => y.id === id); return x ? [].concat(x.text).join('') : null; }; let b2 = 0;
+      for (const who of RIDS) {
+        const v = EN.encView(CE, who).lines[who], want = { line: txt(who + '-encDare-03'), intro: txt(who + '-encYes-01'), lose: [txt(who + '-encLose-02')], win: [txt(who + '-encWin-01')] };
+        if (Object.values(want).some(x => x == null || (Array.isArray(x) && x[0] == null)) || J(v) !== J(want) || EN.encView(CE, who).enemies[who].line !== want.line) b2++;
+      }
+      // 指定的那句不在（id 改了）＝退回舊對應（那一類第一句／全部）
+      const K2 = Object.assign({}, CE, { chat: C0.chat.map(x => x.id === 'akai-encLose-02' ? Object.assign({}, x, { id: 'akai-encLose-09' }) : x) });
+      const all = C0.chat.filter(x => x.who === 'akai' && x.cat === 'encLose').map(x => x.text);
+      if (J(EN.encView(K2, 'akai').lines.akai.lose) !== J(all)) b2++;
+      ok(b2 === 0, 'LE10 real lines: line＝encDare-03, intro＝encYes-01, lose＝[encLose-02], win＝[encWin-01]; pinned id missing → old mapping', b2); }
     ok(bad === 0, 'LE10 encView: shallow copy, enemies／lines get the regular (avatar = look, not e0), C untouched, non-regular → null', bad); }
 
   // ---- LE12 主線亂數不動：同一個 run 兩份，一份接每個邀請打完收進唱片櫃、一份都改天 → 之後 20 位每場開打種子、每次配件獎勵逐筆相同 ----

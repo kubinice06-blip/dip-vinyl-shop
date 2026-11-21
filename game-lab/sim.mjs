@@ -765,7 +765,7 @@ function sparStatsOf(SP, A, recs, n) {
 }
 function printSpar(rows) {
   const X = EN.sparCfg(C), f1 = x => x == null ? '—' : x.toFixed(1), f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en');
-  console.log(`\n### 切磋（活店第二階段；--enc on、--enc-policy ${SPAR_POL}、${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式；第 ${X.from} 位起、每輪 ${X.p}、一般客人位、短局 ${X.short}；每趟平均）\n`);
+  console.log(`\n### 切磋（活店第二階段；--enc on、--enc-policy ${SPAR_POL}、${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式；第 ${X.from} 位起、每輪 ${X.p}、一般客人位、短局 ${X.short}、等效位數＋${X.posAdd}（熟客出自己 7 張、只補星）${X.ace ? '、帶王牌' : ''}；每趟平均）\n`);
   console.log('| 策略 | 流程 | 邀請／趟（每 10 位，第 6 位起） | 接受率 | 打 | 勝率 | 一場幾手（KO／比聲望條） | 收牌／拿錢（每趟） | 錢／趟（占總收入） | 被讀／手（主線同位數；比） | 切磋手數÷主線手數 | 第 1–5 位／菁英藏家／一輪兩次 | 連玩 20 趟收進唱片櫃（熟客牌） |');
   console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
   for (const x of rows) { const s = x.spar; if (!s) continue;
