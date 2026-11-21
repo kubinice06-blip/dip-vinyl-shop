@@ -251,6 +251,11 @@ for (const pol of POLS) {
   if (pf) fs.appendFileSync(pf, `${pol} ${((Date.now() - t0) / 1000).toFixed(0)}s\n`);
 }
 
+// 棒三：沒給 --ctl 也印 G3（第 10／30 趟平均 ÷ 第 1 趟、第 30 趟中位；--fac／--tierpol 調法用）
+if (!arg('ctl', null) && NR >= 30) for (const pol of ['thoughtful', 'humanRead']) { const X = report.pols[pol]; if (!X) continue;
+  const a = X[9].mean / X[0].mean, b = X[29].mean / X[0].mean, ok3 = a <= 1.4 + 1e-9 && b <= 1.8 + 1e-9 && X[29].median <= 70;
+  console.log(`\nG3 ${ok3 ? 'ok  ' : 'FAIL'} ${pol}：第 1 趟 ${X[0].mean.toFixed(1)}、第 10 趟 ${X[9].mean.toFixed(1)}（×${a.toFixed(2)}）、第 30 趟 ${X[29].mean.toFixed(1)}（×${b.toFixed(2)}）、中位 ${X[29].median}（上限 ×1.4／×1.8／70）`); }
+
 // ---------------- G 門檻（--ctl 對照組 JSON；SPEC-D §8.2） ----------------
 const CTL = arg('ctl', null) ? JSON.parse(fs.readFileSync(arg('ctl'), 'utf8')) : null;
 if (CTL) {

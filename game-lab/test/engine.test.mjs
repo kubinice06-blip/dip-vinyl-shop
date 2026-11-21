@@ -4926,6 +4926,23 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     eq(EN.runPolicy(r, K), { type: 'level', pick: 'fac', id: 'h_leech' }, 'runPolicy: two fac slots → by content priority (吸血 first)');
     const ch = EN.choose(r, K, { type: 'level', pick: 'fac', id: 'h_first' }); ok(ch.ok && r.fac.picks.h_first === 1 && !r.fac.picks.h_leech, 'choose the second fac slot');
     ok(!('fac' in EN.newRun(K, { seedKey: 'tal', runNo: 2, ace: 'hall', prologue: false, facTal: { a1: 1 } })), 'facTal without fac → nothing');
+    // treeOccupy（派樹開局給的本派選項佔一級）：之後本派格那一級只出 {pick:'fac', id, owed:true}（不加屬性）；照節點順序；欠完才回到一般本派格；選秀照舊不出
+    { const KO = Object.assign({}, K, { factions: Object.assign({}, F, { treeOccupy: true }) }), KX = Object.assign({}, K, { factions: Object.assign({}, F, { treeOccupy: false }) });
+      const no = (c, ace, tal) => EN.newRun(c, { seedKey: 'owe', runNo: 2, ace, prologue: false, fac: true, facTal: tal });
+      let q = no(KO, 'pearl', { a1: 1, b1: 1, b2: 1 }); eq([q.fac.owe, q.fac.picks], [['p_bench', 'p_remember', 'p_hp'], { p_bench: 1, p_remember: 1, p_hp: 1 }], 'owe in node order');
+      ok(!('owe' in no(KX, 'pearl', { a1: 1 }).fac) && !('owe' in no(KO, 'pearl', { a2: 1, a3: 1 }).fac), 'no owe without treeOccupy／without start nodes');
+      const lv = (run, c, n) => { run.level = n; run.levelUps = 1; run.pending = null; const o = EN.levelOffer(run, c); run.pending = { type: 'level', offer: o }; return o; };
+      eq(lv(q, KO, 5), [{ pick: 'fac', id: 'p_bench', owed: true }], 'Lv5: only the owed slot');
+      const atk0 = q.atk, def0 = q.def, mx0 = q.maxHp, ch1 = EN.choose(q, KO, EN.runPolicy(q, KO));
+      eq([ch1.ok, ch1.effects[0], q.fac.owe, q.atk - atk0, q.def - def0, q.maxHp - mx0, q.picks.slice(-1)], [true, { level: 'fac', id: 'p_bench', n: 0, owed: true }, ['p_remember', 'p_hp'], 0, 0, 0, ['fac:p_bench']], 'owed level: no attribute, owe shifts');
+      eq(lv(q, KO, 6).filter(x => x.pick === 'fac'), [], 'Lv6: normal (no fac slot)');
+      lv(q, KO, 10); EN.choose(q, KO, EN.runPolicy(q, KO)); lv(q, KO, 15); EN.choose(q, KO, EN.runPolicy(q, KO)); ok(!('owe' in q.fac), 'owe paid off after three fac levels');
+      eq(lv(q, KO, 20).filter(x => x.pick === 'fac').length, 1, 'Lv20: normal fac slot again');
+      eq(EN.choose(q, KO, { type: 'level', pick: 'fac', id: 'p_bench' }).ok, false, 'Lv20: an already-learned pick is not offered → rejected');
+      q = no(KO, 'hall', { a1: 1 }); eq(EN.levelOffer(q, KO, { draft: true }).filter(x => x.pick === 'fac').length, 0, 'draft: no owed slot');
+      q = no(KO, 'hall', { a1: 1, b1: 1 }); q.fac.owe = ['h_old', 'zz', 'h_old', 'h_first']; EN.fixFac(q, KO); eq(q.fac.owe, ['h_old'], 'fixFac: owe = picks we have, unique');
+      q = no(KO, 'hall', { a1: 1 }); const off = lv(q, KO, 5); EN.fixFac(q, KO); eq(q.pending.offer, off, 'fixFac keeps the owed offer');
+      q = no(KO, 'pearl', { b1: 1, b2: 1 }); EN.switchAce(q, KO, 'hall', { facTal: { a1: 1 } }); eq(q.fac.owe, ['h_eye'], 'switchAce: owe from the new tree only'); }
     r = nr('hall', { a1: 1 }); r.fac.tal = { a1: 1, zz: 2, c1: 1, a3: 7 }; eq([EN.fixFac(r, K), r.fac.tal], [true, { a1: 1, a3: 3 }], 'fixFac: tal → live nodes, clamped');
     r = nr('hall', { a1: 1, a3: 2 }); eq(EN.fixFac(r, K), false, 'fixFac: good tal untouched'); }
 
