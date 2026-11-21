@@ -705,7 +705,8 @@
     for (const id of Object.keys(f.picks && typeof f.picks === 'object' ? f.picks : {})) if (f.picks[id] > 0 && facPickDef(content, run.ace, id)) picks[id] = 1;
     run.fac = Object.assign({}, f, { picks, tal: facTalOf(content, run.ace, f.tal), trialNodes: f.trialNodes && typeof f.trialNodes === 'object' && !Array.isArray(f.trialNodes) ? f.trialNodes : {} });   // 棒三：tal 只留這派活的節點（facTalOf）
     const p = run.pending;
-    if (p && p.type === 'level' && Array.isArray(p.offer)) p.offer = p.offer.filter(x => !(x && x.pick === 'fac') || (facPickDef(content, run.ace, x.id) && !(picks[x.id] > 0)));
+    if (Array.isArray(f.owe)) { const owe = f.owe.filter((id, k, a) => picks[id] > 0 && a.indexOf(id) === k); if (owe.length) run.fac.owe = owe; else delete run.fac.owe; } else delete run.fac.owe;   // 棒三 treeOccupy
+    if (p && p.type === 'level' && Array.isArray(p.offer)) p.offer = p.offer.filter(x => !(x && x.pick === 'fac') || (facPickDef(content, run.ace, x.id) && (x.owed ? (run.fac.owe || [])[0] === x.id : !(picks[x.id] > 0))));
     return JSON.stringify(run) !== before;
   }
 
@@ -805,11 +806,12 @@
   }
   // 樹的 start 節點：開局就有那項本派選項（sign +1：記進 run.fac.picks；地下串連 maxHp 照加）；sign −1（換派前）：把地下串連加的聲望上限拿回來
   function facStart(run, content, sign) {
-    const tal = (run.fac && run.fac.tal) || {};
+    const tal = (run.fac && run.fac.tal) || {}, F0 = facCfg(content);
+    if (sign < 0 && run.fac) delete run.fac.owe;
     for (const id of Object.keys(tal)) {
       const N = treeNode(content, run.ace, id); if (!treeLive(N) || N.op !== 'start') continue;
       const P = facPickDef(content, run.ace, N.pick); if (!P) continue;
-      if (sign > 0) run.fac.picks[P.id] = 1;
+      if (sign > 0) { run.fac.picks[P.id] = 1; if (F0 && F0.treeOccupy) (run.fac.owe || (run.fac.owe = [])).push(P.id); }   // treeOccupy：開局給的也佔一級（之後本派格那一級直接記成它，見 levelOffer）
       if (P.op === 'maxHp') { const n = (P.n | 0) * (sign > 0 ? 1 : -1); run.maxHp += n; run.hp = Math.max(1, run.hp + n); run.hpIn = run.hp; }
     }
   }
@@ -2622,6 +2624,8 @@
     const out = ['atk', 'def', 'hp'].map(pick => ({ pick, n: T.picks[pick] | 0 }));
     if (run.fac && !(o && o.draft)) {
       const F = facCfg(content), lv = (run.level | 0) - (run.levelUps | 0) + 1;
+      const owe = run.fac.owe && run.fac.owe.length ? run.fac.owe[0] : null;   // 棒三 treeOccupy：派樹開局給的本派選項佔這一級（只有這一格、不加屬性）
+      if (F && F.occupy !== false && facDue(run, content, lv) && owe) return [{ pick: 'fac', id: owe, owed: true }];
       if (F && F.occupy !== false && facDue(run, content, lv)) out.push(...facOffer(run, content, lv).slice(0, facTalHas(run, content, 'pick2') ? 2 : 1));   // 棒三派樹「挑著學」：出兩個
     }
     return out;
@@ -3605,11 +3609,17 @@
         if (!o) return fail('notOffered');
         if (o.pick === 'fac') {                                  // 第 D 波棒二本派選項（第 4 格；佔那一級＝不加屬性，聲望上限 +1 已在升級時加）：{type:'level', pick:'fac', id}
           const fd = run.fac && facPickDef(content, run.ace, o.id);
+          if (o.owed && fd && run.fac.owe && run.fac.owe[0] === o.id) {   // 棒三 treeOccupy：派樹開局給過了，這一級記成它（不加屬性）
+            run.fac.owe.shift(); if (!run.fac.owe.length) delete run.fac.owe;
+            run.picks.push('fac:' + o.id); run.levelUps = Math.max(0, run.levelUps - 1);
+            effects.push({ level: 'fac', id: o.id, n: 0, owed: true });
+          } else {
           if (!fd || run.fac.picks[o.id] > 0) return fail('notOffered');
           run.fac.picks[o.id] = 1;
           if (fd.op === 'maxHp') { run.maxHp += fd.n | 0; run.hp += fd.n | 0; }   // 冷門「地下串連」：聲望上限 +3（現有聲望也 +3）
           run.picks.push('fac:' + o.id); run.levelUps = Math.max(0, run.levelUps - 1);
           effects.push({ level: 'fac', id: o.id, n: fd.op === 'maxHp' ? fd.n | 0 : 0 });
+          }
         } else {
           const n = o.n | 0;
           if (o.pick === 'atk') run.atk += n; else if (o.pick === 'def') run.def += n; else { run.maxHp += n; run.hp += n; }
