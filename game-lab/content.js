@@ -484,7 +484,14 @@
       tierOpen: '開了第 {k} 階：{text}',                               // 主鈕之後的過場卡（trialRecord 回 opened）
       tierLadder: '試煉階級：開到第 {k} 階',                           // 樂歷頁解鎖區最後一行
       tierHow: '打倒第 20 位藏家開下一階',                              //   接在後面（括號由畫面加）；推門那列沒開的下一階也用
-      tierReward: '樂歷 ×{m}'                                          // 推門那列：這一階的樂歷倍率（1＋0.1k；{m} 畫面代入，例 1.3）
+      tierReward: '樂歷 ×{m}',                                         // 推門那列：這一階的樂歷倍率（1＋0.1k；{m} 畫面代入，例 1.3）
+      // 棒三介面補的字（ui.js 推門那列、試煉階級面板、過場卡）
+      tierShort: '試煉',                                               // 推門那列的小標（≤600px 跟樂歷第二行併成同一列時用短的）
+      tierDn: '少一階', tierUp: '多一階', tierAll: '點開看每一階',         // ‹ › 與中間那顆的讀屏字
+      tierZeroSub: '往右選一階，就多一條條件、樂歷變多。',              // 推門那列選第 0 階時下面那行（>600px）
+      tierStack: '選第 3 階＝前 3 條都算；越高樂歷越多。',             // 試煉階級面板的說明（每一階疊在前一階上）
+      tierPassed: '過關', tierFar: '最遠第 {n} 位', tierNone: '還沒打過', tierPicked: '已選',   // 面板每一階的紀錄（過關＝打倒了那一階的第 20 位藏家）
+      tierOpenSub: '推門前在標題選第幾階；這一階樂歷 ×{m}。'              // 過場卡「開了第 k 階」下面那行
     },
     // 升級三選一（固定 品味→底氣→聲望上限；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
     //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）。sub（自動加的聲望上限）：升到 Lv2 那次不出（engine levelHpAt 0）
@@ -1844,6 +1851,7 @@
       srcLexp: '樂歷抽到的',                                        // 唱片櫃來源（src 'lexp'）
       // 第 D 波棒一介面補的字（ui.js）：樂歷頁的鈕與小標、結算明細、過場卡、備用說情那顆
       buy: '加一級', sell: '退一級', noPoints: '天賦點不夠', profTitle: '熟練度', unlockTitle: '流派與攤位',
+      tabTalent: '天賦',                                            // 第 D 波棒三：?fac=1 樂歷頁分頁「天賦｜派樹」的第一個
       lastLine: '上一趟 樂歷 +{n}', nextRun: '改了下一趟開局才算',
       gainTitle: '這一趟的樂歷 +{n}', toPage: '看樂歷頁 ›', cardNext: '繼續', cardTap: '點一下看下一張',
       pleaMenu: '▶ 再一場（用掉備用說情）',                         // 備用說情那次的第一顆（C.trial.ui.retryMenu[0] 寫「這一輪只有一次」，這次不是）
@@ -2758,7 +2766,10 @@
       treeOffNote: '關掉樂歷時，派樹也不算。',                           // 關樂歷那一趟（talentArgs／treeArgs 都回 {}）
       treeStart: '本派格先出：{list}',                                   // 本派說明、我的狀態：派樹排在前面的本派選項（treeStart 'first'）
       deepWin: '{name}：多回 {n} 聲望',                                   // 打贏那場深耕多回的（finishFight 回 deep {name, n}）
-      pleaHp: '老客人的面子：聲望 +{n}'                                   // 說情重打那場開打（choose retry 的 effect pleaHp）
+      pleaHp: '老客人的面子：聲望 +{n}',                                  // 說情重打那場開打（choose retry 的 effect pleaHp）
+      treeFirstHow: '升級的本派格先出它；學了照樣佔那一級。',             // 派樹 start 格點開的說明（treeStart 'first'：不白送）
+      treeDep: '先退「{name}」',                                          // 退一級被擋（同路線下一層還點著）
+      deepNow: '{name}：這場記了 {h} 手，打贏多回 {n}'                     // 本派說明：深耕這場記到幾手（view().fac.deep）
     }
   };
   C.factionsTag = '新';

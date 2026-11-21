@@ -6,7 +6,7 @@
 > 第二波（B2）：v4 劇本（開頭旁白 I1–I2、序章 O2–O21、收尾 E1–E11：原版 25 句逐字＋店主改的句子；原本的 O1 11-10 改成開頭旁白）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（B2 第 2 階段）、經濟介面的字（B3，shopUi）已進來（C 整合）。
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 
-統計：原句 45、拍板 0、店主 71、新 1698（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1713（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -934,6 +934,17 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・tierLadder | 試煉階級：開到第 {k} 階 | 本規格新寫 | `trial.ui.tierLadder` |
 | （畫面字）・tierHow | 打倒第 20 位藏家開下一階 | 本規格新寫 | `trial.ui.tierHow` |
 | （畫面字）・tierReward | 樂歷 ×{m} | 本規格新寫 | `trial.ui.tierReward` |
+| （畫面字）・tierShort | 試煉 | 本規格新寫 | `trial.ui.tierShort` |
+| （畫面字）・tierDn | 少一階 | 本規格新寫 | `trial.ui.tierDn` |
+| （畫面字）・tierUp | 多一階 | 本規格新寫 | `trial.ui.tierUp` |
+| （畫面字）・tierAll | 點開看每一階 | 本規格新寫 | `trial.ui.tierAll` |
+| （畫面字）・tierZeroSub | 往右選一階，就多一條條件、樂歷變多。 | 本規格新寫 | `trial.ui.tierZeroSub` |
+| （畫面字）・tierStack | 選第 3 階＝前 3 條都算；越高樂歷越多。 | 本規格新寫 | `trial.ui.tierStack` |
+| （畫面字）・tierPassed | 過關 | 本規格新寫 | `trial.ui.tierPassed` |
+| （畫面字）・tierFar | 最遠第 {n} 位 | 本規格新寫 | `trial.ui.tierFar` |
+| （畫面字）・tierNone | 還沒打過 | 本規格新寫 | `trial.ui.tierNone` |
+| （畫面字）・tierPicked | 已選 | 本規格新寫 | `trial.ui.tierPicked` |
+| （畫面字）・tierOpenSub | 推門前在標題選第幾階；這一階樂歷 ×{m}。 | 本規格新寫 | `trial.ui.tierOpenSub` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
 
@@ -1121,6 +1132,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・noPoints | 天賦點不夠 | 本規格新寫 | `career.ui.noPoints` |
 | （畫面字）・profTitle | 熟練度 | 本規格新寫 | `career.ui.profTitle` |
 | （畫面字）・unlockTitle | 流派與攤位 | 本規格新寫 | `career.ui.unlockTitle` |
+| （畫面字）・tabTalent | 天賦 | 本規格新寫 | `career.ui.tabTalent` |
 | （畫面字）・lastLine | 上一趟 樂歷 +{n} | 本規格新寫 | `career.ui.lastLine` |
 | （畫面字）・nextRun | 改了下一趟開局才算 | 本規格新寫 | `career.ui.nextRun` |
 
@@ -2439,6 +2451,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・treeStart | 本派格先出：{list} | 本規格新寫 | `factions.ui.treeStart` |
 | （畫面字）・deepWin | {name}：多回 {n} 聲望 | 本規格新寫 | `factions.ui.deepWin` |
 | （畫面字）・pleaHp | 老客人的面子：聲望 +{n} | 本規格新寫 | `factions.ui.pleaHp` |
+| （畫面字）・treeFirstHow | 升級的本派格先出它；學了照樣佔那一級。 | 本規格新寫 | `factions.ui.treeFirstHow` |
+| （畫面字）・treeDep | 先退「{name}」 | 本規格新寫 | `factions.ui.treeDep` |
+| （畫面字）・deepNow | {name}：這場記了 {h} 手，打贏多回 {n} | 本規格新寫 | `factions.ui.deepNow` |
 
 ## 流派試做・畫面字（派樹的路線名）
 

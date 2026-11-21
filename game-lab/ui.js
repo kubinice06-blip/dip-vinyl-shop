@@ -84,7 +84,8 @@
     if (!r) return esc(TU('game'));                 // 還沒有這一趟（標題、序章開頭、再挑戰一趟挑王牌前）：「品味對決」（沒有日期、沒有雨夜；審查 #14）
     if (inPrologue(r)) return esc(TU('prologue'));
     if (r.pending && r.pending.type === 'draft' && r.cpFrom > 1) return esc(WU('cpFrom', { n: r.cpFrom }));   // 第 C 波：中繼點開局選秀中（pos 還是 1）＝「這一趟從第 N 位開始」
-    var sub = TU('round', { r: r.round }) + (cls === 'elite' ? '・' + TU('elite') : cls === 'boss' ? '・' + TU('boss') : '');
+    var sub = TU('round', { r: r.round }) + (cls === 'elite' ? '・' + TU('elite') : cls === 'boss' ? '・' + TU('boss') : '') +
+      (r.tier > 0 ? '・' + TU('tierTag', { k: r.tier | 0 }) : '');   // 第 D 波棒三（SPEC-D §5.4）：試煉第 k 階那一趟，頂欄小字多「第 k 階」
     var nb = toRecordN(r);                          // 離最遠紀錄 3 位內：「再贏 N 位破紀錄」（第 A 波 4；打的當下就亮）
     if (!nb) return esc(TU('pos', { n: r.pos })) + '<small>' + esc(sub) + '</small>';
     // 有「再贏 N 位破紀錄」：整列 flex，放不下先切「第 R 輪・傳說藏家」那段（省略號），破紀錄那句一定完整（審查 A-14：三位數位數的藏家對決，375 寬被切成「破紀…」）
@@ -392,9 +393,13 @@
     // 退版期間（C 版頁面的 SHELF_SRC 沒有 'lexp'）被洗成「老闆送的」的樂歷盤：照 career.got 補回來源（抽的時候一定是還沒擁有，所以原本就是 lexp）
     (s.career.got || []).forEach(function (id) { var e = shf[id]; if (e && e.own && e.src === 'gift') e.src = 'lexp'; });
     var tr = s.trial && typeof s.trial === 'object' && !Array.isArray(s.trial) ? s.trial : {};
-    var tOpen = nn(tr.open), tb = {};
-    if (tr.best && typeof tr.best === 'object' && !Array.isArray(tr.best)) Object.keys(tr.best).forEach(function (k2) { if (nn(tr.best[k2])) tb[k2] = nn(tr.best[k2]); });
-    s.trial = { open: tOpen, pick: Math.min(nn(tr.pick), tOpen), best: tb };
+    // 第 D 波棒三（CONTRACT §1）：試煉階級整理照引擎 trialFix（open 夾在 0…階數、pick 夾在 0…open、best 只留 0…階數的非負整數；其他鍵照留）
+    if (E.trialFix) { try { s.trial = E.trialFix(C, tr); } catch (e) { console.error(e); s.trial = { open: 0, pick: 0, best: {} }; } }
+    else {
+      var tOpen = nn(tr.open), tb = {};
+      if (tr.best && typeof tr.best === 'object' && !Array.isArray(tr.best)) Object.keys(tr.best).forEach(function (k2) { if (nn(tr.best[k2])) tb[k2] = nn(tr.best[k2]); });
+      s.trial = { open: tOpen, pick: Math.min(nn(tr.pick), tOpen), best: tb };
+    }
     s.regulars = fixRegulars(s.regulars);                     // 活店（SPEC-H §8）：形狀不對的欄位換回預設
     return s;
   }
@@ -677,8 +682,10 @@
   function careerCards(q) {
     q = (q || []).slice(); UI.careerQ = [];
     var lvs = q.filter(function (x) { return x && x.lv; }), profs = q.filter(function (x) { return x && x.prof; });
+    var tiers = q.filter(function (x) { return x && x.tierOpen > 0; });   // 第 D 波棒三：開了下一階（recordRun；SPEC-D §5.4）
     var cards = lvs.length > 1 ? [{ list: lvs.length, lv: lvs[lvs.length - 1].lv, ids: lvs.map(function (x) { return x.id; }).filter(Boolean),
       lad: [].concat.apply([], lvs.map(function (x) { return x.lad || []; })) }] : lvs.slice();
+    tiers.forEach(function (x) { cards.push({ tierOpen: x.tierOpen, text: x.text || '' }); });   // 升級那幾張之後；熟練升級照舊接在最後一張
     if (profs.length && !cards.length) cards.push({ profOnly: true });
     if (!cards.length) return Promise.resolve('done');
     return new Promise(function (res) {
@@ -687,8 +694,10 @@
       function draw() {
         var k = cards[i], last = i === cards.length - 1, P = careerPts();
         var ids = k.list ? k.ids : (k.id ? [k.id] : []), many = ids.length > 1;
-        var h = '<div class="cx-card' + (k.list ? ' list' : '') + '" data-a="next">' +
-          (k.profOnly ? '' : '<div class="cx-hd"><b>' + esc(k.list ? CU('lvList', { n: k.lv }) : CU('lvUp', { n: k.lv })) + '</b>' + (k.list ? '<span class="sub">' + esc(CU('lvPts', { n: k.list })) + '</span>' : '') + '</div>') +
+        var h = '<div class="cx-card' + (k.list ? ' list' : '') + (k.tierOpen ? ' tier' : '') + '" data-a="next"' + (k.tierOpen ? ' data-tier="' + k.tierOpen + '"' : '') + '>' +
+          (k.tierOpen ? '<div class="cx-hd tr"><b>' + esc(TU('tierOpen', { k: k.tierOpen, text: k.text })) + '</b></div>' +   // 第 D 波棒三：「開了第 k 階：…」＋怎麼選、樂歷倍率
+            '<p class="cx-open tr">' + esc(TU('tierOpenSub', { m: trialMulTx(k.tierOpen) })) + '</p>' :
+          k.profOnly ? '' : '<div class="cx-hd"><b>' + esc(k.list ? CU('lvList', { n: k.lv }) : CU('lvUp', { n: k.lv })) + '</b>' + (k.list ? '<span class="sub">' + esc(CU('lvPts', { n: k.list })) + '</span>' : '') + '</div>') +
           (ids.length ? '<div class="cx-got' + (many ? ' many' : '') + '"><span class="cvs">' + ids.slice(0, 6).map(function (id) { return coverHTML(card(id), { info: false, badge: false }); }).join('') + '</span>' +
             '<span class="tx"><b>' + esc(many ? CU('drawGotN', { n: ids.length }) : CU('drawGot')) + '</b>' + (!many && card(ids[0]) ? '<small>' + esc(card(ids[0]).artist + '《' + card(ids[0]).album + '》') + '</small>' : '') + '</span></div>' : '') +
           (k.list ? (k.lad.length ? '<p class="cx-open">' + esc(CU('lvNew', { list: k.lad.map(ladderName).filter(Boolean).join('、') })) + '</p>' : '')
@@ -751,14 +760,110 @@
     return '<p class="lb-foot cxline"><button type="button" class="key" data-a="career" aria-label="' + esc(full.replace('\u0001', lv.level)) + '">' +
       '<span class="full">' + mark(full) + '</span><span class="short">' + mark(CU('lineShort', { n: '\u0001' })) + '</span></button></p>';
   }
+  // ======================================================================= 試煉階級（第 D 波棒三；SPEC-D §5；契約 build3/CONTRACT.md §2）
+  //   save.trial＝{open, pick, best:{階: 最遠}}（loadSave 走 engine trialFix）。新帳號 open 0＝推門那列、最遠短版、樂歷頁那行都不出。
+  //   推門那列（標題）：‹ 第 k 階 ›（0…open；改了就存 pick）＋點中間開「試煉階級」面板（每一階新加的那條、樂歷倍率、過關紀錄；點一階＝選它）。
+  //   >600px 高：下面多一行「這一階：…・另外 n 條 ›」；≤600px（375×548 標題區零餘裕，棒一 FINAL §3-3）：跟樂歷第二行併成同一列、不加高，那一行不出（點中間看）
+  function trialOk() { return !!(E && E.trialTiers && E.trialFix && C && C.trial && save && save.trial); }
+  function trialTiersNow() { if (!trialOk()) return []; try { return E.trialTiers(C) || []; } catch (_) { return []; } }
+  function trialNow() { if (!trialOk()) return { open: 0, pick: 0, best: {} }; try { return E.trialFix(C, save.trial); } catch (_) { return { open: 0, pick: 0, best: {} }; } }
+  function trialPickNow() { if (!trialOk() || !E.trialPick) return 0; try { return E.trialPick(C, save.trial) | 0; } catch (_) { return 0; } }
+  function trialMulTx(k) { var m = 1; try { m = E.trialMul ? E.trialMul(C, k) : 1 + 0.1 * k; } catch (_) {} return String(Math.round(m * 100) / 100); }
+  // 第一行最遠的短版（SPEC-D §2.8-3）：「最遠 34（第 3 階 22）」——階＝推門那列選的那一階（有紀錄才寫）；選第 0 階＝有紀錄的最高那一階
+  function trialBestTx() {
+    var T = trialNow(), far = save.best.far | 0; if (!(T.open > 0) || !far) return '';
+    var k = T.pick > 0 && (T.best[T.pick] | 0) > 0 ? T.pick : 0;
+    if (!k) Object.keys(T.best).forEach(function (x) { var n = +x; if (n > k && (T.best[x] | 0) > 0) k = n; });
+    return k > 0 ? CU('bestTier', { n: far, k: k, m: T.best[k] | 0 }) : '';
+  }
+  // 推門那列（標題）；open 0＝''
+  function trialRowHTML() {
+    var T = trialNow(), L = trialTiersNow(); if (!(T.open > 0) || !L.length) return '';
+    var k = T.pick, cur = k > 0 ? L[k - 1] : null;
+    var mid = '<span class="k full">' + esc(TU('tierRow')) + '</span><span class="k short">' + esc(TU('tierShort')) + '</span>' +
+      '<b>' + esc(k > 0 ? TU('tierN', { k: k }) : TU('tierZero')) + '</b>' + (k > 0 ? '<small>' + esc(TU('tierReward', { m: trialMulTx(k) })) + '</small>' : '');
+    var row = '<div class="lb-foot tierrow" data-tut="tier" data-k="' + k + '">' +
+      '<button type="button" class="tr-arr key" data-a="tierDn" aria-label="' + esc(TU('tierDn')) + '"' + (k > 0 ? '' : ' disabled') + '><span aria-hidden="true">‹</span></button>' +
+      '<button type="button" class="tr-mid key" data-a="tierInfo" aria-label="' + esc(TU('tierRow') + ' ' + (k > 0 ? TU('tierN', { k: k }) : TU('tierZero')) + '，' + TU('tierAll')) + '"><span class="chip">' + mid + '</span></button>' +   // 點擊區 44 高、看得到的框（chip）矮一點：≤600px 上下 −7 疊進留白也不壓到最遠那行
+      '<button type="button" class="tr-arr key" data-a="tierUp" aria-label="' + esc(TU('tierUp')) + '"' + (k < T.open ? '' : ' disabled') + '><span aria-hidden="true">›</span></button></div>';
+    var nw = cur ? TU('tierNew', { text: cur.text }) : TU('tierZeroSub');
+    // 「另外 n 條 ›」＝整行點了也開面板（主要入口是上面 44 高的中間那顆；這行只是順手）
+    var more = k > 1 ? '<span class="tr-more">' + esc(TU('tierMore', { n: k - 1 })) + ' ›</span>' : '';
+    return row + '<p class="lb-foot sm tiernew" data-a="tierInfo"><span class="t">' + esc(nw) + '</span>' + more + '</p>';
+  }
+  // 改了選哪一階：存 pick、標題那列與第一行最遠當場換（不重畫標題、鏡頭不動）
+  function trialSetPick(k) {
+    var T = trialNow(); k = Math.max(0, Math.min(T.open, k | 0));
+    if (k === T.pick) return false;
+    save.trial = Object.assign({}, T, { pick: k }); persist();
+    if (UI.screen === 'title' && UI.panel) trialTitleSync(UI.panel);
+    return true;
+  }
+  function trialTitleSync(root) {
+    var wrap = qs('.lb-tcx', root); if (!wrap) return;
+    var old = qsa('.tierrow,.tiernew', wrap), html = trialRowHTML();
+    old.forEach(function (x) { x.remove(); });
+    wrap.insertAdjacentHTML('afterbegin', html);
+    var inf = qs('.lb-foot.info .t', root); if (inf) inf.textContent = titleInfoLine();
+  }
+  // 「試煉階級」面板（點推門那列中間、「另外 n 條 ›」）：第 0 階＋開了的每一階（名字、新加的那條、樂歷倍率、過關／最遠紀錄）＋下一階（灰：打倒第 20 位藏家開）。
+  //   點一階＝選它（存 pick、標題那列跟著換）；第 k 階＝第 1 到 k 條全部算
+  function trialSheet() {
+    var L = trialTiersNow(); if (!L.length) return;
+    var draw = function () {
+      var T = trialNow(), rows = [];
+      for (var k = 0; k <= Math.min(L.length, T.open + 1); k++) {
+        var lock = k > T.open, x = k > 0 ? L[k - 1] : null, best = T.best[k] | 0, passed = k < T.open;
+        var rec = lock ? TU('tierHow') : [passed ? TU('tierPassed') : '', best ? TU('tierFar', { n: best }) : TU('tierNone')].filter(Boolean).join('・');
+        rows.push('<li class="' + (lock ? 'lock' : '') + (k === T.pick && !lock ? ' on' : '') + '">' + (lock ? '<div class="tr-it">' : '<button type="button" class="tr-it key" data-k="' + k + '" aria-pressed="' + (k === T.pick ? 'true' : 'false') + '">') +
+          '<span class="hd"><b>' + esc(k > 0 ? TU('tierN', { k: k }) + '・' + x.name : TU('tierZero')) + '</b>' + (k > 0 && !lock ? '<span class="m">' + esc(TU('tierReward', { m: trialMulTx(k) })) + '</span>' : '') +
+          (k === T.pick && !lock ? '<span class="ck">' + esc(TU('tierPicked')) + '</span>' : '') + (lock ? lockIcon(10) : '') + '</span>' +
+          (x ? '<span class="tx">' + esc(x.text) + '</span>' : '') + '<span class="rc' + (passed ? ' pass' : '') + '">' + esc(rec) + '</span>' + (lock ? '</div>' : '</button>') + '</li>');
+      }
+      return '<div class="tr-sheet"><h2>' + esc(TU('tierRow')) + '</h2><p class="sub">' + esc(TU('tierStack')) + '</p><ol class="tr-list">' + rows.join('') + '</ol></div>';
+    };
+    var m = modal('trialsheet', draw());
+    var pane = qs('.pane', m) || m;
+    pane.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-k]'); if (!b) return;
+      stopEv(e); sfx('tick');
+      trialSetPick(+b.getAttribute('data-k'));
+      var box = qs('.tr-sheet', pane), keep = m.scrollTop;   // 整個彈窗在捲（.lb-modal overflow-y）
+      if (box) { box.outerHTML = draw(); m.scrollTop = keep; }
+    });
+  }
+  // 第一行（最遠＋唱片櫃）：試煉開了以後最遠寫短版
+  function titleInfoLine() {
+    var far = save.best.far | 0, sh = shelfCount();
+    var farOff = far > 0 && careerOk() && save.runs.some(function (x) { return x && x.off && (x.reached | 0) === far; });
+    var bt = trialBestTx();
+    return [far ? (bt || fill((C.summary && C.summary.best) || '', { n: far })) + (farOff ? '・' + CU('offBest') : '') : '', sh.n ? '唱片櫃 ' + sh.n + '／' + sh.total : ''].filter(Boolean).join('・');
+  }
+
   // 樂歷頁（openPage('career')；SPEC-D §2.8-2）：頭（Lv、進度條、天賦點）→ 天賦表（一類一組，＋／－ 44×44）→ 全部重配 → 關掉樂歷（Lv10+）→ 解鎖階梯 → 流派與攤位 → 熟練度
-  function renderCareer(pg) {
-    var sc0 = qs('.lb-scroll', pg), keepTop = sc0 ? sc0.scrollTop : 0;
+  function renderCareer(pg, top0) {
+    var sc0 = qs('.lb-scroll', pg), keepTop = top0 ? 0 : sc0 ? sc0.scrollTop : 0;
     pg.innerHTML = '';
     var c = save.career, K = E.careerCfg(C), U = (C.career && C.career.ui) || {}, lv = careerLv(), P = careerPts();
     var bar = el('div', 'lb-top page', '<div class="tt">' + esc(CU('page')) + '</div><button type="button" class="lnk" data-a="close">關閉</button>');
     pg.appendChild(bar);
     qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
+    // 第 D 波棒三（SPEC-D §2.8-2、§3.7；?fac=1 才有）：分頁「天賦｜派樹」。旗標關＝沒有分頁、派樹一行都不畫
+    if (treeOn()) {
+      var tab = UI.careerTab === 'tree' ? 'tree' : 'talent', tdot = treeAces().some(function (t) { try { return E.treePoints(C, c, t).left > 0; } catch (_) { return false; } });
+      var tb = el('div', 'cx-tabs', ['talent', 'tree'].map(function (t) {
+        return '<button type="button" class="key' + (t === tab ? ' on' : '') + '" role="tab" data-tab="' + t + '" aria-selected="' + (t === tab ? 'true' : 'false') + '">' +
+          esc(t === 'tree' ? FU('treeTab') : CU('tabTalent')) + (t === 'tree' && tdot ? '<i class="cx-dot" aria-hidden="true"></i>' : t === 'talent' && P.left > 0 ? '<i class="cx-dot" aria-hidden="true"></i>' : '') + '</button>';
+      }).join(''));
+      tb.setAttribute('role', 'tablist');
+      pg.appendChild(tb);
+      tb.addEventListener('click', function (e) {
+        var b = e.target.closest && e.target.closest('[data-tab]'); if (!b) return;
+        stopEv(e); var t = b.getAttribute('data-tab'); if (t === tab) return;
+        UI.careerTab = t; sfx('tick'); renderCareer(pg, true);
+      });
+      if (tab === 'tree') { renderTree(pg, keepTop); return; }
+    }
     var nm = function (id) { return (U.names || {})[id] || id; };
     var powerOpen = K.talents.filter(function (T) { return T && T.cat === 'power'; }).reduce(function (m, T) { return Math.min(m, T.open | 0); }, 99);
     function row(T) {
@@ -786,6 +891,8 @@
         esc(L.soon ? ladderName(L.key) : CU('ladderRow', { n: L.lv, name: ladderName(L.key) })) + '</span>' + (L.soon ? '<span class="s">' + esc(CU('soon')) + '</span>' : '') + '</li>';
     }).join('');
     var un = unlockedNow(), unl = unlockLine(), stl = ladderLine();
+    // 第 D 波棒三（SPEC-D §5.4）：解鎖區最後一行「試煉階級：開到第 3 階（打倒第 20 位藏家開下一階）」（開了才有；十階全開＝不寫括號）
+    var T0 = trialNow(), trl = T0.open > 0 ? TU('tierLadder', { k: T0.open }) + (T0.open < trialTiersNow().length ? '（' + TU('tierHow') + '）' : '') : '';
     var prof = un.map(function (t) {
       var p = E.profLevel(C, (c.prof || {})[t]);
       return '<li><b>' + esc((C.aceTitle || {})[t] || '') + '</b><span>' + esc(CU('prof', { n: p.level, s: p.stamps, per: p.per })) + '</span></li>';
@@ -803,7 +910,8 @@
       '<div class="cx-respec"><button type="button" class="lb-btn wide key" data-a="respec"' + ((P.spent | 0) > 0 ? '' : ' disabled') + '>' + esc(CU('respec')) + '</button></div>' +
       offRow +
       '<section class="cx-grp"><div class="lb-h2">' + esc(CU('ladderTitle')) + '</div><ul class="cx-ladder">' + lad + '</ul><p class="sub">' + esc(CU('drawRow')) + '</p></section>' +
-      (unl || stl ? '<section class="cx-grp"><div class="lb-h2">' + esc(CU('unlockTitle')) + '</div>' + (unl ? '<p class="sub lb-unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') + (stl ? '<p class="sub cx-stl">' + esc(stl) + '</p>' : '') + '</section>' : '') +
+      (unl || stl || trl ? '<section class="cx-grp"><div class="lb-h2">' + esc(CU('unlockTitle')) + '</div>' + (unl ? '<p class="sub lb-unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') + (stl ? '<p class="sub cx-stl">' + esc(stl) + '</p>' : '') +
+        (trl ? '<p class="sub cx-trl">' + esc(trl) + '</p>' : '') + '</section>' : '') +
       (prof ? '<section class="cx-grp"><div class="lb-h2">' + esc(CU('profTitle')) + '</div><ul class="cx-prof">' + prof + '</ul></section>' : '') +
       '</div>';
     pg.appendChild(body);
@@ -821,6 +929,101 @@
         var act = b.getAttribute('data-a');
         if (act === 'respec') { res = E.careerRespec(C, save.career); sfx('tick'); toast(CU('respecDone')); }
         else if (act === 'off') { save.career.off = !save.career.off; sfx('tick'); persist(); renderCareer(pg); return; }
+        else return;
+      }
+      save.career = res.career; persist(); renderCareer(pg);
+    });
+  }
+  // ======================================================================= 派樹（第 D 波棒三；SPEC-D §3.6–§3.7；契約 build3/CONTRACT.md §3；?fac=1 才有）
+  //   樂歷頁「派樹」分頁：派別切換（已解鎖的派）→ 熟練（Lv・章・進度條）＋派點 → 三條路線（本派／代價／收藏）× 三層 → 全部重配（只這一派、免費）。
+  //   每格：名字＋狀態（幾點／已點／幾級、為什麼還不能點）＋－／＋（44×44）；點格子本身＝展開說明（start 格連那項本派選項的說明一起）。
+  //   存檔只寫 save.career.tree[派]（engine treeBuy／treeSell／treeRespec 回新物件）；下一趟開局 createRun 帶 treeArgs（關樂歷＝{}）
+  function treeOn() { return !!(UI.fac && FAC() && E.treeList && E.treePoints && E.treeBuy && careerOk()); }
+  function treeAces() { var un = unlockedNow(); return un.length ? un : [TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : 'hall']; }
+  function treeWhyTx(N, L) {
+    if (N.soon) return FU(N.soon === 'apex' ? 'treeSoonApex' : N.soon === 'market' ? 'treeSoonMarket' : 'treeSoon');
+    var prev = (L.filter(function (x) { return x.path === N.path && x.layer === N.layer - 1; })[0] || {}).name || '';
+    if (N.why === 'max') return N.max > 1 ? CU('maxed') : FU('treeHave');
+    if (N.why === 'need') return FU('treeNeed', { name: prev });
+    if (N.why === 'prof') return FU('treeProf', { n: E.treeLv3 ? E.treeLv3(C) : 5 });
+    if (N.why === 'points') return FU('treeCost', { n: N.cost }) + '・' + FU('treeNoPts');
+    return FU('treeCost', { n: N.cost });
+  }
+  // 點開的說明：節點自己的句子；start 格（本派格先出）多「那項本派選項：說明」＋先出的意思；挑著學、深耕照節點句子
+  function treeDescHTML(ace, N) {
+    var out = [];
+    if (N.text) out.push('<span class="d">' + facNw(N.text) + '</span>');
+    if (N.op === 'start' && N.pick) {
+      var P0 = facPickOf(ace, N.pick);
+      if (P0) out.push('<span class="d pk"><i>' + esc(P0.name) + '</i>' + facNw(P0.text) + '</span>');
+      if ((FAC() || {}).treeStart === 'first' && FU('treeFirstHow')) out.push('<span class="d how">' + esc(FU('treeFirstHow')) + '</span>');
+    }
+    if (N.soon && !N.text) out.push('<span class="d">' + esc(treeWhyTx(N, [])) + '</span>');
+    return out.join('');
+  }
+  function renderTree(pg, keepTop) {
+    var c = save.career, aces = treeAces();
+    var ace = aces.indexOf(UI.treeAce) >= 0 ? UI.treeAce : aces.indexOf(save.lastAce) >= 0 ? save.lastAce : aces[0];
+    UI.treeAce = ace;
+    var D0 = facDef(ace), L = [], P = { level: 1, total: 0, spent: 0, left: 0 }, pf = { level: 1, stamps: 0, per: 10, into: 0, stamp: 150 };
+    try { L = E.treeList(C, c, ace) || []; P = E.treePoints(C, c, ace); pf = E.profLevel(C, (c.prof || {})[ace]); } catch (e) { console.error(e); }
+    var open = UI.treeOpen || (UI.treeOpen = {});
+    // 派別切換（只列已解鎖的派；一派也是一顆，當標題用）
+    var sw = '<div class="tr-aces" role="tablist">' + aces.map(function (t) {
+      var D1 = facDef(t), a1 = (C.aceAxis || {})[t] || '', left = 0; try { left = E.treePoints(C, c, t).left; } catch (_) {}
+      return '<button type="button" class="key' + (t === ace ? ' on' : '') + '" role="tab" data-ace="' + t + '" aria-selected="' + (t === ace ? 'true' : 'false') + '"><span class="fi ' + esc(a1) + '" aria-hidden="true">' + esc((D1 && D1.icon) || '') + '</span>' +
+        esc((C.aceTitle || {})[t] || '') + (left > 0 ? '<i class="cx-dot" aria-hidden="true"></i>' : '') + '</button>';
+    }).join('') + '</div>';
+    var pp = pf.per > 0 ? Math.round(((pf.stamps | 0) * pf.stamp + (pf.into | 0)) * 100 / (pf.per * pf.stamp)) : 0;
+    var head = '<div class="tr-head"><div class="cx-head"><b class="lv">' + esc(FU('treeOf', { title: (C.aceTitle || {})[ace] || '' })) + '</b><span class="pts' + (P.left > 0 ? ' has' : '') + '">' + esc(FU('treePoints', { n: Math.max(0, P.left) })) + '</span></div>' +
+      '<p class="sub tr-prof"><span>' + esc(CU('prof', { n: pf.level, s: pf.stamps, per: pf.per })) + '</span><span>' + esc(FU('treeHow')) + '</span></p>' +
+      '<span class="cx-bar big" aria-hidden="true"><i style="width:' + Math.max(0, Math.min(100, pp)) + '%"></i></span>' +
+      (c.off ? '<p class="note tr-off">' + esc(FU('treeOffNote')) + '</p>' : '') + '<p class="sub cx-nr">' + esc(CU('nextRun')) + '</p></div>';
+    var PN = (FAC().ui || {}).treePath || {};
+    var paths = ['a', 'b', 'c'].map(function (pa) {
+      var nodes = L.filter(function (N) { return N.path === pa; }).sort(function (x, y) { return x.layer - y.layer; });
+      if (!nodes.length) return '';
+      return '<section class="tr-path p-' + pa + '"><div class="lb-h2">' + esc(PN[pa] || pa) + '</div><ol class="tr-nodes">' + nodes.map(function (N) {
+        var live = !N.soon, k = N.k | 0, have = k > 0, isOpen = !!open[ace + ':' + N.id];
+        var lvTx = N.max > 1 ? FU('treeLv', { k: k, max: N.max }) : have ? FU('treeHave') : '';
+        var canBuy = live && !N.why, canSell = live && have;
+        return '<li class="tr-node cx-row' + (N.soon ? ' soon' : '') + (have ? ' have' : '') + (N.why === 'need' || N.why === 'prof' ? ' lock' : '') + (isOpen ? ' open' : '') + '" data-id="' + esc(N.id) + '" data-layer="' + N.layer + '">' +
+          '<button type="button" class="tx key" data-a="desc" aria-expanded="' + (isOpen ? 'true' : 'false') + '">' +
+            '<span class="nm"><span class="ly" aria-hidden="true">' + ['Ⅰ', 'Ⅱ', 'Ⅲ'][N.layer - 1] + '</span><b>' + esc(N.name) + '</b>' + (lvTx ? '<span class="now">' + esc(lvTx) + '</span>' : '') + '</span>' +
+            '<span class="st">' + (N.soon || N.why === 'need' || N.why === 'prof' ? lockIcon(10) : '') + esc(N.why === 'max' && N.max === 1 ? '' : treeWhyTx(N, L)) + '</span>' +
+            '<span class="ds">' + treeDescHTML(ace, N) + '</span></button>' +
+          (live ? '<div class="pm"><button type="button" class="lb-btn key" data-tsell="' + esc(N.id) + '" aria-label="' + esc(N.name + ' ' + CU('sell')) + '"' + (canSell ? '' : ' disabled') + '>－</button>' +
+            '<button type="button" class="lb-btn key" data-tbuy="' + esc(N.id) + '" aria-label="' + esc(N.name + ' ' + CU('buy')) + '"' + (canBuy ? '' : ' disabled') + '>＋</button></div>' : '') + '</li>';
+      }).join('') + '</ol></section>';
+    }).join('');
+    var spent = (P.spent | 0) > 0;
+    var body = el('div', 'lb-scroll');
+    body.innerHTML = '<div class="lb-pad cx-page tr-page" data-ace="' + ace + '">' + sw + head + paths +
+      '<div class="cx-respec"><button type="button" class="lb-btn wide key" data-a="trespec"' + (spent ? '' : ' disabled') + '>' + esc(FU('treeRespec')) + '</button></div></div>';
+    pg.appendChild(body);
+    if (keepTop) body.scrollTop = keepTop;
+    body.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-tbuy],[data-tsell],[data-a],[data-ace]'); if (!b || b.disabled) return;
+      stopEv(e);
+      var res = null;
+      if (b.hasAttribute('data-ace')) { var t = b.getAttribute('data-ace'); if (t !== ace) { UI.treeAce = t; sfx('tick'); renderCareer(pg, true); } return; }
+      if (b.hasAttribute('data-tbuy')) {
+        var id = b.getAttribute('data-tbuy');
+        res = E.treeBuy(C, save.career, ace, id);
+        if (!res.ok) { sfx('tick'); var N0 = L.filter(function (x) { return x.id === id; })[0]; if (N0) toast(treeWhyTx(Object.assign({}, N0, { why: res.error }), L)); return; }
+        sfx('select');
+      } else if (b.hasAttribute('data-tsell')) {
+        var sid = b.getAttribute('data-tsell');
+        res = E.treeSell(C, save.career, ace, sid);
+        if (!res.ok) {
+          if (res.error === 'dep') { var Nd = L.filter(function (x) { var N1 = L.filter(function (y) { return y.id === sid; })[0]; return N1 && x.path === N1.path && x.layer === N1.layer + 1; })[0]; sfx('tick'); toast(FU('treeDep', { name: (Nd && Nd.name) || '' })); }
+          return;
+        }
+        sfx('tick');
+      } else {
+        var act = b.getAttribute('data-a');
+        if (act === 'desc') { var li = b.closest('[data-id]'), key = ace + ':' + li.getAttribute('data-id'); open[key] = !open[key]; li.classList.toggle('open', !!open[key]); b.setAttribute('aria-expanded', open[key] ? 'true' : 'false'); sfx('tick'); return; }
+        if (act === 'trespec') { res = E.treeRespec(C, save.career, ace); sfx('tick'); toast(CU('respecDone')); }
         else return;
       }
       save.career = res.career; persist(); renderCareer(pg);
@@ -2039,6 +2242,19 @@
   }
   // 流派說明字（派系卡、本派說明、升級第 4 格）：數字連前面兩個字、單位、句尾標點包成不折行（「回 2 聲望。」「多扣 1，」「最多 2。」「經典 +1 星」；審查 棒二 斷行）
   function facNw(s) { return esc(s || '').replace(/([\u4e00-\u9fff]{1,2} ?)?[+−]?\d+( ?(聲望|星數|星|位|次))?[。，、；]?/g, function (m) { return '<span class="nw">' + m + '</span>'; }); }
+  // 派樹「深耕」那格的名字（口碑／識破／破例；吐司「口碑：多回 1 聲望」）
+  function facDeepName(r) { var D0 = r && facDef(r.ace), N = D0 && Array.isArray(D0.tree) ? D0.tree.filter(function (x) { return x && x.op === 'deep'; })[0] : null; return (N && N.name) || ''; }
+  // 派樹「本派格先出」的那幾項（start 節點、點了的；照節點順序；treeStart 'first'）→ 名字
+  function facStartNames(r) {
+    var D0 = r && facDef(r.ace), tal = (r && r.fac && r.fac.tal) || {};
+    if (!D0 || !Array.isArray(D0.tree) || (FAC() || {}).treeStart !== 'first') return [];
+    return D0.tree.filter(function (N) { return N && N.op === 'start' && !N.soon && tal[N.id] > 0; }).map(function (N) { return (facPickOf(r.ace, N.pick) || {}).name || ''; }).filter(Boolean);
+  }
+  // 換派（switchAce）時帶新派的派樹（第 D 波棒三 CONTRACT §3：帶派別的 run 才給；樂歷關＝{}）；沒有派別＝不多參數（逐字照舊）
+  function facTalFor(r, tier) {
+    if (!r || !r.fac || !E.treeArgs || !careerOk()) return undefined;
+    try { return { facTal: E.treeArgs(C, save.career, tier) || {} }; } catch (e) { console.error(e); return undefined; }
+  }
   function facMineLine(r) { var m = facMine(r); return m.length ? FU('mine', { list: m.join('、') }) : FU('mineNone'); }
   // 派系卡最下面那行：「熟練 Lv3・最遠第 34 位」（最遠＝這一派打過最遠的那一趟；還沒打過＝只寫熟練）
   function facProfLine(t) {
@@ -2122,6 +2338,10 @@
     var r = save.run, left = f.left || {}, rows = [];
     if (left.leech != null) rows.push(FU('leftLeech', { n: left.leech }));
     if (left.thorn != null) rows.push(FU('leftThorn', { n: left.thorn }));
+    // 第 D 波棒三派樹：深耕這場記到幾手（view().fac.deep；沒樹沒有）、本派格先出的那幾項（run.fac.tal 的 start 節點）
+    if (f.deep && FU('deepNow')) rows.push(FU('deepNow', { name: facDeepName({ ace: f.tier }), h: f.deep.hands | 0, n: f.deep.got | 0 }));
+    var fst = r && r.fac && r.duel === d ? facStartNames(r) : [];
+    if (fst.length) rows.push(FU('treeStart', { list: fst.join('、') }));
     var ax = (C.aceAxis || {})[f.tier] || '';
     // 審查 棒二：本派選項改掉代價（有人記得＝被剋不多扣、爆擊＝比星輸不多扣）→ 代價那行劃掉、標「已取消」（看這場的 fx，不是派別原文）；
     //   拿過的本派選項逐項列「名字：說明」（加多扣、回更多、每場第一次不扣…照實寫，不再只列名字）
@@ -2280,7 +2500,7 @@
     apexPickPanel({ tier: fromT, aceId: fromId, open: ch.tiers, owned: ch.apex }).then(function (pick) {   // 解鎖制：鎖住的派、沒收到的頂點卡上鎖（engine.aceChoices）
       UI.going = false;
       if (save.run !== r || UI.screen !== 'night') return;
-      var res = pick && (pick.tier !== fromT || pick.aceId !== fromId) ? E.switchAce(r, C, pick.tier, { aceId: pick.aceId }) : null;
+      var res = pick && (pick.tier !== fromT || pick.aceId !== fromId) ? E.switchAce(r, C, pick.tier, Object.assign({ aceId: pick.aceId }, facTalFor(r, pick.tier))) : null;
       var ok = !!(res && res.ok), lockedErr = !!(res && !res.ok && (res.error === 'locked' || res.error === 'notOwned'));
       if (ok) {
         save.lastAce = r.ace;
@@ -2606,12 +2826,9 @@
     var r = save.run, hasRun = !!(r && !r.over), overRun = !!(r && r.over);
     setTop(esc(TU('game')), { links: (canCharEdit() ? [['捏角色', openCharEdit, 'char']] : []).concat([['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']]), help: true });
     var panel = UI.panel; panel.classList.add('title');
-    var sh = shelfCount();
-    // 紀錄（店主 11-12）：「最遠：第 23 位」＋唱片櫃
-    var far = save.best.far | 0;
-    // 第 D 波（SPEC-D §2.3）：最遠那一趟是關樂歷打的＝最遠旁標「關樂歷」；現在關著＝第一行最後小字「樂歷關」
-    var farOff = far > 0 && careerOk() && save.runs.some(function (x) { return x && x.off && (x.reached | 0) === far; });
-    var infoLine = [far ? fill((C.summary && C.summary.best) || '', { n: far }) + (farOff ? '・' + CU('offBest') : '') : '', sh.n ? '唱片櫃 ' + sh.n + '／' + sh.total : ''].filter(Boolean).join('・');
+    // 紀錄（店主 11-12）：「最遠：第 23 位」＋唱片櫃。第 D 波（SPEC-D §2.3）：最遠那一趟是關樂歷打的＝最遠旁標「關樂歷」；現在關著＝第一行最後小字「樂歷關」；
+    //   棒三：試煉開了（trial.open ≥1）最遠寫短版「最遠 34（第 3 階 22）」（titleInfoLine）
+    var infoLine = titleInfoLine();
     var offNow = careerOk() && save.career.off ? '<small class="cx-offon">' + esc(CU('offOn')) + '</small>' : '';
     var hint = line('titleHint'), where = runWhere(r);
     var h = '<div class="lb-tbtns">';
@@ -2629,12 +2846,14 @@
     if (UI.apex) h += '<button type="button" class="lb-btn wide col key" data-a="skip">' + esc(AU('skip')) + '<span class="sub">' + esc(AU(unlockedNow().length ? 'skipSub' : 'skipSubFirst')) + '</span></button>';
     // 第 D 波（SPEC-D §2.8-3）：既有三行（最遠＋唱片櫃、流派進度、攤位階梯）合成兩行——第二行＝樂歷（整行可點＝樂歷頁），流派進度、攤位階梯搬進樂歷頁。
     //   樂歷還沒到 Lv2（新帳號、序章那一趟）不出第二行，照舊出流派進度與攤位階梯
-    var cxl = careerLineHTML();
+    var cxl = careerLineHTML(), trw = trialRowHTML();
     var unl = cxl ? '' : unlockLine();                   // 解鎖進度（店主 11-16）：「流派 1／3・下一派：經典流」；新玩家不出
     var lad = cxl || firstEver() ? '' : ladderLine();   // 第 C 波（SPEC-C §5.3）：店內攤位解鎖階梯一行「店內攤位 2/6｜再走 5 位開錄音室」
     var dc = dailyChip();
     h += '</div>' + (dc ? '<p class="lb-foot dl-chip"><button type="button" data-a="daily">' + esc(dc) + '</button></p>' : '') +
-      (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine || offNow ? '<p class="lb-foot sm info">' + esc(infoLine) + offNow + '</p>' : '') + cxl +
+      (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine || offNow ? '<p class="lb-foot sm info"><span class="t">' + esc(infoLine) + '</span>' + offNow + '</p>' : '') +
+      // 第 D 波棒三（SPEC-D §5.4）：推門那列（試煉開了才有）跟樂歷第二行包在一起——>600px 上下兩列、≤600px 併成同一列（style.css .lb-tcx.tier；標題區不加高）
+      (trw ? '<div class="lb-tcx tier">' + trw + cxl + '</div>' : cxl) +
       (unl ? '<p class="lb-foot sm unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') +
       (lad ? '<p class="lb-foot sm ladder">' + esc(lad) + '</p>' : '') +
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '') +
@@ -2709,6 +2928,8 @@
       } else if (act === 'end') go('end');
       else if (act === 'daily') { sfx('tick'); openBooth(); }
       else if (act === 'career') { sfx('tick'); openPage('career'); }
+      else if (act === 'tierDn' || act === 'tierUp') { sfx('tick'); trialSetPick(trialNow().pick + (act === 'tierUp' ? 1 : -1)); }   // 第 D 波棒三：推門那列 ‹ ›
+      else if (act === 'tierInfo') { sfx('tick'); trialSheet(); }
       else if (act === 'cont') {
         UI.going = true;
         var f = FX(); var want = save.settings.sound === true;
@@ -2893,6 +3114,11 @@
     if (from) nro.from = from;
     if (UI.apex && !o.prologue && lastAceIdFor(o.ace)) nro.aceId = lastAceIdFor(o.ace);   // 頂點卡試做：沿用上次挑的那張（旗標關時不加這欄）
     if (UI.fac) nro.fac = true;                        // 第 D 波棒二（?fac=1；CONTRACT §1）：存進 run.fac（序章那場引擎自己不給；之後續玩照 run，不看網址）。旗標關時不加這欄
+    // 第 D 波棒三（build3/CONTRACT §3）：派樹（?fac=1 才給；關樂歷＝{}）。沒點過樹＝{}（＝棒二的 ?fac=1）
+    if (UI.fac && E.treeArgs && careerOk()) { try { nro.facTal = E.treeArgs(C, save.career, o.ace) || {}; } catch (e) { console.error(e); } }
+    // 第 D 波棒三試煉階級（SPEC-D §5.3；CONTRACT §2）：推門那列選的那一階（pick 夾在 0…open）；第 0 階不加這欄（＝沒開過試煉的帳號 newRun 逐字不變）。序章那一趟不給
+    var tierPick = !o.prologue && E.trialPick ? trialPickNow() : 0;
+    if (tierPick > 0) nro.tier = tierPick;
     // 第 D 波（SPEC-D §2.3、§2.4；CONTRACT §3.1-5）：樂歷天賦與階梯（talent／seedMax／relicPick／goldAdd；Lv8 前只有錢類、關樂歷＝什麼都不給）。序章那一趟不給
     if (!o.prologue) Object.assign(nro, careerArgs());
     UI.careerQ = [];                                   // 新的一趟開了：上一趟沒演完的過場卡不再演（抽到的盤早就收進唱片櫃）
@@ -3453,7 +3679,8 @@
         pity: lootP.kind === 'chest' && (lootP.apexSlot || []).length > 0 && dry0 >= (((E.wcCfg ? E.wcCfg(C) : {}).chest || {}).pity | 0) };
       if (lootP.kind === 'chest' && out.earn > 0) cashAfter(r.money - out.earn - dareC, r.money - dareC);
     } else if (out.earn > 0) cashAfter(r.money - out.earn - pkC - dareC, r.money);
-    if (out.heal > 0) toastAfter(TU('heal', { n: out.heal }), 'gold');
+    // 第 D 波棒三派樹「深耕」（口碑／識破／破例）：多回的那幾點已含在 heal 裡，同一顆吐司後面補一句「口碑：多回 1 聲望」
+    if (out.heal > 0) toastAfter(TU('heal', { n: out.heal }) + (out.deep > 0 && FU('deepWin') ? '・' + FU('deepWin', { name: facDeepName(r), n: out.deep }) : ''), 'gold');
     // 差一點摘要（第 A 波 4）：輸了記下他剩幾聲望、第幾手被翻盤（結算畫面用；說情再打贏就換掉）
     if (!out.win && !inPrologue(r)) r.lastLoss = lossInfo(duel); else if (out.win) r.lastLoss = null;
     stg('untag');
@@ -3556,6 +3783,20 @@
       Object.keys(sum.lexp).forEach(function (k) { var v = sum.lexp[k]; if (typeof v === 'number' && v > 0) LB[k] = (LB[k] | 0) + Math.floor(v); });
       LB.runs = (LB.runs | 0) + 1;
     }
+    // 第 D 波棒三試煉階級（SPEC-D §5.1、§5.3；CONTRACT §2）：這一階的最遠、在第 open 階打倒第 20 位藏家（真的打了那場）→ 開下一階。
+    //   開了＝主鈕之後的過場卡「開了第 k 階：…」（放棄那一趟接著就開新的一趟，不演過場卡：吐司說一聲）
+    if (trialOk() && E.trialRecord) {
+      var tr = null; try { tr = E.trialRecord(C, save.trial, sum); } catch (e) { console.error(e); }
+      if (tr && tr.trial) {
+        save.trial = tr.trial;
+        if (tr.opened > 0) {
+          var tx = (trialTiersNow()[tr.opened - 1] || {}).text || '';
+          tlog('trial', 'open', { k: tr.opened });
+          if (why === 'abandon') toastAfter(TU('tierOpen', { k: tr.opened, text: tx }), 'gold');
+          else UI.careerQ = (UI.careerQ || []).concat([{ tierOpen: tr.opened, text: tx }]);
+        }
+      }
+    }
     save.runs.push(ent);
     if (save.runs.length > 50) save.runs = save.runs.slice(-50);
     save.prologueDone = true;
@@ -3593,11 +3834,17 @@
         var menu = ((C.trial && C.trial.ui && C.trial.ui.retryMenu) || []).slice(0, 2);
         if (plea && CU('pleaMenu')) menu[0] = CU('pleaMenu');
         return dlg.menu(menu, { autoIndex: 0 }).then(function (i) {
-          if (i === 0) { doChoose({ type: 'retry' }); beginFight({ quick: true }); return; }
+          if (i === 0) { retryChoose(); beginFight({ quick: true }); return; }
           doChoose({ type: 'end' }); recordRun(save.run); deadFlow({ enemyId: eid });
         });
       });
     });
+  }
+  // 說情重打（這一輪的、備用的）：第 D 波棒三派樹「老客人的面子」開打聲望 +n（choose retry 的 effects[0].pleaHp；滿了沒加就沒有）→ 對決畫面掛好才出吐司
+  function retryChoose() {
+    var res = doChoose({ type: 'retry' }), f = res && res.effects && res.effects[0];
+    if (f && f.pleaHp > 0 && FU('pleaHp')) toastAfter(FU('pleaHp', { n: f.pleaHp }), 'gold');
+    return res;
   }
   // ---- 新手保底（第 C 波 SPEC-C §4.8；CRITIQUE 2.3）：上一趟沒到第 10 位（含新帳號第一趟）、這一趟第 1 位輸了＝老闆一句「第一位不算，再來一次。」＋一顆「再來一次」；
   //   不扣說情、不顯示說情次數、只救一次（引擎 pending retry free＋safety）。序章男子那條（free、直接重打）不走這裡
@@ -3886,9 +4133,10 @@
     var offer = (o2 && o2.offer) || p.offer || [], ttl = (o2 && o2.title) || fill(L.title, { n: p.level });
     // 第 I 波 I-0（SPEC-I §7.2）：自動加的聲望上限照 engine levelHpAt——升到 Lv2 那次是 0（firstHp），那一行「聲望上限 +1（自動）」不出
     var lvFrom = o2 ? (r.level | 0) : (p.level | 0) - 1, autoHp = E.levelHpAt ? E.levelHpAt(trialT(r), lvFrom) : 1;
+    var nFac = offer.filter(function (o) { return o && o.pick === 'fac'; }).length;
     return new Promise(function (res) {
       var html = '<div class="hd' + (o2 ? '' : ' lvup') + '"><h3>' + esc(ttl) + '</h3><span class="sub">' + esc([autoHp > 0 ? L.sub : '', TU('hp', { n: r.hp, max: r.maxHp })].filter(Boolean).join('・')) + '</span></div>' +
-        '<div class="lb-opts' + (offer.some(function (o) { return o && o.pick === 'fac'; }) ? ' n4' : '') + '">' + offer.map(function (o) {   // n4：多了本派格（矮螢幕收緊一點，style.css）
+        '<div class="lb-opts' + (nFac ? ' n4' : '') + (nFac > 1 ? ' n5' : '') + '">' + offer.map(function (o) {   // n4：多了本派格（矮螢幕收緊一點，style.css）；n5：棒三派樹「挑著學」本派格出兩個（最多 5 顆）
           if (o && o.pick === 'fac') return facLvlHTML(r, o);         // 第 D 波棒二：本派格（第 4 格；不進屬性那段：now／L[pick+'Sub'] 對 fac 是 undefined）
           return '<button type="button" class="lb-btn big lb-lvl" data-lv="' + esc(o.pick) + '"><span class="tx"><span class="nm key">' + esc(L[o.pick] || o.pick) + '</span><span class="ds">' + esc(fill(L[o.pick + 'Sub'] || '', { n: o.n | 0 })) + '</span></span>' +
             '<span class="nv">' + now[o.pick] + ' → ' + (now[o.pick] + (o.n | 0)) + '</span></button>';
@@ -4033,7 +4281,7 @@
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
     var toCp = E.toCheckpoint(r, C), live = careerLiveOf(r);
-    var h = '<div class="lb-night st-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b><span class="sub">' +
+    var h = '<div class="lb-night st-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b>' + tierTagHTML(r) + '<span class="sub">' +
         esc([toCp != null ? TU('toCheckpoint', { n: toCp }) : '', pleaText(r)].filter(Boolean).join('・')) + '</span></div>' + (live ? live.html : '') +
       '<div class="st-slot"></div></div>' + bagLineHTML(r);
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
@@ -4079,7 +4327,7 @@
         (ts ? '<span class="tl' + (ts.length >= 6 ? ' lg' : '') + '">' + esc(ts) + '</span>' : '') + '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
     var nen = C.enemies[nx] || {}, toCp = E.toCheckpoint(r, C);
-    var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b><span class="sub">' +
+    var h = '<div class="lb-night" data-tut="night-box"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b>' + tierTagHTML(r) + '<span class="sub">' +
         esc([toCp != null ? TU('toCheckpoint', { n: toCp }) : '', pleaText(r)].filter(Boolean).join('・')) + '</span></div>' +
       '<div class="nrow" data-tut="night">' + row + '</div>' +
       '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">' + esc(TU('next', { n: r.pos, name: nen.name || '' })) + '</button></div>' +
@@ -4365,7 +4613,7 @@
     acePickPanel(null, { defaultTier: from, open: choicesOf(r).tiers, noTut: true }, { prompt: TU('aceAsk') }).then(function (tier) {
       UI.going = false;
       if (save.run !== r || UI.screen !== 'night') return;
-      var res = tier && tier !== from ? E.switchAce(r, C, tier) : null;
+      var res = tier && tier !== from ? E.switchAce(r, C, tier, facTalFor(r, tier)) : null;
       if (res && !res.ok && (res.error === 'locked' || res.error === 'notOwned')) { UI.keepP = true; UI.quietNight = true; go('night'); stageSay('o', line('aceLockedSay'), 'owner', 2600); return; }
       if (res && res.ok) {
         save.lastAce = tier;
@@ -4571,6 +4819,15 @@
     if (tag || !near) return row;
     return row.replace('<b>', '<b><span class="nr near" data-tut="to-break">' + esc(fill((C.summary || {}).toBreak, { n: near })) + '</span>');
   }
+  // 第 D 波棒三（SPEC-D §5.4）：來客條「第 R 輪」旁的小標「第 3 階」（第 0 階沒有）
+  function tierTagHTML(r) { return r && r.tier > 0 ? '<span class="tg tier" data-tier="' + (r.tier | 0) + '">' + esc(TU('tierTag', { k: r.tier | 0 })) + '</span>' : ''; }
+  // 第 D 波棒三（SPEC-D §2.8-4、§5.4）：有試煉階級的那一趟，「走到第 n 位」那行前面加「第 3 階・」（同一行，不另起一行；結算頁 375×548 不捲）
+  // 「再挑戰一趟」直接開下一趟（不經過標題的推門那列）：選了第 k 階就寫在鈕上「再挑戰一趟・第 2 階」（同一行，不加高）；要換階回標題選
+  function againTier() { var k = trialPickNow(); return k > 0 ? '・' + TU('tierTag', { k: k }) : ''; }
+  function tierRow0(row, k) {
+    if (!(k > 0)) return row;
+    return row.replace('<span class="k">', '<span class="k"><span class="tp" data-tier="' + (k | 0) + '">' + esc(CU('tierPre', { k: k | 0 })) + '</span>');
+  }
   var NEAR_FAR = 5;                                   // 差幾位以內才寫「差 N 位破紀錄」
   function nearMiss(r, sum) {
     var far = r.farBefore | 0; if (far <= 0 || r.newRecord) return 0;
@@ -4621,12 +4878,12 @@
     var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="cx-hrow"><div class="lb-h1">' + esc(S.title || '') + '</div>' + cxBtn + '</div>' +
       (lostEn ? '<p class="sub">輸給「' + esc(lostEn.name) + '」' + (cl ? '：<span class="close" data-tut="close-loss">' + colorZh(cl) + '</span>' : '') + '</p>' : '') + '</div>' +
       '<ul class="lb-sum">' +
-      sumRowNear(S.reached, { n: sum.reached }, r.newRecord ? S.newRecord : '', near) + sumRow(S.streak, { n: sum.bestStreak }) + sumRow(S.taken, { n: sum.taken }) + '</ul>' +
+      tierRow0(sumRowNear(S.reached, { n: sum.reached }, r.newRecord ? S.newRecord : '', near), sum.tier) + sumRow(S.streak, { n: sum.bestStreak }) + sumRow(S.taken, { n: sum.taken }) + '</ul>' +
       (cpLine.length ? '<p class="sub lb-cps' + (allOwned ? ' lb-keepnone' : '') + '">' + cpLine.map(function (t, i) { return '<span class="' + (allOwned && i === cpLine.length - 1 ? 'kn' : 'cp') + '">' + esc(t) + '</span>'; }).join('<span class="dot" aria-hidden="true">・</span>') + '</p>' : '') +
       (keep || (got.length ? wallHTML(got) : '<p class="sub">' + esc(S.none || '') + '</p>'));
     // 唱片櫃／出門看看：併進底下固定那一列（「再挑戰一趟」上面），矮螢幕也不用捲（審查 #12）
     h += '</div></div><div class="foot lb-endbtns"><div class="row"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>' +
-      '<button type="button" class="lb-btn pri big wide key" data-a="again">' + esc(S.again || '') + '</button></div>';
+      '<button type="button" class="lb-btn pri big wide key" data-a="again">' + esc((S.again || '') + againTier()) + '</button></div>';
     var box = el('div', 'lb-screen end', h); panel.appendChild(box);
     sfx('lose');
     box.addEventListener('click', function (e) {
