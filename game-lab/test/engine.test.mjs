@@ -4905,20 +4905,34 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     const TL = EN.treeList(K, cr(6000), 'heresy');
     eq(TL.map(x => [x.id, x.path, x.layer, x.k, x.cost, x.why, x.soon || null]), [['a1', 'a', 1, 0, 1, null, null], ['a2', 'a', 2, 0, 2, 'need', null], ['a3', 'a', 3, 0, 2, 'need', null], ['b1', 'b', 1, 0, 1, null, null], ['b2', 'b', 2, 0, 2, 'need', null],
       ['b3', 'b', 3, 0, 2, 'need', null], ['c1', 'c', 1, 0, null, 'locked', 'market'], ['c2', 'c', 2, 0, null, 'locked', 'apex'], ['c3', 'c', 3, 0, null, 'locked', 'apex']], 'treeList: path, layer, cost, why, soon');
-    eq([TL[0].pick, TL[2].cell, TL[2].max, TL[4].op, TL[5].n], ['x_dist', 'honest', 3, 'spine', 1], 'treeList: pick／cell／max／op／n');
+    eq([TL[0].pick, TL[2].cell, TL[2].max, TL[4].op, TL[5].n], ['x_crack', 'honest', 3, 'spine', 1], 'treeList: pick／cell／max／op／n');
     eq(EN.facTalOf(K, 'pearl', { a1: 2, a3: 7, c1: 1, zz: 1, b2: 1 }), { a1: 1, a3: 3, b2: 1 }, 'facTalOf: live nodes only, clamped (no prerequisite check)');
     eq([EN.treeNodes(Object.assign({}, K, { factions: undefined }), 'hall'), EN.treeArgs(Object.assign({}, K, { factions: undefined }), cr(18000), 'hall')], [[], {}], 'no factions → no tree'); }
 
-  // ---- 7 進局：start 節點＝開局就有那項本派選項（地下串連 +3）、不碰 run.rng；換派；挑著學出兩個（選秀不出）；sim 照 priority 挑 ----
-  { const nr = (ace, tal, ex) => EN.newRun(K, Object.assign({ seedKey: 'tal', runNo: 2, ace, prologue: false, fac: true, facTal: tal }, ex || {}));
+  // ---- 7 進局：start 節點（content.factions.treeStart 'first'＝本派格先出這項：照節點順序排在雜湊前面、照樣佔那一級；'start'＝規格原意開局就送，留著當對照）；
+  //      不碰 run.rng；換派；挑著學出兩個（選秀不出）；sim 照 priority 挑 ----
+  { eq(F.treeStart, 'first', 'content: treeStart first (棒三裁定)');
+    const KS = Object.assign({}, K, { factions: Object.assign({}, F, { treeStart: 'start' }) });
+    const nr = (ace, tal, ex, c) => EN.newRun(c || K, Object.assign({ seedKey: 'tal', runNo: 2, ace, prologue: false, fac: true, facTal: tal }, ex || {}));
     const base = EN.newRun(K, { seedKey: 'tal', runNo: 2, ace: 'pearl', prologue: false, fac: true });
-    let r = nr('hall', { a1: 1, b1: 1, a3: 2 }); eq([r.fac.picks, r.fac.tal, r.picks], [{ h_eye: 1, h_old: 1 }, { a1: 1, a3: 2, b1: 1 }, []], 'hall a1 b1: picks 識貨 老派 at start (not a level choice); tal in node order');
-    r = nr('pearl', { a1: 1, b1: 1, b2: 1, b3: 1 }); eq([r.fac.picks, r.maxHp - base.maxHp, r.hp - base.hp, r.hpIn, r.rng, r.bossAce], [{ p_bench: 1, p_remember: 1, p_hp: 1, p_regular: 1 }, 3, 3, r.hp, base.rng, base.bossAce], 'pearl b2 地下串連: maxHp／hp +3; rng untouched');
-    r = nr('heresy', { b2: 1, b3: 1 }); eq(r.fac.picks, {}, 'heresy b2／b3: not picks (outcome effects)');
-    r = nr('pearl', { b2: 1, a1: 1 }); const sw = EN.switchAce(r, K, 'hall', { facTal: { a1: 1, a2: 1 } });
-    eq([sw.ok, r.ace, r.fac.picks, r.fac.tal, r.maxHp, r.hp], [true, 'hall', { h_eye: 1 }, { a1: 1, a2: 1 }, base.maxHp, base.hp], 'switchAce: old tree removed (地下串連 −3), new tree applied');
-    r = nr('pearl', { b2: 1 }); EN.switchAce(r, K, 'heresy'); eq([r.fac.tal, r.fac.picks, r.maxHp], [{}, {}, base.maxHp], 'switchAce without facTal: empty tree');
-    const lvOf = (run, lv) => { run.level = lv; run.levelUps = 1; run.pending = null; return EN.levelOffer(run, K).filter(x => x.pick === 'fac'); };
+    const lvOf = (run, lv, c) => { run.level = lv; run.levelUps = 1; run.pending = null; return EN.levelOffer(run, c || K).filter(x => x.pick === 'fac'); };
+    const a1 = t => F[t].tree.find(x => x.id === 'a1').pick, b1 = t => F[t].tree.find(x => x.id === 'b1').pick;
+    eq(TIERS.map(a1), ['h_first', 'p_bench', 'x_crack'], '甲 I points at 初版／冷板凳／破音 (not the main-axis +1 star: 識貨／失真 early = +58%)');
+    // first：開局什麼都不送；本派格先出樹上點的（a1 → b1 → b2 → b3），挑著學出前兩個；拿過的不再出
+    let r = nr('hall', { a1: 1, b1: 1, a3: 2 }); eq([r.fac.picks, r.fac.tal, r.picks], [{}, { a1: 1, a3: 2, b1: 1 }, []], 'first: nothing at start; tal in node order');
+    eq([lvOf(r, 5).map(x => x.id), lvOf(nr('hall', { a1: 1, a2: 1, b1: 1 }), 5).map(x => x.id)], [[a1('hall')], [a1('hall'), b1('hall')]], 'first: Lv5 slot = tree picks first (two with 挑著學)');
+    r = nr('pearl', { a1: 1, b1: 1, b2: 1, b3: 1 }); eq([r.fac.picks, r.maxHp, r.hp, r.rng, r.bossAce], [{}, base.maxHp, base.hp, base.rng, base.bossAce], 'first: pearl b2 地下串連 not given at start; rng untouched');
+    r.fac.picks.p_bench = 1; eq(lvOf(r, 10).map(x => x.id), ['p_remember'], 'first: taken ones skipped, next tree pick');
+    r = nr('heresy', { a2: 1 }); const h0 = lvOf(nr('heresy', {}), 5).map(x => x.id); eq(lvOf(r, 5).slice(0, 1).map(x => x.id), h0, 'first: no start nodes → hash order (same first pick as no tree)');
+    r = nr('pearl', { b1: 1 }); EN.switchAce(r, K, 'hall', { facTal: { a1: 1, a2: 1 } }); eq([r.ace, r.fac.picks, r.fac.tal, lvOf(r, 5).map(x => x.id)[0]], ['hall', {}, { a1: 1, a2: 1 }, a1('hall')], 'first: switchAce takes the new tree');
+    // start（對照）：開局就送；地下串連 +3；換派拿回來
+    r = nr('hall', { a1: 1, b1: 1 }, {}, KS); eq([r.fac.picks, r.picks], [{ [a1('hall')]: 1, [b1('hall')]: 1 }, []], 'start: picks at start (not a level choice)');
+    r = nr('pearl', { a1: 1, b1: 1, b2: 1, b3: 1 }, {}, KS); eq([r.fac.picks, r.maxHp - base.maxHp, r.hp - base.hp, r.hpIn, r.rng], [{ p_bench: 1, p_remember: 1, p_hp: 1, p_regular: 1 }, 3, 3, r.hp, base.rng], 'start: pearl b2 地下串連 maxHp／hp +3; rng untouched');
+    r = nr('heresy', { b2: 1, b3: 1 }, {}, KS); eq(r.fac.picks, {}, 'start: heresy b2／b3 are not picks (outcome effects)');
+    r = nr('pearl', { b2: 1, a1: 1 }, {}, KS); const sw = EN.switchAce(r, KS, 'hall', { facTal: { a1: 1, a2: 1 } });
+    eq([sw.ok, r.ace, r.fac.picks, r.fac.tal, r.maxHp, r.hp], [true, 'hall', { [a1('hall')]: 1 }, { a1: 1, a2: 1 }, base.maxHp, base.hp], 'start: switchAce — old tree removed (地下串連 −3), new tree applied');
+    r = nr('pearl', { b2: 1 }, {}, KS); EN.switchAce(r, KS, 'heresy'); eq([r.fac.tal, r.fac.picks, r.maxHp], [{}, {}, base.maxHp], 'switchAce without facTal: empty tree');
+    // 挑著學、選秀、sim 策略
     eq([lvOf(nr('hall', {}), 5).length, lvOf(nr('hall', { a2: 1 }), 5).length, lvOf(nr('hall', { a2: 1 }), 6).length], [1, 2, 0], '挑著學: Lv5 two fac slots (one without it); Lv6 none');
     r = nr('hall', { a2: 1 }); r.fac.picks = { h_eye: 1, h_first: 1, h_old: 1, h_seen: 1 }; eq(lvOf(r, 10).map(x => x.id), ['h_leech'], '挑著學: only one left → one slot');
     r = nr('hall', { a2: 1 }); eq(EN.levelOffer(r, K, { draft: true }).filter(x => x.pick === 'fac').length, 0, 'draft: no fac slot even with 挑著學');
@@ -4926,23 +4940,6 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     eq(EN.runPolicy(r, K), { type: 'level', pick: 'fac', id: 'h_leech' }, 'runPolicy: two fac slots → by content priority (吸血 first)');
     const ch = EN.choose(r, K, { type: 'level', pick: 'fac', id: 'h_first' }); ok(ch.ok && r.fac.picks.h_first === 1 && !r.fac.picks.h_leech, 'choose the second fac slot');
     ok(!('fac' in EN.newRun(K, { seedKey: 'tal', runNo: 2, ace: 'hall', prologue: false, facTal: { a1: 1 } })), 'facTal without fac → nothing');
-    // treeOccupy（派樹開局給的本派選項佔一級）：之後本派格那一級只出 {pick:'fac', id, owed:true}（不加屬性）；照節點順序；欠完才回到一般本派格；選秀照舊不出
-    { const KO = Object.assign({}, K, { factions: Object.assign({}, F, { treeOccupy: true }) }), KX = Object.assign({}, K, { factions: Object.assign({}, F, { treeOccupy: false }) });
-      const no = (c, ace, tal) => EN.newRun(c, { seedKey: 'owe', runNo: 2, ace, prologue: false, fac: true, facTal: tal });
-      let q = no(KO, 'pearl', { a1: 1, b1: 1, b2: 1 }); eq([q.fac.owe, q.fac.picks], [['p_bench', 'p_remember', 'p_hp'], { p_bench: 1, p_remember: 1, p_hp: 1 }], 'owe in node order');
-      ok(!('owe' in no(KX, 'pearl', { a1: 1 }).fac) && !('owe' in no(KO, 'pearl', { a2: 1, a3: 1 }).fac), 'no owe without treeOccupy／without start nodes');
-      const lv = (run, c, n) => { run.level = n; run.levelUps = 1; run.pending = null; const o = EN.levelOffer(run, c); run.pending = { type: 'level', offer: o }; return o; };
-      eq(lv(q, KO, 5), [{ pick: 'fac', id: 'p_bench', owed: true }], 'Lv5: only the owed slot');
-      const atk0 = q.atk, def0 = q.def, mx0 = q.maxHp, ch1 = EN.choose(q, KO, EN.runPolicy(q, KO));
-      eq([ch1.ok, ch1.effects[0], q.fac.owe, q.atk - atk0, q.def - def0, q.maxHp - mx0, q.picks.slice(-1)], [true, { level: 'fac', id: 'p_bench', n: 0, owed: true }, ['p_remember', 'p_hp'], 0, 0, 0, ['fac:p_bench']], 'owed level: no attribute, owe shifts');
-      eq(lv(q, KO, 6).filter(x => x.pick === 'fac'), [], 'Lv6: normal (no fac slot)');
-      lv(q, KO, 10); EN.choose(q, KO, EN.runPolicy(q, KO)); lv(q, KO, 15); EN.choose(q, KO, EN.runPolicy(q, KO)); ok(!('owe' in q.fac), 'owe paid off after three fac levels');
-      eq(lv(q, KO, 20).filter(x => x.pick === 'fac').length, 1, 'Lv20: normal fac slot again');
-      eq(EN.choose(q, KO, { type: 'level', pick: 'fac', id: 'p_bench' }).ok, false, 'Lv20: an already-learned pick is not offered → rejected');
-      q = no(KO, 'hall', { a1: 1 }); eq(EN.levelOffer(q, KO, { draft: true }).filter(x => x.pick === 'fac').length, 0, 'draft: no owed slot');
-      q = no(KO, 'hall', { a1: 1, b1: 1 }); q.fac.owe = ['h_old', 'zz', 'h_old', 'h_first']; EN.fixFac(q, KO); eq(q.fac.owe, ['h_old'], 'fixFac: owe = picks we have, unique');
-      q = no(KO, 'hall', { a1: 1 }); const off = lv(q, KO, 5); EN.fixFac(q, KO); eq(q.pending.offer, off, 'fixFac keeps the owed offer');
-      q = no(KO, 'pearl', { b1: 1, b2: 1 }); EN.switchAce(q, KO, 'hall', { facTal: { a1: 1 } }); eq(q.fac.owe, ['h_eye'], 'switchAce: owe from the new tree only'); }
     r = nr('hall', { a1: 1 }); r.fac.tal = { a1: 1, zz: 2, c1: 1, a3: 7 }; eq([EN.fixFac(r, K), r.fac.tal], [true, { a1: 1, a3: 3 }], 'fixFac: tal → live nodes, clamped');
     r = nr('hall', { a1: 1, a3: 2 }); eq(EN.fixFac(r, K), false, 'fixFac: good tal untouched'); }
 
@@ -4959,11 +4956,16 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     const T = (k, n) => k + ':' + n + ':' + NT[k].replace('{n}', n);
     eq(EN.facFxOf(K, { fac: { picks: {}, tal: {} } }, 'heresy'), EN.facFxOf(K, { fac: { picks: {} } }, 'heresy'), 'facFxOf: empty tree adds no key');
     const fxAll = EN.facFxOf(K, { fac: { picks: {}, tal: { a2: 1, a3: 2, b2: 1, b3: 1 } } }, 'heresy');
-    eq([fxAll.pick2, fxAll.deep, fxAll.deepCell, fxAll.loseNoAtk, fxAll.tieHeal], [1, 2, 'honest', 1, 1], 'facFxOf: pick2／deep／deepCell／loseNoAtk／tieHeal');
+    eq([fxAll.pick2, fxAll.deep, fxAll.deepCell, fxAll.deepPer, fxAll.spine, fxAll.tieHeal], [1, 2, 'honest', 2, 1, 1], 'facFxOf: pick2／deep／deepCell／deepPer／spine／tieHeal');
     eq([EN.facFxOf(K, { fac: { picks: {}, tal: { a3: 3 } } }, 'pearl').deepCell, EN.facFxOf(K, { fac: { picks: {}, tal: { a3: 9 } } }, 'hall').deep], ['caught', 3], 'deep cell (pearl caught), clamped to max');
     let d = facDuel3('heresy', {}, { eAtk: 2 }); eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 5, 0], 'heresy no tree: lose 2 +1 cost +2 his 品味 = 5');
     d = facDuel3('heresy', { b2: 1 }, { eAtk: 2 }); let r = pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 });
-    eq([kv(r), fn(r), r.notes.some(n => n.stat === 'eAtk')], [['mirrorLose', 0, 3, 0], [T('loseCost', 1), T('spine', 2)], false], '刺蝟: first lose → his 品味 not added ({n}＝2)');
+    eq([kv(r), fn(r), r.notes.filter(n => n.stat === 'eAtk').map(n => n.n)], [['mirrorLose', 0, 4, 0], [T('loseCost', 1), T('spine', 1)], [1]], '刺蝟 (n 1): first lose → his 品味 2 counts 1 ({n}＝1)');
+    { const KF = Object.assign({}, K, { factions: Object.assign({}, F, { heresy: Object.assign({}, F.heresy, { tree: F.heresy.tree.map(x => x.op === 'spine' ? Object.assign({}, x, { n: undefined }) : x) }) }) });
+      const src = { bag: K.gifts.heresy.concat(BP3), ace: 'heresy', relics: [], fac: { picks: {}, tal: { b2: 1 }, trialNodes: {} } };
+      const { duel: dz } = EN.startDuel(EN.playerDef(KF, src, { fac: true }), EN.enemyDef(KF, 'copycat', {}), { seed: 13, hintTable: HINTS });
+      dz.p.atk = 0; dz.p.def = 0; dz.e.atk = 2; dz.e.def = 0; dz.p.relics = []; dz.e.hit = 0; dz.p.hp = 6; dz.e.hp = 99; dz.e.max = 99; dz.p.hand[0] = mk(1, 1, 2);
+      const rz = EN.preview(dz, { i: 0, attr: 'h' }, { attr: 'h', star: 4 }); eq([kv(rz), fn(rz)], [['mirrorLose', 0, 3, 0], [T('loseCost', 1), T('spine', 2)]], '刺蝟 without n: his 品味 not added at all'); }
     d.p.facN.lose = 1; eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 5, 0], '刺蝟: only the first lose');
     d.p.facN.lose = 0; eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'c', star: 3 })), ['countered', 0, 5, 0], '刺蝟: countered unchanged');
     d = facDuel3('heresy', { b2: 1 }, { eAtk: 0 }); eq(fn(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), [T('loseCost', 1)], '刺蝟: no 品味 → no note');
@@ -4981,10 +4983,12 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
       EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
       const out = EN.finishFight(run, K); return [out.heal, out.deep || 0];
     };
-    eq(deepRun('hall', { a3: 2 }, { honest: 3 }), [5, 2], 'hall 口碑 Lv2, 3 honest hands → +2 (3 + 2)');
-    eq(deepRun('hall', { a3: 3 }, { honest: 1 }), [4, 1], 'hall 口碑 Lv3, 1 honest hand → +1');
-    eq(deepRun('pearl', { a3: 3 }, { honest: 4, caught: 1 }), [4, 1], 'pearl 識破 counts caught (1), not honest');
-    eq(deepRun('heresy', { a3: 1 }, { honest: 0 }), [3, 0], 'no honest hand → nothing');
+    eq(F.hall.tree.find(x => x.id === 'a3').per, 2, 'deep per 2 (every two hands = +1)');
+    eq(deepRun('hall', { a3: 2 }, { honest: 4 }), [5, 2], 'hall 口碑 Lv2, 4 honest hands → +2 (3 + 2)');
+    eq(deepRun('hall', { a3: 2 }, { honest: 3 }), [4, 1], 'hall 口碑 Lv2, 3 honest hands → +1 (per 2)');
+    eq(deepRun('hall', { a3: 1 }, { honest: 6 }), [4, 1], 'hall 口碑 Lv1, 6 honest hands → +1 (cap = level)');
+    eq(deepRun('pearl', { a3: 3 }, { honest: 4, caught: 2 }), [4, 1], 'pearl 識破 counts caught (2 → 1), not honest');
+    eq(deepRun('heresy', { a3: 3 }, { honest: 1 }), [3, 0], 'one honest hand → nothing (per 2)');
     eq(deepRun('hall', {}, { honest: 3 }), [3, 0], 'no tree → nothing'); }
 
   // ---- 10 老客人的面子（經典乙 III）：說情重打那場開打聲望 +3（不超過上限）；新手保底那次不算 ----

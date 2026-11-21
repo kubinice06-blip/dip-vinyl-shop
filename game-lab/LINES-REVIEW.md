@@ -2274,11 +2274,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・text | 先聲奪人：開局就學會「識貨」。 | 本規格新寫 | `factions.hall.tree.a1.text` |
+| （畫面字）・text | 先聲奪人：本派格先出「初版」。 | 本規格新寫 | `factions.hall.tree.a1.text` |
 | （畫面字）・text | 挑著學：本派格一次出兩個，挑一個學。 | 本規格新寫 | `factions.hall.tree.a2.text` |
-| （畫面字）・text | 口碑：信對一手，打贏多回 1 聲望（幾級最多幾手）。 | 本規格新寫 | `factions.hall.tree.a3.text` |
-| （畫面字）・text | 老派：開局就學會「老派」。 | 本規格新寫 | `factions.hall.tree.b1.text` |
-| （畫面字）・text | 見過世面：開局就學會「見過世面」。 | 本規格新寫 | `factions.hall.tree.b2.text` |
+| （畫面字）・text | 口碑：每信對兩手，打贏多回 1；幾級就最多回幾。 | 本規格新寫 | `factions.hall.tree.a3.text` |
+| （畫面字）・text | 老派：本派格先出「老派」。 | 本規格新寫 | `factions.hall.tree.b1.text` |
+| （畫面字）・text | 見過世面：本派格先出「見過世面」。 | 本規格新寫 | `factions.hall.tree.b2.text` |
 | （畫面字）・text | 老客人的面子：說情重打那場，開打聲望 +3。 | 本規格新寫 | `factions.hall.tree.b3.text` |
 | （畫面字）・text | 老店（之後開放）：開局老闆多送一張。 | 本規格新寫 | `factions.hall.tree.c1.text` |
 | （畫面字）・name | 鎮店盤眼光（之後開放） | 本規格新寫 | `factions.hall.tree.c2.name` |
@@ -2308,12 +2308,12 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・text | 先聲奪人：開局就學會「冷板凳」。 | 本規格新寫 | `factions.pearl.tree.a1.text` |
+| （畫面字）・text | 先聲奪人：本派格先出「冷板凳」。 | 本規格新寫 | `factions.pearl.tree.a1.text` |
 | （畫面字）・text | 挑著學：本派格一次出兩個，挑一個學。 | 本規格新寫 | `factions.pearl.tree.a2.text` |
-| （畫面字）・text | 識破：拆穿一手，打贏多回 1 聲望（幾級最多幾手）。 | 本規格新寫 | `factions.pearl.tree.a3.text` |
-| （畫面字）・text | 有人記得：開局就學會「有人記得」。 | 本規格新寫 | `factions.pearl.tree.b1.text` |
-| （畫面字）・text | 地下串連：開局就學會「地下串連」。 | 本規格新寫 | `factions.pearl.tree.b2.text` |
-| （畫面字）・text | 熟客：開局就學會「熟客」。 | 本規格新寫 | `factions.pearl.tree.b3.text` |
+| （畫面字）・text | 識破：每拆穿兩手，打贏多回 1；幾級就最多回幾。 | 本規格新寫 | `factions.pearl.tree.a3.text` |
+| （畫面字）・text | 有人記得：本派格先出「有人記得」。 | 本規格新寫 | `factions.pearl.tree.b1.text` |
+| （畫面字）・text | 地下串連：本派格先出「地下串連」。 | 本規格新寫 | `factions.pearl.tree.b2.text` |
+| （畫面字）・text | 熟客：本派格先出「熟客」。 | 本規格新寫 | `factions.pearl.tree.b3.text` |
 | （畫面字）・text | 翻箱人（之後開放）：戰利品列多翻一張。 | 本規格新寫 | `factions.pearl.tree.c1.text` |
 | （畫面字）・name | 鎮店盤眼光（之後開放） | 本規格新寫 | `factions.pearl.tree.c2.name` |
 | （畫面字）・name | 雙唱盤（之後開放） | 本規格新寫 | `factions.pearl.tree.c3.name` |
@@ -2342,11 +2342,11 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字）・text | 先聲奪人：開局就學會「失真」。 | 本規格新寫 | `factions.heresy.tree.a1.text` |
+| （畫面字）・text | 先聲奪人：本派格先出「破音」。 | 本規格新寫 | `factions.heresy.tree.a1.text` |
 | （畫面字）・text | 挑著學：本派格一次出兩個，挑一個學。 | 本規格新寫 | `factions.heresy.tree.a2.text` |
-| （畫面字）・text | 破例：信對一手，打贏多回 1 聲望（幾級最多幾手）。 | 本規格新寫 | `factions.heresy.tree.a3.text` |
-| （畫面字）・text | 臉皮厚：開局就學會「臉皮厚」。 | 本規格新寫 | `factions.heresy.tree.b1.text` |
-| （畫面字）・text | 刺蝟：每場第一次比星輸，他的品味不加。 | 本規格新寫 | `factions.heresy.tree.b2.text` |
+| （畫面字）・text | 破例：每信對兩手，打贏多回 1；幾級就最多回幾。 | 本規格新寫 | `factions.heresy.tree.a3.text` |
+| （畫面字）・text | 臉皮厚：本派格先出「臉皮厚」。 | 本規格新寫 | `factions.heresy.tree.b1.text` |
+| （畫面字）・text | 刺蝟：每場第一次比星輸，他的品味少算 1。 | 本規格新寫 | `factions.heresy.tree.b2.text` |
 | （畫面字）・text | 圈內人：同色平手回 1 聲望（每場一次）。 | 本規格新寫 | `factions.heresy.tree.b3.text` |
 | （畫面字）・text | 地下名店（之後開放）：硬蕊 5 星唱片八折（只動錢）。 | 本規格新寫 | `factions.heresy.tree.c1.text` |
 | （畫面字）・name | 鎮店盤眼光（之後開放） | 本規格新寫 | `factions.heresy.tree.c2.name` |
@@ -2436,7 +2436,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・treeRespec | 全部重配（免費） | 本規格新寫 | `factions.ui.treeRespec` |
 | （畫面字）・treeHow | 熟練每升一級，多 1 派點。 | 本規格新寫 | `factions.ui.treeHow` |
 | （畫面字）・treeOffNote | 關掉樂歷時，派樹也不算。 | 本規格新寫 | `factions.ui.treeOffNote` |
-| （畫面字）・treeStart | 開局就有：{list} | 本規格新寫 | `factions.ui.treeStart` |
+| （畫面字）・treeStart | 本派格先出：{list} | 本規格新寫 | `factions.ui.treeStart` |
 | （畫面字）・deepWin | {name}：多回 {n} 聲望 | 本規格新寫 | `factions.ui.deepWin` |
 | （畫面字）・pleaHp | 老客人的面子：聲望 +{n} | 本規格新寫 | `factions.ui.pleaHp` |
 

@@ -2633,6 +2633,9 @@
     on: true, levelEvery: 5, occupy: true,
     // 派樹的價（第 D 波棒三；SPEC-D §3.7a）：第 1／2／3 層 layer 點（第 3 層另要熟練 Lv5＝C.career.prof.auto tier3）；深耕第 2、3 級各 more 點（深耕 D 波封頂 3 級＝節點的 max）
     treeCost: { layer: [1, 2, 2], more: 1 },
+    // 派樹「同本派選項」那幾格（op start）的意思（棒三裁定，build3/SIM.md）：'first'＝本派格先出這項（照節點順序排在雜湊前面；還是佔那一級、不白送）；
+    //   'start'＝規格原意「開局就有」（量過：一項≈白送一級屬性，全樹對只開被動 +90–124%，F6 上限 +30% → 不採，留著當對照）
+    treeStart: 'first',
     notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋：多扣 {n}',
       crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸：多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}',
       spine: '刺蝟：少扣 {n}', insider: '圈內人：回 {n} 聲望' },   // 第 D 波棒三派樹（異端乙 II、III）：spine {n}＝他沒加上的品味、insider {n}＝回幾聲望
@@ -2667,11 +2670,11 @@
         { id: 'h_leech', name: '吸血', op: 'leech', max: 2, second: true, text: '扣整張那手，扣到的一半回聲望，一場最多 2。' } ],
       priority: ['h_leech', 'h_eye', 'h_first', 'h_seen', 'h_old'],
       tree: [
-        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'h_eye', text: '開局就學會「識貨」。' },
+        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'h_first', text: '本派格先出「初版」。' },
         { id: 'a2', name: '挑著學', op: 'pick2', text: '本派格一次出兩個，挑一個學。' },
-        { id: 'a3', name: '口碑', op: 'deep', cell: 'honest', max: 3, text: '信對一手，打贏多回 1 聲望（幾級最多幾手）。' },
-        { id: 'b1', name: '老派', op: 'start', pick: 'h_old', text: '開局就學會「老派」。' },
-        { id: 'b2', name: '見過世面', op: 'start', pick: 'h_seen', text: '開局就學會「見過世面」。' },
+        { id: 'a3', name: '口碑', op: 'deep', cell: 'honest', per: 2, max: 3, text: '每信對兩手，打贏多回 1；幾級就最多回幾。' },
+        { id: 'b1', name: '老派', op: 'start', pick: 'h_old', text: '本派格先出「老派」。' },
+        { id: 'b2', name: '見過世面', op: 'start', pick: 'h_seen', text: '本派格先出「見過世面」。' },
         { id: 'b3', name: '老客人的面子', op: 'pleaHp', n: 3, text: '說情重打那場，開打聲望 +3。' },
         { id: 'c1', name: '老店', soon: 'later', text: '開局老闆多送一張。' },
         { id: 'c2', name: '鎮店盤眼光', soon: 'apex' },
@@ -2688,12 +2691,12 @@
         { id: 'p_thorn', name: '反傷', op: 'thorn', n: 2, max: 2, second: true, text: '被剋時他也扣 2，一場最多 2 次。' } ],
       priority: ['p_thorn', 'p_remember', 'p_bench', 'p_regular', 'p_hp'],
       tree: [
-        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'p_bench', text: '開局就學會「冷板凳」。' },
+        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'p_bench', text: '本派格先出「冷板凳」。' },
         { id: 'a2', name: '挑著學', op: 'pick2', text: '本派格一次出兩個，挑一個學。' },
-        { id: 'a3', name: '識破', op: 'deep', cell: 'caught', max: 3, text: '拆穿一手，打贏多回 1 聲望（幾級最多幾手）。' },
-        { id: 'b1', name: '有人記得', op: 'start', pick: 'p_remember', text: '開局就學會「有人記得」。' },
-        { id: 'b2', name: '地下串連', op: 'start', pick: 'p_hp', text: '開局就學會「地下串連」。' },
-        { id: 'b3', name: '熟客', op: 'start', pick: 'p_regular', text: '開局就學會「熟客」。' },
+        { id: 'a3', name: '識破', op: 'deep', cell: 'caught', per: 2, max: 3, text: '每拆穿兩手，打贏多回 1；幾級就最多回幾。' },
+        { id: 'b1', name: '有人記得', op: 'start', pick: 'p_remember', text: '本派格先出「有人記得」。' },
+        { id: 'b2', name: '地下串連', op: 'start', pick: 'p_hp', text: '本派格先出「地下串連」。' },
+        { id: 'b3', name: '熟客', op: 'start', pick: 'p_regular', text: '本派格先出「熟客」。' },
         { id: 'c1', name: '翻箱人', soon: 'later', text: '戰利品列多翻一張。' },
         { id: 'c2', name: '鎮店盤眼光', soon: 'apex' },
         { id: 'c3', name: '雙唱盤', soon: 'apex' } ] },
@@ -2709,11 +2712,11 @@
         { id: 'x_crit', name: '爆擊', op: 'critSafe', n: 1, second: true, text: '拆穿再多扣 1，比星輸不再多扣。' } ],
       priority: ['x_crit', 'x_dist', 'x_crack', 'x_echo', 'x_thick'],
       tree: [
-        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'x_dist', text: '開局就學會「失真」。' },
+        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'x_crack', text: '本派格先出「破音」。' },
         { id: 'a2', name: '挑著學', op: 'pick2', text: '本派格一次出兩個，挑一個學。' },
-        { id: 'a3', name: '破例', op: 'deep', cell: 'honest', max: 3, text: '信對一手，打贏多回 1 聲望（幾級最多幾手）。' },
-        { id: 'b1', name: '臉皮厚', op: 'start', pick: 'x_thick', text: '開局就學會「臉皮厚」。' },
-        { id: 'b2', name: '刺蝟', op: 'spine', text: '每場第一次比星輸，他的品味不加。' },
+        { id: 'a3', name: '破例', op: 'deep', cell: 'honest', per: 2, max: 3, text: '每信對兩手，打贏多回 1；幾級就最多回幾。' },
+        { id: 'b1', name: '臉皮厚', op: 'start', pick: 'x_thick', text: '本派格先出「臉皮厚」。' },
+        { id: 'b2', name: '刺蝟', op: 'spine', n: 1, text: '每場第一次比星輸，他的品味少算 1。' },
         { id: 'b3', name: '圈內人', op: 'tieHeal', n: 1, text: '同色平手回 1 聲望（每場一次）。' },
         { id: 'c1', name: '地下名店', soon: 'market', text: '硬蕊 5 星唱片八折（只動錢）。' },
         { id: 'c2', name: '鎮店盤眼光', soon: 'apex' },
@@ -2741,7 +2744,7 @@
       treeSoon: '之後開放', treeSoonApex: '鎮店盤上線後開', treeSoonMarket: '市集上線後開',
       treeRespec: '全部重配（免費）', treeHow: '熟練每升一級，多 1 派點。',
       treeOffNote: '關掉樂歷時，派樹也不算。',                           // 關樂歷那一趟（talentArgs／treeArgs 都回 {}）
-      treeStart: '開局就有：{list}',                                     // 本派說明、我的狀態：派樹開局給的本派選項
+      treeStart: '本派格先出：{list}',                                   // 本派說明、我的狀態：派樹排在前面的本派選項（treeStart 'first'）
       deepWin: '{name}：多回 {n} 聲望',                                   // 打贏那場深耕多回的（finishFight 回 deep {name, n}）
       pleaHp: '老客人的面子：聲望 +{n}'                                   // 說情重打那場開打（choose retry 的 effect pleaHp）
     }

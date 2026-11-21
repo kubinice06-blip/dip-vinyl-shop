@@ -1433,7 +1433,8 @@ function treeShape(D, w, P, E, ok) {
       ok(!!p && !p.second, wn + '：start 要是這派的本派選項、不能是第二招（R-F5）：' + x.pick);
       ok(!starts.has(x.pick), wn + '：同一項本派選項不給兩次'); starts.add(x.pick);
     }
-    if (x.op === 'deep') ok(['honest', 'caught'].includes(x.cell) && Number.isInteger(x.max) && x.max >= 1 && x.max <= 3 && x.id === 'a3', wn + '：深耕在甲 III、cell honest／caught、max 1–3（D 波封頂 3）');
+    if (x.op === 'deep') ok(['honest', 'caught'].includes(x.cell) && Number.isInteger(x.max) && x.max >= 1 && x.max <= 3 && x.id === 'a3' && (x.per == null || (Number.isInteger(x.per) && x.per >= 1 && x.per <= 3)), wn + '：深耕在甲 III、cell honest／caught、max 1–3（D 波封頂 3）、per 1–3（幾手算一次）');
+    if (x.op === 'spine') ok(x.n == null || (Number.isInteger(x.n) && x.n >= 1 && x.n <= 3), wn + '：刺蝟 n 1–3（他的品味少算幾點；沒寫＝整個不加）');
     if (x.op === 'pleaHp') ok(Number.isInteger(x.n) && x.n >= 1 && x.n <= 5, wn + '：pleaHp n 1–5');
     if (x.op === 'tieHeal') ok(Number.isInteger(x.n) && x.n >= 1 && x.n <= 3, wn + '：tieHeal n 1–3');
     if (x.op === 'pick2') ok(x.id === 'a2', wn + '：挑著學在甲 II');
@@ -1479,6 +1480,7 @@ export function factionProblems(C, E) {
     ok(Array.isArray(D.priority) && D.priority.length === ids.size && sameSet(D.priority, [...ids]), w + '.priority 要是 picks id 的排列');
     treeShape(D, w, P, E, ok);
   }
+  ok(F.treeStart == null || ['first', 'start'].includes(F.treeStart), 'factions.treeStart 要是 first（本派格先出）／start（開局就送，規格原意）');
   const TC = F.treeCost || {};
   ok(Array.isArray(TC.layer) && TC.layer.length === 3 && TC.layer.every(x => Number.isInteger(x) && x >= 1 && x <= 5) && Number.isInteger(TC.more) && TC.more >= 1 && TC.more <= 5, 'factions.treeCost：layer 三層各 1–5 點、more（深耕第 2 級起每級）1–5');
   const S = F.apexSwap;
