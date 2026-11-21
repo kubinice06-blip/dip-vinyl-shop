@@ -2092,6 +2092,8 @@
   //     阿芳 afang：開咖啡店，來找店裡要放的歌
   //     老陳 laochen：退休老師，年輕時買不起、現在慢慢補，有耐心
   //     周姐 zhoujie（行家）：以前在別間唱片行顧過櫃檯，跟老闆是老朋友。講的知識只照抄藝人介紹原句或填卡片欄位，不編（§6）
+  //   off（審查修正 p2b 重量）：照 sim 量到的切磋勝率排出個性順序——小魚最好打、阿芳、阿凱／大頭、老陳、周姐最難（各人牌組強弱不同，off 要補：
+  //     小魚 −3、阿芳 −4、阿凱 +2、大頭 −3、老陳 +11、周姐 0；老陳的牌最軟，要 +11 才排到第二難）。scratchpad liveshop/p2b/fix/SIM.md
   //   牌組（§7.4）：只從核心卡（cards.js，有介紹、封面、試聽）選，不跟 10 位主線客人、老闆四張、特價箱、王牌重複，不選頂點卡；
   //     主屬性那軸嚴格峰值 ≥4 張（deckMain＝main）、曲風對得上愛停的箱。棋力與聲望照主線同一條 V3 曲線（engine trialGuest at posEff），
   //     honesty 一律一般客人的 sometimes（說真話機率由曲線蓋過）。tune：底牌星數加權多數決，撞格往下一名分散、每格最多 2 位（同 C.enemies 的作法）：
@@ -2100,7 +2102,7 @@
     xiaoyu: {
       name: '小魚', look: 'girl', voice: { freq: 740, wave: 'triangle' },
       likes: ['c-citypop', 'c-folk', 'c-listen'], weight: 1.4, encW: 2,
-      enc: { off: -2, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'calm',
+      enc: { off: -3, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'calm',
         deck: ["miki matsubara|pocket park", "大貫妙子|grey skies", "anri|timely!!", "間宮貴子|love trip",
           "judee sill|judee sill", "nick drake|bryter layter", "vashti bunyan|just another diamond day"] }
     },
@@ -2109,7 +2111,7 @@
       look: { skin: 's', hair: 'neat', hairColor: 'choco', hat: 'none', top: 'tee', topColor: 'navy', bottom: 'pants', bottomColor: 'khaki', shoesColor: 'k', bag: 'backpack', bagColor: 'char' },
       voice: { freq: 370, wave: 'square' },
       likes: ['c-rock', 'c-hiphop', 'c-elec'], weight: 1.0, encW: 3,
-      enc: { off: 0, main: 'h', taste: 'hco', honesty: 'sometimes', tune: 'charge',
+      enc: { off: 2, main: 'h', taste: 'hco', honesty: 'sometimes', tune: 'charge',
         deck: ["opeth|morningrise", "billy woods|church", "venetian snares|detrimentalist", "merzbow|noisembryo",
           "dälek|negro necro nekros", "gza|liquid swords", "sonic youth|dirty"] }
     },
@@ -2118,7 +2120,7 @@
       look: { skin: 'honey', hair: 'neat', hairColor: 'k', hat: 'bucket', hatColor: 'char', top: 'flannel', topColor: 'brick', top2Color: 'k', bottom: 'pants', bottomColor: 'denim', shoesColor: 'w' },
       voice: { freq: 466, wave: 'square', jitter: 12 },
       likes: ['c-elec', 'c-soul', 'c-hiphop'], weight: 1.0, encW: 3,
-      enc: { off: 0, main: 'o', taste: 'och', honesty: 'sometimes', tune: 'charge',
+      enc: { off: -3, main: 'o', taste: 'och', honesty: 'sometimes', tune: 'charge',
         deck: ["bonobo|dial ‘m' for monkey", "millie jackson|hard times", "ohio players|tenderness", "stevie wonder|eivets rednow",
           "shackleton|primal forms", "a tribe called quest|midnight marauders", "global communication|76:14"] }
     },
@@ -2127,7 +2129,7 @@
       look: { skin: 'rose', hair: 'bob', hairColor: 'auburn', top: 'sweater', topColor: 'mustard', bottom: 'longskirt', bottomColor: 'forest', bag: 'crossbag', bagColor: 'cream' },
       voice: { freq: 622, wave: 'triangle' },
       likes: ['c-citypop', 'c-world', 'c-listen'], weight: 1.0, encW: 2,
-      enc: { off: -1, main: 'o', taste: 'och', honesty: 'sometimes', tune: 'calm',
+      enc: { off: -4, main: 'o', taste: 'och', honesty: 'sometimes', tune: 'calm',
         deck: ["佐藤博|awakening", "南佳孝|摩天楼のヒロイン", "りんけんバンド|なんくる", "cesária évora|miss perfumado",
           "mississippi john hurt|last sessions", "江蕙|紅線", "蔡琴|蔡琴老歌"] }
     },
@@ -2136,14 +2138,14 @@
       look: { skin: 't', hair: 'sidepart', hairColor: 'plat', glasses: 'browline', facial: 'mustache', top: 'jacket', topColor: 'khaki', bottom: 'slim', bottomColor: 'char' },
       voice: { freq: 247, wave: 'triangle' },
       likes: ['c-classical', 'c-soul', 'c-folk'], weight: 1.0, encW: 2,
-      enc: { off: 1, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'lift',
+      enc: { off: 11, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'lift',
         deck: ["herbert von karajan|beethoven: 9 symphonies (1963)", "arthur rubinstein|chopin: nocturnes", "glenn gould & leonard bernstein|brahms: piano concerto no. 1 (1962)",
           "curtis mayfield|there's no place like america today", "isaac hayes|shaft: music from the soundtrack", "bob dylan|john wesley harding", "leonard cohen|songs from a room"] }
     },
     zhoujie: {
       name: '周姐', look: 'regular', voice: { freq: 349, wave: 'sine' }, expert: true,
       likes: ['c-world', 'c-classical', 'c-folk'], weight: 0.8, encW: 1,
-      enc: { off: 2, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'languid',
+      enc: { off: 0, main: 'c', taste: 'coh', honesty: 'sometimes', tune: 'languid',
         deck: ["einojuhani rautavaara|cantus arcticus", "erik satie|vexations", "nass el ghiwane|nass el ghiwane", "the congos|heart of the congos",
           "toumani diabaté|kaira", "brigitte fontaine & areski belkacem|vous et nous", "richard & linda thompson|shoot out the lights"] }
     }
@@ -2186,14 +2188,15 @@
 
   // 切磋（＝店主說的遭遇戰；§7）。第一階段關：第二階段 LS0–LS9 過了、§15 拍板後才開
   C.encounter = {
-    on: false,
+    on: true,                       // 第二階段收尾（p2b 修正棒）：LS0–LS9 全過（唱片櫃模式）→ 打開；自動化瀏覽器照舊由活店開關擋（navigator.webdriver 預設關）
     reward: 'shelf',                // 'shelf' 收進唱片櫃（預設）｜'bag' 進這一趟包包（§15 拍板）
     from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2],   // 一般客人位（idx）
     lapse: 30000,                   // 邀請沒理他多久就走（抽屜、面板、頁面開著不算）
     short: 0.65,                    // 短局：雙方聲望與上限比例（下半重量：0.6 → 0.65；你上限 12 → 8、他 13 → 9；一場 2.2–2.7 手，0.6 會讀的只打 1.85 手）
-    posAdd: 31,                     // 切磋強度的全域位移（下半，主線 11-21 裁定「牌組身分跟強度分開」）：他的等效位數＝第幾位＋自己的 off（−2～+2，個性差）＋posAdd，
-                                    //   品味、底氣、讀你、放水…照主線同一條曲線在那個位數；熟客一律出自己那 7 張（只照等效位數補星、不換牌）。
-                                    //   n4000 會讀的／新手勝率：+30 短局 .7 92.6／55.0、+30 .65 92.6／57.6、+31 .65 92.2／56.6（定案）、+32 .65 91.8／55.6（scratchpad liveshop/p2b/SIM.md）
+    // 切磋強度的位移（主線 11-21 裁定「牌組身分跟強度分開」）：他的等效位數＝第幾位＋自己的 off＋位移，品味、底氣、讀你、放水…照主線同一條曲線在那個位數；
+    //   熟客一律出自己那 7 張（只照等效位數補星、不換牌）。審查修正 p2b：原本全程 +31（第 6 位的熟客＝第 37 位客人：前期比主線難很多、後段又比主線好打），
+    //   改成照位數走的折線 [第幾位, 位移]（兩點之間線性內插）：每一段切磋勝率跟同段主線一般客人首戰勝率差 −6～+2 點（sim 分段表；scratchpad liveshop/p2b/fix/SIM.md）
+    posAdd: [[6, 18], [10, 22], [15, 29], [20, 34], [30, 38], [45, 42], [55, 50]],
     // 不收唱片改拿的錢＝C.waveC.loot.skipCash（$200，跟主線戰利品列同一個數，不另設）
     noDareRound: true, noStall: true
   };
@@ -2210,12 +2213,21 @@
     encRisk: '輸了什麼都不扣：聲望、說情、走到第幾位都不變。',   // 邀請面板：風險一行
     encRewardShelf: '贏了挑一張{name}的唱片收進唱片櫃，或改拿 ${cash}。',   // 邀請面板：獎勵一行（唱片櫃模式）
     encRewardBag: '贏了挑一張{name}的唱片收進包包，或改拿 ${cash}。',   // 邀請面板：獎勵一行（包包模式）
+    // 審查修正 p2b（新）：他那 7 張你大多收過了（沒收的不到三張，戰利品列會用卡池補別人的唱片）＝不說是他的唱片
+    encRewardShelfAny: '贏了挑一張唱片收進唱片櫃，或改拿 ${cash}。',
+    encRewardBagAny: '贏了挑一張唱片收進包包，或改拿 ${cash}。',
+    encShort: '這盤是短局：雙方聲望都只拿三分之二出來打。',   // 邀請面板：短局一行（一開打聲望變三分之二，不寫會以為被扣了）
+    encHint: '{name}在找你切磋：點他決定打不打，直接叫下一位就是改天。',   // 第一次有熟客來嗆，老闆說一次（save.seen.encHint）
+    encTopSub: '短局',   // 對決頂欄「切磋・{name}」下面那行小字
     encBtnYes: '來一盤',   // 邀請面板：接受鈕
     encBtnNo: '改天',   // 邀請面板：不打鈕
     encTop: '切磋・{name}',   // 對決頂欄（切磋沒有第幾位）
     encSkip: '改拿 ${cash}',   // 戰利品列「不收」鈕（{cash}＝engine.moneyText）
     encLootShelf: '{name}的唱片：挑一張收進唱片櫃',   // 戰利品列標題（唱片櫃模式）
     encLootBag: '{name}的唱片：挑一張收進包包',   // 戰利品列標題（包包模式）
+    encLootShelfAny: '{name}的唱片你大多有了：挑一張收進唱片櫃',   // 戰利品列標題：有卡池補的唱片時（審查修正 p2b，新）
+    encLootBagAny: '{name}的唱片你大多帶著了：挑一張收進包包',
+    encLootNote: '盤面上{name}的唱片補過星，收下的是原本的星數。',   // 戰利品列格子下面（他的牌補過星時；審查修正 p2b，新）
     encShelfToast: '收進唱片櫃了，下一趟可以帶。',   // 唱片櫃模式收下的吐司
     encVoidNote: '剛剛的切磋沒打完，這盤不算，什麼都不扣。',   // 作廢（重新整理在打）；熟客也會講自己的 encVoid，畫面只要一句就用熟客那句
     encWait: '先挑完唱片或改拿錢，再叫下一位。',   // 沒收／沒拿錢時按「下一位」被擋
@@ -2226,6 +2238,8 @@
   // 台詞（§5.7；全標「新」進 LINES-REVIEW；棒 3b 搬句，2026-11-18：lines/A.json（小魚、阿凱、大頭、路人、老闆、介面）＋B.json（阿芳、老陳、周姐），主線逐句審過、全收、不改字）。
   //   C.chat：熟客（who＝C.regulars 的鍵）與路人（who＝'passer'）；C.ownerChat：老闆（who＝'owner'）。
   //   line＝{ id（全域唯一）, who, cat, text:'…'|['…','…']（一個字串＝一個泡泡）, need?, tag:'新' }
+  //   切磋另有（審查修正 p2b）：own:true＝encLose 裡講「我的唱片」那句（戰利品列有卡池補的別人唱片時不用，改用同一位沒 own 的那句）；
+  //     out:true＝encNo／encLapse／encWin／encVoid 裡講「要走了」那句（說完直接出門，不去翻箱）
   //   cat：hello／again／chat／dig／shelf／trip／close／mem／busy（熟客）；周姐另有 loreIn（摘句引子）／loreOut（收尾）／fact（欄位樣板），沒有 dig／shelf；
   //        路人只有 chat（隨口 12、找唱片 10、對店 8 共用一個環）；老闆 chat（閒聊 01–12＋店裡的事 13–22，後者帶 need.met）／trip。
   //        第二階段才有 encDare／encYes／encNo／encLapse／encLose／encWin／encVoid 與 trip 的 encWon／encLost（棒 3d，2026-11-21 搬：lines/C.json 83 句接在 C.chat 尾巴，
@@ -2586,7 +2600,8 @@
     { id: 'akai-encNo-01', who: 'akai', cat: 'encNo', text: '隨便，我本來就要回家了。', tag: '新' },
     { id: 'akai-encNo-02', who: 'akai', cat: 'encNo', text: '改天喔？好啦，反正我天天都順路。', tag: '新' },
     { id: 'akai-encLapse-01', who: 'akai', cat: 'encLapse', text: '不理我？算了，我又不是很想打。', tag: '新' },
-    { id: 'akai-encLose-01', who: 'akai', cat: 'encLose', text: '好啦，算你狠，我的唱片隨你挑。', tag: '新' },
+    { id: 'akai-encLose-01', who: 'akai', cat: 'encLose', text: '好啦，算你狠，我的唱片隨你挑。', own: true, tag: '新' },
+    { id: 'akai-encLose-03', who: 'akai', cat: 'encLose', text: '好啦，算你狠，挑一張喜歡的帶走。', tag: '新' },
     { id: 'akai-encLose-02', who: 'akai', cat: 'encLose', text: '今天加班太累，不然才不會輸你。', tag: '新' },
     { id: 'akai-encWin-01', who: 'akai', cat: 'encWin', text: '贏了。你出太急了，跟我主管一樣。', tag: '新' },
     { id: 'akai-encWin-02', who: 'akai', cat: 'encWin', text: '不要太在意，我只是運氣比較好。……大概。', tag: '新' },
@@ -2601,7 +2616,8 @@
     { id: 'datou-encNo-01', who: 'datou', cat: 'encNo', text: '齁，好啦，下次一定要陪我喔！', tag: '新' },
     { id: 'datou-encNo-02', who: 'datou', cat: 'encNo', text: '沒差沒差，我先去挖下一首要接的。', tag: '新' },
     { id: 'datou-encLapse-01', who: 'datou', cat: 'encLapse', text: '欸你在恍神喔？好啦，我等等再來堵你！', tag: '新' },
-    { id: 'datou-encLose-01', who: 'datou', cat: 'encLose', text: '輸了輸了！我的歌你拿去，算我繳學費啦。', tag: '新' },
+    { id: 'datou-encLose-01', who: 'datou', cat: 'encLose', text: '輸了輸了！我的歌你拿去，算我繳學費啦。', own: true, tag: '新' },
+    { id: 'datou-encLose-03', who: 'datou', cat: 'encLose', text: '輸了輸了！挑一張拿去，算我繳學費啦。', tag: '新' },
     { id: 'datou-encLose-02', who: 'datou', cat: 'encLose', text: '你這幾張超會接，我要偷偷抄進歌單！', tag: '新' },
     { id: 'datou-encWin-01', who: 'datou', cat: 'encWin', text: '嘿嘿，這盤我手感超順，像接歌接到對的拍子。', tag: '新' },
     { id: 'datou-encWin-02', who: 'datou', cat: 'encWin', text: '贏啦！我要把這盤記進手機，週末拿來炫耀。', tag: '新' },
@@ -2614,9 +2630,10 @@
     { id: 'afang-encDare-03', who: 'afang', cat: 'encDare', text: '我沖咖啡的手很穩，出牌應該也不會太差。', tag: '新' },
     { id: 'afang-encYes-01', who: 'afang', cat: 'encYes', text: '好呀，我們慢慢來，不用急。', tag: '新' },
     { id: 'afang-encNo-01', who: 'afang', cat: 'encNo', text: '好，不勉強，我去挑幾張下午要放的。', tag: '新' },
-    { id: 'afang-encNo-02', who: 'afang', cat: 'encNo', text: '沒事，我也該回去看工讀生了。', tag: '新' },
+    { id: 'afang-encNo-02', who: 'afang', cat: 'encNo', text: '沒事，我也該回去看工讀生了。', out: true, tag: '新' },
     { id: 'afang-encLapse-01', who: 'afang', cat: 'encLapse', text: '看你忙著，我就不打擾了，改天吧。', tag: '新' },
-    { id: 'afang-encLose-01', who: 'afang', cat: 'encLose', text: '這幾張陪我好多個下午，你挑一張帶走吧。', tag: '新' },
+    { id: 'afang-encLose-01', who: 'afang', cat: 'encLose', text: '這幾張陪我好多個下午，你挑一張帶走吧。', own: true, tag: '新' },
+    { id: 'afang-encLose-03', who: 'afang', cat: 'encLose', text: '被你贏了呢，挑一張喜歡的帶回去吧。', tag: '新' },
     { id: 'afang-encLose-02', who: 'afang', cat: 'encLose', text: '被你打得心服口服，回去要多練練了。', tag: '新' },
     { id: 'afang-encWin-01', who: 'afang', cat: 'encWin', text: '哎呀，贏了，可能是今天咖啡喝得剛好。', tag: '新' },
     { id: 'afang-encWin-02', who: 'afang', cat: 'encWin', text: '別難過，我也是被客人一路磨出來的。', tag: '新' },
@@ -2630,7 +2647,7 @@
     { id: 'laochen-encYes-01', who: 'laochen', cat: 'encYes', text: '那就請指教了，輸贏都要笑著收場。', tag: '新' },
     { id: 'laochen-encNo-01', who: 'laochen', cat: 'encNo', text: '不急不急，改天有空再陪我。', tag: '新' },
     { id: 'laochen-encNo-02', who: 'laochen', cat: 'encNo', text: '也好，同學先顧正事要緊。', tag: '新' },
-    { id: 'laochen-encLapse-01', who: 'laochen', cat: 'encLapse', text: '同學想事情想得出神了，老人家先告退。', tag: '新' },
+    { id: 'laochen-encLapse-01', who: 'laochen', cat: 'encLapse', text: '同學想事情想得出神了，老人家先告退。', out: true, tag: '新' },
     { id: 'laochen-encLose-01', who: 'laochen', cat: 'encLose', text: '後生可畏，喜歡哪張就挑去吧。', tag: '新' },
     { id: 'laochen-encLose-02', who: 'laochen', cat: 'encLose', text: '這一盤打得漂亮，老人家佩服。', tag: '新' },
     { id: 'laochen-encWin-01', who: 'laochen', cat: 'encWin', text: '承讓承讓，改天再來討教。', tag: '新' },

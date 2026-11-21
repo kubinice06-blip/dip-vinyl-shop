@@ -7,7 +7,7 @@
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 > 活店第二階段（切磋＝遭遇戰）：每位熟客的切磋句在「活店・切磋・<名字>」（說話者欄多標分類：嗆、接了、改天、沒理他、他輸了、他贏了、作廢、看你這一趟的切磋輸贏），邀請面板、對決頂欄、戰利品列的字在「活店・切磋・介面字」。
 
-統計：原句 45、拍板 0、店主 71、新 1725（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1736（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -2257,6 +2257,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 阿凱・akai-encNo-02・改天 | 改天喔？好啦，反正我天天都順路。 | 本規格新寫 | `chat.akai-encNo-02` |
 | 阿凱・akai-encLapse-01・沒理他 | 不理我？算了，我又不是很想打。 | 本規格新寫 | `chat.akai-encLapse-01` |
 | 阿凱・akai-encLose-01・他輸了 | 好啦，算你狠，我的唱片隨你挑。 | 本規格新寫 | `chat.akai-encLose-01` |
+| 阿凱・akai-encLose-03・他輸了 | 好啦，算你狠，挑一張喜歡的帶走。 | 本規格新寫 | `chat.akai-encLose-03` |
 | 阿凱・akai-encLose-02・他輸了 | 今天加班太累，不然才不會輸你。 | 本規格新寫 | `chat.akai-encLose-02` |
 | 阿凱・akai-encWin-01・他贏了 | 贏了。你出太急了，跟我主管一樣。 | 本規格新寫 | `chat.akai-encWin-01` |
 | 阿凱・akai-encWin-02・他贏了 | 不要太在意，我只是運氣比較好。……大概。 | 本規格新寫 | `chat.akai-encWin-02` |
@@ -2276,6 +2277,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 大頭・datou-encNo-02・改天 | 沒差沒差，我先去挖下一首要接的。 | 本規格新寫 | `chat.datou-encNo-02` |
 | 大頭・datou-encLapse-01・沒理他 | 欸你在恍神喔？好啦，我等等再來堵你！ | 本規格新寫 | `chat.datou-encLapse-01` |
 | 大頭・datou-encLose-01・他輸了 | 輸了輸了！我的歌你拿去，算我繳學費啦。 | 本規格新寫 | `chat.datou-encLose-01` |
+| 大頭・datou-encLose-03・他輸了 | 輸了輸了！挑一張拿去，算我繳學費啦。 | 本規格新寫 | `chat.datou-encLose-03` |
 | 大頭・datou-encLose-02・他輸了 | 你這幾張超會接，我要偷偷抄進歌單！ | 本規格新寫 | `chat.datou-encLose-02` |
 | 大頭・datou-encWin-01・他贏了 | 嘿嘿，這盤我手感超順，像接歌接到對的拍子。 | 本規格新寫 | `chat.datou-encWin-01` |
 | 大頭・datou-encWin-02・他贏了 | 贏啦！我要把這盤記進手機，週末拿來炫耀。 | 本規格新寫 | `chat.datou-encWin-02` |
@@ -2295,6 +2297,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 阿芳・afang-encNo-02・改天 | 沒事，我也該回去看工讀生了。 | 本規格新寫 | `chat.afang-encNo-02` |
 | 阿芳・afang-encLapse-01・沒理他 | 看你忙著，我就不打擾了，改天吧。 | 本規格新寫 | `chat.afang-encLapse-01` |
 | 阿芳・afang-encLose-01・他輸了 | 這幾張陪我好多個下午，你挑一張帶走吧。 | 本規格新寫 | `chat.afang-encLose-01` |
+| 阿芳・afang-encLose-03・他輸了 | 被你贏了呢，挑一張喜歡的帶回去吧。 | 本規格新寫 | `chat.afang-encLose-03` |
 | 阿芳・afang-encLose-02・他輸了 | 被你打得心服口服，回去要多練練了。 | 本規格新寫 | `chat.afang-encLose-02` |
 | 阿芳・afang-encWin-01・他贏了 | 哎呀，贏了，可能是今天咖啡喝得剛好。 | 本規格新寫 | `chat.afang-encWin-01` |
 | 阿芳・afang-encWin-02・他贏了 | 別難過，我也是被客人一路磨出來的。 | 本規格新寫 | `chat.afang-encWin-02` |
@@ -2347,12 +2350,20 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・encRisk | 輸了什麼都不扣：聲望、說情、走到第幾位都不變。 | 本規格新寫 | `crowdUi.encRisk` |
 | （畫面字）・encRewardShelf | 贏了挑一張{name}的唱片收進唱片櫃，或改拿 ${cash}。 | 本規格新寫 | `crowdUi.encRewardShelf` |
 | （畫面字）・encRewardBag | 贏了挑一張{name}的唱片收進包包，或改拿 ${cash}。 | 本規格新寫 | `crowdUi.encRewardBag` |
+| （畫面字）・encRewardShelfAny | 贏了挑一張唱片收進唱片櫃，或改拿 ${cash}。 | 本規格新寫 | `crowdUi.encRewardShelfAny` |
+| （畫面字）・encRewardBagAny | 贏了挑一張唱片收進包包，或改拿 ${cash}。 | 本規格新寫 | `crowdUi.encRewardBagAny` |
+| （畫面字）・encShort | 這盤是短局：雙方聲望都只拿三分之二出來打。 | 本規格新寫 | `crowdUi.encShort` |
+| （畫面字）・encHint | {name}在找你切磋：點他決定打不打，直接叫下一位就是改天。 | 本規格新寫 | `crowdUi.encHint` |
+| （畫面字）・encTopSub | 短局 | 本規格新寫 | `crowdUi.encTopSub` |
 | （畫面字）・encBtnYes | 來一盤 | 本規格新寫 | `crowdUi.encBtnYes` |
 | （畫面字）・encBtnNo | 改天 | 本規格新寫 | `crowdUi.encBtnNo` |
 | （畫面字）・encTop | 切磋・{name} | 本規格新寫 | `crowdUi.encTop` |
 | （畫面字）・encSkip | 改拿 ${cash} | 本規格新寫 | `crowdUi.encSkip` |
 | （畫面字）・encLootShelf | {name}的唱片：挑一張收進唱片櫃 | 本規格新寫 | `crowdUi.encLootShelf` |
 | （畫面字）・encLootBag | {name}的唱片：挑一張收進包包 | 本規格新寫 | `crowdUi.encLootBag` |
+| （畫面字）・encLootShelfAny | {name}的唱片你大多有了：挑一張收進唱片櫃 | 本規格新寫 | `crowdUi.encLootShelfAny` |
+| （畫面字）・encLootBagAny | {name}的唱片你大多帶著了：挑一張收進包包 | 本規格新寫 | `crowdUi.encLootBagAny` |
+| （畫面字）・encLootNote | 盤面上{name}的唱片補過星，收下的是原本的星數。 | 本規格新寫 | `crowdUi.encLootNote` |
 | （畫面字）・encShelfToast | 收進唱片櫃了，下一趟可以帶。 | 本規格新寫 | `crowdUi.encShelfToast` |
 | （畫面字）・encVoidNote | 剛剛的切磋沒打完，這盤不算，什麼都不扣。 | 本規格新寫 | `crowdUi.encVoidNote` |
 | （畫面字）・encWait | 先挑完唱片或改拿錢，再叫下一位。 | 本規格新寫 | `crowdUi.encWait` |

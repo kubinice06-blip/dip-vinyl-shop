@@ -1261,6 +1261,8 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.float.enc .en-tx p{margin:0;font-size:12.5px;line-height:1.55;color:#333;word-break:normal;line-break:strict;}
 .lb-sheet.float.enc .en-tx .en-risk{color:var(--ink);font-weight:700;}
 .lb-sheet.float.enc .en-tx .en-rew{margin-top:3px;color:#555;}
+.lb-sheet.float.enc .en-tx .en-short{margin-top:2px;font-size:11.5px;color:var(--gray);}   /* 短局一行（審查修正 p2b） */
+.lb-sheet.reward.lt-sheet.enc .note.en-note{color:var(--gray);}   /* 戰利品列：盤面補過星、收下的是原本的星數（審查修正 p2b） */
 .lb-sheet.float.enc .two{margin-top:10px;}
 .lb-sheet.float.enc .two .lb-btn{min-height:52px;height:52px;}
 .lb-sheet.float.enc .hd .x{height:44px;margin:-6px -8px -6px 0;}   /* ✕ 也 44 px 高（手機點擊 ≥44，§9）；上下負邊距：標題列不跟著長高 */

@@ -7,7 +7,7 @@
  *   chestFlow(o)      // 打贏藏家：pending reward kind 'chest'。o = { p, out, finish(res) }；out：{ dareCash, money, pity }
  *   redraw()          // 配件滿了按「算了」回來：同一列照目前翻開的樣子重畫
  *   flipAll()         // 還蓋著的直接翻開（自動玩、測試）
- *   （切磋，活店第二階段 SPEC-H §7.3-8、§7.5）lootFlow(o) 的 o.enc＝{ mode:'shelf'|'bag', title, skip（不收的鈕字「改拿 $200」）, take(id)→Promise<res|null>, skipFn()→res, owned(id) }：
+ *   （切磋，活店第二階段 SPEC-H §7.3-8、§7.5）lootFlow(o) 的 o.enc＝{ mode:'shelf'|'bag', title, note?（格子下面一行小字）, skip（不收的鈕字「改拿 $200」）, take(id)→Promise<res|null>, skipFn()→res, owned(id) }：
  *                     同一個戰利品列面板，收／不收改走 host 的 encTake／encSkip（ui.js）；字幕「對方似乎掉落了什麼」、錢袋與經驗兩格、地上那張、第一次那句、自動玩都不做；
  *                     唱片櫃模式不畫「↑」（不進包包）、不判「包包裡有了」、收下飛向唱片櫃；包包模式照主線（飛向包包）。面板 class 多一個 enc
  *   state() → { kind, flipped:[bool…], open, busy } | null   // 測試用
@@ -169,6 +169,7 @@
     var cards = p.cards && p.cards.length;
     return '<div class="hd"><h3>' + esc(title) + '</h3><span class="sub">' + esc(bag) + '</span></div>' +
       (cards ? '<div class="lt-area' + (S.kind === 'chest' && !S.open ? ' shut' : '') + '">' + gridHTML() + (S.kind === 'chest' && !S.open ? crateHTML() : '') + '</div>' +
+        (S.enc && S.enc.note ? '<p class="note en-note">' + esc(S.enc.note) + '</p>' : '') +   // 切磋：盤面上補過星、收下的是原本的星數（審查修正 p2b）
         '<p class="note">' + esc(H.rewardNote()) + '</p>' : '') +
       footHTML();
   }

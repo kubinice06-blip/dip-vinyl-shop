@@ -722,7 +722,10 @@ function printEnc(rows) {
 //   開邀請 → 接（或改天）→ 打（主線同一個出牌腦 play，但策略亂數另一條：同一個 i 主線的決策照舊）→ 收／不收。主線欄位 engine 保證不動（engine.test #34）
 //   唱片櫃模式的「已擁有」＝這一趟收進唱片櫃的（新帳號；連玩 20 趟另印參考）
 const sparZero = NP => ({ offered: 0, accepted: 0, fights: 0, won: 0, lost: 0, took: 0, cashN: 0, cash: 0, hands: 0, reads: 0, hp: new Float64Array(NP), rp: new Float64Array(NP),
-  mr: new Float64Array(NP), first5: 0, eliteBoss: 0, multi: 0, byIdx: [0, 0, 0, 0, 0], who: {}, by: { hp: 0, rounds: 0, pile: 0 } });
+  mr: new Float64Array(NP), ff: new Float64Array(NP), fw: new Float64Array(NP), wf: {}, ww: {}, first5: 0, eliteBoss: 0, multi: 0, byIdx: [0, 0, 0, 0, 0], who: {}, by: { hp: 0, rounds: 0, pile: 0 } });
+// 分段（審查修正 p2b：強度要跟著位數走）：切磋勝率對同一段主線一般客人首戰勝率（第 6 位起、一般客人位、第一次打）
+const SPAR_SEGS = [[6, 10], [11, 15], [16, 20], [21, 30], [31, 45], [46, 1e9]], SPAR_SEG_MIN = 300, SPAR_SEG_LO = -10, SPAR_SEG_HI = 4;   // 判：該段 ≥300 場，切磋 − 主線 在 −10～+4 點（不比主線難很多、也不比主線好打；+4＝n4000 一段約 400 場的抽樣誤差）
+const segName = ([a, b]) => b >= 1e9 ? a + '+' : a + '–' + b;
 function sparStep(run, pol, SP, X) {
   for (let g = 0; g < 8; g++) {
     const ch = EN.encPolicy(run, C, { policy: SPAR_POL, owned: X.ownedFn });
@@ -743,6 +746,8 @@ function sparStep(run, pol, SP, X) {
       const h = duel.stats.hands, rd = duel.log.filter(l => l.why === 'read' || l.why === 'readHonest').length;
       SP.fights++; SP.hands += h; SP.reads += rd; SP.hp[run.pos] += h; SP.rp[run.pos] += rd; SP.by[duel.over.by] = (SP.by[duel.over.by] | 0) + 1;
       if (fin.win) SP.won++; else SP.lost++;
+      SP.ff[run.pos]++; if (fin.win) SP.fw[run.pos]++;
+      SP.wf[S.who] = (SP.wf[S.who] | 0) + 1; if (fin.win) SP.ww[S.who] = (SP.ww[S.who] | 0) + 1;
     } else if (ch.type === 'encTake') { SP.took++; X.took.push(ch.id); X.owned.add(ch.id); }
     else if (ch.type === 'encSkip') { SP.cashN++; SP.cash += (r.effects.find(e => e.cash) || {}).cash | 0; }
   }
@@ -756,7 +761,10 @@ function sparStatsOf(SP, A, recs, n) {
   // 連玩 20 趟（只印）：同一格相鄰 20 趟收進唱片櫃的聯集（不同的幾張、其中熟客牌）——唱片櫃模式下一趟「從唱片櫃挑種子」多幾個選擇
   const blocks = []; for (let k = 0; k + 20 <= recs.length; k += 20) { const u = new Set(); for (const x of recs.slice(k, k + 20)) for (const id of x.sparTook || []) u.add(id); blocks.push(u); }
   const mean = a => a.length ? a.reduce((s, x) => s + x, 0) / a.length : null;
-  return { offered: SP.offered / n, offers: SP.offered, pos6, per10: pos6 ? 10 * SP.offered / pos6 : null, accept: r(SP.accepted, SP.offered), fights: SP.fights, win: r(SP.won, SP.fights),
+  const seg = SPAR_SEGS.map(([a, b]) => { let f = 0, w = 0, mf = 0, mw = 0;
+    for (let d = a; d <= Math.min(b, A.att1.length - 1); d++) { f += SP.ff[d]; w += SP.fw[d]; if (EN.classAt(d) === 'normal') { mf += A.att1[d]; mw += A.win1[d]; } }
+    return { seg: segName([a, b]), n: f, win: f ? w / f : null, mainN: mf, main: mf ? mw / mf : null }; });
+  return { offered: SP.offered / n, seg, byWho: Object.fromEntries(Object.keys(SP.wf).map(k => [k, { n: SP.wf[k], win: (SP.ww[k] | 0) / SP.wf[k] }])), offers: SP.offered, pos6, per10: pos6 ? 10 * SP.offered / pos6 : null, accept: r(SP.accepted, SP.offered), fights: SP.fights, win: r(SP.won, SP.fights),
     hands: r(SP.hands, SP.fights), took: SP.took / n, cashN: SP.cashN / n, cash: SP.cash / n, readHand: r(SP.reads, SP.hands), mainReadHand: r(expRead, SP.hands),
     readRatio: expRead > 0 ? (SP.reads / SP.hands) / (expRead / SP.hands) : null, handShare: r(SP.hands, mainH), incomeShare: r(SP.cash, earned),
     first5: SP.first5, eliteBoss: SP.eliteBoss, multi: SP.multi, byIdx: SP.byIdx.slice(), who: Object.fromEntries(Object.keys(SP.who).map(k => [k, SP.who[k] / Math.max(1, SP.offered)])),
@@ -765,11 +773,20 @@ function sparStatsOf(SP, A, recs, n) {
 }
 function printSpar(rows) {
   const X = EN.sparCfg(C), f1 = x => x == null ? '—' : x.toFixed(1), f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en');
-  console.log(`\n### 切磋（活店第二階段；--enc on、--enc-policy ${SPAR_POL}、${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式；第 ${X.from} 位起、每輪 ${X.p}、一般客人位、短局 ${X.short}、等效位數＋${X.posAdd}（熟客出自己 7 張、只補星）${X.ace ? '、帶王牌' : ''}；每趟平均）\n`);
+  const addTx = Array.isArray(X.posAdd) ? '照位數走 ' + X.posAdd.map(k => '第 ' + k[0] + ' 位 +' + k[1]).join('、') : '＋' + X.posAdd;
+  console.log(`\n### 切磋（活店第二階段；--enc on、--enc-policy ${SPAR_POL}、${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式；第 ${X.from} 位起、每輪 ${X.p}、一般客人位、短局 ${X.short}、等效位數${addTx}（熟客出自己 7 張、星數照 pos＋off 補）${X.ace ? '、帶王牌' : ''}；每趟平均）\n`);
   console.log('| 策略 | 流程 | 邀請／趟（每 10 位，第 6 位起） | 接受率 | 打 | 勝率 | 一場幾手（KO／比聲望條） | 收牌／拿錢（每趟） | 錢／趟（占總收入） | 被讀／手（主線同位數；比） | 切磋手數÷主線手數 | 第 1–5 位／菁英藏家／一輪兩次 | 連玩 20 趟收進唱片櫃（熟客牌） |');
   console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
   for (const x of rows) { const s = x.spar; if (!s) continue;
     console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f2(s.offered)}（${f2(s.per10)}） | ${pct(s.accept)} | ${s.fights} | **${pct(s.win)}** | ${f2(s.hands)}（${p0(s.by.hp)}／${p0(s.by.rounds)}） | ${f2(s.took)}／${f2(s.cashN)} | $${f0(s.cash)}（${pct(s.incomeShare)}） | ${f2(s.readHand)}（${f2(s.mainReadHand)}；${f2(s.readRatio)}） | ${pct(s.handShare)} | ${s.first5}／${s.eliteBoss}／${s.multi} | ${s.trips20 ? f1(s.trips20.cards) + '（' + f1(s.trips20.regular) + '）' : '—'} |`); }
+  console.log(`\n分段：切磋勝率（場）／主線同段一般客人首戰勝率；差＝切磋 − 主線（LS5 分段判 ${SPAR_SEG_LO}～+${SPAR_SEG_HI} 點、該段 ≥${SPAR_SEG_MIN} 場）\n`);
+  console.log('| 策略 | 流程 | ' + SPAR_SEGS.map(segName).map(x => '第 ' + x + ' 位').join(' | ') + ' |');
+  console.log('|---|---|' + SPAR_SEGS.map(() => '---').join('|') + '|');
+  for (const x of rows) { const s = x.spar; if (!s || !s.seg) continue;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ` + s.seg.map(g => g.n ? `${pct(g.win)}（${g.n}）／${pct(g.main)}；${(g.win - g.main >= 0 ? '+' : '') + (100 * (g.win - g.main)).toFixed(1)}` : '—').join(' | ') + ' |'); }
+  const RG = Object.keys(C.regulars || {}).slice().sort((a, b) => ((C.regulars[a].enc || {}).off | 0) - ((C.regulars[b].enc || {}).off | 0));
+  console.log('\n個性（off 小→大＝勝率應該越來越低）：' + rows.filter(x => x.spar && x.spar.byWho).map(x => (LABEL[x.pol] || x.pol) + ' ' +
+    RG.map(k => (C.regulars[k].name || k) + '（' + ((C.regulars[k].enc || {}).off | 0) + '）' + (x.spar.byWho[k] ? pct(x.spar.byWho[k].win) : '—')).join('、')).join('；'));
   const g = rows.find(x => x.spar && x.pol === 'thoughtful') || rows.find(x => x.spar);
   if (g) console.log(`\n出在一般客人位 第 1／2／3 位（idx 0／1／2）：${g.spar.byIdx.slice(0, 3).join('／')}；誰來（${LABEL[g.pol] || g.pol}・${g.flow}）：` +
     Object.keys(C.regulars || {}).map(k => (C.regulars[k].name || k) + ' ' + pct(g.spar.who[k] || 0)).join('、'));
@@ -794,6 +811,11 @@ function sparChecks(G, tag) {
   else if (TH) refs.push({ id: 'LS5', name: `${who} LS5 會讀的 勝率 75–95%`, ok: null, info: `只打 ${TH.spar ? TH.spar.fights : 0} 場（<200），不判` });
   if (enough(NV)) put('LS5', `${who} LS5 是真的對決：新手 勝率 45–80%`, NV.spar.win >= 0.45 - 1e-9 && NV.spar.win <= 0.80 + 1e-9, `${pct(NV.spar.win)}（${NV.spar.fights} 場）`);
   else if (NV) refs.push({ id: 'LS5', name: `${who} LS5 新手 勝率 45–80%`, ok: null, info: `只打 ${NV.spar ? NV.spar.fights : 0} 場（<200），不判` });
+  // LS5 分段（審查修正 p2b）：每一段切磋勝率 − 主線同段一般客人首戰勝率 在 SPAR_SEG_LO～SPAR_SEG_HI 點（不比主線難太多、也不比主線好打）；該段 ≥SPAR_SEG_MIN 場才判
+  for (const x of [TH, NV, HR]) { if (!x || !x.spar || !x.spar.seg) continue;
+    const gs = x.spar.seg.filter(g => g.n >= SPAR_SEG_MIN && g.main != null), bad = gs.filter(g => !(100 * (g.win - g.main) >= SPAR_SEG_LO - 1e-9 && 100 * (g.win - g.main) <= SPAR_SEG_HI + 1e-9));
+    if (gs.length) put('LS5', `${who} LS5 分段：${LABEL[x.pol]} 每段切磋勝率 − 主線同段一般客人首戰 在 ${SPAR_SEG_LO}～+${SPAR_SEG_HI} 點（≥${SPAR_SEG_MIN} 場的段）`, !bad.length,
+      gs.map(g => `第 ${g.seg} 位 ${pct(g.win)}／${pct(g.main)}（${(g.win - g.main >= 0 ? '+' : '') + (100 * (g.win - g.main)).toFixed(1)}）`).join('、'), true); }
   if (SPAR_REW === 'bag' && enough(TH)) {
     put('LS5', `${who} LS5 包包模式：會讀的 勝率 ≤90%`, TH.spar.win <= 0.90 + 1e-9, pct(TH.spar.win));
     put('LS5', `${who} LS5 包包模式：會讀的 被讀次數／手 ≥ 主線同位數的 70%`, TH.spar.readRatio != null && TH.spar.readRatio >= 0.70 - 1e-9, `${f2(TH.spar.readHand)} 對 ${f2(TH.spar.mainReadHand)}（${f2(TH.spar.readRatio)} 倍）`);

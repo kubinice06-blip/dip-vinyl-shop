@@ -662,7 +662,9 @@ export const CHAT_TARGET = {
 const SPAR_NEED = ['encWon', 'encLost'];   // trip 的切磋輸贏（第二階段）
 // C.crowdUi 第二階段切磋字：鍵 → 要有的空格（其他空格不准；邀請面板、對決頂欄、戰利品列、唱片櫃小籤）
 const SPAR_UI = { encTitle: ['name'], encRisk: [], encRewardShelf: ['name', 'cash'], encRewardBag: ['name', 'cash'], encBtnYes: [], encBtnNo: [], encTop: ['name'],
-  encSkip: ['cash'], encLootShelf: ['name'], encLootBag: ['name'], encShelfToast: [], encVoidNote: [], encWait: [], encSrc: [] };
+  encSkip: ['cash'], encLootShelf: ['name'], encLootBag: ['name'], encShelfToast: [], encVoidNote: [], encWait: [], encSrc: [],
+  // 審查修正 p2b：他的唱片你大多收過了（卡池補）的兩版、短局一行、第一次老闆提示、對決頂欄小字
+  encRewardShelfAny: ['cash'], encRewardBagAny: ['cash'], encLootShelfAny: ['name'], encLootBagAny: ['name'], encShort: [], encHint: ['name'], encTopSub: [], encLootNote: ['name'] };
 const TRIP_NEED = { posGte: 'int', posLte: 'int', streakGte: 'int', bagGte: 'int', hpHalf: 'bool', retried: 'bool', dare: 'bool', firstRun: 'bool', newFar: 'bool', encWon: 'bool', encLost: 'bool', ace: 'ace' };
 const HOLES_HAND = ['title', 'pos', 'last', 'far', 'name'];
 const HOLES_CARD = ['artist', 'album', 'year', 'decade', 'genre', 'bin', 'region', 'tune', 'axis'];
@@ -732,7 +734,7 @@ export function crowdProblems(C, E) {
     ok(!('expert' in r) || (id === EXPERT_ID && r.expert === true), w + '：expert 只准周姐（crowd-core EXPERT＝' + EXPERT_ID + '）');
     const en = r.enc || {};
     if (!ok(r.enc && typeof r.enc === 'object', w + '：enc 沒有')) continue;
-    ok(Number.isInteger(en.off) && en.off >= -3 && en.off <= 3, w + '：enc.off（棋力）要是 −3～+3 的整數');
+    ok(Number.isInteger(en.off) && en.off >= -12 && en.off <= 12, w + '：enc.off（棋力）要是 −12～+12 的整數（p2b：照 sim 量到的勝率排個性順序，牌組強弱不同要補）');
     ok(ATTRS.includes(en.main), w + '：enc.main 要是 c／o／h');
     ok(/^[coh]{3}$/.test(en.taste || '') && new Set(en.taste).size === 3 && en.taste[0] === en.main, w + '：enc.taste 要是 coh 的排列、主屬性開頭');
     ok(C.honesty && Object.prototype.hasOwnProperty.call(C.honesty, en.honesty), w + '：enc.honesty 要是 C.honesty 的鍵');
@@ -775,10 +777,13 @@ export function crowdProblems(C, E) {
   ok(Array.isArray(EN.slots) && EN.slots.length && EN.slots.every(i => [0, 1, 2].includes(i)), 'LD1：C.encounter.slots 只准一般客人位 0–2（菁英、藏家位不出）');
   ok(EN.lapse > 0 && EN.short > 0 && EN.short <= 1, 'LD1：C.encounter.lapse／short');
   // 下半（主線 11-21 裁定：牌組身分跟強度分開）：強度＝等效位數（pos＋熟客 off＋posAdd）的客人參數＋短局；熟客一律出自己那 7 張（engine sparDeck 只補星）
-  ok(!('posAdd' in EN) || (Number.isInteger(EN.posAdd) && EN.posAdd >= 0 && EN.posAdd <= 40), 'LD1：C.encounter.posAdd（切磋強度的全域位移）要是 0–40 的整數：' + EN.posAdd);
+  // posAdd：0–60 的整數（全程同一個位移）或照位數走的折線 [[第幾位, 位移], …]（第幾位 1–200 遞增、位移 0–60、2–12 個點；p2b 審查修正：全程 +31 前期太難後段太好打）
+  const PA = EN.posAdd, paOk = !('posAdd' in EN) || (Number.isInteger(PA) && PA >= 0 && PA <= 60) ||
+    (Array.isArray(PA) && PA.length >= 2 && PA.length <= 12 && PA.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && k[0] <= 200 && Number.isInteger(k[1]) && k[1] >= 0 && k[1] <= 60 && (i === 0 || k[0] > PA[i - 1][0])));
+  ok(paOk, 'LD1：C.encounter.posAdd（切磋強度的位移）要是 0–60 的整數，或 [[第幾位, 位移], …] 折線（第幾位遞增、位移 0–60）：' + JSON.stringify(PA));
   ok(EN.short >= 0.5 && EN.short <= 0.9, 'LD1：C.encounter.short（短局比例）要在 0.5–0.9（太短一兩手就打完、1＝不是短局）：' + EN.short);
   ok(!('ace' in EN) || typeof EN.ace === 'boolean', 'LD1：C.encounter.ace（試調旗標：照一般客人機率帶王牌）要是 true／false');
-  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'ace'];
+  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'ace', 'deckAt'];
   ok(Object.keys(EN).every(k => ENC_KEYS.includes(k)), 'LD1：C.encounter 有不認得的鍵（engine sparCfg 不讀）：' + Object.keys(EN).filter(k => !ENC_KEYS.includes(k)).join(' '));
   ok(!('cash' in EN) && !('skipCash' in EN) && ((C.waveC || {}).loot || {}).skipCash > 0, 'LD1：切磋不收改拿的錢＝C.waveC.loot.skipCash（不另設）');
   // C.crowdUi 第一階段三句
@@ -795,7 +800,7 @@ export function crowdProblems(C, E) {
     ok(hs.length === want.length && want.every(h => hs.includes(h)), w + ' 的空格要剛好是 ' + (want.map(h => '{' + h + '}').join('') || '（沒有）') + '，現在 ' + (hs.map(h => '{' + h + '}').join('') || '（沒有）') + '：' + v);
     if (want.includes('cash')) ok(/\$\{cash\}/.test(v), w + '：錢寫成「${cash}」（「$」字面＋{cash}，照「${n}」的寫法）：' + v);
   }
-  ok(/唱片櫃/.test(CU.encRewardShelf || '') && /唱片櫃/.test(CU.encLootShelf || '') && /包包/.test(CU.encRewardBag || '') && /包包/.test(CU.encLootBag || ''),
+  ok(['', 'Any'].every(a => /唱片櫃/.test(CU['encRewardShelf' + a] || '') && /唱片櫃/.test(CU['encLootShelf' + a] || '') && /包包/.test(CU['encRewardBag' + a] || '') && /包包/.test(CU['encLootBag' + a] || '')),
     'LD1：crowdUi 切磋獎勵字：Shelf 版講唱片櫃、Bag 版講包包（C.encounter.reward 兩種模式）');
   ok(Object.keys(CU).filter(k => /^enc[A-Z]/.test(k)).every(k => k in SPAR_UI), 'LD1：C.crowdUi 有不認得的切磋鍵：' + Object.keys(CU).filter(k => /^enc[A-Z]/.test(k) && !(k in SPAR_UI)).join(' '));
 
@@ -836,6 +841,8 @@ export function crowdProblems(C, E) {
       if (!ok(Array.isArray(texts) && texts.length >= 1 && texts.length <= 3 && texts.every(t => typeof t === 'string' && t.trim()), w + '：text 要是字串或 1–3 個字串（一個＝一個泡泡）')) return;
       const encCat = CHAT_CATS.enc.includes(l.cat);
       const sparTrip = l.cat === 'trip' && l.need && typeof l.need === 'object' && SPAR_NEED.filter(x => x in l.need);   // trip 的切磋輸贏
+      ok(l.own == null || (l.own === true && l.cat === 'encLose'), w + '：own 只准 true、只用在 encLose（講「我的唱片」那句；審查修正 p2b）');
+      ok(l.out == null || (l.out === true && ['encNo', 'encLapse', 'encWin', 'encVoid'].includes(l.cat)), w + '：out 只准 true、只用在 encNo／encLapse／encWin／encVoid（講要走了那句：說完直接出門）');
       if (encCat) {   // 切磋七類：導演硬指定 ctx.cat、encView 把字原樣給 duel.js（line／intro／lose／win）
         ok(typeof l.text === 'string', w + '：切磋句要單泡（text 是一個字串；對決畫面的 line／intro／lose／win 是單一字串）');
         ok(l.need == null, w + '：切磋句不帶 need（導演硬指定分類；need 不成立就挑不到句子）');

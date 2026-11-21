@@ -221,8 +221,10 @@
 //            encOffer(run, content) · encView(content, who) · encDef(run, content, who) · encStart(run, content, {apex}) · encFinish(run, content, duel, {reward, owned}) · encVoid(run)
 //            encLoot(run, content, duel, {reward, owned}) · fixEnc(run, content?) · encPolicy(run, content, {policy, reward, owned}) · encPending(run) · sparCfg · sparMode · sparDeck(content, who, posEff, {main, tier})
 //            choose：encOpen／encAccept／encDecline {lapse}／encTake {id}／encSkip。fightSetup(run, content, o)＝主線 startFight 與切磋 encStart 共用的開局參數（你這一邊）
-//            強度（下半，主線 11-21 裁定「牌組身分跟強度分開」）：熟客一律出自己那 7 張（sparDeck：照等效位數只補星、不換牌）；強度＝等效位數 posEff＝pos＋off（−2..+2）＋content.encounter.posAdd
+//            強度（下半，主線 11-21 裁定「牌組身分跟強度分開」）：熟客一律出自己那 7 張（sparDeck：照等效位數只補星、不換牌）；強度＝等效位數 posEff＝pos＋off＋位移
 //              的客人參數（品味、底氣、讀你、放水…）＋短局 content.encounter.short；encounter.ace true＝照一般客人機率帶王牌（試調用，出貨不開）。數字與量測見 p2b/SIM.md
+//              審查修正（p2b）：位移 posAdd 可以是照位數走的折線 [[第幾位, 位移], …]（sparAddAt）——全程 +31 讓前期切磋比主線難很多、後段又比主線好打；
+//              改成每一段跟同段主線一般客人首戰勝率差不多（sim 分段表、LS5 分段門檻）。數字與量測見 p2b/fix/SIM.md
 // Policies  policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -3302,9 +3304,28 @@
   const SPAR_KEYS = ['offered', 'accepted', 'won', 'lost', 'took', 'cash'];
   const SPAR_MODES = ['shelf', 'bag'];
   const SPAR_POLICIES = ['always', 'never', 'smart', 'cash'];
-  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true, ace: false, posAdd: 0 };
+  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true, ace: false, posAdd: 0, deckAt: 'eff' };
   // content.encounter（沒給的欄位用 SPAR）；slots 只收一般客人位（菁英、藏家位不出：藏家那輪的寶箱不會跟切磋戰利品列連出）
-  //   posAdd（下半，主線 11-21 裁定）＝切磋整體強度的全域位移：等效位數 posEff＝max(1, run.pos＋熟客自己的 off（−2～+2，個性差）＋posAdd)；整數、|posAdd| ≤ 99，不合法＝0
+  //   posAdd（下半，主線 11-21 裁定）＝切磋強度的位移：等效位數 posEff＝max(1, run.pos＋熟客自己的 off（−2～+2，個性差）＋位移)；
+  //     整數＝全程同一個位移（|x| ≤ 99）；或照位數走的折線 [[第幾位, 位移], …]（第幾位遞增、位移 |x| ≤ 99、最多 12 個點；兩點之間線性內插後四捨五入、頭尾之外照頭尾）——
+  //     審查修正（p2b）：全程 +31 讓第 6 位的熟客＝第 37 位客人（前期比主線難很多、後段又比主線好打），改成跟著位數走。不合法＝0
+  function sparAddOk(x) {
+    if (Number.isInteger(x)) return Math.abs(x) <= 99;
+    if (!Array.isArray(x) || !x.length || x.length > 12) return false;
+    return x.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && Number.isInteger(k[1]) && Math.abs(k[1]) <= 99 && (i === 0 || k[0] > x[i - 1][0]));
+  }
+  // 第 pos 位的位移（sparCfg 驗過的 posAdd）
+  function sparAddAt(posAdd, pos) {
+    if (Number.isInteger(posAdd)) return posAdd;
+    if (!Array.isArray(posAdd) || !posAdd.length) return 0;
+    const p = pos | 0;
+    if (p <= posAdd[0][0]) return posAdd[0][1];
+    for (let i = 1; i < posAdd.length; i++) {
+      const [p1, a1] = posAdd[i], [p0, a0] = posAdd[i - 1];
+      if (p <= p1) return Math.round(a0 + (a1 - a0) * (p - p0) / (p1 - p0));
+    }
+    return posAdd[posAdd.length - 1][1];
+  }
   function sparCfg(content) {
     const s = (content && content.encounter) || {}, X = Object.assign({}, SPAR, s);
     X.on = X.on === true;
@@ -3312,7 +3333,8 @@
     X.from = Number.isInteger(X.from) && X.from >= 1 ? X.from : SPAR.from;
     X.p = typeof X.p === 'number' && X.p >= 0 ? Math.min(1, X.p) : SPAR.p;
     X.short = typeof X.short === 'number' && X.short > 0 ? Math.min(1, X.short) : SPAR.short;
-    X.posAdd = Number.isInteger(X.posAdd) && Math.abs(X.posAdd) <= 99 ? X.posAdd : SPAR.posAdd;
+    X.posAdd = sparAddOk(X.posAdd) ? (Array.isArray(X.posAdd) ? X.posAdd.map(k => k.slice()) : X.posAdd) : SPAR.posAdd;
+    X.deckAt = ['base', 'pos'].includes(X.deckAt) ? X.deckAt : 'eff';   // 他的牌組照哪個位數補星：eff＝等效位數（含位移與 off）、base＝pos＋off、pos＝第幾位（＝同一位的主線一般客人）
     X.slots = (Array.isArray(X.slots) ? X.slots : SPAR.slots).filter((k, i, a) => Number.isInteger(k) && POS_CLASSES[k] === 'normal' && a.indexOf(k) === i);
     return X;
   }
@@ -3361,7 +3383,8 @@
   //     「唱片你挑」那句（encLose-01）與安慰那句（encWin-02）留給打完回來客畫面時說，對決裡（duel.js pickLine）說另外那句，不重複。
   //   指定的那句沒有（台詞改了 id）＝退回舊對應：line／intro 那一類第一句、lose／win 那一類全部。
   //   一句多泡（text 是陣列）＝接起來當一個泡泡。那一類都沒有＝不給那個鍵（duel.js pickLine 回 null＝不說）
-  const SPAR_LINE_IDS = { line: ['encDare', '03'], intro: ['encYes', '01'], lose: ['encLose', '02'], win: ['encWin', '01'] };
+  //   審查修正 p2b：不給 line（duel.js 開場讀 lines.line || lines.intro，給了 line，答應那句 encYes 永遠不出）——盤面開場＝他答應那句 encYes；嗆那三句（encDare-01～03）都留給邀請泡泡
+  const SPAR_LINE_IDS = { intro: ['encYes', '01'], lose: ['encLose', '02'], win: ['encWin', '01'] };
   function sparLines(content, who) {
     const L = Array.isArray(content && content.chat) ? content.chat : [];
     const txt = x => Array.isArray(x.text) ? x.text.filter(t => typeof t === 'string').join('') : typeof x.text === 'string' ? x.text : '';
@@ -3386,11 +3409,11 @@
     if (lines.line) en.line = lines.line;
     return Object.assign({}, content, { enemies: Object.assign({}, content.enemies, { [who]: en }), lines: Object.assign({}, content.lines, { [who]: lines }) });
   }
-  // 等效位數：max(1, run.pos＋off[who]＋posAdd)（off＝棋力個性差：小魚 −2 … 周姐 +2；posAdd＝content.encounter 的全域位移，強度用）。
-  //   base true＝不加 posAdd（＝規格 §7.4 的 posEff；encLoot 補牌池用：獎勵不跟著強度旋鈕變）
+  // 等效位數：max(1, run.pos＋off[who]＋位移)（off＝棋力個性差：小魚 −2 … 周姐 +2；位移＝content.encounter.posAdd 在這一位的值（sparAddAt），強度用）。
+  //   base true＝不加位移（＝規格 §7.4 的 posEff；encLoot 補牌池用：獎勵不跟著強度旋鈕變）
   function sparPos(run, content, who, base) {
     const R = content.regulars && content.regulars[who], off = R && R.enc && Number.isInteger(R.enc.off) ? R.enc.off : 0;
-    return Math.max(1, (run.pos | 0) + off + (base ? 0 : sparCfg(content).posAdd));
+    return Math.max(1, (run.pos | 0) + off + (base ? 0 : sparAddAt(sparCfg(content).posAdd, run.pos)));
   }
   // sparDeck(content, who, posEff, {main, tier}) -> [cards]：熟客的牌組（主線 11-21 裁定「牌組身分跟強度分開」）——一律他自己 C.regulars[who].enc.deck 那 7 張、
   //   照原順序、不換牌（trialDeck 的總星下限會把他的牌換光＝戰利品不再是他的唱片）；星數照等效位數的 trialDeck 規則「只補星」：
@@ -3428,7 +3451,7 @@
     const R = content.regulars[who], X = sparCfg(content), posEff = sparPos(run, content, who), main = ATTRS.includes(R.enc.main) ? R.enc.main : null;
     const d = enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: run.seedKey + '#enc', runNo: run.runNo, playerAce: run.ace, tier: run.tier, main,
       deckIds: R.enc.deck });                                 // deckIds＝釘住他的 7 張（trialDeck 不去換牌；王牌那顆雜湊照舊），下一行換成 sparDeck 補星的版本
-    d.deck = sparDeck(view, who, posEff, { main, tier: run.tier });
+    d.deck = sparDeck(view, who, X.deckAt === 'pos' ? Math.max(1, run.pos | 0) : X.deckAt === 'base' ? sparPos(run, content, who, true) : posEff, { main, tier: run.tier });
     d.hp = Math.max(1, ceil6(X.short * d.hp));
     if (X.ace !== true) d.ace = null;                         // 規格：不帶王牌（encounter.ace true＝照一般客人的機率帶，只給試調強度用；出貨不開）
     d.title = null;
@@ -4597,7 +4620,7 @@
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar,
-    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparMode, sparPos, sparDeck, SPAR_LINE_IDS, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
+    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparAddAt, sparMode, sparPos, sparDeck, SPAR_LINE_IDS, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

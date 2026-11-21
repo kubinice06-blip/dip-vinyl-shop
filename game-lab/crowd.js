@@ -1179,6 +1179,7 @@
     var el = null;
     try {
       el = t.say(c.id, String(b.text), { chat: true, who: c.name, more: more, quote: !!b.quote, src: b.src || '', tone: c.id === 'o' ? 'owner' : null, ms: Math.max(1, Math.round(ms)),
+        sideIfCover: c.sideIfCover != null ? c.sideIfCover : undefined,
         onTap: function () { if (S.chat === c && c.el === el) chatNext(c); },
         onClose: function (e) { if (S.chat === c && c.el === e) chatEnd(c, true); } });
     } catch (e) { console.error(e); }
@@ -1384,7 +1385,9 @@
     return { xy: p, legs: encLegs(p), slot: sl.id };
   }
   // f（他，站在對戰台或走在半路）交回走動槽：同一點、同外觀接手（看不出換人），f 藏起來 → 他走 frontleft 去左排一個空停留點翻 15–30 秒再走；沒空格就 frontleft → in → 門。
-  //   o.spd（「下一位」打斷＝48）、o.say（邊走邊說的那一句，一般泡泡）。回接手的槽 id；舞台不在、f 不在、沒有空槽＝null（f 照樣藏起來）
+  //   o.spd（「下一位」打斷＝48）、o.say（邊走邊說的那一句：聊天泡泡跟著他走，S.chat 記帳＝換畫面（進對決）就收、挑戰者與老闆等他講完；審查修正 p2b：原本一般泡泡
+  //   換畫面不收，被帶進對決畫面跟主線客人開場白疊字）、o.sayMs（那句停多久，真實毫秒×fastK；沒給 2.4 秒）、o.out（那句講的是要走了：直接出門，不去翻箱）。
+  //   回接手的槽 id；舞台不在、f 不在、沒有空槽＝null（f 照樣藏起來）
   function takeBack(slotHint, who, o) {
     o = o || {};
     var t = st(), E0 = S.enc; S.enc = null;
@@ -1407,7 +1410,7 @@
     sl.dest = xy; sl.plan = 0; sl.pay = false;
     var spd = o.spd || num(cf('speed'), 30) * 1.6;
     var occ = occupiedFor(sl), stop = null;
-    for (var i = 0; i < ENC_LEFT.length && !stop; i++) {
+    for (var i = 0; i < ENC_LEFT.length && !stop && !o.out; i++) {
       var s = stopById(ENC_LEFT[i]);
       if (s && !blocked(s) && !S.reserve[s.id] && !occ.some(function (q) { return clash(q, [s.x, s.y]); })) stop = s;
     }
@@ -1419,7 +1422,11 @@
       walk(sl, ['frontleft', 'in', doorKey()], spd, function () { doorOut(sl); });
     }
     addHot(sl);
-    if (o.say) { try { t.say(id, String(o.say), { ms: Math.max(1, Math.round((o.sayMs || 2400) / speed())) }); } catch (e) { console.error(e); } }
+    if (o.say) {
+      chatClose();
+      var c = { id: id, sl: null, who: who, name: nameOf(who), voice: voiceOf(who), bubbles: [{ text: String(o.say) }], i: 0, pending: false, until: 0, fixMs: (o.sayMs > 0 ? o.sayMs : 2400) / fastK() };
+      S.chat = c; chatShow(c);
+    }
     return id;
   }
   // 邀請中直接按「下一位」（§7.3-6；順序寫死）：同步做完——他說一句（o.text，不等點）、走動槽接手、f 藏、他往 frontleft 走（速度 48）；
@@ -1428,7 +1435,7 @@
     o = o || {};
     var t = st(); if (!S.enc || !t) return Promise.resolve();
     var a = t.has && t.has('f') ? t.pos('f') : null, from = a && !a.hidden ? [a.x, a.y] : null;
-    var id = takeBack(null, S.enc.who, { spd: num(cf('yieldSpeed'), 48), say: o.text || null, sayMs: o.ms });
+    var id = takeBack(null, S.enc.who, { spd: num(cf('yieldSpeed'), 48), say: o.text || null, sayMs: o.ms, out: !!o.out });
     if (!id || !from) return Promise.resolve();
     return new Promise(function (res) {
       var t0 = Date.now(), soft = 500 / speed(), hard = 2000 / speed();
@@ -1446,7 +1453,8 @@
     var t = st(); if (!t || !text) return null;
     hook();
     chatClose();
-    var c = { id: 'f', sl: null, who: who, name: nameOf(who), voice: voiceOf(who), bubbles: [{ text: String(text) }], i: 0, pending: false, until: 0, fixMs: o.ms > 0 ? o.ms / fastK() : 0 };
+    var c = { id: 'f', sl: null, who: who, name: nameOf(who), voice: voiceOf(who), bubbles: [{ text: String(text) }], i: 0, pending: false, until: 0, fixMs: o.ms > 0 ? o.ms / fastK() : 0,
+      sideIfCover: o.sideIfCover };   // o.sideIfCover：頭頂蓋到箱子多少才改放身體旁（戰利品列時給 9＝不移：放旁邊會蓋住站在 duelP 的你）
     S.chat = c;
     chatShow(c);
     return S.chat === c && c.el ? true : null;

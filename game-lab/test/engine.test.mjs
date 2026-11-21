@@ -7,7 +7,7 @@
 //   （十個分類＋三個子曲風區 citypop／indierock／indiepop＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
 //   v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP；這三區看子曲風（卡的 subs，規則 sub），不看第一個曲風。
 //   第 I 波 I-0（SPEC-I §7）：舊段落的 C 關掉第一位升級（firstNeed 0），黃金照舊；#29–#31 的黃金改在 I0OFF(content) 上比、出貨 content 上比變體彼此一致；新規則在 #32。
-//   活店第二階段切磋（SPEC-H §12.1 LE1–LE10、LE12）：#34；出貨 content 的 C.encounter.on false → #34 用 on:true 的拷貝；欄位一律 run.spar（規格的 run.enc）。
+//   活店第二階段切磋（SPEC-H §12.1 LE1–LE10、LE12）：#34；#34 一律用 on:true 的拷貝（出貨 content p2b 收尾已打開；LE1 的「關著」用 on:false 的拷貝）；欄位一律 run.spar（規格的 run.enc）。
 import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
@@ -4762,6 +4762,7 @@ section('33 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 
 section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、LE2 出現率、LE3 開／改天不碰主線、LE4 開打不碰主線＋短局＋fightSetup 同一個入口、LE5 戰利品列、LE6 輸了不扣、LE7 收／不收、LE8 作廢、LE9 fixEnc、LE10 encView、LE12 主線亂數不動、不動清單逐欄、encPolicy', () => {
   EN.setCtx(null);
   const CE = Object.assign({}, CW, { encounter: Object.assign({}, C0.encounter, { on: true }) });
+  const CWoff = Object.assign({}, CW, { encounter: Object.assign({}, C0.encounter, { on: false }) });   // 開關關著（LE1）
   const CEB = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { reward: 'bag' }) });
   const REG = C0.regulars, RIDS = Object.keys(REG), W = RIDS.reduce((s, k) => s + REG[k].encW, 0);
   const WIN = { kind: 'counter', toE: 99, toP: 0 }, LOSE = { kind: 'countered', toE: 0, toP: 99 };
@@ -4794,7 +4795,7 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     for (let s = 0; s < 400; s++) for (let p = 1; p <= 40; p++) {
       const f = fake('le1-' + s, 1 + (s % 3), p), of = EN.encOffer(f, CE);
       if (J(of) !== J(EN.encOffer(f, CE))) bad++;
-      if (EN.encOffer(f, CW) !== null) bad++;                         // 出貨 content：on false
+      if (EN.encOffer(f, CWoff) !== null) bad++;                      // 開關關著（on false；出貨 content 第二階段收尾已打開 → 用拷貝關掉）
       if (p <= 5 && of) bad++;
       if (EN.classAt(p) !== 'normal' && of) bad++;
       if (of) { on++;
@@ -4807,7 +4808,7 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       n++;
     }
     ok(bad === 0 && on > 500, 'LE1 encOffer: off／pos 1–5／elite／boss／pending stall reward retry level draft／over／duel／prologue／dare round → null; deterministic', { bad, on, n });
-    ok(EN.sparCfg(C0).on === false && C0.encounter.reward === 'shelf', 'shipping content: encounter off, reward shelf'); }
+    ok(EN.sparCfg(C0).on === true && C0.encounter.reward === 'shelf', 'shipping content: encounter on (phase 2 closed out after LS0–LS9, p2b), reward shelf'); }
 
   // ---- LE2 出現率（20,000 組 seedKey×runNo×輪）----
   { const K = 20000; let rounds = 0, hit = 0, multi = 0; const idx = [0, 0, 0, 0, 0], who = {};
@@ -4848,7 +4849,7 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       const st = EN.encStart(r, K, so), d = st.duel;
       if (J(r) !== j0 || r.duel !== null) { bad++; info.push([nm, 'run changed']); }
       // 等效位數＝pos＋熟客自己的 off＋content.encounter.posAdd（下半）；短局比例照 content 讀（不寫死 0.6）
-      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + XS.posAdd), view = EN.encView(K, who);
+      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(XS.posAdd, r.pos)), view = EN.encView(K, who);   // 位移可以照位數走（p2b）
       if (EN.sparPos(r, K, who) !== posEff || EN.sparPos(r, K, who, true) !== Math.max(1, r.pos + REG[who].enc.off)) { bad++; info.push([nm, 'sparPos']); }
       const e0 = EN.enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
       const sd = EN.sparDeck(view, who, posEff, { main: REG[who].enc.main, tier: r.tier });
@@ -4935,12 +4936,24 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       if (!r.spar.loot || J(r.spar.loot) !== J(r4.spar.loot) || r.spar.loot.src.some(x => x !== 'fill')) bad++; else fills++;
     }
     ok(bad === 0 && n > 100 && filled > 50 && same > 5 && loot === 18 && fills === 6 && direct === RIDS.length * 70 * 7 && mFirst > 0, "regular's deck＝his own 7 (any posAdd 0／8／20／40): ids unchanged, stars only go up (buff on main／peak axis, then fill to the floor: that axis first, then the lowest), ≤cap, peak kept, plus／fill = the diff; below the floor = trialDeck pinned; loot from his 7", { bad, n, filled, same, direct, mFirst, info }); }
+  // 位移照位數走（審查修正 p2b）：posAdd＝整數（全程同一個）或 [[第幾位, 位移], …] 折線（兩點之間線性內插四捨五入、頭尾之外照頭尾）；不合法＝0
+  { let bad = 0; const cf = x => EN.sparCfg(Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: x }) })).posAdd;
+    const K = [[6, 4], [16, 14], [30, 31]];
+    const want = { 1: 4, 6: 4, 7: 5, 11: 9, 16: 14, 17: 15, 23: 23, 30: 31, 31: 31, 80: 31 };
+    for (const [p, a] of Object.entries(want)) if (EN.sparAddAt(cf(K), +p) !== a) bad++;
+    if (EN.sparAddAt(cf(7), 50) !== 7 || EN.sparAddAt(cf(-3), 2) !== -3) bad++;
+    for (const x of [[[6, 4], [6, 5]], [[6, 4], [5, 5]], [[0, 1]], [[6, 100]], [[6, 1.5]], [], 'x', 100, 2.5, [[6]], Array.from({ length: 13 }, (_, i) => [i + 1, 1])]) if (cf(x) !== 0) bad++;
+    if (J(cf(K)) !== J(K) || cf(K) === K) bad++;                                    // 驗過的是拷貝
+    // sparPos 用這一位的位移；base＝不加
+    const KC = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: K }) });
+    for (const pos of [6, 11, 23, 40]) for (const who of RIDS) { const r = { pos }; if (EN.sparPos(r, KC, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(K, pos)) || EN.sparPos(r, KC, who, true) !== Math.max(1, pos + REG[who].enc.off)) bad++; }
+    ok(bad === 0, 'spar posAdd: integer or [[pos, add]…] knots (linear between, clamped at the ends, rounded); invalid → 0; sparPos uses the add at this pos', bad); }
   // encounter.ace（試調旗標，出貨 false＝規格「不帶王牌」）：true＝照一般客人在 posEff 的機率帶王牌（＝enemyDef 給的那張）
   { const CEA = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { ace: true }) }); let bad = 0, withAce = 0;
     for (let s = 0; s < 40; s++) {
       const r = fightRun('ace-' + s, CEA, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, CEA, 11 + (s % 6) * 5 + (s % 3));
       for (const who of RIDS) {
-        const posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparCfg(CEA).posAdd), e0 = EN.enemyDef(EN.encView(CEA, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+        const posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(EN.sparCfg(CEA).posAdd, r.pos)), e0 = EN.enemyDef(EN.encView(CEA, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
         const a1 = EN.encDef(r, CEA, who).ace, a0 = EN.encDef(r, CE, who).ace;
         if ((a1 && a1.id) !== (e0.ace && e0.ace.id) || a0 !== null) bad++;
         if (a1) withAce++;
@@ -5078,23 +5091,24 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       if (!real.length && J(v.lines[who]) !== '{}') bad++;
     }
     if (J(C0.enemies) !== e0 || J(C0.lines) !== l0 || EN.encView(CE, 'boss') !== null || EN.encView(CE, 'nobody') !== null) bad++;
-    // 四鍵對到他的切磋句（棒 3d 還沒交時用樁）：line＝encDare、intro＝encYes、lose＝encLose 全部、win＝encWin 全部；多泡接起來
+    // 三鍵對到他的切磋句（棒 3d 還沒交時用樁）：intro＝encYes、lose＝encLose 全部、win＝encWin 全部；多泡接起來。
+    //   不給 line（審查修正 p2b：duel.js 開場讀 lines.line || lines.intro，給了 line，答應那句 encYes 永遠不出；嗆的句子全留給邀請泡泡）
     const stub = [{ id: 's1', who: 'akai', cat: 'encDare', text: '來一盤？' }, { id: 's2', who: 'akai', cat: 'encYes', text: ['好，', '來。'] }, { id: 's3', who: 'akai', cat: 'encLose', text: '可惡。' },
       { id: 's4', who: 'akai', cat: 'encLose', text: '下次。' }, { id: 's5', who: 'akai', cat: 'encWin', text: '承讓。' }, { id: 's6', who: 'datou', cat: 'encWin', text: '別人的' }, { id: 's7', who: 'akai', cat: 'encNo', text: '改天' }];
     const KS = Object.assign({}, CE, { chat: (C0.chat || []).filter(x => !/^enc/.test(x.cat)).concat(stub) }), vs = EN.encView(KS, 'akai');
-    eq(vs.lines.akai, { line: '來一盤？', intro: '好，來。', lose: ['可惡。', '下次。'], win: ['承讓。'] }, 'LE10 lines: encDare／encYes／encLose／encWin → line／intro／lose／win');
-    eq(vs.enemies.akai.line, '來一盤？', 'LE10 enemies[who].line = encDare');
-    // 真的台詞（棒 3d 交件，下半）：line＝<who>-encDare-03、intro＝encYes-01、lose＝[encLose-02]、win＝[encWin-01]（嗆那兩句、「唱片你挑」那句、安慰那句留給來客畫面）
+    eq(vs.lines.akai, { intro: '好，來。', lose: ['可惡。', '下次。'], win: ['承讓。'] }, 'LE10 lines: encYes／encLose／encWin → intro／lose／win (no line: the duel opens with encYes)');
+    eq(vs.enemies.akai.line, undefined, 'LE10 enemies[who].line not set (encDare stays with the invite bubble)');
+    // 真的台詞（棒 3d 交件，下半；p2b 拿掉 line）：intro＝encYes-01、lose＝[encLose-02]、win＝[encWin-01]（嗆那三句、「唱片你挑」那句、安慰那句留給來客畫面）
     { const txt = id => { const x = C0.chat.find(y => y.id === id); return x ? [].concat(x.text).join('') : null; }; let b2 = 0;
       for (const who of RIDS) {
-        const v = EN.encView(CE, who).lines[who], want = { line: txt(who + '-encDare-03'), intro: txt(who + '-encYes-01'), lose: [txt(who + '-encLose-02')], win: [txt(who + '-encWin-01')] };
-        if (Object.values(want).some(x => x == null || (Array.isArray(x) && x[0] == null)) || J(v) !== J(want) || EN.encView(CE, who).enemies[who].line !== want.line) b2++;
+        const v = EN.encView(CE, who).lines[who], want = { intro: txt(who + '-encYes-01'), lose: [txt(who + '-encLose-02')], win: [txt(who + '-encWin-01')] };
+        if (Object.values(want).some(x => x == null || (Array.isArray(x) && x[0] == null)) || J(v) !== J(want) || EN.encView(CE, who).enemies[who].line !== undefined) b2++;
       }
       // 指定的那句不在（id 改了）＝退回舊對應（那一類第一句／全部）
       const K2 = Object.assign({}, CE, { chat: C0.chat.map(x => x.id === 'akai-encLose-02' ? Object.assign({}, x, { id: 'akai-encLose-09' }) : x) });
       const all = C0.chat.filter(x => x.who === 'akai' && x.cat === 'encLose').map(x => x.text);
       if (J(EN.encView(K2, 'akai').lines.akai.lose) !== J(all)) b2++;
-      ok(b2 === 0, 'LE10 real lines: line＝encDare-03, intro＝encYes-01, lose＝[encLose-02], win＝[encWin-01]; pinned id missing → old mapping', b2); }
+      ok(b2 === 0, 'LE10 real lines: intro＝encYes-01 (no line), lose＝[encLose-02], win＝[encWin-01]; pinned id missing → old mapping', b2); }
     ok(bad === 0, 'LE10 encView: shallow copy, enemies／lines get the regular (avatar = look, not e0), C untouched, non-regular → null', bad); }
 
   // ---- LE12 主線亂數不動：同一個 run 兩份，一份接每個邀請打完收進唱片櫃、一份都改天 → 之後 20 位每場開打種子、每次配件獎勵逐筆相同 ----
