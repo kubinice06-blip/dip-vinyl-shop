@@ -7,7 +7,7 @@
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 > 活店第二階段（切磋＝遭遇戰）：每位熟客的切磋句在「活店・切磋・<名字>」（說話者欄多標分類：嗆、接了、改天、沒理他、他輸了、他贏了、作廢、看你這一趟的切磋輸贏），邀請面板、對決頂欄、戰利品列的字在「活店・切磋・介面字」。
 
-統計：原句 45、拍板 0、店主 71、新 1736（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1831（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -925,6 +925,28 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・bossCarry | 帶的王牌《{album}》 | 本規格新寫 | `trial.ui.bossCarry` |
 | （畫面字）・bossUnlock | 打倒他，解鎖{title} | 本規格新寫 | `trial.ui.bossUnlock` |
 | （畫面字）・bossCollect | 打倒他，這張就收進唱片櫃 | 本規格新寫 | `trial.ui.bossCollect` |
+| （畫面字）・tierRow | 試煉階級 | 本規格新寫 | `trial.ui.tierRow` |
+| （畫面字）・tierN | 第 {k} 階 | 本規格新寫 | `trial.ui.tierN` |
+| （畫面字）・tierZero | 不加條件 | 本規格新寫 | `trial.ui.tierZero` |
+| （畫面字）・tierNew | 這一階：{text} | 本規格新寫 | `trial.ui.tierNew` |
+| （畫面字）・tierMore | 另外 {n} 條 | 本規格新寫 | `trial.ui.tierMore` |
+| （畫面字）・tierTag | 第 {k} 階 | 本規格新寫 | `trial.ui.tierTag` |
+| （畫面字）・tierOpen | 開了第 {k} 階：{text} | 本規格新寫 | `trial.ui.tierOpen` |
+| （畫面字）・tierLadder | 試煉階級：開到第 {k} 階 | 本規格新寫 | `trial.ui.tierLadder` |
+| （畫面字）・tierHow | 打倒第 20 位藏家開下一階 | 本規格新寫 | `trial.ui.tierHow` |
+| （畫面字）・tierReward | 樂歷 ×{m} | 本規格新寫 | `trial.ui.tierReward` |
+| （畫面字）・tierShort | 試煉 | 本規格新寫 | `trial.ui.tierShort` |
+| （畫面字）・tierDn | 少一階 | 本規格新寫 | `trial.ui.tierDn` |
+| （畫面字）・tierUp | 多一階 | 本規格新寫 | `trial.ui.tierUp` |
+| （畫面字）・tierAll | 點開看每一階 | 本規格新寫 | `trial.ui.tierAll` |
+| （畫面字）・tierZeroSub | 往右選一階，就多一條條件、樂歷變多。 | 本規格新寫 | `trial.ui.tierZeroSub` |
+| （畫面字）・tierStack | 選第 3 階＝前 3 條都算；越高樂歷越多。 | 本規格新寫 | `trial.ui.tierStack` |
+| （畫面字）・tierPassed | 過關 | 本規格新寫 | `trial.ui.tierPassed` |
+| （畫面字）・tierFar | 最遠第 {n} 位 | 本規格新寫 | `trial.ui.tierFar` |
+| （畫面字）・tierNone | 還沒打過 | 本規格新寫 | `trial.ui.tierNone` |
+| （畫面字）・tierPicked | 已選 | 本規格新寫 | `trial.ui.tierPicked` |
+| （畫面字）・tierOpenSub | 回店門口，在「試煉階級」往右選；樂歷 ×{m}。 | 本規格新寫 | `trial.ui.tierOpenSub` |
+| （畫面字）・tierRowNext | 下一趟 | 本規格新寫 | `trial.ui.tierRowNext` |
 
 ## 無限試煉・升級三選一（店主暫定的名字：品味／底氣）
 
@@ -969,6 +991,24 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字）・地下廠牌主理人 | 廠牌主理人 | 本規格新寫 | `trial.titlesShort.地下廠牌主理人` |
+
+## 試煉階級・階表（第 k 階：名字＋這一階新加的那條；推門那列、過場卡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・第 1 階 | 不說：什麼都不露的提示多 5%。 | 本規格新寫 | `trial.tiers[0].text` |
+| （畫面字）・第 2 階 | 好貨：客人的牌加星變快（每 2 位一次）。 | 本規格新寫 | `trial.tiers[1].text` |
+| （畫面字）・第 3 階 | 話少：只說一半的提示多 10%。 | 本規格新寫 | `trial.tiers[2].text` |
+| （畫面字）・第 4 階 | 菁英：菁英聲望 +3。 | 本規格新寫 | `trial.tiers[3].text` |
+| （畫面字）・第 5 階 | 老藏家：傳說藏家聲望 +3。 | 本規格新寫 | `trial.tiers[4].text` |
+| （畫面字）・第 6 階 | 會唬：客人唬人多 5%。 | 本規格新寫 | `trial.tiers[5].text` |
+| （畫面字）・第 7 階 | 硬底：客人底氣 +1。 | 本規格新寫 | `trial.tiers[6].text` |
+| （畫面字）・第 8 階 | 小氣：打贏一般客人回的聲望少 1。 | 本規格新寫 | `trial.tiers[7].text` |
+| （畫面字）・第 9 階 | 挑剔：菁英、藏家品味 +1。 | 本規格新寫 | `trial.tiers[8].text` |
+| （畫面字）・第 10 階 | 大場面：菁英、藏家聲望再 +3。 | 本規格新寫 | `trial.tiers[9].text` |
+| （畫面字）・第 11 階 | 更挑剔：所有客人品味 +1。 | 本規格新寫 | `trial.tiers[10].text` |
+| （畫面字）・第 12 階 | 更小氣：打贏回的聲望再少 1（菁英、藏家也是）。 | 本規格新寫 | `trial.tiers[11].text` |
+| （畫面字）・第 13 階 | 更硬底：客人底氣再 +1。 | 本規格新寫 | `trial.tiers[12].text` |
 
 ## 從唱片櫃挑牌開局・挑種子（第二趟起，挑完王牌）
 
@@ -1097,6 +1137,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・noPoints | 天賦點不夠 | 本規格新寫 | `career.ui.noPoints` |
 | （畫面字）・profTitle | 熟練度 | 本規格新寫 | `career.ui.profTitle` |
 | （畫面字）・unlockTitle | 流派與攤位 | 本規格新寫 | `career.ui.unlockTitle` |
+| （畫面字）・tabTalent | 天賦 | 本規格新寫 | `career.ui.tabTalent` |
 | （畫面字）・lastLine | 上一趟 樂歷 +{n} | 本規格新寫 | `career.ui.lastLine` |
 | （畫面字）・nextRun | 改了下一趟開局才算 | 本規格新寫 | `career.ui.nextRun` |
 
@@ -2389,6 +2430,20 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・text | 見過世面：每場第一次被剋，少扣 2（最少扣 1）。 | 本規格新寫 | `factions.hall.picks[3].text` |
 | （畫面字）・text | 吸血（第二招）：扣整張那手，扣到的一半回聲望，一場最多 2。 | 本規格新寫 | `factions.hall.picks[4].text` |
 
+## 流派試做・經典流的派樹（樂歷頁派樹分頁；名字：說明；soon＝之後開放）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 先聲奪人：扣整張那手，再多扣 1（跟「初版」疊加）。 | 本規格新寫 | `factions.hall.tree.a1.text` |
+| （畫面字）・text | 挑著學：第二次本派格出兩個，挑一個學。 | 本規格新寫 | `factions.hall.tree.a2.text` |
+| （畫面字）・text | 口碑：信對的手累積滿 8／6／4 手，打贏多回 1。 | 本規格新寫 | `factions.hall.tree.a3.text` |
+| （畫面字）・text | 和氣：同色平手回 1 聲望（每場一次）。 | 本規格新寫 | `factions.hall.tree.b1.text` |
+| （畫面字）・text | 不計較：每場第一次同色平手，你不扣。 | 本規格新寫 | `factions.hall.tree.b2.text` |
+| （畫面字）・text | 老客人的面子：說情重打那場，開打聲望 +1。 | 本規格新寫 | `factions.hall.tree.b3.text` |
+| （畫面字）・text | 老店（之後開放）：開局老闆多送一張唱片。 | 本規格新寫 | `factions.hall.tree.c1.text` |
+| （畫面字）・text | 尋寶眼光（之後開放）：藏家寶箱更常翻到本派的頂點卡。 | 本規格新寫 | `factions.hall.tree.c2.text` |
+| （畫面字）・text | 雙唱盤（之後開放）：可以帶兩張頂點卡上場。 | 本規格新寫 | `factions.hall.tree.c3.text` |
+
 ## 流派試做・冷門流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -2408,6 +2463,20 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・text | 熟客：聲望不到一半時，打贏多回 2。 | 本規格新寫 | `factions.pearl.picks[2].text` |
 | （畫面字）・text | 地下串連：聲望上限 +3，現有聲望也 +3。 | 本規格新寫 | `factions.pearl.picks[3].text` |
 | （畫面字）・text | 反傷（第二招）：被剋時他也扣 2，一場最多 2 次。 | 本規格新寫 | `factions.pearl.picks[4].text` |
+
+## 流派試做・冷門流的派樹（樂歷頁派樹分頁；名字：說明；soon＝之後開放）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 默契：同色平手回 1 聲望（每場一次）。 | 本規格新寫 | `factions.pearl.tree.a1.text` |
+| （畫面字）・text | 挑著學：第二次本派格出兩個，挑一個學。 | 本規格新寫 | `factions.pearl.tree.a2.text` |
+| （畫面字）・text | 識破：拆穿累積滿 8／6／4 手，打贏多回 1。 | 本規格新寫 | `factions.pearl.tree.a3.text` |
+| （畫面字）・text | 有人撐腰：說情重打那場，開打聲望 +1。 | 本規格新寫 | `factions.pearl.tree.b1.text` |
+| （畫面字）・text | 韌性：每場第一次比星輸，他的品味少算 1。 | 本規格新寫 | `factions.pearl.tree.b2.text` |
+| （畫面字）・text | 撐住：聲望不到三分之一時，打贏多回 1。 | 本規格新寫 | `factions.pearl.tree.b3.text` |
+| （畫面字）・text | 翻箱人（之後開放）：戰利品列多翻一張。 | 本規格新寫 | `factions.pearl.tree.c1.text` |
+| （畫面字）・text | 尋寶眼光（之後開放）：藏家寶箱更常翻到本派的頂點卡。 | 本規格新寫 | `factions.pearl.tree.c2.text` |
+| （畫面字）・text | 雙唱盤（之後開放）：可以帶兩張頂點卡上場。 | 本規格新寫 | `factions.pearl.tree.c3.text` |
 
 ## 流派試做・異端流的派系卡與本派說明（定位、被動、代價、讀法；first＝第一次觸發那手結果行補的一句）
 
@@ -2429,6 +2498,20 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・text | 失真：你的硬蕊 +1 星（王牌不加）。 | 本規格新寫 | `factions.heresy.picks[3].text` |
 | （畫面字）・text | 爆擊（第二招）：拆穿再多扣 1，比星輸不再多扣。 | 本規格新寫 | `factions.heresy.picks[4].text` |
 
+## 流派試做・異端流的派樹（樂歷頁派樹分頁；名字：說明；soon＝之後開放）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・text | 圈內人：同色平手回 1 聲望（每場一次）。 | 本規格新寫 | `factions.heresy.tree.a1.text` |
+| （畫面字）・text | 挑著學：第二次本派格出兩個，挑一個學。 | 本規格新寫 | `factions.heresy.tree.a2.text` |
+| （畫面字）・text | 破例：信對的手累積滿 10／8／6 手，打贏多回 1。 | 本規格新寫 | `factions.heresy.tree.a3.text` |
+| （畫面字）・text | 留後路：說情重打那場，開打聲望 +1。 | 本規格新寫 | `factions.heresy.tree.b1.text` |
+| （畫面字）・text | 刺蝟：每場第一次比星輸，他的品味少算 1。 | 本規格新寫 | `factions.heresy.tree.b2.text` |
+| （畫面字）・text | 撐住：聲望不到三分之一時，打贏多回 1。 | 本規格新寫 | `factions.heresy.tree.b3.text` |
+| （畫面字）・text | 地下名店（之後開放）：店裡的硬蕊 5 星唱片打八折。 | 本規格新寫 | `factions.heresy.tree.c1.text` |
+| （畫面字）・text | 尋寶眼光（之後開放）：藏家寶箱更常翻到本派的頂點卡。 | 本規格新寫 | `factions.heresy.tree.c2.text` |
+| （畫面字）・text | 雙唱盤（之後開放）：可以帶兩張頂點卡上場。 | 本規格新寫 | `factions.heresy.tree.c3.text` |
+
 ## 流派試做・結果行小字（{n}：整張／借／以小搏大＝這手扣他的總數，其他＝多扣／回的那一份）
 
 | 說話者 | 句子 | 出處 | 位置 |
@@ -2444,6 +2527,8 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・loseCost | 比星輸：多扣 {n} | 本規格新寫 | `factions.notes.loseCost` |
 | （畫面字）・leech | 吸血：回 {n} 聲望 | 本規格新寫 | `factions.notes.leech` |
 | （畫面字）・thorn | 反傷：他也扣 {n} | 本規格新寫 | `factions.notes.thorn` |
+| （畫面字）・spine | 刺蝟：少扣 {n} | 本規格新寫 | `factions.notes.spine` |
+| （畫面字）・insider | 圈內人：回 {n} 聲望 | 本規格新寫 | `factions.notes.insider` |
 
 ## 流派試做・?fac=1&apex=1 同開：頂點卡換一格後的能力說明（這個原語的卡都換）
 
@@ -2472,7 +2557,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 |---|---|---|---|
 | （畫面字）・leechFac | 王牌：拆穿！回聲望跟流派取大，不另加 | 本規格新寫 | `factions.apexSwap.notes.leechFac` |
 
-## 流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態；{x} 由畫面代入）
+## 流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態、派樹分頁；{x} 由畫面代入）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
@@ -2496,6 +2581,46 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・profOnly | 熟練 Lv{n} | 本規格新寫 | `factions.ui.profOnly` |
 | （畫面字）・swapped | 跟流派一起試，這張換過能力 | 本規格新寫 | `factions.ui.swapped` |
 | （畫面字）・apexMixed | 頂點卡跟流派一起試：有幾張還沒換能力 | 本規格新寫 | `factions.ui.apexMixed` |
+| （畫面字）・treeTab | 派樹 | 本規格新寫 | `factions.ui.treeTab` |
+| （畫面字）・treePoints | 派點 {n} | 本規格新寫 | `factions.ui.treePoints` |
+| （畫面字）・treeOf | {title}的派樹 | 本規格新寫 | `factions.ui.treeOf` |
+| （畫面字）・treeCost | {n} 點 | 本規格新寫 | `factions.ui.treeCost` |
+| （畫面字）・treeLv | {k}／{max} 級 | 本規格新寫 | `factions.ui.treeLv` |
+| （畫面字）・treeHave | 已點 | 本規格新寫 | `factions.ui.treeHave` |
+| （畫面字）・treeNeed | 先點「{name}」 | 本規格新寫 | `factions.ui.treeNeed` |
+| （畫面字）・treeProf | 熟練 Lv{n} 開 | 本規格新寫 | `factions.ui.treeProf` |
+| （畫面字）・treeNoPts | 派點不夠 | 本規格新寫 | `factions.ui.treeNoPts` |
+| （畫面字）・treeSoon | 之後開放 | 本規格新寫 | `factions.ui.treeSoon` |
+| （畫面字）・treeSoonApex | 頂點卡正式上線後開 | 本規格新寫 | `factions.ui.treeSoonApex` |
+| （畫面字）・treeSoonMarket | 市集上線後開 | 本規格新寫 | `factions.ui.treeSoonMarket` |
+| （畫面字）・treeRespec | 全部重配（免費） | 本規格新寫 | `factions.ui.treeRespec` |
+| （畫面字）・treeHow | 這派打一趟就蓋章，10 章升一級、多 1 派點。 | 本規格新寫 | `factions.ui.treeHow` |
+| （畫面字）・treePtsUp | 派點 +{n} | 本規格新寫 | `factions.ui.treePtsUp` |
+| （畫面字）・goTree | 去點派樹 | 本規格新寫 | `factions.ui.goTree` |
+| （畫面字）・treeOffNote | 關掉樂歷時，派樹也不算。 | 本規格新寫 | `factions.ui.treeOffNote` |
+| （畫面字）・treeStart | 本派格先出：{list} | 本規格新寫 | `factions.ui.treeStart` |
+| （畫面字）・deepWin | {name}：多回 {n} 聲望 | 本規格新寫 | `factions.ui.deepWin` |
+| （畫面字）・pleaHp | 老客人的面子：聲望 +{n} | 本規格新寫 | `factions.ui.pleaHp` |
+| （畫面字）・treeFirstHow | 升級的本派格先出它；學了照樣佔那一級。 | 本規格新寫 | `factions.ui.treeFirstHow` |
+| （畫面字）・treeDep | 先退「{name}」 | 本規格新寫 | `factions.ui.treeDep` |
+| （畫面字）・deepNow | {name}：記了 {h}／{per} 手，記滿那場打贏多回 1 | 本規格新寫 | `factions.ui.deepNow` |
+| （畫面字）・treeMine | 派樹：{list} | 本規格新寫 | `factions.ui.treeMine` |
+| （畫面字）・treeLvN | {k} 級 | 本規格新寫 | `factions.ui.treeLvN` |
+
+## 流派試做・畫面字（派樹的路線名）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・a | 本派 | 本規格新寫 | `factions.ui.treePath.a` |
+| （畫面字）・b | 抵代價 | 本規格新寫 | `factions.ui.treePath.b` |
+| （畫面字）・c | 收藏 | 本規格新寫 | `factions.ui.treePath.c` |
+
+## 流派試做・畫面字（本派說明：深耕記的一手是什麼）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・honest | 一手＝信他明指的那色、他照實出、你剋中 | 本規格新寫 | `factions.ui.deepHow.honest` |
+| （畫面字）・caught | 一手＝他唬你、你剛好剋中（拆穿） | 本規格新寫 | `factions.ui.deepHow.caught` |
 
 ## 店內名牌（shops/basement.json）
 

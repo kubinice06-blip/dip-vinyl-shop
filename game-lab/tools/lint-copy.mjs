@@ -525,6 +525,15 @@ for (const [grp, scene] of Object.entries(TRIAL_SCENE)) {
   };
   for (const [k, v] of Object.entries((C.trial || {})[grp] || {})) walkT(v, 'trial.' + grp + '.' + k);
 }
+// 第 D 波棒三：試煉階級的階表（C.trial.tiers[k].name 1–4 字／text ≤24 字；推門那列、過場卡「開了第 k 階：…」）
+((C.trial || {}).tiers || []).forEach((x, i) => {
+  const where = 'trial.tiers[' + i + ']';
+  if (!x || typeof x.name !== 'string' || !x.name || len(x.name) > 4) err(where + '.name', '名字要 1–4 字：' + (x && x.name));
+  if (!x || typeof x.text !== 'string' || !x.text) { err(where + '.text', '不是字串'); return; }
+  if (!TAG_OK(C.trialTag)) err(where, '沒有 tag（trialTag）');
+  if (len(x.text) > 24) err(where + '.text', '超過 24 字：' + x.text);
+  add({ scene: '試煉階級・階表（第 k 階：名字＋這一階新加的那條；推門那列、過場卡）', where: where + '.text', who: '（畫面字）', key: '第 ' + (i + 1) + ' 階', text: x.name + '：' + x.text, tag: C.trialTag });
+});
 // 從唱片櫃挑牌開局（店主 11-13；C.seeds.ui）：挑種子、結算帶走一張、唱片櫃頁（我的收藏／認識過）；每句 ≤28 字（不算 {x}）
 for (const [k, v] of Object.entries(((C.seeds || {}).ui) || {})) {
   const where = 'seeds.ui.' + k;
@@ -830,6 +839,11 @@ if (C.factions) {
       if (typeof x.name !== 'string' || !x.name || len(x.name) > 6) err('factions.' + t + '.picks[' + k + '].name', '名字要 1–6 字：' + x.name);
       one('factions.' + t + '.picks[' + k + '].text', x.text, '流派試做・' + nm + '的本派選項（升級第 4 格；名字：說明' + '）', 24, null, x.name + (x.second ? '（第二招）' : '') + '：' + x.text);
     });
+    (D.tree || []).forEach(x => {                                         // 第 D 波棒三：派樹九格（名 ≤6、說明 ≤24；之後開放的格子可以沒有說明）
+      if (!x || typeof x.name !== 'string' || !x.name || len(x.name) > 6) err('factions.' + t + '.tree.' + (x && x.id) + '.name', '名字要 1–6 字：' + (x && x.name));
+      if (x && x.text != null) one('factions.' + t + '.tree.' + x.id + '.text', x.text, '流派試做・' + nm + '的派樹（樂歷頁派樹分頁；名字：說明；soon＝之後開放）', 24, null, x.name + (x.soon ? '（之後開放）' : '') + '：' + x.text);
+      else if (x) one('factions.' + t + '.tree.' + x.id + '.name', x.name, '流派試做・' + nm + '的派樹（樂歷頁派樹分頁；名字：說明；soon＝之後開放）', 6, null, x.name + '（之後開放）');
+    });
   }
   for (const [k, v] of Object.entries(F.notes || {})) one('factions.notes.' + k, v, '流派試做・結果行小字（{n}：整張／借／以小搏大＝這手扣他的總數，其他＝多扣／回的那一份）', 16);
   const S = F.apexSwap || {}, AT = C.apexTrial || {};
@@ -842,7 +856,13 @@ if (C.factions) {
     }
   }
   for (const [k, v] of Object.entries(S.notes || {})) one('factions.apexSwap.notes.' + k, v, k === 'leechFac' ? '流派試做・?fac=1&apex=1 同開：拆穿回血的頂點卡那手，回的聲望被流派被動蓋過（取大）＝這張沒另外回' : '流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）', 25);
-  for (const [k, v] of Object.entries(F.ui || {})) one('factions.ui.' + k, v, '流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態；{x} 由畫面代入）', 25, k === 'pickFirst' ? '老闆' : null);
+  for (const [k, v] of Object.entries(F.ui || {})) {
+    if (v && typeof v === 'object' && !Array.isArray(v)) {   // treePath＝派樹的路線名（≤4）；deepHow＝本派說明裡深耕「一手是什麼」（棒三審查，≤25）
+      for (const [k2, v2] of Object.entries(v)) one('factions.ui.' + k + '.' + k2, v2, k === 'treePath' ? '流派試做・畫面字（派樹的路線名）' : '流派試做・畫面字（本派說明：深耕記的一手是什麼）', k === 'treePath' ? 4 : 25);
+      continue;
+    }
+    one('factions.ui.' + k, v, '流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態、派樹分頁；{x} 由畫面代入）', 25, k === 'pickFirst' ? '老闆' : null);
+  }
 }
 // 一晚版的字不准回到畫面字（店主 11-12：沒有時間、沒有打烊）；序章「今晚那張」（猜歌那張盤）照用
 const NIGHT_WORDS = [/今晚來客/, /打烊/, /再來一夜/, /今晚賣完/, /今晚就到這/, /今晚到這/, /第二夜/];

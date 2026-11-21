@@ -3917,7 +3917,7 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
 
   // ---- 2e careerFix（讀檔整理） ----
   { const f = EN.careerFix(K, { key: 7, xp: -3, spent: { atk: 2, money: 9, piggy: 1, zzz: 4 }, off: 1, prof: { hall: 'x', pearl: 30.7 }, tree: { hall: { a: 2, b: -1 }, pearl: [] }, drawn: [3, 3, 1, 2.5, 5, 2], extra: 'kept' });
-    eq([f.key, f.xp, f.spent, f.off, f.prof, f.tree, f.drawn, f.banked, f.lastGain, f.extra], ['', 0, {}, true, { hall: 0, pearl: 30, heresy: 0 }, { hall: { a: 2 }, pearl: {}, heresy: {} }, [2, 3, 5], false, null, 'kept'], 'careerFix: types; not enough points → spent cleared');
+    eq([f.key, f.xp, f.spent, f.off, f.prof, f.tree, f.drawn, f.banked, f.lastGain, f.extra], ['', 0, {}, true, { hall: 0, pearl: 30, heresy: 0 }, { hall: {}, pearl: {}, heresy: {} }, [2, 3, 5], false, null, 'kept'], 'careerFix: types; not enough points → spent cleared（tree 棒三起照 content 驗：不認得的節點丟掉，見 #34）');
     const g = EN.careerFix(K, { xp: xpAt(22), spent: { atk: 2, money: 9, piggy: 1 } }); eq(g.spent, { atk: 2, money: 3 }, 'careerFix: capped, soon dropped, points ok (21 of 21)');
     eq(EN.careerFix(K, { xp: xpAt(21), spent: { atk: 2, money: 3 } }).spent, {}, 'careerFix: 21 points needed at Lv21 (20) → all back');
     eq(EN.careerFix(K, null).spent, {}, 'careerFix(null)');
@@ -4849,17 +4849,18 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       const st = EN.encStart(r, K, so), d = st.duel;
       if (J(r) !== j0 || r.duel !== null) { bad++; info.push([nm, 'run changed']); }
       // 等效位數＝pos＋熟客自己的 off＋content.encounter.posAdd（下半）；短局比例照 content 讀（不寫死 0.6）
-      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(XS.posAdd, r.pos)), view = EN.encView(K, who);   // 位移可以照位數走（p2b）
+      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(XS.posAdd, r.pos) + EN.sparTierAt(XS, r.tier, r.pos)), view = EN.encView(K, who);   // 位移可以照位數走（p2b）；試煉階級再加（合併審查 F2；這裡第 0 階＝0）
       if (EN.sparPos(r, K, who) !== posEff || EN.sparPos(r, K, who, true) !== Math.max(1, r.pos + REG[who].enc.off)) { bad++; info.push([nm, 'sparPos']); }
       const e0 = EN.enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
       const sd = EN.sparDeck(view, who, posEff, { main: REG[who].enc.main, tier: r.tier });
       const g = EN.trialGuest(K, posEff, 'normal', r.tier), c6 = x => Math.ceil(Math.round(XS.short * x * 1e6) / 1e6);
-      if (!(d.e.taste === e0.taste && d.e.q === e0.q && d.e.atk === e0.atk && d.e.def === e0.def && d.e.planner === e0.planner && d.e.main === REG[who].enc.main
+      const FA = EN.facGuestAdd(r, K, Math.max(1, r.pos));   // 第 D 波棒三合併：?fac=1 時切磋客人也加同一位主線客人的 factions.guest（照第幾位；旗標關＝0）
+      if (!(d.e.taste === e0.taste && d.e.q === e0.q && d.e.atk === e0.atk + FA.atk && d.e.def === e0.def && d.e.planner === e0.planner && d.e.main === REG[who].enc.main
         && d.e.mercyP === e0.mercyP && d.e.rho === e0.rho && d.e.half === e0.half && d.e.none === e0.none && d.e.hit === e0.hit)) { bad++; info.push([nm, 'enemy', d.e.taste, e0.taste, d.e.q, e0.q]); }
       // 牌組＝他自己的 7 張（不換牌）、星數＝sparDeck 補過的（公開牌單 deckPub 的星數一張一張對）
       if (J(d.e.deckIds) !== J(REG[who].enc.deck) || d.e.deckSize !== REG[who].enc.deck.length
         || J(d.e.deckPub.map(x => [x.id, x.c, x.o, x.h])) !== J(sd.map(c => [c.id, c.c, c.o, c.h]))) { bad++; info.push([nm, 'deck']); }
-      if (!(d.p.hp === d.p.max && d.p.hp === c6(r.maxHp) && d.e.hp === d.e.max && d.e.max === c6(g.hp))) { bad++; info.push([nm, 'hp', d.p.hp, d.p.max, r.maxHp, d.e.hp, d.e.max, g.hp]); }
+      if (!(d.p.hp === d.p.max && d.p.hp === c6(r.maxHp) && d.e.hp === d.e.max && d.e.max === c6(g.hp + FA.hp))) { bad++; info.push([nm, 'hp', d.p.hp, d.p.max, r.maxHp, d.e.hp, d.e.max, g.hp]); }
       if (d.e.hkey !== ((EN.fnv1a32(r.seedKey + '#' + r.runNo + '#enc#' + r.pos + '#' + who) >>> 0) || 1)) { bad++; info.push([nm, 'seed']); }
       if (d.p.enc || d.stats.enc || st.enemyId !== who || !d.spar || d.spar.pos !== r.pos || d.e.name !== REG[who].name || d.e.title !== null) { bad++; info.push([nm, 'misc']); }
       // 你這一邊：跟同一個 run 的主線 startFight（走 fightSetup）一樣，只差聲望與種子（還有翻面：切磋沒有）
@@ -4948,6 +4949,46 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     const KC = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: K }) });
     for (const pos of [6, 11, 23, 40]) for (const who of RIDS) { const r = { pos }; if (EN.sparPos(r, KC, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(K, pos)) || EN.sparPos(r, KC, who, true) !== Math.max(1, pos + REG[who].enc.off)) bad++; }
     ok(bad === 0, 'spar posAdd: integer or [[pos, add]…] knots (linear between, clamped at the ends, rounded); invalid → 0; sparPos uses the add at this pos', bad); }
+  // 試煉階級的位移（合併審查 F2）：encounter.tierAdd＝整數（第 1 階起都一樣）或 [[第幾階, 位移], …] 折線（同 posAdd）；第 0 階一律 0；base 不加；
+  //   encDef 的客人＝enemyDef 在加過的等效位數（試煉曲線照 run.tier）；出貨 content 第 0 階的切磋跟沒有 tierAdd 這個鍵逐字相同
+  { let bad = 0; const info = [];
+    const CN = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter) }); delete CN.encounter.tierAdd; delete CN.encounter.tierFrom;   // 沒有這兩個鍵＝改之前
+    const withT = (K, x) => Object.assign({}, K, { encounter: Object.assign({}, K.encounter, { tierAdd: x }) }), cfT = x => EN.sparCfg(withT(CN, x));
+    // 出貨：第 7 階以前、第 10 位以前都是 0（＝改之前）；第 8 階起、第 11 位起才加
+    const XS0 = EN.sparCfg(CE);
+    if (XS0.tierFrom !== 11 || [0, 1, 4, 7].some(t => EN.sparTierAt(XS0, t, 40) !== 0) || [8, 13].some(t => EN.sparTierAt(XS0, t, 10) !== 0 || !(EN.sparTierAt(XS0, t, 11) > 0)) || EN.sparTierAt(XS0, 13, 11) < EN.sparTierAt(XS0, 8, 11)) { bad++; info.push('shipping'); }
+    const KT = [[4, 2], [8, 6], [13, 10]], want = { 0: 0, 1: 2, 4: 2, 6: 4, 8: 6, 10: 8, 11: 8, 12: 9, 13: 10, 20: 10 };
+    for (const [t, a] of Object.entries(want)) if (EN.sparTierAt(cfT(KT), +t) !== a) { bad++; info.push(['knot', t]); }
+    if (EN.sparTierAt(cfT(5), 0) !== 0 || EN.sparTierAt(cfT(5), 3) !== 5 || EN.sparTierAt(cfT(undefined), 8) !== 0 || EN.sparTierAt(EN.sparCfg(CW), 8) !== EN.sparTierAt(EN.sparCfg(C0), 8)) { bad++; info.push('int／none'); }
+    for (const x of [[[4, 2], [4, 3]], [[0, 1]], [[4, 100]], [[4, 1.5]], [], 'x', 100, 2.5]) if (cfT(x).tierAdd !== 0) { bad++; info.push(['invalid', J(x)]); }
+    if (J(cfT(KT).tierAdd) !== J(KT) || cfT(KT).tierAdd === KT) { bad++; info.push('copy'); }
+    const KC = withT(CN, KT), X0 = EN.sparCfg(KC);
+    // tierFrom：第幾位起才加（沒給＝1；不合法＝1）
+    const KF = Object.assign({}, KC, { encounter: Object.assign({}, KC.encounter, { tierFrom: 11 }) });
+    if (X0.tierFrom !== 1 || EN.sparCfg(KF).tierFrom !== 11 || [0, -2, 1.5, 'x'].some(v => EN.sparCfg(Object.assign({}, KC, { encounter: Object.assign({}, KC.encounter, { tierFrom: v }) })).tierFrom !== 1)) { bad++; info.push('tierFrom cfg'); }
+    if (EN.sparTierAt(EN.sparCfg(KF), 8, 10) !== 0 || EN.sparTierAt(EN.sparCfg(KF), 8, 11) !== 6 || EN.sparTierAt(EN.sparCfg(KF), 0, 40) !== 0) { bad++; info.push('tierFrom at'); }
+    for (const tier of [0, 1, 4, 8, 13]) for (const pos of [6, 10, 11, 23, 40]) for (const who of RIDS) {
+      const r = { pos, tier }, base = Math.max(1, pos + REG[who].enc.off);
+      if (EN.sparPos(r, KC, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(X0.posAdd, pos) + want[tier]) || EN.sparPos(r, KC, who, true) !== base) { bad++; info.push(['sparPos', tier, pos, who]); }
+      if (EN.sparPos(r, KF, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(X0.posAdd, pos) + (pos >= 11 ? want[tier] : 0)) || EN.sparPos(r, KF, who, true) !== base) { bad++; info.push(['sparPos from', tier, pos, who]); }
+    }
+    let real = 0;
+    for (let s = 0; s < 8; s++) {
+      const tier = [0, 4, 8, 13][s % 4], r = fightRun('tadd-' + s, KC, { tier, ace: EN.TIERS[s % 3] }); EN.jumpTo(r, KC, s < 4 ? 6 + s : 7 + 6 * s);
+      // tierFrom 11：第 11 位以前的切磋客人跟沒有 tierAdd 逐字相同；之後＝tierFrom 1 的那位
+      for (const who of RIDS) if (J(EN.encDef(r, KF, who)) !== J(EN.encDef(r, r.pos < 11 ? CN : KC, who))) { bad++; info.push(['tierFrom encDef', s, r.pos, who]); }
+      // 出貨 content：第 7 階以前、第 10 位以前的切磋客人跟沒有這兩個鍵逐字相同
+      if (tier <= 7 || r.pos < 11) for (const who of RIDS) if (J(EN.encDef(r, CE, who)) !== J(EN.encDef(r, CN, who))) { bad++; info.push(['shipping same', s, who]); }
+      for (const who of RIDS) {
+        const posEff = EN.sparPos(r, KC, who), e0 = EN.enemyDef(EN.encView(KC, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+        const d = EN.encDef(r, KC, who);
+        if (r.tier !== tier || posEff !== Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(X0.posAdd, r.pos) + want[tier]) || d.taste !== e0.taste || d.atk !== e0.atk || d.def !== e0.def || d.q !== e0.q) { bad++; info.push(['encDef', tier, who]); }
+        // 第 0 階：有沒有 tierAdd 這個鍵，切磋客人逐字相同
+        if (tier === 0 && J(d) !== J(EN.encDef(r, CN, who))) { bad++; info.push(['tier0', who]); }
+        real++;
+      }
+    }
+    ok(bad === 0 && real === 8 * RIDS.length, 'spar tierAdd (merge review F2): integer or [[tier, add]…] knots like posAdd, only from pos tierFrom (default 1); tier 0 → 0 (same as no key); base adds neither; encDef guest = enemyDef at pos＋off＋posAdd＋tierAdd with the trial curve of run.tier; shipping: tier ≤7 or pos ≤10 = same as no key', { bad, info: info.slice(0, 4) }); }
   // encounter.ace（試調旗標，出貨 false＝規格「不帶王牌」）：true＝照一般客人在 posEff 的機率帶王牌（＝enemyDef 給的那張）
   { const CEA = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { ace: true }) }); let bad = 0, withAce = 0;
     for (let s = 0; s < 40; s++) {
@@ -5197,6 +5238,359 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     EN.choose(r, CE, { type: 'encSkip' }); if (EN.encPolicy(r, CE, {}) !== null || EN.encPending(r) !== null) bad++;
     ok(bad === 0, 'encPolicy＋encPending: open → accept／decline → (fighting null) → shelf take not-owned／skip all-owned／always／cash; bag takes the best bagScore gain or skips', bad); }
   console.log('     LE2 ' + J(SUM.le2) + '；LE5 ' + J(SUM.le5) + '；LE12 ' + J(SUM.le12) + '；keep ' + J(SUM.keep));
+});
+
+section('35 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5；§10.1 第 1、6、7 條＋棒三）：旗標關／第 0 階＝逐字現況（黃金）、階表疊加與相對值、小氣兩種模式、過關＝第 21 位、開階與紀錄、派點與價、買賣重配、讀檔整理、進局（start／挑著學／深耕／說情 +3／刺蝟／圈內人）、preview＝resolve、?fac=1 客人', () => {
+  EN.setCtx(null);
+  const K = C0, F = K.factions, NT = F.notes;
+  // 棒三的 ?fac=1 調法（content.factions.guest：只在 run.fac 的客人）拿掉＝棒三改之前的 ?fac=1
+  const PRE3 = c => Object.assign({}, c, { factions: Object.assign({}, c.factions, { guest: undefined }) });
+  // 棒三審查改樹以後：content 的格子照 op 找（各派位置不一樣）；舊樹（start＝本派選項那幾格）留在這裡，驗 engine 的 'first'／'start' 兩種模式
+  const NODE = (t, op) => F[t].tree.find(x => x && x.op === op) || null, ID = (t, op) => (NODE(t, op) || {}).id;
+  const OLDT = {
+    hall: [{ id: 'a1', name: '先聲奪人', op: 'start', pick: 'h_first' }, { id: 'a2', name: '挑著學', op: 'pick2' }, { id: 'a3', name: '口碑', op: 'deep', cell: 'honest', per: 2, max: 3 },
+      { id: 'b1', name: '老派', op: 'start', pick: 'h_old' }, { id: 'b2', name: '見過世面', op: 'start', pick: 'h_seen' }, { id: 'b3', name: '老客人的面子', op: 'pleaHp', n: 3 }],
+    pearl: [{ id: 'a1', name: '先聲奪人', op: 'start', pick: 'p_bench' }, { id: 'a2', name: '挑著學', op: 'pick2' }, { id: 'a3', name: '識破', op: 'deep', cell: 'caught', per: 2, max: 3 },
+      { id: 'b1', name: '有人記得', op: 'start', pick: 'p_remember' }, { id: 'b2', name: '地下串連', op: 'start', pick: 'p_hp' }, { id: 'b3', name: '熟客', op: 'start', pick: 'p_regular' }],
+    heresy: [{ id: 'a1', name: '先聲奪人', op: 'start', pick: 'x_crack' }, { id: 'a2', name: '挑著學', op: 'pick2' }, { id: 'a3', name: '破例', op: 'deep', cell: 'honest', per: 2, max: 3 },
+      { id: 'b1', name: '臉皮厚', op: 'start', pick: 'x_thick' }, { id: 'b2', name: '刺蝟', op: 'spine', n: 1 }, { id: 'b3', name: '圈內人', op: 'tieHeal', n: 1 }] };
+  const KOLD = mode => Object.assign({}, K, { factions: Object.assign({}, F, { treeStart: mode }, Object.fromEntries(TIERS.map(t => [t, Object.assign({}, F[t], { tree: OLDT[t].concat(F[t].tree.filter(x => x.id[0] === 'c')) })]))) });
+  const drive = (content, o, maxPos, fo) => {
+    const run = EN.newRun(content, o), R = lcg(EN.fnv1a32(o.seedKey + o.runNo)), mem = {}, seq = [];
+    for (let g = 0; g < 6000; g++) {
+      if (run.over && !run.pending) break;
+      if (EN.canBargainPick(run) && !run.duel && !run.pending) { const ch = EN.bargainPolicy(run, content); seq.push(ch); EN.choose(run, content, ch); continue; }
+      const st = EN.nextStep(run);
+      if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { const ch = EN.runPolicy(run, content); seq.push(ch); EN.choose(run, content, ch); continue; }
+      if (!st || run.pos > maxPos) break;
+      if (EN.canShop(run)) for (const ch of EN.shopPolicy(run, content, 'smart')) { seq.push(ch); EN.choose(run, content, ch); }
+      const f = EN.startFight(run, content, fo || {});
+      let k = 0; while (!f.duel.over && k++ < 40) { const a = EN.policies.thoughtful(f.duel, R, mem, content); seq.push(a); EN.resolveTurn(f.duel, a); }
+      EN.finishFight(run, content);
+    }
+    return { run, seq };
+  };
+  const H = (run, seq) => EN.fnv1a32(JSON.stringify(run) + '|' + JSON.stringify(seq));
+
+  // ---- 1 逐字現況（§10.1-1）：旗標關、沒開過試煉（第 0 階）＝棒三改之前的引擎（黃金＝main e6f39ee62 的 engine／content，build3/tools/golden3.cjs，到第 30 位）；
+  //      變體（tier 0、只給 facTal 沒有 fac、fac:false＋facTal、階表清空）都要一樣。?fac=1 沒有樹（facTal 空）＋拿掉棒三調法＝棒三改之前的 ?fac=1 ----
+  { const CASES = [[{ seedKey: 'dfo1', runNo: 1, ace: 'pearl' }, {}], [{ seedKey: 'dfo2', runNo: 2, ace: 'heresy', prologue: false, talent: { atk: 1, def: 1 } }, {}],
+      [{ seedKey: 'dfo3', runNo: 3, ace: 'hall', prologue: false, from: 20 }, {}], [{ seedKey: 'dfo4', runNo: 2, ace: 'pearl', prologue: false }, { apex: true }],
+      [{ seedKey: 'dfo5', runNo: 2, ace: 'heresy', prologue: false }, { apex: true }],
+      [{ seedKey: 'dfo6', runNo: 4, ace: 'hall', prologue: false, tier: 0, seedMax: 4, relicPick: 3, goldAdd: 0.01, talent: { hp: 2, plea: 1 } }, {}],
+      [{ seedKey: 'dfo7', runNo: 2, ace: 'pearl', prologue: false, fac: false }, {}],
+      [{ seedKey: 'dfo8', runNo: 5, ace: 'heresy', prologue: false }, {}], [{ seedKey: 'dfo9', runNo: 6, ace: 'hall', prologue: false }, {}],
+      [{ seedKey: 'dfo10', runNo: 7, ace: 'pearl', prologue: false }, {}]];
+    const GOLD = [99877796, 2860062919, 3033419439, 2414951624, 954871291, 3388299353, 1289780318, 3062038168, 1355736486, 3606801475], POS = [31, 30, 31, 15, 8, 31, 24, 31, 31, 31];
+    const FGOLD = [2820265908, 3060450905, 1555218662, 3176448546, 509773808, 1828576060, 2016996370, 154473751, 3739747776, 2386159856], FPOS = [31, 31, 22, 31, 15, 31, 24, 31, 31, 30];
+    const NOT = Object.assign({}, K, { trial: Object.assign({}, K.trial, { tiers: [] }) });
+    const VAR = [[K, {}], [K, { tier: 0 }], [K, { facTal: { a1: 1, a2: 1, a3: 3, b1: 1, b2: 1, b3: 1 } }], [K, { fac: false, facTal: { a1: 1, b2: 1 } }], [NOT, {}]];
+    VAR.forEach(([content, ex], j) => CASES.forEach(([o, fo], i) => {
+      if (QUICK && j > 0 && i > 2) return;
+      const { run, seq } = drive(content, Object.assign({}, o, ex), 30, fo);
+      ok(H(run, seq) === GOLD[i] && run.pos === POS[i] && !('fac' in run), 'flag off／tier 0 (variant ' + j + ') = engine before 棒三, ' + o.seedKey, { pos: run.pos });
+    }));
+    CASES.forEach(([o, fo], i) => {
+      if (QUICK && i > 4) return;
+      const { run, seq } = drive(PRE3(K), Object.assign({}, o, { fac: true }), 30, fo);
+      ok(H(run, seq) === FGOLD[i] && run.pos === FPOS[i], '?fac=1 without tree, 棒三調法 off = ?fac=1 before 棒三, ' + o.seedKey, { pos: run.pos });
+      if (i < 2) { const t = drive(PRE3(K), Object.assign({}, o, { fac: true, facTal: {} }), 30, fo); ok(H(t.run, t.seq) === FGOLD[i], 'facTal {} = no facTal, ' + o.seedKey); }
+    });
+    eq(EN.trialCfg(K, 0), EN.trialCfg(K), 'trialCfg(K, 0) = trialCfg(K)');
+    ok(['healAdd', 'healAddNormal'].every(k => !(k in EN.trialCfg(K, 0)) && !(k in EN.trialCfg(K, 7))), 'tier 0 and tier 7: no healAdd／healAddNormal key');
+    const r0 = EN.newRun(K, { seedKey: 't0', runNo: 2, ace: 'hall', prologue: false });
+    ok(!('tier' in EN.runSummary(r0)) && r0.tier === 0, 'runSummary: no tier key at tier 0'); }
+
+  // ---- 2 階表疊加（§10.1-6、§5.2）：第 k 階＝前 k 條全部算；相對值（{add}）；guestHp {add:3}＝基準 +3（是數字不是物件） ----
+  { const L = K.trial.tiers, T = k => EN.trialCfg(K, k), B = T(0);
+    eq(L.map(x => x.name), ['不說', '好貨', '話少', '菁英', '老藏家', '會唬', '硬底', '小氣', '挑剔', '大場面', '更挑剔', '更小氣', '更硬底'], 'tiers: final order (SPEC-D §5.2; 第 11–13 階 棒三 sim T-4)');
+    eq(EN.trialTiers(K).map(x => [x.k, x.name, x.text]), L.map((x, i) => [i + 1, x.name, x.text]), 'trialTiers: k from 1, name, text');
+    const r6 = x => Math.round(x * 1e6) / 1e6, N = B.curve.hintMix.none, HF = B.curve.hintMix.half, Q = B.curve.q;
+    eq([T(1).curve.hintMix.none.base, T(1).curve.hintMix.none.max], [r6(N.base + 0.05), r6(N.max + 0.05)], 'tier 1 不說: none +5%');
+    eq(T(2).curve.deck.buffEvery, B.curve.deck.buffEvery - 1, 'tier 2 好貨: buffEvery −1 (3 → 2)');
+    eq([T(3).curve.hintMix.half.normal, T(3).curve.hintMix.half.hard, T(3).curve.hintMix.half.max], [r6(HF.normal + 0.1), r6(HF.hard + 0.1), r6(HF.max + 0.1)], 'tier 3 話少: half +10%');
+    eq([T(4).guestHp, T(5).guestHp], [{ normal: B.guestHp.normal, elite: B.guestHp.elite + 3, boss: B.guestHp.boss }, { normal: B.guestHp.normal, elite: B.guestHp.elite + 3, boss: B.guestHp.boss + 3 }], 'tier 4／5: elite／boss +3 (numbers)');
+    eq([T(6).curve.q.feintBase, T(6).curve.q.feintMax], [r6(Q.feintBase + 0.05), r6(Q.feintMax + 0.05)], 'tier 6 會唬: feint +5%');
+    eq([T(7).curve.def.add, T(9).curve.def.add, T(9).curve.atk.add, T(9).curve.atk.elite, T(9).curve.atk.boss, T(8).curve.atk.boss], [B.curve.def.add + 1, B.curve.def.add + 1, B.curve.atk.add, 1, B.curve.atk.boss + 1, B.curve.atk.boss], 'tier 7 def +1; tier 9 挑剔 = elite／boss atk +1 (§14-5 同理), def still +1');
+    eq([EN.trialGuest(K, 19, 'elite', 9).atk - EN.trialGuest(K, 19, 'elite', 8).atk, EN.trialGuest(K, 18, 'normal', 9).atk - EN.trialGuest(K, 18, 'normal', 8).atk], [1, 0], 'tier 9: elite +1, normal +0');
+    eq([T(8).healAddNormal, T(10).healAddNormal, 'healAdd' in T(10)], [-1, -1, false], 'tier 8 小氣: healAddNormal −1 (only normal guests; §14-5 n4000 −13.6 → 一般客人才少回), stays on above');
+    eq(T(10).guestHp, { normal: B.guestHp.normal, elite: B.guestHp.elite + 6, boss: B.guestHp.boss + 6 }, 'tier 10 大場面: elite／boss = tier 4／5 +3 and +3 again (+6)');
+    eq(T(L.length + 1), T(L.length), 'tier past the end = all tiers');
+    // 第 11–13 階（棒三 sim：T-4 十階不夠，§14-5 往上加）：更挑剔＝所有客人品味 +1（菁英藏家共 +2）、更小氣＝打贏都再少回 1、更硬底＝底氣再 +1（共 +2）
+    eq([T(11).curve.atk.add, T(11).curve.atk.elite, T(11).curve.atk.boss, T(12).healAdd, T(12).healAddNormal, T(13).curve.def.add], [B.curve.atk.add + 1, 1, B.curve.atk.boss + 1, -1, -1, B.curve.def.add + 2], 'tier 11 atk +1 (all), tier 12 healAdd −1, tier 13 def +2');
+    eq([EN.trialGuest(K, 18, 'normal', 11).atk - EN.trialGuest(K, 18, 'normal', 0).atk, EN.trialGuest(K, 19, 'elite', 11).atk - EN.trialGuest(K, 19, 'elite', 0).atk, EN.trialGuest(K, 20, 'boss', 13).def - EN.trialGuest(K, 20, 'boss', 0).def], [1, 2, 2], 'trialGuest tier 11: normal +1, elite +2; tier 13: def +2');
+    ok(!('name' in T(10)) && !('text' in T(10)), 'name／text are not merged into the config');
+    const G = (k, pos, cls) => EN.trialGuest(K, pos, cls, k);
+    eq([G(10, 20, 'boss').hp - G(0, 20, 'boss').hp, G(10, 19, 'elite').hp - G(0, 19, 'elite').hp, G(10, 18, 'normal').hp - G(0, 18, 'normal').hp], [6, 6, 0], 'trialGuest tier 10: elite／boss +6, normal +0');
+    eq([G(10, 20, 'boss').atk - G(0, 20, 'boss').atk, G(10, 20, 'boss').def - G(0, 20, 'boss').def, G(6, 20, 'boss').atk - G(0, 20, 'boss').atk], [1, 1, 0], 'trialGuest: tier 9 atk +1, tier 7 def +1');
+    ok(G(6, 12, 'normal').q < G(0, 12, 'normal').q && G(1, 12, 'normal').none > G(0, 12, 'normal').none && G(3, 12, 'normal').half > G(0, 12, 'normal').half, 'trialGuest: tier 6 bluffs more, tier 1 more none, tier 3 more half');
+    const snap = JSON.stringify(K.trial); for (let k = 0; k <= 10; k++) EN.trialCfg(K, k); ok(JSON.stringify(K.trial) === snap, 'trialCfg does not mutate content.trial');
+    // addMerge
+    const a = { a: 1, add: 2, b: { c: 3 }, x: [1] }, b = { add: 1, a: { add: 2 }, b: { c: { add: 1 } }, d: { add: 4 }, e: 5, x: [2] }, sa = JSON.stringify(a), sb = JSON.stringify(b);
+    eq(EN.addMerge(a, b), { a: 3, add: 3, b: { c: 4 }, x: [2], d: 4, e: 5 }, 'addMerge: add key sums, {add} on a number／missing sums, objects recurse, arrays replace');
+    ok(JSON.stringify(a) === sa && JSON.stringify(b) === sb, 'addMerge: inputs untouched');
+    eq(EN.addMerge({ q: { p: 0.15 } }, { q: { p: { add: 0.05 } } }).q.p, 0.2, 'addMerge rounds (0.15 + 0.05 = 0.2)');
+    // 自訂階表：guestHpSteps 串接、頂層 add 兩階相加、兩階都 atk +1＝+2
+    const C2 = Object.assign({}, K, { trial: Object.assign({}, K.trial, { tiers: [{ name: 'x', text: 'x', guestHpSteps: [[5, 2]], add: { healAdd: -1 }, curve: { atk: { add: 1 } } }, { name: 'y', text: 'y', add: { healAdd: -1 }, curve: { atk: { add: 1 } }, guestHp: { boss: { add: 3 } } }] }) });
+    const U1 = EN.trialCfg(C2, 1), U2 = EN.trialCfg(C2, 2);
+    eq([U1.guestHpSteps.slice(-1), U1.guestHpSteps.length, EN.trialCfg(C2, 0).guestHpSteps.length], [[[5, 2]], K.trial.guestHpSteps.length + 1, K.trial.guestHpSteps.length], 'guestHpSteps: concatenated');
+    eq([EN.trialGuest(C2, 5, 'boss', 1).hp - EN.trialGuest(C2, 5, 'boss', 0).hp, U2.healAdd, U2.curve.atk.add, U2.guestHp.boss], [2, -2, 2, K.trial.guestHp.boss + 3], 'two tiers: healAdd −2, atk +2, boss {add:3} on a number'); }
+
+  // ---- 3 小氣（第 8 階）：打贏回的聲望少 1——一般（3→2）、頂點卡試做（winHeal 4→3）兩種模式都扣（CRITIQUE 2.2） ----
+  { const winHealAt = (tier, apex) => {
+      const run = EN.newRun(K, { seedKey: 'heal' + tier + (apex ? 'a' : ''), runNo: 2, ace: 'hall', prologue: false, tier });
+      EN.choose(run, K, EN.bargainPolicy(run, K)); EN.jumpTo(run, K, 2); run.hp = 4;
+      const f = EN.startFight(run, K, apex ? { apex: true } : {});
+      EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+      return EN.finishFight(run, K).heal;
+    };
+    eq([winHealAt(0, false), winHealAt(7, false), winHealAt(8, false), winHealAt(10, false)], [3, 3, 2, 2], 'win heal (normal guest #2): tier 0／7 = 3, tier 8／10 = 2');
+    { const atPos = (tier, pos) => { const run = EN.newRun(K, { seedKey: 'hp' + pos, runNo: 2, ace: 'hall', prologue: false, tier }); EN.choose(run, K, EN.bargainPolicy(run, K)); EN.jumpTo(run, K, pos); run.hp = 4;
+        const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, K).heal; };
+      eq([atPos(8, 4), atPos(8, 5)], [3, 3], 'tier 8: elite／boss still heal 3'); }
+    eq([winHealAt(0, true), winHealAt(8, true)], [4, 3], 'apex mode: 4 → 3 at tier 8 (CRITIQUE 2.2)');
+    eq([winHealAt(11, false), winHealAt(12, false), winHealAt(12, true)], [2, 1, 2], 'tier 12 更小氣: normal 3 → 1 (with tier 8), apex normal 4 → 2');
+    // §14-5 備案：add:{healAddNormal:−1}＝只有一般客人少回（菁英、藏家照舊）
+    const CN = Object.assign({}, K, { trial: Object.assign({}, K.trial, { tiers: [{ name: 'x', text: 'x', add: { healAddNormal: -1 } }] }) });
+    const at = (pos, apex) => { const run = EN.newRun(CN, { seedKey: 'hn' + pos, runNo: 2, ace: 'hall', prologue: false, tier: 1 }); EN.choose(run, CN, EN.bargainPolicy(run, CN)); EN.jumpTo(run, CN, pos); run.hp = 4;
+      const f = EN.startFight(run, CN, apex ? { apex: true } : {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, CN).heal; };
+    eq([at(2), at(4), at(5), at(2, true)], [2, 3, 3, 3], 'healAddNormal: normal 3→2, elite／boss 3, apex normal 4→3'); }
+
+  // ---- 4 過關＝第 21 位（打倒第 20 位藏家）、開下一階、每階最遠（trialRecord／trialFix／trialPick；§5.1、§5.3、R-T1、R-T4） ----
+  { const R = (t, s) => EN.trialRecord(K, t, s), t0 = { open: 0, pick: 0, best: {} }, MAX = K.trial.tiers.length;
+    eq(EN.TRIAL_PASS, 21, 'TRIAL_PASS 21');
+    let r = R(t0, { reached: 21, from: 1 }); eq([r.opened, r.passed, r.record, r.trial], [1, true, true, { open: 1, pick: 0, best: { 0: 21 } }], 'tier 0 → reached 21 → opens tier 1 (pick stays)');
+    r = R(t0, { reached: 20, from: 1 }); eq([r.opened, r.passed, r.trial.open, r.trial.best], [0, false, 0, { 0: 20 }], 'reached 20 (lost to the boss) → not passed');
+    r = R(t0, { reached: 60, from: 50 }); eq([r.opened, r.passed, r.trial.best], [0, false, { 0: 60 }], 'checkpoint from 50 → did not fight #20 → no open (still a record)');
+    eq(EN.TRIAL_OPEN_FROM, 10, 'TRIAL_OPEN_FROM 10 (棒三審查)');
+    r = R(t0, { reached: 21, from: 20 }); eq([r.opened, r.passed, r.trial.best], [0, true, { 0: 21 }], 'checkpoint from 20 → fought #20 (passed) but only the boss → no open (棒三審查：從第 20 位開十三階一路開完)');
+    r = R(t0, { reached: 22, from: 10 }); eq(r.opened, 1, 'checkpoint from 10 → opens');
+    r = R(t0, { reached: 22, from: 11 }); eq([r.opened, r.passed], [0, true], 'from 11 (not a checkpoint, guard) → no open');
+    r = R({ open: 3, pick: 1, best: { 1: 30, 3: 18 } }, { reached: 25, from: 1, tier: 1 }); eq([r.opened, r.passed, r.record, r.trial], [0, true, false, { open: 3, pick: 1, best: { 1: 30, 3: 18 } }], 'passing a lower tier: no open, no record');
+    r = R({ open: 3, pick: 3, best: { 1: 30, 3: 18 } }, { reached: 24, from: 1, tier: 3 }); eq([r.opened, r.record, r.trial.open, r.trial.best[3]], [4, true, 4, 24], 'passing tier 3 = open → 4');
+    r = R({ open: MAX, pick: MAX, best: {} }, { reached: 40, from: 1, tier: MAX }); eq([r.opened, r.trial.open, r.trial.best[MAX]], [0, MAX, 40], 'top tier: stays open ' + MAX);
+    r = R({ open: 2, pick: 2, best: {} }, { reached: 30, from: 1, tier: 99 }); eq([r.trial.best[MAX], r.opened], [30, 0], 'sum.tier past the end → clamped to the top tier');
+    eq(EN.trialFix(K, null), { open: 0, pick: 0, best: {} }, 'trialFix(null)');
+    eq(EN.trialFix(K, { open: 99, pick: 120, best: { 0: 33, 3: -1, 4: 2.7, [MAX + 1]: 9, x: 5 }, extra: 1 }), { open: MAX, pick: MAX, best: { 0: 33, 4: 2 }, extra: 1 }, 'trialFix: clamps open／pick, drops bad best keys, keeps others');
+    eq([EN.trialPick(K, { open: 2, pick: 5 }), EN.trialPick(K, { open: 4, pick: 3 }), EN.trialPick(K, {})], [2, 3, 0], 'trialPick ∈ 0…open');
+    eq([EN.trialMul(K, 0), EN.trialMul(K, 3), EN.trialMul(K, 10), EN.careerGain(K, { reached: 11, from: 1, bestStreak: 0, lexp: {} }, { tier: 3, best: 20 }).tierMul], [1, 1.3, 2, 1.3], 'trialMul = careerGain tierMul (1 + 0.1k)');
+    // 真的一趟：第 0 階打到第 21 位（jumpTo 20 → 打贏藏家 → 領完獎走到 21）
+    const run = EN.newRun(K, { seedKey: 'tr21', runNo: 2, ace: 'pearl', prologue: false, tier: 2 }); EN.choose(run, K, EN.bargainPolicy(run, K)); EN.jumpTo(run, K, 20);
+    const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); EN.finishFight(run, K);
+    for (let g = 0; g < 20 && run.pending; g++) EN.choose(run, K, EN.runPolicy(run, K));
+    const sm = EN.runSummary(run); eq([sm.reached >= 21, sm.tier, run.tier], [true, 2, 2], 'runSummary: tier 2, reached 21');
+    eq(R({ open: 2, pick: 2, best: {} }, sm).opened, 3, 'real run at tier 2 = open → opens 3'); }
+
+  // ---- 5 熟練度 → 派點（§3.6；熟練每升一級 +1，Lv2 起；落後 ×2、第一次解鎖 +300 在 #30） ----
+  { const P = xp => EN.treePoints(K, { prof: { hall: xp } }, 'hall');
+    eq([P(0), P(1499), P(1500), P(6000), P(22500)].map(x => [x.level, x.total, x.left]), [[1, 0, 0], [1, 0, 0], [2, 1, 1], [5, 4, 4], [16, 15, 15]], 'points = prof level − 1 (Lv16 = 15)');
+    eq(EN.treeLv3(K), 5, 'layer III needs prof Lv5 (career.prof.auto tier3)'); }
+
+  // ---- 6 派樹：價、前置、熟練 Lv5、買賣、重配、讀檔整理（§3.7a、§2.5 fixCareer） ----
+  { const cr = xp => ({ key: 'k', xp: 0, prof: { hall: xp, pearl: xp, heresy: xp }, tree: { hall: {}, pearl: {}, heresy: {} } });
+    const buy = (c, ace, id) => { const r = EN.treeBuy(K, c, ace, id); return r.ok ? r.career : r.error; };
+    for (const t of TIERS) {
+      eq(EN.treeNodes(K, t).map(x => x.id), ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3'], t + ': nine nodes');
+      eq(['a1', 'a2', 'b3', 'c1', 'zz'].map(id => EN.treeCost(K, t, id, 1)).concat([2, 3, 4].map(k => EN.treeCost(K, t, 'a3', k))), [1, 2, 2, Infinity, Infinity, 1, 1, Infinity], t + ': cost I 1／II 2／III 2, deep +1／+1, max 3, soon／unknown Infinity');
+      eq(EN.treeNodes(K, t).filter(x => !x.soon).length, 6, t + ': six live nodes in wave D (甲／乙; 丙 later)');
+    }
+    let c = cr(1500); eq([buy(c, 'hall', 'a2'), buy(c, 'hall', 'a3'), buy(c, 'hall', 'c1')], ['need', 'need', 'locked'], 'need the layer above; 丙 locked');
+    let c1 = buy(c, 'hall', 'a1'); eq([c1.tree.hall, c.tree.hall, buy(c1, 'hall', 'b1'), buy(c1, 'hall', 'a1')], [{ a1: 1 }, {}, 'points', 'max'], '1 point: a1, then no points; new object');
+    c = cr(4500); c = buy(buy(c, 'hall', 'a1'), 'hall', 'a2'); eq(buy(c, 'hall', 'a3'), 'prof', 'Lv4: layer III locked (prof)');
+    c = cr(6000); c = buy(buy(c, 'hall', 'a1'), 'hall', 'a2'); eq([EN.treePoints(K, c, 'hall').left, buy(c, 'hall', 'a3')], [1, 'points'], 'Lv5 4 points: a1 a2 → 1 left, a3 needs 2');
+    for (const t of TIERS) {
+      let f = cr(18000); for (const id of ['a1', 'a2', 'a3', 'a3', 'a3', 'b1', 'b2', 'b3']) f = buy(f, t, id);
+      ok(typeof f === 'object', t + ': full tree buyable at Lv13 (12 points)', f);
+      eq([f.tree[t], EN.treePoints(K, f, t).spent, EN.treePoints(K, f, t).left, buy(f, t, 'a3')], [{ a1: 1, a2: 1, a3: 3, b1: 1, b2: 1, b3: 1 }, 12, 0, 'max'], t + ': 12 points = all live nodes');
+      eq([EN.treeSell(K, f, t, 'a1').error, EN.treeSell(K, f, t, 'a3').career.tree[t].a3, EN.treeSell(K, f, t, 'c1').error], ['dep', 2, 'none'], t + ': sell — dep／one level／none');
+      eq([EN.treeRespec(K, f, t).career.tree[t], EN.treeRespec(K, f, t).career.tree[TIERS[(TIERS.indexOf(t) + 1) % 3]]], [{}, {}], t + ': respec (only this faction)');
+      eq(EN.treeArgs(K, f, t), f.tree[t], t + ': treeArgs = the tree');
+      eq(EN.treeArgs(K, Object.assign({}, f, { off: true }), t), {}, t + ': 樂歷關 → {}');
+      eq(EN.treeArgs(K, Object.assign({}, f, { prof: { hall: 4500, pearl: 4500, heresy: 4500 } }), t), {}, t + ': not enough points any more → {}');
+      eq(EN.treeArgs(K, Object.assign({}, f, { prof: { hall: 6000, pearl: 6000, heresy: 6000 }, tree: { hall: { a1: 1, a2: 1 }, pearl: { a1: 1, a2: 1 }, heresy: { a1: 1, a2: 1 } } }), t), { a1: 1, a2: 1 }, t + ': fine tree passes');
+    }
+    // careerFix（讀檔整理）
+    const fx = EN.careerFix(K, { xp: 0, prof: { hall: 18000, pearl: 1500, heresy: 0 }, tree: { hall: { a1: 1, a2: 1, zz: 3, c1: 1, a3: 9, b2: 1 }, pearl: { a1: 1, a2: 1 }, heresy: 'x' } });
+    eq(fx.tree, { hall: { a1: 1, a2: 1, a3: 3 }, pearl: {}, heresy: {} }, 'careerFix tree: unknown／soon dropped, deep clamped to 3, b2 without b1 dropped; pearl over budget → {}');
+    eq(EN.careerFix(K, { prof: { hall: 4500 }, tree: { hall: { a1: 1, a2: 1, a3: 1 } } }).tree.hall, { a1: 1, a2: 1 }, 'careerFix: layer III dropped below prof Lv5');
+    // treeList（畫面）
+    const TL = EN.treeList(K, cr(6000), 'heresy');
+    eq(TL.map(x => [x.id, x.path, x.layer, x.k, x.cost, x.why, x.soon || null]), [['a1', 'a', 1, 0, 1, null, null], ['a2', 'a', 2, 0, 2, 'need', null], ['a3', 'a', 3, 0, 2, 'need', null], ['b1', 'b', 1, 0, 1, null, null], ['b2', 'b', 2, 0, 2, 'need', null],
+      ['b3', 'b', 3, 0, 2, 'need', null], ['c1', 'c', 1, 0, null, 'locked', 'market'], ['c2', 'c', 2, 0, null, 'locked', 'apex'], ['c3', 'c', 3, 0, null, 'locked', 'apex']], 'treeList: path, layer, cost, why, soon');
+    eq(TL.map(x => [x.op, x.cell || null, x.max, x.n == null ? null : x.n]), F.heresy.tree.map(x => [x.soon ? null : x.op, x.cell || null, x.op === 'deep' ? x.max : 1, x.n == null ? null : x.n]), 'treeList: op／cell／max／n = content');
+    eq(EN.facTalOf(K, 'pearl', { a1: 2, a3: 7, c1: 1, zz: 1, b2: 1 }), { a1: 1, a3: 3, b2: 1 }, 'facTalOf: live nodes only, clamped (no prerequisite check)');
+    eq([EN.treeNodes(Object.assign({}, K, { factions: undefined }), 'hall'), EN.treeArgs(Object.assign({}, K, { factions: undefined }), cr(18000), 'hall')], [[], {}], 'no factions → no tree'); }
+
+  // ---- 7 進局：start 節點（content.factions.treeStart 'first'＝本派格先出這項：照節點順序排在雜湊前面、照樣佔那一級；'start'＝規格原意開局就送，留著當對照）；
+  //      不碰 run.rng；換派；挑著學出兩個（選秀不出）；sim 照 priority 挑 ----
+  //      棒三審查：content 的樹已經沒有 start 格（「本派格先出」量出來沒效果、「開局就送」太強）→ 兩種模式用舊樹（OLDT）驗 engine；content 的格子在 7b
+  { eq(F.treeStart, 'start', 'content: treeStart start (no start nodes in content any more)');
+    eq(TIERS.map(t => F[t].tree.filter(x => x && x.op === 'start').length), [0, 0, 0], 'content: no start nodes (棒三審查)');
+    const KF = KOLD('first'), KS = KOLD('start');
+    const nr = (ace, tal, ex, c) => EN.newRun(c || KF, Object.assign({ seedKey: 'tal', runNo: 2, ace, prologue: false, fac: true, facTal: tal }, ex || {}));
+    const base = EN.newRun(K, { seedKey: 'tal', runNo: 2, ace: 'pearl', prologue: false, fac: true });
+    const lvOf = (run, lv, c) => { run.level = lv; run.levelUps = 1; run.pending = null; return EN.levelOffer(run, c || KF).filter(x => x.pick === 'fac'); };
+    const a1 = t => OLDT[t].find(x => x.id === 'a1').pick, b1 = t => OLDT[t].find(x => x.id === 'b1').pick;
+    eq(TIERS.map(a1), ['h_first', 'p_bench', 'x_crack'], '甲 I points at 初版／冷板凳／破音 (not the main-axis +1 star: 識貨／失真 early = +58%)');
+    // first：開局什麼都不送；本派格先出樹上點的（a1 → b1 → b2 → b3），挑著學出前兩個；拿過的不再出
+    let r = nr('hall', { a1: 1, b1: 1, a3: 2 }); eq([r.fac.picks, r.fac.tal, r.picks], [{}, { a1: 1, a3: 2, b1: 1 }, []], 'first: nothing at start; tal in node order');
+    eq([lvOf(r, 5).map(x => x.id), lvOf(nr('hall', { a1: 1, a2: 1, b1: 1 }), 5).map(x => x.id)], [[a1('hall')], [a1('hall'), b1('hall')]], 'first: Lv5 slot = tree picks first (two with 挑著學)');
+    r = nr('pearl', { a1: 1, b1: 1, b2: 1, b3: 1 }); eq([r.fac.picks, r.maxHp, r.hp, r.rng, r.bossAce], [{}, base.maxHp, base.hp, base.rng, base.bossAce], 'first: pearl b2 地下串連 not given at start; rng untouched');
+    r.fac.picks.p_bench = 1; eq(lvOf(r, 10).map(x => x.id), ['p_remember'], 'first: taken ones skipped, next tree pick');
+    r = nr('heresy', { a2: 1 }); const h0 = lvOf(nr('heresy', {}), 5).map(x => x.id); eq(lvOf(r, 5).slice(0, 1).map(x => x.id), h0, 'first: no start nodes → hash order (same first pick as no tree)');
+    r = nr('pearl', { b1: 1 }); EN.switchAce(r, KF, 'hall', { facTal: { a1: 1, a2: 1 } }); eq([r.ace, r.fac.picks, r.fac.tal, lvOf(r, 5).map(x => x.id)[0]], ['hall', {}, { a1: 1, a2: 1 }, a1('hall')], 'first: switchAce takes the new tree');
+    // start（對照）：開局就送；地下串連 +3；換派拿回來
+    r = nr('hall', { a1: 1, b1: 1 }, {}, KS); eq([r.fac.picks, r.picks], [{ [a1('hall')]: 1, [b1('hall')]: 1 }, []], 'start: picks at start (not a level choice)');
+    r = nr('pearl', { a1: 1, b1: 1, b2: 1, b3: 1 }, {}, KS); eq([r.fac.picks, r.maxHp - base.maxHp, r.hp - base.hp, r.hpIn, r.rng], [{ p_bench: 1, p_remember: 1, p_hp: 1, p_regular: 1 }, 3, 3, r.hp, base.rng], 'start: pearl b2 地下串連 maxHp／hp +3; rng untouched');
+    r = nr('heresy', { b2: 1, b3: 1 }, {}, KS); eq(r.fac.picks, {}, 'start: heresy b2／b3 are not picks (outcome effects)');
+    r = nr('pearl', { b2: 1, a1: 1 }, {}, KS); const sw = EN.switchAce(r, KS, 'hall', { facTal: { a1: 1, a2: 1 } });
+    eq([sw.ok, r.ace, r.fac.picks, r.fac.tal, r.maxHp, r.hp], [true, 'hall', { [a1('hall')]: 1 }, { a1: 1, a2: 1 }, base.maxHp, base.hp], 'start: switchAce — old tree removed (地下串連 −3), new tree applied');
+    r = nr('pearl', { b2: 1 }, {}, KS); EN.switchAce(r, KS, 'heresy'); eq([r.fac.tal, r.fac.picks, r.maxHp], [{}, {}, base.maxHp], 'switchAce without facTal: empty tree');
+    // 挑著學、選秀、sim 策略
+    eq([lvOf(nr('hall', {}), 5).length, lvOf(nr('hall', { a2: 1 }), 5).length, lvOf(nr('hall', { a2: 1 }), 6).length], [1, 2, 0], '挑著學 (old: every slot): Lv5 two fac slots (one without it); Lv6 none');
+    r = nr('hall', { a2: 1 }); r.fac.picks = { h_eye: 1, h_first: 1, h_old: 1, h_seen: 1 }; eq(lvOf(r, 10).map(x => x.id), ['h_leech'], '挑著學: only one left → one slot');
+    r = nr('hall', { a2: 1 }); eq(EN.levelOffer(r, KF, { draft: true }).filter(x => x.pick === 'fac').length, 0, 'draft: no fac slot even with 挑著學');
+    r = nr('hall', { a2: 1 }); r.level = 5; r.levelUps = 1; r.pending = { type: 'level', offer: [{ pick: 'atk', n: 1 }, { pick: 'def', n: 1 }, { pick: 'hp', n: 2 }, { pick: 'fac', id: 'h_first' }, { pick: 'fac', id: 'h_leech' }] };
+    eq(EN.runPolicy(r, KF), { type: 'level', pick: 'fac', id: 'h_leech' }, 'runPolicy: two fac slots → by content priority (吸血 before 初版)');
+    eq(F.hall.priority.slice(0, 2), ['h_eye', 'h_seen'], 'priority by measured value (棒三審查：識貨、見過世面在前)');
+    const ch = EN.choose(r, KF, { type: 'level', pick: 'fac', id: 'h_first' }); ok(ch.ok && r.fac.picks.h_first === 1 && !r.fac.picks.h_leech, 'choose the second fac slot');
+    ok(!('fac' in EN.newRun(K, { seedKey: 'tal', runNo: 2, ace: 'hall', prologue: false, facTal: { a1: 1 } })), 'facTal without fac → nothing');
+    r = nr('hall', { a1: 1 }, {}, K); r.fac.tal = { a1: 1, zz: 2, c1: 1, a3: 7 }; eq([EN.fixFac(r, K), r.fac.tal], [true, { a1: 1, a3: 3 }], 'fixFac: tal → live nodes, clamped');
+    r = nr('hall', { a1: 1, a3: 2 }, {}, K); eq(EN.fixFac(r, K), false, 'fixFac: good tal untouched');
+    r = nr('hall', { a3: 2 }, {}, K); r.fac.deepAcc = 3; eq(EN.fixFac(r, K), false, 'fixFac: deepAcc kept'); r.fac.deepAcc = -2; eq([EN.fixFac(r, K), 'deepAcc' in r.fac], [true, false], 'fixFac: bad deepAcc dropped'); }
+
+  // ---- 7b 進局（content 的樹；棒三審查）：開局什麼都不送、run.rng／聲望不動；挑著學照節點 nth（第幾次本派格才出兩個）；fx 格疊進 facFxOf ----
+  { const nr = (ace, tal) => EN.newRun(K, { seedKey: 'tal7b', runNo: 2, ace, prologue: false, fac: true, facTal: tal });
+    const base = EN.newRun(K, { seedKey: 'tal7b', runNo: 2, ace: 'pearl', prologue: false, fac: true });
+    const full = t => Object.fromEntries(F[t].tree.filter(x => x && !x.soon).map(x => [x.id, x.op === 'deep' ? x.max : 1]));
+    for (const t of TIERS) { const r = nr(t, full(t)); eq([r.fac.picks, r.picks, r.rng], [{}, [], EN.newRun(K, { seedKey: 'tal7b', runNo: 2, ace: t, prologue: false, fac: true }).rng], t + ': full tree gives nothing at start, rng untouched'); }
+    eq([nr('pearl', full('pearl')).maxHp, nr('pearl', full('pearl')).hp], [base.maxHp, base.hp], 'full tree: 聲望 unchanged at start');
+    const P2 = NODE('hall', 'pick2'), nth = P2.nth > 0 ? P2.nth : P2.once ? 1 : 0;
+    const offs = run => { const out = []; for (const lv of [5, 10, 15]) { run.level = lv; run.levelUps = 1; run.pending = null; const f = EN.levelOffer(run, K).filter(x => x.pick === 'fac'); out.push(f.length); if (f.length) { run.fac.picks[f[0].id] = 1; run.picks.push('fac:' + f[0].id); } } return out; };
+    eq(offs(nr('hall', { [P2.id]: 1 })), [5, 10, 15].map((lv, i) => !nth || i === nth - 1 ? 2 : 1), '挑著學 (content nth ' + nth + '): two slots only at the nth fac slot');
+    eq(offs(nr('hall', {})), [1, 1, 1], 'no 挑著學: one slot each');
+    for (const t of TIERS) for (const N of F[t].tree.filter(x => x && x.op === 'fx')) { const fx = EN.facFxOf(K, { fac: { picks: {}, tal: { [N.id]: 1 } } }, t), fx0 = EN.facFxOf(K, { fac: { picks: {} } }, t);
+      eq(Object.keys(N.fx).map(k => (fx[k] | 0) - (fx0[k] | 0) || (fx[k] && !fx0[k] ? 1 : 0)), Object.keys(N.fx).map(k => EN.TREE_FX_MAX.includes(k) ? (N.fx[k] > (fx0[k] | 0) ? N.fx[k] - (fx0[k] | 0) : 0) : N.fx[k]), t + '.' + N.id + ': fx ' + JSON.stringify(N.fx) + ' added to facFxOf'); } }
+
+
+  // ---- 8 outcome：刺蝟（異端乙 II）、圈內人（異端乙 III）；facFxOf 吃樹（空的樹＝一個鍵都不多） ----
+  { const mk = (c, o, h) => mkCard('fx3-' + c + o + h, c, o, h);
+    const facDuel3 = (tier, tal, o = {}) => {
+      const src = { bag: K.gifts[tier].concat(BP3), ace: tier, relics: [], fac: { picks: o.picks || {}, tal: tal || {}, trialNodes: {} } };
+      const { duel } = EN.startDuel(EN.playerDef(K, src, { fac: true }), EN.enemyDef(K, 'copycat', {}), { seed: 13, hintTable: HINTS });
+      duel.p.atk = 0; duel.p.def = 0; duel.e.atk = o.eAtk | 0; duel.e.def = 0; duel.p.relics = []; duel.e.hit = 0; duel.p.hp = o.hp != null ? o.hp : 6; duel.e.hp = 99; duel.e.max = 99;
+      return duel;
+    };
+    const pv = (d, card, attr, e) => { d.p.hand[0] = card; return EN.preview(d, { i: 0, attr }, e); };
+    const kv = r => [r.kind, r.toE, r.toP, r.heal | 0], fn = r => (r.notes || []).filter(n => n.fac).map(n => n.kind + ':' + n.n + ':' + n.text);
+    const T = (k, n) => k + ':' + n + ':' + NT[k].replace('{n}', n);
+    eq(EN.facFxOf(K, { fac: { picks: {}, tal: {} } }, 'heresy'), EN.facFxOf(K, { fac: { picks: {} } }, 'heresy'), 'facFxOf: empty tree adds no key');
+    const SPN = { [ID('heresy', 'spine')]: 1 }, INS = { [ID('heresy', 'tieHeal')]: 1 }, DP = NODE('heresy', 'deep');
+    const fxAll = EN.facFxOf(K, { fac: { picks: {}, tal: Object.assign({ a2: 1, a3: 2 }, SPN, INS) } }, 'heresy');
+    eq([fxAll.pick2, fxAll.deep, fxAll.deepCell, fxAll.deepPer, fxAll.deepCarry, fxAll.spine, fxAll.tieHeal], [1, 2, 'honest', Array.isArray(DP.per) ? DP.per[1] : DP.per, DP.carry ? 1 : undefined, 1, 1], 'facFxOf: pick2／deep／deepCell／deepPer（第 2 級）／carry／spine／tieHeal');
+    eq([EN.facFxOf(K, { fac: { picks: {}, tal: { a3: 3 } } }, 'pearl').deepCell, EN.facFxOf(K, { fac: { picks: {}, tal: { a3: 9 } } }, 'hall').deep], ['caught', 3], 'deep cell (pearl caught), clamped to max');
+    let d = facDuel3('heresy', {}, { eAtk: 2 }); eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 5, 0], 'heresy no tree: lose 2 +1 cost +2 his 品味 = 5');
+    d = facDuel3('heresy', SPN, { eAtk: 2 }); let r = pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 });
+    eq([kv(r), fn(r), r.notes.filter(n => n.stat === 'eAtk').map(n => n.n)], [['mirrorLose', 0, 4, 0], [T('loseCost', 1), T('spine', 1)], [1]], '刺蝟 (n 1): first lose → his 品味 2 counts 1 ({n}＝1)');
+    { const KF = Object.assign({}, K, { factions: Object.assign({}, F, { heresy: Object.assign({}, F.heresy, { tree: F.heresy.tree.map(x => x.op === 'spine' ? Object.assign({}, x, { n: undefined }) : x) }) }) });
+      const src = { bag: K.gifts.heresy.concat(BP3), ace: 'heresy', relics: [], fac: { picks: {}, tal: SPN, trialNodes: {} } };
+      const { duel: dz } = EN.startDuel(EN.playerDef(KF, src, { fac: true }), EN.enemyDef(KF, 'copycat', {}), { seed: 13, hintTable: HINTS });
+      dz.p.atk = 0; dz.p.def = 0; dz.e.atk = 2; dz.e.def = 0; dz.p.relics = []; dz.e.hit = 0; dz.p.hp = 6; dz.e.hp = 99; dz.e.max = 99; dz.p.hand[0] = mk(1, 1, 2);
+      const rz = EN.preview(dz, { i: 0, attr: 'h' }, { attr: 'h', star: 4 }); eq([kv(rz), fn(rz)], [['mirrorLose', 0, 3, 0], [T('loseCost', 1), T('spine', 2)]], '刺蝟 without n: his 品味 not added at all'); }
+    d.p.facN.lose = 1; eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), ['mirrorLose', 0, 5, 0], '刺蝟: only the first lose');
+    d.p.facN.lose = 0; eq(kv(pv(d, mk(1, 1, 2), 'h', { attr: 'c', star: 3 })), ['countered', 0, 5, 0], '刺蝟: countered unchanged');
+    d = facDuel3('heresy', SPN, { eAtk: 0 }); eq(fn(pv(d, mk(1, 1, 2), 'h', { attr: 'h', star: 4 })), [T('loseCost', 1)], '刺蝟: no 品味 → no note');
+    d = facDuel3('heresy', INS); r = pv(d, mk(1, 1, 3), 'h', { attr: 'h', star: 3 }); eq([kv(r), fn(r)], [['tie', 0, 0, 1], [T('insider', 1)]], '圈內人: same-color tie → heal 1');
+    d.p.facN.tieHeal = 1; eq(kv(pv(d, mk(1, 1, 3), 'h', { attr: 'h', star: 3 })), ['tie', 0, 0, 0], '圈內人: once per duel');
+    d = facDuel3('heresy', INS, { hp: 99 }); d.p.hp = d.p.max; eq([kv(pv(d, mk(1, 1, 3), 'h', { attr: 'h', star: 3 })), fn(pv(d, mk(1, 1, 3), 'h', { attr: 'h', star: 3 }))], [['tie', 0, 0, 0], []], '圈內人: full 聲望 → no heal, no note');
+    d = facDuel3('heresy', INS); EN.resolveTurn(d, { i: 0, attr: 'h' }, { forcedPlay: { i: 0, attr: 'h' } }); ok(true, 'resolve smoke');
+    d = facDuel3('hall', { [ID('hall', 'pleaHp')]: 1 }); eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 1, 0], 'hall 老客人的面子 alone has no tie heal: tie cost 1 as before');
+    // 棒三審查 op fx：經典「不計較」（每場第一次同色平手不扣）＋「和氣」（同色平手回 1）
+    { const TF = Object.keys(F.hall.tree.find(x => x.op === 'fx' && x.fx.tieFree) ? { t: 1 } : {}).length ? { [F.hall.tree.find(x => x.op === 'fx' && x.fx.tieFree).id]: 1 } : null;
+      if (TF) { d = facDuel3('hall', TF); eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 0, 0], '經典 tieFree 格: first same-color tie costs 0'); d.p.facN.tie = 1; eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 1, 0], '…only the first'); }
+      const TH = ID('hall', 'tieHeal'); if (TH) { d = facDuel3('hall', { [TH]: 1 }); eq(kv(pv(d, mk(3, 1, 1), 'c', { attr: 'c', star: 3 })), ['tie', 0, 1, 1], '經典 tieHeal 格: tie cost 1, heal 1'); } } }
+
+  // ---- 9 深耕（口碑／識破／破例）：棒三審查改跨場累積（carry）：每記滿 per 手（逐級陣列）打贏那場多回 1；輸的那場記到的也算；舊規則（沒 carry）＝這一場 min(級, ⌊手數÷per⌋)；out.deep、stats.fac.deep ----
+  { const fight = (run, facN, win, c) => {
+      const f = EN.startFight(run, c || K, {}); Object.assign(f.duel.p.facN || (f.duel.p.facN = {}), facN);
+      EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: win ? { kind: 'counter', toE: 99, toP: 0 } : { kind: 'countered', toE: 0, toP: 99 } });
+      const out = EN.finishFight(run, c || K); return [out.heal | 0, out.deep || 0];
+    };
+    const mkRun = (ace, tal, c) => { const run = EN.newRun(c || K, { seedKey: 'deep' + ace, runNo: 2, ace, prologue: false, fac: true, facTal: tal }); EN.choose(run, c || K, EN.bargainPolicy(run, c || K)); EN.jumpTo(run, c || K, 2); run.hp = 3; return run; };
+    const DH = NODE('hall', 'deep'), per = k => Array.isArray(DH.per) ? DH.per[k - 1] : DH.per;
+    ok(DH.carry === true && DH.max === 3 && per(1) >= per(2) && per(2) >= per(3), 'content: deep carries over fights, per by level ' + JSON.stringify(DH.per));
+    { const run = mkRun('hall', { a3: 1 }), P = per(1);
+      const a = fight(run, { honest: P - 1 }, true), acc1 = run.fac.deepAcc | 0;
+      EN.jumpTo(run, K, 3); run.hp = 3; const b = fight(run, { honest: 1 }, true), acc2 = run.fac.deepAcc | 0;
+      eq([a, acc1, b, acc2, 'deepAcc' in run.fac], [[3, 0], P - 1, [4, 1], 0, false], 'Lv1: ' + (P - 1) + ' hands → nothing yet (kept), +1 hand → +1 on that win, counter reset');
+      EN.jumpTo(run, K, 4); run.hp = 3; const c = fight(run, { honest: P + 1 }, true); eq([c, run.fac.deepAcc], [[4, 1], 1], 'Lv1: P+1 hands in one win → +1, 1 left over'); }
+    { const run = mkRun('hall', { a3: 3 }), P = per(3); fight(run, { honest: P - 1 }, false); const acc = run.fac.deepAcc | 0;
+      EN.choose(run, K, { type: 'retry' }); run.hp = 3; const w = fight(run, { honest: 1 }, true);
+      eq([acc, w], [P - 1, [4, 1]], 'Lv3 (per ' + P + '): hands from a lost fight still count; next win +1'); }
+    { const run = mkRun('pearl', { a3: 3 }), DP = NODE('pearl', 'deep'), P = Array.isArray(DP.per) ? DP.per[2] : DP.per; const r = fight(run, { honest: 9, caught: P }, true);
+      eq([DP.cell, r], ['caught', [4, 1]], 'pearl 識破 counts caught, not honest'); }
+    eq(fight(mkRun('hall', {}), { honest: 9 }, true), [3, 0], 'no tree → nothing');
+    { const d = EN.startFight(mkRun('hall', { a3: 2 }), K, {}).duel; d.p.facN.honest = 2; const v = EN.view(d).fac.deep;
+      eq([v.k, v.per, v.hands, v.carry, v.acc], [2, per(2), 2, true, 2], 'view().fac.deep: k／per／hands／carry／acc'); d.spar = { round: 1 }; ok(!EN.view(d).fac.deep, 'view: 切磋 (duel.spar) does not show 深耕'); }
+    // 舊規則（沒 carry、per 2）：照舊（engine 兩種都有）
+    { const KO = KOLD('first'); const r = (tal, facN) => fight(mkRun('hall', tal, KO), facN, true, KO);
+      eq([r({ a3: 2 }, { honest: 4 }), r({ a3: 2 }, { honest: 3 }), r({ a3: 1 }, { honest: 6 }), r({ a3: 3 }, { honest: 1 })], [[5, 2], [4, 1], [4, 1], [3, 0]], 'old rule (no carry, per 2): min(level, ⌊hands÷2⌋)'); } }
+
+  // ---- 10 老客人的面子（經典乙 III）：說情重打那場開打聲望 +3（不超過上限）；新手保底那次不算 ----
+  { const PLEA_TAL = { [ID('hall', 'pleaHp')]: 1 }, PN = NODE('hall', 'pleaHp').n; const lose = (tal, o = {}) => {
+      const run = EN.newRun(K, Object.assign({ seedKey: 'plea', runNo: 2, ace: 'hall', prologue: false, fac: true, facTal: tal }, o.safety ? { safety: true } : {}));
+      EN.choose(run, K, EN.bargainPolicy(run, K)); if (o.pos > 1) EN.jumpTo(run, K, o.pos); run.hp = o.hp || 5;
+      const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } }); EN.finishFight(run, K);
+      const p = run.pending, r = EN.choose(run, K, { type: 'retry' }); return [p && p.free, r.effects[0].pleaHp || 0, run.hp];
+    };
+    eq(lose(PLEA_TAL, { pos: 2 }), [false, PN, 5 + PN], '說情重打: 5 → ' + (5 + PN));
+    eq(lose({}, { pos: 2 }), [false, 0, 5], 'no tree: 5');
+    eq(lose(PLEA_TAL, { pos: 2, hp: 12 - PN + 1 }), [false, PN - 1, 12], 'capped at max (12)');
+    eq(lose(PLEA_TAL, { pos: 1, safety: true }), [true, 0, 5], 'safety free retry: not a 說情 → no bonus');
+    // 棒三審查：同一位連說情兩次（這一輪的說情→備用說情）不疊：每次都是「開打前的聲望＋3」（startFight 把加過的寫進 hpIn，finishFight 扣回 pleaUp）
+    { const run = EN.newRun(K, { seedKey: 'plea2', runNo: 2, ace: 'hall', prologue: false, fac: true, facTal: PLEA_TAL, talent: { plea: 1 } });
+      EN.choose(run, K, EN.bargainPolicy(run, K)); EN.jumpTo(run, K, 2); run.hp = 5; run.plea = 1;
+      const loseOnce = () => { const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } }); EN.finishFight(run, K); };
+      loseOnce(); const p1 = run.pending && Object.assign({}, run.pending), r1 = EN.choose(run, K, { type: 'retry' }), h1 = run.hp;
+      loseOnce(); const p2 = run.pending && Object.assign({}, run.pending), hBack = run.hp, r2 = EN.choose(run, K, { type: 'retry' }), h2 = run.hp;
+      eq([!!(p1 && !p1.plea), r1.effects[0].pleaHp, h1, !!(p2 && p2.plea), hBack, r2.effects[0].pleaHp, h2, 'pleaUp' in run],
+        [true, PN, 5 + PN, true, 5, PN, 5 + PN, true], '說情 5→' + (5 + PN) + '、再輸回到 5、備用說情 →' + (5 + PN) + '（不疊）');
+      loseOnce(); eq(['pleaUp' in run, run.over], [false, 'dead'], 'third loss: dead, pleaUp cleared'); } }
+
+  // ---- 11 preview＝resolve（全樹、三派、深耕／刺蝟／圈內人都觸發）；sim 有出全部效果 ----
+  { const full = { a1: 1, a2: 1, a3: 3, b1: 1, b2: 1, b3: 1 }, seen = {}; let bad = 0, n = 0;
+    for (const ace of TIERS) for (let i = 0; i < (QUICK ? 3 : 10); i++) {
+      const run = EN.newRun(K, { seedKey: 'pv3-' + i, runNo: 2, ace, prologue: false, fac: true, facTal: full }), Rr = lcg(i + 31), mem = {};
+      for (let g = 0; g < 4000; g++) {
+        if (run.over && !run.pending) break;
+        if (EN.canBargainPick(run) && !run.duel && !run.pending) { EN.choose(run, K, EN.bargainPolicy(run, K)); continue; }
+        const st = EN.nextStep(run);
+        if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { EN.choose(run, K, EN.runPolicy(run, K)); continue; }
+        if (!st || run.pos > 40) break;
+        if (EN.canShop(run)) for (const c of EN.shopPolicy(run, K, 'smart')) EN.choose(run, K, c);
+        const f = EN.startFight(run, K, {});
+        let k = 0; while (!f.duel.over && k++ < 40) {
+          const a = EN.policies[i % 2 ? 'humanRead' : 'thoughtful'](f.duel, Rr, mem, K), p = EN.preview(f.duel, a, { i: f.duel.plan.idx, attr: f.duel.plan.attr });
+          const cl = EN.resolveTurn(f.duel, a).find(e => e.t === 'clash'); n++;
+          if (!p || !cl || p.toE !== cl.toE || p.toP !== cl.toP || (p.heal | 0) !== (cl.heal | 0)) bad++;
+          for (const x of (cl && cl.notes) || []) if (x.fac) seen[x.kind] = 1;
+        }
+        if (EN.finishFight(run, K).deep) seen.deep = 1;
+      }
+    }
+    ok(n > 500 && bad === 0, 'full tree: preview = resolve (' + n + ' hands)', bad);
+    ok(['deep', 'spine', 'insider'].every(k => seen[k]), 'full tree: deep／spine／insider all fire', seen); }
+
+  // ---- 12 ?fac=1 那一趟的客人（content.factions.guest：棒三調法；只在 run.fac）----
+  { const G = F.guest || {}, at = (L, pos) => (L || []).reduce((t, x) => t + (pos >= x[0] ? x[1] : 0), 0);
+    const r0 = EN.newRun(K, { seedKey: 'fg', runNo: 2, ace: 'hall', prologue: false }), r1 = EN.newRun(K, { seedKey: 'fg', runNo: 2, ace: 'hall', prologue: false, fac: true });
+    const ids = Object.keys(K.enemies).filter(id => !K.enemies[id].prologue);
+    let okHp = true; for (const pos of [1, 10, 21, 31, 41, 51, 61, 80, 120]) for (const id of ids.slice(0, 3)) {
+      const a = EN.guestDef(r0, K, id, pos), b = EN.guestDef(r1, K, id, pos);
+      if (b.hp - a.hp !== at(G.hpSteps, pos) || b.atk - a.atk !== at(G.atkSteps, pos)) okHp = false;
+    }
+    ok(okHp, '?fac=1 guests: hp／atk = flag off + content.factions.guest steps', G);
+    const P3 = PRE3(K); ok(EN.guestDef(r1, P3, ids[0], 80).hp === EN.guestDef(r0, P3, ids[0], 80).hp, 'no factions.guest → same as flag off'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

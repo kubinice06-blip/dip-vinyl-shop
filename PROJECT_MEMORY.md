@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-22｜dip-vinyl-shop｜game-lab 第 D 波棒三：派樹（?fac=1）＋試煉階級（打倒第 20 位藏家開下一階）
+
+- **背景**：規劃書第七項流派第二波（派樹、熟練度）與第三項「試煉階級」（店主 11-12 參考 Monster Train 誓約）。規格 scratchpad `v5/wave-d/SPEC-D.md` §3.6–§3.7、§5；報告 `wave-d/build3/FINAL.md`、合併後 `build3/FINAL-post.md`；裁定 `wave-d/rulings.md`（棒三收尾段）。
+- **試煉階級**（預設開、新帳號看不到）：第 0–13 階，每階多一條規則（更挑剔、更小氣、更硬底…，`C.trial.tiers` 相對值疊加）；從第 1–10 位開局、打倒第 20 位藏家才開下一階（`TRIAL_OPEN_FROM` 10）；標題推門那列「‹ 第 k 階 ›」、試煉面板、開階過場卡、結算與頂欄小標；階越高樂歷倍率越高。沒開過試煉＝逐字現況。
+- **派樹**（`?fac=1`）：三派各九格（甲／乙兩條路線＋丙之後開放），熟練每升一級 1 派點、可買賣重配；每格各自的小效果（平手回 1、說情 +1、第一次比星輸他品味 −1、深耕跨場累積…），全樹對只開被動 +19～+25%（上限 30%）；`?fac=1` 客人照 `C.factions.guest` 加強，對沒旗標逐趟 0.94–1.04（難度維持）。
+- **`?fac=1` 還不變預設**：F10 第 8 階三派差 14.2–16.8（上限 12）、G3 一般玩家 ×1.805（上限 1.8）沒過——兩條根子都在旗標關（經典送的牌、沒旗標 G3 就 ×1.79），裁定 A 接受、跟 I-3b 的 G3 第二次一起調。
+- **合併切磋的接縫**：`?fac=1` 時切磋客人加同一位主線客人的 `facGuestAdd`（照第幾位）；切磋疊試煉第 8 階以上會比同段主線好打（小氣只壓主線）→ `C.encounter.tierAdd`（第 8–13 階 +3～+11、第 11 位起）；切磋裡點「比」也看得到本派與派樹那兩行。e2e-bgm #4 改成等字卡出現再快照（375 要等客人站定，原本是測試賽跑）。
+- **主要檔案**：`game-lab/{engine.js（treeNodes／treeBuy…、trialTiers／trialRecord…、facGuestAdd、sparTierAt）,content.js（C.trial.tiers、C.factions 三派 tree／guest、C.encounter.tierAdd）,ui.js,style.css,career.mjs,sim.mjs,index.html（?v=93）}`、`tools/{check-content,lint-copy}.mjs`、`test/engine.test.mjs`（#35）、`tests/{e2e-trial.mjs（新）,e2e-career.mjs,e2e-bgm.mjs}`。
+- **驗證**：旗標關 sim n200 跟 main 逐字（只多 report.trial）；T-1 第 0–13 階 72.2→2.9%、T-4 第 30 趟過關 53.0／51.5%；F1／F2／F5／F5′／F6／F8 26/26／F9 過；G3 會讀的 ×1.29／×1.68；切磋 LS5 分段第 0／4／7–13 階 n4000 都在 −10～+4；engine 2,951,702／0、chars、crowd、hit、shop、tutorial 全過；e2e 390×664＋375×548 全套（trial 7、career 23、fac 11、crowd 36／35、bgm 39…）＋e2e.spec 兩尺寸 50/50。
+- **留著的**：F10／G3（見上）；`--fac`×試煉階級的切磋沒量（?fac=1 仍是試做）；派樹兩格近 0（經典先聲奪人、冷門挑著學）等店主試玩手感。
+
 ### 2026-11-22｜dip-vinyl-shop｜game-lab I-4 背景音樂第三輪審查（main 併切磋後）：5 條修正
 
 - **背景**：I-4 背景音樂前兩輪都在狀態機抓到問題，切磋（#547）合併後在 main 上再審一次。報告 scratchpad `v5/wave-i/build4/FINAL-r3.md`、裁定 `wave-i/RULING.md` 最後一段。main 全套測試先跑一輪：0 失敗。
