@@ -578,6 +578,11 @@ for (const [k, v] of Object.entries(C.summary || {})) {
   for (const k of ['label', 'guest', 'guestAria']) if (k in T) one('tunes.' + k, T[k], '頻率・唱片資訊「頻率 ● 暴躁」、客人資訊「常聽 ● 暴躁」、提示籤前的圓點（讀屏）', C.tunesTag, 'tunesTag');
   for (const k of (T.order || Object.keys(T.names || {}))) one('tunes.names.' + k, (T.names || {})[k], '頻率・八格的名字（抄主站頻率光譜；改名要兩邊一起改）', C.tunesTag, 'tunesTag');
   for (const [k, v] of Object.entries(C.radio || {})) one('radio.' + k, v, '收音機・轉頻率（兩位客人之間、每輪一次；{x} 由畫面代入）', C.radioTag, 'radioTag');
+  // 第 I 波 §4 背景音樂（C.bgm.ui、bgmTag）：收音機旁「正在播放」、點我放歌、⏸ 背景音樂三行與說明小字；不寫曲名（只有卡片欄位）
+  for (const [k, v] of Object.entries(((C.bgm || {}).ui) || {})) {
+    if (Array.isArray(v)) { v.forEach((x, i) => one('bgm.ui.' + k + '[' + i + ']', x, '背景音樂・⏸ 音樂音量 小／中／大', C.bgmTag, 'bgmTag')); continue; }
+    one('bgm.ui.' + k, v, /^(np|tapPlay|icon)$/.test(k) ? '背景音樂・收音機旁「正在播放」泡泡與 ♪（點我放歌：這次造訪還沒點過畫面才出）' : '背景音樂・⏸ 選單「聲音」下面三行與說明小字', C.bgmTag, 'bgmTag');
+  }
 }
 // 頂點卡純輔助卡試做（?apex=1；C.apexTrial、apexTrialTag）：每張「能力名・時機：說明」（名 ≤8、說明 ≤25）、畫面字 ≤25（規則卡頁尾那行照頁尾）、小提示 ≤20、結果句 ≤25（不算 {x}）；
 //   fact（典故出處）不上畫面、不列（禁用字照掃 content.js）

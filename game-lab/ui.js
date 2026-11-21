@@ -116,7 +116,7 @@
   // ======================================================================= 存檔
   var save = null;
   function defSave() {
-    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null, autoNext: false }, player: null, run: null, runs: [], runSeq: {},
+    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null, autoNext: false, bgm: null, musicVol: 0.5, bgmSrc: 'bag' }, player: null, run: null, runs: [], runSeq: {},
       best: { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [],
       tutorialDone: false, prologueDone: false, lastAce: null, lastBargain: null, bring: null,   // bring：主站「帶去店裡對決」帶來的那張（{id, at}；下一趟開局挑種子排第一、預設勾好，用一次就清）
       want: [],
@@ -1129,9 +1129,10 @@
       (UI.tutReplay ? '<button type="button" class="lb-btn big" data-a="endreplay">結束重看</button>' : (UI.screen !== 'title' ? '<button type="button" class="lb-btn big" data-a="title">回標題（存檔）</button>' : '')) +
       '<div class="row"><button type="button" class="lb-btn big" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn big" data-a="rules">規則</button>' +
       (canCharEdit() && UI.screen !== 'duel' && !tutOn ? '<button type="button" class="lb-btn big" data-a="char">捏角色</button>' : '') + '</div>' +
-      '<button type="button" class="lb-btn big sp" data-a="snd">聲音 ' + swHTML(soundOn()) + '</button>' +
-      '<button type="button" class="lb-btn big sp" data-a="fast">動畫加速 ' + swHTML(S.fastAnim) + '</button>' +
-      '<button type="button" class="lb-btn big sp" data-a="autonext">揭曉後自動換手 ' + swHTML(S.autoNext) + '</button>' +   // 11-17：關＝結果停住等你點一下（預設）；開＝照時間自己換手
+      // 第 I 波：聲音｜背景音樂｜音樂音量 一列三格、（樂歷 Lv5 起）背景音樂放、說明小字；動畫加速｜揭曉後自動換手 併成一列（375×548 不用捲；審查 L12）
+      '<div class="row snd3"><button type="button" class="lb-btn big sp" data-a="snd">聲音 ' + swHTML(soundOn()) + '</button>' + bgmRowsHTML() + '</div>' + bgmMoreHTML() +
+      '<div class="row tog2"><button type="button" class="lb-btn big sp" data-a="fast">動畫加速 ' + swHTML(S.fastAnim) + '</button>' +
+      '<button type="button" class="lb-btn big sp" data-a="autonext">揭曉後自動換手 ' + swHTML(S.autoNext) + '</button></div>' +   // 11-17：關＝結果停住等你點一下（預設）；開＝照時間自己換手
       (tutOn ? '<button type="button" class="lb-btn big" data-a="skiptut">' + esc(tutLabel('skipTut', '跳過教學')) + '</button>' : (canTutorial() && UI.screen !== 'duel' ? '<button type="button" class="lb-btn big" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : '')) +
       '<button type="button" class="lb-btn big ghost" data-a="reset">重置試做版存檔</button></div>';
     var m = modal('lb-pause', html, null, { foot: false });
@@ -1154,6 +1155,18 @@
         if (fx && fx.setSound) try { fx.setSound(want); } catch (err) { console.error(err); }
         save.settings.sound = want; persist();
         b.innerHTML = '聲音 ' + swHTML(soundOn());
+        if (want) bgmResume(600); else npSync();
+      } else if (a === 'bgm') {
+        S.bgm = !bgmOn(); persist();
+        b.innerHTML = esc(BU('bgm')) + ' ' + swHTML(bgmOn());
+        bgmToggled();
+      } else if (a === 'mvol') {
+        var VV = bgmVols(); S.musicVol = VV[(VV.indexOf(bgmVol()) + 1) % VV.length]; persist();
+        var fxv = FX(); if (fxv && fxv.music && fxv.music.setVolume) try { fxv.music.setVolume(S.musicVol); } catch (err) { console.error(err); }
+        b.innerHTML = esc(BU('vol')) + ' <span class="sw on">' + esc(bgmVolName()) + '</span>';
+      } else if (a === 'bsrc') {
+        S.bgmSrc = S.bgmSrc === 'both' ? 'bag' : 'both'; persist();
+        b.innerHTML = esc(BU('src')) + ' <span class="sw on">' + esc(BU(S.bgmSrc === 'both' ? 'srcBoth' : 'srcBag')) + '</span>';
       } else if (a === 'fast') {
         S.fastAnim = !S.fastAnim; persist();
         b.innerHTML = '動畫加速 ' + swHTML(S.fastAnim);
@@ -1166,9 +1179,9 @@
       else if (a === 'replay') { closeModal(); replayTutorial(); }
       else if (a === 'reset') {
         if (!armed) { armed = true; b.textContent = '再按一次：真的清掉唱片櫃與存檔'; b.classList.add('armed'); return; }
-        var keepSound = save.settings.sound, keepPlayer = save.player;
+        var keepSound = save.settings.sound, keepPlayer = save.player, keepBgm = save.settings.bgm, keepVol = save.settings.musicVol;
         leaveDuel();
-        save = defSave(); save.settings.sound = keepSound; save.player = keepPlayer; persist(); closeModal();
+        save = defSave(); save.settings.sound = keepSound; save.settings.bgm = keepBgm; save.settings.musicVol = keepVol; save.player = keepPlayer; persist(); closeModal();
         go('title');
       }
     });
@@ -1237,6 +1250,7 @@
     if (id === 'title' || id === 'night') dailyTick();
     try { SCREENS[id](UI.params); } catch (e) { console.error(e); }
     if (UI.screen === id) crowdSync(id, UI.params);   // 活店（SPEC-H §3.1）：畫面掛好才切導演模式（巢狀 go 已經切過就不再切）
+    bgmSync();                                       // 第 I 波背景音樂：進／出輪播畫面（來客、領獎、說情）
     if (id === 'title') mediaKick();
     mediaRetry();
     flushAfter();                                    // 排給「下一個畫面」的吐司：畫面掛好才出（審查 #0）
@@ -1749,7 +1763,7 @@
     guardClicks(s);
     bindInfoTaps(s);
     app().appendChild(s);
-    s.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('[data-a=close]')) { s.remove(); syncFloat(); } });
+    s.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('[data-a=close]')) { s.remove(); syncFloat(); if (BGM.zone) bgmResume(); } });   // 第 I 波：試聽機、收音機面板關掉＝沒歌在放就接回輪播
     syncFloat();
     if (!UI.floatMo && W.MutationObserver) { UI.floatMo = new MutationObserver(syncFloat); UI.floatMo.observe(app(), { childList: true }); }
     focusFirst(s);
@@ -3563,7 +3577,7 @@
   function retryFlow(out) {
     var r = save.run, eid = out.enemyId, p = r.pending, free = !!(p && p.free);
     if (p && p.safety) return safetyFlow(out);
-    afterDuelScene(eid, { recap: true }, function (sc) {
+    afterDuelScene(eid, { recap: true, bgm: true }, function (sc) {   // bgm：說情時也輪播（第 I 波 §4.2-1）
       var dlg = Dialogue(sc, {});
       var winLine = C.lines[eid] && C.lines[eid].win;
       var beats = [];
@@ -3589,7 +3603,7 @@
   //   不扣說情、不顯示說情次數、只救一次（引擎 pending retry free＋safety）。序章男子那條（free、直接重打）不走這裡
   function safetyFlow(out) {
     var eid = out.enemyId;
-    afterDuelScene(eid, { recap: true }, function (sc) {
+    afterDuelScene(eid, { recap: true, bgm: true }, function (sc) {
       var dlg = Dialogue(sc, {});
       var winLine = C.lines[eid] && C.lines[eid].win, beats = [];
       if (winLine && out.resumed) beats.push({ who: C.enemies[eid].name, text: '「' + [].concat(winLine)[0] + '」' });
@@ -5199,6 +5213,14 @@
       get run() { return save.run; },
       get save() { return save; },
       get stage() { return UI.stage; },
+      // 第 I 波背景音樂（tests/e2e-bgm.mjs）：輪播狀態、佇列
+      bgm: function (geo) {
+        var P = UI.playlist;
+        if (geo) { var pop = BGM.pop; return { R: npRadio(), V: npView(), B: npBlocks(), w: pop ? pop.offsetWidth : 0, h: pop ? pop.offsetHeight : 0 }; }   // 泡泡擺放的量測（收音機、鏡頭、不能蓋的）
+        return { zone: BGM.zone, first: BGM.first, cur: BGM.cur, mine: BGM.mine, idle: BGM.idle, hidPend: BGM.hidPend, loading: BGM.loading, fetched: BGM.fetched, retry: !!BGM.retryT, popOpen: BGM.popOpen, popAt: BGM.popAt, popLvl: BGM.popLvl, popTap: BGM.popTap, closeWhy: BGM.closeWhy || null, popTry: !!BGM.popTry,
+          icMode: BGM.icMode, on: bgmOn(), snd: sndState(), cell: bgmCell(), shelfOpen: bgmShelfOpen(),
+          pl: P ? { key: P.key, cycle: P.cycle, queue: P.queue.slice(), bag: (P.bag || []).slice(), last: P.last, front: P.front } : null };
+      },
       // 活店（SPEC-H §11.3）：state、spawn(who, stop, o)、freezeAt([stop])、doorLog()、clear()、mode()
       crowd: {
         state: function () { return crowdCall('state'); },
@@ -5452,6 +5474,7 @@
         relicOf: relicOf, relicIcon: function (id, size) { return relicIcon(id, size); },
         relicPanel: relicPanel, levelPanel: levelPanel,
         play: function (c) { var f = FX(); if (c && c.previewUrl && soundOn() && f && f.music && f.music.play) try { f.music.play(c, { fadeMs: 600 }); } catch (e) { console.error(e); } },
+        bgmFront: function (id) { bgmFront(id); },   // 第 I 波：「店裡唱盤」放上去那張＝插到背景音樂佇列最前面、馬上放
         // 錢、包包、配件那條（今天的攤位底部）照最新的 run 重畫
         refresh: function () { var b = qs('.lb-panel.stall .lb-bagline', app()); if (b && save.run) b.innerHTML = bagLineInner(save.run); },
         done: function () { if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } },
@@ -5754,15 +5777,611 @@
         onEnd: function (how) { if ((how === 'done' || how === 'skipped' || how === 'released') && !UI.tutReplay) { save.tutorialDone = true; if (save.run) save.run.tut = false; persist(); } } });
     } catch (e) { console.error(e); }
   }
-  // 一首試聽自然放完（fx.js music.onEnded）：對決以外接下一首（來客／領獎＝包包裡的、你家＝下一張收藏），其他畫面重播同一首
+  // ======================================================================= 背景音樂（第 I 波 §4；店主 11-20 第 4 點「平時沒有對戰的時候 播放自己唱片包裡的專輯 隨機輪流放 並且在收音機那邊彈出顯示正在播放的音樂」）
+  //   哪些畫面：有 run 的來客（含攤位）、領獎、說情（go('scene', {bgm:true})）。對決、序章與劇本、你家、台北地圖、結算、標題都不輪播（正在放的那首放完就停）。
+  //   放什麼：這一趟包包裡有試聽的（王牌、頂點卡不放；卡池的卡等 cards-media.json 套上才有試聽）；樂歷 Lv5 起 ⏸ 可選「包包＋唱片櫃」＝每輪包包放完多一張唱片櫃的。
+  //   UI.playlist（只在記憶體，重新整理重洗）：hash01(seedKey#runNo#bgm#第幾輪) 排序、照順序放、每張放過一次才重洗（已在快取的排前面、剛放完那張不排第一）；
+  //     這一輪新收進包包的插到最前面；賣掉的跳過；攤位「店裡唱盤」放上去那張（bgmFront）馬上放、佇列接著。
+  //   優先序：玩家點的（試聽機、唱片資訊、收音機轉頻率、店裡唱盤、你家）＞劇本＞勝利曲＞輪播：輪播只在沒有歌在放時接下一首
+  //     （自然放完 400 ms 後；maxMs 淡出靠 fx music.onIdle 1.5 秒；唱片資訊、試聽機、收音機面板關掉 1.5 秒後看一次）。
+  //   抓不到跳下一首（連試 3 首都不行＝60 秒後再試）；行動網路、一次造訪新抓滿 30 首＝只放快取裡的；10 分鐘沒點畫面＝淡出停，下一次點擊接著放；
+  //   跟著 iPhone 靜音鍵（fx play 的 session 'ambient'）。⏸：背景音樂 開／關（save.settings.bgm；沒設＝開，saveData 時關）、音樂音量（musicVol）、Lv5 起 背景音樂放（bgmSrc）。
+  //   收音機旁（.np-ic／.np-pop，DOM，不畫進 canvas）：♪ 小圖示（有歌時一直在；聲音或背景音樂關＝灰、沒字；這次造訪還沒點過畫面＝「點我放歌」）＋
+  //     「♪ 正在播放／藝人《專輯》」泡泡：第一首、點 ♪、或距離上一次展開 ≥2 分鐘又換了一張才展開，停 6 秒；試聽機、收音機面板、唱片資訊開著時不展開；
+  //     位置照順序試收音機上方、左下、正左、正下，選第一個整個在鏡頭裡、不蓋小熱點（牆上封面、海報、櫃檯「正在放」）、名牌、泡泡、吐司、熟客人物矩形、底部面板的；
+  //     自動展開擺不下再試一次「可以蓋小熱點、照樣不蓋人」（post 審查：360／375 上方那兩格一定撞牆上封面）；都不行＝只有小圖示（不吃掉第一首／2 分鐘的額度，8 秒內再試）；
+  //     點 ♪ 才依序放寬（不看人物 → 也不看小熱點）。鏡頭在動、熟客在聊天（自動展開）＝等；聊天中點 ♪＝避開聊天泡泡擺。
+  //     展開中：走過的熟客不擠掉（只有名牌、泡泡、面板、出鏡頭才換位置／收）；被吐司疊到＝淡掉、計時停住，吐司走了再出來；還沒停滿就被擠掉＝額度退回、這首再排一次。
+  //     熟客聊天泡泡優先：聊天泡泡一出來，展開中的泡泡收成小圖示。泡泡只是字卡（不擋點擊：兩尺寸每個候選位置都蓋得到挖寶箱的點擊點）；
+  //     第二行「藝人《專輯》」一行截斷，放不下的展開 1.1 秒後慢慢捲到尾巴（post 審查：專輯名多半在被截掉的那段）。
+  //     點 ♪＝展開 6 秒、泡泡開著再點 ♪＝那張的唱片資訊（第 I 波修正輪，審查 L11）。♪ 在名牌、泡泡底下（z 4），右上角被泡泡疊到就換位置。
+  //   只顯示卡片欄位（藝人《專輯》），不寫曲名（沒有資料，不編）。櫃檯唱盤的封面跟著正在放的那張（stage.setNow；對決中不換、停了回 dip.json 那張）。
+  //   ftok＝fx 那一次 play 的號碼（cancel 用）；hidPend＝切背景期間有一首該接沒接（回前景點一下接著放）；liveAt＝最後一次確定在響；tapWant＝點 ♪ 時還沒響（響了再展開）
+  //   popLvl／popIdx＝展開中那個位置放寬到第幾層（NP_LV）／第幾個候選；popTap＝這次是點 ♪ 開的；popPrev＝展開前的「第一首／上一次展開」（提早被擠掉＝退回額度）；
+  //   popChat＝展開時熟客已經在聊天（點 ♪ 開的：那一段聊天不收，下一段聊天出來才收）；popRe＝這首提早收掉後已經再排過一次；mqT＝第二行捲動的計時；
+  //   popEnd＝該收的時刻（被吐司藏起來的時間往後延）；duckAt＝開始被吐司藏起來的時刻；closeWhy＝上一次提早收的原因（e2e／除錯看）；raf、camKey、camAt＝每一格看鏡頭動了沒（最後動的時間）；radioSt／radioArt＝收音機熱點的美術座標（找一次）
+  var BGM = { zone: false, first: false, cur: null, mine: false, tok: 0, ftok: 0, loading: false, fails: 0, retryT: 0, resumeT: 0, idleT: 0, idle: false, hidPend: false, fetched: 0, liveAt: -1e9, tapWant: 0, lastOn: null,
+    popAt: -1e9, popT: 0, popOpen: false, popId: null, popTry: null, popLvl: 0, popTap: false, popIdx: 0, popPrev: null, popChat: false, popRe: false, mqT: 0, popEnd: 0, duckAt: 0, ic: null, pop: null, icMode: null, iv: 0, raf: 0, camKey: '', camAt: -1e9, radioSt: null, radioArt: null };
+  function BU(k, o) { var U = (C && C.bgm && C.bgm.ui) || {}; return fill(typeof U[k] === 'string' ? U[k] : '', o || {}); }
+  function bgmCfg(k, d) { var v = C && C.bgm && C.bgm[k]; return typeof v === 'number' && isFinite(v) ? v : d; }
+  function bgmOn() {
+    var b = save && save.settings && save.settings.bgm; if (b === true || b === false) return b;
+    try { return !(W.navigator.connection && W.navigator.connection.saveData); } catch (_) { return true; }
+  }
+  function bgmVols() { var V = C && C.bgm && C.bgm.vols; return Array.isArray(V) && V.length === 3 ? V : [0.3, 0.5, 0.7]; }
+  function bgmVol() { var V = bgmVols(), v = save && save.settings && save.settings.musicVol; return V.indexOf(v) >= 0 ? v : V[1]; }
+  function bgmVolName() { var N = (C.bgm && C.bgm.ui && C.bgm.ui.volNames) || [], i = bgmVols().indexOf(bgmVol()); return N[i] || ''; }
+  function bgmShelfOpen() {
+    if (!careerOk() || !E.ladderList) return false;
+    try { return E.ladderList(C, careerLv().level).some(function (L) { return L.key === 'bgmShelf' && L.open; }); } catch (_) { return false; }
+  }
+  // 行動網路（沒有 navigator.connection 的瀏覽器照 Wi-Fi 算）
+  function bgmCell() { try { var n = W.navigator.connection; return !!(n && (n.type === 'cellular' || /^(slow-2g|2g|3g)$/.test(n.effectiveType || ''))); } catch (_) { return false; } }
+  // 'on'｜'locked'（偏好開著、這次造訪還沒點過畫面）｜'off'（玩家自己關了聲音）
+  function sndState() {
+    var f = FX(); if (!f || (save && save.settings && save.settings.sound === false)) return 'off';
+    try { return f.soundState ? f.soundState() : (f.soundOn() ? 'on' : 'off'); } catch (_) { return 'off'; }
+  }
+  function bgmZoneNow() {
+    var r = save && save.run, s = UI.screen;
+    if (!r || r.prologue === 'pending' || UI.tune || UI.tutReplay) return false;
+    return s === 'night' || s === 'reward' || (s === 'scene' && !!(UI.params && UI.params.bgm));
+  }
+  // 有歌在放（或已經接上、context 正在 resume）／在抓：輪播不另外開一首
+  function bgmBusy() { var f = FX(); try { return !!(f && f.music && (f.music.playing() || (f.music.loading && f.music.loading()) || (f.music.session && f.music.session() && !bgmHidden()))); } catch (_) { return false; } }
+  // fx 那首接上了（回前景點一下時 AudioContext 還在 resume，playing() 會晚一拍才是 true）
+  function bgmSounding() { var f = FX(); try { return !!(f && f.music && (f.music.playing() || (f.music.session && f.music.session() && !bgmHidden()))); } catch (_) { return false; } }
+  function bgmHidden() { try { return !!D.hidden; } catch (_) { return false; } }
+  // ---- 佇列
+  function plAces() { return TIERS.map(function (t) { return C.aces[t]; }); }
+  function plBag() {
+    var r = save.run, out = [], ace = aceIdOf(r), aces = plAces();
+    (r.bag || []).forEach(function (id) { var c = card(id); if (c && c.previewUrl && cardVis(id) && out.indexOf(id) < 0 && id !== ace && aces.indexOf(id) < 0) out.push(id); });
+    return out;
+  }
+  function plShelf(P) {
+    if (save.settings.bgmSrc !== 'both' || !bgmShelfOpen()) return [];
+    var aces = plAces(), h = function (id) { return E.hash01(P.key + '#bgmShelf#' + id); };
+    return Object.keys(save.shelf || {}).filter(function (id) { var c = card(id); return c && c.previewUrl && isOwned(id) && cardVis(id) && P.bag.indexOf(id) < 0 && aces.indexOf(id) < 0; })
+      .sort(function (a, b) { return h(a) - h(b); });
+  }
+  function plCached(id) { var f = FX(), c = card(id); try { return !!(f && f.music && f.music.cached && c && c.previewUrl && f.music.cached(c.previewUrl)); } catch (_) { return false; } }
+  // 快取裡有（抓完了或正在抓）＝這一下不會多一次下載
+  function plInCache(id) { var f = FX(), c = card(id); try { return !!(f && f.music && c && c.previewUrl && (f.music.inCache ? f.music.inCache(c.previewUrl) : f.music.cached(c.previewUrl))); } catch (_) { return false; } }
+  function plOnlyCached() { return bgmCell() || BGM.fetched >= bgmCfg('fetchMax', 30); }
+  function plState() {
+    var r = save.run, key = r.seedKey + '#' + r.runNo, P = UI.playlist;
+    if (!P || P.key !== key) P = UI.playlist = { key: key, cycle: 0, queue: [], known: null, last: null, front: null, shelfDue: false, shelfN: 0, bag: [] };
+    var bag = plBag();
+    if (!P.known) { P.known = {}; bag.forEach(function (id) { P.known[id] = 1; }); }
+    else bag.forEach(function (id) { if (!P.known[id]) { P.known[id] = 1; P.queue = [id].concat(P.queue.filter(function (x) { return x !== id; })); } });   // 這一輪新收的：插到最前面
+    P.queue = P.queue.filter(function (id) { return bag.indexOf(id) >= 0; });                                                                                 // 賣掉的跳過
+    P.bag = bag;
+    return P;
+  }
+  function plShuffle(P) {
+    P.cycle++;
+    var h = function (id) { return E.hash01(P.key + '#bgm#' + P.cycle + '#' + id); };
+    var q = P.bag.slice().sort(function (a, b) { return h(a) - h(b); });
+    q = q.filter(plCached).concat(q.filter(function (id) { return !plCached(id); }));   // 已在快取的排前面
+    if (q.length > 1 && q[0] === P.last) q.push(q.shift());                             // 剛放完那張不排第一
+    P.queue = q; P.shelfDue = true;
+  }
+  // 下一首：take＝拿走（輪到它了）；false＝只看（預抓）
+  function plNext(take) {
+    if (!save.run) return null;
+    var P = plState(), ok = plOnlyCached() ? plCached : function () { return true; };
+    if (P.front) { var fr = P.front; if (take) { P.front = null; P.last = fr; } return fr; }
+    var pick = function () { for (var i = 0; i < P.queue.length; i++) if (ok(P.queue[i])) return take ? P.queue.splice(i, 1)[0] : P.queue[i]; return null; };
+    var id = pick();
+    if (!id && take) {
+      if (P.shelfDue) { P.shelfDue = false; var sh = plShelf(P).filter(ok); if (sh.length) id = sh[P.shelfN++ % sh.length]; }   // 包包放完一輪：唱片櫃一張（Lv5 包包＋唱片櫃）
+      if (!id && P.bag.length) { plShuffle(P); id = pick(); }
+    }
+    if (id && take) P.last = id;
+    return id;
+  }
+  // ---- 放
+  function bgmNext(o) {
+    o = o || {};
+    var f = FX(); if (!f || !f.music || !BGM.zone || !save.run) return;
+    clearTimeout(BGM.retryT); BGM.retryT = 0; clearTimeout(BGM.resumeT); BGM.resumeT = 0;
+    if (!bgmOn() || BGM.idle || sndState() === 'off') { npSync(); return; }
+    // 切到背景（審查 H1）：背景裡排著的計時器（接回、重試、放完接下一首）到點也叫到這裡——不放、不拿佇列（B13 切背景停）；回前景點一下再接著放（bgmTap）
+    if (bgmHidden()) { BGM.hidPend = true; return; }
+    var P = plState();
+    try { if (f.music.cacheFor) f.music.cacheFor(P.bag.length + (plShelf(P).length ? 1 : 0)); } catch (_) {}
+    var id = plNext(true), c = id ? card(id) : null;
+    if (!c) { BGM.cur = null; BGM.mine = false; BGM.liveAt = -1e9; npSync(); return; }   // 沒有可放的（卡池媒體還沒到、行動網路沒有下載過的）：不輪播、不出泡泡
+    var tok = ++BGM.tok, why = {}, p = null;
+    // 一次造訪新抓上限（審查 M6）：照「這一下會不會真的下載」算——逾時放棄的那首 fetch 照樣整首下載完，也要算
+    if (!plInCache(id)) BGM.fetched++;
+    BGM.cur = id; BGM.mine = true; BGM.loading = true;
+    // giveUpMs：背景音樂沒有動畫要對拍，抓檔等久一點（慢網路 1 MB 要 3 秒上下；fx 預設 2.5 秒會讓每首都逾時、每 3 首停 60 秒）
+    try { p = f.music.play(c, { fadeMs: bgmCfg('fadeIn', 1200), session: o.front ? undefined : 'ambient', exclusive: !!o.front, giveUpMs: bgmCfg('giveUpMs', 12000), why: why }); } catch (e) { console.error(e); }
+    BGM.ftok = why.tok || 0;
+    npSync();
+    bgmWatch(tok, id, p, why);
+  }
+  // 等輪播那一次 play 的結果（bgmNext 自己放的、bgmAdopt 接管 fx 接回的那一次）
+  function bgmWatch(tok, id, p, why) {
+    Promise.resolve(p).then(function (ok) {
+      if (tok !== BGM.tok) return;
+      BGM.loading = false; BGM.ftok = 0;
+      if (ok) { BGM.fails = 0; bgmPreload(); npSync(); return; }
+      if (why.r === 'silent' || why.r === 'hidden') { npSync(); return; }             // 還沒點過畫面／抓到一半切背景：唱盤上那張換了、不出聲（回前景點一下 fx 從頭放這張）
+      if (why.r === 'stale') { if (BGM.cur === id) BGM.mine = false; npSync(); return; }   // 玩家點的蓋過去了
+      if (!BGM.zone) return;
+      BGM.fails++;                                                                     // 抓不到：跳下一首；連 3 首都不行＝60 秒後再試
+      if (BGM.fails >= bgmCfg('tries', 3)) {
+        BGM.fails = 0; BGM.cur = null; BGM.mine = false; BGM.liveAt = -1e9; npSync();
+        BGM.retryT = setTimeout(function () { BGM.retryT = 0; bgmKick(); }, bgmCfg('retryMs', 60000));
+        return;
+      }
+      bgmNext();
+    }, function () { if (tok === BGM.tok) { BGM.loading = false; BGM.ftok = 0; } });
+  }
+  // fx 接回唱盤上那張（music.onResume：「點我放歌」、聲音重開、回前景點一下）：是輪播那張（'ambient'）＝交給輪播管——
+  //   抓不到照樣跳下一首、離開輪播畫面／關背景音樂時作廢（第 I 波 post 審查 K：不然慢網路點了「點我放歌」2.5 秒放棄之後就沒人接、一直沒聲音）
+  function bgmAdopt(info) {
+    if (!info || info.session !== 'ambient' || !info.card || !info.p || !BGM.zone) return;
+    clearTimeout(BGM.retryT); BGM.retryT = 0; clearTimeout(BGM.resumeT); BGM.resumeT = 0;
+    var tok = ++BGM.tok, id = info.card.id;
+    BGM.cur = id; BGM.mine = true; BGM.loading = true; BGM.ftok = info.tok || 0;
+    npSync();
+    bgmWatch(tok, id, info.p, info.why || {});
+  }
+  // 取消還在抓的那首輪播（離開輪播畫面、⏸ 關背景音樂、閒置停；審查 H2／M3）：fx 那一次 play 作廢（抓完也不響）、那張放回佇列最前面（下次接著）
+  function bgmCancel() {
+    if (!BGM.loading) return;
+    var f = FX(), id = BGM.cur, P = UI.playlist;
+    BGM.tok++; BGM.loading = false;
+    try { if (BGM.ftok && f && f.music && f.music.cancel) f.music.cancel(BGM.ftok); } catch (_) {}
+    BGM.ftok = 0;
+    if (id && P && P.queue.indexOf(id) < 0 && (P.bag || []).indexOf(id) >= 0) P.queue.unshift(id);
+    BGM.cur = null; BGM.mine = false;
+  }
+  // 輪播那首（'ambient'）停掉；玩家點的、店裡唱盤照放。沒在響、但切背景時記下的（回前景會從頭放）是輪播的＝也清掉
+  function bgmStopAmbient(ms) {
+    var f = FX(); if (!f || !f.music) return;
+    try {
+      var ss = f.music.session ? f.music.session() : null, pd = f.music.pending ? f.music.pending() : null;
+      if (ss === 'ambient') f.music.stop({ fadeMs: ms });
+      else if (!ss && pd && pd.session === 'ambient') f.music.stop({ fadeMs: 0 });
+    } catch (_) {}
+  }
+  // 預抓下一首（只抓一首；背景音樂關、行動網路、新抓滿上限、閒置、切背景、已在快取＝不抓）
+  function bgmPreload() {
+    var f = FX(); if (!f || !f.music || !f.music.preload || !BGM.zone || !bgmOn() || BGM.idle || bgmHidden() || !soundOn() || plOnlyCached()) return;
+    var id = plNext(false), c = id ? card(id) : null;
+    if (!c || id === BGM.cur || plInCache(id)) return;
+    BGM.fetched++;
+    try { f.music.preload([c]); } catch (_) {}
+  }
+  // 進輪播畫面、重畫：沒有歌在放就放下一首（沒點過畫面＝只換唱盤上那張）
+  function bgmStart() {
+    var f = FX(); if (!f || !f.music || !BGM.zone) return;
+    npSync();
+    if (!bgmOn() || BGM.idle || BGM.retryT || BGM.loading) return;
+    var st = sndState(); if (st === 'off') return;
+    if (st === 'locked') { if (!f.music.current()) bgmNext(); return; }
+    if (bgmBusy()) { bgmResume(4000); return; }   // 勝利曲、玩家點的在放：等它放完（抓不到不會發 ended：4 秒後再看一次）
+    bgmNext();
+  }
+  // 玩家點的那首放完、唱片資訊／試聽機／收音機面板關掉：一會兒後沒有歌在放就接回輪播（佇列接著）
+  function bgmResume(ms) {
+    clearTimeout(BGM.resumeT);
+    BGM.resumeT = setTimeout(function () { BGM.resumeT = 0; bgmKick(); }, ms == null ? bgmCfg('resumeMs', 1500) : ms);
+  }
+  // 到點再看一次：沒有歌＝放下一首；輪播自己那首在抓＝等它的結果（bgmWatch）；別人那首（玩家點的）還在抓、沒在響＝過 1.5 秒再看
+  //   （抓不到不會發 ended／idle：不再看一次，輪播就整條停到下一次換畫面；第 I 波 post 審查 A）。在響＝放完會發 ended／idle
+  function bgmKick() {
+    if (!BGM.zone || BGM.loading) return;
+    if (!bgmBusy()) { bgmNext(); return; }
+    if (!bgmSounding()) bgmResume(1500);
+  }
+  // 「店裡唱盤」攤（stalls.js）放上去那張：插到佇列最前面、馬上放；不在輪播畫面或背景音樂關＝照舊直接放
+  function bgmFront(id) {
+    var c = card(id), f = FX(); if (!c || !f || !f.music) return;
+    if (!BGM.zone || !bgmOn() || !save.run) { if (c.previewUrl && soundOn()) try { f.music.play(c, { fadeMs: 600 }); } catch (e) { console.error(e); } return; }
+    var P = plState(); P.queue = P.queue.filter(function (x) { return x !== id; }); P.front = id;
+    BGM.idle = false;
+    bgmNext({ front: true });
+  }
+  // ⏸「背景音樂」切了：關＝還在抓的那首作廢、正在響的輪播停（審查 M3）；玩家點的照放
+  function bgmToggled() {
+    if (bgmOn()) { BGM.idle = false; if (BGM.zone) bgmStart(); return; }
+    clearTimeout(BGM.retryT); BGM.retryT = 0; clearTimeout(BGM.resumeT); BGM.resumeT = 0;
+    bgmCancel(); bgmStopAmbient(800);
+    BGM.cur = null; BGM.mine = false; npClose(true); npSync();
+  }
+  // 換畫面（go 的最後）：進／出輪播畫面
+  function bgmSync() {
+    if (!save) return;
+    if (UI.screen !== 'duel') { var f = FX(), cur = null; try { cur = f && f.music && f.music.current ? f.music.current() : null; } catch (_) {} stg('setNow', cur ? cur.id : null); }   // 對決裡響起的勝利曲：出了對決才換上櫃檯
+    if (!bgmZoneNow()) { if (BGM.zone) bgmLeave(); return; }
+    if (!BGM.zone) { BGM.zone = true; BGM.first = true; BGM.camKey = ''; BGM.camAt = now(); npLoop(true); }   // camAt：進畫面的鏡頭移動常常晚一兩格才開始，先當它在動
+    bgmStart();
+  }
+  // 出輪播畫面：排著的接回／重試收掉、還在抓的那首作廢（不然抓完會在對決、標題、劇本裡響起來；審查 H2）；audioSession 切回 'playback'（對決音效不跟著靜音鍵；審查 M4）
+  function bgmLeave() {
+    BGM.zone = false; BGM.first = false; BGM.fails = 0; BGM.hidPend = false; BGM.tapWant = 0;
+    clearTimeout(BGM.retryT); BGM.retryT = 0; clearTimeout(BGM.resumeT); BGM.resumeT = 0;
+    bgmCancel();
+    var f = FX();
+    // 唱盤上留著的是輪播那首、但已經沒在響（放完、接下一首的空檔）＝收掉（對決、標題的 ⏸ 不會寫「暫停中」那張、回前景也不會又放它）；還在響＝照舊放完
+    try { var pd = f && f.music && f.music.pending ? f.music.pending() : null, cu = f && f.music && f.music.current ? f.music.current() : null;
+      if (cu && !bgmSounding() && (cu.id === BGM.cur || cu.id === BGM.lastOn || (pd && pd.session === 'ambient'))) f.music.stop({ fadeMs: 0 }); } catch (_) {}
+    try { if (f && f.sessionPlayback) f.sessionPlayback(); } catch (_) {}   // 輪播那首還在響（回標題）＝fx 先不切，下一次點畫面再切（bgmTap）
+    npLoop(false); npClose(true); npHide();
+  }
+  // fx music.onChange：櫃檯唱盤換封面；輪播那首真的響了＝看要不要展開泡泡
+  function bgmOnChange(c) {
+    if (UI.screen !== 'duel') stg('setNow', c ? c.id : null);   // 對決中不換；停了回 dip.json 那張
+    if (!BGM.zone) return;
+    var f = FX(), on = !!(c && bgmSounding()), amb = false;
+    try { amb = on && !!f.music.session && f.music.session() === 'ambient'; } catch (_) {}
+    if (amb) BGM.cur = c.id;                                      // fx 自己接回來的輪播（回前景點一下、聲音重開、唱片資訊關掉）也是輪播的：⏸ 關背景音樂、閒置停得掉（審查 M5）
+    BGM.mine = !!(c && BGM.cur && c.id === BGM.cur);
+    if (on) BGM.liveAt = now();
+    if (on && BGM.mine) BGM.lastOn = c.id;                       // 最後一首真的響過的輪播（離開輪播畫面時唱盤上還是它、又沒在響＝收掉）
+    if (on && BGM.tapWant > now()) { BGM.tapWant = 0; npOpen(c, { tap: true }); }   // 點 ♪ 時還在抓／換歌空檔：響了再展開
+    else if (BGM.mine && on) {
+      if (BGM.first || now() - BGM.popAt >= bgmCfg('popGap', 120000)) npOpen(c);
+      else npBump();
+    } else if (on) npBump();
+    if (BGM.popOpen && c && BGM.popId !== c.id && BGM.pop) npText(c);   // 展開中換了歌：字跟著換（不重新計時）
+    npSync();
+  }
+  // 點畫面（document 捕獲）：閒置計時重算；閒置停了、切背景期間該接下一首的＝接著放
+  function bgmTap() {
+    clearTimeout(BGM.idleT);
+    BGM.idleT = setTimeout(bgmIdleOut, bgmCfg('idleMs', 600000));
+    if (!BGM.zone) { var f = FX(); try { if (f && f.sessionPlayback) f.sessionPlayback(); } catch (_) {} }   // 出了輪播畫面、輪播那首放完之後的第一下：切回 'playback'（審查 M4）
+    if (!BGM.idle && !BGM.hidPend) return;
+    BGM.idle = false; BGM.hidPend = false;
+    if (!BGM.zone) return;
+    // 等這一下的其他捕獲處理跑完再看（fx 回前景那一下會先把切走時那首從頭放）：已經有歌在放／在抓＝不另外開一首（審查 M5）
+    setTimeout(function () { if (BGM.zone) bgmStart(); }, 0);
+  }
+  // 10 分鐘沒點畫面：還在抓的作廢、輪播那首淡出停、不再預抓；下一次點擊接著放
+  function bgmIdleOut() {
+    BGM.idle = true;
+    clearTimeout(BGM.retryT); BGM.retryT = 0; clearTimeout(BGM.resumeT); BGM.resumeT = 0;
+    if (BGM.zone) {
+      bgmCancel();
+      var f = FX(); try { if (f && f.music && f.music.session && f.music.session() === 'ambient') f.music.stop({ fadeMs: 2000 }); } catch (_) {}
+    }
+    npClose(true); npSync();
+  }
+  // ---- 收音機旁：♪ 小圖示＋「正在播放」泡泡
+  //   泡泡只是字卡（pointer-events none；審查 L11）：底下的挖寶箱、熟客照點得到。要看那張的唱片資訊＝泡泡開著時再點一次 ♪
+  function npMount() {
+    var host = UI.stage && UI.stageHost; if (!host) return false;
+    if (!BGM.ic || !BGM.ic.isConnected) {
+      if (BGM.ic && BGM.ic.parentNode) BGM.ic.remove();
+      var ic = BGM.ic = D.createElement('button'); ic.type = 'button'; ic.className = 'np-ic'; ic.style.display = 'none'; BGM.icMode = null;
+      ic.addEventListener('click', function (e) {
+        e.preventDefault(); e.stopPropagation();
+        var f = FX(); if (!f || !f.music) return;
+        if (BGM.icMode === 'tap') {                                    // 點我放歌＝手勢：解鎖、開始出聲（唱盤上那張接著放）
+          try { if (f.init) f.init(); f.unlockFromGesture(true); } catch (err) { console.error(err); }
+          save.settings.sound = true; persist(); npSync(); bgmResume(600); return;
+        }
+        if (BGM.icMode !== 'on') return;
+        var c = null, on = bgmSounding(); try { c = f.music.current(); } catch (_) {}
+        if (BGM.popOpen && c && on) { var id = c.id; npClose(true); if (card(id)) info(id, { from: 'np' }); return; }   // 泡泡開著再點 ♪＝那張的唱片資訊
+        npBump();                                                      // 先有回饋（擺不下、熟客在聊天時也看得到點到了）
+        if (c && on) npOpen(c, { tap: true });
+        else BGM.tapWant = now() + 4000;                                // 還在抓／換歌空檔：響了再展開
+      });
+      host.appendChild(ic);
+    }
+    if (!BGM.pop || !BGM.pop.isConnected) {
+      if (BGM.pop && BGM.pop.parentNode) BGM.pop.remove();
+      var pop = BGM.pop = D.createElement('div'); pop.className = 'np-pop'; pop.style.display = 'none'; pop.setAttribute('role', 'status'); pop.setAttribute('aria-live', 'polite');
+      host.appendChild(pop);
+    }
+    return true;
+  }
+  function npHide() { if (BGM.ic) BGM.ic.style.display = 'none'; if (BGM.pop) BGM.pop.style.display = 'none'; BGM.icMode = null; }
+  // 收音機熱點（舞台 host 的 CSS 座標）；沒有（你家）＝null。美術座標只找一次（每一格鏡頭移動都要算）
+  function npRadio() {
+    var st = UI.stage, h = null; if (!st || !st.hotspots || !st.cssOf) return null;
+    if (BGM.radioSt !== st || !BGM.radioArt) {
+      try { h = (st.hotspots() || []).filter(function (x) { return x.id === 'radio'; })[0]; } catch (_) { h = null; }
+      BGM.radioSt = st; BGM.radioArt = h && h.rect ? h.rect.slice() : null;
+    }
+    var R = BGM.radioArt; if (!R) return null;
+    var a = st.cssOf(R[0], R[1]), b = st.cssOf(R[0] + R[2], R[1] + R[3]);
+    return { l: a.x, t: a.y, r: b.x, b: b.y, w: b.x - a.x, h: b.y - a.y };
+  }
+  // 鏡頭現在看得到的那一塊（host CSS）
+  function npView() {
+    var st = UI.stage, host = UI.stageHost, v = null; if (!st || !st.view || !host) return null;
+    try { v = st.view(); } catch (_) { v = null; } if (!v) return null;
+    var a = st.cssOf(0, v.y), b = st.cssOf(v.w || 292, v.y + v.h);
+    return { l: Math.max(0, a.x), t: Math.max(0, a.y), r: Math.min(host.clientWidth, b.x), b: Math.min(host.clientHeight, b.y) };
+  }
+  // 熟客聊天泡泡在畫面上（聊天優先：不展開、展開中的收起來；審查 M8）
+  function npChat() { var host = UI.stageHost; return !!host && qsa('.ds-say.chat', host).some(function (e) { var r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0; }); }
+  // 泡泡不能蓋的（lv＝第幾層，NP_LV）：一律＝名牌、所有泡泡、吐司（第 I 波 post：領獎「唱片櫃 +2」疊在字上）、底部面板；
+  //   lv 0 再加 小熱點（牆上封面、海報、櫃檯「正在放」、店貓；收音機本身不算）、熟客與路人的人物矩形；lv 1 不看人物；lv 2 人物、小熱點都不看；
+  //   lv 3 不看小熱點、照樣不蓋人（泡泡只是字卡、不擋點擊：小熱點底下照點得到；人不蓋＝活店照看得到人）。
+  //   自動展開：lv 0 → lv 3（第 I 波 post 審查：360／375 收音機上方那兩格一定撞牆上封面，左／左下／下又是熟客站的地方，只用 lv 0 第一首常常整首不出）；
+  //   點 ♪：lv 0 → 1 → 2（審查 M7：點了要有東西）。展開中：原位置只要不蓋名牌／泡泡／吐司／面板就留著（走過的熟客不擠掉；post 審查）
+  var NP_LV = [{ hot: true, ppl: true }, { hot: true, ppl: false }, { hot: false, ppl: false }, { hot: false, ppl: true }];
+  var NP_AUTO = [0, 3], NP_TAP = [0, 1, 2];
+  // npToasts：吐司（app 上、z 40；host CSS）。擺的時候避開；展開中被吐司疊到＝先藏起來等它走（npDuck），不換位置、不收
+  function npToasts() {
+    var ap = app(), host = UI.stageHost, out = []; if (!ap || !host) return out;
+    var hb = host.getBoundingClientRect();
+    qsa('.lb-toast', ap).forEach(function (e) { var r = e.getBoundingClientRect(); if (r.width > 0 && r.height > 0) out.push({ l: r.left - hb.left, t: r.top - hb.top, r: r.right - hb.left, b: r.bottom - hb.top }); });
+    return out;
+  }
+  function npBlocks(lv, noToast) {
+    var L = NP_LV[lv || 0] || NP_LV[0];
+    var st = UI.stage, host = UI.stageHost, hb = host.getBoundingClientRect(), out = [];
+    var rel = function (r) { return { l: r.left - hb.left, t: r.top - hb.top, r: r.right - hb.left, b: r.bottom - hb.top }; };
+    if (L.hot) try {
+      (st.hotspots() || []).forEach(function (h) {
+        if (!h.rect || h.id === 'radio' || h.dyn || h.visible === false || h.rect[2] * h.rect[3] > 600) return;
+        var a = st.cssOf(h.rect[0], h.rect[1]), b = st.cssOf(h.rect[0] + h.rect[2], h.rect[1] + h.rect[3]); out.push({ l: a.x, t: a.y, r: b.x, b: b.y });
+      });
+    } catch (_) {}
+    qsa('.ds-tag, .ds-say', host).forEach(function (e) { var r = e.getBoundingClientRect(); if (r.width > 0 && r.height > 0) out.push(rel(r)); });
+    if (!noToast) out = out.concat(npToasts());
+    var cw = W.DipLabCrowd;
+    if (L.ppl && cw && cw.state && st.anchor) {
+      try { (cw.state().slots || []).forEach(function (s) { if (!s.on || s.hidden) return; var a = st.anchor(s.slot), r = a && a.getBoundingClientRect(); if (r && r.width > 0) out.push(rel(r)); }); } catch (_) {}
+    }
+    var p = UI.panel && UI.panel.getBoundingClientRect(); if (p && p.height > 0) out.push({ l: -1e4, t: p.top - hb.top, r: 1e4, b: 1e4 });
+    return out;
+  }
+  // 候選位置照順序：收音機上方（窗框那一帶；置中、靠右對齊）→ 左下（右上角對著收音機；貼齊收音機中線、左緣）→ 正左（置中、對齊上緣、往下半個收音機）→ 正下
+  //   同一個方向多試幾個對齊（375×548 牆上封面一格一格排得很密，只試一個點常常整排都撞到）
+  function npCands(R, w, h, V) {
+    var g = 6, cx = (R.l + R.r) / 2, cy = (R.t + R.b) / 2, mid = function (x) { return Math.max(V.l + 2, Math.min(V.r - 2 - w, x)); };
+    return [
+      { k: 'up', l: mid(cx - w / 2), t: R.t - g - h },
+      { k: 'up', l: mid(R.r - w), t: R.t - g - h },
+      { k: 'dl', l: Math.min(R.l + R.w / 2, V.r - 2) - w, t: R.b + g },
+      { k: 'dl', l: R.l - 2 - w, t: R.b + g },
+      { k: 'lf', l: R.l - g - w, t: cy - h / 2 },
+      { k: 'lf', l: R.l - g - w, t: R.t },
+      { k: 'lf', l: R.l - g - w, t: R.t + R.h / 2 },
+      { k: 'dn', l: mid(cx - w / 2), t: R.b + g }
+    ];
+  }
+  function npFits(c, w, h, V, B) {
+    var a = { l: c.l, t: c.t, r: c.l + w, b: c.t + h };
+    if (a.l < V.l || a.t < V.t || a.r > V.r || a.b > V.b) return false;
+    for (var i = 0; i < B.length; i++) { var o = B[i]; if (a.l < o.r + 2 && a.r > o.l - 2 && a.t < o.b + 2 && a.b > o.t - 2) return false; }
+    return true;
+  }
+  function npPut(c, i, w, h, R) {
+    var pop = BGM.pop, cx = (R.l + R.r) / 2, cy = (R.t + R.b) / 2;
+    pop.style.left = Math.round(c.l) + 'px'; pop.style.top = Math.round(c.t) + 'px'; pop.setAttribute('data-at', c.k);
+    pop.style.setProperty('--tx', Math.round(Math.max(10, Math.min(w - 10, cx - c.l))) + 'px');
+    pop.style.setProperty('--ty', Math.round(Math.max(8, Math.min(h - 8, cy - c.t))) + 'px');
+    BGM.popIdx = i;
+  }
+  // 照順序擺（order＝層的順序：自動展開 NP_AUTO、點 ♪ NP_TAP）；擺得下＝回那一層，不然 -1
+  function npPlace(order) {
+    var pop = BGM.pop, R = npRadio(), V = npView(); if (!pop || !R || !V) return -1;
+    var w = pop.offsetWidth, h = pop.offsetHeight; if (!w || !h) return -1;
+    var cs = npCands(R, w, h, V);
+    for (var k = 0; k < order.length; k++) {
+      var B = npBlocks(order[k]);
+      for (var i = 0; i < cs.length; i++) if (npFits(cs[i], w, h, V, B)) { npPut(cs[i], i, w, h, R); return order[k]; }
+    }
+    return -1;
+  }
+  // 展開中：原本那個位置（跟著收音機重算）只要還不蓋名牌、泡泡、吐司、面板、還在鏡頭裡就留著（不跳來跳去；審查 L13；走過的熟客不擠掉：泡泡不擋點擊；post 審查），
+  //   回那個位置現在擺得下的最嚴那一層；不然照這次展開的順序換一個，都不行＝-1（收起來）
+  function npKeep() {
+    var pop = BGM.pop, R = npRadio(), V = npView(), order = BGM.popTap ? NP_TAP : NP_AUTO; if (!pop || !R || !V) return -1;
+    var w = pop.offsetWidth, h = pop.offsetHeight, cs = npCands(R, w, h, V), c = cs[BGM.popIdx];
+    if (c) { var ks = [0, 3, 1, 2]; for (var k = 0; k < ks.length; k++) if (npFits(c, w, h, V, npBlocks(ks[k], true))) { npPut(c, BGM.popIdx, w, h, R); return ks[k]; } }
+    return npPlace(order);
+  }
+  // 試聽機、收音機面板、唱片資訊（或 ⏸、整頁）開著：不展開
+  function npBlocked() { var ci = CI(); return !!((ci && ci.isOpen && ci.isOpen()) || UI.modal || UI.page || qs('.lb-sheet.float.booth, .lb-sheet.float.radio', app())); }
+  // 要展開（第一首、隔 2 分鐘、點 ♪）：記下來，鏡頭停了、熟客沒在聊天、擺得下才真的出（npTry；每 300 ms 再看一次，到 until 為止）。
+  //   真的出了才算「展開過」（BGM.first、popAt；擺不下不吃掉第一首、2 分鐘的額度；審查 M7）
+  function npOpen(c, o) {
+    o = o || {};
+    if (!c || !BGM.zone || !npMount()) return false;
+    if (!o.tap && npBlocked()) return false;
+    BGM.popTry = { id: c.id, tap: !!o.tap, until: now() + (o.tap ? bgmCfg('popTapWait', 6000) : bgmCfg('popWait', 8000)) };
+    if (!o.re) BGM.popRe = false;
+    npTry();
+    return true;
+  }
+  function npTry() {
+    var T = BGM.popTry; if (!T || !BGM.pop) return;
+    if (BGM.popOpen) { BGM.popTry = null; return; }
+    var f = FX(), cur = null, on = bgmSounding(); try { cur = f.music.current(); } catch (_) {}
+    if (!cur || cur.id !== T.id || now() > T.until || BGM.icMode !== 'on') { BGM.popTry = null; return; }
+    // 等：還沒響、面板開著、熟客在聊天（自動展開；審查 M8）、鏡頭還在動（停了 0.4 秒才算停；審查 L13）。
+    //   點 ♪ 的不等聊天：避開聊天泡泡擺（聊天泡泡要玩家點 ▼ 才走，等 6 秒常常等不到；post 審查）
+    if (!on || npBlocked() || (npChat() && !T.tap) || now() - BGM.camAt < 400) return;
+    var pop = BGM.pop; npText(cur);
+    pop.classList.remove('on'); pop.style.visibility = 'hidden'; pop.style.display = '';
+    var lv = npPlace(T.tap ? NP_TAP : NP_AUTO);
+    if (lv < 0) { pop.style.display = 'none'; pop.style.visibility = ''; return; }
+    BGM.popLvl = lv; BGM.popTap = !!T.tap; npShow(cur);
+  }
+  function npShow(c) {
+    var pop = BGM.pop;
+    pop.style.visibility = ''; void pop.offsetWidth; pop.classList.add('on');
+    BGM.popPrev = { first: BGM.first, at: BGM.popAt };
+    BGM.popOpen = true; BGM.popId = c.id; BGM.popTry = null; BGM.popAt = now(); BGM.first = false; BGM.popChat = npChat();
+    BGM.popEnd = now() + bgmCfg('popMs', 6000); BGM.duckAt = 0; pop.classList.remove('duck');
+    clearTimeout(BGM.popT); BGM.popT = setTimeout(function () { npClose(); }, bgmCfg('popMs', 6000));
+    npMarquee();
+    npSync();
+  }
+  // 第二行「藝人《專輯》」放不下（一行截斷）：展開 1.1 秒後慢慢往左捲到尾巴（專輯名多半在被截掉的那段；post 審查），停在尾巴到收起來。減少動態＝不捲
+  function npMarquee() {
+    clearTimeout(BGM.mqT); BGM.mqT = 0;
+    var b = BGM.pop && BGM.pop.querySelector('b'); if (!b || rm()) return;
+    b.style.transition = 'none'; b.style.textIndent = '0px';
+    BGM.mqT = setTimeout(function () {
+      BGM.mqT = 0; if (!BGM.popOpen || !b.isConnected) return;
+      var ov = b.scrollWidth - b.clientWidth; if (ov <= 1) return;
+      var d = Math.min(bgmCfg('mqMaxS', 3.2), Math.max(1.2, ov / bgmCfg('mqPxS', 40)));
+      BGM.pop.style.width = BGM.pop.offsetWidth + 'px';   // 寬度先定住：text-indent 會改內容寬，泡泡跟著縮＝位置每一格都在變
+      b.style.transition = 'text-indent ' + d.toFixed(2) + 's linear'; b.style.textIndent = -Math.ceil(ov + 2) + 'px';
+    }, bgmCfg('mqDelay', 1100));
+  }
+  // 展開中的泡泡被擠掉（熟客聊天泡泡出來、吐司、鏡頭）、還沒停滿就收：這次不算展開過（第一首、2 分鐘的額度退回）；
+  //   自動展開的再排一次（這首還在放就照規則再試 8 秒：聊天完、吐司走了再出來；一首只再排一次）
+  function npEarly() { npEarlyAt(now()); }
+  // shownTil：看得到的最後一刻（被吐司藏起來的那段不算看過）
+  function npEarlyAt(shownTil) {
+    if (!BGM.popOpen || !BGM.popPrev || shownTil - BGM.popAt >= bgmCfg('popMs', 6000) * 0.6) return;
+    BGM.first = BGM.popPrev.first; BGM.popAt = BGM.popPrev.at;
+    var id = BGM.popId, tap = BGM.popTap, f = FX(), c = null; try { c = f && f.music ? f.music.current() : null; } catch (_) {}
+    npClose();
+    if (!tap && !BGM.popRe && c && c.id === id) { BGM.popRe = true; npOpen(c, { re: true }); }
+  }
+  function npText(c) {
+    var pop = BGM.pop, nm = c.artist + '《' + c.album + '》';
+    pop.style.width = '';
+    pop.innerHTML = '<span class="k"><i aria-hidden="true">♪</i>' + esc(BU('np')) + '</span><b>' + esc(nm) + '</b>';
+    pop.setAttribute('aria-label', BU('np') + '：' + nm); pop.setAttribute('data-cid', c.id);
+    if (BGM.popOpen) { BGM.popId = c.id; npMarquee(); }
+  }
+  function npClose(quick) {
+    clearTimeout(BGM.popT); BGM.popT = 0; BGM.popTry = null; clearTimeout(BGM.mqT); BGM.mqT = 0; BGM.duckAt = 0;
+    var was = BGM.popOpen; BGM.popOpen = false; BGM.popId = null;
+    var pop = BGM.pop; if (!pop) return;
+    pop.classList.remove('on'); pop.classList.remove('duck');
+    if (quick || !was || rm()) pop.style.display = 'none';
+    else setTimeout(function () { if (!BGM.popOpen) pop.style.display = 'none'; }, 200);
+    if (BGM.ic && BGM.ic.classList) BGM.ic.classList.remove('open');
+  }
+  // 換歌但不展開：♪ 輕跳一下（不出字）
+  function npBump() {
+    var ic = BGM.ic; if (!ic || ic.style.display === 'none' || rm()) return;
+    ic.classList.remove('bump'); void ic.offsetWidth; ic.classList.add('bump');
+    setTimeout(function () { ic.classList.remove('bump'); }, 700);
+  }
+  // 有歌（在響、在抓、換歌的空檔 3 秒內）：♪ 才是「有歌」的樣子（審查 L9：沒聲音時點 ♪ 不能說「正在播放」上一首）
+  function npLive() {
+    if (bgmSounding()) { BGM.liveAt = now(); return true; }
+    var f = FX(); try { if (BGM.loading || (f && f.music && f.music.loading && f.music.loading())) return true; } catch (_) {}
+    return !BGM.retryT && now() - BGM.liveAt < 3000;
+  }
+  // ♪ 小圖示的樣子與位置：off＝灰（聲音或背景音樂關，沒字）、tap＝「點我放歌」、on＝有歌（輪播或玩家點的）、''＝藏起來（沒有在放）
+  function npSync() {
+    if (!BGM.zone) { npHide(); return; }
+    if (!npMount()) return;
+    var f = FX(), st = sndState(), cur = null; try { cur = f && f.music && f.music.current ? f.music.current() : null; } catch (_) {}
+    var mode = (!bgmOn() || st === 'off') ? 'off' : st === 'locked' ? (cur ? 'tap' : '') : npLive() ? 'on' : '';
+    var ic = BGM.ic;
+    if (mode !== BGM.icMode) {
+      BGM.icMode = mode;
+      ic.innerHTML = '<i aria-hidden="true">♪</i>' + (mode === 'tap' ? '<span>' + esc(BU('tapPlay')) + '</span>' : '');
+      ic.setAttribute('aria-label', mode === 'tap' ? BU('tapPlay') : BU('icon'));
+      ic.tabIndex = mode === 'off' ? -1 : 0;
+    }
+    ic.className = 'np-ic' + (mode ? ' ' + mode : '') + (BGM.popOpen ? ' open' : '') + (ic.classList.contains('bump') ? ' bump' : '');
+    if (!mode || mode === 'off' || mode === 'tap') npClose(true);
+    npPosIc();
+  }
+  // ♪ 擺在收音機右上角（不蓋收音機熱點的中心：真點收音機＝點那一下；375×548 收音機只有 24 px 寬 → e2e-econ #28）；
+  //   右邊放不下（「點我放歌」膠囊約 76 px；審查 L10）＝改試收音機正上方、正下方（靠收音機右緣）、正左，挑第一個在鏡頭裡、不蓋牆上封面等小熱點、名牌、泡泡、面板的；
+  //   都不行＝正下方（不出鏡頭、不蓋收音機熱點中心）
+  function npPosIc() {
+    var ic = BGM.ic; if (!ic) return;
+    var R = BGM.icMode ? npRadio() : null, V = R ? npView() : null;
+    if (!R || !V || R.b < V.t + 4 || R.t > V.b - 4) { ic.style.display = 'none'; return; }
+    ic.style.display = '';
+    var w = ic.offsetWidth || 20, h = ic.offsetHeight || 22;
+    var l = Math.max(V.l + 2, R.l + R.w / 2 + 4, Math.min(V.r - 2, R.r + 14) - w), t = Math.max(V.t + 2, R.t - 4);
+    var wide = l + w > V.r - 2, say = !wide && npSayHit({ l: l, t: t, r: l + w, b: t + h });
+    // 右邊放不下，或熟客／老闆的泡泡、名牌疊到右上角那個位置（post 審查：♪ 蓋住聊天泡泡的字、吃掉 ▼ 那一點）＝換位置；泡泡疊到又都換不了＝留在原位（z 在泡泡底下）
+    if (wide || say) {
+      var ra = Math.max(V.l + 2, Math.min(R.r, V.r - 2) - w), cy = (R.t + R.b) / 2;
+      var cs = [{ l: ra, t: R.t - 2 - h }, { l: ra, t: R.b + 4 }, { l: R.l - 4 - w, t: cy - h / 2 }], B = npBlocks(1), pick = null;
+      for (var i = 0; i < cs.length && !pick; i++) if (npFits(cs[i], w, h, V, B)) pick = cs[i];
+      if (pick || wide) {
+        pick = pick || cs[1];
+        l = Math.max(V.l + 2, pick.l); t = Math.max(V.t + 2, Math.min(V.b - 2 - h, pick.t));
+      }
+    }
+    ic.style.left = Math.round(l) + 'px'; ic.style.top = Math.round(t) + 'px';
+  }
+  // 展開中被吐司（領獎「唱片櫃 +2」、提示）疊到：先淡掉、6 秒的計時停住，吐司走了再出來、接著算（post 審查：吐司字跟泡泡字疊在一起）；
+  //   藏超過 6 秒（一直留著的提示吐司）＝收起來、算提早收（npEarly：額度退回、再排一次＝換個不撞吐司的位置）
+  function npDuck() {
+    var pop = BGM.pop; if (!pop || !BGM.popOpen) return;
+    var r = pop.getBoundingClientRect(), hb = UI.stageHost.getBoundingClientRect(), a = { l: r.left - hb.left, t: r.top - hb.top, r: r.right - hb.left, b: r.bottom - hb.top };
+    var hit = npToasts().some(function (o) { return a.l < o.r && a.r > o.l && a.t < o.b && a.b > o.t; });
+    if (hit && !BGM.duckAt) { BGM.duckAt = now(); pop.classList.add('duck'); clearTimeout(BGM.popT); BGM.popT = 0; }
+    else if (hit && now() - BGM.duckAt > bgmCfg('popMs', 6000)) { BGM.closeWhy = 'toast'; npEarlyAt(BGM.duckAt); if (BGM.popOpen) npClose(); }
+    else if (!hit && BGM.duckAt) {
+      BGM.popEnd += now() - BGM.duckAt; BGM.duckAt = 0; pop.classList.remove('duck');
+      clearTimeout(BGM.popT); BGM.popT = setTimeout(function () { npClose(); }, Math.max(300, BGM.popEnd - now()));
+    }
+  }
+  // ♪ 那一塊（host CSS）疊到熟客／老闆的泡泡或名牌
+  function npSayHit(a) {
+    var host = UI.stageHost; if (!host) return false;
+    var hb = host.getBoundingClientRect();
+    return qsa('.ds-tag, .ds-say', host).some(function (e) { var r = e.getBoundingClientRect(); if (!(r.width > 0 && r.height > 0)) return false;
+      var o = { l: r.left - hb.left, t: r.top - hb.top, r: r.right - hb.left, b: r.bottom - hb.top };
+      return a.l < o.r + 2 && a.r > o.l - 2 && a.t < o.b + 2 && a.b > o.t - 2; });
+  }
+  // 輪播畫面上每 300 ms：♪ 的樣子、要展開的再試一次；展開中＝熟客聊天泡泡出來、面板打開就收，被名牌、泡泡擋到就換位置（都不行就收）、被吐司疊到就先藏著
+  function npTick() {
+    if (!BGM.zone) return;
+    npSync();
+    if (BGM.popTry && !BGM.popOpen) { npTry(); return; }
+    if (!BGM.popOpen || !BGM.pop) return;
+    // 熟客聊天泡泡出來＝收（聊天優先）；點 ♪ 時已經在聊的那一段不收（避開它擺），聊完了下一段出來才收
+    var ch = npChat();
+    if (npBlocked() || (ch && !BGM.popChat)) { BGM.closeWhy = ch ? 'chat' : 'panel'; npEarly(); if (BGM.popOpen) npClose(); return; }
+    if (!ch) BGM.popChat = false;
+    var lv = npKeep(); if (lv < 0) { BGM.closeWhy = 'tick'; npEarly(); if (BGM.popOpen) npClose(); } else { BGM.popLvl = lv; npDuck(); }
+  }
+  // 每一格：鏡頭動了（進畫面的鏡頭移動、面板開關）＝♪ 跟著收音機走、展開中的泡泡跟著搬（擺不下就收）；記下最後動的時間（動的時候不展開；審查 L13）
+  function npFrame() {
+    BGM.raf = 0; if (!BGM.zone) return;
+    BGM.raf = W.requestAnimationFrame(npFrame);
+    var st = UI.stage, host = UI.stageHost, v = null; if (!st || !st.view || !host) return;
+    try { v = st.view(); } catch (_) { v = null; } if (!v) return;
+    var k = [v.y, v.h, v.x, v.w, v.scale, host.clientWidth, host.clientHeight].join(',');
+    if (k === BGM.camKey) return;
+    var first = !BGM.camKey; BGM.camKey = k; if (!first) BGM.camAt = now();
+    if (!BGM.ic || !BGM.icMode) return;
+    npPosIc();
+    if (BGM.popOpen && BGM.pop) { var lv = npKeep(); if (lv < 0) { BGM.closeWhy = 'cam'; npEarly(); if (BGM.popOpen) npClose(true); } else { BGM.popLvl = lv; npDuck(); } }
+  }
+  function npLoop(on) {
+    clearInterval(BGM.iv); BGM.iv = 0;
+    if (BGM.raf && W.cancelAnimationFrame) W.cancelAnimationFrame(BGM.raf); BGM.raf = 0;
+    if (on) { BGM.iv = setInterval(npTick, 300); if (W.requestAnimationFrame) BGM.raf = W.requestAnimationFrame(npFrame); }
+  }
+  // ⏸ 選單：「聲音」同一列的 背景音樂 開／關＋音樂音量 小／中／大；下面 Lv5 起 背景音樂放 包包／包包＋唱片櫃、說明小字
+  function bgmRowsHTML() {
+    return '<button type="button" class="lb-btn big sp" data-a="bgm">' + esc(BU('bgm')) + ' ' + swHTML(bgmOn()) + '</button>' +
+      '<button type="button" class="lb-btn big sp" data-a="mvol">' + esc(BU('vol')) + ' <span class="sw on">' + esc(bgmVolName()) + '</span></button>';
+  }
+  function bgmMoreHTML() {
+    var both = save.settings.bgmSrc === 'both';
+    return (bgmShelfOpen() ? '<button type="button" class="lb-btn big sp" data-a="bsrc">' + esc(BU('src')) + ' <span class="sw on">' + esc(BU(both ? 'srcBoth' : 'srcBag')) + '</span></button>' : '') +
+      '<p class="lb-bgmnote">' + esc(BU('note')) + '</p>';
+  }
+  // 一首試聽自然放完（fx.js music.onEnded）：對決以外接下一首（來客／領獎／說情＝背景音樂佇列的下一首（第 I 波）、你家＝下一張收藏），其他畫面重播同一首
   function onMusicEnded(c) {
     var f = FX();
     if (!c || !f || !f.music || UI.screen === 'duel' || !soundOn() || UI.tune) return;   // 你家的控制台開著：星圖的電台自己接下一張（轉接器回報 stopped）
-    var next = c, r = save.run;
-    if (r && (UI.screen === 'night' || UI.screen === 'reward')) {
-      var pool = (r.bag || []).map(card).filter(function (x) { return x && x.previewUrl && x.id !== c.id; });
-      if (pool.length) next = pickR(pool);
-    }
+    if (BGM.zone) { setTimeout(function () { bgmKick(); }, 400); return; }
+    if (BGM.mine && BGM.cur === c.id && UI.screen !== 'home') { BGM.mine = false; return; }   // 輪播那首在不輪播的畫面放完：不重播（你家照舊接唱片架）
+    var next = c;
     // 你家：唱盤放完接下一張收藏（照唱片架的順序，最後一張接回第一張）
     if (UI.screen === 'home') { var hp = homePlayable(), hi = hp.indexOf(c.id); if (hp.length) next = card(hp[(hi + 1) % hp.length]) || c; UI.homeNext = next.id; }
     setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
@@ -5853,14 +6472,25 @@
     careerBoot();                                      // 第 D 波（SPEC-D §2.6）：C 版頁面記的樂歷（lexpBank）入帳；每次開機都看，全 0 就不做
     var f = FX();
     if (f) { try { if (f.init) f.init(); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
-    // 對決以外：一首試聽自然放完就接下一首（包包裡的；你家＝下一張收藏）
+    // 對決以外：一首試聽自然放完就接下一首（背景音樂佇列；你家＝下一張收藏）
     if (f && f.music && f.music.onEnded) f.music.onEnded(onMusicEnded);
+    // 第 I 波背景音樂：音量、maxMs 淡出後接回、櫃檯唱盤與收音機旁的 ♪、聲音開關、閒置計時
+    if (f && f.music) {
+      try { if (f.music.setVolume) f.music.setVolume(bgmVol()); } catch (e) { console.error(e); }
+      if (f.music.onIdle) f.music.onIdle(function () { bgmKick(); });
+      if (f.music.onChange) f.music.onChange(bgmOnChange);
+      if (f.music.onResume) f.music.onResume(bgmAdopt);
+    }
+    if (f && f.onSound) f.onSound(function () { if (BGM.zone) npSync(); });
+    D.addEventListener('pointerdown', bgmTap, true); D.addEventListener('keydown', bgmTap, true); bgmTap();
+    // 出了輪播畫面後的點擊（click＝iOS 認得的手勢）：audioSession 切回 'playback'、舊 iOS 的循環靜音 <audio> 再開（審查 M4）
+    D.addEventListener('click', function () { if (!BGM.zone && f && f.sessionPlayback) try { f.sessionPlayback(); } catch (_) {} }, true);
     var ci = CI();
     if (ci) {
       ci.config({ onSoundUnlock: function () { save.settings.sound = true; persist(); }, cardOf: function (id) { return card(id); } });
       if (UI.apex) ci.config({ apex: true });          // 頂點卡試做：頂點卡的唱片資訊多一塊「王牌能力」（旗標關時不設，一字不變）
       ci.config({ run: function () { return save.run; } });   // 第 D 波棒二：帶派別的 run＝王牌能力照換一格（cardinfo apexOf 走 apexAbilityOf）；第 I 波修正輪：一律設（?fac=1 單開、續玩沒帶旗標時 7 星王牌翻面句照 run.fac 換條件）
-      ci.on('close', function () { flushToasts(); });
+      ci.on('close', function () { flushToasts(); if (BGM.zone) bgmResume(); });   // 第 I 波：唱片資訊的試聽收掉了＝1.5 秒後接回輪播
     }
     labSpr();
     // 第 C 波（SPEC-C §5.2、CRITIQUE 1.8）：引擎抽金邊盤、公關片時先扣唱片櫃擁有的、公關片偏常聽的兩個頻率（呼叫時才讀存檔；sim 不設）

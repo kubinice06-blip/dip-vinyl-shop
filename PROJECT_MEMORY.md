@@ -1,13 +1,21 @@
 # dip vinyl 專案備忘錄
 
-### 2026-11-20｜dip-vinyl-shop｜game-lab 第 I 波 I-0：成長曲線（第一輪就升級、樂歷前段變快、品味／底氣／聲望固定順序）
+### 2026-11-21｜dip-vinyl-shop｜game-lab 第 I 波 I-4：沒對戰時輪流播包包裡的歌＋收音機旁「正在播放」
+
+- **背景**：店主 11-20 第 4 點「平時沒有對戰的時候 播放自己唱片包裡的專輯 隨機輪流放 並且在收音機那邊彈出顯示正在播放的音樂」。規格 scratchpad `v5/wave-i/SPEC-I.md` §4、報告 `wave-i/build4/FINAL.md`、`FINAL-post.md`、裁定 `wave-i/RULING.md`。
+- **播什麼、什麼時候**：來客（含攤位）、領獎、說情畫面輪流放包包裡的試聽（樂歷 Lv5 起可選「包包＋唱片櫃」）；洗牌佇列，每張放過一次才重洗，剛收的插到最前、賣掉的跳過。對決、序章、劇本不放；玩家點的歌、勝利曲優先，放完 400 ms 接回。抓不到跳下一首、連 3 首停 60 秒；行動網路或這次已新抓 30 首只放下載過的；10 分鐘沒點畫面淡出。輪播跟 iPhone 靜音鍵（audioSession ambient），離開輪播畫面切回 playback。切到背景不出聲。
+- **收音機旁**：♪ 小圖示（灰＝關、「點我放歌」＝還沒點過畫面、亮＝在放）；「♪ 正在播放／藝人《專輯》」字卡在第一首、點 ♪、隔 2 分鐘換歌時展開 6 秒，純字卡不擋點擊（字卡開著再點 ♪＝唱片資訊），不蓋人、名牌、聊天泡泡、吐司、面板；名字太長慢慢捲。⏸ 選單：「聲音｜背景音樂｜音樂音量」一列。
+- **主要檔案**：`game-lab/{fx.js,ui.js,stage.js,cardinfo.js,content.js,style.css,index.html}`、`game-lab/tests/e2e-bgm.mjs`（新，36 項）、`game-lab/tests/e2e-career.mjs`、`game-lab/test/engine.test.mjs`、`game-lab/tools/check-content.mjs`。`?v=89`。
+- **驗證**：兩輪審查共 24 條全修（背景開播、離開畫面還在抓的那首、關背景音樂關不掉、靜音鍵、慢網路上限、♪ 蓋聊天泡泡…）。engine.test 2,951,447／0、chars、crowd、hit、shop、tutorial 全過；e2e-bgm 兩尺寸 36/36；其他 e2e 兩尺寸全過（crowd LC2 門事件 CPU 滿載偶發 >10 秒、單獨重跑過）；e2e.spec 兩尺寸 50/50。
+
+### 2026-11-21｜dip-vinyl-shop｜game-lab 第 I 波 I-0：成長曲線（第一輪就升級、樂歷前段變快、品味／底氣／聲望固定順序）
 
 - **背景**：店主 11-20 第 7 點「樂歷的成長曲線也要做好 第一輪就要讓玩家升級 局內升級也是 然後品味 底氣 聲望三項升級不要選項一直跳動 就照品味底氣聲望這個順序固定」。固定順序已在 #540 上線；這筆是曲線。規格 scratchpad `v5/wave-i/SPEC-I.md` §7、報告 `wave-i/build0/FINAL.md`、`SIM.md`、`RULINGS.md`。
 - **局內**：打贏第 1 位就升 Lv2（`C.trial.firstNeed 2`；全贏時第一輪升 3 次：第 1、4、5 位），第一級不自動加聲望上限（`firstHp 0`）抵銷；打贏那手先蓋「升級！Lv2」章（停住、點了收）再進戰利品；第一次升級老闆那句等戰利品吐司收掉才講。
 - **樂歷**：前 7 級曲線 100／150／250／350／500／650／800（Lv8 戰力天賦照舊 2,800）；新帳號第一趟保底到 Lv2；攤位頂列細條「樂歷 這一趟 至少 +n」、跨級金閃「樂歷 Lv n！這一趟結束就能點天賦」；一次升兩級以上出清單卡；曲線改了，舊帳號開機先補抽再入帳（`careerRecurveBoot`）。
 - **已知**：退版到舊頁面，已點的天賦會被舊頁面重置（只有 main 退版才會；RULINGS 12）。G3 一般玩家第 30 趟 ×1.822（main 本來就 ×1.807，I-0 只 +0.014）：主線裁定先收，I-3b 一併處理（例：戰力價 6k→8k）。
 - **主要檔案**：`game-lab/{engine.js,content.js,ui.js,style.css,career.mjs,index.html,LINES-REVIEW.md}`、`game-lab/test/engine.test.mjs`（#33）、`game-lab/tests/{e2e-career,e2e-checkpoint,e2e-fac,e2e.spec}.mjs`、`game-lab/tools/{check-content,lint-copy}.mjs`。`?v=88`。
-- **驗證**：sim LV1 n4000 會讀的到第 50 位 18.88→18.55%、新手前三死 −0.13 點、一般玩家中位不變；GI1 第一趟結束 Lv≥2 四策略 100%、GI2 新手第二趟 Lv≥3 99.0%；現行門檻 17/17、26/26；`?fac=1` F1–F6、F8 過。合併 I-1 翻面後：engine.test 2,951,444／0（翻面關＋第一位升級關的黃金照舊）、chars、crowd、hit、shop、tutorial 全過；e2e 兩尺寸見 PR。
+- **驗證**：sim LV1 n4000 會讀的到第 50 位 18.88→18.55%、新手前三死 −0.13 點、一般玩家中位不變；GI1 第一趟結束 Lv≥2 四策略 100%、GI2 新手第二趟 Lv≥3 99.0%；現行門檻 17/17、26/26；`?fac=1` F1–F6、F8 過。合併 I-1 翻面後：engine.test 2,951,444／0（翻面關＋第一位升級關的黃金照舊）、chars、crowd、hit、shop、tutorial 全過；e2e 390×664／375×548 共 34 套全過（career 24、encore 16、crowd 24／23、fac 12、duel 79、apex 20、econ 28、prologue 56、pool 50／36…）＋e2e.spec 兩尺寸。
 
 ### 2026-11-20｜dip-vinyl-shop｜game-lab 第 I 波 I-1：王牌「翻面」條件加成＋頂點輔助卡換裝（店主挑的 45 張）＋之乎者也退出頂點
 

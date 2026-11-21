@@ -565,7 +565,7 @@
       if (f.hp > 0) H.toast(fill(((C().trial || {}).ui || {}).heal || '聲望 +{n}', { n: f.hp }), 'gold');
       else if (f.hp === 0 && cur0 && cur0.kind === 'snack') H.toast(U('snackFullToast'));
       if (f.gainRelic) H.toast(fill('拿到「{n}」', { n: H.relicName(f.gainRelic) }));
-      if (f.nowPlaying) { try { H.play(card(f.nowPlaying)); } catch (e) { console.error(e); } }
+      if (f.nowPlaying) { try { if (H.bgmFront) H.bgmFront(f.nowPlaying); else H.play(card(f.nowPlaying)); } catch (e) { console.error(e); } }   // 第 I 波：插到背景音樂佇列最前面、馬上放
       if (f.dare) H.toast(f.dare === 'tough' ? U('dareToughOn', { n: ((ST().dare || {}).tough || {}).atk || 1 }) : U('dareTankOn', { n: ((ST().dare || {}).tank || {}).hp || 4 }), 'gold');
     });
     if (ch.act === 'sell') S.sub = null;
