@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-22｜dip-vinyl-shop｜game-lab I-4 背景音樂第三輪審查（main 併切磋後）：5 條修正
+
+- **背景**：I-4 背景音樂前兩輪都在狀態機抓到問題，切磋（#547）合併後在 main 上再審一次。報告 scratchpad `v5/wave-i/build4/FINAL-r3.md`、裁定 `wave-i/RULING.md` 最後一段。main 全套測試先跑一輪：0 失敗。
+- **修正**：(1) 新開頁第一首還在抓時按 ⏸ 關聲音、進對決再開聲音，會在對決裡放輪播那首（主線與切磋都會）→ `bgmLeave` 清掉、那張放回佇列最前面（`plBack`）；(2) ?apex=1 時唱片櫃裡的頂點卡、這一趟的王牌會被輪播 → `plSkip` 一律不放；(3) 切磋戰利品列的鏡頭把 ♪ 擠到上緣、壓住牆上封面搶點擊 → 被擠下來又疊到點得到的熱點就藏（`npIcHot`）；(4)(5) 有切磋邀請時第一首「正在播放」字卡一閃就被嗆聲收掉、第一次邀請時跟老闆提示疊字 → 自動展開等熟客／挑戰者／老闆講完再出（`npHold`；`C.bgm.popChatGap` 600、`popHoldMax` 20000）。
+- **文件**：README 的 P9「首屏 gzip ≤800 KB 硬門檻」改成跟 e2e-pool 一致的「只印參考」（店主 11-17「我從沒有限定檔案上限」；實測約 1,061 KB）。
+- **主要檔案**：`game-lab/{ui.js,content.js,index.html（?v=92）,README.md}`、`tools/check-content.mjs`、`tests/e2e-bgm.mjs`（#35–#37，修前都 FAIL）。
+- **驗證**：check-content／shops／covers、lint-copy 過；單元 engine 2,951,473、chars、crowd、hit、shop、tutorial 全過；e2e-bgm 390 39/39、375 38/39（#29 聊天沒開出來，單獨重跑 2/2）；e2e-crowd（shelf,bag）36/36、35/35；e2e.spec 375 50/50、390 49/50（#54 吐司 1.5 秒，load 6 以上，單獨重跑 2/2）；taps、econ、loot、stall、apex、duel、career 兩尺寸過。
+
 ### 2026-11-21｜dip-vinyl-shop｜game-lab 活店第二階段：熟客來找你切磋（店主說的遭遇戰），開關打開
 
 - **背景**：店主 11-08 規劃書「遭遇戰：客人主動來嗆，可以選擇不打；打贏拿錢或唱片，輸了不扣主線進度」。第一階段（熟客走動、聊天）已上線；這是第二階段。規格 scratchpad `v5/liveshop/SPEC-H.md` §7–§13、報告 `liveshop/p2b/FINAL.md`、量測 `p2b/fix/SIM.md`、裁定 `liveshop/rulings.md`（最後兩段）。
