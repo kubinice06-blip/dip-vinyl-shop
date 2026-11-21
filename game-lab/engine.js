@@ -207,6 +207,11 @@
 //            levelOffer：逢 levelEvery 級多第 4 格 {pick:'fac', id}（佔那一級）；{draft:true}（選秀）不出 · choose level {pick:'fac', id} · choose draft 送 fac → 'bad'
 //            facCfg · facPickDef(content, tier, id) · facFxOf(content, run, tier) · facDue · facOffer · fixFac(run, content)（讀檔整理）· FAC_OPS
 //            apexAbilityOf(content, cardId, run)：?fac=1&apex=1 同開（run.fac）＝照 content.factions.apexSwap 換一格；沒有 run.fac＝abilityOf 逐字照舊。新 apex op critAdd（只給換一格用）
+//            第 D 波棒三派樹（?fac=1；SPEC-D §3.6–§3.7；契約 scratchpad v5/wave-d/build3/CONTRACT.md）：content.factions[派].tree 九格 a1–c3、treeCost、treeStart（'first'＝本派格先出）
+//              存檔 career.tree[派]（careerFix→treeFixOne）；treeList · treePoints · treeWhy · treeBuy／treeSell／treeRespec · treeArgs(content, career, ace)＝newRun 的 facTal（off＝{}）· facTalOf
+//              進局 run.fac.tal：facFxOf 多 deep／deepCell／deepPer（finishFight 打贏多回、out.deep）、spine（刺蝟）、tieHeal（圈內人）、pick2（levelOffer 出兩個）；choose retry 的 pleaHp
+//              ?fac=1 那一趟的客人 content.factions.guest {hpSteps, atkSteps}（guestDef；只在 run.fac）＝棒三的 G3／「整體變簡單」調法
+// Trial      第 D 波棒三試煉階級（SPEC-D §5）：trialCfg 依序疊 C.trial.tiers（addMerge 相對值；add:{healAdd}）· trialTiers · trialFix · trialPick · trialRecord（TRIAL_PASS 21）· runSummary.tier
 // Encore     第 I 波 I-1「安可」（scratchpad v5/wave-i SPEC-I §1、附錄 Y；給畫面／sim 的契約 build1/CONTRACT.md）。數字與字＝content.encore（encCfg；on false＝兩半都關、逐字現況）
 //            每張王牌多一條「條件 → 加成」：條件 caught 看穿｜combo2 連剋兩手｜sameWin 同色比贏｜lowhp 聲望 ≤ lowPct%（只配回聲望型）；加成 again 再發動／王牌回到手上｜star 下一手 +1 星｜
 //              hit 下一手剋中多扣 2（倍數之後、他的底氣之前）｜heal 回 2（當場、跟同一手其他回聲望取大）。一場一次；頂點卡發動那手不算（下一手起）、7 星王牌丟的那手就算；
