@@ -411,7 +411,23 @@
     titleEvery: 2,
     // 來客條頭像下的小名牌放不下的（「地下廠牌主理人級」8 字，360–375 寬一格約 65–68 px，跟隔壁的名牌黏在一起）→ 只在來客條用短寫；對決、客人資訊照原字
     titlesShort: { 地下廠牌主理人: '廠牌主理人' },
-    tiers: [],
+    // 試煉階級（第 D 波棒三；SPEC-D §5；Monster Train 誓約式）：第 k 階＝tiers[0..k−1] 全部疊上（engine trialCfg 依序 addMerge）。
+    //   一階一條（name 兩字、text＝這一階新加的那條，畫面字）；其餘鍵＝trialCfg 的部分覆寫，一律用相對值：{add:n}＝在現值上加（現值是數字或物件的 add 鍵），
+    //   頂層 add:{healAdd:−1}＝打贏少回 1（finishFight 兩種模式都扣：頂點卡試做的 winHeal 4 也是）。
+    //   開下一階＝在那一階打倒第 20 位傳說藏家（走到第 21 位；engine trialRecord）；新帳號 open 0＝看不到。獎勵只有樂歷 ×(1＋0.1k)（careerGain tier）。
+    //   順序＝SPEC-D §5.2 定稿（輕的四條在前、老藏家第 5、第 10 階大場面）；棒三 sim n 4000 重量（T-1–T-5，build3/SIM.md）
+    tiers: [
+      { name: '不說', text: '什麼都不露的提示多 5%。', curve: { hintMix: { none: { base: { add: 0.05 }, max: { add: 0.05 } } } } },
+      { name: '好貨', text: '客人的牌加星變快（每 2 位一次）。', curve: { deck: { buffEvery: { add: -1 } } } },
+      { name: '話少', text: '只說一半的提示多 10%。', curve: { hintMix: { half: { normal: { add: 0.10 }, hard: { add: 0.10 }, max: { add: 0.10 } } } } },
+      { name: '菁英', text: '菁英聲望 +3。', guestHp: { elite: { add: 3 } } },
+      { name: '老藏家', text: '傳說藏家聲望 +3。', guestHp: { boss: { add: 3 } } },
+      { name: '會唬', text: '客人唬人多 5%。', curve: { q: { feintBase: { add: 0.05 }, feintMax: { add: 0.05 } } } },
+      { name: '硬底', text: '客人底氣 +1。', curve: { def: { add: 1 } } },
+      { name: '小氣', text: '打贏回的聲望少 1。', add: { healAdd: -1 } },
+      { name: '挑剔', text: '客人品味 +1。', curve: { atk: { add: 1 } } },
+      { name: '大場面', text: '菁英、藏家聲望再 +3。', guestHp: { elite: { add: 3 }, boss: { add: 3 } } }
+    ],
     // ---- 畫面字（{x} 由畫面代入；第二棒 ui.js 用）----
     ui: {
       game: '品味對決',                              // 標題、還沒開這一趟時的頂欄（沒有日期、沒有雨夜）
@@ -461,7 +477,14 @@
       apexProg: '頂點卡 {n}／{total}',                                 // ?apex=1：收了幾張頂點卡（標題、唱片櫃）
       bossCarry: '帶的王牌《{album}》',                                 // 點傳說藏家的頭像：他這一輪帶哪張（每輪可以不同）
       bossUnlock: '打倒他，解鎖{title}',                               //   接在後面：打倒他會解鎖哪一派
-      bossCollect: '打倒他，這張就收進唱片櫃'                           //   ?apex=1、三派都開之後：他帶的是你還沒收到的那張
+      bossCollect: '打倒他，這張就收進唱片櫃',                          //   ?apex=1、三派都開之後：他帶的是你還沒收到的那張
+      // 試煉階級（第 D 波棒三；SPEC-D §5.4；{k}＝第幾階、{text}＝tiers[k−1].text、{n}＝條數）。推門那列只在 save.trial.open ≥1 才出（新帳號看不到）
+      tierRow: '試煉階級', tierN: '第 {k} 階', tierZero: '不加條件', tierNew: '這一階：{text}', tierMore: '另外 {n} 條',
+      tierTag: '第 {k} 階',                                            // 對決頂欄、來客條名字旁的小標（run.tier ≥1 才出）
+      tierOpen: '開了第 {k} 階：{text}',                               // 主鈕之後的過場卡（trialRecord 回 opened）
+      tierLadder: '試煉階級：開到第 {k} 階',                           // 樂歷頁解鎖區最後一行
+      tierHow: '打倒第 20 位藏家開下一階',                              //   接在後面（括號由畫面加）；推門那列沒開的下一階也用
+      tierReward: '樂歷 ×{m}'                                          // 推門那列：這一階的樂歷倍率（1＋0.1k；{m} 畫面代入，例 1.3）
     },
     // 升級三選一（固定 品味→底氣→聲望上限；engine.levelOffer）。字是店主暫定的名字（品味／底氣），句子新寫
     //   atkSub／defSub／hpSub 的 {n}＝這一格加幾點（C.trial.picks）。sub（自動加的聲望上限）：升到 Lv2 那次不出（engine levelHpAt 0）
@@ -2608,8 +2631,11 @@
   // ===================================================================
   C.factions = {
     on: true, levelEvery: 5, occupy: true,
+    // 派樹的價（第 D 波棒三；SPEC-D §3.7a）：第 1／2／3 層 layer 點（第 3 層另要熟練 Lv5＝C.career.prof.auto tier3）；深耕第 2、3 級各 more 點（深耕 D 波封頂 3 級＝節點的 max）
+    treeCost: { layer: [1, 2, 2], more: 1 },
     notes: { full: '正面對決：扣整張 {n}', tieCost: '平手算你輸 {n}', borrow: '借他的份量：扣他 {n}', underdog: '以小搏大：扣他 {n}', cCost: '被剋：多扣 {n}',
-      crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸：多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}' },
+      crit: '拆穿！多扣 {n}', crit2: '爆擊！多扣 {n}', heal: '回 {n} 聲望', loseCost: '比星輸：多扣 {n}', leech: '吸血：回 {n} 聲望', thorn: '反傷：他也扣 {n}',
+      spine: '刺蝟：少扣 {n}', insider: '圈內人：回 {n} 聲望' },   // 第 D 波棒三派樹（異端乙 II、III）：spine {n}＝他沒加上的品味、insider {n}＝回幾聲望
     // ?fac=1&apex=1 同開才用（SPEC-D §6-3「三家換一格」）：engine apexAbilityOf 換掉那張的 op／params／text（name、典故不動；C.apexTrial 本身不改）。
     //   ops＝這個原語的卡都換（冷門 theirStar／pThr＝被動已有；異端 crit／critLeech＝被動已有／七不收）；cards＝指定那張（優先）。timing：留著型照舊留著
     //   數字（拆穿多扣 2、比星多算 2）＝規格起點，棒二 sim F9 量；on false＝退回只標示（ui.apexMixed；對照表留著，on 改回 true 就換）
@@ -2639,7 +2665,17 @@
         { id: 'h_old', name: '老派', op: 'tieFree', text: '每場第一次同色平手，你不扣。' },
         { id: 'h_seen', name: '見過世面', op: 'counteredCut', n: 2, text: '每場第一次被剋，少扣 2（最少扣 1）。' },
         { id: 'h_leech', name: '吸血', op: 'leech', max: 2, second: true, text: '扣整張那手，扣到的一半回聲望，一場最多 2。' } ],
-      priority: ['h_leech', 'h_eye', 'h_first', 'h_seen', 'h_old'] },
+      priority: ['h_leech', 'h_eye', 'h_first', 'h_seen', 'h_old'],
+      tree: [
+        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'h_eye', text: '開局就學會「識貨」。' },
+        { id: 'a2', name: '挑著學', op: 'pick2', text: '本派格一次出兩個，挑一個學。' },
+        { id: 'a3', name: '口碑', op: 'deep', cell: 'honest', max: 3, text: '信對一手，打贏多回 1 聲望（幾級最多幾手）。' },
+        { id: 'b1', name: '老派', op: 'start', pick: 'h_old', text: '開局就學會「老派」。' },
+        { id: 'b2', name: '見過世面', op: 'start', pick: 'h_seen', text: '開局就學會「見過世面」。' },
+        { id: 'b3', name: '老客人的面子', op: 'pleaHp', n: 3, text: '說情重打那場，開打聲望 +3。' },
+        { id: 'c1', name: '老店', soon: 'later', text: '開局老闆多送一張。' },
+        { id: 'c2', name: '鎮店盤眼光', soon: 'apex' },
+        { id: 'c3', name: '雙唱盤', soon: 'apex' } ] },
     pearl: { name: '冷門流', icon: '借', deepCell: 'caught',
       tagline: '借他的份量，只讀真假。', passive: '你剋他一定剋得動，扣他那張的星數；他大你 2 星以上那手不加品味。', cost: '被剋：多扣 1。',
       read: '只讀真假，信的時候丟最小那張。', first: '冷門流：剋他一定剋得動，扣他那張；被剋多扣 1。',
@@ -2650,7 +2686,17 @@
         { id: 'p_regular', name: '熟客', op: 'lowHeal', n: 2, text: '聲望不到一半時，打贏多回 2。' },
         { id: 'p_hp', name: '地下串連', op: 'maxHp', n: 3, text: '聲望上限 +3，現有聲望也 +3。' },
         { id: 'p_thorn', name: '反傷', op: 'thorn', n: 2, max: 2, second: true, text: '被剋時他也扣 2，一場最多 2 次。' } ],
-      priority: ['p_thorn', 'p_remember', 'p_bench', 'p_regular', 'p_hp'] },
+      priority: ['p_thorn', 'p_remember', 'p_bench', 'p_regular', 'p_hp'],
+      tree: [
+        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'p_bench', text: '開局就學會「冷板凳」。' },
+        { id: 'a2', name: '挑著學', op: 'pick2', text: '本派格一次出兩個，挑一個學。' },
+        { id: 'a3', name: '識破', op: 'deep', cell: 'caught', max: 3, text: '拆穿一手，打贏多回 1 聲望（幾級最多幾手）。' },
+        { id: 'b1', name: '有人記得', op: 'start', pick: 'p_remember', text: '開局就學會「有人記得」。' },
+        { id: 'b2', name: '地下串連', op: 'start', pick: 'p_hp', text: '開局就學會「地下串連」。' },
+        { id: 'b3', name: '熟客', op: 'start', pick: 'p_regular', text: '開局就學會「熟客」。' },
+        { id: 'c1', name: '翻箱人', soon: 'later', text: '戰利品列多翻一張。' },
+        { id: 'c2', name: '鎮店盤眼光', soon: 'apex' },
+        { id: 'c3', name: '雙唱盤', soon: 'apex' } ] },
     heresy: { name: '異端流', icon: '拆', deepCell: 'honest',
       tagline: '賭他在唬，拆穿他。', passive: '他唬你、你剛好剋中（拆穿）：多扣 1，回 2 聲望。', cost: '比星輸：多扣 1。',
       read: '賭他在唬；他少唬的時候就信。', first: '異端流：拆穿多扣 1、回 2 聲望；比星輸多扣 1。',
@@ -2661,7 +2707,17 @@
         { id: 'x_thick', name: '臉皮厚', op: 'loseFree', text: '每場第一次比星輸，不多扣。' },
         { id: 'x_dist', name: '失真', op: 'starPlus', axis: 'h', n: 1, text: '你的硬蕊 +1 星（王牌不加）。' },
         { id: 'x_crit', name: '爆擊', op: 'critSafe', n: 1, second: true, text: '拆穿再多扣 1，比星輸不再多扣。' } ],
-      priority: ['x_crit', 'x_dist', 'x_crack', 'x_echo', 'x_thick'] },
+      priority: ['x_crit', 'x_dist', 'x_crack', 'x_echo', 'x_thick'],
+      tree: [
+        { id: 'a1', name: '先聲奪人', op: 'start', pick: 'x_dist', text: '開局就學會「失真」。' },
+        { id: 'a2', name: '挑著學', op: 'pick2', text: '本派格一次出兩個，挑一個學。' },
+        { id: 'a3', name: '破例', op: 'deep', cell: 'honest', max: 3, text: '信對一手，打贏多回 1 聲望（幾級最多幾手）。' },
+        { id: 'b1', name: '臉皮厚', op: 'start', pick: 'x_thick', text: '開局就學會「臉皮厚」。' },
+        { id: 'b2', name: '刺蝟', op: 'spine', text: '每場第一次比星輸，他的品味不加。' },
+        { id: 'b3', name: '圈內人', op: 'tieHeal', n: 1, text: '同色平手回 1 聲望（每場一次）。' },
+        { id: 'c1', name: '地下名店', soon: 'market', text: '硬蕊 5 星唱片八折（只動錢）。' },
+        { id: 'c2', name: '鎮店盤眼光', soon: 'apex' },
+        { id: 'c3', name: '雙唱盤', soon: 'apex' } ] },
     // 畫面字（ui.js：標題旗標章、開局派系卡、升級面板第 4 格、頂欄圖示的本派說明、我的狀態；{x} 由畫面代入）
     ui: {
       badge: '流派試做', badgeBoth: '流派＋頂點卡試做',                 // 標題旗標章（?fac=1）；≤600px 跟 ?apex=1 合成一顆
@@ -2676,7 +2732,18 @@
       pickGo: '就這一派',                                                // 開局派系卡的大鈕（棒二介面）
       profFar: '熟練 Lv{n}・最遠第 {far} 位', profOnly: '熟練 Lv{n}',    // 派系卡最下面那行（這一派打過最遠的那一趟；還沒打過＝只寫熟練）
       swapped: '跟流派一起試，這張換過能力',                             // ?fac=1&apex=1：換過能力的頂點卡（挑王牌面板、唱片資訊）
-      apexMixed: '頂點卡跟流派一起試：有幾張還沒換能力'                 // 退回「只標示」時（apexSwap.on false）標題旗標章下的小字
+      apexMixed: '頂點卡跟流派一起試：有幾張還沒換能力',                // 退回「只標示」時（apexSwap.on false）標題旗標章下的小字
+      // 第 D 波棒三派樹（樂歷頁「派樹」分頁，?fac=1；SPEC-D §3.6–§3.7；engine treeList／treePoints／treeBuy／treeSell／treeRespec）。{x} 由畫面代入
+      treeTab: '派樹', treePoints: '派點 {n}', treeOf: '{title}的派樹',
+      treePath: { a: '本派', b: '代價', c: '收藏' },                     // 三條路線（甲／乙／丙）
+      treeCost: '{n} 點', treeLv: '{k}／{max} 級', treeHave: '已點',
+      treeNeed: '先點「{name}」', treeProf: '熟練 Lv{n} 開', treeNoPts: '派點不夠',
+      treeSoon: '之後開放', treeSoonApex: '鎮店盤上線後開', treeSoonMarket: '市集上線後開',
+      treeRespec: '全部重配（免費）', treeHow: '熟練每升一級，多 1 派點。',
+      treeOffNote: '關掉樂歷時，派樹也不算。',                           // 關樂歷那一趟（talentArgs／treeArgs 都回 {}）
+      treeStart: '開局就有：{list}',                                     // 本派說明、我的狀態：派樹開局給的本派選項
+      deepWin: '{name}：多回 {n} 聲望',                                   // 打贏那場深耕多回的（finishFight 回 deep {name, n}）
+      pleaHp: '老客人的面子：聲望 +{n}'                                   // 說情重打那場開打（choose retry 的 effect pleaHp）
     }
   };
   C.factionsTag = '新';
