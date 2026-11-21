@@ -4849,7 +4849,7 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
       const st = EN.encStart(r, K, so), d = st.duel;
       if (J(r) !== j0 || r.duel !== null) { bad++; info.push([nm, 'run changed']); }
       // 等效位數＝pos＋熟客自己的 off＋content.encounter.posAdd（下半）；短局比例照 content 讀（不寫死 0.6）
-      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(XS.posAdd, r.pos)), view = EN.encView(K, who);   // 位移可以照位數走（p2b）
+      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(XS.posAdd, r.pos) + EN.sparTierAt(XS, r.tier, r.pos)), view = EN.encView(K, who);   // 位移可以照位數走（p2b）；試煉階級再加（合併審查 F2；這裡第 0 階＝0）
       if (EN.sparPos(r, K, who) !== posEff || EN.sparPos(r, K, who, true) !== Math.max(1, r.pos + REG[who].enc.off)) { bad++; info.push([nm, 'sparPos']); }
       const e0 = EN.enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
       const sd = EN.sparDeck(view, who, posEff, { main: REG[who].enc.main, tier: r.tier });
@@ -4949,6 +4949,46 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     const KC = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: K }) });
     for (const pos of [6, 11, 23, 40]) for (const who of RIDS) { const r = { pos }; if (EN.sparPos(r, KC, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(K, pos)) || EN.sparPos(r, KC, who, true) !== Math.max(1, pos + REG[who].enc.off)) bad++; }
     ok(bad === 0, 'spar posAdd: integer or [[pos, add]…] knots (linear between, clamped at the ends, rounded); invalid → 0; sparPos uses the add at this pos', bad); }
+  // 試煉階級的位移（合併審查 F2）：encounter.tierAdd＝整數（第 1 階起都一樣）或 [[第幾階, 位移], …] 折線（同 posAdd）；第 0 階一律 0；base 不加；
+  //   encDef 的客人＝enemyDef 在加過的等效位數（試煉曲線照 run.tier）；出貨 content 第 0 階的切磋跟沒有 tierAdd 這個鍵逐字相同
+  { let bad = 0; const info = [];
+    const CN = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter) }); delete CN.encounter.tierAdd; delete CN.encounter.tierFrom;   // 沒有這兩個鍵＝改之前
+    const withT = (K, x) => Object.assign({}, K, { encounter: Object.assign({}, K.encounter, { tierAdd: x }) }), cfT = x => EN.sparCfg(withT(CN, x));
+    // 出貨：第 7 階以前、第 10 位以前都是 0（＝改之前）；第 8 階起、第 11 位起才加
+    const XS0 = EN.sparCfg(CE);
+    if (XS0.tierFrom !== 11 || [0, 1, 4, 7].some(t => EN.sparTierAt(XS0, t, 40) !== 0) || [8, 13].some(t => EN.sparTierAt(XS0, t, 10) !== 0 || !(EN.sparTierAt(XS0, t, 11) > 0)) || EN.sparTierAt(XS0, 13, 11) < EN.sparTierAt(XS0, 8, 11)) { bad++; info.push('shipping'); }
+    const KT = [[4, 2], [8, 6], [13, 10]], want = { 0: 0, 1: 2, 4: 2, 6: 4, 8: 6, 10: 8, 11: 8, 12: 9, 13: 10, 20: 10 };
+    for (const [t, a] of Object.entries(want)) if (EN.sparTierAt(cfT(KT), +t) !== a) { bad++; info.push(['knot', t]); }
+    if (EN.sparTierAt(cfT(5), 0) !== 0 || EN.sparTierAt(cfT(5), 3) !== 5 || EN.sparTierAt(cfT(undefined), 8) !== 0 || EN.sparTierAt(EN.sparCfg(CW), 8) !== EN.sparTierAt(EN.sparCfg(C0), 8)) { bad++; info.push('int／none'); }
+    for (const x of [[[4, 2], [4, 3]], [[0, 1]], [[4, 100]], [[4, 1.5]], [], 'x', 100, 2.5]) if (cfT(x).tierAdd !== 0) { bad++; info.push(['invalid', J(x)]); }
+    if (J(cfT(KT).tierAdd) !== J(KT) || cfT(KT).tierAdd === KT) { bad++; info.push('copy'); }
+    const KC = withT(CN, KT), X0 = EN.sparCfg(KC);
+    // tierFrom：第幾位起才加（沒給＝1；不合法＝1）
+    const KF = Object.assign({}, KC, { encounter: Object.assign({}, KC.encounter, { tierFrom: 11 }) });
+    if (X0.tierFrom !== 1 || EN.sparCfg(KF).tierFrom !== 11 || [0, -2, 1.5, 'x'].some(v => EN.sparCfg(Object.assign({}, KC, { encounter: Object.assign({}, KC.encounter, { tierFrom: v }) })).tierFrom !== 1)) { bad++; info.push('tierFrom cfg'); }
+    if (EN.sparTierAt(EN.sparCfg(KF), 8, 10) !== 0 || EN.sparTierAt(EN.sparCfg(KF), 8, 11) !== 6 || EN.sparTierAt(EN.sparCfg(KF), 0, 40) !== 0) { bad++; info.push('tierFrom at'); }
+    for (const tier of [0, 1, 4, 8, 13]) for (const pos of [6, 10, 11, 23, 40]) for (const who of RIDS) {
+      const r = { pos, tier }, base = Math.max(1, pos + REG[who].enc.off);
+      if (EN.sparPos(r, KC, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(X0.posAdd, pos) + want[tier]) || EN.sparPos(r, KC, who, true) !== base) { bad++; info.push(['sparPos', tier, pos, who]); }
+      if (EN.sparPos(r, KF, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(X0.posAdd, pos) + (pos >= 11 ? want[tier] : 0)) || EN.sparPos(r, KF, who, true) !== base) { bad++; info.push(['sparPos from', tier, pos, who]); }
+    }
+    let real = 0;
+    for (let s = 0; s < 8; s++) {
+      const tier = [0, 4, 8, 13][s % 4], r = fightRun('tadd-' + s, KC, { tier, ace: EN.TIERS[s % 3] }); EN.jumpTo(r, KC, s < 4 ? 6 + s : 7 + 6 * s);
+      // tierFrom 11：第 11 位以前的切磋客人跟沒有 tierAdd 逐字相同；之後＝tierFrom 1 的那位
+      for (const who of RIDS) if (J(EN.encDef(r, KF, who)) !== J(EN.encDef(r, r.pos < 11 ? CN : KC, who))) { bad++; info.push(['tierFrom encDef', s, r.pos, who]); }
+      // 出貨 content：第 7 階以前、第 10 位以前的切磋客人跟沒有這兩個鍵逐字相同
+      if (tier <= 7 || r.pos < 11) for (const who of RIDS) if (J(EN.encDef(r, CE, who)) !== J(EN.encDef(r, CN, who))) { bad++; info.push(['shipping same', s, who]); }
+      for (const who of RIDS) {
+        const posEff = EN.sparPos(r, KC, who), e0 = EN.enemyDef(EN.encView(KC, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+        const d = EN.encDef(r, KC, who);
+        if (r.tier !== tier || posEff !== Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(X0.posAdd, r.pos) + want[tier]) || d.taste !== e0.taste || d.atk !== e0.atk || d.def !== e0.def || d.q !== e0.q) { bad++; info.push(['encDef', tier, who]); }
+        // 第 0 階：有沒有 tierAdd 這個鍵，切磋客人逐字相同
+        if (tier === 0 && J(d) !== J(EN.encDef(r, CN, who))) { bad++; info.push(['tier0', who]); }
+        real++;
+      }
+    }
+    ok(bad === 0 && real === 8 * RIDS.length, 'spar tierAdd (merge review F2): integer or [[tier, add]…] knots like posAdd, only from pos tierFrom (default 1); tier 0 → 0 (same as no key); base adds neither; encDef guest = enemyDef at pos＋off＋posAdd＋tierAdd with the trial curve of run.tier; shipping: tier ≤7 or pos ≤10 = same as no key', { bad, info: info.slice(0, 4) }); }
   // encounter.ace（試調旗標，出貨 false＝規格「不帶王牌」）：true＝照一般客人在 posEff 的機率帶王牌（＝enemyDef 給的那張）
   { const CEA = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { ace: true }) }); let bad = 0, withAce = 0;
     for (let s = 0; s < 40; s++) {

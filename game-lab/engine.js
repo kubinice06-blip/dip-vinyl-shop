@@ -3550,7 +3550,7 @@
   const SPAR_KEYS = ['offered', 'accepted', 'won', 'lost', 'took', 'cash'];
   const SPAR_MODES = ['shelf', 'bag'];
   const SPAR_POLICIES = ['always', 'never', 'smart', 'cash'];
-  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true, ace: false, posAdd: 0, deckAt: 'eff' };
+  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true, ace: false, posAdd: 0, tierAdd: 0, tierFrom: 1, deckAt: 'eff' };
   // content.encounter（沒給的欄位用 SPAR）；slots 只收一般客人位（菁英、藏家位不出：藏家那輪的寶箱不會跟切磋戰利品列連出）
   //   posAdd（下半，主線 11-21 裁定）＝切磋強度的位移：等效位數 posEff＝max(1, run.pos＋熟客自己的 off（−2～+2，個性差）＋位移)；
   //     整數＝全程同一個位移（|x| ≤ 99）；或照位數走的折線 [[第幾位, 位移], …]（第幾位遞增、位移 |x| ≤ 99、最多 12 個點；兩點之間線性內插後四捨五入、頭尾之外照頭尾）——
@@ -3580,6 +3580,8 @@
     X.p = typeof X.p === 'number' && X.p >= 0 ? Math.min(1, X.p) : SPAR.p;
     X.short = typeof X.short === 'number' && X.short > 0 ? Math.min(1, X.short) : SPAR.short;
     X.posAdd = sparAddOk(X.posAdd) ? (Array.isArray(X.posAdd) ? X.posAdd.map(k => k.slice()) : X.posAdd) : SPAR.posAdd;
+    X.tierAdd = sparAddOk(X.tierAdd) ? (Array.isArray(X.tierAdd) ? X.tierAdd.map(k => k.slice()) : X.tierAdd) : SPAR.tierAdd;
+    X.tierFrom = Number.isInteger(X.tierFrom) && X.tierFrom >= 1 ? X.tierFrom : SPAR.tierFrom;
     X.deckAt = ['base', 'pos'].includes(X.deckAt) ? X.deckAt : 'eff';   // 他的牌組照哪個位數補星：eff＝等效位數（含位移與 off）、base＝pos＋off、pos＝第幾位（＝同一位的主線一般客人）
     X.slots = (Array.isArray(X.slots) ? X.slots : SPAR.slots).filter((k, i, a) => Number.isInteger(k) && POS_CLASSES[k] === 'normal' && a.indexOf(k) === i);
     return X;
@@ -3655,11 +3657,19 @@
     if (lines.line) en.line = lines.line;
     return Object.assign({}, content, { enemies: Object.assign({}, content.enemies, { [who]: en }), lines: Object.assign({}, content.lines, { [who]: lines }) });
   }
-  // 等效位數：max(1, run.pos＋off[who]＋位移)（off＝棋力個性差：小魚 −2 … 周姐 +2；位移＝content.encounter.posAdd 在這一位的值（sparAddAt），強度用）。
-  //   base true＝不加位移（＝規格 §7.4 的 posEff；encLoot 補牌池用：獎勵不跟著強度旋鈕變）
+  // 試煉階級的位移（合併審查 F2）：content.encounter.tierAdd 在第 tier 階的值——寫法同 posAdd（整數＝第 1 階起都一樣；折線 [[第幾階, 位移], …] 兩點之間線性內插），
+  //   只在第 tierFrom 位起加（pos 沒給＝不看位數）；第 0 階一律 0（跟沒有這兩個鍵逐字相同）。為什麼：試煉的「小氣／更小氣」與菁英、藏家加聲望只壓主線
+  //   （打贏少回、打過藏家的累積傷），切磋開打一律 ceil(short×maxHp) 吃不到 → 階數越高、越後面，切磋相對同段主線越好打
+  //   （n4000 會讀的：第 8 階 16–45 位 +4.5／+5.5／+4.6、第 13 階 11–15 位 +7.3；LS5 分段上限 +4）；第 6–10 位每一階都沒漂（第 13 階一般玩家已經 −4.7）＝從第 11 位起補
+  function sparTierAt(X, tier, pos) { return (tier | 0) > 0 && (pos == null || (pos | 0) >= X.tierFrom) ? sparAddAt(X.tierAdd, tier | 0) : 0; }
+  // 等效位數：max(1, run.pos＋off[who]＋位移＋階級位移)（off＝棋力個性差：小魚 −2 … 周姐 +2；位移＝content.encounter.posAdd 在這一位的值（sparAddAt），強度用；
+  //   階級位移＝content.encounter.tierAdd 在 run.tier 的值、第 tierFrom 位起（sparTierAt；第 0 階 0））。
+  //   base true＝兩種位移都不加（＝規格 §7.4 的 posEff；encLoot 補牌池用：獎勵不跟著強度旋鈕變）
   function sparPos(run, content, who, base) {
     const R = content.regulars && content.regulars[who], off = R && R.enc && Number.isInteger(R.enc.off) ? R.enc.off : 0;
-    return Math.max(1, (run.pos | 0) + off + (base ? 0 : sparAddAt(sparCfg(content).posAdd, run.pos)));
+    if (base) return Math.max(1, (run.pos | 0) + off);
+    const X = sparCfg(content);
+    return Math.max(1, (run.pos | 0) + off + sparAddAt(X.posAdd, run.pos) + sparTierAt(X, run.tier, run.pos));
   }
   // sparDeck(content, who, posEff, {main, tier}) -> [cards]：熟客的牌組（主線 11-21 裁定「牌組身分跟強度分開」）——一律他自己 C.regulars[who].enc.deck 那 7 張、
   //   照原順序、不換牌（trialDeck 的總星下限會把他的牌換光＝戰利品不再是他的唱片）；星數照等效位數的 trialDeck 規則「只補星」：
@@ -4873,7 +4883,7 @@
     TREE_OPS, TREE_FX_MAX, TREE_FX_ADD, treeNodes, treeNode, treeCost, treePoints, treeWhy, treeBuy, treeSell, treeRespec, treeArgs, treeList, treeFixOne, facTalOf, treeLv3,
     TRIAL_PASS, TRIAL_OPEN_FROM, addMerge, trialTiers, trialFix, trialPick, trialMul, trialRecord,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar,
-    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparAddAt, sparMode, sparPos, sparDeck, SPAR_LINE_IDS, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
+    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparAddAt, sparTierAt, sparMode, sparPos, sparDeck, SPAR_LINE_IDS, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

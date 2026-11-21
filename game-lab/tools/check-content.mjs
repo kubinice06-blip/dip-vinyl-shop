@@ -813,9 +813,14 @@ export function crowdProblems(C, E) {
   const PA = EN.posAdd, paOk = !('posAdd' in EN) || (Number.isInteger(PA) && PA >= 0 && PA <= 60) ||
     (Array.isArray(PA) && PA.length >= 2 && PA.length <= 12 && PA.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && k[0] <= 200 && Number.isInteger(k[1]) && k[1] >= 0 && k[1] <= 60 && (i === 0 || k[0] > PA[i - 1][0])));
   ok(paOk, 'LD1：C.encounter.posAdd（切磋強度的位移）要是 0–60 的整數，或 [[第幾位, 位移], …] 折線（第幾位遞增、位移 0–60）：' + JSON.stringify(PA));
+  // tierAdd（合併審查 F2）：試煉第 k 階切磋客人再多幾位等效位數（第 0 階一律 0）——0–60 的整數（第 1 階起都一樣）或 [[第幾階, 位移], …] 折線（第幾階 1–試煉階數、遞增、位移 0–60、2–12 個點）
+  const TA = EN.tierAdd, nT = ((C.trial || {}).tiers || []).length, taOk = !('tierAdd' in EN) || (Number.isInteger(TA) && TA >= 0 && TA <= 60) ||
+    (Array.isArray(TA) && TA.length >= 2 && TA.length <= 12 && TA.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && k[0] <= nT && Number.isInteger(k[1]) && k[1] >= 0 && k[1] <= 60 && (i === 0 || k[0] > TA[i - 1][0])));
+  ok(taOk, 'LD1：C.encounter.tierAdd（試煉階級的切磋位移）要是 0–60 的整數，或 [[第幾階, 位移], …] 折線（第幾階 1–' + nT + ' 遞增、位移 0–60）：' + JSON.stringify(TA));
+  ok(!('tierFrom' in EN) || (Number.isInteger(EN.tierFrom) && EN.tierFrom >= 1 && EN.tierFrom <= 200), 'LD1：C.encounter.tierFrom（第幾位起加試煉階級的切磋位移）要是 1–200 的整數：' + EN.tierFrom);
   ok(EN.short >= 0.5 && EN.short <= 0.9, 'LD1：C.encounter.short（短局比例）要在 0.5–0.9（太短一兩手就打完、1＝不是短局）：' + EN.short);
   ok(!('ace' in EN) || typeof EN.ace === 'boolean', 'LD1：C.encounter.ace（試調旗標：照一般客人機率帶王牌）要是 true／false');
-  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'ace', 'deckAt'];
+  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'tierAdd', 'tierFrom', 'ace', 'deckAt'];
   ok(Object.keys(EN).every(k => ENC_KEYS.includes(k)), 'LD1：C.encounter 有不認得的鍵（engine sparCfg 不讀）：' + Object.keys(EN).filter(k => !ENC_KEYS.includes(k)).join(' '));
   ok(!('cash' in EN) && !('skipCash' in EN) && ((C.waveC || {}).loot || {}).skipCash > 0, 'LD1：切磋不收改拿的錢＝C.waveC.loot.skipCash（不另設）');
   // C.crowdUi 第一階段三句

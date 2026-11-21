@@ -2367,15 +2367,17 @@
     //   棒三審查：深耕跨場累積「記了 h／per 手」＋下一行說一手是什麼；這一趟帶著的派樹格（開局就會的本派選項列在本派選項那段）
     if (f.deep && FU('deepNow')) { rows.push(FU('deepNow', { name: facDeepName({ ace: f.tier }), h: f.deep.carry ? f.deep.acc | 0 : f.deep.hands | 0, per: f.deep.per | 0 }));
       var dh = (FAC().ui || {}).deepHow; if (dh && dh[f.deep.cell]) rows.push(dh[f.deep.cell]); }
-    var fst = r && r.fac && r.duel === d ? facStartNames(r) : [];
+    //   合併審查 F1：活店切磋那盤不是 run.duel（encStart 用 run 的拷貝開局），但本派選項、派樹照 run.fac 生效 → 同一位（duel.spar.pos＝r.pos）也列；深耕切磋不記（view 不給 deep）
+    var own = !!(r && r.fac && d && (r.duel === d || (d.spar && d.spar.pos === r.pos)));
+    var fst = own ? facStartNames(r) : [];
     if (fst.length) rows.push(FU('treeStart', { list: fst.join('、') }));
-    var tm = r && r.fac && r.duel === d ? facTreeNames(r) : [];
+    var tm = own ? facTreeNames(r) : [];
     if (tm.length && FU('treeMine')) rows.push(FU('treeMine', { list: tm.join('、') }));
     var ax = (C.aceAxis || {})[f.tier] || '';
     // 審查 棒二：本派選項改掉代價（有人記得＝被剋不多扣、爆擊＝比星輸不多扣）→ 代價那行劃掉、標「已取消」（看這場的 fx，不是派別原文）；
     //   拿過的本派選項逐項列「名字：說明」（加多扣、回更多、每場第一次不扣…照實寫，不再只列名字）
     var fx = f.fx || {}, fx0 = D0.fx || {}, costOff = ['tieCost', 'counteredCost', 'loseCost'].some(function (k) { return fx0[k] > 0 && !(fx[k] > 0); });
-    var mine = r && r.fac && r.duel === d ? (D0.picks || []).filter(function (x) { return x && ((r.fac.picks || {})[x.id] > 0); }) : null;
+    var mine = own ? (D0.picks || []).filter(function (x) { return x && ((r.fac.picks || {})[x.id] > 0); }) : null;
     var html = '<h2><span class="fi ' + esc(ax) + '">' + esc(D0.icon || '') + '</span>' + esc(FU('infoTitle', { name: D0.name || '', icon: D0.icon || '' })) + '</h2>' +
       (D0.tagline ? '<p class="fx-tag">' + facNw(D0.tagline) + '</p>' : '') +
       '<p class="fx-pas"><b>' + esc(FU('passive')) + '</b>' + facNw(D0.passive) + '</p>' +
