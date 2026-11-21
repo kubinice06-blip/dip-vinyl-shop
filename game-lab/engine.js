@@ -667,12 +667,25 @@
     const tal = src && src.fac && isPlain(src.fac.tal) ? src.fac.tal : null;
     if (tal) for (const id of Object.keys(tal)) {
       const N = treeNode(content, tier, id), k = nonNeg(tal[id]); if (!treeLive(N) || !k) continue;
-      if (N.op === 'deep') { fx.deep = Math.min(treeMaxOf(N), k); fx.deepCell = N.cell === 'caught' ? 'caught' : 'honest'; if (N.per > 1) fx.deepPer = N.per | 0; }   // per：幾手算一次（沒寫＝1）
+      if (N.op === 'deep') {                                     // 深耕：per＝幾手回 1（陣列＝第 1／2／3 級各幾手；數字＝每級一樣；沒寫＝1）；acc＝跨場累積（run.fac.deepAcc）
+        fx.deep = Math.min(treeMaxOf(N), k); fx.deepCell = N.cell === 'caught' ? 'caught' : 'honest';
+        const per = deepPerOf(N, fx.deep); if (per > 1) fx.deepPer = per;
+        if (N.carry) { fx.deepCarry = 1; fx.deepAcc = nonNeg(src.fac.deepAcc); }
+      }
       else if (N.op === 'spine') fx.spine = N.n > 0 ? N.n | 0 : 99;   // 刺蝟：他的品味少算 n（沒寫 n＝整個不加）
       else if (N.op === 'tieHeal') fx.tieHeal = Math.max(1, nonNeg(N.n));
       else if (N.op === 'pick2') fx.pick2 = 1;
     }
     return fx;
+  }
+  // 深耕這場（P＝對決裡的你 st.p）：{carry, k, cell, per, hands（這場記到幾手）, acc（含這場的累積；沒 carry＝hands）, got（打贏會多回幾）, left（打贏後留到下一場的手數）}
+  //   carry（content 節點 carry:true）＝跨場累積：每記滿 per 手、打贏那場多回 1；沒 carry＝舊規則：這一場 min(級, ⌊手數÷per⌋)
+  function deepNow(P) {
+    const fx = (P && P.fx) || {}, N = (P && P.facN) || {}, cell = fx.deepCell === 'caught' ? 'caught' : 'honest';
+    const k = fx.deep | 0, per = Math.max(1, fx.deepPer | 0), hands = N[cell] | 0, carry = !!fx.deepCarry;
+    if (!carry) return { carry, k, cell, per, hands, acc: hands, got: Math.min(k, Math.floor(hands / per)), left: 0 };
+    const acc = nonNeg(fx.deepAcc) + hands, got = Math.floor(acc / per);
+    return { carry, k, cell, per, hands, acc, got, left: acc - got * per };
   }
   // 這一級（lv＝要選的那一級）有沒有本派格：每 levelEvery 級一次（Lv5、10、15…）；run 沒有 fac 或 levelEvery 0＝沒有
   function facDue(run, content, lv) {
@@ -728,6 +741,8 @@
   function treeNode(content, ace, id) { return treeNodes(content, ace).find(x => x.id === id) || null; }
   const treeLive = N => !!N && !N.soon && TREE_OPS.includes(N.op);
   const treeMaxOf = N => N && N.op === 'deep' ? Math.max(1, N.max | 0) : 1;
+  // 深耕第 k 級：幾手回 1（N.per 陣列＝逐級；數字＝每級一樣；沒寫＝1）
+  const deepPerOf = (N, k) => { const P = N && N.per; const v = Array.isArray(P) ? P[Math.max(0, Math.min(P.length, k | 0) - 1)] : P; return Math.max(1, v | 0); };
   function treeCostCfg(content) { const F = facCfg(content) || {}, T = isPlain(F.treeCost) ? F.treeCost : {}; return { layer: Array.isArray(T.layer) ? T.layer : [1, 2, 2], more: T.more != null ? nonNeg(T.more) : 1 }; }
   // 第 k 級要幾點（沒有這個節點、之後開放、超過上限＝Infinity）
   function treeCost(content, ace, id, k) {
@@ -1504,7 +1519,7 @@
       const fx = P.fx, N = P.facN || {};
       out.fac = { tier: P.fac, icon: P.facIcon || null, fx: clone(fx), n: { tie: N.tie | 0, countered: N.countered | 0, lose: N.lose | 0, leech: N.leech | 0, thorn: N.thorn | 0 },
         left: { leech: fx.leech ? Math.max(0, (fx.leechMax | 0) - (N.leech | 0)) : null, thorn: fx.thorn > 0 ? Math.max(0, (fx.thornMax | 0) - (N.thorn | 0)) : null } };
-      if (fx.deep > 0) out.fac.deep = { k: fx.deep | 0, cell: fx.deepCell, per: Math.max(1, fx.deepPer | 0), hands: N[fx.deepCell] | 0, got: Math.min(fx.deep | 0, Math.floor((N[fx.deepCell] | 0) / Math.max(1, fx.deepPer | 0))) };   // 棒三派樹深耕：這場已經記到幾手（打贏多回 got）；沒有樹＝不多這個鍵
+      if (fx.deep > 0 && !st.spar) { const D = deepNow(P); out.fac.deep = { k: D.k, cell: D.cell, per: D.per, hands: D.hands, got: D.got }; if (D.carry) { out.fac.deep.carry = true; out.fac.deep.acc = D.acc; } }   // 棒三派樹深耕：這場記到幾手（跨場＝acc 累積）、打贏多回 got；沒有樹＝不多這個鍵；切磋（活店 duel.spar：打贏不回聲望）不秀
       if (fx.tieHeal > 0) out.fac.n.tieHeal = N.tieHeal | 0;                                                                 //   圈內人用過了沒（每場一次）
     }
     return out;
@@ -2527,6 +2542,7 @@
     const met = uniq(duel.e.thrown.map(c => c.id));
     for (const id of met) if (!S.met.includes(id)) S.met.push(id);
     run.duel = null; run.duelEnemy = null;
+    const pleaUp = run.pleaUp | 0; if ('pleaUp' in run) delete run.pleaUp;   // 第 D 波棒三「老客人的面子」這場加了幾（choose retry 記；打完就清）
     let earn = 0, heal = 0, ups = 0, aceWon = null, aceFirst = false, aceNew = false, aceUnlock = null, extra = null, lowHeal = 0, deepHeal = 0;
     if (duel.p.fac && duel.stats.fac) { if (!S.fac || typeof S.fac !== 'object') S.fac = {}; S.fac.fights = (S.fac.fights | 0) + 1; for (const k of Object.keys(duel.stats.fac)) S.fac[k] = (S.fac[k] | 0) + duel.stats.fac[k]; }   // 第 D 波棒二：一趟的派別觸發累計（run.stats.fac；sim、上線後記）
     if (win) {
@@ -2548,8 +2564,10 @@
         let winHeal = duel.apexMode && apexCfg(content) && Number.isInteger(apexCfg(content).winHeal) ? apexCfg(content).winHeal : T.heal;   // 頂點卡試做：回 winHeal
         if (T.healAdd || (T.healAddNormal && cls === 'normal')) winHeal = Math.max(0, winHeal + (T.healAdd | 0) + (cls === 'normal' ? T.healAddNormal | 0 : 0));   // 第 D 波棒三試煉階級「小氣」（add:{healAdd:−1}；§14-5 備案 healAddNormal＝只有一般客人）：兩種模式都少回（SPEC-D §5.2、CRITIQUE 2.2）
         if (duel.p.fac && duel.p.fx && duel.p.fx.lowHeal > 0 && duel.p.hp * 2 < duel.p.max) { lowHeal = duel.p.fx.lowHeal | 0; winHeal += lowHeal; }   // 第 D 波棒二 冷門「熟客」：聲望不到一半時打贏多回
-        if (duel.p.fac && duel.p.fx && duel.p.fx.deep > 0) {      // 第 D 波棒三派樹「深耕」（口碑／識破／破例）：這場信對（或拆穿）幾手，打贏多回 min(級, ⌊手數÷per⌋)
-          deepHeal = Math.min(duel.p.fx.deep | 0, Math.floor((((duel.p.facN || {})[duel.p.fx.deepCell === 'caught' ? 'caught' : 'honest']) | 0) / Math.max(1, duel.p.fx.deepPer | 0)));
+        if (duel.p.fac && duel.p.fx && duel.p.fx.deep > 0) {      // 第 D 波棒三派樹「深耕」（口碑／識破／破例）
+          const D = deepNow(duel.p);                               //   carry＝跨場累積：記滿 per 手、打贏那場多回 1（棒三審查：一場最多 3 手，舊的「一場記到 2k 手」第 2、3 級永遠用不到）；沒 carry＝舊規則（這一場 min(級, ⌊手數÷per⌋)）
+          deepHeal = D.got;
+          if (D.carry) run.fac.deepAcc = D.left;
           if (deepHeal > 0) { winHeal += deepHeal; if (S.fac && typeof S.fac === 'object') S.fac.deep = (S.fac.deep | 0) + deepHeal; }
         }
         run.hp = Math.min(run.maxHp, Math.max(1, duel.p.hp) + winHeal);   // 打贏回 3（不超過上限）
@@ -2596,7 +2614,8 @@
       settle(run, content);
     } else {
       if (!prologue) run.streak = 0;
-      run.hp = run.hpIn;                                      // 輸了不寫回：說情從開打前的聲望重打
+      run.hp = pleaUp ? Math.max(1, run.hpIn - pleaUp) : run.hpIn;   // 輸了不寫回：說情從開打前的聲望重打（棒三審查：說情重打那場加的「老客人的面子」不算進開打前，再說情才不會疊）
+      if (duel.p.fac && duel.p.fx && duel.p.fx.deepCarry && run.fac) run.fac.deepAcc = deepNow(duel.p).acc;   // 深耕跨場累積：輸的那場記到的手也算（下一場打贏才回）
       if (prologue) run.pending = { type: 'retry', enemyId, free: true };
       else if (run.safety && pos === 1) { run.safety = false; wcStats(run).safety++; run.pending = { type: 'retry', enemyId, free: true, safety: true, pos }; }   // 第 C 波新手保底：第 1 位輸了免費重打一次（不吃說情）
       else if (run.retryLeft > 0) run.pending = { type: 'retry', enemyId, free: false, pos };
@@ -3603,7 +3622,7 @@
         S.retries++; run.pending = null; run.hp = run.hpIn;          // 裁定 8：同一位、同一副牌、聲望回到開打前
         effects.push(p.safety ? { retry: p.enemyId, free: true, safety: true } : p.plea ? { retry: p.enemyId, free: false, plea: true } : { retry: p.enemyId, free: !!p.free });   // 第 C 波新手保底、第 D 波備用說情（retryFlow 分支）
         const PH = !p.free && run.fac ? facTalHas(run, content, 'pleaHp') : null;   // 第 D 波棒三派樹「老客人的面子」：說情重打（這一輪的、備用的）那場開打聲望 +n（不超過上限）
-        if (PH) { const was = run.hp; run.hp = Math.min(run.maxHp, run.hp + nonNeg(PH.n)); if (run.hp > was) effects[effects.length - 1].pleaHp = run.hp - was; }
+        if (PH) { const was = run.hp; run.hp = Math.min(run.maxHp, run.hp + nonNeg(PH.n)); if (run.hp > was) { effects[effects.length - 1].pleaHp = run.hp - was; run.pleaUp = run.hp - was; } }   // pleaUp：startFight 會把加過的寫進 hpIn，再輸一次要扣回來（finishFight）
         return { ok: true, effects };
       }
       case 'end': {

@@ -1269,72 +1269,27 @@ body.lb-tune-open{overflow:hidden;}
 .tierrow .tr-mid b{font-size:13px;font-weight:700;}
 .tierrow .tr-mid small{font:700 10px var(--zh);color:var(--gold-ink);border:1px solid var(--gold);background:var(--cream);padding:0 4px;line-height:15px;}
 .tierrow[data-k="0"] .tr-mid .chip{border-color:#bbb;}
-.lb-foot.tiernew{cursor:pointer;display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:0 6px;margin:1px 12px 0;font-size:11px;line-height:1.35;color:#444;}   /* 一定一行（390×664 有一趟＋?apex=1 標題區零餘裕） */
+.lb-foot.tiernew{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:0 6px;margin:1px 12px 4px;font-size:11px;line-height:1.35;color:#444;}   /* 一定一行（390×664 有一趟＋?apex=1 標題區零餘裕）；只是說明、不能點（棒三審查：16 高的點擊區貼著樂歷那顆），下面留 4px 才到樂歷那顆 */
 .lb-foot.tiernew .t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.lb-foot.tiernew .tr-more{flex:none;padding:0 4px;font:700 11px var(--zh);color:var(--gold-ink);white-space:nowrap;}
+.lb-foot.tiernew .tr-more{flex:none;padding:0 2px;font:11px var(--zh);color:var(--gray2);white-space:nowrap;}
+/* 併成同一列（樂歷在左、試煉在右）：≤600px 高一律；標題擠的時候（.tight＝有一趟在打，或 ?apex=1 多一顆「跳過序章」）≤700px 高就併
+   （棒三審查：360×640、375×667、390×664 這兩種組合樂歷那行被擠出畫面）。.run＝有一趟在打：這一列選的是下一趟（小標「下一趟」）。
+   ‹ › 44×44；樂歷那顆跟 ‹ 之間 8px（棒三審查：原本 ‹ 40 寬、只隔 4px） */
 @media (max-height:600px){
-  .lb-tcx.tier{flex-direction:row;justify-content:center;align-items:center;gap:4px;margin-top:-7px;margin-bottom:-7px;}
+  .lb-tcx.tier{flex-direction:row;justify-content:center;align-items:center;gap:8px;margin-top:-7px;margin-bottom:-7px;}
   .lb-tcx.tier .cxline{order:0;margin:0;} .lb-tcx.tier .tierrow{order:1;margin:0;}
   .lb-tcx.tier .tiernew{display:none;}
   .lb-tcx.tier .cxline button{padding:0 6px;}
-  .tierrow .tr-arr{width:40px;}                        /* 40 寬＋中間那顆的框：點擊區 44 高、左右夾 4px 空隙（375 一列放得下樂歷＋試煉） */
-  .tierrow .tr-mid .chip{width:154px;height:28px;padding:0 6px;gap:4px;}
-  .tierrow .tr-mid .k.full{display:none;} .tierrow .tr-mid .k.short{display:inline;}
+  .lb-tcx.tier .tierrow .tr-mid .chip{width:146px;height:28px;padding:0 5px;gap:4px;}
+  .lb-tcx.tier .tierrow .tr-mid .k.full{display:none;} .lb-tcx.tier .tierrow .tr-mid .k.short{display:inline;}
 }
-/* 「試煉階級」面板（modal）：每一階一顆（點了＝選它）；開了的白底、選中的黑框＋「已選」、下一階灰（鎖） */
-.lb-modal .pane.trialsheet{padding:16px 16px 0;}
-.tr-sheet .sub{margin:0 0 10px;font-size:12px;line-height:1.5;color:var(--gray2);text-align:center;text-wrap:pretty;}
-.tr-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
-.tr-list .tr-it{display:flex;flex-direction:column;gap:2px;width:100%;min-height:48px;padding:7px 10px;border:1px solid var(--line);text-align:left;font-family:var(--zh);}
-.tr-list li.on .tr-it{border:2px solid var(--ink);padding:6px 9px;}
-.tr-list .hd{display:flex;align-items:center;gap:6px;}
-.tr-list .hd b{font-size:14px;letter-spacing:.04em;}
-.tr-list .hd .m{font:700 10px var(--zh);color:var(--gold-ink);border:1px solid var(--gold);background:var(--cream);padding:0 4px;line-height:15px;}
-.tr-list .hd .ck{margin-left:auto;font:700 10px var(--zh);color:#fff;background:var(--ink);padding:0 5px;line-height:16px;}
-.tr-list .tx{font-size:12px;line-height:1.45;color:#333;}
-.tr-list .rc{font-size:11px;color:var(--gray2);}
-.tr-list .rc.pass{color:var(--win);font-weight:700;}
-.tr-list li.lock .tr-it{background:#f6f6f6;color:var(--gray);cursor:default;}
-.tr-list li.lock .hd .lk{margin-left:auto;}
-.tr-list li.lock .tx{color:var(--gray);}
-/* 過場卡「開了第 k 階：…」 */
-.cx-card.tier .cx-hd.tr b{font-size:16px;line-height:1.45;}
-.cx-open.tr{color:#444;font-weight:400;font-size:12px;}
-/* 結算「第 3 階・走到」、來客條「第 R 輪」旁「第 3 階」 */
-.lb-sum li .k .tp{color:var(--gold-ink);font-weight:700;}
-.lb-night .nh .tg.tier{flex:none;font:700 10px var(--zh);color:var(--gold-ink);border:1px solid var(--gold);background:var(--cream);padding:0 4px;line-height:15px;letter-spacing:.04em;}
-/* 樂歷頁分頁「天賦｜派樹」（?fac=1）：頁頭下一列兩顆，各 44 高 */
-.cx-tabs{flex:none;display:flex;border-bottom:1px solid var(--ink);background:#fff;}
-.cx-tabs button{flex:1;min-height:44px;font:700 13px var(--zh);letter-spacing:.12em;color:var(--gray2);border-bottom:3px solid transparent;}
-.cx-tabs button.on{color:var(--ink);border-bottom-color:var(--ink);}
-/* 派樹 */
-.tr-aces{display:flex;gap:6px;margin:4px 0 8px;}
-.tr-aces button{flex:1;min-width:0;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:0 6px;border:1px solid var(--line);font:700 13px var(--zh);color:var(--gray2);white-space:nowrap;}
-.tr-aces button.on{border-color:var(--ink);color:var(--ink);background:#faf8f2;}
-.tr-aces .fi,.tr-node .fi{flex:none;width:20px;height:20px;display:grid;place-items:center;font:700 12px var(--zh);color:#fff;background:var(--ink);}
-.tr-aces .fi.c{background:var(--c);} .tr-aces .fi.o{background:var(--o);} .tr-aces .fi.h{background:var(--h);}
-.tr-head .cx-bar{margin-top:4px;}
-.tr-prof{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:2px 0 0;}
-.tr-off{margin:8px 0 0;padding:6px 8px;background:var(--cream);color:var(--cream-ink);font-size:12px;}
-.tr-path .lb-h2{margin:14px 0 2px;}
-.tr-nodes{list-style:none;margin:0;padding:0;}
-.tr-node{position:relative;align-items:flex-start;}
-.tr-node .tx{text-align:left;padding:4px 0;min-height:44px;justify-content:center;font-family:var(--zh);}
-.tr-node .nm .ly{flex:none;width:18px;height:18px;display:inline-grid;place-items:center;font:700 10px var(--mono);border:1px solid var(--line);color:var(--gray2);}
-.tr-node.have .nm .ly{background:var(--ink);border-color:var(--ink);color:#fff;}
-.tr-node .nm b{font-size:14px;}
-.tr-node .st:empty{display:none;}
-.tr-node .ds{display:none;flex-direction:column;gap:2px;margin-top:3px;font-size:12px;line-height:1.45;color:#333;}
-.tr-node.open .ds{display:flex;}
-.tr-node .ds .pk i{font-style:normal;font-weight:700;margin-right:4px;}
-.tr-node .ds .how{color:var(--gray2);font-size:11px;}
-.tr-node .ds .nw{white-space:nowrap;}
-.tr-node .pm{align-self:center;}
-.tr-node.soon .nm b,.tr-node.lock .nm b{color:var(--gray);}
-.tr-node[data-layer="2"],.tr-node[data-layer="3"]{border-top:0;}
-/* 升級面板 5 顆（派樹「挑著學」：本派格出兩個）：矮螢幕再收一點（每顆 ≥44） */
-@media (max-height:600px){
-  .lb-sheet.level .lb-opts.n5{gap:4px;}
-  .lb-sheet.level .lb-opts.n5 .lb-lvl{min-height:44px;padding-top:2px;padding-bottom:2px;}
-  .lb-sheet.level .lb-opts.n5 .lb-lvl .ds{line-height:1.3;}
+@media (max-height:700px){
+  .lb-tcx.tier.tight{flex-direction:row;justify-content:center;align-items:center;gap:8px;margin-top:-7px;margin-bottom:-7px;}
+  .lb-tcx.tier.tight .cxline{order:0;margin:0;} .lb-tcx.tier.tight .tierrow{order:1;margin:0;}
+  .lb-tcx.tier.tight .tiernew{display:none;}
+  .lb-tcx.tier.tight .cxline button{padding:0 6px;}
+  .lb-tcx.tier.tight .cxline .full{display:none;} .lb-tcx.tier.tight .cxline .short{display:inline;}
+  .lb-tcx.tier.tight .tierrow .tr-mid .chip{width:146px;height:28px;padding:0 5px;gap:4px;}
+  .lb-tcx.tier.tight .tierrow .tr-mid .k.full{display:none;} .lb-tcx.tier.tight .tierrow .tr-mid .k.short{display:inline;}
+  .lb-tcx.tier.run .tierrow .tr-mid small{display:none;}   /* 「下一趟 第 k 階」：倍率點中間看（360 寬一列放不下） */
 }

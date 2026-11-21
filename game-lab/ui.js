@@ -780,16 +780,18 @@
   function trialRowHTML() {
     var T = trialNow(), L = trialTiersNow(); if (!(T.open > 0) || !L.length) return '';
     var k = T.pick, cur = k > 0 ? L[k - 1] : null;
-    var mid = '<span class="k full">' + esc(TU('tierRow')) + '</span><span class="k short">' + esc(TU('tierShort')) + '</span>' +
+    // 有一趟在打（棒三審查）：這一列選的是「下一趟」（重新推門）的階——小標改「下一趟」；這一趟的階寫在「繼續試煉」那顆的副字（runWhere）
+    var nx = !!(save.run && !save.run.over), lab = nx ? TU('tierRowNext') : TU('tierRow');
+    var mid = '<span class="k full">' + esc(lab) + '</span><span class="k short">' + esc(nx ? lab : TU('tierShort')) + '</span>' +
       '<b>' + esc(k > 0 ? TU('tierN', { k: k }) : TU('tierZero')) + '</b>' + (k > 0 ? '<small>' + esc(TU('tierReward', { m: trialMulTx(k) })) + '</small>' : '');
-    var row = '<div class="lb-foot tierrow" data-tut="tier" data-k="' + k + '">' +
+    var row = '<div class="lb-foot tierrow' + (nx ? ' next' : '') + '" data-tut="tier" data-k="' + k + '">' +
       '<button type="button" class="tr-arr key" data-a="tierDn" aria-label="' + esc(TU('tierDn')) + '"' + (k > 0 ? '' : ' disabled') + '><span aria-hidden="true">‹</span></button>' +
-      '<button type="button" class="tr-mid key" data-a="tierInfo" aria-label="' + esc(TU('tierRow') + ' ' + (k > 0 ? TU('tierN', { k: k }) : TU('tierZero')) + '，' + TU('tierAll')) + '"><span class="chip">' + mid + '</span></button>' +   // 點擊區 44 高、看得到的框（chip）矮一點：≤600px 上下 −7 疊進留白也不壓到最遠那行
+      '<button type="button" class="tr-mid key" data-a="tierInfo" aria-label="' + esc(lab + ' ' + (k > 0 ? TU('tierN', { k: k }) : TU('tierZero')) + '，' + TU('tierAll')) + '"><span class="chip">' + mid + '</span></button>' +   // 點擊區 44 高、看得到的框（chip）矮一點：≤600px 上下 −7 疊進留白也不壓到最遠那行
       '<button type="button" class="tr-arr key" data-a="tierUp" aria-label="' + esc(TU('tierUp')) + '"' + (k < T.open ? '' : ' disabled') + '><span aria-hidden="true">›</span></button></div>';
     var nw = cur ? TU('tierNew', { text: cur.text }) : TU('tierZeroSub');
-    // 「另外 n 條 ›」＝整行點了也開面板（主要入口是上面 44 高的中間那顆；這行只是順手）
-    var more = k > 1 ? '<span class="tr-more">' + esc(TU('tierMore', { n: k - 1 })) + ' ›</span>' : '';
-    return row + '<p class="lb-foot sm tiernew" data-a="tierInfo"><span class="t">' + esc(nw) + '</span>' + more + '</p>';
+    // 「另外 n 條」：只是說明（棒三審查：原本是 16 高的金字連結、下緣貼著樂歷那顆，點偏就開錯頁）——入口只有上面 44 高的中間那顆
+    var more = k > 1 ? '<span class="tr-more">' + esc(TU('tierMore', { n: k - 1 })) + '</span>' : '';
+    return row + '<p class="lb-foot sm tiernew"><span class="t">' + esc(nw) + '</span>' + more + '</p>';
   }
   // 改了選哪一階：存 pick、標題那列與第一行最遠當場換（不重畫標題、鏡頭不動）
   function trialSetPick(k) {
@@ -2809,7 +2811,8 @@
     if (inPrologue(r)) return TU('prologue');
     if (r.pending && r.pending.type === 'draft' && r.cpFrom > 1) return TU('pos', { n: r.cpFrom }) + '・' + WU('cpWhere');   // 第 C 波：中繼點開局選秀中（pos 還是 1）
     var id = E.current(r, C), en = C.enemies[id];
-    return TU('pos', { n: r.pos }) + (en ? '・' + en.name : '');
+    var tp = (r.tier | 0) > 0 ? TU('tierTag', { k: r.tier | 0 }) + '・' : '';   // 第 D 波棒三審查：這一趟是第幾階（推門那列是「下一趟」要選的階，別混在一起）
+    return tp + TU('pos', { n: r.pos }) + (en ? '・' + en.name : '');
   }
   // 標題小籤：沒收＝今日推薦《…》、收過＝集點卡 n／7
   function dailyChip() {
@@ -2853,7 +2856,8 @@
     h += '</div>' + (dc ? '<p class="lb-foot dl-chip"><button type="button" data-a="daily">' + esc(dc) + '</button></p>' : '') +
       (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine || offNow ? '<p class="lb-foot sm info"><span class="t">' + esc(infoLine) + '</span>' + offNow + '</p>' : '') +
       // 第 D 波棒三（SPEC-D §5.4）：推門那列（試煉開了才有）跟樂歷第二行包在一起——>600px 上下兩列、≤600px 併成同一列（style.css .lb-tcx.tier；標題區不加高）
-      (trw ? '<div class="lb-tcx tier">' + trw + cxl + '</div>' : cxl) +
+      //   標題擠的時候（有一趟在打、?apex=1 多一顆跳過序章）≤700px 高就併成同一列、那一行說明不出（棒三審查：360×640、375×667、390×664 樂歷那行被擠出畫面）；run＝推門那列選的是下一趟
+      (trw ? '<div class="lb-tcx tier' + (hasRun || UI.apex ? ' tight' : '') + (hasRun ? ' run' : '') + '">' + trw + cxl + '</div>' : cxl) +
       (unl ? '<p class="lb-foot sm unl">' + lockIcon(10, true) + esc(unl) + '</p>' : '') +
       (lad ? '<p class="lb-foot sm ladder">' + esc(lad) + '</p>' : '') +
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '') +
