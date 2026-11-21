@@ -224,9 +224,10 @@
   //   （第 I 波修正）giveUpMs＝輪播抓檔等多久才算抓不到（fx 預設 2.5 秒是給對決動畫的；慢網路 1 MB 要 3 秒上下）；popWait＝第一首、隔 2 分鐘的泡泡等鏡頭停、熟客聊完最多等多久；
   //   popTapWait＝點 ♪ 時歌還在抓最多等多久（聊天中點 ♪ 不等：避開聊天泡泡擺；post 審查）
   //   （第 I 波 post 審查）第二行「藝人《專輯》」放不下：展開 mqDelay 毫秒後往左捲到尾巴，每秒 mqPxS px、最久 mqMaxS 秒（6 秒內捲完、停在尾巴）
+  //   （第 I 波第三輪審查）popChatGap＝熟客聊天收掉後自動展開再等多久（下一句、老闆接話常緊接著出來）；popHoldMax＝自動展開為了等人開口（聊天、切磋挑戰者走過來到嗆完、第一次老闆提示）最多多等多久
   C.bgm = {
     popMs: 6000, popGap: 120000, tries: 3, retryMs: 60000, idleMs: 600000, fetchMax: 30, resumeMs: 1500, fadeIn: 1200, vols: [0.3, 0.5, 0.7],
-    giveUpMs: 12000, popWait: 8000, popTapWait: 6000, mqDelay: 1100, mqPxS: 40, mqMaxS: 3.2,
+    giveUpMs: 12000, popWait: 8000, popTapWait: 6000, mqDelay: 1100, mqPxS: 40, mqMaxS: 3.2, popChatGap: 600, popHoldMax: 20000,
     ui: {
       np: '正在播放',                                       // 收音機旁泡泡第一行（♪ 正在播放）
       tapPlay: '點我放歌',                                  // 這次造訪還沒點過畫面（瀏覽器還不讓出聲）：收音機旁 ♪ 後面的字；只有這種情況才出字

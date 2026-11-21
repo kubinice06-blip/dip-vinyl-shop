@@ -4121,7 +4121,7 @@
   function sparTable(r, who, fresh) {
     var R = C.regulars[who]; if (!R) return null;
     var key = sparKey(r), look = R.look, seen = UI.atTable === key, at = stg('pos', 'f');
-    if (!UI.enc || UI.enc.key !== key) UI.enc = { key: key, who: who, pos: r.pos, phase: 'walk', waited: 0, dare: '' };
+    if (!UI.enc || UI.enc.key !== key) UI.enc = { key: key, who: who, pos: r.pos, phase: 'walk', waited: 0, dare: '', talk: 0 };
     UI.atTable = key;
     var here = at && !at.hidden && !at.outside && stg('has', 'f');
     if (seen && here) {
@@ -4134,11 +4134,11 @@
     if (!fresh) {                                                        // 重新整理、換畫面回來：直接站在對戰台等
       crowdCall('encMark', who);
       place('f', 'duelE', look); stg('door', 'close');
-      UI.enc.phase = 'table';
+      UI.enc.phase = 'table'; UI.enc.talk = Date.now() + 200 / speed() + 1000;   // 馬上要再嗆一次：「正在播放」字卡先等（npHold）
       later(function () { sparAtTable(r, key, true); }, 200);
       return true;
     }
-    UI.enc.phase = 'walk';
+    UI.enc.phase = 'walk'; UI.enc.talk = Date.now() + 8000 / speed();   // 走過去、到了嗆一句：「正在播放」字卡先等（npHold；走不到最多等這麼久）
     var h = crowdCall('handOff', who), legs = h && h.legs;
     if (legs) {                                                          // 他正在店裡：從停留點走過去（右排走上面，不從中島下面）
       stg('sprite', 'f', look); stg('sil', 'f', false);
@@ -4171,10 +4171,12 @@
     stg('emote', 'f', 'excl', 1200);
     if (!UI.enc.dare) UI.enc.dare = sparPick(who, 'encDare');
     var tries = 0;
+    UI.enc.talk = Date.now() + 1200 / speed() + 1000;                    // 1.2 秒後嗆：「正在播放」字卡先等（npHold；第 I 波第三輪審查 F4）
     var go2 = function () {
       if (UI.screen !== 'night' || !UI.enc || UI.enc.key !== key || UI.enc.phase !== 'table' || UI.going || qs('.lb-sheet.float.enc', app())) return;
-      if (sayTill() > Date.now() && tries++ < 12) { later(go2, 500 * speed()); return; }   // 老闆或店裡有人正在講：等他講完（最多 6 秒）
-      if (!crowdCall('encSay', who, UI.enc.dare)) stageSay('f', UI.enc.dare, null, Math.max(2600, sayMs(UI.enc.dare)));
+      if (sayTill() > Date.now() && tries++ < 12) { UI.enc.talk = Date.now() + 500 + 1000; later(go2, 500 * speed()); return; }   // 老闆或店裡有人正在講：等他講完（最多 6 秒）
+      UI.enc.talk = Date.now() + 1000;                                   // 聊天泡泡出來之前那一下（之後 npChat 接手）
+      if (!crowdCall('encSay', who, UI.enc.dare)) { stageSay('f', UI.enc.dare, null, Math.max(2600, sayMs(UI.enc.dare))); UI.enc.talk = Date.now() + Math.max(2600, sayMs(UI.enc.dare)) / speed(); }
       sparHint(r, key, who);
     };
     later(go2, 1200);
@@ -4183,12 +4185,15 @@
   function sparHint(r, key, who) {
     var tx = SPU('encHint', { name: (C.regulars[who] || {}).name || '' });
     if (!tx || save.seen.encHint || UI.auto) return;
+    var hold = function (ms) { if (UI.enc && UI.enc.key === key) UI.enc.talk = Math.max(UI.enc.talk || 0, Date.now() + ms); };   // 老闆這句講完之前「正在播放」字卡先等（npHold；第 I 波第三輪審查 F5：字卡剛擺好、老闆那句半拍後疊上來）
+    hold(800 / speed() + 1000);
     var tries = 0, go3 = function () {
       if (UI.screen !== 'night' || !UI.enc || UI.enc.key !== key || UI.enc.phase !== 'table' || UI.going || save.seen.encHint) return;
-      if ((sayTill() > Date.now() || qs('.lb-sheet.float', app())) && tries++ < 40) { later(go3, 500 * speed()); return; }   // 他還在講、面板開著：等
+      if ((sayTill() > Date.now() || qs('.lb-sheet.float', app())) && tries++ < 40) { hold(500 + 1000); later(go3, 500 * speed()); return; }   // 他還在講、面板開著：等
       save.seen.encHint = true; persist();
       stg('emote', 'o', 'excl', 1200);
       stageSay('o', tx, 'owner', sparHoldMs(tx) * speed());   // 停多久照聊天最後一句（§5.3；stageSay 會 ÷speed，sparHoldMs 已是真實毫秒）
+      hold(sparHoldMs(tx) + 300);
     };
     later(go3, 800);
   }
@@ -5708,7 +5713,7 @@
           var u = UI.enc && UI.enc.key === sparKey(r) ? UI.enc : null;
           if (!r.spar && !u) return null;                            // 這一趟沒有切磋（?crowd=0、開關關著、還沒開過）＝null（同第一階段的空殼）
           return { spar: r.spar ? JSON.parse(JSON.stringify(r.spar)) : null, pending: E.encPending(r), atTable: UI.atTable, sheet: !!qs('.lb-sheet.float.enc', app()),
-            ui: u ? { key: u.key, who: u.who, pos: u.pos, phase: u.phase, waited: Math.round(u.waited || 0), dare: u.dare || '' } : null,
+            ui: u ? { key: u.key, who: u.who, pos: u.pos, phase: u.phase, waited: Math.round(u.waited || 0), dare: u.dare || '', talk: u.talk || 0 } : null,
             crowd: ((crowdCall('state') || {}).enc) || null, mode: E.sparMode ? E.sparMode(SC(r)) : null, ok: sparOk(r) };
         }
       },
@@ -6258,7 +6263,8 @@
   //     「♪ 正在播放／藝人《專輯》」泡泡：第一首、點 ♪、或距離上一次展開 ≥2 分鐘又換了一張才展開，停 6 秒；試聽機、收音機面板、唱片資訊開著時不展開；
   //     位置照順序試收音機上方、左下、正左、正下，選第一個整個在鏡頭裡、不蓋小熱點（牆上封面、海報、櫃檯「正在放」）、名牌、泡泡、吐司、熟客人物矩形、底部面板的；
   //     自動展開擺不下再試一次「可以蓋小熱點、照樣不蓋人」（post 審查：360／375 上方那兩格一定撞牆上封面）；都不行＝只有小圖示（不吃掉第一首／2 分鐘的額度，8 秒內再試）；
-  //     點 ♪ 才依序放寬（不看人物 → 也不看小熱點）。鏡頭在動、熟客在聊天（自動展開）＝等；聊天中點 ♪＝避開聊天泡泡擺。
+  //     點 ♪ 才依序放寬（不看人物 → 也不看小熱點）。鏡頭在動、熟客在聊天、聊天剛收 0.6 秒內、切磋挑戰者走過來到嗆完（第一次再加老闆提示講完）（自動展開）＝等（等的不算進 8 秒，最多多等 20 秒；第三輪審查 F4／F5）；聊天中點 ♪＝避開聊天泡泡擺。
+  //     ♪ 被鏡頭夾到上緣往下移、點擊區疊到點得到的小熱點＝藏起來（第三輪審查 F3：切磋戰利品列）。
   //     展開中：走過的熟客不擠掉（只有名牌、泡泡、面板、出鏡頭才換位置／收）；被吐司疊到＝淡掉、計時停住，吐司走了再出來；還沒停滿就被擠掉＝額度退回、這首再排一次。
   //     熟客聊天泡泡優先：聊天泡泡一出來，展開中的泡泡收成小圖示。泡泡只是字卡（不擋點擊：兩尺寸每個候選位置都蓋得到挖寶箱的點擊點）；
   //     第二行「藝人《專輯》」一行截斷，放不下的展開 1.1 秒後慢慢捲到尾巴（post 審查：專輯名多半在被截掉的那段）。
@@ -6268,7 +6274,7 @@
   //   popLvl／popIdx＝展開中那個位置放寬到第幾層（NP_LV）／第幾個候選；popTap＝這次是點 ♪ 開的；popPrev＝展開前的「第一首／上一次展開」（提早被擠掉＝退回額度）；
   //   popChat＝展開時熟客已經在聊天（點 ♪ 開的：那一段聊天不收，下一段聊天出來才收）；popRe＝這首提早收掉後已經再排過一次；mqT＝第二行捲動的計時；
   //   popEnd＝該收的時刻（被吐司藏起來的時間往後延）；duckAt＝開始被吐司藏起來的時刻；closeWhy＝上一次提早收的原因（e2e／除錯看）；raf、camKey、camAt＝每一格看鏡頭動了沒（最後動的時間）；radioSt／radioArt＝收音機熱點的美術座標（找一次）
-  var BGM = { zone: false, first: false, cur: null, mine: false, tok: 0, ftok: 0, loading: false, fails: 0, retryT: 0, resumeT: 0, idleT: 0, idle: false, hidPend: false, fetched: 0, liveAt: -1e9, tapWant: 0, lastOn: null,
+  var BGM = { zone: false, first: false, cur: null, mine: false, tok: 0, ftok: 0, loading: false, fails: 0, retryT: 0, resumeT: 0, idleT: 0, idle: false, hidPend: false, fetched: 0, liveAt: -1e9, tapWant: 0, lastOn: null, chatAt: -1e9,
     popAt: -1e9, popT: 0, popOpen: false, popId: null, popTry: null, popLvl: 0, popTap: false, popIdx: 0, popPrev: null, popChat: false, popRe: false, mqT: 0, popEnd: 0, duckAt: 0, ic: null, pop: null, icMode: null, iv: 0, raf: 0, camKey: '', camAt: -1e9, radioSt: null, radioArt: null };
   function BU(k, o) { var U = (C && C.bgm && C.bgm.ui) || {}; return fill(typeof U[k] === 'string' ? U[k] : '', o || {}); }
   function bgmCfg(k, d) { var v = C && C.bgm && C.bgm[k]; return typeof v === 'number' && isFinite(v) ? v : d; }
@@ -6302,15 +6308,17 @@
   function bgmHidden() { try { return !!D.hidden; } catch (_) { return false; } }
   // ---- 佇列
   function plAces() { return TIERS.map(function (t) { return C.aces[t]; }); }
+  // 王牌、頂點卡不放（§4.2-2）：三張預設王牌、這一趟的王牌（?apex=1 挑了頂點卡當王牌＝那張）、有 tier 的頂點卡（E.canSeed 為 false；?apex=1 打倒藏家拿到的；第三輪審查 F2）
+  function plSkip(id) { var r = save.run; return id === aceIdOf(r) || plAces().indexOf(id) >= 0 || !E.canSeed(C, id); }
   function plBag() {
-    var r = save.run, out = [], ace = aceIdOf(r), aces = plAces();
-    (r.bag || []).forEach(function (id) { var c = card(id); if (c && c.previewUrl && cardVis(id) && out.indexOf(id) < 0 && id !== ace && aces.indexOf(id) < 0) out.push(id); });
+    var r = save.run, out = [];
+    (r.bag || []).forEach(function (id) { var c = card(id); if (c && c.previewUrl && cardVis(id) && out.indexOf(id) < 0 && !plSkip(id)) out.push(id); });
     return out;
   }
   function plShelf(P) {
     if (save.settings.bgmSrc !== 'both' || !bgmShelfOpen()) return [];
-    var aces = plAces(), h = function (id) { return E.hash01(P.key + '#bgmShelf#' + id); };
-    return Object.keys(save.shelf || {}).filter(function (id) { var c = card(id); return c && c.previewUrl && isOwned(id) && cardVis(id) && P.bag.indexOf(id) < 0 && aces.indexOf(id) < 0; })
+    var h = function (id) { return E.hash01(P.key + '#bgmShelf#' + id); };
+    return Object.keys(save.shelf || {}).filter(function (id) { var c = card(id); return c && c.previewUrl && isOwned(id) && cardVis(id) && P.bag.indexOf(id) < 0 && !plSkip(id); })
       .sort(function (a, b) { return h(a) - h(b); });
   }
   function plCached(id) { var f = FX(), c = card(id); try { return !!(f && f.music && f.music.cached && c && c.previewUrl && f.music.cached(c.previewUrl)); } catch (_) { return false; } }
@@ -6402,13 +6410,15 @@
   // 取消還在抓的那首輪播（離開輪播畫面、⏸ 關背景音樂、閒置停；審查 H2／M3）：fx 那一次 play 作廢（抓完也不響）、那張放回佇列最前面（下次接著）
   function bgmCancel() {
     if (!BGM.loading) return;
-    var f = FX(), id = BGM.cur, P = UI.playlist;
+    var f = FX(), id = BGM.cur;
     BGM.tok++; BGM.loading = false;
     try { if (BGM.ftok && f && f.music && f.music.cancel) f.music.cancel(BGM.ftok); } catch (_) {}
     BGM.ftok = 0;
-    if (id && P && P.queue.indexOf(id) < 0 && (P.bag || []).indexOf(id) >= 0) P.queue.unshift(id);
+    plBack(id);
     BGM.cur = null; BGM.mine = false;
   }
+  // 那張沒放到就作廢了：放回佇列最前面（下次接著；還在包包裡、佇列裡沒有才放）
+  function plBack(id) { var P = UI.playlist; if (id && P && P.queue.indexOf(id) < 0 && (P.bag || []).indexOf(id) >= 0) P.queue.unshift(id); }
   // 輪播那首（'ambient'）停掉；玩家點的、店裡唱盤照放。沒在響、但切背景時記下的（回前景會從頭放）是輪播的＝也清掉
   function bgmStopAmbient(ms) {
     var f = FX(); if (!f || !f.music) return;
@@ -6478,8 +6488,12 @@
     bgmCancel();
     var f = FX();
     // 唱盤上留著的是輪播那首、但已經沒在響（放完、接下一首的空檔）＝收掉（對決、標題的 ⏸ 不會寫「暫停中」那張、回前景也不會又放它）；還在響＝照舊放完
-    try { var pd = f && f.music && f.music.pending ? f.music.pending() : null, cu = f && f.music && f.music.current ? f.music.current() : null;
-      if (cu && !bgmSounding() && (cu.id === BGM.cur || cu.id === BGM.lastOn || (pd && pd.session === 'ambient'))) f.music.stop({ fadeMs: 0 }); } catch (_) {}
+    //   唱盤上還沒有任何一張、但 fx 記著輪播那首要接回（新開頁第一首還在抓時 ⏸ 關聲音：mute() 記成 pending 'ambient'、M.card 還是空的）＝也清掉
+    //   （第 I 波第三輪審查 F1：不然在對決裡打開聲音，fx 照 'ambient' 放輪播那首、audioSession 被切成跟著靜音鍵）；別人那首還在抓＝不動（stop 會把它作廢）
+    try { var pd = f && f.music && f.music.pending ? f.music.pending() : null, cu = f && f.music && f.music.current ? f.music.current() : null,
+      ld = !!(f && f.music && f.music.loading && f.music.loading());
+      var clr = !cu && !ld && pd && pd.session === 'ambient';   // 那首一聲都沒響過＝清掉之後放回佇列最前面（跟 bgmCancel 一樣，這一輪不會少放一張）
+      if (!bgmSounding() && ((cu && (cu.id === BGM.cur || cu.id === BGM.lastOn || (pd && pd.session === 'ambient'))) || clr)) { f.music.stop({ fadeMs: 0 }); if (clr) plBack(pd.card.id); } } catch (_) {}
     try { if (f && f.sessionPlayback) f.sessionPlayback(); } catch (_) {}   // 輪播那首還在響（回標題）＝fx 先不切，下一次點畫面再切（bgmTap）
     npLoop(false); npClose(true); npHide();
   }
@@ -6655,6 +6669,15 @@
   }
   // 試聽機、收音機面板、唱片資訊（或 ⏸、整頁）開著：不展開
   function npBlocked() { var ci = CI(); return !!((ci && ci.isOpen && ci.isOpen()) || UI.modal || UI.page || qs('.lb-sheet.float.booth, .lb-sheet.float.radio', app())); }
+  // 自動展開先等（第 I 波第三輪審查 F4／F5）：熟客在聊天；聊天剛收不到 popChatGap（下一句、老闆接話常常緊接著出來，字卡先擺好就會被疊到）；
+  //   活店切磋：挑戰者正走向對戰台、到了還沒嗆、第一次的老闆提示（sparHint）還沒講完（UI.enc.talk＝那一段講到幾時；sparTable／sparAtTable／sparHint 寫）
+  function npHold() {
+    var t = now();
+    if (npChat()) { BGM.chatAt = t; return true; }
+    if (t - BGM.chatAt < bgmCfg('popChatGap', 600)) return true;
+    var e = UI.enc;
+    return !!(e && UI.screen === 'night' && (e.phase === 'walk' || e.phase === 'table') && (e.talk || 0) > t);
+  }
   // 要展開（第一首、隔 2 分鐘、點 ♪）：記下來，鏡頭停了、熟客沒在聊天、擺得下才真的出（npTry；每 300 ms 再看一次，到 until 為止）。
   //   真的出了才算「展開過」（BGM.first、popAt；擺不下不吃掉第一首、2 分鐘的額度；審查 M7）
   function npOpen(c, o) {
@@ -6670,7 +6693,14 @@
     var T = BGM.popTry; if (!T || !BGM.pop) return;
     if (BGM.popOpen) { BGM.popTry = null; return; }
     var f = FX(), cur = null, on = bgmSounding(); try { cur = f.music.current(); } catch (_) {}
-    if (!cur || cur.id !== T.id || now() > T.until || BGM.icMode !== 'on') { BGM.popTry = null; return; }
+    if (!cur || cur.id !== T.id || BGM.icMode !== 'on') { BGM.popTry = null; return; }
+    // 自動展開：馬上就有人要開口（挑戰者走向對戰台、到了還沒嗆、第一次的老闆提示還沒講、聊天剛收）＝先等，等的這段不算進 8 秒（最多多等 popHoldMax）
+    //   （第 I 波第三輪審查 F4／F5：字卡 1.3 秒出、挑戰者一嗆就收＝「字一閃就沒了」；聊天一收字卡馬上擺好、老闆那句半拍後疊上來）
+    if (!T.tap && npHold()) {
+      if (!T.cap) T.cap = now() + bgmCfg('popHoldMax', 20000);
+      if (now() < T.cap) { T.until = Math.max(T.until, Math.min(T.cap, now() + 3000)); return; }
+    }
+    if (now() > T.until) { BGM.popTry = null; return; }
     // 等：還沒響、面板開著、熟客在聊天（自動展開；審查 M8）、鏡頭還在動（停了 0.4 秒才算停；審查 L13）。
     //   點 ♪ 的不等聊天：避開聊天泡泡擺（聊天泡泡要玩家點 ▼ 才走，等 6 秒常常等不到；post 審查）
     if (!on || npBlocked() || (npChat() && !T.tap) || now() - BGM.camAt < 400) return;
@@ -6768,7 +6798,7 @@
     if (!R || !V || R.b < V.t + 4 || R.t > V.b - 4) { ic.style.display = 'none'; return; }
     ic.style.display = '';
     var w = ic.offsetWidth || 20, h = ic.offsetHeight || 22;
-    var l = Math.max(V.l + 2, R.l + R.w / 2 + 4, Math.min(V.r - 2, R.r + 14) - w), t = Math.max(V.t + 2, R.t - 4);
+    var nat = R.t - 4, l = Math.max(V.l + 2, R.l + R.w / 2 + 4, Math.min(V.r - 2, R.r + 14) - w), t = Math.max(V.t + 2, nat);   // nat＝沒被鏡頭夾的時候 ♪ 的上緣
     var wide = l + w > V.r - 2, say = !wide && npSayHit({ l: l, t: t, r: l + w, b: t + h });
     // 右邊放不下，或熟客／老闆的泡泡、名牌疊到右上角那個位置（post 審查：♪ 蓋住聊天泡泡的字、吃掉 ▼ 那一點）＝換位置；泡泡疊到又都換不了＝留在原位（z 在泡泡底下）
     if (wide || say) {
@@ -6777,10 +6807,23 @@
       for (var i = 0; i < cs.length && !pick; i++) if (npFits(cs[i], w, h, V, B)) pick = cs[i];
       if (pick || wide) {
         pick = pick || cs[1];
-        l = Math.max(V.l + 2, pick.l); t = Math.max(V.t + 2, Math.min(V.b - 2 - h, pick.t));
+        nat = pick.t; l = Math.max(V.l + 2, pick.l); t = Math.max(V.t + 2, Math.min(V.b - 2 - h, pick.t));
       }
     }
+    // 鏡頭把收音機上半截裁掉（切磋戰利品列照領獎鏡頭收）、♪ 被夾在鏡頭上緣往下移：連點擊區（::before 上 4、下 5、右 12）一起疊到點得到的小熱點（牆上封面…）＝藏起來
+    //   （第 I 波第三輪審查 F3：375 ♪ 整個壓在 rack:steely dan 上、點封面開成 ♪ 字卡）；主線領獎畫面熱點是關的＝照舊留著
+    if (t > nat + 0.5 && npIcHot({ l: l, t: t - 4, r: l + w + 12, b: t + h + 5 })) { ic.style.display = 'none'; return; }
     ic.style.left = Math.round(l) + 'px'; ic.style.top = Math.round(t) + 'px';
+  }
+  // 那一塊（host CSS）疊到點得到的小熱點（跟 npBlocks 的小熱點同一套：牆上封面、海報、櫃檯「正在放」、店貓；收音機、跟著人走的、大的不算）
+  function npIcHot(a) {
+    var st = UI.stage, sh = st && st.shop, L = null; if (!sh || !sh.hotList || !st.cssOf) return false;
+    try { L = sh.hotList() || []; } catch (_) { return false; }
+    return L.some(function (h) {
+      if (!h || !h.enabled || h.occluder || h.dyn || h.id === 'radio' || !h.rect || h.rect[2] * h.rect[3] > 600) return false;
+      var p = st.cssOf(h.rect[0], h.rect[1]), q = st.cssOf(h.rect[0] + h.rect[2], h.rect[1] + h.rect[3]);
+      return a.l < q.x && a.r > p.x && a.t < q.y && a.b > p.y;
+    });
   }
   // 展開中被吐司（領獎「唱片櫃 +2」、提示）疊到：先淡掉、6 秒的計時停住，吐司走了再出來、接著算（post 審查：吐司字跟泡泡字疊在一起）；
   //   藏超過 6 秒（一直留著的提示吐司）＝收起來、算提早收（npEarly：額度退回、再排一次＝換個不撞吐司的位置）
@@ -6807,6 +6850,7 @@
   function npTick() {
     if (!BGM.zone) return;
     npSync();
+    if (npChat()) BGM.chatAt = now();   // 聊天最後一次還在的時刻（npHold：聊天剛收先等一拍）
     if (BGM.popTry && !BGM.popOpen) { npTry(); return; }
     if (!BGM.popOpen || !BGM.pop) return;
     // 熟客聊天泡泡出來＝收（聊天優先）；點 ♪ 時已經在聊的那一段不收（避開它擺），聊完了下一段出來才收
