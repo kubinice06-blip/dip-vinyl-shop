@@ -56,7 +56,7 @@ if (TIERPOL && TIER) { console.error('--tierpol 跟 --tier k 只能給一個'); 
 const TREEPOL = arg('treepol', 'even');
 if (!['even', 'off'].includes(TREEPOL)) { console.error('--treepol even|off'); process.exit(2); }
 const TREE = FAC && TREEPOL !== 'off';
-const TREE_ORDER = ['a1', 'b1', 'a2', 'b2', 'a3', 'b3', 'a3', 'a3'];      // 派點花法（even）：照這個順序，點得起的先點；第 3 層熟練不到 Lv5 就先跳過
+const TREE_ORDER = arg('treeorder', null) ? arg('treeorder').split(',') : ['a1', 'b1', 'a2', 'b2', 'a3', 'b3', 'a3', 'a3'];   // 派點花法（even）：照這個順序，點得起的先點；第 3 層熟練不到 Lv5 就先跳過（--treeorder a1,b1,…＝換順序）
 const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) && t[k] && typeof t[k] === 'object') deepMerge(t[k], s[k]); else t[k] = s[k]; } return t; };
 C.career = C.career || {};
 if (arg('lowmul', null) != null) deepMerge(C, { career: { lexp: { lowMul: +arg('lowmul') } } });

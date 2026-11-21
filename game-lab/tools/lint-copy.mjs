@@ -828,7 +828,10 @@ if (C.factions) {
   }
   for (const [k, v] of Object.entries(S.notes || {})) one('factions.apexSwap.notes.' + k, v, k === 'leechFac' ? '流派試做・?fac=1&apex=1 同開：拆穿回血的頂點卡那手，回的聲望被流派被動蓋過（取大）＝這張沒另外回' : '流派試做・?fac=1&apex=1 同開：換過能力那手的結果句（{d}＝多扣幾點）', 25);
   for (const [k, v] of Object.entries(F.ui || {})) {
-    if (v && typeof v === 'object' && !Array.isArray(v)) { for (const [k2, v2] of Object.entries(v)) one('factions.ui.' + k + '.' + k2, v2, '流派試做・畫面字（派樹的路線名）', 4); continue; }
+    if (v && typeof v === 'object' && !Array.isArray(v)) {   // treePath＝派樹的路線名（≤4）；deepHow＝本派說明裡深耕「一手是什麼」（棒三審查，≤25）
+      for (const [k2, v2] of Object.entries(v)) one('factions.ui.' + k + '.' + k2, v2, k === 'treePath' ? '流派試做・畫面字（派樹的路線名）' : '流派試做・畫面字（本派說明：深耕記的一手是什麼）', k === 'treePath' ? 4 : 25);
+      continue;
+    }
     one('factions.ui.' + k, v, '流派試做・畫面字（標題旗標章、升級第 4 格、本派說明、我的狀態、派樹分頁；{x} 由畫面代入）', 25, k === 'pickFirst' ? '老闆' : null);
   }
 }

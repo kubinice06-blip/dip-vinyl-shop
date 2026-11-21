@@ -11,7 +11,7 @@
 //   1  T1 新帳號看不到：(a) 沒存檔的新帳號標題沒有推門那列；(b) 老帳號（Lv12、最遠 34）沒開過試煉：沒有推門那列、第一行照舊「最遠：第 34 位」、樂歷頁解鎖區沒有試煉那行；
 //      推門 → 來客：run.tier 0、來客條沒有「第 k 階」小標、「再挑戰一趟」沒有階；(c) 旗標關樂歷頁沒有分頁（派樹不出）
 //   2  T2＋T6b 開階：從第 10 位開（中繼點）的一趟、第 0 階 → 跳到第 20 位（傳說藏家）真的打倒 → 一路到第 21 位 → 輸：save.trial.open 1、best[0] 21、runs[k] 沒有 tier；
-//      結算「走到」那行沒有「第 k 階・」；「再挑戰一趟」→ 過場卡「開了第 1 階：什麼都不露的提示多 5%。」＋「推門前在標題選第幾階；這一階樂歷 ×1.1。」→ 下一趟 run.tier 0（pick 不動）
+//      結算「走到」那行沒有「第 k 階・」；「再挑戰一趟」→ 過場卡「開了第 1 階：什麼都不露的提示多 5%。」＋「回店門口，在「試煉階級」往右選；樂歷 ×1.1。」→ 下一趟 run.tier 0（pick 不動）
 //   3  T3 推門那列（open 3、pick 0、best {0:34,1:25,2:22}；有一趟在打＋?apex=1＝最擠那組）：‹ 灰、› 亮 → 真點 › 三下＝第 3 階、› 灰、pick 3 存檔；‹ 一下＝第 2 階；
 //      第一行最遠短版「最遠 34（第 2 階 22）」跟著換；>600px 下面那行「這一階：…」「另外 1 條 ›」；≤600px 跟樂歷第二行同一列（不重疊、都在畫面裡）；
 //      標題不捲、每顆 ≥44 高；點中間 → 「試煉階級」面板：第 0–3 階＋第 4 階鎖（「打倒第 20 位藏家開下一階」）、第 1、2 階「過關」、第 1 階「最遠第 25 位」、第 3 階「還沒打過」、
@@ -19,11 +19,10 @@
 //   4  T4＋T5 第 k 階那一趟（open 3、pick 2）：推門 → 來客條「第 1 輪」旁「第 2 階」、run.tier 2 → 開打：頂欄小字有「第 2 階」→ 輸到結算：「第 2 階・走到第 n 位」同一行、
 //      結算不捲、「再挑戰一趟・第 2 階」；runs[k].tier 2、best[2]＝max；樂歷 gain.mul 1.2、total＝round((基本＋破紀錄＋路線)×1.2)；明細「×1.2 第 2 階」
 //   5  T6a 中繼點從第 50 位開（open 1、pick 1）：走到第 60 位輸 → open 還是 1（沒打第 20 位那場）、best[1] 60
-//   6  派樹（?fac=1；經典熟練 Lv6＝5 派點）：樂歷頁分頁「天賦｜派樹」→ 派樹：「經典流的派樹」「派點 5」、九格（收藏三格鎖：之後開放／鎮店盤上線後開、沒有＋－）、
-//      挑著學「先點「先聲奪人」」＋灰；真點：先聲奪人＋ → 派點 4；挑著學＋ → 2；口碑＋ → 0、口碑＋灰；先聲奪人－ → 吐司「先退「挑著學」」、樹不變；口碑－；
-//      點先聲奪人的格子 → 展開說明（「本派格先出「初版」。」＋初版的說明）；全部重配 → 樹空、派點 5；再點先聲奪人、挑著學 → 關頁、推門 → run.fac.tal {a1:1,a2:1}；
-//      每列 ≥44、＋－ 44×44；（沒 ?fac=1 的樂歷頁沒有分頁：#1c）
-//   7  挑著學的升級面板（?fac=1、樹 a2）：Lv4 差一點升級 → 打贏 → 升到 Lv5 面板 5 顆（3 屬性＋2 本派、[data-lv=fac] 兩顆、不同項）、不捲、每顆 ≥44
+//   6  派樹（?fac=1；經典熟練 Lv6＝5 派點）：樂歷頁分頁「天賦｜派樹」→ 派樹：「經典流的派樹」「派點 5」、九格（收藏三格鎖：之後開放／頂點卡正式上線後開、沒有＋－）、
+//      每格名字＝content、說明一律攤開（棒三審查）；挑著學「先點「a1 的名字」」＋灰；真點：a1＋ → 派點 4；挑著學＋ → 2；a3＋ → 0、a3＋灰；a1－ → 吐司「先退「挑著學」」、樹不變；a3－；
+//      全部重配 → 樹空、派點 5；再點 a1、挑著學 → 關頁、推門 → run.fac.tal {a1:1,a2:1}；每列 ≥44、＋－ 44×44；（沒 ?fac=1 的樂歷頁沒有分頁：#1c）
+//   7  挑著學的升級面板（?fac=1、樹 a2；content nth＝第 n 次本派格才出兩個）：學過 n−1 項、差一點升到第 n 次本派格那一級 → 打贏 → 面板 5 顆（3 屬性＋2 本派、[data-lv=fac] 兩顆、不同項）、不捲、每顆 ≥44
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import fs from 'fs';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, tapAt, waitScreen, noScroll, scrollOk, openTitle,
@@ -42,7 +41,7 @@ const J = x => JSON.stringify(x);
 const TIER1 = '什麼都不露的提示多 5%。';                       // 規格 §5.2 第 1 階（定稿字：「多 5%」）
 const shot = async (page, name) => { if (SHOTS) { await sleep(350); await page.screenshot({ path: `${SHOTS}/${name}.png` }); } };
 const TU = page => C(page, () => Object.assign({}, window.DipLabContent.trial.ui, { tiers: window.DipLabContent.trial.tiers.map(x => ({ name: x.name, text: x.text })),
-  career: Object.assign({}, window.DipLabContent.career.ui), F: Object.assign({}, window.DipLabContent.factions.ui), summary: Object.assign({}, window.DipLabContent.summary), aceTitle: Object.assign({}, window.DipLabContent.aceTitle) }));
+  career: Object.assign({}, window.DipLabContent.career.ui), F: Object.assign({}, window.DipLabContent.factions.ui), hallTree: window.DipLabContent.factions.hall.tree.map(x => Object.assign({}, x)), summary: Object.assign({}, window.DipLabContent.summary), aceTitle: Object.assign({}, window.DipLabContent.aceTitle) }));
 
 // 一份 v8 存檔（D 版形狀）：o.career、o.trial、o.run（{ace, from, tier, fac, tal, set}；沒給＝沒有進行中的）、o.runs、o.best、o.lastAce、o.own（再收 n 張能當種子的）
 async function seedSave(page, o) {
@@ -143,7 +142,7 @@ const titleState = page => C(page, () => {
     dn: row ? { dis: row.querySelector('[data-a=tierDn]').disabled, R: R(row.querySelector('[data-a=tierDn]')) } : null,
     up: row ? { dis: row.querySelector('[data-a=tierUp]').disabled, R: R(row.querySelector('[data-a=tierUp]')) } : null,
     midR: row ? R(row.querySelector('.tr-mid')) : null, nw: nw && getComputedStyle(nw).display !== 'none' ? { t: (nw.querySelector('.t') || {}).textContent || '', more: (nw.querySelector('.tr-more') || {}).textContent || '' } : null,
-    cx: R(cx), info: (document.querySelector('.lb-foot.info .t') || document.querySelector('.lb-foot.info') || {}).textContent || '', sh: box && box.scrollHeight, ch: box && box.clientHeight, vw: innerWidth, vh: innerHeight };
+    cx: R(cx), cont: (document.querySelector('[data-a=cont] .sub') || {}).textContent || '', info: (document.querySelector('.lb-foot.info .t') || document.querySelector('.lb-foot.info') || {}).textContent || '', sh: box && box.scrollHeight, ch: box && box.clientHeight, vw: innerWidth, vh: innerHeight };
 });
 const sheetState = page => C(page, () => {
   const p = document.querySelector('.lb-modal .pane.trialsheet'); if (!p) return null;
@@ -246,14 +245,14 @@ async function runSize(browser, w, h) {
       const tierN = k => fill(x.tierN, { k });
       const inV = R => R && R.t >= 0 && R.b <= h + 0.5 && R.l >= 0 && R.r <= w + 0.5;
       const big = R => R && R.h >= 44 && R.w >= 40;
-      const short = h <= 600;
-      // ≤600px：樂歷第二行跟推門那列同一列（上緣一樣、左右不重疊）；>600px：推門那列在樂歷第二行上面、下面那行「這一階：…」
-      const lay = s => short ? (s.cx && s.midR && Math.abs(s.cx.t - s.midR.t) <= 1 && s.cx.r <= s.dn.R.l + 0.5 && !s.nw) : (s.cx && s.midR && s.midR.b <= s.cx.t + 0.5 && !!s.nw);
+      const short = h <= 700;   // 棒三審查：有一趟在打（或 ?apex=1）的標題 ≤700px 高就併成同一列（.lb-tcx.tier.tight；這組兩樣都有）
+      // 併成一列：樂歷第二行跟推門那列同一列（上緣一樣、左右不重疊、‹ 跟樂歷鈕至少隔 8px）；>700px：推門那列在樂歷第二行上面、下面那行「這一階：…」
+      const lay = s => short ? (s.cx && s.midR && Math.abs(s.cx.t - s.midR.t) <= 1 && s.cx.r + 8 <= s.dn.R.l + 0.5 && !s.nw) : (s.cx && s.midR && s.midR.b <= s.cx.t + 0.5 && !!s.nw);
       const okRow = t0.row && t0.k === 0 && t0.dn.dis && !t0.up.dis && t0.mid.includes(x.tierZero) && ups.map(s => s.k).join() === '1,2,3' && ups[2].up.dis && !ups[2].dn.dis &&
-        ups[2].mid.includes(tierN(3)) && ups[2].mid.includes(fill(x.tierReward, { m: '1.3' })) && s3.trial.pick === 3 && t2.k === 2 &&
+        ups[2].mid.includes(tierN(3)) && ups[2].mid.includes(x.tierRowNext) && t0.cont === '第 4 位・' + t0.cont.split('・').slice(1).join('・') && s3.trial.pick === 3 && t2.k === 2 &&   // 有一趟在打：小標「下一趟」
         t0.info.startsWith('最遠 34（第 2 階 22）') && ups[0].info.startsWith('最遠 34（第 1 階 25）') && t2.info.startsWith('最遠 34（第 2 階 22）') &&
-        (short || (t2.nw && t2.nw.t === fill(x.tierNew, { text: x.tiers[1].text }) && t2.nw.more === fill(x.tierMore, { n: 1 }) + ' ›')) &&
-        [t0, t2].every(s => s.sh - s.ch <= 1 && lay(s) && big(s.dn.R) && big(s.up.R) && big(s.midR) && inV(s.dn.R) && inV(s.up.R) && inV(s.midR) && inV(s.cx)) && scrollOk(sc0) && scrollOk(sc2);
+        (short || (t2.nw && t2.nw.t === fill(x.tierNew, { text: x.tiers[1].text }) && t2.nw.more === fill(x.tierMore, { n: 1 }))) &&
+        [t0, t2].every(s => s.sh - s.ch <= 1 && lay(s) && big(s.dn.R) && big(s.up.R) && big(s.midR) && s.dn.R.w >= 44 && s.up.R.w >= 44 && inV(s.dn.R) && inV(s.up.R) && inV(s.midR) && inV(s.cx)) && scrollOk(sc0) && scrollOk(sc2);
       const rows = sh && sh.rows;
       const okSheet = sh && sh.h2 === x.tierRow && rows.length === 5 && rows[4].lock && rows[4].rc === x.tierHow && rows[4].hd === tierN(4) + '・' + x.tiers[3].name &&
         rows[0].hd === x.tierZero && rows[1].hd === tierN(1) + '・' + x.tiers[0].name && rows[1].tx === TIER1 && rows[1].rc === x.tierPassed + '・' + fill(x.tierFar, { n: 25 }) &&
@@ -335,7 +334,7 @@ async function runSize(browser, w, h) {
         return { ace: pg.getAttribute('data-ace'), head: (pg.querySelector('.cx-head .lv') || {}).textContent || '', pts: (pg.querySelector('.cx-head .pts') || {}).textContent || '',
           nodes: [...pg.querySelectorAll('.tr-node')].map(li => ({ id: li.getAttribute('data-id'), nm: (li.querySelector('.nm b') || {}).textContent || '', st: (li.querySelector('.st') || {}).textContent || '',
             now: (li.querySelector('.now') || {}).textContent || '', buy: li.querySelector('[data-tbuy]') ? !li.querySelector('[data-tbuy]').disabled : null, sell: li.querySelector('[data-tsell]') ? !li.querySelector('[data-tsell]').disabled : null,
-            open: li.classList.contains('open'), ds: getComputedStyle(li.querySelector('.ds')).display !== 'none' ? li.querySelector('.ds').textContent : '', h: Math.round(li.getBoundingClientRect().height),
+            ds: getComputedStyle(li.querySelector('.ds')).display !== 'none' ? li.querySelector('.ds').textContent : '', h: Math.round(li.getBoundingClientRect().height),
             pm: [...li.querySelectorAll('.pm .lb-btn')].map(b => { const r = b.getBoundingClientRect(); return [Math.round(r.width), Math.round(r.height)]; }) })),
           tree: JSON.parse(localStorage.getItem('dipGameLab_v1')).career.tree.hall };
       });
@@ -350,8 +349,6 @@ async function runSize(browser, w, h) {
       await tap(N('a1') + ' [data-tsell]'); await sleep(200);
       const toasts = await C(page, () => (window.__toasts || []).slice()); const t4 = await tree(page);
       await tap(N('a3') + ' [data-tsell]'); const t5 = await tree(page);
-      await tap(N('a1') + ' .tx'); const t6 = await tree(page);
-      await shot(page, `tree-open-${tag}`);
       await tap('.lb-page [data-a=trespec]'); const t7 = await tree(page);
       await tap(N('a1') + ' [data-tbuy]'); await tap(N('a2') + ' [data-tbuy]'); const t8 = await tree(page);
       await jsClick(page, '.lb-page [data-a=close]'); await sleep(600);
@@ -364,14 +361,14 @@ async function runSize(browser, w, h) {
       const ok0 = t0 && t0.ace === 'hall' && t0.head === fill(x.F.treeOf, { title: x.aceTitle.hall }) && t0.pts === pts(5) && t0.nodes.length === 9 &&
         ['c1', 'c2', 'c3'].every(id => nd(t0, id).buy === null && nd(t0, id).sell === null) && nd(t0, 'c1').st === x.F.treeSoon && nd(t0, 'c2').st === x.F.treeSoonApex &&
         nd(t0, 'a2').st.includes(fill(x.F.treeNeed, { name: nd(t0, 'a1').nm })) && nd(t0, 'a2').buy === false && nd(t0, 'a1').buy === true && nd(t0, 'a1').sell === false && nd(t0, 'a1').st === fill(x.F.treeCost, { n: 1 }) &&
-        t0.nodes.every(n => n.h >= 44 && n.pm.every(p => p[0] >= 44 && p[1] >= 44)) && !nd(t0, 'a1').ds;
+        t0.nodes.every(n => n.h >= 44 && n.pm.every(p => p[0] >= 44 && p[1] >= 44)) &&
+        x.hallTree.every(N => nd(t0, N.id) && nd(t0, N.id).nm === N.name && (!N.text || nd(t0, N.id).ds.includes(N.text)));   // 棒三審查：每格的說明一律攤開（收合看不出點了會怎樣）
       const okBuy = t1.pts === pts(4) && J(t1.tree) === J({ a1: 1 }) && t2.pts === pts(2) && J(t2.tree) === J({ a1: 1, a2: 1 }) && t3.pts === pts(0) && J(t3.tree) === J({ a1: 1, a2: 1, a3: 1 }) &&
         nd(t3, 'a3').buy === false && nd(t3, 'a3').now === fill(x.F.treeLv, { k: 1, max: 3 }) &&
         toasts.includes(fill(x.F.treeDep, { name: nd(t0, 'a2').nm })) && J(t4.tree) === J(t3.tree) && J(t5.tree) === J({ a1: 1, a2: 1 }) &&
-        nd(t6, 'a1').open && nd(t6, 'a1').ds.includes('本派格先出「初版」。') && nd(t6, 'a1').ds.includes('扣整張那手，再多扣 1。') &&
         J(t7.tree) === '{}' && t7.pts === pts(5) && J(t8.tree) === J({ a1: 1, a2: 1 }) && dn.ok && J(tal) === J({ a1: 1, a2: 1 });
       record(6, size, okTabs && ok0 && okBuy && !errs(page).length, `分頁 ${J(tabs)}；派樹 ${J(t0 && { head: t0.head, pts: t0.pts, nodes: t0.nodes.map(n => [n.id, n.nm, n.st, n.buy, n.sell, n.h]) })}；` +
-        `點 ${[t1, t2, t3].map(t => t.pts + J(t.tree)).join(' → ')}；退先聲奪人 吐司 ${J(toasts)} 樹 ${J(t4.tree)}；退口碑 ${J(t5.tree)}；展開 ${J(nd(t6, 'a1').ds)}；重配 ${J(t7.tree)} ${t7.pts}；再點 ${J(t8.tree)} → 推門 tal ${J(tal)}；${errTx(page)}`);
+        `點 ${[t1, t2, t3].map(t => t.pts + J(t.tree)).join(' → ')}；退 a1 吐司 ${J(toasts)} 樹 ${J(t4.tree)}；退 a3 ${J(t5.tree)}；說明 ${J(t0.nodes.map(n => n.ds))}；重配 ${J(t7.tree)} ${t7.pts}；再點 ${J(t8.tree)} → 推門 tal ${J(tal)}；${errTx(page)}`);
     } catch (e) { record(6, size, false, 'error ' + e.message); }
     await ctx.close();
   }
@@ -386,8 +383,11 @@ async function runSize(browser, w, h) {
       await openTitle(page, QF);
       await jsClick(page, '[data-a=cont]');
       await nightReady(page);
-      // Lv4、差 1 經驗升級（E.xpNeed 照現在的曲線）
-      await C(page, () => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; r.level = 4; const T = E.trialCfg(Cn, r.tier); r.xp = Math.max(0, E.xpNeed(T, 4) - 1); });
+      // 挑著學（content 的 nth：第 n 次本派格才出兩個；棒三審查）：前面已經學過 n−1 項本派選項、差 1 經驗升到第 n 次本派格那一級（每 5 級一格；E.xpNeed 照現在的曲線）
+      const NTH = await C(page, () => { const N = window.DipLabContent.factions.hall.tree.find(x => x.op === 'pick2'); return N.nth > 0 ? N.nth : N.once ? 1 : 1; });
+      await C(page, n => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; const lv = 5 * n - 1;
+        ['h_old', 'h_seen', 'h_first'].slice(0, n - 1).forEach(id => { r.fac.picks[id] = 1; r.picks.push('fac:' + id); });
+        r.level = lv; const T = E.trialCfg(Cn, r.tier); r.xp = Math.max(0, E.xpNeed(T, lv) - 1); }, NTH);
       await jsClick(page, '.lb-night [data-a=go]');
       await waitDuel(page);
       await C(page, () => window.__lab.forceWin());
@@ -401,9 +401,9 @@ async function runSize(browser, w, h) {
         const bs = [...s.querySelectorAll('[data-lv]')].map(b => { const R = b.getBoundingClientRect(); return { lv: b.getAttribute('data-lv'), id: b.getAttribute('data-id'), h: Math.round(R.height), t: Math.round(R.top), b: Math.round(R.bottom) }; });
         return { n: bs.length, bs, offer: (r.pending && r.pending.offer || []).map(o => o.pick + (o.id ? ':' + o.id : '')), lvl: r.pending && r.pending.level, sh: s.scrollHeight - s.clientHeight, cls: s.querySelector('.lb-opts').className, txt: s.textContent };
       });
-      await shot(page, `level5-${tag}`);
+      await shot(page, `level${5 * NTH}-${tag}`);
       const facs = P.bs.filter(b => b.lv === 'fac');
-      const ok = lvOk && P.lvl === 5 && P.n === 5 && facs.length === 2 && facs[0].id !== facs[1].id && facs[0].id === 'h_first' && /n5/.test(P.cls) && P.sh <= 1 &&
+      const ok = lvOk && P.lvl === 5 * NTH && P.n === 5 && facs.length === 2 && facs[0].id !== facs[1].id && /n5/.test(P.cls) && P.sh <= 1 &&
         P.bs.every(b => b.h >= 44 && b.t >= 0 && b.b <= h + 0.5) && !/undefined|NaN/.test(P.txt);
       record(7, size, ok && !errs(page).length, `升級面板 ${lvOk} ${J(P)}；${errTx(page)}`);
     } catch (e) { record(7, size, false, 'error ' + e.message); }

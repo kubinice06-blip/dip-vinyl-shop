@@ -675,6 +675,10 @@
       else if (N.op === 'spine') fx.spine = N.n > 0 ? N.n | 0 : 99;   // 刺蝟：他的品味少算 n（沒寫 n＝整個不加）
       else if (N.op === 'tieHeal') fx.tieHeal = Math.max(1, nonNeg(N.n));
       else if (N.op === 'pick2') fx.pick2 = 1;
+      else if (N.op === 'fx' && isPlain(N.fx)) for (const key of Object.keys(N.fx)) {   // 棒三審查：派樹自己的小效果（跟本派選項同一套 fx 鍵、數字較小；不佔本派格）
+        const v = nonNeg(N.fx[key]); if (!v) continue;
+        if (TREE_FX_MAX.includes(key)) fx[key] = Math.max(fx[key] | 0, v); else if (TREE_FX_ADD.includes(key)) fx[key] = (fx[key] | 0) + v;
+      }
     }
     return fx;
   }
@@ -730,14 +734,19 @@
   }
 
   // ---------- 第 D 波棒三：派樹（?fac=1；scratchpad v5/wave-d SPEC-D §3.6–§3.7；契約 build3/CONTRACT.md）----------
-  //   節點＝content.factions[派].tree：id＝路線＋層（a 本派／b 代價／c 收藏 × 1–3）；op：
-  //     start（那項本派選項 pick：treeStart 'first'＝本派格先出它、'start'＝開局就有）｜pick2（挑著學：本派格一次出兩個挑一，次數不變）｜
-  //     deep（深耕：這場 cell〔honest 信對／caught 拆穿〕幾手，打贏多回 min(級, ⌊手數÷per⌋)；max＝封頂級數）｜pleaHp（說情重打那場開打聲望 +n）｜
-  //     spine（刺蝟：每場第一次比星輸，他的品味少算 n；沒寫 n＝整個不加）｜tieHeal（圈內人：同色平手回 n，每場一次）；soon（'later'｜'apex'｜'market'）＝之後開放（畫鎖、不能點、進局不算）。
+  //   節點＝content.factions[派].tree：id＝路線＋層（a 本派／b 抵代價／c 收藏 × 1–3）；op：
+  //     start（那項本派選項 pick：treeStart 'first'＝本派格先出它、'start'＝開局就有；棒三審查後 content 沒有用）｜
+  //     pick2（挑著學：本派格出兩個挑一，次數不變；nth＝只有這一趟第 nth 次本派格、once＝第 1 次、都沒寫＝每次）｜
+  //     deep（深耕：cell〔honest 信對／caught 拆穿〕的手；carry＝跨場累積 run.fac.deepAcc，每記滿 per 手打贏那場多回 1（per 可逐級陣列）；
+  //       沒 carry＝舊規則：這一場 min(級, ⌊手數÷per⌋)；max＝封頂級數）｜pleaHp（說情重打那場開打聲望 +n；再說情不疊：run.pleaUp）｜
+  //     spine（刺蝟：每場第一次比星輸，他的品味少算 n；沒寫 n＝整個不加）｜tieHeal（同色平手回 n，每場一次）｜
+  //     fx（棒三審查：派樹自己的小效果，鍵＝TREE_FX_MAX／TREE_FX_ADD）；soon（'later'｜'apex'｜'market'）＝之後開放（畫鎖、不能點、進局不算）。
   //   價（content.factions.treeCost）：第 1／2／3 層 layer[0..2] 點，第 3 層另要熟練 Lv5（careerCfg.prof.auto tier3）；深耕第 2 級起每級 more 點。
   //     第 2 層要先點同路線第 1 層、第 3 層要先點第 2 層。派點＝熟練等級 − (pointFrom − 1)（Lv2 起每級 1 點）。兩趟之間免費重配。
   //   存檔 save.career.tree[派]＝{節點 id: 級}（careerFix 驗）；進局 newRun({fac:true, facTal: treeArgs(content, career, ace)}) → run.fac.tal（facTalOf 驗）
-  const TREE_OPS = ['start', 'pick2', 'deep', 'pleaHp', 'spine', 'tieHeal'];
+  const TREE_OPS = ['start', 'pick2', 'deep', 'pleaHp', 'spine', 'tieHeal', 'fx'];
+  // op 'fx' 認得的鍵（棒三審查）：取大的（每場第一次被剋少扣 n）／相加的（扣整張再 +n、拆穿多扣 +n、拆穿多回 +n、聲望不到一半打贏多回 n、每場第一次同色平手／比星輸不扣）
+  const TREE_FX_MAX = ['counteredCut', 'tieFree', 'loseFree'], TREE_FX_ADD = ['fullPlus', 'critPre', 'critHealPlus', 'lowHeal', 'lowHealQ'];
   const treeLayer = id => +String(id).slice(1) | 0, treePathOf = id => String(id).charAt(0);
   function treeNodes(content, ace) { const F = facCfg(content), D = F && F[ace]; return D && Array.isArray(D.tree) ? D.tree.filter(x => isPlain(x) && typeof x.id === 'string' && /^[abc][123]$/.test(x.id)) : []; }
   function treeNode(content, ace, id) { return treeNodes(content, ace).find(x => x.id === id) || null; }
@@ -1567,6 +1576,9 @@
   }
   const TIER_META = ['name', 'text', 'id'];                       // 階表裡給畫面的鍵（trialCfg 不疊）
   const TRIAL_PASS = 21;                                          // 試煉「過關」＝走到第 21 位（打倒第 20 位傳說藏家；SPEC-D §5.1、R-T4）
+  // 開下一階只算從第 1–10 位開局的那一趟（棒三審查：規格 §5.1 原本「中繼點 cpFrom ≤20 也算」——從第 20 位開只打藏家一場，十三階照樣一路開完，
+  //   會讀的從第 20 位開 第 0／5／8／10／13 階 93／91／84／65／58%，從頭打 72／60／35／19／3%）。從第 10 位開＝要打第 10–20 位 11 場（菁英、藏家都在）
+  const TRIAL_OPEN_FROM = 10;
   // C.trial（沒給的欄位用 TRIAL 預設）；run.tier＞0 時再依序疊 C.trial.tiers[0..tier−1]（第 D 波棒三試煉階級：第 k 階＝前 k 條全部算；addMerge 相對值）。
   //   頂層 guestHpSteps 串接；頂層 add:{healAdd:n}＝out.healAdd 相加（finishFight 打贏回的聲望）。tier 0＝跟改前逐字一樣（沒有 healAdd 鍵）
   function trialCfg(content, tier) {
@@ -1612,7 +1624,7 @@
     const best = Object.assign({}, t.best), was = best[tier] | 0;
     if (reached > was) best[tier] = reached;
     const passed = reached >= TRIAL_PASS && from < TRIAL_PASS;
-    const opened = passed && tier === t.open && t.open < max ? t.open + 1 : 0;
+    const opened = passed && from <= TRIAL_OPEN_FROM && tier === t.open && t.open < max ? t.open + 1 : 0;   // 開下一階：還要從第 TRIAL_OPEN_FROM 位以前開局（棒三審查）
     return { trial: Object.assign({}, t, { best, open: opened || t.open }), opened, passed, record: reached > was };
   }
   // 第幾位 → 類別（每 5 位：一般 3、菁英、藏家）、第幾輪
@@ -2444,9 +2456,16 @@
       const D = wcCfg(content).stall.dare[run.dare.mode] || {};
       d.atk += D.atk | 0; d.hp += D.hp | 0; d.dare = run.dare.mode;
     }
-    const FG = run.fac && facCfg(content) ? facCfg(content).guest : null;   // 第 D 波棒三：?fac=1 那一趟的客人（content.factions.guest；只在 run.fac，旗標關一行不走）
-    if (FG) { const st = L => (Array.isArray(L) ? L : []).reduce((t, x) => t + (Array.isArray(x) && pos >= (x[0] | 0) ? (x[1] | 0) : 0), 0); d.hp += st(FG.hpSteps); d.atk += st(FG.atkSteps); }
+    if (run.fac) { const FA = facGuestAdd(run, content, pos); d.hp += FA.hp; d.atk += FA.atk; }   // 第 D 波棒三：?fac=1 那一趟的客人（content.factions.guest；只在 run.fac，旗標關一行不走）
     return d;
+  }
+  // ?fac=1 那一趟第 pos 位的客人多幾（content.factions.guest 的 hpSteps／atkSteps；[[第幾位起, +n]…] 累加）→ {hp, atk}；沒有 run.fac＝{0, 0}。
+  //   guestDef 用；活店切磋（encDef，另一支 worktree）合併時也要加這兩個數（棒三審查：切磋客人不走 guestDef，會比主線同位的一般客人弱）
+  function facGuestAdd(run, content, pos) {
+    const FG = run && run.fac && facCfg(content) ? facCfg(content).guest : null;
+    if (!FG) return { hp: 0, atk: 0 };
+    const st = L => (Array.isArray(L) ? L : []).reduce((t, x) => t + (Array.isArray(x) && pos >= (x[0] | 0) ? (x[1] | 0) : 0), 0);
+    return { hp: st(FG.hpSteps), atk: st(FG.atkSteps) };
   }
   // 第 B 波升版（存檔 v4–6 → v7）：卡池從舊 323 張變 5,000 張、id 換成 catalogId，同一位重組會換牌。停在「待說情」或「打到一半的對決」的舊 run，
   //   說情重打要拿到原本那副牌（45 行「同一位、同一副牌」）→ 載入時（ui.js loadSave，換完 id 之後）用「只有舊卡、鍵改回舊 slug」的 content 視圖
@@ -2566,6 +2585,7 @@
         let winHeal = duel.apexMode && apexCfg(content) && Number.isInteger(apexCfg(content).winHeal) ? apexCfg(content).winHeal : T.heal;   // 頂點卡試做：回 winHeal
         if (T.healAdd || (T.healAddNormal && cls === 'normal')) winHeal = Math.max(0, winHeal + (T.healAdd | 0) + (cls === 'normal' ? T.healAddNormal | 0 : 0));   // 第 D 波棒三試煉階級「小氣」（add:{healAdd:−1}；§14-5 備案 healAddNormal＝只有一般客人）：兩種模式都少回（SPEC-D §5.2、CRITIQUE 2.2）
         if (duel.p.fac && duel.p.fx && duel.p.fx.lowHeal > 0 && duel.p.hp * 2 < duel.p.max) { lowHeal = duel.p.fx.lowHeal | 0; winHeal += lowHeal; }   // 第 D 波棒二 冷門「熟客」：聲望不到一半時打贏多回
+        if (duel.p.fac && duel.p.fx && duel.p.fx.lowHealQ > 0 && duel.p.hp * 3 < duel.p.max) { lowHeal += duel.p.fx.lowHealQ | 0; winHeal += duel.p.fx.lowHealQ | 0; }   // 棒三審查派樹「撐住」：聲望不到三分之一時打贏多回（跟熟客疊）
         if (duel.p.fac && duel.p.fx && duel.p.fx.deep > 0) {      // 第 D 波棒三派樹「深耕」（口碑／識破／破例）
           const D = deepNow(duel.p);                               //   carry＝跨場累積：記滿 per 手、打贏那場多回 1（棒三審查：一場最多 3 手，舊的「一場記到 2k 手」第 2、3 級永遠用不到）；沒 carry＝舊規則（這一場 min(級, ⌊手數÷per⌋)）
           deepHeal = D.got;
@@ -2616,7 +2636,8 @@
       settle(run, content);
     } else {
       if (!prologue) run.streak = 0;
-      run.hp = pleaUp ? Math.max(1, run.hpIn - pleaUp) : run.hpIn;   // 輸了不寫回：說情從開打前的聲望重打（棒三審查：說情重打那場加的「老客人的面子」不算進開打前，再說情才不會疊）
+      if (pleaUp) run.hpIn = Math.max(1, run.hpIn - pleaUp);   // 棒三審查：說情重打那場加的「老客人的面子」不算進開打前（choose retry 從 hpIn 起算），再說情才不會疊
+      run.hp = run.hpIn;                                      // 輸了不寫回：說情從開打前的聲望重打
       if (duel.p.fac && duel.p.fx && duel.p.fx.deepCarry) deepKeep(run, deepNow(duel.p).acc);   // 深耕跨場累積：輸的那場記到的手也算（下一場打贏才回）
       if (prologue) run.pending = { type: 'retry', enemyId, free: true };
       else if (run.safety && pos === 1) { run.safety = false; wcStats(run).safety++; run.pending = { type: 'retry', enemyId, free: true, safety: true, pos }; }   // 第 C 波新手保底：第 1 位輸了免費重打一次（不吃說情）
@@ -2658,7 +2679,11 @@
     const out = ['atk', 'def', 'hp'].map(pick => ({ pick, n: T.picks[pick] | 0 }));
     if (run.fac && !(o && o.draft)) {
       const F = facCfg(content), lv = (run.level | 0) - (run.levelUps | 0) + 1;
-      if (F && F.occupy !== false && facDue(run, content, lv)) out.push(...facOffer(run, content, lv).slice(0, facTalHas(run, content, 'pick2') ? 2 : 1));   // 棒三派樹「挑著學」：出兩個
+      if (F && F.occupy !== false && facDue(run, content, lv)) {
+        const P2 = facTalHas(run, content, 'pick2'), nth = P2 ? (P2.nth > 0 ? P2.nth | 0 : P2.once ? 1 : 0) : 0;   // 棒三派樹「挑著學」：出兩個（nth＝只有這一趟第 nth 次本派格；once＝第 1 次；都沒寫＝每次）
+        const two = !!P2 && (!nth || (run.picks || []).filter(x => String(x).startsWith('fac:')).length === nth - 1);
+        out.push(...facOffer(run, content, lv).slice(0, two ? 2 : 1));
+      }
     }
     return out;
   }
@@ -2919,7 +2944,7 @@
     run.bag = bag; run.ace = tier; run.gifts = next.slice();
     if (run.fac) {                                             // 第 D 波棒二：換派＝本派選項清空（第 1 位開打前，本來就空）；棒三：派樹換新派的（o.facTal＝新派的 treeArgs；沒給＝空）
       run.ace = from; facStart(run, content, -1); run.ace = tier;   // 舊派樹開局給的地下串連（聲望上限 +3）先拿回來
-      run.fac = Object.assign({}, run.fac, { picks: {}, tal: facTalOf(content, tier, o && o.facTal) });
+      run.fac = Object.assign({}, run.fac, { picks: {}, tal: facTalOf(content, tier, o && o.facTal) }); delete run.fac.deepAcc;
       facStart(run, content, 1);
     }
     if (want != null) run.aceId = want; else if (run.aceId != null) delete run.aceId;
@@ -4467,8 +4492,9 @@
     CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
-    TREE_OPS, treeNodes, treeNode, treeCost, treePoints, treeWhy, treeBuy, treeSell, treeRespec, treeArgs, treeList, treeFixOne, facTalOf, treeLv3,
-    TRIAL_PASS, addMerge, trialTiers, trialFix, trialPick, trialMul, trialRecord,
+    facGuestAdd, deepNow,
+    TREE_OPS, TREE_FX_MAX, TREE_FX_ADD, treeNodes, treeNode, treeCost, treePoints, treeWhy, treeBuy, treeSell, treeRespec, treeArgs, treeList, treeFixOne, facTalOf, treeLv3,
+    TRIAL_PASS, TRIAL_OPEN_FROM, addMerge, trialTiers, trialFix, trialPick, trialMul, trialRecord,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;

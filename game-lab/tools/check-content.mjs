@@ -1433,12 +1433,22 @@ function treeShape(D, w, P, E, ok) {
       ok(!!p && !p.second, wn + '：start 要是這派的本派選項、不能是第二招（R-F5）：' + x.pick);
       ok(!starts.has(x.pick), wn + '：同一項本派選項不給兩次'); starts.add(x.pick);
     }
-    if (x.op === 'deep') ok(['honest', 'caught'].includes(x.cell) && Number.isInteger(x.max) && x.max >= 1 && x.max <= 3 && x.id === 'a3' && (x.per == null || (Number.isInteger(x.per) && x.per >= 1 && x.per <= 3)), wn + '：深耕在甲 III、cell honest／caught、max 1–3（D 波封頂 3）、per 1–3（幾手算一次）');
+    if (x.op === 'deep') {
+      const perOk = v => Number.isInteger(v) && v >= 1 && v <= 10;
+      ok(['honest', 'caught'].includes(x.cell) && Number.isInteger(x.max) && x.max >= 1 && x.max <= 3 && x.id === 'a3' &&
+        (x.per == null || perOk(x.per) || (Array.isArray(x.per) && x.per.length === x.max && x.per.every(perOk) && x.per.every((v, i) => !i || v <= x.per[i - 1]))) && (x.carry == null || typeof x.carry === 'boolean'),
+        wn + '：深耕在甲 III、cell honest／caught、max 1–3（D 波封頂 3）、per 1–10 或逐級陣列（長度＝max、不遞增）、carry 布林（跨場累積）');
+    }
+    if (x.op === 'fx') {   // 棒三審查：派樹自己的小效果（engine TREE_FX_MAX／TREE_FX_ADD 的鍵，1–3）
+      const keys = Object.keys(x.fx || {}), KN = (E.TREE_FX_MAX || []).concat(E.TREE_FX_ADD || []);
+      ok(keys.length >= 1 && keys.every(k => KN.includes(k) && Number.isInteger(x.fx[k]) && x.fx[k] >= 1 && x.fx[k] <= 3), wn + '：fx 的鍵要在 engine TREE_FX_MAX／TREE_FX_ADD、值 1–3：' + JSON.stringify(x.fx));
+      for (const k of keys) { ok(!seen.has('fx:' + k), wn + '：fx 同一個鍵一派只有一格：' + k); seen.add('fx:' + k); }
+    }
     if (x.op === 'spine') ok(x.n == null || (Number.isInteger(x.n) && x.n >= 1 && x.n <= 3), wn + '：刺蝟 n 1–3（他的品味少算幾點；沒寫＝整個不加）');
     if (x.op === 'pleaHp') ok(Number.isInteger(x.n) && x.n >= 1 && x.n <= 5, wn + '：pleaHp n 1–5');
     if (x.op === 'tieHeal') ok(Number.isInteger(x.n) && x.n >= 1 && x.n <= 3, wn + '：tieHeal n 1–3');
     if (x.op === 'pick2') ok(x.id === 'a2', wn + '：挑著學在甲 II');
-    ok(!seen.has(x.op) || x.op === 'start', wn + '：同一種效果（start 以外）一派只有一格'); seen.add(x.op);
+    ok(!seen.has(x.op) || x.op === 'start' || x.op === 'fx', wn + '：同一種效果（start、fx 以外；fx 照鍵算）一派只有一格'); seen.add(x.op);
   }
 }
 export function factionProblems(C, E) {

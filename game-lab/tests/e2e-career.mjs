@@ -526,7 +526,8 @@ async function runSize(browser, w, h) {
         const t = await title6(page);
         const tierRow = await C(page, () => { const r = document.querySelector('.lb-foot.tierrow'); if (!r) return null; const R = r.getBoundingClientRect(); return { t: Math.round(R.top), b: Math.round(R.bottom), k: r.getAttribute('data-k') }; });
         const sc = await noScroll(page);
-        const lineWant = h > 600 ? fill(x.line, { n: 12, m: 15, name: x.ladder.gold }) : fill(x.lineShort, { n: 12 });
+        // 棒三審查：有一趟在打（這一組有）＋試煉開了＝標題擠，≤700px 高樂歷第二行跟推門那列併成一列（短版）
+        const lineWant = h > 700 ? fill(x.line, { n: 12, m: 15, name: x.ladder.gold }) : fill(x.lineShort, { n: 12 });
         let opened = false;
         try { await tapAt(page, '.lb-foot.cxline button'); await sleep(700); opened = await C(page, () => !!document.querySelector('.lb-page .cx-page')); } catch (_) { opened = false; }
         let more = '', okMore = true;

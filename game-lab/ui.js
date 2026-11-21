@@ -633,7 +633,7 @@
     var lv1 = careerLv().level;
     c.lastGain = Object.assign({ at: runTag(r), ace: r.ace, off: !!r.careerOff, prof: { add: pg.add, lag: !!pg.lag, stamps: pg.stamps | 0, levelUps: pg.levelUps | 0 } }, g);
     var ups = careerUps(lv0, lv1), q = ups.slice();
-    if ((pg.levelUps | 0) > 0) q.push({ prof: r.ace, n: E.profLevel(C, c.prof[r.ace]).level });
+    if ((pg.levelUps | 0) > 0) q.push({ prof: r.ace, n: E.profLevel(C, c.prof[r.ace]).level, up: pg.levelUps | 0 });   // up：升了幾級（?fac=1＝派點 +up）
     if (why === 'abandon') { if (lv1 > lv0) toastAfter(CU('lvUp', { n: lv1 }), 'gold'); return; }   // 放棄（重新推門）：接著就開新的一趟，不演過場卡，吐司說一聲
     UI.careerQ = (UI.careerQ || []).concat(q);
   }
@@ -690,9 +690,11 @@
     if (!cards.length) return Promise.resolve('done');
     return new Promise(function (res) {
       var i = 0, s = null;
-      function profHTML() { return profs.map(function (x) { return '<p class="cx-open prof">' + esc(CU('profUp', { title: (C.aceTitle || {})[x.prof] || '', n: x.n })) + '</p>'; }).join(''); }
+      // 熟練升級那行：?fac=1 時後面接「派點 +n」（棒三審查：原本只寫「經典流 熟練 Lv7」，看不出多了派點）
+      function profHTML() { return profs.map(function (x) { var up = Math.max(1, x.up | 0);
+        return '<p class="cx-open prof">' + esc(CU('profUp', { title: (C.aceTitle || {})[x.prof] || '', n: x.n })) + (treeOn() && FU('treePtsUp') ? '<span class="pp">' + esc(FU('treePtsUp', { n: up })) + '</span>' : '') + '</p>'; }).join(''); }
       function draw() {
-        var k = cards[i], last = i === cards.length - 1, P = careerPts();
+        var k = cards[i], last = i === cards.length - 1, P = careerPts(), TP = last && !(P.left > 0) && treePtsLeft();   // TP：天賦點用完、派點有剩＝最後一張的鈕改「去點派樹」
         var ids = k.list ? k.ids : (k.id ? [k.id] : []), many = ids.length > 1;
         var h = '<div class="cx-card' + (k.list ? ' list' : '') + (k.tierOpen ? ' tier' : '') + '" data-a="next"' + (k.tierOpen ? ' data-tier="' + k.tierOpen + '"' : '') + '>' +
           (k.tierOpen ? '<div class="cx-hd tr"><b>' + esc(TU('tierOpen', { k: k.tierOpen, text: k.text })) + '</b></div>' +   // 第 D 波棒三：「開了第 k 階：…」＋怎麼選、樂歷倍率
@@ -703,7 +705,8 @@
           (k.list ? (k.lad.length ? '<p class="cx-open">' + esc(CU('lvNew', { list: k.lad.map(ladderName).filter(Boolean).join('、') })) + '</p>' : '')
             : (k.lad || []).map(function (key) { return '<p class="cx-open">' + esc(CU('ladderOpen', { name: ladderName(key) })) + '</p>'; }).join('')) +
           (last ? profHTML() : '') +
-          '<div class="foot' + (last && P.left > 0 ? ' two' : '') + '">' + (last && P.left > 0 ? '<button type="button" class="lb-btn key" data-a="talent">' + esc(CU('goTalent')) + '</button>' : '') +
+          '<div class="foot' + (last && (P.left > 0 || TP) ? ' two' : '') + '">' + (last && P.left > 0 ? '<button type="button" class="lb-btn key" data-a="talent">' + esc(CU('goTalent')) + '</button>' :
+            TP ? '<button type="button" class="lb-btn key" data-a="tree">' + esc(FU('goTree')) + '</button>' : '') +
           '<button type="button" class="lb-btn pri key" data-a="next">' + esc(CU('cardNext')) + '</button></div>' +
           (cards.length > 1 ? '<span class="cx-n" aria-hidden="true">' + (i + 1) + '／' + cards.length + '</span>' : '') + '</div>';
         if (s && s.isConnected) { s.innerHTML = h; focusFirst(s); } else { s = floatSheet(h, 'cxcard'); s.addEventListener('click', onClick); }
@@ -715,6 +718,7 @@
         var a = e.target.closest && e.target.closest('[data-a]'); if (!a) return;
         var act = a.getAttribute('data-a');
         if (act === 'talent') { sfx('tick'); close('talent'); return; }
+        if (act === 'tree') { sfx('tick'); UI.careerTab = 'tree'; close('talent'); return; }   // 開樂歷頁的派樹分頁（呼叫端照 'talent' 開樂歷頁）
         if (act !== 'next') return;
         if (i < cards.length - 1) { i++; draw(); } else close('done');
       }
@@ -754,7 +758,7 @@
     if (!careerOk() || firstEver()) return '';
     var lv = careerLv(); if (lv.level < 2) return '';
     var nx = null; try { nx = E.ladderNext(C, lv.level); } catch (_) {}
-    var dot = careerPts().left > 0 ? '<i class="cx-dot" aria-hidden="true"></i>' : '';
+    var dot = careerPts().left > 0 || treePtsLeft() ? '<i class="cx-dot" aria-hidden="true"></i>' : '';   // 棒三審查：?fac=1 派點有剩也亮（原本只看天賦點）
     var mark = function (t) { return esc(t).replace('\u0001', lv.level + dot); };
     var full = nx && ladderName(nx.key) ? CU('line', { n: '\u0001', m: nx.lv, name: ladderName(nx.key) }) : CU('lineAll', { n: '\u0001' });
     return '<p class="lb-foot cxline"><button type="button" class="key" data-a="career" aria-label="' + esc(full.replace('\u0001', lv.level)) + '">' +
@@ -826,6 +830,9 @@
     };
     var m = modal('trialsheet', draw());
     var pane = qs('.pane', m) || m;
+    // 打開時捲到選中的那一階（棒三審查：十三階開滿約 1260 高，選第 12 階的人一打開只看得到第 0–4 階）——整個彈窗在捲（.lb-modal overflow-y），選中那顆放在畫面中間
+    var on = qs('.tr-list li.on', pane);
+    if (on && m.scrollHeight > m.clientHeight + 1) { var mr = m.getBoundingClientRect(), orr = on.getBoundingClientRect(); m.scrollTop = Math.max(0, Math.round(m.scrollTop + orr.top - mr.top - (m.clientHeight - orr.height) / 2)); }
     pane.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-k]'); if (!b) return;
       stopEv(e); sfx('tick');
@@ -852,7 +859,7 @@
     qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
     // 第 D 波棒三（SPEC-D §2.8-2、§3.7；?fac=1 才有）：分頁「天賦｜派樹」。旗標關＝沒有分頁、派樹一行都不畫
     if (treeOn()) {
-      var tab = UI.careerTab === 'tree' ? 'tree' : 'talent', tdot = treeAces().some(function (t) { try { return E.treePoints(C, c, t).left > 0; } catch (_) { return false; } });
+      var tab = UI.careerTab === 'tree' ? 'tree' : 'talent', tdot = treeAces().some(treeCanBuy);
       var tb = el('div', 'cx-tabs', ['talent', 'tree'].map(function (t) {
         return '<button type="button" class="key' + (t === tab ? ' on' : '') + '" role="tab" data-tab="' + t + '" aria-selected="' + (t === tab ? 'true' : 'false') + '">' +
           esc(t === 'tree' ? FU('treeTab') : CU('tabTalent')) + (t === 'tree' && tdot ? '<i class="cx-dot" aria-hidden="true"></i>' : t === 'talent' && P.left > 0 ? '<i class="cx-dot" aria-hidden="true"></i>' : '') + '</button>';
@@ -941,6 +948,10 @@
   //   每格：名字＋狀態（幾點／已點／幾級、為什麼還不能點）＋－／＋（44×44）；點格子本身＝展開說明（start 格連那項本派選項的說明一起）。
   //   存檔只寫 save.career.tree[派]（engine treeBuy／treeSell／treeRespec 回新物件）；下一趟開局 createRun 帶 treeArgs（關樂歷＝{}）
   function treeOn() { return !!(UI.fac && FAC() && E.treeList && E.treePoints && E.treeBuy && careerOk()); }
+  // 有沒有哪一派還有沒點的派點（?fac=1 才算；標題樂歷那行的小紅點、過場卡「去點」）
+  function treePtsLeft() { if (!treeOn()) return false; return treeAces().some(treeCanBuy); }
+  // 這一派有沒有格子現在點得下去（派點有剩、而且有能點的格；全點滿還有剩的派點不算——不然小紅點永遠亮）
+  function treeCanBuy(t) { try { return E.treePoints(C, save.career, t).left > 0 && E.treeList(C, save.career, t).some(function (N) { return !N.soon && !N.why; }); } catch (_) { return false; } }
   function treeAces() { var un = unlockedNow(); return un.length ? un : [TIERS.indexOf(save.lastAce) >= 0 ? save.lastAce : 'hall']; }
   function treeWhyTx(N, L) {
     if (N.soon) return FU(N.soon === 'apex' ? 'treeSoonApex' : N.soon === 'market' ? 'treeSoonMarket' : 'treeSoon');
@@ -951,16 +962,18 @@
     if (N.why === 'points') return FU('treeCost', { n: N.cost }) + '・' + FU('treeNoPts');
     return FU('treeCost', { n: N.cost });
   }
-  // 點開的說明：節點自己的句子；start 格（本派格先出）多「那項本派選項：說明」＋先出的意思；挑著學、深耕照節點句子
+  // 每格的說明（棒三審查：一律攤開，不用點開才看得到；原本收合時只有名字跟點數，看不出點了會怎樣）：節點自己的句子；
+  //   start 格（開局就會那項本派選項）多「那項本派選項的說明」；之後開放的格子：說明＋（狀態行已經寫「之後開放」，不重複）
   function treeDescHTML(ace, N) {
     var out = [];
     if (N.text) out.push('<span class="d">' + facNw(N.text) + '</span>');
+    var dh = N.op === 'deep' ? ((FAC() || {}).ui || {}).deepHow : null;   // 深耕：記的一手是什麼（棒三審查：「信對」只在這裡出現，要說清楚）
+    if (dh && dh[N.cell]) out.push('<span class="d how">' + esc(dh[N.cell]) + '</span>');
     if (N.op === 'start' && N.pick) {
       var P0 = facPickOf(ace, N.pick);
       if (P0) out.push('<span class="d pk"><i>' + esc(P0.name) + '</i>' + facNw(P0.text) + '</span>');
       if ((FAC() || {}).treeStart === 'first' && FU('treeFirstHow')) out.push('<span class="d how">' + esc(FU('treeFirstHow')) + '</span>');
     }
-    if (N.soon && !N.text) out.push('<span class="d">' + esc(treeWhyTx(N, [])) + '</span>');
     return out.join('');
   }
   function renderTree(pg, keepTop) {
@@ -969,31 +982,31 @@
     UI.treeAce = ace;
     var D0 = facDef(ace), L = [], P = { level: 1, total: 0, spent: 0, left: 0 }, pf = { level: 1, stamps: 0, per: 10, into: 0, stamp: 150 };
     try { L = E.treeList(C, c, ace) || []; P = E.treePoints(C, c, ace); pf = E.profLevel(C, (c.prof || {})[ace]); } catch (e) { console.error(e); }
-    var open = UI.treeOpen || (UI.treeOpen = {});
     // 派別切換（只列已解鎖的派；一派也是一顆，當標題用）
     var sw = '<div class="tr-aces" role="tablist">' + aces.map(function (t) {
-      var D1 = facDef(t), a1 = (C.aceAxis || {})[t] || '', left = 0; try { left = E.treePoints(C, c, t).left; } catch (_) {}
+      var D1 = facDef(t), a1 = (C.aceAxis || {})[t] || '', left = treeCanBuy(t) ? 1 : 0;
       return '<button type="button" class="key' + (t === ace ? ' on' : '') + '" role="tab" data-ace="' + t + '" aria-selected="' + (t === ace ? 'true' : 'false') + '"><span class="fi ' + esc(a1) + '" aria-hidden="true">' + esc((D1 && D1.icon) || '') + '</span>' +
         esc((C.aceTitle || {})[t] || '') + (left > 0 ? '<i class="cx-dot" aria-hidden="true"></i>' : '') + '</button>';
     }).join('') + '</div>';
     var pp = pf.per > 0 ? Math.round(((pf.stamps | 0) * pf.stamp + (pf.into | 0)) * 100 / (pf.per * pf.stamp)) : 0;
     var head = '<div class="tr-head"><div class="cx-head"><b class="lv">' + esc(FU('treeOf', { title: (C.aceTitle || {})[ace] || '' })) + '</b><span class="pts' + (P.left > 0 ? ' has' : '') + '">' + esc(FU('treePoints', { n: Math.max(0, P.left) })) + '</span></div>' +
-      '<p class="sub tr-prof"><span>' + esc(CU('prof', { n: pf.level, s: pf.stamps, per: pf.per })) + '</span><span>' + esc(FU('treeHow')) + '</span></p>' +
+      '<p class="sub tr-prof"><span>' + esc(CU('prof', { n: pf.level, s: pf.stamps, per: pf.per })) + '</span></p>' +
       '<span class="cx-bar big" aria-hidden="true"><i style="width:' + Math.max(0, Math.min(100, pp)) + '%"></i></span>' +
+      '<p class="sub tr-how">' + esc(FU('treeHow')) + '</p>' +
       (c.off ? '<p class="note tr-off">' + esc(FU('treeOffNote')) + '</p>' : '') + '<p class="sub cx-nr">' + esc(CU('nextRun')) + '</p></div>';
     var PN = (FAC().ui || {}).treePath || {};
     var paths = ['a', 'b', 'c'].map(function (pa) {
       var nodes = L.filter(function (N) { return N.path === pa; }).sort(function (x, y) { return x.layer - y.layer; });
       if (!nodes.length) return '';
       return '<section class="tr-path p-' + pa + '"><div class="lb-h2">' + esc(PN[pa] || pa) + '</div><ol class="tr-nodes">' + nodes.map(function (N) {
-        var live = !N.soon, k = N.k | 0, have = k > 0, isOpen = !!open[ace + ':' + N.id];
+        var live = !N.soon, k = N.k | 0, have = k > 0;
         var lvTx = N.max > 1 ? FU('treeLv', { k: k, max: N.max }) : have ? FU('treeHave') : '';
         var canBuy = live && !N.why, canSell = live && have;
-        return '<li class="tr-node cx-row' + (N.soon ? ' soon' : '') + (have ? ' have' : '') + (N.why === 'need' || N.why === 'prof' ? ' lock' : '') + (isOpen ? ' open' : '') + '" data-id="' + esc(N.id) + '" data-layer="' + N.layer + '">' +
-          '<button type="button" class="tx key" data-a="desc" aria-expanded="' + (isOpen ? 'true' : 'false') + '">' +
+        return '<li class="tr-node cx-row' + (N.soon ? ' soon' : '') + (have ? ' have' : '') + (N.why === 'need' || N.why === 'prof' ? ' lock' : '') + '" data-id="' + esc(N.id) + '" data-layer="' + N.layer + '">' +
+          '<div class="tx">' +
             '<span class="nm"><span class="ly" aria-hidden="true">' + ['Ⅰ', 'Ⅱ', 'Ⅲ'][N.layer - 1] + '</span><b>' + esc(N.name) + '</b>' + (lvTx ? '<span class="now">' + esc(lvTx) + '</span>' : '') + '</span>' +
-            '<span class="st">' + (N.soon || N.why === 'need' || N.why === 'prof' ? lockIcon(10) : '') + esc(N.why === 'max' && N.max === 1 ? '' : treeWhyTx(N, L)) + '</span>' +
-            '<span class="ds">' + treeDescHTML(ace, N) + '</span></button>' +
+            '<span class="ds">' + treeDescHTML(ace, N) + '</span>' +
+            '<span class="st">' + (N.soon || N.why === 'need' || N.why === 'prof' ? lockIcon(10) : '') + esc(N.why === 'max' && N.max === 1 ? '' : treeWhyTx(N, L)) + '</span></div>' +
           (live ? '<div class="pm"><button type="button" class="lb-btn key" data-tsell="' + esc(N.id) + '" aria-label="' + esc(N.name + ' ' + CU('sell')) + '"' + (canSell ? '' : ' disabled') + '>－</button>' +
             '<button type="button" class="lb-btn key" data-tbuy="' + esc(N.id) + '" aria-label="' + esc(N.name + ' ' + CU('buy')) + '"' + (canBuy ? '' : ' disabled') + '>＋</button></div>' : '') + '</li>';
       }).join('') + '</ol></section>';
@@ -1024,7 +1037,6 @@
         sfx('tick');
       } else {
         var act = b.getAttribute('data-a');
-        if (act === 'desc') { var li = b.closest('[data-id]'), key = ace + ':' + li.getAttribute('data-id'); open[key] = !open[key]; li.classList.toggle('open', !!open[key]); b.setAttribute('aria-expanded', open[key] ? 'true' : 'false'); sfx('tick'); return; }
         if (act === 'trespec') { res = E.treeRespec(C, save.career, ace); sfx('tick'); toast(CU('respecDone')); }
         else return;
       }
@@ -2252,6 +2264,12 @@
     if (!D0 || !Array.isArray(D0.tree) || (FAC() || {}).treeStart !== 'first') return [];
     return D0.tree.filter(function (N) { return N && N.op === 'start' && !N.soon && tal[N.id] > 0; }).map(function (N) { return (facPickOf(r.ace, N.pick) || {}).name || ''; }).filter(Boolean);
   }
+  // 這一趟帶著的派樹格（不含 start：開局就會的那項本派選項已經在本派選項清單）→「口碑 2 級」「老客人的面子」
+  function facTreeNames(r) {
+    var D0 = r && facDef(r.ace), tal = (r && r.fac && r.fac.tal) || {};
+    if (!D0 || !Array.isArray(D0.tree)) return [];
+    return D0.tree.filter(function (N) { return N && N.op !== 'start' && !N.soon && tal[N.id] > 0; }).map(function (N) { return N.name + ((N.max | 0) > 1 ? ' ' + FU('treeLvN', { k: tal[N.id] | 0 }) : ''); });
+  }
   // 換派（switchAce）時帶新派的派樹（第 D 波棒三 CONTRACT §3：帶派別的 run 才給；樂歷關＝{}）；沒有派別＝不多參數（逐字照舊）
   function facTalFor(r, tier) {
     if (!r || !r.fac || !E.treeArgs || !careerOk()) return undefined;
@@ -2341,9 +2359,13 @@
     if (left.leech != null) rows.push(FU('leftLeech', { n: left.leech }));
     if (left.thorn != null) rows.push(FU('leftThorn', { n: left.thorn }));
     // 第 D 波棒三派樹：深耕這場記到幾手（view().fac.deep；沒樹沒有）、本派格先出的那幾項（run.fac.tal 的 start 節點）
-    if (f.deep && FU('deepNow')) rows.push(FU('deepNow', { name: facDeepName({ ace: f.tier }), h: f.deep.hands | 0, n: f.deep.got | 0 }));
+    //   棒三審查：深耕跨場累積「記了 h／per 手」＋下一行說一手是什麼；這一趟帶著的派樹格（開局就會的本派選項列在本派選項那段）
+    if (f.deep && FU('deepNow')) { rows.push(FU('deepNow', { name: facDeepName({ ace: f.tier }), h: f.deep.carry ? f.deep.acc | 0 : f.deep.hands | 0, per: f.deep.per | 0 }));
+      var dh = (FAC().ui || {}).deepHow; if (dh && dh[f.deep.cell]) rows.push(dh[f.deep.cell]); }
     var fst = r && r.fac && r.duel === d ? facStartNames(r) : [];
     if (fst.length) rows.push(FU('treeStart', { list: fst.join('、') }));
+    var tm = r && r.fac && r.duel === d ? facTreeNames(r) : [];
+    if (tm.length && FU('treeMine')) rows.push(FU('treeMine', { list: tm.join('、') }));
     var ax = (C.aceAxis || {})[f.tier] || '';
     // 審查 棒二：本派選項改掉代價（有人記得＝被剋不多扣、爆擊＝比星輸不多扣）→ 代價那行劃掉、標「已取消」（看這場的 fx，不是派別原文）；
     //   拿過的本派選項逐項列「名字：說明」（加多扣、回更多、每場第一次不扣…照實寫，不再只列名字）
