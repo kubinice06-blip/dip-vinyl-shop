@@ -4807,7 +4807,7 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
 
   // ---- 2 階表疊加（§10.1-6、§5.2）：第 k 階＝前 k 條全部算；相對值（{add}）；guestHp {add:3}＝基準 +3（是數字不是物件） ----
   { const L = K.trial.tiers, T = k => EN.trialCfg(K, k), B = T(0);
-    eq(L.map(x => x.name), ['不說', '好貨', '話少', '菁英', '老藏家', '會唬', '硬底', '小氣', '挑剔', '大場面'], 'tiers: final order (SPEC-D §5.2)');
+    eq(L.map(x => x.name), ['不說', '好貨', '話少', '菁英', '老藏家', '會唬', '硬底', '小氣', '挑剔', '大場面', '更挑剔', '更小氣', '更硬底'], 'tiers: final order (SPEC-D §5.2; 第 11–13 階 棒三 sim T-4)');
     eq(EN.trialTiers(K).map(x => [x.k, x.name, x.text]), L.map((x, i) => [i + 1, x.name, x.text]), 'trialTiers: k from 1, name, text');
     const r6 = x => Math.round(x * 1e6) / 1e6, N = B.curve.hintMix.none, HF = B.curve.hintMix.half, Q = B.curve.q;
     eq([T(1).curve.hintMix.none.base, T(1).curve.hintMix.none.max], [r6(N.base + 0.05), r6(N.max + 0.05)], 'tier 1 不說: none +5%');
@@ -4819,7 +4819,10 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     eq([EN.trialGuest(K, 19, 'elite', 9).atk - EN.trialGuest(K, 19, 'elite', 8).atk, EN.trialGuest(K, 18, 'normal', 9).atk - EN.trialGuest(K, 18, 'normal', 8).atk], [1, 0], 'tier 9: elite +1, normal +0');
     eq([T(8).healAddNormal, T(10).healAddNormal, 'healAdd' in T(10)], [-1, -1, false], 'tier 8 小氣: healAddNormal −1 (only normal guests; §14-5 n4000 −13.6 → 一般客人才少回), stays on above');
     eq(T(10).guestHp, { normal: B.guestHp.normal, elite: B.guestHp.elite + 6, boss: B.guestHp.boss + 6 }, 'tier 10 大場面: elite／boss = tier 4／5 +3 and +3 again (+6)');
-    eq(T(11), T(10), 'tier past the end = all tiers');
+    eq(T(L.length + 1), T(L.length), 'tier past the end = all tiers');
+    // 第 11–13 階（棒三 sim：T-4 十階不夠，§14-5 往上加）：更挑剔＝所有客人品味 +1（菁英藏家共 +2）、更小氣＝打贏都再少回 1、更硬底＝底氣再 +1（共 +2）
+    eq([T(11).curve.atk.add, T(11).curve.atk.elite, T(11).curve.atk.boss, T(12).healAdd, T(12).healAddNormal, T(13).curve.def.add], [B.curve.atk.add + 1, 1, B.curve.atk.boss + 1, -1, -1, B.curve.def.add + 2], 'tier 11 atk +1 (all), tier 12 healAdd −1, tier 13 def +2');
+    eq([EN.trialGuest(K, 18, 'normal', 11).atk - EN.trialGuest(K, 18, 'normal', 0).atk, EN.trialGuest(K, 19, 'elite', 11).atk - EN.trialGuest(K, 19, 'elite', 0).atk, EN.trialGuest(K, 20, 'boss', 13).def - EN.trialGuest(K, 20, 'boss', 0).def], [1, 2, 2], 'trialGuest tier 11: normal +1, elite +2; tier 13: def +2');
     ok(!('name' in T(10)) && !('text' in T(10)), 'name／text are not merged into the config');
     const G = (k, pos, cls) => EN.trialGuest(K, pos, cls, k);
     eq([G(10, 20, 'boss').hp - G(0, 20, 'boss').hp, G(10, 19, 'elite').hp - G(0, 19, 'elite').hp, G(10, 18, 'normal').hp - G(0, 18, 'normal').hp], [6, 6, 0], 'trialGuest tier 10: elite／boss +6, normal +0');
@@ -4850,6 +4853,7 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
         const f = EN.startFight(run, K, {}); EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); return EN.finishFight(run, K).heal; };
       eq([atPos(8, 4), atPos(8, 5)], [3, 3], 'tier 8: elite／boss still heal 3'); }
     eq([winHealAt(0, true), winHealAt(8, true)], [4, 3], 'apex mode: 4 → 3 at tier 8 (CRITIQUE 2.2)');
+    eq([winHealAt(11, false), winHealAt(12, false), winHealAt(12, true)], [2, 1, 2], 'tier 12 更小氣: normal 3 → 1 (with tier 8), apex normal 4 → 2');
     // §14-5 備案：add:{healAddNormal:−1}＝只有一般客人少回（菁英、藏家照舊）
     const CN = Object.assign({}, K, { trial: Object.assign({}, K.trial, { tiers: [{ name: 'x', text: 'x', add: { healAddNormal: -1 } }] }) });
     const at = (pos, apex) => { const run = EN.newRun(CN, { seedKey: 'hn' + pos, runNo: 2, ace: 'hall', prologue: false, tier: 1 }); EN.choose(run, CN, EN.bargainPolicy(run, CN)); EN.jumpTo(run, CN, pos); run.hp = 4;
@@ -4869,7 +4873,7 @@ section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
     r = R({ open: MAX, pick: MAX, best: {} }, { reached: 40, from: 1, tier: MAX }); eq([r.opened, r.trial.open, r.trial.best[MAX]], [0, MAX, 40], 'top tier: stays open ' + MAX);
     r = R({ open: 2, pick: 2, best: {} }, { reached: 30, from: 1, tier: 99 }); eq([r.trial.best[MAX], r.opened], [30, 0], 'sum.tier past the end → clamped to the top tier');
     eq(EN.trialFix(K, null), { open: 0, pick: 0, best: {} }, 'trialFix(null)');
-    eq(EN.trialFix(K, { open: 99, pick: 120, best: { 0: 33, 3: -1, 4: 2.7, 11: 9, x: 5 }, extra: 1 }), { open: MAX, pick: MAX, best: { 0: 33, 4: 2 }, extra: 1 }, 'trialFix: clamps open／pick, drops bad best keys, keeps others');
+    eq(EN.trialFix(K, { open: 99, pick: 120, best: { 0: 33, 3: -1, 4: 2.7, [MAX + 1]: 9, x: 5 }, extra: 1 }), { open: MAX, pick: MAX, best: { 0: 33, 4: 2 }, extra: 1 }, 'trialFix: clamps open／pick, drops bad best keys, keeps others');
     eq([EN.trialPick(K, { open: 2, pick: 5 }), EN.trialPick(K, { open: 4, pick: 3 }), EN.trialPick(K, {})], [2, 3, 0], 'trialPick ∈ 0…open');
     eq([EN.trialMul(K, 0), EN.trialMul(K, 3), EN.trialMul(K, 10), EN.careerGain(K, { reached: 11, from: 1, bestStreak: 0, lexp: {} }, { tier: 3, best: 20 }).tierMul], [1, 1.3, 2, 1.3], 'trialMul = careerGain tierMul (1 + 0.1k)');
     // 真的一趟：第 0 階打到第 21 位（jumpTo 20 → 打贏藏家 → 領完獎走到 21）
