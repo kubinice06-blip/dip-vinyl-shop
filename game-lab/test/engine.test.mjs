@@ -7,6 +7,7 @@
 //   （十個分類＋三個子曲風區 citypop／indierock／indiepop＋new＋picks＋feature；真卡照第一個曲風／台灣分區，不夠的補 fx-* 假卡），#8 #15 照契約驗上貨。
 //   v5 店面改版（店主 11-13）：POP 改 CITY POP、門口長櫃拆 INDIE ROCK／INDIE POP；這三區看子曲風（卡的 subs，規則 sub），不看第一個曲風。
 //   第 I 波 I-0（SPEC-I §7）：舊段落的 C 關掉第一位升級（firstNeed 0），黃金照舊；#29–#31 的黃金改在 I0OFF(content) 上比、出貨 content 上比變體彼此一致；新規則在 #32。
+//   活店第二階段切磋（SPEC-H §12.1 LE1–LE10、LE12）：#34；#34 一律用 on:true 的拷貝（出貨 content p2b 收尾已打開；LE1 的「關著」用 on:false 的拷貝）；欄位一律 run.spar（規格的 run.enc）。
 import { createRequire } from 'module';
 import fs from 'fs';
 import path from 'path';
@@ -4754,7 +4755,452 @@ section('33 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 
     ok(EN.careerCfg(K).ladder.filter(L => L && L.key === 'bgmShelf').length === 1 && EN.careerCfg(K).ladder.some(L => L && L.key === 'bgmShelf' && L.lv === 5 && L.ui === true && !L.soon && !POWERK.some(k => k in L)), 'I-4: Lv5 bgmShelf is one ui-only cell'); }
 });
 
-section('34 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5；§10.1 第 1、6、7 條＋棒三）：旗標關／第 0 階＝逐字現況（黃金）、階表疊加與相對值、小氣兩種模式、過關＝第 21 位、開階與紀錄、派點與價、買賣重配、讀檔整理、進局（start／挑著學／深耕／說情 +3／刺蝟／圈內人）、preview＝resolve、?fac=1 客人', () => {
+// =====================================================================================================
+// #34 活店第二階段：切磋（＝店主說的遭遇戰；scratchpad v5/liveshop SPEC-H §7、§8、§12.1；契約 liveshop/p2/CONTRACT.md）。
+//   欄位一律 spar（規格的 run.enc／run.stats.enc；run.stats.enc 已被第 I 波翻面佔用）。content 出貨 C.encounter.on false → 這裡用 on:true 的拷貝（CE／CEB＝包包模式）
+// =====================================================================================================
+section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、LE2 出現率、LE3 開／改天不碰主線、LE4 開打不碰主線＋短局＋fightSetup 同一個入口、LE5 戰利品列、LE6 輸了不扣、LE7 收／不收、LE8 作廢、LE9 fixEnc、LE10 encView、LE12 主線亂數不動、不動清單逐欄、encPolicy', () => {
+  EN.setCtx(null);
+  const CE = Object.assign({}, CW, { encounter: Object.assign({}, C0.encounter, { on: true }) });
+  const CWoff = Object.assign({}, CW, { encounter: Object.assign({}, C0.encounter, { on: false }) });   // 開關關著（LE1）
+  const CEB = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { reward: 'bag' }) });
+  const REG = C0.regulars, RIDS = Object.keys(REG), W = RIDS.reduce((s, k) => s + REG[k].encW, 0);
+  const WIN = { kind: 'counter', toE: 99, toP: 0 }, LOSE = { kind: 'countered', toE: 0, toP: 99 };
+  const playOut = (duel, how) => { let g = 0; while (!duel.over && g++ < 12) EN.resolveTurn(duel, EN.legalActions(duel)[0], { debugOutcome: how }); return duel; };
+  const J = x => JSON.stringify(x), SUM = {};
+  // 拿掉允許變的欄位後的 run（不動清單逐欄比）
+  const strip = (r, extra) => { const o = JSON.parse(J(r)); delete o.spar; if (o.stats) delete o.stats.spar;
+    for (const k of extra || []) { const ks = k.split('.'); let t = o; for (let i = 0; i < ks.length - 1 && t; i++) t = t[ks[i]]; if (t) delete t[ks[ks.length - 1]]; } return J(o); };
+  const fake = (sk, rn, pos, x) => Object.assign({ seedKey: sk, runNo: rn, pos, prologue: 'done', pending: null, over: null, duel: null, dare: null }, x || {});
+  const fightRun = (sk, K, o) => { const r = EN.newRun(K || CE, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K || CE, EN.bargainPolicy(r, K || CE)); return r; };
+  // 找一位有邀請的（真的 run；jumpTo 到那一位）
+  const findOffer = (tag, K, o, from) => {
+    for (let s = 0; s < 300; s++) for (let p = from || 6; p <= (from || 6) + 14; p++) {
+      if (EN.classAt(p) !== 'normal' || !EN.encOffer(fake(tag + s, 2, p), K || CE)) continue;
+      const r = fightRun(tag + s, K, o); EN.jumpTo(r, K || CE, p);
+      if (EN.nextStep(r) === 'fight' && EN.encOffer(r, K || CE)) return r;
+    }
+    throw new Error('no offer for ' + tag);
+  };
+  const cycle = (r, K, how, after, o) => {   // 開 → 接 → 打 → 完；after(r) 收／不收
+    const a = EN.choose(r, K, { type: 'encOpen' }), b = EN.choose(r, K, { type: 'encAccept' });
+    const s = EN.encStart(r, K, o || {}); playOut(s.duel, how);
+    const f = EN.encFinish(r, K, s.duel, o || {});
+    const c = after ? after(r) : null;
+    return { a, b, s, f, c };
+  };
+
+  // ---- LE1 不出的情況（全回 null；同輸入兩次一樣）----
+  { let on = 0, n = 0, bad = 0;
+    for (let s = 0; s < 400; s++) for (let p = 1; p <= 40; p++) {
+      const f = fake('le1-' + s, 1 + (s % 3), p), of = EN.encOffer(f, CE);
+      if (J(of) !== J(EN.encOffer(f, CE))) bad++;
+      if (EN.encOffer(f, CWoff) !== null) bad++;                      // 開關關著（on false；出貨 content 第二階段收尾已打開 → 用拷貝關掉）
+      if (p <= 5 && of) bad++;
+      if (EN.classAt(p) !== 'normal' && of) bad++;
+      if (of) { on++;
+        for (const x of [{ pending: { type: 'stall' } }, { pending: { type: 'reward' } }, { pending: { type: 'retry' } }, { pending: { type: 'level' } }, { pending: { type: 'draft' } },
+          { over: 'dead' }, { duel: { p: {}, e: {} } }, { prologue: 'pending' }, { dare: { round: EN.roundOf(p), mode: 'tough' } }])
+          if (EN.encOffer(Object.assign({}, f, x), CE) !== null) bad++;
+        if (!EN.encOffer(Object.assign({}, f, { dare: { round: EN.roundOf(p) - 1, mode: 'tank' } }), CE)) bad++;   // 上一輪的帖不擋
+        if (!(of.pos === p && of.round === EN.roundOf(p) && RIDS.includes(of.who))) bad++;
+      }
+      n++;
+    }
+    ok(bad === 0 && on > 500, 'LE1 encOffer: off／pos 1–5／elite／boss／pending stall reward retry level draft／over／duel／prologue／dare round → null; deterministic', { bad, on, n });
+    ok(EN.sparCfg(C0).on === true && C0.encounter.reward === 'shelf', 'shipping content: encounter on (phase 2 closed out after LS0–LS9, p2b), reward shelf'); }
+
+  // ---- LE2 出現率（20,000 組 seedKey×runNo×輪）----
+  { const K = 20000; let rounds = 0, hit = 0, multi = 0; const idx = [0, 0, 0, 0, 0], who = {};
+    for (let k = 0; k < K; k++) {
+      const sk = 'le2-' + (k % 4000), rn = 1 + Math.floor(k / 4000), rd = 2 + (k % 23);
+      let c = 0; rounds++;
+      for (let i = 0; i < 5; i++) { const of = EN.encOffer(fake(sk, rn, (rd - 1) * 5 + i + 1), CE); if (of) { c++; idx[i]++; who[of.who] = (who[of.who] | 0) + 1; } }
+      if (c) hit++; if (c > 1) multi++;
+    }
+    const share = hit / rounds; SUM.le2 = { share: +share.toFixed(4), idx: idx.slice(0, 3).map(x => +(x / hit).toFixed(3)) };
+    ok(Math.abs(share - 0.5) <= 0.015 && multi === 0, 'LE2 rounds with an offer 0.50±0.015, ≤1 per round', { share, multi });
+    ok(idx[3] === 0 && idx[4] === 0 && [0, 1, 2].every(i => Math.abs(idx[i] / hit - 1 / 3) <= 0.02), 'LE2 idx 0／1／2 each 1/3±0.02, elite／boss 0', idx);
+    ok(RIDS.every(id => Math.abs((who[id] | 0) / hit - REG[id].encW / W) <= 0.02), 'LE2 who ∝ encW ±0.02', RIDS.map(id => [id, ((who[id] | 0) / hit).toFixed(3), (REG[id].encW / W).toFixed(3)])); }
+
+  // ---- LE3 encOpen＋encDecline 不碰主線；run.rng 不變；同一位不能再開 ----
+  { let bad = 0;
+    for (let s = 0; s < 12; s++) {
+      const r = findOffer('le3-' + s + '-'), j0 = strip(r), rng0 = r.rng;
+      const a = EN.choose(r, CE, { type: 'encOpen' });
+      if (!a.ok || r.spar.state !== 'offer' || r.spar.pos !== r.pos || r.stats.spar.offered !== 1) bad++;
+      if (EN.choose(r, CE, { type: 'encOpen' }).error !== 'sparDone') bad++;
+      const d = EN.choose(r, CE, s % 2 ? { type: 'encDecline', lapse: true } : { type: 'encDecline' });
+      if (!d.ok || r.spar.state !== (s % 2 ? 'lapsed' : 'declined')) bad++;
+      if (EN.choose(r, CE, { type: 'encAccept' }).ok || EN.choose(r, CE, { type: 'encOpen' }).ok || EN.encStart(r, CE) !== null) bad++;
+      if (strip(r) !== j0 || r.rng !== rng0) bad++;
+      if (EN.encPolicy(r, CE, { policy: 'smart' }) !== null) bad++;          // 這一位開過了
+    }
+    ok(bad === 0, 'LE3 open + decline／lapse: only spar／stats.spar change; rng same; no reopen', bad); }
+
+  // ---- LE4 開打：run 一個欄位都不動、短局、他＝enemyDef at posEff、你這一邊＝startFight 的 fightSetup ----
+  { let bad = 0, n = 0; const info = [];
+    const variants = [['plain', CE, {}, {}], ['fac', CE, { fac: true }, {}], ['apex', CE, {}, { apex: true }], ['fac+apex', CE, { fac: true }, { apex: true }]];
+    for (const [nm, K, ro, so] of variants) for (let s = 0; s < 6; s++) {
+      const r = findOffer('le4-' + nm + s + '-', K, Object.assign({ ace: EN.TIERS[s % 3] }, ro), 6 + 5 * (s % 4));
+      r.encCarry = { give: 'again' }; r.hintSeen = ['zz-hint'];
+      EN.choose(r, K, { type: 'encOpen' }); EN.choose(r, K, { type: 'encAccept' });
+      const who = r.spar.who, j0 = J(r);
+      const st = EN.encStart(r, K, so), d = st.duel;
+      if (J(r) !== j0 || r.duel !== null) { bad++; info.push([nm, 'run changed']); }
+      // 等效位數＝pos＋熟客自己的 off＋content.encounter.posAdd（下半）；短局比例照 content 讀（不寫死 0.6）
+      const XS = EN.sparCfg(K), posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(XS.posAdd, r.pos)), view = EN.encView(K, who);   // 位移可以照位數走（p2b）
+      if (EN.sparPos(r, K, who) !== posEff || EN.sparPos(r, K, who, true) !== Math.max(1, r.pos + REG[who].enc.off)) { bad++; info.push([nm, 'sparPos']); }
+      const e0 = EN.enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+      const sd = EN.sparDeck(view, who, posEff, { main: REG[who].enc.main, tier: r.tier });
+      const g = EN.trialGuest(K, posEff, 'normal', r.tier), c6 = x => Math.ceil(Math.round(XS.short * x * 1e6) / 1e6);
+      const FA = EN.facGuestAdd(r, K, Math.max(1, r.pos));   // 第 D 波棒三合併：?fac=1 時切磋客人也加同一位主線客人的 factions.guest（照第幾位；旗標關＝0）
+      if (!(d.e.taste === e0.taste && d.e.q === e0.q && d.e.atk === e0.atk + FA.atk && d.e.def === e0.def && d.e.planner === e0.planner && d.e.main === REG[who].enc.main
+        && d.e.mercyP === e0.mercyP && d.e.rho === e0.rho && d.e.half === e0.half && d.e.none === e0.none && d.e.hit === e0.hit)) { bad++; info.push([nm, 'enemy', d.e.taste, e0.taste, d.e.q, e0.q]); }
+      // 牌組＝他自己的 7 張（不換牌）、星數＝sparDeck 補過的（公開牌單 deckPub 的星數一張一張對）
+      if (J(d.e.deckIds) !== J(REG[who].enc.deck) || d.e.deckSize !== REG[who].enc.deck.length
+        || J(d.e.deckPub.map(x => [x.id, x.c, x.o, x.h])) !== J(sd.map(c => [c.id, c.c, c.o, c.h]))) { bad++; info.push([nm, 'deck']); }
+      if (!(d.p.hp === d.p.max && d.p.hp === c6(r.maxHp) && d.e.hp === d.e.max && d.e.max === c6(g.hp + FA.hp))) { bad++; info.push([nm, 'hp', d.p.hp, d.p.max, r.maxHp, d.e.hp, d.e.max, g.hp]); }
+      if (d.e.hkey !== ((EN.fnv1a32(r.seedKey + '#' + r.runNo + '#enc#' + r.pos + '#' + who) >>> 0) || 1)) { bad++; info.push([nm, 'seed']); }
+      if (d.p.enc || d.stats.enc || st.enemyId !== who || !d.spar || d.spar.pos !== r.pos || d.e.name !== REG[who].name || d.e.title !== null) { bad++; info.push([nm, 'misc']); }
+      // 你這一邊：跟同一個 run 的主線 startFight（走 fightSetup）一樣，只差聲望與種子（還有翻面：切磋沒有）
+      const m = EN.startFight(JSON.parse(j0), K, so).duel, side = x => ({ atk: x.p.atk, def: x.p.def, relics: x.p.relics.map(q => q.id || q), ace: x.p.ace && x.p.ace.id, ability: x.p.ability || null,
+        fac: x.p.fac || null, fx: x.p.fx || null, apexMode: !!x.apexMode, bag: x.p.draw.concat(x.p.hand).map(c => c.id).sort() });
+      if (J(side(d)) !== J(side(m))) { bad++; info.push([nm, 'player side', side(d), side(m)]); }
+      if (so.apex && !d.apexMode) { bad++; info.push([nm, 'apex']); }
+      if (ro.fac && !d.p.fac) { bad++; info.push([nm, 'fac']); }
+      if (!m.p.enc && EN.encCfg(K)) { bad++; info.push([nm, 'main has encore']); }
+      n++;
+    }
+    ok(bad === 0 && n === 24, 'LE4 encStart: run untouched, short game hp＝max＝ceil(short×), enemy＝enemyDef at posEff (pos＋off＋posAdd), deck＝his own 7 (sparDeck stars), no ace, hash seed, no encore, player side＝startFight (plain／fac／apex／fac+apex)', info.slice(0, 4)); }
+  // 熟客出的 7 張＝他自己的 7 張（主線 11-21 裁定：牌組身分跟強度分開；不管 posAdd 多大都不換牌，只照等效位數補星）
+  { let bad = 0, n = 0, filled = 0, same = 0; const info = [];
+    const Kc = C0.trial.curve.deck, cap = Kc.buffCap, flAt = d => Math.min(Kc.floorMax, Kc.floorBase + Math.floor(Kc.floorRate * d)), bAt = d => Math.floor(Math.max(0, d - Kc.buffFrom) / Kc.buffEvery);
+    // 一張牌補得對不對：g＝content 原卡、c＝sparDeck 出的、d＝等效位數、M＝主屬性
+    const cardOk = (g, c, d, M) => {
+      const fl = flAt(d), b = bAt(d), m = EN.star(g, M) === EN.peak(g) ? M : EN.topAttr(g);
+      const up = EN.ATTRS.every(a => c[a] >= g[a] && c[a] <= Math.max(cap, g[a]));                        // 只補星、每軸封頂
+      const pk = c[m] === EN.peak(c);                                                                      // 加星軸（主屬性／峰值）還是峰值
+      const p1 = EN.power(g) - g[m] + Math.min(cap, Math.max(g[m], g[m] + b)), pw = EN.power(c) === Math.max(fl, p1);   // 加星後還不到下限＝剛好補到下限（不多補）
+      const pl = (c[m] !== g[m]) === !!c.plus && (!c.plus || (c.plus.attr === m && c.plus.n === c[m] - g[m]));
+      const fi = EN.ATTRS.every(a => a === m || (c[a] - g[a]) === ((c.fill && c.fill[a]) | 0));
+      const bf = c[m] >= Math.min(cap, g[m] + b);
+      const A = EN.ATTRS.filter(a => a !== m), lo = A.every(a => !((c.fill && c.fill[a]) > 0) || A.every(z => z === a || c[a] <= c[z] + 1) && (c[m] === cap || !c.fill));   // 補的是最低那軸、m 軸先補滿
+      return up && pk && pw && pl && fi && bf && lo && c.id === g.id;
+    };
+    // 直接掃 sparDeck：每位熟客 × 等效位數 1–70（含 m 軸還沒滿就不到下限的那幾格，例：大頭 2／3／1 在第 8 位）
+    let direct = 0, mFirst = 0;
+    for (const who of RIDS) for (let d = 1; d <= 70; d++) {
+      const M = REG[who].enc.main, dk = EN.sparDeck(CE, who, d, { main: M });
+      if (J(dk.map(c => c.id)) !== J(REG[who].enc.deck)) bad++;
+      dk.forEach((c, k) => { const g = C0.cards[REG[who].enc.deck[k]], m = EN.star(g, M) === EN.peak(g) ? M : EN.topAttr(g);
+        if (!cardOk(g, c, d, M)) { bad++; if (info.length < 4) info.push(['direct', who, d, [g.c, g.o, g.h], [c.c, c.o, c.h], c.plus, c.fill]); }
+        if (c.plus && c.plus.n > bAt(d)) mFirst++;                                                         // 補下限時 m 軸多補（超過加星 b）的
+        direct++; });
+    }
+    for (const pa of [0, 8, 20, 40]) {
+      const K = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: pa }) });
+      for (let s = 0; s < (QUICK ? 6 : 16); s++) {
+        const r = fightRun('own7-' + pa + '-' + s, K, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, K, 6 + (s * 3) % 40);
+        for (const who of RIDS) {
+          const R = REG[who], posEff = EN.sparPos(r, K, who), e = EN.encDef(r, K, who), M = R.enc.main;
+          n++;
+          if (J(e.deck.map(c => c.id)) !== J(R.enc.deck)) { bad++; info.push([pa, who, 'ids']); continue; }
+          e.deck.forEach((c, k) => {
+            const g = C0.cards[R.enc.deck[k]];
+            if (!cardOk(g, c, posEff, M)) { bad++; if (info.length < 4) info.push([pa, who, posEff, [g.c, g.o, g.h], [c.c, c.o, c.h], c.plus, c.fill]); }
+            if (c.fill) filled++;
+            if (c === g || C0.cards[g.id].c !== g.c) bad++;                                                  // 自己的一份；content.cards 沒被改
+          });
+          // 下限還沒到他的牌的位數：跟 trialDeck（釘住他的 7 張＝只加星）逐張相同
+          if (R.enc.deck.every(id => EN.power(C0.cards[id]) >= flAt(posEff))) {
+            const td = EN.trialDeck(EN.encView(K, who), who, posEff, { seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, cls: 'normal', tier: r.tier, main: M, deckIds: R.enc.deck });
+            if (J(td.deck.map(c => [c.id, c.c, c.o, c.h])) !== J(e.deck.map(c => [c.id, c.c, c.o, c.h]))) { bad++; info.push([pa, who, 'vs trialDeck']); } else same++;
+          }
+        }
+      }
+    }
+    // 打贏的戰利品列（唱片櫃什麼都沒有）＝他這場的 7 張裡挑 3 張（沒有補牌）
+    let loot = 0;
+    for (const pa of [0, 20, 40]) {
+      const K = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: pa }) });
+      for (let s = 0; s < 6; s++) { const r = findOffer('own7l-' + pa + '-' + s + '-', K); cycle(r, K, WIN, null, { owned: () => false });
+        const L = r.spar.loot; if (!L || L.src.includes('fill') || !L.cards.every(id => REG[r.spar.who].enc.deck.includes(id))) bad++; loot++; }
+    }
+    // 補牌池不跟強度旋鈕走：他 7 張都擁有（全補牌）時，posAdd 0 跟 40 的戰利品列逐張相同（補牌池＝wcTh(pos＋off)）
+    let fills = 0;
+    for (let s = 0; s < 6; s++) {
+      const K0 = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: 0 }) }), K4 = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: 40 }) });
+      const r = findOffer('own7f-' + s + '-', K0), r4 = JSON.parse(J(r));
+      const who = EN.encOffer(r, K0).who, all = id => REG[who].enc.deck.includes(id);
+      cycle(r, K0, WIN, null, { owned: all }); cycle(r4, K4, WIN, null, { owned: all });
+      if (!r.spar.loot || J(r.spar.loot) !== J(r4.spar.loot) || r.spar.loot.src.some(x => x !== 'fill')) bad++; else fills++;
+    }
+    ok(bad === 0 && n > 100 && filled > 50 && same > 5 && loot === 18 && fills === 6 && direct === RIDS.length * 70 * 7 && mFirst > 0, "regular's deck＝his own 7 (any posAdd 0／8／20／40): ids unchanged, stars only go up (buff on main／peak axis, then fill to the floor: that axis first, then the lowest), ≤cap, peak kept, plus／fill = the diff; below the floor = trialDeck pinned; loot from his 7", { bad, n, filled, same, direct, mFirst, info }); }
+  // 位移照位數走（審查修正 p2b）：posAdd＝整數（全程同一個）或 [[第幾位, 位移], …] 折線（兩點之間線性內插四捨五入、頭尾之外照頭尾）；不合法＝0
+  { let bad = 0; const cf = x => EN.sparCfg(Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: x }) })).posAdd;
+    const K = [[6, 4], [16, 14], [30, 31]];
+    const want = { 1: 4, 6: 4, 7: 5, 11: 9, 16: 14, 17: 15, 23: 23, 30: 31, 31: 31, 80: 31 };
+    for (const [p, a] of Object.entries(want)) if (EN.sparAddAt(cf(K), +p) !== a) bad++;
+    if (EN.sparAddAt(cf(7), 50) !== 7 || EN.sparAddAt(cf(-3), 2) !== -3) bad++;
+    for (const x of [[[6, 4], [6, 5]], [[6, 4], [5, 5]], [[0, 1]], [[6, 100]], [[6, 1.5]], [], 'x', 100, 2.5, [[6]], Array.from({ length: 13 }, (_, i) => [i + 1, 1])]) if (cf(x) !== 0) bad++;
+    if (J(cf(K)) !== J(K) || cf(K) === K) bad++;                                    // 驗過的是拷貝
+    // sparPos 用這一位的位移；base＝不加
+    const KC = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { posAdd: K }) });
+    for (const pos of [6, 11, 23, 40]) for (const who of RIDS) { const r = { pos }; if (EN.sparPos(r, KC, who) !== Math.max(1, pos + REG[who].enc.off + EN.sparAddAt(K, pos)) || EN.sparPos(r, KC, who, true) !== Math.max(1, pos + REG[who].enc.off)) bad++; }
+    ok(bad === 0, 'spar posAdd: integer or [[pos, add]…] knots (linear between, clamped at the ends, rounded); invalid → 0; sparPos uses the add at this pos', bad); }
+  // encounter.ace（試調旗標，出貨 false＝規格「不帶王牌」）：true＝照一般客人在 posEff 的機率帶王牌（＝enemyDef 給的那張）
+  { const CEA = Object.assign({}, CE, { encounter: Object.assign({}, CE.encounter, { ace: true }) }); let bad = 0, withAce = 0;
+    for (let s = 0; s < 40; s++) {
+      const r = fightRun('ace-' + s, CEA, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, CEA, 11 + (s % 6) * 5 + (s % 3));
+      for (const who of RIDS) {
+        const posEff = Math.max(1, r.pos + REG[who].enc.off + EN.sparAddAt(EN.sparCfg(CEA).posAdd, r.pos)), e0 = EN.enemyDef(EN.encView(CEA, who), who, { pos: posEff, cls: 'normal', seedKey: r.seedKey + '#enc', runNo: r.runNo, playerAce: r.ace, tier: r.tier, main: REG[who].enc.main });
+        const a1 = EN.encDef(r, CEA, who).ace, a0 = EN.encDef(r, CE, who).ace;
+        if ((a1 && a1.id) !== (e0.ace && e0.ace.id) || a0 !== null) bad++;
+        if (a1) withAce++;
+      }
+    }
+    ok(bad === 0 && withAce > 20, 'encounter.ace: false (shipping) → no ace; true → the same ace a normal guest at posEff carries', { bad, withAce }); }
+  // fightSetup＝startFight 的單一入口：手動 guestDef＋rng＋fightSetup＋startDuel 跟 startFight 的對決逐字相同（含 encCarry、apex、fac）
+  { let bad = 0;
+    for (let s = 0; s < 30; s++) {
+      const r = fightRun('fs-' + s, CW, { ace: EN.TIERS[s % 3], fac: s % 2 === 1 }); EN.jumpTo(r, CW, 1 + (s * 7) % 40);
+      if (s % 3 === 0) r.encCarry = { give: 'again' };
+      const o = s % 4 === 0 ? { apex: true } : {}, a = JSON.parse(J(r)), b = JSON.parse(J(r));
+      const fa = EN.startFight(a, CW, o);
+      const id = EN.current(b, CW), eDef = EN.guestDef(b, CW, id, b.pos), seed = (Math.floor(EN.rng(b) * 4294967296) >>> 0) || 1;
+      const carry = EN.encCfg(CW) && b.encCarry ? { give: b.encCarry.give } : null;
+      const F = EN.fightSetup(b, CW, { eDef, seed, apex: o.apex, encCarry: carry }), fb = EN.startDuel(F.pDef, F.eDef, F.opts);
+      if (J(fa.duel) !== J(fb.duel) || F.eDef !== eDef) bad++;
+    }
+    ok(bad === 0, 'fightSetup: startFight = guestDef + rng + fightSetup + startDuel (30 runs, encCarry／apex／fac)', bad); }
+
+  // ---- LE5 戰利品列 ----
+  { let bad = 0, same = 0, n = 0, gold = 0, info = [];
+    for (let s = 0; s < (QUICK ? 60 : 200); s++) {
+      const r = findOffer('le5-' + s + '-', CE, { ace: EN.TIERS[s % 3] }); r.goldAdd = 0.05;
+      const c0 = J(r.stats.c), road0 = J(r.road);
+      const { f } = cycle(r, CE, WIN);
+      const L = r.spar.loot;
+      if (!(f.win && L && L.cards.length === 3 && L.src.length === 3 && new Set(L.cards).size === 3)) { bad++; info.push('shape'); }
+      if (L.src.some(x => x === 'gold' || x === 'apex') || L.cards.some(id => CE.cards[id].tier) || 'gold' in L || 'packet' in L) gold++;
+      if (J(r.stats.c) !== c0 || J(r.road) !== road0) { bad++; info.push('wcStats／road'); }
+      // 跟同一位主線戰利品列（loot#pos、主線客人那副牌）比
+      const m = JSON.parse(J(r)); delete m.spar; const md = EN.startFight(m, CE, {}).duel;
+      const lr = EN.lootRow(m, CE, md, [], m.pos, 'normal', 0);
+      if (J(lr.cards) === J(L.cards)) same++;
+      n++;
+    }
+    ok(bad === 0 && gold === 0 && n >= 60, 'LE5 3 cards, no gold／apex／packet even with goldAdd .05, wcStats／road untouched', { bad, gold, info: info.slice(0, 3) });
+    SUM.le5 = { n, same };
+    ok(same / n <= 0.05, 'LE5 ≥95% differ from the main loot row at the same pos', { same, n });
+    ok(EN.fnv1a32(EN.lootRow.toString()) === 3720145004, 'LE5 lootRow source unchanged (fnv of the function text)'); }
+  { // 唱片櫃模式跳過已擁有（o.owned 與 setCtx 兩條路）；包包模式跳過包包裡的
+    let bad = 0;
+    for (let s = 0; s < 20; s++) {
+      const r = findOffer('le5o-' + s + '-'); EN.choose(r, CE, { type: 'encOpen' }); EN.choose(r, CE, { type: 'encAccept' });
+      const st = EN.encStart(r, CE); playOut(st.duel, WIN);
+      const deck = new Set(st.duel.e.deckIds), r2 = JSON.parse(J(r)), r3 = JSON.parse(J(r));
+      EN.encFinish(r, CE, st.duel, { owned: id => deck.has(id) });
+      if (r.spar.loot.cards.some(id => deck.has(id)) || r.spar.loot.src.some(x => x !== 'fill') || r.spar.mode !== 'shelf') bad++;
+      EN.setCtx({ owned: id => deck.has(id) }); EN.encFinish(r2, CE, st.duel); EN.setCtx(null);
+      if (J(r2.spar.loot) !== J(r.spar.loot)) bad++;
+      r3.bag = r3.bag.concat([...deck].filter(id => !r3.bag.includes(id)));
+      EN.encFinish(r3, CEB, st.duel);
+      if (r3.spar.mode !== 'bag' || r3.spar.loot.cards.some(id => r3.bag.includes(id))) bad++;
+    }
+    ok(bad === 0, 'LE5 shelf skips owned (o.owned = setCtx), bag skips the bag', bad); }
+
+  // ---- LE6 輸了不扣（主線欄位全不變）----
+  { let bad = 0;
+    for (let s = 0; s < 12; s++) {
+      const r = findOffer('le6-' + s + '-', CE, { ace: EN.TIERS[s % 3] }); r.hp = Math.max(1, r.hp - 3);
+      const j0 = strip(r), money = r.money;
+      const { f } = cycle(r, CE, LOSE);
+      if (f.win || r.spar.state !== 'lost' || r.stats.spar.lost !== 1 || strip(r) !== j0 || r.money !== money) bad++;
+      if (EN.choose(r, CE, { type: 'encTake', id: 'x' }).ok || EN.choose(r, CE, { type: 'encSkip' }).ok || EN.encPolicy(r, CE, {}) !== null) bad++;
+    }
+    ok(bad === 0, 'LE6 lose: hp／pos／retryLeft／plea／streak／stats／money／bag unchanged', bad); }
+
+  // ---- LE7 收／不收 ----
+  { let bad = 0; const info = [];
+    for (let s = 0; s < 10; s++) {
+      // 唱片櫃模式
+      const r = findOffer('le7s-' + s + '-'); cycle(r, CE, WIN);
+      const j0 = strip(r), id = r.spar.loot.cards[0];
+      const t = EN.choose(r, CE, { type: 'encTake', id });
+      if (!t.ok || r.spar.taken !== id || r.stats.spar.took !== 1 || strip(r) !== j0 || !t.effects.some(e => e.shelf === id)) { bad++; info.push('shelf'); }
+      if (EN.choose(r, CE, { type: 'encTake', id: r.spar.loot.cards[1] }).error !== 'sparDone' || EN.choose(r, CE, { type: 'encSkip' }).error !== 'sparDone') { bad++; info.push('twice'); }
+      // 包包模式
+      const b = findOffer('le7b-' + s + '-', CEB); cycle(b, CEB, WIN);
+      const bid = b.spar.loot.cards.find(x => !b.bag.includes(x)), bag0 = b.bag.length, tk0 = b.taken, st0 = b.stats.taken.length, drops0 = J(b.drops);
+      const jb = strip(b, ['bag', 'taken', 'stats.taken', 'entered', 'found']);
+      if (EN.choose(b, CEB, { type: 'encTake', id: 'nope' }).error !== 'notOffered') { bad++; info.push('notOffered'); }
+      const tb = EN.choose(b, CEB, { type: 'encTake', cardId: bid });
+      if (!tb.ok || b.bag.length !== bag0 + 1 || !b.bag.includes(bid) || b.taken !== tk0 + 1 || b.stats.taken.length !== st0 + 1 || !b.entered.includes(bid) || !b.found.includes(bid)
+        || J(b.drops) !== drops0 || strip(b, ['bag', 'taken', 'stats.taken', 'entered', 'found']) !== jb) { bad++; info.push('bag'); }
+      // 不收：+$200（跟主線戰利品列一樣）；payMul 1.2 也是 +200
+      const k = findOffer('le7k-' + s + '-'); k.payMul = 1.2; cycle(k, CE, WIN);
+      const m0 = k.money, e0 = k.stats.earned, c0 = J(k.stats.c || null), jk = strip(k, ['money', 'stats.earned', 'stats.c']);   // 跳到這一位還沒打過主線：stats.c 由 wcEarn 開
+      const sk = EN.choose(k, CE, { type: 'encSkip' });
+      const cIn = JSON.parse(J(k.stats.c)); delete cIn.income.spar;
+      if (!sk.ok || k.money !== m0 + 200 || k.stats.earned !== e0 + 200 || k.stats.c.income.spar !== 200 || k.stats.spar.cash !== 200 || !k.spar.skipped || (c0 !== 'null' && J(cIn) !== c0)
+        || strip(k, ['money', 'stats.earned', 'stats.c']) !== jk || EN.wcCfg(CE).loot.skipCash !== 200) { bad++; info.push('skip'); }
+    }
+    ok(bad === 0, 'LE7 shelf take (only spar)／bag take (bag, stats.taken, taken, entered, found; not drops)／skip +$200 even with payMul 1.2; once only', info.slice(0, 4)); }
+
+  // ---- LE8 作廢 ----
+  { let bad = 0;
+    for (let s = 0; s < 6; s++) {
+      const r = findOffer('le8-' + s + '-'); EN.choose(r, CE, { type: 'encOpen' });
+      if (EN.encVoid(r)) bad++;                                           // offer 不能作廢
+      EN.choose(r, CE, { type: 'encAccept' }); const j0 = strip(r);
+      if (!EN.encVoid(r) || r.spar.state !== 'void' || r.spar.loot || EN.encVoid(r) || EN.encStart(r, CE) !== null) bad++;
+      if (EN.choose(r, CE, { type: 'encTake', id: 'x' }).ok || EN.choose(r, CE, { type: 'encSkip' }).ok || strip(r) !== j0) bad++;
+      if (EN.encFinish(r, CE, { over: { win: true }, e: { id: r.spar.who } }).error !== 'notFighting') bad++;
+    }
+    ok(bad === 0, 'LE8 fighting → encVoid → void, no loot; offer can not be voided', bad); }
+
+  // ---- LE9 fixEnc ----
+  { const base = () => { const r = fightRun('le9'); EN.jumpTo(r, CE, 12); return r; };
+    const r0 = base(), rd = EN.roundOf(12);
+    const bads = [5, [], null, 'x', { pos: 'x' }, { round: rd, pos: 12, who: 'akai', state: 'bogus' }, { round: rd + 1, pos: 12, who: 'akai', state: 'offer' },
+      { round: rd, pos: 12, who: 'nobody', state: 'offer' }, { round: rd, pos: 12, who: 'akai', state: 'won' }, { round: rd, pos: 12, who: 'akai', state: 'won', loot: { cards: ['a'], src: [] } },
+      { round: rd, pos: 12, who: 'akai', state: 'won', loot: { cards: [], src: [] }, taken: 'zz' }, { round: rd, pos: 12, who: 'akai', state: 'won', loot: { cards: [], src: [] }, skipped: 1 },
+      { round: rd, pos: 12, who: 'akai', state: 'lost', mode: 'pocket' }, { round: 2, pos: 7, who: 'akai', state: 'offer' }];
+    let bad = 0;
+    for (const v of bads) { const r = base(); r.spar = JSON.parse(J(v)); if (!EN.fixEnc(r, CE) || 'spar' in r) bad++; }
+    const id0 = Object.keys(CE.cards)[0];
+    const goods = [{ round: rd, pos: 12, who: 'akai', state: 'offer' }, { round: 2, pos: 7, who: 'datou', state: 'fighting' }, { round: 2, pos: 7, who: 'datou', state: 'declined' },
+      { round: rd, pos: 12, who: 'xiaoyu', state: 'won', mode: 'shelf', loot: { cards: [id0], src: ['fill'] } }, { round: rd, pos: 12, who: 'xiaoyu', state: 'won', mode: 'bag', loot: { cards: [id0], src: ['fill'] }, taken: id0 }];
+    for (const v of goods) { const r = base(); r.spar = JSON.parse(J(v)); if (EN.fixEnc(r, CE) || J(r.spar) !== J(v)) bad++; }
+    { const r = base(); r.spar = { round: rd, pos: 12, who: 'akai', state: 'won', loot: { cards: [id0, 'gone|card'], src: ['fill', 'unplayed'] } };
+      if (!EN.fixEnc(r, CE) || J(r.spar.loot) !== J({ cards: [id0], src: ['fill'] })) bad++; }
+    { const r = base(); r.stats.spar = 'x'; if (!EN.fixEnc(r) || 'spar' in r.stats) bad++;
+      r.stats.spar = { offered: -1, accepted: 2.5, won: 1, lost: 'a', took: 0, cash: 200 }; if (!EN.fixEnc(r) || J(r.stats.spar) !== J({ offered: 0, accepted: 0, won: 1, lost: 0, took: 0, cash: 200 })) bad++;
+      if (EN.fixEnc(r) || EN.fixEnc(r0)) bad++; }
+    ok(bad === 0, 'LE9 fixEnc: bad shapes deleted, offer at another pos deleted, fighting kept (screen voids it), good kept, missing loot cards filtered, stats coerced', bad); }
+
+  // ---- LE10 encView ----
+  { const e0 = J(C0.enemies), l0 = J(C0.lines);
+    let bad = 0;
+    for (const who of RIDS) {
+      const v = EN.encView(CE, who), en = v.enemies[who];
+      if (!en || en.name !== REG[who].name || J(en.avatar) !== J(REG[who].look) || en.avatar === 'e0' || J(en.deck) !== J(REG[who].enc.deck) || en.taste !== REG[who].enc.taste) bad++;
+      if (v.cards !== CE.cards || v.enemies.boss !== CE.enemies.boss || v.lines.boss !== CE.lines.boss || (CE.enemies[who] || CE.lines[who])) bad++;
+      const real = C0.chat.filter(x => x.who === who && /^enc(Dare|Yes|Lose|Win)$/.test(x.cat));
+      if (!real.length && J(v.lines[who]) !== '{}') bad++;
+    }
+    if (J(C0.enemies) !== e0 || J(C0.lines) !== l0 || EN.encView(CE, 'boss') !== null || EN.encView(CE, 'nobody') !== null) bad++;
+    // 三鍵對到他的切磋句（棒 3d 還沒交時用樁）：intro＝encYes、lose＝encLose 全部、win＝encWin 全部；多泡接起來。
+    //   不給 line（審查修正 p2b：duel.js 開場讀 lines.line || lines.intro，給了 line，答應那句 encYes 永遠不出；嗆的句子全留給邀請泡泡）
+    const stub = [{ id: 's1', who: 'akai', cat: 'encDare', text: '來一盤？' }, { id: 's2', who: 'akai', cat: 'encYes', text: ['好，', '來。'] }, { id: 's3', who: 'akai', cat: 'encLose', text: '可惡。' },
+      { id: 's4', who: 'akai', cat: 'encLose', text: '下次。' }, { id: 's5', who: 'akai', cat: 'encWin', text: '承讓。' }, { id: 's6', who: 'datou', cat: 'encWin', text: '別人的' }, { id: 's7', who: 'akai', cat: 'encNo', text: '改天' }];
+    const KS = Object.assign({}, CE, { chat: (C0.chat || []).filter(x => !/^enc/.test(x.cat)).concat(stub) }), vs = EN.encView(KS, 'akai');
+    eq(vs.lines.akai, { intro: '好，來。', lose: ['可惡。', '下次。'], win: ['承讓。'] }, 'LE10 lines: encYes／encLose／encWin → intro／lose／win (no line: the duel opens with encYes)');
+    eq(vs.enemies.akai.line, undefined, 'LE10 enemies[who].line not set (encDare stays with the invite bubble)');
+    // 真的台詞（棒 3d 交件，下半；p2b 拿掉 line）：intro＝encYes-01、lose＝[encLose-02]、win＝[encWin-01]（嗆那三句、「唱片你挑」那句、安慰那句留給來客畫面）
+    { const txt = id => { const x = C0.chat.find(y => y.id === id); return x ? [].concat(x.text).join('') : null; }; let b2 = 0;
+      for (const who of RIDS) {
+        const v = EN.encView(CE, who).lines[who], want = { intro: txt(who + '-encYes-01'), lose: [txt(who + '-encLose-02')], win: [txt(who + '-encWin-01')] };
+        if (Object.values(want).some(x => x == null || (Array.isArray(x) && x[0] == null)) || J(v) !== J(want) || EN.encView(CE, who).enemies[who].line !== undefined) b2++;
+      }
+      // 指定的那句不在（id 改了）＝退回舊對應（那一類第一句／全部）
+      const K2 = Object.assign({}, CE, { chat: C0.chat.map(x => x.id === 'akai-encLose-02' ? Object.assign({}, x, { id: 'akai-encLose-09' }) : x) });
+      const all = C0.chat.filter(x => x.who === 'akai' && x.cat === 'encLose').map(x => x.text);
+      if (J(EN.encView(K2, 'akai').lines.akai.lose) !== J(all)) b2++;
+      ok(b2 === 0, 'LE10 real lines: intro＝encYes-01 (no line), lose＝[encLose-02], win＝[encWin-01]; pinned id missing → old mapping', b2); }
+    ok(bad === 0, 'LE10 encView: shallow copy, enemies／lines get the regular (avatar = look, not e0), C untouched, non-regular → null', bad); }
+
+  // ---- LE12 主線亂數不動：同一個 run 兩份，一份接每個邀請打完收進唱片櫃、一份都改天 → 之後 20 位每場開打種子、每次配件獎勵逐筆相同 ----
+  { let bad = 0, fights = 0, spars = 0; const info = [];
+    const drive = (r, mode, R, until) => {
+      const tr = [];
+      for (let g = 0; g < 3000 && !r.over && r.pos <= until; g++) {
+        const st = EN.nextStep(r);
+        if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { const ch = EN.runPolicy(r, CE); if (!EN.choose(r, CE, ch).ok) throw new Error('LE12 ' + st); continue; }
+        if (st !== 'fight') break;
+        const ch = EN.encPolicy(r, CE, { policy: mode === 'take' ? 'always' : mode === 'cash' ? 'cash' : 'never' });
+        if (ch) {
+          EN.choose(r, CE, ch);
+          if (r.spar.state === 'fighting') { const s = EN.encStart(r, CE); let k = 0; while (!s.duel.over && k++ < 20) EN.resolveTurn(s.duel, EN.policies.thoughtful(s.duel, lcg(k + r.pos), {}, s.view)); EN.encFinish(r, CE, s.duel); spars++; }
+          continue;
+        }
+        const f = EN.startFight(r, CE, {}); tr.push(['f', r.pos, f.duel.e.hkey]);
+        let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, {}, CE));
+        const res = EN.finishFight(r, CE); if (res.offer && res.offer.relics && res.offer.relics.length) tr.push(['r', r.pos, res.offer.relics.join(',')]);
+        fights++;
+      }
+      return tr;
+    };
+    for (let s = 0; s < (QUICK ? 4 : 10); s++) {
+      const r = fightRun('le12-' + s, CE, { ace: EN.TIERS[s % 3] }); EN.jumpTo(r, CE, 6);
+      const a = JSON.parse(J(r)), b = JSON.parse(J(r)), c = JSON.parse(J(r));
+      const ta = drive(a, 'take', lcg(500 + s), 26), tb = drive(b, 'never', lcg(500 + s), 26), tc = drive(c, 'cash', lcg(500 + s), 26);
+      if (J(ta) !== J(tb) || strip(a) !== strip(b) || a.rng !== b.rng) { bad++; info.push(['take vs never', s]); }
+      // 拿錢那份：錢不一樣 → 之後買東西、攤位可能分岔；共同前綴逐筆相同、第一個不同的地方不能是同一位同一種但值不同
+      let k = 0; while (k < ta.length && k < tc.length && J(ta[k]) === J(tc[k])) k++;
+      if (k < ta.length && k < tc.length && ta[k][0] === tc[k][0] && ta[k][1] === tc[k][1]) { bad++; info.push(['cash prefix', s, ta[k], tc[k]]); }
+    }
+    SUM.le12 = { spars, fights };
+    ok(bad === 0 && spars > (QUICK ? 3 : 10) && fights > (QUICK ? 50 : 150), 'LE12 run.rng untouched: same seeds／relic offers for 20 positions (accept-all vs decline-all; cash: common prefix)', { bad, spars, fights, info: info.slice(0, 2) }); }
+
+  // ---- 不動清單逐欄（§7.4 表）：真的一趟（smart 出牌腦、三種策略、兩種模式）每段切磋前後，主線欄位 JSON 相同 ----
+  { let bad = 0, n = 0, took = 0, cash = 0; const info = [];
+    for (const [K, pol] of [[CE, 'smart'], [CE, 'always'], [CE, 'cash'], [CEB, 'smart'], [CEB, 'always']]) for (let s = 0; s < (QUICK ? 3 : 8); s++) {
+      const r = EN.newRun(K, { seedKey: 'le-keep-' + pol + s, runNo: 1, ace: EN.TIERS[s % 3], prologue: false, fac: s % 2 === 1 }), R = lcg(900 + s), owned = new Set();
+      if (s % 3 === 0) r.encCarry = { give: 'again' };
+      for (let g = 0; g < 4000 && !r.over && r.pos <= 30; g++) {
+        if (EN.canBargainPick(r) && !r.pending) { EN.choose(r, K, EN.bargainPolicy(r, K)); continue; }
+        const st = EN.nextStep(r);
+        if (['reward', 'retry', 'level', 'stall', 'draft'].includes(st)) { EN.choose(r, K, EN.cPolicy(r, K)); continue; }
+        if (st !== 'fight') break;
+        if (EN.encOffer(r, K) && !(r.spar && r.spar.pos === r.pos)) {
+          const j0 = J(r), allow = [];
+          for (let k = 0; k < 6; k++) {
+            const ch = EN.encPolicy(r, K, { policy: pol, owned: id => owned.has(id) }); if (!ch) break;
+            if (!EN.choose(r, K, ch).ok) { bad++; break; }
+            if (r.spar.state === 'fighting') { const sd = EN.encStart(r, K); let q = 0; while (!sd.duel.over && q++ < 20) EN.resolveTurn(sd.duel, EN.policies.thoughtful(sd.duel, lcg(q), {}, sd.view)); EN.encFinish(r, K, sd.duel, { owned: id => owned.has(id) }); }
+            if (ch.type === 'encTake') { took++; owned.add(ch.id); if (K === CEB) allow.push('bag', 'taken', 'stats.taken', 'entered', 'found'); }
+            if (ch.type === 'encSkip') { cash++; allow.push('money', 'stats.earned', 'stats.c.income.spar'); }
+          }
+          const b0 = strip(JSON.parse(j0), allow), b1 = strip(r, allow);
+          if (b0 !== b1) { bad++; if (info.length < 2) { const A = JSON.parse(b0), B = JSON.parse(b1); info.push(Object.keys(B).filter(x => J(A[x]) !== J(B[x]))); } }
+          if (K === CE && (J(r.bag) !== J(JSON.parse(j0).bag) || r.taken !== JSON.parse(j0).taken || J(r.drops) !== J(JSON.parse(j0).drops))) bad++;
+          n++;
+          continue;
+        }
+        if (EN.canShop(r)) for (const ch of EN.shopPolicy(r, K, 'smart')) EN.choose(r, K, ch);
+        const f = EN.startFight(r, K, {}); let k = 0; while (!f.duel.over && k++ < 40) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, {}, K));
+        EN.finishFight(r, K);
+      }
+    }
+    SUM.keep = { n, took, cash };
+    ok(bad === 0 && n > (QUICK ? 15 : 50) && took > 5 && cash > 5, 'keep list (§7.4): every main field identical across each spar (shelf: bag／taken／drops too; bag take and skip only their own fields)', { bad, n, took, cash, info }); }
+
+  // ---- encPolicy ----
+  { const r = findOffer('pol-'); let bad = 0;
+    if (J(EN.encPolicy(r, CE, {})) !== J({ type: 'encOpen' }) || EN.encPending(r) !== null) bad++;
+    EN.choose(r, CE, { type: 'encOpen' }); if (EN.encPending(r) !== 'offer') bad++;
+    if (EN.encPolicy(r, CE, { policy: 'never' }).type !== 'encDecline' || EN.encPolicy(r, CE, { policy: 'smart' }).type !== 'encAccept') bad++;
+    EN.choose(r, CE, { type: 'encAccept' });
+    if (EN.encPolicy(r, CE, {}) !== null || EN.encPending(r) !== 'fighting') bad++;   // fighting：呼叫的人去打
+    const s = EN.encStart(r, CE); playOut(s.duel, WIN); EN.encFinish(r, CE, s.duel);
+    const L = r.spar.loot.cards, all = id => L.includes(id);
+    if (EN.encPolicy(r, CE, { policy: 'smart' }).type !== 'encTake' || EN.encPolicy(r, CE, { policy: 'smart', owned: all }).type !== 'encSkip'
+      || EN.encPolicy(r, CE, { policy: 'always', owned: all }).type !== 'encTake' || EN.encPolicy(r, CE, { policy: 'cash' }).type !== 'encSkip') bad++;
+    const one = EN.encPolicy(r, CE, { policy: 'smart', owned: id => id !== L[2] }); if (one.id !== L[2]) bad++;
+    const rb = JSON.parse(J(r)); rb.spar.mode = 'bag';
+    const base = EN.bagScore(CE, rb.bag), gains = L.map(id => EN.bagScore(CE, rb.bag.concat([id])) - base), pb = EN.encPolicy(rb, CE, { policy: 'smart' });
+    if (Math.max(...gains) > 0.005 ? pb.type !== 'encTake' || gains[L.indexOf(pb.id)] !== Math.max(...gains) : pb.type !== 'encSkip') bad++;
+    rb.bag = rb.bag.concat(L); if (EN.encPolicy(rb, CE, { policy: 'smart' }).type !== 'encSkip') bad++;
+    if (EN.encPending(r) !== 'loot') bad++;
+    EN.choose(r, CE, { type: 'encSkip' }); if (EN.encPolicy(r, CE, {}) !== null || EN.encPending(r) !== null) bad++;
+    ok(bad === 0, 'encPolicy＋encPending: open → accept／decline → (fighting null) → shelf take not-owned／skip all-owned／always／cash; bag takes the best bagScore gain or skips', bad); }
+  console.log('     LE2 ' + J(SUM.le2) + '；LE5 ' + J(SUM.le5) + '；LE12 ' + J(SUM.le12) + '；keep ' + J(SUM.keep));
+});
+
+section('35 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5；§10.1 第 1、6、7 條＋棒三）：旗標關／第 0 階＝逐字現況（黃金）、階表疊加與相對值、小氣兩種模式、過關＝第 21 位、開階與紀錄、派點與價、買賣重配、讀檔整理、進局（start／挑著學／深耕／說情 +3／刺蝟／圈內人）、preview＝resolve、?fac=1 客人', () => {
   EN.setCtx(null);
   const K = C0, F = K.factions, NT = F.notes;
   // 棒三的 ?fac=1 調法（content.factions.guest：只在 run.fac 的客人）拿掉＝棒三改之前的 ?fac=1

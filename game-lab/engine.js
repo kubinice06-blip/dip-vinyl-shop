@@ -220,7 +220,17 @@
 //            abilityOf／apexAbilityOf 多 encore（換一格照換後的家族）· playerDef o.encore → encNum、encText、aceEnc · startDuel opts.encore／encCarry → duel.p.enc、encPrev、encAce|apexHist、stats.enc
 //            startFight：主線對決（非序章、o.encore !== false）自動開；resolveTurn：encFire（丟王牌）→ outcome（encBonus）→ … → encoreStep（aceUsed、補牌之後、finish 之前）→ {t:'encore'} 事件
 //            pAceStar(duel)（安可回來的王牌 6 星：actPlay、bestChip、view.aceStar、pubOpts）· view.enc · encorePolicy(name)（sim 量上界：會湊條件、安可盤一定丟）· debugOutcome.caught（e2e）
-// Policies   policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
+// Spar       活店第二階段「切磋」（＝店主說的遭遇戰；scratchpad v5/liveshop SPEC-H §7、§8；給畫面／sim 的契約 p2/CONTRACT.md）。數字＝content.encounter（sparCfg；on false＝不出）
+//            熟客第 6 位起、一般客人位、每輪最多一次（hash01，不吃 run.rng）走到對戰台嗆你；短局（雙方聲望＝上限＝六成）；贏了三張蓋牌挑一張（唱片櫃／包包模式）或 $200；輸了不扣
+//            欄位一律叫 spar（規格寫 enc；run.stats.enc 是翻面的）：run.spar {round, pos, who, state, mode?, loot?, taken?, skipped?}、run.stats.spar、run.stats.c.income.spar
+//            encOffer(run, content) · encView(content, who) · encDef(run, content, who) · encStart(run, content, {apex}) · encFinish(run, content, duel, {reward, owned}) · encVoid(run)
+//            encLoot(run, content, duel, {reward, owned}) · fixEnc(run, content?) · encPolicy(run, content, {policy, reward, owned}) · encPending(run) · sparCfg · sparMode · sparDeck(content, who, posEff, {main, tier})
+//            choose：encOpen／encAccept／encDecline {lapse}／encTake {id}／encSkip。fightSetup(run, content, o)＝主線 startFight 與切磋 encStart 共用的開局參數（你這一邊）
+//            強度（下半，主線 11-21 裁定「牌組身分跟強度分開」）：熟客一律出自己那 7 張（sparDeck：照等效位數只補星、不換牌）；強度＝等效位數 posEff＝pos＋off＋位移
+//              的客人參數（品味、底氣、讀你、放水…）＋短局 content.encounter.short；encounter.ace true＝照一般客人機率帶王牌（試調用，出貨不開）。數字與量測見 p2b/SIM.md
+//              審查修正（p2b）：位移 posAdd 可以是照位數走的折線 [[第幾位, 位移], …]（sparAddAt）——全程 +31 讓前期切磋比主線難很多、後段又比主線好打；
+//              改成每一段跟同段主線一般客人首戰勝率差不多（sim 分段表、LS5 分段門檻）。數字與量測見 p2b/fix/SIM.md
+// Policies  policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
 //            runPolicy 的升級照 harness MIX（A D A H D A X D A H；X＝引擎沒有「不加」，改拿聲望上限）
@@ -2509,6 +2519,30 @@
     run.mainFrom = met ? roundOf(run.pos) * PER_ROUND + 1 : 1;
     return true;
   }
+  // 開局參數（主線 startFight、切磋 encStart 共用的單一入口；活店第二階段 SPEC-H §7.4「你這一邊走 fightSetup」）——從 startFight 抽出來，行為逐字不變（sim LS0）。
+  //   fightSetup(run, content, o) -> { pDef, eDef, opts }：只讀 run、不寫（主線那幾個寫回 run 的動作留在 startFight）。之後「每輪挑 5 張上場」（第 I 波 I-2）只改這裡。
+  //   o：eDef（他：guestDef／enemyDef／encDef 組好的，原樣回傳）、seed（對決種子）、prologue（序章那場）、tut（教學劇本）、apex（頂點卡試做）、
+  //      encore（false＝這場沒有翻面）、encCarry（上一場留下來的 {give}；startFight 從 run.encCarry 拿、切磋不給）、
+  //      hp（短局：你這一邊的聲望＝上限＝hp；沒給＝照 run.hp／run.maxHp）
+  //   你這一邊（包包、王牌／頂點卡、配件、品味、底氣、〔D〕三流派被動與本派選項、〔I〕翻面）全部照 run 組，主線、切磋一模一樣
+  function fightSetup(run, content, o) {
+    o = o || {};
+    const eDef = o.eDef, prologue = !!o.prologue;
+    const opts = { seed: o.seed, hintTable: hintTableOf(content) };
+    if (Array.isArray(run.hintSeen)) opts.hintSeen = run.hintSeen;   // 11-17：這一趟看過的提示句（舊存檔沒有＝空）
+    const apex = !!o.apex && !prologue && !!apexCfg(content);   // 頂點卡試做：序章那場照舊 7 星教學
+    if (apex) opts.apex = true;
+    if (eDef.ace) opts.enemyAce = eDef.ace;
+    else if (eDef.boss && (run.bossCard || run.bossAce)) opts.enemyAce = cardFrom(content, run.bossCard || content.aces[run.bossAce]);
+    if (o.tut && content.tutorial.script) opts.script = content.tutorial.script[run.ace] || null;
+    const fac = !!run.fac && !prologue && !!facCfg(content);   // 第 D 波棒二三流派：照 run.fac（不看網址，R-F9）；序章那場沒有，第 1 位客人起生效
+    // 第 I 波翻面：主線對決自動有（序章、o.encore false＝切磋沒有；content.encore.on false＝沒有）
+    const enc = !prologue && o.encore !== false && !!encCfg(content);
+    if (enc) { opts.encore = true; if (o.encCarry && typeof o.encCarry === 'object') opts.encCarry = { give: o.encCarry.give }; }
+    const po = apex || fac || enc ? Object.assign(apex ? { apex: true } : {}, fac ? { fac: true } : {}, enc ? { encore: true } : {}) : undefined;
+    const src = Number.isInteger(o.hp) && o.hp > 0 ? Object.assign({}, run, { hp: o.hp, maxHp: o.hp }) : run;
+    return { pDef: playerDef(content, src, po), eDef, opts };
+  }
   function startFight(run, content, o) {
     o = o || {};
     if (run.duel) return { duel: run.duel, events: [], enemyId: run.duelEnemy || run.duel.e.id, resumed: true };   // a saved fight in progress (or over but not finished)
@@ -2518,22 +2552,16 @@
     const prologue = run.prologue === 'pending';
     const tut = !!o.tutorial && prologue && !!content.tutorial;
     const eDef = prologue ? enemyDef(content, enemyId, { tutorial: tut }) : guestDef(run, content, enemyId, run.pos);
-    const opts = { seed: (Math.floor(rng(run) * 4294967296) >>> 0) || 1, hintTable: hintTableOf(content) };
-    if (Array.isArray(run.hintSeen)) opts.hintSeen = run.hintSeen;   // 11-17：這一趟看過的提示句（舊存檔沒有＝空）
-    const apex = !!o.apex && !prologue && !!apexCfg(content);   // 頂點卡試做：序章那場照舊 7 星教學
-    if (apex) opts.apex = true;
-    if (eDef.ace) opts.enemyAce = eDef.ace;
-    else if (eDef.boss && (run.bossCard || run.bossAce)) opts.enemyAce = cardFrom(content, run.bossCard || content.aces[run.bossAce]);
-    if (tut && content.tutorial.script) opts.script = content.tutorial.script[run.ace] || null;
+    const seed = (Math.floor(rng(run) * 4294967296) >>> 0) || 1;
     if (!Number.isInteger(run.hp) || run.hp < 1) run.hp = run.maxHp || CFG.playerHp;
     run.hpIn = run.hp;                                        // 說情重打從這裡開始（裁定 8）
     if (!prologue) run.fought = true;                          // 跟客人開打過：之後這一趟不能再換王牌（canSwitchAce）
-    const fac = !!run.fac && !prologue && !!facCfg(content);   // 第 D 波棒二三流派：照 run.fac（不看網址，R-F9）；序章那場沒有，第 1 位客人起生效
-    // 第 I 波安可：主線對決自動有（序章、o.encore false＝切磋沒有；content.encore.on false＝沒有）；吃掉上一場留下來的 run.encCarry（說情重打也算下一場）
+    // 第 I 波翻面：吃掉上一場留下來的 run.encCarry（說情重打也算下一場）；這場沒有翻面（序章、o.encore false、關掉）就不讀不清
     const enc = !prologue && o.encore !== false && !!encCfg(content);
-    if (enc) { opts.encore = true; if (run.encCarry && typeof run.encCarry === 'object') opts.encCarry = { give: run.encCarry.give }; if ('encCarry' in run) run.encCarry = null; }
-    const po = apex || fac || enc ? Object.assign(apex ? { apex: true } : {}, fac ? { fac: true } : {}, enc ? { encore: true } : {}) : undefined;
-    const r = startDuel(playerDef(content, run, po), eDef, opts);
+    const carry = enc && run.encCarry && typeof run.encCarry === 'object' ? { give: run.encCarry.give } : null;
+    if (enc && 'encCarry' in run) run.encCarry = null;
+    const F = fightSetup(run, content, { eDef, seed, prologue, tut, apex: o.apex, encore: o.encore, encCarry: carry });
+    const r = startDuel(F.pDef, F.eDef, F.opts);
     run.duel = r.duel; run.duelEnemy = enemyId;
     return { duel: r.duel, events: r.events, enemyId };
   }
@@ -3505,6 +3533,300 @@
     return JSON.stringify(run) !== before;
   }
 
+  // ============================================================================================================================
+  // 活店第二階段：切磋（＝店主說的遭遇戰；scratchpad v5/liveshop SPEC-H §7、§8、§13；給畫面棒 4b 與 sim 的契約 p2/CONTRACT.md）
+  //   店主原話：「遭遇戰：跟主線分開的獎勵性對決，客人主動來嗆，可以選擇不打；打贏拿錢或唱片，輸了不扣主線進度」。
+  //   欄位一律叫 spar（規格寫 run.enc／run.stats.enc；第 I 波翻面已經佔用 run.stats.enc、run.encCarry、duel.p.enc）：
+  //     run.spar＝最近一筆 { round, pos, who, state:'offer'|'fighting'|'won'|'lost'|'declined'|'lapsed'|'void', mode?:'shelf'|'bag', loot?:{cards:[3], src:[3]}, taken?:id, skipped?:true }
+  //       （下一次邀請整筆換掉；mode＝打贏那一刻的獎勵模式，收／不收照它）
+  //     run.stats.spar＝這一趟的帳 { offered, accepted, won, lost, took, cash }（不進 runSummary）；不收的錢記 run.stats.c.income.spar（wcEarn）
+  //   狀態機：（沒有／別位的）—encOpen→ offer —encAccept→ fighting —encFinish→ won|lost；offer —encDecline→ declined（{lapse:true}→ lapsed）；
+  //           fighting —encVoid→ void（重新整理在打＝作廢，不能靠重整重打到贏）；won —encTake／encSkip→ won（taken／skipped，只能一次）
+  //   亂數全部 hash01／fnv1a32（不吃 run.rng：主線之後的開打種子、配件獎勵一個都不變）。主線欄位一個都不動：encStart 用 run 的深拷貝開局、
+  //     encFinish 只寫 run.spar 與 run.stats.spar；encSkip 只加錢；包包模式的 encTake 走主線拿牌記帳（不進 drops）。
+  //   切磋那場沒有翻面（fightSetup encore:false；不讀、不吃、不寫 run.encCarry）、不給經驗（不碰 level／xp）、不給聲望回復、連勝、樂歷。
+  // ============================================================================================================================
+  const SPAR_STATES = ['offer', 'fighting', 'won', 'lost', 'declined', 'lapsed', 'void'];
+  const SPAR_KEYS = ['offered', 'accepted', 'won', 'lost', 'took', 'cash'];
+  const SPAR_MODES = ['shelf', 'bag'];
+  const SPAR_POLICIES = ['always', 'never', 'smart', 'cash'];
+  const SPAR = { on: false, reward: 'shelf', from: 6, p: 0.5, perRound: 1, slots: [0, 1, 2], lapse: 30000, short: 0.6, noDareRound: true, noStall: true, ace: false, posAdd: 0, deckAt: 'eff' };
+  // content.encounter（沒給的欄位用 SPAR）；slots 只收一般客人位（菁英、藏家位不出：藏家那輪的寶箱不會跟切磋戰利品列連出）
+  //   posAdd（下半，主線 11-21 裁定）＝切磋強度的位移：等效位數 posEff＝max(1, run.pos＋熟客自己的 off（−2～+2，個性差）＋位移)；
+  //     整數＝全程同一個位移（|x| ≤ 99）；或照位數走的折線 [[第幾位, 位移], …]（第幾位遞增、位移 |x| ≤ 99、最多 12 個點；兩點之間線性內插後四捨五入、頭尾之外照頭尾）——
+  //     審查修正（p2b）：全程 +31 讓第 6 位的熟客＝第 37 位客人（前期比主線難很多、後段又比主線好打），改成跟著位數走。不合法＝0
+  function sparAddOk(x) {
+    if (Number.isInteger(x)) return Math.abs(x) <= 99;
+    if (!Array.isArray(x) || !x.length || x.length > 12) return false;
+    return x.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && Number.isInteger(k[1]) && Math.abs(k[1]) <= 99 && (i === 0 || k[0] > x[i - 1][0]));
+  }
+  // 第 pos 位的位移（sparCfg 驗過的 posAdd）
+  function sparAddAt(posAdd, pos) {
+    if (Number.isInteger(posAdd)) return posAdd;
+    if (!Array.isArray(posAdd) || !posAdd.length) return 0;
+    const p = pos | 0;
+    if (p <= posAdd[0][0]) return posAdd[0][1];
+    for (let i = 1; i < posAdd.length; i++) {
+      const [p1, a1] = posAdd[i], [p0, a0] = posAdd[i - 1];
+      if (p <= p1) return Math.round(a0 + (a1 - a0) * (p - p0) / (p1 - p0));
+    }
+    return posAdd[posAdd.length - 1][1];
+  }
+  function sparCfg(content) {
+    const s = (content && content.encounter) || {}, X = Object.assign({}, SPAR, s);
+    X.on = X.on === true;
+    X.reward = SPAR_MODES.includes(X.reward) ? X.reward : 'shelf';
+    X.from = Number.isInteger(X.from) && X.from >= 1 ? X.from : SPAR.from;
+    X.p = typeof X.p === 'number' && X.p >= 0 ? Math.min(1, X.p) : SPAR.p;
+    X.short = typeof X.short === 'number' && X.short > 0 ? Math.min(1, X.short) : SPAR.short;
+    X.posAdd = sparAddOk(X.posAdd) ? (Array.isArray(X.posAdd) ? X.posAdd.map(k => k.slice()) : X.posAdd) : SPAR.posAdd;
+    X.deckAt = ['base', 'pos'].includes(X.deckAt) ? X.deckAt : 'eff';   // 他的牌組照哪個位數補星：eff＝等效位數（含位移與 off）、base＝pos＋off、pos＝第幾位（＝同一位的主線一般客人）
+    X.slots = (Array.isArray(X.slots) ? X.slots : SPAR.slots).filter((k, i, a) => Number.isInteger(k) && POS_CLASSES[k] === 'normal' && a.indexOf(k) === i);
+    return X;
+  }
+  // 這次用哪種獎勵模式：o.reward（畫面 ?enc=bag、sim --enc-reward）＞ content.encounter.reward ＞ 'shelf'
+  function sparMode(content, o) { return o && SPAR_MODES.includes(o.reward) ? o.reward : sparCfg(content).reward; }
+  // 唱片櫃擁有：o.owned（函式／陣列／{id:{own}}；sim 給這一趟收過的）＞ 畫面 setCtx 的 owned（WC_CTX）＞ 沒有（全不算擁有）
+  function sparOwned(o) {
+    if (o && o.owned != null) { const f = ownedFn(o.owned); return id => { try { return !!f(id); } catch (_) { return false; } }; }
+    return ctxOwned();
+  }
+  function sparStats(run) {
+    const S = run.stats || (run.stats = {});
+    if (!S.spar || typeof S.spar !== 'object' || Array.isArray(S.spar)) S.spar = {};
+    for (const k of SPAR_KEYS) if (!(Number.isInteger(S.spar[k]) && S.spar[k] >= 0)) S.spar[k] = 0;
+    return S.spar;
+  }
+  const ceil6 = x => Math.ceil(Math.round(x * 1e6) / 1e6);    // 0.6×12＝7.199999… 照 7.2 進位成 8（浮點誤差不多進一）
+  // 誰來嗆：熟客照 encW 權重（hash01(seedKey#runNo#encWho#pos)）；沒有牌組的熟客不出
+  function sparWho(content, key, pos) {
+    const R = (content && content.regulars) || {};
+    const ids = Object.keys(R).filter(id => R[id] && +R[id].encW > 0 && R[id].enc && Array.isArray(R[id].enc.deck) && R[id].enc.deck.length);
+    const tot = ids.reduce((s, id) => s + +R[id].encW, 0);
+    if (!(tot > 0)) return null;
+    let u = hash01(key + 'encWho#' + pos) * tot;
+    for (const id of ids) { u -= +R[id].encW; if (u < 0) return id; }
+    return ids[ids.length - 1];
+  }
+  // encOffer(run, content) -> {round, pos, who} | null（純函式；畫面與 sim 共用；不看 run.spar——同一位已經開過由 choose encOpen 擋）
+  //   出：開關開、主線下一步是對決（nextStep 'fight'：攤位、領獎、升級、說情、序章、打到一半、run.over 都不出）、run.pos ≥ from、
+  //       這一輪 hash01(seedKey#runNo#enc#round) < p、這一位＝slots[⌊hash01(seedKey#runNo#encSlot#round)×slots 數⌋]、不是接了踢館帖的那一輪
+  function encOffer(run, content) {
+    const X = sparCfg(content);
+    if (!X.on || !run || typeof run !== 'object' || !X.slots.length) return null;
+    if (nextStep(run) !== 'fight') return null;
+    const pos = run.pos | 0;
+    if (pos < X.from) return null;
+    const round = roundOf(pos), idx = (pos - 1) % PER_ROUND, key = run.seedKey + '#' + run.runNo + '#';
+    if (X.noDareRound !== false && run.dare && run.dare.round === round) return null;
+    if (!(hash01(key + 'enc#' + round) < X.p)) return null;
+    if (X.slots[Math.floor(hash01(key + 'encSlot#' + round) * X.slots.length) % X.slots.length] !== idx) return null;
+    const who = sparWho(content, key, pos);
+    return who ? { round, pos, who } : null;
+  }
+  // 他的切磋句（content.chat 的 encDare／encYes／encLose／encWin；棒 3d）→ 對決用的四鍵：line＝口頭禪、intro＝接受時那句、lose＝他輸了（陣列）、win＝他贏了（陣列）。
+  //   下半（照棒 3d 交件）：四鍵指定 id 尾巴（SPAR_LINE_IDS；<who>-encDare-03 這種）——嗆那句（encDare-01、02）留給來客畫面的邀請泡泡、
+  //     「唱片你挑」那句（encLose-01）與安慰那句（encWin-02）留給打完回來客畫面時說，對決裡（duel.js pickLine）說另外那句，不重複。
+  //   指定的那句沒有（台詞改了 id）＝退回舊對應：line／intro 那一類第一句、lose／win 那一類全部。
+  //   一句多泡（text 是陣列）＝接起來當一個泡泡。那一類都沒有＝不給那個鍵（duel.js pickLine 回 null＝不說）
+  //   審查修正 p2b：不給 line（duel.js 開場讀 lines.line || lines.intro，給了 line，答應那句 encYes 永遠不出）——盤面開場＝他答應那句 encYes；嗆那三句（encDare-01～03）都留給邀請泡泡
+  const SPAR_LINE_IDS = { intro: ['encYes', '01'], lose: ['encLose', '02'], win: ['encWin', '01'] };
+  function sparLines(content, who) {
+    const L = Array.isArray(content && content.chat) ? content.chat : [];
+    const txt = x => Array.isArray(x.text) ? x.text.filter(t => typeof t === 'string').join('') : typeof x.text === 'string' ? x.text : '';
+    const of = cat => L.filter(x => x && x.who === who && x.cat === cat);
+    const out = {};
+    for (const k of Object.keys(SPAR_LINE_IDS)) {
+      const [cat, tail] = SPAR_LINE_IDS[k], all = of(cat), pin = all.filter(x => x.id === who + '-' + cat + '-' + tail).map(txt).filter(Boolean);
+      const got = pin.length ? pin : all.map(txt).filter(Boolean);
+      if (!got.length) continue;
+      out[k] = k === 'lose' || k === 'win' ? got : got[0];
+    }
+    return out;
+  }
+  // encView(content, who) -> content 的淺拷貝：enemies[who]（名字、avatar＝他的 look、聲音、牌組、品味、頻率）與 lines[who]（四鍵）多這位熟客；
+  //   C.enemies／C.lines 一個字都不改（duel.js 一行不改：SCREENS.duel／duelTitle 讀 p.view 就找得到他）。不是熟客＝null
+  function encView(content, who) {
+    const R = content && content.regulars && content.regulars[who];
+    if (!R || !R.enc || !Array.isArray(R.enc.deck)) return null;
+    const X = R.enc, lines = sparLines(content, who);
+    const en = { id: who, name: R.name, spr: null, avatar: R.look || null, honesty: X.honesty || 'sometimes', hp: trialCfg(content).guestHp.normal,
+      taste: X.taste || 'coh', tune: X.tune || null, deck: X.deck.slice(), voice: R.voice ? Object.assign({}, R.voice) : null, regular: true };
+    if (lines.line) en.line = lines.line;
+    return Object.assign({}, content, { enemies: Object.assign({}, content.enemies, { [who]: en }), lines: Object.assign({}, content.lines, { [who]: lines }) });
+  }
+  // 等效位數：max(1, run.pos＋off[who]＋位移)（off＝棋力個性差：小魚 −2 … 周姐 +2；位移＝content.encounter.posAdd 在這一位的值（sparAddAt），強度用）。
+  //   base true＝不加位移（＝規格 §7.4 的 posEff；encLoot 補牌池用：獎勵不跟著強度旋鈕變）
+  function sparPos(run, content, who, base) {
+    const R = content.regulars && content.regulars[who], off = R && R.enc && Number.isInteger(R.enc.off) ? R.enc.off : 0;
+    return Math.max(1, (run.pos | 0) + off + (base ? 0 : sparAddAt(sparCfg(content).posAdd, run.pos)));
+  }
+  // sparDeck(content, who, posEff, {main, tier}) -> [cards]：熟客的牌組（主線 11-21 裁定「牌組身分跟強度分開」）——一律他自己 C.regulars[who].enc.deck 那 7 張、
+  //   照原順序、不換牌（trialDeck 的總星下限會把他的牌換光＝戰利品不再是他的唱片）；星數照等效位數的 trialDeck 規則「只補星」：
+  //   ① 加星：b＝⌊(posEff−buffFrom)/buffEvery⌋ 加在 m 軸（有主屬性且那張主屬性那軸是峰值＝主屬性，否則 topAttr；同 trialDeck），封頂 buffCap
+  //   ② 補到下限：總星還不到 fl＝floorAt(posEff)（trialDeck 會把這張換掉的那種）→ m 軸先補（封頂 buffCap），還不夠就從最低那軸一星一星往上補（並列照 c→o→h），每軸封頂 buffCap
+  //   每張都是他自己的一份（對決狀態不共用物件）；plus＝m 軸總共加的 {attr, n}（同 trialDeck）、fill＝其他軸補的 {o:2, h:1}（有才給）。頂點卡／王牌不加（他的牌本來就沒有）
+  function sparDeck(content, who, posEff, o) {
+    o = o || {};
+    const R = content.regulars && content.regulars[who]; if (!R || !R.enc || !Array.isArray(R.enc.deck)) throw new Error('engine: unknown regular ' + who);
+    const K = trialCfg(content, o.tier).curve.deck, d = Math.max(1, posEff | 0), cap = K.buffCap;
+    const fl = floorAt(content, d, o.tier), b = Math.floor(Math.max(0, d - K.buffFrom) / K.buffEvery);
+    const M = ATTRS.includes(o.main) && +K.mainShare > 0 ? o.main : null;
+    return R.enc.deck.map(id => {
+      const g = cardFrom(content, id), c = Object.assign({}, g);
+      if (c.tier) return c;
+      const m = M && star(g, M) === peak(g) ? M : topAttr(g), s0 = star(g, m), fill = {};
+      c[m] = Math.min(cap, Math.max(s0, s0 + b));
+      if (power(c) < fl && c[m] < cap) c[m] = Math.min(cap, c[m] + (fl - power(c)));
+      for (let k = 0; power(c) < fl && k < 3 * cap; k++) {
+        const low = ATTRS.filter(a => a !== m && star(c, a) < cap).sort((a, z) => star(c, a) - star(c, z))[0];   // sort 穩定：並列照 c→o→h
+        if (!low) break;
+        c[low] = star(c, low) + 1; fill[low] = (fill[low] | 0) + 1;
+      }
+      if (c[m] !== s0) c.plus = { attr: m, n: c[m] - s0 };
+      if (Object.keys(fill).length) c.fill = fill;
+      return c;
+    });
+  }
+  // encDef(run, content, who) -> eDef：同一條 V3 曲線的一般客人（enemyDef at posEff、cls normal；品味、底氣、說真話、讀你、半指、不露、被唬多扣、放水全照主線；
+  //   posEff 含 content.encounter.posAdd），主屬性＝enc.main；牌組＝他自己的 7 張（sparDeck：不換牌、只照 posEff 補星；下半改，原本照 trialDeck 換牌）；
+  //   不帶王牌（encounter.ace true＝照一般客人在 posEff 的機率帶，試調用）、沒有稱號、不吃踢館帖（不走 guestDef）；聲望＝上限＝ceil(short × 那位一般客人的聲望)
+  function encDef(run, content, who) {
+    const view = encView(content, who);
+    if (!view) throw new Error('engine: unknown regular ' + who);
+    const R = content.regulars[who], X = sparCfg(content), posEff = sparPos(run, content, who), main = ATTRS.includes(R.enc.main) ? R.enc.main : null;
+    const d = enemyDef(view, who, { pos: posEff, cls: 'normal', seedKey: run.seedKey + '#enc', runNo: run.runNo, playerAce: run.ace, tier: run.tier, main,
+      deckIds: R.enc.deck });                                 // deckIds＝釘住他的 7 張（trialDeck 不去換牌；王牌那顆雜湊照舊），下一行換成 sparDeck 補星的版本
+    d.deck = sparDeck(view, who, X.deckAt === 'pos' ? Math.max(1, run.pos | 0) : X.deckAt === 'base' ? sparPos(run, content, who, true) : posEff, { main, tier: run.tier });
+    if (run.fac) { const FA = facGuestAdd(run, content, Math.max(1, run.pos | 0)); d.hp += FA.hp; d.atk += FA.atk; }   // 第 D 波棒三：?fac=1 那一趟同一位的主線客人多幾，切磋跟著多（照第幾位、不照等效位數：切磋強度是對「同段主線客人」量的）；旗標關一行不走
+    d.hp = Math.max(1, ceil6(X.short * d.hp));
+    if (X.ace !== true) d.ace = null;                         // 規格：不帶王牌（encounter.ace true＝照一般客人的機率帶，只給試調強度用；出貨不開）
+    d.title = null;
+    return d;
+  }
+  // encStart(run, content, {apex}) -> {duel, events, enemyId:who, view} | null：run.spar 是這一位的 'fighting'（choose encAccept 之後）才開。
+  //   你這一邊走 fightSetup（跟 startFight 同一個入口；頂點卡、〔D〕被動與第二招、配件照主線），差別只有：聲望＝上限＝ceil(short × run.maxHp)（不看你現在剩多少）、
+  //   沒有翻面、種子＝fnv1a32(seedKey#runNo#enc#pos#who)、提示句看過的給拷貝不寫回。用 run 的深拷貝開局：run 一個欄位都不動（run.duel 照舊 null，不存檔、不會被當主線 resumed）
+  //   duel.spar＝{round, pos, who}（encFinish 認這場）
+  function encStart(run, content, o) {
+    const S = run && run.spar;
+    if (!S || S.state !== 'fighting' || S.pos !== run.pos || run.over || run.duel || run.pending) return null;
+    const view = encView(content, S.who); if (!view) return null;
+    const r = clone(run), X = sparCfg(content);
+    const eDef = encDef(r, content, S.who), hp = Math.max(1, ceil6(X.short * (Number.isInteger(r.maxHp) && r.maxHp > 0 ? r.maxHp : CFG.playerHp)));
+    const seed = fnv1a32(r.seedKey + '#' + r.runNo + '#enc#' + S.pos + '#' + S.who) || 1;
+    const F = fightSetup(r, view, { eDef, seed, apex: !!(o && o.apex), encore: false, hp });
+    const d = startDuel(F.pDef, F.eDef, F.opts);
+    d.duel.spar = { round: S.round, pos: S.pos, who: S.who };
+    return { duel: d.duel, events: d.events, enemyId: S.who, view };
+  }
+  // encLoot(run, content, duel, {reward, owned}) -> {cards:[3], src:[3]}（新函式，lootRow 一個字不動）：他這場的牌（沒出過的先：雜湊最小那張沒出過的、再照雜湊補）＋
+  //   不夠從 wcPool(wcTh(posEff, 'power')) 用 wcPick 補（src 'fill'；posEff＝pos＋off，不加 posAdd）——跟主線打贏一般客人的戰利品列同一套挑法；種子鍵 seedKey#runNo#enc#pos。
+  //   唱片櫃模式跳過已擁有（他的牌直接跳過、補牌時擁有的排最後）；包包模式跳過包包裡的。沒有金邊、沒有紅包、不碰 wcStats、不寫 run.road
+  function encLoot(run, content, duel, o) {
+    const S = run.spar || {}, pos = S.pos || run.pos, who = S.who || (duel && duel.e && duel.e.id);
+    const mode = sparMode(content, Object.assign({}, o, S.mode ? { reward: S.mode } : {})), n = wcCfg(content).loot.n, key = wcKey(run, 'enc#' + pos);
+    const owned = mode === 'shelf' ? sparOwned(o) : null, has = mode === 'bag' ? (id => run.bag.includes(id)) : (id => !!(owned && owned(id)));
+    const met = uniq(((duel && duel.e && duel.e.thrown) || []).map(c => c && c.id).filter(Boolean));
+    const deck = uniq(((duel && duel.e && duel.e.deckIds) || []).filter(id => content.cards[id] && !content.cards[id].tier && !has(id)));
+    const h = id => hash01(key + '#d#' + id);
+    const unplayed = deck.filter(id => !met.includes(id)).sort((a, b) => h(a) - h(b));
+    const cards = [], src = [];
+    if (unplayed.length) { cards.push(unplayed[0]); src.push('unplayed'); }
+    for (const id of deck.slice().sort((a, b) => h(a) - h(b))) { if (cards.length >= n) break; if (!cards.includes(id)) { cards.push(id); src.push(met.includes(id) ? 'played' : 'unplayed'); } }
+    if (cards.length < n) {
+      const R = content.regulars && content.regulars[who], posEff = R ? sparPos(run, content, who, true) : run.pos;   // 補牌池：規格 posEff（不加 posAdd：獎勵不跟強度旋鈕變）
+      const bag = mode === 'bag' ? run.bag || [] : [], skip = new Set([].concat(cards, bag, run.road || []));
+      skip.hard = new Set([].concat(cards, bag));
+      for (const id of wcPick(wcPool(content, wcTh(content, posEff, 'power', run.tier)), key + '#fill', n - cards.length, skip, null, owned)) { cards.push(id); src.push('fill'); }
+    }
+    return { cards, src };
+  }
+  // encFinish(run, content, duel, {reward, owned}) -> {win, loot:{cards,src}|null, hands, by} | {error}：只寫 run.spar（state won|lost、mode、loot）與 run.stats.spar
+  function encFinish(run, content, duel, o) {
+    const S = run && run.spar;
+    if (!S || S.state !== 'fighting') return { error: 'notFighting' };
+    if (!duel || !duel.over) return { error: 'notOver' };
+    if ((duel.spar && (duel.spar.pos !== S.pos || duel.spar.who !== S.who)) || (duel.e && duel.e.id !== S.who)) return { error: 'notThisSpar' };
+    const T = sparStats(run), win = !!duel.over.win;
+    if (win) { S.state = 'won'; S.mode = sparMode(content, o); S.loot = encLoot(run, content, duel, o); T.won++; }
+    else { S.state = 'lost'; T.lost++; }
+    return { win, loot: win ? clone(S.loot) : null, hands: duel.stats ? duel.stats.hands : 0, by: duel.over.by };
+  }
+  // encVoid(run) -> bool：打到一半重新整理（state fighting）→ void（不給不扣）
+  function encVoid(run) {
+    const S = run && run.spar;
+    if (!S || S.state !== 'fighting') return false;
+    S.state = 'void';
+    return true;
+  }
+  // fixEnc(run, content?) -> bool（有改）：讀檔整理（fixWaveC 旁邊）。run.spar 形狀不對就刪；'offer' 但 pos 不是 run.pos（舊分頁打過那一位了）就刪；
+  //   'fighting' 留著（交給來客畫面判作廢：encVoid）；content 有給時：who 要是 C.regulars 的鍵、loot 濾掉卡池沒有的卡（同 fixWaveC）。
+  //   run.stats.spar 不是物件就刪、數字不是非負整數改 0。validRun 不擋這兩個欄位（舊分頁照主線打）
+  function fixEnc(run, content) {
+    if (!run || typeof run !== 'object') return false;
+    let ch = false;
+    if ('spar' in run) {
+      const S = run.spar, pi = x => Number.isInteger(x) && x >= 1, sid = x => typeof x === 'string' && x.length > 0 && x.length <= 200;
+      const L = S && S.loot;
+      const good = !!S && typeof S === 'object' && !Array.isArray(S) && pi(S.pos) && pi(S.round) && S.round === roundOf(S.pos) && sid(S.who) && SPAR_STATES.includes(S.state)
+        && (!content || !content.regulars || !!content.regulars[S.who])
+        && (S.mode == null || SPAR_MODES.includes(S.mode))
+        && (L == null || (typeof L === 'object' && Array.isArray(L.cards) && Array.isArray(L.src) && L.cards.length === L.src.length && L.cards.every(sid) && L.src.every(x => typeof x === 'string')))
+        && (S.state !== 'won' || !!L) && (S.taken == null || (sid(S.taken) && !!L && L.cards.includes(S.taken))) && (S.skipped == null || S.skipped === true) && !(S.taken != null && S.skipped);
+      if (!good || (S.state === 'offer' && S.pos !== run.pos)) { delete run.spar; ch = true; }
+      else if (content && content.cards && L) {
+        const keep = L.cards.map((id, i) => content.cards[id] || id === S.taken ? i : -1).filter(i => i >= 0);
+        if (keep.length !== L.cards.length) { L.src = keep.map(i => L.src[i]); L.cards = keep.map(i => L.cards[i]); ch = true; }
+      }
+    }
+    if (run.stats && typeof run.stats === 'object' && 'spar' in run.stats) {
+      const T = run.stats.spar;
+      if (!T || typeof T !== 'object' || Array.isArray(T)) { delete run.stats.spar; ch = true; }
+      else for (const k of SPAR_KEYS) if (!(Number.isInteger(T[k]) && T[k] >= 0)) { T[k] = 0; ch = true; }
+    }
+    return ch;
+  }
+  // encPolicy(run, content, {policy, reward, owned}) -> 下一個 choose | null（自動玩與 sim 共用；fighting 時回 null＝呼叫的人去 encStart → 打 → encFinish）
+  //   policy：'always' 每個都接、贏了一律收（唱片櫃：沒擁有的先；包包：漲最多的那張、不漲也收）｜'never' 每個都改天｜
+  //           'smart'（預設＝最會撿便宜的：零風險一律接；唱片櫃模式沒擁有就收、都擁有就拿錢；包包模式照主線戰利品列的挑法（runPolicy：bagScore 漲才收）否則拿錢）｜
+  //           'cash'（sim 壓力測試：每個都接、一律拿錢＝唱片櫃模式對這一趟最有利的上界）
+  function encPolicy(run, content, o) {
+    o = o || {};
+    const pol = SPAR_POLICIES.includes(o.policy) ? o.policy : 'smart', S = run && run.spar;
+    if (!run || run.over) return null;
+    if (S && S.state === 'offer' && S.pos === run.pos) return pol === 'never' ? { type: 'encDecline' } : { type: 'encAccept' };
+    if (S && S.state === 'won' && S.taken == null && !S.skipped) {
+      if (run.duel) return null;
+      const cards = ((S.loot && S.loot.cards) || []).filter(id => cardOf(content, id));
+      if (pol === 'cash' || !cards.length) return { type: 'encSkip' };
+      const cOf = id => cardOf(content, id), order = cards.slice().sort((a, b) => peak(cOf(b)) - peak(cOf(a)) || power(cOf(b)) - power(cOf(a)));
+      if ((S.mode || sparMode(content, o)) === 'bag') {
+        const base = bagScore(content, run.bag);
+        let pick = null, gain = pol === 'always' ? -Infinity : BAG_EPS;
+        for (const id of order) { if (run.bag.includes(id)) continue; const g = bagScore(content, run.bag.concat([id])) - base; if (g > gain) { gain = g; pick = id; } }
+        return pick ? { type: 'encTake', id: pick } : { type: 'encSkip' };
+      }
+      const owned = sparOwned(o), fresh = order.find(id => !(owned && owned(id)));
+      return fresh ? { type: 'encTake', id: fresh } : pol === 'always' ? { type: 'encTake', id: order[0] } : { type: 'encSkip' };
+    }
+    if (S && S.pos === run.pos && S.round === roundOf(run.pos)) return null;   // 這一位的切磋已經開過（改天、打完、作廢）
+    return encOffer(run, content) ? { type: 'encOpen' } : null;
+  }
+  // encPending(run) -> 'offer'|'fighting'|'loot'|null：畫面要處理的切磋（給 4b 少寫一份判斷）。
+  //   'offer'＝這一位的邀請還在等（重新整理照樣在對戰台等）；'fighting'＝打到一半（重新整理＝encVoid 作廢）；'loot'＝打贏還沒收／拿錢（擋「下一位」、重開戰利品列）；
+  //   null＝沒有要處理的（沒開過、改天、沒理他、輸了、作廢、收完）＝照常演主線客人
+  function encPending(run) {
+    const S = run && run.spar;
+    if (!S || typeof S !== 'object') return null;
+    if (S.state === 'offer') return S.pos === run.pos ? 'offer' : null;
+    if (S.state === 'fighting') return 'fighting';
+    if (S.state === 'won' && S.taken == null && !S.skipped) return 'loot';
+    return null;
+  }
+  // choose 的五種（在 choose 裡 switch；這裡是共用的檢查）：run.spar 是這一位的 offer（接受／改天）
+  const sparOfferNow = run => { const S = run.spar; return !!S && S.state === 'offer' && S.pos === run.pos; };
+
   // ---------- 模擬／自動遊玩的選擇（runPolicy 接不到的 pending 種類；SPEC-C §7.2）----------
   //   o：pickFirst（永遠選左邊）、firstSide（第一趟固定選哪邊）、dare 'auto'|'always'|'never'、dareHp（接帖要聲望 ≥ 幾成上限，預設 .7）、reserve（留底，預設 4000）、
   //      reroll（挖寶攤包包沒滿分時重翻一次）、takeSell（bagScore 不漲的照樣收、下一位前拿去櫃檯賣）、boostFirst（倉庫先拿加成配件）、levelMix
@@ -3829,9 +4151,64 @@
         else p.offer = draftOffer(run, content);
         return { ok: true, effects };
       }
+      // ---- 活店第二階段：切磋（SPEC-H §7.3、§7.5；run.spar；上面 encOffer 那段的狀態機）。每一種都只寫 run.spar／run.stats.spar（不收＝加錢、包包模式收＝主線拿牌記帳）----
+      // 開邀請（{type:'encOpen'}）：encOffer 有結果、這一位還沒開過 → run.spar 整筆換成這一位的 offer、stats.spar.offered +1
+      case 'encOpen': {
+        const of = encOffer(run, content);
+        if (!of) return fail('noSpar');
+        if (run.spar && run.spar.pos === of.pos && run.spar.round === of.round) return fail('sparDone');
+        run.spar = { round: of.round, pos: of.pos, who: of.who, state: 'offer' };
+        sparStats(run).offered++;
+        effects.push({ spar: 'offer', who: of.who });
+        return { ok: true, effects };
+      }
+      // 來一盤（{type:'encAccept'}）：offer → fighting（畫面先存檔再 encStart；重新整理在打＝作廢）
+      case 'encAccept': {
+        if (!sparOfferNow(run) || nextStep(run) !== 'fight') return fail('noSparOffer');
+        run.spar.state = 'fighting'; sparStats(run).accepted++;
+        effects.push({ spar: 'fighting', who: run.spar.who });
+        return { ok: true, effects };
+      }
+      // 改天（{type:'encDecline'}）／30 秒沒理他（{type:'encDecline', lapse:true}）：offer → declined｜lapsed
+      case 'encDecline': {
+        const S = run.spar;
+        if (!S || S.state !== 'offer') return fail('noSparOffer');
+        S.state = ch.lapse ? 'lapsed' : 'declined';
+        effects.push({ spar: S.state, who: S.who });
+        return { ok: true, effects };
+      }
+      // 收這張（{type:'encTake', id}；cardId 也收）：打贏、還沒收／拿錢、是那三張之一。唱片櫃模式（run.spar.mode）＝只記 run.spar.taken（畫面 shelfOwn(id,'enc')）；
+      //   包包模式＝主線同一套拿牌記帳（包包、stats.taken、taken、entered、撿來的 $400 賣回）；不進 drops
+      case 'encTake': {
+        const S = run.spar, id = ch.id != null ? ch.id : ch.cardId;
+        if (!S || S.state !== 'won' || !S.loot) return fail('noSparLoot');
+        if (S.taken != null || S.skipped) return fail('sparDone');
+        if (run.over || run.duel) return fail('notNow');
+        if (!S.loot.cards.includes(id) || !cardOf(content, id)) return fail('notOffered');
+        const mode = SPAR_MODES.includes(S.mode) ? S.mode : sparMode(content);
+        if (mode === 'bag') {
+          if (run.bag.includes(id)) return fail('owned');
+          if (bagLimited() && bagFull(run)) return fail('bagFull');
+          run.bag.push(id); sparTakenPush(run, id); run.taken++; enter(id); wcFound(run, id); effects.push({ gainCard: id });
+        } else effects.push({ shelf: id });
+        S.taken = id; sparStats(run).took++;
+        return { ok: true, effects };
+      }
+      // 不收（{type:'encSkip'}）：+C.waveC.loot.skipCash（$200，跟主線戰利品列不收一樣；不乘酬勞天賦 payMul）＝wcEarn(run, 'spar', n)
+      case 'encSkip': {
+        const S = run.spar;
+        if (!S || S.state !== 'won') return fail('noSparLoot');
+        if (S.taken != null || S.skipped) return fail('sparDone');
+        if (run.over || run.duel) return fail('notNow');
+        const n = wcCfg(content).loot.skipCash | 0;
+        wcEarn(run, 'spar', n); S.skipped = true; sparStats(run).cash += n;
+        effects.push({ cash: n });
+        return { ok: true, effects };
+      }
     }
     return fail('badChoice');
   }
+  function sparTakenPush(run, id) { if (!Array.isArray(run.stats.taken)) run.stats.taken = []; run.stats.taken.push(id); }
 
   // ============================================================================================================================
   // 第 D 波：樂歷（局外成長；scratchpad v5/wave-d SPEC-D §2、§4.1；給畫面的契約 build1/CONTRACT.md）。全部純函式、不碰存檔、不碰 run.rng。
@@ -4495,7 +4872,8 @@
     facGuestAdd, deepNow,
     TREE_OPS, TREE_FX_MAX, TREE_FX_ADD, treeNodes, treeNode, treeCost, treePoints, treeWhy, treeBuy, treeSell, treeRespec, treeArgs, treeList, treeFixOne, facTalOf, treeLv3,
     TRIAL_PASS, TRIAL_OPEN_FROM, addMerge, trialTiers, trialFix, trialPick, trialMul, trialRecord,
-    ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar };
+    ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar,
+    fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparAddAt, sparMode, sparPos, sparDeck, SPAR_LINE_IDS, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

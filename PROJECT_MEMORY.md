@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-22｜dip-vinyl-shop｜game-lab I-4 背景音樂第三輪審查（main 併切磋後）：5 條修正
+
+- **背景**：I-4 背景音樂前兩輪都在狀態機抓到問題，切磋（#547）合併後在 main 上再審一次。報告 scratchpad `v5/wave-i/build4/FINAL-r3.md`、裁定 `wave-i/RULING.md` 最後一段。main 全套測試先跑一輪：0 失敗。
+- **修正**：(1) 新開頁第一首還在抓時按 ⏸ 關聲音、進對決再開聲音，會在對決裡放輪播那首（主線與切磋都會）→ `bgmLeave` 清掉、那張放回佇列最前面（`plBack`）；(2) ?apex=1 時唱片櫃裡的頂點卡、這一趟的王牌會被輪播 → `plSkip` 一律不放；(3) 切磋戰利品列的鏡頭把 ♪ 擠到上緣、壓住牆上封面搶點擊 → 被擠下來又疊到點得到的熱點就藏（`npIcHot`）；(4)(5) 有切磋邀請時第一首「正在播放」字卡一閃就被嗆聲收掉、第一次邀請時跟老闆提示疊字 → 自動展開等熟客／挑戰者／老闆講完再出（`npHold`；`C.bgm.popChatGap` 600、`popHoldMax` 20000）。
+- **文件**：README 的 P9「首屏 gzip ≤800 KB 硬門檻」改成跟 e2e-pool 一致的「只印參考」（店主 11-17「我從沒有限定檔案上限」；實測約 1,061 KB）。
+- **主要檔案**：`game-lab/{ui.js,content.js,index.html（?v=92）,README.md}`、`tools/check-content.mjs`、`tests/e2e-bgm.mjs`（#35–#37，修前都 FAIL）。
+- **驗證**：check-content／shops／covers、lint-copy 過；單元 engine 2,951,473、chars、crowd、hit、shop、tutorial 全過；e2e-bgm 390 39/39、375 38/39（#29 聊天沒開出來，單獨重跑 2/2）；e2e-crowd（shelf,bag）36/36、35/35；e2e.spec 375 50/50、390 49/50（#54 吐司 1.5 秒，load 6 以上，單獨重跑 2/2）；taps、econ、loot、stall、apex、duel、career 兩尺寸過。
+
+### 2026-11-21｜dip-vinyl-shop｜game-lab 活店第二階段：熟客來找你切磋（店主說的遭遇戰），開關打開
+
+- **背景**：店主 11-08 規劃書「遭遇戰：客人主動來嗆，可以選擇不打；打贏拿錢或唱片，輸了不扣主線進度」。第一階段（熟客走動、聊天）已上線；這是第二階段。規格 scratchpad `v5/liveshop/SPEC-H.md` §7–§13、報告 `liveshop/p2b/FINAL.md`、量測 `p2b/fix/SIM.md`、裁定 `liveshop/rulings.md`（最後兩段）。
+- **玩法**：第 2 輪起，熟客偶爾走到對戰台嗆你一句；點他（或對戰台）開邀請面板：「來一盤」或「改天」（直接叫下一位也算改天）。切磋是短局（雙方聲望只拿三分之二出來打），沒有翻面；輸了什麼都不扣（聲望、說情、走到第幾位、連勝、錢、包包都不動）；贏了從他自己那 7 張挑一張收進**唱片櫃**（標「切磋贏來的」），或改拿 $200。第一次有熟客來嗆時老闆提示一次。
+- **強度**：熟客一律出自己那 7 張（只把星數往上補、不換牌）；強度照位數走（`C.encounter.posAdd` 折線 `[[6,16]…[55,50]]`、短局 0.65），每段跟同段主線一般客人差不多（LS5 分段 −10～+4）；熟客 off 照量到的勝率排（小魚最好打 → 周姐最難）。
+- **台詞**：審過的切磋句 83＋介面字 14 搬進 `content.js`；審查後新增 3 句＋介面字 8（主線審稿改 1 處：「點他」→「點人」）。lint-copy 擋「切磋」與「踢館帖」混用。
+- **主要檔案**：`game-lab/{engine.js（sparDeck／sparAddAt／sparPos／encDef／fightSetup／SPAR_LINE_IDS…）,content.js（C.encounter on:true、reward shelf、台詞）,ui.js（sparNight…encEnd）,crowd.js（handOff／takeBack／encDecline、門事件 guarHold）,loot.js,sim.mjs,style.css,index.html（?v=91）}`、`tools/{check-content,lint-copy}.mjs`、`test/engine.test.mjs`（#34）、`tests/e2e-crowd.mjs`（LC11–LC15＋第一次提示）。另修：切磋段的 `CU` 跟樂歷同名函式撞名（改 `SPU`）；CPU 滿載時門事件偶爾 11–12 秒是店況造成的（不是時鐘），加 `guarHold`。
+- **驗證**：sim n4000 一般／--safety／--fac 各 32/32（LS0 主線 JSON 逐字相同、LS1／LS3 +0.0、LS4 ×1.000、LS5 會讀的 90.8%／新手 73.5%、LS6 2.74／2.39／2.77、LS7 6.7%、LS8 1.03）；engine.test 2,951,473／0、crowd 53,239、shop、chars、hit、tutorial 全過；e2e 390×664＋375×548 全套（crowd 36／35、duel 121、career 46、fac 22…）＋e2e.spec 兩尺寸 50/50；主線改字後 engine --quick 508,017／0、lint-copy、check-content 過。
+- **留著的**：F6 只做一半（盤面上熟客牌的星數前期多半 5／4／4，戰利品列有一行說明）；要做完得另開一棒調熟客牌組本身。CLAUDE.md「接力任務」check-in 間隔改約 4 小時（店主 11-21）。
+
 ### 2026-11-21｜dip-vinyl-shop｜game-lab 第 I 波 I-4：沒對戰時輪流播包包裡的歌＋收音機旁「正在播放」
 
 - **背景**：店主 11-20 第 4 點「平時沒有對戰的時候 播放自己唱片包裡的專輯 隨機輪流放 並且在收音機那邊彈出顯示正在播放的音樂」。規格 scratchpad `v5/wave-i/SPEC-I.md` §4、報告 `wave-i/build4/FINAL.md`、`FINAL-post.md`、裁定 `wave-i/RULING.md`。

@@ -1352,3 +1352,17 @@ body.lb-tune-open{overflow:hidden;}
   .lb-sheet.level .lb-opts.n5 .lb-lvl{min-height:44px;padding-top:2px;padding-bottom:2px;}
   .lb-sheet.level .lb-opts.n5 .lb-lvl .ds{line-height:1.3;}
 }
+/* ---------- 活店第二階段：切磋（SPEC-H §7.3、§9；ui.js sparSheet，floatSheet 外框）：頭像＋標題＋風險一行＋獎勵一行＋兩顆 52 px 鈕（375×548 約 180 px，上限 72%）
+   class enc＝crowdPaused 不算這張（他照樣站在對戰台等；30 秒沒理他的計時另外停） */
+.lb-sheet.float.enc .pv-who{align-items:flex-start;margin-top:6px;}
+.lb-sheet.float.enc .en-tx{min-width:0;flex:1;}
+.lb-sheet.float.enc .en-tx p{margin:0;font-size:12.5px;line-height:1.55;color:#333;word-break:normal;line-break:strict;}
+.lb-sheet.float.enc .en-tx .en-risk{color:var(--ink);font-weight:700;}
+.lb-sheet.float.enc .en-tx .en-rew{margin-top:3px;color:#555;}
+.lb-sheet.float.enc .en-tx .en-short{margin-top:2px;font-size:11.5px;color:var(--gray);}   /* 短局一行（審查修正 p2b） */
+.lb-sheet.reward.lt-sheet.enc .note.en-note{color:var(--gray);}   /* 戰利品列：盤面補過星、收下的是原本的星數（審查修正 p2b） */
+.lb-sheet.float.enc .two{margin-top:10px;}
+.lb-sheet.float.enc .two .lb-btn{min-height:52px;height:52px;}
+.lb-sheet.float.enc .hd .x{height:44px;margin:-6px -8px -6px 0;}   /* ✕ 也 44 px 高（手機點擊 ≥44，§9）；上下負邊距：標題列不跟著長高 */
+/* 唱片櫃來源小籤：切磋贏來的（跟樂歷抽到的同一種樣子） */
+.lb-cv .badge.enc{top:auto;bottom:0;left:0;right:0;text-align:center;background:var(--cream);color:var(--cream-ink);font-size:9px;line-height:14px;letter-spacing:.04em;box-shadow:inset 0 1px 0 var(--gold);}

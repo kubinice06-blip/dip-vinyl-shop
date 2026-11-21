@@ -243,7 +243,7 @@ LAB_SIZES=$S node game-lab/tests/e2e-intro.mjs              # 開頭旁白＋玻
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-apex.mjs   # 頂點卡試做（?apex=1）：挑王牌面板、能力框、跳過序章（解鎖制：擁有的卡先放進存檔）
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-unlock.mjs # 流派與頂點卡解鎖：新存檔只有初始派、鎖住的派點不了、打倒藏家掉被剋那派、旗標開沒收到的卡不能挑
 LAB_SIZES=$S LAB_MAIN_BASE=<main 的伺服器根> node game-lab/tests/e2e-pool.mjs   # 第 B 波 P1–P12＋M2：畫面類（P1、P3–P10b）每個尺寸、邏輯 fixture（P1b–P1g、P2、P11、P12、M2）只在 390x664；
-                                                             #   P9 首屏 gzip ≤800 KB（硬門檻；主線 M1 760，併 #480、#491 跟著 main 基底 +20）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
+                                                             #   P9 首屏 gzip 只印參考（對照 800 KB，不擋：店主 11-17「我從沒有限定檔案上限」；11-22 實測約 1,061 KB）＋Fast 3G 計時（參考；LAB_MAIN_BASE 給了才跟 main 交錯比）；POOL_ONLY=P1,P3 只跑幾項
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-recap.mjs  # 上一手細節（11-17）：揭曉後停住等點、⏸ 自動換手、上一手詳情、這場紀錄、結算畫面的紀錄、半指／不露不洩漏
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-career.mjs # 第 D 波樂歷：開機入帳冪等（v8 不升、.bak8）、結算一行＋明細＋過場卡、樂歷頁、下一趟天賦、關樂歷、標題兩行、退版／跨版（CAREER_PREV＝C 版 git ref，git show 回應 game-lab-c/）、備用說情、演唱會上限字、第一次挑派預設冷門
 LAB_SIZES=390x664,375x548 node game-lab/tests/e2e-fac.mjs    # 第 D 波三流派（?fac=1）F1–F8：開局派系卡（新手標、鎖住的派、375 一次一張可滑）、換派、序章那場沒有被動、結果行小字＋第一次那句、頂欄一字圖示、第二招上限（吸血 2／反傷 2 次）、Lv5 本派格、?fac=1&apex=1 章與換一格、沒旗標的頁面續玩、中繼點選秀沒有本派格；FAC_ONLY=2,4 只跑幾項
