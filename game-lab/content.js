@@ -216,6 +216,31 @@
     gone: '已經不在特價箱了。'                           // 買走又賣掉了
   };
   C.radioTag = '新';
+  // 背景音樂（第 I 波 §4；店主 11-20 第 4 點「平時沒有對戰的時候 播放自己唱片包裡的專輯 隨機輪流放 並且在收音機那邊彈出顯示正在播放的音樂」）：
+  //   來客（含攤位）、領獎、說情時，輪流放這一趟包包裡有試聽的唱片（洗牌佇列：每張放過一輪才重洗、剛收的插到最前面；王牌／頂點卡不放）；樂歷 Lv5 起可選「包包＋唱片櫃」。
+  //   只顯示卡片欄位（藝人《專輯》），不寫曲名（沒有資料，不編）。數字：popMs＝收音機旁泡泡停多久；popGap＝距離上一次展開多久以上換歌才再展開；
+  //   tries＝連試幾首抓不到就停、retryMs 後再試；idleMs＝多久沒點擊就淡出停；fetchMax＝一次造訪輪播最多新抓幾首（之後只重播快取裡的）；resumeMs＝玩家點的那首放完／唱片資訊關掉後多久接回輪播；
+  //   fadeIn＝輪播每首淡入；vols＝⏸「音樂音量 小／中／大」
+  //   （第 I 波修正）giveUpMs＝輪播抓檔等多久才算抓不到（fx 預設 2.5 秒是給對決動畫的；慢網路 1 MB 要 3 秒上下）；popWait＝第一首、隔 2 分鐘的泡泡等鏡頭停、熟客聊完最多等多久；
+  //   popTapWait＝點 ♪ 時歌還在抓最多等多久（聊天中點 ♪ 不等：避開聊天泡泡擺；post 審查）
+  //   （第 I 波 post 審查）第二行「藝人《專輯》」放不下：展開 mqDelay 毫秒後往左捲到尾巴，每秒 mqPxS px、最久 mqMaxS 秒（6 秒內捲完、停在尾巴）
+  C.bgm = {
+    popMs: 6000, popGap: 120000, tries: 3, retryMs: 60000, idleMs: 600000, fetchMax: 30, resumeMs: 1500, fadeIn: 1200, vols: [0.3, 0.5, 0.7],
+    giveUpMs: 12000, popWait: 8000, popTapWait: 6000, mqDelay: 1100, mqPxS: 40, mqMaxS: 3.2,
+    ui: {
+      np: '正在播放',                                       // 收音機旁泡泡第一行（♪ 正在播放）
+      tapPlay: '點我放歌',                                  // 這次造訪還沒點過畫面（瀏覽器還不讓出聲）：收音機旁 ♪ 後面的字；只有這種情況才出字
+      icon: '正在播放的歌',                                  // ♪ 小圖示的讀屏字
+      bgm: '背景音樂',                                      // ⏸ 選單：背景音樂 開／關
+      vol: '音樂音量',                                      // ⏸ 選單：音樂音量 小／中／大
+      volNames: ['小', '中', '大'],
+      src: '背景音樂放',                                    // ⏸ 選單（樂歷 Lv5 起）：背景音樂放 包包／包包＋唱片櫃
+      srcBag: '包包',
+      srcBoth: '包包＋唱片櫃',
+      note: '每首約 1 MB；行動網路只重播已下載的。'          // ⏸ 選單三行下面的說明小字
+    }
+  };
+  C.bgmTag = '新';
 
   // ===================================================================
   // 誠實度（D §5：照實出的機率 q）與出招難度（原版 aiPlan 的係數，roguelike.html:3650-3660，拿掉相生與氣勢）
@@ -1741,7 +1766,9 @@
       { id: 'ban', cat: 'luck', cost: [2, 'flat'], max: 3, open: 2, soon: true }, { id: 'intel', cat: 'info', cost: [2, 'k+1'], max: 2, open: 5, soon: true }
     ],
     ladder: [
-      { lv: 2, key: 'talents' }, { lv: 8, key: 'power' }, { lv: 10, key: 'relic3', relicPick: 3 }, { lv: 10, key: 'off' },
+      { lv: 2, key: 'talents' },
+      { lv: 5, key: 'bgmShelf', ui: true },                       // 第 I 波 §7.3 d（跟 I-4 背景音樂一起上）：⏸ 可選「背景音樂放：包包＋唱片櫃」。ui＝只給畫面、引擎的 CAREER 預設不抄（engine.test 比對時略過）
+      { lv: 8, key: 'power' }, { lv: 10, key: 'relic3', relicPick: 3 }, { lv: 10, key: 'off' },
       { lv: 12, key: 'seed4', seedMax: 4 }, { lv: 15, key: 'gold', goldAdd: 0.01 }, { lv: 20, key: 'plea' },
       { lv: 0, key: 'seed5', soon: true }, { lv: 0, key: 'relicsNew', soon: true }, { lv: 0, key: 'regulars', soon: true }, { lv: 0, key: 'outfit', soon: true }
     ],
@@ -1767,7 +1794,7 @@
       // 解鎖階梯（已開的打勾、下一個亮、之後的灰）
       ladderTitle: '解鎖階梯', ladderRow: 'Lv{n} {name}',
       ladder: { talents: '天賦頁', power: '戰力天賦', relic3: '菁英、藏家的配件三選一', off: '可以關掉樂歷', seed4: '種子格 4 格',
-        gold: '戰利品列金邊機率 +1%', plea: '備用說情', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
+        gold: '戰利品列金邊機率 +1%', plea: '備用說情', bgmShelf: '背景音樂也放唱片櫃的歌', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
       drawRow: '每升一級：抽一張盤進唱片櫃（Lv10 起每 5 級史詩）',
       // 關掉樂歷（Lv10 起、只在樂歷頁；下一趟起生效）
       off: '下一趟的樂歷', offSub: '關掉＝天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。', offOn: '樂歷關', offBest: '關樂歷',   // 配件三選一＝relicPick

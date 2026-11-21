@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-21｜dip-vinyl-shop｜game-lab 第 I 波 I-4：沒對戰時輪流播包包裡的歌＋收音機旁「正在播放」
+
+- **背景**：店主 11-20 第 4 點「平時沒有對戰的時候 播放自己唱片包裡的專輯 隨機輪流放 並且在收音機那邊彈出顯示正在播放的音樂」。規格 scratchpad `v5/wave-i/SPEC-I.md` §4、報告 `wave-i/build4/FINAL.md`、`FINAL-post.md`、裁定 `wave-i/RULING.md`。
+- **播什麼、什麼時候**：來客（含攤位）、領獎、說情畫面輪流放包包裡的試聽（樂歷 Lv5 起可選「包包＋唱片櫃」）；洗牌佇列，每張放過一次才重洗，剛收的插到最前、賣掉的跳過。對決、序章、劇本不放；玩家點的歌、勝利曲優先，放完 400 ms 接回。抓不到跳下一首、連 3 首停 60 秒；行動網路或這次已新抓 30 首只放下載過的；10 分鐘沒點畫面淡出。輪播跟 iPhone 靜音鍵（audioSession ambient），離開輪播畫面切回 playback。切到背景不出聲。
+- **收音機旁**：♪ 小圖示（灰＝關、「點我放歌」＝還沒點過畫面、亮＝在放）；「♪ 正在播放／藝人《專輯》」字卡在第一首、點 ♪、隔 2 分鐘換歌時展開 6 秒，純字卡不擋點擊（字卡開著再點 ♪＝唱片資訊），不蓋人、名牌、聊天泡泡、吐司、面板；名字太長慢慢捲。⏸ 選單：「聲音｜背景音樂｜音樂音量」一列。
+- **主要檔案**：`game-lab/{fx.js,ui.js,stage.js,cardinfo.js,content.js,style.css,index.html}`、`game-lab/tests/e2e-bgm.mjs`（新，36 項）、`game-lab/tests/e2e-career.mjs`、`game-lab/test/engine.test.mjs`、`game-lab/tools/check-content.mjs`。`?v=89`。
+- **驗證**：兩輪審查共 24 條全修（背景開播、離開畫面還在抓的那首、關背景音樂關不掉、靜音鍵、慢網路上限、♪ 蓋聊天泡泡…）。engine.test 2,951,447／0、chars、crowd、hit、shop、tutorial 全過；e2e-bgm 兩尺寸 36/36；其他 e2e 兩尺寸全過（crowd LC2 門事件 CPU 滿載偶發 >10 秒、單獨重跑過）；e2e.spec 兩尺寸 50/50。
+
 ### 2026-11-21｜dip-vinyl-shop｜game-lab 第 I 波 I-0：成長曲線（第一輪就升級、樂歷前段變快、品味／底氣／聲望固定順序）
 
 - **背景**：店主 11-20 第 7 點「樂歷的成長曲線也要做好 第一輪就要讓玩家升級 局內升級也是 然後品味 底氣 聲望三項升級不要選項一直跳動 就照品味底氣聲望這個順序固定」。固定順序已在 #540 上線；這筆是曲線。規格 scratchpad `v5/wave-i/SPEC-I.md` §7、報告 `wave-i/build0/FINAL.md`、`SIM.md`、`RULINGS.md`。

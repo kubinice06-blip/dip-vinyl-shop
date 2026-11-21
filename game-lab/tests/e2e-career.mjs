@@ -391,7 +391,7 @@ async function runSize(browser, w, h) {
       const b1 = await C(page, () => ({ spent: Object.assign({}, window.__lab.save.career.spent), pts: document.querySelector('.lb-page .cx-head .pts').textContent, def: !document.querySelector('.lb-page [data-buy="def"]').disabled,
         atkCost: document.querySelector('.lb-page .cx-row[data-id="atk"] .st').textContent }));
       const R = p0 && p0.rows, lock8 = ['atk', 'def', 'hp', 'xp', 'rare'];
-      const ok = p0 && p0.lv === fill(x.title, { n: 7 }) && p0.pts === fill(x.points, { n: 6 }) && p0.later === fill(x.powerLater, { n: 8 }) && !p0.off && !p0.respec && p0.safety && p0.ladder === 7 && p0.ladSoon === 0 &&
+      const ok = p0 && p0.lv === fill(x.title, { n: 7 }) && p0.pts === fill(x.points, { n: 6 }) && p0.later === fill(x.powerLater, { n: 8 }) && !p0.off && !p0.respec && p0.safety && p0.ladder === 8 && p0.ladSoon === 0 &&
         lock8.every(id => R[id] && /lock/.test(R[id].cls) && R[id].buy === false && R[id].st === fill(x.lock, { n: 8 })) && R.plea && /lock/.test(R.plea.cls) && R.plea.st === fill(x.lock, { n: 20 }) && R.plea.buy === false &&
         ['money', 'pay'].every(id => R[id] && R[id].cls === '' && R[id].mo === x.moneyOnly && R[id].buy === true && R[id].st === fill(x.cost, { n: 1 })) &&
         ['piggy', 'reroll', 'ban', 'intel'].every(id => R[id] && /soon/.test(R[id].cls) && R[id].buy === null && R[id].st === x.soon) &&
@@ -942,7 +942,7 @@ async function runSize(browser, w, h) {
       const ok16b = t3.includes(fill(x.recurve, { n: 1 })) && t3.includes(fill(x.depositMore, { n: 50 })) && card3 && k3 === fill(x.lvUp, { n: 3 }) &&
         d3.xp === 300 && J(d3.drawn) === '[2,3]' && J(d3.stored) === '[2,3]' && d3.bank === 0 && !t4.length && !card4;
       const ok = t1.includes(fill(x.recurve, { n: 1 })) && card && k0 && k0.hd === fill(x.lvUp, { n: 7 }) && J(d1.drawn) === '[2,3,4,5,6,7]' && J(d1.stored) === J(d1.drawn) && d1.lexp <= 1 &&
-        !t2.some(t => t === fill(x.recurve, { n: 1 })) && !card2 && pg && pg.lv === fill(x.title, { n: 7 }) && pg.pts === fill(x.points, { n: 6 }) && pg.soon === 0 && pg.lad.length === 7 && !pg.lad.some(t => /之後開放/.test(t)) && ok16b;
+        !t2.some(t => t === fill(x.recurve, { n: 1 })) && !card2 && pg && pg.lv === fill(x.title, { n: 7 }) && pg.pts === fill(x.points, { n: 6 }) && pg.soon === 0 && pg.lad.length === 8 && pg.lad.filter(t => t.indexOf(x.ladder.bgmShelf) >= 0).length === 1 && !pg.lad.some(t => /之後開放/.test(t)) && ok16b;
       record(16, size, ok && !errs(page).length, `吐司 ${J(t1)}；卡 ${card} ${J(k0)}；${J(d1)}；重新整理 吐司 ${J(t2)} 卡 ${card2}；樂歷頁 ${J(pg)}；` +
         `16b 入帳＋補級 吐司 ${J(t3)} 卡 ${card3} ${J(k3)} ${J(d3)}；重新整理 吐司 ${J(t4)} 卡 ${card4}；${errTx(page)}`);
     } catch (e) { record(16, size, false, 'error ' + e.message); }
