@@ -148,6 +148,9 @@
       if (!posInt(r.maxHp) || !posInt(r.hp) || r.hp > r.maxHp || !posInt(r.level) || !(r.atk >= 0) || !(r.def >= 0) || !Array.isArray(r.checkpoints)) return false;
       var p = r.pending;
       if (p && !/^(reward|retry|level|stall|draft)$/.test(p.type)) return false;
+      // 第 I 波 I-3a 市集（SPEC-I §6.6、§10；引擎契約 wave-i/build3/CONTRACT.md §5）：run.fortune（null｜C 波物件｜陣列）、樂歷三格的鍵、run.fac.lv3、市集 pending 的新鍵只驗型別；
+      //   不對＝交給 engine fixMarket 修（壞到修不了＝當作收攤：pending null），不判整趟不合法、不升 RUN_V。C 波四鍵（退路形狀）下面照驗
+      if (E.fixMarket && !marketShapeOk(r)) { try { E.fixMarket(r, C); } catch (e) { console.error(e); } p = r.pending; }
       if (p && p.type === 'reward' && (!Array.isArray(p.cards) || !Array.isArray(p.relics))) return false;
       // 第 C 波（SPEC-C §2.4）：戰利品列／寶箱（reward 有 kind）、今天的攤位、中繼點開局選秀
       if (p && p.type === 'reward' && p.kind && !Array.isArray(p.src)) return false;
@@ -183,6 +186,21 @@
       if (!r.over && !E.nextStep(r)) return false;
       return true;
     } catch (_) { return false; }
+  }
+  // 這一趟有市集的東西（翻籤陣列、市集 pending、樂歷三格、試錄第 III 層）
+  function marketish(r) {
+    if (!r || typeof r !== 'object') return false;
+    return Array.isArray(r.fortune) || !!(r.pending && r.pending.mode === 'market') || ['marketTiles', 'fortuneFree', 'digN'].some(function (k) { return k in r; }) || !!(r.fac && typeof r.fac === 'object' && 'lv3' in r.fac);
+  }
+  // 第 I 波 I-3a 市集（validRun 用）：形狀對＝true
+  function marketShapeOk(r) {
+    var plain = function (x) { return !!x && typeof x === 'object' && !Array.isArray(x); }, strs = function (a) { return Array.isArray(a) && a.every(function (k) { return typeof k === 'string'; }); };
+    var nn = function (x) { return Number.isInteger(x) && x >= 0; };
+    if (!(r.fortune == null || plain(r.fortune) || (Array.isArray(r.fortune) && r.fortune.every(plain)))) return false;
+    if (['marketTiles', 'fortuneFree', 'digN'].some(function (k) { return r[k] != null && !Number.isInteger(r[k]); })) return false;
+    if (plain(r.fac) && r.fac.lv3 != null && typeof r.fac.lv3 !== 'boolean') return false;
+    var p = r.pending; if (!p || p.type !== 'stall' || p.mode !== 'market') return true;
+    return strs(p.tiles) && strs(p.free) && nn(p.slots) && nn(p.left) && plain(p.went) && plain(p.acts) && plain(p.seen) && (p.cur == null || (plain(p.cur) && typeof p.cur.kind === 'string'));
   }
   // v4（一晚版）→ v5（SPEC 無限試煉 §1 裁定 12）：留唱片櫃、看過的、學會的、偏好、小人、教學／序章做過沒、上次的王牌與特價三張、配件；
   //   一晚的 run 丟掉；nights → runs（舊的一晚記成 legacy，只拿來數「同一天第幾趟」）；best → { far, checkpoints, bestStreak }（一晚版沒有位數，從 0 起）
@@ -391,6 +409,9 @@
     if (s.run) { s.run.want = s.want.slice(-200); if (E.fixLot) { try { E.fixLot(s.run, C); } catch (_) { /* 抽不了就照舊：下一位照舊補貨 */ } } }
     // 第 C 波（SPEC-C §2.2、§2.4；CONTRACT §6）：舊 run 補欄位；不在卡池的卡 id 濾掉（站的貨濾光＝重進那一站、選秀題 <2 張＝重出）
     if (s.run && E.fixWaveC) { try { E.fixWaveC(s.run, C, { bestFar: s.best.far, chestDry: s.chestDry }); } catch (e) { console.error(e); } }
+    // 第 I 波 I-3a 市集（CONTRACT §5）：fortune 物件→陣列、樂歷三格的鍵、市集 pending 形狀（不在卡池的貨拿掉、壞到修不了＝當作收攤）。
+    //   C 波二選一（content stall.mode 'pick'）而且這一趟沒有市集的東西＝不碰（C 波算命那份物件照舊，pick 逐字）
+    if (s.run && E.fixMarket && ((E.fairOn && E.fairOn(C)) || marketish(s.run))) { try { E.fixMarket(s.run, C); } catch (e) { console.error(e); } }
     // 活店第二階段（切磋，CONTRACT §6）：run.spar／run.stats.spar 形狀不對就刪；'offer' 但不是這一位＝刪；'fighting' 留著給來客畫面判作廢
     if (s.run && E.fixEnc) { try { E.fixEnc(s.run, C); } catch (e) { console.error(e); } }
     // 第 D 波棒二（CONTRACT §1）：帶派別的 run 整理（形狀、不認得的本派選項、待選升級裡不認得或拿過的本派格）；沒有 run.fac＝不動
@@ -3159,6 +3180,8 @@
     if (UI.fac) nro.fac = true;                        // 第 D 波棒二（?fac=1；CONTRACT §1）：存進 run.fac（序章那場引擎自己不給；之後續玩照 run，不看網址）。旗標關時不加這欄
     // 第 D 波棒三（build3/CONTRACT §3）：派樹（?fac=1 才給；關樂歷＝{}）。沒點過樹＝{}（＝棒二的 ?fac=1）
     if (UI.fac && E.treeArgs && careerOk()) { try { nro.facTal = E.treeArgs(C, save.career, o.ace) || {}; } catch (e) { console.error(e); } }
+    // 第 I 波 I-3a 錄音室試錄（SPEC-D §3.8；CONTRACT §3.2）：這一派熟練到第 III 層（treeLv3，預設 Lv5）＝這一趟可以試錄第 III 層。旗標關時不加這欄
+    if (UI.fac && E.treePoints && careerOk()) { try { if (E.treePoints(C, save.career, o.ace).level >= (E.treeLv3 ? E.treeLv3(C) : 5)) nro.facLv3 = true; } catch (e) { console.error(e); } }
     // 第 D 波棒三試煉階級（SPEC-D §5.3；CONTRACT §2）：推門那列選的那一階（pick 夾在 0…open）；第 0 階不加這欄（＝沒開過試煉的帳號 newRun 逐字不變）。序章那一趟不給
     var tierPick = !o.prologue && E.trialPick ? trialPickNow() : 0;
     if (tierPick > 0) nro.tier = tierPick;
@@ -4740,9 +4763,30 @@
     sparQueue(r, true);
   }
   // 來客條頭像角落的小記號（第 C 波）：算命看過的這一輪藏家（run.fortune）、接了踢館帖的那一輪（run.dare）
+  //   第 I 波 I-3a 市集翻籤（roundGuests 的 fortunes／omen；SPEC-I §6.3「籤記在來客條那位頭像上」）：右上角換成「籤」圖示（shop-props MK_ICON，攤位格同一張）；
+  //   凶籤那位左上角紅標「凶」（有踢館帖記號就排在它下面）。C 波（只有 fortune 物件）一行不變
   function stallMarks(g) {
     var I = W.DipLabStalls && W.DipLabStalls._icons; if (!I || g.done) return '';
-    return (g.fortune ? '<span class="st-mk ft">' + pix(I.fortune, 12) + '</span>' : '') + (g.dare ? '<span class="st-mk dr">' + pix(I.dare, 12) + '</span>' : '');
+    var fs = Array.isArray(g.fortunes) ? g.fortunes : null, MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {};
+    var info = fs ? fs.some(function (f) { return f && f.slip !== 'omen'; }) : !!g.fortune;
+    return (info ? '<span class="st-mk ft' + (fs ? ' sl' : '') + '">' + pix((fs && MK.fortune) || I.fortune, 12) + '</span>' : '') + (g.dare ? '<span class="st-mk dr">' + pix(I.dare, 12) + '</span>' : '') +
+      (fs && g.omen ? '<span class="st-mk om" aria-hidden="true">' + esc(WU('mkOmenTag')) + '</span>' : '');
+  }
+  // 攤位還沒逛完時點了別的（箱子、收音機、櫃檯、對戰台、「就他了」）：C 波「先逛完今天的攤位。」；第 I 波 I-3a 市集「先逛完今晚的市集。」
+  function stallBusyText() { return save.run && E.isMarket && E.isMarket(save.run) && WU('mkBusy') ? WU('mkBusy') : WU('busy'); }
+  // 第 I 波 I-3a 市集：島台小道具（stage.js isle；舞台每格讀一次）。不是市集（或不在來客畫面）＝null
+  //   cells＝攤位格 ↔ 島台那一箱（stalls isle()）＋圖示（籤、飲料用 MK_ICON，其他照攤位格那張）；open＝開著的那攤（算命翻滿停住等點那一下也算）；
+  //   slips＝算命攤進去過以後，三張籤立在那一箱（翻開的照這一輪的 run.fortune，翻開那一下舞台演翻面）
+  function isleNow() {
+    var X = W.DipLabStalls, r = save && save.run, p = r && r.pending;
+    if (!X || typeof X.isle !== 'function' || UI.screen !== 'night' || !p || p.type !== 'stall' || p.mode !== 'market') return null;
+    var I = X._icons || {}, MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {}, st = (X.state && X.state()) || {};
+    var open = p.cur ? p.cur.kind : (st.mode === 'market' && st.hold ? st.kind : null), fHot = null;
+    var cells = X.isle().map(function (c) { if (c.kind === 'fortune') fHot = c.hot; return { hot: c.hot, kind: c.kind, went: !!c.went, open: c.kind === open, rows: MK[c.kind] || I[c.kind] || null }; });
+    var fs = E.fortunesOf ? E.fortunesOf(r).filter(function (f) { return f.round === r.round; }) : [];
+    var fc = p.cur && p.cur.kind === 'fortune' ? p.cur : null;
+    var slips = fHot && (fc || fs.length || (p.acts && p.acts.fortune > 0)) ? { hot: fHot, total: fc && fc.order ? fc.order.length : 3, faces: fs.map(function (f) { return f.slip; }) } : null;
+    return { key: runTag(r) + '#mk#' + p.after, cells: cells, slips: slips };
   }
   // 錢、包包、配件那一條（來客畫面、今天的攤位共用）
   function bagLineInner(r) {
@@ -5053,7 +5097,7 @@
       // 稱號（第 A 波 3；engine guestTitle：每 2 位換一次、藏家／跟名字一樣＝null）：頭像下緣一塊小名牌（壓在頭像上，不多佔一行：375×548 店景不再縮）
       //   「○○級」（titleTx）；放不下的用短寫（C.trial.titlesShort：地下廠牌主理人 → 廠牌主理人；aria-label 照全名）；6 字以上的名牌收一號（.lg），其他 10 px
       var tt = titleTx(g.title), ts = titleTx(g.title && ((C.trial || {}).titlesShort || {})[g.title] || g.title);
-      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.skip ? ' skip' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '') + (g.fortune ? ' ' + ((C.waveC || {}).stations || {}).fortune : '') + (g.dare ? ' ' + ((C.waveC || {}).stations || {}).dare : '')) + '">' +
+      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.skip ? ' skip' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '') + (g.fortunes ? ' ' + (((C.waveC || {}).fairStations || {}).fortune || '') + (g.omen ? ' ' + WU('mkOmenTag') : '') : g.fortune ? ' ' + ((C.waveC || {}).stations || {}).fortune : '') + (g.dare ? ' ' + ((C.waveC || {}).stations || {}).dare : '')) + '">' +
         '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + stallMarks(g) + '</span>' +
         (ts ? '<span class="tl' + (ts.length >= 6 ? ' lg' : '') + '">' + esc(ts) + '</span>' : '') + '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
@@ -5223,6 +5267,8 @@
       var gain = bt && chs.tiers.indexOf(bt) < 0 ? TU('bossUnlock', tierVars(bt)) : (UI.apex && chs.apex && chs.apex.indexOf(bc.id) < 0 ? TU('bossCollect') : '');
       bl += '<div class="bl st boss-ace"><b>' + esc(TU('bossCarry', { album: bc.album })) + '</b>' + esc(gain) + '</div>';
     }
+    // 第 I 波 I-3a 市集翻籤（SPEC-I §6.3「籤記在來客條那位頭像上」）：點頭像看得到記在他身上的籤（攤位面板那幾句；凶籤紅字）。C 波（只有 fortune 物件）不寫，照舊
+    if (Array.isArray(g.fortunes) && !done) bl += g.fortunes.map(slipLineHTML).join('');
     var html = '<div class="hd"><h3>' + esc(TU('pos', { n: g.pos }) + '・' + (done ? TU('guestDone') : cur ? TU('guestCur') : g.skip ? WU('cpSkip') : TU('guestLater'))) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
       '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
       tags + bl + '</div></div>' +
@@ -5232,9 +5278,20 @@
     s.addEventListener('click', function (e) {
       if (!(e.target.closest && e.target.closest('[data-a=go]'))) return;
       // 攤位還沒逛完（第 C 波 SPEC-C §4.3-6）：「就他了」跟對戰台、箱子一樣回「先逛完今天的攤位。」，面板留著
-      if (save.run && E.nextStep(save.run) === 'stall') { sfx('tick'); toast(WU('busy')); return; }
+      if (save.run && E.nextStep(save.run) === 'stall') { sfx('tick'); toast(stallBusyText()); return; }
       s.remove(); syncFloat(); nextGuest();
     });
+  }
+  // 一張籤 → 客人頭像面板的一行（引擎 roundGuests 的 fortunes；字＝C.waveC.ui 的 mkSlip*／mkOmen，跟攤位面板同一套）
+  function slipLineHTML(f) {
+    if (!f || typeof f !== 'object') return '';
+    var q = f.ratio || {}, tx = '', Z = E.ZH || {}, MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {};
+    if (f.slip === 'boss' || f.slip === 'elite') tx = WU(f.slip === 'boss' ? 'mkSlipBoss' : 'mkSlipElite', { c: q.c | 0, o: q.o | 0, h: q.h | 0 });
+    else if (f.slip === 'aces') tx = (f.list || []).length ? WU('mkSlipAces', { list: f.list.map(function (x) { return WU('mkSlipAce', { pos: x.pos, attr: Z[x.attr] || '' }); }).join('、') }) : WU('mkSlipAcesNone');
+    else if (f.slip === 'top') { var c = f.card && card(f.card); tx = c ? WU('mkSlipTopIs', { album: c.album }) : WU('mkSlipTop'); }
+    else if (f.slip === 'omen') tx = WU('mkOmen', { pos: f.pos, n: f.atk | 0 });
+    if (!tx) return '';
+    return '<div class="bl ft' + (f.slip === 'omen' ? ' om' : '') + '">' + (MK.fortune && f.slip !== 'omen' ? '<span class="fi" aria-hidden="true">' + pix(MK.fortune, 12) + '</span>' : '') + '<span>' + esc(tx) + '</span></div>';
   }
   // 下一位推門進來：門 swing、他走進來說一句（推門那句），接著無縫推近成對決
   function nextGuest() {
@@ -5532,7 +5589,7 @@
     // 今天的攤位（第 C 波 SPEC-C §4.3-6）：箱子、收音機、櫃檯、對戰台＝「先逛完今天的攤位。」；試聽機照開今日推薦、門口照看客人、老闆照聊
     if (scr === 'night' && save.run && E.nextStep(save.run) === 'stall' && /^(?:(?:crate|bin):.+|radio|counter|duel)$/.test(action)) {
       if (W.DipLabStalls && W.DipLabStalls.busy && W.DipLabStalls.busy(action)) return;
-      sfx('tick'); toast(WU('busy')); return;
+      sfx('tick'); toast(stallBusyText()); return;
     }
     // 對戰台（第 A 波 1）：來客畫面＝走過去開打（跟「下一位」一樣）；其他畫面不理
     if (action === 'duel') { if (scr === 'night' && save.run && E.nextStep(save.run) === 'fight' && !sparTap()) nextGuest(); return; }   // 切磋邀請中＝開邀請面板，不叫 nextGuest（§7.3-4）
@@ -5541,7 +5598,7 @@
     if (action === 'counter' && scr === 'night' && save.run && E.canShop(save.run) && econ() && econ().openRelicShop) { sfx('tick'); econCall('openRelicShop', UI.sellNudge === save.run ? { tab: 'sell' } : undefined); return; }
     // 來客畫面點老闆：第 1 位開打前＝「聊聊／換一張王牌」（店主 11-13）
     //   活店（SPEC-H §5.4）：點老闆＝一律開小選單（聊聊／賣給老闆；第 1 位開打前多換一張王牌）；點櫃檯照舊（ownerTalk 不帶參數＝現行）
-    if ((action === 'talk:owner' || action === 'owner' || action === 'counter') && scr === 'night' && save.run) { if (E.nextStep(save.run) === 'stall') { stageSay('o', WU('stallHint'), 'owner', 2400); return; } ownerTalk(action !== 'counter'); return; }
+    if ((action === 'talk:owner' || action === 'owner' || action === 'counter') && scr === 'night' && save.run) { if (E.nextStep(save.run) === 'stall') { stageSay('o', E.isMarket && E.isMarket(save.run) ? WU('mkHint') : WU('stallHint'), 'owner', 2400); return; } ownerTalk(action !== 'counter'); return; }
     if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
     if (action === 'cat') { var ct = line('cat'); if (ct) stageSay('o', ct, 'owner', 1600); return; }
     if ((m = /^shop:(.+)$/.exec(action))) { if (scr === 'taipei' && m[1] === 'dip') backFromTaipei(); return; }
@@ -6514,7 +6571,9 @@
         alive: function () { return UI.screen === 'night' && !!save.run; },
         stg: stg, stgP: stgP, cam: cam, sheet: function (html, cls) { return sheet(html, cls); }, closeSheet: closeSheet, room: roomForSheet,
         naturalH: naturalH, vh: function () { return W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight; },
-        say: function (id, t, ms) { stageSay(id, t, id === 'o' ? 'owner' : null, ms); }, toast: toast, sfx: function (n, o) { sfx(n, o); }, cashRise: cashRise,
+        say: function (id, t, ms) { stageSay(id, t, id === 'o' ? 'owner' : null, ms); }, toast: toast, sfx: function (n, o) { sfx(n, o); },
+        // 第 I 波 I-3a 市集：錢跳數字靠右上、兩行（不蓋島台上翻籤那一下；style.css .lb-toast.cash.mk）
+        cashRise: function (a, b) { var t = cashRise(a, b); if (t && save.run && E.isMarket && E.isMarket(save.run)) t.classList.add('mk'); return t; },
         after: function (fn, ms) { var t = setTimeout(fn, Math.max(0, ms | 0)); UI.timers.push(t); return t; },
         anim: function () { return { fast: !!(save.settings && save.settings.fastAnim), k: FAST ? 4 : 1, rm: rm() }; },
         auto: autoAct, autoOn: function () { return !!UI.auto; }, policy: function () { return E.cPolicy(save.run, C); },
@@ -6534,6 +6593,7 @@
         renderStrip: function (sc) { if (sc) { sc.stripState = null; renderStrip(sc); } }
       });
       UI.stallsOk = true;
+      stg('isle', isleNow);                            // 第 I 波 I-3a 市集：島台小道具（攤位圖示、去過的變暗、翻籤）
     } catch (e) { console.error(e); }
   }
   // 經濟介面（econ.js，B3；§2.5.2）：舞台好了、第一個畫面之前接上一次
@@ -6617,6 +6677,7 @@
       var first = !(save.runs && save.runs.length), from = (C.crowd && C.crowd.firstRunFrom) || 2, stp = r ? E.nextStep(r) : null;
       if (r && save.prologueDone && !(first && r.pos < from)) {
         if (stp === 'fight') mode = encLootPending(r) ? 'still' : 'live';   // 切磋打贏的戰利品列＝照領獎畫面：店裡的人站著不動（§7.3-8）
+        else if (stp === 'stall' && E.isMarket && E.isMarket(r)) { mode = 'still'; o.market = true; }   // 第 I 波 I-3a 市集：不進不出；島邊的人讓開（只開試聽桌、櫃檯前；市集沒有站主）
         else if (stp === 'stall') { mode = 'still'; o.reserve = ['c-pay']; }   // 今天的攤位：原地照翻、不進不出；c-pay 給同業調貨的站主
       }
     }

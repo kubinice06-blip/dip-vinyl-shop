@@ -1678,7 +1678,19 @@
         { id: 'grandpa', genres: ['pop', 'soul', 'blues'], lit: ['isl-1a', 'winbin'] },
         { id: 'classicalStudy', genres: ['classical'], lit: ['isl-2b'] },
         { id: 'backpacker', genres: ['world'], lit: ['isl-3a'] },
-        { id: 'closedShop', lit: [] }] },                          // 不加權
+        { id: 'closedShop', lit: [] }],                            // 不加權
+      // 第 I 波 I-3a 市集（店主 11-20：「中間的市集什麼的 不要分兩邊跑 然後不要只有選項 要有現場可以互動的」；SPEC-I §6；契約 wave-i/build3/CONTRACT.md）
+      //   mode 'market'＝一次攤開、每輪 3 個時段（中繼點 4）、進攤不扣、那攤第一個動作扣 1 個；收攤剩下的時段每個 +$300；'pick'＝C 波二選一（緊急退回）
+      //   施工期間 'pick'（?market=1／sim --market on 試玩）；過門檻後改 'market' 上線
+      //   fair（規格寫 market:{…}；stall.market 已經是黑膠特賣那一攤的貨）：first＝每一趟第一個市集固定組（＋錄音室）；中繼點＋黑膠特賣＋錄音室；
+      //     weights 權重不重複抽 tiles 攤（樂歷 Lv4 一般輪 6 攤），花錢攤（paid）≤ paidMax、至少一攤藍框（blue）；免費格：錄音室、踢館帖（dare 規則照舊）、寄賣到期領取
+      //     fortune 算命翻籤：打開就翻第 1 張、第 2 張 $1,000（樂歷 Lv6 免費）、第 3 張 $2,000、25% 凶籤（這一輪某位一般客人品味 +1）
+      //     drinks 飲料攤（I-3a 只有冬瓜茶＝C 波宵夜的聲望 +3，免費、只花時段）；studioMax＝錄音室試錄一趟最多幾格（?fac=1）
+      mode: 'pick',
+      fair: { slots: 3, relaySlots: 4, tiles: 5, slotCash: 300, first: ['dig', 'fortune', 'snack', 'warehouse', 'home'],
+        weights: { dig: 3, fortune: 2, snack: 2, gear: 2, trade: 2, gig: 2, promo: 2, consign: 1, home: 1 }, paidMax: 2,
+        fortune: { price: [0, 1000, 2000], omen: 0.25, omenAtk: 1, pool: ['boss', 'elite', 'aces', 'top'] },
+        drinks: { tea: { hp: 3, price: 0 } }, studioMax: 3 } },
     safety: { on: true },
     draft: { k: null, m: null, mLess: 1, mRate: null },          // 中繼點開局選秀：升級 m＝round(期望等級−1−mLess)（比從頭打少一級）；mRate 給數字＝舊公式 round(mRate×(L−1))
     ui: {
@@ -1762,7 +1774,36 @@
       cpWhere: '中繼點開局',                                        // 標題「繼續試煉 ▸第 N 位・中繼點開局」（選秀途中；pos 還是 1）
       cpSkip: '這一趟沒遇到',                                       // 中繼點開局：這一輪第 N 位之前那幾位（點頭像）
       // 解鎖階梯（標題頁、結算頁一行；E.stallLadder）
-      ladder: '店內攤位 {a}/{b}｜再走 {n} 位開{name}', ladderAll: '店內攤位 {a}/{b}'
+      ladder: '店內攤位 {a}/{b}｜再走 {n} 位開{name}', ladderAll: '店內攤位 {a}/{b}',
+      // 第 I 波 I-3a 市集（stall.mode 'market'；SPEC-I §6.3、§6.4；契約 wave-i/build3/CONTRACT.md §7）
+      mkName: '市集',
+      mkTitle: '今晚的市集',
+      mkHint: '今晚的市集都在中間，慢慢逛。',                      // 老闆句（市集模式取代 stallHint）
+      mkBusy: '先逛完今晚的市集。',                                  // 市集中點箱子（島台以外）、收音機、櫃檯、對戰台、「就他了」（市集模式取代 busy）
+      mkSlots: '時段 {n}／{m}',                                    // 月亮那列（讀屏）
+      mkSlotUsed: '用掉一個時段',                                  // 那攤做了第一個動作（讀屏）
+      mkNoSlot: '今晚的時段用完了。',                              // 時段用完還點沒去過的攤
+      mkLeave: '收攤回店（+${n}）',                                // 還有時段：剩下每個 $300 合起來
+      mkLeaveNone: '收攤回店',
+      mkLeaveAsk: '還有 {k} 個時段沒用，收攤每個換 ${n}。',          // 這一趟第一次收攤、剩 ≥2 個時段才問
+      mkLeaveYes: '收攤', mkLeaveNo: '再逛逛',
+      mkWent: '去過了',
+      mkFreeNote: '不用時段',                                       // 免費攤（錄音室、踢館帖、寄賣領取）格子第二行；右上角另標「免費」
+      mkBack: '回攤位',
+      mkFlip: '翻下一張（${n}）', mkFlipFree: '翻下一張（免費）',   // 算命攤
+      mkFlipTap: '點一下翻開',
+      mkOmenWarn: '第 3 張可能是凶籤',
+      mkSlipBoss: '藏家牌組裡：經典 {c} 張・冷門 {o} 張・硬蕊 {h} 張',
+      mkSlipElite: '菁英牌組裡：經典 {c} 張・冷門 {o} 張・硬蕊 {h} 張',
+      mkSlipAces: '這一輪帶王牌的：{list}', mkSlipAce: '第 {pos} 位（{attr}）', mkSlipAcesNone: '這一輪沒有人帶王牌',
+      mkSlipTop: '菁英牌組裡最大的一張',
+      mkSlipTopIs: '菁英牌組裡最大的一張：《{album}》',                 // 點客人頭像（市集翻到的籤記在他身上）
+      mkOmen: '凶籤「隔牆有耳」：第 {pos} 位也聽到了，品味 +{n}',
+      mkOmenTag: '凶',                                              // 來客條那位頭像上的紅標
+      mkTea: '冬瓜茶（聲望 +{n}）', mkTeaFull: '冬瓜茶（聲望滿了，+0）',   // 飲料攤（I-3a 只有冬瓜茶，免費）
+      mkStudio: '試錄一軌：挑一格，這一趟有效', mkStudioLeft: '這一趟還能試 {n} 格', mkStudioDemo: '錄 demo（樂歷 +{n}）',
+      mkRecord: '試錄：{name}',
+      mkDemoAuto: '收攤前順手錄了一段 demo。樂歷 +{n}'              // 收攤時錄音室還沒去（自動錄 demo）
     },
     // 站名（底部面板站牌、小面板標題、解鎖階梯 {name}）
     stations: { stall: '攤位', dig: '挖寶攤', trade: '同業調貨', gear: '器材行', snack: '宵夜', gig: '演唱會', promo: '公關片', fortune: '窗邊算命',
@@ -1771,6 +1812,9 @@
     stationLines: { dig: '一箱翻到底，喜歡就帶走。', trade: '這幾張我只賣懂的人。', gear: '這批唱針剛到，要不要？', snack: '先吃碗麵線，再回去拚。',
       gig: '今晚這場，聽完再顧店。', promo: '公關片來了，聽聽看。', fortune: '下個藏家？我看看……', consign: '放這裡，兩輪後回來換。',
       home: '放一張，把今天記下來。', dare: '下一輪都是來踢館的，接不接？', warehouse: '倉庫翻到的，挑一件帶走。', market: '攤位全擺出來了，慢慢挑。' },
+    // 第 I 波 I-3a 市集模式的攤名／站主一句（沒列的照 stations／stationLines）：宵夜換飲料攤、器材行換小物攤、窗邊算命換算命攤、黑膠市集改名黑膠特賣
+    fairStations: { fortune: '算命攤', snack: '飲料攤', gear: '小物攤', market: '黑膠特賣' },
+    fairLines: { fortune: '翻一張籤，看看今晚。', snack: '冬瓜茶一杯，喝了再拚。', gear: '小東西，帶著走。', market: '特賣全擺出來了，慢慢挑。' },
     // 挖寶攤攤名（全部虛構，不放真實店名）
     digTitles: { jazzTeacher: '退休老師的爵士櫃', bandRoom: '解散樂團的團練室', djAbroad: '要出國的 DJ', oldRadio: '老電台的片庫',
       grandpa: '阿公的西洋老歌', classicalStudy: '古典樂迷的書房', backpacker: '背包客的世界音樂', closedShop: '收掉的小唱片行' }
@@ -1808,7 +1852,10 @@
     ladder: [
       { lv: 2, key: 'talents' },
       { lv: 3, key: 'bench', lineupBonus: 1, needs: 'lineup' },    // 第 I 波 I-2（§5.2-3、§7.3 d）：上場制多帶一張替補（talentArgs lineupBonus）。needs＝上場制開著才算、才畫（ladderList 濾掉）
+      { lv: 4, key: 'tile6', marketTiles: 6, needs: 'market' },    // 第 I 波 I-3a（§7.3 d）：市集一般輪多一攤（6 攤、時段不變）。needs market＝市集模式才算、才畫
       { lv: 5, key: 'bgmShelf', ui: true },                       // 第 I 波 §7.3 d（跟 I-4 背景音樂一起上）：⏸ 可選「背景音樂放：包包＋唱片櫃」。ui＝只給畫面、引擎的 CAREER 預設不抄（engine.test 比對時略過）
+      { lv: 6, key: 'fortune2', fortuneFree: 1, needs: 'market' }, // 第 I 波 I-3a：算命攤第 2 張免費（＝SPEC-D intel 的雛形）
+      { lv: 7, key: 'dig4', digN: 4, needs: 'market' },            // 第 I 波 I-3a：挖寶攤多一張蓋牌（三張 → 四張選一）
       { lv: 8, key: 'power' }, { lv: 10, key: 'relic3', relicPick: 3 }, { lv: 10, key: 'off' },
       { lv: 12, key: 'seed4', seedMax: 4 }, { lv: 15, key: 'gold', goldAdd: 0.01 }, { lv: 20, key: 'plea' },
       { lv: 0, key: 'seed5', soon: true }, { lv: 0, key: 'relicsNew', soon: true }, { lv: 0, key: 'regulars', soon: true }, { lv: 0, key: 'outfit', soon: true }
@@ -1835,7 +1882,9 @@
       // 解鎖階梯（已開的打勾、下一個亮、之後的灰）
       ladderTitle: '解鎖階梯', ladderRow: 'Lv{n} {name}',
       ladder: { talents: '天賦頁', power: '戰力天賦', relic3: '菁英、藏家的配件三選一', off: '可以關掉樂歷', seed4: '種子格 4 格',
-        gold: '戰利品列金邊機率 +1%', plea: '備用說情', bgmShelf: '背景音樂也放唱片櫃的歌', bench: '上場多帶一張替補', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
+        gold: '戰利品列金邊機率 +1%', plea: '備用說情', bgmShelf: '背景音樂也放唱片櫃的歌', bench: '上場多帶一張替補',
+        tile6: '市集多一攤', fortune2: '算命攤第 2 張免費', dig4: '挖寶攤多一張蓋牌',   // 第 I 波 I-3a（市集模式才列）
+        seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
       drawRow: '每升一級：抽一張盤進唱片櫃（Lv10 起每 5 級史詩）',
       // 關掉樂歷（Lv10 起、只在樂歷頁；下一趟起生效）
       off: '下一趟的樂歷', offSub: '關掉＝天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。', offOn: '樂歷關', offBest: '關樂歷',   // 配件三選一＝relicPick

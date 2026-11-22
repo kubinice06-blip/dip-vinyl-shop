@@ -1621,6 +1621,73 @@
     for (var i = 0; i < 8; i++) { var hh = 7 - Math.round(i * 7 / 8); if (hh <= 0) continue; var fx = dir > 0 ? x + 1 + i : x - 1 - i, fy = top + Math.floor((7 - hh) / 2); P.r(fx, fy - 1, 1, hh + 2, ec); P.r(fx, fy, 1, hh, fc); }
   }
   function excl(P, x, y) { P.r(x - 1, y - 1, 4, 8, '#ffffff'); P.r(x - 1, y + 7, 4, 4, '#ffffff'); P.r(x, y, 2, 6, '#e0303f'); P.r(x, y + 8, 2, 2, '#e0303f'); }
+  // ================================================================ 第 I 波 I-3a 市集：島台小道具（SPEC-I §6.4-2、4；stage.js isleTick 每格把狀態填進 S.state.isle，畫在下面 duelfx 的 glow）
+  // S.state.isle＝{ cells:[{ prop（那一箱的 binTable）, rows（12×12 圖示，PIX_PAL 的字）, went（去過、沒開著）, open（開著的那攤）, spans（去過的：看得到的那一塊 [y,x0,x1]…）, slip（這格畫籤、不畫圖示） }],
+  //                 slips:{ prop, total, faces:[籤種類…], flipAt:[翻開那一刻（rt 秒）|null…] }|null }
+  //   還沒去的格：那一箱唱片上浮一塊 14×14 小牌（攤位圖示，一明一暗輕輕上下）；開著的那攤小牌浮高一點、金框；去過的：整箱（看得到的那一塊）變暗、小牌灰掉＋綠勾
+  //   算命攤翻籤：三張 11×14 封套立在那一箱（蓋著＝深色封套背面；翻開＝奶油色籤紙、頂上一條色帶，凶籤整張紅＋白「!」）；翻開那一下 0.42 秒翻面（橫向壓扁再打開）、往上跳 6 格
+  //   新圖示（店主 11-20 第 6 點：算命改翻籤、宵夜改飲料攤）：籤＝封套裡抽出一張籤紙；飲料＝冬瓜茶手搖杯（杯蓋、吸管）。stalls.js 市集模式的攤位格也用這兩張（MK_ICON）
+  var MK_ICON = {
+    fortune: ['....kkkk....', '....kwwk....', '....krrk....', '.kkkkwwkkkk.', '.kppkwwkppk.', '.kppkkkkppk.', '.kpkwwwwkpk.', '.kpkwkkwkpk.', '.kpkwwwwkpk.', '.kppkkkkppk.', '.kppppppppk.', '.kkkkkkkkkk.'],
+    snack: ['.......kk...', '......kk....', '..kkkkkkkk..', '.kwwwwkwwwk.', '.kkkkkkkkkk.', '..kttttttk..', '..kttwtttk..', '..kttttttk..', '...kttttk...', '...kttttk...', '...kkkkkk...', '............']
+  };
+  var ISLE_PAL0 = { k: '#111111', g: '#b8860b', r: '#c11628', b: '#1f5fae', w: '#ffffff', e: '#d8d8d8', d: '#888888', n: '#2e7d52', p: '#6a3fa0', o: '#e0851c', y: '#f0c75e', s: '#e8b48c', c: '#3fb6c9', t: '#c68642', u: '#8d5524', v: '#f6dcc4', m: '#e75480' };
+  function islePal() { return (typeof PIX_PAL !== 'undefined' && PIX_PAL) || ISLE_PAL0; }   // eslint-disable-line no-undef
+  var CHECK = ['......kk', '.....kgk', 'kk..kgk.', 'kgkkgk..', '.kggk...', '..kk....'];
+  var SLIP_BAND = { boss: '#e9c35a', elite: '#6a3fa0', aces: '#e0851c', top: '#2e7d52' };
+  function isleBadge(P, cx, cy, rows, o) {
+    var x = cx - 7, y = cy - 7, edge = o.open ? '#e9c35a' : o.off ? '#5a5048' : '#1d1712', fill = o.off ? '#a89e8c' : '#f3ead6';
+    P.a(0.4, function () { P.r(x + 2, y + 14, 12, 1, '#1b0e05'); });
+    P.r(x + 1, y, 12, 14, edge); P.r(x, y + 1, 14, 12, edge);
+    if (o.open) { P.r(x + 1, y - 1, 12, 1, '#fff1c2'); P.r(x - 1, y + 1, 1, 12, '#fff1c2'); P.r(x + 14, y + 1, 1, 12, '#b8860b'); P.r(x + 1, y + 14, 12, 1, '#b8860b'); }
+    P.r(x + 1, y + 1, 12, 12, fill);
+    if (rows) P.rows(rows, x + 1, y + 1, islePal(), 1, o.off ? { sil: '#776c5e' } : null);
+    if (o.off) P.rows(CHECK, x + 7, y + 8, { k: '#f3ead6', g: '#2e7d52' }, 1);
+  }
+  var SW = 11, SH = 14;   // 一張籤（封套）11×14
+  function slipBack(P, x, y, w) {   // 蓋著的籤（封套背面）：深色封套、中間一圈奶油色圓標
+    var x0 = x + Math.floor((SW - w) / 2);
+    P.r(x0, y, w, SH, '#1d1712');
+    if (w < 3) return;
+    P.r(x0 + 1, y + 1, w - 2, SH - 2, '#3a2f2b'); P.r(x0 + 1, y + 1, w - 2, 1, '#4d413b');
+    if (w >= 9) { P.r(x + 3, y + 5, 5, 4, '#efe8d6'); P.r(x + 4, y + 4, 3, 6, '#efe8d6'); P.p(x + 5, y + 6, '#3a2f2b'); P.p(x + 5, y + 7, '#3a2f2b'); }
+  }
+  function slipFace(P, x, y, w, kind) {   // 翻開的籤：奶油色籤紙＋頂上色帶＋三行字；凶籤整張紅、白「!」
+    var x0 = x + Math.floor((SW - w) / 2), omen = kind === 'omen';
+    P.r(x0, y, w, SH, omen ? '#5a0d14' : '#1d1712');
+    if (w < 3) return;
+    P.r(x0 + 1, y + 1, w - 2, SH - 2, omen ? '#c11628' : '#f3ead6');
+    if (w < 9) return;
+    if (omen) { P.r(x + 5, y + 3, 2, 6, '#ffffff'); P.r(x + 5, y + 10, 2, 2, '#ffffff'); return; }
+    P.r(x + 1, y + 1, SW - 2, 3, SLIP_BAND[kind] || '#c9a24a');
+    P.r(x + 3, y + 6, 6, 1, '#8a7a66'); P.r(x + 3, y + 8, 5, 1, '#8a7a66'); P.r(x + 3, y + 10, 6, 1, '#8a7a66');
+  }
+  function isleDraw(P, S) {
+    var I = S.state && S.state.isle; if (!I) return;
+    var rt = S.rt || 0, bob = Math.floor(rt * 1.6) % 2;
+    (I.cells || []).forEach(function (c) {
+      if (!c.went || !c.spans) return;
+      P.a(0.5, function () { c.spans.forEach(function (q) { P.r(q[1], q[0], q[2] - q[1], 1, '#140c06'); }); });
+    });
+    (I.cells || []).forEach(function (c) {
+      if (c.slip || !c.prop) return;
+      var g = binGeo(c.prop), cx = c.prop.x + Math.floor(g.w / 2), cy = g.lip - 9 - (c.went ? 0 : c.open ? 3 + bob : bob);
+      isleBadge(P, cx, cy, c.rows, { off: c.went, open: c.open });
+    });
+    var L = I.slips; if (!L || !L.prop) return;
+    var g2 = binGeo(L.prop), n = Math.max(1, Math.min(3, L.total | 0 || 3)), x0 = L.prop.x + Math.floor(g2.w / 2) - Math.floor((n * SW + (n - 1) * 2) / 2), base = g2.lip - SH - 2;
+    for (var i = 0; i < n; i++) {
+      var kind = (L.faces || [])[i], at = (L.flipAt || [])[i], x = x0 + i * (SW + 2), y = base, w = SW, face = !!kind;
+      if (kind && at != null && rt - at < 0.42) {
+        var ph = Math.max(0, (rt - at) / 0.42);
+        w = Math.max(1, Math.round(SW * Math.abs(Math.cos(ph * Math.PI))));
+        face = ph >= 0.5; y = base - Math.round(Math.sin(ph * Math.PI) * 6);
+      } else if (kind) y = base - 2;
+      P.a(0.35, function () { P.r(x + 1, base + SH, SW - 1, 1, '#1b0e05'); });
+      if (face) slipFace(P, x, y, w, kind); else slipBack(P, x, y, w);
+      if (kind === 'omen' && at != null && rt - at >= 0.21 && rt - at < 0.8) spark(P, x + 5, y + 7, 'ring', '#ff6a6a');
+    }
+  }
   defO('duelfx', {
     layer: 'fx',
     draw: function (P, o, S) {
@@ -1633,6 +1700,7 @@
       if (fx.flag) flag(P, Math.round(fx.flag.x), Math.round(fx.flag.y), fx.flag.side);
     },
     glow: function (P, o, S) {
+      isleDraw(P, S);                                            // 第 I 波 I-3a 市集：島台小道具（攤位圖示、去過的變暗、翻籤）
       var fx = S.state && S.state.fx; if (!fx) return;
       (fx.sparks || []).forEach(function (q) { spark(P, Math.round(q.x), Math.round(q.y), q.size || 'small', q.c); });
       (fx.notes || []).forEach(function (n) { noteGlyph(P, Math.round(n.x), Math.round(n.y), n.c || '#c9a24a'); });
@@ -1673,5 +1741,6 @@
   });
 
   window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, duelDeckGeo: duelDeckGeo, counterGeo: counterGeo,
-    EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign, sleeveBack: sleeveBack };
+    EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign, sleeveBack: sleeveBack,
+    MK_ICON: MK_ICON, isleDraw: isleDraw };   // 第 I 波 I-3a：市集新圖示（籤、飲料；stalls.js 攤位格、ui.js 來客條共用）、島台小道具
 })();

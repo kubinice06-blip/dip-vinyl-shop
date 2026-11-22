@@ -99,7 +99,9 @@ const WC_OFF = { loot: { on: false }, chest: { on: false }, stall: { on: false }
 //     出貨 content 的 C.lineup.on／C.wear.on 開或關都照過（開了 78 條關著黃金會變，所以先換成拷貝）；上場制在 #35 用 on 的拷貝驗
 const LUOFF = c => Object.assign({}, c, { lineup: Object.assign({}, (c && c.lineup) || {}, { on: false }), wear: Object.assign({}, (c && c.wear) || {}, { on: false }) });
 const C = LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [], firstNeed: 0, firstHp: C0.trial.levelHp }) }));
-const CW = LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS }));
+//   第 I 波 I-3a 市集（SPEC-I §6）：舊段落的 CW 一律用 stall.mode 'pick' 的拷貝（MKOFF）＝C 波二選一的黃金與斷言照舊；出貨 content 改 'market' 也照過。市集在 #37 用 'market' 的拷貝驗
+const MKOFF = c => Object.assign({}, c, { waveC: Object.assign({}, (c && c.waveC) || {}, { stall: Object.assign({}, ((c && c.waveC) || {}).stall || {}, { mode: 'pick' }) }) });
+const CW = MKOFF(LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS })));
 // 第 I 波 I-0：關掉第一位升級（firstNeed 0、firstHp＝levelHp）＝I-0 以前的局內升級（黃金比對用）
 const I0OFF = c => Object.assign({}, c, { trial: Object.assign({}, c.trial || {}, { firstNeed: 0, firstHp: c.trial && Number.isInteger(c.trial.levelHp) ? c.trial.levelHp : 1 }) });
 const SKIP$ = EN.wcCfg(CW).loot.skipCash, CSKIP$ = EN.wcCfg(CW).chest.skipCash, PACKET = EN.wcCfg(CW).loot.packet;   // 出貨的「不收」錢、紅包機率（驗收修正：$200、6%）
@@ -3721,7 +3723,7 @@ function driveD(content, o, maxPos) {
 }
 section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐字現況（黃金）、careerGain、等級曲線、天賦價與買賣、talentArgs、進局（品味／底氣／聲望／經驗零頭／說情順序／酬勞／金邊／配件三選一／種子格 4）、gigRoom、階梯、抽盤、熟練度、入帳、讀檔整理、V3、流派改名', () => {
   EN.setCtx(null);
-  const K = LUOFF(C0), X = EN.careerCfg(K), xpAt = lv => EN.careerXpAt(K, lv), car = (lv, spent, o) => Object.assign({ key: 'k', xp: xpAt(lv), spent: spent || {} }, o || {});
+  const K = MKOFF(LUOFF(C0)), X = EN.careerCfg(K), xpAt = lv => EN.careerXpAt(K, lv), car = (lv, spent, o) => Object.assign({ key: 'k', xp: xpAt(lv), spent: spent || {} }, o || {});
   // ---- 1 沒給新參數／Lv8 前／關樂歷＝逐字現況（smart 決策序列＋run JSON 到第 20 位；黃金＝改之前的引擎） ----
   //   第 I 波 I-0：黃金在 K0（關掉第一位升級＝I-0 以前）上比；K（出貨）上每個變體都＝沒給參數那一份
   { const GOLD = [3936987495, 671311097, 230554544, 1581489111], POS = [12, 21, 21, 21], K0 = I0OFF(K), ON = [];
@@ -3950,7 +3952,7 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
 
 section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 第 1、4、5、8 條）：旗標關＝逐字現況（黃金）、三派 outcome 表、代價、第二招上限、preview＝resolve、序章沒有、R-F9、本派格（第 4 格、佔屬性、連升兩級、選秀 guard、存讀檔）、結果行 {n}、換一格', () => {
   EN.setCtx(null);
-  const K = LUOFF(C0), F = K.factions;   // 第 I 波 I-2 開旗標後：上場制關的拷貝（黃金是上場制以前跑的）
+  const K = MKOFF(LUOFF(C0)), F = K.factions;   // 第 I 波 I-2 開旗標後：上場制關的拷貝（黃金是上場制以前跑的）
   // ---- 1 旗標關＝逐字現況：沒給 fac／fac:false／content 沒有 factions（或 on:false）＝改之前的引擎（smart＋thoughtful 每手決策序列＋run JSON 到第 20 位；黃金＝棒二改之前 HEAD 的 engine／content，
   //      build2/tools/golden2.cjs）；有 fac 的 run 才多 run.fac ----
   { const GOLD = [1464705395, 2818197883, 771687597, 3935375095, 1591152419], POS = [21, 21, 21, 15, 21];
@@ -4755,7 +4757,7 @@ section('33 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 
     ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7).every(L => !POWERK.some(k => k in L)), 'G1′: ladder Lv3–7 gives no power keys');
     // I-4 合併後：Lv5「背景音樂也放唱片櫃的歌」跟 I-4 那一棒一起上（SPEC-I §4.8、§7.3 d），只給畫面（ui）；其他 Lv3–7 的格子仍要等各自那一棒
     //   I-2：Lv3「上場多帶一張替補」跟 I-2 那一棒一起上（needs lineup＝上場制開著才列、才給 lineupBonus；#35 驗）
-    ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7 && L.key !== 'bgmShelf' && L.key !== 'bench').length === 0, 'I-0: no new ladder cells for Lv3–7 yet except I-4 bgmShelf and I-2 bench (each ships with its own baton; SPEC-I §7.3 d)');
+    ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7 && !['bgmShelf', 'bench', 'tile6', 'fortune2', 'dig4'].includes(L.key)).length === 0, 'I-0: no new ladder cells for Lv3–7 yet except I-4 bgmShelf, I-2 bench and I-3a tile6／fortune2／dig4 (each ships with its own baton; SPEC-I §7.3 d)');
     ok(EN.careerCfg(K).ladder.filter(L => L && L.key === 'bgmShelf').length === 1 && EN.careerCfg(K).ladder.some(L => L && L.key === 'bgmShelf' && L.lv === 5 && L.ui === true && !L.soon && !POWERK.some(k => k in L)), 'I-4: Lv5 bgmShelf is one ui-only cell'); }
 });
 
@@ -5246,7 +5248,7 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
 
 section('35 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5；§10.1 第 1、6、7 條＋棒三）：旗標關／第 0 階＝逐字現況（黃金）、階表疊加與相對值、小氣兩種模式、過關＝第 21 位、開階與紀錄、派點與價、買賣重配、讀檔整理、進局（start／挑著學／深耕／說情 +3／刺蝟／圈內人）、preview＝resolve、?fac=1 客人', () => {
   EN.setCtx(null);
-  const K = LUOFF(C0), F = K.factions, NT = F.notes;   // 第 I 波 I-2 開旗標後：上場制關的拷貝（棒三黃金是上場制以前跑的）
+  const K = MKOFF(LUOFF(C0)), F = K.factions, NT = F.notes;   // 第 I 波 I-2 開旗標後：上場制關的拷貝（棒三黃金是上場制以前跑的）
   // 棒三的 ?fac=1 調法（content.factions.guest：只在 run.fac 的客人）拿掉＝棒三改之前的 ?fac=1
   const PRE3 = c => Object.assign({}, c, { factions: Object.assign({}, c.factions, { guest: undefined }) });
   // 棒三審查改樹以後：content 的格子照 op 找（各派位置不一樣）；舊樹（start＝本派選項那幾格）留在這裡，驗 engine 的 'first'／'start' 兩種模式
@@ -5954,6 +5956,232 @@ section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著�
       runs++; worn += (rr.stats.wear || {}).layers | 0;
     }
     ok(bad === 0 && worn > 0, 'smart runs with lineup+wear: every choice ok, hand always 5 in lineup rounds, some cards get worn', { bad, worn, hands }); }
+});
+
+section('37 第 I 波 I-3a 市集殼（SPEC-I §6.2、§6.3、§6.6、§10；SPEC-D §3.8；契約 wave-i/build3/CONTRACT.md）：pick 逐字、市集 pending 形狀與 C 波退路、攤位格抽法、時段（進攤不扣、第一個動作扣、回攤位不扣）、收攤錢、翻籤與凶籤、冬瓜茶、錄音室（demo／試錄、互斥）、樂歷 Lv4／6／7、存讀檔中途、錯的不改 run、策略', () => {
+  EN.setCtx(null);
+  const J = x => JSON.stringify(x);
+  const MK = c => Object.assign({}, c, { waveC: Object.assign({}, c.waveC || {}, { stall: Object.assign({}, (c.waveC || {}).stall || {}, { mode: 'market' }) }) });
+  const CM = MK(CW);                                               // 市集、上場制關（CW＝LUOFF＋MKOFF）
+  const F = EN.fairCfg(CM), ST = EN.wcCfg(CM).stall;
+  const newM = (sk, K, o) => { K = K || CM; const r = EN.newRun(K, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K, EN.bargainPolicy(r, K)); return r; };
+  // 一直贏到 pos 以後第一個攤位 pending（中間的攤位照 cPolicy 逛；領獎、升級照 cPolicy）
+  const toStall = (r, K, pos) => {
+    for (let g = 0; g < 600 && !r.over; g++) {
+      const st = EN.nextStep(r);
+      if (st === 'stall' && r.pos >= pos) return r;
+      if (r.pending) { const ch = EN.cPolicy(r, K, {}); const x = EN.choose(r, K, ch); if (!ok(x.ok, 'toStall choice ok', { ch, err: x.error })) break; continue; }
+      for (const ch of EN.lineupPrep(r, K)) EN.choose(r, K, ch);
+      fwin(r, K);
+    }
+    return r;
+  };
+  const act = (r, K, a, x) => EN.choose(r, K, Object.assign({ type: 'stallAct', act: a }, x || {}));
+  const enter = (r, K, kind) => EN.choose(r, K, { type: 'stallEnter', kind });
+
+  // ---- pick 模式逐字：mode 'pick'＝沒有 mode／fair 鍵的 content（＝改版前）；pending 沒有 mode、stats 沒有 mk ----
+  { const CWnoKey = Object.assign({}, CW, { waveC: Object.assign({}, CW.waveC, { stall: Object.assign({}, CW.waveC.stall) }) });
+    delete CWnoKey.waveC.stall.mode; delete CWnoKey.waveC.stall.fair;
+    ok(EN.wcCfg(CW).stall.mode === 'pick' && EN.wcCfg(CWnoKey).stall.mode === 'pick' && !EN.fairOn(CW) && EN.fairOn(CM), "mode 'pick' is the default (WAVEC); fairOn only for 'market'");
+    let same = 0, n = 0;
+    for (let s = 0; s < (QUICK ? 3 : 10); s++) {
+      const a = toStall(newM('mk-pick-' + s, CW), CW, 31), b = toStall(newM('mk-pick-' + s, CWnoKey), CWnoKey, 31); n++;
+      if (J(a) === J(b) && a.pending && !('mode' in a.pending) && !('tiles' in a.pending) && !(a.stats.c && a.stats.c.mk) && !Array.isArray(a.fortune)) same++;
+    }
+    ok(same === n, "pick: runs identical to a content without mode／fair keys; pending has no mode／tiles; no stats.c.mk; fortune is not an array", { same, n }); }
+
+  // ---- 第一個市集：固定組＋錄音室、時段 3、C 波退路形狀（舊頁面 validRun 過、照 C 波跑一組兩站） ----
+  { const r = toStall(newM('mk-first'), CM, 6), p = r.pending;
+    ok(p && p.type === 'stall' && p.mode === 'market' && p.first === true && p.cp === false && p.after === 5 && p.pos === 6, 'first market pending', p);
+    eq(p.tiles, F.first.concat(['studio']), 'first market: dig, fortune, snack, warehouse, home + studio (free)');
+    eq([p.free, p.slots, p.left, p.went, p.acts, p.seen], [['studio'], 3, 3, {}, {}, {}], 'first market: free studio, 3 slots, nothing went');
+    eq([p.groups, p.q, p.k, p.pick, p.post, p.cur, p.done], [[['dig', 'snack']], [], 0, null, ['studio'], null, []], 'C-wave fallback keys: one group dig+snack, post = studio');
+    ok(Array.isArray(p.groups) && Array.isArray(p.q) && Number.isInteger(p.k) && Array.isArray(p.post) && p.pick === null && EN.nextStep(r) === 'stall', 'old page validRun (ui.js) accepts it; nextStep stall');
+    eq(EN.choose(r, CM, { type: 'stallPick', group: 0 }).error, 'noStallPick', 'market: no stallPick');
+    const old = JSON.parse(J(r)); delete old.pending.mode;         // 舊頁面的引擎（不認得 mode）＝pick 的 content、C 波流程
+    ok(EN.choose(old, CW, { type: 'stallPick', group: 0 }).ok, 'old page: picks the fallback group');
+    eq(old.pending.q, ['dig', 'snack', 'studio'], 'old page: dig, snack, then studio');
+    for (let g = 0; g < 8 && old.pending; g++) { const x = EN.choose(old, CW, EN.cPolicy(old, CW, {})); if (!x.ok) break; }
+    ok(old.pending === null && EN.nextStep(old) === 'fight' && !old.over, 'old page: runs the C-wave group to the end, run not voided');
+    const v = EN.marketView(r, CM);
+    ok(v && v.slots === 3 && v.left === 3 && v.leaveCash === 3 * F.slotCash && v.tiles.length === 6 && v.tiles.every(t => t.can && !t.went) && v.tiles.find(t => t.kind === 'studio').free && v.tiles.find(t => t.kind === 'home').blue, 'marketView', v);
+    ok(EN.marketView(newM('x'), CM) === null && EN.isMarket(r) && !EN.isMarket(old), 'marketView null without a market; isMarket'); }
+
+  // ---- 時段：進攤不扣、回攤位不扣（貨照存）、第一個動作扣、單次的攤自動關、去過不能再進、用完只剩免費格；錯的不改 run ----
+  { const r = toStall(newM('mk-slot'), CM, 6), p = r.pending, before = J(r);
+    for (const [ch, err] of [[{ type: 'stallEnter', kind: 'gig' }, 'notTile'], [{ type: 'stallEnter' }, 'notTile'], [{ type: 'stallAct', act: 'back' }, 'noStation'], [{ type: 'stallAct', act: 'take', cardId: 'x' }, 'noStation']])
+      eq(EN.choose(r, CM, ch).error, err, 'bad choice ' + J(ch));
+    eq(J(r), before, 'bad choices leave the run untouched');
+    ok(enter(r, CM, 'dig').ok && p.left === 3 && p.cur && p.cur.kind === 'dig' && (p.cur.cards || []).length === 3, 'entering dig: three cards, no slot spent');
+    const cards = p.cur.cards.slice();
+    eq(enter(r, CM, 'home').error, 'busy', 'another stall open → busy');
+    const b0 = J(r); eq(act(r, CM, 'take', { cardId: 'nope' }).error, 'notOffered', 'take a card not offered'); eq(act(r, CM, 'drink', { kind: 'tea' }).error, 'badAct', 'wrong act at dig'); eq(J(r), b0, 'errors at an open stall leave the run untouched');
+    ok(act(r, CM, 'skip').ok && p.cur === null && p.left === 3 && !p.went.dig && p.seen.dig, 'skip = back: no slot, goods kept in seen');
+    ok(enter(r, CM, 'dig').ok && J(p.cur.cards) === J(cards) && !p.seen.dig, 're-enter: the same three cards');
+    const id = p.cur.cards.find(x => !r.bag.includes(x)), x = act(r, CM, 'take', { cardId: id });
+    ok(x.ok && r.bag.includes(id) && p.left === 2 && p.went.dig === 1 && p.acts.dig === 1 && p.cur === null && x.effects.some(e => e.slot === 2) && x.effects.some(e => e.close === 'dig'), 'first action spends a slot; take closes the stall', x.effects);
+    eq(enter(r, CM, 'dig').error, 'went', 'went: cannot re-enter');
+    ok(enter(r, CM, 'home').ok && act(r, CM, 'ok').ok && p.left === 1 && p.went.home, 'home: ok spends a slot');
+    r.hp = r.maxHp - 2; const m0 = r.money, h0 = r.hp;
+    ok(enter(r, CM, 'snack').ok && J(p.cur.drinks) === J([{ kind: 'tea', hp: 3, price: 0 }]), 'snack (drink stall): only 冬瓜茶 in I-3a');
+    const t = act(r, CM, 'drink', { kind: 'tea' });
+    ok(t.ok && r.hp === r.maxHp && r.hp - h0 === 2 && r.money === m0 && p.left === 0 && p.cur === null && t.effects.some(e => e.drink === 'tea' && e.hp === 2), '冬瓜茶: +3 capped at max, free, spends a slot, closes', t.effects);
+    eq(enter(r, CM, 'fortune').error, 'noSlot', 'no slot left → paid stalls closed');
+    ok(enter(r, CM, 'studio').ok && !p.cur.nodes && act(r, CM, 'record', { node: 'a1' }).error === 'notOffered', 'studio without ?fac=1: no nodes, record → notOffered');
+    const d0 = r.lexp.demo | 0;
+    ok(act(r, CM, 'ok').ok && (r.lexp.demo | 0) === d0 + ST.demoLexp && p.went.studio && p.left === 0, 'studio (free): demo +15, no slot');
+    const m1 = r.money, L = EN.choose(r, CM, { type: 'stallLeave' });
+    ok(L.ok && r.pending === null && r.money === m1 && r.stats.c.leave === 1 && !L.effects.some(e => e.demo), 'leave with 0 slots: +$0, studio already done, pending null');
+    const M = r.stats.c.mk; ok(M.sess === 1 && M.slots === 3 && M.used === 3 && M.leftSum === 0 && M.first.dig === 1 && M.went.studio === 1 && M.tea === 1, 'stats.c.mk', M); }
+
+  // ---- 收攤：剩下時段 ×$300、錄音室沒去＝自動 demo、寄賣沒領留著；收攤後下一位 ----
+  { const r = toStall(newM('mk-leave'), CM, 6), m0 = r.money, d0 = r.lexp.demo | 0, l0 = (r.stats.c.leave | 0);
+    const x = EN.choose(r, CM, { type: 'stallLeave' });
+    ok(x.ok && r.money === m0 + 3 * F.slotCash && x.effects.some(e => e.cash === 900) && x.effects.some(e => e.leave) && (r.lexp.demo | 0) === d0 + ST.demoLexp && x.effects.some(e => e.demo) && r.stats.c.leave === l0 + 1 && r.stats.c.income.leave === 900,
+      'leave: 3 × $300 + studio auto demo', x.effects);
+    ok(EN.nextStep(r) === 'fight' && r.pending === null, 'after leaving: next guest');
+    const r2 = toStall(newM('mk-cg'), CM, 6); r2.consign = { card: 'x|y', due: 1 }; const p2 = r2.pending;
+    ok(EN.choose(r2, CM, { type: 'stallLeave' }).ok && r2.consign && r2.consign.due === 1, 'consign not collected stays for the next market'); }
+
+  // ---- 翻籤：打開就翻第一張（免費、扣時段）、第 2 張 $1,000、第 3 張 $2,000、翻滿自動關；籤的內容；凶籤 25%（那位一般客人品味 +1、頭像標記）；換輪清掉 ----
+  { let omen = 0, third = 0, bad = 0, n = 0; const kinds = {};
+    for (let s = 0; s < (QUICK ? 40 : 160); s++) {
+      const r = toStall(newM('mk-ft-' + s), CM, 6), p = r.pending; if (!p) continue; n++;
+      r.money = 50000; const m0 = r.money, x = enter(r, CM, 'fortune');
+      if (!(x.ok && p.cur.n === 1 && p.left === 2 && r.money === m0 && p.went.fortune === 1 && x.effects.some(e => e.flip === 0 && e.slip) && Array.isArray(r.fortune) && r.fortune.length === 1 && J(p.cur.price) === J(F.fortune.price))) { bad++; continue; }
+      const y = act(r, CM, 'flip'); if (!(y.ok && r.money === m0 - 1000 && p.left === 2 && p.cur.n === 2)) bad++;
+      const z = act(r, CM, 'flip'); if (!(z.ok && r.money === m0 - 3000 && p.cur === null && z.effects.some(e => e.close === 'fortune') && r.fortune.length === 3)) bad++;
+      third++;
+      const r0 = (r.round - 1) * 5, G = pos => EN.guestDef(r, CM, r.order[pos - r0 - 1], pos), cnt = g => { const c = { c: 0, o: 0, h: 0 }; for (const k of g.deck) c[EN.topAttr(k)]++; return c; };
+      const aceOf = g => g.ace ? g.ace.id : (g.boss ? (r.bossCard || CM.aces[r.bossAce]) : null);
+      for (const f of r.fortune) {
+        kinds[f.slip] = (kinds[f.slip] || 0) + 1;
+        if (f.round !== r.round) bad++;
+        if (f.slip === 'boss') { const g = G(r0 + 5); if (!(f.pos === r0 + 5 && f.id === r.order[4] && J(f.ratio) === J(cnt(g)) && f.ace === aceOf(g))) bad++; }
+        if (f.slip === 'elite') { const g = G(r0 + 4); if (!(f.pos === r0 + 4 && f.id === r.order[3] && J(f.ratio) === J(cnt(g)))) bad++; }
+        if (f.slip === 'aces') { const want = []; for (let j = 1; j <= 5; j++) { const g = G(r0 + j), a = aceOf(g); if (a) want.push({ pos: r0 + j, id: r.order[j - 1], ace: a, attr: EN.topAttr(CM.cards[a]) }); } if (J(f.list) !== J(want)) bad++; }
+        if (f.slip === 'top') { const g = G(r0 + 4), mx = Math.max(...g.deck.map(c => EN.power(c))), c = g.deck.find(k => k.id === f.card); if (!(c && EN.power(c) === mx && f.c === c.c && f.o === c.o && f.h === c.h && f.pos === r0 + 4)) bad++; }
+        if (f.slip === 'omen') {
+          omen++;
+          const g = EN.guestDef(r, CM, f.id, f.pos), g0 = EN.guestDef(Object.assign({}, r, { fortune: [] }), CM, f.id, f.pos), rg = EN.roundGuests(r, CM).find(x2 => x2.pos === f.pos);
+          if (!(EN.classAt(f.pos) === 'normal' && f.pos >= r.pos && f.atk === F.fortune.omenAtk && g.atk === g0.atk + f.atk && g.omen === true && rg.omen === true && rg.fortunes.includes(f) && z.effects.some(e => e.omen && e.omen.pos === f.pos))) bad++;
+        }
+      }
+      if (r.fortune.slice(0, 2).some(f => f.slip === 'omen')) bad++;             // 凶籤只在第 3 張
+      if (s < 4) {                                                               // 換輪清掉；頭像上的籤
+        const rg = EN.roundGuests(r, CM), bossF = r.fortune.find(f => f.slip === 'boss');
+        if (bossF && !(rg[4].fortune && rg[4].fortunes.includes(bossF))) bad++;
+        EN.choose(r, CM, { type: 'stallLeave' }); toStall(r, CM, 11);
+        if (!r.over && EN.fortunesOf(r).some(f => f.round < r.round)) bad++;
+      }
+    }
+    ok(bad === 0 && n > 0, 'fortune: flips, prices, slip contents (boss／elite ratio, aces list, top = biggest elite card), omen only on the 3rd', { bad, n, kinds });
+    ok(omen > 0 && omen / third > 0.1 && omen / third < 0.45, 'omen ≈ 25% of third flips', { omen, third });
+    ok(['boss', 'elite', 'aces', 'top'].every(k => kinds[k] > 0), 'all four info slips appear', kinds);
+    console.log('     market fortune: ' + J({ n, third, omen, kinds }));
+    const rf = toStall(newM('mk-ff', CM, { fortuneFree: 1 }), CM, 6); rf.money = 50000; enter(rf, CM, 'fortune');
+    ok(rf.pending.cur.price[1] === 0 && act(rf, CM, 'flip').ok && rf.money === 50000, 'Lv6 fortuneFree: second slip free'); }
+
+  // ---- 攤位格抽法：一般輪 5 攤不重複、花錢攤 ≤2、至少一攤藍框；中繼點＋黑膠特賣＋錄音室、4 個時段；踢館帖第 30 位起（免費）；Lv4 一般輪 6 攤 ----
+  { let bad = 0, nNorm = 0, nCp = 0, nDare = 0, n6 = 0;
+    for (let s = 0; s < (QUICK ? 4 : 14); s++) for (const six of [false, true]) {
+      const K = CM, r = newM('mk-draw-' + s + (six ? '-6' : ''), K, six ? { marketTiles: 6 } : {});
+      let last = null;
+      for (let g = 0; g < 1500 && !r.over && r.pos <= 60; g++) {
+        const p = r.pending;
+        if (p && p.type === 'stall' && p !== last) {
+          last = p;
+          const drawn = p.tiles.filter(k => !p.free.includes(k) && k !== 'market');
+          if (p.first) { if (J(drawn) !== J(F.first)) bad++; }
+          else {
+            const want = !p.cp && six ? 6 : F.tiles; if (drawn.length !== want || new Set(drawn).size !== drawn.length) bad++;
+            if (drawn.filter(k => ST.paid.includes(k)).length > F.paidMax || !drawn.some(k => ST.blue.includes(k))) bad++;
+            if (drawn.some(k => !(F.weights[k] > 0))) bad++;
+            if (p.cp) { nCp++; if (!p.tiles.includes('market') || !p.free.includes('studio') || p.slots !== F.relaySlots) bad++; }
+            else { nNorm++; if (six) n6++; if (p.tiles.includes('market') || p.free.includes('studio') || p.slots !== F.slots) bad++; }
+            if (p.free.includes('dare')) { nDare++; if (p.cp || p.after < ST.dare.from) bad++; }
+            if ((p.after < 10 && drawn.includes('promo')) || (p.after < 15 && drawn.includes('consign'))) bad++;
+          }
+        }
+        if (r.pending) { const ch = EN.cPolicy(r, K, {}); if (!EN.choose(r, K, ch).ok) { bad++; break; } continue; }
+        fwin(r, K);
+      }
+    }
+    console.log('     market draw: ' + J({ nNorm, nCp, nDare, n6 }));
+    ok(bad === 0 && nNorm > 10 && nCp > 3 && n6 > 3, 'tile draw rules: 5 (Lv4: 6) distinct weighted, paid ≤2, ≥1 blue, unlocks; checkpoint + 黑膠特賣 + studio, 4 slots; dare free from 30', { bad, nNorm, nCp, nDare, n6 }); }
+
+  // ---- 錄音室試錄（?fac=1；SPEC-D §3.8）：三條路線的下一格（比永久多一層、III 要 lv3、soon 不出）、record 這一趟生效、試過的路線不再出、一趟 ≤3、跟本派選項互斥；沒旗標＝demo ----
+  { const r = toStall(newM('mk-fac', CM, { fac: true, facTal: { a1: 1 } }), CM, 6), p = r.pending;
+    const offer = EN.studioOffer(r, CM);
+    eq(offer.map(x => x.id), ['a2', 'b1'], 'studioOffer: next of path a (a1 owned → a2), b1; path c all soon');
+    ok(enter(r, CM, 'studio').ok && J(p.cur.nodes) === J(offer), 'studio: nodes = studioOffer');
+    const x = act(r, CM, 'record', { node: 'a2' });
+    ok(x.ok && r.fac.trialNodes.a2 === 1 && r.fac.tal.a2 === 1 && r.fac.tal.a1 === 1 && x.effects.some(e => e.record === 'a2') && p.went.studio && p.left === 3, 'record a2: this run only (tal +1, trialNodes), free', x.effects);
+    eq(EN.studioOffer(r, CM).map(x2 => x2.id), ['b1'], 'path a tried this run → not offered again');
+    const r3 = JSON.parse(J(r)); r3.fac.tal = { a1: 1, a2: 1 }; r3.fac.trialNodes = {};
+    eq(EN.studioOffer(r3, CM).map(x2 => x2.id), ['b1'], 'layer III needs run.fac.lv3');
+    r3.fac.lv3 = true; eq(EN.studioOffer(r3, CM).map(x2 => [x2.id, x2.k]), [['a3', 1], ['b1', 1]], 'lv3: a3 offered');
+    r3.fac.tal.a3 = 1; eq(EN.studioOffer(r3, CM).map(x2 => [x2.id, x2.k]), [['a3', 2], ['b1', 1]], 'deep owned → try one more level');
+    r3.fac.trialNodes = { a3: 1, b1: 1, x: 1 }; eq(EN.studioOffer(r3, CM), [], 'studioMax 3 per run');
+    ok(EN.newRun(CM, { seedKey: 'x', runNo: 2, fac: true, facLv3: true }).fac.lv3 === true && !('lv3' in EN.newRun(CM, { seedKey: 'x', runNo: 2, fac: true }).fac), 'newRun facLv3');
+    const KS = Object.assign({}, CM, { factions: Object.assign({}, CM.factions, { hall: Object.assign({}, CM.factions.hall, { tree: CM.factions.hall.tree.map(N => N.id === 'a1' ? { id: 'a1', name: 'x', op: 'start', pick: 'h_eye' } : N) }) }) });
+    const rs = JSON.parse(J(r3)); rs.fac.tal = {}; rs.fac.trialNodes = {}; rs.fac.picks = { h_eye: 1 };
+    eq(EN.studioOffer(rs, KS).map(x2 => x2.id), ['b1'], 'start node whose 本派 pick is already taken → not offered (mutually exclusive)');
+    rs.fac.picks = {}; eq(EN.studioOffer(rs, KS).map(x2 => x2.id), ['a1', 'b1'], 'start node offered when its pick is not taken');
+    eq(EN.studioOffer(newM('nf'), CM), [], 'no ?fac=1 → []'); }
+
+  // ---- 樂歷 Lv4／6／7（needs market）：talentArgs、ladder、newRun 鍵；挖寶四張 ----
+  { const xp = lv => ({ xp: EN.careerXpAt(CM, lv), spent: {} });
+    const t7 = EN.talentArgs(CM, xp(7)), t3 = EN.talentArgs(CM, xp(3)), tp = EN.talentArgs(CW, xp(7));
+    ok(t7.marketTiles === 6 && t7.fortuneFree === 1 && t7.digN === 4 && !('marketTiles' in t3) && EN.talentArgs(CM, xp(4)).marketTiles === 6 && !('fortuneFree' in EN.talentArgs(CM, xp(5))), 'talentArgs: Lv4 tile6, Lv6 fortune2, Lv7 dig4');
+    ok(!['marketTiles', 'fortuneFree', 'digN'].some(k => k in tp) && !EN.ladderList(CW, 9).some(L => ['tile6', 'fortune2', 'dig4'].includes(L.key)), "pick: no market ladder rows／args");
+    eq([EN.ladderAt(CM, 4), EN.ladderAt(CM, 6), EN.ladderAt(CM, 7)].map(a => a.map(L => L.key)), [['tile6'], ['fortune2'], ['dig4']], 'ladderAt 4／6／7');
+    ok(CM.career.ui.ladder.tile6 && CM.career.ui.ladder.fortune2 && CM.career.ui.ladder.dig4, 'ladder names');
+    const r0 = EN.newRun(CM, { seedKey: 'x', runNo: 2 }), r1 = EN.newRun(CM, Object.assign({ seedKey: 'x', runNo: 2 }, t7));
+    ok(!['marketTiles', 'fortuneFree', 'digN'].some(k => k in r0) && r1.marketTiles === 6 && r1.fortuneFree === 1 && r1.digN === 4, 'newRun keys only when given');
+    const rd = toStall(newM('mk-dig4', CM, { digN: 4 }), CM, 6); enter(rd, CM, 'dig');
+    const c4 = rd.pending.cur.cards;
+    ok(c4.length === 4 && new Set(c4).size === 4 && c4.every(id => !rd.bag.includes(id)) && act(rd, CM, 'reroll').ok && rd.pending.cur.cards.length === 4, 'Lv7: dig deals four (reroll too)', c4); }
+
+  // ---- 存讀檔中途：攤位面板開著（翻了一張籤）、stallResume 不動、fixMarket 好的不改／壞的修；收攤後的上場（lineupDue） ----
+  { const r = toStall(newM('mk-save'), CM, 6); r.money = 50000; enter(r, CM, 'fortune');
+    const r2 = JSON.parse(J(r));
+    ok(EN.fixMarket(r2, CM) === false && EN.fixWaveC(r2, CM, {}) === false, 'fixMarket／fixWaveC leave a good market run untouched');
+    EN.stallResume(r2, CM); eq(J(r2), J(r), 'stallResume is a no-op on a market pending');
+    for (const rr of [r, r2]) { act(rr, CM, 'flip'); act(rr, CM, 'back'); enter(rr, CM, 'dig'); act(rr, CM, 'skip'); enter(rr, CM, 'home'); act(rr, CM, 'ok'); EN.choose(rr, CM, { type: 'stallLeave' }); }
+    eq(J(r2), J(r), 'save／load with a stall panel open → same continuation');
+    const b = JSON.parse(J(toStall(newM('mk-fix'), CM, 6))), bp = b.pending;
+    b.fortune = { pos: 10, id: 'boss', ratio: { c: 1, o: 2, h: 3 }, ace: null }; b.marketTiles = 'x'; b.digN = 0;
+    bp.left = -1; bp.went = { dig: 1, nope: 1 }; bp.tiles = bp.tiles.concat(['nope']); bp.seen = 3; bp.cur = { kind: 'nope' }; bp.pick = 0;
+    ok(EN.fixMarket(b, CM) === true, 'fixMarket repairs');
+    ok(Array.isArray(b.fortune) && b.fortune.length === 1 && b.fortune[0].slip === 'boss' && b.fortune[0].round === 2 && !('marketTiles' in b) && !('digN' in b), 'fortune object → one-entry array; bad ladder keys dropped', b.fortune);
+    ok(!bp.tiles.includes('nope') && J(bp.went) === J({ dig: 1 }) && bp.left === 2 && J(bp.seen) === '{}' && bp.cur === null && bp.pick === null, 'pending repaired (tiles, went, left = slots − went, seen, cur, pick)', bp);
+    const e = JSON.parse(J(toStall(newM('mk-fix2'), CM, 6))); e.pending.tiles = ['nope'];
+    ok(EN.fixMarket(e, CM) && e.pending === null, 'no tiles left → treated as closed');
+    // 收攤後的上場（I-2 的 lineupDue 路）：上場制第 6 位起的拷貝
+    const CML = Object.assign({}, CM, { lineup: Object.assign({}, C0.lineup, { on: true, from: 6 }), wear: Object.assign({}, C0.wear, { on: true }) });
+    const rl = toStall(newM('mk-lu', CML), CML, 6);
+    ok(EN.isMarket(rl) && rl.lineupDue === true, 'lineup round: market first, lineupDue set');
+    ok(enter(rl, CML, 'dig').ok && act(rl, CML, 'take', { cardId: rl.pending.cur.cards.find(id => !rl.bag.includes(id)) }).ok && rl.lineupFresh.length === 1, 'market card goes into lineupFresh');
+    ok(EN.choose(rl, CML, { type: 'stallLeave' }).ok && rl.pending === null && rl.lineupDue === true && EN.nextStep(rl) === 'fight', 'leave → lineupDue (lineup panel next)');
+    const rl2 = JSON.parse(J(rl)); ok(EN.fixLineup(rl2, CML) === false && EN.fixMarket(rl2, CML) === false && rl2.lineupDue === true, 'save／load after leaving: still lineupDue');
+    const pol = EN.lineupPolicy(rl2, CML); ok(EN.choose(rl2, CML, { type: 'lineup', ids: pol.ids, bench: pol.bench }).ok && rl2.lineupDue === false, 'pick the lineup after load'); }
+
+  // ---- 策略：整趟 smart（市集照 cPolicy）每個選擇都合法、時段帳對得上 ----
+  { let bad = 0, sess = 0, used = 0, left = 0, slots = 0, runs = 0;
+    for (let s = 0; s < (QUICK ? 6 : 20); s++) {
+      const r = newM('mk-run-' + s, CM, { ace: TIERS[s % 3] }), R = lcg(EN.fnv1a32('mk-run-' + s)), mem = {};
+      for (let g = 0; g < 3000 && !r.over && r.pos <= 45; g++) {
+        if (r.pending) { const ch = EN.cPolicy(r, CM, {}); const x = EN.choose(r, CM, ch); if (!x.ok) { bad++; break; } continue; }
+        if (EN.canShop(r)) for (const ch of EN.shopPolicy(r, CM, 'smart')) EN.choose(r, CM, ch);
+        const f = EN.startFight(r, CM, {}); let k = 0; while (!f.duel.over && k++ < 20) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CM));
+        EN.finishFight(r, CM);
+      }
+      runs++; const M = r.stats.c && r.stats.c.mk;
+      if (M && !EN.isMarket(r)) { sess += M.sess; used += M.used; left += M.leftSum; slots += M.slots; if (M.used + M.leftSum !== M.slots) bad++; }
+    }
+    console.log('     market runs: ' + J({ runs, sess, used, left, slots }));
+    ok(bad === 0 && sess > 0 && used > 0, 'smart runs in market mode: every choice ok; used + left = slots', { bad, sess, used, left, slots, runs }); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
