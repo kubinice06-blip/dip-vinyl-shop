@@ -1681,12 +1681,12 @@
         { id: 'closedShop', lit: [] }],                            // 不加權
       // 第 I 波 I-3a 市集（店主 11-20：「中間的市集什麼的 不要分兩邊跑 然後不要只有選項 要有現場可以互動的」；SPEC-I §6；契約 wave-i/build3/CONTRACT.md）
       //   mode 'market'＝一次攤開、每輪 3 個時段（中繼點 4）、進攤不扣、那攤第一個動作扣 1 個；收攤剩下的時段每個 +$300；'pick'＝C 波二選一（緊急退回）
-      //   施工期間 'pick'（?market=1／sim --market on 試玩）；過門檻後改 'market' 上線
+      //   出貨 'market'（I-3a 修正棒後主線裁 K1′／W3／M5 開；?market=0／sim --market off＝pick 對照）
       //   fair（規格寫 market:{…}；stall.market 已經是黑膠特賣那一攤的貨）：first＝每一趟第一個市集固定組（＋錄音室）；中繼點＋黑膠特賣＋錄音室；
       //     weights 權重不重複抽 tiles 攤（樂歷 Lv4 一般輪 6 攤），花錢攤（paid）≤ paidMax、至少一攤藍框（blue）；免費格：錄音室、踢館帖（dare 規則照舊）、寄賣到期領取
       //     fortune 算命翻籤：打開就翻第 1 張、第 2 張 $1,000（樂歷 Lv6 免費）、第 3 張 $2,000、25% 凶籤（這一輪某位一般客人品味 +1）
       //     drinks 飲料攤（I-3a 只有冬瓜茶＝C 波宵夜的聲望回復，免費、只花時段；sim 棒定 +2，見下）；studioMax＝錄音室試錄一趟最多幾格（?fac=1）
-      mode: 'pick',
+      mode: 'market',
       fair: { slots: 3, relaySlots: 4, tiles: 5, slotCash: 300, first: ['dig', 'fortune', 'snack', 'warehouse', 'home'],
         weights: { dig: 3, fortune: 2, snack: 2, gear: 2, trade: 2, gig: 2, promo: 2, consign: 1, home: 1 }, paidMax: 2,
         fortune: { price: [0, 1000, 2000], omen: 0.25, omenAtk: 1, pool: ['boss', 'elite', 'aces', 'top'] },
