@@ -28,7 +28,7 @@
 //      品味＝新帳號 → 打完 runs[k].off＝1、樂歷照拿、明細「這一趟關樂歷（樂歷照拿）」→ 重新整理：最遠旁「關樂歷」
 //   6  C6 標題兩行（最長那組：有一趟在打＋關樂歷＋最遠是關樂歷那趟＋有沒點的點數；6b 再加 ?apex=1 跳過序章那顆鈕）：整個標題不捲、第二行在畫面裡、≥44 高、
 //      ≤600px 高是短版「樂歷 Lv 12 ›」、其他是「樂歷 Lv 12・下一個：Lv15 …」；真點第二行＝樂歷頁；唱片櫃頁頭「樂歷」也進得去；Lv1 的帳號沒有第二行
-//      （規格 C6 的「試煉最遠」是棒三）；6c（棒二）再加 ?fac=1：兩個旗標章（>600px 高兩顆不重疊、≤600px 合成一顆「流派＋頂點卡試做」），章在面板上緣以上
+//      （棒三：再加試煉開到第 10 階＝第一行「最遠 14（第 10 階 12）」、推門那列在畫面裡）；6c（棒二）再加 ?fac=1：兩個旗標章（>600px 高兩顆不重疊、≤600px 合成一顆「流派＋頂點卡試做」），章在面板上緣以上
 //   7  C7 退版：D 存檔（career、天賦開的 run）用 C 版頁面載入 → 不唯讀、照玩、輸掉 → 存回去還是 v8、career 原封不動、lexpBank 有新記帳、runs[k] 有 lexp 沒 gain →
 //      回 D 版：吐司「上次的樂歷補記給你。樂歷 +n。」、xp 只加這一次、只有那一趟標 banked、lexpBank 歸零
 //   8  C8 跨版那一趟：C 版頁面開的 run（記了路線 home 30）→ D 版載入（建 career、寫 .bak8、lexpBank 全 0＝不入帳）→ 打完：runs[k].gain＝規格公式（路線截在 ⌊0.4×基本⌋、cut 記差額）、
@@ -40,7 +40,8 @@
 //      （第 I 波 I-0：種一趟之前的紀錄＝不是新帳號第一趟）
 //   第 I 波 I-0（scratchpad v5/wave-i SPEC-I §7.2、§7.3、§7.5、§7.7；build0/CONTRACT.md）。樂歷曲線照新表（前 7 級 100／150／250／350／500／650／800）：
 //   13 第一趟保底：新帳號（runs 空）第一趟第 1 位就輸 → 樂歷 +100（＝升到 Lv2）、runs[k].gain.first、明細最後一行「第一趟：樂歷保底到 Lv2」、「再挑戰一趟」→ Lv2 那張；
-//      13b 第一趟走很遠（一次升兩級以上）→ 一張清單卡「樂歷 Lv n！」＋「天賦點 +k」＋抽到的 k 張縮圖（「抽到 k 張，收進唱片櫃」）＋去點天賦
+//      13b 第一趟走很遠（一次升兩級以上）→ 一張清單卡「樂歷 Lv n！」＋「天賦點 +k」＋抽到的 k 張縮圖（「抽到 k 張，收進唱片櫃」）；
+//          第 D 波棒三：走到第 46 位＝打倒了第 20 位藏家 → 後面多一張「開了第 1 階：…」（1／2、2／2），去點天賦在最後那張
 //   14 攤位頂列樂歷細條（不快轉）：第一次畫（重新整理後的 run）只畫不閃「樂歷 這一趟 至少 +n」＋Lv 1＋進度條（n＝現在放棄也拿得到的：站著的這一位還沒打不算；I-0 審查）；
 //      推進到跨一級 → 金色「樂歷 Lv 2！這一趟結束就能點天賦」、
 //      停 ≥3 秒（3 秒內點不收、之後點了收回原本那行）、沒有另跳老闆泡泡、career.xp 不動（只顯示）；攤位的列都在畫面裡、不捲
@@ -133,6 +134,7 @@ async function watchToasts(page) {
 }
 const toasts = page => C(page, () => (window.__toasts || []).slice());
 const CU = page => C(page, () => { const Cn = window.DipLabContent; return Object.assign({}, Cn.career.ui, { aceTitle: Object.assign({}, Cn.aceTitle), aceNewbie: Object.assign({}, Cn.aceNewbie || {}), best: Cn.summary.best,
+  tierOpen: Cn.trial.ui.tierOpen, tier1: (Cn.trial.tiers[0] || {}).text,
   retryMenu: Cn.trial.ui.retryMenu.slice(), retryPlea: Cn.lines.owner.retryPlea, pickSub: Cn.seeds.ui.pickSub, gigPer: Cn.waveC.stall.gig.lexp }); });
 const stored = page => C(page, () => JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null'));
 // 一份 v8 存檔（D 版形狀）：o.career（null＝沒有這個鍵＝C 波存檔）、o.run（{ace, idx, talent:true＝照 career 的 talentArgs 開, set:{…}}；沒給＝沒有進行中的）、
@@ -157,6 +159,7 @@ async function seedCareer(page, o) {
       best: o.best || { far: 0, checkpoints: [], bestStreak: 0 }, shelf: {}, relics: [], tutorialDone: true, prologueDone: true, lastAce: o.lastAce || ace, lastBargain: null };
     if (career) s.career = career;
     if (o.lexpBank) s.lexpBank = o.lexpBank;
+    if (o.trial) s.trial = o.trial;                                       // 第 D 波棒三：試煉階級（C6 最長那組帶「試煉最遠」）
     s.shelf[Cn.aces[ace]] = { at: 'e2e#1', seen: true, own: true, src: 'start' };
     (Cn.gifts[ace] || []).forEach(id => { s.shelf[id] = { at: 'e2e#1', seen: true, own: true, src: 'gift' }; });
     if (o.own) Object.keys(Cn.cards).filter(id => E.canSeed(Cn, id) && !Cn.cards[id].tier && !(Cn.gifts[ace] || []).includes(id)).slice(0, o.own).forEach(id => { s.shelf[id] = { at: 'e2e#1', seen: true, own: true, src: 'run' }; });
@@ -505,7 +508,8 @@ async function runSize(browser, w, h) {
 
   // ---------------------------------------------------------------- 6 C6 標題兩行（最長那組）；6b 再加 ?apex=1（跳過序章那顆鈕）；6c 再加 ?fac=1（兩個旗標章）
   if (want(6)) {
-    const seed6 = page => seedCareer(page, { career: { xp: 6600, off: true }, run: { ace: 'hall', idx: 3 },
+    // 棒三：再加試煉（開到第 10 階、選第 10 階、第 10 階最遠 12）＝第一行最遠短版「最遠 14（第 10 階 12）」＋推門那列（≤600px 跟第二行同一列）
+    const seed6 = page => seedCareer(page, { career: { xp: 6600, off: true }, run: { ace: 'hall', idx: 3 }, trial: { open: 10, pick: 10, best: { 10: 12 } },
       runs: [{ seedKey: '20261101', runNo: 1, ace: 'hall', result: 'dead', reached: 14, bestStreak: 6, taken: 5, wins: 13, level: 4, checkpoints: [10], off: 1 }], best: { far: 14, checkpoints: [10], bestStreak: 6 } });
     const title6 = page => C(page, () => {
       const box = document.querySelector('.lb-panel.title .lb-screen') || document.querySelector('#panel .lb-screen'), b = document.querySelector('.lb-foot.cxline button'), r = b && b.getBoundingClientRect();
@@ -524,8 +528,10 @@ async function runSize(browser, w, h) {
         await openTitle(page, QA); await sleep(1200);
         const x = await CU(page);
         const t = await title6(page);
+        const tierRow = await C(page, () => { const r = document.querySelector('.lb-foot.tierrow'); if (!r) return null; const R = r.getBoundingClientRect(); return { t: Math.round(R.top), b: Math.round(R.bottom), k: r.getAttribute('data-k') }; });
         const sc = await noScroll(page);
-        const lineWant = h > 600 ? fill(x.line, { n: 12, m: 15, name: x.ladder.gold }) : fill(x.lineShort, { n: 12 });
+        // 棒三審查：有一趟在打（這一組有）＋試煉開了＝標題擠，≤700px 高樂歷第二行跟推門那列併成一列（短版）
+        const lineWant = h > 700 ? fill(x.line, { n: 12, m: 15, name: x.ladder.gold }) : fill(x.lineShort, { n: 12 });
         let opened = false;
         try { await tapAt(page, '.lb-foot.cxline button'); await sleep(700); opened = await C(page, () => !!document.querySelector('.lb-page .cx-page')); } catch (_) { opened = false; }
         let more = '', okMore = true;
@@ -554,8 +560,9 @@ async function runSize(browser, w, h) {
           more += `；旗標章 ${J(pl)}`;
         }
         const ok = t.cont && t.skip === apex && t.sh - t.ch <= 1 && scrollOk(sc) && t.line === lineWant && t.dot && t.top >= 0 && t.bottom <= h && t.h >= 44 &&
-          t.info.includes(x.offBest) && t.offon && !t.unl && !t.lad && opened && okMore && okFlag;
-        record(n, size, ok && !errs(page).length, `標題${apex ? '（?apex=1' + (fac ? '&fac=1' : '') + '）' : ''} ${J(t)} ${J(sc)}（第二行要「${lineWant}」）；真點第二行 → 樂歷頁 ${opened}${more}；${errTx(page)}`);
+          t.info.includes(x.offBest) && t.info.startsWith(fill(x.bestTier, { n: 14, k: 10, m: 12 })) && tierRow && tierRow.k === '10' && tierRow.t >= 0 && tierRow.b <= h &&
+          t.offon && !t.unl && !t.lad && opened && okMore && okFlag;
+        record(n, size, ok && !errs(page).length, `標題${apex ? '（?apex=1' + (fac ? '&fac=1' : '') + '）' : ''} ${J(t)} ${J(sc)}（第二行要「${lineWant}」）；推門那列 ${J(tierRow)}；真點第二行 → 樂歷頁 ${opened}${more}；${errTx(page)}`);
       } catch (e) { record(n, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -775,6 +782,12 @@ async function runSize(browser, w, h) {
           return { hd: (s.querySelector('.cx-hd b') || {}).textContent, sub: (s.querySelector('.cx-hd .sub') || {}).textContent || '', got: (s.querySelector('.cx-got b') || {}).textContent || '', cv: s.querySelectorAll('.cx-got .lb-cv').length,
             talent: !!s.querySelector('[data-a=talent]'), n: (s.querySelector('.cx-n') || {}).textContent || '', inView: b.top >= 0 && b.bottom <= innerHeight && b.height >= 44 }; });
         await shot(page, size, label === '13' ? '7b-first-card' : '9-first-listcard');
+        // 第 D 波棒三：13b 走到第 46 位＝打倒了第 20 位藏家 → 開了試煉第 1 階：清單卡之後多一張「開了第 1 階：…」（去點天賦在最後一張）
+        let k1 = null;
+        if (label === '13b' && k0 && k0.n === '1／2') {
+          await jsClick(page, '.lb-sheet.cxcard .lb-btn[data-a=next]'); await sleep(450);
+          k1 = await C(page, () => { const s = document.querySelector('.lb-sheet.cxcard'), c = s && s.querySelector('.cx-card'); return c ? { tier: c.getAttribute('data-tier'), hd: (c.querySelector('.cx-hd b') || {}).textContent, talent: !!s.querySelector('[data-a=talent]'), n: (s.querySelector('.cx-n') || {}).textContent || '' } : null; });
+        }
         const drawn = await C(page, () => window.__lab.save.career.drawn.slice());
         const firstLine = fill(x.partFirst, { n: 2 });
         let ok;
@@ -782,9 +795,10 @@ async function runSize(browser, w, h) {
           m && m.h1 === fill(x.gainTitle, { n: 100 }) && m.li[m.li.length - 1] === firstLine &&
           up && k0 && k0.hd === fill(x.lvUp, { n: 2 }) && k0.got === x.drawGot && k0.cv === 1 && k0.n === '' && k0.talent && k0.inView && J(drawn) === '[2]';
         else ok = ended && e0.ent.gain && e0.ent.gain.total === spec.total && !e0.ent.gain.first && spec.total >= xpAt(3) && e0.xp === spec.total && lv >= 3 && !m.li.includes(firstLine) &&
-          up && k0 && k0.hd === fill(x.lvList, { n: lv }) && k0.sub === fill(x.lvPts, { n: lv - 1 }) && k0.cv >= 2 && k0.cv <= lv - 1 && k0.got === fill(x.drawGotN, { n: k0.cv }) && k0.n === '' && k0.talent && k0.inView &&
+          up && k0 && k0.hd === fill(x.lvList, { n: lv }) && k0.sub === fill(x.lvPts, { n: lv - 1 }) && k0.cv >= 2 && k0.cv <= lv - 1 && k0.got === fill(x.drawGotN, { n: k0.cv }) && k0.n === '1／2' && !k0.talent && k0.inView &&
+          k1 && k1.tier === '1' && k1.hd === fill(x.tierOpen, { k: 1, text: x.tier1 }) && k1.talent && k1.n === '2／2' &&
           J(drawn) === J(Array.from({ length: lv - 1 }, (_, i) => i + 2));
-        record(label, size, ok && !errs(page).length, `打完 ${ended} 結算「${e0.cxp}」gain ${J(e0.ent.gain)}（規格未保底 ${spec.total}、要 ${total}＝Lv${lv}）xp ${e0.xp}；明細 ${J(m)}；過場卡 ${up} ${J(k0)}；drawn ${J(drawn)}；${errTx(page)}`);
+        record(label, size, ok && !errs(page).length, `打完 ${ended} 結算「${e0.cxp}」gain ${J(e0.ent.gain)}（規格未保底 ${spec.total}、要 ${total}＝Lv${lv}）xp ${e0.xp}；明細 ${J(m)}；過場卡 ${up} ${J(k0)}${k1 ? ' → ' + J(k1) : ''}；drawn ${J(drawn)}；${errTx(page)}`);
       } catch (e) { record(label, size, false, 'error ' + e.message); }
       await ctx.close();
     }

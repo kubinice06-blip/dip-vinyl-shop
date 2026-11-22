@@ -367,7 +367,39 @@ function shapeTrial(C, E, ok) {
   ok(Array.isArray(T.titles) && T.titles.length >= 2 && T.titles.every(x => typeof x === 'string' && x && [...x].length <= 8) && new Set(T.titles).size === T.titles.length && int(T.titleEvery, 1),
     'trial.titles：稱號（字串、≤8 字、不重複）＋titleEvery（每幾位換一次）');
   ok(Array.isArray(T.tiers), 'trial.tiers（之後的難度階梯）要是陣列');
+  trialTierShape(C, E, ok);
   shapeCareer(C, E, ok);
+}
+// 試煉階級（第 D 波棒三；SPEC-D §5.2、§5.3）：每階 name（1–4 字）、text（≤24 字）、只准 curve／guestHp／guestHpSteps／add 四種覆寫；curve 的鍵要是 engine 有的；
+//   數字一律相對值（{add:n}；hintMix 那種機率另外夾在 0–1）；add 只准 healAdd（打贏少回，≤0）；逐階疊出來（engine trialCfg）客人聲望 一般 ≤ 菁英、一般 ≤ 藏家、機率在 0–1；
+//   第 0 階＝沒有疊（trialCfg(C, 0) 沒有 healAdd 鍵）；推門那列、過場卡的字
+function trialTierShape(C, E, ok) {
+  const L = (C.trial || {}).tiers || [], base = E.trialCfg(C, 0), CK = Object.keys(base.curve || {});
+  const isObj = x => !!x && typeof x === 'object' && !Array.isArray(x);
+  const relOnly = (v, where) => { if (isObj(v)) { if ('add' in v && Object.keys(v).length === 1) return ok(Number.isFinite(v.add), where + '：{add} 要是數字'); for (const k of Object.keys(v)) relOnly(v[k], where + '.' + k); return true; }
+    return ok(false, where + '：階表要寫相對值 {add:n}（SPEC-D §5.2：基準改了字就錯）'); };
+  L.forEach((x, i) => {
+    const w = 'trial.tiers[' + i + ']（第 ' + (i + 1) + ' 階）';
+    if (!ok(isObj(x), w + ' 要是物件')) return;
+    ok(typeof x.name === 'string' && clen(x.name) >= 1 && clen(x.name) <= 4, w + '.name 1–4 字');
+    ok(typeof x.text === 'string' && x.text && clen(x.text) <= 24, w + '.text ≤24 字：' + x.text);
+    const keys = Object.keys(x).filter(k => !['name', 'text'].includes(k));
+    ok(keys.length >= 1 && keys.every(k => ['curve', 'guestHp', 'guestHpSteps', 'add'].includes(k)), w + '：只准 curve／guestHp／guestHpSteps／add（有：' + keys.join('、') + '）');
+    if (x.curve) { ok(isObj(x.curve) && Object.keys(x.curve).every(k => CK.includes(k)), w + '.curve 的鍵要是 engine TRIAL.curve 有的'); for (const k of Object.keys(x.curve || {})) relOnly(x.curve[k], w + '.curve.' + k); }
+    if (x.guestHp) { ok(Object.keys(x.guestHp).every(k => ['normal', 'elite', 'boss'].includes(k)), w + '.guestHp 只有 normal／elite／boss'); relOnly(x.guestHp, w + '.guestHp'); }
+    if (x.guestHpSteps) ok(Array.isArray(x.guestHpSteps) && x.guestHpSteps.every(p => Array.isArray(p) && Number.isInteger(p[0]) && p[0] >= 1 && Number.isInteger(p[1]) && p[1] >= 1), w + '.guestHpSteps＝[[第幾位起, +n]…]');
+    if (x.add) ok(isObj(x.add) && Object.keys(x.add).length >= 1 && Object.keys(x.add).every(k => ['healAdd', 'healAddNormal'].includes(k) && Number.isInteger(x.add[k]) && x.add[k] < 0), w + '.add 只准 healAdd／healAddNormal（負整數：打贏少回；Normal＝只有一般客人，§14-5 備案）');
+  });
+  ok(!('healAdd' in base) && !('healAddNormal' in base), 'trialCfg(C, 0) 不能有 healAdd／healAddNormal（第 0 階＝逐字現況）');
+  for (let k = 1; k <= L.length; k++) {
+    const T = E.trialCfg(C, k), G = T.guestHp, K = T.curve, pr = v => Number.isFinite(v) && v >= 0 && v <= 1;
+    ok(G.normal <= G.elite && G.normal <= G.boss, '第 ' + k + ' 階疊完 客人聲望 一般 ≤ 菁英、一般 ≤ 藏家（' + [G.normal, G.elite, G.boss].join('／') + '；第 4 階菁英先 +3、第 5 階藏家才 +3，中間那階菁英比藏家高是照定稿順序）');
+    ok([K.hintMix.none.base, K.hintMix.none.max, K.hintMix.half.normal, K.hintMix.half.hard, K.hintMix.half.max, K.q.feintBase, K.q.feintMax].every(pr), '第 ' + k + ' 階疊完 機率要在 0–1');
+    ok(K.deck.buffEvery >= 1 && T.heal + (T.healAdd | 0) + (T.healAddNormal | 0) >= 1, '第 ' + k + ' 階疊完 加星間隔 ≥1、打贏至少回 1');
+  }
+  const U = (C.trial || {}).ui || {};
+  for (const k of ['tierRow', 'tierN', 'tierZero', 'tierNew', 'tierMore', 'tierTag', 'tierOpen', 'tierLadder', 'tierHow', 'tierReward']) ok(typeof U[k] === 'string' && U[k], 'trial.ui.' + k + '（試煉階級的畫面字）');
+  ok(E.TRIAL_PASS === 21, 'engine TRIAL_PASS＝21（過關＝打倒第 20 位藏家：SPEC-D R-T4）');
 }
 // 樂歷（第 D 波棒一；第 I 波 I-0 SPEC-I §7.3）：曲線 table（正整數、每級只增不減、接得上表外那段、Lv8 戰力位置不變＝表的合計＝舊曲線同幾級）、
 //   第一趟保底 firstLv、新畫面字。engine CAREER 同值
@@ -785,9 +817,14 @@ export function crowdProblems(C, E) {
   const PA = EN.posAdd, paOk = !('posAdd' in EN) || (Number.isInteger(PA) && PA >= 0 && PA <= 60) ||
     (Array.isArray(PA) && PA.length >= 2 && PA.length <= 12 && PA.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && k[0] <= 200 && Number.isInteger(k[1]) && k[1] >= 0 && k[1] <= 60 && (i === 0 || k[0] > PA[i - 1][0])));
   ok(paOk, 'LD1：C.encounter.posAdd（切磋強度的位移）要是 0–60 的整數，或 [[第幾位, 位移], …] 折線（第幾位遞增、位移 0–60）：' + JSON.stringify(PA));
+  // tierAdd（合併審查 F2）：試煉第 k 階切磋客人再多幾位等效位數（第 0 階一律 0）——0–60 的整數（第 1 階起都一樣）或 [[第幾階, 位移], …] 折線（第幾階 1–試煉階數、遞增、位移 0–60、2–12 個點）
+  const TA = EN.tierAdd, nT = ((C.trial || {}).tiers || []).length, taOk = !('tierAdd' in EN) || (Number.isInteger(TA) && TA >= 0 && TA <= 60) ||
+    (Array.isArray(TA) && TA.length >= 2 && TA.length <= 12 && TA.every((k, i) => Array.isArray(k) && k.length === 2 && Number.isInteger(k[0]) && k[0] >= 1 && k[0] <= nT && Number.isInteger(k[1]) && k[1] >= 0 && k[1] <= 60 && (i === 0 || k[0] > TA[i - 1][0])));
+  ok(taOk, 'LD1：C.encounter.tierAdd（試煉階級的切磋位移）要是 0–60 的整數，或 [[第幾階, 位移], …] 折線（第幾階 1–' + nT + ' 遞增、位移 0–60）：' + JSON.stringify(TA));
+  ok(!('tierFrom' in EN) || (Number.isInteger(EN.tierFrom) && EN.tierFrom >= 1 && EN.tierFrom <= 200), 'LD1：C.encounter.tierFrom（第幾位起加試煉階級的切磋位移）要是 1–200 的整數：' + EN.tierFrom);
   ok(EN.short >= 0.5 && EN.short <= 0.9, 'LD1：C.encounter.short（短局比例）要在 0.5–0.9（太短一兩手就打完、1＝不是短局）：' + EN.short);
   ok(!('ace' in EN) || typeof EN.ace === 'boolean', 'LD1：C.encounter.ace（試調旗標：照一般客人機率帶王牌）要是 true／false');
-  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'ace', 'deckAt'];
+  const ENC_KEYS = ['on', 'reward', 'from', 'p', 'perRound', 'slots', 'lapse', 'short', 'noDareRound', 'noStall', 'posAdd', 'tierAdd', 'tierFrom', 'ace', 'deckAt'];
   ok(Object.keys(EN).every(k => ENC_KEYS.includes(k)), 'LD1：C.encounter 有不認得的鍵（engine sparCfg 不讀）：' + Object.keys(EN).filter(k => !ENC_KEYS.includes(k)).join(' '));
   ok(!('cash' in EN) && !('skipCash' in EN) && ((C.waveC || {}).loot || {}).skipCash > 0, 'LD1：切磋不收改拿的錢＝C.waveC.loot.skipCash（不另設）');
   // C.crowdUi 第一階段三句
@@ -1470,8 +1507,48 @@ export function encoreProblems(C, E) {
 // ================================================================================================
 // 第 D 波棒二：三流派（?fac=1；C.factions，SPEC-D §4.2、§6-3）
 // ================================================================================================
-const FAC_NOTE_KEYS = ['full', 'tieCost', 'borrow', 'underdog', 'cCost', 'crit', 'crit2', 'heal', 'loseCost', 'leech', 'thorn'];
+const FAC_NOTE_KEYS = ['full', 'tieCost', 'borrow', 'underdog', 'cCost', 'crit', 'crit2', 'heal', 'loseCost', 'leech', 'thorn', 'spine', 'insider'];   // spine／insider：棒三派樹
 const FAC_FX_KEYS = { hall: ['mirrorWinFull', 'fullMin', 'tieCost'], pearl: ['counterAlways', 'underdogNoAtk', 'counteredCost'], heresy: ['critMult', 'critPre', 'critHeal', 'loseCost'] };
+// 派樹（第 D 波棒三；SPEC-D §3.7a）：九格 a1–c3（路線 a 本派／b 代價／c 收藏 × 三層）；活的節點 op 在 engine TREE_OPS、名 ≤6、說明 ≤24；
+//   start＝這派 picks 裡的一項（第二招不上樹：R-F5）、同一項不給兩次；deep cell honest／caught、max 1–3（D 波封頂 3）；pleaHp n 1–5、tieHeal n 1–3；
+//   soon（之後開放）＝later／apex／market，不寫 op；丙路線 D 波全鎖（經典丙 I、冷門丙 I 沒內容、丙 II／III 等鎮店盤、異端丙 I 等市集：build3 裁定）
+function treeShape(D, w, P, E, ok) {
+  const T = D.tree;
+  if (!ok(Array.isArray(T) && T.length === 9, w + '.tree 要 9 格（a1–c3）')) return;
+  const OPS = E.TREE_OPS || [], seen = new Set(), starts = new Set();
+  ok(sameSet(T.map(x => x && x.id), ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']), w + '.tree 的 id 要剛好 a1–c3');
+  for (const x of T) {
+    const wn = w + '.tree.' + (x && x.id);
+    if (!ok(x && typeof x === 'object', wn + ' 不是物件')) continue;
+    ok(typeof x.name === 'string' && x.name && clen(x.name) <= 6, wn + '.name 1–6 字');
+    if (x.text != null) ok(typeof x.text === 'string' && x.text && clen(x.text) <= 24, wn + '.text ≤24 字：' + x.text);
+    if (x.soon) { ok(['later', 'apex', 'market'].includes(x.soon) && x.op == null, wn + '：之後開放的寫 soon（later／apex／market）、不寫 op'); continue; }
+    ok(x.id[0] !== 'c', wn + '：丙路線 D 波全部之後開放');
+    ok(OPS.includes(x.op), wn + '.op ' + x.op + ' 不在 engine TREE_OPS');
+    ok(typeof x.text === 'string' && x.text, wn + '：活的節點要有說明');
+    if (x.op === 'start') {
+      const p = P.find(q => q && q.id === x.pick);
+      ok(!!p && !p.second, wn + '：start 要是這派的本派選項、不能是第二招（R-F5）：' + x.pick);
+      ok(!starts.has(x.pick), wn + '：同一項本派選項不給兩次'); starts.add(x.pick);
+    }
+    if (x.op === 'deep') {
+      const perOk = v => Number.isInteger(v) && v >= 1 && v <= 10;
+      ok(['honest', 'caught'].includes(x.cell) && Number.isInteger(x.max) && x.max >= 1 && x.max <= 3 && x.id === 'a3' &&
+        (x.per == null || perOk(x.per) || (Array.isArray(x.per) && x.per.length === x.max && x.per.every(perOk) && x.per.every((v, i) => !i || v <= x.per[i - 1]))) && (x.carry == null || typeof x.carry === 'boolean'),
+        wn + '：深耕在甲 III、cell honest／caught、max 1–3（D 波封頂 3）、per 1–10 或逐級陣列（長度＝max、不遞增）、carry 布林（跨場累積）');
+    }
+    if (x.op === 'fx') {   // 棒三審查：派樹自己的小效果（engine TREE_FX_MAX／TREE_FX_ADD 的鍵，1–3）
+      const keys = Object.keys(x.fx || {}), KN = (E.TREE_FX_MAX || []).concat(E.TREE_FX_ADD || []);
+      ok(keys.length >= 1 && keys.every(k => KN.includes(k) && Number.isInteger(x.fx[k]) && x.fx[k] >= 1 && x.fx[k] <= 3), wn + '：fx 的鍵要在 engine TREE_FX_MAX／TREE_FX_ADD、值 1–3：' + JSON.stringify(x.fx));
+      for (const k of keys) { ok(!seen.has('fx:' + k), wn + '：fx 同一個鍵一派只有一格：' + k); seen.add('fx:' + k); }
+    }
+    if (x.op === 'spine') ok(x.n == null || (Number.isInteger(x.n) && x.n >= 1 && x.n <= 3), wn + '：刺蝟 n 1–3（他的品味少算幾點；沒寫＝整個不加）');
+    if (x.op === 'pleaHp') ok(Number.isInteger(x.n) && x.n >= 1 && x.n <= 5, wn + '：pleaHp n 1–5');
+    if (x.op === 'tieHeal') ok(Number.isInteger(x.n) && x.n >= 1 && x.n <= 3, wn + '：tieHeal n 1–3');
+    if (x.op === 'pick2') ok(x.id === 'a2', wn + '：挑著學在甲 II');
+    ok(!seen.has(x.op) || x.op === 'start' || x.op === 'fx', wn + '：同一種效果（start、fx 以外；fx 照鍵算）一派只有一格'); seen.add(x.op);
+  }
+}
 export function factionProblems(C, E) {
   const bad = [];
   const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
@@ -1509,7 +1586,14 @@ export function factionProblems(C, E) {
       ok(!!p.second === (k === 4), wp + '：只有第 5 項是第二招（second）');
     });
     ok(Array.isArray(D.priority) && D.priority.length === ids.size && sameSet(D.priority, [...ids]), w + '.priority 要是 picks id 的排列');
+    treeShape(D, w, P, E, ok);
   }
+  ok(F.treeStart == null || ['first', 'start'].includes(F.treeStart), 'factions.treeStart 要是 first（本派格先出）／start（開局就送，規格原意）');
+  const G = F.guest;   // 棒三：?fac=1 那一趟的客人（只在 run.fac）：[[第幾位起, +n], …] 位數遞增、n 1–3
+  if (G != null && ok(G && typeof G === 'object' && Object.keys(G).every(k => ['hpSteps', 'atkSteps'].includes(k)), 'factions.guest 只有 hpSteps／atkSteps'))
+    for (const k of ['hpSteps', 'atkSteps']) if (G[k] != null) ok(Array.isArray(G[k]) && G[k].every((x, i, a) => Array.isArray(x) && Number.isInteger(x[0]) && x[0] >= 2 && Number.isInteger(x[1]) && x[1] >= 1 && x[1] <= 3 && (!i || x[0] > a[i - 1][0])), 'factions.guest.' + k + '＝[[第幾位起（≥2、遞增）, +n（1–3）]…]');
+  const TC = F.treeCost || {};
+  ok(Array.isArray(TC.layer) && TC.layer.length === 3 && TC.layer.every(x => Number.isInteger(x) && x >= 1 && x <= 5) && Number.isInteger(TC.more) && TC.more >= 1 && TC.more <= 5, 'factions.treeCost：layer 三層各 1–5 點、more（深耕第 2 級起每級）1–5');
   const S = F.apexSwap;
   if (S != null && ok(S && typeof S === 'object', 'factions.apexSwap 要是物件')) {
     const SN = S.notes || {}, AN = (C.apexTrial || {}).notes || {};
@@ -1541,7 +1625,9 @@ export function factionProblems(C, E) {
     for (const [k, v] of Object.entries(SN)) ok(typeof v === 'string' && clen(v.replace(/\{(d|h)\}/g, '12')) <= 25 && !(k in AN), 'factions.apexSwap.notes.' + k + '：≤25 字、不跟 apexTrial.notes 重複');
   }
   const U = F.ui || {};
-  for (const k of ['badge', 'badgeBoth', 'passive', 'cost', 'second', 'pickTag', 'pickNote', 'pickFirst', 'mine', 'mineNone', 'infoTitle', 'leftLeech', 'leftThorn', 'firstTip', 'swapped', 'apexMixed', 'costOff']) ok(typeof U[k] === 'string' && U[k], 'factions.ui.' + k);
+  for (const k of ['badge', 'badgeBoth', 'passive', 'cost', 'second', 'pickTag', 'pickNote', 'pickFirst', 'mine', 'mineNone', 'infoTitle', 'leftLeech', 'leftThorn', 'firstTip', 'swapped', 'apexMixed', 'costOff',
+    'treeTab', 'treePoints', 'treeOf', 'treeCost', 'treeLv', 'treeHave', 'treeNeed', 'treeProf', 'treeNoPts', 'treeSoon', 'treeSoonApex', 'treeSoonMarket', 'treeRespec', 'treeHow', 'treeOffNote', 'treeStart', 'deepWin', 'pleaHp']) ok(typeof U[k] === 'string' && U[k], 'factions.ui.' + k);
+  ok(U.treePath && ['a', 'b', 'c'].every(k => typeof U.treePath[k] === 'string' && U.treePath[k] && clen(U.treePath[k]) <= 4), 'factions.ui.treePath：a／b／c 三條路線名（≤4 字）');
   ok(C.factionsTag === '新', 'C.factionsTag');
   return bad;
 }

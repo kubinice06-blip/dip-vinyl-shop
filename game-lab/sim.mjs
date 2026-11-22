@@ -60,6 +60,10 @@
 //   第 D 波棒二（三流派＝遊戲網址 ?fac=1；SPEC-D §7.1、§8.1）：
 //   --fac  newRun fac:true：派別被動＋代價、本派選項（升級每 5 級第 4 格；runPolicy 出了就拿）。序章那場照舊沒有。三派一定分開量（--ace 各一支，同一批客人）
 //   --nofacpick  本派選項不出（C.factions.levelEvery 0＝只量被動；F6 的對照組）
+//   第 D 波棒三（派樹＋試煉階級；SPEC-D §3.7、§5、§7.1、§8.1 F6／F10、§8.3 T）：
+//   --factal full|a|b|'{"a1":1,"a2":1,"a3":3,"b1":1,"b2":1,"b3":1}'  派樹（newRun facTal；要 --fac）。full＝每派 D 波開放的節點全點滿（甲 I II＋深耕 3＋乙全部；丙路線之後開放）、
+//     a／b＝只點那條路線；JSON＝直接給（節點 id 三派共用 a1…c3；engine facTalOf 只留這派活的、截上限，不驗前置）。多印深耕多回、刺蝟、圈內人
+//   --tier k  試煉階級第 k 階＝C.trial.tiers 前 k 條全部疊上（engine trialCfg）；「到第 21 位」那一欄＝試煉過關率（T-1–T-5、F10）
 //   --facfx '{"heresy":{"critPre":2}}'  疊進那派的被動 fx（Object.assign C.factions[t].fx；調數字、量第二招從開局就有：{"hall":{"leech":1,"leechMax":2}}）
 //   第 I 波 I-1 翻面（程式識別字 encore；scratchpad v5/wave-i SPEC-I §1.8 AN1–AN6）：content C.encore.on 預設開＝預設 7 星王牌、--apex 頂點卡都有翻面
 //   --encore off  ＝C.encore.on false（對照組：兩半都關、對決／run 一個欄位都不多）。關著時不印翻面表、JSON 不多 enc／report.encore
@@ -248,6 +252,13 @@ if (FACFX) for (const t of Object.keys(FACFX)) {
   C.factions[t].fx = Object.assign({}, C.factions[t].fx, FACFX[t]);
 }
 if (NOFACPICK) C.factions.levelEvery = 0;
+const FACTAL_ARG = arg('factal', null);                                   // 第 D 波棒三派樹（見檔頭）
+if (FACTAL_ARG && !FAC) { console.error('--factal 要跟 --fac 一起用'); process.exit(2); }
+const FACTAL_FOR = !FACTAL_ARG ? null : (ace => {
+  const all = EN.treeNodes(C, ace), lv = n => n.op === 'deep' ? Math.max(1, n.max | 0) : 1;
+  if (['full', 'a', 'b'].includes(FACTAL_ARG)) return Object.fromEntries(all.filter(n => !n.soon && (FACTAL_ARG === 'full' || n.id[0] === FACTAL_ARG)).map(n => [n.id, lv(n)]));
+  return JSON.parse(FACTAL_ARG);
+});
 // 第 I 波 I-1 翻面（見檔頭）：--encore on|off（--patch 之後套）、--encpol 量上界
 const ENC_ARG = arg('encore', null);
 if (ENC_ARG != null && !['on', 'off'].includes(ENC_ARG)) { console.error('--encore on|off'); process.exit(2); }
@@ -290,7 +301,7 @@ if ((LU_FROM != null && !LUX) || (BENCH != null && !LU_ON)) { console.error('--l
 const LUBASE = arg('lubase', null) ? JSON.parse(fs.readFileSync(arg('lubase'), 'utf8')) : null, L2BASE = arg('l2base', null) ? JSON.parse(fs.readFileSync(arg('l2base'), 'utf8')) : null;
 if ((LUBASE || L2BASE) && !LUX) { console.error('--lubase／--l2base 要上場制開著'); process.exit(2); }          // LS0(c)：每一趟主線每場開打種子（duel.e.hkey）＋每次配件獎勵（pending.relics）
 const ENC_KEYS = ['ace:caught','ace:combo2', 'apex:caught', 'apex:combo2', 'apex:sameWin', 'apex:lowhp'];   // 翻面逐條件表的欄位順序（其他照出現順序接在後面）
-const FAC_KEYS = EN.FAC_NOTE_ORDER.concat(['cut']);                      // duel.stats.fac 的鍵（結果行小字＋本派選項「每場第一次被剋少扣」）
+const FAC_KEYS = EN.FAC_NOTE_ORDER.concat(['cut', 'deep']);              // duel.stats.fac 的鍵（結果行小字＋本派選項「每場第一次被剋少扣」）＋棒三深耕多回的聲望（finishFight out.deep）
 const FAC_OWN = { hall: ['full', 'tieCost'], pearl: ['borrow', 'underdog', 'cCost'], heresy: ['crit', 'crit2', 'loseCost'] };   // F4：被動或代價觸發的手（三派互斥）
 const WCC = EN.wcCfg(C), WC_ON = !!(WCC.loot.on || WCC.chest.on || WCC.stall.on || WCC.safety.on);
 const COPT = JSON.parse(arg('copt', '{}')), COPT_SET = Object.keys(COPT).length > 0;
@@ -479,6 +490,7 @@ function runOnce(pol, flow, i, A) {
   if (LUX && SAFETY) o0.firstRun = true;                                // 第 I 波 I-2：新帳號第一趟（--safety）上場制第 11 位起
   if (LU_FROM != null) o0.lineupFrom = LU_FROM;
   if (BENCH != null) o0.lineupBonus = BENCH;
+  if (FACTAL_FOR) o0.facTal = FACTAL_FOR(o0.ace);                       // 第 D 波棒三：派樹
   if (FROM) { o0.from = FROM; o0.prologue = false; o0.relics = FROM_RELICS.slice(); }   // 中繼點開局（快速選秀）
   if (RET_RELICS) { o0.prologue = false; o0.relics = RET_RELICS.slice(); }   // 老玩家：不打序章、帶 3 件配件
   const run = EN.newRun(C, o0);
@@ -600,7 +612,7 @@ function runOnce(pol, flow, i, A) {
     if (by === 'rounds') A.bar[d]++; else if (by === 'hp') A.ko[d]++;
     if (res.win) A.win[d]++;
     if (att === 0) { A.att1[d]++; if (res.win) A.win1[d]++; }
-    if (A.fx) { A.fx.fights++; A.fx.hands += hands; const SF = duel.stats.fac || {}; for (const k of Object.keys(SF)) A.fx.k[k] = (A.fx.k[k] || 0) + SF[k]; }   // 第 D 波棒二：每場派別觸發（客人場，說情重打也算）
+    if (A.fx) { A.fx.fights++; A.fx.hands += hands; const SF = duel.stats.fac || {}; for (const k of Object.keys(SF)) A.fx.k[k] = (A.fx.k[k] || 0) + SF[k]; if (res.deep) A.fx.k.deep = (A.fx.k.deep || 0) + res.deep; }   // 第 D 波棒二：每場派別觸發（客人場，說情重打也算）；棒三：深耕多回的聲望
     if (A.ax) {                                                         // 頂點卡發動統計（--apex）
       const X = A.ax, h = duel._apexHand, hits = duel.stats.apexHits | 0;
       X.fights++; X.hits += hits; if ((duel._apexN | 0) >= 2) X.again++;   // 第 I 波：翻面再發動（同一場第二次）
@@ -917,7 +929,8 @@ function sparStatsOf(SP, A, recs, n) {
 }
 function printSpar(rows) {
   const X = EN.sparCfg(C), f1 = x => x == null ? '—' : x.toFixed(1), f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en');
-  const addTx = Array.isArray(X.posAdd) ? '照位數走 ' + X.posAdd.map(k => '第 ' + k[0] + ' 位 +' + k[1]).join('、') : '＋' + X.posAdd;
+  const tAdd = EN.sparTierAt ? EN.sparTierAt(X, TIER) : 0;   // 合併審查 F2：試煉第 k 階、第 tierFrom 位起再多幾位（encounter.tierAdd；第 0 階 0＝這行字跟以前一樣）
+  const addTx = (Array.isArray(X.posAdd) ? '照位數走 ' + X.posAdd.map(k => '第 ' + k[0] + ' 位 +' + k[1]).join('、') : '＋' + X.posAdd) + (tAdd ? '、試煉第 ' + TIER + ' 階第 ' + X.tierFrom + ' 位起再 ' + (tAdd > 0 ? '+' : '') + tAdd : '');
   console.log(`\n### 切磋（活店第二階段；--enc on、--enc-policy ${SPAR_POL}、${SPAR_REW === 'bag' ? '包包' : '唱片櫃'}模式；第 ${X.from} 位起、每輪 ${X.p}、一般客人位、短局 ${X.short}、等效位數${addTx}（熟客出自己 7 張、星數照${X.deckAt === 'pos' ? '第幾位' : X.deckAt === 'base' ? ' pos＋off' : '等效位數'}補）${X.ace ? '、帶王牌' : ''}；每趟平均）\n`);
   console.log('| 策略 | 流程 | 邀請／趟（每 10 位，第 6 位起） | 接受率 | 打 | 勝率 | 一場幾手（KO／比聲望條） | 收牌／拿錢（每趟） | 錢／趟（占總收入） | 被讀／手（主線同位數；比） | 切磋手數÷主線手數 | 第 1–5 位／菁英藏家／一輪兩次 | 連玩 20 趟收進唱片櫃（熟客牌） |');
   console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|');
@@ -1060,7 +1073,7 @@ if (LOT_ON) report.lot = EN.lotCfg(C);                                   // 第 
 if (BROWSE < 16) report.browse = BROWSE;
 if (SEEDS) report.seeds = Object.assign({}, SEEDS, { example: seedsFor(0) });
 if (TALENT) report.talent = TALENT;                                        // 第 D 波（沒給＝JSON 跟以前一樣）
-if (FAC) report.fac = { levelEvery: C.factions.levelEvery, fx: Object.fromEntries(TIERS.map(t => [t, C.factions[t].fx])), ...(FACFX ? { facfx: FACFX } : {}), ...(APEX ? { apexSwap: C.factions.apexSwap } : {}) };   // 第 D 波棒二
+if (FAC) report.fac = { levelEvery: C.factions.levelEvery, fx: Object.fromEntries(TIERS.map(t => [t, C.factions[t].fx])), ...(FACFX ? { facfx: FACFX } : {}), ...(APEX ? { apexSwap: C.factions.apexSwap } : {}), ...(FACTAL_FOR ? { factal: Object.fromEntries(TIERS.map(t => [t, FACTAL_FOR(t)])) } : {}) };   // 第 D 波棒二；棒三 --factal
 if (LADDER) report.ladder = LADDER;
 if (POSMAX !== 60) report.posmax = POSMAX;
 if (I0) report.i0 = I0;
@@ -1162,10 +1175,11 @@ if (MODE === 'all' || MODE === 'runs') {
   if (ENC_ON) printEnc(rows);                                            // 第 I 波翻面（--encore off 不印）
 
   if (FAC) {                                                             // 第 D 波棒二：流派被動（--fac；客人場，序章沒有）
-    const FZ = { full: '整張', borrow: '借', underdog: '以小搏大', crit: '拆穿', crit2: '爆擊', heal: '回聲望', leech: '吸血', loseCost: '比星輸', cCost: '被剋', tieCost: '平手', thorn: '反傷', cut: '少扣' };
+    const FZ = { full: '整張', borrow: '借', underdog: '以小搏大', crit: '拆穿', crit2: '爆擊', heal: '回聲望', leech: '吸血', loseCost: '比星輸', cCost: '被剋', tieCost: '平手', thorn: '反傷', cut: '少扣',
+      spine: '刺蝟', insider: '圈內人', deep: '深耕回' };
     const own = ACE_T ? FAC_OWN[ACE_T] : [].concat(...Object.values(FAC_OWN)), pk = {};
     for (const t of TIERS) for (const p of (C.factions[t] && C.factions[t].picks) || []) pk[p.id] = p.name;
-    console.log(`\n流派被動（${ACE_T ? C.factions[ACE_T].name : '三派輪流'}${NOFACPICK ? '；--nofacpick 本派選項不出' : '；本派選項每 ' + C.factions.levelEvery + ' 級'}${FACFX ? '；--facfx ' + JSON.stringify(FACFX) : ''}${APEX ? '；--apex 同開：換一格 ' + (C.factions.apexSwap && C.factions.apexSwap.on !== false ? '開' : '關（只標示）') : ''}；客人場每場平均觸發幾手；本派選項＝每趟拿到的比例）：\n`);
+    console.log(`\n流派被動（${ACE_T ? C.factions[ACE_T].name : '三派輪流'}${NOFACPICK ? '；--nofacpick 本派選項不出' : '；本派選項每 ' + C.factions.levelEvery + ' 級'}${FACFX ? '；--facfx ' + JSON.stringify(FACFX) : ''}${APEX ? '；--apex 同開：換一格 ' + (C.factions.apexSwap && C.factions.apexSwap.on !== false ? '開' : '關（只標示）') : ''}${FACTAL_FOR ? '；派樹 ' + (ACE_T ? JSON.stringify(FACTAL_FOR(ACE_T)) : FACTAL_ARG) : ''}；客人場每場平均觸發幾手（深耕回＝每場多回幾聲望）；本派選項＝每趟拿到的比例）：\n`);
     console.log('| 策略 | 流程 | 場數 | 每場觸發 ' + FAC_KEYS.map(k => FZ[k]).join('／') + ' | 被動或代價（F4） | 本派選項 |');
     console.log('|---|---|---|---|---|---|');
     for (const x of rows) { const F = x.fac; if (!F) continue; const pf = F.perFight;

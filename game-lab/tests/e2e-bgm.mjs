@@ -211,6 +211,10 @@ async function runSize(browser, w, h) {
     const { ctx, page } = await boot(browser, w, h, { dpr: 2 });
     try {
       await waitCalls(page, 1, 4000); await sleep(200);
+      // #4 第一首字卡：規則是「鏡頭停了、擺得下才出」（ui npOpen／npTry，等滿 popWait 8 秒為止）——375 主線客人走進來時候選位都撞到他，
+      //   要等他站定（night 後 0.5～1.8 秒，看第一首跟他走路的時間差；合併後測試 post/diag）。快照等字卡真的出來（最多 5 秒，比規則的 8 秒嚴），不是固定睡 200 ms
+      const t4 = Date.now(), up4 = await page.waitForFunction(() => window.__lab.bgm().popOpen, null, { timeout: 5000, polling: 50 }).then(() => true, () => false);
+      const ms4 = Date.now() - t4;
       const s0 = await st(page), bag = s0.B.pl ? s0.B.pl.bag : [], n = bag.length, c0 = await card(page, s0.calls[0] && s0.calls[0].id);
       const g4 = await geoNp(page);                         // 第一首泡泡的位置（#4）
       // 佇列該有的（測試自己算）：包包裡有試聽、不是三派預設王牌、不是這一趟的王牌、不是只在 ?apex=1 才有的試做卡
@@ -257,7 +261,7 @@ async function runSize(browser, w, h) {
       if (ciOpen) await closeInfo(page);
       const clash4 = npClash(g4);
       if (want(4)) record(4, size, pop1 && !clash4 && popLine(g4) && !s1.pop && s1.ic && /\bon\b/.test(s1.ic.cls) && !s2.pop && s4.pop && s4.pop.cid === id4 && !s5.pop && tIc && tIc.top && s6.pop && popThru && tPop && tPop.top && ciOpen && ciId === s6.pop.cid,
-        `第一首展開 ${pop1}（${s0.pop && s0.pop.at}；${clash4 ? '撞到 ' + clash4 : '在鏡頭裡、不蓋面板／名牌／小熱點 ' + g4.hots.length + ' 個'}；寬 ${Math.round(g4.w)}、一行截斷 ${popLine(g4)}）→ 6 秒後收 ${!s1.pop}；` +
+        `第一首展開 ${pop1}（${up4 ? '等 ' + (200 + ms4) + ' ms' : '5 秒內沒出'}；${s0.pop && s0.pop.at}；${clash4 ? '撞到 ' + clash4 : '在鏡頭裡、不蓋面板／名牌／小熱點 ' + g4.hots.length + ' 個'}；寬 ${Math.round(g4.w)}、一行截斷 ${popLine(g4)}）→ 6 秒後收 ${!s1.pop}；` +
         `第二首（30 秒後）不展開 ${!s2.pop}；隔 2 分鐘換歌展開 ${!!s4.pop}；點 ♪ 展開 ${!!s6.pop}（♪ 在最上層 ${tIc && tIc.top}）；泡泡不擋點擊 ${popThru}；泡泡開著再點 ♪＝唱片資訊 ${ciOpen}（${ciId}）`);
       if (want(11)) record(11, size, nowOk, `櫃檯唱盤 ${s0.nowKey}＝正在放 ${s0.cur}；熱點 ${s0.nowAct}`);
       // #3 收一張新的 → 下一首就是它
