@@ -6,7 +6,8 @@
 //     `git show <ref>:game-lab/<檔>` 回應（跟 game-lab/ 同源＝localStorage 共用；同 e2e-career 的 CAREER_PREV）
 //
 // 施工期間上場制要 ?lineup=1 才開（C.lineup.on／C.wear.on 出貨 false）；這支一律帶 ?lineup=1，第 1 項另外確認沒帶＝一字不變。
-// 數字照 content（上場制第 lineupFrom＝11 位那一輪起＝第 3 輪；CONTRACT §9 施工量過從 6 改 11，§5.9「打到第 5 位」「第 6–10 位」跟著是「第 10 位」「第 6–10 位」）。
+// 數字照 content（上場制第 lineupFrom＝LF 位那一輪起；CONTRACT §9 施工量過從 6 改 11，11-22 post〔合併棒三後試煉階級不變簡單〕再改 16＝第 4 輪、耐聽 G＝5 格；
+//   位數一律寫成 LF±k、出牌次數寫成 G±k：§5.9「打到第 5 位」「第 6–10 位」＝「第 LF−1 位」「第 LF−5〜LF−1 位」）。以下說明裡的位數照 LF＝11 時寫的，實際 +5。
 //   1  旗標關（沒 ?lineup=1；content 出貨改開之後，頁面一載入就把 C.lineup.on／C.wear.on 蓋回 false＝模擬關著）：第 11 位來客畫面沒有上場面板、沒有上場列；run 沒有上場鍵；換輪攤位逛完直接回來客（逐字現況）
 //   2  換輪沒攤位（跳到第 11 位＝lineupDue）：上場面板一進來就開、預設五張＝engine.lineupPolicy、按「就這五張」（真點）→ 上場列五張、
 //      開打後手牌恰好是那五張（＋王牌）、view.lineup；出一手之後手牌還是那五張、沒有滑入動畫（Element.animate 沒有 translateY(40px)）。
@@ -47,6 +48,8 @@ const QL = (x = '') => Q('&fast=1&lineup=1' + x);
 const inter = (a, b) => !!a && !!b && a.left < b.right - 0.5 && b.left < a.right - 0.5 && a.top < b.bottom - 0.5 && b.top < a.bottom - 0.5;
 const fill = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
 const sorted = a => (a || []).slice().sort();
+// 上場制從第 LF 位那一輪起（＝C.lineup.from／firstRunFrom）、耐聽 G 格（＝C.wear.grooves）：第 7 項驗 content 跟這兩個數一樣（11-22 post：11→16、7→5）
+const LF = 16, G = 5;
 
 // 頁面一載入就記：吐司（.lb-toast）、手牌的滑入動畫（duel.js renderHand slideNew：.cvw 的 Element.animate translateY(40px)）
 async function watch(page) {
@@ -76,7 +79,7 @@ async function forceOff(page) {
 async function start(page, o = {}) {
   const q = o.q || QL();
   await openTitle(page, q);
-  await seedRun(page, Object.assign({ ace: 'pearl', pos: o.pos || 11 }, o.seed || {}));
+  await seedRun(page, Object.assign({ ace: 'pearl', pos: o.pos || LF }, o.seed || {}));
   await C(page, o => {
     const s = JSON.parse(localStorage.getItem('dipGameLab_v1')), Cn = window.DipLabContent;
     if (o.extra) { const ex = Object.keys(Cn.cards).filter(id => !Cn.cards[id].tier && !Cn.cards[id].pool && s.run.bag.indexOf(id) < 0).slice(30, 30 + o.extra); s.run.bag.push(...ex); }
@@ -231,12 +234,12 @@ async function runSize(browser, w, h) {
     try {
       await start(page, { q: Q('&fast=1') });
       const s = await C(page, () => { const r = window.__lab.run; return { panel: !!document.querySelector('.lb-sheet.lineup'), row: !!document.querySelector('.lb-lurow'), keys: ['lineup', 'bench', 'lineupFresh', 'lineupDue', 'wear', 'rested', 'lineupFrom'].filter(k => k in r), go: !!document.querySelector('[data-a=go]') }; });
-      // 換輪攤位（第 16 位）：pending 沒有 lineup 鍵；逛完（今天不逛了）直接回來客、沒有面板
-      const st = await stallAt(page, 16); await sleep(1200);
+      // 換輪攤位（第 LF+5 位）：pending 沒有 lineup 鍵；逛完（今天不逛了）直接回來客、沒有面板
+      const st = await stallAt(page, LF + 5); await sleep(1200);
       const out = await stallOut(page);
       const s2 = await C(page, () => { const r = window.__lab.run; return { pend: !!r.pending, panel: !!document.querySelector('.lb-sheet.lineup'), row: !!document.querySelector('.lb-lurow'), keys: ['lineup', 'bench', 'lineupFresh', 'lineupDue', 'wear', 'rested', 'lineupFrom'].filter(k => k in r) }; });
       record(1, size, !s.panel && !s.row && !s.keys.length && s.go && !st.lu && out === 'night' && !s2.pend && !s2.panel && !s2.row && !s2.keys.length && !errs(page).length,
-        `旗標關：面板 ${s.panel}、上場列 ${s.row}、上場鍵 [${s.keys}]、下一位 ${s.go}；第 16 位攤位 pending.lineup ${st.lu}、逛完 ${out}、面板 ${s2.panel}、上場列 ${s2.row}、上場鍵 [${s2.keys}]；${errTxt(page)}`);
+        `旗標關：面板 ${s.panel}、上場列 ${s.row}、上場鍵 [${s.keys}]、下一位 ${s.go}；第 ${LF + 5} 位攤位 pending.lineup ${st.lu}、逛完 ${out}、面板 ${s2.panel}、上場列 ${s2.row}、上場鍵 [${s2.keys}]；${errTxt(page)}`);
     } catch (e) { record(1, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -244,7 +247,7 @@ async function runSize(browser, w, h) {
   if (want(2)) {
     const { ctx, page } = await newPage(browser, w, h); await watch(page);
     try {
-      await start(page, { pos: 11 });
+      await start(page, { pos: LF });
       const open = await panelOpen(page);
       const pol = await C(page, () => window.DipLabEngine.lineupPolicy(window.__lab.run, window.DipLabContent).ids);
       const lay = await C(page, () => {
@@ -286,9 +289,9 @@ async function runSize(browser, w, h) {
   if (want(3)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await start(page, { pos: 12, extra: 4 });
+      await start(page, { pos: LF + 1, extra: 4 });
       if (await panelOpen(page)) await commit(page);
-      await C(page, () => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; window.__lab.jump(16); E.stallSession(r, Cn); window.__lab.money(r.money); window.__lab.go('night'); });
+      await C(page, n => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; window.__lab.jump(n); E.stallSession(r, Cn); window.__lab.money(r.money); window.__lab.go('night'); }, LF + 5);
       await sleep(1200);
       const cs = await clearStall(page, { ms: 12000, keepLineup: true });   // 修正棒 11-22：攤位照舊收掉（pending 清掉），lineupDue → 來客畫面開上場面板（keepLineup：不要自動帶過）
       const open = await panelOpen(page);
@@ -315,9 +318,9 @@ async function runSize(browser, w, h) {
   if (want(4)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await start(page, { pos: 12 });
+      await start(page, { pos: LF + 1 });
       if (await panelOpen(page)) await commit(page);
-      await C(page, () => { const r = window.__lab.run; r.wear[r.lineup[0]] = { g: 0, n: 1 }; for (let i = 1; i < 5; i++) r.wear[r.lineup[i]] = { g: 6, n: 0 }; window.__lab.money(r.money); window.__lab.go('night'); });
+      await C(page, G => { const r = window.__lab.run; r.wear[r.lineup[0]] = { g: 0, n: 1 }; for (let i = 1; i < 5; i++) r.wear[r.lineup[i]] = { g: G - 1, n: 0 }; window.__lab.money(r.money); window.__lab.go('night'); }, G);
       await sleep(900);
       const row = await C(page, () => ({ wn: document.querySelectorAll('.lb-lurow .lu-wn').length, al: document.querySelectorAll('.lb-lurow .lu-al').length }));
       await tapReady(page, '[data-a=go]'); await duelReady(page, 25000); await sleep(500);
@@ -347,7 +350,7 @@ async function runSize(browser, w, h) {
   if (want(5)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await start(page, { pos: 12, extra: 3 });
+      await start(page, { pos: LF + 1, extra: 3 });
       if (await panelOpen(page)) await commit(page);
       const sold = await C(page, () => {
         const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent;
@@ -369,7 +372,7 @@ async function runSize(browser, w, h) {
   if (want(6)) {
     const { ctx, page } = await newPage(browser, w, h); await watch(page);
     try {
-      await start(page, { pos: 12, extra: 3, seed: { relics: ['sleeve'] } });
+      await start(page, { pos: LF + 1, extra: 3, seed: { relics: ['sleeve'] } });
       const open = await panelOpen(page);
       const slots = await C(page, () => document.querySelectorAll('.lb-sheet.lineup .lu-slot').length);
       await commit(page);
@@ -393,13 +396,13 @@ async function runSize(browser, w, h) {
     } catch (e) { record(6, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
-  // ---- 7 第 6–10 位整包上場、不算耐聽；真的打完第 10 位 → 攤位 → 上場面板 → 第 11 位手牌＝那五張
+  // ---- 7 第 LF−5〜LF−1 位整包上場、不算耐聽；真的打完第 LF−1 位 → 攤位 → 上場面板 → 第 LF 位手牌＝那五張
   if (want(7)) {
     const { ctx, page } = await newPage(browser, w, h); await watch(page);
     try {
-      await start(page, { pos: 6 });
+      await start(page, { pos: LF - 5 });
       const fr = await C(page, () => { const E = window.DipLabEngine, Cn = window.DipLabContent;
-        return { first: E.newRun(Cn, { seedKey: 'x', runNo: 1, ace: 'pearl', firstRun: true }).lineupFrom, second: E.newRun(Cn, { seedKey: 'x', runNo: 2, ace: 'pearl' }).lineupFrom, want1: Cn.lineup.firstRunFrom, want2: Cn.lineup.from, run: window.__lab.run.lineupFrom }; });
+        return { grooves: Cn.wear.grooves, wfrom: Cn.wear.from, first: E.newRun(Cn, { seedKey: 'x', runNo: 1, ace: 'pearl', firstRun: true }).lineupFrom, second: E.newRun(Cn, { seedKey: 'x', runNo: 2, ace: 'pearl' }).lineupFrom, want1: Cn.lineup.firstRunFrom, want2: Cn.lineup.from, run: window.__lab.run.lineupFrom }; });
       const n6 = await C(page, () => ({ panel: !!document.querySelector('.lb-sheet.lineup'), row: !!document.querySelector('.lb-lurow'), due: window.__lab.run.lineupDue, lineup: window.__lab.run.lineup, bag: window.__lab.run.bag.length }));
       await goFight(page); await sleep(400);
       const d6 = await C(page, () => { const v = window.__lab.duel(), d = window.__lab.rawDuel(); window.__slides = [];
@@ -411,8 +414,8 @@ async function runSize(browser, w, h) {
       await toReward(page);
       const w6 = await C(page, () => ({ wear: window.__lab.run.wear, worn: (window.__lab.run.pending || {}).worn || null }));
       await passLoot(page);
-      // 第 10 位（第 2 輪藏家）：打完 → 換輪 → 攤位 → 上場那一步
-      await C(page, () => window.__lab.jump(10)); await waitScreen(page, 'night'); await sleep(1200);
+      // 第 LF−1 位（上場制前一輪的藏家）：打完 → 換輪 → 攤位 → 上場那一步
+      await C(page, n => window.__lab.jump(n), LF - 1); await waitScreen(page, 'night'); await sleep(1200);
       const n10 = await C(page, () => ({ panel: !!document.querySelector('.lb-sheet.lineup'), row: !!document.querySelector('.lb-lurow') }));
       await goFight(page); await sleep(400);
       const d10 = await C(page, () => { const v = window.__lab.duel(), d = window.__lab.rawDuel(); return { lineup: !!v.lineup, wearOn: !!d.wearOn }; });
@@ -430,13 +433,13 @@ async function runSize(browser, w, h) {
       const id11 = await C(page, () => window.__lab.duel().hand[2].id);
       await playId(page, id11); await sleep(300);
       const h1 = await C(page, () => { const v = window.__lab.duel(); return { ids: v ? v.hand.filter(Boolean).map(c => c.id).sort() : null, slides: window.__slides.slice() }; });
-      const okFrom = fr.first === fr.want1 && fr.second === fr.want2 && fr.run === fr.want2 && fr.want1 === 11;
+      const okFrom = fr.first === fr.want1 && fr.second === fr.want2 && fr.run === fr.want2 && fr.want1 === LF && fr.want2 === LF && fr.wfrom === LF && fr.grooves === G;
       const ok6 = !n6.panel && !n6.row && !n6.due && n6.lineup === null && !d6.lineup && !d6.wearOn && !d6.plays && d6.pool === n6.bag && sl6.length >= 1 && J(w6.wear) === '{}' && !w6.worn;
-      const ok10 = !n10.panel && !n10.row && !d10.lineup && !d10.wearOn && out === 'panel' && p0.pos === 11 && !p0.pend && p0.due && J(p0.panel) === J(sorted(p0.pol)) && p0.slots.length === 5;
+      const ok10 = !n10.panel && !n10.row && !d10.lineup && !d10.wearOn && out === 'panel' && p0.pos === LF && !p0.pend && p0.due && J(p0.panel) === J(sorted(p0.pol)) && p0.slots.length === 5;
       const ok11 = J(r11.lineup) === J(ids0) && !r11.pend && h0.lineup && h0.wearOn && J(h0.ids) === J(sorted(ids0)) && J(h1.ids) === J(sorted(ids0)) && !h1.slides.length;
       record(7, size, okFrom && ok6 && ok10 && ok11 && !errs(page).length,
-        `lineupFrom 新帳號 ${fr.first}／第二趟 ${fr.second}（content ${fr.want1}／${fr.want2}）；第 6 位 面板 ${n6.panel}、上場列 ${n6.row}、手牌池 ${d6.pool}/${n6.bag}（整包）、view.lineup ${d6.lineup}、wearOn ${d6.wearOn}、滑入 ${sl6.length}（對照組）、` +
-        `出牌後 wear ${J(w6.wear)}；第 10 位 面板 ${n10.panel}、wearOn ${d10.wearOn}；打完 → 攤位收攤 → ${out}（第 ${p0.pos} 位、pending ${p0.pend}、lineupDue ${p0.due}）、預設＝lineupPolicy ${J(p0.panel) === J(sorted(p0.pol))}、5 格 ${p0.slots.length}；` +
+        `lineupFrom 新帳號 ${fr.first}／第二趟 ${fr.second}（content ${fr.want1}／${fr.want2}、測試 LF ${LF}；耐聽 ${fr.grooves} 格、測試 G ${G}）；第 ${LF - 5} 位 面板 ${n6.panel}、上場列 ${n6.row}、手牌池 ${d6.pool}/${n6.bag}（整包）、view.lineup ${d6.lineup}、wearOn ${d6.wearOn}、滑入 ${sl6.length}（對照組）、` +
+        `出牌後 wear ${J(w6.wear)}；第 ${LF - 1} 位 面板 ${n10.panel}、wearOn ${d10.wearOn}；打完 → 攤位收攤 → ${out}（第 ${p0.pos} 位、pending ${p0.pend}、lineupDue ${p0.due}）、預設＝lineupPolicy ${J(p0.panel) === J(sorted(p0.pol))}、5 格 ${p0.slots.length}；` +
         `就這五張 → 第 ${r11.pos} 位手牌＝上場 ${J(h0.ids) === J(sorted(ids0))}、wearOn ${h0.wearOn}、出一手後 ${J(h1.ids) === J(sorted(ids0))}、滑入 ${h1.slides.length}；${errTxt(page)}`);
     } catch (e) { record(7, size, false, 'exception ' + e.message); }
     await ctx.close();
@@ -445,23 +448,23 @@ async function runSize(browser, w, h) {
   if (want(8)) {
     const { ctx, page } = await newPage(browser, w, h); await watch(page);
     try {
-      await start(page, { pos: 12, bag: 6 });
+      await start(page, { pos: LF + 1, bag: 6 });
       const quietTx = await C(page, () => window.DipLabContent.lineup.ui.quiet);
       await sleep(1500);
       const a = await C(page, () => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent;
         return { bag: r.bag.length, panel: !!document.querySelector('.lb-sheet.lineup'), lineup: r.lineup, due: r.lineupDue, row: !!document.querySelector('.lb-lurow'), go: !!document.querySelector('[data-a=go]') }; });
       const t1 = await toasts(page);
-      // 攤位收攤之後（換輪＝第 16 位）：lineupQuiet → 逛完不出面板、吐司、上場＝lineupPolicy
+      // 攤位收攤之後（換輪＝第 LF+5 位）：lineupQuiet → 逛完不出面板、吐司、上場＝lineupPolicy
       await C(page, () => { window.__toasts = []; });
-      const st = await stallAt(page, 16); await sleep(1200);
+      const st = await stallAt(page, LF + 5); await sleep(1200);
       const pol16 = await C(page, () => window.DipLabEngine.lineupPolicy(window.__lab.run, window.DipLabContent).ids.slice());
       const out = await stallOut(page);
       await sleep(1200);
       const b = await C(page, () => { const r = window.__lab.run; return { pend: !!r.pending, panel: !!document.querySelector('.lb-sheet.lineup'), lineup: r.lineup, due: r.lineupDue }; });
       const t2 = await toasts(page);
-      // 包包 6 張但有一張聽膩 → 照樣出面板（第 21 位換輪）
+      // 包包 6 張但有一張聽膩 → 照樣出面板（第 LF+10 位換輪）
       await C(page, () => { const r = window.__lab.run; r.wear[r.bag[r.bag.length - 1]] = { g: 0, n: 1 }; window.__lab.money(r.money); });
-      const st3 = await stallAt(page, 21); await sleep(1200);
+      const st3 = await stallAt(page, LF + 10); await sleep(1200);
       const out3 = await stallOut(page);
       const pol = a.lineup;
       const okA = a.bag === 6 && !a.panel && Array.isArray(a.lineup) && a.lineup.length === 5 && !a.due && a.row && a.go && t1.some(x => x.includes(quietTx));
@@ -473,23 +476,23 @@ async function runSize(browser, w, h) {
     } catch (e) { record(8, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
-  // ---- 9 真的出牌：6 次黃點、7 次 −1、14 次 −2、21 次不再扣；重新整理照留
+  // ---- 9 真的出牌：G−1 次黃點、G 次 −1、2G 次 −2、3G 次不再扣；重新整理照留（位數 LF+1〜LF+6；G＝5：4／5／10／15 次）
   if (want(9)) {
     const { ctx, page } = await newPage(browser, w, h); await watch(page);
     try {
-      await start(page, { pos: 12 });
+      await start(page, { pos: LF + 1 });
       if (await panelOpen(page)) await commit(page);
       const X = await C(page, () => window.__lab.run.lineup[0]);
       const base = await C(page, X => { const c = window.DipLabContent.cards[X] || window.DipLabEngine.cardOf(window.DipLabContent, X), E = window.DipLabEngine; const a = E.topAttr(c); return { a, s: c[a], album: c.album }; }, X);
       await C(page, () => window.__lab.force({ kind: 'counter', toE: 1, toP: 0 }));
       const wearOf = () => C(page, X => window.__lab.run.wear[X] || null, X);
       const steps = [];
-      // 第 12 位：出 6 次（打滿 6 手、比聲望你贏）
-      const f1 = await fightPlays(page, X, 6); const w1 = await wearOf(); const r1 = await rewardWorn(page);
-      steps.push(`12 位出 ${f1.played} 次 → ${J(w1)}、小字 ${r1.worn ? 'X' : '無'}`);
+      // 第 LF+1 位：出 G−1 次（剩下照 forceWin）
+      const f1 = await fightPlays(page, X, G - 1); const w1 = await wearOf(); const r1 = await rewardWorn(page);
+      steps.push(`${LF + 1} 位出 ${f1.played} 次 → ${J(w1)}、小字 ${r1.worn ? 'X' : '無'}`);
       await passLoot(page); await toNight(page);
       const al = await C(page, X => { const r = window.__lab.run, k = r.lineup.indexOf(X), m = document.querySelectorAll('.lb-lurow .cs .lu-mini')[k]; return !!(m && m.querySelector('.lu-al')); }, X);
-      // 第 13 位：手牌黃點 → 出第 7 次 → 聽膩一層
+      // 第 LF+2 位：手牌黃點 → 出第 G 次 → 聽膩一層
       await goFight(page); await sleep(300);
       const hAl = await C(page, X => { const t = document.querySelector(`.dl .hand .tile[data-card="${X.replace(/"/g, '\\"')}"]`); return { al: !!(t && t.classList.contains('almost') && t.querySelector('.al')), worn: !!(t && t.classList.contains('worn')) }; }, X);
       await choosable(page);
@@ -498,10 +501,10 @@ async function runSize(browser, w, h) {
       await toReward(page);
       const w2 = await wearOf(); const r2 = await rewardWorn(page);
       const got1 = await C(page, ([X, n]) => window.DipLabContent.wear.ui.got.replace('{album}', window.DipLabContent.cards[X] ? window.DipLabContent.cards[X].album : '').replace('{n}', n), [X, 1]);
-      steps.push(`13 位黃點 ${hAl.al} → 第 7 次 → ${J(w2)}、小字「${r2.tx.slice(0, 30)}」`);
+      steps.push(`${LF + 2} 位黃點 ${hAl.al} → 第 ${G} 次 → ${J(w2)}、小字「${r2.tx.slice(0, 30)}」`);
       await passLoot(page); await toNight(page);
       const b1 = await bagTile(page, X); await closeBag(page);
-      // 第 14 位：手牌紅字 −1、主打軸 −1 星；屬性鈕紅字不蓋星數；出 6 次
+      // 第 LF+3 位：手牌紅字 −1、主打軸 −1 星；屬性鈕紅字不蓋星數；出 G−1 次
       await goFight(page); await sleep(300);
       const h14 = await C(page, ([X, a]) => {
         const v = window.__lab.duel(), c = v.hand.find(x => x && x.id === X), t = document.querySelector(`.dl .hand .tile[data-card="${X.replace(/"/g, '\\"')}"]`);
@@ -513,42 +516,44 @@ async function runSize(browser, w, h) {
         const R = e => { const r = e.getBoundingClientRect(); return { left: r.left, right: r.right, top: r.top, bottom: r.bottom }; };
         return { a: b.getAttribute('data-a'), tx: b.textContent, wn: R(b.querySelector('.wn')), key: R(b.querySelector('b.key')) };
       });
-      let pl = 0; for (let j = 0; j < 6; j++) { if ((await playId(page, X)) < 0) break; pl++; }
+      let pl = 0; for (let j = 0; j < G - 1; j++) { if ((await playId(page, X)) < 0) break; pl++; }
+      await C(page, () => { if (window.__lab.screen() === 'duel' && window.__lab.rawDuel() && !window.__lab.rawDuel().over) window.__lab.forceWin(); });
       await toReward(page);
       const w3 = await wearOf(); const r3 = await rewardWorn(page);
-      steps.push(`14 位 −${h14.worn}（${base.a} ${base.s}→${h14.star}）出 ${pl} 次 → ${J(w3)}、小字 ${r3.worn ? 'X' : '無'}`);
+      steps.push(`${LF + 3} 位 −${h14.worn}（${base.a} ${base.s}→${h14.star}）出 ${pl} 次 → ${J(w3)}、小字 ${r3.worn ? 'X' : '無'}`);
       await passLoot(page); await toNight(page);
-      // 第 15 位（藏家）：出第 14 次 → −2、7 點全暗
+      // 第 LF+4 位（藏家）：出第 2G 次 → −2、G 點全暗
       const f4 = await fightPlays(page, X, 1); const w4 = await wearOf(); const r4 = await rewardWorn(page);
-      steps.push(`15 位出 ${f4.played} 次 → ${J(w4)}、小字「${r4.tx.slice(0, 30)}」`);
+      steps.push(`${LF + 4} 位出 ${f4.played} 次 → ${J(w4)}、小字「${r4.tx.slice(0, 30)}」`);
       await passLoot(page);
       const out = await stallOut(page);            // 換輪：X 這一輪有上場＝不是坐板凳，聽膩照留
       const pt = await panelTile(page, X);
       const put = await panelPut(page, X);
       await commit(page);
-      // 第 16 位：−2、沒有黃點（最多層）；出 6 次；第 17 位出 1 次＝第 21 次：不再扣
+      // 第 LF+5 位：−2、沒有黃點（最多層）；出 G−1 次；第 LF+6 位出 1 次＝第 3G 次：不再扣
       await goFight(page); await sleep(300);
       const h16 = await C(page, ([X, a]) => { const v = window.__lab.duel(), c = v.hand.find(x => x && x.id === X), t = document.querySelector(`.dl .hand .tile[data-card="${X.replace(/"/g, '\\"')}"]`);
         return { worn: c && c.worn, star: c && c[a], wn: t && t.querySelector('.wn') ? t.querySelector('.wn').textContent : '', al: !!(t && t.querySelector('.al')) }; }, [X, base.a]);
-      pl = 0; for (let j = 0; j < 6; j++) { if ((await playId(page, X)) < 0) break; pl++; }
+      pl = 0; for (let j = 0; j < G - 1; j++) { if ((await playId(page, X)) < 0) break; pl++; }
+      await C(page, () => { if (window.__lab.screen() === 'duel' && window.__lab.rawDuel() && !window.__lab.rawDuel().over) window.__lab.forceWin(); });
       await toReward(page);
       const w5 = await wearOf(); const r5 = await rewardWorn(page);
       await passLoot(page); await toNight(page);
       const f6 = await fightPlays(page, X, 1); const w6 = await wearOf(); const r6 = await rewardWorn(page);
-      steps.push(`16 位 −${h16.worn}（${base.s}→${h16.star}）出 ${pl} 次 → ${J(w5)}；17 位出 ${f6.played} 次 → ${J(w6)}、小字 ${r6.worn ? 'X' : '無'}`);
+      steps.push(`${LF + 5} 位 −${h16.worn}（${base.s}→${h16.star}）出 ${pl} 次 → ${J(w5)}；${LF + 6} 位出 ${f6.played} 次 → ${J(w6)}、小字 ${r6.worn ? 'X' : '無'}`);
       await passLoot(page); await toNight(page);
       await C(page, () => window.__lab.force(null));
       // 重新整理：聽膩、格數照留；上場列 −2
       await reload(page);
       const rl = await C(page, X => { const r = window.__lab.run, k = r.lineup.indexOf(X), m = document.querySelectorAll('.lb-lurow .cs .lu-mini')[k]; return { wear: r.wear[X], wn: m && m.querySelector('.lu-wn') ? m.querySelector('.lu-wn').textContent : '' }; }, X);
       const b2 = await bagTile(page, X); await closeBag(page);
-      const okA = J(w1) === J({ g: 6, n: 0 }) && !r1.worn && al && hAl.al && !hAl.worn;
-      const okB = J(w2) === J({ g: 0, n: 1 }) && J(r2.worn) === J([{ id: X, n: 1 }]) && r2.full.includes(got1) && b1.on === 7 && b1.dots === 7 && b1.wn === '−1' && !b1.clash;
+      const okA = J(w1) === J({ g: G - 1, n: 0 }) && !r1.worn && al && hAl.al && !hAl.worn;
+      const okB = J(w2) === J({ g: 0, n: 1 }) && J(r2.worn) === J([{ id: X, n: 1 }]) && r2.full.includes(got1) && b1.on === G && b1.dots === G && b1.wn === '−1' && !b1.clash;
       const okC = h14.worn === 1 && h14.star === Math.max(1, base.s - 1) && h14.axis === base.a && h14.wn === '−1' && h14.sk && !h14.al && !!chip && chip.a === base.a && /−1/.test(chip.tx) && !inter(chip.wn, chip.key) && pl >= 0 &&
-        J(w3) === J({ g: 6, n: 1 }) && !r3.worn;
-      const okD = J(w4) === J({ g: 7, n: 2 }) && J(r4.worn) === J([{ id: X, n: 2 }]) && r4.tx.includes('（−2）') && out === 'panel' && !!pt && pt.on === 0 && pt.worn && pt.wn === '−2' && put;
-      const okE = h16.worn === 2 && h16.star === Math.max(1, base.s - 2) && h16.wn === '−2' && !h16.al && J(w5) === J({ g: 7, n: 2 }) && !r5.worn && J(w6) === J({ g: 7, n: 2 }) && !r6.worn;
-      const okF = J(rl.wear) === J({ g: 7, n: 2 }) && rl.wn === '−2' && b2.on === 0 && b2.wn === '−2' && !b2.clash;
+        J(w3) === J({ g: G - 1, n: 1 }) && !r3.worn;
+      const okD = J(w4) === J({ g: G, n: 2 }) && J(r4.worn) === J([{ id: X, n: 2 }]) && r4.tx.includes('（−2）') && out === 'panel' && !!pt && pt.on === 0 && pt.worn && pt.wn === '−2' && put;
+      const okE = h16.worn === 2 && h16.star === Math.max(1, base.s - 2) && h16.wn === '−2' && !h16.al && J(w5) === J({ g: G, n: 2 }) && !r5.worn && J(w6) === J({ g: G, n: 2 }) && !r6.worn;
+      const okF = J(rl.wear) === J({ g: G, n: 2 }) && rl.wn === '−2' && b2.on === 0 && b2.wn === '−2' && !b2.clash;
       record(9, size, okA && okB && okC && okD && okE && okF && !errs(page).length,
         `${steps.join('；')}；上場列黃點 ${al}；包包 −1 時亮 ${b1.on}/${b1.dots}、紅字不蓋星數 ${!b1.clash}；屬性鈕 ${chip && chip.a}「${chip && chip.tx}」不相交 ${chip && !inter(chip.wn, chip.key)}、斜紋 ${h14.sk}；` +
         `換輪面板 ${out} 亮 ${pt && pt.on}「${pt && pt.wn}」；重新整理 ${J(rl.wear)}「${rl.wn}」、包包亮 ${b2.on}；[A${okA ? '✓' : '✗'} B${okB ? '✓' : '✗'} C${okC ? '✓' : '✗'} D${okD ? '✓' : '✗'} E${okE ? '✓' : '✗'} F${okF ? '✓' : '✗'}]；${errTxt(page)}`);
@@ -559,7 +564,7 @@ async function runSize(browser, w, h) {
   if (want(10)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await start(page, { pos: 15, extra: 2 });
+      await start(page, { pos: LF + 4, extra: 2 });
       const open = await panelOpen(page);
       const ids = await C(page, () => { const r = window.__lab.run, L = window.DipLabEngine.lineupPolicy(r, window.DipLabContent).ids; return { X: r.bag.find(id => L.indexOf(id) < 0), Y: L[0] }; });
       await commit(page);
@@ -577,9 +582,9 @@ async function runSize(browser, w, h) {
       const b = await C(page, o => { const r = window.__lab.run; return { X: r.wear[o.X] || null, Y: r.wear[o.Y] || null, pos: r.pos }; }, ids);
       const px = await panelTile(page, ids.X), py = await panelTile(page, ids.Y);
       const ok = open && J(a.X) === J({ g: 3, n: 1 }) && J(a.Y) === J({ g: 2, n: 1 }) && a.rested && !a.inLu && !a.panel && bx.rest === restTx && bx.wn === '−1' && !by.rest &&
-        out === 'panel' && b.pos === 16 && b.X === null && J(b.Y) === J({ g: 2, n: 1 }) && !!px && px.on === 7 && !px.worn && !!py && py.worn && py.wn === '−1' && !errs(page).length;
-      record(10, size, ok, `板凳那張 ${J(a.X)}（rested ${a.rested}、上場 ${a.inLu}）重新整理照留；包包「${bx.rest}」${bx.wn}、上場那張休息標 ${by.rest ? 'X' : '無'}；打完第 15 位 → 換輪 ${out}（第 ${b.pos} 位）：` +
-        `板凳那張 ${J(b.X)}、面板亮 ${px && px.on}/7 −${px && px.worn ? 'X' : '0'}；上場那張 ${J(b.Y)}「${py && py.wn}」；${errTxt(page)}`);
+        out === 'panel' && b.pos === LF + 5 && b.X === null && J(b.Y) === J({ g: 2, n: 1 }) && !!px && px.on === G && !px.worn && !!py && py.worn && py.wn === '−1' && !errs(page).length;
+      record(10, size, ok, `板凳那張 ${J(a.X)}（rested ${a.rested}、上場 ${a.inLu}）重新整理照留；包包「${bx.rest}」${bx.wn}、上場那張休息標 ${by.rest ? 'X' : '無'}；打完第 ${LF + 4} 位 → 換輪 ${out}（第 ${b.pos} 位）：` +
+        `板凳那張 ${J(b.X)}、面板亮 ${px && px.on}/${G} −${px && px.worn ? 'X' : '0'}；上場那張 ${J(b.Y)}「${py && py.wn}」；${errTxt(page)}`);
     } catch (e) { record(10, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -587,7 +592,7 @@ async function runSize(browser, w, h) {
   if (want(11)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await start(page, { pos: 12 });
+      await start(page, { pos: LF + 1 });
       if (await panelOpen(page)) await commit(page);
       const X = await C(page, () => window.__lab.run.lineup[0]);
       await C(page, () => window.__lab.force({ kind: 'counter', toE: 1, toP: 0 }));
@@ -615,7 +620,7 @@ async function runSize(browser, w, h) {
   if (want(12)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
-      await start(page, { pos: 12, extra: 3, seed: { relics: ['sleeve'] } });
+      await start(page, { pos: LF + 1, extra: 3, seed: { relics: ['sleeve'] } });
       const open = await panelOpen(page);
       const mode = await C(page, () => window.DipLabContent.lineup.benchMode);
       await commit(page);
@@ -634,7 +639,7 @@ async function runSize(browser, w, h) {
       await C(page, () => window.__lab.forceWin());
       await toReward(page);
       // 樂歷 Lv3（run.lineupBonus 1、沒有側袋）：面板也是 6 格
-      await start(page, { pos: 12, extra: 3, patch: { lineupBonus: 1 } });
+      await start(page, { pos: LF + 1, extra: 3, patch: { lineupBonus: 1 } });
       const lv = await C(page, () => ({ bn: window.DipLabEngine.benchN(window.__lab.run, window.DipLabContent), slots: document.querySelectorAll('.lb-sheet.lineup .lu-slot').length, relic: window.__lab.run.relics.includes('sleeve') }));
       const ok = open && mode === 'worn' && s0.B.length === 1 && row.bh === row.want && row.cells === 1 &&
         s1.L.includes(s0.B[0]) && !s1.L.includes(s0.L[0]) && J(s1.B) === J([s0.L[0]]) && s1.auto === 1 && J(s1.hand) === J(sorted(s1.L)) && s1.hand.length === 5 &&
@@ -648,7 +653,7 @@ async function runSize(browser, w, h) {
   if (want(13)) {
     const { ctx, page } = await newPage(browser, w, h); await watch(page);
     try {
-      await start(page, { pos: 12 });
+      await start(page, { pos: LF + 1 });
       if (await panelOpen(page)) await commit(page);
       await goFight(page); await sleep(300);
       await C(page, () => window.__lab.forceWin());
@@ -683,9 +688,9 @@ async function runSize(browser, w, h) {
     const { ctx, page } = await newPage(browser, w, h); await servePrev(ctx);
     try {
       if (!prevFile('index.html') || !prevFile('ui.js')) throw new Error(`上一版頁面拿不到（git show ${PREV}:game-lab/…；設 LINEUP_PREV）`);
-      await start(page, { pos: 12, extra: 4 });
+      await start(page, { pos: LF + 1, extra: 4 });
       if (await panelOpen(page)) await commit(page);
-      await stallAt(page, 16); await sleep(1200);
+      await stallAt(page, LF + 5); await sleep(1200);
       const out0 = await stallOut(page);
       const s0 = await C(page, () => { const r = window.__lab.run, p = r.pending; return { pend: p ? p.type : null, due: r.lineupDue, lineup: r.lineup, pos: r.pos }; });
       // 上一版頁面

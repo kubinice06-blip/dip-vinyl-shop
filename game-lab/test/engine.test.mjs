@@ -5604,7 +5604,7 @@ section('35 第 D 波棒三 派樹＋試煉階級（SPEC-D §3.6–§3.7、§5�
 section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著逐字、newRun 欄位、第 1 輪整包、換輪挑上場（攤位那一步／lineupDue）、手牌＝上場、耐聽記數與聽膩、說情重打不算、坐板凳回滿、賣掉空一格、換上場、替補、切磋不耗、fixLineup、樂歷 Lv3、配件、策略', () => {
   EN.setCtx(null);
   const on = (K, x) => Object.assign({}, K, { lineup: Object.assign({}, C0.lineup, { on: true }, x || {}), wear: Object.assign({}, C0.wear, { on: true }) });
-  // 流程測試用第 6 位起（from 6；出貨 11 另驗）：第 2 輪就有上場制，測得短
+  // 流程測試用第 6 位起（from 6；出貨 16 另驗）：第 2 輪就有上場制，測得短
   const CL = on(CW, { from: 6 }), CLnoStall = on(Object.assign({}, CW, { waveC: Object.assign({}, C0.waveC, { stall: Object.assign({}, C0.waveC.stall, { on: false }) }) }), { from: 6 });
   const J = x => JSON.stringify(x), W7 = C0.wear.grooves, N5 = C0.lineup.n;
   const newL = (sk, K, o) => { const r = EN.newRun(K || CL, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K || CL, EN.bargainPolicy(r, K || CL)); return r; };
@@ -5638,11 +5638,12 @@ section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著�
   // ---- newRun 欄位、lineupFrom、樂歷 Lv3、配件 ----
   { const r = EN.newRun(CL, { seedKey: 'lu-new', runNo: 2, ace: 'hall', prologue: false });
     ok(r.lineup === null && J(r.bench) === '[]' && J(r.lineupFresh) === '[]' && r.lineupDue === false && r.lineupFrom === 6 && J(r.wear) === '{}' && J(r.rested) === '[]' && !('lineupBonus' in r), 'on: newRun keys (lineup null, bench [], lineupFresh [], lineupDue false, lineupFrom 6, wear {}, rested [])');
-    ok(EN.newRun(CL, { seedKey: 'x', runNo: 1, firstRun: true }).lineupFrom === 11 && EN.newRun(CL, { seedKey: 'x', runNo: 2, lineupFrom: 16 }).lineupFrom === 16, 'lineupFrom: firstRun → 11, o.lineupFrom overrides');
-    ok(EN.newRun(on(CW), { seedKey: 'x', runNo: 2 }).lineupFrom === C0.lineup.from && C0.lineup.from === 11 && EN.LINEUP.from === 11, 'shipped lineup.from 11 (third round; measured: from 6 makes novices easier at pos 6–10)');
+    ok(EN.newRun(CL, { seedKey: 'x', runNo: 1, firstRun: true }).lineupFrom === C0.lineup.firstRunFrom && EN.newRun(CL, { seedKey: 'x', runNo: 2, lineupFrom: 21 }).lineupFrom === 21, 'lineupFrom: firstRun → firstRunFrom, o.lineupFrom overrides');
+    ok(EN.newRun(on(CW), { seedKey: 'x', runNo: 2 }).lineupFrom === C0.lineup.from && C0.lineup.from === 16 && C0.lineup.firstRunFrom === 16 && EN.LINEUP.from === 16 && C0.wear.grooves === 5 && EN.WEAR.grooves === 5,
+      'shipped lineup.from 16 (fourth round; from 6 makes novices easier at pos 6–10, from 11 makes trial tiers 4／8／10 easier at pos 11–20 — 11-22 post) and wear.grooves 5 (W3 ≥5% with from 16)');
     { const rs = EN.newRun(Object.assign({}, C0, { cards: CARDS, bins: BINS }), { seedKey: 'lu-ship', runNo: 2, ace: 'hall', prologue: false });
-      ok(typeof C0.lineup.on === 'boolean' && C0.lineup.on === C0.wear.on && EN.lineupOn(rs) === C0.lineup.on && EN.wearOn(rs) === C0.wear.on && (!C0.lineup.on || rs.lineupFrom === 11),
-        'shipped content: C.lineup.on and C.wear.on switch together; newRun follows them (on → lineupFrom 11)', { lineup: C0.lineup.on, wear: C0.wear.on }); }
+      ok(typeof C0.lineup.on === 'boolean' && C0.lineup.on === C0.wear.on && EN.lineupOn(rs) === C0.lineup.on && EN.wearOn(rs) === C0.wear.on && (!C0.lineup.on || rs.lineupFrom === 16),
+        'shipped content: C.lineup.on and C.wear.on switch together; newRun follows them (on → lineupFrom 16)', { lineup: C0.lineup.on, wear: C0.wear.on }); }
     const t3 = EN.talentArgs(CL, { xp: EN.careerXpAt(CL, 3) }), t2 = EN.talentArgs(CL, { xp: EN.careerXpAt(CL, 2) });
     ok(t3.lineupBonus === 1 && !('lineupBonus' in t2) && EN.ladderAt(CL, 3).some(L => L.key === 'bench'), 'Lv3 bench: talentArgs lineupBonus 1 (Lv2 none), ladderAt(3) lists it');
     const rb = EN.newRun(CL, Object.assign({ seedKey: 'lu-b', runNo: 2, ace: 'hall', prologue: false }, t3));
@@ -5720,8 +5721,8 @@ section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著�
   // ---- 聽膩到頂：14 次 −2、之後不再扣；坐板凳回滿；上場的不回 ----
   { const r = goTo(newL('lu-max'), CL, 7);
     const X = r.lineup[0], Y = (r.rested || []).find(id => !r.lineup.includes(id));   // 這一輪還沒上場打過的（坐板凳）
-    r.wear[X] = { g: 6, n: 1 }; const f = EN.startFight(r, CL, {}); playN(f.duel, X, 6); endWin(f.duel); EN.finishFight(r, CL);
-    ok(J(r.wear[X]) === J({ g: W7, n: 2 }), 'second layer at 14 plays; capped (g stays full)', r.wear[X]);
+    r.wear[X] = { g: W7 - 1, n: 1 }; const f = EN.startFight(r, CL, {}); playN(f.duel, X, 6); endWin(f.duel); EN.finishFight(r, CL);
+    ok(J(r.wear[X]) === J({ g: W7, n: 2 }), 'second layer at 2×grooves plays; capped (g stays full)', r.wear[X]);
     for (let g = 0; g < 40 && r.pending; g++) EN.choose(r, CL, EN.cPolicy(r, CL, {}));
     const f2 = EN.startFight(r, CL, {}); playN(f2.duel, X, 6); endWin(f2.duel); const fx = EN.finishFight(r, CL);
     ok(J(r.wear[X]) === J({ g: W7, n: 2 }) && !fx.effects.length, 'after 2 layers: no more loss');
@@ -5785,7 +5786,7 @@ section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著�
     const rp = EN.runPolicy(r, CLnoStall); ok(rp && rp.type === 'lineup' && EN.choose(r, CLnoStall, rp).ok && !r.lineupDue, 'runPolicy → {type:lineup}');
     const rf = newL('lu-first', CL, { firstRun: true }); goTo(rf, CL, 8);
     const ff = EN.startFight(rf, CL, {});
-    ok(rf.lineupFrom === 11 && J(deckOf(ff.duel)) === J(rf.bag.slice().sort()) && !ff.duel.wearOn && !EN.luRound(rf), 'first run: pos 6–10 whole bag, no wear count');
+    ok(rf.lineupFrom === C0.lineup.firstRunFrom && J(deckOf(ff.duel)) === J(rf.bag.slice().sort()) && !ff.duel.wearOn && !EN.luRound(rf), 'first run: pos 6–10 whole bag, no wear count');
     const rc = EN.newRun(CL, { seedKey: 'lu-cp', runNo: 2, ace: 'hall', from: 10 });
     for (let g = 0; g < 60 && rc.pending && rc.pending.type === 'draft'; g++) EN.choose(rc, CL, EN.cPolicy(rc, CL, {}));
     ok(rc.pos === 10 && rc.lineupDue === true && EN.luRound(rc), 'checkpoint start at 10: after the draft → lineupDue'); }
@@ -5807,6 +5808,47 @@ section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著�
       }
     }
     ok(done, 'found a spar to test'); }
+
+  // ---- 合併後修正（11-22 post）：切磋 × 換輪上場——還沒挑上場（lineupDue）不能接切磋（不然 lineup null＝整包上）；挑完才接、用上場那幾張 ----
+  { const CLE = Object.assign({}, CL, { encounter: Object.assign({}, C0.encounter, { on: true }) });
+    let done = false;
+    for (let s = 0; s < 200 && !done; s++) {
+      const r = goTo(newL('lu-spar3-' + s, CLE), CLE, 7);
+      for (let p = r.pos; p < 15 && !done && !r.over; p++) {
+        if (EN.encOffer(r, CLE) && r.bag.length > N5) {
+          r.lineup = null; r.bench = []; r.lineupDue = true;                     // 換輪那一刻的樣子（還沒挑）
+          const o = EN.choose(r, CLE, { type: 'encOpen' }), a0 = EN.choose(r, CLE, { type: 'encAccept' });
+          ok(o.ok && !a0.ok && a0.error === 'lineupDue' && r.spar.state === 'offer' && EN.encStart(r, CLE, {}) === null, 'spar: encAccept refused while lineupDue (offer stays open)', { err: a0.error });
+          for (const ch of EN.lineupPrep(r, CLE)) EN.choose(r, CLE, ch);
+          const a1 = EN.choose(r, CLE, { type: 'encAccept' }), sp = EN.encStart(r, CLE, {});
+          ok(a1.ok && !r.lineupDue && sp && deckOf(sp.duel).length === N5 && J(deckOf(sp.duel)) === J(r.lineup.slice().sort()), 'spar: after picking the lineup → accept ok, deck = the 5 on the lineup');
+          done = true;
+        } else { fwin(r, CLE); goTo(r, CLE, r.pos); }
+      }
+    }
+    ok(done, 'found a spar to test (lineupDue)'); }
+
+  // ---- 合併後修正（11-22 post）：換王牌 × 上場——switchAce 換掉的送的牌同步（lineupFresh 進新的、走的從上場／替補／rested／耐聽拿掉）；上場或替補有人被換掉＝整組重挑 ----
+  { const mk = sk => { const r = EN.newRun(CL, { seedKey: sk, runNo: 2, ace: 'hall', prologue: false, from: 10 });
+      for (let g = 0; g < 60 && r.pending && r.pending.type === 'draft'; g++) EN.choose(r, CL, EN.cPolicy(r, CL, {}));
+      const b = EN.bargainPolicy(r, CL); if (b) EN.choose(r, CL, b); return r; };
+    const r = mk('lu-swap'), P = EN.lineupPolicy(r, CL);
+    const gifts = r.gifts.filter(id => r.bag.includes(id)), withGift = P.ids.some(id => gifts.includes(id)) ? P.ids : gifts.slice(0, 1).concat(P.ids.filter(id => !gifts.includes(id))).slice(0, N5);
+    ok(r.pos === 10 && EN.luRound(r) && EN.canSwitchAce(r, CL) && EN.choose(r, CL, { type: 'lineup', ids: withGift, bench: [] }).ok && !r.lineupDue, 'swap setup: checkpoint 10, lineup picked with a gift on it, can still switch ace');
+    r.wear[gifts[0]] = { g: 1, n: 0 };
+    const old = r.gifts.slice(), sw = EN.switchAce(r, CL, 'pearl');
+    const gone = old.filter(id => !r.bag.includes(id)), got = r.gifts.filter(id => !old.includes(id));
+    ok(sw.ok && gone.length > 0 && r.lineup === null && J(r.bench) === '[]' && r.lineupDue === true && got.every(id => r.lineupFresh.includes(id)) &&
+      !gone.some(id => r.lineupFresh.includes(id) || r.rested.includes(id) || id in r.wear), 'switchAce: a lineup card left the bag → lineup null, bench [], lineupDue; new gifts fresh; gone ids dropped everywhere', { lineup: r.lineup, due: r.lineupDue });
+    const P2 = EN.lineupPolicy(r, CL); ok(EN.choose(r, CL, { type: 'lineup', ids: P2.ids, bench: P2.bench }).ok && r.lineup.every(id => r.bag.includes(id)), 'switchAce → re-pick the whole lineup');
+    const r2 = mk('lu-swap'), keep = r2.bag.filter(id => !r2.gifts.includes(id)).slice(0, N5);
+    if (keep.length === N5) {
+      ok(EN.choose(r2, CL, { type: 'lineup', ids: keep, bench: [] }).ok, 'swap setup 2: lineup without gifts');
+      const sw2 = EN.switchAce(r2, CL, 'pearl');
+      ok(sw2.ok && J(r2.lineup) === J(keep) && r2.lineupDue === false && r2.gifts.filter(id => r2.bag.includes(id)).every(id => r2.lineupFresh.includes(id)), 'switchAce: lineup untouched → kept (new gifts fresh, can swap in)');
+    }
+    const r3 = EN.newRun(CW, { seedKey: 'lu-swap', runNo: 2, ace: 'hall', prologue: false }); EN.choose(r3, CW, EN.bargainPolicy(r3, CW));
+    const s3 = EN.switchAce(r3, CW, 'pearl'); ok(s3.ok && !['lineup', 'bench', 'lineupFresh', 'lineupDue', 'wear', 'rested'].some(k => k in r3), 'switchAce off: no I-2 keys appear'); }
 
   // ---- fixLineup：開著補鍵／濾掉不在包包的／wear 形狀；關著整組拿掉（含 pending.lineup）；舊頁面路徑 ----
   { const r = goTo(newL('lu-fix'), CL, 7);

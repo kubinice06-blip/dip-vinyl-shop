@@ -3030,7 +3030,14 @@
     let j = 0; const bag = [];
     run.bag.forEach((id, k) => { if (!slots.includes(k)) bag.push(id); else if (j < next.length) bag.push(next[j++]); });   // 原位換；不夠的格子拿掉
     const fromId = want != null || run.aceId != null ? apexAceId(run, content) : null;
+    const bag0 = run.bag.slice(), lu0 = Array.isArray(run.lineup) ? run.lineup.slice() : null, bn0 = Array.isArray(run.bench) ? run.bench.slice() : [];
     run.bag = bag; run.ace = tier; run.gifts = next.slice();
+    // 第 I 波 I-2（合併後修正）：換派換掉的送的牌＝離開包包——跟 choose 包裝層同一個同步（luBagSync：新的進 lineupFresh、走的從上場／替補／rested／耐聽拿掉）；
+    //   上場或替補有人被換掉：還在這一趟第 1 位開打前（canSwitchAce）＝整組重挑（lineup null、lineupDue；來客畫面重開上場面板）。上場制／耐聽關著一行不走
+    if (lineupOn(run) || wearOn(run)) {
+      luBagSync(run, content, bag0);
+      if (lineupOn(run) && luRound(run) && (lu0 && lu0.some(id => !bag.includes(id)) || bn0.some(id => !bag.includes(id)))) { run.lineup = null; run.bench = []; run.lineupDue = true; }
+    }
     if (run.fac) {                                             // 第 D 波棒二：換派＝本派選項清空（第 1 位開打前，本來就空）；棒三：派樹換新派的（o.facTal＝新派的 treeArgs；沒給＝空）
       run.ace = from; facStart(run, content, -1); run.ace = tier;   // 舊派樹開局給的地下串連（聲望上限 +3）先拿回來
       run.fac = Object.assign({}, run.fac, { picks: {}, tal: facTalOf(content, tier, o && o.facTal) }); delete run.fac.deepAcc;
@@ -3603,16 +3610,16 @@
   // ============================================================================================================================
   // 第 I 波 I-2：上場＋耐聽（scratchpad v5/wave-i SPEC-I §3、§5、§10；給畫面／sim／e2e 的契約 wave-i/build2/CONTRACT.md）。數字＝content.lineup／content.wear（luCfg／wearCfg）
   //   店主 11-20：「卡好像可以設計類似耐久度的東西 或出牌次數限制 不然才第15回合 專輯已經固定不會想再購買或換牌」「一次能帶五張上場 發燒配件 或是 天賦 能讓帶上場的」
-  //   §12-1 店主沒回＝（甲）每輪挑：每輪從包包挑 n 張上場（第 lineupFrom 位那一輪起；施工量過定 11＝第 3 輪，§5.2 起點是第 2 輪）；替補（配件 sleeve、樂歷 Lv3）每位開打前可以換一張。
+  //   §12-1 店主沒回＝（甲）每輪挑：每輪從包包挑 n 張上場（第 lineupFrom 位那一輪起；施工量過定 11＝第 3 輪、11-22 post 改 16＝第 4 輪（試煉階級不變簡單），§5.2 起點是第 2 輪）；替補（配件 sleeve、樂歷 Lv3）每位開打前可以換一張。
   //   開關：newRun o.lineup／o.wear（沒給＝content 的 on；兩個一起開、一起關）。關著＝run 一個欄位都不多、這一段一行都不走、策略逐字走舊程式（lineupOn(run) 分支）
   //   run 欄位（只加鍵、RUN_V 不升）：lineup [ids]|null（這一輪上場；null＝還沒挑＝整個包包）、bench [ids]（替補）、lineupFresh [ids]（這一輪新拿到的）、
-  //     lineupDue 布林（要開上場面板：換輪那一刻、上場那張離開包包）、lineupFrom（上場制從第幾位那一輪起：content from／firstRunFrom，現在都 11）、lineupBonus（樂歷 Lv3 多帶幾張替補；有才有）、
+  //     lineupDue 布林（要開上場面板：換輪那一刻、上場那張離開包包）、lineupFrom（上場制從第幾位那一輪起：content from／firstRunFrom，現在都 16）、lineupBonus（樂歷 Lv3 多帶幾張替補；有才有）、
   //     wear {id:{g 已用幾格, n 聽膩幾層}}、rested [ids]（這一輪還沒上場打過的；換輪時這些聽膩全清＝坐板凳回滿）、wearPos（這一位第一場算過耐聽了：說情重打不算）
   //   上場那一步：換輪的攤位 pending 多一個鍵 lineup {pick, bench, quiet}（q 走完、選過組＝停在這一步；choose {type:'stall', act:'lineup', ids, bench}）；沒攤位＝lineupDue
   //   choose 包一層（luBagSync）：新進包包的記進 lineupFresh；離開包包的（賣、寄賣）從上場／替補／rested／wear 拿掉，上場空一格＝lineupDue（不自動補：CRITIQUE 6-6）
   // ============================================================================================================================
-  const LINEUP = { on: false, n: 5, from: 11, firstRunFrom: 11, slotRelic: 'sleeve', max: 7, pen: 1.5, quietMax: 6, depth: 1, deadAt: 9, benchMode: 'worn' };   // from／pen：施工量過（content.js C.lineup 註解）
-  const WEAR = { on: false, grooves: 7, maxLayers: 2, star: 1, axes: 1, back: 0 };
+  const LINEUP = { on: false, n: 5, from: 16, firstRunFrom: 16, slotRelic: 'sleeve', max: 7, pen: 1.5, quietMax: 6, depth: 1, deadAt: 9, benchMode: 'worn' };   // from／pen：施工量過（content.js C.lineup 註解；from 11→16＝11-22 post 試煉階級不變簡單）
+  const WEAR = { on: false, grooves: 5, maxLayers: 2, star: 1, axes: 1, back: 0 };   // grooves 7→5（11-22 post：from 16 時 W3 要 ≥5%）
   function luCfg(content) { const L = content && content.lineup; return Object.assign({}, LINEUP, L && typeof L === 'object' ? L : {}); }
   function wearCfg(content) { const W = content && content.wear; return Object.assign({}, WEAR, W && typeof W === 'object' ? W : {}); }
   const lineupOn = run => !!run && typeof run === 'object' && Array.isArray(run.lineupFresh);
@@ -4550,6 +4557,7 @@
       // 來一盤（{type:'encAccept'}）：offer → fighting（畫面先存檔再 encStart；重新整理在打＝作廢）
       case 'encAccept': {
         if (!sparOfferNow(run) || nextStep(run) !== 'fight') return fail('noSparOffer');
+        if (lineupOn(run) && luRound(run) && run.lineupDue) return fail('lineupDue');   // 第 I 波 I-2（合併後修正）：還沒挑上場（換輪、上場那張賣掉）＝先挑：切磋用這一輪上場那幾張（SPEC-I §5.6），不是整個包包
         run.spar.state = 'fighting'; sparStats(run).accepted++;
         effects.push({ spar: 'fighting', who: run.spar.who });
         return { ok: true, effects };

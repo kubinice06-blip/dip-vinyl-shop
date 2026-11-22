@@ -4478,7 +4478,7 @@
     hold(800 / speed() + 1000);
     var tries = 0, go3 = function () {
       if (UI.screen !== 'night' || !UI.enc || UI.enc.key !== key || UI.enc.phase !== 'table' || UI.going || save.seen.encHint) return;
-      if ((sayTill() > Date.now() || qs('.lb-sheet.float', app())) && tries++ < 40) { hold(500 + 1000); later(go3, 500 * speed()); return; }   // 他還在講、面板開著：等
+      if ((sayTill() > Date.now() || qs('.lb-sheet.float', app()) || qs('.lb-sheet.lineup', app())) && tries++ < 40) { hold(500 + 1000); later(go3, 500 * speed()); return; }   // 他還在講、面板開著（含上場面板）：等
       save.seen.encHint = true; persist();
       stg('emote', 'o', 'excl', 1200);
       stageSay('o', tx, 'owner', sparHoldMs(tx) * speed());   // 停多久照聊天最後一句（§5.3；stageSay 會 ÷speed，sparHoldMs 已是真實毫秒）
@@ -4492,7 +4492,7 @@
     var iv = setInterval(function () {
       var t = Date.now(), dt = Math.min(1000, t - last) * speed(); last = t;
       if (UI.screen !== 'night' || save.run !== r || !UI.enc || UI.enc.key !== key || UI.enc.phase !== 'table' || E.encPending(r) !== 'offer') { clearInterval(iv); return; }
-      if (crowdPaused() || qs('.lb-sheet.float', app())) return;
+      if (crowdPaused() || qs('.lb-sheet.float', app()) || qs('.lb-sheet.lineup', app())) return;   // 第 I 波 I-2（合併後修正）：上場面板是 sheet() 不是 float，也停表
       UI.enc.waited += dt;
       if (UI.enc.waited >= lapse) { clearInterval(iv); sparDecline(true); }
     }, 250);
@@ -4503,6 +4503,7 @@
     var r = save.run;
     if (UI.screen !== 'night' || !r || !UI.enc || UI.enc.key !== sparKey(r)) return false;
     if (UI.enc.phase !== 'table' || E.encPending(r) !== 'offer') return UI.enc.phase === 'walk';   // 還在走過去：這一下先不理（到了再點）
+    if (luDueNow(r)) { sfx('tick'); crowdCall('chatClose'); luPanel(r, 'due'); return true; }      // 第 I 波 I-2（合併後修正）：還沒挑上場（一輪中途上場那張賣掉）＝先挑，挑完他還在等
     sfx('tick'); crowdCall('chatClose');
     sparSheet(r);
     return true;
@@ -4529,6 +4530,7 @@
   // 來一盤（§7.3-7）：encAccept → 先存檔 → 清對戰區 → encStart → 你走到 duelP → go('duel', {enc, view})
   function sparAccept() {
     var r = save.run; if (!r || UI.going || !UI.enc || E.encPending(r) !== 'offer') return;
+    if (luDueNow(r)) { qsa('.lb-sheet.float.enc', app()).forEach(function (s) { s.remove(); }); syncFloat(); luPanel(r, 'due'); return; }   // 第 I 波 I-2（合併後修正）：先挑上場（engine encAccept 也擋）
     var res = sparChoose({ type: 'encAccept' });                         // sparChoose 存檔：重新整理在打＝作廢（§7.3-9）
     if (!res.ok) return sparFail(r);
     regsOf().enc.fought++; persist();
@@ -5036,10 +5038,14 @@
     // 挑戰者進門直接走到對戰台等你（第 A 波 1；店主 11-16）：這一位推門進來、走到對戰台（duelE）站著；門外排的是再下一位。
     //   序章收尾 E10 推門進來的那位＝第 1 位：已經在店裡，從門邊走過去。傳說藏家照舊在門外（他有自己的進場那段，bossEnterFlow）
     var nx = r.order[r.idx], waits = guestWaits(r);
+    // 第 I 波 I-2（合併後修正）：要挑上場（換輪、中繼點開局、上場那張賣掉）＝先挑：這一位的切磋邀請等挑完（go('night') 再來）才開、主線客人也先在門外——
+    //   切磋用這一輪上場那幾張（SPEC-I §5.6；engine encAccept 也擋 lineupDue），30 秒沒理他不會在挑上場時偷跑
+    //   （一輪中途賣掉上場那張時主線客人已經在對戰台＝照舊站著：luHold 只擋還沒走過去的）
+    var luDue = luDueNow(r), luHold = luDue && UI.atTable !== tableKey(r);
     // 切磋（SPEC-H §7.3）：熟客佔著對戰台（邀請、打完回來、作廢那句）＝這一位主線客人先在門外等（q1＝他，同藏家那條）
-    var sp = waits ? sparNight(r) : null;
-    var q = waits && !sp ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
-    if (waits && !sp) guestToTable(r); else if (!waits) { hideActor('f'); stg('door', 'close'); }
+    var sp = waits && !luHold ? sparNight(r) : null;
+    var q = waits && !sp && !luHold ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
+    if (waits && !sp && !luHold) guestToTable(r); else if (!waits) { hideActor('f'); stg('door', 'close'); }
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
     var row = E.roundGuests(r, C).map(function (g, i) {
@@ -5083,7 +5089,7 @@
     // 頂點卡試做（?apex=1）：這份存檔第一次開旗標、第 1 位開打前＝老闆說一句、跳挑王牌面板（apexIntroOnNight；旗標關時不走）
     //   沒得挑（只收到一張）＝老闆只說那句：下面的提示都晚 sayMs 再出（不跟老闆那句疊）
     // 第 I 波 I-2：要挑上場（換輪沒攤位、中繼點選秀完、上場那張賣掉）＝來客畫面一進來就開上場面板（蓋住來客那塊；其他提示等下一次來客畫面）
-    if (luDueNow(r)) { luPanel(r, 'due'); return; }
+    if (luDue) { luPanel(r, 'due'); return; }
     var intro = apexIntroOnNight(r);
     if (intro === 'panel') return;
     var sayMs = intro === 'said' ? 2600 : 0;
