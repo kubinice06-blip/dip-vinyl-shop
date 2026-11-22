@@ -86,7 +86,7 @@
     var sw = false; try { sw = !S.enc && !have && !!H.swapOk && !!H.swapOk(); } catch (_) {}
     var ear = ''; try { ear = H.earDots ? H.earDots(id) || '' : ''; } catch (_) {}
     return '<span class="lt-face">' + H.coverHTML(c) + up + '</span>' +
-      '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + H.starsHTML(c) + ear +
+      '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + ((H.luStars && H.luStars(id)) || H.starsHTML(c)) + ear +   // luStars：包包裡那張聽膩了＝扣過的星（第 I 波 I-2；沒有＝''）
       (have ? '<button type="button" class="lb-pickb key" disabled>' + esc((C().shopUi && C().shopUi.owned) || '包包裡有了') + '</button>'
         : sw ? '<span class="lt-bb"><button type="button" class="lb-pickb key" data-pick="' + esc(id) + '">' + esc(U('take')) + '</button>' +
           '<button type="button" class="lb-pickb key lt-sw" data-swap="' + esc(id) + '">' + esc(((C().lineup || {}).ui || {}).swapIn || '') + '</button></span>'

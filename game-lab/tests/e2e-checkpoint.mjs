@@ -19,7 +19,7 @@ import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, jsClick, waitScreen, duelReady, tapAt, tapReady, seedRun, seededContinue, openTitle, advanceUntil, answerBargain,
-  passLoot, stallState, clearStall, resolveHands } from './e2e-lib.mjs';
+  passLoot, stallState, clearStall, resolveHands, luSkip } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.CP_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -300,6 +300,7 @@ async function runSize(browser, w, h) {
       // (b) 戰利品列裡一張不存在的
       await C(page, () => window.__lab.jump(17));
       await waitScreen(page, 'night', 10000); await sleep(500);
+      await luSkip(page);                                     // 第 I 波 I-2（出貨上場制開）：跳到第 17 位＝這一輪要挑上場，面板照預設帶過
       await jsClick(page, '[data-a=go]'); await duelReady(page, 25000); await sleep(300);
       await C(page, () => window.__lab.forceWin());
       await waitScreen(page, 'reward', 15000); await sleep(800);

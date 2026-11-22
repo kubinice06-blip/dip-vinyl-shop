@@ -984,7 +984,7 @@
     o = o || {};
     if (!c) return '';
     return '<span class="stars' + (o.cls ? ' ' + o.cls : '') + '">' + ATTRS.map(function (a) {
-      return '<b class="' + a + (o.mark === a ? ' mk' : '') + '"><i>' + ZH1[a] + '</i>' + (c[a] || 0) + '</b>';
+      return '<b class="' + a + (o.mark === a ? ' mk' : '') + (o.worn === a ? ' wn' : '') + '"><i>' + ZH1[a] + '</i>' + (c[a] || 0) + '</b>';   // wn＝聽膩扣過的那軸（第 I 波 I-2；星數已經扣好）
     }).join('') + '</span>';
   }
   function tileHTML(c, o) {
@@ -993,7 +993,7 @@
     var cls = 'lb-ct' + (o.sel ? ' sel' : '') + (o.cls ? ' ' + o.cls : '');
     return '<div class="' + cls + '" data-cid="' + esc(c.id) + '"' + (o.data ? ' ' + o.data : '') + '>' + coverHTML(c, o) +
       (o.text === false ? '' : '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>') +
-      (o.stars === false ? '' : starsHTML(c)) + (o.extra || '') +
+      (o.stars === false ? '' : o.starCard ? starsHTML(o.starCard, { worn: o.starCard.wornAxis }) : starsHTML(c)) + (o.extra || '') +
       (o.pick ? '<button type="button" class="lb-pickb key" data-pick="' + esc(c.id) + '"' + (o.disabled ? ' disabled' : '') + '>' + esc(o.pick) + '</button>' : '') + '</div>';
   }
   function info(c, o) {
@@ -2587,9 +2587,10 @@
   }
   function takeRelic(relicId, autoDrop) {
     var r = save.run;
-    if (r.relics.length < E.CFG.relicMax) return Promise.resolve(doChoose({ type: 'relic', relicId: relicId }));
+    // 第 I 波 I-2 修正棒：唱片袋側袋（type slot）不佔配件格——E.relicFull 只算一般配件；要丟的那件也不列側袋（丟它騰不出格）
+    if (!(E.relicFull ? E.relicFull(r, C, relicId) : r.relics.length >= E.CFG.relicMax)) return Promise.resolve(doChoose({ type: 'relic', relicId: relicId }));
     // 老闆那句就是面板標題；不再另外在舞台上冒同一句（泡泡貼在舞台右緣會被切掉）
-    return relicPanel(r.relics, { prompt: (C.lines.owner && C.lines.owner.relicFull) || '配件最多帶三件。先放一件回去。', cancel: '算了，不換了', autoId: autoDrop })
+    return relicPanel(r.relics.filter(function (id) { return !(E.isSlotRelic && E.isSlotRelic(C, id)); }), { prompt: (C.lines.owner && C.lines.owner.relicFull) || '配件最多帶三件。先放一件回去。', cancel: '算了，不換了', autoId: autoDrop })
       .then(function (dropId) { return dropId ? doChoose({ type: 'relic', relicId: relicId, dropRelicId: dropId }) : null; });
   }
 
@@ -3196,7 +3197,6 @@
   // stalls.js 沒載到（舊快取、載入失敗）：今天的攤位照「今天不逛了」帶過（錄音室自動、寄賣領取不拿），不要把整趟刪掉
   function stallBridge(r) {
     for (var g = 0; g < 8 && E.nextStep(r) === 'stall'; g++) {
-      if (luStallStep(r)) { var lp = r.pending.lineup; if (!E.choose(r, C, { type: 'stall', act: 'lineup', ids: (lp.pick || []).slice(), bench: (lp.bench || []).slice() }).ok) break; continue; }   // 第 I 波 I-2：收攤前的上場那一步＝「幫我挑」
       var cur = r.pending.cur, k = cur && cur.kind;
       var res = E.choose(r, C, k === 'studio' ? { type: 'stallAct', act: 'ok' } : k === 'consignGet' ? { type: 'stallAct', act: 'skip' } : { type: 'stallLeave' });
       if (!res || !res.ok) { console.warn('stall bridge', res && res.error); break; }
@@ -3227,8 +3227,10 @@
     var tutorial = !!o.tutorial && r.prologue === 'pending' && !r.duel;
     var res = null;
     var fo = { tutorial: tutorial }; if (UI.apex) fo.apex = true;       // 頂點卡試做：每次開打都帶旗標（不存進 run；序章那場引擎自己不開）
+    var lu0 = !r.duel && luLive(r) && Array.isArray(r.lineup) ? r.lineup.slice() : null;   // 第 I 波 I-2：開打前替補自動頂上（engine luAutoBench）→ 吐司一句
     try { res = E.startFight(r, C, fo); } catch (e) { console.error(e); }
     if (!res || !res.duel) { console.error('startFight failed'); persist(); return go(r.over ? 'end' : 'night'); }
+    if (lu0 && !res.resumed) luBenchToast(r, lu0);
     if (!res.resumed) r.tut = tutorial;
     persist();
     preloadDuel(res.duel);
@@ -4508,7 +4510,8 @@
   //   耐聽點（earDotsHTML，style.css .lb-ear）：包包、上場面板、戰利品列、櫃檯賣給老闆；手牌只畫兩種記號（duel.js）。領獎小字（wornHd）、第一次聽膩老闆那句（save.seen.wear）
   function LU(k, o) { var U = (C && C.lineup && C.lineup.ui) || {}; return fill(U[k] || '', o); }
   function WR(k, o) { var U = (C && C.wear && C.wear.ui) || {}; return fill(U[k] || '', o); }
-  function lineupBoot() { if (QS.lineup === '1' && C.lineup && C.wear) { C.lineup.on = true; C.wear.on = true; } }   // 施工期間試玩：跟 sim --lineup on 一樣只改 content 的開關
+  // ?lineup=1／?lineup=0：開機時把 C.lineup.on、C.wear.on 兩個一起設 true／false（跟 sim --lineup on／off 一樣只改 content 的開關；出貨開了以後 ?lineup=0＝看關著的樣子、緊急退回前先試）
+  function lineupBoot() { if (!C.lineup || !C.wear) return; if (QS.lineup === '1') { C.lineup.on = true; C.wear.on = true; } else if (QS.lineup === '0') { C.lineup.on = false; C.wear.on = false; } }
   function luOn(r) { return !!(r && E && typeof E.lineupOn === 'function' && E.lineupOn(r)); }
   function wrOn(r) { return !!(r && E && typeof E.wearOn === 'function' && E.wearOn(r)); }
   function luLive(r) { return luOn(r) && typeof E.luRound === 'function' && E.luRound(r); }          // 這一輪是上場制（第 lineupFrom 位那一輪起）
@@ -4524,7 +4527,8 @@
   }
   // 耐聽 7 顆小點（亮＝還剩的格）＋聽膩幾層（紅字 −n）；耐聽關＝空字串
   function earDotsHTML(r, id) {
-    if (!wrOn(r) || !card(id)) return '';
+    // 修正棒 11-22：耐聽還沒開始算的那幾輪（第 1–2 輪＝第 10 位以前）不畫（7 顆全亮沒有資訊；旗標開時第 1 位的戰利品列多 3 列點＝面板捲 5–6 px）
+    if (!wrOn(r) || !card(id) || !(E.luRound && E.luRound(r))) return '';
     var w = wearOf(r, id), d = '';
     for (var i = 0; i < w.G; i++) d += '<i' + (i < w.left ? ' class="on"' : '') + '></i>';
     return '<span class="lb-ear' + (w.n ? ' worn' : '') + '" role="img" aria-label="' + esc(WR('ear', { n: w.left, max: w.G }) + (w.n ? '・' + WR('worn', { n: w.n }) : '')) + '">' + d + (w.n ? '<b>' + esc('−' + w.n) + '</b>' : '') + '</span>';
@@ -4538,12 +4542,17 @@
     else if (w && w.left === 1 && w.n < w.max) mk = '<i class="lu-al" aria-hidden="true"></i>';
     return '<span class="lu-mini' + (w && w.n ? ' worn' : '') + '">' + coverHTML(c, { info: false, badge: false }) + mk + '</span>';
   }
-  // 攤位收尾的上場那一步：pending stall 有 lineup 鍵、選過組、q 走完、沒有站在開（engine 停在這一步，nextStep 還是 'stall'）
-  function luStallStep(r) {
-    var p = r && r.pending;
-    return !!(p && p.type === 'stall' && p.lineup && typeof p.lineup === 'object' && p.pick != null && Array.isArray(p.q) && p.k >= p.q.length && !p.cur && luOn(r));
+  // 星數照聽膩後的（扣過的那軸紅字＝duel.js 屬性鈕「經 4 −1」同一個意思；修正棒 11-22，審查「−1 兩種意思」）：包包、上場面板、換上場、戰利品列、櫃檯賣給老闆
+  function luCardOf(r, id) { var w = wrOn(r) && E.wornCard && card(id) ? E.wornCard(C, r, id) : null; return w && w.worn > 0 ? w : null; }
+  function luStarsHTML(r, id, o) { var w = luCardOf(r, id); return w ? starsHTML(w, Object.assign({}, o, { worn: w.wornAxis })) : starsHTML(card(id), o); }
+  // 開打前替補自動頂上了（lu0＝開打前的上場）：吐司「《換下的》聽膩了，替補《頂上的》頂上」（keep：換到對決畫面照留）
+  function luBenchToast(r, lu0) {
+    var L = Array.isArray(r.lineup) ? r.lineup : [], ins = L.filter(function (id) { return lu0.indexOf(id) < 0; }), outs = lu0.filter(function (id) { return L.indexOf(id) < 0; });
+    if (!ins.length || !outs.length || UI.auto) return;
+    var a = card(ins[0]), b = card(outs[0]); if (a && b && LU('benchIn')) toast(LU('benchIn', { album: a.album, out: b.album }), 'keep');
   }
-  // 沒有攤位時（換輪、中繼點選秀完、上場那張賣掉）：來客畫面一進來就開面板
+  // 要挑上場（換輪：攤位收攤之後、沒有攤位、中繼點選秀完；上場那張賣掉）：來客畫面一進來就開面板
+  //   修正棒 11-22：攤位 pending 不再停在「上場那一步」（舊頁面讀到那一步會無限遞迴）；施工期間的舊存檔 fixRun（E.fixLineup）轉成這一條
   function luDueNow(r) { return luOn(r) && r.lineupDue === true && luLive(r) && !r.pending && !r.duel && !r.over && E.nextStep(r) === 'fight'; }
   // 來客畫面的上場列（來客條與開打鈕之間）：上場那幾張＋替補格；點了開包包（新拿到的在那裡換上場）
   function luRowHTML(r) {
@@ -4560,11 +4569,10 @@
   // ---- 上場面板（SPEC-I §5.4）：頂＝這一輪還沒打的客人（主屬性色點、算命／踢館帖的記號）；中＝n 格（＋替補虛線格）；下＝包包格（自己捲）；底＝幫我挑／就這五張
   var LP = null;
   function luPanel(r, mode) {
-    var bag = r.bag.filter(card), keep = mode === 'due' && Array.isArray(r.lineup) ? r.lineup.filter(function (id) { return bag.indexOf(id) >= 0; }) : [];
-    var pk = mode === 'stall' && r.pending && r.pending.lineup ? r.pending.lineup : null, P0 = E.lineupPolicy(r, C) || { ids: [], bench: [] };
-    var ok = function (a) { return Array.isArray(a) && a.every(function (id) { return bag.indexOf(id) >= 0; }); };
-    var ids = pk && ok(pk.pick) && pk.pick.length === Math.min(luN(), bag.length) ? pk.pick.slice() : P0.ids.slice();
-    var bench = keep.length ? (r.bench || []).filter(function (id) { return bag.indexOf(id) >= 0 && ids.indexOf(id) < 0; }) : pk && ok(pk.bench) ? pk.bench.slice() : P0.bench.slice();
+    var bag = r.bag.filter(card), keep = Array.isArray(r.lineup) ? r.lineup.filter(function (id) { return bag.indexOf(id) >= 0; }) : [];
+    var P0 = E.lineupPolicy(r, C) || { ids: [], bench: [] };
+    var ids = P0.ids.slice();
+    var bench = keep.length ? (r.bench || []).filter(function (id) { return bag.indexOf(id) >= 0 && ids.indexOf(id) < 0; }) : P0.bench.slice();
     LP = { r: r, mode: mode, ids: ids, bench: bench.filter(function (id) { return ids.indexOf(id) < 0; }), sel: null, keep: keep, n: luN(), bn: E.benchN(r, C) };
     var s = sheet(luPanelHTML(), 'lineup');
     s.addEventListener('click', luPanelClick);
@@ -4588,11 +4596,12 @@
       return '<span class="lu-g' + (g.cls === 'elite' ? ' elite' : g.cls === 'boss' ? ' boss' : '') + '" aria-label="' + esc(TU('pos', { n: g.pos }) + ' ' + (en.name || '') + (g.main && E.ZH ? ' ' + TU('mainAttr', { attr: E.ZH[g.main] }) : '')) + '">' +
         '<span class="hd">' + headHTML(enemySpr(en), 22) + stallMarks(g) + '</span>' + (g.main ? '<i class="dt ' + esc(g.main) + '" aria-hidden="true"></i>' : '') + '</span>';
     }).join('');
+    var wk = LP.sel == null ? luWorst() : null;            // 沒選格子：點包包會換掉的那格描虛線（修正棒 11-22）
     var slot = function (k) {
       var id = luAt(k), c = card(id), bench = k >= n, on = LP.sel === k, lock = luLocked(k);
-      return '<button type="button" class="lu-slot' + (bench ? ' bn' : '') + (on ? ' sel' : '') + (lock ? ' lock' : '') + (c ? '' : ' empty') + '" data-slot="' + k + '" aria-pressed="' + on + '"' +
+      return '<button type="button" class="lu-slot' + (bench ? ' bn' : '') + (on ? ' sel' : '') + (k === wk ? ' wk' : '') + (lock ? ' lock' : '') + (c ? '' : ' empty') + '" data-slot="' + k + '" aria-pressed="' + on + '"' +
         ' aria-label="' + esc((bench ? LU('bench') : LU('slot')) + ' ' + (c ? c.artist + '《' + c.album + '》' : LU('empty'))) + '">' +
-        (c ? luMini(r, id) + starsHTML(c, { cls: 'sm' }) + earDotsHTML(r, id) : '<span class="lu-mini empty">' + esc(bench ? LU('bench') : LU('empty')) + '</span>') + '</button>';
+        (c ? luMini(r, id) + luStarsHTML(r, id, { cls: 'sm' }) + earDotsHTML(r, id) : '<span class="lu-mini empty">' + esc(bench ? LU('bench') : LU('empty')) + '</span>') + '</button>';
     };
     var slots = ''; for (var k = 0; k < n + LP.bn; k++) slots += slot(k);
     var fresh = r.lineupFresh || [];
@@ -4603,7 +4612,7 @@
       var tg = (on ? '<span class="lu-tg on">' + esc(LU('onTag')) + '</span>' : bn ? '<span class="lu-tg bn">' + esc(LU('bench')) + '</span>' : '') +
         (fresh.indexOf(id) >= 0 ? '<span class="lu-tg nw">' + esc(LU('newTag')) + '</span>' : '');
       return '<button type="button" class="lu-bt' + (on ? ' on' : bn ? ' onb' : '') + '" data-id="' + esc(id) + '" aria-label="' + esc(c.artist + '《' + c.album + '》' + (on ? '・' + LU('onTag') : bn ? '・' + LU('bench') : '')) + '">' +
-        '<span class="cv">' + coverHTML(c, { info: false, badge: false }) + tg + '</span>' + starsHTML(c, { cls: 'sm' }) + earDotsHTML(r, id) + '</button>';
+        '<span class="cv">' + coverHTML(c, { info: false, badge: false }) + tg + '</span>' + luStarsHTML(r, id, { cls: 'sm' }) + earDotsHTML(r, id) + '</button>';
     }).join('');
     var tip = LP.bn ? LU(luMode() === 'swap' ? 'benchHintSwap' : 'benchHint') : '';
     return '<div class="hd"><h3>' + esc(LP.keep.length ? LU('due') : LU('title', { n: n })) + '</h3></div>' +
@@ -4657,7 +4666,7 @@
   function luCommit() {
     if (!LP) return;
     var ids = LP.ids.slice(), bench = LP.bench.filter(Boolean);
-    var res = doChoose(LP.mode === 'stall' ? { type: 'stall', act: 'lineup', ids: ids, bench: bench } : { type: 'lineup', ids: ids, bench: bench });
+    var res = doChoose({ type: 'lineup', ids: ids, bench: bench });
     if (!res || !res.ok) { var P = E.lineupPolicy(LP.r, C) || {}; LP.ids = (P.ids || []).slice(); LP.bench = (P.bench || []).slice(); LP.sel = null; luRedraw(); return; }
     sfx('select'); LP = null;
     UI.keepP = true; go('night');
@@ -4667,24 +4676,6 @@
     var res = doChoose(ch); if (!res || !res.ok) return false;
     toastAfter(LU('quiet'));
     return true;
-  }
-  // 攤位收尾那一步（照 stallNight 的場景：這一輪的客人還在門外）：quiet＝直接送、回來客畫面；不然開面板
-  function luStallNight(r) {
-    var lp = r.pending.lineup;
-    if (lp.quiet && luQuiet(r, { type: 'stall', act: 'lineup', ids: (lp.pick || []).slice(), bench: (lp.bench || []).slice() })) { UI.keepP = true; return go('night'); }
-    setTop(posLabel(r), { help: true, pause: true });
-    var panel = UI.panel; panel.classList.add('night');
-    stg('interact', 'map');
-    resetPoses(); stg('sil', 'p', false);
-    settle('o', 'counter', 'owner');
-    if (UI.keepP && stg('has', 'p')) UI.keepP = false; else { UI.keepP = false; settle('p', UI.lastSpot || 'browse', 'player'); }
-    hideActor('f'); stg('door', 'close'); UI.atTable = null;
-    var q = [r.order[r.idx], r.order[r.idx + 1]];
-    if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
-    if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
-    var box = el('div', 'lb-screen', '<div class="lb-night"><div class="nh"><b>' + esc(TU('round', { r: r.round })) + '</b></div></div>' + bagLineHTML(r));
-    panel.appendChild(box);
-    luPanel(r, 'stall');
   }
   // 一輪中途換上場（SPEC-I §5.2-4 b）：剛拿到的那張換掉上場的一張（被換下的回包包）。o.after＝換完（或不換）之後叫
   function luSwapOk(r, id) {
@@ -4699,7 +4690,7 @@
       var n = luN(), L = r.lineup.filter(function (id) { return r.bag.indexOf(id) >= 0; }), cells = '';
       for (var i = 0; i < n; i++) {
         var x = card(L[i]);
-        cells += x ? '<button type="button" class="lu-slot" data-out="' + esc(L[i]) + '" aria-label="' + esc(LU('swapIn') + '：' + x.artist + '《' + x.album + '》') + '">' + luMini(r, L[i]) + starsHTML(x, { cls: 'sm' }) + earDotsHTML(r, L[i]) + '</button>'
+        cells += x ? '<button type="button" class="lu-slot" data-out="' + esc(L[i]) + '" aria-label="' + esc(LU('swapIn') + '：' + x.artist + '《' + x.album + '》') + '">' + luMini(r, L[i]) + luStarsHTML(r, L[i], { cls: 'sm' }) + earDotsHTML(r, L[i]) + '</button>'
           : '<button type="button" class="lu-slot empty" data-out="" aria-label="' + esc(LU('empty')) + '"><span class="lu-mini empty">' + esc(LU('empty')) + '</span></button>';
       }
       var html = '<div class="hd"><h3>' + esc(LU('swapWhich')) + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
@@ -4712,7 +4703,7 @@
         var b = e.target.closest && e.target.closest('[data-out],[data-a=close]'); if (!b) return;
         if (!b.hasAttribute('data-out')) return fin(false);
         var out = b.getAttribute('data-out') || null, rs = doChoose({ type: 'lineupSwap', inId: inId, outId: out });
-        if (rs && rs.ok) { sfx('select'); toast(LU('swapped', { album: c.album })); }
+        if (rs && rs.ok) { sfx('select'); toast(LU('swapped', { album: c.album }), 'keep'); }   // keep：換完重畫來客畫面（go night 的 cleanup）照留
         fin(!!(rs && rs.ok));
       });
       // ✕ 與 floatSheet 自己的關閉（data-a=close 已經移掉面板）：也算不換
@@ -4725,9 +4716,18 @@
   function wornHd(html) {
     var r = save.run, p = r && r.pending, w = p && p.type === 'reward' && Array.isArray(p.worn) ? p.worn.filter(function (x) { return x && card(x.id); }) : [];
     if (!w.length || !wrOn(r) || !WR('got')) return html;
-    var tag = '<p class="lb-worn" data-tut="worn">' + w.map(function (x) { return esc(WR('got', { album: card(x.id).album, n: x.n | 0 })); }).join('<br>') + '</p>';
-    var k = html.indexOf('</div>');
-    return k >= 0 && /^<div class="hd">/.test(html) ? html.slice(0, k + 6) + tag + html.slice(k + 6) : tag + html;
+    var full = w.map(function (x) { return WR('got', { album: card(x.id).album, n: x.n | 0 }); });
+    var k = html.indexOf('</div>'), hd = k >= 0 && /^<div class="hd">/.test(html);
+    // 修正棒 11-22（審查：375×548 多一行 16 px → 面板超過橫條門檻、店景收成 79 px）：矮螢幕（< 600）改寫在標題列右邊（換掉「包包 n 張」那格、一行省略），
+    //   全句放讀屏字；高的照舊標題下一行全句
+    var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+    if (hd && vh < 600 && WR('gotShort')) {
+      var chip = '<span class="sub lb-worn s" data-tut="worn" role="note" aria-label="' + esc(full.join('。')) + '">' + esc(w.map(function (x) { return WR('gotShort', { album: card(x.id).album, n: x.n | 0 }); }).join('、')) + '</span>';
+      var h0 = html.slice(0, k), re = /<span class="sub">[^<]*<\/span>/;
+      return (re.test(h0) ? h0.replace(re, chip) : h0 + chip).replace(/^<div class="hd">/, '<div class="hd wn">') + html.slice(k);
+    }
+    var tag = '<p class="lb-worn" data-tut="worn">' + full.map(esc).join('<br>') + '</p>';
+    return hd ? html.slice(0, k + 6) + tag + html.slice(k + 6) : tag + html;
   }
   // 第一次聽膩：老闆說一句（save.seen.wear；領獎畫面）
   function wornFirst(p) {
@@ -4744,7 +4744,6 @@
     if (r.over && !r.pending) return go('end');
     // 第 C 波（SPEC-C §2.4、§4.3；CRITIQUE 1.1）：今天的攤位放行——照畫來客畫面，底部換成攤位面板（stalls.js）
     var nstep = E.nextStep(r);
-    if (nstep === 'stall' && luStallStep(r)) return luStallNight(r);   // 第 I 波 I-2：攤位逛完、收攤前的上場那一步
     if (nstep === 'stall' && UI.stallsOk) return stallNight(r);
     if (nstep !== 'fight') return resumeRun();
     // 第 I 波 I-2：換輪沒攤位／中繼點選秀完（lineupDue、還沒挑）＋前期省一下＝直接用「幫我挑」（上場列照新的畫）
@@ -4991,7 +4990,7 @@
     var tiles = tileHTML(card(aceIdOf(r)), { text: false }) + r.bag.map(function (id) {
       var c = card(id); if (!c) return '';
       var sd = E.isSeed(r, C, id), gf = shop && !sd && E.isGift(r, C, id);   // 從唱片櫃帶來的（種子）：小籤「櫃裡帶來」；老闆送的：逛店時標「老闆送的」
-      return tileHTML(c, { text: false, store: isStore(id), cls: (sd ? 'seed' : gf ? 'gift' : '') + luBagCls(r, id), extra: luBagTag(r, id) + (sd ? tag('', SHU('seedTag')) : gf ? tag('gf', SHU('giftTag')) : '') + luBagExtra(r, id) });
+      return tileHTML(c, { text: false, store: isStore(id), starCard: luCardOf(r, id), cls: (sd ? 'seed' : gf ? 'gift' : '') + luBagCls(r, id), extra: luBagTag(r, id) + (sd ? tag('', SHU('seedTag')) : gf ? tag('gf', SHU('giftTag')) : '') + luBagExtra(r, id) });
     }).join('');
     var note = shop ? '<p class="sub bgnote">' + esc(SHU('bagNote')) + '</p>' : '';
     var html = '<div class="hd"><h3>' + esc(bagText(r.bag.length)) + '</h3>' + (shop ? '<span class="bgmoney">' + moneyHTML(r.money) + '</span>' : '') +
@@ -6209,7 +6208,8 @@
         luFirst: function () { var r = save.run, per = (E.TRIAL && E.TRIAL.classes && E.TRIAL.classes.length) || 5; return luOn(r) && (r.round | 0) * per + 1 >= (r.lineupFrom | 0) && LU('firstLoot') ? LU('firstLoot') : null; },
         swapOk: function () { var r = save.run; return luLive(r) && Array.isArray(r.lineup) && (r.idx | 0) < 4 && UI.screen === 'reward'; },   // 這一輪最後一位（藏家）收完就換輪（重挑上場）：不給
         swapIn: function (id) { return luSwapSheet(id); },
-        earDots: function (id) { return earDotsHTML(save.run, id); }
+        earDots: function (id) { var r = save.run; return r && r.bag.indexOf(id) >= 0 ? earDotsHTML(r, id) : ''; },   // 戰利品列：只畫包包裡已經有的那張（新的一定 7 顆全亮；修正棒 11-22）
+        luStars: function (id) { return luCardOf(save.run, id) ? luStarsHTML(save.run, id) : ''; }
       });
       UI.lootOk = true;
     } catch (e) { console.error(e); }
@@ -6257,7 +6257,8 @@
         onSellOpen: function () { UI.sellNudge = null; if (!save.seen.counterSell) { save.seen.counterSell = true; persist(); } },
         // 第 I 波 I-2（上場制關＝''）：櫃檯賣給老闆的格子標「上場」／「替補」、畫耐聽點（賣掉上場那張＝那一格空著，下一位開打前補）
         luTag: function (id) { var r = save.run; return luLive(r) && Array.isArray(r.lineup) ? (r.lineup.indexOf(id) >= 0 ? LU('onTag') : (r.bench || []).indexOf(id) >= 0 ? LU('bench') : '') : ''; },
-        earDots: function (id) { return earDotsHTML(save.run, id); } });
+        earDots: function (id) { return earDotsHTML(save.run, id); },
+        luCard: function (id) { return luCardOf(save.run, id); } });
     } catch (e) { console.error(e); }
   }
   // ======================================================================= 活店（SPEC-H 棒 4：導演在 crowd.js；這裡只接開關、模式、暫停與幾個讓位點）

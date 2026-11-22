@@ -80,7 +80,7 @@ import path from 'path';
 import { createRequire } from 'module';
 import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, hitPoint, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
-  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4, lootReady, passLoot, clearStall, lootState, stallState, passCards } from './e2e-lib.mjs';
+  watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4, lootReady, passLoot, clearStall, lootState, stallState, passCards, luSkip } from './e2e-lib.mjs';
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
@@ -1039,6 +1039,7 @@ async function run() {
         // 跳到第 23 位、下一場強制輸（說情也用掉）→ 結算
         await page.evaluate(() => { window.__lab.jump(23); window.__lab.loseNext(1, { noRetry: true }); });
         await waitScreen(page, 'night'); await sleep(500);
+        await luSkip(page);                                    // 第 I 波 I-2（出貨上場制開）：跳到第 23 位＝這一輪要挑上場，面板照預設帶過
         await jsClick(page, '[data-a=go]');
         await duelReady(page);
         await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
@@ -1119,6 +1120,7 @@ async function run() {
         stage = '50';
         await page.evaluate(() => { window.__lab.own([window.DipLabContent.aces.pearl], 'boss'); window.__lab.jump(12); window.__lab.loseNext(1, { noRetry: true }); });
         await waitScreen(page, 'night'); await sleep(400);
+        await luSkip(page);                                    // 第 I 波 I-2：跳到第 12 位＝上場面板照預設帶過
         await jsClick(page, '[data-a=go]'); await duelReady(page);
         await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
         await advanceUntil(page, () => window.__lab.screen() === 'end', null, 40000);

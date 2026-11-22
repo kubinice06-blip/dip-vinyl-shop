@@ -105,6 +105,10 @@
 //     會讀的 到第 50 位 18.6→17.0%（−1.6）、一般玩家中位 29→29、新手第 1–3 位死 13.7→13.7%、到第 10 位 30.9→30.9%（W2、L1、§9 三條過）；W1 86.0%、W3 7.3%、W4 74.3%、W5 0.92／0.980；
 //     L2 'worn' +1.1（'swap' −0.0）；耐聽 6 格 −2.2／W3 8.6%、8 格 −1.3／W3 6.1%；--enc on（上場開）LS1 +0.0、LS3 +0.0、LS5 91.1／75.7%、LS6 2.70／2.40／2.75 手；
 //     ?fac=1 三派 n1000 F1 1.06／1.13、F5 25.2／25.7／27.8%、F8 三派平均全過（但異端 --ace heresy --fac n4000 會讀的到第 50 位 25.1→28.0%＝+3.0，只列）。旗標關 n200 smart／--enc on 跟改前位元相同
+//   11-22 I-2 修正棒（build2/FINAL.md、fix/sim/）：側袋不佔配件格（smart 器材行看到就買，會讀的 24% 趟）、攤位不再停在上場那一步（上場一律 lineupDue）、寶箱那張換輪算新——
+//     n4000 會讀的 到第 50 位 17.4% 對 關 18.6%（−1.3）、一般玩家中位 30 對 29（+1）、新手逐值相同；W1 86.7%、W3 6.4%、W4 74.7%、W5 0.92／0.981；
+//     --bench 1（樂歷 Lv3）：會讀的 18.2%（−0.4）、一般玩家中位 +1、L2 +0.9、W3 1.2%（替補分攤＝規格 W3 只判沒替補）；benchMode 'worn2'（兩層才頂上）W3 7.0% 但 L2 −0.3（不採）。
+//     出貨 content C.lineup.on／C.wear.on＝true：量「全關」一律寫明 --lineup off（n200 smart／--enc on 跟改前 base 位元相同）
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
 //   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
 //   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
@@ -504,9 +508,7 @@ function runOnce(pol, flow, i, A) {
     const step = EN.nextStep(run);
     if (step === 'stall' || step === 'draft') {                         // 第 C 波：今天的攤位、中繼點開局選秀（bare 不逛攤位）
       const ch = step === 'stall' && flow === 'bare' && run.pending.pick == null ? { type: 'stallLeave' } : EN.cPolicy(run, C, COPT);   // bare 先不逛（剩下錄音室照帶過）
-      const luq = LU && ch.type === 'stall' && ch.act === 'lineup' ? !!run.pending.lineup.quiet : null;
       ok(EN.choose(run, C, ch), 'cPolicy ' + step, ch);
-      if (luq != null) luPick(run, A.lu, LU, luq);
       continue;
     }
     if (step === 'reward') {
@@ -781,10 +783,10 @@ function luRecLineup(run, L, X) {                                        // 一�
 }
 function luPick(run, L, X, quiet) { L.picks++; L.steps++; if (quiet) L.quiet++; luRecLineup(run, L, X); }
 function luPrep(run, L, X) {
-  const wasNull = !Array.isArray(run.lineup);
+  const wasNull = !Array.isArray(run.lineup), quiet = wasNull && run.lineupDue === true && EN.lineupQuiet(run, C);   // 修正棒 11-22：上場一律走 lineupDue（攤位收攤之後）＝這裡記每輪挑幾次、前期省一下幾次
   for (const ch of EN.lineupPrep(run, C)) {
     ok(EN.choose(run, C, ch), 'lineupPrep', ch);
-    if (ch.type === 'lineup') { if (wasNull) { L.picks++; luRecLineup(run, L, X); } else L.fills++; }
+    if (ch.type === 'lineup') { if (wasNull) luPick(run, L, X, quiet); else L.fills++; }
     else if (ch.type === 'lineupSwap') L.swaps++;
     else if (ch.type === 'benchSwap') L.bench++;
   }

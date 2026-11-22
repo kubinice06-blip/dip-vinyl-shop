@@ -400,6 +400,11 @@
     return o;
   }
   const hasRelic = (st, id) => st.p.relics.some(r => r.id === id);
+  // 第 I 波 I-2 修正棒（11-22）：type 'slot' 的配件（唱片袋側袋＝替補格）不佔配件格——relicMax 只算一般配件（原本佔一格＝花 $3,000 換一個陷阱，審查 #5）。
+  //   isSlotRelic(content, id)、relicN(run, content)＝一般配件幾件、relicFull(run, content, id)＝要放進 id 得先丟一件。上場制關著（沒有側袋）＝跟 run.relics.length 一模一樣
+  const isSlotRelic = (content, id) => !!(content && content.relics && content.relics[id] && content.relics[id].type === 'slot');
+  const relicN = (run, content) => (run.relics || []).filter(id => !isSlotRelic(content, id)).length;
+  const relicFull = (run, content, id) => !isSlotRelic(content, id) && relicN(run, content) >= CFG.relicMax;
   const noteOf = (st, id) => { const r = st.p.relics.find(x => x.id === id); return { relic: id, text: (r && r.note) || id }; };
   // 監聽耳機：v4 新效果（第一手他不唬人）只在 relic.v4 打開時生效（〔補〕⚠規則，預設不上架）
   const headphoneOn = st => st.p.relics.some(r => r.id === 'headphone' && r.v4 === true);
@@ -939,7 +944,7 @@
     const apex = !!(o && o.apex) && !!src.ace && !!apexCfg(content);
     const d = { hp, maxHp, atk: src.atk | 0, def: src.def | 0, noteText: (((content || {}).trial || {}).notes) || null,
       bag: (src.bag || []).map(x => (o && o.wear && wornCard(content, src, x)) || cardFrom(content, x)), ace: src.ace ? cardFrom(content, apex ? apexAceId(src, content) : content.aces[src.ace]) : null,
-      relics: (src.relics || []).map(r => relicObj(r, content)).filter(Boolean) };
+      relics: (src.relics || []).map(r => relicObj(r, content)).filter(r => r && !r.slot) };   // 側袋（slot）對決裡沒有效果、也不佔對決的配件格
     const fac = !!(o && o.fac) && !!src.fac && typeof src.fac === 'object' && TIERS.includes(src.ace) && !!facCfg(content);
     if (apex && d.ace) {
       d.ability = fac ? apexAbilityOf(content, d.ace.id, src) : abilityOf(content, d.ace.id);
@@ -1380,7 +1385,8 @@
       eDeck: (E.deckPub || []).map(x => Object.assign({}, x, { plus: x.plus ? Object.assign({}, x.plus) : null })),
     };
     if (P.hand.some(c => c && c.worn != null)) {           // 第 I 波耐聽：手牌每張帶 worn（聽膩幾層）、ear（現在剩幾格＝開打時減這場出過幾次）
-      out.hand = P.hand.map(c => c && c.worn != null ? Object.assign({}, c, { ear: Math.max(0, (c.ear | 0) - (st.wearOn && P.plays ? P.plays[c.id] | 0 : 0)) }) : c);
+      // 修正棒 11-22：不記耐聽的對決（說情重打、切磋）ear＝null＝畫面不畫「再一次就膩」（出了也不會膩）；聽膩的紅字照畫（星照樣扣）
+      out.hand = P.hand.map(c => c && c.worn != null ? Object.assign({}, c, { ear: st.wearOn && P.plays ? Math.max(0, (c.ear | 0) - (P.plays[c.id] | 0)) : null }) : c);
     }
     if (st.lineup) out.lineup = true;                     // 第 I 波上場制：手牌＝上場那幾張（畫面不播滑入、不出洗牌字）
     if (st.apexMode) {                                    // 頂點卡試做：王牌不能當唱片丟（ace＝null；aceCard 照舊），多能力欄
@@ -2490,7 +2496,15 @@
       const SE = S.enc && typeof S.enc === 'object' ? S.enc : (S.enc = { fights: 0, lit: 0, carryIn: 0, carryOut: 0, used: 0 }), de = duel.stats.enc || {};
       SE.fights++; for (const k of ['lit', 'carryIn', 'carryOut', 'used']) SE[k] = (SE[k] | 0) + (de[k] | 0);
     }
-    if (worn && worn.length && run.pending && run.pending.type === 'reward' && !run.pending.prologue) run.pending.worn = worn.map(x => ({ id: x.id, n: x.n }));
+    if (worn || Array.isArray(run.wornLate)) {                 // 第 I 波 I-2 領獎小字（pending.worn）；修正棒 11-22：輸了等說情＝先記 run.wornLate，重打贏了一起寫進領獎
+      const pd = run.pending, all = [];
+      for (const x of (Array.isArray(run.wornLate) ? run.wornLate : []).concat(worn || [])) {
+        if (!x || !run.bag.includes(x.id)) continue;
+        const k = all.findIndex(y => y.id === x.id); if (k >= 0) all[k].n = Math.max(all[k].n, x.n | 0); else all.push({ id: x.id, n: x.n | 0 });
+      }
+      if (pd && pd.type === 'retry') { if (all.length) run.wornLate = all; }
+      else { if (all.length && pd && pd.type === 'reward' && !pd.prologue) pd.worn = all; delete run.wornLate; }
+    }
     const out = { win, by: duel.over.by, enemyId, met, offer: run.pending, over: run.over, earn, pos, cls, heal, levelUps: ups, aceWon, aceFirst, aceNew, aceUnlock };
     if (worn) out.effects = worn.map(x => ({ t: 'worn', id: x.id, n: x.n }));
     if (duel.p.enc) out.encCarry = encCarry;
@@ -3037,8 +3051,8 @@
     const pre = run.consign && run.consign.due <= run.round ? ['consignGet'] : [];   // 寄賣到期：選組之前先走到櫃檯領
     const S = wcStats(run); S.sess++; if (cp) S.cpSess++;
     run.pending = { type: 'stall', after, pos: run.pos, cp, first, groups, pick: null, q: pre.slice(), k: 0, post, cur: null, done: [] };
-    // 第 I 波 I-2：上場那一步＝多一個鍵 lineup（不放進 post：舊頁面不認得這個鍵、照舊收攤，上場照 lineupDue 再開；SPEC-I §5.4）
-    if (lineupOn(run) && run.lineupDue && luRound(run)) { const P0 = lineupPolicy(run, content); run.pending.lineup = { pick: P0.ids, bench: P0.bench, quiet: lineupQuiet(run, content) }; }
+    // 第 I 波 I-2：上場不進攤位 pending（修正棒 11-22；原本多一個鍵 lineup、q 走完停在上場那一步＝舊頁面讀到那一步會無限遞迴）：
+    //   攤位照舊收攤，run.lineupDue 還是 true → 來客畫面一進來開上場面板（沒攤位那條同一條路）
     if (pre.length) stallEnter(run, content);
   }
   // 配件池（器材行、市集器材、老闆的倉庫）＝rewards.relicPool ∪ relicShop.pool 扣身上的；minusShop＝再扣這一輪櫃檯在賣的（同一輪兩邊不賣同一件；CRITIQUE 1.9c）
@@ -3054,10 +3068,7 @@
     const p = run.pending; if (!p || p.type !== 'stall') return;
     if (p.k >= p.q.length) {                                     // 定稿 CRITIQUE 1.2：選組前（寄賣領完）不結束
       p.cur = null; if (p.pick == null) return;
-      if (p.lineup && lineupOn(run) && luRound(run)) {             // 第 I 波 I-2：收攤前停在上場那一步（攤位上新拿到的也算進去：重算「幫我挑」）
-        const P0 = lineupPolicy(run, content); p.lineup.pick = P0.ids; p.lineup.bench = P0.bench; p.lineup.quiet = lineupQuiet(run, content); return;
-      }
-      run.pending = null; return;
+      run.pending = null; return;                                  // 第 I 波 I-2：上場制那幾輪 lineupDue 還在＝收攤後來客畫面開上場面板
     }
     const ST = wcCfg(content).stall, kind = p.q[p.k], key = wcKey(run, 'stall#' + p.after + '#' + kind + '#' + p.k), pos = run.pos, T = run.tier;
     const cur = { kind, key };
@@ -3074,7 +3085,7 @@
     } else if (kind === 'gear') {
       cur.relics = wcRelics(run, content, key, ST.gearN, true);
     } else if (kind === 'warehouse') {
-      cur.relics = run.relics.length >= CFG.relicMax ? [] : wcRelics(run, content, key, 2, false);
+      cur.relics = relicN(run, content) >= CFG.relicMax ? [] : wcRelics(run, content, key, 2, false);
       if (!cur.relics.length) cur.cards = wcPick(wcPool(content, wcTh(content, pos, 'good', T)), key + '#wc', 2, wcSkip(run));   // 配件滿 3 件：改唱片二選一（好貨）
     } else if (kind === 'promo') {
       const tn = ctxTunes();                                       // 唱片櫃最多的兩個頻率 ×3（畫面 setCtx 給；沒設＝不加權）
@@ -3229,7 +3240,7 @@
     if (!(cur.relics || []).includes(ch.relicId) || run.relics.includes(ch.relicId) || !relicOk(content, ch.relicId)) return 'notOffered';
     const pr = paid ? wcCfg(content).stall.gearPrice : 0;
     let earn = 0, drop = null;
-    if (run.relics.length >= CFG.relicMax) { if (!ch.dropRelicId || !run.relics.includes(ch.dropRelicId)) return 'relicsFull'; drop = ch.dropRelicId; earn = paid ? sellValue(content, drop) : 0; }
+    if (relicFull(run, content, ch.relicId)) { if (!ch.dropRelicId || !run.relics.includes(ch.dropRelicId) || isSlotRelic(content, ch.dropRelicId)) return 'relicsFull'; drop = ch.dropRelicId; earn = paid ? sellValue(content, drop) : 0; }
     if (run.money + earn < pr) return 'money';
     if (drop) { run.relics.splice(run.relics.indexOf(drop), 1); run.stats.relicsSold.push(drop); wcEarn(run, 'sell', earn); effects.push({ loseRelic: drop, earn }); }
     if (pr) { wcSpend(run, 'gear', pr); run.stats.relicsBought.push(ch.relicId); }
@@ -3509,18 +3520,9 @@
   }
   // 上場的四種選擇（choose 轉進來；上場制關著不會到這裡＝'badChoice'）
   function luChoose(run, content, ch) {
-    const fail = error => ({ ok: false, error, effects: [] }), effects = [], p = run.pending, bag = run.bag || [], n = luN(content);
+    const fail = error => ({ ok: false, error, effects: [] }), effects = [], bag = run.bag || [], n = luN(content);
     switch (ch.type) {
-      // 攤位收尾的上場那一步（{type:'stall', act:'lineup', ids, bench?}）：q 走完、選過組、pending 有 lineup 鍵 → 清 pending
-      case 'stall': {
-        if (ch.act !== 'lineup') return fail('badAct');
-        if (!p || p.type !== 'stall' || !p.lineup || p.pick == null || p.k < p.q.length) return fail('noLineup');
-        const e = luSet(run, content, ch.ids, ch.bench, false); if (e) return fail(e);
-        run.pending = null;
-        effects.push({ lineup: run.lineup.slice(), bench: run.bench.slice() });
-        return { ok: true, effects };
-      }
-      // 沒有攤位時、上場那張離開包包之後（lineupDue）：{type:'lineup', ids, bench?}；一輪中途（lineup 還有人）只能補空格
+      // 換輪（攤位收攤之後、沒有攤位、中繼點選秀完）、上場那張離開包包之後（lineupDue）：{type:'lineup', ids, bench?}；一輪中途（lineup 還有人）只能補空格
       case 'lineup': {
         if (!run.lineupDue || run.pending || run.duel || run.over || !luRound(run)) return fail('noLineup');
         const e = luSet(run, content, ch.ids, ch.bench, Array.isArray(run.lineup)); if (e) return fail(e);
@@ -3555,13 +3557,15 @@
   }
   // 替補的備案（SPEC-I §5.2-3；benchMode 'worn'，施工 L2 量到手動替補 ≤0 才換）：主線開打前（這一位第一場），上場裡聽膩最多的那張
   //   比替補裡聽膩最少的那張多層 → 對調（替補頂上、聽膩的坐進替補格）；有幾格替補最多換幾次。回換了幾張（effects 不出：畫面看 run.lineup／bench 變了；run.stats.benchAuto 累計）
+  //   修正棒 11-22：'worn2'（量測用的選項，出貨不用）＝上場那張聽膩到第 2 層才頂上（W3「有替補的人耐聽有沒有感」對照）
   function luAutoBench(run, content) {
-    if (luCfg(content).benchMode !== 'worn' || !wearOn(run) || !Array.isArray(run.lineup) || !Array.isArray(run.bench) || !run.bench.length) return 0;
+    const mode = luCfg(content).benchMode, need = mode === 'worn2' ? 2 : 1;
+    if ((mode !== 'worn' && mode !== 'worn2') || !wearOn(run) || !Array.isArray(run.lineup) || !Array.isArray(run.bench) || !run.bench.length) return 0;
     let k = 0;
     for (let g = 0; g < run.bench.length; g++) {
       const L = run.lineup, B = run.bench, lay = id => wearLayers(run, content, id);
       const w = L.slice().sort((a, b) => lay(b) - lay(a) || L.indexOf(a) - L.indexOf(b))[0], b = B.slice().sort((x, y) => lay(x) - lay(y) || B.indexOf(x) - B.indexOf(y))[0];
-      if (w == null || b == null || !(lay(w) > lay(b)) || !run.bag.includes(b)) break;
+      if (w == null || b == null || !(lay(w) >= need && lay(w) > lay(b)) || !run.bag.includes(b)) break;
       L[L.indexOf(w)] = b; B[B.indexOf(b)] = w; k++;
       const S = run.stats || (run.stats = {}); S.benchAuto = (S.benchAuto | 0) + 1;
     }
@@ -3605,6 +3609,18 @@
     const has = id => typeof id === 'string' && run.bag.includes(id);
     const ids = a => Array.isArray(a) ? a.filter((id, k, x) => has(id) && x.indexOf(id) === k) : [];
     if ((on || won) && !(Number.isInteger(run.lineupFrom) && run.lineupFrom > 0)) run.lineupFrom = luCfg(content).from | 0;
+    // 修正棒 11-22：攤位 pending 不再帶 lineup 鍵。施工期間的存檔停在「上場那一步」（有 lineup 鍵、q 走完、選過組、沒站在開）＝當成收攤
+    //   （開著：lineupDue 照舊 → 來客畫面開上場面板；關著＝退回現況。原本關著只拿掉鍵、pending 留著 → 攤位 next() 直接收攤 → 回來客畫面 → 又是攤位，無限遞迴）
+    const P = run.pending;
+    if (P && typeof P === 'object' && P.type === 'stall' && 'lineup' in P) {
+      const step = P.pick != null && Array.isArray(P.q) && Number.isInteger(P.k) && P.k >= P.q.length && !P.cur;
+      if (step) { run.pending = null; if (on && luRound(run) && !Array.isArray(run.lineup)) run.lineupDue = true; } else delete P.lineup;
+    }
+    if (P && typeof P === 'object' && (P.type === 'reward' || P.type === 'level') && 'luLate' in P) { if (on) P.luLate = ids(P.luLate); else delete P.luLate; }   // 寶箱那張（choose 包裝層）
+    if (Array.isArray(run.wornLate) || 'wornLate' in run) {           // 說情重打那位：第一場聽膩的（finishFight）
+      const wl = won && Array.isArray(run.wornLate) ? run.wornLate.filter(x => x && has(x.id) && Number.isInteger(x.n) && x.n > 0) : [];
+      if (wl.length) run.wornLate = wl; else delete run.wornLate;
+    }
     if (on) {
       run.lineupFresh = ids(run.lineupFresh);
       run.lineup = Array.isArray(run.lineup) ? ids(run.lineup).slice(0, luN(content)) : null;
@@ -3614,7 +3630,6 @@
       if (Array.isArray(run.lineup) && luRound(run) && run.lineup.length < Math.min(luN(content), run.bag.length)) run.lineupDue = true;
     } else {
       for (const k of ['lineup', 'bench', 'lineupFresh', 'lineupDue', 'lineupBonus']) delete run[k];
-      if (run.pending && run.pending.type === 'stall') delete run.pending.lineup;
     }
     if (won) {
       if (!wearOn(run)) run.wear = {};
@@ -3927,7 +3942,7 @@
     if (p.type === 'reward' || p.type === 'level' || p.type === 'retry') {
       const rp0 = runPolicy(run, content, o);
       if (o.takeSell && rp0 && rp0.type === 'skip' && p.type === 'reward' && p.kind && (p.cards || []).length && !p.cardDone &&
-        !(p.need === 'cardOrRelic' && (p.relics || []).length && run.relics.length < CFG.relicMax)) {
+        !(p.need === 'cardOrRelic' && (p.relics || []).length && relicN(run, content) < CFG.relicMax)) {
         const best = p.cards.filter(id => !run.bag.includes(id)).sort((x, y) => priceOf(content, y) - priceOf(content, x))[0];
         if (best) { if (!Array.isArray(run.sellNext)) run.sellNext = []; run.sellNext.push(best); return { type: 'take', cardId: best }; }
       }
@@ -3949,7 +3964,6 @@
       const v0 = val(p.groups[0]), v1 = p.groups[1] ? val(p.groups[1]) : -1;
       return { type: 'stallPick', group: v1 > v0 || (v1 === v0 && hash01(wcKey(run, 'pickTie#' + p.after)) < 0.5) ? 1 : 0 };
     }
-    if (p.pick != null && p.k >= p.q.length && p.lineup && lineupOn(run)) { const P0 = lineupPolicy(run, content); return { type: 'stall', act: 'lineup', ids: P0.ids, bench: P0.bench }; }   // 第 I 波 I-2：收攤前的上場那一步
     const cur = p.cur; if (!cur) return null;
     const base = bagScore(content, run.bag, run), gainOf = id => bagScore(content, run.bag.concat([id]), run) - base;
     const bestOf = ids => { let b = null, g = BAG_EPS; for (const id of ids || []) { if (run.bag.includes(id)) continue; const x = gainOf(id); if (x > g) { g = x; b = id; } } return b; };
@@ -3966,9 +3980,15 @@
         }
         return act('done');
       }
-      case 'gear': { if (run.relics.length < CFG.relicMax && (cur.relics || []).length && run.money - ST.gearPrice >= 0) return act('buyRelic', { relicId: cur.relics[0] }); return act('done'); }
+      case 'gear': {
+        if (relicN(run, content) < CFG.relicMax && (cur.relics || []).length && run.money - ST.gearPrice >= 0) return act('buyRelic', { relicId: cur.relics[0] });
+        // 第 I 波 I-2 修正棒：側袋不佔配件格＝配件滿了看到也買（上場制開著才有這件）
+        const sl = lineupOn(run) ? (cur.relics || []).find(id => isSlotRelic(content, id) && !run.relics.includes(id)) : null;
+        if (sl && run.money - ST.gearPrice >= 0) return act('buyRelic', { relicId: sl });
+        return act('done');
+      }
       case 'warehouse': {
-        if ((cur.relics || []).length && run.relics.length < CFG.relicMax) return act('relic', { relicId: (o.boostFirst && cur.relics.find(x => /^boost_/.test(x))) || cur.relics[0] });
+        if ((cur.relics || []).length && relicN(run, content) < CFG.relicMax) return act('relic', { relicId: (o.boostFirst && cur.relics.find(x => /^boost_/.test(x))) || cur.relics[0] });
         const b = bestOf(cur.cards); return b ? act('take', { cardId: b }) : act('skip');
       }
       case 'gig': return act('tickets', { n: ticketsFor(run, content, reserve) });
@@ -3987,7 +4007,7 @@
       case 'snack': return Math.min(ST.snackHp, run.maxHp - run.hp) * 1.0;
       case 'dig': return sat ? 0.4 : 2;
       case 'trade': return sat || run.money < reserve + 1000 ? 0.1 : 1.2;
-      case 'gear': return run.relics.length < CFG.relicMax && run.money >= ST.gearPrice ? 1.5 : 0;
+      case 'gear': return relicN(run, content) < CFG.relicMax && run.money >= ST.gearPrice ? 1.5 : 0;
       case 'gig': return gigPrice(run, content, 1) <= run.money - reserve ? 1.0 : 0;
       case 'promo': return 0.6;
       case 'home': return 0.9;
@@ -4003,12 +4023,17 @@
   // 第 I 波 I-2：上場制／耐聽開著的 run＝四種上場選擇轉給 luChoose；其他照舊（chooseCore），做完同步上場、替補、新拿到的、耐聽（luBagSync）。關著＝逐字 chooseCore
   function choose(run, content, ch) {
     if (!(lineupOn(run) || wearOn(run)) || !Array.isArray(run.bag)) return chooseCore(run, content, ch);
-    if (ch && lineupOn(run) && (['lineup', 'lineupSwap', 'benchSwap'].includes(ch.type) || (ch.type === 'stall' && ch.act === 'lineup'))) return luChoose(run, content, ch);
-    const before = run.bag.slice(), r = chooseCore(run, content, ch);
+    if (ch && lineupOn(run) && ['lineup', 'lineupSwap', 'benchSwap'].includes(ch.type)) return luChoose(run, content, ch);
+    const before = run.bag.slice(), round0 = run.round, p0 = run.pending, r = chooseCore(run, content, ch);
     if (r && r.ok) {
       luBagSync(run, content, before);
-      const p = run.pending;                                       // 攤位最後一站買的也算「這一輪新拿到的」：上場那一步的 quiet 重算
-      if (p && p.type === 'stall' && p.lineup && p.pick != null && p.k >= p.q.length) p.lineup.quiet = lineupQuiet(run, content);
+      // 修正棒 11-22：打完一位、領獎／升級還沒選完就拿到的（藏家寶箱）＝記在這個 pending（luLate），換輪時併進新一輪的 lineupFresh——
+      //   跟「領獎那一下就換輪」（沒有升級）同一個結果：下一輪算新拿到的（原本有升級＝被換輪清掉）
+      if (lineupOn(run)) {
+        const late = (p0 && Array.isArray(p0.luLate) ? p0.luLate : []).concat(run.bag.filter(id => !before.includes(id))).filter(id => run.bag.includes(id)), p = run.pending;
+        if (run.round !== round0) { for (const id of late) if (!run.lineupFresh.includes(id)) run.lineupFresh.push(id); }
+        else if (p && (p.type === 'reward' || p.type === 'level') && late.length) p.luLate = uniq(late);
+      }
     }
     return r;
   }
@@ -4049,8 +4074,8 @@
         if (!rew || rew.relicDone) return fail('noRelicOffer');
         if (!rew.relics.includes(ch.relicId)) return fail('notOffered');
         if (run.relics.includes(ch.relicId)) return fail('owned');
-        if (run.relics.length >= CFG.relicMax) {
-          if (!ch.dropRelicId || !run.relics.includes(ch.dropRelicId)) return fail('relicsFull');
+        if (relicFull(run, content, ch.relicId)) {
+          if (!ch.dropRelicId || !run.relics.includes(ch.dropRelicId) || isSlotRelic(content, ch.dropRelicId)) return fail('relicsFull');
           run.relics.splice(run.relics.indexOf(ch.dropRelicId), 1); effects.push({ loseRelic: ch.dropRelicId });
         }
         run.relics.push(ch.relicId); S.relicsGot.push(ch.relicId); effects.push({ gainRelic: ch.relicId });
@@ -4193,8 +4218,8 @@
         const price = relicPrice(content, ch.relicId);
         if (price == null) return fail('notInStock');
         let sell = null;
-        if (ch.sellRelicId != null) { if (!run.relics.includes(ch.sellRelicId)) return fail('badSell'); sell = ch.sellRelicId; }
-        else if (run.relics.length >= CFG.relicMax) return fail('relicsFull');
+        if (ch.sellRelicId != null) { if (!run.relics.includes(ch.sellRelicId) || (isSlotRelic(content, ch.sellRelicId) && relicFull(run, content, ch.relicId))) return fail('badSell'); sell = ch.sellRelicId; }
+        else if (relicFull(run, content, ch.relicId)) return fail('relicsFull');
         const earn = sell ? sellValue(content, sell) : 0;
         if (run.money + earn < price) return fail('noMoney');
         if (sell) { run.relics.splice(run.relics.indexOf(sell), 1); run.money += earn; S.earned += earn; S.relicsSold.push(sell); effects.push({ loseRelic: sell, earn }); }
@@ -4653,7 +4678,7 @@
     const cOf = id => content.cards[id];
     const pickRelic = () => {
       const left = p.relics.filter(id => !run.relics.includes(id));
-      if (!left.length || run.relics.length >= CFG.relicMax) return null;
+      if (!left.length || relicN(run, content) >= CFG.relicMax) return null;
       return { type: 'relic', relicId: p.prologue ? left[fnv1a32(run.seedKey + '#relic#' + run.runNo) % left.length] : left.length > 1 ? relicPref(run, content, left) : left[0] };
     };
     if (p.need === 'cardOrRelic' && preferRelic) { const r = pickRelic(); if (r) return r; }
@@ -4725,7 +4750,7 @@
       if (!bought) break;
     }
     const rid = 'boost_' + T;
-    if (r.shop.relics.includes(rid) && r.relics.length < CFG.relicMax) {
+    if (r.shop.relics.includes(rid) && relicN(r, content) < CFG.relicMax) {
       const ch = { type: 'buyRelic', relicId: rid };
       if (choose(r, content, ch).ok) out.push(ch);
     }
@@ -4989,7 +5014,8 @@
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
     ENC_WHEN, ENC_GIVE, encCfg, encoreOf, aceEncoreOf, encoreLine, encoreTag, encFamilyKey, encorePolicy, pAceStar,
     fightSetup, SPAR, SPAR_STATES, SPAR_KEYS, SPAR_MODES, SPAR_POLICIES, sparCfg, sparAddAt, sparMode, sparPos, sparDeck, SPAR_LINE_IDS, encPending, encOffer, encView, encDef, encStart, encLoot, encFinish, encVoid, fixEnc, encPolicy,
-    LINEUP, WEAR, luCfg, wearCfg, lineupOn, wearOn, luRound, benchN, wornCard, wearLayers, lineupOf, lineupPolicy, lineupQuiet, lineupPrep, luMains, luScoreOf, fixLineup };
+    LINEUP, WEAR, luCfg, wearCfg, lineupOn, wearOn, luRound, benchN, wornCard, wearLayers, lineupOf, lineupPolicy, lineupQuiet, lineupPrep, luMains, luScoreOf, fixLineup,
+    isSlotRelic, relicN, relicFull };
   API._noCache = false;   // 組牌快取開關（WP2-0）：true＝trialDeck／radioPool 走原本的寫法（測試對照用；結果一樣、只是慢）
   return API;
 });

@@ -7,19 +7,19 @@
 //
 // 施工期間上場制要 ?lineup=1 才開（C.lineup.on／C.wear.on 出貨 false）；這支一律帶 ?lineup=1，第 1 項另外確認沒帶＝一字不變。
 // 數字照 content（上場制第 lineupFrom＝11 位那一輪起＝第 3 輪；CONTRACT §9 施工量過從 6 改 11，§5.9「打到第 5 位」「第 6–10 位」跟著是「第 10 位」「第 6–10 位」）。
-//   1  旗標關（沒 ?lineup=1；content 出貨改開之後，頁面一載入就把 C.lineup.on／C.wear.on 蓋回 false＝模擬關著）：第 11 位來客畫面沒有上場面板、沒有上場列；run 沒有上場鍵；換輪攤位 pending 沒有 lineup 鍵、逛完直接回來客（逐字現況）
+//   1  旗標關（沒 ?lineup=1；content 出貨改開之後，頁面一載入就把 C.lineup.on／C.wear.on 蓋回 false＝模擬關著）：第 11 位來客畫面沒有上場面板、沒有上場列；run 沒有上場鍵；換輪攤位逛完直接回來客（逐字現況）
 //   2  換輪沒攤位（跳到第 11 位＝lineupDue）：上場面板一進來就開、預設五張＝engine.lineupPolicy、按「就這五張」（真點）→ 上場列五張、
 //      開打後手牌恰好是那五張（＋王牌）、view.lineup；出一手之後手牌還是那五張、沒有滑入動畫（Element.animate 沒有 translateY(40px)）。
 //      375×548：面板不捲（包包格自己捲）、鈕 ≥44、頭像列不被切、上場列不擋來客條與開打鈕、店不捲
-//   3  攤位收尾那一步（第 16 位的攤位「今天不逛了」）：攤位收掉後跳上場面板、pending 停在 stall＋lineup；重新整理照畫回面板；點格子＋點包包一張＝換掉；
-//      「幫我挑」回到預設；送出＝pending 清掉、上場照選的
+//   3  攤位收攤之後（第 16 位的攤位「今天不逛了」）：攤位收掉（pending 清掉）、lineupDue → 來客畫面跳上場面板；重新整理照畫回面板；點格子＋點包包一張＝換掉；
+//      「幫我挑」回到預設；送出＝lineupDue 清掉、上場照選的（修正棒 11-22：攤位 pending 不再停在「上場那一步」）
 //   4  耐聽記號：上場那幾張設「再一次就膩」（g 6）、一張聽膩（n 1）→ 手牌黃點、紅字 −1＋斜紋、打開那張主打軸屬性鈕 −1（紅字不蓋星數：矩形不相交）；
 //      自動打完 → 領獎畫面小字「《…》聽膩了（−1）…」；包包面板耐聽點、上場小籤
 //   5  一輪中途賣掉上場那張（櫃檯賣給老闆）→ 下一位開打前跳面板（標題「上場少一張」、原本上場的鎖著）→ 補一張
 //   6  替補格（配件唱片袋側袋）：面板 6 格、上場列多一格替補；戰利品列「換上場」→ 收這張＋換掉哪一張？→ 換好、吐司「《…》換上場」0.7 秒後還看得到
-//   7  §5.9-1／-2、§3.9-4：第 6 位（第 2 輪）不出面板、整包上場、有滑入動畫（對照組）、出牌不算耐聽；真的打完第 10 位藏家 → 攤位逛完 → 上場面板（預設＝pending pick＝lineupPolicy）
+//   7  §5.9-1／-2、§3.9-4：第 6 位（第 2 輪）不出面板、整包上場、有滑入動畫（對照組）、出牌不算耐聽；真的打完第 10 位藏家 → 攤位逛完 → 上場面板（預設＝lineupPolicy）
 //      → 就這五張 → 第 11 位手牌恰好那五張、出一手還是那五張、沒有滑入；newRun 新帳號第一趟／第二趟的 lineupFrom
-//   8  §5.9-3 前期省一下：包包 6 張、沒新的、沒聽膩 → 換輪沒攤位（lineupDue）與攤位那一步都不出面板、出吐司「這一輪照上一輪的五張…」、上場＝lineupPolicy；
+//   8  §5.9-3 前期省一下：包包 6 張、沒新的、沒聽膩 → 換輪沒攤位（lineupDue）與攤位收攤之後都不出面板、出吐司 C.lineup.ui.quiet、上場＝lineupPolicy；
 //      包包 6 張但有一張聽膩 → 照樣出面板
 //   9  §3.9-1／-2／-6 真的出牌（__lab.force 每手剋中 1、他打不到你；DipLabDuel.play 指定那張）：同一張出 6 次 → 下一位手牌黃點；第 7 次 → 聽膩一層
 //      （領獎小字 −1、包包面板 −1 且 7 點回滿〔§3.3-3 格子回滿重新數〕、手牌紅字 −1＋主打軸 −1 星、屬性鈕紅字不蓋星數）；第 14 次 → −2、7 點全暗（最多層＝停在空的）；
@@ -29,8 +29,8 @@
 //   12 §5.9-5 替補（出貨 benchMode 'worn'＝聽膩時自動頂上；手動換是原案 'swap'，沒上）：上場列替補格＋小字；上場那張聽膩 → 開打前替補自動頂上、手牌還是 5 張；
 //      下一位沒有更膩的 → 不換；樂歷 Lv3（run.lineupBonus）也有替補格
 //   13 §5.9-4 一輪中途收新唱片（戰利品列「收這張」）→ 兩位客人之間包包面板「換上場」（只有新的那張有）→ 換掉一張、吐司 0.7 秒後還看得到 → 下一位手牌有它
-//   14 §5.9-7 退版：存檔停在攤位收尾的上場那一步（pending stall＋lineup 鍵）→ 上一版頁面（main，沒有上場制）載入 → run 不作廢、攤位收掉回來客、主控台 0 錯誤
-//      → 回新頁面 → lineupDue 照開面板
+//   14 §5.9-7 退版：攤位收攤之後、上場面板開著時的存檔（沒有 pending、lineupDue）→ 上一版頁面（main，沒有上場制）載入 → run 不作廢、來客畫面、主控台 0 錯誤
+//      → 回新頁面 → lineupDue 照開面板；施工期間的舊存檔（攤位 pending 停在「上場那一步」）→ 新頁面不帶 ?lineup=1（旗標關）載入＝收攤回來客、沒有無限遞迴；帶 ?lineup=1＝面板
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
 import { execFileSync } from 'child_process';
@@ -110,7 +110,8 @@ async function stallOut(page, ms = 25000) {
       return { panel: !!document.querySelector('#panel > .lb-sheet.lineup [data-a=luGo]') && !document.querySelector('.lb-sheet.lineup.arming'), stall: !!(p && p.type === 'stall'),
         go: !!document.querySelector('[data-a=go]'), scr: window.__lab.screen(), cur: p && p.cur ? p.cur.kind : null, pick: p ? p.pick : null }; });
     if (s.panel) return 'panel';
-    if (!s.stall && s.scr === 'night' && s.go) return 'night';
+    // 修正棒 11-22：收攤之後上場走 lineupDue＝來客畫面跟上場面板同時畫（面板升起的 .arming 那 0.3 秒「下一位」已經在）：收攤後多等一下面板
+    if (!s.stall && s.scr === 'night' && s.go) return (await panelOpen(page, 1500)) ? 'panel' : 'night';
     if (await page.$('.st-ask [data-a=leaveYes]')) { await tapReady(page, '.st-ask [data-a=leaveYes]'); await sleep(500); continue; }
     if (s.stall && s.cur === 'consignGet' && s.pick != null && (await page.$('.lb-sheet.stall [data-a=pass]'))) { await tapReady(page, '.lb-sheet.stall [data-a=pass]'); await sleep(500); continue; }
     const lv = (await page.$('.lb-sheet.stall [data-a=leave]')) ? '.lb-sheet.stall [data-a=leave]' : (await page.$('.st-pick [data-a=leave]')) ? '.st-pick [data-a=leave]' : null;
@@ -164,7 +165,9 @@ async function fightPlays(page, id, k) {
   return { ok, played };
 }
 // 領獎畫面：pending.worn、小字
-const rewardWorn = page => C(page, () => { const p = window.__lab.run.pending; return { worn: p && p.worn ? p.worn.slice() : null, tx: (document.querySelector('.lb-sheet.reward .lb-worn') || {}).textContent || '' }; });
+//   修正棒 11-22：矮螢幕（< 600）寫在標題列右邊一行（C.wear.ui.gotShort）、全句在 aria-label；full＝畫面字＋讀屏字
+const rewardWorn = page => C(page, () => { const p = window.__lab.run.pending, e = document.querySelector('.lb-sheet.reward .lb-worn'); const tx = e ? e.textContent : '';
+  return { worn: p && p.worn ? p.worn.slice() : null, tx, full: tx + '|' + (e && e.getAttribute('aria-label') || ''), short: !!(e && e.classList.contains('s')) }; });
 // 包包面板裡那一張：耐聽亮幾顆、−n、休息中、換上場鈕、耐聽點跟星數不相交
 async function bagTile(page, id) {
   await jsClick(page, '.lb-lurow'); await page.waitForSelector('.lb-sheet.bag .lb-pick', { timeout: 5000 }).catch(() => {}); await sleep(400);
@@ -193,7 +196,8 @@ async function panelPut(page, id) {
   const t2 = await panelTile(page, id); return !!(t2 && t2.inLu);
 }
 // 換輪攤位（引擎直接擺：跳到第 pos 位〔換輪那一刻〕→ 開攤位 → 回來客畫面）；不經 __lab.jump（它先 go('night')，lineupDue 會先被畫面處理掉）
-const stallAt = (page, pos) => C(page, pos => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; E.jumpTo(r, Cn, pos); E.stallSession(r, Cn); window.__lab.money(r.money); window.__lab.go('night'); return { lu: !!(r.pending && r.pending.lineup), quiet: !!(r.pending && r.pending.lineup && r.pending.lineup.quiet) }; }, pos);
+const stallAt = (page, pos) => C(page, pos => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; E.jumpTo(r, Cn, pos); E.stallSession(r, Cn); window.__lab.money(r.money); window.__lab.go('night');
+  return { stall: !!(r.pending && r.pending.type === 'stall'), key: !!(r.pending && 'lineup' in r.pending), due: r.lineupDue === true, quiet: !!E.lineupQuiet(r, Cn) }; }, pos);
 
 // ---- 上一版頁面（LINEUP_PREV 的 game-lab，路徑 game-lab-prev/）----
 const HERE = path.dirname(new URL(import.meta.url).pathname);
@@ -286,9 +290,9 @@ async function runSize(browser, w, h) {
       if (await panelOpen(page)) await commit(page);
       await C(page, () => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; window.__lab.jump(16); E.stallSession(r, Cn); window.__lab.money(r.money); window.__lab.go('night'); });
       await sleep(1200);
-      const cs = await clearStall(page, { ms: 12000 });       // 旗標開：pending 停在上場那一步（clearStall 等不到攤位收掉＝timeout，照預期）
+      const cs = await clearStall(page, { ms: 12000, keepLineup: true });   // 修正棒 11-22：攤位照舊收掉（pending 清掉），lineupDue → 來客畫面開上場面板（keepLineup：不要自動帶過）
       const open = await panelOpen(page);
-      const p0 = await C(page, () => { const p = window.__lab.run.pending; return p && { type: p.type, lu: !!p.lineup, done: p.k >= p.q.length, cur: p.cur, pick: p.lineup && p.lineup.pick }; });
+      const p0 = await C(page, () => { const r = window.__lab.run; return { pend: r.pending ? r.pending.type : null, due: r.lineupDue, lineup: r.lineup, pick: window.DipLabEngine.lineupPolicy(r, window.DipLabContent).ids }; });
       await openTitle(page, QL()); await jsClick(page, '[data-a=cont]'); await waitScreen(page, 'night', 15000);
       const re = await panelOpen(page);
       await tapReady(page, '.lb-sheet.lineup [data-slot="0"]'); await sleep(250);
@@ -301,9 +305,9 @@ async function runSize(browser, w, h) {
       await tapReady(page, `.lb-sheet.lineup .lu-bt[data-id="${inId.replace(/"/g, '\\"')}"]`); await sleep(250);
       await commit(page);
       const p1 = await C(page, () => { const r = window.__lab.run; return { pend: r.pending, lineup: r.lineup, due: r.lineupDue }; });
-      const ok = open && re && p0 && p0.type === 'stall' && p0.lu && p0.done && !p0.cur && sw.includes(inId) && J(back) === J(p0.pick.slice().sort()) &&
+      const ok = cs.ok && open && re && p0 && !p0.pend && p0.due && p0.lineup === null && sw.includes(inId) && J(back) === J(p0.pick.slice().sort()) &&
         !p1.pend && p1.lineup && p1.lineup[0] === inId && !p1.due && !errs(page).length;
-      record(3, size, ok, `攤位收掉後面板 ${open}（clearStall ${cs.ok ? 'ok' : cs.why}）、pending ${J(p0 && { type: p0.type, lu: p0.lu, done: p0.done })}、重新整理照畫 ${re}；換格 ${sw.includes(inId)}、幫我挑回預設 ${J(back) === J(p0.pick.slice().sort())}；送出 pending ${p1.pend ? 'X' : '清掉'}、第一格 ${p1.lineup && p1.lineup[0] === inId}；${errTxt(page)}`);
+      record(3, size, ok, `攤位收掉 ${cs.ok ? 'ok' : cs.why} → 面板 ${open}、pending ${p0 && p0.pend}、lineupDue ${p0 && p0.due}、重新整理照畫 ${re}；換格 ${sw.includes(inId)}、幫我挑回預設 ${J(back) === J(p0.pick.slice().sort())}；送出 pending ${p1.pend ? 'X' : '清掉'}、第一格 ${p1.lineup && p1.lineup[0] === inId}；${errTxt(page)}`);
     } catch (e) { record(3, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -416,9 +420,9 @@ async function runSize(browser, w, h) {
       await toReward(page);
       await passLoot(page);
       const out = await stallOut(page);
-      const p0 = await C(page, () => { const r = window.__lab.run, p = r.pending; return { pos: r.pos, type: p && p.type, pick: p && p.lineup ? p.lineup.pick : null, pol: window.DipLabEngine.lineupPolicy(r, window.DipLabContent).ids,
-        slots: [...document.querySelectorAll('.lb-sheet.lineup .lu-slot')].map(b => b.getAttribute('aria-label')) }; });
-      const ids0 = await C(page, () => window.__lab.run.pending.lineup.pick.slice());
+      const p0 = await C(page, () => { const r = window.__lab.run, p = r.pending, Cn = window.DipLabContent; return { pos: r.pos, pend: p ? p.type : null, due: r.lineupDue, pol: window.DipLabEngine.lineupPolicy(r, Cn).ids,
+        panel: [...document.querySelectorAll('.lb-sheet.lineup .lu-bt.on')].map(b => b.getAttribute('data-id')).sort(), slots: [...document.querySelectorAll('.lb-sheet.lineup .lu-slot')].map(b => b.getAttribute('aria-label')) }; });
+      const ids0 = p0.pol.slice();
       await commit(page);
       const r11 = await C(page, () => ({ lineup: window.__lab.run.lineup, pend: !!window.__lab.run.pending, pos: window.__lab.run.pos }));
       await goFight(page); await sleep(400);
@@ -428,11 +432,11 @@ async function runSize(browser, w, h) {
       const h1 = await C(page, () => { const v = window.__lab.duel(); return { ids: v ? v.hand.filter(Boolean).map(c => c.id).sort() : null, slides: window.__slides.slice() }; });
       const okFrom = fr.first === fr.want1 && fr.second === fr.want2 && fr.run === fr.want2 && fr.want1 === 11;
       const ok6 = !n6.panel && !n6.row && !n6.due && n6.lineup === null && !d6.lineup && !d6.wearOn && !d6.plays && d6.pool === n6.bag && sl6.length >= 1 && J(w6.wear) === '{}' && !w6.worn;
-      const ok10 = !n10.panel && !n10.row && !d10.lineup && !d10.wearOn && out === 'panel' && p0.pos === 11 && p0.type === 'stall' && J(p0.pick) === J(p0.pol) && p0.slots.length === 5;
+      const ok10 = !n10.panel && !n10.row && !d10.lineup && !d10.wearOn && out === 'panel' && p0.pos === 11 && !p0.pend && p0.due && J(p0.panel) === J(sorted(p0.pol)) && p0.slots.length === 5;
       const ok11 = J(r11.lineup) === J(ids0) && !r11.pend && h0.lineup && h0.wearOn && J(h0.ids) === J(sorted(ids0)) && J(h1.ids) === J(sorted(ids0)) && !h1.slides.length;
       record(7, size, okFrom && ok6 && ok10 && ok11 && !errs(page).length,
         `lineupFrom 新帳號 ${fr.first}／第二趟 ${fr.second}（content ${fr.want1}／${fr.want2}）；第 6 位 面板 ${n6.panel}、上場列 ${n6.row}、手牌池 ${d6.pool}/${n6.bag}（整包）、view.lineup ${d6.lineup}、wearOn ${d6.wearOn}、滑入 ${sl6.length}（對照組）、` +
-        `出牌後 wear ${J(w6.wear)}；第 10 位 面板 ${n10.panel}、wearOn ${d10.wearOn}；打完 → 攤位 → ${out}（第 ${p0.pos} 位）、預設＝pick＝lineupPolicy ${J(p0.pick) === J(p0.pol)}、5 格 ${p0.slots.length}；` +
+        `出牌後 wear ${J(w6.wear)}；第 10 位 面板 ${n10.panel}、wearOn ${d10.wearOn}；打完 → 攤位收攤 → ${out}（第 ${p0.pos} 位、pending ${p0.pend}、lineupDue ${p0.due}）、預設＝lineupPolicy ${J(p0.panel) === J(sorted(p0.pol))}、5 格 ${p0.slots.length}；` +
         `就這五張 → 第 ${r11.pos} 位手牌＝上場 ${J(h0.ids) === J(sorted(ids0))}、wearOn ${h0.wearOn}、出一手後 ${J(h1.ids) === J(sorted(ids0))}、滑入 ${h1.slides.length}；${errTxt(page)}`);
     } catch (e) { record(7, size, false, 'exception ' + e.message); }
     await ctx.close();
@@ -447,10 +451,10 @@ async function runSize(browser, w, h) {
       const a = await C(page, () => { const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent;
         return { bag: r.bag.length, panel: !!document.querySelector('.lb-sheet.lineup'), lineup: r.lineup, due: r.lineupDue, row: !!document.querySelector('.lb-lurow'), go: !!document.querySelector('[data-a=go]') }; });
       const t1 = await toasts(page);
-      // 攤位那一步（換輪＝第 16 位）：pending.lineup.quiet → 逛完不出面板、吐司、pending 清掉、上場＝lineupPolicy
+      // 攤位收攤之後（換輪＝第 16 位）：lineupQuiet → 逛完不出面板、吐司、上場＝lineupPolicy
       await C(page, () => { window.__toasts = []; });
       const st = await stallAt(page, 16); await sleep(1200);
-      const pol16 = await C(page, () => { const r = window.__lab.run; return r.pending && r.pending.lineup ? r.pending.lineup.pick.slice() : null; });
+      const pol16 = await C(page, () => window.DipLabEngine.lineupPolicy(window.__lab.run, window.DipLabContent).ids.slice());
       const out = await stallOut(page);
       await sleep(1200);
       const b = await C(page, () => { const r = window.__lab.run; return { pend: !!r.pending, panel: !!document.querySelector('.lb-sheet.lineup'), lineup: r.lineup, due: r.lineupDue }; });
@@ -461,10 +465,10 @@ async function runSize(browser, w, h) {
       const out3 = await stallOut(page);
       const pol = a.lineup;
       const okA = a.bag === 6 && !a.panel && Array.isArray(a.lineup) && a.lineup.length === 5 && !a.due && a.row && a.go && t1.some(x => x.includes(quietTx));
-      const okB = st.lu && st.quiet && out === 'night' && !b.pend && !b.panel && J(b.lineup) === J(pol16) && !b.due && t2.some(x => x.includes(quietTx));
-      const okC = st3.lu && !st3.quiet && out3 === 'panel';
+      const okB = st.stall && !st.key && st.due && st.quiet && out === 'night' && !b.pend && !b.panel && J(b.lineup) === J(pol16) && !b.due && t2.some(x => x.includes(quietTx));
+      const okC = st3.stall && st3.due && !st3.quiet && out3 === 'panel';
       record(8, size, okA && okB && okC && !errs(page).length,
-        `包包 ${a.bag} 張、lineupDue：面板 ${a.panel}、上場 ${a.lineup && a.lineup.length} 張、吐司 ${t1.some(x => x.includes(quietTx))}；攤位那一步 quiet ${st.quiet} → ${out}、面板 ${b.panel}、pending ${b.pend}、上場＝pick ${J(b.lineup) === J(pol16)}、吐司 ${t2.some(x => x.includes(quietTx))}；` +
+        `包包 ${a.bag} 張、lineupDue：面板 ${a.panel}、上場 ${a.lineup && a.lineup.length} 張、吐司 ${t1.some(x => x.includes(quietTx))}；攤位（pending 沒有 lineup 鍵 ${!st.key}）quiet ${st.quiet} → ${out}、面板 ${b.panel}、pending ${b.pend}、上場＝lineupPolicy ${J(b.lineup) === J(pol16)}、吐司 ${t2.some(x => x.includes(quietTx))}；` +
         `有一張聽膩 → quiet ${st3.quiet}、${out3}；${errTxt(page)}`);
     } catch (e) { record(8, size, false, 'exception ' + e.message); }
     await ctx.close();
@@ -539,7 +543,7 @@ async function runSize(browser, w, h) {
       const rl = await C(page, X => { const r = window.__lab.run, k = r.lineup.indexOf(X), m = document.querySelectorAll('.lb-lurow .cs .lu-mini')[k]; return { wear: r.wear[X], wn: m && m.querySelector('.lu-wn') ? m.querySelector('.lu-wn').textContent : '' }; }, X);
       const b2 = await bagTile(page, X); await closeBag(page);
       const okA = J(w1) === J({ g: 6, n: 0 }) && !r1.worn && al && hAl.al && !hAl.worn;
-      const okB = J(w2) === J({ g: 0, n: 1 }) && J(r2.worn) === J([{ id: X, n: 1 }]) && r2.tx.includes(got1) && b1.on === 7 && b1.dots === 7 && b1.wn === '−1' && !b1.clash;
+      const okB = J(w2) === J({ g: 0, n: 1 }) && J(r2.worn) === J([{ id: X, n: 1 }]) && r2.full.includes(got1) && b1.on === 7 && b1.dots === 7 && b1.wn === '−1' && !b1.clash;
       const okC = h14.worn === 1 && h14.star === Math.max(1, base.s - 1) && h14.axis === base.a && h14.wn === '−1' && h14.sk && !h14.al && !!chip && chip.a === base.a && /−1/.test(chip.tx) && !inter(chip.wn, chip.key) && pl >= 0 &&
         J(w3) === J({ g: 6, n: 1 }) && !r3.worn;
       const okD = J(w4) === J({ g: 7, n: 2 }) && J(r4.worn) === J([{ id: X, n: 2 }]) && r4.tx.includes('（−2）') && out === 'panel' && !!pt && pt.on === 0 && pt.worn && pt.wn === '−2' && put;
@@ -683,7 +687,7 @@ async function runSize(browser, w, h) {
       if (await panelOpen(page)) await commit(page);
       await stallAt(page, 16); await sleep(1200);
       const out0 = await stallOut(page);
-      const s0 = await C(page, () => { const r = window.__lab.run, p = r.pending; return { lu: !!(p && p.lineup), done: !!p && p.k >= p.q.length, cur: p && p.cur, due: r.lineupDue, pos: r.pos }; });
+      const s0 = await C(page, () => { const r = window.__lab.run, p = r.pending; return { pend: p ? p.type : null, due: r.lineupDue, lineup: r.lineup, pos: r.pos }; });
       // 上一版頁面
       await openTitle(page, QP());
       const c0 = await C(page, () => ({ cont: !!document.querySelector('[data-a=cont]'), run: !!window.__lab.run, ver: [...document.scripts].map(s => s.src).filter(s => /ui\.js/.test(s)).join() }));
@@ -697,10 +701,23 @@ async function runSize(browser, w, h) {
       const d1 = await C(page, () => ({ due: window.__lab.run.lineupDue, pend: !!window.__lab.run.pending }));
       if (re) await commit(page);
       const L = await C(page, () => window.__lab.run.lineup);
-      record(14, size, out0 === 'panel' && s0.lu && s0.done && !s0.cur && c0.cont && c0.run && /game-lab-prev\/ui\.js/.test(c0.ver) && night && c1.run && !c1.over && !c1.pend && c1.pos === s0.pos && !prevErr.length &&
-        re && d1.due && !d1.pend && Array.isArray(L) && L.length === 5 && !errs(page).length,
-        `存檔停在上場那一步 ${out0}（${J(s0)}）；上一版頁面 ${J({ cont: c0.cont, run: c0.run, ver: (c0.ver.match(/\?v=\d+/) || [''])[0] })} → 回來客 ${night} ${J(c1)}、主控台 ${prevErr.length}${prevErr.length ? '：' + prevErr.slice(0, 2).join(' / ').slice(0, 160) : ''}；` +
-        `回新頁面 lineupDue ${d1.due} → 面板 ${re}、上場 ${L && L.length} 張；${errTxt(page)}`);
+      // 施工期間的舊存檔：攤位 pending 停在「上場那一步」（有 lineup 鍵、q 走完、選過組、cur null）→ 新頁面旗標關（不帶 ?lineup=1）＝fixLineup 收攤 → 來客、沒有無限遞迴
+      const legacy = async q => {
+        await C(page, () => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')), r = s.run;
+          r.lineup = null; r.lineupDue = true;
+          r.pending = { type: 'stall', after: r.pos - 1, pos: r.pos, cp: false, first: false, groups: [['dig', 'fortune']], pick: 0, q: ['dig', 'fortune'], k: 2, post: [], cur: null, done: ['dig', 'fortune'], lineup: { pick: r.bag.slice(0, 5), bench: [], quiet: false } };
+          localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); });
+        page._errors.length = 0;
+        await openTitle(page, q); await jsClick(page, '[data-a=cont]');
+        const ok = await page.waitForFunction(() => window.__lab && window.__lab.screen() === 'night' && !!document.querySelector('[data-a=go]') && !(window.__lab.run && window.__lab.run.pending), null, { timeout: 15000 }).then(() => true, () => false);
+        await sleep(800);
+        return { ok, panel: await panelOpen(page, 2500), keys: await C(page, () => ['lineup', 'lineupDue', 'wear'].filter(k => k in window.__lab.run)), err: errs(page).length };
+      };
+      const lgOff = await legacy(Q('&fast=1&lineup=0')), lgOn = await legacy(QL());   // 旗標關＝?lineup=0（出貨開了以後）
+      record(14, size, out0 === 'panel' && !s0.pend && s0.due && s0.lineup === null && c0.cont && c0.run && /game-lab-prev\/ui\.js/.test(c0.ver) && night && c1.run && !c1.over && !c1.pend && c1.pos === s0.pos && !prevErr.length &&
+        re && d1.due && !d1.pend && Array.isArray(L) && L.length === 5 && lgOff.ok && !lgOff.panel && !lgOff.keys.length && !lgOff.err && lgOn.ok && lgOn.panel && !lgOn.err,
+        `收攤後面板開著時的存檔 ${out0}（${J(s0)}）；上一版頁面 ${J({ cont: c0.cont, run: c0.run, ver: (c0.ver.match(/\?v=\d+/) || [''])[0] })} → 回來客 ${night} ${J(c1)}、主控台 ${prevErr.length}${prevErr.length ? '：' + prevErr.slice(0, 2).join(' / ').slice(0, 160) : ''}；` +
+        `回新頁面 lineupDue ${d1.due} → 面板 ${re}、上場 ${L && L.length} 張；舊存檔停在上場那一步：旗標關 ${J(lgOff)}、旗標開 ${J(lgOn)}；${errTxt(page)}`);
     } catch (e) { record(14, size, false, 'exception ' + e.message); }
     await ctx.close();
   }

@@ -366,10 +366,12 @@
   function relicGrid(ids, attr, price) {
     if (!ids.length) return '';
     if (!price) return '<div class="lb-opts st-relics">' + H.relicButtonsHTML(ids, attr) + '</div>';
-    var r = run(), full = r.relics.length >= ((E().CFG && E().CFG.relicMax) || 3), back = 0;
-    if (full) r.relics.forEach(function (x) { var v = E().sellValue ? E().sellValue(C(), x) : 0; if (v > back) back = v; });
-    var can = r.money + back >= price, lbl = fill((C().shopUi && C().shopUi.buy) || '買 ${n}', { n: mt(price) });
+    // 第 I 波 I-2 修正棒：唱片袋側袋（slot）不佔配件格＝買它不用先賣（relicFull／isSlotRelic；上場制關著沒有側袋＝照舊）
+    var r = run(), slot = function (x) { return !!(E().isSlotRelic && E().isSlotRelic(C(), x)); }, full = r.relics.filter(function (x) { return !slot(x); }).length >= ((E().CFG && E().CFG.relicMax) || 3), back = 0;
+    if (full) r.relics.forEach(function (x) { var v = !slot(x) && E().sellValue ? E().sellValue(C(), x) : 0; if (v > back) back = v; });
+    var lbl = fill((C().shopUi && C().shopUi.buy) || '買 ${n}', { n: mt(price) });
     return '<div class="st-rrows">' + ids.map(function (id) {
+      var can = r.money + (full && !slot(id) ? back : 0) >= price;
       var x = null; try { x = H.relicOf(id); } catch (_) {} if (!x) return '';
       var ic = ''; try { ic = H.relicIcon(id, 30); } catch (_) {}
       return '<div class="st-rrow"><span class="pix">' + ic + '</span><span class="tx"><b class="nm">' + esc(x.name) + '</b><span class="ds">' + esc(x.desc) + '</span></span>' +
@@ -535,10 +537,10 @@
   // 器材（器材行、市集）：滿 3 件先選一件半價賣掉（ui relicPanel，「算了」＝不買）
   function buyRelic(id) {
     var r = run(), max = (E().CFG && E().CFG.relicMax) || 3;
-    if (r.relics.length < max) return act({ type: 'stallAct', act: 'buyRelic', relicId: id });
+    if (!(E().relicFull ? E().relicFull(r, C(), id) : r.relics.length >= max)) return act({ type: 'stallAct', act: 'buyRelic', relicId: id });   // 側袋不佔格（修正棒 11-22）
     var cur = S.cur;
     S.busy = true;
-    H.relicPanel(r.relics.slice(), { prompt: U('relicFull'), cancel: (C().shopUi && C().shopUi.sellNo) || '算了' }).then(function (drop) {
+    H.relicPanel(r.relics.filter(function (x) { return !(E().isSlotRelic && E().isSlotRelic(C(), x)); }), { prompt: U('relicFull'), cancel: (C().shopUi && C().shopUi.sellNo) || '算了' }).then(function (drop) {
       if (!S) return; S.busy = false; S.sheet = null;
       var pc = P(); if (!pc || pc.cur !== cur) return;
       if (drop) act({ type: 'stallAct', act: 'buyRelic', relicId: id, dropRelicId: drop });
@@ -579,6 +581,10 @@
   // ------------------------------------------------------------------ 今天不逛了（SPEC-C §4.3-5；CRITIQUE 1.7）：先確認；確定＝stallLeave（錄音室照走、寄賣領取照領）
   function askLeave() {
     sfx('tick');
+    // 第 I 波 I-2 修正棒（11-22）：上場制開著的一趟，確認框只在這一趟第一次收攤出（SPEC-I §6.2-5／CRITIQUE 6-4 提前到這裡）——
+    //   收攤之後還要按一下「就這五張」，每輪都確認＝一般輪必點 3 下（L3／P3 ≤2）。上場制關著＝逐字照舊（每次都確認）
+    var r = run();
+    if (r && E().lineupOn && E().lineupOn(r) && ((((r.stats || {}).c) || {}).leave | 0) > 0) { doLeave(); return; }
     if (S.phase === 'station' && S.sheet) { S.confirm = true; renderStation(); return; }
     if (!S.slot) return;
     S.phase = 'leave';
