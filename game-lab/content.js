@@ -1685,12 +1685,15 @@
       //   fair（規格寫 market:{…}；stall.market 已經是黑膠特賣那一攤的貨）：first＝每一趟第一個市集固定組（＋錄音室）；中繼點＋黑膠特賣＋錄音室；
       //     weights 權重不重複抽 tiles 攤（樂歷 Lv4 一般輪 6 攤），花錢攤（paid）≤ paidMax、至少一攤藍框（blue）；免費格：錄音室、踢館帖（dare 規則照舊）、寄賣到期領取
       //     fortune 算命翻籤：打開就翻第 1 張、第 2 張 $1,000（樂歷 Lv6 免費）、第 3 張 $2,000、25% 凶籤（這一輪某位一般客人品味 +1）
-      //     drinks 飲料攤（I-3a 只有冬瓜茶＝C 波宵夜的聲望 +3，免費、只花時段）；studioMax＝錄音室試錄一趟最多幾格（?fac=1）
+      //     drinks 飲料攤（I-3a 只有冬瓜茶＝C 波宵夜的聲望回復，免費、只花時段；sim 棒定 +2，見下）；studioMax＝錄音室試錄一趟最多幾格（?fac=1）
       mode: 'pick',
       fair: { slots: 3, relaySlots: 4, tiles: 5, slotCash: 300, first: ['dig', 'fortune', 'snack', 'warehouse', 'home'],
         weights: { dig: 3, fortune: 2, snack: 2, gear: 2, trade: 2, gig: 2, promo: 2, consign: 1, home: 1 }, paidMax: 2,
         fortune: { price: [0, 1000, 2000], omen: 0.25, omenAtk: 1, pool: ['boss', 'elite', 'aces', 'top'] },
-        drinks: { tea: { hp: 3, price: 0 } }, studioMax: 3 } },
+        drinks: { tea: { hp: 2, price: 0 } }, studioMax: 3 } },
+      // I-3a sim 棒（11-22；wave-i/build3/SIM.md）：冬瓜茶 3→2。聲望 +3 時市集 vs pick 會讀的到第 50 位 +2.15 點（n4000，§9 上限 +1）：第一個市集固定有飲料攤、
+      //   一般輪 5 攤常出、3 個時段排得進去 → 每趟攤位回聲望 7.5 對 pick 宵夜 4.8。§9 ② 時段 3→2 量過沒用（+2.00，照喝）、+2 剛好回到 4.8（+0.2～+0.6 點）、+1 −1.6 點。
+      //   退回＝hp 改回 3（stalls.js 字照 content 走）
     safety: { on: true },
     draft: { k: null, m: null, mLess: 1, mRate: null },          // 中繼點開局選秀：升級 m＝round(期望等級−1−mLess)（比從頭打少一級）；mRate 給數字＝舊公式 round(mRate×(L−1))
     ui: {

@@ -3116,7 +3116,7 @@
       fair: { slots: 3, relaySlots: 4, tiles: 5, slotCash: 300, first: ['dig', 'fortune', 'snack', 'warehouse', 'home'],
         weights: { dig: 3, fortune: 2, snack: 2, gear: 2, trade: 2, gig: 2, promo: 2, consign: 1, home: 1 }, paidMax: 2,
         fortune: { price: [0, 1000, 2000], omen: 0.25, omenAtk: 1, pool: ['boss', 'elite', 'aces', 'top'] },
-        drinks: { tea: { hp: 3, price: 0 } }, studioMax: 3 } },
+        drinks: { tea: { hp: 2, price: 0 } }, studioMax: 3 } },   // 冬瓜茶 +2（I-3a sim 棒；content 註解）
     safety: { on: false },
     draft: { k: null, m: null, mLess: 1, mRate: null },           // null＝照公式（SPEC-C §5.6；驗收修正：m＝round(L−1−mLess)，比期望等級少一級。mRate 給了＝舊公式 round(mRate×(L−1))，sim 對照用）
   };
@@ -3908,18 +3908,31 @@
   // sim／自動遊玩：市集選法（cPolicy 遇到市集 pending）。攤位格＝還能進、沒進過又退出的攤照 fairValue 挑最高；最高的 < slotMin（或時段用完）→ 免費格 → 收攤。
   //   o.slotMin（預設 0.5）、o.flips（算命最多翻幾張；沒給＝錢夠才多翻）、o.studio（試錄先挑哪條路線，'a'|'b'|'c'；沒給＝a→b→c）、
   //   o.whim（先去哪一攤的心情：價值 ± whim/2 的雜湊，只排順序、不改去不去；預設 0.4）
+  //   I-3a sim 棒（wave-i/build3/SIM.md）：看得到貨的攤（MK_PEEK：挖寶、調貨、倉庫、小物）進攤不扣時段＝先進去看一眼、回攤位格，再照真的貨估值（peekValue：
+  //     包包用耐聽後的 bagScore、小物攤看得到上場制的唱片袋側袋＝跟 pick 的 stallCurPolicy 同一把尺）；原本的 fairValue 用舊的「包包飽了」、配件滿＝小物攤 0（看不到側袋）。
+  //     o.peek false＝引擎棒原本的估法（逐字）
+  const MK_PEEK = ['dig', 'trade', 'warehouse', 'gear'];
+  const mkUnseen = (p, o, but) => o.peek !== false && p.tiles.find(k => k !== but && MK_PEEK.includes(k) && !p.went[k] && !p.free.includes(k) && !p.seen[k]) || null;
+  // 這一刻最想去的攤（扣時段的；沒有夠格的＝null）：看貨的攤用開著那攤（p.cur）或看過的貨（p.seen）估；其他照 fairValue、進過又退出的不再去（＝引擎棒原本）
+  function mkPick(run, content, o, reserve) {
+    const p = run.pending, min = o.slotMin != null ? +o.slotMin : 0.5, whim = o.whim != null ? +o.whim : 0.4;
+    let best = null, bv = -Infinity;
+    for (const k of p.tiles) {
+      if (p.went[k] || p.free.includes(k)) continue;
+      const pk = o.peek !== false && MK_PEEK.includes(k), g = p.cur && p.cur.kind === k ? p.cur : p.seen[k];
+      if (pk ? !g : p.seen[k]) continue;
+      const v = pk ? peekValue(run, content, k, g, reserve) : fairValue(run, content, k, reserve); if (!(v >= min)) continue;
+      const w = v + whim * (hash01(wcKey(run, 'mkWhim#' + p.after + '#' + k)) - 0.5);
+      if (w > bv) { bv = w; best = k; }
+    }
+    return best;
+  }
   function marketPolicy(run, content, o, reserve) {
     const p = run.pending, cur = p.cur;
     if (!cur) {
-      const min = o.slotMin != null ? +o.slotMin : 0.5, whim = o.whim != null ? +o.whim : 0.4;
       if (p.left > 0) {
-        let best = null, bv = -Infinity;
-        for (const k of p.tiles) {
-          if (p.went[k] || p.free.includes(k) || p.seen[k]) continue;
-          const v = fairValue(run, content, k, reserve); if (!(v >= min)) continue;
-          const w = v + whim * (hash01(wcKey(run, 'mkWhim#' + p.after + '#' + k)) - 0.5);
-          if (w > bv) { bv = w; best = k; }
-        }
+        const u = mkUnseen(p, o, null); if (u) return { type: 'stallEnter', kind: u };   // 先看一眼（不扣時段）
+        const best = mkPick(run, content, o, reserve);
         if (best) return { type: 'stallEnter', kind: best };
       }
       const fr = p.free.find(k => !p.went[k] && !p.seen[k]);
@@ -3927,6 +3940,8 @@
       return { type: 'stallLeave' };
     }
     const act = (x, y) => Object.assign({ type: 'stallAct', act: x }, y || {});
+    // 看貨的攤還沒動手：別的看貨攤還沒看、或這攤不是現在最想去的 → 回攤位格（不扣；貨留在 seen）
+    if (o.peek !== false && MK_PEEK.includes(cur.kind) && !(p.acts[cur.kind] > 0) && (mkUnseen(p, o, cur.kind) || mkPick(run, content, o, reserve) !== cur.kind)) return act('back');
     switch (cur.kind) {
       case 'fortune': {
         const i = cur.n | 0, pr = ((cur.price || [])[i]) | 0;
@@ -3942,6 +3957,22 @@
       }
       default: return stallCurPolicy(run, content, o, cur, reserve);
     }
+  }
+  // 看過貨的攤的價值（g＝那攤的貨；跟 stallCurPolicy 會不會動手同一把尺：有動作＝C 波 stallValue 的數，沒有＝0）
+  function peekValue(run, content, k, g, reserve) {
+    const base = bagScore(content, run.bag, run);
+    const useful = ids => (ids || []).some(id => !run.bag.includes(id) && bagScore(content, run.bag.concat([id]), run) - base > BAG_EPS);
+    switch (k) {
+      case 'dig': return useful(g.cards) ? 2 : 0;
+      case 'trade': return useful((g.cards || []).filter(id => run.money - priceOf(content, id) >= reserve)) ? 1.2 : 0;
+      case 'warehouse': return (g.relics || []).length && relicN(run, content) < CFG.relicMax ? 1.2 : useful(g.cards) ? 1 : 0;
+      case 'gear': {
+        if (run.money < wcCfg(content).stall.gearPrice) return 0;
+        if (relicN(run, content) < CFG.relicMax && (g.relics || []).length) return 1.5;
+        return lineupOn(run) && (g.relics || []).some(id => isSlotRelic(content, id) && !run.relics.includes(id)) ? 1.5 : 0;   // 上場制：唱片袋側袋不佔配件格
+      }
+    }
+    return 0;
   }
   // 攤的價值（合理玩家、不是最佳解；單位＝C 波 stallValue：聲望 1 點＝1）
   function fairValue(run, content, k, reserve) {

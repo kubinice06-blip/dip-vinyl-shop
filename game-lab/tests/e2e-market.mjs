@@ -17,13 +17,14 @@
 //   3  §6.8-2 凶籤（打完第 40 位那一輪，固定種子表裡天然出凶籤；也有「菁英最大那張」）：第 3 張＝凶籤（紅框）→ 那位一般客人品味 +1（guestDef）、
 //      收攤後他的頭像紅標「凶」、點頭像紅字那一句；「菁英最大那張」＝菁英牌組裡總星最大（加星後、不含王牌）那張、頭像面板寫專輯名
 //   4  冬瓜茶（飲料攤）、小物攤（配件那半）、挖寶攤不自己翻（等點）、回攤位不扣時段、時段用完的格子、點島台那一箱＝進那一攤、點收音機＝「先逛完今晚的市集。」：
-//      冬瓜茶聲望 +3（不超過上限）、免費、月亮 −1、自動回攤位格；挖寶 2.5 秒後還蓋著 → 回攤位（不扣）→ 再進同一批 → 翻一張收 → 自動回；小物攤兩件 $3,000 → 買一件自動回；
+//      冬瓜茶聲望 +fair.drinks.tea.hp（不超過上限；sim 棒 11-22 定 2）、只有冬瓜茶一杯、免費、月亮 −1、自動回攤位格；挖寶 2.5 秒後還蓋著 → 回攤位（不扣）→ 再進同一批 → 翻一張收 → 自動回；小物攤兩件 $3,000 → 買一件自動回；
 //      時段用完：沒去過的格子灰、點了出「今晚的時段用完了。」、收攤鈕不寫錢、直接收（不問）
 //   5  §6.8-4 錄音室兩種＋中繼點：沒旗標＝點錄音室格直接錄 demo（樂歷 +15、不扣時段、不出面板）；?fac=1＝試錄派樹下一格（面板＝studioOffer、挑一格 trialNodes／tal、不扣時段）
 //      → 下一個中繼點那條路線不再出；中繼點 7 格（5 攤＋黑膠特賣＋錄音室）、月亮 4 顆、黑膠特賣（改名）「回攤位」不扣
 //   6  §6.8-5 收攤：這一趟第一次但只剩 1 個時段＝不問、+$300；第二次收攤（剩 3 個）不問、+$900；P3 一般輪必點 ≤2（收攤＋就這五張）、中繼點 ≤3（+$1,200、自動 demo）
 //   7  §6.7 M5 全點一般輪 ≤10 下：會讀的策略（engine cPolicy，跟畫面「自動」同一個；全點＝每個時段都用掉〔slotMin −9〕、算命翻滿〔flips 3〕、錢夠）照它的選擇真點，
-//      從攤位格出現點到「下一位」出現（含收攤、上場面板「就這五張」）；挖寶「收這張」＝翻那一張＋收（2 下）。第 15、25 位之後兩輪都量
+//      從攤位格出現點到「下一位」出現（含收攤、上場面板「就這五張」＝P3 也算它）；挖寶「收這張」＝翻那一張＋收（2 下）；算命翻滿＝打開＋2 張＋「記下了」（停住等點）。
+//      第 15、25 位之後兩輪都量（固定種子表：第 25 位之後那輪策略在同業調貨買兩張＋回攤位）
 //   8  §6.8-6 退版：市集 pending 的存檔（攤位格、一攤開著〔算命翻了第 1 張〕兩種）→ 上一版頁面（main，沒有市集）載入 → run 不作廢、照 C 波跑一組（挖寶＋宵夜）→ 回來客、主控台 0 錯；
 //      回新頁面照常（沒有 pending、0 錯）
 //   9  §6.8-7 重新整理停在攤位面板：挖寶開著（翻了一張、沒收）→ 重新整理 → 同一攤同一批貨、月亮數對、這攤沒打勾；算命翻到第 2 張 → 重新整理 → 兩張翻開、第 3 張的鈕、月亮 −1
@@ -93,8 +94,17 @@ async function marketAt(page, after, o = {}) {
   await sleep(500);
   return r0;
 }
-const gridReady = (page, ms = 10000) => page.waitForFunction(() => { const s = window.DipLabStalls.state(); return !!s && s.mode === 'market' && s.phase === 'grid' && !!document.querySelector('.st-mk .st-mt') && !document.querySelector('.lb-sheet.stall'); }, null, { timeout: ms }).then(() => true, () => false);
-const sheetReady = (page, kind, ms = 8000) => page.waitForFunction(k => { const s = window.DipLabStalls.state(), e = document.querySelector('.lb-sheet.stall.st-mk.st-k-' + k); return !!s && (s.phase === 'station' || s.phase === 'hold') && !!e && !e.closest('.arming') && !e.classList.contains('arming'); }, kind, { timeout: ms }).then(() => true, () => false);
+// 攤位格／面板畫好之後鏡頭還會動 0.3 秒（fitPick／cam，面板高度跟著變、格子跟著移）：位置連續 3 次（每 80 ms）沒動才算停好（真點才不會點到移位前的那一格）
+const settle = (page, sel, ms = 2500) => page.waitForFunction(([sel]) => {
+  const e = document.querySelector(sel); if (!e) return false;
+  const b = e.getBoundingClientRect(), k = [b.left, b.top, b.width, b.height].map(Math.round).join(','), W = window;
+  if (W.__stK !== k) { W.__stK = k; W.__stN = 0; return false; }
+  return ++W.__stN >= 3;
+}, [sel], { timeout: ms, polling: 80 }).then(() => true, () => false);
+const gridReady = (page, ms = 10000) => page.waitForFunction(() => { const s = window.DipLabStalls.state(); return !!s && s.mode === 'market' && s.phase === 'grid' && !!document.querySelector('.st-mk .st-mt') && !document.querySelector('.lb-sheet.stall'); }, null, { timeout: ms })
+  .then(() => settle(page, '.st-mk .st-mgrid')).then(() => true, () => false);
+const sheetReady = (page, kind, ms = 8000) => page.waitForFunction(k => { const s = window.DipLabStalls.state(), e = document.querySelector('.lb-sheet.stall.st-mk.st-k-' + k); return !!s && (s.phase === 'station' || s.phase === 'hold') && !!e && !e.closest('.arming') && !e.classList.contains('arming'); }, kind, { timeout: ms })
+  .then(() => settle(page, '.lb-sheet.stall.st-mk.st-k-' + kind)).then(() => true, () => false);
 // 市集的狀態（pending、畫面、月亮、攤位格）
 const mk = page => C(page, () => {
   const r = window.__lab.run, p = r && r.pending, s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall.st-mk');
@@ -112,8 +122,23 @@ const mk = page => C(page, () => {
     go: !!document.querySelector('[data-a=go]'), lineup: !!document.querySelector('#panel > .lb-sheet.lineup')
   };
 });
+// 點不到（tapReady 等 5 秒還被蓋著／不在）＝記下是誰蓋住（page._miss），細節裡印出來
+async function tapOr(page, sel) {
+  const ok = await tapReady(page, sel);
+  if (!ok) {
+    const why = await C(page, sel => {
+      const e = document.querySelector(sel); if (!e) return { sel, none: true, st: window.DipLabStalls && window.DipLabStalls.state() };
+      const b = e.getBoundingClientRect(), t = document.elementFromPoint(b.left + b.width / 2, b.top + b.height / 2);
+      return { sel, rect: [Math.round(b.left), Math.round(b.top), Math.round(b.width), Math.round(b.height)], dis: !!e.disabled, arming: !!e.closest('.arming'), on: t ? (t.id || t.className || t.tagName).toString().slice(0, 60) : null, st: window.DipLabStalls && window.DipLabStalls.state() };
+    }, sel);
+    (page._miss || (page._miss = [])).push(why);
+  }
+  return ok;
+}
+const missTxt = page => (page._miss && page._miss.length ? `；點不到 ${J(page._miss.slice(0, 3)).slice(0, 600)}` : '');
 async function enter(page, kind) {
-  await tapReady(page, `.st-mk .st-mt[data-k="${kind}"]`);
+  await settle(page, '.st-mk .st-mgrid');
+  await tapOr(page, `.st-mk .st-mt[data-k="${kind}"]`);
   await page.waitForFunction(k => { const s = window.DipLabStalls.state(); return !s || s.phase !== 'grid' || (window.__lab.run.pending && window.__lab.run.pending.went[k]); }, kind, { timeout: 5000 }).catch(() => {});
   await sleep(350);
 }
@@ -126,16 +151,16 @@ async function tapIn(page, sel) {
     sh.scrollTop += a.bottom > b.bottom ? a.bottom - b.bottom + 4 : a.top - b.top - 4;
     (window.__scrolled || (window.__scrolled = [])).push(sel);
   }, sel);
-  return tapReady(page, sel);
+  return tapOr(page, sel);
 }
 const tapSheet = async (page, sel) => { const ok = await tapIn(page, '.lb-sheet.stall.st-mk ' + sel); await sleep(350); return ok; };
 // 收攤（收攤鈕 → 有確認就按「收攤」）→ 市集收掉；上場面板開著＝照預設按「就這五張」。回 { asked, taps, cash, lineup }
 async function leaveMarket(page, o = {}) {
   const m0 = await C(page, () => window.__lab.run.money), c0 = page._clicks;
-  await tapReady(page, '.st-mk [data-a=leave]');
+  await tapOr(page, '.st-mk [data-a=leave]');
   await sleep(400);
   const ask = await C(page, () => (document.querySelector('.st-mk .st-ask') || {}).textContent || null);
-  if (ask) { await tapReady(page, '.st-ask [data-a=leaveYes]'); await sleep(300); }
+  if (ask) { await tapOr(page, '.st-ask [data-a=leaveYes]'); await sleep(300); }
   await page.waitForFunction(() => { const p = window.__lab.run.pending; return !(p && p.type === 'stall'); }, null, { timeout: 8000 }).catch(() => {});
   const m1 = await C(page, () => window.__lab.run.money);
   const lu = o.keepLineup ? false : await luSkip(page, 2500);
@@ -335,7 +360,7 @@ async function runSize(browser, w, h) {
         `鏡頭 ${s0.cam}、島台 ${geo.cells.length} 格在面板（${geo.panelTop}）上方／頂欄（${geo.topBot}）下方 ${isleOk(geo)} ${J(geo.cells.map(c => [c.k, c.y0, c.y1]))}；` +
         `小人 ${J(p0.p)}＝browse ${J(p0.sp)}、走位 ${J(p0.w)}（市集開了以後 ${J(pw)}）、逛攤後走位 ${J(walk2)}；` +
         `P3：確認「${ask1}」→ 再逛逛（${back.phase}、剩 ${back.p.left}）→ 收攤＋確認 ${taps} 下 → +$${a.money - m0}、樂歷 +${a.lexp - lx0}（自動 demo 吐司 ${tt.includes(fill(x.mkDemoAuto, { n: x.demoLexp }))}）、` +
-        `回來客 ${night}、leave ${a.leave}、鏡頭 ${a.cam}；${errTxt(page)}`);
+        `回來客 ${night}、leave ${a.leave}、鏡頭 ${a.cam}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(1, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -386,7 +411,7 @@ async function runSize(browser, w, h) {
         `第一個市集 ${m.first}；打開＝翻第 1 張（翻開 ${look1.up}、錢 ${s[0].money}、月亮 ${s[0].p.left}/3、面板月亮 ${s[0].sheetMoons.lit}）、下一顆「${look1.next}」、第 3 張「${look1.warn}」；` +
         `第 2 張 −$${9000 - s[1].money}（「${look2.next}」）；第 3 張 −$${s[1].money - s[2].money} → 停住 2 秒 ${s[2].phase}（cur ${s[2].p.cur}、翻開 ${look3 && look3.up}、「${look3 && look3.noted}」）→ 攤位格、打勾 ${s[3].grid.find(t => t.k === 'fortune').ck}；` +
         `籤 ${J(sl.map(f => f.slip + (f.pos ? '@' + f.pos : '')))} 對得上牌組 ${sl.map(f => slipOk(f, T)).join('/')}；島台 ${J(isl && isl.slips)}；` +
-        `收攤 ${J(lv)} → 頭像籤標 ${J(marks.map(g => g.ft ? g.i : null).filter(v => v != null))}（應 ${J(Object.keys(want).map(Number))}）、藏家那一句 ${bl.some(l => l.t.includes(bossLine))}；${errTxt(page)}`);
+        `收攤 ${J(lv)} → 頭像籤標 ${J(marks.map(g => g.ft ? g.i : null).filter(v => v != null))}（應 ${J(Object.keys(want).map(Number))}）、藏家那一句 ${bl.some(l => l.t.includes(bossLine))}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(2, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -421,7 +446,7 @@ async function runSize(browser, w, h) {
       record(3, size, m.tiles.includes('fortune') && okOmen && okTop && lv.go && !errs(page).length,
         `打完第 40 位：攤位格 ${J(m.tiles)}；籤 ${J(sl.map(f => f.slip + (f.pos ? '@' + f.pos : '')))}；凶籤（第 3 張 ${omen ? sl.indexOf(omen) === 2 : '-'}）紅框「${om && om.t}」、第 ${omen && omen.pos} 位品味 ${og && og.atk0}→${og && og.atk}（guestDef）、` +
         `頭像「${marks[oi] && marks[oi].om}」、讀屏含凶 ${!!(marks[oi] && marks[oi].aria.includes(x.mkOmenTag))}、點頭像紅字 ${ol.some(l => l.om)}；` +
-        `菁英最大那張 ${top && top.card}（${top && [top.c, top.o, top.h].join('/')}）對得上 ${top && slipOk(top, T)}、頭像面板「${(tl.find(l => !l.om) || {}).t || ''}」；收攤 ${J(lv)}；${errTxt(page)}`);
+        `菁英最大那張 ${top && top.card}（${top && [top.c, top.o, top.h].join('/')}）對得上 ${top && slipOk(top, T)}、頭像面板「${(tl.find(l => !l.om) || {}).t || ''}」；收攤 ${J(lv)}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(3, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -481,7 +506,7 @@ async function runSize(browser, w, h) {
       record(4, size, busyT.includes(x.mkBusy) && okTea && okDig && okGear && okNo && !errs(page).length,
         `點收音機 ${J(busyT)}；冬瓜茶「${tea}」聲望 ${h0.hp}→${t1.hp}/${t1.maxHp}、錢 ${h0.money}→${t1.money}、月亮 ${e1.p.left}→${t1.p.left}、自動回 ${t1.phase}；` +
         `點島台 ${isle[0].hot}→${d1.sheet && d1.sheet.kind}、2.5 秒後蓋著 ${down1}/3、回攤位月亮 ${d2.p.left}（seen ${d2.p.seen}）、再進同一批 ${J(d3.p.cards) === J(d1.p.cards)}、翻一張 → 蓋著 ${down2}、收 → 包包 ${bag1}、月亮 ${d4.p.left}；` +
-        `小物攤「${gr.name}」${gr.relics.length} 件 −$${mg0 - g5.money} → 配件 ${rel}、月亮 ${g5.p.left}、自動回 ${g5.phase}；時段用完：灰格 ${g5.grid.filter(t => !t.went && t.off).map(t => t.k)}、點了 ${J(noSlot)}、收攤鈕「${g5.leave}」、問 ${!!lv.ask}、+$${lv.cash}；${errTxt(page)}`);
+        `小物攤「${gr.name}」${gr.relics.length} 件 −$${mg0 - g5.money} → 配件 ${rel}、月亮 ${g5.p.left}、自動回 ${g5.phase}；時段用完：灰格 ${g5.grid.filter(t => !t.went && t.off).map(t => t.k)}、點了 ${J(noSlot)}、收攤鈕「${g5.leave}」、問 ${!!lv.ask}、+$${lv.cash}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(4, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -574,12 +599,12 @@ async function runSize(browser, w, h) {
       const k0 = await toastMark(page);
       const l3 = await leaveMarket(page);
       const tt = await toastsSince(page, k0);
-      const ok = J(t15.p.tiles.slice(0, 5).sort()) === J(t15.p.tiles.slice(0, 5).sort()) && s1.p.left === 1 && s1.leave === fill(x.mkLeave, { n: mtx(300) }) && !l1.ask && l1.cash === 300 && l1.go && lv1 === 1 &&
+      const ok = t15.p.left === 3 && s1.p.left === 1 && s1.leave === fill(x.mkLeave, { n: mtx(300) }) && !l1.ask && l1.cash === 300 && l1.go && lv1 === 1 &&
         s2.p.left === 3 && !l2.ask && l2.cash === 900 && l2.lineup && l2.taps <= 2 && l2.go &&
         s3.p.slots === 4 && !l3.ask && l3.cash === 1200 && l3.taps <= 3 && l3.go && tt.includes(fill(x.mkDemoAuto, { n: x.demoLexp }));
       record(6, size, ok && !errs(page).length,
         `第一次收攤剩 ${s1.p.left}（「${s1.leave}」）：問 ${!!l1.ask}、+$${l1.cash}、leave ${lv1}；第二次（一般輪、剩 ${s2.p.left}）：問 ${!!l2.ask}、+$${l2.cash}、上場面板 ${l2.lineup}、必點 ${l2.taps} 下；` +
-        `中繼點（剩 ${s3.p.left}）：問 ${!!l3.ask}、+$${l3.cash}、自動 demo ${tt.includes(fill(x.mkDemoAuto, { n: x.demoLexp }))}、必點 ${l3.taps} 下；${errTxt(page)}`);
+        `中繼點（剩 ${s3.p.left}）：問 ${!!l3.ask}、+$${l3.cash}、自動 demo ${tt.includes(fill(x.mkDemoAuto, { n: x.demoLexp }))}、必點 ${l3.taps} 下；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(6, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -614,7 +639,7 @@ async function runSize(browser, w, h) {
       }
       const max = Math.max(...runs.map(r => r.taps));
       record(7, size, runs.every(r => r.ok) && max <= 10 && !errs(page).length,
-        `M5 全點（cPolicy slotMin −9、flips 3、錢 $30,000）：` + runs.map(r => `第 ${r.after} 位之後 ${J(r.tiles)} → ${r.taps} 下 ${J(r.log)}${r.ok ? '' : '（沒走完）'}`).join('；') + `；最多 ${max} 下（≤10）；${errTxt(page)}`);
+        `M5 全點（cPolicy slotMin −9、flips 3、錢 $30,000）：` + runs.map(r => `第 ${r.after} 位之後 ${J(r.tiles)} → ${r.taps} 下 ${J(r.log)}${r.ok ? '' : '（沒走完）'}`).join('；') + `；最多 ${max} 下（≤10）；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(7, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -689,7 +714,7 @@ async function runSize(browser, w, h) {
         re2 && b1.p.cur === 'fortune' && b1.p.n === 2 && b1.p.left === b0.p.left && b0.p.left === 1 && b1.sheetMoons.lit === 1 && fl.up === 2 && fl.next === 1 && b1.money === b0.money;
       record(9, size, ok && !errs(page).length,
         `挖寶開著（翻 1 張）重新整理 → 面板 ${re1}、同一批 ${J(a1.p.cards) === J(a0.p.cards)}、月亮 ${a1.p.left}（面板 ${a1.sheetMoons.lit}）、沒打勾 ${!a1.p.went.dig}、翻開 ${up1}/3（回來直接翻開）、鏡頭 ${a1.cam}；` +
-        `回攤位：月亮 ${a2.moons.lit}、飲料打勾 ${a2.grid.find(t => t.k === 'snack').went}；算命第 2 張後重新整理 → 面板 ${re2}、翻了 ${b1.p.n}（畫 ${fl.up}）、下一張鈕 ${fl.next}、月亮 ${b1.p.left}、錢 ${b0.money}→${b1.money}；${errTxt(page)}`);
+        `回攤位：月亮 ${a2.moons.lit}、飲料打勾 ${a2.grid.find(t => t.k === 'snack').went}；算命第 2 張後重新整理 → 面板 ${re2}、翻了 ${b1.p.n}（畫 ${fl.up}）、下一張鈕 ${fl.next}、月亮 ${b1.p.left}、錢 ${b0.money}→${b1.money}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(9, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -703,6 +728,7 @@ async function runSize(browser, w, h) {
       const check = async (tag, o = {}) => {
         await sleep(350);
         const L = await layout(page);
+        if (o.kind && !(await page.$('.lb-sheet.stall.st-mk.st-k-' + o.kind))) { bad.push(tag + ' 面板沒開'); rows.push(tag + ' 面板沒開'); return; }
         const fit = L.app <= 1 && L.docY <= 1 && L.docX <= 1;
         const sheetOk = L.sheetH == null || (L.sheetH <= Math.round(L.vh * 0.55) + 1 && L.sheetTop >= L.topBot - 1);
         const tilesOk = L.tiles.every(t => t[0] >= 100 && t[1] >= 64);
@@ -715,24 +741,28 @@ async function runSize(browser, w, h) {
       // 第一個市集：攤位格、算命（翻開一張／翻滿停住）、飲料、挖寶、倉庫、唱盤、錄音室 demo（沒面板）
       await marketAt(page, 5, { money: 20000, fac: false });
       await check('第一個市集格', { noScroll: true });
-      await tapReady(page, '.st-mk [data-a=leave]'); await sleep(500); await check('收攤確認', { noScroll: true }); await tapReady(page, '.st-ask [data-a=leaveNo]'); await gridReady(page);
+      await tapReady(page, '.st-mk [data-a=leave]'); await sleep(500);
+      const askOn = !!(await page.$('.st-mk .st-ask [data-a=leaveNo]'));
+      await check('收攤確認', { noScroll: true });
+      if (!askOn) bad.push('收攤確認沒出');
+      await tapOr(page, '.st-ask [data-a=leaveNo]'); await gridReady(page);
       await C(page, () => { window.__lab.run.hp = window.__lab.run.maxHp - 5; });
-      for (const k of ['dig', 'warehouse', 'home', 'snack']) { await enter(page, k); await sheetReady(page, k); await check(k, { noScroll: k === 'snack' }); await tapSheet(page, '[data-a=back]'); await gridReady(page); }
-      await enter(page, 'fortune'); await sheetReady(page, 'fortune'); await check('fortune1', { noScroll: true });
-      await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await sleep(400); await check('fortune 停住', { noScroll: true });
+      for (const k of ['dig', 'warehouse', 'home', 'snack']) { await enter(page, k); await sheetReady(page, k); await check(k, { kind: k, noScroll: k === 'snack' }); await tapSheet(page, '[data-a=back]'); await gridReady(page); }
+      await enter(page, 'fortune'); await sheetReady(page, 'fortune'); await check('fortune1', { kind: 'fortune', noScroll: true });
+      await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await sleep(400); await check('fortune 停住', { kind: 'fortune', noScroll: true });
       await tapSheet(page, '[data-a=noted]'); await gridReady(page);
       // 一般輪（樂歷 Lv4＋寄賣領取＋踢館帖＝9 格）：同業調貨、小物攤、演唱會、公關片、寄賣、寄賣領取、踢館帖
       await marketAt(page, 35, { money: 20000, leave: 1, run: { marketTiles: 6 }, tiles: ['trade', 'gear', 'gig', 'promo', 'consign', 'snack'], free: ['consignGet', 'dare'] });
       await C(page, () => { const r = window.__lab.run; r.consign = { card: r.bag[r.bag.length - 1], due: r.round }; r.pending.seen = {}; window.__lab.money(r.money); });
       await check('Lv4 9 格', { noScroll: true });
-      for (const k of ['trade', 'gear', 'gig', 'promo', 'consign', 'dare']) { await enter(page, k); await sheetReady(page, k); await check(k); await tapSheet(page, k === 'dare' ? '[data-a=decline]' : '[data-a=back]'); await gridReady(page); }
+      for (const k of ['trade', 'gear', 'gig', 'promo', 'consign', 'dare']) { await enter(page, k); await sheetReady(page, k); await check(k, { kind: k }); await tapSheet(page, k === 'dare' ? '[data-a=decline]' : '[data-a=back]'); await gridReady(page); }
       // 中繼點：黑膠特賣、錄音室試錄（?fac=1）
       await marketAt(page, 10, { money: 20000, fac: true });
       await check('中繼點格', { noScroll: true });
-      await enter(page, 'market'); await sheetReady(page, 'market'); await check('黑膠特賣'); await tapSheet(page, '[data-a=done]'); await gridReady(page);
-      await enter(page, 'studio'); await sheetReady(page, 'studio'); await check('錄音室試錄', { noScroll: true });
+      await enter(page, 'market'); await sheetReady(page, 'market'); await check('黑膠特賣', { kind: 'market' }); await tapSheet(page, '[data-a=done]'); await gridReady(page);
+      await enter(page, 'studio'); await sheetReady(page, 'studio'); await check('錄音室試錄', { kind: 'studio', noScroll: true });
       // 面板底部的鈕（回攤位）要捲才看得到：照「放不下面板自己捲」記下來、不擋（規格沒寫底鈕一定要在可視範圍）
-      record(10, size, !bad.length && !errs(page).length, `${bad.length ? '不合：' + bad.join('、') + '；' : ''}${hidden.length ? '（記錄）底鈕要捲：' + hidden.join('、') + '；' : ''}${rows.join('；')}；${errTxt(page)}`);
+      record(10, size, !bad.length && !errs(page).length, `${bad.length ? '不合：' + bad.join('、') + '；' : ''}${hidden.length ? '（記錄）底鈕要捲：' + hidden.join('、') + '；' : ''}${rows.join('；')}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(10, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -768,7 +798,7 @@ async function runSize(browser, w, h) {
       const n3 = await C(page, () => { const st = window.__lab.crowd.state(); return { mode: st.mode, market: st.market }; });
       record(11, size, on0 >= 1 && n1.mode === 'still' && n1.market && !n1.island.length && !n1.near.length && !n2.island.length && !n2.near.length && lv.go && !n3.market && !errs(page).length,
         `凍在島邊 ${on0} 位 → 開市集 ${secs} 秒後：導演 ${n1.mode}／market ${n1.market}、島邊 ${J(n1.island)}、亮格前 ${J(n1.near)}（店裡 ${n1.n} 位）；逛兩攤後 島邊 ${J(n2.island)}、亮格前 ${J(n2.near)}；` +
-        `收攤 ${lv.go} → 導演 ${n3.mode}／market ${n3.market}；${errTxt(page)}`);
+        `收攤 ${lv.go} → 導演 ${n3.mode}／market ${n3.market}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(11, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -825,7 +855,7 @@ async function runSize(browser, w, h) {
         !P.ta.length && !P.run.length && !P.lad.length && out.pickUi.rows === 2 && !out.pickUi.mk && !out.pickUi.mode;
       record(12, size, ok && !errs(page).length,
         `市集模式 Lv${M.lv}：talentArgs ${J(M.ta)}、run ${J(M.run)}、階梯 ${J(M.lad)}；第 ${pl.after} 位之後 ${pl.paid} 攤（格 ${pl.grid}）、算命第 2 張「${pl.btn}」錢 ${pl.ok ? '不動' : '動了'}、挖寶 ${pl.dig.cards} 張（畫 ${pl.dig.tiles}）；` +
-        `?market=0：talentArgs ${J(P.ta)}、run ${J(P.run)}、階梯 ${J(P.lad)}、第一個市集 ${J(out.pickUi)}；${errTxt(page)}`);
+        `?market=0：talentArgs ${J(P.ta)}、run ${J(P.run)}、階梯 ${J(P.lad)}、第一個市集 ${J(out.pickUi)}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(12, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -872,7 +902,7 @@ async function drawRules(browser) {
     const g = await C(page, () => ({ blue: window.DipLabContent.waveC.stall.blue, tiles: [...document.querySelectorAll('.st-mk .st-mt')].map(b => [b.getAttribute('data-k'), b.classList.contains('blue')]) }));
     const okBlue = g.tiles.every(([k, b]) => b === g.blue.includes(k));
     record(13, '390x664', !res.bad.length && res.n > 200 && res.cps > 10 && okBlue && !errs(page).length,
-      `一般輪 ${res.n} 場（其中 6 攤 ${res.n6}）＋中繼點 ${res.cps} 場：不合 ${res.bad.length}${res.bad.length ? ' ' + J(res.bad.slice(0, 6)) : ''}；畫面藍框 ${J(g.tiles)} 對 stall.blue ${okBlue}；${errTxt(page)}`);
+      `一般輪 ${res.n} 場（其中 6 攤 ${res.n6}）＋中繼點 ${res.cps} 場：不合 ${res.bad.length}${res.bad.length ? ' ' + J(res.bad.slice(0, 6)) : ''}；畫面藍框 ${J(g.tiles)} 對 stall.blue ${okBlue}；${errTxt(page)}${missTxt(page)}`);
   } catch (e) { record(13, '390x664', false, 'exception ' + e.message); }
   await ctx.close();
 }

@@ -614,7 +614,8 @@ function runOnce(pol, flow, i, A) {
     }
     const dareNow = !prologue && !!(run.dare && run.dare.round === run.round);
     const res = EN.finishFight(run, C);
-    if (LU && !prologue && d >= 16 && d <= 30 && run.stats.wear) { const w1 = run.stats.wear; A.lu.p1630 += (w1.plays | 0) - ((wear0 && wear0.plays) | 0); A.lu.w1630 += (w1.wornPlays | 0) - ((wear0 && wear0.wornPlays) | 0); }
+    if (LU && !prologue && d >= 16 && d <= 30 && run.stats.wear) { const w1 = run.stats.wear; A.lu.p1630 += (w1.plays | 0) - ((wear0 && wear0.plays) | 0); A.lu.w1630 += (w1.wornPlays | 0) - ((wear0 && wear0.wornPlays) | 0);
+      if (MK_ON && !EN.benchN(run, C)) { A.lu.p1630n = (A.lu.p1630n | 0) + (w1.plays | 0) - ((wear0 && wear0.plays) | 0); A.lu.w1630n = (A.lu.w1630n | 0) + (w1.wornPlays | 0) - ((wear0 && wear0.wornPlays) | 0); } }   // I-3a sim 棒：市集開著另記沒替補的場（W3 照 I-2 裁定在沒替補時判）
     if (TR && res.offer && Array.isArray(res.offer.relics) && res.offer.relics.length) TR.push(['r', d, res.offer.relics.join(',')]);
     if (prologue) { manTries++; continue; }
     if (CW && att === 0 && d >= 31) { const k = dareNow ? 'dare' : 'plain'; CW[k].f++; if (res.win) CW[k].w++; }   // K2：接帖那輪首戰 vs 平常（踢館帖第 30 位後才出）
@@ -831,7 +832,8 @@ function luStats(L, n) {
   const r = (a, b) => (b ? a / b : null), mean = a => (a.length ? a.reduce((s, x) => s + x, 0) / a.length : null);
   return { w1: r(L.w1a, L.w1n), w1on: r(L.w1on, L.w1n), w1n: L.w1n, worn1630: r(L.w1630, L.p1630), plays1630: L.p1630, wornAll: r(L.worn, L.plays), layers: L.layers / n, rest: L.rest / n,
     picks: L.picks / n, changed: r(L.changed, L.chN), star: r(L.star, L.starN), pow: r(L.pow, L.starN), hit: r(L.hit, L.fights), hitBag: r(L.hitBag, L.fights), fights: L.fights,
-    bench: L.bench / n, swaps: L.swaps / n, fills: L.fills / n, quiet: r(L.quiet, L.steps), bag15: mean(L.bag15), bag30: mean(L.bag30), sleeve: L.sleeve / n };
+    bench: L.bench / n, swaps: L.swaps / n, fills: L.fills / n, quiet: r(L.quiet, L.steps), bag15: mean(L.bag15), bag30: mean(L.bag30), sleeve: L.sleeve / n,
+    ...(MK_ON ? { worn1630n: r(L.w1630n | 0, L.p1630n | 0), plays1630n: L.p1630n | 0 } : {}) };   // I-3a：市集開著才有（pick 輸出逐字）
 }
 function printLu(rows) {
   console.log(`\n上場（第 I 波 I-2；${LU_ON ? '每輪挑 ' + EN.luCfg(C).n + ' 張' : '上場制關'}；每趟平均）：\n`);
@@ -851,7 +853,9 @@ function luChecks(G, tag) {
   const put = (id, name, okv, info, nMin) => { if (both && N >= nMin && okv != null) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + (both ? (N < nMin ? `；n ${N} < ${nMin} 只列參考（判 ${id} 用 --n ${nMin}）` : '') : '；上場、耐聽沒有一起開（或 --from）只列') + (okv == null ? '' : okv ? '［在門檻內］' : '［不在門檻內］') }); };
   if (TH && TH.lineup) {
     put('W1', `${tag}第 15 位以後還會換：會讀的 第 16–30 位收新唱片 ≥50%（擋開關）`, TH.lineup.w1 != null ? TH.lineup.w1 >= 0.50 - 1e-9 : null, `${pct(TH.lineup.w1)}（${TH.lineup.w1n} 趟；上場有新的 ${pct(TH.lineup.w1on)}）`, 1000);
-    put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null, `${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次）`, 1000);
+    if (MK_ON) put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位、沒替補的場打出去的唱片裡聽膩的 5–25%（I-2 裁定：有替補＝聽膩的自動換下，不判）`, TH.lineup.worn1630n != null ? TH.lineup.worn1630n >= 0.05 - 1e-9 && TH.lineup.worn1630n <= 0.25 + 1e-9 : null,
+      `沒替補 ${pct(TH.lineup.worn1630n)}（${TH.lineup.plays1630n} 次）；全部 ${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次；有側袋的趟 ${pct(TH.lineup.sleeve)}）`, 1000);
+    else put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null, `${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次）`, 1000);
     if (TH.wcx) put('W4', `${tag}錢有去處：會讀的花掉 ≥60%（E1 升回門檻；不過寫進 rulings 降回參考）`, TH.wcx.spentShare >= 0.60 - 1e-9, pct(TH.wcx.spentShare), 1000);
   }
   if (HR && HR.lineup) refs.push({ id: 'W1', name: `${tag}一般玩家 第 16–30 位收新唱片`, ok: null, info: `${pct(HR.lineup.w1)}（${HR.lineup.w1n} 趟）` });
@@ -1353,8 +1357,9 @@ if (MODE === 'all' || MODE === 'runs') {
       if (W && WCC.stall.on && !COPT_SET) {
         const P = W.pick, judged = WC_KINDS.filter(k => P[k] && P[k].offered >= 50), out = judged.filter(k => !(P[k].rate >= 0.15 - 1e-9 && P[k].rate <= 0.85 + 1e-9)), few = WC_KINDS.filter(k => !P[k] || P[k].offered < 50);
         const zh = k => (C.waveC && C.waveC.stations && C.waveC.stations[k]) || k;
-        check('K1', `${tag}選路有差：會讀的 每種站出現時被選 15–85%`, judged.length && !out.length,
-          judged.map(k => zh(k) + ' ' + p0(P[k].rate)).join('、') + (out.length ? '（沒過：' + out.map(zh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(k => zh(k) + (P[k] ? ' ' + Math.round(P[k].offered) + ' 次' : ' 0 次')).join('、') : ''));
+        const k1info = judged.map(k => zh(k) + ' ' + p0(P[k].rate)).join('、') + (out.length ? '（沒過：' + out.map(zh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(k => zh(k) + (P[k] ? ' ' + Math.round(P[k].offered) + ' 次' : ' 0 次')).join('、') : '');
+        if (MK_ON) refs.push({ id: 'K1', name: `${tag}選路有差（C 波二選一的定義）：會讀的 每種站出現時被選 15–85%`, ok: judged.length && !out.length, info: k1info + '；市集模式由 K1′ 判（SPEC-I §6.7），這條只列' });   // I-3a sim 棒
+        else check('K1', `${tag}選路有差：會讀的 每種站出現時被選 15–85%`, judged.length && !out.length, k1info);
         const dp = P.dare ? P.dare.picked : 0;
         if (dp >= 30) check('K2', `${tag}踢館帖：會讀的 接帖率（接÷走到那站）20–80%`, W.dareRate >= 0.20 - 1e-9 && W.dareRate <= 0.80 + 1e-9, `${pct(W.dareRate)}（走到 ${Math.round(dp)} 次）`);
         else refs.push({ id: 'K2', name: `${tag}踢館帖接帖率 20–80%`, ok: null, info: `走到那站只有 ${Math.round(dp)} 次，不判` });

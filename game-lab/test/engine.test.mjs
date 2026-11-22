@@ -6023,9 +6023,9 @@ section('37 第 I 波 I-3a 市集殼（SPEC-I §6.2、§6.3、§6.6、§10；SPE
     eq(enter(r, CM, 'dig').error, 'went', 'went: cannot re-enter');
     ok(enter(r, CM, 'home').ok && act(r, CM, 'ok').ok && p.left === 1 && p.went.home, 'home: ok spends a slot');
     r.hp = r.maxHp - 2; const m0 = r.money, h0 = r.hp;
-    ok(enter(r, CM, 'snack').ok && J(p.cur.drinks) === J([{ kind: 'tea', hp: 3, price: 0 }]), 'snack (drink stall): only 冬瓜茶 in I-3a');
+    ok(enter(r, CM, 'snack').ok && J(p.cur.drinks) === J([{ kind: 'tea', hp: CM.waveC.stall.fair.drinks.tea.hp, price: 0 }]) && CM.waveC.stall.fair.drinks.tea.hp === 2, 'snack (drink stall): only 冬瓜茶 in I-3a (+2, sim 棒)');
     const t = act(r, CM, 'drink', { kind: 'tea' });
-    ok(t.ok && r.hp === r.maxHp && r.hp - h0 === 2 && r.money === m0 && p.left === 0 && p.cur === null && t.effects.some(e => e.drink === 'tea' && e.hp === 2), '冬瓜茶: +3 capped at max, free, spends a slot, closes', t.effects);
+    ok(t.ok && r.hp === r.maxHp && r.hp - h0 === 2 && r.money === m0 && p.left === 0 && p.cur === null && t.effects.some(e => e.drink === 'tea' && e.hp === 2), '冬瓜茶: +2 (capped at max), free, spends a slot, closes', t.effects);
     eq(enter(r, CM, 'fortune').error, 'noSlot', 'no slot left → paid stalls closed');
     ok(enter(r, CM, 'studio').ok && !p.cur.nodes && act(r, CM, 'record', { node: 'a1' }).error === 'notOffered', 'studio without ?fac=1: no nodes, record → notOffered');
     const d0 = r.lexp.demo | 0;
@@ -6182,6 +6182,26 @@ section('37 第 I 波 I-3a 市集殼（SPEC-I §6.2、§6.3、§6.6、§10；SPE
     }
     console.log('     market runs: ' + J({ runs, sess, used, left, slots }));
     ok(bad === 0 && sess > 0 && used > 0, 'smart runs in market mode: every choice ok; used + left = slots', { bad, sess, used, left, slots, runs }); }
+  // ---- I-3a sim 棒：看貨估值（預設：挖寶／調貨／倉庫／小物先進去看、回攤位格不扣，再照真的貨挑）vs o.peek false（引擎棒原本的估法）：兩種都合法、時段帳對 ----
+  { let bad = 0; const back = {}, used = {}, peeked = {};
+    for (const pk of [true, false]) { back[pk] = 0; used[pk] = 0; peeked[pk] = 0;
+      for (let s = 0; s < (QUICK ? 3 : 8); s++) {
+        const r = newM('mk-peek-' + s, CM, { ace: TIERS[s % 3] }), R = lcg(EN.fnv1a32('mk-peek-' + s)), mem = {}, o = pk ? {} : { peek: false };
+        for (let g = 0; g < 3000 && !r.over && r.pos <= 35; g++) {
+          if (r.pending) {
+            const p = r.pending, left0 = p.left, ch = EN.cPolicy(r, CM, o), x = EN.choose(r, CM, ch); if (!x.ok) { bad++; break; }
+            if (ch.type === 'stallAct' && ch.act === 'back' && p.mode === 'market' && p.left !== left0) bad++;   // 看一眼回來不扣
+            if (ch.type === 'stallAct' && ch.act === 'back' && ['dig', 'trade', 'warehouse', 'gear'].includes((x.effects.find(e => e.close) || {}).close)) peeked[pk]++;
+            continue;
+          }
+          if (EN.canShop(r)) for (const ch of EN.shopPolicy(r, CM, 'smart')) EN.choose(r, CM, ch);
+          const f = EN.startFight(r, CM, {}); let k = 0; while (!f.duel.over && k++ < 20) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CM));
+          EN.finishFight(r, CM);
+        }
+        const M = r.stats.c && r.stats.c.mk; if (M && !EN.isMarket(r)) { back[pk] += M.back; used[pk] += M.used; if (M.used + M.leftSum !== M.slots) bad++; }
+      } }
+    console.log('     market peek: ' + J({ back, used, peeked }));
+    ok(bad === 0 && peeked[true] > 0 && peeked[false] === 0 && used[true] > 0 && used[false] > 0, 'market policy: peek (default) looks first (back, no slot), peek:false never does; both legal', { bad, back, used, peeked }); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
