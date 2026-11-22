@@ -6202,6 +6202,42 @@ section('37 第 I 波 I-3a 市集殼（SPEC-I §6.2、§6.3、§6.6、§10；SPE
       } }
     console.log('     market peek: ' + J({ back, used, peeked }));
     ok(bad === 0 && peeked[true] > 0 && peeked[false] === 0 && used[true] > 0 && used[false] > 0, 'market policy: peek (default) looks first (back, no slot), peek:false never does; both legal', { bad, back, used, peeked }); }
+  // ---- I-3a 修正棒（11-22 審查）：寄賣不被第二張蓋掉、到期的三張在到期那個市集定好（不重抽）；同業調貨買光自動回 ----
+  { let had = 0, leak = 0, cg = 0, same = 0, busy = 0, n = 0;
+    for (let s = 0; s < (QUICK ? 6 : 16); s++) {
+      const r = toStall(newM('mk-cs-' + s, CM, { ace: TIERS[s % 3] }), CM, 21); if (!EN.isMarket(r)) continue; n++;
+      const out = r.bag.find(id => !r.bag.slice(0, 1).includes(id)) || r.bag[0];
+      // (a) 沒寄賣：這幾個種子裡會抽到寄賣；有寄賣在外面：同一個位置一次都不抽
+      for (const after of [20, 25, 30, 35, 40, 45]) {
+        const a = JSON.parse(J(r)); a.pending = null; a.pos = after + 1; a.round = Math.ceil(a.pos / 5); a.consign = null; EN.stallSession(a, CM); if (a.pending.tiles.includes('consign')) had++;
+        const b = JSON.parse(J(r)); b.pending = null; b.pos = after + 1; b.round = Math.ceil(b.pos / 5); b.consign = { card: out, due: b.round + 2 }; EN.stallSession(b, CM); if (b.pending.tiles.includes('consign')) leak++;
+      }
+      // (b) 到期：三張存在 run.consign.cards；進去看、回攤位、收攤；下一個市集還是同三張
+      const c = JSON.parse(J(r)); c.pending = null; c.bag = c.bag.filter(id => id !== out); c.consign = { card: out, due: c.round };
+      EN.stallSession(c, CM); const p = c.pending, k0 = (c.consign.cards || []).slice();
+      if (p.free.includes('consignGet') && k0.length === 3) cg++;
+      const e1 = enter(c, CM, 'consignGet'), seen1 = (c.pending.cur.cards || []).slice(); act(c, CM, 'back'); EN.choose(c, CM, { type: 'stallLeave' });
+      c.pos += 5; c.round += 1; EN.stallSession(c, CM); enter(c, CM, 'consignGet'); const seen2 = (c.pending.cur.cards || []).slice();
+      if (e1.ok && J(seen1) === J(k0) && J(seen2) === J(k0) && J(c.consign.cards) === J(k0)) same++;
+      const t = act(c, CM, 'take', { cardId: seen2[0] }); if (!(t.ok && c.consign === null && c.bag.includes(seen2[0]))) same--;
+      // (c) 強制擺出寄賣攤（舊存檔）＋寄賣還在外面：寄不了、run 不動
+      const d = JSON.parse(J(r)); d.consign = { card: out, due: d.round + 1 }; d.pending.tiles = d.pending.tiles.filter(k => k !== 'consign').concat(['consign']); d.pending.cur = null; d.pending.went = {}; d.pending.left = 3;
+      const ed = enter(d, CM, 'consign'), d0 = J(d), cand = d.bag.find(id => !EN.isGift(d, CM, id) && !EN.isSeed(d, CM, id)), xd = act(d, CM, 'consign', { cardId: cand });
+      if (ed.ok && xd.error === 'consignBusy' && J(d) === d0) busy++;
+    }
+    ok(n > 0 && had > 0 && leak === 0, 'market: no consign stall while a consignment is out (C-wave pick unchanged)', { n, had, leak });
+    ok(cg === n && same === n, 'market: due consignment goods fixed at the due market (run.consign.cards), same three after back＋leave＋next market, take clears', { n, cg, same });
+    ok(busy === n, "market: forced consign stall with a consignment out → 'consignBusy', run untouched", { n, busy });
+    // (d) 同業調貨：買光自動回（went、不用按回攤位）；只買一張還開著
+    let tr = 0, tn = 0;
+    for (let s = 0; s < (QUICK ? 3 : 8); s++) {
+      const r = toStall(newM('mk-tr-' + s, CM), CM, 16); if (!EN.isMarket(r)) continue; tn++;
+      const p = r.pending; p.tiles = p.tiles.filter(k => k !== 'trade').concat(['trade']); p.cur = null; p.went = {}; p.seen = {}; p.left = 3; r.money = 99999;
+      enter(r, CM, 'trade'); const ids = (r.pending.cur.cards || []).slice(); let okk = ids.length >= 2;
+      for (let i = 0; i < ids.length; i++) { const x = act(r, CM, 'buy', { cardId: ids[i] }); okk = okk && x.ok && (i < ids.length - 1 ? r.pending.cur && r.pending.cur.kind === 'trade' : r.pending.cur === null && r.pending.went.trade === 1 && x.effects.some(e => e.close === 'trade')); }
+      if (okk) tr++;
+    }
+    ok(tn > 0 && tr === tn, 'market: trade closes itself once every offered card is bought (stays open after one)', { tn, tr }); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

@@ -707,7 +707,7 @@
     //   isle(src)：src()→{ key（這一場市集）, cells:[{ hot:'bin:…', kind, went, open, rows（12×12 圖示）}], slips:{ hot, total, faces:[籤種類…] }|null }｜null（收掉）；
     //     每格讀一次（ui.js 給；不是市集回 null）。這裡補幾何：那一箱的 binTable 道具、去過的那一箱看得到的那一塊（被前面的箱子、人擋住的不算；鏡頭換了才重算）
     //   翻籤動畫只演看著它翻的那一次：同一個 key 第一次讀到就已經翻開的（重新整理回來、換畫面回來）直接畫翻好的
-    var ISL = { src: null, key: '', seen: -1, flipAt: [], reg: {} };
+    var ISL = { src: null, key: '', seen: -1, flipAt: [], reg: {}, pourN: null, pourAt: null };
     function isleProp(hot) { var k = String(hot || '').replace(/^bin:/, ''); return (L.props || []).filter(function (o) { return o.bin && o.bin.key === k && o.type === 'binTable'; })[0] || null; }
     function isleSpans(hot) {
       var v = shop.view(), key = v.y + ',' + v.h, c = ISL.reg[hot];
@@ -728,7 +728,9 @@
       var s = null;
       if (ISL.src) { try { s = ISL.src(); } catch (e) { console.error(e); } }
       if (!s) { shop.state.isle = null; ISL.key = ''; return; }
-      if (s.key !== ISL.key) { ISL.key = s.key; ISL.seen = -1; ISL.flipAt = []; }
+      if (s.key !== ISL.key) { ISL.key = s.key; ISL.seen = -1; ISL.flipAt = []; ISL.pourN = s.pour ? s.pour.n : null; ISL.pourAt = null; }   // 換一場市集：已經倒過的不再演
+      var po = s.pour && isleProp(s.pour.hot) ? s.pour : null;      // 飲料攤倒一杯（修正棒）：新的一杯＝從這一格開始演（約 3 秒）
+      if (po && po.n !== ISL.pourN) { ISL.pourN = po.n; ISL.pourAt = rt; }
       var sl = s.slips && isleProp(s.slips.hot) ? s.slips : null, faces = sl ? (sl.faces || []).slice(0, 4) : [];
       if (ISL.seen < 0) ISL.seen = faces.length;                               // 第一次讀到：已經翻開的不演
       for (var i = ISL.seen; i < faces.length; i++) ISL.flipAt[i] = reduced() ? null : rt;   // 減少動態：直接畫翻好的
@@ -737,9 +739,11 @@
       (s.cells || []).forEach(function (c) {
         var o = isleProp(c.hot); if (!o) return;
         var went = !!c.went && !c.open;
-        cells.push({ prop: o, hot: c.hot, kind: c.kind || '', rows: Array.isArray(c.rows) ? c.rows : null, went: went, open: !!c.open, spans: went ? isleSpans(c.hot) : null, slip: !!(sl && sl.hot === c.hot) });
+        var pouring = !!(po && po.hot === c.hot && ISL.pourAt != null && rt - ISL.pourAt < 3.2);
+        cells.push({ prop: o, hot: c.hot, kind: c.kind || '', rows: Array.isArray(c.rows) ? c.rows : null, went: went, open: !!c.open, spans: went ? isleSpans(c.hot) : null, slip: !!(sl && sl.hot === c.hot), pour: pouring });
       });
-      shop.state.isle = { cells: cells, slips: sl ? { prop: isleProp(sl.hot), hot: sl.hot, total: sl.total | 0 || 3, faces: faces, flipAt: ISL.flipAt.slice(0, faces.length) } : null };
+      shop.state.isle = { cells: cells, slips: sl ? { prop: isleProp(sl.hot), hot: sl.hot, total: sl.total | 0 || 3, faces: faces, flipAt: ISL.flipAt.slice(0, faces.length) } : null,
+        pour: po && ISL.pourAt != null && rt - ISL.pourAt < 3.2 ? { prop: isleProp(po.hot), hot: po.hot, kind: po.kind, at: ISL.pourAt, rm: reduced() } : null };
     }
 
     // ---------------- 公開 API

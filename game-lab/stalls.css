@@ -127,6 +127,9 @@
 .st-mtop .st-lxs{flex:1 1 auto;min-width:0;display:flex;justify-content:flex-end;}
 .st-mtop .st-lxs .cx-live{flex:1 1 auto;min-width:0;min-height:16px;margin:0;justify-content:flex-end;}
 .st-mtop .st-lxs .cx-live .t{flex:0 1 auto;text-align:right;}
+.st-mtop .st-lxs .cx-live{cursor:pointer;}
+.st-mtop .st-lxs .cx-live .cx-bar{display:none;}   /* 修正棒：頂列放不下（375 寬 4 顆月亮＋錢）會把「Lv N！…」截掉——進度條收掉，字優先；還放不下＝點一下吐司寫整句 */
+.st-mtop .st-sw{flex:none;margin-right:-4px;font:700 11px/16px var(--zh);color:var(--gray2);}   /* 月亮前面「時段」 */
 .st-moons{display:inline-flex;align-items:center;gap:4px;flex:none;}
 .st-moon{position:relative;display:block;width:14px;height:14px;border-radius:50%;background:#f0c75e;box-shadow:0 0 0 1px var(--ink);overflow:hidden;}
 .st-moon::after{content:'';position:absolute;left:-5px;top:-3px;width:14px;height:14px;border-radius:50%;background:#fff;}   /* 沒有像素圖時的退路：缺一角＝月亮 */
@@ -149,6 +152,9 @@
 .st-mt.blue .pr{color:var(--c);}
 .st-mt.dare{border:2px solid var(--red);}
 .st-mt .fr{position:absolute;top:0;right:0;font-size:10px;font-weight:700;line-height:1.3;padding:0 4px;background:var(--ink);color:#fff;pointer-events:none;}
+.st-mt .mo{position:absolute;top:3px;right:3px;line-height:0;pointer-events:none;}   /* 扣時段的攤：右上角小月亮（＝用 1 個時段；時段用完＝灰） */
+.st-mt .mo .st-mpx{display:block;image-rendering:pixelated;}
+.st-mt:not(.free) .nm{margin-right:10px;}
 .st-mt.went{background:#f1f1f1;border-color:#c8c8c8;color:var(--gray);cursor:default;}
 .st-mt.went .st-ic{opacity:.35;filter:grayscale(1);}
 .st-mt.went .pr{color:var(--gray);}
@@ -160,7 +166,8 @@
 /* 攤位面板（lb-sheet.stall.st-mk） */
 .lb-sheet.st-mk .st-cups{margin-top:8px;display:flex;flex-direction:column;gap:8px;}
 .lb-sheet.st-mk .st-cup{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;}
-.lb-sheet.st-mk .st-cup .st-ic{filter:invert(1);}
+.lb-sheet.st-mk .st-cup .st-ic{flex:none;padding:2px;background:#fff;border-radius:3px;box-sizing:content-box;}   /* 冬瓜茶手搖杯（MK_ICON.snack）放在白底小方塊上（深色鈕上看得到；不反白） */
+.lb-sheet.st-mk .st-dtap{margin:6px 0 0;text-align:center;font-size:13px;font-weight:700;color:var(--ink);}   /* 挖寶：點一張翻開（翻了就收） */
 .lb-sheet.st-mk .st-nodes{margin-top:6px;display:flex;flex-direction:column;gap:6px;}
 .lb-sheet.st-mk .st-node{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:48px;padding:6px 10px;text-align:left;}
 .lb-sheet.st-mk .st-node b{font-size:14px;}
@@ -173,7 +180,7 @@
 .st-slip .tx small{font-size:11px;font-weight:400;color:var(--gray2);}
 .st-slip .tx .warn{color:var(--red);}
 .st-slip .tx .q{color:var(--gray);}
-.st-slip .tx .lb-btn{align-self:flex-start;min-height:40px;padding:4px 12px;font-size:13px;}
+.st-slip .tx .lb-btn{align-self:flex-start;min-height:44px;padding:4px 12px;font-size:13px;}   /* 修正棒：40→44（點擊區） */
 .st-slip.down{background:#fafafa;}
 .st-slip.omen{border:2px solid var(--red);}
 .st-slip.omen .tx{color:var(--red);}
@@ -183,6 +190,7 @@
 .st-sleeve.back .rec::after{content:'';position:absolute;left:35%;top:35%;width:30%;height:30%;border-radius:50%;background:#c79bd8;}
 button.st-sleeve.back{cursor:pointer;}
 .st-slip.next .st-sleeve.back{box-shadow:0 0 0 2px #f0c75e;}
+.st-slip.next button.st-sleeve{width:44px;height:44px;}   /* 可以點的封套（翻下一張）≥44；蓋著、翻開的照 40／36 */
 .st-sleeve.cv .lb-cv{width:40px;height:40px;}
 .st-sleeve.omen{background:var(--red);color:#fff;font:700 16px var(--zh);}
 .st-slip .stars.st-slst{font-size:11px;}
@@ -194,5 +202,9 @@ button.st-sleeve.back{cursor:pointer;}
   .st-slips{gap:4px;margin-top:4px;}
   .st-slip{min-height:44px;padding:2px 6px;}
   .st-sleeve,.st-sleeve.cv .lb-cv{width:36px;height:36px;}
+  .st-slip.next button.st-sleeve{width:44px;height:44px;}
+  .st-slip.next{min-height:48px;}
+  /* 市集面板 ≤55%（375×548 約 300 px）：底那條黏在底（C 波 72% 面板定的 static 在這裡會把「回攤位」擠到要捲 200 px 才看得到） */
+  .lb-sheet.stall.st-mk .st-foot{position:-webkit-sticky;position:sticky;}
 }
 @media (prefers-reduced-motion:reduce){.st-moon.drop,.st-slip.st-turn{animation:none;}}

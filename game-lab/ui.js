@@ -187,10 +187,10 @@
       return true;
     } catch (_) { return false; }
   }
-  // 這一趟有市集的東西（翻籤陣列、市集 pending、樂歷三格、試錄第 III 層）
+  // 這一趟有市集的東西（翻籤陣列、市集 pending、樂歷三格）。試錄第 III 層（fac.lv3）不算（修正棒：只看它會讓 pick＋?fac=1 的 C 波算命被轉成陣列）
   function marketish(r) {
     if (!r || typeof r !== 'object') return false;
-    return Array.isArray(r.fortune) || !!(r.pending && r.pending.mode === 'market') || ['marketTiles', 'fortuneFree', 'digN'].some(function (k) { return k in r; }) || !!(r.fac && typeof r.fac === 'object' && 'lv3' in r.fac);
+    return Array.isArray(r.fortune) || !!(r.pending && r.pending.mode === 'market') || ['marketTiles', 'fortuneFree', 'digN'].some(function (k) { return k in r; });
   }
   // 第 I 波 I-3a 市集（validRun 用）：形狀對＝true
   function marketShapeOk(r) {
@@ -3181,7 +3181,8 @@
     // 第 D 波棒三（build3/CONTRACT §3）：派樹（?fac=1 才給；關樂歷＝{}）。沒點過樹＝{}（＝棒二的 ?fac=1）
     if (UI.fac && E.treeArgs && careerOk()) { try { nro.facTal = E.treeArgs(C, save.career, o.ace) || {}; } catch (e) { console.error(e); } }
     // 第 I 波 I-3a 錄音室試錄（SPEC-D §3.8；CONTRACT §3.2）：這一派熟練到第 III 層（treeLv3，預設 Lv5）＝這一趟可以試錄第 III 層。旗標關時不加這欄
-    if (UI.fac && E.treePoints && careerOk()) { try { if (E.treePoints(C, save.career, o.ace).level >= (E.treeLv3 ? E.treeLv3(C) : 5)) nro.facLv3 = true; } catch (e) { console.error(e); } }
+    //   修正棒（11-22 審查）：只在市集模式給（C 波二選一的錄音室是 demo、用不到；給了會讓讀檔把 C 波算命物件轉成陣列＝pick 不逐字）
+    if (UI.fac && E.treePoints && careerOk() && E.fairOn && E.fairOn(C)) { try { if (E.treePoints(C, save.career, o.ace).level >= (E.treeLv3 ? E.treeLv3(C) : 5)) nro.facLv3 = true; } catch (e) { console.error(e); } }
     // 第 D 波棒三試煉階級（SPEC-D §5.3；CONTRACT §2）：推門那列選的那一階（pick 夾在 0…open）；第 0 階不加這欄（＝沒開過試煉的帳號 newRun 逐字不變）。序章那一趟不給
     var tierPick = !o.prologue && E.trialPick ? trialPickNow() : 0;
     if (tierPick > 0) nro.tier = tierPick;
@@ -4782,11 +4783,13 @@
     if (!X || typeof X.isle !== 'function' || UI.screen !== 'night' || !p || p.type !== 'stall' || p.mode !== 'market') return null;
     var I = X._icons || {}, MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {}, st = (X.state && X.state()) || {};
     var open = p.cur ? p.cur.kind : (st.mode === 'market' && st.hold ? st.kind : null), fHot = null;
-    var cells = X.isle().map(function (c) { if (c.kind === 'fortune') fHot = c.hot; return { hot: c.hot, kind: c.kind, went: !!c.went, open: c.kind === open, rows: MK[c.kind] || I[c.kind] || null }; });
+    var sHot = null;
+    var cells = X.isle().map(function (c) { if (c.kind === 'fortune') fHot = c.hot; if (c.kind === 'snack') sHot = c.hot; return { hot: c.hot, kind: c.kind, went: !!c.went, open: c.kind === open, rows: MK[c.kind] || I[c.kind] || null }; });
     var fs = E.fortunesOf ? E.fortunesOf(r).filter(function (f) { return f.round === r.round; }) : [];
     var fc = p.cur && p.cur.kind === 'fortune' ? p.cur : null;
     var slips = fHot && (fc || fs.length || (p.acts && p.acts.fortune > 0)) ? { hot: fHot, total: fc && fc.order ? fc.order.length : 3, faces: fs.map(function (f) { return f.slip; }) } : null;
-    return { key: runTag(r) + '#mk#' + p.after, cells: cells, slips: slips };
+    var po = st.pour && sHot ? { n: st.pour.n, hot: sHot, kind: st.pour.kind } : null;   // 飲料攤倒一杯（修正棒：§6.3「點了倒飲料的小動畫」，畫在島台那一箱）
+    return { key: runTag(r) + '#mk#' + p.after, cells: cells, slips: slips, pour: po };
   }
   // 錢、包包、配件那一條（來客畫面、今天的攤位共用）
   function bagLineInner(r) {

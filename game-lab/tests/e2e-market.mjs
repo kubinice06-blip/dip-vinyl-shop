@@ -34,6 +34,9 @@
 //      逛攤（進出兩攤）6 秒後還是沒人回島邊；收攤 → market 旗標收起
 //   12 樂歷階梯（§11 第 7 列；市集模式才列、才給）：Lv7 帳號開一趟（talentArgs）→ run.marketTiles 6／fortuneFree 1／digN 4；一般輪 6 攤；算命第 2 張「免費」不扣錢；
 //      挖寶四張（第 4 張不限色）；?market=0（C 波）同一個帳號 talentArgs 沒有這三鍵、ladderList 不列、第一個市集照 C 波兩列
+//   14 修正棒（11-22 審查）：扣時段的格子右上小月亮、第二行不寫「免費」（不花錢／打開就翻一張）、免費攤才有「免費」角標、頂列「時段」；挖寶「點一張翻開」（翻了一張收掉）；
+//      冬瓜茶島台倒一杯（isle.pour）、市集吐司靠右上（.mk）；算命翻滿而且沒別的攤＝「記下了，收攤」一下收攤；踢館帖／錄音室試錄有「回攤位」（不扣、還能再進）；
+//      時段用完＝島台只亮免費攤；寄賣那張還在外面＝寄賣攤寫原因、鈕灰；375 店裡唱盤／黑膠特賣「回攤位」看得到（底那條黏底）
 //   13 抽攤規則（§6.2-6、-7、-8；content stall.fair）：三個種子 × 打完第 5〜200 位每一輪：第一個市集＝固定組＋錄音室；一般輪 5 攤（marketTiles 6＝6 攤）不重複、
 //      只出 weights 裡的、花錢攤 ≤ paidMax、至少一攤藍框、公關片／寄賣照解鎖位數；中繼點＝5 攤＋黑膠特賣＋錄音室、時段 4；畫面藍框格＝stall.blue
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
@@ -58,8 +61,9 @@ const UI = page => C(page, () => { const W = window.DipLabContent.waveC; return 
 // 頁面一載入就記吐司（.lb-toast）
 async function watchToasts(page) {
   await page.addInitScript(() => {
-    window.__toasts = [];
-    const start = () => new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); })))
+    window.__toasts = []; window.__toastKilled = [];               // killed＝還沒淡出（沒有 .out）就被拿掉＝玩家看不到（修正棒：收攤 demo 吐司原本同一毫秒被清掉）
+    const start = () => new MutationObserver(ms => ms.forEach(m => { m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast')) window.__toasts.push(n.textContent); });
+      m.removedNodes.forEach(n => { if (n.classList && n.classList.contains('lb-toast') && !n.classList.contains('out')) window.__toastKilled.push(n.textContent); }); }))
       .observe(document.documentElement, { childList: true, subtree: true });
     if (document.documentElement) start(); else document.addEventListener('DOMContentLoaded', start);
   });
@@ -272,7 +276,7 @@ async function policyTaps(page, o) {
   return C(page, o => {
     const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent, p = r.pending, s = window.DipLabStalls.state();
     if (!p || p.type !== 'stall') return { done: true };
-    if (s && s.hold) return { sel: ['[data-a=noted]'], ch: 'noted' };
+    if (s && s.hold) return { sel: ['[data-a=noted],[data-a=notedLeave]'], ch: document.querySelector('[data-a=notedLeave]') ? 'notedLeave' : 'noted' };   // 修正棒：時段用完、沒別的攤＝「記下了，收攤」
     if (document.querySelector('.st-mk .st-ask')) return { sel: ['.st-ask [data-a=leaveYes]'], ch: 'leaveYes', grid: true };
     const ch = E.cPolicy(r, Cn, o); if (!ch) return { none: true };
     const S = '.lb-sheet.stall.st-mk ';
@@ -345,6 +349,7 @@ async function runSize(browser, w, h) {
       await sleep(600);
       const a = await C(page, () => ({ money: window.__lab.run.money, lexp: Object.values(window.__lab.run.lexp || {}).reduce((a, b) => a + b, 0), cam: window.__lab.cam(), leave: window.__lab.run.stats.c.leave, lineup: !!document.querySelector('#panel > .lb-sheet.lineup') }));
       const tt = await toastsSince(page, k0);
+      const killed = await C(page, () => (window.__toastKilled || []).slice());
       const want6 = ['dig', 'fortune', 'snack', 'warehouse', 'home'].concat(['studio']);
       const okLook = gOk && s0.mode === 'market' && s0.rows === 0 && J(s0.p.tiles) === J(want6) && J(s0.p.free) === J(['studio']) && s0.p.slots === 3 && s0.p.left === 3 &&
         J(s0.grid.map(t => t.k)) === J(want6) && J(s0.grid.map(t => t.nm)) === J(want6.map(k => x.st[k])) && s0.grid.filter(t => t.fr).map(t => t.k).join() === 'studio' &&
@@ -354,7 +359,7 @@ async function runSize(browser, w, h) {
       const pw = p0.w.slice(p0.w.findIndex(c => c[0] === 'walk' || c[1] === 'browse'));
       const okWalk = Math.abs(p0.p[0] - p0.sp[0]) <= 2 && Math.abs(p0.p[1] - p0.sp[1]) <= 2 && pw.length >= 1 && pw.every(c => c[1] === 'browse') && !walk2.length;
       const okP3 = ask1 === fill(x.mkLeaveAsk, { k: 2, n: mtx(x.fair.slotCash) }) && back.phase === 'grid' && back.p.left === 2 && back.money === m0 && ask2 === ask1 && night && taps <= 2 &&
-        a.money - m0 === 2 * x.fair.slotCash && a.lexp - lx0 === x.demoLexp && tt.includes(fill(x.mkDemoAuto, { n: x.demoLexp })) && a.leave === 1 && a.cam !== 'market';
+        a.money - m0 === 2 * x.fair.slotCash && a.lexp - lx0 === x.demoLexp && tt.includes(fill(x.mkDemoAuto, { n: x.demoLexp })) && !killed.includes(fill(x.mkDemoAuto, { n: x.demoLexp })) && a.leave === 1 && a.cam !== 'market';
       record(1, size, okLook && okCam && okWalk && okP3 && !errs(page).length,
         `攤位格 ${J(s0.grid.map(t => t.nm + (t.fr ? '(免費)' : '')))}、兩列 ${s0.rows}、月亮 ${s0.moons.lit}/${s0.moons.n}、樂歷細條在頂列 ${lx.top}（外面 ${lx.outside}）、收攤鈕「${s0.leave}」、店捲 ${J(sc)}；` +
         `鏡頭 ${s0.cam}、島台 ${geo.cells.length} 格在面板（${geo.panelTop}）上方／頂欄（${geo.topBot}）下方 ${isleOk(geo)} ${J(geo.cells.map(c => [c.k, c.y0, c.y1]))}；` +
@@ -857,6 +862,77 @@ async function runSize(browser, w, h) {
         `市集模式 Lv${M.lv}：talentArgs ${J(M.ta)}、run ${J(M.run)}、階梯 ${J(M.lad)}；第 ${pl.after} 位之後 ${pl.paid} 攤（格 ${pl.grid}）、算命第 2 張「${pl.btn}」錢 ${pl.ok ? '不動' : '動了'}、挖寶 ${pl.dig.cards} 張（畫 ${pl.dig.tiles}）；` +
         `?market=0：talentArgs ${J(P.ta)}、run ${J(P.run)}、階梯 ${J(P.lad)}、第一個市集 ${J(out.pickUi)}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(12, size, false, 'exception ' + e.message); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 14 修正棒（11-22 審查）
+  if (want(14)) {
+    const { ctx, page } = await newPage(browser, w, h); await watchToasts(page);
+    try {
+      await start(page, { q: QM('&fac=1'), extra: 3 });
+      const x = await UI(page), out = {};
+      // 格子的字、月亮角標、頂列「時段」
+      await marketAt(page, 5, { money: 20000, fac: true });
+      out.g = await C(page, () => [...document.querySelectorAll('.st-mk .st-mt')].map(b => ({ k: b.getAttribute('data-k'), pr: (b.querySelector('.pr') || {}).textContent, mo: !!b.querySelector('.mo'), fr: !!b.querySelector('.fr') })));
+      out.sw = await C(page, () => (document.querySelector('.st-mk .st-mtop .st-sw') || {}).textContent || null);
+      const okTiles = out.g.length === 6 && out.g.every(t => t.k === 'studio' ? t.fr && !t.mo : t.mo && !t.fr && t.pr !== x.priceFree) && out.g.find(t => t.k === 'fortune').pr === x.mkFortuneTile && out.sw === x.mkSlotWord;
+      // 挖寶：點一張翻開（翻一張就收掉）
+      await enter(page, 'dig'); await sheetReady(page, 'dig');
+      const d0 = await C(page, () => { const e = document.querySelector('.lb-sheet.stall .st-dtap'); return e ? { t: e.textContent, hid: e.hidden } : null; });
+      await tapSheet(page, '[data-flip="0"]'); await sleep(300);
+      const d1 = await C(page, () => { const e = document.querySelector('.lb-sheet.stall .st-dtap'); return e ? e.hidden : null; });
+      await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      const okDig = d0 && d0.t === x.mkDigTap && !d0.hid && d1 === true;
+      // 店裡唱盤：「回攤位」不用捲就看得到
+      await enter(page, 'home'); await sheetReady(page, 'home');
+      const fh = await C(page, () => { const s = document.querySelector('.lb-sheet.stall'), f = s && s.querySelector('.foot [data-a=back]'); if (!f) return null; const a = f.getBoundingClientRect(), b = s.getBoundingClientRect(); return a.bottom <= b.bottom + 0.5 && a.top >= b.top; });
+      await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      // 冬瓜茶：島台倒一杯、吐司靠右上
+      await C(page, () => { window.__lab.run.hp = Math.max(1, window.__lab.run.maxHp - 4); });
+      const k0 = await toastMark(page);
+      await enter(page, 'snack'); await sheetReady(page, 'snack'); await tapSheet(page, '[data-drink=tea]'); await sleep(200);
+      const pour = await C(page, () => { const I = window.__lab.stage.shop.state.isle, X = window.DipLabStalls.isle().find(c => c.kind === 'snack'); return { pour: I && I.pour ? I.pour.hot : null, hot: X ? X.hot : null, mk: [...document.querySelectorAll('.lb-toast.mk')].map(t => t.textContent) }; });
+      await gridReady(page);
+      const okTea = pour.pour && pour.pour === pour.hot && (await toastsSince(page, k0)).includes(fill(x.heal, { n: x.fair.drinks.tea.hp }));
+      // 錄音室試錄：回攤位（不扣、還能再進）
+      await marketAt(page, 10, { money: 20000, fac: true, leave: 1 });
+      await enter(page, 'studio'); await sheetReady(page, 'studio');
+      const sb = await C(page, () => !!document.querySelector('.lb-sheet.stall .foot [data-a=back]'));
+      await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      const s1 = await mk(page); await enter(page, 'studio'); const reS = await sheetReady(page, 'studio'); await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      const okStudio = sb && !s1.p.went.studio && s1.p.left === 4 && reS;
+      // 踢館帖：回攤位（不扣、還能再進）→ 時段用完＝島台只亮免費攤
+      await marketAt(page, 35, { money: 20000, leave: 1, tiles: ['trade', 'gear', 'gig', 'promo', 'dig'], free: ['dare'] });
+      await enter(page, 'dare'); await sheetReady(page, 'dare');
+      const db = await C(page, () => [...document.querySelectorAll('.lb-sheet.stall .foot button')].map(b => b.getAttribute('data-a')));
+      await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      const s2 = await mk(page); await enter(page, 'dare'); const reD = await sheetReady(page, 'dare'); await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      await C(page, () => { window.__lab.run.pending.left = 0; window.__lab.go('night'); }); await gridReady(page); await sleep(300);
+      const hi = await C(page, () => { const X = window.DipLabStalls.isle(), H = ((window.__lab.stage.shop.state.hi || [])[0] || { hots: [] }).hots.map(h => h.id); return { hi: H, dare: (X.find(c => c.kind === 'dare') || {}).hot }; });
+      const okDare = J(db) === J(['decline', 'back']) && !s2.p.went.dare && s2.p.left === 3 && reD && J(hi.hi) === J([hi.dare]);
+      // 算命翻滿、時段用完、沒別的攤：「記下了，收攤」一下收攤
+      await marketAt(page, 15, { money: 20000, leave: 1, tiles: ['fortune', 'dig', 'snack', 'gear', 'gig'], free: [] });
+      await C(page, () => { window.__lab.run.pending.left = 1; window.__lab.go('night'); }); await gridReady(page);
+      await enter(page, 'fortune'); await sheetReady(page, 'fortune');
+      await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await sleep(400);
+      const nl = await C(page, () => { const b = document.querySelector('.lb-sheet.stall [data-a=notedLeave]'); return b ? b.textContent : null; });
+      const c0 = page._clicks; await tapSheet(page, '[data-a=notedLeave]');
+      const gone = await page.waitForFunction(() => !(window.__lab.run.pending && window.__lab.run.pending.type === 'stall'), null, { timeout: 6000 }).then(() => true, () => false);
+      const nTap = page._clicks - c0;
+      await luSkip(page, 2500);
+      const okNoted = nl === x.mkNotedLeave && gone && nTap === 1;
+      // 寄賣那張還在外面：寄賣攤寫原因、鈕灰
+      await marketAt(page, 20, { money: 20000, leave: 1, tiles: ['consign', 'dig', 'snack', 'gear', 'gig'], free: [] });
+      await C(page, () => { const r = window.__lab.run, id = r.bag[r.bag.length - 1]; r.bag.pop(); r.consign = { card: id, due: r.round + 2 }; window.__lab.money(r.money); window.__lab.go('night'); }); await gridReady(page);
+      await enter(page, 'consign'); await sheetReady(page, 'consign');
+      const cb = await C(page, () => { const s = document.querySelector('.lb-sheet.stall'); return { note: (s.querySelector('.note') || {}).textContent, dis: [...s.querySelectorAll('[data-consign]')].every(b => b.disabled), n: s.querySelectorAll('[data-consign]').length }; });
+      await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      const okConsign = cb.note === x.mkConsignBusy && cb.n > 0 && cb.dis;
+      record(14, size, okTiles && okDig && fh && okTea && okStudio && okDare && okNoted && okConsign && !errs(page).length,
+        `格子 ${J(out.g.map(t => t.k + ':' + t.pr + (t.mo ? '☾' : '') + (t.fr ? '[免費]' : '')))}、頂列「${out.sw}」 ${okTiles}；挖寶提示 ${J(d0)}→翻一張後收 ${d1}；店裡唱盤回攤位看得到 ${fh}；` +
+        `冬瓜茶倒一杯 ${pour.pour}（飲料攤 ${pour.hot}）、右上吐司 ${J(pour.mk)}；試錄回攤位 ${sb}（去過 ${!!s1.p.went.studio}、時段 ${s1.p.left}、再進 ${reS}）；` +
+        `踢館帖底鈕 ${J(db)}（去過 ${!!s2.p.went.dare}、時段 ${s2.p.left}、再進 ${reD}）、時段用完島台亮 ${J(hi.hi)}；記下了收攤「${nl}」收掉 ${gone}、${nTap} 下；寄賣 ${J(cb)}；${errTxt(page)}${missTxt(page)}`);
+    } catch (e) { record(14, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
 }

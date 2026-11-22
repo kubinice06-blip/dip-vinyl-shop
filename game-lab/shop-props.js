@@ -1662,6 +1662,17 @@
     P.r(x + 1, y + 1, SW - 2, 3, SLIP_BAND[kind] || '#c9a24a');
     P.r(x + 3, y + 6, 6, 1, '#8a7a66'); P.r(x + 3, y + 8, 5, 1, '#8a7a66'); P.r(x + 3, y + 10, 6, 1, '#8a7a66');
   }
+  // 飲料攤倒一杯（修正棒；SPEC-I §6.3「點了倒飲料的小動畫」）：島台那一箱上一個透明手搖杯，茶從上面倒進來、0.9 秒倒滿、冰塊、插吸管，停到 2.6 秒再淡掉
+  //   fill 0–1＝倒到多滿；t＝從開始倒算的秒數（減少動態：直接畫滿杯、不畫倒的那條）
+  function teaCup(P, cx, by, fill, t, rm) {
+    var x = cx - 5, top = by - 12, lv = Math.round(10 * fill);
+    P.a(0.4, function () { P.r(x + 1, by + 1, 10, 1, '#1b0e05'); });
+    P.r(x, top, 10, 12, '#1d1712'); P.r(x + 1, top + 1, 8, 10, '#eef4f4'); P.r(x + 1, by - 1, 8, 1, '#1d1712');   // 杯身（透明）
+    if (lv > 0) { P.r(x + 1, by - 1 - lv, 8, lv, '#c68642'); P.r(x + 1, by - 1 - lv, 8, 1, '#e0a868'); }        // 冬瓜茶
+    if (fill >= 0.6) { P.r(x + 2, by - 6, 2, 2, '#ffffff'); P.r(x + 6, by - 4, 2, 2, '#ffffff'); }              // 冰塊
+    if (!rm && t < 0.95) { P.r(x + 6, top - 9, 6, 3, '#8a6020'); P.r(x + 6, top - 9, 6, 1, '#c9a24a'); P.r(x + 5, top - 7, 2, 7 + (10 - lv), '#c68642'); }   // 壺嘴＋倒下來那一條
+    if (fill >= 1) { P.r(x - 1, top - 1, 12, 2, '#1d1712'); P.r(x, top - 1, 10, 1, '#f3ead6'); P.r(x + 6, top - 6, 1, 6, '#e75480'); }   // 杯蓋＋吸管
+  }
   function isleDraw(P, S) {
     var I = S.state && S.state.isle; if (!I) return;
     var rt = S.rt || 0, bob = Math.floor(rt * 1.6) % 2;
@@ -1670,10 +1681,17 @@
       P.a(0.5, function () { c.spans.forEach(function (q) { P.r(q[1], q[0], q[2] - q[1], 1, '#140c06'); }); });
     });
     (I.cells || []).forEach(function (c) {
-      if (c.slip || !c.prop) return;
+      if (c.slip || c.pour || !c.prop) return;
       var g = binGeo(c.prop), cx = c.prop.x + Math.floor(g.w / 2), cy = g.lip - 9 - (c.went ? 0 : c.open ? 3 + bob : bob);
       isleBadge(P, cx, cy, c.rows, { off: c.went, open: c.open });
     });
+    var Q = I.pour;
+    if (Q && Q.prop && Q.at != null) {
+      var tq = Math.max(0, rt - Q.at), gq = binGeo(Q.prop), al = tq > 2.6 ? Math.max(0, 1 - (tq - 2.6) / 0.6) : 1;
+      var cxq = Q.prop.x + Math.floor(gq.w / 2), byq = gq.lip - 2;
+      P.a(al, function () { teaCup(P, cxq, byq, Q.rm ? 1 : Math.min(1, tq / 0.9), tq, Q.rm); });
+      if (!Q.rm && tq >= 0.95 && tq < 1.4) spark(P, cxq + 6, byq - 15, 'small');
+    }
     var L = I.slips; if (!L || !L.prop) return;
     var g2 = binGeo(L.prop), n = Math.max(1, Math.min(3, L.total | 0 || 3)), x0 = L.prop.x + Math.floor(g2.w / 2) - Math.floor((n * SW + (n - 1) * 2) / 2), base = g2.lip - SH - 2;
     for (var i = 0; i < n; i++) {

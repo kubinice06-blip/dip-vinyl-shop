@@ -853,8 +853,9 @@ function luChecks(G, tag) {
   const put = (id, name, okv, info, nMin) => { if (both && N >= nMin && okv != null) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + (both ? (N < nMin ? `；n ${N} < ${nMin} 只列參考（判 ${id} 用 --n ${nMin}）` : '') : '；上場、耐聽沒有一起開（或 --from）只列') + (okv == null ? '' : okv ? '［在門檻內］' : '［不在門檻內］') }); };
   if (TH && TH.lineup) {
     put('W1', `${tag}第 15 位以後還會換：會讀的 第 16–30 位收新唱片 ≥50%（擋開關）`, TH.lineup.w1 != null ? TH.lineup.w1 >= 0.50 - 1e-9 : null, `${pct(TH.lineup.w1)}（${TH.lineup.w1n} 趟；上場有新的 ${pct(TH.lineup.w1on)}）`, 1000);
-    if (MK_ON) put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位、沒替補的場打出去的唱片裡聽膩的 5–25%（I-2 裁定：有替補＝聽膩的自動換下，不判）`, TH.lineup.worn1630n != null ? TH.lineup.worn1630n >= 0.05 - 1e-9 && TH.lineup.worn1630n <= 0.25 + 1e-9 : null,
-      `沒替補 ${pct(TH.lineup.worn1630n)}（${TH.lineup.plays1630n} 次）；全部 ${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次；有側袋的趟 ${pct(TH.lineup.sleeve)}）`, 1000);
+    // I-3a 修正棒（11-22 審查）：W3 回到 I-2 的判法＝不帶 Lv3 替補的那組、全部場（I-2 當時那份裡就含 24% 有側袋的趟）；「只算沒替補的場」是另一種判法，只列、要主線明裁
+    if (MK_ON) put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%（全部場＝I-2 判法）`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null,
+      `全部 ${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次；有側袋的趟 ${pct(TH.lineup.sleeve)}）；只算沒替補的場 ${pct(TH.lineup.worn1630n)}（${TH.lineup.plays1630n} 次；另一種判法，只列）`, 1000);
     else put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null, `${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次）`, 1000);
     if (TH.wcx) put('W4', `${tag}錢有去處：會讀的花掉 ≥60%（E1 升回門檻；不過寫進 rulings 降回參考）`, TH.wcx.spentShare >= 0.60 - 1e-9, pct(TH.wcx.spentShare), 1000);
   }
@@ -1078,7 +1079,8 @@ function mkChecks(G, tag) {
   const judged = MK_KINDS.filter(k => m.kinds[k] && m.kinds[k].offered >= 50), few = MK_KINDS.filter(k => !m.kinds[k] || m.kinds[k].offered < 50);
   const bad = judged.filter(k => !(m.kinds[k].rate >= 0.15 - 1e-9 && m.kinds[k].rate <= 0.85 + 1e-9 && m.kinds[k].firstRate <= 0.60 + 1e-9));
   put('K1′', `${tag}每種攤出現時被去 15–85%、排第一個去 ≤60%（會讀的）`, judged.length ? !bad.length : null,
-    judged.map(k => mkZh(k) + ' ' + p0(m.kinds[k].rate) + '／' + p0(m.kinds[k].firstRate)).join('、') + (bad.length ? '（沒過：' + bad.map(mkZh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(mkZh).join('、') : ''), 1000);
+    judged.map(k => mkZh(k) + ' ' + p0(m.kinds[k].rate) + '／' + p0(m.kinds[k].firstRate)).join('、') + (bad.length ? '（沒過：' + bad.map(mkZh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(mkZh).join('、') : '') +
+    '；唱盤、公關片、演唱會、黑膠特賣、算命在 fairValue 是常數＝去不去看 slotMin、誰排第一看 whim（修正棒審查：whim 0 時演唱會 96／61%），這幾攤的 K1′ 量的是策略參數', 1000);
 }
 function printWC(rows) {
   const f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en'), f1 = x => x == null ? '—' : x.toFixed(1);

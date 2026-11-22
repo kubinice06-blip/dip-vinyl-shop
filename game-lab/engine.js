@@ -3616,7 +3616,8 @@
     else {
       const n = Math.max(1, (!cp && run.marketTiles > 0 ? run.marketTiles : F.tiles) | 0);   // 樂歷 Lv4：一般輪 6 攤
       const Wt = F.weights || {};
-      const pool = STALL_KINDS.filter(k => (Wt[k] || 0) > 0 && stallUnlocked(run, content, k, after)).map(k => ({ id: k, w: Wt[k] }));
+      // 修正棒（11-22 審查）：寄賣還沒領回（run.consign 在）＝不抽寄賣這攤（不然同一張寄賣會被第二張蓋掉、唱片永久消失；C 波 pick 照舊）
+      const pool = STALL_KINDS.filter(k => (Wt[k] || 0) > 0 && stallUnlocked(run, content, k, after) && !(k === 'consign' && run.consign)).map(k => ({ id: k, w: Wt[k] }));
       // 權重不重複抽 n 攤；要合「花錢攤 ≤ paidMax、至少一攤藍框」，不合就換鍵重抽（最多 40 次；照 C 波）
       for (let t = 0; t < 40 && !tiles; t++) {
         const f = wcPick(pool, mkKey(run, after, 'kinds' + (t ? '#' + t : '')), n, null, c => c.w);
@@ -3626,7 +3627,11 @@
     }
     if (cp && !first) tiles.push('market');                       // 中繼點：＋黑膠特賣（扣時段）
     const free = [];
-    if (run.consign && run.consign.due <= run.round) free.push('consignGet');   // 寄賣到期領取（免費；沒領＝留到下一個市集）
+    if (run.consign && run.consign.due <= run.round) {             // 寄賣到期領取（免費；沒領＝留到下一個市集）
+      free.push('consignGet');
+      // 修正棒（11-22 審查）：三張金邊盤在到期那個市集定好、存在 run.consign.cards（之後的市集照這三張，不重抽、不會越晚領越好）
+      if (!Array.isArray(run.consign.cards) || !run.consign.cards.length) run.consign.cards = (stallGoods(run, content, 'consignGet', mkKey(run, after, 'consignGet'), true).cards || []).slice();
+    }
     const D = ST.dare;                                             // 踢館帖（免費）：一般輪、這一趟剛打完 ≥ dare.from、上一次不是上一輪 → 35%
     if (!cp && !first && after >= (D.from | 0) && run.dareLast !== after - PER_ROUND && hash01(mkKey(run, after, 'dare')) < D.p) { free.push('dare'); run.dareLast = after; wcStats(run).dareOffer++; }
     if (first || cp) free.push('studio');                         // 錄音室（免費）：每一趟第一個市集＋中繼點
@@ -3647,6 +3652,8 @@
     if (!p.free.includes(kind) && !(p.left > 0)) return 'noSlot';
     const seen = p.seen[kind];
     if (seen) { delete p.seen[kind]; p.cur = seen; }
+    else if (kind === 'consignGet' && run.consign && Array.isArray(run.consign.cards) && run.consign.cards.some(id => cardOf(content, id) && !run.bag.includes(id)))
+      p.cur = { kind, key: mkKey(run, p.after, kind), cards: run.consign.cards.filter(id => cardOf(content, id) && !run.bag.includes(id)) };   // 到期那個市集定好的三張
     else p.cur = stallGoods(run, content, kind, mkKey(run, p.after, kind), true);
     effects.push({ enter: kind });
     if (kind === 'fortune' && !(p.acts.fortune > 0) && (p.cur.n | 0) === 0 && (p.cur.order || []).length) return marketAct(run, content, { act: 'flip' }, effects);
@@ -3702,7 +3709,9 @@
           if (!offered(ch.cardId)) return 'notOffered';
           const pr = priceOf(content, ch.cardId); if (pr == null) return 'notOffered'; if (run.money < pr) return 'money';
           wcSpend(run, cur.kind, pr); gain(ch.cardId); run.stats.bought.push(ch.cardId); if (cur.kind === 'trade') S.tradeBuy++; else S.marketBuy++;
-          effects.push({ spend: pr }); return STAY;
+          effects.push({ spend: pr });
+          // 修正棒（M5；§6.3「做完自動回攤位格」）：同業調貨的貨買光了＝做完、自動回（黑膠特賣還有別的分頁，照舊留著）
+          return cur.kind === 'trade' && (cur.cards || []).every(id => run.bag.includes(id)) ? CLOSE : STAY;
         }
         if (a === 'sell') { const q = sellCore(run, content, ch.cardId); if (!q.ok) return q.error; applySell(run, content, ch.cardId, q, effects); return STAY; }
         if (cur.kind === 'market' && a === 'buyRelic') { const e = stallRelic(run, content, cur, ch, effects, true); return e || STAY; }
@@ -3756,6 +3765,7 @@
       }
       case 'consign':
         if (a === 'consign') {
+          if (run.consign) return 'consignBusy';                   // 修正棒：上一張還沒領回＝不能再寄（市集不會抽到；舊存檔／強制擺的攤位格才會遇到）
           if (!run.bag.includes(ch.cardId) || run.bag.length - 1 < bagFloor(run) || isGift(run, content, ch.cardId) || isSeed(run, content, ch.cardId)) return 'badConsign';
           run.bag.splice(run.bag.indexOf(ch.cardId), 1);
           if (Array.isArray(run.found) && run.found.includes(ch.cardId)) run.found.splice(run.found.indexOf(ch.cardId), 1);
@@ -3880,6 +3890,10 @@
     if (!run || typeof run !== 'object') return false;
     const before = JSON.stringify(run), has = id => typeof id === 'string' && !!cardOf(content, id);
     if (run.fortune != null) { const f = fortunesOf(run); run.fortune = Array.isArray(run.fortune) || f.length ? f : null; }
+    if (isPlain(run.consign) && 'cards' in run.consign) {          // 寄賣到期定好的三張（修正棒）：不在卡池的拿掉、空了＝下一個市集重定
+      const cs = Array.isArray(run.consign.cards) ? run.consign.cards.filter(has) : [];
+      if (cs.length) run.consign.cards = cs; else delete run.consign.cards;
+    }
     for (const k of ['marketTiles', 'fortuneFree', 'digN']) if (k in run && !(Number.isInteger(run[k]) && run[k] > 0)) delete run[k];
     if (isPlain(run.fac) && 'lv3' in run.fac && run.fac.lv3 !== true) delete run.fac.lv3;
     const p = run.pending;
