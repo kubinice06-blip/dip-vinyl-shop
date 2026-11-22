@@ -1546,6 +1546,7 @@ async function run() {
       try {
         await seededContinue4(page, { ace: 'hall', pos: 13 }, Q());
         await waitScreen(page, 'night');
+        await luSkip(page);                                    // 第 I 波 I-2（出貨上場制開）：種在第 13 位＝這一輪要挑上場，面板照預設帶過
         await page.evaluate(() => { const r = window.__lab.run; r.farBefore = 14; r.streak = 3; window.__lab.go('night'); });
         const atTable = await page.waitForFunction(() => { const s = window.__lab.stage, f = s.pos('f'), d = s.layout.spots.duelE; return f && !f.hidden && Math.hypot(f.x - d[0], f.y - d[1]) <= 1; }, null, { timeout: 10000 }).then(() => true, () => false);
         await sleep(400);
