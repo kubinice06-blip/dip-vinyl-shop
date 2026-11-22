@@ -359,6 +359,8 @@ export const lootState = page => page.evaluate(() => {
 });
 // 真點一顆剛出來的鈕：面板剛升起（.arming，約 0.3 秒）時真的點擊會被吃掉（防連點）、遮罩還蓋著時會點到遮罩，等它可以按了再點。回 false＝等不到
 export async function tapReady(page, sel, ms = 5000) {
+  // 第 I 波 I-2（修正棒 11-22）：上場制開著（出貨）時，換輪／跳位之後來客畫面先開上場面板、蓋住「下一位」——要點「下一位」時先照預設（幫我挑）按「就這五張」
+  if (/\[data-a=go\]/.test(sel) && (await page.$('#panel > .lb-sheet.lineup [data-a=luGo]'))) await luSkip(page, 100);
   // 也等到真的點得到（解鎖那段的遮罩、轉場蓋在上面時點下去會落在遮罩上）
   const ok = await page.waitForFunction(s => {
     const e = document.querySelector(s); if (!e || e.disabled || e.closest('.arming')) return false;
@@ -368,6 +370,15 @@ export async function tapReady(page, sel, ms = 5000) {
   }, sel, { timeout: ms }).then(() => true, () => false);
   if (!ok) return false;
   await tapAt(page, sel);
+  return true;
+}
+// 第 I 波 I-2（修正棒 11-22）：上場面板開著（或 ms 內開出來）＝照預設按「就這五張」帶過；回 true＝按了。上場制關著／沒有面板＝false
+export async function luSkip(page, ms = 1200) {
+  const has = await page.waitForFunction(() => !!document.querySelector('#panel > .lb-sheet.lineup [data-a=luGo]'), null, { timeout: ms }).then(() => true, () => false);
+  if (!has) return false;
+  await tapReady(page, '#panel > .lb-sheet.lineup [data-a=luGo]', 5000);
+  await page.waitForFunction(() => !document.querySelector('#panel > .lb-sheet.lineup'), null, { timeout: 5000 }).catch(() => {});
+  await sleep(300);
   return true;
 }
 // 戰利品列／寶箱的三張都翻開了（蓋牌 1.5 秒自己翻、寶箱 1.2 秒自己掀；SPEC-C §4.1、§4.2）。不是戰利品列（舊的挑唱片面板）＝馬上回 true
@@ -433,6 +444,7 @@ export async function clearStall(page, o = {}) {
   while (Date.now() - t0 < ms) {
     const s = await stallState(page);
     if (!s.stall) {
+      if (!o.keepLineup) await luSkip(page, 1500);              // 第 I 波 I-2：收攤之後上場面板（lineupDue）照預設帶過；o.keepLineup＝留著（e2e-lineup 自己測面板）
       const back = await page.waitForSelector('[data-a=go]', { timeout: 4000 }).then(() => true, () => false);
       return { ok: back, cash: (await page.evaluate(() => window.__lab.run.money)) - s0.money, taps, screen: await screen(page) };
     }

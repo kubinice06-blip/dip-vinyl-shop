@@ -18,7 +18,7 @@
 //   7  自動玩一路過戰利品列、寶箱、攤位（第 4 位起到第 7 位）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, tapReady, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
-  tapHot, passLoot, stallState, clearStall } from './e2e-lib.mjs';
+  tapHot, passLoot, stallState, clearStall, luSkip } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.STALL_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -342,6 +342,7 @@ async function runSize(browser, w, h) {
         return { line: (s.querySelector('.st-line span') || {}).textContent, tough: (s.querySelector('[data-dare=tough]') || {}).textContent, f: !!f && !f.hidden, p: [Math.round(p.x), Math.round(p.y)], sp }; });
       await tapReady(page, '.lb-sheet.stall [data-dare=tough]');
       const back = await waitNight(page, 15000);
+      await luSkip(page);                                     // 第 I 波 I-2（出貨上場制開）：第 36 位換輪＝收攤後上場面板蓋住來客條，照預設帶過
       const a = await C(page, () => ({ dare: window.__lab.run.dare, atk: window.DipLabEngine.roundGuests(window.__lab.run, window.DipLabContent).map(q => q.atk | 0), marks: document.querySelectorAll('[data-tut=night] .st-mk.dr').length }));
       await tapReady(page, '[data-tut=night] .nc[data-i="0"]'); await sleep(500);
       const gs = await C(page, () => [...document.querySelectorAll('.lb-sheet.guest .bl.st b')].map(b => b.textContent));

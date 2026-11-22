@@ -26,7 +26,7 @@
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import fs from 'fs';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, tapAt, waitScreen, noScroll, scrollOk, openTitle,
-  answerBargain, passLoot, clearStall, tapReady } from './e2e-lib.mjs';
+  answerBargain, passLoot, clearStall, tapReady, luSkip } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.TRIAL_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -103,6 +103,7 @@ async function driveUntil(page, stop, ms = 90000) {
       nx: !!document.querySelector('.lb-dq .nx.on'), opt: !!document.querySelector('.lb-dq .lb-dqopt'), one: !!document.querySelector('#panel > .lb-sheet.one [data-i]'),
       cx: !!document.querySelector('.lb-sheet.cxcard'), lv: !!document.querySelector('.lb-sheet.level [data-lv]') && !document.querySelector('.lb-sheet.level.arming') }));
     if (stop(s)) return { ok: true, s };
+    if (s.scr === 'night' && (await luSkip(page, 50))) continue;   // 第 I 波 I-2（合併後）：跳位／中繼點開局／換輪的上場面板照預設帶過（棒三寫在上場制出貨之前）
     if (s.scr === 'night' && s.step === 'stall') { await clearStall(page, { ms: 30000 }); continue; }
     if (s.scr === 'night' && s.go && s.step === 'fight' && !s.going) { await jsClick(page, '.lb-night [data-a=go]'); await sleep(500); continue; }
     if (s.scr === 'duel' && s.duel && !s.going) { await sleep(300); await C(page, () => window.__lab.rawDuel() && window.__lab.forceWin()); await sleep(500); continue; }
@@ -120,6 +121,7 @@ async function driveUntil(page, stop, ms = 90000) {
 // 在來客畫面：這一位直接輸、不說情 → 結算
 async function loseHere(page) {
   await C(page, () => { const r = window.__lab.run; r.retryLeft = 0; r.plea = 0; r.safety = false; });
+  await luSkip(page, 1500);                                  // 第 I 波 I-2（合併後）：上場面板開著＝先照預設帶過
   if (!(await nightReady(page))) return false;
   await jsClick(page, '.lb-night [data-a=go]');
   const t0 = Date.now();

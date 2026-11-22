@@ -7,7 +7,7 @@
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 > 活店第二階段（切磋＝遭遇戰）：每位熟客的切磋句在「活店・切磋・<名字>」（說話者欄多標分類：嗆、接了、改天、沒理他、他輸了、他贏了、作廢、看你這一趟的切磋輸贏），邀請面板、對決頂欄、戰利品列的字在「活店・切磋・介面字」。
 
-統計：原句 45、拍板 0、店主 71、新 1831（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1866（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -599,6 +599,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 180g 重量盤 | 經典出招時 +1 星。｜重量盤：+1 星 | 本規格新寫 | `relics.boost_c` |
 | 絕版編號標 | 冷門出招時 +1 星。｜絕版編號標：+1 星 | 本規格新寫 | `relics.boost_o` |
 | 內圈刻字 | 硬蕊出招時 +1 星。｜內圈刻字：+1 星 | 本規格新寫 | `relics.boost_h` |
+| 唱片袋側袋 | 多一張替補，聽膩時頂上。｜側袋：替補頂上 | 本規格新寫 | `relics.sleeve` |
 
 ## 序章引導教學・第 1 手（老闆的泡泡）
 
@@ -1051,10 +1052,10 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・shelfKnown | 認識過 {n}／{total} | 本規格新寫 | `seeds.ui.shelfKnown` |
 | （畫面字）・shelfKnownSub | 客人丟的、你收的、老闆送的都算。 | 本規格新寫 | `seeds.ui.shelfKnownSub` |
 | （畫面字）・storeTag | 店內取得 | 本規格新寫 | `seeds.ui.storeTag` |
-| （畫面字）・bringToast | 《{album}》在櫃檯等你：下一趟開局可以帶上場 | 本規格新寫 | `seeds.ui.bringToast` |
-| （畫面字）・bringToastFirst | 《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶上場 | 本規格新寫 | `seeds.ui.bringToastFirst` |
+| （畫面字）・bringToast | 《{album}》在櫃檯等你：下一趟開局可以帶來 | 本規格新寫 | `seeds.ui.bringToast` |
+| （畫面字）・bringToastFirst | 《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶來 | 本規格新寫 | `seeds.ui.bringToastFirst` |
 | （畫面字）・bringMissing | 店裡沒有這張唱片。 | 本規格新寫 | `seeds.ui.bringMissing` |
-| （畫面字）・bringLegend | 《{album}》是傳奇唱片，帶上場太好打，店裡不收；史詩以下都能帶。 | 本規格新寫 | `seeds.ui.bringLegend` |
+| （畫面字）・bringLegend | 《{album}》是傳奇唱片，帶來太好打，店裡不收；史詩以下都能帶。 | 本規格新寫 | `seeds.ui.bringLegend` |
 | （畫面字）・migrateFail | 存檔升級失敗，這次先不存檔；重新整理再試一次。 | 本規格新寫 | `seeds.ui.migrateFail` |
 | （畫面字）・poolMissing | 唱片沒有全部載到，這次先不存檔；重新整理再試一次。 | 本規格新寫 | `seeds.ui.poolMissing` |
 
@@ -1070,7 +1071,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字）・title | 今日推薦 | 本規格新寫 | `daily.title` |
-| 老闆・hint | 每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶上場；蓋滿七格，換一張好盤。 | 本規格新寫 | `daily.hint` |
+| 老闆・hint | 每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶來店裡；蓋滿七格，換一張好盤。 | 本規格新寫 | `daily.hint` |
 | （畫面字）・take | 收下 | 本規格新寫 | `daily.take` |
 | （畫面字）・taken | 收進唱片櫃了 | 本規格新寫 | `daily.taken` |
 | （畫面字）・tomorrow | 明天再來，我再幫你留一張。 | 本規格新寫 | `daily.tomorrow` |
@@ -1079,7 +1080,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・firstStamp | 見面禮 | 本規格新寫 | `daily.firstStamp` |
 | （畫面字）・claim | 換獎勵 | 本規格新寫 | `daily.claim` |
 | （畫面字）・claimTitle | 挑一張帶回家 | 本規格新寫 | `daily.claimTitle` |
-| （畫面字）・claimed | 收進唱片櫃，下一趟可以帶上場。 | 本規格新寫 | `daily.claimed` |
+| （畫面字）・claimed | 收進唱片櫃，下一趟可以帶來店裡。 | 本規格新寫 | `daily.claimed` |
 | （畫面字）・titleChip | 今日推薦：《{album}》 | 本規格新寫 | `daily.titleChip` |
 
 ## 樂歷・樂歷頁（天賦、重配、熟練度）
@@ -1155,6 +1156,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・ladder.gold | 戰利品列金邊機率 +1% | 本規格新寫 | `career.ui.ladder.gold` |
 | （畫面字）・ladder.plea | 備用說情 | 本規格新寫 | `career.ui.ladder.plea` |
 | （畫面字）・ladder.bgmShelf | 背景音樂也放唱片櫃的歌 | 本規格新寫 | `career.ui.ladder.bgmShelf` |
+| （畫面字）・ladder.bench | 上場多帶一張替補 | 本規格新寫 | `career.ui.ladder.bench` |
 | （畫面字）・ladder.seed5 | 種子格 5 格 | 本規格新寫 | `career.ui.ladder.seed5` |
 | （畫面字）・ladder.relicsNew | 新配件 | 本規格新寫 | `career.ui.ladder.relicsNew` |
 | （畫面字）・ladder.regulars | 新常客 | 本規格新寫 | `career.ui.ladder.regulars` |
@@ -1595,6 +1597,49 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | Sunn O)))《Black One》 | 翻面：同色比贏一次，下一手剋中多扣 1。 | 本規格新寫 | `encore.apexTrial.heresy[12]` |
 | Napalm Death《Scum》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[13]` |
 | Peter Brötzmann《Machine Gun》 | 翻面：同色比贏一次，再發動一次。 | 本規格新寫 | `encore.apexTrial.heresy[14]` |
+
+## 上場・畫面字（上場面板、來客畫面上場列、包包、戰利品列、吐司、規則卡；{n}{album} 由畫面代入）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・title | 這一輪挑 {n} 張上場 | 本規格新寫 | `lineup.ui.title` |
+| （畫面字）・guests | 這一輪的客人 | 本規格新寫 | `lineup.ui.guests` |
+| （畫面字）・auto | 幫我挑 | 本規格新寫 | `lineup.ui.auto` |
+| （畫面字）・go | 就這五張 | 本規格新寫 | `lineup.ui.go` |
+| （畫面字）・slot | 上場 | 本規格新寫 | `lineup.ui.slot` |
+| （畫面字）・bench | 替補 | 本規格新寫 | `lineup.ui.bench` |
+| （畫面字）・empty | 空著 | 本規格新寫 | `lineup.ui.empty` |
+| （畫面字）・onTag | 上場 | 本規格新寫 | `lineup.ui.onTag` |
+| （畫面字）・newTag | 新 | 本規格新寫 | `lineup.ui.newTag` |
+| （畫面字）・bagBtn | 包包 {n} | 本規格新寫 | `lineup.ui.bagBtn` |
+| （畫面字）・benchHint | 上場那張聽膩了，替補會自動頂上 | 本規格新寫 | `lineup.ui.benchHint` |
+| （畫面字）・benchHintSwap | 開打前可以拿替補換掉一張 | 本規格新寫 | `lineup.ui.benchHintSwap` |
+| （畫面字）・benchPick | 換下哪一張？ | 本規格新寫 | `lineup.ui.benchPick` |
+| （畫面字）・swapIn | 換上場 | 本規格新寫 | `lineup.ui.swapIn` |
+| （畫面字）・swapWhich | 換掉哪一張？ | 本規格新寫 | `lineup.ui.swapWhich` |
+| （畫面字）・swapNo | 先放包包 | 本規格新寫 | `lineup.ui.swapNo` |
+| （畫面字）・swapped | 《{album}》換上場 | 本規格新寫 | `lineup.ui.swapped` |
+| （畫面字）・pickHint | 點包包換上場：先點一格就換那格，沒點換最弱的 | 本規格新寫 | `lineup.ui.pickHint` |
+| （畫面字）・due | 上場少一張，挑一張補上 | 本規格新寫 | `lineup.ui.due` |
+| （畫面字）・quiet | 包包沒有新的，這一輪的五張幫你挑好了 | 本規格新寫 | `lineup.ui.quiet` |
+| （畫面字）・benchIn | 《{out}》聽膩了，替補《{album}》頂上 | 本規格新寫 | `lineup.ui.benchIn` |
+| 老闆・first | 包包越來越厚了，這一輪挑五張上場。聽膩的換下來休息一輪就好。 | 本規格新寫 | `lineup.ui.first` |
+| （畫面字）・rule | 第 4 輪起每輪挑五張上場； | 本規格新寫 | `lineup.ui.rule` |
+| （畫面字）・firstLoot | 包包多一張不會稀釋，下一輪可以挑它上場。不收也有 ${n}。 | 本規格新寫 | `lineup.ui.firstLoot` |
+| （畫面字）・upHint | 比你上場最弱那張強 | 本規格新寫 | `lineup.ui.upHint` |
+
+## 耐聽・畫面字（耐聽點的讀屏字、手牌記號、休息中、領獎小字、規則卡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・ear | 耐聽 {n}／{max} | 本規格新寫 | `wear.ui.ear` |
+| （畫面字）・almost | 再一次就膩 | 本規格新寫 | `wear.ui.almost` |
+| （畫面字）・worn | 聽膩 −{n} | 本規格新寫 | `wear.ui.worn` |
+| （畫面字）・resting | 休息中・下一輪回滿 | 本規格新寫 | `wear.ui.resting` |
+| （畫面字）・got | 《{album}》聽膩了（−{n}），下一輪換下來休息就好 | 本規格新寫 | `wear.ui.got` |
+| （畫面字）・gotShort | 《{album}》聽膩了（−{n}） | 本規格新寫 | `wear.ui.gotShort` |
+| 老闆・first | 這張你最近很常放，有點聽膩了。換下來休息一輪就好。 | 本規格新寫 | `wear.ui.first` |
+| （畫面字）・rule | 出 5 次聽膩 −1 星，休一輪回滿。 | 本規格新寫 | `wear.ui.rule` |
 
 ## 活店・小魚・打招呼（第一次見面，一輩子一次）
 

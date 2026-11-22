@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-22｜dip-vinyl-shop｜game-lab 第 I 波 I-2：每輪挑五張上場＋耐聽（出 5 次聽膩、坐一輪板凳回滿）
+
+- **背景**：店主 11-20「卡好像可以設計類似耐久度的東西 或出牌次數限制 不然才第15回合 專輯已經固定不會想再購買或換牌」「一次能帶五張上場 發燒配件 或是 天賦 能讓帶上場的」。規格 scratchpad `v5/wave-i/SPEC-I.md` §3、§5（12-1 店主沒回＝照建議甲：每輪挑）；報告 `wave-i/build2/FINAL.md`、合併棒三後 `build2/FINAL-post.md`；裁定 `wave-i/RULING.md`（I-2 段）。
+- **上場**：第 4 輪（第 16 位）起每輪開頭從包包挑 5 張上場（預設已挑好，「就這五張」一下就走；包包 ≤6 張且沒新的、沒聽膩＝不出面板）；手牌只在這五張裡轉、不播滑入；一輪中途只有新拿到的能「換上場」；賣掉上場那張＝空一格、下一位前補。替補（樂歷 Lv3 或新配件「唱片袋側袋」，側袋不佔配件格）＝上場那張聽膩時自動頂上（吐司告知）。
+- **耐聽**：同一張出 5 次＝聽膩一層（主打那軸 −1 星，最多 −2），換下來坐一輪板凳就回滿；說情重打、切磋、序章不算。手牌只畫兩種記號（黃點＝再一次就膩、紅字 −1＋斜紋）；包包／上場面板／戰利品列 5 顆小點。
+- **數字怎麼來的**：規格起點是第 2 輪起、7 格；第 6–10 位會讓新手變簡單 → 第 11 位起；合併棒三後試煉第 4／8／10 階不帶種子「不變簡單」沒過（+1.8／+1.4／+1.0）→ 照順序調自己的旋鈕：第 16 位起＋5 格（+0.7／+0.9／+0.3）。`?lineup=0` 看關著的樣子。
+- **合併接縫**：換輪上場面板開著時熟客先不來邀切磋（切磋一律用上場那 5 張）；換王牌把離開包包的牌從上場／替補拿掉、整組重挑。
+- **主要檔案**：`game-lab/{engine.js（lineupOf／lineupPolicy／wornCard／wearRecord／fixLineup／luAutoBench／relicN…，策略走 lineupOn 分支）,content.js（C.lineup／C.wear on:true、側袋、樂歷 Lv3）,ui.js（lineupPanel、上場列、luHold）,duel.js,econ.js,loot.js,stalls.js,style.css,sim.mjs（--lineup／--wear／--bench）,index.html（?v=95）}`、`tools/{check-content,lint-copy}.mjs`、`test/engine.test.mjs`（#36）、`tests/{e2e-lineup.mjs（新）,e2e-lib,e2e-trial,e2e-career,e2e-checkpoint,e2e-stall,e2e.spec}.mjs`。
+- **驗證**：旗標關（--lineup off）sim n200 smart／--enc on 跟 main 位元相同；n4000 W1 96.5%（現況 12%）、W2 −2.0／+1 位／新手不變、W3 6.3%、W4 74.3%、W5 0.95／0.984、L1 逐位 +0.0、L2 +0.5、檔頭 30/30、LS 31/31、T-1 第 0–13 階不變簡單、T-2、T-4、G3、?fac=1 F1／F2／F5；engine 2,933,859／0、單元全過；e2e 兩尺寸全套（lineup 28、trial 14、career 46…）＋e2e.spec 50/50×2（旗標開）。
+- **留著的**：有替補時聽膩只剩約 2%（替補的用途，裁定照收）；有天賦的深趟變難（career 第 30 趟一般玩家平均 −10 位），I-ALL（I-3a、I-3b）量 G 系列時一起判、太難照順序放寬（耐聽 +1 格→上場中每輪回 2 格→唱片醫生）；`?fac=1` 異端上場開對關 +1.2（試做旗標只列）。
+
 ### 2026-11-22｜dip-vinyl-shop｜game-lab 第 D 波棒三：派樹（?fac=1）＋試煉階級（打倒第 20 位藏家開下一階）
 
 - **背景**：規劃書第七項流派第二波（派樹、熟練度）與第三項「試煉階級」（店主 11-12 參考 Monster Train 誓約）。規格 scratchpad `v5/wave-d/SPEC-D.md` §3.6–§3.7、§5；報告 `wave-d/build3/FINAL.md`、合併後 `build3/FINAL-post.md`；裁定 `wave-d/rulings.md`（棒三收尾段）。
