@@ -95,8 +95,11 @@ if (!BINS.feature) { fakeBins = true; BINS = contractBins(); }
 //   新段落（§11.1）用 CW＝出貨設定（content.js 的 C.waveC 全開、guestHpSteps [[31,1]]）
 const WC_OFF = { loot: { on: false }, chest: { on: false }, stall: { on: false }, safety: { on: false } };
 //   第 I 波 I-0（SPEC-I §7.2）同一個做法：舊段落的 C 關掉「第一位升級」（firstNeed 0、firstHp＝levelHp＝升級要 等級＋3、每級 +1）；新規則在 CW 與 #32 驗
-const C = Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [], firstNeed: 0, firstHp: C0.trial.levelHp }) });
-const CW = Object.assign({}, C0, { cards: CARDS, bins: BINS });
+//   第 I 波 I-2（SPEC-I §3、§5；sim 棒）：舊段落（含 CW 那幾節 #29–#34，及 #30／#31 的 K）一律用上場、耐聽都 on:false 的拷貝（LUOFF）＝改版前的黃金與斷言照舊，
+//     出貨 content 的 C.lineup.on／C.wear.on 開或關都照過（開了 78 條關著黃金會變，所以先換成拷貝）；上場制在 #35 用 on 的拷貝驗
+const LUOFF = c => Object.assign({}, c, { lineup: Object.assign({}, (c && c.lineup) || {}, { on: false }), wear: Object.assign({}, (c && c.wear) || {}, { on: false }) });
+const C = LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [], firstNeed: 0, firstHp: C0.trial.levelHp }) }));
+const CW = LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS }));
 // 第 I 波 I-0：關掉第一位升級（firstNeed 0、firstHp＝levelHp）＝I-0 以前的局內升級（黃金比對用）
 const I0OFF = c => Object.assign({}, c, { trial: Object.assign({}, c.trial || {}, { firstNeed: 0, firstHp: c.trial && Number.isInteger(c.trial.levelHp) ? c.trial.levelHp : 1 }) });
 const SKIP$ = EN.wcCfg(CW).loot.skipCash, CSKIP$ = EN.wcCfg(CW).chest.skipCash, PACKET = EN.wcCfg(CW).loot.packet;   // 出貨的「不收」錢、紅包機率（驗收修正：$200、6%）
@@ -3718,7 +3721,7 @@ function driveD(content, o, maxPos) {
 }
 section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐字現況（黃金）、careerGain、等級曲線、天賦價與買賣、talentArgs、進局（品味／底氣／聲望／經驗零頭／說情順序／酬勞／金邊／配件三選一／種子格 4）、gigRoom、階梯、抽盤、熟練度、入帳、讀檔整理、V3、流派改名', () => {
   EN.setCtx(null);
-  const K = C0, X = EN.careerCfg(K), xpAt = lv => EN.careerXpAt(K, lv), car = (lv, spent, o) => Object.assign({ key: 'k', xp: xpAt(lv), spent: spent || {} }, o || {});
+  const K = LUOFF(C0), X = EN.careerCfg(K), xpAt = lv => EN.careerXpAt(K, lv), car = (lv, spent, o) => Object.assign({ key: 'k', xp: xpAt(lv), spent: spent || {} }, o || {});
   // ---- 1 沒給新參數／Lv8 前／關樂歷＝逐字現況（smart 決策序列＋run JSON 到第 20 位；黃金＝改之前的引擎） ----
   //   第 I 波 I-0：黃金在 K0（關掉第一位升級＝I-0 以前）上比；K（出貨）上每個變體都＝沒給參數那一份
   { const GOLD = [3936987495, 671311097, 230554544, 1581489111], POS = [12, 21, 21, 21], K0 = I0OFF(K), ON = [];
@@ -3947,7 +3950,7 @@ section('30 第 D 波棒一 樂歷（SPEC-D §2）：Lv8 前／關樂歷＝逐�
 
 section('31 第 D 波棒二 三流派（SPEC-D §3.3–§3.5、§6-3；§10.1 第 1、4、5、8 條）：旗標關＝逐字現況（黃金）、三派 outcome 表、代價、第二招上限、preview＝resolve、序章沒有、R-F9、本派格（第 4 格、佔屬性、連升兩級、選秀 guard、存讀檔）、結果行 {n}、換一格', () => {
   EN.setCtx(null);
-  const K = C0, F = K.factions;
+  const K = LUOFF(C0), F = K.factions;   // 第 I 波 I-2 開旗標後：上場制關的拷貝（黃金是上場制以前跑的）
   // ---- 1 旗標關＝逐字現況：沒給 fac／fac:false／content 沒有 factions（或 on:false）＝改之前的引擎（smart＋thoughtful 每手決策序列＋run JSON 到第 20 位；黃金＝棒二改之前 HEAD 的 engine／content，
   //      build2/tools/golden2.cjs）；有 fac 的 run 才多 run.fac ----
   { const GOLD = [1464705395, 2818197883, 771687597, 3935375095, 1591152419], POS = [21, 21, 21, 15, 21];
@@ -4751,7 +4754,8 @@ section('33 第 I 波 I-0 成長曲線：打完第 1 位就升級（第一輪 3 
     const POWERK = ['talent', 'seedMax', 'relicPick', 'goldAdd', 'atk', 'def', 'hp', 'xp', 'xpMul'];
     ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7).every(L => !POWERK.some(k => k in L)), 'G1′: ladder Lv3–7 gives no power keys');
     // I-4 合併後：Lv5「背景音樂也放唱片櫃的歌」跟 I-4 那一棒一起上（SPEC-I §4.8、§7.3 d），只給畫面（ui）；其他 Lv3–7 的格子仍要等各自那一棒
-    ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7 && L.key !== 'bgmShelf').length === 0, 'I-0: no new ladder cells for Lv3–7 yet except I-4 bgmShelf (each ships with its own baton; SPEC-I §7.3 d)');
+    //   I-2：Lv3「上場多帶一張替補」跟 I-2 那一棒一起上（needs lineup＝上場制開著才列、才給 lineupBonus；#35 驗）
+    ok(EN.careerCfg(K).ladder.filter(L => L && !L.soon && L.lv >= 3 && L.lv <= 7 && L.key !== 'bgmShelf' && L.key !== 'bench').length === 0, 'I-0: no new ladder cells for Lv3–7 yet except I-4 bgmShelf and I-2 bench (each ships with its own baton; SPEC-I §7.3 d)');
     ok(EN.careerCfg(K).ladder.filter(L => L && L.key === 'bgmShelf').length === 1 && EN.careerCfg(K).ladder.some(L => L && L.key === 'bgmShelf' && L.lv === 5 && L.ui === true && !L.soon && !POWERK.some(k => k in L)), 'I-4: Lv5 bgmShelf is one ui-only cell'); }
 });
 
@@ -5197,6 +5201,265 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     EN.choose(r, CE, { type: 'encSkip' }); if (EN.encPolicy(r, CE, {}) !== null || EN.encPending(r) !== null) bad++;
     ok(bad === 0, 'encPolicy＋encPending: open → accept／decline → (fighting null) → shelf take not-owned／skip all-owned／always／cash; bag takes the best bagScore gain or skips', bad); }
   console.log('     LE2 ' + J(SUM.le2) + '；LE5 ' + J(SUM.le5) + '；LE12 ' + J(SUM.le12) + '；keep ' + J(SUM.keep));
+});
+
+// =====================================================================================================
+// #35 第 I 波 I-2：上場＋耐聽（scratchpad v5/wave-i SPEC-I §3、§5、§10；契約 wave-i/build2/CONTRACT.md）。流程測試用兩個都 on 的拷貝 CL（from 6）
+//   出貨 C.lineup.on／C.wear.on（兩個一起；sim 棒 W1–W5、L1–L2 n4000 全過＝可以開，build2/SIM.md）開或關這節都照過；關著逐字現況另有：舊段落全部照過（LUOFF 拷貝）＋這節第 1 塊（關著 newRun 不多欄位、四種選擇 badChoice、策略逐字）
+// =====================================================================================================
+section('35 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著逐字、newRun 欄位、第 1 輪整包、換輪挑上場（攤位那一步／lineupDue）、手牌＝上場、耐聽記數與聽膩、說情重打不算、坐板凳回滿、賣掉空一格、換上場、替補、切磋不耗、fixLineup、樂歷 Lv3、配件、策略', () => {
+  EN.setCtx(null);
+  const on = (K, x) => Object.assign({}, K, { lineup: Object.assign({}, C0.lineup, { on: true }, x || {}), wear: Object.assign({}, C0.wear, { on: true }) });
+  // 流程測試用第 6 位起（from 6；出貨 11 另驗）：第 2 輪就有上場制，測得短
+  const CL = on(CW, { from: 6 }), CLnoStall = on(Object.assign({}, CW, { waveC: Object.assign({}, C0.waveC, { stall: Object.assign({}, C0.waveC.stall, { on: false }) }) }), { from: 6 });
+  const J = x => JSON.stringify(x), W7 = C0.wear.grooves, N5 = C0.lineup.n;
+  const newL = (sk, K, o) => { const r = EN.newRun(K || CL, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K || CL, EN.bargainPolicy(r, K || CL)); return r; };
+  // 打到第 pos 位（攤位、領獎、升級照 cPolicy／runPolicy；上場那一步照 cPolicy；開打前 lineupPrep）
+  const goTo = (r, K, pos) => {
+    for (let g = 0; g < 900 && !r.over; g++) {
+      if (r.pending) { const ch = EN.cPolicy(r, K, {}); const x = EN.choose(r, K, ch); if (!ok(x.ok, 'goTo choice ok', { ch, err: x.error })) break; continue; }
+      for (const ch of EN.lineupPrep(r, K)) EN.choose(r, K, ch);
+      if (r.pos >= pos) break;
+      fwin(r, K);
+    }
+    return r;
+  };
+  const deckOf = d => d.p.hand.concat(d.p.draw, d.p.disc).filter(Boolean).map(c => c.id).sort();
+  const playN = (d, id, n, how) => { let k = 0; for (let g = 0; g < 12 && !d.over && k < n; g++) { const i = d.p.hand.findIndex(c => c && c.id === id); if (i < 0) break; EN.resolveTurn(d, { i, attr: 'c' }, { debugOutcome: how || { kind: 'tie', toE: 0, toP: 0 } }); k++; } return k; };
+  const endWin = d => { while (!d.over) EN.resolveTurn(d, EN.legalActions(d).find(a => !a.ace), { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } }); };
+
+  // ---- 關著（CW＝on:false 的拷貝 LUOFF）：newRun 不多欄位、四種選擇 badChoice、lineupPolicy null、lineupPrep []、bagScore 帶 run 一樣 ----
+  { const r0 = EN.newRun(CW, { seedKey: 'lu-off', runNo: 2, ace: 'hall', prologue: false });
+    ok(!['lineup', 'bench', 'lineupFresh', 'lineupDue', 'lineupFrom', 'wear', 'rested', 'lineupBonus', 'wearPos'].some(k => k in r0) && !EN.lineupOn(r0) && !EN.wearOn(r0), 'off: newRun adds no I-2 keys');
+    const r1 = EN.newRun(CW, { seedKey: 'lu-off', runNo: 2, ace: 'hall', prologue: false, lineupBonus: 1 });
+    eq(r1, r0, 'off: lineupBonus ignored when off');
+    EN.choose(r0, CW, EN.bargainPolicy(r0, CW));
+    let bad = 0;
+    for (const ch of [{ type: 'lineup', ids: r0.bag.slice(0, 5) }, { type: 'lineupSwap', inId: r0.bag[0], outId: r0.bag[1] }, { type: 'benchSwap', inId: r0.bag[0], outId: r0.bag[1] }, { type: 'stall', act: 'lineup', ids: r0.bag.slice(0, 5) }])
+      if (EN.choose(r0, CW, ch).error !== 'badChoice') bad++;
+    ok(bad === 0, 'off: the four lineup choices are badChoice');
+    ok(EN.lineupPolicy(r0, CW) === null && J(EN.lineupPrep(r0, CW)) === '[]' && EN.bagScore(CW, r0.bag, r0) === EN.bagScore(CW, r0.bag) && EN.benchN(r0, CW) === 0, 'off: lineupPolicy null, lineupPrep [], bagScore(…, run) = bagScore(…)');
+    ok(!EN.ladderList(CW, 30).some(L => L.key === 'bench') && !('lineupBonus' in EN.talentArgs(CW, { xp: EN.careerXpAt(CW, 30) })), 'off: ladder has no Lv3 bench row, talentArgs no lineupBonus'); }
+
+  // ---- newRun 欄位、lineupFrom、樂歷 Lv3、配件 ----
+  { const r = EN.newRun(CL, { seedKey: 'lu-new', runNo: 2, ace: 'hall', prologue: false });
+    ok(r.lineup === null && J(r.bench) === '[]' && J(r.lineupFresh) === '[]' && r.lineupDue === false && r.lineupFrom === 6 && J(r.wear) === '{}' && J(r.rested) === '[]' && !('lineupBonus' in r), 'on: newRun keys (lineup null, bench [], lineupFresh [], lineupDue false, lineupFrom 6, wear {}, rested [])');
+    ok(EN.newRun(CL, { seedKey: 'x', runNo: 1, firstRun: true }).lineupFrom === 11 && EN.newRun(CL, { seedKey: 'x', runNo: 2, lineupFrom: 16 }).lineupFrom === 16, 'lineupFrom: firstRun → 11, o.lineupFrom overrides');
+    ok(EN.newRun(on(CW), { seedKey: 'x', runNo: 2 }).lineupFrom === C0.lineup.from && C0.lineup.from === 11 && EN.LINEUP.from === 11, 'shipped lineup.from 11 (third round; measured: from 6 makes novices easier at pos 6–10)');
+    { const rs = EN.newRun(Object.assign({}, C0, { cards: CARDS, bins: BINS }), { seedKey: 'lu-ship', runNo: 2, ace: 'hall', prologue: false });
+      ok(typeof C0.lineup.on === 'boolean' && C0.lineup.on === C0.wear.on && EN.lineupOn(rs) === C0.lineup.on && EN.wearOn(rs) === C0.wear.on && (!C0.lineup.on || rs.lineupFrom === 11),
+        'shipped content: C.lineup.on and C.wear.on switch together; newRun follows them (on → lineupFrom 11)', { lineup: C0.lineup.on, wear: C0.wear.on }); }
+    const t3 = EN.talentArgs(CL, { xp: EN.careerXpAt(CL, 3) }), t2 = EN.talentArgs(CL, { xp: EN.careerXpAt(CL, 2) });
+    ok(t3.lineupBonus === 1 && !('lineupBonus' in t2) && EN.ladderAt(CL, 3).some(L => L.key === 'bench'), 'Lv3 bench: talentArgs lineupBonus 1 (Lv2 none), ladderAt(3) lists it');
+    const rb = EN.newRun(CL, Object.assign({ seedKey: 'lu-b', runNo: 2, ace: 'hall', prologue: false }, t3));
+    ok(rb.lineupBonus === 1 && EN.benchN(rb, CL) === 1, 'lineupBonus → benchN 1');
+    rb.relics.push('sleeve'); ok(EN.benchN(rb, CL) === 2, 'sleeve relic + Lv3 → benchN 2 (max 7 − 5)');
+    rb.lineupBonus = 5; ok(EN.benchN(rb, CL) === C0.lineup.max - N5, 'benchN capped at max − n');
+    // 唱片袋側袋：上場制開著才進器材行／倉庫的池子
+    let seenOn = 0, seenOff = 0;
+    for (let s = 0; s < (QUICK ? 60 : 200); s++) {
+      for (const [K, cnt] of [[CL, 'on'], [CW, 'off']]) {
+        const r2 = newL('lu-gear-' + s, K); r2.pos = 6; r2.round = 2; r2.pending = null;
+        const p = { type: 'stall', after: 5, pos: 6, cp: false, first: false, groups: [['gear', 'warehouse']], pick: null, q: [], k: 0, post: [], cur: null, done: [] };
+        r2.pending = p; EN.choose(r2, K, { type: 'stallPick', group: 0 });
+        const rl = (r2.pending && r2.pending.cur && r2.pending.cur.relics) || [];
+        if (rl.includes('sleeve')) { if (cnt === 'on') seenOn++; else seenOff++; }
+      }
+    }
+    ok(seenOn > 0 && seenOff === 0, 'sleeve only offered (gear) when lineup is on', { seenOn, seenOff }); }
+
+  // ---- 第 1 輪整包、換輪攤位的上場那一步、手牌＝上場、耐聽 ----
+  { const r = newL('lu-flow');
+    const f1 = EN.startFight(r, CL, {});
+    ok(J(deckOf(f1.duel)) === J(r.bag.slice().sort()) && !f1.duel.wearOn && !f1.duel.lineup && !('plays' in f1.duel.p), 'round 1: whole bag, no wear count, no lineup flag');
+    endWin(f1.duel); EN.finishFight(r, CL);
+    // 打到第 5 位打完 → 攤位（停在上場那一步）
+    for (let g = 0; g < 400 && !(r.pending && r.pending.type === 'stall'); g++) { if (r.pending) { EN.choose(r, CL, EN.cPolicy(r, CL, {})); continue; } fwin(r, CL); }
+    const p = r.pending;
+    ok(p && p.type === 'stall' && p.lineup && Array.isArray(p.lineup.pick) && Array.isArray(p.lineup.bench) && typeof p.lineup.quiet === 'boolean' && r.lineupDue === true && r.lineup === null && r.pos === 6, 'round change: stall pending has lineup {pick, bench, quiet}; run.lineup null, lineupDue', p && p.lineup);
+    ok(J(r.rested) === J(r.bag) && J(r.lineupFresh) === '[]', 'round change: rested = bag, lineupFresh reset');
+    // 走完攤位 → 停在上場那一步（cur null、pending 還在）
+    for (let g = 0; g < 40 && r.pending && !(r.pending.pick != null && r.pending.k >= r.pending.q.length); g++) EN.choose(r, CL, EN.cPolicy(r, CL, {}));
+    ok(r.pending && r.pending.type === 'stall' && r.pending.cur === null && EN.nextStep(r) === 'stall', 'stall q done → waits at the lineup step');
+    const pol = EN.lineupPolicy(r, CL), cp = EN.cPolicy(r, CL, {});
+    ok(J(cp) === J({ type: 'stall', act: 'lineup', ids: pol.ids, bench: pol.bench }) && J(r.pending.lineup.pick) === J(pol.ids), 'cPolicy at lineup step = lineupPolicy (and pending.lineup.pick recomputed)');
+    const bad1 = EN.choose(r, CL, { type: 'stall', act: 'lineup', ids: pol.ids.slice(0, 4) }).error, bad2 = EN.choose(r, CL, { type: 'stall', act: 'lineup', ids: pol.ids.slice(0, 4).concat(pol.ids[0]) }).error;
+    const bad3 = EN.choose(r, CL, { type: 'stall', act: 'lineup', ids: pol.ids, bench: [r.bag.find(x => !pol.ids.includes(x))] }).error;
+    ok(bad1 === 'badLineup' && bad2 === 'badLineup' && (r.bag.length <= 5 || bad3 === 'badBench') && r.pending, 'lineup: wrong count／dupes → badLineup; bench without slot → badBench (nothing changes)', [bad1, bad2, bad3]);
+    const okc = EN.choose(r, CL, cp);
+    ok(okc.ok && r.pending === null && J(r.lineup) === J(pol.ids) && r.lineupDue === false && okc.effects.some(e => e.lineup), 'stall act lineup: sets run.lineup, clears pending and lineupDue');
+    // 第 6 位：手牌＝上場那 5 張，出一張後還是那 5 張；記出牌次數
+    const f6 = EN.startFight(r, CL, {}), d = f6.duel;
+    ok(J(deckOf(d)) === J(r.lineup.slice().sort()) && d.wearOn === true && d.lineup === true && J(d.p.plays) === '{}' && r.wearPos === 6, 'pos 6: deck = lineup, wearOn, lineup flag, wearPos');
+    ok(!r.rested.some(id => r.lineup.includes(id)), 'startFight takes the lineup out of rested');
+    const X = r.lineup[0], v0 = EN.view(d), h0 = v0.hand.find(c => c && c.id === X);
+    ok(h0 && h0.worn === 0 && h0.ear === W7 && v0.lineup === true, 'view: hand cards carry worn 0／ear 7, view.lineup');
+    const n1 = playN(d, X, 3);
+    const v1 = EN.view(d), h1 = v1.hand.find(c => c && c.id === X);
+    ok(n1 === 3 && d.p.plays[X] === 3 && h1 && h1.ear === W7 - 3 && J(v1.hand.map(c => c && c.id).sort()) === J(r.lineup.slice().sort()), 'plays counted; ear drops; hand still the same five', { n1, plays: d.p.plays, ear: h1 && h1.ear });
+    endWin(d); const fr = EN.finishFight(r, CL);
+    ok(r.wear[X] && r.wear[X].g >= 3 && r.wear[X].n === 0 && Array.isArray(fr.effects) && fr.effects.length === 0, 'finishFight: run.wear[X].g, no layer yet, effects []', r.wear[X]);
+    // 補到 7：下一場出 7−g 次 → 聽膩一層
+    for (let g = 0; g < 40 && r.pending; g++) EN.choose(r, CL, EN.cPolicy(r, CL, {}));
+    const f7 = EN.startFight(r, CL, {}); playN(f7.duel, X, W7 - r.wear[X].g); endWin(f7.duel);
+    const fw = EN.finishFight(r, CL);
+    ok(r.wear[X].n === 1 && r.wear[X].g === 0 && fw.effects.some(e => e.t === 'worn' && e.id === X && e.n === 1) && (!r.pending || r.pending.type !== 'reward' || J(r.pending.worn) === J([{ id: X, n: 1 }])), 'seventh play → worn layer 1 (effects {t:worn}; reward pending.worn)', { w: r.wear[X], eff: fw.effects });
+    const st0 = C0.cards[X], ax = EN.topAttr(st0), wc = EN.wornCard(CL, r, X);
+    ok(wc[ax] === Math.max(Math.min(1, st0[ax]), st0[ax] - 1) && wc.worn === 1 && wc.wornAxis === ax && EN.wearLayers(r, CL, X) === 1, 'wornCard: main axis −1, worn 1, wornAxis');
+    // 說情重打那場不算：輸 → retry → 同一位第二場沒有 wearOn
+    for (let g = 0; g < 40 && r.pending; g++) EN.choose(r, CL, EN.cPolicy(r, CL, {}));
+    const pos0 = r.pos, fl = EN.startFight(r, CL, {});
+    ok(fl.duel.wearOn === true, 'first fight at a new pos counts');
+    const hx = fl.duel.p.hand.find(c => c && c.id === X);
+    ok(hx && hx[ax] === wc[ax] && hx.worn === 1, 'duel hand uses the worn copy');
+    while (!fl.duel.over) EN.resolveTurn(fl.duel, EN.legalActions(fl.duel).find(a => !a.ace), { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } });
+    EN.finishFight(r, CL);
+    if (r.pending && r.pending.type === 'retry') {
+      const gBefore = J(r.wear); EN.choose(r, CL, { type: 'retry' });
+      const fr2 = EN.startFight(r, CL, {});
+      ok(r.pos === pos0 && !fr2.duel.wearOn && !('plays' in fr2.duel.p) && fr2.duel.lineup === true, 'retry fight: no wear count (same deck)');
+      playN(fr2.duel, X, 3); endWin(fr2.duel); EN.finishFight(r, CL);
+      ok(J(r.wear) === gBefore, 'retry fight plays do not touch run.wear');
+    } else ok(false, 'expected retry pending', r.pending); }
+
+  // ---- 聽膩到頂：14 次 −2、之後不再扣；坐板凳回滿；上場的不回 ----
+  { const r = goTo(newL('lu-max'), CL, 7);
+    const X = r.lineup[0], Y = (r.rested || []).find(id => !r.lineup.includes(id));   // 這一輪還沒上場打過的（坐板凳）
+    r.wear[X] = { g: 6, n: 1 }; const f = EN.startFight(r, CL, {}); playN(f.duel, X, 6); endWin(f.duel); EN.finishFight(r, CL);
+    ok(J(r.wear[X]) === J({ g: W7, n: 2 }), 'second layer at 14 plays; capped (g stays full)', r.wear[X]);
+    for (let g = 0; g < 40 && r.pending; g++) EN.choose(r, CL, EN.cPolicy(r, CL, {}));
+    const f2 = EN.startFight(r, CL, {}); playN(f2.duel, X, 6); endWin(f2.duel); const fx = EN.finishFight(r, CL);
+    ok(J(r.wear[X]) === J({ g: W7, n: 2 }) && !fx.effects.length, 'after 2 layers: no more loss');
+    if (Y) {
+      r.wear[Y] = { g: 3, n: 1 };
+      goTo(r, CL, 11);
+      ok(!(Y in r.wear) && r.wear[X] && r.wear[X].n === 2, 'round change: benched card (whole round) refilled; the one that played keeps its layers', { y: r.wear[Y], x: r.wear[X] });
+      ok((r.stats.wear || {}).rest >= 1, 'stats.wear.rest counts refills');
+    } else ok(false, 'need a bench card'); }
+
+  // ---- 賣掉上場那張 → 空一格、lineupDue、只能補空格；新拿到的換上場；替補對調 ----
+  { const r = goTo(newL('lu-sell'), CL, 7);
+    while (r.bag.length < 8) { const id = Object.keys(C0.cards).find(k => !C0.cards[k].tier && !r.bag.includes(k) && C.cards[k]); r.bag.push(id); }
+    const sid = r.lineup.find(id => !EN.isGift(r, CL, id) && !EN.isSeed(r, CL, id)) || r.lineup[0];
+    const rest4 = r.lineup.filter(x => x !== sid);
+    const sr = EN.choose(r, CL, { type: 'sell', cardId: sid });
+    ok(sr.ok && r.lineup.length === N5 - 1 && r.lineupDue === true && !r.lineup.includes(sid), 'sell a lineup card → empty slot, lineupDue', { err: sr.error, L: r.lineup });
+    const rp = EN.runPolicy(r, CL);
+    ok(rp && rp.type === 'lineup' && rest4.every(id => rp.ids.includes(id)) && rp.ids.length === N5, 'runPolicy (no pending, lineupDue) → lineup that keeps the other four', rp);
+    const other = r.bag.filter(id => !rest4.includes(id));
+    const kp = EN.choose(r, CL, { type: 'lineup', ids: other.slice(0, N5) });
+    ok(other.length < N5 || kp.error === 'keepLineup', 'mid-round lineup must keep the four still on', kp.error);
+    ok(EN.choose(r, CL, rp).ok && r.lineupDue === false && r.lineup.length === N5, 'fill the slot → lineupDue false');
+    // 新拿到的（照 choose 的包包差）→ lineupFresh；換上場
+    const shopId = Object.keys(r.shop.bins).flatMap(k => r.shop.bins[k]).find(id => !r.bag.includes(id) && EN.priceOf(CL, id) != null);
+    r.money = 99999;
+    const key = Object.keys(r.shop.bins).find(k => r.shop.bins[k].includes(shopId));
+    const br = EN.choose(r, CL, { type: 'buy', key, cardId: shopId });
+    ok(br.ok && r.lineupFresh.includes(shopId), 'bought card → lineupFresh', br.error);
+    const notFresh = r.bag.find(id => !r.lineup.includes(id) && !r.lineupFresh.includes(id));
+    if (notFresh) ok(EN.choose(r, CL, { type: 'lineupSwap', inId: notFresh, outId: r.lineup[0] }).error === 'notFresh', 'lineupSwap: only fresh cards');
+    const out0 = r.lineup[2], sw = EN.choose(r, CL, { type: 'lineupSwap', inId: shopId, outId: out0 });
+    ok(sw.ok && r.lineup[2] === shopId && r.bag.includes(out0) && !r.lineup.includes(out0), 'lineupSwap: fresh card in, old back to the bag');
+    // 替補：給側袋 → 下一輪挑上場帶替補 → benchSwap 對調
+    r.relics = r.relics.filter(x => x !== 'sleeve').slice(0, 2).concat('sleeve');
+    goTo(r, CL, 11);
+    ok(r.bench.length === 1 && !r.lineup.includes(r.bench[0]), 'with sleeve: lineup pick fills one bench slot', r.bench);
+    // 出貨 benchMode 'worn'（備案）：不給手動換；上場那張聽膩、替補新鮮 → 開打時自動頂上（說情重打不換）
+    ok(EN.choose(r, CL, { type: 'benchSwap', inId: r.bench[0], outId: r.lineup[1] }).error === 'notNow', "benchMode worn: manual benchSwap is notNow");
+    { const rw = JSON.parse(J(r)), wid = rw.lineup[1], bid = rw.bench[0]; rw.wear[wid] = { g: 0, n: 1 }; delete rw.wear[bid];
+      const fw = EN.startFight(rw, CL, {});
+      ok(rw.lineup[1] === bid && J(rw.bench) === J([wid]) && deckOf(fw.duel).includes(bid) && !deckOf(fw.duel).includes(wid) && rw.stats.benchAuto === 1, 'worn mode: worn lineup card auto-replaced by the fresh bench card at fight start');
+      const rv = JSON.parse(J(r)); rv.wear[rv.lineup[1]] = { g: 3, n: 0 }; EN.startFight(rv, CL, {});
+      ok(J(rv.lineup) === J(r.lineup), 'worn mode: no swap when nothing on the lineup is worn'); }
+    // 原案 benchMode 'swap'（留著當選項）：每位開打前手動對調
+    const CLS = on(CW, { from: 6, benchMode: 'swap' });
+    const bIn = r.bench[0], bOut = r.lineup[1], bs = EN.choose(r, CLS, { type: 'benchSwap', inId: bIn, outId: bOut });
+    ok(bs.ok && r.lineup[1] === bIn && J(r.bench) === J([bOut]), 'benchMode swap: benchSwap swaps bench ↔ lineup');
+    ok(EN.choose(r, CLS, { type: 'benchSwap', inId: bIn, outId: r.lineup[0] }).error === 'notBench', 'benchSwap: inId must be on the bench');
+    // 配件賣掉（櫃檯賣配件走 buyRelic sellRelicId；這裡直接拿掉再同步）→ 替補多於格數截掉
+    const before = r.bag.slice(); r.relics = r.relics.filter(x => x !== 'sleeve');
+    EN.choose(r, CL, { type: 'radio', cell: '__none__' });   // 失敗的選擇不同步
+    ok(r.bench.length === 1, 'failed choice: no sync');
+    const sold = EN.choose(r, CL, { type: 'sell', cardId: r.bag.find(id => !r.lineup.includes(id) && !r.bench.includes(id)) });
+    ok(sold.ok && r.bench.length === 0 && before.length === r.bag.length + 1, 'after any ok choice: bench trimmed to benchN', { bench: r.bench, err: sold.error }); }
+
+  // ---- 沒攤位：換輪 lineupDue、沒有 pending；中繼點開局選秀完挑一次；新帳號第一趟第 6–10 位整包 ----
+  { const r = newL('lu-nostall', CLnoStall);
+    for (let g = 0; g < 400 && r.pos < 6; g++) { if (r.pending) { EN.choose(r, CLnoStall, EN.runPolicy(r, CLnoStall)); continue; } fwin(r, CLnoStall); }
+    ok(r.pos === 6 && !r.pending && r.lineupDue === true && EN.nextStep(r) === 'fight', 'no stall: round change → lineupDue, nextStep still fight');
+    const rp = EN.runPolicy(r, CLnoStall); ok(rp && rp.type === 'lineup' && EN.choose(r, CLnoStall, rp).ok && !r.lineupDue, 'runPolicy → {type:lineup}');
+    const rf = newL('lu-first', CL, { firstRun: true }); goTo(rf, CL, 8);
+    const ff = EN.startFight(rf, CL, {});
+    ok(rf.lineupFrom === 11 && J(deckOf(ff.duel)) === J(rf.bag.slice().sort()) && !ff.duel.wearOn && !EN.luRound(rf), 'first run: pos 6–10 whole bag, no wear count');
+    const rc = EN.newRun(CL, { seedKey: 'lu-cp', runNo: 2, ace: 'hall', from: 10 });
+    for (let g = 0; g < 60 && rc.pending && rc.pending.type === 'draft'; g++) EN.choose(rc, CL, EN.cPolicy(rc, CL, {}));
+    ok(rc.pos === 10 && rc.lineupDue === true && EN.luRound(rc), 'checkpoint start at 10: after the draft → lineupDue'); }
+
+  // ---- 切磋：用這一輪上場那幾張（聽膩照算）、不記耐聽 ----
+  { const CLE = Object.assign({}, CL, { encounter: Object.assign({}, C0.encounter, { on: true }) });
+    let done = false;
+    for (let s = 0; s < 200 && !done; s++) {
+      const r = goTo(newL('lu-spar-' + s, CLE), CLE, 7);
+      for (let p = r.pos; p < 15 && !done && !r.over; p++) {
+        if (EN.encOffer(r, CLE)) {
+          EN.choose(r, CLE, { type: 'encOpen' }); EN.choose(r, CLE, { type: 'encAccept' });
+          const X = r.lineup[0]; r.wear[X] = { g: 2, n: 1 };
+          const s0 = J(r.wear), sp = EN.encStart(r, CLE, {});
+          ok(J(deckOf(sp.duel)) === J(EN.lineupOf(r, CLE).slice().sort()) && !sp.duel.wearOn && sp.duel.p.hand.concat(sp.duel.p.draw).some(c => c && c.id === X && c.worn === 1), 'spar: lineup deck with worn copies, no wear count');
+          while (!sp.duel.over) EN.resolveTurn(sp.duel, EN.legalActions(sp.duel).find(a => !a.ace), { debugOutcome: { kind: 'counter', toE: 99, toP: 0 } });
+          EN.encFinish(r, CLE, sp.duel); ok(J(r.wear) === s0, 'spar leaves run.wear alone'); done = true;
+        } else { fwin(r, CLE); goTo(r, CLE, r.pos); }
+      }
+    }
+    ok(done, 'found a spar to test'); }
+
+  // ---- fixLineup：開著補鍵／濾掉不在包包的／wear 形狀；關著整組拿掉（含 pending.lineup）；舊頁面路徑 ----
+  { const r = goTo(newL('lu-fix'), CL, 7);
+    const a = JSON.parse(J(r)); a.lineup = a.lineup.concat('nope'); a.bench = 'x'; delete a.lineupFresh; a.wear = { nope: { g: 1, n: 0 }, [a.lineup[0]]: { g: 'x', n: 0 }, [a.lineup[1]]: { g: 2, n: 1 } }; a.rested = null; a.lineupDue = 1;
+    ok(EN.fixLineup(a, CL) === true && J(a.lineup) === J(r.lineup) && J(a.bench) === '[]' && J(a.lineupFresh) === '[]' && J(a.wear) === J({ [r.lineup[1]]: { g: 2, n: 1 } }) && J(a.rested) === '[]' && a.lineupDue === false, 'fixLineup on: repairs shapes, drops ids not in the bag');
+    ok(EN.fixLineup(a, CL) === false, 'fixLineup idempotent');
+    const b = JSON.parse(J(r)); b.pending = { type: 'stall', after: 5, pos: 6, cp: false, first: false, groups: [['dig', 'fortune']], pick: 0, q: ['fortune'], k: 1, post: [], cur: null, done: ['fortune'], lineup: { pick: b.bag.slice(0, 5), bench: [], quiet: false } };
+    ok(EN.fixLineup(b, CW) === true && !['lineup', 'bench', 'lineupFresh', 'lineupDue', 'lineupFrom', 'wear', 'rested', 'wearPos'].some(k => k in b) && !('lineup' in b.pending), 'fixLineup off: drops every I-2 key and pending.lineup');
+    EN.stallResume(b, CW); ok(b.pending === null, 'old page: stall pending without the lineup key just closes');
+    const c = JSON.parse(J(EN.newRun(CW, { seedKey: 'lu-fix2', runNo: 2 })));
+    ok(EN.fixLineup(c, CL) === true && EN.lineupOn(c) && EN.wearOn(c) && c.lineupFrom === 6, 'fixLineup on for an old run: adds the keys'); }
+
+  // ---- 存檔來回（停在上場那一步、打到一半）照樣走 ----
+  { const r = newL('lu-save');
+    for (let g = 0; g < 400 && !(r.pending && r.pending.type === 'stall' && r.pending.lineup && r.pending.pick != null && r.pending.k >= r.pending.q.length); g++) { if (r.pending) { EN.choose(r, CL, EN.cPolicy(r, CL, {})); continue; } fwin(r, CL); }
+    const s = JSON.parse(J(r));
+    ok(EN.choose(s, CL, EN.cPolicy(s, CL, {})).ok && s.pending === null && Array.isArray(s.lineup), 'save at the lineup step → reload → pick works');
+    const f = EN.startFight(s, CL, {}); playN(f.duel, s.lineup[0], 2);
+    const s2 = JSON.parse(J(s)); endWin(s2.duel); EN.finishFight(s2, CL);
+    ok(s2.wear[s.lineup[0]] && s2.wear[s.lineup[0]].g === 2, 'mid-duel save → reload → plays still recorded'); }
+
+  // ---- 策略：上場制 bagScore 不稀釋、看聽膩後的星；thinPolicy 不賣；deadWeight 門檻；跑整趟不出錯、手牌一直 5 張 ----
+  { const r = goTo(newL('lu-pol'), CL, 7), b = r.bag;
+    const extra = Object.keys(C.cards).filter(k => !C.cards[k].tier && !b.includes(k)).slice(0, 40);
+    let dil = 0; for (const id of extra) if (EN.bagScore(CL, b.concat([id]), r) < EN.bagScore(CL, b, r) - 1e-9) dil++;
+    ok(dil === 0, 'lineup bagScore never drops when adding a card (no dilution)', dil);
+    const X = b.slice().sort((x, y) => EN.peak(C.cards[y]) - EN.peak(C.cards[x]))[0], s0 = EN.bagScore(CL, b, r);
+    r.wear[X] = { g: 0, n: 2 }; ok(EN.bagScore(CL, b, r) <= s0, 'worn layers lower the lineup bagScore');
+    const pol = EN.lineupPolicy(r, CL); ok(pol.ids.length === Math.min(N5, b.length), 'lineupPolicy size');
+    r.lineup = r.lineup || pol.ids;
+    ok(J(EN.thinPolicy(r, CL)) === '[]', 'thinPolicy: lineup mode sells nothing');
+    ok(EN.deadWeight(CL, b, X, r) === false, 'deadWeight lineup threshold');
+    let runs = 0, bad = 0, hands = 0, worn = 0;
+    for (let s = 0; s < (QUICK ? 4 : 16); s++) {
+      const rr = newL('lu-run-' + s, CL, { ace: TIERS[s % 3] }), R = lcg(EN.fnv1a32('lu-run-' + s)), mem = {};
+      for (let g = 0; g < 3000 && !rr.over && rr.pos <= 40; g++) {
+        if (rr.pending) { const ch = EN.cPolicy(rr, CL, {}); if (!EN.choose(rr, CL, ch).ok) { bad++; break; } continue; }
+        for (const ch of EN.lineupPrep(rr, CL)) if (!EN.choose(rr, CL, ch).ok) bad++;
+        if (EN.canShop(rr)) for (const ch of EN.shopPolicy(rr, CL, 'smart')) if (!EN.choose(rr, CL, ch).ok) bad++;
+        for (const ch of EN.lineupPrep(rr, CL)) if (!EN.choose(rr, CL, ch).ok) bad++;
+        const f = EN.startFight(rr, CL, {});
+        if (EN.luRound(rr) && rr.bag.length >= N5 && f.duel.p.hand.filter(Boolean).length !== N5) bad++;
+        let k = 0; while (!f.duel.over && k++ < 20) { EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, CL)); hands++; }
+        EN.finishFight(rr, CL);
+      }
+      runs++; worn += (rr.stats.wear || {}).layers | 0;
+    }
+    ok(bad === 0 && worn > 0, 'smart runs with lineup+wear: every choice ok, hand always 5 in lineup rounds, some cards get worn', { bad, worn, hands }); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

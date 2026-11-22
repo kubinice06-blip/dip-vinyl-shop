@@ -908,12 +908,23 @@
       emit('apex', ev);
       return true;
     }
+    // 第 I 波 I-2 耐聽（view.hand 每張有 worn／ear 才畫；SPEC-I §3.6 手牌只兩種記號）：聽膩＝封面淡灰斜紋＋左上紅字「−n」（主打軸那顆屬性鈕旁也寫）；
+    //   再一次就膩（ear 1、還沒到最多層）＝左上一顆黃點。沒膩、還早的不畫（第一輪看不到任何新東西）
+    function wearMax() { const W0 = (content.wear && typeof content.wear === 'object') ? content.wear : {}; return W0.maxLayers != null ? W0.maxLayers | 0 : 2; }
+    function wearMark(c) {
+      if (!c || c.worn == null) return { cls: '', html: '', aria: '' };
+      const W0 = content.wear && content.wear.ui || {}, n = c.worn | 0;
+      if (n > 0) return { cls: ' worn', html: `<span class="sk" aria-hidden="true"></span><span class="wn" aria-hidden="true">−${n}</span>`, aria: '・' + fillT(W0.worn || '', { n }) };   // .sk＝斜紋（不用 ::after：打開那張的 ::after 是封面下緣的點擊延伸）
+      if ((c.ear | 0) === 1 && n < wearMax()) return { cls: ' almost', html: '<i class="al" aria-hidden="true"></i>', aria: '・' + (W0.almost || '') };
+      return { cls: '', html: '', aria: '' };
+    }
     function tileHTML(v, i) {
       const isAce = i === 'ace', c = cardOf(v, i); if (!c) return '';
       if (isAce && v.apex) return apexTileHTML(v, c);
       const et = isAce ? encTagHTML(v) : '', ea = et ? '・' + encTagText(v.enc) : '';   // 第 I 波翻面：封面下緣的籤
-      return `<div class="tile${isAce ? ' ace' + encCls(v) : ''}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
-        + `<button type="button" class="cvw" data-tut="${isAce ? 'card-ace' : 'card-' + i}" data-act="pick" aria-label="${esc((isAce ? '王牌：' : '') + title(c) + ea)}（按住看唱片資訊）">${img(c)}${isAce ? `<span class="acetag">${esc(T('aceSlot'))}</span>` : ''}${et}</button></div>`;
+      const wm = isAce ? { cls: '', html: '', aria: '' } : wearMark(c);
+      return `<div class="tile${isAce ? ' ace' + encCls(v) : ''}${wm.cls}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
+        + `<button type="button" class="cvw" data-tut="${isAce ? 'card-ace' : 'card-' + i}" data-act="pick" aria-label="${esc((isAce ? '王牌：' : '') + title(c) + ea + wm.aria)}（按住看唱片資訊）">${img(c)}${isAce ? `<span class="acetag">${esc(T('aceSlot'))}</span>` : ''}${et}${wm.html}</button></div>`;
     }
     function renderHand(v, opt) {
       opt = opt || {};
@@ -951,8 +962,10 @@
         return `<button type="button" class="ab ace top ${a}${v.aceStar != null && n !== starOf(c, a) ? ' enc' : ''}" data-tut="chip-ace" data-i="ace" data-a="${a}" aria-label="${esc('王牌 ' + ZH[a] + ' ' + n + ' 星：丟出')}"><span class="aw">${esc(T('aceWord'))}</span><i>${ZH1[a]}</i><b class="key">${n}</b></button>`;
       }
       const top = topOf(c);
+      // 第 I 波 I-2：聽膩的那張，主打軸（wornAxis）那顆星數旁紅字「−n」（星數已經是扣過的）
+      const wn = a => c.worn > 0 && c.wornAxis === a ? `<span class="wn" aria-hidden="true">−${c.worn | 0}</span>` : '';
       // 鈕與鈕之間的縫（.abgap）什麼都不做：手指落在縫上被觸控校正吸到隔壁那顆時，用按下那一刻的原始座標認出來（inChipGap；RV11-2、V5 F5）
-      return ATTRS.map(a => `<button type="button" class="ab ${a}${a === top ? ' top' : ''}" data-tut="chip-${sel.i}-${a}" data-i="${sel.i}" data-a="${a}" aria-label="${esc(ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b></button>`).join('<span class="abgap" aria-hidden="true"></span>');
+      return ATTRS.map(a => `<button type="button" class="ab ${a}${a === top ? ' top' : ''}" data-tut="chip-${sel.i}-${a}" data-i="${sel.i}" data-a="${a}" aria-label="${esc(ZH[a] + ' ' + starOf(c, a) + ' 星：丟出')}"><i>${ZH1[a]}</i><b class="key">${starOf(c, a)}</b>${wn(a)}</button>`).join('<span class="abgap" aria-hidden="true"></span>');
     }
     // 大一點、黑框的那顆（.top）：最高星那色；並列最高時給正在預覽的那色（教學指冷 4 時不讓經 4 看起來才是該按的；RH-6）
     function topOf(c) {
@@ -1640,7 +1653,7 @@
       S.speed = baseSpeed(); setSpeed(S.speed); S.rush = false;
       root.classList.remove('busy', 'revealed');
       S.busy = false;
-      renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null });
+      renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card && !v1.lineup ? dr.i : null });   // 第 I 波 I-2 上場制：出一張那張洗回來＝每手都是那五張，不播滑入（draw 的 reshuffled 也不念）
       const fitPend = !!S.fitRaf; scheduleFit(); if (fitPend) fit();   // 小列第一次長出來：這一刻就要量好新版面（飛的終點）
       lpFly(bigE, bigP);
       // 提示從半透明開始：中間字帶不會只剩「提示」兩個字（R-05b）

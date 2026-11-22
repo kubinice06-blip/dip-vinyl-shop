@@ -18,6 +18,8 @@
  *   sfx(n, o), say(id, text, ms) → 泡泡 el, unsay(id), stageRect(), emote(id, k, ms), toast(text, cls), cashRise(from, to), cashAfter(from, to), xpRise(o),
  *   coverHTML(c, o), starsHTML(c, o), relicButtonsHTML(ids, attr), bagText(n), bagGain(id), rewardNote(),
  *   take(id) → Promise<res|null>, relic(id, autoDrop) → Promise<res|null>, skip() → res,
+ *   （第 I 波 I-2 上場＋耐聽，選填；上場制關＝不給或回 null／false／''，畫面一字不變）luUp(id) → {up, text}|null（↑ 比上場最弱那張強）、luFirst() → 第一次那句|null、
+ *   swapOk() → 這一列可以「收這張＋換上場」、swapIn(id) → Promise（收完開「換掉哪一張？」）、earDots(id) → 耐聽 7 顆點 html，
  *   shelfAdd(id), shelfHas(id), seen(k), markSeen(k), fly(c, fromEl, toRect) → Promise, wallRect(), bagRect(), topRect(),
  *   auto(fn, ms)（自動玩登記）, policy() → choice, anim() → { fast（動畫加速）, k（?fast=1 的倍率）, rm（減少動態） }, floor(card|null),
  *   log(k)（save.wcLog 計數；這裡只記 'ground'：這一列玩家自己點了蓋牌／木箱，一列最多算一次）
@@ -76,10 +78,18 @@
     try { gain = +H.bagGain(id) || 0; } catch (_) {}
     // 包包裡已經有這張（舊存檔的列、引擎退路沒擋到）：鈕寫「包包裡有了」、按不下去（不讓「收這張」變成死鈕）
     var r = H.run(), shelf = !!(S.enc && S.enc.mode !== 'bag'), have = !shelf && !!r && Array.isArray(r.bag) && r.bag.indexOf(id) >= 0;   // 切磋唱片櫃模式：不進包包（不判包包裡有了、不畫 ↑）
-    var up = !have && !shelf && gain > 0.005 ? '<span class="lt-up" role="img" aria-label="' + esc(U('upHint')) + '" title="' + esc(U('upHint')) + '">↑</span>' : '';
+    // 第 I 波 I-2 上場制（SPEC-I §5.4；CRITIQUE 2-8）：↑ 改成「比你上場最弱那張強」（H.luUp 回 {up, text}；上場制關＝null 照舊看 bagGain）
+    var lu = null; try { lu = !S.enc && H.luUp ? H.luUp(id) : null; } catch (_) {}
+    var upTx = lu ? lu.text : U('upHint'), isUp = lu ? lu.up : gain > 0.005;
+    var up = !have && !shelf && isUp ? '<span class="lt-up" role="img" aria-label="' + esc(upTx) + '" title="' + esc(upTx) + '">↑</span>' : '';
+    // 一輪中途收新唱片＝可以順手換上場（收這張＋換掉上場的一張；H.swapOk：這一輪是上場制、挑過了、不是這一輪最後一位）
+    var sw = false; try { sw = !S.enc && !have && !!H.swapOk && !!H.swapOk(); } catch (_) {}
+    var ear = ''; try { ear = H.earDots ? H.earDots(id) || '' : ''; } catch (_) {}
     return '<span class="lt-face">' + H.coverHTML(c) + up + '</span>' +
-      '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + H.starsHTML(c) +
+      '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + H.starsHTML(c) + ear +
       (have ? '<button type="button" class="lb-pickb key" disabled>' + esc((C().shopUi && C().shopUi.owned) || '包包裡有了') + '</button>'
+        : sw ? '<span class="lt-bb"><button type="button" class="lb-pickb key" data-pick="' + esc(id) + '">' + esc(U('take')) + '</button>' +
+          '<button type="button" class="lb-pickb key lt-sw" data-swap="' + esc(id) + '">' + esc(((C().lineup || {}).ui || {}).swapIn || '') + '</button></span>'
         : '<button type="button" class="lb-pickb key" data-pick="' + esc(id) + '">' + esc(U('take')) + '</button>');
   }
   function tileUp(i) {
@@ -123,7 +133,7 @@
     //   減少動態也一樣等（錢那條照樣在 1.35 秒出、停約 2 秒；而且一開始鏡頭還沒定，量泡泡出不出界會量錯）
     var wait = S.out ? Math.max(0, (S.t0 || 0) + ms('fly') + Math.round(3000 / A().k) - Date.now()) : 0;
     after(function () {
-      try { if (!H.seen('firstLoot')) { H.markSeen('firstLoot'); ownerLine(U('firstLoot', { n: mt(S.p.skipCash || 400) }), 3800); } } catch (e) { console.error(e); }
+      try { if (!H.seen('firstLoot')) { var lf = H.luFirst ? H.luFirst() : null; H.markSeen('firstLoot'); ownerLine(lf ? fill(lf, { n: mt(S.p.skipCash || 400) }) : U('firstLoot', { n: mt(S.p.skipCash || 400) }), 3800); } } catch (e) { console.error(e); }   // 第 I 波 I-2：上場制的一趟換那句（包包多一張不會稀釋）
     }, wait);
   }
   // 老闆說一句：店景泡泡；泡泡被舞台邊切掉（375 寬的領獎鏡頭，老闆在右上、泡泡只能往右放）就改成一顆吐司（整句看得到）。
@@ -194,6 +204,7 @@
     }
     if ((el = t.closest && t.closest('[data-a=lid]'))) { if (!S.open) groundTap(); openLid(); return; }
     if ((el = t.closest && t.closest('[data-pick]'))) { if (!el.disabled) takeIt(el.getAttribute('data-pick'), el); return; }
+    if ((el = t.closest && t.closest('[data-swap]'))) { if (!el.disabled) takeIt(el.getAttribute('data-swap'), el, true); return; }   // 第 I 波 I-2：收這張＋換上場
     if ((el = t.closest && t.closest('[data-r]'))) { relicIt(el.getAttribute('data-r')); return; }
     if ((el = t.closest && t.closest('[data-a=skip]'))) { skipIt(); return; }
   }
@@ -226,7 +237,7 @@
     S.lexpShown = true;
     try { H.toast(U('packetLexp', { n: pk.n }), 'gold keep'); } catch (e) { console.error(e); }
   }
-  function takeIt(id, btn) {
+  function takeIt(id, btn, swap) {
     S.busy = true; sfx('pocket');
     var tile = btn && btn.closest('.lt-c'), cv = tile && qs('.lb-cv', tile), c = card(id);
     shelveAll();
@@ -234,6 +245,8 @@
     (S.enc ? S.enc.take(id) : H.take(id)).then(function (res) {
       if (!res) { S.busy = false; return; }
       flushMoney(0);
+      // 第 I 波 I-2：收完再問「換掉哪一張？」（不換＝留在包包）；問完才往下走
+      if (swap && H.swapIn) return Promise.resolve(H.swapIn(id)).catch(function (e) { console.error(e); }).then(function () { done(res); });
       done(res);
     });
   }

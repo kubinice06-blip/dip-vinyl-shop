@@ -2,7 +2,7 @@
  *
  * window.DipLabEcon = {
  *   configure({ content, engine, stage, run:()=>save.run, choose:(ch)=>res, info:(card)=>Promise, sfx, toast, app:()=>#app,
- *               coverBase?, relicIcon?(id,size), makeRoom?([x,y]), onSellOpen?() })   // onSellOpen：櫃檯「賣給老闆」分頁打開了（ui.js 記 save.seen.counterSell）   // makeRoom：你要走去站的位置旁邊有人時，ui.js 請他讓開   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
+ *               coverBase?, relicIcon?(id,size), makeRoom?([x,y]), onSellOpen?(), luTag?(id), earDots?(id) })   // luTag／earDots：第 I 波 I-2 上場＋耐聽（櫃檯賣給老闆的格子）   // onSellOpen：櫃檯「賣給老闆」分頁打開了（ui.js 記 save.seen.counterSell）   // makeRoom：你要走去站的位置旁邊有人時，ui.js 請他讓開   // ui.js boot 呼叫（B2，§2.5.2）；沒 configure 就呼叫別的方法 → console.error 並 resolve，不丟例外
  *   openBin(key)      → Promise<void>     // 走過去翻 → 抽屜（一張大封面翻著看）→ 關掉才 resolve；key==='sale' 轉 openBargain
  *                                         //   標題＝名牌英文＋中文（C.bins[key].label／zh；FEATURE 金色名牌）；每張標稀有度（C.rarityZh）與價（engine.priceOf）
  *   openBargain()     → Promise<void>     // 之後買特價箱（每張 $100／200／300、最多三張，付挑的那幾張的總和）；還沒挑過開局三張（canBargainPick）→ 轉 bargainPick
@@ -187,6 +187,9 @@
     return Array.isArray(r.seeds) && r.seeds.indexOf(id) >= 0;
   }
   // 櫃檯賣給老闆（engine.sellQuote：跟 choose sell 同一套檢查、不改 run）→ {ok, earn, reclaim} 或 {ok:false, error}
+  // 第 I 波 I-2 上場＋耐聽（configure 的 luTag(id)／earDots(id)；上場制關＝''，格子一字不變）：「上場」「替補」小標、耐聽 7 顆點
+  function luTagHTML(id) { var t = ''; try { t = CFG.luTag ? CFG.luTag(id) || '' : ''; } catch (_) {} return t ? '<span class="ec-lu">' + esc(t) + '</span>' : ''; }
+  function earHTML(id) { try { return CFG.earDots ? CFG.earDots(id) || '' : ''; } catch (_) { return ''; } }
   function quote(r, id) { try { return E().sellQuote ? E().sellQuote(r, C(), id) : { ok: false, error: 'badSell' }; } catch (_) { return { ok: false, error: 'badSell' }; } }
   // 錢不夠時要不要寫「去櫃檯賣唱片」：包包至少留 5 張，最多能賣（張數 − 5）張；挑最值錢的那幾張賣掉，錢加起來夠買這一張（price）才寫——
   //   賣光也不夠就只寫「錢不夠」，不引你去白賣牌（審查 A-10：開局 $1,000、7 張裡 4 張送的，最多湊 $300，原本 FEATURE $3,000 也叫你去賣）
@@ -532,7 +535,7 @@
       var tag = gift ? ui('giftTag') : seed ? ui('seedTag') : fd ? wcUi('foundTag') : '';
       return '<button type="button" class="ec-tile ec-spick ec-cs' + (on ? ' sel' : '') + (gift ? ' gift' : '') + (seed ? ' seed' : '') + '" data-a="cpick" data-cid="' + esc(id) + '" aria-pressed="' + on + '"' + (q.ok ? '' : ' disabled') +
         (back ? ' data-back="1"' : '') + ' aria-label="' + esc(c.artist + '《' + c.album + '》' + (tag ? '（' + tag + '）' : '') + '：' + (back ? ui('reclaimTag') : '+' + money(q.ok ? q.earn : 0))) + '">' +
-        '<span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + '</span>' + lab + starsHTML(c, { col: true }) + '</button>';
+        '<span class="ec-tcv">' + coverImg(c) + (on ? '<span class="ec-chk" aria-hidden="true">✓</span>' : '') + luTagHTML(id) + '</span>' + lab + starsHTML(c, { col: true }) + earHTML(id) + '</button>';
     }).join('');
     var pc = S.spick ? card(S.spick) : null, pq = pc ? quote(r, pc.id) : null, pback = !!(pq && pq.ok && pq.reclaim);
     // 選了一張：底下那條問一次，旁邊「唱片資訊」（賣之前看得到是哪張、試聽；格子長按也開，審查 A-8）

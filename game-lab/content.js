@@ -280,7 +280,10 @@
     headphone: { id: 'headphone', name: '監聽耳機',   icon: 'headphone', desc: '每場第一手他不唬人。',   note: '監聽耳機：他照實出',  v4: false, tag: '新' },
     boost_c:   { id: 'boost_c',   name: '180g 重量盤', icon: 'heavy180', desc: '經典出招時 +1 星。',     note: '重量盤：+1 星',       boost: 'c', tag: '新' },
     boost_o:   { id: 'boost_o',   name: '絕版編號標', icon: 'numbered',  desc: '冷門出招時 +1 星。',     note: '絕版編號標：+1 星',   boost: 'o', tag: '新' },
-    boost_h:   { id: 'boost_h',   name: '內圈刻字',   icon: 'matrix',    desc: '硬蕊出招時 +1 星。',     note: '內圈刻字：+1 星',     boost: 'h', tag: '新' }
+    boost_h:   { id: 'boost_h',   name: '內圈刻字',   icon: 'matrix',    desc: '硬蕊出招時 +1 星。',     note: '內圈刻字：+1 星',     boost: 'h', tag: '新' },
+    // 第 I 波 I-2（SPEC-I §5.2-3）：替補格（type slot：對決裡沒有效果，engine benchN 多一格）。只在上場制開著的一趟出現在器材行／老闆的倉庫（engine wcRelics）；
+    //   序章、菁英／藏家獎勵、櫃檯都不給（rewards.relicPool、relicShop.pool 不放）。上場制關著＝哪裡都拿不到（逐字現況）
+    sleeve:    { id: 'sleeve',    name: '唱片袋側袋', icon: 'sleeve',    desc: '多一張替補，聽膩時頂上。', note: '側袋：替補頂上',      type: 'slot', tag: '新' }
   };
   C.relicMax = 3;
   C.rewards = {
@@ -1566,10 +1569,10 @@
       storeTag: '店內取得',
       // 主站頻率光譜「帶去店裡對決」帶來的那張（v5 第六項第一期）：下一趟開局挑種子排第一、預設勾好；不用擁有，用一次就沒了（不進戰鬥規則、不動平衡）
       pickBrought: '帶來的',                                            // 挑種子面板那張封面左上的小籤
-      bringToast: '《{album}》在櫃檯等你：下一趟開局可以帶上場',          // 標題畫面吐司（網址 ?card= 收下時）
-      bringToastFirst: '《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶上場',   // 第一次玩（接著是序章，序章那一趟不挑種子）
+      bringToast: '《{album}》在櫃檯等你：下一趟開局可以帶來',          // 標題畫面吐司（網址 ?card= 收下時）
+      bringToastFirst: '《{album}》在櫃檯等你：先跟老闆走一趟，下一趟帶來',   // 第一次玩（接著是序章，序章那一趟不挑種子）
       bringMissing: '店裡沒有這張唱片。',                                 // ?card= 查不到或是王牌（帶不進來）
-      bringLegend: '《{album}》是傳奇唱片，帶上場太好打，店裡不收；史詩以下都能帶。',   // ?card= 是傳奇（主線 M2：不收；史詩照帶）
+      bringLegend: '《{album}》是傳奇唱片，帶來太好打，店裡不收；史詩以下都能帶。',   // ?card= 是傳奇（主線 M2：不收；史詩照帶）
       // 存檔唯讀（第 B 波 SPEC-B §2.1、附錄 A）：標題 lb-foot 一行；兩個都有只出 migrateFail
       migrateFail: '存檔升級失敗，這次先不存檔；重新整理再試一次。',      // 卡片 id 換 catalogId 那一步丟例外（整份唯讀、不覆寫）
       poolMissing: '唱片沒有全部載到，這次先不存檔；重新整理再試一次。'   // cards-pool.js 沒載到（C.poolLoaded false）
@@ -1583,7 +1586,7 @@
   // ===================================================================
   C.daily = {
     title: '今日推薦',
-    hint: '每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶上場；蓋滿七格，換一張好盤。',   // 第一次打開（save.seen.dailyHint）
+    hint: '每天第一次來，我留一張你還沒認識的唱片在這裡。收下就是你的，下一趟可以帶來店裡；蓋滿七格，換一張好盤。',   // 第一次打開（save.seen.dailyHint）
     take: '收下',
     taken: '收進唱片櫃了',
     tomorrow: '明天再來，我再幫你留一張。',          // 收過之後那顆鈕的灰字（老闆第一人稱，跟 hint 同一個口吻；驗收）
@@ -1592,7 +1595,7 @@
     firstStamp: '見面禮',                          // 第一格角落小字（第一次建立先送一格；新玩家也有，所以不寫「老客人」；驗收）
     claim: '換獎勵',
     claimTitle: '挑一張帶回家',
-    claimed: '收進唱片櫃，下一趟可以帶上場。',          // 換完的吐司
+    claimed: '收進唱片櫃，下一趟可以帶來店裡。',          // 換完的吐司
     titleChip: '今日推薦：《{album}》'                // 標題 lb-foot 的小籤（沒收時；收過＝stamps）
   };
   C.dailyTag = '新';
@@ -1768,6 +1771,7 @@
     ],
     ladder: [
       { lv: 2, key: 'talents' },
+      { lv: 3, key: 'bench', lineupBonus: 1, needs: 'lineup' },    // 第 I 波 I-2（§5.2-3、§7.3 d）：上場制多帶一張替補（talentArgs lineupBonus）。needs＝上場制開著才算、才畫（ladderList 濾掉）
       { lv: 5, key: 'bgmShelf', ui: true },                       // 第 I 波 §7.3 d（跟 I-4 背景音樂一起上）：⏸ 可選「背景音樂放：包包＋唱片櫃」。ui＝只給畫面、引擎的 CAREER 預設不抄（engine.test 比對時略過）
       { lv: 8, key: 'power' }, { lv: 10, key: 'relic3', relicPick: 3 }, { lv: 10, key: 'off' },
       { lv: 12, key: 'seed4', seedMax: 4 }, { lv: 15, key: 'gold', goldAdd: 0.01 }, { lv: 20, key: 'plea' },
@@ -1795,7 +1799,7 @@
       // 解鎖階梯（已開的打勾、下一個亮、之後的灰）
       ladderTitle: '解鎖階梯', ladderRow: 'Lv{n} {name}',
       ladder: { talents: '天賦頁', power: '戰力天賦', relic3: '菁英、藏家的配件三選一', off: '可以關掉樂歷', seed4: '種子格 4 格',
-        gold: '戰利品列金邊機率 +1%', plea: '備用說情', bgmShelf: '背景音樂也放唱片櫃的歌', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
+        gold: '戰利品列金邊機率 +1%', plea: '備用說情', bgmShelf: '背景音樂也放唱片櫃的歌', bench: '上場多帶一張替補', seed5: '種子格 5 格', relicsNew: '新配件', regulars: '新常客', outfit: '捏角色新服裝' },
       drawRow: '每升一級：抽一張盤進唱片櫃（Lv10 起每 5 級史詩）',
       // 關掉樂歷（Lv10 起、只在樂歷頁；下一趟起生效）
       off: '下一趟的樂歷', offSub: '關掉＝天賦、種子格、配件三選一、金邊全部回到新帳號。樂歷照拿。', offOn: '樂歷關', offBest: '關樂歷',   // 配件三選一＝relicPick
@@ -2075,6 +2079,60 @@
     }
   };
   C.encoreTag = '新';
+
+  // ===================================================================
+  // 第 I 波 I-2：上場＋耐聽（scratchpad v5/wave-i SPEC-I §3、§5；給畫面／sim／e2e 的契約 wave-i/build2/CONTRACT.md）
+  //   店主 11-20：「卡好像可以設計類似耐久度的東西 或出牌次數限制 不然才第15回合 專輯已經固定不會想再購買或換牌」「一次能帶五張上場 發燒配件 或是 天賦 能讓帶上場的」
+  //   §12-1 店主沒回＝照（甲）每輪挑：第 2 輪起（新帳號第一趟第 11 位起），每輪從包包挑 n 張上場（手牌＝這 n 張，每手都看得到全部）；
+  //     替補＝配件「唱片袋側袋」（slotRelic）或樂歷 Lv3（C.career.ladder 的 bench 格），每位開打前可以拿替補換掉上場的一張；最多 max 張（上場＋替補）。
+  //   耐聽（C.wear）：上場制那幾輪起，唱片在主線對決每出一次用掉 1 格；grooves 格用完＝聽膩一層（主打軸 −star 星、最低 1 星；最多 maxLayers 層，之後不再扣）；
+  //     一整輪沒上場（坐板凳）＝換輪時聽膩全清、耐聽回滿。說情重打那場、序章、切磋不算。王牌、頂點卡不算。
+  //   on：兩個一起開、一起關（單開上場會變簡單、單開耐聽會變難；SPEC-I §A-5）；施工期間 ?lineup=1＝畫面開機把兩個都設 true（sim --lineup on --wear on）
+  //   pen＝「幫我挑」（engine lineupPolicy，畫面與 sim 同一個函式）每層聽膩扣幾分：施工量過定 1.5（＝§5.3 原文；Z4 補量用的 3.5 讓聽膩的幾乎不上場，
+  //     W3「第 16–30 位打出去的裡聽膩的」只有 4.2%＜5%＝沒感覺；1.5＝7.0%）
+  //   from／firstRunFrom＝上場制從第幾位那一輪起：施工量過定 11（§A-9「第幾輪起」是起點）——第 6 位起（§5.2 起點）新手第 6–10 位變簡單（到第 10 位 30.9→37.2%、T2c 破 35%），
+  //     第 11 位起新手逐字現況、會讀的深度一樣（補量 Z4 也是）；新帳號第一趟本來就 11（build2/eng.md、m/*.txt）
+  //   benchMode＝替補怎麼用：'worn'（備案，SPEC-I §5.2-3）＝上場那張聽膩、替補比它新鮮 → 開打時自動頂上（純分攤耐聽，不當戰力賣）；
+  //     'swap'＝每位開打前手動換一張（§5.2-3 原案；施工 n4000 量到會讀的到第 50 位 −0.1 點＝L2 ≤0 → 照規格改備案）
+  //   quietMax＝前期省一下：包包 ≤ 這麼多張、這一輪沒有新拿到的、也沒有聽膩的 → 不出上場面板（吐司 quiet，直接用 lineupPolicy）
+  //   字（{n}＝張數、{album}＝專輯名；Tag 新）。「上場」只指這件；從唱片櫃帶進一趟的種子說「帶來」（SPEC-I §A-3）
+  // ===================================================================
+  C.lineup = {
+    on: false, n: 5, from: 11, firstRunFrom: 11, slotRelic: 'sleeve', slotTalentLv: 3, max: 7, pen: 1.5, quietMax: 6, benchMode: 'worn',
+    ui: {
+      title: '這一輪挑 {n} 張上場',                               // 上場面板標題
+      guests: '這一輪的客人',                                     // 面板頂：5 位客人小頭像那排的讀屏字
+      auto: '幫我挑', go: '就這五張',                             // 面板底兩顆（≥44 px）
+      slot: '上場', bench: '替補', empty: '空著',                 // 上場格、替補格（虛線框）、上場那張被賣掉後的空格
+      onTag: '上場', newTag: '新',                                // 包包格、包包面板的小標
+      bagBtn: '包包 {n}',                                         // 來客畫面上場列旁收起來的包包鈕
+      benchHint: '上場那張聽膩了，替補會自動頂上',                 // 來客畫面上場列有替補格時的小字（benchMode 'worn'：開打時自動頂上，不給手動換）
+      benchHintSwap: '開打前可以拿替補換掉一張',                   // benchMode 'swap'（原案、現在不用）：點替補 → 點一張 → 對調
+      benchPick: '換下哪一張？',                                  //   'swap' 點了替補格之後
+      swapIn: '換上場', swapWhich: '換掉哪一張？',                // 一輪中途拿到新唱片：戰利品列／包包面板那顆小鈕與小面板
+      swapNo: '先放包包', swapped: '《{album}》換上場',            //   小面板的「不換」鈕、換好的吐司（介面棒）
+      pickHint: '點包包一張，換掉選中的那格',                      // 上場面板：格子下面一行小字（沒選格子＝換掉分數最低那格；介面棒）
+      due: '上場少一張，挑一張補上',                               // 上場那張賣掉或寄賣之後，下一位開打前跳面板
+      quiet: '這一輪照上一輪的五張（包包可以換）',                 // 前期省一下（不出面板）的吐司
+      first: '包包越來越厚了，這一輪挑五張上場。聽膩的換下來休息一輪就好。',   // 老闆，第一次出上場面板（save.seen.lineup）
+      rule: '第 3 輪起，每輪從包包挑五張上場；包包多一張不會稀釋。',     // 規則卡那段（第 11 位起＝第 3 輪）
+      firstLoot: '包包多一張不會稀釋，下一輪可以挑它上場。不收也有 ${n}。',   // 上場制下換掉 C.waveC.ui.firstLoot
+      upHint: '比你上場最弱那張強'                                // 上場制下換掉 C.waveC.ui.upHint（拿那張跟上場最弱那張比）
+    }
+  };
+  C.wear = {
+    on: false, grooves: 7, maxLayers: 2, star: 1, axes: 1, back: 0, restFull: true, from: 11, firstRunFrom: 11,   // axes 2＝主打軸與次軸各扣（太簡單的調整②）；back＝上場中的每輪也回幾格（太難的調整②）
+    ui: {
+      ear: '耐聽 {n}／{max}',                                     // 7 顆小點的讀屏字（包包、上場面板、戰利品列）
+      almost: '再一次就膩',                                       // 手牌：星數旁一顆黃點的讀屏字
+      worn: '聽膩 −{n}',                                          // 手牌：主打軸星數旁紅字（畫面只寫 −{n}）
+      resting: '休息中・下一輪回滿',                               // 坐板凳的那幾張
+      got: '《{album}》聽膩了（−{n}），下一輪換下來休息就好',       // 領獎畫面小字（finishFight effects 的 worn；停住，跟其他獎勵字一起）
+      first: '這張你最近很常放，有點聽膩了。換下來休息一輪就好。',   // 老闆，第一次聽膩（save.seen.wear）
+      rule: '一張出 7 次就聽膩：主打那軸 −1 星；坐一輪板凳回滿。'   // 規則卡那段（≤30：lint-copy）
+    }
+  };
+  C.lineupTag = '新';
 
   // ===================================================================
   // 活店（SPEC-H：熟客進進出出、點人聊天、行家、切磋）——棒 3a 資料。店主 11-18：「熟客平常會走來走去 翻翻挖挖 然後走出門 就像真的活人」

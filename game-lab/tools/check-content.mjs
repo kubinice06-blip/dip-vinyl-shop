@@ -252,15 +252,18 @@ export function shapeProblems(C, E) {
   for (const id of BP) if (CARDS[id]) ok(E.priceOf(C, id) === EC.bargain[Math.min(3, peak(CARDS[id]))], '特價箱 ' + id + ' 的價照最高星');
 
   // ---- 發燒配件（§2.2.6） ----
-  const RIDS = ['dustcover', 'stylus', 'cleaner', 'obi', 'testpress', 'headphone', 'boost_c', 'boost_o', 'boost_h'];
-  ok(C.relics && sameSet(Object.keys(C.relics), RIDS), '發燒配件要剛好 9 件：' + RIDS.join(' '));
+  const RIDS = ['dustcover', 'stylus', 'cleaner', 'obi', 'testpress', 'headphone', 'boost_c', 'boost_o', 'boost_h', 'sleeve'];   // sleeve＝第 I 波 I-2 唱片袋側袋（替補格）
+  ok(C.relics && sameSet(Object.keys(C.relics), RIDS), '發燒配件要剛好 10 件：' + RIDS.join(' '));
   for (const [id, r] of Object.entries(C.relics || {})) {
     ok(r.id === id && r.name && r.icon && r.desc && r.note && r.tag, 'relics.' + id + ': id／name／icon／desc／note／tag');
     ok(!('price' in r), 'relics.' + id + ': 不個別定價，一律 economy.relicPrice（$3,000）');
     ok(E.relicPrice(C, id) === EC.relicPrice, 'relics.' + id + ': relicPrice＝economy.relicPrice');
     if (/^boost_/.test(id)) ok(r.boost === id.slice(6), 'relics.' + id + ': boost 要是 ' + id.slice(6));
     else ok(!r.boost, 'relics.' + id + ': 只有 boost_* 有 boost');
+    ok(r.type == null || (r.type === 'slot' && id === 'sleeve'), 'relics.' + id + ': type 只有 sleeve 是 slot（第 I 波 I-2 替補格）');
   }
+  ok([].concat((C.rewards || {}).relicPool || [], (C.rewards || {}).prologueRelics || [], (C.relicShop || {}).pool || []).every(id => !(C.relics[id] && C.relics[id].type === 'slot')),
+    '唱片袋側袋（type slot）不放進序章、菁英／藏家獎勵、櫃檯（只在上場制的器材行／老闆的倉庫：engine wcRelics）');
   ok(C.relics && C.relics.headphone && C.relics.headphone.v4 === false, 'relics.headphone.v4 要 false（〔補〕⚠規則，等店主決定）');
   ok(EC.relicPrice > Math.max(PR.common, PR.rare, PR.uncommon), '配件比箱子裡的唱片貴（' + EC.relicPrice + ' > ' + Math.max(PR.common, PR.rare, PR.uncommon) + '）');
   ok(C.relicShop && Array.isArray(C.relicShop.pool) && C.relicShop.pool.length && C.relicShop.pool.every(id => /^boost_[coh]$/.test(id) && C.relics[id]), 'relicShop.pool ⊂ boost_*');
@@ -421,6 +424,7 @@ export function contentProblems(C, E) {
   bad.push(...bgmProblems(C));        // 第 I 波 §4 背景音樂
   bad.push(...apexProblems(C, E));
   bad.push(...encoreProblems(C, E));
+  bad.push(...lineupProblems(C, E));  // 第 I 波 I-2 上場＋耐聽
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
   bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
@@ -1233,6 +1237,38 @@ export function tuneProblems(C) {
 }
 // 第 I 波 §4 背景音樂（C.bgm）：數字在合理範圍（泡泡至少停 6 秒＝活店 §5.3、隔 ≥2 分鐘才再展開、連試 ≤3 首、新抓上限 ≤30）、音量三段遞增、字齊全、bgmTag；
 //   樂歷階梯 Lv5 那一格 bgmShelf 有名字（ui.js bgmShelfOpen 靠 key 找）
+// 第 I 波 I-2 上場＋耐聽（SPEC-I §3.3、§5.2、§10；C.lineup、C.wear、唱片袋側袋、樂歷 Lv3 那格、字）
+export function lineupProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const L = C.lineup, W = C.wear;
+  if (!ok(L && typeof L === 'object' && W && typeof W === 'object', '沒有 C.lineup／C.wear')) return bad;
+  const int = (x, lo, hi) => Number.isInteger(x) && x >= lo && x <= hi;
+  ok(typeof L.on === 'boolean' && typeof W.on === 'boolean' && L.on === W.on, 'lineup.on、wear.on 布林、兩個一起開關（SPEC-I §A-5：單開上場變簡單、單開耐聽變難）');
+  ok(int(L.n, 3, 6), 'lineup.n 3–6（現在 ' + L.n + '）');
+  ok(int(L.from, 2, 31) && (L.from - 1) % 5 === 0 && int(L.firstRunFrom, L.from, 31) && (L.firstRunFrom - 1) % 5 === 0, 'lineup.from／firstRunFrom 要是一輪的第 1 位（6、11…），firstRunFrom ≥ from');
+  ok(W.from === L.from && W.firstRunFrom === L.firstRunFrom, 'wear.from／firstRunFrom 要＝lineup 的（上場制那一輪起才算耐聽；engine 用 run.lineupFrom 一個數）');
+  ok(int(L.max, L.n, L.n + 3), 'lineup.max（上場＋替補）在 n～n＋3');
+  ok(int(L.slotTalentLv, 2, 10) && typeof L.pen === 'number' && L.pen >= 0 && L.pen <= 10 && int(L.quietMax, 0, 10), 'lineup.slotTalentLv 2–10、pen 0–10、quietMax 0–10');
+  ok(['worn', 'swap'].includes(L.benchMode), "lineup.benchMode 'worn'（聽膩自動頂上，備案）｜'swap'（開打前手動換）");
+  const R = (C.relics || {})[L.slotRelic];
+  ok(R && R.type === 'slot', 'lineup.slotRelic（' + L.slotRelic + '）要是 C.relics 裡 type slot 的配件');
+  ok(int(W.grooves, 3, 12) && int(W.maxLayers, 1, 3) && int(W.star, 1, 2) && int(W.axes, 1, 2) && int(W.back, 0, W.grooves) && W.restFull === true, 'wear：grooves 3–12、maxLayers 1–3、star 1–2、axes 1–2、back 0–grooves、restFull true（坐板凳回滿）');
+  if (E && E.LINEUP) ok(['n', 'from', 'firstRunFrom', 'slotRelic', 'max', 'pen', 'quietMax', 'benchMode'].every(k => E.LINEUP[k] === L[k]) && ['grooves', 'maxLayers', 'star', 'axes', 'back'].every(k => E.WEAR[k] === W[k]),
+    'C.lineup／C.wear 的數字要＝engine LINEUP／WEAR 預設');
+  const K = C.career || {}, lad = (K.ladder || []).find(x => x && x.key === 'bench');
+  ok(lad && lad.lv === L.slotTalentLv && lad.lineupBonus === 1 && lad.needs === 'lineup' && !lad.soon && !lad.ui, 'career.ladder 要有 Lv' + L.slotTalentLv + ' bench（lineupBonus 1、needs lineup；SPEC-I §7.3 d）');
+  ok(((K.ui || {}).ladder || {}).bench, 'career.ui.ladder.bench 名字');
+  const U = L.ui || {}, V = W.ui || {};
+  for (const k of ['title', 'guests', 'auto', 'go', 'slot', 'bench', 'empty', 'onTag', 'newTag', 'bagBtn', 'benchHint', 'benchHintSwap', 'benchPick', 'swapIn', 'swapWhich', 'due', 'quiet', 'first', 'rule', 'firstLoot', 'upHint']) ok(typeof U[k] === 'string' && U[k], 'lineup.ui.' + k);
+  for (const k of ['ear', 'almost', 'worn', 'resting', 'got', 'first', 'rule']) ok(typeof V[k] === 'string' && V[k], 'wear.ui.' + k);
+  ok(String(U.title || '').includes('{n}') && String(U.bagBtn || '').includes('{n}') && String(U.firstLoot || '').includes('${n}'), 'lineup.ui：title、bagBtn 有 {n}；firstLoot 跟 C.waveC.ui.firstLoot 一樣帶 ${n}');
+  ok(String(V.ear || '').includes('{n}') && String(V.ear || '').includes('{max}') && String(V.worn || '').includes('{n}') && String(V.got || '').includes('{album}') && String(V.got || '').includes('{n}'), 'wear.ui：ear 有 {n}{max}、worn 有 {n}、got 有 {album}{n}');
+  ok(!/刮傷|刮痕/.test(JSON.stringify([U, V])), '耐聽不用「刮傷」（聽起來是永久損壞；SPEC-I §A-4）');
+  ok(!/帶上場/.test(JSON.stringify([C.daily || {}, C.seeds || {}])), '種子（唱片櫃帶進一趟）說「帶來」，不說「帶上場」（SPEC-I §A-3）');
+  ok(C.lineupTag === '新', 'C.lineupTag');
+  return bad;
+}
 export function bgmProblems(C) {
   const bad = [];
   const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };

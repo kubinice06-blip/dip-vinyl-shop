@@ -1268,3 +1268,96 @@ body.lb-tune-open{overflow:hidden;}
 .lb-sheet.float.enc .hd .x{height:44px;margin:-6px -8px -6px 0;}   /* ✕ 也 44 px 高（手機點擊 ≥44，§9）；上下負邊距：標題列不跟著長高 */
 /* 唱片櫃來源小籤：切磋贏來的（跟樂歷抽到的同一種樣子） */
 .lb-cv .badge.enc{top:auto;bottom:0;left:0;right:0;text-align:center;background:var(--cream);color:var(--cream-ink);font-size:9px;line-height:14px;letter-spacing:.04em;box-shadow:inset 0 1px 0 var(--gold);}
+
+/* ---------- 第 I 波 I-2：上場＋耐聽（scratchpad v5/wave-i SPEC-I §3.6、§5.4；開關關著這些 class 一個都不出現） ---------- */
+/* 耐聽 7 顆小點（earDots 一處：包包、上場面板、戰利品列、櫃檯賣給老闆）：亮＝還剩的格；聽膩＝後面紅字 −n */
+.lb-ear{display:flex;align-items:center;gap:1px;height:7px;margin-top:3px;line-height:1;flex:none;}
+.lb-ear i{flex:none;width:3px;height:3px;border:1px solid #9a9a9a;background:#fff;}
+.lb-ear i.on{background:var(--ink);border-color:var(--ink);}
+.lb-ear b{margin-left:3px;font:700 9px/7px var(--zh);color:var(--red);letter-spacing:0;}
+/* 小封面（上場列、面板格子）：聽膩＝一道淡灰斜紋＋左上紅字；再一次就膩＝左上一顆黃點 */
+.lu-mini{position:relative;display:block;flex:none;width:30px;height:30px;}
+.lu-mini .lb-cv{width:100%;height:100%;}
+.lu-mini.empty{border:1px dashed #9a9a9a;display:grid;place-items:center;font:700 9px var(--zh);color:var(--gray);background:#fff;}
+.lu-mini.worn::after{content:'';position:absolute;left:0;top:0;right:0;bottom:0;z-index:4;pointer-events:none;background:linear-gradient(135deg,transparent 40%,rgba(190,190,190,.7) 40%,rgba(190,190,190,.7) 58%,transparent 58%);}
+.lu-wn{position:absolute;left:-1px;top:-1px;z-index:5;font:700 9px/12px var(--zh);color:#fff;background:var(--red);padding:0 2px;}
+.lu-al{position:absolute;left:-2px;top:-2px;z-index:5;width:7px;height:7px;border-radius:50%;background:#f0c000;border:1px solid #fff;box-shadow:0 0 0 1px #8a6a00;}
+/* 來客畫面的上場列（來客條與開打鈕之間；點了開包包） */
+.lb-lurow{display:flex;align-items:center;gap:5px;width:100%;min-height:44px;margin:0 0 6px;padding:4px 6px;border:1px solid var(--line,#ccc);background:#faf8f2;font-family:var(--zh);text-align:left;}
+.lb-lurow .lk{flex:none;font:700 11px/1.2 var(--zh);color:var(--gray2,#555);letter-spacing:.04em;}
+.lb-lurow .lk.bn{margin-left:4px;}
+.lb-lurow .cs{display:flex;gap:3px;min-width:0;}
+.lb-night .lu-bh{margin:-3px 0 6px;font-size:10px;line-height:1.3;color:var(--gray2,#555);}
+/* 上場面板（sheet；只有包包格捲） */
+.lb-sheet.lineup{overflow:hidden;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));}
+.lb-sheet.lineup .lu-gs{display:flex;gap:8px;margin:4px 0 6px;flex:none;}
+.lu-g{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.lu-g .hd{position:relative;width:26px;height:26px;border:1px solid var(--ink);display:grid;place-items:center;overflow:hidden;background:#fff;}
+.lu-g.elite .hd{border:3px double var(--ink);}
+.lu-g.boss .hd{border-color:var(--red);}
+.lu-g .hd .st-mk{position:absolute;right:0;top:0;}
+.lu-g .dt{width:8px;height:8px;border-radius:50%;}
+.lu-g .dt.c{background:var(--c);}.lu-g .dt.o{background:var(--o);}.lu-g .dt.h{background:var(--h);}
+.lu-slots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;flex:none;}
+.lu-slots.b1{grid-template-columns:repeat(6,minmax(0,1fr));}
+.lu-slots.b2{grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;}
+.lu-slot{display:flex;flex-direction:column;align-items:center;min-width:0;min-height:44px;padding:3px 1px 2px;border:1px solid transparent;background:none;font-family:var(--zh);color:inherit;}
+.lu-slot .lu-mini{width:40px;height:40px;}
+.lu-slot .stars.sm{margin-top:2px;font-size:9px;letter-spacing:-.04em;}
+.lu-slot .stars.sm b{margin-right:2px;}
+.lu-slot.bn{border:1px dashed #9a9a9a;}
+.lu-slot.sel{border:2px solid var(--gold);background:#fff8e6;}
+.lu-slot.lock{opacity:.72;}
+.lu-slot.empty .lu-mini{width:40px;height:40px;}
+.lb-sheet.lineup .lu-tip{flex:none;margin:4px 0 4px;font-size:11px;line-height:1.4;color:var(--gray2,#555);}
+.lb-sheet.lineup .lu-tip .b{display:block;}
+.lb-sheet.lineup .lu-bag{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px 6px;align-content:start;padding:3px 2px 6px;border-top:1px solid var(--line,#ddd);}
+@media (min-width:420px){ .lb-sheet.lineup .lu-bag{grid-template-columns:repeat(6,minmax(0,1fr));} }
+.lu-bt{display:flex;flex-direction:column;align-items:stretch;min-width:0;padding:0;border:0;background:none;color:inherit;text-align:left;font-family:var(--zh);}
+.lu-bt .cv{position:relative;display:block;}
+.lu-bt .cv .lb-cv{width:100%;height:auto;aspect-ratio:1/1;}
+.lu-bt.on .cv .lb-cv{outline:2px solid var(--ink);outline-offset:1px;}
+.lu-bt.onb .cv .lb-cv{outline:2px dashed var(--ink);outline-offset:1px;}
+.lu-bt .stars.sm{margin-top:2px;font-size:9px;letter-spacing:-.04em;}
+.lu-bt .stars.sm b{margin-right:2px;}
+.lu-tg{position:absolute;left:0;top:0;z-index:4;font:700 9px/13px var(--zh);padding:0 3px;background:var(--ink);color:#fff;letter-spacing:.02em;}
+.lu-tg.bn{background:#fff;color:var(--ink);border:1px dashed var(--ink);line-height:11px;}
+.lu-tg.nw{left:auto;right:0;background:var(--gold);color:#fff;}
+.lb-sheet.lineup .lu-foot{flex:none;margin-top:6px;}
+.lb-sheet.lineup .lu-foot .lb-btn{height:46px;}
+/* 換上場（一輪中途；float） */
+.lb-sheet.float.luswap .lu-in{display:flex;align-items:center;gap:8px;margin:4px 0 8px;font-size:12px;}
+.lb-sheet.float.luswap .lu-in .t{display:flex;flex-direction:column;min-width:0;}
+.lb-sheet.float.luswap .lu-in b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-sheet.float.luswap .lu-slot{border:1px solid var(--line,#ccc);}
+/* 包包面板：上場／替補小籤、休息中、換上場鈕 */
+.lb-ct.lu-on .lb-cv{outline:2px solid var(--ink);outline-offset:1px;}
+.lb-ct .sdtag.lu{color:var(--ink);}
+.lb-ct .sdtag.rest{color:var(--gray2,#555);font-weight:400;white-space:normal;line-height:1.25;}
+.lb-sheet.float.bag .lb-pick .lb-pickb.lu-sw{margin-top:3px;min-height:34px;}
+.lb-sheet.float.bag .lb-ct .lb-ear{justify-content:center;}
+/* 戰利品列：收這張＋換上場兩顆並排；耐聽點 */
+.lt-bb{display:flex;gap:4px;margin-top:auto;}
+.lt-bb .lb-pickb{flex:1 1 0;min-width:0;padding:0 2px;letter-spacing:0;}
+.lt-bb .lb-pickb.lt-sw{background:#fff;}
+/* 領獎畫面：「《…》聽膩了（−1），下一輪換下來休息就好」 */
+.lb-sheet .lb-worn{flex:none;margin:2px 0 0;font:700 11px/1.45 var(--zh);color:#4a4a4a;letter-spacing:.02em;}   /* 不用紅：聽膩不是懲罰，休息一輪就好（SPEC-I §3.4） */
+/* 櫃檯賣給老闆：上場／替補小標 */
+.ec-tcv .ec-lu{position:absolute;right:0;top:0;z-index:2;font:700 9px/13px var(--zh);padding:0 3px;background:var(--ink);color:#fff;}
+.ec-tile .lb-ear{justify-content:center;}
+/* 規則卡：上場＋耐聽一段 */
+.lb-rules .rrel.rlu{text-align:left;line-height:1.5;}
+.lb-help .lb-rules .rrel.rlu{font-size:11px;line-height:1.4;margin-top:4px;}
+/* 對決手牌（duel.js；SPEC-I §3.6 只兩種記號）：聽膩＝封面一道淡灰斜紋＋左上紅字 −n（主打軸屬性鈕旁也寫）；再一次就膩＝左上一顆黃點 */
+.dl .tile .cvw .sk{position:absolute;left:0;top:0;right:0;bottom:0;z-index:2;pointer-events:none;background:linear-gradient(135deg,transparent 40%,rgba(190,190,190,.65) 40%,rgba(190,190,190,.65) 56%,transparent 56%);}
+.dl .tile .cvw .wn{position:absolute;left:0;top:0;z-index:3;font:700 10px/14px var(--zh);color:#fff;background:var(--red);padding:0 3px;pointer-events:none;}
+.dl .tile .cvw .al{position:absolute;left:2px;top:2px;z-index:3;width:9px;height:9px;border-radius:50%;background:#f0c000;border:1px solid #fff;box-shadow:0 0 0 1px #8a6a00;pointer-events:none;}
+.dl .ab .wn{margin-left:2px;font:700 10px var(--zh);color:var(--red);}
+
+/* 矮螢幕（375×548）：來客鏡頭最矮 290 列（門口牆要點得到），上場列多的一列從來客條讓出來：頭像上面的「第 n 位」收起（頂欄、點頭像都還有）、間距收一點 */
+@media (max-height:600px){
+  .lb-night.lu .nc .ps{display:none;}
+  .lb-night.lu .nrow{margin-bottom:4px;}
+  .lb-night.lu .lb-lurow{margin-bottom:4px;}
+  .lb-night.lu .lu-bh{display:none;}   /* 替補那句放不下：上場列的讀屏字、上場面板照寫 */
+}

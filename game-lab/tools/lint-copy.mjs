@@ -640,6 +640,34 @@ if (C.encore && C.encore.ui) {
     }
   }
 }
+// 第 I 波 I-2 上場＋耐聽（C.lineup.ui、C.wear.ui；lineupTag；scratchpad v5/wave-i SPEC-I §3、§5、§A-3、§A-4）：畫面字、老闆第一次那兩句、規則卡那段都 ≤30（不算 {x}）；
+//   「刮傷」不准出現在上場／耐聽的字（§A-4：說「聽膩」「休息一輪就好」，不像永久損壞）；「帶上場」只准出現在 C.lineup 的字（§A-3：種子從唱片櫃帶進一趟說「帶來」；
+//   程式檔的字串也不准有「帶上場」）。LINES-REVIEW 節「上場・畫面字」「耐聽・畫面字」
+if (C.lineup && C.lineup.ui) {
+  const one = (where, v, scene, who) => {
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.lineupTag)) err(where, '沒有 tag（lineupTag）');
+    if (len(v.replace(/\$?\{\w+\}/g, '')) > 30) err(where, '超過 30 字（不算 {x}）：' + v);
+    if (/刮傷/.test(v)) err(where, '上場／耐聽的字不准有「刮傷」（SPEC-I §A-4：聽膩、休息一輪就好）→ ' + v);
+    add({ scene, where, who: who || '（畫面字）', key: where.split('.').pop(), text: v, tag: C.lineupTag });
+  };
+  for (const [k, v] of Object.entries(C.lineup.ui)) one('lineup.ui.' + k, v, '上場・畫面字（上場面板、來客畫面上場列、包包、戰利品列、吐司、規則卡；{n}{album} 由畫面代入）', k === 'first' ? '老闆' : null);
+  for (const [k, v] of Object.entries((C.wear && C.wear.ui) || {})) one('wear.ui.' + k, v, '耐聽・畫面字（耐聽點的讀屏字、手牌記號、休息中、領獎小字、規則卡）', k === 'first' ? '老闆' : null);
+}
+{
+  const walkC = (o, p, depth) => {
+    if (depth > 8 || o == null) return;
+    if (typeof o === 'string') { if (o.includes('帶上場') && !/^lineup\./.test(p)) err('content.' + p, '「帶上場」只准出現在 C.lineup 的字（SPEC-I §A-3：種子說「帶來」）→ ' + o.slice(0, 60)); return; }
+    if (Array.isArray(o)) { o.forEach((v, k) => walkC(v, p + '[' + k + ']', depth + 1)); return; }
+    if (typeof o === 'object') for (const [k, v] of Object.entries(o)) { if (k === 'cards') continue; walkC(v, p ? p + '.' + k : k, depth + 1); }
+  };
+  walkC(C, '', 0);
+  for (const [rel, kind] of FILES) {
+    if (rel === 'content.js' || SKIP.has(rel)) continue;
+    const src = read(path.join(LAB, rel)); if (src == null) continue;
+    for (const { s: x, line } of (kind === 'html' ? htmlStrings(src) : jsStrings(src))) if (x && x.includes('帶上場')) err(rel + ':' + line, '「帶上場」只准出現在 C.lineup 的字（SPEC-I §A-3）→ ' + x.slice(0, 60));
+  }
+}
 // 活店（SPEC-H §5.7、§5.8、§6.2；棒 3b，2026-11-18）：C.chat（熟客、路人）、C.ownerChat（老闆）、C.crowdUi（介面字）、C.crowdFact 的填空字。
 //   每句 add({ scene:'活店・<名字>・<分類中文>', where:'chat.<id>', who:<名字>, key:<id>（＋出場條件）, text, tag })——LINES-REVIEW 的分節就是 scene。
 //   錯誤：tag 不是「新」、id 重複、who 不在名冊、「」不成對、空格不在白名單；手寫句有拉丁字母／阿拉伯數字／《》／兩個以上中文數字＋年／事實字／寫死流派名；
