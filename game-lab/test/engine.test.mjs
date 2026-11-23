@@ -6240,5 +6240,255 @@ section('37 第 I 波 I-3a 市集殼（SPEC-I §6.2、§6.3、§6.6、§10；SPE
     ok(tn > 0 && tr === tn, 'market: trade closes itself once every offered card is bought (stays open after one)', { tn, tr }); }
 });
 
+// 第 I 波 I-3b 市集新攤（scratchpad v5/wave-i SPEC-I §6.3、§6.6、§10；契約 wave-i/build3b/CONTRACT.md）：newStalls（content.waveC.stall.fair.newStalls）關著＝I-3a 逐字；
+//   開著的拷貝驗唱片醫生、熱美式／高粱、轉蛋機；算命攤的心情題（店主 11-23，題庫＝repo 根目錄 mood-quiz.json／mood-bank.json，不看 newStalls）
+section('38 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.6、§10；契約 wave-i/build3b/CONTRACT.md）：newStalls 關逐字、唱片醫生（第 2 個市集起、洗、重壓只壓新到的、每張 1 次、每趟 3 張、一次兩個動作、清潔墊預設最膩那張）、熱美式／高粱（幾位、同時一杯、advance 才扣、說情不扣、高粱第一次被剋多扣取大不相加、preview＝resolve）、轉蛋六格、算命心情題、fixMarket、存讀檔、錯的不改 run、策略', () => {
+  EN.setCtx(null);
+  const J = x => JSON.stringify(x);
+  const fairOf = c => c.waveC.stall.fair;
+  const setNS = (c, on, extra) => Object.assign({}, c, { waveC: Object.assign({}, c.waveC, { stall: Object.assign({}, c.waveC.stall, { mode: 'market', fair: Object.assign({}, fairOf(c), { newStalls: on }, extra || {}) }) }) });
+  const LUW = c => Object.assign({}, c, { lineup: Object.assign({}, C0.lineup, { on: true, from: 6 }), wear: Object.assign({}, C0.wear, { on: true }) });
+  const K0 = setNS(CW, false), K1 = setNS(CW, true), KL = setNS(LUW(CW), true), KL0 = setNS(LUW(CW), false);
+  const strip = c => { const F = Object.assign({}, fairOf(c)); delete F.newStalls; delete F.doctor; delete F.gacha; F.drinks = { tea: F.drinks.tea };
+    return Object.assign({}, c, { waveC: Object.assign({}, c.waveC, { stall: Object.assign({}, c.waveC.stall, { fair: F }) }) }); };
+  const newM = (sk, K, o) => { const r = EN.newRun(K, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K, EN.bargainPolicy(r, K)); return r; };
+  const toStall = (r, K, pos) => {
+    for (let g = 0; g < 900 && !r.over; g++) {
+      const st = EN.nextStep(r);
+      if (st === 'stall' && r.pos >= pos) return r;
+      if (r.pending) { const ch = EN.cPolicy(r, K, {}); const x = EN.choose(r, K, ch); if (!ok(x.ok, 'toStall choice ok', { ch, err: x.error })) break; continue; }
+      if (!r.duel) for (const ch of EN.lineupPrep(r, K)) EN.choose(r, K, ch);
+      if (!r.pending && !r.duel && r.lineupDue && EN.runPolicy(r, K)) { EN.choose(r, K, EN.runPolicy(r, K)); continue; }
+      fwin(r, K);
+    }
+    return r;
+  };
+  const act = (r, K, a, x) => EN.choose(r, K, Object.assign({ type: 'stallAct', act: a }, x || {}));
+  const enter = (r, K, kind, x) => EN.choose(r, K, Object.assign({ type: 'stallEnter', kind }, x || {}));
+  const force = (r, kind) => { const p = r.pending; if (!p.tiles.includes(kind)) p.tiles.push(kind); p.cur = null; p.went = {}; p.acts = {}; p.seen = {}; p.left = p.slots = 3; };
+
+  // ---- newStalls 關＝I-3a 逐字：跟沒有 I-3b 鍵的 content 跑出來的 run 一模一樣；格子沒有唱片醫生、飲料只有冬瓜茶、小物攤沒有轉蛋機 ----
+  { let same = 0, n = 0, doc = 0, cups = 0, gach = 0;
+    for (const [A, B] of [[K0, strip(K0)], [KL0, strip(KL0)]]) for (let s = 0; s < (QUICK ? 2 : 6); s++) {
+      const a = toStall(newM('ns-off-' + s, A), A, 36), b = toStall(newM('ns-off-' + s, B), B, 36); n++;
+      if (J(a) === J(b) && !('plus' in a) && !('pressN' in a) && !('drink' in a) && !('moodSeen' in a) && !(a.stats.c.mk && a.stats.c.mk.ns)) same++;
+      if (a.pending && a.pending.tiles.includes('doctor')) doc++;
+      if (a.pending) { force(a, 'snack'); enter(a, A, 'snack'); if (a.pending.cur && a.pending.cur.drinks.length !== 1) cups++; act(a, A, 'back');
+        force(a, 'gear'); enter(a, A, 'gear'); if (a.pending.cur && 'gacha' in a.pending.cur) gach++; }
+    }
+    ok(same === n && doc === 0 && cups === 0 && gach === 0 && !EN.nsOn(K0) && EN.nsOn(K1), 'newStalls off: runs identical to content without the I-3b keys; no doctor / coffee / sorghum / gacha; no new run keys', { same, n, doc, cups, gach }); }
+
+  // ---- 唱片醫生：每一趟第 2 個市集起才抽得到（第一個市集固定組沒有）；照權重出現 ----
+  { let first = 0, later = 0, at = 0;
+    for (let s = 0; s < (QUICK ? 6 : 16); s++) {
+      const r = newM('ns-doc-' + s, KL, { ace: TIERS[s % 3] });
+      for (let g = 0; g < 3000 && !r.over && r.pos <= 46; g++) {
+        if (EN.isMarket(r) && !r.pending.cur && !r.pending._seen) { r.pending._seen = 1; const k = r.stats.c.mk.sess; if (r.pending.tiles.includes('doctor')) { if (k <= 1) first++; else later++; } at++; delete r.pending._seen; }
+        if (r.pending) { const ch = EN.cPolicy(r, KL, {}); const x = EN.choose(r, KL, ch); if (!x.ok) { ok(false, 'doctor draw run ok', { ch, e: x.error }); break; } continue; }
+        for (const ch of EN.lineupPrep(r, KL)) EN.choose(r, KL, ch);
+        if (r.lineupDue && !r.pending && EN.runPolicy(r, KL)) { EN.choose(r, KL, EN.runPolicy(r, KL)); continue; }
+        fwin(r, KL);
+      }
+    }
+    ok(first === 0 && later > 0, 'doctor never in the first market of a run; shows up from the 2nd market on', { first, later, at }); }
+
+  // ---- 唱片醫生：清潔墊預設最膩那張、洗（$800、聽膩全清、扣時段）、重壓（只壓這一輪新到的、挑一軸 +1、$2,000、每張 1 次、每趟 3 張）、一次兩個動作自動關；錯的不改 run ----
+  { const r = toStall(newM('ns-dr', KL), KL, 16), p = r.pending; force(r, 'doctor'); r.money = 99999;
+    const bag = r.bag.slice(), worn = bag[0], worn2 = bag[1], fresh = bag.find(id => id !== worn && id !== worn2 && ATTRS.some(a => EN.star(C.cards[id] || CW.cards[id], a) < 5));
+    r.wear = {}; r.wear[worn2] = { g: 3, n: 0 }; r.wear[worn] = { g: 1, n: 2 }; r.lineupFresh = [fresh]; delete r.plus; delete r.pressN;   // 前面幾個市集照策略可能壓過
+    ok(enter(r, KL, 'doctor').ok && p.left === 3 && p.cur.kind === 'doctor' && p.cur.pick === worn && J(p.cur.worn) === J([worn, worn2]) && J(p.cur.fresh) === J([fresh]) && p.cur.n === 0 && p.cur.max === 2 && p.cur.pressLeft === 3,
+      'enter doctor: no slot; mat = most worn; worn list most-worn first; fresh = lineupFresh', p.cur);
+    const b0 = J(r);
+    for (const [ch, err] of [[{ act: 'wash', cardId: fresh }, 'notWorn'], [{ act: 'press', cardId: worn, attr: 'c' }, 'notFresh'], [{ act: 'press', cardId: fresh, attr: 'x' }, 'badAttr'], [{ act: 'polish' }, 'badAct']])
+      eq(act(r, KL, ch.act, ch).error, err, 'doctor error ' + J(ch));
+    r.money = 500; eq(act(r, KL, 'wash', { cardId: worn }).error, 'money', 'wash needs $800'); r.money = 99999;
+    eq(J(r), b0, 'doctor errors leave the run untouched');
+    const w = act(r, KL, 'wash', { cardId: worn });
+    ok(w.ok && !(worn in r.wear) && r.wear[worn2] && r.money === 99999 - 800 && p.left === 2 && p.went.doctor === 1 && p.cur && p.cur.n === 1 && p.cur.pick === worn2 && w.effects.some(e => e.wash === worn && e.layers === 2 && e.spend === 800) && w.effects.some(e => e.slot === 2),
+      'wash: wear cleared, $800, first action spends a slot, stays open (one more action)', w.effects);
+    const c = CW.cards[fresh], ax = ATTRS.find(a => EN.star(c, a) < 5), s0 = EN.star(c, ax), m0 = r.money;
+    const x = act(r, KL, 'press', { cardId: fresh, attr: ax });
+    ok(x.ok && r.plus && J(r.plus[fresh]) === J({ c: ax === 'c' ? 1 : 0, o: ax === 'o' ? 1 : 0, h: ax === 'h' ? 1 : 0 }) && r.pressN === 1 && r.money === m0 - 2000 && p.cur === null && p.left === 2 && x.effects.some(e => e.press === fresh && e.attr === ax && e.n === 1) && x.effects.some(e => e.close === 'doctor'),
+      'press: +1 on the chosen axis (run.plus), pressN 1, $2,000; second action closes the stall', x.effects);
+    const pd = EN.playerDef(KL, r, { wear: true }), pc = pd.bag.find(k => k.id === fresh);
+    ok(pc && EN.star(pc, ax) === s0 + 1 && pc.pressed === ax && EN.star(CW.cards[fresh], ax) === s0, 'playerDef: pressed card +1 (copy; content card untouched), pressed = axis', pc);
+    const lu = EN.luScoreOf(r, KL, fresh, ['c', 'o', 'h']), r2 = JSON.parse(J(r)); delete r2.plus; ok(lu > EN.luScoreOf(r2, KL, fresh, ['c', 'o', 'h']), 'lineup score counts the press');
+    // 再進一次（新的一輪）：壓過的不能再壓；每趟 3 張
+    const q = JSON.parse(J(r)); force(q, 'doctor'); q.lineupFresh = [fresh, worn2]; q.wear = {};
+    ok(enter(q, KL, 'doctor').ok && J(q.pending.cur.fresh) === J([worn2]), 'pressed card not offered again');
+    eq(act(q, KL, 'press', { cardId: fresh, attr: ax }).error, 'pressed', 'press twice → pressed');
+    q.pressN = 3; q.pending.cur.pressLeft = 0; eq(act(q, KL, 'press', { cardId: worn2, attr: 'c' }).error, 'pressMax', '4th press in a run → pressMax');
+    // 主打軸滿 5 星那軸不能壓
+    const five = Object.keys(CW.cards).find(id => !CW.cards[id].tier && EN.star(CW.cards[id], 'c') === 5 && !q.bag.includes(id));
+    if (five) { const z = JSON.parse(J(r)); force(z, 'doctor'); z.bag.push(five); z.lineupFresh = [five]; z.wear = {}; enter(z, KL, 'doctor'); eq(act(z, KL, 'press', { cardId: five, attr: 'c' }).error, 'maxStar', 'axis already 5 → maxStar'); }
+    // 聽膩＋重壓：先加星再算聽膩（主打軸照加星後）
+    const y = JSON.parse(J(r)); y.wear[fresh] = { g: 0, n: 1 }; const wc = EN.wornCard(KL, y, fresh), top = EN.topAttr(EN.pressCopy(CW.cards[fresh], y.plus[fresh], 5));
+    ok(wc.pressed === ax && wc.worn === 1 && wc.wornAxis === top && EN.star(wc, top) === Math.max(Math.min(1, EN.star(EN.pressCopy(CW.cards[fresh], y.plus[fresh], 5), top)), EN.star(EN.pressCopy(CW.cards[fresh], y.plus[fresh], 5), top) - 1), 'wornCard: press first, then wear on the pressed card’s top axis', wc);
+    // 沒有可做的（沒膩、沒新到）＝打開就只能回攤位；回攤位不扣
+    const e = JSON.parse(J(r)); force(e, 'doctor'); e.wear = {}; e.lineupFresh = [];
+    ok(enter(e, KL, 'doctor').ok && e.pending.cur.pick === null && act(e, KL, 'done').ok && e.pending.left === 3 && !e.pending.went.doctor && e.pending.seen.doctor, 'nothing to do: done = back, no slot'); }
+
+  // ---- 飲料攤：三杯（冬瓜茶、熱美式、高粱）；熱美式接下來 3 位底氣 +1、高粱 2 位品味 +1；同時一杯（新的換舊的）；advance 才扣（說情重打不扣） ----
+  { const r = toStall(newM('ns-drink', KL), KL, 11), p = r.pending; force(r, 'snack'); r.money = 50000;
+    ok(enter(r, KL, 'snack').ok && J(p.cur.drinks.map(d => d.kind)) === J(['tea', 'coffee', 'sorghum']) && J(p.cur.drinks[1]) === J({ kind: 'coffee', def: 1, n: 3, price: 1500 }) && J(p.cur.drinks[2]) === J({ kind: 'sorghum', atk: 1, n: 2, pen: 1, price: 2000 }), 'snack: three cups', p.cur.drinks);
+    const pd0 = EN.playerDef(KL, r, {});
+    const x = act(r, KL, 'drink', { kind: 'coffee' });
+    ok(x.ok && J(r.drink) === J({ kind: 'coffee', left: 3 }) && r.money === 48500 && p.cur === null && p.left === 2 && x.effects.some(e => e.drink === 'coffee' && e.left === 3 && e.spend === 1500), 'coffee: run.drink {coffee, 3}, $1,500, closes', x.effects);
+    const pd1 = EN.playerDef(KL, r, {}); ok(pd1.def === pd0.def + 1 && pd1.atk === pd0.atk && pd1.drink === 'coffee' && !pd1.drinkPen, 'coffee: def +1 in playerDef');
+    const gs = EN.roundGuests(r, KL); ok(gs.filter(g => g.drink === 'coffee').map(g => g.pos).join() === [r.pos, r.pos + 1, r.pos + 2].join(), 'roundGuests: cup on the next 3 guests', gs.map(g => g.drink || '-'));
+    // 新的換舊的
+    const t = JSON.parse(J(r)); force(t, 'snack'); enter(t, KL, 'snack'); const y = act(t, KL, 'drink', { kind: 'sorghum' });
+    ok(y.ok && J(t.drink) === J({ kind: 'sorghum', left: 2 }) && y.effects.some(e => e.replaced === 'coffee'), 'sorghum replaces coffee (one drink at a time)', y.effects);
+    const pdS = EN.playerDef(KL, t, {}); ok(pdS.atk === pd0.atk + 1 && pdS.def === pd0.def && pdS.drinkPen === 1, 'sorghum: atk +1, drinkPen 1');
+    // 冬瓜茶不動杯子
+    const u = JSON.parse(J(r)); force(u, 'snack'); u.hp = 1; enter(u, KL, 'snack'); act(u, KL, 'drink', { kind: 'tea' }); ok(J(u.drink) === J(r.drink) && u.hp > 1, 'tea heals and does not touch the active cup');
+    // 打掉三位：3 → 2 → 1 → null；輸了等說情：不扣
+    EN.choose(r, KL, { type: 'stallLeave' }); for (const ch of EN.lineupPrep(r, KL)) EN.choose(r, KL, ch); if (r.lineupDue && EN.runPolicy(r, KL)) EN.choose(r, KL, EN.runPolicy(r, KL));
+    const L = [];
+    for (let k = 0; k < 3; k++) {
+      if (k === 1) {                                                    // 第二位先輸一場（說情重打）
+        const f = EN.startFight(r, KL, {}); let g = 0; while (!f.duel.over && g++ < 12) EN.resolveTurn(f.duel, EN.legalActions(f.duel)[0], { debugOutcome: { kind: 'countered', toE: 0, toP: 99 } });
+        EN.finishFight(r, KL); L.push(r.pending && r.pending.type === 'retry' ? 'retry:' + (r.drink && r.drink.left) : 'noRetry'); EN.choose(r, KL, { type: 'retry' });
+      }
+      fwin(r, KL); for (let g = 0; g < 6 && r.pending; g++) EN.choose(r, KL, EN.cPolicy(r, KL, {}));
+      L.push(r.drink ? r.drink.left : null);
+    }
+    eq(L, [2, 'retry:2', 1, null], 'coffee counts down per guest beaten (advance); a lost fight waiting for retry does not');
+    ok(!r.drink, 'after 3 guests the cup is gone'); }
+
+  // ---- 高粱：每場第一次被剋多扣 1（preview＝resolve；第二次不扣；跟冷門代價同一步取大不相加）----
+  { const S3 = [mkCard('s1', 1, 4, 1), mkCard('s2', 4, 1, 1), mkCard('s3', 1, 1, 4)], E5 = [mkCard('f1', 5, 1, 1), mkCard('f2', 5, 1, 1), mkCard('f3', 5, 1, 1), mkCard('f4', 5, 1, 1)];
+    const mk = pen => { const d = rig([], S3, E5, { pHp: 30 }); if (pen) { d.p.drinkPen = 1; d.p.drinkHit = false; d.drinkNote = '高粱後勁：多扣 {n}'; } return d; };
+    const a = mk(false), b = mk(true), act0 = { i: 2, attr: 'h' }, eS = { attr: 'c', star: 5 };   // 硬 4 被經 5 剋
+    const pa = EN.preview(a, act0, eS), pb = EN.preview(b, act0, eS);
+    ok(pa.kind === 'countered' && pb.toP === pa.toP + 1 && pb.notes.some(n => n.drink === 'sorghum' && n.n === 1 && n.text === '高粱後勁：多扣 1'), 'preview: first countered hand +1 with a note', { pa, pb });
+    const cl = clashOf(EN.resolveTurn(b, act0)); ok(cl.toP === pb.toP && b.p.drinkHit === true && b.stats.drinkPen === 1, 'resolve = preview; drinkHit set', cl);
+    const pb2 = EN.preview(b, { i: 0, attr: 'h' }, eS); ok(!pb2 || pb2.kind !== 'countered' || !pb2.notes.some(n => n.drink), 'second countered hand: no extra');
+    // 冷門代價（counteredCost 1）＋高粱 1 → 取大＝1（不相加）
+    const c = mk(true); c.p.fac = 'pearl'; c.p.fx = { counteredCost: 1 }; c.p.facN = {}; c.facNotes = {}; const d0 = mk(false); d0.p.fac = 'pearl'; d0.p.fx = { counteredCost: 1 }; d0.p.facN = {}; d0.facNotes = {};
+    const pc = EN.preview(c, act0, eS), p0 = EN.preview(d0, act0, eS); ok(pc.toP === p0.toP && !pc.notes.some(n => n.drink), 'pearl countered cost 1 + sorghum 1 → max, not sum', { pc: pc.toP, p0: p0.toP });
+    // 真的開打（startFight／fightSetup）：preview＝resolve 每一手每個動作
+    let checked = 0, bad = 0, pens = 0;
+    for (let s = 0; s < (QUICK ? 8 : 30); s++) {
+      const r = toStall(newM('ns-pen-' + s, KL, { ace: TIERS[s % 3] }), KL, 11); if (!EN.isMarket(r)) continue;
+      r.drink = { kind: 'sorghum', left: 2 }; EN.choose(r, KL, { type: 'stallLeave' }); for (const ch of EN.lineupPrep(r, KL)) EN.choose(r, KL, ch); if (r.lineupDue && EN.runPolicy(r, KL)) EN.choose(r, KL, EN.runPolicy(r, KL));
+      const f = EN.startFight(r, KL, {}), duel = f.duel, R = lcg(s + 9); if (!(duel.p.drinkPen === 1)) { bad++; continue; }
+      let g = 0;
+      while (!duel.over && g++ < 12) {
+        const acts = EN.legalActions(duel), eSide = { i: duel.plan.idx, attr: duel.plan.attr };
+        for (const a1 of acts) { const pv = EN.preview(duel, a1, eSide), c2 = JSON.parse(J(duel)), cl2 = clashOf(EN.resolveTurn(c2, a1)); checked++; if (J(sig(pv)) !== J(sig(cl2))) bad++; }
+        EN.resolveTurn(duel, acts[Math.floor(R() * acts.length)]);
+      }
+      pens += duel.stats.drinkPen | 0; if ((duel.stats.drinkPen | 0) > 1) bad++;
+    }
+    ok(bad === 0 && checked > 50 && pens > 0, 'sorghum in a real fight: preview = resolve every action; at most one extra per fight', { checked, bad, pens }); }
+
+  // ---- 轉蛋機：第 1 次 $1,000、第 2 次 $2,000、最多 2 次；六格（固定 cells 各驗一格）；買配件後還能轉＝不自動關 ----
+  { const got = {};
+    for (const cell of EN.GACHA_CELLS) {
+      const K = setNS(LUW(CW), true, { gacha: Object.assign({}, fairOf(KL).gacha, { cells: [cell] }) });
+      const r = toStall(newM('ns-g-' + cell, K), K, 11), p = r.pending; force(r, 'gear'); r.money = 50000; r.hp = Math.max(4, r.maxHp - 4);
+      const bag0 = r.bag.length, rel0 = r.relics.slice(), h0 = r.hp, cash0 = r.money;
+      ok(enter(r, K, 'gear').ok && J(p.cur.gacha) === J({ n: 0, price: [1000, 2000], last: null }), 'gear: gacha machine', p.cur.gacha);
+      const x = act(r, K, 'gacha'), e = x.effects.find(z => z.gacha === 0) || {};
+      if (cell === 'gold') got[cell] = x.ok && r.bag.length === bag0 + 1 && e.card && r.bag.includes(e.card) && r.lineupFresh.includes(e.card);
+      if (cell === 'cash') got[cell] = x.ok && r.money === cash0 - 1000 + 3000 && e.cash === 3000;
+      if (cell === 'heal') got[cell] = x.ok && r.hp === r.maxHp && e.hp === r.maxHp - h0;
+      if (cell === 'relic') got[cell] = x.ok && (e.relic ? r.relics.length === rel0.length + 1 && r.relics.includes(e.relic) : e.cash === 2000);
+      if (cell === 'bump') { const g1 = EN.guestDef(r, K, r.order[r.idx], r.pos); got[cell] = x.ok && e.bump && e.bump.pos === r.pos && g1.omen && r.fortune.some(f => f.src === 'gacha' && f.pos === r.pos) && EN.roundGuests(r, K).find(g => g.pos === r.pos).omen; }
+      if (cell === 'ouch') got[cell] = x.ok && r.hp === Math.max(1, h0 - 3) && e.hp === r.hp - h0;
+      ok(p.cur && p.cur.gacha.n === 1 && p.left === 2 && J(p.cur.gacha.last) === J(e), cell + ': first spin $1,000, stays open, last = effect');
+      const m1 = r.money, y = act(r, K, 'gacha');
+      ok(y.ok && r.money <= m1 - 2000 + 3000 && (p.cur === null || p.cur.gacha.n === 2), cell + ': second spin $2,000');
+      if (p.cur) eq(act(r, K, 'gacha').error, 'gachaMax', cell + ': third spin → gachaMax');
+    }
+    ok(EN.GACHA_CELLS.every(c => got[c]), 'six gacha cells', got);
+    // 錢不夠、買配件後還能轉、一次只能買一件
+    const r = toStall(newM('ns-g2', KL), KL, 11), p = r.pending; force(r, 'gear'); r.money = 500; enter(r, KL, 'gear');
+    const b0 = J(r); eq(act(r, KL, 'gacha').error, 'money', 'gacha needs $1,000'); eq(J(r), b0, 'error leaves the run untouched');
+    r.money = 50000; r.relics = r.relics.slice(0, 1);
+    const rid = (p.cur.relics || [])[0];
+    if (rid) { const z = act(r, KL, 'buyRelic', { relicId: rid }); ok(z.ok && p.cur && p.cur.bought === rid && p.left === 2, 'buy a relic: stall stays open (gacha left)');
+      eq(act(r, KL, 'buyRelic', { relicId: (p.cur.relics || [])[0] || 'x' }).error, 'relicOnce', 'one relic per visit');
+      act(r, KL, 'gacha'); const w = act(r, KL, 'gacha'); ok(w.ok && p.cur === null && w.effects.some(e => e.close === 'gear'), 'relic bought + 2 spins → closes'); } }
+
+  // ---- 凶籤＋轉蛋同一位：品味疊加 ----
+  { const r = toStall(newM('ns-om', KL), KL, 11), id = r.order[r.idx], g0 = EN.guestDef(r, KL, id, r.pos);
+    r.fortune = [{ slip: 'omen', round: r.round, pos: r.pos, id, atk: 1 }, { slip: 'omen', round: r.round, pos: r.pos, id, atk: 1, src: 'gacha' }];
+    const g2 = EN.guestDef(r, KL, id, r.pos); r.fortune = [r.fortune[0]]; const g1 = EN.guestDef(r, KL, id, r.pos);
+    ok(g1.atk === g0.atk + 1 && g2.atk === g0.atk + 2 && g2.omen, 'omen + gacha bump on the same guest: +2', [g0.atk, g1.atk, g2.atk]); }
+
+  // ---- 存讀檔：醫生／小物攤開著、喝著熱美式 → JSON 存讀後接著做一模一樣；fixMarket 修 I-3b 的鍵 ----
+  { const r = toStall(newM('ns-save', KL), KL, 16); force(r, 'doctor'); r.money = 60000; r.wear = {}; r.wear[r.bag[0]] = { g: 1, n: 1 }; r.lineupFresh = [r.bag[1]]; r.drink = { kind: 'coffee', left: 2 };
+    enter(r, KL, 'doctor'); const r2 = JSON.parse(J(r));
+    ok(EN.fixMarket(r2, KL) === false, 'fixMarket leaves a good I-3b run alone');
+    for (const rr of [r, r2]) { act(rr, KL, 'wash', { cardId: rr.bag[0] }); act(rr, KL, 'press', { cardId: rr.bag[1], attr: 'o' }); force(rr, 'gear'); enter(rr, KL, 'gear'); act(rr, KL, 'gacha'); EN.choose(rr, KL, { type: 'stallLeave' }); }
+    eq(J(r2), J(r), 'save／load mid-market → same continuation');
+    const b = JSON.parse(J(toStall(newM('ns-fix', KL), KL, 16))); b.plus = { [b.bag[1]]: { c: 0, o: 'x', h: -1 }, nope: { c: 1 } }; b.pressN = -2; b.drink = { kind: 'beer', left: 2 }; b.moodSeen = ['q_001', 3, 'q_001'];
+    force(b, 'doctor'); b.pending.cur = { kind: 'doctor', key: 'k', n: 'x' }; b.pending.moodAns = [{ q: 'q_002', o: 1 }, 'bad'];
+    ok(EN.fixMarket(b, KL) === true, 'fixMarket repairs I-3b keys');
+    ok(J(b.plus) === '{}' && b.pressN === 0 && b.drink === null && J(b.moodSeen) === J(['q_001']) && b.pending.cur.n === 0 && Array.isArray(b.pending.cur.worn) && J(b.pending.moodAns) === J([{ q: 'q_002', o: 1 }, null]),
+      'plus pruned, pressN from plus, bad drink → null, moodSeen strings, doctor mat recomputed, moodAns shape', { plus: b.plus, pressN: b.pressN, drink: b.drink, ms: b.moodSeen, ma: b.pending.moodAns }); }
+
+  // ---- 算命攤心情題（題庫＝repo 根目錄兩個 JSON；不看 newStalls）：每翻一張先問一題（雜湊、不重複）、答案記在 pending.moodAns、問過的記 run.moodSeen；三題 → 心情＋卡池一張＋段落原文 ----
+  { const Q = JSON.parse(fs.readFileSync(path.join(HERE, '../../mood-quiz.json'), 'utf8')), B = JSON.parse(fs.readFileSync(path.join(HERE, '../../mood-bank.json'), 'utf8'));
+    const P = EN.moodPrep(Q); ok(P && P.rows.length === Q.questions.length && P.moods.length === 10 && EN.moodPrep(Q) === P, 'moodPrep: every question usable, 10 moods (balance separate), cached');
+    eq([EN.moodOf(Q, []), EN.moodOf(Q, [{ q: 'q_001', o: 1 }])], ['balance', 'balance'], 'moodOf: weak signal → balance');
+    const ix = EN.moodIndex(C0), inPool = Object.keys(B.passages).filter(k => ix[k]);
+    ok(inPool.length >= 80 && inPool.every(k => !C0.cards[ix[k]].tier), 'bank ∩ game pool (non-apex)', inPool.length);
+    let asked = 0, dup = 0, done = 0, textOk = 0, n = 0, moods = {};
+    for (let s = 0; s < (QUICK ? 6 : 20); s++) {
+      const K = s % 2 ? K0 : KL, r = toStall(newM('ns-mood-' + s, K), K, 6), p = r.pending; n++; r.money = 50000;
+      if (!p.tiles.includes('fortune')) force(r, 'fortune');
+      const q0 = EN.moodAsk(r, Q, 0); ok(q0 && J(EN.moodAsk(r, Q, 0)) === J(q0), 'moodAsk deterministic');
+      const e = enter(r, K, 'fortune', { ans: { q: q0.id, o: s % 4 } }); if (!e.ok) continue;
+      const q1 = EN.moodAsk(r, Q, 1); act(r, K, 'flip', { ans: { q: q1.id, o: (s + 1) % 4 } });
+      const q2 = EN.moodAsk(r, Q, 2); act(r, K, 'flip', { ans: { q: q2.id, o: (s + 2) % 4 } });
+      asked += 3; if (new Set([q0.id, q1.id, q2.id]).size !== 3) dup++;
+      const res = EN.moodResult(r, C0, Q, B, { owned: () => false, want: [] });
+      if (res && J(p.moodAns) === J([{ q: q0.id, o: s % 4 }, { q: q1.id, o: (s + 1) % 4 }, { q: q2.id, o: (s + 2) % 4 }]) && J(r.moodSeen) === J([q0.id, q1.id, q2.id])) done++;
+      if (res && res.mood === EN.moodOf(Q, p.moodAns) && res.name === Q.moods[res.mood].name && B.passages[res.key][res.borrowed || res.mood][res.pi] === res.passage && ix[res.key] === res.id && !C0.cards[res.id].tier) textOk++;
+      if (res) moods[res.mood] = (moods[res.mood] || 0) + 1;
+      const q3 = EN.moodAsk(r, Q, 0); if ([q0.id, q1.id, q2.id].includes(q3.id)) dup++;
+    }
+    ok(dup === 0 && done === n && textOk === n, 'mood: three different questions (also vs run.moodSeen), answers recorded, result = classify + pool card + passage verbatim', { dup, done, textOk, n, moods });
+    // 沒答滿三題＝沒心情；不給 ans（sim）＝不多鍵
+    const r = toStall(newM('ns-mood-x', KL), KL, 6); force(r, 'fortune'); r.money = 50000; enter(r, KL, 'fortune');
+    ok(EN.moodResult(r, C0, Q, B, {}) === null && !('moodAns' in r.pending) && !('moodSeen' in r), 'no answers: no moodAns / moodSeen, no result');
+    act(r, KL, 'flip', { ans: { q: 'q_003', o: 2 } }); ok(J(r.pending.moodAns) === J([null, { q: 'q_003', o: 2 }]) && EN.moodResult(r, C0, Q, B, {}) === null, 'answer only some flips: no mood');
+    act(r, KL, 'flip', { ans: { q: '', o: 9 } }); ok(r.pending.moodAns.length === 2, 'bad ans ignored');
+    // 想要清單的偏好：擁有的、已在想要清單的先不挑（全都是才挑）
+    const r3 = toStall(newM('ns-mood-w', KL), KL, 6); force(r3, 'fortune'); r3.money = 50000;
+    const qa = EN.moodAsk(r3, Q, 0); enter(r3, KL, 'fortune', { ans: { q: qa.id, o: 0 } }); const qb = EN.moodAsk(r3, Q, 1); act(r3, KL, 'flip', { ans: { q: qb.id, o: 0 } }); const qc = EN.moodAsk(r3, Q, 2); act(r3, KL, 'flip', { ans: { q: qc.id, o: 0 } });
+    const r0 = EN.moodResult(r3, C0, Q, B, {}), r1 = r0 && EN.moodResult(r3, C0, Q, B, { want: [r0.id] });
+    ok(r0 && r1 && (r1.id !== r0.id || Object.keys(B.passages).filter(k => ix[k] && (B.passages[k][r0.borrowed || r0.mood] || []).length).length === 1), 'moodResult skips a card already in the want list', { a: r0 && r0.id, b: r1 && r1.id }); }
+
+  // ---- 策略：整趟 smart（newStalls 開）每個選擇都合法、時段帳對；會去醫生、會喝熱美式／高粱、會轉蛋；--copt press always／never ----
+  { let bad = 0, wash = 0, press = 0, coffee = 0, sorg = 0, spin = 0, pressA = 0, pressN = 0, runs = 0;
+    for (const o of [{}, { press: 'always' }, { press: 'never' }]) for (let s = 0; s < (QUICK ? 4 : 12); s++) {
+      const r = newM('ns-run-' + s, KL, { ace: TIERS[s % 3] }), R = lcg(EN.fnv1a32('ns-run-' + s)), mem = {};
+      for (let g = 0; g < 4000 && !r.over && r.pos <= 46; g++) {
+        if (r.pending) { const ch = EN.cPolicy(r, KL, o); const x = EN.choose(r, KL, ch); if (!x.ok) { bad++; ok(false, 'policy choice ok', { ch, e: x.error }); break; } continue; }
+        for (const ch of EN.lineupPrep(r, KL)) EN.choose(r, KL, ch);
+        if (r.lineupDue && EN.runPolicy(r, KL)) { EN.choose(r, KL, EN.runPolicy(r, KL)); continue; }
+        if (EN.canShop(r)) for (const ch of EN.shopPolicy(r, KL, 'smart')) EN.choose(r, KL, ch);
+        const f = EN.startFight(r, KL, {}); let k = 0; while (!f.duel.over && k++ < 20) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, KL));
+        EN.finishFight(r, KL);
+      }
+      runs++; const M = r.stats.c && r.stats.c.mk, NS = M && M.ns;
+      if (M && !EN.isMarket(r) && M.used + M.leftSum !== M.slots) bad++;
+      if (NS) { if (o.press === 'always') pressA += NS.press; else if (o.press === 'never') pressN += NS.press; else { wash += NS.wash; press += NS.press; coffee += NS.drink.coffee; sorg += NS.drink.sorghum; spin += NS.gearSpin; } }
+      if ((r.pressN | 0) > 3) bad++;
+    }
+    console.log('     ns runs: ' + J({ runs, wash, press, coffee, sorg, spin, pressA, pressN }));
+    ok(bad === 0 && press + wash > 0 && coffee > 0 && sorg > 0 && spin > 0 && pressN === 0 && pressA >= press, 'smart runs with new stalls: legal; doctor, coffee, sorghum, gacha used; press never = 0, always ≥ default', { bad, wash, press, coffee, sorg, spin, pressA, pressN }); }
+  // ---- 「幫我挑」讀籤（I-3a 審查 #7）：newStalls 開、這一輪翻到情報籤的那幾位變成三色權重；沒籤／關著＝逐字 luMains ----
+  { const r = toStall(newM('ns-lu', KL), KL, 16); force(r, 'fortune'); r.money = 50000; enter(r, KL, 'fortune'); act(r, KL, 'flip'); act(r, KL, 'flip');
+    const r0 = JSON.parse(J(r)); r0.fortune = [];
+    const p1 = EN.lineupPolicy(r, KL), p0 = EN.lineupPolicy(r0, KL), pOff = EN.lineupPolicy(r, KL0), pOff0 = EN.lineupPolicy(r0, KL0);
+    ok(J(pOff) === J(pOff0) && p1 && p0, 'newStalls off: lineupPolicy ignores slips', { pOff, pOff0 });
+    ok(r.fortune.some(f => f.slip !== 'omen'), 'flipped info slips', r.fortune.map(f => f.slip)); }
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log(fails.join('\n')); process.exit(1); }

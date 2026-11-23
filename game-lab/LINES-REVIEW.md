@@ -1122,7 +1122,7 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・fx.ban | 每趟封掉一件配件或一張盤 | 本規格新寫 | `career.ui.fx.ban` |
 | （畫面字）・fx.intel | 看他牌組三色比例 | 本規格新寫 | `career.ui.fx.intel` |
 | （畫面字）・fx.safety | 上一趟沒到第 10 位，第一位輸了免費再一次 | 本規格新寫 | `career.ui.fx.safety` |
-| （畫面字）・moneyOnly | （只多錢，不會變強） | 本規格新寫 | `career.ui.moneyOnly` |
+| （畫面字）・moneyOnly | （多錢＝多買幾樣，不直接加星） | 本規格新寫 | `career.ui.moneyOnly` |
 | （畫面字）・powerLater | 戰力天賦 Lv{n} 開，點數先存著也可以 | 本規格新寫 | `career.ui.powerLater` |
 | （畫面字）・now | 現在 {n} 級 | 本規格新寫 | `career.ui.now` |
 | （畫面字）・cost | 下一級 {n} 點 | 本規格新寫 | `career.ui.cost` |

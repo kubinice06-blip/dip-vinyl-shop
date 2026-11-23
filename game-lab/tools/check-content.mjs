@@ -458,6 +458,7 @@ export function contentProblems(C, E) {
   bad.push(...encoreProblems(C, E));
   bad.push(...lineupProblems(C, E));  // 第 I 波 I-2 上場＋耐聽
   bad.push(...marketProblems(C, E));  // 第 I 波 I-3a 市集
+  bad.push(...newStallProblems(C, E));   // 第 I 波 I-3b 市集新攤＋算命心情題
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
   bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
@@ -1345,6 +1346,49 @@ export function marketProblems(C, E) {
   ok(FS.market === '黑膠特賣' && FS.snack === '飲料攤' && FS.gear === '小物攤', '市集攤名：黑膠特賣、飲料攤、小物攤（SPEC-I §A-4、§6.3）');
   for (const k of Object.keys(FL)) ok(typeof FL[k] === 'string' && [...FL[k]].length <= 16, 'waveC.fairLines.' + k + ' ≤16 字');
   ok(!/安可|刮傷|刮痕/.test(JSON.stringify([U, FS, FL])), '市集的字不准「安可」「刮傷」');
+  return bad;
+}
+// 第 I 波 I-3b 市集新攤（SPEC-I §6.3；契約 wave-i/build3b/CONTRACT.md）：fair.newStalls、doctor、drinks.coffee／sorghum、gacha 的數字；畫面字；moneyOnly 改字（§7.3）；
+//   算命心情題的題庫（repo 根目錄 mood-quiz.json／mood-bank.json：主站已審內容，只驗形狀與卡池交集，不跑文案規則）
+export function newStallProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const W = C.waveC || {}, F = (W.stall || {}).fair || {}, int = (x, lo, hi) => Number.isInteger(x) && x >= lo && x <= hi;
+  ok(typeof F.newStalls === 'boolean', 'fair.newStalls 要是 true／false（I-3b 新攤的開關）');
+  const D = F.doctor || {};
+  ok(typeof D.w === 'number' && D.w > 0 && D.w <= 5 && int(D.from, 1, 5) && int(D.wash, 0, 10000) && int(D.press, 0, 10000) && int(D.pressMax, 1, 5) && int(D.acts, 1, 3) && int(D.star, 1, 2) && D.cap === 5,
+    'fair.doctor：w 0–5、from 1–5、wash／press 0–10000、pressMax 1–5、acts 1–3、star 1–2、cap 5（＝加星上限）');
+  const DR = F.drinks || {}, cf = DR.coffee || {}, sg = DR.sorghum || {};
+  ok(int(cf.def, 1, 2) && int(cf.n, 1, 5) && int(cf.price, 0, 10000), 'fair.drinks.coffee 熱美式：def 1–2、n 1–5 位、price');
+  ok(int(sg.atk, 1, 2) && int(sg.n, 1, 5) && int(sg.pen, 1, 2) && int(sg.price, 0, 10000), 'fair.drinks.sorghum 高粱：atk 1–2、n 1–5 位、pen 1–2、price');
+  ok(Object.keys(DR)[0] === 'tea' && Object.keys(DR).every(k => ['tea', 'coffee', 'sorghum'].includes(k)), 'fair.drinks：冬瓜茶排第一（I-3a 只擺第一杯）、只有 tea／coffee／sorghum');
+  const G = F.gacha || {}, CELLS = (E && E.GACHA_CELLS) || ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'];
+  ok(Array.isArray(G.price) && G.price.length >= 1 && G.price.length <= 3 && G.price.every((x, i) => int(x, 0, 10000) && (!i || x >= G.price[i - 1])), 'fair.gacha.price：1–3 次、往後不降');
+  ok(Array.isArray(G.cells) && G.cells.length === 6 && new Set(G.cells).size === 6 && G.cells.every(c => CELLS.includes(c)), 'fair.gacha.cells：六格各 1/6（gold／cash／heal／relic／bump／ouch）');
+  ok(int(G.cash, 0, 20000) && int(G.relicCash, 0, 20000) && int(G.bumpAtk, 1, 3) && int(G.ouch, 1, 6), 'fair.gacha：cash、relicCash、bumpAtk 1–3、ouch 1–6');
+  const U = W.ui || {};
+  const need = { mkWash: ['${n}'], mkWashHint: [], mkPress: ['${n}'], mkPressHint: ['{k}'], mkPressAxis: [], mkPressOnlyNew: [], mkPressDone: [], mkPressMax: ['{n}'], mkNotWorn: [], mkPressTag: [],
+    mkDocLeft: ['{n}'], mkWashed: [], mkPressed: ['{attr}', '{n}'], mkCoffee: ['${p}'], mkCoffeeHint: ['{n}', '{d}'], mkSorghum: ['${p}'], mkSorghumHint: ['{n}', '{a}', '{pen}'], mkDrinkLeft: ['{n}'],
+    mkDrinkSwap: ['{name}'], mkPenNote: ['{n}'], mkGacha: ['${n}'], mkGachaTap: [], mkEggTap: [], mkGachaMax: [], mkGachaGold: [], mkGachaCash: ['${n}'], mkGachaHeal: [], mkGachaRelic: [],
+    mkGachaRelicCash: ['${n}'], mkGachaBump: ['{pos}', '{n}'], mkGachaOuch: ['{n}'], mkBumpTag: [], mkMoodAsk: [], mkMoodIs: ['{name}'], mkMoodPick: ['{album}'], mkMoodWant: [], mkMoodWantHad: [], mkMoodWantFull: [] };
+  for (const k of Object.keys(need)) ok(typeof U[k] === 'string' && U[k] && need[k].every(t => U[k].includes(t)), 'waveC.ui.' + k + (need[k].length ? '（要有 ' + need[k].join('') + '）' : ''));
+  ok(typeof U.mkPenNote === 'string' && [...U.mkPenNote.replace('{n}', '9')].length <= 16, 'waveC.ui.mkPenNote ≤16 字（對決結果行小字）');
+  ok(U.drinkNames && ['tea', 'coffee', 'sorghum'].every(k => typeof U.drinkNames[k] === 'string' && U.drinkNames[k]) && U.drinkNames.tea === '冬瓜茶' && U.drinkNames.coffee === '熱美式' && U.drinkNames.sorghum === '高粱', 'waveC.ui.drinkNames：冬瓜茶、熱美式、高粱');
+  ok((W.fairStations || {}).doctor === '唱片醫生' && typeof (W.fairLines || {}).doctor === 'string', 'waveC.fairStations.doctor＝唱片醫生（跟 G 聆聽室洗碟台分開取名）、fairLines.doctor');
+  ok(!/安可|刮傷|刮痕|洗碟台/.test(JSON.stringify(Object.keys(need).map(k => U[k]))), '新攤的字不准「安可」「刮傷」「洗碟台」');
+  const mo = ((C.career || {}).ui || {}).moneyOnly;
+  ok(typeof mo === 'string' && !/不會變強/.test(mo), 'career.ui.moneyOnly 改字（SPEC-I §7.3：錢能買重壓、飲料之後「不會變強」不成立）');
+  // 算命心情題的題庫（主站檔；遊戲端只讀）
+  try {
+    const Q = JSON.parse(fs.readFileSync(path.join(ROOT, 'mood-quiz.json'), 'utf8')), B = JSON.parse(fs.readFileSync(path.join(ROOT, 'mood-bank.json'), 'utf8'));
+    const P = E && E.moodPrep ? E.moodPrep(Q) : null;
+    ok(P && P.rows.length >= 30, 'mood-quiz.json：題目可用（moodPrep ≥30 題）');
+    ok(Q.moods && Object.keys(Q.moods).length >= 2 && Object.values(Q.moods).every(m => m && typeof m.name === 'string' && m.name), 'mood-quiz.json：moods 都有 name');
+    const ix = E && E.moodIndex ? E.moodIndex(C) : {}, per = {};
+    for (const k of Object.keys(B.passages || {})) if (ix[k]) for (const m of Object.keys(B.passages[k])) per[m] = (per[m] || 0) + 1;
+    const lack = Object.keys(Q.moods || {}).filter(m => !(per[m] > 0));
+    ok(!lack.length, 'mood-bank.json：每種心情在遊戲卡池（非頂點）至少一張有段落' + (lack.length ? '（缺：' + lack.join('、') + '）' : ''));
+  } catch (e) { ok(false, '讀不到 mood-quiz.json／mood-bank.json：' + (e && e.message)); }
   return bad;
 }
 export function bgmProblems(C) {
