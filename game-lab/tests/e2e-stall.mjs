@@ -1,6 +1,7 @@
 // game-lab/tests/e2e-stall.mjs：第 C 波 今天的攤位（店內攤位二選一；SPEC-C §4.3–§4.5、§8 P3、§11.2）端對端測試。測試棒。
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   node game-lab/tests/e2e-stall.mjs
+//   第 I 波 I-3a（11-23）出貨改市集（content stall.mode 'market'）：這支測的是 C 波二選一（pick＝緊急退回），網址一律帶 ?market=0；市集看 e2e-market。
 //   環境變數（見 e2e-lib.mjs）：LAB_BASE／LAB_URL；LAB_SIZES（這支預設 390x664,375x548）；STALL_ONLY＝只跑這幾項（例 1,4）
 //
 // 選組、各站的鈕一律真點（touchscreen.tap 打在看得到的那一點；底部的列不用 evaluate 直接叫）；把 run 擺到某一場攤位前的那一步（跳位、開攤位）用 __lab／engine。
@@ -107,7 +108,7 @@ const reloadCont = async (page, q) => { await openTitle(page, q); await jsClick(
 
 async function runSize(browser, w, h) {
   const size = `${w}x${h}`;
-  const QF = Q('&fast=1');
+  const QF = Q('&fast=1&market=0');   // 第 I 波 I-3a 出貨＝市集（content stall.mode 'market'）：這支測 C 波二選一（緊急退回）＝一律帶 ?market=0
 
   // ---------------------------------------------------------------- 1 第一趟：真的打完第 5 位
   if (want(1)) {

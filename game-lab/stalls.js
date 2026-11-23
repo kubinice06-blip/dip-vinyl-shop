@@ -3,11 +3,18 @@
  * window.DipLabStalls = {
  *   configure(host)   // ui.js boot 接一次（host 見下）
  *   night(o)          // SCREENS.night 遇到 pending stall：o = { r, slot（「第 n 輪」底下那格）, box }。底部換成「今天的攤位」兩列；選完走到站、開各站面板；逛完 host.done()
- *   busy(action)      // 攤位中點了箱子／收音機／櫃檯／對戰台：回 true＝這裡處理掉了（現在都回 false，ui.js 出「先逛完今天的攤位。」）
+ *   busy(action)      // 攤位中點了箱子／收音機／櫃檯／對戰台：回 true＝這裡處理掉了（C 波都回 false，ui.js 出「先逛完今天的攤位。」；市集：點島台對到攤位格那一箱＝進那一攤）
  *   cpPick()          // 開店「從哪裡開始？」→ Promise<N>（只有第 1 位＝直接 1，不出面板）
  *   draft(o)          // 中繼點開局快速選秀（pending draft）→ Promise（選完＝pending 不是 draft）。o = { sc }（場景：撿盤後重畫包包條）
- *   state()           // 測試用：{ phase:'pick'|'walk'|'station'|'leave'|'studio'|null, sel, kind, flipped }
+ *   state()           // 測試用：{ phase:'pick'|'walk'|'station'|'leave'|'studio'|null, sel, kind, flipped }；市集多 mode:'market'、phase 'grid'|'station'|'hold'|'leave'、hold
+ *   isle()            // 第 I 波 I-3a：市集攤位格 ↔ 島台那一格（[{kind, hot, went}]；舞台小道具、導演 market 模式用）
+ *   station(kind)     // 第 I 波 I-3a：進市集的某一攤（＝點攤位格；攤位格以外的入口、測試用）；回 true＝進了
  * }
+ *
+ * 第 I 波 I-3a 市集（pending.mode === 'market'；SPEC-I §6.2–§6.4；引擎契約 scratchpad v5/wave-i/build3/CONTRACT.md）：分流一律看 pending.mode（不看 content），
+ *   'pick'（C 波二選一）下面每一行照舊。市集＝底部攤位格（頂列月亮＋錢＋樂歷細條；一列 3 格 ≥100×64；收攤鈕是格子最後一格）＋點一攤升起攤位面板（≤55%、只放鈕與數字）；
+ *   進攤 choose stallEnter（不扣）、那攤第一個動作扣 1 個時段（月亮少一顆）、做完自動回攤位格；算命翻滿 3 張引擎自動關 → 畫面停住等點「記下了」（hold）；
+ *   挖寶攤不自己翻（等點）；錄音室沒有試錄格＝進去就錄 demo（C 波那句吐司）。小人只走一次到島台（browse）。施工期間 ?market=1 開（configure 時改 content）。
  *
  * host（ui.js 給；交易一律走 ui 的 doChoose）：
  *   content, engine, run(), persist(), choose(ch) → res, alive()（還在來客畫面）, stg(...) / stgP(...)（舞台）, cam(name, screen, ms, panelMin),
@@ -35,8 +42,8 @@
   function E() { return H.engine; }
   function WC() { return (C().waveC) || {}; }
   function U(k, o) { var u = WC().ui || {}; return fill(u[k] == null ? '' : u[k], o); }
-  function NM(kind) { return (WC().stations || {})[kind] || kind; }
-  function LN(kind) { return (WC().stationLines || {})[kind] || ''; }
+  function NM(kind) { return (S && S.mk && (WC().fairStations || {})[kind]) || (WC().stations || {})[kind] || kind; }   // 市集模式：算命攤、飲料攤、小物攤、黑膠特賣（fairStations）
+  function LN(kind) { return (S && S.mk && (WC().fairLines || {})[kind]) || (WC().stationLines || {})[kind] || ''; }
   function CFG() { return E().wcCfg ? E().wcCfg(C()) : WC(); }
   function ST() { return CFG().stall || {}; }
   function card(id) { return (C().cards && C().cards[id]) || null; }
@@ -73,7 +80,8 @@
     studio: ['....kkkk....', '...kddddk...', '...kdwddk...', '...kddddk...', '...kddddk...', '....kkkk....', '..k..kk..k..', '...kkkkkk...', '.....kk.....', '...kkkkkk...', '............', '............']
   };
   ICON.consignGet = ICON.consign;
-  function icon(kind, size) { var rows = ICON[kind]; var h = ''; try { h = rows ? H.pix(rows, size || 16, 'st-ic') : ''; } catch (_) {} return h || '<span class="st-ic tx" aria-hidden="true"></span>'; }
+  // 第 I 波 I-3a 市集模式：算命攤（籤）、飲料攤（冬瓜茶）換新圖示（shop-props.js MK_ICON；島台小道具、來客條同一張）；C 波一行不變
+  function icon(kind, size) { var MK = S && S.mk && W.DipPropsO && W.DipPropsO.MK_ICON, rows = (MK && MK[kind]) || ICON[kind]; var h = ''; try { h = rows ? H.pix(rows, size || 16, 'st-ic') : ''; } catch (_) {} return h || '<span class="st-ic tx" aria-hidden="true"></span>'; }
 
   // ------------------------------------------------------------------ 店裡對應（SPEC-C §4.5）：亮哪裡（熱點 id）、小人走到哪（spot 名或 [x,y]）、站主
   var SPOT = { trade: 'pay', gear: 'radio', snack: 'listen', gig: 'mid', promo: 'radio', fortune: 'leaving', consign: 'pay', consignGet: 'pay',
@@ -99,7 +107,7 @@
   // ------------------------------------------------------------------ 價位（站牌第三行；SPEC-C §4.3-1：免費／$n 起／樂歷）
   function priceTag(kind) {
     var st = ST(), pr = (C().economy && C().economy.price) || {};
-    if (kind === 'trade') { var lo = Math.min.apply(null, ['common', 'rare', 'uncommon', 'epic', 'legendary'].map(function (k) { return pr[k] || 1e9; })); return U('priceFrom', { n: mt(lo < 1e9 ? lo : 800) }); }
+    if (kind === 'trade' || (kind === 'market' && S && S.mk)) { var lo = Math.min.apply(null, ['common', 'rare', 'uncommon', 'epic', 'legendary'].map(function (k) { return pr[k] || 1e9; })); return U('priceFrom', { n: mt(lo < 1e9 ? lo : 800) }); }
     if (kind === 'gear') return U('priceFrom', { n: mt(st.gearPrice || 3000) });
     if (kind === 'gig') { var r = run(); return U('priceFrom', { n: mt(r && E().gigPrice ? E().gigPrice(r, C(), 1) : ((st.gig || {}).base || 3000)) }); }
     if (kind === 'promo' || kind === 'home') return U('priceLexp');
@@ -133,10 +141,11 @@
     fitPick();
   }
   // 選組那塊量出來多高，舞台就讓出多高（full 鏡頭：矮螢幕從牆頂往下裁，門、窗、收音機那排照樣看得到）
-  function fitPick() {
+  //   cn＝鏡頭名（市集＝'market'：dip.json 還沒有這個鏡頭時舞台照 full）
+  function fitPick(cn) {
     if (!S || !S.box) return;
     var need = Math.max(170, Math.ceil(H.naturalH(S.box) + 6));
-    try { H.cam('full', 'map', S.camMs != null ? S.camMs : 600, need); } catch (e) { console.error(e); }
+    try { H.cam(cn || 'full', 'map', S.camMs != null ? S.camMs : 600, need); } catch (e) { console.error(e); }
     S.camMs = 300;
   }
   function preview(i) {
@@ -194,6 +203,7 @@
     if (!S) return;
     var spot = S.spot;
     closeStation(); restoreNpc(); lightUp([]);
+    if (S.mk) crowd('market', false);                            // 第 I 波 I-3a：活店導演收起 market 模式（導演有這個入口才叫）
     if (spot) try { H.setSpot(spot); } catch (_) {}
     S.phase = null;
     var tok = S; S = null;
@@ -334,6 +344,7 @@
     sfx(cur.gold === cur.cards[i] ? 'ding' : 'flip');
     var t = qs('.st-c[data-k="' + i + '"]', S.sheet);
     if (t) { var d = D.createElement('div'); d.innerHTML = digTile(cur, i); var n = d.firstChild; if (n) { if (!A().rm) n.classList.add('st-turn'); t.parentNode.replaceChild(n, t); } }
+    var tip = qs('.st-dtap', S.sheet); if (tip) tip.hidden = true;  // 市集挖寶「點一張翻開」：翻了一張就收掉
   }
 
   // 同業調貨、市集的唱片：三（六）張好貨＋價；「賣一張給他」＝櫃檯同一套（sellCore）
@@ -432,8 +443,8 @@
       '<div class="lb-opts st-dare">' + btn('data-dare="tough"', U('dareTough', { n: (D0.tough || {}).atk || 1 }), { pri: true, cls: 'big' }) + btn('data-dare="tank"', U('dareTank', { n: (D0.tank || {}).hp || 4 }), { cls: 'big' }) + '</div>' +
       footHTML([btn('data-a="decline"', U('dareNo'))]);
   }
-  // 黑膠市集：一頁四分頁（唱片／器材／門票／福袋）；可出清（賣一張給他）
-  function marketBody(cur) {
+  // 黑膠市集：一頁四分頁（唱片／器材／門票／福袋）；可出清（賣一張給他）。doneLabel＝市集模式的黑膠特賣寫「回攤位」（沒給＝C 波「逛完了」）
+  function marketBody(cur, doneLabel) {
     if (S.sub === 'sell') return sellGrid();
     var tabs = U('marketTabs'); tabs = (WC().ui || {}).marketTabs || ['唱片', '器材', '門票', '福袋'];
     var t = S.tab || 0, B = (ST().market || {}).bag || {};
@@ -445,7 +456,7 @@
     else h += '<div class="st-bag"><p class="note">' + esc(U('bagNote', { k: B.n || 3, m: B.max || 1 })) + '</p>' +
       btn('data-a="bag"', (cur.bags | 0) >= (B.max || 1) ? U('bagSold') : U('bagBuy', { n: mt(B.price || 2500) }), { pri: true, disabled: (cur.bags | 0) >= (B.max || 1) || !canAfford(B.price || 2500) }) + '</div>';
     var open = bagOpen(cur);
-    return h + footHTML([btn('data-a="sell"', U('sellOne'), { disabled: open }), btn('data-a="done"', open ? U('bagFirst') : U('done'), { pri: true, disabled: open })]);
+    return h + footHTML([btn('data-a="sell"', U('sellOne'), { disabled: open }), btn('data-a="done"', open ? U('bagFirst') : (doneLabel || U('done')), { pri: true, disabled: open })]);
   }
   function bodyHTML(cur) {
     switch (cur.kind) {
@@ -501,6 +512,7 @@
 
   // ------------------------------------------------------------------ 點擊
   function onSheetClick(e) {
+    if (S && S.mk) return mkSheetClick(e);                     // 第 I 波 I-3a 市集（下面 C 波逐字）
     if (!S || !S.cur) return;
     var t = e.target.closest && e.target.closest('button'); if (!t || t.disabled) return;
     var cur = S.cur, a = t.getAttribute('data-a');
@@ -537,14 +549,15 @@
   // 器材（器材行、市集）：滿 3 件先選一件半價賣掉（ui relicPanel，「算了」＝不買）
   function buyRelic(id) {
     var r = run(), max = (E().CFG && E().CFG.relicMax) || 3;
-    if (!(E().relicFull ? E().relicFull(r, C(), id) : r.relics.length >= max)) return act({ type: 'stallAct', act: 'buyRelic', relicId: id });   // 側袋不佔格（修正棒 11-22）
+    var go = S && S.mk ? mkAct : act;                          // 第 I 波 I-3a：市集模式走 mkAct
+    if (!(E().relicFull ? E().relicFull(r, C(), id) : r.relics.length >= max)) return go({ type: 'stallAct', act: 'buyRelic', relicId: id });   // 側袋不佔格（修正棒 11-22）
     var cur = S.cur;
     S.busy = true;
     H.relicPanel(r.relics.filter(function (x) { return !(E().isSlotRelic && E().isSlotRelic(C(), x)); }), { prompt: U('relicFull'), cancel: (C().shopUi && C().shopUi.sellNo) || '算了' }).then(function (drop) {
       if (!S) return; S.busy = false; S.sheet = null;
       var pc = P(); if (!pc || pc.cur !== cur) return;
-      if (drop) act({ type: 'stallAct', act: 'buyRelic', relicId: id, dropRelicId: drop });
-      else renderStation(true);
+      if (drop) go({ type: 'stallAct', act: 'buyRelic', relicId: id, dropRelicId: drop });
+      else if (S.mk) mkRenderStation(true); else renderStation(true);
     });
   }
   // 做一個動作：成功＝錢跳數字；做完這一站（cur 換了）＝收面板、0.6 秒後走到下一站；沒做完（重翻、買、賣、福袋）＝面板重畫
@@ -609,6 +622,7 @@
   // ------------------------------------------------------------------ 底部（選組那塊）的點擊
   function onSlotClick(e) {
     if (!S) return;
+    if (S.mk) return mkSlotClick(e);                           // 第 I 波 I-3a 市集
     var t = e.target.closest && e.target.closest('button'); if (!t || t.disabled) return;
     if (S.phase === 'walk') { stg('finish', 'p'); return; }       // 走路途中點一下＝直接走到
     var a = t.getAttribute('data-a');
@@ -626,6 +640,7 @@
   function night(o) {
     if (!ok('night')) return;
     var p = P(); if (!p) { H.done(); return; }
+    if (p.mode === 'market') return mkNight(o, p);              // 第 I 波 I-3a 市集（看 pending，不看 content：舊存檔的 pick pending 照 C 波跑完那一輪）
     S = { r: o.r, slot: o.slot, box: o.box, sel: null, phase: null, sheet: null, cur: null, curKey: null, flipped: [], camMs: 600, resumed: !!p.cur, walked: false };
     // wcLog 的 sessions（攤位開出來那一下）、resumeInStall（標題「繼續試煉」回到攤位）在 ui.js 記；這裡重畫幾次都不算
     if (S.slot) S.slot.addEventListener('click', onSlotClick);
@@ -633,10 +648,395 @@
     if (p.cur) { var pl = placeOf(p.cur.kind, p.cur); if (pl.spot) { stg('put', 'p', pl.spot); stg('hide', 'p', false); } }
     next(!p.cur);
   }
-  function busy() { return false; }
+  // 攤位中點了店裡的東西（ui 只轉來箱子／收音機、櫃檯、對戰台）：C 波一律 false（ui 出「先逛完今天的攤位。」）。
+  //   市集（第 I 波 I-3a）：點島台上對到攤位格的那一箱＝進那一攤（跟點格子一樣；攤開著＝不理）；其他照 false
+  function busy(action) {
+    if (!S || !S.mk) return false;
+    var m = /^(?:crate|bin):(.+)$/.exec(action || ''), p = P();
+    if (!m || !p || !Array.isArray(p.tiles)) return false;
+    var i = ISLE.indexOf('bin:' + m[1]); if (i < 0 || i >= p.tiles.length) return false;
+    if (S.phase === 'grid') station(p.tiles[i]);
+    return true;
+  }
+  // 進市集的某一攤（＝點攤位格；給舞台熱點、測試用）：去過了＝「去過了」、時段用完＝「今晚的時段用完了。」
+  function station(kind) {
+    var p = P(); if (!S || !S.mk || S.phase !== 'grid' || !p || p.tiles.indexOf(kind) < 0) return false;
+    if (p.went[kind]) { sfx('tick'); T(U('mkWent')); return false; }
+    enterTile(kind);
+    return true;
+  }
   function state() {
     if (!S) return null;
-    return { phase: S.phase, sel: S.sel, kind: S.cur ? S.cur.kind : (S.kind || null), flipped: (S.flipped || []).slice(), sub: S.sub || null, confirm: !!S.confirm };
+    var o = { phase: S.phase, sel: S.sel, kind: S.cur ? S.cur.kind : (S.kind || null), flipped: (S.flipped || []).slice(), sub: S.sub || null, confirm: !!S.confirm };
+    if (S.mk) { o.mode = 'market'; o.hold = !!S.hold; if (S.hold) o.kind = S.hold.kind; o.pour = S.pour || null; }
+    return o;
+  }
+
+  // ================================================================== 第 I 波 I-3a 市集（pending.mode 'market'；SPEC-I §6.2–§6.4；引擎契約 wave-i/build3/CONTRACT.md）
+  //   店主 11-20：「中間的市集什麼的 不要分兩邊跑 然後不要只有選項 要有現場可以互動的」
+  //   底部攤位格（來客畫面「第 n 輪」底下那塊）：頂列＝月亮（時段）＋錢＋樂歷細條（ui 畫的 .cx-live 搬進來，月亮那列右邊、不另起一行）；
+  //     攤位格一列 3 格（≥100×64：圖示、攤名、價錢起點；藍框＝樂歷攤；免費攤右上角「免費」；去過的灰、打勾）；收攤鈕＝格子最後一格（那一列剩幾格就佔幾格，整列滿就另起一列 ≥44 px）
+  //   點一攤＝choose stallEnter（不扣時段）→ 攤位面板（lb-sheet，≤ 可視高 55%：只放鈕與數字；標題右邊月亮）；那攤第一個動作扣 1 個時段（月亮暗一顆）；
+  //     做完自動回攤位格；「回攤位」＝act back（還沒做動作＝不扣、還能再進）。算命翻滿 3 張引擎自動關 → 畫面停住（hold）等點「記下了」
+  //   收攤：這一趟第一次而且剩 ≥2 個時段才問一次（run.stats.c.leave；C 波攤位每次都問），其他直接收；收完 → host.done()（上場制那幾輪 ui 開上場面板）
+  //   島台：每一格對到島台一個箱（ISLE；照 tiles 的順序）。攤位格時亮還沒去的那幾格、開一攤只亮那一格。小人只走一次到 browse，之後不走
+  //   活店：導演有 market(on) 入口就叫（下一棒做；沒有＝不叫）
+  var ISLE = ['bin:rock', 'bin:elec', 'bin:soul', 'bin:hiphop', 'bin:citypop', 'bin:classical', 'bin:world', 'bin:folk', 'bin:jazz', 'bin:tw'];
+  ICON.tea = ['............', '............', '..k.k.k.....', '...k.k.k....', '............', '.kkkkkkkkk..', '.kyyyyyyykkk', '.kyyyyyyyk.k', '.kyyyyyyykkk', '..kyyyyyk...', '...kkkkk....', '............'];
+  function FAIR() { return (E().fairCfg ? E().fairCfg(C()) : ST().fair) || {}; }
+  function isleOf(kind) { var p = P(), i = p && p.tiles ? p.tiles.indexOf(kind) : -1; return i >= 0 ? ISLE[i % ISLE.length] : null; }
+  function isleLit() {                                             // 還能去的攤才亮（去過的、時段用完的扣時段攤不亮；修正棒：原本只看去過沒，跟攤位格的灰不一致）
+    var p = P(); if (!p || !p.tiles) return [];
+    var free = p.free || [];
+    return p.tiles.map(function (k, i) { return p.went[k] || (free.indexOf(k) < 0 && !(p.left > 0)) ? null : ISLE[i % ISLE.length]; }).filter(Boolean);
+  }
+  // 市集裡的吐司靠右上（跟錢那顆一樣，不蓋島台；style.css .lb-toast.mk）
+  function T(text, cls) { try { H.toast(text, (cls ? cls + ' ' : '') + 'mk'); } catch (e) { console.error(e); } }
+  // 月亮（時段）：亮的＝還剩、暗的＝用掉；drop＝剛用掉那顆（暗下去的動畫一次）
+  var MOON = ['...kkkkk....', '.kkyyyyyk...', '.kyyyyyk....', 'kyyyyyk.....', 'kyyyyk......', 'kyyyyk......', 'kyyyyk......', 'kyyyyk......', 'kyyyyyk.....', '.kyyyyyk....', '.kkyyyyyk...', '...kkkkk....'];
+  var MOON_OFF = MOON.map(function (r) { return r.replace(/k/g, 'd').replace(/y/g, 'e'); });
+  function moonsHTML(p) {
+    var n = Math.max(0, p.slots | 0), left = Math.max(0, p.left | 0), h = '';
+    for (var i = 0; i < n; i++) {
+      var px = ''; try { px = H.pix(i < left ? MOON : MOON_OFF, 16, 'st-mpx') || ''; } catch (_) {}
+      h += '<i class="st-moon' + (i < left ? '' : ' off') + (S.drop === i ? ' drop' : '') + (px ? ' px' : '') + '" aria-hidden="true">' + px + '</i>';
+    }
+    return '<span class="st-moons" role="img" aria-label="' + esc(U('mkSlots', { n: left, m: n })) + '">' + h + '</span>';
+  }
+  // 攤位格第二行（市集）：算命＝打開就翻一張；扣時段但不花錢的＝「不花錢」（「免費」只留給不用時段的攤）；飲料攤聲望滿了＝聲望已滿
+  function mkPrice(k) {
+    if (k === 'fortune') return U('mkFortuneTile');
+    if (k === 'snack') { var r = run(); return r && r.hp >= r.maxHp ? U('mkHpFull') : U('mkNoCost'); }
+    var t = priceTag(k); return t === U('priceFree') ? U('mkNoCost') : t;
+  }
+  function mkTileHTML(t) {
+    var k = t.kind, off = !t.went && !t.can;
+    var pr = t.went ? U('mkWent') : t.free ? U('mkFreeNote') : mkPrice(k);
+    // 扣時段的攤：右上角一顆小月亮（＝用 1 個時段；時段用完＝灰）；不用時段的攤：右上角「免費」
+    var mo = ''; if (!t.free && !t.went) { try { mo = H.pix(off ? MOON_OFF : MOON, 11, 'st-mpx') || ''; } catch (_) {} mo = '<span class="mo' + (off ? ' off' : '') + '" role="img" aria-label="' + esc(U('mkSlotCost')) + '">' + mo + '</span>'; }
+    return '<button type="button" class="st-mt' + (t.blue ? ' blue' : '') + (k === 'dare' ? ' dare' : '') + (t.free ? ' free' : '') + (t.went ? ' went' : '') + (off ? ' off' : '') + '" data-k="' + esc(k) + '"' +
+      (t.went ? ' disabled' : '') + (off ? ' aria-disabled="true"' : '') + '>' + icon(k, 16) + '<span class="nm">' + esc(NM(k)) + '</span><span class="pr">' + esc(pr) + '</span>' +
+      (t.free && !t.went ? '<span class="fr">' + esc(U('priceFree')) + '</span>' : '') + mo + (t.went ? '<span class="ck" aria-hidden="true">✓</span>' : '') + '</button>';
+  }
+  function renderMarket() {
+    var p = P(), v = p && E().marketView ? E().marketView(run(), C()) : null;
+    if (!p || !v || !S.slot) return;
+    S.phase = 'grid'; S.cur = null; S.hold = null;
+    if (S.live && S.live.parentNode) S.live.parentNode.removeChild(S.live);
+    var rest = 3 - (v.tiles.length % 3);                             // 收攤鈕佔那一列剩下的格（整列滿＝另起一列）
+    var h = '<div class="st-pick st-mk" role="group" aria-label="' + esc(U('mkTitle')) + '"><div class="st-mtop"><span class="st-sw" aria-hidden="true">' + esc(U('mkSlotWord')) + '</span>' + moonsHTML(p) +
+      '<span class="mn">' + esc(money(run().money)) + '</span><span class="st-lxs"></span></div>' +
+      '<div class="st-mgrid">' + v.tiles.map(mkTileHTML).join('') +
+      '<button type="button" class="st-mleave' + (v.left > 0 ? '' : ' pri') + (rest === 3 ? ' row' : '') + '" data-a="leave" style="grid-column:span ' + rest + '">' +
+      esc(v.left > 0 ? U('mkLeave', { n: mt(v.leaveCash) }) : U('mkLeaveNone')) + '</button></div></div>';
+    S.slot.innerHTML = h;
+    S.drop = null;
+    var lx = qs('.st-lxs', S.slot); if (S.live && lx) lx.appendChild(S.live);
+    // 跨過一級那一刻的字在頂列放不下（中繼點 4 顆月亮＋錢）：市集頂列換短的（照樣寫「樂歷」；點了收回原本那行照 ui）
+    if (S.live && S.live.classList.contains('up') && U('mkLiveUp')) { var lt = qs('.t', S.live); if (lt) lt.textContent = U('mkLiveUp', { n: S.live.getAttribute('data-lv') }); }
+    lightUp(isleLit());
+    fitPick('market');
+    H.auto(function () {
+      if (!S || S.phase !== 'grid') return;
+      var ch = null; try { ch = H.policy(); } catch (_) {}
+      if (!ch) return;
+      if (ch.type === 'stallEnter') enterTile(ch.kind);
+      else if (ch.type === 'stallLeave') mkLeave();
+      else if (ch.type === 'stallAct') mkAct(ch);
+    }, 260);
+  }
+  function mkHint() {
+    if (S.hinted) return;
+    S.hinted = true;
+    after(function () { try { H.say('o', U('mkHint'), 2600); } catch (e) { console.error(e); } }, 350);
+  }
+  // 小人只走一次到島台（browse）；走路途中照樣可以點攤位格。活店：browse 上的客人先讓開
+  function mkWalkIn() {
+    var p = stg('pos', 'p'), sp = stg('spot', 'browse');
+    if (sp) crowd('yield', sp);
+    var face = function () { if (S && S.mk) faceTo('bin:classical'); };
+    if (A().rm || !p || p.hidden || p.outside || !sp || H.autoOn()) { if (sp) stg('put', 'p', 'browse'); stg('hide', 'p', false); return face(); }
+    if (Math.round(p.x) === Math.round(sp[0]) && Math.round(p.y) === Math.round(sp[1])) return face();
+    stg('pose', 'p', null);
+    stgP('walk', 'p', ['browse'], 110).then(face);
+  }
+  function mkNight(o, p) {
+    S = { r: o.r, slot: o.slot, box: o.box, mk: true, sel: null, phase: null, sheet: null, cur: null, curKey: null, flipped: [], flipMem: {}, camMs: 600, resumed: !!p.cur,
+      walked: false, spot: 'browse', hold: null, drop: null, fresh: null, live: o.box ? qs('.cx-live', o.box) : null };
+    if (S.slot) { S.slot.addEventListener('click', onSlotClick); var nb = S.slot.closest && S.slot.closest('.st-night'); if (nb) nb.classList.add('mk'); }   // .mk：市集那塊收窄上下邊（stalls.css）
+    crowd('market', true);                                         // 活店導演 market 模式（下一棒；沒有這個入口＝不叫）
+    if (p.cur) { stg('put', 'p', 'browse'); stg('hide', 'p', false); faceTo('bin:classical'); }   // 重新整理回來、攤開著：人直接站在島台、面板打開
+    else mkWalkIn();
+    renderMarket();
+    if (p.cur) openMk(p.cur); else if (p.first) mkHint();          // 老闆那句只在這一趟第一個市集說（修正棒：每個市集都說＝9 格時泡泡蓋住島台上排 2.6 秒）
+  }
+  function enterTile(kind) {
+    if (!S || S.busy || S.phase !== 'grid') return;
+    var r = run(), m0 = r.money;
+    var res = H.choose({ type: 'stallEnter', kind: kind });
+    if (!res || !res.ok) { if (res && res.error === 'noSlot') T(U('mkNoSlot')); else console.warn('[stalls] stallEnter', res && res.error, kind); return; }
+    sfx('select');
+    var p = P(); if (!p) return finish();
+    S.fresh = null;
+    mkEffects(res.effects, p.cur);                                 // 算命：打開就翻第一張（扣時段）
+    if (r.money !== m0) { try { H.cashRise(m0, r.money); } catch (e) { console.error(e); } }
+    try { H.refresh(); } catch (_) {}
+    if (!p.cur) return renderMarket();
+    openMk(p.cur);
+  }
+  function openMk(cur) {
+    S.phase = 'station'; S.cur = cur; S.hold = null; S.kind = cur.kind;
+    if (cur.kind === 'studio' && !(cur.nodes || []).length) return mkAct({ type: 'stallAct', act: 'ok' });   // 沒有試錄格＝C 波錄 demo（一行吐司，不出面板）
+    if (S.curKey !== cur.key) {
+      S.curKey = cur.key; S.sub = null; S.tab = 0; S.gigN = 1;
+      S.flipped = S.flipMem[cur.key] || (S.flipMem[cur.key] = (cur.cards || []).map(function () { return !!S.resumed; }));   // 挖寶不自己翻；重新整理回來＝直接翻開
+    }
+    lightUp([isleOf(cur.kind)].filter(Boolean));
+    mkRenderStation(true);
+    S.resumed = false;
+    try { if (cur.kind === 'promo' && cur.cards && cur.cards[0]) H.play(card(cur.cards[0])); } catch (e) { console.error(e); }
+  }
+  function backBtn(pri) { return btn('data-a="back"', U('mkBack'), { pri: !!pri }); }
+  function mkHeadHTML(cur) {
+    var r = run(), p = P(), kind = cur.kind, sub = kind === 'dig' && cur.name ? ((WC().digTitles || {})[cur.name] || '') : '';
+    // 標題列：攤名（挖寶攤名）＋錢＋月亮；站主一句另一行（矮螢幕收掉：面板 ≤55%，鈕與數字優先）
+    return '<div class="hd st-shd"><h3>' + icon(kind, 18) + '<span>' + esc(NM(kind)) + '</span>' + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</h3>' +
+      '<span class="mn">' + esc(money(r.money)) + '</span>' + (p ? moonsHTML(p) : '') + '</div>' +
+      (LN(kind) ? '<p class="st-line st-mq"><span>「' + esc(LN(kind)) + '」</span></p>' : '');
+  }
+  // 算命攤翻籤（SPEC-I §6.3）：三張封套（一列一張）；翻開的照實寫籤、停住；下一張＝封套＋「翻下一張（$n）」；第 3 張先寫「可能是凶籤」
+  function slipHTML(sl, fresh) {
+    var vis = '', tx = '', ex = '', omen = sl.slip === 'omen';
+    if (omen) { vis = '<span class="st-sleeve omen" aria-hidden="true">' + esc(U('mkOmenTag')) + '</span>'; tx = U('mkOmen', { pos: sl.pos, n: sl.atk }); }
+    else if (sl.slip === 'boss' || sl.slip === 'elite') {
+      var q = sl.ratio || {}, a = sl.ace ? card(sl.ace) : null;
+      tx = U(sl.slip === 'boss' ? 'mkSlipBoss' : 'mkSlipElite', { c: q.c | 0, o: q.o | 0, h: q.h | 0 });
+      if (a) { vis = '<span class="st-sleeve cv">' + H.coverHTML(a) + '</span>'; ex = '<small>' + esc(U('fortuneAce')) + '</small>'; }
+    } else if (sl.slip === 'aces') {
+      var L = sl.list || [], Z = E().ZH || {};
+      tx = L.length ? U('mkSlipAces', { list: L.map(function (x) { return U('mkSlipAce', { pos: x.pos, attr: Z[x.attr] || '' }); }).join('、') }) : U('mkSlipAcesNone');
+    } else if (sl.slip === 'top') {
+      var c = sl.card ? card(sl.card) : null;
+      tx = U('mkSlipTop');
+      if (c) { vis = '<span class="st-sleeve cv">' + H.coverHTML(c) + '</span>'; ex = H.starsHTML({ c: sl.c | 0, o: sl.o | 0, h: sl.h | 0 }, { cls: 'st-slst' }); }
+    }
+    if (!vis) vis = '<span class="st-sleeve up" aria-hidden="true">' + icon('fortune', 16) + '</span>';
+    return '<div class="st-slip up' + (omen ? ' omen' : '') + (fresh && !A().rm ? ' st-turn' : '') + '">' + vis + '<div class="tx"><span>' + esc(tx) + '</span>' + ex + '</div></div>';
+  }
+  function fortuneMkBody(cur, hold) {
+    var r = run(), n = cur.n | 0, h = '<div class="st-slips">';
+    for (var i = 0; i < (cur.order || []).length; i++) {
+      var sl = (cur.slips || [])[i];
+      if (sl) { h += slipHTML(sl, S.fresh === i); continue; }
+      var warn = i === 2 ? '<small class="warn">' + esc(U('mkOmenWarn')) + '</small>' : '';
+      if (!hold && i === n) {
+        var pr = ((cur.price || [])[i]) | 0, can = r.money >= pr;
+        h += '<div class="st-slip next"><button type="button" class="st-sleeve back" data-a="flip" aria-label="' + esc(U('mkFlipTap')) + '"' + (can ? '' : ' disabled') + '><i class="rec" aria-hidden="true"></i></button>' +
+          '<div class="tx">' + btn('data-a="flip"', pr > 0 ? U('mkFlip', { n: mt(pr) }) : U('mkFlipFree'), { pri: true, disabled: !can }) + warn + '</div></div>';
+      } else h += '<div class="st-slip down"><span class="st-sleeve back" aria-hidden="true"><i class="rec"></i></span><div class="tx"><span class="q">？</span>' + warn + '</div></div>';
+    }
+    if (hold && mkNothingLeft()) return h + '</div>' + footHTML([btn('data-a="notedLeave"', U('mkNotedLeave'), { pri: true })]);   // 時段用完、沒別的攤能逛：記下了就收攤（少按一下；M5）
+    return h + '</div>' + footHTML([btn(hold ? 'data-a="noted"' : 'data-a="back"', U('fortuneOk'), { pri: hold || n >= (cur.order || []).length })]);
+  }
+  // 攤位格上已經沒有能進的攤（去過的、時段用完的扣時段攤；免費攤也都去過了）
+  function mkNothingLeft() {
+    var v = E().marketView ? E().marketView(run(), C()) : null; if (!v) return false;
+    return v.tiles.every(function (t) { return t.went || (!t.free && !(v.left > 0)); });
+  }
+  // 飲料攤（I-3a 只有冬瓜茶：聲望 +fair.drinks.tea.hp〔sim 棒定 2〕、免費、只花時段）；按了島台倒一杯（S.pour → ui isleNow → shop-props teaCup）
+  function snackMkBody(cur) {
+    var r = run();
+    var cups = (cur.drinks || []).map(function (d) {
+      var n = Math.max(0, Math.min(d.hp | 0, r.maxHp - r.hp));
+      var label = d.kind === 'tea' ? (n > 0 ? U('mkTea', { n: n }) : U('mkTeaFull')) : d.kind;
+      return '<button type="button" class="lb-btn pri big st-cup" data-drink="' + esc(d.kind) + '"' + (r.money < (d.price | 0) ? ' disabled' : '') + '>' + icon('snack', 16) + '<span>' + esc(label) + '</span></button>';   // 圖示＝攤位格那個冬瓜茶手搖杯（MK_ICON.snack；修正棒：原本反白成藍色熱飲杯）
+    }).join('');
+    return '<p class="note">' + esc(fill(((C().trial || {}).ui || {}).hp || '聲望 {n}/{max}', { n: r.hp, max: r.maxHp })) + '</p><div class="lb-opts st-cups">' + cups + '</div>' + footHTML([backBtn()]);
+  }
+  // 錄音室試錄（SPEC-D §3.8；?fac=1 有得試）：三條路線各自的下一格，挑一格這一趟有效；也可以照舊錄 demo
+  function studioMkBody(cur) {
+    var r = run(), tn = (r.fac && r.fac.trialNodes) || {}, used = Object.keys(tn).filter(function (k) { return tn[k] > 0; }).length;
+    var left = Math.max(0, (FAIR().studioMax | 0) - used), LV = ['', 'I', 'II', 'III'];
+    return '<p class="note">' + esc(U('mkStudio')) + '</p><p class="note st-lx">' + esc(U('mkStudioLeft', { n: left })) + '</p><div class="lb-opts st-nodes">' +
+      (cur.nodes || []).map(function (N) {
+        return '<button type="button" class="lb-btn st-node" data-node="' + esc(N.id) + '"><b>' + (LV[N.layer] ? '<i>' + LV[N.layer] + '</i>' : '') + esc(N.name) + '</b><span>' + esc(N.text) + '</span></button>';
+      }).join('') + '</div>' + footHTML([btn('data-a="ok"', U('mkStudioDemo', { n: ST().demoLexp || 15 })), backBtn()]);   // 回攤位（修正棒：先看看、不錄也能走，不用時段）
+  }
+  function mkBodyHTML(cur) {
+    var r = run();
+    switch (cur.kind) {
+      case 'dig': { var cost = (ST().reroll || 500) * (cur.rolls + 1), none = !(S.flipped || []).some(Boolean);
+        return gridHTML(cur.cards.map(function (_, i) { return digTile(cur, i); }).join(''), cur.cards.length) +
+          '<p class="note st-dtap"' + (none ? '' : ' hidden') + '>' + esc(U('mkDigTap')) + '</p>' +   // 挖寶不自己翻：還沒翻＝寫出來要點（修正棒）
+          footHTML([btn('data-a="reroll"', U('reroll', { n: mt(cost) }), { disabled: !canAfford(cost) }), backBtn()]); }
+      case 'trade': return S.sub === 'sell' ? sellGrid() : buyGrid(cur, cur.cards || []) + footHTML([btn('data-a="sell"', U('sellOne')), backBtn(true)]);
+      case 'gear': return (relicGrid(cur.relics || [], 'data-relic', ST().gearPrice || 3000) || '<p class="note">—</p>') + footHTML([backBtn()]);
+      case 'warehouse': return ((cur.relics || []).length ? relicGrid(cur.relics, 'data-wrelic') : gridHTML((cur.cards || []).map(function (id) { return cardBtn(id, 'data-take', U('take')); }).join(''), (cur.cards || []).length)) + footHTML([backBtn()]);
+      case 'snack': return snackMkBody(cur);
+      case 'gig': return gigBody(true) + footHTML([backBtn()]);
+      case 'promo': return gridHTML((cur.cards || []).map(function (id) { var c = card(id); return c ? H.tileHTML(c, { cls: 'st-c' }) : ''; }).join(''), (cur.cards || []).length) +
+        '<p class="note">' + esc(U('promoNote')) + '</p>' + lexpLine(ST().promoLexp || 10) + footHTML([btn('data-a="ok"', U('promoOk'), { pri: true }), backBtn()]);
+      case 'fortune': return fortuneMkBody(cur, false);
+      case 'consign': {
+        var min = (E().CFG && E().CFG.bagMin) || 5, ids = r.bag.filter(function (id) { return !E().isGift(r, C(), id) && !E().isSeed(r, C(), id); }), full = r.bag.length - 1 < min || !!r.consign;   // 上一張還沒領回＝寄不了（修正棒）
+        return '<p class="note">' + esc(r.consign ? U('mkConsignBusy') : U('consignPick')) + '</p>' + gridHTML(ids.map(function (id) { return cardBtn(id, 'data-consign', NM('consign'), { disabled: full }); }).join(''), 4) + footHTML([backBtn()]);
+      }
+      case 'consignGet': return '<p class="note">' + esc(U('consignBack')) + '</p>' + gridHTML((cur.cards || []).map(function (id) { return cardBtn(id, 'data-take', U('take'), { cls: 'gold' }); }).join(''), 3) + footHTML([backBtn()]);
+      case 'home': return '<p class="note">' + esc(U('homePick')) + '</p>' + lexpLine(ST().homeLexp || 30) + gridHTML(r.bag.map(function (id) { return cardBtn(id, 'data-home', U('homePut')); }).join(''), 4) + footHTML([backBtn()]);
+      case 'dare': {                                                  // 踢館帖面板一行不動（SPEC-H §7.8）；市集多一顆「回攤位」（修正棒：先看看、翻完籤再回來接）
+        var dh = dareBody(), di = dh.lastIndexOf('<div class="foot st-foot">');
+        return (di >= 0 ? dh.slice(0, di) : dh) + footHTML([btn('data-a="decline"', U('dareNo')), backBtn()]);
+      }
+      case 'market': return marketBody(cur, U('mkBack'));
+      case 'studio': return studioMkBody(cur);
+    }
+    return footHTML([backBtn(true)]);
+  }
+  function mkRenderStation(first) {
+    var cur = S && (S.hold || S.cur); if (!cur) return;
+    var html = mkHeadHTML(cur) + (S.hold ? fortuneMkBody(cur, true) : mkBodyHTML(cur));
+    if (S.sheet && S.sheet.isConnected && !first) S.sheet.innerHTML = html;
+    else { S.sheet = H.sheet(html, 'stall st-mk st-k-' + cur.kind); S.sheet.addEventListener('click', onSheetClick); }
+    S.drop = null; S.fresh = null;
+    // 面板 ≤55%（放不下面板自己捲）；至少跟底下攤位格那塊一樣高（修正棒：面板比攤位格矮＝底下那塊被擠出畫面、整個店溢出；e2e-market #10）
+    var vh = H.vh(), nat = Math.ceil(H.naturalH(S.sheet) + 4), grid = S.box ? Math.ceil(H.naturalH(S.box) + 6) : 0, need = Math.min(Math.round(vh * 0.55), Math.max(200, nat, grid));
+    if (first || S.need == null || Math.abs(need - S.need) >= 2) { S.need = need; try { H.cam('market', 'map', first ? 300 : 150, need); } catch (e) { console.error(e); } }
+    H.auto(function () {
+      if (!S) return;
+      if (S.hold) { var b = S.sheet && qs('[data-a=noted],[data-a=notedLeave]', S.sheet); if (b) b.click(); return; }
+      var ch = null; try { ch = H.policy(); } catch (_) {}
+      if (ch && ch.type === 'stallAct') mkAct(ch);
+    }, 260);
+  }
+  // 效果 → 畫面（月亮、翻籤、吐司）；回 { close, flip }
+  function mkEffects(list, cur0) {
+    var o = { close: false, flip: false };
+    (list || []).forEach(function (f) {
+      if (f.hp > 0) T(fill(((C().trial || {}).ui || {}).heal || '聲望 +{n}', { n: f.hp }), 'gold');
+      else if (f.hp === 0 && cur0 && cur0.kind === 'snack') T(U('snackFullToast'));
+      if (f.drink) S.pour = { n: (S.pour ? S.pour.n : 0) + 1, kind: f.drink };   // 島台倒一杯（ui isleNow → stage → shop-props isleDraw）
+      if (f.gainRelic) T(fill('拿到「{n}」', { n: H.relicName(f.gainRelic) }));
+      if (f.nowPlaying) { try { if (H.bgmFront) H.bgmFront(f.nowPlaying); else H.play(card(f.nowPlaying)); } catch (e) { console.error(e); } }
+      if (f.dare) T(f.dare === 'tough' ? U('dareToughOn', { n: ((ST().dare || {}).tough || {}).atk || 1 }) : U('dareTankOn', { n: ((ST().dare || {}).tank || {}).hp || 4 }), 'gold');
+      // 收攤自動錄 demo：接著就換畫面，吐司帶 keep（修正棒：原本換畫面那一下就被清掉＝玩家看不到）
+      if (f.lexp > 0) { if (f.demo) H.toast(U('mkDemoAuto', { n: f.lexp }), 'gold keep'); else T(cur0 && cur0.kind === 'studio' ? U('demo', { n: f.lexp }) : U('lexpLater', { n: f.lexp }), 'gold'); }
+      if (f.record) { var N = ((cur0 && cur0.nodes) || []).filter(function (x) { return x.id === f.record; })[0]; T(U('mkRecord', { name: N ? N.name : f.record }), 'gold'); }
+      if (f.slot != null) { S.drop = f.slot; sfx('pop'); }
+      if (f.flip != null) { S.fresh = f.flip; o.flip = true; sfx(f.slip && f.slip.slip === 'omen' ? 'hurt' : 'flip'); }
+      if (f.close) o.close = true;
+    });
+    return o;
+  }
+  function mkAct(ch) {
+    if (!S || S.busy) return;
+    var r = run(), p = P(); if (!p) return;
+    var cur0 = p.cur, m0 = r.money;
+    var res = H.choose(ch);
+    if (!res || !res.ok) {
+      var er = res && res.error;
+      if (er === 'money') T(((C().shopUi || {}).noMoney) || '錢不夠。');
+      else if (er === 'bagMin') T(fill((C().shopUi || {}).bagSellMin || '', { n: (E().CFG && E().CFG.bagMin) || 5 }));
+      else if (er === 'bagOpen') T(U('bagFirst'));
+      else if (er === 'noSlot') T(U('mkNoSlot'));
+      else if (er === 'consignBusy') T(U('mkConsignBusy'));
+      else console.warn('[stalls] choose', er, ch);
+      return;
+    }
+    if (ch.act !== 'flip') sfx(ch.act === 'take' || ch.act === 'bagTake' ? 'pocket' : ch.act === 'back' ? 'tick' : 'select');
+    if (r.money !== m0) { try { H.cashRise(m0, r.money); } catch (e) { console.error(e); } }
+    var o = mkEffects(res.effects, cur0);
+    if (ch.act === 'sell') S.sub = null;
+    try { H.refresh(); } catch (_) {}
+    var p2 = P();
+    if (!p2) return finish();
+    if (o.close || !p2.cur) {
+      if (cur0 && cur0.kind === 'fortune' && o.flip) { S.hold = cur0; S.cur = null; S.phase = 'hold'; return mkRenderStation(); }   // 第 3 張：停住等點「記下了」
+      return mkBackToGrid();
+    }
+    if (ch.act === 'reroll') { S.flipped = cur0.cards.map(function () { return false; }); S.flipMem[cur0.key] = S.flipped; S.curKey = cur0.key; }
+    mkRenderStation();
+  }
+  function mkBackToGrid() { S.cur = null; S.hold = null; S.need = null; closeStation(); renderMarket(); }
+  function mkSheetClick(e) {
+    if (!S) return;
+    var t = e.target.closest && e.target.closest('button'); if (!t || t.disabled) return;
+    var a = t.getAttribute('data-a');
+    if (S.hold) {
+      if (a === 'noted') { sfx('tick'); mkBackToGrid(); }
+      else if (a === 'notedLeave') { S.hold = null; S.cur = null; closeStation(); mkLeave(); }   // 記下了，收攤（時段用完、沒別的攤；不用確認：剩 0 個時段）
+      return;
+    }
+    var cur = S.cur; if (!cur) return;
+    var X = function (o) { return Object.assign({ type: 'stallAct' }, o); };
+    if (t.hasAttribute('data-flip')) { flipOne(cur, +t.getAttribute('data-flip')); return; }    // 挖寶攤：點一張翻一張（不自己翻）
+    if (a === 'sell') { sfx('tick'); S.sub = 'sell'; mkRenderStation(); return; }
+    if (a === 'sellBack') { sfx('tick'); S.sub = null; mkRenderStation(); return; }
+    if (t.hasAttribute('data-tab')) { sfx('tick'); S.tab = +t.getAttribute('data-tab'); mkRenderStation(); return; }
+    if (a === 'gigMinus') { S.gigN = Math.max(1, (S.gigN || 1) - 1); sfx('tick'); mkRenderStation(); return; }
+    if (a === 'gigPlus') { S.gigN = (S.gigN || 1) + 1; sfx('tick'); mkRenderStation(); return; }
+    if (t.hasAttribute('data-take')) return mkAct(X({ act: 'take', cardId: t.getAttribute('data-take') }));
+    if (t.hasAttribute('data-buy')) return mkAct(X({ act: 'buy', cardId: t.getAttribute('data-buy') }));
+    if (t.hasAttribute('data-sell')) return mkAct(X({ act: 'sell', cardId: t.getAttribute('data-sell') }));
+    if (t.hasAttribute('data-bagtake')) return mkAct(X({ act: 'bagTake', cardId: t.getAttribute('data-bagtake') }));
+    if (t.hasAttribute('data-consign')) return mkAct(X({ act: 'consign', cardId: t.getAttribute('data-consign') }));
+    if (t.hasAttribute('data-home')) return mkAct(X({ act: 'ok', cardId: t.getAttribute('data-home') }));
+    if (t.hasAttribute('data-dare')) return mkAct(X({ act: 'accept', mode: t.getAttribute('data-dare') }));
+    if (t.hasAttribute('data-wrelic')) return mkAct(X({ act: 'relic', relicId: t.getAttribute('data-wrelic') }));
+    if (t.hasAttribute('data-relic')) return buyRelic(t.getAttribute('data-relic'));
+    if (t.hasAttribute('data-drink')) return mkAct(X({ act: 'drink', kind: t.getAttribute('data-drink') }));
+    if (t.hasAttribute('data-node')) return mkAct(X({ act: 'record', node: t.getAttribute('data-node') }));
+    if (a === 'flip') return mkAct(X({ act: 'flip' }));
+    if (a === 'gigBuy') return mkAct(X({ act: 'tickets', n: Math.max(1, S.gigN || 1) }));
+    if (a === 'gigKeep') return mkAct(X({ act: 'tickets', n: E().gigKeepN(run(), C()) }));
+    if (a === 'reroll') return mkAct(X({ act: 'reroll' }));
+    if (a === 'bag') return mkAct(X({ act: 'bag' }));
+    if (a === 'decline') return mkAct(X({ act: 'decline' }));
+    if (a === 'done') return mkAct(X({ act: 'done' }));
+    if (a === 'ok') return mkAct(X({ act: 'ok' }));
+    if (a === 'back') return mkAct(X({ act: 'back' }));
+  }
+  // 收攤：這一趟第一次而且剩 ≥2 個時段才問（SPEC-I §6.2-5；CRITIQUE 6-4），其他直接收
+  function mkAskLeave() {
+    sfx('tick');
+    var r = run(), p = P(); if (!p || !S.slot) return;
+    var left = p.left | 0;
+    if (left < 2 || ((((r.stats || {}).c) || {}).leave | 0) > 0) return mkLeave();
+    S.phase = 'leave';
+    if (S.live && S.live.parentNode) S.live.parentNode.removeChild(S.live);
+    S.slot.innerHTML = '<div class="st-pick st-mk"><div class="st-ask" role="alertdialog" aria-label="' + esc(U('mkLeaveYes')) + '"><p>' + esc(U('mkLeaveAsk', { k: left, n: mt(FAIR().slotCash || 300) })) + '</p>' +
+      '<div class="foot two">' + btn('data-a="leaveNo"', U('mkLeaveNo')) + btn('data-a="leaveYes"', U('mkLeaveYes'), { pri: true }) + '</div></div></div>';
+    fitPick('market');
+    H.auto(function () { var b = S && S.slot && qs('[data-a=leaveYes]', S.slot); if (b) b.click(); }, 260);
+  }
+  function mkLeave() {
+    if (!S || S.busy) return;
+    var r = run(), m0 = r ? r.money : 0, cur0 = (P() || {}).cur || null;
+    var res = H.choose({ type: 'stallLeave' });
+    if (!res || !res.ok) { console.warn('[stalls] stallLeave', res && res.error); return; }
+    try { H.log('leave'); } catch (_) {}
+    sfx('coin');
+    if (r && r.money !== m0) { try { H.cashRise(m0, r.money); } catch (e) { console.error(e); } }
+    mkEffects(res.effects, cur0);                                  // 錄音室沒去：收攤前順手錄了 demo（樂歷 +15）
+    try { H.refresh(); } catch (_) {}
+    S.cur = null; S.hold = null;
+    finish();
+  }
+  function mkSlotClick(e) {
+    var lx = e.target.closest && e.target.closest('.st-lxs .cx-live');   // 樂歷細條放不下會截：點一下吐司寫整句（修正棒）
+    if (lx && !lx.classList.contains('up')) { var tx = qs('.t', lx), lv = qs('.lv', lx); if (tx) { sfx('tick'); T(tx.textContent + (lv && lv.textContent ? '・' + lv.textContent : '')); } return; }
+    var t = e.target.closest && e.target.closest('button'); if (!t || t.disabled) return;
+    var a = t.getAttribute('data-a');
+    if (a === 'leave' && S.phase === 'grid') { mkAskLeave(); return; }
+    if (a === 'leaveNo') { sfx('tick'); renderMarket(); return; }
+    if (a === 'leaveYes') { mkLeave(); return; }
+    if (t.hasAttribute('data-k') && S.phase === 'grid') {
+      if (t.getAttribute('aria-disabled') === 'true') { sfx('tick'); T(U('mkNoSlot')); return; }
+      enterTile(t.getAttribute('data-k'));
+    }
+  }
+  function isle() {
+    var p = P(); if (!p || p.mode !== 'market' || !Array.isArray(p.tiles)) return [];
+    return p.tiles.map(function (k, i) { return { kind: k, hot: ISLE[i % ISLE.length], went: !!(p.went || {})[k] }; });
   }
 
   // ------------------------------------------------------------------ 中繼點開局（SPEC-C §4.7）
@@ -698,8 +1098,12 @@
   }
 
   W.DipLabStalls = {
-    configure: function (host) { H = host || null; },
-    night: night, busy: busy, state: state, cpPick: cpPick, draft: draft,
+    configure: function (host) {
+      H = host || null;
+      // 第 I 波 I-3a 施工期間：?market=1＝市集模式試玩、?market=0＝C 波二選一（＝sim --market on|off；只改 content 的開關，之後一切照 pending.mode）
+      try { var m = /[?&]market=([01])(?:&|$)/.exec(W.location.search || ''), st = H && H.content && H.content.waveC && H.content.waveC.stall; if (m && st) st.mode = m[1] === '1' ? 'market' : 'pick'; } catch (_) {}
+    },
+    night: night, busy: busy, state: state, cpPick: cpPick, draft: draft, isle: isle, station: station,
     // 測試：底部那塊的鈕（e2e 用真點；這裡只給測試讀狀態）
     _icons: ICON
   };

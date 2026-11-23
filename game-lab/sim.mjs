@@ -113,6 +113,12 @@
 //     n4000 會讀的 到第 50 位 17.4% 對 關 18.6%（−1.3）、一般玩家中位 30 對 29（+1）、新手逐值相同；W1 86.7%、W3 6.4%、W4 74.7%、W5 0.92／0.981；
 //     --bench 1（樂歷 Lv3）：會讀的 18.2%（−0.4）、一般玩家中位 +1、L2 +0.9、W3 1.2%（替補分攤＝規格 W3 只判沒替補）；benchMode 'worn2'（兩層才頂上）W3 7.0% 但 L2 −0.3（不採）。
 //     出貨 content C.lineup.on／C.wear.on＝true：量「全關」一律寫明 --lineup off（n200 smart／--enc on 跟改前 base 位元相同）
+//   第 I 波 I-3a 市集殼（scratchpad v5/wave-i SPEC-I §6.7；engine 的 Market 段；契約 wave-i/build3/CONTRACT.md）：
+//   --market on|off  ＝C.waveC.stall.mode 'market'｜'pick'（沒給＝content；施工期間 content 是 'pick'）。開著時多印「市集」兩張表（每輪時段／用掉／收攤剩／還有剩的輪、
+//            算命翻第 1／2／3 張、凶籤、冬瓜茶、錄音室 demo／試錄、進了又退出；每種攤出現→被去／排第一個去）＋M3（用掉 2.0–2.8、還有剩 ≥15%）、K1′（被去 15–85%、
+//            排第一個去 ≤60%；n ≥1000 才判、有 --copt 只列）；JSON 每格多 mk、report 多 market。關著＝輸出跟沒有這個旗標逐字相同（report.waveC 不多 stall.mode／fair）
+//   --copt 市集多收：slotMin（攤的價值低於這個就不去、留時段換錢；預設 0.5）、whim（先去哪一攤的心情，只排順序；預設 0.4）、flips（算命最多翻幾張 1–3；沒給＝錢夠才多翻）、
+//            studio（試錄先挑哪條路線 a｜b｜c）。--ladder 多收 marketTiles／fortuneFree／digN（＝樂歷 Lv4／6／7；數字等級時市集開著才有）
 // 新帳號＝不帶配件進來（relics []、等級 1）；新手＝novice（明指就剋、半指／不露照常出猜）、會讀的＝thoughtful（精確客人模型）、亂出＝random。同一個 i 不管策略／流程都是同一批客人（common random numbers）。
 //   11-17 讀牌加難（scratchpad v5/harder DESIGN §1.2）多兩支：一般玩家＝humanRead（會讀、數字抓大概＝店主學會新規則之後）、舊腦袋＝oldReader（會算照實機率、
 //   以為只有一種唬人、不知道會被讀＝店主第一次玩新版）；兩步公式＝formula（舊版懂反讀：上一手照提示剋過，這手出提示同色）。門檻流程多印一張「每手拆解」
@@ -300,6 +306,11 @@ if (BENCH != null && !(Number.isInteger(BENCH) && BENCH >= 0 && BENCH <= 2)) { c
 if ((LU_FROM != null && !LUX) || (BENCH != null && !LU_ON)) { console.error('--lineupFrom／--bench 要上場制開著（--lineup on）'); process.exit(2); }
 const LUBASE = arg('lubase', null) ? JSON.parse(fs.readFileSync(arg('lubase'), 'utf8')) : null, L2BASE = arg('l2base', null) ? JSON.parse(fs.readFileSync(arg('l2base'), 'utf8')) : null;
 if ((LUBASE || L2BASE) && !LUX) { console.error('--lubase／--l2base 要上場制開著'); process.exit(2); }          // LS0(c)：每一趟主線每場開打種子（duel.e.hkey）＋每次配件獎勵（pending.relics）
+// 第 I 波 I-3a 市集（見檔頭；--patch 之後套）：--market on|off＝C.waveC.stall.mode 'market'｜'pick'（沒給＝content）
+const MK_ARG = arg('market', null);
+if (MK_ARG != null && !['on', 'off'].includes(MK_ARG)) { console.error('--market on|off'); process.exit(2); }
+if (MK_ARG) { C.waveC = C.waveC || {}; C.waveC.stall = Object.assign({}, C.waveC.stall || {}, { mode: MK_ARG === 'on' ? 'market' : 'pick' }); }
+const MK_ON = !!EN.fairOn(C);
 const ENC_KEYS = ['ace:caught','ace:combo2', 'apex:caught', 'apex:combo2', 'apex:sameWin', 'apex:lowhp'];   // 翻面逐條件表的欄位順序（其他照出現順序接在後面）
 const FAC_KEYS = EN.FAC_NOTE_ORDER.concat(['cut', 'deep']);              // duel.stats.fac 的鍵（結果行小字＋本派選項「每場第一次被剋少扣」）＋棒三深耕多回的聲望（finishFight out.deep）
 const FAC_OWN = { hall: ['full', 'tieCost'], pearl: ['borrow', 'underdog', 'cCost'], heresy: ['crit', 'crit2', 'loseCost'] };   // F4：被動或代價觸發的手（三派互斥）
@@ -320,12 +331,12 @@ if (!(Number.isInteger(BROWSE) && BROWSE >= 1)) { console.error('--browse k（1�
 // 第 D 波棒一（見檔頭）：--talent 主幹固定檔位、--ladder 階梯（seedMax／relicPick／goldAdd）、--posmax
 const TALENT = arg('talent', null) ? JSON.parse(arg('talent')) : null;
 if (TALENT) for (const k of Object.keys(TALENT)) if (!EN.talentDef(C, k) || !(Number.isInteger(TALENT[k]) && TALENT[k] >= 0)) { console.error('--talent：沒有天賦 ' + k + '（或級數不是非負整數）'); process.exit(2); }
-const LADDER_ARG = arg('ladder', null);
+const LADDER_ARG = arg('ladder', null), LADDER_KEYS = ['seedMax', 'relicPick', 'goldAdd', 'lineupBonus', 'marketTiles', 'fortuneFree', 'digN'];
 let LADDER = null;
 if (LADDER_ARG != null) {
-  if (/^\d+$/.test(LADDER_ARG)) { const t = EN.talentArgs(C, { xp: EN.careerXpAt(C, +LADDER_ARG), spent: {} }); LADDER = {}; for (const k of ['seedMax', 'relicPick', 'goldAdd', 'lineupBonus']) if (t[k]) LADDER[k] = t[k]; }
+  if (/^\d+$/.test(LADDER_ARG)) { const t = EN.talentArgs(C, { xp: EN.careerXpAt(C, +LADDER_ARG), spent: {} }); LADDER = {}; for (const k of LADDER_KEYS) if (t[k]) LADDER[k] = t[k]; }
   else LADDER = JSON.parse(LADDER_ARG);
-  for (const k of Object.keys(LADDER)) if (!['seedMax', 'relicPick', 'goldAdd', 'lineupBonus'].includes(k)) { console.error('--ladder 只收 seedMax／relicPick／goldAdd／lineupBonus（或樂歷等級數字；lineupBonus＝第 I 波 I-2 Lv3，上場制開著才有）'); process.exit(2); }
+  for (const k of Object.keys(LADDER)) if (!LADDER_KEYS.includes(k)) { console.error('--ladder 只收 ' + LADDER_KEYS.join('／') + '（或樂歷等級數字；lineupBonus＝第 I 波 I-2 Lv3，上場制開著才有；marketTiles／fortuneFree／digN＝I-3a Lv4／6／7，市集開著才有）'); process.exit(2); }
 }
 const SEED_MAX = LADDER && LADDER.seedMax > 0 ? LADDER.seedMax | 0 : CFG.seedMax;
 const POSMAX = +arg('posmax', 60);
@@ -603,7 +614,8 @@ function runOnce(pol, flow, i, A) {
     }
     const dareNow = !prologue && !!(run.dare && run.dare.round === run.round);
     const res = EN.finishFight(run, C);
-    if (LU && !prologue && d >= 16 && d <= 30 && run.stats.wear) { const w1 = run.stats.wear; A.lu.p1630 += (w1.plays | 0) - ((wear0 && wear0.plays) | 0); A.lu.w1630 += (w1.wornPlays | 0) - ((wear0 && wear0.wornPlays) | 0); }
+    if (LU && !prologue && d >= 16 && d <= 30 && run.stats.wear) { const w1 = run.stats.wear; A.lu.p1630 += (w1.plays | 0) - ((wear0 && wear0.plays) | 0); A.lu.w1630 += (w1.wornPlays | 0) - ((wear0 && wear0.wornPlays) | 0);
+      if (MK_ON && !EN.benchN(run, C)) { A.lu.p1630n = (A.lu.p1630n | 0) + (w1.plays | 0) - ((wear0 && wear0.plays) | 0); A.lu.w1630n = (A.lu.w1630n | 0) + (w1.wornPlays | 0) - ((wear0 && wear0.wornPlays) | 0); } }   // I-3a sim 棒：市集開著另記沒替補的場（W3 照 I-2 裁定在沒替補時判）
     if (TR && res.offer && Array.isArray(res.offer.relics) && res.offer.relics.length) TR.push(['r', d, res.offer.relics.join(',')]);
     if (prologue) { manTries++; continue; }
     if (CW && att === 0 && d >= 31) { const k = dareNow ? 'dare' : 'plain'; CW[k].f++; if (res.win) CW[k].w++; }   // K2：接帖那輪首戰 vs 平常（踢館帖第 30 位後才出）
@@ -723,6 +735,7 @@ function runCell(pol, flow, n) {
     ...(A.lt ? { lot: lotStats(A.lt, n) } : {}),
     ...(A.wt ? { want: wantStats(A.wt, n) } : {}),
     ...(A.cw ? { wcx: wcStatsOf(recs, A.cw, n) } : {}),
+    ...(A.cw && MK_ON ? { mk: mkStatsOf(recs, n) } : {}),
     ...(FROM ? { cp: { from: FROM, reach10: share(recs, r => r.end >= FROM + 10), reach5: share(recs, r => r.end >= FROM + 5), first: A.reached[FROM] ? A.deaths[FROM] / A.reached[FROM] : null,
       median: q(ends, 0.5), p25: q(ends, 0.25), p75: q(ends, 0.75), mean: avg('end') } } : {}),
     ...(UNLOCK ? { unlock: { aces: avg('aces'), unlocks: avg('unlocks'), trialAces: avg('trialAces'),          // --unlock：每趟收幾張、解鎖幾派、收到第 k 張的趟（%）
@@ -819,7 +832,8 @@ function luStats(L, n) {
   const r = (a, b) => (b ? a / b : null), mean = a => (a.length ? a.reduce((s, x) => s + x, 0) / a.length : null);
   return { w1: r(L.w1a, L.w1n), w1on: r(L.w1on, L.w1n), w1n: L.w1n, worn1630: r(L.w1630, L.p1630), plays1630: L.p1630, wornAll: r(L.worn, L.plays), layers: L.layers / n, rest: L.rest / n,
     picks: L.picks / n, changed: r(L.changed, L.chN), star: r(L.star, L.starN), pow: r(L.pow, L.starN), hit: r(L.hit, L.fights), hitBag: r(L.hitBag, L.fights), fights: L.fights,
-    bench: L.bench / n, swaps: L.swaps / n, fills: L.fills / n, quiet: r(L.quiet, L.steps), bag15: mean(L.bag15), bag30: mean(L.bag30), sleeve: L.sleeve / n };
+    bench: L.bench / n, swaps: L.swaps / n, fills: L.fills / n, quiet: r(L.quiet, L.steps), bag15: mean(L.bag15), bag30: mean(L.bag30), sleeve: L.sleeve / n,
+    ...(MK_ON ? { worn1630n: r(L.w1630n | 0, L.p1630n | 0), plays1630n: L.p1630n | 0 } : {}) };   // I-3a：市集開著才有（pick 輸出逐字）
 }
 function printLu(rows) {
   console.log(`\n上場（第 I 波 I-2；${LU_ON ? '每輪挑 ' + EN.luCfg(C).n + ' 張' : '上場制關'}；每趟平均）：\n`);
@@ -839,7 +853,10 @@ function luChecks(G, tag) {
   const put = (id, name, okv, info, nMin) => { if (both && N >= nMin && okv != null) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + (both ? (N < nMin ? `；n ${N} < ${nMin} 只列參考（判 ${id} 用 --n ${nMin}）` : '') : '；上場、耐聽沒有一起開（或 --from）只列') + (okv == null ? '' : okv ? '［在門檻內］' : '［不在門檻內］') }); };
   if (TH && TH.lineup) {
     put('W1', `${tag}第 15 位以後還會換：會讀的 第 16–30 位收新唱片 ≥50%（擋開關）`, TH.lineup.w1 != null ? TH.lineup.w1 >= 0.50 - 1e-9 : null, `${pct(TH.lineup.w1)}（${TH.lineup.w1n} 趟；上場有新的 ${pct(TH.lineup.w1on)}）`, 1000);
-    put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null, `${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次）`, 1000);
+    // I-3a 修正棒（11-22 審查）：W3 回到 I-2 的判法＝不帶 Lv3 替補的那組、全部場（I-2 當時那份裡就含 24% 有側袋的趟）；「只算沒替補的場」是另一種判法，只列、要主線明裁
+    if (MK_ON) put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%（全部場＝I-2 判法）`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null,
+      `全部 ${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次；有側袋的趟 ${pct(TH.lineup.sleeve)}）；只算沒替補的場 ${pct(TH.lineup.worn1630n)}（${TH.lineup.plays1630n} 次；另一種判法，只列）`, 1000);
+    else put('W3', `${tag}耐聽有感、不是懲罰：會讀的 第 16–30 位打出去的唱片裡聽膩的 5–25%`, TH.lineup.worn1630 != null ? TH.lineup.worn1630 >= 0.05 - 1e-9 && TH.lineup.worn1630 <= 0.25 + 1e-9 : null, `${pct(TH.lineup.worn1630)}（${TH.lineup.plays1630} 次）`, 1000);
     if (TH.wcx) put('W4', `${tag}錢有去處：會讀的花掉 ≥60%（E1 升回門檻；不過寫進 rulings 降回參考）`, TH.wcx.spentShare >= 0.60 - 1e-9, pct(TH.wcx.spentShare), 1000);
   }
   if (HR && HR.lineup) refs.push({ id: 'W1', name: `${tag}一般玩家 第 16–30 位收新唱片`, ok: null, info: `${pct(HR.lineup.w1)}（${HR.lineup.w1n} 趟）` });
@@ -1028,6 +1045,43 @@ function wcStatsOf(recs, CW, n) {
     dareRate: pick.dare && pick.dare.picked ? (k.dareAccept * n) / pick.dare.picked : null,
     r15dup: k.r15 ? k.r15d / k.r15 : null, known: avg(r => r.road + r.drops), spentShare: earned ? spent / earned : null };
 }
+// ---------------- 第 I 波 I-3a 市集（--market on；SPEC-I §6.7 M3、K1′；engine run.stats.c.mk） ----------------
+const MK_KINDS = ['dig', 'fortune', 'snack', 'gear', 'trade', 'gig', 'promo', 'consign', 'home', 'warehouse', 'market'];   // 扣時段的攤（K1′ 看這些）
+const MK_FREE = ['studio', 'dare', 'consignGet'];
+function mkStatsOf(recs, n) {
+  const M = r => (r.wc && r.wc.mk) || null, has = recs.filter(M);
+  const sum = f => has.reduce((t, r) => t + (f(M(r)) || 0), 0);
+  const sess = sum(x => x.sess), slots = sum(x => x.slots), used = sum(x => x.used), leftSum = sum(x => x.leftSum), leftAny = sum(x => x.leftAny);
+  const kinds = {}, all = MK_KINDS.concat(MK_FREE);
+  for (const k of all) { const o = sum(x => x.offered[k]), w = sum(x => x.went[k]), f1 = sum(x => x.first[k]); if (o) kinds[k] = { offered: o, went: w, first: f1, rate: w / o, firstRate: f1 / o }; }
+  return { sess: sess / n, slotsPer: sess ? slots / sess : null, usedPer: sess ? used / sess : null, leftPer: sess ? leftSum / sess : null, leftShare: sess ? leftAny / sess : null,
+    flips: [0, 1, 2].map(i => sum(x => (x.flips || [])[i]) / n), omen: sum(x => x.omen) / n, tea: sum(x => x.tea) / n, teaHp: sum(x => x.teaHp) / n,
+    demo: sum(x => x.demo) / n, trial: sum(x => x.trial) / n, back: sum(x => x.back) / n, kinds };
+}
+const mkZh = k => (C.waveC && C.waveC.fairStations && C.waveC.fairStations[k]) || (C.waveC && C.waveC.stations && C.waveC.stations[k]) || k;
+function printMk(rows) {
+  const F = EN.fairCfg(C);
+  console.log(`\n### 第 I 波 I-3a 市集（每輪 ${F.slots} 個時段、中繼點 ${F.relaySlots}；一般輪 ${F.tiles} 攤；收攤每個時段 $${F.slotCash}${COPT_SET ? '；cPolicy ' + JSON.stringify(COPT) : ''}）\n`);
+  console.log('| 策略 | 流程 | 市集 次／趟 | 每輪 時段／用掉／收攤剩（M3：2.0–2.8）／收攤還有剩的輪（M3：≥15%） | 算命 翻第 1／2／3 張（每趟）；凶籤 | 冬瓜茶 杯／回聲望 | 錄音室 demo／試錄 | 進了又退出 |');
+  console.log('|---|---|---|---|---|---|---|---|');
+  for (const x of rows) { const m = x.mk; if (!m) continue;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ${f2(m.sess)} | ${f2(m.slotsPer)}／**${f2(m.usedPer)}**／${f2(m.leftPer)}／**${pct(m.leftShare)}** | ${f2(m.flips[0])}／${f2(m.flips[1])}／${f2(m.flips[2])}；${f2(m.omen)} | ${f2(m.tea)}／${f2(m.teaHp)} | ${f2(m.demo)}／${f2(m.trial)} | ${f2(m.back)} |`); }
+  const ks = MK_KINDS.concat(MK_FREE);
+  console.log('\n| 策略 | 流程 | 每種攤：出現（每趟）→ 被去（K1′ 15–85%）／排第一個去（K1′ ≤60%） ' + ks.map(mkZh).join('／') + ' |');
+  console.log('|---|---|---|');
+  for (const x of rows) { const m = x.mk; if (!m) continue;
+    console.log(`| ${LABEL[x.pol] || x.pol} | ${x.flow} | ` + ks.map(k => { const K = m.kinds[k]; return K ? f2(K.offered / x.n) + '→' + pct(K.rate) + (MK_FREE.includes(k) ? '' : '／' + pct(K.firstRate)) : '—'; }).join('／') + ' |'); }
+}
+function mkChecks(G, tag) {
+  const TH = G && G.thoughtful, m = TH && TH.mk; if (!m) return;
+  const put = (id, name, okv, info, nMin) => { if (!COPT_SET && !FROM && N >= nMin && okv != null) check(id, name, okv, info); else refs.push({ id, name, ok: okv, info: info + (COPT_SET || FROM ? '；有 --copt／--from 只列' : N < nMin ? `；n ${N} < ${nMin} 只列參考（判 ${id} 用 --n ${nMin}）` : '') + (okv == null ? '' : okv ? '［在門檻內］' : '［不在門檻內］') }); };
+  put('M3', `${tag}時段有取捨：會讀的 每輪平均用掉 2.0–2.8 個時段、收攤時還有剩的輪 ≥15%`, m.usedPer >= 2.0 - 1e-9 && m.usedPer <= 2.8 + 1e-9 && m.leftShare >= 0.15 - 1e-9, `用掉 ${f2(m.usedPer)}／${f2(m.slotsPer)}、還有剩 ${pct(m.leftShare)}`, 1000);
+  const judged = MK_KINDS.filter(k => m.kinds[k] && m.kinds[k].offered >= 50), few = MK_KINDS.filter(k => !m.kinds[k] || m.kinds[k].offered < 50);
+  const bad = judged.filter(k => !(m.kinds[k].rate >= 0.15 - 1e-9 && m.kinds[k].rate <= 0.85 + 1e-9 && m.kinds[k].firstRate <= 0.60 + 1e-9));
+  put('K1′', `${tag}每種攤出現時被去 15–85%、排第一個去 ≤60%（會讀的）`, judged.length ? !bad.length : null,
+    judged.map(k => mkZh(k) + ' ' + p0(m.kinds[k].rate) + '／' + p0(m.kinds[k].firstRate)).join('、') + (bad.length ? '（沒過：' + bad.map(mkZh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(mkZh).join('、') : '') +
+    '；唱盤、公關片、演唱會、黑膠特賣、算命在 fairValue 是常數＝去不去看 slotMin、誰排第一看 whim（修正棒審查：whim 0 時演唱會 96／61%），這幾攤的 K1′ 量的是策略參數', 1000);
+}
 function printWC(rows) {
   const f0 = x => x == null ? '—' : Math.round(x).toLocaleString('en'), f1 = x => x == null ? '—' : x.toFixed(1);
   const w = WCC, on = x => x ? '開' : '關';
@@ -1078,7 +1132,8 @@ if (LADDER) report.ladder = LADDER;
 if (POSMAX !== 60) report.posmax = POSMAX;
 if (I0) report.i0 = I0;
 if (WANT_N) report.want = WANT_N;
-if (WC_ON) report.waveC = WCC;                                             // 第 C 波：開著才多這些鍵（--wc off 時 JSON 跟 C 波之前一樣，只差 trial.guestHpSteps）
+if (WC_ON) report.waveC = MK_ON ? WCC : Object.assign({}, WCC, { stall: (({ mode, fair, ...rest }) => rest)(WCC.stall) });   // 第 C 波：開著才多這些鍵（--wc off 時 JSON 跟 C 波之前一樣，只差 trial.guestHpSteps）；第 I 波 I-3a 市集關（pick）＝不多 stall.mode／fair
+if (MK_ON) report.market = EN.fairCfg(C);                                  // 第 I 波 I-3a 市集（--market off＝不多這個鍵）
 if (COPT_SET) report.copt = COPT;
 if (ENC_ON) report.encore = { aceStar: EN.encCfg(C).aceStar, carry: EN.encCfg(C).carry !== false, aces: EN.encCfg(C).aces, facHeresy: EN.encCfg(C).facHeresy, ...(ENCPOL ? { encpol: true } : {}) };   // 第 I 波（--encore off＝不多這個鍵）
 if (SAFETY) report.safety = true;
@@ -1203,6 +1258,7 @@ if (MODE === 'all' || MODE === 'runs') {
   }
 
   if (WC_ON) printWC(rows);                                              // 第 C 波（全關不印）
+  if (MK_ON) printMk(rows);                                              // 第 I 波 I-3a 市集（--market off 不印）
   if (SPAR_ON) printSpar(rows);                                          // 活店切磋（--enc off 不印）
   if (D1EX) {                                                            // 第 D 波：試煉過關率（到第 21 位＝打倒第 20 位藏家）＋每趟樂歷（careerGain：沒破紀錄、沒倍率）
     console.log(`\n第 D 波：到第 21 位（打倒第 20 位藏家＝試煉過關）、每趟樂歷（基本＝15×位數＋8×最多連贏；路線＝截過的，括號未截）${TIER ? '；試煉第 ' + TIER + ' 階' : ''}：\n`);
@@ -1303,8 +1359,9 @@ if (MODE === 'all' || MODE === 'runs') {
       if (W && WCC.stall.on && !COPT_SET) {
         const P = W.pick, judged = WC_KINDS.filter(k => P[k] && P[k].offered >= 50), out = judged.filter(k => !(P[k].rate >= 0.15 - 1e-9 && P[k].rate <= 0.85 + 1e-9)), few = WC_KINDS.filter(k => !P[k] || P[k].offered < 50);
         const zh = k => (C.waveC && C.waveC.stations && C.waveC.stations[k]) || k;
-        check('K1', `${tag}選路有差：會讀的 每種站出現時被選 15–85%`, judged.length && !out.length,
-          judged.map(k => zh(k) + ' ' + p0(P[k].rate)).join('、') + (out.length ? '（沒過：' + out.map(zh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(k => zh(k) + (P[k] ? ' ' + Math.round(P[k].offered) + ' 次' : ' 0 次')).join('、') : ''));
+        const k1info = judged.map(k => zh(k) + ' ' + p0(P[k].rate)).join('、') + (out.length ? '（沒過：' + out.map(zh).join('、') + '）' : '') + (few.length ? '；出現 <50 次只列：' + few.map(k => zh(k) + (P[k] ? ' ' + Math.round(P[k].offered) + ' 次' : ' 0 次')).join('、') : '');
+        if (MK_ON) refs.push({ id: 'K1', name: `${tag}選路有差（C 波二選一的定義）：會讀的 每種站出現時被選 15–85%`, ok: judged.length && !out.length, info: k1info + '；市集模式由 K1′ 判（SPEC-I §6.7），這條只列' });   // I-3a sim 棒
+        else check('K1', `${tag}選路有差：會讀的 每種站出現時被選 15–85%`, judged.length && !out.length, k1info);
         const dp = P.dare ? P.dare.picked : 0;
         if (dp >= 30) check('K2', `${tag}踢館帖：會讀的 接帖率（接÷走到那站）20–80%`, W.dareRate >= 0.20 - 1e-9 && W.dareRate <= 0.80 + 1e-9, `${pct(W.dareRate)}（走到 ${Math.round(dp)} 次）`);
         else refs.push({ id: 'K2', name: `${tag}踢館帖接帖率 20–80%`, ok: null, info: `走到那站只有 ${Math.round(dp)} 次，不判` });
@@ -1327,7 +1384,8 @@ if (MODE === 'all' || MODE === 'runs') {
     for (const c of refs.slice(refs0)) if (typeof c.ok === 'boolean') c.info += c.ok ? '［在門檻內］' : '［不在門檻內］';
   }
   if (SPAR_ON && !FROM) sparChecks(cells[GATE], `［${GATE}］`);
-  if (LUX) { printLu(rows); luChecks(cells[GATE], `［${GATE}］`); }           // 活店切磋 LS1–LS8（LS9＝上面的既有門檻照樣全過；LS0 另跑，見檔頭）
+  if (LUX) { printLu(rows); luChecks(cells[GATE], `［${GATE}］`); }
+  if (MK_ON) mkChecks(cells[GATE], `［${GATE}］`);                         // 第 I 波 I-3a 市集 M3、K1′（--market off 不判）           // 活店切磋 LS1–LS8（LS9＝上面的既有門檻照樣全過；LS0 另跑，見檔頭）
   if (cells.smart && cells.none && cells.smart.thoughtful && cells.none.thoughtful)
     console.log(`\n會讀的：smart − none 深度中位 ${cells.smart.thoughtful.median - cells.none.thoughtful.median} 位、平均 ${(cells.smart.thoughtful.mean - cells.none.thoughtful.mean).toFixed(1)} 位（買東西有沒有用；只列不檢查）`);
 }

@@ -7,7 +7,7 @@
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 > 活店第二階段（切磋＝遭遇戰）：每位熟客的切磋句在「活店・切磋・<名字>」（說話者欄多標分類：嗆、接了、改天、沒理他、他輸了、他贏了、作廢、看你這一趟的切磋輸贏），邀請面板、對決頂欄、戰利品列的字在「活店・切磋・介面字」。
 
-統計：原句 45、拍板 0、店主 71、新 1866（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1869（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1157,6 +1157,9 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・ladder.plea | 備用說情 | 本規格新寫 | `career.ui.ladder.plea` |
 | （畫面字）・ladder.bgmShelf | 背景音樂也放唱片櫃的歌 | 本規格新寫 | `career.ui.ladder.bgmShelf` |
 | （畫面字）・ladder.bench | 上場多帶一張替補 | 本規格新寫 | `career.ui.ladder.bench` |
+| （畫面字）・ladder.tile6 | 市集多一攤 | 本規格新寫 | `career.ui.ladder.tile6` |
+| （畫面字）・ladder.fortune2 | 算命攤第 2 張免費 | 本規格新寫 | `career.ui.ladder.fortune2` |
+| （畫面字）・ladder.dig4 | 挖寶攤多一張蓋牌 | 本規格新寫 | `career.ui.ladder.dig4` |
 | （畫面字）・ladder.seed5 | 種子格 5 格 | 本規格新寫 | `career.ui.ladder.seed5` |
 | （畫面字）・ladder.relicsNew | 新配件 | 本規格新寫 | `career.ui.ladder.relicsNew` |
 | （畫面字）・ladder.regulars | 新常客 | 本規格新寫 | `career.ui.ladder.regulars` |

@@ -1472,3 +1472,16 @@ body.lb-tune-open{overflow:hidden;}
   .lb-night.lu .lb-lurow{margin-bottom:4px;}
   .lb-night.lu .lu-bh{display:none;}   /* 替補那句放不下：上場列的讀屏字、上場面板照寫 */
 }
+
+/* ======================================================================= 第 I 波 I-3a 市集（SPEC-I §6.3、§6.4；攤位格與攤位面板在 stalls.css）
+   來客條頭像：翻到的籤記在那位頭像右上（.st-mk.ft.sl＝籤圖示，同 C 波算命的位置）；凶籤那位左上紅標「凶」（有踢館帖記號就排在它下面） */
+.lb-night .nc .hd .st-mk.om{left:1px;right:auto;min-width:14px;height:14px;padding:0 1px;background:#c11628;border:1px solid #fff;box-sizing:border-box;color:#fff;font:700 10px/12px var(--zh);text-align:center;}
+.lb-night .nc .hd .st-mk.dr ~ .st-mk.om{top:17px;}
+/* 市集裡錢跳數字：靠右上、兩行（−$n／新的錢），不蓋島台（舞台中間那一條） */
+.lb-toast.mk{left:auto;right:6px;-webkit-transform:none;transform:none;max-width:72%;}   /* 第 I 波 I-3a 市集裡的吐司（聲望 +2、樂歷、錯誤）靠右上，不蓋島台（修正棒） */
+.lb-toast.cash.mk{left:auto;right:6px;-webkit-transform:none;transform:none;flex-direction:column;align-items:flex-end;gap:2px;padding:4px 8px;}
+.lb-toast.cash.mk .cv{min-width:0;font-size:15px;}
+/* 點客人頭像：記在他身上的籤（攤位面板那幾句；凶籤紅字） */
+.pv-who .bl.ft{display:flex;align-items:flex-start;gap:4px;margin-top:2px;line-height:1.45;}
+.pv-who .bl.ft .fi{flex:none;line-height:0;margin-top:2px;}
+.pv-who .bl.ft.om{color:var(--red,#c11628);font-weight:700;}

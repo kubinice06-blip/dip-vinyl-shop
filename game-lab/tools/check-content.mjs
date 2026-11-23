@@ -457,6 +457,7 @@ export function contentProblems(C, E) {
   bad.push(...apexProblems(C, E));
   bad.push(...encoreProblems(C, E));
   bad.push(...lineupProblems(C, E));  // 第 I 波 I-2 上場＋耐聽
+  bad.push(...marketProblems(C, E));  // 第 I 波 I-3a 市集
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
   bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
@@ -1304,6 +1305,46 @@ export function lineupProblems(C, E) {
   ok(!/刮傷|刮痕/.test(JSON.stringify([U, V])), '耐聽不用「刮傷」（聽起來是永久損壞；SPEC-I §A-4）');
   ok(!/帶上場/.test(JSON.stringify([C.daily || {}, C.seeds || {}])), '種子（唱片櫃帶進一趟）說「帶來」，不說「帶上場」（SPEC-I §A-3）');
   ok(C.lineupTag === '新', 'C.lineupTag');
+  return bad;
+}
+// 第 I 波 I-3a 市集（SPEC-I §6.2、§6.3、§7.3 d；契約 wave-i/build3/CONTRACT.md）：C.waveC.stall.mode／fair、樂歷 Lv4／6／7、畫面字
+export function marketProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const W = C.waveC || {}, S = W.stall || {}, F = S.fair, int = (x, lo, hi) => Number.isInteger(x) && x >= lo && x <= hi;
+  ok(['pick', 'market'].includes(S.mode), "waveC.stall.mode 'pick'｜'market'（現在 " + S.mode + '）');
+  if (!ok(F && typeof F === 'object', '沒有 C.waveC.stall.fair（市集的數字）')) return bad;
+  const SLOT = ['dig', 'trade', 'gear', 'snack', 'gig', 'promo', 'fortune', 'consign', 'home'];   // ＝engine STALL_KINDS（市集抽的攤）
+  ok(int(F.slots, 1, 6) && int(F.relaySlots, F.slots, 8) && int(F.tiles, 3, 6) && int(F.slotCash, 0, 2000) && int(F.paidMax, 1, F.tiles) && int(F.studioMax, 1, 9),
+    'fair：slots 1–6、relaySlots ≥ slots、tiles 3–6、slotCash 0–2000、paidMax 1–tiles、studioMax 1–9');
+  ok(Array.isArray(F.first) && F.first.length >= F.slots && new Set(F.first).size === F.first.length && F.first.every(k => SLOT.concat(['warehouse']).includes(k)), 'fair.first：第一個市集固定組（不重複、認得的攤、不少於時段數）');
+  const Wt = F.weights || {};
+  ok(Object.keys(Wt).length >= F.tiles && Object.keys(Wt).every(k => SLOT.includes(k) && typeof Wt[k] === 'number' && Wt[k] > 0), 'fair.weights：只放市集抽的攤、權重 >0、種類 ≥ tiles');
+  ok(!('snack' in (S.weights || {})) || Wt.snack > 0, 'fair.weights 要有 snack（飲料攤取代宵夜）');
+  ok(['gig', 'promo', 'home'].some(k => Wt[k] > 0) && (S.blue || []).some(k => Wt[k] > 0), 'fair.weights 要抽得到藍框（樂歷）攤');
+  const FT = F.fortune || {};
+  ok(Array.isArray(FT.price) && FT.price.length === 3 && FT.price[0] === 0 && FT.price.every(x => int(x, 0, 10000)) && FT.price[1] <= FT.price[2], 'fair.fortune.price：三張、第 1 張 0、往後不降');
+  ok(typeof FT.omen === 'number' && FT.omen >= 0 && FT.omen <= 1 && int(FT.omenAtk, 1, 3), 'fair.fortune：omen 0–1、omenAtk 1–3');
+  ok(Array.isArray(FT.pool) && FT.pool.length >= 3 && FT.pool.every(x => ['boss', 'elite', 'aces', 'top'].includes(x)) && new Set(FT.pool).size === FT.pool.length, "fair.fortune.pool：三種以上、只有 boss／elite／aces／top（凶籤另算）");
+  const D = F.drinks || {};
+  ok(D.tea && int(D.tea.hp, 1, 10) && D.tea.price === 0, 'fair.drinks.tea：冬瓜茶回聲望、免費（＝C 波宵夜）');
+  if (E && E.WAVEC) ok(JSON.stringify(E.WAVEC.stall.fair) === JSON.stringify(F) && E.WAVEC.stall.mode === 'pick', "C.waveC.stall.fair 要＝engine WAVEC 預設（engine 預設 mode 'pick'）");
+  const K = C.career || {}, L = k => (K.ladder || []).find(x => x && x.key === k);
+  ok(L('tile6') && L('tile6').lv === 4 && L('tile6').marketTiles === F.tiles + 1 && L('tile6').needs === 'market', 'career.ladder Lv4 tile6（marketTiles＝tiles＋1、needs market）');
+  ok(L('fortune2') && L('fortune2').lv === 6 && L('fortune2').fortuneFree === 1 && L('fortune2').needs === 'market', 'career.ladder Lv6 fortune2（fortuneFree 1、needs market）');
+  ok(L('dig4') && L('dig4').lv === 7 && L('dig4').digN === 4 && L('dig4').needs === 'market', 'career.ladder Lv7 dig4（digN 4、needs market）');
+  for (const k of ['tile6', 'fortune2', 'dig4']) ok(((K.ui || {}).ladder || {})[k], 'career.ui.ladder.' + k + ' 名字');
+  const U = W.ui || {};
+  const need = { mkName: [], mkTitle: [], mkHint: [], mkSlots: ['{n}', '{m}'], mkSlotUsed: [], mkNoSlot: [], mkLeave: ['${n}'], mkLeaveNone: [], mkLeaveAsk: ['{k}', '${n}'], mkLeaveYes: [], mkLeaveNo: [],
+    mkWent: [], mkBack: [], mkFlip: ['${n}'], mkFlipFree: [], mkFlipTap: [], mkOmenWarn: [], mkSlipBoss: ['{c}', '{o}', '{h}'], mkSlipElite: ['{c}', '{o}', '{h}'], mkSlipAces: ['{list}'],
+    mkSlipAce: ['{pos}', '{attr}'], mkSlipAcesNone: [], mkSlipTop: [], mkOmen: ['{pos}', '{n}'], mkOmenTag: [], mkTea: ['{n}'], mkTeaFull: [], mkStudio: [], mkStudioLeft: ['{n}'],
+    mkStudioDemo: ['{n}'], mkRecord: ['{name}'], mkDemoAuto: ['{n}'] };
+  for (const k of Object.keys(need)) ok(typeof U[k] === 'string' && U[k] && need[k].every(t => U[k].includes(t)), 'waveC.ui.' + k + (need[k].length ? '（要有 ' + need[k].join('') + '）' : ''));
+  const FS = W.fairStations || {}, FL = W.fairLines || {};
+  for (const k of ['fortune', 'snack', 'gear', 'market']) ok(typeof FS[k] === 'string' && FS[k], 'waveC.fairStations.' + k);
+  ok(FS.market === '黑膠特賣' && FS.snack === '飲料攤' && FS.gear === '小物攤', '市集攤名：黑膠特賣、飲料攤、小物攤（SPEC-I §A-4、§6.3）');
+  for (const k of Object.keys(FL)) ok(typeof FL[k] === 'string' && [...FL[k]].length <= 16, 'waveC.fairLines.' + k + ' ≤16 字');
+  ok(!/安可|刮傷|刮痕/.test(JSON.stringify([U, FS, FL])), '市集的字不准「安可」「刮傷」');
   return bad;
 }
 export function bgmProblems(C) {

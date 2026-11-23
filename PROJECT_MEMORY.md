@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-23｜dip-vinyl-shop｜game-lab 第 I 波 I-3a：市集搬到店中央、一次攤開、每輪 3 個時段（出貨）
+
+- **背景**：店主 11-20「中間的市集什麼的 不要分兩邊跑 然後不要只有選項 要有現場可以互動的 可以有算命攤 特殊小物 卡牌升級？ 加buff」。規格 scratchpad `v5/wave-i/SPEC-I.md` §6；報告 `wave-i/build3/FINAL.md`、出貨後全套 `build3/FINAL-flip.md`；裁定 `wave-i/RULING.md`（I-3a 段）。
+- **做了什麼**：每打完一輪，店中央島台一次攤開 5 攤（中繼點＋黑膠特賣＋錄音室；樂歷 Lv4 起 6 攤），不再左右二選一；每輪 3 個時段（月亮，中繼點 4），進攤不扣、做了第一個動作才扣；收攤剩下的時段每個 +$300（確認框只在這一趟第一次）。算命改「翻籤」（打開就翻第一張、第 2 張 $1,000、第 3 張 $2,000 有 25% 凶籤：那位客人品味 +1；籤記在來客條頭像上、翻開停住等點）；宵夜改飲料攤冬瓜茶（回 2 聲望、免費、只花時段；島台倒一杯）；器材行改小物攤（配件那半）；黑膠市集改名黑膠特賣；挖寶點一張翻一張；錄音室在 `?fac=1` 試錄派樹下一格、沒旗標照舊錄 demo。市集鏡頭、熟客讓出島台、樂歷細條搬到市集頂列、樂歷 Lv4／6／7 三格。`?market=0` 看 C 波二選一。
+- **主要檔案**：`game-lab/{engine.js（marketSession／marketDo／marketPolicy／fixMarket…）,content.js（C.waveC.stall.mode 'market'、fair）,stalls.js,stalls.css,stage.js,shop-props.js,crowd.js,ui.js,style.css,shops/dip.json（cameras.market）,sim.mjs（--market）,index.html（?v=96）}`、`test/engine.test.mjs`（#37）、`tests/{e2e-market.mjs（新）,e2e-lib,e2e-stall,e2e-loot,e2e-checkpoint,e2e-crowd,e2e-bgm,e2e-career}.mjs`。
+- **驗證**：市集 vs 二選一 n4000 會讀的到第 50 位 +0.52、一般玩家中位 +0、新手不變；I-ALL 第一次（全開 vs 全關）−1.68／+1／新手 +1.12；--tier 3、?fac=1 F1／F5、LS、W1／W4／W5、M3、K2、D 系列過；`--market off` sim 跟改前位元相同；engine 2,937,887／0、單元全過；e2e 兩尺寸全套（market 27、career 48…）＋e2e.spec 50/50×2（出貨狀態）。
+- **留著的**：K1′ 前半（挖寶、調貨、倉庫太冷、店裡唱盤 98%）、側袋普及讓全部場聽膩 4.1%、算命情報 sim 沒建模（+0.52 是下限）、career 深趟偏難——都在 I-3b 重判；I-3b 算命接主站心情選歌題庫（店主 11-23）。
+
 ### 2026-11-22｜dip-vinyl-shop｜game-lab 第 I 波 I-2：每輪挑五張上場＋耐聽（出 5 次聽膩、坐一輪板凳回滿）
 
 - **背景**：店主 11-20「卡好像可以設計類似耐久度的東西 或出牌次數限制 不然才第15回合 專輯已經固定不會想再購買或換牌」「一次能帶五張上場 發燒配件 或是 天賦 能讓帶上場的」。規格 scratchpad `v5/wave-i/SPEC-I.md` §3、§5（12-1 店主沒回＝照建議甲：每輪挑）；報告 `wave-i/build2/FINAL.md`、合併棒三後 `build2/FINAL-post.md`；裁定 `wave-i/RULING.md`（I-2 段）。

@@ -117,3 +117,94 @@
 /* 來客條頭像角落：算命看過（藏家）、踢館帖那一輪 */
 .lb-night .nc .hd .st-mk{position:absolute;top:1px;right:1px;line-height:0;background:#fff;padding:1px;}
 .lb-night .nc .hd .st-mk.dr{left:1px;right:auto;}
+/* ---------- 第 I 波 I-3a 市集（pending.mode 'market'；SPEC-I §6.4）：底部攤位格＋攤位面板（≤55%）；前綴 st-m* ---------- */
+/* 頂列：月亮（時段）＋錢＋樂歷細條（ui 畫的 .cx-live 搬進來，不另起一行） */
+.st-night.mk{padding-top:4px;padding-bottom:0;}   /* 市集那塊（stalls.js 加 .mk）：一般輪 8 格＋收攤三列也要塞進 375×548 的 55% */
+.st-night.mk .nh{margin-bottom:2px;}
+.st-mk{gap:4px;}
+.st-mtop{display:flex;align-items:center;gap:8px;min-height:16px;min-width:0;}
+.st-mtop .mn{flex:none;font:700 12px/16px var(--mono);color:var(--ink);}
+.st-mtop .st-lxs{flex:1 1 auto;min-width:0;display:flex;justify-content:flex-end;}
+.st-mtop .st-lxs .cx-live{flex:1 1 auto;min-width:0;min-height:16px;margin:0;justify-content:flex-end;}
+.st-mtop .st-lxs .cx-live .t{flex:0 1 auto;text-align:right;}
+.st-mtop .st-lxs .cx-live{cursor:pointer;}
+.st-mtop .st-lxs .cx-live .cx-bar{display:none;}   /* 修正棒：頂列放不下（375 寬 4 顆月亮＋錢）會把「Lv N！…」截掉——進度條收掉，字優先；還放不下＝點一下吐司寫整句 */
+.st-mtop .st-sw{flex:none;margin-right:-4px;font:700 11px/16px var(--zh);color:var(--gray2);}   /* 月亮前面「時段」 */
+.st-moons{display:inline-flex;align-items:center;gap:4px;flex:none;}
+.st-moon{position:relative;display:block;width:14px;height:14px;border-radius:50%;background:#f0c75e;box-shadow:0 0 0 1px var(--ink);overflow:hidden;}
+.st-moon::after{content:'';position:absolute;left:-5px;top:-3px;width:14px;height:14px;border-radius:50%;background:#fff;}   /* 沒有像素圖時的退路：缺一角＝月亮 */
+.st-moon.off{background:#dcdcdc;box-shadow:0 0 0 1px #b5b5b5;}
+.st-moon.px{width:16px;height:16px;border-radius:0;background:none;box-shadow:none;overflow:visible;line-height:0;}   /* 像素月亮（亮＝還剩、灰＝用掉） */
+.st-moon.px::after{display:none;}
+.st-moon .st-mpx{display:block;image-rendering:pixelated;}
+.st-moon.drop{animation:stMoonOut .6s ease-out;}
+@keyframes stMoonOut{0%{transform:scale(1.5);filter:drop-shadow(0 0 3px #f0c75e);}100%{transform:none;filter:none;}}
+.st-shd .st-moons{margin-left:2px;}
+.st-shd .mn{flex:none;font:12px/16px var(--mono);color:var(--gray2);}
+/* 攤位格：375 寬一列 3 格、每格 ≥100×64；收攤鈕＝最後一格（佔那一列剩下的格；整列滿＝另起一列 ≥44） */
+.st-mgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;}
+.st-mt{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:6px;row-gap:1px;align-content:center;
+  min-width:0;min-height:64px;padding:6px 6px;background:#fff;border:1px solid var(--ink);font-family:var(--zh);color:var(--ink);text-align:left;cursor:pointer;}
+.st-mt .st-ic{grid-row:1 / span 2;align-self:center;}
+.st-mt .nm{font-size:13px;font-weight:700;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.st-mt .pr{font-size:10px;line-height:1.25;color:var(--gray2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.st-mt.blue{border:2px solid var(--c);}
+.st-mt.blue .pr{color:var(--c);}
+.st-mt.dare{border:2px solid var(--red);}
+.st-mt .fr{position:absolute;top:0;right:0;font-size:10px;font-weight:700;line-height:1.3;padding:0 4px;background:var(--ink);color:#fff;pointer-events:none;}
+.st-mt .mo{position:absolute;top:3px;right:3px;line-height:0;pointer-events:none;}   /* 扣時段的攤：右上角小月亮（＝用 1 個時段；時段用完＝灰） */
+.st-mt .mo .st-mpx{display:block;image-rendering:pixelated;}
+.st-mt:not(.free) .nm{margin-right:10px;}
+.st-mt.went{background:#f1f1f1;border-color:#c8c8c8;color:var(--gray);cursor:default;}
+.st-mt.went .st-ic{opacity:.35;filter:grayscale(1);}
+.st-mt.went .pr{color:var(--gray);}
+.st-mt .ck{position:absolute;right:5px;bottom:3px;font:700 16px/1 var(--zh);color:var(--ink);pointer-events:none;}
+.st-mt.off{opacity:.45;}
+.st-mk .st-mleave{min-height:64px;margin:0;padding:4px 6px;background:#fff;border:2px solid var(--ink);font:700 13px/1.35 var(--zh);color:var(--ink);cursor:pointer;}
+.st-mk .st-mleave.row{min-height:44px;}
+.st-mk .st-mleave.pri{background:var(--ink);color:#fff;}
+/* 攤位面板（lb-sheet.stall.st-mk） */
+.lb-sheet.st-mk .st-cups{margin-top:8px;display:flex;flex-direction:column;gap:8px;}
+.lb-sheet.st-mk .st-cup{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;}
+.lb-sheet.st-mk .st-cup .st-ic{flex:none;padding:2px;background:#fff;border-radius:3px;box-sizing:content-box;}   /* 冬瓜茶手搖杯（MK_ICON.snack）放在白底小方塊上（深色鈕上看得到；不反白） */
+.lb-sheet.st-mk .st-dtap{margin:6px 0 0;text-align:center;font-size:13px;font-weight:700;color:var(--ink);}   /* 挖寶：點一張翻開（翻了就收） */
+.lb-sheet.st-mk .st-nodes{margin-top:6px;display:flex;flex-direction:column;gap:6px;}
+.lb-sheet.st-mk .st-node{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:48px;padding:6px 10px;text-align:left;}
+.lb-sheet.st-mk .st-node b{font-size:14px;}
+.lb-sheet.st-mk .st-node b i{font-style:normal;font:700 11px var(--mono);margin-right:6px;padding:0 4px;border:1px solid var(--ink);}
+.lb-sheet.st-mk .st-node span{font-size:12px;font-weight:400;color:var(--gray2);line-height:1.45;}
+/* 算命攤翻籤：三張封套一列一張；翻開的停住（不自己翻、不自己消失） */
+.st-slips{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
+.st-slip{display:flex;align-items:center;gap:10px;min-height:48px;padding:4px 6px;border:1px solid var(--line);background:#fff;}
+.st-slip .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;font-size:13px;line-height:1.45;font-weight:700;}
+.st-slip .tx small{font-size:11px;font-weight:400;color:var(--gray2);}
+.st-slip .tx .warn{color:var(--red);}
+.st-slip .tx .q{color:var(--gray);}
+.st-slip .tx .lb-btn{align-self:flex-start;min-height:44px;padding:4px 12px;font-size:13px;}   /* 修正棒：40→44（點擊區） */
+.st-slip.down{background:#fafafa;}
+.st-slip.omen{border:2px solid var(--red);}
+.st-slip.omen .tx{color:var(--red);}
+.st-sleeve{flex:none;position:relative;display:grid;place-items:center;width:40px;height:40px;padding:0;border:1px solid var(--ink);background:#fff;overflow:hidden;}
+.st-sleeve.back{background:#1b1b1b;cursor:default;}
+.st-sleeve.back .rec{position:absolute;left:10%;top:10%;width:80%;height:80%;border-radius:50%;background:repeating-radial-gradient(circle,#2c2c2c 0 1px,#141414 2px 3px);}
+.st-sleeve.back .rec::after{content:'';position:absolute;left:35%;top:35%;width:30%;height:30%;border-radius:50%;background:#c79bd8;}
+button.st-sleeve.back{cursor:pointer;}
+.st-slip.next .st-sleeve.back{box-shadow:0 0 0 2px #f0c75e;}
+.st-slip.next button.st-sleeve{width:44px;height:44px;}   /* 可以點的封套（翻下一張）≥44；蓋著、翻開的照 40／36 */
+.st-sleeve.cv .lb-cv{width:40px;height:40px;}
+.st-sleeve.omen{background:var(--red);color:#fff;font:700 16px var(--zh);}
+.st-slip .stars.st-slst{font-size:11px;}
+.st-slip.st-turn{animation:stSlipIn .3s ease-out;}
+@keyframes stSlipIn{0%{transform:rotateX(80deg);opacity:.3;}100%{transform:none;opacity:1;}}
+@media (max-height:620px){
+  .lb-sheet.st-mk .st-mq{display:none;}   /* 矮螢幕：站主一句收掉（面板 ≤55%） */
+  .st-mt{min-height:64px;padding:4px 5px;}
+  .st-slips{gap:4px;margin-top:4px;}
+  .st-slip{min-height:44px;padding:2px 6px;}
+  .st-sleeve,.st-sleeve.cv .lb-cv{width:36px;height:36px;}
+  .st-slip.next button.st-sleeve{width:44px;height:44px;}
+  .st-slip.next{min-height:48px;}
+  /* 市集面板 ≤55%（375×548 約 300 px）：底那條黏在底（C 波 72% 面板定的 static 在這裡會把「回攤位」擠到要捲 200 px 才看得到） */
+  .lb-sheet.stall.st-mk .st-foot{position:-webkit-sticky;position:sticky;}
+}
+@media (prefers-reduced-motion:reduce){.st-moon.drop,.st-slip.st-turn{animation:none;}}

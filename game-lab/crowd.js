@@ -7,7 +7,10 @@
  *   DipLabCrowd.configure({ stage()→Stage, content:C, speed()→倍速, paused()→bool, seqTag()→'seedKey#runNo#pos'|null, titleTag()→'title#…',
  *                           ownerFree()→bool, shelfCard(binKey, u)→卡 id|null, reduced()→bool, on:bool,
  *                           chat?(who, info)→{bubbles:[{text,quote?,src?}], cat}|Promise, chatEnd?(who), fastK()→?fast=1 的 4｜1, hint?(kind, dry), quiet?()→bool })
- *   start('live'|'calm'|'still', o?)   o.duel：對決畫面（開打清對戰區＋鏡頭收完還被切頭的先藏）；o.reserve：[stop id]（攤位：c-pay 給站主）
+ *   start('live'|'calm'|'still', o?)   o.duel：對決畫面（開打清對戰區＋鏡頭收完還被切頭的先藏）；o.reserve：[stop id]（攤位：c-pay 給站主）；
+ *                                      o.market：第 I 波 I-3a 市集（還是 still：原地不進不出；島邊的人讓開、只開 c-listen／c-pay，見 market）
+ *   market(on)                         第 I 波 I-3a 市集（SPEC-I §6.10、§8；stalls.js 開市集叫 true、收攤叫 false）：島邊八個停留點上的人讓到試聽桌、櫃檯前（拿著翻到的那張結帳）或出門；
+ *                                      市集期間只開 c-listen、c-pay（島台＝攤位，熟客不站在亮起的格上、不當站主）
  *   stop(o?)                           o.keep：藏起來、記住誰在哪（去你家／台北，舞台重掛回來照記憶放回去）；沒給＝店裡清空
  *   redraw() ; pause(on) ; yield([x,y]|spot) ; clearSpot([x,y]|spot, o?) ; clearRoute(points, o?) ; clearDuel() → Promise
  *   state() ; clear() ; doorLog()
@@ -53,7 +56,7 @@
     return { mode: 'off', t: 0, last: 0, iv: 0, slots: {}, k: 0, tag: '', door: { swing: -1e9, guestAt: -1e9 }, nextEntry: null, waitRoom: false,
       guarantee: null, screenAt: 0, left: {}, leftLook: {}, log: [], blocks: [], reserve: {}, blockXY: [], pDest: null, pLast: null, emoteUntil: 0,
       manualPause: false, kept: false, stopsCache: null, hideAt: 0, cut: null, warm: null, warmAt: 0, fresh: true,
-      navL: null, navObs: null, navNodes: null, rcache: {}, rcacheN: 0, last3: {}, moving: {}, enc: null };
+      navL: null, navObs: null, navNodes: null, rcache: {}, rcacheN: 0, last3: {}, moving: {}, enc: null, market: false };
   }
 
   // ------------------------------------------------------------------ 小工具
@@ -232,9 +235,10 @@
     var minY = num(cf2('title', 'minY'), 189);
     var from = o.fromDoor ? doorKey() : null;
     var list = stops().filter(function (s) {
+      if (!mkOpen(s)) return false;                             // 第 I 波 I-3a 市集：島邊八格關著（只開試聽桌、櫃檯前）
       if (o.side && s.side !== o.side) return false;
       if (o.noShort && s.short) return false;
-      if (o.noPay && s.kind === 'pay') return false;            // 櫃檯前只有「拿著翻到的那張去結帳」才去（nextMove 的 pay 那條）
+      if (o.noPay && s.kind === 'pay' && !S.market) return false;   // 櫃檯前只有「拿著翻到的那張去結帳」才去（nextMove 的 pay 那條）；市集：從島邊讓出來的人可以直接去結帳
       if (o.noListen && s.kind === 'listen') return false;
       if (o.onlyDig && s.kind !== 'dig') return false;
       if (o.calm && (s.y < minY || s.short)) return false;
@@ -1055,6 +1059,34 @@
   function ensureTimer() { if (!S.iv) { S.last = Date.now(); S.iv = setInterval(tick, TICK); } }
   function stopTimer() { if (S.iv) { clearInterval(S.iv); S.iv = 0; } }
 
+  // ------------------------------------------------------------------ 第 I 波 I-3a 市集（SPEC-I §6.10、§8）：島台＝攤位
+  //   市集期間（S.market）停留點只開試聽桌（listen）、櫃檯前（pay）；島邊八格（dig）上的人（含正走去的）讓開：
+  //   先挑走得過去的試聽桌／櫃檯前（去櫃檯前＝拿著剛翻到的那張結帳），都不行就出門（路被擋著也照走，跟讓位一樣寧可擦身）。still 模式原地不進不出，收攤後回 live 照常換箱
+  function mkOpen(s) { return !S.market || s.kind === 'listen' || s.kind === 'pay'; }
+  function marketMove(sl) {
+    var spd = num(cf('yieldSpeed'), 48), from = sl.at && stopById(sl.at);
+    var nx = pick(sl, { u: h01(sl.seed + '#mk#' + (++sl.visits)) });
+    if (nx) {
+      if (nx.kind === 'pay') sl.holding = shelfCard(from, sl.seed) || sl.holding;
+      if (goStop(sl, nx, { spd: spd, keepHold: nx.kind === 'pay' })) { sl.plan = 0; sl.pay = false; return; }
+    }
+    if (!leave(sl, spd)) leave(sl, spd, true);
+  }
+  function marketClear() {
+    if (!S.market || !enabled() || S.mode === 'off' || S.mode === 'calm') return;
+    slotOn().forEach(function (sl) {
+      if (sl.phase === 'out' || sl.hiddenDuel) return;
+      var s = (sl.at && stopById(sl.at)) || (sl.stop && stopById(sl.stop));
+      if (s && mkOpen(s) && !(sl.side && sl.side.stop)) return;   // 已經在（或正走去）試聽桌／櫃檯前
+      marketMove(sl);
+    });
+  }
+  function market(on) {
+    S.market = on !== false;
+    if (S.market) marketClear();
+    return api;
+  }
+
   // ------------------------------------------------------------------ 模式
   function start(mode, o) {
     o = o || {};
@@ -1068,6 +1100,7 @@
     if (!o.duel) restoreHidden();
     S.reserve = {};
     (o.reserve || []).forEach(function (id) { S.reserve[id] = true; });
+    S.market = mode === 'still' && !!o.market;                  // 第 I 波 I-3a：市集期間（來客畫面重畫也照帶；其他畫面一律收起）
     if (mode === 'live') {
       var tag = (typeof H.seqTag === 'function' && H.seqTag()) || 'x';
       if (tag !== S.tag) { S.tag = tag; S.k = 0; S.nextEntry = null; }
@@ -1097,6 +1130,7 @@
     } else {
       S.mode = 'still';
       slotOn().forEach(function (sl) { if (S.reserve[sl.at] || ((sl.walking || sl.halted) && sl.stop && S.reserve[sl.stop])) relocate(sl, { avoid: function (s) { return !!S.reserve[s.id]; } }); });
+      if (S.market) marketClear();
       if (o.duel) {
         clearDuel();
         clearTimeout(S.hideAt);
@@ -1122,12 +1156,13 @@
         sl.hiddenDuel = false;
         sl.kept = true;
       });
-      S.kept = true;
+      S.kept = true; S.market = false;
       S.mode = 'off'; stopTimer();
       // 回來時 remount() 看 has()＝false 就照 sl.stop put 回去
       return api;
     }
     clearAll();
+    S.market = false;
     S.mode = 'off'; S.blocks = []; S.blockXY = []; S.reserve = {}; S.guarantee = null; S.nextEntry = null; S.waitRoom = false; S.pDest = null;
     stopTimer();
     return api;
@@ -1482,7 +1517,7 @@
   }
   function stateOf() {
     var t = st();
-    return { mode: S.mode, on: enabled(), paused: hostPaused(), t: Math.round(S.t), tag: S.tag, k: S.k, max: maxN(), n: inside().length,
+    return { mode: S.mode, market: !!S.market, on: enabled(), paused: hostPaused(), t: Math.round(S.t), tag: S.tag, k: S.k, max: maxN(), n: inside().length,
       locked: S.mode === 'off' ? null : doorLocked(), nextEntryIn: S.nextEntry == null ? null : Math.round(S.nextEntry - S.t), waitRoom: S.waitRoom,
       guarantee: S.guarantee ? { done: !!S.guarantee.done, due: S.guarantee.due == null ? null : Math.round(S.guarantee.due - S.t) } : null,
       reserve: Object.keys(S.reserve), blocks: S.blocks.map(function (b) { return { who: b.who, door: b.door }; }), pDest: S.pDest ? S.pDest.xy : null,
@@ -1508,6 +1543,7 @@
     redraw: function () { chatClose(); slotOn().forEach(function (sl) { var t = st(); if (t) t.say(sl.id, null); }); return api; },   // 來客畫面重畫：人與位置照留、聊天泡泡收掉
     pause: function (on) { S.manualPause = on !== false; return api; },
     yield: yieldTo,
+    market: market,                                             // 第 I 波 I-3a 市集（見檔頭）
     clearSpot: clearSpot,
     clearRoute: clearRoute,
     clearDuel: clearDuel,

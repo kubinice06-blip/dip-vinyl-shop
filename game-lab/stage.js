@@ -18,6 +18,7 @@
  *   Stage.tag(id, text, 'e'|'p', 'L'|'R') ; Stage.untag(id?) ; Stage.float(id, text|{text,sub}, cls?)
  *   Stage.anchor(id) → HTMLElement (#anc-<id>) ; Stage.hotRect(hotId) → DOMRect
  *   Stage.highlight([{ ids:[hotId…], label }]) ; highlight([]) 清掉
+ *   Stage.isle(src|null) ; isleState()   第 I 波 I-3a 市集：島台小道具（攤位圖示、去過的變暗、翻籤；src 每格讀一次，見 isleTick）
  *   Stage.hotspots() ; Stage.tap(hotId) ; Stage.reveal(ms) ; Stage.interact(mode) ; Stage.allow(fn|patterns|null)
  *   Stage.legacy(name) → spot ; Stage.destroy()
  *   Stage.duelIn({ foe, ms }) / duelOut({ screen }) → Promise   進出對決的走位＋鏡頭（選用的便利函式；shop.route 回 [] 時用直線距離估路長）
@@ -203,6 +204,7 @@
       shop.face('f', 1).face('p', -1);
       shop.sprite('p', 'player');   // 你的小人（還沒 put 之前不畫）
       if (L.crowd && typeof shop.addHot === 'function') Object.keys(DYN).forEach(function (k) { shop.addHot(DYN[k]); });   // 活店：回到有 crowd 的店，補回執行期熱點
+      ISL.reg = {}; ISL.seen = -1; shop.onTick(isleTick);   // 第 I 波 I-3a 市集：島台小道具（每格讀一次 ISL.src）
       applyInteract();
       return shop;
     }
@@ -701,6 +703,49 @@
       }).filter(Boolean);
     }
 
+    // ---------------- 第 I 波 I-3a 市集：島台小道具（SPEC-I §6.4-2、4；畫在 shop-props.js isleDraw＝duelfx 的 glow）
+    //   isle(src)：src()→{ key（這一場市集）, cells:[{ hot:'bin:…', kind, went, open, rows（12×12 圖示）}], slips:{ hot, total, faces:[籤種類…] }|null }｜null（收掉）；
+    //     每格讀一次（ui.js 給；不是市集回 null）。這裡補幾何：那一箱的 binTable 道具、去過的那一箱看得到的那一塊（被前面的箱子、人擋住的不算；鏡頭換了才重算）
+    //   翻籤動畫只演看著它翻的那一次：同一個 key 第一次讀到就已經翻開的（重新整理回來、換畫面回來）直接畫翻好的
+    var ISL = { src: null, key: '', seen: -1, flipAt: [], reg: {}, pourN: null, pourAt: null };
+    function isleProp(hot) { var k = String(hot || '').replace(/^bin:/, ''); return (L.props || []).filter(function (o) { return o.bin && o.bin.key === k && o.type === 'binTable'; })[0] || null; }
+    function isleSpans(hot) {
+      var v = shop.view(), key = v.y + ',' + v.h, c = ISL.reg[hot];
+      if (c && c.key === key) return c.spans;
+      var R = typeof shop.hotRegion === 'function' ? shop.hotRegion(hot) : null, out = [];
+      if (R) for (var j = 0; j < R.box[3]; j++) {
+        var x0 = -1;
+        for (var i = 0; i <= R.box[2]; i++) {
+          var on = i < R.box[2] && R.m[j * R.box[2] + i];
+          if (on && x0 < 0) x0 = i; else if (!on && x0 >= 0) { out.push([R.box[1] + j, R.box[0] + x0, R.box[0] + i]); x0 = -1; }
+        }
+      }
+      ISL.reg[hot] = { key: key, spans: out };
+      return out;
+    }
+    function isleTick(rt) {
+      if (!shop) return;
+      var s = null;
+      if (ISL.src) { try { s = ISL.src(); } catch (e) { console.error(e); } }
+      if (!s) { shop.state.isle = null; ISL.key = ''; return; }
+      if (s.key !== ISL.key) { ISL.key = s.key; ISL.seen = -1; ISL.flipAt = []; ISL.pourN = s.pour ? s.pour.n : null; ISL.pourAt = null; }   // 換一場市集：已經倒過的不再演
+      var po = s.pour && isleProp(s.pour.hot) ? s.pour : null;      // 飲料攤倒一杯（修正棒）：新的一杯＝從這一格開始演（約 3 秒）
+      if (po && po.n !== ISL.pourN) { ISL.pourN = po.n; ISL.pourAt = rt; }
+      var sl = s.slips && isleProp(s.slips.hot) ? s.slips : null, faces = sl ? (sl.faces || []).slice(0, 4) : [];
+      if (ISL.seen < 0) ISL.seen = faces.length;                               // 第一次讀到：已經翻開的不演
+      for (var i = ISL.seen; i < faces.length; i++) ISL.flipAt[i] = reduced() ? null : rt;   // 減少動態：直接畫翻好的
+      ISL.seen = Math.max(ISL.seen, faces.length);
+      var cells = [];
+      (s.cells || []).forEach(function (c) {
+        var o = isleProp(c.hot); if (!o) return;
+        var went = !!c.went && !c.open;
+        var pouring = !!(po && po.hot === c.hot && ISL.pourAt != null && rt - ISL.pourAt < 3.2);
+        cells.push({ prop: o, hot: c.hot, kind: c.kind || '', rows: Array.isArray(c.rows) ? c.rows : null, went: went, open: !!c.open, spans: went ? isleSpans(c.hot) : null, slip: !!(sl && sl.hot === c.hot), pour: pouring });
+      });
+      shop.state.isle = { cells: cells, slips: sl ? { prop: isleProp(sl.hot), hot: sl.hot, total: sl.total | 0 || 3, faces: faces, flipAt: ISL.flipAt.slice(0, faces.length) } : null,
+        pour: po && ISL.pourAt != null && rt - ISL.pourAt < 3.2 ? { prop: isleProp(po.hot), hot: po.hot, kind: po.kind, at: ISL.pourAt, rm: reduced() } : null };
+    }
+
     // ---------------- 公開 API
     var WALK = {};   // id → { to, done }：最後一次 walk 的終點（finish 用）
     var stage = {
@@ -794,6 +839,13 @@
       anchor: function (id) { return shop.anchor(id); },
       hotRect: function (id) { return shop.hotRect(hotId(id)); },
       highlight: function (list) { shop.highlight(list || []); return stage; },
+      // 第 I 波 I-3a 市集：島台小道具的來源（見上面 isleTick）；null＝收掉。isleState()＝現在畫的（測試、截圖用；沒有＝null）
+      isle: function (src) { ISL.src = typeof src === 'function' ? src : null; ISL.key = ''; if (shop && !ISL.src) shop.state.isle = null; return stage; },
+      isleState: function () {
+        var I = shop && shop.state.isle; if (!I) return null;
+        return { cells: I.cells.map(function (c) { return { hot: c.hot, kind: c.kind, went: c.went, open: c.open, slip: c.slip, icon: !!c.rows }; }),
+          slips: I.slips ? { hot: I.slips.hot, total: I.slips.total, faces: I.slips.faces.slice(), anim: I.slips.flipAt.map(function (t) { return t != null; }) } : null };
+      },
       // 箱子（SPEC-v4 §2.3.5、§2.3.8）：從 layout 讀；focus／unfocus＝抽屜開著時把那一箱留在畫面上
       bins: function () {
         return (L.props || []).filter(function (o) { return o.bin && o.bin.key; }).map(function (o) {
