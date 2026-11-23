@@ -151,7 +151,7 @@ async function runSize(browser, w, h) {
       // 打贏第 10 位 → 寶箱 → 攤位（不是中繼點攤位：沒有市集、錄音室）
       await beatBoss(page);
       await passLoot(page, {});
-      await page.waitForSelector('.st-pick .st-row', { timeout: 15000 }).catch(() => {});
+      await page.waitForSelector('.st-pick .st-row, .st-mk .st-mgrid .st-mt', { timeout: 15000 }).catch(() => {});   // 第 I 波 I-3a（11-23 出貨＝市集）：C 波兩列或市集攤位格
       await sleep(500);
       const st = await stallState(page);
       await clearStall(page);
@@ -166,6 +166,7 @@ async function runSize(browser, w, h) {
         d2.type === 'draft' && d2.ck === 1 && JSON.stringify(titles) === JSON.stringify(wantTitles) && orders.length === 4 && orders.every(o => o === 'atk,def,hp') &&
         n10.pos === 10 && n10.from === 10 && n10.boss && n10.swap && swapBtn && found1 && !n10.safety && n10.bargain &&
         st.stall && st.p && !st.p.cp && !st.p.q.includes('market') && !(st.p.post || []).includes('market') && !(st.p.post || []).includes('studio') &&
+        (st.p.mode !== 'market' || (!st.p.tiles.includes('market') && !st.p.tiles.includes('studio'))) &&   // 11-23 市集：攤位格也沒有黑膠特賣、錄音室（只加）
         end && e.txt.indexOf(fill(x.cpFrom, { n: 10 })) >= 0 && e.from === 10 && e.lexp && e.lexp.base > 0;
       record(1, size, ok && !errs(page).length, `checkpoints ${JSON.stringify(cps)}；「${cpTitle}」${JSON.stringify(opts)}；選秀 ${JSON.stringify(d1)}；重新整理 ${JSON.stringify(d2)}；題目 ${JSON.stringify(titles)}；升級題順序 ${JSON.stringify(orders)}；` +
         `第 10 位 ${JSON.stringify(n10)} 撿的算撿來的 ${found1}、換王牌鈕 ${swapBtn}；之後攤位 cp ${st.p && st.p.cp} post ${JSON.stringify(st.p && st.p.post)}；結算 ${end} from ${e.from} lexp ${JSON.stringify(e.lexp)}；${errTxt(page)}`);
@@ -285,8 +286,11 @@ async function runSize(browser, w, h) {
       await C(page, bad => {
         window.__lab.jump(16);
         const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent;
-        E.stallSession(r, Cn); r.pending.groups = [['dig', 'snack'], ['gig', 'promo']];
-        E.choose(r, Cn, { type: 'stallPick', group: 0 });
+        E.stallSession(r, Cn);
+        if (r.pending.mode === 'market') {                    // 第 I 波 I-3a（11-23 出貨＝市集）：攤位格裡一定有挖寶攤、真的進去（stallEnter）＝站的貨
+          if (!r.pending.tiles.includes('dig')) r.pending.tiles[0] = 'dig';
+          E.choose(r, Cn, { type: 'stallEnter', kind: 'dig' });
+        } else { r.pending.groups = [['dig', 'snack'], ['gig', 'promo']]; E.choose(r, Cn, { type: 'stallPick', group: 0 }); }
         r.pending.cur.cards[0] = bad;
         r.consign = { card: bad, due: r.round + 2 };
         r.found = (r.found || []).concat([bad]);

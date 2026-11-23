@@ -62,9 +62,11 @@ import path from 'path';
 import { execFileSync } from 'child_process';
 import { createRequire } from 'module';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, SEED, jsClick, tapAt, waitScreen, noScroll, scrollOk, openTitle, seedRun,
-  answerBargain, watchSay, tapReady, duelReady, passLoot, clearStall, prologueToDuel, luSkip } from './e2e-lib.mjs';
+  answerBargain, watchSay, tapReady, duelReady, passLoot, clearStall, prologueToDuel, luSkip, marketOpen } from './e2e-lib.mjs';
 // 樂歷頁階梯做好的格數：8 格＋上場制開著時 Lv3「上場多帶一張替補」（第 I 波 I-2；content needs:'lineup'；出貨開）
-const LAD8 = 8 + ((createRequire(import.meta.url)('../content.js').lineup || {}).on ? 1 : 0);
+//   ＋市集模式時 Lv4「市集多一攤」、Lv6「算命攤第 2 張免費」、Lv7「挖寶攤多一張蓋牌」三格（第 I 波 I-3a；content needs:'market'；11-23 出貨開，照 I-2 加 bench 那一格的做法）
+const CN0 = createRequire(import.meta.url)('../content.js'), MARKET = ((CN0.waveC || {}).stall || {}).mode === 'market';
+const LAD8 = 8 + ((CN0.lineup || {}).on ? 1 : 0) + (MARKET ? 3 : 0);
 
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
@@ -135,7 +137,7 @@ async function watchToasts(page) {
 const toasts = page => C(page, () => (window.__toasts || []).slice());
 const CU = page => C(page, () => { const Cn = window.DipLabContent; return Object.assign({}, Cn.career.ui, { aceTitle: Object.assign({}, Cn.aceTitle), aceNewbie: Object.assign({}, Cn.aceNewbie || {}), best: Cn.summary.best,
   tierOpen: Cn.trial.ui.tierOpen, tier1: (Cn.trial.tiers[0] || {}).text,
-  retryMenu: Cn.trial.ui.retryMenu.slice(), retryPlea: Cn.lines.owner.retryPlea, pickSub: Cn.seeds.ui.pickSub, gigPer: Cn.waveC.stall.gig.lexp }); });
+  retryMenu: Cn.trial.ui.retryMenu.slice(), retryPlea: Cn.lines.owner.retryPlea, pickSub: Cn.seeds.ui.pickSub, gigPer: Cn.waveC.stall.gig.lexp, mkLiveUp: Cn.waveC.ui.mkLiveUp }); });
 const stored = page => C(page, () => JSON.parse(localStorage.getItem('dipGameLab_v1') || 'null'));
 // 一份 v8 存檔（D 版形狀）：o.career（null＝沒有這個鍵＝C 波存檔）、o.run（{ace, idx, talent:true＝照 career 的 talentArgs 開, set:{…}}；沒給＝沒有進行中的）、
 //   o.runs、o.best、o.lexpBank、o.lastAce、o.own（再收 n 張能當種子的，src run）。這派預設那張（start）、送的（gift）算擁有
@@ -262,7 +264,8 @@ async function runSize(browser, w, h) {
       }
       await sleep(500);
       const line = await C(page, () => { const b = document.querySelector('.lb-foot.cxline button'); return b ? { t: b.innerText.trim(), dot: !!b.querySelector('.cx-dot') } : null; });
-      const lineWant = h > 600 ? fill(x.line, { n: toLv, m: 8, name: x.ladder.power }) : fill(x.lineShort, { n: toLv });
+      // 第 I 波 I-3a（11-23 出貨＝市集）：Lv5 的下一格＝市集模式 Lv6「算命攤第 2 張免費」（needs:'market'）；C 波照舊 Lv8 戰力天賦
+      const lineWant = h > 600 ? (MARKET ? fill(x.line, { n: toLv, m: 6, name: x.ladder.fortune2 }) : fill(x.line, { n: toLv, m: 8, name: x.ladder.power })) : fill(x.lineShort, { n: toLv });
       // 重新整理：不再入帳
       await openTitle(page, Q()); await sleep(2200);
       const t2 = await toasts(page);
@@ -658,10 +661,14 @@ async function runSize(browser, w, h) {
       await openTitle(page, Q()); await jsClick(page, '[data-a=cont]'); await nightReady(page);
       const x = await CU(page);
       await C(page, () => { window.__lab.jump(16); const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent; r.bestStreak = 5; r.lexp = Object.assign({}, r.lexp || {}, { gig: 0 });
-        E.stallSession(r, Cn); r.pending.groups = [['gig', 'promo'], ['snack', 'dig']]; window.__lab.money(20000); window.__lab.go('night'); });
-      await page.waitForFunction(() => document.querySelector('.st-pick .st-row'), null, { timeout: 10000 }).catch(() => {});
+        E.stallSession(r, Cn);
+        // 第 I 波 I-3a（11-23 出貨＝市集）：市集＝攤位格一定有演唱會（點那一格進去）；C 波（?market=0）照舊排組
+        if (r.pending.mode === 'market') { if (!r.pending.tiles.includes('gig')) r.pending.tiles[0] = 'gig'; } else r.pending.groups = [['gig', 'promo'], ['snack', 'dig']];
+        window.__lab.money(20000); window.__lab.go('night'); });
+      await page.waitForFunction(() => document.querySelector('.st-pick .st-row') || document.querySelector('.st-mk .st-mgrid .st-mt'), null, { timeout: 10000 }).catch(() => {});
       await sleep(700);
-      await tapReady(page, '.st-pick .st-row[data-g="0"]'); await sleep(400); await tapReady(page, '.st-pick .st-row[data-g="0"]'); await sleep(400);
+      if (await page.$('.st-mk .st-mgrid .st-mt')) await marketOpen(page, 'gig');   // 市集：真點演唱會那一格
+      else { await tapReady(page, '.st-pick .st-row[data-g="0"]'); await sleep(400); await tapReady(page, '.st-pick .st-row[data-g="0"]'); await sleep(400); }
       const up = await page.waitForFunction(() => !!document.querySelector('.lb-sheet.stall.st-k-gig .st-lx'), null, { timeout: 12000 }).then(() => true, () => false);
       await sleep(500);
       const g0 = await C(page, () => { const r = window.__lab.run; return { lx: (document.querySelector('.lb-sheet.stall .st-lx') || {}).textContent || '', full: document.querySelector('.lb-sheet.stall .st-lx').classList.contains('full'),
@@ -806,7 +813,7 @@ async function runSize(browser, w, h) {
 
   // ---------------------------------------------------------------- 14 攤位頂列樂歷細條（SPEC-I §7.3 b；不快轉＝停 3 秒照真的時間）
   if (want(14)) {
-    const QN = Q('');
+    const QN = Q('&market=0');   // 第 I 波 I-3a（11-23 出貨＝市集）：這一項量的是 C 波攤位（兩列＋底下包包列）的頂列細條＝帶 ?market=0；市集頂列（月亮那列）看 e2e-market #1、跨級短句看本檔 #18
     const { ctx, page } = await newPage(browser, w, h, { dpr: SHOTS ? 2 : 1 });
     try {
       await openTitle(page, QN);
@@ -1146,7 +1153,8 @@ async function runSize(browser, w, h) {
       const said0 = await C(page, () => window.__said.length);
       const strip = await C(page, () => { const s = document.querySelector('.cx-live'); if (!s) return null; const run = window.__lab.run, S = window.__lab.save;
         const Lv = window.DipLabEngine.careerLive(window.DipLabContent, run, { best: run.farBefore | 0, tier: run.tier | 0, xp: S.career.xp });
-        return { up: s.classList.contains('up'), t: s.querySelector('.t').textContent, lv: +s.dataset.lv, L: Lv, pos: run.pos, xp: S.career.xp, stall: !!(run.pending && run.pending.type === 'stall') }; });
+        return { up: s.classList.contains('up'), t: s.querySelector('.t').textContent, lv: +s.dataset.lv, L: Lv, pos: run.pos, xp: S.career.xp, stall: !!(run.pending && run.pending.type === 'stall'),
+          mk: !!(run.pending && run.pending.mode === 'market'), inTop: !!s.closest('.st-mk .st-mtop') }; });
       await sleep(1500);
       const saidSt = await C(page, n => window.__said.slice(n).filter(o => o.id === 'o').map(o => o.t), said0);
       // 第 6 位輸到結算
@@ -1166,7 +1174,8 @@ async function runSize(browser, w, h) {
         lvUp && P && P.h3 === fill(L.title, { n: 2 }) && P.sub.indexOf(L.sub) < 0 && J(P.dom) === '["atk","def","hp"]' && P.level === 2 && P.maxHp === p1.maxHp && P.seen && P.stored &&
         said1.filter(t => t === L.first).length === 1 && r1.pos === 2 && r1.level === 2 && r1.xp === 0 && r1.maxHp === p1.maxHp && r1.atk === 1 &&
         wins.length === 4 && wins.every(Boolean) && st && st.stall && strip && strip.stall && strip.pos === 6 && strip.up && strip.L.from === 1 && strip.L.level === 2 && strip.lv === 2 &&
-        strip.t === fill(x.liveUp, { n: 2 }) && strip.xp === 0 && !saidSt.some(t => /Lv|樂歷/.test(t)) &&
+        // 第 I 波 I-3a（11-23 出貨＝市集）：市集頂列（月亮那列）跨級那一刻換短句 mkLiveUp（修正棒 #9：原句放不下）；C 波照舊 liveUp
+        strip.t === (strip.mk ? fill(x.mkLiveUp, { n: 2 }) : fill(x.liveUp, { n: 2 })) && (!strip.mk || strip.inTop) && strip.xp === 0 && !saidSt.some(t => /Lv|樂歷/.test(t)) &&
         ended && e0.runs === 1 && e0.ent && e0.ent.gain && e0.ent.gain.total === spec.total && spec.total >= xpAt(2) && !e0.ent.gain.first && e0.xp === spec.total;
       record(18, size, ok && !errs(page).length, `新帳號 ${J(fresh)}；序章 對決 ${toDuel} 打贏 ${proWin} → 第 1 位 ${n1 && true} ${J(p1)}、序章事件 ${J(chPro)}；` +
         `第 1 位 打贏 ${w1} 章 ${J(ch)}（順序 章 ${iCh}／戰利品 ${iLoot}／升級 ${iLv}）面板 ${J(P)} 老闆 ${J(said1)} → ${J(r1)}；第 2–5 位 ${J(wins)} → 攤位細條 ${J(strip)} 老闆 ${J(saidSt)}；` +

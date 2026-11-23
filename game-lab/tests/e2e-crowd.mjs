@@ -635,7 +635,8 @@ async function lc9(browser, w, h, size) {
   await stallCase(browser, w, h, size, 'LC9 擠', [['akai', 'c-rock'], ['afang', 'c-pay'], ['laochen', 'c-folk']], false);
 }
 async function stallCase(browser, w, h, size, label, spawns, strict) {
-  const { ctx, page } = await openNight(browser, w, h, { fast: false, seed: { money: 9000 }, settle: 1500 });
+  // 第 I 波 I-3a（11-23 出貨＝市集）：LC9 測的是 C 波二選一的攤位（宵夜老闆走到 stSnack、同業站主那格讓開）＝帶 ?market=0；市集的活店看 e2e-market #11
+  const { ctx, page } = await openNight(browser, w, h, { fast: false, seed: { money: 9000 }, settle: 1500, q: '&crowd=1&market=0' });
   const SNACK = SP.stSnack, REGU = SP.regular;
   try {
     await quiet(page);

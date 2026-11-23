@@ -431,10 +431,33 @@ export async function passLoot(page, o = {}) {
 export const stallState = page => page.evaluate(() => {
   const r = window.__lab && window.__lab.run, p = r && r.pending, st = window.DipLabStalls && window.DipLabStalls.state ? window.DipLabStalls.state() : null;
   return { screen: window.__lab ? window.__lab.screen() : null, stall: !!(p && p.type === 'stall'), money: r ? r.money : null, st,
-    p: p && p.type === 'stall' ? { after: p.after, cp: p.cp, first: p.first, groups: p.groups, pick: p.pick, q: p.q.slice(), k: p.k, post: p.post, cur: p.cur ? p.cur.kind : null, key: p.cur ? p.cur.key : null, cards: p.cur && p.cur.cards ? p.cur.cards.slice() : null } : null,
-    go: !!document.querySelector('[data-a=go]'), rows: document.querySelectorAll('.st-pick .st-row').length };
+    p: p && p.type === 'stall' ? { after: p.after, cp: p.cp, first: p.first, groups: p.groups, pick: p.pick, q: p.q.slice(), k: p.k, post: p.post, cur: p.cur ? p.cur.kind : null, key: p.cur ? p.cur.key : null, cards: p.cur && p.cur.cards ? p.cur.cards.slice() : null,
+      mode: p.mode || 'pick', tiles: Array.isArray(p.tiles) ? p.tiles.slice() : null, free: Array.isArray(p.free) ? p.free.slice() : null, left: p.left != null ? p.left : null } : null,
+    go: !!document.querySelector('[data-a=go]'), rows: document.querySelectorAll('.st-pick .st-row').length,
+    mt: document.querySelectorAll('.st-mk .st-mgrid .st-mt').length };   // 第 I 波 I-3a（11-23 出貨＝市集）：p.mode／tiles／free／left、畫面攤位格數 mt（只加鍵）
 });
+// 第 I 波 I-3a（11-23 出貨＝市集）：「攤位畫出來了」——C 波（pick）＝兩列；市集＝攤位格一格不少（畫面格數＝pending.tiles）
+export const stallDrawn = s => !!(s && s.p) && (s.p.mode === 'market' ? s.mt > 0 && s.mt === (s.p.tiles || []).length : s.rows === 2);
+// 位置連續 3 次（每 80 ms）沒動才算停好（市集攤位格畫好之後鏡頭還會動 0.3 秒；同 e2e-market settle）
+export const settle = (page, sel, ms = 2500) => page.waitForFunction(([sel]) => {
+  const e = document.querySelector(sel); if (!e) return false;
+  const b = e.getBoundingClientRect(), k = [b.left, b.top, b.width, b.height].map(Math.round).join(','), W = window;
+  if (W.__stK !== k) { W.__stK = k; W.__stN = 0; return false; }
+  return ++W.__stN >= 3;
+}, [sel], { timeout: ms, polling: 80 }).then(() => true, () => false);
+// 市集（pending.mode 'market'）：攤位格真點一攤 → 等那一攤的面板升好（.lb-sheet.stall.st-mk.st-k-<kind>）。回 true＝面板開了
+export async function marketOpen(page, kind, ms = 10000) {
+  const grid = await page.waitForFunction(() => { const s = window.DipLabStalls && window.DipLabStalls.state(); return !!s && s.mode === 'market' && s.phase === 'grid' && !!document.querySelector('.st-mk .st-mt') && !document.querySelector('.lb-sheet.stall'); }, null, { timeout: ms }).then(() => true, () => false);
+  if (!grid) return false;
+  const sel = `.st-mk .st-mt[data-k="${kind}"]`;
+  await settle(page, sel);
+  if (!(await tapReady(page, sel))) return false;
+  return page.waitForFunction(k => { const s = window.DipLabStalls.state(), e = document.querySelector('.lb-sheet.stall.st-mk.st-k-' + k); return !!s && (s.phase === 'station' || s.phase === 'hold') && !!e && !e.classList.contains('arming') && !e.closest('.arming'); }, kind, { timeout: ms })
+    .then(() => settle(page, '.lb-sheet.stall.st-mk.st-k-' + kind)).then(() => true, () => false);
+}
 // 今天不逛了（底部面板／站的面板標題列那顆小字鈕 → 確認「不逛了」）；錄音室自己帶過、寄賣領取那站照「先不拿」。
+//   第 I 波 I-3a（11-23 出貨＝市集）：市集＝攤位格的「收攤」（.st-pick.st-mk [data-a=leave]，上面那條選擇器本來就認得）→ 有確認就按「收攤」；
+//     攤位面板開著（站／算命停住）＝先按「回攤位」／「記下了」回格子再收攤；收攤之後的上場面板照舊 luSkip。
 //   沒有攤位就直接回。回 { ok, cash（這一下多的錢）, taps, screen }
 export async function clearStall(page, o = {}) {
   const ms = o.ms || 20000, t0 = Date.now();
@@ -452,6 +475,11 @@ export async function clearStall(page, o = {}) {
     if (yes) { await tapReady(page, '.st-ask [data-a=leaveYes]'); taps++; await sleep(500); continue; }
     if (s.st && s.st.phase === 'station' && s.p && s.p.cur === 'consignGet' && s.p.pick != null) {   // 不逛了之後寄賣領取那站照原貨留著：先不拿
       if (await page.$('.lb-sheet.stall [data-a=pass]')) { await tapReady(page, '.lb-sheet.stall [data-a=pass]'); taps++; await sleep(500); continue; }
+    }
+    if (s.st && s.st.mode === 'market' && (s.st.phase === 'station' || s.st.phase === 'hold')) {   // 市集：面板開著＝回攤位格（不扣時段）／算命停住＝記下了
+      const bk = ['.lb-sheet.stall.st-mk [data-a=back]', '.lb-sheet.stall.st-mk [data-a=noted]', '.lb-sheet.stall.st-mk [data-a=notedLeave]'];
+      let hit = null; for (const b of bk) if (await page.$(b)) { hit = b; break; }
+      if (hit) { await tapReady(page, hit); taps++; await sleep(500); continue; }
     }
     const lv = (await page.$('.lb-sheet.stall [data-a=leave]')) ? '.lb-sheet.stall [data-a=leave]' : (await page.$('.st-pick [data-a=leave]')) ? '.st-pick [data-a=leave]' : null;
     if (lv && !(s.st && (s.st.phase === 'studio' || s.st.phase === 'walk'))) { await tapReady(page, lv); taps++; await sleep(400); continue; }

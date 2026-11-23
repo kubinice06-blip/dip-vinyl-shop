@@ -18,7 +18,7 @@
 //      後兩條是重新整理回來的那一箱）→ 升級 → 今天的攤位（來客畫面、run 還在）→ 再重新整理：run 還在、還是攤位（resumeRun 不刪整趟）
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, jsClick, waitScreen, duelReady, tapAt, tapReady, seededContinue, openTitle, advanceUntil, noScroll, scrollOk,
-  watchSay, passLoot, lootState, lootReady, stallState, resolveHands } from './e2e-lib.mjs';
+  watchSay, passLoot, lootState, lootReady, stallState, stallDrawn, resolveHands } from './e2e-lib.mjs';
 
 import { createRequire } from 'module';
 const CONTENT = createRequire(import.meta.url)('../content.js');
@@ -353,10 +353,11 @@ async function runSize(browser, w, h) {
         await openTitle(page, Q('')); await jsClick(page, '[data-a=cont]');
         await waitScreen(page, 'night', 15000); await sleep(900);
         const rr = await stallState(page);
-        const okP = pl.ok && a.screen === 'night' && a.stall && a.rows === 2 && !a.go && b1.run &&
+        // 第 I 波 I-3a（11-23 出貨＝市集）：「之後是今天的攤位」原本看 C 波兩列（rows === 2）；市集＝攤位格一格不少（stallDrawn：畫面格數＝pending.tiles；C 波照舊兩列）
+        const okP = pl.ok && a.screen === 'night' && a.stall && stallDrawn(a) && !a.go && b1.run &&
           (how === 'take' ? b1.bag === b0.bag + 1 && b1.found >= 1 : how === 'relic' ? b1.relics === b0.relics + 1 && b1.bag === b0.bag && b0.btn === x.chestRelic : b1.money === b0.money + CSK && b1.bag === b0.bag) &&
-          rr.stall && rr.screen === 'night' && rr.rows === 2;
-        paths.push(`${how} ${okP}（錢 ${b0.money}→${b1.money}、包包 ${b0.bag}→${b1.bag}、配件 ${b0.relics}→${b1.relics}；之後 ${a.screen} 攤位 ${a.stall}/${a.rows} 列；重新整理 ${rr.screen} 攤位 ${rr.stall}）`);
+          rr.stall && rr.screen === 'night' && stallDrawn(rr);
+        paths.push(`${how} ${okP}（錢 ${b0.money}→${b1.money}、包包 ${b0.bag}→${b1.bag}、配件 ${b0.relics}→${b1.relics}；之後 ${a.screen} 攤位 ${a.stall}/${a.p && a.p.mode === 'market' ? a.mt + ' 格（' + (a.p.tiles || []).length + '）' : a.rows + ' 列'}；重新整理 ${rr.screen} 攤位 ${rr.stall}/${rr.p && rr.p.mode === 'market' ? rr.mt + ' 格' : rr.rows + ' 列'}）`);
         if (!okP) paths.ok = false;
       }
       record(7, size, okShow && paths.ok !== false && !errs(page).length, `送牌那段 ${one}；木箱 ${shut.crate}「${shut.pity}」${tOpen} ms 自己掀、${tAll} ms 翻完；${JSON.stringify(p)}；${paths.join('；')}；${errTxt(page)}`);

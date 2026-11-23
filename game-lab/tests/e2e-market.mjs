@@ -1,5 +1,6 @@
 // game-lab/tests/e2e-market.mjs：第 I 波 I-3a 市集殼（scratchpad v5/wave-i SPEC-I §6.8、§6.7 M5／P3、§10；引擎契約 build3/CONTRACT.md）端對端測試。測試棒。
 //   SPEC-I §6.8 說它「取代 e2e-stall」：施工期間出貨 C.waveC.stall.mode 還是 'pick'（C 波二選一＝緊急退回），e2e-stall 照測 pick；這支一律帶 ?market=1（＝市集）。
+//   11-23 主線開旗標（mode 'market' 出貨）：這支不再帶 ?market=1（照出貨預設＝市集）；C 波對照（#12 的 pick 那組）帶 ?market=0；e2e-stall 一律帶 ?market=0。
 //   I-3b 的攤（唱片醫生、熱美式／高粱、轉蛋機）不在這支。
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   node game-lab/tests/e2e-market.mjs
@@ -25,6 +26,7 @@
 //   7  §6.7 M5 全點一般輪 ≤10 下：會讀的策略（engine cPolicy，跟畫面「自動」同一個；全點＝每個時段都用掉〔slotMin −9〕、算命翻滿〔flips 3〕、錢夠）照它的選擇真點，
 //      從攤位格出現點到「下一位」出現（含收攤、上場面板「就這五張」＝P3 也算它）；挖寶「收這張」＝翻那一張＋收（2 下）；算命翻滿＝打開＋2 張＋「記下了」（停住等點）。
 //      第 15、25 位之後兩輪都量（固定種子表：第 25 位之後那輪策略在同業調貨買兩張＋回攤位）
+//      主線裁定（11-23 RULING「I-3a 市集殼收尾」M5 判法）：上場面板「就這五張」那一下歸 P3（#6）、不算市集點擊 → 判「市集點擊 ≤10」、上場面板那一下 ≤1
 //   8  §6.8-6 退版：市集 pending 的存檔（攤位格、一攤開著〔算命翻了第 1 張〕兩種）→ 上一版頁面（main，沒有市集）載入 → run 不作廢、照 C 波跑一組（挖寶＋宵夜）→ 回來客、主控台 0 錯；
 //      回新頁面照常（沒有 pending、0 錯）
 //   9  §6.8-7 重新整理停在攤位面板：挖寶開著（翻了一張、沒收）→ 重新整理 → 同一攤同一批貨、月亮數對、這攤沒打勾；算命翻到第 2 張 → 重新整理 → 兩張翻開、第 3 張的鈕、月亮 −1
@@ -54,7 +56,7 @@ const errs = page => (page._errors || []).filter(e => !/favicon/.test(e));
 const errTxt = page => `錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ').slice(0, 200) : ''}`;
 const fill = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
 const mtx = n => Number(n).toLocaleString('en-US');
-const QM = (x = '') => Q('&fast=1&market=1' + x);
+const QM = (x = '') => Q('&fast=1' + x);   // 第 I 波 I-3a（11-23）出貨＝市集（content stall.mode 'market'）：不再帶 ?market=1（原本 '&fast=1&market=1'），照出貨預設跑
 // 字（C.waveC.ui＋攤名：市集模式 fairStations 蓋過 stations）
 const UI = page => C(page, () => { const W = window.DipLabContent.waveC; return Object.assign({}, W.ui, { st: Object.assign({}, W.stations, W.fairStations), fair: W.stall.fair, gearPrice: W.stall.gearPrice, demoLexp: W.stall.demoLexp, heal: (window.DipLabContent.trial.ui || {}).heal }); });
 
@@ -624,10 +626,10 @@ async function runSize(browser, w, h) {
         await marketAt(page, after, { money: 30000, leave: 1 });
         const s0 = await mk(page);
         const c0 = page._clicks, log = [];
-        let ok = true;
+        let ok = true, lu = 0;
         for (let g = 0; g < 40; g++) {
           if (await C(page, () => window.__lab.screen() === 'night' && !!document.querySelector('[data-a=go]') && !(window.__lab.run.pending && window.__lab.run.pending.type === 'stall') && !document.querySelector('#panel > .lb-sheet.lineup'))) break;
-          if (await page.$('#panel > .lb-sheet.lineup [data-a=luGo]')) { await tapReady(page, '#panel > .lb-sheet.lineup [data-a=luGo]'); log.push('luGo'); await sleep(600); continue; }
+          if (await page.$('#panel > .lb-sheet.lineup [data-a=luGo]')) { const k0 = page._clicks; await tapReady(page, '#panel > .lb-sheet.lineup [data-a=luGo]'); lu += page._clicks - k0; log.push('luGo'); await sleep(600); continue; }
           const st = await C(page, () => { const s = window.DipLabStalls.state(); return s ? s.phase : null; });
           if (st !== 'grid' && st !== 'station' && st !== 'hold' && st !== 'leave') { await sleep(250); continue; }
           if (st === 'station' && !(await C(page, () => { const e = document.querySelector('.lb-sheet.stall.st-mk'); return !!e && !e.classList.contains('arming'); }))) { await sleep(200); continue; }
@@ -640,11 +642,14 @@ async function runSize(browser, w, h) {
           await sleep(400);
         }
         const s1 = await mk(page);
-        runs.push({ after, taps: page._clicks - c0, log, ok: ok && s1.go && !s1.mode, used: s0.p.slots, tiles: s0.p.tiles });
+        runs.push({ after, taps: page._clicks - c0, lu, log, ok: ok && s1.go && !s1.mode, used: s0.p.slots, tiles: s0.p.tiles });
       }
-      const max = Math.max(...runs.map(r => r.taps));
-      record(7, size, runs.every(r => r.ok) && max <= 10 && !errs(page).length,
-        `M5 全點（cPolicy slotMin −9、flips 3、錢 $30,000）：` + runs.map(r => `第 ${r.after} 位之後 ${J(r.tiles)} → ${r.taps} 下 ${J(r.log)}${r.ok ? '' : '（沒走完）'}`).join('；') + `；最多 ${max} 下（≤10）；${errTxt(page)}${missTxt(page)}`);
+      // 主線裁定（RULING「I-3a 市集殼收尾」11-23）：M5 判法＝上場面板「就這五張」那一下歸 P3（#6 照算）、不算市集點擊；市集點擊（攤位格出現到收攤）≤10。
+      //   原本 max(taps) ≤10（taps 含 luGo）。上場面板那一下另外要 ≤1（P3 的上場那一下）
+      const max = Math.max(...runs.map(r => r.taps - r.lu)), maxAll = Math.max(...runs.map(r => r.taps));
+      record(7, size, runs.every(r => r.ok && r.lu <= 1) && max <= 10 && !errs(page).length,
+        `M5 全點（cPolicy slotMin −9、flips 3、錢 $30,000）：` + runs.map(r => `第 ${r.after} 位之後 ${J(r.tiles)} → 市集 ${r.taps - r.lu} 下＋上場面板 ${r.lu} 下 ${J(r.log)}${r.ok ? '' : '（沒走完）'}`).join('；') +
+        `；市集最多 ${max} 下（≤10；含上場面板 ${maxAll}）；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(7, size, false, 'exception ' + e.message); }
     await ctx.close();
   }
@@ -814,7 +819,7 @@ async function runSize(browser, w, h) {
     try {
       const out = {};
       for (const mode of ['market', 'pick']) {
-        await openTitle(page, Q('&fast=1&market=' + (mode === 'market' ? 1 : 0)));
+        await openTitle(page, Q('&fast=1' + (mode === 'market' ? '' : '&market=0')));   // 11-23 出貨＝市集：市集那組不帶旗標（原本 &market=1），C 波那組照帶 ?market=0
         out[mode] = await C(page, mode => {
           const E = window.DipLabEngine, Cn = window.DipLabContent;
           let xp = 0; for (; xp < 100000 && E.careerLevel(Cn, xp).level < 7; xp += 50);

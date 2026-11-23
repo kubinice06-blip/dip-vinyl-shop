@@ -55,7 +55,7 @@
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import fs from 'fs';
 import path from 'path';
-import { launch, newPage, openTitle, Q, record, results, sleep, jsClick, waitScreen, tapHot, tapReady, seedRun, infoOpen, closeInfo, noScroll, scrollOk, duelReady, lootReady } from './e2e-lib.mjs';
+import { launch, newPage, openTitle, Q, record, results, sleep, jsClick, waitScreen, tapHot, tapReady, seedRun, infoOpen, closeInfo, noScroll, scrollOk, duelReady, lootReady, marketOpen } from './e2e-lib.mjs';
 
 const SIZES = (process.env.LAB_SIZES || '390x664,375x548').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 const ONLY = process.env.LAB_BGM ? new Set(process.env.LAB_BGM.split(',').map(s => s.trim())) : null;
@@ -660,13 +660,19 @@ async function runSize(browser, w, h) {
       await C(page, () => {                                               // 打完第 15 位的攤位、第一組先「店裡唱盤」再挖寶攤（e2e-stall stallAt 同一招）
         window.__lab.jump(16);
         const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent;
-        E.stallSession(r, Cn); r.pending.groups = [['home', 'dig'], ['gig', 'promo']];   // 下一站不要排公關片（到站會自己放那張公關片）
+        E.stallSession(r, Cn);
+        // 第 I 波 I-3a（11-23 出貨＝市集）：市集＝攤位格一定有「店裡唱盤」（點那一格進去；不進別攤＝不會放公關片）；C 波（?market=0）照舊排組
+        if (r.pending.mode === 'market') { if (!r.pending.tiles.includes('home')) r.pending.tiles[0] = 'home'; }
+        else r.pending.groups = [['home', 'dig'], ['gig', 'promo']];   // 下一站不要排公關片（到站會自己放那張公關片）
         window.__lab.money(9000); window.__lab.go('night');
       });
-      await page.waitForSelector('.st-pick .st-row', { timeout: 10000 }).catch(() => {}); await sleep(700);
+      await page.waitForSelector('.st-pick .st-row, .st-mk .st-mgrid .st-mt', { timeout: 10000 }).catch(() => {}); await sleep(700);
       const sq = await st(page), q = sq.B.pl ? sq.B.pl.queue.slice() : [], pick = q[1] || q[0];
-      await tapReady(page, '.st-pick .st-row[data-g="0"]'); await sleep(350);
-      await tapReady(page, '.st-pick .st-row[data-g="0"]');
+      if (await page.$('.st-mk .st-mgrid .st-mt')) await marketOpen(page, 'home');   // 市集：真點「店裡唱盤」那一格
+      else {
+        await tapReady(page, '.st-pick .st-row[data-g="0"]'); await sleep(350);
+        await tapReady(page, '.st-pick .st-row[data-g="0"]');
+      }
       const atHome = await page.waitForFunction(() => { const s = window.DipLabStalls.state(); return !!s && s.phase === 'station' && s.kind === 'home' && !!document.querySelector('.lb-sheet.stall.st-k-home'); }, null, { timeout: 12000 }).then(() => true, () => false);
       await sleep(300);
       const n1 = await nCalls(page), t1 = Date.now();
