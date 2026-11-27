@@ -3667,7 +3667,7 @@ section('29 第 C 波（SPEC-C §11.1）：全關＝舊行為、戰利品列、�
     ok(EN.roundGuests(run, CW)[4].fortune === fb && !('fortune' in EN.roundGuests(run, CW)[0]), 'roundGuests: fortune on the boss slot');
     const s0 = JSON.stringify(run); ok(act(run, 'take').error === 'badAct' && JSON.stringify(run) === s0, 'wrong act → unchanged'); act(run, 'ok');
     ok(act(run, 'ok', { cardId: 'nope' }).error === 'notOffered', 'home: card must be in the bag');
-    const r = act(run, 'ok', { cardId: run.bag[0] }); ok(r.ok && r.effects.some(x => x.nowPlaying === run.bag[0]) && run.lexp.home === 30 && !run.pending, 'home: now playing + lexp 30');
+    const r = act(run, 'ok', { cardId: run.bag[0] }); ok(r.ok && r.effects.some(x => x.nowPlaying === run.bag[0]) && run.lexp.home === CW.waveC.stall.homeLexp && !run.pending, 'home: now playing + lexp = content homeLexp');
     const w = newW('wh', { relics: ['dustcover', 'stylus', 'cleaner'] }); winToW(w, CW, 6); fakeStall(w, [['warehouse', 'home'], ['dig', 'snack']]); pickG(w, 0);
     ok(!w.pending.cur.relics.length && w.pending.cur.cards.length === 2, 'warehouse with 3 relics → two records instead');
     const L0 = EN.stallLadder(CW, 0), L5 = EN.stallLadder(CW, 12);
@@ -6277,6 +6277,13 @@ section('38 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.6、§10；契約 w
         force(a, 'gear'); enter(a, A, 'gear'); if (a.pending.cur && 'gacha' in a.pending.cur) gach++; }
     }
     ok(same === n && doc === 0 && cups === 0 && gach === 0 && !EN.nsOn(K0) && EN.nsOn(K1), 'newStalls off: runs identical to content without the I-3b keys; no doctor / coffee / sorghum / gacha; no new run keys', { same, n, doc, cups, gach }); }
+
+  // ---- 市集的店裡唱盤樂歷（11-27 主線 +30→+20）：newStalls 開＝fair.homeLexp、關＝stall.homeLexp（I-3a 逐字）；數字都讀 content ----
+  { const got = [];
+    for (const K of [K1, K0]) { const r = toStall(newM('ns-home', K), K, 16); force(r, 'home'); const h0 = (r.lexp && r.lexp.home) | 0;
+      const ok1 = enter(r, K, 'home').ok, res = act(r, K, 'ok', { cardId: r.bag[0] }); got.push({ ok: ok1 && !!res.ok, d: ((r.lexp && r.lexp.home) | 0) - h0, eff: (res.effects || []).filter(e => e && e.lexp != null).map(e => e.lexp) }); }
+    ok(got[0].ok && got[1].ok && got[0].d === fairOf(K1).homeLexp && J(got[0].eff) === J([fairOf(K1).homeLexp]) && got[1].d === CW.waveC.stall.homeLexp && fairOf(K1).homeLexp !== CW.waveC.stall.homeLexp && EN.mkHomeLexp(K1) === fairOf(K1).homeLexp && EN.mkHomeLexp(K0) === CW.waveC.stall.homeLexp,
+      'market home lexp: newStalls on = fair.homeLexp, off = stall.homeLexp (I-3a)', got); }
 
   // ---- 唱片醫生：每一趟第 2 個市集起才抽得到（第一個市集固定組沒有）；照權重出現 ----
   { let first = 0, later = 0, at = 0;

@@ -1700,7 +1700,8 @@
         //     gold 金邊盤一張進包包、cash +$3,000、heal 回滿聲望、relic 配件一件（滿 3 件改 relicCash）、bump 這一輪下一位客人品味 +bumpAtk、ouch 聲望 −ouch（最少剩 1）
         newStalls: false,
         doctor: { w: 2, from: 2, wash: 800, press: 2000, pressMax: 3, acts: 2, star: 1, cap: 5 },
-        gacha: { price: [1000, 2000], cells: ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'], cash: 3000, relicCash: 2000, bumpAtk: 1, ouch: 3 } } },
+        gacha: { price: [1000, 2000], cells: ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'], cash: 3000, relicCash: 2000, bumpAtk: 1, ouch: 3 },
+        homeLexp: 20 } },   // 市集的店裡唱盤樂歷（newStalls 開著才讀；關著＝stall.homeLexp 30＝I-3a 逐字）：11-27 主線裁定 +30→+20（+30 出現時 96% 去、K1′ 上限 85；+20 85%、W5 對全關 1.00）
       // I-3a sim 棒（11-22；wave-i/build3/SIM.md）：冬瓜茶 3→2。聲望 +3 時市集 vs pick 會讀的到第 50 位 +2.15 點（n4000，§9 上限 +1）：第一個市集固定有飲料攤、
       //   一般輪 5 攤常出、3 個時段排得進去 → 每趟攤位回聲望 7.5 對 pick 宵夜 4.8。§9 ② 時段 3→2 量過沒用（+2.00，照喝）、+2 剛好回到 4.8（+0.2～+0.6 點）、+1 −1.6 點。
       //   退回＝hp 改回 3（stalls.js 字照 content 走）

@@ -45,7 +45,7 @@
 //   #1–#14 一律帶 &mood=0（算命攤不接題庫＝題庫抓不到的退路＝I-3a 原樣）
 //      （I-3b 測試棒 11-23 補）f 高粱（換掉熱美式、品味 +1、每位第一次被剋多扣 1、第二次不扣、杯子 2→1→沒了）、g 切磋不扣杯數（?crowd=1&enc=force；切磋裡照樣底氣 +1）、
 //      h 題庫抓不到（路由擋 ../mood-quiz.json＝照 I-3a 翻籤；擋 ../mood-bank.json＝三題照問、翻滿照 I-3a 停住）、i 想要清單滿 200（只唸不加、寫那句）、a 加引擎「第 4 張重壓被擋」（pressMax）
-//   16 §6.7 M5 全點（?newstalls=1、算命接題庫＝出貨的樣子）：照 #7 的判法（cPolicy slotMin −9、flips 3；上場面板那一下歸 P3、市集點擊 ≤10），第 15、25 位之後兩輪（照抽）
+//   16 §6.7 M5 全點（?newstalls=1、算命接題庫＝出貨的樣子）：照 #7 的判法（cPolicy slotMin −9、flips 3；上場面板那一下歸 P3；11-27 主線 M5 改判：每攤做滿 ≤7、一般輪市集點擊 ≤16），第 15、25 位之後兩輪（照抽）
 //      ＋打完第 35 位那輪（一般輪）固定 唱片醫生／小物攤（轉蛋）／算命／飲料／挖寶、主力聽膩＋新到一張（新三攤一定被策略挑到）；逐攤點擊數、不算題庫多問那一下的點擊數只列
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
@@ -302,7 +302,10 @@ async function policyTaps(page, o) {
     switch (a) {
       case 'flip': return { sel: [S + '.st-slip.next .lb-btn[data-a=flip]'], ch: a };
       case 'wash': return { sel: docOn(ch.cardId).concat([S + '[data-a=wash]']), ch: a };                                  // I-3b
-      case 'press': return { sel: docOn(ch.cardId).concat([S + '[data-a=press]', S + `[data-ax="${ch.attr}"]`]), ch: a + ' ' + ch.attr };
+      case 'press': {   // 11-27 修正棒：點上面那一列「只能壓」的那張＝直接挑軸（不用再點「重壓」）
+        const sw = docOn(ch.cardId), only = sw.length && !(cur.worn || []).includes(ch.cardId);
+        return { sel: sw.concat(only ? [] : [S + '[data-a=press]'], [S + `[data-ax="${ch.attr}"]`]), ch: a + ' ' + ch.attr };
+      }
       case 'gacha': return { sel: [S + '[data-a=gacha]'], ch: a };                                                       // 蛋：下一步（egg）
       case 'drink': return { sel: [S + `[data-drink="${ch.kind}"]`], ch: a };
       case 'take': {
@@ -1071,8 +1074,9 @@ async function runSize(browser, w, h) {
       await tapSheet(page, '[data-a=wash]');
       const d1 = await C(page, k => { const r = window.__lab.run, s = window.DipLabStalls.state(); return { wear: r.wear[k] || null, money: r.money, left: r.pending.left, open: !!(r.pending.cur && r.pending.cur.kind === 'doctor'), msg: s.doc && s.doc.msg }; }, ids[0]);
       await lay('doctorWashed');
-      await tapSheet(page, `[data-doc="${ids[2]}"]`);
-      await tapSheet(page, '[data-a=press]'); await lay('doctorAxis');
+      await tapSheet(page, `[data-doc="${ids[2]}"]`);   // 11-27 修正棒：只能壓的那張點了直接挑軸（沒有「重壓」那一下）
+      if (!(await page.$('.lb-sheet.stall [data-ax]'))) await tapSheet(page, '[data-a=press]');
+      await lay('doctorAxis');
       const ax = await C(page, () => { const b = [...document.querySelectorAll('.lb-sheet.stall [data-ax]')].find(x => !x.disabled); return b ? b.getAttribute('data-ax') : null; });
       const star0 = await C(page, ([k, a]) => window.DipLabContent.cards[k][a], [ids[2], ax]);
       await tapSheet(page, `[data-ax="${ax}"]`); await sleep(1500);
@@ -1372,7 +1376,7 @@ async function runSize(browser, w, h) {
           const st = await C(page, () => { const s = window.DipLabStalls.state(); return s ? s.phase : null; });
           if (st !== 'grid' && st !== 'station' && st !== 'hold' && st !== 'leave') { await sleep(250); continue; }
           if (st === 'station' && !(await C(page, () => { const e = document.querySelector('.lb-sheet.stall.st-mk'); return !!e && !e.classList.contains('arming'); }))) { await sleep(200); continue; }
-          const t = await policyTaps(page, { slotMin: -9, flips: 3 });
+          const t = await policyTaps(page, { slotMin: -9, flips: 3, keep: true });   // keep：全點的點法看一眼值得做就直接做（engine mkKeep；sim 預設不走）
           if (t.done) { await sleep(300); continue; }
           if (t.wait) { if (++idle > 40) { ok = false; log.push('stuck'); break; } await sleep(200); continue; }
           idle = 0;
@@ -1390,9 +1394,10 @@ async function runSize(browser, w, h) {
       }
       const max = Math.max(...runs.map(r => r.taps - r.lu)), maxAll = Math.max(...runs.map(r => r.taps));
       const newOnes = runs.reduce((a, r) => a.concat(r.log.filter(c => /enter (doctor|gear)|^(wash|press|gacha|egg|mood)|^drink/.test(c))), []);
-      record(16, size, runs.every(r => r.ok && r.lu <= 1 && !r.cp) && max <= 10 && !errs(page).length,
+      const perMax = Math.max(...runs.map(r => Math.max(0, ...Object.values(r.per))));   // 11-27 主線 M5 改判：每攤做滿 ≤7、一般輪全點 ≤16
+      record(16, size, runs.every(r => r.ok && r.lu <= 1 && !r.cp) && max <= 16 && perMax <= 7 && !errs(page).length,
         `M5 全點（?newstalls=1、算命接題庫；cPolicy slotMin −9、flips 3、錢 $30,000）：` + runs.map(r => `第 ${r.after} 位之後${r.cp ? '（中繼點）' : ''} ${J(r.tiles)} 時段 ${r.slots} → 市集 ${r.taps - r.lu} 下（不算題庫多問的那一下 ${r.taps - r.lu - r.mood}）＋上場面板 ${r.lu} 下 逐攤 ${J(r.per)} ${J(r.log)}${r.ok ? '' : '（沒走完）'}`).join('；') +
-        `；市集最多 ${max} 下（≤10；含上場面板 ${maxAll}）；新攤動作 ${newOnes.length} 下；${errTxt(page)}${missTxt(page)}`);
+        `；市集最多 ${max} 下（≤16；含上場面板 ${maxAll}）、單攤最多 ${perMax} 下（≤7）；新攤動作 ${newOnes.length} 下；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(16, size, false, 'exception ' + e.message + ' ' + (e.stack || '').split('\n')[1]); }
     await ctx.close();
   }

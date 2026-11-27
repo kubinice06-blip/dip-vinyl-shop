@@ -906,7 +906,7 @@
         return '<p class="note">' + esc(r.consign ? U('mkConsignBusy') : U('consignPick')) + '</p>' + gridHTML(ids.map(function (id) { return cardBtn(id, 'data-consign', NM('consign'), { disabled: full }); }).join(''), 4) + footHTML([backBtn()]);
       }
       case 'consignGet': return '<p class="note">' + esc(U('consignBack')) + '</p>' + gridHTML((cur.cards || []).map(function (id) { return cardBtn(id, 'data-take', U('take'), { cls: 'gold' }); }).join(''), 3) + footHTML([backBtn()]);
-      case 'home': return '<p class="note">' + esc(U('homePick')) + '</p>' + lexpLine(ST().homeLexp || 30) + gridHTML(r.bag.map(function (id) { return cardBtn(id, 'data-home', U('homePut')); }).join(''), 4) + footHTML([backBtn()]);
+      case 'home': return '<p class="note">' + esc(U('homePick')) + '</p>' + lexpLine(E().mkHomeLexp ? E().mkHomeLexp(C()) : ST().homeLexp || 30) + gridHTML(r.bag.map(function (id) { return cardBtn(id, 'data-home', U('homePut')); }).join(''), 4) + footHTML([backBtn()]);
       case 'dare': {                                                  // 踢館帖面板一行不動（SPEC-H §7.8）；市集多一顆「回攤位」（修正棒：先看看、翻完籤再回來接）
         var dh = dareBody(), di = dh.lastIndexOf('<div class="foot st-foot">');
         return (di >= 0 ? dh.slice(0, di) : dh) + footHTML([btn('data-a="decline"', U('dareNo')), backBtn()]);
@@ -1038,7 +1038,7 @@
     if (t.hasAttribute('data-drink')) return mkAct(X({ act: 'drink', kind: t.getAttribute('data-drink') }));
     if (t.hasAttribute('data-node')) return mkAct(X({ act: 'record', node: t.getAttribute('data-node') }));
     // 第 I 波 I-3b：唱片醫生（換清潔墊上那張、洗、重壓先選軸）、轉蛋機（搖桿、蛋）、算命心情題（選一個＝翻那張）
-    if (t.hasAttribute('data-doc')) { sfx('tick'); S.doc = t.getAttribute('data-doc'); S.docAx = null; S.docMsg = null; mkRenderStation(); return; }
+    if (t.hasAttribute('data-doc')) { sfx('tick'); S.doc = t.getAttribute('data-doc'); S.docAx = docPressOnly(cur, S.doc) ? S.doc : null; S.docMsg = null; mkRenderStation(); return; }   // 只能壓的那張（新到、沒聽膩、壓得了）＝點了直接挑軸（M5：少按「重壓」那一下）
     if (a === 'wash') return mkAct(X({ act: 'wash', cardId: docSel(cur) }));
     if (a === 'press') { sfx('tick'); S.docAx = docSel(cur); S.docMsg = null; mkRenderStation(); return; }
     if (a === 'axNo') { sfx('tick'); S.docAx = null; mkRenderStation(); return; }
@@ -1119,6 +1119,10 @@
 
   // ---------------- 唱片醫生（清潔墊）：預設放最膩那張（cur.pick）；上方一列可換（聽膩／耐聽用過的＋這一輪新到的）；洗／重壓（重壓先選軸）；一次最多 cur.max 個動作
   function docIds(cur) { var a = (cur.worn || []).filter(card); (cur.fresh || []).forEach(function (id) { if (a.indexOf(id) < 0 && card(id)) a.push(id); }); return a; }
+  function docPressOnly(cur, id) {
+    var r = run(), full = (cur.n | 0) >= (cur.max | 0);
+    return (cur.worn || []).indexOf(id) < 0 && (cur.fresh || []).indexOf(id) >= 0 && !plusOf(id) && (cur.pressLeft | 0) > 0 && !full && r.money >= (cur.press | 0);
+  }
   function docSel(cur) { var ids = docIds(cur); if (S.doc && ids.indexOf(S.doc) >= 0) return S.doc; return cur.pick && ids.indexOf(cur.pick) >= 0 ? cur.pick : ids[0] || null; }
   function wearTx(id) {
     var r = run(), w = r && r.wear && r.wear[id], WU = ((C().wear || {}).ui) || {}, WC0 = (E().wearCfg ? E().wearCfg(C()) : C().wear) || {}, G = Math.max(1, WC0.grooves | 0 || 5);

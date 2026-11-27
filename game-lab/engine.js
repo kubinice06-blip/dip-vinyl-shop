@@ -3139,7 +3139,8 @@
         // 第 I 波 I-3b 市集新攤（content 註解；契約 wave-i/build3b/CONTRACT.md）：newStalls false＝唱片醫生、熱美式／高粱、轉蛋機一個都不讀（＝I-3a 逐字）
         newStalls: false,
         doctor: { w: 2, from: 2, wash: 800, press: 2000, pressMax: 3, acts: 2, star: 1, cap: 5 },
-        gacha: { price: [1000, 2000], cells: ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'], cash: 3000, relicCash: 2000, bumpAtk: 1, ouch: 3 } } },
+        gacha: { price: [1000, 2000], cells: ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'], cash: 3000, relicCash: 2000, bumpAtk: 1, ouch: 3 },
+        homeLexp: 20 } },   // 市集的店裡唱盤樂歷（newStalls 開著才讀；關著＝stall.homeLexp 30＝I-3a 逐字）：11-27 主線裁定 +30→+20（+30 出現時 96% 去、K1′ 上限 85；+20 85%、W5 對全關 1.00）
     safety: { on: false },
     draft: { k: null, m: null, mLess: 1, mRate: null },           // null＝照公式（SPEC-C §5.6；驗收修正：m＝round(L−1−mLess)，比期望等級少一級。mRate 給了＝舊公式 round(mRate×(L−1))，sim 對照用）
   };
@@ -3683,6 +3684,8 @@
   }
   // 醫生還能做什麼（自動關用）：還有聽膩的、錢夠洗；或還有能壓的、這一趟還有額度、錢夠壓
   const doctorCan = (run, cur) => cur.n < cur.max && ((cur.worn.length && run.money >= cur.wash) || (cur.fresh.length && cur.pressLeft > 0 && run.money >= cur.press));
+  // 市集的店裡唱盤樂歷：newStalls 開著＝fair.homeLexp（11-27 主線 +20）；關著／沒給＝stall.homeLexp（C 波、I-3a 逐字 +30）
+  const mkHomeLexp = content => { const F = fairCfg(content); return nsOn(content) && F && F.homeLexp != null ? Math.max(0, F.homeLexp | 0) : Math.max(0, wcCfg(content).stall.homeLexp | 0); };
   // 轉蛋第 i 次（0 起）的格子（hash01(cur.key#gacha#i)；fair.gacha.cells 六格各 1/6）
   function gachaCell(content, cur, i) {
     const G = fairCfg(content).gacha || {}, cells = (Array.isArray(G.cells) ? G.cells : GACHA_CELLS).filter(x => GACHA_CELLS.includes(x));
@@ -3838,7 +3841,7 @@
           } else if (cell === 'cash') { const n = Math.max(0, G.cash | 0); wcEarn(run, 'gacha', n); out.cash = n; }
           else if (cell === 'heal') { const h0 = run.hp; run.hp = run.maxHp; out.hp = run.hp - h0; }
           else if (cell === 'relic') {                               // 配件一件（配件格滿＝改給 relicCash）
-            const rid = relicN(run, content) < CFG.relicMax ? wcRelics(run, content, cur.key + '#gacha#' + i, 1, true).filter(id => !(cur.relics || []).includes(id))[0] || null : null;
+            const rid = relicN(run, content) < CFG.relicMax ? wcRelics(run, content, cur.key + '#gacha#' + i, Infinity, true).filter(id => !(cur.relics || []).includes(id))[0] || null : null;   // 先扣攤上那兩件再取第一件（測試棒 15c2：先取 1 件再扣＝取到攤上那件就變成錢）
             if (rid) { run.relics.push(rid); run.stats.relicsGot.push(rid); out.relic = rid; NS.relic++; }
             else { const n = Math.max(0, G.relicCash | 0); wcEarn(run, 'gacha', n); out.cash = n; }
           } else if (cell === 'bump') {                              // 這一輪下一位客人品味 +n（「他也來轉了一顆」；記在 run.fortune 一筆 omen、src 'gacha'＝guestDef 加、來客條頭像標）
@@ -3934,8 +3937,8 @@
       case 'home':
         if (a !== 'ok') return 'badAct';
         if (ch.cardId != null && !run.bag.includes(ch.cardId)) return 'notOffered';
-        lexpAdd(run, 'home', ST.homeLexp); if (ch.cardId != null) { cur.played = ch.cardId; effects.push({ nowPlaying: ch.cardId }); }
-        effects.push({ lexp: ST.homeLexp }); return CLOSE;
+        { const hl = mkHomeLexp(content); lexpAdd(run, 'home', hl); if (ch.cardId != null) { cur.played = ch.cardId; effects.push({ nowPlaying: ch.cardId }); }
+          effects.push({ lexp: hl }); return CLOSE; }
       case 'studio':                                               // 錄音室（免費）：?fac=1 試錄派樹下一格（record）或錄 demo（ok：樂歷 +15）
         if (a === 'record') {
           const N = (cur.nodes || []).find(x => x && x.id === ch.node); if (!N || !run.fac) return 'notOffered';
@@ -4215,7 +4218,9 @@
     }
     const act = (x, y) => Object.assign({ type: 'stallAct', act: x }, y || {});
     // 看貨的攤還沒動手：別的看貨攤還沒看、或這攤不是現在最想去的 → 回攤位格（不扣；貨留在 seen）
-    if (o.peek !== false && MK_PEEK.includes(cur.kind) && !(p.acts[cur.kind] > 0) && (mkUnseen(p, o, cur.kind) || mkPick(run, content, o, reserve) !== cur.kind)) return act('back');
+    //   I-3b（11-27 主線 M5 改判：「看一眼回攤位」是多餘的點；newStalls 開著才走、關著＝I-3a 逐字）：這攤值得做、而且就算還沒看的攤全都比它好時段也輪得到它 → 直接做
+    //   只在 o.keep（e2e #16 全點的點法）才走：sim 的會讀策略照 I-3a 看一眼回攤位（11-27 sim 棒：預設也走＝小物攤排第一個去 22→71%、M3 2.79→2.85，K1′、M3 破）
+    if (o.peek !== false && MK_PEEK.includes(cur.kind) && !(p.acts[cur.kind] > 0) && (mkUnseen(p, o, cur.kind) || mkPick(run, content, o, reserve) !== cur.kind) && !(o.keep && nsOn(content) && mkKeep(run, content, o, reserve, cur))) return act('back');
     switch (cur.kind) {
       case 'fortune': {
         const i = cur.n | 0, pr = ((cur.price || [])[i]) | 0;
@@ -4240,6 +4245,20 @@
       }
       default: return stallCurPolicy(run, content, o, cur, reserve);
     }
+  }
+  // I-3b：看了一眼的攤（cur）值得做，且「比它好的＋還沒看的」攤數 < 剩下的時段 → 留下來做（看一眼回攤位再回來＝多兩下）
+  function mkKeep(run, content, o, reserve, cur) {
+    const p = run.pending, min = o.slotMin != null ? +o.slotMin : 0.5, k0 = cur.kind, v0 = peekValue(run, content, k0, cur, reserve, o);
+    if (!(v0 >= min)) return false;
+    let ahead = 0;
+    for (const k of p.tiles) {
+      if (k === k0 || p.went[k] || p.free.includes(k)) continue;
+      const pk = o.peek !== false && MK_PEEK.includes(k), g = p.seen[k];
+      if (pk && !g) { ahead++; continue; }
+      const v = pk ? peekValue(run, content, k, g, reserve, o) : fairValue(run, content, k, reserve, o);
+      if (v >= min && v > v0) ahead++;
+    }
+    return ahead < (p.left | 0);
   }
   // 看過貨的攤的價值（g＝那攤的貨；跟 stallCurPolicy 會不會動手同一把尺：有動作＝C 波 stallValue 的數，沒有＝0）
   function peekValue(run, content, k, g, reserve, o) {
@@ -4332,7 +4351,7 @@
         const d = Object.values(F.drinks || {})[0]; return d ? Math.min(d.hp | 0, run.maxHp - run.hp) * (run.hp <= 0.6 * run.maxHp ? 1 : 0.3) : 0;   // 低聲望才喝（掉不多＝一點點價值）
       }
       case 'doctor': return doctorValue(run, content, o || {}, reserve);   // I-3b 唱片醫生
-      case 'home': if (nsOn(content)) return 0.9 * Math.max(0, wcCfg(content).stall.homeLexp | 0) / 30; return stallValue(run, content, k, reserve);   // I-3b：店裡唱盤照它給的樂歷估（＋30＝0.9＝C 波 stallValue；量「減半」用）
+      case 'home': if (nsOn(content)) return 0.9 * mkHomeLexp(content) / 30; return stallValue(run, content, k, reserve);   // I-3b：店裡唱盤照它給的樂歷估（＋30＝0.9＝C 波 stallValue；fair.homeLexp 20＝0.6）
       case 'fortune': return luRound(run) ? 0.7 : 0.4;                                             // 看這一輪（藏家、菁英、誰帶王牌）：要挑上場那幾輪比較有用
       case 'market': return 1.0;                                                                    // 黑膠特賣（唱片、配件、門票、福袋；包包飽了大多是買門票）
       case 'warehouse': return relicN(run, content) < CFG.relicMax ? 1.2 : 0.8;
@@ -6132,7 +6151,7 @@
     WAVEC, wcCfg, floorAt, wcTh, wcPool, lootRow, chestRow, stallSession, stallResume, stallUnlocked, stallLadder, cPolicy, gigPrice, gigKeepN, draftPlan, expLevel,
     deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound,
     FORTUNE_SLIPS, FAIR_FREE, FAIR_KINDS, fairCfg, fairOn, isMarket, marketView, fortunesOf, studioOffer, fixMarket, fairValue, stallLeave,   // 第 I 波 I-3a 市集
-    nsOn, DRINK_KINDS, GACHA_CELLS, plusOf, pressCopy, effCard, drinkOf, doctorGoods, gachaCell, moodPrep, moodAsk, moodOf, moodResult, moodIndex,   // 第 I 波 I-3b 市集新攤＋算命心情題
+    nsOn, mkHomeLexp, DRINK_KINDS, GACHA_CELLS, plusOf, pressCopy, effCard, drinkOf, doctorGoods, gachaCell, moodPrep, moodAsk, moodOf, moodResult, moodIndex,   // 第 I 波 I-3b 市集新攤＋算命心情題
     CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,
