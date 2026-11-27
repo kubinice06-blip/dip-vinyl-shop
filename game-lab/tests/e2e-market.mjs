@@ -62,7 +62,8 @@ const errs = page => (page._errors || []).filter(e => !/favicon/.test(e));
 const errTxt = page => `錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ').slice(0, 200) : ''}`;
 const fill = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
 const mtx = n => Number(n).toLocaleString('en-US');
-const QM = (x = '') => Q('&fast=1&mood=0' + x);   // 第 I 波 I-3a（11-23）出貨＝市集（content stall.mode 'market'）：不再帶 ?market=1（原本 '&fast=1&market=1'），照出貨預設跑
+const QM = (x = '') => Q('&fast=1&mood=0&newstalls=0' + x);   // 第 I 波 I-3a（11-23）出貨＝市集（content stall.mode 'market'）：不再帶 ?market=1（原本 '&fast=1&market=1'），照出貨預設跑
+//   I-3b 開旗標（11-27，fair.newStalls 出貨 true）：#1–#14 驗的是 I-3a 市集殼 → 一律帶 &newstalls=0（同 engine.test #37 的 MK 拷貝新攤關）；新攤在 #15／#16
 //   第 I 波 I-3b（11-23）：算命攤接心情題庫（不看 newStalls）＝翻每一張先問一題。#1–#14 測的是 I-3a 那條路＝題庫抓不到（?mood=0，同一條退路），一律帶 &mood=0；
 //   題庫那條路、唱片醫生、熱美式／高粱、轉蛋機在 #15（?newstalls=1；不帶 mood=0）
 // 字（C.waveC.ui＋攤名：市集模式 fairStations 蓋過 stations）
