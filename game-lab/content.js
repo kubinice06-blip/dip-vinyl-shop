@@ -1844,7 +1844,11 @@
       mkBumpTag: '轉',                                              // 來客條那位頭像上的小標（轉蛋「他也來轉了一顆」；凶籤是 mkOmenTag）
       //   算命攤接主站心情選歌題庫（店主 11-23）：每翻一張籤先問一題（題目、選項照 mood-quiz.json 原文）；三題答完講心情＋唸一段（mood-bank.json 原文、一字不改）
       mkMoodAsk: '翻之前，先回答我一題。', mkMoodIs: '你今晚的心情：{name}', mkMoodPick: '這張適合現在的你：《{album}》',
-      mkMoodWant: '記進想要清單了。', mkMoodWantHad: '這張已經在想要清單裡。', mkMoodWantFull: '想要清單滿了，這張先記在心裡。'
+      mkMoodWant: '記進想要清單了。', mkMoodWantHad: '這張已經在想要清單裡。', mkMoodWantFull: '想要清單滿了，這張先記在心裡。',
+      //   I-3b 畫面棒（11-23）多的字：清潔墊上沒東西可做、新到的小標、選軸的鈕；飲料攤手上那杯；轉蛋機還能轉幾顆；算命攤問題下面那行（選一個＝翻那張）
+      mkDocNone: '包包裡沒有聽膩的，也沒有這一輪新到的盤。', mkDocFresh: '這一輪新到的', mkFreshTag: '新', mkPressTo: '{attr} {a}→{b}',
+      mkDrinkNow: '手上：{name}，{left}', mkGachaLeft: '這次還能轉 {n} 顆',
+      mkMoodFlip: '選一個就翻第 {i} 張（${n}）', mkMoodFlipFree: '選一個就翻第 {i} 張', mkMoodLoad: '阿姨在洗籤，等一下。'
     },
     // 站名（底部面板站牌、小面板標題、解鎖階梯 {name}）
     stations: { stall: '攤位', dig: '挖寶攤', trade: '同業調貨', gear: '器材行', snack: '宵夜', gig: '演唱會', promo: '公關片', fortune: '窗邊算命',

@@ -10,10 +10,13 @@
  *   isle()            // 第 I 波 I-3a：市集攤位格 ↔ 島台那一格（[{kind, hot, went}]；舞台小道具、導演 market 模式用）
  *   station(kind)     // 第 I 波 I-3a：進市集的某一攤（＝點攤位格；攤位格以外的入口、測試用）；回 true＝進了
  * }
+ *   state() 第 I 波 I-3b 多：doc {id（清潔墊上那張）, ax（選軸中）, msg, fx}、gacha {phase 'idle'|'spin'|'egg'|'open', cell, n, fx}、ask（算命攤打開前那一題）、moodQ（現在問的題目 id）、
+ *     mood {mood, id, want}（翻滿三張的心情結果）、moodSt（題庫：0 沒抓、1 抓中、2 好了、-1 抓不到、'off'＝?mood=0）
  *
  * 第 I 波 I-3a 市集（pending.mode === 'market'；SPEC-I §6.2–§6.4；引擎契約 scratchpad v5/wave-i/build3/CONTRACT.md）：分流一律看 pending.mode（不看 content），
  *   'pick'（C 波二選一）下面每一行照舊。市集＝底部攤位格（頂列月亮＋錢＋樂歷細條；一列 3 格 ≥100×64；收攤鈕是格子最後一格）＋點一攤升起攤位面板（≤55%、只放鈕與數字）；
  *   進攤 choose stallEnter（不扣）、那攤第一個動作扣 1 個時段（月亮少一顆）、做完自動回攤位格；算命翻滿 3 張引擎自動關 → 畫面停住等點「記下了」（hold）；
+ * 第 I 波 I-3b（引擎契約 wave-i/build3b/CONTRACT.md；檔尾那一段）：?newstalls=1＝唱片醫生、飲料攤三杯、小物攤轉蛋機；算命攤接主站心情選歌題庫（不看開關；?mood=0＝不接）。
  *   挖寶攤不自己翻（等點）；錄音室沒有試錄格＝進去就錄 demo（C 波那句吐司）。小人只走一次到島台（browse）。施工期間 ?market=1 開（configure 時改 content）。
  *
  * host（ui.js 給；交易一律走 ui 的 doChoose）：
@@ -81,7 +84,8 @@
   };
   ICON.consignGet = ICON.consign;
   // 第 I 波 I-3a 市集模式：算命攤（籤）、飲料攤（冬瓜茶）換新圖示（shop-props.js MK_ICON；島台小道具、來客條同一張）；C 波一行不變
-  function icon(kind, size) { var MK = S && S.mk && W.DipPropsO && W.DipPropsO.MK_ICON, rows = (MK && MK[kind]) || ICON[kind]; var h = ''; try { h = rows ? H.pix(rows, size || 16, 'st-ic') : ''; } catch (_) {} return h || '<span class="st-ic tx" aria-hidden="true"></span>'; }
+  //   第 I 波 I-3b：唱片醫生（MK_ICON.doctor）、小物攤有轉蛋機（newStalls 開著）＝轉蛋機圖示（MK_ICON.gacha）
+  function icon(kind, size) { if (kind === 'gear' && S && S.mk && NS()) kind = 'gacha'; var MK = S && S.mk && W.DipPropsO && W.DipPropsO.MK_ICON, rows = (MK && MK[kind]) || ICON[kind]; var h = ''; try { h = rows ? H.pix(rows, size || 16, 'st-ic') : ''; } catch (_) {} return h || '<span class="st-ic tx" aria-hidden="true"></span>'; }
 
   // ------------------------------------------------------------------ 店裡對應（SPEC-C §4.5）：亮哪裡（熱點 id）、小人走到哪（spot 名或 [x,y]）、站主
   var SPOT = { trade: 'pay', gear: 'radio', snack: 'listen', gig: 'mid', promo: 'radio', fortune: 'leaving', consign: 'pay', consignGet: 'pay',
@@ -668,7 +672,16 @@
   function state() {
     if (!S) return null;
     var o = { phase: S.phase, sel: S.sel, kind: S.cur ? S.cur.kind : (S.kind || null), flipped: (S.flipped || []).slice(), sub: S.sub || null, confirm: !!S.confirm };
-    if (S.mk) { o.mode = 'market'; o.hold = !!S.hold; if (S.hold) o.kind = S.hold.kind; o.pour = S.pour || null; }
+    if (S.mk) { o.mode = 'market'; o.hold = !!S.hold; if (S.hold) o.kind = S.hold.kind; o.pour = S.pour || null;
+      // 第 I 波 I-3b：清潔墊上那張（doc）、轉蛋機（gacha）、算命心情題（ask：還沒進攤的那一題；moodQ：現在問的題目 id；mood：結果）
+      var dc = S.hold && S.hold.kind === 'doctor' ? S.hold : S.cur && S.cur.kind === 'doctor' ? S.cur : null;
+      if (dc) o.doc = { id: S.hold ? (S.docLast || docSel(dc)) : docSel(dc), ax: S.docAx || null, msg: S.docMsg || null, fx: S.docFx || null };
+      var gc = S.hold && S.hold.kind === 'gear' ? S.hold : S.cur && S.cur.kind === 'gear' ? S.cur : null;
+      if (gc && gc.gacha) { var gu = S.gacha && S.gacha.key === gc.key ? S.gacha : null; o.gacha = { phase: gu ? gu.phase : 'idle', cell: gu && gu.eff ? gu.eff.cell : null, n: gc.gacha.n | 0, fx: S.gFx || null }; }
+      if (S.ask) { o.ask = true; o.kind = 'fortune'; }
+      if (S.moodQ) o.moodQ = S.moodQ.id;
+      if (S.moodR && S.moodR.res) o.mood = { mood: S.moodR.res.mood, id: S.moodR.res.id, want: S.moodR.want };
+      o.moodSt = MOOD.off ? 'off' : MOOD.st; }
     return o;
   }
 
@@ -706,7 +719,10 @@
   // 攤位格第二行（市集）：算命＝打開就翻一張；扣時段但不花錢的＝「不花錢」（「免費」只留給不用時段的攤）；飲料攤聲望滿了＝聲望已滿
   function mkPrice(k) {
     if (k === 'fortune') return U('mkFortuneTile');
-    if (k === 'snack') { var r = run(); return r && r.hp >= r.maxHp ? U('mkHpFull') : U('mkNoCost'); }
+    // 第 I 波 I-3b（newStalls）：唱片醫生＝洗的價錢起；小物攤＝轉蛋第一顆起；飲料攤有熱美式／高粱（第 2 個市集起）、聲望滿了＝熱美式的價錢起
+    if (k === 'doctor') return U('priceFrom', { n: mt(((FAIR().doctor || {}).wash) || 800) });
+    if (k === 'gear' && NS()) { var gp = ((FAIR().gacha || {}).price || [])[0]; return U('priceFrom', { n: mt(Math.min(gp > 0 ? gp : 1e9, ST().gearPrice || 3000)) }); }
+    if (k === 'snack') { var r = run(), pp = P(), cf = NS() && pp && !pp.first ? ((FAIR().drinks || {}).coffee || {}).price : 0; return r && r.hp >= r.maxHp ? (cf > 0 ? U('priceFrom', { n: mt(cf) }) : U('mkHpFull')) : U('mkNoCost'); }
     var t = priceTag(k); return t === U('priceFree') ? U('mkNoCost') : t;
   }
   function mkTileHTML(t) {
@@ -770,11 +786,14 @@
     renderMarket();
     if (p.cur) openMk(p.cur); else if (p.first) mkHint();          // 老闆那句只在這一趟第一個市集說（修正棒：每個市集都說＝9 格時泡泡蓋住島台上排 2.6 秒）
   }
-  function enterTile(kind) {
+  function enterTile(kind, o) {
     if (!S || S.busy || S.phase !== 'grid') return;
+    o = o || {};
+    // 第 I 波 I-3b 店主 11-23：算命攤先問一題（題庫抓到才問；自動玩不問）；選了＝帶 ans 打開（翻第一張）
+    if (kind === 'fortune' && !o.direct && !H.autoOn() && P() && !(P().seen || {}).fortune && moodOpen()) return;
     var r = run(), m0 = r.money;
-    var res = H.choose({ type: 'stallEnter', kind: kind });
-    if (!res || !res.ok) { if (res && res.error === 'noSlot') T(U('mkNoSlot')); else console.warn('[stalls] stallEnter', res && res.error, kind); return; }
+    var res = H.choose(o.ans ? { type: 'stallEnter', kind: kind, ans: o.ans } : { type: 'stallEnter', kind: kind });
+    if (!res || !res.ok) { S.keepSheet = false; if (S.sheet) closeStation(); if (res && res.error === 'noSlot') T(U('mkNoSlot')); else console.warn('[stalls] stallEnter', res && res.error, kind); return; }
     sfx('select');
     var p = P(); if (!p) return finish();
     S.fresh = null;
@@ -789,11 +808,13 @@
     if (cur.kind === 'studio' && !(cur.nodes || []).length) return mkAct({ type: 'stallAct', act: 'ok' });   // 沒有試錄格＝C 波錄 demo（一行吐司，不出面板）
     if (S.curKey !== cur.key) {
       S.curKey = cur.key; S.sub = null; S.tab = 0; S.gigN = 1;
+      S.doc = null; S.docAx = null; S.docMsg = null; S.docLast = null; S.moodR = null; S.moodWait = false;   // 第 I 波 I-3b（醫生的清潔墊、心情結果：每一攤重來）
       S.flipped = S.flipMem[cur.key] || (S.flipMem[cur.key] = (cur.cards || []).map(function () { return !!S.resumed; }));   // 挖寶不自己翻；重新整理回來＝直接翻開
     }
     lightUp([isleOf(cur.kind)].filter(Boolean));
     mkRenderStation(true);
     S.resumed = false;
+    if (cur.kind === 'fortune' && !moodReady() && !MOOD.off && MOOD.st >= 0 && (cur.n | 0) < (cur.order || []).length) { var tk = S; moodLoad().then(function () { if (S === tk && S.cur === cur && moodReady()) mkRenderStation(); }); }   // 重新整理回到算命攤：題庫抓到就換成問題
     try { if (cur.kind === 'promo' && cur.cards && cur.cards[0]) H.play(card(cur.cards[0])); } catch (e) { console.error(e); }
   }
   function backBtn(pri) { return btn('data-a="back"', U('mkBack'), { pri: !!pri }); }
@@ -801,7 +822,7 @@
     var r = run(), p = P(), kind = cur.kind, sub = kind === 'dig' && cur.name ? ((WC().digTitles || {})[cur.name] || '') : '';
     // 標題列：攤名（挖寶攤名）＋錢＋月亮；站主一句另一行（矮螢幕收掉：面板 ≤55%，鈕與數字優先）
     return '<div class="hd st-shd"><h3>' + icon(kind, 18) + '<span>' + esc(NM(kind)) + '</span>' + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</h3>' +
-      '<span class="mn">' + esc(money(r.money)) + '</span>' + (p ? moonsHTML(p) : '') + '</div>' +
+      '<span class="mn">' + esc(money(r.money - (S.moneyHide | 0))) + '</span>' + (p ? moonsHTML(p) : '') + '</div>' +
       (LN(kind) ? '<p class="st-line st-mq"><span>「' + esc(LN(kind)) + '」</span></p>' : '');
   }
   // 算命攤翻籤（SPEC-I §6.3）：三張封套（一列一張）；翻開的照實寫籤、停住；下一張＝封套＋「翻下一張（$n）」；第 3 張先寫「可能是凶籤」
@@ -846,6 +867,7 @@
   // 飲料攤（I-3a 只有冬瓜茶：聲望 +fair.drinks.tea.hp〔sim 棒定 2〕、免費、只花時段）；按了島台倒一杯（S.pour → ui isleNow → shop-props teaCup）
   function snackMkBody(cur) {
     var r = run();
+    if ((cur.drinks || []).length > 1) return snackCupsBody(cur);   // 第 I 波 I-3b：一排三杯（冬瓜茶、熱美式、高粱）；只有冬瓜茶＝下面 I-3a 逐字
     var cups = (cur.drinks || []).map(function (d) {
       var n = Math.max(0, Math.min(d.hp | 0, r.maxHp - r.hp));
       var label = d.kind === 'tea' ? (n > 0 ? U('mkTea', { n: n }) : U('mkTeaFull')) : d.kind;
@@ -870,13 +892,15 @@
           '<p class="note st-dtap"' + (none ? '' : ' hidden') + '>' + esc(U('mkDigTap')) + '</p>' +   // 挖寶不自己翻：還沒翻＝寫出來要點（修正棒）
           footHTML([btn('data-a="reroll"', U('reroll', { n: mt(cost) }), { disabled: !canAfford(cost) }), backBtn()]); }
       case 'trade': return S.sub === 'sell' ? sellGrid() : buyGrid(cur, cur.cards || []) + footHTML([btn('data-a="sell"', U('sellOne')), backBtn(true)]);
-      case 'gear': return (relicGrid(cur.relics || [], 'data-relic', ST().gearPrice || 3000) || '<p class="note">—</p>') + footHTML([backBtn()]);
+      case 'gear': if (cur.gacha) return gearGachaBody(cur, false);   // 第 I 波 I-3b：小物攤右半轉蛋機（newStalls）
+        return (relicGrid(cur.relics || [], 'data-relic', ST().gearPrice || 3000) || '<p class="note">—</p>') + footHTML([backBtn()]);
+      case 'doctor': return doctorBody(cur, false);                  // 第 I 波 I-3b：唱片醫生（清潔墊）
       case 'warehouse': return ((cur.relics || []).length ? relicGrid(cur.relics, 'data-wrelic') : gridHTML((cur.cards || []).map(function (id) { return cardBtn(id, 'data-take', U('take')); }).join(''), (cur.cards || []).length)) + footHTML([backBtn()]);
       case 'snack': return snackMkBody(cur);
       case 'gig': return gigBody(true) + footHTML([backBtn()]);
       case 'promo': return gridHTML((cur.cards || []).map(function (id) { var c = card(id); return c ? H.tileHTML(c, { cls: 'st-c' }) : ''; }).join(''), (cur.cards || []).length) +
         '<p class="note">' + esc(U('promoNote')) + '</p>' + lexpLine(ST().promoLexp || 10) + footHTML([btn('data-a="ok"', U('promoOk'), { pri: true }), backBtn()]);
-      case 'fortune': return fortuneMkBody(cur, false);
+      case 'fortune': return moodReady() && (cur.n | 0) < (cur.order || []).length ? moodAskBody(cur, cur.n | 0) : fortuneMkBody(cur, false);   // I-3b：每翻一張先問一題（題庫抓到才問）
       case 'consign': {
         var min = (E().CFG && E().CFG.bagMin) || 5, ids = r.bag.filter(function (id) { return !E().isGift(r, C(), id) && !E().isSeed(r, C(), id); }), full = r.bag.length - 1 < min || !!r.consign;   // 上一張還沒領回＝寄不了（修正棒）
         return '<p class="note">' + esc(r.consign ? U('mkConsignBusy') : U('consignPick')) + '</p>' + gridHTML(ids.map(function (id) { return cardBtn(id, 'data-consign', NM('consign'), { disabled: full }); }).join(''), 4) + footHTML([backBtn()]);
@@ -893,17 +917,19 @@
     return footHTML([backBtn(true)]);
   }
   function mkRenderStation(first) {
-    var cur = S && (S.hold || S.cur); if (!cur) return;
-    var html = mkHeadHTML(cur) + (S.hold ? fortuneMkBody(cur, true) : mkBodyHTML(cur));
-    if (S.sheet && S.sheet.isConnected && !first) S.sheet.innerHTML = html;
+    var cur = S && (S.ask || S.hold || S.cur); if (!cur) return;
+    var html = mkHeadHTML(cur) + (S.ask ? moodAskBody(null, 0) : S.hold ? holdBody(cur) : mkBodyHTML(cur));
+    if (S.sheet && S.sheet.isConnected && (!first || S.keepSheet)) S.sheet.innerHTML = html;
     else { S.sheet = H.sheet(html, 'stall st-mk st-k-' + cur.kind); S.sheet.addEventListener('click', onSheetClick); }
+    S.keepSheet = false;
     S.drop = null; S.fresh = null;
     // 面板 ≤55%（放不下面板自己捲）；至少跟底下攤位格那塊一樣高（修正棒：面板比攤位格矮＝底下那塊被擠出畫面、整個店溢出；e2e-market #10）
     var vh = H.vh(), nat = Math.ceil(H.naturalH(S.sheet) + 4), grid = S.box ? Math.ceil(H.naturalH(S.box) + 6) : 0, need = Math.min(Math.round(vh * 0.55), Math.max(200, nat, grid));
     if (first || S.need == null || Math.abs(need - S.need) >= 2) { S.need = need; try { H.cam('market', 'map', first ? 300 : 150, need); } catch (e) { console.error(e); } }
     H.auto(function () {
       if (!S) return;
-      if (S.hold) { var b = S.sheet && qs('[data-a=noted],[data-a=notedLeave]', S.sheet); if (b) b.click(); return; }
+      if (S.ask) { var mo = S.sheet && qs('[data-mo]', S.sheet); if (mo) mo.click(); return; }   // I-3b 心情題（自動玩：選第一個）
+      if (S.hold) { var b = S.sheet && qs('[data-a=egg],[data-a=noted],[data-a=notedLeave]', S.sheet); if (b) b.click(); return; }   // I-3b：轉蛋停住＝先點蛋
       var ch = null; try { ch = H.policy(); } catch (_) {}
       if (ch && ch.type === 'stallAct') mkAct(ch);
     }, 260);
@@ -912,9 +938,21 @@
   function mkEffects(list, cur0) {
     var o = { close: false, flip: false };
     (list || []).forEach(function (f) {
+      if (f.gacha != null) {                                         // 第 I 波 I-3b 轉蛋：結果先不畫（蛋打開才揭曉；聲望、錢、進包包都等那一下）
+        S.gacha = { key: cur0 ? cur0.key : '', phase: A().rm || A().fast ? 'egg' : 'spin', eff: f, n: (f.gacha | 0) + 1, fresh: true };
+        S.moneyHide = f.cash | 0; S.gFx = { n: ((S.gFx || {}).n | 0) + 1, kind: 'spin' }; o.gacha = true; sfx('coin');
+        if (f.slot != null) { S.drop = f.slot; sfx('pop'); }
+        return;
+      }
       if (f.hp > 0) T(fill(((C().trial || {}).ui || {}).heal || '聲望 +{n}', { n: f.hp }), 'gold');
       else if (f.hp === 0 && cur0 && cur0.kind === 'snack') T(U('snackFullToast'));
       if (f.drink) S.pour = { n: (S.pour ? S.pour.n : 0) + 1, kind: f.drink };   // 島台倒一杯（ui isleNow → stage → shop-props isleDraw）
+      if (f.drink && f.drink !== 'tea') {                            // 第 I 波 I-3b 熱美式／高粱：吐司一句（接下來幾位）；來客條頭像下會畫杯子＋剩幾位
+        var DD = (FAIR().drinks || {})[f.drink] || {};
+        T(DN(f.drink) + '：' + (f.drink === 'coffee' ? U('mkCoffeeHint', { n: f.left | 0, d: DD.def | 0 }) : U('mkSorghumHint', { n: f.left | 0, a: DD.atk | 0, pen: DD.pen | 0 })), 'gold');
+      }
+      if (f.wash) { S.docMsg = U('mkWashed'); S.docLast = f.wash; S.doc = null; S.docAx = null; S.docFx = { n: ((S.docFx || {}).n | 0) + 1, kind: 'wash', id: f.wash }; o.doc = true; sfx('pocket'); }   // 唱片醫生（停住：字留在面板上）
+      if (f.press) { S.docMsg = U('mkPressed', { attr: ZHA(f.attr), n: f.n | 0 }); S.docLast = f.press; S.doc = f.press; S.docAx = null; S.docFx = { n: ((S.docFx || {}).n | 0) + 1, kind: 'press', id: f.press, attr: f.attr }; o.doc = true; sfx('ding'); }
       if (f.gainRelic) T(fill('拿到「{n}」', { n: H.relicName(f.gainRelic) }));
       if (f.nowPlaying) { try { if (H.bgmFront) H.bgmFront(f.nowPlaying); else H.play(card(f.nowPlaying)); } catch (e) { console.error(e); } }
       if (f.dare) T(f.dare === 'tough' ? U('dareToughOn', { n: ((ST().dare || {}).tough || {}).atk || 1 }) : U('dareTankOn', { n: ((ST().dare || {}).tank || {}).hp || 4 }), 'gold');
@@ -942,8 +980,9 @@
       else console.warn('[stalls] choose', er, ch);
       return;
     }
-    if (ch.act !== 'flip') sfx(ch.act === 'take' || ch.act === 'bagTake' ? 'pocket' : ch.act === 'back' ? 'tick' : 'select');
-    if (r.money !== m0) { try { H.cashRise(m0, r.money); } catch (e) { console.error(e); } }
+    if (ch.act !== 'flip' && ch.act !== 'gacha' && ch.act !== 'wash' && ch.act !== 'press') sfx(ch.act === 'take' || ch.act === 'bagTake' ? 'pocket' : ch.act === 'back' ? 'tick' : 'select');
+    var gx = (res.effects || []).filter(function (f) { return f && f.gacha != null; })[0], m1 = gx ? m0 - (gx.spend | 0) : r.money;   // 轉蛋：錢只跳扣的那一下（塞的錢等蛋打開）
+    if (m1 !== m0) { try { H.cashRise(m0, m1); } catch (e) { console.error(e); } }
     var o = mkEffects(res.effects, cur0);
     if (ch.act === 'sell') S.sub = null;
     try { H.refresh(); } catch (_) {}
@@ -951,17 +990,30 @@
     if (!p2) return finish();
     if (o.close || !p2.cur) {
       if (cur0 && cur0.kind === 'fortune' && o.flip) { S.hold = cur0; S.cur = null; S.phase = 'hold'; return mkRenderStation(); }   // 第 3 張：停住等點「記下了」
+      if (cur0 && ((cur0.kind === 'doctor' && o.doc) || (cur0.kind === 'gear' && o.gacha))) { S.hold = cur0; S.cur = null; S.phase = 'hold'; gachaArm(); return mkRenderStation(); }   // I-3b：洗／壓完、轉完，停住等點
       return mkBackToGrid();
     }
     if (ch.act === 'reroll') { S.flipped = cur0.cards.map(function () { return false; }); S.flipMem[cur0.key] = S.flipped; S.curKey = cur0.key; }
+    if (o.gacha) gachaArm();
     mkRenderStation();
   }
-  function mkBackToGrid() { S.cur = null; S.hold = null; S.need = null; closeStation(); renderMarket(); }
+  // 轉蛋機晃完（約 0.65 秒）蛋掉出來：等點（動畫加速／減少動態＝直接掉出來）
+  function gachaArm() {
+    var gs = S && S.gacha; if (!gs || gs.phase !== 'spin') return;
+    after(function () { if (S && S.gacha === gs && gs.phase === 'spin') { gs.phase = 'egg'; mkRenderStation(); } }, 650);
+  }
+  function mkBackToGrid() { S.cur = null; S.hold = null; S.ask = null; S.moodQ = null; S.need = null; S.moneyHide = 0; closeStation(); renderMarket(); }
   function mkSheetClick(e) {
     if (!S) return;
     var t = e.target.closest && e.target.closest('button'); if (!t || t.disabled) return;
     var a = t.getAttribute('data-a');
+    if (S.ask) {                                                     // 第 I 波 I-3b：打開算命攤之前那一題（還沒進攤、不扣時段）
+      if (t.hasAttribute('data-mo')) return moodPick(+t.getAttribute('data-mo'));
+      if (a === 'back') { sfx('tick'); mkBackToGrid(); }
+      return;
+    }
     if (S.hold) {
+      if (a === 'egg') { eggOpen(); return; }                        // 轉完攤子關了：蛋還沒開＝先開
       if (a === 'noted') { sfx('tick'); mkBackToGrid(); }
       else if (a === 'notedLeave') { S.hold = null; S.cur = null; closeStation(); mkLeave(); }   // 記下了，收攤（時段用完、沒別的攤；不用確認：剩 0 個時段）
       return;
@@ -985,6 +1037,15 @@
     if (t.hasAttribute('data-relic')) return buyRelic(t.getAttribute('data-relic'));
     if (t.hasAttribute('data-drink')) return mkAct(X({ act: 'drink', kind: t.getAttribute('data-drink') }));
     if (t.hasAttribute('data-node')) return mkAct(X({ act: 'record', node: t.getAttribute('data-node') }));
+    // 第 I 波 I-3b：唱片醫生（換清潔墊上那張、洗、重壓先選軸）、轉蛋機（搖桿、蛋）、算命心情題（選一個＝翻那張）
+    if (t.hasAttribute('data-doc')) { sfx('tick'); S.doc = t.getAttribute('data-doc'); S.docAx = null; S.docMsg = null; mkRenderStation(); return; }
+    if (a === 'wash') return mkAct(X({ act: 'wash', cardId: docSel(cur) }));
+    if (a === 'press') { sfx('tick'); S.docAx = docSel(cur); S.docMsg = null; mkRenderStation(); return; }
+    if (a === 'axNo') { sfx('tick'); S.docAx = null; mkRenderStation(); return; }
+    if (t.hasAttribute('data-ax')) return mkAct(X({ act: 'press', cardId: S.docAx || docSel(cur), attr: t.getAttribute('data-ax') }));
+    if (a === 'gacha') return gachaSpin(cur);
+    if (a === 'egg') return eggOpen();
+    if (t.hasAttribute('data-mo')) return moodPick(+t.getAttribute('data-mo'));
     if (a === 'flip') return mkAct(X({ act: 'flip' }));
     if (a === 'gigBuy') return mkAct(X({ act: 'tickets', n: Math.max(1, S.gigN || 1) }));
     if (a === 'gigKeep') return mkAct(X({ act: 'tickets', n: E().gigKeepN(run(), C()) }));
@@ -1034,6 +1095,232 @@
       enterTile(t.getAttribute('data-k'));
     }
   }
+  // ================================================================== 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.4-5；引擎契約 wave-i/build3b/CONTRACT.md）
+  //   開關＝content fair.newStalls（E.nsOn；?newstalls=1 試玩）：唱片醫生（清潔墊：洗／重壓）、飲料攤一排三杯（冬瓜茶、熱美式、高粱）、小物攤右半轉蛋機。
+  //   關著＝這一段的函式都不會被叫（攤子不會抽到醫生、cur 沒有 gacha、drinks 只有冬瓜茶）＝I-3a 逐字。
+  //   算命攤心情題（店主 11-23；不看開關）：進算命攤才抓 ../mood-quiz.json（快取）、翻滿三張前抓 ../mood-bank.json；抓不到＝照 I-3a 翻籤。
+  //   每翻一張先問一題（E.moodAsk；點選項＝翻那張，choose 帶 ans）；翻滿三張＝第 3 張那一行＋阿姨講心情、唸一段（E.moodResult，原文一字不改）、那張進想要清單（host.want）。
+  //   翻籤、轉蛋、洗唱片一律停住等點：做完攤子自動關的那一下＝hold（面板留著、點「回攤位」才回攤位格）。
+  function NS() { try { return !!(E().nsOn && E().nsOn(C())); } catch (_) { return false; } }
+  function DN(k) { return ((WC().ui || {}).drinkNames || {})[k] || k; }
+  function ZHA(a) { return (E().ZH || {})[a] || a; }
+  function noMoney() { return ((C().shopUi || {}).noMoney) || '錢不夠'; }
+  function plusOf(id) { var r = run(); try { return r && E().plusOf ? E().plusOf(r, id) : null; } catch (_) { return null; } }
+  function effOf(id) { var r = run(); try { return (r && E().effCard && E().effCard(C(), r, id)) || card(id); } catch (_) { return card(id); } }
+  function pressTagHTML() { return '<span class="st-ptag" aria-hidden="true">' + esc(U('mkPressTag')) + '</span>'; }
+  // 做完攤子自動關（醫生做滿、轉蛋轉滿）停住那一下的鈕：還有別的攤＝回攤位；什麼都不能逛了＝收攤回店（少按一下）
+  function holdBtn() { return mkNothingLeft() ? btn('data-a="notedLeave"', U('mkLeaveNone'), { pri: true }) : btn('data-a="noted"', U('mkBack'), { pri: true }); }
+  function holdBody(cur) {
+    if (cur.kind === 'doctor') return doctorBody(cur, true);
+    if (cur.kind === 'gear' && cur.gacha) return gearGachaBody(cur, true);
+    if (cur.kind === 'fortune') { var mr = moodRes(cur); if (mr) return moodResultBody(cur, mr); }
+    return fortuneMkBody(cur, true);
+  }
+
+  // ---------------- 唱片醫生（清潔墊）：預設放最膩那張（cur.pick）；上方一列可換（聽膩／耐聽用過的＋這一輪新到的）；洗／重壓（重壓先選軸）；一次最多 cur.max 個動作
+  function docIds(cur) { var a = (cur.worn || []).filter(card); (cur.fresh || []).forEach(function (id) { if (a.indexOf(id) < 0 && card(id)) a.push(id); }); return a; }
+  function docSel(cur) { var ids = docIds(cur); if (S.doc && ids.indexOf(S.doc) >= 0) return S.doc; return cur.pick && ids.indexOf(cur.pick) >= 0 ? cur.pick : ids[0] || null; }
+  function wearTx(id) {
+    var r = run(), w = r && r.wear && r.wear[id], WU = ((C().wear || {}).ui) || {}, WC0 = (E().wearCfg ? E().wearCfg(C()) : C().wear) || {}, G = Math.max(1, WC0.grooves | 0 || 5);
+    if (!w || !((w.g | 0) > 0 || (w.n | 0) > 0)) return '';
+    var out = [fill(WU.ear || '', { n: Math.max(0, G - (w.g | 0)), max: G })];
+    if ((w.n | 0) > 0) out.push(fill(WU.worn || '', { n: w.n | 0 }));
+    return out.join('・');
+  }
+  function docMini(cur, id, on) {
+    var c = card(id), r = run(), w = r.wear && r.wear[id], fresh = (cur.fresh || []).indexOf(id) >= 0;
+    var tag = w && (w.n | 0) > 0 ? '<b class="wn">' + esc('−' + (w.n | 0)) + '</b>' : fresh ? '<b class="nw">' + esc(U('mkFreshTag')) + '</b>' : '';
+    return '<button type="button" class="st-dmini' + (on ? ' on' : '') + '" data-doc="' + esc(id) + '" aria-pressed="' + (on ? 'true' : 'false') + '" aria-label="' + esc(c.artist + '《' + c.album + '》') + '">' +
+      H.coverHTML(c, { info: false, badge: false }) + tag + (plusOf(id) ? pressTagHTML() : '') + '</button>';
+  }
+  function matHTML(cur, id) {
+    var c = card(id); if (!c) return '';
+    var e = effOf(id) || c, pl = plusOf(id), fresh = (cur.fresh || []).indexOf(id) >= 0;
+    var st = [wearTx(id), pl ? U('mkPressDone') : fresh ? U('mkDocFresh') : ''].filter(Boolean).join('・');
+    return '<div class="st-mat"><span class="cvw">' + H.coverHTML(c, { badge: false }) + (pl ? pressTagHTML() : '') + '</span><div class="tx"><b>' + esc(c.album) + '</b>' +
+      H.starsHTML(e, { cls: 'st-dst', worn: e.wornAxis, pressed: e.pressed }) + (st ? '<small>' + esc(st) + '</small>' : '') + '</div></div>';
+  }
+  function dbtn(a, label, sub, o) { o = o || {}; return '<button type="button" class="lb-btn st-dbtn' + (o.pri ? ' pri' : '') + '" data-a="' + a + '"' + (o.disabled ? ' disabled' : '') + '><b>' + esc(label) + '</b><small>' + esc(sub) + '</small></button>'; }
+  function doctorBody(cur, hold) {
+    var r = run(), D = FAIR().doctor || {}, ids = docIds(cur), full0 = (cur.n | 0) >= (cur.max | 0);
+    var lft = !hold && (cur.n | 0) > 0 && !full0 ? '<small>' + esc(U('mkDocLeft', { n: (cur.max | 0) - (cur.n | 0) })) + '</small>' : '';   // 這一次還能做幾件（跟在做完那句後面）
+    var msg = S.docMsg ? '<p class="st-dmsg">' + esc(S.docMsg) + lft + '</p>' : lft ? '<p class="st-dmsg">' + lft + '</p>' : '';
+    if (hold) { var last = S.docLast && card(S.docLast) ? S.docLast : docSel(cur); return msg + (last ? matHTML(cur, last) : '') + footHTML([holdBtn()]); }
+    var sel = docSel(cur);
+    if (!sel) return msg + '<p class="note">' + esc(U('mkDocNone')) + '</p>' + footHTML([backBtn(true)]);
+    var row = ids.length > 1 ? '<div class="st-drow" role="group">' + ids.map(function (id) { return docMini(cur, id, id === sel); }).join('') + '</div>' : '';
+    var full = (cur.n | 0) >= (cur.max | 0), c = card(sel);
+    if (S.docAx === sel) {                                           // 重壓：先選軸（那軸已經 cap 星＝灰）
+      var cap = D.cap || 5, k = D.star || 1;
+      return matHTML(cur, sel) + '<p class="st-dq">' + esc(U('mkPressAxis')) + '</p><div class="lb-opts st-dax">' +
+        ['c', 'o', 'h'].map(function (a) { var s0 = c[a] | 0; return btn('data-ax="' + a + '"', U('mkPressTo', { attr: ZHA(a), a: s0, b: Math.min(cap, s0 + k) }), { cls: 'ax-' + a, disabled: s0 >= cap }); }).join('') + '</div>' +
+        footHTML([btn('data-a="axNo"', (C().shopUi || {}).sellNo || '算了'), backBtn()]);
+    }
+    var inW = (cur.worn || []).indexOf(sel) >= 0, inF = (cur.fresh || []).indexOf(sel) >= 0, pl = plusOf(sel);
+    var wOk = inW && !full && r.money >= (cur.wash | 0), pOk = !pl && inF && (cur.pressLeft | 0) > 0 && !full && r.money >= (cur.press | 0);
+    var wWhy = !inW ? U('mkNotWorn') : r.money < (cur.wash | 0) ? noMoney() : U('mkWashHint');
+    var pWhy = pl ? U('mkPressDone') : !inF ? U('mkPressOnlyNew') : !((cur.pressLeft | 0) > 0) ? U('mkPressMax', { n: D.pressMax | 0 || 3 }) : r.money < (cur.press | 0) ? noMoney() : U('mkPressHint', { k: D.star || 1 });
+    return msg + row + matHTML(cur, sel) + '<div class="st-dact">' + dbtn('wash', U('mkWash', { n: mt(cur.wash | 0) }), wWhy, { pri: inW, disabled: !wOk }) +
+      dbtn('press', U('mkPress', { n: mt(cur.press | 0) }), pWhy, { pri: !inW && inF, disabled: !pOk }) + '</div>' + footHTML([backBtn()]);
+  }
+
+  // ---------------- 飲料攤一排三杯（冬瓜茶免費回聲望；熱美式／高粱＝接下來幾位；同時只有一杯在作用，新點的換掉舊的）
+  function cupIcon(kind, size) { var MK = W.DipPropsO && W.DipPropsO.MK_ICON, rows = MK && MK[kind === 'tea' ? 'snack' : kind]; var h = ''; try { h = rows ? H.pix(rows, size || 16, 'st-ic') : ''; } catch (_) {} return h || icon('snack', size); }
+  function snackCupsBody(cur) {
+    var r = run(), dk = E().drinkOf ? E().drinkOf(r, C()) : null, hpU = ((C().trial || {}).ui || {}).hp || '聲望 {n}/{max}';
+    var now = fill(hpU, { n: r.hp, max: r.maxHp }) + (dk ? '・' + U('mkDrinkNow', { name: DN(dk.kind), left: U('mkDrinkLeft', { n: dk.left }) }) : '');
+    var cups = (cur.drinks || []).map(function (d) {
+      var pr = d.price | 0, can = r.money >= pr, sub, sw = '';
+      if (d.kind === 'tea') { var n = Math.max(0, Math.min(d.hp | 0, r.maxHp - r.hp)); sub = n > 0 ? fill(((C().trial || {}).ui || {}).heal || '聲望 +{n}', { n: n }) : U('mkHpFull'); }
+      else if (d.kind === 'coffee') sub = U('mkCoffeeHint', { n: d.n | 0, d: d.def | 0 });
+      else sub = U('mkSorghumHint', { n: d.n | 0, a: d.atk | 0, pen: d.pen | 0 });
+      if (dk && d.kind !== 'tea') sw = '<small class="sw">' + esc(U('mkDrinkSwap', { name: DN(dk.kind) })) + '</small>';
+      return '<button type="button" class="lb-btn st-cup3 k-' + esc(d.kind) + '" data-drink="' + esc(d.kind) + '"' + (can ? '' : ' disabled') + '>' + '<span class="ic">' + cupIcon(d.kind, 18) + '</span>' +
+        '<b>' + esc(DN(d.kind)) + '</b><span class="pr">' + esc(pr > 0 ? money(pr) : U('priceFree')) + '</span><small>' + esc(can ? sub : noMoney()) + '</small>' + sw + '</button>';
+    }).join('');
+    return '<p class="note">' + esc(now) + '</p><div class="st-cups3">' + cups + '</div>' + footHTML([backBtn()]);
+  }
+
+  // ---------------- 小物攤：左＝兩件配件（照 I-3a）、右＝轉蛋機（投幣：點搖桿轉一顆 → 蛋掉出來 → 點蛋打開，停住等點）
+  //   引擎在點搖桿那一下就決定、扣錢、生效（cur.gacha.last）；畫面先不畫結果：錢的跳字只跳扣的那一下、蛋打開才跳進帳（S.moneyHide＝頂列先扣掉還沒揭曉的錢）
+  var GACHA_EGG = ['r', 'b', 'y', 'n', 'm', 'c'];
+  function gachaUi(cur) {
+    var g = cur.gacha || {};
+    if (!S.gacha || S.gacha.key !== cur.key) S.gacha = { key: cur.key, phase: g.last ? 'open' : 'idle', eff: g.last || null, n: (g.n | 0) };   // 重新整理回來：上一顆照開好的畫
+    return S.gacha;
+  }
+  function gachaResHTML(f) {
+    if (!f) return '';
+    var t = '', vis = '';
+    if (f.cell === 'gold' && f.card && card(f.card)) { t = U('mkGachaGold'); vis = H.coverHTML(card(f.card), { badge: false }); }
+    else if (f.cell === 'gold' || f.cell === 'cash') t = U('mkGachaCash', { n: mt(f.cash | 0) });
+    else if (f.cell === 'heal') t = U('mkGachaHeal');
+    else if (f.cell === 'relic' && f.relic) { var x = null; try { x = H.relicOf(f.relic); } catch (_) {} t = U('mkGachaRelic') + (x ? '「' + x.name + '」' : ''); try { vis = H.relicIcon(f.relic, 28); } catch (_) {} }
+    else if (f.cell === 'relic') t = U('mkGachaRelicCash', { n: mt(f.cash | 0) });
+    else if (f.cell === 'bump' && f.bump) t = U('mkGachaBump', { pos: f.bump.pos, n: f.bump.atk });
+    else if (f.cell === 'ouch') t = U('mkGachaOuch', { n: Math.abs(f.hp | 0) });
+    return '<div class="st-gres c-' + esc(f.cell) + '">' + (vis ? '<span class="v">' + vis + '</span>' : '') + '<span class="t">' + esc(t) + '</span></div>';
+  }
+  function gachaHTML(cur, gs, hold) {
+    var g = cur.gacha, i = g.n | 0, n = (g.price || []).length, pr = (g.price || [])[i] | 0, r = run();
+    var egg = GACHA_EGG[Math.floor((E().hash01 ? E().hash01(cur.key + '#egg#' + Math.max(0, (gs.eff ? gs.eff.gacha : i))) : 0) * GACHA_EGG.length) % GACHA_EGG.length];
+    var MKI = W.DipPropsO && W.DipPropsO.GACHA_ROWS, px = ''; try { px = MKI ? H.pix(MKI, 56, 'st-gpx') : ''; } catch (_) {}
+    var showEgg = gs.phase === 'egg';
+    var m = '<div class="st-gm' + (gs.phase === 'spin' ? ' spin' : '') + '">' + (px || '<span class="st-gbox" aria-hidden="true"></span>') + (gs.phase === 'spin' ? '<i class="st-coin" aria-hidden="true"></i>' : '') +
+      (showEgg ? '<button type="button" class="st-egg e-' + egg + (gs.fresh && !A().rm ? ' drop' : '') + '" data-a="egg" aria-label="' + esc(U('mkEggTap')) + '"><i aria-hidden="true"></i></button>' : '') + '</div>';
+    var ctl;
+    if (gs.phase === 'spin' || gs.phase === 'egg') ctl = '<p class="st-gtip on">' + esc(gs.phase === 'egg' ? U('mkEggTap') : '…') + '</p>';
+    else {
+      ctl = gs.phase === 'open' ? gachaResHTML(gs.eff) : '';
+      if (hold || i >= n) ctl += hold ? '' : '<p class="st-gtip">' + esc(U('mkGachaMax')) + '</p>';
+      else ctl += '<button type="button" class="lb-btn pri st-lever" data-a="gacha"' + (r.money < pr ? ' disabled' : '') + '><span class="kn" aria-hidden="true"></span><span>' + esc(U('mkGacha', { n: mt(pr) })) + '</span></button>' +
+        '<p class="st-gtip">' + esc(r.money < pr ? noMoney() : i > 0 ? U('mkGachaLeft', { n: n - i }) : U('mkGachaTap')) + '</p>';
+    }
+    return m + '<div class="st-gc">' + ctl + '</div>';
+  }
+  function gearGachaBody(cur, hold) {
+    var gs = gachaUi(cur), wait = gs.phase === 'spin' || gs.phase === 'egg';
+    if (hold) return '<div class="st-gacha solo">' + gachaHTML(cur, gs, true) + '</div>' + (wait ? '' : footHTML([holdBtn()]));
+    var rl = relicGrid(cur.relics || [], 'data-relic', ST().gearPrice || 3000);
+    if (cur.bought && rl) rl = rl.replace(/<button type="button" class="lb-btn pri" data-relic=/g, '<button type="button" class="lb-btn pri" disabled data-relic=');   // 一次進攤只買一件（引擎 relicOnce）
+    return '<div class="st-gear2"><div class="st-gl">' + (rl || '<p class="note">—</p>') + '</div><div class="st-gacha">' + gachaHTML(cur, gs, false) + '</div></div>' + footHTML([btn('data-a="back"', U('mkBack'), { disabled: wait })]);
+  }
+  // 點搖桿：投幣（扣錢那一下）→ 機器晃 → 蛋掉出來（等點）
+  function gachaSpin(cur) {
+    var gs = gachaUi(cur); if (gs.phase === 'spin' || gs.phase === 'egg') return;
+    mkAct({ type: 'stallAct', act: 'gacha' });
+  }
+  function eggOpen() {
+    var gs = S && S.gacha; if (!gs || gs.phase !== 'egg') return;
+    gs.phase = 'open'; gs.fresh = false;
+    var f = gs.eff || {}, r = run(), hide = S.moneyHide | 0;
+    sfx(f.cell === 'ouch' ? 'hurt' : f.cell === 'gold' || f.cell === 'relic' ? 'ding' : 'pocket');
+    S.moneyHide = 0;
+    if (hide && r) { try { H.cashRise(r.money - hide, r.money); } catch (e) { console.error(e); } }
+    try { H.refresh(); } catch (_) {}
+    S.gFx = { n: ((S.gFx || {}).n | 0) + 1, kind: 'open', cell: f.cell };
+    mkRenderStation();
+  }
+
+  // ---------------- 算命攤心情題（店主 11-23）：題庫在 repo 根目錄（主站心情選歌）；進算命攤才抓、快取；抓不到＝照 I-3a
+  var MOOD = { off: false, st: 0, quiz: null, bank: null, p: null, pb: null };
+  function moodGet(u) { return fetch(u).then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); }); }
+  function moodLoad() {
+    if (MOOD.off) return Promise.resolve(null);
+    if (MOOD.p) return MOOD.p;
+    MOOD.st = 1;
+    var to = new Promise(function (_, rej) { setTimeout(function () { rej(new Error('timeout')); }, 5000); });
+    MOOD.p = Promise.race([moodGet('../mood-quiz.json'), to]).then(function (q) {
+      if (!(E().moodPrep && E().moodPrep(q) && E().moodPrep(q).rows.length)) throw new Error('quiz shape');
+      MOOD.quiz = q; MOOD.st = 2;
+      MOOD.pb = moodGet('../mood-bank.json').then(function (b) { MOOD.bank = b && b.passages && typeof b.passages === 'object' ? b : null; return MOOD.bank; })
+        .catch(function (e) { console.warn('[stalls] mood-bank', e && e.message); return null; });
+      return q;
+    }).catch(function (e) { console.warn('[stalls] mood-quiz', e && e.message); MOOD.st = -1; return null; });
+    return MOOD.p;
+  }
+  function moodReady() { return !MOOD.off && MOOD.st === 2 && !!MOOD.quiz && !!E().moodAsk; }
+  // 問第 i 張（0 起）之前那一題。cur＝null：還沒進攤（打開算命攤之前問第一題；不扣時段）
+  function moodAskBody(cur, i) {
+    var r = run(), q = null; try { q = E().moodAsk(r, MOOD.quiz, i); } catch (e) { console.error(e); }
+    S.moodQ = q || null;
+    if (!q) return cur ? fortuneMkBody(cur, false) : '<p class="note">' + esc(U('mkMoodLoad')) + '</p>' + footHTML([backBtn()]);
+    var pr = cur ? ((cur.price || [])[i]) | 0 : 0, can = r.money >= pr, h = '';
+    if (cur && i > 0) { var sl = (cur.slips || [])[i - 1]; if (sl) h += '<div class="st-slips one">' + slipHTML(sl, S.fresh === i - 1) + '</div>'; }
+    var lead = !cur ? U('mkMoodAsk') : pr > 0 ? U('mkMoodFlip', { i: i + 1, n: mt(pr) }) : U('mkMoodFlipFree', { i: i + 1 });
+    h += '<div class="st-mood"><p class="ld"><span>' + esc(lead) + '</span>' + (i === 2 ? '<small class="warn">' + esc(U('mkOmenWarn')) + '</small>' : '') + '</p><p class="qq">' + esc(q.q) + '</p>' +
+      '<div class="st-mopts">' + (q.o || []).map(function (t, k) { return '<button type="button" class="lb-btn st-mo" data-mo="' + k + '"' + (can ? '' : ' disabled') + '>' + esc(t) + '</button>'; }).join('') + '</div>' +
+      (can ? '' : '<p class="note warn">' + esc(noMoney()) + '</p>') + '</div>';
+    return h + footHTML([cur ? btn('data-a="back"', U('fortuneOk')) : backBtn()]);
+  }
+  // 點算命攤格子：題庫好了＝先問第一題（還沒進攤）；在抓＝面板先寫「阿姨在洗籤」，抓到就換成題目；抓不到／?mood=0＝照 I-3a 直接打開（翻第一張）
+  function moodOpen() {
+    if (MOOD.off || MOOD.st < 0) return false;
+    S.ask = { kind: 'fortune', key: 'ask' }; S.phase = 'station'; S.cur = null; S.kind = 'fortune'; S.moodQ = null;
+    lightUp([isleOf('fortune')].filter(Boolean));
+    mkRenderStation(true);
+    if (!moodReady()) {
+      var tok = S;
+      moodLoad().then(function () {
+        if (S !== tok || !S.ask) return;
+        if (moodReady()) return mkRenderStation();
+        S.ask = null; closeStation(); S.phase = 'grid'; enterTile('fortune', { direct: true });   // 抓不到：照 I-3a
+      });
+    }
+    return true;
+  }
+  function moodPick(k) {
+    var q = S.moodQ; if (!q || S.busy) return;
+    var ans = { q: q.id, o: k };
+    sfx('tick');
+    if (S.ask) { S.ask = null; S.moodQ = null; S.phase = 'grid'; S.keepSheet = true; return enterTile('fortune', { direct: true, ans: ans }); }
+    S.moodQ = null;
+    mkAct({ type: 'stallAct', act: 'flip', ans: ans });
+  }
+  // 三題答完（翻滿三張）：心情＋一張專輯＋一段原文（每一場算命攤算一次、存在 S.moodR；那張進想要清單只加一次）
+  function moodRes(cur) {
+    if (!moodReady()) return null;
+    if (S.moodR && S.moodR.key === cur.key) return S.moodR.res ? S.moodR : null;
+    if (!MOOD.bank) {
+      if (MOOD.pb && !S.moodWait) { S.moodWait = true; var tok = S; MOOD.pb.then(function () { if (S === tok && S.hold === cur && MOOD.bank) mkRenderStation(); }); }
+      return null;
+    }
+    var r = run(), res = null;
+    try { res = E().moodResult(r, C(), MOOD.quiz, MOOD.bank, { owned: function (id) { try { return !!H.owned(id); } catch (_) { return false; } }, want: (H.wantList ? H.wantList() : []) }); } catch (e) { console.error(e); }
+    var w = null; if (res && res.id && card(res.id)) { try { w = H.want ? H.want(res.id) : null; } catch (e) { console.error(e); } }
+    S.moodR = { key: cur.key, res: res && res.id && card(res.id) ? res : null, want: w };
+    return S.moodR.res ? S.moodR : null;
+  }
+  function moodResultBody(cur, M) {
+    var R = M.res, c = card(R.id), sl = (cur.slips || [])[2];
+    var wt = M.want === 'had' ? U('mkMoodWantHad') : M.want === 'full' ? U('mkMoodWantFull') : M.want === 'add' ? U('mkMoodWant') : '';
+    var h = sl ? '<div class="st-slips one cmp">' + slipHTML(sl, S.fresh === 2) + '</div>' : '';   // 第 3 張那一行收成一行（整句在來客條頭像上看得到）
+    h += '<div class="st-moodr"><p class="is">' + esc(U('mkMoodIs', { name: R.name })) + '</p><div class="pk">' + H.coverHTML(c, { badge: false }) +
+      '<span class="tx"><b>' + esc(U('mkMoodPick', { album: c.album })) + '</b>' + (wt ? '<small>' + esc(wt) + '</small>' : '') + '</span></div><p class="ps">' + esc(R.passage) + '</p></div>';
+    var leave = mkNothingLeft();
+    return h + footHTML([btn(leave ? 'data-a="notedLeave"' : 'data-a="noted"', leave ? U('mkNotedLeave') : U('fortuneOk'), { pri: true })]);
+  }
+
   function isle() {
     var p = P(); if (!p || p.mode !== 'market' || !Array.isArray(p.tiles)) return [];
     return p.tiles.map(function (k, i) { return { kind: k, hot: ISLE[i % ISLE.length], went: !!(p.went || {})[k] }; });
@@ -1102,6 +1389,10 @@
       H = host || null;
       // 第 I 波 I-3a 施工期間：?market=1＝市集模式試玩、?market=0＝C 波二選一（＝sim --market on|off；只改 content 的開關，之後一切照 pending.mode）
       try { var m = /[?&]market=([01])(?:&|$)/.exec(W.location.search || ''), st = H && H.content && H.content.waveC && H.content.waveC.stall; if (m && st) st.mode = m[1] === '1' ? 'market' : 'pick'; } catch (_) {}
+      // 第 I 波 I-3b 施工期間：?newstalls=1＝唱片醫生、熱美式／高粱、轉蛋機一起開（＝sim --newstalls on；只改 content 的開關 fair.newStalls）；?newstalls=0＝關。
+      //   ?mood=0＝算命攤不接心情題庫（＝題庫抓不到：照 I-3a 翻籤；e2e 測 I-3a 那條路用）
+      try { var ns = /[?&]newstalls=([01])(?:&|$)/.exec(W.location.search || ''), fa = H && H.content && H.content.waveC && H.content.waveC.stall && H.content.waveC.stall.fair; if (ns && fa) fa.newStalls = ns[1] === '1'; } catch (_) {}
+      try { if (/[?&]mood=0(?:&|$)/.test(W.location.search || '')) MOOD.off = true; } catch (_) {}
     },
     night: night, busy: busy, state: state, cpPick: cpPick, draft: draft, isle: isle, station: station,
     // 測試：底部那塊的鈕（e2e 用真點；這裡只給測試讀狀態）

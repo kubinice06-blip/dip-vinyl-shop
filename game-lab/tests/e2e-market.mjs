@@ -1,7 +1,7 @@
 // game-lab/tests/e2e-market.mjs：第 I 波 I-3a 市集殼（scratchpad v5/wave-i SPEC-I §6.8、§6.7 M5／P3、§10；引擎契約 build3/CONTRACT.md）端對端測試。測試棒。
 //   SPEC-I §6.8 說它「取代 e2e-stall」：施工期間出貨 C.waveC.stall.mode 還是 'pick'（C 波二選一＝緊急退回），e2e-stall 照測 pick；這支一律帶 ?market=1（＝市集）。
 //   11-23 主線開旗標（mode 'market' 出貨）：這支不再帶 ?market=1（照出貨預設＝市集）；C 波對照（#12 的 pick 那組）帶 ?market=0；e2e-stall 一律帶 ?market=0。
-//   I-3b 的攤（唱片醫生、熱美式／高粱、轉蛋機）不在這支。
+//   I-3b 的攤（唱片醫生、熱美式／高粱、轉蛋機）與算命心情題在 #15（11-23 I-3b 畫面棒）。
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   node game-lab/tests/e2e-market.mjs
 //   環境變數（見 e2e-lib.mjs）：LAB_BASE／LAB_URL；LAB_SIZES（這支預設 390x664,375x548）；MK_ONLY＝只跑這幾項（例 1,4）；
@@ -41,11 +41,17 @@
 //      時段用完＝島台只亮免費攤；寄賣那張還在外面＝寄賣攤寫原因、鈕灰；375 店裡唱盤／黑膠特賣「回攤位」看得到（底那條黏底）
 //   13 抽攤規則（§6.2-6、-7、-8；content stall.fair）：三個種子 × 打完第 5〜200 位每一輪：第一個市集＝固定組＋錄音室；一般輪 5 攤（marketTiles 6＝6 攤）不重複、
 //      只出 weights 裡的、花錢攤 ≤ paidMax、至少一攤藍框、公關片／寄賣照解鎖位數；中繼點＝5 攤＋黑膠特賣＋錄音室、時段 4；畫面藍框格＝stall.blue
+//   15 第 I 波 I-3b（?newstalls=1；算命攤接心情題庫）：a 唱片醫生、b 飲料三杯＋來客條杯子＋對決底氣、c 轉蛋六格、d 算命心情題、e 新面板版面（細節見那一段）
+//   #1–#14 一律帶 &mood=0（算命攤不接題庫＝題庫抓不到的退路＝I-3a 原樣）
+//      （I-3b 測試棒 11-23 補）f 高粱（換掉熱美式、品味 +1、每位第一次被剋多扣 1、第二次不扣、杯子 2→1→沒了）、g 切磋不扣杯數（?crowd=1&enc=force；切磋裡照樣底氣 +1）、
+//      h 題庫抓不到（路由擋 ../mood-quiz.json＝照 I-3a 翻籤；擋 ../mood-bank.json＝三題照問、翻滿照 I-3a 停住）、i 想要清單滿 200（只唸不加、寫那句）、a 加引擎「第 4 張重壓被擋」（pressMax）
+//   16 §6.7 M5 全點（?newstalls=1、算命接題庫＝出貨的樣子）：照 #7 的判法（cPolicy slotMin −9、flips 3；上場面板那一下歸 P3、市集點擊 ≤10），第 15、25 位之後兩輪（照抽）
+//      ＋打完第 35 位那輪（一般輪）固定 唱片醫生／小物攤（轉蛋）／算命／飲料／挖寶、主力聽膩＋新到一張（新三攤一定被策略挑到）；逐攤點擊數、不算題庫多問那一下的點擊數只列
 //   每項最後看主控台 0 錯誤。任何 FAIL → exit 1。
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { launch, newPage, SIZES as SIZES0, record, results, sleep, Q, URL0, SEED, jsClick, waitScreen, duelReady, tapAt, tapReady, seededContinue, openTitle, advanceUntil,
-  noScroll, scrollOk, passLoot, stallState, clearStall, luSkip } from './e2e-lib.mjs';
+  noScroll, scrollOk, passLoot, stallState, clearStall, luSkip, seedRun, tapHot } from './e2e-lib.mjs';
 
 const SIZES = process.env.LAB_SIZES ? SIZES0 : [[390, 664], [375, 548]];
 const ONLY = (process.env.MK_ONLY || '').split(',').filter(Boolean).map(Number);
@@ -56,7 +62,9 @@ const errs = page => (page._errors || []).filter(e => !/favicon/.test(e));
 const errTxt = page => `錯誤 ${errs(page).length}${errs(page).length ? '：' + errs(page).slice(0, 2).join(' / ').slice(0, 200) : ''}`;
 const fill = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
 const mtx = n => Number(n).toLocaleString('en-US');
-const QM = (x = '') => Q('&fast=1' + x);   // 第 I 波 I-3a（11-23）出貨＝市集（content stall.mode 'market'）：不再帶 ?market=1（原本 '&fast=1&market=1'），照出貨預設跑
+const QM = (x = '') => Q('&fast=1&mood=0' + x);   // 第 I 波 I-3a（11-23）出貨＝市集（content stall.mode 'market'）：不再帶 ?market=1（原本 '&fast=1&market=1'），照出貨預設跑
+//   第 I 波 I-3b（11-23）：算命攤接心情題庫（不看 newStalls）＝翻每一張先問一題。#1–#14 測的是 I-3a 那條路＝題庫抓不到（?mood=0，同一條退路），一律帶 &mood=0；
+//   題庫那條路、唱片醫生、熱美式／高粱、轉蛋機在 #15（?newstalls=1；不帶 mood=0）
 // 字（C.waveC.ui＋攤名：市集模式 fairStations 蓋過 stations）
 const UI = page => C(page, () => { const W = window.DipLabContent.waveC; return Object.assign({}, W.ui, { st: Object.assign({}, W.stations, W.fairStations), fair: W.stall.fair, gearPrice: W.stall.gearPrice, demoLexp: W.stall.demoLexp, heal: (window.DipLabContent.trial.ui || {}).heal }); });
 
@@ -278,15 +286,24 @@ async function policyTaps(page, o) {
   return C(page, o => {
     const r = window.__lab.run, E = window.DipLabEngine, Cn = window.DipLabContent, p = r.pending, s = window.DipLabStalls.state();
     if (!p || p.type !== 'stall') return { done: true };
+    const S = '.lb-sheet.stall.st-mk ';
+    // 第 I 波 I-3b（#16；newStalls 關著、?mood=0 時這三條不會成立）：蛋掉出來了＝點蛋（轉滿那一下攤子關了也一樣）；算命心情題（打開前那一題、每翻一張前那一題）＝點第一個選項
+    if (s && s.gacha && s.gacha.phase === 'egg') return { sel: [S + '[data-a=egg]'], ch: 'egg' };
+    if (s && s.gacha && s.gacha.phase === 'spin') return { wait: true };
+    if (s && (s.ask || s.moodQ)) return document.querySelector(S + '[data-mo]') ? { sel: [S + '[data-mo="0"]'], ch: 'mood' } : { wait: true };
     if (s && s.hold) return { sel: ['[data-a=noted],[data-a=notedLeave]'], ch: document.querySelector('[data-a=notedLeave]') ? 'notedLeave' : 'noted' };   // 修正棒：時段用完、沒別的攤＝「記下了，收攤」
     if (document.querySelector('.st-mk .st-ask')) return { sel: ['.st-ask [data-a=leaveYes]'], ch: 'leaveYes', grid: true };
     const ch = E.cPolicy(r, Cn, o); if (!ch) return { none: true };
-    const S = '.lb-sheet.stall.st-mk ';
+    const q = id => '"' + String(id).replace(/["\\]/g, '\\$&') + '"';
+    const docOn = id => (s && s.doc && s.doc.id === id ? [] : [S + `[data-doc=${q(id)}]`]);   // I-3b 唱片醫生：清潔墊上不是那張＝先點上面那一列換
     if (ch.type === 'stallEnter') return { sel: [`.st-mk .st-mt[data-k="${ch.kind}"]`], ch: 'enter ' + ch.kind, grid: true };
     if (ch.type === 'stallLeave') return { sel: ['.st-mk [data-a=leave]'], ch: 'leave', grid: true };
     const a = ch.act, cur = p.cur;
     switch (a) {
       case 'flip': return { sel: [S + '.st-slip.next .lb-btn[data-a=flip]'], ch: a };
+      case 'wash': return { sel: docOn(ch.cardId).concat([S + '[data-a=wash]']), ch: a };                                  // I-3b
+      case 'press': return { sel: docOn(ch.cardId).concat([S + '[data-a=press]', S + `[data-ax="${ch.attr}"]`]), ch: a + ' ' + ch.attr };
+      case 'gacha': return { sel: [S + '[data-a=gacha]'], ch: a };                                                       // 蛋：下一步（egg）
       case 'drink': return { sel: [S + `[data-drink="${ch.kind}"]`], ch: a };
       case 'take': {
         if (cur.kind === 'dig') { const i = cur.cards.indexOf(ch.cardId), up = !document.querySelector(S + `.st-c.st-down[data-k="${i}"]`); return { sel: (up ? [] : [S + `[data-flip="${i}"]`]).concat([S + `[data-take="${ch.cardId}"]`]), ch: a + ' dig' }; }
@@ -310,6 +327,83 @@ async function policyTaps(page, o) {
       default: return { sel: [S + '[data-a=back]'], ch: a };
     }
   }, o);
+}
+
+// ---- 第 I 波 I-3b 測試棒（#15f–#15i、#16）共用
+// 來客條每位頭像下的小杯子（熱美式／高粱；最前面那位寫還剩幾位）
+const cupsOf = page => C(page, () => [...document.querySelectorAll('.lb-night .nc')].map(n => { const c = n.querySelector('.st-cupm'); return c ? (c.textContent || 'c') : ''; }));
+// 來客畫面「下一位」→ 對決開打
+async function toDuel(page) {
+  await tapReady(page, '[data-a=go]');
+  await advanceUntil(page, () => window.__lab.screen() === 'duel' && !!window.__lab.rawDuel(), null, 30000);
+  await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+}
+// 直接打贏這位 → 戰利品 → 回來客畫面（上場面板照預設）
+async function winOne(page) {
+  await C(page, () => window.__lab.forceWin());
+  await passLoot(page, {});
+  await page.waitForSelector('[data-a=go]', { timeout: 15000 }).catch(() => {}); await luSkip(page, 1500); await sleep(600);
+}
+// 對決裡的飲料（主線：E.view(run.duel)；切磋：對決畫面的 view）：view.drink、品味／底氣（對照：同一份 run 拿掉飲料的 playerDef）、品／底後面的小杯子與紅點（高粱那一下還沒扣）
+const drinkView = page => C(page, () => {
+  const E = window.DipLabEngine, Cn = window.DipLabContent, r = window.__lab.run, d = window.__lab.rawDuel(), dbg = window.DipLabDuel && window.DipLabDuel.debug && window.DipLabDuel.debug();
+  const v = d ? E.view(d) : dbg && dbg.view; if (!v) return {};   // 切磋那場不在 run.duel：照對決畫面那一份 view
+  const r2 = JSON.parse(JSON.stringify(r)); r2.drink = null; const b = E.playerDef(Cn, r2), ic = document.querySelector('.dl [data-st="drink"]');
+  return { drink: v.drink || null, pAtk: v.pAtk | 0, pDef: v.pDef | 0, bAtk: b.atk | 0, bDef: b.def | 0, cup: !!ic, dot: !!(ic && ic.classList.contains('pen')) };
+});
+// 這一手「你被剋」的出法（你出 X、他出剋 X 的 Y＝setNext）：同一份對決的拷貝結算一次（＝預期）＋拿掉高粱再算一次（base）；先挑兩者剛好差 1 的（底氣折半可能吃掉那 1）
+const counteredPlan = page => C(page, () => {
+  const E = window.DipLabEngine, d = window.__lab.rawDuel(), beats = { o: 'c', c: 'h', h: 'o' }, cand = [];
+  if (!d || d.over) return null;
+  for (let i = 0; i < d.p.hand.length; i++) for (const X of ['c', 'o', 'h']) {
+    if (!d.p.hand[i] || !E.isLegal(d, { i, attr: X })) continue;
+    const Y = Object.keys(beats).find(k => beats[k] === X);
+    for (let j = 0; j < d.e.hand.length; j++) {
+      if (!d.e.hand[j]) continue;
+      const a = JSON.parse(JSON.stringify(d)), ev = (E.resolveTurn(a, { i, attr: X }, { forcedPlay: { i: j, attr: Y } }) || []).find(e => e.t === 'clash');
+      if (!ev || ev.kind !== 'countered' || !(ev.toP >= 1) || a.over) continue;
+      const b = JSON.parse(JSON.stringify(d)); b.p.drinkPen = 0;
+      const eb = (E.resolveTurn(b, { i, attr: X }, { forcedPlay: { i: j, attr: Y } }) || []).find(e => e.t === 'clash');
+      cand.push({ i, X, j, Y, toP: ev.toP, base: eb ? eb.toP : null, notes: (ev.notes || []).filter(n => n && n.drink).map(n => n.text) });
+    }
+  }
+  return cand.find(c => c.toP === c.base + 1) || cand[0] || null;
+});
+// 照計畫真點一手（點那張 → 點那色）：回 結果行（kind、toP、結果行小字）＋聲望實際掉多少（dp）
+async function playPlan(page, pl) {
+  const n0 = await C(page, p => { window.__lab.duelLab.setNext({ i: p.j, attr: p.Y }); return window.__lab.rawDuel().n; }, pl);
+  const hp0 = await C(page, () => window.__lab.rawDuel().p.hp);
+  await tapAt(page, `dt:card-${pl.i}`); await sleep(300);
+  await tapAt(page, `.dl [data-tut="chip-${pl.i}-${pl.X}"]`);
+  await page.waitForFunction(n0 => { const d = window.DipLabDuel.debug(), cl = d && d.last && (d.last.evs || []).find(e => e.t === 'clash'); return !!cl && cl.n === n0 && d.last.ui && d.last.ui.call.on; }, n0, { timeout: 8000 }).catch(() => {});
+  const res = await C(page, () => { const d = window.DipLabDuel.debug(), cl = d && d.last && (d.last.evs || []).find(e => e.t === 'clash'); return cl ? { n: cl.n, kind: cl.kind, toP: cl.toP, notes: ((d.last.ct || {}).notes || []).slice() } : null; });
+  await duelReady(page, 15000); await sleep(300);
+  if (res) res.dp = hp0 - (await C(page, () => window.__lab.rawDuel().p.hp));
+  return res;
+}
+// 算命心情題走一遍（點算命攤 → 三題各點一個 → 翻滿停住）：回 三題、心情、那張、段落是不是題庫原文、心情結果有沒有畫
+async function moodFlow(page) {
+  await enter(page, 'fortune');
+  const qs = [];
+  for (let k = 0; k < 3; k++) {
+    if (!(await page.waitForSelector('.lb-sheet.stall [data-mo]', { timeout: 8000 }).then(() => true, () => false))) break;
+    await settle(page, '.lb-sheet.stall');
+    const q = await C(page, () => window.DipLabStalls.state().moodQ); qs.push(q);
+    await tapSheet(page, `[data-mo="${k}"]`);
+    await page.waitForFunction(q => { const s = window.DipLabStalls.state(); return !!s && (s.hold || (!!s.moodQ && s.moodQ !== q)); }, q, { timeout: 6000 }).catch(() => {});
+  }
+  const hold = await page.waitForFunction(() => { const s = window.DipLabStalls.state(); return !!s && s.hold; }, null, { timeout: 8000 }).then(() => true, () => false);
+  await page.waitForSelector('.lb-sheet.stall .st-moodr', { timeout: 4000 }).catch(() => {});
+  await settle(page, '.lb-sheet.stall'); await sleep(600);
+  return C(page, async qs => {
+    const r = window.__lab.run, s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall'), Cn = window.DipLabContent, E = window.DipLabEngine;
+    const ps = (sh && sh.querySelector('.st-moodr .ps') || {}).textContent || '';
+    let inBank = null, mood = null;
+    try { const qz = await (await fetch('../mood-quiz.json')).json(), bk = await (await fetch('../mood-bank.json')).json(), c = s.mood && Cn.cards[s.mood.id], key = c ? (c.artist + '|' + c.album).toLowerCase() : '';
+      mood = E.moodOf(qz, r.pending.moodAns); inBank = !!(bk.passages[key] && (bk.passages[key][s.mood && s.mood.mood] || []).includes(ps)); } catch (_) {}
+    return { qs, hold: !!s.hold, moodr: !!(sh && sh.querySelector('.st-moodr')), mood: s.mood ? s.mood.mood : null, mood2: mood, id: s.mood ? s.mood.id : null, inBank, ans: r.pending.moodAns || null,
+      noted: !!(sh && sh.querySelector('[data-a=noted],[data-a=notedLeave]')), ok: qs.length === 3 && new Set(qs).size === 3 && !!s.hold && !!s.mood && s.mood.mood === mood && inBank === true };
+  }, qs);
 }
 
 async function runSize(browser, w, h) {
@@ -938,6 +1032,368 @@ async function runSize(browser, w, h) {
         `冬瓜茶倒一杯 ${pour.pour}（飲料攤 ${pour.hot}）、右上吐司 ${J(pour.mk)}；試錄回攤位 ${sb}（去過 ${!!s1.p.went.studio}、時段 ${s1.p.left}、再進 ${reS}）；` +
         `踢館帖底鈕 ${J(db)}（去過 ${!!s2.p.went.dare}、時段 ${s2.p.left}、再進 ${reD}）、時段用完島台亮 ${J(hi.hi)}；記下了收攤「${nl}」收掉 ${gone}、${nTap} 下；寄賣 ${J(cb)}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(14, size, false, 'exception ' + e.message); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 15 第 I 波 I-3b 市集新攤（?newstalls=1）＋算命攤心情題（題庫那條路；SPEC-I §6.3、§6.8；契約 build3b/CONTRACT.md）
+  //   a 唱片醫生：清潔墊預設最膩那張；洗＝聽膩清掉、−$800、月亮 −1、字留在面板（停住）；不是這一輪新到的那張「重壓」灰、寫原因；換新到的 → 重壓先選軸 → 那軸 +1、−$2,000、做滿 2 件停住等點 → 回攤位；
+  //     封面「壓」（包包面板、上場列）；這一趟壓滿 3 張＝重壓灰、寫「這一趟已經壓滿 3 張」
+  //   b 飲料：第一個市集只有冬瓜茶；一般輪一排三杯；熱美式 −$1,500 → 來客條頭像下杯子、最前面那位寫「3」→ 對決裡底氣 +1（view.drink）→ 打完一位變「2」
+  //   c 轉蛋：六格各固定一次（fair.gacha.cells 改成那一格）：點搖桿 −$1,000 → 蛋掉出來、停住（1.5 秒後還在、結果還沒畫、錢還沒進）→ 點蛋打開 → 效果與字對；第 2 顆 $2,000、轉滿「今晚轉夠了」
+  //   d 算命心情題：點算命攤＝先問一題（還沒進攤：月亮不動、不翻）→ 選一個＝翻第 1 張（moodAns[0]＝{q,o}）→ 第 2、3 張前各問一題（不重複）→ 翻滿：第 3 張那一行＋心情名（quiz.moods）＋
+  //     一段原文（＝mood-bank 那一段，一字不改）＋那張進想要清單 → 停住 1.5 秒 → 記下了回攤位；全點的下數（打開＋三題＋記下了）只列
+  //   e 版面（每個新面板）：店不捲、面板 ≤ 可視高 55%（+1）、不蓋頂欄、鈕 ≥44
+  if (want(15)) {
+    const { ctx, page } = await newPage(browser, w, h); await watchToasts(page);
+    const QN = (x = '') => Q('&fast=1&newstalls=1' + x);
+    const lays = [], bad = [];
+    // 新面板的版面＋清潔墊上面那一列沒被壓扁（≥44）、新鈕（清潔墊那列、選軸、三杯、搖桿、蛋、心情選項）≥44、面板自己捲幾 px（只列）
+    const lay = async tag => {
+      const L = await layout(page);
+      const X = await C(page, () => { const sh = [...document.querySelectorAll('.lb-sheet.stall')].pop(), rr = e => e.getBoundingClientRect(), row = sh && sh.querySelector('.st-drow');
+        const nb = sh ? [...sh.querySelectorAll('.st-dmini, [data-ax], .st-cup3, [data-a=gacha], [data-a=egg], [data-mo], .st-dbtn')].map(b => [b.getAttribute('data-a') || b.getAttribute('data-mo') || b.className.split(' ')[0], Math.round(rr(b).width), Math.round(rr(b).height)]).filter(b => b[1] < 44 || b[2] < 44) : [];
+        return { row: row ? row.clientHeight : null, nb, scroll: sh ? sh.scrollHeight - sh.clientHeight : 0 }; });
+      lays.push([tag, L.sheetH, X.scroll]);
+      if (!(L.app <= 0 && L.docY <= 0 && L.sheetH <= Math.round(L.vh * 0.55) + 1 && (L.sheetTop == null || L.sheetTop >= L.topBot) && !L.small.length && !X.nb.length && (X.row == null || X.row >= 44)))
+        bad.push([tag, L.sheetH, L.vh, L.sheetTop, L.topBot, L.app, J(L.small.slice(0, 3)), J(X)]);
+    };
+    const sheetTx = () => C(page, () => { const s = document.querySelector('.lb-sheet.stall'); return s ? s.textContent : ''; });
+    try {
+      await start(page, { q: QN(), extra: 3 });
+      const x = await UI(page);
+      // ---- a 唱片醫生
+      const s0 = await marketAt(page, 20, { money: 9000, leave: 1, tiles: ['doctor', 'snack', 'gear', 'fortune', 'dig'], free: [] });
+      const ids = await C(page, () => { const r = window.__lab.run; r.wear = r.wear || {}; r.wear[r.bag[0]] = { g: 2, n: 1 }; r.wear[r.bag[1]] = { g: 3, n: 0 }; r.lineupFresh = [r.bag[2], r.bag[3]]; window.__lab.money(9000); window.__lab.go('night'); return r.bag.slice(0, 4); });
+      await gridReady(page);
+      await enter(page, 'doctor'); await sheetReady(page, 'doctor'); await lay('doctor');
+      const d0 = await C(page, () => { const s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall'), pb = sh.querySelector('[data-a=press]');
+        return { sel: s.doc && s.doc.id, row: [...sh.querySelectorAll('[data-doc]')].map(b => b.getAttribute('data-doc')), pressDis: !!(pb && pb.disabled), pressTx: pb ? pb.textContent : '', left: window.__lab.run.pending.left }; });
+      await tapSheet(page, '[data-a=wash]');
+      const d1 = await C(page, k => { const r = window.__lab.run, s = window.DipLabStalls.state(); return { wear: r.wear[k] || null, money: r.money, left: r.pending.left, open: !!(r.pending.cur && r.pending.cur.kind === 'doctor'), msg: s.doc && s.doc.msg }; }, ids[0]);
+      await lay('doctorWashed');
+      await tapSheet(page, `[data-doc="${ids[2]}"]`);
+      await tapSheet(page, '[data-a=press]'); await lay('doctorAxis');
+      const ax = await C(page, () => { const b = [...document.querySelectorAll('.lb-sheet.stall [data-ax]')].find(x => !x.disabled); return b ? b.getAttribute('data-ax') : null; });
+      const star0 = await C(page, ([k, a]) => window.DipLabContent.cards[k][a], [ids[2], ax]);
+      await tapSheet(page, `[data-ax="${ax}"]`); await sleep(1500);
+      const d2 = await C(page, k => { const r = window.__lab.run, s = window.DipLabStalls.state(), E = window.DipLabEngine; return { plus: r.plus && r.plus[k], pressN: r.pressN, money: r.money, hold: s.phase, eff: E.effCard(window.DipLabContent, r, k), ptag: !!document.querySelector('.lb-sheet.stall .st-mat .st-ptag'), msg: s.doc && s.doc.msg }; }, ids[2]);
+      await lay('doctorHold');
+      await tapSheet(page, '[data-a=noted]'); const gb = await gridReady(page);
+      const wentD = await C(page, () => !!window.__lab.run.pending.went.doctor);
+      const okDoc = d0.sel === ids[0] && d0.row.includes(ids[2]) && d0.pressDis && d0.pressTx.includes(x.mkPressOnlyNew) && !d1.wear && d1.money === 9000 - x.fair.doctor.wash && d1.left === s0.left - 1 && d1.open && d1.msg === x.mkWashed &&
+        d2.plus && d2.plus[ax] === 1 && d2.pressN === 1 && d2.money === d1.money - x.fair.doctor.press && d2.hold === 'hold' && d2.eff[ax] === Math.min(5, star0 + 1) && d2.eff.pressed === ax && d2.ptag && gb && wentD;
+      // 壓滿 3 張：重壓灰、寫原因；包包面板「壓」
+      await marketAt(page, 25, { money: 9000, leave: 1, tiles: ['doctor', 'snack', 'gear', 'fortune', 'dig'], free: [] });
+      await C(page, k => { const r = window.__lab.run; r.pressN = 3; r.lineupFresh = [r.bag[3]]; r.wear = {}; window.__lab.money(9000); window.__lab.go('night'); }, ids[3]); await gridReady(page);
+      await enter(page, 'doctor'); await sheetReady(page, 'doctor');
+      const d3 = await C(page, () => { const pb = document.querySelector('.lb-sheet.stall [data-a=press]'); return { dis: !!(pb && pb.disabled), tx: pb ? pb.textContent : '' }; });
+      // 第 4 張重壓被擋（引擎；在 run 的拷貝上試，畫面那顆鈕已經灰）：這一輪新到的那張照樣 pressMax、錢與 plus 不動
+      const blk = await C(page, k => { const E = window.DipLabEngine, Cn = window.DipLabContent, r = JSON.parse(JSON.stringify(window.__lab.run)), m0 = r.money;
+        const res = E.choose(r, Cn, { type: 'stallAct', act: 'press', cardId: k, attr: 'c' }) || {}; return { ok: !!res.ok, error: res.error || null, pressN: r.pressN, money: r.money === m0, plus: !!(r.plus && r.plus[k]) }; }, ids[3]);
+      await tapSheet(page, '[data-a=back]'); await gridReady(page);
+      const okMax = d3.dis && d3.tx.includes(fill(x.mkPressMax, { n: x.fair.doctor.pressMax })) && !blk.ok && blk.error === 'pressMax' && blk.pressN === 3 && blk.money && !blk.plus;
+      await tapReady(page, '.lb-bagline [data-a=bag]'); await sleep(700);
+      const bagTag = await C(page, k => { const t = document.querySelector(`.lb-sheet [data-cid="${k.replace(/"/g, '\\"')}"] .ptag`); return !!t; }, ids[2]);
+      await C(page, () => { document.querySelectorAll('.lb-sheet [data-a=close], .lb-sheet [data-x]').forEach(b => b.click()); }); await sleep(400);
+      record('15a', size, okDoc && okMax && bagTag && !errs(page).length,
+        `清潔墊預設 ${d0.sel === ids[0]}、一列 ${d0.row.length} 張、舊盤重壓灰 ${d0.pressDis}「${d0.pressTx}」；洗 → 聽膩 ${J(d1.wear)}、$${d1.money}、月亮 ${s0.left}→${d1.left}、面板還開 ${d1.open}「${d1.msg}」；` +
+        `重壓 ${ax} → plus ${J(d2.plus)}、pressN ${d2.pressN}、$${d2.money}、${star0}→${d2.eff[ax]}、停住 1.5 秒 ${d2.hold}、壓標 ${d2.ptag}「${d2.msg}」→ 回攤位 ${gb}、打勾 ${wentD}；壓滿 ${J(d3)}、第 4 張（引擎）${J(blk)}；包包「壓」 ${bagTag}；${errTxt(page)}${missTxt(page)}`);
+
+      // ---- b 飲料
+      await marketAt(page, 5, { money: 9000, leave: 1 });
+      const first = await C(page, () => { const p = window.__lab.run.pending, E = window.DipLabEngine, Cn = window.DipLabContent; return { first: p.first, tiles: p.tiles.slice() }; });
+      let firstMenu = null;
+      if (first.tiles.includes('snack')) { await enter(page, 'snack'); await sheetReady(page, 'snack'); firstMenu = await C(page, () => [...document.querySelectorAll('.lb-sheet.stall [data-drink]')].map(b => b.getAttribute('data-drink'))); await tapSheet(page, '[data-a=back]'); await gridReady(page); }
+      const s1 = await marketAt(page, 20, { money: 9000, leave: 1, tiles: ['snack', 'doctor', 'gear', 'fortune', 'dig'], free: [] });
+      await C(page, () => { window.__lab.run.hp = Math.max(1, window.__lab.run.maxHp - 4); window.__lab.money(9000); window.__lab.go('night'); }); await gridReady(page);
+      await enter(page, 'snack'); await sheetReady(page, 'snack'); await lay('snack3');
+      const menu = await C(page, () => [...document.querySelectorAll('.lb-sheet.stall [data-drink]')].map(b => b.getAttribute('data-drink')));
+      await tapSheet(page, '[data-drink="coffee"]'); await gridReady(page);
+      const dk = await C(page, () => ({ drink: window.__lab.run.drink, money: window.__lab.run.money }));
+      const lv = await leaveMarket(page);
+      const cups0 = await C(page, () => [...document.querySelectorAll('.lb-night .nc')].map(n => { const c = n.querySelector('.st-cupm'); return c ? (c.textContent || 'c') : ''; }));
+      // 對決：底氣 +1、view.drink
+      await tapReady(page, '[data-a=go]');
+      await advanceUntil(page, () => window.__lab.screen() === 'duel' && !!window.__lab.rawDuel(), null, 30000);
+      await page.waitForFunction(() => window.__lab.rawDuel() && !window.__lab.going(), null, { timeout: 15000 }).catch(() => {});
+      const dv = await C(page, () => { const E = window.DipLabEngine, Cn = window.DipLabContent, r = window.__lab.run, v = E.view(window.__lab.rawDuel()); const r2 = JSON.parse(JSON.stringify(r)); r2.drink = null; return { drink: v.drink, pDef: v.pDef, base: E.playerDef(Cn, r2).def }; });
+      await C(page, () => window.__lab.forceWin());
+      await passLoot(page, {});
+      await page.waitForSelector('[data-a=go]', { timeout: 15000 }).catch(() => {}); await luSkip(page, 1500); await sleep(600);
+      const cups1 = await C(page, () => [...document.querySelectorAll('.lb-night .nc')].map(n => { const c = n.querySelector('.st-cupm'); return c ? (c.textContent || 'c') : ''; }));
+      const left1 = await C(page, () => window.__lab.run.drink);
+      const okDrink = (!firstMenu || J(firstMenu) === J(['tea'])) && J(menu) === J(['tea', 'coffee', 'sorghum']) && dk.drink && dk.drink.kind === 'coffee' && dk.drink.left === 3 && dk.money === 9000 - x.fair.drinks.coffee.price &&
+        cups0.filter(Boolean).length === 3 && cups0.find(Boolean) === '3' && dv.drink && dv.drink.kind === 'coffee' && dv.pDef === dv.base + x.fair.drinks.coffee.def && left1 && left1.left === 2 && cups1.filter(Boolean).length === 2 && cups1.find(Boolean) === '2';
+      record('15b', size, okDrink && lv.go && !errs(page).length,
+        `第一個市集 ${first.first}（飲料攤 ${first.tiles.includes('snack')}）只擺 ${J(firstMenu)}；一般輪 ${J(menu)}；熱美式 ${J(dk.drink)} $${dk.money} → 來客條 ${J(cups0)}；對決 ${J(dv)}；打完一位 ${J(left1)} 來客條 ${J(cups1)}；${errTxt(page)}${missTxt(page)}`);
+
+      // ---- c 轉蛋（六格各固定一次）
+      const cellRes = [];
+      for (const cell of ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch']) {
+        await marketAt(page, 21, { money: 9000, leave: 1, tiles: ['gear', 'doctor', 'snack', 'fortune', 'dig'], free: [] });
+        const b0 = await C(page, c => { const r = window.__lab.run; window.DipLabContent.waveC.stall.fair.gacha.cells = [c]; r.hp = Math.max(4, r.maxHp - 5); r.relics = r.relics.slice(0, 1); window.__lab.money(9000); window.__lab.go('night'); return { bag: r.bag.length, hp: r.hp, max: r.maxHp, relics: r.relics.length, money: 9000, fortune: (r.fortune || []).length }; }, cell);
+        await gridReady(page);
+        await enter(page, 'gear'); await sheetReady(page, 'gear'); if (cell === 'gold') await lay('gacha');
+        // relic 格：引擎從配件池（扣掉擁有的）照雜湊挑第 1 件，剛好是攤上擺的那兩件之一＝改給 relicCash（不是配件格滿；交主線）。這裡先把攤上那兩件拿掉，測「轉到一件配件」那條路
+        if (cell === 'relic') await C(page, () => { window.__lab.run.pending.cur.relics = []; });
+        await tapSheet(page, '[data-a=gacha]');
+        await page.waitForSelector('.lb-sheet.stall [data-a=egg]', { timeout: 5000 }).catch(() => {});
+        await sleep(1500); if (cell === 'gold') await lay('gachaEgg');
+        const e0 = await C(page, () => { const s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall'); return { ph: s.gacha && s.gacha.phase, res: !!sh.querySelector('.st-gres'), mn: (sh.querySelector('.st-shd .mn') || {}).textContent || '', money: window.__lab.run.money }; });
+        await tapSheet(page, '[data-a=egg]');
+        const e1 = await C(page, () => { const r = window.__lab.run, s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall'); return { ph: s.gacha && s.gacha.phase, cell: s.gacha && s.gacha.cell, tx: (sh.querySelector('.st-gres') || {}).textContent || '', bag: r.bag.length, hp: r.hp, relics: r.relics.length, money: r.money, fortune: (r.fortune || []).filter(f => f.src === 'gacha'), last: r.pending.cur && r.pending.cur.gacha && r.pending.cur.gacha.last }; });
+        const L = e1.last || {}, mny = 9000 - x.fair.gacha.price[0];
+        const effOk = cell === 'gold' ? e1.bag === b0.bag + 1 && e1.tx.includes(x.mkGachaGold) : cell === 'cash' ? e1.money === mny + x.fair.gacha.cash && e1.tx.includes(fill(x.mkGachaCash.replace('${n}', '$' + mtx(x.fair.gacha.cash)), {})) :
+          cell === 'heal' ? e1.hp === b0.max && e1.tx.includes(x.mkGachaHeal) : cell === 'relic' ? e1.relics === b0.relics + 1 && e1.tx.includes(x.mkGachaRelic) :
+          cell === 'bump' ? e1.fortune.length === 1 && e1.tx.includes(fill(x.mkGachaBump, { pos: e1.fortune[0].pos, n: x.fair.gacha.bumpAtk })) : e1.hp === b0.hp - x.fair.gacha.ouch && e1.tx.includes(fill(x.mkGachaOuch, { n: x.fair.gacha.ouch }));
+        const hideOk = cell !== 'cash' || (e0.mn.includes(mtx(mny)) && e0.money === mny + x.fair.gacha.cash);
+        cellRes.push({ cell, egg: e0.ph === 'egg' && !e0.res, open: e1.ph === 'open' && e1.cell === cell, effOk, hideOk });
+        if (cell === 'bump') {                                       // 第 2 顆 $2,000 → 轉滿「今晚轉夠了」；收攤後來客條那位頭像「轉」
+          await tapSheet(page, '[data-a=gacha]'); await page.waitForSelector('.lb-sheet.stall [data-a=egg]', { timeout: 5000 }).catch(() => {}); await tapSheet(page, '[data-a=egg]');
+          const e2 = await C(page, () => ({ money: window.__lab.run.money, tx: (document.querySelector('.lb-sheet.stall') || {}).textContent || '', lever: !!document.querySelector('.lb-sheet.stall [data-a=gacha]') }));
+          cellRes.push({ cell: 'second', ok: e2.money === mny - x.fair.gacha.price[1] && !e2.lever && e2.tx.includes(x.mkGachaMax) });
+          await tapSheet(page, '[data-a=back]'); await gridReady(page);
+          await leaveMarket(page);
+          const gm = await guestMarks(page);
+          cellRes.push({ cell: 'bumpTag', ok: gm.filter(g => g.om === x.mkBumpTag).length === 1 });
+          continue;
+        }
+        const bk = (await page.$('.lb-sheet.stall [data-a=back]')) ? '[data-a=back]' : '[data-a=noted]';
+        await tapSheet(page, bk); await gridReady(page);
+      }
+      await C(page, () => { window.DipLabContent.waveC.stall.fair.gacha.cells = ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch']; });
+      const okG = cellRes.every(c => c.ok !== false && (c.ok === true || (c.egg && c.open && c.effOk && c.hideOk)));
+      record('15c', size, okG && !errs(page).length, `${J(cellRes)}；${errTxt(page)}${missTxt(page)}`);
+      // 15c2 配件格照規格（CONTRACT §2.3「配件一件（配件格滿 3 件＝改給 $2,000）」）：配件還沒滿、配件池還有攤上那兩件以外的，就要給一件配件、不能改給錢。
+      //   上面 15c 的 relic 格先把攤上兩件拿掉才轉（畫面棒 11-23：引擎 wcRelics(…, 1) 先取 1 件再扣掉攤上的＝取到攤上那件就變成錢）；這裡不拿掉、引擎直接試
+      //   打完第 21〜60 位每一場（run 拷貝；小物攤＋轉蛋固定 relic 格、配件只留 1 件）：數「配件沒滿、池裡還有別件，卻給了錢」幾場
+      const rc = await C(page, () => {
+        const E = window.DipLabEngine, Cn = window.DipLabContent, F = Cn.waveC.stall.fair, keep = F.gacha.cells.slice(), out = { n: 0, cash: [], relic: 0 };
+        F.gacha.cells = ['relic'];
+        try {
+          for (let after = 21; after <= 60; after++) {
+            const r = JSON.parse(JSON.stringify(window.__lab.run)); r.pending = null; r.duel = null;
+            E.jumpTo(r, Cn, after + 1); r.relics = r.relics.slice(0, 1); r.money = 99999; E.stallSession(r, Cn);
+            const p = r.pending; if (!p || p.mode !== 'market') continue;
+            p.free = []; p.tiles = ['gear', 'doctor', 'snack', 'fortune', 'dig'];
+            if (!(E.choose(r, Cn, { type: 'stallEnter', kind: 'gear' }) || {}).ok || !p.cur || !p.cur.gacha) continue;
+            const shown = (p.cur.relics || []).slice(), res = E.choose(r, Cn, { type: 'stallAct', act: 'gacha' }) || {}, ef = (res.effects || []).find(e => e && e.gacha != null) || {};
+            out.n++; if (ef.relic) out.relic++; else out.cash.push({ after, shown, cash: ef.cash });
+          }
+        } finally { F.gacha.cells = keep; }
+        return out;
+      });
+      record('15c2', size, rc.n >= 30 && !rc.cash.length,
+        `打完第 21〜60 位 ${rc.n} 場、配件只有 1 件：給配件 ${rc.relic}、改給錢 ${rc.cash.length}${rc.cash.length ? ' ' + J(rc.cash.slice(0, 4)) : ''}（應為 0：engine.js 轉蛋 relic 格 wcRelics(…, 1, true) 先取 1 件再扣掉攤上的）`);
+
+      // ---- d 算命心情題
+      const s4 = await marketAt(page, 22, { money: 9000, leave: 1, tiles: ['fortune', 'doctor', 'snack', 'gear', 'dig'], free: [] });
+      const want0 = await C(page, () => window.__lab.home.want().length);
+      const c0 = page._clicks;
+      await enter(page, 'fortune');
+      await page.waitForSelector('.lb-sheet.stall [data-mo]', { timeout: 8000 }).catch(() => {}); await settle(page, '.lb-sheet.stall'); await lay('mood0');
+      const q0 = await C(page, () => { const r = window.__lab.run, s = window.DipLabStalls.state(); return { ask: !!s.ask, q: s.moodQ, left: r.pending.left, cur: r.pending.cur, n: document.querySelectorAll('.lb-sheet.stall [data-mo]').length, tx: (document.querySelector('.lb-sheet.stall .qq') || {}).textContent || '' }; });
+      const qs = [q0.q];
+      await tapSheet(page, '[data-mo="1"]'); await page.waitForSelector('.lb-sheet.stall [data-mo]', { timeout: 6000 }).catch(() => {}); await settle(page, '.lb-sheet.stall'); await lay('mood1');
+      const q1 = await C(page, () => { const r = window.__lab.run, s = window.DipLabStalls.state(); return { q: s.moodQ, left: r.pending.left, n: r.pending.cur && r.pending.cur.n, ans: r.pending.moodAns }; });
+      qs.push(q1.q);
+      await tapSheet(page, '[data-mo="0"]'); await page.waitForSelector('.lb-sheet.stall [data-mo]', { timeout: 6000 }).catch(() => {}); await settle(page, '.lb-sheet.stall'); await lay('mood2');
+      qs.push(await C(page, () => window.DipLabStalls.state().moodQ));
+      await tapSheet(page, '[data-mo="2"]');
+      await page.waitForSelector('.lb-sheet.stall .st-moodr', { timeout: 8000 }).catch(() => {}); await settle(page, '.lb-sheet.stall'); await sleep(1500); await lay('moodR');
+      const mr = await C(page, async () => {
+        const r = window.__lab.run, s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall');
+        const qz = await (await fetch('../mood-quiz.json')).json(), bk = await (await fetch('../mood-bank.json')).json(), E = window.DipLabEngine, Cn = window.DipLabContent;
+        const mood = E.moodOf(qz, r.pending.moodAns), c = s.mood && Cn.cards[s.mood.id], key = c ? (c.artist + '|' + c.album).toLowerCase() : '';
+        const ps = (sh.querySelector('.st-moodr .ps') || {}).textContent || '';
+        return { phase: s.phase, mood: s.mood, want: s.mood && window.__lab.home.want().includes(s.mood.id), name: (sh.querySelector('.st-moodr .is') || {}).textContent || '', wantName: qz.moods[mood].name, mood2: mood,
+          inBank: !!(bk.passages[key] && (bk.passages[key][s.mood && s.mood.mood] || []).includes(ps)), ps: ps.length, seen: (r.moodSeen || []).slice(), ans: r.pending.moodAns };
+      });
+      await tapSheet(page, '[data-a=noted],[data-a=notedLeave]');
+      const back = await gridReady(page);
+      const taps = page._clicks - c0;
+      const okMood = q0.ask && q0.q && !q0.cur && q0.left === s4.left && q0.n === 4 && q0.tx && q1.n === 1 && q1.left === s4.left - 1 && q1.ans && q1.ans[0] && q1.ans[0].q === q0.q && q1.ans[0].o === 1 &&
+        new Set(qs).size === 3 && mr.phase === 'hold' && mr.mood && mr.mood.mood === mr.mood2 && mr.name.includes(mr.wantName) && mr.inBank && mr.want && J(mr.seen.slice(-3)) === J(qs) && back;
+      record('15d', size, okMood && !errs(page).length,
+        `打開前先問 ${q0.ask}（月亮 ${s4.left}→${q0.left}、cur ${q0.cur}、選項 ${q0.n}「${q0.tx}」）→ 選一個＝翻第 1 張 ${q1.n}、月亮 ${q1.left}、moodAns ${J(q1.ans)}；三題 ${J(qs)}；` +
+        `翻滿：心情「${mr.name}」（${mr.mood2}）、段落在題庫原文 ${mr.inBank}（${mr.ps} 字）、想要清單 ${mr.want}（${want0}→）、停住 ${mr.phase} → 回攤位 ${back}；全點（打開＋三題＋記下了）${taps} 下（I-3a 翻籤 4 下）；${errTxt(page)}${missTxt(page)}`);
+
+      // ---- f 高粱（一般輪；手上有熱美式＝高粱那杯寫「會換掉手上那杯熱美式」→ 點高粱換掉）：來客條兩位杯子、最前面寫「2」→ 對決：品味 +1、杯子紅點（view.drink.pen 1）
+      //   → 第一次被剋（setNext 他出剋你那色）：扣的＝同一份對決拿掉高粱的 preview＋1、結果行「高粱後勁：多扣 1」、紅點熄 → 第二次被剋：不多扣、沒那句
+      //   → 打完這位杯子剩 1 → 下一位又是第一次（pen 1、品味 +1）→ 打完杯子沒了
+      await marketAt(page, 20, { money: 9000, leave: 1, tiles: ['snack', 'doctor', 'gear', 'fortune', 'dig'], free: [] });
+      //   聲望拉到 40（這一位品味 5：被剋一手扣 10；要連挨兩手被剋才量得到「第二次不多扣」）
+      await C(page, () => { const r = window.__lab.run; r.drink = { kind: 'coffee', left: 2 }; r.maxHp = Math.max(r.maxHp, 40); r.hp = r.maxHp; window.__lab.money(9000); window.__lab.go('night'); }); await gridReady(page);
+      await enter(page, 'snack'); await sheetReady(page, 'snack'); await lay('snackSwap');
+      const sw = await C(page, () => [...document.querySelectorAll('.lb-sheet.stall [data-drink]')].map(b => [b.getAttribute('data-drink'), (b.querySelector('.sw') || {}).textContent || '']));
+      await tapSheet(page, '[data-drink="sorghum"]'); await gridReady(page);
+      const sk = await C(page, () => ({ drink: window.__lab.run.drink, money: window.__lab.run.money }));
+      const lvS = await leaveMarket(page);
+      const sc0 = await cupsOf(page);
+      await toDuel(page); const dr1 = await duelReady(page, 20000); await sleep(400);
+      const sv0 = await drinkView(page);
+      const pl1 = await counteredPlan(page);
+      const h1 = pl1 ? await playPlan(page, pl1) : null;
+      const sv1 = await drinkView(page);
+      const pl2 = await counteredPlan(page);
+      const h2 = pl2 ? await playPlan(page, pl2) : null;
+      const pen = fill(x.mkPenNote, { n: x.fair.drinks.sorghum.pen });
+      await winOne(page);
+      const sc1 = await cupsOf(page), sd1 = await C(page, () => window.__lab.run.drink);
+      await toDuel(page); await duelReady(page, 20000); await sleep(400);
+      const sv2 = await drinkView(page);
+      await winOne(page);
+      const sc2 = await cupsOf(page), sd2 = await C(page, () => window.__lab.run.drink);
+      const SG = x.fair.drinks.sorghum;
+      const okSorg = J(sw.find(b => b[0] === 'sorghum')) === J(['sorghum', fill(x.mkDrinkSwap, { name: x.drinkNames.coffee })]) && J(sw.find(b => b[0] === 'tea')) === J(['tea', '']) &&
+        sk.drink && sk.drink.kind === 'sorghum' && sk.drink.left === SG.n && sk.money === 9000 - SG.price && lvS.go &&
+        sc0.filter(Boolean).length === SG.n && sc0.find(Boolean) === String(SG.n) && dr1 &&
+        sv0.drink && sv0.drink.kind === 'sorghum' && sv0.drink.pen === SG.pen && sv0.pAtk === sv0.bAtk + SG.atk && sv0.pDef === sv0.bDef && sv0.cup && sv0.dot &&
+        !!pl1 && pl1.toP === pl1.base + SG.pen && J(pl1.notes) === J([pen]) && h1 && h1.kind === 'countered' && h1.toP === pl1.toP && h1.notes.includes(pen) && h1.dp === pl1.toP &&
+        sv1.drink && sv1.drink.pen === 0 && sv1.cup && !sv1.dot &&
+        !!pl2 && pl2.toP === pl2.base && !pl2.notes.length && h2 && h2.kind === 'countered' && h2.toP === pl2.toP && !h2.notes.includes(pen) && h2.dp === pl2.toP &&
+        sd1 && sd1.kind === 'sorghum' && sd1.left === SG.n - 1 && sc1.filter(Boolean).length === SG.n - 1 && sc1.find(Boolean) === String(SG.n - 1) &&
+        sv2.drink && sv2.drink.pen === SG.pen && sv2.pAtk === sv2.bAtk + SG.atk && sv2.dot && sd2 === null && !sc2.filter(Boolean).length;
+      record('15f', size, okSorg && !errs(page).length,
+        `三杯 ${J(sw)}；手上熱美式 → 高粱 ${J(sk)}、來客條 ${J(sc0)}；對決 ${J(sv0)}；第一次被剋 預期 ${pl1 && pl1.base}+${SG.pen}=${pl1 && pl1.toP}${J(pl1 && pl1.notes)} → 實際 ${J(h1)}、之後 ${J(sv1)}；` +
+        `第二次被剋 預期 ${pl2 && pl2.toP}（拿掉高粱 ${pl2 && pl2.base}）→ 實際 ${J(h2)}；打完一位 ${J(sd1)} 來客條 ${J(sc1)}；下一位 ${J(sv2)}；再打完 ${J(sd2)} 來客條 ${J(sc2)}；${errTxt(page)}${missTxt(page)}`);
+
+      // ---- i 想要清單滿 200：算命心情題照問、翻滿照唸，那張不進清單、寫「想要清單滿了…」
+      await marketAt(page, 23, { money: 9000, leave: 1, tiles: ['fortune', 'doctor', 'snack', 'gear', 'dig'], free: [] });
+      const wfull = await C(page, () => { const Cn = window.DipLabContent, s = window.__lab.save, ids = Object.keys(Cn.cards).filter(id => !Cn.cards[id].tier).slice(1000, 1200);
+        s.want = ids; window.__lab.money(9000); window.__lab.go('night'); return s.want.length; });
+      await gridReady(page);
+      const mf = await moodFlow(page);
+      const wf = await C(page, id => ({ n: window.__lab.home.want().length, has: window.__lab.home.want().includes(id), tx: (document.querySelector('.lb-sheet.stall .st-moodr .pk small') || {}).textContent || '', st: (window.DipLabStalls.state().mood || {}).want }), mf.id);
+      await tapSheet(page, '[data-a=noted],[data-a=notedLeave]'); const gbI = await gridReady(page);
+      record('15i', size, wfull === 200 && mf.ok && wf.n === 200 && !wf.has && wf.st === 'full' && wf.tx === x.mkMoodWantFull && gbI && !errs(page).length,
+        `清單 ${wfull} 張 → 三題 ${J(mf.qs)}、心情 ${mf.mood}、那張 ${mf.id}（段落原文 ${mf.inBank}）→ 清單 ${wf.n} 張、有那張 ${wf.has}、「${wf.tx}」（${wf.st}）→ 回攤位 ${gbI}；${errTxt(page)}${missTxt(page)}`);
+
+      // ---- e 版面
+      record('15e', size, !bad.length && !errs(page).length, `${J(lays)}${bad.length ? '；不合 ' + J(bad) : ''}；${errTxt(page)}`);
+    } catch (e) { record('15', size, false, 'exception ' + e.message + ' ' + (e.stack || '').split('\n')[1]); }
+    await ctx.close();
+  }
+
+  // ---- 15g 切磋不扣杯數（SPEC-I §6.3「切磋不扣杯數」、§8；?crowd=1&enc=force：熟客在對戰台邀你）：手上熱美式 3 位 → 切磋裡照樣底氣 +1（view.drink）→ 打完（輸）回來客畫面：杯數、來客條杯子、位數都沒動
+  if (want(15)) {
+    const { ctx, page } = await newPage(browser, w, h);
+    try {
+      const q = Q('&fast=1&newstalls=1&mood=0&crowd=1&enc=force');
+      await openTitle(page, q);
+      const seen = await C(page, () => { const Cn = window.DipLabContent, o = { crowdIntro: true, expertIntro: true, lotHint: true }; Object.keys(Cn.coachTips || {}).concat(Object.keys(Cn.hints || {})).forEach(k => { o[k] = true; }); return o; });
+      await seedRun(page, { idx: 1, seen });
+      await C(page, () => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); s.run.drink = { kind: 'coffee', left: 3 }; localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); });
+      await openTitle(page, q); await jsClick(page, '[data-a=cont]'); await waitScreen(page, 'night', 20000);
+      let s0 = null; const t0 = Date.now();
+      while (Date.now() - t0 < 20000) { const e = await C(page, () => window.__lab.crowd && window.__lab.crowd.enc ? window.__lab.crowd.enc() : null); if (e && e.ui && e.ui.phase === 'table') { s0 = e; break; } await sleep(150); }
+      await sleep(400);
+      const x = await UI(page);
+      const r0 = await C(page, () => ({ drink: window.__lab.run.drink, pos: window.__lab.run.pos, idx: window.__lab.run.idx }));
+      const ca = await cupsOf(page);
+      const hot = await tapHot(page, h => h.id === 'cw-enc');
+      const sheet = await page.waitForSelector('.lb-sheet.float.enc', { timeout: 4000 }).then(() => true, () => false); await sleep(450);
+      await C(page, () => window.__lab.force({ kind: 'counter', toE: 0, toP: 99 }));
+      await tapReady(page, '.lb-sheet.float.enc [data-a=encYes]');
+      const ready = await duelReady(page, 20000); await sleep(600);
+      const dv = await drinkView(page), sp0 = await C(page, () => window.__lab.run.spar && window.__lab.run.spar.state);
+      await C(page, () => window.DipLabDuel.autoplay && window.DipLabDuel.autoplay('thoughtful'));
+      const back = await waitScreen(page, 'night', 60000);
+      await C(page, () => window.__lab.force(null));
+      await page.waitForFunction(() => window.__lab.run.spar && window.__lab.run.spar.state === 'lost', null, { timeout: 5000 }).catch(() => {});
+      await sleep(900);
+      const r1 = await C(page, () => ({ drink: window.__lab.run.drink, pos: window.__lab.run.pos, idx: window.__lab.run.idx, spar: window.__lab.run.spar && window.__lab.run.spar.state }));
+      const cb = await cupsOf(page);
+      const CF = x.fair.drinks.coffee;
+      record('15g', size, !!s0 && !!hot && sheet && ready && sp0 === 'fighting' && dv.drink && dv.drink.kind === 'coffee' && dv.pDef === dv.bDef + CF.def && dv.cup && back && r1.spar === 'lost' &&
+        J(r1.drink) === J({ kind: 'coffee', left: 3 }) && J(r0.drink) === J(r1.drink) && r1.pos === r0.pos && r1.idx === r0.idx && ca.filter(Boolean).length === 3 && ca.find(Boolean) === '3' && J(cb) === J(ca) && !errs(page).length,
+        `熟客邀 ${!!s0}（${s0 && s0.ui && s0.ui.who}）、點他 ${hot && hot.id}、面板 ${sheet}；切磋前 ${J(r0)} 來客條 ${J(ca)}；切磋裡 ${J(dv)}（${sp0}）→ 打完 ${back} ${J(r1)} 來客條 ${J(cb)}；${errTxt(page)}`);
+    } catch (e) { record('15g', size, false, 'exception ' + e.message + ' ' + (e.stack || '').split('\n')[1]); }
+    await ctx.close();
+  }
+
+  // ---- 15h 題庫抓不到（路由擋掉）：擋 ../mood-quiz.json＝點算命攤照 I-3a 直接打開（翻第一張、不問、扣時段）、第 2／3 張照 I-3a 翻籤鈕、翻滿照 I-3a 停住；同一頁下一個市集也一樣（不再試）
+  //   擋 ../mood-bank.json（題目抓得到）＝三題照問、照翻；翻滿沒有段落＝照 I-3a 停住（不畫心情、想要清單不動）
+  if (want(15)) {
+    const { ctx, page } = await newPage(browser, w, h);
+    try {
+      const QN = (z = '') => Q('&fast=1&newstalls=1' + z);
+      const res = [];
+      await page.route(/\/mood-quiz\.json(\?.*)?$/, r => r.abort());
+      await start(page, { q: QN(), extra: 3 });
+      for (const after of [22, 23]) {
+        const s5 = await marketAt(page, after, { money: 9000, leave: 1, tiles: ['fortune', 'doctor', 'snack', 'gear', 'dig'], free: [] });
+        await enter(page, 'fortune');
+        await page.waitForFunction(() => { const p = window.__lab.run.pending; return !!(p && p.cur && p.cur.kind === 'fortune'); }, null, { timeout: 8000 }).catch(() => {});
+        await sheetReady(page, 'fortune');
+        const f0 = await C(page, () => { const r = window.__lab.run, s = window.DipLabStalls.state(), sh = document.querySelector('.lb-sheet.stall'); return { st: s.moodSt, ask: !!s.ask, n: r.pending.cur && r.pending.cur.n, left: r.pending.left, mo: sh ? sh.querySelectorAll('[data-mo]').length : -1, flip: !!(sh && sh.querySelector('.st-slip.next .lb-btn[data-a=flip]')) }; });
+        await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]'); await sleep(400);
+        await tapSheet(page, '.st-slip.next .lb-btn[data-a=flip]');
+        await page.waitForFunction(() => { const s = window.DipLabStalls.state(); return !!s && s.hold; }, null, { timeout: 6000 }).catch(() => {});
+        await sleep(1500);
+        const f1 = await C(page, () => { const s = window.DipLabStalls.state(), r = window.__lab.run, sh = document.querySelector('.lb-sheet.stall'); return { hold: !!s.hold, moodr: !!document.querySelector('.st-moodr'), noted: !!(sh && sh.querySelector('[data-a=noted],[data-a=notedLeave]')), up: sh ? sh.querySelectorAll('.st-slip.up').length : 0, ans: r.pending.moodAns || null, seen: (r.moodSeen || []).length }; });
+        await tapSheet(page, '[data-a=noted],[data-a=notedLeave]'); const gb = await gridReady(page);
+        res.push({ after, ok: f0.st === -1 && !f0.ask && f0.n === 1 && f0.left === s5.left - 1 && f0.mo === 0 && f0.flip && f1.hold && !f1.moodr && f1.noted && f1.up === 3 && !f1.ans && f1.seen === 0 && gb, f0, f1 });
+      }
+      await page.unroute(/\/mood-quiz\.json(\?.*)?$/);
+      // 題庫抓得到、段落抓不到
+      await page.route(/\/mood-bank\.json(\?.*)?$/, r => r.abort());
+      await start(page, { q: QN(), extra: 3 });
+      await marketAt(page, 22, { money: 9000, leave: 1, tiles: ['fortune', 'doctor', 'snack', 'gear', 'dig'], free: [] });
+      const w0 = await C(page, () => window.__lab.home.want().length);
+      const mb = await moodFlow(page);
+      const w1 = await C(page, () => window.__lab.home.want().length);
+      await tapSheet(page, '[data-a=noted],[data-a=notedLeave]'); const gbB = await gridReady(page);
+      const okB = mb.qs.length === 3 && new Set(mb.qs).size === 3 && mb.hold && !mb.moodr && !mb.mood && mb.noted && Array.isArray(mb.ans) && mb.ans.filter(Boolean).length === 3 && w1 === w0 && gbB;
+      record('15h', size, res.every(r => r.ok) && okB && !errs(page).length,
+        `擋題目：${res.map(r => `第 ${r.after} 位之後 ${J(r.f0)} → 翻滿 ${J(r.f1)}`).join('；')}；擋段落：三題 ${J(mb.qs)}、停住 ${mb.hold}、畫心情 ${mb.moodr}、moodAns ${J(mb.ans)}、想要清單 ${w0}→${w1}、回攤位 ${gbB}；${errTxt(page)}${missTxt(page)}`);
+    } catch (e) { record('15h', size, false, 'exception ' + e.message + ' ' + (e.stack || '').split('\n')[1]); }
+    await ctx.close();
+  }
+
+  // ---------------------------------------------------------------- 16 §6.7 M5 全點（市集新攤開著、算命接題庫）：照 #7 的判法
+  if (want(16)) {
+    const { ctx, page } = await newPage(browser, w, h);
+    try {
+      await start(page, { q: Q('&fast=1&newstalls=1'), extra: 3 });
+      const runs = [];
+      const plans = [{ after: 15 }, { after: 25 }, { after: 35, tiles: ['doctor', 'gear', 'fortune', 'snack', 'dig'], prep: true }];   // 第 20、30 位是中繼點（不是一般輪）
+      for (const P of plans) {
+        await marketAt(page, P.after, { money: 30000, leave: 1, tiles: P.tiles, free: P.tiles ? [] : undefined });
+        if (P.prep) await C(page, () => { const r = window.__lab.run, L = (Array.isArray(r.lineup) && r.lineup.length ? r.lineup : r.bag).slice(0, 2), nw = r.bag.filter(id => L.indexOf(id) < 0).slice(-1);
+          r.wear = r.wear || {}; r.wear[L[0]] = { g: 3, n: 1 }; r.lineupFresh = (r.lineupFresh || []).concat(nw); window.__lab.money(30000); window.__lab.go('night'); });
+        await gridReady(page); await sleep(400);
+        const s0 = await mk(page);
+        const c0 = page._clicks, log = [], per = {};
+        let ok = true, lu = 0, cur = null, idle = 0;
+        for (let g = 0; g < 80; g++) {
+          if (await C(page, () => window.__lab.screen() === 'night' && !!document.querySelector('[data-a=go]') && !(window.__lab.run.pending && window.__lab.run.pending.type === 'stall') && !document.querySelector('#panel > .lb-sheet.lineup'))) break;
+          if (await page.$('#panel > .lb-sheet.lineup [data-a=luGo]')) { const k0 = page._clicks; await tapReady(page, '#panel > .lb-sheet.lineup [data-a=luGo]'); lu += page._clicks - k0; log.push('luGo'); await sleep(600); continue; }
+          const st = await C(page, () => { const s = window.DipLabStalls.state(); return s ? s.phase : null; });
+          if (st !== 'grid' && st !== 'station' && st !== 'hold' && st !== 'leave') { await sleep(250); continue; }
+          if (st === 'station' && !(await C(page, () => { const e = document.querySelector('.lb-sheet.stall.st-mk'); return !!e && !e.classList.contains('arming'); }))) { await sleep(200); continue; }
+          const t = await policyTaps(page, { slotMin: -9, flips: 3 });
+          if (t.done) { await sleep(300); continue; }
+          if (t.wait) { if (++idle > 40) { ok = false; log.push('stuck'); break; } await sleep(200); continue; }
+          idle = 0;
+          if (t.none || !t.sel) { ok = false; log.push('none'); break; }
+          if (/^enter /.test(t.ch)) cur = t.ch.slice(6);
+          log.push(t.ch);
+          const k0 = page._clicks;
+          for (const s of t.sel) { if (!(await tapIn(page, s))) { ok = false; log.push('miss ' + s); break; } await sleep(300); }
+          per[t.grid && !/^enter /.test(t.ch) ? '收攤' : cur || '?'] = (per[t.grid && !/^enter /.test(t.ch) ? '收攤' : cur || '?'] || 0) + page._clicks - k0;
+          if (!ok) break;
+          await sleep(400);
+        }
+        const s1 = await mk(page);
+        runs.push({ after: P.after, taps: page._clicks - c0, lu, per, log, ok: ok && s1.go && !s1.mode, tiles: s0.p.tiles, slots: s0.p.slots, cp: s0.cp, mood: log.filter(c => c === 'mood').length ? 1 : 0, ns: await C(page, () => { const r = window.__lab.run; return { drink: r.drink || null, pressN: r.pressN || 0 }; }) });
+      }
+      const max = Math.max(...runs.map(r => r.taps - r.lu)), maxAll = Math.max(...runs.map(r => r.taps));
+      const newOnes = runs.reduce((a, r) => a.concat(r.log.filter(c => /enter (doctor|gear)|^(wash|press|gacha|egg|mood)|^drink/.test(c))), []);
+      record(16, size, runs.every(r => r.ok && r.lu <= 1 && !r.cp) && max <= 10 && !errs(page).length,
+        `M5 全點（?newstalls=1、算命接題庫；cPolicy slotMin −9、flips 3、錢 $30,000）：` + runs.map(r => `第 ${r.after} 位之後${r.cp ? '（中繼點）' : ''} ${J(r.tiles)} 時段 ${r.slots} → 市集 ${r.taps - r.lu} 下（不算題庫多問的那一下 ${r.taps - r.lu - r.mood}）＋上場面板 ${r.lu} 下 逐攤 ${J(r.per)} ${J(r.log)}${r.ok ? '' : '（沒走完）'}`).join('；') +
+        `；市集最多 ${max} 下（≤10；含上場面板 ${maxAll}）；新攤動作 ${newOnes.length} 下；${errTxt(page)}${missTxt(page)}`);
+    } catch (e) { record(16, size, false, 'exception ' + e.message + ' ' + (e.stack || '').split('\n')[1]); }
     await ctx.close();
   }
 }

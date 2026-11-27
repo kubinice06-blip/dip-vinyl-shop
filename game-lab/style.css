@@ -1485,3 +1485,11 @@ body.lb-tune-open{overflow:hidden;}
 .pv-who .bl.ft{display:flex;align-items:flex-start;gap:4px;margin-top:2px;line-height:1.45;}
 .pv-who .bl.ft .fi{flex:none;line-height:0;margin-top:2px;}
 .pv-who .bl.ft.om{color:var(--red,#c11628);font-weight:700;}
+/* 第 I 波 I-3b：來客條頭像右邊一個小杯子（熱美式／高粱罩到的那幾位；最前面那位寫還剩幾位）；重壓過的封面右上角「壓」（包包、上場列、手牌） */
+.lb-night .nc .hd .st-cupm{position:absolute;right:1px;top:15px;z-index:2;display:flex;align-items:center;gap:1px;line-height:0;background:#fff;padding:1px;border:1px solid var(--ink);}
+.lb-night .nc .hd .st-cupm b{font:700 10px/10px var(--mono);color:var(--ink);padding:0 1px;}
+.lb-cv .ptag,.lu-mini .ptag{position:absolute;right:0;top:0;z-index:5;font:700 9px/12px var(--zh);color:#fff;background:var(--gold-ink);padding:0 2px;pointer-events:none;}
+.dl .tile .cvw .pz{position:absolute;left:0;top:0;z-index:3;font:700 10px/14px var(--zh);color:#fff;background:var(--gold-ink);padding:0 3px;pointer-events:none;}   /* 疊著時看得到左邊：放左上（聽膩的「−n」在的話排在它下面） */
+.dl .tile .cvw .wn ~ .pz,.dl .tile .cvw .al ~ .pz{top:15px;}
+.dl .nmrow .st>.sk{position:relative;display:inline-flex;align-items:center;line-height:0;padding:1px;background:#fff;border:1px solid var(--ink,#111);}   /* I-3b 對決：喝著的那杯 */
+.dl .nmrow .st>.sk.pen::after{content:'';position:absolute;right:-3px;top:-3px;width:6px;height:6px;border-radius:50%;background:var(--red);border:1px solid #fff;}
