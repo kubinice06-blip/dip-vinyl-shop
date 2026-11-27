@@ -5961,8 +5961,9 @@ section('36 第 I 波 I-2 上場＋耐聽（SPEC-I §3、§5、§10）：關著�
 section('37 第 I 波 I-3a 市集殼（SPEC-I §6.2、§6.3、§6.6、§10；SPEC-D §3.8；契約 wave-i/build3/CONTRACT.md）：pick 逐字、市集 pending 形狀與 C 波退路、攤位格抽法、時段（進攤不扣、第一個動作扣、回攤位不扣）、收攤錢、翻籤與凶籤、冬瓜茶、錄音室（demo／試錄、互斥）、樂歷 Lv4／6／7、存讀檔中途、錯的不改 run、策略', () => {
   EN.setCtx(null);
   const J = x => JSON.stringify(x);
-  const MK = c => Object.assign({}, c, { waveC: Object.assign({}, c.waveC || {}, { stall: Object.assign({}, (c.waveC || {}).stall || {}, { mode: 'market' }) }) });
-  const CM = MK(CW);                                               // 市集、上場制關（CW＝LUOFF＋MKOFF）
+  // I-3b 開旗標後（fair.newStalls 出貨 true）：本段驗的是 I-3a 市集殼 → 市集拷貝一律 newStalls false（新攤在 #38 用開著的拷貝驗）
+  const MK = c => { const st = (c.waveC || {}).stall || {}; return Object.assign({}, c, { waveC: Object.assign({}, c.waveC || {}, { stall: Object.assign({}, st, { mode: 'market', fair: Object.assign({}, st.fair || {}, { newStalls: false }) }) }) }); };
+  const CM = MK(CW);                                               // 市集、上場制關（CW＝LUOFF＋MKOFF）、新攤關
   const F = EN.fairCfg(CM), ST = EN.wcCfg(CM).stall;
   const newM = (sk, K, o) => { K = K || CM; const r = EN.newRun(K, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K, EN.bargainPolicy(r, K)); return r; };
   // 一直贏到 pos 以後第一個攤位 pending（中間的攤位照 cPolicy 逛；領獎、升級照 cPolicy）

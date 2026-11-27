@@ -1698,7 +1698,7 @@
         //   drinks：coffee 熱美式＝接下來 n 位底氣 +def；sorghum 高粱＝接下來 n 位品味 +atk，但每位第一次被剋多扣 pen（跟流派代價同一步、取大不相加）；同時只有一杯在作用（新點的取代舊的）
         //   gacha 轉蛋機（小物攤右半）：一次進攤最多轉 price.length 次（第 1 次 $1,000、第 2 次 $2,000）；六格各 1/6：
         //     gold 金邊盤一張進包包、cash +$3,000、heal 回滿聲望、relic 配件一件（滿 3 件改 relicCash）、bump 這一輪下一位客人品味 +bumpAtk、ouch 聲望 −ouch（最少剩 1）
-        newStalls: false,
+        newStalls: true,
         doctor: { w: 2, from: 2, wash: 800, press: 2000, pressMax: 3, acts: 2, star: 1, cap: 5 },
         gacha: { price: [1000, 2000], cells: ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'], cash: 3000, relicCash: 2000, bumpAtk: 1, ouch: 3 },
         homeLexp: 20 } },   // 市集的店裡唱盤樂歷（newStalls 開著才讀；關著＝stall.homeLexp 30＝I-3a 逐字）：11-27 主線裁定 +30→+20（+30 出現時 96% 去、K1′ 上限 85；+20 85%、W5 對全關 1.00）

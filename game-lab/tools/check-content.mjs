@@ -1329,7 +1329,8 @@ export function marketProblems(C, E) {
   ok(Array.isArray(FT.pool) && FT.pool.length >= 3 && FT.pool.every(x => ['boss', 'elite', 'aces', 'top'].includes(x)) && new Set(FT.pool).size === FT.pool.length, "fair.fortune.pool：三種以上、只有 boss／elite／aces／top（凶籤另算）");
   const D = F.drinks || {};
   ok(D.tea && int(D.tea.hp, 1, 10) && D.tea.price === 0, 'fair.drinks.tea：冬瓜茶回聲望、免費（＝C 波宵夜）');
-  if (E && E.WAVEC) ok(JSON.stringify(E.WAVEC.stall.fair) === JSON.stringify(F) && E.WAVEC.stall.mode === 'pick', "C.waveC.stall.fair 要＝engine WAVEC 預設（engine 預設 mode 'pick'）");
+  // I-3b 開旗標：出貨 content fair.newStalls true、engine 預設照舊 false（＝I-3a 的 mode：content 'market'、engine 預設 'pick'）；其他數字逐字一樣
+  if (E && E.WAVEC) ok(JSON.stringify(E.WAVEC.stall.fair) === JSON.stringify(Object.assign({}, F, { newStalls: false })) && E.WAVEC.stall.mode === 'pick' && E.WAVEC.stall.fair.newStalls === false, "C.waveC.stall.fair 要＝engine WAVEC 預設（engine 預設 mode 'pick'、newStalls false）");
   const K = C.career || {}, L = k => (K.ladder || []).find(x => x && x.key === k);
   ok(L('tile6') && L('tile6').lv === 4 && L('tile6').marketTiles === F.tiles + 1 && L('tile6').needs === 'market', 'career.ladder Lv4 tile6（marketTiles＝tiles＋1、needs market）');
   ok(L('fortune2') && L('fortune2').lv === 6 && L('fortune2').fortuneFree === 1 && L('fortune2').needs === 'market', 'career.ladder Lv6 fortune2（fortuneFree 1、needs market）');
