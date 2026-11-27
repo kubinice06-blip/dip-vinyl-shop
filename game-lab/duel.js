@@ -589,6 +589,13 @@
     // 品味／底氣小籤（無限試煉；大於 0 才有）：「品 2」「底 1」
     const TU = (content.trial && content.trial.ui) || {};
     //   讀屏念全名（品味 2／底氣 1；審查 #11）
+    // 第 I 波 I-3b：這場喝著熱美式／高粱（view.drink；品味／底氣已經算進品、底兩籤）＝兩籤後面一個小杯子；高粱「第一次被剋多扣」還沒扣＝杯子右上一個紅點
+    function drinkHTML(v) {
+      const d = v && v.drink; if (!d) return '';
+      const MK = window.DipPropsO && window.DipPropsO.MK_ICON, rows = MK && MK[d.kind], N = ((((content.waveC || {}).ui) || {}).drinkNames || {})[d.kind] || '';
+      let h = ''; try { h = rows && typeof window.pixArtHTML === 'function' ? window.pixArtHTML(rows, 14, 'dk') : ''; } catch (_) {}
+      return h ? `<span class="sk${d.pen ? ' pen' : ''}" data-st="drink" role="img" aria-label="${esc(N)}">${h}</span>` : '';
+    }
     function statsHTML(a, d) {
       const tag = (k, n, t, full) => n > 0 ? `<span class="s${k}" data-st="${k}" role="img" aria-label="${esc(String(full || t || '').replace('{n}', n))}">${esc(String(t || '').replace('{n}', n))}</span>` : '';
       return tag('a', a | 0, TU.atkShort, TU.atk) + tag('d', d | 0, TU.defShort, TU.def);
@@ -762,7 +769,7 @@
     function renderP(v, opt) {
       opt = opt || {};
       if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, false);
-      els.pst.innerHTML = statsHTML(v.pAtk, v.pDef);
+      els.pst.innerHTML = statsHTML(v.pAtk, v.pDef) + drinkHTML(v);
       els.relics.innerHTML = (v.relics || []).slice(0, 3).map(r => `<button type="button" class="rl" data-tut="relic-${esc(r.id)}" data-relic="${esc(r.id)}" aria-label="發燒配件：${esc(r.name || '')}">${relicIconHTML(r)}</button>`).join('');
       fitRow(els.p);
     }
@@ -923,6 +930,9 @@
       if (isAce && v.apex) return apexTileHTML(v, c);
       const et = isAce ? encTagHTML(v) : '', ea = et ? '・' + encTagText(v.enc) : '';   // 第 I 波翻面：封面下緣的籤
       const wm = isAce ? { cls: '', html: '', aria: '' } : wearMark(c);
+      // 第 I 波 I-3b：唱片醫生重壓過的（view.hand 那張帶 pressed＝壓的那軸）＝封面右上角小「壓」
+      const pzT = !isAce && c.pressed ? String((((content.waveC || {}).ui) || {}).mkPressTag || '') : '';
+      if (pzT) { wm.html += `<span class="pz" aria-hidden="true">${esc(pzT)}</span>`; wm.aria += '・' + pzT; }
       return `<div class="tile${isAce ? ' ace' + encCls(v) : ''}${wm.cls}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
         + `<button type="button" class="cvw" data-tut="${isAce ? 'card-ace' : 'card-' + i}" data-act="pick" aria-label="${esc((isAce ? '王牌：' : '') + title(c) + ea + wm.aria)}（按住看唱片資訊）">${img(c)}${isAce ? `<span class="acetag">${esc(T('aceSlot'))}</span>` : ''}${et}${wm.html}</button></div>`;
     }
@@ -1617,7 +1627,8 @@
       if (ee && ct.encLine) encLit(ee, cl);
       // 結果句裡有配件或品味／底氣那句：那顆閃一下（品味／底氣：你的在你那一列、他的（eAtk／eDef）在他那一列）
       const noteEl = n => !n ? null : n.apex ? (apexTileEl() || {}).firstElementChild || null : n.relic ? els.relics.querySelector(`[data-relic="${cssEsc(n.relic)}"]`)
-        : n.stat && n.stat !== 'feint' ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`) : null;   // feint（被唬到多扣）沒有小籤
+        : n.stat && n.stat !== 'feint' ? (/^e/.test(n.stat) ? els.est : els.pst).querySelector(`[data-st="${/atk$|Atk$/.test(n.stat) ? 'a' : 'd'}"]`)
+        : n.drink ? els.pst.querySelector('[data-st="drink"]') : null;   // feint（被唬到多扣）沒有小籤；I-3b 高粱後勁＝杯子閃一下
       if (ct.notes.length) (cl.notes || []).forEach(n => { const b = noteEl(n); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
       oneTimeTips(cl, ct);
       S.shown = Math.max(S.shown | 0, cl.n | 0);          // 11-17：這手揭曉了，紀錄可以列到這手

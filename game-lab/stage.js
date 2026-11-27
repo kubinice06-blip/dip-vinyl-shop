@@ -707,7 +707,7 @@
     //   isle(src)：src()→{ key（這一場市集）, cells:[{ hot:'bin:…', kind, went, open, rows（12×12 圖示）}], slips:{ hot, total, faces:[籤種類…] }|null }｜null（收掉）；
     //     每格讀一次（ui.js 給；不是市集回 null）。這裡補幾何：那一箱的 binTable 道具、去過的那一箱看得到的那一塊（被前面的箱子、人擋住的不算；鏡頭換了才重算）
     //   翻籤動畫只演看著它翻的那一次：同一個 key 第一次讀到就已經翻開的（重新整理回來、換畫面回來）直接畫翻好的
-    var ISL = { src: null, key: '', seen: -1, flipAt: [], reg: {}, pourN: null, pourAt: null };
+    var ISL = { src: null, key: '', seen: -1, flipAt: [], reg: {}, pourN: null, pourAt: null, docN: null, docAt: null, docK: null, gN: null, gAt: null, gK: null };   // doc*／g*：I-3b 清潔墊、轉蛋機那一下
     function isleProp(hot) { var k = String(hot || '').replace(/^bin:/, ''); return (L.props || []).filter(function (o) { return o.bin && o.bin.key === k && o.type === 'binTable'; })[0] || null; }
     function isleSpans(hot) {
       var v = shop.view(), key = v.y + ',' + v.h, c = ISL.reg[hot];
@@ -728,7 +728,12 @@
       var s = null;
       if (ISL.src) { try { s = ISL.src(); } catch (e) { console.error(e); } }
       if (!s) { shop.state.isle = null; ISL.key = ''; return; }
-      if (s.key !== ISL.key) { ISL.key = s.key; ISL.seen = -1; ISL.flipAt = []; ISL.pourN = s.pour ? s.pour.n : null; ISL.pourAt = null; }   // 換一場市集：已經倒過的不再演
+      if (s.key !== ISL.key) { ISL.key = s.key; ISL.seen = -1; ISL.flipAt = []; ISL.pourN = s.pour ? s.pour.n : null; ISL.pourAt = null;   // 換一場市集：已經倒過的不再演
+        ISL.docN = s.doc && s.doc.fx ? s.doc.fx.n : null; ISL.docAt = null; ISL.gN = s.gacha && s.gacha.fx ? s.gacha.fx.n : null; ISL.gAt = null; }
+      // 第 I 波 I-3b：清潔墊（洗／壓那一下）、轉蛋機（轉、打開那一下）：fx.n 換了＝從這一格開始演
+      var dc = s.doc && isleProp(s.doc.hot) ? s.doc : null, gm = s.gacha && isleProp(s.gacha.hot) ? s.gacha : null, cu = s.cups && isleProp(s.cups.hot) ? s.cups : null;
+      if (dc && dc.fx && dc.fx.n !== ISL.docN) { ISL.docN = dc.fx.n; ISL.docAt = rt; ISL.docK = dc.fx.kind; }
+      if (gm && gm.fx && gm.fx.n !== ISL.gN) { ISL.gN = gm.fx.n; ISL.gAt = rt; ISL.gK = gm.fx.kind; }
       var po = s.pour && isleProp(s.pour.hot) ? s.pour : null;      // 飲料攤倒一杯（修正棒）：新的一杯＝從這一格開始演（約 3 秒）
       if (po && po.n !== ISL.pourN) { ISL.pourN = po.n; ISL.pourAt = rt; }
       var sl = s.slips && isleProp(s.slips.hot) ? s.slips : null, faces = sl ? (sl.faces || []).slice(0, 4) : [];
@@ -740,10 +745,14 @@
         var o = isleProp(c.hot); if (!o) return;
         var went = !!c.went && !c.open;
         var pouring = !!(po && po.hot === c.hot && ISL.pourAt != null && rt - ISL.pourAt < 3.2);
-        cells.push({ prop: o, hot: c.hot, kind: c.kind || '', rows: Array.isArray(c.rows) ? c.rows : null, went: went, open: !!c.open, spans: went ? isleSpans(c.hot) : null, slip: !!(sl && sl.hot === c.hot), pour: pouring });
+        var p2 = !!((dc && dc.hot === c.hot) || (gm && gm.hot === c.hot) || (cu && cu.hot === c.hot && !pouring));   // I-3b：這格畫小道具（不畫圖示）
+        cells.push({ prop: o, hot: c.hot, kind: c.kind || '', rows: Array.isArray(c.rows) ? c.rows : null, went: went, open: !!c.open, spans: went ? isleSpans(c.hot) : null, slip: !!(sl && sl.hot === c.hot), pour: pouring, prop2: p2 });
       });
       shop.state.isle = { cells: cells, slips: sl ? { prop: isleProp(sl.hot), hot: sl.hot, total: sl.total | 0 || 3, faces: faces, flipAt: ISL.flipAt.slice(0, faces.length) } : null,
-        pour: po && ISL.pourAt != null && rt - ISL.pourAt < 3.2 ? { prop: isleProp(po.hot), hot: po.hot, kind: po.kind, at: ISL.pourAt, rm: reduced() } : null };
+        pour: po && ISL.pourAt != null && rt - ISL.pourAt < 3.2 ? { prop: isleProp(po.hot), hot: po.hot, kind: po.kind, at: ISL.pourAt, rm: reduced() } : null,
+        doc: dc ? { prop: isleProp(dc.hot), hot: dc.hot, attr: dc.attr || 'c', at: ISL.docAt, kind: ISL.docK, rm: reduced() } : null,
+        gacha: gm ? { prop: isleProp(gm.hot), hot: gm.hot, phase: gm.phase || 'idle', n: ISL.gN | 0, at: ISL.gAt, kind: ISL.gK, rm: reduced() } : null,
+        cups: cu ? { prop: isleProp(cu.hot), hot: cu.hot, kinds: (cu.kinds || []).slice(0, 3) } : null };
     }
 
     // ---------------- 公開 API
@@ -843,7 +852,8 @@
       isle: function (src) { ISL.src = typeof src === 'function' ? src : null; ISL.key = ''; if (shop && !ISL.src) shop.state.isle = null; return stage; },
       isleState: function () {
         var I = shop && shop.state.isle; if (!I) return null;
-        return { cells: I.cells.map(function (c) { return { hot: c.hot, kind: c.kind, went: c.went, open: c.open, slip: c.slip, icon: !!c.rows }; }),
+        return { cells: I.cells.map(function (c) { return { hot: c.hot, kind: c.kind, went: c.went, open: c.open, slip: c.slip, icon: !!c.rows, prop2: !!c.prop2 }; }),
+          doc: I.doc ? { hot: I.doc.hot, attr: I.doc.attr, kind: I.doc.kind || null } : null, gacha: I.gacha ? { hot: I.gacha.hot, phase: I.gacha.phase, kind: I.gacha.kind || null } : null, cups: I.cups ? I.cups.kinds.slice() : null,
           slips: I.slips ? { hot: I.slips.hot, total: I.slips.total, faces: I.slips.faces.slice(), anim: I.slips.flipAt.map(function (t) { return t != null; }) } : null };
       },
       // 箱子（SPEC-v4 §2.3.5、§2.3.8）：從 layout 讀；focus／unfocus＝抽屜開著時把那一箱留在畫面上

@@ -1690,7 +1690,18 @@
       fair: { slots: 3, relaySlots: 4, tiles: 5, slotCash: 300, first: ['dig', 'fortune', 'snack', 'warehouse', 'home'],
         weights: { dig: 3, fortune: 2, snack: 2, gear: 2, trade: 2, gig: 2, promo: 2, consign: 1, home: 1 }, paidMax: 2,
         fortune: { price: [0, 1000, 2000], omen: 0.25, omenAtk: 1, pool: ['boss', 'elite', 'aces', 'top'] },
-        drinks: { tea: { hp: 2, price: 0 } }, studioMax: 3 } },
+        drinks: { tea: { hp: 2, price: 0 }, coffee: { def: 1, n: 3, price: 1500 }, sorghum: { atk: 1, n: 2, pen: 1, price: 2000 } }, studioMax: 3,
+        // 第 I 波 I-3b 市集新攤（SPEC-I §6.3；契約 wave-i/build3b/CONTRACT.md）：newStalls＝唱片醫生、飲料攤的熱美式／高粱、小物攤的轉蛋機一起開關
+        //   （11-27 出貨 true；engine 預設 false＝一切逐字 I-3a；?newstalls=0／sim --newstalls off 看關著的樣子）。關著時 doctor、gacha、drinks 的 coffee／sorghum 一個都不讀
+        //   doctor 唱片醫生：w 權重（每趟第 from 個市集起才抽得到）；wash＝那張聽膩全清、耐聽回滿；press＝只能壓這一輪新到的（run.lineupFresh）、挑一軸 +star 星（最多到 cap）、
+        //     每張 1 次、每趟 pressMax 張；一次進攤最多 acts 個動作
+        //   drinks：coffee 熱美式＝接下來 n 位底氣 +def；sorghum 高粱＝接下來 n 位品味 +atk，但每位第一次被剋多扣 pen（跟流派代價同一步、取大不相加）；同時只有一杯在作用（新點的取代舊的）
+        //   gacha 轉蛋機（小物攤右半）：一次進攤最多轉 price.length 次（第 1 次 $1,000、第 2 次 $2,000）；六格各 1/6：
+        //     gold 金邊盤一張進包包、cash +$3,000、heal 回滿聲望、relic 配件一件（滿 3 件改 relicCash）、bump 這一輪下一位客人品味 +bumpAtk、ouch 聲望 −ouch（最少剩 1）
+        newStalls: true,
+        doctor: { w: 2, from: 2, wash: 800, press: 2000, pressMax: 3, acts: 2, star: 1, cap: 5 },
+        gacha: { price: [1000, 2000], cells: ['gold', 'cash', 'heal', 'relic', 'bump', 'ouch'], cash: 3000, relicCash: 2000, bumpAtk: 1, ouch: 3 },
+        homeLexp: 20 } },   // 市集的店裡唱盤樂歷（newStalls 開著才讀；關著＝stall.homeLexp 30＝I-3a 逐字）：11-27 主線裁定 +30→+20（+30 出現時 96% 去、K1′ 上限 85；+20 85%、W5 對全關 1.00）
       // I-3a sim 棒（11-22；wave-i/build3/SIM.md）：冬瓜茶 3→2。聲望 +3 時市集 vs pick 會讀的到第 50 位 +2.15 點（n4000，§9 上限 +1）：第一個市集固定有飲料攤、
       //   一般輪 5 攤常出、3 個時段排得進去 → 每趟攤位回聲望 7.5 對 pick 宵夜 4.8。§9 ② 時段 3→2 量過沒用（+2.00，照喝）、+2 剛好回到 4.8（+0.2～+0.6 點）、+1 −1.6 點。
       //   退回＝hp 改回 3（stalls.js 字照 content 走）
@@ -1816,7 +1827,29 @@
       mkFortuneTile: '打開就翻一張',                                 // 算命攤格子第二行（打開就用掉一個時段）
       mkDigTap: '點一張翻開',                                       // 挖寶攤：三張還蓋著（翻開一張就收掉）
       mkNotedLeave: '記下了，收攤',                                  // 算命翻滿停住：時段用完、沒別的攤能逛＝這一下直接收攤
-      mkConsignBusy: '寄賣那張還沒領回，先不能再寄。'                 // 寄賣攤（舊存檔才會遇到）：上一張還在外面
+      mkConsignBusy: '寄賣那張還沒領回，先不能再寄。',                // 寄賣攤（舊存檔才會遇到）：上一張還在外面
+      // 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.4-5；契約 wave-i/build3b/CONTRACT.md §6）。{n}{p} 等由畫面代入；錢先 E.moneyText
+      //   唱片醫生（清潔墊：預設放最膩那張、上方一列可換；洗＝聽膩全清、重壓＝先選軸；不是這一輪新到的那張重壓鈕灰掉寫 mkPressOnlyNew）
+      mkWash: '洗（${n}）', mkWashHint: '聽膩全清、耐聽回滿', mkPress: '重壓（${n}）', mkPressHint: '挑一軸 +{k} 星，這一趟有效',
+      mkPressAxis: '壓哪一軸？', mkPressOnlyNew: '只能壓這一輪新到的盤', mkPressDone: '這張壓過了', mkPressMax: '這一趟已經壓滿 {n} 張',
+      mkNotWorn: '這張還沒聽膩', mkPressTag: '壓',                     // mkPressTag：重壓過的封面角落小字
+      mkDocLeft: '這一次還能做 {n} 件事', mkWashed: '洗好了，耐聽回滿。', mkPressed: '重壓好了：{attr} +{n}',
+      //   飲料攤（一排三杯、一次一杯；同時只有一杯在作用＝新點的換掉舊的；來客條頭像下畫杯子＋剩幾位）
+      mkCoffee: '熱美式（${p}）', mkCoffeeHint: '接下來 {n} 位，底氣 +{d}', mkSorghum: '高粱（${p}）', mkSorghumHint: '接下來 {n} 位品味 +{a}，每位第一次被剋多扣 {pen}',
+      mkDrinkLeft: '還剩 {n} 位', mkDrinkSwap: '會換掉手上那杯{name}', mkPenNote: '高粱後勁：多扣 {n}',   // mkPenNote：對決結果行小字（引擎帶進對決）
+      drinkNames: { tea: '冬瓜茶', coffee: '熱美式', sorghum: '高粱' },
+      //   小物攤右半：轉蛋機（投幣、搖桿點一下轉、蛋掉出來、點蛋打開＝停住等點；一次進攤最多轉兩次）
+      mkGacha: '轉蛋（${n}）', mkGachaTap: '點搖桿轉一顆', mkEggTap: '點蛋打開', mkGachaMax: '今晚轉夠了',
+      mkGachaGold: '金邊盤一張，放進包包了。', mkGachaCash: '蛋裡塞了 ${n}。', mkGachaHeal: '聲望回滿了。', mkGachaRelic: '轉到一件配件。',
+      mkGachaRelicCash: '配件帶滿了，換成 ${n}。', mkGachaBump: '他也來轉了一顆：第 {pos} 位品味 +{n}', mkGachaOuch: '空蛋，白跑一趟：聲望少 {n}',
+      mkBumpTag: '轉',                                              // 來客條那位頭像上的小標（轉蛋「他也來轉了一顆」；凶籤是 mkOmenTag）
+      //   算命攤接主站心情選歌題庫（店主 11-23）：每翻一張籤先問一題（題目、選項照 mood-quiz.json 原文）；三題答完講心情＋唸一段（mood-bank.json 原文、一字不改）
+      mkMoodAsk: '翻之前，先回答我一題。', mkMoodIs: '你今晚的心情：{name}', mkMoodPick: '這張適合現在的你：《{album}》',
+      mkMoodWant: '記進想要清單了。', mkMoodWantHad: '這張已經在想要清單裡。', mkMoodWantFull: '想要清單滿了，這張先記在心裡。',
+      //   I-3b 畫面棒（11-23）多的字：清潔墊上沒東西可做、新到的小標、選軸的鈕；飲料攤手上那杯；轉蛋機還能轉幾顆；算命攤問題下面那行（選一個＝翻那張）
+      mkDocNone: '包包裡沒有聽膩的，也沒有這一輪新到的盤。', mkDocFresh: '這一輪新到的', mkFreshTag: '新', mkPressTo: '{attr} {a}→{b}',
+      mkDrinkNow: '手上：{name}，{left}', mkGachaLeft: '這次還能轉 {n} 顆',
+      mkMoodFlip: '選一個就翻第 {i} 張（${n}）', mkMoodFlipFree: '選一個就翻第 {i} 張', mkMoodLoad: '阿姨在洗籤，等一下。'
     },
     // 站名（底部面板站牌、小面板標題、解鎖階梯 {name}）
     stations: { stall: '攤位', dig: '挖寶攤', trade: '同業調貨', gear: '器材行', snack: '宵夜', gig: '演唱會', promo: '公關片', fortune: '窗邊算命',
@@ -1826,8 +1859,8 @@
       gig: '今晚這場，聽完再顧店。', promo: '公關片來了，聽聽看。', fortune: '下個藏家？我看看……', consign: '放這裡，兩輪後回來換。',
       home: '放一張，把今天記下來。', dare: '下一輪都是來踢館的，接不接？', warehouse: '倉庫翻到的，挑一件帶走。', market: '攤位全擺出來了，慢慢挑。' },
     // 第 I 波 I-3a 市集模式的攤名／站主一句（沒列的照 stations／stationLines）：宵夜換飲料攤、器材行換小物攤、窗邊算命換算命攤、黑膠市集改名黑膠特賣
-    fairStations: { fortune: '算命攤', snack: '飲料攤', gear: '小物攤', market: '黑膠特賣' },
-    fairLines: { fortune: '翻一張籤，看看今晚。', snack: '冬瓜茶一杯，喝了再拚。', gear: '小東西，帶著走。', market: '特賣全擺出來了，慢慢挑。' },
+    fairStations: { fortune: '算命攤', snack: '飲料攤', gear: '小物攤', market: '黑膠特賣', doctor: '唱片醫生' },   // doctor：I-3b（newStalls 開著才出現）
+    fairLines: { fortune: '翻一張籤，看看今晚。', snack: '冬瓜茶一杯，喝了再拚。', gear: '小東西，帶著走。', market: '特賣全擺出來了，慢慢挑。', doctor: '膩了就洗，新到的可以重壓。' },
     // 挖寶攤攤名（全部虛構，不放真實店名）
     digTitles: { jazzTeacher: '退休老師的爵士櫃', bandRoom: '解散樂團的團練室', djAbroad: '要出國的 DJ', oldRadio: '老電台的片庫',
       grandpa: '阿公的西洋老歌', classicalStudy: '古典樂迷的書房', backpacker: '背包客的世界音樂', closedShop: '收掉的小唱片行' }
@@ -1888,7 +1921,7 @@
         plea: '每趟一次，這一輪的說情用完才用', money: '每級開局多 ${n}', pay: '每級打贏的錢 +10%', rare: '每級戰利品列金邊機率 +2%',
         piggy: '輸了剩下的錢 10% 帶到下一趟', reroll: '每趟多一次重抽', ban: '每趟封掉一件配件或一張盤', intel: '看他牌組三色比例',   // ban：配件＝relic
         safety: '上一趟沒到第 10 位，第一位輸了免費再一次' },
-      moneyOnly: '（只多錢，不會變強）',                             // 開局錢、酬勞兩列效果句後面的灰字（CRITIQUE 4.4）
+      moneyOnly: '（多錢＝多買幾樣，不直接加星）',                             // 開局錢、酬勞兩列效果句後面的灰字（CRITIQUE 4.4）
       powerLater: '戰力天賦 Lv{n} 開，點數先存著也可以',              // Lv8 前天賦頁頂端
       now: '現在 {n} 級', cost: '下一級 {n} 點', maxed: '已滿', auto: '自動', lock: '樂歷 Lv{n} 開', soon: '之後開放',
       respec: '全部重配（免費）', respecDone: '點數都退回來了。',

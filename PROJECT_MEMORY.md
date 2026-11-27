@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-27｜dip-vinyl-shop｜game-lab 第 I 波 I-3b：市集新攤（唱片醫生、熱美式／高粱、轉蛋機）＋算命接主站心情題庫（出貨）
+
+- **背景**：SPEC-I §6.3、§6.7、§9；契約 `wave-i/build3b/CONTRACT.md`；裁定 `wave-i/RULING.md`（算命題庫、I-3b 續跑、I-3b 收尾裁定）；報告 `build3b/FINAL.md`、`SIM.md`。週額度中斷後照店主「減少不必要開銷」改成三支串行收尾（修 bug → sim → 全套＋自查），沒開三面審查；開旗標後的 e2e 全套由主線直接重跑（不派代理）。
+- **做了什麼**：市集多三樣（`C.waveC.stall.fair.newStalls` 一起開關，**出貨 true**；engine 預設 false；`?newstalls=0` 看 I-3a 的樣子）：唱片醫生（洗＝聽膩全清耐聽回滿 $800；重壓＝這一輪新到的盤挑一軸 +1，每張 1 次、每趟 3 張，$2,000；點「只能壓」的新到那張直接選軸）、飲料攤熱美式（接下來 3 位底氣 +1）／高粱（2 位品味 +1、每場第一次被剋多扣 1，跟冷門代價取大不相加；說情重打、切磋不扣杯數）、小物攤轉蛋機（六格、最多轉 2 次；配件格先扣攤上兩件再取＝修掉「配件沒滿也給錢」）；算命每翻一張先問一題主站心情題庫（`mood-quiz.json` 只讀），三題算出心情、唸 `mood-bank.json` 原文一段、那張進想要清單（題庫抓不到＝照 I-3a 翻籤）；市集店裡唱盤樂歷 +30→+20（新增 `fair.homeLexp`，只在新攤開著時讀；關著照舊 30）；M5 改判每攤做滿 ≤7 下、一般輪全點 ≤16 下（`mkKeep` 只在 e2e 全點策略走）。
+- **主要檔案**：`game-lab/{engine.js,content.js,stalls.js,stalls.css,ui.js,duel.js,stage.js,shop-props.js,style.css,sim.mjs（--newstalls）,index.html（?v=97）,tools/check-content.mjs,LINES-REVIEW.md}`、`test/engine.test.mjs`（#37 市集殼拷貝新攤關、#38 新攤）、`tests/e2e-market.mjs`（#15a–i、15c2、#16）。
+- **驗證**：sim n4000（新攤開）M1 對 I-3a +0.20／+0／+0.00／−0.02、對全關 −1.48／+1／−0.13／+1.10，M3 2.79，M4（冬瓜茶 43.6／熱美式 18.9／高粱 22.5／轉蛋 33.6），K1′ 新三攤（醫生 60／24、飲料 74／36、小物 42／24；唱盤 85／25），W1 94.9%，W3 沒替補 6.2%，D1 +0.6／D2 32.9%，GI1／GI2 100%，GI3 G2 1.19／1.49、G3 ≤+0.05，Lv7 對 I-3a +0.20；**Lv7 對 pick +1.09（±0.61，n8000）壓線，主線照收**（誤差帶跨 +1、對已上線只多 +0.20、整體深趟反而變難）。旗標關著時全套過（engine.test quick 510,885／full 2,942,346，e2e 兩尺寸全過）；**開旗標後**（主線重跑）check-content／lint-copy 過、engine.test quick 510,885／full 2,942,346、單元 0 失敗；e2e 兩尺寸 market 25/25（#1–#14 改帶 `&newstalls=0` 驗 I-3a 殼）、lineup 28、career 48、trial 14、duel 121、crowd 70/72（LC4 點箱子、LC2 門事件時快時慢：關旗標也 2/4 掉，`tapHot` 找不到沒被人擋住的點，跟新攤無關）、econ 54、loot 14、checkpoint 8、stall 14、bgm 78、e2e.spec LAB_FULL 50＋50。
+- **留著的**：career 深趟一般玩家第 21–30 趟對全關 −5.6（I-3a −6.8；這棒不動，等真實試玩回饋，先試醫生權重 3 再試耐聽 +1 格）；側袋照舊（s2b 讓 W3 沒替補掉到 4.5%）；K1′ 挖寶／調貨／寄賣／倉庫偏冷同 I-3a。
+
 ### 2026-11-23｜dip-vinyl-shop｜game-lab 第 I 波 I-3a：市集搬到店中央、一次攤開、每輪 3 個時段（出貨）
 
 - **背景**：店主 11-20「中間的市集什麼的 不要分兩邊跑 然後不要只有選項 要有現場可以互動的 可以有算命攤 特殊小物 卡牌升級？ 加buff」。規格 scratchpad `v5/wave-i/SPEC-I.md` §6；報告 `wave-i/build3/FINAL.md`、出貨後全套 `build3/FINAL-flip.md`；裁定 `wave-i/RULING.md`（I-3a 段）。

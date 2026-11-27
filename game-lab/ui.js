@@ -199,7 +199,10 @@
     if (!(r.fortune == null || plain(r.fortune) || (Array.isArray(r.fortune) && r.fortune.every(plain)))) return false;
     if (['marketTiles', 'fortuneFree', 'digN'].some(function (k) { return r[k] != null && !Number.isInteger(r[k]); })) return false;
     if (plain(r.fac) && r.fac.lv3 != null && typeof r.fac.lv3 !== 'boolean') return false;
+    // 第 I 波 I-3b（build3b/CONTRACT.md §1）：重壓 plus、這一趟壓了幾張 pressN、飲料 drink、問過的心情題 moodSeen、市集 pending 的 moodAns（不對＝fixMarket 修）
+    if (!(r.plus == null || plain(r.plus)) || !(r.pressN == null || nn(r.pressN)) || !(r.drink == null || plain(r.drink)) || !(r.moodSeen == null || Array.isArray(r.moodSeen))) return false;
     var p = r.pending; if (!p || p.type !== 'stall' || p.mode !== 'market') return true;
+    if (p.moodAns != null && !Array.isArray(p.moodAns)) return false;
     return strs(p.tiles) && strs(p.free) && nn(p.slots) && nn(p.left) && plain(p.went) && plain(p.acts) && plain(p.seen) && (p.cur == null || (plain(p.cur) && typeof p.cur.kind === 'string'));
   }
   // v4（一晚版）→ v5（SPEC 無限試煉 §1 裁定 12）：留唱片櫃、看過的、學會的、偏好、小人、教學／序章做過沒、上次的王牌與特價三張、配件；
@@ -1213,6 +1216,7 @@
     else if (o.lexp) badge += '<span class="badge lexp">' + esc((C.career && C.career.ui && C.career.ui.srcLexp) || '') + '</span>';   // 第 D 波：樂歷升級抽到的（唱片櫃、挑種子）
     else if (o.enc) badge += '<span class="badge enc">' + esc((C.crowdUi && C.crowdUi.encSrc) || '') + '</span>';   // 活店：切磋贏來的（唱片櫃、挑種子）
     if (o.brought) badge += '<span class="badge bring">' + esc(SU('pickBrought')) + '</span>';   // 主站「帶去店裡對決」帶來的（挑種子面板第一張）
+    if (o.pressed) badge += '<span class="ptag" aria-hidden="true">' + esc(WU('mkPressTag')) + '</span>';   // 第 I 波 I-3b：重壓過的（唱片醫生）封面右上角小「壓」
     var src = coverSrc(c);
     return '<span class="lb-cv ' + (o.frame === false ? '' : rarityCls(c)) + (o.store ? ' store' : '') + (o.sel ? ' sel' : '') + '"' + st + (o.info === false ? '' : ' data-info="1" data-cid="' + esc(c.id) + '"') +
       ' role="img" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="alt" aria-hidden="true">' + esc(c.album) + '</span>' +
@@ -1222,16 +1226,17 @@
     o = o || {};
     if (!c) return '';
     return '<span class="stars' + (o.cls ? ' ' + o.cls : '') + '">' + ATTRS.map(function (a) {
-      return '<b class="' + a + (o.mark === a ? ' mk' : '') + (o.worn === a ? ' wn' : '') + '"><i>' + ZH1[a] + '</i>' + (c[a] || 0) + '</b>';   // wn＝聽膩扣過的那軸（第 I 波 I-2；星數已經扣好）
+      return '<b class="' + a + (o.mark === a ? ' mk' : '') + (o.worn === a ? ' wn' : '') + (o.pressed === a ? ' pz' : '') + '"><i>' + ZH1[a] + '</i>' + (c[a] || 0) + '</b>';   // wn＝聽膩扣過的那軸（第 I 波 I-2；星數已經扣好）；pz＝重壓加過的那軸（I-3b）
     }).join('') + '</span>';
   }
   function tileHTML(c, o) {
     o = o || {};
     if (!c) return '';
     var cls = 'lb-ct' + (o.sel ? ' sel' : '') + (o.cls ? ' ' + o.cls : '');
+    if (o.starCard && o.starCard.pressed && o.pressed == null) o = Object.assign({}, o, { pressed: true });   // 第 I 波 I-3b：重壓過的封面角落「壓」
     return '<div class="' + cls + '" data-cid="' + esc(c.id) + '"' + (o.data ? ' ' + o.data : '') + '>' + coverHTML(c, o) +
       (o.text === false ? '' : '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>') +
-      (o.stars === false ? '' : o.starCard ? starsHTML(o.starCard, { worn: o.starCard.wornAxis }) : starsHTML(c)) + (o.extra || '') +
+      (o.stars === false ? '' : o.starCard ? starsHTML(o.starCard, { worn: o.starCard.wornAxis, pressed: o.starCard.pressed }) : starsHTML(c)) + (o.extra || '') +
       (o.pick ? '<button type="button" class="lb-pickb key" data-pick="' + esc(c.id) + '"' + (o.disabled ? ' disabled' : '') + '>' + esc(o.pick) + '</button>' : '') + '</div>';
   }
   function info(c, o) {
@@ -4770,9 +4775,18 @@
     var I = W.DipLabStalls && W.DipLabStalls._icons; if (!I || g.done) return '';
     var fs = Array.isArray(g.fortunes) ? g.fortunes : null, MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {};
     var info = fs ? fs.some(function (f) { return f && f.slip !== 'omen'; }) : !!g.fortune;
+    // 第 I 波 I-3b：轉蛋「他也來轉了一顆」也是 omen（src 'gacha'）＝紅標寫「轉」；凶籤照「凶」
+    var om = fs && g.omen ? fs.filter(function (f) { return f && f.slip === 'omen'; }) : [], omTx = om.some(function (f) { return f.src !== 'gacha'; }) ? WU('mkOmenTag') : om.length ? WU('mkBumpTag') : '';
     return (info ? '<span class="st-mk ft' + (fs ? ' sl' : '') + '">' + pix((fs && MK.fortune) || I.fortune, 12) + '</span>' : '') + (g.dare ? '<span class="st-mk dr">' + pix(I.dare, 12) + '</span>' : '') +
-      (fs && g.omen ? '<span class="st-mk om" aria-hidden="true">' + esc(WU('mkOmenTag')) + '</span>' : '');
+      (omTx ? '<span class="st-mk om" aria-hidden="true">' + esc(omTx) + '</span>' : '');
   }
+  // 第 I 波 I-3b 飲料（SPEC-I §6.3「來客條頭像下畫小杯子＋剩幾位」）：熱美式／高粱罩到的那幾位頭像右下一個小杯子；最前面那位（下一個要打的）杯子旁寫還剩幾位
+  function drinkMark(g, r, first) {
+    if (!g.drink || g.done) return '';
+    var MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {}, rows = MK[g.drink];
+    return '<span class="st-cupm k-' + esc(g.drink) + '" aria-hidden="true">' + (rows ? pix(rows, 10) : '') + (first && r.drink ? '<b>' + (r.drink.left | 0) + '</b>' : '') + '</span>';
+  }
+  function drinkAria(g, r) { var DN = ((C.waveC || {}).ui || {}).drinkNames || {}; return g.drink && !g.done ? ' ' + (DN[g.drink] || '') + (r.drink ? WU('mkDrinkLeft', { n: r.drink.left | 0 }) : '') : ''; }
   // 攤位還沒逛完時點了別的（箱子、收音機、櫃檯、對戰台、「就他了」）：C 波「先逛完今天的攤位。」；第 I 波 I-3a 市集「先逛完今晚的市集。」
   function stallBusyText() { return save.run && E.isMarket && E.isMarket(save.run) && WU('mkBusy') ? WU('mkBusy') : WU('busy'); }
   // 第 I 波 I-3a 市集：島台小道具（stage.js isle；舞台每格讀一次）。不是市集（或不在來客畫面）＝null
@@ -4783,13 +4797,22 @@
     if (!X || typeof X.isle !== 'function' || UI.screen !== 'night' || !p || p.type !== 'stall' || p.mode !== 'market') return null;
     var I = X._icons || {}, MK = (W.DipPropsO && W.DipPropsO.MK_ICON) || {}, st = (X.state && X.state()) || {};
     var open = p.cur ? p.cur.kind : (st.mode === 'market' && st.hold ? st.kind : null), fHot = null;
-    var sHot = null;
-    var cells = X.isle().map(function (c) { if (c.kind === 'fortune') fHot = c.hot; if (c.kind === 'snack') sHot = c.hot; return { hot: c.hot, kind: c.kind, went: !!c.went, open: c.kind === open, rows: MK[c.kind] || I[c.kind] || null }; });
+    var sHot = null, dHot = null, gHot = null, ns = !!(E.nsOn && E.nsOn(C));
+    var cells = X.isle().map(function (c) {
+      if (c.kind === 'fortune') fHot = c.hot; if (c.kind === 'snack') sHot = c.hot; if (c.kind === 'doctor') dHot = c.hot; if (c.kind === 'gear') gHot = c.hot;
+      var ik = c.kind === 'gear' && ns ? 'gacha' : c.kind;                 // 第 I 波 I-3b：小物攤有轉蛋機＝轉蛋機圖示
+      return { hot: c.hot, kind: c.kind, went: !!c.went, open: c.kind === open, rows: MK[ik] || I[c.kind] || null };
+    });
     var fs = E.fortunesOf ? E.fortunesOf(r).filter(function (f) { return f.round === r.round; }) : [];
     var fc = p.cur && p.cur.kind === 'fortune' ? p.cur : null;
     var slips = fHot && (fc || fs.length || (p.acts && p.acts.fortune > 0)) ? { hot: fHot, total: fc && fc.order ? fc.order.length : 3, faces: fs.map(function (f) { return f.slip; }) } : null;
     var po = st.pour && sHot ? { n: st.pour.n, hot: sHot, kind: st.pour.kind } : null;   // 飲料攤倒一杯（修正棒：§6.3「點了倒飲料的小動畫」，畫在島台那一箱）
-    return { key: runTag(r) + '#mk#' + p.after, cells: cells, slips: slips, pour: po };
+    // 第 I 波 I-3b 島台小道具：清潔墊（唱片醫生開著：選中那張放大、洗／壓的那一下）、轉蛋機（小物攤開著：晃、蛋掉出來）、三杯（飲料攤開著、有熱美式／高粱）
+    var doc = null, gm = null, cups = null;
+    if (dHot && st.doc && st.doc.id && card(st.doc.id)) { var dc = (E.effCard ? E.effCard(C, r, st.doc.id) : null) || card(st.doc.id); doc = { hot: dHot, attr: E.topAttr ? E.topAttr(dc) : 'c', fx: st.doc.fx || null }; }
+    if (gHot && st.gacha) gm = { hot: gHot, phase: st.gacha.phase, fx: st.gacha.fx || null };
+    if (sHot && p.cur && p.cur.kind === 'snack' && (p.cur.drinks || []).length > 1) cups = { hot: sHot, kinds: p.cur.drinks.map(function (d) { return d.kind; }) };
+    return { key: runTag(r) + '#mk#' + p.after, cells: cells, slips: slips, pour: po, doc: doc, gacha: gm, cups: cups };
   }
   // 錢、包包、配件那一條（來客畫面、今天的攤位共用）
   function bagLineInner(r) {
@@ -4865,11 +4888,13 @@
     var w = wrOn(r) ? wearOf(r, id) : null, mk = '';
     if (w && w.n > 0) mk = '<b class="lu-wn">' + esc('−' + w.n) + '</b>';
     else if (w && w.left === 1 && w.n < w.max) mk = '<i class="lu-al" aria-hidden="true"></i>';
-    return '<span class="lu-mini' + (w && w.n ? ' worn' : '') + '">' + coverHTML(c, { info: false, badge: false }) + mk + '</span>';
+    var pz = E.plusOf && E.plusOf(r, id) ? '<span class="ptag" aria-hidden="true">' + esc(WU('mkPressTag')) + '</span>' : '';   // 第 I 波 I-3b：重壓過的「壓」
+    return '<span class="lu-mini' + (w && w.n ? ' worn' : '') + '">' + coverHTML(c, { info: false, badge: false }) + mk + pz + '</span>';
   }
   // 星數照聽膩後的（扣過的那軸紅字＝duel.js 屬性鈕「經 4 −1」同一個意思；修正棒 11-22，審查「−1 兩種意思」）：包包、上場面板、換上場、戰利品列、櫃檯賣給老闆
-  function luCardOf(r, id) { var w = wrOn(r) && E.wornCard && card(id) ? E.wornCard(C, r, id) : null; return w && w.worn > 0 ? w : null; }
-  function luStarsHTML(r, id, o) { var w = luCardOf(r, id); return w ? starsHTML(w, Object.assign({}, o, { worn: w.wornAxis })) : starsHTML(card(id), o); }
+  //   第 I 波 I-3b：重壓過的（run.plus）也回拷貝（pressed＝壓的那軸；星照加過的）
+  function luCardOf(r, id) { var w = E.wornCard && card(id) && (wrOn(r) || (E.plusOf && E.plusOf(r, id))) ? E.wornCard(C, r, id) : null; return w && (w.worn > 0 || w.pressed) ? w : null; }
+  function luStarsHTML(r, id, o) { var w = luCardOf(r, id); return w ? starsHTML(w, Object.assign({}, o, { worn: w.wornAxis, pressed: w.pressed })) : starsHTML(card(id), o); }
   // 開打前替補自動頂上了（lu0＝開打前的上場）：吐司「《換下的》聽膩了，替補《頂上的》頂上」（keep：換到對決畫面照留）
   function luBenchToast(r, lu0) {
     var L = Array.isArray(r.lineup) ? r.lineup : [], ins = L.filter(function (id) { return lu0.indexOf(id) < 0; }), outs = lu0.filter(function (id) { return L.indexOf(id) < 0; });
@@ -5095,13 +5120,15 @@
     if (waits && !sp && !luHold) guestToTable(r); else if (!waits) { hideActor('f'); stg('door', 'close'); }
     if (q[0]) { place('q1', 'q1', enemySpr(C.enemies[q[0]])); stg('sil', 'q1', true); } else hideActor('q1');
     if (q[1]) { place('q2', 'q2', enemySpr(C.enemies[q[1]])); stg('sil', 'q2', true); } else hideActor('q2');
+    var dFirst = -1;                                               // 第 I 波 I-3b：杯子旁寫「還剩幾位」的那一位（熱美式／高粱罩到的第一位）
     var row = E.roundGuests(r, C).map(function (g, i) {
+      if (g.drink && !g.done && dFirst < 0) dFirst = i;
       var en = C.enemies[g.id] || {}, pl = TU('pos', { n: g.pos });
       // 稱號（第 A 波 3；engine guestTitle：每 2 位換一次、藏家／跟名字一樣＝null）：頭像下緣一塊小名牌（壓在頭像上，不多佔一行：375×548 店景不再縮）
       //   「○○級」（titleTx）；放不下的用短寫（C.trial.titlesShort：地下廠牌主理人 → 廠牌主理人；aria-label 照全名）；6 字以上的名牌收一號（.lg），其他 10 px
       var tt = titleTx(g.title), ts = titleTx(g.title && ((C.trial || {}).titlesShort || {})[g.title] || g.title);
-      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.skip ? ' skip' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '') + (g.fortunes ? ' ' + (((C.waveC || {}).fairStations || {}).fortune || '') + (g.omen ? ' ' + WU('mkOmenTag') : '') : g.fortune ? ' ' + ((C.waveC || {}).stations || {}).fortune : '') + (g.dare ? ' ' + ((C.waveC || {}).stations || {}).dare : '')) + '">' +
-        '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + stallMarks(g) + '</span>' +
+      return '<button type="button" class="nc' + (g.done ? ' done' : '') + (g.skip ? ' skip' : '') + (g.cur ? ' cur' : '') + (g.cls === 'elite' ? ' elite' : '') + (g.cls === 'boss' ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc(pl + ' ' + en.name + (tt ? ' ' + tt : '') + (g.fortunes ? ' ' + (((C.waveC || {}).fairStations || {}).fortune || '') + (g.omen ? ' ' + WU('mkOmenTag') : '') : g.fortune ? ' ' + ((C.waveC || {}).stations || {}).fortune : '') + (g.dare ? ' ' + ((C.waveC || {}).stations || {}).dare : '') + drinkAria(g, r)) + '">' +
+        '<span class="ps">' + esc(pl) + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (g.done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + stallMarks(g) + drinkMark(g, r, dFirst === i) + '</span>' +
         (ts ? '<span class="tl' + (ts.length >= 6 ? ' lg' : '') + '">' + esc(ts) + '</span>' : '') + '<span class="nm">' + esc(en.name || '') + '</span></button>';     // 名字一律寫身分（FIXLIST 6；COPY-15）：菁英／藏家用頭像的框分
     }).join('');
     var nen = C.enemies[nx] || {}, toCp = E.toCheckpoint(r, C), luRow = luRowHTML(r);   // 第 I 波 I-2：上場列（上場制那幾輪；關著＝空字串）
@@ -5292,7 +5319,7 @@
     if (f.slip === 'boss' || f.slip === 'elite') tx = WU(f.slip === 'boss' ? 'mkSlipBoss' : 'mkSlipElite', { c: q.c | 0, o: q.o | 0, h: q.h | 0 });
     else if (f.slip === 'aces') tx = (f.list || []).length ? WU('mkSlipAces', { list: f.list.map(function (x) { return WU('mkSlipAce', { pos: x.pos, attr: Z[x.attr] || '' }); }).join('、') }) : WU('mkSlipAcesNone');
     else if (f.slip === 'top') { var c = f.card && card(f.card); tx = c ? WU('mkSlipTopIs', { album: c.album }) : WU('mkSlipTop'); }
-    else if (f.slip === 'omen') tx = WU('mkOmen', { pos: f.pos, n: f.atk | 0 });
+    else if (f.slip === 'omen') tx = f.src === 'gacha' ? WU('mkGachaBump', { pos: f.pos, n: f.atk | 0 }) : WU('mkOmen', { pos: f.pos, n: f.atk | 0 });   // I-3b 轉蛋「他也來轉了一顆」
     if (!tx) return '';
     return '<div class="bl ft' + (f.slip === 'omen' ? ' om' : '') + '">' + (MK.fortune && f.slip !== 'omen' ? '<span class="fi" aria-hidden="true">' + pix(MK.fortune, 12) + '</span>' : '') + '<span>' + esc(tx) + '</span></div>';
   }
@@ -6586,6 +6613,9 @@
         relicPanel: relicPanel, levelPanel: levelPanel,
         play: function (c) { var f = FX(); if (c && c.previewUrl && soundOn() && f && f.music && f.music.play) try { f.music.play(c, { fadeMs: 600 }); } catch (e) { console.error(e); } },
         bgmFront: function (id) { bgmFront(id); },   // 第 I 波：「店裡唱盤」放上去那張＝插到背景音樂佇列最前面、馬上放
+        // 第 I 波 I-3b 算命心情題：那張進想要清單（save.want；滿 200 張＝不加 'full'、已經在＝'had'、加了＝'add'）；moodResult 先挑沒擁有、不在清單的
+        want: function (id) { if (!card(id)) return null; if (save.want.indexOf(id) >= 0) return 'had'; if (save.want.length >= 200) return 'full'; save.want.push(id); if (save.run) save.run.want = save.want.slice(-200); persist(); return 'add'; },
+        wantList: function () { return save.want.slice(); }, owned: function (id) { return isOwned(id); },
         // 錢、包包、配件那條（今天的攤位底部）照最新的 run 重畫
         refresh: function () { var b = qs('.lb-panel.stall .lb-bagline', app()); if (b && save.run) b.innerHTML = bagLineInner(save.run); },
         done: function () { if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } },

@@ -1629,8 +1629,16 @@
   //   新圖示（店主 11-20 第 6 點：算命改翻籤、宵夜改飲料攤）：籤＝封套裡抽出一張籤紙；飲料＝冬瓜茶手搖杯（杯蓋、吸管）。stalls.js 市集模式的攤位格也用這兩張（MK_ICON）
   var MK_ICON = {
     fortune: ['....kkkk....', '....kwwk....', '....krrk....', '.kkkkwwkkkk.', '.kppkwwkppk.', '.kppkkkkppk.', '.kpkwwwwkpk.', '.kpkwkkwkpk.', '.kpkwwwwkpk.', '.kppkkkkppk.', '.kppppppppk.', '.kkkkkkkkkk.'],
-    snack: ['.......kk...', '......kk....', '..kkkkkkkk..', '.kwwwwkwwwk.', '.kkkkkkkkkk.', '..kttttttk..', '..kttwtttk..', '..kttttttk..', '...kttttk...', '...kttttk...', '...kkkkkk...', '............']
+    snack: ['.......kk...', '......kk....', '..kkkkkkkk..', '.kwwwwkwwwk.', '.kkkkkkkkkk.', '..kttttttk..', '..kttwtttk..', '..kttttttk..', '...kttttk...', '...kttttk...', '...kkkkkk...', '............'],
+    // 第 I 波 I-3b（newStalls）：唱片醫生＝一張唱片、紅圓標上白十字；轉蛋機＝玻璃罩裡幾顆蛋＋紅底座；熱美式＝冒煙的馬克杯；高粱＝白瓶紅標＋小酒杯（攤位格、島台、飲料攤的杯、來客條杯子共用）
+    doctor: ['...kkkkkk...', '..kddddddk..', '.kddkkkkddk.', 'kddkrrrrkddk', 'kdkrrwwrrkdk', 'kdkrwwwwrkdk', 'kdkrwwwwrkdk', 'kdkrrwwrrkdk', 'kddkrrrrkddk', '.kddkkkkddk.', '..kddddddk..', '...kkkkkk...'],
+    gacha: ['...kkkkkk...', '..kewwweek..', '.kerreyyeek.', '.keeebbnnek.', '.kemmeeyyek.', '..kkkkkkkk..', '..krrrrrrk..', '..krkkrrrk..', '..krrrrkrk..', '..krkkkrrk..', '..krkwkrrk..', '..kkkkkkkk..'],
+    coffee: ['...d..d.....', '....d..d....', '...d..d.....', '.kkkkkkkk...', '.kwwwwwwkkk.', '.kwuuuuwk.k.', '.kwwwwwwk.k.', '.kwwwwwwkkk.', '.kwwwwwwk...', '..kwwwwk....', '..kkkkkk....', 'kkkkkkkkkk..'],
+    sorghum: ['..kkk.......', '..kwk.......', '..kwk.......', '.kwwwk......', 'kwwwwwk.....', 'kwrrrwk.....', 'kwryrwk.....', 'kwrrrwk.kkk.', 'kwwwwwk.kek.', 'kwwwwwk.kek.', 'kwwwwwk.kkk.', '.kkkkk......']
   };
+  // 第 I 波 I-3b 小物攤面板的轉蛋機（16×20；stalls.js 畫成 56 px 寬）：玻璃罩裡的蛋、紅機身、投幣孔（黃）、旋鈕、出蛋口
+  var GACHA_ROWS = ['....kkkkkkkk....', '..kkwwweeeeekk..', '.kwweerreyyeeek.', '.kweerrrbyyyeek.', 'kweenneebbmmeeek', 'keennnebbbmmmeek', 'keeyynnooeemmeek', '.keyyyoooecceek.', '.kkeeeeeeeeeekk.', 'kkkkkkkkkkkkkkkk',
+    'krrrrrrrrrrrrrrk', 'krkkkkrrrrrrrrrk', 'krkyykrrrkkkkrrk', 'krkkkkrrkdddddkk', 'krrrrrrrkdkkkdkk', 'krrrrrrrkdddddkk', 'krrkkkkkrkkkkrrk', 'krrkdddkrrrrrrrk', 'krrkkkkkrrrrrrrk', 'kkkkkkkkkkkkkkkk'];
   var ISLE_PAL0 = { k: '#111111', g: '#b8860b', r: '#c11628', b: '#1f5fae', w: '#ffffff', e: '#d8d8d8', d: '#888888', n: '#2e7d52', p: '#6a3fa0', o: '#e0851c', y: '#f0c75e', s: '#e8b48c', c: '#3fb6c9', t: '#c68642', u: '#8d5524', v: '#f6dcc4', m: '#e75480' };
   function islePal() { return (typeof PIX_PAL !== 'undefined' && PIX_PAL) || ISLE_PAL0; }   // eslint-disable-line no-undef
   var CHECK = ['......kk', '.....kgk', 'kk..kgk.', 'kgkkgk..', '.kggk...', '..kk....'];
@@ -1664,14 +1672,65 @@
   }
   // 飲料攤倒一杯（修正棒；SPEC-I §6.3「點了倒飲料的小動畫」）：島台那一箱上一個透明手搖杯，茶從上面倒進來、0.9 秒倒滿、冰塊、插吸管，停到 2.6 秒再淡掉
   //   fill 0–1＝倒到多滿；t＝從開始倒算的秒數（減少動態：直接畫滿杯、不畫倒的那條）
-  function teaCup(P, cx, by, fill, t, rm) {
-    var x = cx - 5, top = by - 12, lv = Math.round(10 * fill);
+  function teaCup(P, cx, by, fill, t, rm, kind) {
+    var x = cx - 5, top = by - 12, lv = Math.round(10 * fill), LQ = kind === 'coffee' ? ['#5a3418', '#8a5a30'] : kind === 'sorghum' ? ['#f5f0dc', '#ffffff'] : ['#c68642', '#e0a868'];   // I-3b：熱美式深褐、高粱透明（照倒）
     P.a(0.4, function () { P.r(x + 1, by + 1, 10, 1, '#1b0e05'); });
     P.r(x, top, 10, 12, '#1d1712'); P.r(x + 1, top + 1, 8, 10, '#eef4f4'); P.r(x + 1, by - 1, 8, 1, '#1d1712');   // 杯身（透明）
-    if (lv > 0) { P.r(x + 1, by - 1 - lv, 8, lv, '#c68642'); P.r(x + 1, by - 1 - lv, 8, 1, '#e0a868'); }        // 冬瓜茶
-    if (fill >= 0.6) { P.r(x + 2, by - 6, 2, 2, '#ffffff'); P.r(x + 6, by - 4, 2, 2, '#ffffff'); }              // 冰塊
-    if (!rm && t < 0.95) { P.r(x + 6, top - 9, 6, 3, '#8a6020'); P.r(x + 6, top - 9, 6, 1, '#c9a24a'); P.r(x + 5, top - 7, 2, 7 + (10 - lv), '#c68642'); }   // 壺嘴＋倒下來那一條
-    if (fill >= 1) { P.r(x - 1, top - 1, 12, 2, '#1d1712'); P.r(x, top - 1, 10, 1, '#f3ead6'); P.r(x + 6, top - 6, 1, 6, '#e75480'); }   // 杯蓋＋吸管
+    if (lv > 0) { P.r(x + 1, by - 1 - lv, 8, lv, LQ[0]); P.r(x + 1, by - 1 - lv, 8, 1, LQ[1]); }                // 冬瓜茶（熱美式、高粱換色）
+    if (fill >= 0.6 && (!kind || kind === 'tea')) { P.r(x + 2, by - 6, 2, 2, '#ffffff'); P.r(x + 6, by - 4, 2, 2, '#ffffff'); }   // 冰塊（冬瓜茶才有）
+    if (!rm && t < 0.95) { P.r(x + 6, top - 9, 6, 3, '#8a6020'); P.r(x + 6, top - 9, 6, 1, '#c9a24a'); P.r(x + 5, top - 7, 2, 7 + (10 - lv), LQ[0]); }   // 壺嘴＋倒下來那一條
+    if (fill >= 1 && (!kind || kind === 'tea')) { P.r(x - 1, top - 1, 12, 2, '#1d1712'); P.r(x, top - 1, 10, 1, '#f3ead6'); P.r(x + 6, top - 6, 1, 6, '#e75480'); }   // 杯蓋＋吸管
+    if (fill >= 1 && kind === 'coffee' && !rm) { var st = Math.floor(t * 3) % 2; P.p(x + 3 + st, top - 3, '#d8d8d8'); P.p(x + 5 - st, top - 5, '#d8d8d8'); P.p(x + 4 + st, top - 7, '#d8d8d8'); }   // 熱美式冒煙
+  }
+  // ---------------- 第 I 波 I-3b 島台小道具（stage.js isleTick 填 I.doc／I.gacha／I.cups；at＝那一下開始的 rt 秒；rm＝減少動態：不演、直接畫結果）
+  //   清潔墊：綠色橡膠墊上放大的那張唱片（圓標＝主打那色）；洗＝泡泡從左掃到右、亮一下（1.2 秒）；重壓＝壓盤從上面壓下來、那色一圈光（1 秒）
+  //   轉蛋機：玻璃罩＋蛋＋紅機身；轉＝整台晃（0.65 秒）、蛋從出蛋口滾到箱子上；打開＝星光一下
+  //   三杯：冬瓜茶、熱美式、高粱小小一排（飲料攤開著才擺；倒的那杯照 I-3a 的 teaCup 演）
+  function docMat(P, cx, by, attr, D, rt) {
+    var t = D && D.at != null ? rt - D.at : 9, act = D && !D.rm && t < 1.3 ? D.kind : null;
+    P.a(0.4, function () { P.r(cx - 12, by + 1, 24, 1, '#1b0e05'); });
+    P.r(cx - 12, by - 6, 24, 7, '#1d1712'); P.r(cx - 11, by - 5, 22, 5, '#2e7d52'); P.r(cx - 11, by - 5, 22, 1, '#4caf7a');   // 墊子
+    var pd = act === 'press' ? Math.round(Math.max(0, 1 - Math.abs(t - 0.4) / 0.4) * 2) : 0;   // 壓下去那一下唱片扁一點
+    P.r(cx - 9, by - 9 + pd, 18, 7 - pd, '#111111'); P.r(cx - 8, by - 10 + pd, 16, 1, '#111111'); P.r(cx - 7, by - 8 + pd, 14, 1, '#2c2c2c'); P.r(cx - 8, by - 5, 16, 1, '#2c2c2c');   // 唱片（斜看）
+    P.r(cx - 3, by - 8 + pd, 6, 4 - pd, ATTR[attr] || '#c9a24a'); P.p(cx, by - 6 + pd, '#f3ead6');                           // 圓標
+    if (act === 'wash') {
+      var x = cx - 10 + Math.round(Math.min(1, t / 1.0) * 20);
+      for (var i = 0; i < 5; i++) { var bx = x - i * 3, byy = by - 10 - ((i * 7 + Math.floor(t * 12)) % 5); if (bx > cx - 11 && bx < cx + 11) { P.r(bx, byy, 2, 2, '#ffffff'); P.p(bx, byy, '#cfeaf7'); } }
+      if (t > 0.95) spark(P, cx + 4, by - 11, 'small');
+    } else if (act === 'press') {
+      var ph = Math.max(0, 1 - Math.abs(t - 0.4) / 0.4), py = by - 22 + Math.round(ph * 11);
+      P.r(cx - 10, py, 20, 3, '#5a5048'); P.r(cx - 10, py, 20, 1, '#a89e8c'); P.r(cx - 1, py - 8, 2, 8, '#776c5e');            // 壓盤＋桿子
+      if (t > 0.4 && t < 1.0) spark(P, cx, by - 7, 'ring', ATTR[attr] || '#f0c75e');
+    }
+  }
+  function gachaMach(P, cx, by, G, rt) {
+    var t = G && G.at != null ? rt - G.at : 9, spin = G && !G.rm && G.kind === 'spin' && t < 0.65, dx = spin ? (Math.floor(t * 20) % 2 ? 1 : -1) : 0, x = cx - 6 + dx;
+    P.a(0.4, function () { P.r(cx - 6, by + 1, 13, 1, '#1b0e05'); });
+    P.r(x, by - 9, 12, 9, '#1d1712'); P.r(x + 1, by - 8, 10, 7, '#c11628'); P.r(x + 1, by - 8, 10, 1, '#e0505f');                 // 機身
+    P.r(x + 2, by - 6, 2, 1, '#f0c75e'); P.r(x + 7, by - 6, 3, 3, '#1d1712'); P.p(x + 8, by - 5, '#d8d8d8');                     // 投幣孔、旋鈕
+    P.r(x + 2, by - 3, 3, 2, '#1d1712');                                                                                         // 出蛋口
+    P.r(x + 1, by - 19, 10, 10, '#1d1712'); P.r(x + 2, by - 18, 8, 9, '#dfeff2'); P.r(x + 2, by - 18, 8, 1, '#ffffff');          // 玻璃罩
+    var EG = ['#c11628', '#f0c75e', '#1f5fae', '#2e7d52', '#e75480', '#3fb6c9'];
+    for (var i = 0; i < 6; i++) P.r(x + 2 + (i % 3) * 3 - (i > 2 ? 0 : 0), by - 13 - (i > 2 ? 3 : 0) + (spin && i % 2 ? 1 : 0), 2, 2, EG[i]);
+    var hasEgg = G && (G.phase === 'egg' || (G.phase === 'spin' && t > 0.35));
+    if (hasEgg) { var ex = cx - 3 + Math.round(Math.min(1, Math.max(0, (t - 0.35) / 0.3)) * -6), ey = by - 2; P.r(ex, ey - 3, 4, 2, EG[(G.n | 0) % 6]); P.r(ex, ey - 1, 4, 2, '#f3ead6'); P.r(ex - 1, ey - 2, 1, 2, '#1d1712'); P.r(ex + 4, ey - 2, 1, 2, '#1d1712'); }
+    if (G && !G.rm && G.kind === 'open' && t < 0.7) spark(P, cx - 6, by - 6, 'small');
+  }
+  var CUP3 = { tea: ['#c68642', '#eef4f4'], coffee: ['#5a3418', '#ffffff'], sorghum: ['#f5f0dc', '#dfeff2'] };
+  function cups3(P, cx, by, kinds) {
+    var n = kinds.length, x0 = cx - Math.floor((n * 6 + (n - 1) * 2) / 2);
+    kinds.forEach(function (k, i) {
+      var x = x0 + i * 8, C3 = CUP3[k] || CUP3.tea;
+      P.a(0.4, function () { P.r(x, by + 1, 6, 1, '#1b0e05'); });
+      P.r(x, by - 8, 6, 8, '#1d1712'); P.r(x + 1, by - 7, 4, 6, C3[1]); P.r(x + 1, by - 5, 4, 4, C3[0]);
+      if (k === 'coffee') { P.p(x + 2, by - 10, '#d8d8d8'); P.p(x + 3, by - 11, '#d8d8d8'); }
+      if (k === 'tea') P.r(x + 3, by - 11, 1, 3, '#e75480');
+    });
+  }
+  function isleProps(P, I, rt) {
+    var D = I.doc; if (D && D.prop) { var g = binGeo(D.prop); docMat(P, D.prop.x + Math.floor(g.w / 2), g.lip - 2, D.attr, D, rt); }
+    var G = I.gacha; if (G && G.prop) { var g2 = binGeo(G.prop); gachaMach(P, G.prop.x + Math.floor(g2.w / 2) + 4, g2.lip - 2, G, rt); }
+    var K = I.cups; if (K && K.prop && !(I.pour && I.pour.prop === K.prop)) { var g3 = binGeo(K.prop); cups3(P, K.prop.x + Math.floor(g3.w / 2), g3.lip - 2, K.kinds || []); }
   }
   function isleDraw(P, S) {
     var I = S.state && S.state.isle; if (!I) return;
@@ -1681,7 +1740,7 @@
       P.a(0.5, function () { c.spans.forEach(function (q) { P.r(q[1], q[0], q[2] - q[1], 1, '#140c06'); }); });
     });
     (I.cells || []).forEach(function (c) {
-      if (c.slip || c.pour || !c.prop) return;
+      if (c.slip || c.pour || c.prop2 || !c.prop) return;   // prop2＝這格畫小道具（I-3b 清潔墊、轉蛋機、三杯），不畫圖示
       var g = binGeo(c.prop), cx = c.prop.x + Math.floor(g.w / 2), cy = g.lip - 9 - (c.went ? 0 : c.open ? 3 + bob : bob);
       isleBadge(P, cx, cy, c.rows, { off: c.went, open: c.open });
     });
@@ -1689,9 +1748,10 @@
     if (Q && Q.prop && Q.at != null) {
       var tq = Math.max(0, rt - Q.at), gq = binGeo(Q.prop), al = tq > 2.6 ? Math.max(0, 1 - (tq - 2.6) / 0.6) : 1;
       var cxq = Q.prop.x + Math.floor(gq.w / 2), byq = gq.lip - 2;
-      P.a(al, function () { teaCup(P, cxq, byq, Q.rm ? 1 : Math.min(1, tq / 0.9), tq, Q.rm); });
+      P.a(al, function () { teaCup(P, cxq, byq, Q.rm ? 1 : Math.min(1, tq / 0.9), tq, Q.rm, Q.kind); });
       if (!Q.rm && tq >= 0.95 && tq < 1.4) spark(P, cxq + 6, byq - 15, 'small');
     }
+    isleProps(P, I, rt);                                            // 第 I 波 I-3b：清潔墊、轉蛋機、三杯
     var L = I.slips; if (!L || !L.prop) return;
     var g2 = binGeo(L.prop), n = Math.max(1, Math.min(3, L.total | 0 || 3)), x0 = L.prop.x + Math.floor(g2.w / 2) - Math.floor((n * SW + (n - 1) * 2) / 2), base = g2.lip - SH - 2;
     for (var i = 0; i < n; i++) {
@@ -1760,5 +1820,5 @@
 
   window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, duelDeckGeo: duelDeckGeo, counterGeo: counterGeo,
     EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign, sleeveBack: sleeveBack,
-    MK_ICON: MK_ICON, isleDraw: isleDraw };   // 第 I 波 I-3a：市集新圖示（籤、飲料；stalls.js 攤位格、ui.js 來客條共用）、島台小道具
+    MK_ICON: MK_ICON, GACHA_ROWS: GACHA_ROWS, isleDraw: isleDraw };   // GACHA_ROWS：I-3b 小物攤面板的轉蛋機   // 第 I 波 I-3a：市集新圖示（籤、飲料；stalls.js 攤位格、ui.js 來客條共用）、島台小道具
 })();

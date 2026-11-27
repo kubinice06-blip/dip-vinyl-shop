@@ -208,3 +208,100 @@ button.st-sleeve.back{cursor:pointer;}
   .lb-sheet.stall.st-mk .st-foot{position:-webkit-sticky;position:sticky;}
 }
 @media (prefers-reduced-motion:reduce){.st-moon.drop,.st-slip.st-turn{animation:none;}}
+/* ---------- 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.4-5；newStalls）＋算命攤心情題（店主 11-23） ---------- */
+/* 唱片醫生：上方一列（聽膩的、這一輪新到的；點了換清潔墊上那張）＋清潔墊（選中那張放大）＋洗／重壓（重壓先選軸） */
+.lb-sheet.st-mk .st-drow{flex:none;display:flex;gap:6px;overflow-x:auto;margin-top:4px;padding:1px 1px 3px;scrollbar-width:none;}   /* flex:none：面板是直排 flex，捲動容器會被壓扁（封面被裁） */
+.lb-sheet.st-mk .st-drow::-webkit-scrollbar{display:none;}
+.st-dmini{position:relative;flex:none;width:44px;height:44px;padding:2px;border:1px solid var(--line,#ccc);background:#fff;cursor:pointer;line-height:0;}
+.st-dmini .lb-cv{width:38px;height:38px;}
+.st-dmini.on{padding:1px;border:2px solid var(--gold);box-shadow:0 0 0 1px var(--ink);}
+.st-dmini .wn,.st-dmini .nw{position:absolute;left:0;top:0;z-index:5;font:700 10px/13px var(--zh);color:#fff;background:var(--red);padding:0 2px;pointer-events:none;}
+.st-dmini .nw{background:var(--ink);}
+.st-ptag{position:absolute;right:0;top:0;z-index:5;font:700 10px/13px var(--zh);color:#fff;background:var(--gold-ink);padding:0 2px;pointer-events:none;}
+.st-mat{display:flex;align-items:center;gap:10px;margin-top:4px;padding:5px 8px;background:#e7f2ea;border:1px solid var(--win);}
+.st-mat .cvw{position:relative;flex:none;line-height:0;}
+.st-mat .cvw .lb-cv{width:50px;height:50px;}
+.st-mat .tx{min-width:0;display:flex;flex-direction:column;gap:2px;}
+.st-mat .tx b{font-size:13px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.st-mat .tx small{font-size:11px;line-height:1.3;color:var(--gray2);}
+.st-dact{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px;}
+.st-dbtn{flex-direction:column;gap:1px;min-height:50px;padding:4px 6px;}
+.st-dbtn b{font-size:14px;line-height:1.3;}
+.st-dbtn small{font-size:11px;font-weight:400;line-height:1.3;}
+.st-dmsg{margin:4px 0 0;font-size:13px;font-weight:700;color:var(--win);}
+.st-dmsg small{margin-left:8px;font-size:12px;font-weight:400;color:var(--gray2);}   /* 「這一次還能做 n 件事」跟在做完那句後面（375×548 面板 ≤55%） */
+.st-dq{margin:6px 0 4px;font-size:13px;font-weight:700;}
+.st-dax{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;}
+.st-dax .lb-btn{min-height:44px;padding:4px 6px;font-size:13px;}
+.st-dleft{margin:4px 0 0;}
+.stars b.pz{box-shadow:inset 0 -2px 0 #e9c35a;}   /* 重壓加過的那軸（星數已經加好） */
+/* 飲料攤一排三杯（冬瓜茶、熱美式、高粱）；手上那杯寫在聲望那行後面 */
+.st-cups3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:6px;}
+.st-cup3{flex-direction:column;justify-content:flex-start;gap:1px;min-height:88px;padding:6px 4px;text-align:center;}
+.st-cup3 .ic{line-height:0;padding:2px;background:#fff;border-radius:3px;}
+.st-cup3 b{font-size:14px;line-height:1.3;}
+.st-cup3 .pr{font:700 12px/1.3 var(--mono);}
+.st-cup3 small{font-size:11px;font-weight:400;line-height:1.35;}
+.st-cup3 small.sw{color:var(--red);}
+.lb-btn.pri.st-cup3 small.sw{color:#ffb3bb;}
+/* 小物攤：左＝配件兩件（I-3a 那排）、右＝轉蛋機（投幣：點搖桿 → 晃 → 蛋掉出來 → 點蛋打開，停住） */
+.st-gear2{display:grid;grid-template-columns:minmax(0,1fr) 112px;gap:8px;align-items:start;margin-top:4px;}
+.st-gear2 .st-rrow{flex-wrap:wrap;}
+.st-gacha{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;}
+.st-gacha.solo{flex-direction:row;justify-content:center;align-items:center;gap:14px;margin-top:6px;}
+.st-gacha.solo .st-gc{width:auto;max-width:200px;align-items:flex-start;}
+.st-gm{position:relative;flex:none;width:56px;height:90px;line-height:0;}
+.st-gm .st-gpx{display:block;image-rendering:pixelated;}
+.st-gm .st-gbox{display:block;width:56px;height:70px;background:#c11628;border:2px solid var(--ink);border-radius:20px 20px 0 0;}
+.st-gm.spin .st-gpx,.st-gm.spin .st-gbox{animation:stGShake .65s linear;}
+@keyframes stGShake{0%,100%{transform:none;}20%{transform:translateX(-2px) rotate(-2deg);}40%{transform:translateX(2px) rotate(2deg);}60%{transform:translateX(-2px) rotate(-1deg);}80%{transform:translateX(1px);}}
+.st-coin{position:absolute;left:9px;top:28px;width:8px;height:8px;border-radius:50%;background:#f0c75e;box-shadow:0 0 0 1px #8a6508;animation:stCoin .35s ease-in forwards;}
+@keyframes stCoin{0%{transform:translateY(-24px);opacity:1;}100%{transform:translateY(16px);opacity:0;}}
+.st-egg{position:absolute;left:-4px;top:46px;width:44px;height:44px;min-width:44px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center;}
+.st-egg i{display:block;width:26px;height:26px;border-radius:50%;border:2px solid var(--ink);background:linear-gradient(var(--eg,#c11628) 0 50%,#f3ead6 50%);box-shadow:0 0 0 3px #fff1c2,0 0 8px 3px rgba(240,199,94,.7);}
+.st-egg.e-r{--eg:#c11628;} .st-egg.e-b{--eg:#1f5fae;} .st-egg.e-y{--eg:#f0c75e;} .st-egg.e-n{--eg:#2e7d52;} .st-egg.e-m{--eg:#e75480;} .st-egg.e-c{--eg:#3fb6c9;}
+.st-egg.drop i{animation:stEgg .4s ease-out;}
+.st-egg:not(.drop) i{animation:stEggBob 1.4s ease-in-out infinite;}
+@keyframes stEgg{0%{transform:translate(10px,-18px) scale(.5);}70%{transform:translateY(3px);}100%{transform:none;}}
+@keyframes stEggBob{0%,100%{transform:none;}50%{transform:translateY(-2px);}}
+.st-gc{display:flex;flex-direction:column;align-items:center;gap:3px;width:100%;}
+.st-lever{width:100%;gap:6px;padding:4px 6px;font-size:13px;line-height:1.25;}
+.st-lever .kn{position:relative;flex:none;width:14px;height:14px;border-radius:50%;background:#d8d8d8;border:2px solid #111;box-sizing:border-box;}
+.st-lever .kn::after{content:'';position:absolute;left:4px;top:-2px;width:2px;height:14px;background:#111;}
+.st-gtip{margin:0;font-size:11px;line-height:1.35;color:var(--gray2);text-align:center;}
+.st-gtip.on{font-size:12px;font-weight:700;color:var(--ink);}
+.st-gres{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;line-height:1.35;}
+.st-gres .v{flex:none;line-height:0;}
+.st-gres .v .lb-cv{width:32px;height:32px;}
+.st-gres.c-ouch,.st-gres.c-bump{color:var(--red);}
+/* 算命攤心情題：翻每一張之前先問一題（2×2 四個選項，每顆 ≥44）；三題答完：第 3 張那一行＋心情＋一張專輯＋一段原文 */
+.st-slips.one{margin-top:4px;}
+.st-slips.cmp .st-slip{min-height:36px;padding-top:1px;padding-bottom:1px;}
+.st-slips.cmp .st-slip .tx>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.st-slips.cmp .st-sleeve,.st-slips.cmp .st-sleeve.cv .lb-cv{width:32px;height:32px;}
+.st-mood{margin-top:6px;}
+.st-mood .ld{margin:0;display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 8px;font-size:12px;line-height:1.4;color:var(--gray2);}
+.st-mood .ld .warn{font-size:11px;color:var(--red);}
+.st-mood .qq{margin:2px 0 6px;font-size:14px;font-weight:700;line-height:1.45;}
+.st-mopts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+.st-mo{justify-content:flex-start;min-height:44px;padding:4px 8px;font-size:13px;line-height:1.35;text-align:left;}
+.st-moodr{margin-top:6px;padding:6px 8px;background:#f5f0fa;border:1px solid #6a3fa0;}
+.st-moodr .is{margin:0;font-size:13px;font-weight:700;line-height:1.4;color:#5a2f8f;}
+.st-moodr .pk{display:flex;align-items:center;gap:8px;margin-top:4px;}
+.st-moodr .pk .lb-cv{width:36px;height:36px;}
+.st-moodr .pk .tx{min-width:0;display:flex;flex-direction:column;}
+.st-moodr .pk b{font-size:13px;line-height:1.35;}
+.st-moodr .pk small{font-size:11px;line-height:1.35;color:var(--gray2);}
+.st-moodr .ps{margin:6px 0 0;font-size:13px;line-height:1.6;}
+@media (max-height:620px){
+  .st-mat{padding:3px 6px;}
+  .st-mat .cvw .lb-cv{width:44px;height:44px;}
+  .st-dbtn{min-height:46px;}
+  .st-cup3{min-height:80px;padding:4px 3px;}
+  .st-mood .qq{margin-bottom:4px;font-size:13px;}
+  .st-moodr{padding:4px 6px;}
+  .st-moodr .ps{margin-top:3px;font-size:12px;line-height:1.45;}
+  .st-moodr .pk{margin-top:2px;}
+  .st-moodr .pk .lb-cv{width:32px;height:32px;}
+}
+@media (prefers-reduced-motion:reduce){.st-gm.spin .st-gpx,.st-gm.spin .st-gbox,.st-coin,.st-egg i,.st-egg.drop i{animation:none;}}
