@@ -1692,7 +1692,7 @@
         fortune: { price: [0, 1000, 2000], omen: 0.25, omenAtk: 1, pool: ['boss', 'elite', 'aces', 'top'] },
         drinks: { tea: { hp: 2, price: 0 }, coffee: { def: 1, n: 3, price: 1500 }, sorghum: { atk: 1, n: 2, pen: 1, price: 2000 } }, studioMax: 3,
         // 第 I 波 I-3b 市集新攤（SPEC-I §6.3；契約 wave-i/build3b/CONTRACT.md）：newStalls＝唱片醫生、飲料攤的熱美式／高粱、小物攤的轉蛋機一起開關
-        //   （施工期間 false＝一切逐字 I-3a；?newstalls=1／sim --newstalls on 試玩）。關著時 doctor、gacha、drinks 的 coffee／sorghum 一個都不讀
+        //   （11-27 出貨 true；engine 預設 false＝一切逐字 I-3a；?newstalls=0／sim --newstalls off 看關著的樣子）。關著時 doctor、gacha、drinks 的 coffee／sorghum 一個都不讀
         //   doctor 唱片醫生：w 權重（每趟第 from 個市集起才抽得到）；wash＝那張聽膩全清、耐聽回滿；press＝只能壓這一輪新到的（run.lineupFresh）、挑一軸 +star 星（最多到 cap）、
         //     每張 1 次、每趟 pressMax 張；一次進攤最多 acts 個動作
         //   drinks：coffee 熱美式＝接下來 n 位底氣 +def；sorghum 高粱＝接下來 n 位品味 +atk，但每位第一次被剋多扣 pen（跟流派代價同一步、取大不相加）；同時只有一杯在作用（新點的取代舊的）
