@@ -13,6 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { shapeProblems, binsProblems, apexProblems, factionProblems, encoreProblems } from '../tools/check-content.mjs';
+import { sideGolden } from './sides-golden.mjs';
 const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const EN = require(path.join(HERE, '../engine.js'));
@@ -5040,7 +5041,7 @@ section('34 活店切磋（SPEC-H §7／§8／§12.1）：LE1 不出的情況、
     ok(bad === 0 && gold === 0 && n >= 60, 'LE5 3 cards, no gold／apex／packet even with goldAdd .05, wcStats／road untouched', { bad, gold, info: info.slice(0, 3) });
     SUM.le5 = { n, same };
     ok(same / n <= 0.05, 'LE5 ≥95% differ from the main loot row at the same pos', { same, n });
-    ok(EN.fnv1a32(EN.lootRow.toString()) === 3720145004, 'LE5 lootRow source unchanged (fnv of the function text)'); }
+    ok(EN.fnv1a32(EN.lootRow.toString()) === 3859926915, 'LE5 lootRow source unchanged (fnv of the function text)'); }   // SPEC-E §3.3 改 lootRow（第 E 波番外盤：early／full 扣番外盤、保證格、金邊換格）：雜湊照改；「不准碰主線戰利品列」的意義改由 #39 黃金比對守（旗標關＝跟 main 7f855cf77 逐字一樣）
   { // 唱片櫃模式跳過已擁有（o.owned 與 setCtx 兩條路）；包包模式跳過包包裡的
     let bad = 0;
     for (let s = 0; s < 20; s++) {
@@ -6496,6 +6497,195 @@ section('38 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.6、§10；契約 w
     const p1 = EN.lineupPolicy(r, KL), p0 = EN.lineupPolicy(r0, KL), pOff = EN.lineupPolicy(r, KL0), pOff0 = EN.lineupPolicy(r0, KL0);
     ok(J(pOff) === J(pOff0) && p1 && p0, 'newStalls off: lineupPolicy ignores slips', { pOff, pOff0 });
     ok(r.fortune.some(f => f.slip !== 'omen'), 'flipped info slips', r.fortune.map(f => f.slip)); }
+});
+
+section('39 第 E 波番外盤（SPEC-E §6.2；SE10）：旗標關＝跟 main 7f855cf77 逐字一樣（黃金，取代 LE5 原始碼雜湊的意義）、三張貼紙、一場一張、第一次出就亮、原聲帶沒明講、發動那手、結果字不重複算、疊法、sideGate 與九個入口、來源（early／full）、保證格、清倉番外箱、種子、策略、preview＝resolve、存讀檔、fixSides、樂歷 Lv9', () => {
+  EN.setCtx(null);
+  const J = x => JSON.stringify(x);
+  const SS = (c, x) => Object.assign({}, c, { sides: Object.assign({}, C0.sides, { on: true }, x || {}) });   // 番外盤開著的拷貝（x＝覆寫數字）
+  const ALL = ['live', 'ost', 'cover'], LST = C0.sides.list, MAP = C0.sides.map;
+  // ---- 1 旗標關＝逐字不變：改版前的引擎（main 7f855cf77）跑同一串（newRun／lootRow／chestRow／drawLot／bagScore／shopPolicy／thinPolicy／lineupPolicy／整趟到第 22 位）＝2919521275 ----
+  //   content.js 的卡池、客人、數字改了會讓這串變：拿 git show 7f855cf77:game-lab/engine.js 配新的 content 重跑 test/sides-golden.mjs 重算（新引擎旗標關照樣要等於它）
+  { const g0 = sideGolden(EN, C0), h0 = EN.fnv1a32(g0);
+    ok(h0 === 2919521275, 'SE10 flag off: golden battery = main 7f855cf77 (fnv)', h0);
+    ok(EN.fnv1a32(sideGolden(EN, SS(C0))) === h0, 'C.sides.on true but runs without run.sides: same golden');
+    const C1 = Object.assign({}, C0); delete C1.sides; ok(EN.fnv1a32(sideGolden(EN, C1)) === h0, 'content without C.sides: same golden');
+    const r0 = EN.newRun(C0, { seedKey: 'e0', runNo: 2, ace: 'hall', prologue: false, sides: ALL });
+    ok(!('sides' in r0) && EN.sideGate(r0, C0) === 'off', 'flag off: newRun ignores o.sides, gate off'); }
+  // ---- 2 名單與 map ----
+  { eq(Object.keys(MAP).length, 340, 'C.sides.map 340 ids'); ok(ALL.every(t => LST[t].every(id => MAP[id] === t && C0.cards[id] && !C0.cards[id].tier)), 'list ↔ map, all real non-apex cards');
+    ok(!Object.values(C0.aces).some(id => MAP[id]), 'no 7★ ace is a side'); }
+  const KS = SS(CW), KSM = SS(Object.assign({}, C0, { cards: CARDS, bins: BINS }));   // KS：C 波二選一、上場制關；KSM：出貨設定（市集、新攤、上場制）＋番外盤
+  const newS = (sk, K, o) => EN.newRun(K || KS, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false, sides: ALL }, o || {}));
+  const top = (t, k) => LST[t].map(id => C0.cards[id]).filter(c => !C0.bargain.pool.includes(c.id)).sort((a, b) => EN.power(b) - EN.power(a) || (a.id < b.id ? -1 : 1))[k || 0].id;
+  // ---- 3 sideGate／sidesOn ----
+  { const r = newS('g1'); eq(r.sides, ALL, 'run.sides'); eq(EN.sideGate(r, KS), 'early', 'pos 1: early'); r.pos = 6; eq(EN.sideGate(r, KS), null, 'pos 6: open');
+    r.bag.push(top('live'), top('ost')); eq(EN.sideGate(r, KS), 'full', 'two in bag: full'); eq(EN.sideCount(r, KS), 2, 'sideCount 2');
+    const r2 = newS('g2', KS, { sides: ['live', 'nope', 'live'] }); eq(r2.sides, ['live'], 'unknown kinds dropped, deduped'); ok(EN.runSideOf(r2, KS, top('ost')) === null && EN.runSideOf(r2, KS, top('live')) === 'live', 'runSideOf only opened kinds'); }
+  // ---- 4 規則（擺好的對決；貼紙表直接掛在 st.p.sides） ----
+  const NT = {}; for (const t of ALL) NT[t] = C0.sides.kinds[t].note;
+  const arm = (d, sides, o) => { d.p.sides = sides; d.p.sideUsed = {}; d.p.sideOff = (o && o.early) ? 'early' : null; d.sideText = J(NT) && JSON.parse(J(NT)); d.sideNum = { live: 1, ost: 1, cover: 2 }; d.sidePer = (o && o.per) || 1; d.stats.side = { lit: 0, hit: 0, dE: 0, dP: 0, by: {} }; return d; };
+  const P5 = [mkCard('pc', 4, 2, 1), mkCard('po', 1, 4, 1), mkCard('ph', 1, 1, 4), mkCard('pc5', 5, 1, 1), mkCard('pc3', 3, 1, 1)], E5 = [mkCard('e1', 3, 3, 3), mkCard('e2', 3, 3, 3), mkCard('e3', 3, 3, 3), mkCard('e4', 3, 3, 3), mkCard('e5', 3, 3, 3), mkCard('e6', 3, 3, 3)];
+  const D = (sides, o) => arm(rig([], P5, E5, Object.assign({ pHp: 30, eHp: 40 }, o || {})), sides, o);
+  const pv = (d, act, e) => EN.preview(d, act, e);
+  const hint = (d, h) => { d.plan.hint = Object.assign({ line: 'x' }, h); return d; };
+  const iOf = (d, id) => d.p.hand.findIndex(c => c && c.id === id);
+  { // 現：剋中 +1（排最後一行）、被剋 +1；平手不加
+    const d = D({ po: 'live' }), d0 = D({}), a = { i: iOf(d, 'po'), attr: 'o' }, e = { attr: 'c', star: 3 };
+    const x = pv(d, a, e), x0 = pv(d0, a, e);
+    ok(x.kind === 'counter' && x.toE === x0.toE + 1 && x.side && x.side.t === 'live' && x.side.dE === 1 && x.notes[x.notes.length - 1].text === '現場：多扣 1', 'live counter +1, last note', { x, x0 });
+    const y = pv(d, { i: iOf(d, 'po'), attr: 'o' }, { attr: 'h', star: 3 }), y0 = pv(d0, { i: iOf(d0, 'po'), attr: 'o' }, { attr: 'h', star: 3 });
+    ok(y.kind === 'countered' && y.toP === y0.toP + 1 && y.side.dP === 1 && y.notes.some(n => n.text === '現場：你多扣 1'), 'live countered +1', { y, y0 });
+    const z = pv(d, { i: iOf(d, 'po'), attr: 'o' }, { attr: 'o', star: 4 }); ok(z.kind === 'tie' && z.side && z.side.dE === 0 && z.side.dP === 0 && !z.notes.some(n => n.side), 'tie: lit but no extra, no note', z); }
+  { // 原：明指照實剋中 +1；唬你（你剋中＝拆穿）不加；半指、不露＝warn vague、不加
+    const d = hint(D({ po: 'ost' }), { attr: 'c', kind: 'one' }), a = { i: iOf(d, 'po'), attr: 'o' };
+    const x = pv(d, a, { attr: 'c', star: 3 }); ok(x.kind === 'counter' && x.side.dE === 1 && x.notes.some(n => n.text === '原聲帶：多扣 1'), 'ost honest counter +1', x);
+    const d2 = hint(D({ pc: 'ost' }), { attr: 'c', kind: 'one' }), y = pv(d2, { i: iOf(d2, 'pc'), attr: 'c' }, { attr: 'h', star: 3 });
+    ok(y.kind === 'counter' && y.side.dE === 0, 'ost: caught bluff (he lied) → no extra', y);
+    for (const k of ['half', 'none']) { const d3 = hint(D({ po: 'ost' }), k === 'half' ? { attr: null, kind: 'half', not: 'h' } : { attr: null, kind: 'none' }); const z = pv(d3, a, { attr: 'c', star: 3 });
+      ok(z.kind === 'counter' && z.side.dE === 0 && z.side.warn === 'vague', 'ost on ' + k + ' hint: warn vague, no extra', z); }
+    const d4 = hint(D({ po: 'ost' }), { attr: null, kind: 'half', not: 'h' }); d4.sideHalf = true; ok(pv(d4, a, { attr: 'c', star: 3 }).side.dE === 1 && !pv(d4, a, { attr: 'c', star: 3 }).side.warn, 'ostHalf knob: half honest counts'); }
+  { // 翻：同色比贏 +2、同色比輸你 +2、平手不加、不同色比星不加
+    const d = D({ pc: 'cover' }), a = { i: iOf(d, 'pc'), attr: 'c' };
+    const w = pv(d, a, { attr: 'c', star: 3 }), l = pv(d, a, { attr: 'c', star: 5 }), t = pv(d, a, { attr: 'c', star: 4 });
+    ok(w.kind === 'mirrorWin' && w.side.dE === 2 && w.toE === 1 + 2, 'cover mirror win +2', w); ok(l.kind === 'mirrorLose' && l.side.dP === 2 && l.notes.some(n => n.text === '翻唱：你多扣 2'), 'cover mirror lose you +2', l);
+    ok(t.kind === 'tie' && t.side.dE === 0 && t.side.dP === 0, 'cover tie: none', t);
+    const g = pv(d, a, { attr: 'h', star: 6 }); ok(g.blocked === 'gap' && g.side.dE + g.side.dP === 0, 'cover: blocked (different colour) star fight adds nothing', g); }
+  { // 第一次出就亮（sideUsed 寫在 outcome 之後）＋一場一張（另一張也灰、同一張再出也灰）＋view.side＋perDuel 2
+    const d = D({ po: 'live', pc: 'cover' }), a = { i: iOf(d, 'po'), attr: 'o' };
+    const cl = clashOf(EN.resolveTurn(d, a, { forcedPlay: { i: 0, attr: 'c' } }));
+    ok(cl.side && cl.side.t === 'live' && cl.side.dE === 1 && d.p.sideUsed.po === 1 && d.stats.side.lit === 1 && d.stats.side.hit === 1, 'first side card lights on its first hand (S2)', { side: cl.side, used: d.p.sideUsed });
+    ok(J(d.log[0].side) === J(cl.side), 'log has side');
+    const i2 = iOf(d, 'pc'), v = EN.view(d); ok(v.side && v.side.pc && v.side.pc.off === 'used' && !v.side.pc.used, 'view: other side card greyed (used) after one per duel', v.side);
+    const x = pv(d, { i: i2, attr: 'c' }, { attr: 'c', star: 3 }); ok(!x.side && x.sideOff === 'used', 'other side card: no sticker, sideOff used', x);
+    const d2 = D({ po: 'live', pc: 'cover' }, { per: 2 }); EN.resolveTurn(d2, { i: iOf(d2, 'po'), attr: 'o' }, { forcedPlay: { i: 0, attr: 'c' } });
+    const x2 = pv(d2, { i: iOf(d2, 'pc'), attr: 'c' }, { attr: 'c', star: 3 }); ok(x2.side && x2.side.dE === 2, 'perDuel 2: second card also counts', x2);
+    const d3 = D({ po: 'live' }, { early: true }), x3 = pv(d3, { i: iOf(d3, 'po'), attr: 'o' }, { attr: 'c', star: 3 }); ok(!x3.side && x3.sideOff === 'early' && EN.view(d3).side.po.off === 'early', 'early: grey, sideOff early', x3);
+    // 客人出番外盤＝不算（只看你出的那張）
+    const d4 = D({}), x4 = pv(d4, { i: iOf(d4, 'po'), attr: 'o' }, { attr: 'c', star: 3 }); ok(!x4.side && !x4.sideOff, 'no side on your card → nothing (guest side cards never count)'); }
+  { // 發動頂點卡那手：不算、sideOff apex（sideLive／sideOffWhy 直接驗；整場型之後的手照算在下面）
+    const d = D({ po: 'live' }), pl = { card: d.p.hand[iOf(d, 'po')], attr: 'o', star: 4, ace: false };
+    ok(EN.sideLive(d, pl, { src: 'on', first: true }) === null && EN.sideOffWhy(d, pl, { src: 'on', first: true }) === 'apex', 'apex hand: sticker off (apex)');
+    ok(EN.sideLive(d, pl, { src: 'on', first: false }) === 'live' && EN.sideLive(d, pl, { src: 'hold', first: false }) === 'live', 'duel-type after activation／hold: on'); }
+  // ---- 5 結果字不重複算（CRITIQUE-E M1 四條）：apex d、流派 {n} 跟沒有貼紙時一樣；toE 差＝side.dE ----
+  const apexArm = (d, cardId) => { d.apexMode = true; d.p.ace = mkCard('ax', 7, 1, 1); d.p.ability = EN.abilityOf(C0, cardId); d.p.apexOn = { n: 0 }; d.p.aceUsed = true; d.apexText = { notes: JSON.parse(J(C0.apexTrial.notes || {})), holdNotes: {} }; d.stats.apexAt = 0; d.stats.apexHits = 0; return d; };
+  const facArm = (d, t) => { d.p.fac = t; d.p.fx = EN.facFxOf(C0, { ace: t, fac: { picks: {}, tal: {} } }, t); d.p.facN = {}; d.facNotes = JSON.parse(J(C0.factions.notes || {})); d.stats.fac = {}; return d; };
+  { const g = 'glenn gould|bach: the goldberg variations (1955)', z = 'barney wilen|zodiac';
+    const a1 = apexArm(D({ pc: 'cover' }), g), b1 = apexArm(D({}), g), m1 = { i: iOf(a1, 'pc'), attr: 'c' }, e1 = { attr: 'c', star: 4 };
+    const x1 = pv(a1, m1, e1), y1 = pv(b1, m1, e1);
+    ok(x1.kind === 'mirrorWin' && x1.apex && y1.apex && x1.apex.d === y1.apex.d && x1.toE - y1.toE === x1.side.dE && x1.side.dE === 2, 'M1-1 Gould mirrorPlus + cover: apex d unchanged, +2 on top', { x: x1.apex, y: y1.apex, toE: [x1.toE, y1.toE] });
+    const a2 = apexArm(D({ po: 'live' }), z), b2 = apexArm(D({}), z), m2 = { i: iOf(a2, 'po'), attr: 'o' }, e2 = { attr: 'c', star: 7 };
+    const x2 = pv(a2, m2, e2), y2 = pv(b2, m2, e2);
+    ok(x2.kind === 'counter' && x2.apex.d === y2.apex.d && x2.toE - y2.toE === 1 && x2.side.dE === 1, 'M1-2 Zodiac theirStar + live: apex d unchanged', { x: x2.apex, y: y2.apex });
+    const a3 = facArm(D({ po: 'live' }), 'pearl'), b3 = facArm(D({}), 'pearl'), m3 = { i: iOf(a3, 'po'), attr: 'o' }, e3 = { attr: 'c', star: 5 };
+    const x3 = pv(a3, m3, e3), y3 = pv(b3, m3, e3), n3 = x => (x.notes.find(n => n.fac && n.kind === 'borrow' || n.kind === 'underdog') || {}).n;
+    ok(x3.kind === 'counter' && n3(x3) === n3(y3) && n3(x3) === y3.toE && x3.toE === y3.toE + 1, 'M1-3 pearl borrow + live: {n} excludes the sticker', { x: x3.notes, y: y3.toE });
+    const a4 = facArm(D({ pc5: 'cover' }), 'hall'), b4 = facArm(D({}), 'hall'), m4 = { i: iOf(a4, 'pc5'), attr: 'c' }, e4 = { attr: 'c', star: 3 };
+    const x4 = pv(a4, m4, e4), y4 = pv(b4, m4, e4), n4 = x => (x.notes.find(n => n.fac && n.kind === 'full') || {}).n;
+    ok(x4.kind === 'mirrorWin' && n4(x4) === n4(y4) && n4(x4) != null && x4.toE === y4.toE + 2, 'M1-4 hall full + cover: {n} excludes the sticker, +2 after', { x: x4.notes, y: y4.toE }); }
+  // ---- 6 疊法：防塵套擋到 0 現照 +1；冷門被剋多扣＋現被剋＝多 2；異端比星輸＋翻＝多 3；高粱＋冷門＋現被剋 ----
+  { const d = arm(rig(['dustcover'], P5, E5, { pHp: 30, eHp: 40 }), { po: 'live' }), d0 = rig(['dustcover'], P5, E5, { pHp: 30, eHp: 40 });
+    const x = pv(arm(d, { pc: 'live' }), { i: iOf(d, 'pc'), attr: 'o' }, { attr: 'h', star: 1 }), x0 = pv(d0, { i: iOf(d0, 'pc'), attr: 'o' }, { attr: 'h', star: 1 });
+    ok(x.kind === 'countered' && x0.toP === 0 && x.toP === 1, 'dustcover blocks to 0, live still +1', { x: x.toP, x0: x0.toP });
+    const p = facArm(D({ po: 'live' }), 'pearl'), p0 = facArm(D({}), 'pearl'), q = facArm(D({}, {}), 'pearl'); q.p.fx = Object.assign({}, q.p.fx, { counteredCost: 0 });
+    const y = pv(p, { i: iOf(p, 'po'), attr: 'o' }, { attr: 'h', star: 3 }), yq = pv(q, { i: iOf(q, 'po'), attr: 'o' }, { attr: 'h', star: 3 });
+    ok(y.kind === 'countered' && y.toP === yq.toP + 2, 'pearl countered cost + live countered = +2', { y: y.toP, base: yq.toP });
+    const s = facArm(D({ po: 'live' }), 'pearl'); s.p.drinkPen = 1; s.p.drinkHit = false; s.drinkNote = '{n}'; const s0 = facArm(D({}), 'pearl'); s0.p.drinkPen = 1; s0.p.drinkHit = false; s0.drinkNote = '{n}';
+    const ys = pv(s, { i: iOf(s, 'po'), attr: 'o' }, { attr: 'h', star: 3 }), ys0 = pv(s0, { i: iOf(s0, 'po'), attr: 'o' }, { attr: 'h', star: 3 });
+    ok(ys.toP === ys0.toP + 1 && ys0.toP === yq.toP + 1, 'sorghum ∨ pearl cost (max) + live +1', { ys: ys.toP, ys0: ys0.toP, base: yq.toP });
+    const h = facArm(D({ pc: 'cover' }), 'heresy'), h0 = facArm(D({}), 'heresy');
+    const z = pv(h, { i: iOf(h, 'pc'), attr: 'c' }, { attr: 'c', star: 5 }), z0 = pv(h0, { i: iOf(h0, 'pc'), attr: 'c' }, { attr: 'c', star: 5 });
+    ok(z.kind === 'mirrorLose' && z.toP === z0.toP + 2, 'heresy lose cost + cover lose +2 (=3 over plain)', { z: z.toP, z0: z0.toP }); }
+  // ---- 7 進包包的入口：滿 2 張＝sideFull、run 不變；寄賣＝sideNoConsign ----
+  const L3 = top('cover'), fill2 = r => { r.bag.push(top('live'), top('ost')); r.pos = Math.max(r.pos, 8); r.round = Math.max(r.round, 2); };
+  { const r = newS('in1'); EN.choose(r, KS, EN.bargainPolicy(r, KS)); fill2(r); fwin(r, KS);
+    const p = r.pending; if (ok(p && p.type === 'reward' && p.kind, 'loot pending', p && p.type)) { p.cards[0] = L3; const b = J(r), x = EN.choose(r, KS, { type: 'take', cardId: L3 }); ok(!x.ok && x.error === 'sideFull' && J(r) === b, 'take → sideFull, run unchanged', x.error); }
+    const r2 = newS('in2'); EN.choose(r2, KS, EN.bargainPolicy(r2, KS)); fill2(r2); r2.money = 1e6; const k = Object.keys(r2.shop.bins)[0]; r2.shop.bins[k].unshift(L3);
+    let b = J(r2), x = EN.choose(r2, KS, { type: 'buy', key: k, cardId: L3 }); ok(!x.ok && x.error === 'sideFull' && J(r2) === b, 'buy → sideFull', x.error);
+    r2.shop.bargain.unshift(L3); b = J(r2); x = EN.choose(r2, KS, { type: 'buyBargain', ids: [L3] }); ok(!x.ok && x.error === 'sideFull' && J(r2) === b, 'buyBargain → sideFull', x.error);
+    const r3 = newS('in3'); fill2(r3); r3.pos = 1; r3.round = 1; r3.shop.bargain.unshift(L3); const ids = [L3].concat(r3.shop.bargain.filter(id => id !== L3).slice(0, 2)); b = J(r3);
+    x = EN.choose(r3, KS, { type: 'bargainPick', ids }); ok(!x.ok && x.error === 'sideFull' && J(r3) === b, 'bargainPick → sideFull', x.error);
+    const r4 = newS('in4', KS, { from: 10 }); r4.bag.push(top('live'), top('ost')); if (r4.pending && r4.pending.offer && r4.pending.offer.kind === 'card') { r4.pending.offer.cards[0] = L3; b = J(r4); x = EN.choose(r4, KS, { type: 'draft', cardId: L3 }); ok(!x.ok && x.error === 'sideFull' && J(r4) === b, 'draft → sideFull', x.error); } else ok(false, 'draft offer');
+    const r5 = newS('in5'); EN.choose(r5, KS, EN.bargainPolicy(r5, KS)); fill2(r5); r5.spar = { round: r5.round, pos: r5.pos, who: 'x', state: 'won', mode: 'bag', loot: { cards: [L3], src: ['fill'] } };
+    b = J(r5); x = EN.choose(r5, KS, { type: 'encTake', id: L3 }); ok(!x.ok && x.error === 'sideFull' && J(r5) === b, 'encTake (bag) → sideFull', x.error);
+    r5.spar.mode = 'shelf'; x = EN.choose(r5, KS, { type: 'encTake', id: L3 }); ok(x.ok, 'encTake shelf mode: no limit');
+    // 攤位（C 波 stallAct）：挖寶 take、寄賣
+    const r6 = newS('in6'); EN.choose(r6, KS, EN.bargainPolicy(r6, KS)); fill2(r6); r6.pending = { type: 'stall', after: r6.pos - 1, pos: r6.pos, cp: false, first: false, groups: [['dig']], pick: 0, q: ['dig'], k: 0, post: [], cur: { kind: 'dig', key: 'k', cards: [L3], rolls: 0 }, done: [] };
+    EN.choose(r6, KS, { type: 'stallAct', act: 'nope' });   // stallAct 先建 stats.c（錯的動作照舊會建；跟番外盤無關）
+    b = J(r6); x = EN.choose(r6, KS, { type: 'stallAct', act: 'take', cardId: L3 }); ok(!x.ok && x.error === 'sideFull' && J(r6) === b, 'stallAct take → sideFull', x.error);
+    r6.pending.cur = { kind: 'consign', key: 'k' }; b = J(r6); x = EN.choose(r6, KS, { type: 'stallAct', act: 'consign', cardId: top('live') }); ok(!x.ok && x.error === 'sideNoConsign' && J(r6) === b, 'consign a side card → sideNoConsign', x.error);
+    // 種子：番外盤最多帶 2 張
+    const sd = [top('live'), top('ost'), top('cover'), top('live', 1)], r7 = newS('in7', KS, { seeds: sd, seedMax: 4 });
+    ok(r7.seeds.filter(id => MAP[id]).length === 2 && r7.seeds.length === 2, 'seeds: at most 2 side cards', r7.seeds);
+    const r8 = EN.newRun(KS, { seedKey: 'in8', runNo: 2, ace: 'hall', prologue: false, seeds: sd, seedMax: 4 }); ok(r8.seeds.length === 4, 'seeds without run.sides: no cap', r8.seeds); }
+  // ---- 8 來源：第 1–5 位、滿 2 張不放番外盤 ----
+  { const deck = [top('live'), top('ost'), top('cover'), top('live', 1), top('ost', 1)], duel = { e: { deckIds: deck } };
+    let bad = 0, seen = 0;
+    for (let i = 0; i < 30; i++) {
+      const r = newS('so' + i); r.pos = 3; const a = EN.lootRow(r, KS, duel, [], 3, 'normal', 0); if (a.cards.some(id => MAP[id])) bad++;
+      const c = EN.chestRow(r, KS, duel, [], 5, false); if (c.cards.some(id => MAP[id])) bad++;
+      r.pos = 8; r.round = 2; const b = EN.lootRow(r, KS, duel, [], 8, 'normal', 0); if (b.cards.some(id => MAP[id])) seen++;
+      fill2(r); const f = EN.lootRow(r, KS, duel, [], 9, 'normal', 0); if (f.cards.some(id => MAP[id])) bad++;
+      if (EN.radioPool(r, KS, KS.tunes.order[i % 8]).some(id => MAP[id])) bad++;
+      const r1 = newS('so1-' + i); if ([].concat(...Object.values(r1.shop.lot.bins)).some(id => MAP[id]) || r1.shop.bargain.some(id => MAP[id]) || EN.radioPool(r1, KS, KS.tunes.order[i % 8]).some(id => MAP[id])) bad++;
+    }
+    ok(bad === 0 && seen === 30, 'loot／chest／radio／round-1 lot＋bargain: no side cards when early or full; loot has them when open', { bad, seen });
+    const r2 = newS('so-r2'); r2.pos = 6; r2.round = 2; const lot2 = EN.drawLot(r2, KS); ok([].concat(...Object.values(lot2.bins)).some(id => MAP[id]), 'round 2 lot has side cards (natural)');
+    const dr = newS('so-d', KS, { from: 20 }); ok(dr.pending.offer.kind !== 'card' || !dr.pending.offer.cards.some(id => MAP[id]), 'draft offer: no side cards');
+    // 保證格（旋鈕，預設關）：開著＝他牌組裡總星夠的番外盤放第一格、金邊不換它
+    const KG = SS(CW, { loot: { guard: 'deck', th: 'power' } }); let g1 = 0, gk = 0;
+    for (let i = 0; i < 20; i++) { const r = newS('gd' + i, KG); r.pos = 8; r.round = 2; r.goldAdd = 1; const x = EN.lootRow(r, KG, { e: { deckIds: deck.concat(['x1']) } }, [], 8, 'normal', 0); if (x.src[0] === 'side' && MAP[x.cards[0]]) g1++; if (x.gold.length && x.src[0] === 'side') gk++; }
+    ok(g1 === 20 && gk === 20, 'guard deck: side card in slot 1, gold never replaces it', { g1, gk });
+    const r3 = newS('gd-off'); r3.pos = 8; r3.round = 2; ok(!EN.lootRow(r3, KS, duel, [], 8, 'normal', 0).src.includes('side'), 'guard off by default'); }
+  // ---- 9 清倉番外箱（市集挖寶攤變身）：第一個市集不變身；種類各一＋第 4 張本派招牌；不露顏色、沒有金邊；收／重翻記帳；滿了不變身 ----
+  { const KB = SS(KSM, { dig: { p: 1, min: 6, cap: 10, pick: 5, firstMarket: false } });
+    const go = (r, K) => { for (let g = 0; g < 900 && !r.over; g++) { const st = EN.nextStep(r); if (st === 'stall') return r; if (r.pending) { EN.choose(r, K, EN.cPolicy(r, K, {})); continue; } if (!r.duel) for (const ch of EN.lineupPrep(r, K)) EN.choose(r, K, ch); if (!r.pending && !r.duel && r.lineupDue && EN.runPolicy(r, K)) { EN.choose(r, K, EN.runPolicy(r, K)); continue; } fwin(r, K); } return r; };
+    let first = 0, turned = 0, kindsOk = 0, t4 = 0, n = 0;
+    for (let i = 0; i < 6; i++) {
+      const ace = TIERS[i % 3], r = newS('sb' + i, KB, { ace, digN: 4 }); EN.choose(r, KB, EN.bargainPolicy(r, KB));
+      go(r, KB); if (EN.isMarket(r) && r.pending.first && r.pending.digSide) first++;
+      EN.choose(r, KB, { type: 'stallLeave' });
+      go(r, KB); const p = r.pending; if (!EN.isMarket(r)) continue; n++;
+      if (!p.tiles.includes('dig')) p.tiles.push('dig'); p.digSide = true;
+      r.bag = r.bag.filter(id => !MAP[id]);
+      const x = EN.choose(r, KB, { type: 'stallEnter', kind: 'dig' }); if (!x.ok) continue;
+      const cur = r.pending.cur; if (cur.side && cur.name === 'sideBox' && cur.gold === null) turned++;
+      if (J(cur.cards.slice(0, 3).map(id => MAP[id])) === J(ALL)) kindsOk++;
+      if (cur.cards.length === 4 && MAP[cur.cards[3]] === C0.sides.sign[ace]) t4++;
+      r.money = 1e5; const m0 = r.money; EN.choose(r, KB, { type: 'stallAct', act: 'reroll' }); ok(r.money === m0 - 500 && (r.stats.c.sideBoxReroll | 0) === 1 && r.pending.cur.cards.every(id => MAP[id]), 'sideBox reroll $500, still side cards');
+      const id = r.pending.cur.cards[0]; EN.choose(r, KB, { type: 'stallAct', act: 'take', cardId: id }); ok(r.bag.includes(id) && (r.stats.c.sideBoxTake | 0) === 1 && r.stats.c.sideTake.sideBox === 1, 'sideBox take → bag, counted');
+    }
+    ok(first === 0 && n > 0 && turned === n && kindsOk === n && t4 === n, 'sideBox: not on the first market; one of each kind; 4th = ace sign kind; no gold', { first, n, turned, kindsOk, t4 });
+    const r = newS('sbf', KB); r.pos = 11; r.round = 3; fill2(r); ok(!EN.sideBoxRoll(r, KB, false, 'k'), 'full: never transforms'); }
+  // ---- 10 策略：bagScore 只算期望值最高的那一張；瘦身 keepGap ----
+  { const r = newS('st1'); r.pos = 8; const base = EN.bagScore(KS, r.bag, Object.assign({}, r, { sides: undefined }));
+    const ids = r.bag.concat([top('live'), top('cover')]), off = EN.bagScore(KS, ids, Object.assign({}, r, { sides: undefined })), on = EN.bagScore(KS, ids, r);
+    ok(Math.abs(on - off - C0.sides.ai.ev.live) < 1e-9 && EN.bagScore(KS, r.bag, r) === base, 'bagScore: +max ev (one card) only', { on, off });
+    const low = LST.live.filter(id => EN.peak(C0.cards[id]) <= 3 && !C0.bargain.pool.includes(id)).slice(0, 2), t = newS('st2');
+    EN.choose(t, KS, EN.bargainPolicy(t, KS)); t.pos = 8; t.round = 2; t.bag.push(...low); const strong = Object.keys(C0.cards).filter(id => !C0.cards[id].tier && !MAP[id] && EN.peak(C0.cards[id]) >= 5).slice(0, 6); t.bag.push(...strong);
+    const sell = EN.thinPolicy(t, KS); ok(low.length === 2 && sell.length >= 1 && sell.filter(c => MAP[c.cardId]).length === 1, 'thinPolicy keepGap: sells exactly one weak side card', sell); }
+  // ---- 11 preview＝resolve：真的開打（包包三種番外盤各一、第 8 位起）每一手每個動作；存讀檔中途照打 ----
+  { let checked = 0, bad = 0, lit = 0, saved = 0;
+    for (let s = 0; s < (QUICK ? 10 : 40); s++) {
+      const r = newS('pr' + s, KSM, { ace: TIERS[s % 3] }); EN.choose(r, KSM, EN.bargainPolicy(r, KSM));
+      for (const t of ALL) r.bag.push(top(t, s % 3)); r.pos = 8; r.round = 2; r.idx = 2;
+      const f = EN.startFight(r, KSM, {}), duel = f.duel; if (!duel.p.sides) { bad++; continue; }
+      let g = 0; const R = lcg(s + 3);
+      while (!duel.over && g++ < 12) {
+        const acts = EN.legalActions(duel), eSide = { i: duel.plan.idx, attr: duel.plan.attr };
+        for (const a1 of acts) { const p1 = EN.preview(duel, a1, eSide), c2 = JSON.parse(J(duel)), cl = clashOf(EN.resolveTurn(c2, a1)); checked++; if (J([sig(p1), p1.side || null]) !== J([sig(cl), cl.side || null])) bad++; }
+        const sides = acts.filter(a => !a.ace && duel.p.sides[duel.p.hand[a.i].id]), a2 = sides.length && R() < 0.7 ? sides[0] : acts[Math.floor(R() * acts.length)];
+        if (g === 2) { const c3 = JSON.parse(J(duel)), e1 = EN.resolveTurn(duel, a2), e2 = EN.resolveTurn(c3, a2); if (J(e1) === J(e2)) saved++; else bad++; }
+        else EN.resolveTurn(duel, a2);
+      }
+      lit += duel.stats.side.lit; if (duel.stats.side.lit > 1) bad++;
+    }
+    ok(bad === 0 && checked > 200 && lit > 0 && saved > 0, 'real fights with side cards: preview = resolve; one sticker per duel; JSON round trip', { checked, bad, lit, saved }); }
+  // ---- 12 fixSides、樂歷 Lv9（C.sides.on 才列） ----
+  { const r = { sides: ['live', 'zz'], pending: { digSide: 1, cur: { side: 'y' } } }; ok(EN.fixSides(r, KS) && J(r.sides) === J(['live']) && !('digSide' in r.pending) && !('side' in r.pending.cur), 'fixSides cleans', r);
+    const r2 = { sides: 'live' }; EN.fixSides(r2, KS); ok(!('sides' in r2), 'fixSides drops a non-array');
+    ok(!EN.ladderList(C0, 20).some(L => L.key === 'sides'), 'flag off: no Lv9 ladder row'); eq(EN.ladderAt(SS(C0), 9).map(L => L.key), ['sides'], 'flag on: Lv9 opens sides');
+    ok(C0.career.ui.ladder.sides && C0.waveC.stations.sideBox && C0.waveC.stationLines.sideBox, 'names for ladder row and sideBox'); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

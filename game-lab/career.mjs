@@ -12,6 +12,8 @@
 //       --treepol even（預設）＝照 TREE_ORDER 先點得起的（甲 I→乙 I→甲 II→乙 II→深耕 1→乙 III→深耕 2→深耕 3）；off＝不點樹（＝棒二的 --fac）
 //   --tierpol climb（第 D 波棒三；SPEC-D §5.1、§8.3 T-4）：試煉階級照 trialRecord 開（打倒第 20 位藏家開下一階）；每趟挑「開到最高那階」，上一趟沒走到第 21 位就退一階。
 //     樂歷照 careerGain tier（×(1＋0.1k)）。多印每趟平均挑第幾階、開到第幾階、那一趟的過關率（到第 21 位）
+//   --sides on|off（第 E 波番外盤；SPEC-E §5、SE9）：on＝C.sides.on＋帳號開局前到樂歷階梯 sides 那一級（Lv9）的那一趟起 newRun sides（ui createRun 照樂歷給；對照組 --control 不給）。
+//     沒給＝跟 content（E-1 期間 false）；關著時一字不差。--sideset '<json>'＝deep-merge 進 C.sides（調數字）
 //   一個 career＝一個新帳號（ui createRun／recordRun 的跨趟規則）：
 //     第 1 趟打序章（沒有天賦、沒有種子、沒有配件）；之後不打。上一趟沒到第 10 位（含第 1 趟）＝新手保底（safety）。
 //     配件跨趟帶（save.relics＝上一趟最後 3 件）、最遠紀錄（bestFar：攤位解鎖、破紀錄）、寶箱保底計數（chestDry）跨趟帶。
@@ -66,7 +68,15 @@ if (GATE != null) {                                                   // 試算�
   const K = EN.careerCfg(C);
   C.career.talents = K.talents.map(T => ['atk', 'def', 'hp', 'xp', 'rare'].includes(T.id) ? Object.assign({}, T, { open: GATE }) : T);
 }
+// 第 E 波番外盤（--patch 之後套）
+const SD_ARG = arg('sides', null);
+if (SD_ARG != null && !['on', 'off'].includes(SD_ARG)) { console.error('--sides on|off'); process.exit(2); }
+if (SD_ARG && C.sides && typeof C.sides === 'object') C.sides.on = SD_ARG === 'on';
+if (arg('sideset', null)) { if (!(C.sides && C.sides.on)) { console.error('--sideset 要 --sides on'); process.exit(2); } deepMerge(C.sides, JSON.parse(arg('sideset'))); }
+const SIDES_ON = !!(C.sides && typeof C.sides === 'object' && C.sides.on);
+const SIDE_KINDS = SIDES_ON ? Object.keys(C.sides.kinds || {}) : [];
 const K = EN.careerCfg(C);
+const SIDE_LV = SIDES_ON ? ((K.ladder || []).find(l => l.key === 'sides') || { lv: 9 }).lv : null;   // 樂歷階梯 sides 那一級（content；沒有＝9）
 const POWER = ['atk', 'def', 'hp'];
 const ok = (r, who, ch) => { if (!r || !r.ok) throw new Error(who + ' ' + (r && r.error) + ' ' + JSON.stringify(ch)); };
 const lvOf = cr => EN.careerLevel(C, cr.xp).level;
@@ -142,6 +152,7 @@ function oneRun(pol, c, r, cr) {
   if (TREE && !prologue && !CONTROL) { const tal = EN.treeArgs(C, cr, ace); if (Object.keys(tal).length) o.facTal = tal; }   // 棒三派樹（ui createRun：序章那一趟不給）
   const args = prologue || CONTROL ? {} : EN.talentArgs(C, cr);       // ui createRun：序章那一趟不給
   Object.assign(o, args);
+  if (SIDES_ON && !prologue && !CONTROL && lvOf(cr) >= SIDE_LV) o.sides = SIDE_KINDS.slice();   // 第 E 波：樂歷 Lv9 起的那一趟有番外盤
   const smax = args.seedMax || CFG.seedMax;
   if (!prologue && SEEDS) o.seeds = EN.seedPolicy(C, [...cr.owned], smax, smax);
   const run = EN.newRun(C, o);
@@ -186,7 +197,7 @@ const q = (a, p) => { const s = a.slice().sort((x, y) => x - y); return s[Math.m
 const mean = a => a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
 const SHOW = [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50];
 const t0 = Date.now();
-const report = { args: argv, NC, NR, CAP, control: CONTROL, gate: GATE, spend: SPEND, money: MONEY, seeds: SEEDS, keep: KEEP, tier: TIER, ace: ACE, fac: FAC, first: FIRST, treepol: TREE ? TREEPOL : null, tierpol: TIERPOL,
+const report = { args: argv, ...(SIDES_ON ? { sides: { lv: SIDE_LV, kinds: SIDE_KINDS } } : {}), NC, NR, CAP, control: CONTROL, gate: GATE, spend: SPEND, money: MONEY, seeds: SEEDS, keep: KEEP, tier: TIER, ace: ACE, fac: FAC, first: FIRST, treepol: TREE ? TREEPOL : null, tierpol: TIERPOL,
   career: { lexp: K.lexp, curve: K.curve, talents: K.talents.filter(t => !t.soon), ladder: K.ladder.filter(l => !l.soon) }, guestHpSteps: C.trial.guestHpSteps, pols: {} };
 const pf = arg('progress', null);                                       // 進度：每個策略跑完寫一行（容器重啟時看跑到哪）
 for (const pol of POLS) {

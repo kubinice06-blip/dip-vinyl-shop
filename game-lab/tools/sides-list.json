@@ -1,0 +1,2053 @@
+{
+ "meta": {
+  "what": "第 E 波番外盤名單（SPEC-E §1.5）：唯一的真名單。只有 id＋type 是名單；why／src 給維護的人看、不上畫面。改名單只改這份，再跑 node tools/bake-sides.mjs 寫進 content.js",
+  "types": {
+   "live": "現場盤",
+   "ost": "原聲帶",
+   "cover": "翻唱盤"
+  },
+  "from": "scratchpad v5/wave-e/bangai-pool.json（SPEC-E 定稿 340 張；主線裁定 R1–R10）"
+ },
+ "items": [
+  {
+   "id": "angélique kidjo|remain in light",
+   "type": "cover",
+   "why": "MB：8 首全是 Talking Heads／Eno 寫的《Remain in Light》原曲，全標 cover",
+   "src": "https://musicbrainz.org/release-group/144784f0-b9f3-4d59-a488-26cd75c86d0d"
+  },
+  {
+   "id": "barry harris|barry harris plays tadd dameron",
+   "type": "cover",
+   "why": "MB 曲目 8 首全是 Tadd Dameron 的作品（Hot House、Lady Bird、Our Delight、If You Could See Me Now…），盤…",
+   "src": "https://musicbrainz.org/release/9e2160cd-d741-4726-8eb4-b4a9312a9dbb"
+  },
+  {
+   "id": "björk|gling-gló",
+   "type": "cover",
+   "why": "MB：16 首全是別人的歌（冰島老流行歌＋Irving Berlin、Kern 等美國標準曲），Björk 跟爵士三重奏合作",
+   "src": "https://musicbrainz.org/release-group/7b0e60ce-ad06-3578-ad5e-5d5ca4353379"
+  },
+  {
+   "id": "café tacvba|avalancha de éxitos",
+   "type": "cover",
+   "why": "8 首全翻唱其他拉丁語系歌手的歌（Juan Luis Guerra〈Ojalá Que Llueva Café〉、Leo Dan、Botellita de Jerez、Bola…",
+   "src": "https://en.wikipedia.org/wiki/Avalancha_de_%C3%89xitos"
+  },
+  {
+   "id": "carmen mcrae|carmen sings monk",
+   "type": "cover",
+   "why": "13 首全是 Monk 的曲子填上詞（Get It Straight＝Straight, No Chaser 等）",
+   "src": "https://en.wikipedia.org/wiki/Carmen_Sings_Monk"
+  },
+  {
+   "id": "diamanda galás|the singer",
+   "type": "cover",
+   "why": "10 首都是別人的歌或傳統聖歌：Willie Dixon 兩首、Screamin' Jay Hawkins〈I Put a Spell on You〉、Blind Lemon …",
+   "src": "https://en.wikipedia.org/wiki/The_Singer_(Diamanda_Gal%C3%A1s_album)"
+  },
+  {
+   "id": "dr. john|dr. john's gumbo",
+   "type": "cover",
+   "why": "MB：12 首裡 10 首是 Earl King、Huey Smith、Professor Longhair 等人的紐奧良 R&B 老歌或傳統曲（多數標 cover），只有 1…",
+   "src": "https://musicbrainz.org/release-group/d05e634f-6132-3c72-ae1e-0590fc1b99d0"
+  },
+  {
+   "id": "dr. john|goin' back to new orleans",
+   "type": "cover",
+   "why": "MB：18 首裡至少 13 首是 Jelly Roll Morton、W.C. Handy、Fats Domino、Joe Liggins 等人的歌或傳統曲（多數標 cover…",
+   "src": "https://musicbrainz.org/release-group/566a445d-3c92-3b5d-a400-cae99c6fd5b5"
+  },
+  {
+   "id": "duke ellington|...and his mother called him bill",
+   "type": "cover",
+   "why": "MB：12 首都是 Billy Strayhorn 的曲子（1967 RCA 錄音室，Strayhorn 過世三個月後錄的悼念盤）",
+   "src": "https://musicbrainz.org/release-group/90c99d9c-c15d-3a3c-bd51-a00452ebce25"
+  },
+  {
+   "id": "ella fitzgerald|ella fitzgerald sings the george and ira gershwin song book",
+   "type": "cover",
+   "why": "1959 錄音，整套幾乎全是 George＆Ira Gershwin 的歌（只有兩首另有合寫人），「歌本」系列就是以作曲家致敬為賣點",
+   "src": "https://en.wikipedia.org/wiki/Ella_Fitzgerald_Sings_the_George_and_Ira_Gershwin_Songbook"
+  },
+  {
+   "id": "enrico rava|italian ballads",
+   "type": "cover",
+   "why": "MB 曲目 15 首幾乎都是別人的義大利旋律：Nino Rota 的電影主題（大路、鬼迷茱麗）、Puccini 詠嘆調、Gino Paoli〈Il cielo in una s…",
+   "src": "https://musicbrainz.org/release/9f9c8282-3a24-4122-999a-bb786f10aaff"
+  },
+  {
+   "id": "eric clapton|from the cradle",
+   "type": "cover",
+   "why": "16 首全翻唱藍調老歌（Leroy Carr、Willie Dixon、Muddy Waters、Freddie King…），沒有 Clapton 自作，維基明寫是藍調翻唱盤",
+   "src": "https://en.wikipedia.org/wiki/From_the_Cradle"
+  },
+  {
+   "id": "gregory porter|nat \"king\" cole & me",
+   "type": "cover",
+   "why": "MB：15 首裡 14 首是 Nat King Cole 唱紅的歌（Mona Lisa、Nature Boy、L-O-V-E…），只有 1 首自寫",
+   "src": "https://musicbrainz.org/release-group/bb075045-fa2c-459d-a6bd-26a2850ddc5c"
+  },
+  {
+   "id": "joe henderson|so near, so far (musings for miles)",
+   "type": "cover",
+   "why": "10 首裡 9 首是 Miles Davis 的作品（Miles Ahead、Flamenco Sketches、Milestones…），盤名副標 Musings for M…",
+   "src": "https://en.wikipedia.org/wiki/So_Near,_So_Far_(Musings_for_Miles)"
+  },
+  {
+   "id": "joe pass|for django",
+   "type": "cover",
+   "why": "10 首裡 4 首是 Django Reinhardt 的作品（Nuages、Fleur d'Ennui、Cavalerie、Django's Castle），另有 John …",
+   "src": "https://en.wikipedia.org/wiki/For_Django"
+  },
+  {
+   "id": "johnny cash|american iv: the man comes around",
+   "type": "cover",
+   "why": "MB：15 首裡 12 首是別人寫的或傳統曲（Hurt、Personal Jesus、Bridge Over Troubled Water、In My Life…），只有 3 …",
+   "src": "https://musicbrainz.org/release-group/aca4ccc8-5d1b-361e-ab21-396b2c6d42d3"
+  },
+  {
+   "id": "lady gaga|cheek to cheek",
+   "type": "cover",
+   "why": "MB：18 首全是美國標準曲（Porter、Berlin、Gershwin、Ellington…），幾乎全標 cover",
+   "src": "https://musicbrainz.org/release-group/7815e9a2-4a1c-4bf3-b8d3-48a794090218"
+  },
+  {
+   "id": "laibach|let it be",
+   "type": "cover",
+   "why": "MB：10 首是 Lennon/McCartney、Harrison 寫的 Beatles《Let It Be》曲目，全標 cover（〈Maggie Mae〉換成德國民謠）",
+   "src": "https://musicbrainz.org/release-group/c9a247e3-0cb9-3f9c-a3f2-c6670831f78a"
+  },
+  {
+   "id": "louis armstrong|louis armstrong plays w.c. handy",
+   "type": "cover",
+   "why": "MB：11 首全是 W.C. Handy 的歌",
+   "src": "https://musicbrainz.org/release-group/3c6e5005-cad2-4444-825f-71e4b8324d51"
+  },
+  {
+   "id": "louis armstrong|satch plays fats",
+   "type": "cover",
+   "why": "MB：9 首全是 Fats Waller 的歌，盤全名《Satch Plays Fats: A Tribute to the Immortal Fats Waller》",
+   "src": "https://musicbrainz.org/release-group/e67a8008-e2a1-3df0-95d5-81c30c319175"
+  },
+  {
+   "id": "maceo parker|roots revisited",
+   "type": "cover",
+   "why": "MB：8 首裡 6 首是別人的歌（Ray Charles、Mingus、Curtis Mayfield、Sly Stone、Over the Rainbow、Jumpin' t…",
+   "src": "https://musicbrainz.org/release-group/a844292c-434d-3205-8a5f-5fe0c3e4737a"
+  },
+  {
+   "id": "michael bublé|crazy love",
+   "type": "cover",
+   "why": "13 首裡只有 Haven't Met You Yet、Hold On 是 Bublé 合寫，其餘 11 首是別人的歌（標準曲＋Van Morrison、Eagles、Bill…",
+   "src": "https://en.wikipedia.org/wiki/Crazy_Love_(Michael_Bubl%C3%A9_album)"
+  },
+  {
+   "id": "michael bublé|it's time",
+   "type": "cover",
+   "why": "MB：15 首裡 14 首標 cover（Feeling Good、Can't Buy Me Love、How Sweet It Is、You and I…），只有 Home …",
+   "src": "https://musicbrainz.org/release-group/3c8d9511-10d0-3a57-aaa3-da5ec9136bdd"
+  },
+  {
+   "id": "michel legrand|broadway is my beat",
+   "type": "cover",
+   "why": "MB 曲目 12 首全是百老匯名曲（On the Street Where You Live、Summertime、Smoke Gets in Your Eyes…",
+   "src": "https://musicbrainz.org/release-group/9c962bc9-6a25-4ad1-873c-d3f8b957e8e3"
+  },
+  {
+   "id": "paul bley|notes on ornette",
+   "type": "cover",
+   "why": "7 首裡 6 首是 Ornette Coleman 的作品（Turnaround、Lorraine、When Will the Blues Leave…），只有 1 首 Ble…",
+   "src": "https://en.wikipedia.org/wiki/Notes_on_Ornette"
+  },
+  {
+   "id": "queensrÿche|take cover",
+   "type": "cover",
+   "why": "11 首全是翻唱（Pink Floyd、Queen、Black Sabbath、The Police、U2…），維基明寫「consists of cover versions」",
+   "src": "https://en.wikipedia.org/wiki/Take_Cover_(Queensr%C3%BFche_album)"
+  },
+  {
+   "id": "ry cooder|into the purple valley",
+   "type": "cover",
+   "why": "11 首沒有一首是 Cooder 寫的：Woody Guthrie、Johnny Cash、Lead Belly、Jesse Stone（Money Honey）、Washin…",
+   "src": "https://en.wikipedia.org/wiki/Into_the_Purple_Valley"
+  },
+  {
+   "id": "ryan adams|1989",
+   "type": "cover",
+   "why": "MB：13 首全是 Taylor Swift《1989》的歌，全標 cover",
+   "src": "https://musicbrainz.org/release-group/e73523f8-490b-4a08-a528-e16b3c3ea4af"
+  },
+  {
+   "id": "shelly manne|my fair lady",
+   "type": "cover",
+   "why": "1956《Modern Jazz Performances of Songs From My Fair Lady》：整張是《窈窕淑女》的歌改成爵士三重奏，盤名就是演這一齣戲的歌本",
+   "src": "https://musicbrainz.org/release-group/43d9d1b8-e8f0-44c6-9f28-9c7256f954d8"
+  },
+  {
+   "id": "sonny stitt|stitt plays bird",
+   "type": "cover",
+   "why": "MB：9 首全是 Charlie Parker 的曲子（1963 Atlantic 錄音室），盤名明講致敬 Bird",
+   "src": "https://musicbrainz.org/release-group/5c4c7a11-1b3b-3fa9-9cb2-eb647071c1ef"
+  },
+  {
+   "id": "the temptations|the temptations sing smokey",
+   "type": "cover",
+   "why": "12 首全是 Smokey Robinson 寫的",
+   "src": "https://en.wikipedia.org/wiki/The_Temptations_Sing_Smokey"
+  },
+  {
+   "id": "willie nelson|stardust",
+   "type": "cover",
+   "why": "10 首全是美國標準曲（Stardust、Georgia on My Mind、Blue Skies…），維基明寫「consist entirely of American s…",
+   "src": "https://en.wikipedia.org/wiki/Stardust_(Willie_Nelson_album)"
+  },
+  {
+   "id": "冨田勲|the planets",
+   "type": "cover",
+   "why": "MB 曲目 7 首就是 Holst《行星組曲》全曲，冨田勲用合成器重編，沒有自作",
+   "src": "https://musicbrainz.org/release/29847895-64a5-4481-849b-baf202a82c94"
+  },
+  {
+   "id": "原信夫とシャープス・アンド・フラッツ|operation glenn miller",
+   "type": "cover",
+   "why": "MB 曲目 12 首全是 Glenn Miller 樂團的招牌曲（In the Mood、Moonlight Serenade、Chattanooga Choo Choo…",
+   "src": "https://musicbrainz.org/release-group/3cc0ac9f-3968-4490-b27d-58a3f90be064"
+  },
+  {
+   "id": "張國榮|salute",
+   "type": "cover",
+   "why": "MB 10 首錄音全標 cover，作者是許冠傑、黃霑、盧冠廷、喜多郎等前輩",
+   "src": "https://musicbrainz.org/release-group/3350921c-b701-3186-89ec-308f7459eadc"
+  },
+  {
+   "id": "椎名林檎|唄ひ手冥利〜其ノ壱〜",
+   "type": "cover",
+   "why": "椎名林檎第一張翻唱專輯（日文維基：「初のカバー・アルバム」），兩片各 8 首翻唱（太田裕美、Carpenters、Beatles、John Lennon、France Gall…",
+   "src": "https://ja.wikipedia.org/wiki/%E5%94%84%E3%81%B2%E6%89%8B%E5%86%A5%E5%88%A9%E3%80%9C%E5%85%B6%E3%83%8E%E5%A3%B1%E3%80%9C"
+  },
+  {
+   "id": "蔡琴|蔡琴老歌",
+   "type": "cover",
+   "why": "MB 曲目 10 首全是 1940–60 年代國語老歌（三年、恨不相逢未嫁時、總有一天等到你、痴痴的等、寒雨曲…），盤名就叫《老歌》，整張翻唱",
+   "src": "https://musicbrainz.org/release/1539ab5e-ad43-4da9-b887-78cd9f5a60c6"
+  },
+  {
+   "id": "陳芬蘭|楊三郎紀念專輯",
+   "type": "cover",
+   "why": "MB 曲目 10 首（望你早歸、港都夜雨、孤戀花、秋風夜雨…）都是楊三郎作曲的台語經典（MB 沒填作者，作曲歸屬是公認），盤名就是紀念專輯",
+   "src": "https://musicbrainz.org/release-group/b650864e-698c-41b4-a67f-f8169a80edb0"
+  },
+  {
+   "id": "abbey lincoln|abbey sings billie",
+   "type": "live",
+   "why": "改判：這張是 1987/11/6–7 在紐約 Universal Jazz Coalition 的現場錄音（原 LP 名《Abbey Sings Billie – Live a…",
+   "src": "https://www.discogs.com/ru/release/453276-Abbey-Lincoln-Abbey-Sings-Billie-A-Tribute-To-Billie-Holiday"
+  },
+  {
+   "id": "abdullah ibrahim|south africa",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/873ebe0e-a9fb-489c-a177-d5930e419661"
+  },
+  {
+   "id": "ahmad jamal|ahmad jamal at the blackhawk",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/5ac84610-5960-4108-9a60-b08d83a38393"
+  },
+  {
+   "id": "ahmad jamal|portfolio of ahmad jamal",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8c0cb67b-34b6-48a3-a51c-5a02c7b0f427"
+  },
+  {
+   "id": "air|live air",
+   "type": "live",
+   "why": "MB 錄音層：3、4 首標 live（1977/10/28 密西根大學 Ann Arbor 音樂會），1、2 首錄於 Studio Rivbea（Sam Rivers 的 lo…",
+   "src": "https://musicbrainz.org/release/ea146d59-3a63-404b-9c30-a6def65b60a9"
+  },
+  {
+   "id": "albert ayler|in greenwich village",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4cb33795-2768-376b-a464-8d00558174aa"
+  },
+  {
+   "id": "albert collins|frozen alive!",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/21733f01-437e-34df-a4a8-31b3e777dcbc"
+  },
+  {
+   "id": "amália rodrigues|amália no olympia",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ac4c24af-d109-3f09-b751-b117f4d8a10e"
+  },
+  {
+   "id": "aretha franklin|amazing grace",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/9e9b6cb5-2398-3aa7-b0c3-80c73e30b663"
+  },
+  {
+   "id": "art blakey & the jazz messengers|first flight to tokyo: the lost 1961 recordings",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/931d6707-d9a8-47de-8651-eec108dcdd69"
+  },
+  {
+   "id": "art blakey and the jazz messengers|the jazz messengers at the cafe bohemia, volume 2",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/55660ad4-5158-36cf-90a0-e422cbf35d60"
+  },
+  {
+   "id": "art blakey and the jazz messengers|three blind mice, volume 2",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/80c962fc-e16e-3056-8f0c-3a869c03ac45"
+  },
+  {
+   "id": "art tatum|god is in the house",
+   "type": "live",
+   "why": "MB 只標 Album",
+   "src": "https://en.wikipedia.org/wiki/God_Is_in_the_House_(Art_Tatum_album)"
+  },
+  {
+   "id": "average white band|person to person",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/322cc3e5-45d6-3995-a7c1-4db9f672081d"
+  },
+  {
+   "id": "b.b. king|live at the regal",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a4d2a86c-bbd6-352b-b9fa-f9da86df842c"
+  },
+  {
+   "id": "betty carter|the audience with betty carter",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f1f1bb05-1c3e-344b-9c17-b7767851a87a"
+  },
+  {
+   "id": "betty wright|betty wright live",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/be04b50b-36d6-3f42-8777-99d46b900a71"
+  },
+  {
+   "id": "bill evans|the paris concert, edition two",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/fadf9a83-cd1e-3008-809a-b57f3828ead7"
+  },
+  {
+   "id": "bill evans|waltz for debby",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/392e7fcf-5ae9-37f6-b8c9-57901cfbee1f"
+  },
+  {
+   "id": "binker and moses|alive in the east?",
+   "type": "live",
+   "why": "2017/6 在倫敦 Hackney 的 Total Refreshment Centre 專輯發表會現場錄音，Gearbox 發行，評論與 AllMusic 都稱是他們第一張…",
+   "src": "https://www.freejazzblog.org/2018/07/binkker-and-moses-alive-in-east-gearbox.html?m=0"
+  },
+  {
+   "id": "bobbi humphrey|live at montreux",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/9c95d27f-dfb0-41f1-b53e-ce90e053894a"
+  },
+  {
+   "id": "bruno walter|mahler: symphony no. 9 (vienna 1938)",
+   "type": "live",
+   "why": "MB 錄音層：四個樂章都標 live、錄於維也納音樂協會大廳 1938-01-16（Bruno Walter／維也納愛樂音樂會實況）",
+   "src": "https://musicbrainz.org/release/626778aa-13cc-4105-8691-326bd4e96a50"
+  },
+  {
+   "id": "cannonball adderley|mercy, mercy, mercy!",
+   "type": "live",
+   "why": "1966/10/20 在 Capitol 好萊塢錄音室錄，但現場有邀請的觀眾和開放吧台（封套寫芝加哥 The Club 是假的）",
+   "src": "https://en.wikipedia.org/wiki/Mercy,_Mercy,_Mercy!_Live_at_%22The_Club%22"
+  },
+  {
+   "id": "carmen mcrae|the great american songbook",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/1f9be7b1-6613-3144-8c2a-6e9e45d399e5"
+  },
+  {
+   "id": "casiopea|mint jams",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/12dcc366-1eed-39e1-8fbc-5a827c77a7d3"
+  },
+  {
+   "id": "casiopea|thunder live",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/cfa7ff78-f7b7-462e-81aa-2fdf41161dcb"
+  },
+  {
+   "id": "cecil taylor|for olim",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0b4ac4b6-ca29-4fb8-941d-2e4952a58283"
+  },
+  {
+   "id": "cecil taylor|silent tongues",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/916c2103-6bc9-323d-9906-8a45bba93a4b"
+  },
+  {
+   "id": "charles lloyd|trios: chapel",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/313d5a18-15e5-4228-9a09-31f2b94135b7"
+  },
+  {
+   "id": "charles lloyd|trios: ocean",
+   "type": "live",
+   "why": "MB 標 Live",
+   "src": "https://musicbrainz.org/release-group/fe039936-293b-4349-b058-a781f9cf6869"
+  },
+  {
+   "id": "charles lloyd|wild man dance",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/151591b7-7372-4b18-bc82-82abec2b45c5"
+  },
+  {
+   "id": "charles mingus|mingus in europe",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/def4fc37-3cdc-4cee-9f4d-0943f800371a"
+  },
+  {
+   "id": "charlie parker|charlie parker at storyville",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ebddd54e-b38e-38e5-8733-9036028be64d"
+  },
+  {
+   "id": "charlie parker|the washington concerts",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/828a939f-7d70-3424-b678-ad2439c58f8a"
+  },
+  {
+   "id": "chet baker|strollin'",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c9ab26ec-bd00-43c4-9552-fb665a30c4d6"
+  },
+  {
+   "id": "cécile mclorin salvant|dreams and daggers",
+   "type": "live",
+   "why": "23 首裡 17 首是 2016 Village Vanguard 現場，6 首是 DiMenna Center 錄音室加 Catalyst 弦樂四重奏的過場",
+   "src": "https://en.wikipedia.org/wiki/Dreams_and_Daggers"
+  },
+  {
+   "id": "deep purple|made in japan",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/afab893b-4284-37c3-bf74-0139773c8c6d"
+  },
+  {
+   "id": "dexter gordon|nights at the keystone, volume 3",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/005ac0cd-4270-38a1-9942-4ce73e9d1fef"
+  },
+  {
+   "id": "dexter gordon|the squirrel",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4d53b021-064a-3c3b-8fee-e4139e7e8a29"
+  },
+  {
+   "id": "dinah washington|dinah jams",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/2e6b39a1-73eb-35dd-b86b-db98a113542c"
+  },
+  {
+   "id": "dizzy gillespie|dizzy gillespie at newport",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0e4ec499-1941-31f4-b0d8-95d54f0f708d"
+  },
+  {
+   "id": "don cherry|eternal rhythm",
+   "type": "live",
+   "why": "MB 只標 Album",
+   "src": "https://en.wikipedia.org/wiki/Eternal_Rhythm"
+  },
+  {
+   "id": "don cherry|orient",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7921b23f-c016-32f1-a240-d7adc53d7532"
+  },
+  {
+   "id": "donna summer|live and more",
+   "type": "live",
+   "why": "第 1–3 面（約 59 分）是 1978/6/17 洛杉磯 Universal Amphitheatre 現場，只有第 4 面 MacArthur Park Suite（約 …",
+   "src": "https://en.wikipedia.org/wiki/Live_and_More"
+  },
+  {
+   "id": "donny hathaway|live",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/38a6e889-769d-32c9-9488-ce9fe0d3734a"
+  },
+  {
+   "id": "duke ellington|1969 all-star white house tribute",
+   "type": "live",
+   "why": "MB 只標 Album 沒錄音資料",
+   "src": "https://www.allmusic.com/album/1969-all-star-white-house-tribute-mw0000218942"
+  },
+  {
+   "id": "ella fitzgerald|ella in rome: the birthday concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e346e4ca-6371-3047-901d-cca6df1c5cd9"
+  },
+  {
+   "id": "ella fitzgerald|mack the knife: ella in berlin",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b6e1a652-1378-4e67-9104-04e458e7d2a4"
+  },
+  {
+   "id": "elvin jones|live at the lighthouse",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/63215382-668f-4fa4-859e-7eb507af9370"
+  },
+  {
+   "id": "elvin jones|revival (live at pookie's pub)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/872880e5-1f85-47a5-9877-e0025daeb07e"
+  },
+  {
+   "id": "eric dolphy|the illinois concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ef0c2191-6894-3584-abd0-5aa01cc94794"
+  },
+  {
+   "id": "eric dolphy|vintage dolphy",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/681740b8-76ff-34ff-b447-d87c9653b6c9"
+  },
+  {
+   "id": "erroll garner|concert by the sea",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/72641bf6-4da9-3cbc-8a11-2e4f03b571ec"
+  },
+  {
+   "id": "fania all-stars|latin-soul-rock",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/32e84baa-ce06-3cd3-bda3-d5d8cd3252de"
+  },
+  {
+   "id": "fania all-stars|live at the cheetah, vol. 1",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8b5e9d54-6c5d-4867-a8d0-d0422df923e3"
+  },
+  {
+   "id": "fania all-stars|our latin thing (nuestra cosa)",
+   "type": "live",
+   "why": "1972 同名演唱會紀錄片的原聲：照時間約六成是 Cheetah 俱樂部現場（夾訪談、街頭錄音），演唱會電影給現（SPEC-E §1.3-1）",
+   "src": "https://musicbrainz.org/release-group/2c12a98b-243e-4b81-b077-7b4a15ec8d1e"
+  },
+  {
+   "id": "fishmans|98.12.28 otokotachi no wakare",
+   "type": "live",
+   "why": "MB 有這張（盤名寫成「98.12.28 男達の別れ」，候選名單用羅馬拼音搜不到）：release-group 標 Album＋Live，全部 14 軌錄音標「live, 19…",
+   "src": "https://musicbrainz.org/release-group/9fcb2418-1d16-4d22-b6bd-3bf1a7928530"
+  },
+  {
+   "id": "freddie hubbard|without a song: live in europe 1969",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4fc11525-2c88-445a-adb9-d0297ce5b1b7"
+  },
+  {
+   "id": "ganelin trio|ancora da capo",
+   "type": "live",
+   "why": "現場盤：英文維基列為 live album，1980/11/15 列寧格勒音樂會（1997 CD 另併 1980/10/29 西柏林場）",
+   "src": "https://en.wikipedia.org/wiki/Ancora_da_Capo"
+  },
+  {
+   "id": "george benson|weekend in l.a.",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d5597a1c-c227-3ca4-af9b-e6a4b24e255a"
+  },
+  {
+   "id": "gil evans|bud and bird (live at sweet basil)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f30f5d47-3292-358d-bf84-f14d8580706c"
+  },
+  {
+   "id": "gil evans|live at sweet basil",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d1021bfc-03ca-371c-a8f7-a66a06c37d8b"
+  },
+  {
+   "id": "gil evans|live at sweet basil vol.2",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/eae2a44d-44fa-4d09-a4a8-3f1146b7aff7"
+  },
+  {
+   "id": "glenn gould & leonard bernstein|brahms: piano concerto no. 1 (1962)",
+   "type": "live",
+   "why": "MB 有這張（Sony 1998《Piano Concerto no. 1》）：release-group 標 Album＋Live，樂章錄音掛「recorded at Car…",
+   "src": "https://musicbrainz.org/release-group/bc19c4e8-47ba-4ebe-9c1b-74a18b1f086f"
+  },
+  {
+   "id": "grant green|live at club mozambique",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e9df9a5a-2370-33bd-a546-d1a0a7226028"
+  },
+  {
+   "id": "gregory porter|one night only: live at the royal albert hall",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/fa3b0114-10e5-469d-baad-6b35b6bd9a33"
+  },
+  {
+   "id": "hawkwind|space ritual",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/42fb29f2-728b-3dbb-85cf-70468d7b8a24"
+  },
+  {
+   "id": "horace silver|live at newport '58",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/5fa58c37-86a6-3261-8ae1-bebdbe02d65f"
+  },
+  {
+   "id": "horace silver|silver in seattle: live at the penthouse",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b0290d76-3827-4acc-b7fa-6489c86bb64a"
+  },
+  {
+   "id": "howlin' wolf|live and cookin' at alice's revisited",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a724a172-5485-3fde-b138-a2eb43f474a8"
+  },
+  {
+   "id": "jaco pastorius|invitation",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/aff92885-5d48-3d7a-bff3-e9aac11d5702"
+  },
+  {
+   "id": "james booker|new orleans piano wizard: live!",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/905a19ba-2fa7-3883-9dcd-642da85c9ed8"
+  },
+  {
+   "id": "jimmy mcgriff|black pearl",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8fae92a4-c921-42b7-9050-dbe794cda18a"
+  },
+  {
+   "id": "jimmy witherspoon|at the monterey jazz festival",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/55c790aa-cb88-4c7a-aa78-1b1c895fbdd0"
+  },
+  {
+   "id": "joe henderson|the state of the tenor - live at the village vanguard, volume two",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/cefc98df-338f-38bc-b098-49078bc6dc66"
+  },
+  {
+   "id": "joe henderson|the state of the tenor, vol. 1",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/2d5a8d7b-a791-3ac5-9ab0-6558e746aa3a"
+  },
+  {
+   "id": "john eliot gardiner|mozart: idomeneo (london 1990)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/441493bc-19b6-34b5-a4f6-3679eb594cbf"
+  },
+  {
+   "id": "jutta hipp|at the hickory house volume 1",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/74110799-dbbc-412b-9738-348a1cf208da"
+  },
+  {
+   "id": "karl böhm|wagner: tristan und isolde (bayreuth 1966)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7eca6c6c-6f9e-353a-9c68-98d72768f64a"
+  },
+  {
+   "id": "keith jarrett|at the blue note: the complete recordings",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c81c22f8-0fbe-3a16-8dcf-7226737bf115"
+  },
+  {
+   "id": "keith jarrett|paris concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4a055da3-1626-3840-9ffc-5ef55928f4f0"
+  },
+  {
+   "id": "keith jarrett|the carnegie hall concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/3e226fd3-2ec0-32ef-86a2-08d4bcb331b4"
+  },
+  {
+   "id": "keith jarrett|vienna concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e9daa13f-3d75-3b98-baed-8f45986badf8"
+  },
+  {
+   "id": "kenny burrell|pieces of blue and the blues",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/79bf534a-b332-4a46-9d51-8ea7079355b7"
+  },
+  {
+   "id": "kiss|alive!",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/aa876c87-138c-339b-8176-abacb4e45259"
+  },
+  {
+   "id": "kool & the gang|live at the sex machine",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e4ddcaf1-619f-3afe-8e58-9f46023e1703"
+  },
+  {
+   "id": "lee konitz|alone together",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/14b0cf7c-42c8-37a6-b320-0369b8bb1a42"
+  },
+  {
+   "id": "leonard bernstein|mahler: symphony no. 5 (vpo)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/04af4dd1-403a-3b9d-b0cf-34ddb8e9b3de"
+  },
+  {
+   "id": "lonnie smith|live at club mozambique",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/3588a191-22b9-313a-94e5-1842646a283d"
+  },
+  {
+   "id": "lou donaldson|the scorpion: live at the cadillac club",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b39432f9-1cf9-3ed8-be25-0bf099ddadeb"
+  },
+  {
+   "id": "mahalia jackson|newport 1958",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e353a214-f763-3be5-b607-d51b45b8abea"
+  },
+  {
+   "id": "makaya mccraven|in the moment",
+   "type": "live",
+   "why": "素材全是芝加哥 The Bedford 一年 28 場即興演出的現場錄音（約 48 小時），由 McCraven 剪接成 19 段",
+   "src": "https://www.intlanthem.com/releases-1/makaya-mccraven-in-the-moment"
+  },
+  {
+   "id": "marlena shaw|live at montreux",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b2ebc8a1-4ce0-36c0-b010-07b4c8396c4f"
+  },
+  {
+   "id": "martha argerich|rachmaninoff: piano concerto no. 3",
+   "type": "live",
+   "why": "MB release-group《Rachmaninoff 3 / Tchaikovsky 1》次類型 Compilation+Live：拉三是 1982 柏林 RSO／Cha…",
+   "src": "https://musicbrainz.org/release-group/a298c867-56c2-30d3-a7d8-3957db844a38"
+  },
+  {
+   "id": "mccoy tyner|enlightenment",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8b1b4e53-1eac-3592-8932-515e8cb68701"
+  },
+  {
+   "id": "miles davis|agharta",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/6356c6a7-99c5-345d-9758-f1194c61de23"
+  },
+  {
+   "id": "miles davis|birdland 1951",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/57104ca7-b7ec-39d9-b33a-ab89132f89f7"
+  },
+  {
+   "id": "miles davis|pangaea",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f4ec83e4-4949-3cf4-88bb-0f6891ba3fd1"
+  },
+  {
+   "id": "neil diamond|hot august night",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/62a1bb37-e679-3f0e-ae27-08112f32a520"
+  },
+  {
+   "id": "nirvana|mtv unplugged in new york",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/fb3770f6-83fb-32b7-85c4-1f522a92287e"
+  },
+  {
+   "id": "ornette coleman|at the \"golden circle\" stockholm, volume two",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/95d4e7f6-18e4-3196-8f7b-4f761525c67e"
+  },
+  {
+   "id": "otis redding|in person at the whisky a go go",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/91298201-e1cf-3b35-aa32-cc243483cc9c"
+  },
+  {
+   "id": "otis rush|so many roads: live in concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4b3abe17-fe74-3ac8-955b-59e0d479d662"
+  },
+  {
+   "id": "professor longhair|live on the queen mary",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/348bb961-b375-4f5f-9f81-f5e36f546246"
+  },
+  {
+   "id": "r.l. burnside|burnside on burnside",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/30ed8164-e0cc-3c1a-afd4-41cc68f8e8c9"
+  },
+  {
+   "id": "rahsaan roland kirk|bright moments",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/cd3ea752-7a4f-39cb-8cdb-ca6217131ffb"
+  },
+  {
+   "id": "ramsey lewis|the in crowd",
+   "type": "live",
+   "why": "候選名單的 MB 連結撞到同名單曲",
+   "src": "https://musicbrainz.org/release-group/720c27ce-9395-30f3-964c-9773bd52a9ee"
+  },
+  {
+   "id": "rob mazurek & exploding star orchestra|galactic parables: volume 1",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ca7963e8-14b7-4168-b2aa-388db11ab7f4"
+  },
+  {
+   "id": "robert glasper|covered",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7f9777e8-20a8-4662-a642-c2d0e6820b2c"
+  },
+  {
+   "id": "ronnie foster|live at montreux",
+   "type": "live",
+   "why": "MB 盤名《Cookin' With Blue Note at Montreux》（Ronnie Foster 1973 蒙特勒爵士節演出，卡上簡稱 Live at Montr…",
+   "src": "https://musicbrainz.org/release-group/614115b8-344d-4df0-9816-dc068d58ce93"
+  },
+  {
+   "id": "sam rivers|streams",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/5d33c125-1bd7-36cf-9df1-ad280948f94b"
+  },
+  {
+   "id": "sergiu celibidache|bruckner: symphony no. 4 (munich 1988)",
+   "type": "live",
+   "why": "MB release-group 只標 Album，但四個樂章錄音都掛「recorded at Philharmonie im Gasteig 1988-10-16」且作品關係…",
+   "src": "https://musicbrainz.org/release-group/b6aee0ec-5e25-357e-8b04-98c7ed3263e3"
+  },
+  {
+   "id": "sergiu celibidache|bruckner: symphony no. 8",
+   "type": "live",
+   "why": "這張是慕尼黑愛樂自家廠牌 2024 年從樂團檔案挖出的 1985-04-04 Herkulessaal 錄音（卡片封面、試聽都對到這版）",
+   "src": "https://www.mphil.de/en/label/sergiu-celibidache/celibidache-bruckner-8"
+  },
+  {
+   "id": "shelly manne|shelly manne & his men at the black hawk, vol. 1",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/85d365d0-6258-31d2-a771-e38c9ee9359f"
+  },
+  {
+   "id": "shirley scott|queen of the organ",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b7ded519-52b7-33d0-bf67-600baa1049aa"
+  },
+  {
+   "id": "sidney bechet|jazz festival concert, paris 1952, volume 2",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8a29fbec-e498-47c0-9404-0b50f8092242"
+  },
+  {
+   "id": "son seals|live and burning",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/6d9ee6f0-0f73-3834-98ad-d750780c6f1c"
+  },
+  {
+   "id": "stan getz|getz au go go",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/34e629ff-4869-4c17-86ee-493a47f8c0de"
+  },
+  {
+   "id": "suzanne ciani|live quadraphonic",
+   "type": "live",
+   "why": "MB 只標 Album 沒有錄音資料",
+   "src": "https://en.wikipedia.org/wiki/Suzanne_Ciani"
+  },
+  {
+   "id": "sviatoslav richter|sofia recital 1958",
+   "type": "live",
+   "why": "MB 錄音層每首都標 live、日期 1958-02-24（索菲亞獨奏會）：《展覽會之畫》＋舒伯特、蕭邦、李斯特、拉赫曼尼諾夫安可，整場音樂會實況",
+   "src": "https://musicbrainz.org/release/6b763174-5265-4f61-8f1c-20308bfa5a4a"
+  },
+  {
+   "id": "the allman brothers band|at fillmore east",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d757b87e-4a3b-38ec-9246-548baeff5ceb"
+  },
+  {
+   "id": "the crusaders|scratch",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/dfc7cc89-b3aa-304f-a0df-64ee51460548"
+  },
+  {
+   "id": "the dave brubeck quartet|jazz at oberlin",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d215f81c-8957-3a84-86c0-a0669d8cea1f"
+  },
+  {
+   "id": "the dave brubeck quartet|jazz goes to college",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/94d23354-34ba-3fc8-8f92-37e600d7a095"
+  },
+  {
+   "id": "the jazz crusaders|lighthouse '68",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/cb652f80-c489-3dac-894b-1df9a0e6b769"
+  },
+  {
+   "id": "thelonious monk|live at the five spot discovery!",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4a92a79b-87c4-317c-908b-cbb3515efb8f"
+  },
+  {
+   "id": "thelonious monk|paris 1969",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/50d55c85-ac83-4a43-a6d4-7e3b3dd60b05"
+  },
+  {
+   "id": "thin lizzy|live and dangerous",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e9ae496e-c750-3433-a35c-adfc50f83858"
+  },
+  {
+   "id": "throbbing gristle|heathen earth",
+   "type": "live",
+   "why": "1980/2/16 在 Industrial Records 錄音室對一小群受邀觀眾的演出（封套逐一列出在場者），MB 全名《Heathen Earth: The Live S…",
+   "src": "https://en.wikipedia.org/wiki/Heathen_Earth"
+  },
+  {
+   "id": "tommy flanagan|sunset and the mockingbird: the birthday concert",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/990e03a7-c0a1-3e95-94b6-7d079af1f9e7"
+  },
+  {
+   "id": "townes van zandt|live at the old quarter, houston, texas",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/517b6d9f-8ba7-34c1-aeff-1f69db1655a9"
+  },
+  {
+   "id": "underworld|everything, everything",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d2da552f-e7d4-37d2-8b2a-10a1769cdacb"
+  },
+  {
+   "id": "van cliburn|rachmaninoff: piano concerto no. 3",
+   "type": "live",
+   "why": "MB release-group 只標 Album，但三個樂章錄音都掛「recorded at Carnegie Hall 1958-05-19」且作品關係標 live",
+   "src": "https://musicbrainz.org/release-group/f0a577af-e1c3-40d8-ae8f-942c8eed34b0"
+  },
+  {
+   "id": "vladimir horowitz|horowitz at the met",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/de0596e7-c52f-359b-8683-0edbe7aca5bf"
+  },
+  {
+   "id": "vladimir horowitz|horowitz in moscow (1986)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/33c274f0-b32e-3b1b-9ca7-cb3f50d04a76"
+  },
+  {
+   "id": "vladimir horowitz|the historic return: carnegie hall 1965",
+   "type": "live",
+   "why": "MB release-group 只標 Album，但每一軌錄音都掛「recorded at Carnegie Hall 1965-05-09」且作品關係標 live",
+   "src": "https://musicbrainz.org/release-group/551cd625-94b4-4165-9e75-358614d876cb"
+  },
+  {
+   "id": "wayne shorter|celebration, volume 1 (live)",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/33b55009-d715-4b79-b0e1-59192af712ac"
+  },
+  {
+   "id": "wes montgomery|full house",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c37bda62-c73d-3492-aa80-2de4204f67b1"
+  },
+  {
+   "id": "wha-ha-ha|live-dub",
+   "type": "live",
+   "why": "MB release-group 次類型 Live",
+   "src": "https://musicbrainz.org/release-group/daf0b323-f677-4a1e-8d18-e50fa2257a0c"
+  },
+  {
+   "id": "yusef lateef|live at pep's",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f86456c8-460b-3996-a8a8-dcc2af586d30"
+  },
+  {
+   "id": "ジョージ大塚クインテット|loving you george",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d237615a-a832-4522-88d3-e600774428b1"
+  },
+  {
+   "id": "伍佰 & china blue|伍佰的live",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/06bfd1ca-807a-33d4-adde-f1828aaed87d"
+  },
+  {
+   "id": "原信夫とシャープス・アンド・フラッツ|sharps & flats in newport",
+   "type": "live",
+   "why": "1967 新港爵士音樂節的現場錄音（與尺八山本邦山首次合作，隔年才出錄音室盤《New Jazz in Japan》）",
+   "src": "https://jazzmusicarchives.com/album/nobuo-hara/in-newport(live)"
+  },
+  {
+   "id": "吉沢元治|inland fish",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/2fa5f529-2c6c-47cc-9f3e-09556e5a32a8"
+  },
+  {
+   "id": "大象體操 elephant gym|live in the world",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0922e46a-6624-4213-a1fd-e842a88017a8"
+  },
+  {
+   "id": "富樫雅彦|コントラスト",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/6c720550-fbb6-40c9-a373-548249a719f8"
+  },
+  {
+   "id": "富樫雅彦〜高柳昌行|パルセーション",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/28d4c852-b878-4385-9b41-15645650bced"
+  },
+  {
+   "id": "山下洋輔トリオ|clay",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d26f7065-e914-4a4a-8f3d-c8100e513643"
+  },
+  {
+   "id": "日野皓正|wheel stone - live in nemuro, volume 2",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/562eb2e3-abe0-48ca-abb1-4b5c7c36e293"
+  },
+  {
+   "id": "明田川荘之|アローン・イン・徳山",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/607a2097-13aa-4766-b310-ec289f35a699"
+  },
+  {
+   "id": "渡辺貞夫|dedicated to charlie parker",
+   "type": "live",
+   "why": "改判：這張原名《Swing Journal Jazz Workshop 2》，1969-03-15 銀座 Yamaha Hall 的音樂會實況（MB 錄音也掛 Yamaha H…",
+   "src": "https://www.jazzmusicarchives.com/album/sadao-watanabe/swing-journal-jazz-workshop-2-sadao-watanabe-dedicated-to-charlie-parker(live)"
+  },
+  {
+   "id": "渡辺香津美|mobo live",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a6aefcd7-1420-4f93-be4a-4b9b1f293c31"
+  },
+  {
+   "id": "登川誠仁|登川誠仁独演会",
+   "type": "live",
+   "why": "MB 查無此盤",
+   "src": "https://music.apple.com/jp/album/365261789"
+  },
+  {
+   "id": "秋吉敏子トリオ|1980 toshiko akiyoshi trio in rikuzentakata",
+   "type": "live",
+   "why": "MB 錄音層：10 首全錄於陸前高田市民會館大廳 1980-06-13，含兩段 MC 講話，音樂會實況",
+   "src": "https://musicbrainz.org/release/6206b8f5-fbc9-442e-9375-3c326febfa3f"
+  },
+  {
+   "id": "血肉果汁機 flesh juicer|血肉宮建宮蓋廟演唱會",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/57c4c6ba-f69d-4256-b2a0-b7256cfaece5"
+  },
+  {
+   "id": "裸のラリーズ|'67-'69 studio et live",
+   "type": "live",
+   "why": "MB 錄音層：8 首裡 5 首（約 37 分）標 live：1968/11/29 同志社大學、1969/4/26 與 10/18 京都射手座畫廊等場",
+   "src": "https://musicbrainz.org/release/4a602ebd-8d72-4c19-9caa-416879390b22"
+  },
+  {
+   "id": "裸のラリーズ|the oz tapes",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/313f7bca-0167-45e9-ae32-db9f907fa997"
+  },
+  {
+   "id": "閃靈|台灣大凱旋",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c6ad923c-39f8-4c3f-a33c-becf52c4810c"
+  },
+  {
+   "id": "閃靈|台灣閃閃爍 megaport 2021",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a7fd83df-41e4-42ed-853f-15ff6254459a"
+  },
+  {
+   "id": "閃靈|演武",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0f336b56-d8ee-4204-9a1f-bb7891344027"
+  },
+  {
+   "id": "閃靈|醒靈寺大決戰",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7c184858-2573-4d75-b40a-1f320ac64b6f"
+  },
+  {
+   "id": "麋先生|我們的十年 we live 現場十錄",
+   "type": "live",
+   "why": "MB 標 Live（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release/9eb9ba45-c10c-44ab-972e-06c48ecb4fc8"
+  },
+  {
+   "id": "a.r. rahman|dil se..",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4fc8cb2f-cf67-3253-bac7-5419793cd342"
+  },
+  {
+   "id": "a.r. rahman|lagaan",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/42f29583-6fdd-3c1b-97ee-e11aba6c7ceb"
+  },
+  {
+   "id": "a.r. rahman|slumdog millionaire: music from the motion picture",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8190b9e6-c264-372b-b525-d32d3219d5dd"
+  },
+  {
+   "id": "a.r. rahman|taal",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b9ceb81a-2219-3b75-b5e9-9915d29692cf"
+  },
+  {
+   "id": "abdullah ibrahim|mindif",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8a40bb93-9241-30e3-98bb-37c74246fd32"
+  },
+  {
+   "id": "andrew lloyd webber|the phantom of the opera",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a5fd6ff9-0761-3427-befb-22b75a1c222b"
+  },
+  {
+   "id": "angelo badalamenti|blue velvet: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4fcf1e81-22d5-3173-8d99-0f1fcfd21794"
+  },
+  {
+   "id": "angelo badalamenti|soundtrack from twin peaks",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d76e8ddb-ee99-3f9e-baf5-a66123a18774"
+  },
+  {
+   "id": "angelo badalamenti|twin peaks: fire walk with me: music from the motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ec7cf415-28cc-39ed-83ee-85bbca46980a"
+  },
+  {
+   "id": "bernard herrmann|north by northwest",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ab877126-1193-35e4-bb5d-3feb7e39d08c"
+  },
+  {
+   "id": "bernard herrmann|psycho",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0b5538f0-e5fd-3b6f-bf66-892ec0365bad"
+  },
+  {
+   "id": "bernard herrmann|taxi driver",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/75b576de-4eca-30a6-9cfe-2e8c9d8b8b97"
+  },
+  {
+   "id": "brian reitzell|hannibal: season 1, volume 2",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/45ddfa40-c9b2-4f09-a9a2-d11d231666c8"
+  },
+  {
+   "id": "brian reitzell|hannibal: season 2, volume 1",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0d9b31f3-3603-4607-b237-e1517416fdd8"
+  },
+  {
+   "id": "christopher young|sinister: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a02f5c92-702a-480d-a081-3fa1e099fa2c"
+  },
+  {
+   "id": "cliff martinez|drive: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/57dbf641-99ac-42f5-9981-5c11c0d1e48a"
+  },
+  {
+   "id": "cliff martinez|only god forgives",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e1f815a5-d122-4aaf-ac51-e00d4e131f73"
+  },
+  {
+   "id": "cliff martinez|solaris",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/cf278c58-4529-39f6-8d36-a7cb14fd9a5a"
+  },
+  {
+   "id": "colin stetson|color out of space: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/46aa0220-ca4a-4447-ac8c-cbec4c0538ef"
+  },
+  {
+   "id": "darren korb|bastion: original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f8f33c9d-b938-43d6-a1dd-fc4010bee8c6"
+  },
+  {
+   "id": "darren korb|hades: original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/dc4818c3-a34f-40c6-9223-63570980694d"
+  },
+  {
+   "id": "darren korb|transistor: original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de"
+  },
+  {
+   "id": "earth, wind & fire|that's the way of the world",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e9845207-8ae3-36db-b0e1-2efcdb46687d"
+  },
+  {
+   "id": "ennio morricone|nuovo cinema paradiso",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/456d7e4e-f406-327b-899b-cd9358015466"
+  },
+  {
+   "id": "ennio morricone|the mission (original sound track from the film)",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/627bc7e6-800e-3ff6-aef8-9045cb5193f7"
+  },
+  {
+   "id": "ennio morricone|the thing",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/28e99b46-fa15-3ea8-bae5-e14fee4619c7"
+  },
+  {
+   "id": "giorgio moroder|american gigolo",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/1c38d50b-aa42-3b9d-b54c-e84fe0e061f9"
+  },
+  {
+   "id": "giorgio moroder|cat people",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/55538409-6a4e-3abe-9c7f-dd94151c537d"
+  },
+  {
+   "id": "giorgio moroder|midnight express: music from the original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b4d5694a-f832-36bf-9597-3779f113f5fc"
+  },
+  {
+   "id": "gladys knight & the pips|claudine",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/9c2c1740-c72a-38f5-98fb-67fd2f0b9431"
+  },
+  {
+   "id": "goblin|buio omega",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/8b2e9238-7c72-3074-81ba-2e5d2fd17df4"
+  },
+  {
+   "id": "goblin|profondo rosso",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/78c8f2cd-1e35-3198-8d51-e531eb1a4817"
+  },
+  {
+   "id": "goran bregović|underground",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c6f11cbd-8deb-39f1-b36b-6660c02aee89"
+  },
+  {
+   "id": "harry nilsson|the point!",
+   "type": "ost",
+   "why": "MB release-group《The Point!》次類型 Soundtrack",
+   "src": "https://musicbrainz.org/release-group/eecd2bdd-c52c-3aed-aad8-e6ad997765d5"
+  },
+  {
+   "id": "henry mancini|breakfast at tiffany's",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/26f19467-5723-3eee-b4e0-221abd2bed27"
+  },
+  {
+   "id": "henry mancini|the music from peter gunn",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/3d7debc9-aa10-36a6-9f02-f7287fe05a92"
+  },
+  {
+   "id": "henry mancini|the pink panther",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/046d718c-adde-3b40-b87d-8e7bf58d8b16"
+  },
+  {
+   "id": "herbie hancock|blow-up",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/89c2edc5-b5be-3400-a402-da615d6f3ee6"
+  },
+  {
+   "id": "isaac hayes|shaft: music from the soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/edb44be8-a63e-3ebf-bff0-959fd37c3bc5"
+  },
+  {
+   "id": "jerry goldsmith|alien",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e15b15c1-97e6-3f22-a21f-ec7c2498f604"
+  },
+  {
+   "id": "jerry goldsmith|chinatown: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ecf93cc7-aa5b-364d-9a55-9ac82334ae5e"
+  },
+  {
+   "id": "jerry goldsmith|planet of the apes",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/56873561-bf4c-3c63-9132-2eda6d546c64"
+  },
+  {
+   "id": "jerry goldsmith|the omen",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ec674697-a2c0-3c58-865f-a39d800a587b"
+  },
+  {
+   "id": "jimmy cliff|the harder they come",
+   "type": "ost",
+   "why": "候選名單的 MB 連結撞到 2005 精選",
+   "src": "https://musicbrainz.org/release-group/71188e04-90b4-35ff-81c0-06316efdc749"
+  },
+  {
+   "id": "john carpenter|christine",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/9f8fb915-1217-3c5f-9ac5-2de102da10a5"
+  },
+  {
+   "id": "john carpenter|the fog",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/cad197ff-5ecf-370a-bab7-405cc89afb9b"
+  },
+  {
+   "id": "john carpenter|they live",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/119d4788-857b-3163-a993-cb3a513f7994"
+  },
+  {
+   "id": "john williams|e.t. the extra-terrestrial",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/3ca9c5a3-3754-347c-826a-9b598fa52ed3"
+  },
+  {
+   "id": "john williams|jaws: music from the original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/6b546ee1-a439-37fc-a5c4-005ef8d7320d"
+  },
+  {
+   "id": "john williams|jurassic park: music from the original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/455f56d1-5258-36c2-ba84-921a6fa4fcda"
+  },
+  {
+   "id": "john williams|schindler's list",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/86a624e7-fe2b-4ebe-8815-44096e60ec46"
+  },
+  {
+   "id": "jonny greenwood|there will be blood",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d9826f87-c0ff-3245-be59-503e0bf35332"
+  },
+  {
+   "id": "jóhann jóhannsson|arrival (ost)",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/63c7807b-3a9e-4f44-9abe-af62f756aec9"
+  },
+  {
+   "id": "jóhann jóhannsson|mandy: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/fe445224-8269-46b0-bf5c-0274f29bf56a"
+  },
+  {
+   "id": "jóhann jóhannsson|sicario: original motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/771042e4-5d18-4f47-a2bf-51bc51b37c2c"
+  },
+  {
+   "id": "krzysztof komeda|dance of the vampires",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/b5a3b032-9932-4cdf-9fe4-7291963f42df"
+  },
+  {
+   "id": "lalo schifrin|bullitt",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/3d487300-36e3-3c4e-8a17-66a45e8bdfa2"
+  },
+  {
+   "id": "lalo schifrin|music from mission: impossible",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/47013d98-ba13-3aea-acc1-aef71efa5e30"
+  },
+  {
+   "id": "lerner & loewe|camelot",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/bd51e8f2-b0ad-370c-9bed-6e340afa0d5a"
+  },
+  {
+   "id": "lerner & loewe|my fair lady",
+   "type": "ost",
+   "why": "1956 百老匯原卡司錄音（MB 標 Soundtrack）；音樂劇照劇本唱，原卡司錄音算原聲帶（SPEC-E §1.3-3①）",
+   "src": "https://musicbrainz.org/release-group/82e96bfb-bcc7-3179-831c-9cf86aa17aaf"
+  },
+  {
+   "id": "lily chou-chou|呼吸",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e"
+  },
+  {
+   "id": "lustmord|first reformed: extended motion picture soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/e852ead2-887b-41be-8370-42d47827b692"
+  },
+  {
+   "id": "mica levi|monos",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d2f9a423-f406-4cec-9627-583eda66c0b7"
+  },
+  {
+   "id": "michael nyman|the draughtsman's contract",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/86fd1b5f-5711-3949-b178-521c8ae8eccb"
+  },
+  {
+   "id": "michael nyman|the piano",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/06edbd21-fc1a-3e83-8e84-cb77dfe91c2f"
+  },
+  {
+   "id": "michel legrand|les demoiselles de rochefort",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/67aa0dc8-5911-3990-bdc7-d2fac1fa0ff7"
+  },
+  {
+   "id": "michel legrand|les parapluies de cherbourg",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/33399942-1b49-3ed0-b178-0feb579f7e2d"
+  },
+  {
+   "id": "mike ratledge|riddles of the sphinx",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/455601de-9eff-4985-ae0b-190a935a76bd"
+  },
+  {
+   "id": "mogwai|atomic",
+   "type": "ost",
+   "why": "MB release-group 次類型 Soundtrack：Mogwai 為 BBC 紀錄片《Storyville – Atomic: Living in Dread an…",
+   "src": "https://musicbrainz.org/release-group/abf559f9-8c52-4295-9b8c-79b72f8d9837"
+  },
+  {
+   "id": "mogwai|les revenants",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f008e1b0-35fb-4724-b6f3-11dd6acb0bf5"
+  },
+  {
+   "id": "naushad|baiju bawra",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/db9f1b3c-c98d-473e-8bb0-e7b3f3c2fd2a"
+  },
+  {
+   "id": "naushad|mughal-e-azam",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f952c58a-be7d-3754-97c7-c38c30a0face"
+  },
+  {
+   "id": "nino rota|8½",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f37c5055-1d8f-333a-9d45-fb61c2334eea"
+  },
+  {
+   "id": "nino rota|amarcord",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c04afbce-1d0f-31a6-9c11-36c5f90e7d4a"
+  },
+  {
+   "id": "nino rota|il casanova di federico fellini",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c81885c5-114a-3070-b5d9-1f90fd301320"
+  },
+  {
+   "id": "nino rota|la dolce vita",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/65920030-f167-31a3-83af-27011b113f5f"
+  },
+  {
+   "id": "nujabes - fat jon|samurai champloo music record: departure",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/109bed29-720c-3a93-88ae-af83a464e5ed"
+  },
+  {
+   "id": "o.p. nayyar|c.i.d.",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/567038ab-db58-4763-884b-dc1773973093"
+  },
+  {
+   "id": "o.p. nayyar|naya daur",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/39cce92d-59c6-4056-8e27-b3cd266c50c2"
+  },
+  {
+   "id": "petri alanko & martin stig andersen|control: original game soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c8d11d44-6fac-41b9-9c83-aa28a420350c"
+  },
+  {
+   "id": "philip glass|mishima",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/93ef449b-8993-31b9-9458-5721c5a5cc5c"
+  },
+  {
+   "id": "r.d. burman|1942: a love story",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7e0658ca-66ce-3819-92ba-a6cba7e3d485"
+  },
+  {
+   "id": "r.d. burman|amar prem",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/38f3d63b-2fa1-468a-bdc0-0af90186ca3f"
+  },
+  {
+   "id": "r.d. burman|hare rama hare krishna",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c4a525e2-4efc-4a7f-893a-845aaeb78323"
+  },
+  {
+   "id": "r.d. burman|kati patang",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/38b37a68-11d9-47c8-b3c7-d2fe3ec001c3"
+  },
+  {
+   "id": "r.d. burman|yaadon ki baaraat",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/89e09e75-67ca-433e-a7c8-f83c1000318f"
+  },
+  {
+   "id": "ry cooder|paris, texas",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/94e207a9-5585-36fd-b881-24dec0ea9a5c"
+  },
+  {
+   "id": "s.d. burman|aradhana",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/dcaf2c38-c765-35ad-98ab-566b95ae06ab"
+  },
+  {
+   "id": "s.d. burman|guide",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/49763754-47f4-43d9-aca7-2ab0d7dac117"
+  },
+  {
+   "id": "shankar jaikishan|sangam",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/480582c9-bbdb-4c8d-83e1-89d91d3f0666"
+  },
+  {
+   "id": "shankar jaikishan|shree 420",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/bbfc5126-779e-4d5b-a5de-c6f3938baf84"
+  },
+  {
+   "id": "stephen sondheim|company",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/46ea34b6-f066-3be5-910a-e73876234342"
+  },
+  {
+   "id": "tan dun 譚盾|crouching tiger, hidden dragon",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0847782f-6cbe-3890-84ab-f7a345676e5e"
+  },
+  {
+   "id": "tangerine dream|thief",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/747e52af-5d7d-3dcb-9e26-8b5b1b49c1c1"
+  },
+  {
+   "id": "the modern jazz quartet|music from odds against tomorrow",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/206173be-0bab-3668-a22c-a20433af8890"
+  },
+  {
+   "id": "tim hecker|infinity pool (original motion picture soundtrack)",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c9c4c8c6-c41e-4977-acf2-49a327a2604a"
+  },
+  {
+   "id": "vangelis|blade runner",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/f393097a-b567-3253-9bdf-df353ee3e9e1"
+  },
+  {
+   "id": "vangelis|chariots of fire",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/2a5ecb95-4c06-3386-a141-e60343ab5d26"
+  },
+  {
+   "id": "wendy carlos|tron",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/92a6e5fe-c5ec-3f39-adff-a04a4b8658b6"
+  },
+  {
+   "id": "whitney houston|the bodyguard: original soundtrack album",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/95a67a17-5253-4b76-b84d-cdc0c76f547f"
+  },
+  {
+   "id": "willie hutch|the mack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ada64baf-c5cb-3465-8e7b-49c0fb061729"
+  },
+  {
+   "id": "zbigniew preisner|la double vie de véronique",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/71818081-4518-3606-bca7-0ae809e85e37"
+  },
+  {
+   "id": "zbigniew preisner|trois couleurs : bleu",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/53ae0c76-3483-371c-8255-ee7df1aa20c3"
+  },
+  {
+   "id": "эдуард артемьев|solaris - the mirror - stalker",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d0cc69d5-a0a7-495f-a520-b071eafc27ca"
+  },
+  {
+   "id": "下村陽子|live a live オリジナル・サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/743d0014-f626-3715-83dd-bea0f254e15a"
+  },
+  {
+   "id": "下村陽子|聖剣伝説 legend of mana オリジナル・サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/06bef54a-d29e-3201-9c07-768e4c5e79e6"
+  },
+  {
+   "id": "久石譲|hana-bi",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/921d5dcb-36e2-3bb0-9036-be6a64abfe94"
+  },
+  {
+   "id": "久石譲|となりのトトロ サウンドトラック集",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/56b3e32b-3383-3090-85dd-1815b0d925f9"
+  },
+  {
+   "id": "久石譲|ハウルの動く城 サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/464c5f95-7877-3701-92a3-292de7cbe7c5"
+  },
+  {
+   "id": "久石譲|千と千尋の神隠し サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/dc1f9d7d-9a98-3f2c-83aa-c16dbb4a9ae1"
+  },
+  {
+   "id": "久石譲|風立ちぬ サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/9c06b4ab-6822-4456-8074-2a91150762e8"
+  },
+  {
+   "id": "光田康典|chrono cross original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/93f27892-85b8-3959-bfd3-038990078f5b"
+  },
+  {
+   "id": "光田康典|xenogears original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/3f90f58a-37ba-375e-9e76-db6e6a60bd2d"
+  },
+  {
+   "id": "大野雄二|original soundtrack from lupin iii",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/10cd5905-2af3-46e4-9729-c06e347699d7"
+  },
+  {
+   "id": "川井憲次|innocence o.s.t.",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7103a8dc-cb7b-37fc-a9bf-0dd9ceda724d"
+  },
+  {
+   "id": "川井憲次|攻殻機動隊-オリジナル・サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/815898d6-7e1d-3554-9d4c-6d973a2140e8"
+  },
+  {
+   "id": "平沢進|berserk",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/5b0d84c5-34ce-3156-9123-09cc50dffd3a"
+  },
+  {
+   "id": "林強|刺客聶隱娘 電影原聲專輯",
+   "type": "ost",
+   "why": "MB release-group《The Assassin》（林強，侯孝賢《刺客聶隱娘》2015）次類型 Soundtrack",
+   "src": "https://musicbrainz.org/release-group/a8f01aa7-811c-45d1-84fd-778058a43967"
+  },
+  {
+   "id": "林強|少年吔，安啦！電影原聲帶",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ab2db4d3-60ca-486f-b33a-7ca06a84e3c6"
+  },
+  {
+   "id": "梶浦由記|.hack--sign original sound & song track 1",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c922ca15-6828-4e8a-8312-48180b5bca77"
+  },
+  {
+   "id": "梶浦由記|madlax o.s.t.",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/665584a4-619a-3004-af72-0f2b55e8b8ae"
+  },
+  {
+   "id": "梶浦由記|noir original soundtrack i",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/2c954bd1-21ee-346e-96f9-0eeaf691f5f6"
+  },
+  {
+   "id": "梶浦由記|the garden of sinners -劇場版「空の境界」音楽集-",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4aaf1dff-d38f-49db-a768-c88cddead478"
+  },
+  {
+   "id": "植松伸夫|final fantasy ix original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/d072b8eb-4047-3abf-8c67-a9afddfbbafa"
+  },
+  {
+   "id": "植松伸夫|final fantasy vii: original soundtrack",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/7fab854c-8d2f-31f3-aa82-ad7cbf7532eb"
+  },
+  {
+   "id": "植松伸夫|ファイナルファンタジー iv オリジナル・サウンド・ヴァージョン",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/ddc91d7a-5201-3d83-abb6-b101c1a020c5"
+  },
+  {
+   "id": "植松伸夫|ファイナルファンタジー vi: オリジナル・サウンド・ヴァージョン",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/89bddb55-5e9f-3b4c-b5cd-630c7265324a"
+  },
+  {
+   "id": "菅野よう子|wolf's rain",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/aa8d20f8-709a-3f4c-b531-b2c12da8c8d7"
+  },
+  {
+   "id": "菅野よう子|マクロスf o.s.t.1 娘フロ。",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/daa7d240-d94a-322c-9110-9bab450f4dde"
+  },
+  {
+   "id": "菅野よう子|攻殻機動隊 stand alone complex o.s.t.",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/43a7c706-d3a0-37f8-b270-11a9a6ad9877"
+  },
+  {
+   "id": "菅野よう子|残響のテロル オリジナル・サウンドトラック",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/a65190c9-6b3c-4351-ae0a-b9e81c70e452"
+  },
+  {
+   "id": "菅野よう子、シートベルツ|cowboy bebop",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/2fd0a042-8c07-3c57-9189-d158e0c1cde1"
+  },
+  {
+   "id": "菅野よう子、シートベルツ|cowboy bebop blue",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/0b654bae-a26c-3b7e-8ed0-acf3a97d4acf"
+  },
+  {
+   "id": "菅野よう子、シートベルツ|cowboy bebop original soundtrack 2: no disc",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/15895db2-b904-32e3-9333-e9a57574fc7c"
+  },
+  {
+   "id": "陳明章|幻之光",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/dbd26b2c-9378-4a29-92cb-f5f7887e8dbf"
+  },
+  {
+   "id": "陳明章|戀戀風塵 電影原聲帶",
+   "type": "ost",
+   "why": "侯孝賢《戀戀風塵》（1986）電影配樂，陳明章作曲、1993 正式發行原聲帶，獲第 5 屆金曲獎最佳演奏專輯",
+   "src": "https://zh.wikipedia.org/wiki/%E6%88%80%E6%88%80%E9%A2%A8%E5%A1%B5"
+  },
+  {
+   "id": "鷺巣詩郎|neon genesis evangelion",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/4b608935-0ed2-3ff3-9618-3dd07055d814"
+  },
+  {
+   "id": "鷺巣詩郎|neon genesis evangelion ii",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/c1b5e3f5-f2cc-3764-8098-992821c6df3b"
+  },
+  {
+   "id": "鷺巣詩郎|shiro sagisu music from evangelion:1.0 you are (not) alone",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/71086160-3b53-3a3e-a2a6-b0132812376f"
+  },
+  {
+   "id": "鷺巣詩郎|the end of evangelion",
+   "type": "ost",
+   "why": "MB 標 Soundtrack（盤名、藝人相符）",
+   "src": "https://musicbrainz.org/release-group/03587dbb-a647-34d5-a326-9661fd626197"
+  }
+ ]
+}

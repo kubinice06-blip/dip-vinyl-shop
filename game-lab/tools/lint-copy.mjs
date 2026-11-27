@@ -677,6 +677,52 @@ if (C.lineup && C.lineup.ui) {
     for (const { s: x, line } of (kind === 'html' ? htmlStrings(src) : jsStrings(src))) if (x && x.includes('帶上場')) err(rel + ':' + line, '「帶上場」只准出現在 C.lineup 的字（SPEC-I §A-3）→ ' + x.slice(0, 60));
   }
 }
+// 第 E 波番外盤（C.sides；sidesTag；scratchpad v5/wave-e SPEC-E §2.10）：①每句有 tag；字數：kinds 的 dot 1 字、name ≤4、text ≤20、結果行 note ≤12（{n} 算一字）、
+//   ui.off／warn ≤14、guest ≤16、full／fullNote／seedMax／noConsign ≤20（不算空白）、first ≤28；②不准「必中」「免疫」「不會被剋」「無視」「鎮店盤」「唱盤」（其餘 FORBID 照全域掃）；
+//   ③「番外」只准出現在 C.sides、career.ui.ladder.sides、waveC.stations.sideBox／stationLines.sideBox（規則卡那句＝C.sides.ui.rule）；④貼紙字（dot）只准 kinds 定義的那幾個字、不重複；
+//   ⑤「翻唱」只准出現在 C.sides、career.ui.ladder.sides、waveC.stationLines.sideBox（防跟「翻面」「翻盤」「翻開」混）。LINES-REVIEW 節「番外盤・…」
+if (C.sides && C.sides.kinds) {
+  const S = C.sides, U = S.ui || {}, SB = /必中|免疫|不會被剋|無視|鎮店盤|(?<!翻)唱盤/;   // 「唱盤」＝C 波攤位店裡唱盤／規劃書的頂點卡；「翻唱盤」不算
+  const one = (where, v, max, scene, who, ns) => {
+    if (typeof v !== 'string' || !v) { err(where, '不是字串'); return; }
+    if (!TAG_OK(C.sidesTag)) err(where, '沒有 tag（sidesTag）');
+    const t = v.replace(/\{\w+\}/g, '9'), n = len(ns ? t.replace(/\s/g, '') : t);
+    if (max && n > max) err(where, '超過 ' + max + ' 字：' + v);
+    if (SB.test(v)) err(where, '番外盤的字不准「必中」「免疫」「不會被剋」「無視」「鎮店盤」「唱盤」（SPEC-E §2.10）→ ' + v);
+    add({ scene, where, who: who || '（畫面字）', key: where.split('.').pop(), text: v, tag: C.sidesTag });
+  };
+  const dots = [];
+  for (const [t, k] of Object.entries(S.kinds)) {
+    one('sides.kinds.' + t + '.dot', k.dot, 1, '番外盤・貼紙字與種類名（封面左下的圓貼紙、攤開那行、唱片資訊）'); dots.push(k.dot);
+    one('sides.kinds.' + t + '.name', k.name, 4, '番外盤・貼紙字與種類名（封面左下的圓貼紙、攤開那行、唱片資訊）');
+    one('sides.kinds.' + t + '.text', k.text, 20, '番外盤・規則句（攤開那張屬性鈕上方、唱片資訊）', null);
+    for (const [w, v] of Object.entries(k.note || {})) one('sides.kinds.' + t + '.note.' + w, v, 12, '番外盤・結果行小字（{n} 由引擎代入）');
+  }
+  if (new Set(dots).size !== dots.length) err('sides.kinds', '貼紙字（dot）重複');
+  one('sides.ui.rule', U.rule, 40, '番外盤・規則卡那句（接在翻面那段後面；開了才出）');
+  for (const k of ['used', 'apex', 'early']) one('sides.ui.off.' + k, (U.off || {})[k], 14, '番外盤・攤開那張變灰時的小字');
+  one('sides.ui.warn.vague', (U.warn || {}).vague, 14, '番外盤・攤開那張變灰時的小字');
+  one('sides.ui.guest', U.guest, 16, '番外盤・唱片資訊（他那張）');
+  for (const k of ['full', 'fullNote', 'seedMax', 'noConsign']) one('sides.ui.' + k, U[k], 20, '番外盤・被擋的時候（買鈕、包包／櫃檯面板、挑種子、寄賣）', null, true);
+  one('sides.ui.first', U.first, 28, '番外盤・第一次（老闆一句）', '老闆');
+  // ③⑤ 「番外」「翻唱」只准在白名單；④ 貼紙字只准 kinds 的那幾個（content 裡找「貼紙」旁邊的單字不可靠：只驗 dot 的集合＝kinds）
+  const OK_BANGAI = p => /^sides\./.test(p) || p === 'career.ui.ladder.sides' || p === 'waveC.stations.sideBox' || p === 'waveC.stationLines.sideBox';
+  // E 波以前就有、跟番外盤無關的兩句（提示句「翻唱的版本」＝經典的提示、活店「翻唱片」＝翻找唱片）：逐字放行（E-1 引擎棒裁定，wave-e/rulings.md）；新加的照擋
+  const COVER_OLD = new Set(['「翻唱的版本，多到數不完。」', '平日翻唱片，週末放唱片，我的人生就這兩件事。']);
+  const OK_COVER = (p, o) => /^sides\./.test(p) || p === 'career.ui.ladder.sides' || p === 'waveC.stationLines.sideBox' || COVER_OLD.has(o);
+  const walkS = (o, p, depth) => {
+    if (depth > 8 || o == null) return;
+    if (typeof o === 'string') {
+      if (o.includes('番外') && !OK_BANGAI(p)) err('content.' + p, '「番外」只准出現在 C.sides、career.ui.ladder.sides、waveC.stations／stationLines.sideBox（SPEC-E §2.10 ③）→ ' + o.slice(0, 60));
+      if (o.includes('翻唱') && !OK_COVER(p, o)) err('content.' + p, '「翻唱」只准出現在 C.sides、career.ui.ladder.sides、waveC.stationLines.sideBox（SPEC-E §2.10 ⑤）→ ' + o.slice(0, 60));
+      return;
+    }
+    if (Array.isArray(o)) { o.forEach((v, k) => walkS(v, p + '[' + k + ']', depth + 1)); return; }
+    if (typeof o === 'object') for (const [k, v] of Object.entries(o)) { if (k === 'cards' || (p === 'sides' && (k === 'list' || k === 'map'))) continue; walkS(v, p ? p + '.' + k : k, depth + 1); }
+  };
+  walkS(C, '', 0);
+  if (!['現', '原', '翻'].every(d => dots.includes(d)) || dots.length !== 3) err('sides.kinds', '首批貼紙字＝現／原／翻（SPEC-E §11-1；換字要改這條）');
+}
 // 活店（SPEC-H §5.7、§5.8、§6.2；棒 3b，2026-11-18）：C.chat（熟客、路人）、C.ownerChat（老闆）、C.crowdUi（介面字）、C.crowdFact 的填空字。
 //   每句 add({ scene:'活店・<名字>・<分類中文>', where:'chat.<id>', who:<名字>, key:<id>（＋出場條件）, text, tag })——LINES-REVIEW 的分節就是 scene。
 //   錯誤：tag 不是「新」、id 重複、who 不在名冊、「」不成對、空格不在白名單；手寫句有拉丁字母／阿拉伯數字／《》／兩個以上中文數字＋年／事實字／寫死流派名；

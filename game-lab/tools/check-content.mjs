@@ -459,6 +459,7 @@ export function contentProblems(C, E) {
   bad.push(...lineupProblems(C, E));  // 第 I 波 I-2 上場＋耐聽
   bad.push(...marketProblems(C, E));  // 第 I 波 I-3a 市集
   bad.push(...newStallProblems(C, E));   // 第 I 波 I-3b 市集新攤＋算命心情題
+  bad.push(...sideProblems(C, E));       // 第 E 波番外盤（SPEC-E §1.5）
   bad.push(...crowdProblems(C, E));   // 活店（SPEC-H LD1–LD4）
   bad.push(...factionProblems(C, E));
   const has = (id, where) => ok(CARDS[id], where + ': 找不到卡 ' + id);
@@ -1390,6 +1391,75 @@ export function newStallProblems(C, E) {
     const lack = Object.keys(Q.moods || {}).filter(m => !(per[m] > 0));
     ok(!lack.length, 'mood-bank.json：每種心情在遊戲卡池（非頂點）至少一張有段落' + (lack.length ? '（缺：' + lack.join('、') + '）' : ''));
   } catch (e) { ok(false, '讀不到 mood-quiz.json／mood-bank.json：' + (e && e.message)); }
+  return bad;
+}
+// 第 E 波番外盤（SPEC-E §1.5 九條、§2.10 字的上限）：①名單每個 id 在 C.cards ②不是頂點卡 ③不是三張 7 星王牌 ④種類只能是 C.sides.kinds 的鍵 ⑤一張只在一種裡
+//   ⑥kinds 每種字齊全、長度照上限 ⑦老闆送的四張×三派、序章男子掉的那張不是番外盤 ⑧每種番外盤 ≥ dig.pick 張（清倉箱種類各一抽得到）⑨C.sides.list 跟 tools/sides-list.json 一致
+export function sideProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const S = C.sides;
+  if (!ok(S && typeof S === 'object', 'C.sides 要有（第 E 波番外盤）')) return bad;
+  const K = S.kinds || {}, KS = Object.keys(K), L = S.list || {}, M = S.map || {}, int = (x, lo, hi) => Number.isInteger(x) && x >= lo && x <= hi, len = x => [...String(x || '')].length;
+  ok(typeof S.on === 'boolean', 'C.sides.on 要是 true／false');
+  ok(int(S.from, 1, 30) && int(S.max, 1, 5) && int(S.perDuel, 1, 5), 'C.sides：from 1–30、max 1–5、perDuel 1–5');
+  ok(S.n && KS.every(t => int(S.n[t], 0, 3)), 'C.sides.n：每種 0–3 點');
+  ok(KS.length >= 1 && KS.every(t => ['live', 'ost', 'cover'].includes(t)), 'C.sides.kinds：首批只有 live／ost／cover（④）');
+  const aces = new Set(Object.values(C.aces || {})), seen = {};
+  for (const t of Object.keys(L)) {
+    ok(KS.includes(t), 'C.sides.list.' + t + '：種類不在 kinds（④）');
+    for (const id of Array.isArray(L[t]) ? L[t] : []) {
+      const c = C.cards[id];
+      ok(c, '番外盤 ' + id + '：不在 C.cards（①）');
+      ok(!c || !c.tier, '番外盤 ' + id + '：是頂點卡（②）');
+      ok(!aces.has(id), '番外盤 ' + id + '：是 7 星王牌（③）');
+      ok(!seen[id], '番外盤 ' + id + '：同時在 ' + seen[id] + ' 和 ' + t + '（⑤）'); seen[id] = t;
+      ok(M[id] === t, '番外盤 ' + id + '：C.sides.map 對不上（載入時建 map）');
+    }
+  }
+  ok(Object.keys(M).length === Object.keys(seen).length, 'C.sides.map 張數＝list 張數');
+  // ⑥ 字（§2.10）
+  const dots = KS.map(t => K[t] && K[t].dot);
+  for (const t of KS) {
+    const k = K[t] || {};
+    ok(int(k.lv, 1, 99), 'sides.kinds.' + t + '.lv 樂歷等級');
+    ok(len(k.dot) === 1 && len(k.name) >= 2 && len(k.name) <= 4 && len(k.text) >= 1 && len(k.text) <= 20, 'sides.kinds.' + t + '：dot 1 字、name ≤4、text ≤20');
+    ok(k.note && typeof k.note.e === 'string' && k.note.e.includes('{n}') && Object.keys(k.note).every(w => ['e', 'p'].includes(w) && len(String(k.note[w]).replace('{n}', '9')) <= 12), 'sides.kinds.' + t + '.note：e（必有）／p，含 {n}、≤12 字');
+  }
+  ok(new Set(dots).size === dots.length, 'sides.kinds 的 dot 不重複');
+  ok(KS.filter(t => ['live', 'cover'].includes(t)).every(t => K[t].note && typeof K[t].note.p === 'string'), 'sides.kinds live／cover 要有 note.p（扣你那一半）');
+  const U = S.ui || {};
+  ok(typeof U.rule === 'string' && U.rule.startsWith('番外盤：'), 'sides.ui.rule（規則卡那句，「番外盤：」開頭）');
+  ok(U.off && ['used', 'apex', 'early'].every(k => typeof U.off[k] === 'string' && U.off[k] && len(U.off[k]) <= 14), 'sides.ui.off.used／apex／early ≤14 字');
+  ok(U.warn && typeof U.warn.vague === 'string' && len(U.warn.vague) <= 14, 'sides.ui.warn.vague ≤14 字');
+  ok(typeof U.guest === 'string' && len(U.guest) <= 16, 'sides.ui.guest ≤16 字');
+  for (const k of ['full', 'fullNote', 'seedMax', 'noConsign']) ok(typeof U[k] === 'string' && U[k] && len(U[k].replace(/\s/g, '')) <= 20, 'sides.ui.' + k + ' ≤20 字（不算空白）');
+  ok(typeof U.first === 'string' && len(U.first) <= 28, 'sides.ui.first ≤28 字');
+  ok(String(U.full).includes(String(S.max)) && String(U.seedMax).includes(String(S.max)), 'sides.ui.full／seedMax 的張數＝C.sides.max');
+  const W = C.waveC || {};
+  ok((W.stations || {}).sideBox && len(W.stations.sideBox) <= 5 && typeof (W.stationLines || {}).sideBox === 'string' && len(W.stationLines.sideBox) <= 16, 'waveC.stations.sideBox ≤5 字、stationLines.sideBox ≤16 字');
+  ok((((C.career || {}).ui || {}).ladder || {}).sides && ((C.career || {}).ladder || []).some(x => x && x.key === 'sides' && x.lv === Math.min(...KS.map(t => K[t].lv))), 'career.ladder 有 sides 那一列（lv＝kinds 最小的 lv）、名字 career.ui.ladder.sides');
+  ok(S.sign && Object.keys(S.sign).every(t => TIERS.includes(t) && KS.includes(S.sign[t])) && TIERS.every(t => S.sign[t]), 'sides.sign：三派各一種（清倉箱第 4 張）');
+  const D = S.dig || {};
+  ok(typeof D.p === 'number' && D.p >= 0 && D.p <= 1 && int(D.min, 1, 15) && int(D.cap, D.min | 0, 15) && int(D.pick, 1, 50), 'sides.dig：p 0–1、min ≤ cap、pick');
+  ok(S.loot && [false, 'deck', 'played'].includes(S.loot.guard), 'sides.loot.guard：false｜deck｜played');
+  const A = S.ai || {};
+  ok(A.ev && KS.every(t => typeof A.ev[t] === 'number' && A.ev[t] >= 0) && typeof A.starPerPt === 'number' && int(A.keepGap, 0, 5), 'sides.ai：ev 每種、starPerPt、keepGap');
+  // ⑦ 開局物不是番外盤
+  for (const id of Object.values(C.gifts || {}).flat()) ok(!M[id], '老闆送的 ' + id + ' 是番外盤（⑦：開局不給）');
+  ok(!(C.enemies && C.enemies.man && M[C.enemies.man.drop]), '序章男子掉的那張是番外盤（⑦）');
+  // ⑧ 每種 ≥ dig.pick
+  for (const t of KS) ok((L[t] || []).length >= (D.pick | 0), 'sides.list.' + t + '：' + (L[t] || []).length + ' 張 < dig.pick ' + D.pick + '（⑧）');
+  // ⑨ 跟 tools/sides-list.json 一致
+  try {
+    const items = JSON.parse(fs.readFileSync(path.join(LAB, 'tools', 'sides-list.json'), 'utf8')).items || [];
+    const want = {}; for (const t of KS) want[t] = [];
+    for (const x of items) if (x && want[x.type]) want[x.type].push(x.id);
+    for (const t of KS) want[t].sort();
+    ok(KS.every(t => JSON.stringify(want[t]) === JSON.stringify(L[t] || [])), 'C.sides.list 跟 tools/sides-list.json 不一致（⑨；重跑 node game-lab/tools/bake-sides.mjs）');
+    ok(items.every(x => x && typeof x.why === 'string' && x.why), 'tools/sides-list.json 每張都要有一句理由（why）');
+  } catch (e) { ok(false, '讀不到 tools/sides-list.json：' + (e && e.message)); }
+  if (E && E.sideCfg) ok(['on', 'from', 'max', 'perDuel'].every(k => k in E.SIDES), 'engine SIDES 預設有 on／from／max／perDuel');
   return bad;
 }
 export function bgmProblems(C) {
