@@ -7,7 +7,7 @@
 > 活店（SPEC-H 第一階段）：熟客、路人、老闆閒聊、周姐知識樣板在「活店・…」各節（「說話者」欄＝名字・句子 id・出場條件；兩個泡泡用「／」隔開；{x} 由畫面代入，卡片欄位填不出來的那句就不出）。周姐的藝人介紹摘句是主站已審的原文，最後附抽樣 30 句看語感。
 > 活店第二階段（切磋＝遭遇戰）：每位熟客的切磋句在「活店・切磋・<名字>」（說話者欄多標分類：嗆、接了、改天、沒理他、他輸了、他贏了、作廢、看你這一趟的切磋輸贏），邀請面板、對決頂欄、戰利品列的字在「活店・切磋・介面字」。
 
-統計：原句 45、拍板 0、店主 71、新 1869（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 45、拍板 0、店主 71、新 1899（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 改過店主草稿的句子（等店主決定）
 
@@ -1356,6 +1356,41 @@ D §5 提示句草稿 15 句，13 句一字不差；這幾句改成含關鍵字�
 | （畫面字）・volNames[0] | 小 | 本規格新寫 | `bgm.ui.volNames[0]` |
 | （畫面字）・volNames[1] | 中 | 本規格新寫 | `bgm.ui.volNames[1]` |
 | （畫面字）・volNames[2] | 大 | 本規格新寫 | `bgm.ui.volNames[2]` |
+
+## 試玩捷徑・只在預覽站出現的「試玩」小鈕與面板（正式站看不到）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・chip | 試玩 | 本規格新寫 | `tryKit.ui.chip` |
+| （畫面字）・title | 試玩捷徑 | 本規格新寫 | `tryKit.ui.title` |
+| （畫面字）・close | 收起 | 本規格新寫 | `tryKit.ui.close` |
+| （畫面字）・note | 只在預覽站出現，正式站看不到。 | 本規格新寫 | `tryKit.ui.note` |
+| （畫面字）・skip | 跳過序章 | 本規格新寫 | `tryKit.ui.skip` |
+| （畫面字）・skipSub | 當作序章打完、回到標題，按推門就開一趟 | 本規格新寫 | `tryKit.ui.skipSub` |
+| （畫面字）・skipOk | 序章跳過了，按推門開一趟。 | 本規格新寫 | `tryKit.ui.skipOk` |
+| （畫面字）・skipDone | 序章早就打完了。 | 本規格新寫 | `tryKit.ui.skipDone` |
+| （畫面字）・dig | 直接到市集挖寶攤 | 本規格新寫 | `tryKit.ui.dig` |
+| （畫面字）・digSub | 跳到這一趟的市集，直接進挖寶攤 | 本規格新寫 | `tryKit.ui.digSub` |
+| （畫面字）・digFail | 這一趟跳不到市集。 | 本規格新寫 | `tryKit.ui.digFail` |
+| （畫面字）・spar | 叫一位想切磋的熟客進店 | 本規格新寫 | `tryKit.ui.spar` |
+| （畫面字）・sparSub | 來客畫面才叫得來；點他聊天才有切磋 | 本規格新寫 | `tryKit.ui.sparSub` |
+| （畫面字）・sparWhere | 先到來客畫面（客人等你開打時）再按。 | 本規格新寫 | `tryKit.ui.sparWhere` |
+| （畫面字）・sparOff | 店裡的人流關著，叫不來。 | 本規格新寫 | `tryKit.ui.sparOff` |
+| （畫面字）・sparBusy | 這一位剛切磋過，換下一位客人再叫。 | 本規格新寫 | `tryKit.ui.sparBusy` |
+| （畫面字）・sparCome | {name}進店了，點他聊天才會問你要不要切磋。 | 本規格新寫 | `tryKit.ui.sparCome` |
+| （畫面字）・bgm | 背景音樂狀態 | 本規格新寫 | `tryKit.ui.bgm` |
+| （畫面字）・bgmSub | 有沒有在響、放哪張、音量 | 本規格新寫 | `tryKit.ui.bgmSub` |
+| （畫面字）・bgmOn | 在響 | 本規格新寫 | `tryKit.ui.bgmOn` |
+| （畫面字）・bgmOff | 沒在響：{why} | 本規格新寫 | `tryKit.ui.bgmOff` |
+| （畫面字）・whyZone | 這個畫面不放背景音樂 | 本規格新寫 | `tryKit.ui.whyZone` |
+| （畫面字）・whyOff | 背景音樂關著（⏸ 可以打開） | 本規格新寫 | `tryKit.ui.whyOff` |
+| （畫面字）・whySound | 聲音關著 | 本規格新寫 | `tryKit.ui.whySound` |
+| （畫面字）・whyLocked | 瀏覽器還不讓出聲，點一下畫面 | 本規格新寫 | `tryKit.ui.whyLocked` |
+| （畫面字）・whyLoad | 歌還在載入 | 本規格新寫 | `tryKit.ui.whyLoad` |
+| （畫面字）・whyNone | 包包裡沒有能放的歌 | 本規格新寫 | `tryKit.ui.whyNone` |
+| （畫面字）・bgmNow | 放的是：{album} | 本規格新寫 | `tryKit.ui.bgmNow` |
+| （畫面字）・bgmNone | 放的是：（沒有） | 本規格新寫 | `tryKit.ui.bgmNone` |
+| （畫面字）・bgmVol | 音量：{name}（{v}），現在 {g} | 本規格新寫 | `tryKit.ui.bgmVol` |
 
 ## 頂點卡試做・殿堂的王牌能力（能力名・時機：說明；挑王牌面板 5×3 的順序；?apex=1）
 

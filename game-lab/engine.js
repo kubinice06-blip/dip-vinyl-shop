@@ -253,6 +253,8 @@
 //              advance 每打完一位 −1；playerDef 加品味／底氣、高粱 st.p.drinkPen＝outcome ⑪′ 每場第一次被剋多扣、跟冷門代價取大）、小物攤轉蛋機 gacha（cur.gacha、gachaCell 六格）
 //              run 新鍵 plus {id:{c,o,h}}（wornCard／playerDef 先加星再算聽膩）、pressN、drink、moodSeen；策略 drinkPick／doctorPlan／gachaWant（o.press／o.gacha／o.drink＋估值旋鈕）、luMainsX（上場讀籤）
 //              算命心情題（店主 11-23；不看 newStalls）：stallEnter／flip 收 ans {q, o} → pending.moodAns、run.moodSeen；moodAsk · moodOf · moodResult · moodPrep · moodIndex（題庫畫面 fetch、引擎只給純函式）
+//            v6 第 7 條 挖寶攤盲挑（店主 11-28「只能抽一張，最好是王牌等級，選定後才揭曉」）：開關 waveC.stall.blind.on（blindOn；關著＝逐字照舊）——三張背面那色 blind.star（5）星、
+//              不能再翻（reroll＝badAct）、蓋著的不記進 road（沒翻開＝沒看過）；策略只看背面（顏色、金邊）估值 digBlindPick（那色那池的樣本平均漲幅）· digBlindPick · blindOn
 // Policies  policies[name](duel, R, mem, content) -> act：random, high, counterHint, formula, mirrorHint, thoughtful, oracle, novice(=counterHint)
 //            只有 oracle 讀 duel.plan／e.hand／e.pile；其他只看 view(duel)＋content。thoughtful 照 curve harness：讀實際（加星後）的公開牌單、
 //            用放水後的 qNow、溢出傷害不算（打到 0 為止）、同分先取那軸星高的再取總星小的（tieHigh）
@@ -3120,6 +3122,8 @@
       promoN: 3, promoLexp: 10, homeLexp: 30, demoLexp: 15, consignRounds: 2,
       market: { cards: 6, gear: 3, bag: { price: 2500, n: 3, apex: 0.06, max: 1 } },
       dare: { from: 30, p: 0.35, tough: { atk: 1 }, tank: { hp: 4 } },   // from 看「這一趟剛打完第幾位」，不看最遠紀錄（CRITIQUE 3.2）
+      // v6 第 7 條 挖寶攤盲挑：on＝只能挑一張、挑了才翻；star＝每張背面那色至少幾星（同色那池少於 min 張就把戰力門檻降 1）；est＝策略估值抽幾張樣本。引擎預設關＝逐字照舊
+      blind: { on: false, star: 5, min: 12, est: 8 },
       digNames: [                                                  // 攤名＝曲風／地區 ×3（不是篩選）；lit＝店裡對到的箱（shops/dip.json prop id）
         { id: 'jazzTeacher', genres: ['jazz'], lit: ['crate-jazz'] },
         { id: 'bandRoom', genres: ['rock'], lit: ['isl-0a'] },
@@ -3388,6 +3392,7 @@
       cur.name = nm ? nm.id : null; cur.lit = nm && Array.isArray(nm.lit) ? nm.lit.slice() : []; cur.rolls = 0;
       if (mk && run.digN > 3) cur.digN = run.digN | 0;            // 第 I 波 I-3a 樂歷 Lv7：挖寶四張選一
       cur.cards = digDeal(run, content, cur, pos);
+      if (blindOn(content)) { cur.blind = 1; return cur; }         // v6 盲挑：蓋著的不記進 road（沒翻開＝沒看過；收的那張進包包）
     } else if (kind === 'trade') {
       const pool = wcPool(content, wcTh(content, pos, 'good', T)), skip = wcSkip(run);
       const rare = pool.filter(c => ['epic', 'legendary'].includes(rarity(c)));
@@ -3443,27 +3448,63 @@
     return cur;
   }
   // 挖寶攤三張：背面露顏色（經／冷／硬各一，topAttr；同色不足 colorMin 張就把門檻降 1）；攤名曲風 ×3；15% 一格換金邊盤
+  //   v6 盲挑（blindOn）：每張＝背面那色 ≥ blind.star 星（那色那池少於 blind.min 張就降戰力門檻）；路上出現過的只當備用（wcPick 不夠才放回）；金邊那張也要 ≥ star 星（沒有才照金邊池）
   function digDeal(run, content, cur, pos) {
     const W = wcCfg(content), P = W.pools, nm = digNameOf(W.stall, cur.name), key = cur.key + '#roll' + cur.rolls, skip = wcSkip(run);
     const hit = c => !!nm && ((Array.isArray(nm.genres) && (c.genres || []).some(g => nm.genres.includes(g))) || (Array.isArray(nm.region) && nm.region.includes(c.region)));
-    const out = [];
+    const B = blindOn(content) ? W.stall.blind : null, out = [];
     for (const a of ATTRS) {
+      if (B) { const id = wcPick(digColorPool(run, content, pos, a, out), key + '#' + a, 1, skip, c => (hit(c) ? 3 : 1))[0]; if (id) out.push(id); continue; }
       let th = wcTh(content, pos, 'power', run.tier), pool;
       for (;;) { pool = wcPool(content, th).filter(c => topAttr(c) === a && !skip.has(c.id) && !out.includes(c.id)); if (pool.length >= P.colorMin || th <= 3) break; th--; }
       const id = wcPick(pool, key + '#' + a, 1, null, c => (hit(c) ? 3 : 1))[0];
       if (id) out.push(id);
     }
     for (let j = out.length; j < (cur.digN | 0); j++) {           // 第 I 波 I-3a 樂歷 Lv7（cur.digN 4）：多一張不限色（市集才有；C 波 cur 沒有 digN＝逐字）
-      const pool = wcPool(content, wcTh(content, pos, 'power', run.tier)).filter(c => !skip.has(c.id) && !out.includes(c.id));
-      const id = wcPick(pool, key + '#x' + j, 1, null, c => (hit(c) ? 3 : 1))[0];
+      const pool = B ? digColorPool(run, content, pos, null, out) : wcPool(content, wcTh(content, pos, 'power', run.tier)).filter(c => !skip.has(c.id) && !out.includes(c.id));
+      const id = wcPick(pool, key + '#x' + j, 1, B ? skip : null, c => (hit(c) ? 3 : 1))[0];
       if (id) out.push(id); else break;
     }
     cur.gold = null;
     if (out.length && hash01(key + '#gold') < W.loot.gold) {
-      const g = wcPick(wcPool(content, wcTh(content, pos, 'gold', run.tier)), key + '#g', 1, wcSkip(run, out), null, ctxOwned())[0];
+      const gp = wcPool(content, wcTh(content, pos, 'gold', run.tier)), g5 = B ? gp.filter(c => peak(c) >= B.star) : gp;
+      const g = wcPick(g5.length ? g5 : gp, key + '#g', 1, wcSkip(run, out), null, ctxOwned())[0];
       if (g) { out[out.length - 1] = g; cur.gold = g; }
     }
     return out;
+  }
+  // v6 盲挑：挖寶攤那一色（a null＝不限色）的池：戰力門檻起、那色 ≥ star 星、不含包包與 except；少於 min 張就降門檻（最低 3）。快取（content.cards × 門檻 × 色 × 星）
+  const DIG_POOL = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function digColorBase(content, th, a, s) {
+    const cards = content.cards || {}; let M = DIG_POOL && DIG_POOL.get(cards);
+    if (!M) { M = new Map(); if (DIG_POOL) DIG_POOL.set(cards, M); }
+    const k = th + '|' + (a || '*') + '|' + s; if (M.has(k)) return M.get(k);
+    const p = wcPool(content, th).filter(c => a ? topAttr(c) === a && star(c, a) >= s : peak(c) >= s); M.set(k, p); return p;
+  }
+  function digColorPool(run, content, pos, a, except) {
+    const B = wcCfg(content).stall.blind, bag = new Set([].concat(run.bag || [], except || []));
+    let th = wcTh(content, pos, 'power', run.tier), pool;
+    for (;;) { pool = digColorBase(content, th, a, B.star | 0).filter(c => !bag.has(c.id)); if (pool.length >= (B.min | 0) || th <= 3) break; th--; }
+    return pool;
+  }
+  // v6 盲挑的策略（sim、自動玩）：只看背面（顏色、金邊），每張估「那一池的樣本（est 張、照 id 等距取）收進來平均漲多少」，回最高那張的序號；都不漲＝−1
+  function digBlindPick(run, content, cur) {
+    const B = wcCfg(content).stall.blind, K = Math.max(1, B.est | 0), base = bagScore(content, run.bag, run), memo = {};
+    const est = (pool, tag) => {
+      if (tag in memo) return memo[tag];
+      if (!pool.length) return (memo[tag] = -Infinity);
+      let s = 0, n = 0; const step = pool.length / Math.min(K, pool.length);
+      for (let j = 0; j < Math.min(K, pool.length); j++) { const id = pool[Math.floor((j + 0.5) * step)].id; s += bagScore(content, run.bag.concat([id]), run) - base; n++; }
+      return (memo[tag] = s / n);
+    };
+    let bi = -1, bv = BAG_EPS;
+    (cur.cards || []).forEach((id, i) => {
+      const c = cardOf(content, id); if (!c || run.bag.includes(id)) return;
+      const v = cur.gold === id ? est(wcPool(content, wcTh(content, run.pos, 'gold', run.tier)).filter(x => peak(x) >= B.star && !run.bag.includes(x.id)), 'gold')
+        : est(digColorPool(run, content, run.pos, topAttr(c), null), topAttr(c));
+      if (v > bv) { bv = v; bi = i; }
+    });
+    return bi;
   }
   // 演唱會門票：再買 n 張的總價（第 k 張 base＋step×(k−1)，整趟累計 run.tickets）；gigKeepN＝「買到剩 $4,000」買得起的張數
   function gigPrice(run, content, n) { const G = wcCfg(content).stall.gig; let s = 0; for (let k = 0; k < (n | 0); k++) s += G.base + G.step * ((run.tickets | 0) + k); return s; }
@@ -3481,6 +3522,7 @@
       case 'dig':
         if (a === 'take') { if (!(cur.cards || []).includes(ch.cardId) || run.bag.includes(ch.cardId)) return 'notOffered'; gain(ch.cardId, true); S.digTake++; return stallNext(run, content); }
         if (a === 'reroll') {
+          if (cur.blind) return 'badAct';                            // v6 盲挑：不能再翻（背面一樣只看得到顏色）
           const c = ST.reroll * (cur.rolls + 1); if (run.money < c) return 'money';
           wcSpend(run, 'reroll', c); cur.rolls++; S.rerolls++; cur.cards = digDeal(run, content, cur, run.pos); wcRoad(run, cur.cards);
           effects.push({ reroll: cur.rolls, spend: c }); return null;
@@ -3644,6 +3686,7 @@
   //     moodSeen [題目 id]（算命攤問過的心情題；跟 newStalls 無關）
   //   亂數一律 hash01(seedKey#runNo#market#打完第幾位#…)，不吃 run.rng
   const nsOn = content => !!fairCfg(content).newStalls;
+  const blindOn = content => !!((wcCfg(content).stall || {}).blind || {}).on;   // v6 第 7 條 挖寶攤盲挑
   // 熱美式／高粱擺不擺：newStalls 開著、而且不是每一趟第一個市集（規格 §6.2-7「第一次就喝到冬瓜茶」；sim 棒：第一個市集就有熱美式／高粱＝新手第 6–10 位變簡單，D2 33.7% 破 33%）
   const drinkMenu = (run, content) => nsOn(content) && !(run && run.pending && run.pending.type === 'stall' && run.pending.mode === 'market' && run.pending.first);
   const DRINK_KINDS = ['tea', 'coffee', 'sorghum'];
@@ -3787,6 +3830,7 @@
       case 'dig':
         if (a === 'take') { if (!offered(ch.cardId)) return 'notOffered'; gain(ch.cardId, true); S.digTake++; return CLOSE; }
         if (a === 'reroll') {
+          if (cur.blind) return 'badAct';                            // v6 盲挑：不能再翻
           const c = ST.reroll * (cur.rolls + 1); if (run.money < c) return 'money';
           wcSpend(run, 'reroll', c); cur.rolls++; S.rerolls++; cur.cards = digDeal(run, content, cur, run.pos); wcRoad(run, cur.cards);
           effects.push({ reroll: cur.rolls, spend: c }); return STAY;
@@ -4265,7 +4309,7 @@
     const base = bagScore(content, run.bag, run);
     const useful = ids => (ids || []).some(id => !run.bag.includes(id) && bagScore(content, run.bag.concat([id]), run) - base > BAG_EPS);
     switch (k) {
-      case 'dig': return useful(g.cards) ? 2 : 0;
+      case 'dig': return g.blind ? (digBlindPick(run, content, g) >= 0 ? 2 : 0) : useful(g.cards) ? 2 : 0;   // v6 盲挑：只看背面估
       case 'trade': return useful((g.cards || []).filter(id => run.money - priceOf(content, id) >= reserve)) ? 1.2 : 0;
       case 'warehouse': return (g.relics || []).length && relicN(run, content) < CFG.relicMax ? 1.2 : useful(g.cards) ? 1 : 0;
       case 'gear': {
@@ -5097,7 +5141,9 @@
     const bestOf = ids => { let b = null, g = BAG_EPS; for (const id of ids || []) { if (run.bag.includes(id)) continue; const x = gainOf(id); if (x > g) { g = x; b = id; } } return b; };
     const act = (a, x) => Object.assign({ type: 'stallAct', act: a }, x || {});
     switch (cur.kind) {
-      case 'dig': { const b = bestOf(cur.cards); if (b) return act('take', { cardId: b }); if (o.reroll && cur.rolls < 1 && base < 14.9 && run.money - reserve >= ST.reroll * (cur.rolls + 1)) return act('reroll'); return act('skip'); }
+      case 'dig': {
+        if (cur.blind) { const i = digBlindPick(run, content, cur); return i >= 0 ? act('take', { cardId: cur.cards[i] }) : act('skip'); }   // v6 盲挑：只看背面
+        const b = bestOf(cur.cards); if (b) return act('take', { cardId: b }); if (o.reroll && cur.rolls < 1 && base < 14.9 && run.money - reserve >= ST.reroll * (cur.rolls + 1)) return act('reroll'); return act('skip'); }
       case 'consignGet': { const b = bestOf(cur.cards) || (cur.cards || []).find(id => !run.bag.includes(id)); return b ? act('take', { cardId: b }) : act('skip'); }
       case 'trade': case 'market': {
         const afford = (cur.cards || []).filter(id => !run.bag.includes(id) && run.money - priceOf(content, id) >= reserve);
@@ -6151,7 +6197,7 @@
     WAVEC, wcCfg, floorAt, wcTh, wcPool, lootRow, chestRow, stallSession, stallResume, stallUnlocked, stallLadder, cPolicy, gigPrice, gigKeepN, draftPlan, expLevel,
     deadWeight, isCheckpoint, sellCore, setCtx, lexpBase, fixWaveC, wcFound,
     FORTUNE_SLIPS, FAIR_FREE, FAIR_KINDS, fairCfg, fairOn, isMarket, marketView, fortunesOf, studioOffer, fixMarket, fairValue, stallLeave,   // 第 I 波 I-3a 市集
-    nsOn, mkHomeLexp, DRINK_KINDS, GACHA_CELLS, plusOf, pressCopy, effCard, drinkOf, doctorGoods, gachaCell, moodPrep, moodAsk, moodOf, moodResult, moodIndex,   // 第 I 波 I-3b 市集新攤＋算命心情題
+    nsOn, blindOn, digBlindPick, mkHomeLexp, DRINK_KINDS, GACHA_CELLS, plusOf, pressCopy, effCard, drinkOf, doctorGoods, gachaCell, moodPrep, moodAsk, moodOf, moodResult, moodIndex,   // 第 I 波 I-3b 市集新攤＋算命心情題
     CAREER, LEXP_ROUTE, careerCfg, careerGain, posFought, careerLevel, careerNeed, careerXpAt, careerPoints, talentDef, talentCost, talentOpen, talentBuy, talentSell, careerRespec,
     talentArgs, applyTalent, gainXp, xpNeed, levelHpAt, careerLive, careerRecurve, gigRoom, ladderList, ladderAt, ladderNext, careerDraw, careerDrawRarity, profLevel, profGain, profFirst, careerDeposit, careerFix, relicPref, seedsOf,
     FAC_OPS, FAC_NOTE_ORDER, facCfg, facPickDef, facFxOf, facDue, facOffer, apexAbilityOf, fixFac,

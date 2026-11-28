@@ -13,7 +13,7 @@
 //      「再看看」不動 →「不逛了」+$2,000 → 回來客；P3 另一場：一般輪必點 ≤4 下（預覽、確定、每站一下）
 //   3  選組後「今天不逛了」：做完第 ① 站、在第 ② 站按 → 確認 → +$1,000（剩一站）→ 回來客
 //   4  重新整理：選組前（回到選組、同兩組）、站中（同一站同一批貨、人直接站在那裡）、寄賣領取時（先到櫃檯領、同三張；領完回到選組）：run 都還在
-//   5  中繼點那輪（打完第 10 位）：兩站之後黑膠市集（四分頁：唱片／器材／門票／福袋）→ 錄音室；門票價錢梯（$3,000、再一張 $4,000）、「買到剩 $4,000」；
+//   5  中繼點那輪（打完第 10 位）：（v6 第 7 條盲挑）挖寶攤三張蓋著、背面寫那色星數、沒有「再翻一次」→ 點一張＝只翻那張收進包包（另外兩張蓋著、沒有鈕）、停一下自己走；兩站之後黑膠市集（四分頁：唱片／器材／門票／福袋）→ 錄音室；門票價錢梯（$3,000、再一張 $4,000）、「買到剩 $4,000」；
 //      P3：中繼點必點 ≤7 下（不含市集裡自選的）
 //   6  踢館帖（打完第 35 位、固定種子表裡第一個會出踢館帖的）：第 ② 站門口遞帖 → 接「狠角色」→ 這一輪客人品味 +1（點頭像看得到）、來客條頭像有踢館帖記號
 //   7  自動玩一路過戰利品列、寶箱、攤位（第 4 位起到第 7 位）
@@ -288,7 +288,16 @@ async function runSize(browser, w, h) {
       page._clicks = 0; let extra = 0; const t0 = Date.now();
       await pickRow(page, 0);
       const okA = await waitStation(page, 'snack'); await oneTap(page, 'snack');
-      const okB = await waitStation(page, 'dig'); await oneTap(page, 'dig');
+      const okB = await waitStation(page, 'dig');
+      // v6 盲挑（pick 模式也一樣）：三張蓋著、背面一行、沒有再翻；點第 1 張＝只翻那張、收進包包，另外兩張蓋著，停一下自己走到黑膠市集（一下）
+      await page.waitForSelector('.lb-sheet.stall .st-back[data-dig="0"]', { timeout: 5000 }); await sleep(150);
+      const bd = await C(page, () => { const s = document.querySelector('.lb-sheet.stall'), cur = window.__lab.run.pending.cur;
+        return { blind: !!cur.blind, cards: cur.cards.slice(), backs: s.querySelectorAll('.st-c.st-down .st-back[data-dig]').length, lines: s.querySelectorAll('.st-down .st-dcol').length, reroll: !!s.querySelector('[data-a=reroll]'), skip: !!s.querySelector('[data-a=skip]') }; });
+      await tapReady(page, '.lb-sheet.stall .st-back[data-dig="0"]'); await sleep(300);
+      const bs = await C(page, (id) => { const s = document.querySelector('.lb-sheet.stall');
+        return { got: s ? s.querySelectorAll('.st-c.st-got').length : -1, left: s ? s.querySelectorAll('.st-c.st-down.st-left').length : -1, btns: s ? s.querySelectorAll('[data-dig]').length : -1, inBag: window.__lab.run.bag.includes(id) }; }, bd.cards[0]);
+      const okBl = bd.blind && bd.backs === 3 && bd.lines === 3 && !bd.reroll && bd.skip && bs.got === 1 && bs.left === 2 && bs.btns === 0 && bs.inBag &&
+        !(await C(page, ids => ids.some(id => window.__lab.run.bag.includes(id)), bd.cards.slice(1)));
       const okM = await waitStation(page, 'market');
       const tabs = await C(page, () => [...document.querySelectorAll('.lb-sheet.stall .st-tabs [data-tab]')].map(b => b.textContent));
       // 門票分頁（自選的，不算 P3）：價錢梯、買到剩 $4,000
@@ -307,9 +316,9 @@ async function runSize(browser, w, h) {
       const tt = await toasts(page);
       const okTk = g1 === fill(x.gigBuy, { k: 1, n: '3,000' }) && g2 === fill(x.gigBuy, { k: 2, n: '7,000' }) && keep.n >= 1 && keep.t.indexOf(fill(x.gigKeep, { n: '4,000' })) === 0 &&
         k1.tk === keep.tk + keep.n && k1.m >= 4000 && k1.m - k1.next < 4000;
-      const ok = s0.p.cp && JSON.stringify(s0.p.post) === '["market","studio"]' && postTx === fill(x.then, { list: [x.st.market, x.st.studio].join('・') }) && okA && okB && okM &&
+      const ok = s0.p.cp && JSON.stringify(s0.p.post) === '["market","studio"]' && postTx === fill(x.then, { list: [x.st.market, x.st.studio].join('・') }) && okA && okB && okBl && okM &&
         JSON.stringify(tabs) === JSON.stringify(x.marketTabs) && okTk && back && tt.includes(fill(x.demo, { n: 15 })) && taps <= 7;
-      record(5, size, ok && !errs(page).length, `中繼點 cp ${s0.p && s0.p.cp} 之後「${postTx}」；市集分頁 ${JSON.stringify(tabs)}；門票「${g1}」→「${g2}」；「${keep.t}」買 ${keep.n} 張 ${keep.m}→${k1.m}（下一張 ${k1.next}）；` +
+      record(5, size, ok && !errs(page).length, `中繼點 cp ${s0.p && s0.p.cp} 之後「${postTx}」；挖寶盲挑 ${bd.blind}：蓋著 ${bd.backs}、背面一行 ${bd.lines}、再翻 ${bd.reroll}、不收 ${bd.skip} → 點第 1 張 翻開 ${bs.got}、蓋著 ${bs.left}、剩鈕 ${bs.btns}、包包 ${bs.inBag}；市集分頁 ${JSON.stringify(tabs)}；門票「${g1}」→「${g2}」；「${keep.t}」買 ${keep.n} 張 ${keep.m}→${k1.m}（下一張 ${k1.next}）；` +
         `錄音室 ${tt.includes(fill(x.demo, { n: 15 }))}；回來客 ${back}；P3 中繼點 ${taps} 下（≤7，市集自選 ${extra} 下不算）、${secs} 秒；${errTxt(page)}`);
     } catch (e) { record(5, size, false, 'error ' + e.message); }
     await ctx.close();

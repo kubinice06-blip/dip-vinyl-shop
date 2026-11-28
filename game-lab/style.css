@@ -1497,3 +1497,17 @@ body.lb-tune-open{overflow:hidden;}
 .dl .tile .cvw .wn ~ .pz,.dl .tile .cvw .al ~ .pz{top:15px;}
 .dl .nmrow .st>.sk{position:relative;display:inline-flex;align-items:center;line-height:0;padding:1px;background:#fff;border:1px solid var(--ink,#111);}   /* I-3b 對決：喝著的那杯 */
 .dl .nmrow .st>.sk.pen::after{content:'';position:absolute;right:-3px;top:-3px;width:6px;height:6px;border-radius:50%;background:var(--red);border:1px solid #fff;}
+
+/* ---------- v6 試玩捷徑（店主 11-28；只在預覽站 *.pages.dev 或 ?try=1，ui.js tryKit）：左上角半透明小鈕＋小面板，掛在 body、不進 #app ---------- */
+.lb-try-chip{position:fixed;left:2px;top:36px;z-index:2147482000;min-width:0;height:22px;padding:0 6px;border:1px solid var(--ink);border-radius:11px;
+  background:rgba(255,255,255,.6);color:var(--ink);font:700 11px/20px var(--zh);letter-spacing:.08em;opacity:.7;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.lb-try-chip[aria-expanded="true"]{opacity:1;background:#fff;}
+.lb-try{position:fixed;left:8px;top:62px;z-index:2147482001;width:min(300px,calc(100vw - 16px));max-height:calc(100% - 72px);overflow:auto;-webkit-overflow-scrolling:touch;
+  background:#fff;border:2px solid var(--ink);box-shadow:0 6px 20px rgba(0,0,0,.25);padding:6px 8px 8px;font-family:var(--zh);color:var(--ink);}
+.lb-try .hd{display:flex;align-items:center;justify-content:space-between;margin:0 0 4px;}
+.lb-try .hd b{font-size:14px;letter-spacing:.08em;}
+.lb-try .x{width:36px;height:36px;border:0;background:none;color:var(--ink);font-size:16px;cursor:pointer;}
+.lb-try .lb-btn{margin:0 0 6px;padding:6px 10px;min-height:44px;}
+.lb-try .bg{border:1px dashed var(--ink);padding:5px 8px;margin:0 0 6px;font-size:12px;line-height:1.55;letter-spacing:.02em;}
+.lb-try .bg[hidden]{display:none;}
+.lb-try .nt{margin:0;font-size:11px;color:var(--gray);letter-spacing:.02em;}

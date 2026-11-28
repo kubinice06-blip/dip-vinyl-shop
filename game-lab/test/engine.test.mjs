@@ -100,7 +100,8 @@ const WC_OFF = { loot: { on: false }, chest: { on: false }, stall: { on: false }
 const LUOFF = c => Object.assign({}, c, { lineup: Object.assign({}, (c && c.lineup) || {}, { on: false }), wear: Object.assign({}, (c && c.wear) || {}, { on: false }) });
 const C = LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS, waveC: WC_OFF, trial: Object.assign({}, C0.trial, { guestHpSteps: [], firstNeed: 0, firstHp: C0.trial.levelHp }) }));
 //   第 I 波 I-3a 市集（SPEC-I §6）：舊段落的 CW 一律用 stall.mode 'pick' 的拷貝（MKOFF）＝C 波二選一的黃金與斷言照舊；出貨 content 改 'market' 也照過。市集在 #37 用 'market' 的拷貝驗
-const MKOFF = c => Object.assign({}, c, { waveC: Object.assign({}, (c && c.waveC) || {}, { stall: Object.assign({}, ((c && c.waveC) || {}).stall || {}, { mode: 'pick' }) }) });
+//   v6 第 7 條 挖寶攤盲挑（content waveC.stall.blind.on 出貨 true）：MKOFF 也一起把 blind 關掉＝舊段落的挖寶（翻開、再翻、黃金）照舊；盲挑在 #39 用開著的拷貝驗
+const MKOFF = c => Object.assign({}, c, { waveC: Object.assign({}, (c && c.waveC) || {}, { stall: Object.assign({}, ((c && c.waveC) || {}).stall || {}, { mode: 'pick', blind: Object.assign({}, ((((c && c.waveC) || {}).stall || {}).blind) || {}, { on: false }) }) }) });
 const CW = MKOFF(LUOFF(Object.assign({}, C0, { cards: CARDS, bins: BINS })));
 // 第 I 波 I-0：關掉第一位升級（firstNeed 0、firstHp＝levelHp）＝I-0 以前的局內升級（黃金比對用）
 const I0OFF = c => Object.assign({}, c, { trial: Object.assign({}, c.trial || {}, { firstNeed: 0, firstHp: c.trial && Number.isInteger(c.trial.levelHp) ? c.trial.levelHp : 1 }) });
@@ -6496,6 +6497,107 @@ section('38 第 I 波 I-3b 市集新攤（SPEC-I §6.3、§6.6、§10；契約 w
     const p1 = EN.lineupPolicy(r, KL), p0 = EN.lineupPolicy(r0, KL), pOff = EN.lineupPolicy(r, KL0), pOff0 = EN.lineupPolicy(r0, KL0);
     ok(J(pOff) === J(pOff0) && p1 && p0, 'newStalls off: lineupPolicy ignores slips', { pOff, pOff0 });
     ok(r.fortune.some(f => f.slip !== 'omen'), 'flipped info slips', r.fortune.map(f => f.slip)); }
+});
+
+section('39 v6 第 7 條 挖寶攤盲挑（店主 11-28）：blind 關＝逐字、三張背面那色 5 星、只收一張、不能再翻、蓋著的不進 road、存讀檔不換、Lv7 四張、策略只看背面、整趟合法', () => {
+  EN.setCtx(null);
+  const J = x => JSON.stringify(x);
+  const BL = (c, on) => Object.assign({}, c, { waveC: Object.assign({}, c.waveC, { stall: Object.assign({}, c.waveC.stall, { mode: 'market', blind: Object.assign({}, C0.waveC.stall.blind, { on }) }) }) });
+  const KB = BL(CW, true), KB0 = BL(CW, false), KP = Object.assign({}, KB, { waveC: Object.assign({}, KB.waveC, { stall: Object.assign({}, KB.waveC.stall, { mode: 'pick' }) }) });
+  const LUW = c => Object.assign({}, c, { lineup: Object.assign({}, C0.lineup, { on: true }), wear: Object.assign({}, C0.wear, { on: true }) });
+  const KBL = BL(LUW(CW), true);
+  const B = EN.wcCfg(KB).stall.blind;
+  ok(C0.waveC.stall.blind && C0.waveC.stall.blind.on === true && EN.WAVEC.stall.blind.on === false && B.star === 5, 'content ships blind on; engine default off; star 5', B);
+  const newM = (sk, K, o) => { const r = EN.newRun(K, Object.assign({ seedKey: sk, runNo: 2, ace: 'hall', prologue: false }, o || {})); EN.choose(r, K, EN.bargainPolicy(r, K)); return r; };
+  const toStall = (r, K, pos) => {
+    for (let g = 0; g < 900 && !r.over; g++) {
+      const st = EN.nextStep(r);
+      if (st === 'stall' && r.pos >= pos) return r;
+      if (r.pending) { const ch = EN.cPolicy(r, K, {}); const x = EN.choose(r, K, ch); if (!ok(x.ok, 'toStall choice ok', { ch, err: x.error })) break; continue; }
+      if (!r.duel) for (const ch of EN.lineupPrep(r, K)) EN.choose(r, K, ch);
+      if (!r.pending && !r.duel && r.lineupDue && EN.runPolicy(r, K)) { EN.choose(r, K, EN.runPolicy(r, K)); continue; }
+      fwin(r, K);
+    }
+    return r;
+  };
+  const act = (r, K, a, x) => EN.choose(r, K, Object.assign({ type: 'stallAct', act: a }, x || {}));
+  const enter = (r, K, kind) => EN.choose(r, K, { type: 'stallEnter', kind });
+  const force = (r, kind) => { const p = r.pending; if (!p.tiles.includes(kind)) p.tiles.push(kind); p.cur = null; p.went = {}; p.acts = {}; p.seen = {}; p.left = p.slots = 3; };
+  const top = id => EN.topAttr(CW.cards[id]), st = id => CW.cards[id][top(id)] | 0;
+
+  // ---- blind 關＝逐字：blind on:false 的拷貝跟沒有 blind 鍵的 content 跑出來一樣（市集、挖寶照 I-3a 翻開再收） ----
+  { const strip = c => { const S2 = Object.assign({}, c.waveC.stall); delete S2.blind; return Object.assign({}, c, { waveC: Object.assign({}, c.waveC, { stall: S2 }) }); };
+    let same = 0, n = 0;
+    for (let s = 0; s < (QUICK ? 2 : 6); s++) { const a = toStall(newM('bl-off-' + s, KB0), KB0, 31), b = toStall(newM('bl-off-' + s, strip(KB0)), strip(KB0), 31); n++; if (J(a) === J(b)) same++; }
+    eq(same, n, 'blind off = no blind key (market runs to pos 31 identical)'); }
+
+  // ---- 三張：經／冷／硬各一（金邊那格例外）、背面那色 ≥5 星、都不在包包、cur.blind；蓋著的不進 road ----
+  { let n = 0, bad = 0, five = 0, cols = 0, gold = 0, road = 0;
+    for (let s = 0; s < (QUICK ? 24 : 80); s++) {
+      const r = toStall(newM('bl-deal-' + s, KB), KB, 6 + (s % 5) * 10); if (!r.pending || r.pending.mode !== 'market') continue;
+      force(r, 'dig'); const road0 = (r.road || []).slice();
+      if (!enter(r, KB, 'dig').ok) { bad++; continue; }
+      const cur = r.pending.cur; n++;
+      if (!cur.blind || cur.cards.length !== 3 || cur.cards.some(id => r.bag.includes(id) || !CW.cards[id])) bad++;
+      if (cur.cards.every(id => st(id) >= 5)) five++;
+      if (new Set(cur.cards.map(top)).size === 3) cols++; else if (cur.gold) gold++;
+      if (J(r.road || []) === J(road0)) road++;
+    }
+    ok(n >= 10 && bad === 0, 'dig deals 3 blind cards not in bag', { n, bad });
+    eq(five, n, 'every card is 5 stars on its back colour');
+    eq(cols + gold, n, 'one of each colour unless the gold slot took the last');
+    eq(road, n, 'face-down cards are not added to road'); }
+
+  // ---- 動作：take 一張＝收進包包、攤子關、扣時段；reroll＝badAct（不改 run）；回攤位再進＝同一批；存讀檔中途同一批 ----
+  { const r = toStall(newM('bl-act', KB), KB, 16); force(r, 'dig'); r.money = 50000;
+    ok(enter(r, KB, 'dig').ok, 'enter dig'); const p = r.pending, cards = p.cur.cards.slice();
+    const b0 = J(r); eq(act(r, KB, 'reroll').error, 'badAct', 'blind: reroll is not allowed'); eq(J(r), b0, 'reroll error leaves the run untouched');
+    ok(act(r, KB, 'skip').ok && p.cur === null && p.left === 3 && p.seen.dig, 'skip = back, no slot');
+    ok(enter(r, KB, 'dig').ok && J(r.pending.cur.cards) === J(cards), 're-enter: same three face-down cards');
+    const r2 = JSON.parse(J(r)); EN.fixMarket && EN.fixMarket(r2, KB); ok(J(r2.pending.cur.cards) === J(cards) && r2.pending.cur.blind, 'save／load mid-stall: same cards, still blind');
+    const id = cards[1], m0 = r.money, x = act(r, KB, 'take', { cardId: id });
+    ok(x.ok && r.bag.includes(id) && cards.filter(c => c !== id).every(c => !r.bag.includes(c)) && r.pending.cur === null && r.pending.left === 2 && r.pending.went.dig === 1 && r.money === m0, 'take one: only that one in the bag, stall closes, one slot, no money', x.effects);
+    eq(enter(r, KB, 'dig').error, 'went', 'cannot re-enter after taking'); }
+
+  // ---- pick 模式（C 波二選一，緊急退回）也盲挑：不能再翻、不收照 +$200 ----
+  { const r = toStall(newM('bl-pick', KP), KP, 6); let cur = null;
+    for (let g = 0; g < 8 && r.pending && r.pending.type === 'stall'; g++) { if (r.pending.cur && r.pending.cur.kind === 'dig') { cur = r.pending.cur; break; } if (r.pending.pick == null) { const gi = r.pending.groups.findIndex(G => G.includes('dig')); EN.choose(r, KP, { type: 'stallPick', group: gi >= 0 ? gi : 0 }); continue; } EN.choose(r, KP, EN.cPolicy(r, KP, {})); }
+    ok(cur && cur.blind && cur.cards.every(id => st(id) >= 5), 'pick mode: blind dig', cur);
+    if (cur) { r.money = 9000; eq(act(r, KP, 'reroll').error, 'badAct', 'pick mode: no reroll'); const m0 = r.money; ok(act(r, KP, 'skip').ok && r.money === m0 + EN.wcCfg(KP).stall.skipCash, 'pick mode: skip still pays'); } }
+
+  // ---- Lv7（digN 4）：四張、第 4 張不限色也 ≥5 星 ----
+  { const r = toStall(newM('bl-dig4', KB, { digN: 4 }), KB, 6); force(r, 'dig'); enter(r, KB, 'dig'); const c4 = r.pending.cur.cards;
+    ok(c4.length === 4 && new Set(c4).size === 4 && c4.every(id => st(id) >= 5 && !r.bag.includes(id)), 'Lv7: four blind cards, all 5 stars', c4); }
+
+  // ---- 策略只看背面：把牌面換成同色的別張（背面一樣）＝挑同一格；digBlindPick 回 −1 才不收 ----
+  { let same = 0, n = 0, took = 0;
+    for (let s = 0; s < (QUICK ? 10 : 40); s++) {
+      const r = toStall(newM('bl-pol-' + s, KBL, { ace: TIERS[s % 3] }), KBL, 11 + (s % 4) * 5); if (!r.pending || r.pending.mode !== 'market') continue;
+      force(r, 'dig'); enter(r, KBL, 'dig'); const cur = r.pending.cur, i = EN.digBlindPick(r, KBL, cur); n++;
+      const r2 = JSON.parse(J(r)), c2 = r2.pending.cur;
+      c2.cards = c2.cards.map((id, k) => { if (c2.gold === id) return id; const a = top(id); const alt = Object.keys(CW.cards).sort().find(x => x !== id && !r2.bag.includes(x) && !c2.cards.includes(x) && !CW.cards[x].tier && EN.topAttr(CW.cards[x]) === a && (CW.cards[x][a] | 0) >= 5); return alt || id; });
+      if (EN.digBlindPick(r2, KBL, c2) === i) same++;
+      const ch = EN.cPolicy(r, KBL, { peek: false }); if (ch && ch.act === 'take') { took++; if (ch.cardId !== cur.cards[i]) same -= 100; } else if (i >= 0) same -= 100;   // peek false＝不先回攤位看別攤
+    }
+    ok(n >= 5 && same === n, 'blind policy depends only on the backs (colour, gold)', { n, same });
+    ok(took > 0, 'policy takes a blind card when the colour helps', { took, n }); }
+
+  // ---- 整趟 smart（盲挑開、上場制開）：每個選擇都合法、有收挖寶 ----
+  { let bad = 0, dig = 0, runs = 0;
+    for (let s = 0; s < (QUICK ? 4 : 12); s++) {
+      const r = newM('bl-run-' + s, KBL, { ace: TIERS[s % 3] }), R = lcg(EN.fnv1a32('bl-run-' + s)), mem = {};
+      for (let g = 0; g < 4000 && !r.over && r.pos <= 46; g++) {
+        if (r.pending) { const ch = EN.cPolicy(r, KBL, {}); const x = EN.choose(r, KBL, ch); if (!x.ok) { bad++; ok(false, 'policy choice ok', { ch, e: x.error }); break; } continue; }
+        for (const ch of EN.lineupPrep(r, KBL)) EN.choose(r, KBL, ch);
+        if (r.lineupDue && EN.runPolicy(r, KBL)) { EN.choose(r, KBL, EN.runPolicy(r, KBL)); continue; }
+        if (EN.canShop(r)) for (const ch of EN.shopPolicy(r, KBL, 'smart')) EN.choose(r, KBL, ch);
+        const f = EN.startFight(r, KBL, {}); let k = 0; while (!f.duel.over && k++ < 20) EN.resolveTurn(f.duel, EN.policies.thoughtful(f.duel, R, mem, KBL));
+        EN.finishFight(r, KBL);
+      }
+      runs++; dig += ((r.stats.c || {}).digTake) | 0;
+    }
+    console.log('     blind runs: ' + J({ runs, dig, bad }));
+    ok(bad === 0 && dig > 0, 'smart runs with blind dig: every choice legal, some digs taken', { bad, dig }); }
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed');

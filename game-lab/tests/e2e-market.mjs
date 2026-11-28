@@ -18,7 +18,8 @@
 //   3  §6.8-2 凶籤（打完第 40 位那一輪，固定種子表裡天然出凶籤；也有「菁英最大那張」）：第 3 張＝凶籤（紅框）→ 那位一般客人品味 +1（guestDef）、
 //      收攤後他的頭像紅標「凶」、點頭像紅字那一句；「菁英最大那張」＝菁英牌組裡總星最大（加星後、不含王牌）那張、頭像面板寫專輯名
 //   4  冬瓜茶（飲料攤）、小物攤（配件那半）、挖寶攤不自己翻（等點）、回攤位不扣時段、時段用完的格子、點島台那一箱＝進那一攤、點收音機＝「先逛完今晚的市集。」：
-//      冬瓜茶聲望 +fair.drinks.tea.hp（不超過上限；sim 棒 11-22 定 2）、只有冬瓜茶一杯、免費、月亮 −1、自動回攤位格；挖寶 2.5 秒後還蓋著 → 回攤位（不扣）→ 再進同一批 → 翻一張收 → 自動回；小物攤兩件 $3,000 → 買一件自動回；
+//      冬瓜茶聲望 +fair.drinks.tea.hp（不超過上限；sim 棒 11-22 定 2）、只有冬瓜茶一杯、免費、月亮 −1、自動回攤位格；挖寶 2.5 秒後還蓋著 → 回攤位（不扣）→ 再進同一批 →
+//      （v6 第 7 條盲挑，店主 11-28）沒有「再翻一次」、背面寫那色星數 ≥5 → 點一張＝只翻那張、收進包包、另外兩張還蓋著（沒有鈕）、停住等點「回攤位」→ 自動回；小物攤兩件 $3,000 → 買一件自動回；
 //      時段用完：沒去過的格子灰、點了出「今晚的時段用完了。」、收攤鈕不寫錢、直接收（不問）
 //   5  §6.8-4 錄音室兩種＋中繼點：沒旗標＝點錄音室格直接錄 demo（樂歷 +15、不扣時段、不出面板）；?fac=1＝試錄派樹下一格（面板＝studioOffer、挑一格 trialNodes／tal、不扣時段）
 //      → 下一個中繼點那條路線不再出；中繼點 7 格（5 攤＋黑膠特賣＋錄音室）、月亮 4 顆、黑膠特賣（改名）「回攤位」不扣
@@ -310,6 +311,7 @@ async function policyTaps(page, o) {
       case 'gacha': return { sel: [S + '[data-a=gacha]'], ch: a };                                                       // 蛋：下一步（egg）
       case 'drink': return { sel: [S + `[data-drink="${ch.kind}"]`], ch: a };
       case 'take': {
+        if (cur.kind === 'dig' && cur.blind) return { sel: [S + `[data-dig="${cur.cards.indexOf(ch.cardId)}"]`], ch: a + ' dig' };   // v6 盲挑：點那張背面＝收（之後停住等點「回攤位」＝hold）
         if (cur.kind === 'dig') { const i = cur.cards.indexOf(ch.cardId), up = !document.querySelector(S + `.st-c.st-down[data-k="${i}"]`); return { sel: (up ? [] : [S + `[data-flip="${i}"]`]).concat([S + `[data-take="${ch.cardId}"]`]), ch: a + ' dig' }; }
         return { sel: [S + `[data-take="${ch.cardId}"]`], ch: a };
       }
@@ -586,10 +588,20 @@ async function runSize(browser, w, h) {
       const d2 = await mk(page);
       await enter(page, 'dig'); await sheetReady(page, 'dig');
       const d3 = await mk(page);
-      await tapSheet(page, '[data-flip="1"]'); await sleep(300);
-      const down2 = await C(page, () => document.querySelectorAll('.lb-sheet.stall.st-k-dig .st-c.st-down').length);
+      // v6 第 7 條盲挑：沒有「再翻一次」；背面那行＝顏色＋星數（≥5）；點第 2 張背面＝只翻那張、收進包包，另外兩張還蓋著、沒有鈕；停住等點「回攤位」
+      const bl = await C(page, (x) => { const s = document.querySelector('.lb-sheet.stall.st-k-dig'), cur = window.__lab.run.pending.cur, E = window.DipLabEngine, Cn = window.DipLabContent;
+        return { blind: !!cur.blind, reroll: !!s.querySelector('[data-a=reroll]'), note: (s.querySelector('.st-dtap') || {}).textContent || '', picks: s.querySelectorAll('[data-dig]').length,
+          backs: [...s.querySelectorAll('.st-c.st-down .st-dcol')].map(e => e.textContent), want: cur.cards.map(id => { const c = Cn.cards[id], a = E.topAttr(c); return x.digBack.replace('{attr}', E.ZH[a]).replace('{n}', c[a]); }),
+          five: cur.cards.every(id => { const c = Cn.cards[id]; return c[E.topAttr(c)] >= 5; }) }; }, x);
       const take = d3.p.cards[1];
-      await tapSheet(page, `[data-take="${take}"]`); await gridReady(page);
+      await tapSheet(page, '[data-dig="1"]'); await sleep(500);
+      const sh = await C(page, (id) => { const s = document.querySelector('.lb-sheet.stall.st-k-dig'), r = window.__lab.run, st = window.DipLabStalls.state();
+        return { got: s ? s.querySelectorAll('.st-c.st-got').length : -1, gotId: s && s.querySelector('.st-c.st-got') ? s.querySelector('.st-c.st-got').getAttribute('data-cid') : null, down: s ? s.querySelectorAll('.st-c.st-down.st-left').length : -1,
+          btns: s ? s.querySelectorAll('[data-dig],[data-take]').length : -1, note: s ? (s.querySelector('.st-dtap') || {}).textContent : '', hold: st && st.hold, digGot: st && st.digGot,
+          inBag: r.pending.cur === null && r.bag.includes(id), others: window.__lab.run.bag.filter(x => x !== id).length }; }, take);
+      const othersIn = await C(page, (ids) => ids.some(id => window.__lab.run.bag.includes(id)), d3.p.cards.filter(id => id !== take));
+      const down2 = sh.down;
+      await tapSheet(page, '[data-a=noted]'); await gridReady(page);
       const d4 = await mk(page), bag1 = await C(page, id => window.__lab.run.bag.includes(id), take);
       // 小物攤：兩件 $3,000 → 買一件＝自動回、時段用完
       await enter(page, 'gear'); await sheetReady(page, 'gear');
@@ -604,13 +616,16 @@ async function runSize(browser, w, h) {
       const lv = await leaveMarket(page);
       const okTea = tea === fill(x.mkTea, { n: 2 }) && e1.p.left === 3 && g1 && t1.hp === t1.maxHp && t1.hp - h0.hp === 2 && t1.money === h0.money && t1.p.left === 2 && t1.p.went.snack === 1 && t1.phase === 'grid' &&
         teaT.some(t => t === fill(x.heal || '聲望 +{n}', { n: 2 }));
+      const okBlind = bl.blind && !bl.reroll && bl.note === x.digPick && bl.picks === 6 && J(bl.backs) === J(bl.want) && bl.five &&
+        sh.got === 1 && sh.gotId === take && sh.btns === 0 && sh.hold && sh.digGot === 1 && sh.inBag && !othersIn && sh.note === fill(x.digLeft, { n: 2 });
       const okDig = isle[0].kind === 'dig' && d1.sheet && d1.sheet.kind === 'dig' && down1 === 3 && d1.p.left === 2 && d2.p.left === 2 && !d2.p.went.dig && d2.p.seen.includes('dig') &&
-        J(d3.p.cards) === J(d1.p.cards) && d3.p.key === d1.p.key && down2 === 2 && d4.p.left === 1 && d4.p.went.dig === 1 && bag1 && d4.phase === 'grid';
+        J(d3.p.cards) === J(d1.p.cards) && d3.p.key === d1.p.key && okBlind && down2 === 2 && d4.p.left === 1 && d4.p.went.dig === 1 && bag1 && d4.phase === 'grid';
       const okGear = gr.name === x.st.gear && gr.relics.length === 2 && J(gr.btns) === J(gr.relics) && g5.money === mg0 - x.gearPrice && rel && g5.p.left === 0 && g5.phase === 'grid';
       const okNo = g5.grid.filter(t => !t.went).every(t => t.off) && noSlot.includes(x.mkNoSlot) && g6.phase === 'grid' && g5.leave === x.mkLeaveNone && g5.leavePri && !lv.ask && lv.cash === 0 && lv.go;
       record(4, size, busyT.includes(x.mkBusy) && okTea && okDig && okGear && okNo && !errs(page).length,
         `點收音機 ${J(busyT)}；冬瓜茶「${tea}」聲望 ${h0.hp}→${t1.hp}/${t1.maxHp}、錢 ${h0.money}→${t1.money}、月亮 ${e1.p.left}→${t1.p.left}、自動回 ${t1.phase}；` +
-        `點島台 ${isle[0].hot}→${d1.sheet && d1.sheet.kind}、2.5 秒後蓋著 ${down1}/3、回攤位月亮 ${d2.p.left}（seen ${d2.p.seen}）、再進同一批 ${J(d3.p.cards) === J(d1.p.cards)}、翻一張 → 蓋著 ${down2}、收 → 包包 ${bag1}、月亮 ${d4.p.left}；` +
+        `點島台 ${isle[0].hot}→${d1.sheet && d1.sheet.kind}、2.5 秒後蓋著 ${down1}/3、回攤位月亮 ${d2.p.left}（seen ${d2.p.seen}）、再進同一批 ${J(d3.p.cards) === J(d1.p.cards)}；盲挑 ${bl.blind}、再翻鈕 ${bl.reroll}、「${bl.note}」、背面 ${J(bl.backs)}（5 星 ${bl.five}）→ 點第 2 張：翻開 ${sh.got}（${sh.gotId === take}）、` +
+        `還蓋著 ${down2}、剩下的鈕 ${sh.btns}、停住 ${sh.hold}、「${sh.note}」、包包 ${sh.inBag}（另外兩張 ${othersIn ? '也進了' : '沒進'}）→ 回攤位 包包 ${bag1}、月亮 ${d4.p.left}；` +
         `小物攤「${gr.name}」${gr.relics.length} 件 −$${mg0 - g5.money} → 配件 ${rel}、月亮 ${g5.p.left}、自動回 ${g5.phase}；時段用完：灰格 ${g5.grid.filter(t => !t.went && t.off).map(t => t.k)}、點了 ${J(noSlot)}、收攤鈕「${g5.leave}」、問 ${!!lv.ask}、+$${lv.cash}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(4, size, false, 'exception ' + e.message); }
     await ctx.close();
@@ -801,12 +816,11 @@ async function runSize(browser, w, h) {
       await marketAt(page, 35, { money: 20000, leave: 1, tiles: ['dig', 'fortune', 'snack', 'gear', 'home'] });
       await enter(page, 'snack'); await tapSheet(page, '[data-drink=tea]'); await gridReady(page);
       await enter(page, 'dig'); await sheetReady(page, 'dig');
-      await tapSheet(page, '[data-flip="0"]');
-      const a0 = await mk(page);
+      const a0 = await mk(page);                                           // v6 盲挑：開著（還沒挑）就重新整理＝回來還是蓋著（不能靠重新整理偷看）
       await openTitle(page, QM()); await jsClick(page, '[data-a=cont]');
       const re1 = await sheetReady(page, 'dig', 12000); await sleep(800);
       const a1 = await mk(page);
-      const up1 = await C(page, () => document.querySelectorAll('.lb-sheet.stall.st-k-dig .st-c:not(.st-down)').length);
+      const up1 = await C(page, () => document.querySelectorAll('.lb-sheet.stall.st-k-dig .st-c:not(.st-down)').length), dn1 = await C(page, () => document.querySelectorAll('.lb-sheet.stall.st-k-dig .st-c.st-down .st-back[data-dig]').length);
       await tapSheet(page, '[data-a=back]'); await gridReady(page);
       const a2 = await mk(page);
       // 算命翻到第 2 張 → 重新整理
@@ -817,11 +831,11 @@ async function runSize(browser, w, h) {
       const re2 = await sheetReady(page, 'fortune', 12000); await sleep(800);
       const b1 = await mk(page);
       const fl = await C(page, () => { const s = document.querySelector('.lb-sheet.stall.st-k-fortune'); return { up: s.querySelectorAll('.st-slip.up').length, next: s.querySelectorAll('.st-slip.next .lb-btn[data-a=flip]').length }; });
-      const ok = re1 && a1.p.cur === 'dig' && a1.p.key === a0.p.key && J(a1.p.cards) === J(a0.p.cards) && a1.p.left === a0.p.left && a1.p.left === 2 && a1.sheetMoons.lit === 2 && !a1.p.went.dig && up1 === 3 && a1.cam === 'market' &&
+      const ok = re1 && a1.p.cur === 'dig' && a1.p.key === a0.p.key && J(a1.p.cards) === J(a0.p.cards) && a1.p.left === a0.p.left && a1.p.left === 2 && a1.sheetMoons.lit === 2 && !a1.p.went.dig && up1 === 0 && dn1 === 3 && a1.cam === 'market' &&
         a2.phase === 'grid' && a2.moons.lit === 2 && a2.grid.find(t => t.k === 'snack').went && !a2.grid.find(t => t.k === 'dig').went &&
         re2 && b1.p.cur === 'fortune' && b1.p.n === 2 && b1.p.left === b0.p.left && b0.p.left === 1 && b1.sheetMoons.lit === 1 && fl.up === 2 && fl.next === 1 && b1.money === b0.money;
       record(9, size, ok && !errs(page).length,
-        `挖寶開著（翻 1 張）重新整理 → 面板 ${re1}、同一批 ${J(a1.p.cards) === J(a0.p.cards)}、月亮 ${a1.p.left}（面板 ${a1.sheetMoons.lit}）、沒打勾 ${!a1.p.went.dig}、翻開 ${up1}/3（回來直接翻開）、鏡頭 ${a1.cam}；` +
+        `挖寶開著（還沒挑）重新整理 → 面板 ${re1}、同一批 ${J(a1.p.cards) === J(a0.p.cards)}、月亮 ${a1.p.left}（面板 ${a1.sheetMoons.lit}）、沒打勾 ${!a1.p.went.dig}、翻開 ${up1}／蓋著能挑 ${dn1}（盲挑：回來還是蓋著）、鏡頭 ${a1.cam}；` +
         `回攤位：月亮 ${a2.moons.lit}、飲料打勾 ${a2.grid.find(t => t.k === 'snack').went}；算命第 2 張後重新整理 → 面板 ${re2}、翻了 ${b1.p.n}（畫 ${fl.up}）、下一張鈕 ${fl.next}、月亮 ${b1.p.left}、錢 ${b0.money}→${b1.money}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(9, size, false, 'exception ' + e.message); }
     await ctx.close();
@@ -979,13 +993,12 @@ async function runSize(browser, w, h) {
       out.g = await C(page, () => [...document.querySelectorAll('.st-mk .st-mt')].map(b => ({ k: b.getAttribute('data-k'), pr: (b.querySelector('.pr') || {}).textContent, mo: !!b.querySelector('.mo'), fr: !!b.querySelector('.fr') })));
       out.sw = await C(page, () => (document.querySelector('.st-mk .st-mtop .st-sw') || {}).textContent || null);
       const okTiles = out.g.length === 6 && out.g.every(t => t.k === 'studio' ? t.fr && !t.mo : t.mo && !t.fr && t.pr !== x.priceFree) && out.g.find(t => t.k === 'fortune').pr === x.mkFortuneTile && out.sw === x.mkSlotWord;
-      // 挖寶：點一張翻開（翻一張就收掉）
+      // 挖寶：還蓋著＝寫出來要點（v6 第 7 條盲挑：字換成「挑一張，選了才知道是什麼。」、沒有「點一張翻開」的翻牌鈕；挑了就停住翻開那張＝#4 驗）
       await enter(page, 'dig'); await sheetReady(page, 'dig');
       const d0 = await C(page, () => { const e = document.querySelector('.lb-sheet.stall .st-dtap'); return e ? { t: e.textContent, hid: e.hidden } : null; });
-      await tapSheet(page, '[data-flip="0"]'); await sleep(300);
-      const d1 = await C(page, () => { const e = document.querySelector('.lb-sheet.stall .st-dtap'); return e ? e.hidden : null; });
+      const d1 = await C(page, () => !document.querySelector('.lb-sheet.stall [data-flip]') && document.querySelectorAll('.lb-sheet.stall .st-back[data-dig]').length === 3);
       await tapSheet(page, '[data-a=back]'); await gridReady(page);
-      const okDig = d0 && d0.t === x.mkDigTap && !d0.hid && d1 === true;
+      const okDig = d0 && d0.t === x.digPick && !d0.hid && d1 === true;
       // 店裡唱盤：「回攤位」不用捲就看得到
       await enter(page, 'home'); await sheetReady(page, 'home');
       const fh = await C(page, () => { const s = document.querySelector('.lb-sheet.stall'), f = s && s.querySelector('.foot [data-a=back]'); if (!f) return null; const a = f.getBoundingClientRect(), b = s.getBoundingClientRect(); return a.bottom <= b.bottom + 0.5 && a.top >= b.top; });
@@ -1032,7 +1045,7 @@ async function runSize(browser, w, h) {
       await tapSheet(page, '[data-a=back]'); await gridReady(page);
       const okConsign = cb.note === x.mkConsignBusy && cb.n > 0 && cb.dis;
       record(14, size, okTiles && okDig && fh && okTea && okStudio && okDare && okNoted && okConsign && !errs(page).length,
-        `格子 ${J(out.g.map(t => t.k + ':' + t.pr + (t.mo ? '☾' : '') + (t.fr ? '[免費]' : '')))}、頂列「${out.sw}」 ${okTiles}；挖寶提示 ${J(d0)}→翻一張後收 ${d1}；店裡唱盤回攤位看得到 ${fh}；` +
+        `格子 ${J(out.g.map(t => t.k + ':' + t.pr + (t.mo ? '☾' : '') + (t.fr ? '[免費]' : '')))}、頂列「${out.sw}」 ${okTiles}；挖寶提示 ${J(d0)}、沒有翻牌鈕＋三張可挑 ${d1}；店裡唱盤回攤位看得到 ${fh}；` +
         `冬瓜茶倒一杯 ${pour.pour}（飲料攤 ${pour.hot}）、右上吐司 ${J(pour.mk)}；試錄回攤位 ${sb}（去過 ${!!s1.p.went.studio}、時段 ${s1.p.left}、再進 ${reS}）；` +
         `踢館帖底鈕 ${J(db)}（去過 ${!!s2.p.went.dare}、時段 ${s2.p.left}、再進 ${reD}）、時段用完島台亮 ${J(hi.hi)}；記下了收攤「${nl}」收掉 ${gone}、${nTap} 下；寄賣 ${J(cb)}；${errTxt(page)}${missTxt(page)}`);
     } catch (e) { record(14, size, false, 'exception ' + e.message); }

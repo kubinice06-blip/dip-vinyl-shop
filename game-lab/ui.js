@@ -17,7 +17,7 @@
  *  - 從唱片櫃挑牌開局（店主 11-13；SPEC 從唱片櫃挑牌開局）：唱片櫃分「擁有」（save.shelf[id].own＋src：'gift' 老闆送的／'run' 一趟留一張（店內取得金框）／'boss' 藏家王牌）
  *    與「認識」（照舊）；第二趟起老闆那句說完、走去特價箱之前挑種子（最多 3 張）；打贏客人領獎前念掉落旁白（C.script.drop）；結算「這一趟帶走一張」。
  *    存檔 v5 → v6：原本的唱片櫃都留成「認識」；挑過的王牌那幾組送的四張、打倒藏家拿到的王牌算擁有（migrate5）。
- *  - 整支包在 IIFE 裡，只掛 window.DipLabUI（＋?debug=1 的 window.__lab）。
+ *  - 整支包在 IIFE 裡，只掛 window.DipLabUI（＋?debug=1 的 window.__lab；v6 試玩捷徑（預覽站、?try=1）也掛）。
  *  - UI 不算傷害、不讀 intent：所有數字都來自 DipLabEngine。
  *  - 浮層（泡泡、章、飛卡、吐司、標題牌）pointer-events:none；只有面板、彈窗、教學遮罩、藏家登場卡吃點擊。
  */
@@ -33,6 +33,8 @@
   var QS = {};
   try { new URLSearchParams(location.search).forEach(function (v, k) { QS[k] = v; }); } catch (_) {}
   var DEBUG = QS.debug === '1';
+  // v6 試玩捷徑（店主 11-28）：預覽站（*.pages.dev）或本機網址帶 ?try=1 才有左上角「試玩」小鈕（?try=0 關）；正式站 dipvinyl.tw 帶 ?try=1 也看不到、不動存檔（tryKit）
+  var TRY = QS['try'] !== '0' && (function () { try { var h = W.location.hostname || ''; return /\.pages\.dev$/i.test(h) || (QS['try'] === '1' && !/(^|\.)dipvinyl\.tw$/i.test(h)); } catch (_) { return false; } })();
   var FAST = QS.fast === '1';
   var ZH = { c: '經典', o: '冷門', h: '硬蕊' }, ZH1 = { c: '經', o: '冷', h: '硬' };
   var ATTRS = ['c', 'o', 'h'];
@@ -6479,6 +6481,114 @@
     return true;
   }
 
+  // ======================================================================= 試玩捷徑（v6，店主 11-28；只在預覽站或 ?try=1，TRY）
+  //   左上角半透明「試玩」小鈕 → 小面板：跳過序章／直接到市集挖寶攤／叫想切磋的熟客進店／背景音樂狀態。
+  //   全走現有的除錯鉤子（__lab.jump、__lab.crowd.enc、__lab.bgm、engine jumpTo／stallSession、stalls station），不另寫遊戲邏輯。
+  //   正在演序章、開頭旁白、劇情、對決的時候＝改好存檔重新整理（那些流程的計時器換畫面停不掉）；sessionStorage 記著重新整理後接著做哪一件
+  var TRY_SS = 'dipGameLab_try';
+  function TK(k, o) { var U = (C && C.tryKit && C.tryKit.ui) || {}; return fill(U[k] || '', o); }
+  function tryReload(act) { try { W.sessionStorage.setItem(TRY_SS, act); } catch (_) {} persist(); W.location.reload(); }
+  // 存檔當作序章打完（＝新手剛打完序章）：序章那一趟丟掉、不記成一趟；照序章挑王牌那一步記（今晚那張的那派；王牌、送的四張進唱片櫃）；教學算看過
+  function tryNewbie() {
+    var un = unlockedNow(), tier = un.length ? (un.indexOf(save.lastAce) >= 0 ? save.lastAce : un[0]) : (tierOfCard(tonightId()) || 'hall');
+    if (save.run && (save.run.over || inPrologue(save.run))) save.run = null;
+    if (!un.length) shelfOwn(C.aces[tier], 'start');
+    shelfAdd(C.aces[tier]); (C.gifts[tier] || []).forEach(function (id) { shelfOwn(id, 'gift'); });
+    save.lastAce = tier; save.prologueDone = true; save.tutorialDone = true;
+    return tier;
+  }
+  // ① 跳過序章 → 重新整理回標題（推門＝再挑戰一趟那條路）
+  function tryFresh() {
+    var r = save.run;
+    if (save.prologueDone && r && !r.over && !inPrologue(r)) { toast(TK('skipDone')); return; }
+    tryNewbie(); tryReload('fresh');
+  }
+  // ② 直接到市集挖寶攤：沒有一趟在跑（或還在序章）＝當作序章打完、開一趟（createRun）再重新整理接著做；
+  //   有＝跳到這一輪結束的市集（＝e2e-market marketAt：jumpTo → stallSession；第一個市集固定有挖寶，沒有就把第一格換成挖寶）→ 來客畫面 → 進挖寶攤
+  function tryDig() {
+    var r = save.run, fresh = !r || r.over || inPrologue(r);
+    if (fresh || UI.intro || UI.screen === 'scene' || !UI.stage || !UI.stallsOk) {
+      if (fresh) createRun({ ace: tryNewbie(), prologue: false });
+      return tryReload('dig');
+    }
+    leaveDuel(); UI.ending = null;
+    E.jumpTo(r, C, r.idx === 0 && r.pos > 1 ? r.pos : Math.max(6, (r.round | 0) * 5 + 1));   // 打完第 5、10…位那個市集
+    if (E.stallSession) E.stallSession(r, C);
+    var p = r.pending;
+    if (!p || p.type !== 'stall') { persist(); go('night'); toast(TK('digFail')); return; }
+    if (p.mode === 'market' && Array.isArray(p.tiles) && p.tiles.indexOf('dig') < 0) p.tiles[0] = 'dig';
+    save.prologueDone = true; persist(); go('night');
+    if (p.mode === 'market') tryEnterDig(0);
+  }
+  function tryEnterDig(n) {
+    var X = W.DipLabStalls, s = null; try { s = X && X.state ? X.state() : null; } catch (_) {}
+    if (s && s.mode === 'market' && s.phase === 'grid' && qs('.st-mk .st-mt', app())) { try { if (X.station('dig')) return; } catch (e) { console.error(e); } }
+    if (n < 40 && UI.screen === 'night') setTimeout(function () { tryEnterDig(n + 1); }, 250);
+  }
+  // ③ 叫一位想切磋的熟客進店（__lab.crowd.enc：他照路人一樣推門進來逛，點他聊天才有切磋）。第一次玩那一趟第 1 位店裡還沒開人流、這一位是傳說藏家（不切磋）＝先跳到下一位
+  function trySpar() {
+    var r = save.run;
+    if (!r || r.over || inPrologue(r) || UI.screen !== 'night' || E.nextStep(r) !== 'fight') { toast(TK('sparWhere')); return; }
+    if (!crowdChatOn()) { toast(TK('sparOff')); return; }
+    var first = !(save.runs && save.runs.length), from = (C.crowd && C.crowd.firstRunFrom) || 2;
+    if (first && r.pos < from) W.__lab.jump(from);
+    else if (!guestWaits(r)) W.__lab.jump(r.pos + 1);
+    var ks = Object.keys(C.regulars || {}).filter(function (k) { return C.regulars[k] && C.regulars[k].enc && k !== UI.tryWho; });
+    var who = ks.length ? pickR(ks) : null, res = who ? W.__lab.crowd.enc(who) : null;
+    if (!res) { toast(TK('sparBusy')); return; }
+    UI.tryWho = who;
+    toast(TK('sparCome', { name: C.regulars[who].name }));
+  }
+  // ④ 背景音樂狀態（__lab.bgm 的重點＋fx 現在的音量）：面板開著每秒更新
+  function tryBgmLines() {
+    var b = W.__lab.bgm(), f = FX(), g = null;
+    try { g = f && f.music && f.music._gain ? f.music._gain() : null; } catch (_) {}
+    var why = !b.zone ? 'whyZone' : !b.on ? 'whyOff' : b.snd === 'off' ? 'whySound' : b.snd === 'locked' ? 'whyLocked' : b.loading ? 'whyLoad' : 'whyNone';
+    var c = card(b.cur || (g && g.curId)), gv = g && typeof g.cur === 'number' ? Math.round(g.cur * 100) / 100 : 0;
+    return [bgmSounding() ? TK('bgmOn') : TK('bgmOff', { why: TK(why) }),
+      c ? TK('bgmNow', { album: c.artist + '《' + c.album + '》' }) : TK('bgmNone'),
+      TK('bgmVol', { name: bgmVolName(), v: bgmVol(), g: gv })];
+  }
+  function tryBgmShow() {
+    var bg = UI.tryPanel && qs('.bg', UI.tryPanel); if (!bg || bg.hidden || !W.__lab) return;
+    var h = ''; try { h = tryBgmLines().map(function (s) { return '<div>' + esc(s) + '</div>'; }).join(''); } catch (e) { console.error(e); }
+    if (bg.innerHTML !== h) bg.innerHTML = h;
+  }
+  function tryPanel(open) {
+    if (UI.tryPanel) { UI.tryPanel.remove(); UI.tryPanel = null; clearInterval(UI.tryIv); UI.tryIv = 0; }
+    if (UI.tryChip) UI.tryChip.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!open) return;
+    var p = el('div', 'lb-try', '<div class="hd"><b>' + esc(TK('title')) + '</b><button type="button" class="x" data-t="x" aria-label="' + esc(TK('close')) + '">✕</button></div>' +
+      ['skip', 'dig', 'spar', 'bgm'].map(function (k) { return '<button type="button" class="lb-btn two wide" data-t="' + k + '">' + esc(TK(k)) + '<span class="sub">' + esc(TK(k + 'Sub')) + '</span></button>'; }).join('') +
+      '<div class="bg" hidden aria-live="polite"></div><p class="nt">' + esc(TK('note')) + '</p>');
+    p.setAttribute('role', 'dialog'); p.setAttribute('aria-label', TK('title'));
+    D.body.appendChild(p); UI.tryPanel = p;
+    p.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var b = e.target.closest && e.target.closest('[data-t]'); if (!b) return;
+      var t = b.getAttribute('data-t');
+      if (t === 'bgm') { var bg = qs('.bg', p); bg.hidden = !bg.hidden; tryBgmShow(); return; }
+      tryPanel(false);
+      if (t === 'skip') tryFresh(); else if (t === 'dig') tryDig(); else if (t === 'spar') trySpar();
+    });
+    UI.tryIv = setInterval(tryBgmShow, 1000);
+  }
+  function tryKit() {
+    if (!TRY || UI.tryChip) return;
+    var chip = el('button', 'lb-try-chip', esc(TK('chip')));
+    chip.type = 'button'; chip.setAttribute('aria-label', TK('title')); chip.setAttribute('aria-expanded', 'false');
+    chip.addEventListener('click', function (e) { e.stopPropagation(); tryPanel(!UI.tryPanel); });
+    D.body.appendChild(chip); UI.tryChip = chip;
+    var act = null; try { act = W.sessionStorage.getItem(TRY_SS); W.sessionStorage.removeItem(TRY_SS); } catch (_) {}
+    if (act) tryResume(act, 0);
+  }
+  // 重新整理之後：標題畫好、舞台與攤位接上了才接著做（最多等 12 秒）
+  function tryResume(act, n) {
+    if (UI.screen !== 'title' || !UI.stage || !UI.stallsOk) { if (n < 60) setTimeout(function () { tryResume(act, n + 1); }, 200); return; }
+    if (act === 'fresh') toast(TK('skipOk'));
+    else if (act === 'dig') tryDig();
+  }
+
   // ======================================================================= boot
   function buildShell() {
     var a = app(); a.innerHTML = '';
@@ -7687,8 +7797,9 @@
     labSpr();
     // 第 C 波（SPEC-C §5.2、CRITIQUE 1.8）：引擎抽金邊盤、公關片時先扣唱片櫃擁有的、公關片偏常聽的兩個頻率（呼叫時才讀存檔；sim 不設）
     if (E.setCtx) { try { E.setCtx({ owned: function (id) { return isOwned(id); }, tunes: function () { try { return dailyTunes(); } catch (_) { return []; } } }); } catch (e) { console.error(e); } }
-    if (DEBUG) installDebug();
+    if (DEBUG || TRY) installDebug();                  // v6 試玩捷徑也走 __lab（預覽站、?try=1）
     buildShell();
+    tryKit();
     configTut();
     if (UI.discardedOld || UI.migratedUnlock || UI.migrated7 || UI.migrated8) persist();   // 第 C 波 v7 → 8：版號寫回一次   // 解鎖制遷移、v7 換 id／自癒寫回去：下次載入不再補、不再提示
     // 跨午夜回到前景：發今天的推薦；停在標題沒開東西就重畫

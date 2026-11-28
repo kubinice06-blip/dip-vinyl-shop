@@ -59,7 +59,7 @@
   function sfx(n, o) { try { H.sfx(n, o); } catch (e) { console.error(e); } }
   function A() { var a = {}; try { a = H.anim() || {}; } catch (_) {} return { fast: !!a.fast, k: a.k > 0 ? a.k : 1, rm: !!a.rm }; }
   // 時間（毫秒，正常速度）：動畫加速＝自己翻 1.5→0.6 秒、站之間 0.6→0.3 秒；?fast=1 再除 k
-  var T0 = { autoflip: 1500, between: 600, studio: 800, flipGap: 150, turn: 110 };
+  var T0 = { autoflip: 1500, between: 600, studio: 800, flipGap: 150, turn: 110, digShow: 1400 };   // digShow：C 波二選一（緊急退回）盲挑挑完翻開那張停多久再走
   function ms(key) { var a = A(), v = T0[key]; if (a.fast) v = key === 'autoflip' ? 600 : v / 2; return Math.round(v / a.k); }
   function after(fn, t) { var tok = S; return H.after(function () { if (S !== tok || !S) return; fn(); }, t); }
   function qs(sel, root) { return (root || D).querySelector(sel); }
@@ -328,12 +328,27 @@
     var r = run();
     return cardBtn(id, 'data-take', U('take'), { cls: (gold ? 'gold' : ''), disabled: r.bag.indexOf(id) >= 0 });
   }
+  // v6 第 7 條 挖寶攤盲挑（店主 11-28「只能抽一張，選定後才揭曉」；cur.blind＝引擎發牌時 content waveC.stall.blind 開著）：
+  //   三張蓋著、背面露顏色＋那色星數（金邊那張有金邊），點背面或「挑這張」＝收那張（不能反悔、不能再翻）；挑完只翻那張（got），其他留在箱底不翻（st-left，沒有鈕）
+  function blindTile(cur, i, got) {
+    var id = cur.cards[i], c = card(id); if (!c) return '';
+    var gold = cur.gold === id, a = E().topAttr(c), lab = U('digBack', { attr: ZHA(a), n: c[a] | 0 }), cls = 'lb-ct st-c st-down ax-' + a + (gold ? ' gold' : '');
+    if (got === i) return H.tileHTML(c, { cls: 'st-c st-got' + (gold ? ' gold' : '') + (A().rm ? '' : ' st-turn'), data: 'data-k="' + i + '"', extra: '<span class="st-tag">' + esc(U('digGot')) + '</span>' });
+    if (got != null) return '<div class="' + cls + ' st-left" data-k="' + i + '"><span class="st-back" aria-hidden="true"><i class="rec"></i></span><div class="ar st-dcol">' + esc(lab) + '</div></div>';
+    return '<div class="' + cls + '" data-k="' + i + '"><button type="button" class="st-back" data-dig="' + i + '" aria-label="' + esc(U('digPickAria', { attr: ZHA(a), n: c[a] | 0 })) + '"><i class="rec" aria-hidden="true"></i></button>' +
+      '<div class="ar st-dcol">' + esc(lab) + '</div><div class="al">&nbsp;</div><button type="button" class="lb-pickb key" data-dig="' + i + '">' + esc(U('digPickBtn')) + '</button></div>';
+  }
+  function blindGrid(cur, got) { return gridHTML(cur.cards.map(function (_, i) { return blindTile(cur, i, got); }).join(''), cur.cards.length); }
+  function blindNote(t) { return '<p class="note st-dtap">' + esc(t) + '</p>'; }
   function digBody(cur) {
+    if (cur.blind) return S.digShow ? blindGrid(cur, S.digGot) + blindNote(U('digLeft', { n: cur.cards.length - 1 }))   // C 波二選一：挑完翻開那張、停一下就走（act）
+      : blindGrid(cur, null) + blindNote(U('digPick')) + footHTML([btn('data-a="skip"', U('skip', { n: mt(ST().skipCash || 400) }))]);
     var j = cur.rolls + 1, cost = (ST().reroll || 500) * j;
     return gridHTML(cur.cards.map(function (_, i) { return digTile(cur, i); }).join(''), cur.cards.length) +
       footHTML([btn('data-a="reroll"', U('reroll', { n: mt(cost) }), { disabled: !canAfford(cost) }), btn('data-a="skip"', U('skip', { n: mt(ST().skipCash || 400) }))]);
   }
   function digArm(cur) {
+    if (cur.blind) return;                                                     // v6 盲挑：不自己翻、重新整理回來也不翻
     if (A().rm || S.resumed) { S.flipped = cur.cards.map(function () { return true; }); return; }
     after(function () { autoFlip(cur); }, ms('autoflip'));
   }
@@ -530,6 +545,7 @@
     if (a === 'gigMinus') { S.gigN = Math.max(1, (S.gigN || 1) - 1); sfx('tick'); renderStation(); return; }
     if (a === 'gigPlus') { S.gigN = (S.gigN || 1) + 1; sfx('tick'); renderStation(); return; }
     var X = function (o) { return Object.assign({ type: 'stallAct' }, o); };
+    if (t.hasAttribute('data-dig')) return act(X({ act: 'take', cardId: (cur.cards || [])[+t.getAttribute('data-dig')] }));   // v6 盲挑：點背面＝收那張
     if (t.hasAttribute('data-take')) return act(X({ act: 'take', cardId: t.getAttribute('data-take') }));
     if (t.hasAttribute('data-buy')) return act(X({ act: 'buy', cardId: t.getAttribute('data-buy') }));
     if (t.hasAttribute('data-sell')) return act(X({ act: 'sell', cardId: t.getAttribute('data-sell') }));
@@ -590,6 +606,14 @@
     if (ch.act === 'sell') S.sub = null;
     try { H.refresh(); } catch (_) {}
     var p2 = P();
+    if (cur0 && cur0.kind === 'dig' && cur0.blind && ch.act === 'take' && S.sheet && S.sheet.isConnected) {   // v6 盲挑：先翻開挑的那張（其他留在箱底），停一下才走
+      S.digShow = true; S.digGot = cur0.cards.indexOf(ch.cardId); S.busy = true;
+      if (cur0.gold === ch.cardId) sfx('ding');
+      S.sheet.innerHTML = headHTML(cur0) + digBody(cur0);
+      var lb = qs('[data-a=leave]', S.sheet); if (lb) lb.parentNode.removeChild(lb);
+      after(function () { S.busy = false; S.digShow = false; S.digGot = null; S.cur = null; closeStation(); lightUp([]); restoreNpc(); next(true); }, ms('digShow'));
+      return;
+    }
     if (!p2 || p2.k !== k0 || p2.cur !== cur0) { S.cur = null; closeStation(); lightUp([]); restoreNpc(); return next(true); }
     if (ch.act === 'reroll') { S.flipped = cur0.cards.map(function () { return false; }); S.curKey = cur0.key; digArm(cur0); }
     renderStation();
@@ -672,6 +696,7 @@
   function state() {
     if (!S) return null;
     var o = { phase: S.phase, sel: S.sel, kind: S.cur ? S.cur.kind : (S.kind || null), flipped: (S.flipped || []).slice(), sub: S.sub || null, confirm: !!S.confirm };
+    if (S.digShow || (S.hold && S.hold.kind === 'dig')) o.digGot = S.digGot;   // v6 盲挑：挑完翻開的是第幾張（C 波停一下／市集停住等點）
     if (S.mk) { o.mode = 'market'; o.hold = !!S.hold; if (S.hold) o.kind = S.hold.kind; o.pour = S.pour || null;
       // 第 I 波 I-3b：清潔墊上那張（doc）、轉蛋機（gacha）、算命心情題（ask：還沒進攤的那一題；moodQ：現在問的題目 id；mood：結果）
       var dc = S.hold && S.hold.kind === 'doctor' ? S.hold : S.cur && S.cur.kind === 'doctor' ? S.cur : null;
@@ -887,7 +912,8 @@
   function mkBodyHTML(cur) {
     var r = run();
     switch (cur.kind) {
-      case 'dig': { var cost = (ST().reroll || 500) * (cur.rolls + 1), none = !(S.flipped || []).some(Boolean);
+      case 'dig': { if (cur.blind) return blindGrid(cur, null) + blindNote(U('digPick')) + footHTML([backBtn()]);   // v6 盲挑：只能挑一張、沒有再翻
+        var cost = (ST().reroll || 500) * (cur.rolls + 1), none = !(S.flipped || []).some(Boolean);
         return gridHTML(cur.cards.map(function (_, i) { return digTile(cur, i); }).join(''), cur.cards.length) +
           '<p class="note st-dtap"' + (none ? '' : ' hidden') + '>' + esc(U('mkDigTap')) + '</p>' +   // 挖寶不自己翻：還沒翻＝寫出來要點（修正棒）
           footHTML([btn('data-a="reroll"', U('reroll', { n: mt(cost) }), { disabled: !canAfford(cost) }), backBtn()]); }
@@ -989,6 +1015,7 @@
     var p2 = P();
     if (!p2) return finish();
     if (o.close || !p2.cur) {
+      if (cur0 && cur0.kind === 'dig' && cur0.blind && ch.act === 'take') { S.hold = cur0; S.cur = null; S.phase = 'hold'; S.digGot = cur0.cards.indexOf(ch.cardId); if (cur0.gold === ch.cardId) sfx('ding'); return mkRenderStation(); }   // v6 盲挑：翻開挑的那張、停住等點
       if (cur0 && cur0.kind === 'fortune' && o.flip) { S.hold = cur0; S.cur = null; S.phase = 'hold'; return mkRenderStation(); }   // 第 3 張：停住等點「記下了」
       if (cur0 && ((cur0.kind === 'doctor' && o.doc) || (cur0.kind === 'gear' && o.gacha))) { S.hold = cur0; S.cur = null; S.phase = 'hold'; gachaArm(); return mkRenderStation(); }   // I-3b：洗／壓完、轉完，停住等點
       return mkBackToGrid();
@@ -1020,6 +1047,7 @@
     }
     var cur = S.cur; if (!cur) return;
     var X = function (o) { return Object.assign({ type: 'stallAct' }, o); };
+    if (t.hasAttribute('data-dig')) return mkAct(X({ act: 'take', cardId: (cur.cards || [])[+t.getAttribute('data-dig')] }));   // v6 盲挑：點背面＝收那張（選了才翻）
     if (t.hasAttribute('data-flip')) { flipOne(cur, +t.getAttribute('data-flip')); return; }    // 挖寶攤：點一張翻一張（不自己翻）
     if (a === 'sell') { sfx('tick'); S.sub = 'sell'; mkRenderStation(); return; }
     if (a === 'sellBack') { sfx('tick'); S.sub = null; mkRenderStation(); return; }
@@ -1111,6 +1139,7 @@
   // 做完攤子自動關（醫生做滿、轉蛋轉滿）停住那一下的鈕：還有別的攤＝回攤位；什麼都不能逛了＝收攤回店（少按一下）
   function holdBtn() { return mkNothingLeft() ? btn('data-a="notedLeave"', U('mkLeaveNone'), { pri: true }) : btn('data-a="noted"', U('mkBack'), { pri: true }); }
   function holdBody(cur) {
+    if (cur.kind === 'dig') return blindGrid(cur, S.digGot != null ? S.digGot : -1) + blindNote(U('digLeft', { n: cur.cards.length - 1 })) + footHTML([holdBtn()]);   // v6 盲挑：只翻挑的那張
     if (cur.kind === 'doctor') return doctorBody(cur, true);
     if (cur.kind === 'gear' && cur.gacha) return gearGachaBody(cur, true);
     if (cur.kind === 'fortune') { var mr = moodRes(cur); if (mr) return moodResultBody(cur, mr); }

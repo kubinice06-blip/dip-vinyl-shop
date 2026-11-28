@@ -595,6 +595,8 @@ for (const [k, v] of Object.entries(C.summary || {})) {
     if (Array.isArray(v)) { v.forEach((x, i) => one('bgm.ui.' + k + '[' + i + ']', x, '背景音樂・⏸ 音樂音量 小／中／大', C.bgmTag, 'bgmTag')); continue; }
     one('bgm.ui.' + k, v, /^(np|tapPlay|icon)$/.test(k) ? '背景音樂・收音機旁「正在播放」泡泡與 ♪（點我放歌：這次造訪還沒點過畫面才出）' : '背景音樂・⏸ 選單「聲音」下面三行與說明小字', C.bgmTag, 'bgmTag');
   }
+  // v6 試玩捷徑（C.tryKit.ui、tryKitTag；店主 11-28）：只在預覽站（*.pages.dev）或 ?try=1 出現的左上角小鈕與面板（正式站看不到）
+  for (const [k, v] of Object.entries(((C.tryKit || {}).ui) || {})) one('tryKit.ui.' + k, v, '試玩捷徑・只在預覽站出現的「試玩」小鈕與面板（正式站看不到）', C.tryKitTag, 'tryKitTag');
 }
 // 頂點卡純輔助卡試做（?apex=1；C.apexTrial、apexTrialTag）：每張「能力名・時機：說明」（名 ≤8、說明 ≤25）、畫面字 ≤25（規則卡頁尾那行照頁尾）、小提示 ≤20、結果句 ≤25（不算 {x}）；
 //   fact（典故出處）不上畫面、不列（禁用字照掃 content.js）
