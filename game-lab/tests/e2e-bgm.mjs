@@ -1164,7 +1164,9 @@ async function runSize(browser, w, h) {
       const S = await C(page, () => window.__npS.slice());
       const i0 = S.findIndex(x => x[1]), i1 = i0 >= 0 ? S.findIndex((x, k) => k > i0 && !x[1]) : -1;
       const span = i0 >= 0 && i1 > 0 ? S[i1][0] - S[i0][0] : null, why = i1 > 0 ? S[i1][6] : '';
-      const walkOn = S.filter(x => x[1] && x[2] === 'call').length, chatOn = S.filter(x => x[1] && x[3]).length, overOn = S.filter(x => x[5]).length;
+      // 疊到泡泡：收的原因是 tick（字卡被走過的人擋到就收）時，收之前最後 400 ms 內那一兩格算「正在收」，不算疊（取樣 50 ms、tick 收字卡有一拍延遲，11-28 主線全套 375 抓到 1 格、單跑兩次 0 格）
+      const tEnd = i1 > 0 && S[i1][6] === 'tick' ? S[i1][0] : null;
+      const walkOn = S.filter(x => x[1] && x[2] === 'call').length, chatOn = S.filter(x => x[1] && x[3]).length, overOn = S.filter(x => x[5] && !(tEnd != null && x[0] >= tEnd - 400 && x[0] < tEnd)).length;
       const roamed = S.some(x => x[2] === 'roam');                            // 邀請真的開著（v6 第 3 條：他在店裡逛，不嗆）
       // 收的原因：停滿 popMs（6 秒）之後才被走過的人擋到收（tick）＝已經停滿，不算被提早收（v6 第 3 條：他在店裡逛，375×548 收音機旁多一個走動的人）
       const fullMs = (await C(page, () => (window.DipLabContent.bgm || {}).popMs)) || 6000;
