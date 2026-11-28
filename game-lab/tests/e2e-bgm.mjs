@@ -18,7 +18,7 @@
 //      位置：整個在鏡頭裡、不蓋底部面板、名牌、封面熱點（小熱點）、泡泡；寬 ≤160 px、藝人《專輯》一行截斷
 //   5  抓不到：那首回 false → 1 秒內換下一首、那首不出泡泡；連三首 false → 停、60 秒（假時鐘）後再試一次；抓不到的那幾首從頭到尾沒上過泡泡
 //   6  對決：點下一位進對決 → 停（current 空、♪ 收）；打贏（盤面真的打完：force＋animated autoplay，duel.js 勝利曲）→ 領獎畫面勝利曲在放時輪播不插播 → 勝利曲 ended → 接回輪播（佇列接著）
-//   7  試聽機：輪播時 audioSession 'ambient'；點一張＝session 'playback'、輪播讓位；ended → 接回輪播、'ambient'；maxMs 淡出（試聽 15 秒那種）→ 1.5 秒後接回輪播
+//   7  試聽機：輪播時 audioSession 'playback'（v6-6 起不跟靜音鍵；原本 'ambient'）；點一張＝session 'playback'、輪播讓位；ended → 接回輪播（play 記號 'ambient'）；maxMs 淡出（試聽 15 秒那種）→ 1.5 秒後接回輪播
 //   8  背景音樂關：進來客不呼叫 play（輪播）、♪ 灰、沒有字；櫃檯唱盤＝dip.json 那張；試聽機照放
 //   9  沒解鎖（不經點擊直接進來客）：只換唱盤上那張（沒出聲）、收音機旁「點我放歌」→ 真點 → unlockFromGesture(true)、開始出聲、泡泡展開
 //   10 行動網路：一首都沒下載過＝不輪播、不出泡泡、fetch 0；放過幾首後切行動網路＝只放快取裡的、fetch 不再增加；Wi-Fi 但 effectiveType 3g＝也算行動網路
@@ -30,14 +30,14 @@
 //   14 ⏸：背景音樂 開／關、音樂音量 小中大（fx 音量跟著換）、樂歷 Lv5 起「背景音樂放 包包／包包＋唱片櫃」（Lv1 沒有這行）；包包＋唱片櫃＝包包放完一輪多一張唱片櫃的；
 //      背景音樂關＝櫃檯唱盤回 dip.json 那張
 //   15 主控台 0 錯誤、#app 不捲動；♪ 不蓋收音機熱點的中心（真點收音機照舊開轉頻率面板；e2e-econ #28 375×548 抓到過）
-//   16 只在來客、領獎、說情輪播：有 run 的標題不放（0 次 play、沒有 ♪）；輸了進說情（場景 bgm）＝接著輪播；回標題＝♪ 收、正在放的那首放完不接下一首
+//   16 只在來客、領獎、說情輪播：有 run 的標題不放（0 次 play、沒有 ♪）；輸了進說情（場景 bgm）＝接著輪播；回標題＝♪ 收、不接下一首（v6-6 起正在放的那首 0.8 秒淡出停，見 #40）
 //   17 一次造訪輪播新抓上限 30 首：包包多 30 張沒下載過的 → 網路 fetch 總數 ≤30，之後照樣放（只放快取裡的）
 //   18 saveData（省流量）：背景音樂沒設過＝預設關（不輪播、♪ 灰、⏸ 寫「關」）；⏸ 打開 → 開始輪播
 //   19 背景分頁（visibilitychange）：切走＝停、切走期間（70 秒）不接下一首；切回來點一下＝同一首從頭放、session 'ambient'
 //   20 唱片資訊試聽（玩家點的）：'playback'、輪播不插播（2 分鐘也不）；放完 → 1.5 秒內接回輪播、佇列位置不變（'ambient'）、唱片資訊開著不展開泡泡；
 //      試聽中關掉唱片資訊＝原本那首輪播接著放，還是 'ambient'（跟著靜音鍵）
 //   21 攤位「店裡唱盤」：放上去那張馬上放（插播）、佇列原本的順序接著
-//   22 舊 iOS（iPhone UA、沒有 navigator.audioSession）：開店那一下開了循環靜音 <audio>；輪播換首＝收掉（跟著靜音鍵）；試聽機（玩家點的）＝再開；接回輪播＝又收掉
+//   22 舊 iOS（iPhone UA、沒有 navigator.audioSession）：開店那一下開了循環靜音 <audio>；v6-6 起輪播換首不收（原本收掉＝跟著靜音鍵）、試聽機、接回輪播都一路開著
 //   審查修正（I-4 修正棒）：
 //   23 背景分頁 × 排著的計時器：換畫面後 4 秒內切走、連三首抓不到等 60 秒時切走 → 背景期間 0 次 play、AudioContext 不被拉回；回前景點一下＝接上 1 次
 //   24 離開輪播畫面時還在抓（4 秒）的那首作廢：進對決後抓完也不響、那張回佇列最前面；對決 audioSession 'playback'
@@ -52,6 +52,11 @@
 //   36 ?apex=1＋Lv5「包包＋唱片櫃」：唱片櫃裡擁有的頂點卡、這一趟的王牌不放；一般的唱片櫃那張照放（F2）
 //   37 活店切磋邀請（&enc=force）：第一首字卡不在挑戰者走過來、嗆聲時出，出了停滿 5 秒以上、不被聊天／換位收、不疊泡泡（F4／F5）；
 //      打贏切磋的戰利品列：牆上封面、海報、櫃檯「正在放」的點擊點最上層不是 ♪／字卡（F3）
+//   v6-6（店主 11-28「店內自由活動時沒有播出背包內的唱片；收音機那邊正在播放但沒有背景音樂；確保背景音樂可以淡入淡出」）：
+//   38 來客畫面：包包那張真的在放（context running、在響、audioSession playback）、泡泡「正在播放 藝人《專輯》」＝唱盤上那張；context 卡住 1.7 秒＝不寫正在播放、♪「點我放歌」；真點 ♪＝同一首接著響
+//   39 淡入：換下一首時音量從 ≤35% 起、0.5 秒在中間、1.35 秒到設定值、只升不降；減少動態效果（reduced motion）照樣淡入
+//   40 淡出（約 0.8 秒）：試聽機換一張（換曲）、⏸ 關聲音、回標題——被收掉那首的音量 0.3 秒時在中間、1 秒時到 0；回標題後沒在放（原本放完才停）
+//   41 包包全是精選新卡、cards-media.json 晚到：到之前不放、不出泡泡；一到就接著輪播（原本要等下一次換畫面）
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import fs from 'fs';
 import path from 'path';
@@ -331,7 +336,8 @@ async function runSize(browser, w, h) {
       const s12a = await st(page);
       await page.clock.fastForward(2800); await sleep(300);    // 淡出 1.2 秒＋閒置 1.5 秒
       const s12 = await st(page), cm = s12.calls.slice(n9 + 1);
-      if (want(7)) record(7, size, sess0 === 'ambient' && booth && cb && cb.s === 'playback' && s10.cur === cb.id && s10.sess === 'playback' && s10b.calls.length === n8 && cr && cr.s === 'ambient' && s11.sess === 'ambient' && s11.playing &&
+      // v6-6（店主 11-28 聽不到輪播）：背景音樂不再切 'ambient'（跟靜音鍵）＝輪播時 audioSession 也是 'playback'；play 的 session 記號照舊 'ambient'
+      if (want(7)) record(7, size, sess0 === 'playback' && booth && cb && cb.s === 'playback' && s10.cur === cb.id && s10.sess === 'playback' && s10b.calls.length === n8 && cr && cr.s === 'ambient' && s11.sess === 'playback' && s11.playing &&
           !s12a.calls.slice(n9 + 1).length && cm.length >= 1 && cm[0].s === 'ambient' && s12.playing,
         `試聽機那張 ${cb && cb.id}（${cb && cb.s}、audioSession ${s10.sess}；開始時 ${sess0}）；關掉面板沒插播 ${s10b.calls.length === n8}；ended → 輪播 ${cr && cr.id}（${cr && cr.s}、${s11.sess}）；` +
         `maxMs 淡出 → 接回 ${cm.length ? cm[0].id + '（' + cm[0].s + '）' : '沒有'}`);
@@ -609,8 +615,8 @@ async function runSize(browser, w, h) {
       await tapEl(page, '.lb-night .nh');
       await waitCalls(page, s3.calls.length + 1, 3000); await sleep(400);
       const s4 = await st(page), c4 = s4.calls[s3.calls.length];
-      record(19, size, s0.playing && !s1.playing && s2.calls.length === s1.calls.length && !s2.playing && !s3.playing && !!c4 && c4.id === s0.cur && c4.s === 'ambient' && s4.playing && s4.sess === 'ambient',
-        `切走：停 ${!s1.playing}、70 秒內 play ${s2.calls.length - s1.calls.length} 次；切回來還沒點 ${!s3.playing ? '不響' : '在響'}；點一下 → ${c4 && c4.id}（原本 ${s0.cur}、${c4 && c4.s}）在響 ${s4.playing}`);
+      record(19, size, s0.playing && !s1.playing && s2.calls.length === s1.calls.length && !s2.playing && !s3.playing && !!c4 && c4.id === s0.cur && c4.s === 'ambient' && s4.playing && s4.sess === 'playback',   // v6-6：audioSession 一律 'playback'
+        `切走：停 ${!s1.playing}、70 秒內 play ${s2.calls.length - s1.calls.length} 次；切回來還沒點 ${!s3.playing ? '不響' : '在響'}；點一下 → ${c4 && c4.id}（原本 ${s0.cur}、${c4 && c4.s}）在響 ${s4.playing}、audioSession ${s4.sess}`);
     } catch (e) { record(19, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
   }
@@ -646,7 +652,7 @@ async function runSize(browser, w, h) {
       const s6 = await st(page), c6 = s6.calls.slice(n5 + 1);
       record(20, size, open1 && !!c1 && c1.id === x1 && c1.s === 'playback' && s1.sess === 'playback' && s2.calls.length === n1 + 1 && s2.cur === x1 &&
           ok3 && dt <= 1500 && c3 && c3.id === head && c3.s === 'ambient' && s3.playing && !s3.pop && s4.calls.length === n1 + 2 && !s4.pop &&
-          c6.length >= 1 && c6[0].id === back && c6.every(c => c.s === 'ambient') && s6.playing && s6.sess === 'ambient',
+          c6.length >= 1 && c6[0].id === back && c6.every(c => c.s === 'ambient') && s6.playing && s6.sess === 'playback',   // v6-6：audioSession 一律 'playback'
         `唱片資訊試聽 ${c1 && c1.id}（${c1 && c1.s}、audioSession ${s1.sess}）；2 分鐘沒插播 ${s2.calls.length === n1 + 1}；放完 ${dt} ms 接回 ${c3 && c3.id}（佇列下一首 ${head}、${c3 && c3.s}）、唱片資訊開著沒出泡泡 ${!s3.pop}；` +
         `關掉後沒多放 ${s4.calls.length === n1 + 2}；試聽中關掉 → 接著放 ${c6.map(c => c.id + '（' + c.s + '）').join('、') || '沒有'}（原本 ${back}）、audioSession ${s6.sess}`);
     } catch (e) { record(20, size, false, 'threw: ' + (e && e.stack || e)); }
@@ -704,10 +710,11 @@ async function runSize(browser, w, h) {
       await end(page);
       await waitCalls(page, n2 + 1, 2500); await sleep(500);
       const s2 = await st(page), c2 = s2.calls[n2];
-      record(22, size, !s0.sess && !!s0.silent && /^play/.test(s0.silent.log) && s0.calls[0].s === 'ambient' && s0.playing && s0.silent.paused === true &&
-          booth && c1 && c1.s === 'playback' && s1.playing && s1.silent.paused === false && c2 && c2.s === 'ambient' && s2.playing && s2.silent.paused === true,
-        `沒有 audioSession：開店開了靜音 <audio>（${s0.silent && s0.silent.log}）→ 輪播 ${s0.calls[0] && s0.calls[0].id}（${s0.calls[0] && s0.calls[0].s}）時收掉 ${s0.silent && s0.silent.paused}；` +
-        `試聽機 ${c1 && c1.id}（${c1 && c1.s}）再開 ${s1.silent && s1.silent.paused === false}；接回輪播 ${c2 && c2.id}（${c2 && c2.s}）又收掉 ${s2.silent && s2.silent.paused}（${s2.silent && s2.silent.log}）`);
+      // v6-6：輪播不再收掉循環靜音 <audio>（收掉＝WebAudio 回到環境音類別、跟著靜音鍵＝店主聽不到）→ 開店開了之後一路開著（輪播、試聽機、接回輪播都沒 pause）
+      record(22, size, !s0.sess && !!s0.silent && /^play/.test(s0.silent.log) && s0.calls[0].s === 'ambient' && s0.playing && s0.silent.paused === false &&
+          booth && c1 && c1.s === 'playback' && s1.playing && s1.silent.paused === false && c2 && c2.s === 'ambient' && s2.playing && s2.silent.paused === false && !/pause/.test(s2.silent.log),
+        `沒有 audioSession：開店開了靜音 <audio>（${s0.silent && s0.silent.log}）→ 輪播 ${s0.calls[0] && s0.calls[0].id}（${s0.calls[0] && s0.calls[0].s}）時還開著 ${s0.silent && s0.silent.paused === false}；` +
+        `試聽機 ${c1 && c1.id}（${c1 && c1.s}）開著 ${s1.silent && s1.silent.paused === false}；接回輪播 ${c2 && c2.id}（${c2 && c2.s}）還開著 ${s2.silent && s2.silent.paused === false}（${s2.silent && s2.silent.log}）`);
     } catch (e) { record(22, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
   }
@@ -945,7 +952,7 @@ async function runSize(browser, w, h) {
       await waitCalls(page, n3 + 3, 4000); await sleep(400);
       const s4 = await st(page);
       await C(page, () => { window.__failAll = false; });
-      record(32, size, !!t && t.top && !!c1 && c1.id === id0 && c1.s === 'ambient' && s1.B.loading && s1.B.cur === id0 && !s2.playing && s2.B.loading && s3.playing && s3.cur === id0 && s3.B.mine && s3.sess === 'ambient' && s4.B.retry,
+      record(32, size, !!t && t.top && !!c1 && c1.id === id0 && c1.s === 'ambient' && s1.B.loading && s1.B.cur === id0 && !s2.playing && s2.B.loading && s3.playing && s3.cur === id0 && s3.B.mine && s3.sess === 'playback' && s4.B.retry,   // v6-6：audioSession 一律 'playback'
         `點「點我放歌」→ ${c1 ? c1.id + '／' + c1.s : '沒有 play'}、輪播接管 ${s1.B.loading && s1.B.cur === id0}；3 秒還在抓 ${s2.B.loading}（沒放棄）；4.5 秒在響 ${s3.playing}（${s3.cur}、${s3.sess}）；` +
         `之後連三首抓不到 → 等 60 秒 ${s4.B.retry}`);
     } catch (e) { record(32, size, false, 'threw: ' + (e && e.stack || e)); }
@@ -971,7 +978,7 @@ async function runSize(browser, w, h) {
       await jsClick(page, '#top [data-a=pause]'); await page.waitForSelector('.lb-modal [data-a=bgm]', { timeout: 3000 });
       await jsClick(page, '.lb-modal [data-a=bgm]'); await jsClick(page, '.lb-modal [data-a=resume]'); await sleep(1500);
       const s3 = await st(page);
-      record(33, size, c1.length === 1 && c1[0].id === nw && c1[0].s === 'ambient' && !c1.some(c => c.id === old) && s2.playing && s2.cur === nw && s2.sess === 'ambient' && s2.B.mine && s2.B.cur === nw && !s3.playing,
+      record(33, size, c1.length === 1 && c1[0].id === nw && c1[0].s === 'ambient' && !c1.some(c => c.id === old) && s2.playing && s2.cur === nw && s2.sess === 'playback' && s2.B.mine && s2.B.cur === nw && !s3.playing,
         `${old} 放完、${nw} 在抓時 聲音 關→開：play ${c1.map(c => c.id + '／' + c.s).join('、') || '沒有'}；抓完在響 ${s2.playing}（${s2.cur}、audioSession ${s2.sess}、輪播認得 ${s2.B.mine}）；⏸ 背景音樂 關 → 停 ${!s3.playing}`);
     } catch (e) { record(33, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
@@ -1137,7 +1144,8 @@ async function runSize(browser, w, h) {
     } catch (e) { record(36, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
   }
-  // #37 F4／F5／F3：活店切磋邀請（&enc=force）。第一首「正在播放」不在挑戰者走過來、嗆聲、第一次老闆提示時出（等他們講完才出、出了停滿、不被收、不疊泡泡）；
+  // #37 F4／F5／F3：活店切磋邀請（&enc=force）。第一首「正在播放」出了停滿、不被收、不疊泡泡；v6 第 3 條（店主 11-28）起熟客不走到對戰台嗆你（在店裡逛、點他才有切磋）：
+  //   邀請開著時字卡照常出、不出在「來一盤」他走過去那段（phase call）；
   //   打贏切磋、戰利品列（照領獎鏡頭收、收音機只露一小截）：♪ 不擋牆上封面、海報、櫃檯「正在放」的點擊點
   if (want(37)) {
     const sampler = p => C(p, () => {
@@ -1156,21 +1164,24 @@ async function runSize(browser, w, h) {
       const S = await C(page, () => window.__npS.slice());
       const i0 = S.findIndex(x => x[1]), i1 = i0 >= 0 ? S.findIndex((x, k) => k > i0 && !x[1]) : -1;
       const span = i0 >= 0 && i1 > 0 ? S[i1][0] - S[i0][0] : null, why = i1 > 0 ? S[i1][6] : '';
-      const walkOn = S.filter(x => x[1] && x[2] === 'walk').length, chatOn = S.filter(x => x[1] && x[3]).length, overOn = S.filter(x => x[5]).length;
-      const talked = S.some(x => x[3]);                                       // 挑戰者真的嗆了（聊天泡泡出來過）
-      const firstOk = i0 >= 0 && talked && !walkOn && !chatOn && !overOn && span != null && span >= 5000 && !/chat|tick|cam/.test(why);
+      const walkOn = S.filter(x => x[1] && x[2] === 'call').length, chatOn = S.filter(x => x[1] && x[3]).length, overOn = S.filter(x => x[5]).length;
+      const roamed = S.some(x => x[2] === 'roam');                            // 邀請真的開著（v6 第 3 條：他在店裡逛，不嗆）
+      // 收的原因：停滿 popMs（6 秒）之後才被走過的人擋到收（tick）＝已經停滿，不算被提早收（v6 第 3 條：他在店裡逛，375×548 收音機旁多一個走動的人）
+      const fullMs = (await C(page, () => (window.DipLabContent.bgm || {}).popMs)) || 6000;
+      const firstOk = i0 >= 0 && roamed && !walkOn && !chatOn && !overOn && span != null && span >= 5000 && (!/chat|tick|cam/.test(why) || (why === 'tick' && span >= fullMs));
       // 打贏切磋 → 戰利品列
       await C(page, () => window.__lab.force({ kind: 'counter', toE: 99, toP: 0 }));
-      // 他還在對戰台等（邀請中）就點他；機器忙、他已經走了＝同一位再開一次（__lab.crowd.enc(who)），等他站好再點（頭上 cw-enc，最多 10 秒）
+      // 邀請還開著（他在店裡逛）就點他；他已經逛完出門了＝同一位再開一次（__lab.crowd.enc(who)），等他站好再點（他的走動槽熱點 cw-<slot>，最多 10 秒）
       const e0 = await C(page, () => window.__lab.crowd.enc());
-      if (!(e0 && e0.ui && e0.ui.phase === 'table' && e0.pending === 'offer')) {
+      if (!(e0 && e0.ui && e0.ui.phase === 'roam' && e0.pending === 'offer')) {
         await C(page, who => window.__lab.crowd.enc(who), (e0 && e0.ui && e0.ui.who) || 'akai');
-        await page.waitForFunction(() => { const e = window.__lab.crowd.enc(); return !!e && !!e.ui && e.ui.phase === 'table'; }, null, { timeout: 20000, polling: 200 }).catch(() => {});
+        await page.waitForFunction(() => { const e = window.__lab.crowd.enc(); return !!e && !!e.ui && e.ui.phase === 'roam'; }, null, { timeout: 20000, polling: 200 }).catch(() => {});
         await sleep(800);
       }
       let hot = null, sheet = false;
       for (let k = 0; k < 20 && !sheet; k++) {
-        hot = await tapHot(page, x => x.id === 'cw-enc');
+        const slot = await C(page, () => { const e = window.__lab.crowd.enc(), w = e && e.ui && e.ui.who, q = w && window.__lab.crowd.state().slots.find(x => x.on && x.who === w && !x.hidden && x.phase === 'stay' && !x.walking && x.y >= 150); return q ? q.slot : null; });
+        hot = slot ? await tapHot(page, 'h => h.id === "cw-' + slot + '"') : null;
         sheet = !!hot && await page.waitForSelector('.lb-sheet.float.enc', { timeout: 1500 }).then(() => true, () => false);
         if (!sheet) await sleep(500);
       }
@@ -1191,10 +1202,138 @@ async function runSize(browser, w, h) {
       const lootOk = !!hot && sheet && dr && back && lr && L.loot && L.pts.length > 0 && !stolen.length;
       await shot(page, 'bgm37-loot', w, h);
       record(37, size, firstOk && lootOk,
-        `第一首字卡：${i0 >= 0 ? S[i0][0] + ' ms 出、停 ' + span + ' ms（收的原因 ' + (why || '時間到') + '）' : '沒出'}；挑戰者嗆過 ${talked}；走過來時出現 ${walkOn} 格、聊天時出現 ${chatOn} 格、疊到泡泡 ${overOn} 格；` +
+        `第一首字卡：${i0 >= 0 ? S[i0][0] + ' ms 出、停 ' + span + ' ms（收的原因 ' + (why || '時間到') + '）' : '沒出'}；邀請開著（他在店裡逛）${roamed}；他走過去時出現 ${walkOn} 格、聊天時出現 ${chatOn} 格、疊到泡泡 ${overOn} 格；` +
         `切磋（點他 ${hot && hot.id}、面板 ${sheet}、對決 ${dr}、回來客 ${back}、戰利品列 ${lr}）：收音機 [${L.R}]／鏡頭上緣 ${L.V}、♪ ${L.ic ? '[' + L.ic + ']' : '藏'}（${L.icMode}）；小熱點點擊點 ${L.pts.length} 個、被 ♪／字卡擋到 ${stolen.map(q => q.id + '@' + q.x + ',' + q.y).join('、') || '0'}`);
     } catch (e) { record(37, size, false, 'threw: ' + (e && e.stack || e)); }
     finally { await ctx.close(); }
+  }
+  // =========================================================== v6-6（店主 11-28）#38–#40：來客畫面真的在放、狀態字跟實際一致、淡入淡出
+  //   音量看 fx music._gain()（GainNode 當下的值；假播放器的 source 是假的，GainNode 跟 AudioContext 是真的，時間用 context 自己的 currentTime）
+  // 在頁面裡每 40 ms 取樣：fn() 回 { v, id }；t＝AudioContext.currentTime（真的音訊時鐘，不受 page.clock 影響）；取 ms 毫秒（音訊時間）
+  const gainTrace = (page, which, ms, kick) => C(page, ([which, ms, kick]) => new Promise(res => {
+    const F = window.DipLabFx, m = F.music, ac = F.audioContext(), out = [], t0 = ac.currentTime;
+    if (kick === 'end') m._end();
+    else if (kick === 'title') window.__lab.go('title');
+    else if (kick === 'booth') document.querySelector('.lb-sheet.float.booth [data-pick]').click();
+    else if (kick === 'mute') document.querySelector('.lb-modal [data-a=snd]').click();
+    const tick = () => { const g = m._gain(); out.push({ t: +(ac.currentTime - t0).toFixed(3), v: which === 'out' ? g.out : g.cur, id: which === 'out' ? g.outId : g.curId, ms: g.outMs, ctx: g.ctx });
+      if (ac.currentTime - t0 < ms / 1000) setTimeout(tick, 40); else res(out); };
+    tick();
+  }), [which, ms, kick]);
+  const fmtTr = tr => tr.filter((x, i) => i % 4 === 0).map(x => x.t.toFixed(2) + ':' + (x.v == null ? '-' : x.v.toFixed(2))).join(' ');
+  // #38 來客畫面有包包的唱片＝真的在放（context running、在響、泡泡字＝唱盤上那張＝包包裡的）；context 卡住 1.5 秒＝不寫正在播放、改「點我放歌」；點 ♪＝接著響
+  if (want(38)) {
+    const { ctx, page } = await boot(browser, w, h, {});
+    try {
+      await waitCalls(page, 1, 4000);
+      const up = await page.waitForFunction(() => window.__lab.bgm().popOpen && window.DipLabFx.music.playing(), null, { timeout: 8000, polling: 50 }).then(() => true, () => false);
+      const s0 = await st(page), g0 = await C(page, () => window.DipLabFx.music._gain()), bag = await C(page, () => window.__lab.run.bag.slice()), c0 = await card(page, s0.cur);
+      const live = up && s0.screen === 'night' && s0.B.zone && !!s0.cur && bag.indexOf(s0.cur) >= 0 && s0.playing && g0.ctx === 'running' && s0.calls[s0.calls.length - 1].s === 'ambient' &&
+        s0.sess === 'playback' && !!s0.pop && s0.pop.cid === s0.cur && !!c0 && s0.pop.text.indexOf('正在播放') >= 0 && s0.pop.text.indexOf(c0.artist + '《' + c0.album + '》') >= 0;
+      // context 被系統停住（iOS 被別的音訊打斷、resume 被擋）：source 還在，但沒聲音
+      await C(page, () => window.DipLabFx.audioContext().suspend());
+      await sleep(300); await page.clock.fastForward(1700); await sleep(400);
+      const s1 = await st(page), au1 = await C(page, () => window.DipLabFx.music.audible());
+      const honest = !s1.playing && !au1 && s1.B.snd === 'locked' && !s1.pop && !!s1.ic && /\btap\b/.test(s1.ic.cls) && /點我放歌/.test(s1.ic.text) && s1.cur === s0.cur;
+      await shot(page, 'bgm38-stuck', w, h);
+      // 點「點我放歌」（真的觸控）：在手勢裡 resume → 同一首接著響、♪ 回到「有歌」、泡泡字跟著回來
+      const n1 = s1.calls.length;
+      const tp = await tapEl(page, '.np-ic');
+      const back = await page.waitForFunction(() => window.DipLabFx.music.playing(), null, { timeout: 3000, polling: 50 }).then(() => true, () => false);
+      await sleep(400); await page.clock.fastForward(600); await sleep(300);
+      const s2 = await st(page), g2 = await C(page, () => window.DipLabFx.music._gain());
+      const resumed = !!tp && back && s2.playing && g2.ctx === 'running' && s2.cur === s0.cur && s2.B.snd === 'on' && !!s2.ic && /\bon\b/.test(s2.ic.cls) && !/點我放歌/.test(s2.ic.text) && s2.calls.length === n1;
+      record(38, size, live && honest && resumed,
+        `來客：放 ${s0.cur}（包包裡 ${bag.indexOf(s0.cur) >= 0}、${s0.calls.length && s0.calls[s0.calls.length - 1].s}）、context ${g0.ctx}、在響 ${s0.playing}、audioSession ${s0.sess}、泡泡「${s0.pop ? s0.pop.text : '沒有'}」；` +
+        `context 停住 1.7 秒：在響 ${s1.playing}／audible ${au1}、狀態 ${s1.B.snd}、泡泡 ${s1.pop ? '還在' : '收了'}、♪「${s1.ic ? s1.ic.text : '沒有'}」（${s1.ic && s1.ic.cls}）；` +
+        `點 ♪ → context ${g2.ctx}、在響 ${s2.playing}（${s2.cur}）、♪ ${s2.ic && s2.ic.cls}、多 play ${s2.calls.length - n1} 次`);
+    } catch (e) { record(38, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // #39 淡入：換下一首（自然放完）→ 新那首的音量從很小開始、約 1.2 秒升到設定值（⏸ 音樂音量 中＝0.5）；減少動態效果（reduced motion）照樣淡入
+  if (want(39)) {
+    const { ctx, page } = await boot(browser, w, h, {});
+    try {
+      await waitCalls(page, 1, 4000); await sleep(1500);
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const rm = await C(page, () => window.DipLabFx.reducedMotion());
+      const id0 = (await st(page)).cur, vol = (await st(page)).vol;
+      const tr = await gainTrace(page, 'cur', 2200, 'end');
+      // 新的 GainNode 還沒算過第一個 render quantum 時 .value 讀到預設 1（不是真的音量）：新那首的第一筆不算
+      const mine = tr.filter(x => x.id && x.id !== id0 && x.v != null).slice(1);
+      const t1 = mine.length ? mine[0].t : 0, rel = mine.map(x => ({ t: x.t - t1, v: x.v }));
+      const first = rel[0], at = s => rel.filter(x => x.t >= s)[0];
+      const mid = at(0.5), done = at(1.35);
+      const mono = rel.every((x, i) => !i || x.v >= rel[i - 1].v - 0.01);
+      record(39, size, rm && mine.length >= 10 && !!first && first.v <= vol * 0.35 && !!mid && mid.v > first.v + 0.05 && mid.v < vol * 0.85 && !!done && Math.abs(done.v - vol) <= 0.03 && mono,
+        `減少動態效果 ${rm}；${id0} 放完 → ${mine[0] && mine[0].id}：音量 ${first ? first.v.toFixed(2) : '-'} → 0.5 秒 ${mid ? mid.v.toFixed(2) : '-'} → 1.35 秒 ${done ? done.v.toFixed(2) : '-'}（設定 ${vol}）、只升不降 ${mono}；${fmtTr(rel)}`);
+    } catch (e) { record(39, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // #40 淡出（約 0.8 秒、不是一刀切）：店裡唱盤換一張（換曲）、⏸ 關聲音、回標題（離開輪播畫面）——被收掉那首的音量慢慢降到 0
+  if (want(40)) {
+    const { ctx, page } = await boot(browser, w, h, {});
+    try {
+      await waitCalls(page, 1, 4000); await sleep(1500);
+      const okFade = (tr, id) => { const m = tr.filter(x => x.id === id && x.v != null), a = m.filter(x => x.t >= 0.25 && x.t <= 0.45)[0], z = m.filter(x => x.t >= 0.95)[0];
+        return { ok: m.length >= 5 && m[0].v >= 0.3 && !!a && a.v > 0.05 && a.v < 0.42 && !!z && z.v <= 0.01 && m[0].ms >= 700 && m[0].ms <= 900, a: a ? a.v.toFixed(2) : '-', z: z ? z.v.toFixed(3) : '-', ms: m[0] ? m[0].ms : null, v0: m[0] ? m[0].v.toFixed(2) : '-' }; };
+      // 換曲：試聽機點一張（玩家點的蓋過輪播）→ 輪播那首淡出
+      const s0 = await st(page);
+      await C(page, () => window.__lab.stageAction('listen'));
+      const booth = await page.waitForSelector('.lb-sheet.float.booth [data-pick]', { timeout: 3000 }).then(() => true, () => false);
+      await sleep(300);
+      const trA = booth ? await gainTrace(page, 'out', 1200, 'booth') : [], A = okFade(trA, s0.cur);
+      const fr = (await st(page)).cur;
+      await jsClick(page, '.lb-sheet.float.booth [data-a=close]'); await sleep(600);
+      // ⏸ 關聲音 → 正在放那首淡出
+      const s1 = await st(page);
+      await jsClick(page, '#top [data-a=pause]'); await page.waitForSelector('.lb-modal [data-a=snd]', { timeout: 3000 }).catch(() => {}); await sleep(300);
+      const trB = await gainTrace(page, 'out', 1200, 'mute'), B = okFade(trB, s1.cur);
+      const sB = await st(page);
+      await jsClick(page, '.lb-modal [data-a=snd]'); await sleep(300);              // 聲音再開：接著放（試聽機那張）
+      await jsClick(page, '.lb-modal [data-a=resume]'); await sleep(500);
+      await end(page);                                                               // 試聽機那張放完 → 接回輪播
+      await page.waitForFunction(() => window.DipLabFx.music.playing() && window.DipLabFx.music.session() === 'ambient', null, { timeout: 5000, polling: 50 }).catch(() => {});
+      await sleep(1500);
+      // 回標題（離開輪播畫面）→ 輪播那首淡出、不再放完才停
+      const s2 = await st(page);
+      const trC = await gainTrace(page, 'out', 1200, 'title'), C3 = okFade(trC, s2.cur);
+      await sleep(300);
+      const s3 = await st(page);
+      record(40, size, A.ok && B.ok && !sB.playing && C3.ok && s2.playing && s2.B.mine && s3.screen === 'title' && !s3.playing && !s3.cur,
+        `換曲（試聽機 ${fr}）：${s0.cur} ${A.v0} → 0.3 秒 ${A.a} → 1 秒 ${A.z}（${A.ms} ms）；⏸ 關聲音：${s1.cur} ${B.v0} → ${B.a} → ${B.z}（${B.ms} ms）、停了 ${!sB.playing}；` +
+        `回標題：${s2.cur} ${C3.v0} → ${C3.a} → ${C3.z}（${C3.ms} ms）、之後沒在放 ${!s3.playing && !s3.cur}`);
+    } catch (e) { record(40, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { await ctx.close(); }
+  }
+  // #41 包包全是精選新卡、試聽（cards-media.json）比來客畫面晚到：到之前不放、不出「正在播放」；一到就接著輪播（不用等換畫面）
+  if (want(41)) {
+    const { ctx, page } = await newPage(browser, w, h, {});
+    let release = null; const gate = new Promise(r => { release = r; }); let held = 0;
+    await page.route('**/cards-media.json*', async route => { held++; await gate; await route.continue(); });
+    try {
+      await page.addInitScript(fakeInit);
+      await page.clock.install();
+      const q = Q('&fast=1');
+      await openTitle(page, q);
+      await seedRun(page, { idx: 0 });
+      await C(page, () => {
+        const s = JSON.parse(localStorage.getItem('dipGameLab_v1')), Cn = window.DipLabContent;
+        const pool = Object.keys(Cn.cards).filter(id => Cn.cards[id].pool && !Cn.cards[id].tier).sort().slice(0, 8);
+        s.run.bag = pool; s.settings.sound = true; localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
+      });
+      await openTitle(page, q);
+      await C(page, () => document.querySelector('[data-a=cont]').click());
+      await waitScreen(page, 'night'); await sleep(1500);
+      const s0 = await st(page), m0 = await C(page, () => !!window.DipLabContent.mediaReady);
+      release();
+      const got = await page.waitForFunction(() => window.DipLabContent.mediaReady && window.DipLabFx.music.playing(), null, { timeout: 15000, polling: 100 }).then(() => true, () => false);
+      await sleep(400);
+      const s1 = await st(page), bag = await C(page, () => window.__lab.run.bag.slice()), pool1 = await C(page, id => !!(window.DipLabContent.cards[id] || {}).pool, s1.cur);
+      record(41, size, held >= 1 && !m0 && s0.screen === 'night' && s0.calls.length === 0 && !s0.playing && !s0.pop && got && s1.playing && bag.indexOf(s1.cur) >= 0 && pool1 && s1.calls.length >= 1 && s1.calls[0].s === 'ambient',
+        `cards-media.json 擋著（${held} 次請求）：來客畫面 play ${s0.calls.length} 次、在響 ${s0.playing}、泡泡 ${s0.pop ? '有' : '沒有'}；放行 → 套上 ${got}、放 ${s1.cur}（精選新卡 ${pool1}、包包裡 ${bag.indexOf(s1.cur) >= 0}、${s1.calls[0] && s1.calls[0].s}）`);
+    } catch (e) { record(41, size, false, 'threw: ' + (e && e.stack || e)); }
+    finally { try { release(); } catch (_) {} await ctx.close(); }
   }
 }
 

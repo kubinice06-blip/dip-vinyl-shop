@@ -9,6 +9,8 @@
 //  - 「有聲音」的手勢（unlockFromGesture(true)、setSound(true)）：navigator.audioSession.type='playback'，舊 iOS 用循環靜音 <audio> 後備（B05）。
 //  - 第 I 波 §4.2-7：背景音樂（play 的 session:'ambient'）換首時把 session 切成 'ambient'（跟著 iPhone 靜音鍵；舊 iOS 收掉循環靜音 <audio>）；
 //    其他（玩家點的試聽、勝利曲、劇本）換首時切回 'playback'。只在換首那一下切，正在放的那首不切（避免系統打斷）。
+//    v6-6（店主 11-28 聽不到輪播）：BGM_MUTE_SWITCH 關＝背景音樂也用 'playback'、不跟靜音鍵（session:'ambient' 只剩「這首是背景音樂」的記號）；
+//    背景音樂淡入 1.2 秒、淡出約 0.8 秒（換曲、停、⏸ 關聲音、尾巴）全走 GainNode（iOS 的 audio.volume 唯讀，不用它）；context 卡住＝不算在響（audible／soundState）。
 //    離開背景音樂的畫面時 ui 叫 sessionPlayback() 切回 'playback'（對決音效不跟著靜音鍵）。切背景時 play() 不出聲、只記下那張（回前景點一下從頭放）。
 //  - 這次造訪呼叫過 unlockFromGesture(true)（或在 🔊 開關上打開）且偏好為 'on' 才出聲。
 //  - 動畫永遠不等音樂；抓檔 2.5 s 內沒好就放棄這次換歌。
@@ -20,6 +22,14 @@
   // LRU_MAX：存「抓下來的原始檔」（每首約 1 MB）；DEC_MAX：解碼後的 PCM（每首約 10 MB）只留目前＋下一首
   //   第 I 波 §4.2-9：原始檔快取跟著背景音樂的佇列長度（music.cacheFor(n)＝max(6, min(12, n))；包包 ≤12 張第二輪起 0 下載）；DEC_MAX 不動
   const MASTER = 0.35, MUSIC_VOL = 0.5, GIVE_UP_MS = 2500, LRU_MAX = 6, LRU_TOP = 12, DEC_MAX = 2, IDLE_MS = 1500;
+  // v6 試玩回饋 6（店主 11-28「店內自由活動時沒有播出背包內的唱片；收音機那邊正在播放但沒有背景音樂；確保背景音樂可以淡入淡出」）：
+  //   BGM_MUTE_SWITCH：背景音樂換首時要不要把 audioSession 切成 'ambient'（跟著 iPhone 靜音鍵）。第 I 波是 true；iPhone 側邊靜音（多數人常態開著）時
+  //     ambient 整個被系統靜音、試聽機／勝利曲／對決音效（'playback'）照響，畫面卻照寫「正在播放」＝店主聽不到輪播的根因 → 關掉，背景音樂跟其他音樂一樣用 'playback'。
+  //     （music.play 的 session:'ambient' 照舊是「這首是背景音樂」的記號：ui 認輪播那首、⏸ 關背景音樂、閒置停都看它）
+  //   BGM_OUT_MS：背景音樂那首淡出（換曲、停、⏸ 關聲音、離開輪播畫面；約 0.8 秒）；STUCK_MS：有一首在放、AudioContext 卻一直沒跑（iOS 被別的音訊打斷成 'interrupted'、
+  //     resume 不在手勢裡被擋）超過這麼久＝當成沒在響（playing／audible 為 false、soundState 回 'locked'＝收音機旁「點我放歌」，點一下 resume）
+  const BGM_MUTE_SWITCH = false, BGM_OUT_MS = 800, STUCK_MS = 1500;
+  const nowMs = () => { try { return performance.now(); } catch (_) { return Date.now(); } };
   const S = {
     ctx: null, own: null, master: null, noise: null, pink: null,
     unlocked: false, localPref: 'off',
@@ -99,6 +109,8 @@
     const c = S.own;
     if (c && c !== S.ctx) {
       S.ctx = c; S.master = null; S.noise = null; S.pink = null;
+      // v6-6：context 被系統停住（iOS 'interrupted'、被擋下的 resume）＝ui 收音機旁改「點我放歌」（npTick 300 ms 會重看 soundState）；又跑起來＝通知換狀態（泡泡、♪ 跟著回來）
+      try { c.onstatechange = () => { if (c !== S.own) return; const run = c.state === 'running'; if (!run && M.cur && !S.hidden) S.ctxDown = true; if (run && S.ctxDown) { S.ctxDown = false; emitMusic(); } emitSound(); }; } catch (_) {}
       try { S.master = c.createGain(); S.master.gain.value = MASTER; S.master.connect(c.destination); } catch (_) { S.master = null; }
       // 換了 context（被系統關掉重建）：舊的音樂節點已經失效
       if (M.cur && M.cur.ctx !== c) { M.cur = null; }
@@ -113,7 +125,9 @@
   }
   function soundOn() { return !!S.unlocked && pref() === 'on'; }
   // 'on'＝出聲；'locked'＝偏好開著但這次造訪還沒有手勢解鎖（背景音樂只換唱盤上那張、收音機旁「點我放歌」）；'off'＝玩家自己關了
-  function soundState() { return pref() !== 'on' ? 'off' : S.unlocked ? 'on' : 'locked'; }
+  //   v6-6：有一首在放、context 卻卡住超過 STUCK_MS（iOS 被打斷、resume 被擋）＝也算 'locked'：收音機旁「點我放歌」（點了在手勢裡 resume），不寫「正在播放」
+  function soundState() { return pref() !== 'on' ? 'off' : !S.unlocked || ctxStuck() ? 'locked' : 'on'; }
+  function ctxStuck() { const cur = M.cur; return !!(cur && cur.ctx && !S.hidden && cur.ctx.state !== 'running' && nowMs() - (cur.at || 0) >= STUCK_MS); }
   // B05：iOS 靜音切換。Web Audio 預設是「環境音」，靜音模式下整個沒聲音；在有聲音的手勢裡把 session 拉成 playback。
   function audioSessionPlayback() {
     S.ambientOn = false;
@@ -222,7 +236,7 @@
     const c = S.resumeCard; S.resumeCard = null;
     if (!c || M.cur || !soundOn()) return;
     const why = {}, sess = S.resumeSess === 'ambient' ? 'ambient' : undefined;
-    const p = music.play(c, { fadeMs: 800, session: sess, giveUpMs: S.resumeGiveUp || undefined, why });
+    const p = music.play(c, { fadeMs: sess ? 1200 : 800, session: sess, giveUpMs: S.resumeGiveUp || undefined, why });   // 背景音樂那首接回＝照輪播的 1.2 秒淡入（v6-6）
     p.catch(() => {});
     const info = { card: c, session: sess ? 'ambient' : 'playback', tok: why.tok || 0, p, why };
     M.resumeCbs.forEach(cb => { try { cb(info); } catch (e) { console.error(e); } });
@@ -425,8 +439,15 @@
   }
   function emitMusic() { const card = M.card; M.cbs.forEach(cb => { try { cb(card); } catch (e) { console.error(e); } }); }
   function fakeSrc() { return { fake: true, onended: null, buffer: null, connect() {}, start() {}, stop() {} }; }
+  // 背景音樂那首放到尾巴：最後 0.8 秒淡出（v6-6「換曲淡出」；試聽檔有的是硬切）。setVolume 會清掉排好的漸變，再排一次
+  function tailFade(me) {
+    if (!me || !me.ambient || !me.endAt) return;
+    try { const s = Math.max(me.ctx.currentTime + 0.35, me.inEnd || 0, me.endAt - BGM_OUT_MS / 1000); if (me.endAt - s < 0.05) return;
+      me.g.gain.setValueAtTime(Math.max(0.0001, M.vol), s); me.g.gain.linearRampToValueAtTime(0.0001, me.endAt); } catch (_) {}
+  }
   function fadeOutCur(fadeMs) {
     const cur = M.cur; M.cur = null; if (!cur) return;
+    M.out = { g: cur.g, at: nowMs(), ms: fadeMs, ambient: cur.ambient, id: cur.card ? cur.card.id : null };   // e2e：剛淡出的那一首（看音量是慢慢降的）
     clearTimeout(cur.maxT);
     try { const t = cur.ctx.currentTime, d = Math.max(0.02, fadeMs / 1000); cur.g.gain.cancelScheduledValues(t); cur.g.gain.setValueAtTime(cur.g.gain.value, t); cur.g.gain.linearRampToValueAtTime(0.0001, t + d); cur.src.stop(t + d + 0.05); } catch (_) {}
   }
@@ -451,7 +472,7 @@
       if (M.card && M.card.id === card.id && M.cur && !opts.maxMs) return Promise.resolve(true);
       // 舊 iOS 的循環靜音 <audio> 只能在手勢裡開：玩家點的那一下（play 呼叫當下）就開
       if (!ambient) { try { if (!navigator.audioSession && S.silentEl && S.silentEl.paused) { const p = S.silentEl.play(); if (p && p.catch) p.catch(() => {}); } } catch (_) {} }
-      if (opts.exclusive) fadeOutCur(Math.min(fadeMs, 400));
+      if (opts.exclusive) fadeOutCur(Math.min(fadeMs, M.cur && M.cur.ambient ? BGM_OUT_MS : 400));
       M.loading++;
       return new Promise(resolve => {
         let done = false;
@@ -466,14 +487,15 @@
           const c = ctx(); if (!c) { fin(false, 'error'); return; }
           try {
             if (c.state !== 'running') { const p = c.resume(); if (p && p.catch) p.catch(() => {}); }
-            fadeOutCur(fadeMs);
-            // 換首這一下才切 session（正在放的那首不切）
-            if (ambient) audioSessionAmbient(); else sessionPlaybackType();
+            fadeOutCur(M.cur && M.cur.ambient ? Math.min(fadeMs, BGM_OUT_MS) : fadeMs);   // 被換掉的是背景音樂那首＝約 0.8 秒淡出（v6-6）
+            // 換首這一下才切 session（正在放的那首不切）；v6-6：背景音樂也用 'playback'（BGM_MUTE_SWITCH）
+            if (ambient && BGM_MUTE_SWITCH) audioSessionAmbient(); else sessionPlaybackType();
             const src = buf && buf.fake ? fakeSrc() : c.createBufferSource(); if (!src.fake) src.buffer = buf;
             const g = c.createGain(); const t = c.currentTime, d = Math.max(0.02, fadeMs / 1000);
             g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(Math.max(0.0001, M.vol), t + d);
             src.connect(g); g.connect(c.destination); src.start(t);
-            const me = { ctx: c, src, g, card, maxT: 0, ambient, giveUpMs: opts.giveUpMs || 0 };
+            const me = { ctx: c, src, g, card, maxT: 0, ambient, giveUpMs: opts.giveUpMs || 0, at: nowMs(), endAt: (!src.fake && buf && buf.duration > 0) ? t + buf.duration : 0, inEnd: t + d };
+            tailFade(me);
             // 自然放完（不是被換掉、不是被 maxMs 收掉）才通知：讓對決畫面接著放下一張，不留 20 秒的空白
             src.onended = () => { if (M.cur === me) { M.cur = null; armIdle(0); M.endCbs.forEach(cb => { try { cb(card); } catch (e) { console.error(e); } }); } };
             if (opts.maxMs) me.maxT = setTimeout(() => { if (M.cur === me) { fadeOutCur(1200); armIdle(1200); } }, Math.max(0, opts.maxMs - 1200));
@@ -494,7 +516,7 @@
       else if (M.cur) { S.resumeCard = M.card; S.resumeSess = M.cur.ambient ? 'ambient' : null; S.resumeGiveUp = M.cur.giveUpMs || 0; }
       else if (M.card && !M.cardAmb) { S.resumeCard = M.card; S.resumeSess = null; S.resumeGiveUp = 0; }
       else if (M.card) S.resumeCard = null;
-      newTok(); fadeOutCur(0);
+      newTok(); fadeOutCur(BGM_OUT_MS);   // v6-6：⏸ 關聲音也淡出（約 0.8 秒），不是一刀切
     },
     // 預抓（最多 3 首；只在有聲時抓，避免靜音玩家白下載）：只抓原始檔，換歌時再解碼（約 0.1 s）
     preload(cards) {
@@ -504,6 +526,8 @@
     current() { return M.card; },
     // 真的在出聲才 true：有來源、context 在跑、頁面在前景（B05／B13）
     playing() { return !!(M.cur && M.cur.ctx && M.cur.ctx.state === 'running' && !S.hidden); },
+    // v6-6：收音機旁「正在播放」看這個：在響，或剛開始放、context 還在 resume（STUCK_MS 內）；卡住更久＝false（不寫正在播放）
+    audible() { const cur = M.cur; return !!(cur && cur.ctx && !S.hidden && (cur.ctx.state === 'running' || nowMs() - (cur.at || 0) < STUCK_MS)); },
     onChange(cb) { M.cbs.add(cb); return () => M.cbs.delete(cb); },
     onEnded(cb) { M.endCbs.add(cb); return () => M.endCbs.delete(cb); },
     // ---- 第 I 波 §4（背景音樂）
@@ -514,7 +538,7 @@
       v = Math.max(0, Math.min(1, +v)); if (!isFinite(v)) return M.vol;
       M.vol = v;
       const cur = M.cur;
-      if (cur && cur.g && cur.ctx) { try { const t = cur.ctx.currentTime; cur.g.gain.cancelScheduledValues(t); cur.g.gain.setValueAtTime(Math.max(0.0001, cur.g.gain.value), t); cur.g.gain.linearRampToValueAtTime(Math.max(0.0001, v), t + 0.3); } catch (_) {} }
+      if (cur && cur.g && cur.ctx) { try { const t = cur.ctx.currentTime; cur.g.gain.cancelScheduledValues(t); cur.g.gain.setValueAtTime(Math.max(0.0001, cur.g.gain.value), t); cur.g.gain.linearRampToValueAtTime(Math.max(0.0001, v), t + 0.3); } catch (_) {} tailFade(cur); }
       return v;
     },
     volume() { return M.vol; },
@@ -538,6 +562,8 @@
     // e2e 替身：這首「自然放完」（window.__dipFakeAudio 才有作用）；快取狀態
     _end() { if (!FAKE()) return false; const cur = M.cur; if (!cur || !cur.src || typeof cur.src.onended !== 'function') return false; cur.src.onended(); return true; },
     _lru() { return { max: M.lruMax, size: M.cache.size, keys: Array.from(M.cache.keys()) }; },
+    // e2e（v6-6 淡入淡出）：正在放那首的音量（GainNode 當下的值）、剛淡出那首的音量與淡出毫秒、context 狀態
+    _gain() { const c = M.cur, o = M.out; return { cur: c ? c.g.gain.value : null, curId: c && c.card ? c.card.id : null, out: o ? o.g.gain.value : null, outMs: o ? o.ms : null, outId: o ? o.id : null, outAgo: o ? nowMs() - o.at : null, ctx: S.own ? S.own.state : null }; },
   };
 
   // ---------------------------------------------------------------- 切背景／回前景（B13）
@@ -565,6 +591,10 @@
     document.addEventListener('pointerdown', once, true); document.addEventListener('keydown', once, true);
   }
   document.addEventListener('visibilitychange', onVisibility);
+  // v6-6：context 沒在跑（iOS 被打斷成 'interrupted'、切回前景那一下的 resume 被擋）＝之後每一下點畫面都在手勢裡再 resume 一次
+  //   （觸控的 pointerdown 不算使用者手勢；pointerup／touchend／click 才算）。沒開聲音、還沒解鎖、切背景中＝不碰
+  function kickCtx() { const c = S.own; if (!c || c.state === 'running' || c.state === 'closed' || S.hidden || !soundOn()) return; try { const p = c.resume(); if (p && p.catch) p.catch(() => {}); } catch (_) {} }
+  ['pointerup', 'touchend', 'click', 'keydown'].forEach(t => document.addEventListener(t, kickCtx, true));
 
   // ---------------------------------------------------------------- visual fx
   function reducedMotion() { try { return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (_) { return false; } }

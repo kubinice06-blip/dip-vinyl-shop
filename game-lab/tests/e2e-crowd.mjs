@@ -22,14 +22,17 @@
 //   LC8  對決與領獎：開打先清切頭的、擋路的；老闆兩段路沒人；430×932 整個在橫條裡的人還在；領獎站著不動；回來客繼續走
 //   LC9  攤位：原地照翻、沒人用門；宵夜老闆那段與 stSnack 沒人；同業站主放到 regular 時那格沒人；站主出場時沒人跟他身體框疊
 //   LC10 周姐：摘句＝lore.json 原句＋出處行；擋 lore.json 改樣板、0 錯；第一次進門老闆說一次 expertIntro
-//   LC11 切磋邀請（?enc=force）：熟客走到對戰台（在店裡的從停留點走：右排走上面、不從中島下面；不在的推門響鈴）、名字行與熱點對、門外 q1＝主線客人剪影；
-//        點他／點對戰台開面板（字對、沒有「這一輪」、✕ 先關）；「改天」→ 他去左排翻箱、主線客人推門；聲望、位數不變
-//   LC12 邀請中直接按「下一位」（真速度）：逐格 f 與接手他的走動槽身體框不疊、f 先藏才 put 主線客人（不原地換臉）、開打的是主線客人、比沒有邀請多等 ≤0.5 秒
+//   LC11 切磋邀請（?enc=force；v6 第 3 條店主 11-28 改）：他在店裡逛（頭上記號 .cw-encmk、不在對戰台）、主線客人照站對戰台；點他＝嗆那句（聊天泡泡、名字行）＋邀請面板
+//        （字對、沒有「這一輪」）；面板開著他站著等；✕ 先關；再點照開；「改天」→ 他在原地講改天那句、照逛、記號收、主線客人照站；聲望、位數不變。
+//        路線：來一盤＝主線客人先走 crowd.guest.out 出門（q1 換回他）、熟客從停留點走到對戰台（右排走上面、不從中島下面、不響鈴）；不在店裡的先照路人推門進來逛
+//   LC12 邀請中直接按「下一位」（真速度）：開打的是主線客人、比沒有邀請多等 ≤0.5 秒、邀請 lapsed、他不講改天那句、f 沒換成他
 //   LC13 切磋輸：聲望、位數、說情、連勝、錢、包包…跟打之前一樣；state lost；他說安慰那句、去翻箱、主線客人推門
 //   LC14 切磋贏：對決橫條上的 f 是熟客本人（截圖）；戰利品列整個在畫面內（三張、收這張×3、「改拿 $200」）；沒收擋下一位、重畫重開；
 //        唱片櫃模式收 → save.shelf[id].src 'enc'、包包不變；?enc=bag 收 → 包包 +1；不收 → 錢 +200
 //   LC15 切磋中重新整理：回來客畫面、state void、沒獎勵、存檔照讀、0 錯、他說作廢那句、主線客人照常
 //        （LC11–LC15 兩種獎勵模式各跑一次：LAB_ENC＝shelf,bag；截圖 lc11-*／lc14-duel-*／lc14-loot-* 在 LAB_SHOTS）
+//   LC21 想切磋的熟客不打擾（v6 第 3 條）：邀請開著逛 6 秒都不靠近對戰台、f 一直是主線客人、沒有老闆提示與吐司；點他聊天才有切磋選項、選了才開打（橫條上是他）；
+//        不點他＝逛完推門出去、邀請 lapsed、記號收、不講「沒理他」那句
 //   LC16 ?crowd=0：沒有走動的人；主線客人照新路線（in→frontleft→duelE）
 //   LC17 〔D〕過場卡（.cxcard）、樂歷頁開著時導演暫停
 //   LC18 標題回訪：0–1 位、y≥189 的停留點；點得到、泡泡不擠到旁邊
@@ -948,7 +951,7 @@ async function lc20(browser, w, h, size) {
 
 // ===================================================================================== LC11–LC15 切磋（活店第二階段；SPEC-H §7.3、§12.4；棒 5b）
 //   ?debug=1&crowd=1&enc=force＝這一位一定有邀請；&enc=bag＝包包模式。兩種獎勵模式各跑一次（LAB_ENC＝shelf,bag）。
-//   __lab.crowd.enc(who)＝這一位馬上開、指定誰（棒 4b）；熟客熱點 cw-enc（talk:enc）、邀請面板 .lb-sheet.float.enc、戰利品列 #panel .lb-sheet.reward.lt-sheet.enc
+//   __lab.crowd.enc(who)＝這一位馬上開、指定誰（棒 4b）；v6 第 3 條：他是走動槽（點他＝熱點 cw-<slot>、talk:<who>）、邀請面板 .lb-sheet.float.enc、戰利品列 #panel .lb-sheet.reward.lt-sheet.enc
 const ENC_MODES = (process.env.LAB_ENC || 'shelf,bag').split(',').map(s => s.trim()).filter(Boolean);
 const MODE_TX = { shelf: '唱片櫃', bag: '包包' };
 const encQ = (mode, force) => '&crowd=1' + (force ? '&enc=force' : '') + (mode === 'bag' ? '&enc=bag' : '');
@@ -1001,21 +1004,30 @@ async function waitMainAtTable(page, since, ms = 14000) {
   }
   return { ok: false, f: await fPos(page) };
 }
-// 熟客在對戰台等（邀請中）：嗆那句（f 的聊天泡泡、名字行＝他的名字）、熱點 cw-enc
-async function tableInfo(page, who) {
-  const R = CT.regulars[who] || {};
-  await waitFor(page, w => window.__calls.some(c => c.m === 'say' && c.a[0] === 'f' && typeof c.a[1] === 'string' && c.a[2] && c.a[2].chat), who, 6000);
-  const dom = await C(page, () => [...document.querySelectorAll('.ds-say.chat')].map(b => ({ who: (b.querySelector('.who') || {}).textContent || null, tx: (b.querySelector('.tx') || {}).textContent || null })));
-  const cl = await calls(page);
-  const hot = await C(page, () => { const h = (window.__lab.stage.hotspots() || []).find(x => x.id === 'cw-enc'); return h ? { label: h.label, action: h.action, follow: h.follow } : null; });
-  const says = saysOf(cl, 'f');
-  return { R, dare: says.find(s => s.chat) || null, dom, hot, f: await fPos(page), look: lookOf(cl, 'f'), cl };
+// 邀請中（v6 第 3 條，店主 11-28）：他在店裡逛（走動槽）、頭上 .cw-encmk；等到他站在某一格（不在走、熱點點得到）→ { s（enc 狀態）, who, slot, x, y, stop }
+async function waitRoam(page, ms = 20000, who0 = null) {
+  const t0 = Date.now();
+  while (Date.now() - t0 < ms) {
+    const s = await encSt(page);
+    if (s && s.ui && s.ui.phase === 'roam' && (!who0 || s.ui.who === who0)) {
+      const sl = (await crowdSt(page)).slots.find(x => x.on && x.who === s.ui.who && !x.hidden && x.phase === 'stay' && !x.walking && x.y >= 150);
+      if (sl) return { s, who: s.ui.who, slot: sl.slot, x: sl.x, y: sl.y, stop: sl.stop || sl.at };
+    }
+    await sleep(120);
+  }
+  return null;
 }
-// 收音機旁的 ♪ 與「正在播放」字卡（.np-ic／.np-pop）不蓋切磋邀請面板、不蓋熟客的聊天泡泡（I-4 背景音樂）
+// 他頭上的記號：document 裡 .cw-encmk 幾個、在不在他的錨點（#anc-<slot>）上、看不看得到
+const markOf = (page, slot) => C(page, sl => {
+  const all = [...document.querySelectorAll('.cw-encmk')], a = document.getElementById('anc-' + sl), m = a && a.querySelector('.cw-encmk');
+  const q = m && m.getBoundingClientRect();
+  return { n: all.length, his: !!m, vis: !!(q && q.width > 0 && q.height > 0 && getComputedStyle(m).pointerEvents === 'none') };
+}, slot);
+// 收音機旁的 ♪ 與「正在播放」字卡（.np-ic／.np-pop）不蓋切磋邀請面板（I-4 背景音樂）
 const npOverlap = page => C(page, () => {
   const R = e => { const q = e.getBoundingClientRect(); return q.width > 0 && q.height > 0 ? q : null; }, hit = (a, b) => !(a.right <= b.left || a.left >= b.right || a.bottom <= b.top || a.top >= b.bottom);
   const np = [...document.querySelectorAll('.np-ic, .np-pop')].map(R).filter(Boolean);
-  const tg = [...document.querySelectorAll('.lb-sheet.float.enc, .ds-say.chat')].map(e => ({ k: e.classList.contains('enc') ? 'sheet' : 'bubble', r: R(e) })).filter(x => x.r);
+  const tg = [...document.querySelectorAll('.lb-sheet.float.enc')].map(e => ({ k: 'sheet', r: R(e) })).filter(x => x.r);
   return { np: np.length, tg: tg.map(x => x.k), over: tg.filter(x => np.some(n => hit(n, x.r))).map(x => x.k) };
 });
 async function sheetInfo(page) {
@@ -1027,12 +1039,16 @@ async function sheetInfo(page) {
       inView: r.top >= -0.5 && r.left >= -0.5 && r.bottom <= innerHeight + 0.5 && r.right <= innerWidth + 0.5 };
   });
 }
-// 點他（cw-enc）→ 邀請面板；回面板資訊
-async function openSheet(page, how = 'him') {
-  const hot = await tapHot(page, how === 'him' ? h => h.id === 'cw-enc' : h => h.action === 'duel');
-  const ok = await page.waitForSelector('.lb-sheet.float.enc', { timeout: 4000 }).then(() => true, () => false);
+// 點他（走動槽的熱點 cw-<slot>，真點）→ 聊天泡泡＋邀請面板；他剛好在走就等他站好再點（最多 3 次）。回 { hot, ok, info, chat }
+async function openSheet(page, who) {
+  let hot = null, ok = false;
+  for (let k = 0; k < 3 && !ok; k++) {
+    const R0 = await waitRoam(page, 15000, who); if (!R0) break;
+    hot = await tapPerson(page, R0.slot);
+    ok = await page.waitForSelector('.lb-sheet.float.enc', { timeout: 3000 }).then(() => true, () => false);
+  }
   await sleep(450);
-  return { hot: hot && hot.id, ok, info: ok ? await sheetInfo(page) : null };
+  return { hot: hot && hot.id, action: hot && hot.action, ok, info: ok ? await sheetInfo(page) : null, chat: await chatS(page) };
 }
 // 打一盤切磋：o.result＝'win'|'lose'（__lab.force 每手都照這個結果）；回 { ready, top, look, shot }
 async function sparFight(page, who, o = {}) {
@@ -1076,70 +1092,75 @@ async function routeCheck(page, from, keys) {
 async function lc11(browser, w, h, size) {
   for (const mode of ENC_MODES) {
     const tag = 'LC11 ' + MODE_TX[mode];
-    // (a) ?enc=force：這一位一定有邀請——熟客走到對戰台、嗆、門外 q1＝主線客人；點他／點對戰台開面板；✕ 先關；「改天」→ 他去翻箱、主線客人推門
+    // (a) ?enc=force：這一位一定有邀請——他在店裡逛（頭上記號）、主線客人照常站在對戰台；點他＝嗆那句＋邀請面板；✕ 先關（他照逛）；面板開著他站著等；
+    //     再點一次照開；「改天」→ 他在原地講改天那句、照逛（記號收掉）、主線客人一直在對戰台
     {
       const { ctx, page } = await openNight(browser, w, h, { q: encQ(mode, true), settle: 0, seed: { seen: TIPS_SEEN } });
       try {
-        const s0 = await waitPhase(page, 'table', 15000);
-        const who = s0 && s0.ui.who, R = CT.regulars[who] || {};
-        const T = await tableInfo(page, who);
-        const np0 = await npOverlap(page);
-        const ml = await mainLook(page), cl0 = T.cl;
-        const q1 = { look: lookOf(cl0, 'q1'), sil: cl0.filter(c => c.m === 'sil' && c.a[0] === 'q1').map(c => c.a[1]).pop(), hidden: await C(page, () => { const a = window.__lab.stage.pos('q1'); return !a || a.hidden; }) };
-        const doors0 = loudDoors(cl0), fw = cl0.filter(c => c.m === 'walk' && c.a[0] === 'f').map(c => c.a[1]);
-        const came = doors0.length ? 'door' : 'inside';
-        const okWalk = fw.length && fw[fw.length - 1][fw[fw.length - 1].length - 1] === 'duelE' && (came === 'inside' || (doors0.length === 1 && J(fw[0]) === J(L.crowd.guest.in)));
-        await shot(page, `lc11-table-${mode}-${size}.png`);
+        const R0 = await waitRoam(page, 20000);
+        const who = R0 && R0.who, R = CT.regulars[who] || {};
+        const main0 = await waitMainAtTable(page, 0, 14000);
+        const mk = R0 ? await markOf(page, R0.slot) : {};
+        const cr0 = await crowdSt(page);
+        await shot(page, `lc11-roam-${mode}-${size}.png`);
         const before = await runSnap(page);
-        const okA = !!s0 && s0.spar && s0.spar.state === 'offer' && s0.spar.who === who && T.f && !T.f[2] && atSpot(T.f, 'duelE') && J(T.look) === J(R.look) &&
-          T.dare && T.dare.who === R.name && chatTexts(who, 'encDare').includes(T.dare.text) && T.dom.some(b => b.who === R.name && b.tx === T.dare.text) &&
-          T.hot && T.hot.label === R.name && T.hot.action === 'talk:enc' && q1.look != null && J(q1.look) === J(ml) && q1.sil === true && !q1.hidden && okWalk;
-        // 點他 → 面板
-        const o1 = await openSheet(page, 'him');
+        const okA = !!R0 && R0.s.spar && R0.s.spar.state === 'offer' && R0.s.spar.who === who && main0.ok && mk.n === 1 && mk.his && mk.vis && !cr0.enc && cr0.want && cr0.want.who === who &&
+          dist([R0.x, R0.y], SP.duelE) > 38;
+        // 點他 → 嗆那句（聊天泡泡、名字行）＋面板
+        const o1 = await openSheet(page, who);
         if (o1.ok) await shot(page, `lc11-sheet-${mode}-${size}.png`);
+        const b1 = await bubble(page);
         const np1 = await npOverlap(page);
-        const okNp = np0.np > 0 && !np0.over.length && np1.tg.includes('sheet') && !np1.over.length;
+        const okNp = np1.tg.includes('sheet') && !np1.over.length;
         const I = o1.info || {};
         const rewKey = mode === 'bag' ? 'encRewardBag' : 'encRewardShelf';
         const want = { title: fillTx(CT.crowdUi.encTitle, { name: R.name }), risk: CT.crowdUi.encRisk, rew: fillTx(CT.crowdUi[rewKey], { name: R.name, cash: '200' }) };
         const bt = Object.fromEntries((I.btn || []).map(b => [b.a, b]));
-        const okSheet = o1.ok && o1.hot === 'cw-enc' && I.title === want.title && I.risk === want.risk && I.rew === want.rew && I.short === CT.crowdUi.encShort && !/這一輪/.test(I.all || '') && I.inView &&
+        const okDare = !!o1.chat && o1.chat.who === who && o1.chat.cat === 'encDare' && chatTexts(who, 'encDare').includes(o1.chat.text) && !!b1 && b1.who === R.name && b1.tx === o1.chat.text;
+        const okSheet = o1.ok && o1.action === 'talk:' + who && I.title === want.title && I.risk === want.risk && I.rew === want.rew && I.short === CT.crowdUi.encShort && !/這一輪/.test(I.all || '') && I.inView &&
           bt.encYes && bt.encYes.tx === CT.crowdUi.encBtnYes && bt.encNo && bt.encNo.tx === CT.crowdUi.encBtnNo && bt.close && bt.encYes.h >= 44 && bt.encNo.h >= 44 && bt.close.h >= 44 &&
           ['encYes', 'encNo', 'close'].every(k => bt[k] && bt[k].top >= 0 && bt[k].bottom <= I.vh && bt[k].left >= 0 && bt[k].right <= I.vw);
-        // ✕＝先關（他繼續等）
+        // 面板開著：他站著等（4 秒＝遊戲 16 秒，比他一格的停留、聊天泡泡都長）
+        const p0 = (await crowdSt(page)).slots.find(x => x.on && x.who === who);
+        await sleep(4000);
+        const p1 = (await crowdSt(page)).slots.find(x => x.on && x.who === who);
+        const okHold = !!p0 && !!p1 && p1.slot === p0.slot && p1.x === p0.x && p1.y === p0.y && !p1.walking && p1.phase === 'stay';
+        // ✕＝先關（他照逛、邀請還在）
         await tapReady(page, '.lb-sheet.float.enc [data-a=close]');
         await sleep(400);
         const sX = await encSt(page);
-        const okX = !(await page.$('.lb-sheet.float.enc')) && sX && sX.ui.phase === 'table' && sX.spar.state === 'offer';
-        // 點對戰台＝開面板（不叫下一位）
-        const o2 = await openSheet(page, 'table');
-        const okT = o2.ok && o2.hot && (await C(page, () => window.__lab.screen() === 'night' && !window.__lab.going()));
+        const okX = !(await page.$('.lb-sheet.float.enc')) && sX && sX.ui && sX.ui.phase === 'roam' && sX.spar.state === 'offer';
+        // 再點一次：照平常聊（不是嗆那句）、面板照開
+        const o2 = await openSheet(page, who);
+        const okT = o2.ok && o2.chat && o2.chat.who === who && o2.chat.cat !== 'encDare';
         // 改天
         const tD = await C(page, () => Date.now());
+        const slD = ((await crowdSt(page)).slots.find(x => x.on && x.who === who) || {}).slot;
         await tapReady(page, '.lb-sheet.float.enc [data-a=encNo]');
         await waitFor(page, () => window.__lab.run.spar && window.__lab.run.spar.state === 'declined', null, 3000);
-        const tb = await waitTakeBack(page, who, 9000);
-        const main = await waitMainAtTable(page, tD, 24000);   // p2b：改天那句照 §5.3 停 6–12 秒、他走到停留點（或出門）主線客人才推門
-        const cl1 = await calls(page), saidNo = saysOf(cl1, 'f', tD).find(s => chatTexts(who, 'encNo').includes(s.text));
-        // p2b：改天那句照聊天最後一句停（§5.3 clamp(3000＋200×字數, 6000, 12000)，?fast=1 ÷4）——泡泡的 ms 與他離開對戰台（takeBack 接手）的時間
-        const noCall = cl1.find(c => c.m === 'say' && c.a[0] === 'f' && saidNo && c.a[1] === saidNo.text && c.t >= tD), holdWant = Math.min(12000, Math.max(6000, 3000 + 200 * [...(saidNo ? saidNo.text : '')].length)) / 4;
-        const okHold = !!noCall && noCall.a[2] && noCall.a[2].ms >= holdWant - 50;
-        const tb2 = (await crowdSt(page)).slots.find(x => x.on && x.who === who);
+        await sleep(600);
+        const cl1 = await calls(page), saidNo = saysOf(cl1, slD, tD).find(s => chatTexts(who, 'encNo').includes(s.text));
+        // p2b：改天那句照聊天最後一句停（§5.3 clamp(3000＋200×字數, 6000, 12000)，?fast=1 ÷4）
+        const noCall = cl1.find(c => c.m === 'say' && c.a[0] === slD && saidNo && c.a[1] === saidNo.text && c.t >= tD), holdWant = Math.min(12000, Math.max(6000, 3000 + 200 * [...(saidNo ? saidNo.text : '')].length)) / 4;
+        const okHoldNo = !!noCall && noCall.a[2] && noCall.a[2].ms >= holdWant - 50;
+        const mk2 = await markOf(page, slD), cr2 = await crowdSt(page), tb2 = cr2.slots.find(x => x.on && x.who === who);
+        const fNow = await fPos(page), lkNow = lookOf(cl1, 'f', tD), ml = await mainLook(page);
         const after = await runSnap(page), sp = await sparOf(page);
         const dif = snapDiff(before, after, ['hp', 'maxHp', 'pos', 'idx', 'retryLeft', 'streak', 'money', 'bag', 'taken', 'xp', 'level', 'wins', 'fights', 'lastFight', 'duel', 'pending']);
-        const okNo = sp.spar && sp.spar.state === 'declined' && sp.stats && sp.stats.offered === 1 && sp.stats.accepted === 0 && sp.regs && sp.regs.offered >= 1 && !!saidNo &&
-          tb && (ENC_LEFT.includes(tb.stop) || tb.phase === 'out') && main.ok && main.door >= 1 && J(main.walk) === J(L.crowd.guest.in) && !dif.length && sp.pend == null && okHold;
+        const okNo = sp.spar && sp.spar.state === 'declined' && sp.stats && sp.stats.offered === 1 && sp.stats.accepted === 0 && sp.regs && sp.regs.offered >= 1 && !!saidNo && okHoldNo &&
+          mk2.n === 0 && !cr2.want && !!tb2 && fNow && !fNow[2] && atSpot(fNow, 'duelE') && (lkNow == null || J(lkNow) === J(ml)) && !loudDoors(cl1, tD).length && !dif.length && sp.pend == null;
         await shot(page, `lc11-declined-${mode}-${size}.png`);
         const e = errs(page);
-        record(tag, size, okA && okSheet && okNp && okX && okT && okNo && !e.length,
-          `第 ${before.pos} 位 ${who}（${R.name}）${came === 'door' ? '推門響鈴（' + doors0.length + '）' : '在店裡走過去'}、走 ${J(fw[fw.length - 1])}、站 duelE ${J(T.f)}、外觀對 ${J(T.look) === J(R.look)}；嗆「${T.dare && T.dare.text}」名字行 ${T.dare && T.dare.who}、熱點 ${J(T.hot)}；` +
-          `門外 q1＝主線客人剪影 ${q1.look != null && J(q1.look) === J(ml)}（sil ${q1.sil}）；面板 ${J({ title: I.title, risk: I.risk, rew: I.rew, inView: I.inView, btn: (I.btn || []).map(b => b.a + ':' + b.tx + ':' + b.h) })}、沒有「這一輪」${!/這一輪/.test(I.all || '')}；♪ 蓋到 泡泡時 ${J(np0.over)}（${J(np0.tg)}）／面板開著 ${J(np1.over)}（${J(np1.tg)}）；` +
-          `短局那行 ${I.short === CT.crowdUi.encShort}；✕ 先關他照等 ${okX}；點對戰台開面板 ${okT}；改天 → 說「${saidNo && saidNo.text}」（停 ${noCall && noCall.a[2] && noCall.a[2].ms} ms，要 ≥${holdWant}）、他去 ${tb && (tb.stop || tb.phase)}${tb2 ? '' : '（已出門）'}、主線客人推門響鈴 ${main.door}、${main.ok ? main.ms + ' ms 後站上對戰台' : '沒站上對戰台 ' + J(main.f)}；` +
+        record(tag, size, okA && okDare && okSheet && okNp && okHold && okX && okT && okNo && !e.length,
+          `第 ${before.pos} 位 ${who}（${R.name}）在 ${R0 && R0.stop} 逛（離 duelE ${R0 ? dist([R0.x, R0.y], SP.duelE).toFixed(0) : '?'}）、記號 ${J(mk)}、主線客人站對戰台 ${main0.ok}、導演 want ${J(cr0.want)} enc ${J(cr0.enc)}；` +
+          `點他（${o1.hot}／${o1.action}）說「${o1.chat && o1.chat.text}」（${o1.chat && o1.chat.cat}、名字行 ${b1 && b1.who}）；面板 ${J({ title: I.title, risk: I.risk, rew: I.rew, inView: I.inView, btn: (I.btn || []).map(b => b.a + ':' + b.tx + ':' + b.h) })}、沒有「這一輪」${!/這一輪/.test(I.all || '')}、短局那行 ${I.short === CT.crowdUi.encShort}；♪ 蓋到面板 ${J(np1.over)}；` +
+          `面板開著 4 秒他站著 ${okHold}；✕ 先關他照逛 ${okX}；再點一次（${o2.chat && o2.chat.cat}）面板照開 ${okT}；改天 → 他在原地說「${saidNo && saidNo.text}」（停 ${noCall && noCall.a[2] && noCall.a[2].ms} ms，要 ≥${holdWant}）、記號 ${J(mk2)}、他還在店裡 ${!!tb2}、主線客人還站對戰台 ${!!fNow && atSpot(fNow, 'duelE')}；` +
           `主線欄位變的 ${dif.join(',') || '0'}；帳 ${J(sp.stats)}` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
       } catch (err) { record(tag, size, false, 'error ' + err.message); }
       await ctx.close();
     }
-    // (b)–(d) 在店裡的從停留點走過去（右排 c-elec、左排 c-soul）：不從中島下面；不在店裡＝推門響鈴、走 crowd.guest.in
+    // (b)–(d) 來一盤：主線客人先走出門（crowd.guest.out）、門外 q1＝他的剪影；熟客從停留點走到對戰台（右排 c-elec、左排 c-soul：不從中島下面）；
+    //   不在店裡的（大頭）：邀請一開他照路人一樣推門進來（不響鈴）、逛到某一格，點了才從那一格走過去
     const cases = [['akai', 'c-elec', 'right'], ['afang', 'c-soul', 'left'], ['datou', null, 'door']];
     const out = [];
     let bad = 0;
@@ -1147,77 +1168,62 @@ async function lc11(browser, w, h, size) {
       const { ctx, page } = await openNight(browser, w, h, { q: encQ(mode, false), settle: 2500, seed: { seen: TIPS_SEEN } });
       try {
         await quiet(page);
-        let from = null;
-        if (stop) { await C(page, ([a, b]) => window.__lab.crowd.spawn(a, b, { ms: 120000 }), [who, stop]); await sleep(500); from = [STOP[stop].x, STOP[stop].y]; }
-        await C(page, () => { window.__calls = []; window.__cs = []; window.__csMs = 25; });
+        if (stop) { await C(page, ([a, b]) => window.__lab.crowd.spawn(a, b, { ms: 120000 }), [who, stop]); await sleep(500); }
+        await waitMainAtTable(page, 0, 14000);
         const t0 = await C(page, () => Date.now());
         await C(page, a => window.__lab.crowd.enc(a), who);
-        const s = await waitPhase(page, 'table', 12000);
+        const R1 = await waitRoam(page, 20000, who);
+        const log = await C(page, () => window.__lab.crowd.doorLog());
+        const inLog = log.filter(x => x.kind === 'in' && x.who === who && x.t >= t0);
+        const o = await openSheet(page, who);
+        await C(page, () => { window.__calls = []; window.__cs = []; window.__csMs = 25; });
+        const tY = await C(page, () => Date.now());
+        await tapReady(page, '.lb-sheet.float.enc [data-a=encYes]');
+        const ready = await duelReady(page, 20000);
         await C(page, () => { window.__csMs = 200; });
         const cl = await calls(page), S = await cs(page);
         const fw = cl.filter(c => c.m === 'walk' && c.a[0] === 'f').map(c => c.a[1]);
-        const keys = fw[0] || [];
-        const doors = loudDoors(cl, t0);
+        const outKeys = fw[0] || [], keys = fw[1] || [];
+        const doors = loudDoors(cl, tY);
         const fs = S.map(x => x.f).filter(Boolean);
         const sUnder = fs.filter(p => p[0] > 100 && p[1] > 250).length;
+        const put = cl.find(c => c.m === 'put' && c.a[0] === 'f' && Array.isArray(c.a[1]));   // handOff：f 在他站的那一點接手（他從那一點走過去）
+        const from = put ? put.a[1].map(Math.round) : null;
         const rc = from && keys.length ? await routeCheck(page, from, keys) : null;
-        const look = lookOf(cl, 'f');
+        const look = lookOf(cl, 'f', tY), q1 = lookOf(cl, 'q1', tY), ml = await mainLook(page);
         const R = CT.regulars[who];
-        let ok = !!s && s.ui.who === who && J(look) === J(R.look) && keys[keys.length - 1] === 'duelE' && !sUnder;
-        if (kind === 'door') ok = ok && doors.length === 1 && J(keys) === J(L.crowd.guest.in) && cl.some(c => c.m === 'put' && c.a[0] === 'f' && c.a[1] === 'door');
-        else ok = ok && !doors.length && rc && !rc.under && (kind !== 'right' || !rc.preLow) && J(keys) === J(kind === 'right' ? ['leaving', 'mid', 'in', 'frontleft', 'duelE'] : (from[1] < 200 && from[0] >= 70) || from[1] < 150 ? ['in', 'frontleft', 'duelE'] : ['frontleft', 'duelE']);
+        const wantKeys = from ? (from[0] < 140 ? ((from[0] >= 70 && from[1] < 200) || from[1] < 150 ? ['in', 'frontleft', 'duelE'] : ['frontleft', 'duelE']) : ['leaving', 'mid', 'in', 'frontleft', 'duelE']) : null;
+        let ok = !!R1 && o.ok && ready && J(outKeys) === J(L.crowd.guest.out) && q1 != null && J(q1) === J(ml) && J(look) === J(R.look) && J(keys) === J(wantKeys) && !sUnder && rc && !rc.under && !doors.length &&
+          (kind !== 'right' || !rc.preLow) && await C(page, () => window.DipLabEngine.encPending(window.__lab.run) === 'fighting');
+        if (kind === 'door') ok = ok && inLog.length === 1;
+        else ok = ok && !inLog.length && R1.stop === stop && !!from && dist(from, [STOP[stop].x, STOP[stop].y]) <= 2;
         if (!ok) bad++;
         const e = errs(page); if (e.length) bad++;
-        out.push(`${R.name}${stop ? '@' + stop : '（不在店裡）'} 走 ${J(keys)}、響鈴 ${doors.length}、中島下面 取樣 ${sUnder}／路線 ${rc ? rc.under : '-'}${kind === 'right' ? '、走進 frontleft 前 y>250 ' + (rc ? rc.preLow : '-') : ''}、外觀對 ${J(look) === J(R.look)}${e.length ? '、錯 ' + e[0] : ''}`);
+        out.push(`${R.name}${stop ? '@' + stop : '（不在店裡：推門進來 ' + inLog.length + ' 次、逛到 ' + (R1 && R1.stop) + '）'}：主線客人先出門 ${J(outKeys)}、q1 換回他 ${q1 != null && J(q1) === J(ml)}；他走 ${J(keys)}（要 ${J(wantKeys)}）、響鈴 ${doors.length}、中島下面 取樣 ${sUnder}／路線 ${rc ? rc.under : '-'}${kind === 'right' ? '、走進 frontleft 前 y>250 ' + (rc ? rc.preLow : '-') : ''}、外觀對 ${J(look) === J(R.look)}、開打 ${ready}${e.length ? '、錯 ' + e[0] : ''}`);
       } catch (err) { bad++; out.push(who + ' error ' + err.message); }
       await ctx.close();
     }
     record(tag + ' 路線', size, !bad, out.join('；'));
   }
-  // (c) p2b：第一次有熟客來嗆（save.seen.encHint 沒有）：他嗆完，老闆說一次「點他決定打不打，直接叫下一位就是改天」；記進存檔、重新整理後不再說；熱點有名牌、會閃
-  if (ENC_MODES.includes('shelf')) {
-    const tag = 'LC11 第一次提示';
-    const { ctx, page } = await openNight(browser, w, h, { q: encQ('shelf', true), settle: 0, seed: { seen: TIPS_SEEN } });
-    try {
-      const s0 = await waitPhase(page, 'table', 15000);
-      const who = s0 && s0.ui.who, R = CT.regulars[who] || {}, want = fillTx(CT.crowdUi.encHint, { name: R.name });
-      const said = await waitFor(page, tx => window.__calls.some(c => c.m === 'say' && c.a[0] === 'o' && c.a[1] === tx), want, 9000);
-      const hot = await C(page, () => { const h = (window.__lab.stage.hotspots() || []).find(x => x.id === 'cw-enc'); return h ? { label: h.label, noLabel: !!h.noLabel, noSparkle: !!h.noSparkle } : null; });
-      const seen1 = await C(page, () => !!window.__lab.save.seen.encHint && !!JSON.parse(localStorage.getItem('dipGameLab_v1')).seen.encHint);
-      await shot(page, `lc11-hint-${size}.png`);
-      await page.reload(); await waitScreen(page, 'title', 15000).catch(() => {});
-      await jsClick(page, '[data-a=cont]').catch(() => {});
-      await waitScreen(page, 'night', 15000);
-      await C(page, () => { window.__calls = []; });
-      await waitPhase(page, 'table', 15000);
-      await sleep(3500);
-      const again = await C(page, tx => window.__calls.filter(c => c.m === 'say' && c.a[0] === 'o' && c.a[1] === tx).length, want);
-      const e = errs(page);
-      record(tag, size, !!s0 && said && seen1 && again === 0 && hot && hot.label === R.name && !hot.noLabel && !hot.noSparkle && !e.length,
-        `${R.name}嗆完老闆說「${want}」${said}；存檔記了 ${seen1}；重新整理回來（照樣在對戰台等）再說 ${again} 次；熱點名牌 ${hot && hot.label}、noLabel ${hot && hot.noLabel}、noSparkle ${hot && hot.noSparkle}` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
-    } catch (err) { record(tag, size, false, 'error ' + err.message); }
-    await ctx.close();
-  }
 }
 
 // ===================================================================================== LC12 邀請中直接按「下一位」（真速度）
+//   v6 第 3 條：邀請中他在店裡逛、主線客人本來就站在對戰台——按下一位＝邀請收尾（沒理他）、開打的是主線客人、比沒有邀請多等 ≤0.5 秒、他不講改天那句、照逛
 let LC12_BASE = {};
 async function nextTimer(page) {
-  await C(page, () => { window.__fr = []; window.__frOn = true; window.__cs = []; window.__csMs = 25; window.__tDuel = 0; clearInterval(window.__pv); window.__pv = setInterval(() => { if (!window.__tDuel && window.__lab.screen() === 'duel') window.__tDuel = Date.now(); }, 5); });
+  await C(page, () => { window.__tDuel = 0; clearInterval(window.__pv); window.__pv = setInterval(() => { if (!window.__tDuel && window.__lab.screen() === 'duel') window.__tDuel = Date.now(); }, 5); });
   const t0 = await C(page, () => { const b = document.querySelector('[data-a=go]'); window.__tClick = Date.now(); if (b) b.click(); return window.__tClick; });
   await waitFor(page, () => window.__tDuel > 0, null, 15000);
   await sleep(300);
-  const r = await C(page, () => { window.__frOn = false; clearInterval(window.__pv); window.__csMs = 200; return { fr: window.__fr.slice(), tDuel: window.__tDuel, duelEnemy: window.__lab.run.duelEnemy || null, guest: window.__lab.run.order[window.__lab.run.idx] }; });
-  const S = await cs(page);
-  const pArr = r.fr.find(x => x.t >= t0 && atSpot(x.p, 'duelP', 1));
-  return Object.assign(r, { t0, S, pArr: pArr ? pArr.t : null, wait: r.tDuel ? r.tDuel - t0 : null, extra: pArr && r.tDuel ? r.tDuel - pArr.t : null });
+  const r = await C(page, () => { clearInterval(window.__pv); return { tDuel: window.__tDuel, duelEnemy: window.__lab.run.duelEnemy || null, guest: window.__lab.run.order[window.__lab.run.idx] }; });
+  return Object.assign(r, { t0, wait: r.tDuel ? r.tDuel - t0 : null });
 }
 async function lc12(browser, w, h, size) {
   // 沒有邀請時：主線客人站在對戰台，你走過去開打（同一位、同一個起點）
   if (!LC12_BASE[size]) {
     const { ctx, page } = await openNight(browser, w, h, { fast: false, q: '&crowd=1', settle: 0, seed: { seen: TIPS_SEEN } });
     try {
-      await waitFor(page, () => { const a = window.__lab.stage.pos('f'), b = window.__lab.stage.spot('duelE'); return a && !a.hidden && Math.abs(a.x - b[0]) <= 1 && Math.abs(a.y - b[1]) <= 1; }, null, 20000);
+      await waitMainAtTable(page, 0, 20000);
       await sleep(1500);
       LC12_BASE[size] = await nextTimer(page);
     } catch (err) { LC12_BASE[size] = { err: err.message }; }
@@ -1228,37 +1234,22 @@ async function lc12(browser, w, h, size) {
     const tag = 'LC12 ' + MODE_TX[mode];
     const { ctx, page } = await openNight(browser, w, h, { fast: false, q: encQ(mode, true), settle: 0, seed: { seen: TIPS_SEEN } });
     try {
-      const s0 = await waitPhase(page, 'table', 25000);
+      const s0 = await waitPhase(page, 'roam', 25000);
       const who = s0 && s0.ui.who, R = CT.regulars[who] || {};
+      const main = await waitMainAtTable(page, 0, 20000);
       await sleep(1500);
-      const ml = await mainLook(page);
       await C(page, () => { window.__calls = []; });
       const M = await nextTimer(page);
-      // p2b：他邊走邊說的改天那句是聊天泡泡，換到對決畫面就收（原本一般泡泡被帶進對決畫面、跟主線客人開場白疊字）
-      const noTx = new Set(chatTexts(who, 'encNo')), leftIn = [];
-      for (let k = 0; k < 8; k++) { const t = await C(page, () => window.__lab.screen() === 'duel' ? [...document.querySelectorAll('.ds-say')].map(b => b.textContent) : null); if (t) leftIn.push(...t); await sleep(200); }
-      const carried = leftIn.filter(t => [...noTx].some(x => t.includes(x)));
       const cl = await calls(page);
-      // 逐格：f 與接手他的走動槽身體框不疊（店景每一格＋25 ms 取樣）
-      const rows = M.fr.filter(x => x.t >= M.t0).map(x => ({ t: x.t, f: x.f, sl: x.sl.find(q => q.w === who) || null }))
-        .concat(M.S.filter(x => x.t >= M.t0).map(x => ({ t: x.t, f: x.f ? [x.f[0], x.f[1], false] : null, sl: x.sl.find(q => q.w === who) || null })));
-      const over = rows.filter(x => x.f && !x.f[2] && x.sl && !x.sl.h && x.sl.x != null && Math.abs(x.f[0] - x.sl.x) < BX && Math.abs(x.f[1] - x.sl.y) < BY);
-      const slotSeen = rows.some(x => x.sl && !x.sl.h);
-      // f 沒有在他身上原地換成主線客人：主線外觀是 put（不是 sprite）、put 之前 f 先藏起來
-      const putMain = cl.find(c => c.m === 'put' && c.a[0] === 'f' && J(c.a[2]) === J(ml));
-      const hideF = cl.find(c => c.m === 'hide' && c.a[0] === 'f' && c.a[1] !== false);
-      const spriteMain = cl.filter(c => c.m === 'sprite' && c.a[0] === 'f' && J(c.a[1]) === J(ml) && (!putMain || c.t < putMain.t));
-      const putAt = putMain ? (putMain.a[1] === 'duelE' || (Array.isArray(putMain.a[1]) && atSpot(putMain.a[1], 'duelE'))) : false;
-      const saidNo = cl.filter(c => c.m === 'say' && typeof c.a[1] === 'string' && c.t >= M.t0).map(c => ({ id: c.a[0], text: c.a[1] })).find(s => chatTexts(who, 'encNo').includes(s.text));
-      const clearWait = putMain && M.pArr ? putMain.t - M.pArr : null;     // 主線客人站上對戰台（clearP）比你走到 duelP 晚多少（負的＝你還在走他就站上去了）
-      const sp = await sparOf(page);
-      const diffMs = M.extra != null && B && B.extra != null ? M.extra - B.extra : null;
+      const saidNo = cl.filter(c => c.m === 'say' && typeof c.a[1] === 'string' && c.t >= M.t0).find(s => [...chatTexts(who, 'encNo'), ...chatTexts(who, 'encLapse')].includes(s.a[1]));
+      const fWalkHim = cl.filter(c => c.m === 'sprite' && c.a[0] === 'f' && J(c.a[1]) === J(R.look));
+      const sp = await sparOf(page), cr = await crowdSt(page);
+      const diffMs = M.wait != null && B && B.wait != null ? M.wait - B.wait : null;
       const e = errs(page);
-      const ok = !!s0 && slotSeen && !over.length && putMain && putAt && hideF && hideF.t <= putMain.t && !spriteMain.length && M.duelEnemy === M.guest && sp.spar && sp.spar.state === 'declined' &&
-        clearWait != null && clearWait <= 500 && diffMs != null && diffMs <= 500 && !!saidNo && !carried.length && !e.length;
-      record(tag, size, ok, `${R.name}在對戰台等 → 按下一位：${M.fr.length} 格＋${M.S.length} 個取樣 f 跟接手他的走動槽身體框疊 ${over.length}${over.length ? J(over.slice(0, 3)) : ''}；` +
-        `f 先藏 ${!!hideF}（${hideF && putMain ? putMain.t - hideF.t : '?'} ms 後才 put 主線客人到 duelE ${putAt}）、原地換臉 ${spriteMain.length}；他說「${saidNo && saidNo.text}」、對決畫面還看得到這句 ${carried.length}；開打的是主線客人 ${M.duelEnemy === M.guest}（${M.duelEnemy}）；` +
-        `按下一位到開打 ${M.wait} ms（你走到對戰台後主線客人才站上去 ${clearWait} ms、到開打 ${M.extra} ms；沒有邀請時 ${B && B.wait} ms／${B && B.extra} ms → 多等 ${diffMs} ms，≤500）` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
+      const ok = !!s0 && main.ok && M.duelEnemy === M.guest && sp.spar && sp.spar.state === 'lapsed' && sp.pend == null && !saidNo && !fWalkHim.length && !cr.want && !cr.enc &&
+        diffMs != null && diffMs <= 500 && !e.length;
+      record(tag, size, ok, `${R.name}在店裡逛、主線客人站對戰台 ${main.ok} → 按下一位：開打的是主線客人 ${M.duelEnemy === M.guest}（${M.duelEnemy}）、邀請 ${sp.spar && sp.spar.state}、他講改天／沒理他那句 ${!!saidNo}、f 換成他 ${fWalkHim.length}、導演 want ${J(cr.want)}；` +
+        `按下一位到開打 ${M.wait} ms（沒有邀請時 ${B && B.wait} ms → 多等 ${diffMs} ms，≤500）` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
     } catch (err) { record(tag, size, false, 'error ' + err.message); }
     await ctx.close();
   }
@@ -1270,11 +1261,11 @@ async function lc13(browser, w, h, size) {
     const tag = 'LC13 ' + MODE_TX[mode];
     const { ctx, page } = await openNight(browser, w, h, { q: encQ(mode, true), settle: 0, seed: { seen: TIPS_SEEN } });
     try {
-      const s0 = await waitPhase(page, 'table', 15000);
-      const who = s0 && s0.ui.who, R = CT.regulars[who] || {};
+      const s0 = await waitRoam(page, 20000);
+      const who = s0 && s0.who, R = CT.regulars[who] || {};
       await sleep(400);
       const before = await runSnap(page);
-      const o = await openSheet(page, 'him');
+      const o = await openSheet(page, who);
       const F = await sparFight(page, who, { result: 'lose' });
       const tBack = await C(page, () => Date.now());
       await waitFor(page, () => window.__lab.run.spar && window.__lab.run.spar.state === 'lost', null, 4000);
@@ -1318,11 +1309,11 @@ async function lc14(browser, w, h, size) {
     const tag = 'LC14 ' + MODE_TX[mode];
     const { ctx, page } = await openNight(browser, w, h, { q: encQ(mode, true), settle: 0, seed: { seen: TIPS_SEEN } });
     try {
-      const s0 = await waitPhase(page, 'table', 15000);
-      const who = s0 && s0.ui.who, R = CT.regulars[who] || {};
+      const s0 = await waitRoam(page, 20000);
+      const who = s0 && s0.who, R = CT.regulars[who] || {};
       await sleep(400);
       const before = await runSnap(page);
-      const o = await openSheet(page, 'him');
+      const o = await openSheet(page, who);
       const F = await sparFight(page, who, { result: 'win', shot: `lc14-duel-${mode}-${size}.png` });
       const okDuel = o.ok && F.ready && F.back && F.top.includes(fillTx(CT.crowdUi.encTop, { name: R.name })) && F.look != null && J(F.look) === J(R.look) && F.look !== 'e0' && F.st.pend === 'fighting';
       const opened = await lootOpen(page);
@@ -1374,9 +1365,9 @@ async function lc14(browser, w, h, size) {
       // 不收：同一位再開一盤（__lab.crowd.enc），換一位外觀是捏出來的（spec）的熟客；贏了按「改拿 $200」
       const who2 = who === 'akai' ? 'datou' : 'akai', R2 = CT.regulars[who2];
       await C(page, a => window.__lab.crowd.enc(a), who2);
-      const s2 = await waitPhase(page, 'table', 12000);
+      const s2 = await waitRoam(page, 25000, who2);
       await sleep(400);
-      const o2 = await openSheet(page, 'him');
+      const o2 = await openSheet(page, who2);
       const F2 = await sparFight(page, who2, { result: 'win', settle: 900, shot: `lc14-duel2-${mode}-${size}.png` });
       const okDuel2 = F2.look != null && J(F2.look) === J(R2.look) && F2.top.includes(fillTx(CT.crowdUi.encTop, { name: R2.name }));
       const op2 = await lootOpen(page);
@@ -1386,7 +1377,7 @@ async function lc14(browser, w, h, size) {
       await waitFor(page, () => window.__lab.run.spar && window.__lab.run.spar.skipped, null, 5000);
       await sleep(300);
       const k1 = await runSnap(page), i1 = await sparOf(page);
-      const okSkip = !!s2 && s2.ui.who === who2 && okDuel2 && o2.ok && F2.ready && F2.back && op2 && k1.money === k0.money + 200 && i1.spar.skipped === true && !i1.spar.taken && i1.stats.cash === 200 && i1.income - i0.income === 200 && k1.bag === k0.bag;
+      const okSkip = !!s2 && s2.who === who2 && okDuel2 && o2.ok && F2.ready && F2.back && op2 && k1.money === k0.money + 200 && i1.spar.skipped === true && !i1.spar.taken && i1.stats.cash === 200 && i1.income - i0.income === 200 && k1.bag === k0.bag;
       const after = await runSnap(page);
       const dif = snapDiff(before, after, ['hp', 'maxHp', 'pos', 'idx', 'retryLeft', 'streak', 'xp', 'level', 'wins', 'fights', 'beaten', 'lastFight', 'duel', 'pending']);
       const e = errs(page);
@@ -1407,11 +1398,11 @@ async function lc15(browser, w, h, size) {
     const tag = 'LC15 ' + MODE_TX[mode];
     const { ctx, page } = await openNight(browser, w, h, { q: encQ(mode, true), settle: 0, seed: { seen: TIPS_SEEN } });
     try {
-      const s0 = await waitPhase(page, 'table', 15000);
-      const who = s0 && s0.ui.who, R = CT.regulars[who] || {};
+      const s0 = await waitRoam(page, 20000);
+      const who = s0 && s0.who, R = CT.regulars[who] || {};
       await sleep(400);
       const before = await runSnap(page);
-      const o = await openSheet(page, 'him');
+      const o = await openSheet(page, who);
       const F = await sparFight(page, who, { stop: true, settle: 600 });
       const st0 = await sparOf(page);
       await page.reload({ waitUntil: 'domcontentloaded' });
@@ -1438,6 +1429,65 @@ async function lc15(browser, w, h, size) {
       record(tag, size, ok, `${R.name}：打到一半重新整理 → 來客畫面 ${night}、state ${st0.spar && st0.spar.state}→${sp.spar && sp.spar.state}、戰利品 ${sp.spar && sp.spar.loot ? '有' : '沒有'}、帳 ${J(sp.stats)}；` +
         `存檔照讀（第 ${after.pos} 位、validRun 過 ${after.pos === before.pos}）、主線欄位變的 ${dif.join(',') || '0'}；他說「${said.join('｜')}」（作廢句 ${voidOk}）、他去 ${tb && (tb.stop || tb.phase)}；` +
         `主線客人 ${main.ok ? '站上對戰台' : '沒來'}、按下一位開打 ${d.enemy}（${d.enemy === d.guest}）` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
+    } catch (err) { record(tag, size, false, 'error ' + err.message); }
+    await ctx.close();
+  }
+}
+
+// ===================================================================================== LC21 想切磋的熟客不打擾（v6 第 3 條，店主 11-28）
+//   (a) 他不會自己上對戰台：邀請開著逛 6 秒（遊戲 24 秒），每個取樣他都不在 duelE 38 格內、f 一直是主線客人站在對戰台、導演沒有把 f 交給他（enc 空）、
+//       老闆沒講切磋提示、沒有吐司；點他聊天＝泡泡＋邀請面板（切磋選項）；選「來一盤」才開打，對決橫條上是他本人
+//   (b) 不點他：他照停留時間逛完出門（推門出去）→ 邀請收尾 lapsed、記號收掉、他不講「沒理他」那句、主線客人照站
+async function lc21(browser, w, h, size) {
+  {
+    const tag = 'LC21 不自己上對戰台';
+    const { ctx, page } = await openNight(browser, w, h, { q: encQ('shelf', true), settle: 0, seed: { seen: TIPS_SEEN } });
+    try {
+      const R0 = await waitRoam(page, 20000);
+      const who = R0 && R0.who, R = CT.regulars[who] || {};
+      const main0 = await waitMainAtTable(page, 0, 14000);
+      await C(page, () => { window.__cs = []; window.__csMs = 100; });
+      const tW = await C(page, () => Date.now());
+      await sleep(6000);
+      await C(page, () => { window.__csMs = 200; });
+      const S = (await cs(page)).filter(x => x.t >= tW), ml = await mainLook(page);
+      const near = S.filter(x => x.sl.some(q => q.w === who && !q.h && q.x != null && dist([q.x, q.y], SP.duelE) < 38)).length;
+      const fOff = S.filter(x => !x.f || !atSpot(x.f, 'duelE', 2)).length;
+      const cl0 = await calls(page), lk = lookOf(cl0, 'f'), hint = fillTx(CT.crowdUi.encHint, { name: R.name });
+      const ownerSaid = cl0.filter(c => c.m === 'say' && c.a[0] === 'o' && c.a[1] === hint).length;
+      const toasts = await C(page, n => [...document.querySelectorAll('.lb-toast, #toast, .toast')].map(e => e.textContent).filter(t => t.includes(n)).length, R.name);
+      const cr = await crowdSt(page), sp0 = await sparOf(page);
+      const okWait = !!R0 && main0.ok && S.length >= 30 && !near && !fOff && J(lk) === J(ml) && !cr.enc && cr.want && cr.want.who === who && !ownerSaid && !toasts && sp0.spar.state === 'offer' && sp0.stats.accepted === 0;
+      // 點他聊天：泡泡＋切磋選項
+      const o = await openSheet(page, who);
+      const okTalk = o.ok && o.chat && o.chat.who === who && o.info && o.info.btn.some(b => b.a === 'encYes');
+      await shot(page, `lc21-talk-${size}.png`);
+      // 選了才開打：主線客人出門、他走到對戰台、對決橫條上是他本人
+      const F = await sparFight(page, who, { result: 'win', stop: true, settle: 900 });
+      const okFight = F.yes && F.ready && J(F.look) === J(R.look) && F.st.pend === 'fighting' && F.top.includes(fillTx(CT.crowdUi.encTop, { name: R.name }));
+      const e = errs(page);
+      record(tag, size, okWait && okTalk && okFight && !e.length,
+        `${R.name}邀請開著逛 6 秒（${S.length} 個取樣）：離對戰台 <38 格 ${near} 次、f 不在 duelE ${fOff} 次、f 是主線客人 ${J(lk) === J(ml)}、導演 enc ${J(cr.enc)} want ${J(cr.want)}、老闆提示 ${ownerSaid}、吐司 ${toasts}、邀請 ${sp0.spar && sp0.spar.state}；` +
+        `點他聊天：${o.chat && o.chat.text}／面板 ${o.ok}（${o.info && o.info.btn.map(b => b.a).join(',')}）；來一盤 → 開打 ${F.ready}、橫條上是他 ${J(F.look) === J(R.look)}、頂欄「${F.top.replace(/\s+/g, ' ').slice(0, 20)}」` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
+    } catch (err) { record(tag, size, false, 'error ' + err.message); }
+    await ctx.close();
+  }
+  {
+    const tag = 'LC21 不點他';
+    const { ctx, page } = await openNight(browser, w, h, { q: encQ('shelf', true), settle: 0, seed: { seen: TIPS_SEEN } });
+    try {
+      const R0 = await waitRoam(page, 20000);
+      const who = R0 && R0.who, R = CT.regulars[who] || {}, slot = R0 && R0.slot;
+      const t0 = await C(page, () => Date.now());
+      const gone = await waitFor(page, w => window.__lab.crowd.doorLog().some(x => x.kind === 'out' && x.who === w), who, 90000);
+      const tOut = await C(page, () => Date.now());
+      await sleep(600);
+      const sp = await sparOf(page), es = await encSt(page), mk = await markOf(page, slot), cr = await crowdSt(page);
+      const cl = await calls(page), lapseSaid = cl.filter(c => c.m === 'say' && typeof c.a[1] === 'string' && chatTexts(who, 'encLapse').includes(c.a[1])).length;
+      const f = await fPos(page), ml = await mainLook(page), lk = lookOf(cl, 'f');
+      const e = errs(page);
+      const ok = !!R0 && gone && sp.spar && sp.spar.state === 'lapsed' && sp.pend == null && (!es || !es.ui) && mk.n === 0 && !cr.want && !lapseSaid && f && !f[2] && atSpot(f, 'duelE') && J(lk) === J(ml) && !e.length;
+      record(tag, size, ok, `${R.name}沒人理：${gone ? ((tOut - t0) / 1000).toFixed(1) + ' 秒後推門出去' : '沒出門'}、邀請 ${sp.spar && sp.spar.state}、畫面記帳 ${J(es && es.ui)}、記號 ${mk.n}、導演 want ${J(cr.want)}、講「沒理他」那句 ${lapseSaid}、主線客人照站對戰台 ${!!f && atSpot(f, 'duelE')}` + (e.length ? '；錯 ' + e.slice(0, 3).join(' | ') : ''));
     } catch (err) { record(tag, size, false, 'error ' + err.message); }
     await ctx.close();
   }
@@ -1563,7 +1613,7 @@ async function shots(browser, w, h, size) {
 }
 
 // ===================================================================================== 主程式
-const RUN = { 1: lc1, 2: lc2, 4: lc4, 5: lc5, 6: lc6, 7: lc7, 8: lc8, 9: lc9, 10: lc10, 11: lc11, 12: lc12, 13: lc13, 14: lc14, 15: lc15, 16: lc16, 17: lc17, 18: lc18, 19: lc19, 20: lc20 };
+const RUN = { 1: lc1, 2: lc2, 4: lc4, 5: lc5, 6: lc6, 7: lc7, 8: lc8, 9: lc9, 10: lc10, 11: lc11, 12: lc12, 13: lc13, 14: lc14, 15: lc15, 16: lc16, 17: lc17, 18: lc18, 19: lc19, 20: lc20, 21: lc21 };
 let browser;
 if (BROWSER === 'webkit') {
   let webkit; try { ({ webkit } = require('playwright')); } catch (_) { ({ webkit } = require('/opt/node-tools/node_modules/playwright')); }
@@ -1574,7 +1624,7 @@ try {
   for (const [w, h] of SIZES) {
     const size = `${w}x${h}`;
     if (BROWSER === 'webkit') { await lc2b(browser, w, h, size, '（WebKit）'); continue; }
-    for (const id of [1, 2, '2b', 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 'TAPS', 'SHOTS']) {
+    for (const id of [1, 2, '2b', 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 'TAPS', 'SHOTS']) {
       const key = id === '2b' ? 2 : id;
       if (!want(key, size) && !(ONLY && ONLY.has(id === '2b' ? '2B' : id === 2 ? '2A' : '-'))) continue;
       if (ONLY && !ONLY.has('2') && ((id === 2 && !ONLY.has('2A')) || (id === '2b' && !ONLY.has('2B')))) continue;

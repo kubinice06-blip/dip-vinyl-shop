@@ -17,6 +17,7 @@
  *   clearRoute 的 o：{ who:'f'|'o'|'p'（這個人走到路線終點前，這條路上不准有人停）, door:true（主線客人推門：門晃一下＋到站＋1.2 秒前門不給路人用）}
  *   聊天：talk(who, hot)＝點人 ; ownerTalk(bubbles?)＝老闆講一段 ; chatClose() ; chatTill()→Date.now 基準 ; chatState() ; chatNext()
  *   第二階段（切磋，棒 4b）：handOff、takeBack、encActive、encDecline、encMark、encSay、encClear（§7.3；邀請、面板、記帳在 ui.js sparNight）
+ *   v6 第 3 條（店主 11-28）：encWant、encSayAt；host.encHeld()→bool（邀請面板開著）、host.encGone(who)（他逛完出門）——想切磋的熟客跟大家一樣逛，點他聊天才有切磋
  *
  * 規則（§10）：自己一個 setInterval 250 ms＋遊戲時鐘（真時間×speed()，暫停不走）；不用 UI.timers／later()（ui.js 換畫面會清掉）；不另開 rAF；
  *   document.hidden 時整個停；走動槽 w1 w2 w3（不准 p／o／f／q 開頭，stage spotName 會當別名組）；⏩ 不快轉走動槽（stage finishAll 只收 p o f q1 q2）。
@@ -56,7 +57,7 @@
     return { mode: 'off', t: 0, last: 0, iv: 0, slots: {}, k: 0, tag: '', door: { swing: -1e9, guestAt: -1e9 }, nextEntry: null, waitRoom: false,
       guarantee: null, screenAt: 0, left: {}, leftLook: {}, log: [], blocks: [], reserve: {}, blockXY: [], pDest: null, pLast: null, emoteUntil: 0,
       manualPause: false, kept: false, stopsCache: null, hideAt: 0, cut: null, warm: null, warmAt: 0, fresh: true,
-      navL: null, navObs: null, navNodes: null, rcache: {}, rcacheN: 0, last3: {}, moving: {}, enc: null, market: false };
+      navL: null, navObs: null, navNodes: null, rcache: {}, rcacheN: 0, last3: {}, moving: {}, enc: null, want: null, market: false };
   }
 
   // ------------------------------------------------------------------ 小工具
@@ -202,7 +203,12 @@
       path: null, been: [], side: null, waitT: 0 };
   }
   // 正在講、或剛講完還在等 2 秒回原本動作：停留計時、借過、門事件提前出門都不碰他
-  function chatting(sl) { return !!(sl && (sl.talking || sl.resumeAt != null)); }
+  function chatting(sl) { return !!(sl && (sl.talking || sl.resumeAt != null || wantHeld(sl))); }
+  // 切磋（v6 第 3 條）：想找你切磋的那位、邀請面板開著（host.encHeld）＝站著等你決定（不換格、不出門）
+  function wantHeld(sl) {
+    if (!S.want || !sl || sl.who !== S.want.who || typeof H.encHeld !== 'function') return false;
+    try { return !!H.encHeld(); } catch (_) { return false; }
+  }
 
   // ------------------------------------------------------------------ 佔位（§4.3）
   function occupiedFor(sl, extra) {
@@ -485,6 +491,10 @@
     try { t.door('swing', { quiet: true }); } catch (e) { console.error(e); }   // 路人進出不響鈴（鈴只留給主線客人與切磋邀請者）
     hideSlot(sl); sl.on = false; sl.phase = 'gone';
     if (sl.who) S.left[sl.who] = S.t; else if (sl.li != null) S.leftLook[sl.li] = S.t;
+    if (S.want && sl.who === S.want.who && S.want.done) {        // 想找你切磋的那位逛完出門了（沒點他）：邀請收尾（ui.js；不出字）
+      var gw = S.want.who; S.want = null; wantMark();
+      try { if (typeof H.encGone === 'function') H.encGone(gw); } catch (e) { console.error(e); }
+    }
     S.door.swing = S.t;
     logDoor('out', sl);
     var refill = S.t + range(cf('refill'), h01(S.tag + '#refill#' + S.k));
@@ -520,7 +530,7 @@
     var K = core(), t = st(); if (!K || !t) return false;
     if (count() >= room()) return false;
     var id = freeSlot(); if (!id) return false;
-    var k = S.k, seq = K.crowdSeq(S.tag, C(), k, seqCtx());
+    var k = S.k, seq = o.who ? { kind: 'regular', who: o.who } : K.crowdSeq(S.tag, C(), k, seqCtx());   // o.who：切磋邀請那位（encWant）
     if (!seq) return false;
     if (!warmReady(seq.kind === 'regular' ? lookOf(seq.who) : seq.look)) return false;
     S.k++;
@@ -538,6 +548,7 @@
     logDoor('in', sl);
     addHot(sl);
     goStop(sl, stop, { fromDoor: true, plan: plan });
+    if (o.who) { sl.plan = Math.max(sl.plan, WANT_PLAN); sl.pay = false; wantMark(); return true; }   // 切磋那位：這次來至少再換兩格（給你時間點他）；路人的推門空檔照舊
     S.nextEntry = S.t + range(cf('gap'), h01(S.tag + '#gap#' + k));
     return true;
   }
@@ -974,6 +985,7 @@
       } else G.due = null;
     }
     if (locked) return;
+    if (wantFlow()) return;
     if (S.nextEntry == null) S.nextEntry = S.t + range(cf('gap'), h01(S.tag + '#gap0'));
     if (S.t < S.nextEntry) return;
     if (count() >= room()) { S.waitRoom = true; return; }
@@ -1019,6 +1031,7 @@
     updateBlocks();
     movingPOF();
     slotOn().forEach(faceFix);
+    wantMark();
     if (paused && S.chat) chatEnd(S.chat);     // 開抽屜、面板、頁面＝聊天收掉（§5.3）
     if (!paused) slotOn().forEach(function (sl) { if (sl.resumeAt != null && S.t >= sl.resumeAt) resumeTalk(sl); });   // 收泡泡 2 秒後回原本動作
     passCheck();
@@ -1162,7 +1175,7 @@
       return api;
     }
     clearAll();
-    S.market = false;
+    S.market = false; S.want = null;
     S.mode = 'off'; S.blocks = []; S.blockXY = []; S.reserve = {}; S.guarantee = null; S.nextEntry = null; S.waitRoom = false; S.pDest = null;
     stopTimer();
     return api;
@@ -1171,6 +1184,7 @@
     SLOTS.forEach(function (id) { var sl = S.slots[id]; if (sl && sl.on) { hideSlot(sl); sl.on = false; } else { var t = st(); if (t && t.has && t.has(id)) t.hide(id, true); } });
     S.slots = {};
     S.enc = null;
+    wantMark();
   }
 
   // ------------------------------------------------------------------ 聊天（SPEC-H §5）：點人＝一段（1–2 泡；行家 2–3 泡）；有下一句（▼）的泡泡點了才換，
@@ -1258,6 +1272,7 @@
   function resumeTalk(sl) {
     sl.resumeAt = null;
     if (!sl.on || sl.hiddenDuel || sl.talking) return;
+    if (wantHeld(sl)) { sl.resumeAt = S.t + 500; return; }     // 切磋邀請面板還開著：他站著等你決定
     if (sl.halted) {
       var force = (sl.waitT || 0) >= WAIT_MAX;
       if (sl.phase === 'out') {
@@ -1294,7 +1309,7 @@
     }
     chatClose();
     var max = sl.kind === 'regular' ? talkCf('beatsPerVisit') : talkCf('passerBeats');
-    if ((sl.talkN | 0) >= max) {
+    if ((sl.talkN | 0) >= max && !(S.want && sl.who === S.want.who)) {   // 想找你切磋的那位：點幾次都開邀請面板（不冒汗）
       if (sl.kind === 'regular' && !sl.busySaid) { sl.busySaid = true; return chatRun(sl, { busy: true }); }   // 第 4 下：「我再翻一下，等等聊。」
       var t = st(); if (t) t.emote(sl.id, 'sweat', talkCf('busyMute') / speed());   // 再點只冒汗、不出字
       return false;
@@ -1386,9 +1401,65 @@
   }
 
 
-  // ------------------------------------------------------------------ 切磋（SPEC-H §7.3，棒 4b）：熟客走到對戰台嗆你，f 演他（主線客人在門外等）。
-  //   導演只管「走動槽 ↔ f」交接與他離開對戰台那段；邀請、面板、記帳（引擎 run.spar）、挑哪一句在 ui.js（sparNight）。
+  // ------------------------------------------------------------------ 切磋（SPEC-H §7.3，棒 4b；v6 第 3 條店主 11-28 改）：想找你切磋的熟客跟大家一樣在店裡逛（S.want），
+  //   頭上一個小記號；點他聊天才有切磋（邀請面板在 ui.js），選了「來一盤」他才從停留點走到對戰台（handOff：f 演他；主線客人先出門在門外等）。
+  //   導演管「他進門、記號、面板開著時站著」與「走動槽 ↔ f」交接、他離開對戰台那段；邀請、面板、記帳（引擎 run.spar）、挑哪一句在 ui.js（sparNight）。
+  //   S.want＝{ who, due, done }：這一位的邀請還開著（done＝他已經在店裡了：之後逛完出門＝host.encGone，邀請收尾）
   //   S.enc＝{ who }：f 現在是他（handOff／encMark 到 takeBack）——這段期間不派他當路人（seqCtx）、店裡少一格（room：他回來要有槽）
+  var WANT_PLAN = 2;                                              // 他這次來至少再換兩格（每格 9–16 秒，約半分鐘到一分鐘才出門：給你時間發現、點他）
+  var WANT_IN = 1500;                                             // 他不在店裡：邀請開了 1.5 秒（遊戲時間）後門一空就推門進來（不等 16–28 秒的推門空檔；店裡滿了等有人走）
+  function wantSlot() {
+    if (!S.want) return null;
+    return slotOn().filter(function (o) { return o.who === S.want.who && !o.hiddenDuel && o.phase !== 'gone'; })[0] || null;
+  }
+  // encWant(who|null)：開／收「想找你切磋」（ui.js sparNight 開、改天／來一盤／下一位／出錯收）。他已經在店裡（不是正在出門）＝這次來至少再換兩格
+  function encWant(who) {
+    var R = C().regulars || {};
+    if (!who || !R[who]) { S.want = null; wantMark(); return api; }
+    if (!S.want || S.want.who !== who) S.want = { who: who, due: null, done: false };
+    var sl = wantSlot();
+    if (sl && sl.phase !== 'out' && !S.want.done) { S.want.done = true; sl.plan = Math.max(sl.plan | 0, WANT_PLAN); sl.pay = false; }
+    wantMark();
+    return api;
+  }
+  // doorFlow 每一拍（門沒鎖）：他還沒進來＝到時間、店裡有空就推門進來（回 true＝這一拍用掉門了）
+  function wantFlow() {
+    var W0 = S.want; if (!W0 || W0.done) return false;
+    var sl = wantSlot();
+    if (sl) { if (sl.phase !== 'out') { W0.done = true; sl.plan = Math.max(sl.plan | 0, WANT_PLAN); sl.pay = false; } return false; }   // 正在出門的他：讓他走完，之後再推門進來
+    if (W0.due == null) W0.due = S.t + WANT_IN;
+    if (S.t < W0.due || count() >= room()) return false;
+    if (enter({ who: W0.who })) { W0.done = true; return true; }
+    return false;
+  }
+  // 頭上的小記號（.cw-encmk，style.css；靜態不閃、不擋點擊）：只標想找你切磋的那位（走動槽裡、看得到的）；其他人的錨點上不留
+  function wantMark() {
+    var t = st(), sl = S.enc ? null : wantSlot(), keep = null;
+    if (sl && t && t.anchor) {
+      var a = null; try { a = t.has && t.has(sl.id) ? t.anchor(sl.id) : null; } catch (_) { a = null; }
+      if (a && a.querySelector) {
+        keep = a.querySelector('.cw-encmk');
+        if (!keep) { keep = D.createElement('i'); keep.className = 'cw-encmk'; keep.setAttribute('aria-hidden', 'true'); a.appendChild(keep); }
+      }
+    }
+    var all = D.querySelectorAll ? D.querySelectorAll('.cw-encmk') : [];
+    for (var i = 0; i < all.length; i++) if (all[i] !== keep) all[i].remove();
+  }
+  // 走動槽裡的他講一句（切磋：點他之後按「改天」）：同一套聊天泡泡（他停下、面向你）；o.ms＝停多久（真實毫秒×fastK；沒給＝聊天規則）、o.out＝講完直接出門
+  function encSayAt(who, text, o) {
+    o = o || {};
+    var t = st(); if (!t || !text) return null;
+    var sl = slotOn().filter(function (x) { return x.who === who && !x.hiddenDuel && x.phase !== 'gone'; })[0];
+    if (!sl) return null;
+    hook();
+    chatClose();
+    talkBegin(sl);
+    if (o.out) { sl.plan = 0; sl.pay = false; sl.stayLeft = 0; }
+    var c = { id: sl.id, sl: sl, who: who, name: nameOf(who), voice: voiceOf(who), bubbles: [{ text: String(text) }], i: 0, pending: false, until: 0, fixMs: o.ms > 0 ? o.ms / fastK() : 0 };
+    S.chat = c;
+    chatShow(c);
+    return S.chat === c && c.el ? true : null;
+  }
   var ENC_STAY = [15000, 30000];                                  // 改天、打完：他去左排翻 15–30 秒再走（§7.3-5）
   var ENC_LEFT = ['c-world', 'c-citypop', 'c-soul', 'c-rock'];    // 離 frontleft 近的先（少跟推門進來的主線客人在走道擦身）
   var ENC_CLEAR = 38;                                              // 「下一位」打斷：他離開原地 ≥38 格才讓主線客人站上去（LC12：身體框不疊）
@@ -1521,7 +1592,7 @@
       locked: S.mode === 'off' ? null : doorLocked(), nextEntryIn: S.nextEntry == null ? null : Math.round(S.nextEntry - S.t), waitRoom: S.waitRoom,
       guarantee: S.guarantee ? { done: !!S.guarantee.done, due: S.guarantee.due == null ? null : Math.round(S.guarantee.due - S.t) } : null,
       reserve: Object.keys(S.reserve), blocks: S.blocks.map(function (b) { return { who: b.who, door: b.door }; }), pDest: S.pDest ? S.pDest.xy : null,
-      enc: S.enc ? { who: S.enc.who } : null,
+      enc: S.enc ? { who: S.enc.who } : null, want: S.want ? { who: S.want.who, done: !!S.want.done } : null,
       slots: SLOTS.map(function (id) {
         var sl = S.slots[id]; if (!sl || !sl.on) return { slot: id, on: false };
         var p = t && t.pos(id);
@@ -1575,6 +1646,9 @@
     encMark: encMark,
     encSay: encSay,
     encClear: function () { S.enc = null; return api; },
+    // v6 第 3 條（店主 11-28）：encWant(who|null)＝想找你切磋的那位（進門、記號、面板開著站著等）；encSayAt(who, text, {ms, out})＝走動槽裡的他講一句；host.encGone(who)＝他逛完出門
+    encWant: encWant,
+    encSayAt: encSayAt,
     _S: function () { return S; }
   };
   W.DipLabCrowd = api;

@@ -1076,6 +1076,10 @@ body.lb-tune-open{overflow:hidden;}
 @-webkit-keyframes cwSpark{0%{opacity:1;-webkit-transform:scale(1);}50%{opacity:.55;-webkit-transform:scale(.55);}}
 @keyframes cwSpark{0%{opacity:1;transform:scale(1);}50%{opacity:.55;transform:scale(.55);}}
 @media (prefers-reduced-motion:reduce){ .ds-anc .cw-spark{-webkit-animation:none;animation:none;} }
+/* 切磋（v6 第 3 條，店主 11-28）：想找你切磋的熟客頭上一個小記號＝小對話框裡一張唱片（crowd.js wantMark；靜態不閃、不吃點擊，點他聊天才有切磋） */
+.ds-anc .cw-encmk{position:absolute;right:-11px;top:-17px;width:15px;height:13px;box-sizing:border-box;background:#fff6dc;border:1px solid #3a2a12;border-radius:3px;pointer-events:none;}
+.ds-anc .cw-encmk::before{content:"";position:absolute;left:3px;top:2px;width:7px;height:7px;border-radius:50%;background:#1b1410;box-shadow:inset 0 0 0 2px #1b1410,inset 0 0 0 3px #e0523a;}
+.ds-anc .cw-encmk::after{content:"";position:absolute;left:2px;bottom:-4px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #3a2a12;}
 /* ---------- 第 D 波棒二：三流派（?fac=1；ui.js 標題旗標章、facPickPanel、levelPanel 第 4 格、facInfo、頂欄一字圖示；旗標關時這些 class 都不出現） ---------- */
 /* 標題旗標章：只開 ?fac=1＝右上一顆「流派試做」；兩個旗標都開＝左上「流派試做」＋右上「頂點卡試做」並排；
    矮螢幕（≤600px 高；棒一 FINAL §3-3：375×548 標題區零餘裕）合成一顆「流派＋頂點卡試做」。章都是絕對定位，不佔標題牌、面板的高 */

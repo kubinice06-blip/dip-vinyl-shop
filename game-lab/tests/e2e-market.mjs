@@ -1280,7 +1280,7 @@ async function runSize(browser, w, h) {
     await ctx.close();
   }
 
-  // ---- 15g 切磋不扣杯數（SPEC-I §6.3「切磋不扣杯數」、§8；?crowd=1&enc=force：熟客在對戰台邀你）：手上熱美式 3 位 → 切磋裡照樣底氣 +1（view.drink）→ 打完（輸）回來客畫面：杯數、來客條杯子、位數都沒動
+  // ---- 15g 切磋不扣杯數（SPEC-I §6.3「切磋不扣杯數」、§8；?crowd=1&enc=force：熟客在店裡逛，點他聊天開邀請面板（v6 第 3 條））：手上熱美式 3 位 → 切磋裡照樣底氣 +1（view.drink）→ 打完（輸）回來客畫面：杯數、來客條杯子、位數都沒動
   if (want(15)) {
     const { ctx, page } = await newPage(browser, w, h);
     try {
@@ -1291,13 +1291,20 @@ async function runSize(browser, w, h) {
       await C(page, () => { const s = JSON.parse(localStorage.getItem('dipGameLab_v1')); s.run.drink = { kind: 'coffee', left: 3 }; localStorage.setItem('dipGameLab_v1', JSON.stringify(s)); });
       await openTitle(page, q); await jsClick(page, '[data-a=cont]'); await waitScreen(page, 'night', 20000);
       let s0 = null; const t0 = Date.now();
-      while (Date.now() - t0 < 20000) { const e = await C(page, () => window.__lab.crowd && window.__lab.crowd.enc ? window.__lab.crowd.enc() : null); if (e && e.ui && e.ui.phase === 'table') { s0 = e; break; } await sleep(150); }
+      const roamAt = () => C(page, () => { const e = window.__lab.crowd && window.__lab.crowd.enc ? window.__lab.crowd.enc() : null, w = e && e.ui && e.ui.phase === 'roam' ? e.ui.who : null;
+        const q = w && window.__lab.crowd.state().slots.find(x => x.on && x.who === w && !x.hidden && x.phase === 'stay' && !x.walking && x.y >= 150); return q ? Object.assign(e, { slot: q.slot }) : null; });
+      while (Date.now() - t0 < 20000) { const e = await roamAt(); if (e) { s0 = e; break; } await sleep(150); }
       await sleep(400);
       const x = await UI(page);
       const r0 = await C(page, () => ({ drink: window.__lab.run.drink, pos: window.__lab.run.pos, idx: window.__lab.run.idx }));
       const ca = await cupsOf(page);
-      const hot = await tapHot(page, h => h.id === 'cw-enc');
-      const sheet = await page.waitForSelector('.lb-sheet.float.enc', { timeout: 4000 }).then(() => true, () => false); await sleep(450);
+      let hot = null, sheet = false;
+      for (let k = 0; k < 3 && !sheet; k++) {
+        const e = k ? await roamAt() : s0; if (!e) { await sleep(500); continue; }
+        hot = await tapHot(page, 'h => h.id === "cw-' + e.slot + '"');
+        sheet = await page.waitForSelector('.lb-sheet.float.enc', { timeout: 3000 }).then(() => true, () => false);
+      }
+      await sleep(450);
       await C(page, () => window.__lab.force({ kind: 'counter', toE: 0, toP: 99 }));
       await tapReady(page, '.lb-sheet.float.enc [data-a=encYes]');
       const ready = await duelReady(page, 20000); await sleep(600);

@@ -220,13 +220,13 @@
   //   來客（含攤位）、領獎、說情時，輪流放這一趟包包裡有試聽的唱片（洗牌佇列：每張放過一輪才重洗、剛收的插到最前面；王牌／頂點卡不放）；樂歷 Lv5 起可選「包包＋唱片櫃」。
   //   只顯示卡片欄位（藝人《專輯》），不寫曲名（沒有資料，不編）。數字：popMs＝收音機旁泡泡停多久；popGap＝距離上一次展開多久以上換歌才再展開；
   //   tries＝連試幾首抓不到就停、retryMs 後再試；idleMs＝多久沒點擊就淡出停；fetchMax＝一次造訪輪播最多新抓幾首（之後只重播快取裡的）；resumeMs＝玩家點的那首放完／唱片資訊關掉後多久接回輪播；
-  //   fadeIn＝輪播每首淡入；vols＝⏸「音樂音量 小／中／大」
+  //   fadeIn＝輪播每首淡入；fadeOut＝離開輪播畫面時輪播那首淡出（v6-6；換曲、⏸ 關聲音的 0.8 秒在 fx.js BGM_OUT_MS）；vols＝⏸「音樂音量 小／中／大」
   //   （第 I 波修正）giveUpMs＝輪播抓檔等多久才算抓不到（fx 預設 2.5 秒是給對決動畫的；慢網路 1 MB 要 3 秒上下）；popWait＝第一首、隔 2 分鐘的泡泡等鏡頭停、熟客聊完最多等多久；
   //   popTapWait＝點 ♪ 時歌還在抓最多等多久（聊天中點 ♪ 不等：避開聊天泡泡擺；post 審查）
   //   （第 I 波 post 審查）第二行「藝人《專輯》」放不下：展開 mqDelay 毫秒後往左捲到尾巴，每秒 mqPxS px、最久 mqMaxS 秒（6 秒內捲完、停在尾巴）
   //   （第 I 波第三輪審查）popChatGap＝熟客聊天收掉後自動展開再等多久（下一句、老闆接話常緊接著出來）；popHoldMax＝自動展開為了等人開口（聊天、切磋挑戰者走過來到嗆完、第一次老闆提示）最多多等多久
   C.bgm = {
-    popMs: 6000, popGap: 120000, tries: 3, retryMs: 60000, idleMs: 600000, fetchMax: 30, resumeMs: 1500, fadeIn: 1200, vols: [0.3, 0.5, 0.7],
+    popMs: 6000, popGap: 120000, tries: 3, retryMs: 60000, idleMs: 600000, fetchMax: 30, resumeMs: 1500, fadeIn: 1200, fadeOut: 800, vols: [0.3, 0.5, 0.7],
     giveUpMs: 12000, popWait: 8000, popTapWait: 6000, mqDelay: 1100, mqPxS: 40, mqMaxS: 3.2, popChatGap: 600, popHoldMax: 20000,
     ui: {
       np: '正在播放',                                       // 收音機旁泡泡第一行（♪ 正在播放）
@@ -2422,7 +2422,7 @@
     encRewardShelfAny: '贏了挑一張唱片收進唱片櫃，或改拿 ${cash}。',
     encRewardBagAny: '贏了挑一張唱片收進包包，或改拿 ${cash}。',
     encShort: '這盤是短局：雙方聲望都只拿三分之二出來打。',   // 邀請面板：短局一行（一開打聲望變三分之二，不寫會以為被扣了）
-    encHint: '{name}在找你切磋：點人決定打不打，直接叫下一位就是改天。',   // 第一次有熟客來嗆，老闆說一次（save.seen.encHint）
+    encHint: '{name}在找你切磋：點人決定打不打，直接叫下一位就是改天。',   // 第一次有熟客來嗆，老闆說一次（save.seen.encHint）；v6 第 3 條（店主 11-28）起不用：熟客不上對戰台嗆你、不叫老闆提醒（字留著）
     encTopSub: '短局',   // 對決頂欄「切磋・{name}」下面那行小字
     encBtnYes: '來一盤',   // 邀請面板：接受鈕
     encBtnNo: '改天',   // 邀請面板：不打鈕
